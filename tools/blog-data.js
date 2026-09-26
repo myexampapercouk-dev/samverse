@@ -2121,4 +2121,230 @@ module.exports = [
 <p>See how an electronics OEM presents its service divisions, infrastructure and service-specific enquiry form in the <a href="/work/vansh-group/">Vansh Group case study</a>, and how the <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer website guide</a> covers the wider site. For your company, see what's included in a <a href="/website-for-manufacturers/">manufacturer website</a>.</p>
 `,
   },
+  {
+    slug: 'domain-hosting-ssl-explained',
+    seoTitle: 'Domain, Hosting & SSL Explained for Business Owners',
+    title: 'Domain, Hosting and SSL Explained Simply for Business Owners',
+    description: 'What\'s the difference between a domain, hosting and an SSL certificate? A plain-English explanation for business owners, with costs, renewals and common mistakes to avoid.',
+    date: '2026-09-29',
+    category: 'Guides',
+    related: ['wordpress-migration', 'wordpress-website-development', 'wordpress-maintenance'],
+    body: `
+<p>Every website needs three basic things: a domain, hosting and an SSL certificate. They're often confused, and mistakes with them can take your site offline. Here's what each one is, in plain English.</p>
+
+<h2>The simple analogy</h2>
+<ul>
+  <li><strong>Domain</strong> = your address (like yourbusiness.com)</li>
+  <li><strong>Hosting</strong> = the building where your website lives</li>
+  <li><strong>SSL certificate</strong> = the secure lock on the front door (the padlock and https)</li>
+</ul>
+
+<h2>Domain name</h2>
+<p>Your domain is the name people type to reach your website. You register it through a domain registrar and renew it every year.</p>
+<ul>
+  <li><strong>Choosing one:</strong> short, easy to spell and say, ideally matching your business name. .com and .in are common choices for Indian businesses.</li>
+  <li><strong>Cost:</strong> usually a modest yearly fee, but check renewal prices, not just the first-year offer.</li>
+  <li><strong>Own it yourself:</strong> register the domain in your own name and account, not your developer's, so you always control it.</li>
+</ul>
+
+<h2>Hosting</h2>
+<p>Hosting is a server that stores your website files and database and delivers them to visitors. Better hosting means faster loading and fewer outages.</p>
+<ul>
+  <li><strong>Shared hosting:</strong> affordable and fine for small sites</li>
+  <li><strong>Managed WordPress hosting:</strong> optimized for WordPress, with backups and expert support</li>
+  <li><strong>Cloud / VPS:</strong> dedicated resources for busy sites and stores</li>
+</ul>
+<p>Our guide on <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting in India</a> goes deeper.</p>
+
+<h2>DNS: how the domain finds the hosting</h2>
+<p>DNS (Domain Name System) connects your domain to your hosting. When you change hosts, you update the DNS records (or nameservers) so your domain points to the new server. DNS also controls where your business email is delivered, so changes must be made carefully.</p>
+
+<h2>SSL certificate (HTTPS)</h2>
+<p>SSL encrypts the connection between visitors and your website. Without it, browsers show a "Not secure" warning, which scares visitors away and hurts trust and SEO.</p>
+<ul>
+  <li>Most good hosts include free SSL certificates that renew automatically</li>
+  <li>After installing SSL, make sure every page loads on https and old http links redirect</li>
+</ul>
+
+<h2>Business email</h2>
+<p>An email address at your domain (like info@yourbusiness.com) looks far more professional than a free email address. It's usually set up through your hosting or a dedicated email service.</p>
+
+<h2>Common mistakes that take websites offline</h2>
+<ul>
+  <li>Letting the domain expire. Turn on auto-renew and keep payment details current.</li>
+  <li>Domain registered in a former developer's account</li>
+  <li>Changing DNS without copying email records, which breaks email</li>
+  <li>Cheap hosting with no backups</li>
+  <li>An expired SSL certificate causing browser warnings</li>
+</ul>
+
+<h2>Checklist</h2>
+<ol>
+  <li>Domain in your own account, auto-renew on</li>
+  <li>Reliable hosting with daily backups</li>
+  <li>SSL active, with all pages on https</li>
+  <li>Logins for registrar and hosting stored safely</li>
+</ol>
+<p>Moving hosts or domains? A careful <a href="/wordpress-migration/">WordPress migration</a> handles DNS, SSL and email records without downtime.</p>
+`,
+  },
+  {
+    slug: 'website-maintenance-cost-india',
+    seoTitle: 'Website Maintenance Cost in India: What\'s Included',
+    title: 'Website Maintenance Cost in India: What You Pay For and What\'s Included',
+    description: 'How much does website maintenance cost in India, and what should a WordPress maintenance plan include? Typical ranges, what\'s covered, what\'s extra and how to choose a plan.',
+    date: '2026-09-29',
+    category: 'Pricing',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
+    body: `
+<p>Once your website is live, it needs ongoing care: updates, backups, security and small changes. Many business owners are unsure what maintenance should cost or include. Here's a clear breakdown.</p>
+
+<h2>Typical costs</h2>
+<p>For small and medium WordPress websites in India, freelance maintenance plans typically range from about <strong>₹1,500 to ₹6,000 per month</strong>, depending on the size of the site, how often changes are needed, and whether it's an online store. Agencies and large or business-critical sites cost more. These are typical market ranges, not fixed prices.</p>
+
+<h2>What a good maintenance plan includes</h2>
+<ul>
+  <li><strong>Updates:</strong> WordPress core, themes and plugins, applied safely after a backup</li>
+  <li><strong>Backups:</strong> automatic, stored off-site, with restores when needed</li>
+  <li><strong>Security:</strong> malware scans, firewall and login protection</li>
+  <li><strong>Uptime monitoring:</strong> alerts if the site goes down</li>
+  <li><strong>Performance checks:</strong> speed monitoring and fixes for regressions</li>
+  <li><strong>Small content changes:</strong> text, images and prices, within an agreed amount of time</li>
+  <li><strong>Form and functionality checks:</strong> making sure enquiries still arrive</li>
+  <li><strong>Monthly report:</strong> what was done and anything you should know</li>
+</ul>
+
+<h2>What usually costs extra</h2>
+<ul>
+  <li>New pages, new features or redesigns</li>
+  <li>Large content uploads (for example hundreds of products)</li>
+  <li>Premium plugin licences and hosting fees</li>
+  <li>Cleanup of a site that was already hacked before the plan started</li>
+</ul>
+
+<h2>Why maintenance is worth it</h2>
+<ul>
+  <li><strong>Prevention is cheaper than repair.</strong> Cleaning a hacked site or rebuilding after data loss costs far more than regular upkeep.</li>
+  <li><strong>Lost enquiries are invisible.</strong> A broken contact form can cost leads for weeks before anyone notices.</li>
+  <li><strong>Speed and SEO decay.</strong> Sites slow down over time without attention.</li>
+</ul>
+
+<h2>How to choose a plan</h2>
+<ol>
+  <li>Check exactly what's included, especially how many content changes per month</li>
+  <li>Ask how updates are tested and how quickly problems are fixed</li>
+  <li>Confirm backups are stored off-site and that restores are included</li>
+  <li>Prefer month-to-month plans so you're not locked in</li>
+</ol>
+
+<h2>DIY or hand it over?</h2>
+<p>You can do basic maintenance yourself with our <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>. If you'd rather focus on your business, a <a href="/wordpress-maintenance/">maintenance plan</a> makes sure it happens every month without you having to remember.</p>
+`,
+  },
+  {
+    slug: 'landing-page-vs-website',
+    title: 'Landing Page vs Website: Which Do You Need for Your Ads?',
+    description: 'Should you send ad traffic to your website or a landing page? The difference, when each works best, and how businesses use both together to get more leads for the same budget.',
+    date: '2026-09-29',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-website-development', 'real-estate-website-design'],
+    body: `
+<p>If you're running Google or Facebook ads, one of the most important decisions is where the click goes. Sending ad traffic to your homepage is common, and often wasteful. Here's how landing pages and websites differ, and when to use each.</p>
+
+<h2>The difference</h2>
+<table>
+  <thead><tr><th></th><th>Website</th><th>Landing page</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Purpose</strong></td><td>Inform and serve many visitor types</td><td>Convert one audience for one offer</td></tr>
+    <tr><td><strong>Navigation</strong></td><td>Full menu and many pages</td><td>Usually none, to avoid distractions</td></tr>
+    <tr><td><strong>Content</strong></td><td>All services, about, blog, contact</td><td>One offer, benefits, proof, one form</td></tr>
+    <tr><td><strong>Best for</strong></td><td>SEO, brand credibility, returning visitors</td><td>Paid ads, campaigns, lead generation</td></tr>
+  </tbody>
+</table>
+
+<h2>Why landing pages usually convert ad traffic better</h2>
+<ul>
+  <li><strong>Message match:</strong> the page repeats exactly what the ad promised</li>
+  <li><strong>Fewer distractions:</strong> no menus or unrelated pages</li>
+  <li><strong>One clear action:</strong> a form, WhatsApp or call</li>
+  <li><strong>Easy to test:</strong> headlines and offers can be tweaked per campaign</li>
+</ul>
+
+<h2>When sending ads to your website makes sense</h2>
+<ul>
+  <li>Brand campaigns where people search your business name</li>
+  <li>Retargeting visitors who already know you, sent to a specific service page</li>
+  <li>When the relevant service page is already focused and has a strong call to action</li>
+</ul>
+
+<h2>You need both</h2>
+<p>A website builds credibility and long-term search traffic; landing pages turn paid clicks into leads. Many prospects will visit your main site to check you out after seeing a landing page, so keep both consistent in branding and messaging.</p>
+
+<h2>What makes a landing page work</h2>
+<ol>
+  <li>Headline that matches the ad</li>
+  <li>Call to action above the fold, plus WhatsApp</li>
+  <li>3–5 clear benefits</li>
+  <li>Proof: testimonials, logos, photos</li>
+  <li>Short form and a FAQ for objections</li>
+  <li>Fast loading on mobile and conversion tracking</li>
+</ol>
+<p>Avoid the common <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a>, and see what goes into a professional <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'get-website-indexed-google-faster',
+    seoTitle: 'How to Get Your Website Indexed on Google Faster',
+    title: 'How to Get Your New Website Indexed on Google Faster',
+    description: 'New website not showing on Google? How indexing works and practical steps to get pages indexed faster: Search Console, sitemaps, internal links, quality content and common blockers.',
+    date: '2026-09-29',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
+    body: `
+<p>You've launched a new website, but searching for it on Google shows nothing. Don't panic. Google needs to discover, crawl and index your pages first. Here's how that works and what you can do to speed it up.</p>
+
+<h2>How Google indexing works</h2>
+<ol>
+  <li><strong>Discovery:</strong> Google finds your URLs through links, sitemaps or Search Console.</li>
+  <li><strong>Crawling:</strong> Googlebot visits the pages and reads the content.</li>
+  <li><strong>Indexing:</strong> Google decides whether to store the page in its index.</li>
+  <li><strong>Ranking:</strong> indexed pages can then appear for relevant searches.</li>
+</ol>
+<p>Indexing isn't guaranteed. Google chooses which pages to index based on quality and usefulness.</p>
+
+<h2>Check whether you're indexed</h2>
+<ul>
+  <li>Search <code>site:yourdomain.com</code> on Google for a rough view</li>
+  <li>Use the <strong>URL Inspection</strong> tool in Google Search Console for an exact status</li>
+</ul>
+
+<h2>Steps to get indexed faster</h2>
+<h3>1. Set up Google Search Console</h3>
+<p>Verify your domain and submit your XML sitemap. See <a href="/blog/setup-google-analytics-search-console/">how to set up Search Console</a>.</p>
+<h3>2. Request indexing for key pages</h3>
+<p>Use URL Inspection → "Request indexing" for your homepage and most important pages. Don't spam requests for every page; sitemaps handle the rest.</p>
+<h3>3. Link your pages together</h3>
+<p>Google discovers pages by following links. Make sure every important page is linked from your navigation, homepage or related pages. Orphan pages with no internal links are often ignored.</p>
+<h3>4. Get a few links from other sites</h3>
+<p>Links from your Google Business Profile, social profiles, directories and partner or client websites help Google discover and trust your site.</p>
+<h3>5. Publish genuinely useful content</h3>
+<p>Thin or duplicate pages are often crawled but not indexed. Pages that answer questions thoroughly are indexed more readily.</p>
+<h3>6. Make sure the site is fast and mobile-friendly</h3>
+<p>Google crawls with a mobile browser. Slow, broken or hard-to-render pages can delay indexing.</p>
+
+<h2>Common blockers</h2>
+<ul>
+  <li>WordPress "Discourage search engines from indexing this site" left on after launch</li>
+  <li><code>noindex</code> tags left over from a staging site</li>
+  <li>robots.txt blocking important folders</li>
+  <li>Canonical tags pointing to the wrong URL or domain</li>
+  <li>Duplicate versions of the site (http/https, www/non-www) without redirects</li>
+</ul>
+
+<h2>How long does it take?</h2>
+<p>Some pages are indexed within days; others take weeks, especially on brand-new domains with few links. Keep publishing useful content, building internal links and earning mentions, and indexing speeds up over time.</p>
+
+<p>If pages stay unindexed, a technical <a href="/wordpress-seo-services/">WordPress SEO</a> review usually finds the cause quickly.</p>
+`,
+  },
 ];
