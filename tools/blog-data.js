@@ -68,6 +68,7 @@ module.exports = [
   <li>Your deadline and budget range</li>
 </ol>
 <p>A clear brief gets you a clear price, and avoids surprises halfway through the project.</p>
+<p>Want a quick ballpark first? Try the free <a href="/website-cost-calculator/">website cost calculator</a>.</p>
 
 <h2>The bottom line</h2>
 <p>For most small businesses in India, a professional WordPress website costs between ₹15,000 and ₹40,000, plus a few thousand rupees a year for domain and hosting. Online stores and larger sites cost more. Focus on value, not the lowest price: a fast, mobile-friendly website that brings in enquiries pays for itself quickly.</p>
