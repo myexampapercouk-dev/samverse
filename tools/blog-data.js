@@ -9,7 +9,7 @@ module.exports = [
     description: 'A clear breakdown of WordPress website costs in India: domain, hosting, design, development, plugins and maintenance, with typical price ranges for each type of site.',
     date: '2026-09-28',
     category: 'Pricing',
-    related: ['website-redesign', 'woocommerce-developer', 'wordpress-maintenance'],
+    related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
 <p>"How much will my website cost?" is the first question almost every client asks, and the honest answer is: it depends on what the website needs to do. A simple five-page business site and a WooCommerce store with hundreds of products are very different projects.</p>
 <p>This guide breaks down every cost involved in a WordPress website in India, so you can budget properly and compare quotes with confidence.</p>
@@ -323,7 +323,7 @@ module.exports = [
     description: 'Should you hire a freelance web developer or an agency? Compare cost, communication and risk, and use these 10 questions to choose the right developer for your website.',
     date: '2026-09-28',
     category: 'Guides',
-    related: ['wordpress-developer-for-agencies', 'website-for-startups', 'website-redesign'],
+    related: ['hire-wordpress-developer', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
     body: `
 <p>Choosing who builds your website matters as much as the website itself. The right developer delivers on time, communicates clearly and supports you after launch. The wrong one can leave you with a half-finished site and no way to reach them.</p>
 
@@ -379,7 +379,7 @@ module.exports = [
 </ul>
 
 <h2>The bottom line</h2>
-<p>For most small and medium businesses, an experienced freelance WordPress developer offers the best balance of quality, cost and direct communication. Check their live work, ask the questions above, and get the scope in writing before you start.</p>
+<p>For most small and medium businesses, an experienced <a href="/hire-wordpress-developer/">freelance WordPress developer</a> offers the best balance of quality, cost and direct communication. Check their live work, ask the questions above, and get the scope in writing before you start.</p>
 `,
   },
   {
@@ -826,7 +826,7 @@ module.exports = [
     description: 'Realistic timelines for building a WordPress website, from landing pages to business sites and WooCommerce stores, plus what speeds projects up or slows them down.',
     date: '2026-09-29',
     category: 'Guides',
-    related: ['website-redesign', 'woocommerce-developer', 'landing-page-design'],
+    related: ['wordpress-website-development', 'woocommerce-developer', 'landing-page-design'],
     body: `
 <p>"When can it go live?" is usually the second question after "How much will it cost?". The honest answer depends on the size of the site and, more than anything, on how quickly content and feedback arrive. Here are realistic timelines and the things that make the biggest difference.</p>
 

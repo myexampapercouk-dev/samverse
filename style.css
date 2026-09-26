@@ -565,3 +565,4 @@ main, footer, section { max-width: 100vw; }
 .cta-inline { color: #fff; text-decoration: underline; font-weight: 600; }
 .post-author strong a { color: var(--text); }
 .post-author strong a:hover { color: var(--violet); }
+.lead-link { color: var(--violet); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
