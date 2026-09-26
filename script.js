@@ -1,59 +1,29 @@
 // ==========================================================
 // Samverse — Sameer Gupta Portfolio
-// To add a project, append an entry to PROJECTS below.
-// Optional `thumb`: your own screenshot (e.g. "assets/work/thirdeye.png").
-// If it is missing, a live screenshot is fetched automatically.
+// Portfolio cards are written into the HTML by tools/build-pages.js
+// (data in tools/projects.js) so their links are crawlable.
+// This script only manages their screenshots.
 // ==========================================================
-const PROJECTS = [
-  { name: "Third Eye Social",      url: "https://thirdeye.social/",          study: "/work/third-eye-social/",      tag: "AI Automation Agency",   thumb: "/assets/work/thirdeye.svg",       colors: ["#1A1A1A", "#F07C12"] },
-  { name: "Vansh Group",           url: "https://vansh.group/",              study: "/work/vansh-group/",           tag: "Electronics Manufacturing", colors: ["#0EA5E9", "#6366F1"] },
-  { name: "India Automation Hub",  url: "https://indiaautomationhub.com/",   study: "/work/india-automation-hub/",  tag: "Industrial Media Portal", colors: ["#F59E0B", "#EF4444"] },
-  { name: "Streak Creative",       url: "https://streakcreative.in/",        study: "/work/streak-creative/",       tag: "Growth Marketing Agency", thumb: "/assets/work/streakcreative.svg", colors: ["#E8254B", "#8B5CF6"] },
-  { name: "Our Temples",           url: "https://ourtemples.info/",          study: "/work/our-temples/",           tag: "Temple Directory",       colors: ["#F97316", "#FACC15"] },
-  { name: "Dr. Sudhir Arora",      url: "https://drsudhirarora.com/",        study: "/work/dr-sudhir-arora/",       tag: "Healthcare & Wellness",  colors: ["#14B8A6", "#3B82F6"] },
-  { name: "Sahni Power Solutions", url: "https://sahnipowersolutions.com/",  study: "/work/sahni-power-solutions/", tag: "Generator Rental",       colors: ["#22C55E", "#0EA5E9"] },
-  { name: "CNN Food & Spices",     url: "https://cnnfoodandspices.com/",                                            tag: "E-commerce",             colors: ["#DC2626", "#F59E0B"] },
-];
 
-// ---------- Render portfolio cards ----------
-const grid = document.getElementById("workGrid");
-// Landing pages can show a subset: <div id="workGrid" data-projects="Name 1|Name 2">
-// Pages without a portfolio grid (blog, /solutions/) skip this
-const only = grid ? (grid.dataset.projects || "").split("|").filter(Boolean) : [];
-(grid ? PROJECTS : []).filter(p => !only.length || only.includes(p.name)).forEach(({ name, url, study, tag, thumb, colors }) => {
-  const host = new URL(url).hostname.replace(/^www\./, "");
-  // WordPress.com mShots generates a live screenshot of each site
-  const shot = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=800&h=500`;
-  const card = document.createElement("a");
-  card.className = "work-card reveal";
-  // Cards open the case study when there is one, otherwise the live site
-  card.href = study || url;
-  if (!study) { card.target = "_blank"; card.rel = "noopener"; }
-  card.innerHTML = `
-    <div class="browser-bar"><i></i><i></i><i></i></div>
-    <div class="work-thumb" style="background:${colors[0]}">
-      <div class="fallback">${name}</div>
-      <img src="${thumb || shot}" alt="Screenshot of ${name} website" loading="lazy">
-    </div>
-    <div class="work-body">
-      <span class="work-tag">${tag}</span>
-      <h3>${name}</h3>
-      <div class="work-url"><span>${host}</span><span class="arrow">${study ? "Case study →" : "↗"}</span></div>
-    </div>`;
-  const img = card.querySelector("img");
+// ---------- Portfolio card screenshots ----------
+document.querySelectorAll(".work-thumb img[data-shot]").forEach(img => {
+  const shot = img.dataset.shot;
   // mShots returns a 400px "Generating preview" placeholder the first time;
   // retry a few times until the real 800px screenshot is ready.
   let tries = 0;
-  img.addEventListener("load", () => {
+  const onLoad = () => {
     if (img.naturalWidth > 400 || !img.src.includes("mshots")) return img.classList.add("loaded");
     if (++tries <= 4) setTimeout(() => { img.src = `${shot}&r=${tries}`; }, 5000);
-  });
-  img.addEventListener("error", () => {
+  };
+  const onError = () => {
     // Custom thumb not found: fall back to the live screenshot
-    if (thumb && !img.src.includes("mshots")) img.src = shot;
+    if (!img.src.includes("mshots")) img.src = shot;
     else img.remove();
-  });
-  grid.appendChild(card);
+  };
+  img.addEventListener("load", onLoad);
+  img.addEventListener("error", onError);
+  // The image may have finished before this deferred script ran
+  if (img.complete) img.naturalWidth ? onLoad() : onError();
 });
 
 // ---------- Header shadow on scroll ----------

@@ -16,7 +16,7 @@ Trigger a new deploy after changing environment variables.
 Set `GA_ID` and `ADSENSE_ID` in the `SITE_CONFIG` block at the top of `index.html`.
 
 ## Portfolio projects
-Edit the `PROJECTS` list at the top of `script.js`.
+Edit `tools/projects.js`, then rebuild (cards are written into the HTML so their links are crawlable).
 
 ## Industry landing pages
 `/wordpress-developer-for-agencies/`, `/wordpress-website-for-doctors/`, `/website-for-manufacturers/`, `/woocommerce-developer/`

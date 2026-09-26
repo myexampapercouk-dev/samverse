@@ -29,7 +29,37 @@ const footer = rebase(between('<footer class="footer">', '</footer>'));
 const waFloat = between('<a class="wa-float"', '</a>');
 
 const PAGES = require('./pages-data');
+const PROJECTS = require('./projects');
 const POSTS = require('./blog-data');
+
+// Static portfolio cards (crawlable links); script.js only manages the screenshots
+const projectCards = (names = []) => PROJECTS.filter(p => !names.length || names.includes(p.name)).map(p => {
+  const host = new URL(p.url).hostname.replace(/^www\./, '');
+  const shot = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(p.url)}?w=800&h=500`;
+  const ext = p.study ? '' : ' target="_blank" rel="noopener"';
+  return `          <a class="work-card reveal" href="${p.study || p.url}"${ext}>
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="work-thumb" style="background:${p.color}">
+              <div class="fallback">${esc(p.name)}</div>
+              <img src="${p.thumb || shot}" data-shot="${shot}" alt="Screenshot of the ${esc(p.name)} website" width="800" height="500" loading="lazy">
+            </div>
+            <div class="work-body">
+              <span class="work-tag">${esc(p.tag)}</span>
+              <h3>${esc(p.name)}</h3>
+              <div class="work-url"><span>${host}</span><span class="arrow">${p.study ? 'Case study →' : '↗'}</span></div>
+            </div>
+          </a>`;
+}).join('\n');
+
+// Write the cards into the homepage between markers
+{
+  const indexPath = path.join(ROOT, 'index.html');
+  let home = fs.readFileSync(indexPath, 'utf8');
+  const re = /(<!-- work-cards:start -->)[\s\S]*?(<!-- work-cards:end -->)/;
+  if (!re.test(home)) throw new Error('index.html is missing the work-cards markers');
+  home = home.replace(re, (m, start, end) => `${start}\n${projectCards()}\n          ${end}`);
+  fs.writeFileSync(indexPath, home);
+}
 
 const tick = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4z"/></svg>';
 
@@ -173,7 +203,9 @@ ${p.gets.map(g => `          <li>${tick} ${esc(g)}</li>`).join('\n')}
           <h2>Websites I've built</h2>
           <p class="muted">Live projects. Click a card for the case study, or <a href="/#work" class="link-inline">see the full portfolio</a>.</p>
         </div>
-        <div class="work-grid" id="workGrid" data-projects="${esc(p.projects.join('|'))}"></div>
+        <div class="work-grid" id="workGrid">
+${projectCards(p.projects)}
+        </div>
       </div>
     </section>
 
@@ -677,7 +709,9 @@ ${JSON.stringify(schema, null, 2)}
     </section>
     <section class="section" style="padding-top:20px">
       <div class="container">
-        <div class="work-grid" id="workGrid"></div>
+        <div class="work-grid" id="workGrid">
+${projectCards()}
+        </div>
       </div>
     </section>
 
