@@ -1290,4 +1290,241 @@ module.exports = [
 <p>If your Wix site is small, rarely updated and doing its job, you may not need to move. If you're growing, need better SEO, e-commerce or custom features, or want to own your website outright, WordPress is usually the right next step. A professional <a href="/wordpress-migration/">migration</a> handles the rebuild, redirects and launch so your business doesn't miss a beat.</p>
 `,
   },
+  {
+    slug: 'google-business-profile-checklist',
+    seoTitle: 'Google Business Profile Checklist for Service Businesses',
+    title: 'Google Business Profile Optimization Checklist for Service Businesses',
+    description: 'A complete Google Business Profile checklist: categories, services, photos, reviews, posts, Q&A and website links, to help your business appear in Google Maps and local results.',
+    date: '2026-09-29',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
+    body: `
+<p>For local service businesses such as clinics, consultants, restaurants, repair services and agencies, your Google Business Profile often gets more views than your website. It's what appears in Google Maps and the local "map pack" at the top of search results. This checklist helps you get the most out of it.</p>
+
+<h2>Basic information (get this 100% right)</h2>
+<ul>
+  <li><strong>Business name:</strong> your real trading name, exactly as on your signage and website. Don't stuff keywords into it, because it breaks Google's guidelines.</li>
+  <li><strong>Primary category:</strong> the single most important choice. Pick the most specific category that matches your main service (for example "Orthopedic surgeon" rather than "Doctor").</li>
+  <li><strong>Secondary categories:</strong> add other genuine categories you serve.</li>
+  <li><strong>Address or service area:</strong> show your address if customers visit you; otherwise set service areas and hide the address.</li>
+  <li><strong>Phone number and website:</strong> use a number you answer, and link to your website (ideally the most relevant page).</li>
+  <li><strong>Hours:</strong> accurate regular hours, plus special hours for holidays.</li>
+</ul>
+
+<h2>Services and description</h2>
+<ul>
+  <li>Add every <strong>service</strong> you offer, with a short description for each.</li>
+  <li>Write a clear <strong>business description</strong> covering what you do, who you help, where, and what makes you different, in natural language.</li>
+  <li>Fill in relevant <strong>attributes</strong> (for example wheelchair accessible, online appointments, women-led).</li>
+</ul>
+
+<h2>Photos and videos</h2>
+<ul>
+  <li>Logo and cover photo</li>
+  <li>Exterior photos so people recognise your location</li>
+  <li>Interior, team and work-in-progress photos</li>
+  <li>Photos of finished work or products</li>
+  <li>Add new photos regularly, because fresh, real photos build trust</li>
+</ul>
+
+<h2>Reviews: the biggest ongoing factor</h2>
+<ol>
+  <li>Ask every satisfied customer for a review, ideally right after a good experience.</li>
+  <li>Share your direct review link on WhatsApp, email or a printed QR code.</li>
+  <li>Reply to every review, thanking positive reviewers and responding calmly and helpfully to negative ones.</li>
+  <li>Never buy reviews or offer incentives for them. It violates Google's policies.</li>
+</ol>
+
+<h2>Posts, Q&amp;A and messaging</h2>
+<ul>
+  <li><strong>Posts:</strong> share updates, offers, events or recent work regularly.</li>
+  <li><strong>Q&amp;A:</strong> add common questions and answers yourself, and monitor questions from the public.</li>
+  <li><strong>Respond quickly</strong> to messages and calls. Responsiveness affects customer trust.</li>
+</ul>
+
+<h2>Connect it to your website</h2>
+<p>Your profile and website work together. Make sure your name, address and phone number match exactly on both; add a Google Map and your hours to your contact page; and create service pages on your site for the main services listed on your profile. Our <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> covers the website side in more detail.</p>
+
+<h2>Monthly routine</h2>
+<ul>
+  <li>Reply to all new reviews and questions</li>
+  <li>Add a post and a few new photos</li>
+  <li>Check hours and details are still correct</li>
+  <li>Review insights: searches, calls, direction requests and website clicks</li>
+</ul>
+`,
+  },
+  {
+    slug: 'how-to-write-website-content',
+    seoTitle: 'How to Write Content for Your Business Website',
+    title: 'How to Write Content for Your Business Website (Homepage, About and Services)',
+    description: 'A simple guide to writing website content that brings enquiries: what to put on your homepage, about page and service pages, plus headlines, calls to action and SEO basics.',
+    date: '2026-09-29',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'website-redesign', 'wordpress-seo-services'],
+    body: `
+<p>Content is usually what holds website projects up, and what decides whether visitors contact you. You don't need to be a professional writer. You need to answer your customers' questions clearly. Here's what to write for each main page.</p>
+
+<h2>Before you write: know your reader</h2>
+<p>Write down who your ideal customer is, what problem they have, and what they worry about before hiring someone like you (price, quality, reliability, time). Every page should answer those worries. Write the way you'd explain things to a customer in person: simple words, short sentences.</p>
+
+<h2>Homepage</h2>
+<p>Your homepage has one job: make visitors instantly understand what you do and guide them to the next step.</p>
+<ol>
+  <li><strong>Headline:</strong> what you do, for whom, and where (for example "Industrial control panels manufactured in Pune").</li>
+  <li><strong>Supporting line:</strong> the main benefit or what makes you different.</li>
+  <li><strong>Call to action:</strong> one clear button like "Get a Quote" or "Book a Consultation".</li>
+  <li><strong>Services overview:</strong> short summaries linking to each service page.</li>
+  <li><strong>Proof:</strong> client logos, testimonials, numbers you can back up, certifications.</li>
+  <li><strong>How it works:</strong> 3–4 simple steps.</li>
+  <li><strong>FAQs and a final call to action.</strong></li>
+</ol>
+
+<h2>About page</h2>
+<p>People buy from people. Your about page should build trust, not list your company history in detail.</p>
+<ul>
+  <li>Who you are and why you started</li>
+  <li>Who you help and how</li>
+  <li>Your experience, qualifications and approach</li>
+  <li>Real photos of you, your team or your premises</li>
+  <li>A call to action at the end</li>
+</ul>
+
+<h2>Service pages</h2>
+<p>Create one page for each main service. These pages do the heavy lifting for both enquiries and Google rankings.</p>
+<ul>
+  <li><strong>Headline</strong> naming the service (and location, if local)</li>
+  <li><strong>The problem</strong> the customer has, in their words</li>
+  <li><strong>Your solution</strong>: what's included and how it works</li>
+  <li><strong>Benefits</strong>, not just features: what changes for the customer</li>
+  <li><strong>Proof</strong>: examples, case studies or testimonials for this service</li>
+  <li><strong>FAQs</strong> about price, timeline and process</li>
+  <li><strong>Call to action</strong></li>
+</ul>
+
+<h2>Writing tips that work</h2>
+<ul>
+  <li>Use "you" more than "we". Focus on the customer.</li>
+  <li>Keep paragraphs short (2–3 sentences), and use headings and bullet points.</li>
+  <li>Be specific: "Delivered in 2 weeks" beats "fast delivery".</li>
+  <li>Only use claims and numbers you can back up.</li>
+  <li>Add a call to action after every major section.</li>
+</ul>
+
+<h2>SEO basics for your content</h2>
+<ul>
+  <li>Use the words your customers search for naturally in headings and text.</li>
+  <li>Give every page a unique title and meta description.</li>
+  <li>Link between related pages (for example from the homepage to each service page).</li>
+  <li>Add descriptive alt text to images.</li>
+</ul>
+
+<h2>Stuck? Start with this</h2>
+<p>Write down the 10 questions customers ask you most often, and answer each in a few sentences. You'll have the raw material for your homepage, service pages and FAQ. A good developer can then shape it into pages; see what's included in a <a href="/wordpress-website-development/">WordPress website project</a>.</p>
+`,
+  },
+  {
+    slug: 'website-design-mistakes',
+    title: '15 Website Design Mistakes That Cost Small Businesses Customers',
+    description: 'Avoid these 15 common website design mistakes, from cluttered layouts and tiny text to hidden contact details and slow pages, that quietly drive potential customers away.',
+    date: '2026-09-29',
+    category: 'Growth',
+    related: ['website-redesign', 'wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Most visitors decide within seconds whether to stay on a website. Small design mistakes, the kind business owners stop noticing on their own site, can quietly send customers to competitors. Here are 15 to check for.</p>
+
+<h2>First impressions</h2>
+<ol>
+  <li><strong>Unclear headline.</strong> If visitors can't tell what you do in five seconds, they leave.</li>
+  <li><strong>Auto-playing sliders.</strong> Rotating banners distract, slow the page, and most visitors never see slide two.</li>
+  <li><strong>Stock photos everywhere.</strong> Generic images feel impersonal. Real photos of your work and team build trust.</li>
+  <li><strong>Cluttered layouts.</strong> Too many colours, fonts and elements competing for attention.</li>
+</ol>
+
+<h2>Mobile and speed</h2>
+<ol start="5">
+  <li><strong>Not mobile-friendly.</strong> Tiny text, overlapping elements and buttons too small to tap.</li>
+  <li><strong>Slow loading.</strong> Heavy images and too many scripts. See <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</li>
+  <li><strong>Pop-ups that block everything</strong> as soon as the page opens, especially on mobile.</li>
+</ol>
+
+<h2>Navigation and content</h2>
+<ol start="8">
+  <li><strong>Confusing menus.</strong> Too many items or vague labels like "Solutions" with no context.</li>
+  <li><strong>Walls of text.</strong> No headings, bullet points or white space.</li>
+  <li><strong>Everything on one page.</strong> Without separate service pages, you can't speak to each customer's needs or rank for each service.</li>
+  <li><strong>Outdated information.</strong> Old prices, past events or a copyright year from years ago signal a neglected business.</li>
+</ol>
+
+<h2>Contact and conversion</h2>
+<ol start="12">
+  <li><strong>Hidden contact details.</strong> Phone and WhatsApp should be easy to find on every page.</li>
+  <li><strong>Weak or missing calls to action.</strong> Tell visitors exactly what to do next.</li>
+  <li><strong>Long, demanding forms.</strong> Ask only what you need.</li>
+  <li><strong>No proof.</strong> No testimonials, reviews, client logos or examples of work.</li>
+</ol>
+
+<h2>How to audit your own site</h2>
+<ol>
+  <li>Open your site on your phone and try to contact yourself in under 30 seconds.</li>
+  <li>Ask someone unfamiliar with your business what you do after five seconds on the homepage.</li>
+  <li>Test speed on PageSpeed Insights.</li>
+  <li>Check every page for outdated information.</li>
+</ol>
+<p>If you find several of these problems, a focused <a href="/website-redesign/">redesign</a> can usually fix them quickly and turn more visitors into enquiries.</p>
+`,
+  },
+  {
+    slug: 'wordpress-vs-custom-coded-website',
+    title: 'WordPress vs Custom-Coded Website: Which Is Right for Your Business?',
+    description: 'Should you build on WordPress or get a custom-coded website? Compare cost, speed, flexibility, maintenance, SEO and ease of editing to choose the right approach.',
+    date: '2026-09-29',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'hire-wordpress-developer', 'website-for-startups'],
+    body: `
+<p>When planning a new website, you'll hear two main options: build on a platform like <strong>WordPress</strong>, or have developers <strong>code a custom website</strong> from scratch (often with frameworks like React or Next.js). Both can produce excellent websites. The right choice depends on what your website needs to do.</p>
+
+<h2>Quick comparison</h2>
+<table>
+  <thead><tr><th></th><th>WordPress</th><th>Custom-coded</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Upfront cost</strong></td><td>Lower</td><td>Higher</td></tr>
+    <tr><td><strong>Time to launch</strong></td><td>Faster</td><td>Slower</td></tr>
+    <tr><td><strong>Editing content</strong></td><td>Easy for non-technical staff</td><td>Often needs a developer or a separate CMS</td></tr>
+    <tr><td><strong>Features</strong></td><td>Thousands of plugins available</td><td>Anything, but each feature is built</td></tr>
+    <tr><td><strong>Performance</strong></td><td>Fast when built and hosted well</td><td>Can be extremely fast</td></tr>
+    <tr><td><strong>Maintenance</strong></td><td>Regular plugin/core updates</td><td>Developer needed for most changes</td></tr>
+    <tr><td><strong>Finding developers</strong></td><td>Very easy</td><td>Depends on the tech stack</td></tr>
+  </tbody>
+</table>
+
+<h2>When WordPress is the better choice</h2>
+<ul>
+  <li>Business websites, service sites and portfolios</li>
+  <li>Blogs, news sites and content-heavy websites</li>
+  <li>Online stores (with WooCommerce)</li>
+  <li>When your team wants to update pages themselves</li>
+  <li>When you want to launch quickly on a sensible budget</li>
+</ul>
+
+<h2>When custom code makes sense</h2>
+<ul>
+  <li>Web applications with complex, unique functionality (dashboards, SaaS products)</li>
+  <li>Very high-traffic platforms with specialised performance needs</li>
+  <li>Products where the website <em>is</em> the software</li>
+  <li>When you have an in-house development team to maintain it</li>
+</ul>
+
+<h2>Common myths</h2>
+<h3>"WordPress is only for blogs"</h3>
+<p>Not for many years. It runs business websites, directories, stores and large media sites.</p>
+<h3>"WordPress is slow"</h3>
+<p>Poorly built WordPress sites are slow. With a lightweight theme, good hosting, caching and optimized images, WordPress sites can score very well on Core Web Vitals.</p>
+<h3>"WordPress isn't secure"</h3>
+<p>Most WordPress hacks come from outdated plugins and weak passwords. With updates, good hosting and basic security practices, WordPress is secure. See the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
+
+<h2>The practical answer for most businesses</h2>
+<p>For the vast majority of small and medium businesses, WordPress gives the best balance of cost, speed to launch, flexibility and ease of editing. Custom code is worth the extra investment when you're building a web application rather than a website. If you're unsure, describe what your site needs to do and a developer can recommend the right approach; start with <a href="/wordpress-website-development/">WordPress website development</a> to see what's typically included.</p>
+`,
+  },
 ];
