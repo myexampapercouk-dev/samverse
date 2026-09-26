@@ -1754,4 +1754,371 @@ module.exports = [
 <p>If you regularly turn down or delay website projects, or your team spends more time building than selling and strategising, white-label development can help you grow without the overhead of new hires. Learn how I work with agencies on <a href="/wordpress-developer-for-agencies/">white-label WordPress development</a>, or see examples of agency websites like <a href="/work/streak-creative/">Streak Creative</a> and <a href="/work/third-eye-social/">Third Eye Social</a>.</p>
 `,
   },
+  {
+    slug: 'real-estate-website-must-have-features',
+    seoTitle: 'Real Estate Website: 14 Must-Have Features',
+    title: 'Real Estate Website Must-Haves: 14 Features That Generate Site Visits',
+    description: 'The 14 features every builder, developer and property agent website needs to turn visitors into site visits: project pages, floor plans, brochures, RERA details and fast lead forms.',
+    date: '2026-09-29',
+    category: 'Industries',
+    related: ['real-estate-website-design', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>Property is one of the biggest purchases people make, and they research heavily online before visiting a site. A real estate website that answers their questions and makes enquiring effortless can generate a steady flow of qualified leads. Here are the features that matter most.</p>
+
+<h2>Project and property information</h2>
+<ol>
+  <li><strong>A dedicated page per project.</strong> Each project needs its own URL with full details. It's better for buyers and for Google.</li>
+  <li><strong>High-quality galleries.</strong> Renders, actual site photos, sample flats and construction progress.</li>
+  <li><strong>Floor plans and unit configurations.</strong> 2BHK, 3BHK and so on, with carpet area clearly stated.</li>
+  <li><strong>Amenities.</strong> Clearly listed, with icons or photos.</li>
+  <li><strong>Location advantages.</strong> A map plus distances to schools, hospitals, metro, highways and offices.</li>
+  <li><strong>RERA and approvals.</strong> Registration numbers and approvals displayed clearly, as required, to build trust.</li>
+  <li><strong>Construction status.</strong> Ongoing, ready-to-move or completed, with updates.</li>
+</ol>
+
+<h2>Lead capture</h2>
+<ol start="8">
+  <li><strong>Short enquiry forms</strong> on every project page: name, phone and preferred configuration are usually enough.</li>
+  <li><strong>"Book a site visit" call to action</strong> with preferred date and time.</li>
+  <li><strong>Gated brochure download.</strong> Capture contact details in exchange for the brochure and price sheet.</li>
+  <li><strong>WhatsApp and click-to-call</strong> visible on mobile at all times.</li>
+</ol>
+
+<h2>Trust and credibility</h2>
+<ol start="12">
+  <li><strong>Track record.</strong> Completed projects, years in business and delivered units, where you can back them up.</li>
+  <li><strong>Testimonials and walkthrough videos</strong> from real buyers.</li>
+</ol>
+
+<h2>Performance and marketing</h2>
+<ol start="14">
+  <li><strong>Fast, mobile-first pages and campaign landing pages.</strong> Most property ads are clicked on phones. Dedicated landing pages for each project campaign, with conversion tracking, make ad spend far more efficient. Read about the <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a>.</li>
+</ol>
+
+<h2>SEO for real estate websites</h2>
+<ul>
+  <li>Target project names, locality and configuration searches ("3BHK flats in {locality}")</li>
+  <li>Write useful locality guides that cover connectivity, schools, prices and upcoming infrastructure</li>
+  <li>Use descriptive titles and alt text for images</li>
+  <li>Keep your Google Business Profile updated with project photos</li>
+</ul>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>One long page for all projects</li>
+  <li>Heavy, slow galleries and auto-playing videos</li>
+  <li>Hiding RERA details or prices entirely</li>
+  <li>Enquiry forms that ask for too much information</li>
+</ul>
+
+<p>A real estate website built around these features works as a 24/7 sales office. See what's included in a <a href="/real-estate-website-design/">real estate website</a>.</p>
+`,
+  },
+  {
+    slug: 'school-coaching-website-what-parents-look-for',
+    seoTitle: 'School & Coaching Websites: What Parents Look For',
+    title: 'School and Coaching Institute Websites: What Parents and Students Look For',
+    description: 'What parents and students look for on school, college and coaching institute websites, and the pages and features that turn visitors into admission enquiries.',
+    date: '2026-09-29',
+    category: 'Industries',
+    related: ['website-for-schools-and-coaching', 'wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>Choosing a school or coaching institute is a big decision for families, and it almost always starts with online research. Parents compare several institutes' websites before calling any of them. Here's what they look for, and how to make sure your website makes the shortlist.</p>
+
+<h2>What parents and students want to see</h2>
+<ul>
+  <li><strong>Results and achievements:</strong> board results, competitive exam selections and toppers, presented honestly</li>
+  <li><strong>Faculty:</strong> who will teach, their qualifications and experience</li>
+  <li><strong>Courses and batches:</strong> subjects, timings, duration and batch sizes</li>
+  <li><strong>Fees and admission process:</strong> clear steps, key dates and required documents</li>
+  <li><strong>Facilities and safety:</strong> classrooms, labs, library, transport and security</li>
+  <li><strong>Location and timings:</strong> map, directions and contact details</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ol>
+  <li><strong>Home:</strong> who you are, key achievements, courses overview and an admission enquiry button</li>
+  <li><strong>About:</strong> history, vision, management and accreditation</li>
+  <li><strong>Courses / Academics:</strong> a page per course or class group</li>
+  <li><strong>Admissions:</strong> process, eligibility, dates, fees (if shared) and an enquiry form</li>
+  <li><strong>Results:</strong> year-wise results and toppers</li>
+  <li><strong>Faculty:</strong> profiles with photos</li>
+  <li><strong>Gallery and events:</strong> real photos of campus life</li>
+  <li><strong>Notice board:</strong> announcements, holidays and circulars</li>
+  <li><strong>Contact:</strong> phone, WhatsApp, map and timings</li>
+</ol>
+
+<h2>Features that increase enquiries</h2>
+<ul>
+  <li>A short admission enquiry form on every page</li>
+  <li>WhatsApp button for quick questions</li>
+  <li>Downloadable prospectus</li>
+  <li>Online fee payment (via a gateway like Razorpay). See <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>.</li>
+  <li>Demo class or counselling session booking for coaching institutes</li>
+</ul>
+
+<h2>Keep it updated</h2>
+<p>Nothing damages trust faster than last year's admission dates or an old notice board. Build the site so staff can post notices, events and results themselves in minutes.</p>
+
+<h2>Get found by local families</h2>
+<ul>
+  <li>Target searches like "best CBSE school in {area}" or "NEET coaching in {city}" in titles and content</li>
+  <li>Create course pages with genuinely useful detail</li>
+  <li>Complete your Google Business Profile and encourage parent reviews</li>
+  <li>Publish helpful articles on exam preparation and admissions</li>
+</ul>
+
+<h2>Next step</h2>
+<p>A clear, trustworthy website with easy admission enquiries can make a real difference to each admission season. See what's included in a <a href="/website-for-schools-and-coaching/">school and coaching institute website</a>.</p>
+`,
+  },
+  {
+    slug: 'temple-ngo-website-online-donations',
+    seoTitle: 'Temple & NGO Websites: Online Donations Guide',
+    title: 'Temple, Trust and NGO Websites: A Guide to Online Donations and Engagement',
+    description: 'How temples, religious trusts and NGOs can use their website to accept online donations, share events and timings, recruit volunteers and build trust with supporters.',
+    date: '2026-09-29',
+    category: 'Industries',
+    related: ['website-for-temples-and-ngos', 'woocommerce-developer', 'wordpress-maintenance'],
+    body: `
+<p>Devotees, donors and volunteers increasingly connect with temples, trusts and NGOs online. A good website helps people find you, stay informed and support your work, and online donations can make giving far easier for supporters anywhere in the world.</p>
+
+<h2>What visitors come for</h2>
+<ul>
+  <li><strong>Temples:</strong> darshan and aarti timings, festivals, directions, history, seva and puja booking, donations</li>
+  <li><strong>NGOs and trusts:</strong> your mission, projects, impact, how to donate, how to volunteer, and transparency</li>
+</ul>
+
+<h2>Setting up online donations</h2>
+<ol>
+  <li><strong>Choose a payment gateway</strong> such as Razorpay or another provider that supports UPI, cards and net banking. Gateways will check your organisation's registration and policy pages.</li>
+  <li><strong>Create a simple donation page</strong> with suggested amounts, a custom amount option, and optional purposes (annadanam, building fund, education program).</li>
+  <li><strong>Send automatic receipts</strong> by email after each donation.</li>
+  <li><strong>Tax details:</strong> if your organisation is eligible for tax exemption receipts, collect the donor details required and follow the applicable rules. Confirm current requirements with your accountant.</li>
+  <li><strong>International donations</strong> may have additional legal requirements for your organisation. Check what applies before enabling them.</li>
+</ol>
+<p>Our guide to <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a> explains the technical setup.</p>
+
+<h2>Build trust and transparency</h2>
+<ul>
+  <li>Registration details and trustees or team</li>
+  <li>Clear explanation of how donations are used</li>
+  <li>Project updates with photos</li>
+  <li>Annual reports, where available</li>
+</ul>
+
+<h2>Engagement features</h2>
+<ul>
+  <li><strong>Events and festival calendar</strong> that your team can update easily</li>
+  <li><strong>Photo and video galleries</strong>, including live darshan or event recordings</li>
+  <li><strong>Volunteer sign-up form</strong></li>
+  <li><strong>Newsletter or WhatsApp channel</strong> sign-up for updates</li>
+  <li><strong>Multilingual content</strong>, such as Hindi, English or regional languages</li>
+</ul>
+
+<h2>Keep it respectful and simple</h2>
+<p>Design should be calm, respectful and easy to read, especially for older visitors. Large text, clear menus and fast loading on basic phones make a big difference.</p>
+
+<h2>Real example</h2>
+<p>For a large-scale example, see the <a href="/work/our-temples/">Our Temples case study</a>: a directory of hundreds of temples searchable by state and deity, with videos, slokas and a blog.</p>
+
+<h2>Next step</h2>
+<p>A website with reliable online donations and up-to-date information helps your community stay connected all year. See what's included in a <a href="/website-for-temples-and-ngos/">temple, trust or NGO website</a>.</p>
+`,
+  },
+  {
+    slug: 'startup-website-checklist',
+    seoTitle: 'Startup Website Checklist: Launch Fast & Convert',
+    title: 'Startup Website Checklist: What to Launch With (and What Can Wait)',
+    description: 'A practical startup website checklist: the pages, messaging, analytics and integrations you need at launch, what can wait, and how to launch fast without wasting runway.',
+    date: '2026-09-29',
+    category: 'Growth',
+    related: ['website-for-startups', 'landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>Startups need a credible website fast, for customers, investors and hiring. But it's easy to burn weeks polishing pages nobody reads. Here's what to launch with, what can wait, and how to keep the site flexible as you grow.</p>
+
+<h2>Launch with these</h2>
+<h3>1. A clear homepage</h3>
+<ul>
+  <li><strong>Headline:</strong> what you do and for whom, in one sentence</li>
+  <li><strong>Subheadline:</strong> the main benefit or problem you solve</li>
+  <li><strong>Primary call to action:</strong> sign up, book a demo or join the waitlist</li>
+  <li><strong>How it works:</strong> 3 simple steps or a short product visual</li>
+  <li><strong>Proof:</strong> early customers, pilots, partners or press, whatever you genuinely have</li>
+</ul>
+<h3>2. Product or features page</h3>
+<p>Explain the key features in terms of outcomes for the customer.</p>
+<h3>3. Pricing page (if you sell self-serve)</h3>
+<p>Even "Contact us for pricing" is better than nothing. Clear pricing reduces sales friction.</p>
+<h3>4. About and contact</h3>
+<p>Founders, mission and a simple way to reach you. Investors and early hires look here.</p>
+<h3>5. Legal basics</h3>
+<p>Privacy policy and terms, especially if you collect sign-ups or payments.</p>
+<h3>6. Analytics from day one</h3>
+<p>Set up GA4 and Search Console, and track sign-ups and demo requests as key events. See <a href="/blog/setup-google-analytics-search-console/">how to set up GA4 and Search Console</a>.</p>
+
+<h2>What can wait</h2>
+<ul>
+  <li>A big blog: start with 2–3 genuinely useful articles instead</li>
+  <li>Complex animations and custom illustrations</li>
+  <li>Dozens of pages for every feature and persona</li>
+  <li>Multiple languages, until you actually serve those markets</li>
+</ul>
+
+<h2>Integrations worth setting up early</h2>
+<ul>
+  <li>Forms connected to your CRM or a Google Sheet (HubSpot, Zoho and similar)</li>
+  <li>Email list tool for waitlists and newsletters</li>
+  <li>Calendar booking for demos</li>
+  <li>WhatsApp or chat for quick questions</li>
+</ul>
+
+<h2>Build for iteration</h2>
+<p>Your messaging will change as you learn from customers. Build the site so your team can edit headlines, add landing pages for campaigns and publish articles without a developer. That's where WordPress with a visual builder shines. For campaigns, dedicated <a href="/landing-page-design/">landing pages</a> let you test offers quickly.</p>
+
+<h2>Speed matters</h2>
+<p>A fast site signals competence and helps SEO. Use a lightweight theme, optimized images and good hosting from the start. Retrofitting speed later is harder.</p>
+
+<h2>Launch checklist</h2>
+<ol>
+  <li>Headline tested with 5 people outside your team</li>
+  <li>Calls to action working and tracked</li>
+  <li>Mobile layout checked on real phones</li>
+  <li>Page titles and descriptions written</li>
+  <li>Sitemap submitted to Google Search Console</li>
+  <li>Social sharing image (Open Graph) set</li>
+</ol>
+
+<p>Ready to launch? See what's included in a <a href="/website-for-startups/">startup website</a>.</p>
+`,
+  },
+  {
+    slug: 'figma-to-wordpress-designer-guide',
+    seoTitle: 'Figma to WordPress: What Designers Should Prepare',
+    title: 'Figma to WordPress: What Designers Should Prepare for a Smooth Handoff',
+    description: 'A handoff checklist for designers and agencies converting Figma designs to WordPress: styles, components, responsive frames, assets, content and interactions, for pixel-accurate builds.',
+    date: '2026-09-29',
+    category: 'Agencies',
+    related: ['figma-to-wordpress', 'elementor-developer', 'wordpress-developer-for-agencies'],
+    body: `
+<p>A great Figma design can lose a lot in translation if the handoff is messy. A little preparation helps your WordPress developer build it faster and closer to your vision, with fewer revision rounds. Here's what to prepare.</p>
+
+<h2>1. Set up styles properly</h2>
+<ul>
+  <li><strong>Colour styles:</strong> named colours (primary, secondary, text, backgrounds) instead of one-off hex values</li>
+  <li><strong>Text styles:</strong> H1–H6, body, small text and buttons with font, size, weight and line height</li>
+  <li><strong>Spacing system:</strong> a consistent scale (for example 8, 16, 24, 32, 48, 64 px)</li>
+</ul>
+<p>These map directly to global styles in Elementor or the block editor, which keeps the site consistent and easy to edit.</p>
+
+<h2>2. Use components</h2>
+<p>Buttons, cards, headers, footers, forms and testimonials should be components with variants (hover, active). Repeated elements become reusable templates in WordPress.</p>
+
+<h2>3. Design responsive frames</h2>
+<ul>
+  <li>At minimum: desktop (around 1440 px) and mobile (around 375 px)</li>
+  <li>Tablet for complex layouts</li>
+  <li>If you only design desktop, note how key sections should stack on mobile</li>
+</ul>
+
+<h2>4. Prepare assets</h2>
+<ul>
+  <li>Logos and icons as SVG</li>
+  <li>Photos exportable at 2× for sharp screens (the developer will compress them)</li>
+  <li>Font files or Google Fonts names, and licences for premium fonts</li>
+</ul>
+
+<h2>5. Use real content where possible</h2>
+<p>Lorem ipsum hides problems. Long headings, real product names and actual testimonials show how layouts behave. If content isn't final, note the expected length.</p>
+
+<h2>6. Document interactions</h2>
+<ul>
+  <li>Hover states for buttons, cards and links</li>
+  <li>Animations: what moves, when and how (prototype or short notes)</li>
+  <li>Menus, dropdowns, tabs, accordions and popups</li>
+  <li>Form behaviour: fields, validation and success messages</li>
+</ul>
+
+<h2>7. Organise the file</h2>
+<ul>
+  <li>One page per website page, clearly named</li>
+  <li>Final designs separated from explorations</li>
+  <li>Dev Mode or inspect access for the developer</li>
+</ul>
+
+<h2>8. Agree on scope</h2>
+<p>List pages, templates (blog post, archive, product), integrations (CRM, newsletter, payments) and who handles content entry. Clear scope means an accurate quote and timeline.</p>
+
+<h2>Quick handoff checklist</h2>
+<ol>
+  <li>Colour and text styles defined</li>
+  <li>Components with variants</li>
+  <li>Desktop and mobile frames</li>
+  <li>SVG logos and icons, fonts and images</li>
+  <li>Interactions documented</li>
+  <li>Page list and scope agreed</li>
+</ol>
+
+<p>With a clean handoff, a pixel-accurate build is fast and predictable. See how <a href="/figma-to-wordpress/">Figma to WordPress conversion</a> works, including white-label builds for agencies.</p>
+`,
+  },
+  {
+    slug: 'industrial-website-product-catalogue',
+    seoTitle: 'Product Catalogue Websites for Industrial Companies',
+    title: 'How to Build a Product Catalogue Website for an Industrial Company',
+    description: 'How industrial companies and manufacturers should structure product catalogue websites: categories, specifications, datasheets, request-a-quote flows and SEO for product searches.',
+    date: '2026-09-29',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
+    body: `
+<p>For industrial companies, the product catalogue is the heart of the website. Buyers and engineers want to find the right product quickly, check specifications and request a quote. A well-structured catalogue does exactly that, and ranks for the specific product searches buyers make.</p>
+
+<h2>Catalogue or online store?</h2>
+<p>Most industrial and B2B companies don't need a cart and checkout. Prices depend on quantity, specifications and delivery. A <strong>catalogue with "Request a Quote"</strong> is usually the right model. WooCommerce can still power it (for product management and filters), with the cart replaced by quote requests.</p>
+
+<h2>Structure your categories like buyers think</h2>
+<ul>
+  <li>Group by product type first (for example Pumps → Centrifugal Pumps → End Suction Pumps)</li>
+  <li>Offer secondary browsing by industry or application ("Pumps for Water Treatment")</li>
+  <li>Keep category names in the terms buyers actually search</li>
+</ul>
+
+<h2>What every product page needs</h2>
+<ol>
+  <li><strong>Clear product name and model numbers</strong></li>
+  <li><strong>Photos and drawings</strong>, including dimension drawings where relevant</li>
+  <li><strong>Specification table</strong>: capacity, dimensions, materials, ratings and standards</li>
+  <li><strong>Applications and industries served</strong></li>
+  <li><strong>Downloadable datasheet / brochure (PDF)</strong></li>
+  <li><strong>Request a Quote button</strong>, pre-filled with the product name</li>
+  <li><strong>Related products and accessories</strong></li>
+</ol>
+
+<h2>Make quote requests effortless</h2>
+<ul>
+  <li>Ask for product, quantity, company name, location and contact details</li>
+  <li>Allow file uploads for drawings or specifications</li>
+  <li>Send enquiries to the right sales person instantly, and reply fast</li>
+  <li>Offer WhatsApp for quick questions</li>
+</ul>
+
+<h2>Filters and search</h2>
+<p>For large catalogues, filters by capacity, material, size or application save buyers time. A good site search that understands model numbers is essential.</p>
+
+<h2>SEO for product catalogues</h2>
+<ul>
+  <li>One page per product or product family, each with a unique title and description</li>
+  <li>Use specific keywords ("SS 304 storage tank 5000 litre manufacturer")</li>
+  <li>Add product and organization schema markup</li>
+  <li>Write descriptive alt text for product images</li>
+  <li>Link categories, products and related articles together</li>
+</ul>
+
+<h2>Keep it manageable</h2>
+<p>Your team should be able to add products, update specifications and upload datasheets themselves. Import product data from spreadsheets to launch large catalogues quickly.</p>
+
+<h2>Real examples</h2>
+<p>See how an electronics OEM presents its service divisions, infrastructure and service-specific enquiry form in the <a href="/work/vansh-group/">Vansh Group case study</a>, and how the <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer website guide</a> covers the wider site. For your company, see what's included in a <a href="/website-for-manufacturers/">manufacturer website</a>.</p>
+`,
+  },
 ];
