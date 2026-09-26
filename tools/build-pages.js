@@ -28,114 +28,16 @@ const contact = between('<!-- ===== Contact ===== -->', '</section>');
 const footer = rebase(between('<footer class="footer">', '</footer>'));
 const waFloat = between('<a class="wa-float"', '</a>');
 
-const PAGES = [
-  {
-    slug: 'wordpress-developer-for-agencies',
-    nav: 'For Agencies',
-    title: 'White-Label WordPress Developer for Agencies | Samverse',
-    description: 'Outsource WordPress and Elementor development to a reliable white-label developer in India. Your brand, your client relationship, fixed quotes and on-time delivery.',
-    eyebrow: 'For digital & design agencies',
-    h1: 'Your <span class="grad">white-label</span> WordPress developer',
-    lead: 'You win the client, I build the website. I turn your agency\'s designs and briefs into fast, responsive WordPress sites under your brand, so you can take on more projects without hiring.',
-    wa: 'Hi Sameer, I run an agency and want to discuss white-label WordPress work.',
-    painTitle: 'Why agencies outsource to me',
-    pains: [
-      ['Your name, not mine', 'I work behind the scenes under NDA. No contact with your clients unless you want it, and no credits on the site.'],
-      ['Design to WordPress, accurately', 'Figma, XD or PDF designs built pixel-accurately in Elementor or your preferred theme.'],
-      ['Clear, fixed quotes', 'A fixed price per project before work starts, so you can quote your client with confidence and keep your margin.'],
-      ['Handles the overflow', 'Take on extra projects in busy months without hiring or training a full-time developer.'],
-    ],
-    getsTitle: 'What I can take off your plate',
-    gets: ['Business & corporate websites', 'Landing pages for ad campaigns', 'WooCommerce stores', 'Theme & Elementor customization', 'Speed optimization & Core Web Vitals', 'Site migrations & redesigns', 'Monthly maintenance for your clients', 'Bug fixes & urgent updates'],
-    projects: ['Third Eye Social', 'Streak Creative', 'Vansh Group', 'India Automation Hub'],
-    faqs: [
-      ['Do you work under NDA?', 'Yes. I\'m happy to sign an NDA, and I never contact your clients directly or add my credit to the sites I build for you.'],
-      ['How do you price agency work?', 'Each project gets a fixed quote based on the pages and features in your brief. Regular partners get priority scheduling.'],
-      ['What do you need from us to start?', 'The design files or reference sites, the content (or a note on who provides it), and hosting or staging access. I\'ll confirm scope and timeline before starting.'],
-      ['Can you handle ongoing maintenance for our clients?', 'Yes. I can manage updates, backups, security checks and small changes on a monthly basis for your client sites.'],
-    ],
-  },
-  {
-    slug: 'wordpress-website-for-doctors',
-    nav: 'Doctors & Clinics',
-    title: 'Website Design for Doctors & Clinics in India | WordPress | Samverse',
-    description: 'Professional WordPress websites for doctors, clinics and hospitals. Mobile-friendly, fast, found on Google, with appointment enquiries straight to WhatsApp.',
-    eyebrow: 'For doctors, clinics & hospitals',
-    h1: 'Websites that help <span class="grad">patients find you</span> and book',
-    lead: 'Patients search on Google before they choose a doctor. I build professional, mobile-friendly clinic websites that build trust, rank for local searches and turn visitors into appointment enquiries.',
-    wa: 'Hi Sameer, I need a website for my clinic / practice.',
-    painTitle: 'What a good clinic website does for you',
-    pains: [
-      ['Builds trust before the visit', 'Your qualifications, experience, treatments and clinic photos presented professionally, so patients choose you with confidence.'],
-      ['Gets found in local search', 'SEO set up for searches like "dermatologist near me" or "best orthopaedic doctor in [city]", along with your Google Business Profile.'],
-      ['Makes booking easy', 'One-tap call, WhatsApp and appointment enquiry forms that work perfectly on the phones your patients use.'],
-      ['Easy for your staff to update', 'Timings, notices and new treatments can be updated without calling a developer.'],
-    ],
-    getsTitle: 'What your clinic website includes',
-    gets: ['Doctor profile & qualifications', 'Treatments & services pages', 'Appointment enquiry form', 'WhatsApp & one-tap call buttons', 'Google Maps & clinic timings', 'Patient testimonials section', 'Local SEO setup', 'Fast, mobile-first design'],
-    projects: ['Dr. Sudhir Arora'],
-    faqs: [
-      ['Can patients book appointments on the website?', 'Yes. I can add an appointment enquiry form that emails you and opens WhatsApp, or integrate a booking system if you use one.'],
-      ['Will my clinic show up on Google?', 'I set up on-page SEO, schema markup for medical practices, a sitemap and Search Console, and help link your Google Business Profile. That gives you the right foundation for local searches.'],
-      ['How long does a clinic website take?', 'Usually 1–2 weeks once I have your content: photos, qualifications and the list of treatments.'],
-      ['Can you write the content for the site?', 'I can structure the pages and help polish your content. Medical details should come from you so they are accurate.'],
-    ],
-  },
-  {
-    slug: 'website-for-manufacturers',
-    nav: 'Manufacturers & B2B',
-    title: 'Website Design for Manufacturers & Industrial Companies | Samverse',
-    description: 'WordPress websites for manufacturers, industrial suppliers and B2B companies. Product catalogues, enquiry forms and SEO that bring in bulk and export enquiries.',
-    eyebrow: 'For manufacturers, industrial & B2B',
-    h1: 'B2B websites that <span class="grad">bring in enquiries</span>',
-    lead: 'Buyers and procurement teams check your website before they call. I build clear, professional websites for manufacturers and industrial suppliers that show your products and capability, and turn visits into RFQs.',
-    wa: 'Hi Sameer, I need a website for my manufacturing / B2B company.',
-    painTitle: 'What your B2B website should do',
-    pains: [
-      ['Show your capability', 'Products, certifications, facilities and clients presented so buyers take you seriously from the first visit.'],
-      ['Organise large catalogues', 'Product categories, specifications and downloadable brochures that are easy to browse and easy for you to update.'],
-      ['Capture enquiries', 'Quote-request forms on every product, plus WhatsApp and email, so no enquiry is lost.'],
-      ['Found by the right buyers', 'SEO for your product and industry keywords, so buyers searching for what you make can find you.'],
-    ],
-    getsTitle: 'What your company website includes',
-    gets: ['Company profile & infrastructure', 'Product catalogue with specifications', 'Request-a-quote forms', 'Brochure & datasheet downloads', 'Certifications & client logos', 'Industries served pages', 'SEO for product keywords', 'Fast, mobile-friendly design'],
-    projects: ['India Automation Hub', 'Sahni Power Solutions', 'Vansh Group'],
-    faqs: [
-      ['Can I add and update products myself?', 'Yes. Products are managed from the WordPress dashboard, so you can add items, change specifications and upload brochures without code.'],
-      ['Do you build catalogues without online payments?', 'Yes. Most B2B sites use a catalogue with "Request a Quote" instead of a cart, and I can set up either.'],
-      ['Can the website support export enquiries?', 'Yes. I can structure the site for international buyers and add multilingual support if you need it.'],
-      ['How long does a B2B website take?', 'Usually 2–3 weeks depending on the number of products and pages, once content is ready.'],
-    ],
-  },
-  {
-    slug: 'woocommerce-developer',
-    nav: 'Online Stores',
-    title: 'WooCommerce Developer in India | Online Store Setup | Samverse',
-    description: 'Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout.',
-    eyebrow: 'For brands & online stores',
-    h1: 'Start selling online with a <span class="grad">WooCommerce</span> store',
-    lead: 'Own your online store instead of paying marketplace commissions. I build fast, mobile-friendly WooCommerce stores with payments, shipping and everything set up so you can start taking orders.',
-    wa: 'Hi Sameer, I want to build an online store with WooCommerce.',
-    painTitle: 'Why brands choose WooCommerce with me',
-    pains: [
-      ['No marketplace commission', 'Sell directly to customers on your own website and keep more of every order.'],
-      ['Payments & shipping ready', 'Indian payment gateways like Razorpay, PayU or Cashfree, COD options and shipping rules set up and tested.'],
-      ['Fast mobile checkout', 'Most shoppers buy on their phone, so product pages and checkout are optimized for speed and ease.'],
-      ['Easy to manage', 'Add products, manage stock and process orders yourself from a simple dashboard.'],
-    ],
-    getsTitle: 'What your store includes',
-    gets: ['Product catalogue & categories', 'Payment gateway integration', 'Cash on Delivery & shipping rules', 'Order & stock management', 'Order email notifications', 'Coupons & discounts', 'WhatsApp chat button', 'Speed & SEO optimization'],
-    projects: ['CNN Food & Spices', 'Our Temples'],
-    faqs: [
-      ['Which payment gateways can you set up?', 'Popular Indian gateways such as Razorpay, PayU, Cashfree and PhonePe, plus PayPal or Stripe for international payments, and Cash on Delivery.'],
-      ['How many products can the store have?', 'WooCommerce handles anything from a few products to thousands. I can also import your existing product list from a spreadsheet.'],
-      ['Can I manage orders on my phone?', 'Yes. You can manage orders from the WordPress dashboard in your browser or the WooCommerce mobile app.'],
-      ['How long does a store take to build?', 'Usually 2–4 weeks, depending on the number of products and features, once product details and photos are ready.'],
-    ],
-  },
-];
+const PAGES = require('./pages-data');
 
 const tick = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4z"/></svg>';
+
+const related = p => {
+  const same = PAGES.filter(x => x.type === p.type);
+  const i = same.indexOf(p);
+  return [1, 2, 3].map(n => same[(i + n) % same.length]).filter(x => x !== p);
+};
+const card = x => `<a class="industry" href="/${x.slug}/"><h3>${esc(x.nav)}</h3><p>${esc(x.description.split('. ')[0])}.</p><span class="ind-arrow">→</span></a>`;
 
 const render = p => {
   const url = `${SITE}/${p.slug}/`;
@@ -273,6 +175,19 @@ ${p.faqs.map(([q, a]) => `          <details>\n            <summary>${esc(q)}</s
       </div>
     </section>
 
+    <section class="section related">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">${p.type === 'industry' ? 'Other industries' : 'Related services'}</span>
+          <h2>You might also need</h2>
+        </div>
+        <div class="industries related-grid reveal">
+${related(p).map(x => '          ' + card(x)).join('\n')}
+        </div>
+        <p class="related-all"><a href="/solutions/" class="link-inline">See all industries &amp; services →</a></p>
+      </div>
+    </section>
+
     ${contact}
   </main>
 
@@ -293,9 +208,92 @@ for (const p of PAGES) {
   console.log('built', `/${p.slug}/`);
 }
 
+// /solutions/ hub: links to every landing page (helps Google discover them all)
+const hub = () => {
+  const group = (type, title, intro) => `
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">${type === 'industry' ? 'Industries' : 'Services'}</span>
+          <h2>${title}</h2>
+          <p class="muted">${intro}</p>
+        </div>
+        <div class="industries reveal">
+${PAGES.filter(x => x.type === type).map(x => '          ' + card(x)).join('\n')}
+        </div>
+      </div>
+    </section>`;
+  const url = `${SITE}/solutions/`;
+  const schema = {
+    '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'WordPress Services & Industries', url,
+    hasPart: PAGES.map(x => ({ '@type': 'WebPage', name: x.nav, url: `${SITE}/${x.slug}/` })),
+  };
+  return `<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordPress Services &amp; Industries | Samverse by Sameer Gupta</title>
+  <meta name="description" content="All WordPress services by Sameer Gupta: website design for doctors, manufacturers, restaurants, real estate and more, plus redesign, speed, SEO, maintenance and security.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="${url}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${url}">
+  <meta property="og:title" content="WordPress Services & Industries | Samverse">
+  <meta property="og:image" content="${SITE}/assets/og-image.png">
+  <meta name="theme-color" content="#6D4AFF">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <script src="/config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+${JSON.stringify(schema, null, 2)}
+  </script>
+</head>
+<body>
+
+  <!-- Generated by tools/build-pages.js -->
+  ${header}
+
+  <main>
+    <section class="hero lp-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> Solutions</nav>
+        <div class="lp-hero-copy reveal">
+          <h1>WordPress solutions for <span class="grad">every kind of business</span></h1>
+          <p class="lead">Pick your industry or the service you need to see exactly how I can help. Not sure? Send me a message and I'll recommend the right approach.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn">Get a Free Quote</a>
+            <a href="https://wa.me/${WA}" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+${group('industry', 'Websites by industry', 'Websites planned around what your customers need to see and do.')}
+${group('service', 'Services', 'Specialist WordPress services for new and existing websites.')}
+
+    ${contact}
+  </main>
+
+  ${footer}
+
+  ${waFloat}
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
+`;
+};
+fs.mkdirSync(path.join(ROOT, 'solutions'), { recursive: true });
+fs.writeFileSync(path.join(ROOT, 'solutions', 'index.html'), hub());
+console.log('built /solutions/');
+
 // Keep the sitemap in step with the pages
 const today = new Date().toISOString().slice(0, 10);
-const urls = [{ loc: `${SITE}/`, pr: '1.0' }, ...PAGES.map(p => ({ loc: `${SITE}/${p.slug}/`, pr: '0.8' }))];
+const urls = [{ loc: `${SITE}/`, pr: '1.0' }, { loc: `${SITE}/solutions/`, pr: '0.9' }, ...PAGES.map(p => ({ loc: `${SITE}/${p.slug}/`, pr: '0.8' }))];
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>${u.pr}</priority>\n  </url>`).join('\n')}
