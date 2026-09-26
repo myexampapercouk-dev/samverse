@@ -809,4 +809,234 @@ module.exports = [
 <p>Fix these mistakes and the same ad budget can bring in noticeably more leads.</p>
 `,
   },
+  {
+    slug: 'how-long-to-build-wordpress-website',
+    title: 'How Long Does It Take to Build a WordPress Website? (Realistic Timelines)',
+    description: 'Realistic timelines for building a WordPress website, from landing pages to business sites and WooCommerce stores, plus what speeds projects up or slows them down.',
+    date: '2026-09-29',
+    category: 'Guides',
+    related: ['website-redesign', 'woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>"When can it go live?" is usually the second question after "How much will it cost?". The honest answer depends on the size of the site and, more than anything, on how quickly content and feedback arrive. Here are realistic timelines and the things that make the biggest difference.</p>
+
+<h2>Typical timelines by type of website</h2>
+<table>
+  <thead><tr><th>Type of website</th><th>Typical build time*</th></tr></thead>
+  <tbody>
+    <tr><td>Single landing page</td><td>3–5 working days</td></tr>
+    <tr><td>Small business website (5–8 pages)</td><td>1–2 weeks</td></tr>
+    <tr><td>Larger business / B2B site with catalogue</td><td>2–4 weeks</td></tr>
+    <tr><td>WooCommerce online store</td><td>2–4 weeks</td></tr>
+    <tr><td>Redesign of an existing site</td><td>1–3 weeks</td></tr>
+    <tr><td>Complex custom features (bookings, memberships, multilingual)</td><td>4 weeks or more</td></tr>
+  </tbody>
+</table>
+<p>*From the moment content is ready. Waiting for content is the most common reason projects take longer.</p>
+
+<h2>The stages of a WordPress project</h2>
+<h3>1. Discovery (1–3 days)</h3>
+<p>Agreeing on goals, pages, features, reference websites and the target audience. A clear brief here saves days later.</p>
+<h3>2. Design (2–5 days)</h3>
+<p>The look and layout of key pages, usually the homepage first. You review and give feedback before the rest of the site is built.</p>
+<h3>3. Development (3–15 days)</h3>
+<p>Building all pages in WordPress, setting up forms, WhatsApp, payment gateways or other features, and making everything responsive.</p>
+<h3>4. Content entry (1–5 days)</h3>
+<p>Adding text, images, products and SEO details. This is fast when content is ready and organised.</p>
+<h3>5. Testing and launch (1–2 days)</h3>
+<p>Checking every page on mobile and desktop, testing forms and payments, speed optimization, then going live and submitting the sitemap to Google.</p>
+
+<h2>What speeds a project up</h2>
+<ul>
+  <li><strong>Content ready before starting:</strong> text for each page, logo, and good photos.</li>
+  <li><strong>Clear references:</strong> 2–3 websites you like and what you like about them.</li>
+  <li><strong>One decision-maker:</strong> feedback from one person avoids back-and-forth.</li>
+  <li><strong>Quick feedback:</strong> replying within a day keeps momentum.</li>
+  <li><strong>Hosting and domain access</strong> available on day one.</li>
+</ul>
+
+<h2>What slows a project down</h2>
+<ul>
+  <li>Content that arrives page by page over weeks</li>
+  <li>Adding new pages or features midway (scope creep)</li>
+  <li>Many rounds of design changes without clear direction</li>
+  <li>Waiting for payment gateway or third-party approvals (these can take days)</li>
+  <li>Product data for stores that isn't organised in a spreadsheet</li>
+</ul>
+
+<h2>Can it be done faster?</h2>
+<p>Yes, within reason. A landing page or small site can often go live in a few days if content is ready and decisions are quick. For urgent launches, a good approach is to launch the essential pages first and add the rest in a second phase.</p>
+
+<h2>Plan your launch</h2>
+<p>Work backwards from your launch date: if you need the site live for a campaign or event, start at least 3–4 weeks earlier for a business site, and longer for a store. Share your deadline at the start so your developer can plan the schedule around it.</p>
+`,
+  },
+  {
+    slug: 'redesign-website-without-losing-rankings',
+    title: 'How to Redesign Your Website Without Losing Google Rankings',
+    description: 'Redesigning or moving your website? Follow this SEO checklist, covering URL mapping, 301 redirects, metadata, staging and post-launch checks, to keep your Google rankings and traffic.',
+    date: '2026-09-29',
+    category: 'SEO',
+    related: ['website-redesign', 'wordpress-migration', 'wordpress-seo-services'],
+    body: `
+<p>A redesign should bring more enquiries, not fewer. But it's common for businesses to launch a beautiful new website and then watch their Google traffic drop. That almost always happens because a few SEO steps were skipped. Here's how to avoid it.</p>
+
+<h2>Why redesigns lose rankings</h2>
+<ul>
+  <li>Page URLs change and old links lead to 404 errors</li>
+  <li>Pages that ranked well are removed or merged without redirects</li>
+  <li>Titles, descriptions and headings are lost or rewritten carelessly</li>
+  <li>Valuable content is cut to make the design "cleaner"</li>
+  <li>The staging site accidentally stays blocked from search engines</li>
+  <li>The new site is slower than the old one</li>
+</ul>
+
+<h2>Before the redesign</h2>
+<h3>1. Record what's working now</h3>
+<p>Export your top pages from Google Search Console and Google Analytics: which pages get the most search clicks and which keywords they rank for. These pages need the most care.</p>
+<h3>2. Crawl the old site</h3>
+<p>Make a full list of existing URLs (a crawler tool or your sitemap works). You'll use it to plan redirects.</p>
+<h3>3. Keep URLs where possible</h3>
+<p>The safest URL is the one that doesn't change. Keep the same slugs for important pages whenever you can.</p>
+<h3>4. Map every changed URL</h3>
+<p>Create a simple spreadsheet: old URL, then new URL. Every old page should point to its closest new equivalent, not just the homepage.</p>
+
+<h2>During the build</h2>
+<ul>
+  <li><strong>Build on a staging site</strong> and block it from search engines while you work.</li>
+  <li><strong>Carry over SEO settings:</strong> titles, meta descriptions, headings and image alt text for key pages.</li>
+  <li><strong>Keep (and improve) content</strong> on pages that rank. Don't cut paragraphs just to make the page look minimal.</li>
+  <li><strong>Keep structured data</strong> (schema markup) and internal links.</li>
+  <li><strong>Test speed</strong>, because the new site should be at least as fast as the old one.</li>
+</ul>
+
+<h2>At launch</h2>
+<ol>
+  <li>Set up <strong>301 redirects</strong> for every changed URL from your map.</li>
+  <li><strong>Remove the "discourage search engines" setting</strong> in WordPress (Settings → Reading) and any noindex tags from staging.</li>
+  <li>Check that HTTPS works on every page and that there's one preferred version of your domain.</li>
+  <li>Submit the new <strong>XML sitemap</strong> in Google Search Console.</li>
+  <li>Test forms, WhatsApp buttons and phone links.</li>
+</ol>
+
+<h2>After launch</h2>
+<ul>
+  <li>Monitor Search Console daily for the first two weeks for 404 errors and indexing issues.</li>
+  <li>Fix any missing redirects quickly.</li>
+  <li>Compare traffic and rankings for your top pages with your "before" snapshot.</li>
+  <li>Expect small fluctuations for a few weeks as Google re-crawls the site. That's normal if the steps above are done.</li>
+</ul>
+
+<h2>The bottom line</h2>
+<p>A redesign done with SEO in mind usually improves rankings, because the new site is faster, clearer and better structured. The key is planning redirects and protecting the pages that already bring you traffic.</p>
+`,
+  },
+  {
+    slug: 'accept-online-payments-wordpress-india',
+    title: 'How to Accept Online Payments on a WordPress Website in India (UPI, Cards, COD)',
+    description: 'A practical guide to accepting payments on WordPress in India: Razorpay, PayU, Cashfree, PhonePe and UPI, WooCommerce setup, payment links, COD, fees and KYC requirements.',
+    date: '2026-09-29',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'website-for-schools-and-coaching', 'website-for-temples-and-ngos'],
+    body: `
+<p>Whether you're selling products, taking consultation fees, collecting course payments or accepting donations, your WordPress website can take payments by UPI, cards, net banking and wallets. Here's how it works in India and how to choose the right setup.</p>
+
+<h2>What you need</h2>
+<ul>
+  <li><strong>A payment gateway account</strong> such as Razorpay, PayU, Cashfree or PhonePe PG.</li>
+  <li><strong>Business KYC:</strong> typically PAN, bank account, business proof and GST details if applicable. Requirements vary by gateway and business type.</li>
+  <li><strong>A website with the required pages:</strong> gateways usually check for contact details, terms and conditions, privacy policy, and refund/cancellation and shipping policies before approving your account.</li>
+  <li><strong>HTTPS (SSL)</strong> on your website.</li>
+</ul>
+
+<h2>Popular payment gateways for Indian websites</h2>
+<table>
+  <thead><tr><th>Gateway</th><th>Good for</th></tr></thead>
+  <tbody>
+    <tr><td>Razorpay</td><td>Most businesses. Wide payment options, good WooCommerce plugin, payment links and pages</td></tr>
+    <tr><td>PayU</td><td>Established option with broad payment method support</td></tr>
+    <tr><td>Cashfree</td><td>Businesses that also need payouts and quick settlements</td></tr>
+    <tr><td>PhonePe PG</td><td>UPI-heavy audiences</td></tr>
+    <tr><td>PayPal / Stripe</td><td>International customers paying in foreign currency</td></tr>
+  </tbody>
+</table>
+<p>Compare current transaction fees, settlement times and supported methods on each provider's website before choosing, as these change over time.</p>
+
+<h2>Ways to take payments on WordPress</h2>
+<h3>1. WooCommerce (for online stores)</h3>
+<p>WooCommerce adds products, cart and checkout. Install your gateway's WooCommerce plugin, add your API keys, and customers can pay by UPI, card or net banking at checkout. You can also enable <strong>Cash on Delivery</strong>, which many Indian shoppers still prefer.</p>
+<h3>2. Payment forms (for fees, services and donations)</h3>
+<p>For consultation fees, course fees, event registrations or donations, a payment form is simpler than a full store. Form plugins can connect to gateways like Razorpay so people fill in details and pay in one step.</p>
+<h3>3. Payment links and buttons</h3>
+<p>Gateways let you create payment links or buttons you can place on any page, or send on WhatsApp. It's the quickest option for occasional payments.</p>
+
+<h2>Testing before you go live</h2>
+<ul>
+  <li>Use the gateway's <strong>test mode</strong> first and run test payments.</li>
+  <li>Check order emails, receipts and thank-you pages.</li>
+  <li>Test failed and cancelled payments, not just successful ones.</li>
+  <li>Test on mobile, where most UPI payments happen.</li>
+</ul>
+
+<h2>Common problems and fixes</h2>
+<ul>
+  <li><strong>Gateway application rejected:</strong> usually missing policy pages or incomplete business details on the website.</li>
+  <li><strong>Orders stuck as "pending":</strong> often a webhook that isn't configured. Set up the gateway's webhook URL in its dashboard.</li>
+  <li><strong>Slow checkout:</strong> too many plugins or slow hosting. Optimize the checkout page.</li>
+</ul>
+
+<h2>Getting it set up</h2>
+<p>Payment setup involves the website, the gateway dashboard and business paperwork. If you'd rather not deal with the technical side, a developer can prepare the required pages, integrate the gateway, set up webhooks and test everything end to end before launch.</p>
+`,
+  },
+  {
+    slug: 'signs-you-need-a-new-website',
+    title: '10 Signs Your Business Needs a New Website',
+    description: 'Is your website costing you customers? 10 clear signs it\'s time for a new or redesigned website, from poor mobile experience and slow speed to outdated design and no enquiries.',
+    date: '2026-09-29',
+    category: 'Growth',
+    related: ['website-redesign', 'wordpress-speed-optimization', 'wordpress-migration'],
+    body: `
+<p>Your website works for you 24 hours a day, or against you. An outdated site quietly sends potential customers to competitors, and you may never know. Here are 10 signs it's time for a new website or a redesign.</p>
+
+<h2>1. It doesn't work well on phones</h2>
+<p>Most visitors browse on mobile. If text is tiny, buttons are hard to tap or people have to pinch and zoom, they leave. Open your site on your phone right now and be honest.</p>
+
+<h2>2. It's slow</h2>
+<p>If pages take more than a few seconds to load, many visitors give up before they see anything. Test your site on Google PageSpeed Insights. Poor scores also affect your rankings.</p>
+
+<h2>3. It looks outdated</h2>
+<p>Design trends change. An old-fashioned website makes a modern, capable business look small or inactive, and visitors judge credibility within seconds.</p>
+
+<h2>4. You get visitors but no enquiries</h2>
+<p>If analytics shows traffic but the phone doesn't ring, the site isn't convincing people or isn't making it easy to contact you. Clear calls to action, WhatsApp and trust signals often fix this.</p>
+
+<h2>5. You can't update it yourself</h2>
+<p>If changing a phone number or adding a photo means waiting for a developer, you'll stop updating it, and an out-of-date site erodes trust.</p>
+
+<h2>6. It doesn't show up on Google</h2>
+<p>Search for your main service and city. If you don't appear, and competitors do, your site may lack proper structure, content or technical SEO.</p>
+
+<h2>7. It says "Not secure"</h2>
+<p>A missing SSL certificate triggers browser warnings that scare visitors away, and forms on insecure sites put customer data at risk.</p>
+
+<h2>8. Your business has changed</h2>
+<p>New services, new locations, a new brand or new target customers? If your website still describes the business you were five years ago, it's selling the wrong thing.</p>
+
+<h2>9. It's been hacked, or keeps breaking</h2>
+<p>Repeated malware, broken plugins and crashes are signs of an unmaintained, outdated setup. Rebuilding on a clean, current foundation is often cheaper than repeated fixes.</p>
+
+<h2>10. Competitors' websites are clearly better</h2>
+<p>Customers compare. If competitors have faster, clearer, more professional websites, they'll win enquiries even if your service is better.</p>
+
+<h2>Redesign or start fresh?</h2>
+<ul>
+  <li><strong>Redesign</strong> if your content and structure are mostly fine but the look, speed or mobile experience needs work.</li>
+  <li><strong>Rebuild</strong> if the site is on an outdated platform, can't be edited, is repeatedly hacked, or no longer reflects your business.</li>
+</ul>
+<p>Either way, plan redirects and keep your best-performing pages so you don't lose existing Google rankings.</p>
+
+<h2>Next step</h2>
+<p>If three or more of these signs sound familiar, your website is probably costing you business. A focused redesign with a modern look, fast mobile pages and clear calls to action can turn it back into your best salesperson.</p>
+`,
+  },
 ];
