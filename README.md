@@ -37,3 +37,9 @@ along with `/blog/`, `/blog/feed.xml` and the sitemap.
 ## After each deploy (once samverse.space is live)
     node tools/indexnow.js
 Pings Bing/Yandex (IndexNow) with every URL in the sitemap.
+
+## Case studies
+`/work/` and `/work/<slug>/` are generated from `tools/work-data.js` by the same build command.
+
+## Styles
+Edit `style.css`; the build writes the minified `style.min.css` that every page loads. Always rebuild after CSS changes.
