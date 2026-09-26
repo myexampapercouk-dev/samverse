@@ -1,5 +1,6 @@
 // Blog articles. Add an article by adding an entry, then run: node tools/build-pages.js
 // `related`: slugs of landing pages to recommend at the end of the article.
+// `seoTitle` (optional): shorter <title> for Google when `title` is over ~60 characters.
 // `body`: article HTML (use <h2>, <h3>, <p>, <ul>, <ol>, <table>, <blockquote>).
 module.exports = [
   {
@@ -257,6 +258,7 @@ module.exports = [
   },
   {
     slug: 'clinic-website-checklist-for-doctors',
+    seoTitle: "Clinic Website Checklist: 15 Must-Haves for Doctors",
     title: 'Clinic Website Checklist: 15 Things Every Doctor\'s Website Needs',
     description: 'Planning a website for your clinic or practice? Use this 15-point checklist to build a doctor\'s website that earns patient trust, ranks locally and brings appointment enquiries.',
     date: '2026-09-28',
@@ -315,6 +317,7 @@ module.exports = [
   },
   {
     slug: 'freelancer-vs-agency-web-developer',
+    seoTitle: "Freelancer vs Agency: How to Hire a Web Developer",
     title: 'Hiring a Web Developer: Freelancer vs Agency (and 10 Questions to Ask)',
     description: 'Should you hire a freelance web developer or an agency? Compare cost, communication and risk, and use these 10 questions to choose the right developer for your website.',
     date: '2026-09-28',
@@ -380,6 +383,7 @@ module.exports = [
   },
   {
     slug: 'woocommerce-vs-shopify-india',
+    seoTitle: "WooCommerce vs Shopify in India: Which Is Better?",
     title: 'WooCommerce vs Shopify in India: Which Is Better for Your Online Store?',
     description: 'Compare WooCommerce and Shopify for Indian online stores: costs, payment gateways like Razorpay, fees, flexibility, SEO and ownership, to choose the right platform.',
     date: '2026-09-28',
@@ -435,6 +439,7 @@ module.exports = [
   },
   {
     slug: 'wordpress-maintenance-checklist',
+    seoTitle: "WordPress Maintenance Checklist (Weekly to Yearly)",
     title: 'WordPress Maintenance Checklist: What to Do Weekly, Monthly and Yearly',
     description: 'A practical WordPress maintenance checklist covering updates, backups, security, speed and SEO tasks to do weekly, monthly and yearly to keep your website healthy.',
     date: '2026-09-28',
@@ -599,6 +604,7 @@ module.exports = [
   },
   {
     slug: 'b2b-manufacturer-website-guide',
+    seoTitle: "How Manufacturers Get More B2B Enquiries Online",
     title: 'How Manufacturers Can Get More B2B and Export Enquiries From Their Website',
     description: 'A practical guide for Indian manufacturers and industrial suppliers: what buyers look for, how to structure product catalogues, and how to turn your website into an enquiry machine.',
     date: '2026-09-29',
@@ -664,6 +670,7 @@ module.exports = [
   },
   {
     slug: 'elementor-vs-gutenberg',
+    seoTitle: "Elementor vs Gutenberg: Which Should You Use?",
     title: 'Elementor vs Gutenberg: Which WordPress Builder Should You Use?',
     description: 'Elementor or the Gutenberg block editor? Compare ease of use, design flexibility, speed and cost to decide which WordPress page builder is right for your website.',
     date: '2026-09-29',
@@ -710,6 +717,7 @@ module.exports = [
   },
   {
     slug: 'choose-wordpress-hosting-india',
+    seoTitle: "How to Choose WordPress Hosting in India",
     title: 'How to Choose WordPress Hosting in India (Without Getting Burned)',
     description: 'What to look for in WordPress hosting in India: server location, speed, support, backups, renewal prices and security, plus shared vs managed vs cloud hosting explained.',
     date: '2026-09-29',
@@ -759,6 +767,7 @@ module.exports = [
   },
   {
     slug: 'landing-page-mistakes-google-ads',
+    seoTitle: "10 Landing Page Mistakes That Waste Ad Budget",
     title: '10 Landing Page Mistakes That Waste Your Google & Facebook Ad Budget',
     description: 'Paying for ad clicks that don\'t convert? Avoid these 10 common landing page mistakes, from slow loading and weak headlines to too many choices and missing tracking.',
     date: '2026-09-29',
@@ -811,6 +820,7 @@ module.exports = [
   },
   {
     slug: 'how-long-to-build-wordpress-website',
+    seoTitle: "How Long Does It Take to Build a WordPress Site?",
     title: 'How Long Does It Take to Build a WordPress Website? (Realistic Timelines)',
     description: 'Realistic timelines for building a WordPress website, from landing pages to business sites and WooCommerce stores, plus what speeds projects up or slows them down.',
     date: '2026-09-29',
@@ -932,6 +942,7 @@ module.exports = [
   },
   {
     slug: 'accept-online-payments-wordpress-india',
+    seoTitle: "Accept Online Payments on WordPress in India",
     title: 'How to Accept Online Payments on a WordPress Website in India (UPI, Cards, COD)',
     description: 'A practical guide to accepting payments on WordPress in India: Razorpay, PayU, Cashfree, PhonePe and UPI, WooCommerce setup, payment links, COD, fees and KYC requirements.',
     date: '2026-09-29',

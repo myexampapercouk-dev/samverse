@@ -387,7 +387,10 @@ const renderPost = (post, i) => {
       },
     ],
   };
-  return `${headCommon(post.title + ' | Samverse', post.description, url, `  <meta property="og:type" content="article">
+  // Add the brand only when the title stays short enough for Google results
+  const base = post.seoTitle || post.title;
+  const pageTitle = (base + ' | Samverse').length <= 65 ? base + ' | Samverse' : base;
+  return `${headCommon(pageTitle, post.description, url, `  <meta property="og:type" content="article">
   <meta property="article:published_time" content="${post.date}">
   <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
@@ -545,7 +548,7 @@ const shotFor = w => w.thumb || `https://s.wordpress.com/mshots/v1/${encodeURICo
 
 const renderWork = (w, i) => {
   const url = `${SITE}/work/${w.slug}/`;
-  const title = `${w.name} Website: ${w.industry} Case Study | Samverse`;
+  const title = `${w.name} Website Case Study | Samverse`;
   const next = WORK[(i + 1) % WORK.length];
   const schema = {
     '@context': 'https://schema.org',
