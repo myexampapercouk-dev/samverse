@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Samverse Blog</title>
+  <link>https://samverse.space/blog/</link>
+  <atom:link href="https://samverse.space/blog/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>WordPress and website tips for business owners by Sameer Gupta.</description>
+  <language>en-in</language>
+  <item>
+    <title>How Much Does a WordPress Website Cost in India? (2026 Guide)</title>
+    <link>https://samverse.space/blog/wordpress-website-cost-india/</link>
+    <guid>https://samverse.space/blog/wordpress-website-cost-india/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A clear breakdown of WordPress website costs in India: domain, hosting, design, development, plugins and maintenance, with typical price ranges for each type of site.</description>
+  </item>
+  <item>
+    <title>WordPress vs Wix vs Shopify: Which Is Best for Your Business?</title>
+    <link>https://samverse.space/blog/wordpress-vs-wix-vs-shopify/</link>
+    <guid>https://samverse.space/blog/wordpress-vs-wix-vs-shopify/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>An honest comparison of WordPress, Wix and Shopify for small businesses: cost, flexibility, SEO, ownership and ease of use, and which one to choose for your needs.</description>
+  </item>
+  <item>
+    <title>Why Is My WordPress Site Slow? 9 Common Causes and Fixes</title>
+    <link>https://samverse.space/blog/why-is-my-wordpress-site-slow/</link>
+    <guid>https://samverse.space/blog/why-is-my-wordpress-site-slow/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Is your WordPress website slow? Learn the 9 most common causes, from heavy images and too many plugins to cheap hosting, and how to fix each one to speed up your site.</description>
+  </item>
+  <item>
+    <title>8 Signs Your WordPress Site Has Been Hacked (and What to Do)</title>
+    <link>https://samverse.space/blog/signs-wordpress-site-hacked/</link>
+    <guid>https://samverse.space/blog/signs-wordpress-site-hacked/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Spam redirects, Google warnings, unknown admin users? Learn the 8 warning signs of a hacked WordPress website and the exact steps to take to clean and protect it.</description>
+  </item>
+  <item>
+    <title>Clinic Website Checklist: 15 Things Every Doctor's Website Needs</title>
+    <link>https://samverse.space/blog/clinic-website-checklist-for-doctors/</link>
+    <guid>https://samverse.space/blog/clinic-website-checklist-for-doctors/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Planning a website for your clinic or practice? Use this 15-point checklist to build a doctor's website that earns patient trust, ranks locally and brings appointment enquiries.</description>
+  </item>
+  <item>
+    <title>Hiring a Web Developer: Freelancer vs Agency (and 10 Questions to Ask)</title>
+    <link>https://samverse.space/blog/freelancer-vs-agency-web-developer/</link>
+    <guid>https://samverse.space/blog/freelancer-vs-agency-web-developer/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Should you hire a freelance web developer or an agency? Compare cost, communication and risk, and use these 10 questions to choose the right developer for your website.</description>
+  </item>
+  <item>
+    <title>WooCommerce vs Shopify in India: Which Is Better for Your Online Store?</title>
+    <link>https://samverse.space/blog/woocommerce-vs-shopify-india/</link>
+    <guid>https://samverse.space/blog/woocommerce-vs-shopify-india/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Compare WooCommerce and Shopify for Indian online stores: costs, payment gateways like Razorpay, fees, flexibility, SEO and ownership, to choose the right platform.</description>
+  </item>
+  <item>
+    <title>WordPress Maintenance Checklist: What to Do Weekly, Monthly and Yearly</title>
+    <link>https://samverse.space/blog/wordpress-maintenance-checklist/</link>
+    <guid>https://samverse.space/blog/wordpress-maintenance-checklist/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A practical WordPress maintenance checklist covering updates, backups, security, speed and SEO tasks to do weekly, monthly and yearly to keep your website healthy.</description>
+  </item>
+</channel>
+</rss>
