@@ -17,7 +17,9 @@ const PROJECTS = [
 
 // ---------- Render portfolio cards ----------
 const grid = document.getElementById("workGrid");
-PROJECTS.forEach(({ name, url, tag, thumb, colors }) => {
+// Landing pages can show a subset: <div id="workGrid" data-projects="Name 1|Name 2">
+const only = (grid.dataset.projects || "").split("|").filter(Boolean);
+PROJECTS.filter(p => !only.length || only.includes(p.name)).forEach(({ name, url, tag, thumb, colors }) => {
   const host = new URL(url).hostname.replace(/^www\./, "");
   // WordPress.com mShots generates a live screenshot of each site
   const shot = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=800&h=500`;

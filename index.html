@@ -32,36 +32,12 @@
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Google Search Console: paste your verification code here (or verify via DNS in Netlify) -->
-  <!-- <meta name="google-site-verification" content="PASTE_CODE_HERE"> -->
+  <!-- Site verification: uncomment and paste codes (or verify via DNS instead) -->
+  <!-- <meta name="google-site-verification" content="PASTE_GOOGLE_CODE"> -->
+  <!-- <meta name="msvalidate.01" content="PASTE_BING_CODE"> -->
 
-  <!-- ===== Analytics & Ads: put your IDs here, nothing loads until you do ===== -->
-  <script>
-    window.SITE_CONFIG = {
-      GA_ID: "G-XXXXXXXXXX",           // Google Analytics 4 Measurement ID
-      ADSENSE_ID: "ca-pub-XXXXXXXXXXXXXXXX" // Google AdSense publisher ID
-    };
-    (function (c) {
-      var real = function (id, prefix) { return id && id.indexOf(prefix) === 0 && id.indexOf("XXXX") === -1; };
-      if (real(c.GA_ID, "G-")) {
-        var g = document.createElement("script");
-        g.async = true;
-        g.src = "https://www.googletagmanager.com/gtag/js?id=" + c.GA_ID;
-        document.head.appendChild(g);
-        window.dataLayer = window.dataLayer || [];
-        window.gtag = function () { dataLayer.push(arguments); };
-        gtag("js", new Date());
-        gtag("config", c.GA_ID);
-      }
-      if (real(c.ADSENSE_ID, "ca-pub-")) {
-        var a = document.createElement("script");
-        a.async = true;
-        a.crossOrigin = "anonymous";
-        a.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + c.ADSENSE_ID;
-        document.head.appendChild(a);
-      }
-    })(window.SITE_CONFIG);
-  </script>
+  <!-- Analytics & Ads: set your IDs in /config.js -->
+  <script src="/config.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -192,6 +168,7 @@
       <nav class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
         <a href="#work">Work</a>
         <a href="#process">Process</a>
         <a href="#faq">FAQ</a>
@@ -321,6 +298,35 @@
             <p>Tell me what you need and I'll send you a quote within a day.</p>
             <a href="#contact" class="btn btn-sm">Get a Quote</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Industries ===== -->
+    <section class="section" id="industries">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Who I work with</span>
+          <h2>Websites built for your industry</h2>
+          <p class="muted">I know what each kind of client needs their website to do. Pick yours to see how I can help.</p>
+        </div>
+        <div class="industries">
+          <a class="industry reveal" href="/wordpress-developer-for-agencies/">
+            <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-8 0c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13zm8 0c-.3 0-.6 0-1 .1 1.2.8 2 2 2 3.4V19h6v-2.5c0-2.3-4.7-3.5-7-3.5z"/></svg></span>
+            <h3>Agencies</h3><p>White-label WordPress development under your brand.</p><span class="ind-arrow">→</span>
+          </a>
+          <a class="industry reveal" href="/wordpress-website-for-doctors/">
+            <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg></span>
+            <h3>Doctors &amp; Clinics</h3><p>Clinic websites that build trust and bring appointments.</p><span class="ind-arrow">→</span>
+          </a>
+          <a class="industry reveal" href="/website-for-manufacturers/">
+            <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M22 22H2V10l7-4v4l7-4v4h3l1-8h2l1 8v12zM6 18h3v-3H6v3zm5 0h3v-3h-3v3zm5 0h3v-3h-3v3z"/></svg></span>
+            <h3>Manufacturers &amp; B2B</h3><p>Product catalogues and quote forms that win bulk enquiries.</p><span class="ind-arrow">→</span>
+          </a>
+          <a class="industry reveal" href="/woocommerce-developer/">
+            <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M7 18a2 2 0 100 4 2 2 0 000-4zm10 0a2 2 0 100 4 2 2 0 000-4zM1 2h3.3l.9 2H21a1 1 0 01.9 1.4l-3.6 6.5A2 2 0 0116.6 13H8.1l-1.1 2H19v2H7a2 2 0 01-1.7-3l1.4-2.5L3 4H1V2z"/></svg></span>
+            <h3>Online Stores</h3><p>WooCommerce stores with payments, shipping and fast checkout.</p><span class="ind-arrow">→</span>
+          </a>
         </div>
       </div>
     </section>
@@ -495,13 +501,13 @@
         </div>
 
         <div class="footer-col">
-          <h4>Services</h4>
+          <h4>Industries</h4>
           <ul>
-            <li><a href="#services">WordPress Development</a></li>
-            <li><a href="#services">Elementor Customization</a></li>
-            <li><a href="#services">WooCommerce Stores</a></li>
-            <li><a href="#services">Speed &amp; SEO</a></li>
-            <li><a href="#services">Maintenance &amp; Support</a></li>
+            <li><a href="/wordpress-developer-for-agencies/">White-label for Agencies</a></li>
+            <li><a href="/wordpress-website-for-doctors/">Doctors &amp; Clinics</a></li>
+            <li><a href="/website-for-manufacturers/">Manufacturers &amp; B2B</a></li>
+            <li><a href="/woocommerce-developer/">WooCommerce Stores</a></li>
+            <li><a href="#services">All Services</a></li>
           </ul>
         </div>
 
@@ -522,6 +528,11 @@
       </div>
     </div>
   </footer>
+
+  <a class="wa-float" href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20saw%20your%20website%20and%20have%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+    <span>Chat now</span>
+  </a>
 
   <script src="script.js" defer></script>
 </body>
