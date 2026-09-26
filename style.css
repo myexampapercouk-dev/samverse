@@ -10,7 +10,7 @@
   --text: #14142B;
   --muted: #5B5B7A;
   --violet: #6D4AFF;
-  --cyan: #0891B2;
+  --cyan: #0E7490;
   --violet-dark: #5835E8;
   --violet-soft: #EEEAFF;
   --radius: 18px;
@@ -478,3 +478,7 @@ main, footer, section { max-width: 100vw; }
 .reading-list a:hover { color: var(--violet); }
 .reading-list span { flex: none; font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--cyan); }
 @media (max-width: 520px) { .reading-list li { flex-direction: column; align-items: flex-start; gap: 6px; } }
+
+/* Links inside running text are underlined (not colour-only) */
+.post-body p a, .post-body li a, .section-head .muted a, .link-inline { text-decoration: underline; text-underline-offset: 3px; }
+.post-body p a, .post-body li a { color: var(--violet); font-weight: 600; }
