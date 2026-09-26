@@ -141,7 +141,7 @@ h3 { font-size: 1.15rem; }
   font: 700 2.4rem var(--font-head); background: var(--bg); border: 3px solid transparent;
   border-color: var(--violet);
 }
-.about-card h3 { font-size: 1.4rem; }
+.about-name { position: relative; font: 700 1.4rem var(--font-head); letter-spacing: -.02em; }
 .about-meta { list-style: none; margin-top: 24px; text-align: left; border-top: 1px solid var(--line); }
 .about-meta li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--line); font-weight: 500; font-size: .95rem; }
 .about-meta span { color: var(--muted); font-weight: 400; }
@@ -164,7 +164,7 @@ h3 { font-size: 1.15rem; }
 .service p { color: var(--muted); font-size: .94rem; }
 .service-cta { background: var(--violet); color: #fff; border: 0; display: flex; flex-direction: column; justify-content: center; }
 .service-cta:hover { background: var(--violet-dark); }
-.service-cta p { color: rgba(255, 255, 255, .88); margin-bottom: 18px; }
+.service-cta p { color: #fff; margin-bottom: 18px; }
 .service-cta .btn { background: #fff; color: #3B1FB8; box-shadow: none; align-self: flex-start; }
 
 /* Work */
@@ -246,7 +246,7 @@ h3 { font-size: 1.15rem; }
   box-shadow: 0 24px 50px -24px rgba(109, 74, 255, .55);
 }
 .footer-cta h2 { font-size: clamp(1.5rem, 2.8vw, 2rem); margin-bottom: 6px; }
-.footer-cta p { color: rgba(255, 255, 255, .85); }
+.footer-cta p { color: #fff; }
 .footer-cta-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 .btn-light { background: #fff; color: var(--violet-dark); box-shadow: none; }
 .btn-light:hover { background: #F1EEFF; }
@@ -260,7 +260,7 @@ h3 { font-size: 1.15rem; }
   display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px;
   background: #ECFDF3; color: #15803D; font-size: .82rem; font-weight: 600;
 }
-.footer-col h4 { font: 600 .82rem var(--font-head); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 18px; }
+.footer-col .footer-h { font: 600 .82rem var(--font-head); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 18px; }
 .footer-col ul { list-style: none; display: grid; gap: 11px; }
 .footer-col a, .footer-col span { color: var(--muted); font-size: .95rem; transition: color .2s; word-break: break-word; }
 .footer-col a:hover { color: var(--violet); }
@@ -320,7 +320,7 @@ h3 { font-size: 1.15rem; }
 
 /* ---------- Light theme depth ---------- */
 .about-card, .service, .work-card, .process li, .contact-list a { box-shadow: var(--soft); }
-.about-card h3, .about-card .muted { position: relative; }
+.about-card .muted { position: relative; }
 .avatar { background: #fff; color: var(--violet); }
 .contact-box { background: #fff; box-shadow: 0 30px 80px -30px rgba(109, 74, 255, .3); }
 .service .icon svg { fill: var(--violet); }

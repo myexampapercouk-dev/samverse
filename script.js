@@ -18,8 +18,9 @@ const PROJECTS = [
 // ---------- Render portfolio cards ----------
 const grid = document.getElementById("workGrid");
 // Landing pages can show a subset: <div id="workGrid" data-projects="Name 1|Name 2">
-const only = (grid.dataset.projects || "").split("|").filter(Boolean);
-PROJECTS.filter(p => !only.length || only.includes(p.name)).forEach(({ name, url, tag, thumb, colors }) => {
+// Pages without a portfolio grid (blog, /solutions/) skip this
+const only = grid ? (grid.dataset.projects || "").split("|").filter(Boolean) : [];
+(grid ? PROJECTS : []).filter(p => !only.length || only.includes(p.name)).forEach(({ name, url, tag, thumb, colors }) => {
   const host = new URL(url).hostname.replace(/^www\./, "");
   // WordPress.com mShots generates a live screenshot of each site
   const shot = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=800&h=500`;
@@ -73,7 +74,7 @@ links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
   toggle.setAttribute("aria-expanded", "false");
 }));
 
-// ---------- Reveal on scroll + counters ----------
+// ---------- Hero counters (hero is visible immediately) + reveal on scroll ----------
 const countUp = el => {
   const target = +el.dataset.count;
   const start = performance.now();
@@ -85,19 +86,19 @@ const countUp = el => {
   requestAnimationFrame(tick);
 };
 
+document.querySelectorAll("[data-count]").forEach(countUp);
+
 if ("IntersectionObserver" in window) {
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
       e.target.classList.add("in");
-      e.target.querySelectorAll("[data-count]").forEach(countUp);
       io.unobserve(e.target);
     });
   }, { threshold: 0.12 });
   document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 } else {
   document.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
-  document.querySelectorAll("[data-count]").forEach(el => (el.textContent = el.dataset.count));
 }
 
 // ---------- Contact form spam protection ----------

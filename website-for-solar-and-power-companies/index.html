@@ -24,10 +24,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <script src="/config.js"></script>
+  <script src="/config.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
   <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">
 {
@@ -136,7 +137,7 @@
     <section class="hero lp-hero">
       <div class="container">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> Solar &amp; Power Companies</nav>
-        <div class="lp-hero-copy reveal">
+        <div class="lp-hero-copy">
           <span class="pill"><span class="dot"></span> For solar, power &amp; electrical businesses</span>
           <h1>Websites that bring <span class="grad">solar & power enquiries</span></h1>
           <p class="lead">Homeowners and businesses compare solar and power companies online before asking for a quote. I build professional websites that explain your solutions, show completed projects and turn visitors into quote requests.</p>
@@ -350,7 +351,7 @@
         </div>
 
         <div class="footer-col">
-          <h4>Explore</h4>
+          <h3 class="footer-h">Explore</h3>
           <ul>
             <li><a href="/#about">About</a></li>
             <li><a href="/#services">Services</a></li>
@@ -363,7 +364,7 @@
         </div>
 
         <div class="footer-col">
-          <h4>Industries</h4>
+          <h3 class="footer-h">Industries</h3>
           <ul>
             <li><a href="/wordpress-developer-for-agencies/">White-label for Agencies</a></li>
             <li><a href="/wordpress-website-for-doctors/">Doctors &amp; Clinics</a></li>
@@ -374,7 +375,7 @@
         </div>
 
         <div class="footer-col">
-          <h4>Get in touch</h4>
+          <h3 class="footer-h">Get in touch</h3>
           <ul class="footer-contact">
             <li><a href="tel:+917417049145">+91 74170 49145</a></li>
             <li><a href="mailto:sameergpt9719@gmail.com">sameergpt9719@gmail.com</a></li>

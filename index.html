@@ -37,11 +37,12 @@
   <!-- <meta name="msvalidate.01" content="PASTE_BING_CODE"> -->
 
   <!-- Analytics & Ads: set your IDs in /config.js -->
-  <script src="/config.js"></script>
+  <script src="/config.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
 
   <!-- Structured data for Google -->
@@ -185,7 +186,7 @@
     <!-- ===== Hero ===== -->
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
+        <div class="hero-copy">
           <span class="pill"><span class="dot"></span> Available for freelance projects</span>
           <h1>Hi, I'm <span class="grad">Sameer Gupta</span>.<br>I build WordPress websites that work.</h1>
           <p class="lead">Freelance WordPress developer building fast, responsive, SEO-friendly websites for businesses, clinics, agencies and online stores since 2020.</p>
@@ -197,13 +198,13 @@
             </a>
           </div>
           <ul class="stats">
-            <li><strong data-count="6">0</strong><span>+ years in WordPress</span></li>
-            <li><strong data-count="8">0</strong><span>+ live client sites</span></li>
-            <li><strong data-count="100">0</strong><span>% responsive builds</span></li>
+            <li><strong data-count="6">6</strong><span>+ years in WordPress</span></li>
+            <li><strong data-count="8">8</strong><span>+ live client sites</span></li>
+            <li><strong data-count="100">100</strong><span>% responsive builds</span></li>
           </ul>
         </div>
 
-        <div class="hero-visual reveal" aria-hidden="true">
+        <div class="hero-visual" aria-hidden="true">
           <div class="orbit orbit-1"><span class="planet"></span></div>
           <div class="orbit orbit-2"><span class="planet p2"></span></div>
           <div class="core">
@@ -230,7 +231,7 @@
       <div class="container about-grid">
         <div class="about-card reveal">
           <div class="avatar">SG</div>
-          <h3>Sameer Gupta</h3>
+          <p class="about-name">Sameer Gupta</p>
           <p class="muted">WordPress &amp; Web Developer</p>
           <ul class="about-meta">
             <li><span>Based in</span> India</li>
@@ -508,7 +509,7 @@
         </div>
 
         <div class="footer-col">
-          <h4>Explore</h4>
+          <h3 class="footer-h">Explore</h3>
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
@@ -521,7 +522,7 @@
         </div>
 
         <div class="footer-col">
-          <h4>Industries</h4>
+          <h3 class="footer-h">Industries</h3>
           <ul>
             <li><a href="/wordpress-developer-for-agencies/">White-label for Agencies</a></li>
             <li><a href="/wordpress-website-for-doctors/">Doctors &amp; Clinics</a></li>
@@ -532,7 +533,7 @@
         </div>
 
         <div class="footer-col">
-          <h4>Get in touch</h4>
+          <h3 class="footer-h">Get in touch</h3>
           <ul class="footer-contact">
             <li><a href="tel:+917417049145">+91 74170 49145</a></li>
             <li><a href="mailto:sameergpt9719@gmail.com">sameergpt9719@gmail.com</a></li>

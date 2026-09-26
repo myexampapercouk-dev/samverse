@@ -104,10 +104,11 @@ const render = p => {
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <script src="/config.js"></script>
+  <script src="/config.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
   <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
@@ -122,7 +123,7 @@ ${JSON.stringify(schema, null, 2)}
     <section class="hero lp-hero">
       <div class="container">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> ${esc(p.nav)}</nav>
-        <div class="lp-hero-copy reveal">
+        <div class="lp-hero-copy">
           <span class="pill"><span class="dot"></span> ${esc(p.eyebrow)}</span>
           <h1>${p.h1}</h1>
           <p class="lead">${esc(p.lead)}</p>
@@ -260,10 +261,11 @@ ${PAGES.filter(x => x.type === type).map(x => '          ' + card(x)).join('\n')
   <meta name="theme-color" content="#6D4AFF">
   <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <script src="/config.js"></script>
+  <script src="/config.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
   <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
@@ -278,7 +280,7 @@ ${JSON.stringify(schema, null, 2)}
     <section class="hero lp-hero">
       <div class="container">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> Solutions</nav>
-        <div class="lp-hero-copy reveal">
+        <div class="lp-hero-copy">
           <h1>WordPress solutions for <span class="grad">every kind of business</span></h1>
           <p class="lead">Pick your industry or the service you need to see exactly how I can help. Not sure? Send me a message and I'll recommend the right approach.</p>
           <div class="hero-cta">
@@ -338,10 +340,11 @@ const headCommon = (title, description, url, extra = '') => `<!DOCTYPE html>
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="alternate" type="application/rss+xml" title="Samverse Blog" href="${SITE}/blog/feed.xml">
-  <script src="/config.js"></script>
+  <script src="/config.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
   <link rel="stylesheet" href="/style.css">
 ${extra}</head>`;
 
@@ -475,7 +478,7 @@ ${JSON.stringify(schema, null, 2)}
     <section class="hero lp-hero">
       <div class="container">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> Blog</nav>
-        <div class="lp-hero-copy reveal">
+        <div class="lp-hero-copy">
           <span class="eyebrow">Blog</span>
           <h1>Website tips for <span class="grad">business owners</span></h1>
           <p class="lead">Plain-English guides on WordPress, website costs, speed, security, SEO and selling online, so you can make better decisions about your website.</p>
