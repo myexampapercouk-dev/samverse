@@ -1050,4 +1050,243 @@ module.exports = [
 <p>If three or more of these signs sound familiar, your website is probably costing you business. A focused redesign with a modern look, fast mobile pages and clear calls to action can turn it back into your best salesperson.</p>
 `,
   },
+  {
+    slug: 'wordpress-security-checklist',
+    seoTitle: 'WordPress Security Checklist for Small Businesses',
+    title: 'WordPress Security Checklist for Small Business Websites (20 Steps)',
+    description: 'A practical 20-step WordPress security checklist for small businesses: updates, passwords, 2FA, backups, firewalls, hosting and user roles, to keep your site safe from hackers.',
+    date: '2026-09-29',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
+    body: `
+<p>Most hacked WordPress sites aren't targeted personally. Automated bots scan millions of websites looking for known weaknesses like outdated plugins and weak passwords. The good news is that a handful of basic steps block the vast majority of these attacks. Use this checklist to secure your business website.</p>
+
+<h2>Updates and software</h2>
+<ol>
+  <li><strong>Keep WordPress core updated.</strong> Minor security releases often install automatically; apply major updates after a backup.</li>
+  <li><strong>Update plugins and themes promptly.</strong> Outdated plugins are the most common way into WordPress sites.</li>
+  <li><strong>Delete unused plugins and themes.</strong> Deactivated code can still be exploited if it's vulnerable.</li>
+  <li><strong>Avoid abandoned plugins.</strong> If a plugin hasn't been updated in a long time, look for a maintained alternative.</li>
+  <li><strong>Never use "nulled" (pirated) themes or plugins.</strong> They frequently contain hidden malware.</li>
+  <li><strong>Run a current PHP version</strong> supported by your host.</li>
+</ol>
+
+<h2>Logins and users</h2>
+<ol start="7">
+  <li><strong>Use strong, unique passwords</strong> for every admin, with a password manager.</li>
+  <li><strong>Turn on two-factor authentication (2FA)</strong> for all administrator accounts.</li>
+  <li><strong>Limit login attempts</strong> to slow down password-guessing bots.</li>
+  <li><strong>Don't use "admin" as a username.</strong></li>
+  <li><strong>Give people the lowest role they need.</strong> Editors and authors don't need administrator access.</li>
+  <li><strong>Remove old users</strong> such as former staff, agencies and freelancers once their work is done.</li>
+</ol>
+
+<h2>Backups</h2>
+<ol start="13">
+  <li><strong>Automatic daily backups</strong> of files and database.</li>
+  <li><strong>Store backups off-site</strong> (cloud storage), not only on the same server.</li>
+  <li><strong>Test restoring a backup</strong> occasionally. An untested backup might fail when you need it.</li>
+</ol>
+
+<h2>Hosting and server</h2>
+<ol start="16">
+  <li><strong>Choose reputable hosting</strong> with malware scanning, firewalls and account isolation.</li>
+  <li><strong>Use HTTPS everywhere</strong> with a valid SSL certificate.</li>
+  <li><strong>Use SFTP, not FTP</strong>, and secure your hosting control panel with 2FA.</li>
+</ol>
+
+<h2>Monitoring and protection</h2>
+<ol start="19">
+  <li><strong>Install a reputable security plugin or firewall</strong> to block malicious traffic and scan for malware.</li>
+  <li><strong>Monitor Google Search Console</strong> for security warnings, and set up uptime monitoring so you know quickly if the site goes down.</li>
+</ol>
+
+<h2>Signs something is already wrong</h2>
+<p>Unexpected redirects, strange pages in Google results, unknown admin users or browser warnings are signs of an existing infection. See our guide to the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a>, and get it cleaned properly before hardening.</p>
+
+<h2>Make security routine</h2>
+<p>Security isn't a one-time task. Updates, backups and checks need to happen every month. Many businesses put their site on a <a href="/wordpress-maintenance/">maintenance plan</a> so this happens consistently without them having to remember.</p>
+`,
+  },
+  {
+    slug: 'core-web-vitals-explained',
+    title: 'Core Web Vitals Explained for Business Owners (LCP, INP, CLS)',
+    description: 'What are Core Web Vitals, why do they matter for Google and your customers, and how can you improve LCP, INP and CLS on a WordPress website? A plain-English guide.',
+    date: '2026-09-29',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'website-redesign', 'wordpress-seo-services'],
+    body: `
+<p>Google measures how fast and smooth your website feels to real visitors using three metrics called <strong>Core Web Vitals</strong>. They're part of Google's page experience signals, but more importantly, they reflect whether people enjoy using your site or give up. Here's what they mean in plain English.</p>
+
+<h2>The three Core Web Vitals</h2>
+<table>
+  <thead><tr><th>Metric</th><th>What it measures</th><th>Good score</th></tr></thead>
+  <tbody>
+    <tr><td><strong>LCP</strong>: Largest Contentful Paint</td><td>How quickly the main content (usually the big heading or hero image) appears</td><td>2.5 seconds or less</td></tr>
+    <tr><td><strong>INP</strong>: Interaction to Next Paint</td><td>How quickly the page responds when someone taps or clicks</td><td>200 milliseconds or less</td></tr>
+    <tr><td><strong>CLS</strong>: Cumulative Layout Shift</td><td>Whether content jumps around while loading</td><td>0.1 or less</td></tr>
+  </tbody>
+</table>
+
+<h2>Why they matter for your business</h2>
+<ul>
+  <li><strong>Visitors leave slow sites.</strong> If the main content takes too long, many people hit "back" before seeing your offer.</li>
+  <li><strong>Frustration costs enquiries.</strong> Buttons that don't respond or layouts that jump make people tap the wrong thing, or give up.</li>
+  <li><strong>Google uses them.</strong> Page experience is one of many ranking signals. When competing pages are similar, a better experience can help.</li>
+</ul>
+
+<h2>How to check your scores</h2>
+<ol>
+  <li>Go to <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and enter your URL.</li>
+  <li>Look at the <strong>"Discover what your real users are experiencing"</strong> section. That's field data from real Chrome users, if your site has enough traffic.</li>
+  <li>Check <strong>Google Search Console → Core Web Vitals</strong> to see which groups of pages need work.</li>
+</ol>
+
+<h2>How to improve LCP (loading)</h2>
+<ul>
+  <li>Compress and resize the hero image, and use modern formats like WebP</li>
+  <li>Don't lazy-load the main image at the top of the page</li>
+  <li>Use caching and good hosting to reduce server response time</li>
+  <li>Reduce render-blocking CSS, JavaScript and font loading</li>
+  <li>Avoid large sliders and videos above the fold</li>
+</ul>
+
+<h2>How to improve INP (responsiveness)</h2>
+<ul>
+  <li>Remove unnecessary plugins and third-party scripts (chat widgets, trackers)</li>
+  <li>Delay non-essential JavaScript until after the page loads</li>
+  <li>Keep pages lean, as heavy page-builder layouts can slow interactions</li>
+</ul>
+
+<h2>How to improve CLS (visual stability)</h2>
+<ul>
+  <li>Set width and height on images and videos so space is reserved</li>
+  <li>Reserve space for ads, embeds and banners</li>
+  <li>Load web fonts in a way that avoids big text jumps</li>
+  <li>Don't insert content above existing content after the page has loaded</li>
+</ul>
+
+<h2>Where to start</h2>
+<p>For most WordPress sites, the biggest wins come from image optimization, caching and removing unnecessary scripts. Our article on <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> covers the common causes. If you'd rather hand it over, a <a href="/wordpress-speed-optimization/">speed optimization service</a> can target your specific Core Web Vitals issues and show before-and-after results.</p>
+`,
+  },
+  {
+    slug: 'setup-google-analytics-search-console',
+    seoTitle: 'Set Up Google Analytics 4 & Search Console (Guide)',
+    title: 'How to Set Up Google Analytics 4 and Search Console for Your Business Website',
+    description: 'Step-by-step: set up Google Analytics 4 and Google Search Console for your website, verify ownership, submit your sitemap and track enquiries, calls and WhatsApp clicks.',
+    date: '2026-09-29',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
+    body: `
+<p>Two free Google tools tell you almost everything you need to know about your website's performance. <strong>Google Search Console</strong> shows how you appear in Google Search. <strong>Google Analytics 4 (GA4)</strong> shows what visitors do once they arrive. Here's how to set up both properly.</p>
+
+<h2>Google Search Console vs Google Analytics</h2>
+<table>
+  <thead><tr><th>Search Console</th><th>Google Analytics 4</th></tr></thead>
+  <tbody>
+    <tr><td>Which searches show your site</td><td>Where visitors come from (Google, social, ads, direct)</td></tr>
+    <tr><td>Clicks, impressions and average position</td><td>Which pages they view and for how long</td></tr>
+    <tr><td>Indexing problems and errors</td><td>Conversions: forms, calls, WhatsApp clicks</td></tr>
+    <tr><td>Core Web Vitals and security issues</td><td>Devices, locations and audiences</td></tr>
+  </tbody>
+</table>
+
+<h2>Step 1: Set up Google Search Console</h2>
+<ol>
+  <li>Go to <strong>search.google.com/search-console</strong> and sign in with your business Google account.</li>
+  <li>Choose <strong>Domain property</strong> (recommended) and enter your domain without https or www.</li>
+  <li>Google gives you a <strong>TXT record</strong>. Add it in your domain's DNS settings (at your registrar or wherever your DNS is managed).</li>
+  <li>Click <strong>Verify</strong>. DNS changes can take a little time to take effect.</li>
+  <li>Go to <strong>Sitemaps</strong> and submit your sitemap URL (often <code>/sitemap.xml</code> or <code>/sitemap_index.xml</code> on WordPress with an SEO plugin).</li>
+</ol>
+
+<h2>Step 2: Set up Google Analytics 4</h2>
+<ol>
+  <li>Go to <strong>analytics.google.com</strong>, open <strong>Admin</strong> and create an account and a property for your business.</li>
+  <li>Set your time zone and currency correctly (for example India, INR).</li>
+  <li>Add a <strong>Web data stream</strong> with your website URL.</li>
+  <li>Copy the <strong>Measurement ID</strong> (starts with <code>G-</code>).</li>
+  <li>Add it to your site. On WordPress this is usually done with Site Kit by Google or your SEO/analytics plugin, or by adding the Google tag to your theme.</li>
+  <li>Open <strong>Reports → Realtime</strong> and visit your site to confirm it's working.</li>
+</ol>
+
+<h2>Step 3: Track the actions that matter</h2>
+<p>Page views alone don't tell you if the site brings business. Track the actions that lead to enquiries:</p>
+<ul>
+  <li>Contact form submissions (a thank-you page or a form event)</li>
+  <li>Clicks on phone numbers (<code>tel:</code> links)</li>
+  <li>WhatsApp button clicks</li>
+  <li>Email link clicks</li>
+</ul>
+<p>Then mark the most important ones as <strong>key events</strong> in GA4 so you can see which pages and traffic sources produce leads.</p>
+
+<h2>Step 4: Link the two tools</h2>
+<p>In GA4 Admin, link your Search Console property. You'll then see search queries alongside visitor behaviour in Analytics.</p>
+
+<h2>What to check every month</h2>
+<ul>
+  <li><strong>Search Console → Performance:</strong> top queries and pages, and which are growing</li>
+  <li><strong>Search Console → Pages:</strong> pages not indexed and why</li>
+  <li><strong>GA4 → Traffic acquisition:</strong> which channels bring visitors</li>
+  <li><strong>GA4 → Key events:</strong> how many enquiries, and from where</li>
+</ul>
+
+<h2>Need help?</h2>
+<p>Getting tracking right, especially for forms and WhatsApp clicks, is fiddly the first time. It's usually included in a proper <a href="/wordpress-seo-services/">WordPress SEO setup</a>, so you can see from day one what's working.</p>
+`,
+  },
+  {
+    slug: 'migrate-wix-to-wordpress',
+    title: 'How to Move From Wix to WordPress (Without Losing Traffic)',
+    description: 'Thinking of moving from Wix to WordPress? Why businesses switch, what can and can\'t be migrated, the step-by-step process, and how to keep your Google rankings.',
+    date: '2026-09-29',
+    category: 'Guides',
+    related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
+    body: `
+<p>Wix is an easy way to get a first website online. But as businesses grow, many hit its limits and move to WordPress for more control, flexibility and ownership. Here's what the move involves and how to do it without losing the traffic you already have.</p>
+
+<h2>Why businesses move from Wix to WordPress</h2>
+<ul>
+  <li><strong>Ownership:</strong> a WordPress site can be moved to any host. A Wix site can't be exported and run elsewhere.</li>
+  <li><strong>Flexibility:</strong> thousands of plugins and themes for features Wix can't easily do.</li>
+  <li><strong>SEO control:</strong> full control over URLs, schema, speed optimization and site structure.</li>
+  <li><strong>Costs over time:</strong> no ongoing platform subscription, just hosting and domain.</li>
+  <li><strong>E-commerce without platform commission</strong> using WooCommerce.</li>
+</ul>
+
+<h2>What can (and can't) be migrated</h2>
+<p>Wix doesn't offer a one-click export of your design, so the move is really a <strong>rebuild on WordPress</strong> with your content carried over:</p>
+<ul>
+  <li><strong>Pages and text:</strong> recreated in WordPress (usually improved at the same time)</li>
+  <li><strong>Images:</strong> downloaded and re-uploaded (and optimized)</li>
+  <li><strong>Blog posts:</strong> can often be imported via the Wix blog RSS feed, then cleaned up</li>
+  <li><strong>Products:</strong> exported from Wix Stores as CSV and imported into WooCommerce, then checked</li>
+  <li><strong>Design:</strong> rebuilt, often a good moment for a refresh</li>
+  <li><strong>Forms, bookings and apps:</strong> replaced with WordPress equivalents</li>
+</ul>
+
+<h2>The step-by-step process</h2>
+<ol>
+  <li><strong>Audit the Wix site:</strong> list every page, blog post and product, and note top pages from Search Console.</li>
+  <li><strong>Set up hosting and WordPress</strong> on a staging site.</li>
+  <li><strong>Rebuild the design and pages</strong>, then move content, images, posts and products.</li>
+  <li><strong>Recreate SEO settings:</strong> titles, descriptions and headings for each page.</li>
+  <li><strong>Map old URLs to new URLs.</strong> Wix URLs (like <code>/post/...</code>) often differ from WordPress ones.</li>
+  <li><strong>Point your domain to the new host</strong> and set up SSL.</li>
+  <li><strong>Add 301 redirects</strong> from every old URL to its new equivalent.</li>
+  <li><strong>Submit the new sitemap</strong> in Google Search Console and monitor for errors.</li>
+  <li><strong>Cancel the Wix plan</strong> only after the new site is live and checked (keep your domain!).</li>
+</ol>
+
+<h2>Keeping your Google rankings</h2>
+<p>The most important step is the <strong>301 redirect map</strong>: every old Wix URL should point to the matching new page. Keep the content of pages that rank well, and keep titles and headings similar. Our guide to <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a> covers the full checklist.</p>
+
+<h2>Watch out for your domain</h2>
+<p>If you bought your domain through Wix, you can transfer it to another registrar or simply point it to your new host. Make sure you keep control of the domain during the switch, as it's the one thing you can't afford to lose.</p>
+
+<h2>Is it worth it?</h2>
+<p>If your Wix site is small, rarely updated and doing its job, you may not need to move. If you're growing, need better SEO, e-commerce or custom features, or want to own your website outright, WordPress is usually the right next step. A professional <a href="/wordpress-migration/">migration</a> handles the rebuild, redirects and launch so your business doesn't miss a beat.</p>
+`,
+  },
 ];
