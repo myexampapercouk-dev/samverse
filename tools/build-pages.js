@@ -70,6 +70,22 @@ const related = p => {
 };
 const card = x => `<a class="industry" href="/${x.slug}/"><h3>${esc(x.nav)}</h3><p>${esc(x.description.split('. ')[0])}.</p><span class="ind-arrow">→</span></a>`;
 
+// "In depth" section (tools/pages-details.js)
+const DETAILS = require('./pages-details');
+const depthFor = p => {
+  const d = DETAILS[p.slug];
+  if (!d) return '';
+  return `    <section class="section depth">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">In depth</span><h2>${esc(d.title)}</h2></div>
+        <div class="depth-grid">
+${d.items.map(([h, t], i) => `          <article class="depth-item reveal"><span class="depth-num">0${i + 1}</span><h3>${esc(h)}</h3><p>${esc(t)}</p></article>`).join('\n')}
+        </div>
+      </div>
+    </section>
+`;
+};
+
 // Blog posts that recommend this landing page
 const readingFor = p => {
   const posts = POSTS.filter(x => x.related.includes(p.slug)).slice(0, 3);
@@ -196,6 +212,7 @@ ${p.gets.map(g => `          <li>${tick} ${esc(g)}</li>`).join('\n')}
       </div>
     </section>
 
+${depthFor(p)}
     <section class="section" id="work">
       <div class="container">
         <div class="section-head reveal">
