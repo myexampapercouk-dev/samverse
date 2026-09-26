@@ -5,14 +5,14 @@
 // If it is missing, a live screenshot is fetched automatically.
 // ==========================================================
 const PROJECTS = [
-  { name: "Third Eye Social",       url: "https://thirdeye.social/",             tag: "Digital Agency",       thumb: "assets/work/thirdeye.svg", colors: ["#7C5CFF", "#EC4899"] },
-  { name: "Vansh Group",            url: "https://vansh.group/",                 tag: "Corporate",            colors: ["#0EA5E9", "#6366F1"] },
-  { name: "India Automation Hub",   url: "https://indiaautomationhub.com/",      tag: "Industrial / B2B",     colors: ["#F59E0B", "#EF4444"] },
-  { name: "Streak Creative",        url: "https://streakcreative.in/",           tag: "Creative Studio",      thumb: "assets/work/streakcreative.svg", colors: ["#EC4899", "#8B5CF6"] },
-  { name: "Our Temples",            url: "https://ourtemples.info/",             tag: "Information Portal",   colors: ["#F97316", "#FACC15"] },
-  { name: "Dr. Sudhir Arora",       url: "https://drsudhirarora.com/",           tag: "Healthcare",           colors: ["#14B8A6", "#3B82F6"] },
-  { name: "Sahni Power Solutions",  url: "https://sahnipowersolutions.com/",      tag: "Power & Energy",       colors: ["#22C55E", "#0EA5E9"] },
-  { name: "CNN Food & Spices",      url: "https://cnnfoodandspices.com/",        tag: "Food & Spices",        colors: ["#DC2626", "#F59E0B"] },
+  { name: "Third Eye Social",      url: "https://thirdeye.social/",          study: "/work/third-eye-social/",      tag: "AI Automation Agency",   thumb: "/assets/work/thirdeye.svg",       colors: ["#1A1A1A", "#F07C12"] },
+  { name: "Vansh Group",           url: "https://vansh.group/",              study: "/work/vansh-group/",           tag: "Electronics Manufacturing", colors: ["#0EA5E9", "#6366F1"] },
+  { name: "India Automation Hub",  url: "https://indiaautomationhub.com/",   study: "/work/india-automation-hub/",  tag: "Industrial Media Portal", colors: ["#F59E0B", "#EF4444"] },
+  { name: "Streak Creative",       url: "https://streakcreative.in/",        study: "/work/streak-creative/",       tag: "Growth Marketing Agency", thumb: "/assets/work/streakcreative.svg", colors: ["#E8254B", "#8B5CF6"] },
+  { name: "Our Temples",           url: "https://ourtemples.info/",          study: "/work/our-temples/",           tag: "Temple Directory",       colors: ["#F97316", "#FACC15"] },
+  { name: "Dr. Sudhir Arora",      url: "https://drsudhirarora.com/",        study: "/work/dr-sudhir-arora/",       tag: "Healthcare & Wellness",  colors: ["#14B8A6", "#3B82F6"] },
+  { name: "Sahni Power Solutions", url: "https://sahnipowersolutions.com/",  study: "/work/sahni-power-solutions/", tag: "Generator Rental",       colors: ["#22C55E", "#0EA5E9"] },
+  { name: "CNN Food & Spices",     url: "https://cnnfoodandspices.com/",                                            tag: "E-commerce",             colors: ["#DC2626", "#F59E0B"] },
 ];
 
 // ---------- Render portfolio cards ----------
@@ -20,15 +20,15 @@ const grid = document.getElementById("workGrid");
 // Landing pages can show a subset: <div id="workGrid" data-projects="Name 1|Name 2">
 // Pages without a portfolio grid (blog, /solutions/) skip this
 const only = grid ? (grid.dataset.projects || "").split("|").filter(Boolean) : [];
-(grid ? PROJECTS : []).filter(p => !only.length || only.includes(p.name)).forEach(({ name, url, tag, thumb, colors }) => {
+(grid ? PROJECTS : []).filter(p => !only.length || only.includes(p.name)).forEach(({ name, url, study, tag, thumb, colors }) => {
   const host = new URL(url).hostname.replace(/^www\./, "");
   // WordPress.com mShots generates a live screenshot of each site
   const shot = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=800&h=500`;
   const card = document.createElement("a");
   card.className = "work-card reveal";
-  card.href = url;
-  card.target = "_blank";
-  card.rel = "noopener";
+  // Cards open the case study when there is one, otherwise the live site
+  card.href = study || url;
+  if (!study) { card.target = "_blank"; card.rel = "noopener"; }
   card.innerHTML = `
     <div class="browser-bar"><i></i><i></i><i></i></div>
     <div class="work-thumb" style="background:${colors[0]}">
@@ -38,7 +38,7 @@ const only = grid ? (grid.dataset.projects || "").split("|").filter(Boolean) : [
     <div class="work-body">
       <span class="work-tag">${tag}</span>
       <h3>${name}</h3>
-      <div class="work-url"><span>${host}</span><span class="arrow">↗</span></div>
+      <div class="work-url"><span>${host}</span><span class="arrow">${study ? "Case study →" : "↗"}</span></div>
     </div>`;
   const img = card.querySelector("img");
   // mShots returns a 400px "Generating preview" placeholder the first time;
@@ -188,5 +188,5 @@ document.addEventListener("click", e => {
   if (href.startsWith("https://wa.me")) gtag("event", "contact_whatsapp", { link_text: a.textContent.trim() });
   else if (href.startsWith("tel:")) gtag("event", "contact_call");
   else if (href.startsWith("mailto:")) gtag("event", "contact_email");
-  else if (a.classList.contains("work-card")) gtag("event", "portfolio_click", { site: new URL(href).hostname });
+  else if (a.classList.contains("work-card")) gtag("event", "portfolio_click", { site: new URL(href, location.href).pathname });
 });

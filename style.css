@@ -482,3 +482,23 @@ main, footer, section { max-width: 100vw; }
 /* Links inside running text are underlined (not colour-only) */
 .post-body p a, .post-body li a, .section-head .muted a, .link-inline { text-decoration: underline; text-underline-offset: 3px; }
 .post-body p a, .post-body li a { color: var(--violet); font-weight: 600; }
+
+/* Case studies */
+.cs-shot { margin-top: 40px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 30px 60px -30px rgba(20, 20, 60, .35); background: #fff; }
+.cs-shot img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; background: var(--card-2); }
+.cs-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 50px; align-items: start; }
+.cs-main h2 { font-size: 1.6rem; margin: 0 0 14px; }
+.cs-main h2:not(:first-child) { margin-top: 40px; }
+.cs-main p { color: #2A2A45; font-size: 1.05rem; line-height: 1.8; }
+.cs-list { grid-template-columns: 1fr; }
+.cs-built { padding-left: 1.3em; display: grid; gap: 10px; font-size: 1.02rem; line-height: 1.7; color: #2A2A45; }
+.cs-built li::marker { color: var(--violet); }
+.cs-side { position: sticky; top: 96px; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 26px; box-shadow: var(--soft); }
+.cs-side dl { display: grid; gap: 4px; margin-bottom: 22px; }
+.cs-side dt { font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-top: 12px; }
+.cs-side dd { font-weight: 500; }
+.cs-side dd a { color: var(--violet); text-decoration: underline; }
+@media (max-width: 860px) {
+  .cs-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cs-side { position: static; }
+}

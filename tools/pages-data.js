@@ -102,7 +102,7 @@ const PAGES = [
     ],
     getsTitle: 'What your store includes',
     gets: ['Product catalogue & categories', 'Payment gateway integration', 'Cash on Delivery & shipping rules', 'Order & stock management', 'Order email notifications', 'Coupons & discounts', 'WhatsApp chat button', 'Speed & SEO optimization'],
-    projects: ['CNN Food & Spices', 'Our Temples'],
+    projects: ['CNN Food & Spices'],
     faqs: [
       ['Which payment gateways can you set up?', 'Popular Indian gateways such as Razorpay, PayU, Cashfree and PhonePe, plus PayPal or Stripe for international payments, and Cash on Delivery.'],
       ['How many products can the store have?', 'WooCommerce handles anything from a few products to thousands. I can also import your existing product list from a spreadsheet.'],
