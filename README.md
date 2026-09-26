@@ -29,3 +29,11 @@ This also regenerates `sitemap.xml`.
 
 ## Lead playbook
 Outreach templates, pricing guide and Google Business Profile steps: `docs/lead-playbook.md` (kept locally only, not in git and not served on the website).
+
+## Blog
+Articles live in `tools/blog-data.js` and are built by the same command (`node tools/build-pages.js`),
+along with `/blog/`, `/blog/feed.xml` and the sitemap.
+
+## After each deploy (once samverse.space is live)
+    node tools/indexnow.js
+Pings Bing/Yandex (IndexNow) with every URL in the sitemap.

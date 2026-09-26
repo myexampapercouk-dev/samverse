@@ -29,6 +29,7 @@ const footer = rebase(between('<footer class="footer">', '</footer>'));
 const waFloat = between('<a class="wa-float"', '</a>');
 
 const PAGES = require('./pages-data');
+const POSTS = require('./blog-data');
 
 const tick = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4z"/></svg>';
 
@@ -38,6 +39,20 @@ const related = p => {
   return [1, 2, 3].map(n => same[(i + n) % same.length]).filter(x => x !== p);
 };
 const card = x => `<a class="industry" href="/${x.slug}/"><h3>${esc(x.nav)}</h3><p>${esc(x.description.split('. ')[0])}.</p><span class="ind-arrow">→</span></a>`;
+
+// Blog posts that recommend this landing page
+const readingFor = p => {
+  const posts = POSTS.filter(x => x.related.includes(p.slug)).slice(0, 3);
+  if (!posts.length) return "";
+  return `    <section class="section reading">
+      <div class="container faq-wrap">
+        <div class="section-head reveal"><span class="eyebrow">Helpful reading</span><h2>Guides from the blog</h2></div>
+        <ul class="reading-list reveal">
+${posts.map(x => `          <li><a href="/blog/${x.slug}/">${esc(x.title)}</a><span>${esc(x.category)}</span></li>`).join("\n")}
+        </ul>
+      </div>
+    </section>`;
+};
 
 const render = p => {
   const url = `${SITE}/${p.slug}/`;
@@ -175,6 +190,7 @@ ${p.faqs.map(([q, a]) => `          <details>\n            <summary>${esc(q)}</s
       </div>
     </section>
 
+${readingFor(p)}
     <section class="section related">
       <div class="container">
         <div class="section-head reveal">
@@ -292,7 +308,6 @@ fs.writeFileSync(path.join(ROOT, 'solutions', 'index.html'), hub());
 console.log('built /solutions/');
 
 // ===================== BLOG =====================
-const POSTS = require('./blog-data');
 const bySlug = Object.fromEntries(PAGES.map(x => [x.slug, x]));
 const fmtDate = d => new Date(d + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
 const readMins = html => Math.max(3, Math.round(html.replace(/<[^>]+>/g, ' ').split(/\s+/).length / 200));

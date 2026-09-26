@@ -492,4 +492,321 @@ module.exports = [
 <p>Maintenance only takes a little time each month, but it has to be done consistently. Many business owners hand it to a developer on a monthly plan, so updates, backups, security and small changes are handled by someone who knows the site, and problems are caught before customers notice.</p>
 `,
   },
+  {
+    slug: 'get-more-enquiries-from-your-website',
+    title: '12 Ways to Get More Enquiries From Your Business Website',
+    description: 'Getting visitors but few calls? 12 practical ways to turn more website visitors into enquiries, from clear headlines and WhatsApp buttons to speed, trust signals and forms.',
+    date: '2026-09-29',
+    category: 'Growth',
+    related: ['website-redesign', 'landing-page-design', 'wordpress-speed-optimization'],
+    body: `
+<p>Many business websites get visitors but very few enquiries. Usually the problem isn't traffic. The website isn't making it easy or convincing enough for people to get in touch. Here are 12 practical fixes, most of which you can make in a day.</p>
+
+<h2>Make it instantly clear what you do</h2>
+<h3>1. Write a headline that says what you do and for whom</h3>
+<p>"Welcome to our website" wastes your most valuable space. Try something like "Orthopaedic clinic in Pune: same-week appointments" or "Industrial automation panels manufactured in India". Visitors should understand you in five seconds.</p>
+<h3>2. Put your main call to action above the fold</h3>
+<p>A clear button like "Get a Free Quote", "Book an Appointment" or "WhatsApp Us" should be visible without scrolling, especially on mobile.</p>
+
+<h2>Remove friction</h2>
+<h3>3. Add a WhatsApp button</h3>
+<p>In India, many people prefer WhatsApp to forms or calls. A floating WhatsApp button with a pre-filled message can noticeably increase enquiries.</p>
+<h3>4. Make phone numbers tappable</h3>
+<p>On mobile, visitors should be able to tap your number to call. It's a small fix that removes a big obstacle.</p>
+<h3>5. Shorten your forms</h3>
+<p>Every extra field reduces submissions. Ask only for what you need to follow up: usually name, phone and a short message.</p>
+<h3>6. Speed up your site</h3>
+<p>Slow pages lose visitors before they see your offer. Compress images, use caching and good hosting, and test on PageSpeed Insights.</p>
+
+<h2>Build trust</h2>
+<h3>7. Show real proof</h3>
+<p>Client logos, testimonials, Google reviews, project photos and case studies reassure visitors that you're genuine and good at what you do.</p>
+<h3>8. Use real photos</h3>
+<p>Photos of your team, office, clinic or factory build more trust than stock images.</p>
+<h3>9. Answer common questions</h3>
+<p>An FAQ section handles objections (price, timelines, process) before visitors have to ask, and it helps SEO too.</p>
+
+<h2>Guide visitors to act</h2>
+<h3>10. Create a page for each service</h3>
+<p>A dedicated page for each service lets you speak directly to that customer's needs and rank for those specific searches.</p>
+<h3>11. Repeat your call to action</h3>
+<p>Add a call to action after each main section, not just at the top and bottom. Visitors decide at different points.</p>
+<h3>12. Track what works</h3>
+<p>Set up Google Analytics to track form submissions, WhatsApp clicks and calls. You can't improve what you don't measure.</p>
+
+<h2>Where to start</h2>
+<p>If you do only three things this week: add a WhatsApp button, rewrite your headline, and add testimonials. Those changes alone often make a visible difference to enquiries.</p>
+`,
+  },
+  {
+    slug: 'local-seo-guide-small-business-india',
+    title: 'Local SEO for Small Businesses in India: A Step-by-Step Guide',
+    description: 'How to show up in Google Maps and "near me" searches: a step-by-step local SEO guide for Indian small businesses covering Google Business Profile, reviews, citations and your website.',
+    date: '2026-09-29',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
+    body: `
+<p>When someone searches "dentist near me" or "CA in Noida", Google shows a map with three businesses at the top, before the normal results. Getting into that map pack is one of the most valuable things a local business can do. That's what local SEO is about.</p>
+
+<h2>Step 1: Set up your Google Business Profile</h2>
+<p>Your Google Business Profile (formerly Google My Business) is the single biggest factor for local rankings.</p>
+<ul>
+  <li>Create or claim it at business.google.com and complete verification.</li>
+  <li>Choose the most accurate <strong>primary category</strong> (for example "Dentist" or "Website designer") and add relevant secondary categories.</li>
+  <li>Fill in <strong>everything</strong>: hours, phone, website, services, service areas, description and attributes.</li>
+  <li>Add real photos of your premises, team and work, and keep adding new ones.</li>
+  <li>Post updates, offers or news regularly.</li>
+</ul>
+
+<h2>Step 2: Get reviews, and reply to them</h2>
+<p>Reviews influence both rankings and whether people choose you.</p>
+<ul>
+  <li>Ask every happy customer for a review. Send them your direct review link on WhatsApp.</li>
+  <li>Reply to every review, positive or negative, politely and professionally.</li>
+  <li>Never buy fake reviews. They violate Google's policies and can get your profile suspended.</li>
+</ul>
+
+<h2>Step 3: Keep your NAP consistent</h2>
+<p>NAP means Name, Address, Phone. Make sure it's exactly the same on your website, Google Business Profile, Justdial, IndiaMART, Facebook and any other directory. Inconsistent details confuse Google.</p>
+
+<h2>Step 4: Optimize your website for local searches</h2>
+<ul>
+  <li>Mention your city and area naturally in page titles, headings and content.</li>
+  <li>Create a separate page for each main service.</li>
+  <li>Add your address, a Google Map and your hours on the contact page.</li>
+  <li>Add <strong>LocalBusiness schema markup</strong> so Google understands your business details.</li>
+  <li>Make sure your site is fast and works perfectly on mobile. Most local searches happen on phones.</li>
+</ul>
+
+<h2>Step 5: Get listed in trusted directories</h2>
+<p>Listings on reputable directories (called citations) help Google trust your business details. Start with Justdial, Sulekha, IndiaMART (for B2B), Bing Places, Apple Maps and relevant industry directories.</p>
+
+<h2>Step 6: Earn local links and mentions</h2>
+<p>Mentions from local news sites, associations, suppliers, partners and event sponsorships all signal that you're an established local business.</p>
+
+<h2>How long does local SEO take?</h2>
+<p>A complete Google Business Profile with good reviews can start showing results within weeks. Competitive categories in big cities take longer and need consistent effort: regular posts, new reviews and useful website content.</p>
+
+<h2>Quick checklist</h2>
+<ol>
+  <li>Verified, fully completed Google Business Profile</li>
+  <li>A steady flow of genuine reviews, all replied to</li>
+  <li>Consistent name, address and phone everywhere</li>
+  <li>Service pages with local keywords and schema</li>
+  <li>Listings on key directories</li>
+</ol>
+`,
+  },
+  {
+    slug: 'b2b-manufacturer-website-guide',
+    title: 'How Manufacturers Can Get More B2B and Export Enquiries From Their Website',
+    description: 'A practical guide for Indian manufacturers and industrial suppliers: what buyers look for, how to structure product catalogues, and how to turn your website into an enquiry machine.',
+    date: '2026-09-29',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>For many Indian manufacturers, the website is still a digital brochure that nobody updates. Meanwhile, procurement teams and importers research suppliers online before they ever send an RFQ. A well-built website can quietly bring in enquiries every week, from India and abroad.</p>
+
+<h2>What B2B buyers look for</h2>
+<p>A buyer comparing suppliers wants to answer a few questions quickly:</p>
+<ul>
+  <li><strong>Do they make exactly what I need?</strong> Clear product categories and specifications.</li>
+  <li><strong>Can they deliver at my scale?</strong> Capacity, infrastructure and machinery.</li>
+  <li><strong>Are they reliable?</strong> Certifications (ISO, CE, BIS), years in business, client logos.</li>
+  <li><strong>How do I get a quote?</strong> A simple, visible way to enquire.</li>
+</ul>
+<p>If your website answers these in minutes, you're ahead of most competitors.</p>
+
+<h2>Structure your product catalogue properly</h2>
+<ol>
+  <li><strong>Organise by category</strong>, the way buyers search (for example "Control Panels", then "PLC Panels" and "MCC Panels").</li>
+  <li><strong>One page per product or product family</strong>, with photos, specifications, applications and available sizes.</li>
+  <li><strong>Downloadable datasheets and brochures</strong> in PDF.</li>
+  <li><strong>A "Request a Quote" button on every product page</strong>, pre-filled with the product name.</li>
+</ol>
+<p>Separate product pages also help you rank for specific searches like "stainless steel storage tank manufacturer in Gujarat".</p>
+
+<h2>Show your capability</h2>
+<ul>
+  <li>Factory and machinery photos and videos</li>
+  <li>Production capacity and quality control process</li>
+  <li>Certifications and test reports</li>
+  <li>Industries served and notable clients (with permission)</li>
+  <li>Case studies of projects delivered</li>
+</ul>
+
+<h2>Make enquiring effortless</h2>
+<ul>
+  <li>Quote forms that ask for product, quantity and delivery location</li>
+  <li>WhatsApp and email on every page, with a clearly visible phone number</li>
+  <li>Fast replies. Enquiries go cold quickly, so make sure form emails reach the right person.</li>
+</ul>
+
+<h2>Get found by international buyers</h2>
+<ul>
+  <li>Write content in clear English with correct technical terms.</li>
+  <li>Mention export experience, countries served and shipping terms (FOB, CIF).</li>
+  <li>Consider additional languages for key markets.</li>
+  <li>Make sure the site loads fast internationally with good hosting or a CDN.</li>
+</ul>
+
+<h2>SEO basics for manufacturers</h2>
+<ul>
+  <li>Target specific product and "manufacturer/supplier in {location}" keywords.</li>
+  <li>Use descriptive page titles and meta descriptions for every product page.</li>
+  <li>Add product and organization schema markup.</li>
+  <li>Keep a consistent presence on IndiaMART, TradeIndia and your Google Business Profile, all linking to your website.</li>
+</ul>
+
+<h2>The bottom line</h2>
+<p>You don't need a flashy website. You need a clear, fast, well-organised one that proves you can deliver and makes it easy to ask for a quote. For most manufacturers, that single change turns the website from a cost into a steady source of enquiries.</p>
+`,
+  },
+  {
+    slug: 'elementor-vs-gutenberg',
+    title: 'Elementor vs Gutenberg: Which WordPress Builder Should You Use?',
+    description: 'Elementor or the Gutenberg block editor? Compare ease of use, design flexibility, speed and cost to decide which WordPress page builder is right for your website.',
+    date: '2026-09-29',
+    category: 'Guides',
+    related: ['elementor-developer', 'figma-to-wordpress', 'wordpress-speed-optimization'],
+    body: `
+<p>If you're building or redesigning a WordPress site, you'll probably choose between two ways of creating pages: <strong>Elementor</strong>, the popular drag-and-drop page builder, or <strong>Gutenberg</strong>, WordPress's built-in block editor. Both are good. The right choice depends on your priorities.</p>
+
+<h2>Quick comparison</h2>
+<table>
+  <thead><tr><th></th><th>Elementor</th><th>Gutenberg (Block Editor)</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Editing</strong></td><td>Visual drag-and-drop, see exactly what you get</td><td>Block-based, increasingly visual</td></tr>
+    <tr><td><strong>Design flexibility</strong></td><td>Very high out of the box</td><td>Good, and growing with block themes</td></tr>
+    <tr><td><strong>Speed</strong></td><td>Heavier, needs optimization</td><td>Lighter by default</td></tr>
+    <tr><td><strong>Cost</strong></td><td>Free version; Pro is paid yearly</td><td>Free, built into WordPress</td></tr>
+    <tr><td><strong>Learning curve for owners</strong></td><td>Very easy</td><td>Easy for text, harder for layouts</td></tr>
+    <tr><td><strong>Lock-in</strong></td><td>Content tied to Elementor</td><td>Native WordPress content</td></tr>
+  </tbody>
+</table>
+
+<h2>Choose Elementor if...</h2>
+<ul>
+  <li>You want to edit layouts visually without touching code</li>
+  <li>You need custom, design-heavy pages, landing pages and popups</li>
+  <li>Your team isn't technical and wants to make changes confidently</li>
+  <li>You want features like forms, popups and theme templates in one tool (Elementor Pro)</li>
+</ul>
+
+<h2>Choose Gutenberg if...</h2>
+<ul>
+  <li>Maximum speed and a lightweight site are top priorities</li>
+  <li>Your site is content-focused: blogs, news, documentation</li>
+  <li>You want to avoid yearly plugin licence costs</li>
+  <li>You want content that isn't tied to a third-party builder</li>
+</ul>
+
+<h2>What about speed?</h2>
+<p>Gutenberg sites are usually lighter out of the box. But a well-built Elementor site on good hosting, with a lightweight theme like Hello Elementor, caching and optimized images, can still be very fast. Most slow Elementor sites are slow because of how they were built, not because of Elementor itself.</p>
+
+<h2>My recommendation</h2>
+<p>For most small business websites where owners want to update pages themselves, <strong>Elementor</strong> offers the best balance of design freedom and ease of use, as long as it's built carefully. For content-heavy sites and blogs where speed is critical, <strong>Gutenberg</strong> is an excellent, lightweight choice. You can also combine them: Gutenberg for blog posts, and Elementor for key marketing pages.</p>
+`,
+  },
+  {
+    slug: 'choose-wordpress-hosting-india',
+    title: 'How to Choose WordPress Hosting in India (Without Getting Burned)',
+    description: 'What to look for in WordPress hosting in India: server location, speed, support, backups, renewal prices and security, plus shared vs managed vs cloud hosting explained.',
+    date: '2026-09-29',
+    category: 'Guides',
+    related: ['wordpress-migration', 'wordpress-speed-optimization', 'wordpress-maintenance'],
+    body: `
+<p>Hosting is the foundation of your website. Cheap, overloaded hosting makes even a well-built site slow and unreliable. Here's what to look for, so you can choose hosting that fits your budget without regretting it later.</p>
+
+<h2>Types of hosting, explained simply</h2>
+<ul>
+  <li><strong>Shared hosting:</strong> many websites share one server. It's cheapest and fine for small, low-traffic sites, but performance depends on your "neighbours".</li>
+  <li><strong>Managed WordPress hosting:</strong> optimized for WordPress, with caching, backups, updates and expert support included. It costs more, but saves time and headaches.</li>
+  <li><strong>Cloud / VPS hosting:</strong> dedicated resources that scale. It's best for busy sites and stores, and usually needs technical setup.</li>
+</ul>
+
+<h2>8 things to check before you buy</h2>
+<ol>
+  <li><strong>Server location:</strong> if most visitors are in India, choose servers in India or nearby (Mumbai, Singapore) for faster loading.</li>
+  <li><strong>Renewal price:</strong> first-year discounts are common, so check what you'll pay on renewal.</li>
+  <li><strong>Server technology:</strong> LiteSpeed or NGINX servers, current PHP versions and NVMe SSD storage all help speed.</li>
+  <li><strong>Automatic backups:</strong> daily backups you can restore easily, ideally stored separately from the server.</li>
+  <li><strong>Free SSL:</strong> HTTPS should be included and automatic.</li>
+  <li><strong>Support quality:</strong> 24/7 chat support that actually understands WordPress.</li>
+  <li><strong>Resource limits:</strong> check CPU, RAM and "inodes", not just the "unlimited" marketing.</li>
+  <li><strong>Security:</strong> malware scanning, firewall and account isolation.</li>
+</ol>
+
+<h2>How much should you spend?</h2>
+<ul>
+  <li><strong>Small business site:</strong> good shared or entry managed hosting is usually enough.</li>
+  <li><strong>WooCommerce store:</strong> invest in better hosting. Slow checkouts lose sales.</li>
+  <li><strong>High-traffic site:</strong> cloud or managed hosting with room to scale.</li>
+</ul>
+<p>The cheapest plan is rarely the cheapest in the end once you count lost visitors, downtime and time spent fixing problems.</p>
+
+<h2>Warning signs of bad hosting</h2>
+<ul>
+  <li>Your site is often slow or goes down</li>
+  <li>Slow server response time (TTFB) in speed tests</li>
+  <li>Support takes days to reply, or blames your site for everything</li>
+  <li>Constant upselling for basic features like SSL or backups</li>
+</ul>
+
+<h2>Already on bad hosting?</h2>
+<p>Switching hosts is very doable. A proper migration moves your files, database and email settings with no downtime and no loss of SEO. Many sites become noticeably faster just by moving to better hosting.</p>
+`,
+  },
+  {
+    slug: 'landing-page-mistakes-google-ads',
+    title: '10 Landing Page Mistakes That Waste Your Google & Facebook Ad Budget',
+    description: 'Paying for ad clicks that don\'t convert? Avoid these 10 common landing page mistakes, from slow loading and weak headlines to too many choices and missing tracking.',
+    date: '2026-09-29',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-speed-optimization', 'real-estate-website-design'],
+    body: `
+<p>You can have a great ad and still waste money if the page it sends people to doesn't convert. The landing page is where ad spend turns into leads, or disappears. Here are 10 common mistakes and how to fix them.</p>
+
+<h2>1. Sending ad traffic to your homepage</h2>
+<p>Your homepage talks about everything. A landing page should match the ad exactly, with the same offer, the same words and one clear goal.</p>
+
+<h2>2. Slow loading on mobile</h2>
+<p>Most ad clicks come from phones. If the page takes more than a few seconds to load, many visitors leave before it appears, and you've already paid for the click. Keep pages light, compress images and avoid heavy sliders.</p>
+
+<h2>3. A headline that doesn't match the ad</h2>
+<p>If the ad says "2BHK flats from ₹45 lakh in Whitefield", the landing page headline should say that too. A mismatch makes visitors feel they've landed in the wrong place.</p>
+
+<h2>4. Too many choices</h2>
+<p>Menus, links to other pages and multiple offers distract visitors. Remove the navigation and focus on one action.</p>
+
+<h2>5. Weak or hidden call to action</h2>
+<p>"Submit" is not a call to action. Use specific, benefit-driven buttons like "Get the Price List" or "Book a Free Site Visit", and make them visible without scrolling.</p>
+
+<h2>6. Long, intimidating forms</h2>
+<p>Ask only what you need to follow up. Name and phone number is often enough, and you can qualify leads on the call.</p>
+
+<h2>7. No trust signals</h2>
+<p>Add testimonials, client logos, ratings, certifications or project photos near the form. People need reassurance before sharing their details.</p>
+
+<h2>8. No WhatsApp option</h2>
+<p>For Indian audiences, a WhatsApp button can capture leads who don't want to fill a form or call.</p>
+
+<h2>9. No conversion tracking</h2>
+<p>Without tracking, you can't tell which ads and keywords generate leads. Set up Google Ads conversion tracking, Meta Pixel and GA4 events for form submissions and WhatsApp clicks.</p>
+
+<h2>10. Never testing anything</h2>
+<p>Small changes to the headline, offer, form length or button text can change conversion rates a lot. Test one change at a time and keep what works.</p>
+
+<h2>A simple high-converting structure</h2>
+<ol>
+  <li>Headline matching the ad, plus one supporting line</li>
+  <li>Call to action button (and WhatsApp)</li>
+  <li>3–5 key benefits</li>
+  <li>Proof: testimonials, logos, photos</li>
+  <li>Short FAQ answering objections</li>
+  <li>Form or call to action again</li>
+</ol>
+<p>Fix these mistakes and the same ad budget can bring in noticeably more leads.</p>
+`,
+  },
 ];

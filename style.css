@@ -470,3 +470,11 @@ main, footer, section { max-width: 100vw; }
   .post-head { padding-top: 36px; }
   .post-cta { padding: 24px 18px; }
 }
+
+/* Helpful reading list on landing pages */
+.reading-list { list-style: none; display: grid; gap: 12px; }
+.reading-list li { display: flex; justify-content: space-between; align-items: center; gap: 16px; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; box-shadow: var(--soft); }
+.reading-list a { font-family: var(--font-head); font-weight: 600; }
+.reading-list a:hover { color: var(--violet); }
+.reading-list span { flex: none; font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--cyan); }
+@media (max-width: 520px) { .reading-list li { flex-direction: column; align-items: flex-start; gap: 6px; } }
