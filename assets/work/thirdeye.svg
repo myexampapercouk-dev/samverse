@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="Manrope, Inter, 'Segoe UI', Arial, sans-serif">
+  <!-- Recreation of the thirdeye.social hero section -->
+  <defs>
+    <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#262626"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="#0A0A0A"/>
+  <rect width="1600" height="1000" fill="url(#dots)"/>
+
+  <!-- Nav -->
+  <rect x="400" y="34" width="800" height="72" rx="36" fill="#0F0F0F"/>
+  <g transform="translate(482 70)" fill="none" stroke-linecap="round">
+    <path d="M-44 0 Q0 -34 44 0 Q0 34 -44 0Z" stroke="#9A9A9A" stroke-width="4"/>
+    <circle r="15" stroke="#F07C12" stroke-width="3"/>
+    <text y="5" font-size="12" font-weight="700" fill="#F07C12" stroke="none" text-anchor="middle">AI</text>
+  </g>
+  <g font-size="19" fill="#BDBDBD">
+    <text x="600" y="77">What We Do</text>
+    <text x="722" y="77">Use Cases</text>
+    <text x="832" y="77">Case Studies</text>
+    <text x="960" y="77">Insights</text>
+  </g>
+  <rect x="1054" y="44" width="136" height="52" rx="6" fill="#1C1C1C"/>
+  <path d="M1054 70 V44 H1086 M1054 96 H1078" stroke="#F0A012" stroke-width="3" fill="none"/>
+  <text x="1122" y="78" font-size="20" fill="#FFFFFF" text-anchor="middle">Let's Talk</text>
+
+  <!-- Hero -->
+  <rect x="690" y="228" width="220" height="50" rx="25" fill="#0A0A0A" stroke="#333" stroke-width="2"/>
+  <text x="800" y="261" font-size="22" fill="#FFFFFF" text-anchor="middle">Third Eye Social</text>
+
+  <text x="800" y="410" font-size="96" font-weight="500" fill="#F07C12" text-anchor="middle" letter-spacing="-1">Smarter Scaling</text>
+  <text x="800" y="530" font-size="96" font-weight="500" fill="#FFFFFF" text-anchor="middle" letter-spacing="-1">Smaller ✦ Workforce</text>
+  <text x="800" y="650" font-size="96" font-weight="500" fill="#F07C12" text-anchor="middle" letter-spacing="-1">Leverage AI Agents</text>
+
+  <text x="800" y="730" font-size="24" fill="#FFFFFF" text-anchor="middle">Achieve double the output in half the time with just a quarter of</text>
+  <text x="800" y="764" font-size="24" fill="#FFFFFF" text-anchor="middle">your current workforce.</text>
+
+  <rect x="720" y="808" width="160" height="56" rx="6" fill="#1C1C1C"/>
+  <path d="M720 836 V808 H754 M720 864 H746" stroke="#F0A012" stroke-width="3" fill="none"/>
+  <text x="800" y="844" font-size="21" fill="#FFFFFF" text-anchor="middle">Learn More</text>
+</svg>
