@@ -1527,4 +1527,231 @@ module.exports = [
 <p>For the vast majority of small and medium businesses, WordPress gives the best balance of cost, speed to launch, flexibility and ease of editing. Custom code is worth the extra investment when you're building a web application rather than a website. If you're unsure, describe what your site needs to do and a developer can recommend the right approach; start with <a href="/wordpress-website-development/">WordPress website development</a> to see what's typically included.</p>
 `,
   },
+  {
+    slug: 'hotel-website-direct-bookings',
+    seoTitle: 'Hotel & Homestay Websites: How to Get Direct Bookings',
+    title: 'Hotel and Homestay Websites: How to Get More Direct Bookings',
+    description: 'How hotels, resorts and homestays can win more direct bookings from their own website, from photos, room pages and booking engines to WhatsApp, reviews and local SEO.',
+    date: '2026-09-29',
+    category: 'Industries',
+    related: ['hotel-website-design', 'wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>Online travel agencies bring bookings, but they also take a commission on every one. A strong website of your own lets guests book directly, so you keep more of each booking and build a relationship with them. Here's what makes a hotel or homestay website win direct bookings.</p>
+
+<h2>Why guests book on OTAs instead of your website</h2>
+<ul>
+  <li>Your website doesn't show up when they search your property's name, or it looks less trustworthy than the OTA listing</li>
+  <li>There's no clear way to check availability or book</li>
+  <li>Photos and room information are better on the OTA</li>
+  <li>The site is slow or awkward on mobile</li>
+</ul>
+<p>Fix these, and many guests who find you on an OTA will happily book directly.</p>
+
+<h2>What your hotel website needs</h2>
+<h3>1. Stunning, fast-loading photos</h3>
+<p>Photos sell rooms. Use large, professional images of rooms, bathrooms, views, dining and common areas, compressed properly so pages still load fast on mobile.</p>
+<h3>2. A page for each room type</h3>
+<p>Include photos, bed type, occupancy, size, amenities, view and policies. Guests should never have to message you just to find basic information.</p>
+<h3>3. An easy way to book</h3>
+<ul>
+  <li><strong>Booking engine:</strong> real-time availability and online payment, ideally connected to your channel manager to avoid double bookings.</li>
+  <li><strong>Enquiry form:</strong> a simpler option for small properties.</li>
+  <li><strong>WhatsApp booking:</strong> many Indian travellers prefer to confirm details over WhatsApp.</li>
+</ul>
+<h3>4. A reason to book direct</h3>
+<p>Offer something OTAs don't: a small discount, free breakfast, early check-in or a welcome drink for direct bookings. Say it clearly near the booking button.</p>
+<h3>5. Trust signals</h3>
+<p>Guest reviews, ratings, awards and clear cancellation and payment policies reassure guests that booking direct is safe.</p>
+<h3>6. Local information</h3>
+<p>Directions, distance from the airport or station, and a guide to nearby attractions help guests plan, and help you rank for searches about your area.</p>
+
+<h2>SEO for hotels and homestays</h2>
+<ul>
+  <li>Make sure your website ranks first for your property's name</li>
+  <li>Target searches like "homestay in {place}" and "resort near {attraction}" in titles and content</li>
+  <li>Add hotel schema markup so Google understands your property</li>
+  <li>Keep your Google Business Profile complete with photos and reviews, and link it to your website. See the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</li>
+</ul>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>Sending website visitors to an OTA to book</li>
+  <li>Outdated rates, photos or policies</li>
+  <li>Heavy sliders and videos that make the site slow on mobile</li>
+  <li>No phone or WhatsApp visible on mobile</li>
+</ul>
+
+<h2>Getting started</h2>
+<p>Even a small homestay benefits from a simple, beautiful website with good photos, room details and WhatsApp booking. Larger properties should add a booking engine connected to their channel manager. See what's included in a <a href="/hotel-website-design/">hotel website</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-lawyers-and-chartered-accountants',
+    seoTitle: 'Websites for Lawyers & CAs: What Clients Look For',
+    title: 'Websites for Lawyers, CAs and Consultants: What Clients Look For',
+    description: 'How lawyers, chartered accountants and consultants can use their website to build credibility and win clients: profiles, practice areas, articles, consultations and local SEO.',
+    date: '2026-09-29',
+    category: 'Industries',
+    related: ['website-for-lawyers-and-consultants', 'wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>People looking for a lawyer, chartered accountant or consultant are usually worried about a problem such as a dispute, a tax notice or a business decision. They want someone credible, experienced and easy to talk to. Your website is often where they decide whether that's you.</p>
+
+<h2>What potential clients look for</h2>
+<ul>
+  <li><strong>Expertise in their specific problem.</strong> Not just "legal services", but "property disputes" or "GST registration and returns".</li>
+  <li><strong>Credibility:</strong> qualifications, experience, memberships and the team behind the firm.</li>
+  <li><strong>Clarity:</strong> how the process works and what to expect.</li>
+  <li><strong>Easy contact:</strong> a simple way to request a consultation.</li>
+</ul>
+
+<h2>Essential pages</h2>
+<h3>Profile / About</h3>
+<p>Your qualifications, enrolment or membership details, years of practice, areas of focus and a professional photo. For firms, add team profiles.</p>
+<h3>Practice area or service pages</h3>
+<p>One page per area (for example company incorporation, income tax, GST, audit, trademark registration, family law). Explain who it's for, common situations you handle, the process, and documents clients typically need. These pages are also how you get found on Google.</p>
+<h3>Articles and insights</h3>
+<p>Short, practical articles on common questions (like "What to do after receiving a GST notice") demonstrate expertise, build trust and bring in search traffic over time.</p>
+<h3>Consultation page</h3>
+<p>A clear consultation request form, phone and WhatsApp, office address with a map, and working hours.</p>
+
+<h2>Professional guidelines and tone</h2>
+<p>Professions such as law and chartered accountancy have their own rules on how services may be publicised. Keep your website factual and informative: describe your areas of practice and qualifications, avoid exaggerated claims or guarantees of outcomes, and review content against your professional body's current guidelines before publishing.</p>
+
+<h2>Local SEO for professionals</h2>
+<ul>
+  <li>Mention your city and the areas you serve naturally in titles and content</li>
+  <li>Complete your Google Business Profile and encourage genuine client reviews where appropriate</li>
+  <li>Keep your name, address and phone consistent across directories</li>
+  <li>Answer common local questions in articles</li>
+</ul>
+
+<h2>Design tips</h2>
+<ul>
+  <li>Clean, calm design with plenty of white space, conveying professionalism, not flashiness</li>
+  <li>Readable typography and a clear menu</li>
+  <li>Fast and mobile-friendly, since many clients search on their phones</li>
+  <li>A privacy policy, and forms that don't ask for sensitive details upfront</li>
+</ul>
+
+<h2>Next step</h2>
+<p>A focused, professional website with clear practice area pages is one of the most effective ways for lawyers, CAs and consultants to win new clients consistently. See what's included in a <a href="/website-for-lawyers-and-consultants/">website for lawyers and consultants</a>.</p>
+`,
+  },
+  {
+    slug: 'solar-company-website-guide',
+    seoTitle: 'Solar Company Website: Turn Visitors Into Quote Requests',
+    title: 'Solar Company Website Guide: Turning Visitors Into Quote Requests',
+    description: 'How solar installers and power companies can turn website visitors into quote requests: savings information, subsidy pages, project galleries, quote forms and local SEO.',
+    date: '2026-09-29',
+    category: 'Industries',
+    related: ['website-for-solar-and-power-companies', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>Homeowners and businesses considering solar do a lot of research before contacting an installer. They want to understand savings, subsidies, costs and whether they can trust you. A website that answers these questions clearly turns that research into quote requests.</p>
+
+<h2>What solar buyers want to know</h2>
+<ul>
+  <li>How much will I save on my electricity bill?</li>
+  <li>What does it cost, and are there subsidies?</li>
+  <li>What system size do I need?</li>
+  <li>How long does installation take, and what about maintenance?</li>
+  <li>Is this company experienced and reliable?</li>
+</ul>
+
+<h2>Pages every solar website needs</h2>
+<h3>1. Clear solution pages</h3>
+<p>Separate pages for residential rooftop, commercial and industrial solar, and related products like batteries or inverters, written in plain language for customers.</p>
+<h3>2. Savings and subsidy information</h3>
+<p>Explain how savings work and the current subsidy schemes and process in your area. Keep this information accurate and updated, as schemes change; link to official sources where possible.</p>
+<h3>3. Completed projects</h3>
+<p>A gallery of real installations with system size, location type and photos is one of the strongest trust signals you can offer.</p>
+<h3>4. A smart quote request form</h3>
+<p>Ask for the details you need to prepare a proposal: name, phone, location, property type, roof type and monthly electricity bill. Keep it short enough that people complete it.</p>
+<h3>5. FAQ</h3>
+<p>Answer questions about installation time, maintenance, warranties, net metering and monsoon performance.</p>
+
+<h2>Build trust quickly</h2>
+<ul>
+  <li>Certifications, partnerships and brands you install</li>
+  <li>Genuine customer testimonials and Google reviews</li>
+  <li>Your team and service process</li>
+  <li>Warranty and after-sales support details</li>
+</ul>
+
+<h2>Get found locally</h2>
+<ul>
+  <li>Target searches like "solar panel installation in {city}" with service area pages that have genuinely local content (projects and information for that area)</li>
+  <li>Keep a complete Google Business Profile with project photos</li>
+  <li>Publish helpful articles on savings, subsidies and system sizing</li>
+</ul>
+
+<h2>Running ads?</h2>
+<p>Solar campaigns on Google and Meta work best with dedicated landing pages: one offer, a short quote form, trust signals and WhatsApp. Avoid the common <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes</a> that waste ad budget.</p>
+
+<h2>Related example</h2>
+<p>For a power-sector example, see how a generator rental company's site presents its full fleet with enquiry calls to action in the <a href="/work/sahni-power-solutions/">Sahni Power Solutions case study</a>. For your own site, see what's included in a <a href="/website-for-solar-and-power-companies/">solar and power company website</a>.</p>
+`,
+  },
+  {
+    slug: 'white-label-wordpress-development-agencies',
+    seoTitle: 'White-Label WordPress Development: A Guide for Agencies',
+    title: 'White-Label WordPress Development: How Agencies Scale Without Hiring',
+    description: 'How digital and design agencies use white-label WordPress developers to take on more projects: how it works, pricing models, NDAs, quality control and choosing a partner.',
+    date: '2026-09-29',
+    category: 'Agencies',
+    related: ['wordpress-developer-for-agencies', 'figma-to-wordpress', 'elementor-developer'],
+    body: `
+<p>Many agencies hit the same wall: more website projects than their team can deliver, but not enough steady work to justify another full-time developer. White-label WordPress development solves this by letting you outsource the build while keeping your brand and client relationship.</p>
+
+<h2>What is white-label WordPress development?</h2>
+<p>A white-label developer builds websites on your behalf. You sell and manage the project with your client; the developer delivers the WordPress site behind the scenes. Your client sees only your agency. No credits, no direct contact unless you want it.</p>
+
+<h2>Why agencies use white-label developers</h2>
+<ul>
+  <li><strong>Take on more projects</strong> without hiring, training or paying idle salaries</li>
+  <li><strong>Protect margins</strong> with fixed project costs you can mark up</li>
+  <li><strong>Handle busy periods</strong> without missing deadlines</li>
+  <li><strong>Focus on strategy and sales</strong> while delivery is handled</li>
+  <li><strong>Access specialist skills</strong> such as WooCommerce, speed optimization or complex Elementor builds</li>
+</ul>
+
+<h2>How it typically works</h2>
+<ol>
+  <li><strong>Brief:</strong> you share designs (Figma/XD), content, references and requirements.</li>
+  <li><strong>Quote:</strong> the developer confirms scope, timeline and a fixed price.</li>
+  <li><strong>Build:</strong> development happens on a staging site under your branding.</li>
+  <li><strong>Review:</strong> you review (and show your client), and revisions are made.</li>
+  <li><strong>Launch:</strong> the site goes live on your client's hosting, with handover documentation.</li>
+  <li><strong>Ongoing:</strong> optional maintenance and updates, still under your brand.</li>
+</ol>
+
+<h2>Pricing models</h2>
+<ul>
+  <li><strong>Fixed price per project:</strong> the most common. Easy to quote your client with a margin.</li>
+  <li><strong>Hourly:</strong> useful for small fixes and ongoing changes.</li>
+  <li><strong>Monthly retainer:</strong> a set number of hours or sites per month for agencies with steady volume.</li>
+</ul>
+
+<h2>How to choose a white-label partner</h2>
+<ul>
+  <li><strong>Portfolio of live sites</strong> built to a high standard</li>
+  <li><strong>Design accuracy:</strong> can they match your Figma designs closely?</li>
+  <li><strong>Communication:</strong> responsive, clear and in your working hours</li>
+  <li><strong>Confidentiality:</strong> willing to sign an NDA and never contact your clients</li>
+  <li><strong>Technical quality:</strong> fast, mobile-friendly, SEO-ready builds your clients can edit</li>
+  <li><strong>Reliability:</strong> realistic timelines, met consistently</li>
+</ul>
+<p>Start with a small trial project before handing over bigger ones.</p>
+
+<h2>Keeping quality high</h2>
+<ul>
+  <li>Use a checklist for each launch: responsive checks, forms, speed, SEO basics, browser testing</li>
+  <li>Keep design systems (fonts, colours, spacing) consistent across Figma and WordPress</li>
+  <li>Agree on revision rounds and turnaround times upfront</li>
+  <li>Keep access and credentials organised and secure</li>
+</ul>
+
+<h2>Is white-label right for your agency?</h2>
+<p>If you regularly turn down or delay website projects, or your team spends more time building than selling and strategising, white-label development can help you grow without the overhead of new hires. Learn how I work with agencies on <a href="/wordpress-developer-for-agencies/">white-label WordPress development</a>, or see examples of agency websites like <a href="/work/streak-creative/">Streak Creative</a> and <a href="/work/third-eye-social/">Third Eye Social</a>.</p>
+`,
+  },
 ];
