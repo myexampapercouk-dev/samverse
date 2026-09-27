@@ -169,6 +169,13 @@ const LINKS = [
   ['technical-seo-audit-wordpress', '<h2>3. One version of the site</h2>', '<p>Background reading: <a href="/blog/xml-sitemaps-explained/">XML sitemaps</a> and <a href="/blog/robots-txt-explained/">robots.txt</a> explained.</p>\n\n'],
   ['technical-seo-audit-wordpress', '<h2>6. Speed and Core Web Vitals</h2>', '<p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags</a>, <a href="/blog/duplicate-content-explained/">duplicate content</a> and <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>\n\n'],
   ['website-analytics-metrics-that-matter', '<h2>6. Search queries (Search Console)</h2>', '<p>Low engagement on key pages? See <a href="/blog/keep-visitors-engaged-website/">how to keep visitors engaged</a>.</p>\n\n'],
+  // Round 19
+  ['local-seo-guide-small-business-india', '<h2>Quick checklist</h2>', '<p>Wondering how long it all takes? See <a href="/blog/how-long-does-seo-take/">how long SEO takes to work</a>.</p>\n\n'],
+  ['landing-page-vs-website', '<h2>The difference</h2>', '<p>Deciding between paid and organic first? See <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a>.</p>\n\n'],
+  ['freelancer-vs-agency-web-developer', '<h2>The bottom line</h2>', '<p>Hiring for SEO too? Learn the <a href="/blog/seo-red-flags-scams/">SEO red flags to avoid</a>.</p>\n\n'],
+  ['internal-linking-explained', '<h2>Common mistakes</h2>', '<p>Links from other websites matter too; see <a href="/blog/ethical-link-building-small-business/">ethical link building for small businesses</a>.</p>\n\n'],
+  ['local-seo-guide-small-business-india', '<h2>Step 6: Earn local links and mentions</h2>', '<p>More on listings: <a href="/blog/business-directories-citations-india/">business directories and citations in India</a>.</p>\n\n'],
+  ['get-more-google-reviews', '<h2>Make reviews a habit</h2>', '<p>Got a bad review? See <a href="/blog/handle-negative-reviews/">how to handle negative reviews professionally</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

@@ -104,16 +104,28 @@ const jobs = [
   ...EXTRA.map(x => [`extra-${x.slug}`, 'Extra', x.eyebrow, plain(x.h1)]),
 ];
 
+// Only regenerate images whose content changed (tracked in a manifest of SVG hashes).
+// Run with --force to rebuild everything (e.g. after changing the design above).
+const crypto = require('crypto');
+const MANIFEST = path.join(OUT, 'manifest.json');
+const FORCE = process.argv.includes('--force');
+
 (async () => {
-  let made = 0, bytes = 0;
+  let manifest = {};
+  try { manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8')); } catch (e) { /* first run */ }
+  let made = 0, skipped = 0;
   for (const [key, theme, label, title] of jobs) {
-    const svg = Buffer.from(svgFor(theme, label, title));
+    const svgText = svgFor(theme, label, title);
+    const hash = crypto.createHash('sha1').update(svgText).digest('hex');
     const png = path.join(OUT, `${key}.png`);
     const webp = path.join(OUT, `${key}.webp`);
+    if (!FORCE && manifest[key] === hash && fs.existsSync(png) && fs.existsSync(webp)) { skipped++; continue; }
+    const svg = Buffer.from(svgText);
     await sharp(svg).png({ palette: true, quality: 90, compressionLevel: 9 }).toFile(png);
     await sharp(svg).webp({ quality: 82 }).toFile(webp);
-    bytes += fs.statSync(png).size + fs.statSync(webp).size;
+    manifest[key] = hash;
     made++;
   }
-  console.log(`cover images: ${made} pages (PNG + WebP), ${(bytes / 1024 / 1024).toFixed(1)} MB total`);
+  fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 1));
+  console.log(`cover images: ${made} generated, ${skipped} unchanged (${jobs.length} pages)`);
 })();
