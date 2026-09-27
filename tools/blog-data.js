@@ -58,6 +58,8 @@ module.exports = [
   <li><strong>No maintenance:</strong> skipping updates is the most common reason WordPress sites get hacked, and cleanup costs far more than prevention.</li>
 </ul>
 
+<p>For ongoing costs after launch, see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>.</p>
+
 <h2>How to get an accurate quote</h2>
 <p>To get a fixed, accurate quote from any developer, share:</p>
 <ol>
@@ -69,6 +71,8 @@ module.exports = [
 </ol>
 <p>A clear brief gets you a clear price, and avoids surprises halfway through the project.</p>
 <p>Want a quick ballpark first? Try the free <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<p>Ready to request quotes? Use the <a href="/blog/website-brief-template/">website brief template</a> so every developer quotes on the same scope.</p>
 
 <h2>The bottom line</h2>
 <p>For most small businesses in India, a professional WordPress website costs between ₹15,000 and ₹40,000, plus a few thousand rupees a year for domain and hosting. Online stores and larger sites cost more. Focus on value, not the lowest price: a fast, mobile-friendly website that brings in enquiries pays for itself quickly.</p>
@@ -118,6 +122,8 @@ module.exports = [
 <p>Shopify is a strong, hosted e-commerce platform. It's quick to set up a store and handles hosting and security for you.</p>
 <p><strong>Pros:</strong> excellent for stores, reliable checkout, large app ecosystem.</p>
 <p><strong>Cons:</strong> monthly plans plus paid apps add up; transaction fees can apply unless you use Shopify Payments; content pages and blogs are less flexible than WordPress; and you're tied to the platform.</p>
+
+<p>Already on Wix and thinking of switching? Here's <a href="/blog/migrate-wix-to-wordpress/">how to move from Wix to WordPress without losing traffic</a>.</p>
 
 <h2>Which should you choose?</h2>
 <ul>
@@ -253,6 +259,8 @@ module.exports = [
   <li>Choose reliable hosting with good security practices.</li>
 </ul>
 
+<p>A hack is one common cause of sudden traffic loss; see <a href="/blog/website-traffic-dropped/">what to check when traffic drops</a>.</p>
+
 <h2>Need it fixed fast?</h2>
 <p>Cleaning a hacked site properly takes experience. Removing the visible symptoms isn't enough if a backdoor remains. If your business depends on your website, get professional help quickly: the longer malware stays, the more damage it does to your reputation and Google rankings.</p>
 `,
@@ -312,6 +320,8 @@ module.exports = [
 <h2>Your Google Business Profile matters too</h2>
 <p>For local searches like "dermatologist near me", your Google Business Profile often appears above websites. Keep it complete, add photos, respond to reviews and link it to your website. The two work together.</p>
 
+<p>Doctors who also coach, teach or run programs can go further with a <a href="/blog/personal-brand-website-professionals/">personal brand website</a>. Dental practices should also read <a href="/blog/website-for-dentists/">what patients look for in a dental clinic website</a>.</p>
+
 <h2>Next step</h2>
 <p>If your current website misses several of these points, a focused redesign can make a big difference to how many patients contact you. A good clinic website is one of the most cost-effective ways to grow a practice.</p>
 `,
@@ -354,6 +364,8 @@ module.exports = [
   <li>You need a big team working in parallel</li>
 </ul>
 <p>Interestingly, many agencies outsource development to trusted freelancers, so hiring the freelancer directly can get you the same quality for less.</p>
+
+<p>Some developers will suggest a custom-coded site instead of WordPress; see <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs custom-coded websites</a> to judge which you need.</p>
 
 <h2>10 questions to ask before hiring any web developer</h2>
 <ol>
@@ -434,6 +446,8 @@ module.exports = [
 <h2>Speed and performance</h2>
 <p>Shopify's hosting is fast by default. WooCommerce can be just as fast on good hosting with caching and optimized images. Cheap hosting is the main reason WooCommerce stores feel slow.</p>
 
+<p>Chosen WooCommerce? Work through the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a> before going live.</p>
+
 <h2>Our recommendation</h2>
 <p>For most small and growing Indian brands that want control and low running costs, <strong>WooCommerce</strong> is an excellent choice, especially when set up properly with a good host, Razorpay and a fast theme. If you want zero technical responsibility and don't mind the monthly fees, Shopify is a solid alternative.</p>
 `,
@@ -494,6 +508,8 @@ module.exports = [
   <li>Fewer, well-maintained plugins are better than many.</li>
 </ol>
 
+<p>Wondering what professional maintenance costs? See <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>. For the plugins worth keeping, see <a href="/blog/essential-wordpress-plugins-business/">essential WordPress plugins</a>.</p>
+
 <h2>Don't have time?</h2>
 <p>Maintenance only takes a little time each month, but it has to be done consistently. Many business owners hand it to a developer on a monthly plan, so updates, backups, security and small changes are handled by someone who knows the site, and problems are caught before customers notice.</p>
 `,
@@ -532,6 +548,8 @@ module.exports = [
 <h3>9. Answer common questions</h3>
 <p>An FAQ section handles objections (price, timelines, process) before visitors have to ask, and it helps SEO too.</p>
 
+<p>If your form gets no submissions at all, check that it isn't broken. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a>.</p>
+
 <h2>Guide visitors to act</h2>
 <h3>10. Create a page for each service</h3>
 <p>A dedicated page for each service lets you speak directly to that customer's needs and rank for those specific searches.</p>
@@ -539,6 +557,8 @@ module.exports = [
 <p>Add a call to action after each main section, not just at the top and bottom. Visitors decide at different points.</p>
 <h3>12. Track what works</h3>
 <p>Set up Google Analytics to track form submissions, WhatsApp clicks and calls. You can't improve what you don't measure.</p>
+
+<p>Not everyone is ready to enquire today. A useful <a href="/blog/lead-magnets-newsletter-small-business/">lead magnet or newsletter</a> keeps those visitors in touch.</p>
 
 <h2>Where to start</h2>
 <p>If you do only three things this week: add a WhatsApp button, rewrite your headline, and add testimonials. Those changes alone often make a visible difference to enquiries.</p>
@@ -584,11 +604,15 @@ module.exports = [
   <li>Make sure your site is fast and works perfectly on mobile. Most local searches happen on phones.</li>
 </ul>
 
+<p>For a page-by-page routine, use the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a> whenever you publish a new page.</p>
+
 <h2>Step 5: Get listed in trusted directories</h2>
 <p>Listings on reputable directories (called citations) help Google trust your business details. Start with Justdial, Sulekha, IndiaMART (for B2B), Bing Places, Apple Maps and relevant industry directories.</p>
 
 <h2>Step 6: Earn local links and mentions</h2>
 <p>Mentions from local news sites, associations, suppliers, partners and event sponsorships all signal that you're an established local business.</p>
+
+<p>More and more local questions are also answered by AI assistants; see <a href="/blog/ai-search-optimization-website/">how to get cited by AI search</a>.</p>
 
 <h2>How long does local SEO take?</h2>
 <p>A complete Google Business Profile with good reviews can start showing results within weeks. Competitive categories in big cities take longer and need consistent effort: regular posts, new reviews and useful website content.</p>
@@ -633,6 +657,8 @@ module.exports = [
 </ol>
 <p>Separate product pages also help you rank for specific searches like "stainless steel storage tank manufacturer in Gujarat".</p>
 
+<p>For a detailed walkthrough of product pages, filters and quote flows, see <a href="/blog/industrial-website-product-catalogue/">how to build a product catalogue website</a>.</p>
+
 <h2>Show your capability</h2>
 <ul>
   <li>Factory and machinery photos and videos</li>
@@ -656,6 +682,8 @@ module.exports = [
   <li>Consider additional languages for key markets.</li>
   <li>Make sure the site loads fast internationally with good hosting or a CDN.</li>
 </ul>
+
+<p>Selling to buyers in other countries? See <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</p>
 
 <h2>SEO basics for manufacturers</h2>
 <ul>
@@ -712,6 +740,8 @@ module.exports = [
 <h2>What about speed?</h2>
 <p>Gutenberg sites are usually lighter out of the box. But a well-built Elementor site on good hosting, with a lightweight theme like Hello Elementor, caching and optimized images, can still be very fast. Most slow Elementor sites are slow because of how they were built, not because of Elementor itself.</p>
 
+<p>Your theme matters just as much as the builder; see <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
+
 <h2>My recommendation</h2>
 <p>For most small business websites where owners want to update pages themselves, <strong>Elementor</strong> offers the best balance of design freedom and ease of use, as long as it's built carefully. For content-heavy sites and blogs where speed is critical, <strong>Gutenberg</strong> is an excellent, lightweight choice. You can also combine them: Gutenberg for blog posts, and Elementor for key marketing pages.</p>
 `,
@@ -745,6 +775,8 @@ module.exports = [
   <li><strong>Resource limits:</strong> check CPU, RAM and "inodes", not just the "unlimited" marketing.</li>
   <li><strong>Security:</strong> malware scanning, firewall and account isolation.</li>
 </ol>
+
+<p>New to all this? Start with <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained simply</a>.</p>
 
 <h2>How much should you spend?</h2>
 <ul>
@@ -806,6 +838,8 @@ module.exports = [
 
 <h2>10. Never testing anything</h2>
 <p>Small changes to the headline, offer, form length or button text can change conversion rates a lot. Test one change at a time and keep what works.</p>
+
+<p>Not sure whether you need a landing page or a full website for your ads? See <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</p>
 
 <h2>A simple high-converting structure</h2>
 <ol>
@@ -877,6 +911,8 @@ module.exports = [
 <h2>Can it be done faster?</h2>
 <p>Yes, within reason. A landing page or small site can often go live in a few days if content is ready and decisions are quick. For urgent launches, a good approach is to launch the essential pages first and add the rest in a second phase.</p>
 
+<p>Budgeting too? See <a href="/blog/wordpress-website-cost-india/">how much a WordPress website costs in India</a>.</p>
+
 <h2>Plan your launch</h2>
 <p>Work backwards from your launch date: if you need the site live for a campaign or event, start at least 3–4 weeks earlier for a business site, and longer for a store. Share your deadline at the start so your developer can plan the schedule around it.</p>
 `,
@@ -937,6 +973,8 @@ module.exports = [
   <li>Expect small fluctuations for a few weeks as Google re-crawls the site. That's normal if the steps above are done.</li>
 </ul>
 
+<p>If traffic does drop after launch, work through the <a href="/blog/website-traffic-dropped/">traffic drop checklist</a> step by step, and check that new pages are being indexed; see <a href="/blog/get-website-indexed-google-faster/">getting indexed faster</a>.</p>
+
 <h2>The bottom line</h2>
 <p>A redesign done with SEO in mind usually improves rankings, because the new site is faster, clearer and better structured. The key is planning redirects and protecting the pages that already bring you traffic.</p>
 `,
@@ -978,6 +1016,7 @@ module.exports = [
 <p>WooCommerce adds products, cart and checkout. Install your gateway's WooCommerce plugin, add your API keys, and customers can pay by UPI, card or net banking at checkout. You can also enable <strong>Cash on Delivery</strong>, which many Indian shoppers still prefer.</p>
 <h3>2. Payment forms (for fees, services and donations)</h3>
 <p>For consultation fees, course fees, event registrations or donations, a payment form is simpler than a full store. Form plugins can connect to gateways like Razorpay so people fill in details and pay in one step.</p>
+<p>Schools and coaching institutes often collect fees this way; see <a href="/blog/school-coaching-website-what-parents-look-for/">what parents and students look for</a>.</p>
 <h3>3. Payment links and buttons</h3>
 <p>Gateways let you create payment links or buttons you can place on any page, or send on WhatsApp. It's the quickest option for occasional payments.</p>
 
@@ -988,6 +1027,8 @@ module.exports = [
   <li>Test failed and cancelled payments, not just successful ones.</li>
   <li>Test on mobile, where most UPI payments happen.</li>
 </ul>
+
+<p>Launching a full store? Use the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> before going live.</p>
 
 <h2>Common problems and fixes</h2>
 <ul>
@@ -1047,6 +1088,8 @@ module.exports = [
 </ul>
 <p>Either way, plan redirects and keep your best-performing pages so you don't lose existing Google rankings.</p>
 
+<p>If you decide to rebuild, start with a clear <a href="/blog/website-brief-template/">website brief</a>.</p>
+
 <h2>Next step</h2>
 <p>If three or more of these signs sound familiar, your website is probably costing you business. A focused redesign with a modern look, fast mobile pages and clear calls to action can turn it back into your best salesperson.</p>
 `,
@@ -1101,6 +1144,8 @@ module.exports = [
   <li><strong>Install a reputable security plugin or firewall</strong> to block malicious traffic and scan for malware.</li>
   <li><strong>Monitor Google Search Console</strong> for security warnings, and set up uptime monitoring so you know quickly if the site goes down.</li>
 </ol>
+
+<p>Keep your plugin list lean and well maintained; see <a href="/blog/essential-wordpress-plugins-business/">essential WordPress plugins (and ones to avoid)</a>.</p>
 
 <h2>Signs something is already wrong</h2>
 <p>Unexpected redirects, strange pages in Google results, unknown admin users or browser warnings are signs of an existing infection. See our guide to the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a>, and get it cleaned properly before hardening.</p>
@@ -1222,6 +1267,8 @@ module.exports = [
 </ul>
 <p>Then mark the most important ones as <strong>key events</strong> in GA4 so you can see which pages and traffic sources produce leads.</p>
 
+<p>New site not showing up yet? See <a href="/blog/get-website-indexed-google-faster/">how to get your website indexed faster</a>.</p>
+
 <h2>Step 4: Link the two tools</h2>
 <p>In GA4 Admin, link your Search Console property. You'll then see search queries alongside visitor behaviour in Analytics.</p>
 
@@ -1256,6 +1303,8 @@ module.exports = [
   <li><strong>E-commerce without platform commission</strong> using WooCommerce.</li>
 </ul>
 
+<p>Still comparing platforms? See <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a>.</p>
+
 <h2>What can (and can't) be migrated</h2>
 <p>Wix doesn't offer a one-click export of your design, so the move is really a <strong>rebuild on WordPress</strong> with your content carried over:</p>
 <ul>
@@ -1285,6 +1334,8 @@ module.exports = [
 
 <h2>Watch out for your domain</h2>
 <p>If you bought your domain through Wix, you can transfer it to another registrar or simply point it to your new host. Make sure you keep control of the domain during the switch, as it's the one thing you can't afford to lose.</p>
+
+<p>For the basics of domains, DNS and SSL, see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
 
 <h2>Is it worth it?</h2>
 <p>If your Wix site is small, rarely updated and doing its job, you may not need to move. If you're growing, need better SEO, e-commerce or custom features, or want to own your website outright, WordPress is usually the right next step. A professional <a href="/wordpress-migration/">migration</a> handles the rebuild, redirects and launch so your business doesn't miss a beat.</p>
@@ -1419,6 +1470,8 @@ module.exports = [
   <li>Add descriptive alt text to images.</li>
 </ul>
 
+<p>Before publishing each page, run through the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>.</p>
+
 <h2>Stuck? Start with this</h2>
 <p>Write down the 10 questions customers ask you most often, and answer each in a few sentences. You'll have the raw material for your homepage, service pages and FAQ. A good developer can then shape it into pages; see what's included in a <a href="/wordpress-website-development/">WordPress website project</a>.</p>
 `,
@@ -1463,6 +1516,8 @@ module.exports = [
   <li><strong>Long, demanding forms.</strong> Ask only what you need.</li>
   <li><strong>No proof.</strong> No testimonials, reviews, client logos or examples of work.</li>
 </ol>
+
+<p>Two related guides: the <a href="/blog/website-accessibility-basics/">accessibility basics</a> that make a site usable for everyone, and the <a href="/blog/signs-you-need-a-new-website/">signs it's time for a new website</a>.</p>
 
 <h2>How to audit your own site</h2>
 <ol>
@@ -1514,6 +1569,8 @@ module.exports = [
   <li>Products where the website <em>is</em> the software</li>
   <li>When you have an in-house development team to maintain it</li>
 </ul>
+
+<p>Launching a startup? See the <a href="/blog/startup-website-checklist/">startup website checklist</a> for what to launch with first.</p>
 
 <h2>Common myths</h2>
 <h3>"WordPress is only for blogs"</h3>
@@ -1580,6 +1637,8 @@ module.exports = [
   <li>Heavy sliders and videos that make the site slow on mobile</li>
   <li>No phone or WhatsApp visible on mobile</li>
 </ul>
+
+<p>Tour operators and travel agencies can use many of the same ideas; see <a href="/blog/website-for-travel-agencies/">websites for travel agencies</a>.</p>
 
 <h2>Getting started</h2>
 <p>Even a small homestay benefits from a simple, beautiful website with good photos, room details and WhatsApp booking. Larger properties should add a booking engine connected to their channel manager. See what's included in a <a href="/hotel-website-design/">hotel website</a>.</p>
@@ -1684,6 +1743,8 @@ module.exports = [
   <li>Publish helpful articles on savings, subsidies and system sizing</li>
 </ul>
 
+<p>Rental and hire businesses in the power sector have their own needs; see <a href="/blog/equipment-rental-website-guide/">equipment and generator rental websites</a>.</p>
+
 <h2>Running ads?</h2>
 <p>Solar campaigns on Google and Meta work best with dedicated landing pages: one offer, a short quote form, trust signals and WhatsApp. Avoid the common <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes</a> that waste ad budget.</p>
 
@@ -1723,6 +1784,8 @@ module.exports = [
   <li><strong>Launch:</strong> the site goes live on your client's hosting, with handover documentation.</li>
   <li><strong>Ongoing:</strong> optional maintenance and updates, still under your brand.</li>
 </ol>
+
+<p>Smooth projects start with a clean design file; share the <a href="/blog/figma-to-wordpress-designer-guide/">Figma to WordPress handoff guide</a> with your designers.</p>
 
 <h2>Pricing models</h2>
 <ul>
@@ -1973,6 +2036,8 @@ module.exports = [
   <li>WhatsApp or chat for quick questions</li>
 </ul>
 
+<p>Capture interest from visitors who aren't ready yet with a <a href="/blog/lead-magnets-newsletter-small-business/">lead magnet or waitlist</a>.</p>
+
 <h2>Build for iteration</h2>
 <p>Your messaging will change as you learn from customers. Build the site so your team can edit headlines, add landing pages for campaigns and publish articles without a developer. That's where WordPress with a visual builder shines. For campaigns, dedicated <a href="/landing-page-design/">landing pages</a> let you test offers quickly.</p>
 
@@ -2048,6 +2113,8 @@ module.exports = [
 
 <h2>8. Agree on scope</h2>
 <p>List pages, templates (blog post, archive, product), integrations (CRM, newsletter, payments) and who handles content entry. Clear scope means an accurate quote and timeline.</p>
+
+<p>Agencies outsourcing builds should also read <a href="/blog/white-label-wordpress-development-agencies/">how white-label WordPress development works</a>.</p>
 
 <h2>Quick handoff checklist</h2>
 <ol>
@@ -2277,6 +2344,8 @@ module.exports = [
   <li>When the relevant service page is already focused and has a strong call to action</li>
 </ul>
 
+<p>Property marketing is a classic example: each project needs its own campaign page alongside the main site. See the <a href="/blog/real-estate-website-must-have-features/">real estate website must-haves</a>.</p>
+
 <h2>You need both</h2>
 <p>A website builds credibility and long-term search traffic; landing pages turn paid clicks into leads. Many prospects will visit your main site to check you out after seeing a landing page, so keep both consistent in branding and messaging.</p>
 
@@ -2375,6 +2444,8 @@ module.exports = [
 <h3>6. Clean code and accessibility</h3>
 <p>Well-coded themes use proper headings and structure, which helps SEO and makes the site usable for everyone.</p>
 
+<p>Deciding how you'll edit pages? See <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>.</p>
+
 <h2>Free vs premium themes</h2>
 <ul>
   <li><strong>Free versions of reputable themes</strong> (from the official WordPress directory) are often enough for business sites, especially combined with a page builder.</li>
@@ -2390,6 +2461,8 @@ module.exports = [
   <li><strong>Specialist themes:</strong> for directories, magazines or bookings when you need those specific features</li>
 </ul>
 <p>As a real-world example, the <a href="/work/our-temples/">Our Temples</a> site uses a directory theme because hundreds of listings need search and filters, while simpler business sites like <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a> use a minimal theme with Elementor.</p>
+
+<p>Building a listings site? See <a href="/blog/directory-website-wordpress/">how directory websites work on WordPress</a>.</p>
 
 <h2>Mistakes to avoid</h2>
 <ul>
@@ -2507,8 +2580,12 @@ module.exports = [
 <h2>Real example</h2>
 <p>The <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora case study</a> shows these ideas in practice: a clear doctor profile with credentials, pages for each life challenge, a free anxiety self-assessment, and pages for online consultations and structured coaching programs.</p>
 
+<p>Fitness trainers and yoga teachers can apply the same ideas; see <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms and fitness trainers</a>.</p>
+
 <h2>Stay professional</h2>
 <p>Doctors, lawyers, financial advisers and other regulated professionals should keep claims factual, avoid guarantees of results, and check content against their professional body's guidelines.</p>
+
+<p>Lawyers, chartered accountants and consultants have specific needs around practice areas and guidelines; see <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers, CAs and consultants</a>.</p>
 
 <h2>Design tips</h2>
 <ul>
@@ -2570,6 +2647,8 @@ module.exports = [
 
 <h2>Real example</h2>
 <p>The <a href="/work/sahni-power-solutions/">Sahni Power Solutions case study</a> shows this structure: a generator range organised by capacity and type, industry-specific service descriptions, prominent enquiry and callback buttons, an installation gallery, trust indicators and a detailed FAQ.</p>
+
+<p>Solar installers face similar buyers; see the <a href="/blog/solar-company-website-guide/">solar company website guide</a>.</p>
 
 <h2>Local SEO for rental companies</h2>
 <ul>
@@ -2707,6 +2786,8 @@ module.exports = [
     body: `
 <p>Launching an online store is exciting, and a broken checkout on day one is the fastest way to lose that momentum. Run through this checklist before you go live so your first customers have a smooth experience.</p>
 
+<p>Still deciding on a platform? See <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
+
 <h2>Products</h2>
 <ol>
   <li>Every product has a clear title, description, price and good photos</li>
@@ -2789,6 +2870,8 @@ module.exports = [
 </ul>
 <p>Schema doesn't guarantee higher rankings or rich results, but it removes ambiguity, which is always a good foundation.</p>
 
+<p>Structured data is also part of being understood by AI tools; see <a href="/blog/ai-search-optimization-website/">AI search and your website</a>.</p>
+
 <h2>Schema types small businesses should know</h2>
 <table>
   <thead><tr><th>Type</th><th>Use it for</th></tr></thead>
@@ -2870,6 +2953,8 @@ module.exports = [
 
 <h2>Real examples</h2>
 <p>The <a href="/work/our-temples/">Our Temples</a> directory includes Telugu content for regional devotees. Manufacturers targeting export markets often add languages for their key buyer countries; see <a href="/blog/b2b-manufacturer-website-guide/">getting more export enquiries</a>.</p>
+
+<p>Temples, trusts and NGOs often need Hindi or regional versions first; see the <a href="/blog/temple-ngo-website-online-donations/">guide to temple and NGO websites</a>.</p>
 
 <h2>Start small</h2>
 <p>You don't have to translate everything at once. Start with the homepage, key service or product pages and the contact page, then expand based on traffic and enquiries.</p>
@@ -3117,6 +3202,8 @@ module.exports = [
   <li>Do you want training, maintenance or ongoing SEO?</li>
 </ul>
 
+<p>Deciding who to send it to? See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> and the questions to ask before hiring.</p>
+
 <h2>Send it and compare</h2>
 <p>With a brief like this, you'll get quotes you can actually compare, and a developer can often reply within a day. When you're ready, send your brief on WhatsApp or through the form to <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
@@ -3221,6 +3308,8 @@ module.exports = [
 <h3>9. No alternative</h3>
 <p>Some people prefer WhatsApp or a call. Offer both next to the form; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
 
+<p>For more ways to turn visitors into leads, see <a href="/blog/get-more-enquiries-from-your-website/">12 ways to get more enquiries from your website</a>.</p>
+
 <h2>Make sure you never miss a lead</h2>
 <ul>
   <li>Send enquiries to email and a backup channel (WhatsApp or a Google Sheet)</li>
@@ -3275,6 +3364,8 @@ module.exports = [
   <li><strong>Booking or appointments:</strong> for clinics, salons and consultants</li>
   <li><strong>Analytics:</strong> for example Site Kit by Google, or add the tag directly</li>
 </ul>
+
+<p>The same principles apply to themes; see <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
 
 <h2>How to choose a plugin safely</h2>
 <ul>
@@ -3456,6 +3547,8 @@ module.exports = [
   <li>Studio address and a map if clients visit</li>
 </ul>
 
+<p>Many of the same principles apply to any creative portfolio; see <a href="/blog/portfolio-website-freelancers-creatives/">portfolio websites for freelancers and creatives</a>.</p>
+
 <h2>Design and performance</h2>
 <p>Your site should reflect your aesthetic, with generous white space, elegant typography and large imagery, without being slow. Large project photos must be properly compressed and served in modern formats; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
 
@@ -3584,6 +3677,8 @@ module.exports = [
   <li>Google Business Profile with reviews</li>
 </ul>
 
+<p>If you also run accommodation, read <a href="/blog/hotel-website-direct-bookings/">how hotels and homestays get more direct bookings</a>.</p>
+
 <h2>Campaign landing pages</h2>
 <p>Seasonal offers and ads perform best with dedicated landing pages for each package or destination; see <a href="/landing-page-design/">landing page design</a>. For accommodation businesses, see <a href="/hotel-website-design/">hotel website design</a>.</p>
 `,
@@ -3684,8 +3779,12 @@ module.exports = [
   <li>A clear call to action on every page</li>
 </ul>
 
+<p>Interior designers and architects have extra needs, such as project stories and process pages. See <a href="/blog/website-for-interior-designers-architects/">websites for interior designers and architects</a>.</p>
+
 <h2>Photographers: speed matters</h2>
 <p>Image-heavy portfolios can be slow. Use properly sized, compressed images in modern formats, lazy-load galleries and choose good hosting. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>. For client galleries, use password-protected pages or a dedicated gallery tool.</p>
+
+<p>Event and wedding planners face the same challenge with large galleries; see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a>.</p>
 
 <h2>Get found</h2>
 <ul>
