@@ -26,7 +26,9 @@ try {
   const dupes = slugs.filter((s, i) => slugs.indexOf(s) !== i);
   const badRelated = posts.flatMap(p => p.related.filter(s => !pages.includes(s)).map(s => `${p.slug} -> ${s}`));
   const noSummary = posts.filter(p => !summaries[p.slug]).map(p => p.slug);
-  const future = posts.filter(p => p.date > new Date().toISOString().slice(0, 10)).map(p => p.slug);
+  const now = new Date(); // local date (IST), not UTC, so posts written after midnight aren't flagged
+  const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  const future = posts.filter(p => p.date > today).map(p => p.slug);
   if (dupes.length || badRelated.length) throw new Error(`duplicates: ${dupes} | bad related: ${badRelated}`);
   console.log(`${posts.length} posts. Missing takeaways: ${noSummary.length ? noSummary.join(', ') : 'none'}. Future dates: ${future.length ? future.join(', ') : 'none'}.`);
 } catch (e) {

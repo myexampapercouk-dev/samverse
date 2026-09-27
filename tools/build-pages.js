@@ -1090,7 +1090,8 @@ ${[...POSTS].sort((a, b) => b.date.localeCompare(a.date)).map(p => md(p.title, `
 console.log('built llms.txt');
 
 // Keep the sitemap in step with the pages
-const today = new Date().toISOString().slice(0, 10);
+const now = new Date(); // local date (IST), matching post dates
+const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 const urls = [{ loc: `${SITE}/`, pr: '1.0' }, { loc: `${SITE}/solutions/`, pr: '0.9' }, ...PAGES.map(p => ({ loc: `${SITE}/${p.slug}/`, pr: '0.8' })),
   { loc: `${SITE}/blog/`, pr: '0.8' }, ...BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => ({ loc: `${SITE}${topicHref(t)}`, pr: '0.7' })),
   ...POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date })),
