@@ -434,6 +434,14 @@ const renderPost = (post, i) => {
     .map((x, j) => ({ x, s: score(x), j }))
     .sort((a, b) => b.s - a.s || a.j - b.j)
     .slice(0, 3).map(o => o.x);
+
+  // Topic group (for breadcrumb, category link and previous/next navigation)
+  const topic = BLOG_TOPICS.find(t => t.cats.includes(post.category)) || BLOG_TOPICS[0];
+  const inTopic = POSTS.filter(p => topic.cats.includes(p.category) || (topic.id === 'planning' && !knownCats.includes(p.category)));
+  const at = inTopic.indexOf(post);
+  const prev = inTopic.length > 1 ? inTopic[(at - 1 + inTopic.length) % inTopic.length] : null;
+  const next = inTopic.length > 2 ? inTopic[(at + 1) % inTopic.length] : (inTopic.length === 2 ? prev : null);
+
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -448,7 +456,8 @@ const renderPost = (post, i) => {
         '@type': 'BreadcrumbList', itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
           { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE}/blog/` },
-          { '@type': 'ListItem', position: 3, name: post.title, item: url },
+          { '@type': 'ListItem', position: 3, name: topic.name, item: `${SITE}${topicHref(topic)}` },
+          { '@type': 'ListItem', position: 4, name: post.title, item: url },
         ],
       },
     ],
@@ -456,13 +465,6 @@ const renderPost = (post, i) => {
   // Add the brand only when the title stays short enough for Google results
   const base = post.seoTitle || post.title;
   const pageTitle = (base + ' | Samverse').length <= 65 ? base + ' | Samverse' : base;
-
-  // Topic group (for breadcrumb, category link and previous/next navigation)
-  const topic = BLOG_TOPICS.find(t => t.cats.includes(post.category)) || BLOG_TOPICS[0];
-  const inTopic = POSTS.filter(p => topic.cats.includes(p.category) || (topic.id === 'planning' && !knownCats.includes(p.category)));
-  const at = inTopic.indexOf(post);
-  const prev = inTopic.length > 1 ? inTopic[(at - 1 + inTopic.length) % inTopic.length] : null;
-  const next = inTopic.length > 2 ? inTopic[(at + 1) % inTopic.length] : (inTopic.length === 2 ? prev : null);
 
   const waLink = `https://wa.me/${WA}?text=${encodeURIComponent('Hi Sameer, I read your article "' + post.title + '" and need help.')}`;
   const icon = d => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
@@ -507,8 +509,8 @@ ${JSON.stringify(schema, null, 2)}
     <article class="post">
       <header class="post-hero">
         <div class="container post-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/#${topic.id}">${esc(topic.name)}</a></nav>
-          <a class="post-cat" href="/blog/#${topic.id}">${esc(post.category)}</a>
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="${topicHref(topic)}">${esc(topic.name)}</a></nav>
+          <a class="post-cat" href="${topicHref(topic)}">${esc(post.category)}</a>
           <h1>${esc(post.title)}</h1>
           <p class="post-dek">${esc(post.description)}</p>
           <div class="post-byline">
@@ -614,17 +616,29 @@ ${others.map(x => '          ' + postCard(x)).join('\n')}
 const postCard = x => `<a class="post-card" href="/blog/${x.slug}/">${cardImg(x)}<span class="work-tag">${esc(x.category)}</span><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p><span class="post-card-meta">${fmtDate(x.date)} · ${readMins(x.body)} min read</span></a>`;
 
 // Topic groups on /blog/ (each post's `category` maps to one group; unknown categories fall into Guides)
+// Each group also gets its own hub page at /blog/topic/<id>/ (seoTitle and seoDesc are used there)
 const BLOG_TOPICS = [
-  { id: 'planning', name: 'Planning & costs', cats: ['Pricing', 'Guides'], intro: 'What websites cost, how long they take, which platform to choose and how to brief a developer.' },
-  { id: 'seo-growth', name: 'SEO & growth', cats: ['SEO', 'Growth'], intro: 'Get found on Google, turn visitors into enquiries and measure what works.' },
-  { id: 'speed-security', name: 'Speed, security & maintenance', cats: ['Speed', 'Security', 'Maintenance'], intro: 'Keep your WordPress site fast, safe and running smoothly.' },
-  { id: 'ecommerce', name: 'E-commerce', cats: ['E-commerce'], intro: 'Selling online with WooCommerce: payments, platforms and launch checklists.' },
-  { id: 'industries', name: 'Industry guides', cats: ['Industries'], intro: 'What websites need to do for clinics, manufacturers, real estate, hotels, schools and more.' },
-  { id: 'agencies', name: 'For agencies', cats: ['Agencies'], intro: 'White-label WordPress delivery and design handoff for agencies and designers.' },
+  { id: 'planning', name: 'Planning & costs', cats: ['Pricing', 'Guides'], intro: 'What websites cost, how long they take, which platform to choose and how to brief a developer.',
+    seoTitle: 'Website Planning & Cost Guides | Samverse Blog', seoDesc: 'Guides on website costs, timelines, platforms, briefs, domains, hosting, contracts and hiring a developer, written for business owners in India.' },
+  { id: 'seo-growth', name: 'SEO & growth', cats: ['SEO', 'Growth'], intro: 'Get found on Google, turn visitors into enquiries and measure what works.',
+    seoTitle: 'SEO & Website Growth Guides | Samverse Blog', seoDesc: 'Practical guides to ranking on Google, local SEO, analytics, content and turning website visitors into enquiries, for small businesses in India.' },
+  { id: 'speed-security', name: 'Speed, security & maintenance', cats: ['Speed', 'Security', 'Maintenance'], intro: 'Keep your WordPress site fast, safe and running smoothly.',
+    seoTitle: 'WordPress Speed, Security & Maintenance Guides | Samverse', seoDesc: 'How to keep a WordPress site fast, secure and well maintained: caching, Core Web Vitals, updates, PHP, backups, malware clean-up and hosting.' },
+  { id: 'ecommerce', name: 'E-commerce', cats: ['E-commerce'], intro: 'Selling online with WooCommerce: payments, platforms and launch checklists.',
+    seoTitle: 'WooCommerce & E-commerce Guides | Samverse Blog', seoDesc: 'Guides to selling online in India with WooCommerce: payments, GST, shipping, cash on delivery, product pages, SEO and launching a store.' },
+  { id: 'industries', name: 'Industry guides', cats: ['Industries'], intro: 'What websites need to do for clinics, manufacturers, real estate, hotels, schools and more.',
+    seoTitle: 'Website Guides by Industry | Samverse Blog', seoDesc: 'What a website needs to do for clinics, manufacturers, real estate, hotels, schools, salons, retailers and dozens of other Indian businesses.' },
+  { id: 'agencies', name: 'For agencies', cats: ['Agencies'], intro: 'White-label WordPress delivery and design handoff for agencies and designers.',
+    seoTitle: 'WordPress Guides for Agencies & Designers | Samverse Blog', seoDesc: 'White-label WordPress development and Figma-to-WordPress handoff guides for digital agencies, designers and freelancers.' },
 ];
 const knownCats = BLOG_TOPICS.flatMap(t => t.cats);
 const topicPosts = t => POSTS.filter(p => t.cats.includes(p.category) || (t.id === 'planning' && !knownCats.includes(p.category)))
   .sort((a, b) => b.date.localeCompare(a.date));
+const topicHref = t => `/blog/topic/${t.id}/`;
+const TOPIC_PREVIEW = 6; // cards per topic on /blog/; the hub page lists them all
+const topicNav = (current = null) => `        <nav class="topic-nav" aria-label="Blog topics">
+${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => `          <a href="${topicHref(t)}"${t === current ? ' aria-current="page"' : ''}>${esc(t.name)} <span>${topicPosts(t).length}</span></a>`).join('\n')}
+        </nav>`;
 
 const renderBlogIndex = () => {
   const url = `${SITE}/blog/`;
@@ -656,15 +670,77 @@ ${JSON.stringify(schema, null, 2)}
     </section>
     <section class="section" style="padding-top:10px">
       <div class="container">
-        <nav class="topic-nav" aria-label="Blog topics">
-${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => `          <a href="#${t.id}">${esc(t.name)} <span>${topicPosts(t).length}</span></a>`).join('\n')}
-        </nav>
+${topicNav()}
 ${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => `        <section class="topic-group" id="${t.id}">
-          <div class="topic-head"><h2>${esc(t.name)}</h2><p class="muted">${esc(t.intro)}</p></div>
+          <div class="topic-head"><h2><a href="${topicHref(t)}">${esc(t.name)}</a></h2><p class="muted">${esc(t.intro)}</p></div>
           <div class="post-grid">
-${topicPosts(t).map(x => '            ' + postCard(x)).join('\n')}
+${topicPosts(t).slice(0, TOPIC_PREVIEW).map(x => '            ' + postCard(x)).join('\n')}
           </div>
-        </section>`).join('\n')}
+${topicPosts(t).length > TOPIC_PREVIEW ? `          <p class="topic-more"><a href="${topicHref(t)}" class="btn btn-ghost">All ${topicPosts(t).length} articles in ${esc(t.name)} →</a></p>\n` : ''}        </section>`).join('\n')}
+      </div>
+    </section>
+
+    ${contact}
+  </main>
+
+  ${footer}
+
+  ${waFloat}
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
+`;
+};
+
+// Topic hub pages: every article in one group, with a CollectionPage + ItemList for search engines
+const renderTopic = t => {
+  const url = `${SITE}${topicHref(t)}`;
+  const list = topicPosts(t);
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CollectionPage', '@id': `${url}#page`, name: t.name, description: t.seoDesc, url, inLanguage: 'en-IN',
+        isPartOf: { '@type': 'Blog', name: 'Samverse Blog', url: `${SITE}/blog/` },
+        mainEntity: { '@type': 'ItemList', numberOfItems: list.length, itemListElement: list.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/blog/${p.slug}/`, name: p.title })) },
+      },
+      {
+        '@type': 'BreadcrumbList', itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE}/blog/` },
+          { '@type': 'ListItem', position: 3, name: t.name, item: url },
+        ],
+      },
+    ],
+  };
+  return `${headCommon(t.seoTitle, t.seoDesc, url, `  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+${JSON.stringify(schema, null, 2)}
+  </script>
+`)}
+<body>
+
+  <!-- Generated by tools/build-pages.js -->
+  ${header}
+
+  <main>
+    <section class="hero lp-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> ${esc(t.name)}</nav>
+        <div class="lp-hero-copy">
+          <span class="eyebrow">Blog topic · ${list.length} articles</span>
+          <h1>${esc(t.name)}</h1>
+          <p class="lead">${esc(t.seoDesc)}</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:10px">
+      <div class="container">
+${topicNav(t)}
+        <div class="post-grid">
+${list.map(x => '          ' + postCard(x)).join('\n')}
+        </div>
       </div>
     </section>
 
@@ -682,6 +758,12 @@ ${topicPosts(t).map(x => '            ' + postCard(x)).join('\n')}
 };
 
 fs.mkdirSync(path.join(ROOT, 'blog'), { recursive: true });
+BLOG_TOPICS.filter(t => topicPosts(t).length).forEach(t => {
+  const dir = path.join(ROOT, 'blog', 'topic', t.id);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'index.html'), renderTopic(t));
+  console.log('built', topicHref(t));
+});
 POSTS.forEach((post, i) => {
   const dir = path.join(ROOT, 'blog', post.slug);
   fs.mkdirSync(dir, { recursive: true });
@@ -967,6 +1049,9 @@ ${PAGES.filter(p => p.type === 'industry').map(p => md(p.nav, `${SITE}/${p.slug}
 ## Case studies
 ${WORK.map(w => md(w.name, `${SITE}/work/${w.slug}/`, w.summary)).join('\n')}
 
+## Blog topics
+${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => md(t.name, `${SITE}${topicHref(t)}`, t.seoDesc)).join('\n')}
+
 ## Blog
 ${[...POSTS].sort((a, b) => b.date.localeCompare(a.date)).map(p => md(p.title, `${SITE}/blog/${p.slug}/`, p.description)).join('\n')}
 `);
@@ -975,7 +1060,8 @@ console.log('built llms.txt');
 // Keep the sitemap in step with the pages
 const today = new Date().toISOString().slice(0, 10);
 const urls = [{ loc: `${SITE}/`, pr: '1.0' }, { loc: `${SITE}/solutions/`, pr: '0.9' }, ...PAGES.map(p => ({ loc: `${SITE}/${p.slug}/`, pr: '0.8' })),
-  { loc: `${SITE}/blog/`, pr: '0.8' }, ...POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date })),
+  { loc: `${SITE}/blog/`, pr: '0.8' }, ...BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => ({ loc: `${SITE}${topicHref(t)}`, pr: '0.7' })),
+  ...POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date })),
   { loc: `${SITE}/work/`, pr: '0.8' }, ...EXTRA.map(x => ({ loc: `${SITE}/${x.slug}/`, pr: x.priority || '0.8' })), ...WORK.map(w => ({ loc: `${SITE}/work/${w.slug}/`, pr: '0.7' }))];
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
