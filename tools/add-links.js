@@ -312,6 +312,13 @@ const LINKS = [
   ['restaurant-website-online-ordering', '<h2>Common mistakes</h2>', '<p><strong>Real example:</strong> the <a href="/work/southern-flavours/">Southern Flavours case study</a> shows an Indian restaurant site in the UK with table reservations, a menu, a weekend breakfast buffet feature and WooCommerce ordering.</p>\n\n'],
   ['outsource-wordpress-development-india', '<h2>Freelancer or agency?</h2>', '<p><strong>Real example:</strong> I built the website for <a href="/work/southern-flavours/">Southern Flavours</a>, a restaurant in Solihull, UK, working remotely from India.</p>\n\n'],
   ['website-for-hospitals', '<h2>Appointments</h2>', '<p><strong>Real example:</strong> the <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta case study</a> shows a specialist\'s site with a detailed doctor profile, services and diagnostics explained in plain language, and appointment booking.</p>\n\n'],
+  // Round 40: hosting and maintenance
+  ['choose-wordpress-hosting-india', '<h2>How much should you spend?</h2>', '<p>Using Hostinger? See <a href="/blog/hostinger-wordpress-setup-guide/">setting up WordPress on Hostinger</a> and <a href="/blog/hostinger-website-slow-fix/">speeding up a Hostinger site</a>.</p>\n\n'],
+  ['choose-wordpress-hosting-india', '<h2>Warning signs of bad hosting</h2>', '<p>Check renewal prices before you buy; see <a href="/blog/hosting-renewal-price-increase/">why hosting renewals cost more</a>.</p>\n\n'],
+  ['website-maintenance-cost-india', '<h2>What usually costs extra</h2>', '<p>Full breakdown: <a href="/blog/monthly-website-maintenance-plan/">what a monthly maintenance plan should include</a>.</p>\n\n'],
+  ['domain-hosting-ssl-explained', '<h2>Checklist</h2>', '<p>Keep track of every renewal with the <a href="/blog/domain-hosting-renewal-checklist/">domain and hosting renewal checklist</a>.</p>\n\n'],
+  ['business-email-options', '<h2>Website form emails</h2>', '<p>Hosting on Hostinger? See <a href="/blog/hostinger-business-email-setup/">setting up business email on Hostinger</a>.</p>\n\n'],
+  ['why-is-my-wordpress-site-slow', '<h2>When to get help</h2>', '<p>On Hostinger? See <a href="/blog/hostinger-website-slow-fix/">Hostinger-specific speed fixes</a>. Moving hosts? See <a href="/blog/migrate-website-to-hostinger/">migrating to Hostinger</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

@@ -1959,5 +1959,54 @@
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
     <description>Why rankings drop after a hack and how to recover: clean up, remove spam URLs, check for injected noindex, robots and canonical changes, restore lost pages, handle warnings and monitor Search Console.</description>
   </item>
+  <item>
+    <title>How to Set Up a WordPress Website on Hostinger: A Step-by-Step Guide</title>
+    <link>https://samverse.space/blog/hostinger-wordpress-setup-guide/</link>
+    <guid>https://samverse.space/blog/hostinger-wordpress-setup-guide/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A practical guide to setting up a business WordPress site on Hostinger: choosing the right plan, connecting a domain, installing WordPress in hPanel, SSL, email, caching, backups and security basics.</description>
+  </item>
+  <item>
+    <title>WordPress Site Slow on Hostinger? How to Diagnose and Speed It Up</title>
+    <link>https://samverse.space/blog/hostinger-website-slow-fix/</link>
+    <guid>https://samverse.space/blog/hostinger-website-slow-fix/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Why a WordPress site on Hostinger can feel slow and how to fix it: checking resource limits in hPanel, LiteSpeed Cache settings, PHP version, object cache, CDN, images, plugins and when to upgrade.</description>
+  </item>
+  <item>
+    <title>How to Migrate a WordPress Website to Hostinger Without Downtime</title>
+    <link>https://samverse.space/blog/migrate-website-to-hostinger/</link>
+    <guid>https://samverse.space/blog/migrate-website-to-hostinger/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to move a WordPress site to Hostinger: migration options (Hostinger's migration request, plugins, manual), testing before switching DNS, moving email safely, SSL and what to check after the move.</description>
+  </item>
+  <item>
+    <title>Why Your Hosting Renewal Costs So Much More (and What to Do About It)</title>
+    <link>https://samverse.space/blog/hosting-renewal-price-increase/</link>
+    <guid>https://samverse.space/blog/hosting-renewal-price-increase/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Why hosting and domain renewals often cost far more than the first term, how introductory pricing works, add-ons to watch, how to budget, and when to renew, negotiate or move hosts.</description>
+  </item>
+  <item>
+    <title>What a Monthly WordPress Maintenance Plan Should Include</title>
+    <link>https://samverse.space/blog/monthly-website-maintenance-plan/</link>
+    <guid>https://samverse.space/blog/monthly-website-maintenance-plan/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A clear breakdown of monthly WordPress maintenance: updates, backups, security scans, uptime monitoring, speed and form checks, small content changes, renewals tracking and a monthly report.</description>
+  </item>
+  <item>
+    <title>Domain, Hosting, Email and Licence Renewals: A Checklist for Business Owners</title>
+    <link>https://samverse.space/blog/domain-hosting-renewal-checklist/</link>
+    <guid>https://samverse.space/blog/domain-hosting-renewal-checklist/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A yearly renewal checklist for business websites covering domain, hosting, SSL, email, premium themes and plugins, Google Workspace and backups, with tips on auto-renewal, ownership and calendar reminders.</description>
+  </item>
+  <item>
+    <title>How to Set Up Business Email on Hostinger with Your Own Domain</title>
+    <link>https://samverse.space/blog/hostinger-business-email-setup/</link>
+    <guid>https://samverse.space/blog/hostinger-business-email-setup/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to create professional email addresses on Hostinger, choose between Hostinger email, Google Workspace and Zoho, set up MX, SPF, DKIM and DMARC records, connect phones and send website form emails reliably.</description>
+  </item>
 </channel>
 </rss>

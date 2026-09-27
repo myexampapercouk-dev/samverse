@@ -208,6 +208,8 @@ module.exports = [
 
 <p>Serving visitors across regions? A <a href="/blog/what-is-a-cdn/">CDN</a> can help.</p>
 
+<p>On Hostinger? See <a href="/blog/hostinger-website-slow-fix/">Hostinger-specific speed fixes</a>. Moving hosts? See <a href="/blog/migrate-website-to-hostinger/">migrating to Hostinger</a>.</p>
+
 <h2>When to get help</h2>
 <p>If you've tried the basics and your site is still slow, or you're worried about breaking something, a speed optimization expert can audit your site, fix the real bottlenecks and show you a before-and-after report. Always make sure a full backup is taken before any optimization work.</p>
 `,
@@ -848,6 +850,8 @@ module.exports = [
 
 <p>New to all this? Start with <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained simply</a>.</p>
 
+<p>Using Hostinger? See <a href="/blog/hostinger-wordpress-setup-guide/">setting up WordPress on Hostinger</a> and <a href="/blog/hostinger-website-slow-fix/">speeding up a Hostinger site</a>.</p>
+
 <h2>How much should you spend?</h2>
 <ul>
   <li><strong>Small business site:</strong> good shared or entry managed hosting is usually enough.</li>
@@ -855,6 +859,8 @@ module.exports = [
   <li><strong>High-traffic site:</strong> cloud or managed hosting with room to scale.</li>
 </ul>
 <p>The cheapest plan is rarely the cheapest in the end once you count lost visitors, downtime and time spent fixing problems.</p>
+
+<p>Check renewal prices before you buy; see <a href="/blog/hosting-renewal-price-increase/">why hosting renewals cost more</a>.</p>
 
 <h2>Warning signs of bad hosting</h2>
 <ul>
@@ -2419,6 +2425,8 @@ module.exports = [
   <li>An expired SSL certificate causing browser warnings</li>
 </ul>
 
+<p>Keep track of every renewal with the <a href="/blog/domain-hosting-renewal-checklist/">domain and hosting renewal checklist</a>.</p>
+
 <h2>Checklist</h2>
 <ol>
   <li>Domain in your own account, auto-renew on</li>
@@ -2454,6 +2462,8 @@ module.exports = [
   <li><strong>Form and functionality checks:</strong> making sure enquiries still arrive</li>
   <li><strong>Monthly report:</strong> what was done and anything you should know</li>
 </ul>
+
+<p>Full breakdown: <a href="/blog/monthly-website-maintenance-plan/">what a monthly maintenance plan should include</a>.</p>
 
 <h2>What usually costs extra</h2>
 <ul>
@@ -9703,6 +9713,8 @@ module.exports = [
   <li>Set up addresses like info@ and sales@ as aliases or groups</li>
 </ol>
 
+<p>Hosting on Hostinger? See <a href="/blog/hostinger-business-email-setup/">setting up business email on Hostinger</a>.</p>
+
 <h2>Website form emails</h2>
 <p>Your website's contact form should send through an authenticated service so enquiries land in the inbox; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
 
@@ -15941,6 +15953,371 @@ module.exports = [
 
 <h2>Prevent a repeat</h2>
 <p>A second hack sets recovery back. Keep the site updated, protected and monitored; see <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a> and <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'hostinger-wordpress-setup-guide',
+    seoTitle: 'How to Set Up WordPress on Hostinger (Step by Step)',
+    title: 'How to Set Up a WordPress Website on Hostinger: A Step-by-Step Guide',
+    description: 'A practical guide to setting up a business WordPress site on Hostinger: choosing the right plan, connecting a domain, installing WordPress in hPanel, SSL, email, caching, backups and security basics.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-maintenance', 'wordpress-migration'],
+    body: `
+<p>Hostinger is one of the most popular hosting providers for small business websites in India, thanks to affordable plans and a beginner-friendly control panel called hPanel. Here's how to set up a WordPress site on it properly, not just quickly. (This guide isn't sponsored; plan features change, so always check Hostinger's current plans.)</p>
+
+<h2>Step 1: Choose the right product and plan</h2>
+<ul>
+  <li><strong>WordPress or web hosting,</strong> not the Website Builder, if you want a WordPress site you can grow and move later</li>
+  <li><strong>Entry plans</strong> suit a simple brochure site; business sites with more traffic, WooCommerce or several sites benefit from higher plans with more resources, better backups and extra features</li>
+  <li><strong>Check renewal prices,</strong> not just the introductory price; see <a href="/blog/hosting-renewal-price-increase/">hosting renewal price increases</a></li>
+</ul>
+
+<h2>Step 2: Connect your domain</h2>
+<ul>
+  <li><strong>New domain:</strong> some annual plans include a free domain for the first year, so check the renewal cost</li>
+  <li><strong>Existing domain elsewhere:</strong> either point its nameservers to Hostinger, or keep DNS where it is and update the A record</li>
+</ul>
+<p>If you already have business email on the domain, be careful: changing nameservers can break email unless the MX records are recreated. See <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+
+<h2>Step 3: Install WordPress in hPanel</h2>
+<ul>
+  <li>Use hPanel's WordPress installer or onboarding wizard</li>
+  <li>Choose a unique admin username (not "admin") and a strong password</li>
+  <li>Pick the server location closest to your visitors, if your plan offers a choice</li>
+</ul>
+
+<h2>Step 4: Turn on SSL</h2>
+<p>Hostinger provides free SSL certificates. Make sure it's active and that your site loads on https:// with no warnings; see <a href="/blog/ssl-certificate-errors-fix/">fixing SSL errors</a>.</p>
+
+<h2>Step 5: Set up caching</h2>
+<p>Hostinger runs LiteSpeed servers, so the LiteSpeed Cache plugin works with the server's built-in cache. Configure it carefully and test forms and checkout afterwards; see <a href="/blog/wordpress-caching-explained/">caching explained</a>.</p>
+
+<h2>Step 6: Set up business email</h2>
+<p>Create mailboxes like info@yourdomain in hPanel, or use Google Workspace or Zoho; see <a href="/blog/hostinger-business-email-setup/">business email on Hostinger</a>.</p>
+
+<h2>Step 7: Backups and security</h2>
+<ul>
+  <li>Check how often your plan backs up automatically, and keep your own off-site backups too</li>
+  <li>Keep PHP on a current supported version</li>
+  <li>Install only the plugins you need; see <a href="/blog/essential-wordpress-plugins-business/">essential plugins</a></li>
+  <li>Enable two-factor authentication for hPanel and WordPress</li>
+</ul>
+
+<h2>Step 8: Connect Google tools</h2>
+<p>Set up Search Console and Analytics; see <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a>.</p>
+
+<h2>Want it set up for you?</h2>
+<p>I set up and build WordPress sites on Hostinger and other hosts regularly, configured for speed, security and SEO from day one. See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'hostinger-website-slow-fix',
+    seoTitle: 'Hostinger WordPress Site Slow? How to Speed It Up',
+    title: 'WordPress Site Slow on Hostinger? How to Diagnose and Speed It Up',
+    description: 'Why a WordPress site on Hostinger can feel slow and how to fix it: checking resource limits in hPanel, LiteSpeed Cache settings, PHP version, object cache, CDN, images, plugins and when to upgrade.',
+    date: '2026-09-28',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
+    body: `
+<p>Hostinger's servers can run WordPress fast, but many sites on it still load slowly. Usually the cause is the site's setup rather than the host itself. Here's how to find and fix the bottleneck.</p>
+
+<h2>1. Measure first</h2>
+<p>Test key pages with PageSpeed Insights on mobile, and note server response time and the biggest issues; see <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>. If the server responds slowly, focus on hosting and caching. If the server is fast but the page is slow, focus on images, scripts and the theme.</p>
+
+<h2>2. Check resource usage in hPanel</h2>
+<p>hPanel shows CPU, memory and process usage. If you regularly hit your plan's limits, pages slow down or show errors. Causes include heavy plugins, bot traffic, too many sites on one plan, or simply outgrowing an entry-level plan.</p>
+
+<h2>3. Configure LiteSpeed Cache properly</h2>
+<ul>
+  <li>Enable page caching and browser caching</li>
+  <li>Exclude cart, checkout and account pages on WooCommerce (usually automatic, but check)</li>
+  <li>Use CSS and JS optimisation carefully, testing the site after each change</li>
+  <li>Don't run a second caching plugin alongside it</li>
+</ul>
+<p>See <a href="/blog/wordpress-caching-explained/">caching explained</a>.</p>
+
+<h2>4. Update PHP</h2>
+<p>Check your PHP version in hPanel and move to a current supported version after testing; see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a>.</p>
+
+<h2>5. Object caching for dynamic sites</h2>
+<p>WooCommerce stores and membership sites benefit from object caching, which some plans support. It speeds up uncached pages and the dashboard.</p>
+
+<h2>6. Use a CDN</h2>
+<p>A CDN serves images and files from locations close to visitors. Hostinger includes a CDN on some plans, or you can use Cloudflare; see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
+
+<h2>7. Fix the front end</h2>
+<ul>
+  <li>Compress and resize images, and use WebP; see <a href="/blog/image-optimization-wordpress/">image optimisation</a></li>
+  <li>Remove unused plugins, sliders and heavy widgets</li>
+  <li>Limit fonts and third-party scripts</li>
+  <li>Keep page builder pages lean; see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a></li>
+</ul>
+
+<h2>8. Server location</h2>
+<p>If your visitors are in India but the site is hosted far away, every request takes longer. Choose the nearest data centre your plan offers, or use a CDN.</p>
+
+<h2>9. When to upgrade</h2>
+<p>If you've optimised properly and still hit resource limits, upgrading your plan (or moving to a higher tier of hosting) is the right call.</p>
+
+<p>Want it fixed properly? See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+`,
+  },
+  {
+    slug: 'migrate-website-to-hostinger',
+    seoTitle: 'How to Migrate a WordPress Site to Hostinger Safely',
+    title: 'How to Migrate a WordPress Website to Hostinger Without Downtime',
+    description: 'How to move a WordPress site to Hostinger: migration options (Hostinger\'s migration request, plugins, manual), testing before switching DNS, moving email safely, SSL and what to check after the move.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-migration', 'wordpress-maintenance', 'website-redesign'],
+    body: `
+<p>Moving to Hostinger for better pricing, speed or support? A careful migration keeps your website, email and rankings intact. The key is to copy and test everything before switching your domain over.</p>
+
+<h2>Before you start</h2>
+<ul>
+  <li>Take a full backup of files and database from your current host</li>
+  <li>Note your current DNS records, especially email (MX) records</li>
+  <li>Check your old hosting's renewal date so you don't pay for another year unnecessarily, but don't cancel it yet</li>
+  <li>Lower the DNS TTL a day in advance if you manage DNS, so the switch happens faster</li>
+</ul>
+
+<h2>Migration options</h2>
+<table>
+  <thead><tr><th>Method</th><th>Good for</th></tr></thead>
+  <tbody>
+    <tr><td>Hostinger's migration request in hPanel</td><td>Standard WordPress sites; their team or tool moves the site for you</td></tr>
+    <tr><td>Migration plugins (e.g. All-in-One WP Migration, Duplicator)</td><td>Small to medium sites; quick, but large sites may hit size limits</td></tr>
+    <tr><td>Manual (files + database)</td><td>Large or complex sites, or when plugins fail</td></tr>
+  </tbody>
+</table>
+
+<h2>Test before switching the domain</h2>
+<p>Check the migrated site on Hostinger before pointing your domain at it, using a temporary URL or preview, or by editing your computer's hosts file. Test:</p>
+<ul>
+  <li>Every key page and the mobile layout</li>
+  <li>Forms (do emails arrive?)</li>
+  <li>WooCommerce checkout, if applicable</li>
+  <li>Logins and admin area</li>
+</ul>
+
+<h2>Switch the domain</h2>
+<p>Update the nameservers or A record to point to Hostinger. DNS changes can take a few hours to spread.</p>
+
+<h2>Don't break email</h2>
+<p>If your email is hosted with your old provider or with Google Workspace, recreate the MX, SPF and DKIM records exactly at Hostinger before switching nameservers. This is the most common migration mistake. See <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">email deliverability</a>.</p>
+
+<h2>After the move</h2>
+<ul>
+  <li>Activate SSL and check for mixed content warnings</li>
+  <li>Set up LiteSpeed Cache and remove any old host-specific caching plugins</li>
+  <li>Check Search Console for crawl errors</li>
+  <li>Set up backups and monitoring</li>
+  <li>Keep the old hosting for a week or two as a fallback, then cancel</li>
+</ul>
+
+<h2>Moving from another platform?</h2>
+<p>Moving from Wix, Blogger or Shopify is a bigger job; see <a href="/blog/migrate-wix-to-wordpress/">Wix to WordPress</a> and <a href="/blog/migrate-blogger-to-wordpress/">Blogger to WordPress</a>.</p>
+
+<p>Want a hands-off move? See <a href="/wordpress-migration/">WordPress migration</a>.</p>
+`,
+  },
+  {
+    slug: 'hosting-renewal-price-increase',
+    seoTitle: 'Hosting Renewal Price Shock? What to Know and Do',
+    title: 'Why Your Hosting Renewal Costs So Much More (and What to Do About It)',
+    description: 'Why hosting and domain renewals often cost far more than the first term, how introductory pricing works, add-ons to watch, how to budget, and when to renew, negotiate or move hosts.',
+    date: '2026-09-28',
+    category: 'Pricing',
+    related: ['wordpress-maintenance', 'wordpress-migration', 'hire-wordpress-developer'],
+    body: `
+<p>You bought hosting at an attractive price, and two or three years later the renewal invoice is much higher. This is common across popular hosting companies, including big names used by Indian businesses. It isn't usually a scam, but it catches many owners by surprise.</p>
+
+<h2>How introductory pricing works</h2>
+<ul>
+  <li>The advertised low monthly price usually applies only to the first term</li>
+  <li>The lowest price often requires paying for several years upfront</li>
+  <li>Renewal is at the regular price, which can be several times the introductory rate</li>
+  <li>A "free domain" is typically free for the first year only</li>
+</ul>
+
+<h2>Add-ons that increase the bill</h2>
+<ul>
+  <li>Domain privacy, backups, security scanners and SSL upgrades added at checkout</li>
+  <li>Email plans billed separately</li>
+  <li>Auto-renewal of add-ons you don't use</li>
+</ul>
+<p>Review your account and remove what you don't need before renewal.</p>
+
+<h2>How to budget properly</h2>
+<p>Look up the renewal price before you buy, and compare the total cost over three to five years, not just the first term. Include domain, email and any premium plugins. See <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a>.</p>
+
+<h2>Your options at renewal</h2>
+<ul>
+  <li><strong>Renew for a longer term</strong> if you're happy with the service; longer terms usually cost less per month</li>
+  <li><strong>Ask for a discount:</strong> some hosts offer retention deals if you contact them</li>
+  <li><strong>Move to another host:</strong> new-customer pricing elsewhere may be cheaper, but factor in migration effort and the next renewal</li>
+  <li><strong>Downgrade</strong> if you're paying for resources you don't use</li>
+</ul>
+
+<h2>Is moving worth it?</h2>
+<p>Switching hosts every few years just for introductory pricing can work, but each migration carries some risk and effort. For a business site, reliability, speed and support often matter more than saving a small amount. See <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting</a> and <a href="/blog/migrate-website-to-hostinger/">migrating safely</a>.</p>
+
+<h2>Don't let it lapse</h2>
+<p>Whatever you decide, don't let hosting or domain expire while you think about it. An expired account takes your site and email offline. Keep a <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'monthly-website-maintenance-plan',
+    seoTitle: 'What a Monthly Website Maintenance Plan Includes',
+    title: 'What a Monthly WordPress Maintenance Plan Should Include',
+    description: 'A clear breakdown of monthly WordPress maintenance: updates, backups, security scans, uptime monitoring, speed and form checks, small content changes, renewals tracking and a monthly report.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
+    body: `
+<p>A website isn't "done" at launch. WordPress, plugins and themes need regular updates, backups need checking, and small problems need catching before they cost you enquiries. A monthly maintenance plan handles this for a predictable fee. Here's what a good one should include, so you can compare plans properly.</p>
+
+<h2>Core tasks every month</h2>
+<table>
+  <thead><tr><th>Task</th><th>Why it matters</th></tr></thead>
+  <tbody>
+    <tr><td>WordPress, plugin and theme updates (tested)</td><td>Security fixes and compatibility</td></tr>
+    <tr><td>Automatic off-site backups, with restore tested</td><td>Recovery from hacks, mistakes or server failures</td></tr>
+    <tr><td>Security scans and firewall</td><td>Catch infections early</td></tr>
+    <tr><td>Uptime monitoring</td><td>Know about downtime before customers do</td></tr>
+    <tr><td>Contact form and checkout tests</td><td>Make sure enquiries and orders arrive</td></tr>
+    <tr><td>Speed check</td><td>Spot slowdowns after updates or new content</td></tr>
+    <tr><td>Broken link check</td><td>Keep visitors and Google happy</td></tr>
+    <tr><td>Search Console review</td><td>Catch indexing problems and security alerts</td></tr>
+  </tbody>
+</table>
+
+<h2>Content changes</h2>
+<p>Many plans include a set amount of time each month for small changes like updating prices, adding photos, changing team details or publishing a blog post. Check how much time is included and what happens to unused time.</p>
+
+<h2>Renewals tracking</h2>
+<p>Domain, hosting, SSL and premium licence renewals, tracked so nothing expires unexpectedly; see the <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a>.</p>
+
+<h2>A monthly report</h2>
+<p>A short report showing updates done, backups, uptime, security status, speed and any issues fixed. It shows the work is actually happening.</p>
+
+<h2>Emergency support</h2>
+<p>What happens if the site goes down or gets hacked? A good plan includes priority response and, ideally, malware clean-up; see <a href="/blog/remove-malware-wordpress-step-by-step/">malware removal</a>.</p>
+
+<h2>Usually extra</h2>
+<ul>
+  <li>New pages, features or redesigns</li>
+  <li>Large content projects</li>
+  <li>Ongoing SEO campaigns</li>
+  <li>Hosting fees (unless the plan includes hosting)</li>
+</ul>
+<p>See <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></p>
+
+<h2>What it costs</h2>
+<p>Costs depend on the site's size and complexity, and whether it's a store; see <a href="/blog/website-maintenance-cost-india/">website maintenance costs in India</a>.</p>
+
+<h2>DIY or a plan?</h2>
+<p>You can do basic maintenance yourself with the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>. If the site brings business and your time is valuable, a plan is usually worth it. See my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+`,
+  },
+  {
+    slug: 'domain-hosting-renewal-checklist',
+    seoTitle: 'Domain, Hosting & SSL Renewal Checklist for Businesses',
+    title: 'Domain, Hosting, Email and Licence Renewals: A Checklist for Business Owners',
+    description: 'A yearly renewal checklist for business websites covering domain, hosting, SSL, email, premium themes and plugins, Google Workspace and backups, with tips on auto-renewal, ownership and calendar reminders.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-migration'],
+    body: `
+<p>A website depends on several things you pay for separately, each renewing on its own date. Miss one and your site, email or updates can stop working. This checklist keeps everything in one place.</p>
+
+<h2>What renews, and what happens if it lapses</h2>
+<table>
+  <thead><tr><th>Item</th><th>If it lapses</th></tr></thead>
+  <tbody>
+    <tr><td>Domain name</td><td>Website and email go offline; eventually someone else can register it</td></tr>
+    <tr><td>Hosting</td><td>Website goes offline; files may be deleted after a grace period</td></tr>
+    <tr><td>SSL certificate</td><td>Browser security warnings (free certificates usually auto-renew)</td></tr>
+    <tr><td>Business email</td><td>Email stops, and messages may be lost</td></tr>
+    <tr><td>Premium theme and plugin licences</td><td>No updates or support, a security risk over time</td></tr>
+    <tr><td>CDN, backup or security services</td><td>Protection or backups stop quietly</td></tr>
+  </tbody>
+</table>
+
+<h2>The checklist</h2>
+<ol>
+  <li>List every service, its provider, login email, renewal date and cost</li>
+  <li>Turn on auto-renew for the domain and hosting</li>
+  <li>Make sure the payment method on file won't expire before renewal</li>
+  <li>Use an email you check as the account and domain contact</li>
+  <li>Add renewal dates to your calendar with a reminder a month before</li>
+  <li>Check renewal prices ahead of time; see <a href="/blog/hosting-renewal-price-increase/">hosting renewal price increases</a></li>
+  <li>Remove add-ons you don't use</li>
+  <li>Confirm everything is in your business's name; see the <a href="/blog/website-ownership-checklist/">ownership checklist</a></li>
+</ol>
+
+<h2>Watch out for fake renewal notices</h2>
+<p>Scam emails and letters imitate domain renewal notices. Only renew through your actual provider's dashboard; see <a href="/blog/domain-seo-scam-emails/">domain and SEO scams</a>.</p>
+
+<h2>If something has already expired</h2>
+<p>Act immediately. There's usually a grace period; see <a href="/blog/domain-expired-what-to-do/">what to do when a domain expires</a> and <a href="/blog/website-down-what-to-do/">website down checklist</a>.</p>
+
+<h2>Let someone track it for you</h2>
+<p>Renewals tracking is part of a good <a href="/blog/monthly-website-maintenance-plan/">monthly maintenance plan</a>.</p>
+`,
+  },
+  {
+    slug: 'hostinger-business-email-setup',
+    seoTitle: 'Set Up Business Email on Hostinger (With Your Domain)',
+    title: 'How to Set Up Business Email on Hostinger with Your Own Domain',
+    description: 'How to create professional email addresses on Hostinger, choose between Hostinger email, Google Workspace and Zoho, set up MX, SPF, DKIM and DMARC records, connect phones and send website form emails reliably.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-maintenance', 'website-for-startups'],
+    body: `
+<p>An address like info@yourbusiness.com looks far more professional than a Gmail address, and it builds trust with customers. If your website is on Hostinger, you can set up business email in a few steps. Getting the DNS records right is what makes sure your emails actually arrive.</p>
+
+<h2>Choose your email provider</h2>
+<table>
+  <thead><tr><th>Option</th><th>Good for</th></tr></thead>
+  <tbody>
+    <tr><td>Hostinger email</td><td>Budget-friendly, simple mailboxes managed in hPanel</td></tr>
+    <tr><td>Google Workspace</td><td>Teams that want the Gmail interface, Drive, Meet and strong spam filtering</td></tr>
+    <tr><td>Zoho Mail</td><td>Cost-effective business email with good features</td></tr>
+  </tbody>
+</table>
+<p>See <a href="/blog/business-email-options/">business email options compared</a>.</p>
+
+<h2>Setting up Hostinger email</h2>
+<ol>
+  <li>In hPanel, open the Emails section and choose your domain</li>
+  <li>Create mailboxes such as info@, sales@ or your name</li>
+  <li>If your domain uses Hostinger's nameservers, the required DNS records are often added automatically; otherwise add them where your DNS is managed</li>
+  <li>Log in through webmail, or connect the mailbox to your phone and computer's mail apps</li>
+</ol>
+
+<h2>The DNS records that matter</h2>
+<ul>
+  <li><strong>MX:</strong> tells the internet where to deliver your email</li>
+  <li><strong>SPF:</strong> lists who is allowed to send email for your domain</li>
+  <li><strong>DKIM:</strong> adds a signature proving emails are genuine</li>
+  <li><strong>DMARC:</strong> tells receivers what to do with emails that fail checks</li>
+</ul>
+<p>Without SPF and DKIM, your emails are more likely to land in spam; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
+
+<h2>Website form emails</h2>
+<p>Configure WordPress to send form notifications through an authenticated mailbox (SMTP) instead of the server's default mail, so enquiries reliably reach your inbox; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+
+<h2>Careful when changing hosts or nameservers</h2>
+<p>Moving your website or DNS can break email if MX and other records aren't recreated. Always note your email records before making changes; see <a href="/blog/migrate-website-to-hostinger/">migrating to Hostinger</a>.</p>
+
+<h2>Good habits</h2>
+<ul>
+  <li>Strong, unique passwords for every mailbox</li>
+  <li>Shared addresses (info@, sales@) forwarded to the right people rather than shared logins</li>
+  <li>Remove mailboxes for people who leave</li>
+</ul>
 `,
   },
 ];
