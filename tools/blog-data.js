@@ -7,7 +7,7 @@ module.exports = [
     slug: 'wordpress-website-cost-india',
     title: 'How Much Does a WordPress Website Cost in India? (2026 Guide)',
     description: 'A clear breakdown of WordPress website costs in India: domain, hosting, design, development, plugins and maintenance, with typical price ranges for each type of site.',
-    date: '2026-09-28',
+    date: '2026-09-27',
     category: 'Pricing',
     related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
@@ -78,7 +78,7 @@ module.exports = [
     slug: 'wordpress-vs-wix-vs-shopify',
     title: 'WordPress vs Wix vs Shopify: Which Is Best for Your Business?',
     description: 'An honest comparison of WordPress, Wix and Shopify for small businesses: cost, flexibility, SEO, ownership and ease of use, and which one to choose for your needs.',
-    date: '2026-09-28',
+    date: '2026-09-27',
     category: 'Guides',
     related: ['website-redesign', 'woocommerce-developer', 'wordpress-migration'],
     body: `
@@ -135,7 +135,7 @@ module.exports = [
     slug: 'why-is-my-wordpress-site-slow',
     title: 'Why Is My WordPress Site Slow? 9 Common Causes and Fixes',
     description: 'Is your WordPress website slow? Learn the 9 most common causes, from heavy images and too many plugins to cheap hosting, and how to fix each one to speed up your site.',
-    date: '2026-09-28',
+    date: '2026-09-27',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'elementor-developer'],
     body: `
@@ -198,7 +198,7 @@ module.exports = [
     slug: 'signs-wordpress-site-hacked',
     title: '8 Signs Your WordPress Site Has Been Hacked (and What to Do)',
     description: 'Spam redirects, Google warnings, unknown admin users? Learn the 8 warning signs of a hacked WordPress website and the exact steps to take to clean and protect it.',
-    date: '2026-09-28',
+    date: '2026-09-27',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -262,7 +262,7 @@ module.exports = [
     seoTitle: "Clinic Website Checklist: 15 Must-Haves for Doctors",
     title: 'Clinic Website Checklist: 15 Things Every Doctor\'s Website Needs',
     description: 'Planning a website for your clinic or practice? Use this 15-point checklist to build a doctor\'s website that earns patient trust, ranks locally and brings appointment enquiries.',
-    date: '2026-09-28',
+    date: '2026-09-27',
     category: 'Industries',
     related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -321,7 +321,7 @@ module.exports = [
     seoTitle: "Freelancer vs Agency: How to Hire a Web Developer",
     title: 'Hiring a Web Developer: Freelancer vs Agency (and 10 Questions to Ask)',
     description: 'Should you hire a freelance web developer or an agency? Compare cost, communication and risk, and use these 10 questions to choose the right developer for your website.',
-    date: '2026-09-28',
+    date: '2026-09-27',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
     body: `
@@ -387,7 +387,7 @@ module.exports = [
     seoTitle: "WooCommerce vs Shopify in India: Which Is Better?",
     title: 'WooCommerce vs Shopify in India: Which Is Better for Your Online Store?',
     description: 'Compare WooCommerce and Shopify for Indian online stores: costs, payment gateways like Razorpay, fees, flexibility, SEO and ownership, to choose the right platform.',
-    date: '2026-09-28',
+    date: '2026-09-27',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-restaurants', 'wordpress-speed-optimization'],
     body: `
@@ -443,7 +443,7 @@ module.exports = [
     seoTitle: "WordPress Maintenance Checklist (Weekly to Yearly)",
     title: 'WordPress Maintenance Checklist: What to Do Weekly, Monthly and Yearly',
     description: 'A practical WordPress maintenance checklist covering updates, backups, security, speed and SEO tasks to do weekly, monthly and yearly to keep your website healthy.',
-    date: '2026-09-28',
+    date: '2026-09-27',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
@@ -502,7 +502,7 @@ module.exports = [
     slug: 'get-more-enquiries-from-your-website',
     title: '12 Ways to Get More Enquiries From Your Business Website',
     description: 'Getting visitors but few calls? 12 practical ways to turn more website visitors into enquiries, from clear headlines and WhatsApp buttons to speed, trust signals and forms.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Growth',
     related: ['website-redesign', 'landing-page-design', 'wordpress-speed-optimization'],
     body: `
@@ -548,7 +548,7 @@ module.exports = [
     slug: 'local-seo-guide-small-business-india',
     title: 'Local SEO for Small Businesses in India: A Step-by-Step Guide',
     description: 'How to show up in Google Maps and "near me" searches: a step-by-step local SEO guide for Indian small businesses covering Google Business Profile, reviews, citations and your website.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
     body: `
@@ -608,7 +608,7 @@ module.exports = [
     seoTitle: "How Manufacturers Get More B2B Enquiries Online",
     title: 'How Manufacturers Can Get More B2B and Export Enquiries From Their Website',
     description: 'A practical guide for Indian manufacturers and industrial suppliers: what buyers look for, how to structure product catalogues, and how to turn your website into an enquiry machine.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -674,7 +674,7 @@ module.exports = [
     seoTitle: "Elementor vs Gutenberg: Which Should You Use?",
     title: 'Elementor vs Gutenberg: Which WordPress Builder Should You Use?',
     description: 'Elementor or the Gutenberg block editor? Compare ease of use, design flexibility, speed and cost to decide which WordPress page builder is right for your website.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Guides',
     related: ['elementor-developer', 'figma-to-wordpress', 'wordpress-speed-optimization'],
     body: `
@@ -721,7 +721,7 @@ module.exports = [
     seoTitle: "How to Choose WordPress Hosting in India",
     title: 'How to Choose WordPress Hosting in India (Without Getting Burned)',
     description: 'What to look for in WordPress hosting in India: server location, speed, support, backups, renewal prices and security, plus shared vs managed vs cloud hosting explained.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-speed-optimization', 'wordpress-maintenance'],
     body: `
@@ -771,7 +771,7 @@ module.exports = [
     seoTitle: "10 Landing Page Mistakes That Waste Ad Budget",
     title: '10 Landing Page Mistakes That Waste Your Google & Facebook Ad Budget',
     description: 'Paying for ad clicks that don\'t convert? Avoid these 10 common landing page mistakes, from slow loading and weak headlines to too many choices and missing tracking.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-speed-optimization', 'real-estate-website-design'],
     body: `
@@ -824,7 +824,7 @@ module.exports = [
     seoTitle: "How Long Does It Take to Build a WordPress Site?",
     title: 'How Long Does It Take to Build a WordPress Website? (Realistic Timelines)',
     description: 'Realistic timelines for building a WordPress website, from landing pages to business sites and WooCommerce stores, plus what speeds projects up or slows them down.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Guides',
     related: ['wordpress-website-development', 'woocommerce-developer', 'landing-page-design'],
     body: `
@@ -885,7 +885,7 @@ module.exports = [
     slug: 'redesign-website-without-losing-rankings',
     title: 'How to Redesign Your Website Without Losing Google Rankings',
     description: 'Redesigning or moving your website? Follow this SEO checklist, covering URL mapping, 301 redirects, metadata, staging and post-launch checks, to keep your Google rankings and traffic.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'SEO',
     related: ['website-redesign', 'wordpress-migration', 'wordpress-seo-services'],
     body: `
@@ -946,7 +946,7 @@ module.exports = [
     seoTitle: "Accept Online Payments on WordPress in India",
     title: 'How to Accept Online Payments on a WordPress Website in India (UPI, Cards, COD)',
     description: 'A practical guide to accepting payments on WordPress in India: Razorpay, PayU, Cashfree, PhonePe and UPI, WooCommerce setup, payment links, COD, fees and KYC requirements.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-schools-and-coaching', 'website-for-temples-and-ngos'],
     body: `
@@ -1004,7 +1004,7 @@ module.exports = [
     slug: 'signs-you-need-a-new-website',
     title: '10 Signs Your Business Needs a New Website',
     description: 'Is your website costing you customers? 10 clear signs it\'s time for a new or redesigned website, from poor mobile experience and slow speed to outdated design and no enquiries.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Growth',
     related: ['website-redesign', 'wordpress-speed-optimization', 'wordpress-migration'],
     body: `
@@ -1056,7 +1056,7 @@ module.exports = [
     seoTitle: 'WordPress Security Checklist for Small Businesses',
     title: 'WordPress Security Checklist for Small Business Websites (20 Steps)',
     description: 'A practical 20-step WordPress security checklist for small businesses: updates, passwords, 2FA, backups, firewalls, hosting and user roles, to keep your site safe from hackers.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -1113,7 +1113,7 @@ module.exports = [
     slug: 'core-web-vitals-explained',
     title: 'Core Web Vitals Explained for Business Owners (LCP, INP, CLS)',
     description: 'What are Core Web Vitals, why do they matter for Google and your customers, and how can you improve LCP, INP and CLS on a WordPress website? A plain-English guide.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -1176,7 +1176,7 @@ module.exports = [
     seoTitle: 'Set Up Google Analytics 4 & Search Console (Guide)',
     title: 'How to Set Up Google Analytics 4 and Search Console for Your Business Website',
     description: 'Step-by-step: set up Google Analytics 4 and Google Search Console for your website, verify ownership, submit your sitemap and track enquiries, calls and WhatsApp clicks.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
     body: `
@@ -1241,7 +1241,7 @@ module.exports = [
     slug: 'migrate-wix-to-wordpress',
     title: 'How to Move From Wix to WordPress (Without Losing Traffic)',
     description: 'Thinking of moving from Wix to WordPress? Why businesses switch, what can and can\'t be migrated, the step-by-step process, and how to keep your Google rankings.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Guides',
     related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -1295,7 +1295,7 @@ module.exports = [
     seoTitle: 'Google Business Profile Checklist for Service Businesses',
     title: 'Google Business Profile Optimization Checklist for Service Businesses',
     description: 'A complete Google Business Profile checklist: categories, services, photos, reviews, posts, Q&A and website links, to help your business appear in Google Maps and local results.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
     body: `
@@ -1359,7 +1359,7 @@ module.exports = [
     seoTitle: 'How to Write Content for Your Business Website',
     title: 'How to Write Content for Your Business Website (Homepage, About and Services)',
     description: 'A simple guide to writing website content that brings enquiries: what to put on your homepage, about page and service pages, plus headlines, calls to action and SEO basics.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -1427,7 +1427,7 @@ module.exports = [
     slug: 'website-design-mistakes',
     title: '15 Website Design Mistakes That Cost Small Businesses Customers',
     description: 'Avoid these 15 common website design mistakes, from cluttered layouts and tiny text to hidden contact details and slow pages, that quietly drive potential customers away.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Growth',
     related: ['website-redesign', 'wordpress-website-development', 'landing-page-design'],
     body: `
@@ -1478,7 +1478,7 @@ module.exports = [
     slug: 'wordpress-vs-custom-coded-website',
     title: 'WordPress vs Custom-Coded Website: Which Is Right for Your Business?',
     description: 'Should you build on WordPress or get a custom-coded website? Compare cost, speed, flexibility, maintenance, SEO and ease of editing to choose the right approach.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Guides',
     related: ['wordpress-website-development', 'hire-wordpress-developer', 'website-for-startups'],
     body: `
@@ -1532,7 +1532,7 @@ module.exports = [
     seoTitle: 'Hotel & Homestay Websites: How to Get Direct Bookings',
     title: 'Hotel and Homestay Websites: How to Get More Direct Bookings',
     description: 'How hotels, resorts and homestays can win more direct bookings from their own website, from photos, room pages and booking engines to WhatsApp, reviews and local SEO.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Industries',
     related: ['hotel-website-design', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -1590,7 +1590,7 @@ module.exports = [
     seoTitle: 'Websites for Lawyers & CAs: What Clients Look For',
     title: 'Websites for Lawyers, CAs and Consultants: What Clients Look For',
     description: 'How lawyers, chartered accountants and consultants can use their website to build credibility and win clients: profiles, practice areas, articles, consultations and local SEO.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Industries',
     related: ['website-for-lawyers-and-consultants', 'wordpress-seo-services', 'wordpress-website-development'],
     body: `
@@ -1642,7 +1642,7 @@ module.exports = [
     seoTitle: 'Solar Company Website: Turn Visitors Into Quote Requests',
     title: 'Solar Company Website Guide: Turning Visitors Into Quote Requests',
     description: 'How solar installers and power companies can turn website visitors into quote requests: savings information, subsidy pages, project galleries, quote forms and local SEO.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Industries',
     related: ['website-for-solar-and-power-companies', 'landing-page-design', 'wordpress-seo-services'],
     body: `
@@ -1696,7 +1696,7 @@ module.exports = [
     seoTitle: 'White-Label WordPress Development: A Guide for Agencies',
     title: 'White-Label WordPress Development: How Agencies Scale Without Hiring',
     description: 'How digital and design agencies use white-label WordPress developers to take on more projects: how it works, pricing models, NDAs, quality control and choosing a partner.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Agencies',
     related: ['wordpress-developer-for-agencies', 'figma-to-wordpress', 'elementor-developer'],
     body: `
@@ -1759,7 +1759,7 @@ module.exports = [
     seoTitle: 'Real Estate Website: 14 Must-Have Features',
     title: 'Real Estate Website Must-Haves: 14 Features That Generate Site Visits',
     description: 'The 14 features every builder, developer and property agent website needs to turn visitors into site visits: project pages, floor plans, brochures, RERA details and fast lead forms.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Industries',
     related: ['real-estate-website-design', 'landing-page-design', 'wordpress-seo-services'],
     body: `
@@ -1819,7 +1819,7 @@ module.exports = [
     seoTitle: 'School & Coaching Websites: What Parents Look For',
     title: 'School and Coaching Institute Websites: What Parents and Students Look For',
     description: 'What parents and students look for on school, college and coaching institute websites, and the pages and features that turn visitors into admission enquiries.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Industries',
     related: ['website-for-schools-and-coaching', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -1877,7 +1877,7 @@ module.exports = [
     seoTitle: 'Temple & NGO Websites: Online Donations Guide',
     title: 'Temple, Trust and NGO Websites: A Guide to Online Donations and Engagement',
     description: 'How temples, religious trusts and NGOs can use their website to accept online donations, share events and timings, recruit volunteers and build trust with supporters.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Industries',
     related: ['website-for-temples-and-ngos', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
@@ -1931,7 +1931,7 @@ module.exports = [
     seoTitle: 'Startup Website Checklist: Launch Fast & Convert',
     title: 'Startup Website Checklist: What to Launch With (and What Can Wait)',
     description: 'A practical startup website checklist: the pages, messaging, analytics and integrations you need at launch, what can wait, and how to launch fast without wasting runway.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Growth',
     related: ['website-for-startups', 'landing-page-design', 'wordpress-website-development'],
     body: `
@@ -1997,7 +1997,7 @@ module.exports = [
     seoTitle: 'Figma to WordPress: What Designers Should Prepare',
     title: 'Figma to WordPress: What Designers Should Prepare for a Smooth Handoff',
     description: 'A handoff checklist for designers and agencies converting Figma designs to WordPress: styles, components, responsive frames, assets, content and interactions, for pixel-accurate builds.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Agencies',
     related: ['figma-to-wordpress', 'elementor-developer', 'wordpress-developer-for-agencies'],
     body: `
@@ -2067,7 +2067,7 @@ module.exports = [
     seoTitle: 'Product Catalogue Websites for Industrial Companies',
     title: 'How to Build a Product Catalogue Website for an Industrial Company',
     description: 'How industrial companies and manufacturers should structure product catalogue websites: categories, specifications, datasheets, request-a-quote flows and SEO for product searches.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
     body: `
@@ -2126,7 +2126,7 @@ module.exports = [
     seoTitle: 'Domain, Hosting & SSL Explained for Business Owners',
     title: 'Domain, Hosting and SSL Explained Simply for Business Owners',
     description: 'What\'s the difference between a domain, hosting and an SSL certificate? A plain-English explanation for business owners, with costs, renewals and common mistakes to avoid.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-website-development', 'wordpress-maintenance'],
     body: `
@@ -2193,7 +2193,7 @@ module.exports = [
     seoTitle: 'Website Maintenance Cost in India: What\'s Included',
     title: 'Website Maintenance Cost in India: What You Pay For and What\'s Included',
     description: 'How much does website maintenance cost in India, and what should a WordPress maintenance plan include? Typical ranges, what\'s covered, what\'s extra and how to choose a plan.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Pricing',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
@@ -2245,7 +2245,7 @@ module.exports = [
     slug: 'landing-page-vs-website',
     title: 'Landing Page vs Website: Which Do You Need for Your Ads?',
     description: 'Should you send ad traffic to your website or a landing page? The difference, when each works best, and how businesses use both together to get more leads for the same budget.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development', 'real-estate-website-design'],
     body: `
@@ -2297,7 +2297,7 @@ module.exports = [
     seoTitle: 'How to Get Your Website Indexed on Google Faster',
     title: 'How to Get Your New Website Indexed on Google Faster',
     description: 'New website not showing on Google? How indexing works and practical steps to get pages indexed faster: Search Console, sitemaps, internal links, quality content and common blockers.',
-    date: '2026-09-29',
+    date: '2026-09-27',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
@@ -2345,6 +2345,355 @@ module.exports = [
 <p>Some pages are indexed within days; others take weeks, especially on brand-new domains with few links. Keep publishing useful content, building internal links and earning mentions, and indexing speeds up over time.</p>
 
 <p>If pages stay unindexed, a technical <a href="/wordpress-seo-services/">WordPress SEO</a> review usually finds the cause quickly.</p>
+`,
+  },
+  {
+    slug: 'how-to-choose-wordpress-theme',
+    seoTitle: 'How to Choose a WordPress Theme for a Business Site',
+    title: 'How to Choose a WordPress Theme for Your Business Website',
+    description: 'How to choose the right WordPress theme for a business site: speed, page builder compatibility, support, updates and flexibility, plus the mistakes that make sites slow and hard to change.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'elementor-developer', 'wordpress-speed-optimization'],
+    body: `
+<p>Your theme controls how your WordPress site looks and a lot of how it performs. Choose well and your site stays fast, flexible and easy to update for years. Choose badly and you're stuck with a slow, bloated site that's painful to change. Here's how to pick the right one.</p>
+
+<h2>What a theme does (and doesn't do)</h2>
+<p>A theme provides the design framework: layouts, typography, headers, footers and styling. Features like contact forms, SEO and security should come from plugins, not the theme. Themes that bundle dozens of features lock you in, and switching later can break your site.</p>
+
+<h2>6 things to check before choosing</h2>
+<h3>1. Speed</h3>
+<p>Lightweight themes load only what they need. Check the theme demo on PageSpeed Insights, and be wary of themes that load huge sliders, animations and multiple font libraries by default. Speed affects both visitors and rankings; see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+<h3>2. Page builder compatibility</h3>
+<p>If you'll use Elementor, choose a theme designed to work with it, such as Hello Elementor or Astra, so the builder controls layouts without fighting the theme's styles.</p>
+<h3>3. Regular updates and support</h3>
+<p>Look at when the theme was last updated and how many active installs it has. Abandoned themes become security risks and break with new WordPress versions.</p>
+<h3>4. Flexibility without bloat</h3>
+<p>Global colour and typography settings, header and footer builders, and good WooCommerce support (if you sell online) matter more than hundreds of demo designs.</p>
+<h3>5. Mobile design</h3>
+<p>Test the demo on your phone. Menus, buttons and text should work perfectly on small screens.</p>
+<h3>6. Clean code and accessibility</h3>
+<p>Well-coded themes use proper headings and structure, which helps SEO and makes the site usable for everyone.</p>
+
+<h2>Free vs premium themes</h2>
+<ul>
+  <li><strong>Free versions of reputable themes</strong> (from the official WordPress directory) are often enough for business sites, especially combined with a page builder.</li>
+  <li><strong>Premium themes</strong> add support and extra features. Buy only from the official developer or reputable marketplaces.</li>
+  <li><strong>Never use "nulled" (pirated) themes.</strong> They frequently contain malware. See the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</li>
+</ul>
+
+<h2>Popular choices for business sites</h2>
+<ul>
+  <li><strong>Hello Elementor:</strong> a minimal base theme when Elementor handles all design</li>
+  <li><strong>Astra:</strong> lightweight, flexible, strong WooCommerce support</li>
+  <li><strong>Block themes:</strong> modern themes designed for the WordPress block editor, great for speed</li>
+  <li><strong>Specialist themes:</strong> for directories, magazines or bookings when you need those specific features</li>
+</ul>
+<p>As a real-world example, the <a href="/work/our-temples/">Our Temples</a> site uses a directory theme because hundreds of listings need search and filters, while simpler business sites like <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a> use a minimal theme with Elementor.</p>
+
+<h2>Mistakes to avoid</h2>
+<ul>
+  <li>Choosing a theme only because its demo looks impressive</li>
+  <li>Multipurpose themes that load every feature on every page</li>
+  <li>Relying on theme-specific shortcodes that disappear if you switch</li>
+  <li>Editing the theme's files directly instead of using a child theme</li>
+</ul>
+
+<h2>The simple rule</h2>
+<p>Choose the lightest, best-supported theme that works with how you want to edit your site, and add features with well-maintained plugins. If you'd rather not decide alone, a <a href="/wordpress-website-development/">WordPress developer</a> can recommend the right setup for your goals and budget.</p>
+`,
+  },
+  {
+    slug: 'restaurant-website-online-ordering',
+    seoTitle: 'Restaurant Website Must-Haves & Online Ordering Options',
+    title: 'Restaurant Website Must-Haves and Online Ordering Options Explained',
+    description: 'What every restaurant, cafe and cloud kitchen website needs, from menus and photos to reservations, plus the pros and cons of WhatsApp, WooCommerce and aggregator ordering.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-restaurants', 'woocommerce-developer', 'wordpress-seo-services'],
+    body: `
+<p>People decide where to eat in minutes, often on their phones, often while hungry. Your restaurant website needs to show them the food, the menu and how to order or book, instantly. Here's what matters most, and how the main online ordering options compare.</p>
+
+<h2>Must-haves for every restaurant website</h2>
+<ol>
+  <li><strong>A real, mobile-friendly menu.</strong> A web page, not a PDF, with prices and dietary labels (veg, vegan, spicy). It's easier to read and Google can index it.</li>
+  <li><strong>Great food photos.</strong> Real, well-lit photos of your dishes and space, compressed so they load fast.</li>
+  <li><strong>Opening hours and location.</strong> Clear, up to date and with a Google Map and directions.</li>
+  <li><strong>One-tap call and WhatsApp.</strong> Visible at all times on mobile.</li>
+  <li><strong>Reservations</strong> for dine-in restaurants: a simple booking form or booking tool.</li>
+  <li><strong>Reviews and social proof.</strong> Link to your Google reviews and show a few highlights.</li>
+  <li><strong>Special offers and events.</strong> Weekend specials, festivals, live music or catering.</li>
+</ol>
+
+<h2>Online ordering options compared</h2>
+<table>
+  <thead><tr><th>Option</th><th>Pros</th><th>Cons</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Food delivery aggregators</strong></td><td>Huge reach, delivery fleet included</td><td>Commission on every order, less control over customer relationship</td></tr>
+    <tr><td><strong>WhatsApp ordering</strong></td><td>Simple, personal, no platform commission</td><td>Manual handling; harder at high volume</td></tr>
+    <tr><td><strong>Online ordering on your website (WooCommerce)</strong></td><td>No commission, own customer data, online payments</td><td>You arrange delivery or pickup; setup needed</td></tr>
+  </tbody>
+</table>
+<p>Many restaurants use a mix: aggregators for discovery, and their own website or WhatsApp for repeat customers, often with a small discount for ordering direct.</p>
+
+<h2>Setting up direct ordering</h2>
+<ul>
+  <li>Menu items as products with options (size, add-ons, spice level)</li>
+  <li>Delivery zones, minimum order values and delivery charges</li>
+  <li>Online payments via a gateway such as Razorpay, plus cash on delivery. See <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>.</li>
+  <li>Order notifications on email and WhatsApp so nothing is missed</li>
+  <li>Opening hours that automatically pause ordering when you're closed</li>
+</ul>
+
+<h2>Get found by hungry locals</h2>
+<ul>
+  <li>Keep your Google Business Profile complete with photos, hours and menu link. See the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</li>
+  <li>Use your cuisine and area naturally in page titles ("South Indian restaurant in Koramangala")</li>
+  <li>Add restaurant schema markup so Google understands your menu, hours and location</li>
+  <li>Encourage happy diners to leave reviews</li>
+</ul>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>PDF menus that are hard to read on phones</li>
+  <li>Outdated prices or hours</li>
+  <li>Heavy videos and sliders that make the site slow</li>
+  <li>No clear way to order or book</li>
+</ul>
+
+<p>A fast, appetising website with direct ordering can bring in repeat orders without the commission. See what's included in a <a href="/website-for-restaurants/">restaurant website</a>.</p>
+`,
+  },
+  {
+    slug: 'personal-brand-website-professionals',
+    seoTitle: 'Personal Brand Websites for Doctors, Coaches & Consultants',
+    title: 'Personal Brand Websites for Doctors, Coaches and Consultants',
+    description: 'How doctors, coaches and consultants can build a personal brand website that earns trust and brings clients: positioning, key pages, lead magnets, content and booking.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-website-for-doctors', 'website-for-lawyers-and-consultants', 'landing-page-design'],
+    body: `
+<p>When people choose a doctor, coach or consultant, they're choosing a person. A personal brand website puts your expertise, approach and personality front and centre, so the right clients trust you before they've even spoken to you.</p>
+
+<h2>Start with positioning</h2>
+<p>Before any design, get clear on three things:</p>
+<ul>
+  <li><strong>Who you help:</strong> for example busy professionals with stress, first-time founders or families planning finances</li>
+  <li><strong>The problem you solve</strong>, in their words</li>
+  <li><strong>What makes your approach different:</strong> your method, experience or philosophy</li>
+</ul>
+<p>Your homepage headline should say this in one sentence.</p>
+
+<h2>Key pages</h2>
+<h3>Home</h3>
+<p>Headline, who you help, a short introduction with a real photo, your main offers and a clear call to action (book a consultation, take an assessment, join a program).</p>
+<h3>About</h3>
+<p>Your story, qualifications, experience and why you do this work. Credentials build trust; your story builds connection.</p>
+<h3>Services or programs</h3>
+<p>One page per offer: consultations, courses, coaching programs or workshops. Explain who it's for, what's included, the format and how to start.</p>
+<h3>Problems you help with</h3>
+<p>Pages focused on specific problems (for example anxiety, stress or low confidence) help visitors recognise themselves, and help you appear in searches for those problems.</p>
+<h3>Content</h3>
+<p>Articles, videos or podcasts that share your expertise. This is how you're discovered and how trust grows over time.</p>
+
+<h2>Turn visitors into clients</h2>
+<ul>
+  <li><strong>A free first step:</strong> a self-assessment, checklist or short guide in exchange for an email address</li>
+  <li><strong>Easy booking:</strong> consultation forms, calendar booking or WhatsApp</li>
+  <li><strong>Social proof:</strong> genuine testimonials, with permission and within professional guidelines</li>
+  <li><strong>Online payments</strong> for consultations or programs</li>
+</ul>
+
+<h2>Real example</h2>
+<p>The <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora case study</a> shows these ideas in practice: a clear doctor profile with credentials, pages for each life challenge, a free anxiety self-assessment, and pages for online consultations and structured coaching programs.</p>
+
+<h2>Stay professional</h2>
+<p>Doctors, lawyers, financial advisers and other regulated professionals should keep claims factual, avoid guarantees of results, and check content against their professional body's guidelines.</p>
+
+<h2>Design tips</h2>
+<ul>
+  <li>Real, professional photos of you, not stock images</li>
+  <li>Calm, readable design with plenty of white space</li>
+  <li>Fast and mobile-friendly, since many clients find you on their phones</li>
+  <li>One primary call to action repeated throughout</li>
+</ul>
+
+<p>Ready to build yours? See what's included in a website for <a href="/wordpress-website-for-doctors/">doctors</a> or for <a href="/website-for-lawyers-and-consultants/">consultants and professionals</a>.</p>
+`,
+  },
+  {
+    slug: 'equipment-rental-website-guide',
+    seoTitle: 'Equipment & Generator Rental Websites That Get Enquiries',
+    title: 'Equipment and Generator Rental Websites: What Drives Enquiries',
+    description: 'How equipment and generator rental companies can get more enquiries online: fleet pages by capacity, industry pages, fast quote forms, trust signals and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-solar-and-power-companies', 'website-for-manufacturers', 'landing-page-design'],
+    body: `
+<p>When a generator fails before an event, a site needs temporary power, or a factory plans maintenance, buyers search online and call the first rental company that looks reliable and has what they need. A well-built rental website makes sure that's you.</p>
+
+<h2>What rental customers need to know fast</h2>
+<ul>
+  <li>Do you have the right equipment and capacity?</li>
+  <li>Is it available when I need it, for how long, and where?</li>
+  <li>Can you deliver, install and support it?</li>
+  <li>How quickly can I get a quote?</li>
+</ul>
+
+<h2>Organise your fleet clearly</h2>
+<p>Present equipment the way customers think about it:</p>
+<ul>
+  <li><strong>By capacity:</strong> for generators, kVA ranges (for example 5–62.5 kVA, 82.5–250 kVA, 320 kVA and above)</li>
+  <li><strong>By type:</strong> portable, silent/acoustic, mobile trailer-mounted, welding, industrial</li>
+  <li><strong>By rental term:</strong> daily, weekly, monthly or long-term contracts</li>
+</ul>
+<p>Each category or capacity range deserves its own page with specifications, typical uses and an enquiry button. These pages also rank for specific searches like "500 kVA generator on rent".</p>
+
+<h2>Speak to each customer type</h2>
+<p>Events, construction sites, hospitals, factories and offices have different needs. Short industry sections or pages that address noise limits, fuel management, backup duration or compliance show you understand their situation.</p>
+
+<h2>Make enquiring instant</h2>
+<ul>
+  <li><strong>"Enquire Now" and "Request a Call Back"</strong> on every page</li>
+  <li><strong>Short forms:</strong> equipment needed, capacity, location, dates and phone</li>
+  <li><strong>Click-to-call and WhatsApp</strong>, since urgent rentals are often arranged by phone</li>
+  <li><strong>Fast response:</strong> make sure enquiries reach someone immediately</li>
+</ul>
+
+<h2>Build trust</h2>
+<ul>
+  <li>Years in business and project numbers you can back up</li>
+  <li>Photos of real installations and your fleet</li>
+  <li>Compliance and safety information (for example emission and noise norms)</li>
+  <li>A detailed FAQ on delivery, installation, fuel, maintenance and billing</li>
+</ul>
+
+<h2>Real example</h2>
+<p>The <a href="/work/sahni-power-solutions/">Sahni Power Solutions case study</a> shows this structure: a generator range organised by capacity and type, industry-specific service descriptions, prominent enquiry and callback buttons, an installation gallery, trust indicators and a detailed FAQ.</p>
+
+<h2>Local SEO for rental companies</h2>
+<ul>
+  <li>Target "{equipment} on rent in {city}" searches in titles and content</li>
+  <li>Keep your Google Business Profile updated with photos and reviews</li>
+  <li>Create service-area content only where you genuinely serve and have something specific to say</li>
+</ul>
+
+<p>Similar principles apply to solar and power businesses; see what's included in a <a href="/website-for-solar-and-power-companies/">power company website</a>.</p>
+`,
+  },
+  {
+    slug: 'directory-website-wordpress',
+    seoTitle: 'How to Build a Directory Website on WordPress',
+    title: 'Directory and Listing Websites on WordPress: How They Work',
+    description: 'How directory and listing websites work on WordPress: listing structure, categories, search and filters, user submissions, monetisation and SEO for hundreds of listings.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['website-for-temples-and-ngos', 'wordpress-seo-services', 'wordpress-speed-optimization'],
+    body: `
+<p>Directory websites list many businesses, places or professionals in one searchable place: local business directories, temple and travel guides, doctor finders, property listings. WordPress is a strong platform for them. Here's how they work and what to plan for.</p>
+
+<h2>What a directory website needs</h2>
+<ul>
+  <li><strong>Listings:</strong> each business or place with its own page (details, photos, location, contact, hours)</li>
+  <li><strong>Categories and locations:</strong> ways to browse (by type, city, state or feature)</li>
+  <li><strong>Search and filters:</strong> keyword search plus filters for location, category and attributes</li>
+  <li><strong>Maps:</strong> listings shown on a map for location-based browsing</li>
+  <li><strong>User accounts:</strong> so owners can claim and update their listings</li>
+</ul>
+
+<h2>How it's built on WordPress</h2>
+<ul>
+  <li><strong>Directory themes or plugins</strong> provide listing types, fields, search, maps and front-end submission</li>
+  <li><strong>Custom fields</strong> store structured data (phone, timings, amenities, ratings)</li>
+  <li><strong>Taxonomies</strong> organise listings into categories and locations</li>
+  <li><strong>A page builder</strong> designs the homepage, landing pages and templates</li>
+</ul>
+
+<h2>Real example</h2>
+<p>The <a href="/work/our-temples/">Our Temples case study</a> is a large directory built on WordPress: hundreds of temples organised by state and by deity, with search, recently added listings, videos, slokas, a blog, and registration for guests and temple owners.</p>
+
+<h2>Content quality matters most</h2>
+<p>Google doesn't reward thin pages. A listing with just a name and address rarely ranks. Listings with original descriptions, photos, useful details (timings, history, how to reach) and reviews give visitors real value and are far more likely to be indexed and ranked.</p>
+
+<h2>SEO for directories</h2>
+<ul>
+  <li>Unique, descriptive titles and descriptions for every listing</li>
+  <li>Category and location pages with helpful introductory content, not just lists</li>
+  <li>Structured data (LocalBusiness, Place or relevant types) for listings</li>
+  <li>Internal links between related listings, categories and blog content</li>
+  <li>Controlling low-value filter URLs so search engines focus on important pages</li>
+</ul>
+
+<h2>Performance at scale</h2>
+<p>Hundreds or thousands of listings put pressure on hosting and databases. Good hosting, caching, image optimization and efficient search are essential. See <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</p>
+
+<h2>Ways directories earn money</h2>
+<ul>
+  <li>Featured or premium listings</li>
+  <li>Paid listing plans for businesses</li>
+  <li>Advertising and sponsorships</li>
+  <li>Lead generation or booking fees</li>
+</ul>
+
+<p>Planning a directory for temples, communities or a niche industry? See what's involved in a <a href="/website-for-temples-and-ngos/">community website</a>, or get <a href="/wordpress-seo-services/">SEO help</a> for an existing directory.</p>
+`,
+  },
+  {
+    slug: 'lead-magnets-newsletter-small-business',
+    seoTitle: 'Lead Magnets & Newsletters for Small Business Websites',
+    title: 'Lead Magnets and Newsletters: Turning Website Visitors Into Future Clients',
+    description: 'Most visitors aren\'t ready to buy today. How small businesses use lead magnets and newsletters to capture interest, build trust and win clients later, with ideas and setup tips.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['landing-page-design', 'website-for-startups', 'wordpress-developer-for-agencies'],
+    body: `
+<p>Most people who visit your website aren't ready to contact you today. They're researching, comparing or just curious. Without a way to stay in touch, they leave and forget you. Lead magnets and newsletters capture that interest so you can win the client later.</p>
+
+<h2>What is a lead magnet?</h2>
+<p>A lead magnet is something genuinely useful you offer for free in exchange for an email address (or WhatsApp number): a checklist, guide, template, calculator result, assessment or short course.</p>
+
+<h2>Lead magnet ideas by business type</h2>
+<ul>
+  <li><strong>Agencies and consultants:</strong> a growth blueprint, audit checklist or strategy template</li>
+  <li><strong>Clinics and coaches:</strong> a self-assessment, symptom guide or starter program</li>
+  <li><strong>Manufacturers:</strong> a product selection guide, spec sheet bundle or catalogue</li>
+  <li><strong>Real estate:</strong> a project brochure with price list or a buyer's guide</li>
+  <li><strong>Service businesses:</strong> a cost guide, checklist or "questions to ask before hiring"</li>
+</ul>
+
+<h2>Real examples</h2>
+<p>The <a href="/work/streak-creative/">Streak Creative</a> site offers a "Growth Blueprint" and a monthly "Streak Signals" newsletter to capture agency leads, while the <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a> site uses a free anxiety self-assessment as an engaging first step. On this site, the free <a href="/website-cost-calculator/">website cost calculator</a> plays a similar role.</p>
+
+<h2>What makes a lead magnet work</h2>
+<ol>
+  <li><strong>Specific:</strong> solves one clear problem for one audience</li>
+  <li><strong>Quick to use:</strong> a one-page checklist beats a 60-page ebook</li>
+  <li><strong>Related to what you sell:</strong> it should naturally lead to your service</li>
+  <li><strong>Easy to get:</strong> a short form (name and email) on relevant pages</li>
+</ol>
+
+<h2>Newsletters that people actually read</h2>
+<ul>
+  <li>Send consistently, whether monthly or fortnightly</li>
+  <li>Lead with useful tips, not sales pitches</li>
+  <li>Share new articles, case studies and short insights</li>
+  <li>Include one clear call to action per email</li>
+  <li>Make unsubscribing easy and respect people's privacy</li>
+</ul>
+
+<h2>Setting it up on WordPress</h2>
+<ul>
+  <li>A sign-up form connected to an email marketing tool</li>
+  <li>An automatic welcome email that delivers the lead magnet</li>
+  <li>Placement: end of blog posts, relevant service pages and a dedicated landing page</li>
+  <li>Tracking sign-ups as conversions in Google Analytics</li>
+  <li>A privacy policy explaining how you use contact details</li>
+</ul>
+
+<h2>Where to put your forms</h2>
+<p>Put them where interest is highest: at the end of relevant articles, on service pages, and on a focused <a href="/landing-page-design/">landing page</a> you can promote. Avoid aggressive pop-ups that appear instantly; they annoy visitors, especially on mobile.</p>
+
+<p>Start with one lead magnet for your most common client question, then add a simple monthly newsletter. Over time, it becomes one of your most reliable sources of warm leads.</p>
 `,
   },
 ];
