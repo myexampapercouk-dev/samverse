@@ -95,6 +95,13 @@ const LINKS = [
   ['website-for-interior-designers-architects', '<h2>Get found locally</h2>', '<p>Selling furniture as well? See <a href="/blog/website-for-furniture-businesses/">websites for furniture showrooms and manufacturers</a>.</p>\n\n'],
   ['woocommerce-product-page-optimization', '<h2>Measure and improve</h2>', '<p>High-value products need extra trust; see <a href="/blog/website-for-jewellers/">websites for jewellers</a> for a good example.</p>\n\n'],
   ['startup-website-checklist', '<h2>Speed matters</h2>', '<p>IT services firms have their own priorities; see <a href="/blog/website-for-it-software-companies/">websites for IT and software companies</a>.</p>\n\n'],
+  // Round 7
+  ['restaurant-website-online-ordering', '<h2>Get found by hungry locals</h2>', '<p>Selling packaged food online too? See <a href="/blog/website-for-d2c-food-brands/">websites for organic and D2C food brands</a>.</p>\n\n'],
+  ['woocommerce-seo-guide', '<h2>Quick checklist</h2>', '<p>Industry examples: <a href="/blog/website-for-fashion-boutiques/">fashion boutiques</a>, <a href="/blog/website-for-d2c-food-brands/">D2C food brands</a> and <a href="/blog/website-for-jewellers/">jewellers</a>.</p>\n\n'],
+  ['website-for-diagnostic-labs', '<h2>Mobile first</h2>', '<p>Pharmacies have similar needs; see <a href="/blog/website-for-pharmacies/">websites for pharmacies and medical stores</a>.</p>\n\n'],
+  ['equipment-rental-website-guide', '<h2>Build trust</h2>', '<p>Vehicle-based businesses have their own needs; see <a href="/blog/website-for-car-dealers-workshops/">websites for car dealers and workshops</a>.</p>\n\n'],
+  ['industrial-website-product-catalogue', '<h2>Filters and search</h2>', '<p>Packaging suppliers use the same approach; see <a href="/blog/website-for-printing-packaging-companies/">websites for printing and packaging companies</a>.</p>\n\n'],
+  ['website-for-logistics-transport-companies', '<h2>Make it fast to enquire</h2>', '<p>Similar B2B service providers: <a href="/blog/website-for-security-facility-management/">security and facility management companies</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
