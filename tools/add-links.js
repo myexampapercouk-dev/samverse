@@ -109,6 +109,13 @@ const LINKS = [
   ['woocommerce-store-launch-checklist', '<h2>Shipping and taxes</h2>', '<p>More detail: <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>\n\n'],
   ['woocommerce-product-page-optimization', '<h2>Don\'t forget speed</h2>', '<p>Losing buyers at checkout? See <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</p>\n\n'],
   ['local-seo-guide-small-business-india', '<h2>Step 6: Earn local links and mentions</h2>', '<p>Serving several cities? Read <a href="/blog/local-landing-pages-without-doorway-pages/">how to create location pages without doorway pages</a>.</p>\n\n'],
+  // Round 9
+  ['lead-magnets-newsletter-small-business', '<h2>Where to put your forms</h2>', '<p>Collecting emails means handling personal data carefully; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics</a>.</p>\n\n'],
+  ['wordpress-security-checklist', '<h2>Backups</h2>', '<p>Not sure which role to give whom? See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>.</p>\n\n'],
+  ['wordpress-maintenance-checklist', '<h2>Every 3–6 months</h2>', '<p>Want alerts the moment your site goes down? See <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a>.</p>\n\n'],
+  ['core-web-vitals-explained', '<h2>Where to start</h2>', '<p>Remember your real audience: see <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>\n\n'],
+  ['website-brief-template', '<h2>7. Content</h2>', '<p>Brand assets checklist: <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>.</p>\n\n'],
+  ['website-accessibility-basics', '<h2>Common WordPress issues</h2>', '<p>Serving many older customers? See <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

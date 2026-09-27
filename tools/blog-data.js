@@ -493,6 +493,8 @@ module.exports = [
   <li><strong>Clean the database</strong>: old revisions, spam and trashed items.</li>
 </ul>
 
+<p>Want alerts the moment your site goes down? See <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a>.</p>
+
 <h2>Every 3–6 months</h2>
 <ul>
   <li><strong>Test a backup restore</strong> on a staging site. A backup you've never tested might not work.</li>
@@ -1151,6 +1153,8 @@ module.exports = [
   <li><strong>Remove old users</strong> such as former staff, agencies and freelancers once their work is done.</li>
 </ol>
 
+<p>Not sure which role to give whom? See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>.</p>
+
 <h2>Backups</h2>
 <ol start="13">
   <li><strong>Automatic daily backups</strong> of files and database.</li>
@@ -1239,6 +1243,8 @@ module.exports = [
   <li>Load web fonts in a way that avoids big text jumps</li>
   <li>Don't insert content above existing content after the page has loaded</li>
 </ul>
+
+<p>Remember your real audience: see <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
 
 <h2>Where to start</h2>
 <p>For most WordPress sites, the biggest wins come from image optimization, caching and removing unnecessary scripts. Our article on <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> covers the common causes. If you'd rather hand it over, a <a href="/wordpress-speed-optimization/">speed optimization service</a> can target your specific Core Web Vitals issues and show before-and-after results.</p>
@@ -2829,6 +2835,8 @@ module.exports = [
   <li>A privacy policy explaining how you use contact details</li>
 </ul>
 
+<p>Collecting emails means handling personal data carefully; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics</a>.</p>
+
 <h2>Where to put your forms</h2>
 <p>Put them where interest is highest: at the end of relevant articles, on service pages, and on a focused <a href="/landing-page-design/">landing page</a> you can promote. Avoid aggressive pop-ups that appear instantly; they annoy visitors, especially on mobile.</p>
 
@@ -3168,6 +3176,8 @@ module.exports = [
   <li><strong>Check contrast</strong> with a contrast checker tool</li>
 </ul>
 
+<p>Serving many older customers? See <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>
+
 <h2>Common WordPress issues</h2>
 <ul>
   <li>Themes with low-contrast grey text</li>
@@ -3238,6 +3248,8 @@ module.exports = [
   <li>Anything you definitely don't want</li>
   <li>Existing designs in Figma or XD, if any</li>
 </ul>
+
+<p>Brand assets checklist: <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>.</p>
 
 <h2>7. Content</h2>
 <ul>
@@ -5871,6 +5883,335 @@ module.exports = [
 
 <h2>The rule of thumb</h2>
 <p>If a location page would still be useful to a customer in that city even if search engines didn't exist, it's probably fine. If it only exists to catch searches, don't build it. Unsure? A <a href="/wordpress-seo-services/">WordPress SEO</a> review can help plan location pages safely.</p>
+`,
+  },
+  {
+    slug: 'privacy-policy-cookie-basics-india',
+    seoTitle: 'Privacy Policy & Cookie Basics for Indian Websites',
+    title: 'Privacy Policy and Cookie Consent Basics for Indian Business Websites',
+    description: 'A plain-English overview of privacy policies, consent and cookies for Indian business websites: what data you collect, what to disclose, forms, analytics and when to get legal advice.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-maintenance', 'woocommerce-developer'],
+    body: `
+<p>Almost every business website collects personal data, even if it's just a name and phone number from a contact form. Customers increasingly care how that data is handled, and data protection laws apply to many businesses. This is a general overview to help you ask the right questions. It isn't legal advice; for your specific situation, consult a qualified lawyer.</p>
+
+<h2>What personal data does your website collect?</h2>
+<ul>
+  <li>Contact and enquiry forms (names, phone numbers, emails, messages)</li>
+  <li>Orders and accounts (addresses, order history)</li>
+  <li>Newsletter sign-ups</li>
+  <li>Analytics and advertising cookies (device and browsing information)</li>
+  <li>Chat widgets, WhatsApp links and embedded tools</li>
+</ul>
+<p>Start by listing everything your site collects and which third-party tools receive it.</p>
+
+<h2>What a privacy policy should explain</h2>
+<ul>
+  <li>Who you are and how to contact you about privacy</li>
+  <li>What data you collect and why</li>
+  <li>How long you keep it</li>
+  <li>Who you share it with (payment gateways, email tools, analytics, couriers)</li>
+  <li>How you protect it</li>
+  <li>How people can access, correct or delete their data, or withdraw consent</li>
+</ul>
+<p>Write it in plain language and keep it up to date as your tools change.</p>
+
+<h2>Consent and forms</h2>
+<ul>
+  <li>Collect only what you need for the purpose</li>
+  <li>Explain near the form how the data will be used</li>
+  <li>Don't pre-tick marketing consent boxes; ask separately for newsletters or promotional WhatsApp messages</li>
+  <li>Make it easy to unsubscribe</li>
+</ul>
+
+<h2>Cookies and analytics</h2>
+<p>Analytics and advertising tools set cookies and collect browsing data. Depending on your audience (especially if you serve visitors from regions with strict cookie rules), you may need a consent banner that lets people accept or decline non-essential cookies. Keep essential cookies separate from analytics and marketing cookies.</p>
+
+<h2>Security basics</h2>
+<ul>
+  <li>HTTPS across the site</li>
+  <li>Keep WordPress and plugins updated; see the <a href="/blog/wordpress-security-checklist/">security checklist</a></li>
+  <li>Limit who can access form entries and customer data</li>
+  <li>Delete data you no longer need</li>
+</ul>
+
+<h2>India's data protection law</h2>
+<p>India's Digital Personal Data Protection framework sets obligations for businesses that process personal data, and its detailed rules and timelines matter for compliance. Because requirements can change and depend on your business, get current legal advice rather than relying on templates.</p>
+
+<h2>Practical next steps</h2>
+<ol>
+  <li>List the data your site collects and the tools involved</li>
+  <li>Review your privacy policy with a lawyer</li>
+  <li>Update forms and consent wording</li>
+  <li>Decide on cookie consent based on your audience</li>
+</ol>
+<p>Technical changes like consent banners, form wording and security are part of a well-maintained site; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-user-roles-explained',
+    seoTitle: 'WordPress User Roles Explained for Business Owners',
+    title: 'WordPress User Roles Explained: Who Should Have Which Access',
+    description: 'WordPress user roles explained simply: administrator, editor, author, contributor, subscriber and shop manager, plus how to give staff, agencies and freelancers the right access safely.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-website-development'],
+    body: `
+<p>Giving everyone administrator access is one of the most common, and riskiest, habits on business WordPress sites. User roles let you give each person exactly the access they need, and no more.</p>
+
+<h2>The default WordPress roles</h2>
+<table>
+  <thead><tr><th>Role</th><th>What they can do</th><th>Typical user</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Administrator</strong></td><td>Everything: settings, plugins, themes, users</td><td>Business owner, trusted developer</td></tr>
+    <tr><td><strong>Editor</strong></td><td>Publish and edit all content, including others'</td><td>Marketing manager, content lead</td></tr>
+    <tr><td><strong>Author</strong></td><td>Write and publish their own posts</td><td>Regular in-house writer</td></tr>
+    <tr><td><strong>Contributor</strong></td><td>Write posts but can't publish</td><td>Guest writer, intern</td></tr>
+    <tr><td><strong>Subscriber</strong></td><td>Manage their own profile only</td><td>Registered site members</td></tr>
+  </tbody>
+</table>
+<p>WooCommerce adds <strong>Shop Manager</strong> (manages products and orders without full site settings) and <strong>Customer</strong> roles.</p>
+
+<h2>Best practices</h2>
+<ul>
+  <li><strong>Least privilege:</strong> give the lowest role that lets someone do their job</li>
+  <li><strong>Few administrators:</strong> usually the owner plus one trusted developer</li>
+  <li><strong>Individual accounts:</strong> never share one login between people</li>
+  <li><strong>Strong passwords and 2FA</strong> for every account with editing access</li>
+  <li><strong>Remove access promptly</strong> when staff, agencies or freelancers finish</li>
+</ul>
+
+<h2>Working with developers and agencies</h2>
+<ul>
+  <li>Create a separate account for them, never share yours</li>
+  <li>Give administrator access only for the work period if they need it</li>
+  <li>Keep ownership of hosting, domain and the main admin account yourself</li>
+  <li>Change or remove access when the project ends</li>
+</ul>
+
+<h2>Review users regularly</h2>
+<p>Check <strong>Users</strong> in your dashboard every month or two. Unknown administrator accounts can be a sign of a hack; see <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site is hacked</a>.</p>
+
+<p>User reviews are part of the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> and every <a href="/wordpress-maintenance/">maintenance plan</a>.</p>
+`,
+  },
+  {
+    slug: 'uptime-monitoring-explained',
+    seoTitle: 'Uptime Monitoring Explained for Business Websites',
+    title: 'Uptime Monitoring Explained: Know When Your Website Goes Down',
+    description: 'What uptime monitoring is, why business websites need it, what to monitor (homepage, forms, checkout, SSL, domain expiry), how alerts work and what to do when your site goes down.',
+    date: '2026-09-27',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-migration', 'wordpress-malware-removal'],
+    body: `
+<p>If your website goes down at night or over a weekend, how long before you notice? Often it's a customer who tells you, after they've already gone to a competitor. Uptime monitoring alerts you within minutes.</p>
+
+<h2>What uptime monitoring does</h2>
+<p>A monitoring service checks your website at regular intervals from outside, and alerts you by email, SMS or app notification if it doesn't respond properly.</p>
+
+<h2>What to monitor</h2>
+<ul>
+  <li><strong>Homepage availability:</strong> the basic "is it up?" check</li>
+  <li><strong>Key pages:</strong> contact page, top service pages, checkout for stores</li>
+  <li><strong>Specific content:</strong> checks that a page contains expected text, which catches "white screen" errors that still return a page</li>
+  <li><strong>SSL certificate expiry:</strong> before visitors see security warnings</li>
+  <li><strong>Domain expiry:</strong> so your domain never lapses</li>
+  <li><strong>Response time:</strong> sudden slowdowns often come before outages</li>
+</ul>
+
+<h2>Common causes of downtime</h2>
+<ul>
+  <li>Hosting outages or resource limits</li>
+  <li>Plugin or theme updates causing errors</li>
+  <li>Expired domains or SSL certificates</li>
+  <li>DNS changes gone wrong</li>
+  <li>Malware or attacks</li>
+</ul>
+
+<h2>What to do when your site goes down</h2>
+<ol>
+  <li>Check whether it's down for everyone or just you</li>
+  <li>Check your hosting status page and account (resource limits, suspension notices)</li>
+  <li>If it followed an update, roll back or restore; see <a href="/blog/update-wordpress-safely/">updating WordPress safely</a></li>
+  <li>Check domain and SSL expiry</li>
+  <li>Contact your host or developer with the time it started and any error messages</li>
+</ol>
+
+<h2>Uptime vs other monitoring</h2>
+<p>Uptime monitoring tells you the site is up; it doesn't confirm that forms deliver email or payments complete. Test those regularly too; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+
+<h2>Is it worth it?</h2>
+<p>Basic monitoring is inexpensive or free and takes minutes to set up. For any business that relies on its website for leads or sales, it's essential. It's included in <a href="/wordpress-maintenance/">maintenance plans</a> alongside backups and updates.</p>
+`,
+  },
+  {
+    slug: 'website-speed-indian-mobile-networks',
+    seoTitle: 'Website Speed on Indian Mobile Networks',
+    title: 'Website Speed on Indian Mobile Networks: Building for Real-World Conditions',
+    description: 'Why website speed matters for Indian mobile users on varying networks and budget phones, and practical ways to make your site load fast: page weight, images, fonts, scripts and hosting.',
+    date: '2026-09-27',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'website-redesign', 'woocommerce-developer'],
+    body: `
+<p>Many of your visitors browse on mobile phones, often mid-range devices, on connections that vary from fast 4G/5G in cities to patchy coverage while travelling or in smaller towns. A site that feels instant on office Wi-Fi can crawl in real conditions. Designing for those conditions wins customers.</p>
+
+<h2>Why it matters</h2>
+<ul>
+  <li>Visitors abandon slow pages, especially when they're comparing options</li>
+  <li>Heavy pages cost users mobile data</li>
+  <li>Budget phones take longer to process JavaScript</li>
+  <li>Google evaluates page experience using real-user data (Core Web Vitals)</li>
+</ul>
+
+<h2>Test like your customers</h2>
+<ul>
+  <li>Use PageSpeed Insights, which simulates mobile devices and slower networks</li>
+  <li>Try your site on an older phone with mobile data</li>
+  <li>Check Search Console's Core Web Vitals report for real-user data</li>
+</ul>
+
+<h2>Reduce page weight</h2>
+<ul>
+  <li><strong>Images:</strong> the biggest win. Resize, compress and use WebP. See <a href="/blog/image-optimization-wordpress/">image optimization</a>.</li>
+  <li><strong>Video:</strong> avoid auto-playing background videos; use a poster image and load on tap</li>
+  <li><strong>Fonts:</strong> limit to one or two families and only needed weights</li>
+  <li><strong>Sliders and animations:</strong> remove or simplify</li>
+</ul>
+
+<h2>Reduce JavaScript</h2>
+<ul>
+  <li>Remove unused plugins and heavy widgets</li>
+  <li>Delay chat widgets, trackers and embeds until after the page loads</li>
+  <li>Keep page builder layouts lean. See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</li>
+</ul>
+
+<h2>Serve it fast</h2>
+<ul>
+  <li>Hosting with servers in or near India (for Indian audiences)</li>
+  <li>Page caching and a CDN for static files</li>
+  <li>Modern PHP and a lightweight theme</li>
+</ul>
+
+<h2>Design for mobile first</h2>
+<ul>
+  <li>Put the headline, key message and call to action at the top</li>
+  <li>Large tap targets and readable text</li>
+  <li>Tap-to-call and WhatsApp that work instantly</li>
+</ul>
+
+<p>Speed isn't a one-time project. Re-check after adding plugins, content or campaigns. For a full diagnosis, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> or get <a href="/wordpress-speed-optimization/">speed optimization</a>.</p>
+`,
+  },
+  {
+    slug: 'logo-favicon-brand-basics-website',
+    seoTitle: 'Logo, Favicon & Brand Basics for Your Website',
+    title: 'Logo, Favicon and Brand Basics for Your Website',
+    description: 'Brand basics every business website needs: logo files and formats, favicon and app icons, colours, fonts, social share images and consistency, explained for business owners.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'website-redesign', 'figma-to-wordpress'],
+    body: `
+<p>A consistent brand makes a small business look established and trustworthy. Your website is often where people see your brand most, so it's worth getting the basics right before and during a website project.</p>
+
+<h2>Logo files you need</h2>
+<ul>
+  <li><strong>SVG version:</strong> sharp at any size and tiny in file size, ideal for websites</li>
+  <li><strong>Transparent PNG:</strong> for places that don't support SVG</li>
+  <li><strong>Horizontal and stacked versions:</strong> for headers vs square spaces</li>
+  <li><strong>Icon-only mark:</strong> for favicons and social profiles</li>
+  <li><strong>Light and dark versions:</strong> for different backgrounds</li>
+</ul>
+<p>If you only have a logo as a JPEG or inside a document, ask your designer for the original files.</p>
+
+<h2>Favicon and app icons</h2>
+<p>The favicon is the small icon in browser tabs and bookmarks. You'll also want icons for phones when people save your site to their home screen. Use a simple, recognisable mark, because detailed logos become unreadable at 16–32 pixels.</p>
+
+<h2>Colours and fonts</h2>
+<ul>
+  <li>Define a small palette: primary, secondary, text, background and accent colours</li>
+  <li>Check text contrast for readability; see <a href="/blog/website-accessibility-basics/">accessibility basics</a></li>
+  <li>Choose one or two fonts, ideally web fonts that load quickly</li>
+  <li>Use them consistently as global styles on the website</li>
+</ul>
+
+<h2>Social share images</h2>
+<p>When someone shares your page on WhatsApp, LinkedIn or Facebook, a preview image appears. Set a branded default share image, and ideally unique images for key pages and articles, so links look professional when shared.</p>
+
+<h2>Consistency everywhere</h2>
+<p>Use the same name, logo, colours and description across your website, Google Business Profile, social profiles and printed materials. Consistency builds recognition and trust, and consistent business information also helps search engines.</p>
+
+<h2>Photography and imagery</h2>
+<p>Real photos of your team, work and premises reinforce your brand far better than generic stock images. Keep a consistent style for lighting, backgrounds and editing.</p>
+
+<h2>Before your website project</h2>
+<ol>
+  <li>Gather logo files (SVG, PNG, icon)</li>
+  <li>Note brand colours (hex codes) and fonts</li>
+  <li>Collect real photos</li>
+  <li>Share brand guidelines or examples you like</li>
+</ol>
+<p>Include these in your <a href="/blog/website-brief-template/">website brief</a>. If you have designs in Figma, see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+`,
+  },
+  {
+    slug: 'website-accessibility-older-users',
+    seoTitle: 'Making Your Website Easy for Older Visitors',
+    title: 'Making Your Website Easy to Use for Older Visitors',
+    description: 'Practical ways to make your website easier for older visitors: larger text, contrast, simple navigation, clear buttons, readable forms, phone and WhatsApp options, and patience with trust.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['website-redesign', 'wordpress-website-for-doctors', 'website-for-temples-and-ngos'],
+    body: `
+<p>Older adults are a large and growing group of internet users, and often key customers for healthcare, pharmacies, temples, travel, insurance and financial services. Many websites are unintentionally hard for them to use. Small design choices make a big difference.</p>
+
+<h2>Common difficulties</h2>
+<ul>
+  <li>Small or low-contrast text</li>
+  <li>Tiny buttons and links that are hard to tap</li>
+  <li>Complicated menus and too many choices</li>
+  <li>Pop-ups, auto-playing media and moving content</li>
+  <li>Long or confusing forms with unclear errors</li>
+</ul>
+
+<h2>Practical improvements</h2>
+<h3>Readable text</h3>
+<ul>
+  <li>Body text of at least 16–18px, with comfortable line spacing</li>
+  <li>Strong contrast: dark text on a light background</li>
+  <li>Clear, simple fonts, and avoid long paragraphs in all caps or italics</li>
+</ul>
+<h3>Simple navigation</h3>
+<ul>
+  <li>A short, clearly labelled menu using familiar words ("Timings", "Contact", "Book appointment")</li>
+  <li>Consistent layout from page to page</li>
+  <li>Visible "Home" link and breadcrumbs</li>
+</ul>
+<h3>Easy buttons and links</h3>
+<ul>
+  <li>Large tap targets with space between them</li>
+  <li>Buttons that look like buttons, with clear text</li>
+  <li>Underlined links in text</li>
+</ul>
+<h3>Friendly forms</h3>
+<ul>
+  <li>Few fields, with visible labels above each</li>
+  <li>Clear error messages that explain how to fix the problem</li>
+  <li>Alternatives: phone and WhatsApp for people who prefer to talk</li>
+</ul>
+<h3>Calm pages</h3>
+<ul>
+  <li>No auto-playing videos, flashing banners or aggressive pop-ups</li>
+  <li>Plenty of white space</li>
+</ul>
+
+<h2>Trust and reassurance</h2>
+<p>Older visitors may be more cautious about scams. Show clear contact details, a physical address, real photos and straightforward policies. Avoid pressure tactics.</p>
+
+<h2>Test with real people</h2>
+<p>Ask an older relative or customer to complete a common task on your site, such as finding timings or booking an appointment, and watch where they struggle. It's the most valuable test you can run.</p>
+
+<p>These improvements overlap with general <a href="/blog/website-accessibility-basics/">accessibility basics</a> and help every visitor. They're especially important for <a href="/wordpress-website-for-doctors/">healthcare</a> and <a href="/website-for-temples-and-ngos/">temple and community</a> websites.</p>
 `,
   },
 ];
