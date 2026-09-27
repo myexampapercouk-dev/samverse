@@ -133,6 +133,13 @@ const LINKS = [
   ['website-for-salons-spas', '<h2>Design tips</h2>', '<p>Other booking-driven local services: <a href="/blog/website-for-home-services/">home services</a> and <a href="/blog/website-for-cleaning-services/">cleaning services</a>.</p>\n\n'],
   ['website-for-logistics-transport-companies', '<h2>SEO for logistics companies</h2>', '<p>Household moves are different; see <a href="/blog/website-for-packers-movers/">websites for packers and movers</a>.</p>\n\n'],
   ['clinic-website-checklist-for-doctors', '<h2>Your Google Business Profile matters too</h2>', '<p>Larger or specialist practices: <a href="/blog/website-for-hospitals/">hospitals</a>, <a href="/blog/website-for-physiotherapy-clinics/">physiotherapy clinics</a> and <a href="/blog/website-for-eye-clinics-opticians/">eye clinics</a>.</p>\n\n'],
+  // Round 13
+  ['website-for-dentists', '<h2>Stay within guidelines</h2>', '<p>Animal care has its own needs; see <a href="/blog/website-for-veterinary-pet-clinics/">websites for vets and pet clinics</a>.</p>\n\n'],
+  ['restaurant-website-online-ordering', '<h2>Common mistakes</h2>', '<p>Bakeries have extra needs like custom orders; see <a href="/blog/website-for-bakeries-cake-shops/">websites for bakeries and cake shops</a>.</p>\n\n'],
+  ['website-for-d2c-food-brands', '<h2>Grow repeat orders</h2>', '<p>Gifting is a big opportunity; see <a href="/blog/website-for-florists-gift-shops/">websites for florists and gift shops</a>.</p>\n\n'],
+  ['website-for-event-wedding-planners', '<h2>Performance with lots of photos</h2>', '<p>Venues need their own approach; see <a href="/blog/website-for-wedding-venues-banquet-halls/">websites for wedding venues and banquet halls</a>.</p>\n\n'],
+  ['website-for-it-software-companies', '<h2>Build trust</h2>', '<p>Where many startups and IT teams work: <a href="/blog/website-for-coworking-spaces/">websites for co-working spaces</a>.</p>\n\n'],
+  ['hotel-website-direct-bookings', '<h2>SEO for hotels and homestays</h2>', '<p>Long-stay accommodation is different; see <a href="/blog/website-for-hostels-pg-accommodation/">websites for hostels and PGs</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
