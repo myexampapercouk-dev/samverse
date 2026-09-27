@@ -1742,6 +1742,8 @@ module.exports = [
 
 <p>Long-stay accommodation is different; see <a href="/blog/website-for-hostels-pg-accommodation/">websites for hostels and PGs</a>.</p>
 
+<p>More detail: <a href="/blog/hotel-booking-engine-channel-manager/">booking engines and channel managers explained</a> and <a href="/blog/website-for-homestays-bnbs/">websites for homestays</a>.</p>
+
 <h2>SEO for hotels and homestays</h2>
 <ul>
   <li>Make sure your website ranks first for your property's name</li>
@@ -1797,6 +1799,8 @@ module.exports = [
 <p>Professions such as law and chartered accountancy have their own rules on how services may be publicised. Keep your website factual and informative: describe your areas of practice and qualifications, avoid exaggerated claims or guarantees of outcomes, and review content against your professional body's current guidelines before publishing.</p>
 
 <p>Insurance and financial advisors face similar rules; see <a href="/blog/website-for-insurance-financial-advisors/">websites for insurance agents and financial advisors</a>.</p>
+
+<p>Advocates: see <a href="/blog/website-for-advocates-bar-council-rules/">what the Bar Council rules allow</a>.</p>
 
 <h2>Local SEO for professionals</h2>
 <ul>
@@ -1859,6 +1863,8 @@ module.exports = [
   <li>Your team and service process</li>
   <li>Warranty and after-sales support details</li>
 </ul>
+
+<p>More tactics: <a href="/blog/solar-company-lead-generation/">solar lead generation</a>.</p>
 
 <h2>Get found locally</h2>
 <ul>
@@ -2099,6 +2105,8 @@ module.exports = [
   <li><strong>International donations</strong> may have additional legal requirements for your organisation. Check what applies before enabling them.</li>
 </ol>
 <p>Our guide to <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a> explains the technical setup.</p>
+
+<p>Handling tax receipts? See <a href="/blog/ngo-website-donations-80g/">online donations, 80G receipts and FCRA</a>.</p>
 
 <h2>Build trust and transparency</h2>
 <ul>
@@ -5246,6 +5254,8 @@ module.exports = [
 
 <p>Other booking-driven local services: <a href="/blog/website-for-home-services/">home services</a> and <a href="/blog/website-for-cleaning-services/">cleaning services</a>.</p>
 
+<p>Setting up bookings? See <a href="/blog/online-appointment-booking-website/">online appointment booking</a>.</p>
+
 <h2>Design tips</h2>
 <p>Your website should feel like your salon: clean, stylish and welcoming. Use large, high-quality photos, compressed so pages stay fast, and make the booking button impossible to miss on mobile.</p>
 
@@ -7677,6 +7687,8 @@ module.exports = [
   <li>Owner or manager introduction</li>
   <li>Clear policies for deposits, notice periods and refunds</li>
 </ul>
+
+<p>Running a homestay instead? See <a href="/blog/website-for-homestays-bnbs/">websites for homestays and B&amp;Bs</a>.</p>
 
 <h2>Local SEO</h2>
 <ul>
@@ -14650,6 +14662,358 @@ module.exports = [
 <p>Track form submissions, calls and WhatsApp clicks by campaign; see <a href="/blog/ga4-events-explained/">GA4 events</a>.</p>
 
 <p>For the full developer website, see <a href="/blog/real-estate-website-must-have-features/">real estate website must-have features</a>.</p>
+`,
+  },
+  {
+    slug: 'hotel-booking-engine-channel-manager',
+    seoTitle: 'Hotel Booking Engine & Channel Manager Explained',
+    title: 'Hotel Booking Engine and Channel Manager Explained: Take Direct Bookings Without Overbooking',
+    description: 'What a hotel booking engine, channel manager and PMS do, how they connect your website with OTAs to prevent overbooking, choosing one, direct booking perks and Google free booking links.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['hotel-website-design', 'wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Hotels and resorts that want direct bookings need more than a nice website. They need a way to take reservations online and keep room availability in sync with booking sites like Booking.com, MakeMyTrip, Agoda and Airbnb. That's where booking engines and channel managers come in.</p>
+
+<h2>The three key systems</h2>
+<table>
+  <thead><tr><th>System</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr><td>Booking engine</td><td>Lets guests check availability, choose rooms and pay on your own website</td></tr>
+    <tr><td>Channel manager</td><td>Syncs rates and availability across your website and all the OTAs you use</td></tr>
+    <tr><td>PMS (property management system)</td><td>Manages reservations, check-ins, housekeeping and billing at the property</td></tr>
+  </tbody>
+</table>
+<p>Many providers offer all three together, which reduces integration headaches.</p>
+
+<h2>Why you need a channel manager</h2>
+<p>Without one, if a room is booked on one OTA, you must manually update every other channel. Miss one, and you risk overbooking. A channel manager updates all channels automatically when a booking comes in from anywhere.</p>
+
+<h2>What to look for in a booking engine</h2>
+<ul>
+  <li>Mobile-friendly booking flow with few steps</li>
+  <li>Integration with your channel manager and PMS</li>
+  <li>Indian payment options: UPI, cards, net banking</li>
+  <li>Promo codes, packages and add-ons (breakfast, airport transfers)</li>
+  <li>Multi-currency for international guests</li>
+  <li>Embeds within your website's design, not a clunky external page</li>
+  <li>Booking confirmation emails and WhatsApp notifications</li>
+</ul>
+
+<h2>Give guests a reason to book direct</h2>
+<ul>
+  <li>Best rate on your website, or at least rate parity</li>
+  <li>Direct-booking perks: free breakfast, late checkout, room upgrades when available</li>
+  <li>Flexible cancellation</li>
+  <li>Quick answers on WhatsApp</li>
+</ul>
+
+<h2>Google free booking links</h2>
+<p>Google can show your direct booking link alongside OTAs in hotel search results. Many booking engines and channel managers can connect to Google's hotel listings; ask your provider. Keep your Google Business Profile complete too; see the <a href="/blog/google-business-profile-checklist/">Business Profile checklist</a>.</p>
+
+<h2>Integrating with WordPress</h2>
+<p>Most booking engines provide a search widget for your homepage and room pages, with booking completed on a secure booking page styled to match your site. Make sure it loads quickly and works well on mobile.</p>
+
+<h2>Track direct bookings</h2>
+<p>Set up conversion tracking for completed bookings so you know which marketing brings direct revenue; see <a href="/blog/ga4-events-explained/">GA4 events</a>.</p>
+
+<p>See also <a href="/blog/hotel-website-direct-bookings/">getting more direct hotel bookings</a> and <a href="/hotel-website-design/">hotel website design</a>.</p>
+`,
+  },
+  {
+    slug: 'ngo-website-donations-80g',
+    seoTitle: 'NGO Website Donations: 80G Receipts, FCRA & Payments',
+    title: 'Online Donations for NGOs and Trusts: 80G Receipts, FCRA and Payment Setup',
+    description: 'How Indian NGOs, trusts and temples can accept online donations on their website: donation forms, payment gateways, 80G receipt details, PAN collection, foreign donations and FCRA, and transparency.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-temples-and-ngos', 'wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>A donation page can bring steady support for an NGO, trust or temple, but only if giving is easy, donors trust you, and the paperwork is handled correctly. This guide covers the website side. For tax and legal requirements, always confirm with your chartered accountant.</p>
+
+<h2>A donation form that works</h2>
+<ul>
+  <li>Suggested amounts with a custom amount option</li>
+  <li>One-time and monthly giving</li>
+  <li>Name, email and phone</li>
+  <li>PAN and address, needed for donors who want an 80G tax receipt</li>
+  <li>An option to dedicate the donation (in memory of, on behalf of)</li>
+  <li>A clear note on how the money will be used</li>
+</ul>
+<p>Keep the form short; ask for PAN and address only from donors who want the tax benefit.</p>
+
+<h2>Payment options</h2>
+<ul>
+  <li>UPI, cards, net banking and wallets through a payment gateway that supports non-profits</li>
+  <li>Recurring donations through card mandates or UPI AutoPay</li>
+  <li>Bank transfer details for large donors</li>
+</ul>
+<p>See <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
+
+<h2>80G receipts</h2>
+<p>If your organisation has 80G registration, donors can claim a tax deduction. Your website should:</p>
+<ul>
+  <li>Clearly state your 80G status and registration details</li>
+  <li>Collect the donor details your CA says are required, typically name, address and PAN</li>
+  <li>Send an automatic acknowledgement email with transaction details</li>
+</ul>
+<p>Organisations are also required to report donations to the Income Tax Department, after which donors receive their official certificate. Your CA will guide the exact process and timelines. Note that large cash donations aren't eligible for the deduction, which is another reason to encourage online payment.</p>
+
+<h2>Foreign donations and FCRA</h2>
+<p>Indian NGOs generally need FCRA registration to accept donations from foreign sources, and foreign contributions must be received in the designated FCRA bank account. If you don't have FCRA registration, make it clear that you can only accept donations from Indian citizens and residents, and add a nationality check to the form. Take professional advice on FCRA compliance.</p>
+
+<h2>Build trust and transparency</h2>
+<ul>
+  <li>Registration details: trust or society registration, 12A, 80G and FCRA (if applicable)</li>
+  <li>Annual reports and audited financials</li>
+  <li>Impact stories with photos, with consent</li>
+  <li>How donations are used, such as "₹500 provides…" only if accurate</li>
+  <li>Trustees and team</li>
+</ul>
+
+<h2>Thank donors properly</h2>
+<p>A thank-you page, an immediate email receipt and regular updates on impact encourage repeat giving; see <a href="/blog/thank-you-pages-forms/">thank-you pages</a>.</p>
+
+<p>For the wider website, see <a href="/blog/temple-ngo-website-online-donations/">temple and NGO websites</a>.</p>
+`,
+  },
+  {
+    slug: 'solar-company-lead-generation',
+    seoTitle: 'Lead Generation for Solar Companies: Website Tactics',
+    title: 'Solar Lead Generation: How Rooftop Solar Companies Can Get More Enquiries Online',
+    description: 'Website tactics for solar installers to generate quality leads: savings calculators, subsidy and net metering explainers, project proof, qualifying forms, fast follow-up and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-solar-and-power-companies', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>Rooftop solar is a considered purchase. Homeowners and businesses research savings, subsidies and installers before they call. A website that answers those questions honestly and captures the right details generates better leads than one that just says "Go solar!"</p>
+
+<h2>1. A savings calculator</h2>
+<p>Ask for the monthly electricity bill and location, and estimate system size, cost range and payback period. Make assumptions clear (tariff, sunlight hours, costs) and present results as estimates. Calculators are engaging and qualify leads at the same time.</p>
+
+<h2>2. Explain subsidies and net metering</h2>
+<ul>
+  <li>Explain government schemes for residential rooftop solar, such as PM Surya Ghar: Muft Bijli Yojana, in plain language</li>
+  <li>Link to the official portal for current subsidy amounts and eligibility, which can change</li>
+  <li>Explain how net metering works with your state's electricity distribution company</li>
+  <li>Describe the paperwork you handle for customers</li>
+</ul>
+
+<h2>3. Show real projects</h2>
+<ul>
+  <li>Project gallery with system size, location type and photos</li>
+  <li>Before-and-after electricity bills, with customer consent</li>
+  <li>Video testimonials from homeowners and businesses</li>
+</ul>
+
+<h2>4. Separate residential and commercial</h2>
+<p>Homeowners care about subsidies, EMI options and bill savings. Businesses care about ROI, capex vs opex models and downtime during installation. Give each audience its own page.</p>
+
+<h2>5. Qualifying lead forms</h2>
+<p>Ask for name, phone, pin code, monthly bill and property type (house, apartment, commercial). This lets your team prioritise and prepare for the call. Offer WhatsApp for people who prefer chat.</p>
+
+<h2>6. Respond fast</h2>
+<p>Solar buyers often contact several installers. A quick callback, ideally within an hour, makes a big difference. Route leads instantly by email and WhatsApp to your sales team.</p>
+
+<h2>7. Build trust</h2>
+<ul>
+  <li>Panel and inverter brands you use</li>
+  <li>Warranty and maintenance terms</li>
+  <li>Empanelment or certifications you actually hold</li>
+  <li>Years in business and number of installations, if you can support them</li>
+</ul>
+
+<h2>8. Local SEO</h2>
+<ul>
+  <li>Pages for cities and districts you serve, with local projects</li>
+  <li>A complete Google Business Profile with project photos and reviews</li>
+  <li>Articles answering common questions like payback period, maintenance and monsoon performance</li>
+</ul>
+
+<p>See the <a href="/blog/solar-company-website-guide/">solar company website guide</a> and <a href="/website-for-solar-and-power-companies/">websites for solar companies</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-advocates-bar-council-rules',
+    seoTitle: 'Website for Advocates in India: Bar Council Rules Guide',
+    title: 'Website for Advocates in India: What the Bar Council Rules Allow',
+    description: 'How advocates and law firms in India can have a website within Bar Council of India rules on advertising: what information is typically permitted, what to avoid, disclaimers and helpful content.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-lawyers-and-consultants', 'wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Advocates in India face stricter rules about promoting themselves than most professionals. The Bar Council of India's rules prohibit advocates from soliciting work or advertising, but websites sharing limited factual information are permitted. A well-built, compliant website helps clients find accurate information about you. Always check the current Bar Council rules and take guidance if unsure.</p>
+
+<h2>What is typically permitted</h2>
+<p>Following an amendment to the rules, advocates may share factual information on their websites, such as:</p>
+<ul>
+  <li>Name and address</li>
+  <li>Telephone number and email</li>
+  <li>Enrolment details</li>
+  <li>Professional and academic qualifications</li>
+  <li>Areas of practice</li>
+</ul>
+
+<h2>What to avoid</h2>
+<ul>
+  <li>Claims of success rates or "winning" cases</li>
+  <li>Client testimonials and reviews used as promotion</li>
+  <li>Comparisons with other advocates</li>
+  <li>Offers, discounts or fee-based promotions</li>
+  <li>Paid advertisements soliciting clients</li>
+  <li>Words like "best", "top" or "expert" used promotionally</li>
+</ul>
+
+<h2>Add a disclaimer</h2>
+<p>Many law firm websites show a disclaimer stating that the site is for information only, is not solicitation or advertising, and that visitors access it at their own will. Some show it as a pop-up visitors must accept. Ask your advisers what's appropriate for you.</p>
+
+<h2>A sensible structure</h2>
+<ul>
+  <li><strong>Home:</strong> name, practice areas and contact information</li>
+  <li><strong>About:</strong> qualifications, enrolment and professional background</li>
+  <li><strong>Practice areas:</strong> factual descriptions of the areas you practise in</li>
+  <li><strong>Team:</strong> advocates and their qualifications</li>
+  <li><strong>Contact:</strong> address, map, phone and email</li>
+</ul>
+
+<h2>Informational content</h2>
+<p>Many firms publish articles explaining legal topics in general terms. Keep them educational and factual, avoid promises, and note that articles aren't legal advice.</p>
+
+<h2>Design and tone</h2>
+<p>A calm, professional design with clear typography suits legal practice. Make sure it's fast, secure (HTTPS) and accessible.</p>
+
+<h2>Privacy and confidentiality</h2>
+<p>Contact forms should warn visitors not to send confidential details before an advocate-client relationship is established, and forms should be secure.</p>
+
+<h2>Other legal and financial professionals</h2>
+<p>Chartered accountants, company secretaries and other professionals have their own professional bodies' rules. See <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers and CAs</a> and <a href="/website-for-lawyers-and-consultants/">websites for lawyers and consultants</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-homestays-bnbs',
+    seoTitle: 'Website for Homestays & B&Bs: Get Direct Bookings',
+    title: 'Website for Homestays and B&Bs: Get More Direct Bookings',
+    description: 'How homestays, B&Bs and holiday homes can get direct bookings with their own website: photos, rooms and rates, booking calendars synced with Airbnb and OTAs, house rules, local experiences and SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['hotel-website-design', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>Most homestays rely on Airbnb, Booking.com and other platforms for guests. Your own website lets returning guests and word-of-mouth referrals book directly, saving commission and building a relationship with them.</p>
+
+<h2>What guests want to see</h2>
+<ul>
+  <li>Lots of real, bright photos of rooms, bathrooms, views and common areas</li>
+  <li>Room types, capacity and rates</li>
+  <li>Location and how to get there</li>
+  <li>Amenities: Wi-Fi, parking, meals, heating or AC</li>
+  <li>House rules and cancellation policy</li>
+  <li>Reviews from past guests</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ul>
+  <li><strong>Home:</strong> the feel of the place, with a clear "Check availability" button</li>
+  <li><strong>Rooms:</strong> each room with photos, beds, capacity and price</li>
+  <li><strong>Experiences:</strong> local walks, food, activities and nearby attractions</li>
+  <li><strong>Getting here:</strong> directions from the nearest airport, railway station and bus stand</li>
+  <li><strong>Hosts:</strong> your story, which is often the reason people choose homestays</li>
+  <li><strong>FAQs and contact</strong></li>
+</ul>
+
+<h2>Direct booking options</h2>
+<ul>
+  <li><strong>A booking plugin or booking engine</strong> with availability calendar and online payment</li>
+  <li><strong>Calendar sync:</strong> many booking tools sync availability with Airbnb and Booking.com using iCal links, reducing double bookings</li>
+  <li><strong>WhatsApp booking:</strong> simple to start, with confirmation by advance payment</li>
+</ul>
+<p>For larger properties, see <a href="/blog/hotel-booking-engine-channel-manager/">booking engines and channel managers</a>.</p>
+
+<h2>Why guests should book direct</h2>
+<ul>
+  <li>A better rate or a small perk (welcome meal, free pickup)</li>
+  <li>Direct communication with the host</li>
+  <li>Flexible arrangements</li>
+</ul>
+<p>Check that your platform agreements allow what you plan.</p>
+
+<h2>Registration and trust</h2>
+<p>Some states have homestay registration schemes. If you're registered, display it. Show safety features too.</p>
+
+<h2>SEO and discovery</h2>
+<ul>
+  <li>Target searches like "homestay in {place}" and "{place} stay with mountain view"</li>
+  <li>Write guides to your area: best time to visit, things to do, local food</li>
+  <li>A complete Google Business Profile with photos and reviews</li>
+</ul>
+<p>See <a href="/blog/hotel-website-direct-bookings/">getting direct hotel bookings</a>.</p>
+
+<h2>Keep it fast</h2>
+<p>Many guests browse on mobile data while travelling. Optimise photos and keep pages light; see <a href="/blog/image-optimization-wordpress/">image optimisation</a>.</p>
+`,
+  },
+  {
+    slug: 'online-appointment-booking-website',
+    seoTitle: 'Online Appointment Booking for Your Website: A Guide',
+    title: 'Online Appointment Booking on Your Website: Setup, Reminders and Fewer No-Shows',
+    description: 'How to add online appointment booking to a business website: booking tools and WordPress plugins, services and staff setup, calendar sync, reminders, deposits, cancellation policies and reducing no-shows.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-website-for-doctors', 'landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>For clinics, salons, consultants, tutors and many service businesses, letting customers book online saves hours of phone calls and captures bookings at any time of day. Here's how to set it up well.</p>
+
+<h2>Options</h2>
+<ul>
+  <li><strong>Scheduling services</strong> embedded in your website, such as Calendly-style tools</li>
+  <li><strong>WordPress booking plugins</strong> such as Amelia, Bookly or Simply Schedule Appointments</li>
+  <li><strong>Industry software:</strong> clinic, salon or fitness management systems with online booking</li>
+</ul>
+<p>Industry software is often best if you need records, billing and staff management; simpler tools suit consultants and small teams.</p>
+
+<h2>Set up services properly</h2>
+<ul>
+  <li>Service names, durations and prices</li>
+  <li>Staff members and which services each provides</li>
+  <li>Working hours, breaks and holidays</li>
+  <li>Buffer time between appointments</li>
+  <li>How far in advance people can book</li>
+</ul>
+
+<h2>Calendar sync</h2>
+<p>Sync bookings with Google Calendar or Outlook so you don't get double-booked with other commitments.</p>
+
+<h2>Reminders</h2>
+<p>Automatic reminders by email, SMS or WhatsApp a day before and a few hours before greatly reduce missed appointments. WhatsApp reminders usually need a WhatsApp Business API provider with approved message templates.</p>
+
+<h2>Deposits and payments</h2>
+<ul>
+  <li>Take a deposit or full payment for longer or high-value appointments</li>
+  <li>Offer UPI and cards</li>
+  <li>State your cancellation and refund policy clearly</li>
+</ul>
+
+<h2>Reduce no-shows</h2>
+<ul>
+  <li>Reminders with easy reschedule links</li>
+  <li>Deposits for first-time customers</li>
+  <li>A clear cancellation window</li>
+  <li>Confirmation messages that feel personal</li>
+</ul>
+
+<h2>Make booking visible</h2>
+<ul>
+  <li>A "Book appointment" button in the header and on every service page</li>
+  <li>A "Book" button on your Google Business Profile, where supported</li>
+  <li>WhatsApp as an alternative for people who prefer chat</li>
+</ul>
+
+<h2>Keep forms short and private</h2>
+<p>Ask only for what you need. For health or sensitive services, avoid collecting detailed information in booking forms, and have a privacy policy; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy basics</a>.</p>
+
+<h2>Track bookings</h2>
+<p>Track completed bookings as key events; see <a href="/blog/ga4-events-explained/">GA4 events</a>.</p>
+
+<p>Industry guides: <a href="/blog/clinic-website-checklist-for-doctors/">clinics</a>, <a href="/blog/website-for-salons-spas/">salons and spas</a> and <a href="/blog/website-for-coaches-consultants/">coaches</a>.</p>
 `,
   },
 ];

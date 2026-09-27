@@ -282,6 +282,13 @@ const LINKS = [
   ['startup-website-checklist', '<h2>Build for iteration</h2>', '<p>Building a software product? See <a href="/blog/website-for-saas-startups/">websites for SaaS startups</a>.</p>\n\n'],
   ['restaurant-website-online-ordering', '<h2>Get found by hungry locals</h2>', '<p>More guides: <a href="/blog/restaurant-menu-on-website/">putting your menu online</a> and <a href="/blog/website-for-cloud-kitchens/">websites for cloud kitchens</a>.</p>\n\n'],
   ['real-estate-website-must-have-features', '<h2>Performance and marketing</h2>', '<p>Launching a new project? See <a href="/blog/real-estate-project-microsite/">real estate project microsites</a>.</p>\n\n'],
+  // Round 35
+  ['hotel-website-direct-bookings', '<h2>SEO for hotels and homestays</h2>', '<p>More detail: <a href="/blog/hotel-booking-engine-channel-manager/">booking engines and channel managers explained</a> and <a href="/blog/website-for-homestays-bnbs/">websites for homestays</a>.</p>\n\n'],
+  ['temple-ngo-website-online-donations', '<h2>Build trust and transparency</h2>', '<p>Handling tax receipts? See <a href="/blog/ngo-website-donations-80g/">online donations, 80G receipts and FCRA</a>.</p>\n\n'],
+  ['solar-company-website-guide', '<h2>Get found locally</h2>', '<p>More tactics: <a href="/blog/solar-company-lead-generation/">solar lead generation</a>.</p>\n\n'],
+  ['website-for-lawyers-and-chartered-accountants', '<h2>Local SEO for professionals</h2>', '<p>Advocates: see <a href="/blog/website-for-advocates-bar-council-rules/">what the Bar Council rules allow</a>.</p>\n\n'],
+  ['website-for-hostels-pg-accommodation', '<h2>Local SEO</h2>', '<p>Running a homestay instead? See <a href="/blog/website-for-homestays-bnbs/">websites for homestays and B&amp;Bs</a>.</p>\n\n'],
+  ['website-for-salons-spas', '<h2>Design tips</h2>', '<p>Setting up bookings? See <a href="/blog/online-appointment-booking-website/">online appointment booking</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
