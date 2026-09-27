@@ -204,6 +204,13 @@ const LINKS = [
   ['website-for-fashion-boutiques', '<h2>Store essentials</h2>', '<p>Offering stitching too? See <a href="/blog/website-for-tailoring-services/">websites for tailoring services</a>.</p>\n\n'],
   ['directory-website-wordpress', '<h2>Content quality matters most</h2>', '<p>Running a content-heavy publication instead? See <a href="/blog/news-magazine-websites-wordpress/">news and magazine websites on WordPress</a>.</p>\n\n'],
   ['landing-page-vs-website', '<h2>Why landing pages usually convert ad traffic better</h2>', '<p>Deciding how big your main site should be? See <a href="/blog/one-page-vs-multi-page-website/">one-page vs multi-page websites</a>.</p>\n\n'],
+  // Round 24
+  ['how-long-to-build-wordpress-website', '<h2>Can it be done faster?</h2>', '<p>After launch, follow this <a href="/blog/first-90-days-after-website-launch/">90-day plan</a>.</p>\n\n'],
+  ['on-page-seo-checklist', '<h2>Content</h2>', '<p>More detail: <a href="/blog/write-meta-titles-descriptions/">how to write meta titles and descriptions</a>.</p>\n\n'],
+  ['website-design-mistakes', '<h2>Contact and conversion</h2>', '<p>Menus causing confusion? See <a href="/blog/website-navigation-structure/">how to structure your website navigation</a>.</p>\n\n'],
+  ['internal-linking-explained', '<h2>A quick internal linking routine</h2>', '<p>Breadcrumbs add structural links too; see <a href="/blog/breadcrumbs-explained/">breadcrumbs explained</a>.</p>\n\n'],
+  ['301-vs-302-redirects', '<h2>After setting redirects</h2>', '<p>For pages that truly no longer exist, make sure visitors land on a <a href="/blog/helpful-404-pages/">helpful 404 page</a>.</p>\n\n'],
+  ['stop-contact-form-spam', '<h2>Real example</h2>', '<p>Blog comment spam is a similar problem; see <a href="/blog/wordpress-comments-enable-or-disable/">should a business site enable comments?</a></p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

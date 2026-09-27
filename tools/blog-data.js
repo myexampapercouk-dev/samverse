@@ -950,6 +950,8 @@ module.exports = [
   <li>Product data for stores that isn't organised in a spreadsheet</li>
 </ul>
 
+<p>After launch, follow this <a href="/blog/first-90-days-after-website-launch/">90-day plan</a>.</p>
+
 <h2>Can it be done faster?</h2>
 <p>Yes, within reason. A landing page or small site can often go live in a few days if content is ready and decisions are quick. For urgent launches, a good approach is to launch the essential pages first and add the rest in a second phase.</p>
 
@@ -1586,6 +1588,8 @@ module.exports = [
   <li><strong>Everything on one page.</strong> Without separate service pages, you can't speak to each customer's needs or rank for each service.</li>
   <li><strong>Outdated information.</strong> Old prices, past events or a copyright year from years ago signal a neglected business.</li>
 </ol>
+
+<p>Menus causing confusion? See <a href="/blog/website-navigation-structure/">how to structure your website navigation</a>.</p>
 
 <h2>Contact and conversion</h2>
 <ol start="12">
@@ -3368,6 +3372,8 @@ module.exports = [
   <li><strong>Clean URL:</strong> short and descriptive, like <code>/wordpress-maintenance/</code>.</li>
 </ol>
 
+<p>More detail: <a href="/blog/write-meta-titles-descriptions/">how to write meta titles and descriptions</a>.</p>
+
 <h2>Content</h2>
 <ol start="6">
   <li><strong>One H1</strong> that states what the page is about.</li>
@@ -4316,6 +4322,8 @@ module.exports = [
   <li>Broken internal links after URLs change</li>
   <li>Dozens of links stuffed into one paragraph</li>
 </ul>
+
+<p>Breadcrumbs add structural links too; see <a href="/blog/breadcrumbs-explained/">breadcrumbs explained</a>.</p>
 
 <h2>A quick internal linking routine</h2>
 <ol>
@@ -6427,6 +6435,8 @@ module.exports = [
 
 <h2>Test after changes</h2>
 <p>After adding spam protection, submit the form yourself on desktop and mobile and confirm the email arrives. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a>.</p>
+
+<p>Blog comment spam is a similar problem; see <a href="/blog/wordpress-comments-enable-or-disable/">should a business site enable comments?</a></p>
 
 <h2>Real example</h2>
 <p>This website's contact form combines a hidden honeypot field, a time check and a simple maths question, with the honeypot also checked on the server, as described in the <a href="/work/samverse/">Samverse case study</a>.</p>
@@ -9027,6 +9037,8 @@ module.exports = [
   <li>Keep a spreadsheet of old URL → new URL for big changes</li>
 </ul>
 
+<p>For pages that truly no longer exist, make sure visitors land on a <a href="/blog/helpful-404-pages/">helpful 404 page</a>.</p>
+
 <h2>After setting redirects</h2>
 <p>Test old URLs, check Search Console for 404s, and keep redirects in place long term. See also <a href="/blog/canonical-tags-explained/">canonical tags explained</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
@@ -10592,6 +10604,326 @@ module.exports = [
 <p>Campaigns often perform best on dedicated landing pages regardless of your main site's structure; see <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</p>
 
 <p>Estimate costs with the <a href="/website-cost-calculator/">website cost calculator</a>, or see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'first-90-days-after-website-launch',
+    seoTitle: 'The First 90 Days After Your Website Launches',
+    title: 'The First 90 Days After Your Website Launches: A Practical Plan',
+    description: 'What to do after your new website goes live: week-one checks, indexing, tracking, reviews, first content, fixing issues and a 90-day plan to turn the launch into enquiries.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-seo-services', 'wordpress-maintenance', 'landing-page-design'],
+    body: `
+<p>Launching a website is the start, not the finish. What you do in the first three months decides whether it quietly sits there or starts bringing in business.</p>
+
+<h2>Week 1: check everything works</h2>
+<ul>
+  <li>Test every form, WhatsApp button and phone link, on mobile too</li>
+  <li>Check key pages on different phones and browsers</li>
+  <li>Confirm HTTPS works everywhere and old URLs redirect</li>
+  <li>Make sure "discourage search engines" is off and no noindex tags remain</li>
+  <li>Set up backups and uptime monitoring; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring</a></li>
+</ul>
+
+<h2>Weeks 1–2: get found and measured</h2>
+<ul>
+  <li>Verify Google Search Console and submit your sitemap; see <a href="/blog/xml-sitemaps-explained/">XML sitemaps</a></li>
+  <li>Request indexing for your homepage and key service pages</li>
+  <li>Set up GA4 with key events for forms, calls and WhatsApp</li>
+  <li>Update your Google Business Profile, social profiles and email signature with the new site</li>
+</ul>
+
+<h2>Weeks 2–4: build trust</h2>
+<ul>
+  <li>Ask recent happy customers for Google reviews and testimonials</li>
+  <li>Add testimonials and case studies to the site</li>
+  <li>Ask partners, suppliers and associations to link to your new site</li>
+</ul>
+
+<h2>Month 2: start content</h2>
+<ul>
+  <li>Publish 2–4 genuinely helpful articles answering customer questions</li>
+  <li>Link each to the relevant service page</li>
+  <li>Share them on LinkedIn and WhatsApp</li>
+</ul>
+<p>Plan with a <a href="/blog/website-content-calendar/">content calendar</a>.</p>
+
+<h2>Month 3: review and improve</h2>
+<ul>
+  <li>Search Console: which queries and pages are getting impressions?</li>
+  <li>Analytics: which pages bring enquiries, and which lose visitors?</li>
+  <li>Improve titles, calls to action and content on key pages</li>
+  <li>Fix any errors, slow pages or broken links</li>
+</ul>
+
+<h2>Set expectations</h2>
+<p>Traffic and rankings build gradually; see <a href="/blog/how-long-does-seo-take/">how long SEO takes</a>. If you need leads faster, run focused ads in parallel.</p>
+
+<p>Ongoing care keeps it all working; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'write-meta-titles-descriptions',
+    seoTitle: 'How to Write Meta Titles & Descriptions That Get Clicks',
+    title: 'How to Write Meta Titles and Descriptions That Get Clicks',
+    description: 'How to write page titles and meta descriptions for Google: length, keywords, benefits, uniqueness, local terms, examples for service and blog pages, and how to test what works.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
+    body: `
+<p>Your title and meta description are often the first thing people see in Google results. Good ones earn clicks even when you're not the top result; bad ones get skipped.</p>
+
+<h2>Title tags</h2>
+<ul>
+  <li><strong>Lead with the main topic</strong>: the service, product or question</li>
+  <li><strong>Keep it concise:</strong> roughly 50–60 characters, so it isn't cut off</li>
+  <li><strong>Add a differentiator or location</strong> where relevant</li>
+  <li><strong>Include your brand</strong> at the end if space allows</li>
+  <li><strong>Make every title unique</strong> across your site</li>
+</ul>
+
+<h2>Meta descriptions</h2>
+<ul>
+  <li><strong>About 140–160 characters</strong></li>
+  <li><strong>Summarise the page and the benefit</strong> of clicking</li>
+  <li><strong>Include a gentle call to action</strong> ("Get a free quote", "See the checklist")</li>
+  <li><strong>Match search intent</strong>, reflecting what the searcher wants</li>
+</ul>
+<p>Google sometimes rewrites descriptions using page text, but a good description still improves your chances.</p>
+
+<h2>Examples</h2>
+<table>
+  <thead><tr><th>Page</th><th>Weak title</th><th>Better title</th></tr></thead>
+  <tbody>
+    <tr><td>Service</td><td>Services | ABC Company</td><td>AC Repair in Pune: Same-Day Service | ABC Cooling</td></tr>
+    <tr><td>Blog</td><td>Blog Post 12</td><td>How Much Does a Website Cost in India? (2026 Guide)</td></tr>
+    <tr><td>Product</td><td>Product</td><td>Cold-Pressed Groundnut Oil 1L | Brand Name</td></tr>
+  </tbody>
+</table>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>The same title on many pages</li>
+  <li>Keyword stuffing ("website design, website designer, website design company…")</li>
+  <li>Titles that don't match the page content</li>
+  <li>Missing descriptions on key pages</li>
+  <li>Clickbait that disappoints visitors</li>
+</ul>
+
+<h2>Improve with data</h2>
+<p>In Search Console, find pages with many impressions but low click-through rates, then rewrite their titles and descriptions. Check again after a few weeks; see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
+
+<p>Part of the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'website-navigation-structure',
+    seoTitle: 'How to Structure Your Website Navigation',
+    title: 'How to Structure Your Website Navigation (Menus That Help Visitors and SEO)',
+    description: 'How to plan website navigation for a small business: menu items, page hierarchy, labels customers understand, mobile menus, footer links, and how structure supports SEO.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['website-redesign', 'wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Navigation is how visitors find their way around your site, and how search engines understand which pages matter. A clear structure helps both.</p>
+
+<h2>Start with what visitors want</h2>
+<p>List the top reasons people visit: see services, check prices, view work, learn about you, contact you. Your main menu should serve those tasks directly.</p>
+
+<h2>Keep the main menu short</h2>
+<ul>
+  <li>Around 5–7 top-level items</li>
+  <li>Clear, familiar labels: "Services", "Work", "About", "Blog", "Contact", not clever or vague ones</li>
+  <li>A prominent call-to-action button ("Get a Quote")</li>
+</ul>
+
+<h2>Organise a simple hierarchy</h2>
+<ul>
+  <li>Home → Services → individual service pages</li>
+  <li>Home → Industries → industry pages (if relevant)</li>
+  <li>Home → Blog → articles grouped by topic</li>
+</ul>
+<p>Important pages should be reachable within two or three clicks from the homepage.</p>
+
+<h2>Dropdowns and mega menus</h2>
+<p>Use dropdowns for groups like services, but keep them scannable. Very large menus overwhelm visitors, especially on mobile.</p>
+
+<h2>Mobile navigation</h2>
+<ul>
+  <li>A clear menu button and easy-to-tap links</li>
+  <li>Call and WhatsApp buttons visible without opening the menu</li>
+  <li>Test on real phones</li>
+</ul>
+
+<h2>Use the footer well</h2>
+<p>Footers are great for secondary links: all services, industries, resources, contact details and policies.</p>
+
+<h2>Supporting SEO</h2>
+<ul>
+  <li>Link to key service pages from the main menu and homepage</li>
+  <li>Use breadcrumbs on deeper pages; see <a href="/blog/breadcrumbs-explained/">breadcrumbs explained</a></li>
+  <li>Add contextual internal links in content; see <a href="/blog/internal-linking-explained/">internal linking</a></li>
+</ul>
+
+<h2>Test it</h2>
+<p>Ask someone unfamiliar with your business to find a specific service and your contact details. Watch where they hesitate, then simplify.</p>
+`,
+  },
+  {
+    slug: 'breadcrumbs-explained',
+    seoTitle: 'Breadcrumbs Explained for Small Business Websites',
+    title: 'Breadcrumbs Explained: Small Links That Help Visitors and SEO',
+    description: 'What website breadcrumbs are, how they help visitors navigate and search engines understand your site structure, how to add them in WordPress, and breadcrumb schema.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign', 'woocommerce-developer'],
+    body: `
+<p>Breadcrumbs are the small trail of links near the top of a page, like <em>Home / Blog / SEO / Article title</em>. They're simple, but they help visitors and search engines in several ways.</p>
+
+<h2>How breadcrumbs help visitors</h2>
+<ul>
+  <li>Show where they are on the site</li>
+  <li>Let them jump back to a category or section in one tap</li>
+  <li>Reduce frustration on deep pages, especially from search</li>
+</ul>
+
+<h2>How breadcrumbs help SEO</h2>
+<ul>
+  <li>Reinforce your site hierarchy for search engines</li>
+  <li>Add internal links to category and section pages</li>
+  <li>With breadcrumb structured data, Google may show the path in search results instead of a raw URL</li>
+</ul>
+
+<h2>Where to use them</h2>
+<ul>
+  <li>Blog articles (Home / Blog / Topic / Article)</li>
+  <li>Service and industry pages (Home / Services / Service)</li>
+  <li>Online store products (Home / Shop / Category / Product)</li>
+  <li>Case studies (Home / Work / Project)</li>
+</ul>
+<p>The homepage doesn't need them.</p>
+
+<h2>How to add them in WordPress</h2>
+<ul>
+  <li>SEO plugins such as Rank Math or Yoast include breadcrumb features and schema</li>
+  <li>Many themes and page builders include breadcrumb widgets</li>
+  <li>WooCommerce adds product breadcrumbs automatically in many themes</li>
+</ul>
+
+<h2>Best practices</h2>
+<ul>
+  <li>Keep them consistent across the site</li>
+  <li>Use clear, short labels</li>
+  <li>Make each level (except the current page) a link</li>
+  <li>Match the breadcrumb schema to the visible trail</li>
+</ul>
+
+<p>Every page on this website uses breadcrumbs with matching structured data. See also <a href="/blog/website-navigation-structure/">website navigation structure</a> and <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+`,
+  },
+  {
+    slug: 'helpful-404-pages',
+    seoTitle: '404 Pages That Help Instead of Frustrate',
+    title: '404 Pages That Help Instead of Frustrate',
+    description: 'What a 404 error is, why visitors hit them, how to design a helpful 404 page (search, links, contact), and how to find and fix broken links that cause 404s.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['website-redesign', 'wordpress-maintenance', 'wordpress-seo-services'],
+    body: `
+<p>A 404 page appears when someone visits a URL that doesn't exist. Every site gets some 404s. What matters is whether the page helps visitors continue, and whether you fix the causes.</p>
+
+<h2>Why visitors hit 404s</h2>
+<ul>
+  <li>Pages deleted or URLs changed without redirects</li>
+  <li>Typos in links, on your site or elsewhere</li>
+  <li>Old links in emails, ads or printed material</li>
+  <li>Mistyped URLs</li>
+</ul>
+
+<h2>What a helpful 404 page includes</h2>
+<ul>
+  <li>A friendly message that the page wasn't found</li>
+  <li>Your normal header and navigation</li>
+  <li>Links to popular pages: services, blog, contact</li>
+  <li>A search box, if your site has search</li>
+  <li>A clear way to contact you</li>
+</ul>
+<p>A touch of brand personality helps, as long as it stays helpful.</p>
+
+<h2>Technical must-haves</h2>
+<ul>
+  <li>The page must return a real 404 status code, not a 200 "soft 404"</li>
+  <li>Don't redirect all 404s to the homepage, which confuses visitors and search engines</li>
+  <li>Exclude 404 pages from search indexing</li>
+</ul>
+
+<h2>Find and fix the causes</h2>
+<ol>
+  <li>Check Google Search Console for "Not found (404)" pages</li>
+  <li>Use a crawler or plugin to find broken internal links</li>
+  <li>Fix internal links to point to the right pages</li>
+  <li>Set up 301 redirects for removed or moved pages that still get visits or have links; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a></li>
+</ol>
+
+<h2>After redesigns and migrations</h2>
+<p>404s often spike after URL changes. Monitor closely in the first weeks; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-comments-enable-or-disable',
+    seoTitle: 'WordPress Comments: Should You Enable Them?',
+    title: 'WordPress Comments: Should a Business Website Enable Them?',
+    description: 'Should a business website allow comments on WordPress? Pros and cons, spam and moderation, when comments add value, alternatives, and how to disable or manage them properly.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-maintenance', 'wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>WordPress comes with comments enabled on posts by default. For many business websites, they bring more spam than value. For others, they build community. Here's how to decide.</p>
+
+<h2>When comments add value</h2>
+<ul>
+  <li>You publish articles that genuinely spark discussion or questions</li>
+  <li>You have time to reply and moderate regularly</li>
+  <li>Comments add useful information (questions, experiences) to posts</li>
+  <li>You're building a community or publication</li>
+</ul>
+
+<h2>When to disable them</h2>
+<ul>
+  <li>Most comments you receive are spam</li>
+  <li>Nobody has time to moderate</li>
+  <li>Your site is mainly service pages and brochure content</li>
+  <li>Unanswered or spammy comments would look neglected</li>
+  <li>Regulated industries where public comments could create compliance issues</li>
+</ul>
+
+<h2>The downsides</h2>
+<ul>
+  <li>Spam and malicious links</li>
+  <li>Moderation time</li>
+  <li>Low-quality comments reflecting on your brand</li>
+  <li>Extra scripts and database load</li>
+</ul>
+
+<h2>If you enable comments</h2>
+<ul>
+  <li>Require moderation for first-time commenters</li>
+  <li>Use spam filtering</li>
+  <li>Add links in comments as nofollow/UGC (WordPress does this by default)</li>
+  <li>Reply promptly and helpfully</li>
+  <li>Close comments on older posts automatically</li>
+</ul>
+
+<h2>Alternatives</h2>
+<ul>
+  <li>An FAQ section updated with common questions; see <a href="/blog/faq-page-seo/">FAQ sections</a></li>
+  <li>A "questions? message us on WhatsApp" prompt at the end of posts</li>
+  <li>Discussion on LinkedIn or social posts where you share articles</li>
+</ul>
+
+<h2>How to disable comments</h2>
+<p>Turn off comments for new posts in Settings → Discussion, close them on existing posts in bulk, and remove comment sections from theme templates if needed. This site uses WhatsApp and a contact form instead of comments.</p>
 `,
   },
 ];
