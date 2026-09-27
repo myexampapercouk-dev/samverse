@@ -3412,4 +3412,343 @@ module.exports = [
 <p>Be the clearest, most trustworthy answer to your customers' questions, keep your business information consistent everywhere, and make your site easy to crawl. That's the foundation for both traditional search and AI answers; see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
+  {
+    slug: 'website-for-interior-designers-architects',
+    seoTitle: 'Websites for Interior Designers & Architects',
+    title: 'Websites for Interior Designers and Architects: What to Include',
+    description: 'How interior designers and architects can use their website to win better projects: portfolio structure, project case studies, process, services, enquiry forms and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'website-redesign', 'wordpress-seo-services'],
+    body: `
+<p>For interior designers and architects, the website is the portfolio. Clients judge your taste, attention to detail and professionalism from it before they ever meet you. A well-structured site attracts the projects you actually want.</p>
+
+<h2>Lead with your best work</h2>
+<ul>
+  <li><strong>Curate, don't dump.</strong> Show your strongest 8–15 projects rather than everything you've done.</li>
+  <li><strong>Professional photography</strong> is worth the investment. Your work is visual, and weak photos undersell it.</li>
+  <li><strong>Organise by type:</strong> residential, commercial, hospitality, retail or by style, so visitors find relevant examples quickly.</li>
+</ul>
+
+<h2>Turn projects into case studies</h2>
+<p>Each project page should tell a short story:</p>
+<ol>
+  <li>The client's brief and challenges (space, budget, style)</li>
+  <li>Your approach and key design decisions</li>
+  <li>Before and after photos, plans or renders</li>
+  <li>Materials, scope and timeline</li>
+  <li>A client quote, if you have permission</li>
+</ol>
+<p>Case studies show how you think, which matters more to serious clients than pretty pictures alone. See how case studies are structured on this site's <a href="/work/">portfolio</a>.</p>
+
+<h2>Explain your services and process</h2>
+<ul>
+  <li>Services: full design, turnkey execution, consultation, 3D visualisation, space planning</li>
+  <li>A clear step-by-step process from first meeting to handover</li>
+  <li>What clients need to provide, and typical timelines</li>
+  <li>How fees work, even if you don't publish exact prices</li>
+</ul>
+
+<h2>Make enquiring easy</h2>
+<ul>
+  <li>A project enquiry form asking for property type, location, size, scope and timeline</li>
+  <li>WhatsApp and phone for quick questions</li>
+  <li>Studio address and a map if clients visit</li>
+</ul>
+
+<h2>Design and performance</h2>
+<p>Your site should reflect your aesthetic, with generous white space, elegant typography and large imagery, without being slow. Large project photos must be properly compressed and served in modern formats; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
+
+<h2>Get found locally</h2>
+<ul>
+  <li>Target searches like "interior designer in {city}" and "office interior design {city}"</li>
+  <li>Complete your Google Business Profile with project photos and reviews</li>
+  <li>Write articles answering client questions: costs, timelines, materials, trends</li>
+  <li>Share projects on Instagram, Pinterest and Houzz, linking back to your case studies</li>
+</ul>
+
+<p>A portfolio-led website with clear case studies helps you attract better-fit clients and justify premium fees. See what's included in a professional <a href="/wordpress-website-development/">WordPress website</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-gyms-fitness-studios',
+    seoTitle: 'Websites for Gyms, Yoga Studios & Fitness Trainers',
+    title: 'Websites for Gyms, Yoga Studios and Fitness Trainers',
+    description: 'What gyms, yoga studios and personal trainers need on their website to get more members: class schedules, trial sign-ups, memberships, online payments, trainers and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design', 'woocommerce-developer'],
+    body: `
+<p>People looking for a gym, yoga studio or personal trainer usually compare a few options nearby, check schedules and prices, and look for a reason to try one. Your website should make choosing you easy.</p>
+
+<h2>What potential members look for</h2>
+<ul>
+  <li>Location, opening hours and parking</li>
+  <li>Class types and a clear schedule</li>
+  <li>Membership options and pricing (or at least a starting price)</li>
+  <li>Trainers and their qualifications</li>
+  <li>Photos of the space and equipment</li>
+  <li>Reviews and transformation stories (with permission)</li>
+</ul>
+
+<h2>Essential pages and features</h2>
+<ol>
+  <li><strong>Home:</strong> what makes you different, location, main offer and a "Book a free trial" button</li>
+  <li><strong>Classes / programs:</strong> a page for each (strength, yoga, HIIT, Zumba, personal training)</li>
+  <li><strong>Schedule:</strong> an up-to-date timetable that staff can edit easily</li>
+  <li><strong>Memberships:</strong> plans, what's included, and how to join</li>
+  <li><strong>Trainers:</strong> photos, specialties and certifications</li>
+  <li><strong>Contact:</strong> map, hours, phone and WhatsApp</li>
+</ol>
+
+<h2>Turn visitors into members</h2>
+<ul>
+  <li><strong>Free trial or first-class offer</strong> with a short sign-up form</li>
+  <li><strong>Online payments</strong> for memberships, packages and workshops; see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments</a></li>
+  <li><strong>Class booking</strong> through a booking plugin or your existing gym software</li>
+  <li><strong>WhatsApp</strong> for quick questions about timings and fees</li>
+  <li><strong>Landing pages</strong> for seasonal campaigns (New Year, summer, corporate plans). See <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</li>
+</ul>
+
+<h2>Content that builds trust</h2>
+<ul>
+  <li>Member stories and before/after results (genuine, with consent, avoiding exaggerated claims)</li>
+  <li>Short videos of classes and the space</li>
+  <li>Articles on workouts, nutrition basics and beginner guides</li>
+</ul>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "gym near me", "yoga classes in {area}" and "personal trainer {city}"</li>
+  <li>Keep your Google Business Profile complete with photos, hours and reviews</li>
+  <li>Make sure name, address and phone match everywhere</li>
+</ul>
+
+<h2>Keep it fast and mobile-friendly</h2>
+<p>Most people search for gyms on their phones, often nearby. Fast pages, tap-to-call and a visible trial button are essential.</p>
+
+<p>Ready for a site that fills your trial classes? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-travel-agencies',
+    seoTitle: 'Websites for Travel Agencies & Tour Operators',
+    title: 'Websites for Travel Agencies and Tour Operators: Turning Browsers Into Bookings',
+    description: 'How travel agencies and tour operators can build websites that sell: tour package pages, itineraries, enquiry and booking flows, trust signals, content marketing and SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'hotel-website-design', 'landing-page-design'],
+    body: `
+<p>Travellers dream and research online long before they book. A travel agency or tour operator website should inspire them, answer their practical questions and make enquiring or booking effortless.</p>
+
+<h2>Package pages that sell</h2>
+<p>Each tour or package deserves its own page with:</p>
+<ul>
+  <li>Beautiful, fast-loading photos</li>
+  <li>A day-by-day itinerary</li>
+  <li>What's included and excluded (hotels, meals, transfers, sightseeing)</li>
+  <li>Price per person or "starting from", and available dates</li>
+  <li>Cancellation and payment terms</li>
+  <li>A clear "Enquire" or "Book now" button, plus WhatsApp</li>
+</ul>
+
+<h2>Organise the way travellers browse</h2>
+<ul>
+  <li>By destination (domestic and international)</li>
+  <li>By type: honeymoon, family, adventure, pilgrimage, corporate, group tours</li>
+  <li>By duration and budget</li>
+</ul>
+
+<h2>Enquiry vs online booking</h2>
+<ul>
+  <li><strong>Enquiry-based:</strong> best for customised trips. A short form (destination, dates, travellers, budget) plus fast WhatsApp follow-up.</li>
+  <li><strong>Online booking and payment:</strong> suits fixed-departure group tours and activities, with deposits or full payment through a gateway.</li>
+</ul>
+
+<h2>Build trust</h2>
+<ul>
+  <li>Registration, affiliations and years of experience (only what you can back up)</li>
+  <li>Genuine reviews and traveller photos</li>
+  <li>Clear contact details and office address</li>
+  <li>Transparent policies for cancellations and refunds</li>
+</ul>
+
+<h2>Content marketing works well in travel</h2>
+<p>Destination guides, "best time to visit" articles, packing lists and itinerary ideas attract travellers early in their research and build trust. Link each guide to relevant packages. Pilgrimage and temple travel content is a strong niche; the <a href="/work/our-temples/">Our Temples</a> directory shows how much demand there is for detailed temple information.</p>
+
+<h2>SEO tips</h2>
+<ul>
+  <li>Target specific searches: "{destination} tour package from {city}", "honeymoon packages {destination}"</li>
+  <li>Unique descriptions for every package, never copied from suppliers</li>
+  <li>Fast image-heavy pages; see <a href="/blog/image-optimization-wordpress/">image optimization</a></li>
+  <li>Google Business Profile with reviews</li>
+</ul>
+
+<h2>Campaign landing pages</h2>
+<p>Seasonal offers and ads perform best with dedicated landing pages for each package or destination; see <a href="/landing-page-design/">landing page design</a>. For accommodation businesses, see <a href="/hotel-website-design/">hotel website design</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-dentists',
+    seoTitle: 'Dental Clinic Websites: What Patients Look For',
+    title: 'Dental Clinic Websites: What Patients Look For Before Booking',
+    description: 'How dentists and dental clinics can attract more patients online: treatment pages, trust signals, appointment booking, before-and-after galleries, local SEO and Google reviews.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>Choosing a dentist is personal. Many patients are anxious about treatment and costs, so they research carefully online. A dental clinic website that reassures, explains and makes booking simple can bring in a steady stream of new patients.</p>
+
+<h2>What patients want to know</h2>
+<ul>
+  <li>Is this dentist qualified, experienced and gentle?</li>
+  <li>Do they offer the treatment I need?</li>
+  <li>What will it cost, and do they accept my insurance or offer payment options?</li>
+  <li>Is the clinic clean and modern?</li>
+  <li>How quickly can I get an appointment, and where is it?</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ol>
+  <li><strong>Home:</strong> clinic introduction, key treatments, reviews and an appointment button</li>
+  <li><strong>Dentist profiles:</strong> qualifications, registration, experience and a friendly photo</li>
+  <li><strong>Treatment pages:</strong> one each for cleaning, fillings, root canal, implants, braces and aligners, whitening and pediatric dentistry, explaining the procedure, recovery and FAQs</li>
+  <li><strong>Clinic tour:</strong> photos of the reception, treatment rooms and equipment</li>
+  <li><strong>Contact:</strong> timings, map, phone, WhatsApp and emergency information</li>
+</ol>
+
+<h2>Features that increase bookings</h2>
+<ul>
+  <li>Short appointment request form on every page</li>
+  <li>One-tap call and WhatsApp on mobile</li>
+  <li>Before-and-after galleries for cosmetic treatments (with patient consent)</li>
+  <li>Transparent information on pricing ranges or consultation fees, if you're comfortable sharing</li>
+  <li>Patient testimonials and a link to Google reviews</li>
+</ul>
+
+<h2>Address anxiety</h2>
+<p>Explain what happens at a first visit, how pain is managed, and how you care for nervous patients and children. Calm, friendly language and real photos of your team help a lot.</p>
+
+<h2>Stay within guidelines</h2>
+<p>Keep treatment information accurate, avoid guaranteed outcomes, and follow professional advertising guidelines for dentists.</p>
+
+<h2>Local SEO for dentists</h2>
+<ul>
+  <li>Target "dentist in {area}", "root canal treatment {city}" and "dental implants {city}"</li>
+  <li>Complete your Google Business Profile and ask happy patients for reviews; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
+  <li>Keep name, address and phone consistent across directories</li>
+</ul>
+
+<p>Much of the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> applies to dental practices too. See what's included in a <a href="/wordpress-website-for-doctors/">website for doctors and clinics</a>.</p>
+`,
+  },
+  {
+    slug: 'portfolio-website-freelancers-creatives',
+    seoTitle: 'Portfolio Websites for Freelancers & Creatives',
+    title: 'Portfolio Websites for Freelancers, Photographers and Creatives',
+    description: 'How freelancers, photographers, designers and other creatives can build a portfolio website that wins clients: curation, case studies, services, pricing signals and SEO.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-website-development', 'figma-to-wordpress', 'wordpress-speed-optimization'],
+    body: `
+<p>For freelancers and creatives, a portfolio website does what a shop window does for a store: it shows what you can do and invites the right people in. Social media profiles are useful, but a website you own is where serious clients check you out.</p>
+
+<h2>Curate ruthlessly</h2>
+<ul>
+  <li>Show your best 6–12 pieces, not everything you've ever made</li>
+  <li>Feature the kind of work you want more of</li>
+  <li>Group work by type (branding, weddings, product photography, web design)</li>
+</ul>
+
+<h2>Show your thinking with case studies</h2>
+<p>Clients hire people who solve problems. For key projects, explain the brief, your process, the result, and the client's feedback. This site's <a href="/work/">case studies</a> follow that pattern: client, goals, what was built and the tools used.</p>
+
+<h2>Make it clear what you offer</h2>
+<ul>
+  <li>A services section: what you do, who it's for, and how a project works</li>
+  <li>Pricing signals such as "projects start from" or package options. This filters out poor-fit enquiries.</li>
+  <li>Availability and turnaround times</li>
+</ul>
+
+<h2>Build trust</h2>
+<ul>
+  <li>An about page with a real photo and your story</li>
+  <li>Client logos and testimonials (with permission)</li>
+  <li>Links to your profiles on LinkedIn, Behance, Dribbble or Instagram</li>
+</ul>
+
+<h2>Make contacting you easy</h2>
+<ul>
+  <li>A short enquiry form (name, project type, budget range, timeline)</li>
+  <li>WhatsApp and email</li>
+  <li>A clear call to action on every page</li>
+</ul>
+
+<h2>Photographers: speed matters</h2>
+<p>Image-heavy portfolios can be slow. Use properly sized, compressed images in modern formats, lazy-load galleries and choose good hosting. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>. For client galleries, use password-protected pages or a dedicated gallery tool.</p>
+
+<h2>Get found</h2>
+<ul>
+  <li>Target your niche and location: "wedding photographer in Jaipur", "Shopify designer for fashion brands"</li>
+  <li>Write short articles or behind-the-scenes posts about projects</li>
+  <li>Get listed on relevant directories and marketplaces, linking back to your site</li>
+  <li>Ask clients to credit or link to you where appropriate</li>
+</ul>
+
+<p>A portfolio site you own keeps working when social algorithms change. See <a href="/wordpress-website-development/">WordPress website development</a>, or bring your own design with <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-event-wedding-planners',
+    seoTitle: 'Websites for Event & Wedding Planners',
+    title: 'Websites for Event and Wedding Planners: Showcasing Your Work and Winning Enquiries',
+    description: 'What event and wedding planners need on their website: event galleries, service packages, vendor partners, testimonials, enquiry forms and SEO for local wedding searches.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design', 'wordpress-speed-optimization'],
+    body: `
+<p>Couples and companies choosing an event or wedding planner are trusting you with a day that has to go right. Your website should show that you can deliver, visually and emotionally, and make it easy to start a conversation.</p>
+
+<h2>Show real events</h2>
+<ul>
+  <li>Galleries of real weddings and events you've planned, with a short story for each</li>
+  <li>Variety: intimate ceremonies, large weddings, destination events, corporate conferences, launches</li>
+  <li>Photos of décor, venues, stage setups and guest experiences</li>
+</ul>
+<p>Credit photographers where appropriate, and get client permission before publishing.</p>
+
+<h2>Explain your services clearly</h2>
+<ul>
+  <li>Full planning, partial planning, day-of coordination</li>
+  <li>Décor and design, venue sourcing, vendor management, guest hospitality, logistics</li>
+  <li>Packages or "starting from" ranges to help clients self-qualify</li>
+  <li>Your planning process, from first meeting to event day</li>
+</ul>
+
+<h2>Build trust</h2>
+<ul>
+  <li>Testimonials and video messages from real clients</li>
+  <li>Vendor and venue partners you work with</li>
+  <li>Features in publications or awards you've genuinely received</li>
+  <li>Your team, with photos</li>
+</ul>
+
+<h2>Make enquiring easy</h2>
+<p>Use a short form asking for event type, date, city, guest count and budget range, plus WhatsApp for quick conversations. Many clients browse on their phones late at night, so make sure everything works well on mobile. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
+
+<h2>Performance with lots of photos</h2>
+<p>Event galleries can be huge. Compress images, use thumbnails in grids, lazy-load galleries and choose good hosting so pages stay fast; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
+
+<h2>SEO and marketing</h2>
+<ul>
+  <li>Target "wedding planner in {city}", "destination wedding planner {place}" and "corporate event management {city}"</li>
+  <li>Write planning guides: checklists, budgets, venue ideas, timelines</li>
+  <li>Create pages for key venues or destinations only where you have real experience and photos</li>
+  <li>Use landing pages for wedding-season campaigns; see <a href="/landing-page-design/">landing page design</a></li>
+  <li>Keep a strong Google Business Profile and Instagram presence, linking back to your site</li>
+</ul>
+
+<p>A beautiful, fast website with real stories and easy enquiries helps you book the events you want. See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
 ];
