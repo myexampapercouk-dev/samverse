@@ -1917,5 +1917,47 @@
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
     <description>How WordPress malware scanners work: plugin scanners, remote scanners and server-side scanning, what each can and cannot detect, popular options, and why a clean scan is not a guarantee.</description>
   </item>
+  <item>
+    <title>Hosting Account Suspended for Malware? How to Get Your Site Back Online</title>
+    <link>https://samverse.space/blog/hosting-suspended-malware/</link>
+    <guid>https://samverse.space/blog/hosting-suspended-malware/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Why hosts suspend accounts for malware, spam or phishing, what to ask your host, how to clean the account (including every site in it), get reactivated and avoid another suspension.</description>
+  </item>
+  <item>
+    <title>&quot;This Site May Be Hacked&quot; Label in Google Results: How to Remove It</title>
+    <link>https://samverse.space/blog/this-site-may-be-hacked-google/</link>
+    <guid>https://samverse.space/blog/this-site-may-be-hacked-google/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What the &quot;This site may be hacked&quot; label in Google search results means, why it appears, how to find and clean the hacked content, and how to request a review in Search Console to remove it.</description>
+  </item>
+  <item>
+    <title>WordPress File Permissions Explained: 644, 755 and Keeping Files Safe</title>
+    <link>https://samverse.space/blog/wordpress-file-permissions/</link>
+    <guid>https://samverse.space/blog/wordpress-file-permissions/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What file permissions mean on a WordPress server, commonly recommended settings for files, folders and wp-config.php, why 777 is dangerous, and how to check and fix permissions safely.</description>
+  </item>
+  <item>
+    <title>WordPress Firewalls Explained: Cloud, Server and Plugin WAFs</title>
+    <link>https://samverse.space/blog/wordpress-firewall-waf-explained/</link>
+    <guid>https://samverse.space/blog/wordpress-firewall-waf-explained/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What a web application firewall (WAF) does for WordPress, the difference between cloud (DNS-level), server-level and plugin firewalls, virtual patching, bot protection and which setup suits a business site.</description>
+  </item>
+  <item>
+    <title>Hardening wp-config.php: Security Settings Every WordPress Site Should Use</title>
+    <link>https://samverse.space/blog/harden-wp-config-php/</link>
+    <guid>https://samverse.space/blog/harden-wp-config-php/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Security settings in wp-config.php explained: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file itself, with cautions for each.</description>
+  </item>
+  <item>
+    <title>How to Recover Google Rankings After Your Website Was Hacked</title>
+    <link>https://samverse.space/blog/recover-rankings-after-hack/</link>
+    <guid>https://samverse.space/blog/recover-rankings-after-hack/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Why rankings drop after a hack and how to recover: clean up, remove spam URLs, check for injected noindex, robots and canonical changes, restore lost pages, handle warnings and monitor Search Console.</description>
+  </item>
 </channel>
 </rss>

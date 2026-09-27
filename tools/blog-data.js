@@ -1224,6 +1224,8 @@ module.exports = [
 
 <p>More on getting backups right: <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>
 
+<p>Server-side hardening: <a href="/blog/wordpress-file-permissions/">file permissions</a> and <a href="/blog/harden-wp-config-php/">wp-config.php settings</a>.</p>
+
 <h2>Hosting and server</h2>
 <ol start="16">
   <li><strong>Choose reputable hosting</strong> with malware scanning, firewalls and account isolation.</li>
@@ -13552,6 +13554,8 @@ module.exports = [
   <li>Does the host's status page report an outage?</li>
 </ul>
 
+<p>Suspended for malware? See <a href="/blog/hosting-suspended-malware/">what to do when your hosting is suspended</a>.</p>
+
 <h2>Step 5: Think about recent changes</h2>
 <p>Did anyone update plugins, change themes, edit code, move hosting or change DNS in the last day or two? The most recent change is the most likely cause, and undoing it is often the fix.</p>
 
@@ -13781,6 +13785,8 @@ module.exports = [
 
 <h2>Step 4: Request a review</h2>
 <p>In Search Console's Security issues report, confirm you've fixed the problems and request a review, explaining what you found and fixed. Reviews commonly take from a day to a few days. If the review fails, Google shows sample URLs that still have problems.</p>
+
+<p>Seeing a label in search results instead? See <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a>.</p>
 
 <h2>Step 5: Check other blocklists</h2>
 <p>Some antivirus and security vendors keep their own blocklists. Check your domain on multiple site-reputation checkers and request removal where needed.</p>
@@ -15116,6 +15122,8 @@ module.exports = [
   <li>Set up a firewall, file-change monitoring and off-site backups</li>
 </ul>
 
+<p>Afterwards, see <a href="/blog/recover-rankings-after-hack/">how to recover Google rankings after a hack</a>.</p>
+
 <h2>Want it done for you?</h2>
 <p>I clean hacked WordPress sites urgently, usually within 24–48 hours of getting access, and harden them so it doesn't happen again. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
@@ -15482,6 +15490,8 @@ module.exports = [
 <p>Without protection, attacks aren't blocked. Without monitoring, hacks go unnoticed for weeks. Without backups, recovery is slower and harder.</p>
 <p><strong>Fix:</strong> a firewall, uptime and file-change monitoring, and off-site backups; see the <a href="/blog/wordpress-security-checklist/">security checklist</a>.</p>
 
+<p>Choosing protection? See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a>.</p>
+
 <h2>It's rarely personal</h2>
 <p>Most attacks are automated. Bots don't care whether you're a big brand or a small clinic; they look for any site with a known weakness, then use it for spam, redirects or phishing.</p>
 
@@ -15594,6 +15604,337 @@ module.exports = [
 
 <h2>Scanners find, people clean</h2>
 <p>A scanner report is a starting point. Proper clean-up means removing every infected file, backdoor and database entry, and closing the entry point. See <a href="/blog/remove-malware-wordpress-step-by-step/">removing malware step by step</a> or <a href="/wordpress-malware-removal/">get it cleaned professionally</a>.</p>
+`,
+  },
+  {
+    slug: 'hosting-suspended-malware',
+    seoTitle: 'Hosting Account Suspended for Malware? What to Do',
+    title: 'Hosting Account Suspended for Malware? How to Get Your Site Back Online',
+    description: 'Why hosts suspend accounts for malware, spam or phishing, what to ask your host, how to clean the account (including every site in it), get reactivated and avoid another suspension.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-migration', 'wordpress-maintenance'],
+    body: `
+<p>You open your website and see "Account Suspended", or your host emails to say your account has been disabled because of malware. It's stressful, but hosts suspend accounts to protect other customers and the server, and they will usually reactivate once the problem is fixed.</p>
+
+<h2>Common reasons for suspension</h2>
+<ul>
+  <li>Malware or malicious files detected by the host's scanner</li>
+  <li>The account sending spam email; see <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam</a></li>
+  <li>Phishing pages hosted on your site, often reported by third parties</li>
+  <li>Excessive server resource use, sometimes caused by malware or bot attacks</li>
+  <li>Unpaid invoices (check this first)</li>
+</ul>
+
+<h2>Step 1: Read the notice carefully</h2>
+<p>The email or support ticket usually says why the account was suspended and sometimes lists infected files. Keep it for reference.</p>
+
+<h2>Step 2: Ask your host the right questions</h2>
+<ul>
+  <li>Which files or activities triggered the suspension?</li>
+  <li>Can they provide a full scan report?</li>
+  <li>Can they give temporary access (for example, file access only, or access limited to your IP address) so you can clean the site?</li>
+  <li>What do they need from you to reactivate the account?</li>
+</ul>
+
+<h2>Step 3: Back up before cleaning</h2>
+<p>Download the files and database. Even infected, this backup contains your real content.</p>
+
+<h2>Step 4: Clean the whole account, not just one site</h2>
+<p>If your account has several websites, old test sites or unused installs, all of them need checking. One neglected site can reinfect the others. Delete anything you don't need. Then follow the full <a href="/blog/remove-malware-wordpress-step-by-step/">malware clean-up process</a> for each remaining site.</p>
+
+<h2>Step 5: Fix the cause</h2>
+<ul>
+  <li>Update WordPress, plugins and themes</li>
+  <li>Remove nulled or abandoned plugins</li>
+  <li>Change every password: hosting, SFTP, database, email and WordPress</li>
+  <li>Remove backdoors; see <a href="/blog/find-remove-wordpress-backdoors/">finding backdoors</a></li>
+</ul>
+
+<h2>Step 6: Request a re-scan and reactivation</h2>
+<p>Tell the host what you found and fixed. Most hosts re-scan the account before lifting the suspension.</p>
+
+<h2>Step 7: Check Google and email reputation</h2>
+<p>After reactivation, check Search Console for security issues and check your domain on email blacklists. See <a href="/blog/deceptive-site-ahead-warning-fix/">fixing browser warnings</a>.</p>
+
+<h2>Should you change hosts?</h2>
+<p>If suspensions keep happening, or your host offers little help, moving to better hosting with isolation between sites, malware scanning and backups may be worth it. But clean the site first; moving an infected site just moves the problem. See <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting</a>.</p>
+
+<p>Need your site back online quickly? See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'this-site-may-be-hacked-google',
+    seoTitle: '"This Site May Be Hacked" in Google Results: How to Remove It',
+    title: '"This Site May Be Hacked" Label in Google Results: How to Remove It',
+    description: 'What the "This site may be hacked" label in Google search results means, why it appears, how to find and clean the hacked content, and how to request a review in Search Console to remove it.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-seo-services', 'wordpress-maintenance'],
+    body: `
+<p>Seeing "This site may be hacked" under your website in Google's search results is alarming, and it makes searchers much less likely to click. Google shows this label when it believes a third party may have changed pages on your site or added spam. Here's how to get rid of it.</p>
+
+<h2>How it differs from browser warnings</h2>
+<ul>
+  <li><strong>"This site may be hacked":</strong> a label in search results, usually for spam content added by hackers</li>
+  <li><strong>"Deceptive site ahead" / "Dangerous site":</strong> a full-page browser warning, usually for phishing or malware; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing browser warnings</a></li>
+</ul>
+<p>Both mean the site needs cleaning, but the label often relates to SEO spam.</p>
+
+<h2>Why it appears</h2>
+<ul>
+  <li>Spam pages added to your site, often in other languages</li>
+  <li>Hidden spam links injected into your pages</li>
+  <li>Changed titles and descriptions showing spam keywords in results</li>
+  <li>Redirects sending search visitors elsewhere</li>
+</ul>
+
+<h2>Step 1: Verify your site in Search Console</h2>
+<p>If you haven't already, verify ownership in Google Search Console; see <a href="/blog/setup-google-analytics-search-console/">setting up Search Console</a>. Check the Security issues report for details and sample URLs.</p>
+
+<h2>Step 2: Check for rogue owners</h2>
+<p>In Settings → Users and permissions, remove anyone you don't recognise. Attackers often add themselves to submit spam sitemaps.</p>
+
+<h2>Step 3: Find the hacked content</h2>
+<ul>
+  <li>Search <code>site:yourdomain.com</code> for unfamiliar pages</li>
+  <li>Inspect sample URLs from Search Console with URL Inspection</li>
+  <li>Look for cloaked content that only Googlebot sees</li>
+</ul>
+<p>See <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a>.</p>
+
+<h2>Step 4: Clean the site completely</h2>
+<p>Remove spam pages and injected code, then find and close the entry point and remove backdoors. See <a href="/blog/remove-malware-wordpress-step-by-step/">removing malware step by step</a>.</p>
+
+<h2>Step 5: Request a review</h2>
+<p>In the Security issues report, confirm you've fixed the issues and request a review, describing what you found and how you fixed it. Once Google confirms the site is clean, the label is removed from results.</p>
+
+<h2>If the label came without a Security issues report</h2>
+<p>Sometimes the label appears without detailed information. Clean the site anyway, make sure spam URLs return 404 or 410, submit your clean sitemap and monitor results as Google recrawls.</p>
+
+<h2>Recover your traffic</h2>
+<p>After the label goes, check your important pages are indexed and ranking; see <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
+
+<p>Need it cleaned quickly? See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-file-permissions',
+    seoTitle: 'WordPress File Permissions Explained (644, 755 and More)',
+    title: 'WordPress File Permissions Explained: 644, 755 and Keeping Files Safe',
+    description: 'What file permissions mean on a WordPress server, commonly recommended settings for files, folders and wp-config.php, why 777 is dangerous, and how to check and fix permissions safely.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
+    body: `
+<p>File permissions control who can read, write and run files on your server. Wrong permissions can let attackers modify your files, or can break updates and uploads. Getting them right is a simple but important part of WordPress security.</p>
+
+<h2>What the numbers mean</h2>
+<p>Permissions are shown as three digits, for the file's owner, its group and everyone else:</p>
+<table>
+  <thead><tr><th>Digit</th><th>Meaning</th></tr></thead>
+  <tbody>
+    <tr><td>7</td><td>Read, write and execute</td></tr>
+    <tr><td>6</td><td>Read and write</td></tr>
+    <tr><td>5</td><td>Read and execute</td></tr>
+    <tr><td>4</td><td>Read only</td></tr>
+    <tr><td>0</td><td>No access</td></tr>
+  </tbody>
+</table>
+<p>So 644 means the owner can read and write, while everyone else can only read.</p>
+
+<h2>Commonly recommended settings</h2>
+<table>
+  <thead><tr><th>Item</th><th>Typical permission</th></tr></thead>
+  <tbody>
+    <tr><td>Folders</td><td>755</td></tr>
+    <tr><td>Files</td><td>644</td></tr>
+    <tr><td>wp-config.php</td><td>Stricter, such as 640, 600 or 440, depending on your server</td></tr>
+    <tr><td>.htaccess</td><td>644</td></tr>
+  </tbody>
+</table>
+<p>The right values depend on how your server runs PHP and who owns the files, so check your host's recommendations.</p>
+
+<h2>Never use 777</h2>
+<p>777 lets anyone on the server write to the file or folder. It's sometimes suggested as a quick fix for upload errors, but it's a serious security risk. Fix ownership or use the correct permission instead.</p>
+
+<h2>Ownership matters too</h2>
+<p>Files should be owned by your hosting account's user. Wrong ownership, often after a migration or manual upload, can cause update failures that tempt people into using unsafe permissions.</p>
+
+<h2>How to check and change permissions</h2>
+<ul>
+  <li><strong>Hosting file manager:</strong> most show a permissions column and let you change it</li>
+  <li><strong>SFTP client:</strong> right-click a file and choose permissions</li>
+  <li><strong>Command line:</strong> for developers with SSH access</li>
+</ul>
+<p>Some hosts have a tool to reset permissions across the whole site.</p>
+
+<h2>Other hardening steps</h2>
+<ul>
+  <li>Block PHP execution in the uploads folder</li>
+  <li>Disable file editing in the WordPress dashboard</li>
+  <li>Protect wp-config.php; see <a href="/blog/harden-wp-config-php/">hardening wp-config.php</a></li>
+</ul>
+
+<h2>After a hack, check permissions</h2>
+<p>Attackers sometimes change permissions to make their files harder to remove, or to keep write access. Resetting permissions is part of a proper <a href="/blog/remove-malware-wordpress-step-by-step/">malware clean-up</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-firewall-waf-explained',
+    seoTitle: 'WordPress Firewall (WAF) Explained: Cloud vs Plugin',
+    title: 'WordPress Firewalls Explained: Cloud, Server and Plugin WAFs',
+    description: 'What a web application firewall (WAF) does for WordPress, the difference between cloud (DNS-level), server-level and plugin firewalls, virtual patching, bot protection and which setup suits a business site.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
+    body: `
+<p>A web application firewall (WAF) filters traffic to your website, blocking known attacks, malicious bots and password-guessing before they can do damage. It's one of the most effective layers of WordPress protection, alongside updates and strong logins.</p>
+
+<h2>What a WAF blocks</h2>
+<ul>
+  <li>Attempts to exploit known plugin and theme vulnerabilities</li>
+  <li>Brute-force login attacks</li>
+  <li>Malicious bots and scrapers</li>
+  <li>Common attack patterns like SQL injection and cross-site scripting</li>
+  <li>Traffic from known bad IP addresses</li>
+</ul>
+
+<h2>Three types of firewall</h2>
+<table>
+  <thead><tr><th>Type</th><th>Where it runs</th><th>Pros</th><th>Cons</th></tr></thead>
+  <tbody>
+    <tr><td>Cloud / DNS-level (e.g. Cloudflare, Sucuri)</td><td>Before traffic reaches your server</td><td>Blocks attacks early, reduces server load, often includes a CDN</td><td>Needs DNS changes; attackers who find your server's real IP can bypass it unless the server is locked down</td></tr>
+    <tr><td>Server-level (host-provided)</td><td>On the hosting server</td><td>No setup for you; protects all sites on the account</td><td>Depends on your host's quality</td></tr>
+    <tr><td>Plugin (e.g. Wordfence)</td><td>Inside WordPress</td><td>Understands WordPress users and context; easy to install</td><td>Runs after PHP loads, so it uses server resources</td></tr>
+  </tbody>
+</table>
+
+<h2>Virtual patching</h2>
+<p>Some firewalls add rules that block attempts to exploit newly discovered vulnerabilities, even before you've updated the plugin. It's a useful safety net, not a replacement for updates.</p>
+
+<h2>Bot protection and rate limiting</h2>
+<p>Limiting how often an IP can hit your login page or forms stops brute-force attacks and form spam, and reduces load during bot floods.</p>
+
+<h2>A sensible setup for a business site</h2>
+<ul>
+  <li>A cloud firewall or CDN with security features, or your host's firewall</li>
+  <li>A WordPress security plugin for login protection and file monitoring, if your host doesn't cover those</li>
+  <li>Avoid stacking multiple firewall plugins that do the same job, since they conflict and slow the site</li>
+</ul>
+
+<h2>Firewalls don't replace the basics</h2>
+<p>A firewall can't protect a site with an admin password leaked elsewhere, or one running abandoned plugins forever. Keep updating, use 2FA and keep backups. See <a href="/blog/secure-wordpress-login/">securing your login</a> and the <a href="/blog/wordpress-security-checklist/">security checklist</a>.</p>
+
+<h2>After a hack</h2>
+<p>A firewall is part of hardening after a clean-up, but clean the site first. A firewall won't remove malware or backdoors already inside. See <a href="/blog/remove-malware-wordpress-step-by-step/">malware removal step by step</a>.</p>
+`,
+  },
+  {
+    slug: 'harden-wp-config-php',
+    seoTitle: 'Harden wp-config.php: WordPress Security Settings',
+    title: 'Hardening wp-config.php: Security Settings Every WordPress Site Should Use',
+    description: 'Security settings in wp-config.php explained: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file itself, with cautions for each.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>wp-config.php holds your WordPress database credentials and core settings, which makes it one of the most sensitive files on your site. A few settings in this file noticeably improve security. Always back up the file before editing, since a typo can take the site down.</p>
+
+<h2>1. Unique security keys and salts</h2>
+<p>These random strings secure login cookies. They should be unique and long. WordPress.org provides a generator for fresh keys. Changing them logs everyone out, which is useful after a hack.</p>
+
+<h2>2. Disable file editing in the dashboard</h2>
+<p>Setting <code>DISALLOW_FILE_EDIT</code> to true removes the theme and plugin code editors from the dashboard. If an attacker gets into an admin account, they can't easily edit PHP files from there.</p>
+<p>A stricter setting, <code>DISALLOW_FILE_MODS</code>, also blocks installing and updating plugins from the dashboard. Only use it if updates are handled another way.</p>
+
+<h2>3. Turn off debug display on live sites</h2>
+<p>Debug output can reveal file paths and other details to visitors. On a live site, keep debug display off. If you need to troubleshoot, log errors to a private file instead of showing them.</p>
+
+<h2>4. Force HTTPS for the admin area</h2>
+<p><code>FORCE_SSL_ADMIN</code> ensures logins and admin sessions always use HTTPS. Your whole site should be on HTTPS anyway; see <a href="/blog/ssl-certificate-errors-fix/">SSL errors</a>.</p>
+
+<h2>5. Strong database credentials</h2>
+<p>Use a unique database user with a strong password for each site, with only the permissions WordPress needs.</p>
+
+<h2>6. Protect the file itself</h2>
+<ul>
+  <li>Set stricter file permissions; see <a href="/blog/wordpress-file-permissions/">file permissions explained</a></li>
+  <li>Block web access to it with a server rule</li>
+  <li>WordPress also looks for wp-config.php one folder above the site root, which some setups use for extra protection</li>
+</ul>
+
+<h2>7. Automatic updates</h2>
+<p>WordPress applies minor core security releases automatically by default. Keep this enabled unless your update process covers it.</p>
+
+<h2>Check it after a hack</h2>
+<p>Attackers often inject code at the very top or bottom of wp-config.php. Compare it with a clean copy during clean-up; see <a href="/blog/find-remove-wordpress-backdoors/">finding backdoors</a>.</p>
+
+<h2>Not comfortable editing it?</h2>
+<p>A developer can apply these settings safely as part of hardening; see <a href="/wordpress-malware-removal/">malware removal and security hardening</a> or <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'recover-rankings-after-hack',
+    seoTitle: 'How to Recover Google Rankings After a Website Hack',
+    title: 'How to Recover Google Rankings After Your Website Was Hacked',
+    description: 'Why rankings drop after a hack and how to recover: clean up, remove spam URLs, check for injected noindex, robots and canonical changes, restore lost pages, handle warnings and monitor Search Console.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>A hack can damage rankings through spam pages, warnings, redirects and lost content. The good news is that rankings usually recover once the site is truly clean and Google has recrawled it. Here's how to speed that up.</p>
+
+<h2>Why rankings drop after a hack</h2>
+<ul>
+  <li>Warnings in results or browsers reduce clicks</li>
+  <li>Spam pages dilute and damage your site's quality signals</li>
+  <li>Redirects send visitors and Googlebot elsewhere</li>
+  <li>Attackers change titles, add noindex tags or edit robots.txt</li>
+  <li>Real pages get deleted or broken during the hack or clean-up</li>
+</ul>
+
+<h2>Step 1: Make sure the site is truly clean</h2>
+<p>Recovery can't start while spam or redirects remain. Follow the full <a href="/blog/remove-malware-wordpress-step-by-step/">clean-up process</a> and close the entry point.</p>
+
+<h2>Step 2: Remove warnings</h2>
+<p>Request reviews for any Security issues or manual actions in Search Console. See <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a>.</p>
+
+<h2>Step 3: Deal with spam URLs</h2>
+<ul>
+  <li>Make spam URLs return 404 or 410</li>
+  <li>Don't block them in robots.txt</li>
+  <li>Remove spam sitemaps and submit your real sitemap</li>
+  <li>Use the Removals tool for the most damaging URLs</li>
+</ul>
+<p>See <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a>.</p>
+
+<h2>Step 4: Check for SEO sabotage</h2>
+<ul>
+  <li>robots.txt: is anything important blocked?</li>
+  <li>Noindex tags on important pages</li>
+  <li>Changed canonical tags pointing elsewhere</li>
+  <li>Changed titles and meta descriptions</li>
+  <li>WordPress's "Discourage search engines" setting</li>
+</ul>
+<p>See <a href="/blog/robots-txt-explained/">robots.txt explained</a> and <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</p>
+
+<h2>Step 5: Restore lost content</h2>
+<p>Compare your page list with a pre-hack backup or sitemap. Restore deleted pages at their original URLs, and fix broken internal links.</p>
+
+<h2>Step 6: Request recrawling</h2>
+<p>Use URL Inspection to request indexing for your most important pages, and resubmit your sitemap.</p>
+
+<h2>Step 7: Monitor recovery</h2>
+<ul>
+  <li>Search Console Performance: impressions and clicks for key pages</li>
+  <li>Page indexing report: spam URLs dropping, real pages indexed</li>
+  <li><code>site:</code> searches for leftover spam</li>
+</ul>
+<p>Recovery often takes a few weeks, depending on how long the hack was live and how big it was.</p>
+
+<h2>Prevent a repeat</h2>
+<p>A second hack sets recovery back. Keep the site updated, protected and monitored; see <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a> and <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
 ];

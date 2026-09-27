@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Why WordPress Sites Get Hacked (and How to Prevent It) | Samverse</title>
-  <meta name="description" content="The real reasons business WordPress sites get hacked: outdated and abandoned plugins, nulled software, weak passwords, shared hosting accounts, infected computers and missing protection, with fixes for each.">
+  <title>WordPress File Permissions Explained (644, 755 and More)</title>
+  <meta name="description" content="What file permissions mean on a WordPress server, commonly recommended settings for files, folders and wp-config.php, why 777 is dangerous, and how to check and fix permissions safely.">
   <meta name="author" content="Sameer Gupta">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="https://samverse.space/blog/why-wordpress-sites-get-hacked/">
+  <link rel="canonical" href="https://samverse.space/blog/wordpress-file-permissions/">
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
-  <meta property="og:url" content="https://samverse.space/blog/why-wordpress-sites-get-hacked/">
-  <meta property="og:title" content="Why WordPress Sites Get Hacked (and How to Prevent It) | Samverse">
-  <meta property="og:description" content="The real reasons business WordPress sites get hacked: outdated and abandoned plugins, nulled software, weak passwords, shared hosting accounts, infected computers and missing protection, with fixes for each.">
-  <meta property="og:image" content="https://samverse.space/assets/og/blog-why-wordpress-sites-get-hacked.png">
+  <meta property="og:url" content="https://samverse.space/blog/wordpress-file-permissions/">
+  <meta property="og:title" content="WordPress File Permissions Explained (644, 755 and More)">
+  <meta property="og:description" content="What file permissions mean on a WordPress server, commonly recommended settings for files, folders and wp-config.php, why 777 is dangerous, and how to check and fix permissions safely.">
+  <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-file-permissions.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://samverse.space/assets/og/blog-why-wordpress-sites-get-hacked.png">
+  <meta name="twitter:image" content="https://samverse.space/assets/og/blog-wordpress-file-permissions.png">
   <meta name="theme-color" content="#6D4AFF">
   <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -38,13 +38,13 @@
   "@graph": [
     {
       "@type": "BlogPosting",
-      "@id": "https://samverse.space/blog/why-wordpress-sites-get-hacked/#article",
-      "headline": "Why WordPress Sites Get Hacked: The Real Causes and How to Prevent Them",
-      "description": "The real reasons business WordPress sites get hacked: outdated and abandoned plugins, nulled software, weak passwords, shared hosting accounts, infected computers and missing protection, with fixes for each.",
+      "@id": "https://samverse.space/blog/wordpress-file-permissions/#article",
+      "headline": "WordPress File Permissions Explained: 644, 755 and Keeping Files Safe",
+      "description": "What file permissions mean on a WordPress server, commonly recommended settings for files, folders and wp-config.php, why 777 is dangerous, and how to check and fix permissions safely.",
       "datePublished": "2026-09-27",
       "dateModified": "2026-09-27",
-      "mainEntityOfPage": "https://samverse.space/blog/why-wordpress-sites-get-hacked/",
-      "image": "https://samverse.space/assets/og/blog-why-wordpress-sites-get-hacked.png",
+      "mainEntityOfPage": "https://samverse.space/blog/wordpress-file-permissions/",
+      "image": "https://samverse.space/assets/og/blog-wordpress-file-permissions.png",
       "articleSection": "Security",
       "inLanguage": "en-IN",
       "author": {
@@ -86,8 +86,8 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Why WordPress Sites Get Hacked: The Real Causes and How to Prevent Them",
-          "item": "https://samverse.space/blog/why-wordpress-sites-get-hacked/"
+          "name": "WordPress File Permissions Explained: 644, 755 and Keeping Files Safe",
+          "item": "https://samverse.space/blog/wordpress-file-permissions/"
         }
       ]
     }
@@ -128,8 +128,8 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
-          <h1>Why WordPress Sites Get Hacked: The Real Causes and How to Prevent Them</h1>
-          <p class="post-dek">The real reasons business WordPress sites get hacked: outdated and abandoned plugins, nulled software, weak passwords, shared hosting accounts, infected computers and missing protection, with fixes for each.</p>
+          <h1>WordPress File Permissions Explained: 644, 755 and Keeping Files Safe</h1>
+          <p class="post-dek">What file permissions mean on a WordPress server, commonly recommended settings for files, folders and wp-config.php, why 777 is dangerous, and how to check and fix permissions safely.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
@@ -137,13 +137,13 @@
               <span><time datetime="2026-09-27">27 September 2026</time> · 3 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=Why%20WordPress%20Sites%20Get%20Hacked%3A%20The%20Real%20Causes%20and%20How%20to%20Prevent%20Them%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwhy-wordpress-sites-get-hacked%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
-              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwhy-wordpress-sites-get-hacked%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=Why%20WordPress%20Sites%20Get%20Hacked%3A%20The%20Real%20Causes%20and%20How%20to%20Prevent%20Them&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwhy-wordpress-sites-get-hacked%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
-              <button type="button" class="share-copy" data-url="https://samverse.space/blog/why-wordpress-sites-get-hacked/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+              <a href="https://wa.me/?text=WordPress%20File%20Permissions%20Explained%3A%20644%2C%20755%20and%20Keeping%20Files%20Safe%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-file-permissions%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-file-permissions%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WordPress%20File%20Permissions%20Explained%3A%20644%2C%20755%20and%20Keeping%20Files%20Safe&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-file-permissions%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/wordpress-file-permissions/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-why-wordpress-sites-get-hacked.webp" alt="Why WordPress Sites Get Hacked: The Real Causes and How to Prevent Them" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-wordpress-file-permissions.webp" alt="WordPress File Permissions Explained: 644, 755 and Keeping Files Safe" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -152,94 +152,97 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#1-outdated-plugins-and-themes">1. Outdated plugins and themes</a></li>
-              <li><a href="#2-abandoned-plugins">2. Abandoned plugins</a></li>
-              <li><a href="#3-nulled-pirated-themes-and-plugins">3. Nulled (pirated) themes and plugins</a></li>
-              <li><a href="#4-weak-reused-or-shared-passwords">4. Weak, reused or shared passwords</a></li>
-              <li><a href="#5-several-sites-in-one-hosting-account">5. Several sites in one hosting account</a></li>
-              <li><a href="#6-an-infected-computer">6. An infected computer</a></li>
-              <li><a href="#7-too-many-administrators">7. Too many administrators</a></li>
-              <li><a href="#8-old-php-and-server-software">8. Old PHP and server software</a></li>
-              <li><a href="#9-no-firewall-monitoring-or-backups">9. No firewall, monitoring or backups</a></li>
-              <li><a href="#it-s-rarely-personal">It's rarely personal</a></li>
-              <li><a href="#already-hacked">Already hacked?</a></li>
+              <li><a href="#what-the-numbers-mean">What the numbers mean</a></li>
+              <li><a href="#commonly-recommended-settings">Commonly recommended settings</a></li>
+              <li><a href="#never-use-777">Never use 777</a></li>
+              <li><a href="#ownership-matters-too">Ownership matters too</a></li>
+              <li><a href="#how-to-check-and-change-permissions">How to check and change permissions</a></li>
+              <li><a href="#other-hardening-steps">Other hardening steps</a></li>
+              <li><a href="#after-a-hack-check-permissions">After a hack, check permissions</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Most WordPress hacks come through outdated or abandoned plugins and themes, not core.</li>
-              <li>Nulled software, weak passwords, infected computers and too many admins are common causes.</li>
-              <li>One neglected site in a shared hosting account can infect all the others.</li>
+              <li>Typical settings are 755 for folders, 644 for files and stricter for wp-config.php.</li>
+              <li>Never use 777; fix file ownership instead.</li>
+              <li>Reset permissions after a hack and block PHP execution in uploads.</li>
             </ul>
           </div>
-<p>WordPress core itself is well maintained and patched quickly. Most hacked WordPress sites I clean were compromised through something around it: a plugin, a password, the hosting account or the way the site was managed. Knowing the real causes tells you exactly what to protect.</p>
+<p>File permissions control who can read, write and run files on your server. Wrong permissions can let attackers modify your files, or can break updates and uploads. Getting them right is a simple but important part of WordPress security.</p>
 
-<h2 id="1-outdated-plugins-and-themes">1. Outdated plugins and themes</h2>
-<p>Security researchers consistently find that most WordPress vulnerabilities are in plugins and themes, not core. Once a vulnerability is published, bots scan the internet for sites still running the old version, often within days.</p>
-<p><strong>Fix:</strong> update regularly and safely; see <a href="/blog/update-wordpress-safely/">updating WordPress safely</a>.</p>
+<h2 id="what-the-numbers-mean">What the numbers mean</h2>
+<p>Permissions are shown as three digits, for the file's owner, its group and everyone else:</p>
+<table>
+  <thead><tr><th>Digit</th><th>Meaning</th></tr></thead>
+  <tbody>
+    <tr><td>7</td><td>Read, write and execute</td></tr>
+    <tr><td>6</td><td>Read and write</td></tr>
+    <tr><td>5</td><td>Read and execute</td></tr>
+    <tr><td>4</td><td>Read only</td></tr>
+    <tr><td>0</td><td>No access</td></tr>
+  </tbody>
+</table>
+<p>So 644 means the owner can read and write, while everyone else can only read.</p>
 
-<h2 id="2-abandoned-plugins">2. Abandoned plugins</h2>
-<p>Plugins that haven't been updated in years won't get security fixes, even when problems are found.</p>
-<p><strong>Fix:</strong> replace abandoned plugins with maintained alternatives and delete what you don't use.</p>
+<h2 id="commonly-recommended-settings">Commonly recommended settings</h2>
+<table>
+  <thead><tr><th>Item</th><th>Typical permission</th></tr></thead>
+  <tbody>
+    <tr><td>Folders</td><td>755</td></tr>
+    <tr><td>Files</td><td>644</td></tr>
+    <tr><td>wp-config.php</td><td>Stricter, such as 640, 600 or 440, depending on your server</td></tr>
+    <tr><td>.htaccess</td><td>644</td></tr>
+  </tbody>
+</table>
+<p>The right values depend on how your server runs PHP and who owns the files, so check your host's recommendations.</p>
 
 <aside class="inline-cta">
   <strong>Need help with malware removal &amp; security?</strong>
   <p>Hacked WordPress site? Fast malware removal, cleanup of spam redirects and injected code, Google blacklist removal help and security hardening to stop reinfection.</p>
-  <div><a href="/wordpress-malware-removal/" class="link-inline">See Malware Removal &amp; Security →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Why%20WordPress%20Sites%20Get%20Hacked%3A%20The%20Real%20Causes%20and%20How%20to%20Prevent%20Them%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/wordpress-malware-removal/" class="link-inline">See Malware Removal &amp; Security →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20File%20Permissions%20Explained%3A%20644%2C%20755%20and%20Keeping%20Files%20Safe%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="3-nulled-pirated-themes-and-plugins">3. Nulled (pirated) themes and plugins</h2>
-<p>"Free" copies of premium software often contain hidden malware and never receive updates.</p>
-<p><strong>Fix:</strong> use genuine licences; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a>.</p>
+<h2 id="never-use-777">Never use 777</h2>
+<p>777 lets anyone on the server write to the file or folder. It's sometimes suggested as a quick fix for upload errors, but it's a serious security risk. Fix ownership or use the correct permission instead.</p>
 
-<h2 id="4-weak-reused-or-shared-passwords">4. Weak, reused or shared passwords</h2>
-<p>Bots try common passwords and credentials leaked from other websites. Shared logins make it impossible to know who did what.</p>
-<p><strong>Fix:</strong> unique passwords, 2FA and individual accounts; see <a href="/blog/secure-wordpress-login/">securing your login</a>.</p>
+<h2 id="ownership-matters-too">Ownership matters too</h2>
+<p>Files should be owned by your hosting account's user. Wrong ownership, often after a migration or manual upload, can cause update failures that tempt people into using unsafe permissions.</p>
 
-<h2 id="5-several-sites-in-one-hosting-account">5. Several sites in one hosting account</h2>
-<p>If multiple websites share one hosting account, one neglected site, like an old test site or a forgotten microsite, can infect all the others. This is one of the most common causes of repeat infections I see.</p>
-<p><strong>Fix:</strong> delete old sites, keep every site updated, or isolate important sites in separate accounts.</p>
+<h2 id="how-to-check-and-change-permissions">How to check and change permissions</h2>
+<ul>
+  <li><strong>Hosting file manager:</strong> most show a permissions column and let you change it</li>
+  <li><strong>SFTP client:</strong> right-click a file and choose permissions</li>
+  <li><strong>Command line:</strong> for developers with SSH access</li>
+</ul>
+<p>Some hosts have a tool to reset permissions across the whole site.</p>
 
-<h2 id="6-an-infected-computer">6. An infected computer</h2>
-<p>Malware on the computer of someone who manages the site can steal saved FTP, hosting or WordPress passwords.</p>
-<p><strong>Fix:</strong> keep computers updated with antivirus, use SFTP instead of FTP and store passwords in a password manager.</p>
+<h2 id="other-hardening-steps">Other hardening steps</h2>
+<ul>
+  <li>Block PHP execution in the uploads folder</li>
+  <li>Disable file editing in the WordPress dashboard</li>
+  <li>Protect wp-config.php; see <a href="/blog/harden-wp-config-php/">hardening wp-config.php</a></li>
+</ul>
 
-<h2 id="7-too-many-administrators">7. Too many administrators</h2>
-<p>Every admin account is a potential entry point, especially old accounts for past staff or developers.</p>
-<p><strong>Fix:</strong> give people only the role they need and remove old accounts; see <a href="/blog/wordpress-user-roles-explained/">user roles explained</a>.</p>
-
-<h2 id="8-old-php-and-server-software">8. Old PHP and server software</h2>
-<p>Unsupported PHP versions no longer receive security patches; see <a href="/blog/update-php-version-wordpress/">updating PHP</a>.</p>
-
-<h2 id="9-no-firewall-monitoring-or-backups">9. No firewall, monitoring or backups</h2>
-<p>Without protection, attacks aren't blocked. Without monitoring, hacks go unnoticed for weeks. Without backups, recovery is slower and harder.</p>
-<p><strong>Fix:</strong> a firewall, uptime and file-change monitoring, and off-site backups; see the <a href="/blog/wordpress-security-checklist/">security checklist</a>.</p>
-
-<p>Choosing protection? See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a>.</p>
-
-<h2 id="it-s-rarely-personal">It's rarely personal</h2>
-<p>Most attacks are automated. Bots don't care whether you're a big brand or a small clinic; they look for any site with a known weakness, then use it for spam, redirects or phishing.</p>
-
-<h2 id="already-hacked">Already hacked?</h2>
-<p>See <a href="/blog/remove-malware-wordpress-step-by-step/">the clean-up process step by step</a>, or get <a href="/wordpress-malware-removal/">professional malware removal</a>.</p>
+<h2 id="after-a-hack-check-permissions">After a hack, check permissions</h2>
+<p>Attackers sometimes change permissions to make their files harder to remove, or to keep write access. Resetting permissions is part of a proper <a href="/blog/remove-malware-wordpress-step-by-step/">malware clean-up</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Why%20WordPress%20Sites%20Get%20Hacked%3A%20The%20Real%20Causes%20and%20How%20to%20Prevent%20Them%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20File%20Permissions%20Explained%3A%20644%2C%20755%20and%20Keeping%20Files%20Safe%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=Why%20WordPress%20Sites%20Get%20Hacked%3A%20The%20Real%20Causes%20and%20How%20to%20Prevent%20Them%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwhy-wordpress-sites-get-hacked%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
-              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwhy-wordpress-sites-get-hacked%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=Why%20WordPress%20Sites%20Get%20Hacked%3A%20The%20Real%20Causes%20and%20How%20to%20Prevent%20Them&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwhy-wordpress-sites-get-hacked%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
-              <button type="button" class="share-copy" data-url="https://samverse.space/blog/why-wordpress-sites-get-hacked/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+              <a href="https://wa.me/?text=WordPress%20File%20Permissions%20Explained%3A%20644%2C%20755%20and%20Keeping%20Files%20Safe%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-file-permissions%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-file-permissions%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WordPress%20File%20Permissions%20Explained%3A%20644%2C%20755%20and%20Keeping%20Files%20Safe&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-file-permissions%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/wordpress-file-permissions/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
 
@@ -249,8 +252,8 @@
           </div>
 
           <nav class="post-nav" aria-label="More in Speed, security &amp; maintenance">
-            <a class="post-nav-prev" href="/blog/woocommerce-checkout-skimmer-malware/"><span>← Previous in Speed, security &amp; maintenance</span><strong>WooCommerce Card Skimming Malware: Signs, Response and Prevention</strong></a>
-            <a class="post-nav-next" href="/blog/nulled-themes-plugins-risks/"><span>Next in Speed, security &amp; maintenance →</span><strong>Nulled WordPress Themes and Plugins: Why &quot;Free&quot; Premium Software Is So Risky</strong></a>
+            <a class="post-nav-prev" href="/blog/this-site-may-be-hacked-google/"><span>← Previous in Speed, security &amp; maintenance</span><strong>&quot;This Site May Be Hacked&quot; Label in Google Results: How to Remove It</strong></a>
+            <a class="post-nav-next" href="/blog/wordpress-firewall-waf-explained/"><span>Next in Speed, security &amp; maintenance →</span><strong>WordPress Firewalls Explained: Cloud, Server and Plugin WAFs</strong></a>
           </nav>
         </div>
 
@@ -258,24 +261,20 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#1-outdated-plugins-and-themes">1. Outdated plugins and themes</a></li>
-              <li><a href="#2-abandoned-plugins">2. Abandoned plugins</a></li>
-              <li><a href="#3-nulled-pirated-themes-and-plugins">3. Nulled (pirated) themes and plugins</a></li>
-              <li><a href="#4-weak-reused-or-shared-passwords">4. Weak, reused or shared passwords</a></li>
-              <li><a href="#5-several-sites-in-one-hosting-account">5. Several sites in one hosting account</a></li>
-              <li><a href="#6-an-infected-computer">6. An infected computer</a></li>
-              <li><a href="#7-too-many-administrators">7. Too many administrators</a></li>
-              <li><a href="#8-old-php-and-server-software">8. Old PHP and server software</a></li>
-              <li><a href="#9-no-firewall-monitoring-or-backups">9. No firewall, monitoring or backups</a></li>
-              <li><a href="#it-s-rarely-personal">It's rarely personal</a></li>
-              <li><a href="#already-hacked">Already hacked?</a></li>
+              <li><a href="#what-the-numbers-mean">What the numbers mean</a></li>
+              <li><a href="#commonly-recommended-settings">Commonly recommended settings</a></li>
+              <li><a href="#never-use-777">Never use 777</a></li>
+              <li><a href="#ownership-matters-too">Ownership matters too</a></li>
+              <li><a href="#how-to-check-and-change-permissions">How to check and change permissions</a></li>
+              <li><a href="#other-hardening-steps">Other hardening steps</a></li>
+              <li><a href="#after-a-hack-check-permissions">After a hack, check permissions</a></li>
             </ol>
           </nav>
           <div class="side-cta">
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Why%20WordPress%20Sites%20Get%20Hacked%3A%20The%20Real%20Causes%20and%20How%20to%20Prevent%20Them%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20File%20Permissions%20Explained%3A%20644%2C%20755%20and%20Keeping%20Files%20Safe%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>
@@ -287,7 +286,7 @@
         <div class="industries related-grid reveal">
           <a class="industry" href="/wordpress-malware-removal/"><h3>Malware Removal &amp; Security</h3><p>Hacked WordPress site? Fast malware removal, cleanup of spam redirects and injected code, Google blacklist removal help and security hardening to stop reinfection.</p><span class="ind-arrow">→</span></a>
           <a class="industry" href="/wordpress-maintenance/"><h3>Website Maintenance</h3><p>Monthly WordPress maintenance: updates, backups, security monitoring, uptime checks and small content changes, so your website stays fast, secure and online.</p><span class="ind-arrow">→</span></a>
-          <a class="industry" href="/wordpress-website-development/"><h3>WordPress Website Development</h3><p>Custom WordPress website development: business websites, portfolios, catalogues and portals that are fast, mobile-friendly, SEO-ready and easy for you to update.</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/wordpress-migration/"><h3>Migration &amp; Hosting</h3><p>Move your WordPress site to new hosting or a new domain with zero downtime and no lost SEO.</p><span class="ind-arrow">→</span></a>
         </div>
       </div>
     </section>
@@ -296,9 +295,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/wordpress-user-roles-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-user-roles-explained.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress User Roles Explained: Who Should Have Which Access</h3><p>WordPress user roles explained simply: administrator, editor, author, contributor, subscriber and shop manager, plus how to give staff, agencies and freelancers the right access safely.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
-          <a class="post-card" href="/blog/secure-wordpress-login/"><img class="post-card-img" src="/assets/og/blog-secure-wordpress-login.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Secure Your WordPress Login: 2FA, Strong Passwords and More</h3><p>Practical ways to protect the WordPress login from brute-force attacks and account takeover: strong unique passwords, two-factor authentication, login limits, user roles, XML-RPC and firewalls.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
           <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist for Small Business Websites (20 Steps)</h3><p>A practical 20-step WordPress security checklist for small businesses: updates, passwords, 2FA, backups, firewalls, hosting and user roles, to keep your site safe from hackers.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/remove-malware-wordpress-step-by-step/"><img class="post-card-img" src="/assets/og/blog-remove-malware-wordpress-step-by-step.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Remove Malware from a Hacked WordPress Site: A Step-by-Step Clean-up Process</h3><p>The clean-up process I follow for hacked WordPress sites: backup, access reset, scanning, replacing core and plugins, checking uploads and the database, removing backdoors, hardening and Google review.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/harden-wp-config-php/"><img class="post-card-img" src="/assets/og/blog-harden-wp-config-php.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>Hardening wp-config.php: Security Settings Every WordPress Site Should Use</h3><p>Security settings in wp-config.php explained: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file itself, with cautions for each.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
         </div>
       </div>
     </section>

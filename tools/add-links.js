@@ -302,6 +302,12 @@ const LINKS = [
   ['clinic-website-checklist-for-doctors', '<h2>Common mistakes to avoid</h2>', '<p>See these ideas on live clinic sites: <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a> and <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a>.</p>\n\n'],
   ['website-for-interior-designers-architects', '<h2>Explain your services and process</h2>', '<p><strong>Real example:</strong> the <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a> shows a Hyderabad interior studio site with a filterable project gallery, detailed services, a design partner page and free quote calls to action throughout.</p>\n\n'],
   ['elementor-pro-worth-it', '<h2>Licences: buy in your name</h2>', '<p>For a real Elementor Pro build, see the <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a>.</p>\n\n'],
+  // Round 38
+  ['remove-malware-wordpress-step-by-step', '<h2>Want it done for you?</h2>', '<p>Afterwards, see <a href="/blog/recover-rankings-after-hack/">how to recover Google rankings after a hack</a>.</p>\n\n'],
+  ['wordpress-security-checklist', '<h2>Hosting and server</h2>', '<p>Server-side hardening: <a href="/blog/wordpress-file-permissions/">file permissions</a> and <a href="/blog/harden-wp-config-php/">wp-config.php settings</a>.</p>\n\n'],
+  ['website-down-what-to-do', '<h2>Step 5: Think about recent changes</h2>', '<p>Suspended for malware? See <a href="/blog/hosting-suspended-malware/">what to do when your hosting is suspended</a>.</p>\n\n'],
+  ['deceptive-site-ahead-warning-fix', '<h2>Step 5: Check other blocklists</h2>', '<p>Seeing a label in search results instead? See <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a>.</p>\n\n'],
+  ['why-wordpress-sites-get-hacked', '<h2>It\'s rarely personal</h2>', '<p>Choosing protection? See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
