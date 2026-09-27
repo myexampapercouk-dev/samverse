@@ -259,6 +259,13 @@ const LINKS = [
   ['woocommerce-seo-guide', '<h2>Quick checklist</h2>', '<p>Also get products into Google Shopping for free: <a href="/blog/google-merchant-center-woocommerce/">Merchant Center for WooCommerce</a>.</p>\n\n'],
   ['woocommerce-abandoned-cart-recovery', '<h2>Measure it</h2>', '<p>Using discounts to recover carts? See <a href="/blog/woocommerce-coupons-discounts/">coupon strategies that protect margins</a>.</p>\n\n'],
   ['woocommerce-product-page-optimization', '<h2>Make buying effortless</h2>', '<p>Accurate stock status matters too; see <a href="/blog/woocommerce-inventory-management/">inventory management</a>.</p>\n\n'],
+  // Round 32
+  ['uptime-monitoring-explained', '<h2>Uptime vs other monitoring</h2>', '<p>Full checklist: <a href="/blog/website-down-what-to-do/">website down? what to check, step by step</a>.</p>\n\n'],
+  ['choose-domain-name-business', '<h2>After registering</h2>', '<p>If a renewal is ever missed, see <a href="/blog/domain-expired-what-to-do/">what to do when a domain expires</a>.</p>\n\n'],
+  ['website-ownership-checklist', '<h2>2. DNS</h2>', '<p>Domain stuck in someone else\'s account? See <a href="/blog/transfer-domain-to-another-registrar/">how to transfer a domain safely</a>.</p>\n\n'],
+  ['signs-wordpress-site-hacked', '<h2>How to prevent it happening again</h2>', '<p>Seeing a red browser warning? See <a href="/blog/deceptive-site-ahead-warning-fix/">how to fix "Deceptive site ahead"</a>.</p>\n\n'],
+  ['wordpress-security-checklist', '<h2>Backups</h2>', '<p>More detail: <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>\n\n'],
+  ['essential-wordpress-plugins-business', '<h2>How many plugins is too many?</h2>', '<p>Dashboard feeling sluggish? See <a href="/blog/wordpress-admin-slow/">why the WordPress admin gets slow</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

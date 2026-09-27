@@ -258,6 +258,8 @@ module.exports = [
   <li><strong>Harden security</strong> so it doesn't happen again (below).</li>
 </ol>
 
+<p>Seeing a red browser warning? See <a href="/blog/deceptive-site-ahead-warning-fix/">how to fix "Deceptive site ahead"</a>.</p>
+
 <h2>How to prevent it happening again</h2>
 <ul>
   <li>Keep WordPress, themes and plugins updated. Outdated plugins are the most common way in.</li>
@@ -1194,6 +1196,8 @@ module.exports = [
 </ol>
 
 <p>Not sure which role to give whom? See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>.</p>
+
+<p>More detail: <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
 
 <h2>Backups</h2>
 <ol start="13">
@@ -3571,6 +3575,8 @@ module.exports = [
   <li><strong>Leaving deactivated plugins installed.</strong> Delete what you don't use.</li>
 </ul>
 
+<p>Dashboard feeling sluggish? See <a href="/blog/wordpress-admin-slow/">why the WordPress admin gets slow</a>.</p>
+
 <h2>How many plugins is too many?</h2>
 <p>There's no magic number. One badly coded plugin can do more harm than twenty good ones. Audit your plugins every few months and remove anything you don't truly need. If your site is already slow, a <a href="/wordpress-speed-optimization/">speed optimization</a> review usually starts with a plugin audit.</p>
 `,
@@ -4515,6 +4521,8 @@ module.exports = [
   <li>Check renewal prices, not just first-year offers</li>
   <li>Keep your contact email on the registrar account current, so renewal notices reach you</li>
 </ul>
+
+<p>If a renewal is ever missed, see <a href="/blog/domain-expired-what-to-do/">what to do when a domain expires</a>.</p>
 
 <h2>After registering</h2>
 <p>Point the domain to your hosting (through DNS or nameservers), set up SSL and business email. See <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
@@ -6219,6 +6227,8 @@ module.exports = [
   <li>Check domain and SSL expiry</li>
   <li>Contact your host or developer with the time it started and any error messages</li>
 </ol>
+
+<p>Full checklist: <a href="/blog/website-down-what-to-do/">website down? what to check, step by step</a>.</p>
 
 <h2>Uptime vs other monitoring</h2>
 <p>Uptime monitoring tells you the site is up; it doesn't confirm that forms deliver email or payments complete. Test those regularly too; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
@@ -11857,6 +11867,8 @@ module.exports = [
   <li>Auto-renew on, with a payment method you control</li>
 </ul>
 
+<p>Domain stuck in someone else's account? See <a href="/blog/transfer-domain-to-another-registrar/">how to transfer a domain safely</a>.</p>
+
 <h2>2. DNS</h2>
 <p>You know where DNS is managed (registrar, host or a service like Cloudflare) and have access. DNS controls your website and email routing; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
 
@@ -13435,6 +13447,344 @@ module.exports = [
 
 <h2>Choosing a platform for your store</h2>
 <p>See <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for India</a> and the <a href="/blog/woocommerce-store-launch-checklist/">store launch checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'website-down-what-to-do',
+    seoTitle: 'Website Down? What to Check and Do, Step by Step',
+    title: 'Website Down or Not Opening? What to Check and Do, Step by Step',
+    description: 'A calm step-by-step checklist when your business website stops working: confirm it is down, read the error, check domain, hosting and recent changes, contact your host and restore from backup.',
+    date: '2026-09-27',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
+    body: `
+<p>Your website isn't opening, and customers are calling to say so. Don't panic. Most outages come from a handful of causes, and working through them in order usually finds the problem quickly.</p>
+
+<h2>Step 1: Is it really down?</h2>
+<ul>
+  <li>Try another device and network, such as your phone on mobile data instead of office Wi-Fi</li>
+  <li>Use an online "is it down" checker to test from outside your network</li>
+  <li>Try a private or incognito browser window to rule out cached problems</li>
+</ul>
+<p>If it works elsewhere, the issue may be your local network, DNS cache or browser.</p>
+
+<h2>Step 2: Read the error</h2>
+<table>
+  <thead><tr><th>What you see</th><th>Likely cause</th></tr></thead>
+  <tbody>
+    <tr><td>"This site can't be reached" / DNS error</td><td>Domain expired, DNS changed or nameservers wrong</td></tr>
+    <tr><td>500 Internal Server Error</td><td>Plugin, theme or server configuration problem</td></tr>
+    <tr><td>503 Service Unavailable</td><td>Server overloaded, or maintenance mode stuck</td></tr>
+    <tr><td>"There has been a critical error"</td><td>A PHP error, often from a plugin or theme update</td></tr>
+    <tr><td>"Error establishing a database connection"</td><td>Database server down or wrong credentials</td></tr>
+    <tr><td>Security or certificate warning</td><td>SSL certificate expired or misconfigured</td></tr>
+    <tr><td>"Account suspended" page</td><td>Hosting unpaid or suspended for resource use or malware</td></tr>
+    <tr><td>"Deceptive site ahead" warning</td><td>Google flagged the site, often after a hack</td></tr>
+  </tbody>
+</table>
+<p>See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a> and <a href="/blog/ssl-certificate-errors-fix/">SSL errors</a>.</p>
+
+<h2>Step 3: Check the domain</h2>
+<p>Log in to your domain registrar and check the expiry date. An expired domain takes down both your website and email. See <a href="/blog/domain-expired-what-to-do/">what to do when your domain expires</a>.</p>
+
+<h2>Step 4: Check the hosting account</h2>
+<ul>
+  <li>Are hosting bills paid?</li>
+  <li>Any emails from your host about suspension, resource limits or malware?</li>
+  <li>Does the host's status page report an outage?</li>
+</ul>
+
+<h2>Step 5: Think about recent changes</h2>
+<p>Did anyone update plugins, change themes, edit code, move hosting or change DNS in the last day or two? The most recent change is the most likely cause, and undoing it is often the fix.</p>
+
+<h2>Step 6: Contact your host</h2>
+<p>Hosting support can see server logs and tell you whether the server is up, what errors are occurring and whether your account hit limits. Give them the exact error, the time it started and any recent changes.</p>
+
+<h2>Step 7: Restore from backup if needed</h2>
+<p>If you can't find the cause quickly, restoring a recent working backup gets you back online while the problem is investigated; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</p>
+
+<h2>Keep customers informed</h2>
+<p>While fixing it, post an update on your Google Business Profile and social media, and make sure your phone and WhatsApp still work so enquiries aren't lost.</p>
+
+<h2>Prevent the next outage</h2>
+<ul>
+  <li>Uptime monitoring so you know before customers do; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring</a></li>
+  <li>Auto-renewal for domain and hosting</li>
+  <li>Automatic off-site backups</li>
+  <li>Test updates on staging first</li>
+</ul>
+<p>Or let a <a href="/wordpress-maintenance/">maintenance service</a> watch it for you.</p>
+`,
+  },
+  {
+    slug: 'domain-expired-what-to-do',
+    seoTitle: 'Domain Expired? How to Recover It and Prevent It',
+    title: 'Domain Name Expired? How to Get It Back and Stop It Happening Again',
+    description: 'What happens when a domain name expires, the grace and redemption periods, how to renew or recover it, what to do if someone else registers it, and how to make sure it never lapses again.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-maintenance', 'wordpress-migration', 'hire-wordpress-developer'],
+    body: `
+<p>A missed renewal can take your website and business email offline overnight. The good news is that domains don't disappear immediately after expiry. There's usually a window to get them back, but you need to act quickly.</p>
+
+<h2>What happens when a domain expires</h2>
+<ul>
+  <li>Your website stops loading, or shows a registrar's parking page</li>
+  <li>Email on that domain stops working</li>
+  <li>Customers and Google see an unavailable site</li>
+</ul>
+
+<h2>The typical expiry timeline</h2>
+<p>The exact periods and fees depend on the domain extension and your registrar, but the usual pattern is:</p>
+<ol>
+  <li><strong>Grace period:</strong> for some days or weeks after expiry, you can usually renew at the normal price</li>
+  <li><strong>Redemption period:</strong> the domain can often still be recovered by the original owner, but with an extra restoration fee</li>
+  <li><strong>Deletion:</strong> the domain is released and anyone can register it</li>
+</ol>
+<p>Check your registrar's policy for your specific domain.</p>
+
+<h2>How to recover it</h2>
+<ol>
+  <li><strong>Log in to your registrar</strong> and renew immediately</li>
+  <li><strong>Can't log in?</strong> Recover the account using the registered email or contact the registrar's support with proof of ownership</li>
+  <li><strong>Registered by a developer?</strong> Contact them urgently; see <a href="/blog/regain-website-access-old-developer/">regaining access from an old developer</a></li>
+  <li><strong>After renewing,</strong> the site and email usually return within hours as DNS updates</li>
+</ol>
+
+<h2>If someone else registers it</h2>
+<p>Once a domain is released, anyone can register it, including people who try to sell it back at a high price. Options include:</p>
+<ul>
+  <li>Contacting the new owner to negotiate</li>
+  <li>If it's clearly used in bad faith against your trademark, a dispute process may be possible; take legal advice</li>
+  <li>As a last resort, moving to a new domain and redirecting what you can</li>
+</ul>
+<p>Moving domains affects SEO, so plan it carefully; see <a href="/blog/redesign-website-without-losing-rankings/">protecting rankings during changes</a>.</p>
+
+<h2>Beware of scam renewal notices</h2>
+<p>Many "domain expiry" emails come from unrelated companies trying to get you to transfer or pay them. Only renew through your actual registrar; see <a href="/blog/domain-seo-scam-emails/">domain and SEO scam emails</a>.</p>
+
+<h2>Make sure it never happens again</h2>
+<ul>
+  <li>Turn on <strong>auto-renew</strong></li>
+  <li>Keep a <strong>valid payment method</strong> on the account</li>
+  <li>Use an <strong>email you check</strong> as the registrant contact</li>
+  <li>Renew for <strong>several years</strong> at a time</li>
+  <li>Add the expiry date to your calendar</li>
+  <li>Keep the domain in your business's name; see the <a href="/blog/website-ownership-checklist/">website ownership checklist</a></li>
+</ul>
+`,
+  },
+  {
+    slug: 'transfer-domain-to-another-registrar',
+    seoTitle: 'How to Transfer a Domain to Another Registrar Safely',
+    title: 'How to Transfer Your Domain to Another Registrar Without Downtime',
+    description: 'A step-by-step guide to transferring a domain name between registrars: unlocking, auth codes, transfer locks, keeping DNS records so website and email stay online, and common problems.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-migration', 'wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>You might want to move your domain to a registrar with better prices, a cleaner dashboard, or simply to get it out of an old developer's account. Transferring a domain is straightforward, but a careless transfer can take your website and email offline.</p>
+
+<h2>Transfer vs changing nameservers</h2>
+<p>These are different things. <strong>Transferring</strong> moves where the domain is registered and renewed. <strong>Changing nameservers or DNS</strong> changes where your website and email point. You can do either without the other. If you only want to move hosting, you may not need a transfer at all; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+
+<h2>Before you start</h2>
+<ul>
+  <li><strong>Check eligibility:</strong> most registrars block transfers for a period (often 60 days) after registration or a previous transfer</li>
+  <li><strong>Check expiry:</strong> don't leave it until the last few days before expiry</li>
+  <li><strong>Check the contact email:</strong> transfer approvals may go to the registrant email, so make sure you can receive it</li>
+  <li><strong>Copy your DNS records:</strong> take screenshots or export all records, especially website (A/CNAME), email (MX) and verification (TXT) records</li>
+</ul>
+
+<h2>Step 1: Prepare DNS so nothing breaks</h2>
+<p>If your DNS is managed at the current registrar, it may stop working when the domain leaves. Either recreate all records at the new registrar before the transfer, or move DNS to an independent provider (like your host or Cloudflare) first. Then the transfer won't affect your website or email.</p>
+
+<h2>Step 2: Unlock the domain</h2>
+<p>Turn off the transfer lock (sometimes called registrar lock) at your current registrar.</p>
+
+<h2>Step 3: Get the authorisation code</h2>
+<p>Request the auth code (also called EPP code or transfer key) from your current registrar. Treat it like a password.</p>
+
+<h2>Step 4: Start the transfer at the new registrar</h2>
+<p>Enter the domain and auth code at the new registrar and pay the transfer fee. For many extensions, this includes a one-year renewal.</p>
+
+<h2>Step 5: Approve and wait</h2>
+<p>Approve any confirmation emails. Transfers often take a few days to complete, and some registrars let you speed it up by approving at the old registrar.</p>
+
+<h2>Step 6: Check everything after</h2>
+<ul>
+  <li>Website loads correctly, with HTTPS</li>
+  <li>Email sending and receiving works</li>
+  <li>Auto-renew is on at the new registrar</li>
+  <li>Transfer lock is turned back on</li>
+  <li>Contact details are correct and in your business name</li>
+</ul>
+
+<h2>Common problems</h2>
+<ul>
+  <li><strong>Invalid auth code:</strong> request a fresh one</li>
+  <li><strong>Transfer rejected:</strong> domain still locked, too recently registered, or the old registrar declined it</li>
+  <li><strong>Email stopped working:</strong> MX records weren't recreated</li>
+</ul>
+
+<p>Moving hosting as well? See <a href="/wordpress-migration/">WordPress migration</a> and the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-admin-slow',
+    seoTitle: 'WordPress Admin Dashboard Slow? Causes and Fixes',
+    title: 'Why Is My WordPress Admin Dashboard So Slow? Causes and Fixes',
+    description: 'Common reasons the WordPress dashboard and editor feel slow (heavy plugins, admin-ajax and Heartbeat, weak hosting, database bloat, external calls) and how to diagnose and fix them.',
+    date: '2026-09-27',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
+    body: `
+<p>Your website may load quickly for visitors thanks to caching, while the WordPress dashboard crawls. That's because admin pages are never cached: every click runs WordPress, plugins and database queries live. A slow dashboard wastes time and makes content updates painful.</p>
+
+<h2>Common causes</h2>
+<ul>
+  <li><strong>Heavy plugins:</strong> page builders, SEO suites, security scanners, analytics dashboards and backup plugins can load a lot in the admin</li>
+  <li><strong>Too many plugins</strong> each adding a little overhead</li>
+  <li><strong>Weak hosting:</strong> limited CPU or PHP workers on cheap shared plans</li>
+  <li><strong>Old PHP version</strong></li>
+  <li><strong>Database bloat:</strong> large autoloaded options, huge revisions or log tables</li>
+  <li><strong>External requests:</strong> plugins contacting slow external servers for licence checks, news feeds or updates</li>
+  <li><strong>The Heartbeat API:</strong> frequent background requests while editors are open</li>
+  <li><strong>WooCommerce admin:</strong> analytics and large order tables on busy stores</li>
+</ul>
+
+<h2>How to diagnose</h2>
+<ul>
+  <li><strong>Query Monitor</strong> (a free plugin) shows slow database queries, HTTP requests and which plugin is responsible</li>
+  <li><strong>Site Health</strong> flags common performance issues</li>
+  <li><strong>Deactivate plugins one by one on a staging site</strong> and time key admin pages</li>
+  <li><strong>Ask your host</strong> whether you're hitting resource limits</li>
+</ul>
+
+<h2>Fixes</h2>
+<ol>
+  <li><strong>Remove unneeded plugins</strong> and replace heavy ones with lighter alternatives</li>
+  <li><strong>Update PHP</strong> to a current supported version; see <a href="/blog/update-php-version-wordpress/">updating PHP</a></li>
+  <li><strong>Clean the database</strong> and fix large autoloaded options; see <a href="/blog/wordpress-database-optimization/">database optimisation</a></li>
+  <li><strong>Add object caching</strong> (Redis) if your host supports it; see <a href="/blog/wordpress-caching-explained/">caching explained</a></li>
+  <li><strong>Control Heartbeat</strong> frequency with a performance plugin, without disabling autosave in the editor</li>
+  <li><strong>Disable dashboard widgets</strong> and admin notices you don't need</li>
+  <li><strong>Upgrade hosting</strong> if your site has outgrown it; see <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting</a></li>
+</ol>
+
+<h2>Page builder editors</h2>
+<p>Visual editors like Elementor are heavy by nature. Very long pages with many widgets load slowly in the editor. Splitting huge pages, using global templates and keeping the builder updated helps. See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</p>
+
+<h2>When to get help</h2>
+<p>If the dashboard is still slow after the basics, a developer can profile the site and find the specific bottleneck. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+`,
+  },
+  {
+    slug: 'deceptive-site-ahead-warning-fix',
+    seoTitle: '"Deceptive Site Ahead" Warning: How to Fix and Remove It',
+    title: '"Deceptive Site Ahead" or "Dangerous Site" Warning: How to Fix It',
+    description: 'Why browsers show a red "Deceptive site ahead" or malware warning on your website, how to confirm it in Search Console, clean the site, request a review from Google and prevent it happening again.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-seo-services'],
+    body: `
+<p>A red full-screen warning saying "Deceptive site ahead" or "The site ahead contains malware" is one of the worst things that can happen to a business website. Most visitors turn back immediately. The warning comes from Google Safe Browsing, which is used by Chrome and other browsers, and it can be removed once the cause is fixed.</p>
+
+<h2>Why it happens</h2>
+<ul>
+  <li><strong>Hacked site:</strong> hidden phishing pages, malicious redirects or injected malware, the most common cause</li>
+  <li><strong>Compromised third-party scripts</strong> loaded on your pages</li>
+  <li><strong>Hosted downloads</strong> flagged as harmful</li>
+  <li><strong>Open redirects</strong> abused by spammers</li>
+  <li>Occasionally, a false positive</li>
+</ul>
+
+<h2>Step 1: Confirm the issue</h2>
+<ul>
+  <li>Check Google Search Console's <strong>Security issues</strong> report, which lists the problem and sample URLs</li>
+  <li>Check your site in Google's Safe Browsing site status tool (Transparency Report)</li>
+</ul>
+
+<h2>Step 2: Clean the site thoroughly</h2>
+<ul>
+  <li>Take a backup of the current state for investigation</li>
+  <li>Scan files and database for malware</li>
+  <li>Remove malicious files, unknown admin users and injected code</li>
+  <li>Replace WordPress core, themes and plugins with clean copies</li>
+  <li>Remove nulled (pirated) themes or plugins, a common source of infections</li>
+  <li>Change all passwords: WordPress, hosting, database, SFTP</li>
+</ul>
+<p>Partial clean-ups often leave backdoors, and the site gets reinfected. See <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>, or get professional <a href="/wordpress-malware-removal/">malware removal</a>.</p>
+
+<h2>Step 3: Close the hole</h2>
+<p>Find out how attackers got in: an outdated plugin, a weak password or a vulnerable theme. Update everything and harden logins; see <a href="/blog/secure-wordpress-login/">securing your WordPress login</a>.</p>
+
+<h2>Step 4: Request a review</h2>
+<p>In Search Console's Security issues report, confirm you've fixed the problems and request a review, explaining what you found and fixed. Reviews commonly take from a day to a few days. If the review fails, Google shows sample URLs that still have problems.</p>
+
+<h2>Step 5: Check other blocklists</h2>
+<p>Some antivirus and security vendors keep their own blocklists. Check your domain on multiple site-reputation checkers and request removal where needed.</p>
+
+<h2>Prevent it happening again</h2>
+<ul>
+  <li>Keep everything updated, and remove unused plugins and themes</li>
+  <li>Use a firewall and security monitoring</li>
+  <li>Keep off-site backups</li>
+  <li>Watch Search Console for security emails</li>
+</ul>
+<p>See the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'secure-wordpress-login',
+    seoTitle: 'How to Secure Your WordPress Login (2FA & More)',
+    title: 'How to Secure Your WordPress Login: 2FA, Strong Passwords and More',
+    description: 'Practical ways to protect the WordPress login from brute-force attacks and account takeover: strong unique passwords, two-factor authentication, login limits, user roles, XML-RPC and firewalls.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>Bots constantly try to guess passwords on WordPress sites, and stolen or reused passwords are a common way sites get hacked. Securing the login is one of the simplest, most effective security steps you can take.</p>
+
+<h2>1. Strong, unique passwords</h2>
+<ul>
+  <li>Use long, random passwords generated by a password manager</li>
+  <li>Never reuse a password from another service</li>
+  <li>Don't share logins; give everyone their own account</li>
+</ul>
+
+<h2>2. Two-factor authentication (2FA)</h2>
+<p>2FA asks for a second code, usually from an authenticator app, after the password. Even if a password is stolen, the attacker can't log in without the code. Add it with a security or 2FA plugin, and make it mandatory for administrators at least.</p>
+
+<h2>3. Limit login attempts</h2>
+<p>Block or slow down IP addresses after repeated failed logins. Many security plugins and hosts include this.</p>
+
+<h2>4. Avoid predictable usernames</h2>
+<p>Don't use "admin" or your domain name as the administrator username. Create a new admin user with a unique name and remove the old one (reassigning its content).</p>
+
+<h2>5. Use the right roles</h2>
+<p>Give people only the access they need: Editors for content, Shop Managers for orders, and very few Administrators. Remove accounts for staff or developers who no longer need access. See <a href="/blog/wordpress-user-roles-explained/">user roles explained</a>.</p>
+
+<h2>6. Disable XML-RPC if you don't need it</h2>
+<p>XML-RPC is an older remote access feature that attackers use for password-guessing. If you don't use apps or services that need it, disable it with a security plugin or server rule.</p>
+
+<h2>7. Add a firewall</h2>
+<p>A web application firewall (from your host, Cloudflare or a security plugin) blocks known malicious traffic before it reaches your login page.</p>
+
+<h2>8. Bot protection on the login form</h2>
+<p>An invisible challenge like Cloudflare Turnstile or reCAPTCHA stops automated login attempts without annoying real users much.</p>
+
+<h2>9. Changing the login URL</h2>
+<p>Moving wp-login.php to a custom address reduces bot noise, but it's not real security on its own. Use it alongside the steps above, not instead of them.</p>
+
+<h2>10. Watch for suspicious activity</h2>
+<ul>
+  <li>Activity logs showing logins and changes</li>
+  <li>Alerts for new administrator accounts</li>
+  <li>Log out all sessions if you suspect a compromise, then change passwords</li>
+</ul>
+
+<p>Login security is one part of the full <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
 `,
   },
 ];

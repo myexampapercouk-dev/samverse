@@ -270,5 +270,11 @@
  "blog-woocommerce-inventory-management": "30bba26e1b90d3b16b7316d1eb95993fa5d7e188",
  "blog-woocommerce-coupons-discounts": "54b2089c0a3aab832779eea8401046af205a6f89",
  "blog-google-merchant-center-woocommerce": "b7f82e000fcb61553cabaa24815e71282aeda60a",
- "blog-own-website-vs-marketplaces": "5378b90c5b2a08c6e585e09733103a6ca4e8860c"
+ "blog-own-website-vs-marketplaces": "5378b90c5b2a08c6e585e09733103a6ca4e8860c",
+ "blog-website-down-what-to-do": "905d671c0adb9cfccf51f7869bb49809c5cf2605",
+ "blog-domain-expired-what-to-do": "fe9da716ae614af5d31cf354b08d39c30d916285",
+ "blog-transfer-domain-to-another-registrar": "6759ed22fe0f671dd2f5e01e9b6565d1edf10cd5",
+ "blog-wordpress-admin-slow": "59da866d3f508a3ab061c76f3574e1e08c794f37",
+ "blog-deceptive-site-ahead-warning-fix": "11325061f4843ac581cbc04a1442876c1341275b",
+ "blog-secure-wordpress-login": "b13a0a96afb200ece1028871fa9c872d8a305cb1"
 }
