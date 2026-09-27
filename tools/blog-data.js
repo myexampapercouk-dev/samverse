@@ -50,6 +50,8 @@ module.exports = [
 <h3>5. Speed and SEO work</h3>
 <p>A properly optimized site with caching, compressed images, schema markup and clean structure takes more effort than a basic build, but it pays back in better rankings and more enquiries.</p>
 
+<p>Running a service business? See <a href="/blog/show-prices-on-website/">whether you should show prices on your website</a>.</p>
+
 <h2>Hidden costs to watch for</h2>
 <ul>
   <li><strong>Hosting renewals:</strong> the first year is often discounted, and renewal can cost 2–3× more.</li>
@@ -1099,6 +1101,8 @@ module.exports = [
     body: `
 <p>Your website works for you 24 hours a day, or against you. An outdated site quietly sends potential customers to competitors, and you may never know. Here are 10 signs it's time for a new website or a redesign.</p>
 
+<p>Not sure? Run this <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> first.</p>
+
 <h2>1. It doesn't work well on phones</h2>
 <p>Most visitors browse on mobile. If text is tiny, buttons are hard to tap or people have to pinch and zoom, they leave. Open your site on your phone right now and be honest.</p>
 
@@ -1333,6 +1337,8 @@ module.exports = [
 
 <p>New site not showing up yet? See <a href="/blog/get-website-indexed-google-faster/">how to get your website indexed faster</a>.</p>
 
+<p>More on tracking the right actions: <a href="/blog/ga4-events-explained/">GA4 events explained</a> and <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</p>
+
 <h2>Step 4: Link the two tools</h2>
 <p>In GA4 Admin, link your Search Console property. You'll then see search queries alongside visitor behaviour in Analytics.</p>
 
@@ -1504,6 +1510,8 @@ module.exports = [
   <li><strong>How it works:</strong> 3–4 simple steps.</li>
   <li><strong>FAQs and a final call to action.</strong></li>
 </ol>
+
+<p>Detailed walkthrough: <a href="/blog/write-homepage-that-converts/">how to write a homepage that converts</a>.</p>
 
 <h2>About page</h2>
 <p>People buy from people. Your about page should build trust, not list your company history in detail.</p>
@@ -3467,6 +3475,8 @@ module.exports = [
   <li>Track submissions in Google Analytics to spot sudden drops</li>
   <li>Reply fast, because the first business to respond often wins</li>
 </ul>
+
+<p>And confirm every submission properly with a <a href="/blog/thank-you-pages-forms/">thank-you page</a>.</p>
 
 <h2>Quick fix checklist</h2>
 <ol>
@@ -11265,6 +11275,324 @@ module.exports = [
 <p>Check live work, get a clear quote and keep ownership of your accounts; see <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> and the <a href="/blog/website-brief-template/">website brief template</a>.</p>
 
 <p>Want an estimate first? Try the <a href="/website-cost-calculator/">website cost calculator</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
+`,
+  },
+  {
+    slug: 'write-homepage-that-converts',
+    seoTitle: 'How to Write a Homepage That Converts',
+    title: 'How to Write a Homepage That Converts Visitors Into Enquiries',
+    description: 'A section-by-section homepage structure for small businesses: headline, proof, services, process, case studies, FAQs and calls to action, with examples and common mistakes.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-website-development', 'website-redesign', 'landing-page-design'],
+    body: `
+<p>Your homepage is often the first page people see and the one they judge you by. In a few seconds it must answer: what do you do, is it for me, can I trust you, and what should I do next?</p>
+
+<h2>1. Hero section</h2>
+<ul>
+  <li><strong>Headline:</strong> what you do, for whom, and where if local</li>
+  <li><strong>Supporting line:</strong> the main benefit or difference</li>
+  <li><strong>Primary call to action:</strong> "Get a Free Quote", "Book a Consultation"</li>
+  <li><strong>Secondary action:</strong> WhatsApp or "See our work"</li>
+</ul>
+
+<h2>2. Quick proof</h2>
+<p>Client logos, review ratings, years in business or key numbers you can back up, right below the hero.</p>
+
+<h2>3. Services overview</h2>
+<p>Short cards for each main service, each linking to its own service page. This also helps SEO by linking your strongest page to service pages; see <a href="/blog/internal-linking-explained/">internal linking</a>.</p>
+
+<h2>4. Why choose you</h2>
+<p>Three to five specific reasons: experience, process, guarantees, speed, local presence. Avoid generic claims.</p>
+
+<h2>5. Work and case studies</h2>
+<p>Show real projects with short descriptions and links to case studies.</p>
+
+<h2>6. How it works</h2>
+<p>A simple 3–4 step process reduces uncertainty.</p>
+
+<h2>7. Testimonials</h2>
+<p>Named, specific testimonials near calls to action; see <a href="/blog/collect-display-customer-testimonials/">testimonials</a>.</p>
+
+<h2>8. FAQs</h2>
+<p>Answer common objections: price, timeline, process; see <a href="/blog/faq-page-seo/">FAQ sections</a>.</p>
+
+<h2>9. Final call to action</h2>
+<p>End with a clear next step: a short form, WhatsApp and phone.</p>
+
+<h2>Common homepage mistakes</h2>
+<ul>
+  <li>Sliders with vague slogans</li>
+  <li>"Welcome to our website" headlines</li>
+  <li>Too many competing calls to action</li>
+  <li>No proof or real photos</li>
+  <li>Slow loading from heavy images or video</li>
+</ul>
+
+<p>For the other key pages, see <a href="/blog/write-service-pages-that-convert/">service pages</a> and <a href="/blog/write-about-page-that-builds-trust/">About pages</a>.</p>
+`,
+  },
+  {
+    slug: 'show-prices-on-website',
+    seoTitle: 'Should You Show Prices on Your Website?',
+    title: 'Should You Show Prices on Your Business Website?',
+    description: 'Pros and cons of showing prices on a service business website, alternatives like starting-from prices, packages and calculators, and how pricing information affects enquiries and SEO.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-website-development', 'website-redesign'],
+    body: `
+<p>Many service businesses hide prices, worried they'll scare people away or tip off competitors. But visitors often want at least a rough idea before they contact you. Here's how to decide.</p>
+
+<h2>Benefits of showing pricing information</h2>
+<ul>
+  <li><strong>Pre-qualifies leads:</strong> fewer enquiries from people outside your budget range</li>
+  <li><strong>Builds trust:</strong> transparency feels honest</li>
+  <li><strong>Saves time</strong> on repetitive price questions</li>
+  <li><strong>Answers searches</strong> like "cost of {service}", which people search a lot</li>
+</ul>
+
+<h2>Reasons some businesses don't</h2>
+<ul>
+  <li>Every project is highly custom</li>
+  <li>Prices change often (materials, seasons)</li>
+  <li>Fear of competitors undercutting</li>
+  <li>Worry that a number without context looks expensive</li>
+</ul>
+
+<h2>Middle-ground options</h2>
+<ul>
+  <li><strong>"Starting from" prices</strong> for common services</li>
+  <li><strong>Price ranges</strong> with what affects the cost</li>
+  <li><strong>Packages:</strong> basic, standard and premium tiers</li>
+  <li><strong>A calculator</strong> that gives an instant estimate; see this site's <a href="/website-cost-calculator/">website cost calculator</a></li>
+  <li><strong>A cost guide article</strong> explaining pricing factors; for example, see <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a></li>
+</ul>
+
+<h2>Give prices context</h2>
+<p>Always explain what's included, what affects the price and the value delivered. A price with context feels fair; a bare number invites comparison shopping.</p>
+
+<h2>Regulated professions</h2>
+<p>Some professions have rules about advertising fees. Check your professional body's guidelines before publishing prices.</p>
+
+<h2>Test it</h2>
+<p>If you're unsure, add pricing guidance to one service page and compare enquiry quality and volume over a couple of months.</p>
+`,
+  },
+  {
+    slug: 'diy-website-audit',
+    seoTitle: 'How to Audit Your Own Website (No Tech Skills Needed)',
+    title: 'How to Audit Your Own Website in an Hour (No Technical Skills Needed)',
+    description: 'A simple one-hour website audit for business owners: first impressions, mobile, speed, contact paths, content, trust, Google visibility and security basics, with what to fix first.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['website-redesign', 'wordpress-seo-services', 'wordpress-maintenance'],
+    body: `
+<p>You don't need to be technical to spot the problems that cost your website enquiries. Set aside an hour, open your site on your phone and computer, and work through this audit.</p>
+
+<h2>1. First impression (5 minutes)</h2>
+<ul>
+  <li>Can someone tell what you do within five seconds of landing on the homepage?</li>
+  <li>Is there a clear next step (call, WhatsApp, quote)?</li>
+  <li>Does it look current and professional?</li>
+</ul>
+
+<h2>2. Mobile check (10 minutes)</h2>
+<ul>
+  <li>Is text readable without zooming?</li>
+  <li>Are buttons easy to tap?</li>
+  <li>Any sideways scrolling or overlapping content?</li>
+  <li>Can you call or WhatsApp in one tap?</li>
+</ul>
+
+<h2>3. Speed (5 minutes)</h2>
+<p>Test your homepage on PageSpeed Insights (mobile). Note the Core Web Vitals and top suggestions; see <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</p>
+
+<h2>4. Contact paths (10 minutes)</h2>
+<ul>
+  <li>Submit your own contact form: did the email arrive?</li>
+  <li>Are phone number, WhatsApp and address correct everywhere?</li>
+  <li>Is contact information visible on every page?</li>
+</ul>
+
+<h2>5. Content (10 minutes)</h2>
+<ul>
+  <li>Does each main service have its own page?</li>
+  <li>Are prices, hours, team and services up to date?</li>
+  <li>Are there testimonials, case studies or real photos?</li>
+</ul>
+
+<h2>6. Google visibility (10 minutes)</h2>
+<ul>
+  <li>Search your business name: do you appear, with a Google Business Profile?</li>
+  <li>Search your main service plus city: where do you appear?</li>
+  <li>Search <code>site:yourdomain.com</code> to see roughly how many pages are indexed</li>
+</ul>
+
+<h2>7. Security basics (5 minutes)</h2>
+<ul>
+  <li>Does every page show the padlock (HTTPS)?</li>
+  <li>When were WordPress and plugins last updated?</li>
+  <li>Do you have recent backups?</li>
+</ul>
+
+<h2>8. Prioritise (5 minutes)</h2>
+<ol>
+  <li>Broken forms or contact details: fix today</li>
+  <li>Mobile and speed problems</li>
+  <li>Missing service pages and proof</li>
+  <li>SEO and content improvements</li>
+</ol>
+
+<p>For a deeper look, see the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit</a>. If the list is long, consider a <a href="/website-redesign/">redesign</a>.</p>
+`,
+  },
+  {
+    slug: 'ga4-events-explained',
+    seoTitle: 'Google Analytics 4 Events Explained for Business Websites',
+    title: 'Google Analytics 4 Events Explained: Tracking What Matters on Your Website',
+    description: 'What GA4 events and key events are, which actions to track on a business website (forms, calls, WhatsApp, downloads, purchases), how to set them up and how to read the results.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-seo-services', 'landing-page-design', 'woocommerce-developer'],
+    body: `
+<p>Google Analytics 4 measures everything as "events": page views, scrolls, clicks, form submissions and purchases. Understanding events is the key to knowing whether your website brings business.</p>
+
+<h2>Events and key events</h2>
+<ul>
+  <li><strong>Events:</strong> any tracked interaction</li>
+  <li><strong>Key events:</strong> the events you mark as important business outcomes (previously called conversions)</li>
+</ul>
+
+<h2>Events GA4 tracks automatically</h2>
+<p>Page views, first visits, sessions, and, with enhanced measurement, scrolls, outbound clicks, site search, video engagement and file downloads.</p>
+
+<h2>Events you should add for a business website</h2>
+<table>
+  <thead><tr><th>Action</th><th>Example event name</th></tr></thead>
+  <tbody>
+    <tr><td>Contact or quote form submitted</td><td>generate_lead</td></tr>
+    <tr><td>WhatsApp button clicked</td><td>contact_whatsapp</td></tr>
+    <tr><td>Phone number tapped</td><td>contact_call</td></tr>
+    <tr><td>Email link clicked</td><td>contact_email</td></tr>
+    <tr><td>Brochure or price list downloaded</td><td>file_download</td></tr>
+    <tr><td>Online purchase</td><td>purchase</td></tr>
+  </tbody>
+</table>
+<p>This website tracks form submissions, WhatsApp, call and email clicks, portfolio clicks, shares and calculator use as events.</p>
+
+<h2>How to set them up</h2>
+<ul>
+  <li>Add event code to buttons and forms (or use Google Tag Manager)</li>
+  <li>For forms, fire the event on successful submission or on a thank-you page; see <a href="/blog/thank-you-pages-forms/">thank-you pages</a></li>
+  <li>Mark the most important ones as key events in GA4 Admin</li>
+  <li>Test in GA4's real-time and DebugView reports</li>
+</ul>
+
+<h2>Reading the results</h2>
+<ul>
+  <li><strong>Key events by traffic source:</strong> which channels bring enquiries</li>
+  <li><strong>Key events by landing page:</strong> which pages convert</li>
+  <li><strong>Trends over time:</strong> is the site improving?</li>
+</ul>
+
+<h2>Combine with UTM tags</h2>
+<p>Tag links in campaigns, WhatsApp broadcasts and social posts so GA4 knows where visitors came from; see <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</p>
+
+<p>Start with the basics in <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a>.</p>
+`,
+  },
+  {
+    slug: 'utm-tags-explained',
+    seoTitle: 'UTM Tags Explained: Track Where Visitors Come From',
+    title: 'UTM Tags Explained: Know Which Campaigns Bring Visitors',
+    description: 'What UTM parameters are, how to add them to links in social posts, WhatsApp, emails and ads, naming conventions that stay tidy, and how to read UTM data in Google Analytics.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-seo-services', 'website-for-startups'],
+    body: `
+<p>When someone clicks a link in a WhatsApp message, Instagram bio or email, Google Analytics often can't tell where they came from. UTM tags fix that by adding a few labels to the link.</p>
+
+<h2>What UTM tags look like</h2>
+<p>A tagged link adds parameters after a question mark, for example: <code>?utm_source=linkedin&amp;utm_medium=social&amp;utm_campaign=diwali-offer</code></p>
+
+<h2>The main parameters</h2>
+<table>
+  <thead><tr><th>Parameter</th><th>Meaning</th><th>Example</th></tr></thead>
+  <tbody>
+    <tr><td>utm_source</td><td>Where the traffic comes from</td><td>linkedin, whatsapp, newsletter</td></tr>
+    <tr><td>utm_medium</td><td>The type of channel</td><td>social, email, cpc, qr</td></tr>
+    <tr><td>utm_campaign</td><td>The specific campaign</td><td>diwali-offer, spring-webinar</td></tr>
+    <tr><td>utm_content</td><td>(Optional) which link or creative</td><td>banner-a, bio-link</td></tr>
+  </tbody>
+</table>
+
+<h2>Where to use them</h2>
+<ul>
+  <li>Social media posts and profile links</li>
+  <li>WhatsApp broadcasts and status links</li>
+  <li>Email newsletters</li>
+  <li>QR codes on flyers, cards and banners</li>
+  <li>Partner and guest article links you control</li>
+</ul>
+
+<h2>Where not to use them</h2>
+<p>Don't add UTM tags to internal links on your own website. That overwrites the original source of the visit and messes up your data.</p>
+
+<h2>Keep naming consistent</h2>
+<ul>
+  <li>Use lowercase</li>
+  <li>Use hyphens instead of spaces</li>
+  <li>Keep a simple spreadsheet of sources, mediums and campaign names</li>
+</ul>
+
+<h2>Reading the results</h2>
+<p>In GA4, traffic acquisition reports show sessions and key events by source, medium and campaign. Combine with event tracking to see which campaigns actually bring enquiries; see <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</p>
+
+<p>For planning campaigns, see <a href="/blog/seasonal-festival-campaigns-website/">seasonal campaigns</a> and <a href="/blog/repurpose-website-content-social-media/">repurposing content for social media</a>.</p>
+`,
+  },
+  {
+    slug: 'thank-you-pages-forms',
+    seoTitle: 'Thank-You Pages: Why Every Website Form Needs One',
+    title: 'Thank-You Pages: Why Every Website Form Needs One',
+    description: 'Why a dedicated thank-you page (or confirmation message) matters after form submissions: reassurance, tracking conversions, next steps, cross-selling and what to include.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>What happens after someone submits your contact form? On many sites, a tiny line of text appears, or nothing obvious at all. A good confirmation, ideally a dedicated thank-you page, reassures the visitor and helps you measure results.</p>
+
+<h2>Why it matters</h2>
+<ul>
+  <li><strong>Reassurance:</strong> visitors know their message arrived</li>
+  <li><strong>Expectations:</strong> they know when and how you'll respond</li>
+  <li><strong>Tracking:</strong> a thank-you page view is an easy, reliable conversion to track</li>
+  <li><strong>Next steps:</strong> keep interested visitors engaged</li>
+</ul>
+
+<h2>What to include</h2>
+<ol>
+  <li><strong>A clear confirmation:</strong> "Thanks, {name}! We've received your enquiry."</li>
+  <li><strong>What happens next:</strong> "We'll reply within 24 hours by phone or WhatsApp."</li>
+  <li><strong>An immediate option:</strong> "Need it sooner? Chat on WhatsApp."</li>
+  <li><strong>Something useful:</strong> a relevant guide, case study or FAQ</li>
+  <li><strong>Social proof:</strong> a testimonial reinforcing their decision</li>
+</ol>
+
+<h2>Tracking conversions</h2>
+<ul>
+  <li>Track the thank-you page view (or form success event) as a key event in GA4; see <a href="/blog/ga4-events-explained/">GA4 events explained</a></li>
+  <li>For ads, use it as the conversion action</li>
+  <li>Keep thank-you pages out of search results (noindex)</li>
+</ul>
+
+<h2>Inline confirmations</h2>
+<p>If your form shows a confirmation message instead of a separate page (as this site's form does before opening WhatsApp), make it clear and visible, and fire a tracking event on success.</p>
+
+<h2>Don't forget the email side</h2>
+<p>Make sure the enquiry actually reaches your inbox, and consider an automatic acknowledgement email to the visitor; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+
+<p>Thank-you pages are part of every good <a href="/landing-page-design/">landing page</a> setup.</p>
 `,
   },
 ];

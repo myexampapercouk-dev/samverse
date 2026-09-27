@@ -218,6 +218,12 @@ const LINKS = [
   ['first-90-days-after-website-launch', '<h2>Week 1: check everything works</h2>', '<p>Before launch day, run through the full <a href="/blog/website-launch-checklist/">website launch checklist</a>.</p>\n\n'],
   ['image-optimization-wordpress', '<h2>1. Resize before uploading</h2>', '<p>Taking your own photos? See <a href="/blog/prepare-photos-for-website/">how to prepare photos for your website</a>.</p>\n\n'],
   ['freelancer-vs-agency-web-developer', '<h2>When a freelancer is the better choice</h2>', '<p>Considering building it yourself? See <a href="/blog/hire-developer-vs-diy-website/">hire a developer vs DIY</a>.</p>\n\n'],
+  // Round 26
+  ['how-to-write-website-content', '<h2>About page</h2>', '<p>Detailed walkthrough: <a href="/blog/write-homepage-that-converts/">how to write a homepage that converts</a>.</p>\n\n'],
+  ['wordpress-website-cost-india', '<h2>Hidden costs to watch for</h2>', '<p>Running a service business? See <a href="/blog/show-prices-on-website/">whether you should show prices on your website</a>.</p>\n\n'],
+  ['signs-you-need-a-new-website', '<h2>1. It doesn\'t work well on phones</h2>', '<p>Not sure? Run this <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> first.</p>\n\n'],
+  ['setup-google-analytics-search-console', '<h2>Step 4: Link the two tools</h2>', '<p>More on tracking the right actions: <a href="/blog/ga4-events-explained/">GA4 events explained</a> and <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</p>\n\n'],
+  ['contact-form-not-getting-enquiries', '<h2>Quick fix checklist</h2>', '<p>And confirm every submission properly with a <a href="/blog/thank-you-pages-forms/">thank-you page</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
