@@ -165,6 +165,10 @@ const LINKS = [
   ['portfolio-website-freelancers-creatives', '<h2>Build trust</h2>', '<p>Writers and video creators: see <a href="/blog/website-for-authors-content-creators/">websites for authors and content creators</a>.</p>\n\n'],
   ['migrate-wix-to-wordpress', '<h2>Keeping your Google rankings</h2>', '<p>Moving from Blogger instead? See <a href="/blog/migrate-blogger-to-wordpress/">Blogger to WordPress</a>.</p>\n\n'],
   ['woocommerce-vs-shopify-india', '<h2>Choose Shopify if...</h2>', '<p>Already on Shopify and thinking of switching? See <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</p>\n\n'],
+  // Round 18
+  ['technical-seo-audit-wordpress', '<h2>3. One version of the site</h2>', '<p>Background reading: <a href="/blog/xml-sitemaps-explained/">XML sitemaps</a> and <a href="/blog/robots-txt-explained/">robots.txt</a> explained.</p>\n\n'],
+  ['technical-seo-audit-wordpress', '<h2>6. Speed and Core Web Vitals</h2>', '<p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags</a>, <a href="/blog/duplicate-content-explained/">duplicate content</a> and <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>\n\n'],
+  ['website-analytics-metrics-that-matter', '<h2>6. Search queries (Search Console)</h2>', '<p>Low engagement on key pages? See <a href="/blog/keep-visitors-engaged-website/">how to keep visitors engaged</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

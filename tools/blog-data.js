@@ -4325,6 +4325,8 @@ module.exports = [
   <li>No important links that only work with JavaScript</li>
 </ul>
 
+<p>Background reading: <a href="/blog/xml-sitemaps-explained/">XML sitemaps</a> and <a href="/blog/robots-txt-explained/">robots.txt</a> explained.</p>
+
 <h2>3. One version of the site</h2>
 <ul>
   <li>HTTPS everywhere, with a valid certificate</li>
@@ -4347,6 +4349,8 @@ module.exports = [
   <li>No near-duplicate pages targeting the same keyword</li>
   <li>Filter, sort and tracking parameters not creating indexable duplicates</li>
 </ul>
+
+<p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags</a>, <a href="/blog/duplicate-content-explained/">duplicate content</a> and <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
 
 <h2>6. Speed and Core Web Vitals</h2>
 <ul>
@@ -6802,6 +6806,8 @@ module.exports = [
 <h2>5. Engagement</h2>
 <p>Engaged sessions and engagement time show whether visitors actually read and interact. Very low engagement on a key page suggests a mismatch between what people expected and what they found.</p>
 
+<p>Low engagement on key pages? See <a href="/blog/keep-visitors-engaged-website/">how to keep visitors engaged</a>.</p>
+
 <h2>6. Search queries (Search Console)</h2>
 <p>Which searches show your site, your clicks and average position. Pages ranking around positions 8–20 are the best candidates for improvement.</p>
 
@@ -8735,6 +8741,290 @@ module.exports = [
 </ul>
 
 <p>Use the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> before going live, or see <a href="/woocommerce-developer/">WooCommerce development</a> and <a href="/wordpress-migration/">migration</a>.</p>
+`,
+  },
+  {
+    slug: 'xml-sitemaps-explained',
+    seoTitle: 'XML Sitemaps Explained for Business Websites',
+    title: 'XML Sitemaps Explained: What They Are and How to Use Them',
+    description: 'What an XML sitemap is, why it helps Google find your pages, what should and shouldn\'t be in it, how WordPress creates one, and how to submit and check it in Search Console.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-migration', 'website-redesign'],
+    body: `
+<p>An XML sitemap is a file that lists the important pages on your website so search engines can find them efficiently. It doesn't guarantee rankings, but it helps Google discover and understand your site, especially new pages.</p>
+
+<h2>What a sitemap contains</h2>
+<ul>
+  <li>URLs of the pages you want indexed</li>
+  <li>Optionally, when each page was last modified</li>
+  <li>Sometimes separate sitemaps for posts, pages, products and images, combined in a sitemap index</li>
+</ul>
+
+<h2>What should be in it</h2>
+<ul>
+  <li>Important, indexable pages: homepage, services, products, articles, case studies</li>
+  <li>The canonical (preferred) version of each URL</li>
+</ul>
+
+<h2>What should not be in it</h2>
+<ul>
+  <li>Pages blocked by noindex</li>
+  <li>Redirected or broken URLs</li>
+  <li>Duplicate versions, filtered URLs, cart and account pages</li>
+  <li>Thank-you pages and low-value archives</li>
+</ul>
+
+<h2>How WordPress creates sitemaps</h2>
+<p>WordPress includes a basic sitemap, and SEO plugins such as Rank Math or Yoast generate more configurable ones (often at <code>/sitemap_index.xml</code>). Use one sitemap system to avoid confusion.</p>
+
+<h2>Submit and monitor</h2>
+<ol>
+  <li>Open Google Search Console, go to Sitemaps</li>
+  <li>Submit your sitemap URL</li>
+  <li>Check its status and number of discovered URLs</li>
+  <li>Review the Pages report for indexing issues</li>
+</ol>
+<p>Add the sitemap location to your robots.txt too; see <a href="/blog/robots-txt-explained/">robots.txt explained</a>.</p>
+
+<h2>Keep it clean</h2>
+<p>A sitemap full of redirects, errors or noindexed pages sends mixed signals. Check it after redesigns and migrations. See the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit checklist</a>.</p>
+
+<p>For new sites, read <a href="/blog/get-website-indexed-google-faster/">how to get indexed faster</a>.</p>
+`,
+  },
+  {
+    slug: 'robots-txt-explained',
+    seoTitle: 'Robots.txt Explained Simply (and Common Mistakes)',
+    title: 'Robots.txt Explained Simply, With Common Mistakes to Avoid',
+    description: 'What robots.txt does, how search engines use it, safe settings for WordPress sites, the difference between blocking crawling and preventing indexing, and mistakes that hide sites from Google.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
+    body: `
+<p>Robots.txt is a small text file at the root of your website that tells search engine crawlers which areas they may or may not crawl. Used correctly it's harmless and useful; used wrongly it can hide your whole site from Google.</p>
+
+<h2>What it looks like</h2>
+<p>A typical robots.txt contains rules such as allowing all crawlers, disallowing an admin or private folder, and pointing to your sitemap. On WordPress, a common safe setup allows everything except the admin area (while allowing the file WordPress uses for front-end features), plus a sitemap line.</p>
+
+<h2>Crawling vs indexing</h2>
+<p>This is the most misunderstood point:</p>
+<ul>
+  <li><strong>robots.txt controls crawling:</strong> whether bots visit a URL</li>
+  <li><strong>noindex controls indexing:</strong> whether a page appears in search results</li>
+</ul>
+<p>If you block a page in robots.txt, Google can't see its noindex tag, and the URL might still appear in results if other sites link to it. To keep a page out of search results, use noindex and let it be crawled.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li><strong>Blocking the whole site</strong> with a leftover staging rule after launch</li>
+  <li><strong>Blocking CSS and JavaScript files</strong>, which stops Google rendering pages properly</li>
+  <li><strong>Using robots.txt to hide private content.</strong> It's public, and it doesn't secure anything. Use passwords for private areas.</li>
+  <li><strong>Blocking pages you want removed from search</strong> instead of using noindex</li>
+</ul>
+
+<h2>How to check yours</h2>
+<ul>
+  <li>Visit yourdomain.com/robots.txt</li>
+  <li>Use the robots.txt report and URL Inspection tool in Google Search Console</li>
+  <li>After launches and migrations, confirm nothing important is disallowed</li>
+</ul>
+
+<h2>AI crawlers</h2>
+<p>Some businesses choose whether to allow AI crawlers in robots.txt. Decide deliberately based on whether you want your content used and cited by AI tools; see <a href="/blog/ai-search-optimization-website/">AI search and your website</a>.</p>
+
+<p>See also <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a> and the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit</a>.</p>
+`,
+  },
+  {
+    slug: 'canonical-tags-explained',
+    seoTitle: 'Canonical Tags Explained for Business Owners',
+    title: 'Canonical Tags Explained: Telling Google Which Page Is the Original',
+    description: 'What canonical tags are, when your site creates duplicate URLs (www, parameters, product variants), how canonicals fix it, and common canonical mistakes that hurt rankings.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'woocommerce-developer', 'wordpress-migration'],
+    body: `
+<p>The same page can often be reached through several URLs. A canonical tag tells search engines which URL is the main version to index and rank, so ranking signals aren't split across duplicates.</p>
+
+<h2>How duplicate URLs happen</h2>
+<ul>
+  <li>http vs https, and www vs non-www versions</li>
+  <li>Tracking parameters (<code>?utm_source=...</code>)</li>
+  <li>Sorting and filter parameters on stores and listings</li>
+  <li>Print versions or session IDs</li>
+  <li>The same product in multiple categories with different URLs</li>
+  <li>Content syndicated on other sites</li>
+</ul>
+
+<h2>How a canonical tag works</h2>
+<p>A canonical is a link tag in a page's head pointing to the preferred URL. Each page usually points to itself (a self-referencing canonical), while duplicate versions point to the main one. Google treats canonicals as a strong hint, not a command.</p>
+
+<h2>WordPress and canonicals</h2>
+<p>WordPress and SEO plugins add self-referencing canonicals automatically. Check them after migrations, domain changes and redesigns. Every page on this website includes one.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li><strong>Canonicals pointing to a staging or old domain</strong> after a migration</li>
+  <li><strong>All pages canonicalised to the homepage</strong>, which tells Google to ignore them</li>
+  <li><strong>Canonical to a redirected or 404 URL</strong></li>
+  <li><strong>Conflicting signals:</strong> canonical says one URL, sitemap and internal links use another</li>
+  <li><strong>Using canonicals instead of redirects</strong> when a page has permanently moved</li>
+</ul>
+
+<h2>Canonicals vs redirects vs noindex</h2>
+<ul>
+  <li><strong>Redirect:</strong> the old URL shouldn't exist any more (page moved). See <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
+  <li><strong>Canonical:</strong> duplicates need to exist, but one version should rank</li>
+  <li><strong>Noindex:</strong> the page shouldn't appear in search at all</li>
+</ul>
+
+<p>For more on duplicates, see <a href="/blog/duplicate-content-explained/">duplicate content explained</a>.</p>
+`,
+  },
+  {
+    slug: 'duplicate-content-explained',
+    seoTitle: 'Duplicate Content Explained: Myths and Fixes',
+    title: 'Duplicate Content Explained: Myths, Real Risks and Fixes',
+    description: 'What duplicate content really means for SEO, the myth of the "duplicate content penalty", real problems it causes (diluted rankings, wasted crawling) and how to fix them on business websites.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'woocommerce-developer', 'website-redesign'],
+    body: `
+<p>"Duplicate content" worries many business owners. The truth is more nuanced: normal technical duplication rarely causes penalties, but some kinds of duplication do hold sites back.</p>
+
+<h2>The myth</h2>
+<p>There's no automatic penalty for having some duplicate text, such as a shared disclaimer, a product described similarly to another, or a quote. Google usually just picks one version to show.</p>
+
+<h2>The real problems</h2>
+<ul>
+  <li><strong>Split ranking signals:</strong> links and relevance spread across several URLs for the same content</li>
+  <li><strong>Google choosing the wrong version</strong> to show in results</li>
+  <li><strong>Wasted crawling</strong> on large sites with many near-identical pages</li>
+  <li><strong>Thin, scaled pages:</strong> many near-identical pages created to target keywords (like city-swapped pages) can be treated as spam. See <a href="/blog/local-landing-pages-without-doorway-pages/">avoiding doorway pages</a>.</li>
+  <li><strong>Copied content from other sites</strong> adds little value and rarely ranks</li>
+</ul>
+
+<h2>Common sources on business sites</h2>
+<ul>
+  <li>Multiple URL versions (http/https, www/non-www)</li>
+  <li>Store filter and sort parameters</li>
+  <li>Manufacturer product descriptions used by every retailer</li>
+  <li>Service pages with the same text and only the location changed</li>
+  <li>Tag and category archives that repeat post excerpts</li>
+</ul>
+
+<h2>How to fix it</h2>
+<ol>
+  <li>Redirect to one preferred domain version</li>
+  <li>Use canonical tags for necessary duplicates; see <a href="/blog/canonical-tags-explained/">canonical tags explained</a></li>
+  <li>Write unique product and service descriptions</li>
+  <li>Merge near-duplicate pages into one stronger page, with redirects</li>
+  <li>Noindex low-value archives if they add nothing</li>
+  <li>Control filter URLs on stores; see <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a></li>
+</ol>
+
+<h2>The principle</h2>
+<p>Each page should exist for a reason and offer something unique. If two pages would answer the same question, combine them into one better page.</p>
+`,
+  },
+  {
+    slug: '301-vs-302-redirects',
+    seoTitle: '301 vs 302 Redirects Explained Simply',
+    title: '301 vs 302 Redirects: Which to Use and When',
+    description: 'The difference between 301 (permanent) and 302 (temporary) redirects, when to use each, how redirects affect SEO, redirect chains and loops, and how to set them up on WordPress.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
+    body: `
+<p>Redirects send visitors and search engines from one URL to another. Choosing the right type, and setting them up carefully, protects your rankings when pages move.</p>
+
+<h2>301: permanent</h2>
+<p>Use a 301 when a page has moved for good: a new URL, a merged page, a new domain, or http to https. Search engines transfer the old page's ranking signals to the new URL over time.</p>
+
+<h2>302: temporary</h2>
+<p>Use a 302 (or 307) when the move is genuinely temporary: a short promotion, maintenance or A/B testing. Search engines keep the original URL indexed.</p>
+
+<h2>When redirects matter most</h2>
+<ul>
+  <li>Redesigns that change URLs; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a></li>
+  <li>Domain changes and platform migrations (Wix, Blogger, Shopify to WordPress)</li>
+  <li>Deleting or merging pages</li>
+  <li>Moving to HTTPS and one preferred www/non-www version</li>
+</ul>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li><strong>Redirecting everything to the homepage.</strong> Redirect each old page to its closest equivalent.</li>
+  <li><strong>Redirect chains:</strong> A → B → C slows pages and loses signals. Point A straight to C.</li>
+  <li><strong>Redirect loops:</strong> A → B → A breaks the page entirely</li>
+  <li><strong>Using 302 for permanent moves</strong></li>
+  <li><strong>Forgetting internal links:</strong> update links to point directly to new URLs</li>
+</ul>
+
+<h2>Setting up redirects on WordPress</h2>
+<ul>
+  <li>SEO or redirection plugins manage redirects from the dashboard and log 404s</li>
+  <li>Server or hosting rules handle domain-wide redirects efficiently</li>
+  <li>Keep a spreadsheet of old URL → new URL for big changes</li>
+</ul>
+
+<h2>After setting redirects</h2>
+<p>Test old URLs, check Search Console for 404s, and keep redirects in place long term. See also <a href="/blog/canonical-tags-explained/">canonical tags explained</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
+`,
+  },
+  {
+    slug: 'keep-visitors-engaged-website',
+    seoTitle: 'How to Keep Visitors Engaged on Your Website',
+    title: 'How to Keep Visitors Engaged on Your Website (and Reduce Bounces)',
+    description: 'Why visitors leave business websites quickly and how to keep them engaged: matching search intent, fast loading, clear structure, internal links, visuals and next steps.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['website-redesign', 'wordpress-speed-optimization', 'landing-page-design'],
+    body: `
+<p>If visitors land on your site and leave within seconds, you lose potential customers and miss the chance to show what you offer. Here's why people leave, and how to keep them reading and moving towards contacting you.</p>
+
+<h2>Why visitors leave quickly</h2>
+<ul>
+  <li>The page doesn't match what they searched for</li>
+  <li>It loads slowly, especially on mobile</li>
+  <li>The first screen is confusing, cluttered or covered by pop-ups</li>
+  <li>Walls of text with no structure</li>
+  <li>No obvious next step</li>
+</ul>
+<p>Note: a quick visit isn't always bad. If someone finds your phone number and calls, that's a success. Measure conversions, not just engagement. See <a href="/blog/website-analytics-metrics-that-matter/">analytics metrics that matter</a>.</p>
+
+<h2>Match search intent</h2>
+<p>Make sure each page delivers what its title promises. If people search for prices, show pricing guidance; if they want a guide, give a real guide. Check Search Console queries for each page.</p>
+
+<h2>Load fast</h2>
+<p>Speed is the first impression. See <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
+
+<h2>Make the first screen count</h2>
+<ul>
+  <li>A clear headline that confirms visitors are in the right place</li>
+  <li>A short supporting line and one call to action</li>
+  <li>No intrusive pop-ups</li>
+</ul>
+
+<h2>Make content easy to scan</h2>
+<ul>
+  <li>Headings, short paragraphs, bullet points and tables</li>
+  <li>A summary or key takeaways at the top of long articles</li>
+  <li>Relevant images, diagrams and short videos</li>
+</ul>
+
+<h2>Guide the next step</h2>
+<ul>
+  <li>Internal links to related services, articles and case studies; see <a href="/blog/internal-linking-explained/">internal linking</a></li>
+  <li>Calls to action after key sections</li>
+  <li>"Related articles" and "next article" links</li>
+</ul>
+
+<h2>Build trust quickly</h2>
+<p>Testimonials, real photos and clear contact details near the top reassure visitors that you're genuine.</p>
+
+<p>For a structured approach to improving results, see <a href="/blog/conversion-rate-optimization-basics/">conversion rate optimization basics</a>.</p>
 `,
   },
 ];

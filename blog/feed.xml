@@ -1084,5 +1084,47 @@
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
     <description>How to migrate an online store from Shopify to WooCommerce: why stores switch, what data moves (products, customers, orders), payment and shipping setup, redirects and launch checks.</description>
   </item>
+  <item>
+    <title>XML Sitemaps Explained: What They Are and How to Use Them</title>
+    <link>https://samverse.space/blog/xml-sitemaps-explained/</link>
+    <guid>https://samverse.space/blog/xml-sitemaps-explained/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What an XML sitemap is, why it helps Google find your pages, what should and shouldn't be in it, how WordPress creates one, and how to submit and check it in Search Console.</description>
+  </item>
+  <item>
+    <title>Robots.txt Explained Simply, With Common Mistakes to Avoid</title>
+    <link>https://samverse.space/blog/robots-txt-explained/</link>
+    <guid>https://samverse.space/blog/robots-txt-explained/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What robots.txt does, how search engines use it, safe settings for WordPress sites, the difference between blocking crawling and preventing indexing, and mistakes that hide sites from Google.</description>
+  </item>
+  <item>
+    <title>Canonical Tags Explained: Telling Google Which Page Is the Original</title>
+    <link>https://samverse.space/blog/canonical-tags-explained/</link>
+    <guid>https://samverse.space/blog/canonical-tags-explained/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What canonical tags are, when your site creates duplicate URLs (www, parameters, product variants), how canonicals fix it, and common canonical mistakes that hurt rankings.</description>
+  </item>
+  <item>
+    <title>Duplicate Content Explained: Myths, Real Risks and Fixes</title>
+    <link>https://samverse.space/blog/duplicate-content-explained/</link>
+    <guid>https://samverse.space/blog/duplicate-content-explained/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What duplicate content really means for SEO, the myth of the &quot;duplicate content penalty&quot;, real problems it causes (diluted rankings, wasted crawling) and how to fix them on business websites.</description>
+  </item>
+  <item>
+    <title>301 vs 302 Redirects: Which to Use and When</title>
+    <link>https://samverse.space/blog/301-vs-302-redirects/</link>
+    <guid>https://samverse.space/blog/301-vs-302-redirects/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>The difference between 301 (permanent) and 302 (temporary) redirects, when to use each, how redirects affect SEO, redirect chains and loops, and how to set them up on WordPress.</description>
+  </item>
+  <item>
+    <title>How to Keep Visitors Engaged on Your Website (and Reduce Bounces)</title>
+    <link>https://samverse.space/blog/keep-visitors-engaged-website/</link>
+    <guid>https://samverse.space/blog/keep-visitors-engaged-website/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Why visitors leave business websites quickly and how to keep them engaged: matching search intent, fast loading, clear structure, internal links, visuals and next steps.</description>
+  </item>
 </channel>
 </rss>

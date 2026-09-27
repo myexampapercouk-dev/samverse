@@ -1081,6 +1081,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://samverse.space/blog/xml-sitemaps-explained/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/robots-txt-explained/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/canonical-tags-explained/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/duplicate-content-explained/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/301-vs-302-redirects/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/keep-visitors-engaged-website/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://samverse.space/work/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
