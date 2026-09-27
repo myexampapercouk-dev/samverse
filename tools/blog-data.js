@@ -3768,6 +3768,8 @@ module.exports = [
 </ol>
 <p>Case studies show how you think, which matters more to serious clients than pretty pictures alone. See how case studies are structured on this site's <a href="/work/">portfolio</a>.</p>
 
+<p><strong>Real example:</strong> the <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a> shows a Hyderabad interior studio site with a filterable project gallery, detailed services, a design partner page and free quote calls to action throughout.</p>
+
 <h2>Explain your services and process</h2>
 <ul>
   <li>Services: full design, turnkey execution, consultation, 3D visualisation, space planning</li>
@@ -14319,6 +14321,8 @@ module.exports = [
 
 <h2>Performance considerations</h2>
 <p>Pro doesn't have to slow a site, but adding many widgets, popups and animations does. Use features deliberately, enable Elementor's performance settings and test speed; see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</p>
+
+<p>For a real Elementor Pro build, see the <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a>.</p>
 
 <h2>Licences: buy in your name</h2>
 <p>If your developer buys the licence, make sure you know whose account it's in. If it lapses, you lose updates and support, and Pro features may stop being editable. Ideally buy it in your business name; see the <a href="/blog/website-ownership-checklist/">ownership checklist</a>.</p>

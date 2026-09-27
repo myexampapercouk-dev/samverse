@@ -482,7 +482,7 @@ const PAGES = [
     ],
     getsTitle: 'Elementor services',
     gets: ['Custom page builds', 'Elementor Pro Theme Builder', 'Popups & forms', 'WooCommerce Builder layouts', 'Dynamic content & ACF', 'Global styles & design system', 'Responsive fixes', 'Elementor speed optimization'],
-    projects: ['Third Eye Social', 'Streak Creative', 'Vansh Group', 'India Automation Hub'],
+    projects: ['Third Eye Social', 'Studio Agama Interiors', 'Streak Creative', 'Dr. Sunaina Dental Care'],
     faqs: [
       ['Do you work with Elementor Pro?', 'Yes. I use Elementor Pro features like Theme Builder, dynamic content, popups, forms and WooCommerce Builder.'],
       ['Can you fix my existing Elementor site?', 'Yes. I can fix broken layouts, responsive issues and slow pages on existing Elementor websites.'],

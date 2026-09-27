@@ -300,6 +300,8 @@ const LINKS = [
   // Round 37: case study links
   ['website-for-dentists', '<h2>Local SEO for dentists</h2>', '<p><strong>Real example:</strong> the <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care case study</a> shows a dental clinic site in Agra with a treatments page, patient testimonials, FAQs on pain and booking, an appointment page and one-tap WhatsApp.</p>\n\n'],
   ['clinic-website-checklist-for-doctors', '<h2>Common mistakes to avoid</h2>', '<p>See these ideas on live clinic sites: <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a> and <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a>.</p>\n\n'],
+  ['website-for-interior-designers-architects', '<h2>Explain your services and process</h2>', '<p><strong>Real example:</strong> the <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a> shows a Hyderabad interior studio site with a filterable project gallery, detailed services, a design partner page and free quote calls to action throughout.</p>\n\n'],
+  ['elementor-pro-worth-it', '<h2>Licences: buy in your name</h2>', '<p>For a real Elementor Pro build, see the <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

@@ -45,6 +45,7 @@
 - [Our Temples](https://samverse.space/work/our-temples/): A large directory and travel guide of Hindu temples across India and abroad, searchable by state and by deity, with videos, slokas and a blog.
 - [Dr. Sudhir Arora](https://samverse.space/work/dr-sudhir-arora/): A personal-brand website for an experienced doctor offering mind-body wellness education, online consultations and structured coaching programs.
 - [Dr. Sunaina Dental Care](https://samverse.space/work/dr-sunaina-dental-care/): A warm, trust-focused website for a dental clinic and implant centre in Agra, built to explain treatments clearly and turn visitors into booked appointments.
+- [Studio Agama Interiors](https://samverse.space/work/studio-agama-interiors/): A visual, lead-focused website for a Hyderabad interior design and turnkey execution studio, showcasing services and projects and driving free quote requests.
 - [Sahni Power Solutions](https://samverse.space/work/sahni-power-solutions/): A lead-focused website for a diesel generator rental company, presenting its full fleet from small portable units to large silent gensets.
 - [Samverse (this website)](https://samverse.space/work/samverse/): The site you're reading: a fast, search-focused portfolio and lead generation website for my own freelance business, with service and industry pages, a blog, case studies and a cost calculator.
 

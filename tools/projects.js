@@ -11,7 +11,8 @@ module.exports = [
   { name: 'Our Temples',           url: 'https://ourtemples.info/',         study: '/work/our-temples/',           tag: 'Temple Directory',                                                     color: '#F97316' },
   { name: 'Dr. Sudhir Arora',      url: 'https://drsudhirarora.com/',       study: '/work/dr-sudhir-arora/',       tag: 'Healthcare & Wellness',                                                color: '#14B8A6' },
   { name: 'Dr. Sunaina Dental Care', url: 'https://drsunainadentalcare.com/', study: '/work/dr-sunaina-dental-care/', tag: 'Dental Clinic',                                                      color: '#0891B2' },
+  { name: 'Studio Agama Interiors', url: 'https://interiorstudioagama.com/', study: '/work/studio-agama-interiors/', tag: 'Interior Design Studio',                                             color: '#A16207' },
   { name: 'Sahni Power Solutions', url: 'https://sahnipowersolutions.com/', study: '/work/sahni-power-solutions/', tag: 'Generator Rental',                                                     color: '#22C55E' },
   { name: 'Samverse (this website)', url: 'https://samverse.space/',        study: '/work/samverse/',             tag: 'Portfolio & Lead Generation', thumb: '/assets/og-image.png',             color: '#6D4AFF', hideOnHome: true },
-  { name: 'CNN Food & Spices',     url: 'https://cnnfoodandspices.com/',                                           tag: 'E-commerce',                                                           color: '#DC2626' },
+  { name: 'CNN Food & Spices',     url: 'https://cnnfoodandspices.com/',                                           tag: 'E-commerce',                                                           color: '#DC2626', hideOnHome: true },
 ];
