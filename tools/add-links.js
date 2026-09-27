@@ -211,6 +211,13 @@ const LINKS = [
   ['internal-linking-explained', '<h2>A quick internal linking routine</h2>', '<p>Breadcrumbs add structural links too; see <a href="/blog/breadcrumbs-explained/">breadcrumbs explained</a>.</p>\n\n'],
   ['301-vs-302-redirects', '<h2>After setting redirects</h2>', '<p>For pages that truly no longer exist, make sure visitors land on a <a href="/blog/helpful-404-pages/">helpful 404 page</a>.</p>\n\n'],
   ['stop-contact-form-spam', '<h2>Real example</h2>', '<p>Blog comment spam is a similar problem; see <a href="/blog/wordpress-comments-enable-or-disable/">should a business site enable comments?</a></p>\n\n'],
+  // Round 25
+  ['website-content-calendar', '<h2>Step 1: Collect topics</h2>', '<p>No blog yet? See <a href="/blog/add-blog-to-existing-website/">how to add a blog to your existing website</a>.</p>\n\n'],
+  ['website-content-calendar', '<h2>Step 6: Refresh old content</h2>', '<p>Get more mileage from each post by <a href="/blog/repurpose-website-content-social-media/">repurposing it for social media</a>.</p>\n\n'],
+  ['logo-favicon-brand-basics-website', '<h2>Social share images</h2>', '<p>Choosing a palette and fonts? See <a href="/blog/choose-website-colours-fonts/">how to choose website colours and fonts</a>.</p>\n\n'],
+  ['first-90-days-after-website-launch', '<h2>Week 1: check everything works</h2>', '<p>Before launch day, run through the full <a href="/blog/website-launch-checklist/">website launch checklist</a>.</p>\n\n'],
+  ['image-optimization-wordpress', '<h2>1. Resize before uploading</h2>', '<p>Taking your own photos? See <a href="/blog/prepare-photos-for-website/">how to prepare photos for your website</a>.</p>\n\n'],
+  ['freelancer-vs-agency-web-developer', '<h2>When a freelancer is the better choice</h2>', '<p>Considering building it yourself? See <a href="/blog/hire-developer-vs-diy-website/">hire a developer vs DIY</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

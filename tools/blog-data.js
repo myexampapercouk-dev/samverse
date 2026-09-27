@@ -359,6 +359,8 @@ module.exports = [
   </tbody>
 </table>
 
+<p>Considering building it yourself? See <a href="/blog/hire-developer-vs-diy-website/">hire a developer vs DIY</a>.</p>
+
 <h2>When a freelancer is the better choice</h2>
 <ul>
   <li>You need a business website, landing page, store or redesign</li>
@@ -3161,6 +3163,8 @@ module.exports = [
     related: ['wordpress-speed-optimization', 'woocommerce-developer', 'website-redesign'],
     body: `
 <p>Images usually make up most of a web page's size. A single photo straight from a phone can be several megabytes, often more than the entire rest of the page. Optimizing images is the quickest, cheapest way to speed up most WordPress sites.</p>
+
+<p>Taking your own photos? See <a href="/blog/prepare-photos-for-website/">how to prepare photos for your website</a>.</p>
 
 <h2>1. Resize before uploading</h2>
 <p>If an image displays at 1200 pixels wide, there's no need to upload a 4000-pixel original. Resize photos to roughly the largest size they'll be shown at (hero images around 1600–2000 px wide, content images around 1200 px).</p>
@@ -6259,6 +6263,8 @@ module.exports = [
   <li>Use them consistently as global styles on the website</li>
 </ul>
 
+<p>Choosing a palette and fonts? See <a href="/blog/choose-website-colours-fonts/">how to choose website colours and fonts</a>.</p>
+
 <h2>Social share images</h2>
 <p>When someone shares your page on WhatsApp, LinkedIn or Facebook, a preview image appears. Set a branded default share image, and ideally unique images for key pages and articles, so links look professional when shared.</p>
 
@@ -8412,6 +8418,8 @@ module.exports = [
     body: `
 <p>Consistent, useful content helps your website rank and gives customers reasons to trust you. A content calendar turns "we should post something" into a simple, realistic plan.</p>
 
+<p>No blog yet? See <a href="/blog/add-blog-to-existing-website/">how to add a blog to your existing website</a>.</p>
+
 <h2>Step 1: Collect topics</h2>
 <ul>
   <li>Questions customers ask on calls, WhatsApp and email</li>
@@ -8443,6 +8451,8 @@ module.exports = [
   <li>Share on LinkedIn, WhatsApp and your newsletter</li>
   <li>Link to it from related older pages</li>
 </ol>
+
+<p>Get more mileage from each post by <a href="/blog/repurpose-website-content-social-media/">repurposing it for social media</a>.</p>
 
 <h2>Step 6: Refresh old content</h2>
 <p>Every quarter, update your best-performing and outdated articles: new information, better examples, fresh internal links and updated dates. Refreshing often delivers more than publishing new posts.</p>
@@ -10617,6 +10627,8 @@ module.exports = [
     body: `
 <p>Launching a website is the start, not the finish. What you do in the first three months decides whether it quietly sits there or starts bringing in business.</p>
 
+<p>Before launch day, run through the full <a href="/blog/website-launch-checklist/">website launch checklist</a>.</p>
+
 <h2>Week 1: check everything works</h2>
 <ul>
   <li>Test every form, WhatsApp button and phone link, on mobile too</li>
@@ -10924,6 +10936,335 @@ module.exports = [
 
 <h2>How to disable comments</h2>
 <p>Turn off comments for new posts in Settings → Discussion, close them on existing posts in bulk, and remove comment sections from theme templates if needed. This site uses WhatsApp and a contact form instead of comments.</p>
+`,
+  },
+  {
+    slug: 'add-blog-to-existing-website',
+    seoTitle: 'How to Add a Blog to Your Existing Website',
+    title: 'How to Add a Blog to Your Existing Business Website',
+    description: 'How to add a blog to an existing website the right way: subfolder vs subdomain, WordPress setup, design integration, categories, linking to services and a sustainable publishing plan.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>A blog helps your website answer customer questions, attract search traffic and show expertise. If your site doesn't have one yet, it's usually easy to add, as long as it's set up the right way.</p>
+
+<h2>Subfolder vs subdomain</h2>
+<p>A blog at <code>yourdomain.com/blog/</code> (subfolder) keeps everything under one site and is generally the simplest, most effective choice for small businesses. A subdomain (<code>blog.yourdomain.com</code>) is treated more like a separate site and needs its own authority built up.</p>
+
+<h2>If your site is on WordPress</h2>
+<ul>
+  <li>Create a Blog page and set it as the posts page</li>
+  <li>Design post and archive templates that match your site</li>
+  <li>Set up categories aligned with your services</li>
+  <li>Configure your SEO plugin for posts (titles, schema, sitemap)</li>
+</ul>
+
+<h2>If your site isn't on WordPress</h2>
+<p>You can use your platform's built-in blog, install WordPress in a <code>/blog/</code> subfolder on the same hosting, or migrate the whole site. Choose what's easiest to maintain long term.</p>
+
+<h2>Design it for reading and enquiries</h2>
+<ul>
+  <li>Readable typography and clear headings</li>
+  <li>Author information and dates</li>
+  <li>Related services and calls to action within and after articles</li>
+  <li>Related articles to keep readers exploring</li>
+</ul>
+<p>This site's article pages show one approach: key takeaways, a contents sidebar, a help box and related services.</p>
+
+<h2>Connect posts to services</h2>
+<p>Every article should link to the relevant service page, and service pages should link to helpful articles; see <a href="/blog/internal-linking-explained/">internal linking</a>.</p>
+
+<h2>Plan content you can sustain</h2>
+<p>Start with 5–10 articles answering the most common customer questions, then publish consistently; see <a href="/blog/website-content-calendar/">content calendars</a>.</p>
+
+<p>For help setting it up, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'repurpose-website-content-social-media',
+    seoTitle: 'Repurposing Website Content for Social Media',
+    title: 'How to Repurpose Website Content for Social Media',
+    description: 'Get more from each article or case study: turn website content into LinkedIn posts, Instagram carousels, WhatsApp updates, short videos and newsletters, and drive traffic back to your site.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-seo-services', 'landing-page-design', 'website-for-startups'],
+    body: `
+<p>Writing one good article takes effort. Repurposing turns that effort into a week's worth of social content, and brings readers back to your website where they can enquire.</p>
+
+<h2>One article, many formats</h2>
+<ul>
+  <li><strong>LinkedIn post:</strong> the key insight plus three takeaways, with a link</li>
+  <li><strong>Instagram or LinkedIn carousel:</strong> a checklist or step-by-step, one point per slide</li>
+  <li><strong>Short video or reel:</strong> explain one tip in 30–60 seconds</li>
+  <li><strong>WhatsApp update:</strong> a short summary to customers or groups who've opted in</li>
+  <li><strong>Newsletter:</strong> a monthly round-up of new articles</li>
+  <li><strong>Quote graphics:</strong> one strong line from the article</li>
+</ul>
+
+<h2>Case studies work especially well</h2>
+<p>Before-and-after visuals, the client's challenge and the result make engaging posts (with the client's permission).</p>
+
+<h2>Make it native to each platform</h2>
+<ul>
+  <li>Don't just paste a link. Share real value in the post itself.</li>
+  <li>Use the platform's formats (carousels, short video)</li>
+  <li>End with a reason to visit the full article</li>
+</ul>
+
+<h2>Drive traffic back</h2>
+<ul>
+  <li>Link to the specific article, not just your homepage</li>
+  <li>Use UTM tags to see which platforms send visitors</li>
+  <li>Make sure the article has a clear next step (enquiry, WhatsApp)</li>
+</ul>
+
+<h2>Keep a simple workflow</h2>
+<ol>
+  <li>Publish the article</li>
+  <li>Create 3–5 social pieces from it</li>
+  <li>Schedule them over the following week or two</li>
+  <li>Reshare evergreen articles every few months</li>
+</ol>
+
+<p>Plan it all with a <a href="/blog/website-content-calendar/">content calendar</a>, and use the article's cover image as a share image, as this site does for every article.</p>
+`,
+  },
+  {
+    slug: 'choose-website-colours-fonts',
+    seoTitle: 'How to Choose Website Colours and Fonts',
+    title: 'How to Choose Website Colours and Fonts for Your Brand',
+    description: 'A simple approach to choosing website colours and fonts: brand fit, a small palette, contrast and accessibility, readable fonts, performance, and applying them consistently.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['website-redesign', 'wordpress-website-development', 'figma-to-wordpress'],
+    body: `
+<p>Colours and fonts shape how your business feels to visitors: trustworthy, premium, friendly, modern. They also affect readability and speed. Here's a simple way to choose well.</p>
+
+<h2>Colours</h2>
+<h3>Start with your brand</h3>
+<p>Use your logo colours as a starting point. Think about the feeling you want: calm and clinical for healthcare, warm for food, bold for creative agencies, dependable for B2B.</p>
+<h3>Keep the palette small</h3>
+<ul>
+  <li><strong>Primary colour:</strong> buttons, links and highlights</li>
+  <li><strong>Secondary or accent colour:</strong> used sparingly</li>
+  <li><strong>Neutrals:</strong> text, backgrounds and borders</li>
+</ul>
+<h3>Prioritise contrast</h3>
+<p>Text must be easy to read. Check contrast with a contrast checker, since light grey text on white is a common problem; see <a href="/blog/website-accessibility-basics/">accessibility basics</a>.</p>
+<h3>Use colour consistently</h3>
+<p>If buttons are violet, keep all primary buttons violet, so visitors learn what's clickable.</p>
+
+<h2>Fonts</h2>
+<ul>
+  <li><strong>One or two families:</strong> one for headings, one for body (or one for both)</li>
+  <li><strong>Readable body text:</strong> at least 16px, with comfortable line height</li>
+  <li><strong>Limited weights:</strong> each extra weight adds loading time</li>
+  <li><strong>Support for your languages</strong>, including Devanagari or regional scripts if needed</li>
+</ul>
+
+<h2>Performance</h2>
+<p>Web fonts should load efficiently (only needed weights, with a fallback shown while loading) so they don't slow pages or cause text to jump.</p>
+
+<h2>Apply them as global styles</h2>
+<p>Set colours and typography as global styles in your theme or builder, so the whole site stays consistent and changes happen in one place; see <a href="/blog/figma-to-wordpress-designer-guide/">design handoff tips</a>.</p>
+
+<p>For the bigger picture, see <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>.</p>
+`,
+  },
+  {
+    slug: 'website-launch-checklist',
+    seoTitle: 'Website Launch Checklist for Small Businesses',
+    title: 'Website Launch Checklist for Small Businesses (40 Checks)',
+    description: 'A practical pre-launch checklist for new or redesigned business websites: content, design, mobile, forms, speed, SEO, analytics, security, legal pages and post-launch steps.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'website-redesign', 'wordpress-seo-services'],
+    body: `
+<p>Launch day goes smoothly when problems are found beforehand. Work through this checklist before your new or redesigned website goes live.</p>
+
+<h2>Content</h2>
+<ol>
+  <li>All pages proofread; no placeholder text</li>
+  <li>Contact details correct everywhere</li>
+  <li>Prices, services and hours up to date</li>
+  <li>Images are real, relevant and properly licensed</li>
+  <li>Every page has a clear call to action</li>
+</ol>
+
+<h2>Design and mobile</h2>
+<ol start="6">
+  <li>Tested on several phones, tablets and desktop browsers</li>
+  <li>No sideways scrolling or overlapping elements</li>
+  <li>Buttons large enough to tap</li>
+  <li>Favicon and social share image set</li>
+</ol>
+
+<h2>Functionality</h2>
+<ol start="10">
+  <li>Every form submits and the email arrives</li>
+  <li>WhatsApp, phone and email links work</li>
+  <li>Payments or bookings tested end to end (if applicable)</li>
+  <li>Search, filters and menus work</li>
+  <li>No broken internal links</li>
+</ol>
+
+<h2>Speed</h2>
+<ol start="15">
+  <li>Images compressed and sized</li>
+  <li>Caching enabled</li>
+  <li>Key pages tested on PageSpeed Insights</li>
+</ol>
+
+<h2>SEO</h2>
+<ol start="18">
+  <li>Unique titles and meta descriptions</li>
+  <li>One H1 per page, logical headings</li>
+  <li>Image alt text</li>
+  <li>"Discourage search engines" OFF; no leftover noindex</li>
+  <li>XML sitemap working; robots.txt correct</li>
+  <li>301 redirects from old URLs (for redesigns)</li>
+  <li>Canonical tags correct</li>
+  <li>Structured data where relevant</li>
+</ol>
+
+<h2>Analytics and tracking</h2>
+<ol start="26">
+  <li>GA4 installed and receiving data</li>
+  <li>Key events for forms, calls and WhatsApp</li>
+  <li>Search Console verified</li>
+</ol>
+
+<h2>Security and reliability</h2>
+<ol start="29">
+  <li>HTTPS on every page</li>
+  <li>Strong passwords and 2FA for admins</li>
+  <li>Automatic backups scheduled</li>
+  <li>Uptime monitoring on</li>
+  <li>Unused plugins and themes removed</li>
+</ol>
+
+<h2>Legal and trust</h2>
+<ol start="34">
+  <li>Privacy policy (and terms, refund or shipping policies where relevant)</li>
+  <li>Cookie consent if needed for your audience</li>
+  <li>Business details and registrations shown where required</li>
+</ol>
+
+<h2>Launch and after</h2>
+<ol start="37">
+  <li>Submit sitemap and request indexing for key pages</li>
+  <li>Update Google Business Profile and social links</li>
+  <li>Monitor Search Console and forms closely for two weeks</li>
+  <li>Follow the <a href="/blog/first-90-days-after-website-launch/">90-day post-launch plan</a></li>
+</ol>
+
+<p>Redesigning? Also see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
+`,
+  },
+  {
+    slug: 'prepare-photos-for-website',
+    seoTitle: 'How to Prepare Photos for Your Website',
+    title: 'How to Prepare Photos for Your Business Website',
+    description: 'How to take and prepare photos for your website: what to photograph, simple phone photography tips, sizing, compression, file names, alt text and when to hire a photographer.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-speed-optimization', 'website-redesign'],
+    body: `
+<p>Real photos of your business build far more trust than stock images, and preparing them properly keeps your website fast. Here's how to get photos ready for your site.</p>
+
+<h2>What to photograph</h2>
+<ul>
+  <li>You and your team (friendly, natural shots)</li>
+  <li>Your premises: exterior, reception, workspace, facilities</li>
+  <li>Your work: products, projects, before-and-after results</li>
+  <li>Your process: people at work, equipment, behind the scenes</li>
+  <li>Happy customers (with permission)</li>
+</ul>
+
+<h2>Phone photography tips</h2>
+<ul>
+  <li>Use natural light; face windows, avoid harsh overhead light</li>
+  <li>Clean the lens and hold the phone steady</li>
+  <li>Keep backgrounds tidy</li>
+  <li>Shoot landscape for banners and wide sections</li>
+  <li>Take several shots and pick the best</li>
+</ul>
+
+<h2>Preparing files for the web</h2>
+<ol>
+  <li><strong>Resize:</strong> around 1600–2000 px wide for banners, 1200 px for content images</li>
+  <li><strong>Compress:</strong> reduce file size without visible quality loss</li>
+  <li><strong>Use modern formats:</strong> WebP where possible</li>
+  <li><strong>Name files descriptively:</strong> "clinic-reception-pune.webp", not "IMG_2045.jpg"</li>
+  <li><strong>Write alt text</strong> describing each image</li>
+</ol>
+<p>See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
+
+<h2>Consistency</h2>
+<p>A consistent style (similar lighting, colour tone and framing) makes your site look professional. Light editing for brightness and straightening helps; avoid heavy filters.</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li>Get consent from people in photos, especially customers and children</li>
+  <li>Use only images you own or have licensed</li>
+</ul>
+
+<h2>When to hire a photographer</h2>
+<p>For premium brands, hospitality, real estate, food, interiors and product catalogues, professional photos are often worth the investment because visuals drive decisions.</p>
+
+<p>Include your photos in your <a href="/blog/website-brief-template/">website brief</a> so your developer can plan layouts around them.</p>
+`,
+  },
+  {
+    slug: 'hire-developer-vs-diy-website',
+    seoTitle: 'Hire a Developer or Build Your Website Yourself?',
+    title: 'When to Hire a Developer vs Build Your Website Yourself',
+    description: 'Should you build your own website or hire a developer? An honest comparison of cost, time, quality, SEO and risk, with guidance on which tasks suit DIY and when professional help pays off.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
+    body: `
+<p>Website builders and page builders make DIY websites possible for almost anyone. So when does it make sense to do it yourself, and when does hiring a developer pay off?</p>
+
+<h2>DIY makes sense when...</h2>
+<ul>
+  <li>You need a simple site quickly with a very small budget</li>
+  <li>You enjoy learning and have time to spend</li>
+  <li>The site is mainly informational, with few features</li>
+  <li>You're testing an idea before investing more</li>
+</ul>
+
+<h2>Hiring a developer makes sense when...</h2>
+<ul>
+  <li>Your website is a key source of leads or sales</li>
+  <li>You need features: online payments, bookings, stores, integrations, multiple languages</li>
+  <li>SEO and speed matter for your growth</li>
+  <li>You're redesigning a site with existing rankings (to avoid losing them)</li>
+  <li>Your time is better spent running the business</li>
+</ul>
+
+<h2>The hidden costs of DIY</h2>
+<ul>
+  <li>Time learning, building and troubleshooting</li>
+  <li>Slow or insecure setups that cost visitors later</li>
+  <li>Missing SEO basics: structure, redirects, schema, indexing</li>
+  <li>Design that doesn't convert as well as it could</li>
+</ul>
+
+<h2>A middle path</h2>
+<ul>
+  <li>Have a developer set up a solid, fast foundation you can edit yourself</li>
+  <li>Update content, blog posts and photos yourself</li>
+  <li>Hire help for technical tasks: speed, security, SEO setup, new features</li>
+  <li>Use a maintenance plan for updates and backups</li>
+</ul>
+<p>This gives you control without the risks; see <a href="/blog/website-maintenance-vs-management/">maintenance vs management</a>.</p>
+
+<h2>If you hire, choose well</h2>
+<p>Check live work, get a clear quote and keep ownership of your accounts; see <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> and the <a href="/blog/website-brief-template/">website brief template</a>.</p>
+
+<p>Want an estimate first? Try the <a href="/website-cost-calculator/">website cost calculator</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
   },
 ];
