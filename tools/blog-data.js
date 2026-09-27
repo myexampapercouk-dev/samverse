@@ -2647,6 +2647,8 @@ module.exports = [
   <li><strong>Never use "nulled" (pirated) themes.</strong> They frequently contain malware. See the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</li>
 </ul>
 
+<p>Considering a premium theme? Read <a href="/blog/premium-wordpress-themes-guide/">what to know before buying</a>.</p>
+
 <h2>Popular choices for business sites</h2>
 <ul>
   <li><strong>Hello Elementor:</strong> a minimal base theme when Elementor handles all design</li>
@@ -4685,6 +4687,8 @@ module.exports = [
   <li><strong>Limit animations</strong> to a few meaningful places</li>
 </ol>
 
+<p>Editor not loading at all? See <a href="/blog/elementor-not-loading-fix/">Elementor stuck on loading</a>.</p>
+
 <h2>Measure before and after</h2>
 <p>Test key pages on PageSpeed Insights and look at Core Web Vitals, especially LCP and INP. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
 
@@ -5116,6 +5120,8 @@ module.exports = [
   <li>For stores: add to cart, checkout and a test payment</li>
   <li>Logins, menus and any special features (bookings, calculators)</li>
 </ul>
+
+<p>Specific fixes: <a href="/blog/fix-wordpress-critical-error/">the critical error</a> and <a href="/blog/elementor-layout-broken-after-update/">Elementor layouts broken after an update</a>.</p>
 
 <h2>If something breaks</h2>
 <ol>
@@ -6805,6 +6811,8 @@ module.exports = [
 
 <h2>"There has been a critical error on this website"</h2>
 <p><strong>Usually:</strong> a plugin or theme conflict, often right after an update.<br><strong>First steps:</strong> check the site admin's email for WordPress's recovery mode link, which lets you log in and deactivate the faulty plugin. Otherwise, a developer can disable plugins via hosting file access.</p>
+
+<p>Step-by-step guide: <a href="/blog/fix-wordpress-critical-error/">how to fix "There has been a critical error"</a>.</p>
 
 <h2>White screen (blank page)</h2>
 <p><strong>Usually:</strong> a PHP error or exhausted memory.<br><strong>First steps:</strong> think about what changed recently (update, new plugin). Restore the last backup or disable the latest plugin. Your host can check error logs.</p>
@@ -11404,6 +11412,8 @@ module.exports = [
   <li>Design that doesn't convert as well as it could</li>
 </ul>
 
+<p>Want to handle updates yourself? See <a href="/blog/edit-website-content-wordpress/">how to edit your WordPress content</a>.</p>
+
 <h2>A middle path</h2>
 <ul>
   <li>Have a developer set up a solid, fast foundation you can edit yourself</li>
@@ -11793,6 +11803,8 @@ module.exports = [
 
 <h2>Clearing the cache</h2>
 <p>If you update a page and don't see the change, the old cached copy may still be served. Clear the cache from your plugin or hosting panel after design changes, plugin updates or theme edits. Most plugins clear a page's cache automatically when you update it.</p>
+
+<p>Edits not appearing? See <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>.</p>
 
 <h2>Caching won't fix everything</h2>
 <p>Caching speeds up delivery, but huge images, heavy page builders and too many scripts still slow the page in the browser. See <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a> and <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
@@ -15564,6 +15576,8 @@ module.exports = [
   <li>Change passwords and security keys</li>
 </ol>
 
+<p>Already have a genuine premium theme? See <a href="/blog/update-premium-theme-safely/">how to update it safely</a>.</p>
+
 <h2>Licences are cheaper than clean-ups</h2>
 <p>A yearly licence costs far less than a malware clean-up, lost enquiries and damaged rankings. Many excellent themes and plugins are also free on WordPress.org, maintained and reviewed.</p>
 
@@ -16318,6 +16332,386 @@ module.exports = [
   <li>Shared addresses (info@, sales@) forwarded to the right people rather than shared logins</li>
   <li>Remove mailboxes for people who leave</li>
 </ul>
+`,
+  },
+  {
+    slug: 'fix-wordpress-critical-error',
+    seoTitle: '"There Has Been a Critical Error" in WordPress: How to Fix It',
+    title: '"There Has Been a Critical Error on This Website": How to Fix It Step by Step',
+    description: 'What the WordPress critical error means, common causes (plugin or theme updates, PHP version, memory limits, code edits), how to use recovery mode, find the culprit via SFTP or file manager, and get the site back.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
+    body: `
+<p>"There has been a critical error on this website" is one of the most common WordPress problems I fix. It looks alarming, but your content is almost always safe. It means PHP hit a fatal error, and WordPress stopped loading the page to avoid showing a broken one.</p>
+
+<h2>Common causes</h2>
+<ul>
+  <li><strong>A plugin or theme update</strong> that conflicts with another plugin or your PHP version</li>
+  <li><strong>A PHP version change</strong> by you or your host that old code doesn't support</li>
+  <li><strong>Memory limit exhausted</strong> by heavy plugins or large imports</li>
+  <li><strong>A code edit</strong> in functions.php or a snippets plugin with a mistake</li>
+  <li><strong>An incomplete update</strong> interrupted halfway</li>
+  <li>Occasionally, <strong>malware</strong> corrupting files</li>
+</ul>
+
+<h2>Step 1: Check your email for the recovery mode link</h2>
+<p>WordPress usually emails the site's admin address with details of the error, including which plugin or theme caused it, and a special recovery mode link. Open the link, log in and deactivate the plugin or switch the theme named in the email.</p>
+
+<h2>Step 2: No email? Find the culprit through the files</h2>
+<ol>
+  <li>Open your hosting file manager or connect by SFTP</li>
+  <li>Go to wp-content and rename the <code>plugins</code> folder to something like <code>plugins-off</code>. This deactivates all plugins</li>
+  <li>If the site loads, rename it back, then deactivate plugins one at a time (by renaming each plugin's folder) until you find the one causing the error</li>
+  <li>If plugins aren't the cause, rename your active theme's folder so WordPress falls back to a default theme</li>
+</ol>
+
+<h2>Step 3: Read the error details</h2>
+<ul>
+  <li>Your hosting control panel's error log usually shows the exact file and line</li>
+  <li>Or enable WordPress debug logging temporarily to write errors to a private log file, and turn it off afterwards</li>
+</ul>
+<p>An error mentioning "Allowed memory size exhausted" points to memory limits; one naming a plugin file points to that plugin.</p>
+
+<h2>Step 4: Fix the cause</h2>
+<ul>
+  <li><strong>Plugin or theme conflict:</strong> update it, roll back to the previous version, or replace it</li>
+  <li><strong>PHP version:</strong> switch back temporarily in the hosting panel, then update the incompatible code; see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a></li>
+  <li><strong>Memory:</strong> increase the PHP memory limit through your host, and look for the heavy plugin causing it</li>
+  <li><strong>Code edit:</strong> undo the change in the file you edited</li>
+</ul>
+
+<h2>Step 5: Restore a backup if needed</h2>
+<p>If you can't find the cause quickly and the site needs to be online, restore the most recent working backup, then investigate on a staging copy; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore</a>.</p>
+
+<h2>Prevent it next time</h2>
+<ul>
+  <li>Test updates on a staging site first; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
+  <li>Update in a sensible order and one at a time; see <a href="/blog/update-wordpress-safely/">updating WordPress safely</a></li>
+  <li>Keep automatic backups</li>
+  <li>Avoid editing theme files directly in the dashboard</li>
+</ul>
+
+<h2>Need it fixed now?</h2>
+<p>I fix critical errors and broken WordPress sites quickly, usually the same day. See <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or read about <a href="/blog/common-wordpress-errors-fixes/">other common WordPress errors</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-changes-not-showing',
+    seoTitle: 'WordPress Changes Not Showing? How to Fix It (Cache & More)',
+    title: 'WordPress Changes Not Showing on Your Website? Here\'s Why and How to Fix It',
+    description: 'Why content or design changes in WordPress or Elementor don\'t appear on the live site: browser, plugin, server and CDN caches, Elementor CSS files, unpublished updates, templates and mobile settings.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-speed-optimization', 'elementor-developer'],
+    body: `
+<p>You updated a price, changed a photo or edited the header, but the live website still shows the old version. It's one of the most frequent support requests I get, and it's almost always caching or one of a few simple causes.</p>
+
+<h2>1. Did the change actually save?</h2>
+<ul>
+  <li>Did you click <strong>Update</strong> or <strong>Publish</strong>, not just preview or save a draft?</li>
+  <li>In Elementor, the green Update button must be clicked, not just closing the editor</li>
+  <li>Check the page's revisions to confirm the change is there</li>
+</ul>
+
+<h2>2. Browser cache</h2>
+<p>Your browser may show a stored copy. Try a hard refresh (Ctrl+F5 or Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac), a private window, or another device.</p>
+
+<h2>3. Caching plugin</h2>
+<p>If the site uses a caching plugin like LiteSpeed Cache, WP Rocket or W3 Total Cache, clear or purge its cache. Logged-in admins often see fresh pages while visitors see cached ones, which is why you might see the change and customers don't.</p>
+
+<h2>4. Server and hosting cache</h2>
+<p>Many hosts have their own server cache with a "purge" button in the hosting panel or the WordPress admin bar.</p>
+
+<h2>5. CDN cache</h2>
+<p>If you use Cloudflare or another CDN, purge the cache there too, especially for changed images, CSS and JavaScript files; see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
+
+<h2>6. Elementor CSS files</h2>
+<p>Elementor stores styles in generated CSS files. If design changes don't appear, go to Elementor → Tools and use the option to regenerate files and data, then clear all caches.</p>
+
+<h2>7. Editing the wrong place</h2>
+<ul>
+  <li>Headers, footers and blog layouts may come from a <strong>template</strong> (Elementor Theme Builder or the theme customiser), not the page itself</li>
+  <li>The page you edited may be a duplicate or draft, not the one in the menu</li>
+  <li>On a staging site, changes don't appear on live until pushed</li>
+</ul>
+
+<h2>8. Mobile vs desktop settings</h2>
+<p>Elementor lets you set different styles or hide elements per device. A change made in desktop view may be overridden by a tablet or mobile setting.</p>
+
+<h2>9. Image still old?</h2>
+<p>If you uploaded a new image with the same file name, caches may keep the old one. Upload with a new file name, or purge caches.</p>
+
+<h2>Quick routine after any change</h2>
+<ol>
+  <li>Update or Publish</li>
+  <li>Clear plugin cache, then server cache, then CDN cache</li>
+  <li>Check in a private window on your phone</li>
+</ol>
+
+<p>See also <a href="/blog/wordpress-caching-explained/">caching explained</a> and <a href="/blog/edit-website-content-wordpress/">how to edit your website content</a>.</p>
+`,
+  },
+  {
+    slug: 'elementor-not-loading-fix',
+    seoTitle: 'Elementor Stuck on Loading or Preview Not Loading? Fixes',
+    title: 'Elementor Stuck on Loading or "Preview Could Not Be Loaded": How to Fix It',
+    description: 'Fixes for the Elementor editor stuck on the loading screen, blank editor or "Preview could not be loaded": plugin conflicts, memory limits, PHP version, URL and SSL mismatches, CDN scripts and server security rules.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['elementor-developer', 'wordpress-maintenance', 'wordpress-speed-optimization'],
+    body: `
+<p>You click "Edit with Elementor" and the loading screen spins forever, the editor is blank, or you see "Preview could not be loaded". These problems are common, and usually caused by something around Elementor rather than Elementor itself.</p>
+
+<h2>1. Plugin conflicts</h2>
+<p>Elementor add-on plugins and other plugins that load scripts in the editor are the most common cause.</p>
+<ul>
+  <li>Use Elementor's Safe Mode (in Elementor → Tools), which loads the editor without other plugins and your theme</li>
+  <li>If the editor works in Safe Mode, deactivate plugins one by one to find the conflict</li>
+  <li>Keep Elementor, Elementor Pro and add-ons updated together</li>
+</ul>
+
+<h2>2. PHP memory limit</h2>
+<p>The editor needs more memory than normal page views. If the memory limit is low, it can fail silently. Check Elementor → System Info for the WordPress memory limit, and ask your host to increase it if it's low.</p>
+
+<h2>3. Outdated PHP or WordPress</h2>
+<p>Check Elementor's current requirements and update PHP and WordPress if needed; see <a href="/blog/update-php-version-wordpress/">updating PHP</a>.</p>
+
+<h2>4. Site URL and SSL mismatch</h2>
+<p>"Preview could not be loaded" often happens when WordPress and site addresses don't match, for example one uses http:// and the other https://, or www and non-www differ. Check Settings → General and make sure the whole site loads on HTTPS.</p>
+
+<h2>5. CDN or optimisation scripts</h2>
+<p>Script optimisation features, such as combining or delaying JavaScript, or CDN features that change how scripts load, can break the editor. Exclude the editor from optimisation, or temporarily disable those features to test.</p>
+
+<h2>6. Server security rules</h2>
+<p>Hosting firewalls (mod_security and similar) sometimes block the editor's requests, especially when saving. If saving fails or loading stalls, ask your host to check their firewall logs.</p>
+
+<h2>7. Editor loader method</h2>
+<p>Elementor has an advanced setting to switch the editor loader method, which can help on some server setups.</p>
+
+<h2>8. Theme problems</h2>
+<p>A theme that doesn't support Elementor properly can break the editor. Test by temporarily switching to Hello Elementor on a staging site; see <a href="/blog/best-theme-for-elementor/">best themes for Elementor</a>.</p>
+
+<h2>9. Browser issues</h2>
+<p>Try another browser or a private window, and disable browser extensions like ad blockers that may block scripts.</p>
+
+<h2>Still stuck?</h2>
+<p>Check the browser console for errors and the server error log for PHP errors; they usually point to the cause. Or get help from an <a href="/elementor-developer/">Elementor developer</a>. Also see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</p>
+`,
+  },
+  {
+    slug: 'elementor-layout-broken-after-update',
+    seoTitle: 'Elementor Layout Broken After Update? How to Fix It',
+    title: 'Elementor Layout Broken After an Update? How to Fix It and Prevent It',
+    description: 'What to do when an Elementor or add-on update breaks your layout: regenerate CSS, clear caches, check add-on compatibility, use version rollback, fix container and widget changes, and update safely next time.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['elementor-developer', 'wordpress-maintenance', 'website-redesign'],
+    body: `
+<p>You updated Elementor, Elementor Pro or an add-on, and now sections overlap, fonts changed, spacing is off or widgets have disappeared. Most of these problems can be fixed quickly. Here's the order I work in.</p>
+
+<h2>1. Regenerate CSS and clear caches</h2>
+<p>Elementor stores styles in generated CSS files. After updates, old files can cause broken layouts.</p>
+<ol>
+  <li>Go to Elementor → Tools and regenerate files and data</li>
+  <li>Clear your caching plugin, server cache and CDN</li>
+  <li>Hard refresh the browser</li>
+</ol>
+<p>This alone fixes many "broken after update" issues; see <a href="/blog/wordpress-changes-not-showing/">changes not showing</a>.</p>
+
+<h2>2. Check add-on compatibility</h2>
+<p>Third-party Elementor add-ons may lag behind Elementor updates. Check for updates to each add-on, and look at their changelogs or support forums for known issues.</p>
+
+<h2>3. Make sure Elementor and Elementor Pro match</h2>
+<p>Updating one without the other can cause problems. Keep both on compatible versions.</p>
+
+<h2>4. Roll back if needed</h2>
+<p>Elementor includes a version rollback tool (in Elementor → Tools) to return to a previous version while you investigate. For other plugins, restore from a backup or install the previous version. Treat rollback as temporary, since old versions miss security fixes.</p>
+
+<h2>5. Look for feature changes</h2>
+<p>Major updates sometimes change how things work, such as layout structures, default spacing or global styles and fonts. Check the release notes and adjust global settings or specific widgets.</p>
+
+<h2>6. Check the theme</h2>
+<p>A theme update at the same time can also change layouts. Compare by switching to Hello Elementor on a staging site.</p>
+
+<h2>7. Restore a backup</h2>
+<p>If the site is badly broken and important, restore the pre-update backup and fix things on staging instead; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore</a>.</p>
+
+<h2>Prevent it next time</h2>
+<ul>
+  <li>Back up before updating</li>
+  <li>Test major Elementor updates on a staging site first; see <a href="/blog/staging-sites-explained/">staging sites</a></li>
+  <li>Wait a few days after a major release for bug-fix updates</li>
+  <li>Keep add-ons to a minimum</li>
+  <li>Use global colours, fonts and templates so fixes apply everywhere</li>
+</ul>
+
+<p>Need your layout fixed? See <a href="/elementor-developer/">Elementor development and fixes</a>.</p>
+`,
+  },
+  {
+    slug: 'edit-website-content-wordpress',
+    seoTitle: 'How to Edit Your WordPress Website Content Yourself',
+    title: 'How to Edit Your WordPress Website Content Yourself (Text, Images, Menus)',
+    description: 'A beginner-friendly guide for business owners to update their own WordPress site: editing pages in the block editor or Elementor, replacing images, updating menus, headers and footers, and doing it safely.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'elementor-developer', 'wordpress-maintenance'],
+    body: `
+<p>One of WordPress's biggest advantages is that you can update your own website without calling a developer for every small change. Here's how to handle the most common updates safely.</p>
+
+<h2>First: know how your pages were built</h2>
+<p>Open a page in the dashboard (Pages → All Pages → Edit). If you see an "Edit with Elementor" button, the page uses Elementor. Otherwise it probably uses the WordPress block editor. Your developer can tell you which tools were used.</p>
+
+<h2>Editing text</h2>
+<ul>
+  <li><strong>Block editor:</strong> click on the text and type, then click Update</li>
+  <li><strong>Elementor:</strong> click "Edit with Elementor", click the text widget, edit in the left panel or directly on the page, then click Update</li>
+</ul>
+
+<h2>Replacing images</h2>
+<ol>
+  <li>Prepare the image: right size, compressed, sensible file name; see <a href="/blog/prepare-photos-for-website/">preparing photos for your website</a></li>
+  <li>Click the image block or widget and choose to replace it</li>
+  <li>Upload the new image and add descriptive alt text</li>
+  <li>Update the page</li>
+</ol>
+
+<h2>Updating menus</h2>
+<p>Go to Appearance → Menus (or the Site Editor's navigation on block themes). Add pages, drag to reorder and save.</p>
+
+<h2>Headers and footers</h2>
+<p>Headers and footers are usually shared across the whole site. They may be edited in Elementor → Templates → Theme Builder, the theme customiser (Appearance → Customize) or the Site Editor. Changes apply to every page.</p>
+
+<h2>Adding a blog post</h2>
+<p>Posts → Add New. Add a title, write the content with headings, add a featured image and category, then publish. See <a href="/blog/write-blog-posts-that-rank/">writing blog posts that rank</a>.</p>
+
+<h2>SEO titles and descriptions</h2>
+<p>If the site uses an SEO plugin, scroll below the editor to set the page title and description; see <a href="/blog/write-meta-titles-descriptions/">meta titles and descriptions</a>.</p>
+
+<h2>Do it safely</h2>
+<ul>
+  <li>Use an <strong>Editor</strong> account for content work instead of an Administrator account; see <a href="/blog/wordpress-user-roles-explained/">user roles</a></li>
+  <li>Use revisions to go back if you make a mistake</li>
+  <li>Avoid changing layouts and global styles unless you're confident</li>
+  <li>Don't install plugins or edit code to make content changes</li>
+</ul>
+
+<h2>Change not showing?</h2>
+<p>Clear the cache; see <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>.</p>
+
+<h2>When to ask for help</h2>
+<p>New page layouts, design changes, features and anything involving code are better done by a developer. A <a href="/blog/monthly-website-maintenance-plan/">maintenance plan</a> often includes time for these.</p>
+`,
+  },
+  {
+    slug: 'premium-wordpress-themes-guide',
+    seoTitle: 'Premium WordPress Themes: What to Know Before Buying',
+    title: 'Premium WordPress Themes: What to Know Before You Buy',
+    description: 'What you really get with a premium WordPress theme: licences, updates and support periods, bundled plugins, demo imports, speed trade-offs, marketplace vs developer-sold themes and how to choose a good one.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'elementor-developer', 'wordpress-maintenance'],
+    body: `
+<p>Premium themes promise beautiful designs and hundreds of features for a one-time price. Some are excellent; others become slow, hard-to-maintain headaches. Knowing what you're buying saves money and trouble later.</p>
+
+<h2>What you pay for</h2>
+<ul>
+  <li><strong>A licence:</strong> usually for one website (check the terms if you build for clients or multiple sites)</li>
+  <li><strong>Updates:</strong> security and compatibility fixes, delivered through a licence key or updater plugin</li>
+  <li><strong>Support:</strong> often for a limited period, renewable for a fee</li>
+  <li><strong>Demos and features:</strong> ready-made designs and built-in options</li>
+</ul>
+
+<h2>Marketplace vs developer-sold themes</h2>
+<table>
+  <thead><tr><th></th><th>Marketplace themes (e.g. ThemeForest)</th><th>Developer-sold (e.g. Astra Pro, GeneratePress Premium, Kadence Pro)</th></tr></thead>
+  <tbody>
+    <tr><td>Pricing</td><td>One-time purchase, with support renewals</td><td>Usually yearly or lifetime licences</td></tr>
+    <tr><td>Approach</td><td>Often feature-packed "do everything" themes</td><td>Lightweight core with optional features</td></tr>
+    <tr><td>Updates</td><td>Via theme updater or marketplace plugin</td><td>Via the developer's licence system</td></tr>
+  </tbody>
+</table>
+
+<h2>Watch out for bundled plugins</h2>
+<p>Many premium themes bundle paid plugins like sliders or page builders. You usually can't register those bundled copies separately, so their updates depend on the theme author including them in theme updates. If the author is slow, you may run outdated, vulnerable plugins. See <a href="/blog/update-premium-theme-safely/">updating premium themes safely</a>.</p>
+
+<h2>Demo imports and bloat</h2>
+<p>Importing a full demo often installs many plugins, sample content and heavy features you'll never use. Import only the pages you need, and remove unused plugins and content afterwards.</p>
+
+<h2>Speed trade-offs</h2>
+<p>Feature-packed themes load more code on every page. Check a theme's demo on PageSpeed Insights (mobile) before buying, and prefer lightweight options for business sites; see <a href="/blog/how-to-choose-wordpress-theme/">choosing a WordPress theme</a>.</p>
+
+<h2>Lock-in</h2>
+<p>Some themes use their own page builders and shortcodes. If you switch themes later, content can break. Themes that work with standard tools like the block editor or Elementor are easier to move away from.</p>
+
+<h2>Checklist before buying</h2>
+<ul>
+  <li>Recent updates and an active changelog</li>
+  <li>Good reviews that mention support quality</li>
+  <li>Compatibility with the latest WordPress and your page builder</li>
+  <li>Speed of the demo on mobile</li>
+  <li>Clear licence terms</li>
+</ul>
+
+<h2>Never use nulled themes</h2>
+<p>Pirated copies often contain malware; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes</a>. Buy the licence in your business name; see the <a href="/blog/website-ownership-checklist/">ownership checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'update-premium-theme-safely',
+    seoTitle: 'How to Update a Premium WordPress Theme Safely',
+    title: 'How to Update a Premium WordPress Theme (and Its Bundled Plugins) Safely',
+    description: 'How to update a premium or ThemeForest WordPress theme without losing customisations: licence activation, child themes, backups, staging, bundled plugin updates and what to do if the theme is abandoned.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal', 'website-redesign'],
+    body: `
+<p>Premium themes often don't update as simply as free ones from WordPress.org. Many sites I look after were running themes years out of date, with bundled plugins full of known vulnerabilities, because nobody knew how to update them safely. Here's how.</p>
+
+<h2>Why theme updates matter</h2>
+<ul>
+  <li>Security fixes, for the theme and its bundled plugins</li>
+  <li>Compatibility with new WordPress, PHP and WooCommerce versions</li>
+  <li>Bug fixes</li>
+</ul>
+<p>See <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a>.</p>
+
+<h2>Step 1: Check how your theme updates</h2>
+<ul>
+  <li>Activate the licence or purchase code in the theme's settings to enable automatic updates</li>
+  <li>Marketplace themes may need the marketplace's updater plugin</li>
+  <li>Otherwise, download the latest version from your account and upload it manually</li>
+</ul>
+
+<h2>Step 2: Protect your customisations</h2>
+<p>If anyone edited the theme's files directly, an update will overwrite those changes. Customisations belong in a <strong>child theme</strong>. If there isn't one, have a developer move the custom code into a child theme before updating.</p>
+
+<h2>Step 3: Back up and use staging</h2>
+<p>Take a full backup, then test the update on a staging copy, especially for big version jumps; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+
+<h2>Step 4: Update the theme, then bundled plugins</h2>
+<ol>
+  <li>Update the theme</li>
+  <li>Follow the theme's prompts to update its bundled plugins (sliders, page builders, theme core plugins)</li>
+  <li>Update other plugins</li>
+  <li>Clear caches and regenerate any page builder CSS</li>
+</ol>
+
+<h2>Step 5: Test</h2>
+<ul>
+  <li>Homepage, key pages, header and footer</li>
+  <li>Forms, WooCommerce and any special features</li>
+  <li>Mobile layout</li>
+</ul>
+
+<h2>Bundled plugins out of date?</h2>
+<p>If the theme hasn't shipped updates for a bundled plugin with a known vulnerability, consider buying your own licence for that plugin so you can update it directly, or replacing it.</p>
+
+<h2>If the theme is abandoned</h2>
+<p>A theme with no updates for a long time is a growing risk. Options include moving to a well-maintained lightweight theme while keeping your design, or a planned redesign; see <a href="/blog/redesign-website-tight-budget/">redesigning on a budget</a> and <a href="/blog/premium-wordpress-themes-guide/">choosing a premium theme</a>.</p>
+
+<p>Want it handled for you? Theme updates are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
 ];

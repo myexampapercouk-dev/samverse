@@ -319,6 +319,14 @@ const LINKS = [
   ['domain-hosting-ssl-explained', '<h2>Checklist</h2>', '<p>Keep track of every renewal with the <a href="/blog/domain-hosting-renewal-checklist/">domain and hosting renewal checklist</a>.</p>\n\n'],
   ['business-email-options', '<h2>Website form emails</h2>', '<p>Hosting on Hostinger? See <a href="/blog/hostinger-business-email-setup/">setting up business email on Hostinger</a>.</p>\n\n'],
   ['why-is-my-wordpress-site-slow', '<h2>When to get help</h2>', '<p>On Hostinger? See <a href="/blog/hostinger-website-slow-fix/">Hostinger-specific speed fixes</a>. Moving hosts? See <a href="/blog/migrate-website-to-hostinger/">migrating to Hostinger</a>.</p>\n\n'],
+  // Round 41: WordPress issues, Elementor and themes
+  ['common-wordpress-errors-fixes', '<h2>White screen (blank page)</h2>', '<p>Step-by-step guide: <a href="/blog/fix-wordpress-critical-error/">how to fix "There has been a critical error"</a>.</p>\n\n'],
+  ['update-wordpress-safely', '<h2>If something breaks</h2>', '<p>Specific fixes: <a href="/blog/fix-wordpress-critical-error/">the critical error</a> and <a href="/blog/elementor-layout-broken-after-update/">Elementor layouts broken after an update</a>.</p>\n\n'],
+  ['why-elementor-sites-slow', '<h2>Measure before and after</h2>', '<p>Editor not loading at all? See <a href="/blog/elementor-not-loading-fix/">Elementor stuck on loading</a>.</p>\n\n'],
+  ['wordpress-caching-explained', '<h2>Caching won\'t fix everything</h2>', '<p>Edits not appearing? See <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>.</p>\n\n'],
+  ['hire-developer-vs-diy-website', '<h2>A middle path</h2>', '<p>Want to handle updates yourself? See <a href="/blog/edit-website-content-wordpress/">how to edit your WordPress content</a>.</p>\n\n'],
+  ['how-to-choose-wordpress-theme', '<h2>Popular choices for business sites</h2>', '<p>Considering a premium theme? Read <a href="/blog/premium-wordpress-themes-guide/">what to know before buying</a>.</p>\n\n'],
+  ['nulled-themes-plugins-risks', '<h2>Licences are cheaper than clean-ups</h2>', '<p>Already have a genuine premium theme? See <a href="/blog/update-premium-theme-safely/">how to update it safely</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
