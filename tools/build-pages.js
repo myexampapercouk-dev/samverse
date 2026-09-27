@@ -6,6 +6,9 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const SITE = 'https://samverse.space';
+// Per-page social image from tools/og-images.js, falling back to the default
+const ogImage = key => fs.existsSync(path.join(__dirname, '..', 'assets', 'og', key + '.png')) ? `${SITE}/assets/og/${key}.png` : `${SITE}/assets/og-image.png`;
+const ogForUrl = url => { const parts = url.replace(SITE, '').split('/').filter(Boolean); if (parts.length === 2) return ogImage(`${parts[0]}-${parts[1]}`); if (parts.length === 1) { const k = fs.existsSync(path.join(__dirname, '..', 'assets', 'og', `extra-${parts[0]}.png`)) ? `extra-${parts[0]}` : `page-${parts[0]}`; return ogImage(k); } return ogImage('none'); };
 const WA = '917417049145';
 const index = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 
@@ -140,11 +143,11 @@ const render = p => {
   <meta property="og:url" content="${url}">
   <meta property="og:title" content="${esc(p.title)}">
   <meta property="og:description" content="${esc(p.description)}">
-  <meta property="og:image" content="${SITE}/assets/og-image.png">
+  <meta property="og:image" content="${ogForUrl(url)}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="${SITE}/assets/og-image.png">
+  <meta name="twitter:image" content="${ogForUrl(url)}">
   <meta name="theme-color" content="#6D4AFF">
   <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -388,11 +391,11 @@ const headCommon = (title, description, url, extra = '') => `<!DOCTYPE html>
   <meta property="og:url" content="${url}">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
-  <meta property="og:image" content="${SITE}/assets/og-image.png">
+  <meta property="og:image" content="${ogForUrl(url)}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="${SITE}/assets/og-image.png">
+  <meta name="twitter:image" content="${ogForUrl(url)}">
   <meta name="theme-color" content="#6D4AFF">
   <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -432,7 +435,7 @@ const renderPost = (post, i) => {
       {
         '@type': 'BlogPosting', '@id': `${url}#article`, headline: post.title, description: post.description,
         datePublished: post.date, dateModified: post.updated || post.date, mainEntityOfPage: url,
-        image: `${SITE}/assets/og-image.png`, articleSection: post.category, inLanguage: 'en-IN',
+        image: ogImage(`blog-${post.slug}`), articleSection: post.category, inLanguage: 'en-IN',
         author: { '@type': 'Person', '@id': `${SITE}/#sameer`, name: 'Sameer Gupta', url: `${SITE}/` },
         publisher: { '@type': 'Organization', name: 'Samverse', logo: { '@type': 'ImageObject', url: `${SITE}/assets/icon-512.png` } },
       },

@@ -1,0 +1,8 @@
+{
+  "name": "samverse-tools",
+  "private": true,
+  "description": "Local build helpers (not installed on Netlify)",
+  "devDependencies": {
+    "sharp": "^0.35.4"
+  }
+}

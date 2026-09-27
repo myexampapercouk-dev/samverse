@@ -43,3 +43,10 @@ Pings Bing/Yandex (IndexNow) with every URL in the sitemap.
 
 ## Styles
 Edit `style.css`; the build writes the minified `style.min.css` that every page loads. Always rebuild after CSS changes.
+
+## Social share images
+One-time setup: `cd tools && npm install` (installs sharp locally; not used on Netlify).
+Then `node tools/og-images.js` writes `assets/og/*.png` for every article, landing page, case study and extra page; rebuild afterwards.
+
+## Internal links
+`tools/add-links.js` inserts contextual links between articles (anchors are verified; safe to re-run).
