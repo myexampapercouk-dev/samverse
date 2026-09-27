@@ -790,5 +790,47 @@
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
     <description>How property agents and brokers can win clients online: property listings for sale and rent, area expertise, owner listing forms, WhatsApp enquiries, trust signals and local SEO.</description>
   </item>
+  <item>
+    <title>Common WordPress Errors Explained (and What to Do About Them)</title>
+    <link>https://samverse.space/blog/common-wordpress-errors-fixes/</link>
+    <guid>https://samverse.space/blog/common-wordpress-errors-fixes/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Plain-English explanations of common WordPress errors (white screen, critical error, 500 errors, database connection errors, 404s and maintenance mode) and safe first steps to fix them.</description>
+  </item>
+  <item>
+    <title>SSL Certificate Errors Explained: &quot;Not Secure&quot; Warnings and How to Fix Them</title>
+    <link>https://samverse.space/blog/ssl-certificate-errors-fix/</link>
+    <guid>https://samverse.space/blog/ssl-certificate-errors-fix/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Why browsers show &quot;Not secure&quot; or certificate warnings on your website (expired certificates, mixed content, wrong domain) and how to fix each one so visitors trust your site again.</description>
+  </item>
+  <item>
+    <title>What Is a CDN, and Does Your Business Website Need One?</title>
+    <link>https://samverse.space/blog/what-is-a-cdn/</link>
+    <guid>https://samverse.space/blog/what-is-a-cdn/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A CDN (content delivery network) explained simply: how it speeds up websites, adds protection, when small businesses benefit, and how to set one up safely with WordPress.</description>
+  </item>
+  <item>
+    <title>How to Add Google Maps to Your Website (Without Slowing It Down)</title>
+    <link>https://samverse.space/blog/google-maps-on-website/</link>
+    <guid>https://samverse.space/blog/google-maps-on-website/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to add a Google Map to your business website properly: embed options, performance-friendly loading, directions links, multiple locations, and matching your Google Business Profile.</description>
+  </item>
+  <item>
+    <title>Website Analytics for Business Owners: The Metrics That Actually Matter</title>
+    <link>https://samverse.space/blog/website-analytics-metrics-that-matter/</link>
+    <guid>https://samverse.space/blog/website-analytics-metrics-that-matter/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Which website analytics metrics matter for a small business: conversions, conversion rate, traffic sources, landing pages, engagement and search queries, and which vanity metrics to ignore.</description>
+  </item>
+  <item>
+    <title>Mobile-First Design Explained: Why Your Website Should Start With the Phone</title>
+    <link>https://samverse.space/blog/mobile-first-design-explained/</link>
+    <guid>https://samverse.space/blog/mobile-first-design-explained/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What mobile-first design means, why it matters for customers and Google, and practical mobile-first principles for layout, navigation, buttons, forms, images and speed.</description>
+  </item>
 </channel>
 </rss>

@@ -200,6 +200,8 @@ module.exports = [
   <li>Remove sliders and auto-playing videos from the top of the page</li>
 </ul>
 
+<p>Serving visitors across regions? A <a href="/blog/what-is-a-cdn/">CDN</a> can help.</p>
+
 <h2>When to get help</h2>
 <p>If you've tried the basics and your site is still slow, or you're worried about breaking something, a speed optimization expert can audit your site, fix the real bottlenecks and show you a before-and-after report. Always make sure a full backup is taken before any optimization work.</p>
 `,
@@ -625,6 +627,8 @@ module.exports = [
 </ul>
 
 <p>For a page-by-page routine, use the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a> whenever you publish a new page.</p>
+
+<p>Adding a map to your contact page? See <a href="/blog/google-maps-on-website/">how to add Google Maps without slowing your site</a>.</p>
 
 <h2>Step 5: Get listed in trusted directories</h2>
 <p>Listings on reputable directories (called citations) help Google trust your business details. Start with Justdial, Sulekha, IndiaMART (for B2B), Bing Places, Apple Maps and relevant industry directories.</p>
@@ -1547,6 +1551,8 @@ module.exports = [
   <li><strong>Pop-ups that block everything</strong> as soon as the page opens, especially on mobile.</li>
 </ol>
 
+<p>The fix for most of these: <a href="/blog/mobile-first-design-explained/">mobile-first design</a>.</p>
+
 <h2>Navigation and content</h2>
 <ol start="8">
   <li><strong>Confusing menus.</strong> Too many items or vague labels like "Solutions" with no context.</li>
@@ -2296,6 +2302,8 @@ module.exports = [
   <li>Most good hosts include free SSL certificates that renew automatically</li>
   <li>After installing SSL, make sure every page loads on https and old http links redirect</li>
 </ul>
+
+<p>Seeing certificate warnings? See <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a>.</p>
 
 <h2>Business email</h2>
 <p>An email address at your domain (like info@yourbusiness.com) looks far more professional than a free email address. It's usually set up through your hosting or a dedicated email service.</p>
@@ -4591,6 +4599,8 @@ module.exports = [
   <li><strong>Higher lead value:</strong> attract better-fit clients with focused service pages</li>
 </ul>
 
+<p>Not sure which numbers to watch? See <a href="/blog/website-analytics-metrics-that-matter/">the analytics metrics that actually matter</a>.</p>
+
 <h2>Review monthly</h2>
 <p>Check enquiries, sources and conversion rates once a month. Double down on the pages and channels that produce customers, and fix the ones that don't.</p>
 
@@ -4910,6 +4920,8 @@ module.exports = [
   <li>Check for a fix from the plugin developer, or wait for a patch before updating again</li>
   <li>If you see a "critical error" message, WordPress recovery mode or hosting access can disable the faulty plugin</li>
 </ol>
+
+<p>Seeing an error message? See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
 
 <h2>Automatic updates: yes or no?</h2>
 <ul>
@@ -6530,6 +6542,285 @@ module.exports = [
 </ul>
 
 <p>Builders and developers have different needs; see <a href="/blog/real-estate-website-must-have-features/">real estate website must-haves</a> and <a href="/real-estate-website-design/">real estate website design</a>.</p>
+`,
+  },
+  {
+    slug: 'common-wordpress-errors-fixes',
+    seoTitle: 'Common WordPress Errors and How to Fix Them',
+    title: 'Common WordPress Errors Explained (and What to Do About Them)',
+    description: 'Plain-English explanations of common WordPress errors (white screen, critical error, 500 errors, database connection errors, 404s and maintenance mode) and safe first steps to fix them.',
+    date: '2026-09-27',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
+    body: `
+<p>Few things are more stressful than opening your website and seeing an error instead of your homepage. Most WordPress errors have common causes and safe fixes. Here's what they mean and what to do first. If you're not comfortable with technical steps, share this with your developer.</p>
+
+<h2>"There has been a critical error on this website"</h2>
+<p><strong>Usually:</strong> a plugin or theme conflict, often right after an update.<br><strong>First steps:</strong> check the site admin's email for WordPress's recovery mode link, which lets you log in and deactivate the faulty plugin. Otherwise, a developer can disable plugins via hosting file access.</p>
+
+<h2>White screen (blank page)</h2>
+<p><strong>Usually:</strong> a PHP error or exhausted memory.<br><strong>First steps:</strong> think about what changed recently (update, new plugin). Restore the last backup or disable the latest plugin. Your host can check error logs.</p>
+
+<h2>500 Internal Server Error</h2>
+<p><strong>Usually:</strong> a server configuration issue, corrupted .htaccess file, plugin error or hosting resource limits.<br><strong>First steps:</strong> check your hosting account for resource warnings and ask your host for the error log, which tells you exactly what failed.</p>
+
+<h2>"Error establishing a database connection"</h2>
+<p><strong>Usually:</strong> the database server is down, the database credentials changed, or the database is corrupted.<br><strong>First steps:</strong> check your host's status page. If the host is fine, the database details in the site's configuration may need correcting. This often appears after migrations.</p>
+
+<h2>404 errors on pages that should exist</h2>
+<p><strong>Usually:</strong> permalink settings or redirects broke after a change or migration.<br><strong>First steps:</strong> re-save permalinks (Settings → Permalinks → Save). If URLs changed, set up 301 redirects; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
+
+<h2>"Briefly unavailable for scheduled maintenance"</h2>
+<p><strong>Usually:</strong> an update was interrupted.<br><strong>First steps:</strong> a leftover maintenance file needs removing via hosting file access, then the interrupted update should be re-run.</p>
+
+<h2>Browser security warnings</h2>
+<p><strong>Usually:</strong> an SSL certificate problem, or Google has flagged malware.<br><strong>First steps:</strong> see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> and <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>.</p>
+
+<h2>Golden rules when something breaks</h2>
+<ol>
+  <li>Don't keep clicking update or changing settings at random</li>
+  <li>Note what changed just before the error</li>
+  <li>Check your backups; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a></li>
+  <li>Get error logs from your host, because they usually point to the cause</li>
+</ol>
+
+<p>Most of these errors are prevented by careful updates, backups and monitoring; see <a href="/blog/update-wordpress-safely/">updating WordPress safely</a> and <a href="/wordpress-maintenance/">maintenance plans</a>.</p>
+`,
+  },
+  {
+    slug: 'ssl-certificate-errors-fix',
+    seoTitle: 'SSL Certificate Errors Explained (and How to Fix Them)',
+    title: 'SSL Certificate Errors Explained: "Not Secure" Warnings and How to Fix Them',
+    description: 'Why browsers show "Not secure" or certificate warnings on your website (expired certificates, mixed content, wrong domain) and how to fix each one so visitors trust your site again.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-migration', 'wordpress-maintenance', 'wordpress-malware-removal'],
+    body: `
+<p>A "Not secure" label or a full-screen certificate warning scares visitors away instantly and damages trust. The good news: SSL problems are usually quick to fix once you know the cause.</p>
+
+<h2>"Not secure" in the address bar</h2>
+<p><strong>Cause:</strong> the site loads over http instead of https, or has no certificate.<br><strong>Fix:</strong> install a certificate (most hosts provide free, auto-renewing ones), then redirect all http traffic to https and update the WordPress site URL settings.</p>
+
+<h2>"Your connection is not private" / certificate expired</h2>
+<p><strong>Cause:</strong> the certificate expired and didn't auto-renew.<br><strong>Fix:</strong> renew or reissue it in your hosting panel. Check that auto-renewal is working. Renewals can fail when DNS points somewhere unexpected.</p>
+
+<h2>Certificate doesn't match the domain</h2>
+<p><strong>Cause:</strong> the certificate covers <code>example.com</code> but not <code>www.example.com</code> (or vice versa), or a new domain was added without a certificate.<br><strong>Fix:</strong> issue a certificate covering all versions of your domain and redirect everything to one preferred version.</p>
+
+<h2>Padlock missing or "partially secure" (mixed content)</h2>
+<p><strong>Cause:</strong> the page loads over https, but some images, scripts or styles still load over http.<br><strong>Fix:</strong> update old http links in content, theme settings and page builder sections to https. Tools and plugins can find and fix mixed content.</p>
+
+<h2>Warnings after moving hosts or domains</h2>
+<p><strong>Cause:</strong> the certificate wasn't issued on the new host before DNS switched, or DNS still points to the old server.<br><strong>Fix:</strong> issue the certificate on the new host and check DNS records. Plan this step in any migration; see <a href="/wordpress-migration/">WordPress migration</a>.</p>
+
+<h2>Google or browser "deceptive site" warnings</h2>
+<p>These aren't SSL problems. They usually mean malware or phishing was detected. See <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site is hacked</a>.</p>
+
+<h2>Prevent SSL problems</h2>
+<ul>
+  <li>Use hosting with automatic certificate renewal</li>
+  <li>Monitor certificate expiry; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring</a></li>
+  <li>Keep one preferred domain version with proper redirects</li>
+  <li>Check for mixed content after redesigns</li>
+</ul>
+
+<p>For the basics of how domains, hosting and SSL fit together, see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+`,
+  },
+  {
+    slug: 'what-is-a-cdn',
+    seoTitle: 'What Is a CDN and Does Your Website Need One?',
+    title: 'What Is a CDN, and Does Your Business Website Need One?',
+    description: 'A CDN (content delivery network) explained simply: how it speeds up websites, adds protection, when small businesses benefit, and how to set one up safely with WordPress.',
+    date: '2026-09-27',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-migration', 'woocommerce-developer'],
+    body: `
+<p>A CDN, or content delivery network, is a network of servers around the world that stores copies of your website's files and delivers them from a location close to each visitor. It's one of the simplest ways to make a website faster and more resilient.</p>
+
+<h2>How a CDN helps</h2>
+<ul>
+  <li><strong>Speed:</strong> images, CSS and scripts load from a nearby server instead of your hosting location</li>
+  <li><strong>Less load on your hosting:</strong> the CDN serves repeat requests, so your server handles fewer</li>
+  <li><strong>Resilience:</strong> many CDNs absorb traffic spikes and some attacks</li>
+  <li><strong>Security features:</strong> many include SSL, firewall rules and bot protection</li>
+</ul>
+
+<h2>Does a small business need one?</h2>
+<ul>
+  <li><strong>Visitors from many regions or countries:</strong> yes, it helps noticeably</li>
+  <li><strong>Image-heavy sites and online stores:</strong> usually worthwhile</li>
+  <li><strong>Local business with visitors near your server:</strong> smaller gains, but still useful for resilience and security</li>
+</ul>
+
+<h2>Two common setups</h2>
+<ol>
+  <li><strong>Static file CDN:</strong> only images, CSS and JavaScript are served from the CDN. Simple and low-risk.</li>
+  <li><strong>Full proxy CDN:</strong> all traffic goes through the CDN (your DNS points to it). It adds caching and security for the whole site, but needs careful configuration.</li>
+</ol>
+
+<h2>Be careful with dynamic pages</h2>
+<p>Pages that change per visitor, such as cart, checkout, account pages and admin, must not be cached as static pages. Configure the CDN to bypass them, especially for WooCommerce stores.</p>
+
+<h2>Setting up a CDN with WordPress</h2>
+<ul>
+  <li>Many hosts include a CDN you can switch on</li>
+  <li>Caching plugins can rewrite file URLs to a CDN</li>
+  <li>For proxy CDNs, DNS changes are required, so copy email records carefully</li>
+  <li>Test the site, forms and checkout thoroughly afterwards</li>
+</ul>
+
+<h2>A CDN isn't a cure-all</h2>
+<p>A CDN won't fix a slow server response, a bloated theme or huge images. Optimize those first; see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> and <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
+
+<p>CDN setup is often part of a <a href="/wordpress-speed-optimization/">speed optimization</a> project.</p>
+`,
+  },
+  {
+    slug: 'google-maps-on-website',
+    seoTitle: 'How to Add Google Maps to Your Website Properly',
+    title: 'How to Add Google Maps to Your Website (Without Slowing It Down)',
+    description: 'How to add a Google Map to your business website properly: embed options, performance-friendly loading, directions links, multiple locations, and matching your Google Business Profile.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-speed-optimization', 'wordpress-seo-services'],
+    body: `
+<p>A map on your contact page helps customers find you and confirms you're a real, local business. But a careless map embed can slow your site down. Here's how to do it well.</p>
+
+<h2>Embed options</h2>
+<ul>
+  <li><strong>Standard embed:</strong> search your business on Google Maps, choose "Share", then "Embed a map", and paste the code. It's free and simple.</li>
+  <li><strong>Maps via API:</strong> custom styling, multiple markers and advanced features. It requires an API key and billing setup with usage limits.</li>
+  <li><strong>Static image with a link:</strong> a map image linked to Google Maps. It's the lightest option.</li>
+</ul>
+
+<h2>Keep it fast</h2>
+<p>Embedded maps load extra scripts and can be heavy, especially on mobile.</p>
+<ul>
+  <li>Place the map only where it's useful, usually the contact page, not every page</li>
+  <li>Lazy-load the map so it loads only when scrolled into view</li>
+  <li>Or show a static preview that loads the interactive map on tap</li>
+</ul>
+<p>See <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
+
+<h2>Make directions easy</h2>
+<ul>
+  <li>Add a clear "Get directions" button that opens Google Maps on phones</li>
+  <li>Write the address in text too, not just in the map, so it's readable, copyable and understood by search engines</li>
+  <li>Add landmarks, parking information and entry details</li>
+</ul>
+
+<h2>Multiple locations</h2>
+<p>For several branches, give each its own section or page with address, map, hours and phone, rather than one crowded map. Keep each branch's details matching its Google Business Profile.</p>
+
+<h2>Consistency helps local SEO</h2>
+<p>Your business name, address and phone on the website should match your Google Business Profile exactly. Add LocalBusiness schema with the same details; see the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> and <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+
+<h2>Service-area businesses</h2>
+<p>If customers don't visit you (for example home services), you may not want to show a precise address. List the areas you serve instead, and set a service area on your Google Business Profile.</p>
+`,
+  },
+  {
+    slug: 'website-analytics-metrics-that-matter',
+    seoTitle: 'Website Analytics: The Metrics That Actually Matter',
+    title: 'Website Analytics for Business Owners: The Metrics That Actually Matter',
+    description: 'Which website analytics metrics matter for a small business: conversions, conversion rate, traffic sources, landing pages, engagement and search queries, and which vanity metrics to ignore.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
+    body: `
+<p>Google Analytics shows dozens of reports, and it's easy to get lost in numbers that don't matter. For a small business, a handful of metrics tell you almost everything about whether your website is working.</p>
+
+<h2>1. Conversions (the most important)</h2>
+<p>How many people took a valuable action: form submissions, calls, WhatsApp clicks, orders, bookings. Set these up as key events; see <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a>.</p>
+
+<h2>2. Conversion rate</h2>
+<p>Conversions divided by visitors. If traffic grows but conversion rate falls, the new visitors may be less relevant, or the site isn't persuading them.</p>
+
+<h2>3. Traffic sources</h2>
+<p>Where visitors come from: organic search, paid ads, social, referrals, direct. Look at conversions by source, not just visits, to see which channels bring customers.</p>
+
+<h2>4. Top landing pages</h2>
+<p>The pages people arrive on. Improve the ones with high traffic but few conversions: clearer calls to action, better proof, faster loading.</p>
+
+<h2>5. Engagement</h2>
+<p>Engaged sessions and engagement time show whether visitors actually read and interact. Very low engagement on a key page suggests a mismatch between what people expected and what they found.</p>
+
+<h2>6. Search queries (Search Console)</h2>
+<p>Which searches show your site, your clicks and average position. Pages ranking around positions 8–20 are the best candidates for improvement.</p>
+
+<h2>7. Device split</h2>
+<p>If most visitors are on mobile, and conversions on mobile are low, prioritise mobile usability.</p>
+
+<h2>Vanity metrics to ignore (on their own)</h2>
+<ul>
+  <li><strong>Total page views:</strong> more isn't better if nobody converts</li>
+  <li><strong>Time on site alone:</strong> long visits can mean confusion</li>
+  <li><strong>Social likes and followers:</strong> useful for awareness, but not proof of business</li>
+</ul>
+
+<h2>A simple monthly review</h2>
+<ol>
+  <li>Conversions and conversion rate vs last month</li>
+  <li>Conversions by traffic source</li>
+  <li>Top landing pages and their conversion rates</li>
+  <li>Search queries with many impressions but low clicks</li>
+  <li>One improvement to make this month</li>
+</ol>
+
+<p>Turn the numbers into money with <a href="/blog/measure-website-roi/">website ROI</a>. For hands-on help, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'mobile-first-design-explained',
+    seoTitle: 'Mobile-First Design Explained for Business Owners',
+    title: 'Mobile-First Design Explained: Why Your Website Should Start With the Phone',
+    description: 'What mobile-first design means, why it matters for customers and Google, and practical mobile-first principles for layout, navigation, buttons, forms, images and speed.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['website-redesign', 'wordpress-website-development', 'wordpress-speed-optimization'],
+    body: `
+<p>Most people now visit business websites on their phones. Mobile-first design means designing for the small screen first, then enhancing for larger screens, instead of squeezing a desktop design onto a phone as an afterthought.</p>
+
+<h2>Why mobile-first matters</h2>
+<ul>
+  <li><strong>Customers:</strong> mobile visitors decide quickly and leave if things are hard to use</li>
+  <li><strong>Google:</strong> indexes and ranks sites based mainly on their mobile version</li>
+  <li><strong>Conversions:</strong> calls, WhatsApp and bookings mostly happen on phones</li>
+</ul>
+
+<h2>Mobile-first principles</h2>
+<h3>Prioritise content</h3>
+<p>On a small screen, only the essentials fit at the top: what you do, the main benefit and the primary action. Move secondary content lower.</p>
+<h3>Simple navigation</h3>
+<p>A clear menu with few items, a visible call-to-action button, and a sticky header or bottom bar with call and WhatsApp buttons.</p>
+<h3>Thumb-friendly buttons</h3>
+<p>Large tap targets with space between them. Important actions should be reachable with one thumb.</p>
+<h3>Readable text</h3>
+<p>At least 16px body text, short paragraphs and good contrast. No pinching or zooming needed.</p>
+<h3>Short, smart forms</h3>
+<p>Few fields, the right keyboard types (numeric for phone numbers), autofill support and clear errors.</p>
+<h3>Light pages</h3>
+<p>Compressed images, no heavy sliders or auto-playing video, and minimal scripts. See <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
+<h3>No intrusive pop-ups</h3>
+<p>Pop-ups that cover the whole mobile screen frustrate visitors and can hurt how search engines view the page.</p>
+
+<h2>Test on real devices</h2>
+<ul>
+  <li>Check key pages on an actual mid-range phone, not just a resized desktop browser</li>
+  <li>Try completing your main task (enquire, book, buy) with one hand</li>
+  <li>Check PageSpeed Insights mobile results</li>
+</ul>
+
+<h2>Signs your site isn't mobile-first</h2>
+<ul>
+  <li>Sideways scrolling or cut-off content</li>
+  <li>Tiny text and links</li>
+  <li>Phone numbers that can't be tapped</li>
+  <li>Slow loading on mobile data</li>
+</ul>
+
+<p>If your site shows these signs, a <a href="/website-redesign/">mobile-first redesign</a> is usually one of the highest-impact improvements you can make. See also <a href="/blog/signs-you-need-a-new-website/">signs you need a new website</a>.</p>
 `,
   },
 ];

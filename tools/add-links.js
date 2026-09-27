@@ -122,6 +122,13 @@ const LINKS = [
   ['write-service-pages-that-convert', '<h2>SEO essentials</h2>', '<p>Tips for writing them: <a href="/blog/faq-page-seo/">FAQ sections that help customers and SEO</a>.</p>\n\n'],
   ['website-for-lawyers-and-chartered-accountants', '<h2>Local SEO for professionals</h2>', '<p>Insurance and financial advisors face similar rules; see <a href="/blog/website-for-insurance-financial-advisors/">websites for insurance agents and financial advisors</a>.</p>\n\n'],
   ['real-estate-website-must-have-features', '<h2>Common mistakes</h2>', '<p>Agents and brokers have different needs from builders; see <a href="/blog/website-for-real-estate-agents-brokers/">websites for real estate agents and brokers</a>.</p>\n\n'],
+  // Round 11
+  ['update-wordpress-safely', '<h2>Automatic updates: yes or no?</h2>', '<p>Seeing an error message? See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>\n\n'],
+  ['domain-hosting-ssl-explained', '<h2>Business email</h2>', '<p>Seeing certificate warnings? See <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a>.</p>\n\n'],
+  ['why-is-my-wordpress-site-slow', '<h2>When to get help</h2>', '<p>Serving visitors across regions? A <a href="/blog/what-is-a-cdn/">CDN</a> can help.</p>\n\n'],
+  ['local-seo-guide-small-business-india', '<h2>Step 5: Get listed in trusted directories</h2>', '<p>Adding a map to your contact page? See <a href="/blog/google-maps-on-website/">how to add Google Maps without slowing your site</a>.</p>\n\n'],
+  ['measure-website-roi', '<h2>Review monthly</h2>', '<p>Not sure which numbers to watch? See <a href="/blog/website-analytics-metrics-that-matter/">the analytics metrics that actually matter</a>.</p>\n\n'],
+  ['website-design-mistakes', '<h2>Navigation and content</h2>', '<p>The fix for most of these: <a href="/blog/mobile-first-design-explained/">mobile-first design</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

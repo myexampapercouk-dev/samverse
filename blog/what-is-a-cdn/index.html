@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Speed on Indian Mobile Networks | Samverse</title>
-  <meta name="description" content="Why website speed matters for Indian mobile users on varying networks and budget phones, and practical ways to make your site load fast: page weight, images, fonts, scripts and hosting.">
+  <title>What Is a CDN and Does Your Website Need One? | Samverse</title>
+  <meta name="description" content="A CDN (content delivery network) explained simply: how it speeds up websites, adds protection, when small businesses benefit, and how to set one up safely with WordPress.">
   <meta name="author" content="Sameer Gupta">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="https://samverse.space/blog/website-speed-indian-mobile-networks/">
+  <link rel="canonical" href="https://samverse.space/blog/what-is-a-cdn/">
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
-  <meta property="og:url" content="https://samverse.space/blog/website-speed-indian-mobile-networks/">
-  <meta property="og:title" content="Website Speed on Indian Mobile Networks | Samverse">
-  <meta property="og:description" content="Why website speed matters for Indian mobile users on varying networks and budget phones, and practical ways to make your site load fast: page weight, images, fonts, scripts and hosting.">
-  <meta property="og:image" content="https://samverse.space/assets/og/blog-website-speed-indian-mobile-networks.png">
+  <meta property="og:url" content="https://samverse.space/blog/what-is-a-cdn/">
+  <meta property="og:title" content="What Is a CDN and Does Your Website Need One? | Samverse">
+  <meta property="og:description" content="A CDN (content delivery network) explained simply: how it speeds up websites, adds protection, when small businesses benefit, and how to set one up safely with WordPress.">
+  <meta property="og:image" content="https://samverse.space/assets/og/blog-what-is-a-cdn.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://samverse.space/assets/og/blog-website-speed-indian-mobile-networks.png">
+  <meta name="twitter:image" content="https://samverse.space/assets/og/blog-what-is-a-cdn.png">
   <meta name="theme-color" content="#6D4AFF">
   <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -38,13 +38,13 @@
   "@graph": [
     {
       "@type": "BlogPosting",
-      "@id": "https://samverse.space/blog/website-speed-indian-mobile-networks/#article",
-      "headline": "Website Speed on Indian Mobile Networks: Building for Real-World Conditions",
-      "description": "Why website speed matters for Indian mobile users on varying networks and budget phones, and practical ways to make your site load fast: page weight, images, fonts, scripts and hosting.",
+      "@id": "https://samverse.space/blog/what-is-a-cdn/#article",
+      "headline": "What Is a CDN, and Does Your Business Website Need One?",
+      "description": "A CDN (content delivery network) explained simply: how it speeds up websites, adds protection, when small businesses benefit, and how to set one up safely with WordPress.",
       "datePublished": "2026-09-27",
       "dateModified": "2026-09-27",
-      "mainEntityOfPage": "https://samverse.space/blog/website-speed-indian-mobile-networks/",
-      "image": "https://samverse.space/assets/og/blog-website-speed-indian-mobile-networks.png",
+      "mainEntityOfPage": "https://samverse.space/blog/what-is-a-cdn/",
+      "image": "https://samverse.space/assets/og/blog-what-is-a-cdn.png",
       "articleSection": "Speed",
       "inLanguage": "en-IN",
       "author": {
@@ -80,8 +80,8 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Website Speed on Indian Mobile Networks: Building for Real-World Conditions",
-          "item": "https://samverse.space/blog/website-speed-indian-mobile-networks/"
+          "name": "What Is a CDN, and Does Your Business Website Need One?",
+          "item": "https://samverse.space/blog/what-is-a-cdn/"
         }
       ]
     }
@@ -119,7 +119,7 @@
       <header class="post-head container">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> Speed</nav>
         <span class="eyebrow">Speed</span>
-        <h1>Website Speed on Indian Mobile Networks: Building for Real-World Conditions</h1>
+        <h1>What Is a CDN, and Does Your Business Website Need One?</h1>
         <p class="post-meta">By <a href="/about/">Sameer Gupta</a> · <time datetime="2026-09-27">27 September 2026</time> · 3 min read</p>
       </header>
 
@@ -127,77 +127,68 @@
         <aside class="post-toc">
           <strong>On this page</strong>
           <ol>
-            <li><a href="#why-it-matters">Why it matters</a></li>
-            <li><a href="#test-like-your-customers">Test like your customers</a></li>
-            <li><a href="#reduce-page-weight">Reduce page weight</a></li>
-            <li><a href="#reduce-javascript">Reduce JavaScript</a></li>
-            <li><a href="#serve-it-fast">Serve it fast</a></li>
-            <li><a href="#design-for-mobile-first">Design for mobile first</a></li>
+            <li><a href="#how-a-cdn-helps">How a CDN helps</a></li>
+            <li><a href="#does-a-small-business-need-one">Does a small business need one?</a></li>
+            <li><a href="#two-common-setups">Two common setups</a></li>
+            <li><a href="#be-careful-with-dynamic-pages">Be careful with dynamic pages</a></li>
+            <li><a href="#setting-up-a-cdn-with-wordpress">Setting up a CDN with WordPress</a></li>
+            <li><a href="#a-cdn-isn-t-a-cure-all">A CDN isn't a cure-all</a></li>
           </ol>
         </aside>
         <div class="post-body">
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Many visitors use mid-range phones on variable networks, so test in real conditions.</li>
-              <li>Cut page weight: images, video, fonts and heavy scripts.</li>
-              <li>Use hosting near your audience, caching, a CDN and mobile-first design.</li>
+              <li>A CDN serves your files from servers near each visitor, improving speed and resilience.</li>
+              <li>It helps most for multi-region audiences, image-heavy sites and stores.</li>
+              <li>Exclude cart, checkout and account pages from caching, and fix slow hosting and heavy pages first.</li>
             </ul>
           </div>
-<p>Many of your visitors browse on mobile phones, often mid-range devices, on connections that vary from fast 4G/5G in cities to patchy coverage while travelling or in smaller towns. A site that feels instant on office Wi-Fi can crawl in real conditions. Designing for those conditions wins customers.</p>
+<p>A CDN, or content delivery network, is a network of servers around the world that stores copies of your website's files and delivers them from a location close to each visitor. It's one of the simplest ways to make a website faster and more resilient.</p>
 
-<h2 id="why-it-matters">Why it matters</h2>
+<h2 id="how-a-cdn-helps">How a CDN helps</h2>
 <ul>
-  <li>Visitors abandon slow pages, especially when they're comparing options</li>
-  <li>Heavy pages cost users mobile data</li>
-  <li>Budget phones take longer to process JavaScript</li>
-  <li>Google evaluates page experience using real-user data (Core Web Vitals)</li>
+  <li><strong>Speed:</strong> images, CSS and scripts load from a nearby server instead of your hosting location</li>
+  <li><strong>Less load on your hosting:</strong> the CDN serves repeat requests, so your server handles fewer</li>
+  <li><strong>Resilience:</strong> many CDNs absorb traffic spikes and some attacks</li>
+  <li><strong>Security features:</strong> many include SSL, firewall rules and bot protection</li>
 </ul>
 
-<h2 id="test-like-your-customers">Test like your customers</h2>
+<h2 id="does-a-small-business-need-one">Does a small business need one?</h2>
 <ul>
-  <li>Use PageSpeed Insights, which simulates mobile devices and slower networks</li>
-  <li>Try your site on an older phone with mobile data</li>
-  <li>Check Search Console's Core Web Vitals report for real-user data</li>
+  <li><strong>Visitors from many regions or countries:</strong> yes, it helps noticeably</li>
+  <li><strong>Image-heavy sites and online stores:</strong> usually worthwhile</li>
+  <li><strong>Local business with visitors near your server:</strong> smaller gains, but still useful for resilience and security</li>
 </ul>
 
-<h2 id="reduce-page-weight">Reduce page weight</h2>
+<h2 id="two-common-setups">Two common setups</h2>
+<ol>
+  <li><strong>Static file CDN:</strong> only images, CSS and JavaScript are served from the CDN. Simple and low-risk.</li>
+  <li><strong>Full proxy CDN:</strong> all traffic goes through the CDN (your DNS points to it). It adds caching and security for the whole site, but needs careful configuration.</li>
+</ol>
+
+<h2 id="be-careful-with-dynamic-pages">Be careful with dynamic pages</h2>
+<p>Pages that change per visitor, such as cart, checkout, account pages and admin, must not be cached as static pages. Configure the CDN to bypass them, especially for WooCommerce stores.</p>
+
+<h2 id="setting-up-a-cdn-with-wordpress">Setting up a CDN with WordPress</h2>
 <ul>
-  <li><strong>Images:</strong> the biggest win. Resize, compress and use WebP. See <a href="/blog/image-optimization-wordpress/">image optimization</a>.</li>
-  <li><strong>Video:</strong> avoid auto-playing background videos; use a poster image and load on tap</li>
-  <li><strong>Fonts:</strong> limit to one or two families and only needed weights</li>
-  <li><strong>Sliders and animations:</strong> remove or simplify</li>
+  <li>Many hosts include a CDN you can switch on</li>
+  <li>Caching plugins can rewrite file URLs to a CDN</li>
+  <li>For proxy CDNs, DNS changes are required, so copy email records carefully</li>
+  <li>Test the site, forms and checkout thoroughly afterwards</li>
 </ul>
 
-<h2 id="reduce-javascript">Reduce JavaScript</h2>
-<ul>
-  <li>Remove unused plugins and heavy widgets</li>
-  <li>Delay chat widgets, trackers and embeds until after the page loads</li>
-  <li>Keep page builder layouts lean. See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</li>
-</ul>
+<h2 id="a-cdn-isn-t-a-cure-all">A CDN isn't a cure-all</h2>
+<p>A CDN won't fix a slow server response, a bloated theme or huge images. Optimize those first; see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> and <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
 
-<h2 id="serve-it-fast">Serve it fast</h2>
-<ul>
-  <li>Hosting with servers in or near India (for Indian audiences)</li>
-  <li>Page caching and a CDN for static files</li>
-  <li>Modern PHP and a lightweight theme</li>
-</ul>
-
-<h2 id="design-for-mobile-first">Design for mobile first</h2>
-<ul>
-  <li>Put the headline, key message and call to action at the top</li>
-  <li>Large tap targets and readable text</li>
-  <li>Tap-to-call and WhatsApp that work instantly</li>
-</ul>
-
-<p>Speed isn't a one-time project. Re-check after adding plugins, content or campaigns. For a full diagnosis, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> or get <a href="/wordpress-speed-optimization/">speed optimization</a>.</p>
+<p>CDN setup is often part of a <a href="/wordpress-speed-optimization/">speed optimization</a> project.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Website%20Speed%20on%20Indian%20Mobile%20Networks%3A%20Building%20for%20Real-World%20Conditions%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22What%20Is%20a%20CDN%2C%20and%20Does%20Your%20Business%20Website%20Need%20One%3F%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
@@ -214,7 +205,7 @@
         <div class="section-head reveal"><span class="eyebrow">Services</span><h2>How I can help</h2></div>
         <div class="industries related-grid reveal">
           <a class="industry" href="/wordpress-speed-optimization/"><h3>Speed Optimization</h3><p>Slow WordPress site? I improve loading speed and Core Web Vitals with caching, image optimization, code cleanup and hosting tuning, for better rankings and more conversions..</p><span class="ind-arrow">→</span></a>
-          <a class="industry" href="/website-redesign/"><h3>Website Redesign</h3><p>Outdated, slow or not mobile-friendly? Get your website redesigned on WordPress with a modern look, faster speed and better SEO, without losing your Google rankings..</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/wordpress-migration/"><h3>Migration &amp; Hosting</h3><p>Move your WordPress site to new hosting or a new domain with zero downtime and no lost SEO.</p><span class="ind-arrow">→</span></a>
           <a class="industry" href="/woocommerce-developer/"><h3>Online Stores</h3><p>Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout..</p><span class="ind-arrow">→</span></a>
         </div>
       </div>
@@ -224,9 +215,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/website-speed-indian-mobile-networks/"><span class="work-tag">Speed</span><h3>Website Speed on Indian Mobile Networks: Building for Real-World Conditions</h3><p>Why website speed matters for Indian mobile users on varying networks and budget phones, and practical ways to make your site load fast: page weight, images, fonts, scripts and hosting.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? 9 Common Causes and Fixes</h3><p>Is your WordPress website slow? Learn the 9 most common causes, from heavy images and too many plugins to cheap hosting, and how to fix each one to speed up your site.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
           <a class="post-card" href="/blog/image-optimization-wordpress/"><span class="work-tag">Speed</span><h3>Image Optimization for WordPress: Make Your Pages Load Faster</h3><p>Large images are the top cause of slow WordPress sites. How to resize, compress and serve WebP images, use lazy loading correctly, and write alt text that helps SEO.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
-          <a class="post-card" href="/blog/what-is-a-cdn/"><span class="work-tag">Speed</span><h3>What Is a CDN, and Does Your Business Website Need One?</h3><p>A CDN (content delivery network) explained simply: how it speeds up websites, adds protection, when small businesses benefit, and how to set one up safely with WordPress.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
-          <a class="post-card" href="/blog/core-web-vitals-explained/"><span class="work-tag">Speed</span><h3>Core Web Vitals Explained for Business Owners (LCP, INP, CLS)</h3><p>What are Core Web Vitals, why do they matter for Google and your customers, and how can you improve LCP, INP and CLS on a WordPress website? A plain-English guide.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
         </div>
       </div>
     </section>
