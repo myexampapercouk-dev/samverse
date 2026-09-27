@@ -581,6 +581,10 @@ main, footer, section { max-width: 100vw; }
 .topic-nav a:hover, .topic-nav a[aria-current] { border-color: var(--violet); color: var(--violet); }
 .topic-head h2 a:hover { color: var(--violet); }
 .topic-more { margin-top: 24px; text-align: center; }
+.sector-nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: -16px 0 40px; padding-top: 20px; border-top: 1px solid var(--line); }
+.sector-nav a { font-size: .9rem; font-weight: 600; color: var(--muted); }
+.sector-nav a:hover { color: var(--violet); }
+.sector-nav span { font-weight: 500; color: var(--violet-dark); }
 .topic-nav span { background: var(--violet-soft); color: var(--violet-dark); font-size: .75rem; padding: 2px 8px; border-radius: 999px; }
 .topic-group { scroll-margin-top: 90px; }
 .topic-group + .topic-group { margin-top: 64px; }

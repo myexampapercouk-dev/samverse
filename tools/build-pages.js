@@ -693,10 +693,32 @@ ${topicPosts(t).length > TOPIC_PREVIEW ? `          <p class="topic-more"><a hre
 `;
 };
 
+// The industry hub is long, so it is split into sectors (first matching slug pattern wins)
+const INDUSTRY_SECTORS = [
+  ['Healthcare & wellness', /doctor|dentist|diagnostic|pharmac|hospital|physio|eye-clinic|veterinary|dermatology|ayurveda|fertility|nutrition|psycholog|elder-care|gyms|salons/],
+  ['Hospitality, travel & events', /restaurant|hotel|catering|sweet-shops|wedding-venues|event-wedding|event-rental|hostels|travel|trekking/],
+  ['Property, construction & energy', /real-estate|interior|construction|furniture|hardware|property-management|coworking|solar/],
+  ['Education & training', /school|driving|music-dance|overseas-education|sports-academ|preschool|college/],
+  ['Manufacturing, trade & logistics', /manufactur|industrial|equipment-rental|export|logistics|printing|agriculture|medical-equipment|wholesalers/],
+  ['Professional services', /lawyers|it-software|security-facility|insurance|immigration|recruitment|astrolog|coaches|photographers/],
+  ['Retail & local services', /home-services|cleaning|packers|pest-control|laundry|tailoring|mobile-laptop|car-dealers|ev-dealers|taxi|jewellers/],
+  ['Temples & non-profits', /temple|ngo/],
+];
+const sectorGroups = list => {
+  const groups = INDUSTRY_SECTORS.map(([name]) => ({ name, items: [] }));
+  const other = { name: 'More industries', items: [] };
+  list.forEach(p => { const i = INDUSTRY_SECTORS.findIndex(([, re]) => re.test(p.slug)); (i >= 0 ? groups[i] : other).items.push(p); });
+  return [...groups, other].filter(g => g.items.length).map(g => ({ ...g, id: g.name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-') }));
+};
+
 // Topic hub pages: every article in one group, with a CollectionPage + ItemList for search engines
 const renderTopic = t => {
   const url = `${SITE}${topicHref(t)}`;
   const list = topicPosts(t);
+  const sectors = t.id === 'industries' ? sectorGroups(list) : null;
+  const grid = items => `        <div class="post-grid">
+${items.map(x => '          ' + postCard(x)).join('\n')}
+        </div>`;
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -738,9 +760,13 @@ ${JSON.stringify(schema, null, 2)}
     <section class="section" style="padding-top:10px">
       <div class="container">
 ${topicNav(t)}
-        <div class="post-grid">
-${list.map(x => '          ' + postCard(x)).join('\n')}
-        </div>
+${sectors ? `        <nav class="sector-nav" aria-label="Industries by sector">
+${sectors.map(g => `          <a href="#${g.id}">${esc(g.name)} <span>${g.items.length}</span></a>`).join('\n')}
+        </nav>
+${sectors.map(g => `        <section class="topic-group" id="${g.id}">
+          <div class="topic-head"><h2>${esc(g.name)}</h2></div>
+${grid(g.items)}
+        </section>`).join('\n')}` : grid(list)}
       </div>
     </section>
 
