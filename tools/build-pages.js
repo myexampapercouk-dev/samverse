@@ -95,8 +95,12 @@ ${d.items.map(([h, t], i) => `          <article class="depth-item reveal"><span
 };
 
 // Blog posts that recommend this landing page
+// Up to 8 supporting articles per landing page (topic cluster links): posts that name this page first come first
 const readingFor = p => {
-  const posts = POSTS.filter(x => x.related.includes(p.slug)).slice(0, 3);
+  const posts = POSTS.filter(x => x.related.includes(p.slug))
+    .map((x, i) => ({ x, i, rank: x.related.indexOf(p.slug) }))
+    .sort((a, b) => a.rank - b.rank || a.i - b.i)
+    .slice(0, 8).map(o => o.x);
   if (!posts.length) return "";
   return `    <section class="section reading">
       <div class="container faq-wrap">
