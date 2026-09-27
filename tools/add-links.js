@@ -197,6 +197,13 @@ const LINKS = [
   ['website-for-travel-agencies', '<h2>SEO tips</h2>', '<p>Adventure specialists: see <a href="/blog/website-for-trekking-adventure-operators/">websites for trekking and adventure operators</a>.</p>\n\n'],
   ['website-for-immigration-visa-consultants', '<h2>Consultation booking</h2>', '<p>Study-abroad advisers: see <a href="/blog/website-for-overseas-education-consultants/">websites for overseas education consultants</a>.</p>\n\n'],
   ['website-for-security-facility-management', '<h2>SEO</h2>', '<p>Staffing businesses: see <a href="/blog/website-for-recruitment-agencies/">websites for recruitment agencies</a>.</p>\n\n'],
+  // Round 23
+  ['website-for-event-wedding-planners', '<h2>Build trust</h2>', '<p>Equipment suppliers: see <a href="/blog/website-for-event-rental-businesses/">websites for event rental businesses</a>.</p>\n\n'],
+  ['website-for-music-dance-academies', '<h2>Keep it updated</h2>', '<p>Sports coaching has similar needs; see <a href="/blog/website-for-sports-academies/">websites for sports academies</a>.</p>\n\n'],
+  ['school-coaching-website-what-parents-look-for', '<h2>Get found by local families</h2>', '<p>For early years, see <a href="/blog/website-for-preschools-daycare/">websites for preschools and daycare centres</a>.</p>\n\n'],
+  ['website-for-fashion-boutiques', '<h2>Store essentials</h2>', '<p>Offering stitching too? See <a href="/blog/website-for-tailoring-services/">websites for tailoring services</a>.</p>\n\n'],
+  ['directory-website-wordpress', '<h2>Content quality matters most</h2>', '<p>Running a content-heavy publication instead? See <a href="/blog/news-magazine-websites-wordpress/">news and magazine websites on WordPress</a>.</p>\n\n'],
+  ['landing-page-vs-website', '<h2>Why landing pages usually convert ad traffic better</h2>', '<p>Deciding how big your main site should be? See <a href="/blog/one-page-vs-multi-page-website/">one-page vs multi-page websites</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
