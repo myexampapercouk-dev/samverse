@@ -118,6 +118,8 @@ module.exports = [
 <p><strong>Pros:</strong> very easy to start, hosting included, lots of templates.</p>
 <p><strong>Cons:</strong> you can't move your site off Wix; monthly fees continue forever; fewer options as your business grows; and less control over speed and advanced SEO.</p>
 
+<p>Also considering Webflow? See <a href="/blog/wordpress-vs-webflow/">WordPress vs Webflow</a>.</p>
+
 <h2>Shopify: built for selling online</h2>
 <p>Shopify is a strong, hosted e-commerce platform. It's quick to set up a store and handles hosting and security for you.</p>
 <p><strong>Pros:</strong> excellent for stores, reliable checkout, large app ecosystem.</p>
@@ -622,6 +624,8 @@ module.exports = [
 
 <h2>Step 5: Get listed in trusted directories</h2>
 <p>Listings on reputable directories (called citations) help Google trust your business details. Start with Justdial, Sulekha, IndiaMART (for B2B), Bing Places, Apple Maps and relevant industry directories.</p>
+
+<p>Serving several cities? Read <a href="/blog/local-landing-pages-without-doorway-pages/">how to create location pages without doorway pages</a>.</p>
 
 <h2>Step 6: Earn local links and mentions</h2>
 <p>Mentions from local news sites, associations, suppliers, partners and event sponsorships all signal that you're an established local business.</p>
@@ -1493,6 +1497,8 @@ module.exports = [
   <li>Only use claims and numbers you can back up.</li>
   <li>Add a call to action after every major section.</li>
 </ul>
+
+<p>Avoid these <a href="/blog/website-copywriting-mistakes/">common copywriting mistakes</a>.</p>
 
 <h2>SEO basics for your content</h2>
 <ul>
@@ -2395,6 +2401,8 @@ module.exports = [
 <h2>You need both</h2>
 <p>A website builds credibility and long-term search traffic; landing pages turn paid clicks into leads. Many prospects will visit your main site to check you out after seeing a landing page, so keep both consistent in branding and messaging.</p>
 
+<p>Before launching ads, run through the <a href="/blog/website-ready-for-google-ads/">Google Ads readiness checklist</a>.</p>
+
 <h2>What makes a landing page work</h2>
 <ol>
   <li>Headline that matches the ad</li>
@@ -2859,6 +2867,8 @@ module.exports = [
   <li>Cash on Delivery enabled or disabled deliberately, with any limits you need</li>
 </ol>
 <p>More detail in <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a>.</p>
+
+<p>More detail: <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 
 <h2>Shipping and taxes</h2>
 <ol start="12">
@@ -4020,6 +4030,8 @@ module.exports = [
   <li><strong>Mobile-first layout:</strong> price, options and a sticky "Add to cart" button visible without hunting.</li>
   <li><strong>Help when needed:</strong> a WhatsApp button for quick questions about size, usage or delivery. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</li>
 </ol>
+
+<p>Losing buyers at checkout? See <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</p>
 
 <h2>Don't forget speed</h2>
 <p>Slow product pages lose sales, especially on mobile data. Optimize images, limit heavy plugins and use good hosting; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
@@ -5551,6 +5563,314 @@ module.exports = [
 </ul>
 
 <p>For a professional, trustworthy site, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-vs-webflow',
+    title: 'WordPress vs Webflow: Which Is Better for Your Business Website?',
+    description: 'An honest comparison of WordPress and Webflow for business websites: design freedom, editing, cost, e-commerce, plugins, SEO, ownership and which to choose for your needs.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'figma-to-wordpress', 'wordpress-migration'],
+    body: `
+<p>Webflow has become popular with designers for its visual control and clean output. WordPress remains the most widely used website platform. Both can produce excellent sites. Here's how they compare for a typical business.</p>
+
+<h2>Quick comparison</h2>
+<table>
+  <thead><tr><th></th><th>WordPress</th><th>Webflow</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Hosting</strong></td><td>Any host you choose</td><td>Hosted by Webflow</td></tr>
+    <tr><td><strong>Ownership</strong></td><td>Full; move anytime</td><td>Tied to Webflow hosting</td></tr>
+    <tr><td><strong>Costs</strong></td><td>Hosting + optional licences</td><td>Site plan subscription, plus workspace plans for teams</td></tr>
+    <tr><td><strong>Design control</strong></td><td>High with Elementor or custom themes</td><td>Very high, designer-focused</td></tr>
+    <tr><td><strong>Editing for clients</strong></td><td>Easy with Elementor or blocks</td><td>Easy with the Editor for content</td></tr>
+    <tr><td><strong>Plugins / integrations</strong></td><td>Tens of thousands of plugins</td><td>Smaller app ecosystem</td></tr>
+    <tr><td><strong>E-commerce</strong></td><td>WooCommerce, very flexible</td><td>Built-in, simpler, with plan limits</td></tr>
+    <tr><td><strong>Developers available</strong></td><td>Very large pool</td><td>Smaller, specialised pool</td></tr>
+  </tbody>
+</table>
+
+<h2>Choose WordPress if...</h2>
+<ul>
+  <li>You want full ownership and freedom to choose hosting</li>
+  <li>You need specific features: bookings, memberships, multilingual, complex stores, Indian payment gateways</li>
+  <li>You publish a lot of content or run a blog</li>
+  <li>You want the widest choice of developers and lower long-term platform costs</li>
+</ul>
+
+<h2>Choose Webflow if...</h2>
+<ul>
+  <li>Your site is design-led and relatively simple in features</li>
+  <li>Your team is comfortable with Webflow and wants hosting fully managed</li>
+  <li>You're happy with its subscription model and app ecosystem</li>
+</ul>
+
+<h2>SEO and performance</h2>
+<p>Both platforms can rank well. What matters is the content, structure, speed and technical setup. A well-built WordPress site with a lightweight theme and caching performs excellently; see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>Designers: you can have both</h2>
+<p>If you love designing in Figma, you don't need Webflow to get pixel-accurate results. Figma designs can be built precisely in WordPress with Elementor; see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+
+<h2>The practical answer</h2>
+<p>For most Indian businesses, especially those needing stores, integrations or lots of content, WordPress offers more flexibility and lower long-term costs. For simple, design-led sites with a Webflow-savvy team, Webflow is a good option. Compare with other platforms in <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a>.</p>
+`,
+  },
+  {
+    slug: 'website-ready-for-google-ads',
+    seoTitle: 'Is Your Website Ready for Google Ads? Checklist',
+    title: 'Is Your Website Ready for Google Ads? A Pre-Launch Checklist',
+    description: 'Before spending on Google Ads, check your website is ready: landing pages, speed, conversion tracking, calls to action, trust signals, forms and policy pages, so clicks become leads.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-speed-optimization', 'wordpress-seo-services'],
+    body: `
+<p>Google Ads can bring customers to your website within hours, but you pay for every click whether it turns into a lead or not. If your website isn't ready, you'll burn budget. Run through this checklist before launching campaigns.</p>
+
+<h2>1. A relevant landing page for each campaign</h2>
+<p>Send each ad group to the most relevant page, ideally a dedicated landing page whose headline matches the search and the ad. See <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</p>
+
+<h2>2. Fast on mobile</h2>
+<p>Most ad clicks come from phones. Test your landing pages on PageSpeed Insights and fix slow images and scripts. Slow pages hurt conversions and can affect ad quality.</p>
+
+<h2>3. Conversion tracking working</h2>
+<ul>
+  <li>Form submissions tracked (thank-you page or form event)</li>
+  <li>Calls and WhatsApp clicks tracked</li>
+  <li>GA4 key events imported or Google Ads conversion tags set up</li>
+  <li>Test each conversion yourself before launch</li>
+</ul>
+<p>Without tracking, you can't tell which keywords make money. See <a href="/blog/setup-google-analytics-search-console/">setting up GA4</a>.</p>
+
+<h2>4. A clear call to action</h2>
+<p>One primary action (call, WhatsApp, form or booking), visible without scrolling and repeated down the page.</p>
+
+<h2>5. Forms that work and are short</h2>
+<p>Test that submissions arrive in your inbox, and ask only for essential details. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+
+<h2>6. Trust signals</h2>
+<p>Reviews, testimonials, client logos, certifications and real photos near the call to action.</p>
+
+<h2>7. Policy and contact information</h2>
+<p>A privacy policy, clear business contact details and accurate information support trust and advertising policy compliance.</p>
+
+<h2>8. Someone ready to respond</h2>
+<p>Leads from ads go cold fast. Make sure calls and WhatsApp messages are answered promptly during your ad schedule.</p>
+
+<h2>9. A sensible budget and scope</h2>
+<p>Start with your most profitable services and locations, tightly targeted, rather than everything at once.</p>
+
+<h2>10. A plan to review and improve</h2>
+<p>Check search terms, conversions and cost per lead weekly. Improve landing pages based on what converts. Avoid the <a href="/blog/landing-page-mistakes-google-ads/">common landing page mistakes</a>.</p>
+
+<p>Need campaign-ready pages? See <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'website-copywriting-mistakes',
+    seoTitle: 'Website Copywriting Mistakes Small Businesses Make',
+    title: '10 Website Copywriting Mistakes Small Businesses Make (and Fixes)',
+    description: 'Common website copywriting mistakes that cost enquiries, from vague headlines and jargon to talking about yourself and weak calls to action, with simple before-and-after fixes.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['website-redesign', 'landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>Design gets attention, but words make the sale. Many business websites look good yet struggle to convert because the copy is vague, self-focused or confusing. Here are 10 common mistakes and how to fix them.</p>
+
+<h2>1. Vague headlines</h2>
+<p><strong>Mistake:</strong> "Innovative solutions for your success."<br><strong>Fix:</strong> Say what you do and for whom: "Fast WordPress websites for clinics and consultants."</p>
+
+<h2>2. Talking about yourself instead of the customer</h2>
+<p><strong>Mistake:</strong> "We are a leading company with a dedicated team..."<br><strong>Fix:</strong> Lead with the customer's problem and outcome, then explain how you deliver it.</p>
+
+<h2>3. Jargon and buzzwords</h2>
+<p>"Synergy", "end-to-end", "holistic" and technical terms your customers don't use. Write in the words your customers use when they describe their problem.</p>
+
+<h2>4. Features without benefits</h2>
+<p><strong>Mistake:</strong> "Responsive design with caching."<br><strong>Fix:</strong> "Loads fast on any phone, so visitors don't leave before they see your offer."</p>
+
+<h2>5. Unsupported claims</h2>
+<p>"Best in the industry" means nothing without proof. Replace superlatives with specifics: years of experience, examples, client quotes and case studies.</p>
+
+<h2>6. Walls of text</h2>
+<p>Break copy into short paragraphs, descriptive headings and bullet points. Most visitors scan before they read.</p>
+
+<h2>7. No clear next step</h2>
+<p>Every page should end with one obvious action: "Get a free quote", "Book a call", "Chat on WhatsApp".</p>
+
+<h2>8. Ignoring objections</h2>
+<p>Price, timelines, process and trust are on every buyer's mind. Answer them with FAQs, clear process steps and guarantees you can honour.</p>
+
+<h2>9. Copying competitors</h2>
+<p>If your copy could be pasted onto a competitor's site unchanged, it's not doing its job. Highlight what's genuinely different about you.</p>
+
+<h2>10. Writing for search engines instead of people</h2>
+<p>Keyword-stuffed text reads badly and converts poorly. Write naturally for your customers, and use keywords where they fit. See the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>.</p>
+
+<h2>Quick self-check</h2>
+<ol>
+  <li>Can a stranger tell what you do in five seconds?</li>
+  <li>Does each page answer "what's in it for me?"</li>
+  <li>Is there proof behind your claims?</li>
+  <li>Is the next step obvious?</li>
+</ol>
+
+<p>For structures that work, see <a href="/blog/write-service-pages-that-convert/">writing service pages that convert</a> and <a href="/blog/write-about-page-that-builds-trust/">writing an About page</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-abandoned-cart-recovery',
+    seoTitle: 'WooCommerce Abandoned Cart Recovery: What Works',
+    title: 'WooCommerce Abandoned Cart Recovery: Why Shoppers Leave and How to Win Them Back',
+    description: 'Why shoppers abandon carts on WooCommerce stores, how to fix checkout friction, and how to recover lost sales with reminder emails or WhatsApp messages, with consent.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-speed-optimization', 'landing-page-design'],
+    body: `
+<p>Many shoppers add products to their cart and leave without buying. Some were just browsing, but many leave because of fixable problems. Reducing abandonment, and recovering some of those carts, is one of the quickest ways to grow an online store's sales.</p>
+
+<h2>Why shoppers abandon carts</h2>
+<ul>
+  <li>Unexpected costs at checkout: shipping, taxes, COD charges</li>
+  <li>Having to create an account</li>
+  <li>Long or confusing checkout forms</li>
+  <li>Slow pages or errors on mobile</li>
+  <li>Preferred payment method not available</li>
+  <li>Concerns about delivery time, returns or trust</li>
+</ul>
+
+<h2>Fix the checkout first</h2>
+<ol>
+  <li><strong>Show total costs early:</strong> shipping and taxes on product and cart pages</li>
+  <li><strong>Allow guest checkout</strong></li>
+  <li><strong>Remove unnecessary fields</strong> from the checkout form</li>
+  <li><strong>Offer the payment methods your customers use:</strong> UPI, cards, net banking, wallets and COD where appropriate. See <a href="/blog/accept-online-payments-wordpress-india/">online payments on WordPress</a>.</li>
+  <li><strong>Make it fast and mobile-friendly.</strong> Test the whole checkout on a phone.</li>
+  <li><strong>Show trust signals:</strong> secure payment badges, return policy, delivery times and support contact</li>
+</ol>
+
+<h2>Recover abandoned carts</h2>
+<p>Abandoned cart plugins can capture email or phone numbers entered during checkout and send reminders:</p>
+<ul>
+  <li><strong>First reminder</strong> within an hour or so: a friendly nudge with a link back to the cart</li>
+  <li><strong>Second reminder</strong> after a day: answer common doubts (delivery, returns)</li>
+  <li><strong>Optional incentive</strong> in a final reminder, used carefully so customers don't learn to wait for discounts</li>
+</ul>
+<p><strong>Consent and privacy matter:</strong> tell customers how their details are used, follow the messaging platform's rules (especially for WhatsApp), and make opting out easy.</p>
+
+<h2>Measure it</h2>
+<ul>
+  <li>Track checkout starts vs completed orders in analytics</li>
+  <li>Monitor recovered carts from reminders</li>
+  <li>Test one checkout change at a time</li>
+</ul>
+
+<h2>Related guides</h2>
+<p>See the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> and <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a>. For help with your store, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-shipping-setup-india',
+    seoTitle: 'WooCommerce Shipping Setup for India',
+    title: 'WooCommerce Shipping Setup for India: Zones, Rates and Couriers',
+    description: 'How to set up WooCommerce shipping for Indian stores: shipping zones, flat and weight-based rates, free shipping thresholds, COD, courier aggregators, tracking and delivery expectations.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development', 'wordpress-maintenance'],
+    body: `
+<p>Shipping is where many Indian online stores lose money or customers: either charging too little and absorbing costs, or charging too much and losing sales. Here's how to set up WooCommerce shipping sensibly.</p>
+
+<h2>1. Plan your shipping zones</h2>
+<p>WooCommerce shipping zones let you set different rates by region, for example:</p>
+<ul>
+  <li>Your city (local delivery or pickup)</li>
+  <li>Your state</li>
+  <li>Rest of India</li>
+  <li>Specific remote regions, if courier costs differ</li>
+  <li>International (if you ship abroad)</li>
+</ul>
+
+<h2>2. Choose a rate method</h2>
+<ul>
+  <li><strong>Flat rate:</strong> simple and predictable for similar-sized products</li>
+  <li><strong>Weight-based:</strong> better for products that vary widely in weight (oils, flours, heavy items)</li>
+  <li><strong>Free shipping above a threshold:</strong> encourages larger orders; set the threshold so margins still work</li>
+  <li><strong>Local pickup</strong> for nearby customers</li>
+</ul>
+<p>Always set accurate product weights and dimensions so calculations are correct.</p>
+
+<h2>3. Cash on Delivery</h2>
+<p>COD is still popular in India but carries return-to-origin risk. Options include limiting COD to certain zones or order values, adding a COD fee (shown clearly), or confirming COD orders by phone or WhatsApp.</p>
+
+<h2>4. Couriers and aggregators</h2>
+<p>Shipping aggregators integrate with WooCommerce to compare courier rates, generate labels, schedule pickups and push tracking. Direct courier accounts can suit higher volumes. Compare pricing, coverage, COD remittance timelines and support before choosing.</p>
+
+<h2>5. Tracking and notifications</h2>
+<ul>
+  <li>Add tracking numbers to orders and send them automatically</li>
+  <li>Send shipped and delivered updates by email and, with consent, WhatsApp</li>
+  <li>Show estimated delivery times on product and checkout pages</li>
+</ul>
+
+<h2>6. Packaging</h2>
+<p>Choose packaging that protects products and suits courier volumetric weight rules. Oversized boxes increase costs.</p>
+
+<h2>7. Be transparent</h2>
+<ul>
+  <li>Publish a clear shipping policy: zones, charges, timelines and COD rules</li>
+  <li>Show shipping costs before checkout to reduce abandoned carts. See <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</li>
+</ul>
+
+<h2>Test before launch</h2>
+<p>Place test orders for different zones, weights and payment methods, and confirm the charges are right. It's part of the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a>. Need it set up for you? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'local-landing-pages-without-doorway-pages',
+    seoTitle: 'Local Landing Pages Done Right (No Doorway Pages)',
+    title: 'Local Landing Pages Done Right, and How to Avoid Doorway Pages',
+    description: 'How to create location pages that genuinely help local customers and rank, without making doorway pages Google penalises: when to create them and what unique content they need.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design', 'website-for-solar-and-power-companies'],
+    body: `
+<p>Businesses serving several cities often want a page for each location, such as "plumber in Noida" and "plumber in Gurgaon". Done well, location pages help customers and rank locally. Done badly, they're "doorway pages": near-identical pages with the city name swapped, which Google treats as spam.</p>
+
+<h2>What doorway pages look like</h2>
+<ul>
+  <li>Dozens of pages with the same text and only the city name changed</li>
+  <li>Pages for places you don't actually serve</li>
+  <li>Pages that exist only to rank and funnel visitors elsewhere</li>
+</ul>
+<p>These can hurt your whole site's standing in search.</p>
+
+<h2>When a location page makes sense</h2>
+<ul>
+  <li>You have a <strong>physical branch or office</strong> there</li>
+  <li>You <strong>genuinely serve</strong> the area and have real local experience: projects, clients, reviews</li>
+  <li>You have <strong>something specific</strong> to say about that location</li>
+</ul>
+
+<h2>What makes a location page genuinely useful</h2>
+<ol>
+  <li><strong>Local details:</strong> branch address, map, hours, local phone and team</li>
+  <li><strong>Local proof:</strong> projects completed in that area, photos, testimonials from local clients</li>
+  <li><strong>Local specifics:</strong> areas covered, typical travel times, local regulations or conditions relevant to your service</li>
+  <li><strong>Unique content:</strong> written for that location, not a template with the name swapped</li>
+  <li><strong>Clear call to action</strong> with local contact options</li>
+</ol>
+
+<h2>Alternatives if you don't have local specifics</h2>
+<ul>
+  <li>One strong service page that lists the areas you serve</li>
+  <li>A Google Business Profile with service areas set</li>
+  <li>Location-focused articles only where you have real insight (for example "Solar subsidy process in Rajasthan")</li>
+</ul>
+
+<h2>Supporting local rankings</h2>
+<p>Location pages work best alongside a complete Google Business Profile, consistent contact details and genuine reviews. See the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> and <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+
+<h2>The rule of thumb</h2>
+<p>If a location page would still be useful to a customer in that city even if search engines didn't exist, it's probably fine. If it only exists to catch searches, don't build it. Unsure? A <a href="/wordpress-seo-services/">WordPress SEO</a> review can help plan location pages safely.</p>
 `,
   },
 ];

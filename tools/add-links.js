@@ -102,6 +102,13 @@ const LINKS = [
   ['equipment-rental-website-guide', '<h2>Build trust</h2>', '<p>Vehicle-based businesses have their own needs; see <a href="/blog/website-for-car-dealers-workshops/">websites for car dealers and workshops</a>.</p>\n\n'],
   ['industrial-website-product-catalogue', '<h2>Filters and search</h2>', '<p>Packaging suppliers use the same approach; see <a href="/blog/website-for-printing-packaging-companies/">websites for printing and packaging companies</a>.</p>\n\n'],
   ['website-for-logistics-transport-companies', '<h2>Make it fast to enquire</h2>', '<p>Similar B2B service providers: <a href="/blog/website-for-security-facility-management/">security and facility management companies</a>.</p>\n\n'],
+  // Round 8
+  ['wordpress-vs-wix-vs-shopify', '<h2>Shopify: built for selling online</h2>', '<p>Also considering Webflow? See <a href="/blog/wordpress-vs-webflow/">WordPress vs Webflow</a>.</p>\n\n'],
+  ['landing-page-vs-website', '<h2>What makes a landing page work</h2>', '<p>Before launching ads, run through the <a href="/blog/website-ready-for-google-ads/">Google Ads readiness checklist</a>.</p>\n\n'],
+  ['how-to-write-website-content', '<h2>SEO basics for your content</h2>', '<p>Avoid these <a href="/blog/website-copywriting-mistakes/">common copywriting mistakes</a>.</p>\n\n'],
+  ['woocommerce-store-launch-checklist', '<h2>Shipping and taxes</h2>', '<p>More detail: <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>\n\n'],
+  ['woocommerce-product-page-optimization', '<h2>Don\'t forget speed</h2>', '<p>Losing buyers at checkout? See <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</p>\n\n'],
+  ['local-seo-guide-small-business-india', '<h2>Step 6: Earn local links and mentions</h2>', '<p>Serving several cities? Read <a href="/blog/local-landing-pages-without-doorway-pages/">how to create location pages without doorway pages</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
