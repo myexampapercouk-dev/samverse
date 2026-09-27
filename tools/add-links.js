@@ -245,6 +245,13 @@ const LINKS = [
   ['website-for-hospitals', '<h2>SEO</h2>', '<p>Offering home care after discharge? See <a href="/blog/website-for-elder-care-home-nursing/">websites for elder care and home nursing</a>.</p>\n\n'],
   ['website-for-bakeries-cake-shops', '<h2>Local SEO</h2>', '<p>Selling mithai too? See <a href="/blog/website-for-sweet-shops-mithai/">websites for sweet shops</a>.</p>\n\n'],
   ['whatsapp-on-business-website', '<h2>Where it works especially well</h2>', '<p>Wondering about chatbots instead? Read <a href="/blog/website-chatbot-worth-it/">do you need a chatbot?</a></p>\n\n'],
+  // Round 30
+  ['on-page-seo-checklist', '<h2>Plan the page</h2>', '<p>Before you optimise, choose the right target: see <a href="/blog/keyword-research-small-business/">keyword research</a> and <a href="/blog/search-intent-explained/">search intent</a>.</p>\n\n'],
+  ['how-long-does-seo-take', '<h2>What speeds SEO up</h2>', '<p>Start with realistic targets: <a href="/blog/search-intent-explained/">match search intent</a> and pick specific keywords.</p>\n\n'],
+  ['website-traffic-dropped', '<h2>Step 6: Is it seasonal or market-wide?</h2>', '<p>More detail: <a href="/blog/google-algorithm-updates-small-business/">what to do after a Google update</a>.</p>\n\n'],
+  ['add-blog-to-existing-website', '<h2>Plan content you can sustain</h2>', '<p>Step-by-step: <a href="/blog/write-blog-posts-that-rank/">how to write blog posts that rank</a>.</p>\n\n'],
+  ['website-content-calendar', '<h2>Measure</h2>', '<p>Detailed process: <a href="/blog/update-old-blog-posts/">how to update old blog posts</a>.</p>\n\n'],
+  ['internal-linking-explained', '<h2>How this site does it</h2>', '<p>Take it further with <a href="/blog/topic-clusters-pillar-pages/">topic clusters and pillar pages</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

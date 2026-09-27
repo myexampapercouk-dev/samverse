@@ -3391,6 +3391,8 @@ module.exports = [
     body: `
 <p>Every new page is a chance to rank for something. On-page SEO means making each page as clear and useful as possible for both visitors and search engines. Run through this checklist before publishing any service page, product page or article.</p>
 
+<p>Before you optimise, choose the right target: see <a href="/blog/keyword-research-small-business/">keyword research</a> and <a href="/blog/search-intent-explained/">search intent</a>.</p>
+
 <h2>Plan the page</h2>
 <ol>
   <li><strong>One main topic and search intent.</strong> Decide what the searcher wants: information, a comparison, a service, a product. Match the page to that intent.</li>
@@ -3611,6 +3613,8 @@ module.exports = [
 
 <h2>Step 5: Was there a Google update?</h2>
 <p>Google regularly updates its ranking systems. If your drop coincides with a confirmed update, compare the pages that lost traffic with those that rank now. Usually the fix is improving content quality, usefulness and trust signals, not quick technical tricks.</p>
+
+<p>More detail: <a href="/blog/google-algorithm-updates-small-business/">what to do after a Google update</a>.</p>
 
 <h2>Step 6: Is it seasonal or market-wide?</h2>
 <ul>
@@ -4369,6 +4373,8 @@ module.exports = [
   <li>Link from the new page to the relevant service page</li>
   <li>Check for broken links monthly</li>
 </ol>
+
+<p>Take it further with <a href="/blog/topic-clusters-pillar-pages/">topic clusters and pillar pages</a>.</p>
 
 <h2>How this site does it</h2>
 <p>Every service page links to related services and articles, every article links to its service page and related articles, and the homepage links to all services. It's part of the build described in the <a href="/work/samverse/">Samverse case study</a>. For the wider checklist, see the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>.</p>
@@ -8503,6 +8509,8 @@ module.exports = [
 <h2>Step 6: Refresh old content</h2>
 <p>Every quarter, update your best-performing and outdated articles: new information, better examples, fresh internal links and updated dates. Refreshing often delivers more than publishing new posts.</p>
 
+<p>Detailed process: <a href="/blog/update-old-blog-posts/">how to update old blog posts</a>.</p>
+
 <h2>Measure</h2>
 <p>Track which articles bring traffic, enquiries and links, and write more like them. See <a href="/blog/website-analytics-metrics-that-matter/">analytics metrics that matter</a>.</p>
 `,
@@ -9176,6 +9184,8 @@ module.exports = [
   </tbody>
 </table>
 <p>These are general patterns, not promises. Anyone guaranteeing specific rankings by a date is a red flag; see <a href="/blog/seo-red-flags-scams/">SEO red flags</a>.</p>
+
+<p>Start with realistic targets: <a href="/blog/search-intent-explained/">match search intent</a> and pick specific keywords.</p>
 
 <h2>What speeds SEO up</h2>
 <ul>
@@ -11021,6 +11031,8 @@ module.exports = [
 <h2>Connect posts to services</h2>
 <p>Every article should link to the relevant service page, and service pages should link to helpful articles; see <a href="/blog/internal-linking-explained/">internal linking</a>.</p>
 
+<p>Step-by-step: <a href="/blog/write-blog-posts-that-rank/">how to write blog posts that rank</a>.</p>
+
 <h2>Plan content you can sustain</h2>
 <p>Start with 5–10 articles answering the most common customer questions, then publish consistently; see <a href="/blog/website-content-calendar/">content calendars</a>.</p>
 
@@ -12713,6 +12725,348 @@ module.exports = [
 <p>Track chats started and enquiries from chat, and check your page speed before and after adding it; see <a href="/blog/why-is-my-wordpress-site-slow/">why your site is slow</a>. Keep it only if it brings more business than it costs.</p>
 
 <p>For using AI responsibly on your website, see <a href="/blog/ai-tools-website-content-responsibly/">using AI tools responsibly</a>.</p>
+`,
+  },
+  {
+    slug: 'keyword-research-small-business',
+    seoTitle: 'Keyword Research for Small Businesses: A Simple Guide',
+    title: 'Keyword Research for Small Businesses: Find What Customers Actually Search',
+    description: 'A practical keyword research process for small businesses using free tools: Google autocomplete, People Also Ask, Search Console, Keyword Planner and competitors, plus how to map keywords to pages.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-for-startups', 'landing-page-design'],
+    body: `
+<p>Keyword research simply means finding the words your customers type into Google, then making sure your website has the right page for each of them. You don't need expensive tools to start. A few free tools and an understanding of your customers go a long way.</p>
+
+<h2>Start with your customers, not tools</h2>
+<p>Write down how customers describe what they need, in their words, not your industry jargon. Think about:</p>
+<ul>
+  <li>Your services and products</li>
+  <li>Problems customers have before they find you</li>
+  <li>Questions they ask on calls and WhatsApp</li>
+  <li>Locations you serve</li>
+</ul>
+<p>A customer might search "AC not cooling repair" rather than "HVAC maintenance services".</p>
+
+<h2>Free tools to expand your list</h2>
+<ul>
+  <li><strong>Google autocomplete:</strong> type your main term and note the suggestions</li>
+  <li><strong>People Also Ask and related searches</strong> in Google results</li>
+  <li><strong>Google Search Console:</strong> the Performance report shows queries you already appear for; see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a></li>
+  <li><strong>Google Keyword Planner:</strong> free with a Google Ads account; shows approximate search volume ranges</li>
+  <li><strong>Google Trends:</strong> compares interest over time and by region, useful for seasonal businesses</li>
+</ul>
+<p>Paid tools like Ahrefs or Semrush add competitor data and difficulty scores, but aren't essential for a small local business.</p>
+
+<h2>Look at what competitors rank for</h2>
+<p>Search your main terms and study the pages that rank: what topics do they cover, and what pages do they have that you don't?</p>
+
+<h2>Understand search intent</h2>
+<p>Each keyword signals what the searcher wants: information, a comparison or a provider to hire. The type of page you create must match; see <a href="/blog/search-intent-explained/">search intent explained</a>.</p>
+
+<h2>Prioritise</h2>
+<p>For small businesses, prioritise keywords that are:</p>
+<ul>
+  <li><strong>Commercial:</strong> "{service} in {city}", "{service} cost", "best {product} for {use}"</li>
+  <li><strong>Specific:</strong> longer phrases usually have less competition and clearer intent</li>
+  <li><strong>Relevant:</strong> they lead to services you actually want to sell</li>
+</ul>
+<p>Don't chase huge generic terms with low buying intent. A small number of highly relevant searches can bring more enquiries than thousands of casual visitors.</p>
+
+<h2>Map keywords to pages</h2>
+<table>
+  <thead><tr><th>Keyword group</th><th>Page</th></tr></thead>
+  <tbody>
+    <tr><td>Main service + city</td><td>Service page</td></tr>
+    <tr><td>Cost and pricing questions</td><td>Pricing guide or service page section</td></tr>
+    <tr><td>How-to and problem questions</td><td>Blog articles</td></tr>
+    <tr><td>Comparisons</td><td>Comparison articles</td></tr>
+  </tbody>
+</table>
+<p>One main keyword group per page avoids pages competing with each other.</p>
+
+<h2>Use keywords naturally</h2>
+<p>Put the main phrase in the title, H1, URL and early in the text, then write naturally for people. See the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>.</p>
+
+<h2>Review regularly</h2>
+<p>Every few months, check Search Console for new queries you're appearing for and create or improve pages to match.</p>
+`,
+  },
+  {
+    slug: 'search-intent-explained',
+    seoTitle: 'Search Intent Explained: Match Pages to What People Want',
+    title: 'Search Intent Explained: Why the Right Page Type Matters for Rankings',
+    description: 'What search intent is (informational, navigational, commercial and transactional, plus local intent), how to identify it from Google results and how to build pages that match it.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>Two people can type similar words into Google but want very different things. Search intent is the goal behind a search. If your page doesn't match that goal, it's unlikely to rank well, however well written it is.</p>
+
+<h2>The main types of intent</h2>
+<table>
+  <thead><tr><th>Intent</th><th>What they want</th><th>Example</th><th>Best page type</th></tr></thead>
+  <tbody>
+    <tr><td>Informational</td><td>To learn or solve a problem</td><td>"why is my website slow"</td><td>Guide or article</td></tr>
+    <tr><td>Navigational</td><td>A specific website or brand</td><td>"samverse contact"</td><td>Homepage or contact page</td></tr>
+    <tr><td>Commercial</td><td>To compare options before buying</td><td>"wordpress vs wix"</td><td>Comparison or review</td></tr>
+    <tr><td>Transactional</td><td>To buy or hire now</td><td>"hire wordpress developer"</td><td>Service or product page</td></tr>
+  </tbody>
+</table>
+
+<h2>Local intent</h2>
+<p>Searches like "dentist near me" or "CA in Noida" show local intent. Google usually shows a map with Business Profiles, plus local service pages. You need both a strong <a href="/blog/google-business-profile-checklist/">Google Business Profile</a> and relevant local pages.</p>
+
+<h2>How to identify intent</h2>
+<p>The simplest way is to search the keyword yourself and look at what ranks:</p>
+<ul>
+  <li>Mostly articles and guides? Informational</li>
+  <li>Service pages and company homepages? Transactional</li>
+  <li>"Best" lists and comparisons? Commercial</li>
+  <li>A map pack at the top? Local intent</li>
+  <li>Videos, images or shopping results? Google thinks those formats help</li>
+</ul>
+<p>Google has already tested what satisfies searchers, so the results show you what works.</p>
+
+<h2>Common intent mistakes</h2>
+<ul>
+  <li>Trying to rank a sales page for a "how to" search</li>
+  <li>Writing a long blog post for a "hire {service} in {city}" search, when a service page is needed</li>
+  <li>One page trying to serve every intent at once</li>
+</ul>
+
+<h2>Match intent, then exceed it</h2>
+<p>Once your page type matches, make it the most helpful result: answer the question fully, add examples, real experience and clear next steps.</p>
+
+<h2>Connect intents with internal links</h2>
+<p>Informational articles can link to related service pages for readers ready to take the next step, and service pages can link to guides for people still researching. See <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
+
+<p>Use intent when you do <a href="/blog/keyword-research-small-business/">keyword research</a> to decide which page each keyword belongs to.</p>
+`,
+  },
+  {
+    slug: 'topic-clusters-pillar-pages',
+    seoTitle: 'Topic Clusters & Pillar Pages Explained for Small Businesses',
+    title: 'Topic Clusters and Pillar Pages: Organise Your Content to Rank',
+    description: 'How topic clusters work: a pillar page (often a service page) supported by related articles linked together, why it helps SEO and users, and how to plan clusters for a small business site.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development', 'website-redesign'],
+    body: `
+<p>Publishing random blog posts rarely builds rankings. Organising content into topic clusters, where related pages support and link to each other, shows search engines and visitors that your site covers a subject in depth.</p>
+
+<h2>What a topic cluster is</h2>
+<ul>
+  <li><strong>Pillar page:</strong> a broad, central page on a topic. For businesses, this is often a service page</li>
+  <li><strong>Cluster content:</strong> articles covering specific questions and subtopics in detail</li>
+  <li><strong>Links:</strong> cluster articles link to the pillar, and the pillar links to the articles</li>
+</ul>
+
+<h2>An example</h2>
+<p>On this site, the <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service page acts as a pillar. Supporting articles such as <a href="/blog/why-is-my-wordpress-site-slow/">why your site is slow</a>, <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> and <a href="/blog/wordpress-caching-explained/">caching explained</a> link back to it and to each other.</p>
+
+<h2>Why clusters help</h2>
+<ul>
+  <li><strong>Topical depth:</strong> covering a subject thoroughly builds relevance</li>
+  <li><strong>Internal links:</strong> pass authority to your most important pages</li>
+  <li><strong>Better user journeys:</strong> readers find related answers easily and move towards enquiring</li>
+  <li><strong>Less overlap:</strong> each page has a clear, distinct job</li>
+</ul>
+
+<h2>How to plan clusters</h2>
+<ol>
+  <li><strong>Pick pillars:</strong> your main services or product categories</li>
+  <li><strong>List questions:</strong> what customers ask before buying each service; see <a href="/blog/keyword-research-small-business/">keyword research</a></li>
+  <li><strong>Group them:</strong> each question becomes an article, or a section of the pillar if it's short</li>
+  <li><strong>Link deliberately:</strong> every article links to its pillar with descriptive anchor text</li>
+  <li><strong>Fill gaps over time</strong> with a content calendar; see <a href="/blog/website-content-calendar/">content calendar</a></li>
+</ol>
+
+<h2>Avoid cannibalisation</h2>
+<p>If two pages target the same keyword, they compete with each other. Give each page a distinct focus, and merge or redirect overlapping content.</p>
+
+<h2>Show clusters in your navigation</h2>
+<p>Category or topic pages that group related articles help visitors and crawlers see the structure. This blog groups articles into topics like <a href="/blog/topic/speed-security/">speed, security and maintenance</a>.</p>
+
+<h2>Quality over quantity</h2>
+<p>A cluster of genuinely useful pages beats dozens of thin posts. Write each article to fully answer its question.</p>
+`,
+  },
+  {
+    slug: 'update-old-blog-posts',
+    seoTitle: 'How to Update Old Blog Posts to Regain Rankings',
+    title: 'How to Update Old Blog Posts to Win Back Traffic',
+    description: 'A step-by-step process for refreshing old blog posts: finding candidates in Search Console, updating facts and sections, improving titles, adding internal links and when to merge or delete.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-maintenance', 'website-redesign'],
+    body: `
+<p>Old articles often lose rankings slowly as information goes out of date and competitors publish better pages. Updating an existing post is often faster and more effective than writing a new one, because it already has history, links and some visibility.</p>
+
+<h2>Step 1: Find posts worth updating</h2>
+<p>In Google Search Console's Performance report, look for:</p>
+<ul>
+  <li>Pages whose clicks have declined compared with last year</li>
+  <li>Pages ranking around positions 5–20 for valuable queries, close to page one but not there yet</li>
+  <li>Pages with many impressions but a low click-through rate</li>
+</ul>
+<p>Also review posts with outdated years, prices or screenshots.</p>
+
+<h2>Step 2: See what searchers want now</h2>
+<p>Search the main query and compare your post with what ranks today. Are they covering subtopics you're missing? Has the intent shifted? See <a href="/blog/search-intent-explained/">search intent explained</a>.</p>
+
+<h2>Step 3: Update the content</h2>
+<ul>
+  <li>Correct outdated facts, prices, steps and screenshots</li>
+  <li>Add sections answering questions from Search Console queries</li>
+  <li>Add your own experience and examples</li>
+  <li>Remove padding and repetition</li>
+  <li>Improve structure with clear headings, lists and tables</li>
+</ul>
+
+<h2>Step 4: Improve title and description</h2>
+<p>If impressions are high but clicks are low, rewrite the title and meta description to be more specific and compelling; see <a href="/blog/write-meta-titles-descriptions/">writing meta titles and descriptions</a>.</p>
+
+<h2>Step 5: Strengthen internal links</h2>
+<p>Link from the updated post to relevant service pages and newer articles, and link to it from other related posts.</p>
+
+<h2>Step 6: Keep the URL</h2>
+<p>Don't change the URL of a post that already has rankings. If you must, set up a 301 redirect; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
+
+<h2>Step 7: Show the update honestly</h2>
+<p>Show an "Updated" date when you've made meaningful changes. Don't change dates without real updates; that misleads readers.</p>
+
+<h2>Step 8: Ask Google to recrawl</h2>
+<p>Use the URL Inspection tool in Search Console to request indexing of the updated page.</p>
+
+<h2>Merge, redirect or delete?</h2>
+<ul>
+  <li><strong>Merge</strong> several thin posts on the same topic into one strong article, redirecting the old URLs</li>
+  <li><strong>Delete</strong> posts that are irrelevant to your business and get no traffic or links</li>
+  <li><strong>Keep and update</strong> anything useful and relevant</li>
+</ul>
+
+<p>Build a refresh step into your <a href="/blog/website-content-calendar/">content calendar</a>.</p>
+`,
+  },
+  {
+    slug: 'google-algorithm-updates-small-business',
+    seoTitle: 'Google Algorithm Updates: What Small Businesses Should Do',
+    title: 'Google Algorithm Updates: What Small Businesses Should Know and Do',
+    description: 'What Google core and spam updates are, how to tell if one affected your site, why you should not panic-change things, and how to recover by improving helpfulness, trust and technical health.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign', 'wordpress-maintenance'],
+    body: `
+<p>Google changes its ranking systems constantly, and several times a year it releases larger "core updates" that can shift rankings noticeably. If your traffic suddenly changes, an update might be the reason. Here's how to respond calmly.</p>
+
+<h2>Types of updates</h2>
+<ul>
+  <li><strong>Core updates:</strong> broad changes to how Google assesses content overall, announced a few times a year</li>
+  <li><strong>Spam updates:</strong> target spam tactics like link schemes and scaled low-quality content</li>
+  <li><strong>Smaller, unannounced changes</strong> happen almost daily</li>
+</ul>
+<p>Google lists confirmed updates and their rollout dates on its Search Status Dashboard.</p>
+
+<h2>Was your site affected?</h2>
+<ol>
+  <li>Check the dates of your traffic change in Search Console</li>
+  <li>Compare them with update dates on the Search Status Dashboard</li>
+  <li>Rule out other causes: tracking problems, site errors, seasonal changes; see <a href="/blog/website-traffic-dropped/">why traffic drops</a></li>
+  <li>Look at which pages and queries changed</li>
+</ol>
+
+<h2>Don't panic-change everything</h2>
+<p>Updates take days or weeks to roll out, and rankings often fluctuate during that time. Wait until the rollout is complete before drawing conclusions. Hasty changes, like deleting content or changing URLs, can make things worse.</p>
+
+<h2>What Google rewards</h2>
+<p>Google's guidance consistently points to content that is helpful, reliable and made for people. Ask yourself honestly:</p>
+<ul>
+  <li>Does the page fully answer what the searcher wanted?</li>
+  <li>Does it show real experience and expertise?</li>
+  <li>Would you trust this page if you found it elsewhere?</li>
+  <li>Is it better than other pages ranking for the same search?</li>
+  <li>Was it created mainly for people, or mainly to rank?</li>
+</ul>
+
+<h2>How to recover</h2>
+<ul>
+  <li>Improve or merge thin and outdated pages; see <a href="/blog/update-old-blog-posts/">updating old posts</a></li>
+  <li>Add real experience: case studies, photos, examples</li>
+  <li>Show who is behind the site with About pages and author information</li>
+  <li>Fix technical issues: speed, mobile usability, broken pages</li>
+  <li>Remove or improve pages that exist only for search engines</li>
+</ul>
+<p>Recovery often shows up in a later core update, after Google reassesses your site, so improvements can take months to reflect.</p>
+
+<h2>Protect yourself long term</h2>
+<ul>
+  <li>Avoid shortcuts: bought links, copied content, doorway pages; see <a href="/blog/seo-red-flags-scams/">SEO red flags</a></li>
+  <li>Diversify traffic: Google Business Profile, email, WhatsApp, social and referrals</li>
+  <li>Keep improving your most important pages</li>
+</ul>
+`,
+  },
+  {
+    slug: 'write-blog-posts-that-rank',
+    seoTitle: 'How to Write Blog Posts That Rank on Google (Step by Step)',
+    title: 'How to Write Blog Posts That Rank on Google and Bring Enquiries',
+    description: 'A step-by-step process for business blog posts that rank: choosing the topic, checking intent, outlining, writing with real experience, structure, on-page SEO, internal links and promotion.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-for-startups', 'landing-page-design'],
+    body: `
+<p>A business blog should do two things: attract people searching for help and turn some of them into customers. Here's a practical process for writing posts that have a real chance of ranking and bringing enquiries.</p>
+
+<h2>1. Choose a topic customers care about</h2>
+<p>The best topics come from real customer questions: what they ask before buying, problems they're trying to solve and comparisons they're making. Check that people search for it using <a href="/blog/keyword-research-small-business/">keyword research</a>.</p>
+
+<h2>2. Check the search results</h2>
+<p>Search the main phrase. What type of pages rank? What do they cover? What's missing? Your post must match the intent and offer something better; see <a href="/blog/search-intent-explained/">search intent</a>.</p>
+
+<h2>3. Outline before writing</h2>
+<ul>
+  <li>The main question and a direct answer near the top</li>
+  <li>Subheadings for each sub-question</li>
+  <li>Examples, steps, tables or checklists</li>
+  <li>A relevant next step for readers</li>
+</ul>
+
+<h2>4. Add what only you can</h2>
+<p>Generic content is everywhere. Add your experience: real examples from clients, local context, prices you actually see, mistakes you've fixed, photos of your work. This is what makes content stand out and shows expertise.</p>
+
+<h2>5. Write for scanning</h2>
+<ul>
+  <li>Short paragraphs</li>
+  <li>Descriptive headings</li>
+  <li>Bulleted lists and tables</li>
+  <li>Plain language, with jargon explained</li>
+</ul>
+
+<h2>6. On-page SEO basics</h2>
+<ul>
+  <li>Main phrase in the title, H1, URL and first paragraph</li>
+  <li>A compelling meta description; see <a href="/blog/write-meta-titles-descriptions/">meta titles and descriptions</a></li>
+  <li>Descriptive image file names and alt text</li>
+  <li>Short, readable URL</li>
+</ul>
+
+<h2>7. Link internally</h2>
+<p>Link to the relevant service page and related articles, and add links to the new post from older related posts; see <a href="/blog/topic-clusters-pillar-pages/">topic clusters</a>.</p>
+
+<h2>8. Include a clear call to action</h2>
+<p>Readers who find the post helpful should know how to get help: a quote form, WhatsApp or a related service.</p>
+
+<h2>9. Publish and promote</h2>
+<ul>
+  <li>Share on LinkedIn, WhatsApp and social media</li>
+  <li>Send it to your email list</li>
+  <li>Use it to answer customer questions</li>
+</ul>
+<p>See <a href="/blog/repurpose-website-content-social-media/">repurposing content for social media</a>.</p>
+
+<h2>10. Measure and improve</h2>
+<p>After a few months, check Search Console: which queries does it appear for? Update the post to answer them better; see <a href="/blog/update-old-blog-posts/">updating old posts</a>.</p>
 `,
   },
 ];
