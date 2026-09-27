@@ -159,4 +159,42 @@ document.addEventListener("click", e => {
   else if (href.startsWith("tel:")) gtag("event", "contact_call");
   else if (href.startsWith("mailto:")) gtag("event", "contact_email");
   else if (a.classList.contains("work-card")) gtag("event", "portfolio_click", { site: new URL(href, location.href).pathname });
+  else if (a.closest(".share")) gtag("event", "share", { method: a.getAttribute("aria-label") || "link" });
 });
+
+// ---------- Article pages: reading progress, active contents link, copy link ----------
+const article = document.querySelector(".post-body");
+if (article) {
+  const bar = document.getElementById("readProgress");
+  const tocLinks = [...document.querySelectorAll(".post-toc a")];
+  const headings = tocLinks.map(a => document.getElementById(decodeURIComponent(a.hash.slice(1)))).filter(Boolean);
+
+  const onArticleScroll = () => {
+    const rect = article.getBoundingClientRect();
+    const total = rect.height - innerHeight;
+    const done = Math.min(Math.max(-rect.top / (total > 0 ? total : 1), 0), 1);
+    if (bar) bar.style.width = (done * 100).toFixed(1) + "%";
+    // Highlight the last heading that has scrolled past the top area
+    let current = headings[0];
+    for (const h of headings) if (h.getBoundingClientRect().top < 140) current = h;
+    tocLinks.forEach(a => a.classList.toggle("active", current && a.hash === "#" + current.id));
+  };
+  addEventListener("scroll", onArticleScroll, { passive: true });
+  addEventListener("resize", onArticleScroll);
+  onArticleScroll();
+
+  // Close the mobile contents menu after choosing a section
+  document.querySelectorAll(".toc-mobile a").forEach(a => a.addEventListener("click", () => a.closest("details").removeAttribute("open")));
+}
+
+document.querySelectorAll(".share-copy").forEach(btn => btn.addEventListener("click", async () => {
+  const label = btn.querySelector("span");
+  try {
+    await navigator.clipboard.writeText(btn.dataset.url);
+    btn.classList.add("copied");
+    if (label) label.textContent = "Copied!";
+    setTimeout(() => { btn.classList.remove("copied"); if (label) label.textContent = "Copy link"; }, 2000);
+  } catch (e) {
+    prompt("Copy this link:", btn.dataset.url);
+  }
+}));

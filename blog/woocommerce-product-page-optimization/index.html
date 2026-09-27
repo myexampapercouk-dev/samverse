@@ -114,29 +114,46 @@
     </div>
   </header>
 
+  <div class="read-progress" aria-hidden="true"><span id="readProgress"></span></div>
+
   <main>
     <article class="post">
-      <header class="post-head container">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> E-commerce</nav>
-        <span class="eyebrow">E-commerce</span>
-        <h1>WooCommerce Product Page Optimization: 12 Ways to Sell More</h1>
-        <p class="post-meta">By <a href="/about/">Sameer Gupta</a> · <time datetime="2026-09-27">27 September 2026</time> · 3 min read</p>
-        <figure class="post-cover"><img src="/assets/og/blog-woocommerce-product-page-optimization.webp" alt="WooCommerce Product Page Optimization: 12 Ways to Sell More" width="1200" height="630" fetchpriority="high"></figure>
+      <header class="post-hero">
+        <div class="container post-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/#ecommerce">E-commerce</a></nav>
+          <a class="post-cat" href="/blog/#ecommerce">E-commerce</a>
+          <h1>WooCommerce Product Page Optimization: 12 Ways to Sell More</h1>
+          <p class="post-dek">How to optimize WooCommerce product pages for more sales: photos, titles, descriptions, pricing clarity, trust signals, reviews, delivery info, mobile layout and speed.</p>
+          <div class="post-byline">
+            <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
+            <div class="post-byline-text">
+              <a href="/about/">Sameer Gupta</a>
+              <span><time datetime="2026-09-27">27 September 2026</time> · 3 min read</span>
+            </div>
+            <div class="share share-top">
+              <a href="https://wa.me/?text=WooCommerce%20Product%20Page%20Optimization%3A%2012%20Ways%20to%20Sell%20More%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-product-page-optimization%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-product-page-optimization%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WooCommerce%20Product%20Page%20Optimization%3A%2012%20Ways%20to%20Sell%20More&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-product-page-optimization%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/woocommerce-product-page-optimization/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+          <figure class="post-cover"><img src="/assets/og/blog-woocommerce-product-page-optimization.webp" alt="WooCommerce Product Page Optimization: 12 Ways to Sell More" width="1200" height="630" fetchpriority="high"></figure>
+        </div>
       </header>
 
       <div class="post-layout container">
-        <aside class="post-toc">
-          <strong>On this page</strong>
-          <ol>
-            <li><a href="#show-the-product-properly">Show the product properly</a></li>
-            <li><a href="#write-to-sell-and-to-rank">Write to sell, and to rank</a></li>
-            <li><a href="#remove-doubts">Remove doubts</a></li>
-            <li><a href="#make-buying-effortless">Make buying effortless</a></li>
-            <li><a href="#don-t-forget-speed">Don't forget speed</a></li>
-            <li><a href="#measure-and-improve">Measure and improve</a></li>
-          </ol>
-        </aside>
         <div class="post-body">
+          <details class="toc-mobile">
+            <summary>On this page</summary>
+            <ol>
+              <li><a href="#show-the-product-properly">Show the product properly</a></li>
+              <li><a href="#write-to-sell-and-to-rank">Write to sell, and to rank</a></li>
+              <li><a href="#remove-doubts">Remove doubts</a></li>
+              <li><a href="#make-buying-effortless">Make buying effortless</a></li>
+              <li><a href="#don-t-forget-speed">Don't forget speed</a></li>
+              <li><a href="#measure-and-improve">Measure and improve</a></li>
+            </ol>
+          </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
@@ -160,6 +177,12 @@
   <li><strong>Benefit-led descriptions:</strong> start with why it matters, then details, ingredients or specifications. Write your own. Copied manufacturer text is used by every competitor.</li>
   <li><strong>Scannable specifications</strong> in a short list or table.</li>
 </ol>
+
+<aside class="inline-cta">
+  <strong>Need help with online stores?</strong>
+  <p>Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout..</p>
+  <div><a href="/woocommerce-developer/" class="link-inline">See Online Stores →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WooCommerce%20Product%20Page%20Optimization%3A%2012%20Ways%20to%20Sell%20More%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+</aside>
 
 <h2 id="remove-doubts">Remove doubts</h2>
 <ol start="7">
@@ -200,11 +223,46 @@
             </div>
           </div>
 
+          <div class="post-share-end">
+            <strong>Found this useful? Share it:</strong>
+            <div class="share share-end">
+              <a href="https://wa.me/?text=WooCommerce%20Product%20Page%20Optimization%3A%2012%20Ways%20to%20Sell%20More%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-product-page-optimization%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-product-page-optimization%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WooCommerce%20Product%20Page%20Optimization%3A%2012%20Ways%20to%20Sell%20More&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-product-page-optimization%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/woocommerce-product-page-optimization/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+
           <div class="post-author">
             <img src="/assets/logo-mark.svg" alt="" width="56" height="56">
-            <div><strong><a href="/about/">Sameer Gupta</a></strong><p>Freelance WordPress developer and founder of Samverse. Builds websites for clinics, manufacturers, agencies and online stores.</p></div>
+            <div><strong><a href="/about/">Sameer Gupta</a></strong><p>Freelance WordPress developer and founder of Samverse, building websites for clinics, manufacturers, agencies and online stores since 2020.</p><a href="/about/" class="link-inline">More about me</a></div>
           </div>
+
+          <nav class="post-nav" aria-label="More in E-commerce">
+            <a class="post-nav-prev" href="/blog/woocommerce-store-launch-checklist/"><span>← Previous in E-commerce</span><strong>WooCommerce Store Launch Checklist: 30 Things to Check Before Going Live</strong></a>
+            <a class="post-nav-next" href="/blog/woocommerce-seo-guide/"><span>Next in E-commerce →</span><strong>WooCommerce SEO: How to Rank Your Product and Category Pages</strong></a>
+          </nav>
         </div>
+
+        <aside class="post-side">
+          <nav class="post-toc" aria-label="On this page">
+            <strong>On this page</strong>
+            <ol>
+              <li><a href="#show-the-product-properly">Show the product properly</a></li>
+              <li><a href="#write-to-sell-and-to-rank">Write to sell, and to rank</a></li>
+              <li><a href="#remove-doubts">Remove doubts</a></li>
+              <li><a href="#make-buying-effortless">Make buying effortless</a></li>
+              <li><a href="#don-t-forget-speed">Don't forget speed</a></li>
+              <li><a href="#measure-and-improve">Measure and improve</a></li>
+            </ol>
+          </nav>
+          <div class="side-cta">
+            <strong>Need help with this?</strong>
+            <p>Get a clear plan and a fixed quote within 24 hours.</p>
+            <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
+            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WooCommerce%20Product%20Page%20Optimization%3A%2012%20Ways%20to%20Sell%20More%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+          </div>
+        </aside>
       </div>
     </article>
 
