@@ -3871,6 +3871,8 @@ module.exports = [
 <h2>Stay within guidelines</h2>
 <p>Keep treatment information accurate, avoid guaranteed outcomes, and follow professional advertising guidelines for dentists.</p>
 
+<p>Cosmetic and skin practices: see <a href="/blog/website-for-dermatology-skin-clinics/">websites for dermatology and skin clinics</a>.</p>
+
 <h2>Local SEO for dentists</h2>
 <ul>
   <li>Target "dentist in {area}", "root canal treatment {city}" and "dental implants {city}"</li>
@@ -5565,6 +5567,8 @@ module.exports = [
   <li><strong>Before and after photos</strong> for body work and detailing</li>
 </ul>
 
+<p>Selling electric vehicles? See <a href="/blog/website-for-ev-dealers/">websites for EV dealers</a>.</p>
+
 <h2>Make it easy on mobile</h2>
 <p>Most searches happen on phones, often urgently for breakdowns. Tap-to-call, WhatsApp, location and hours should be visible immediately. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a>.</p>
 
@@ -6929,11 +6933,15 @@ module.exports = [
 <h2>Service pages</h2>
 <p>One page per service: AC repair, AC installation, water purifier service, plumbing repairs, electrical wiring, appliance repair and so on. Explain common problems you fix, what a visit includes, and typical timings.</p>
 
+<p>Device repairs work the same way; see <a href="/blog/website-for-mobile-laptop-repair/">websites for mobile and laptop repair shops</a>.</p>
+
 <h2>Areas served</h2>
 <p>List the areas and localities you cover. Create separate location pages only where you have genuine local detail; see <a href="/blog/local-landing-pages-without-doorway-pages/">local pages without doorway pages</a>.</p>
 
 <h2>Pricing guidance</h2>
 <p>Visiting charges and "starting from" prices for common jobs reduce price-shopping calls and build trust. Be clear about what's extra (parts, gas refill).</p>
+
+<p>Pest control businesses face similar urgency; see <a href="/blog/website-for-pest-control-companies/">websites for pest control companies</a>.</p>
 
 <h2>Trust signals</h2>
 <ul>
@@ -7104,6 +7112,8 @@ module.exports = [
   <li>Privacy for any patient data collected; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy basics</a></li>
 </ul>
 
+<p>Sensitive specialities need extra care; see <a href="/blog/website-for-fertility-clinics/">websites for fertility clinics</a>.</p>
+
 <h2>Performance and accessibility</h2>
 <p>Many visitors are older or anxious. Large readable text, simple navigation and fast pages matter; see <a href="/blog/website-accessibility-older-users/">designing for older visitors</a>.</p>
 
@@ -7154,6 +7164,8 @@ module.exports = [
 
 <h2>Patient education</h2>
 <p>Short articles or videos on safe exercises, posture tips and recovery after common surgeries attract searchers and build trust. Keep advice general and encourage professional assessment.</p>
+
+<p>Holistic practices have their own needs; see <a href="/blog/website-for-ayurveda-wellness-centres/">websites for Ayurveda and wellness centres</a>.</p>
 
 <h2>Trust</h2>
 <ul>
@@ -9654,6 +9666,307 @@ module.exports = [
 </ol>
 
 <p>Keeping records of your accounts is part of good website ownership; see <a href="/blog/regain-website-access-old-developer/">keeping control of your website</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-dermatology-skin-clinics',
+    seoTitle: 'Websites for Dermatology & Skin Clinics',
+    title: 'Websites for Dermatology and Skin Clinics',
+    description: 'What dermatology, skin and hair clinics need online: treatment pages, dermatologist profiles, before-and-after galleries with consent, pricing guidance, consultation booking and responsible claims.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>People looking for skin, hair or cosmetic treatments research carefully. They want to know about the doctor, the treatment, results they can expect and costs. A trustworthy website helps them choose you, and must handle claims responsibly.</p>
+
+<h2>Treatment pages</h2>
+<p>A page for each major treatment or concern: acne and scars, pigmentation, hair fall and PRP, laser hair reduction, anti-ageing, chemical peels, and medical dermatology (eczema, psoriasis, infections). For each: who it suits, how it works, number of sessions (as ranges), downtime, side effects and FAQs.</p>
+
+<h2>Doctor profiles</h2>
+<p>Qualifications, registration, specialisations and experience. For cosmetic procedures, patients especially want to know who performs the treatment.</p>
+
+<h2>Before-and-after galleries</h2>
+<ul>
+  <li>Only with written patient consent</li>
+  <li>Real, unedited photos with similar lighting</li>
+  <li>A note that results vary between individuals</li>
+</ul>
+
+<h2>Pricing guidance</h2>
+<p>Consultation fees and "starting from" ranges for common treatments reduce hesitation and repetitive calls.</p>
+
+<h2>Responsible claims</h2>
+<p>Avoid guaranteed results, "permanent" claims you can't support and exaggerated language. Keep medical information accurate and follow applicable professional and advertising guidelines.</p>
+
+<h2>Booking and trust</h2>
+<ul>
+  <li>Consultation booking form and WhatsApp</li>
+  <li>Clinic photos, equipment and hygiene practices</li>
+  <li>Genuine patient reviews</li>
+</ul>
+
+<h2>SEO</h2>
+<ul>
+  <li>Target "dermatologist in {area}", "laser hair removal {city}" and treatment-specific searches</li>
+  <li>Helpful guides on skin concerns, reviewed by the doctor</li>
+  <li>A strong Google Business Profile with reviews</li>
+</ul>
+
+<p>See the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> and <a href="/wordpress-website-for-doctors/">healthcare websites</a>. Campaign pages for specific treatments: <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-ayurveda-wellness-centres',
+    seoTitle: 'Websites for Ayurveda & Wellness Centres',
+    title: 'Websites for Ayurveda and Wellness Centres',
+    description: 'What Ayurveda clinics, Panchakarma centres, wellness retreats and naturopathy centres need online: therapies, practitioner credentials, packages, stay details, booking and careful health claims.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'hotel-website-design', 'wordpress-seo-services'],
+    body: `
+<p>Visitors to Ayurveda and wellness websites range from local patients seeking treatment to domestic and international guests planning wellness retreats. Clear, calm and credible information helps all of them.</p>
+
+<h2>Therapies and programmes</h2>
+<ul>
+  <li>Consultations and individual therapies</li>
+  <li>Panchakarma and detox programmes (duration, what's included)</li>
+  <li>Programmes for stress, weight management and rejuvenation</li>
+  <li>Yoga and meditation sessions</li>
+</ul>
+<p>Explain each simply: what it involves, duration, who it suits and any precautions.</p>
+
+<h2>Practitioner credentials</h2>
+<p>Qualifications and registrations of doctors and therapists, years of experience, and the centre's approach.</p>
+
+<h2>Retreats and stays</h2>
+<p>For residential centres: room types, meals (diet plans), daily schedule, facilities, location and how to reach. Many elements of <a href="/blog/hotel-website-direct-bookings/">hotel websites</a> apply.</p>
+
+<h2>Careful with health claims</h2>
+<p>Avoid promising cures or guaranteed results. Describe therapies accurately, encourage consultation, and follow applicable regulations for health claims and advertising.</p>
+
+<h2>Booking</h2>
+<ul>
+  <li>Consultation and programme enquiry forms</li>
+  <li>WhatsApp for questions</li>
+  <li>Online deposits for retreats where suitable</li>
+</ul>
+
+<h2>Design</h2>
+<p>A calm, natural design with real photos of the centre, treatment rooms and surroundings. Keep pages fast despite rich imagery; see <a href="/blog/image-optimization-wordpress/">image optimization</a>.</p>
+
+<h2>SEO and reach</h2>
+<ul>
+  <li>Target "Ayurveda centre in {city}", "Panchakarma treatment {state}" and retreat searches</li>
+  <li>Multilingual pages for international guests; see <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual websites</a></li>
+  <li>Helpful, accurate articles on therapies and wellness practices</li>
+</ul>
+
+<p>See also <a href="/wordpress-website-for-doctors/">healthcare websites</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-fertility-clinics',
+    seoTitle: 'Websites for Fertility Clinics: Sensitive & Accurate',
+    title: 'Websites for Fertility Clinics: Sensitive, Accurate and Reassuring',
+    description: 'How fertility and IVF clinics can build websites that inform and reassure: treatment explanations, specialist profiles, transparent processes, privacy, careful claims and compassionate design.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>People researching fertility treatment are often going through an emotional, private and stressful time. A fertility clinic website must be informative and accurate, but also compassionate and discreet.</p>
+
+<h2>Clear treatment information</h2>
+<p>Explain evaluations and treatments in plain language: fertility assessments, IUI, IVF, ICSI, egg freezing and related procedures. For each: who it may suit, what the process involves step by step, typical timelines, and what to expect emotionally and physically. Encourage consultation for personal advice.</p>
+
+<h2>Specialist profiles</h2>
+<p>Qualifications, registrations, experience and areas of focus of doctors and embryologists, with warm, professional photos.</p>
+
+<h2>Careful, honest claims</h2>
+<ul>
+  <li>Avoid guaranteed outcomes or misleading success statistics</li>
+  <li>If you share outcome data, explain what it means and how it's calculated, accurately</li>
+  <li>Follow applicable medical, legal and advertising regulations for fertility services</li>
+</ul>
+
+<h2>Transparency</h2>
+<ul>
+  <li>What a first consultation involves</li>
+  <li>Cost guidance or packages, with what's included</li>
+  <li>Counselling and support services</li>
+</ul>
+
+<h2>Privacy and discretion</h2>
+<ul>
+  <li>Secure forms that collect minimal information</li>
+  <li>A clear privacy policy; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy basics</a></li>
+  <li>Discreet communication options (WhatsApp, phone, email)</li>
+  <li>Never publish patient stories without explicit consent</li>
+</ul>
+
+<h2>Compassionate design and tone</h2>
+<p>Calm colours, clear navigation and warm, non-judgemental language. Avoid overly clinical or overly promotional tones.</p>
+
+<h2>Content that helps</h2>
+<p>Accurate, doctor-reviewed articles answering common questions help people understand options and build trust. Date and review medical content regularly.</p>
+
+<p>See also the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> and <a href="/wordpress-website-for-doctors/">healthcare websites</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-pest-control-companies',
+    seoTitle: 'Websites for Pest Control Companies',
+    title: 'Websites for Pest Control Companies: Winning Urgent Local Enquiries',
+    description: 'What pest control businesses need online: pest-specific service pages, treatment process and safety, residential and commercial plans, pricing guidance, quick booking and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>Pest problems are urgent and unpleasant. People search, compare a couple of options quickly and call. Homes want safety reassurance; businesses want compliance and reliable contracts.</p>
+
+<h2>Pest-specific service pages</h2>
+<p>Cockroach, termite, bed bug, mosquito, rodent and general pest control each deserve a page: signs of infestation, treatment method, how long it takes, how many visits, and aftercare. People search for the specific pest.</p>
+
+<h2>Safety information</h2>
+<ul>
+  <li>Products and methods used, and safety for children and pets</li>
+  <li>Preparation before treatment and precautions after</li>
+  <li>Licences and trained technicians</li>
+</ul>
+
+<h2>Residential and commercial plans</h2>
+<ul>
+  <li>One-time treatments and annual maintenance contracts (AMCs)</li>
+  <li>Commercial services for restaurants, offices, warehouses and hospitals, with documentation for audits</li>
+</ul>
+
+<h2>Pricing guidance</h2>
+<p>"Starting from" prices by property size (1BHK, 2BHK, etc.) and service help people decide faster.</p>
+
+<h2>Quick booking</h2>
+<ul>
+  <li>Tap-to-call and WhatsApp (people send photos of the pest)</li>
+  <li>Booking form with pest type, property size and preferred slot</li>
+  <li>Same-day or next-day availability, if offered</li>
+</ul>
+
+<h2>Trust</h2>
+<ul>
+  <li>Service warranty or re-treatment policy</li>
+  <li>Genuine reviews</li>
+  <li>Photos of technicians and equipment</li>
+</ul>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "termite control in {city}", "pest control near me" and similar</li>
+  <li>A complete Google Business Profile and steady reviews</li>
+  <li>Seasonal content (monsoon pests) and campaigns; see <a href="/blog/seasonal-festival-campaigns-website/">seasonal campaigns</a></li>
+</ul>
+
+<p>Other local service guides: <a href="/blog/website-for-home-services/">home services</a> and <a href="/blog/website-for-cleaning-services/">cleaning services</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-ev-dealers',
+    seoTitle: 'Websites for EV Dealers & Showrooms',
+    title: 'Websites for Electric Vehicle Dealers and Showrooms',
+    description: 'What EV dealers (electric scooters, bikes and cars) need online: model pages with range and charging info, test ride booking, cost-of-ownership explainers, subsidies, service and finance enquiries.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design', 'website-for-solar-and-power-companies'],
+    body: `
+<p>Electric vehicle buyers are often first-time EV owners with lots of questions: range, charging, battery life, running costs and service. A dealer website that answers those clearly wins test rides.</p>
+
+<h2>Model pages</h2>
+<ul>
+  <li>Photos and colours</li>
+  <li>Range (with the testing basis noted), battery capacity, charging time, top speed</li>
+  <li>On-road price or starting price and variants</li>
+  <li>Key features and warranty</li>
+  <li>"Book a test ride" button</li>
+</ul>
+
+<h2>Answer EV questions</h2>
+<ul>
+  <li>Home charging vs public charging</li>
+  <li>Running cost compared with petrol, explained with clear assumptions</li>
+  <li>Battery warranty and replacement</li>
+  <li>Subsidies or incentives, with links to official sources, as these change</li>
+</ul>
+<p>Honest explainers build trust and attract searches.</p>
+
+<h2>Showroom and service</h2>
+<ul>
+  <li>Showroom location, hours and contact</li>
+  <li>Service centre details and booking</li>
+  <li>Spare parts and accessories</li>
+</ul>
+
+<h2>Finance and exchange</h2>
+<p>EMI and exchange enquiry forms help buyers who are price-sensitive.</p>
+
+<h2>Campaigns</h2>
+<p>Launches and festive offers work best with dedicated landing pages and tracked enquiries; see <a href="/landing-page-design/">landing page design</a>.</p>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "{brand} electric scooter showroom in {city}" and "electric scooter dealer near me"</li>
+  <li>Google Business Profile with photos and reviews</li>
+</ul>
+
+<p>Related: <a href="/blog/website-for-car-dealers-workshops/">car dealers and workshops</a> and <a href="/blog/solar-company-website-guide/">solar company websites</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-mobile-laptop-repair',
+    seoTitle: 'Websites for Mobile & Laptop Repair Shops',
+    title: 'Websites for Mobile and Laptop Repair Shops',
+    description: 'What phone, laptop and electronics repair shops need online: repair services by device and issue, price guidance, turnaround times, pickup, warranty on repairs, booking and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>When a phone screen cracks or a laptop won't start, people search immediately and want answers: can you fix it, how much, how long, and can I trust you with my data?</p>
+
+<h2>Services by device and issue</h2>
+<ul>
+  <li>Devices and brands you repair</li>
+  <li>Common repairs: screen replacement, battery, charging port, water damage, keyboard, motherboard, data recovery, software issues</li>
+  <li>A page for major repair types helps you rank for those searches</li>
+</ul>
+
+<h2>Price guidance and turnaround</h2>
+<p>"Starting from" prices for common repairs and typical turnaround times (same day, 24–48 hours) reduce back-and-forth. Note that final prices depend on diagnosis and parts quality.</p>
+
+<h2>Trust signals</h2>
+<ul>
+  <li>Warranty on repairs and parts</li>
+  <li>Genuine vs compatible parts explained honestly</li>
+  <li>Data privacy practices</li>
+  <li>Genuine reviews and years in business</li>
+</ul>
+
+<h2>Easy booking</h2>
+<ul>
+  <li>WhatsApp for sending photos of the damage</li>
+  <li>Booking form with device, model and issue</li>
+  <li>Pickup and drop or doorstep repair, if offered</li>
+</ul>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "{brand} screen replacement in {area}", "laptop repair near me" and "mobile repair shop {city}"</li>
+  <li>Google Business Profile with accurate hours and reviews</li>
+</ul>
+
+<h2>Extras</h2>
+<ul>
+  <li>Refurbished devices and accessories for sale</li>
+  <li>Buy-back or exchange enquiries</li>
+  <li>Corporate device maintenance for offices</li>
+</ul>
+
+<p>See also <a href="/blog/website-for-home-services/">home services websites</a>. For your site, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
 ];

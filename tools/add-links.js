@@ -183,6 +183,13 @@ const LINKS = [
   ['core-web-vitals-explained', '<h2>How to check your scores</h2>', '<p>Confused by different scores? See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</p>\n\n'],
   ['google-business-profile-checklist', '<h2>Connect it to your website</h2>', '<p>Wondering whether a small shop needs a website at all? See <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website</a>.</p>\n\n'],
   ['seo-red-flags-scams', '<h2>Green flags</h2>', '<p>Related: <a href="/blog/domain-seo-scam-emails/">how to spot domain renewal and SEO scam emails</a>.</p>\n\n'],
+  // Round 21
+  ['website-for-dentists', '<h2>Local SEO for dentists</h2>', '<p>Cosmetic and skin practices: see <a href="/blog/website-for-dermatology-skin-clinics/">websites for dermatology and skin clinics</a>.</p>\n\n'],
+  ['website-for-physiotherapy-clinics', '<h2>Trust</h2>', '<p>Holistic practices have their own needs; see <a href="/blog/website-for-ayurveda-wellness-centres/">websites for Ayurveda and wellness centres</a>.</p>\n\n'],
+  ['website-for-hospitals', '<h2>Performance and accessibility</h2>', '<p>Sensitive specialities need extra care; see <a href="/blog/website-for-fertility-clinics/">websites for fertility clinics</a>.</p>\n\n'],
+  ['website-for-home-services', '<h2>Trust signals</h2>', '<p>Pest control businesses face similar urgency; see <a href="/blog/website-for-pest-control-companies/">websites for pest control companies</a>.</p>\n\n'],
+  ['website-for-car-dealers-workshops', '<h2>Make it easy on mobile</h2>', '<p>Selling electric vehicles? See <a href="/blog/website-for-ev-dealers/">websites for EV dealers</a>.</p>\n\n'],
+  ['website-for-home-services', '<h2>Areas served</h2>', '<p>Device repairs work the same way; see <a href="/blog/website-for-mobile-laptop-repair/">websites for mobile and laptop repair shops</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
