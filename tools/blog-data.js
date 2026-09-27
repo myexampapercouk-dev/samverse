@@ -194,6 +194,8 @@ module.exports = [
 
 <p>Built with Elementor? These <a href="/blog/why-elementor-sites-slow/">Elementor-specific fixes</a> help too.</p>
 
+<p>New to caching? Read <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
+
 <h2>Quick wins you can do today</h2>
 <ul>
   <li>Compress the largest images on your homepage</li>
@@ -333,6 +335,8 @@ module.exports = [
 <p>For local searches like "dermatologist near me", your Google Business Profile often appears above websites. Keep it complete, add photos, respond to reviews and link it to your website. The two work together.</p>
 
 <p>Doctors who also coach, teach or run programs can go further with a <a href="/blog/personal-brand-website-professionals/">personal brand website</a>. Dental practices should also read <a href="/blog/website-for-dentists/">what patients look for in a dental clinic website</a>.</p>
+
+<p>Related guides: websites for <a href="/blog/website-for-nutritionists-dietitians/">nutritionists and dietitians</a> and <a href="/blog/website-for-psychologists-counsellors/">psychologists and counsellors</a>.</p>
 
 <h2>Next step</h2>
 <p>If your current website misses several of these points, a focused redesign can make a big difference to how many patients contact you. A good clinic website is one of the most cost-effective ways to grow a practice.</p>
@@ -1069,6 +1073,8 @@ module.exports = [
 <p>Schools and coaching institutes often collect fees this way; see <a href="/blog/school-coaching-website-what-parents-look-for/">what parents and students look for</a>.</p>
 <h3>3. Payment links and buttons</h3>
 <p>Gateways let you create payment links or buttons you can place on any page, or send on WhatsApp. It's the quickest option for occasional payments.</p>
+
+<p>Registered under GST? See <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>.</p>
 
 <h2>Testing before you go live</h2>
 <ul>
@@ -3776,6 +3782,8 @@ module.exports = [
   <li>Articles on workouts, nutrition basics and beginner guides</li>
 </ul>
 
+<p>Offering diet plans too? See <a href="/blog/website-for-nutritionists-dietitians/">websites for nutritionists</a>.</p>
+
 <h2>Local SEO</h2>
 <ul>
   <li>Target "gym near me", "yoga classes in {area}" and "personal trainer {city}"</li>
@@ -5951,6 +5959,8 @@ module.exports = [
 <h2>3. Cash on Delivery</h2>
 <p>COD is still popular in India but carries return-to-origin risk. Options include limiting COD to certain zones or order values, adding a COD fee (shown clearly), or confirming COD orders by phone or WhatsApp.</p>
 
+<p>More on reducing refused deliveries: <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery without losing money</a>.</p>
+
 <h2>4. Couriers and aggregators</h2>
 <p>Shipping aggregators integrate with WooCommerce to compare courier rates, generate labels, schedule pickups and push tracking. Direct courier accounts can suit higher volumes. Compare pricing, coverage, COD remittance timelines and support before choosing.</p>
 
@@ -6398,6 +6408,8 @@ module.exports = [
 
 <h2>Step 6: Consider moving</h2>
 <p>If the site is on the developer's hosting, migrating it to hosting in your own name is often the cleanest fix; see <a href="/wordpress-migration/">WordPress migration</a>.</p>
+
+<p>Use this <a href="/blog/website-ownership-checklist/">website ownership checklist</a> once you have access back.</p>
 
 <h2>Prevent it happening again</h2>
 <ul>
@@ -11593,6 +11605,382 @@ module.exports = [
 <p>Make sure the enquiry actually reaches your inbox, and consider an automatic acknowledgement email to the visitor; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
 
 <p>Thank-you pages are part of every good <a href="/landing-page-design/">landing page</a> setup.</p>
+`,
+  },
+  {
+    slug: 'wordpress-caching-explained',
+    seoTitle: 'WordPress Caching Explained: Page, Browser, Object & CDN',
+    title: 'WordPress Caching Explained: How Caching Makes Your Site Faster',
+    description: 'A plain-English guide to WordPress caching: page caching, browser caching, object caching, OPcache and CDN caching, which plugin to use, what not to cache and how to clear cache safely.',
+    date: '2026-09-27',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
+    body: `
+<p>Every time someone opens a WordPress page, the server normally runs PHP code, queries the database and assembles the page from scratch. Caching saves the finished result so it can be served again instantly. Done right, it's one of the biggest speed improvements you can make.</p>
+
+<h2>The main types of caching</h2>
+<table>
+  <thead><tr><th>Type</th><th>What it stores</th><th>Where it lives</th></tr></thead>
+  <tbody>
+    <tr><td>Page caching</td><td>Complete HTML pages</td><td>Server (plugin or host)</td></tr>
+    <tr><td>Browser caching</td><td>Images, CSS, JS files</td><td>The visitor's browser</td></tr>
+    <tr><td>Object caching</td><td>Database query results</td><td>Server memory (Redis, Memcached)</td></tr>
+    <tr><td>OPcache</td><td>Compiled PHP code</td><td>Server</td></tr>
+    <tr><td>CDN caching</td><td>Files and sometimes pages</td><td>Servers around the world</td></tr>
+  </tbody>
+</table>
+
+<h2>Page caching: the big win</h2>
+<p>Page caching saves a ready-made HTML copy of each page. Instead of running WordPress for every visitor, the server hands over the saved copy. For most business websites, whose pages don't change per visitor, this dramatically cuts server response time.</p>
+
+<h2>Browser caching</h2>
+<p>Browser caching tells visitors' browsers to keep files like your logo, fonts and stylesheets for a while, so repeat visits and page-to-page navigation load faster. It's set with cache headers, usually by your caching plugin or host.</p>
+
+<h2>Object caching</h2>
+<p>Object caching stores the results of database queries in memory. It helps most on dynamic sites that can't be fully page-cached: WooCommerce stores, membership sites and sites with many logged-in users. It needs Redis or Memcached support from your host.</p>
+
+<h2>CDN caching</h2>
+<p>A CDN stores copies of your files on servers closer to your visitors; see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
+
+<h2>Choosing a caching setup</h2>
+<ul>
+  <li><strong>Check your host first:</strong> many managed hosts include server-level caching and advise against extra caching plugins</li>
+  <li><strong>LiteSpeed servers:</strong> the LiteSpeed Cache plugin works with the server's built-in cache</li>
+  <li><strong>Other servers:</strong> a reputable caching plugin such as WP Rocket (paid), W3 Total Cache or WP Super Cache</li>
+  <li><strong>Use only one caching plugin.</strong> Two caching plugins fighting each other cause strange errors</li>
+</ul>
+
+<h2>What should not be cached</h2>
+<ul>
+  <li>Cart, checkout and account pages on WooCommerce</li>
+  <li>Pages for logged-in users</li>
+  <li>Pages showing personalised or frequently changing information</li>
+  <li>Form pages where security tokens are used (test forms after enabling caching)</li>
+</ul>
+<p>Good caching plugins exclude standard WooCommerce pages automatically, but always test.</p>
+
+<h2>Clearing the cache</h2>
+<p>If you update a page and don't see the change, the old cached copy may still be served. Clear the cache from your plugin or hosting panel after design changes, plugin updates or theme edits. Most plugins clear a page's cache automatically when you update it.</p>
+
+<h2>Caching won't fix everything</h2>
+<p>Caching speeds up delivery, but huge images, heavy page builders and too many scripts still slow the page in the browser. See <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a> and <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<p>Want it configured properly? See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-gst-invoices-india',
+    seoTitle: 'WooCommerce GST Setup & Invoices for Indian Stores',
+    title: 'WooCommerce GST Setup and Invoices: A Guide for Indian Online Stores',
+    description: 'How to set up GST in WooCommerce for an Indian store: tax settings, CGST/SGST vs IGST, tax classes, tax-inclusive prices, GST invoice details and when to involve your CA.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development', 'website-for-startups'],
+    body: `
+<p>If you sell online in India and are registered under GST, your WooCommerce store needs to calculate tax correctly and issue proper invoices. WooCommerce can handle this, but it needs setting up. This guide covers the website side; for tax rates and legal requirements specific to your products, always confirm with your chartered accountant.</p>
+
+<h2>CGST and SGST vs IGST</h2>
+<ul>
+  <li><strong>Intra-state sale</strong> (customer in the same state as you): tax is split into CGST and SGST</li>
+  <li><strong>Inter-state sale</strong> (customer in another state): IGST applies</li>
+</ul>
+<p>For most online sales to consumers, the place of supply is the delivery address, so your store must calculate tax based on the customer's shipping state.</p>
+
+<h2>Step 1: Enable taxes in WooCommerce</h2>
+<ul>
+  <li>WooCommerce → Settings → General: enable tax rates and calculations</li>
+  <li>In the Tax tab, set <strong>"Calculate tax based on"</strong> to the customer shipping address</li>
+  <li>Decide whether prices are entered <strong>inclusive of tax</strong>. Most Indian consumer stores show tax-inclusive prices</li>
+</ul>
+
+<h2>Step 2: Create tax classes for each GST rate</h2>
+<p>Different products can fall under different GST rates. Create a tax class for each rate you use, then assign the correct class to each product. Your CA can confirm the right HSN codes and rates for your products.</p>
+
+<h2>Step 3: Add tax rates</h2>
+<ul>
+  <li>For your home state: add CGST and SGST as two separate rates (each half of the total rate)</li>
+  <li>For all other states: add IGST at the full rate</li>
+  <li>Name them clearly so they show correctly on orders and invoices</li>
+</ul>
+<p>Test with orders to your own state and another state to confirm the split is right.</p>
+
+<h2>Step 4: GST-compliant invoices</h2>
+<p>WooCommerce doesn't create GST invoices by default. A PDF invoice plugin (such as PDF Invoices &amp; Packing Slips for WooCommerce) can be configured or extended to include the required details, typically:</p>
+<ul>
+  <li>Your business name, address and GSTIN</li>
+  <li>A unique, consecutive invoice number for the financial year</li>
+  <li>Invoice date</li>
+  <li>Customer name and address, and GSTIN for business customers</li>
+  <li>HSN or SAC codes, description, quantity and value</li>
+  <li>Taxable value, tax rate and amount split into CGST/SGST or IGST</li>
+  <li>Place of supply</li>
+</ul>
+<p>Confirm the exact invoice format with your CA, especially if e-invoicing rules apply to your turnover.</p>
+
+<h2>Step 5: Collect GSTIN from business buyers</h2>
+<p>If you sell to businesses, add an optional GSTIN field at checkout so they can claim input tax credit. Validate the format to avoid typos.</p>
+
+<h2>Shipping and tax</h2>
+<p>Decide with your CA how shipping charges should be taxed, and configure WooCommerce's shipping tax class accordingly. See <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+
+<h2>Reports for filing</h2>
+<p>Your accountant will need sales data by tax rate and state. Export orders regularly, or use a reporting plugin that summarises tax collected. Keep invoices organised by financial year.</p>
+
+<p>Setting up a new store? See the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> and <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-cash-on-delivery-india',
+    seoTitle: 'Cash on Delivery in WooCommerce: Reduce RTO & Fake Orders',
+    title: 'Cash on Delivery in WooCommerce: How to Offer COD Without Losing Money',
+    description: 'How to set up Cash on Delivery in WooCommerce for Indian customers, reduce returns to origin and fake orders, confirm COD orders, add COD limits and nudge buyers towards prepaid payments.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'website-for-startups', 'landing-page-design'],
+    body: `
+<p>Many Indian shoppers prefer Cash on Delivery, especially first-time buyers who don't yet trust a new store. Offering COD can increase orders, but it also brings refused deliveries, fake orders and return-to-origin (RTO) shipping costs. Here's how to offer it sensibly.</p>
+
+<h2>Turning on COD in WooCommerce</h2>
+<ul>
+  <li>WooCommerce → Settings → Payments → Cash on delivery</li>
+  <li>Set the title and instructions customers will see</li>
+  <li>Choose which shipping methods COD is available for</li>
+</ul>
+<p>Also check that your courier or shipping aggregator supports COD for your customers' pin codes; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup</a>.</p>
+
+<h2>Why COD orders fail</h2>
+<ul>
+  <li>Impulse orders the customer no longer wants</li>
+  <li>Fake or prank orders with wrong details</li>
+  <li>Customer not available or unreachable at delivery</li>
+  <li>Long delivery times giving buyers time to change their minds</li>
+</ul>
+
+<h2>Ways to reduce COD losses</h2>
+<h3>1. Confirm COD orders</h3>
+<p>Send an order confirmation by WhatsApp or SMS, or call, asking the customer to confirm before you ship. Unconfirmed orders can be held or cancelled.</p>
+
+<h3>2. Set limits</h3>
+<ul>
+  <li>Disable COD above a certain order value</li>
+  <li>Disable COD for pin codes with high failure rates</li>
+  <li>Disable COD for certain products (custom or perishable items)</li>
+</ul>
+<p>Plugins can add these rules if WooCommerce's built-in options aren't enough.</p>
+
+<h3>3. Consider a small COD fee</h3>
+<p>A clearly shown COD handling fee covers some costs and nudges buyers to pay online. Make sure it's visible before checkout.</p>
+
+<h3>4. Encourage prepaid orders</h3>
+<ul>
+  <li>Offer a small discount or free shipping for prepaid orders</li>
+  <li>Make UPI payment quick and prominent</li>
+  <li>Explain your refund policy clearly to build trust</li>
+</ul>
+
+<h3>5. Partial advance</h3>
+<p>For high-value items, some stores ask for a small advance online with the rest on delivery. This filters out non-serious orders.</p>
+
+<h3>6. Ship fast and keep customers informed</h3>
+<p>Faster dispatch and tracking updates by WhatsApp or SMS reduce the chance of refusal at the door.</p>
+
+<h2>Track your COD performance</h2>
+<p>Keep a simple record of COD orders, delivered, refused and RTO costs by product and region. It shows where to tighten rules.</p>
+
+<h2>Build trust so buyers pay online</h2>
+<p>Strong product pages, reviews and clear policies make prepaid payments feel safe; see <a href="/blog/woocommerce-product-page-optimization/">product page optimisation</a> and <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments</a>.</p>
+`,
+  },
+  {
+    slug: 'website-ownership-checklist',
+    seoTitle: 'Website Ownership Checklist: What You Must Own and Control',
+    title: 'Website Ownership Checklist: Make Sure You Truly Own Your Website',
+    description: 'A checklist of everything a business should own and control for its website: domain, hosting, admin access, DNS, email, licences, analytics accounts, design files and backups.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['hire-wordpress-developer', 'wordpress-migration', 'wordpress-maintenance'],
+    body: `
+<p>Many business owners discover too late that their domain, hosting or website admin is registered in a developer's or agency's name. If that relationship ends badly, getting control back can take weeks. Use this checklist to make sure you own what you've paid for.</p>
+
+<h2>1. Domain name</h2>
+<ul>
+  <li>Registered in your business name, with your email as the owner contact</li>
+  <li>You have the registrar login</li>
+  <li>Auto-renew on, with a payment method you control</li>
+</ul>
+
+<h2>2. DNS</h2>
+<p>You know where DNS is managed (registrar, host or a service like Cloudflare) and have access. DNS controls your website and email routing; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+
+<h2>3. Hosting account</h2>
+<ul>
+  <li>The account is in your name, or you have full access if a developer manages it</li>
+  <li>You know the renewal date and cost</li>
+</ul>
+
+<h2>4. WordPress administrator access</h2>
+<p>You have your own Administrator account, not just an Editor account. Developers should have their own separate logins that you can remove.</p>
+
+<h2>5. Technical access</h2>
+<p>You know how to get SFTP and database access, or at least have the hosting login that provides it.</p>
+
+<h2>6. Business email</h2>
+<p>Email accounts are under your control, with the admin login in your name.</p>
+
+<h2>7. Premium themes and plugin licences</h2>
+<p>Paid licences should ideally be bought in your name. Otherwise, you may lose updates if the developer's licence lapses.</p>
+
+<h2>8. Analytics and Google accounts</h2>
+<ul>
+  <li>You're the owner of Google Analytics, Search Console and Google Business Profile, and add developers as users</li>
+  <li>Same for Meta Business, ad accounts and tag managers</li>
+</ul>
+
+<h2>9. Design files and brand assets</h2>
+<p>You have your logo files (including vector formats), brand colours and fonts, and any design files for the website.</p>
+
+<h2>10. Backups</h2>
+<p>Backups are stored somewhere you can access, not only inside a developer's account.</p>
+
+<h2>11. Put it in writing</h2>
+<p>Your contract or agreement should state that you own the website, content and accounts once paid. See the <a href="/blog/website-brief-template/">website brief template</a> for planning the project.</p>
+
+<h2>Keep a secure record</h2>
+<p>Store all logins in a password manager, and update it whenever access changes.</p>
+
+<p>Already locked out? See <a href="/blog/regain-website-access-old-developer/">how to regain access from an old developer</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-nutritionists-dietitians',
+    seoTitle: 'Website for Nutritionists & Dietitians: What to Include',
+    title: 'Website for Nutritionists and Dietitians: Attract Clients Online',
+    description: 'How nutritionists and dietitians can build a website that brings consultations: credentials, programmes, online booking, pricing, responsible results, recipes and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>People looking for a nutritionist or dietitian want someone qualified, relatable and practical. Many will also be comparing online consultants from other cities. A good website shows your expertise and makes booking easy.</p>
+
+<h2>What potential clients look for</h2>
+<ul>
+  <li>Your qualifications and registrations</li>
+  <li>Whether you help with their specific goal or condition</li>
+  <li>How consultations work: online, in person, follow-ups</li>
+  <li>Programme costs</li>
+  <li>Your approach: practical food, not extreme diets</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ul>
+  <li><strong>About:</strong> qualifications, experience and your philosophy</li>
+  <li><strong>Programmes:</strong> weight management, diabetes, PCOS, sports nutrition, pregnancy, kids, whatever you offer, each with its own page</li>
+  <li><strong>How it works:</strong> first consultation, plan, follow-ups, support between sessions</li>
+  <li><strong>Pricing or packages</strong></li>
+  <li><strong>Blog or recipes</strong></li>
+  <li><strong>Contact and booking</strong></li>
+</ul>
+
+<h2>Make booking easy</h2>
+<ul>
+  <li>An online booking calendar for consultations</li>
+  <li>Online payment for packages</li>
+  <li>WhatsApp for quick questions; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a></li>
+  <li>A short intake form before the first session</li>
+</ul>
+
+<h2>Share results responsibly</h2>
+<ul>
+  <li>Use testimonials only with written consent</li>
+  <li>Avoid guaranteed weight-loss promises</li>
+  <li>Note that individual results vary</li>
+  <li>Be careful with before/after photos and follow your professional body's guidelines</li>
+</ul>
+
+<h2>Content that builds trust</h2>
+<p>Practical articles and recipes, such as healthy Indian breakfasts, managing festival eating and reading food labels, show your expertise and attract search traffic. A free meal planning guide can build an email or WhatsApp list; see <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets</a>.</p>
+
+<h2>Privacy</h2>
+<p>Health information is sensitive. Keep intake forms secure, collect only what you need and have a clear privacy policy; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy basics</a>.</p>
+
+<h2>Local and online SEO</h2>
+<ul>
+  <li>A Google Business Profile if you see clients in person</li>
+  <li>Pages for each programme targeting specific searches</li>
+  <li>Reviews from happy clients; see <a href="/blog/get-more-google-reviews/">getting more Google reviews</a></li>
+</ul>
+
+<p>Much of the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> applies to nutrition practices too.</p>
+`,
+  },
+  {
+    slug: 'website-for-psychologists-counsellors',
+    seoTitle: 'Website for Psychologists & Counsellors: A Practical Guide',
+    title: 'Website for Psychologists, Therapists and Counsellors',
+    description: 'How psychologists, therapists and counsellors can build a calm, trustworthy website: credentials, approaches, session formats, fees, first-session information, privacy and ethical marketing.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'website-for-lawyers-and-consultants', 'wordpress-seo-services'],
+    body: `
+<p>Reaching out to a therapist is a big step. Someone visiting your website may be anxious, unsure what therapy involves and worried about privacy. Your website should feel calm, answer their questions and make the first contact as easy as possible.</p>
+
+<h2>What potential clients want to know</h2>
+<ul>
+  <li>Are you qualified and registered?</li>
+  <li>Do you work with issues like mine?</li>
+  <li>What is your approach, and what happens in sessions?</li>
+  <li>Online or in person? What does it cost?</li>
+  <li>Is it confidential?</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ul>
+  <li><strong>About:</strong> qualifications, registration, experience and a warm, human introduction</li>
+  <li><strong>Areas of support:</strong> anxiety, stress, relationships, grief, and so on, explained gently</li>
+  <li><strong>Approaches:</strong> the therapies you use (such as CBT) in plain language</li>
+  <li><strong>Sessions and fees:</strong> formats, duration, fees and cancellation policy</li>
+  <li><strong>Your first session:</strong> what to expect, to reduce anxiety</li>
+  <li><strong>FAQs:</strong> confidentiality, number of sessions, online therapy</li>
+  <li><strong>Contact and booking</strong></li>
+</ul>
+
+<h2>Design for calm</h2>
+<ul>
+  <li>Soft, simple design with plenty of space</li>
+  <li>A real, friendly photo of you</li>
+  <li>Clear, gentle language without jargon</li>
+  <li>Easy-to-read text; see <a href="/blog/website-accessibility-basics/">accessibility basics</a></li>
+</ul>
+
+<h2>Make first contact easy</h2>
+<ul>
+  <li>Online booking for an initial consultation</li>
+  <li>A short contact form that doesn't ask for sensitive details</li>
+  <li>Clear response time expectations</li>
+</ul>
+
+<h2>Crisis information</h2>
+<p>Make it clear that your practice is not an emergency service, and point people in crisis to local emergency services and a national mental health helpline (in India, Tele-MANAS).</p>
+
+<h2>Ethical marketing</h2>
+<ul>
+  <li>Many professional bodies discourage or restrict client testimonials for therapists; check your guidelines</li>
+  <li>Avoid promises of cures or outcomes</li>
+  <li>Use helpful articles to show your approach instead of client stories</li>
+</ul>
+
+<h2>Privacy and confidentiality</h2>
+<ul>
+  <li>HTTPS on the whole site</li>
+  <li>Secure booking and payment tools</li>
+  <li>Collect only essential information through forms</li>
+  <li>A clear privacy policy; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy basics</a></li>
+</ul>
+
+<h2>Content and SEO</h2>
+<p>Gentle, practical articles on topics like managing exam stress or starting therapy help people find you and feel comfortable reaching out. Add a Google Business Profile if you see clients in person.</p>
+
+<p>For professional practice websites generally, see <a href="/blog/personal-brand-website-professionals/">personal brand websites for professionals</a>.</p>
 `,
   },
 ];

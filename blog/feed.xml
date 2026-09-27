@@ -1462,5 +1462,47 @@
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
     <description>Why a dedicated thank-you page (or confirmation message) matters after form submissions: reassurance, tracking conversions, next steps, cross-selling and what to include.</description>
   </item>
+  <item>
+    <title>WordPress Caching Explained: How Caching Makes Your Site Faster</title>
+    <link>https://samverse.space/blog/wordpress-caching-explained/</link>
+    <guid>https://samverse.space/blog/wordpress-caching-explained/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A plain-English guide to WordPress caching: page caching, browser caching, object caching, OPcache and CDN caching, which plugin to use, what not to cache and how to clear cache safely.</description>
+  </item>
+  <item>
+    <title>WooCommerce GST Setup and Invoices: A Guide for Indian Online Stores</title>
+    <link>https://samverse.space/blog/woocommerce-gst-invoices-india/</link>
+    <guid>https://samverse.space/blog/woocommerce-gst-invoices-india/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to set up GST in WooCommerce for an Indian store: tax settings, CGST/SGST vs IGST, tax classes, tax-inclusive prices, GST invoice details and when to involve your CA.</description>
+  </item>
+  <item>
+    <title>Cash on Delivery in WooCommerce: How to Offer COD Without Losing Money</title>
+    <link>https://samverse.space/blog/woocommerce-cash-on-delivery-india/</link>
+    <guid>https://samverse.space/blog/woocommerce-cash-on-delivery-india/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to set up Cash on Delivery in WooCommerce for Indian customers, reduce returns to origin and fake orders, confirm COD orders, add COD limits and nudge buyers towards prepaid payments.</description>
+  </item>
+  <item>
+    <title>Website Ownership Checklist: Make Sure You Truly Own Your Website</title>
+    <link>https://samverse.space/blog/website-ownership-checklist/</link>
+    <guid>https://samverse.space/blog/website-ownership-checklist/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A checklist of everything a business should own and control for its website: domain, hosting, admin access, DNS, email, licences, analytics accounts, design files and backups.</description>
+  </item>
+  <item>
+    <title>Website for Nutritionists and Dietitians: Attract Clients Online</title>
+    <link>https://samverse.space/blog/website-for-nutritionists-dietitians/</link>
+    <guid>https://samverse.space/blog/website-for-nutritionists-dietitians/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How nutritionists and dietitians can build a website that brings consultations: credentials, programmes, online booking, pricing, responsible results, recipes and local SEO.</description>
+  </item>
+  <item>
+    <title>Website for Psychologists, Therapists and Counsellors</title>
+    <link>https://samverse.space/blog/website-for-psychologists-counsellors/</link>
+    <guid>https://samverse.space/blog/website-for-psychologists-counsellors/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How psychologists, therapists and counsellors can build a calm, trustworthy website: credentials, approaches, session formats, fees, first-session information, privacy and ethical marketing.</description>
+  </item>
 </channel>
 </rss>

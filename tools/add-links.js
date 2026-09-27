@@ -224,6 +224,13 @@ const LINKS = [
   ['signs-you-need-a-new-website', '<h2>1. It doesn\'t work well on phones</h2>', '<p>Not sure? Run this <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> first.</p>\n\n'],
   ['setup-google-analytics-search-console', '<h2>Step 4: Link the two tools</h2>', '<p>More on tracking the right actions: <a href="/blog/ga4-events-explained/">GA4 events explained</a> and <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</p>\n\n'],
   ['contact-form-not-getting-enquiries', '<h2>Quick fix checklist</h2>', '<p>And confirm every submission properly with a <a href="/blog/thank-you-pages-forms/">thank-you page</a>.</p>\n\n'],
+  // Round 27
+  ['why-is-my-wordpress-site-slow', '<h2>Quick wins you can do today</h2>', '<p>New to caching? Read <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>\n\n'],
+  ['woocommerce-shipping-setup-india', '<h2>4. Couriers and aggregators</h2>', '<p>More on reducing refused deliveries: <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery without losing money</a>.</p>\n\n'],
+  ['accept-online-payments-wordpress-india', '<h2>Testing before you go live</h2>', '<p>Registered under GST? See <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>.</p>\n\n'],
+  ['regain-website-access-old-developer', '<h2>Prevent it happening again</h2>', '<p>Use this <a href="/blog/website-ownership-checklist/">website ownership checklist</a> once you have access back.</p>\n\n'],
+  ['clinic-website-checklist-for-doctors', '<h2>Next step</h2>', '<p>Related guides: websites for <a href="/blog/website-for-nutritionists-dietitians/">nutritionists and dietitians</a> and <a href="/blog/website-for-psychologists-counsellors/">psychologists and counsellors</a>.</p>\n\n'],
+  ['website-for-gyms-fitness-studios', '<h2>Local SEO</h2>', '<p>Offering diet plans too? See <a href="/blog/website-for-nutritionists-dietitians/">websites for nutritionists</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
