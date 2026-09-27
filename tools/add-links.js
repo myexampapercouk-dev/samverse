@@ -57,6 +57,16 @@ const LINKS = [
   ['solar-company-website-guide', '<h2>Running ads?</h2>', '<p>Rental and hire businesses in the power sector have their own needs; see <a href="/blog/equipment-rental-website-guide/">equipment and generator rental websites</a>.</p>\n\n'],
   ['personal-brand-website-professionals', '<h2>Stay professional</h2>', '<p>Fitness trainers and yoga teachers can apply the same ideas; see <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms and fitness trainers</a>.</p>\n\n'],
   ['website-for-interior-designers-architects', '<h2>Design and performance</h2>', '<p>Many of the same principles apply to any creative portfolio; see <a href="/blog/portfolio-website-freelancers-creatives/">portfolio websites for freelancers and creatives</a>.</p>\n\n'],
+  // Round 3
+  ['wordpress-maintenance-checklist', '<h2>Monthly</h2>', '<p>For a deeper look at backups and restores, see the <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a>.</p>\n\n'],
+  ['wordpress-security-checklist', '<h2>Hosting and server</h2>', '<p>More on getting backups right: <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>\n\n'],
+  ['woocommerce-store-launch-checklist', '<h2>After launch</h2>', '<p>Once live, keep improving: see <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a> and <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a>.</p>\n\n'],
+  ['woocommerce-vs-shopify-india', '<h2>Speed and performance</h2>', '<p>Organic search matters for stores too; see <a href="/blog/woocommerce-seo-guide/">how to rank WooCommerce product and category pages</a>.</p>\n\n'],
+  ['google-business-profile-checklist', '<h2>Posts, Q&amp;A and messaging</h2>', '<p>For templates and what to avoid, read <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a>.</p>\n\n'],
+  ['local-seo-guide-small-business-india', '<h2>Step 3: Keep your NAP consistent</h2>', '<p>Need a steady flow of reviews? See <a href="/blog/get-more-google-reviews/">how to get more Google reviews the ethical way</a>.</p>\n\n'],
+  ['on-page-seo-checklist', '<h2>Technical</h2>', '<p>Why links between your own pages matter so much: <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>\n\n'],
+  ['get-website-indexed-google-faster', '<h2>Common blockers</h2>', '<p>For a full health check, work through the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit checklist</a>.</p>\n\n'],
+  ['website-traffic-dropped', '<h2>What not to do</h2>', '<p>A structured <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit</a> often reveals the cause.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

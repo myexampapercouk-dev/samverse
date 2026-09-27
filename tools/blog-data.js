@@ -443,6 +443,8 @@ module.exports = [
 <h2>Real costs over the first year</h2>
 <p>With WooCommerce, your running costs are mainly hosting, a domain and any premium plugins you choose, plus maintenance if you use a developer. With Shopify, you pay the monthly plan, and paid apps for features like reviews, filters or WhatsApp often add a noticeable amount each month. For many small Indian stores, WooCommerce works out cheaper over time, while Shopify saves time on maintenance.</p>
 
+<p>Organic search matters for stores too; see <a href="/blog/woocommerce-seo-guide/">how to rank WooCommerce product and category pages</a>.</p>
+
 <h2>Speed and performance</h2>
 <p>Shopify's hosting is fast by default. WooCommerce can be just as fast on good hosting with caching and optimized images. Cheap hosting is the main reason WooCommerce stores feel slow.</p>
 
@@ -471,6 +473,8 @@ module.exports = [
   <li><strong>Test your contact form.</strong> Send a test enquiry and make sure it arrives. Broken forms mean lost leads.</li>
   <li><strong>Moderate comments</strong> and delete spam.</li>
 </ul>
+
+<p>For a deeper look at backups and restores, see the <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a>.</p>
 
 <h2>Monthly</h2>
 <ul>
@@ -591,6 +595,8 @@ module.exports = [
   <li>Reply to every review, positive or negative, politely and professionally.</li>
   <li>Never buy fake reviews. They violate Google's policies and can get your profile suspended.</li>
 </ul>
+
+<p>Need a steady flow of reviews? See <a href="/blog/get-more-google-reviews/">how to get more Google reviews the ethical way</a>.</p>
 
 <h2>Step 3: Keep your NAP consistent</h2>
 <p>NAP means Name, Address, Phone. Make sure it's exactly the same on your website, Google Business Profile, Justdial, IndiaMART, Facebook and any other directory. Inconsistent details confuse Google.</p>
@@ -1132,6 +1138,8 @@ module.exports = [
   <li><strong>Test restoring a backup</strong> occasionally. An untested backup might fail when you need it.</li>
 </ol>
 
+<p>More on getting backups right: <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>
+
 <h2>Hosting and server</h2>
 <ol start="16">
   <li><strong>Choose reputable hosting</strong> with malware scanning, firewalls and account isolation.</li>
@@ -1385,6 +1393,8 @@ module.exports = [
   <li>Reply to every review, thanking positive reviewers and responding calmly and helpfully to negative ones.</li>
   <li>Never buy reviews or offer incentives for them. It violates Google's policies.</li>
 </ol>
+
+<p>For templates and what to avoid, read <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a>.</p>
 
 <h2>Posts, Q&amp;A and messaging</h2>
 <ul>
@@ -2401,6 +2411,8 @@ module.exports = [
 <h3>6. Make sure the site is fast and mobile-friendly</h3>
 <p>Google crawls with a mobile browser. Slow, broken or hard-to-render pages can delay indexing.</p>
 
+<p>For a full health check, work through the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit checklist</a>.</p>
+
 <h2>Common blockers</h2>
 <ul>
   <li>WordPress "Discourage search engines from indexing this site" left on after launch</li>
@@ -2847,6 +2859,8 @@ module.exports = [
   <li>Analytics tracking purchases and key events</li>
 </ol>
 
+<p>Once live, keep improving: see <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a> and <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a>.</p>
+
 <h2>After launch</h2>
 <p>Watch the first orders closely, reply quickly to customer questions, and check reports weekly. Keep plugins updated and the store backed up; see the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>. Need help setting it all up? See <a href="/woocommerce-developer/">WooCommerce store development</a>.</p>
 `,
@@ -3247,6 +3261,8 @@ module.exports = [
   <li><strong>Images:</strong> compressed, sized properly, with descriptive alt text and file names. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</li>
 </ol>
 
+<p>Why links between your own pages matter so much: <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
+
 <h2>Technical</h2>
 <ol start="13">
   <li><strong>Schema markup</strong> where relevant: Service, Product, Article, FAQ, Breadcrumb. See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</li>
@@ -3441,6 +3457,8 @@ module.exports = [
 
 <h2>Step 7: Did competitors improve?</h2>
 <p>Search your main keywords. If new or improved competitor pages now outrank you, study what they offer that you don't, whether that's more depth, better examples, fresher information or faster pages.</p>
+
+<p>A structured <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit</a> often reveals the cause.</p>
 
 <h2>What not to do</h2>
 <ul>
@@ -3848,6 +3866,394 @@ module.exports = [
 </ul>
 
 <p>A beautiful, fast website with real stories and easy enquiries helps you book the events you want. See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-backup-restore-guide',
+    seoTitle: 'WordPress Backup & Restore Guide for Business Owners',
+    title: 'WordPress Backup and Restore: A Simple Guide for Business Owners',
+    description: 'How WordPress backups work, what to back up, how often, where to store copies, and how to restore your site safely when something goes wrong, explained simply.',
+    date: '2026-09-27',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
+    body: `
+<p>Backups are like insurance: easy to ignore until the day you need them. A failed update, a hack, a hosting problem or an accidental deletion can take your website down. With a good backup, you're back online quickly. Without one, you may be rebuilding from scratch.</p>
+
+<h2>What a WordPress backup includes</h2>
+<ul>
+  <li><strong>Files:</strong> WordPress core, your theme, plugins and the uploads folder (images, PDFs and other media)</li>
+  <li><strong>Database:</strong> your pages, posts, products, orders, settings and users</li>
+</ul>
+<p>You need both. A files-only backup loses your content; a database-only backup loses your images and design.</p>
+
+<h2>How often to back up</h2>
+<table>
+  <thead><tr><th>Type of site</th><th>Suggested frequency</th></tr></thead>
+  <tbody>
+    <tr><td>Brochure site that rarely changes</td><td>Weekly, plus before every update</td></tr>
+    <tr><td>Business site with a regular blog</td><td>Daily</td></tr>
+    <tr><td>WooCommerce store taking orders</td><td>Daily or more often (orders change constantly)</td></tr>
+  </tbody>
+</table>
+<p>Always take a backup immediately before updates, redesigns or migrations.</p>
+
+<h2>Where to store backups</h2>
+<ul>
+  <li><strong>Off-site:</strong> cloud storage such as Google Drive, Dropbox or Amazon S3, not only on the same server. If the server fails or is hacked, backups stored there can be lost too.</li>
+  <li><strong>Multiple copies:</strong> keep several recent backups, not just the latest, in case a problem went unnoticed for a few days.</li>
+  <li><strong>Secure:</strong> backups contain your data, so protect access to them.</li>
+</ul>
+
+<h2>Ways to back up WordPress</h2>
+<ol>
+  <li><strong>Hosting backups:</strong> many hosts take automatic daily backups. Check how long they keep them and how to restore.</li>
+  <li><strong>Backup plugins:</strong> schedule automatic backups to cloud storage and restore with a few clicks.</li>
+  <li><strong>Managed maintenance:</strong> a developer handles backups, monitoring and restores for you.</li>
+</ol>
+
+<h2>How to restore safely</h2>
+<ol>
+  <li>Stay calm and don't make more changes to the broken site</li>
+  <li>Pick the most recent backup from before the problem started</li>
+  <li>If possible, restore to a staging site first to check it works</li>
+  <li>Restore files and database, then test key pages, forms and checkout</li>
+  <li>For hacked sites, clean and secure the site too. Restoring alone may bring the vulnerability back. See <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>.</li>
+</ol>
+
+<h2>Test your backups</h2>
+<p>A backup you've never restored is a backup you can't fully trust. Every few months, restore a copy to a staging site and check it works.</p>
+
+<h2>Checklist</h2>
+<ul>
+  <li>Automatic backups of files and database</li>
+  <li>Stored off-site, with several copies kept</li>
+  <li>Extra backup before every update</li>
+  <li>Restore tested every few months</li>
+</ul>
+
+<p>Backups are the first item in any good <a href="/wordpress-maintenance/">maintenance plan</a>. See also the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-product-page-optimization',
+    seoTitle: 'WooCommerce Product Page Optimization for More Sales',
+    title: 'WooCommerce Product Page Optimization: 12 Ways to Sell More',
+    description: 'How to optimize WooCommerce product pages for more sales: photos, titles, descriptions, pricing clarity, trust signals, reviews, delivery info, mobile layout and speed.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-speed-optimization', 'landing-page-design'],
+    body: `
+<p>Your product page is where the buying decision happens. Small improvements there often lift sales more than extra traffic does. Here are 12 practical ways to make WooCommerce product pages sell better.</p>
+
+<h2>Show the product properly</h2>
+<ol>
+  <li><strong>High-quality photos from several angles</strong>, plus close-ups, scale and in-use shots. Compress them so the page stays fast.</li>
+  <li><strong>A short video</strong> where it helps, such as unboxing, how it works or texture.</li>
+  <li><strong>Clear variation selection</strong> (size, colour, weight) with swatches and the right photo shown for each option.</li>
+</ol>
+
+<h2>Write to sell, and to rank</h2>
+<ol start="4">
+  <li><strong>Descriptive titles</strong> that include what buyers search for (for example "Cold-pressed groundnut oil, 1 litre").</li>
+  <li><strong>Benefit-led descriptions:</strong> start with why it matters, then details, ingredients or specifications. Write your own. Copied manufacturer text is used by every competitor.</li>
+  <li><strong>Scannable specifications</strong> in a short list or table.</li>
+</ol>
+
+<h2>Remove doubts</h2>
+<ol start="7">
+  <li><strong>Clear pricing:</strong> show the price, any discount, taxes and whether shipping is extra, before checkout.</li>
+  <li><strong>Delivery information:</strong> estimated delivery time, shipping cost and Cash on Delivery availability near the "Add to cart" button.</li>
+  <li><strong>Returns and guarantees:</strong> a short summary with a link to the full policy.</li>
+  <li><strong>Genuine reviews and ratings.</strong> Encourage customers to review after delivery. Never fake reviews.</li>
+</ol>
+
+<h2>Make buying effortless</h2>
+<ol start="11">
+  <li><strong>Mobile-first layout:</strong> price, options and a sticky "Add to cart" button visible without hunting.</li>
+  <li><strong>Help when needed:</strong> a WhatsApp button for quick questions about size, usage or delivery. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</li>
+</ol>
+
+<h2>Don't forget speed</h2>
+<p>Slow product pages lose sales, especially on mobile data. Optimize images, limit heavy plugins and use good hosting; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
+
+<h2>Measure and improve</h2>
+<ul>
+  <li>Track add-to-cart and purchase rates per product in analytics</li>
+  <li>Look for pages with traffic but few add-to-carts, and improve photos, price clarity or descriptions</li>
+  <li>Test one change at a time</li>
+</ul>
+
+<p>For search visibility, read <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO: ranking product and category pages</a>. Need a store built or improved? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-seo-guide',
+    seoTitle: 'WooCommerce SEO: Rank Product & Category Pages',
+    title: 'WooCommerce SEO: How to Rank Your Product and Category Pages',
+    description: 'A practical WooCommerce SEO guide: keyword research, category page content, product titles and descriptions, product schema, duplicate content, site structure and speed.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-seo-services', 'wordpress-speed-optimization'],
+    body: `
+<p>Paid ads and marketplaces bring sales, but organic search traffic is the channel that keeps working without a cost per click. Here's how to help Google find, understand and rank your WooCommerce store.</p>
+
+<h2>1. Research what buyers search</h2>
+<p>Buyers search at two levels: <strong>category searches</strong> ("organic spices online", "men's leather wallets") and <strong>product searches</strong> ("cold-pressed coconut oil 1 litre"). Map category keywords to category pages and specific terms to product pages.</p>
+
+<h2>2. Build a clear store structure</h2>
+<ul>
+  <li>Logical categories and subcategories that match how people shop</li>
+  <li>Each product in one main category (avoid scattering it across many)</li>
+  <li>Breadcrumbs so shoppers and Google understand the hierarchy</li>
+  <li>Clean URLs like <code>/shop/spices/turmeric-powder/</code></li>
+</ul>
+
+<h2>3. Treat category pages as landing pages</h2>
+<p>Category pages often have the best chance of ranking for broader searches. Add a short, useful introduction (what's in the range, how to choose), a unique title and description, and FAQs where helpful. Many stores leave category pages as a bare grid of products and miss this opportunity.</p>
+
+<h2>4. Optimize product pages</h2>
+<ul>
+  <li><strong>Unique descriptions:</strong> never copy manufacturer text used across the web</li>
+  <li><strong>Descriptive titles</strong> with key attributes (size, material, variant)</li>
+  <li><strong>Image alt text</strong> describing the product</li>
+  <li><strong>Reviews:</strong> fresh, genuine customer content that also builds trust</li>
+</ul>
+<p>See also <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a> for conversion tips.</p>
+
+<h2>5. Product schema</h2>
+<p>WooCommerce and SEO plugins add Product schema (price, availability, reviews), which can make your listings eligible for richer search results. Keep prices and stock status accurate. See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+
+<h2>6. Handle duplicate and thin pages</h2>
+<ul>
+  <li>Filtered and sorted URLs (by price, colour) can create many near-duplicate pages. Keep them out of the index or canonicalised to the main category.</li>
+  <li>Variations should normally live on one product page rather than separate near-identical products.</li>
+  <li>Out-of-stock products: keep the page if it will return, and redirect it to the closest alternative if discontinued.</li>
+</ul>
+
+<h2>7. Speed and mobile</h2>
+<p>Stores are image-heavy and plugin-heavy. Optimized images, caching (with cart and checkout excluded) and good hosting keep product and category pages fast. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>8. Content beyond products</h2>
+<p>Buying guides, comparisons and how-to articles attract shoppers earlier in their research and link naturally to categories and products.</p>
+
+<h2>Quick checklist</h2>
+<ol>
+  <li>Keyword map for categories and products</li>
+  <li>Intro content on every main category</li>
+  <li>Unique product descriptions and alt text</li>
+  <li>Product schema working</li>
+  <li>Filter URLs controlled</li>
+  <li>Sitemap submitted and pages indexed</li>
+</ol>
+
+<p>Want help with store SEO? See <a href="/wordpress-seo-services/">WordPress SEO services</a> and <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'get-more-google-reviews',
+    seoTitle: 'How to Get More Google Reviews (Ethically)',
+    title: 'How to Get More Google Reviews for Your Business (the Ethical Way)',
+    description: 'Practical, policy-safe ways to get more Google reviews: when and how to ask, review links and QR codes, templates, replying to reviews and what never to do.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
+    body: `
+<p>Google reviews influence where you appear in local results and whether people choose you. Most happy customers are willing to leave one; they just need to be asked at the right moment, in a simple way. Here's how to build reviews steadily and ethically.</p>
+
+<h2>Why reviews matter</h2>
+<ul>
+  <li>They're a significant factor in local search and Google Maps rankings</li>
+  <li>People read them before calling, visiting or buying</li>
+  <li>Your replies show potential customers how you treat people</li>
+</ul>
+
+<h2>When to ask</h2>
+<p>Ask right after a positive moment: a successful project handover, a happy patient visit, a smooth delivery, or when a customer thanks you. That's when goodwill is highest.</p>
+
+<h2>How to make it easy</h2>
+<ol>
+  <li><strong>Get your review link</strong> from your Google Business Profile and shorten it if needed.</li>
+  <li><strong>Send it personally</strong> on WhatsApp or email with a short, friendly message.</li>
+  <li><strong>Use a QR code</strong> at your reception, counter or on invoices for in-person businesses.</li>
+  <li><strong>Add a link</strong> to your email signature and thank-you pages.</li>
+</ol>
+
+<h2>A simple message template</h2>
+<blockquote>Hi {Name}, thank you for choosing us! If you were happy with {service}, would you mind leaving a quick Google review? It really helps other people find us: {review link}</blockquote>
+<p>Keep it personal and short. Don't script what they should say.</p>
+
+<h2>Reply to every review</h2>
+<ul>
+  <li><strong>Positive reviews:</strong> thank them by name and mention something specific.</li>
+  <li><strong>Negative reviews:</strong> stay calm and professional, apologise for their experience, offer to resolve it offline, and never share private details.</li>
+  <li><strong>Reply promptly.</strong> It shows you care.</li>
+</ul>
+
+<h2>What never to do</h2>
+<ul>
+  <li><strong>Don't buy reviews</strong> or use review exchanges</li>
+  <li><strong>Don't offer discounts or gifts</strong> in return for reviews</li>
+  <li><strong>Don't ask only happy customers</strong> through gated systems that filter out unhappy ones</li>
+  <li><strong>Don't write reviews</strong> for yourself or ask staff to</li>
+</ul>
+<p>These practices break Google's policies and can lead to reviews being removed or your profile being penalised.</p>
+
+<h2>Make reviews a habit</h2>
+<p>A steady flow of genuine reviews beats a sudden burst. Build asking into your process: after every project, appointment or delivery.</p>
+
+<h2>Use reviews on your website too</h2>
+<p>Show a few genuine reviews on your website (with permission), near calls to action. For the full picture of local visibility, see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> and the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a>.</p>
+`,
+  },
+  {
+    slug: 'internal-linking-explained',
+    seoTitle: 'Internal Linking Explained for Small Business Websites',
+    title: 'Internal Linking Explained: How Linking Your Own Pages Helps SEO',
+    description: 'What internal links are, why they matter for SEO and visitors, and a simple strategy for linking service pages, blog posts and case studies on a small business website.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign', 'wordpress-website-development'],
+    body: `
+<p>Internal links are links from one page on your website to another. They're one of the few SEO factors you fully control, and on many small business sites they're badly underused.</p>
+
+<h2>Why internal links matter</h2>
+<ul>
+  <li><strong>Discovery:</strong> search engines find pages by following links. Pages with no internal links (orphan pages) are often missed.</li>
+  <li><strong>Importance:</strong> pages that receive more internal links, especially from strong pages like your homepage, are seen as more important.</li>
+  <li><strong>Context:</strong> the link text tells search engines what the linked page is about.</li>
+  <li><strong>Visitors:</strong> good links guide people to the next useful page and towards enquiring.</li>
+</ul>
+
+<h2>A simple structure for small business sites</h2>
+<ol>
+  <li><strong>Homepage</strong> links to every main service page</li>
+  <li><strong>Service pages</strong> link to related services, case studies and relevant articles</li>
+  <li><strong>Blog posts</strong> link to the matching service page and to 1–3 related posts</li>
+  <li><strong>Case studies</strong> link to the services used</li>
+</ol>
+<p>This creates topic clusters: groups of related content that point to one main commercial page.</p>
+
+<h2>Write good anchor text</h2>
+<ul>
+  <li>Describe the destination: "WordPress speed optimization" rather than "click here"</li>
+  <li>Keep it natural. Don't force the exact same keyword into every link.</li>
+  <li>Link where it genuinely helps the reader</li>
+</ul>
+
+<h2>Where to add links</h2>
+<ul>
+  <li><strong>In the body text</strong>, where they carry the most weight and are most useful</li>
+  <li><strong>Navigation and footer</strong> for your most important pages</li>
+  <li><strong>Related content sections</strong> at the end of posts and service pages</li>
+  <li><strong>Breadcrumbs</strong> to show the page hierarchy</li>
+</ul>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>Orphan pages that nothing links to</li>
+  <li>Important service pages buried several clicks deep</li>
+  <li>Links added only by JavaScript that search engines may not reliably follow</li>
+  <li>Broken internal links after URLs change</li>
+  <li>Dozens of links stuffed into one paragraph</li>
+</ul>
+
+<h2>A quick internal linking routine</h2>
+<ol>
+  <li>When you publish a new page, link to it from 2–3 related existing pages</li>
+  <li>Link from the new page to the relevant service page</li>
+  <li>Check for broken links monthly</li>
+</ol>
+
+<h2>How this site does it</h2>
+<p>Every service page links to related services and articles, every article links to its service page and related articles, and the homepage links to all services. It's part of the build described in the <a href="/work/samverse/">Samverse case study</a>. For the wider checklist, see the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'technical-seo-audit-wordpress',
+    seoTitle: 'Technical SEO Audit Checklist for WordPress',
+    title: 'Technical SEO Audit Checklist for WordPress Websites',
+    description: 'A step-by-step technical SEO audit for WordPress: crawling and indexing, sitemaps, robots.txt, redirects, canonicals, HTTPS, speed, mobile, structured data and duplicate content.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-speed-optimization', 'wordpress-migration'],
+    body: `
+<p>Great content can't rank if search engines struggle to crawl, index or understand your site. A technical SEO audit finds those hidden problems. Use this checklist once a year, after redesigns or migrations, or whenever traffic drops unexpectedly.</p>
+
+<h2>1. Indexing</h2>
+<ul>
+  <li>Search Console → Pages: how many pages are indexed vs not indexed, and why?</li>
+  <li>WordPress Settings → Reading: "Discourage search engines" must be off</li>
+  <li>No accidental <code>noindex</code> on important pages</li>
+  <li>Thin or low-value pages (tag archives, author archives on single-author sites) intentionally excluded if needed</li>
+</ul>
+
+<h2>2. Crawlability</h2>
+<ul>
+  <li>robots.txt doesn't block important content, CSS or JavaScript</li>
+  <li>XML sitemap exists, contains only indexable URLs, and is submitted in Search Console</li>
+  <li>Important pages reachable within a few clicks from the homepage</li>
+  <li>No important links that only work with JavaScript</li>
+</ul>
+
+<h2>3. One version of the site</h2>
+<ul>
+  <li>HTTPS everywhere, with a valid certificate</li>
+  <li>http → https and www/non-www redirects to one preferred version</li>
+  <li>Canonical tags pointing to the correct URLs on every page</li>
+  <li>Staging or temporary domains not indexable</li>
+</ul>
+
+<h2>4. Redirects and errors</h2>
+<ul>
+  <li>No broken internal links (404s)</li>
+  <li>Old URLs redirected (301) to their new equivalents</li>
+  <li>No redirect chains or loops</li>
+  <li>A helpful custom 404 page</li>
+</ul>
+
+<h2>5. Duplicate content</h2>
+<ul>
+  <li>Unique title tags and meta descriptions on every page</li>
+  <li>No near-duplicate pages targeting the same keyword</li>
+  <li>Filter, sort and tracking parameters not creating indexable duplicates</li>
+</ul>
+
+<h2>6. Speed and Core Web Vitals</h2>
+<ul>
+  <li>Search Console → Core Web Vitals report</li>
+  <li>PageSpeed Insights for key templates: homepage, service page, article, product</li>
+  <li>Images optimized, caching on, unnecessary scripts removed</li>
+</ul>
+<p>See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>7. Mobile usability</h2>
+<ul>
+  <li>No horizontal scrolling or tiny tap targets</li>
+  <li>Text readable without zooming</li>
+  <li>Pop-ups not blocking content</li>
+</ul>
+
+<h2>8. Structured data</h2>
+<ul>
+  <li>Organization/LocalBusiness, Breadcrumb, Article, Product and FAQ where relevant</li>
+  <li>No errors in Search Console enhancement reports</li>
+</ul>
+
+<h2>9. Security</h2>
+<ul>
+  <li>No security issues or manual actions in Search Console</li>
+  <li>WordPress, plugins and themes up to date</li>
+</ul>
+
+<h2>10. Internal links and structure</h2>
+<ul>
+  <li>No orphan pages</li>
+  <li>Service pages linked from the homepage and relevant articles</li>
+</ul>
+<p>See <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
+
+<h2>Prioritise the fixes</h2>
+<p>Fix indexing blockers first, then duplicate versions and redirects, then speed and structured data. Need a professional review? See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
 ];
