@@ -88,6 +88,13 @@ const LINKS = [
   ['wordpress-security-checklist', '<h2>Logins and users</h2>', '<p>Worried updates will break things? Follow <a href="/blog/update-wordpress-safely/">this safe update process</a>.</p>\n\n'],
   ['redesign-website-without-losing-rankings', '<h2>At launch</h2>', '<p>New to staging? See <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>\n\n'],
   ['wordpress-backup-restore-guide', '<h2>Test your backups</h2>', '<p>A <a href="/blog/staging-sites-explained/">staging site</a> is the ideal place to test restores.</p>\n\n'],
+  // Round 6
+  ['website-for-export-businesses', '<h2>Communication</h2>', '<p>If you also handle freight, see <a href="/blog/website-for-logistics-transport-companies/">websites for logistics and transport companies</a>.</p>\n\n'],
+  ['website-for-gyms-fitness-studios', '<h2>Content that builds trust</h2>', '<p>Salons and spas share many of these needs; see <a href="/blog/website-for-salons-spas/">websites for salons and spas</a>.</p>\n\n'],
+  ['real-estate-website-must-have-features', '<h2>SEO for real estate websites</h2>', '<p>Contractors and builders working on projects should also read <a href="/blog/website-for-construction-companies/">websites for construction companies</a>.</p>\n\n'],
+  ['website-for-interior-designers-architects', '<h2>Get found locally</h2>', '<p>Selling furniture as well? See <a href="/blog/website-for-furniture-businesses/">websites for furniture showrooms and manufacturers</a>.</p>\n\n'],
+  ['woocommerce-product-page-optimization', '<h2>Measure and improve</h2>', '<p>High-value products need extra trust; see <a href="/blog/website-for-jewellers/">websites for jewellers</a> for a good example.</p>\n\n'],
+  ['startup-website-checklist', '<h2>Speed matters</h2>', '<p>IT services firms have their own priorities; see <a href="/blog/website-for-it-software-companies/">websites for IT and software companies</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

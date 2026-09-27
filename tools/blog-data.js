@@ -1892,6 +1892,8 @@ module.exports = [
   <li><strong>Fast, mobile-first pages and campaign landing pages.</strong> Most property ads are clicked on phones. Dedicated landing pages for each project campaign, with conversion tracking, make ad spend far more efficient. Read about the <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a>.</li>
 </ol>
 
+<p>Contractors and builders working on projects should also read <a href="/blog/website-for-construction-companies/">websites for construction companies</a>.</p>
+
 <h2>SEO for real estate websites</h2>
 <ul>
   <li>Target project names, locality and configuration searches ("3BHK flats in {locality}")</li>
@@ -2076,6 +2078,8 @@ module.exports = [
 
 <h2>Build for iteration</h2>
 <p>Your messaging will change as you learn from customers. Build the site so your team can edit headlines, add landing pages for campaigns and publish articles without a developer. That's where WordPress with a visual builder shines. For campaigns, dedicated <a href="/landing-page-design/">landing pages</a> let you test offers quickly.</p>
+
+<p>IT services firms have their own priorities; see <a href="/blog/website-for-it-software-companies/">websites for IT and software companies</a>.</p>
 
 <h2>Speed matters</h2>
 <p>A fast site signals competence and helps SEO. Use a lightweight theme, optimized images and good hosting from the start. Retrofitting speed later is harder.</p>
@@ -3600,6 +3604,8 @@ module.exports = [
 <h2>Design and performance</h2>
 <p>Your site should reflect your aesthetic, with generous white space, elegant typography and large imagery, without being slow. Large project photos must be properly compressed and served in modern formats; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
 
+<p>Selling furniture as well? See <a href="/blog/website-for-furniture-businesses/">websites for furniture showrooms and manufacturers</a>.</p>
+
 <h2>Get found locally</h2>
 <ul>
   <li>Target searches like "interior designer in {city}" and "office interior design {city}"</li>
@@ -3650,6 +3656,8 @@ module.exports = [
   <li><strong>WhatsApp</strong> for quick questions about timings and fees</li>
   <li><strong>Landing pages</strong> for seasonal campaigns (New Year, summer, corporate plans). See <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</li>
 </ul>
+
+<p>Salons and spas share many of these needs; see <a href="/blog/website-for-salons-spas/">websites for salons and spas</a>.</p>
 
 <h2>Content that builds trust</h2>
 <ul>
@@ -4010,6 +4018,8 @@ module.exports = [
 <h2>Don't forget speed</h2>
 <p>Slow product pages lose sales, especially on mobile data. Optimize images, limit heavy plugins and use good hosting; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
 
+<p>High-value products need extra trust; see <a href="/blog/website-for-jewellers/">websites for jewellers</a> for a good example.</p>
+
 <h2>Measure and improve</h2>
 <ul>
   <li>Track add-to-cart and purchase rates per product in analytics</li>
@@ -4364,6 +4374,8 @@ module.exports = [
 <p>Relevant certifications (such as ISO, CE, FDA registration, organic or food safety certifications, depending on your products), clearly displayed and verifiable.</p>
 <h3>Export information</h3>
 <p>Countries served, typical lead times, shipping terms offered (FOB, CIF and so on), ports and payment terms. Be accurate: buyers will hold you to it.</p>
+
+<p>If you also handle freight, see <a href="/blog/website-for-logistics-transport-companies/">websites for logistics and transport companies</a>.</p>
 
 <h2>Communication</h2>
 <ul>
@@ -4918,6 +4930,313 @@ module.exports = [
 
 <h2>Is staging worth it for small sites?</h2>
 <p>For small, simple sites, a backup before each update may be enough. For stores, busy sites and redesigns, staging saves you from expensive downtime. It's standard practice for <a href="/website-redesign/">redesigns</a> and careful <a href="/blog/update-wordpress-safely/">WordPress updates</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-logistics-transport-companies',
+    seoTitle: 'Websites for Logistics & Transport Companies',
+    title: 'Websites for Logistics and Transport Companies: Winning Business Clients',
+    description: 'What logistics, freight and transport companies need on their websites: services by mode, coverage, fleet, industries served, quote forms, tracking links and trust signals.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Businesses choosing a logistics partner want reliability above all. Before they call, they check your website for the services, coverage and capacity they need, and for signs you can be trusted with their goods.</p>
+
+<h2>What business clients look for</h2>
+<ul>
+  <li>The services you offer: FTL/PTL trucking, warehousing, freight forwarding, express delivery, last-mile, cold chain</li>
+  <li>Routes and coverage: cities, states and international lanes</li>
+  <li>Fleet and infrastructure: vehicle types, capacity, warehouses</li>
+  <li>Industries served and handling capabilities</li>
+  <li>How to get a quote and track shipments</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ol>
+  <li><strong>Service pages:</strong> one per mode or service, with who it's for and how it works</li>
+  <li><strong>Coverage:</strong> a clear map or list of locations and lanes</li>
+  <li><strong>Fleet and facilities:</strong> real photos, vehicle types and warehouse details</li>
+  <li><strong>Industries:</strong> manufacturing, e-commerce, FMCG, pharma, and the specific needs you handle</li>
+  <li><strong>Quote request:</strong> origin, destination, cargo type, weight or volume, dates</li>
+  <li><strong>Tracking:</strong> a clear link to your tracking system if you have one</li>
+</ol>
+
+<h2>Build trust</h2>
+<ul>
+  <li>Years of operation and clients served (only what you can support)</li>
+  <li>Certifications, registrations and insurance coverage</li>
+  <li>Client logos and testimonials, with permission</li>
+  <li>Safety and compliance practices</li>
+</ul>
+
+<h2>Make it fast to enquire</h2>
+<p>Logistics enquiries are often urgent. Put phone, WhatsApp and a short quote form on every page, and route enquiries to someone who replies quickly. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+
+<h2>SEO for logistics companies</h2>
+<ul>
+  <li>Target service and lane searches: "transport services from {city} to {city}", "warehousing in {city}"</li>
+  <li>Create location pages only where you genuinely operate, with real local details</li>
+  <li>Keep a strong Google Business Profile for each branch</li>
+  <li>Publish helpful guides on packaging, documentation and shipping times</li>
+</ul>
+
+<p>Logistics buyers think like B2B purchasers; see <a href="/blog/b2b-manufacturer-website-guide/">how B2B websites generate enquiries</a> and <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-salons-spas',
+    seoTitle: 'Websites for Salons & Spas: Get More Bookings',
+    title: 'Websites for Salons and Spas: Getting More Bookings Online',
+    description: 'What salons, spas and beauty studios need on their websites: service menus with prices, online booking, stylist profiles, gallery, offers, reviews and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>People choose a salon or spa based on looks, trust and convenience. They want to see your work, check prices and book without phone tag. A good website makes all three easy.</p>
+
+<h2>Must-haves</h2>
+<ol>
+  <li><strong>Service menu with prices</strong> (or "starting from"), grouped by hair, skin, nails, spa and bridal</li>
+  <li><strong>Online booking</strong> through a booking plugin or your salon software, or at least WhatsApp booking</li>
+  <li><strong>Gallery of your work:</strong> real photos of cuts, colours, makeup and nails, with client consent</li>
+  <li><strong>Team profiles:</strong> stylists and therapists with specialties</li>
+  <li><strong>Location, hours and parking</strong>, with a map</li>
+  <li><strong>Reviews</strong> and a link to your Google reviews</li>
+</ol>
+
+<h2>Drive bookings</h2>
+<ul>
+  <li>First-visit offers and seasonal packages (festive, wedding season)</li>
+  <li>Bridal and group packages with an enquiry form</li>
+  <li>Gift vouchers sold online</li>
+  <li>A WhatsApp button for quick questions; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a></li>
+  <li>Landing pages for campaigns; see <a href="/landing-page-design/">landing page design</a></li>
+</ul>
+
+<h2>Design tips</h2>
+<p>Your website should feel like your salon: clean, stylish and welcoming. Use large, high-quality photos, compressed so pages stay fast, and make the booking button impossible to miss on mobile.</p>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "salon near me", "bridal makeup in {area}" and "spa in {city}"</li>
+  <li>Complete your Google Business Profile with photos, services and prices</li>
+  <li>Encourage reviews after appointments; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a></li>
+  <li>Post new work regularly on Instagram and link back to your site</li>
+</ul>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>No prices at all, which leads to endless enquiry calls</li>
+  <li>Instagram-only presence with no bookable website</li>
+  <li>Slow galleries with huge images</li>
+</ul>
+
+<p>Ready to fill your appointment book? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-construction-companies',
+    seoTitle: 'Websites for Construction Companies & Contractors',
+    title: 'Websites for Construction Companies and Contractors',
+    description: 'How construction companies and contractors can win projects online: service pages, project portfolios, capabilities, safety and compliance, testimonials, tender-ready information and SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'real-estate-website-design', 'wordpress-website-development'],
+    body: `
+<p>Whether you build homes, commercial buildings or industrial facilities, clients and consultants check your website to judge your experience and reliability. A strong website helps you get shortlisted, and can support tenders and pre-qualification.</p>
+
+<h2>What clients look for</h2>
+<ul>
+  <li>The types of projects you handle: residential, commercial, industrial, interiors, renovation, civil works</li>
+  <li>Completed projects similar to theirs</li>
+  <li>Capacity: team, equipment and project size you can manage</li>
+  <li>Quality, safety and compliance practices</li>
+  <li>Proof of reliability: timelines met, repeat clients, testimonials</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ol>
+  <li><strong>Services:</strong> one page per service type</li>
+  <li><strong>Projects:</strong> a portfolio with photos, location type, scope, size and duration for each project</li>
+  <li><strong>About and team:</strong> leadership, engineers, experience and certifications</li>
+  <li><strong>Safety and quality:</strong> policies, processes and certifications you hold</li>
+  <li><strong>Clients and testimonials</strong>, with permission</li>
+  <li><strong>Company profile download</strong> for consultants and tender teams</li>
+  <li><strong>Contact and enquiry form</strong> with project type, location and timeline</li>
+</ol>
+
+<h2>Show projects properly</h2>
+<p>Construction is visual. Use progress photos, before and after images, drone shots and short videos, organised by project type. Write a short case study for key projects; see <a href="/blog/write-case-studies-business-website/">how to write case studies</a>.</p>
+
+<h2>SEO for contractors</h2>
+<ul>
+  <li>Target "{service} contractor in {city}" and "commercial construction company {city}"</li>
+  <li>Project pages mentioning project type and location naturally</li>
+  <li>A complete Google Business Profile with project photos and reviews</li>
+  <li>Helpful articles on costs, timelines, approvals and materials</li>
+</ul>
+
+<h2>Performance with lots of photos</h2>
+<p>Project galleries get heavy. Compress images and use modern formats so pages stay fast on site visits over mobile data; see <a href="/blog/image-optimization-wordpress/">image optimization</a>.</p>
+
+<p>Property developers should also see <a href="/real-estate-website-design/">real estate website design</a>. For contractors and builders, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-furniture-businesses',
+    seoTitle: 'Websites for Furniture Showrooms & Manufacturers',
+    title: 'Websites for Furniture Showrooms and Manufacturers',
+    description: 'What furniture showrooms, brands and manufacturers need online: product catalogues or stores, room inspiration, materials and customisation info, showroom visits, delivery and B2B enquiries.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'website-for-manufacturers', 'wordpress-speed-optimization'],
+    body: `
+<p>Furniture is a considered purchase. Buyers want to see it in real rooms, understand materials and sizes, and trust delivery and quality. Whether you sell to homeowners, interior designers or bulk buyers, your website should answer those questions.</p>
+
+<h2>Choose your model</h2>
+<ul>
+  <li><strong>Online store (WooCommerce):</strong> for standard products with fixed prices and delivery. See <a href="/woocommerce-developer/">WooCommerce development</a>.</li>
+  <li><strong>Catalogue with enquiries:</strong> for custom, made-to-order or high-value pieces</li>
+  <li><strong>Hybrid:</strong> buy standard items online, enquire for custom work</li>
+</ul>
+
+<h2>Product pages that sell furniture</h2>
+<ul>
+  <li>Multiple photos, including styled room shots and close-ups of materials and finishes</li>
+  <li>Exact dimensions, materials, finishes and care instructions</li>
+  <li>Customisation options such as size, fabric and colour</li>
+  <li>Delivery time, assembly and warranty information</li>
+  <li>Clear pricing, or a quote button for custom pieces</li>
+</ul>
+<p>See <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a> for more.</p>
+
+<h2>Inspire and reassure</h2>
+<ul>
+  <li>Room-by-room inspiration galleries and collections</li>
+  <li>Showroom details with a "book a visit" option</li>
+  <li>Workshop and craftsmanship photos for manufacturers</li>
+  <li>Genuine reviews and project photos from customers</li>
+</ul>
+
+<h2>B2B buyers</h2>
+<p>Hotels, offices, architects and interior designers buy in bulk. A dedicated section for trade and project enquiries, with capacity, past projects and a quote form, can bring high-value orders; see the <a href="/blog/industrial-website-product-catalogue/">product catalogue guide</a>.</p>
+
+<h2>Speed matters</h2>
+<p>Furniture sites are image-heavy. Optimized images and good hosting keep category pages fast; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
+
+<h2>SEO</h2>
+<ul>
+  <li>Target product-type and location searches: "solid wood dining table", "furniture showroom in {city}"</li>
+  <li>Unique descriptions, never copied from suppliers</li>
+  <li>Category pages with helpful buying advice</li>
+</ul>
+`,
+  },
+  {
+    slug: 'website-for-jewellers',
+    seoTitle: 'Websites for Jewellers: Build Trust and Sell Online',
+    title: 'Websites for Jewellers: Building Trust and Selling Online',
+    description: 'What jewellery stores and brands need online: high-quality product photography, certification and purity information, pricing transparency, secure payments, appointments and SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Jewellery is emotional and high-value, so trust is everything. Whether you sell online or use your website to bring customers into the store, it has to look premium and answer the practical questions buyers worry about.</p>
+
+<h2>Show pieces beautifully</h2>
+<ul>
+  <li>Professional, well-lit photos from multiple angles, plus on-model shots for scale</li>
+  <li>Zoom to show detail and craftsmanship</li>
+  <li>Short videos showing sparkle and movement</li>
+  <li>Compressed images so pages stay fast; see <a href="/blog/image-optimization-wordpress/">image optimization</a></li>
+</ul>
+
+<h2>Answer the trust questions</h2>
+<ul>
+  <li><strong>Purity and certification:</strong> hallmarking, purity (for example 22K/18K), diamond and gemstone certifications where applicable</li>
+  <li><strong>Weight and price breakdown:</strong> metal weight, making charges, stone charges and taxes, if you sell online</li>
+  <li><strong>Exchange, buyback and return policies</strong>, clearly stated</li>
+  <li><strong>Secure delivery and insurance</strong> for online orders</li>
+  <li><strong>Store heritage</strong> and team, if you've been in business for years</li>
+</ul>
+
+<h2>Selling online vs driving store visits</h2>
+<ul>
+  <li><strong>Online store:</strong> for everyday and lightweight pieces with clear pricing. WooCommerce can handle variable pricing and secure payment gateways; see <a href="/woocommerce-developer/">WooCommerce development</a>.</li>
+  <li><strong>Catalogue with appointments:</strong> for bridal and high-value collections, "book a store visit" or video consultation works well</li>
+  <li><strong>WhatsApp:</strong> many buyers want to ask about customisation or availability first</li>
+</ul>
+
+<h2>Collections and occasions</h2>
+<p>Organise by category (rings, necklaces, bangles), metal and occasion (bridal, festive, gifting, daily wear). Occasion pages match how people search and shop.</p>
+
+<h2>SEO for jewellers</h2>
+<ul>
+  <li>Target product and occasion searches: "gold bangles designs", "bridal jewellery in {city}"</li>
+  <li>Unique descriptions for each piece</li>
+  <li>A strong Google Business Profile with store photos and reviews</li>
+  <li>Buying guides on purity, certifications and care</li>
+</ul>
+
+<p>For store optimization, see <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a> and <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-it-software-companies',
+    seoTitle: 'Websites for IT & Software Companies',
+    title: 'Websites for IT and Software Companies: Turning Visitors Into Leads',
+    description: 'What IT services and software companies need on their websites: clear positioning, service and product pages, case studies, tech stack, demo or consultation flows, careers and SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-startups', 'wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Many IT companies have websites that describe everything and say nothing: "innovative solutions for digital transformation". Buyers can't tell what you actually do or whether you've done it for companies like theirs. Clarity wins leads.</p>
+
+<h2>Start with clear positioning</h2>
+<p>Say who you help and with what, in one sentence: "We build and maintain Shopify and WooCommerce stores for D2C brands" is far stronger than a list of 30 technologies.</p>
+
+<h2>Essential pages</h2>
+<ol>
+  <li><strong>Services or products:</strong> one page each, explaining the problem, solution, process and outcomes</li>
+  <li><strong>Case studies:</strong> the strongest proof for IT buyers. See <a href="/blog/write-case-studies-business-website/">how to write case studies</a>.</li>
+  <li><strong>Industries:</strong> sectors you understand, with relevant examples</li>
+  <li><strong>Technology:</strong> the stack you work with, framed around what it enables</li>
+  <li><strong>About and team:</strong> leadership, experience and where you're based</li>
+  <li><strong>Careers:</strong> helps hiring and signals a real, growing company</li>
+  <li><strong>Contact / demo:</strong> a short form or calendar booking</li>
+</ol>
+
+<h2>For software products</h2>
+<ul>
+  <li>A clear product demo or screenshots</li>
+  <li>Pricing page, even if it's "contact us" for enterprise</li>
+  <li>Free trial or demo booking flow</li>
+  <li>Integrations, security and support information</li>
+</ul>
+<p>See the <a href="/blog/startup-website-checklist/">startup website checklist</a>.</p>
+
+<h2>Build trust</h2>
+<ul>
+  <li>Client logos and testimonials, with permission</li>
+  <li>Certifications and partnerships you hold</li>
+  <li>Security and data-handling information</li>
+  <li>Thought leadership: practical articles showing expertise</li>
+</ul>
+
+<h2>Lead generation</h2>
+<ul>
+  <li>Consultation or demo calls to action on every page</li>
+  <li>Lead magnets such as checklists, cost guides or audits; see <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets and newsletters</a></li>
+  <li>Dedicated <a href="/landing-page-design/">landing pages</a> for campaigns</li>
+</ul>
+
+<h2>SEO for IT companies</h2>
+<ul>
+  <li>Target specific services and industries: "{technology} development company in India", "{industry} software development"</li>
+  <li>Service pages with real depth, not generic copy</li>
+  <li>Articles that answer buyers' technical and commercial questions</li>
+</ul>
 `,
   },
 ];
