@@ -188,6 +188,8 @@ module.exports = [
 <p>Newer PHP versions are significantly faster than old ones.</p>
 <p><strong>Fix:</strong> keep WordPress, plugins and themes updated, and ask your host to run a current, supported PHP version (after testing compatibility).</p>
 
+<p>Built with Elementor? These <a href="/blog/why-elementor-sites-slow/">Elementor-specific fixes</a> help too.</p>
+
 <h2>Quick wins you can do today</h2>
 <ul>
   <li>Compress the largest images on your homepage</li>
@@ -307,6 +309,8 @@ module.exports = [
   <li><strong>Local SEO.</strong> Page titles and content that mention your specialty and city, schema markup for your practice, and a linked Google Business Profile.</li>
   <li><strong>Security and privacy.</strong> HTTPS, a privacy policy, and forms that don't collect more medical information than necessary.</li>
 </ol>
+
+<p>Running a diagnostic lab or pathology centre? See <a href="/blog/website-for-diagnostic-labs/">websites for diagnostic labs</a>.</p>
 
 <h2>Common mistakes to avoid</h2>
 <ul>
@@ -559,6 +563,7 @@ module.exports = [
 <p>A dedicated page for each service lets you speak directly to that customer's needs and rank for those specific searches.</p>
 <h3>11. Repeat your call to action</h3>
 <p>Add a call to action after each main section, not just at the top and bottom. Visitors decide at different points.</p>
+<p>Then turn those numbers into rupees; see <a href="/blog/measure-website-roi/">how to measure website ROI</a>.</p>
 <h3>12. Track what works</h3>
 <p>Set up Google Analytics to track form submissions, WhatsApp clicks and calls. You can't improve what you don't measure.</p>
 
@@ -699,6 +704,8 @@ module.exports = [
   <li>Keep a consistent presence on IndiaMART, TradeIndia and your Google Business Profile, all linking to your website.</li>
 </ul>
 
+<p>Exporting? Read <a href="/blog/website-for-export-businesses/">websites for export businesses</a> for what international buyers look for.</p>
+
 <h2>The bottom line</h2>
 <p>You don't need a flashy website. You need a clear, fast, well-organised one that proves you can deliver and makes it easy to ask for a quote. For most manufacturers, that single change turns the website from a cost into a steady source of enquiries.</p>
 `,
@@ -734,6 +741,8 @@ module.exports = [
   <li>Your team isn't technical and wants to make changes confidently</li>
   <li>You want features like forms, popups and theme templates in one tool (Elementor Pro)</li>
 </ul>
+
+<p>If your Elementor site is already slow, see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow and how to fix them</a>.</p>
 
 <h2>Choose Gutenberg if...</h2>
 <ul>
@@ -1280,6 +1289,8 @@ module.exports = [
 <h2>Step 4: Link the two tools</h2>
 <p>In GA4 Admin, link your Search Console property. You'll then see search queries alongside visitor behaviour in Analytics.</p>
 
+<p>Once tracking works, you can <a href="/blog/measure-website-roi/">measure your website's ROI</a> in simple rupee terms.</p>
+
 <h2>What to check every month</h2>
 <ul>
   <li><strong>Search Console → Performance:</strong> top queries and pages, and which are growing</li>
@@ -1589,6 +1600,8 @@ module.exports = [
 <p>Poorly built WordPress sites are slow. With a lightweight theme, good hosting, caching and optimized images, WordPress sites can score very well on Core Web Vitals.</p>
 <h3>"WordPress isn't secure"</h3>
 <p>Most WordPress hacks come from outdated plugins and weak passwords. With updates, good hosting and basic security practices, WordPress is secure. See the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
+
+<p>Heard about "headless" WordPress? See <a href="/blog/headless-wordpress-small-business/">whether a small business needs headless WordPress</a>.</p>
 
 <h2>The practical answer for most businesses</h2>
 <p>For the vast majority of small and medium businesses, WordPress gives the best balance of cost, speed to launch, flexibility and ease of editing. Custom code is worth the extra investment when you're building a web application rather than a website. If you're unsure, describe what your site needs to do and a developer can recommend the right approach; start with <a href="/wordpress-website-development/">WordPress website development</a> to see what's typically included.</p>
@@ -2030,6 +2043,8 @@ module.exports = [
 <h3>6. Analytics from day one</h3>
 <p>Set up GA4 and Search Console, and track sign-ups and demo requests as key events. See <a href="/blog/setup-google-analytics-search-console/">how to set up GA4 and Search Console</a>.</p>
 
+<p>Haven't picked a domain yet? See <a href="/blog/choose-domain-name-business/">how to choose a domain name</a>.</p>
+
 <h2>What can wait</h2>
 <ul>
   <li>A big blog: start with 2–3 genuinely useful articles instead</li>
@@ -2191,6 +2206,8 @@ module.exports = [
   <li>Link categories, products and related articles together</li>
 </ul>
 
+<p>Selling abroad too? See <a href="/blog/website-for-export-businesses/">how exporters win international buyers online</a>.</p>
+
 <h2>Keep it manageable</h2>
 <p>Your team should be able to add products, update specifications and upload datasheets themselves. Import product data from spreadsheets to launch large catalogues quickly.</p>
 
@@ -2223,6 +2240,8 @@ module.exports = [
   <li><strong>Cost:</strong> usually a modest yearly fee, but check renewal prices, not just the first-year offer.</li>
   <li><strong>Own it yourself:</strong> register the domain in your own name and account, not your developer's, so you always control it.</li>
 </ul>
+
+<p>Still picking a name? See <a href="/blog/choose-domain-name-business/">how to choose a domain name for your business</a>.</p>
 
 <h2>Hosting</h2>
 <p>Hosting is a server that stores your website files and database and delivers them to visitors. Better hosting means faster loading and fewer outages.</p>
@@ -4254,6 +4273,307 @@ module.exports = [
 
 <h2>Prioritise the fixes</h2>
 <p>Fix indexing blockers first, then duplicate versions and redirects, then speed and structured data. Need a professional review? See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'choose-domain-name-business',
+    seoTitle: 'How to Choose a Domain Name for Your Business',
+    title: 'How to Choose a Domain Name for Your Business (10 Practical Tips)',
+    description: 'How to choose a good domain name for your business: .com vs .in, length, spelling, keywords, trademarks, availability on social media, and registering it in your own name.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-migration', 'website-for-startups'],
+    body: `
+<p>Your domain name is your address online. It appears on your visiting cards, emails, vehicles and ads, so it's worth a little thought. Here are 10 practical tips for choosing one that works for years.</p>
+
+<h2>10 tips for a good domain</h2>
+<ol>
+  <li><strong>Keep it short.</strong> Shorter names are easier to remember, type and fit on printed material.</li>
+  <li><strong>Make it easy to spell and say.</strong> Imagine telling it to someone over the phone. Avoid unusual spellings, numbers and hyphens that need explaining.</li>
+  <li><strong>Match your business name</strong> where possible, so customers can guess it.</li>
+  <li><strong>Choose the right extension.</strong> .com is widely trusted; .in signals an Indian business and is often a good choice for local businesses. Newer extensions can work for strong brands.</li>
+  <li><strong>Don't over-stuff keywords.</strong> A brandable name is better than a long keyword string. Keywords in domains carry little ranking weight today.</li>
+  <li><strong>Think long term.</strong> Avoid names tied to one city or one product if you plan to expand.</li>
+  <li><strong>Check trademarks</strong> to avoid legal trouble with an existing brand.</li>
+  <li><strong>Check social handles</strong> so your name is consistent across platforms.</li>
+  <li><strong>Consider buying common variations</strong> (.com and .in, or a common misspelling) and redirecting them to your main domain.</li>
+  <li><strong>Register it in your own name and account</strong>, never your developer's or agency's.</li>
+</ol>
+
+<h2>Check its history</h2>
+<p>If a domain was used before, check what was on it using web archive tools. A domain previously used for spam can carry baggage.</p>
+
+<h2>Registering and renewing</h2>
+<ul>
+  <li>Use a reputable registrar and turn on <strong>auto-renew</strong></li>
+  <li>Keep your registrar account secure with a strong password and two-factor authentication</li>
+  <li>Check renewal prices, not just first-year offers</li>
+  <li>Keep your contact email on the registrar account current, so renewal notices reach you</li>
+</ul>
+
+<h2>After registering</h2>
+<p>Point the domain to your hosting (through DNS or nameservers), set up SSL and business email. See <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+
+<h2>Changing domains later</h2>
+<p>It's possible to move to a new domain, but you'll need 301 redirects from every old URL to keep your rankings and links. See <a href="/wordpress-migration/">WordPress migration</a>. It's much easier to choose well at the start.</p>
+`,
+  },
+  {
+    slug: 'website-for-export-businesses',
+    seoTitle: 'Websites for Export Businesses: Win International Buyers',
+    title: 'Websites for Export Businesses: How to Win International Buyers',
+    description: 'How Indian exporters can build websites that international buyers trust: product catalogues, certifications, export terms, multilingual content, fast global hosting and SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-seo-services', 'wordpress-speed-optimization'],
+    body: `
+<p>International buyers usually can't visit your factory before the first order. Your website has to do much of the work of building trust, from thousands of kilometres away. Here's what exporters need to get right.</p>
+
+<h2>What overseas buyers look for</h2>
+<ul>
+  <li>Exactly what you make, with detailed specifications</li>
+  <li>Proof you can meet their quality standards and volumes</li>
+  <li>Certifications and compliance for their market</li>
+  <li>Export experience, countries served and shipping capability</li>
+  <li>A professional, responsive point of contact</li>
+</ul>
+
+<h2>Essential content</h2>
+<h3>Product catalogue</h3>
+<p>Detailed product pages with specifications, packaging options, MOQ (minimum order quantity), downloadable datasheets and quote buttons. See <a href="/blog/industrial-website-product-catalogue/">building a product catalogue website</a>.</p>
+<h3>Capability and quality</h3>
+<p>Manufacturing facilities, capacity, quality control processes, testing and lab reports, with real photos and videos.</p>
+<h3>Certifications</h3>
+<p>Relevant certifications (such as ISO, CE, FDA registration, organic or food safety certifications, depending on your products), clearly displayed and verifiable.</p>
+<h3>Export information</h3>
+<p>Countries served, typical lead times, shipping terms offered (FOB, CIF and so on), ports and payment terms. Be accurate: buyers will hold you to it.</p>
+
+<h2>Communication</h2>
+<ul>
+  <li>Quote forms asking for product, quantity, destination country and specifications</li>
+  <li>WhatsApp and email, with fast replies across time zones</li>
+  <li>A named contact person builds trust more than a generic form</li>
+</ul>
+
+<h2>Language and localisation</h2>
+<p>Clear, professional English is essential. For key markets, consider translated pages; see <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>. Use international units where relevant, and avoid local jargon.</p>
+
+<h2>Speed for international visitors</h2>
+<p>Hosting close to your main buyer regions, or a CDN, keeps the site fast abroad. Slow sites look unprofessional to overseas buyers.</p>
+
+<h2>SEO for exporters</h2>
+<ul>
+  <li>Target "{product} manufacturer in India", "{product} exporter" and "{product} supplier" searches</li>
+  <li>Unique, detailed product pages with specifications buyers search for</li>
+  <li>Consistent presence on B2B platforms and trade directories, linking to your site</li>
+  <li>Articles answering buyer questions about specifications, standards and sourcing</li>
+</ul>
+
+<p>For the wider B2B picture, read <a href="/blog/b2b-manufacturer-website-guide/">how manufacturers get more B2B and export enquiries</a>, or see what's included in a <a href="/website-for-manufacturers/">manufacturer website</a>.</p>
+`,
+  },
+  {
+    slug: 'why-elementor-sites-slow',
+    seoTitle: 'Why Elementor Sites Get Slow (and How to Fix Them)',
+    title: 'Why Elementor Sites Get Slow, and How to Fix Them',
+    description: 'Common reasons Elementor websites become slow, from too many widgets and nested containers to heavy add-ons and images, and practical fixes to speed them up.',
+    date: '2026-09-27',
+    category: 'Speed',
+    related: ['elementor-developer', 'wordpress-speed-optimization', 'website-redesign'],
+    body: `
+<p>Elementor makes WordPress pages easy to design, but it's also easy to build slow pages with it. The good news: most slow Elementor sites are slow because of how they were built, not because of Elementor itself. Here's what usually goes wrong and how to fix it.</p>
+
+<h2>Common causes</h2>
+<h3>1. Too many nested sections and containers</h3>
+<p>Every extra container adds HTML and CSS. Pages built with sections inside columns inside sections quickly become bloated. Using Flexbox containers and flatter structures reduces this significantly.</p>
+<h3>2. Heavy add-on packs</h3>
+<p>Installing several Elementor add-on plugins "just in case" loads extra scripts and styles on every page. Use one well-coded add-on at most, and only for widgets you actually use.</p>
+<h3>3. Unoptimized images</h3>
+<p>Background images and galleries uploaded at full resolution are a major cause of slow pages. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
+<h3>4. Animations everywhere</h3>
+<p>Entrance animations, parallax and motion effects on every section add scripts and can delay content appearing.</p>
+<h3>5. Too many fonts and icon libraries</h3>
+<p>Multiple Google Fonts, weights and icon packs add requests. Stick to one or two font families and only the weights you use.</p>
+<h3>6. A heavy theme underneath</h3>
+<p>Pairing Elementor with a bloated multipurpose theme doubles the work. A minimal theme like Hello Elementor is designed for this.</p>
+
+<h2>How to fix a slow Elementor site</h2>
+<ol>
+  <li><strong>Enable Elementor's performance features</strong> (optimized asset loading, lazy loading options, improved CSS loading), testing after each change</li>
+  <li><strong>Rebuild heavy sections</strong> with Flexbox containers and fewer widgets</li>
+  <li><strong>Set global colours and fonts</strong> instead of styling each widget individually</li>
+  <li><strong>Remove unused add-ons and widgets</strong></li>
+  <li><strong>Compress images and use WebP</strong></li>
+  <li><strong>Use caching</strong> and good hosting</li>
+  <li><strong>Limit animations</strong> to a few meaningful places</li>
+</ol>
+
+<h2>Measure before and after</h2>
+<p>Test key pages on PageSpeed Insights and look at Core Web Vitals, especially LCP and INP. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>Should you switch away from Elementor?</h2>
+<p>Usually not. A well-built Elementor site on good hosting can perform well, and your team keeps easy editing. Switching makes sense only if the site is extremely heavy and a rebuild is needed anyway. See <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>.</p>
+
+<p>Need your Elementor site sped up or rebuilt cleanly? See <a href="/elementor-developer/">Elementor development</a> and <a href="/wordpress-speed-optimization/">speed optimization</a>.</p>
+`,
+  },
+  {
+    slug: 'headless-wordpress-small-business',
+    seoTitle: 'Headless WordPress: Does a Small Business Need It?',
+    title: 'Headless WordPress: Does a Small Business Need It?',
+    description: 'What headless WordPress is, its real benefits and trade-offs in cost, complexity, editing and plugins, and when a small business should (and shouldn\'t) consider it.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'website-for-startups', 'hire-wordpress-developer'],
+    body: `
+<p>"Headless WordPress" comes up more and more in developer conversations. It can be powerful, but it isn't the right choice for most small businesses. Here's what it is and how to decide.</p>
+
+<h2>What is headless WordPress?</h2>
+<p>In a normal WordPress site, WordPress manages content <em>and</em> displays the website using a theme. In a headless setup, WordPress only manages content; a separate front end (often built with a JavaScript framework such as Next.js) fetches that content and displays the site.</p>
+
+<h2>Potential benefits</h2>
+<ul>
+  <li><strong>Performance:</strong> the front end can be very fast, often served as static pages</li>
+  <li><strong>Flexibility:</strong> the same content can feed a website, an app and other channels</li>
+  <li><strong>Security:</strong> the WordPress admin can be hidden away from the public site</li>
+  <li><strong>Custom experiences</strong> that go beyond what themes allow</li>
+</ul>
+
+<h2>The trade-offs</h2>
+<ul>
+  <li><strong>Higher cost:</strong> you're building and maintaining two systems</li>
+  <li><strong>Developer dependence:</strong> changes to layouts usually need a developer</li>
+  <li><strong>Fewer plug-and-play features:</strong> many WordPress plugins (forms, SEO previews, page builders, some WooCommerce features) don't work out of the box on a headless front end</li>
+  <li><strong>Editing experience:</strong> editors may lose live previews and visual building</li>
+  <li><strong>More moving parts</strong> to host, secure and update</li>
+</ul>
+
+<h2>When headless makes sense</h2>
+<ul>
+  <li>Large content sites with a dedicated development team</li>
+  <li>Products where content is shared across a website and mobile apps</li>
+  <li>Highly custom, app-like experiences</li>
+</ul>
+
+<h2>When it doesn't</h2>
+<ul>
+  <li>Small business sites, service sites and most online stores</li>
+  <li>Teams that want to edit pages visually without a developer</li>
+  <li>Tight budgets and timelines</li>
+</ul>
+
+<h2>A middle ground</h2>
+<p>A well-built traditional WordPress site with a lightweight theme, caching, optimized images and good hosting already delivers excellent speed for most businesses. If you want static-site speed without complexity, simpler static setups can also work for sites that rarely change; this website, for example, is a static site (see the <a href="/work/samverse/">Samverse case study</a>).</p>
+
+<h2>The bottom line</h2>
+<p>For most small businesses, headless adds cost and complexity without enough benefit. Start with a fast, well-built traditional WordPress site; see <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs custom-coded websites</a> and <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'measure-website-roi',
+    seoTitle: 'How to Measure Website ROI for a Small Business',
+    title: 'How to Measure Your Website\'s ROI as a Small Business',
+    description: 'A simple way for small businesses to measure website return on investment: define conversions, track enquiries and sales, estimate lead value and compare against costs.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
+    body: `
+<p>A website is an investment, and like any investment you should know whether it's paying off. You don't need complicated tools to measure it. Here's a simple, practical approach for small businesses.</p>
+
+<h2>Step 1: Decide what counts as a conversion</h2>
+<p>A conversion is an action that leads to business:</p>
+<ul>
+  <li>Contact form submissions</li>
+  <li>WhatsApp clicks and phone calls</li>
+  <li>Online orders or bookings</li>
+  <li>Quote requests and brochure downloads</li>
+</ul>
+
+<h2>Step 2: Track conversions</h2>
+<ul>
+  <li>Set up Google Analytics 4 and mark key actions as key events. See <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a>.</li>
+  <li>Ask every new enquiry "How did you find us?" and note it</li>
+  <li>For calls and WhatsApp, use distinct links or numbers where practical</li>
+</ul>
+
+<h2>Step 3: Estimate what a lead is worth</h2>
+<p>Use simple numbers from your own business:</p>
+<ol>
+  <li>Average value of a customer (first job, or lifetime value if they return)</li>
+  <li>How many enquiries turn into customers (your close rate)</li>
+  <li>Lead value = customer value × close rate</li>
+</ol>
+<p>For example, if a customer is worth ₹30,000 and you win 1 in 5 enquiries, each enquiry is worth about ₹6,000.</p>
+
+<h2>Step 4: Add up your costs</h2>
+<ul>
+  <li>Build or redesign cost (spread over its expected life, say 3 years)</li>
+  <li>Hosting, domain, licences and maintenance</li>
+  <li>Content, SEO and advertising spend</li>
+</ul>
+
+<h2>Step 5: Compare</h2>
+<p>Website ROI = (value generated − costs) ÷ costs. Even a rough monthly view (enquiries × lead value vs monthly costs) tells you whether the site is earning its keep.</p>
+
+<h2>Improve the numbers</h2>
+<ul>
+  <li><strong>More visitors:</strong> SEO, content and ads</li>
+  <li><strong>Better conversion rate:</strong> clearer calls to action, trust signals, WhatsApp and faster pages. See <a href="/blog/get-more-enquiries-from-your-website/">12 ways to get more enquiries</a>.</li>
+  <li><strong>Higher lead value:</strong> attract better-fit clients with focused service pages</li>
+</ul>
+
+<h2>Review monthly</h2>
+<p>Check enquiries, sources and conversion rates once a month. Double down on the pages and channels that produce customers, and fix the ones that don't.</p>
+
+<p>Want help setting up tracking and improving conversions? See <a href="/wordpress-seo-services/">WordPress SEO services</a> and <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-diagnostic-labs',
+    seoTitle: 'Websites for Diagnostic Labs & Pathology Centres',
+    title: 'Websites for Diagnostic Labs and Pathology Centres',
+    description: 'What diagnostic labs and pathology centres need on their websites: test menus with preparation info, home sample collection booking, report access, trust signals and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'woocommerce-developer'],
+    body: `
+<p>People looking for a diagnostic lab usually want quick answers: do you offer this test, how much does it cost, how do I prepare, can you collect the sample from home, and when will the report be ready? A lab website that answers these clearly wins bookings.</p>
+
+<h2>Essential features</h2>
+<h3>1. Searchable test menu</h3>
+<p>A list of tests and health packages with price (if you share it), sample type, preparation instructions (for example fasting), and reporting time. Search by test name makes it easy.</p>
+<h3>2. Health packages</h3>
+<p>Clear pages for full body check-ups, diabetes, thyroid, cardiac and senior citizen packages, listing exactly which tests are included.</p>
+<h3>3. Home sample collection booking</h3>
+<p>A simple booking form with address, preferred time slot and tests, plus WhatsApp confirmation. Online payment can be added; see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>.</p>
+<h3>4. Report access</h3>
+<p>If your lab software provides online reports, link to it clearly and securely. Never publish patient information on the website itself.</p>
+<h3>5. Locations and timings</h3>
+<p>Each collection centre with address, map, timings and phone number.</p>
+
+<h2>Build trust</h2>
+<ul>
+  <li>Accreditations and quality certifications you actually hold</li>
+  <li>Pathologists and team with qualifications</li>
+  <li>Equipment and quality control processes</li>
+  <li>Genuine patient reviews</li>
+</ul>
+
+<h2>Privacy and accuracy</h2>
+<p>Health data is sensitive. Forms should collect only what's needed, the site should use HTTPS, and a clear privacy policy should explain how information is handled. Keep test descriptions accurate and avoid medical claims beyond what's appropriate.</p>
+
+<h2>Local SEO for labs</h2>
+<ul>
+  <li>Target "{test name} test in {city}", "blood test home collection {area}" and "diagnostic centre near me"</li>
+  <li>A complete Google Business Profile for each centre, with reviews</li>
+  <li>Consistent name, address and phone across directories</li>
+  <li>Helpful articles explaining common tests and preparation</li>
+</ul>
+
+<h2>Mobile first</h2>
+<p>Most patients book from their phones. Fast pages, tap-to-call, WhatsApp and a short booking form are essential.</p>
+
+<p>Much of the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> also applies. See what's included in a <a href="/wordpress-website-for-doctors/">healthcare website</a>.</p>
 `,
   },
 ];

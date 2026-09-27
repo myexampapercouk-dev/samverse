@@ -67,6 +67,17 @@ const LINKS = [
   ['on-page-seo-checklist', '<h2>Technical</h2>', '<p>Why links between your own pages matter so much: <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>\n\n'],
   ['get-website-indexed-google-faster', '<h2>Common blockers</h2>', '<p>For a full health check, work through the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit checklist</a>.</p>\n\n'],
   ['website-traffic-dropped', '<h2>What not to do</h2>', '<p>A structured <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit</a> often reveals the cause.</p>\n\n'],
+  // Round 4
+  ['domain-hosting-ssl-explained', '<h2>Hosting</h2>', '<p>Still picking a name? See <a href="/blog/choose-domain-name-business/">how to choose a domain name for your business</a>.</p>\n\n'],
+  ['startup-website-checklist', '<h2>What can wait</h2>', '<p>Haven\'t picked a domain yet? See <a href="/blog/choose-domain-name-business/">how to choose a domain name</a>.</p>\n\n'],
+  ['b2b-manufacturer-website-guide', '<h2>The bottom line</h2>', '<p>Exporting? Read <a href="/blog/website-for-export-businesses/">websites for export businesses</a> for what international buyers look for.</p>\n\n'],
+  ['industrial-website-product-catalogue', '<h2>Keep it manageable</h2>', '<p>Selling abroad too? See <a href="/blog/website-for-export-businesses/">how exporters win international buyers online</a>.</p>\n\n'],
+  ['elementor-vs-gutenberg', '<h2>Choose Gutenberg if...</h2>', '<p>If your Elementor site is already slow, see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow and how to fix them</a>.</p>\n\n'],
+  ['why-is-my-wordpress-site-slow', '<h2>Quick wins you can do today</h2>', '<p>Built with Elementor? These <a href="/blog/why-elementor-sites-slow/">Elementor-specific fixes</a> help too.</p>\n\n'],
+  ['wordpress-vs-custom-coded-website', '<h2>The practical answer for most businesses</h2>', '<p>Heard about "headless" WordPress? See <a href="/blog/headless-wordpress-small-business/">whether a small business needs headless WordPress</a>.</p>\n\n'],
+  ['setup-google-analytics-search-console', '<h2>What to check every month</h2>', '<p>Once tracking works, you can <a href="/blog/measure-website-roi/">measure your website\'s ROI</a> in simple rupee terms.</p>\n\n'],
+  ['get-more-enquiries-from-your-website', '<h3>12. Track what works</h3>', '<p>Then turn those numbers into rupees; see <a href="/blog/measure-website-roi/">how to measure website ROI</a>.</p>\n'],
+  ['clinic-website-checklist-for-doctors', '<h2>Common mistakes to avoid</h2>', '<p>Running a diagnostic lab or pathology centre? See <a href="/blog/website-for-diagnostic-labs/">websites for diagnostic labs</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
