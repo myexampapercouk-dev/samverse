@@ -308,6 +308,10 @@ const LINKS = [
   ['website-down-what-to-do', '<h2>Step 5: Think about recent changes</h2>', '<p>Suspended for malware? See <a href="/blog/hosting-suspended-malware/">what to do when your hosting is suspended</a>.</p>\n\n'],
   ['deceptive-site-ahead-warning-fix', '<h2>Step 5: Check other blocklists</h2>', '<p>Seeing a label in search results instead? See <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a>.</p>\n\n'],
   ['why-wordpress-sites-get-hacked', '<h2>It\'s rarely personal</h2>', '<p>Choosing protection? See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a>.</p>\n\n'],
+  // Round 39: new case studies
+  ['restaurant-website-online-ordering', '<h2>Common mistakes</h2>', '<p><strong>Real example:</strong> the <a href="/work/southern-flavours/">Southern Flavours case study</a> shows an Indian restaurant site in the UK with table reservations, a menu, a weekend breakfast buffet feature and WooCommerce ordering.</p>\n\n'],
+  ['outsource-wordpress-development-india', '<h2>Freelancer or agency?</h2>', '<p><strong>Real example:</strong> I built the website for <a href="/work/southern-flavours/">Southern Flavours</a>, a restaurant in Solihull, UK, working remotely from India.</p>\n\n'],
+  ['website-for-hospitals', '<h2>Appointments</h2>', '<p><strong>Real example:</strong> the <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta case study</a> shows a specialist\'s site with a detailed doctor profile, services and diagnostics explained in plain language, and appointment booking.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

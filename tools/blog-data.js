@@ -2718,6 +2718,8 @@ module.exports = [
 
 <p>Bakeries have extra needs like custom orders; see <a href="/blog/website-for-bakeries-cake-shops/">websites for bakeries and cake shops</a>.</p>
 
+<p><strong>Real example:</strong> the <a href="/work/southern-flavours/">Southern Flavours case study</a> shows an Indian restaurant site in the UK with table reservations, a menu, a weekend breakfast buffet feature and WooCommerce ordering.</p>
+
 <h2>Common mistakes</h2>
 <ul>
   <li>PDF menus that are hard to read on phones</li>
@@ -7246,6 +7248,8 @@ module.exports = [
   <li>OPD days and timings</li>
   <li>"Book appointment" with that doctor</li>
 </ul>
+
+<p><strong>Real example:</strong> the <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta case study</a> shows a specialist's site with a detailed doctor profile, services and diagnostics explained in plain language, and appointment booking.</p>
 
 <h2>Appointments</h2>
 <p>Online booking or an appointment request form by department and doctor, plus phone and WhatsApp options. If you use hospital management software, integrate or link to it rather than duplicating systems.</p>
@@ -14115,6 +14119,8 @@ module.exports = [
   <li>Time zone overlap with Europe and the Middle East, and overnight progress for US and Australian clients</li>
   <li>Strong English communication for most professional developers</li>
 </ul>
+
+<p><strong>Real example:</strong> I built the website for <a href="/work/southern-flavours/">Southern Flavours</a>, a restaurant in Solihull, UK, working remotely from India.</p>
 
 <h2>Freelancer or agency?</h2>
 <p>Freelancers offer direct communication and flexibility; agencies offer more capacity and backup. See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a>.</p>

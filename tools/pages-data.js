@@ -48,7 +48,7 @@ const PAGES = [
     ],
     getsTitle: 'What your clinic website includes',
     gets: ['Doctor profile & qualifications', 'Treatments & services pages', 'Appointment enquiry form', 'WhatsApp & one-tap call buttons', 'Google Maps & clinic timings', 'Patient testimonials section', 'Local SEO setup', 'Fast, mobile-first design'],
-    projects: ['Dr. Sunaina Dental Care', 'Dr. Sudhir Arora'],
+    projects: ['Dr. Sunaina Dental Care', 'Dr. Nitish Gupta', 'Dr. Sudhir Arora'],
     faqs: [
       ['Can patients book appointments on the website?', 'Yes. I can add an appointment enquiry form that emails you and opens WhatsApp, or integrate a booking system if you use one.'],
       ['Will my clinic show up on Google?', 'I set up on-page SEO, schema markup for medical practices, a sitemap and Search Console, and help link your Google Business Profile. That gives you the right foundation for local searches.'],
@@ -102,7 +102,7 @@ const PAGES = [
     ],
     getsTitle: 'What your store includes',
     gets: ['Product catalogue & categories', 'Payment gateway integration', 'Cash on Delivery & shipping rules', 'Order & stock management', 'Order email notifications', 'Coupons & discounts', 'WhatsApp chat button', 'Speed & SEO optimization'],
-    projects: ['CNN Food & Spices'],
+    projects: ['Southern Flavours', 'CNN Food & Spices'],
     faqs: [
       ['Which payment gateways can you set up?', 'Popular Indian gateways such as Razorpay, PayU, Cashfree and PhonePe, plus PayPal or Stripe for international payments, and Cash on Delivery.'],
       ['How many products can the store have?', 'WooCommerce handles anything from a few products to thousands. I can also import your existing product list from a spreadsheet.'],
@@ -129,7 +129,7 @@ const PAGES = [
     ],
     getsTitle: 'What your restaurant website includes',
     gets: ['Mobile-friendly digital menu', 'Table reservation form', 'WhatsApp / online ordering', 'Photo gallery', 'Google Maps & opening hours', 'Instagram feed', 'Reviews & testimonials', 'Local SEO setup'],
-    projects: ['CNN Food & Spices'],
+    projects: ['Southern Flavours'],
     faqs: [
       ['Can customers order food directly from my website?', 'Yes. I can set up WhatsApp ordering for simple needs, or a full WooCommerce ordering system with online payments and delivery areas.'],
       ['Can I update the menu myself?', 'Yes. The menu is managed from the WordPress dashboard, so you can add dishes, change prices or mark items unavailable anytime.'],
