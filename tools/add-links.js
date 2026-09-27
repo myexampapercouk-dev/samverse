@@ -140,6 +140,10 @@ const LINKS = [
   ['website-for-event-wedding-planners', '<h2>Performance with lots of photos</h2>', '<p>Venues need their own approach; see <a href="/blog/website-for-wedding-venues-banquet-halls/">websites for wedding venues and banquet halls</a>.</p>\n\n'],
   ['website-for-it-software-companies', '<h2>Build trust</h2>', '<p>Where many startups and IT teams work: <a href="/blog/website-for-coworking-spaces/">websites for co-working spaces</a>.</p>\n\n'],
   ['hotel-website-direct-bookings', '<h2>SEO for hotels and homestays</h2>', '<p>Long-stay accommodation is different; see <a href="/blog/website-for-hostels-pg-accommodation/">websites for hostels and PGs</a>.</p>\n\n'],
+  // Round 14
+  ['school-coaching-website-what-parents-look-for', '<h2>Keep it updated</h2>', '<p>Other learning businesses: <a href="/blog/website-for-music-dance-academies/">music and dance academies</a>, <a href="/blog/website-for-driving-schools/">driving schools</a> and <a href="/blog/website-for-home-tutors-online-teachers/">home tutors</a>.</p>\n\n'],
+  ['website-for-fashion-boutiques', '<h2>Organise collections well</h2>', '<p>Handmade and heritage brands have their own story to tell; see <a href="/blog/website-for-handicraft-artisan-brands/">websites for handicraft and artisan brands</a>.</p>\n\n'],
+  ['website-for-export-businesses', '<h2>Language and localisation</h2>', '<p>Sector examples: <a href="/blog/website-for-chemical-pharma-manufacturers/">chemical and pharma manufacturers</a> and <a href="/blog/website-for-agriculture-businesses/">agriculture businesses</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
