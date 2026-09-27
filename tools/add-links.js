@@ -231,6 +231,13 @@ const LINKS = [
   ['regain-website-access-old-developer', '<h2>Prevent it happening again</h2>', '<p>Use this <a href="/blog/website-ownership-checklist/">website ownership checklist</a> once you have access back.</p>\n\n'],
   ['clinic-website-checklist-for-doctors', '<h2>Next step</h2>', '<p>Related guides: websites for <a href="/blog/website-for-nutritionists-dietitians/">nutritionists and dietitians</a> and <a href="/blog/website-for-psychologists-counsellors/">psychologists and counsellors</a>.</p>\n\n'],
   ['website-for-gyms-fitness-studios', '<h2>Local SEO</h2>', '<p>Offering diet plans too? See <a href="/blog/website-for-nutritionists-dietitians/">websites for nutritionists</a>.</p>\n\n'],
+  // Round 28
+  ['update-wordpress-safely', '<h2>Automatic updates: yes or no?</h2>', '<p>Don\'t forget the server side: <a href="/blog/update-php-version-wordpress/">update your PHP version safely</a>.</p>\n\n'],
+  ['wordpress-maintenance-checklist', '<h2>Yearly</h2>', '<p>Detailed guides: <a href="/blog/wordpress-database-optimization/">database optimisation</a> and <a href="/blog/update-php-version-wordpress/">updating PHP</a>.</p>\n\n'],
+  ['website-brief-template', '<h2>Send it and compare</h2>', '<p>Once you choose a developer, agree the details in writing; see the <a href="/blog/website-design-contract-checklist/">website contract checklist</a>.</p>\n\n'],
+  ['stop-contact-form-spam', '<h2>Test after changes</h2>', '<p>Choosing a form plugin? See <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a>.</p>\n\n'],
+  ['portfolio-website-freelancers-creatives', '<h2>Get found</h2>', '<p>Photographers: see the full guide to <a href="/blog/website-for-photographers/">websites for photographers</a>.</p>\n\n'],
+  ['personal-brand-website-professionals', '<h2>Design tips</h2>', '<p>Consultants in traditional fields: see <a href="/blog/website-for-astrologers-vastu-consultants/">websites for astrologers and vastu consultants</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

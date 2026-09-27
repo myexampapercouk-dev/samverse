@@ -521,6 +521,8 @@ module.exports = [
   <li><strong>Check your PHP version</strong> is current and supported by your host.</li>
 </ul>
 
+<p>Detailed guides: <a href="/blog/wordpress-database-optimization/">database optimisation</a> and <a href="/blog/update-php-version-wordpress/">updating PHP</a>.</p>
+
 <h2>Yearly</h2>
 <ul>
   <li><strong>Renew domain and hosting</strong> in advance, and turn on auto-renew to avoid your site going offline.</li>
@@ -2725,6 +2727,8 @@ module.exports = [
 
 <p>Lawyers, chartered accountants and consultants have specific needs around practice areas and guidelines; see <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers, CAs and consultants</a>.</p>
 
+<p>Consultants in traditional fields: see <a href="/blog/website-for-astrologers-vastu-consultants/">websites for astrologers and vastu consultants</a>.</p>
+
 <h2>Design tips</h2>
 <ul>
   <li>Real, professional photos of you, not stock images</li>
@@ -3362,6 +3366,8 @@ module.exports = [
 
 <p>Deciding who to send it to? See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> and the questions to ask before hiring.</p>
 
+<p>Once you choose a developer, agree the details in writing; see the <a href="/blog/website-design-contract-checklist/">website contract checklist</a>.</p>
+
 <h2>Send it and compare</h2>
 <p>With a brief like this, you'll get quotes you can actually compare, and a developer can often reply within a day. When you're ready, send your brief on WhatsApp or through the form to <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
@@ -3971,6 +3977,8 @@ module.exports = [
 <p>Image-heavy portfolios can be slow. Use properly sized, compressed images in modern formats, lazy-load galleries and choose good hosting. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>. For client galleries, use password-protected pages or a dedicated gallery tool.</p>
 
 <p>Event and wedding planners face the same challenge with large galleries; see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a>.</p>
+
+<p>Photographers: see the full guide to <a href="/blog/website-for-photographers/">websites for photographers</a>.</p>
 
 <h2>Get found</h2>
 <ul>
@@ -5028,6 +5036,8 @@ module.exports = [
 </ol>
 
 <p>Seeing an error message? See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
+
+<p>Don't forget the server side: <a href="/blog/update-php-version-wordpress/">update your PHP version safely</a>.</p>
 
 <h2>Automatic updates: yes or no?</h2>
 <ul>
@@ -6460,6 +6470,8 @@ module.exports = [
   <li>Blocking whole countries if you might get genuine international enquiries</li>
   <li>Filters so strict that real messages vanish silently</li>
 </ul>
+
+<p>Choosing a form plugin? See <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a>.</p>
 
 <h2>Test after changes</h2>
 <p>After adding spam protection, submit the form yourself on desktop and mobile and confirm the email arrives. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a>.</p>
@@ -11981,6 +11993,357 @@ module.exports = [
 <p>Gentle, practical articles on topics like managing exam stress or starting therapy help people find you and feel comfortable reaching out. Add a Google Business Profile if you see clients in person.</p>
 
 <p>For professional practice websites generally, see <a href="/blog/personal-brand-website-professionals/">personal brand websites for professionals</a>.</p>
+`,
+  },
+  {
+    slug: 'update-php-version-wordpress',
+    seoTitle: 'How to Update the PHP Version of Your WordPress Site Safely',
+    title: 'How to Update Your WordPress Site\'s PHP Version Safely',
+    description: 'Why your WordPress PHP version matters for speed and security, how to check which version you run, how to test and switch versions in your hosting panel, and what to do if something breaks.',
+    date: '2026-09-27',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-speed-optimization', 'wordpress-malware-removal'],
+    body: `
+<p>WordPress is written in PHP, and your hosting server runs a particular PHP version. Many older business websites still run on PHP versions that stopped receiving security fixes years ago. Updating is one of the simplest ways to make a site faster and safer, as long as you do it carefully.</p>
+
+<h2>Why the PHP version matters</h2>
+<ul>
+  <li><strong>Security:</strong> old PHP versions no longer get security patches</li>
+  <li><strong>Speed:</strong> newer PHP versions generally run WordPress noticeably faster</li>
+  <li><strong>Compatibility:</strong> new plugin and theme versions eventually drop support for old PHP</li>
+</ul>
+
+<h2>Check your current version</h2>
+<ul>
+  <li>In WordPress: Tools → Site Health → Info → Server</li>
+  <li>Site Health's Status tab also warns if your PHP version is outdated</li>
+  <li>Or check your hosting control panel</li>
+</ul>
+<p>Compare it with the supported versions listed on php.net and the recommended version on WordPress.org's requirements page.</p>
+
+<h2>Before you switch</h2>
+<ol>
+  <li><strong>Take a full backup</strong> of files and database; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a></li>
+  <li><strong>Update WordPress, themes and plugins first.</strong> Old plugin versions are the usual cause of PHP problems</li>
+  <li><strong>Look for abandoned plugins</strong> that haven't been updated in years and replace them</li>
+  <li><strong>Test on a staging site</strong> if possible; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
+</ol>
+
+<h2>How to switch PHP versions</h2>
+<p>Most hosts let you change the PHP version from the control panel, often under options like "Select PHP Version", "PHP Settings" or "MultiPHP Manager". Choose a newer supported version and save. If you can't find it, ask your host's support team.</p>
+<p>Moving one major step at a time can make it easier to spot which change causes a problem.</p>
+
+<h2>Test after switching</h2>
+<ul>
+  <li>Homepage and key pages</li>
+  <li>Contact forms (submit a test)</li>
+  <li>WooCommerce cart and checkout</li>
+  <li>Logging in to the dashboard</li>
+  <li>Any custom features, calculators or integrations</li>
+</ul>
+
+<h2>If something breaks</h2>
+<ul>
+  <li>Switch back to the previous PHP version in the hosting panel. It's usually instant</li>
+  <li>Check the error message or the recovery-mode email WordPress sends to the admin</li>
+  <li>Identify the plugin or theme causing the error, update or replace it, then try again</li>
+</ul>
+<p>See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a>.</p>
+
+<h2>Make it part of maintenance</h2>
+<p>Check the PHP version at least once a year, as part of your <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>. Or let a <a href="/wordpress-maintenance/">maintenance service</a> handle it.</p>
+`,
+  },
+  {
+    slug: 'wordpress-database-optimization',
+    seoTitle: 'WordPress Database Optimisation: Clean Up Safely',
+    title: 'WordPress Database Optimisation: How to Clean Up and Speed Up Safely',
+    description: 'What slows a WordPress database: revisions, transients, spam, leftover plugin data and autoloaded options, plus how to clean up safely with backups, the right plugins and sensible limits.',
+    date: '2026-09-27',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
+    body: `
+<p>Every WordPress site stores its content and settings in a database. Over the years it collects clutter: hundreds of post revisions, expired temporary data, spam comments and leftovers from plugins you deleted long ago. On older and busier sites, cleaning it up can make the dashboard and uncached pages noticeably quicker.</p>
+
+<h2>What bloats a WordPress database</h2>
+<ul>
+  <li><strong>Post revisions:</strong> WordPress saves a copy every time you update a page</li>
+  <li><strong>Auto-drafts and trashed posts</strong></li>
+  <li><strong>Spam and trashed comments</strong></li>
+  <li><strong>Expired transients:</strong> temporary cached data that hasn't been cleared</li>
+  <li><strong>Leftover plugin data:</strong> tables and settings from removed plugins</li>
+  <li><strong>Autoloaded options:</strong> settings loaded on every page; too many slow every request</li>
+  <li><strong>Logs:</strong> some security, email and scheduling plugins keep large logs</li>
+</ul>
+
+<h2>Always back up first</h2>
+<p>Database clean-up deletes data permanently. Take a full backup and confirm you can restore it before you start; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</p>
+
+<h2>Safe clean-up steps</h2>
+<ol>
+  <li>Delete spam and trashed comments</li>
+  <li>Empty the trash for posts and pages</li>
+  <li>Remove old revisions, keeping a few recent ones</li>
+  <li>Clear expired transients</li>
+  <li>Optimise database tables</li>
+</ol>
+<p>Plugins such as WP-Optimize or Advanced Database Cleaner can do this, and some caching plugins include database tools. Run the clean-up, then remove or deactivate the tool if you don't need it regularly.</p>
+
+<h2>Limit revisions going forward</h2>
+<p>You can limit how many revisions WordPress keeps by adding a line to wp-config.php, for example keeping the last five. Ask your developer if you're not comfortable editing this file.</p>
+
+<h2>Be careful with leftover tables and options</h2>
+<p>Removing data left by old plugins helps, but deleting the wrong table can break a working feature. Only remove leftovers you're sure belong to plugins you no longer use, or have a developer review them.</p>
+
+<h2>Autoloaded options</h2>
+<p>If a plugin stores large amounts of data as autoloaded options, every page load pays the price. Recent versions of WordPress Site Health can warn when autoloaded data is too large. Fixing it usually means removing or replacing the plugin responsible.</p>
+
+<h2>WooCommerce stores</h2>
+<p>Stores accumulate customer sessions, order notes and scheduled action logs. WooCommerce has built-in tools to clear some of these under WooCommerce → Status → Tools. Never delete order data without accounting approval.</p>
+
+<h2>How often?</h2>
+<p>For most business sites, a clean-up every few months is plenty. See the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>.</p>
+
+<p>Database work is one part of speed; also see <a href="/blog/wordpress-caching-explained/">caching explained</a> and <a href="/blog/why-is-my-wordpress-site-slow/">why your site is slow</a>.</p>
+`,
+  },
+  {
+    slug: 'website-design-contract-checklist',
+    seoTitle: 'Website Design Contract: What to Include (Checklist)',
+    title: 'Website Design Contract Checklist: What to Agree Before You Start',
+    description: 'What a website design and development agreement should cover: scope, pages, content, revisions, timelines, payments, ownership, hosting, maintenance, support and ending the project.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['hire-wordpress-developer', 'wordpress-website-development', 'wordpress-developer-for-agencies'],
+    body: `
+<p>Most website project disputes come from different expectations: "I thought that was included." A clear written agreement protects both you and your developer. It doesn't need to be a long legal document, but it should cover the points below. For legal advice specific to your situation, speak to a lawyer.</p>
+
+<h2>1. Scope of work</h2>
+<ul>
+  <li>List of pages and features</li>
+  <li>Integrations: payments, WhatsApp, CRM, booking</li>
+  <li>What is <strong>not</strong> included</li>
+</ul>
+<p>A good brief makes this easy; see the <a href="/blog/website-brief-template/">website brief template</a>.</p>
+
+<h2>2. Content responsibilities</h2>
+<p>Who writes the text, supplies photos and adds products? Content delays are the most common reason projects run late.</p>
+
+<h2>3. Design and revisions</h2>
+<ul>
+  <li>How many design concepts or revision rounds are included</li>
+  <li>How extra changes are charged</li>
+</ul>
+
+<h2>4. Timeline</h2>
+<p>Key milestones and what happens to the timeline if feedback or content is delayed. See <a href="/blog/how-long-to-build-wordpress-website/">how long a WordPress website takes</a>.</p>
+
+<h2>5. Payment terms</h2>
+<ul>
+  <li>Total cost and what it includes</li>
+  <li>Payment schedule, such as an advance, a milestone payment and final payment at launch</li>
+  <li>Taxes, and costs paid separately like domain, hosting and premium plugins</li>
+</ul>
+
+<h2>6. Ownership</h2>
+<p>State that you own the website, content and design once fully paid, and that domain, hosting and accounts are in your name. See the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
+
+<h2>7. Licences</h2>
+<p>Who buys premium themes, plugins, fonts and stock images, and in whose name.</p>
+
+<h2>8. Testing and launch</h2>
+<p>What will be tested (devices, browsers, forms, speed), and what counts as "complete".</p>
+
+<h2>9. Post-launch support</h2>
+<ul>
+  <li>A free bug-fix period after launch</li>
+  <li>Training or handover documentation</li>
+  <li>Maintenance options and cost; see <a href="/blog/website-maintenance-cost-india/">maintenance costs</a></li>
+</ul>
+
+<h2>10. Confidentiality</h2>
+<p>Especially relevant for agencies outsourcing work and businesses sharing sensitive information.</p>
+
+<h2>11. Ending the project</h2>
+<p>What happens if either side wants to stop: payment for work done and handover of files and access.</p>
+
+<h2>Keep it simple and in writing</h2>
+<p>Even an email summarising these points and confirmed by both sides is far better than nothing.</p>
+
+<p>Choosing who to work with? See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-form-plugins-compared',
+    seoTitle: 'Best WordPress Form Plugins Compared (CF7, WPForms & More)',
+    title: 'WordPress Form Plugins Compared: Which One Should You Use?',
+    description: 'A practical comparison of popular WordPress form plugins, including Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Forminator, plus what matters more than the plugin: delivery and spam protection.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'landing-page-design', 'elementor-developer'],
+    body: `
+<p>Contact and quote forms are where your website turns visitors into leads, so the form plugin matters. There are many options, and each suits different needs. Here's a practical comparison of popular choices.</p>
+
+<h2>What to look for</h2>
+<ul>
+  <li>Easy form building and editing</li>
+  <li>Reliable email notifications</li>
+  <li>Saving entries in the dashboard (so nothing is lost if an email fails)</li>
+  <li>Spam protection</li>
+  <li>Conditional logic, file uploads and multi-step forms if needed</li>
+  <li>Integrations: CRM, Google Sheets, payments</li>
+  <li>Impact on page speed</li>
+</ul>
+
+<h2>Popular options</h2>
+<table>
+  <thead><tr><th>Plugin</th><th>Pricing model</th><th>Good for</th></tr></thead>
+  <tbody>
+    <tr><td>Contact Form 7</td><td>Free</td><td>Simple forms; developers comfortable with its code-like editor. Entries aren't saved by default (an add-on like Flamingo does this)</td></tr>
+    <tr><td>WPForms</td><td>Free (Lite) and paid</td><td>Beginner-friendly drag-and-drop; many features in paid plans</td></tr>
+    <tr><td>Gravity Forms</td><td>Paid</td><td>Complex forms, calculations, workflows and integrations</td></tr>
+    <tr><td>Fluent Forms</td><td>Free and paid</td><td>Feature-rich free version, lightweight</td></tr>
+    <tr><td>Forminator</td><td>Free, with extras</td><td>Forms, quizzes and polls with a generous free version</td></tr>
+    <tr><td>Page builder forms</td><td>Included with builders like Elementor Pro</td><td>Simple forms styled with the rest of the page</td></tr>
+  </tbody>
+</table>
+<p>Features and pricing change over time, so check each plugin's current plans before deciding.</p>
+
+<h2>Email delivery matters more than the plugin</h2>
+<p>Many "form not working" problems are really email problems. WordPress's default mail often lands in spam or never arrives. Use an SMTP plugin with a proper email service, and set up SPF, DKIM and DMARC; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">email deliverability</a>.</p>
+
+<h2>Spam protection</h2>
+<p>Use honeypots, time checks or invisible challenges rather than annoying puzzles; see <a href="/blog/stop-contact-form-spam/">stopping contact form spam</a>.</p>
+
+<h2>Keep forms short</h2>
+<p>Whatever plugin you use, ask only for what you need: name, phone or email, and a message or service. Every extra field reduces submissions.</p>
+
+<h2>Track submissions</h2>
+<p>Send visitors to a thank-you page or fire an analytics event on success; see <a href="/blog/thank-you-pages-forms/">thank-you pages</a>.</p>
+
+<h2>Not using WordPress forms at all?</h2>
+<p>Some sites (like this one) use a lightweight custom form with a serverless function that emails enquiries, which keeps pages fast. It's a good option for static or custom sites.</p>
+
+<p>Forms still not bringing enquiries? See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-astrologers-vastu-consultants',
+    seoTitle: 'Website for Astrologers & Vastu Consultants: A Guide',
+    title: 'Website for Astrologers, Numerologists and Vastu Consultants',
+    description: 'How astrologers, numerologists and vastu consultants can build a trustworthy website: services, consultation booking, online payment, Hindi content, privacy for birth details and honest marketing.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-lawyers-and-consultants', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>Many people now look for astrologers, numerologists and vastu consultants online, and they often book consultations with experts in other cities. A professional website helps you stand out from the crowd of social media profiles and marketplace listings, and lets clients book and pay directly.</p>
+
+<h2>What potential clients look for</h2>
+<ul>
+  <li>Your experience and background</li>
+  <li>Services offered and consultation formats</li>
+  <li>Fees and how long a consultation lasts</li>
+  <li>Languages you consult in</li>
+  <li>An easy way to book</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ul>
+  <li><strong>About:</strong> your background, training and years of practice</li>
+  <li><strong>Services:</strong> separate pages for kundli reading, matchmaking, numerology, vastu for homes and offices, muhurat and so on</li>
+  <li><strong>Consultation options:</strong> phone, video, in person, or site visits for vastu</li>
+  <li><strong>Fees and booking</strong></li>
+  <li><strong>Articles:</strong> festival dates, vastu tips, explanations of concepts</li>
+  <li><strong>Contact</strong></li>
+</ul>
+
+<h2>Booking and payment</h2>
+<ul>
+  <li>An online booking calendar with time slots</li>
+  <li>UPI and card payments at booking</li>
+  <li>A form collecting only the details needed for the consultation</li>
+  <li>WhatsApp for questions; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a></li>
+</ul>
+
+<h2>Language</h2>
+<p>Many clients prefer Hindi or a regional language. A bilingual website can reach more people; see <a href="/blog/multilingual-wordpress-website-hindi-english/">Hindi and English websites</a>.</p>
+
+<h2>Protect personal details</h2>
+<p>Birth date, time and place are personal information. Use HTTPS, keep forms secure, don't share details and publish a privacy policy; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy basics</a>.</p>
+
+<h2>Honest marketing builds lasting trust</h2>
+<ul>
+  <li>Avoid guaranteed outcomes and fear-based claims</li>
+  <li>Be clear about fees upfront, with no surprise charges for remedies</li>
+  <li>Use real testimonials with permission</li>
+  <li>Misleading advertising claims can also create legal problems under consumer protection rules</li>
+</ul>
+
+<h2>Content and SEO</h2>
+<p>Helpful articles, such as festival calendars, vastu tips for home offices or explanations of planetary periods, attract regular search traffic. For local clients, a Google Business Profile and reviews help you appear in local results; see <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+
+<p>For professional practice websites generally, see <a href="/blog/personal-brand-website-professionals/">personal brand websites</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-photographers',
+    seoTitle: 'Website for Photographers: Get More Bookings',
+    title: 'Website for Photographers: Show Your Work and Get More Bookings',
+    description: 'How wedding, portrait, product and event photographers can build a website that wins bookings: curated galleries, fast images, packages, enquiry forms, client galleries and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'wordpress-speed-optimization', 'wordpress-seo-services'],
+    body: `
+<p>Instagram is great for being discovered, but a website is where serious clients check your full work, packages and availability before booking. For photographers, the website itself is the portfolio, so it needs to look great and load fast.</p>
+
+<h2>What clients look for</h2>
+<ul>
+  <li>Your style: does it match what they want?</li>
+  <li>Complete stories, not just highlights, especially for weddings</li>
+  <li>Packages and rough pricing</li>
+  <li>Availability for their date and location</li>
+  <li>Reviews from past clients</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ul>
+  <li><strong>Portfolio by type:</strong> weddings, pre-wedding, maternity, products, corporate events</li>
+  <li><strong>Stories:</strong> full galleries or blog posts for individual weddings and shoots, with the couple's or client's permission</li>
+  <li><strong>Packages:</strong> what's included, hours, deliverables and starting prices</li>
+  <li><strong>About:</strong> you, your team and your approach</li>
+  <li><strong>Reviews</strong></li>
+  <li><strong>Enquiry:</strong> a form with event date, location and type</li>
+</ul>
+
+<h2>Curate, don't dump</h2>
+<p>Show your best 20–40 images per category rather than hundreds. Visitors judge you by your weakest image; see <a href="/blog/portfolio-website-freelancers-creatives/">portfolio websites for creatives</a>.</p>
+
+<h2>Speed with large images</h2>
+<ul>
+  <li>Resize images to display size and compress them</li>
+  <li>Use modern formats like WebP</li>
+  <li>Lazy-load galleries so below-the-fold images load later</li>
+  <li>Avoid heavy slider plugins</li>
+</ul>
+<p>See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
+
+<h2>Client galleries</h2>
+<p>Password-protected galleries for delivering and proofing photos make you look professional. You can use dedicated gallery services or WordPress plugins.</p>
+
+<h2>Protecting your images</h2>
+<p>Right-click blocking annoys visitors and doesn't stop determined copying. Subtle watermarks, sensible image sizes and copyright notices are more practical.</p>
+
+<h2>Get found locally</h2>
+<ul>
+  <li>Pages targeting searches like "wedding photographer in {city}"</li>
+  <li>Descriptive file names and alt text on images</li>
+  <li>A Google Business Profile with your best work</li>
+  <li>Reviews from clients; see <a href="/blog/get-more-google-reviews/">getting more Google reviews</a></li>
+  <li>Partnerships with venues and planners who can link to you; see <a href="/blog/website-for-event-wedding-planners/">websites for wedding planners</a></li>
+</ul>
+
+<h2>Make enquiring easy</h2>
+<p>WhatsApp and a short enquiry form on every page, with a quick reply. Couples often contact several photographers at once, so response speed matters.</p>
 `,
   },
 ];

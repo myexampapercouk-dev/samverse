@@ -1504,5 +1504,47 @@
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
     <description>How psychologists, therapists and counsellors can build a calm, trustworthy website: credentials, approaches, session formats, fees, first-session information, privacy and ethical marketing.</description>
   </item>
+  <item>
+    <title>How to Update Your WordPress Site's PHP Version Safely</title>
+    <link>https://samverse.space/blog/update-php-version-wordpress/</link>
+    <guid>https://samverse.space/blog/update-php-version-wordpress/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Why your WordPress PHP version matters for speed and security, how to check which version you run, how to test and switch versions in your hosting panel, and what to do if something breaks.</description>
+  </item>
+  <item>
+    <title>WordPress Database Optimisation: How to Clean Up and Speed Up Safely</title>
+    <link>https://samverse.space/blog/wordpress-database-optimization/</link>
+    <guid>https://samverse.space/blog/wordpress-database-optimization/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What slows a WordPress database: revisions, transients, spam, leftover plugin data and autoloaded options, plus how to clean up safely with backups, the right plugins and sensible limits.</description>
+  </item>
+  <item>
+    <title>Website Design Contract Checklist: What to Agree Before You Start</title>
+    <link>https://samverse.space/blog/website-design-contract-checklist/</link>
+    <guid>https://samverse.space/blog/website-design-contract-checklist/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What a website design and development agreement should cover: scope, pages, content, revisions, timelines, payments, ownership, hosting, maintenance, support and ending the project.</description>
+  </item>
+  <item>
+    <title>WordPress Form Plugins Compared: Which One Should You Use?</title>
+    <link>https://samverse.space/blog/wordpress-form-plugins-compared/</link>
+    <guid>https://samverse.space/blog/wordpress-form-plugins-compared/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A practical comparison of popular WordPress form plugins, including Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Forminator, plus what matters more than the plugin: delivery and spam protection.</description>
+  </item>
+  <item>
+    <title>Website for Astrologers, Numerologists and Vastu Consultants</title>
+    <link>https://samverse.space/blog/website-for-astrologers-vastu-consultants/</link>
+    <guid>https://samverse.space/blog/website-for-astrologers-vastu-consultants/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How astrologers, numerologists and vastu consultants can build a trustworthy website: services, consultation booking, online payment, Hindi content, privacy for birth details and honest marketing.</description>
+  </item>
+  <item>
+    <title>Website for Photographers: Show Your Work and Get More Bookings</title>
+    <link>https://samverse.space/blog/website-for-photographers/</link>
+    <guid>https://samverse.space/blog/website-for-photographers/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How wedding, portrait, product and event photographers can build a website that wins bookings: curated galleries, fast images, packages, enquiry forms, client galleries and local SEO.</description>
+  </item>
 </channel>
 </rss>
