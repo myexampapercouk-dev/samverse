@@ -2696,4 +2696,342 @@ module.exports = [
 <p>Start with one lead magnet for your most common client question, then add a simple monthly newsletter. Over time, it becomes one of your most reliable sources of warm leads.</p>
 `,
   },
+  {
+    slug: 'woocommerce-store-launch-checklist',
+    seoTitle: 'WooCommerce Store Launch Checklist (India)',
+    title: 'WooCommerce Store Launch Checklist: 30 Things to Check Before Going Live',
+    description: 'A complete WooCommerce launch checklist for Indian online stores: products, payments, shipping, taxes, policies, emails, speed, SEO and testing, so your first orders go smoothly.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-speed-optimization', 'wordpress-seo-services'],
+    body: `
+<p>Launching an online store is exciting, and a broken checkout on day one is the fastest way to lose that momentum. Run through this checklist before you go live so your first customers have a smooth experience.</p>
+
+<h2>Products</h2>
+<ol>
+  <li>Every product has a clear title, description, price and good photos</li>
+  <li>Variations (size, colour, weight) set up and tested</li>
+  <li>Stock levels entered, with low-stock notifications on</li>
+  <li>Categories and tags organised the way customers browse</li>
+  <li>Sale prices and scheduled offers checked</li>
+  <li>Product images compressed so pages load quickly</li>
+</ol>
+
+<h2>Payments</h2>
+<ol start="7">
+  <li>Payment gateway (for example Razorpay, PayU or Cashfree) switched from test mode to live mode</li>
+  <li>Test payments completed with UPI, card and net banking</li>
+  <li>Failed and cancelled payments tested: orders shouldn't get stuck as "pending"</li>
+  <li>Gateway webhooks configured</li>
+  <li>Cash on Delivery enabled or disabled deliberately, with any limits you need</li>
+</ol>
+<p>More detail in <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a>.</p>
+
+<h2>Shipping and taxes</h2>
+<ol start="12">
+  <li>Shipping zones and rates set (local, state, national, international)</li>
+  <li>Free-shipping thresholds working</li>
+  <li>GST settings configured correctly for your products (confirm with your accountant)</li>
+  <li>Invoices include the details your business needs</li>
+</ol>
+
+<h2>Policies and legal pages</h2>
+<ol start="16">
+  <li>Terms and conditions</li>
+  <li>Privacy policy</li>
+  <li>Refund, return and cancellation policy</li>
+  <li>Shipping policy</li>
+  <li>Contact page with business details</li>
+</ol>
+
+<h2>Emails and notifications</h2>
+<ol start="21">
+  <li>Order confirmation, processing and completed emails branded and tested</li>
+  <li>New order alerts reaching the right person (email and ideally WhatsApp)</li>
+  <li>Emails landing in the inbox, not spam (use a proper sending setup)</li>
+</ol>
+
+<h2>Speed, mobile and SEO</h2>
+<ol start="24">
+  <li>Checkout tested on real phones, start to finish</li>
+  <li>Homepage, category and product pages tested on PageSpeed Insights</li>
+  <li>Unique titles and descriptions for products and categories</li>
+  <li>Product schema markup enabled (via your SEO plugin)</li>
+  <li>Sitemap submitted in Google Search Console</li>
+</ol>
+
+<h2>Final checks</h2>
+<ol start="29">
+  <li>Full backup taken, and automatic backups scheduled</li>
+  <li>Analytics tracking purchases and key events</li>
+</ol>
+
+<h2>After launch</h2>
+<p>Watch the first orders closely, reply quickly to customer questions, and check reports weekly. Keep plugins updated and the store backed up; see the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>. Need help setting it all up? See <a href="/woocommerce-developer/">WooCommerce store development</a>.</p>
+`,
+  },
+  {
+    slug: 'schema-markup-explained',
+    seoTitle: 'Schema Markup Explained for Small Business Websites',
+    title: 'Schema Markup Explained: How Structured Data Helps Your Website in Google',
+    description: 'What schema markup (structured data) is, how it helps Google understand your business, which types small businesses should use, and how to add and test it on WordPress.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development', 'website-for-restaurants'],
+    body: `
+<p>Schema markup is extra code that tells search engines exactly what your content is about: that a page is about a business with certain opening hours, a product with a price, an article with an author, or a list of FAQs. It doesn't change how your page looks to visitors, but it helps Google understand and present it.</p>
+
+<h2>Why schema markup matters</h2>
+<ul>
+  <li><strong>Clarity:</strong> search engines understand your business name, services, location and contact details without guessing</li>
+  <li><strong>Rich results:</strong> some types can make your listing eligible for enhanced displays, such as product prices, ratings, breadcrumbs or event details</li>
+  <li><strong>AI and answer engines:</strong> clearly structured information is easier for search features and AI assistants to use accurately</li>
+</ul>
+<p>Schema doesn't guarantee higher rankings or rich results, but it removes ambiguity, which is always a good foundation.</p>
+
+<h2>Schema types small businesses should know</h2>
+<table>
+  <thead><tr><th>Type</th><th>Use it for</th></tr></thead>
+  <tbody>
+    <tr><td>LocalBusiness / ProfessionalService</td><td>Your business name, address, phone, hours and area served</td></tr>
+    <tr><td>Organization / Person</td><td>Company or personal brand details, logo and social profiles</td></tr>
+    <tr><td>Service</td><td>Individual service pages</td></tr>
+    <tr><td>Product</td><td>Items in an online store (price, availability)</td></tr>
+    <tr><td>Article / BlogPosting</td><td>Blog posts, with author and dates</td></tr>
+    <tr><td>FAQPage</td><td>Frequently asked questions on a page</td></tr>
+    <tr><td>BreadcrumbList</td><td>Your site's page hierarchy</td></tr>
+    <tr><td>Event, Recipe, Course, Restaurant</td><td>Specialist content types</td></tr>
+  </tbody>
+</table>
+
+<h2>How to add schema on WordPress</h2>
+<ol>
+  <li><strong>SEO plugins</strong> like Rank Math or Yoast add Organization, Article, Breadcrumb and basic page schema automatically, and let you choose schema types per page.</li>
+  <li><strong>WooCommerce</strong> adds Product schema for store items.</li>
+  <li><strong>Custom JSON-LD</strong> can be added for anything specific, such as detailed service or FAQ schema.</li>
+</ol>
+
+<h2>Rules to follow</h2>
+<ul>
+  <li><strong>Only mark up what's visible on the page.</strong> Schema must match real content.</li>
+  <li><strong>Never fake reviews or ratings</strong> in schema. It violates Google's guidelines.</li>
+  <li><strong>Keep details consistent</strong> with your Google Business Profile and contact page.</li>
+  <li><strong>Avoid duplicate, conflicting schema</strong> from multiple plugins.</li>
+</ul>
+
+<h2>How to test it</h2>
+<ul>
+  <li><strong>Google's Rich Results Test:</strong> checks eligibility for rich results</li>
+  <li><strong>Schema Markup Validator (schema.org):</strong> checks the code is valid</li>
+  <li><strong>Search Console enhancements reports:</strong> show errors across your site</li>
+</ul>
+
+<h2>A practical example</h2>
+<p>This website uses structured data throughout: business and person details on the homepage, Service and FAQ schema on each service page, BlogPosting on articles, and breadcrumbs everywhere. It's part of a complete <a href="/wordpress-seo-services/">WordPress SEO setup</a>. For more SEO terms, see the <a href="/wordpress-glossary/">website glossary</a>.</p>
+`,
+  },
+  {
+    slug: 'multilingual-wordpress-website-hindi-english',
+    seoTitle: 'Multilingual WordPress Websites (Hindi & English)',
+    title: 'Multilingual WordPress Websites: Hindi, English and Regional Languages',
+    description: 'When a business should offer its website in Hindi, English or regional languages, how multilingual WordPress sites work, translation options, and SEO best practices like hreflang.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['website-for-temples-and-ngos', 'website-for-manufacturers', 'wordpress-seo-services'],
+    body: `
+<p>India has hundreds of millions of internet users who prefer to browse in Hindi or a regional language, and many Indian businesses also sell abroad. A multilingual website can reach customers your competitors miss. Here's how to decide if you need one and how to do it properly.</p>
+
+<h2>When a multilingual site makes sense</h2>
+<ul>
+  <li>Your customers are more comfortable in Hindi or a regional language (common for temples, NGOs, local services, agriculture and education)</li>
+  <li>You sell to international markets that search in other languages</li>
+  <li>Competitors in your area only offer English</li>
+</ul>
+<p>If your customers mostly search in English, a well-written English site may be enough. Add languages when there's real demand.</p>
+
+<h2>How multilingual WordPress sites work</h2>
+<p>A translation plugin (such as WPML, Polylang, TranslatePress or Weglot) lets you create a version of each page in every language, with a language switcher. Each language gets its own URLs, for example <code>/hi/</code> for Hindi, so search engines can index them separately.</p>
+
+<h2>Translation options</h2>
+<ul>
+  <li><strong>Professional or native-speaker translation:</strong> best quality, essential for key pages</li>
+  <li><strong>Machine translation with human review:</strong> faster and cheaper, fine for large volumes if someone fluent checks it</li>
+  <li><strong>Pure machine translation:</strong> risky. Awkward wording damages trust, especially in religious, legal or medical contexts.</li>
+</ul>
+
+<h2>SEO best practices</h2>
+<ul>
+  <li><strong>Separate URLs per language</strong>, not automatic switching based on location</li>
+  <li><strong>hreflang tags</strong> so Google shows the right language version to each user (most multilingual plugins add these)</li>
+  <li><strong>Translate titles, descriptions and image alt text</strong>, not just body content</li>
+  <li><strong>Research keywords in each language</strong>. People search differently in Hindi than in English, and often in Hinglish.</li>
+  <li><strong>Fonts that support Devanagari and regional scripts</strong> properly</li>
+</ul>
+
+<h2>Real examples</h2>
+<p>The <a href="/work/our-temples/">Our Temples</a> directory includes Telugu content for regional devotees. Manufacturers targeting export markets often add languages for their key buyer countries; see <a href="/blog/b2b-manufacturer-website-guide/">getting more export enquiries</a>.</p>
+
+<h2>Start small</h2>
+<p>You don't have to translate everything at once. Start with the homepage, key service or product pages and the contact page, then expand based on traffic and enquiries.</p>
+
+<p>Need a site in more than one language? It can be planned in from the start as part of <a href="/website-for-temples-and-ngos/">community</a> and <a href="/website-for-manufacturers/">manufacturer</a> websites, or added to an existing site.</p>
+`,
+  },
+  {
+    slug: 'whatsapp-on-business-website',
+    seoTitle: 'Adding WhatsApp to Your Business Website (Guide)',
+    title: 'WhatsApp on Your Business Website: How to Add It and Get More Enquiries',
+    description: 'How to add WhatsApp to your website the right way: click-to-chat buttons, pre-filled messages, form-to-WhatsApp flows, WhatsApp Business features and tracking enquiries.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-website-development', 'landing-page-design', 'website-for-restaurants'],
+    body: `
+<p>For many Indian customers, WhatsApp is the easiest way to contact a business: faster than email, less awkward than a phone call. Adding WhatsApp to your website properly can noticeably increase the number of people who reach out.</p>
+
+<h2>Ways to add WhatsApp</h2>
+<h3>1. Floating chat button</h3>
+<p>A small WhatsApp button fixed to the corner of every page, visible on mobile and desktop. It's the simplest and most effective option.</p>
+<h3>2. Buttons in key places</h3>
+<p>"Chat on WhatsApp" next to your main call to action, on service pages, product pages and contact pages.</p>
+<h3>3. Pre-filled messages</h3>
+<p>Click-to-chat links can include a ready-made message, for example "Hi, I'm interested in your 2BHK flats" on a property page. Visitors just tap send, and you instantly know which page they came from.</p>
+<h3>4. Form-to-WhatsApp</h3>
+<p>A short form (name, requirement) that opens WhatsApp with the details filled in, or emails you and then opens WhatsApp, so no enquiry is lost. This site's contact form works that way.</p>
+
+<h2>Use WhatsApp Business features</h2>
+<ul>
+  <li><strong>Business profile:</strong> hours, address, website and description</li>
+  <li><strong>Greeting and away messages:</strong> instant replies when you're busy or closed</li>
+  <li><strong>Quick replies:</strong> saved answers to common questions</li>
+  <li><strong>Catalogue:</strong> show products or services inside WhatsApp</li>
+  <li><strong>Labels:</strong> organise chats as new lead, quoted, follow-up or won</li>
+</ul>
+
+<h2>Best practices</h2>
+<ul>
+  <li><strong>Reply fast.</strong> WhatsApp sets an expectation of quick responses.</li>
+  <li><strong>Don't hide other options.</strong> Some people still prefer calls or forms.</li>
+  <li><strong>Make it page-specific.</strong> Different pre-filled messages per service tell you exactly what each lead wants.</li>
+  <li><strong>Respect privacy.</strong> Don't add people to broadcast lists without their consent.</li>
+  <li><strong>Keep the button unobtrusive</strong>, so it doesn't cover content or cookie notices on small screens.</li>
+</ul>
+
+<h2>Track WhatsApp enquiries</h2>
+<p>Set up click tracking in Google Analytics so you can see which pages and campaigns generate WhatsApp chats; see <a href="/blog/setup-google-analytics-search-console/">setting up GA4</a>. For ad campaigns, count WhatsApp clicks as conversions alongside form submissions.</p>
+
+<h2>Where it works especially well</h2>
+<ul>
+  <li><strong>Restaurants:</strong> orders and table bookings (see <a href="/blog/restaurant-website-online-ordering/">restaurant ordering options</a>)</li>
+  <li><strong>Real estate:</strong> quick questions about projects and site visits</li>
+  <li><strong>Clinics and coaches:</strong> appointment questions</li>
+  <li><strong>Landing pages:</strong> an alternative to forms for mobile visitors</li>
+</ul>
+
+<p>WhatsApp integration is included in every website I build; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'image-optimization-wordpress',
+    seoTitle: 'Image Optimization for WordPress: Faster Pages',
+    title: 'Image Optimization for WordPress: Make Your Pages Load Faster',
+    description: 'Large images are the top cause of slow WordPress sites. How to resize, compress and serve WebP images, use lazy loading correctly, and write alt text that helps SEO.',
+    date: '2026-09-27',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'woocommerce-developer', 'website-redesign'],
+    body: `
+<p>Images usually make up most of a web page's size. A single photo straight from a phone can be several megabytes, often more than the entire rest of the page. Optimizing images is the quickest, cheapest way to speed up most WordPress sites.</p>
+
+<h2>1. Resize before uploading</h2>
+<p>If an image displays at 1200 pixels wide, there's no need to upload a 4000-pixel original. Resize photos to roughly the largest size they'll be shown at (hero images around 1600–2000 px wide, content images around 1200 px).</p>
+
+<h2>2. Compress</h2>
+<p>Compression reduces file size with little or no visible quality loss. Image optimization plugins can compress new uploads automatically and bulk-compress existing images. For photos, moderate compression is usually invisible to visitors.</p>
+
+<h2>3. Use modern formats</h2>
+<ul>
+  <li><strong>WebP</strong> (and AVIF) files are much smaller than JPEG or PNG at similar quality, and are supported by modern browsers</li>
+  <li><strong>SVG</strong> for logos and icons: tiny and sharp at any size</li>
+  <li><strong>PNG</strong> only when you need transparency and SVG isn't suitable</li>
+</ul>
+
+<h2>4. Lazy load, but not the hero image</h2>
+<p>Lazy loading delays images until they're about to scroll into view, which speeds up initial loading. But the main image at the top of the page should load immediately. Lazy-loading it delays your Largest Contentful Paint. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>5. Set image dimensions</h2>
+<p>Images should have width and height set so the browser reserves space for them. This prevents layout shifts (CLS) where text jumps as images load.</p>
+
+<h2>6. Serve responsive sizes</h2>
+<p>WordPress automatically creates multiple sizes of each image and lets browsers choose the right one for the screen. Make sure your theme and builder use this properly, so phones don't download desktop-sized images.</p>
+
+<h2>7. Write useful alt text</h2>
+<p>Alt text describes the image for screen readers and search engines. Describe what's shown, naturally: "Solar panels installed on a factory rooftop" beats "IMG_2041" or keyword stuffing. Decorative images can have empty alt text.</p>
+
+<h2>8. Use descriptive file names</h2>
+<p><code>stainless-steel-water-tank.webp</code> tells search engines more than <code>DSC00123.jpg</code>.</p>
+
+<h2>Special cases</h2>
+<ul>
+  <li><strong>Online stores:</strong> hundreds of product photos add up. Consistent sizes and compression keep category pages fast.</li>
+  <li><strong>Galleries:</strong> use thumbnails in grids and load full-size images only when opened</li>
+  <li><strong>Sliders and background videos:</strong> heavy and often ignored. Consider a single strong image instead.</li>
+</ul>
+
+<p>Images are usually the first thing tackled in a <a href="/wordpress-speed-optimization/">speed optimization</a> project, often with dramatic results. For other causes of slowness, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a>.</p>
+`,
+  },
+  {
+    slug: 'website-accessibility-basics',
+    seoTitle: 'Website Accessibility Basics for Small Businesses',
+    title: 'Website Accessibility Basics: Making Your Site Usable for Everyone',
+    description: 'Practical website accessibility for small businesses: contrast, text size, headings, alt text, keyboard navigation, forms and links, and how accessibility also helps SEO and conversions.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['website-redesign', 'wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Website accessibility means making your site usable for everyone, including people with visual, hearing, motor or cognitive impairments, older visitors, and anyone using a small screen in bright sunlight. It's the right thing to do, and it usually improves SEO and conversions too.</p>
+
+<h2>Why accessibility matters for business</h2>
+<ul>
+  <li><strong>More customers:</strong> a significant share of people have some form of disability, and many more have age-related vision or dexterity changes</li>
+  <li><strong>Better usability for everyone:</strong> clear text, good contrast and simple navigation help all visitors</li>
+  <li><strong>SEO overlap:</strong> proper headings, alt text and descriptive links help search engines understand your pages too</li>
+</ul>
+
+<h2>10 accessibility basics</h2>
+<ol>
+  <li><strong>Good colour contrast.</strong> Text must stand out clearly from its background, especially light grey text on white.</li>
+  <li><strong>Readable text size.</strong> Body text around 16px or larger, with comfortable line spacing.</li>
+  <li><strong>Proper headings.</strong> One H1 per page, then H2s and H3s in order, never chosen just for their size.</li>
+  <li><strong>Alt text for meaningful images</strong>, describing what they show.</li>
+  <li><strong>Descriptive links.</strong> "Read the WordPress cost guide" instead of "click here".</li>
+  <li><strong>Links distinguishable from text</strong>, not only by colour: underline links in paragraphs.</li>
+  <li><strong>Keyboard navigation.</strong> Menus, buttons and forms should work with the Tab key, with a visible focus outline.</li>
+  <li><strong>Labelled forms.</strong> Every field has a visible label, and error messages explain how to fix the problem.</li>
+  <li><strong>No information by colour alone.</strong> Pair colours with text or icons.</li>
+  <li><strong>Captions or transcripts</strong> for important videos, and no auto-playing audio.</li>
+</ol>
+
+<h2>Quick ways to check your site</h2>
+<ul>
+  <li><strong>Lighthouse</strong> (in Chrome DevTools or PageSpeed Insights) includes an accessibility score and a list of issues</li>
+  <li><strong>Try navigating with only the keyboard</strong>: can you reach and use everything?</li>
+  <li><strong>Zoom to 200%</strong>: does the layout still work?</li>
+  <li><strong>Check contrast</strong> with a contrast checker tool</li>
+</ul>
+
+<h2>Common WordPress issues</h2>
+<ul>
+  <li>Themes with low-contrast grey text</li>
+  <li>Headings used for styling instead of structure</li>
+  <li>Sliders and pop-ups that trap keyboard users</li>
+  <li>Icon-only buttons with no text label</li>
+  <li>Page builder sections that are visually fine but badly structured</li>
+</ul>
+
+<h2>Accessibility is ongoing</h2>
+<p>Every new page, image and form is a chance to keep things accessible. Build good habits into your content process: alt text on every upload, clear headings, and descriptive links. See also <a href="/blog/website-design-mistakes/">design mistakes that cost customers</a>.</p>
+
+<p>Accessibility improvements are included when I <a href="/website-redesign/">redesign websites</a>, alongside speed and SEO.</p>
+`,
+  },
 ];
