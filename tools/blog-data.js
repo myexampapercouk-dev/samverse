@@ -76,6 +76,8 @@ module.exports = [
 
 <p>Ready to request quotes? Use the <a href="/blog/website-brief-template/">website brief template</a> so every developer quotes on the same scope.</p>
 
+<p>Got several quotes? See <a href="/blog/compare-website-quotes/">how to compare website quotes</a>.</p>
+
 <h2>The bottom line</h2>
 <p>For most small businesses in India, a professional WordPress website costs between ₹15,000 and ₹40,000, plus a few thousand rupees a year for domain and hosting. Online stores and larger sites cost more. Focus on value, not the lowest price: a fast, mobile-friendly website that brings in enquiries pays for itself quickly.</p>
 `,
@@ -413,6 +415,8 @@ module.exports = [
 </ul>
 
 <p>Hiring for SEO too? Learn the <a href="/blog/seo-red-flags-scams/">SEO red flags to avoid</a>.</p>
+
+<p>Hiring from outside India? See <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a>.</p>
 
 <h2>The bottom line</h2>
 <p>For most small and medium businesses, an experienced <a href="/hire-wordpress-developer/">freelance WordPress developer</a> offers the best balance of quality, cost and direct communication. Check their live work, ask the questions above, and get the scope in writing before you start.</p>
@@ -967,6 +971,8 @@ module.exports = [
 </ul>
 
 <p>After launch, follow this <a href="/blog/first-90-days-after-website-launch/">90-day plan</a>.</p>
+
+<p>Slow or scattered feedback is a common cause of delays; see <a href="/blog/give-website-feedback-developer/">how to give clear website feedback</a>.</p>
 
 <h2>Can it be done faster?</h2>
 <p>Yes, within reason. A landing page or small site can often go live in a few days if content is ready and decisions are quick. For urgent launches, a good approach is to launch the essential pages first and add the rest in a second phase.</p>
@@ -1910,6 +1916,8 @@ module.exports = [
   <li><strong>Monthly retainer:</strong> a set number of hours or sites per month for agencies with steady volume.</li>
 </ul>
 
+<p>More on pricing models: <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly</a>.</p>
+
 <h2>How to choose a white-label partner</h2>
 <ul>
   <li><strong>Portfolio of live sites</strong> built to a high standard</li>
@@ -2245,6 +2253,8 @@ module.exports = [
 <p>List pages, templates (blog post, archive, product), integrations (CRM, newsletter, payments) and who handles content entry. Clear scope means an accurate quote and timeline.</p>
 
 <p>Agencies outsourcing builds should also read <a href="/blog/white-label-wordpress-development-agencies/">how white-label WordPress development works</a>.</p>
+
+<p>Who does what in a project? See <a href="/blog/web-designer-vs-web-developer/">web designer vs web developer</a>.</p>
 
 <h2>Quick handoff checklist</h2>
 <ol>
@@ -11341,6 +11351,8 @@ module.exports = [
 </ul>
 <p>This gives you control without the risks; see <a href="/blog/website-maintenance-vs-management/">maintenance vs management</a>.</p>
 
+<p>Not sure what you'd be paying for? See <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer does</a> and <a href="/blog/web-designer-vs-web-developer/">designer vs developer</a>.</p>
+
 <h2>If you hire, choose well</h2>
 <p>Check live work, get a clear quote and keep ownership of your accounts; see <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> and the <a href="/blog/website-brief-template/">website brief template</a>.</p>
 
@@ -12208,6 +12220,8 @@ module.exports = [
   <li>Training or handover documentation</li>
   <li>Maintenance options and cost; see <a href="/blog/website-maintenance-cost-india/">maintenance costs</a></li>
 </ul>
+
+<p>More on this: <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></p>
 
 <h2>10. Confidentiality</h2>
 <p>Especially relevant for agencies outsourcing work and businesses sharing sensitive information.</p>
@@ -13785,6 +13799,435 @@ module.exports = [
 </ul>
 
 <p>Login security is one part of the full <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'compare-website-quotes',
+    seoTitle: 'How to Compare Website Quotes (Why Prices Vary So Much)',
+    title: 'How to Compare Website Quotes: Why Prices Vary So Much',
+    description: 'Why website quotes range from a few thousand to lakhs of rupees, what to check in each quote (scope, design, content, SEO, speed, support, ownership) and how to compare fairly.',
+    date: '2026-09-27',
+    category: 'Pricing',
+    related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
+    body: `
+<p>You ask three developers for a quote and get three wildly different numbers. It's confusing, but there's usually a reason: they're often quoting for very different things. Here's how to compare quotes properly and choose with confidence.</p>
+
+<h2>Why quotes differ so much</h2>
+<ul>
+  <li><strong>Custom design vs a lightly edited template</strong></li>
+  <li><strong>Who writes content</strong> and who adds it to the site</li>
+  <li><strong>Number of pages and features</strong> included</li>
+  <li><strong>SEO and speed work,</strong> done properly or not at all</li>
+  <li><strong>Experience and process:</strong> planning, testing and project management</li>
+  <li><strong>Support after launch</strong></li>
+  <li><strong>Hidden extras:</strong> hosting, premium plugins and changes charged later</li>
+</ul>
+
+<h2>Give everyone the same brief</h2>
+<p>You can only compare quotes that answer the same question. Send each developer the same written brief; see the <a href="/blog/website-brief-template/">website brief template</a>.</p>
+
+<h2>What to check in every quote</h2>
+<table>
+  <thead><tr><th>Item</th><th>Questions to ask</th></tr></thead>
+  <tbody>
+    <tr><td>Pages</td><td>How many pages and templates are included?</td></tr>
+    <tr><td>Design</td><td>Custom design, or a theme? How many revision rounds?</td></tr>
+    <tr><td>Content</td><td>Who writes and uploads the text and images?</td></tr>
+    <tr><td>Features</td><td>Forms, WhatsApp, booking, payments, blog, multilingual?</td></tr>
+    <tr><td>Mobile and speed</td><td>Is speed optimisation included? Any target scores?</td></tr>
+    <tr><td>SEO setup</td><td>Titles, descriptions, schema, sitemap, Search Console?</td></tr>
+    <tr><td>Security and backups</td><td>What's set up at launch?</td></tr>
+    <tr><td>Domain, hosting, licences</td><td>Included or separate, and in whose name?</td></tr>
+    <tr><td>Support</td><td>Free fixes after launch? Maintenance options?</td></tr>
+    <tr><td>Timeline</td><td>Realistic launch date and milestones?</td></tr>
+  </tbody>
+</table>
+
+<h2>Look beyond the price</h2>
+<ul>
+  <li><strong>Portfolio:</strong> live websites you can test on your phone</li>
+  <li><strong>Reviews and references</strong> from real clients</li>
+  <li><strong>Communication:</strong> did they ask good questions about your business?</li>
+  <li><strong>Clarity:</strong> is the quote specific, or vague?</li>
+</ul>
+
+<h2>Warning signs</h2>
+<ul>
+  <li>Very low prices with vague scope, where extras appear later</li>
+  <li>No mention of ownership, or domain and hosting in their name</li>
+  <li>Guaranteed Google rankings; see <a href="/blog/seo-red-flags-scams/">SEO red flags</a></li>
+  <li>Full payment upfront</li>
+</ul>
+
+<h2>Think in total cost</h2>
+<p>A cheaper website that doesn't bring enquiries, or needs rebuilding in a year, costs more in the end. Compare the total cost over two or three years, including hosting, maintenance and likely changes. See <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> and try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<p>Once you choose, agree the details in writing; see the <a href="/blog/website-design-contract-checklist/">contract checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'fixed-price-vs-hourly-website-projects',
+    seoTitle: 'Fixed Price vs Hourly for Website Projects: Which Is Better?',
+    title: 'Fixed Price vs Hourly Billing for Website Projects: Which Is Better?',
+    description: 'The pros and cons of fixed-price, hourly and retainer pricing for website development, which suits different projects, and how to avoid scope creep and surprise bills with either model.',
+    date: '2026-09-27',
+    category: 'Pricing',
+    related: ['hire-wordpress-developer', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
+    body: `
+<p>When you hire a web developer, you'll usually be offered a fixed price, an hourly rate, or a monthly retainer. Each has its place. Choosing the right model for your project avoids arguments and unexpected bills.</p>
+
+<h2>Fixed price</h2>
+<p>You agree a total price for a defined scope of work.</p>
+<h3>Pros</h3>
+<ul>
+  <li>You know the cost upfront</li>
+  <li>Easy to budget and compare</li>
+  <li>The developer carries the risk if work takes longer than expected</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+  <li>Needs a clear scope; changes cost extra</li>
+  <li>Developers may add a buffer for uncertainty</li>
+  <li>Disagreements over what's "in scope" if the brief was vague</li>
+</ul>
+<p><strong>Best for:</strong> new websites, redesigns and well-defined features.</p>
+
+<h2>Hourly</h2>
+<p>You pay for the time actually spent.</p>
+<h3>Pros</h3>
+<ul>
+  <li>Flexible when requirements are unclear or evolving</li>
+  <li>You pay only for work done</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+  <li>Total cost is uncertain</li>
+  <li>Requires trust and good time reporting</li>
+</ul>
+<p><strong>Best for:</strong> small fixes, investigations like finding what's slowing a site, and ongoing changes.</p>
+
+<h2>Retainer</h2>
+<p>A fixed monthly fee for a set amount of work or ongoing services.</p>
+<ul>
+  <li>Predictable monthly cost</li>
+  <li>Priority support and a developer who knows your site</li>
+  <li>Unused hours may not roll over</li>
+</ul>
+<p><strong>Best for:</strong> maintenance, regular updates, agencies with steady work; see <a href="/blog/website-maintenance-vs-management/">maintenance vs management</a>.</p>
+
+<h2>Avoiding scope creep</h2>
+<ul>
+  <li>Write a detailed brief and scope; see the <a href="/blog/website-brief-template/">brief template</a></li>
+  <li>Agree how changes are handled and priced</li>
+  <li>Batch small change requests</li>
+  <li>Confirm new work in writing before it starts</li>
+</ul>
+
+<h2>Avoiding surprise hourly bills</h2>
+<ul>
+  <li>Ask for an estimate and a cap before work begins</li>
+  <li>Request regular time reports</li>
+  <li>Agree to be told before the estimate is exceeded</li>
+</ul>
+
+<h2>A common, fair approach</h2>
+<p>Many developers, including me, quote a fixed price for the main build and charge hourly or through a maintenance plan for changes after launch. It combines budget certainty with flexibility.</p>
+
+<p>Put the chosen model in your agreement; see the <a href="/blog/website-design-contract-checklist/">contract checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'give-website-feedback-developer',
+    seoTitle: 'How to Give Website Feedback to Your Developer (Clearly)',
+    title: 'How to Give Clear Website Feedback to Your Designer or Developer',
+    description: 'How to review a website design or build and give feedback that gets results: consolidate comments, be specific, use screenshots, separate bugs from changes, focus on goals and stick to deadlines.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'website-redesign', 'figma-to-wordpress'],
+    body: `
+<p>Unclear feedback is one of the biggest reasons website projects run late and budgets stretch. "Make it pop" or "I don't like it" leaves designers guessing. Clear, organised feedback gets you a better website, faster.</p>
+
+<h2>1. Collect feedback in one place</h2>
+<p>If several people are reviewing, gather everyone's comments first and send one consolidated list. Contradictory feedback from different team members, sent separately, causes rework. Decide who has the final say.</p>
+
+<h2>2. Be specific</h2>
+<table>
+  <thead><tr><th>Vague</th><th>Specific</th></tr></thead>
+  <tbody>
+    <tr><td>"The homepage doesn't feel right"</td><td>"The hero image feels corporate; we'd prefer a photo of our team at work"</td></tr>
+    <tr><td>"Make the text bigger"</td><td>"Body text on mobile is hard to read; can it be larger?"</td></tr>
+    <tr><td>"The form is broken"</td><td>"Submitting the contact form on iPhone Safari shows an error after clicking Send"</td></tr>
+  </tbody>
+</table>
+
+<h2>3. Use screenshots</h2>
+<p>A screenshot with an arrow or circle is worth a paragraph of text. Include the page URL and the device and browser you used. Some teams use visual feedback tools that let you comment directly on the page.</p>
+
+<h2>4. Explain the problem, not just the solution</h2>
+<p>"Make the button red" is a solution. "People might not notice the enquiry button" is the problem. Sharing the problem lets your designer suggest the best fix.</p>
+
+<h2>5. Focus on goals and customers</h2>
+<p>Ask "will this help customers understand us and enquire?" rather than "do I personally like this colour?". Your customers' needs matter more than personal taste.</p>
+
+<h2>6. Separate bugs from changes</h2>
+<ul>
+  <li><strong>Bugs:</strong> things not working as agreed, usually fixed free</li>
+  <li><strong>Changes:</strong> new ideas or different requirements, which may affect cost and timeline</li>
+</ul>
+<p>See <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></p>
+
+<h2>7. Test on your phone</h2>
+<p>Most of your visitors use mobile, so review the site on your phone, not just a desktop screen.</p>
+
+<h2>8. Respect deadlines</h2>
+<p>Agree feedback dates in the project plan and stick to them. Delayed feedback is a common reason projects slip; see <a href="/blog/how-long-to-build-wordpress-website/">how long a website takes</a>.</p>
+
+<h2>9. Use rounds wisely</h2>
+<p>If your agreement includes a set number of revision rounds, make each one count by sending complete feedback rather than a few comments at a time.</p>
+`,
+  },
+  {
+    slug: 'website-bug-vs-change-request',
+    seoTitle: 'Bug or Change Request? Website Support After Launch',
+    title: 'Bug or Change Request? Understanding Website Support After Launch',
+    description: 'The difference between a website bug and a change request, what a typical post-launch support period covers, how to report issues well and when an ongoing maintenance plan makes sense.',
+    date: '2026-09-27',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-website-development'],
+    body: `
+<p>After a website launches, you'll inevitably want things fixed or changed. Knowing the difference between a bug and a change request avoids misunderstandings with your developer and keeps the relationship positive.</p>
+
+<h2>What is a bug?</h2>
+<p>A bug is something that doesn't work as agreed or as it reasonably should:</p>
+<ul>
+  <li>The contact form doesn't send emails</li>
+  <li>A page layout breaks on certain phones</li>
+  <li>A link goes to the wrong page</li>
+  <li>A feature in the agreed scope doesn't work</li>
+</ul>
+<p>Bugs from the original work are normally fixed free, especially during the post-launch support period.</p>
+
+<h2>What is a change request?</h2>
+<p>A change is new or different from what was agreed:</p>
+<ul>
+  <li>Adding a new page or section</li>
+  <li>Redesigning part of the site</li>
+  <li>New features like a booking system</li>
+  <li>Content updates such as new prices, photos or team members</li>
+</ul>
+<p>Changes usually cost extra or fall under a maintenance plan.</p>
+
+<h2>Grey areas</h2>
+<p>Some issues aren't clear-cut: a plugin update breaking something months later, a browser update changing how a feature looks, or a problem caused by changes someone else made. A clear agreement, and a reasonable conversation, sorts most of these out.</p>
+
+<h2>What post-launch support typically covers</h2>
+<ul>
+  <li>A period (often a few weeks) of free bug fixes</li>
+  <li>Help with using the dashboard and editing content</li>
+  <li>Minor tweaks agreed at handover</li>
+</ul>
+<p>Check what your agreement says; see the <a href="/blog/website-design-contract-checklist/">contract checklist</a>.</p>
+
+<h2>How to report an issue well</h2>
+<ol>
+  <li>Page URL</li>
+  <li>What you did, what you expected, and what happened</li>
+  <li>Device and browser</li>
+  <li>A screenshot or screen recording</li>
+  <li>How urgent it is: is it stopping sales or enquiries?</li>
+</ol>
+<p>See <a href="/blog/give-website-feedback-developer/">giving clear feedback</a>.</p>
+
+<h2>After the support period: maintenance</h2>
+<p>Websites need ongoing updates, backups and security checks. A maintenance plan covers these and usually includes some time for small changes each month; see <a href="/blog/website-maintenance-cost-india/">maintenance costs</a> and <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+
+<h2>Keep a simple change log</h2>
+<p>Keep a list of requests, dates and outcomes. It helps with planning, budgeting and knowing what changed if something breaks.</p>
+`,
+  },
+  {
+    slug: 'outsource-wordpress-development-india',
+    seoTitle: 'Outsourcing WordPress Development to India: A Guide',
+    title: 'Outsourcing WordPress Development to India: A Practical Guide for Businesses and Agencies',
+    description: 'A practical guide for overseas businesses and agencies outsourcing WordPress work to an Indian developer: benefits, choosing a partner, time zones, communication, payments, contracts and quality.',
+    date: '2026-09-27',
+    category: 'Agencies',
+    related: ['wordpress-developer-for-agencies', 'hire-wordpress-developer', 'figma-to-wordpress'],
+    body: `
+<p>Businesses and agencies in the UK, US, Europe, Australia and the Middle East regularly outsource WordPress development to India. Done well, it gives you skilled developers at competitive rates. Done carelessly, it leads to missed deadlines and poor code. Here's how to make it work.</p>
+
+<h2>Why outsource to India?</h2>
+<ul>
+  <li>A large pool of experienced WordPress developers</li>
+  <li>Competitive pricing compared with many Western markets</li>
+  <li>Time zone overlap with Europe and the Middle East, and overnight progress for US and Australian clients</li>
+  <li>Strong English communication for most professional developers</li>
+</ul>
+
+<h2>Freelancer or agency?</h2>
+<p>Freelancers offer direct communication and flexibility; agencies offer more capacity and backup. See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a>.</p>
+
+<h2>Choosing the right partner</h2>
+<ul>
+  <li>Review live websites they've built and test them on mobile and PageSpeed Insights</li>
+  <li>Ask about their process for planning, staging, testing and handover</li>
+  <li>Check how they communicate: clear, prompt and proactive?</li>
+  <li>Start with a small paid test project</li>
+  <li>Ask for references from overseas clients</li>
+</ul>
+
+<h2>Communication and time zones</h2>
+<ul>
+  <li>Agree overlapping hours for calls</li>
+  <li>Use a shared project tool and written briefs</li>
+  <li>Agree response times</li>
+  <li>Record short video walkthroughs of feedback</li>
+</ul>
+<p>India Standard Time (IST) is UTC+5:30, giving a morning overlap with the UK and Europe.</p>
+
+<h2>Clear briefs and designs</h2>
+<p>Detailed briefs and well-prepared design files prevent misunderstandings; see the <a href="/blog/figma-to-wordpress-designer-guide/">Figma handoff guide</a>.</p>
+
+<h2>Payments</h2>
+<ul>
+  <li>Milestone payments are common</li>
+  <li>International payments can be made through bank transfer or online payment services; agree on currency and fees upfront</li>
+  <li>Get proper invoices for your accounts</li>
+</ul>
+
+<h2>Contracts and ownership</h2>
+<p>Agree scope, timelines, confidentiality (an NDA for agency work) and ownership of code and designs in writing; see the <a href="/blog/website-design-contract-checklist/">contract checklist</a>.</p>
+
+<h2>Quality standards</h2>
+<ul>
+  <li>Responsive, tested on real devices</li>
+  <li>Fast loading, with Core Web Vitals in mind</li>
+  <li>Clean, maintainable builds without unnecessary plugins</li>
+  <li>Accessible and SEO-ready</li>
+  <li>Staging site for review before launch</li>
+</ul>
+
+<h2>White-label for agencies</h2>
+<p>Agencies often outsource under their own brand. See <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development</a> and <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>.</p>
+`,
+  },
+  {
+    slug: 'web-designer-vs-web-developer',
+    seoTitle: 'Web Designer vs Web Developer: Who Do You Need?',
+    title: 'Web Designer vs Web Developer vs WordPress Developer: Who Do You Need?',
+    description: 'The difference between web designers, web developers and WordPress developers, what each actually does, who you need for a new site, a redesign or fixes, and when one person can do both.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['hire-wordpress-developer', 'figma-to-wordpress', 'wordpress-website-development'],
+    body: `
+<p>"Web designer" and "web developer" are often used interchangeably, but they're different roles. Knowing the difference helps you hire the right person for your project, and understand what you're paying for.</p>
+
+<h2>Web designer</h2>
+<p>Focuses on how the website looks and feels:</p>
+<ul>
+  <li>Layouts, colours, typography and imagery</li>
+  <li>User experience: how visitors move through the site</li>
+  <li>Mobile and desktop designs, usually in tools like Figma</li>
+  <li>Brand consistency</li>
+</ul>
+<p>Some designers build sites themselves with visual builders; others hand designs to developers.</p>
+
+<h2>Web developer</h2>
+<p>Focuses on making the website work:</p>
+<ul>
+  <li>Turning designs into working pages</li>
+  <li>Functionality: forms, payments, booking and integrations</li>
+  <li>Speed, security and technical SEO</li>
+  <li>Hosting, deployment and fixing problems</li>
+</ul>
+
+<h2>WordPress developer</h2>
+<p>A web developer who specialises in WordPress: themes, plugins, page builders like Elementor, WooCommerce stores, performance and maintenance. See <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer does</a>.</p>
+
+<h2>Who do you need?</h2>
+<table>
+  <thead><tr><th>Project</th><th>Who</th></tr></thead>
+  <tbody>
+    <tr><td>New business website</td><td>A designer and developer, or one person skilled at both</td></tr>
+    <tr><td>You already have designs</td><td>A developer; see <a href="/figma-to-wordpress/">Figma to WordPress</a></td></tr>
+    <tr><td>Fix speed, errors or hacks</td><td>A developer</td></tr>
+    <tr><td>Refresh the look of a working site</td><td>A designer, then a developer to implement</td></tr>
+    <tr><td>Online store</td><td>A developer experienced with WooCommerce or Shopify</td></tr>
+  </tbody>
+</table>
+
+<h2>Can one person do both?</h2>
+<p>Yes. Many freelancers handle design and development for small and medium business sites, which keeps communication simple and costs lower. For large or complex projects, specialists working together often produce better results.</p>
+
+<h2>What about agencies?</h2>
+<p>Agencies bring designers, developers, content writers and SEO specialists under one roof, at a higher cost. See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a>.</p>
+
+<h2>Check skills in their portfolio</h2>
+<ul>
+  <li>For design: does the work look polished, varied and on-brand?</li>
+  <li>For development: do the sites load fast, work on mobile and function properly?</li>
+</ul>
+
+<p>Ready to hire? See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
+`,
+  },
+  {
+    slug: 'what-does-wordpress-developer-do',
+    seoTitle: 'What Does a WordPress Developer Do? (Explained Simply)',
+    title: 'What Does a WordPress Developer Actually Do?',
+    description: 'A plain-English explanation of what a WordPress developer does: building websites, themes and plugins, WooCommerce, speed, security, SEO setup, maintenance, fixes and migrations, and when to hire one.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['hire-wordpress-developer', 'wordpress-website-development', 'wordpress-maintenance'],
+    body: `
+<p>WordPress powers a large share of the world's websites, and it's designed so non-technical people can manage content. So what does a WordPress developer do that you can't? Quite a lot, as it turns out, especially when your website matters to your business.</p>
+
+<h2>Building websites</h2>
+<ul>
+  <li>Planning structure, pages and features with you</li>
+  <li>Setting up hosting, domain, SSL and WordPress</li>
+  <li>Building pages from designs using themes, page builders or custom code</li>
+  <li>Making everything responsive on phones, tablets and desktops</li>
+  <li>Setting up forms, WhatsApp, maps, booking and payments</li>
+</ul>
+
+<h2>Themes and plugins</h2>
+<ul>
+  <li>Choosing a lightweight, well-supported theme, or building a custom one</li>
+  <li>Selecting reliable plugins and avoiding bloat</li>
+  <li>Writing custom functionality when no plugin fits</li>
+</ul>
+
+<h2>Online stores</h2>
+<p>Setting up WooCommerce: products, variations, payments, shipping, taxes, invoices and emails. See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+
+<h2>Speed and performance</h2>
+<p>Optimising images, caching, scripts and hosting so pages load fast and pass Core Web Vitals; see <a href="/wordpress-speed-optimization/">speed optimisation</a>.</p>
+
+<h2>Security</h2>
+<p>Hardening logins, firewalls, updates, backups and cleaning up hacked sites; see <a href="/wordpress-malware-removal/">malware removal</a>.</p>
+
+<h2>SEO foundations</h2>
+<p>Technical SEO like clean URLs, titles, schema, sitemaps, redirects and site structure, so your content has the best chance to rank.</p>
+
+<h2>Maintenance and fixes</h2>
+<ul>
+  <li>Safe updates of WordPress, themes and plugins</li>
+  <li>Fixing errors, broken layouts and forms</li>
+  <li>Monitoring uptime and backups</li>
+</ul>
+
+<h2>Migrations and redesigns</h2>
+<p>Moving sites between hosts or from other platforms, and redesigning without losing rankings; see <a href="/wordpress-migration/">WordPress migration</a>.</p>
+
+<h2>When do you need one?</h2>
+<ul>
+  <li>Building a new website that should bring enquiries or sales</li>
+  <li>Your site is slow, broken or hacked</li>
+  <li>You need a feature you can't set up yourself</li>
+  <li>You don't have time to maintain it safely</li>
+</ul>
+<p>See <a href="/blog/hire-developer-vs-diy-website/">hire a developer vs DIY</a> and <a href="/blog/web-designer-vs-web-developer/">web designer vs developer</a>.</p>
 `,
   },
 ];

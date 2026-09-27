@@ -266,6 +266,14 @@ const LINKS = [
   ['signs-wordpress-site-hacked', '<h2>How to prevent it happening again</h2>', '<p>Seeing a red browser warning? See <a href="/blog/deceptive-site-ahead-warning-fix/">how to fix "Deceptive site ahead"</a>.</p>\n\n'],
   ['wordpress-security-checklist', '<h2>Backups</h2>', '<p>More detail: <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>\n\n'],
   ['essential-wordpress-plugins-business', '<h2>How many plugins is too many?</h2>', '<p>Dashboard feeling sluggish? See <a href="/blog/wordpress-admin-slow/">why the WordPress admin gets slow</a>.</p>\n\n'],
+  // Round 33
+  ['wordpress-website-cost-india', '<h2>The bottom line</h2>', '<p>Got several quotes? See <a href="/blog/compare-website-quotes/">how to compare website quotes</a>.</p>\n\n'],
+  ['white-label-wordpress-development-agencies', '<h2>How to choose a white-label partner</h2>', '<p>More on pricing models: <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly</a>.</p>\n\n'],
+  ['how-long-to-build-wordpress-website', '<h2>Can it be done faster?</h2>', '<p>Slow or scattered feedback is a common cause of delays; see <a href="/blog/give-website-feedback-developer/">how to give clear website feedback</a>.</p>\n\n'],
+  ['website-design-contract-checklist', '<h2>10. Confidentiality</h2>', '<p>More on this: <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></p>\n\n'],
+  ['freelancer-vs-agency-web-developer', '<h2>The bottom line</h2>', '<p>Hiring from outside India? See <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a>.</p>\n\n'],
+  ['hire-developer-vs-diy-website', '<h2>If you hire, choose well</h2>', '<p>Not sure what you\'d be paying for? See <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer does</a> and <a href="/blog/web-designer-vs-web-developer/">designer vs developer</a>.</p>\n\n'],
+  ['figma-to-wordpress-designer-guide', '<h2>Quick handoff checklist</h2>', '<p>Who does what in a project? See <a href="/blog/web-designer-vs-web-developer/">web designer vs web developer</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
