@@ -852,6 +852,24 @@ EXTRA.forEach(x => {
   console.log('built', `/${x.slug}/`);
 });
 
+// Homepage "From the blog": 3 pinned essentials + the 3 newest other articles
+{
+  const PINNED = ['wordpress-website-cost-india', 'why-is-my-wordpress-site-slow', 'clinic-website-checklist-for-doctors'];
+  const order = new Map(POSTS.map((p, i) => [p.slug, i]));
+  const newest = POSTS.filter(p => !PINNED.includes(p.slug))
+    .sort((a, b) => b.date.localeCompare(a.date) || order.get(b.slug) - order.get(a.slug))
+    .slice(0, 3);
+  const picks = [...PINNED.map(s => POSTS.find(p => p.slug === s)).filter(Boolean), ...newest];
+  const cards = picks.map(p => `          <a class="post-card reveal" href="/blog/${p.slug}/"><span class="work-tag">${esc(p.category)}</span><h3>${esc(p.title)}</h3><p>${esc(p.description)}</p><span class="post-card-meta">Read article →</span></a>`).join('\n');
+  const indexPath = path.join(ROOT, 'index.html');
+  let home = fs.readFileSync(indexPath, 'utf8');
+  const re = /(<!-- home-posts:start -->)[\s\S]*?(<!-- home-posts:end -->)/;
+  if (!re.test(home)) throw new Error('index.html is missing the home-posts markers');
+  home = home.replace(re, (m, start, end) => `${start}\n${cards}\n          ${end}`);
+  fs.writeFileSync(indexPath, home);
+  console.log('homepage posts:', picks.map(p => p.slug).join(', '));
+}
+
 // llms.txt: a plain-text guide to the site for AI assistants and answer engines (llmstxt.org)
 const md = (x, u, d) => `- [${x}](${u}): ${d}`;
 fs.writeFileSync(path.join(ROOT, 'llms.txt'), `# Samverse: Sameer Gupta, Freelance WordPress Developer
