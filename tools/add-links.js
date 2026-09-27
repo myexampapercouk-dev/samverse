@@ -190,6 +190,13 @@ const LINKS = [
   ['website-for-home-services', '<h2>Trust signals</h2>', '<p>Pest control businesses face similar urgency; see <a href="/blog/website-for-pest-control-companies/">websites for pest control companies</a>.</p>\n\n'],
   ['website-for-car-dealers-workshops', '<h2>Make it easy on mobile</h2>', '<p>Selling electric vehicles? See <a href="/blog/website-for-ev-dealers/">websites for EV dealers</a>.</p>\n\n'],
   ['website-for-home-services', '<h2>Areas served</h2>', '<p>Device repairs work the same way; see <a href="/blog/website-for-mobile-laptop-repair/">websites for mobile and laptop repair shops</a>.</p>\n\n'],
+  // Round 22
+  ['website-for-cleaning-services', '<h2>Show results</h2>', '<p>Garment care is a related business; see <a href="/blog/website-for-laundry-dry-cleaning/">websites for laundry and dry cleaning</a>.</p>\n\n'],
+  ['website-for-wedding-venues-banquet-halls', '<h2>Trust</h2>', '<p>Food partners matter; see <a href="/blog/website-for-catering-services/">websites for catering services</a>.</p>\n\n'],
+  ['website-for-bakeries-cake-shops', '<h2>Show your work</h2>', '<p>Selling regular meals instead? See <a href="/blog/website-for-tiffin-meal-subscriptions/">websites for tiffin and meal subscriptions</a>.</p>\n\n'],
+  ['website-for-travel-agencies', '<h2>SEO tips</h2>', '<p>Adventure specialists: see <a href="/blog/website-for-trekking-adventure-operators/">websites for trekking and adventure operators</a>.</p>\n\n'],
+  ['website-for-immigration-visa-consultants', '<h2>Consultation booking</h2>', '<p>Study-abroad advisers: see <a href="/blog/website-for-overseas-education-consultants/">websites for overseas education consultants</a>.</p>\n\n'],
+  ['website-for-security-facility-management', '<h2>SEO</h2>', '<p>Staffing businesses: see <a href="/blog/website-for-recruitment-agencies/">websites for recruitment agencies</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
