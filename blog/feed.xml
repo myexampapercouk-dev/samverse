@@ -1000,5 +1000,47 @@
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
     <description>What WordPress Multisite is, when it helps (franchises, multiple brands or regions) and when separate sites or a single site are better, plus hosting, plugin and SEO considerations.</description>
   </item>
+  <item>
+    <title>Website Security Headers Explained Simply</title>
+    <link>https://samverse.space/blog/website-security-headers-explained/</link>
+    <guid>https://samverse.space/blog/website-security-headers-explained/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What HTTP security headers are (HSTS, X-Frame-Options, Content-Security-Policy, Referrer-Policy and more), how they protect your website and visitors, and how to add them safely.</description>
+  </item>
+  <item>
+    <title>Conversion Rate Optimization (CRO) Basics for Small Business Websites</title>
+    <link>https://samverse.space/blog/conversion-rate-optimization-basics/</link>
+    <guid>https://samverse.space/blog/conversion-rate-optimization-basics/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A practical introduction to conversion rate optimization for small businesses: measuring conversions, finding leaks, forming hypotheses, testing changes and the quick wins that usually work.</description>
+  </item>
+  <item>
+    <title>How to Redesign Your Website on a Tight Budget</title>
+    <link>https://samverse.space/blog/redesign-website-tight-budget/</link>
+    <guid>https://samverse.space/blog/redesign-website-tight-budget/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How small businesses can improve or redesign their website on a limited budget: prioritising high-impact pages, phased redesigns, reusing content, lean tools and what not to cut.</description>
+  </item>
+  <item>
+    <title>Seasonal and Festival Campaigns on Your Website: Planning for Peak Demand</title>
+    <link>https://samverse.space/blog/seasonal-festival-campaigns-website/</link>
+    <guid>https://samverse.space/blog/seasonal-festival-campaigns-website/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to plan seasonal and festival campaigns on your website (Diwali, wedding season, summer and year-end): landing pages, offers, timing, SEO, ads, WhatsApp and preparing for traffic spikes.</description>
+  </item>
+  <item>
+    <title>How to Plan a Website Content Calendar for a Small Business</title>
+    <link>https://samverse.space/blog/website-content-calendar/</link>
+    <guid>https://samverse.space/blog/website-content-calendar/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A simple way to plan website content for a small business: choosing topics from customer questions, mapping them to services, setting a realistic schedule, and updating older content.</description>
+  </item>
+  <item>
+    <title>Video on Your Business Website: When It Helps and When It Hurts</title>
+    <link>https://samverse.space/blog/video-on-business-website/</link>
+    <guid>https://samverse.space/blog/video-on-business-website/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>When video improves a business website (demos, testimonials, tours, how-tos) and when it hurts (auto-playing backgrounds, slow pages), plus hosting, performance and SEO tips.</description>
+  </item>
 </channel>
 </rss>

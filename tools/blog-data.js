@@ -544,6 +544,8 @@ module.exports = [
     body: `
 <p>Many business websites get visitors but very few enquiries. Usually the problem isn't traffic. The website isn't making it easy or convincing enough for people to get in touch. Here are 12 practical fixes, most of which you can make in a day.</p>
 
+<p>Want a structured approach? See <a href="/blog/conversion-rate-optimization-basics/">conversion rate optimization basics</a>.</p>
+
 <h2>Make it instantly clear what you do</h2>
 <h3>1. Write a headline that says what you do and for whom</h3>
 <p>"Welcome to our website" wastes your most valuable space. Try something like "Orthopaedic clinic in Pune: same-week appointments" or "Industrial automation panels manufactured in India". Visitors should understand you in five seconds.</p>
@@ -1115,6 +1117,8 @@ module.exports = [
 <h2>10. Competitors' websites are clearly better</h2>
 <p>Customers compare. If competitors have faster, clearer, more professional websites, they'll win enquiries even if your service is better.</p>
 
+<p>Limited budget? See <a href="/blog/redesign-website-tight-budget/">how to redesign on a tight budget</a>.</p>
+
 <h2>Redesign or start fresh?</h2>
 <ul>
   <li><strong>Redesign</strong> if your content and structure are mostly fine but the look, speed or mobile experience needs work.</li>
@@ -1178,6 +1182,8 @@ module.exports = [
   <li><strong>Use HTTPS everywhere</strong> with a valid SSL certificate.</li>
   <li><strong>Use SFTP, not FTP</strong>, and secure your hosting control panel with 2FA.</li>
 </ol>
+
+<p>An extra layer: <a href="/blog/website-security-headers-explained/">website security headers explained</a>.</p>
 
 <h2>Monitoring and protection</h2>
 <ol start="19">
@@ -2844,6 +2850,8 @@ module.exports = [
   <li><strong>Related to what you sell:</strong> it should naturally lead to your service</li>
   <li><strong>Easy to get:</strong> a short form (name and email) on relevant pages</li>
 </ol>
+
+<p>Plan what to send with a simple <a href="/blog/website-content-calendar/">content calendar</a>.</p>
 
 <h2>Newsletters that people actually read</h2>
 <ul>
@@ -4837,6 +4845,8 @@ module.exports = [
   <li>Don't mark up testimonials as review ratings in schema unless it follows Google's guidelines</li>
   <li>For regulated professions (health, legal, finance), check your professional body's rules on testimonials</li>
 </ul>
+
+<p>Using video well matters; see <a href="/blog/video-on-business-website/">when video helps and when it hurts</a>.</p>
 
 <h2>Beyond written quotes</h2>
 <ul>
@@ -7314,6 +7324,8 @@ module.exports = [
 <h2>Festival campaigns</h2>
 <p>Diwali, Rakhi, Valentine's Day and New Year are peak seasons. Plan landing pages and collections in advance, and promote them with ads and WhatsApp; see <a href="/landing-page-design/">landing page design</a>.</p>
 
+<p>Plan peaks in advance with this guide to <a href="/blog/seasonal-festival-campaigns-website/">seasonal and festival campaigns</a>.</p>
+
 <h2>Trust</h2>
 <ul>
   <li>Photos of actual deliveries (with permission)</li>
@@ -8104,6 +8116,309 @@ module.exports = [
 
 <h2>The practical answer</h2>
 <p>Most small and medium businesses are best served by a single, well-structured WordPress site. Multisite is a tool for organisations managing many similar sites with a central team. If you're unsure, describe your setup and a developer can recommend the simplest option that works; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-security-headers-explained',
+    seoTitle: 'Website Security Headers Explained Simply',
+    title: 'Website Security Headers Explained Simply',
+    description: 'What HTTP security headers are (HSTS, X-Frame-Options, Content-Security-Policy, Referrer-Policy and more), how they protect your website and visitors, and how to add them safely.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
+    body: `
+<p>Security headers are instructions your server sends to browsers along with each page, telling them how to behave more safely: always use HTTPS, don't let other sites frame this page, don't guess file types, and so on. They're a quick, low-cost layer of protection.</p>
+
+<h2>The most useful headers</h2>
+<table>
+  <thead><tr><th>Header</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Strict-Transport-Security (HSTS)</strong></td><td>Tells browsers to always use HTTPS for your site</td></tr>
+    <tr><td><strong>X-Content-Type-Options: nosniff</strong></td><td>Stops browsers guessing file types, blocking some attacks</td></tr>
+    <tr><td><strong>X-Frame-Options / frame-ancestors</strong></td><td>Prevents other sites from embedding your pages (clickjacking)</td></tr>
+    <tr><td><strong>Referrer-Policy</strong></td><td>Controls how much of your URL is shared when visitors click links to other sites</td></tr>
+    <tr><td><strong>Permissions-Policy</strong></td><td>Disables browser features you don't use (camera, microphone, location)</td></tr>
+    <tr><td><strong>Content-Security-Policy (CSP)</strong></td><td>Restricts where scripts, styles and images can load from</td></tr>
+  </tbody>
+</table>
+
+<h2>How to add them</h2>
+<ul>
+  <li><strong>Hosting or server configuration:</strong> many hosts let you add headers in the control panel or configuration files</li>
+  <li><strong>Security plugins</strong> can add common headers on WordPress</li>
+  <li><strong>CDNs and static hosts</strong> often support header rules (this website sets its headers in its hosting configuration)</li>
+</ul>
+
+<h2>Be careful with CSP and HSTS</h2>
+<ul>
+  <li><strong>CSP</strong> can break analytics, chat widgets, embeds and payment scripts if it's too strict. Start in report-only mode and add allowed sources gradually.</li>
+  <li><strong>HSTS</strong> should only be enabled once HTTPS works everywhere on your domain and subdomains, because browsers will refuse plain HTTP afterwards.</li>
+</ul>
+
+<h2>How to check your headers</h2>
+<p>Free online security header scanners show which headers your site sends and suggest improvements. Browser developer tools (Network tab) also show response headers.</p>
+
+<h2>Headers are one layer, not the whole wall</h2>
+<p>Updates, strong passwords, backups and a firewall matter more. Use headers alongside the basics in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. For hacked sites, see <a href="/wordpress-malware-removal/">malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'conversion-rate-optimization-basics',
+    seoTitle: 'Conversion Rate Optimization Basics for Small Businesses',
+    title: 'Conversion Rate Optimization (CRO) Basics for Small Business Websites',
+    description: 'A practical introduction to conversion rate optimization for small businesses: measuring conversions, finding leaks, forming hypotheses, testing changes and the quick wins that usually work.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['landing-page-design', 'website-redesign', 'wordpress-seo-services'],
+    body: `
+<p>Conversion rate optimization (CRO) means getting more enquiries, bookings or sales from the visitors you already have. Doubling your conversion rate has the same effect as doubling your traffic, often at a fraction of the cost.</p>
+
+<h2>Step 1: Measure</h2>
+<ul>
+  <li>Define conversions: form submissions, calls, WhatsApp clicks, orders</li>
+  <li>Track them in analytics; see <a href="/blog/setup-google-analytics-search-console/">GA4 and Search Console setup</a></li>
+  <li>Know your baseline: conversion rate overall and by key page</li>
+</ul>
+
+<h2>Step 2: Find the leaks</h2>
+<ul>
+  <li>High-traffic pages with low conversion rates</li>
+  <li>Where mobile visitors drop off compared with desktop</li>
+  <li>Checkout or form steps where people abandon</li>
+  <li>Heatmaps and session recordings (with privacy settings) show where people get stuck</li>
+  <li>Ask customers what nearly stopped them from contacting you</li>
+</ul>
+
+<h2>Step 3: Form hypotheses</h2>
+<p>For example: "If we add WhatsApp next to the form on service pages, more mobile visitors will enquire, because many prefer chat." A clear hypothesis makes results easier to interpret.</p>
+
+<h2>Step 4: Test changes</h2>
+<ul>
+  <li>Change one thing at a time where possible</li>
+  <li>Run changes long enough to get meaningful numbers</li>
+  <li>For low-traffic sites, make bigger, clearly better changes rather than tiny A/B tests</li>
+</ul>
+
+<h2>Quick wins that usually work</h2>
+<ol>
+  <li>A clearer headline that says what you do and for whom</li>
+  <li>A visible primary call to action above the fold</li>
+  <li>WhatsApp and tap-to-call on mobile</li>
+  <li>Shorter forms</li>
+  <li>Testimonials and proof near calls to action</li>
+  <li>Faster pages, especially on mobile</li>
+  <li>FAQs answering price, timeline and process objections</li>
+</ol>
+<p>More ideas: <a href="/blog/get-more-enquiries-from-your-website/">12 ways to get more enquiries</a>.</p>
+
+<h2>Track the value</h2>
+<p>Connect conversions to revenue to see what improvements are worth; see <a href="/blog/measure-website-roi/">measuring website ROI</a>.</p>
+
+<p>For campaign traffic, focused <a href="/landing-page-design/">landing pages</a> are often the biggest CRO win.</p>
+`,
+  },
+  {
+    slug: 'redesign-website-tight-budget',
+    seoTitle: 'How to Redesign Your Website on a Tight Budget',
+    title: 'How to Redesign Your Website on a Tight Budget',
+    description: 'How small businesses can improve or redesign their website on a limited budget: prioritising high-impact pages, phased redesigns, reusing content, lean tools and what not to cut.',
+    date: '2026-09-27',
+    category: 'Pricing',
+    related: ['website-redesign', 'wordpress-website-development', 'wordpress-speed-optimization'],
+    body: `
+<p>You don't always need a full, expensive rebuild. With a clear plan, a limited budget can deliver most of the benefit by focusing on what actually affects enquiries and sales.</p>
+
+<h2>Start with what matters most</h2>
+<p>Look at analytics and Search Console: which pages get the most traffic and which lead to enquiries? Usually it's the homepage, a few service or product pages, and the contact page. Improve those first.</p>
+
+<h2>High-impact, low-cost improvements</h2>
+<ol>
+  <li><strong>Mobile usability:</strong> fix layouts, tap targets and readability</li>
+  <li><strong>Speed:</strong> compress images, add caching, remove heavy plugins. See <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a>.</li>
+  <li><strong>Clear headline and calls to action</strong> on key pages</li>
+  <li><strong>WhatsApp and tap-to-call</strong> buttons</li>
+  <li><strong>Trust signals:</strong> testimonials, real photos, client logos</li>
+  <li><strong>Refreshed copy</strong> on your top pages</li>
+</ol>
+
+<h2>Phase the redesign</h2>
+<ul>
+  <li><strong>Phase 1:</strong> new design for homepage, key service pages and contact</li>
+  <li><strong>Phase 2:</strong> remaining pages, blog and extras</li>
+  <li><strong>Phase 3:</strong> new features such as booking, store or calculators</li>
+</ul>
+<p>This spreads cost and gets improvements live sooner.</p>
+
+<h2>Save money without cutting quality</h2>
+<ul>
+  <li>Use a quality, lightweight theme rather than a fully custom design</li>
+  <li>Reuse and improve existing content instead of starting from scratch</li>
+  <li>Prepare content and photos yourself before the project starts</li>
+  <li>Avoid paid plugins you don't really need</li>
+  <li>Use a clear brief so quotes are accurate; see the <a href="/blog/website-brief-template/">website brief template</a></li>
+</ul>
+
+<h2>Don't cut these corners</h2>
+<ul>
+  <li>301 redirects if URLs change. See <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</li>
+  <li>Backups and security</li>
+  <li>Mobile testing</li>
+  <li>Legitimate, licensed themes and plugins, never pirated ones</li>
+</ul>
+
+<p>Get a ballpark with the <a href="/website-cost-calculator/">website cost calculator</a>, or see <a href="/website-redesign/">website redesign services</a>.</p>
+`,
+  },
+  {
+    slug: 'seasonal-festival-campaigns-website',
+    seoTitle: 'Seasonal & Festival Campaigns on Your Website',
+    title: 'Seasonal and Festival Campaigns on Your Website: Planning for Peak Demand',
+    description: 'How to plan seasonal and festival campaigns on your website (Diwali, wedding season, summer and year-end): landing pages, offers, timing, SEO, ads, WhatsApp and preparing for traffic spikes.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['landing-page-design', 'woocommerce-developer', 'wordpress-speed-optimization'],
+    body: `
+<p>Many Indian businesses see big swings in demand around festivals and seasons: Diwali gifting, wedding season, summer AC servicing, admission season, year-end budgets. Planning your website for these peaks can turn a good season into a great one.</p>
+
+<h2>Map your peak seasons</h2>
+<p>List the periods when enquiries or sales rise for your business, and when people start searching. That's often weeks before the event itself. Google Trends and last year's analytics help.</p>
+
+<h2>Create campaign landing pages</h2>
+<ul>
+  <li>A dedicated page per campaign (for example "Diwali corporate gift hampers")</li>
+  <li>Clear offer, deadline and delivery or booking cut-off dates</li>
+  <li>Products or packages relevant to the season</li>
+  <li>WhatsApp and short forms for quick enquiries</li>
+</ul>
+<p>See <a href="/landing-page-design/">landing page design</a>.</p>
+
+<h2>Timing</h2>
+<ul>
+  <li><strong>SEO:</strong> publish seasonal pages and guides well in advance so they can be indexed. Reuse the same URL every year and update it.</li>
+  <li><strong>Ads:</strong> start campaigns as searches begin rising; see <a href="/blog/website-ready-for-google-ads/">Google Ads readiness</a></li>
+  <li><strong>Email and WhatsApp:</strong> remind past customers (with consent) before the rush</li>
+</ul>
+
+<h2>Prepare the website</h2>
+<ul>
+  <li>Test speed and checkout before traffic spikes</li>
+  <li>Update stock, delivery times and cut-off dates</li>
+  <li>Check hosting can handle more visitors; consider a CDN. See <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</li>
+  <li>Take backups and avoid major updates during the peak</li>
+</ul>
+
+<h2>After the season</h2>
+<ul>
+  <li>Update the page to say the offer has ended (don't delete it) and point to current offers</li>
+  <li>Review results: traffic, conversions, best products, best channels</li>
+  <li>Note learnings for next year</li>
+</ul>
+
+<p>For stores, see the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> for pre-peak checks.</p>
+`,
+  },
+  {
+    slug: 'website-content-calendar',
+    seoTitle: 'How to Plan a Website Content Calendar',
+    title: 'How to Plan a Website Content Calendar for a Small Business',
+    description: 'A simple way to plan website content for a small business: choosing topics from customer questions, mapping them to services, setting a realistic schedule, and updating older content.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-seo-services', 'website-for-startups', 'landing-page-design'],
+    body: `
+<p>Consistent, useful content helps your website rank and gives customers reasons to trust you. A content calendar turns "we should post something" into a simple, realistic plan.</p>
+
+<h2>Step 1: Collect topics</h2>
+<ul>
+  <li>Questions customers ask on calls, WhatsApp and email</li>
+  <li>Objections before they buy: price, timing, process, alternatives</li>
+  <li>Search Console queries that already bring impressions</li>
+  <li>Seasonal topics; see <a href="/blog/seasonal-festival-campaigns-website/">seasonal campaigns</a></li>
+  <li>Case studies of recent projects</li>
+</ul>
+
+<h2>Step 2: Map topics to services</h2>
+<p>Every article should connect to something you sell. Group topics into clusters around each main service, and link each article to that service page. See <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
+
+<h2>Step 3: Choose content types</h2>
+<ul>
+  <li>How-to guides and checklists</li>
+  <li>Comparisons (X vs Y)</li>
+  <li>Cost and timeline guides</li>
+  <li>Case studies and project stories</li>
+  <li>FAQs and myth-busting articles</li>
+</ul>
+
+<h2>Step 4: Set a realistic schedule</h2>
+<p>Consistency beats bursts. Two good articles a month that you keep up for a year beat twenty in one week followed by silence. Put dates, topics, target service page and owner in a simple spreadsheet.</p>
+
+<h2>Step 5: Write, publish, promote</h2>
+<ol>
+  <li>Write from real knowledge and examples</li>
+  <li>Run through the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a></li>
+  <li>Share on LinkedIn, WhatsApp and your newsletter</li>
+  <li>Link to it from related older pages</li>
+</ol>
+
+<h2>Step 6: Refresh old content</h2>
+<p>Every quarter, update your best-performing and outdated articles: new information, better examples, fresh internal links and updated dates. Refreshing often delivers more than publishing new posts.</p>
+
+<h2>Measure</h2>
+<p>Track which articles bring traffic, enquiries and links, and write more like them. See <a href="/blog/website-analytics-metrics-that-matter/">analytics metrics that matter</a>.</p>
+`,
+  },
+  {
+    slug: 'video-on-business-website',
+    seoTitle: 'Video on Your Website: When It Helps and Hurts',
+    title: 'Video on Your Business Website: When It Helps and When It Hurts',
+    description: 'When video improves a business website (demos, testimonials, tours, how-tos) and when it hurts (auto-playing backgrounds, slow pages), plus hosting, performance and SEO tips.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-speed-optimization', 'landing-page-design', 'website-redesign'],
+    body: `
+<p>Video can explain, reassure and persuade faster than text. But poorly used video slows websites down and distracts visitors. Here's how to use it well.</p>
+
+<h2>Where video helps</h2>
+<ul>
+  <li><strong>Customer testimonials:</strong> real people are highly persuasive</li>
+  <li><strong>Product demos:</strong> show how something works or looks in use</li>
+  <li><strong>Facility or space tours:</strong> factories, clinics, venues, hotels, co-working spaces</li>
+  <li><strong>How-to and explainer videos:</strong> answer common questions</li>
+  <li><strong>Founder introductions:</strong> build personal trust</li>
+</ul>
+
+<h2>Where video hurts</h2>
+<ul>
+  <li><strong>Auto-playing background videos</strong> on the homepage: heavy, distracting and often ignored on mobile</li>
+  <li><strong>Several embedded videos loading at once</strong>, each adding heavy scripts</li>
+  <li><strong>Videos replacing essential text</strong> that people and search engines need</li>
+</ul>
+
+<h2>Performance tips</h2>
+<ul>
+  <li>Host on a video platform (for example YouTube or Vimeo) rather than uploading large files to your web hosting</li>
+  <li>Use a lightweight "click to play" preview image that loads the player only when tapped</li>
+  <li>Lazy-load videos below the fold</li>
+  <li>Keep hero sections image-based; offer the video as a play button</li>
+</ul>
+<p>See <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
+
+<h2>Make videos effective</h2>
+<ul>
+  <li>Keep them short: under two minutes for most website videos</li>
+  <li>Hook viewers in the first few seconds</li>
+  <li>Add captions, since many people watch without sound</li>
+  <li>End with a clear call to action</li>
+</ul>
+
+<h2>SEO</h2>
+<ul>
+  <li>Add a short text summary or transcript next to the video</li>
+  <li>Use descriptive titles and descriptions on the video platform</li>
+  <li>Embed videos on relevant pages, not just a separate "videos" page</li>
+</ul>
+
+<p>Videos work especially well on <a href="/landing-page-design/">landing pages</a> and in <a href="/blog/collect-display-customer-testimonials/">testimonials</a>. If video is slowing your site, see <a href="/wordpress-speed-optimization/">speed optimization</a>.</p>
 `,
   },
 ];

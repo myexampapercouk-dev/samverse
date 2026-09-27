@@ -151,6 +151,13 @@ const LINKS = [
   ['how-to-write-website-content', '<h2>Homepage</h2>', '<p>Tempted to let AI write it all? Read <a href="/blog/ai-tools-website-content-responsibly/">using AI tools for website content responsibly</a> first.</p>\n\n'],
   ['website-maintenance-cost-india', '<h2>Why maintenance is worth it</h2>', '<p>Need more than upkeep? See <a href="/blog/website-maintenance-vs-management/">maintenance vs management</a>.</p>\n\n'],
   ['multilingual-wordpress-website-hindi-english', '<h2>How multilingual WordPress sites work</h2>', '<p>Running many separate regional sites instead? See <a href="/blog/wordpress-multisite-when-needed/">when WordPress Multisite makes sense</a>.</p>\n\n'],
+  // Round 16
+  ['wordpress-security-checklist', '<h2>Monitoring and protection</h2>', '<p>An extra layer: <a href="/blog/website-security-headers-explained/">website security headers explained</a>.</p>\n\n'],
+  ['get-more-enquiries-from-your-website', '<h2>Make it instantly clear what you do</h2>', '<p>Want a structured approach? See <a href="/blog/conversion-rate-optimization-basics/">conversion rate optimization basics</a>.</p>\n\n'],
+  ['signs-you-need-a-new-website', '<h2>Redesign or start fresh?</h2>', '<p>Limited budget? See <a href="/blog/redesign-website-tight-budget/">how to redesign on a tight budget</a>.</p>\n\n'],
+  ['website-for-florists-gift-shops', '<h2>Trust</h2>', '<p>Plan peaks in advance with this guide to <a href="/blog/seasonal-festival-campaigns-website/">seasonal and festival campaigns</a>.</p>\n\n'],
+  ['lead-magnets-newsletter-small-business', '<h2>Newsletters that people actually read</h2>', '<p>Plan what to send with a simple <a href="/blog/website-content-calendar/">content calendar</a>.</p>\n\n'],
+  ['collect-display-customer-testimonials', '<h2>Beyond written quotes</h2>', '<p>Using video well matters; see <a href="/blog/video-on-business-website/">when video helps and when it hurts</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
