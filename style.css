@@ -574,3 +574,13 @@ main, footer, section { max-width: 100vw; }
 .depth-item h3 { margin: 10px 0 10px; font-size: 1.15rem; }
 .depth-item p { color: #2A2A45; line-height: 1.75; font-size: .98rem; }
 @media (max-width: 900px) { .depth-grid { grid-template-columns: 1fr; } }
+
+/* Blog topic groups */
+.topic-nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+.topic-nav a { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; background: #fff; border: 1px solid var(--line); font-weight: 600; font-size: .92rem; box-shadow: var(--soft); transition: border-color .2s, color .2s; }
+.topic-nav a:hover { border-color: var(--violet); color: var(--violet); }
+.topic-nav span { background: var(--violet-soft); color: var(--violet-dark); font-size: .75rem; padding: 2px 8px; border-radius: 999px; }
+.topic-group { scroll-margin-top: 90px; }
+.topic-group + .topic-group { margin-top: 64px; }
+.topic-head { margin-bottom: 24px; }
+.topic-head h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 6px; }

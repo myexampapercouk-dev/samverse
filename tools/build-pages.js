@@ -416,7 +416,16 @@ const renderPost = (post, i) => {
     toc.push([id, t]);
     return `<h2 id="${id}">${t}</h2>`;
   });
-  const others = POSTS.filter(x => x !== post).slice(i % Math.max(1, POSTS.length - 3)).concat(POSTS).filter(x => x !== post).slice(0, 3);
+  // Most related posts: shared service pages count most, then same category, then links between the two posts
+  // (a shared niche page like the doctors page counts more than a common one like SEO services)
+  const freq = s => POSTS.filter(p => p.related.includes(s)).length;
+  const score = x => x.related.filter(s => post.related.includes(s)).reduce((sum, s) => sum + 12 / freq(s), 0)
+    + (x.category === post.category ? 1 : 0)
+    + (post.body.includes(`/blog/${x.slug}/`) || x.body.includes(`/blog/${post.slug}/`) ? 2 : 0);
+  const others = POSTS.filter(x => x !== post)
+    .map((x, j) => ({ x, s: score(x), j }))
+    .sort((a, b) => b.s - a.s || a.j - b.j)
+    .slice(0, 3).map(o => o.x);
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -519,6 +528,19 @@ ${others.map(x => '          ' + postCard(x)).join('\n')}
 
 const postCard = x => `<a class="post-card" href="/blog/${x.slug}/"><span class="work-tag">${esc(x.category)}</span><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p><span class="post-card-meta">${fmtDate(x.date)} · ${readMins(x.body)} min read</span></a>`;
 
+// Topic groups on /blog/ (each post's `category` maps to one group; unknown categories fall into Guides)
+const BLOG_TOPICS = [
+  { id: 'planning', name: 'Planning & costs', cats: ['Pricing', 'Guides'], intro: 'What websites cost, how long they take, which platform to choose and how to brief a developer.' },
+  { id: 'seo-growth', name: 'SEO & growth', cats: ['SEO', 'Growth'], intro: 'Get found on Google, turn visitors into enquiries and measure what works.' },
+  { id: 'speed-security', name: 'Speed, security & maintenance', cats: ['Speed', 'Security', 'Maintenance'], intro: 'Keep your WordPress site fast, safe and running smoothly.' },
+  { id: 'ecommerce', name: 'E-commerce', cats: ['E-commerce'], intro: 'Selling online with WooCommerce: payments, platforms and launch checklists.' },
+  { id: 'industries', name: 'Industry guides', cats: ['Industries'], intro: 'What websites need to do for clinics, manufacturers, real estate, hotels, schools and more.' },
+  { id: 'agencies', name: 'For agencies', cats: ['Agencies'], intro: 'White-label WordPress delivery and design handoff for agencies and designers.' },
+];
+const knownCats = BLOG_TOPICS.flatMap(t => t.cats);
+const topicPosts = t => POSTS.filter(p => t.cats.includes(p.category) || (t.id === 'planning' && !knownCats.includes(p.category)))
+  .sort((a, b) => b.date.localeCompare(a.date));
+
 const renderBlogIndex = () => {
   const url = `${SITE}/blog/`;
   const schema = {
@@ -547,11 +569,17 @@ ${JSON.stringify(schema, null, 2)}
         </div>
       </div>
     </section>
-    <section class="section" style="padding-top:20px">
+    <section class="section" style="padding-top:10px">
       <div class="container">
-        <div class="post-grid">
-${[...POSTS].sort((a, b) => b.date.localeCompare(a.date)).map(x => '          ' + postCard(x)).join('\n')}
-        </div>
+        <nav class="topic-nav" aria-label="Blog topics">
+${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => `          <a href="#${t.id}">${esc(t.name)} <span>${topicPosts(t).length}</span></a>`).join('\n')}
+        </nav>
+${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => `        <section class="topic-group" id="${t.id}">
+          <div class="topic-head"><h2>${esc(t.name)}</h2><p class="muted">${esc(t.intro)}</p></div>
+          <div class="post-grid">
+${topicPosts(t).map(x => '            ' + postCard(x)).join('\n')}
+          </div>
+        </section>`).join('\n')}
       </div>
     </section>
 
