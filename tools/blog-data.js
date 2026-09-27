@@ -248,6 +248,8 @@ module.exports = [
 <h3>8. You can't log in</h3>
 <p>If your password suddenly stops working and the reset email never arrives, someone may have changed your account details.</p>
 
+<p>The full clean-up process: <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove WordPress malware step by step</a>.</p>
+
 <h2>What to do if your site is hacked</h2>
 <ol>
   <li><strong>Don't panic, and don't delete everything.</strong> Your real content can usually be saved.</li>
@@ -274,6 +276,8 @@ module.exports = [
 </ul>
 
 <p>A hack is one common cause of sudden traffic loss; see <a href="/blog/website-traffic-dropped/">what to check when traffic drops</a>.</p>
+
+<p>Specific hacks: <a href="/blog/fix-wordpress-redirect-hack/">spam redirects</a>, <a href="/blog/fix-japanese-keyword-seo-spam-hack/">Japanese keyword and pharma spam</a> and <a href="/blog/wordpress-site-sending-spam-emails/">sites sending spam emails</a>.</p>
 
 <h2>Need it fixed fast?</h2>
 <p>Cleaning a hacked site properly takes experience. Removing the visible symptoms isn't enough if a backdoor remains. If your business depends on your website, get professional help quickly: the longer malware stays, the more damage it does to your reputation and Google rankings.</p>
@@ -1108,6 +1112,8 @@ module.exports = [
   <li><strong>Orders stuck as "pending":</strong> often a webhook that isn't configured. Set up the gateway's webhook URL in its dashboard.</li>
   <li><strong>Slow checkout:</strong> too many plugins or slow hosting. Optimize the checkout page.</li>
 </ul>
+
+<p>Protect your checkout from card skimmers: see <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce skimming malware</a>.</p>
 
 <h2>Getting it set up</h2>
 <p>Payment setup involves the website, the gateway dashboard and business paperwork. If you'd rather not deal with the technical side, a developer can prepare the required pages, integrate the gateway, set up webhooks and test everything end to end before launch.</p>
@@ -3667,6 +3673,8 @@ module.exports = [
 <p>Search your main keywords. If new or improved competitor pages now outrank you, study what they offer that you don't, whether that's more depth, better examples, fresher information or faster pages.</p>
 
 <p>A structured <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit</a> often reveals the cause.</p>
+
+<p>Seeing strange Japanese or pharma pages in Search Console? See <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a>.</p>
 
 <h2>What not to do</h2>
 <ul>
@@ -6593,6 +6601,8 @@ module.exports = [
   <li>Tighten DMARC once everything passes</li>
 </ol>
 
+<p>Getting bounces for emails you never sent? See <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam emails</a>.</p>
+
 <h2>Be careful when changing DNS</h2>
 <p>Mistakes in DNS can stop email entirely. When moving hosting or domains, copy all email records first; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
@@ -6793,6 +6803,8 @@ module.exports = [
 
 <h2>Browser security warnings</h2>
 <p><strong>Usually:</strong> an SSL certificate problem, or Google has flagged malware.<br><strong>First steps:</strong> see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> and <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>.</p>
+
+<p>Warnings caused by a hack? See <a href="/blog/remove-malware-wordpress-step-by-step/">removing WordPress malware step by step</a>.</p>
 
 <h2>Golden rules when something breaks</h2>
 <ol>
@@ -13756,6 +13768,8 @@ module.exports = [
 </ul>
 <p>Partial clean-ups often leave backdoors, and the site gets reinfected. See <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>, or get professional <a href="/wordpress-malware-removal/">malware removal</a>.</p>
 
+<p>Don't miss hidden access points; see <a href="/blog/find-remove-wordpress-backdoors/">finding and removing backdoors</a>.</p>
+
 <h2>Step 3: Close the hole</h2>
 <p>Find out how attackers got in: an outdated plugin, a weak password or a vulnerable theme. Update everything and harden logins; see <a href="/blog/secure-wordpress-login/">securing your WordPress login</a>.</p>
 
@@ -15014,6 +15028,564 @@ module.exports = [
 <p>Track completed bookings as key events; see <a href="/blog/ga4-events-explained/">GA4 events</a>.</p>
 
 <p>Industry guides: <a href="/blog/clinic-website-checklist-for-doctors/">clinics</a>, <a href="/blog/website-for-salons-spas/">salons and spas</a> and <a href="/blog/website-for-coaches-consultants/">coaches</a>.</p>
+`,
+  },
+  {
+    slug: 'remove-malware-wordpress-step-by-step',
+    seoTitle: 'How to Remove Malware from WordPress: Step by Step',
+    title: 'How to Remove Malware from a Hacked WordPress Site: A Step-by-Step Clean-up Process',
+    description: 'The clean-up process I follow for hacked WordPress sites: backup, access reset, scanning, replacing core and plugins, checking uploads and the database, removing backdoors, hardening and Google review.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-seo-services'],
+    body: `
+<p>Cleaning a hacked WordPress site isn't just deleting one bad file. Attackers usually leave several ways back in, so a partial clean-up often gets reinfected within days. This is the process I follow when cleaning sites. If you're not comfortable working with files and databases, use it to understand what a proper clean-up involves, and get help.</p>
+
+<h2>Step 1: Contain the damage</h2>
+<ul>
+  <li>Tell your host; they may already see the problem and can help</li>
+  <li>If visitors are being redirected or infected, put up a maintenance page or restrict access temporarily</li>
+  <li>Note what you've seen: redirects, spam pages, warnings, new users</li>
+</ul>
+
+<h2>Step 2: Take a backup of the infected site</h2>
+<p>Back up all files and the database before changing anything. It preserves evidence and lets you recover real content if something goes wrong during clean-up.</p>
+
+<h2>Step 3: Reset access</h2>
+<ul>
+  <li>Change hosting, SFTP, database and all WordPress admin passwords</li>
+  <li>Remove WordPress users you don't recognise, especially administrators</li>
+  <li>Generate new security keys (salts) in wp-config.php, which logs everyone out</li>
+</ul>
+<p>Change passwords again after the clean-up is complete, in case anything was captured during it.</p>
+
+<h2>Step 4: Scan and find what changed</h2>
+<ul>
+  <li>Run a server-side scan (many hosts provide one) and a WordPress security plugin scan</li>
+  <li>Use a remote scanner to see what visitors and Google see</li>
+  <li>List recently modified files; a burst of changes around the infection date is a clue</li>
+  <li>Verify WordPress core and plugin files against official checksums (WP-CLI can do this)</li>
+</ul>
+<p>No scanner catches everything; see <a href="/blog/wordpress-malware-scanners-compared/">malware scanners compared</a>.</p>
+
+<h2>Step 5: Replace core, plugins and themes with clean copies</h2>
+<ul>
+  <li>Replace the wp-admin and wp-includes folders with fresh copies of your WordPress version, and check root files like index.php and wp-config.php by hand</li>
+  <li>Delete and reinstall every plugin and theme from official sources</li>
+  <li>Delete unused plugins and themes entirely</li>
+  <li>Remove any nulled (pirated) plugins or themes; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes</a></li>
+</ul>
+
+<h2>Step 6: Check the places malware hides</h2>
+<ul>
+  <li><strong>wp-content/uploads:</strong> PHP files here are almost always malicious</li>
+  <li><strong>mu-plugins:</strong> "must-use" plugins load automatically and are easy to miss</li>
+  <li><strong>.htaccess files</strong> in every folder: look for unfamiliar redirects and rewrite rules</li>
+  <li><strong>wp-config.php:</strong> look for injected code at the top or bottom</li>
+  <li><strong>Unfamiliar files and folders</strong> with random names or names mimicking WordPress files</li>
+</ul>
+<p>See <a href="/blog/find-remove-wordpress-backdoors/">finding and removing backdoors</a>.</p>
+
+<h2>Step 7: Clean the database</h2>
+<ul>
+  <li>Search posts, pages and widgets for injected scripts, iframes and hidden links</li>
+  <li>Check the site URL and home URL settings</li>
+  <li>Look for spam posts or pages created by the attacker</li>
+  <li>Check user roles and capabilities for hidden administrators</li>
+</ul>
+
+<h2>Step 8: Check scheduled tasks and caches</h2>
+<p>Look for unfamiliar server cron jobs and WordPress scheduled events that could reinstall malware. Then clear all caches, including plugin cache, server cache and CDN, so infected copies of pages stop being served.</p>
+
+<h2>Step 9: Close the entry point</h2>
+<p>Find out how they got in: an outdated plugin, a weak password or a vulnerable theme. Update everything, remove what you don't need and <a href="/blog/secure-wordpress-login/">secure logins</a>. Otherwise the same hole lets them straight back in. See <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a>.</p>
+
+<h2>Step 10: Clean up with Google and monitor</h2>
+<ul>
+  <li>Check Search Console for security issues and unknown owners</li>
+  <li>Request a review if the site was flagged; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing "Deceptive site ahead"</a></li>
+  <li>Remove spam URLs from search; see <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a></li>
+  <li>Set up a firewall, file-change monitoring and off-site backups</li>
+</ul>
+
+<h2>Want it done for you?</h2>
+<p>I clean hacked WordPress sites urgently, usually within 24–48 hours of getting access, and harden them so it doesn't happen again. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'fix-wordpress-redirect-hack',
+    seoTitle: 'WordPress Redirecting to Spam Sites? How to Fix It',
+    title: 'WordPress Site Redirecting to Spam Sites? How to Find and Fix the Redirect Hack',
+    description: 'Why a hacked WordPress site redirects visitors to spam or scam sites (often only on mobile or from Google), where the redirect code hides, how to test for it and how to remove it for good.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
+    body: `
+<p>Customers say your website sends them to a gambling, dating or fake prize site, but when you open it, everything looks normal. That's typical of a redirect hack: the malicious code is designed to hide from site owners so it survives longer.</p>
+
+<h2>Why you might not see it</h2>
+<p>Redirect malware is often conditional. It may only trigger:</p>
+<ul>
+  <li>For visitors arriving from Google or social media</li>
+  <li>On mobile devices</li>
+  <li>For visitors who aren't logged in to WordPress</li>
+  <li>Once per visitor, using a cookie so repeat visits look normal</li>
+  <li>For certain countries</li>
+</ul>
+
+<h2>How to test for it</h2>
+<ul>
+  <li>Open your site in a private window on your phone using mobile data</li>
+  <li>Search Google for your business and click through from the results</li>
+  <li>Clear cookies between tests</li>
+  <li>View the page source and look for unfamiliar scripts, especially long obfuscated code</li>
+  <li>Use your browser's developer tools (Network tab) to see requests to unknown domains</li>
+  <li>Run a remote malware scanner</li>
+</ul>
+
+<h2>Where redirect code hides</h2>
+<table>
+  <thead><tr><th>Location</th><th>What to look for</th></tr></thead>
+  <tbody>
+    <tr><td>.htaccess files</td><td>Rewrite rules sending visitors to external sites based on referrer or device</td></tr>
+    <tr><td>Theme files (header.php, footer.php, functions.php)</td><td>Injected scripts or PHP redirect code</td></tr>
+    <tr><td>Plugin files</td><td>Code added to legitimate plugins, or fake plugins with harmless-sounding names</td></tr>
+    <tr><td>Database</td><td>Scripts injected into posts, widgets, theme options or plugin settings; changed site URL settings</td></tr>
+    <tr><td>Core files</td><td>Modified index.php, wp-config.php or files in wp-includes</td></tr>
+    <tr><td>JavaScript files</td><td>Malicious code appended to your theme's or plugins' .js files</td></tr>
+  </tbody>
+</table>
+
+<h2>How to fix it</h2>
+<ol>
+  <li>Back up the site, then change all passwords</li>
+  <li>Replace WordPress core, plugins and themes with clean copies</li>
+  <li>Inspect and clean .htaccess files and the database</li>
+  <li>Remove unknown admin users and backdoors; see <a href="/blog/find-remove-wordpress-backdoors/">finding backdoors</a></li>
+  <li>Clear all caches and the CDN, since cached pages can keep serving the redirect</li>
+  <li>Test again from mobile, Google and a private window</li>
+</ol>
+<p>The full process is in <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware step by step</a>.</p>
+
+<h2>Why it keeps coming back</h2>
+<p>If the redirect returns days later, a backdoor remains or the original vulnerability is still open, such as an outdated plugin or a compromised password. Some infections also reinstall themselves through scheduled tasks.</p>
+
+<h2>Check Google too</h2>
+<p>Redirect hacks often lead to a browser warning or "This site may be hacked" in search results. Check Search Console's Security issues report and request a review once clean; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing browser warnings</a>.</p>
+
+<p>Need it fixed urgently? See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'fix-japanese-keyword-seo-spam-hack',
+    seoTitle: 'Japanese Keyword Hack & SEO Spam: How to Fix It',
+    title: 'Japanese Keyword Hack and SEO Spam: How to Clean Your Site and Google Results',
+    description: 'How to fix the Japanese keyword hack, pharma hack and other SEO spam on WordPress: spotting cloaked spam pages, removing rogue Search Console owners, cleaning files and removing spam URLs from Google.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-seo-services', 'wordpress-maintenance'],
+    body: `
+<p>You search for your business on Google and see pages with Japanese text, cheap medicines, replica goods or casino keywords under your domain. Your website looks fine when you visit it. This is an SEO spam hack: attackers use your site's reputation to rank their spam pages.</p>
+
+<h2>Common types</h2>
+<ul>
+  <li><strong>Japanese keyword hack:</strong> thousands of auto-generated pages with Japanese text selling counterfeit goods</li>
+  <li><strong>Pharma hack:</strong> spam pages or hidden links for medicines</li>
+  <li><strong>Hidden link injection:</strong> invisible links to spam sites added to your pages</li>
+  <li><strong>Doorway pages:</strong> spam pages that redirect visitors to other sites</li>
+</ul>
+
+<h2>How to confirm it</h2>
+<ul>
+  <li>Search <code>site:yourdomain.com</code> on Google and look for unfamiliar pages or languages</li>
+  <li>Check Search Console: Security issues, Pages (indexing) and Sitemaps for sitemaps you didn't submit</li>
+  <li>Use Search Console's URL Inspection on a spam URL to see what Googlebot sees</li>
+</ul>
+<p>Spam is often <strong>cloaked</strong>: shown to Googlebot but not to normal visitors, which is why the site looks fine to you.</p>
+
+<h2>Step 1: Remove rogue Search Console owners</h2>
+<p>Attackers often verify themselves as owners of your site in Search Console so they can submit spam sitemaps. Go to Settings → Users and permissions, remove anyone you don't recognise, and delete their verification method (such as an HTML verification file or meta tag) from your site.</p>
+
+<h2>Step 2: Find and remove the spam generator</h2>
+<ul>
+  <li>Look for unfamiliar PHP files and folders in the root and wp-content</li>
+  <li>Check .htaccess for rewrite rules sending spam URLs to a script</li>
+  <li>Look for injected code in theme files, plugins and wp-config.php</li>
+  <li>Check the database for spam posts, pages and hidden links</li>
+</ul>
+<p>Then follow the full <a href="/blog/remove-malware-wordpress-step-by-step/">malware clean-up process</a> and remove <a href="/blog/find-remove-wordpress-backdoors/">backdoors</a>, or the spam will return.</p>
+
+<h2>Step 3: Make spam URLs return 404 or 410</h2>
+<p>Once cleaned, spam URLs should return "not found" (404) or "gone" (410). Google drops them as it recrawls. Don't redirect them to your homepage.</p>
+
+<h2>Step 4: Don't block spam URLs in robots.txt</h2>
+<p>If you block them, Google can't recrawl them to see they're gone, so they may linger in results longer.</p>
+
+<h2>Step 5: Speed up removal</h2>
+<ul>
+  <li>Use Search Console's Removals tool to temporarily hide the worst URLs</li>
+  <li>Submit your real sitemap and remove spam sitemaps</li>
+  <li>Request a review in Security issues if a manual action or warning appears</li>
+</ul>
+<p>Thousands of spam URLs can take weeks to drop out completely. Keep monitoring with <code>site:</code> searches.</p>
+
+<h2>Step 6: Protect your rankings</h2>
+<p>Spam can hurt your real rankings while it's live. After cleaning, check your important pages are indexed and performing; see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
+
+<h2>Prevent it</h2>
+<p>Keep plugins updated, remove unused ones, secure logins and monitor Search Console email alerts. See <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a> and <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'find-remove-wordpress-backdoors',
+    seoTitle: 'How to Find and Remove Backdoors in WordPress',
+    title: 'How to Find and Remove Backdoors in a Hacked WordPress Site',
+    description: 'What WordPress backdoors are, where attackers hide them (uploads, fake plugins, mu-plugins, core files, database, cron), warning signs in code, how to verify files and how to stop reinfection.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>The main reason cleaned WordPress sites get hacked again is a missed backdoor: hidden code that lets the attacker regain access even after passwords change and visible malware is removed. Finding backdoors is the most important part of a proper clean-up.</p>
+
+<h2>What a backdoor is</h2>
+<p>A backdoor is code that gives an attacker a way back in: uploading files, running commands or creating admin users on demand. It's often small, disguised and placed where site owners rarely look.</p>
+
+<h2>Where backdoors hide</h2>
+<ul>
+  <li><strong>wp-content/uploads:</strong> PHP files disguised as images or with random names</li>
+  <li><strong>Fake plugins:</strong> folders with convincing names that don't appear in the plugin list, or that do but you never installed</li>
+  <li><strong>mu-plugins folder:</strong> loads automatically and doesn't show up in the normal plugins list</li>
+  <li><strong>Modified legitimate files:</strong> a few lines added to a real plugin, theme or core file</li>
+  <li><strong>Files mimicking WordPress names:</strong> like wp-configs.php or files in wp-includes that don't belong there</li>
+  <li><strong>Database:</strong> hidden admin users, malicious options or code stored in settings</li>
+  <li><strong>Scheduled tasks:</strong> server cron jobs or WordPress events that re-download malware</li>
+</ul>
+
+<h2>Warning signs in code</h2>
+<p>Legitimate code sometimes uses these too, so context matters, but they deserve a close look in unexpected places:</p>
+<ul>
+  <li>Heavily obfuscated code: long strings of random characters</li>
+  <li>Functions that decode and run hidden code, such as combinations of <code>eval</code>, <code>base64_decode</code>, <code>gzinflate</code> or <code>str_rot13</code></li>
+  <li>Code that runs whatever is sent in a request</li>
+  <li>File upload handlers in odd places</li>
+  <li>Very long single lines of code at the start or end of files</li>
+</ul>
+
+<h2>Verify files against official copies</h2>
+<p>WP-CLI can compare WordPress core files, and plugins from WordPress.org, against official checksums, flagging modified or extra files. For premium plugins, reinstall fresh copies from the vendor.</p>
+
+<h2>Check users and access</h2>
+<ul>
+  <li>List all administrators, including any not visible in the dashboard, by checking the database</li>
+  <li>Review SFTP and hosting users, and remove unknown ones</li>
+  <li>Check Search Console owners</li>
+  <li>Regenerate WordPress security keys</li>
+</ul>
+
+<h2>Remove, then harden</h2>
+<ul>
+  <li>Block PHP execution in the uploads folder</li>
+  <li>Disable file editing in the dashboard (the DISALLOW_FILE_EDIT setting in wp-config.php)</li>
+  <li>Correct file permissions</li>
+  <li>Add a firewall and file-change monitoring</li>
+  <li>Keep everything updated</li>
+</ul>
+
+<h2>When in doubt, rebuild clean</h2>
+<p>For heavily infected sites, it can be safer to build a fresh WordPress install with clean plugins and themes, then import only the verified content and uploads (images, not PHP files).</p>
+
+<p>Full process: <a href="/blog/remove-malware-wordpress-step-by-step/">removing WordPress malware step by step</a>. Or get <a href="/wordpress-malware-removal/">professional malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-site-sending-spam-emails',
+    seoTitle: 'Website Sending Spam Emails? How to Stop It',
+    title: 'Website or Hosting Account Sending Spam Emails? How to Find and Stop It',
+    description: 'Why your hosting account may be sending spam (mailer scripts, hacked email accounts, abused forms), signs to watch for, how to trace the source, clean it and get your domain off blacklists.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>Your host suspends email on your account, you get bounce-backs for messages you never sent, or your own emails start landing in spam. Your hosting account may be sending spam. It hurts your domain's reputation, so act quickly.</p>
+
+<h2>Signs of a spam problem</h2>
+<ul>
+  <li>A warning or suspension notice from your host about outgoing mail</li>
+  <li>Hundreds of bounce messages in your inbox</li>
+  <li>Your domain or server IP appears on email blacklists</li>
+  <li>Genuine emails from your business going to spam</li>
+</ul>
+
+<h2>Common causes</h2>
+<ul>
+  <li><strong>Malicious mailer scripts</strong> uploaded to the website after a hack</li>
+  <li><strong>A compromised email account password</strong> used to send spam through your mail server</li>
+  <li><strong>Abused contact forms</strong> that can be tricked into sending emails to any address</li>
+  <li><strong>Vulnerable plugins</strong> with email features</li>
+</ul>
+
+<h2>Step 1: Stop the sending</h2>
+<p>Ask your host to pause outgoing mail or clear the mail queue while you investigate.</p>
+
+<h2>Step 2: Trace the source</h2>
+<ul>
+  <li>Ask your host for mail logs: they show whether spam came from a script (and often which file) or an email account login</li>
+  <li>Check the headers of a bounced spam message for clues about the sending script or account</li>
+  <li>Look for recently added PHP files, especially in uploads and random folders</li>
+</ul>
+
+<h2>Step 3: Fix the cause</h2>
+<ul>
+  <li><strong>Script:</strong> remove it and clean the site fully; see <a href="/blog/remove-malware-wordpress-step-by-step/">malware clean-up step by step</a></li>
+  <li><strong>Email account:</strong> change its password, and all email passwords, and check for forwarding rules the attacker added</li>
+  <li><strong>Form abuse:</strong> update or replace the form plugin and add spam protection; see <a href="/blog/stop-contact-form-spam/">stopping form spam</a></li>
+</ul>
+
+<h2>Step 4: Clean your reputation</h2>
+<ul>
+  <li>Check your domain and server IP on major blacklist checkers</li>
+  <li>Follow each blacklist's delisting process once the problem is fixed</li>
+  <li>Set up SPF, DKIM and DMARC so others can't easily spoof your domain; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">email deliverability</a></li>
+</ul>
+
+<h2>Step 5: Send website email properly</h2>
+<p>Send WordPress notifications through an authenticated SMTP or transactional email service rather than the server's default mail. It improves deliverability and makes abuse easier to spot.</p>
+
+<h2>Prevent it happening again</h2>
+<ul>
+  <li>Strong, unique email passwords, with 2FA where available</li>
+  <li>Updated plugins and themes</li>
+  <li>Monitoring for new PHP files and unusual email volume</li>
+</ul>
+
+<p>Need help tracing and fixing it? See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-checkout-skimmer-malware',
+    seoTitle: 'WooCommerce Card Skimmer Malware: Signs, Fix & Prevention',
+    title: 'WooCommerce Card Skimming Malware: Signs, Response and Prevention',
+    description: 'How card skimming malware targets WooCommerce checkouts, warning signs, what to do immediately if you suspect it, cleaning the store, notification duties, and payment setups that reduce the risk.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'woocommerce-developer', 'wordpress-maintenance'],
+    body: `
+<p>Card skimming malware is one of the most damaging attacks an online store can suffer. Malicious code on the checkout page captures customers' card details as they type and sends them to criminals. Customers lose money, and the store loses trust.</p>
+
+<h2>How skimmers work</h2>
+<ul>
+  <li><strong>Injected JavaScript</strong> that reads card fields on the checkout page</li>
+  <li><strong>Fake payment forms</strong> shown before the real payment step, or in place of it</li>
+  <li><strong>Code hidden in the database,</strong> plugin files or scripts loaded from look-alike domains</li>
+</ul>
+<p>Skimmers often activate only on the checkout page, which makes them easy to miss.</p>
+
+<h2>Warning signs</h2>
+<ul>
+  <li>Customers report card fraud after buying from your store</li>
+  <li>Your payment gateway or bank contacts you about suspicious patterns</li>
+  <li>Unfamiliar scripts or external domains loading on checkout</li>
+  <li>An extra or unusual card form at checkout</li>
+  <li>Unknown admin users or unexpected file changes</li>
+</ul>
+
+<h2>What to do immediately</h2>
+<ol>
+  <li><strong>Stop exposure:</strong> disable the affected payment method or put the checkout into maintenance</li>
+  <li><strong>Preserve evidence:</strong> take a full backup and keep logs</li>
+  <li><strong>Inform your payment gateway</strong> and follow their guidance</li>
+  <li><strong>Take advice on notification:</strong> Indian rules may require reporting cyber incidents to CERT-In within a short timeframe, and data protection law may require notifying affected customers. Get legal advice promptly</li>
+</ol>
+
+<h2>Clean the store</h2>
+<ul>
+  <li>Follow the full <a href="/blog/remove-malware-wordpress-step-by-step/">malware clean-up process</a></li>
+  <li>Search the database, especially options and settings, for injected scripts</li>
+  <li>Check theme and plugin JavaScript files and any custom checkout code</li>
+  <li>Remove <a href="/blog/find-remove-wordpress-backdoors/">backdoors</a> and unknown admins</li>
+  <li>Change every password and regenerate security keys</li>
+  <li>Test checkout thoroughly before re-enabling payments</li>
+</ul>
+
+<h2>Reduce the risk with the right payment setup</h2>
+<p>The safest approach for most small stores is to never let card details touch your website at all:</p>
+<ul>
+  <li><strong>Hosted or redirect checkout:</strong> the customer pays on the payment gateway's secure page</li>
+  <li><strong>Gateway-hosted popups or embedded fields:</strong> card fields are served by the gateway, not your site</li>
+  <li><strong>UPI and wallets:</strong> no card numbers typed on your site</li>
+</ul>
+<p>Even then, attackers can try to swap in fake forms, so monitoring still matters. See <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments</a>.</p>
+
+<h2>Ongoing protection</h2>
+<ul>
+  <li>Keep WooCommerce, plugins and themes updated</li>
+  <li>Minimise plugins that load on the checkout page</li>
+  <li>File-change monitoring and a web application firewall</li>
+  <li>2FA for all admin and shop manager accounts; see <a href="/blog/secure-wordpress-login/">securing logins</a></li>
+  <li>A Content Security Policy limiting which scripts can run; see <a href="/blog/website-security-headers-explained/">security headers</a></li>
+</ul>
+
+<p>Suspect your store is compromised? Get help immediately: <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'why-wordpress-sites-get-hacked',
+    seoTitle: 'Why WordPress Sites Get Hacked (and How to Prevent It)',
+    title: 'Why WordPress Sites Get Hacked: The Real Causes and How to Prevent Them',
+    description: 'The real reasons business WordPress sites get hacked: outdated and abandoned plugins, nulled software, weak passwords, shared hosting accounts, infected computers and missing protection, with fixes for each.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>WordPress core itself is well maintained and patched quickly. Most hacked WordPress sites I clean were compromised through something around it: a plugin, a password, the hosting account or the way the site was managed. Knowing the real causes tells you exactly what to protect.</p>
+
+<h2>1. Outdated plugins and themes</h2>
+<p>Security researchers consistently find that most WordPress vulnerabilities are in plugins and themes, not core. Once a vulnerability is published, bots scan the internet for sites still running the old version, often within days.</p>
+<p><strong>Fix:</strong> update regularly and safely; see <a href="/blog/update-wordpress-safely/">updating WordPress safely</a>.</p>
+
+<h2>2. Abandoned plugins</h2>
+<p>Plugins that haven't been updated in years won't get security fixes, even when problems are found.</p>
+<p><strong>Fix:</strong> replace abandoned plugins with maintained alternatives and delete what you don't use.</p>
+
+<h2>3. Nulled (pirated) themes and plugins</h2>
+<p>"Free" copies of premium software often contain hidden malware and never receive updates.</p>
+<p><strong>Fix:</strong> use genuine licences; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a>.</p>
+
+<h2>4. Weak, reused or shared passwords</h2>
+<p>Bots try common passwords and credentials leaked from other websites. Shared logins make it impossible to know who did what.</p>
+<p><strong>Fix:</strong> unique passwords, 2FA and individual accounts; see <a href="/blog/secure-wordpress-login/">securing your login</a>.</p>
+
+<h2>5. Several sites in one hosting account</h2>
+<p>If multiple websites share one hosting account, one neglected site, like an old test site or a forgotten microsite, can infect all the others. This is one of the most common causes of repeat infections I see.</p>
+<p><strong>Fix:</strong> delete old sites, keep every site updated, or isolate important sites in separate accounts.</p>
+
+<h2>6. An infected computer</h2>
+<p>Malware on the computer of someone who manages the site can steal saved FTP, hosting or WordPress passwords.</p>
+<p><strong>Fix:</strong> keep computers updated with antivirus, use SFTP instead of FTP and store passwords in a password manager.</p>
+
+<h2>7. Too many administrators</h2>
+<p>Every admin account is a potential entry point, especially old accounts for past staff or developers.</p>
+<p><strong>Fix:</strong> give people only the role they need and remove old accounts; see <a href="/blog/wordpress-user-roles-explained/">user roles explained</a>.</p>
+
+<h2>8. Old PHP and server software</h2>
+<p>Unsupported PHP versions no longer receive security patches; see <a href="/blog/update-php-version-wordpress/">updating PHP</a>.</p>
+
+<h2>9. No firewall, monitoring or backups</h2>
+<p>Without protection, attacks aren't blocked. Without monitoring, hacks go unnoticed for weeks. Without backups, recovery is slower and harder.</p>
+<p><strong>Fix:</strong> a firewall, uptime and file-change monitoring, and off-site backups; see the <a href="/blog/wordpress-security-checklist/">security checklist</a>.</p>
+
+<h2>It's rarely personal</h2>
+<p>Most attacks are automated. Bots don't care whether you're a big brand or a small clinic; they look for any site with a known weakness, then use it for spam, redirects or phishing.</p>
+
+<h2>Already hacked?</h2>
+<p>See <a href="/blog/remove-malware-wordpress-step-by-step/">the clean-up process step by step</a>, or get <a href="/wordpress-malware-removal/">professional malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'nulled-themes-plugins-risks',
+    seoTitle: 'Nulled WordPress Themes & Plugins: Why They Are Dangerous',
+    title: 'Nulled WordPress Themes and Plugins: Why "Free" Premium Software Is So Risky',
+    description: 'What nulled WordPress themes and plugins are, the hidden malware, SEO spam and backdoors they often contain, the update and legal problems, how to check your site and how to replace them safely.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'elementor-developer'],
+    body: `
+<p>A "nulled" theme or plugin is a premium product with its licence check removed, shared for free on unofficial websites. It's tempting to save on licence fees, but nulled software is one of the most common sources of malware I find on hacked business websites.</p>
+
+<h2>What can be hidden inside</h2>
+<ul>
+  <li><strong>Backdoors</strong> giving the distributor access to your site</li>
+  <li><strong>Hidden spam links</strong> or code that creates spam pages; see <a href="/blog/fix-japanese-keyword-seo-spam-hack/">SEO spam hacks</a></li>
+  <li><strong>Redirects</strong> sending your visitors to other sites</li>
+  <li><strong>Code that creates admin users</strong> or sends your data elsewhere</li>
+  <li><strong>Crypto-mining or ad-injection scripts</strong> that slow your site</li>
+</ul>
+<p>The malicious code may stay dormant for weeks before activating, so the site can seem fine at first.</p>
+
+<h2>Other problems</h2>
+<ul>
+  <li><strong>No updates:</strong> security fixes never arrive, leaving known vulnerabilities open</li>
+  <li><strong>No support</strong> from the developer when something breaks</li>
+  <li><strong>Legal risk:</strong> using pirated software violates the developer's licence terms</li>
+  <li><strong>SEO damage:</strong> hidden spam links can hurt rankings and trigger Google warnings</li>
+</ul>
+
+<h2>How to check your site</h2>
+<ul>
+  <li>List every premium theme and plugin and confirm you have a valid licence, ideally in your business's name</li>
+  <li>Check that updates are available through the official channel</li>
+  <li>Ask your developer where each premium product came from</li>
+  <li>Run a malware scan; see <a href="/blog/wordpress-malware-scanners-compared/">malware scanners compared</a></li>
+</ul>
+
+<h2>How to replace them safely</h2>
+<ol>
+  <li>Back up the site</li>
+  <li>Buy a genuine licence, or choose a free alternative from WordPress.org</li>
+  <li>Delete the nulled copy completely, not just deactivate it</li>
+  <li>Install a fresh copy from the official source</li>
+  <li>Scan the whole site and check for backdoors left behind; see <a href="/blog/find-remove-wordpress-backdoors/">finding backdoors</a></li>
+  <li>Change passwords and security keys</li>
+</ol>
+
+<h2>Licences are cheaper than clean-ups</h2>
+<p>A yearly licence costs far less than a malware clean-up, lost enquiries and damaged rankings. Many excellent themes and plugins are also free on WordPress.org, maintained and reviewed.</p>
+
+<h2>Ask your developer</h2>
+<p>A trustworthy developer uses genuine licences and tells you who owns them. See the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-malware-scanners-compared',
+    seoTitle: 'WordPress Malware Scanners Compared: What Each Can Find',
+    title: 'WordPress Malware Scanners Compared: Plugin, Remote and Server-Side Scanning',
+    description: 'How WordPress malware scanners work: plugin scanners, remote scanners and server-side scanning, what each can and cannot detect, popular options, and why a clean scan is not a guarantee.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
+    body: `
+<p>Malware scanners are useful for spotting infections early, but each type sees only part of the picture. Understanding what they can and can't detect helps you use them properly and not be falsely reassured by a "clean" result.</p>
+
+<h2>Three types of scanners</h2>
+<table>
+  <thead><tr><th>Type</th><th>How it works</th><th>Sees</th><th>Misses</th></tr></thead>
+  <tbody>
+    <tr><td>Remote scanners</td><td>Load your public pages from outside, like a visitor</td><td>Visible malware, spam links, redirects, blocklist status</td><td>Anything not visible in public pages, including backdoors and hidden files</td></tr>
+    <tr><td>Plugin scanners</td><td>Run inside WordPress and scan files and database</td><td>Modified core files, known malware signatures, suspicious code</td><td>Can be disabled or fooled by malware already running on the site</td></tr>
+    <tr><td>Server-side scanners</td><td>Run on the hosting server</td><td>Files across the whole account, including other sites</td><td>Depends on the host's tools and signatures</td></tr>
+  </tbody>
+</table>
+
+<h2>Popular options</h2>
+<ul>
+  <li><strong>Remote:</strong> Sucuri SiteCheck and Google's Safe Browsing site status</li>
+  <li><strong>Plugins:</strong> Wordfence, MalCare, Jetpack Scan and Sucuri Security, with varying free and paid features</li>
+  <li><strong>Server-side:</strong> security tools many hosts provide, such as Imunify360 on many cPanel servers</li>
+</ul>
+<p>Features and pricing change, so check each tool's current plans.</p>
+
+<h2>Why a clean scan isn't a guarantee</h2>
+<ul>
+  <li>New or custom malware may not match known signatures</li>
+  <li>Cloaked spam and conditional redirects may not show to scanners</li>
+  <li>Malware can hide in the database in ways some scanners don't check</li>
+  <li>Backdoors are often small and look like normal code</li>
+</ul>
+<p>If you see symptoms such as redirects, spam in Google or unknown users, trust the symptoms over a clean scan. See <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>.</p>
+
+<h2>A sensible setup for a business site</h2>
+<ul>
+  <li>A security plugin with firewall and scheduled scans</li>
+  <li>Server-side scanning from your host, if available</li>
+  <li>An occasional remote scan and Search Console security alerts</li>
+  <li>File-change monitoring, so unexpected changes alert you</li>
+</ul>
+
+<h2>Watch performance</h2>
+<p>Scans can use server resources. Schedule them for quiet hours, and avoid running several security plugins at once. They conflict and slow the site.</p>
+
+<h2>Scanners find, people clean</h2>
+<p>A scanner report is a starting point. Proper clean-up means removing every infected file, backdoor and database entry, and closing the entry point. See <a href="/blog/remove-malware-wordpress-step-by-step/">removing malware step by step</a> or <a href="/wordpress-malware-removal/">get it cleaned professionally</a>.</p>
 `,
   },
 ];

@@ -1854,5 +1854,68 @@
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
     <description>How to add online appointment booking to a business website: booking tools and WordPress plugins, services and staff setup, calendar sync, reminders, deposits, cancellation policies and reducing no-shows.</description>
   </item>
+  <item>
+    <title>How to Remove Malware from a Hacked WordPress Site: A Step-by-Step Clean-up Process</title>
+    <link>https://samverse.space/blog/remove-malware-wordpress-step-by-step/</link>
+    <guid>https://samverse.space/blog/remove-malware-wordpress-step-by-step/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>The clean-up process I follow for hacked WordPress sites: backup, access reset, scanning, replacing core and plugins, checking uploads and the database, removing backdoors, hardening and Google review.</description>
+  </item>
+  <item>
+    <title>WordPress Site Redirecting to Spam Sites? How to Find and Fix the Redirect Hack</title>
+    <link>https://samverse.space/blog/fix-wordpress-redirect-hack/</link>
+    <guid>https://samverse.space/blog/fix-wordpress-redirect-hack/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Why a hacked WordPress site redirects visitors to spam or scam sites (often only on mobile or from Google), where the redirect code hides, how to test for it and how to remove it for good.</description>
+  </item>
+  <item>
+    <title>Japanese Keyword Hack and SEO Spam: How to Clean Your Site and Google Results</title>
+    <link>https://samverse.space/blog/fix-japanese-keyword-seo-spam-hack/</link>
+    <guid>https://samverse.space/blog/fix-japanese-keyword-seo-spam-hack/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to fix the Japanese keyword hack, pharma hack and other SEO spam on WordPress: spotting cloaked spam pages, removing rogue Search Console owners, cleaning files and removing spam URLs from Google.</description>
+  </item>
+  <item>
+    <title>How to Find and Remove Backdoors in a Hacked WordPress Site</title>
+    <link>https://samverse.space/blog/find-remove-wordpress-backdoors/</link>
+    <guid>https://samverse.space/blog/find-remove-wordpress-backdoors/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What WordPress backdoors are, where attackers hide them (uploads, fake plugins, mu-plugins, core files, database, cron), warning signs in code, how to verify files and how to stop reinfection.</description>
+  </item>
+  <item>
+    <title>Website or Hosting Account Sending Spam Emails? How to Find and Stop It</title>
+    <link>https://samverse.space/blog/wordpress-site-sending-spam-emails/</link>
+    <guid>https://samverse.space/blog/wordpress-site-sending-spam-emails/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Why your hosting account may be sending spam (mailer scripts, hacked email accounts, abused forms), signs to watch for, how to trace the source, clean it and get your domain off blacklists.</description>
+  </item>
+  <item>
+    <title>WooCommerce Card Skimming Malware: Signs, Response and Prevention</title>
+    <link>https://samverse.space/blog/woocommerce-checkout-skimmer-malware/</link>
+    <guid>https://samverse.space/blog/woocommerce-checkout-skimmer-malware/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How card skimming malware targets WooCommerce checkouts, warning signs, what to do immediately if you suspect it, cleaning the store, notification duties, and payment setups that reduce the risk.</description>
+  </item>
+  <item>
+    <title>Why WordPress Sites Get Hacked: The Real Causes and How to Prevent Them</title>
+    <link>https://samverse.space/blog/why-wordpress-sites-get-hacked/</link>
+    <guid>https://samverse.space/blog/why-wordpress-sites-get-hacked/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>The real reasons business WordPress sites get hacked: outdated and abandoned plugins, nulled software, weak passwords, shared hosting accounts, infected computers and missing protection, with fixes for each.</description>
+  </item>
+  <item>
+    <title>Nulled WordPress Themes and Plugins: Why &quot;Free&quot; Premium Software Is So Risky</title>
+    <link>https://samverse.space/blog/nulled-themes-plugins-risks/</link>
+    <guid>https://samverse.space/blog/nulled-themes-plugins-risks/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What nulled WordPress themes and plugins are, the hidden malware, SEO spam and backdoors they often contain, the update and legal problems, how to check your site and how to replace them safely.</description>
+  </item>
+  <item>
+    <title>WordPress Malware Scanners Compared: Plugin, Remote and Server-Side Scanning</title>
+    <link>https://samverse.space/blog/wordpress-malware-scanners-compared/</link>
+    <guid>https://samverse.space/blog/wordpress-malware-scanners-compared/</guid>
+    <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How WordPress malware scanners work: plugin scanners, remote scanners and server-side scanning, what each can and cannot detect, popular options, and why a clean scan is not a guarantee.</description>
+  </item>
 </channel>
 </rss>

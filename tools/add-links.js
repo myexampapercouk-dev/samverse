@@ -289,6 +289,14 @@ const LINKS = [
   ['website-for-lawyers-and-chartered-accountants', '<h2>Local SEO for professionals</h2>', '<p>Advocates: see <a href="/blog/website-for-advocates-bar-council-rules/">what the Bar Council rules allow</a>.</p>\n\n'],
   ['website-for-hostels-pg-accommodation', '<h2>Local SEO</h2>', '<p>Running a homestay instead? See <a href="/blog/website-for-homestays-bnbs/">websites for homestays and B&amp;Bs</a>.</p>\n\n'],
   ['website-for-salons-spas', '<h2>Design tips</h2>', '<p>Setting up bookings? See <a href="/blog/online-appointment-booking-website/">online appointment booking</a>.</p>\n\n'],
+  // Round 36
+  ['signs-wordpress-site-hacked', '<h2>What to do if your site is hacked</h2>', '<p>The full clean-up process: <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove WordPress malware step by step</a>.</p>\n\n'],
+  ['signs-wordpress-site-hacked', '<h2>Need it fixed fast?</h2>', '<p>Specific hacks: <a href="/blog/fix-wordpress-redirect-hack/">spam redirects</a>, <a href="/blog/fix-japanese-keyword-seo-spam-hack/">Japanese keyword and pharma spam</a> and <a href="/blog/wordpress-site-sending-spam-emails/">sites sending spam emails</a>.</p>\n\n'],
+  ['deceptive-site-ahead-warning-fix', '<h2>Step 3: Close the hole</h2>', '<p>Don\'t miss hidden access points; see <a href="/blog/find-remove-wordpress-backdoors/">finding and removing backdoors</a>.</p>\n\n'],
+  ['common-wordpress-errors-fixes', '<h2>Golden rules when something breaks</h2>', '<p>Warnings caused by a hack? See <a href="/blog/remove-malware-wordpress-step-by-step/">removing WordPress malware step by step</a>.</p>\n\n'],
+  ['business-email-deliverability-spf-dkim-dmarc', '<h2>Be careful when changing DNS</h2>', '<p>Getting bounces for emails you never sent? See <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam emails</a>.</p>\n\n'],
+  ['accept-online-payments-wordpress-india', '<h2>Getting it set up</h2>', '<p>Protect your checkout from card skimmers: see <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce skimming malware</a>.</p>\n\n'],
+  ['website-traffic-dropped', '<h2>What not to do</h2>', '<p>Seeing strange Japanese or pharma pages in Search Console? See <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
