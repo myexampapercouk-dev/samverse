@@ -6,6 +6,10 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const SITE = 'https://samverse.space';
+// On-page cover images (WebP from tools/og-images.js); empty string if not generated yet
+const coverImg = key => fs.existsSync(path.join(__dirname, '..', 'assets', 'og', key + '.webp')) ? `/assets/og/${key}.webp` : '';
+// Card thumbnail: decorative (alt=""), since the card repeats the title as text
+const cardImg = p => coverImg(`blog-${p.slug}`) ? `<img class="post-card-img" src="${coverImg(`blog-${p.slug}`)}" alt="" width="1200" height="630" loading="lazy">` : '';
 // Per-page social image from tools/og-images.js, falling back to the default
 const ogImage = key => fs.existsSync(path.join(__dirname, '..', 'assets', 'og', key + '.png')) ? `${SITE}/assets/og/${key}.png` : `${SITE}/assets/og-image.png`;
 const ogForUrl = url => { const parts = url.replace(SITE, '').split('/').filter(Boolean); if (parts.length === 2) return ogImage(`${parts[0]}-${parts[1]}`); if (parts.length === 1) { const k = fs.existsSync(path.join(__dirname, '..', 'assets', 'og', `extra-${parts[0]}.png`)) ? `extra-${parts[0]}` : `page-${parts[0]}`; return ogImage(k); } return ogImage('none'); };
@@ -470,7 +474,7 @@ ${JSON.stringify(schema, null, 2)}
         <span class="eyebrow">${esc(post.category)}</span>
         <h1>${esc(post.title)}</h1>
         <p class="post-meta">By <a href="/about/">Sameer Gupta</a> · <time datetime="${post.date}">${fmtDate(post.date)}</time> · ${readMins(post.body)} min read</p>
-      </header>
+${coverImg(`blog-${post.slug}`) ? `        <figure class="post-cover"><img src="${coverImg(`blog-${post.slug}`)}" alt="${esc(post.title)}" width="1200" height="630" fetchpriority="high"></figure>\n` : ''}      </header>
 
       <div class="post-layout container">
         <aside class="post-toc">
@@ -536,7 +540,7 @@ ${others.map(x => '          ' + postCard(x)).join('\n')}
 `;
 };
 
-const postCard = x => `<a class="post-card" href="/blog/${x.slug}/"><span class="work-tag">${esc(x.category)}</span><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p><span class="post-card-meta">${fmtDate(x.date)} · ${readMins(x.body)} min read</span></a>`;
+const postCard = x => `<a class="post-card" href="/blog/${x.slug}/">${cardImg(x)}<span class="work-tag">${esc(x.category)}</span><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p><span class="post-card-meta">${fmtDate(x.date)} · ${readMins(x.body)} min read</span></a>`;
 
 // Topic groups on /blog/ (each post's `category` maps to one group; unknown categories fall into Guides)
 const BLOG_TOPICS = [
@@ -860,7 +864,7 @@ EXTRA.forEach(x => {
     .sort((a, b) => b.date.localeCompare(a.date) || order.get(b.slug) - order.get(a.slug))
     .slice(0, 3);
   const picks = [...PINNED.map(s => POSTS.find(p => p.slug === s)).filter(Boolean), ...newest];
-  const cards = picks.map(p => `          <a class="post-card reveal" href="/blog/${p.slug}/"><span class="work-tag">${esc(p.category)}</span><h3>${esc(p.title)}</h3><p>${esc(p.description)}</p><span class="post-card-meta">Read article →</span></a>`).join('\n');
+  const cards = picks.map(p => `          <a class="post-card reveal" href="/blog/${p.slug}/">${cardImg(p)}<span class="work-tag">${esc(p.category)}</span><h3>${esc(p.title)}</h3><p>${esc(p.description)}</p><span class="post-card-meta">Read article →</span></a>`).join('\n');
   const indexPath = path.join(ROOT, 'index.html');
   let home = fs.readFileSync(indexPath, 'utf8');
   const re = /(<!-- home-posts:start -->)[\s\S]*?(<!-- home-posts:end -->)/;
