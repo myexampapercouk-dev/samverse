@@ -445,6 +445,8 @@ module.exports = [
   <li>You need custom features like B2B pricing, bookings or product configurators</li>
 </ul>
 
+<p>Already on Shopify and thinking of switching? See <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</p>
+
 <h2>Choose Shopify if...</h2>
 <ul>
   <li>You want a fully hosted, hands-off platform</li>
@@ -1380,6 +1382,8 @@ module.exports = [
   <li><strong>Submit the new sitemap</strong> in Google Search Console and monitor for errors.</li>
   <li><strong>Cancel the Wix plan</strong> only after the new site is live and checked (keep your domain!).</li>
 </ol>
+
+<p>Moving from Blogger instead? See <a href="/blog/migrate-blogger-to-wordpress/">Blogger to WordPress</a>.</p>
 
 <h2>Keeping your Google rankings</h2>
 <p>The most important step is the <strong>301 redirect map</strong>: every old Wix URL should point to the matching new page. Keep the content of pages that rank well, and keep titles and headings similar. Our guide to <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a> covers the full checklist.</p>
@@ -3782,6 +3786,8 @@ module.exports = [
   <li><strong>Online booking and payment:</strong> suits fixed-departure group tours and activities, with deposits or full payment through a gateway.</li>
 </ul>
 
+<p>Running cabs and transfers too? See <a href="/blog/website-for-taxi-car-rental/">websites for taxi and car rental services</a>.</p>
+
 <h2>Build trust</h2>
 <ul>
   <li>Registration, affiliations and years of experience (only what you can back up)</li>
@@ -3892,6 +3898,8 @@ module.exports = [
   <li>Pricing signals such as "projects start from" or package options. This filters out poor-fit enquiries.</li>
   <li>Availability and turnaround times</li>
 </ul>
+
+<p>Writers and video creators: see <a href="/blog/website-for-authors-content-creators/">websites for authors and content creators</a>.</p>
 
 <h2>Build trust</h2>
 <ul>
@@ -6523,6 +6531,8 @@ module.exports = [
 <h2>Educational content builds trust</h2>
 <p>Plain-English guides on topics like "how much term insurance do I need?" or "health insurance for parents" attract searchers and show expertise. Keep them general and accurate, and update them when rules change.</p>
 
+<p>Similar trust challenges apply to <a href="/blog/website-for-immigration-visa-consultants/">immigration and visa consultants</a>.</p>
+
 <h2>Privacy and security</h2>
 <p>Clients may share sensitive financial information. Use HTTPS, collect minimal data through forms, and publish a clear privacy policy; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy basics</a>.</p>
 
@@ -7068,6 +7078,8 @@ module.exports = [
 
 <h2>Performance and accessibility</h2>
 <p>Many visitors are older or anxious. Large readable text, simple navigation and fast pages matter; see <a href="/blog/website-accessibility-older-users/">designing for older visitors</a>.</p>
+
+<p>Supplying hospitals? See <a href="/blog/website-for-medical-equipment-suppliers/">websites for medical equipment suppliers</a>.</p>
 
 <h2>SEO</h2>
 <ul>
@@ -8419,6 +8431,310 @@ module.exports = [
 </ul>
 
 <p>Videos work especially well on <a href="/landing-page-design/">landing pages</a> and in <a href="/blog/collect-display-customer-testimonials/">testimonials</a>. If video is slowing your site, see <a href="/wordpress-speed-optimization/">speed optimization</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-taxi-car-rental',
+    seoTitle: 'Websites for Taxi & Car Rental Services',
+    title: 'Websites for Taxi and Car Rental Services',
+    description: 'What taxi, cab and car rental businesses need on their websites: fleet and fares, outstation and airport routes, instant booking via call or WhatsApp, driver details, trust signals and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>People booking a cab for an airport transfer, outstation trip or wedding want quick answers: which cars are available, what it costs, and how to book right now. A focused website competes well against apps for these planned trips.</p>
+
+<h2>Fleet and fares</h2>
+<ul>
+  <li>Car types: hatchback, sedan, SUV, tempo traveller, luxury</li>
+  <li>Seating and luggage capacity, photos of actual vehicles</li>
+  <li>Fare structure: per km, packages (8 hours/80 km), driver allowance, tolls and parking</li>
+  <li>Clear notes on what's included and extra</li>
+</ul>
+
+<h2>Popular routes and services</h2>
+<ul>
+  <li>Airport and railway station transfers</li>
+  <li>Outstation one-way and round trips</li>
+  <li>Local hourly rentals</li>
+  <li>Wedding, corporate and tour packages</li>
+</ul>
+<p>Route pages (for example "{city} to {city} taxi") work well when they contain genuinely useful details such as distance, typical time, fare estimate and stops. Only create them for routes you actually serve; see <a href="/blog/local-landing-pages-without-doorway-pages/">local pages without doorway pages</a>.</p>
+
+<h2>Instant booking</h2>
+<ul>
+  <li>Tap-to-call and WhatsApp buttons on every page</li>
+  <li>A short booking form: pickup, drop, date, time, car type</li>
+  <li>Confirmation messages with driver and vehicle details</li>
+</ul>
+
+<h2>Trust</h2>
+<ul>
+  <li>Verified, experienced drivers and vehicle maintenance practices</li>
+  <li>Registration and permits information where relevant</li>
+  <li>Genuine customer reviews</li>
+  <li>Clear cancellation and payment terms</li>
+</ul>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "taxi service in {city}", "airport cab {city}" and "{city} to {city} cab"</li>
+  <li>A complete Google Business Profile with photos and reviews</li>
+</ul>
+
+<p>For travel businesses, see <a href="/blog/website-for-travel-agencies/">websites for travel agencies</a>. For your site, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-immigration-visa-consultants',
+    seoTitle: 'Websites for Immigration & Visa Consultants',
+    title: 'Websites for Immigration and Visa Consultants: Building Trust Carefully',
+    description: 'What immigration and visa consultants need online: services by country and visa type, credentials, transparent process and fees, accurate information, compliance cautions and enquiry forms.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-lawyers-and-consultants', 'wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>People planning to study, work or settle abroad are making life-changing decisions, and they're wary of scams. An immigration or visa consultancy website must be accurate, transparent and trustworthy above all.</p>
+
+<h2>Services by country and visa type</h2>
+<p>Organise services by destination country and visa category (study, work, visitor, dependant, permanent residence). For each, explain who it suits, general eligibility, the process and how you help. Link to official government sources for current requirements.</p>
+
+<h2>Accuracy is non-negotiable</h2>
+<ul>
+  <li>Immigration rules change frequently. Date your content and review it regularly.</li>
+  <li>Never guarantee visas or outcomes</li>
+  <li>Distinguish clearly between general information and personalised advice</li>
+  <li>Check whether your role requires specific registrations or licences in the countries you advise on, and display them</li>
+</ul>
+
+<h2>Transparent process and fees</h2>
+<ul>
+  <li>Step-by-step process from consultation to application</li>
+  <li>Your service fees vs government fees, clearly separated</li>
+  <li>What documents clients typically need</li>
+  <li>Refund policy</li>
+</ul>
+
+<h2>Build trust</h2>
+<ul>
+  <li>Team credentials and experience</li>
+  <li>Office address, registration details and photos</li>
+  <li>Genuine client testimonials, with permission</li>
+  <li>A warning section on common visa scams, which shows you're on the client's side</li>
+</ul>
+
+<h2>Consultation booking</h2>
+<ul>
+  <li>Form with destination, visa type, education or work background and timeline</li>
+  <li>WhatsApp and video consultation options</li>
+  <li>Clear privacy handling for personal documents; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy basics</a></li>
+</ul>
+
+<h2>SEO</h2>
+<ul>
+  <li>Target "{country} student visa consultant in {city}" and similar specific searches</li>
+  <li>Helpful, accurate guides for each destination, reviewed regularly</li>
+</ul>
+
+<p>For professional services generally, see <a href="/website-for-lawyers-and-consultants/">websites for lawyers and consultants</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-medical-equipment-suppliers',
+    seoTitle: 'Websites for Medical Equipment Suppliers (B2B)',
+    title: 'Websites for Medical Equipment Suppliers and Distributors',
+    description: 'What medical equipment manufacturers, dealers and distributors need on B2B websites: product catalogues, specifications, certifications, brands represented, service support and hospital enquiries.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-website-for-doctors', 'wordpress-seo-services'],
+    body: `
+<p>Hospitals, clinics, labs and procurement teams buying medical equipment need detailed product information, confidence in quality and compliance, and assurance of after-sales service. Your website should make evaluating you easy.</p>
+
+<h2>Product catalogue</h2>
+<ul>
+  <li>Categories: diagnostic equipment, patient monitoring, surgical instruments, hospital furniture, lab equipment, consumables, home care</li>
+  <li>Specifications, models and variants</li>
+  <li>Brochures and datasheets to download</li>
+  <li>Brands you're authorised to distribute</li>
+</ul>
+<p>See <a href="/blog/industrial-website-product-catalogue/">building a product catalogue website</a>.</p>
+
+<h2>Quality and compliance</h2>
+<p>Display the certifications, registrations and approvals relevant to your products and markets that you genuinely hold, and keep them current. Avoid medical claims beyond what's appropriate for the product and its approvals.</p>
+
+<h2>Service and support</h2>
+<ul>
+  <li>Installation, training and preventive maintenance</li>
+  <li>Service coverage areas and response times</li>
+  <li>Spare parts availability and AMC/CMC options</li>
+</ul>
+<p>After-sales support is often the deciding factor for hospitals.</p>
+
+<h2>Enquiries</h2>
+<ul>
+  <li>Quote request forms by product with quantity and facility type</li>
+  <li>Demo request option</li>
+  <li>Dealer and distributor enquiry form</li>
+  <li>Fast response from a named contact</li>
+</ul>
+
+<h2>Trust</h2>
+<ul>
+  <li>Hospitals and institutions served (with permission)</li>
+  <li>Years in business and team expertise</li>
+  <li>Case studies of installations</li>
+</ul>
+
+<h2>SEO</h2>
+<ul>
+  <li>Target product and category searches: "{equipment} supplier in {city}", "{equipment} dealer India"</li>
+  <li>Unique product pages, not copied manufacturer text</li>
+</ul>
+
+<p>For B2B websites generally, see <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer websites</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-authors-content-creators',
+    seoTitle: 'Websites for Authors, YouTubers & Content Creators',
+    title: 'Websites for Authors, YouTubers and Content Creators',
+    description: 'Why authors, YouTubers, podcasters and creators need their own website, and what to include: about, work, media kit, newsletter, products, collaborations and SEO beyond social platforms.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-website-development', 'woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>Social platforms change algorithms, restrict reach and can suspend accounts. A website you own is the one place where your audience, brand partners and opportunities can always find you.</p>
+
+<h2>What to include</h2>
+<ul>
+  <li><strong>About:</strong> who you are, what you create and for whom</li>
+  <li><strong>Your work:</strong> books, videos, podcast episodes or projects, organised and searchable</li>
+  <li><strong>Newsletter sign-up:</strong> your most valuable asset, because you own the list. See <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets and newsletters</a>.</li>
+  <li><strong>Media kit:</strong> audience numbers you can support, demographics, past collaborations, rates or enquiry form</li>
+  <li><strong>Contact:</strong> separate routes for fans, press and brands</li>
+</ul>
+
+<h2>For authors</h2>
+<ul>
+  <li>A page per book with cover, description, excerpt, reviews and buy links</li>
+  <li>Events, readings and media appearances</li>
+  <li>A blog or updates on upcoming work</li>
+</ul>
+
+<h2>For YouTubers and podcasters</h2>
+<ul>
+  <li>Episode or video pages with summaries and show notes (great for SEO)</li>
+  <li>Guest application forms</li>
+  <li>Sponsor information</li>
+</ul>
+
+<h2>Sell directly</h2>
+<p>Courses, e-books, merchandise, consultations or memberships can be sold from your own site, without platform fees taking a big share; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+
+<h2>SEO beyond social</h2>
+<ul>
+  <li>Written summaries and transcripts make your videos and podcasts discoverable on Google</li>
+  <li>Consistent name and bio across platforms, linking back to your site</li>
+  <li>Person schema and a clear About page; see <a href="/blog/write-about-page-that-builds-trust/">writing an About page</a></li>
+</ul>
+
+<p>A personal brand site works for professionals too; see <a href="/blog/personal-brand-website-professionals/">personal brand websites</a>.</p>
+`,
+  },
+  {
+    slug: 'migrate-blogger-to-wordpress',
+    seoTitle: 'How to Move From Blogger to WordPress',
+    title: 'How to Move From Blogger to WordPress Without Losing Traffic',
+    description: 'A step-by-step guide to migrating a Blogger (Blogspot) blog to WordPress: exporting and importing posts, images, custom domains, redirects to keep rankings, and post-migration checks.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-migration', 'wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>Blogger is a simple, free way to start a blog, but many bloggers eventually want more control over design, SEO, monetisation and features. Moving to WordPress gives you that, as long as the migration protects your existing traffic.</p>
+
+<h2>Why bloggers move to WordPress</h2>
+<ul>
+  <li>Full control over design and functionality</li>
+  <li>Better SEO control: URLs, schema, speed and site structure</li>
+  <li>More monetisation options: ads, affiliate links, products, memberships</li>
+  <li>Thousands of plugins and themes</li>
+</ul>
+
+<h2>Step-by-step migration</h2>
+<ol>
+  <li><strong>Back up Blogger:</strong> export your blog content from Blogger settings.</li>
+  <li><strong>Set up WordPress</strong> on good hosting, ideally on a staging site first.</li>
+  <li><strong>Import posts and comments</strong> using a Blogger importer tool.</li>
+  <li><strong>Move images:</strong> import images hosted on Blogger into your WordPress media library so they don't depend on Blogger.</li>
+  <li><strong>Recreate pages and menus</strong>, and choose a lightweight theme.</li>
+  <li><strong>Match URLs where possible</strong>, or plan redirects from old Blogger URLs to new WordPress URLs.</li>
+  <li><strong>Custom domain:</strong> if your blog used a custom domain, point it to your new hosting. If it was on blogspot.com, set up redirection from the old blog to the new site.</li>
+  <li><strong>Submit your new sitemap</strong> in Google Search Console and monitor for errors.</li>
+</ol>
+
+<h2>Protect your rankings</h2>
+<p>Redirects are the key. Every old post URL should lead to its new equivalent. Keep titles and content of well-performing posts, and check Search Console for 404s after launch. See <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
+
+<h2>After the move</h2>
+<ul>
+  <li>Check posts for formatting issues and broken embeds</li>
+  <li>Set up SEO basics, caching and backups</li>
+  <li>Update links on your social profiles</li>
+</ul>
+
+<p>Coming from Wix instead? See <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a>. For a hands-off move, see <a href="/wordpress-migration/">WordPress migration</a>.</p>
+`,
+  },
+  {
+    slug: 'migrate-shopify-to-woocommerce',
+    seoTitle: 'How to Move From Shopify to WooCommerce',
+    title: 'How to Move From Shopify to WooCommerce (Step by Step)',
+    description: 'How to migrate an online store from Shopify to WooCommerce: why stores switch, what data moves (products, customers, orders), payment and shipping setup, redirects and launch checks.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-migration', 'wordpress-seo-services'],
+    body: `
+<p>Some growing stores move from Shopify to WooCommerce to reduce monthly app costs, gain more control, or build features Shopify makes difficult. The move is very doable with careful planning, especially around data and SEO.</p>
+
+<h2>Why stores switch</h2>
+<ul>
+  <li>Monthly subscription and app fees adding up</li>
+  <li>Wanting full ownership and hosting choice</li>
+  <li>Custom features, B2B pricing or complex product options</li>
+  <li>Better content and blogging on WordPress</li>
+</ul>
+<p>Compare both first in <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
+
+<h2>What can be migrated</h2>
+<ul>
+  <li><strong>Products:</strong> titles, descriptions, images, variants, prices, SKUs, stock</li>
+  <li><strong>Customers:</strong> names, emails, addresses. Passwords usually can't be moved, so customers may need to reset them.</li>
+  <li><strong>Orders:</strong> historical orders for records</li>
+  <li><strong>Pages and blog posts</strong></li>
+</ul>
+<p>Migration tools or CSV exports and imports can move most data; always review results.</p>
+
+<h2>Step-by-step</h2>
+<ol>
+  <li>Set up WooCommerce on good hosting (staging first)</li>
+  <li>Choose a fast, WooCommerce-ready theme and design the store</li>
+  <li>Migrate products, customers and orders, then check samples carefully</li>
+  <li>Set up payment gateways, shipping zones and taxes; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping for India</a></li>
+  <li>Replace Shopify apps with WooCommerce plugins (reviews, filters, WhatsApp)</li>
+  <li>Map old Shopify URLs (like <code>/products/...</code> and <code>/collections/...</code>) to new WooCommerce URLs, and set up 301 redirects</li>
+  <li>Test the full purchase flow, emails and mobile checkout</li>
+  <li>Switch the domain, submit the sitemap and monitor</li>
+</ol>
+
+<h2>Plan the switchover</h2>
+<ul>
+  <li>Pick a quiet sales period</li>
+  <li>Pause changes on Shopify during the final data sync</li>
+  <li>Tell customers about password resets if needed</li>
+  <li>Keep the Shopify store accessible until you've verified everything</li>
+</ul>
+
+<p>Use the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> before going live, or see <a href="/woocommerce-developer/">WooCommerce development</a> and <a href="/wordpress-migration/">migration</a>.</p>
 `,
   },
 ];

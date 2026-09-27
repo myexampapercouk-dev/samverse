@@ -158,6 +158,13 @@ const LINKS = [
   ['website-for-florists-gift-shops', '<h2>Trust</h2>', '<p>Plan peaks in advance with this guide to <a href="/blog/seasonal-festival-campaigns-website/">seasonal and festival campaigns</a>.</p>\n\n'],
   ['lead-magnets-newsletter-small-business', '<h2>Newsletters that people actually read</h2>', '<p>Plan what to send with a simple <a href="/blog/website-content-calendar/">content calendar</a>.</p>\n\n'],
   ['collect-display-customer-testimonials', '<h2>Beyond written quotes</h2>', '<p>Using video well matters; see <a href="/blog/video-on-business-website/">when video helps and when it hurts</a>.</p>\n\n'],
+  // Round 17
+  ['website-for-travel-agencies', '<h2>Build trust</h2>', '<p>Running cabs and transfers too? See <a href="/blog/website-for-taxi-car-rental/">websites for taxi and car rental services</a>.</p>\n\n'],
+  ['website-for-insurance-financial-advisors', '<h2>Privacy and security</h2>', '<p>Similar trust challenges apply to <a href="/blog/website-for-immigration-visa-consultants/">immigration and visa consultants</a>.</p>\n\n'],
+  ['website-for-hospitals', '<h2>SEO</h2>', '<p>Supplying hospitals? See <a href="/blog/website-for-medical-equipment-suppliers/">websites for medical equipment suppliers</a>.</p>\n\n'],
+  ['portfolio-website-freelancers-creatives', '<h2>Build trust</h2>', '<p>Writers and video creators: see <a href="/blog/website-for-authors-content-creators/">websites for authors and content creators</a>.</p>\n\n'],
+  ['migrate-wix-to-wordpress', '<h2>Keeping your Google rankings</h2>', '<p>Moving from Blogger instead? See <a href="/blog/migrate-blogger-to-wordpress/">Blogger to WordPress</a>.</p>\n\n'],
+  ['woocommerce-vs-shopify-india', '<h2>Choose Shopify if...</h2>', '<p>Already on Shopify and thinking of switching? See <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
