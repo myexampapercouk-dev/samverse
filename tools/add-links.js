@@ -144,6 +144,13 @@ const LINKS = [
   ['school-coaching-website-what-parents-look-for', '<h2>Keep it updated</h2>', '<p>Other learning businesses: <a href="/blog/website-for-music-dance-academies/">music and dance academies</a>, <a href="/blog/website-for-driving-schools/">driving schools</a> and <a href="/blog/website-for-home-tutors-online-teachers/">home tutors</a>.</p>\n\n'],
   ['website-for-fashion-boutiques', '<h2>Organise collections well</h2>', '<p>Handmade and heritage brands have their own story to tell; see <a href="/blog/website-for-handicraft-artisan-brands/">websites for handicraft and artisan brands</a>.</p>\n\n'],
   ['website-for-export-businesses', '<h2>Language and localisation</h2>', '<p>Sector examples: <a href="/blog/website-for-chemical-pharma-manufacturers/">chemical and pharma manufacturers</a> and <a href="/blog/website-for-agriculture-businesses/">agriculture businesses</a>.</p>\n\n'],
+  // Round 15
+  ['website-for-export-businesses', '<h2>Speed for international visitors</h2>', '<p>Textile exporters have specific needs; see <a href="/blog/website-for-textile-manufacturers/">websites for textile manufacturers</a>.</p>\n\n'],
+  ['website-for-construction-companies', '<h2>SEO for contractors</h2>', '<p>Suppliers to the trade: see <a href="/blog/website-for-hardware-building-materials/">websites for hardware and building material suppliers</a>.</p>\n\n'],
+  ['setup-google-analytics-search-console', '<h2>Step 3: Track the actions that matter</h2>', '<p>Once it\'s running, here\'s <a href="/blog/google-search-console-reports-explained/">what each Search Console report means</a>.</p>\n\n'],
+  ['how-to-write-website-content', '<h2>Homepage</h2>', '<p>Tempted to let AI write it all? Read <a href="/blog/ai-tools-website-content-responsibly/">using AI tools for website content responsibly</a> first.</p>\n\n'],
+  ['website-maintenance-cost-india', '<h2>Why maintenance is worth it</h2>', '<p>Need more than upkeep? See <a href="/blog/website-maintenance-vs-management/">maintenance vs management</a>.</p>\n\n'],
+  ['multilingual-wordpress-website-hindi-english', '<h2>How multilingual WordPress sites work</h2>', '<p>Running many separate regional sites instead? See <a href="/blog/wordpress-multisite-when-needed/">when WordPress Multisite makes sense</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

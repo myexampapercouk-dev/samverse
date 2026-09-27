@@ -1299,6 +1299,8 @@ module.exports = [
   <li>Open <strong>Reports → Realtime</strong> and visit your site to confirm it's working.</li>
 </ol>
 
+<p>Once it's running, here's <a href="/blog/google-search-console-reports-explained/">what each Search Console report means</a>.</p>
+
 <h2>Step 3: Track the actions that matter</h2>
 <p>Page views alone don't tell you if the site brings business. Track the actions that lead to enquiries:</p>
 <ul>
@@ -1464,6 +1466,8 @@ module.exports = [
 
 <h2>Before you write: know your reader</h2>
 <p>Write down who your ideal customer is, what problem they have, and what they worry about before hiring someone like you (price, quality, reliability, time). Every page should answer those worries. Write the way you'd explain things to a customer in person: simple words, short sentences.</p>
+
+<p>Tempted to let AI write it all? Read <a href="/blog/ai-tools-website-content-responsibly/">using AI tools for website content responsibly</a> first.</p>
 
 <h2>Homepage</h2>
 <p>Your homepage has one job: make visitors instantly understand what you do and guide them to the next step.</p>
@@ -2367,6 +2371,8 @@ module.exports = [
   <li>Cleanup of a site that was already hacked before the plan started</li>
 </ul>
 
+<p>Need more than upkeep? See <a href="/blog/website-maintenance-vs-management/">maintenance vs management</a>.</p>
+
 <h2>Why maintenance is worth it</h2>
 <ul>
   <li><strong>Prevention is cheaper than repair.</strong> Cleaning a hacked site or rebuilding after data loss costs far more than regular upkeep.</li>
@@ -3025,6 +3031,8 @@ module.exports = [
   <li>Competitors in your area only offer English</li>
 </ul>
 <p>If your customers mostly search in English, a well-written English site may be enough. Add languages when there's real demand.</p>
+
+<p>Running many separate regional sites instead? See <a href="/blog/wordpress-multisite-when-needed/">when WordPress Multisite makes sense</a>.</p>
 
 <h2>How multilingual WordPress sites work</h2>
 <p>A translation plugin (such as WPML, Polylang, TranslatePress or Weglot) lets you create a version of each page in every language, with a language switcher. Each language gets its own URLs, for example <code>/hi/</code> for Hindi, so search engines can index them separately.</p>
@@ -4449,6 +4457,8 @@ module.exports = [
 <h2>Language and localisation</h2>
 <p>Clear, professional English is essential. For key markets, consider translated pages; see <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>. Use international units where relevant, and avoid local jargon.</p>
 
+<p>Textile exporters have specific needs; see <a href="/blog/website-for-textile-manufacturers/">websites for textile manufacturers</a>.</p>
+
 <h2>Speed for international visitors</h2>
 <p>Hosting close to your main buyer regions, or a CDN, keeps the site fast abroad. Slow sites look unprofessional to overseas buyers.</p>
 
@@ -5144,6 +5154,8 @@ module.exports = [
 
 <h2>Show projects properly</h2>
 <p>Construction is visual. Use progress photos, before and after images, drone shots and short videos, organised by project type. Write a short case study for key projects; see <a href="/blog/write-case-studies-business-website/">how to write case studies</a>.</p>
+
+<p>Suppliers to the trade: see <a href="/blog/website-for-hardware-building-materials/">websites for hardware and building material suppliers</a>.</p>
 
 <h2>SEO for contractors</h2>
 <ul>
@@ -7784,6 +7796,314 @@ module.exports = [
 </ul>
 
 <p>For the wider B2B approach, see <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer websites</a> and <a href="/blog/website-for-export-businesses/">websites for exporters</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-textile-manufacturers',
+    seoTitle: 'Websites for Textile Manufacturers & Exporters',
+    title: 'Websites for Textile Manufacturers and Exporters',
+    description: 'What textile mills, garment manufacturers and fabric exporters need online: fabric and product catalogues, specifications, capacity, compliance certifications, sampling, MOQs and export enquiries.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
+    body: `
+<p>Brands, buying houses and importers sourcing fabrics or garments evaluate suppliers on product range, quality, capacity and compliance. A professional website helps you get shortlisted, especially by overseas buyers who can't visit first.</p>
+
+<h2>Catalogue that buyers can use</h2>
+<ul>
+  <li>Fabrics by type (cotton, linen, blends, knits, denim) or products (shirts, home textiles, uniforms)</li>
+  <li>Specifications: GSM, count, weave, width, composition, finishes, colour options</li>
+  <li>Real photos and close-ups of texture and finish</li>
+  <li>MOQs, lead times and sampling process</li>
+</ul>
+
+<h2>Capability</h2>
+<ul>
+  <li>Spinning, weaving, knitting, dyeing, printing and stitching capacity</li>
+  <li>Machinery and in-house processes</li>
+  <li>Quality control and testing</li>
+  <li>Photos and videos of the facility</li>
+</ul>
+
+<h2>Compliance and sustainability</h2>
+<p>International buyers often require specific certifications (for example organic, recycled content or social compliance standards). Display the ones you genuinely hold, with certificate numbers, and explain sustainable practices you actually follow.</p>
+
+<h2>Enquiries and sampling</h2>
+<ul>
+  <li>Quote form: product, specs, quantity, destination and timeline</li>
+  <li>Sample request option</li>
+  <li>Tech pack or artwork upload</li>
+  <li>WhatsApp and email with fast replies across time zones</li>
+</ul>
+
+<h2>Wholesale and D2C</h2>
+<p>Some manufacturers also sell directly. A separate retail store section can work alongside B2B enquiries; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+
+<h2>SEO</h2>
+<ul>
+  <li>Target specific searches: "organic cotton fabric manufacturer India", "{product} exporter from {city}"</li>
+  <li>Unique pages for key fabric types with specifications</li>
+  <li>Guides on fabric selection and specifications for buyers</li>
+</ul>
+
+<p>See also <a href="/blog/website-for-export-businesses/">websites for exporters</a> and <a href="/website-for-manufacturers/">manufacturer websites</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-hardware-building-materials',
+    seoTitle: 'Websites for Hardware & Building Material Suppliers',
+    title: 'Websites for Hardware and Building Material Suppliers',
+    description: 'What hardware stores, tiles and sanitaryware dealers and building material suppliers need online: product ranges, brands, showroom details, bulk and project quotes, delivery areas and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
+    body: `
+<p>Contractors, architects, builders and homeowners buying tiles, sanitaryware, paints, plywood, steel or hardware want to know whether you stock what they need, which brands you carry, and whether you can supply their quantity on time.</p>
+
+<h2>Product ranges and brands</h2>
+<ul>
+  <li>Categories: tiles, sanitaryware, faucets, plywood and laminates, paints, electricals, steel and cement, hardware and fittings</li>
+  <li>Brands you're authorised to sell</li>
+  <li>Photos of popular products and showroom displays</li>
+  <li>Downloadable catalogues where brands provide them</li>
+</ul>
+
+<h2>For contractors and projects</h2>
+<ul>
+  <li>Bulk and project quote form (materials, quantities, site location, timeline)</li>
+  <li>Credit and trade account information, if offered</li>
+  <li>Past projects supplied (with permission)</li>
+  <li>Delivery areas and vehicle capacity</li>
+</ul>
+
+<h2>For homeowners</h2>
+<ul>
+  <li>Showroom location, timings and parking</li>
+  <li>Design and selection help, such as tile visualisation or consultations</li>
+  <li>WhatsApp for sending photos and asking about availability</li>
+</ul>
+
+<h2>Online catalogue or store?</h2>
+<p>For heavy, variable or project-based items, a catalogue with enquiries usually works best. Small hardware and accessories can sometimes be sold online; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+
+<h2>Trust</h2>
+<ul>
+  <li>Years in business and authorised dealer certificates</li>
+  <li>Reviews from contractors and homeowners</li>
+  <li>Clear delivery and returns terms</li>
+</ul>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "tiles showroom in {area}", "plywood dealer {city}" and "{brand} dealer near me"</li>
+  <li>A complete Google Business Profile with showroom photos</li>
+  <li>Buying guides: choosing tiles, comparing plywood grades</li>
+</ul>
+
+<p>For construction businesses, see <a href="/blog/website-for-construction-companies/">websites for construction companies</a>.</p>
+`,
+  },
+  {
+    slug: 'google-search-console-reports-explained',
+    seoTitle: 'Google Search Console Reports Explained Simply',
+    title: 'Google Search Console Reports Explained for Business Owners',
+    description: 'A plain-English guide to Google Search Console: Performance, Pages (indexing), sitemaps, URL inspection, Core Web Vitals, HTTPS, manual actions and links, plus what to check monthly.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign', 'wordpress-speed-optimization'],
+    body: `
+<p>Google Search Console is free and shows how Google sees your website. It looks technical at first, but a few reports tell you almost everything a business owner needs to know. If you haven't set it up yet, see <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a>.</p>
+
+<h2>Performance</h2>
+<p>The most useful report. It shows:</p>
+<ul>
+  <li><strong>Queries:</strong> what people searched when your site appeared</li>
+  <li><strong>Pages:</strong> which pages got impressions and clicks</li>
+  <li><strong>Clicks and impressions:</strong> how often you were shown and clicked</li>
+  <li><strong>Average position:</strong> roughly where you ranked</li>
+  <li><strong>CTR:</strong> clicks divided by impressions</li>
+</ul>
+<p><strong>Use it to:</strong> find queries with many impressions but few clicks (improve titles and descriptions) and pages ranking around positions 8–20 (improve content and internal links).</p>
+
+<h2>Pages (indexing)</h2>
+<p>Shows which pages are indexed and why others aren't: "crawled, currently not indexed", "duplicate without canonical", "excluded by noindex" and more. Not every excluded page is a problem, but important pages should be indexed.</p>
+
+<h2>Sitemaps</h2>
+<p>Submit your XML sitemap and check it was read successfully.</p>
+
+<h2>URL Inspection</h2>
+<p>Check a specific page: is it indexed, when was it last crawled, is it mobile-friendly? You can also request indexing for new or updated important pages.</p>
+
+<h2>Core Web Vitals</h2>
+<p>Real-user speed and stability data, grouped into good, needs improvement and poor URLs. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>HTTPS</h2>
+<p>Confirms pages are served securely. Fix any pages listed as not HTTPS.</p>
+
+<h2>Security issues and manual actions</h2>
+<p>If these ever show problems, act immediately: they mean Google detected hacking or a guideline violation. See <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>.</p>
+
+<h2>Links</h2>
+<p>Shows which sites link to you and your most-linked pages, plus internal linking. Useful for spotting important pages with few internal links.</p>
+
+<h2>Monthly routine (15 minutes)</h2>
+<ol>
+  <li>Performance: compare clicks and impressions with last month</li>
+  <li>Find two pages in positions 8–20 to improve</li>
+  <li>Pages: check that important pages are indexed</li>
+  <li>Core Web Vitals and HTTPS: any new issues?</li>
+  <li>Security and manual actions: should be empty</li>
+</ol>
+
+<p>If traffic drops suddenly, work through the <a href="/blog/website-traffic-dropped/">traffic drop checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'ai-tools-website-content-responsibly',
+    seoTitle: 'Using AI Tools to Write Website Content Responsibly',
+    title: 'Using AI Tools to Draft Website Content Responsibly',
+    description: 'How small businesses can use AI writing tools for website content without hurting trust or SEO: good uses, risks, fact-checking, adding real experience, editing and disclosure.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-seo-services', 'wordpress-website-development', 'website-redesign'],
+    body: `
+<p>AI writing tools can help business owners get past a blank page, but publishing unedited AI text rarely helps. Search engines reward content that's genuinely helpful and shows real experience, and customers notice generic writing. Here's how to use AI tools well.</p>
+
+<h2>Good uses</h2>
+<ul>
+  <li>Brainstorming topics and questions customers ask</li>
+  <li>Creating outlines and first drafts to edit</li>
+  <li>Rewriting your own rough notes into clearer sentences</li>
+  <li>Suggesting headlines, meta descriptions and FAQ ideas</li>
+  <li>Summarising long documents you already own</li>
+</ul>
+
+<h2>The risks</h2>
+<ul>
+  <li><strong>Factual errors:</strong> AI tools can state wrong facts, prices, rules or statistics confidently</li>
+  <li><strong>Generic content:</strong> text that could appear on any competitor's site</li>
+  <li><strong>Outdated or wrong regulations</strong>, which is especially risky for health, legal, finance and tax topics</li>
+  <li><strong>Mass-produced pages:</strong> publishing large volumes of thin content mainly to rank can harm your site</li>
+</ul>
+
+<h2>A responsible workflow</h2>
+<ol>
+  <li><strong>Start with your knowledge:</strong> customer questions, your process, real examples</li>
+  <li><strong>Use AI for a draft or outline</strong></li>
+  <li><strong>Add what only you know:</strong> case studies, photos, your opinions, local details, lessons learned</li>
+  <li><strong>Fact-check everything:</strong> prices, laws, statistics, technical claims</li>
+  <li><strong>Edit for your voice</strong> and remove filler and clichés</li>
+  <li><strong>Have an expert review</strong> regulated topics</li>
+</ol>
+
+<h2>What makes content stand out</h2>
+<ul>
+  <li>First-hand experience and specifics</li>
+  <li>Original photos, examples and data you can back up</li>
+  <li>Clear answers to real questions</li>
+  <li>An identifiable author with real credentials</li>
+</ul>
+<p>See <a href="/blog/how-to-write-website-content/">how to write website content</a> and <a href="/blog/website-copywriting-mistakes/">copywriting mistakes to avoid</a>.</p>
+
+<h2>Protect customer data</h2>
+<p>Don't paste customer details, contracts or confidential information into AI tools unless you understand how the tool handles data.</p>
+
+<h2>The bottom line</h2>
+<p>Use AI as an assistant, not an author. The value your website adds comes from your expertise and experience, and that's what customers and search engines respond to.</p>
+`,
+  },
+  {
+    slug: 'website-maintenance-vs-management',
+    seoTitle: 'Website Maintenance vs Website Management',
+    title: 'Website Maintenance vs Website Management: What\'s the Difference?',
+    description: 'The difference between website maintenance (keeping the site safe and working) and website management (updating content, SEO and improvements), and which your business needs.',
+    date: '2026-09-27',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>When businesses look for ongoing website help, they often see "maintenance" and "management" used interchangeably. They're different, and knowing which you need helps you choose the right plan and avoid paying for the wrong thing.</p>
+
+<h2>Website maintenance: keeping it safe and working</h2>
+<ul>
+  <li>WordPress, theme and plugin updates</li>
+  <li>Backups and restores</li>
+  <li>Security scans and hardening</li>
+  <li>Uptime and performance monitoring</li>
+  <li>Fixing things that break</li>
+  <li>Small content edits (usually limited)</li>
+</ul>
+<p>It's like servicing a car: essential, preventive, and mostly invisible when done well. See the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>.</p>
+
+<h2>Website management: making it work harder</h2>
+<ul>
+  <li>Adding and updating pages, products and content regularly</li>
+  <li>Publishing blog posts and news</li>
+  <li>SEO improvements based on Search Console data</li>
+  <li>Conversion improvements such as calls to action, forms and landing pages</li>
+  <li>Campaign pages for offers and festivals</li>
+  <li>Monthly reporting and recommendations</li>
+</ul>
+<p>It's like having someone drive the car somewhere useful.</p>
+
+<h2>Which do you need?</h2>
+<ul>
+  <li><strong>Maintenance only:</strong> your site rarely changes and you just need it safe, fast and online</li>
+  <li><strong>Maintenance plus management:</strong> your website is a key lead or sales channel and you want it to grow</li>
+  <li><strong>DIY management with professional maintenance:</strong> your team updates content, and a developer handles the technical side</li>
+</ul>
+
+<h2>Questions to ask a provider</h2>
+<ol>
+  <li>What exactly is included each month?</li>
+  <li>How many content changes or hours are included?</li>
+  <li>What's the response time for urgent issues?</li>
+  <li>Do you report what was done?</li>
+  <li>Can I cancel monthly?</li>
+</ol>
+
+<p>For costs, see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>. For plans, see <a href="/wordpress-maintenance/">WordPress maintenance</a> and <a href="/wordpress-seo-services/">WordPress SEO</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-multisite-when-needed',
+    seoTitle: 'WordPress Multisite: When Does a Business Need It?',
+    title: 'WordPress Multisite: When Does a Business Need It?',
+    description: 'What WordPress Multisite is, when it helps (franchises, multiple brands or regions) and when separate sites or a single site are better, plus hosting, plugin and SEO considerations.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-migration', 'wordpress-maintenance'],
+    body: `
+<p>WordPress Multisite lets you run many websites from one WordPress installation. It sounds convenient, but it adds complexity. Here's when it genuinely helps and when simpler setups are better.</p>
+
+<h2>How Multisite works</h2>
+<p>One WordPress installation hosts a network of sites, each with its own content and settings, sharing the same core files, themes and plugins. Sites can live on subdomains (city.example.com), subfolders (example.com/city/) or separate domains.</p>
+
+<h2>When it can make sense</h2>
+<ul>
+  <li><strong>Franchises or branches</strong> that need their own mini-sites with shared branding</li>
+  <li><strong>Organisations with many departments</strong>, such as schools, universities and hospitals</li>
+  <li><strong>Networks of similar sites</strong> managed by one team with shared themes and plugins</li>
+</ul>
+
+<h2>When it's usually not the right choice</h2>
+<ul>
+  <li>Just a few unrelated websites: separate installations are simpler</li>
+  <li>Multiple languages: a multilingual plugin on one site is usually better. See <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress</a>.</li>
+  <li>Several locations for one business: location pages on a single site are often enough</li>
+  <li>Sites needing very different plugins or hosting</li>
+</ul>
+
+<h2>Things to consider</h2>
+<ul>
+  <li><strong>Plugins:</strong> not all plugins support Multisite, and a plugin problem can affect every site</li>
+  <li><strong>Hosting:</strong> one server handles all sites, so resources and backups need planning</li>
+  <li><strong>Moving a site out later</strong> is possible but more work</li>
+  <li><strong>User management:</strong> network admins vs site admins</li>
+  <li><strong>SEO:</strong> each site needs its own titles, sitemaps and structure; avoid duplicating content across sites</li>
+</ul>
+
+<h2>The practical answer</h2>
+<p>Most small and medium businesses are best served by a single, well-structured WordPress site. Multisite is a tool for organisations managing many similar sites with a central team. If you're unsure, describe your setup and a developer can recommend the simplest option that works; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
 ];
