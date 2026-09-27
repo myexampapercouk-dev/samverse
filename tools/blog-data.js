@@ -508,6 +508,8 @@ module.exports = [
   <li><strong>Consider a design refresh</strong> if the site looks dated or isn't converting well.</li>
 </ul>
 
+<p>For a safe step-by-step process, see <a href="/blog/update-wordpress-safely/">how to update WordPress without breaking your site</a>.</p>
+
 <h2>Golden rules</h2>
 <ol>
   <li>Always back up before updating.</li>
@@ -551,6 +553,7 @@ module.exports = [
 <h2>Build trust</h2>
 <h3>7. Show real proof</h3>
 <p>Client logos, testimonials, Google reviews, project photos and case studies reassure visitors that you're genuine and good at what you do.</p>
+<p>See <a href="/blog/collect-display-customer-testimonials/">how to collect and display testimonials</a> that actually convince people.</p>
 <h3>8. Use real photos</h3>
 <p>Photos of your team, office, clinic or factory build more trust than stock images.</p>
 <h3>9. Answer common questions</h3>
@@ -971,6 +974,8 @@ module.exports = [
   <li><strong>Test speed</strong>, because the new site should be at least as fast as the old one.</li>
 </ul>
 
+<p>New to staging? See <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+
 <h2>At launch</h2>
 <ol>
   <li>Set up <strong>301 redirects</strong> for every changed URL from your map.</li>
@@ -1129,6 +1134,8 @@ module.exports = [
   <li><strong>Never use "nulled" (pirated) themes or plugins.</strong> They frequently contain hidden malware.</li>
   <li><strong>Run a current PHP version</strong> supported by your host.</li>
 </ol>
+
+<p>Worried updates will break things? Follow <a href="/blog/update-wordpress-safely/">this safe update process</a>.</p>
 
 <h2>Logins and users</h2>
 <ol start="7">
@@ -1462,6 +1469,8 @@ module.exports = [
   <li>A call to action at the end</li>
 </ul>
 
+<p>More detail: <a href="/blog/write-about-page-that-builds-trust/">how to write an About page that builds trust</a>.</p>
+
 <h2>Service pages</h2>
 <p>Create one page for each main service. These pages do the heavy lifting for both enquiries and Google rankings.</p>
 <ul>
@@ -1473,6 +1482,8 @@ module.exports = [
   <li><strong>FAQs</strong> about price, timeline and process</li>
   <li><strong>Call to action</strong></li>
 </ul>
+
+<p>For a full walkthrough, see <a href="/blog/write-service-pages-that-convert/">how to write service pages that rank and convert</a>.</p>
 
 <h2>Writing tips that work</h2>
 <ul>
@@ -3795,6 +3806,8 @@ module.exports = [
 <h2>Show your thinking with case studies</h2>
 <p>Clients hire people who solve problems. For key projects, explain the brief, your process, the result, and the client's feedback. This site's <a href="/work/">case studies</a> follow that pattern: client, goals, what was built and the tools used.</p>
 
+<p>See <a href="/blog/write-case-studies-business-website/">how to write case studies</a> for a simple structure.</p>
+
 <h2>Make it clear what you offer</h2>
 <ul>
   <li>A services section: what you do, who it's for, and how a project works</li>
@@ -3938,6 +3951,8 @@ module.exports = [
   <li>Restore files and database, then test key pages, forms and checkout</li>
   <li>For hacked sites, clean and secure the site too. Restoring alone may bring the vulnerability back. See <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>.</li>
 </ol>
+
+<p>A <a href="/blog/staging-sites-explained/">staging site</a> is the ideal place to test restores.</p>
 
 <h2>Test your backups</h2>
 <p>A backup you've never restored is a backup you can't fully trust. Every few months, restore a copy to a staging site and check it works.</p>
@@ -4119,6 +4134,8 @@ module.exports = [
 
 <h2>Make reviews a habit</h2>
 <p>A steady flow of genuine reviews beats a sudden burst. Build asking into your process: after every project, appointment or delivery.</p>
+
+<p>For on-site quotes, see <a href="/blog/collect-display-customer-testimonials/">collecting and displaying testimonials</a>.</p>
 
 <h2>Use reviews on your website too</h2>
 <p>Show a few genuine reviews on your website (with permission), near calls to action. For the full picture of local visibility, see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> and the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a>.</p>
@@ -4574,6 +4591,333 @@ module.exports = [
 <p>Most patients book from their phones. Fast pages, tap-to-call, WhatsApp and a short booking form are essential.</p>
 
 <p>Much of the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> also applies. See what's included in a <a href="/wordpress-website-for-doctors/">healthcare website</a>.</p>
+`,
+  },
+  {
+    slug: 'write-about-page-that-builds-trust',
+    seoTitle: 'How to Write an About Page That Builds Trust',
+    title: 'How to Write an About Page That Builds Trust (With a Simple Structure)',
+    description: 'A simple structure for writing an About page that builds trust and brings enquiries: your story, who you help, credentials, team, values, proof and a clear call to action.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'website-redesign', 'website-for-lawyers-and-consultants'],
+    body: `
+<p>The About page is often one of the most visited pages on a business website, and one of the most neglected. Visitors go there to decide whether they can trust you. A good About page answers that question quickly.</p>
+
+<h2>What visitors want from an About page</h2>
+<ul>
+  <li>Who is behind this business?</li>
+  <li>Do they understand people like me?</li>
+  <li>Are they experienced and qualified?</li>
+  <li>Can I trust them with my money, project or health?</li>
+</ul>
+
+<h2>A simple structure</h2>
+<h3>1. Start with who you help</h3>
+<p>Open with the customer, not your founding date: "We help manufacturers win export orders with websites buyers trust." Then introduce yourself.</p>
+<h3>2. Your story, briefly</h3>
+<p>Why you started, what you've learned, and what drives you. Keep it short and genuine. Two or three paragraphs are enough.</p>
+<h3>3. Credentials and experience</h3>
+<p>Qualifications, certifications, years in business, notable clients or projects, only what you can back up.</p>
+<h3>4. The team</h3>
+<p>Real photos and short bios. People trust faces far more than logos.</p>
+<h3>5. How you work</h3>
+<p>Your process, values and what clients can expect: response times, communication, guarantees.</p>
+<h3>6. Proof</h3>
+<p>A few testimonials, case studies or client logos. See <a href="/blog/collect-display-customer-testimonials/">how to collect and display testimonials</a>.</p>
+<h3>7. A clear next step</h3>
+<p>End with a call to action: book a consultation, get a quote or chat on WhatsApp.</p>
+
+<h2>Writing tips</h2>
+<ul>
+  <li>Write the way you speak: warm, clear and confident</li>
+  <li>Focus on what it means for the customer, not just facts about you</li>
+  <li>Avoid clichés like "passionate", "one-stop solution" and "customer-centric" unless you back them up</li>
+  <li>Use real photos, not stock images</li>
+  <li>Keep it scannable with short paragraphs and headings</li>
+</ul>
+
+<h2>SEO benefits</h2>
+<p>A detailed About page helps search engines understand who is behind the site, supporting trust signals. Add Person or Organization schema, link to your professional profiles, and keep details consistent with your Google Business Profile.</p>
+
+<h2>An example</h2>
+<p>This site's <a href="/about/">About page</a> follows this structure: how Samverse started, what it focuses on, who it works with, how projects run, and the tools used. For the rest of your site, see <a href="/blog/how-to-write-website-content/">how to write website content</a>.</p>
+`,
+  },
+  {
+    slug: 'write-service-pages-that-convert',
+    seoTitle: 'How to Write Service Pages That Convert',
+    title: 'How to Write Service Pages That Rank and Convert',
+    description: 'A step-by-step structure for service pages that rank on Google and turn visitors into enquiries: search intent, headline, problem, solution, process, proof, FAQs and calls to action.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>Service pages are the money pages of a business website. They're the pages that rank for searches like "commercial interior design in Pune" and the pages that persuade visitors to get in touch. Here's a structure that works for both.</p>
+
+<h2>One service, one page</h2>
+<p>Give every main service its own page. A single "Services" page listing everything can't rank for each service or speak to each customer's specific needs.</p>
+
+<h2>The structure</h2>
+<h3>1. A headline that names the service</h3>
+<p>Say exactly what it is, and where if you're local: "WordPress Maintenance Plans" or "Solar Rooftop Installation in Jaipur". Add a short supporting line with the main benefit.</p>
+<h3>2. A clear call to action near the top</h3>
+<p>"Get a free quote", "Book a consultation" or "WhatsApp us", visible without scrolling.</p>
+<h3>3. The problem, in the customer's words</h3>
+<p>Show you understand why they're here: the frustration, risk or goal behind the search.</p>
+<h3>4. Your solution and what's included</h3>
+<p>Explain how you solve it and list what's included. Specifics beat vague promises.</p>
+<h3>5. The process</h3>
+<p>Three to five steps from first contact to finished result. It reduces uncertainty.</p>
+<h3>6. Proof</h3>
+<p>Case studies, examples, testimonials and credentials related to <em>this</em> service.</p>
+<h3>7. FAQs</h3>
+<p>Answer questions about cost, timelines, what you need from the client, and guarantees. FAQs also help your page answer more searches.</p>
+<h3>8. A final call to action</h3>
+<p>Repeat the next step at the end, with a short form or WhatsApp.</p>
+
+<h2>SEO essentials</h2>
+<ul>
+  <li>Unique title and meta description with the service (and location)</li>
+  <li>Enough depth to fully answer what searchers want to know</li>
+  <li>Internal links from your homepage and related articles</li>
+  <li>Service schema and FAQ content</li>
+</ul>
+<p>Run through the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a> before publishing.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>Thin pages with a paragraph and a contact form</li>
+  <li>Jargon instead of the customer's language</li>
+  <li>No proof or examples</li>
+  <li>The same text copied across several service pages</li>
+</ul>
+
+<h2>See it in practice</h2>
+<p>Every service page on this site follows this pattern, for example <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> and <a href="/wordpress-maintenance/">WordPress maintenance</a>: headline, benefits, what's included, an "in depth" section, related work, process, FAQs and contact.</p>
+`,
+  },
+  {
+    slug: 'collect-display-customer-testimonials',
+    seoTitle: 'How to Collect & Display Customer Testimonials',
+    title: 'How to Collect and Display Customer Testimonials on Your Website',
+    description: 'How to get genuine testimonials from happy customers, what makes a testimonial convincing, where to place them on your website, permissions and what to avoid.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['website-redesign', 'landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>Testimonials are one of the most persuasive things you can put on a website. Potential customers trust other customers more than they trust you. But generic, anonymous praise doesn't convince anyone. Here's how to collect testimonials that work.</p>
+
+<h2>When and how to ask</h2>
+<ul>
+  <li><strong>Ask at the high point:</strong> right after a successful delivery, launch or result</li>
+  <li><strong>Make it easy:</strong> a short WhatsApp or email message with two or three guiding questions</li>
+  <li><strong>Offer to draft it</strong> from what they've told you, for their approval</li>
+</ul>
+
+<h2>Questions that get specific answers</h2>
+<ol>
+  <li>What problem were you facing before working with us?</li>
+  <li>What was the experience like?</li>
+  <li>What changed afterwards?</li>
+</ol>
+<p>Specific answers ("enquiries started coming in through WhatsApp within the first week") are far more convincing than "great service!"</p>
+
+<h2>What makes a testimonial believable</h2>
+<ul>
+  <li>Full name, role and company (with permission)</li>
+  <li>A photo or company logo</li>
+  <li>Specific details about the problem and result</li>
+  <li>A link to the project or case study, where possible</li>
+</ul>
+
+<h2>Where to place testimonials</h2>
+<ul>
+  <li><strong>Homepage:</strong> two or three strong ones near the main call to action</li>
+  <li><strong>Service pages:</strong> testimonials about that specific service</li>
+  <li><strong>Near forms and checkout:</strong> reassurance right where people decide</li>
+  <li><strong>Case studies:</strong> a quote from the client in the story</li>
+  <li><strong>Landing pages:</strong> essential proof for ad traffic</li>
+</ul>
+
+<h2>Permissions and honesty</h2>
+<ul>
+  <li>Get clear permission to publish the name, company, photo and quote</li>
+  <li>Never write fake testimonials or edit quotes to change their meaning</li>
+  <li>Don't mark up testimonials as review ratings in schema unless it follows Google's guidelines</li>
+  <li>For regulated professions (health, legal, finance), check your professional body's rules on testimonials</li>
+</ul>
+
+<h2>Beyond written quotes</h2>
+<ul>
+  <li><strong>Short video testimonials</strong> recorded on a phone can be very powerful</li>
+  <li><strong>Google reviews</strong> build local rankings too. See <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a>.</li>
+  <li><strong>Case studies</strong> tell the full story. See <a href="/blog/write-case-studies-business-website/">how to write case studies</a>.</li>
+</ul>
+
+<p>Adding testimonials is one of the quickest ways to <a href="/blog/get-more-enquiries-from-your-website/">get more enquiries from your website</a>.</p>
+`,
+  },
+  {
+    slug: 'write-case-studies-business-website',
+    seoTitle: 'How to Write Case Studies for Your Business Website',
+    title: 'How to Write Case Studies for Your Business Website',
+    description: 'A simple case study structure for service businesses: client, challenge, approach, what you delivered, results and a client quote, plus tips on permissions, visuals and SEO.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-developer-for-agencies', 'wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Case studies show potential clients what it's actually like to work with you, and prove you've solved problems like theirs before. For service businesses, they're often the most persuasive content on the website.</p>
+
+<h2>A simple case study structure</h2>
+<ol>
+  <li><strong>The client:</strong> who they are and what they do, in one or two sentences</li>
+  <li><strong>The challenge:</strong> what they needed and why it mattered</li>
+  <li><strong>Your approach:</strong> key decisions and why you made them</li>
+  <li><strong>What you delivered:</strong> the specific work, features or outputs</li>
+  <li><strong>Results:</strong> what changed, backed by facts the client is happy to share</li>
+  <li><strong>Client quote:</strong> in their own words, with permission</li>
+  <li><strong>Call to action:</strong> "Want something similar? Let's talk."</li>
+</ol>
+
+<h2>Be honest about results</h2>
+<p>Only share numbers you can back up and the client agrees to publish. If you don't have hard numbers, describe concrete outcomes instead, such as a new booking system, faster pages or a site the team can finally update themselves. Never invent results.</p>
+
+<h2>Make it visual</h2>
+<ul>
+  <li>Screenshots or photos of the finished work</li>
+  <li>Before and after comparisons where relevant</li>
+  <li>A short summary box: client, industry, services, tools used</li>
+</ul>
+
+<h2>Permissions</h2>
+<p>Ask clients before naming them or showing their work. Agencies doing white-label work should never publish those projects under their own name without the agency's consent.</p>
+
+<h2>Make case studies work for SEO</h2>
+<ul>
+  <li>Give each case study its own page with a descriptive title</li>
+  <li>Link to the services you provided, and link back from those service pages</li>
+  <li>Mention the client's industry, so the page supports your industry pages</li>
+  <li>Use descriptive alt text on screenshots</li>
+</ul>
+<p>See <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
+
+<h2>Examples</h2>
+<p>The <a href="/work/">case studies on this site</a> follow this pattern: client, what the website needed to do, what was built, the tools used, and links to related services. For instance, see <a href="/work/vansh-group/">Vansh Group</a> or <a href="/work/our-temples/">Our Temples</a>.</p>
+
+<h2>Start with one</h2>
+<p>Pick your best recent project, ask the client for a short quote, and write it up using the structure above. One strong case study is worth more than a gallery of unexplained logos.</p>
+`,
+  },
+  {
+    slug: 'update-wordpress-safely',
+    seoTitle: 'How to Update WordPress Safely (Without Breaking It)',
+    title: 'How to Update WordPress Safely Without Breaking Your Site',
+    description: 'A safe process for updating WordPress core, themes and plugins: backups, staging, update order, testing key pages and forms, and what to do if an update breaks your site.',
+    date: '2026-09-27',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
+    body: `
+<p>Updates keep WordPress secure and working, but a careless update can break layouts, forms or checkout. Many site owners avoid updates for that reason, which is far riskier. Here's a safe, repeatable process.</p>
+
+<h2>Why updates matter</h2>
+<p>Outdated plugins and themes are the most common way WordPress sites get hacked. Updates also fix bugs and keep your site compatible with new PHP versions and browsers.</p>
+
+<h2>Before updating</h2>
+<ol>
+  <li><strong>Take a full backup</strong> of files and database. See the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</li>
+  <li><strong>Read the changelog</strong> for major updates, especially for page builders, WooCommerce and your theme.</li>
+  <li><strong>Use a staging site</strong> for major updates on important sites. See <a href="/blog/staging-sites-explained/">staging sites explained</a>.</li>
+  <li><strong>Pick a quiet time</strong>, not during a sale or campaign.</li>
+</ol>
+
+<h2>A sensible update order</h2>
+<ol>
+  <li>Plugins (one at a time for important ones)</li>
+  <li>Theme</li>
+  <li>WordPress core</li>
+</ol>
+<p>Updating one thing at a time makes it easy to see what caused any problem.</p>
+
+<h2>After updating: test</h2>
+<ul>
+  <li>Homepage and a few key pages on desktop and mobile</li>
+  <li>Contact forms, and check the email actually arrives</li>
+  <li>For stores: add to cart, checkout and a test payment</li>
+  <li>Logins, menus and any special features (bookings, calculators)</li>
+</ul>
+
+<h2>If something breaks</h2>
+<ol>
+  <li>Don't panic or keep changing things</li>
+  <li>Identify the update that caused it and roll that plugin back, or restore the backup</li>
+  <li>Check for a fix from the plugin developer, or wait for a patch before updating again</li>
+  <li>If you see a "critical error" message, WordPress recovery mode or hosting access can disable the faulty plugin</li>
+</ol>
+
+<h2>Automatic updates: yes or no?</h2>
+<ul>
+  <li><strong>Minor core security releases:</strong> usually safe to auto-update</li>
+  <li><strong>Small, well-maintained plugins:</strong> often fine to auto-update</li>
+  <li><strong>Page builders, WooCommerce, theme and major versions:</strong> better updated manually after a backup and test</li>
+</ul>
+
+<h2>Make it routine</h2>
+<p>Check for updates weekly or fortnightly. If you'd rather not deal with it, a <a href="/wordpress-maintenance/">maintenance plan</a> covers updates, testing and rollbacks for you.</p>
+`,
+  },
+  {
+    slug: 'staging-sites-explained',
+    seoTitle: 'Staging Sites Explained: Test Website Changes Safely',
+    title: 'Staging Sites Explained: How to Test Website Changes Safely',
+    description: 'What a staging site is, why it prevents broken live websites, how to create one for WordPress, how to push changes live safely, and how to keep staging out of Google.',
+    date: '2026-09-27',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'website-redesign', 'wordpress-migration'],
+    body: `
+<p>A staging site is a private copy of your website where changes can be built and tested before anyone else sees them. It's the difference between "let's see what happens" and knowing a change works before it goes live.</p>
+
+<h2>When to use staging</h2>
+<ul>
+  <li>Major WordPress, theme, page builder or WooCommerce updates</li>
+  <li>Redesigns and new page templates</li>
+  <li>Installing new plugins or features</li>
+  <li>Changing checkout, payment or form settings</li>
+  <li>Testing speed optimizations</li>
+</ul>
+
+<h2>How to create a WordPress staging site</h2>
+<ol>
+  <li><strong>Hosting staging tools:</strong> many hosts offer one-click staging from the control panel. This is the easiest option.</li>
+  <li><strong>Staging plugins:</strong> create a copy in a subfolder or subdomain.</li>
+  <li><strong>Manual copy:</strong> a developer copies files and database to a separate subdomain.</li>
+</ol>
+
+<h2>Keep staging private and out of Google</h2>
+<ul>
+  <li>Password-protect the staging site</li>
+  <li>Turn on "Discourage search engines" on staging only</li>
+  <li>Never forget to turn it <em>off</em> on the live site after pushing changes. It's a classic cause of sites disappearing from Google.</li>
+</ul>
+<p>See <a href="/blog/get-website-indexed-google-faster/">getting indexed faster</a> for other common indexing blockers.</p>
+
+<h2>Pushing changes live</h2>
+<ul>
+  <li><strong>Brochure sites:</strong> pushing the whole staging site live is usually fine</li>
+  <li><strong>Stores and sites with new data:</strong> be careful. Live orders, customers and form entries may have arrived since staging was copied. Push only files, or apply changes manually, so you don't overwrite live data.</li>
+  <li>Always take a backup of the live site first</li>
+</ul>
+
+<h2>Test before pushing</h2>
+<ul>
+  <li>Key pages on desktop and mobile</li>
+  <li>Forms (staging emails may need special handling)</li>
+  <li>Checkout in test mode</li>
+  <li>Speed on important templates</li>
+</ul>
+
+<h2>Is staging worth it for small sites?</h2>
+<p>For small, simple sites, a backup before each update may be enough. For stores, busy sites and redesigns, staging saves you from expensive downtime. It's standard practice for <a href="/website-redesign/">redesigns</a> and careful <a href="/blog/update-wordpress-safely/">WordPress updates</a>.</p>
 `,
   },
 ];

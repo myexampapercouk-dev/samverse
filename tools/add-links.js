@@ -78,6 +78,16 @@ const LINKS = [
   ['setup-google-analytics-search-console', '<h2>What to check every month</h2>', '<p>Once tracking works, you can <a href="/blog/measure-website-roi/">measure your website\'s ROI</a> in simple rupee terms.</p>\n\n'],
   ['get-more-enquiries-from-your-website', '<h3>12. Track what works</h3>', '<p>Then turn those numbers into rupees; see <a href="/blog/measure-website-roi/">how to measure website ROI</a>.</p>\n'],
   ['clinic-website-checklist-for-doctors', '<h2>Common mistakes to avoid</h2>', '<p>Running a diagnostic lab or pathology centre? See <a href="/blog/website-for-diagnostic-labs/">websites for diagnostic labs</a>.</p>\n\n'],
+  // Round 5
+  ['how-to-write-website-content', '<h2>Service pages</h2>', '<p>More detail: <a href="/blog/write-about-page-that-builds-trust/">how to write an About page that builds trust</a>.</p>\n\n'],
+  ['how-to-write-website-content', '<h2>Writing tips that work</h2>', '<p>For a full walkthrough, see <a href="/blog/write-service-pages-that-convert/">how to write service pages that rank and convert</a>.</p>\n\n'],
+  ['get-more-enquiries-from-your-website', '<h3>8. Use real photos</h3>', '<p>See <a href="/blog/collect-display-customer-testimonials/">how to collect and display testimonials</a> that actually convince people.</p>\n'],
+  ['get-more-google-reviews', '<h2>Use reviews on your website too</h2>', '<p>For on-site quotes, see <a href="/blog/collect-display-customer-testimonials/">collecting and displaying testimonials</a>.</p>\n\n'],
+  ['portfolio-website-freelancers-creatives', '<h2>Make it clear what you offer</h2>', '<p>See <a href="/blog/write-case-studies-business-website/">how to write case studies</a> for a simple structure.</p>\n\n'],
+  ['wordpress-maintenance-checklist', '<h2>Golden rules</h2>', '<p>For a safe step-by-step process, see <a href="/blog/update-wordpress-safely/">how to update WordPress without breaking your site</a>.</p>\n\n'],
+  ['wordpress-security-checklist', '<h2>Logins and users</h2>', '<p>Worried updates will break things? Follow <a href="/blog/update-wordpress-safely/">this safe update process</a>.</p>\n\n'],
+  ['redesign-website-without-losing-rankings', '<h2>At launch</h2>', '<p>New to staging? See <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>\n\n'],
+  ['wordpress-backup-restore-guide', '<h2>Test your backups</h2>', '<p>A <a href="/blog/staging-sites-explained/">staging site</a> is the ideal place to test restores.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
