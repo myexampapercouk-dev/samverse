@@ -3034,4 +3034,382 @@ module.exports = [
 <p>Accessibility improvements are included when I <a href="/website-redesign/">redesign websites</a>, alongside speed and SEO.</p>
 `,
   },
+  {
+    slug: 'website-brief-template',
+    seoTitle: 'Website Brief Template: What to Send Your Developer',
+    title: 'Website Brief Template: What to Send Your Developer for an Accurate Quote',
+    description: 'A simple website brief template for business owners: goals, audience, pages, features, content, references, budget and timeline, so you get accurate quotes and fewer surprises.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
+    body: `
+<p>"How much for a website?" is impossible to answer accurately without details, which is why quotes for the same project can vary so much. A short brief fixes that. It helps developers quote accurately, avoids misunderstandings and gets your project started faster. Copy the template below and fill it in.</p>
+
+<h2>1. About your business</h2>
+<ul>
+  <li>Business name and what you do, in two or three sentences</li>
+  <li>Your location and the areas or countries you serve</li>
+  <li>Your current website (if any) and what you don't like about it</li>
+</ul>
+
+<h2>2. Goals</h2>
+<p>What should the website achieve? Be specific:</p>
+<ul>
+  <li>More enquiries, calls or WhatsApp messages</li>
+  <li>Online sales</li>
+  <li>Bookings or appointments</li>
+  <li>Credibility for investors, partners or tenders</li>
+  <li>Recruitment</li>
+</ul>
+
+<h2>3. Target audience</h2>
+<ul>
+  <li>Who are your ideal customers?</li>
+  <li>What problems do they have, and what do they worry about before hiring or buying?</li>
+  <li>Do they mostly browse on mobile?</li>
+</ul>
+
+<h2>4. Pages you need</h2>
+<p>A simple list is enough, for example: Home, About, Services (one page per service), Portfolio, Blog, FAQ, Contact. Note any pages that need special layouts.</p>
+
+<h2>5. Features</h2>
+<ul>
+  <li>Contact forms, WhatsApp, click-to-call</li>
+  <li>Online store (how many products?)</li>
+  <li>Online payments, bookings, memberships</li>
+  <li>Multiple languages</li>
+  <li>Blog, newsletter sign-up, downloads</li>
+  <li>Integrations: CRM, email marketing, Google Sheets</li>
+</ul>
+
+<h2>6. Design direction</h2>
+<ul>
+  <li>2–3 websites you like, and <em>what</em> you like about each</li>
+  <li>Your logo, brand colours and fonts (if you have them)</li>
+  <li>Anything you definitely don't want</li>
+  <li>Existing designs in Figma or XD, if any</li>
+</ul>
+
+<h2>7. Content</h2>
+<ul>
+  <li>Who will write the text? Is it ready?</li>
+  <li>Do you have good photos of your work, team and premises?</li>
+  <li>For stores: is product data in a spreadsheet?</li>
+</ul>
+<p>Content readiness is the biggest factor in timelines; see <a href="/blog/how-long-to-build-wordpress-website/">how long a WordPress website takes</a>. For help writing it, see <a href="/blog/how-to-write-website-content/">how to write website content</a>.</p>
+
+<h2>8. Technical details</h2>
+<ul>
+  <li>Do you own your domain? Who manages hosting?</li>
+  <li>Business email needs</li>
+  <li>For redesigns: pages that currently bring traffic and must be kept</li>
+</ul>
+
+<h2>9. Budget and timeline</h2>
+<ul>
+  <li>A budget range, which helps developers suggest the right approach. The <a href="/website-cost-calculator/">website cost calculator</a> gives a ballpark.</li>
+  <li>Your ideal launch date, and any hard deadlines</li>
+</ul>
+
+<h2>10. After launch</h2>
+<ul>
+  <li>Who will update the site?</li>
+  <li>Do you want training, maintenance or ongoing SEO?</li>
+</ul>
+
+<h2>Send it and compare</h2>
+<p>With a brief like this, you'll get quotes you can actually compare, and a developer can often reply within a day. When you're ready, send your brief on WhatsApp or through the form to <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
+`,
+  },
+  {
+    slug: 'on-page-seo-checklist',
+    seoTitle: 'On-Page SEO Checklist for Every New Page',
+    title: 'On-Page SEO Checklist: 15 Things to Check on Every Page You Publish',
+    description: 'A practical on-page SEO checklist for business websites: search intent, titles, descriptions, headings, content, internal links, images, schema, speed and mobile, before you hit publish.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign', 'landing-page-design'],
+    body: `
+<p>Every new page is a chance to rank for something. On-page SEO means making each page as clear and useful as possible for both visitors and search engines. Run through this checklist before publishing any service page, product page or article.</p>
+
+<h2>Plan the page</h2>
+<ol>
+  <li><strong>One main topic and search intent.</strong> Decide what the searcher wants: information, a comparison, a service, a product. Match the page to that intent.</li>
+  <li><strong>No overlap.</strong> Don't create a new page for a keyword another page on your site already targets. Improve the existing one instead.</li>
+</ol>
+
+<h2>Titles and descriptions</h2>
+<ol start="3">
+  <li><strong>Title tag:</strong> includes the main topic, reads naturally, and is roughly 50–60 characters so it isn't cut off in results.</li>
+  <li><strong>Meta description:</strong> about 140–160 characters summarising the page and why to click. It doesn't directly affect rankings, but it affects clicks.</li>
+  <li><strong>Clean URL:</strong> short and descriptive, like <code>/wordpress-maintenance/</code>.</li>
+</ol>
+
+<h2>Content</h2>
+<ol start="6">
+  <li><strong>One H1</strong> that states what the page is about.</li>
+  <li><strong>Logical H2/H3 structure</strong> that makes the page easy to scan.</li>
+  <li><strong>Answer the question fully.</strong> Cover what the searcher needs to know, in plain language, with examples.</li>
+  <li><strong>Show experience.</strong> Real examples, case studies, photos and specifics build trust with visitors and search engines alike.</li>
+  <li><strong>A clear call to action</strong> for the next step.</li>
+</ol>
+
+<h2>Links and media</h2>
+<ol start="11">
+  <li><strong>Internal links:</strong> link to 2–3 related pages with descriptive anchor text, and link <em>to</em> the new page from relevant existing pages so it's easy to discover.</li>
+  <li><strong>Images:</strong> compressed, sized properly, with descriptive alt text and file names. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</li>
+</ol>
+
+<h2>Technical</h2>
+<ol start="13">
+  <li><strong>Schema markup</strong> where relevant: Service, Product, Article, FAQ, Breadcrumb. See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</li>
+  <li><strong>Mobile and speed:</strong> check the page on a phone and on PageSpeed Insights.</li>
+  <li><strong>Indexable:</strong> no <code>noindex</code> tag by mistake, correct canonical, and included in the sitemap.</li>
+</ol>
+
+<h2>After publishing</h2>
+<ul>
+  <li>Request indexing in Google Search Console for important pages</li>
+  <li>Share it where your audience is (LinkedIn, newsletter, WhatsApp)</li>
+  <li>After a few weeks, check Search Console for the queries it appears for, and improve the content to match</li>
+</ul>
+
+<h2>The most common on-page mistakes</h2>
+<ul>
+  <li>Duplicate titles across many pages</li>
+  <li>Thin pages with a few lines of text</li>
+  <li>Keyword stuffing that reads unnaturally</li>
+  <li>Orphan pages with no internal links pointing to them</li>
+</ul>
+
+<p>Want this done across your whole site? It's the core of a <a href="/wordpress-seo-services/">WordPress SEO setup</a>.</p>
+`,
+  },
+  {
+    slug: 'contact-form-not-getting-enquiries',
+    seoTitle: 'Website Contact Form Not Getting Enquiries? Fix It',
+    title: 'Why Your Website Contact Form Isn\'t Getting Enquiries (and How to Fix It)',
+    description: 'Getting traffic but no form submissions? Common reasons contact forms fail, from broken email delivery and spam filters to too many fields, with fixes that bring enquiries back.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-maintenance', 'landing-page-design', 'website-redesign'],
+    body: `
+<p>If your website gets visitors but your inbox stays empty, the contact form is a common culprit. Sometimes it's technically broken; sometimes it just isn't persuading people to use it. Here's how to diagnose and fix both.</p>
+
+<h2>First: is the form actually working?</h2>
+<p>Fill in your own form right now and check whether the email arrives. You'd be surprised how many businesses discover their form has been silently failing for months.</p>
+
+<h2>Technical reasons forms fail</h2>
+<h3>1. Emails aren't being delivered</h3>
+<p>Many WordPress sites send form emails using the server's basic mail function, which is often blocked or sent to spam. Use an authenticated sending method (SMTP or a transactional email service) and set up SPF and DKIM records for your domain.</p>
+<h3>2. Emails go to spam or an old address</h3>
+<p>Check spam folders, and confirm the form sends to an inbox someone actually reads.</p>
+<h3>3. A plugin or update broke it</h3>
+<p>Updates can break forms. Test forms after every update; see the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>.</p>
+<h3>4. Over-aggressive spam protection</h3>
+<p>Some anti-spam tools block real people too. Use invisible methods (honeypot fields, time checks) or friendly checks rather than hard puzzles.</p>
+
+<h2>Persuasion reasons people don't fill it in</h2>
+<h3>5. Too many fields</h3>
+<p>Every extra field reduces submissions. Ask only for what you need to reply: often name, phone or email, and a short message.</p>
+<h3>6. The form is hard to find</h3>
+<p>If it's only on a contact page, many visitors never see it. Add a short form or call to action to service pages and the end of articles.</p>
+<h3>7. No reason to trust you</h3>
+<p>Testimonials, client logos and a clear promise ("I'll reply within 24 hours") near the form make people comfortable sharing details.</p>
+<h3>8. Mobile problems</h3>
+<p>Tiny fields, wrong keyboards for phone numbers, or a submit button hidden behind a chat widget all stop mobile visitors.</p>
+<h3>9. No alternative</h3>
+<p>Some people prefer WhatsApp or a call. Offer both next to the form; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
+
+<h2>Make sure you never miss a lead</h2>
+<ul>
+  <li>Send enquiries to email and a backup channel (WhatsApp or a Google Sheet)</li>
+  <li>Show a clear thank-you message so people know it worked</li>
+  <li>Track submissions in Google Analytics to spot sudden drops</li>
+  <li>Reply fast, because the first business to respond often wins</li>
+</ul>
+
+<h2>Quick fix checklist</h2>
+<ol>
+  <li>Test the form yourself today</li>
+  <li>Set up authenticated email sending</li>
+  <li>Cut fields to the essentials</li>
+  <li>Add WhatsApp and phone next to the form</li>
+  <li>Place calls to action on every key page</li>
+  <li>Test again after every update</li>
+</ol>
+
+<p>Broken forms are one of the most expensive silent problems a business site can have. A <a href="/wordpress-maintenance/">maintenance plan</a> includes regular form checks so it can't happen unnoticed.</p>
+`,
+  },
+  {
+    slug: 'essential-wordpress-plugins-business',
+    seoTitle: 'Essential WordPress Plugins for a Business Website',
+    title: 'Essential WordPress Plugins for a Business Website (and Ones to Avoid)',
+    description: 'The plugin categories every business WordPress site needs, including SEO, security, backups, caching, forms and image optimization, plus how to choose plugins safely and what to avoid.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-speed-optimization', 'wordpress-maintenance'],
+    body: `
+<p>Plugins are what make WordPress so flexible, and also what make many WordPress sites slow and insecure. The goal isn't more plugins; it's the right few, well maintained. Here are the categories most business websites need.</p>
+
+<h2>The essentials</h2>
+<h3>1. SEO</h3>
+<p>An SEO plugin (such as Rank Math or Yoast SEO) handles titles, meta descriptions, XML sitemaps, schema basics and redirects.</p>
+<h3>2. Security</h3>
+<p>A reputable security plugin or firewall adds login protection, malware scanning and blocks malicious traffic. See the <a href="/blog/wordpress-security-checklist/">security checklist</a>.</p>
+<h3>3. Backups</h3>
+<p>Automatic, off-site backups with easy restores, unless your host already provides reliable ones.</p>
+<h3>4. Caching and performance</h3>
+<p>A caching plugin (for example LiteSpeed Cache on LiteSpeed hosting, or WP Rocket) makes pages load much faster.</p>
+<h3>5. Image optimization</h3>
+<p>Automatic compression and WebP conversion; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
+<h3>6. Forms</h3>
+<p>A reliable form plugin for contact and enquiry forms, plus authenticated email sending so messages actually arrive.</p>
+
+<h2>Add only if you need them</h2>
+<ul>
+  <li><strong>Page builder:</strong> Elementor, if you want visual editing</li>
+  <li><strong>WooCommerce:</strong> for online stores, plus your payment gateway plugin</li>
+  <li><strong>Multilingual:</strong> for sites in more than one language</li>
+  <li><strong>Booking or appointments:</strong> for clinics, salons and consultants</li>
+  <li><strong>Analytics:</strong> for example Site Kit by Google, or add the tag directly</li>
+</ul>
+
+<h2>How to choose a plugin safely</h2>
+<ul>
+  <li><strong>Recently updated</strong> and compatible with your WordPress version</li>
+  <li><strong>Many active installs and good reviews</strong></li>
+  <li><strong>Reputable developer</strong> with support and documentation</li>
+  <li><strong>Does one job well</strong>, rather than trying to do everything</li>
+</ul>
+
+<h2>Plugins and habits to avoid</h2>
+<ul>
+  <li><strong>Nulled (pirated) premium plugins:</strong> a leading cause of malware</li>
+  <li><strong>Abandoned plugins</strong> with no updates for a long time</li>
+  <li><strong>Several plugins doing the same job</strong> (two SEO plugins, two caching plugins), which cause conflicts</li>
+  <li><strong>Plugins for tiny tweaks</strong> that a line of CSS or a setting could handle</li>
+  <li><strong>Heavy sliders, social feeds and animation packs</strong> that slow every page</li>
+  <li><strong>Leaving deactivated plugins installed.</strong> Delete what you don't use.</li>
+</ul>
+
+<h2>How many plugins is too many?</h2>
+<p>There's no magic number. One badly coded plugin can do more harm than twenty good ones. Audit your plugins every few months and remove anything you don't truly need. If your site is already slow, a <a href="/wordpress-speed-optimization/">speed optimization</a> review usually starts with a plugin audit.</p>
+`,
+  },
+  {
+    slug: 'website-traffic-dropped',
+    seoTitle: 'Website Traffic Suddenly Dropped? What to Check',
+    title: 'Website Traffic Suddenly Dropped? A Step-by-Step Checklist to Find Out Why',
+    description: 'Seeing a sudden drop in website traffic? A step-by-step checklist to find the cause: tracking errors, indexing issues, site changes, penalties, algorithm updates and seasonality.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-malware-removal', 'website-redesign'],
+    body: `
+<p>A sudden traffic drop is stressful, but panicking and changing everything at once usually makes it worse. Work through the possible causes in order, from simplest to most complex, and you'll usually find the answer.</p>
+
+<h2>Step 1: Is it real, or a tracking problem?</h2>
+<ul>
+  <li>Check whether the analytics tag is still on every page, since a theme update or plugin change can remove it</li>
+  <li>Compare Google Analytics with Google Search Console. If Search Console clicks are steady, it's probably a tracking issue.</li>
+  <li>Check date ranges, filters and whether a cookie consent change is blocking tracking</li>
+</ul>
+
+<h2>Step 2: Is the site working?</h2>
+<ul>
+  <li>Is the site loading on mobile and desktop? Any downtime?</li>
+  <li>Did SSL expire, or the domain lapse?</li>
+  <li>Is the site hacked? Look for strange redirects or pages. See <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>.</li>
+</ul>
+
+<h2>Step 3: Did anything change on the site?</h2>
+<ul>
+  <li>A redesign, migration or URL changes without redirects. See <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</li>
+  <li>"Discourage search engines" switched on, or <code>noindex</code> tags added</li>
+  <li>robots.txt changes blocking pages</li>
+  <li>Important pages deleted, merged or rewritten</li>
+</ul>
+
+<h2>Step 4: Check Google Search Console</h2>
+<ul>
+  <li><strong>Performance:</strong> which pages and queries lost clicks? Is the drop site-wide or on specific pages?</li>
+  <li><strong>Pages (indexing):</strong> any spike in excluded or error pages?</li>
+  <li><strong>Security and manual actions:</strong> any warnings or penalties?</li>
+</ul>
+
+<h2>Step 5: Was there a Google update?</h2>
+<p>Google regularly updates its ranking systems. If your drop coincides with a confirmed update, compare the pages that lost traffic with those that rank now. Usually the fix is improving content quality, usefulness and trust signals, not quick technical tricks.</p>
+
+<h2>Step 6: Is it seasonal or market-wide?</h2>
+<ul>
+  <li>Compare with the same period last year</li>
+  <li>Check Google Trends for your main topics</li>
+  <li>Holidays, exams, weather and news all affect search demand</li>
+</ul>
+
+<h2>Step 7: Did competitors improve?</h2>
+<p>Search your main keywords. If new or improved competitor pages now outrank you, study what they offer that you don't, whether that's more depth, better examples, fresher information or faster pages.</p>
+
+<h2>What not to do</h2>
+<ul>
+  <li>Don't delete lots of pages in a panic</li>
+  <li>Don't buy links or use shortcuts to "recover"</li>
+  <li>Don't change titles and URLs across the whole site at once</li>
+</ul>
+
+<h2>Get a second pair of eyes</h2>
+<p>If you can't find the cause, a technical <a href="/wordpress-seo-services/">SEO review</a> can check indexing, redirects, speed and content systematically, so you fix the real problem.</p>
+`,
+  },
+  {
+    slug: 'ai-search-optimization-website',
+    seoTitle: 'AI Search Optimization: Get Cited by AI Assistants',
+    title: 'AI Search and Your Website: How to Get Cited by AI Assistants',
+    description: 'How AI assistants and AI search features choose sources, and practical steps to make your business website clear, trustworthy and easy to cite: structure, facts, schema and llms.txt.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development', 'website-redesign'],
+    body: `
+<p>More people now ask AI assistants and AI-powered search features for recommendations and answers, such as "best way to speed up a WordPress site" or "how much does a website cost in India". These tools draw on web pages they consider clear and trustworthy. The good news: what helps you appear in AI answers is mostly what good SEO already asks for.</p>
+
+<h2>How AI answers pick sources</h2>
+<p>Each tool works differently, and the details change often, but they generally favour pages that:</p>
+<ul>
+  <li>Answer a specific question directly and accurately</li>
+  <li>Are well structured, with clear headings, lists and tables</li>
+  <li>Come from sites that show real expertise and are referenced by others</li>
+  <li>Are crawlable and indexed by search engines</li>
+</ul>
+
+<h2>Practical steps</h2>
+<h3>1. Answer questions directly</h3>
+<p>Start sections with a clear, one or two sentence answer, then explain. FAQ sections on service pages are ideal for this.</p>
+<h3>2. Use clear structure</h3>
+<p>Descriptive headings, short paragraphs, bullet points and comparison tables make information easy to extract accurately.</p>
+<h3>3. State facts about your business consistently</h3>
+<p>Your name, services, location, contact details and specialisms should be the same on your website, Google Business Profile, LinkedIn and directories. Inconsistent details confuse both search engines and AI tools.</p>
+<h3>4. Add structured data</h3>
+<p>Schema markup states who you are and what you offer in machine-readable form. See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+<h3>5. Show real experience</h3>
+<p>Case studies, real examples, author information and specifics signal expertise that generic content can't. Portfolio pages like the <a href="/work/">case studies on this site</a> are a good example.</p>
+<h3>6. Consider an llms.txt file</h3>
+<p>llms.txt is an emerging, optional convention: a plain-text summary of your site's key pages for AI tools. It's cheap to add, though support varies between tools. This site publishes one.</p>
+<h3>7. Don't block the crawlers you want</h3>
+<p>Check that robots.txt and security settings aren't accidentally blocking search engines. Decide deliberately which AI crawlers you allow.</p>
+
+<h2>Earn mentions</h2>
+<p>AI tools, like search engines, trust sites that others reference. Reviews, directory listings, guest articles, client footer credits and industry mentions all help.</p>
+
+<h2>What doesn't work</h2>
+<ul>
+  <li>Stuffing pages with questions and keywords</li>
+  <li>Mass-producing thin AI-written pages</li>
+  <li>Hidden text aimed at AI tools</li>
+</ul>
+
+<h2>The bottom line</h2>
+<p>Be the clearest, most trustworthy answer to your customers' questions, keep your business information consistent everywhere, and make your site easy to crawl. That's the foundation for both traditional search and AI answers; see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
 ];
