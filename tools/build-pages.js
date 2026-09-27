@@ -700,11 +700,11 @@ ${topicPosts(t).length > TOPIC_PREVIEW ? `          <p class="topic-more"><a hre
 // The industry hub is long, so it is split into sectors (first matching slug pattern wins)
 const INDUSTRY_SECTORS = [
   ['Healthcare & wellness', /doctor|dentist|diagnostic|pharmac|hospital|physio|eye-clinic|veterinary|dermatology|ayurveda|fertility|nutrition|psycholog|elder-care|gyms|salons/],
-  ['Hospitality, travel & events', /restaurant|hotel|catering|sweet-shops|wedding-venues|event-wedding|event-rental|hostels|travel|trekking/],
+  ['Hospitality, travel & events', /restaurant|hotel|catering|sweet-shops|kitchen|wedding-venues|event-wedding|event-rental|hostels|travel|trekking/],
   ['Property, construction & energy', /real-estate|interior|construction|furniture|hardware|property-management|coworking|solar/],
   ['Education & training', /school|driving|music-dance|overseas-education|sports-academ|preschool|college/],
   ['Manufacturing, trade & logistics', /manufactur|industrial|equipment-rental|export|logistics|printing|agriculture|medical-equipment|wholesalers/],
-  ['Professional services', /lawyers|it-software|security-facility|insurance|immigration|recruitment|astrolog|coaches|photographers/],
+  ['Professional & tech services', /lawyers|it-software|saas|security-facility|insurance|immigration|recruitment|astrolog|coaches|photographers/],
   ['Retail & local services', /home-services|cleaning|packers|pest-control|laundry|tailoring|mobile-laptop|car-dealers|ev-dealers|taxi|jewellers/],
   ['Temples & non-profits', /temple|ngo/],
 ];

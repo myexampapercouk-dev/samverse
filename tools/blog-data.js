@@ -804,6 +804,8 @@ module.exports = [
 
 <p>Your theme matters just as much as the builder; see <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
 
+<p>Going with Elementor? See <a href="/blog/elementor-pro-worth-it/">is Elementor Pro worth it?</a></p>
+
 <h2>My recommendation</h2>
 <p>For most small business websites where owners want to update pages themselves, <strong>Elementor</strong> offers the best balance of design freedom and ease of use, as long as it's built carefully. For content-heavy sites and blogs where speed is critical, <strong>Gutenberg</strong> is an excellent, lightweight choice. You can also combine them: Gutenberg for blog posts, and Elementor for key marketing pages.</p>
 `,
@@ -1977,6 +1979,8 @@ module.exports = [
   <li><strong>Testimonials and walkthrough videos</strong> from real buyers.</li>
 </ol>
 
+<p>Launching a new project? See <a href="/blog/real-estate-project-microsite/">real estate project microsites</a>.</p>
+
 <h2>Performance and marketing</h2>
 <ol start="14">
   <li><strong>Fast, mobile-first pages and campaign landing pages.</strong> Most property ads are clicked on phones. Dedicated landing pages for each project campaign, with conversion tracking, make ad spend far more efficient. Read about the <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a>.</li>
@@ -2174,6 +2178,8 @@ module.exports = [
 
 <p>Capture interest from visitors who aren't ready yet with a <a href="/blog/lead-magnets-newsletter-small-business/">lead magnet or waitlist</a>.</p>
 
+<p>Building a software product? See <a href="/blog/website-for-saas-startups/">websites for SaaS startups</a>.</p>
+
 <h2>Build for iteration</h2>
 <p>Your messaging will change as you learn from customers. Build the site so your team can edit headlines, add landing pages for campaigns and publish articles without a developer. That's where WordPress with a visual builder shines. For campaigns, dedicated <a href="/landing-page-design/">landing pages</a> let you test offers quickly.</p>
 
@@ -2248,6 +2254,8 @@ module.exports = [
   <li>Final designs separated from explorations</li>
   <li>Dev Mode or inspect access for the developer</li>
 </ul>
+
+<p>How will it be built? Compare <a href="/blog/figma-to-wordpress-approaches/">page builder, block theme and custom theme approaches</a>.</p>
 
 <h2>8. Agree on scope</h2>
 <p>List pages, templates (blog post, archive, product), integrations (CRM, newsletter, payments) and who handles content entry. Clear scope means an accurate quote and timeline.</p>
@@ -2622,6 +2630,8 @@ module.exports = [
 
 <p>Building a listings site? See <a href="/blog/directory-website-wordpress/">how directory websites work on WordPress</a>.</p>
 
+<p>Building with Elementor? See <a href="/blog/best-theme-for-elementor/">the best themes for Elementor</a>.</p>
+
 <h2>Mistakes to avoid</h2>
 <ul>
   <li>Choosing a theme only because its demo looks impressive</li>
@@ -2677,6 +2687,8 @@ module.exports = [
 </ul>
 
 <p>Selling packaged food online too? See <a href="/blog/website-for-d2c-food-brands/">websites for organic and D2C food brands</a>.</p>
+
+<p>More guides: <a href="/blog/restaurant-menu-on-website/">putting your menu online</a> and <a href="/blog/website-for-cloud-kitchens/">websites for cloud kitchens</a>.</p>
 
 <h2>Get found by hungry locals</h2>
 <ul>
@@ -4639,6 +4651,8 @@ module.exports = [
 
 <h2>Measure before and after</h2>
 <p>Test key pages on PageSpeed Insights and look at Core Web Vitals, especially LCP and INP. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<p>Your theme matters too; see <a href="/blog/best-theme-for-elementor/">choosing a lightweight theme for Elementor</a>.</p>
 
 <h2>Should you switch away from Elementor?</h2>
 <p>Usually not. A well-built Elementor site on good hosting can perform well, and your team keeps easy editing. Switching makes sense only if the site is extremely heavy and a rebuild is needed anyway. See <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>.</p>
@@ -14228,6 +14242,414 @@ module.exports = [
   <li>You don't have time to maintain it safely</li>
 </ul>
 <p>See <a href="/blog/hire-developer-vs-diy-website/">hire a developer vs DIY</a> and <a href="/blog/web-designer-vs-web-developer/">web designer vs developer</a>.</p>
+`,
+  },
+  {
+    slug: 'elementor-pro-worth-it',
+    seoTitle: 'Is Elementor Pro Worth It? Features vs Free Alternatives',
+    title: 'Is Elementor Pro Worth It for a Business Website?',
+    description: 'What Elementor Pro adds over the free version (Theme Builder, forms, popups, WooCommerce builder, dynamic content), when it is worth paying for, and free alternatives that do the same jobs.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['elementor-developer', 'wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Elementor's free version is enough to build attractive pages. Elementor Pro is a yearly paid upgrade that adds features many business sites use. Whether it's worth it depends on what your site needs and what else is already on it.</p>
+
+<h2>What Elementor Pro adds</h2>
+<table>
+  <thead><tr><th>Feature</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr><td>Theme Builder</td><td>Design headers, footers, blog post templates, archives and 404 pages visually</td></tr>
+    <tr><td>Form widget</td><td>Contact and lead forms with email notifications and integrations</td></tr>
+    <tr><td>Popup Builder</td><td>Popups for offers, lead magnets and announcements, with triggers and rules</td></tr>
+    <tr><td>WooCommerce Builder</td><td>Custom product, shop, cart and checkout layouts</td></tr>
+    <tr><td>Dynamic content</td><td>Pull in post data and custom fields, which is useful for listings and directories</td></tr>
+    <tr><td>Extra widgets</td><td>Posts grids, sliders, pricing tables, testimonials and more</td></tr>
+    <tr><td>Custom code and fonts</td><td>Custom CSS per element, custom fonts and icons</td></tr>
+  </tbody>
+</table>
+<p>Features and plans change, so check Elementor's current plan details.</p>
+
+<h2>When Pro is worth it</h2>
+<ul>
+  <li>You want to design headers, footers and templates visually without a separate theme builder</li>
+  <li>You need custom WooCommerce page layouts</li>
+  <li>You'll use popups and forms and would rather not add separate plugins</li>
+  <li>You're building listing-style sites with dynamic content</li>
+  <li>Your team edits the site and benefits from one consistent tool</li>
+</ul>
+
+<h2>When you can skip it</h2>
+<ul>
+  <li>A simple brochure site where the theme handles header and footer</li>
+  <li>You already use a good form plugin; see <a href="/blog/wordpress-form-plugins-compared/">form plugins compared</a></li>
+  <li>Your theme (like Astra, Kadence or GeneratePress) already offers header, footer and layout controls</li>
+  <li>You're open to the block editor instead; see <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a></li>
+</ul>
+
+<h2>Performance considerations</h2>
+<p>Pro doesn't have to slow a site, but adding many widgets, popups and animations does. Use features deliberately, enable Elementor's performance settings and test speed; see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</p>
+
+<h2>Licences: buy in your name</h2>
+<p>If your developer buys the licence, make sure you know whose account it's in. If it lapses, you lose updates and support, and Pro features may stop being editable. Ideally buy it in your business name; see the <a href="/blog/website-ownership-checklist/">ownership checklist</a>.</p>
+
+<h2>Avoid nulled copies</h2>
+<p>"Free" pirated versions of Elementor Pro are a common source of malware. Always use a genuine licence.</p>
+
+<p>Building with Elementor? See <a href="/elementor-developer/">Elementor development</a> and <a href="/blog/best-theme-for-elementor/">choosing a theme for Elementor</a>.</p>
+`,
+  },
+  {
+    slug: 'best-theme-for-elementor',
+    seoTitle: 'Best Theme for Elementor: Hello, Astra, GeneratePress & More',
+    title: 'Choosing the Best Theme for Elementor: Hello, Astra, GeneratePress and Others',
+    description: 'How to choose a WordPress theme for an Elementor site: why lightweight matters, comparing Hello Elementor, Astra, GeneratePress, Kadence and Blocksy, and which suits different projects.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['elementor-developer', 'wordpress-speed-optimization', 'wordpress-website-development'],
+    body: `
+<p>When you build with Elementor, the page builder handles most of the design. The theme still matters, though: it controls the basic framework, and a heavy theme can slow every page. The best theme for Elementor is usually a lightweight one that stays out of the way.</p>
+
+<h2>What to look for</h2>
+<ul>
+  <li><strong>Lightweight:</strong> minimal CSS and JavaScript</li>
+  <li><strong>Elementor compatibility:</strong> full-width layouts, no styling conflicts</li>
+  <li><strong>Header and footer options</strong> if you're not using Elementor Pro's Theme Builder</li>
+  <li><strong>WooCommerce support</strong> if you sell online</li>
+  <li><strong>Active development</strong> and a good security record</li>
+</ul>
+
+<h2>Popular choices</h2>
+<table>
+  <thead><tr><th>Theme</th><th>Strengths</th><th>Good for</th></tr></thead>
+  <tbody>
+    <tr><td>Hello Elementor</td><td>Official, extremely minimal, designed for Elementor</td><td>Sites built entirely with Elementor Pro's Theme Builder</td></tr>
+    <tr><td>Astra</td><td>Lightweight, header/footer builder, many starter templates, strong WooCommerce support</td><td>Business sites and stores, with or without Elementor Pro</td></tr>
+    <tr><td>GeneratePress</td><td>Very lightweight and stable, clean code</td><td>Performance-focused sites and developers</td></tr>
+    <tr><td>Kadence</td><td>Flexible header/footer builder, good free version</td><td>Sites mixing Elementor and blocks</td></tr>
+    <tr><td>Blocksy</td><td>Modern design options, lightweight</td><td>Design-focused sites</td></tr>
+  </tbody>
+</table>
+
+<h2>How to decide</h2>
+<ul>
+  <li><strong>Have Elementor Pro and design everything in it?</strong> Hello Elementor keeps things minimal</li>
+  <li><strong>Using free Elementor?</strong> Astra, Kadence or GeneratePress handle headers, footers and blog layouts for you</li>
+  <li><strong>Running WooCommerce?</strong> Astra and Kadence have strong store features</li>
+</ul>
+<p>See <a href="/blog/elementor-pro-worth-it/">is Elementor Pro worth it?</a></p>
+
+<h2>Avoid multipurpose "mega themes"</h2>
+<p>Themes that bundle their own page builders, sliders and dozens of plugins often conflict with Elementor and slow sites down. See <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
+
+<h2>Use a child theme for code changes</h2>
+<p>If you add custom code to the theme, use a child theme so updates don't erase your changes.</p>
+
+<h2>Switching themes on an existing site</h2>
+<p>Changing themes can affect headers, footers, blog layouts and styling. Test on a staging site first; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+
+<p>Need help setting up Elementor properly? See <a href="/elementor-developer/">Elementor development</a>.</p>
+`,
+  },
+  {
+    slug: 'figma-to-wordpress-approaches',
+    seoTitle: 'Figma to WordPress: Page Builder, Blocks or Custom Theme?',
+    title: 'Figma to WordPress: Page Builder, Block Theme or Custom Theme?',
+    description: 'The main ways to turn a Figma design into a WordPress site (Elementor, block themes and custom blocks, custom PHP themes, headless), with pros, cons and which suits which project.',
+    date: '2026-09-27',
+    category: 'Agencies',
+    related: ['figma-to-wordpress', 'elementor-developer', 'wordpress-developer-for-agencies'],
+    body: `
+<p>You have a finished Figma design. Now it needs to become a working WordPress website that clients can edit. There are several ways to build it, and the right one depends on budget, who will edit the site and how custom the design is.</p>
+
+<h2>Option 1: Page builder (Elementor)</h2>
+<ul>
+  <li><strong>Pros:</strong> fast to build, visual editing for clients, huge ecosystem, easy for other developers to pick up</li>
+  <li><strong>Cons:</strong> heavier pages if not built carefully, some pixel-perfect details take workarounds, editing freedom can let clients break layouts</li>
+  <li><strong>Best for:</strong> marketing sites where clients want to edit layouts themselves</li>
+</ul>
+
+<h2>Option 2: Block theme and custom blocks (Gutenberg)</h2>
+<ul>
+  <li><strong>Pros:</strong> uses WordPress's native editor, lightweight output, custom blocks can match the design system exactly while limiting what clients can break</li>
+  <li><strong>Cons:</strong> custom blocks need more development time; editing is less free-form than a page builder</li>
+  <li><strong>Best for:</strong> performance-focused sites and long-term projects with a clear design system</li>
+</ul>
+
+<h2>Option 3: Custom classic theme</h2>
+<ul>
+  <li><strong>Pros:</strong> full control, very lean code, precise implementation</li>
+  <li><strong>Cons:</strong> clients edit through fields rather than visually; changes to layouts need a developer</li>
+  <li><strong>Best for:</strong> highly custom designs, complex functionality and teams with developer support</li>
+</ul>
+
+<h2>Option 4: Headless WordPress</h2>
+<p>WordPress manages content while a separate front end (like Next.js) displays it. Powerful, but more complex and costly to build and host. Rarely needed for small business sites; see <a href="/blog/headless-wordpress-small-business/">headless WordPress for small businesses</a>.</p>
+
+<h2>Quick comparison</h2>
+<table>
+  <thead><tr><th></th><th>Page builder</th><th>Blocks</th><th>Custom theme</th></tr></thead>
+  <tbody>
+    <tr><td>Build speed</td><td>Fast</td><td>Medium</td><td>Slower</td></tr>
+    <tr><td>Page speed</td><td>Good if careful</td><td>Very good</td><td>Very good</td></tr>
+    <tr><td>Client editing</td><td>Very flexible</td><td>Structured</td><td>Fields and forms</td></tr>
+    <tr><td>Design precision</td><td>High</td><td>Very high</td><td>Very high</td></tr>
+  </tbody>
+</table>
+
+<h2>Questions to decide</h2>
+<ul>
+  <li>Who edits the site after launch, and how much freedom do they need?</li>
+  <li>How important are top Core Web Vitals scores?</li>
+  <li>What's the budget and timeline?</li>
+  <li>Will another developer maintain it later?</li>
+</ul>
+
+<h2>Prepare the design well</h2>
+<p>Whatever the approach, well-organised Figma files make the build faster and more accurate; see the <a href="/blog/figma-to-wordpress-designer-guide/">Figma handoff guide</a>.</p>
+
+<p>Need a design built? See <a href="/figma-to-wordpress/">Figma to WordPress development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-saas-startups',
+    seoTitle: 'Website for SaaS Startups: Pages That Drive Sign-ups',
+    title: 'Website for SaaS and Software Startups: Pages That Drive Sign-ups',
+    description: 'What a SaaS or software startup marketing website needs: clear positioning, product and feature pages, pricing, sign-up flow, social proof, docs, security information, blog and a fast WordPress setup.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-startups', 'landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>For a software startup, the marketing website is often the first product experience people have. It must explain what the product does, who it's for and why it's better, then make signing up or booking a demo effortless.</p>
+
+<h2>Positioning on the homepage</h2>
+<ul>
+  <li>A headline that states the outcome for a specific audience</li>
+  <li>A product screenshot or short demo video</li>
+  <li>One primary call to action: "Start free trial" or "Book a demo"</li>
+  <li>Proof: customer logos, ratings or key numbers you can back up</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ul>
+  <li><strong>Product / features:</strong> grouped by the problems they solve, with screenshots</li>
+  <li><strong>Use cases or solutions:</strong> pages for each audience or industry</li>
+  <li><strong>Pricing:</strong> clear plans, what's included and FAQs</li>
+  <li><strong>Customers:</strong> case studies and testimonials</li>
+  <li><strong>Integrations</strong></li>
+  <li><strong>Security and privacy:</strong> data handling, compliance and uptime</li>
+  <li><strong>Docs or help centre</strong></li>
+  <li><strong>Blog and resources</strong></li>
+  <li><strong>About and careers</strong></li>
+</ul>
+
+<h2>The pricing page</h2>
+<ul>
+  <li>Three or four plans with a recommended option highlighted</li>
+  <li>Monthly and annual toggle</li>
+  <li>A feature comparison table</li>
+  <li>FAQs on billing, cancellation and trials</li>
+  <li>A clear path for enterprise enquiries</li>
+</ul>
+<p>See <a href="/blog/show-prices-on-website/">should you show prices?</a></p>
+
+<h2>Sign-up and demo flow</h2>
+<p>Keep the marketing site and the app separate (for example, the app at app.yourdomain.com). Make sign-up forms short, and connect demo requests to your calendar and CRM.</p>
+
+<h2>Why WordPress for the marketing site?</h2>
+<ul>
+  <li>Marketing teams can publish pages and posts without developers</li>
+  <li>Strong SEO foundations and a huge ecosystem</li>
+  <li>Fast landing page creation for campaigns</li>
+</ul>
+<p>Keep engineering focused on the product, not the marketing site.</p>
+
+<h2>Content that brings sign-ups</h2>
+<ul>
+  <li>Articles on the problems your product solves</li>
+  <li>Comparison pages against alternatives, written fairly</li>
+  <li>Templates, calculators and free tools</li>
+</ul>
+<p>See <a href="/blog/topic-clusters-pillar-pages/">topic clusters</a>.</p>
+
+<h2>Track the funnel</h2>
+<p>Track visits, sign-ups, demo requests and activation by source; see <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</p>
+
+<p>See also the <a href="/blog/startup-website-checklist/">startup website checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'restaurant-menu-on-website',
+    seoTitle: 'Restaurant Menu on Your Website: PDF vs Web Page',
+    title: 'Putting Your Restaurant Menu Online: PDF vs Web Page (and How to Do It Right)',
+    description: 'Why restaurant menus work better as web pages than PDFs, what to include (prices, veg markers, allergens), QR code menus, menu updates, Google Business Profile menus and menu schema.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-restaurants', 'wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>The menu is the most visited page on almost every restaurant website. Yet many restaurants upload a scanned PDF or a photo that's hard to read on a phone. A proper menu page brings more customers and is easier to keep updated.</p>
+
+<h2>Why a web page beats a PDF</h2>
+<ul>
+  <li><strong>Mobile-friendly:</strong> no pinching and zooming or waiting for a large file to download</li>
+  <li><strong>Searchable:</strong> Google can read dish names, helping you appear for searches like "best biryani near me"</li>
+  <li><strong>Easy to update:</strong> change a price in seconds</li>
+  <li><strong>Accessible:</strong> screen readers can read it</li>
+  <li><strong>Linkable:</strong> share links to specific sections</li>
+</ul>
+<p>You can still offer a PDF for printing, but make the web page the main menu.</p>
+
+<h2>What to include</h2>
+<ul>
+  <li>Categories: starters, mains, breads, desserts, drinks</li>
+  <li>Dish names with short, appetising descriptions</li>
+  <li>Prices, kept up to date</li>
+  <li>Veg and non-veg markers customers expect</li>
+  <li>Spice levels and allergen information</li>
+  <li>Photos of signature dishes (not every item)</li>
+  <li>Notes on taxes and service charges, if applicable</li>
+</ul>
+
+<h2>Make it easy to scan</h2>
+<ul>
+  <li>Sticky category navigation on mobile</li>
+  <li>Clear typography and spacing</li>
+  <li>Highlight bestsellers and chef's specials</li>
+</ul>
+
+<h2>QR code menus</h2>
+<p>Link table QR codes to your menu web page, not a PDF. It loads faster and you can update it without reprinting codes. Add UTM tags to measure scans; see <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</p>
+
+<h2>Connect to ordering</h2>
+<p>Add "Order online" buttons linking to your direct ordering system or delivery partners; see <a href="/blog/restaurant-website-online-ordering/">online ordering for restaurants</a>.</p>
+
+<h2>Google Business Profile menu</h2>
+<p>Add your menu (or a link to it) to your Google Business Profile, and keep it consistent with your website; see <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+
+<h2>Menu structured data</h2>
+<p>Restaurant schema can include a link to your menu, helping search engines connect your menu page with your restaurant; see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+
+<h2>Keep it current</h2>
+<p>An outdated price or a dish you no longer serve causes awkward moments at the table. Update the menu whenever the physical menu changes.</p>
+`,
+  },
+  {
+    slug: 'website-for-cloud-kitchens',
+    seoTitle: 'Website for Cloud Kitchens: Direct Orders Beyond Aggregators',
+    title: 'Website for Cloud Kitchens: Get Direct Orders Beyond the Aggregators',
+    description: 'How cloud kitchens and delivery-only brands can use a website for direct orders: multiple brands, ordering systems, delivery zones, WhatsApp ordering, loyalty, FSSAI details and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-restaurants', 'woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>Cloud kitchens depend heavily on food delivery apps for orders, and app commissions take a big share of every order. A website with direct ordering won't replace the apps overnight, but it can turn repeat customers into higher-margin direct orders and build a brand you own.</p>
+
+<h2>What a cloud kitchen website should do</h2>
+<ul>
+  <li>Show your brands, menus and prices clearly</li>
+  <li>Take orders directly, or via WhatsApp</li>
+  <li>Explain delivery areas and timings</li>
+  <li>Give customers a reason to order direct</li>
+</ul>
+
+<h2>One brand or many?</h2>
+<p>Many cloud kitchens run several brands from one kitchen. Options:</p>
+<ul>
+  <li><strong>One website per brand:</strong> clear branding, separate SEO, more to manage</li>
+  <li><strong>One website with brand sections:</strong> simpler, lets customers order from several brands in one order if your operations allow</li>
+</ul>
+
+<h2>Direct ordering options</h2>
+<ul>
+  <li><strong>WooCommerce with food ordering features:</strong> menus, add-ons, delivery slots and pin code restrictions</li>
+  <li><strong>Restaurant ordering platforms</strong> that integrate with your website</li>
+  <li><strong>WhatsApp ordering:</strong> menu on the website, order on WhatsApp; simple to start</li>
+</ul>
+<p>See <a href="/blog/restaurant-website-online-ordering/">online ordering options compared</a>.</p>
+
+<h2>Reasons to order direct</h2>
+<ul>
+  <li>Slightly lower prices or free add-ons for direct orders</li>
+  <li>Loyalty points or repeat-order discounts</li>
+  <li>Exclusive combos or dishes</li>
+  <li>Faster support through WhatsApp</li>
+</ul>
+<p>Use inserts in delivery bags (where allowed) to invite app customers to order direct next time.</p>
+
+<h2>Delivery setup</h2>
+<ul>
+  <li>Delivery radius or pin codes</li>
+  <li>Minimum order values and delivery fees</li>
+  <li>Your own riders or a delivery partner</li>
+  <li>Accurate delivery time estimates</li>
+</ul>
+
+<h2>Trust and food safety</h2>
+<ul>
+  <li>Show your FSSAI licence number and hygiene practices</li>
+  <li>Kitchen photos or videos</li>
+  <li>Ingredient and allergen information</li>
+  <li>Reviews from customers</li>
+</ul>
+
+<h2>Menu pages that rank</h2>
+<p>Put menus on proper web pages, not images; see <a href="/blog/restaurant-menu-on-website/">putting your menu online</a>. Target searches like "{cuisine} delivery in {area}".</p>
+
+<h2>Measure</h2>
+<p>Track direct orders, repeat rate and margins versus app orders to see whether your direct channel is growing.</p>
+`,
+  },
+  {
+    slug: 'real-estate-project-microsite',
+    seoTitle: 'Real Estate Project Microsite: What to Include for Leads',
+    title: 'Real Estate Project Microsites: What to Include to Generate Site Visits',
+    description: 'How builders and developers can create project microsites that generate leads: RERA details, floor plans, price information, amenities, location, construction updates, lead forms and ad-ready speed.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['real-estate-website-design', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>For a new residential or commercial project, a dedicated microsite (or project landing page) is often the centre of the marketing campaign. Ads, brochures and channel partners all send buyers there. It needs to answer buyers' questions quickly and turn interest into site visits.</p>
+
+<h2>Microsite or section of the main site?</h2>
+<ul>
+  <li><strong>Separate microsite:</strong> focused campaign landing page, can have its own domain</li>
+  <li><strong>Project section on the main site:</strong> builds the developer's brand and SEO over time</li>
+</ul>
+<p>Many developers do both: a project page on the main site plus focused ad landing pages.</p>
+
+<h2>Essential content</h2>
+<ul>
+  <li><strong>Project overview:</strong> location, type, configurations (2/3 BHK), sizes and possession timeline</li>
+  <li><strong>RERA details:</strong> the project's RERA registration number and the relevant RERA website</li>
+  <li><strong>Floor plans:</strong> clear, zoomable plans for each configuration</li>
+  <li><strong>Price information:</strong> starting prices or a price list request</li>
+  <li><strong>Amenities</strong> with images</li>
+  <li><strong>Location and connectivity:</strong> map, nearby schools, hospitals, offices, metro and highways</li>
+  <li><strong>Gallery:</strong> renders, sample flat photos and site photos</li>
+  <li><strong>Construction updates</strong> with dates, for under-construction projects</li>
+  <li><strong>Developer credentials:</strong> completed projects and years in business</li>
+  <li><strong>Brochure download</strong></li>
+</ul>
+
+<h2>Compliance</h2>
+<p>Under RERA, advertisements for registered projects generally need to show the registration number. Label artist's impressions as such, and avoid claims you can't support. Check your state RERA's current rules.</p>
+
+<h2>Lead capture</h2>
+<ul>
+  <li>Short forms: name, phone, configuration of interest</li>
+  <li>"Book a site visit" with date preferences</li>
+  <li>Click-to-call and WhatsApp</li>
+  <li>Instant response: a callback within minutes greatly improves conversion</li>
+  <li>Leads flowing straight into your CRM</li>
+</ul>
+
+<h2>Speed and ads</h2>
+<p>Most traffic comes from mobile ads. Heavy renders and videos can make pages slow, wasting ad spend. Optimise images, lazy-load galleries and test on mobile networks; see <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes with Google Ads</a>.</p>
+
+<h2>Track campaigns</h2>
+<p>Track form submissions, calls and WhatsApp clicks by campaign; see <a href="/blog/ga4-events-explained/">GA4 events</a>.</p>
+
+<p>For the full developer website, see <a href="/blog/real-estate-website-must-have-features/">real estate website must-have features</a>.</p>
 `,
   },
 ];

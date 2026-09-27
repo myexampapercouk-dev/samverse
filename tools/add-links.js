@@ -274,6 +274,14 @@ const LINKS = [
   ['freelancer-vs-agency-web-developer', '<h2>The bottom line</h2>', '<p>Hiring from outside India? See <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a>.</p>\n\n'],
   ['hire-developer-vs-diy-website', '<h2>If you hire, choose well</h2>', '<p>Not sure what you\'d be paying for? See <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer does</a> and <a href="/blog/web-designer-vs-web-developer/">designer vs developer</a>.</p>\n\n'],
   ['figma-to-wordpress-designer-guide', '<h2>Quick handoff checklist</h2>', '<p>Who does what in a project? See <a href="/blog/web-designer-vs-web-developer/">web designer vs web developer</a>.</p>\n\n'],
+  // Round 34
+  ['elementor-vs-gutenberg', '<h2>My recommendation</h2>', '<p>Going with Elementor? See <a href="/blog/elementor-pro-worth-it/">is Elementor Pro worth it?</a></p>\n\n'],
+  ['how-to-choose-wordpress-theme', '<h2>Mistakes to avoid</h2>', '<p>Building with Elementor? See <a href="/blog/best-theme-for-elementor/">the best themes for Elementor</a>.</p>\n\n'],
+  ['why-elementor-sites-slow', '<h2>Should you switch away from Elementor?</h2>', '<p>Your theme matters too; see <a href="/blog/best-theme-for-elementor/">choosing a lightweight theme for Elementor</a>.</p>\n\n'],
+  ['figma-to-wordpress-designer-guide', '<h2>8. Agree on scope</h2>', '<p>How will it be built? Compare <a href="/blog/figma-to-wordpress-approaches/">page builder, block theme and custom theme approaches</a>.</p>\n\n'],
+  ['startup-website-checklist', '<h2>Build for iteration</h2>', '<p>Building a software product? See <a href="/blog/website-for-saas-startups/">websites for SaaS startups</a>.</p>\n\n'],
+  ['restaurant-website-online-ordering', '<h2>Get found by hungry locals</h2>', '<p>More guides: <a href="/blog/restaurant-menu-on-website/">putting your menu online</a> and <a href="/blog/website-for-cloud-kitchens/">websites for cloud kitchens</a>.</p>\n\n'],
+  ['real-estate-website-must-have-features', '<h2>Performance and marketing</h2>', '<p>Launching a new project? See <a href="/blog/real-estate-project-microsite/">real estate project microsites</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
