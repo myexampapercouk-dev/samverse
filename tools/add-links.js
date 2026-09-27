@@ -116,6 +116,12 @@ const LINKS = [
   ['core-web-vitals-explained', '<h2>Where to start</h2>', '<p>Remember your real audience: see <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>\n\n'],
   ['website-brief-template', '<h2>7. Content</h2>', '<p>Brand assets checklist: <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>.</p>\n\n'],
   ['website-accessibility-basics', '<h2>Common WordPress issues</h2>', '<p>Serving many older customers? See <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>\n\n'],
+  // Round 10
+  ['freelancer-vs-agency-web-developer', '<h2>Red flags</h2>', '<p>Already stuck with a developer who won\'t hand over access? See <a href="/blog/regain-website-access-old-developer/">how to regain control of your website</a>.</p>\n\n'],
+  ['contact-form-not-getting-enquiries', '<h2>Persuasion reasons people don\'t fill it in</h2>', '<p>Getting lots of junk instead? See <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a>, and make sure your domain email is authenticated: <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>\n\n'],
+  ['write-service-pages-that-convert', '<h2>SEO essentials</h2>', '<p>Tips for writing them: <a href="/blog/faq-page-seo/">FAQ sections that help customers and SEO</a>.</p>\n\n'],
+  ['website-for-lawyers-and-chartered-accountants', '<h2>Local SEO for professionals</h2>', '<p>Insurance and financial advisors face similar rules; see <a href="/blog/website-for-insurance-financial-advisors/">websites for insurance agents and financial advisors</a>.</p>\n\n'],
+  ['real-estate-website-must-have-features', '<h2>Common mistakes</h2>', '<p>Agents and brokers have different needs from builders; see <a href="/blog/website-for-real-estate-agents-brokers/">websites for real estate agents and brokers</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

@@ -387,6 +387,8 @@ module.exports = [
   <li><strong>How will we communicate?</strong> WhatsApp, email, calls, and how quickly they respond.</li>
 </ol>
 
+<p>Already stuck with a developer who won't hand over access? See <a href="/blog/regain-website-access-old-developer/">how to regain control of your website</a>.</p>
+
 <h2>Red flags</h2>
 <ul>
   <li>No portfolio of live sites</li>
@@ -1722,6 +1724,8 @@ module.exports = [
 <h2>Professional guidelines and tone</h2>
 <p>Professions such as law and chartered accountancy have their own rules on how services may be publicised. Keep your website factual and informative: describe your areas of practice and qualifications, avoid exaggerated claims or guarantees of outcomes, and review content against your professional body's current guidelines before publishing.</p>
 
+<p>Insurance and financial advisors face similar rules; see <a href="/blog/website-for-insurance-financial-advisors/">websites for insurance agents and financial advisors</a>.</p>
+
 <h2>Local SEO for professionals</h2>
 <ul>
   <li>Mention your city and the areas you serve naturally in titles and content</li>
@@ -1913,6 +1917,8 @@ module.exports = [
   <li>Use descriptive titles and alt text for images</li>
   <li>Keep your Google Business Profile updated with project photos</li>
 </ul>
+
+<p>Agents and brokers have different needs from builders; see <a href="/blog/website-for-real-estate-agents-brokers/">websites for real estate agents and brokers</a>.</p>
 
 <h2>Common mistakes</h2>
 <ul>
@@ -3374,6 +3380,8 @@ module.exports = [
 <h3>4. Over-aggressive spam protection</h3>
 <p>Some anti-spam tools block real people too. Use invisible methods (honeypot fields, time checks) or friendly checks rather than hard puzzles.</p>
 
+<p>Getting lots of junk instead? See <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a>, and make sure your domain email is authenticated: <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
+
 <h2>Persuasion reasons people don't fill it in</h2>
 <h3>5. Too many fields</h3>
 <p>Every extra field reduces submissions. Ask only for what you need to reply: often name, phone or email, and a short message.</p>
@@ -4721,6 +4729,8 @@ module.exports = [
 <p>Answer questions about cost, timelines, what you need from the client, and guarantees. FAQs also help your page answer more searches.</p>
 <h3>8. A final call to action</h3>
 <p>Repeat the next step at the end, with a short form or WhatsApp.</p>
+
+<p>Tips for writing them: <a href="/blog/faq-page-seo/">FAQ sections that help customers and SEO</a>.</p>
 
 <h2>SEO essentials</h2>
 <ul>
@@ -6212,6 +6222,314 @@ module.exports = [
 <p>Ask an older relative or customer to complete a common task on your site, such as finding timings or booking an appointment, and watch where they struggle. It's the most valuable test you can run.</p>
 
 <p>These improvements overlap with general <a href="/blog/website-accessibility-basics/">accessibility basics</a> and help every visitor. They're especially important for <a href="/wordpress-website-for-doctors/">healthcare</a> and <a href="/website-for-temples-and-ngos/">temple and community</a> websites.</p>
+`,
+  },
+  {
+    slug: 'regain-website-access-old-developer',
+    seoTitle: 'Get Your Website Back From an Old Developer',
+    title: 'How to Regain Control of Your Website From a Previous Developer',
+    description: 'Lost contact with your old developer or agency? How to find out who controls your domain, hosting and WordPress admin, regain access safely and avoid it happening again.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-migration', 'wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>It happens more often than you'd think: the freelancer who built your site stops replying, or an agency relationship ends badly, and you realise you don't have the logins to your own website. Here's how to take back control, step by step.</p>
+
+<h2>Step 1: Work out what you need</h2>
+<p>A website depends on four separate things. Find out who controls each:</p>
+<ol>
+  <li><strong>Domain name:</strong> where it's registered and in whose name</li>
+  <li><strong>DNS:</strong> where the domain's records are managed (registrar, host or a service like Cloudflare)</li>
+  <li><strong>Hosting:</strong> the server where the site's files and database live</li>
+  <li><strong>WordPress admin:</strong> the login to manage the site</li>
+</ol>
+
+<h2>Step 2: Find the domain registrar</h2>
+<p>Use a WHOIS lookup to see which registrar holds your domain. If it's registered in your name or company name, contact the registrar with proof of identity and ownership to recover the account. If it's in the developer's name, you'll need their cooperation or the registrar's dispute process. That's why domains should always be in your own name.</p>
+
+<h2>Step 3: Identify the hosting provider</h2>
+<p>Hosting lookup tools and DNS records usually reveal the host. If the hosting account is in your name, contact the host to recover it. If it's the developer's account, ask for the site to be transferred or for a full backup (files and database).</p>
+
+<h2>Step 4: Regain WordPress access</h2>
+<ul>
+  <li>Try the "Lost your password?" link with any email you might have used</li>
+  <li>With hosting access, a developer can create a new administrator account safely</li>
+  <li>Then remove or downgrade old accounts you don't recognise</li>
+</ul>
+
+<h2>Step 5: Secure everything</h2>
+<ol>
+  <li>Change passwords for registrar, hosting, WordPress, email and FTP/SFTP</li>
+  <li>Turn on two-factor authentication</li>
+  <li>Remove old users and API keys</li>
+  <li>Take a fresh backup and check for anything suspicious; see <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked site</a></li>
+  <li>Update plugins, themes and WordPress</li>
+</ol>
+
+<h2>Step 6: Consider moving</h2>
+<p>If the site is on the developer's hosting, migrating it to hosting in your own name is often the cleanest fix; see <a href="/wordpress-migration/">WordPress migration</a>.</p>
+
+<h2>Prevent it happening again</h2>
+<ul>
+  <li>Register domains and hosting in your own name and email</li>
+  <li>Give developers their own user accounts, not your master login</li>
+  <li>Keep a secure record of all logins</li>
+  <li>Get a handover document at the end of every project</li>
+</ul>
+<p>See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> and <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+`,
+  },
+  {
+    slug: 'stop-contact-form-spam',
+    seoTitle: 'How to Stop Contact Form Spam on WordPress',
+    title: 'How to Stop Contact Form Spam on Your WordPress Website',
+    description: 'Tired of spam form submissions? Practical ways to stop contact form spam on WordPress (honeypots, time checks, friendly CAPTCHAs, validation and email filtering) without blocking real customers.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-maintenance', 'wordpress-website-development', 'wordpress-malware-removal'],
+    body: `
+<p>Spam submissions waste time and can bury real enquiries. The goal is to block bots without making the form harder for genuine customers. Here are the methods that work, from least to most intrusive.</p>
+
+<h2>1. Honeypot fields</h2>
+<p>A hidden field that people can't see but bots fill in automatically. Any submission with it filled is discarded. It's invisible to real users and stops a large share of simple bots.</p>
+
+<h2>2. Time checks</h2>
+<p>Bots often submit forms within a second of loading the page. Rejecting submissions sent unrealistically fast blocks many of them with no impact on people.</p>
+
+<h2>3. Simple questions or invisible challenges</h2>
+<p>A basic question (like a simple sum) or an invisible challenge service stops more determined bots. Prefer options that don't make people solve frustrating puzzles, especially on mobile.</p>
+
+<h2>4. Validation</h2>
+<ul>
+  <li>Require valid phone number and email formats</li>
+  <li>Limit message length</li>
+  <li>Block submissions containing lots of links, a common spam pattern</li>
+</ul>
+
+<h2>5. Server-side checks</h2>
+<p>Client-side checks can be bypassed, so important checks (like the honeypot) should also be verified on the server that processes the form.</p>
+
+<h2>6. Anti-spam services and filters</h2>
+<p>Spam-filtering plugins and services analyse submissions and flag likely spam. Keep a spam folder to review occasionally, so real enquiries aren't lost.</p>
+
+<h2>What to avoid</h2>
+<ul>
+  <li>Hard CAPTCHAs that frustrate real customers and cut submissions</li>
+  <li>Blocking whole countries if you might get genuine international enquiries</li>
+  <li>Filters so strict that real messages vanish silently</li>
+</ul>
+
+<h2>Test after changes</h2>
+<p>After adding spam protection, submit the form yourself on desktop and mobile and confirm the email arrives. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a>.</p>
+
+<h2>Real example</h2>
+<p>This website's contact form combines a hidden honeypot field, a time check and a simple maths question, with the honeypot also checked on the server, as described in the <a href="/work/samverse/">Samverse case study</a>.</p>
+`,
+  },
+  {
+    slug: 'business-email-deliverability-spf-dkim-dmarc',
+    seoTitle: 'Business Email Deliverability: SPF, DKIM & DMARC',
+    title: 'Business Email Deliverability: SPF, DKIM and DMARC Explained Simply',
+    description: 'Why emails from your domain and website land in spam, and how SPF, DKIM and DMARC records fix it, explained simply for business owners, with a setup checklist.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-maintenance', 'wordpress-migration', 'woocommerce-developer'],
+    body: `
+<p>If customers say your emails went to spam, or your website's order and enquiry emails never arrive, the problem is often missing email authentication. Three DNS records, SPF, DKIM and DMARC, tell receiving mail servers that your emails are genuine.</p>
+
+<h2>Why emails go to spam</h2>
+<ul>
+  <li>The sending server isn't authorised to send for your domain</li>
+  <li>Emails aren't signed, so they can't be verified</li>
+  <li>Your domain has no policy telling receivers what to do with unverified mail</li>
+  <li>Website emails are sent from the web server without proper authentication</li>
+</ul>
+
+<h2>SPF: who may send</h2>
+<p>SPF (Sender Policy Framework) is a DNS record listing the servers allowed to send email for your domain, for example your email provider and any service your website uses. Keep a single SPF record that includes all legitimate senders.</p>
+
+<h2>DKIM: a digital signature</h2>
+<p>DKIM (DomainKeys Identified Mail) adds a cryptographic signature to your emails. Your email provider gives you a DKIM record to add to DNS, and receiving servers use it to verify the message wasn't altered and really came from your domain.</p>
+
+<h2>DMARC: the policy</h2>
+<p>DMARC tells receivers what to do if an email fails SPF or DKIM checks (monitor, quarantine or reject) and can send you reports. Start with a monitoring policy, review the reports, then tighten it once all legitimate senders pass.</p>
+
+<h2>Website emails</h2>
+<p>WordPress forms and WooCommerce order emails often fail because they're sent using the server's basic mail function. Send them through an authenticated service (SMTP or a transactional email provider) that's included in your SPF and DKIM setup. This site sends form emails through an authenticated Gmail connection for the same reason.</p>
+
+<h2>Setup checklist</h2>
+<ol>
+  <li>List every service that sends email as your domain (mailbox provider, website, newsletter tool, CRM)</li>
+  <li>Create or update one SPF record including them</li>
+  <li>Enable DKIM for each sending service</li>
+  <li>Add a DMARC record in monitoring mode</li>
+  <li>Test by sending emails to different providers and checking headers</li>
+  <li>Tighten DMARC once everything passes</li>
+</ol>
+
+<h2>Be careful when changing DNS</h2>
+<p>Mistakes in DNS can stop email entirely. When moving hosting or domains, copy all email records first; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
+
+<p>If enquiries aren't arriving, also read <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a>.</p>
+`,
+  },
+  {
+    slug: 'faq-page-seo',
+    seoTitle: 'How to Create an FAQ Section That Helps SEO',
+    title: 'How to Create FAQ Sections That Help Customers and SEO',
+    description: 'How to write FAQ sections that answer real customer questions, reduce enquiries about basics, support SEO and AI answers, and where to place them, with tips on structure and schema.',
+    date: '2026-09-27',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>Good FAQs do two jobs: they answer the questions stopping visitors from contacting you, and they help search engines and AI assistants understand exactly what you offer. Here's how to write them well.</p>
+
+<h2>Find the real questions</h2>
+<ul>
+  <li>Questions customers ask on calls, WhatsApp and email</li>
+  <li>Objections that come up before people buy: price, timing, process, guarantees</li>
+  <li>Search queries in Google Search Console</li>
+  <li>"People also ask" boxes in Google for your main topics</li>
+</ul>
+
+<h2>Write answers that help</h2>
+<ul>
+  <li><strong>Answer first, in the first sentence.</strong> Then add detail.</li>
+  <li><strong>Be specific and honest.</strong> Avoid vague answers like "it depends" without explaining what it depends on.</li>
+  <li><strong>Keep answers short:</strong> two to four sentences for most questions</li>
+  <li><strong>Link to more detail</strong> where it exists, such as a service page or guide</li>
+</ul>
+
+<h2>Where to put FAQs</h2>
+<ul>
+  <li><strong>Service pages:</strong> questions specific to that service. This is the most valuable placement.</li>
+  <li><strong>Homepage:</strong> the top five or six general questions</li>
+  <li><strong>Product pages:</strong> sizing, delivery, usage and returns</li>
+  <li><strong>Landing pages:</strong> objections that stop people converting</li>
+</ul>
+<p>A single giant FAQ page is less useful than relevant FAQs on each page.</p>
+
+<h2>FAQs and SEO</h2>
+<ul>
+  <li>FAQs help a page cover more of the questions searchers ask</li>
+  <li>Clear question-and-answer structure is easy for AI tools to use; see <a href="/blog/ai-search-optimization-website/">AI search optimization</a></li>
+  <li>FAQ schema can be added to describe the content, though Google shows FAQ rich results only for limited types of sites, so don't expect special search displays</li>
+</ul>
+<p>See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+
+<h2>Keep them up to date</h2>
+<p>Review FAQs when prices, processes or policies change. Outdated answers damage trust.</p>
+
+<h2>Examples</h2>
+<p>Every service page on this site has its own FAQs, for example <a href="/wordpress-maintenance/">WordPress maintenance</a> and <a href="/woocommerce-developer/">WooCommerce development</a>, answering questions specific to each service.</p>
+`,
+  },
+  {
+    slug: 'website-for-insurance-financial-advisors',
+    seoTitle: 'Websites for Insurance Agents & Financial Advisors',
+    title: 'Websites for Insurance Agents and Financial Advisors',
+    description: 'How insurance agents, financial advisors and wealth planners can build trustworthy websites: credentials and registrations, services, educational content, compliance cautions and lead forms.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-lawyers-and-consultants', 'wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>People choosing someone to advise them about insurance, investments or financial planning need to trust them deeply. A professional website helps establish that trust, but financial services are regulated, so content must be handled carefully.</p>
+
+<h2>What clients look for</h2>
+<ul>
+  <li>Who you are, your qualifications and the registrations or licences relevant to your role</li>
+  <li>The services you offer: life, health and general insurance, retirement planning, tax planning, investment advice or distribution</li>
+  <li>How you work and how you're paid (fees, commissions), clearly explained</li>
+  <li>An easy, low-pressure way to book a conversation</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ol>
+  <li><strong>About:</strong> your background, credentials, registrations and approach</li>
+  <li><strong>Services:</strong> a page per service, written for clients rather than in product jargon</li>
+  <li><strong>How it works:</strong> the process from first call to ongoing reviews</li>
+  <li><strong>Resources:</strong> educational articles and calculators (with clear assumptions)</li>
+  <li><strong>Contact and booking:</strong> consultation form, phone, WhatsApp and office details</li>
+</ol>
+
+<h2>Compliance first</h2>
+<p>Insurance and investment advice are regulated, and the rules on what you can claim, how you describe products and what disclosures you must show depend on your registration and role. Before publishing:</p>
+<ul>
+  <li>Check content against the rules of your regulator and the companies you represent</li>
+  <li>Avoid promising returns or guaranteed outcomes</li>
+  <li>Include the disclosures and registration details required for your role</li>
+  <li>Be careful with testimonials, which may be restricted</li>
+</ul>
+<p>When in doubt, have a compliance professional review the site.</p>
+
+<h2>Educational content builds trust</h2>
+<p>Plain-English guides on topics like "how much term insurance do I need?" or "health insurance for parents" attract searchers and show expertise. Keep them general and accurate, and update them when rules change.</p>
+
+<h2>Privacy and security</h2>
+<p>Clients may share sensitive financial information. Use HTTPS, collect minimal data through forms, and publish a clear privacy policy; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy basics</a>.</p>
+
+<h2>Local and personal SEO</h2>
+<ul>
+  <li>Target "financial advisor in {city}" and "health insurance advisor {city}"</li>
+  <li>A complete Google Business Profile</li>
+  <li>A personal-brand approach often works well; see <a href="/blog/personal-brand-website-professionals/">personal brand websites for professionals</a></li>
+</ul>
+
+<p>Similar principles apply to <a href="/website-for-lawyers-and-consultants/">lawyers, CAs and consultants</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-real-estate-agents-brokers',
+    seoTitle: 'Websites for Real Estate Agents & Property Brokers',
+    title: 'Websites for Real Estate Agents and Property Brokers',
+    description: 'How property agents and brokers can win clients online: property listings for sale and rent, area expertise, owner listing forms, WhatsApp enquiries, trust signals and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['real-estate-website-design', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>Property agents and brokers compete with large portals, but they have one big advantage: local knowledge and personal service. A good website shows that advantage and turns it into enquiries from both buyers or tenants and property owners.</p>
+
+<h2>Two audiences</h2>
+<ul>
+  <li><strong>Buyers and tenants</strong> looking for properties in your area</li>
+  <li><strong>Owners and sellers</strong> looking for an agent to sell or rent their property</li>
+</ul>
+<p>Your website should serve both, with clear paths for each.</p>
+
+<h2>For buyers and tenants</h2>
+<ul>
+  <li><strong>Listings:</strong> photos, price or rent, size, configuration, locality, furnishing, availability</li>
+  <li><strong>Filters:</strong> buy or rent, budget, location, property type</li>
+  <li><strong>Quick enquiry:</strong> WhatsApp and a short form on every listing</li>
+  <li><strong>Remove sold or rented properties promptly.</strong> Outdated listings frustrate visitors.</li>
+</ul>
+
+<h2>For property owners</h2>
+<ul>
+  <li>A "List your property" form</li>
+  <li>How you market properties and screen buyers or tenants</li>
+  <li>Your fees and process, explained clearly</li>
+  <li>Recent deals in the area (with permission)</li>
+</ul>
+
+<h2>Show local expertise</h2>
+<p>Area guides are your strongest content: schools, transport, markets, typical prices and rents, and upcoming developments for each locality you cover. They attract searchers and prove you know the area. Write them only for places you genuinely work; see <a href="/blog/local-landing-pages-without-doorway-pages/">local pages without doorway pages</a>.</p>
+
+<h2>Build trust</h2>
+<ul>
+  <li>Your photo, experience and registration details where applicable (for example RERA agent registration)</li>
+  <li>Client reviews and Google reviews</li>
+  <li>Office address and working hours</li>
+</ul>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "property dealer in {locality}", "flats for rent in {area}" and "2BHK for sale {locality}"</li>
+  <li>A complete Google Business Profile with photos and reviews</li>
+  <li>Area guides and unique listing descriptions</li>
+</ul>
+
+<p>Builders and developers have different needs; see <a href="/blog/real-estate-website-must-have-features/">real estate website must-haves</a> and <a href="/real-estate-website-design/">real estate website design</a>.</p>
 `,
   },
 ];

@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Contact Form Not Getting Enquiries? Fix It | Samverse</title>
-  <meta name="description" content="Getting traffic but no form submissions? Common reasons contact forms fail, from broken email delivery and spam filters to too many fields, with fixes that bring enquiries back.">
+  <title>Business Email Deliverability: SPF, DKIM &amp; DMARC | Samverse</title>
+  <meta name="description" content="Why emails from your domain and website land in spam, and how SPF, DKIM and DMARC records fix it, explained simply for business owners, with a setup checklist.">
   <meta name="author" content="Sameer Gupta">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="https://samverse.space/blog/contact-form-not-getting-enquiries/">
+  <link rel="canonical" href="https://samverse.space/blog/business-email-deliverability-spf-dkim-dmarc/">
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
-  <meta property="og:url" content="https://samverse.space/blog/contact-form-not-getting-enquiries/">
-  <meta property="og:title" content="Website Contact Form Not Getting Enquiries? Fix It | Samverse">
-  <meta property="og:description" content="Getting traffic but no form submissions? Common reasons contact forms fail, from broken email delivery and spam filters to too many fields, with fixes that bring enquiries back.">
-  <meta property="og:image" content="https://samverse.space/assets/og/blog-contact-form-not-getting-enquiries.png">
+  <meta property="og:url" content="https://samverse.space/blog/business-email-deliverability-spf-dkim-dmarc/">
+  <meta property="og:title" content="Business Email Deliverability: SPF, DKIM &amp; DMARC | Samverse">
+  <meta property="og:description" content="Why emails from your domain and website land in spam, and how SPF, DKIM and DMARC records fix it, explained simply for business owners, with a setup checklist.">
+  <meta property="og:image" content="https://samverse.space/assets/og/blog-business-email-deliverability-spf-dkim-dmarc.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://samverse.space/assets/og/blog-contact-form-not-getting-enquiries.png">
+  <meta name="twitter:image" content="https://samverse.space/assets/og/blog-business-email-deliverability-spf-dkim-dmarc.png">
   <meta name="theme-color" content="#6D4AFF">
   <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -38,14 +38,14 @@
   "@graph": [
     {
       "@type": "BlogPosting",
-      "@id": "https://samverse.space/blog/contact-form-not-getting-enquiries/#article",
-      "headline": "Why Your Website Contact Form Isn't Getting Enquiries (and How to Fix It)",
-      "description": "Getting traffic but no form submissions? Common reasons contact forms fail, from broken email delivery and spam filters to too many fields, with fixes that bring enquiries back.",
+      "@id": "https://samverse.space/blog/business-email-deliverability-spf-dkim-dmarc/#article",
+      "headline": "Business Email Deliverability: SPF, DKIM and DMARC Explained Simply",
+      "description": "Why emails from your domain and website land in spam, and how SPF, DKIM and DMARC records fix it, explained simply for business owners, with a setup checklist.",
       "datePublished": "2026-09-27",
       "dateModified": "2026-09-27",
-      "mainEntityOfPage": "https://samverse.space/blog/contact-form-not-getting-enquiries/",
-      "image": "https://samverse.space/assets/og/blog-contact-form-not-getting-enquiries.png",
-      "articleSection": "Growth",
+      "mainEntityOfPage": "https://samverse.space/blog/business-email-deliverability-spf-dkim-dmarc/",
+      "image": "https://samverse.space/assets/og/blog-business-email-deliverability-spf-dkim-dmarc.png",
+      "articleSection": "Guides",
       "inLanguage": "en-IN",
       "author": {
         "@type": "Person",
@@ -80,8 +80,8 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Why Your Website Contact Form Isn't Getting Enquiries (and How to Fix It)",
-          "item": "https://samverse.space/blog/contact-form-not-getting-enquiries/"
+          "name": "Business Email Deliverability: SPF, DKIM and DMARC Explained Simply",
+          "item": "https://samverse.space/blog/business-email-deliverability-spf-dkim-dmarc/"
         }
       ]
     }
@@ -117,9 +117,9 @@
   <main>
     <article class="post">
       <header class="post-head container">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> Growth</nav>
-        <span class="eyebrow">Growth</span>
-        <h1>Why Your Website Contact Form Isn't Getting Enquiries (and How to Fix It)</h1>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> Guides</nav>
+        <span class="eyebrow">Guides</span>
+        <h1>Business Email Deliverability: SPF, DKIM and DMARC Explained Simply</h1>
         <p class="post-meta">By <a href="/about/">Sameer Gupta</a> · <time datetime="2026-09-27">27 September 2026</time> · 3 min read</p>
       </header>
 
@@ -127,79 +127,67 @@
         <aside class="post-toc">
           <strong>On this page</strong>
           <ol>
-            <li><a href="#first-is-the-form-actually-working">First: is the form actually working?</a></li>
-            <li><a href="#technical-reasons-forms-fail">Technical reasons forms fail</a></li>
-            <li><a href="#persuasion-reasons-people-don-t-fill-it-in">Persuasion reasons people don't fill it in</a></li>
-            <li><a href="#make-sure-you-never-miss-a-lead">Make sure you never miss a lead</a></li>
-            <li><a href="#quick-fix-checklist">Quick fix checklist</a></li>
+            <li><a href="#why-emails-go-to-spam">Why emails go to spam</a></li>
+            <li><a href="#spf-who-may-send">SPF: who may send</a></li>
+            <li><a href="#dkim-a-digital-signature">DKIM: a digital signature</a></li>
+            <li><a href="#dmarc-the-policy">DMARC: the policy</a></li>
+            <li><a href="#website-emails">Website emails</a></li>
+            <li><a href="#setup-checklist">Setup checklist</a></li>
+            <li><a href="#be-careful-when-changing-dns">Be careful when changing DNS</a></li>
           </ol>
         </aside>
         <div class="post-body">
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>First test the form yourself: many forms fail silently because emails aren't delivered.</li>
-              <li>Use authenticated email sending and test forms after every update.</li>
-              <li>Fewer fields, better placement, trust signals and WhatsApp increase submissions.</li>
+              <li>SPF lists who may send for your domain; DKIM signs messages; DMARC sets the policy.</li>
+              <li>Send website and store emails through an authenticated service.</li>
+              <li>Start DMARC in monitoring mode and change DNS carefully.</li>
             </ul>
           </div>
-<p>If your website gets visitors but your inbox stays empty, the contact form is a common culprit. Sometimes it's technically broken; sometimes it just isn't persuading people to use it. Here's how to diagnose and fix both.</p>
+<p>If customers say your emails went to spam, or your website's order and enquiry emails never arrive, the problem is often missing email authentication. Three DNS records, SPF, DKIM and DMARC, tell receiving mail servers that your emails are genuine.</p>
 
-<h2 id="first-is-the-form-actually-working">First: is the form actually working?</h2>
-<p>Fill in your own form right now and check whether the email arrives. You'd be surprised how many businesses discover their form has been silently failing for months.</p>
-
-<h2 id="technical-reasons-forms-fail">Technical reasons forms fail</h2>
-<h3>1. Emails aren't being delivered</h3>
-<p>Many WordPress sites send form emails using the server's basic mail function, which is often blocked or sent to spam. Use an authenticated sending method (SMTP or a transactional email service) and set up SPF and DKIM records for your domain.</p>
-<h3>2. Emails go to spam or an old address</h3>
-<p>Check spam folders, and confirm the form sends to an inbox someone actually reads.</p>
-<h3>3. A plugin or update broke it</h3>
-<p>Updates can break forms. Test forms after every update; see the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>.</p>
-<h3>4. Over-aggressive spam protection</h3>
-<p>Some anti-spam tools block real people too. Use invisible methods (honeypot fields, time checks) or friendly checks rather than hard puzzles.</p>
-
-<p>Getting lots of junk instead? See <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a>, and make sure your domain email is authenticated: <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
-
-<h2 id="persuasion-reasons-people-don-t-fill-it-in">Persuasion reasons people don't fill it in</h2>
-<h3>5. Too many fields</h3>
-<p>Every extra field reduces submissions. Ask only for what you need to reply: often name, phone or email, and a short message.</p>
-<h3>6. The form is hard to find</h3>
-<p>If it's only on a contact page, many visitors never see it. Add a short form or call to action to service pages and the end of articles.</p>
-<h3>7. No reason to trust you</h3>
-<p>Testimonials, client logos and a clear promise ("I'll reply within 24 hours") near the form make people comfortable sharing details.</p>
-<h3>8. Mobile problems</h3>
-<p>Tiny fields, wrong keyboards for phone numbers, or a submit button hidden behind a chat widget all stop mobile visitors.</p>
-<h3>9. No alternative</h3>
-<p>Some people prefer WhatsApp or a call. Offer both next to the form; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
-
-<p>For more ways to turn visitors into leads, see <a href="/blog/get-more-enquiries-from-your-website/">12 ways to get more enquiries from your website</a>.</p>
-
-<h2 id="make-sure-you-never-miss-a-lead">Make sure you never miss a lead</h2>
+<h2 id="why-emails-go-to-spam">Why emails go to spam</h2>
 <ul>
-  <li>Send enquiries to email and a backup channel (WhatsApp or a Google Sheet)</li>
-  <li>Show a clear thank-you message so people know it worked</li>
-  <li>Track submissions in Google Analytics to spot sudden drops</li>
-  <li>Reply fast, because the first business to respond often wins</li>
+  <li>The sending server isn't authorised to send for your domain</li>
+  <li>Emails aren't signed, so they can't be verified</li>
+  <li>Your domain has no policy telling receivers what to do with unverified mail</li>
+  <li>Website emails are sent from the web server without proper authentication</li>
 </ul>
 
-<h2 id="quick-fix-checklist">Quick fix checklist</h2>
+<h2 id="spf-who-may-send">SPF: who may send</h2>
+<p>SPF (Sender Policy Framework) is a DNS record listing the servers allowed to send email for your domain, for example your email provider and any service your website uses. Keep a single SPF record that includes all legitimate senders.</p>
+
+<h2 id="dkim-a-digital-signature">DKIM: a digital signature</h2>
+<p>DKIM (DomainKeys Identified Mail) adds a cryptographic signature to your emails. Your email provider gives you a DKIM record to add to DNS, and receiving servers use it to verify the message wasn't altered and really came from your domain.</p>
+
+<h2 id="dmarc-the-policy">DMARC: the policy</h2>
+<p>DMARC tells receivers what to do if an email fails SPF or DKIM checks (monitor, quarantine or reject) and can send you reports. Start with a monitoring policy, review the reports, then tighten it once all legitimate senders pass.</p>
+
+<h2 id="website-emails">Website emails</h2>
+<p>WordPress forms and WooCommerce order emails often fail because they're sent using the server's basic mail function. Send them through an authenticated service (SMTP or a transactional email provider) that's included in your SPF and DKIM setup. This site sends form emails through an authenticated Gmail connection for the same reason.</p>
+
+<h2 id="setup-checklist">Setup checklist</h2>
 <ol>
-  <li>Test the form yourself today</li>
-  <li>Set up authenticated email sending</li>
-  <li>Cut fields to the essentials</li>
-  <li>Add WhatsApp and phone next to the form</li>
-  <li>Place calls to action on every key page</li>
-  <li>Test again after every update</li>
+  <li>List every service that sends email as your domain (mailbox provider, website, newsletter tool, CRM)</li>
+  <li>Create or update one SPF record including them</li>
+  <li>Enable DKIM for each sending service</li>
+  <li>Add a DMARC record in monitoring mode</li>
+  <li>Test by sending emails to different providers and checking headers</li>
+  <li>Tighten DMARC once everything passes</li>
 </ol>
 
-<p>Broken forms are one of the most expensive silent problems a business site can have. A <a href="/wordpress-maintenance/">maintenance plan</a> includes regular form checks so it can't happen unnoticed.</p>
+<h2 id="be-careful-when-changing-dns">Be careful when changing DNS</h2>
+<p>Mistakes in DNS can stop email entirely. When moving hosting or domains, copy all email records first; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
+
+<p>If enquiries aren't arriving, also read <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Why%20Your%20Website%20Contact%20Form%20Isn't%20Getting%20Enquiries%20(and%20How%20to%20Fix%20It)%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Business%20Email%20Deliverability%3A%20SPF%2C%20DKIM%20and%20DMARC%20Explained%20Simply%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
@@ -216,8 +204,8 @@
         <div class="section-head reveal"><span class="eyebrow">Services</span><h2>How I can help</h2></div>
         <div class="industries related-grid reveal">
           <a class="industry" href="/wordpress-maintenance/"><h3>Website Maintenance</h3><p>Monthly WordPress maintenance: updates, backups, security monitoring, uptime checks and small content changes, so your website stays fast, secure and online..</p><span class="ind-arrow">→</span></a>
-          <a class="industry" href="/landing-page-design/"><h3>Landing Pages</h3><p>High-converting landing pages for Google Ads, Meta ads and campaigns.</p><span class="ind-arrow">→</span></a>
-          <a class="industry" href="/website-redesign/"><h3>Website Redesign</h3><p>Outdated, slow or not mobile-friendly? Get your website redesigned on WordPress with a modern look, faster speed and better SEO, without losing your Google rankings..</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/wordpress-migration/"><h3>Migration &amp; Hosting</h3><p>Move your WordPress site to new hosting or a new domain with zero downtime and no lost SEO.</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/woocommerce-developer/"><h3>Online Stores</h3><p>Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout..</p><span class="ind-arrow">→</span></a>
         </div>
       </div>
     </section>
@@ -226,9 +214,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/get-more-enquiries-from-your-website/"><span class="work-tag">Growth</span><h3>12 Ways to Get More Enquiries From Your Business Website</h3><p>Getting visitors but few calls? 12 practical ways to turn more website visitors into enquiries, from clear headlines and WhatsApp buttons to speed, trust signals and forms.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
-          <a class="post-card" href="/blog/whatsapp-on-business-website/"><span class="work-tag">Growth</span><h3>WhatsApp on Your Business Website: How to Add It and Get More Enquiries</h3><p>How to add WhatsApp to your website the right way: click-to-chat buttons, pre-filled messages, form-to-WhatsApp flows, WhatsApp Business features and tracking enquiries.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
-          <a class="post-card" href="/blog/website-ready-for-google-ads/"><span class="work-tag">Growth</span><h3>Is Your Website Ready for Google Ads? A Pre-Launch Checklist</h3><p>Before spending on Google Ads, check your website is ready: landing pages, speed, conversion tracking, calls to action, trust signals, forms and policy pages, so clicks become leads.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/domain-hosting-ssl-explained/"><span class="work-tag">Guides</span><h3>Domain, Hosting and SSL Explained Simply for Business Owners</h3><p>What's the difference between a domain, hosting and an SSL certificate? A plain-English explanation for business owners, with costs, renewals and common mistakes to avoid.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/contact-form-not-getting-enquiries/"><span class="work-tag">Growth</span><h3>Why Your Website Contact Form Isn't Getting Enquiries (and How to Fix It)</h3><p>Getting traffic but no form submissions? Common reasons contact forms fail, from broken email delivery and spam filters to too many fields, with fixes that bring enquiries back.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/choose-wordpress-hosting-india/"><span class="work-tag">Guides</span><h3>How to Choose WordPress Hosting in India (Without Getting Burned)</h3><p>What to look for in WordPress hosting in India: server location, speed, support, backups, renewal prices and security, plus shared vs managed vs cloud hosting explained.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
         </div>
       </div>
     </section>
