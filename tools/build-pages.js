@@ -34,6 +34,7 @@ const waFloat = between('<a class="wa-float"', '</a>');
 const PAGES = require('./pages-data');
 const PROJECTS = require('./projects');
 const POSTS = require('./blog-data');
+const SUMMARIES = require('./blog-summaries');
 
 // Static portfolio cards (crawlable links); script.js only manages the screenshots
 const projectCards = (names = []) => PROJECTS.filter(p => !names.length || names.includes(p.name)).map(p => {
@@ -479,7 +480,13 @@ ${toc.map(([id, t]) => `            <li><a href="#${id}">${t}</a></li>`).join('\
           </ol>
         </aside>
         <div class="post-body">
-${body.trim()}
+${SUMMARIES[post.slug] ? `          <div class="takeaways">
+            <strong>Key takeaways</strong>
+            <ul>
+${SUMMARIES[post.slug].map(t => `              <li>${esc(t)}</li>`).join('\n')}
+            </ul>
+          </div>
+` : ''}${body.trim()}
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
