@@ -325,6 +325,8 @@ module.exports = [
   <li>Exaggerated claims. Keep medical content accurate and within professional guidelines.</li>
 </ul>
 
+<p>Larger or specialist practices: <a href="/blog/website-for-hospitals/">hospitals</a>, <a href="/blog/website-for-physiotherapy-clinics/">physiotherapy clinics</a> and <a href="/blog/website-for-eye-clinics-opticians/">eye clinics</a>.</p>
+
 <h2>Your Google Business Profile matters too</h2>
 <p>For local searches like "dermatologist near me", your Google Business Profile often appears above websites. Keep it complete, add photos, respond to reviews and link it to your website. The two work together.</p>
 
@@ -5031,6 +5033,8 @@ module.exports = [
 <h2>Make it fast to enquire</h2>
 <p>Logistics enquiries are often urgent. Put phone, WhatsApp and a short quote form on every page, and route enquiries to someone who replies quickly. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
 
+<p>Household moves are different; see <a href="/blog/website-for-packers-movers/">websites for packers and movers</a>.</p>
+
 <h2>SEO for logistics companies</h2>
 <ul>
   <li>Target service and lane searches: "transport services from {city} to {city}", "warehousing in {city}"</li>
@@ -5071,6 +5075,8 @@ module.exports = [
   <li>A WhatsApp button for quick questions; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a></li>
   <li>Landing pages for campaigns; see <a href="/landing-page-design/">landing page design</a></li>
 </ul>
+
+<p>Other booking-driven local services: <a href="/blog/website-for-home-services/">home services</a> and <a href="/blog/website-for-cleaning-services/">cleaning services</a>.</p>
 
 <h2>Design tips</h2>
 <p>Your website should feel like your salon: clean, stylish and welcoming. Use large, high-quality photos, compressed so pages stay fast, and make the booking button impossible to miss on mobile.</p>
@@ -6821,6 +6827,320 @@ module.exports = [
 </ul>
 
 <p>If your site shows these signs, a <a href="/website-redesign/">mobile-first redesign</a> is usually one of the highest-impact improvements you can make. See also <a href="/blog/signs-you-need-a-new-website/">signs you need a new website</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-home-services',
+    seoTitle: 'Websites for Plumbers, Electricians & Home Services',
+    title: 'Websites for Home Services: Plumbers, Electricians and AC Repair',
+    description: 'What home service businesses (plumbers, electricians, AC and appliance repair) need on their websites to get more calls: service pages, areas served, pricing guidance, booking and reviews.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>When a pipe bursts or the AC stops working, people search on their phones and call the first trustworthy business that shows up. For home service businesses, the website's job is simple: be found, look reliable and make calling effortless.</p>
+
+<h2>Make contact instant</h2>
+<ul>
+  <li>A tap-to-call button always visible on mobile</li>
+  <li>WhatsApp for sending photos of the problem</li>
+  <li>Working hours, and whether you offer emergency or same-day service</li>
+  <li>A short booking form for non-urgent jobs</li>
+</ul>
+
+<h2>Service pages</h2>
+<p>One page per service: AC repair, AC installation, water purifier service, plumbing repairs, electrical wiring, appliance repair and so on. Explain common problems you fix, what a visit includes, and typical timings.</p>
+
+<h2>Areas served</h2>
+<p>List the areas and localities you cover. Create separate location pages only where you have genuine local detail; see <a href="/blog/local-landing-pages-without-doorway-pages/">local pages without doorway pages</a>.</p>
+
+<h2>Pricing guidance</h2>
+<p>Visiting charges and "starting from" prices for common jobs reduce price-shopping calls and build trust. Be clear about what's extra (parts, gas refill).</p>
+
+<h2>Trust signals</h2>
+<ul>
+  <li>Genuine Google reviews and photos of completed work</li>
+  <li>Technician verification and training</li>
+  <li>Service warranty on repairs</li>
+  <li>Brands serviced</li>
+</ul>
+
+<h2>Local SEO is everything</h2>
+<ul>
+  <li>A complete Google Business Profile with service areas, hours and photos</li>
+  <li>Steady reviews after each job; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a></li>
+  <li>Target "{service} near me" and "{service} in {area}"</li>
+</ul>
+
+<h2>Seasonal campaigns</h2>
+<p>AC servicing before summer, geyser repairs before winter: dedicated <a href="/landing-page-design/">landing pages</a> for seasonal offers make ads far more effective.</p>
+
+<p>A fast, mobile-first site with one-tap calling is one of the best investments a home service business can make; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-cleaning-services',
+    seoTitle: 'Websites for Cleaning Services That Get Bookings',
+    title: 'Websites for Cleaning Services: Turning Searches Into Bookings',
+    description: 'How home and commercial cleaning companies can get more bookings online: service packages, clear pricing, online booking, trust and safety information, before-and-after photos and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>Whether you offer deep home cleaning, office housekeeping or sofa and carpet cleaning, customers want to know three things quickly: what's included, what it costs, and whether they can trust your team in their space.</p>
+
+<h2>Clear service packages</h2>
+<ul>
+  <li>Deep cleaning, bathroom and kitchen cleaning, move-in/move-out, sofa and carpet, office cleaning</li>
+  <li>A checklist of exactly what each package includes</li>
+  <li>Typical duration and team size</li>
+  <li>Prices or "starting from" prices by home size (1BHK, 2BHK, 3BHK) or area</li>
+</ul>
+
+<h2>Easy booking</h2>
+<ul>
+  <li>An online booking form with service, home size, date and time slot</li>
+  <li>WhatsApp confirmation and reminders</li>
+  <li>Online payment or pay-after-service options</li>
+</ul>
+
+<h2>Trust and safety</h2>
+<ul>
+  <li>Background-verified, trained staff</li>
+  <li>Cleaning products used (and eco-friendly options)</li>
+  <li>Insurance or damage policy</li>
+  <li>Satisfaction guarantee or re-clean policy</li>
+</ul>
+
+<h2>Show results</h2>
+<p>Before-and-after photos are extremely persuasive for cleaning services. Use real jobs (with customer permission) and compress images so pages stay fast.</p>
+
+<h2>Commercial clients</h2>
+<p>Offices, clinics and societies need a separate page covering regular housekeeping contracts, staffing, supervision and a quote form. See also <a href="/blog/website-for-security-facility-management/">facility management websites</a>.</p>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "deep cleaning services in {city}" and "sofa cleaning near me"</li>
+  <li>A complete Google Business Profile with photos and service areas</li>
+  <li>Reviews after every job</li>
+</ul>
+
+<p>For seasonal offers (festival deep cleaning), use dedicated <a href="/landing-page-design/">landing pages</a>. For the full site, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-packers-movers',
+    seoTitle: 'Websites for Packers and Movers: Build Trust, Get Quotes',
+    title: 'Websites for Packers and Movers: Building Trust and Getting Quote Requests',
+    description: 'How packers and movers can win customers online in a low-trust market: clear services, transparent quotes, registration and insurance details, reviews, tracking and a detailed quote form.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>Moving is stressful, and customers worry about damaged goods, hidden charges and unreliable movers. Your website's main job is to prove you're genuine and transparent, then make getting a quote easy.</p>
+
+<h2>Services to explain clearly</h2>
+<ul>
+  <li>Home shifting (local and intercity)</li>
+  <li>Office relocation</li>
+  <li>Vehicle transportation</li>
+  <li>Storage and warehousing</li>
+  <li>Packing-only or loading/unloading services</li>
+</ul>
+
+<h2>Transparent pricing</h2>
+<p>Explain what affects the price (volume, distance, floor, packing material, insurance) and show indicative ranges where possible. Clarify what's included and what's extra. Hidden charges are the biggest fear in this industry.</p>
+
+<h2>A detailed quote form</h2>
+<ul>
+  <li>Moving from and to, date</li>
+  <li>Home size or list of major items</li>
+  <li>Floor and lift availability at both ends</li>
+  <li>Vehicle transport, storage needs</li>
+  <li>Option to share photos or a video on WhatsApp</li>
+</ul>
+
+<h2>Prove you're genuine</h2>
+<ul>
+  <li>Registered business details, GST number and office address with photos</li>
+  <li>Transit insurance options explained</li>
+  <li>Real photos of your team, vehicles and packing process</li>
+  <li>Genuine Google reviews; see <a href="/blog/get-more-google-reviews/">how to get more reviews</a></li>
+  <li>A clear written quote and receipt process</li>
+</ul>
+
+<h2>After booking</h2>
+<p>Share a moving checklist, packing tips and, if available, shipment tracking. Good communication reduces anxious calls and earns referrals.</p>
+
+<h2>SEO</h2>
+<ul>
+  <li>Target "packers and movers in {city}" and "{city} to {city} movers"</li>
+  <li>Route pages only for routes you regularly serve, with real details</li>
+  <li>Helpful guides: packing tips, moving checklists, vehicle shifting process</li>
+</ul>
+
+<p>Trust is everything in this business. A professional, transparent website sets you apart; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-hospitals',
+    seoTitle: 'Websites for Hospitals & Multi-Speciality Centres',
+    title: 'Websites for Hospitals and Multi-Speciality Centres',
+    description: 'What hospital and multi-speciality centre websites need: department and doctor pages, appointment booking, emergency information, insurance and TPA details, patient guides and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>A hospital website serves patients in very different situations, from emergencies to planned surgeries, alongside families, referring doctors and job applicants. Clarity and speed matter more than anything.</p>
+
+<h2>Emergency information first</h2>
+<p>Emergency phone number, ambulance contact and directions should be visible on every page, especially on mobile. Nobody should have to search for them.</p>
+
+<h2>Departments and specialities</h2>
+<p>A page for each department (cardiology, orthopaedics, obstetrics and so on) covering conditions treated, procedures, facilities, the doctors in that department, and how to book.</p>
+
+<h2>Doctor profiles</h2>
+<ul>
+  <li>Photo, qualifications, registration and experience</li>
+  <li>Specialities and procedures</li>
+  <li>OPD days and timings</li>
+  <li>"Book appointment" with that doctor</li>
+</ul>
+
+<h2>Appointments</h2>
+<p>Online booking or an appointment request form by department and doctor, plus phone and WhatsApp options. If you use hospital management software, integrate or link to it rather than duplicating systems.</p>
+
+<h2>Practical patient information</h2>
+<ul>
+  <li>Insurance and TPA partners, cashless process</li>
+  <li>Health check-up packages</li>
+  <li>Admission, visiting hours and discharge process</li>
+  <li>Facilities: ICU, diagnostics, pharmacy, parking</li>
+</ul>
+
+<h2>Trust and compliance</h2>
+<ul>
+  <li>Accreditations you hold</li>
+  <li>Accurate medical information reviewed by clinicians</li>
+  <li>No exaggerated claims; follow applicable professional and advertising guidelines</li>
+  <li>Privacy for any patient data collected; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy basics</a></li>
+</ul>
+
+<h2>Performance and accessibility</h2>
+<p>Many visitors are older or anxious. Large readable text, simple navigation and fast pages matter; see <a href="/blog/website-accessibility-older-users/">designing for older visitors</a>.</p>
+
+<h2>SEO</h2>
+<ul>
+  <li>Department and procedure pages targeting "{procedure} hospital in {city}"</li>
+  <li>Doctor pages that rank for doctors' names</li>
+  <li>A Google Business Profile with accurate hours and emergency information</li>
+</ul>
+
+<p>For smaller practices, see the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> and <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-physiotherapy-clinics',
+    seoTitle: 'Websites for Physiotherapy Clinics',
+    title: 'Websites for Physiotherapy Clinics: Attracting and Reassuring Patients',
+    description: 'What physiotherapy clinics need on their websites: conditions treated, therapist profiles, treatment approach, home visits, online booking, patient education and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>People looking for a physiotherapist are usually in pain or recovering from surgery or injury. They want to know whether you treat their condition, how treatment works, and how soon they can start.</p>
+
+<h2>Conditions you treat</h2>
+<p>Pages or sections for common conditions: back and neck pain, knee pain, frozen shoulder, sports injuries, post-surgery rehabilitation, stroke rehabilitation, posture problems. People search for their problem, not for "physiotherapy".</p>
+
+<h2>Your approach and services</h2>
+<ul>
+  <li>Assessment process and what a first session involves</li>
+  <li>Treatment methods you use</li>
+  <li>Home visit physiotherapy, if offered, with areas covered</li>
+  <li>Online consultations and exercise programmes</li>
+  <li>Session duration and typical number of sessions (ranges, not promises)</li>
+</ul>
+
+<h2>Therapist profiles</h2>
+<p>Qualifications, registration, specialisations (sports, neuro, orthopaedic, paediatric) and experience, with friendly photos.</p>
+
+<h2>Easy booking</h2>
+<ul>
+  <li>Appointment form with preferred time and condition</li>
+  <li>WhatsApp for quick questions</li>
+  <li>Clinic timings, location and parking</li>
+</ul>
+
+<h2>Patient education</h2>
+<p>Short articles or videos on safe exercises, posture tips and recovery after common surgeries attract searchers and build trust. Keep advice general and encourage professional assessment.</p>
+
+<h2>Trust</h2>
+<ul>
+  <li>Genuine patient reviews (with consent)</li>
+  <li>Clinic photos and equipment</li>
+  <li>Referring doctors or hospital associations, if any</li>
+</ul>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "physiotherapist near me", "back pain physiotherapy {area}" and "home physiotherapy {city}"</li>
+  <li>A complete Google Business Profile with reviews</li>
+</ul>
+
+<p>See also the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> and <a href="/wordpress-website-for-doctors/">healthcare websites</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-eye-clinics-opticians',
+    seoTitle: 'Websites for Eye Clinics & Opticians',
+    title: 'Websites for Eye Clinics and Opticians',
+    description: 'What eye hospitals, ophthalmology clinics and optical stores need online: treatment pages, surgeon profiles, eye test booking, frames and lens catalogues, insurance information and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'woocommerce-developer', 'wordpress-seo-services'],
+    body: `
+<p>Eye clinics and optical stores serve two kinds of visitors: patients researching treatments like cataract or LASIK surgery, and customers looking for eye tests, spectacles and contact lenses. A good website serves both clearly.</p>
+
+<h2>For eye clinics and hospitals</h2>
+<h3>Treatment pages</h3>
+<p>Cataract surgery, LASIK and refractive surgery, glaucoma, retina care, paediatric eye care. For each: who it's for, how it works, recovery, what to expect, and FAQs. Keep medical information accurate and avoid guaranteed outcomes.</p>
+<h3>Surgeon profiles</h3>
+<p>Qualifications, registration, experience and specialisations, with photos.</p>
+<h3>Practical information</h3>
+<ul>
+  <li>Insurance and cashless options</li>
+  <li>Consultation timings and appointment booking</li>
+  <li>Technology and equipment used</li>
+  <li>Pre- and post-surgery instructions</li>
+</ul>
+
+<h2>For optical stores</h2>
+<ul>
+  <li>Eye test booking</li>
+  <li>Frames and sunglasses catalogue with photos, brands and price ranges</li>
+  <li>Lens options explained (single vision, progressive, blue light, coatings)</li>
+  <li>Contact lenses and solutions</li>
+  <li>Online ordering for suitable products; see <a href="/woocommerce-developer/">WooCommerce development</a></li>
+</ul>
+
+<h2>Trust</h2>
+<ul>
+  <li>Genuine patient reviews</li>
+  <li>Accreditations and years of experience</li>
+  <li>Clinic and store photos</li>
+</ul>
+
+<h2>Accessibility matters</h2>
+<p>Your visitors may have vision problems. Large, high-contrast text, clear buttons and simple navigation aren't optional here; see <a href="/blog/website-accessibility-basics/">accessibility basics</a> and <a href="/blog/website-accessibility-older-users/">designing for older visitors</a>.</p>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>Target "eye hospital in {city}", "cataract surgery {city}" and "optical shop near me"</li>
+  <li>A Google Business Profile for each clinic or store</li>
+</ul>
+
+<p>See also <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
 `,
   },
 ];
