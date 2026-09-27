@@ -61,7 +61,7 @@ const projectCards = (names = []) => PROJECTS.filter(p => !names.length || names
   let home = fs.readFileSync(indexPath, 'utf8');
   const re = /(<!-- work-cards:start -->)[\s\S]*?(<!-- work-cards:end -->)/;
   if (!re.test(home)) throw new Error('index.html is missing the work-cards markers');
-  home = home.replace(re, (m, start, end) => `${start}\n${projectCards()}\n          ${end}`);
+  home = home.replace(re, (m, start, end) => `${start}\n${projectCards(PROJECTS.filter(p => !p.hideOnHome).map(p => p.name))}\n          ${end}`);
   fs.writeFileSync(indexPath, home);
 }
 

@@ -45,6 +45,7 @@
 - [Our Temples](https://samverse.space/work/our-temples/): A large directory and travel guide of Hindu temples across India and abroad, searchable by state and by deity, with videos, slokas and a blog.
 - [Dr. Sudhir Arora](https://samverse.space/work/dr-sudhir-arora/): A personal-brand website for an experienced doctor offering mind-body wellness education, online consultations and structured coaching programs.
 - [Sahni Power Solutions](https://samverse.space/work/sahni-power-solutions/): A lead-focused website for a diesel generator rental company, presenting its full fleet from small portable units to large silent gensets.
+- [Samverse (this website)](https://samverse.space/work/samverse/): The site you're reading: a fast, search-focused portfolio and lead generation website for my own freelance business, with service and industry pages, a blog, case studies and a cost calculator.
 
 ## Blog
 - [How Much Does a WordPress Website Cost in India? (2026 Guide)](https://samverse.space/blog/wordpress-website-cost-india/): A clear breakdown of WordPress website costs in India: domain, hosting, design, development, plugins and maintenance, with typical price ranges for each type of site.

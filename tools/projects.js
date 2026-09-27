@@ -1,5 +1,6 @@
 // Portfolio cards shown on the homepage, landing pages and /work/.
 // `study`: case study page (cards link there); without it, cards link to the live site.
+// `hideOnHome`: show on /work/ only, not on the homepage grid.
 // `thumb`: optional local screenshot; otherwise a live screenshot (WordPress.com mShots) is used.
 // After editing, run: node tools/build-pages.js
 module.exports = [
@@ -10,5 +11,6 @@ module.exports = [
   { name: 'Our Temples',           url: 'https://ourtemples.info/',         study: '/work/our-temples/',           tag: 'Temple Directory',                                                     color: '#F97316' },
   { name: 'Dr. Sudhir Arora',      url: 'https://drsudhirarora.com/',       study: '/work/dr-sudhir-arora/',       tag: 'Healthcare & Wellness',                                                color: '#14B8A6' },
   { name: 'Sahni Power Solutions', url: 'https://sahnipowersolutions.com/', study: '/work/sahni-power-solutions/', tag: 'Generator Rental',                                                     color: '#22C55E' },
+  { name: 'Samverse (this website)', url: 'https://samverse.space/',        study: '/work/samverse/',             tag: 'Portfolio & Lead Generation', thumb: '/assets/og-image.png',             color: '#6D4AFF', hideOnHome: true },
   { name: 'CNN Food & Spices',     url: 'https://cnnfoodandspices.com/',                                           tag: 'E-commerce',                                                           color: '#DC2626' },
 ];
