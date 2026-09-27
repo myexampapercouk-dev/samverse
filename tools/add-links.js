@@ -238,6 +238,13 @@ const LINKS = [
   ['stop-contact-form-spam', '<h2>Test after changes</h2>', '<p>Choosing a form plugin? See <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a>.</p>\n\n'],
   ['portfolio-website-freelancers-creatives', '<h2>Get found</h2>', '<p>Photographers: see the full guide to <a href="/blog/website-for-photographers/">websites for photographers</a>.</p>\n\n'],
   ['personal-brand-website-professionals', '<h2>Design tips</h2>', '<p>Consultants in traditional fields: see <a href="/blog/website-for-astrologers-vastu-consultants/">websites for astrologers and vastu consultants</a>.</p>\n\n'],
+  // Round 29
+  ['website-for-lawyers-and-chartered-accountants', '<h2>Design tips</h2>', '<p>Coaches and independent consultants: see <a href="/blog/website-for-coaches-consultants/">websites for coaches</a>.</p>\n\n'],
+  ['b2b-manufacturer-website-guide', '<h2>Get found by international buyers</h2>', '<p>Selling through dealers? See <a href="/blog/website-for-wholesalers-distributors/">websites for wholesalers and distributors</a>.</p>\n\n'],
+  ['school-coaching-website-what-parents-look-for', '<h2>Next step</h2>', '<p>Running a college? See <a href="/blog/website-for-colleges-universities/">websites for colleges and universities</a>.</p>\n\n'],
+  ['website-for-hospitals', '<h2>SEO</h2>', '<p>Offering home care after discharge? See <a href="/blog/website-for-elder-care-home-nursing/">websites for elder care and home nursing</a>.</p>\n\n'],
+  ['website-for-bakeries-cake-shops', '<h2>Local SEO</h2>', '<p>Selling mithai too? See <a href="/blog/website-for-sweet-shops-mithai/">websites for sweet shops</a>.</p>\n\n'],
+  ['whatsapp-on-business-website', '<h2>Where it works especially well</h2>', '<p>Wondering about chatbots instead? Read <a href="/blog/website-chatbot-worth-it/">do you need a chatbot?</a></p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

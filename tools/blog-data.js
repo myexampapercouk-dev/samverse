@@ -723,6 +723,8 @@ module.exports = [
   <li>Fast replies. Enquiries go cold quickly, so make sure form emails reach the right person.</li>
 </ul>
 
+<p>Selling through dealers? See <a href="/blog/website-for-wholesalers-distributors/">websites for wholesalers and distributors</a>.</p>
+
 <h2>Get found by international buyers</h2>
 <ul>
   <li>Write content in clear English with correct technical terms.</li>
@@ -1790,6 +1792,8 @@ module.exports = [
   <li>Answer common local questions in articles</li>
 </ul>
 
+<p>Coaches and independent consultants: see <a href="/blog/website-for-coaches-consultants/">websites for coaches</a>.</p>
+
 <h2>Design tips</h2>
 <ul>
   <li>Clean, calm design with plenty of white space, conveying professionalism, not flashiness</li>
@@ -2044,6 +2048,8 @@ module.exports = [
   <li>Complete your Google Business Profile and encourage parent reviews</li>
   <li>Publish helpful articles on exam preparation and admissions</li>
 </ul>
+
+<p>Running a college? See <a href="/blog/website-for-colleges-universities/">websites for colleges and universities</a>.</p>
 
 <h2>Next step</h2>
 <p>A clear, trustworthy website with easy admission enquiries can make a real difference to each admission season. See what's included in a <a href="/website-for-schools-and-coaching/">school and coaching institute website</a>.</p>
@@ -3159,6 +3165,8 @@ module.exports = [
 
 <h2>Track WhatsApp enquiries</h2>
 <p>Set up click tracking in Google Analytics so you can see which pages and campaigns generate WhatsApp chats; see <a href="/blog/setup-google-analytics-search-console/">setting up GA4</a>. For ad campaigns, count WhatsApp clicks as conversions alongside form submissions.</p>
+
+<p>Wondering about chatbots instead? Read <a href="/blog/website-chatbot-worth-it/">do you need a chatbot?</a></p>
 
 <h2>Where it works especially well</h2>
 <ul>
@@ -7185,6 +7193,8 @@ module.exports = [
 
 <p>Supplying hospitals? See <a href="/blog/website-for-medical-equipment-suppliers/">websites for medical equipment suppliers</a>.</p>
 
+<p>Offering home care after discharge? See <a href="/blog/website-for-elder-care-home-nursing/">websites for elder care and home nursing</a>.</p>
+
 <h2>SEO</h2>
 <ul>
   <li>Department and procedure pages targeting "{procedure} hospital in {city}"</li>
@@ -7396,6 +7406,8 @@ module.exports = [
   <li>Order cut-off times and cancellation policy</li>
   <li>Reviews and customer photos</li>
 </ul>
+
+<p>Selling mithai too? See <a href="/blog/website-for-sweet-shops-mithai/">websites for sweet shops</a>.</p>
 
 <h2>Local SEO</h2>
 <ul>
@@ -12344,6 +12356,363 @@ module.exports = [
 
 <h2>Make enquiring easy</h2>
 <p>WhatsApp and a short enquiry form on every page, with a quick reply. Couples often contact several photographers at once, so response speed matters.</p>
+`,
+  },
+  {
+    slug: 'website-for-coaches-consultants',
+    seoTitle: 'Website for Coaches & Consultants: Get More Discovery Calls',
+    title: 'Website for Business, Career and Life Coaches: Get More Discovery Calls',
+    description: 'How coaches and independent consultants can build a website that books discovery calls: clear positioning, programme pages, proof, lead magnets, booking and payments, and honest claims.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-lawyers-and-consultants', 'landing-page-design', 'website-for-startups'],
+    body: `
+<p>Coaching is built on trust, and most clients check your website before booking a call, even if they found you on LinkedIn or Instagram. A focused website turns that curiosity into booked discovery calls.</p>
+
+<h2>Start with a clear niche</h2>
+<p>"I help people reach their potential" could describe anyone. "I help first-time managers in tech lead their teams with confidence" tells the right visitor they're in the right place. Put this positioning in your homepage headline.</p>
+
+<h2>Essential pages</h2>
+<ul>
+  <li><strong>Home:</strong> who you help, the problem you solve and a clear call to action</li>
+  <li><strong>About:</strong> your story, credentials and why you coach</li>
+  <li><strong>Programmes:</strong> one page per offer: 1:1 coaching, group programmes, workshops, corporate training</li>
+  <li><strong>Results:</strong> testimonials and case stories</li>
+  <li><strong>Resources:</strong> articles, podcast or videos</li>
+  <li><strong>Book a call</strong></li>
+</ul>
+
+<h2>Programme pages that convert</h2>
+<ul>
+  <li>Who it's for (and who it's not for)</li>
+  <li>What changes for the client</li>
+  <li>Format: number of sessions, duration, online or in person, support between sessions</li>
+  <li>Investment, or at least a starting price</li>
+  <li>FAQs and a booking button</li>
+</ul>
+
+<h2>Make booking a discovery call easy</h2>
+<ul>
+  <li>An embedded booking calendar with your available slots</li>
+  <li>A few short questions before the call to qualify leads</li>
+  <li>Automatic confirmations and reminders</li>
+  <li>WhatsApp for quick questions</li>
+</ul>
+
+<h2>Build trust with proof</h2>
+<ul>
+  <li>Named testimonials with photos and roles, with permission; see <a href="/blog/collect-display-customer-testimonials/">collecting testimonials</a></li>
+  <li>Short client stories: situation, work together, outcome</li>
+  <li>Logos of organisations you've trained, with permission</li>
+  <li>Media appearances, talks and publications</li>
+</ul>
+
+<h2>Keep claims honest</h2>
+<p>Avoid promising specific incomes, promotions or life changes. Share real, typical results and be clear that outcomes depend on the client. Honest claims build long-term reputation.</p>
+
+<h2>Grow an audience</h2>
+<p>A free resource, such as a checklist, mini-course or assessment, builds an email or WhatsApp list of people who aren't ready to book yet; see <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets and newsletters</a>. Regular articles on the problems your clients face help you get found on Google.</p>
+
+<h2>Selling programmes online</h2>
+<p>Online payments for packages, group programmes or courses save back-and-forth. WordPress can handle payments, memberships and course content when needed.</p>
+
+<p>See also <a href="/blog/personal-brand-website-professionals/">personal brand websites for professionals</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-wholesalers-distributors',
+    seoTitle: 'Website for Wholesalers & Distributors: B2B Guide',
+    title: 'Website for Wholesalers and Distributors: Win More Dealers and Bulk Orders',
+    description: 'How wholesalers, stockists and distributors can use a website to win retailers and bulk buyers: product range, brands, dealer registration, price lists, bulk enquiries and B2B ordering.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Retailers, contractors and businesses increasingly search online for suppliers before they pick up the phone. A clear website helps wholesalers and distributors get found by new dealers, answer routine questions and even take repeat orders online.</p>
+
+<h2>What B2B buyers want to know</h2>
+<ul>
+  <li>What products and brands do you supply?</li>
+  <li>Which areas do you serve and deliver to?</li>
+  <li>Minimum order quantities and terms</li>
+  <li>How to become a dealer or open an account</li>
+  <li>How quickly you deliver</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ul>
+  <li><strong>Product categories:</strong> organised the way buyers think, with product specs and pack sizes</li>
+  <li><strong>Brands:</strong> brands you distribute. Only claim "authorised distributor" if you are one, and use brand logos only with permission</li>
+  <li><strong>Service areas:</strong> cities, districts and states you cover</li>
+  <li><strong>About:</strong> years in business, warehouse, fleet and team</li>
+  <li><strong>Become a dealer:</strong> benefits, requirements and a registration form</li>
+  <li><strong>Contact:</strong> phone, WhatsApp, address and a bulk enquiry form</li>
+</ul>
+
+<h2>Price lists and catalogues</h2>
+<ul>
+  <li>Downloadable PDF catalogues, kept up to date</li>
+  <li>Trade price lists behind a login for approved dealers, so public visitors don't see dealer rates</li>
+</ul>
+
+<h2>Bulk enquiry forms</h2>
+<p>Ask for product, quantity, location and business name. Keep it short, and offer WhatsApp as an alternative. Many B2B buyers prefer sending a photo or list on WhatsApp.</p>
+
+<h2>Online B2B ordering</h2>
+<p>For repeat customers, WooCommerce can work as a B2B ordering portal:</p>
+<ul>
+  <li>Customer-specific or role-based pricing for dealers</li>
+  <li>Minimum order quantities and pack sizes</li>
+  <li>Quick order forms for reordering</li>
+  <li>Credit terms or payment on invoice for approved accounts</li>
+  <li>GST invoices; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a></li>
+</ul>
+
+<h2>Get found</h2>
+<ul>
+  <li>Pages targeting searches like "{product} wholesaler in {city}" or "{brand} distributor in {state}"</li>
+  <li>A Google Business Profile for your warehouse or office</li>
+  <li>Listings on B2B marketplaces and directories, linking back to your site</li>
+</ul>
+
+<p>Many of the same principles apply to manufacturers; see the <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer website guide</a> and <a href="/blog/industrial-website-product-catalogue/">product catalogue guide</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-colleges-universities',
+    seoTitle: 'Website for Colleges & Universities: Admissions-Focused Guide',
+    title: 'Website for Colleges and Universities: Built Around Admissions',
+    description: 'How colleges and higher education institutes can build a website that supports admissions: course pages, fees, approvals, placements, campus life, enquiry forms, disclosures and SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-schools-and-coaching', 'wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Students and parents compare several colleges online before applying. A college website that makes courses, fees, approvals and admissions easy to find, especially on a phone, directly affects enquiries and applications.</p>
+
+<h2>What students and parents look for</h2>
+<ul>
+  <li>Courses offered, eligibility and duration</li>
+  <li>Fees and scholarships</li>
+  <li>Approvals, affiliations and accreditations</li>
+  <li>Placements and outcomes</li>
+  <li>Faculty, infrastructure and campus life</li>
+  <li>Admission process and important dates</li>
+  <li>Hostel, transport and location</li>
+</ul>
+
+<h2>Course pages: the most important pages</h2>
+<p>Give every programme its own page with eligibility, duration, curriculum highlights, fees, career options, faculty and an enquiry form. These pages match what students search for, like "BBA college in {city}".</p>
+
+<h2>Admissions section</h2>
+<ul>
+  <li>Step-by-step admission process</li>
+  <li>Important dates and deadlines</li>
+  <li>Online application or enquiry form</li>
+  <li>Documents required</li>
+  <li>A counsellor's phone and WhatsApp number</li>
+</ul>
+
+<h2>Proof and credibility</h2>
+<ul>
+  <li>Approvals and accreditations, as applicable to your institution</li>
+  <li>Placement records you can support with data, and recruiter names with permission</li>
+  <li>Alumni stories</li>
+  <li>Faculty profiles with qualifications</li>
+</ul>
+
+<h2>Mandatory information</h2>
+<p>Regulators may require certain information to be published on your website, such as mandatory disclosures for some approved institutions, grievance redressal details and anti-ragging information. Check your regulator's current requirements and keep these pages updated.</p>
+
+<h2>Campus life</h2>
+<p>Real photos and short videos of classrooms, labs, library, hostel, events and clubs help students picture themselves there. Optimise them so pages stay fast; see <a href="/blog/video-on-business-website/">video on your website</a>.</p>
+
+<h2>Keep it current</h2>
+<p>Outdated notices and last year's fees damage trust. Assign someone to update news, events, results and admissions information regularly. WordPress makes this easy for non-technical staff with the right user roles; see <a href="/blog/wordpress-user-roles-explained/">user roles explained</a>.</p>
+
+<h2>SEO and speed</h2>
+<ul>
+  <li>Course and location keywords in page titles</li>
+  <li>A Google Business Profile for the campus</li>
+  <li>FAQ sections on admissions pages; see <a href="/blog/faq-page-seo/">FAQ pages and SEO</a></li>
+  <li>Fast pages on mobile networks</li>
+</ul>
+
+<p>For schools and coaching institutes, see <a href="/blog/school-coaching-website-what-parents-look-for/">what parents look for</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-elder-care-home-nursing',
+    seoTitle: 'Website for Elder Care & Home Nursing Services',
+    title: 'Website for Elder Care, Home Nursing and Assisted Living Services',
+    description: 'How elder care homes, home nursing and caregiver services can build a website families trust: services, staff and safety, care process, pricing, virtual tours, enquiries and privacy.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Choosing care for a parent is an emotional decision. Often it's adult children, sometimes living in another city or abroad, who research options online. Your website needs to reassure them that their loved one will be safe, respected and well looked after.</p>
+
+<h2>What families want to know</h2>
+<ul>
+  <li>What care do you provide, and for which conditions?</li>
+  <li>Who are the caregivers and nurses? Are they trained and verified?</li>
+  <li>How are medical emergencies handled?</li>
+  <li>What does it cost?</li>
+  <li>Can we visit, or get regular updates?</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ul>
+  <li><strong>Services:</strong> home nursing, attendants, physiotherapy, post-hospital care, dementia care, assisted living, each explained clearly</li>
+  <li><strong>Our team:</strong> training, background verification and supervision</li>
+  <li><strong>Safety and medical support:</strong> doctor visits, hospital tie-ups and emergency procedures</li>
+  <li><strong>How it works:</strong> assessment, care plan, start of care, reviews</li>
+  <li><strong>Pricing:</strong> ranges or packages and what's included</li>
+  <li><strong>Facility tour</strong> (for residential care): photos and video of rooms, dining and common areas</li>
+  <li><strong>FAQs and contact</strong></li>
+</ul>
+
+<h2>Build trust</h2>
+<ul>
+  <li>Real photos of your facility and team, never stock images of smiling seniors</li>
+  <li>Testimonials from families, with permission</li>
+  <li>Registrations and certifications you hold</li>
+  <li>Clear information about how families receive updates</li>
+</ul>
+
+<h2>Respect residents' privacy</h2>
+<p>Only use photos of residents with their informed consent (or that of their legal guardian). Never share health details on the website or social media.</p>
+
+<h2>Make contacting you easy</h2>
+<ul>
+  <li>A prominent phone number and WhatsApp, as families often need urgent help, for example after a hospital discharge</li>
+  <li>A simple assessment request form</li>
+  <li>Video call options for families living far away</li>
+</ul>
+
+<h2>Design for all ages</h2>
+<p>Some visitors will be older themselves. Use large text, strong contrast and simple navigation; see <a href="/blog/website-accessibility-older-users/">making websites easier for older users</a>.</p>
+
+<h2>Local SEO</h2>
+<p>Families search for things like "home nursing in {area}" or "old age home near me". Create pages for your main services and areas, and keep your Google Business Profile complete with photos and reviews; see <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+
+<p>For medical providers, also see <a href="/blog/website-for-hospitals/">websites for hospitals</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-sweet-shops-mithai',
+    seoTitle: 'Website for Sweet Shops: Festival Orders & Gift Boxes',
+    title: 'Website for Sweet Shops and Mithai Brands: Festival Orders, Gifting and Delivery',
+    description: 'How sweet shops and mithai brands can use a website for festival gift boxes, corporate Diwali orders, online ordering and delivery, menus with prices, FSSAI details and local SEO.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['website-for-restaurants', 'woocommerce-developer', 'wordpress-seo-services'],
+    body: `
+<p>For sweet shops, a handful of festivals can make up a big share of the year's sales. A website helps you capture those orders, especially gift boxes and corporate orders, and lets people abroad or in other cities send sweets to family.</p>
+
+<h2>What customers look for</h2>
+<ul>
+  <li>Your menu with prices (per kg or per box)</li>
+  <li>Gift boxes and hampers for festivals</li>
+  <li>Delivery areas and timings</li>
+  <li>Shelf life and storage information</li>
+  <li>Bulk and corporate order options</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ul>
+  <li><strong>Menu:</strong> categories like milk sweets, dry fruit sweets, namkeen and sugar-free, with photos and prices</li>
+  <li><strong>Gift boxes:</strong> ready-made boxes with contents, weight and price</li>
+  <li><strong>Corporate orders:</strong> custom branding, bulk pricing and an enquiry form</li>
+  <li><strong>Wedding and event orders</strong></li>
+  <li><strong>Our story:</strong> heritage, ingredients and hygiene</li>
+  <li><strong>Stores:</strong> locations, hours and maps</li>
+</ul>
+
+<h2>Online ordering and delivery</h2>
+<ul>
+  <li>WooCommerce with delivery date and time slot selection</li>
+  <li>Delivery zones by pin code, with local delivery for fresh sweets and courier for longer-lasting items</li>
+  <li>Gift messages and sender/recipient details</li>
+  <li>UPI and card payments</li>
+</ul>
+<p>See <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup</a>.</p>
+
+<h2>Festival campaigns</h2>
+<p>Plan festival pages weeks in advance: Diwali, Raksha Bandhan, Holi, Eid and wedding season. Open pre-orders early, especially for corporate buyers who order in bulk. See <a href="/blog/seasonal-festival-campaigns-website/">seasonal and festival campaigns</a>.</p>
+
+<h2>Food safety and trust</h2>
+<ul>
+  <li>Show your FSSAI licence number; food businesses selling online are generally expected to display it, so check current FSSAI requirements</li>
+  <li>Ingredient and allergen information, especially nuts and dairy</li>
+  <li>Shelf life and storage advice for each product</li>
+  <li>Photos of your kitchen and packaging process</li>
+</ul>
+
+<h2>Local SEO</h2>
+<ul>
+  <li>A Google Business Profile for each outlet, with photos and your menu</li>
+  <li>Pages targeting searches like "sweet shop in {area}" and "Diwali sweet boxes {city}"</li>
+  <li>Reviews from happy customers</li>
+</ul>
+
+<p>For bakeries, see <a href="/blog/website-for-bakeries-cake-shops/">websites for bakeries and cake shops</a>.</p>
+`,
+  },
+  {
+    slug: 'website-chatbot-worth-it',
+    seoTitle: 'Do You Need a Chatbot on Your Website? Pros & Cons',
+    title: 'Do You Need a Chatbot on Your Business Website?',
+    description: 'An honest look at website chatbots and live chat for small businesses: types, benefits, risks like wrong AI answers and slower pages, WhatsApp as an alternative and how to decide.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-speed-optimization', 'wordpress-website-development'],
+    body: `
+<p>Chat widgets are everywhere, and AI has made chatbots easier to set up than ever. But is a chatbot right for a small business website? Sometimes it helps. Sometimes it just slows the page and annoys visitors.</p>
+
+<h2>Types of website chat</h2>
+<ul>
+  <li><strong>Live chat:</strong> a real person replies through a chat widget</li>
+  <li><strong>Rule-based chatbots:</strong> buttons and scripted answers for common questions</li>
+  <li><strong>AI chatbots:</strong> answer questions in natural language, often trained on your website content</li>
+  <li><strong>WhatsApp button:</strong> opens a chat in the visitor's WhatsApp</li>
+</ul>
+
+<h2>When a chatbot can help</h2>
+<ul>
+  <li>You get lots of repetitive questions (hours, pricing, order status)</li>
+  <li>Visitors arrive outside business hours and need basic answers</li>
+  <li>An online store gets questions about shipping, returns and sizes</li>
+  <li>You have enough traffic to justify setting it up and maintaining it</li>
+</ul>
+
+<h2>The downsides</h2>
+<ul>
+  <li><strong>Wrong answers:</strong> AI chatbots can confidently give incorrect information about prices, policies or availability</li>
+  <li><strong>Slower pages:</strong> chat widgets often load heavy scripts on every page</li>
+  <li><strong>Annoying pop-ups:</strong> chat bubbles that open automatically can drive people away</li>
+  <li><strong>Cost and upkeep:</strong> subscriptions, training and reviewing conversations</li>
+  <li><strong>Privacy:</strong> visitors may share personal details in chat, so handle them responsibly</li>
+</ul>
+
+<h2>For many Indian businesses, WhatsApp is enough</h2>
+<p>Customers already use WhatsApp daily, conversations continue after they leave your site, and you can reply from your phone. WhatsApp Business adds quick replies, greeting and away messages, and catalogues. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a>.</p>
+
+<h2>If you do add a chatbot</h2>
+<ul>
+  <li>Limit it to questions your website already answers accurately</li>
+  <li>Always offer a path to a human: WhatsApp, phone or a form</li>
+  <li>Review conversations regularly and correct wrong answers</li>
+  <li>Load the widget only when the visitor interacts, not on page load</li>
+  <li>Don't auto-open it on every page</li>
+</ul>
+
+<h2>Answer questions on the page first</h2>
+<p>Often the best "chatbot" is a clear page. Good FAQs, pricing guidance and service details answer most questions without any widget; see <a href="/blog/faq-page-seo/">FAQ pages</a>.</p>
+
+<h2>Measure the result</h2>
+<p>Track chats started and enquiries from chat, and check your page speed before and after adding it; see <a href="/blog/why-is-my-wordpress-site-slow/">why your site is slow</a>. Keep it only if it brings more business than it costs.</p>
+
+<p>For using AI responsibly on your website, see <a href="/blog/ai-tools-website-content-responsibly/">using AI tools responsibly</a>.</p>
 `,
   },
 ];
