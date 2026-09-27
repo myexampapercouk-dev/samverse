@@ -328,6 +328,8 @@ module.exports = [
 
 <p>Running a diagnostic lab or pathology centre? See <a href="/blog/website-for-diagnostic-labs/">websites for diagnostic labs</a>.</p>
 
+<p>See these ideas on live clinic sites: <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a> and <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a>.</p>
+
 <h2>Common mistakes to avoid</h2>
 <ul>
   <li>A single page with no detail about treatments</li>
@@ -3974,6 +3976,8 @@ module.exports = [
 <p>Keep treatment information accurate, avoid guaranteed outcomes, and follow professional advertising guidelines for dentists.</p>
 
 <p>Cosmetic and skin practices: see <a href="/blog/website-for-dermatology-skin-clinics/">websites for dermatology and skin clinics</a>.</p>
+
+<p><strong>Real example:</strong> the <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care case study</a> shows a dental clinic site in Agra with a treatments page, patient testimonials, FAQs on pain and booking, an appointment page and one-tap WhatsApp.</p>
 
 <h2>Local SEO for dentists</h2>
 <ul>

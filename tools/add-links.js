@@ -297,6 +297,9 @@ const LINKS = [
   ['business-email-deliverability-spf-dkim-dmarc', '<h2>Be careful when changing DNS</h2>', '<p>Getting bounces for emails you never sent? See <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam emails</a>.</p>\n\n'],
   ['accept-online-payments-wordpress-india', '<h2>Getting it set up</h2>', '<p>Protect your checkout from card skimmers: see <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce skimming malware</a>.</p>\n\n'],
   ['website-traffic-dropped', '<h2>What not to do</h2>', '<p>Seeing strange Japanese or pharma pages in Search Console? See <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a>.</p>\n\n'],
+  // Round 37: case study links
+  ['website-for-dentists', '<h2>Local SEO for dentists</h2>', '<p><strong>Real example:</strong> the <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care case study</a> shows a dental clinic site in Agra with a treatments page, patient testimonials, FAQs on pain and booking, an appointment page and one-tap WhatsApp.</p>\n\n'],
+  ['clinic-website-checklist-for-doctors', '<h2>Common mistakes to avoid</h2>', '<p>See these ideas on live clinic sites: <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a> and <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
@@ -307,7 +310,7 @@ for (const [slug, anchor, insert] of LINKS) {
   const bodyStart = src.indexOf('body: `', start);
   const bodyEnd = src.indexOf('`,\n  },', bodyStart);
   let body = src.slice(bodyStart, bodyEnd);
-  const target = (insert.match(/href="(\/blog\/[^"]+)"/) || [])[1];
+  const target = (insert.match(/href="(\/[^"]+)"/) || [])[1];
   if (target && body.includes(`href="${target}"`)) { skipped++; continue; }
   const count = body.split(anchor).length - 1;
   if (count !== 1) throw new Error(`Anchor found ${count} times in ${slug}: ${anchor}`);

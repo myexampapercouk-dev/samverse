@@ -48,7 +48,7 @@ const PAGES = [
     ],
     getsTitle: 'What your clinic website includes',
     gets: ['Doctor profile & qualifications', 'Treatments & services pages', 'Appointment enquiry form', 'WhatsApp & one-tap call buttons', 'Google Maps & clinic timings', 'Patient testimonials section', 'Local SEO setup', 'Fast, mobile-first design'],
-    projects: ['Dr. Sudhir Arora'],
+    projects: ['Dr. Sunaina Dental Care', 'Dr. Sudhir Arora'],
     faqs: [
       ['Can patients book appointments on the website?', 'Yes. I can add an appointment enquiry form that emails you and opens WhatsApp, or integrate a booking system if you use one.'],
       ['Will my clinic show up on Google?', 'I set up on-page SEO, schema markup for medical practices, a sitemap and Search Console, and help link your Google Business Profile. That gives you the right foundation for local searches.'],

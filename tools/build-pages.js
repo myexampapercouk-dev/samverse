@@ -76,7 +76,9 @@ const related = p => {
   const i = same.indexOf(p);
   return [1, 2, 3].map(n => same[(i + n) % same.length]).filter(x => x !== p);
 };
-const card = x => `<a class="industry" href="/${x.slug}/"><h3>${esc(x.nav)}</h3><p>${esc(x.description.split('. ')[0])}.</p><span class="ind-arrow">→</span></a>`;
+// First sentence of a description, ending in exactly one full stop
+const firstSentence = d => d.split('. ')[0].replace(/[.!?]+$/, '') + '.';
+const card = x => `<a class="industry" href="/${x.slug}/"><h3>${esc(x.nav)}</h3><p>${esc(firstSentence(x.description))}</p><span class="ind-arrow">→</span></a>`;
 
 // "In depth" section (tools/pages-details.js)
 const DETAILS = require('./pages-details');
@@ -487,7 +489,7 @@ const renderPost = (post, i) => {
     if (parts.length < 4) return html;
     const box = `<aside class="inline-cta">
   <strong>Need help with ${esc(svc.nav.toLowerCase())}?</strong>
-  <p>${esc(svc.description.split('. ')[0])}.</p>
+  <p>${esc(firstSentence(svc.description))}</p>
   <div><a href="/${svc.slug}/" class="link-inline">See ${esc(svc.nav)} →</a><a href="${waLink}" class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
