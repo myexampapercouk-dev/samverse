@@ -2057,5 +2057,54 @@
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
     <description>How to update a premium or ThemeForest WordPress theme without losing customisations: licence activation, child themes, backups, staging, bundled plugin updates and what to do if the theme is abandoned.</description>
   </item>
+  <item>
+    <title>Custom WordPress Theme Development: When You Need It and How It Works</title>
+    <link>https://samverse.space/blog/custom-wordpress-theme-development/</link>
+    <guid>https://samverse.space/blog/custom-wordpress-theme-development/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What custom WordPress theme development involves, when it beats premium themes and page builders, the development process from design to handover, what affects cost, and how to avoid lock-in.</description>
+  </item>
+  <item>
+    <title>Custom WordPress Plugin Development: When Your Business Needs One</title>
+    <link>https://samverse.space/blog/custom-wordpress-plugin-development/</link>
+    <guid>https://samverse.space/blog/custom-wordpress-plugin-development/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>When a custom WordPress plugin beats off-the-shelf plugins, common business examples (calculators, integrations, booking rules, portals), the development process, security standards and long-term maintenance.</description>
+  </item>
+  <item>
+    <title>WordPress Child Themes Explained: What They Are and How to Create One</title>
+    <link>https://samverse.space/blog/wordpress-child-theme-explained/</link>
+    <guid>https://samverse.space/blog/wordpress-child-theme-explained/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What a WordPress child theme is, why customisations belong in one, how to create a child theme (style.css header, functions.php, template overrides), and when you don't need one.</description>
+  </item>
+  <item>
+    <title>WordPress Block Themes and Full Site Editing Explained</title>
+    <link>https://samverse.space/blog/block-themes-full-site-editing/</link>
+    <guid>https://samverse.space/blog/block-themes-full-site-editing/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What WordPress block themes and Full Site Editing are, how theme.json, templates, template parts and patterns work, pros and cons versus classic themes and page builders, and who they suit.</description>
+  </item>
+  <item>
+    <title>Custom Gutenberg Blocks: Give Editors On-Brand Components They Can't Break</title>
+    <link>https://samverse.space/blog/custom-gutenberg-blocks/</link>
+    <guid>https://samverse.space/blog/custom-gutenberg-blocks/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What custom Gutenberg blocks are, when to build them instead of using patterns or page builders, the main approaches (native React blocks, ACF blocks), editing experience, performance and maintenance.</description>
+  </item>
+  <item>
+    <title>Custom Post Types and Custom Fields: Structuring Content in WordPress</title>
+    <link>https://samverse.space/blog/custom-post-types-fields/</link>
+    <guid>https://samverse.space/blog/custom-post-types-fields/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How custom post types, taxonomies and custom fields let WordPress manage structured content like projects, team members, properties, courses and jobs, with examples, tools like ACF and best practices.</description>
+  </item>
+  <item>
+    <title>Plugin or Custom Code? How to Decide What to Use in WordPress</title>
+    <link>https://samverse.space/blog/plugin-vs-custom-code-wordpress/</link>
+    <guid>https://samverse.space/blog/plugin-vs-custom-code-wordpress/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>A practical framework for choosing between an existing WordPress plugin, a small code snippet and a custom plugin, weighing maintenance, security, performance, cost and where custom code should live.</description>
+  </item>
 </channel>
 </rss>

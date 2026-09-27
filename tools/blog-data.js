@@ -1704,6 +1704,8 @@ module.exports = [
 
 <p>Launching a startup? See the <a href="/blog/startup-website-checklist/">startup website checklist</a> for what to launch with first.</p>
 
+<p>The middle ground: WordPress with a <a href="/blog/custom-wordpress-theme-development/">custom theme</a> and <a href="/blog/custom-wordpress-plugin-development/">custom plugins</a>.</p>
+
 <h2>Common myths</h2>
 <h3>"WordPress is only for blogs"</h3>
 <p>Not for many years. It runs business websites, directories, stores and large media sites.</p>
@@ -2670,6 +2672,8 @@ module.exports = [
   <li>Editing the theme's files directly instead of using a child theme</li>
 </ul>
 
+<p>Need something no theme offers? See <a href="/blog/custom-wordpress-theme-development/">custom WordPress theme development</a>.</p>
+
 <h2>The simple rule</h2>
 <p>Choose the lightest, best-supported theme that works with how you want to edit your site, and add features with well-maintained plugins. If you'd rather not decide alone, a <a href="/wordpress-website-development/">WordPress developer</a> can recommend the right setup for your goals and budget.</p>
 `,
@@ -2897,6 +2901,8 @@ module.exports = [
   <li><strong>Taxonomies</strong> organise listings into categories and locations</li>
   <li><strong>A page builder</strong> designs the homepage, landing pages and templates</li>
 </ul>
+
+<p>The foundations: <a href="/blog/custom-post-types-fields/">custom post types and fields</a>.</p>
 
 <h2>Real example</h2>
 <p>The <a href="/work/our-temples/">Our Temples case study</a> is a large directory built on WordPress: hundreds of temples organised by state and by deity, with search, recently added listings, videos, slokas, a blog, and registration for guests and temple owners.</p>
@@ -3618,6 +3624,8 @@ module.exports = [
   <li><strong>Reputable developer</strong> with support and documentation</li>
   <li><strong>Does one job well</strong>, rather than trying to do everything</li>
 </ul>
+
+<p>Not sure whether to add a plugin at all? See <a href="/blog/plugin-vs-custom-code-wordpress/">plugin vs custom code</a>.</p>
 
 <h2>Plugins and habits to avoid</h2>
 <ul>
@@ -14280,6 +14288,8 @@ module.exports = [
   <li>Writing custom functionality when no plugin fits</li>
 </ul>
 
+<p>More detail: <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a> and <a href="/blog/custom-wordpress-theme-development/">custom theme development</a>.</p>
+
 <h2>Online stores</h2>
 <p>Setting up WooCommerce: products, variations, payments, shipping, taxes, invoices and emails. See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 
@@ -14445,6 +14455,8 @@ module.exports = [
   <li><strong>Cons:</strong> custom blocks need more development time; editing is less free-form than a page builder</li>
   <li><strong>Best for:</strong> performance-focused sites and long-term projects with a clear design system</li>
 </ul>
+
+<p>More on this approach: <a href="/blog/block-themes-full-site-editing/">block themes explained</a> and <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a>.</p>
 
 <h2>Option 3: Custom classic theme</h2>
 <ul>
@@ -16687,6 +16699,8 @@ module.exports = [
 <h2>Step 2: Protect your customisations</h2>
 <p>If anyone edited the theme's files directly, an update will overwrite those changes. Customisations belong in a <strong>child theme</strong>. If there isn't one, have a developer move the custom code into a child theme before updating.</p>
 
+<p>New to child themes? See <a href="/blog/wordpress-child-theme-explained/">child themes explained</a>.</p>
+
 <h2>Step 3: Back up and use staging</h2>
 <p>Take a full backup, then test the update on a staging copy, especially for big version jumps; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
 
@@ -16712,6 +16726,412 @@ module.exports = [
 <p>A theme with no updates for a long time is a growing risk. Options include moving to a well-maintained lightweight theme while keeping your design, or a planned redesign; see <a href="/blog/redesign-website-tight-budget/">redesigning on a budget</a> and <a href="/blog/premium-wordpress-themes-guide/">choosing a premium theme</a>.</p>
 
 <p>Want it handled for you? Theme updates are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'custom-wordpress-theme-development',
+    seoTitle: 'Custom WordPress Theme Development: When and How',
+    title: 'Custom WordPress Theme Development: When You Need It and How It Works',
+    description: 'What custom WordPress theme development involves, when it beats premium themes and page builders, the development process from design to handover, what affects cost, and how to avoid lock-in.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'figma-to-wordpress', 'wordpress-developer-for-agencies'],
+    body: `
+<p>Most business websites are built with a ready-made theme plus a page builder, and that's often the right choice. But sometimes a custom theme, built specifically for your site and design, is the better investment. Here's how to tell, and what the process looks like when I build one.</p>
+
+<h2>What a custom theme is</h2>
+<p>A theme controls how WordPress displays your content: layouts, templates, styles and editing options. A custom theme is written for one website, containing only what that site needs, instead of a general-purpose theme with hundreds of options you'll never use.</p>
+
+<h2>When a custom theme makes sense</h2>
+<ul>
+  <li>You have a unique design (often from a designer in Figma) that must be implemented precisely</li>
+  <li>Performance and Core Web Vitals are a top priority</li>
+  <li>Editors need a structured, hard-to-break editing experience</li>
+  <li>The site has custom content types like properties, courses, doctors or projects</li>
+  <li>It's a long-term site where maintainability matters more than build speed</li>
+</ul>
+
+<h2>When it doesn't</h2>
+<ul>
+  <li>Tight budget or timeline</li>
+  <li>A simple brochure site a good lightweight theme handles well</li>
+  <li>You want to redesign layouts yourself often, where a page builder gives more freedom</li>
+</ul>
+<p>See <a href="/blog/figma-to-wordpress-approaches/">page builder vs block theme vs custom theme</a>.</p>
+
+<h2>Classic theme or block theme?</h2>
+<ul>
+  <li><strong>Block themes</strong> use WordPress's Site Editor, theme.json and custom blocks, and are the modern direction; see <a href="/blog/block-themes-full-site-editing/">block themes explained</a></li>
+  <li><strong>Classic themes</strong> use PHP templates, often with custom fields for structured editing, and remain a solid choice for many custom builds</li>
+</ul>
+
+<h2>The development process</h2>
+<ol>
+  <li><strong>Discovery:</strong> goals, content, pages, features and who will edit the site</li>
+  <li><strong>Design:</strong> a design system in Figma: colours, typography, components and page layouts</li>
+  <li><strong>Content modelling:</strong> custom post types, fields and templates; see <a href="/blog/custom-post-types-fields/">custom post types and fields</a></li>
+  <li><strong>Build:</strong> templates, reusable blocks or components, responsive styles and accessibility</li>
+  <li><strong>Editing experience:</strong> custom blocks or fields so editors can update content without breaking the design; see <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a></li>
+  <li><strong>Performance and SEO:</strong> lean code, optimised assets, schema and clean markup</li>
+  <li><strong>Testing:</strong> browsers, devices, accessibility and speed</li>
+  <li><strong>Handover:</strong> documentation and training</li>
+</ol>
+
+<h2>What affects the cost</h2>
+<ul>
+  <li>Number of unique templates and components</li>
+  <li>Custom content types and functionality</li>
+  <li>Integrations (CRM, booking, payments)</li>
+  <li>Multilingual requirements</li>
+  <li>Content migration</li>
+</ul>
+
+<h2>Avoiding lock-in</h2>
+<ul>
+  <li>Follow WordPress coding standards so any competent developer can maintain it</li>
+  <li>Keep content structures (post types, fields) in a plugin, not the theme, so content survives a future redesign</li>
+  <li>Use version control and document how things work</li>
+  <li>Make sure you own the code; see the <a href="/blog/website-ownership-checklist/">ownership checklist</a></li>
+</ul>
+
+<h2>Need a custom theme?</h2>
+<p>I build custom WordPress themes from Figma designs for businesses and agencies. See <a href="/figma-to-wordpress/">Figma to WordPress</a> and <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>.</p>
+`,
+  },
+  {
+    slug: 'custom-wordpress-plugin-development',
+    seoTitle: 'Custom WordPress Plugin Development: A Business Guide',
+    title: 'Custom WordPress Plugin Development: When Your Business Needs One',
+    description: 'When a custom WordPress plugin beats off-the-shelf plugins, common business examples (calculators, integrations, booking rules, portals), the development process, security standards and long-term maintenance.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-developer-for-agencies'],
+    body: `
+<p>There's a WordPress plugin for almost everything, but not for everything your business does. When off-the-shelf plugins don't fit your process, pile up into a slow, fragile stack, or can't talk to your other systems, a custom plugin is often the cleanest solution.</p>
+
+<h2>When a custom plugin makes sense</h2>
+<ul>
+  <li>No existing plugin does what you need, or only does it with awkward workarounds</li>
+  <li>You're combining several plugins to achieve one simple feature</li>
+  <li>You need to connect WordPress with your CRM, ERP, inventory or another system</li>
+  <li>The feature is core to your business and you want full control</li>
+</ul>
+
+<h2>Real-world examples</h2>
+<ul>
+  <li><strong>Calculators and quote tools:</strong> price estimators, EMI or savings calculators; like this site's <a href="/website-cost-calculator/">website cost calculator</a></li>
+  <li><strong>Integrations:</strong> sending enquiries to a CRM, syncing WooCommerce stock with inventory software</li>
+  <li><strong>Custom WooCommerce rules:</strong> dealer pricing, special shipping logic, custom checkout fields</li>
+  <li><strong>Booking and scheduling logic</strong> that booking plugins can't handle</li>
+  <li><strong>Client or dealer portals</strong> with documents and restricted content</li>
+  <li><strong>Custom content types</strong> like listings, courses or projects; see <a href="/blog/custom-post-types-fields/">custom post types</a></li>
+</ul>
+
+<h2>The development process</h2>
+<ol>
+  <li><strong>Requirements:</strong> exactly what the feature should do, for whom, with edge cases</li>
+  <li><strong>Design:</strong> data structure, admin screens and front-end output</li>
+  <li><strong>Build:</strong> following WordPress coding standards, using WordPress's APIs (hooks, settings, REST API)</li>
+  <li><strong>Testing:</strong> on staging, with realistic data</li>
+  <li><strong>Deployment and documentation</strong></li>
+</ol>
+
+<h2>Security standards to expect</h2>
+<p>A well-built plugin should:</p>
+<ul>
+  <li>Validate and sanitise all input</li>
+  <li>Escape all output</li>
+  <li>Use nonces to protect forms and actions</li>
+  <li>Check user capabilities before doing anything sensitive</li>
+  <li>Use prepared statements for database queries</li>
+</ul>
+<p>Poorly written custom code can be a security hole; see <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a>.</p>
+
+<h2>Performance</h2>
+<p>Load scripts and styles only on pages that need them, cache expensive operations, and avoid slow database queries.</p>
+
+<h2>Maintenance</h2>
+<p>Custom plugins need occasional updates for new WordPress and PHP versions. Keep the code in version control, documented and owned by you.</p>
+
+<h2>Custom plugin or existing plugin?</h2>
+<p>Use a reputable existing plugin for common needs like SEO, forms and backups; build custom for what's unique to your business. See <a href="/blog/plugin-vs-custom-code-wordpress/">plugin vs custom code</a>.</p>
+
+<p>Need a custom feature built? See <a href="/wordpress-website-development/">WordPress development</a> or <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-child-theme-explained',
+    seoTitle: 'WordPress Child Themes Explained (and How to Create One)',
+    title: 'WordPress Child Themes Explained: What They Are and How to Create One',
+    description: 'What a WordPress child theme is, why customisations belong in one, how to create a child theme (style.css header, functions.php, template overrides), and when you don\'t need one.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-maintenance', 'elementor-developer'],
+    body: `
+<p>If anyone has ever edited your theme's files directly, the next theme update will wipe those changes out. A child theme solves this: it holds your customisations separately, so the parent theme can be updated safely.</p>
+
+<h2>What a child theme is</h2>
+<p>A child theme is a small theme that inherits everything from a parent theme and only overrides what you change. WordPress loads the child theme's files first, falling back to the parent for everything else.</p>
+
+<h2>When you need one</h2>
+<ul>
+  <li>Adding custom PHP functions to the theme</li>
+  <li>Overriding theme template files</li>
+  <li>Adding significant custom CSS</li>
+</ul>
+
+<h2>When you don't</h2>
+<ul>
+  <li>Small CSS tweaks can go in the Customizer's Additional CSS or your page builder's custom CSS</li>
+  <li>Site-wide functionality (not design) is better in a small custom plugin; see <a href="/blog/plugin-vs-custom-code-wordpress/">plugin vs custom code</a></li>
+  <li>Sites built entirely in a page builder with no code changes</li>
+</ul>
+
+<h2>How to create one</h2>
+<ol>
+  <li>Create a new folder in wp-content/themes, for example <code>astra-child</code></li>
+  <li>Add a <code>style.css</code> file with a header naming the parent theme's folder in the Template line:
+<pre><code>/*
+Theme Name: Astra Child
+Template: astra
+*/</code></pre>
+  </li>
+  <li>Add a <code>functions.php</code> file. For many classic themes, use it to load the parent theme's stylesheet with WordPress's enqueue functions (check your parent theme's documentation, as some load it automatically)</li>
+  <li>Activate the child theme in Appearance → Themes</li>
+</ol>
+<p>Many popular themes also offer a ready-made child theme or a generator tool.</p>
+
+<h2>Overriding templates</h2>
+<p>To change a template, copy the file from the parent theme into the same path in the child theme and edit the copy. After parent updates, check whether the original template changed significantly.</p>
+
+<h2>Block themes</h2>
+<p>Block themes can have child themes too, with their own theme.json for style changes and HTML templates; see <a href="/blog/block-themes-full-site-editing/">block themes explained</a>.</p>
+
+<h2>Switching an existing site to a child theme</h2>
+<p>Activating a child theme can reset some theme customiser settings and menu locations. Test on staging, note your settings first and move any direct edits from the parent into the child; see <a href="/blog/update-premium-theme-safely/">updating premium themes safely</a>.</p>
+`,
+  },
+  {
+    slug: 'block-themes-full-site-editing',
+    seoTitle: 'WordPress Block Themes & Full Site Editing Explained',
+    title: 'WordPress Block Themes and Full Site Editing Explained',
+    description: 'What WordPress block themes and Full Site Editing are, how theme.json, templates, template parts and patterns work, pros and cons versus classic themes and page builders, and who they suit.',
+    date: '2026-09-28',
+    category: 'Agencies',
+    related: ['figma-to-wordpress', 'wordpress-website-development', 'wordpress-developer-for-agencies'],
+    body: `
+<p>WordPress has been moving towards building whole sites with blocks, not just page content. Block themes let you edit headers, footers, templates and global styles visually in the Site Editor, without a separate page builder.</p>
+
+<h2>Key parts of a block theme</h2>
+<table>
+  <thead><tr><th>Part</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr><td>theme.json</td><td>Defines global settings and styles: colour palettes, typography, spacing and which options editors see</td></tr>
+    <tr><td>Templates</td><td>HTML files made of blocks for page types: home, single post, archive, 404</td></tr>
+    <tr><td>Template parts</td><td>Reusable sections such as header and footer</td></tr>
+    <tr><td>Patterns</td><td>Pre-designed block layouts editors can insert and customise</td></tr>
+    <tr><td>Site Editor</td><td>The visual interface for editing all of the above</td></tr>
+  </tbody>
+</table>
+
+<h2>Advantages</h2>
+<ul>
+  <li><strong>Native to WordPress:</strong> no extra page builder to license or maintain</li>
+  <li><strong>Lean output:</strong> often faster than heavy page builders</li>
+  <li><strong>Design systems:</strong> theme.json enforces consistent colours, fonts and spacing</li>
+  <li><strong>Controlled editing:</strong> you can limit options so editors stay on-brand</li>
+</ul>
+
+<h2>Limitations</h2>
+<ul>
+  <li>Some advanced layouts and interactions still need custom blocks or code</li>
+  <li>The editing interface is different from what page builder users are used to</li>
+  <li>Not every plugin integrates fully with the Site Editor yet</li>
+</ul>
+
+<h2>Block theme vs page builder vs classic theme</h2>
+<ul>
+  <li><strong>Page builder:</strong> maximum visual freedom, heavier pages; see <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a></li>
+  <li><strong>Block theme:</strong> native, lean and structured, the modern direction</li>
+  <li><strong>Classic theme:</strong> PHP templates, very flexible for developers, less visual editing</li>
+</ul>
+
+<h2>Who block themes suit</h2>
+<ul>
+  <li>New sites where performance matters</li>
+  <li>Teams that want a consistent design system</li>
+  <li>Agencies building maintainable sites for clients</li>
+</ul>
+
+<h2>Building a custom block theme</h2>
+<p>A custom block theme usually combines a tailored theme.json, custom templates and patterns, and, where needed, custom blocks for complex components. See <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a> and <a href="/blog/custom-wordpress-theme-development/">custom theme development</a>.</p>
+`,
+  },
+  {
+    slug: 'custom-gutenberg-blocks',
+    seoTitle: 'Custom Gutenberg Blocks: When and How to Build Them',
+    title: 'Custom Gutenberg Blocks: Give Editors On-Brand Components They Can\'t Break',
+    description: 'What custom Gutenberg blocks are, when to build them instead of using patterns or page builders, the main approaches (native React blocks, ACF blocks), editing experience, performance and maintenance.',
+    date: '2026-09-28',
+    category: 'Agencies',
+    related: ['figma-to-wordpress', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
+    body: `
+<p>The WordPress block editor comes with standard blocks like paragraphs, images and columns. Custom blocks add components designed for your site, such as a testimonial slider, pricing table or service card, that editors can drop in and fill with content while the design stays consistent.</p>
+
+<h2>Why custom blocks?</h2>
+<ul>
+  <li><strong>On-brand by default:</strong> editors fill in fields; the block handles the design</li>
+  <li><strong>Hard to break:</strong> no fiddling with spacing, fonts or columns</li>
+  <li><strong>Lean:</strong> only the code the component needs</li>
+  <li><strong>Reusable</strong> across pages</li>
+</ul>
+
+<h2>Patterns first, custom blocks second</h2>
+<p>Block patterns are pre-arranged groups of standard blocks, and they're quick to create. Use patterns when standard blocks can achieve the design. Build custom blocks when you need specific structure, behaviour or data that standard blocks can't provide.</p>
+
+<h2>Main approaches</h2>
+<table>
+  <thead><tr><th>Approach</th><th>How it works</th><th>Good for</th></tr></thead>
+  <tbody>
+    <tr><td>Native blocks</td><td>Built with WordPress's block API (block.json, JavaScript/React) and official build tools</td><td>Rich editing experiences and long-term projects</td></tr>
+    <tr><td>ACF blocks</td><td>Defined with Advanced Custom Fields (PRO), with fields in the sidebar and PHP templates for output</td><td>Faster development for PHP-focused teams</td></tr>
+    <tr><td>Block libraries</td><td>Third-party plugins with ready-made blocks</td><td>Common components without custom code</td></tr>
+  </tbody>
+</table>
+
+<h2>Designing a good block</h2>
+<ul>
+  <li>Start from the design system: components in Figma map to blocks</li>
+  <li>Keep editor options minimal and clearly labelled</li>
+  <li>Show a realistic preview in the editor</li>
+  <li>Make output accessible: headings, alt text, keyboard support</li>
+</ul>
+
+<h2>Performance</h2>
+<p>Load each block's CSS and JavaScript only on pages that use it. WordPress supports this when blocks are registered properly.</p>
+
+<h2>Maintenance</h2>
+<p>Keep blocks in a plugin (not only the theme) if content should survive a theme change, and use version control. Changing a block's structure later needs care so existing content still displays correctly.</p>
+
+<p>Custom blocks are a key part of <a href="/blog/block-themes-full-site-editing/">custom block themes</a>. Need them built from your designs? See <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+`,
+  },
+  {
+    slug: 'custom-post-types-fields',
+    seoTitle: 'Custom Post Types & Custom Fields in WordPress Explained',
+    title: 'Custom Post Types and Custom Fields: Structuring Content in WordPress',
+    description: 'How custom post types, taxonomies and custom fields let WordPress manage structured content like projects, team members, properties, courses and jobs, with examples, tools like ACF and best practices.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'real-estate-website-design', 'website-for-schools-and-coaching'],
+    body: `
+<p>Out of the box, WordPress has posts and pages. But many businesses need to manage other kinds of content, such as projects, doctors, properties, courses or job openings, each with specific details. Custom post types and custom fields make this clean and easy to manage.</p>
+
+<h2>The three building blocks</h2>
+<ul>
+  <li><strong>Custom post types:</strong> new content types, like "Projects" or "Properties", with their own menu in the dashboard</li>
+  <li><strong>Custom taxonomies:</strong> ways to group them, like property type or course category</li>
+  <li><strong>Custom fields:</strong> structured details, like price, location, duration or qualifications</li>
+</ul>
+
+<h2>Examples</h2>
+<table>
+  <thead><tr><th>Business</th><th>Post type</th><th>Fields</th></tr></thead>
+  <tbody>
+    <tr><td>Real estate</td><td>Properties</td><td>Price, BHK, area, location, RERA number, floor plans</td></tr>
+    <tr><td>Clinic</td><td>Doctors</td><td>Qualifications, specialities, timings, photo</td></tr>
+    <tr><td>Coaching institute</td><td>Courses</td><td>Duration, fees, batch dates, eligibility</td></tr>
+    <tr><td>Agency or builder</td><td>Projects</td><td>Client, location, services, gallery</td></tr>
+    <tr><td>Any business</td><td>Jobs</td><td>Location, type, experience, deadline</td></tr>
+  </tbody>
+</table>
+
+<h2>Why structure beats free-form pages</h2>
+<ul>
+  <li><strong>Consistent design:</strong> every item uses the same template</li>
+  <li><strong>Easy editing:</strong> staff fill in clear fields instead of designing pages</li>
+  <li><strong>Filtering and search:</strong> by location, price, category</li>
+  <li><strong>SEO:</strong> clean URLs, archive pages and structured data from fields</li>
+</ul>
+
+<h2>Tools</h2>
+<ul>
+  <li><strong>Advanced Custom Fields (ACF)</strong> and Meta Box for fields</li>
+  <li><strong>Custom code</strong> registering post types in a small plugin</li>
+  <li><strong>Plugins with UIs</strong> for creating post types without code</li>
+</ul>
+
+<h2>Best practices</h2>
+<ul>
+  <li>Register post types in a <strong>plugin, not the theme</strong>, so content doesn't disappear if you change themes</li>
+  <li>Plan fields before building: what information does every item need?</li>
+  <li>Create templates for single items and archives</li>
+  <li>Add schema markup using field data; see <a href="/blog/schema-markup-explained/">schema markup</a></li>
+</ul>
+
+<h2>Directory-style sites</h2>
+<p>For large listing sites, see <a href="/blog/directory-website-wordpress/">building a directory website on WordPress</a>.</p>
+
+<p>Need structured content set up properly? It's part of <a href="/blog/custom-wordpress-theme-development/">custom theme development</a> and <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a>.</p>
+`,
+  },
+  {
+    slug: 'plugin-vs-custom-code-wordpress',
+    seoTitle: 'Plugin or Custom Code in WordPress? How to Decide',
+    title: 'Plugin or Custom Code? How to Decide What to Use in WordPress',
+    description: 'A practical framework for choosing between an existing WordPress plugin, a small code snippet and a custom plugin, weighing maintenance, security, performance, cost and where custom code should live.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-maintenance', 'wordpress-speed-optimization'],
+    body: `
+<p>Every new feature on a WordPress site raises the same question: install a plugin, or write some code? Too many plugins slow a site and increase security risk; too much hastily written custom code creates a maintenance headache. Here's how I decide.</p>
+
+<h2>Use an existing plugin when</h2>
+<ul>
+  <li>The need is common: SEO, forms, backups, caching, security, e-commerce</li>
+  <li>A reputable, well-maintained plugin does it well</li>
+  <li>The plugin's features match your needs without heavy extras</li>
+</ul>
+<p>See <a href="/blog/essential-wordpress-plugins-business/">essential plugins</a> and how to choose them safely.</p>
+
+<h2>Use a small code snippet when</h2>
+<ul>
+  <li>It's a tiny tweak: changing a label, disabling a feature, adding a tracking tag</li>
+  <li>A plugin would add a lot of code for one small job</li>
+</ul>
+
+<h2>Build a custom plugin when</h2>
+<ul>
+  <li>The feature is specific to your business</li>
+  <li>You'd otherwise need several plugins glued together</li>
+  <li>You need integration with your own systems</li>
+</ul>
+<p>See <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a>.</p>
+
+<h2>Where custom code should live</h2>
+<table>
+  <thead><tr><th>Location</th><th>Use for</th></tr></thead>
+  <tbody>
+    <tr><td>A site-specific custom plugin</td><td>Functionality that should keep working if the theme changes</td></tr>
+    <tr><td>A child theme</td><td>Design-related code and template changes; see <a href="/blog/wordpress-child-theme-explained/">child themes</a></td></tr>
+    <tr><td>A code snippets plugin</td><td>Small snippets managed from the dashboard, if you're careful</td></tr>
+    <tr><td>The parent theme's files</td><td>Never; updates overwrite them</td></tr>
+  </tbody>
+</table>
+
+<h2>Questions to ask</h2>
+<ol>
+  <li><strong>Maintenance:</strong> who will update this when WordPress or PHP changes?</li>
+  <li><strong>Security:</strong> is the plugin actively maintained, and is custom code written to standard?</li>
+  <li><strong>Performance:</strong> what does it load, and on which pages?</li>
+  <li><strong>Cost over time:</strong> licence fees versus development and upkeep</li>
+  <li><strong>Exit:</strong> what happens to content and settings if you remove it?</li>
+</ol>
+
+<h2>Plugin count isn't the whole story</h2>
+<p>Ten lightweight, well-coded plugins can be faster and safer than three bloated ones. Quality matters more than the number; see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</p>
+
+<p>Not sure which way to go? Ask me; it's the kind of decision I make every day in <a href="/wordpress-website-development/">WordPress development</a>.</p>
 `,
   },
 ];

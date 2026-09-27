@@ -327,6 +327,14 @@ const LINKS = [
   ['hire-developer-vs-diy-website', '<h2>A middle path</h2>', '<p>Want to handle updates yourself? See <a href="/blog/edit-website-content-wordpress/">how to edit your WordPress content</a>.</p>\n\n'],
   ['how-to-choose-wordpress-theme', '<h2>Popular choices for business sites</h2>', '<p>Considering a premium theme? Read <a href="/blog/premium-wordpress-themes-guide/">what to know before buying</a>.</p>\n\n'],
   ['nulled-themes-plugins-risks', '<h2>Licences are cheaper than clean-ups</h2>', '<p>Already have a genuine premium theme? See <a href="/blog/update-premium-theme-safely/">how to update it safely</a>.</p>\n\n'],
+  // Round 42: theme and plugin development
+  ['how-to-choose-wordpress-theme', '<h2>The simple rule</h2>', '<p>Need something no theme offers? See <a href="/blog/custom-wordpress-theme-development/">custom WordPress theme development</a>.</p>\n\n'],
+  ['wordpress-vs-custom-coded-website', '<h2>Common myths</h2>', '<p>The middle ground: WordPress with a <a href="/blog/custom-wordpress-theme-development/">custom theme</a> and <a href="/blog/custom-wordpress-plugin-development/">custom plugins</a>.</p>\n\n'],
+  ['essential-wordpress-plugins-business', '<h2>Plugins and habits to avoid</h2>', '<p>Not sure whether to add a plugin at all? See <a href="/blog/plugin-vs-custom-code-wordpress/">plugin vs custom code</a>.</p>\n\n'],
+  ['figma-to-wordpress-approaches', '<h2>Option 3: Custom classic theme</h2>', '<p>More on this approach: <a href="/blog/block-themes-full-site-editing/">block themes explained</a> and <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a>.</p>\n\n'],
+  ['update-premium-theme-safely', '<h2>Step 3: Back up and use staging</h2>', '<p>New to child themes? See <a href="/blog/wordpress-child-theme-explained/">child themes explained</a>.</p>\n\n'],
+  ['directory-website-wordpress', '<h2>Real example</h2>', '<p>The foundations: <a href="/blog/custom-post-types-fields/">custom post types and fields</a>.</p>\n\n'],
+  ['what-does-wordpress-developer-do', '<h2>Online stores</h2>', '<p>More detail: <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a> and <a href="/blog/custom-wordpress-theme-development/">custom theme development</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
