@@ -176,6 +176,13 @@ const LINKS = [
   ['internal-linking-explained', '<h2>Common mistakes</h2>', '<p>Links from other websites matter too; see <a href="/blog/ethical-link-building-small-business/">ethical link building for small businesses</a>.</p>\n\n'],
   ['local-seo-guide-small-business-india', '<h2>Step 6: Earn local links and mentions</h2>', '<p>More on listings: <a href="/blog/business-directories-citations-india/">business directories and citations in India</a>.</p>\n\n'],
   ['get-more-google-reviews', '<h2>Make reviews a habit</h2>', '<p>Got a bad review? See <a href="/blog/handle-negative-reviews/">how to handle negative reviews professionally</a>.</p>\n\n'],
+  // Round 20
+  ['website-for-real-estate-agents-brokers', '<h2>Build trust</h2>', '<p>Managing rentals for owners? See <a href="/blog/website-for-property-management-companies/">websites for property management companies</a>.</p>\n\n'],
+  ['woocommerce-product-page-optimization', '<h2>Remove doubts</h2>', '<p>For the copy itself, see <a href="/blog/write-product-descriptions-that-sell/">how to write product descriptions that sell</a>.</p>\n\n'],
+  ['business-email-deliverability-spf-dkim-dmarc', '<h2>SPF: who may send</h2>', '<p>Still choosing a provider? See <a href="/blog/business-email-options/">business email options for small businesses</a>.</p>\n\n'],
+  ['core-web-vitals-explained', '<h2>How to check your scores</h2>', '<p>Confused by different scores? See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</p>\n\n'],
+  ['google-business-profile-checklist', '<h2>Connect it to your website</h2>', '<p>Wondering whether a small shop needs a website at all? See <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website</a>.</p>\n\n'],
+  ['seo-red-flags-scams', '<h2>Green flags</h2>', '<p>Related: <a href="/blog/domain-seo-scam-emails/">how to spot domain renewal and SEO scam emails</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

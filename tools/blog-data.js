@@ -1235,6 +1235,8 @@ module.exports = [
   <li><strong>Google uses them.</strong> Page experience is one of many ranking signals. When competing pages are similar, a better experience can help.</li>
 </ul>
 
+<p>Confused by different scores? See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</p>
+
 <h2>How to check your scores</h2>
 <ol>
   <li>Go to <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and enter your URL.</li>
@@ -1456,6 +1458,8 @@ module.exports = [
   <li><strong>Q&amp;A:</strong> add common questions and answers yourself, and monitor questions from the public.</li>
   <li><strong>Respond quickly</strong> to messages and calls. Responsiveness affects customer trust.</li>
 </ul>
+
+<p>Wondering whether a small shop needs a website at all? See <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website</a>.</p>
 
 <h2>Connect it to your website</h2>
 <p>Your profile and website work together. Make sure your name, address and phone number match exactly on both; add a Google Map and your hours to your contact page; and create service pages on your site for the main services listed on your profile. Our <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> covers the website side in more detail.</p>
@@ -4089,6 +4093,8 @@ module.exports = [
   <li><strong>Scannable specifications</strong> in a short list or table.</li>
 </ol>
 
+<p>For the copy itself, see <a href="/blog/write-product-descriptions-that-sell/">how to write product descriptions that sell</a>.</p>
+
 <h2>Remove doubts</h2>
 <ol start="7">
   <li><strong>Clear pricing:</strong> show the price, any discount, taxes and whether shipping is extra, before checkout.</li>
@@ -6427,6 +6433,8 @@ module.exports = [
   <li>Website emails are sent from the web server without proper authentication</li>
 </ul>
 
+<p>Still choosing a provider? See <a href="/blog/business-email-options/">business email options for small businesses</a>.</p>
+
 <h2>SPF: who may send</h2>
 <p>SPF (Sender Policy Framework) is a DNS record listing the servers allowed to send email for your domain, for example your email provider and any service your website uses. Keep a single SPF record that includes all legitimate senders.</p>
 
@@ -6598,6 +6606,8 @@ module.exports = [
 
 <h2>Show local expertise</h2>
 <p>Area guides are your strongest content: schools, transport, markets, typical prices and rents, and upcoming developments for each locality you cover. They attract searchers and prove you know the area. Write them only for places you genuinely work; see <a href="/blog/local-landing-pages-without-doorway-pages/">local pages without doorway pages</a>.</p>
+
+<p>Managing rentals for owners? See <a href="/blog/website-for-property-management-companies/">websites for property management companies</a>.</p>
 
 <h2>Build trust</h2>
 <ul>
@@ -9175,6 +9185,8 @@ module.exports = [
   <li><strong>Mass-producing pages</strong>, such as hundreds of city pages with the same text; see <a href="/blog/local-landing-pages-without-doorway-pages/">doorway pages</a>.</li>
 </ol>
 
+<p>Related: <a href="/blog/domain-seo-scam-emails/">how to spot domain renewal and SEO scam emails</a>.</p>
+
 <h2>Green flags</h2>
 <ul>
   <li>Clear explanation of what they'll do and why</li>
@@ -9346,6 +9358,302 @@ module.exports = [
 
 <h2>Balance with more positive reviews</h2>
 <p>A steady flow of genuine reviews puts the occasional negative one in context; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-property-management-companies',
+    seoTitle: 'Websites for Property Management Companies',
+    title: 'Websites for Property Management Companies',
+    description: 'What property management and rental management companies need online: services for owners and tenants, fee structures, areas covered, owner enquiry forms, tenant requests and trust signals.',
+    date: '2026-09-27',
+    category: 'Industries',
+    related: ['real-estate-website-design', 'wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Property owners, especially NRIs and people with multiple properties, look for managers they can trust with their asset and tenants. A clear website explains exactly what you handle and how you report back.</p>
+
+<h2>Services for owners</h2>
+<ul>
+  <li>Tenant finding and screening</li>
+  <li>Rent collection and reporting</li>
+  <li>Maintenance and repairs coordination</li>
+  <li>Legal documentation support (agreements, police verification where applicable)</li>
+  <li>Periodic inspections with photo reports</li>
+  <li>Handling vacant property security and upkeep</li>
+</ul>
+
+<h2>Transparent fees</h2>
+<p>Explain your fee structure (percentage of rent, flat monthly fee, one-time tenant placement fee) and what's included vs extra. Owners compare managers on this.</p>
+
+<h2>Areas and property types</h2>
+<p>List localities and cities you cover and property types (apartments, villas, commercial). Create area pages only where you actively manage properties and can add real detail.</p>
+
+<h2>For NRI owners</h2>
+<p>NRIs need confidence from a distance: online reporting, video inspections, clear communication across time zones, and documentation handled properly. A dedicated section speaks directly to them.</p>
+
+<h2>For tenants</h2>
+<ul>
+  <li>Available rentals with photos and details</li>
+  <li>Maintenance request form</li>
+  <li>Move-in and move-out process</li>
+</ul>
+
+<h2>Trust</h2>
+<ul>
+  <li>Registration details and office address</li>
+  <li>Sample owner report (anonymised)</li>
+  <li>Genuine owner testimonials, with permission</li>
+  <li>Clear contract terms and exit policy</li>
+</ul>
+
+<h2>SEO</h2>
+<ul>
+  <li>Target "property management services in {city}" and "rental management for NRIs {city}"</li>
+  <li>Guides for owners: rental agreements, tenant screening, maintenance planning</li>
+</ul>
+
+<p>Agents and brokers have different needs; see <a href="/blog/website-for-real-estate-agents-brokers/">websites for real estate agents</a>. Builders: <a href="/real-estate-website-design/">real estate website design</a>.</p>
+`,
+  },
+  {
+    slug: 'write-product-descriptions-that-sell',
+    seoTitle: 'How to Write Product Descriptions That Sell',
+    title: 'How to Write Product Descriptions That Sell (and Rank)',
+    description: 'A simple formula for writing online store product descriptions that convert and rank: benefits first, scannable details, answering objections, unique copy and SEO-friendly titles.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>Product descriptions do the job of a salesperson in an online store. Copying the manufacturer's text or writing one vague line wastes that opportunity. Here's a simple formula that works for most products.</p>
+
+<h2>1. Write a clear, descriptive title</h2>
+<p>Include what it is plus key attributes: "Cold-pressed groundnut oil, 1 litre, glass bottle" beats "Premium Oil". Titles are also what shoppers search for.</p>
+
+<h2>2. Lead with the main benefit</h2>
+<p>Start with one or two sentences on why someone would want it: what problem it solves or what experience it gives. Then move to details.</p>
+
+<h2>3. Make details scannable</h2>
+<ul>
+  <li>Size, weight, dimensions</li>
+  <li>Materials or ingredients</li>
+  <li>How to use and care instructions</li>
+  <li>What's in the box</li>
+</ul>
+<p>Bullet points or a small table work best.</p>
+
+<h2>4. Answer objections</h2>
+<p>Think about what makes shoppers hesitate: sizing, quality, delivery time, returns, compatibility. Answer those in the description or a short FAQ.</p>
+
+<h2>5. Use your customers' language</h2>
+<p>Use the words customers use in reviews, questions and searches, not internal jargon.</p>
+
+<h2>6. Keep it unique</h2>
+<p>Manufacturer descriptions appear on every competitor's site. Unique descriptions help you stand out in search and in shoppers' minds; see <a href="/blog/duplicate-content-explained/">duplicate content explained</a>.</p>
+
+<h2>7. Support with visuals and proof</h2>
+<p>Great photos, a short video and genuine reviews do much of the persuading; see <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a>.</p>
+
+<h2>A quick template</h2>
+<ol>
+  <li>Headline benefit (1–2 sentences)</li>
+  <li>Who it's for and how it's used</li>
+  <li>Key features as bullets</li>
+  <li>Specifications table</li>
+  <li>Care, delivery and returns notes</li>
+</ol>
+
+<h2>Scaling across many products</h2>
+<p>For large catalogues, write strong descriptions for your best sellers first, then use a consistent structure for the rest. If you draft with AI tools, edit and fact-check every description; see <a href="/blog/ai-tools-website-content-responsibly/">using AI tools responsibly</a>.</p>
+
+<p>For store SEO, see <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a>.</p>
+`,
+  },
+  {
+    slug: 'business-email-options',
+    seoTitle: 'Business Email Options: Google Workspace, Zoho & More',
+    title: 'Business Email Options for Small Businesses: What to Choose',
+    description: 'Comparing business email options for small businesses: hosted email from your web host, Google Workspace, Zoho Mail and Microsoft 365, plus setup tips for your domain and deliverability.',
+    date: '2026-09-27',
+    category: 'Guides',
+    related: ['wordpress-migration', 'wordpress-website-development', 'wordpress-maintenance'],
+    body: `
+<p>An email address at your own domain (you@yourbusiness.com) looks professional and builds trust. There are several ways to set it up, each with different costs, features and reliability.</p>
+
+<h2>The main options</h2>
+<table>
+  <thead><tr><th>Option</th><th>Good for</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Email included with web hosting</strong></td><td>Very small budgets, basic needs</td><td>Deliverability and storage vary; tied to your hosting</td></tr>
+    <tr><td><strong>Google Workspace</strong></td><td>Teams who like Gmail, Docs and Drive</td><td>Per-user monthly pricing</td></tr>
+    <tr><td><strong>Zoho Mail / Workplace</strong></td><td>Cost-conscious businesses; popular in India</td><td>Features vary by plan</td></tr>
+    <tr><td><strong>Microsoft 365</strong></td><td>Businesses using Outlook and Office</td><td>Per-user monthly pricing</td></tr>
+  </tbody>
+</table>
+<p>Check each provider's current pricing and free tiers, which change over time.</p>
+
+<h2>How to choose</h2>
+<ul>
+  <li>How many mailboxes do you need?</li>
+  <li>Do you want shared documents, calendars and video calls?</li>
+  <li>How important is reliable delivery to customers' inboxes?</li>
+  <li>Do you want email independent of your web hosting? (Recommended: changing hosts won't affect email.)</li>
+</ul>
+
+<h2>Setting it up</h2>
+<ol>
+  <li>Sign up with the provider and verify your domain</li>
+  <li>Add MX records in your DNS to route email</li>
+  <li>Add SPF, DKIM and DMARC records for deliverability; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a></li>
+  <li>Migrate old emails if needed</li>
+  <li>Set up addresses like info@ and sales@ as aliases or groups</li>
+</ol>
+
+<h2>Website form emails</h2>
+<p>Your website's contact form should send through an authenticated service so enquiries land in the inbox; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+
+<h2>Changing hosting or domain later</h2>
+<p>Email DNS records must be copied carefully during migrations, or email stops; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+`,
+  },
+  {
+    slug: 'website-speed-test-tools-explained',
+    seoTitle: 'Website Speed Test Tools Explained (PageSpeed & More)',
+    title: 'Website Speed Test Tools Explained: PageSpeed Insights, Lighthouse and More',
+    description: 'How to use website speed tools like PageSpeed Insights, Lighthouse and Search Console, why scores vary between tests, lab vs field data, and which numbers to act on.',
+    date: '2026-09-27',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'website-redesign', 'wordpress-seo-services'],
+    body: `
+<p>Run a speed test twice and you may get two different scores. Different tools measure different things. Here's how to read speed tools without getting confused, and which numbers actually matter.</p>
+
+<h2>Lab data vs field data</h2>
+<ul>
+  <li><strong>Lab data:</strong> a simulated test on a set device and network (for example Lighthouse). Useful for diagnosing problems; varies from run to run.</li>
+  <li><strong>Field data:</strong> real measurements from actual Chrome users over the past weeks (shown in PageSpeed Insights and Search Console when there's enough traffic). This reflects real experience.</li>
+</ul>
+
+<h2>The main tools</h2>
+<h3>PageSpeed Insights</h3>
+<p>Shows field data (if available) at the top and a Lighthouse lab report below, with specific suggestions. Test key pages on mobile.</p>
+<h3>Lighthouse (in Chrome DevTools)</h3>
+<p>Runs a lab test in your browser, covering performance, accessibility, best practices and SEO. Test in an incognito window to avoid extensions skewing results.</p>
+<h3>Search Console: Core Web Vitals</h3>
+<p>Groups your pages by real-user experience (good, needs improvement, poor). Best for tracking progress site-wide.</p>
+<h3>Other testing tools</h3>
+<p>Various third-party tools show waterfall charts of every file loaded, which helps diagnose what's slow.</p>
+
+<h2>Why scores vary</h2>
+<ul>
+  <li>Server response time changes from moment to moment</li>
+  <li>Test location and simulated network differ between tools</li>
+  <li>Third-party scripts (ads, chat, analytics) load differently each time</li>
+  <li>Caching: first visits vs repeat visits</li>
+</ul>
+<p>Run tests a few times and look at trends, not single scores.</p>
+
+<h2>Which numbers to act on</h2>
+<ul>
+  <li><strong>Core Web Vitals</strong> (LCP, INP, CLS), especially from field data; see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a></li>
+  <li>Server response time</li>
+  <li>The specific opportunities listed: large images, render-blocking resources, unused JavaScript</li>
+</ul>
+
+<h2>Don't chase 100</h2>
+<p>A perfect score isn't the goal; a fast experience for real visitors is. A page scoring 85 that loads quickly on phones and converts well beats a 100 with no content.</p>
+
+<p>For fixes, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> or <a href="/wordpress-speed-optimization/">speed optimization</a>.</p>
+`,
+  },
+  {
+    slug: 'does-a-local-shop-need-a-website',
+    seoTitle: 'Does a Local Shop Need a Website?',
+    title: 'Does a Local Shop Need a Website? An Honest Answer',
+    description: 'Do small local shops need a website, or is a Google Business Profile and WhatsApp enough? When a simple website helps, what it should include, and how to keep costs low.',
+    date: '2026-09-27',
+    category: 'Growth',
+    related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>Many local shops, such as stationery, electronics, sweets, hardware and clothing stores, run well on walk-ins, WhatsApp and word of mouth. So do they need a website? Honestly: not always first, but often it's worth it.</p>
+
+<h2>Start with the free essentials</h2>
+<ol>
+  <li><strong>Google Business Profile:</strong> the most important step for local shops. Accurate hours, photos, products and reviews help people find you on Maps. See the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</li>
+  <li><strong>WhatsApp Business:</strong> catalogue, quick replies and a business profile</li>
+  <li><strong>Reviews:</strong> ask happy customers; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a></li>
+</ol>
+
+<h2>When a website makes a real difference</h2>
+<ul>
+  <li>You want to appear for searches beyond "near me", such as specific products or brands</li>
+  <li>You take orders for delivery or pickup</li>
+  <li>You sell to businesses, schools or offices (bulk or repeat orders)</li>
+  <li>You have many products or brands to show</li>
+  <li>You want to look more established than competitors</li>
+  <li>You plan to open more branches or sell online later</li>
+</ul>
+
+<h2>What a simple shop website needs</h2>
+<ul>
+  <li>What you sell, brands you stock and photos</li>
+  <li>Location, hours and a map</li>
+  <li>WhatsApp and click-to-call buttons</li>
+  <li>An enquiry or order form for bulk or special orders</li>
+  <li>Your Google reviews</li>
+</ul>
+<p>A one-page site or a small few-page site is often enough; see <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</p>
+
+<h2>Keep costs sensible</h2>
+<ul>
+  <li>Start small and expand later</li>
+  <li>Provide your own photos and product list</li>
+  <li>Use a simple, fast design on reliable hosting</li>
+</ul>
+<p>Check a ballpark with the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<h2>The bottom line</h2>
+<p>Get your Google Business Profile and WhatsApp right first. Add a simple website when you want to reach beyond walk-ins, take orders or look more professional. It's usually a small investment compared with the business it can bring.</p>
+`,
+  },
+  {
+    slug: 'domain-seo-scam-emails',
+    seoTitle: 'Domain Renewal & SEO Scam Emails: How to Spot Them',
+    title: 'Domain Renewal and SEO Scam Emails: How to Spot and Avoid Them',
+    description: 'How to recognise common scam emails targeting website owners (fake domain renewals, fake SEO audits, "your site will be removed" threats and phishing logins) and what to do instead.',
+    date: '2026-09-27',
+    category: 'Security',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-seo-services'],
+    body: `
+<p>Once you have a website, the scam emails start: urgent domain renewal notices, "critical SEO errors", threats that your site will be removed, and fake login pages. Most are easy to spot once you know the patterns.</p>
+
+<h2>Common scams</h2>
+<h3>Fake domain renewal or "domain listing" notices</h3>
+<p>Emails that look like invoices for renewing your domain or "search engine registration", from a company you've never used. Your real registrar is the only one who can renew your domain; check directly in your registrar account.</p>
+<h3>Fake SEO audits and threats</h3>
+<p>"Your website has 57 critical SEO errors" or "your site is not showing on Google" from unknown senders, pushing paid services. See <a href="/blog/seo-red-flags-scams/">SEO red flags</a>.</p>
+<h3>"Your domain/website will be suspended"</h3>
+<p>Urgent threats with a payment link. Real suspension notices come from your actual host or registrar and can be verified by logging in directly.</p>
+<h3>Phishing login pages</h3>
+<p>Emails pretending to be your host, email provider or WordPress, asking you to "verify" or "update" your password via a link. The link leads to a fake page that steals your credentials.</p>
+<h3>Fake Google Business Profile calls or emails</h3>
+<p>Claims that your listing will be removed unless you pay. Managing your profile is free through Google.</p>
+
+<h2>How to protect yourself</h2>
+<ul>
+  <li>Never click login links in unexpected emails. Type the provider's address yourself.</li>
+  <li>Know who your registrar, host and email provider are (keep a record)</li>
+  <li>Turn on two-factor authentication everywhere</li>
+  <li>Enable auto-renew with your real registrar</li>
+  <li>Check sender addresses carefully and be suspicious of urgency</li>
+</ul>
+
+<h2>If you clicked or paid</h2>
+<ol>
+  <li>Change passwords immediately and enable 2FA</li>
+  <li>Check your registrar and hosting accounts for changes</li>
+  <li>Contact your bank if you paid</li>
+  <li>Check your website for signs of compromise; see <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked site</a></li>
+</ol>
+
+<p>Keeping records of your accounts is part of good website ownership; see <a href="/blog/regain-website-access-old-developer/">keeping control of your website</a>.</p>
 `,
   },
 ];
