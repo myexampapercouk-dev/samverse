@@ -252,6 +252,13 @@ const LINKS = [
   ['add-blog-to-existing-website', '<h2>Plan content you can sustain</h2>', '<p>Step-by-step: <a href="/blog/write-blog-posts-that-rank/">how to write blog posts that rank</a>.</p>\n\n'],
   ['website-content-calendar', '<h2>Measure</h2>', '<p>Detailed process: <a href="/blog/update-old-blog-posts/">how to update old blog posts</a>.</p>\n\n'],
   ['internal-linking-explained', '<h2>How this site does it</h2>', '<p>Take it further with <a href="/blog/topic-clusters-pillar-pages/">topic clusters and pillar pages</a>.</p>\n\n'],
+  // Round 31
+  ['woocommerce-store-launch-checklist', '<h2>Emails and notifications</h2>', '<p>Writing your returns policy? See <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce</a>.</p>\n\n'],
+  ['write-product-descriptions-that-sell', '<h2>Scaling across many products</h2>', '<p>Selling sizes and colours? See <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>\n\n'],
+  ['woocommerce-vs-shopify-india', '<h2>Real costs over the first year</h2>', '<p>Still deciding whether to sell on your own site at all? Read <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a>.</p>\n\n'],
+  ['woocommerce-seo-guide', '<h2>Quick checklist</h2>', '<p>Also get products into Google Shopping for free: <a href="/blog/google-merchant-center-woocommerce/">Merchant Center for WooCommerce</a>.</p>\n\n'],
+  ['woocommerce-abandoned-cart-recovery', '<h2>Measure it</h2>', '<p>Using discounts to recover carts? See <a href="/blog/woocommerce-coupons-discounts/">coupon strategies that protect margins</a>.</p>\n\n'],
+  ['woocommerce-product-page-optimization', '<h2>Make buying effortless</h2>', '<p>Accurate stock status matters too; see <a href="/blog/woocommerce-inventory-management/">inventory management</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

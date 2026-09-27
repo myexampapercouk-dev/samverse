@@ -464,6 +464,8 @@ module.exports = [
   <li>You don't need much customisation beyond themes and apps</li>
 </ul>
 
+<p>Still deciding whether to sell on your own site at all? Read <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a>.</p>
+
 <h2>Real costs over the first year</h2>
 <p>With WooCommerce, your running costs are mainly hosting, a domain and any premium plugins you choose, plus maintenance if you use a developer. With Shopify, you pay the monthly plan, and paid apps for features like reviews, filters or WhatsApp often add a noticeable amount each month. For many small Indian stores, WooCommerce works out cheaper over time, while Shopify saves time on maintenance.</p>
 
@@ -2983,6 +2985,8 @@ module.exports = [
   <li>Contact page with business details</li>
 </ol>
 
+<p>Writing your returns policy? See <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce</a>.</p>
+
 <h2>Emails and notifications</h2>
 <ol start="21">
   <li>Order confirmation, processing and completed emails branded and tested</li>
@@ -4163,6 +4167,8 @@ module.exports = [
   <li><strong>Genuine reviews and ratings.</strong> Encourage customers to review after delivery. Never fake reviews.</li>
 </ol>
 
+<p>Accurate stock status matters too; see <a href="/blog/woocommerce-inventory-management/">inventory management</a>.</p>
+
 <h2>Make buying effortless</h2>
 <ol start="11">
   <li><strong>Mobile-first layout:</strong> price, options and a sticky "Add to cart" button visible without hunting.</li>
@@ -4237,6 +4243,8 @@ module.exports = [
 <p>Buying guides, comparisons and how-to articles attract shoppers earlier in their research and link naturally to categories and products.</p>
 
 <p>Industry examples: <a href="/blog/website-for-fashion-boutiques/">fashion boutiques</a>, <a href="/blog/website-for-d2c-food-brands/">D2C food brands</a> and <a href="/blog/website-for-jewellers/">jewellers</a>.</p>
+
+<p>Also get products into Google Shopping for free: <a href="/blog/google-merchant-center-woocommerce/">Merchant Center for WooCommerce</a>.</p>
 
 <h2>Quick checklist</h2>
 <ol>
@@ -5938,6 +5946,8 @@ module.exports = [
   <li><strong>Optional incentive</strong> in a final reminder, used carefully so customers don't learn to wait for discounts</li>
 </ul>
 <p><strong>Consent and privacy matter:</strong> tell customers how their details are used, follow the messaging platform's rules (especially for WhatsApp), and make opting out easy.</p>
+
+<p>Using discounts to recover carts? See <a href="/blog/woocommerce-coupons-discounts/">coupon strategies that protect margins</a>.</p>
 
 <h2>Measure it</h2>
 <ul>
@@ -9575,6 +9585,8 @@ module.exports = [
   <li>Care, delivery and returns notes</li>
 </ol>
 
+<p>Selling sizes and colours? See <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>
+
 <h2>Scaling across many products</h2>
 <p>For large catalogues, write strong descriptions for your best sellers first, then use a consistent structure for the rest. If you draft with AI tools, edit and fact-check every description; see <a href="/blog/ai-tools-website-content-responsibly/">using AI tools responsibly</a>.</p>
 
@@ -13067,6 +13079,362 @@ module.exports = [
 
 <h2>10. Measure and improve</h2>
 <p>After a few months, check Search Console: which queries does it appear for? Update the post to answer them better; see <a href="/blog/update-old-blog-posts/">updating old posts</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-returns-refunds-policy',
+    seoTitle: 'Returns & Refunds for WooCommerce Stores in India',
+    title: 'Returns and Refunds for WooCommerce Stores: Policy and Process',
+    description: 'How to write a clear return and refund policy for an Indian online store, what information to display, handling returns and refunds in WooCommerce, and reducing returns in the first place.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'website-for-startups', 'wordpress-website-development'],
+    body: `
+<p>A clear returns and refunds policy is one of the biggest trust signals for an online store. Shoppers check it before buying from a brand they don't know, and a well-run process turns a problem into a reason to buy again.</p>
+
+<h2>What the law expects</h2>
+<p>India's Consumer Protection (E-Commerce) Rules, 2020 require online sellers to clearly display information such as return, refund, exchange, warranty and delivery terms, along with grievance redressal details. Check the current rules or ask a lawyer to confirm what applies to your business.</p>
+
+<h2>What your policy should cover</h2>
+<ul>
+  <li><strong>Return window:</strong> how many days after delivery</li>
+  <li><strong>Eligible products:</strong> and exceptions like perishables, personalised items, innerwear or opened cosmetics</li>
+  <li><strong>Condition:</strong> unused, with tags and original packaging</li>
+  <li><strong>How to request a return:</strong> form, email or WhatsApp, and what details or photos to include</li>
+  <li><strong>Pickup or self-ship:</strong> and who pays return shipping</li>
+  <li><strong>Refund method and timeline:</strong> to the original payment method, store credit, or bank transfer for COD orders</li>
+  <li><strong>Exchanges:</strong> for size or colour changes</li>
+  <li><strong>Damaged or wrong items:</strong> how to report them, ideally with an unboxing photo or video</li>
+</ul>
+<p>Write it in plain language, not legal jargon.</p>
+
+<h2>Where to show it</h2>
+<ul>
+  <li>A dedicated returns and refunds page linked in the footer</li>
+  <li>A short summary on product pages, such as "7-day easy returns"</li>
+  <li>A link at checkout</li>
+  <li>In order confirmation emails</li>
+</ul>
+
+<h2>Handling refunds in WooCommerce</h2>
+<ul>
+  <li>Refunds are issued from the order screen, either the full amount or specific items</li>
+  <li>If your payment gateway plugin supports it, the refund can be sent back automatically; otherwise you refund in the gateway dashboard and record it in WooCommerce</li>
+  <li>For COD orders, collect bank or UPI details securely for the refund</li>
+  <li>Restock returned items only after checking their condition</li>
+</ul>
+
+<h2>Streamline returns</h2>
+<ul>
+  <li>A simple return request form</li>
+  <li>Reverse pickup through your courier or shipping aggregator</li>
+  <li>Status updates by email or WhatsApp</li>
+  <li>Plugins can add return request workflows if you get many returns</li>
+</ul>
+
+<h2>Reduce returns in the first place</h2>
+<ul>
+  <li>Accurate product photos and colours</li>
+  <li>Size charts and fit guidance</li>
+  <li>Detailed descriptions and FAQs; see <a href="/blog/write-product-descriptions-that-sell/">product descriptions that sell</a></li>
+  <li>Good packaging to prevent damage</li>
+  <li>Track return reasons and fix recurring problems</li>
+</ul>
+
+<p>See also the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> and <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery guide</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-product-variations',
+    seoTitle: 'WooCommerce Product Variations: Sizes, Colours & More',
+    title: 'WooCommerce Product Variations: Selling Sizes, Colours and Options',
+    description: 'How to set up variable products in WooCommerce: attributes, variations, per-variation prices, stock and images, colour swatches, size charts and keeping large variation sets manageable.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development', 'wordpress-speed-optimization'],
+    body: `
+<p>If you sell a T-shirt in five sizes and four colours, you don't want 20 separate products. WooCommerce's variable products let customers choose options on one product page, with each combination having its own price, stock and image.</p>
+
+<h2>Key terms</h2>
+<ul>
+  <li><strong>Attribute:</strong> an option type, like size, colour or weight</li>
+  <li><strong>Terms:</strong> the values of an attribute, like S, M, L or Red, Blue</li>
+  <li><strong>Variation:</strong> a specific combination, like "Medium, Blue"</li>
+</ul>
+
+<h2>Global vs custom attributes</h2>
+<p><strong>Global attributes</strong> (Products → Attributes) are reusable across products and can be used for filtering, such as filtering the whole store by size. <strong>Custom attributes</strong> are defined on a single product. Use global attributes for common options like size and colour.</p>
+
+<h2>Setting up a variable product</h2>
+<ol>
+  <li>Choose "Variable product" as the product type</li>
+  <li>Add attributes and tick "Used for variations"</li>
+  <li>Generate variations from all attribute combinations, or add them one by one</li>
+  <li>For each variation, set price, SKU, stock and image</li>
+  <li>Set a default selection if one option is most popular</li>
+</ol>
+
+<h2>Variation images</h2>
+<p>Assign an image to each colour so the main photo changes when the customer selects it. This reduces confusion and returns.</p>
+
+<h2>Better option selection</h2>
+<ul>
+  <li><strong>Swatches:</strong> colour circles and size buttons instead of dropdowns, via a swatches plugin or theme feature</li>
+  <li><strong>Size charts:</strong> a clear chart next to the size selector</li>
+  <li><strong>Show availability:</strong> grey out out-of-stock combinations</li>
+</ul>
+
+<h2>Keep large variation sets manageable</h2>
+<p>Products with dozens or hundreds of variations can slow the admin and product pages. Consider:</p>
+<ul>
+  <li>Only creating combinations you actually sell</li>
+  <li>Using product add-ons for options that don't need separate stock (like gift wrapping or engraving)</li>
+  <li>Splitting very different versions into separate products</li>
+</ul>
+
+<h2>Bulk editing</h2>
+<p>WooCommerce lets you set prices and stock for all variations at once, and CSV import/export helps manage large catalogues.</p>
+
+<h2>SEO for variable products</h2>
+<p>Variations share one product URL, which keeps ranking signals together. Mention available sizes and colours in the description. See the <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a>.</p>
+
+<p>Pair good variations with a strong product page; see <a href="/blog/woocommerce-product-page-optimization/">product page optimisation</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-inventory-management',
+    seoTitle: 'WooCommerce Inventory Management: Stock Settings Guide',
+    title: 'WooCommerce Inventory Management: Avoid Overselling and Stockouts',
+    description: 'How to manage stock in WooCommerce: stock settings, SKUs, low-stock alerts, hold stock, backorders, out-of-stock display, and syncing inventory with a physical shop or marketplaces.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'website-for-manufacturers', 'wordpress-maintenance'],
+    body: `
+<p>Selling something you don't have in stock means cancellations, refunds and unhappy customers. WooCommerce has solid built-in inventory features; you just need to set them up and keep your data accurate.</p>
+
+<h2>Turn on stock management</h2>
+<p>In WooCommerce → Settings → Products → Inventory, enable stock management. Then, for each product (or variation), tick "Manage stock" and enter the quantity.</p>
+
+<h2>Key inventory settings</h2>
+<ul>
+  <li><strong>Hold stock:</strong> how long to reserve stock for unpaid orders before cancelling them</li>
+  <li><strong>Low stock threshold:</strong> get an email when stock falls below this level</li>
+  <li><strong>Out of stock threshold:</strong> when a product is marked out of stock</li>
+  <li><strong>Out of stock visibility:</strong> hide out-of-stock products from the catalogue, or show them as unavailable</li>
+  <li><strong>Stock display:</strong> show "Only 3 left" or just "In stock"</li>
+</ul>
+
+<h2>Use SKUs</h2>
+<p>Give every product and variation a unique SKU (stock keeping unit). SKUs make stock counts, imports and syncing with other systems much easier.</p>
+
+<h2>Backorders</h2>
+<p>You can allow orders for out-of-stock items, useful for made-to-order products or items you can restock quickly. Tell customers the expected dispatch time clearly.</p>
+
+<h2>Out of stock: hide or show?</h2>
+<ul>
+  <li><strong>Show</strong> if the item will return, especially with a "notify me when available" option, and to keep the page's search rankings</li>
+  <li><strong>Hide</strong> from category pages if it clutters browsing</li>
+  <li>For permanently discontinued products, redirect to a similar product or category</li>
+</ul>
+
+<h2>Selling in a shop and online?</h2>
+<p>If you also sell from a physical store, stock must stay in sync. Options include:</p>
+<ul>
+  <li>A POS system that integrates with WooCommerce</li>
+  <li>Inventory or ERP software that syncs with WooCommerce</li>
+  <li>For low volumes, a disciplined manual update routine</li>
+</ul>
+
+<h2>Selling on marketplaces too?</h2>
+<p>Multi-channel inventory tools can sync stock between your website and marketplaces, preventing overselling. See <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a>.</p>
+
+<h2>Regular stock checks</h2>
+<p>Compare physical stock with WooCommerce counts regularly and correct differences. Stock reports help identify slow movers and bestsellers.</p>
+
+<p>Setting up a store? See the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-coupons-discounts',
+    seoTitle: 'WooCommerce Coupons & Discounts: Strategies That Work',
+    title: 'WooCommerce Coupons and Discounts: Boost Sales Without Killing Margins',
+    description: 'How to use WooCommerce coupons well: coupon types, usage restrictions and limits, first-order and free-shipping offers, avoiding margin loss and coupon-site leakage, and measuring results.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'landing-page-design', 'website-for-startups'],
+    body: `
+<p>Discounts can bring first-time buyers, clear old stock and recover abandoned carts. Used carelessly, they train customers to never pay full price and eat into your profits. WooCommerce's built-in coupons give you plenty of control.</p>
+
+<h2>Coupon types in WooCommerce</h2>
+<ul>
+  <li><strong>Percentage discount:</strong> for example, 10% off</li>
+  <li><strong>Fixed cart discount:</strong> for example, ₹200 off the whole order</li>
+  <li><strong>Fixed product discount:</strong> an amount off specific products</li>
+  <li><strong>Free shipping:</strong> a coupon can enable free shipping when your shipping method allows it</li>
+</ul>
+
+<h2>Restrictions to protect margins</h2>
+<ul>
+  <li><strong>Minimum spend:</strong> for example, ₹200 off orders above ₹1,500</li>
+  <li><strong>Specific products or categories:</strong> include or exclude items</li>
+  <li><strong>Exclude sale items</strong> to avoid double discounts</li>
+  <li><strong>Individual use only:</strong> can't be combined with other coupons</li>
+  <li><strong>Usage limits:</strong> per coupon and per customer</li>
+  <li><strong>Expiry date</strong></li>
+  <li><strong>Allowed emails:</strong> restrict to specific customers</li>
+</ul>
+
+<h2>Discount ideas that work</h2>
+<ul>
+  <li><strong>First-order discount</strong> for newsletter or WhatsApp sign-ups</li>
+  <li><strong>Free shipping</strong> above a cart value that raises average order size</li>
+  <li><strong>Abandoned cart coupon</strong> in a follow-up message; see <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a></li>
+  <li><strong>Festival offers</strong> with clear start and end dates; see <a href="/blog/seasonal-festival-campaigns-website/">festival campaigns</a></li>
+  <li><strong>Loyalty discounts</strong> for repeat customers</li>
+  <li><strong>Prepaid discounts</strong> to reduce COD; see <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery</a></li>
+</ul>
+
+<h2>Watch out for</h2>
+<ul>
+  <li><strong>Coupon sites:</strong> public codes leak to coupon websites. Use unique or limited codes for private offers</li>
+  <li><strong>Constant sales:</strong> shoppers wait for the next discount</li>
+  <li><strong>Hidden margins:</strong> calculate profit after discount, shipping and payment fees</li>
+  <li><strong>Coupon field distraction:</strong> an obvious coupon box can send shoppers off searching for codes; consider making it less prominent</li>
+</ul>
+
+<h2>Automatic discounts</h2>
+<p>For "buy 2 get 1" or tiered pricing applied automatically, you'll need a dynamic pricing plugin.</p>
+
+<h2>Measure results</h2>
+<p>WooCommerce reports show coupon usage and discount amounts. Compare orders and profit during campaigns with normal periods, and track campaign links with <a href="/blog/utm-tags-explained/">UTM tags</a>.</p>
+`,
+  },
+  {
+    slug: 'google-merchant-center-woocommerce',
+    seoTitle: 'Google Merchant Center for WooCommerce: Free Listings Guide',
+    title: 'Google Merchant Center for WooCommerce: Show Products on Google for Free',
+    description: 'How to list WooCommerce products on Google Shopping with Merchant Center: free listings, product feeds, requirements, common disapprovals, product schema and moving on to Shopping ads.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>Google can show your products with images and prices in the Shopping tab and other Google surfaces, and basic listings are free. To appear, you need a Google Merchant Center account and a product feed from your WooCommerce store.</p>
+
+<h2>What free listings are</h2>
+<p>Free product listings can appear in Google's Shopping tab, Images and other places without paying for ads. Paid Shopping ads get more prominent placements, but free listings are a great start for any store.</p>
+
+<h2>Step 1: Prepare your store</h2>
+<ul>
+  <li>Accurate prices and stock status on product pages</li>
+  <li>Clear shipping and return policies; see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds</a></li>
+  <li>Contact information visible on the site</li>
+  <li>Secure checkout (HTTPS)</li>
+  <li>Good product images without watermarks or promotional text over them</li>
+</ul>
+
+<h2>Step 2: Create a Merchant Center account</h2>
+<p>Add your business information and verify and claim your website, which is easiest through Search Console or Google tag verification.</p>
+
+<h2>Step 3: Connect a product feed</h2>
+<p>Google's official WooCommerce extension (Google for WooCommerce) can sync your products automatically. Other feed plugins also generate product feeds with more control over fields.</p>
+<p>Important feed fields include title, description, link, image, price, availability, brand and, where applicable, GTIN (barcode) or MPN.</p>
+
+<h2>Step 4: Set shipping and returns in Merchant Center</h2>
+<p>Configure shipping costs and delivery times to match your website. Mismatches cause disapprovals.</p>
+
+<h2>Common reasons products get disapproved</h2>
+<ul>
+  <li>Price or availability on the site doesn't match the feed</li>
+  <li>Missing shipping information</li>
+  <li>Missing or incorrect identifiers</li>
+  <li>Images with overlays or low quality</li>
+  <li>Restricted products or policy violations</li>
+</ul>
+<p>Check the Diagnostics section in Merchant Center and fix issues regularly.</p>
+
+<h2>Product structured data helps too</h2>
+<p>Product schema on your pages (price, availability, reviews) helps Google understand and verify your products; see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+
+<h2>Optimise listings</h2>
+<ul>
+  <li>Descriptive titles: brand, product type, key attributes like size or material</li>
+  <li>Detailed, accurate descriptions</li>
+  <li>Multiple quality images</li>
+  <li>Product reviews</li>
+</ul>
+
+<h2>Next: Shopping ads</h2>
+<p>Once your feed is clean, the same Merchant Center feed powers Google Shopping and Performance Max campaigns. See <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a>.</p>
+
+<p>For organic rankings, see the <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a>.</p>
+`,
+  },
+  {
+    slug: 'own-website-vs-marketplaces',
+    seoTitle: 'Own Website vs Amazon/Flipkart: Where Should You Sell?',
+    title: 'Own Website vs Marketplaces: Should You Sell on Amazon, Flipkart or Your Own Store?',
+    description: 'Comparing selling on marketplaces like Amazon, Flipkart and Meesho with your own WooCommerce or Shopify store: traffic, fees, control, customer data, brand building and running both together.',
+    date: '2026-09-27',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'website-for-startups', 'wordpress-website-development'],
+    body: `
+<p>Indian sellers can reach millions of buyers through marketplaces like Amazon, Flipkart and Meesho. So why build your own online store? The answer depends on your products, margins and long-term goals. Many successful brands do both.</p>
+
+<h2>Selling on marketplaces</h2>
+<h3>Advantages</h3>
+<ul>
+  <li>Huge built-in traffic and buyer trust</li>
+  <li>Logistics and payments handled or simplified</li>
+  <li>Quick to start with no website to build</li>
+</ul>
+<h3>Disadvantages</h3>
+<ul>
+  <li>Commissions and fees reduce margins</li>
+  <li>Intense price competition, sometimes right next to your listing</li>
+  <li>Limited branding and storytelling</li>
+  <li>You don't own the customer relationship or data</li>
+  <li>Platform rules and policy changes can affect your business overnight</li>
+</ul>
+
+<h2>Selling on your own website</h2>
+<h3>Advantages</h3>
+<ul>
+  <li>Better margins on each sale</li>
+  <li>Full control over branding, pricing and customer experience</li>
+  <li>Customer data for email and WhatsApp marketing and repeat sales</li>
+  <li>A brand asset you own</li>
+</ul>
+<h3>Disadvantages</h3>
+<ul>
+  <li>You must bring your own traffic through SEO, ads, social and referrals</li>
+  <li>Building trust as a new brand takes time</li>
+  <li>You handle payments, shipping and support setup</li>
+</ul>
+
+<h2>Which suits you?</h2>
+<table>
+  <thead><tr><th>Situation</th><th>Lean towards</th></tr></thead>
+  <tbody>
+    <tr><td>Commodity products competing on price</td><td>Marketplaces</td></tr>
+    <tr><td>Unique, branded or niche products</td><td>Own website (plus marketplaces)</td></tr>
+    <tr><td>Strong social media following</td><td>Own website</td></tr>
+    <tr><td>Want repeat customers and subscriptions</td><td>Own website</td></tr>
+    <tr><td>Testing a new product quickly</td><td>Marketplaces</td></tr>
+  </tbody>
+</table>
+
+<h2>The hybrid approach</h2>
+<p>Many brands use marketplaces for discovery and volume, and their own website for loyal customers, full range, bundles and better margins. Include a thank-you card in marketplace orders inviting customers to your website (within marketplace rules).</p>
+
+<h2>Running both smoothly</h2>
+<ul>
+  <li>Sync inventory to avoid overselling; see <a href="/blog/woocommerce-inventory-management/">inventory management</a></li>
+  <li>Keep pricing consistent with your channel strategy</li>
+  <li>Use your website for exclusive products or bundles</li>
+</ul>
+
+<h2>Choosing a platform for your store</h2>
+<p>See <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for India</a> and the <a href="/blog/woocommerce-store-launch-checklist/">store launch checklist</a>.</p>
 `,
   },
 ];
