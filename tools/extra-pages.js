@@ -224,7 +224,7 @@ module.exports = [
             <p class="about-name">Sameer Gupta</p>
             <p class="muted">WordPress &amp; Web Developer</p>
             <ul class="about-meta">
-              <li><span>Based in</span> India</li>
+              <li><span>Based in</span> Pune, India</li>
               <li><span>Working since</span> 2020</li>
               <li><span>Works with</span> Clients &amp; agencies</li>
             </ul>
@@ -243,7 +243,7 @@ module.exports = [
       mainEntity: {
         '@type': 'Person', '@id': `${SITE}/#sameer`, name: 'Sameer Gupta', jobTitle: 'Freelance WordPress Developer',
         url: `${SITE}/`, email: 'mailto:sameergpt9719@gmail.com', telephone: '+91-7417049145',
-        address: { '@type': 'PostalAddress', addressCountry: 'IN' },
+        address: { '@type': 'PostalAddress', addressLocality: 'Pune', addressRegion: 'Maharashtra', addressCountry: 'IN' },
         knowsAbout: ['WordPress', 'Elementor', 'WooCommerce', 'Website Speed Optimization', 'Search Engine Optimization', 'Responsive Web Design'],
       },
     }),
@@ -273,5 +273,60 @@ ${GLOSSARY.map(([t, d]) => `          <div class="glossary-item" id="${termId(t)
       '@type': 'DefinedTermSet', '@id': `${url}#terms`, name: 'WordPress & Website Glossary', url,
       hasDefinedTerm: GLOSSARY.map(([t, d]) => ({ '@type': 'DefinedTerm', name: t, description: d, url: `${url}#${termId(t)}` })),
     }),
+  },
+  {
+    // Describes only what this site actually does: contact form email, WhatsApp, GA4, Clarity and Google AdSense (blog pages).
+    slug: 'privacy-policy',
+    crumb: 'Privacy Policy',
+    title: 'Privacy Policy | Samverse',
+    description: 'How samverse.space collects and uses information: contact form enquiries, WhatsApp, Google Analytics, Microsoft Clarity and Google AdSense cookies, and your choices.',
+    eyebrow: 'Legal',
+    h1: 'Privacy <span class="grad">policy</span>',
+    lead: 'This page explains what information samverse.space collects, why, and the choices you have. Last updated: 28 September 2026.',
+    priority: '0.3',
+    main: `
+    <section class="section" style="padding-top:10px">
+      <div class="container about-page">
+        <div class="about-page-body">
+          <h2>Who we are</h2>
+          <p>samverse.space is the website of Sameer Gupta, a freelance WordPress developer based in Pune, India ("I", "me"). For any privacy question, email <a href="mailto:sameergpt9719@gmail.com">sameergpt9719@gmail.com</a>.</p>
+
+          <h2>Information you give me</h2>
+          <p>When you use the contact form, you share your name, phone or WhatsApp number, email address (optional), project type and message. This is emailed to me so I can reply to your enquiry. After you submit the form, WhatsApp may open so we can continue the conversation there; WhatsApp's own privacy policy applies to chats on WhatsApp.</p>
+          <p>I use these details only to respond to your enquiry and, if we work together, to deliver the project. I don't sell your information or add you to marketing lists without your consent.</p>
+
+          <h2>Analytics</h2>
+          <p>To understand how visitors use the site and improve it, the site may use:</p>
+          <ul>
+            <li><strong>Google Analytics 4</strong>, which uses cookies to measure visits, pages viewed, traffic sources and actions like form submissions or WhatsApp clicks</li>
+            <li><strong>Microsoft Clarity</strong>, which uses cookies to show aggregated heatmaps and session recordings of how pages are used</li>
+          </ul>
+          <p>These tools collect information such as your device, browser, approximate location and interactions with the site. I don't use them to identify you personally.</p>
+
+          <h2>Advertising</h2>
+          <p>Some blog pages may show ads served by Google AdSense. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visits to this and other sites on the internet.</p>
+          <p>You can opt out of personalised advertising by visiting Google's Ads Settings. You can also learn how Google uses information from sites that use its services on Google's "How Google uses information from sites or apps that use our services" page.</p>
+
+          <h2>Cookies and your choices</h2>
+          <p>You can block or delete cookies in your browser settings. The site works without analytics and advertising cookies, although some measurements won't be recorded.</p>
+
+          <h2>Hosting and security</h2>
+          <p>The site is hosted on Netlify and served over HTTPS. Form submissions are processed by a secure server function and delivered by email. No payment information is collected on this site.</p>
+
+          <h2>How long information is kept</h2>
+          <p>Enquiry emails are kept as long as needed to respond and for reasonable business records. Analytics data is kept according to the retention settings of the analytics tools.</p>
+
+          <h2>Your rights</h2>
+          <p>You can ask me to access, correct or delete the personal information you've shared by emailing <a href="mailto:sameergpt9719@gmail.com">sameergpt9719@gmail.com</a>. I'll respond within a reasonable time.</p>
+
+          <h2>Links to other websites</h2>
+          <p>This site links to client websites and other services. Their privacy practices are their own, so please review their policies.</p>
+
+          <h2>Changes to this policy</h2>
+          <p>I may update this policy when the site or the tools it uses change. The date at the top shows when it was last updated.</p>
+        </div>
+      </div>
+    </section>`,
+    schema: url => ({ '@type': 'WebPage', '@id': `${url}#page`, name: 'Privacy Policy', url, dateModified: '2026-09-28' }),
   },
 ];

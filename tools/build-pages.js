@@ -1089,6 +1089,13 @@ ${[...POSTS].sort((a, b) => b.date.localeCompare(a.date)).map(p => md(p.title, `
 `);
 console.log('built llms.txt');
 
+// ads.txt from the AdSense ID in config.js (also lets AdSense verify the site, since ads only load on blog articles)
+const pubId = (fs.readFileSync(path.join(ROOT, 'config.js'), 'utf8').match(/ADSENSE_ID:\s*"ca-(pub-\d{16})"/) || [])[1];
+if (pubId) {
+  fs.writeFileSync(path.join(ROOT, 'ads.txt'), `google.com, ${pubId}, DIRECT, f08c47fec0942fa0\n`);
+  console.log('built ads.txt');
+}
+
 // Keep the sitemap in step with the pages
 const now = new Date(); // local date (IST), matching post dates
 const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;

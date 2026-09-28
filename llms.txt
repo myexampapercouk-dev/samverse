@@ -9,6 +9,7 @@
 - [All services & industries](https://samverse.space/solutions/): Index of every service and industry page
 - [Website Cost Calculator](https://samverse.space/website-cost-calculator/): Free website cost calculator for India. Choose your website type, pages and features to get an instant estimate for a WordPress site or WooCommerce store.
 - [WordPress Glossary](https://samverse.space/wordpress-glossary/): Plain-English definitions of 40 website terms business owners hear: WordPress, hosting, DNS, SSL, SEO, Core Web Vitals, WooCommerce, schema, caching and more.
+- [Privacy Policy](https://samverse.space/privacy-policy/): How samverse.space collects and uses information: contact form enquiries, WhatsApp, Google Analytics, Microsoft Clarity and Google AdSense cookies, and your choices.
 
 ## Services
 - [Online Stores](https://samverse.space/woocommerce-developer/): Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout.

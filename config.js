@@ -17,7 +17,9 @@ window.SITE_CONFIG = {
     gtag("js", new Date());
     gtag("config", c.GA_ID);
   }
-  if (real(c.ADSENSE_ID, "ca-pub-")) {
+  // Ads only on blog articles (not the homepage, service pages or /blog/ index), so they never pull leads away
+  var isArticle = /^\/blog\/(?!topic\/)[^/]+\/$/.test(location.pathname);
+  if (real(c.ADSENSE_ID, "ca-pub-") && isArticle) {
     var a = document.createElement("script");
     a.async = true;
     a.crossOrigin = "anonymous";
