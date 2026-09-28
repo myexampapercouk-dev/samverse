@@ -6,6 +6,8 @@ window.SITE_CONFIG = {
   CLARITY_ID: "XXXXXXXXXX"              // Microsoft Clarity project ID (heatmaps + recordings)
 };
 (function (c) {
+  // Only on the live domain, so local previews and the netlify.app address don't skew reports
+  if (!/(^|\.)samverse\.space$/.test(location.hostname)) return;
   var real = function (id, prefix) { return id && id.indexOf(prefix) === 0 && id.indexOf("XXXX") === -1; };
   if (real(c.GA_ID, "G-")) {
     var g = document.createElement("script");
