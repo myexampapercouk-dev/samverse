@@ -3,7 +3,7 @@
 window.SITE_CONFIG = {
   GA_ID: "G-86LW5SCHJN",           // Google Analytics 4 Measurement ID (Samverse › samverse.space)
   ADSENSE_ID: "ca-pub-XXXXXXXXXXXXXXXX", // Google AdSense publisher ID
-  CLARITY_ID: "XXXXXXXXXX"              // Microsoft Clarity project ID (heatmaps + recordings)
+  CLARITY_ID: "ypg7gxx1ew"              // Microsoft Clarity project ID (heatmaps + recordings)
 };
 (function (c) {
   // Only on the live domain, so local previews and the netlify.app address don't skew reports
