@@ -701,14 +701,14 @@ ${topicPosts(t).length > TOPIC_PREVIEW ? `          <p class="topic-more"><a hre
 
 // The industry hub is long, so it is split into sectors (first matching slug pattern wins)
 const INDUSTRY_SECTORS = [
-  ['Healthcare & wellness', /doctor|dentist|diagnostic|pharmac|hospital|physio|eye-clinic|veterinary|dermatology|ayurveda|fertility|nutrition|psycholog|elder-care|gyms|salons/],
-  ['Hospitality, travel & events', /restaurant|hotel|homestay|catering|sweet-shops|kitchen|wedding-venues|event-wedding|event-rental|hostels|travel|trekking/],
-  ['Property, construction & energy', /real-estate|interior|construction|furniture|hardware|property-management|coworking|solar/],
-  ['Education & training', /school|driving|music-dance|overseas-education|sports-academ|preschool|college/],
-  ['Manufacturing, trade & logistics', /manufactur|industrial|equipment-rental|export|logistics|printing|agriculture|medical-equipment|wholesalers/],
-  ['Professional & tech services', /lawyers|advocates|it-software|saas|security-facility|insurance|immigration|recruitment|astrolog|coaches|photographers/],
-  ['Retail & local services', /home-services|cleaning|packers|pest-control|laundry|tailoring|mobile-laptop|car-dealers|ev-dealers|taxi|jewellers/],
-  ['Temples & non-profits', /temple|ngo/],
+  ['Healthcare & wellness', /doctor|dentist|diagnostic|pharmac|hospital|physio|eye-clinic|veterinary|dermatology|ayurveda|fertility|nutrition|psycholog|elder-care|gyms|salons|yoga/],
+  ['Hospitality, travel & events', /restaurant|hotel|homestay|farm-stay|catering|sweet-shops|cloud-kitchen|wedding-venues|event-wedding|event-rental|djs|hostels|travel|trekking/],
+  ['Property, construction & energy', /real-estate|interior|construction|furniture|hardware-building|modular-kitchen|painting|waterproofing|landscaping|property-management|coworking|solar/],
+  ['Education & training', /school|driving|music-dance|overseas-education|sports-academ|preschool|college|training|ielts/],
+  ['Manufacturing, trade & logistics', /manufactur|industrial|equipment-rental|export|logistics|printing|agriculture|medical-equipment|wholesalers|fabricat|signage|pharma-franchise/],
+  ['Professional & tech services', /lawyers|advocates|it-software|it-hardware|saas|security-facility|insurance|immigration|recruitment|astrolog|coaches|photographers|video-production|art-galleries|publishers/],
+  ['Retail, beauty & local services', /home-services|cleaning|packers|pest-control|laundry|tailoring|mobile-laptop|car-dealers|ev-dealers|car-wash|taxi|jewellers|cosmetics|makeup|tattoo|pet-shops|toy|home-decor|gifting|water-purifier|ac-repair|cctv/],
+  ['Community, temples & non-profits', /temple|ngo|housing-societ/],
 ];
 const sectorGroups = list => {
   const groups = INDUSTRY_SECTORS.map(([name]) => ({ name, items: [] }));
