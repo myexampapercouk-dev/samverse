@@ -3802,6 +3802,8 @@ module.exports = [
   <li>How fees work, even if you don't publish exact prices</li>
 </ul>
 
+<p>If you design outdoor spaces such as terraces, lawns and society gardens, see <a href="/blog/website-for-landscaping-gardening-services/">websites for landscaping and gardening services</a>.</p>
+
 <h2>Make enquiring easy</h2>
 <ul>
   <li>A project enquiry form asking for property type, location, size, scope and timeline</li>
@@ -7130,6 +7132,8 @@ module.exports = [
   <li>Service warranty on repairs</li>
   <li>Brands serviced</li>
 </ul>
+
+<p>Brand names need extra care for water purifier businesses, where fake helpline numbers are common; see <a href="/blog/website-for-water-purifier-ro-service/">websites for water purifier and RO service businesses</a>.</p>
 
 <h2>Local SEO is everything</h2>
 <ul>
@@ -14989,6 +14993,8 @@ module.exports = [
   <li><strong>Hosts:</strong> your story, which is often the reason people choose homestays</li>
   <li><strong>FAQs and contact</strong></li>
 </ul>
+
+<p>Hosting guests on a working farm, with day visits and school trips as well as stays? See <a href="/blog/website-for-farm-stays-agritourism/">websites for farm stays and agritourism</a>.</p>
 
 <h2>Direct booking options</h2>
 <ul>

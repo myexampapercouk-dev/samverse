@@ -335,6 +335,10 @@ const LINKS = [
   ['update-premium-theme-safely', '<h2>Step 3: Back up and use staging</h2>', '<p>New to child themes? See <a href="/blog/wordpress-child-theme-explained/">child themes explained</a>.</p>\n\n'],
   ['directory-website-wordpress', '<h2>Real example</h2>', '<p>The foundations: <a href="/blog/custom-post-types-fields/">custom post types and fields</a>.</p>\n\n'],
   ['what-does-wordpress-developer-do', '<h2>Online stores</h2>', '<p>More detail: <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a> and <a href="/blog/custom-wordpress-theme-development/">custom theme development</a>.</p>\n\n'],
+  // Agent 02
+  ['website-for-homestays-bnbs', '<h2>Direct booking options</h2>', '<p>Hosting guests on a working farm, with day visits and school trips as well as stays? See <a href="/blog/website-for-farm-stays-agritourism/">websites for farm stays and agritourism</a>.</p>\n\n'],
+  ['website-for-interior-designers-architects', '<h2>Make enquiring easy</h2>', '<p>If you design outdoor spaces such as terraces, lawns and society gardens, see <a href="/blog/website-for-landscaping-gardening-services/">websites for landscaping and gardening services</a>.</p>\n\n'],
+  ['website-for-home-services', '<h2>Local SEO is everything</h2>', '<p>Brand names need extra care for water purifier businesses, where fake helpline numbers are common; see <a href="/blog/website-for-water-purifier-ro-service/">websites for water purifier and RO service businesses</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
@@ -345,11 +349,7 @@ for (const [slug, anchor, insert] of LINKS) {
   const bodyStart = src.indexOf('body: `', start);
   const bodyEnd = src.indexOf('`,\n  },', bodyStart);
   let body = src.slice(bodyStart, bodyEnd);
-  const target = (insert.match(/href="(\/[^"]+)"/) || [])[1  // Agent 02
-  ['website-for-homestays-bnbs', '<h2>Direct booking options</h2>', '<p>Hosting guests on a working farm, with day visits and school trips as well as stays? See <a href="/blog/website-for-farm-stays-agritourism/">websites for farm stays and agritourism</a>.</p>\n\n'],
-  ['website-for-interior-designers-architects', '<h2>Make enquiring easy</h2>', '<p>If you design outdoor spaces such as terraces, lawns and society gardens, see <a href="/blog/website-for-landscaping-gardening-services/">websites for landscaping and gardening services</a>.</p>\n\n'],
-  ['website-for-home-services', '<h2>Local SEO is everything</h2>', '<p>Brand names need extra care for water purifier businesses, where fake helpline numbers are common; see <a href="/blog/website-for-water-purifier-ro-service/">websites for water purifier and RO service businesses</a>.</p>\n\n'],
-];
+  const target = (insert.match(/href="(\/[^"]+)"/) || [])[1];
   if (target && body.includes(`href="${target}"`)) { skipped++; continue; }
   const count = body.split(anchor).length - 1;
   if (count !== 1) throw new Error(`Anchor found ${count} times in ${slug}: ${anchor}`);
