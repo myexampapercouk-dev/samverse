@@ -359,6 +359,10 @@ const LINKS = [
   ['wordpress-maintenance-checklist', '<h2>Golden rules</h2>', '<p>Running an online store? Add store-specific tasks like test orders and payment checks from the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>\n\n'],
   ['wordpress-caching-explained', '<h2>Clearing the cache</h2>', '<p>Running an online store? The <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a> covers cart fragments, object caching and other store-specific fixes.</p>\n\n'],
   ['woocommerce-checkout-skimmer-malware', '<h2>Ongoing protection</h2>', '<p>For the wider picture, including staff accounts, card-testing bots and fraud orders, work through the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a>.</p>\n\n'],
+  // Agent 06
+  ['website-for-car-dealers-workshops', '<h2>Make it easy on mobile</h2>', '<p>Run a dedicated wash, detailing or coating studio rather than a full workshop? See <a href="/blog/website-for-car-wash-detailing/">websites for car wash, detailing and ceramic coating studios</a>.</p>\n\n'],
+  ['website-for-veterinary-pet-clinics', '<h2>Pet owner guides</h2>', '<p>If grooming, boarding or a pet supplies shop is your main business rather than a clinic, see <a href="/blog/website-for-pet-shops-grooming/">websites for pet shops, grooming and boarding services</a>.</p>\n\n'],
+  ['website-for-florists-gift-shops', '<h2>Checkout essentials</h2>', '<p>Selling toys and games as gifts for children? Age filters and safety information matter too; see <a href="/blog/website-for-toy-stores/">websites for toy stores and kids\' brands</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

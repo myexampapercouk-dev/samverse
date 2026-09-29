@@ -5743,6 +5743,8 @@ module.exports = [
 
 <p>Selling electric vehicles? See <a href="/blog/website-for-ev-dealers/">websites for EV dealers</a>.</p>
 
+<p>Run a dedicated wash, detailing or coating studio rather than a full workshop? See <a href="/blog/website-for-car-wash-detailing/">websites for car wash, detailing and ceramic coating studios</a>.</p>
+
 <h2>Make it easy on mobile</h2>
 <p>Most searches happen on phones, often urgently for breakdowns. Tap-to-call, WhatsApp, location and hours should be visible immediately. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a>.</p>
 
@@ -7477,6 +7479,8 @@ module.exports = [
 <h2>Grooming and boarding</h2>
 <p>Separate pages with packages, prices or "starting from" ranges, what's included, safety measures, facility photos and booking.</p>
 
+<p>If grooming, boarding or a pet supplies shop is your main business rather than a clinic, see <a href="/blog/website-for-pet-shops-grooming/">websites for pet shops, grooming and boarding services</a>.</p>
+
 <h2>Pet owner guides</h2>
 <p>Vaccination schedules, puppy and kitten care, seasonal advice and nutrition basics attract searches and build trust. Keep advice general and encourage a vet visit for specific concerns.</p>
 
@@ -7575,6 +7579,8 @@ module.exports = [
   <li>Personalised message card field</li>
   <li>Add-ons: cakes, chocolates, balloons</li>
 </ul>
+
+<p>Selling toys and games as gifts for children? Age filters and safety information matter too; see <a href="/blog/website-for-toy-stores/">websites for toy stores and kids' brands</a>.</p>
 
 <h2>Checkout essentials</h2>
 <ul>
@@ -18842,6 +18848,275 @@ Template: astra
 <p>If you suspect a hack, act quickly: turn off online payments or put the checkout into maintenance, inform your payment gateway, keep a backup and logs as evidence, and have the store cleaned before reopening. Indian rules may require reporting certain cyber incidents within a short time, so take advice promptly.</p>
 
 <p>Worried your store isn't secure, or think it may already be compromised? See <a href="/wordpress-malware-removal/">malware removal and security</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> for ongoing store care.</p>
+`,
+  },
+  {
+    slug: 'website-for-car-wash-detailing',
+    title: 'Websites for Car Wash, Detailing and Ceramic Coating Studios',
+    description: 'What a car wash, detailing or ceramic coating studio website needs: clear packages, slot booking, before-and-after galleries, subscriptions and local SEO.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>People looking for a car wash or detailing studio usually want three answers fast: what you offer, roughly what it costs, and when they can come in. Ceramic coating and paint protection buyers ask more questions, because they are spending more and want proof the work lasts. A good website answers both groups and turns searches into booked slots.</p>
+
+<h2>What customers look for</h2>
+<ul>
+  <li>Clear packages, not a long list of jargon</li>
+  <li>A price or "starting from" range by car size: hatchback, sedan, SUV</li>
+  <li>How long each service takes, and whether they can wait or need to leave the car</li>
+  <li>Available slots, or a quick way to book one</li>
+  <li>Proof of quality: before-and-after photos, reviews and the products you use</li>
+  <li>Location, timings, and whether you offer doorstep service or pickup and drop</li>
+</ul>
+
+<h2>Present your services as packages</h2>
+<p>Most studios offer a mix of quick washes and longer detailing jobs. Group them so customers can compare easily:</p>
+<table>
+  <thead>
+    <tr><th>Service group</th><th>Typical examples</th><th>What to show</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Wash</td><td>Foam wash, interior vacuum, underbody wash</td><td>Time taken, what's included, price by car size</td></tr>
+    <tr><td>Detailing</td><td>Interior deep cleaning, paint correction, polishing, engine bay cleaning</td><td>Process steps, time needed, before-and-after photos</td></tr>
+    <tr><td>Protection</td><td>Ceramic coating, graphene coating, paint protection film (PPF), teflon coating</td><td>Options, curing time, warranty terms, aftercare</td></tr>
+    <tr><td>Add-ons</td><td>Headlight restoration, odour removal, leather conditioning</td><td>Price and which packages they combine with</td></tr>
+  </tbody>
+</table>
+<p>Give ceramic coating and PPF their own pages. These are considered purchases, and a dedicated page can answer what buyers ask: how long it lasts, what the warranty actually covers, how to maintain it, and how it differs from a polish. Only mention a coating brand or "authorised installer" status if it is genuinely true, and state warranty terms exactly as the brand provides them.</p>
+<p>Unsure whether to publish prices? This guide on <a href="/blog/show-prices-on-website/">showing prices on your website</a> covers the trade-offs. For washes, a "starting from" price by car size usually works well; for coatings, a range plus an inspection visit is more honest.</p>
+
+<h2>Make booking a slot easy</h2>
+<p>A wash bay has limited capacity, so booking matters. Options, from simplest to most complete:</p>
+<ol>
+  <li><strong>WhatsApp booking:</strong> a button that opens a pre-filled message asking for car model, service and preferred time. Simple, but you manage slots manually.</li>
+  <li><strong>Booking form:</strong> service, car type, date, preferred time and phone number, confirmed by your team.</li>
+  <li><strong>Live slot booking:</strong> customers pick an open slot and get a confirmation and reminder. Worth it once you have steady volume or several bays.</li>
+</ol>
+<p>For longer jobs like coating, a deposit through UPI or card can reduce no-shows. Set a duration for each service so a two-day coating job doesn't clash with quick washes. The guide to <a href="/blog/online-appointment-booking-website/">online appointment booking</a> covers reminders, deposits and calendar sync in more detail.</p>
+<p>If you offer doorstep washing, ask for the address, parking situation (basement, society or street) and water or power access in the form, so your team arrives prepared.</p>
+
+<h2>Let before-and-after photos do the selling</h2>
+<ul>
+  <li>Shoot the same angle and lighting before and after, especially for paint correction, interiors and headlights</li>
+  <li>Add a short caption: car model, service and time taken</li>
+  <li>Use your real work only, never stock photos of cars you haven't touched</li>
+  <li>Short clips of water beading on a coated panel are persuasive, but keep them compressed so they don't slow the page</li>
+  <li>Get the owner's permission and blur number plates</li>
+</ul>
+<p>Organise the gallery by service, so a coating customer sees coating work, not just washes.</p>
+
+<h2>Subscriptions and memberships</h2>
+<p>Regular washes suit a subscription model: a monthly plan with a set number of washes, or a daily or alternate-day doorstep cleaning plan for housing societies. On the website, include:</p>
+<ul>
+  <li>A plan comparison showing what's included, frequency, car size and how to pause or cancel</li>
+  <li>Online payment for the first month through UPI or card; recurring payments such as UPI AutoPay or card mandates depend on what your payment gateway supports, so check current options</li>
+  <li>A simple way for members to reschedule or report a missed wash</li>
+</ul>
+<p>Coated cars need gentle maintenance washes, so offer a maintenance plan on the coating page and send a reminder when a top-up or check is due.</p>
+
+<h2>Trust signals</h2>
+<ul>
+  <li>Genuine Google reviews, ideally mentioning the service the customer bought</li>
+  <li>The products and equipment you use, described honestly</li>
+  <li>Your process: how you avoid swirl marks, how long the car stays with you and how it is kept secure</li>
+  <li>Photos of your actual studio, bays and team</li>
+  <li>A clear policy on damage, rework and coating warranty claims</li>
+</ul>
+
+<h2>Local SEO</h2>
+<p>Almost every search is local: "car wash near me", "car detailing in {area}", "ceramic coating {city}" or "doorstep car wash {city}".</p>
+<ul>
+  <li>Complete your Google Business Profile with services, photos, hours and a booking link; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
+  <li>Create a separate page for each main service, such as ceramic coating, PPF and interior detailing, rather than one long services page</li>
+  <li>If your doorstep service covers several areas, mention them naturally with real details, not copy-pasted area pages</li>
+  <li>Ask happy customers for a review when they collect the car</li>
+</ul>
+
+<h2>Speed and mobile</h2>
+<p>Most people search on their phones. Keep pages light with compressed images and lazy-loaded galleries, and keep call, WhatsApp and "Book a slot" buttons visible without scrolling. Autoplay video backgrounds look impressive but often slow the page on mobile data.</p>
+<p>Run a workshop that also does detailing? The guide for <a href="/blog/website-for-car-dealers-workshops/">car dealers and auto workshops</a> covers service menus and pickup and drop too.</p>
+
+<p>Planning a monsoon or festive offer? A focused <a href="/landing-page-design/">landing page</a> converts ad traffic better than your homepage. For a full studio website with booking and galleries, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-pet-shops-grooming',
+    title: 'Websites for Pet Shops, Pet Grooming and Boarding Services',
+    description: 'What a pet shop, grooming salon or boarding website needs: an online store for food and supplies, grooming slot booking, boarding enquiries and pet safety.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Pet parents shop for their pets the way they shop for family: they want convenience for everyday supplies and real reassurance before they hand over their dog or cat for a groom or a week of boarding. A good pet business website does both jobs. It sells food and accessories without friction, and it answers the worried questions that come before a grooming or boarding booking.</p>
+<p>This guide is for pet shops, groomers, boarding kennels and daycare centres. If you run a veterinary practice, see the separate guide to <a href="/blog/website-for-veterinary-pet-clinics/">websites for veterinary and pet clinics</a>.</p>
+
+<h2>What pet parents look for</h2>
+<ul>
+  <li>Whether you stock their pet's usual food brand and size, and how fast you can deliver it</li>
+  <li>Grooming services and prices for their breed and size</li>
+  <li>How their pet will be handled, especially if it is nervous, old or aggressive</li>
+  <li>Photos of the actual grooming area, kennels or play areas</li>
+  <li>Vaccination requirements, timings and how to book</li>
+  <li>Reviews from other pet owners, ideally with photos</li>
+</ul>
+
+<h2>Structure the site around what you actually do</h2>
+<p>Many pet businesses combine a shop with services. Give each part its own section and its own main action, so visitors don't get lost:</p>
+<table>
+  <thead>
+    <tr><th>Section</th><th>What to include</th><th>Main action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Shop</td><td>Food, treats, accessories, toys, grooming products, aquarium and bird supplies</td><td>Add to cart or order on WhatsApp</td></tr>
+    <tr><td>Grooming</td><td>Packages by pet type and size, what's included, time taken</td><td>Book a slot</td></tr>
+    <tr><td>Boarding and daycare</td><td>Facilities, daily routine, rules, requirements</td><td>Check dates or send an enquiry</td></tr>
+    <tr><td>About and policies</td><td>Your team, hygiene practices, cancellation and safety policies</td><td>Call or WhatsApp</td></tr>
+  </tbody>
+</table>
+
+<h2>Selling food and supplies online</h2>
+<p>Pet food is a repeat purchase that runs out on a predictable schedule, which makes it a good fit for an online store with local delivery.</p>
+<ul>
+  <li><strong>Organise by pet first:</strong> dog, cat, bird, fish, small animals. Then by type: dry food, wet food, treats, grooming, toys, beds, leashes.</li>
+  <li><strong>Useful filters:</strong> brand, life stage (puppy, adult, senior), breed size and pack size.</li>
+  <li><strong>Pack sizes as variations:</strong> sell one food in several weights on a single product page; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</li>
+  <li><strong>Easy reordering:</strong> a "buy again" option in the account area, and a reminder when a regular order is likely to run low.</li>
+  <li><strong>Delivery clarity:</strong> which areas you cover, same-day or next-day cut-off times and delivery charges, plus UPI, cards and cash on delivery if you offer it.</li>
+</ul>
+<p>Keep product descriptions factual. Don't claim a food or supplement treats a health condition; suggest a vet visit for health concerns. If you stock veterinary medicines or prescription diets, check current rules before selling them online.</p>
+<p>If your shop sells live animals, fish or birds, list them as enquiries rather than add-to-cart products, so you can talk to buyers first. Pet shops dealing in animals generally need registration with the State Animal Welfare Board under India's pet shop rules, so check the current requirements with a lawyer and show your registration details where required.</p>
+
+<h2>Grooming bookings that work</h2>
+<p>Grooming time depends heavily on the pet. A Shih Tzu's full groom takes far longer than a bath for a short-coated dog, so your booking form needs a few details up front:</p>
+<ul>
+  <li>Pet name, species, breed, approximate size and age</li>
+  <li>Coat condition, such as whether it is matted</li>
+  <li>Temperament: nervous, fine with strangers, or reactive to other dogs</li>
+  <li>Health issues, skin conditions and vaccination status</li>
+  <li>Service required and preferred date and time</li>
+</ul>
+<p>Show packages with "starting from" prices by size, and explain what can change the final price, such as matting or extra handling time. Set a duration for each package so slots don't overlap.</p>
+<p>For home grooming or a grooming van, also ask for the address, floor and lift access, and whether there is a bathroom or space to work. The guide to <a href="/blog/online-appointment-booking-website/">online appointment booking</a> covers reminders, deposits and fewer no-shows.</p>
+
+<h2>Boarding and daycare: answer the anxious questions</h2>
+<p>Leaving a pet for days is a big decision. Your boarding page should cover:</p>
+<ul>
+  <li>Where pets sleep, play and eat, with real photos of each area</li>
+  <li>A typical day: walks, meals, play time and rest</li>
+  <li>Supervision, including who is on site at night</li>
+  <li>Requirements such as vaccinations, tick and flea treatment, and a trial day or visit before a long stay</li>
+  <li>Whether owners can send their pet's own food, bedding and medicines</li>
+  <li>How you handle a pet that falls ill, and which vet you work with, only if you genuinely have that arrangement</li>
+  <li>How owners get updates, such as daily photos or videos on WhatsApp</li>
+</ul>
+<p>Summer holidays, Diwali and long weekends fill up early. An enquiry form with dates, pet details and a vaccination certificate upload helps you confirm quickly, and a deposit through UPI can secure peak-season bookings.</p>
+
+<h2>Trust and safety</h2>
+<ul>
+  <li>Genuine reviews and photos of pets you've groomed or boarded, shared with the owner's permission</li>
+  <li>The shampoos and products you use, described honestly</li>
+  <li>Your cleaning and hygiene routine between pets</li>
+  <li>Staff introductions, with any training or experience stated accurately</li>
+  <li>Clear written policies on cancellations, late pick-ups, injuries and when a matted coat needs shaving</li>
+  <li>Live camera access only if you actually provide it</li>
+</ul>
+
+<h2>Local SEO</h2>
+<p>Pet owners search locally: "pet shop near me", "dog grooming in {area}", "pet boarding {city}" or "home pet grooming {city}".</p>
+<ul>
+  <li>Create separate pages for the shop, grooming, boarding and daycare, each with real details</li>
+  <li>Complete your Google Business Profile with services, photos and accurate hours; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
+  <li>If you offer home grooming or delivery across several areas, mention them naturally with real information</li>
+  <li>Ask for a review when owners collect their freshly groomed pet</li>
+</ul>
+
+<h2>Speed and mobile</h2>
+<p>Most pet owners will visit on their phones. Compress product and gallery photos, keep the store fast even with hundreds of products, and keep call, WhatsApp and "Book grooming" buttons easy to reach.</p>
+
+<p>Ready to sell pet supplies online with grooming and boarding bookings on the same site? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for a services-first site.</p>
+`,
+  },
+  {
+    slug: 'website-for-toy-stores',
+    title: 'Websites for Toy Stores and Kids\' Brands',
+    description: 'How toy stores and kids\' brands can sell online: age and interest filters, clear safety information, gifting options, delivery for birthdays and local SEO.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>Toys are rarely bought by the people who play with them. Parents, grandparents, aunts, uncles and party guests do the buying, often for a child they don't know well, and often against a birthday deadline. A toy store or kids' brand website that helps these buyers choose confidently, trust the product's safety and get it delivered on time will win sales that a crowded marketplace listing can't.</p>
+
+<h2>What toy buyers look for</h2>
+<ul>
+  <li>Is it suitable for the child's age?</li>
+  <li>Is it safe, well made and free of small parts for young children?</li>
+  <li>What's in the box, how big is it, and does it need batteries or assembly?</li>
+  <li>Will it arrive before the birthday or festival?</li>
+  <li>Can it be gift-wrapped with a message?</li>
+  <li>What happens if a part is missing or it arrives damaged?</li>
+</ul>
+
+<h2>Organise the catalogue the way people shop</h2>
+<p>A gift-giver usually knows the child's age and a rough budget, not the product name. Build your categories and filters around that:</p>
+<table>
+  <thead>
+    <tr><th>Filter</th><th>Examples</th><th>Why it helps</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Age</td><td>0–12 months, 1–3 years, 3–5, 5–8, 8–12, teens</td><td>The first question almost every buyer has</td></tr>
+    <tr><td>Type</td><td>Puzzles, board games, STEM kits, soft toys, pretend play, arts and crafts, outdoor</td><td>Helps parents who know what the child enjoys</td></tr>
+    <tr><td>Skill or interest</td><td>Fine motor skills, reading, building, science, music</td><td>Useful for parents choosing learning toys</td></tr>
+    <tr><td>Price band</td><td>Budget ranges you set</td><td>Gift-givers usually have a limit in mind</td></tr>
+    <tr><td>Occasion</td><td>Birthday, return gifts, Diwali, Christmas, Children's Day</td><td>Matches how gifts are planned</td></tr>
+  </tbody>
+</table>
+<p>Keep the age filter consistent across every product. Mixed labels like "3+", "toddler" and "preschool" make filtering unreliable.</p>
+
+<h2>Product pages that answer parents' questions</h2>
+<ul>
+  <li>The recommended age range, taken from the manufacturer's packaging</li>
+  <li>What's in the box, with a photo of all the contents laid out</li>
+  <li>Dimensions, plus a photo of the toy in a child's hands or next to a common object for scale</li>
+  <li>Materials, such as wood, plastic or fabric, and how to clean it</li>
+  <li>Batteries: type, number and whether they are included</li>
+  <li>Assembly needed and roughly how long it takes</li>
+  <li>Safety warnings from the packaging, such as small parts not suitable for children under three</li>
+  <li>A short video of the toy being played with</li>
+</ul>
+<p>Describe what a toy encourages, such as building, pretend play or counting, but avoid big claims about making children smarter. The guide to <a href="/blog/woocommerce-product-page-optimization/">WooCommerce product page optimisation</a> covers layout, reviews and trust elements in more detail.</p>
+
+<h2>Safety and compliance information</h2>
+<p>Parents take toy safety seriously, and so do the rules. In India, toys are generally required to meet BIS standards and carry the ISI mark under the toy quality control order, including imported toys. E-commerce rules also generally expect listings to show details such as MRP, seller information and country of origin. Rules change, so confirm the current requirements for your products with your supplier, CA or lawyer.</p>
+<p>On the website, show certification details honestly, only for products that actually have them. A short "Toy safety" page explaining how you choose suppliers, check products and handle safety complaints builds trust. If you ship abroad, remember that each country has its own toy safety rules.</p>
+
+<h2>Make gifting easy</h2>
+<ul>
+  <li>Gift wrapping as a checkout option, with a photo of how it looks</li>
+  <li>A gift message field and an option to leave prices off the packing slip</li>
+  <li>Delivery date estimates on the product page, with a clear order-by date before festivals</li>
+  <li>A separate delivery address from the billing address</li>
+  <li>Return gift packs for birthday parties, sold in quantities with bulk pricing or a quote form</li>
+  <li>Gift cards or a simple wishlist a parent can share with family</li>
+</ul>
+<p>Plan Diwali, Christmas and Children's Day collections early, and use a focused landing page for each campaign rather than sending ad traffic to your homepage.</p>
+
+<h2>Store essentials for toys</h2>
+<ul>
+  <li><strong>Shipping:</strong> large items like ride-ons, bicycles and play tents are bulky, so charge realistically by size and weight; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a></li>
+  <li><strong>Returns:</strong> a clear policy for damaged items and missing parts, with an unboxing video request if you need one</li>
+  <li><strong>Payments:</strong> UPI, cards and, if it works for your margins, cash on delivery</li>
+  <li><strong>Stock:</strong> popular toys sell out before festivals, so keep inventory accurate and offer "notify me when back in stock"</li>
+</ul>
+
+<h2>For kids' brands selling direct</h2>
+<p>If you make your own toys, games or kids' products, your website is where your brand story lives. Explain who designs the products, the materials you use and why, and how products are tested, stating only what is true. Useful content for parents, such as play ideas by age, helps people find you and builds trust. Many brands sell on marketplaces as well; see <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a> for how the two can work together. A bulk enquiry form for preschools and corporate gifting can bring larger orders.</p>
+
+<h2>Privacy and local SEO</h2>
+<p>Your website should speak to adults, not collect data from children. India's data protection law treats children's personal data with extra care, so collect only what you need from parents and check current requirements.</p>
+<p>For search, create category pages for real queries like "educational toys for 3 year olds", "return gifts for kids" and "toy shop in {area}", each with a short, unique introduction. If you have a physical store, keep your Google Business Profile updated with photos, hours and stock highlights, and list your products on Google for free through <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center</a>.</p>
+
+<p>Planning a toy store or kids' brand website? See <a href="/woocommerce-developer/">WooCommerce development</a>, and use a <a href="/landing-page-design/">landing page</a> for festive and birthday campaigns.</p>
 `,
   },
 ];
