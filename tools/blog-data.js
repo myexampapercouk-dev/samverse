@@ -1465,6 +1465,7 @@ module.exports = [
     title: 'Google Business Profile Optimization Checklist for Service Businesses',
     description: 'A complete Google Business Profile checklist: categories, services, photos, reviews, posts, Q&A and website links, to help your business appear in Google Maps and local results.',
     date: '2026-09-27',
+    updated: '2026-09-29',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
     body: `
@@ -1506,14 +1507,16 @@ module.exports = [
 
 <p>For templates and what to avoid, read <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a>.</p>
 
-<h2>Posts, Q&amp;A and messaging</h2>
+<h2>Posts, Q&amp;A and responding quickly</h2>
 <ul>
   <li><strong>Posts:</strong> share updates, offers, events or recent work regularly.</li>
-  <li><strong>Q&amp;A:</strong> add common questions and answers yourself, and monitor questions from the public.</li>
-  <li><strong>Respond quickly</strong> to messages and calls. Responsiveness affects customer trust.</li>
+  <li><strong>Q&amp;A:</strong> answer common questions where your profile allows it. Google has been changing how questions appear on profiles, so check what yours currently shows.</li>
+  <li><strong>Respond quickly</strong> to calls, WhatsApp messages and reviews. Google ended the built-in chat feature on Business Profiles in 2024, so keep your phone number and website contact options up to date.</li>
 </ul>
 
 <p>Wondering whether a small shop needs a website at all? See <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website</a>.</p>
+
+<p>For post ideas, offers, events and a simple weekly routine, see <a href="/blog/google-business-profile-posts/">how to use Google Business Profile posts and photos</a>.</p>
 
 <h2>Connect it to your website</h2>
 <p>Your profile and website work together. Make sure your name, address and phone number match exactly on both; add a Google Map and your hours to your contact page; and create service pages on your site for the main services listed on your profile. Our <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> covers the website side in more detail.</p>
@@ -3293,6 +3296,8 @@ module.exports = [
 
 <h2>8. Use descriptive file names</h2>
 <p><code>stainless-steel-water-tank.webp</code> tells search engines more than <code>DSC00123.jpg</code>.</p>
+
+<p>Alt text and file names are only part of getting your photos found in search; see the <a href="/blog/image-seo-guide/">image SEO guide</a> for Google Images and Google Lens.</p>
 
 <h2>Special cases</h2>
 <ul>
@@ -6699,6 +6704,8 @@ module.exports = [
   <li><strong>Keep answers short:</strong> two to four sentences for most questions</li>
   <li><strong>Link to more detail</strong> where it exists, such as a service page or guide</li>
 </ul>
+
+<p>Answer-first writing also suits people who ask their phones questions out loud; see <a href="/blog/voice-search-local-seo/">voice search for local businesses</a>.</p>
 
 <h2>Where to put FAQs</h2>
 <ul>
@@ -20485,6 +20492,253 @@ Template: astra
 </ul>
 
 <p>Planning a URL clean-up, redesign or platform move? See <a href="/wordpress-seo-services/">WordPress SEO services</a> or <a href="/wordpress-migration/">WordPress migration</a> for help making the change without losing traffic.</p>
+`,
+  },
+  {
+    slug: 'image-seo-guide',
+    seoTitle: 'Image SEO: Get Your Photos Found in Google Images',
+    title: 'Image SEO: How to Get Your Photos Found in Google Images and Lens',
+    description: 'Image SEO for business websites: file names, alt text, captions, formats, image sitemaps and how to get your photos found in Google Images and Google Lens.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-speed-optimization'],
+    body: `
+<p>Most advice about website images is about speed: resize, compress, use WebP. That matters, and it's covered in our guide to <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>. This article is about the other half: helping Google understand your images so they appear in Google Images, Google Lens and image-rich results, and bring customers to your site.</p>
+
+<h2>Why image search matters for businesses</h2>
+<p>People search with pictures more than many business owners realise. A shopper sees a lamp in a café, photographs it with Google Lens and looks for where to buy it. Someone planning a home browses Google Images for "modular kitchen design" ideas and clicks through to the interior designer whose photos they liked. A patient checks what a clinic looks like before visiting.</p>
+<p>Image search works best for visual businesses such as interiors, architecture, furniture, fashion, jewellery, food, products, real estate, events and travel. But any business with real photos of its work can benefit.</p>
+
+<h2>Use original photos wherever you can</h2>
+<p>Stock photos appear on thousands of websites, so Google has little reason to show yours over everyone else's, and a Lens search on a stock image usually leads to someone else's page. Original photos of your products, projects, team and premises are unique to you, which makes them more likely to be shown and more convincing to customers. Our guide to <a href="/blog/prepare-photos-for-website/">preparing photos for your website</a> covers taking and editing them.</p>
+
+<h2>File names, alt text and captions</h2>
+<h3>File names</h3>
+<p>Rename files before uploading. <code>teak-dining-table-6-seater.webp</code> tells Google far more than <code>IMG_20260914.jpg</code>. Use a few descriptive words separated by hyphens, and don't stuff your city and every keyword into each file name.</p>
+<h3>Alt text</h3>
+<p>Alt text is read aloud by screen readers, and Google uses it as an important clue to what an image shows. Describe the image in a short, natural phrase:</p>
+<ul>
+  <li><strong>Good:</strong> "Rooftop solar panels on a warehouse in Pune"</li>
+  <li><strong>Weak:</strong> "solar" or "image1"</li>
+  <li><strong>Bad:</strong> "solar panels solar company Pune best solar installer Pune"</li>
+</ul>
+<p>Purely decorative images, such as background shapes and divider icons, can have empty alt text. In WordPress, alt text is set in the media library and reused wherever the image appears, so check it still makes sense on each page.</p>
+<h3>Captions and surrounding text</h3>
+<p>Google also reads the text around an image: the heading above it, the paragraph beside it and any caption. Place images next to the text they relate to, and add captions where they help readers, such as a project name, a product name or what a before-and-after comparison shows.</p>
+
+<h2>Put images on the page the right way</h2>
+<ul>
+  <li><strong>Use real image elements.</strong> Google indexes images added with standard HTML image tags, but not images set as CSS backgrounds. Page builders often create banner sections with background images. That's fine for decoration, but photos you want found in search should be inserted as normal images.</li>
+  <li><strong>Use supported formats.</strong> JPEG, PNG, WebP, GIF, SVG and AVIF can all be indexed. WebP is usually the best balance of quality and file size.</li>
+  <li><strong>Keep lazy loading standard.</strong> WordPress's built-in lazy loading is search-friendly. Some script-heavy sliders and galleries only load images after a click or swipe, and search engines may never see them.</li>
+  <li><strong>Use sharp, good-quality images.</strong> Tiny, blurry thumbnails rarely do well. Serve a large enough version and let responsive image sizes keep files small on phones.</li>
+  <li><strong>Keep image URLs stable.</strong> Changing image addresses during a migration or redesign means Google has to rediscover them, so plan redirects and keep file paths where you can.</li>
+</ul>
+
+<h2>Image sitemaps</h2>
+<p>An image sitemap lists the images on each page, helping Google discover images it might otherwise miss, such as those loaded by scripts.</p>
+<ul>
+  <li>WordPress's built-in sitemap doesn't list images, but popular SEO plugins can include them in your page and post sitemaps. Check your plugin's settings.</li>
+  <li>Google now only uses the image location from image sitemaps. Older tags for captions, titles and licences were deprecated, so there's no benefit in filling them in.</li>
+  <li>Submit your sitemap in Search Console and check it for errors. See <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</li>
+</ul>
+
+<h2>Google Lens and product images</h2>
+<p>Lens identifies objects in a photo and shows matching products, places and web pages. To give your images a chance of appearing:</p>
+<ul>
+  <li>Show products clearly: one main product per image, good light and an uncluttered background, plus a few in-use shots</li>
+  <li>Photograph products from several angles, because people will photograph them from any angle</li>
+  <li>Add Product schema with price and availability to product pages; most WooCommerce SEO setups can generate this</li>
+  <li>For online stores, submit your products to Google Merchant Center so they can appear in Google's shopping results. See <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a>.</li>
+</ul>
+
+<h2>Choose the image that represents each page</h2>
+<p>Search results, Google Discover and WhatsApp link previews often show a thumbnail next to your page. Help them pick a good one:</p>
+<ul>
+  <li>Set a relevant featured image and social sharing (Open Graph) image on every important page, ideally at least 1200 pixels wide, and not just your logo</li>
+  <li>Allow large image previews. WordPress does this by default, but check your SEO plugin hasn't changed the setting</li>
+  <li>Avoid text-heavy graphics as the main image, as they look poor when shrunk to a thumbnail</li>
+</ul>
+
+<h2>Common mistakes, and how to check your results</h2>
+<p>These are the problems I see most often on WordPress sites:</p>
+<ul>
+  <li><strong>Thin attachment pages:</strong> older WordPress sites can have a separate, nearly empty page for every uploaded image. Newer installs disable these, and SEO plugins can redirect them</li>
+  <li><strong>Blocking image folders</strong> in robots.txt, which stops Google indexing your images</li>
+  <li><strong>Blank or copied alt text</strong> across whole galleries</li>
+  <li><strong>Important text inside images,</strong> such as prices or service lists, which search engines may not read reliably and screen readers can't read at all</li>
+  <li><strong>Large watermarks</strong> across the product. A small corner logo is fine</li>
+</ul>
+<p>To see whether your work is paying off, open Google Search Console's Performance report and switch the search type to Image to see which searches show your images and how many clicks they bring. Look for pages with plenty of impressions but few clicks, and improve their images, alt text and surrounding content.</p>
+
+<p>Want your images, and the rest of your SEO, set up properly? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, and pair it with <a href="/wordpress-speed-optimization/">speed optimisation</a> so your images are fast as well as findable.</p>
+`,
+  },
+  {
+    slug: 'voice-search-local-seo',
+    seoTitle: 'Voice Search SEO for Local Businesses: A Practical Guide',
+    title: 'Voice Search for Local Businesses: How to Get Found When Customers Ask Out Loud',
+    description: 'How local businesses can get found in voice search: conversational and "near me" questions, Google Business Profile, Apple Maps, FAQs and fast mobile pages.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>"Ok Google, AC repair near me." "Hey Siri, which chemist is open now?" Plenty of people now search by speaking instead of typing, especially on phones and especially when they need something nearby. There's no separate "voice ranking" to chase, because voice assistants mostly draw on the same local listings and web pages as normal search. But the way people speak changes what they ask, and a few gaps can stop your business being the one that gets read out or tapped.</p>
+
+<h2>How voice searches differ from typed ones</h2>
+<ul>
+  <li><strong>They're longer and conversational.</strong> Someone might type "physiotherapist Baner" but say "Where's a good physiotherapist near Baner who does home visits?"</li>
+  <li><strong>They're often questions:</strong> who, what, where, how much, is it open, do they deliver.</li>
+  <li><strong>They're urgent and local.</strong> "Near me", "open now", "nearest" and "how far" come up constantly, because people are on the move or in the middle of a problem.</li>
+  <li><strong>They end in an action.</strong> The next step is usually to call, get directions or open one website, not to browse ten results.</li>
+  <li><strong>They mix languages.</strong> In India many people speak in Hinglish or a regional language, and use local names for areas and landmarks. Google supports voice search in many Indian languages.</li>
+</ul>
+<p>For a local business, that means two jobs: make your business details complete and accurate everywhere assistants look, and make your website answer the questions people actually ask.</p>
+
+<h2>Google Business Profile does most of the work</h2>
+<p>When someone asks their phone for a nearby business, the answer usually comes from map listings. On Android phones and in the Google app, that means your Google Business Profile. Check these first:</p>
+<ul>
+  <li><strong>Primary category:</strong> Google matches "near me" searches partly on category, so pick the most specific one that fits your main service.</li>
+  <li><strong>Hours, including special hours:</strong> "open now" questions depend on them. Update your hours for Diwali, Holi, Eid, Christmas and other holidays so you aren't shown as open when you're shut, or shut when you're open.</li>
+  <li><strong>Phone number:</strong> "call ..." requests go straight to the number on your profile, so use one that's always answered.</li>
+  <li><strong>Address and map pin:</strong> check the pin sits on your actual entrance, because "directions to ..." relies on it.</li>
+  <li><strong>Services and attributes:</strong> details like home visits, wheelchair access or online appointments help you match more specific questions.</li>
+  <li><strong>Reviews:</strong> ratings and reviews influence which businesses appear in local results, and a good rating helps a hurried person decide to call.</li>
+</ul>
+<p>Our <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers every field in detail.</p>
+
+<h2>Don't forget Apple Maps and Bing</h2>
+<p>Not everyone uses Google. Siri on iPhones relies largely on Apple Maps for places, and Apple Business Connect lets you claim your place card, correct your details and add photos. Bing Places for Business feeds Bing's own maps and results, which some other assistants and tools also draw on. Claiming both takes an afternoon and removes the risk of an iPhone user hearing an old phone number or the wrong hours.</p>
+<p>Keep your name, address and phone number identical on every listing, including Justdial, IndiaMART and industry directories. Different assistants pull from different sources, and conflicting details make it harder for any of them to trust yours. See <a href="/blog/business-directories-citations-india/">business directories and citations in India</a>.</p>
+
+<h2>Answer real questions on your website</h2>
+<p>Beyond "find me a business", many voice searches are questions: "Can a root canal be done in one visit?", "How long does AC gas refilling take?", "Do caterers provide staff for house parties?" If your site answers these clearly, it has a better chance of appearing in featured snippets and AI answers, which assistants often read out, and of convincing the person who taps through.</p>
+<ul>
+  <li><strong>Collect the questions</strong> customers ask on calls and WhatsApp, plus the "People also ask" questions Google shows for your services.</li>
+  <li><strong>Use the question as a heading</strong> or FAQ item, worded the way people say it.</li>
+  <li><strong>Answer in the first one or two sentences,</strong> in plain words, then add detail. A short answer is easy to read aloud; a long paragraph isn't.</li>
+  <li><strong>Put answers on the relevant service page,</strong> not only on one long FAQ page.</li>
+  <li><strong>Be honest about "it depends".</strong> If the price varies, say what it depends on and offer a quick way to get a quote.</li>
+</ul>
+<p>More on this in <a href="/blog/faq-page-seo/">how to create FAQ sections that help customers and SEO</a>.</p>
+
+<h2>Write the way your customers speak</h2>
+<p>Voice queries use everyday words, not industry jargon. A few habits help:</p>
+<ul>
+  <li>Use the words customers use: "AC service" and "gas filling" as well as "HVAC maintenance"; "skin doctor" as well as "dermatologist"</li>
+  <li>Mention the localities and landmarks people actually say, such as a nearby metro station or a well-known market, where it genuinely helps people find you</li>
+  <li>If many customers speak Hindi or a regional language, consider proper versions of your key pages in that language rather than machine-translated snippets</li>
+  <li>Don't stuff "near me" into your headings and text. Google works out "near" from the searcher's location, not from those words on your page</li>
+</ul>
+
+<h2>Technical basics that matter more for voice</h2>
+<p>Voice searchers are almost always on phones, often on mobile data, and they want to act quickly.</p>
+<ul>
+  <li><strong>Fast mobile pages:</strong> someone who asked a question out loud won't wait for a slow page to load.</li>
+  <li><strong>Tap-to-call and WhatsApp buttons</strong> that are easy to find on every page.</li>
+  <li><strong>A clear contact page</strong> with your address, hours, a map and directions from nearby landmarks.</li>
+  <li><strong>LocalBusiness schema</strong> that matches your profile details exactly: name, address, phone and hours. See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</li>
+  <li><strong>HTTPS and a mobile-friendly layout,</strong> which are basic expectations for any business website today.</li>
+</ul>
+
+<h2>Measuring voice search</h2>
+<p>Google Search Console doesn't separate voice searches from typed ones, so there's no neat "voice" report. Look for signs instead:</p>
+<ul>
+  <li>In Search Console, filter queries containing words like "how", "what", "where", "near" and "open" to see the question-style searches you already appear for</li>
+  <li>In your Google Business Profile performance view, watch calls, direction requests and website clicks over time</li>
+  <li>Ask new customers how they found you; some will tell you they simply asked their phone</li>
+</ul>
+
+<p>Want your website and local listings working together so yours is the business customers hear about? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or if you need a focused page for one service or area, <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'google-business-profile-posts',
+    seoTitle: 'Google Business Profile Posts: Win More Local Customers',
+    title: 'How to Use Google Business Profile Posts, Offers and Photos to Win Local Customers',
+    description: 'How to use Google Business Profile posts, offers, events, photos and questions to turn profile views into calls and visits, with post ideas and a routine.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-for-restaurants'],
+    body: `
+<p>Setting up your Google Business Profile properly is step one, and our <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers it. But a complete profile that hasn't changed in two years can look like a business that has quietly closed. This guide is about step two: using posts, offers, photos and other features to keep your profile active and persuade the people looking at it to call, visit or book.</p>
+
+<h2>Why an active profile matters</h2>
+<p>When someone searches for "bakery near me" or "physiotherapist in Andheri", they usually compare two or three profiles in the map results before deciding. At that moment, recent photos, a current offer and fresh replies to reviews all say "this business is open, busy and cares about its customers".</p>
+<p>Be realistic about rankings, though. Google hasn't said that posting improves your position in the map results, and your category, distance, reviews and profile completeness matter far more. Treat posts as a way to win the customers who are already looking at your profile, not as a ranking trick.</p>
+
+<h2>The three types of post</h2>
+<table>
+  <thead>
+    <tr><th>Post type</th><th>Best for</th><th>Example</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Update</td><td>News, recent work, tips, new services and announcements</td><td>"We now offer home sample collection across Sectors 50 to 57"</td></tr>
+    <tr><td>Offer</td><td>Time-limited discounts or deals, with dates and terms</td><td>"Free AC check-up with every service booked before 15 April"</td></tr>
+    <tr><td>Event</td><td>Something happening on specific dates</td><td>"Festive craft market at our store this weekend"</td></tr>
+  </tbody>
+</table>
+<p>Each post can include a photo or short video, some text and a button such as Book, Order online, Learn more or Call now. Offers and events run between the dates you set, while updates move down your profile as newer ones appear, so a steady rhythm works better than a burst of posts once a year.</p>
+
+<h2>What to post: ideas by business type</h2>
+<ul>
+  <li><strong>Clinics:</strong> a new doctor joining, extended hours, a health camp, or a simple explainer on when to see a specialist, keeping medical claims careful and accurate</li>
+  <li><strong>Restaurants and cafés:</strong> a new dish, the weekend special, festival menus, party catering, and a link to order directly from your website</li>
+  <li><strong>Salons, gyms and studios:</strong> new services, batch timings, bridal or festive packages and trainer introductions</li>
+  <li><strong>Contractors and home services:</strong> a finished project with before-and-after photos, or seasonal reminders like pre-monsoon waterproofing and pre-summer AC servicing</li>
+  <li><strong>Shops:</strong> new stock, festival collections and extended hours during wedding season</li>
+  <li><strong>B2B and professional firms:</strong> a completed project, a new certification or a helpful reminder about an upcoming deadline your clients care about</li>
+</ul>
+<p>Plan posts around the moments your customers care about, such as festivals, exam season, monsoon or the financial year-end, alongside your website's own campaigns. See <a href="/blog/seasonal-festival-campaigns-website/">seasonal and festival campaigns on your website</a>.</p>
+
+<h2>How to write posts people act on</h2>
+<ul>
+  <li><strong>Lead with the point.</strong> Only the first few lines show in the preview, so start with the news or offer, not "Greetings from ...".</li>
+  <li><strong>One message per post,</strong> with one clear button.</li>
+  <li><strong>Use a real photo</strong> of your work, team, food or premises. Stock images and text-heavy graphics get cropped awkwardly and look like adverts.</li>
+  <li><strong>Link to the most relevant page,</strong> such as the service page, menu or booking page, not always your homepage.</li>
+  <li><strong>Tag your links</strong> with UTM parameters so you can see profile visitors separately in Google Analytics. See <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</li>
+  <li><strong>Keep offers honest and specific:</strong> state the dates, what's included and any conditions in the terms.</li>
+  <li><strong>Use the call button</strong> rather than typing your phone number into the text, and follow Google's content policies, because posts that break them can be rejected or removed.</li>
+</ul>
+
+<h2>Photos and videos: keep them coming</h2>
+<p>Photos are often the first thing people look at on a profile, and customers can add their own too. Keep yours current:</p>
+<ul>
+  <li>A clear exterior photo, so people recognise your entrance or signboard when they arrive</li>
+  <li>Interior, team and "at work" photos that show the real place and people</li>
+  <li>Your products, dishes or finished projects, added as they happen</li>
+  <li>Short videos, such as a walkthrough of your premises or a quick look at how you work</li>
+</ul>
+<p>Check the photos customers have added. Most help, but if one is misleading, offensive or not of your business, you can report it to Google. Don't try to bury honest but unflattering photos under a flood of new ones; fix whatever they show instead.</p>
+
+<h2>Questions, products and menus</h2>
+<h3>Questions</h3>
+<p>Google has been changing how questions work on Business Profiles. Some profiles still show a public questions-and-answers section, while elsewhere Google increasingly answers questions itself using AI, drawing on your profile details, reviews and website. Check what your own profile shows. Either way, the fix is the same: keep your details complete and accurate, and answer common questions (parking, UPI payments, home visits, delivery areas) clearly on your website and in your profile.</p>
+<h3>Products and services</h3>
+<p>The products and services sections let you show items with a photo, a description and optionally a price or price range. They suit shops, bakeries and service businesses with standard packages, and unlike posts, they stay in place until you change them.</p>
+<h3>Menus</h3>
+<p>Restaurants and cafés can add a menu to their profile. Keep it in step with the menu on your website and update both when prices or dishes change, because customers notice when what they saw online doesn't match the bill.</p>
+
+<h2>Measure what's working</h2>
+<p>Your profile's performance view shows how many people saw it and how many called, asked for directions, clicked through to your website or booked. Check it monthly and compare it with what you posted:</p>
+<ul>
+  <li>Did website clicks rise in the weeks you posted offers?</li>
+  <li>Which posts and photos do customers mention when they call?</li>
+  <li>In Google Analytics, how many visits and enquiries came through your tagged profile links?</li>
+</ul>
+
+<h2>A simple weekly routine</h2>
+<ol>
+  <li>Reply to new reviews, positive and negative; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a></li>
+  <li>Publish one post: an update, offer or event</li>
+  <li>Add two or three new photos</li>
+  <li>Check your hours, especially before holidays</li>
+  <li>Once a month, review performance and adjust what you post</li>
+</ol>
+<p>This needn't take long. Many businesses add a trusted staff member as a manager so the routine doesn't depend on the owner; just make sure you stay the primary owner of the profile.</p>
+
+<p>Your profile works best when the website it links to turns visitors into enquiries. See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or for food businesses, <a href="/website-for-restaurants/">websites for restaurants and cafés</a>.</p>
 `,
   },
 ];

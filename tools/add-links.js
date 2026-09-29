@@ -62,7 +62,7 @@ const LINKS = [
   ['wordpress-security-checklist', '<h2>Hosting and server</h2>', '<p>More on getting backups right: <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>\n\n'],
   ['woocommerce-store-launch-checklist', '<h2>After launch</h2>', '<p>Once live, keep improving: see <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a> and <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a>.</p>\n\n'],
   ['woocommerce-vs-shopify-india', '<h2>Speed and performance</h2>', '<p>Organic search matters for stores too; see <a href="/blog/woocommerce-seo-guide/">how to rank WooCommerce product and category pages</a>.</p>\n\n'],
-  ['google-business-profile-checklist', '<h2>Posts, Q&amp;A and messaging</h2>', '<p>For templates and what to avoid, read <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a>.</p>\n\n'],
+  ['google-business-profile-checklist', '<h2>Posts, Q&amp;A and responding quickly</h2>', '<p>For templates and what to avoid, read <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a>.</p>\n\n'],
   ['local-seo-guide-small-business-india', '<h2>Step 3: Keep your NAP consistent</h2>', '<p>Need a steady flow of reviews? See <a href="/blog/get-more-google-reviews/">how to get more Google reviews the ethical way</a>.</p>\n\n'],
   ['on-page-seo-checklist', '<h2>Technical</h2>', '<p>Why links between your own pages matter so much: <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>\n\n'],
   ['get-website-indexed-google-faster', '<h2>Common blockers</h2>', '<p>For a full health check, work through the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit checklist</a>.</p>\n\n'],
@@ -383,6 +383,10 @@ const LINKS = [
   ['faq-page-seo', '<h2>Keep them up to date</h2>', '<p>Clear question-and-answer formatting can also earn a place in Google\'s answer boxes; see <a href="/blog/featured-snippets-how-to-win/">how to win featured snippets and People Also Ask</a>.</p>\n\n'],
   ['keyword-research-small-business', '<h2>Map keywords to pages</h2>', '<p>To find and use these longer, more specific phrases, see <a href="/blog/long-tail-keywords-explained/">long-tail keywords explained</a>.</p>\n\n'],
   ['301-vs-302-redirects', '<h2>Common mistakes</h2>', '<p>Changing a page slug or your WordPress permalink settings also needs redirects; see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs in WordPress</a>.</p>\n\n'],
+  // Agent 12
+  ['image-optimization-wordpress', '<h2>Special cases</h2>', '<p>Alt text and file names are only part of getting your photos found in search; see the <a href="/blog/image-seo-guide/">image SEO guide</a> for Google Images and Google Lens.</p>\n\n'],
+  ['faq-page-seo', '<h2>Where to put FAQs</h2>', '<p>Answer-first writing also suits people who ask their phones questions out loud; see <a href="/blog/voice-search-local-seo/">voice search for local businesses</a>.</p>\n\n'],
+  ['google-business-profile-checklist', '<h2>Connect it to your website</h2>', '<p>For post ideas, offers, events and a simple weekly routine, see <a href="/blog/google-business-profile-posts/">how to use Google Business Profile posts and photos</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
