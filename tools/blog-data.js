@@ -8249,6 +8249,8 @@ module.exports = [
 <h2>Pages (indexing)</h2>
 <p>Shows which pages are indexed and why others aren't: "crawled, currently not indexed", "duplicate without canonical", "excluded by noindex" and more. Not every excluded page is a problem, but important pages should be indexed.</p>
 
+<p>For what each status means and which ones need fixing, see <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors explained</a>.</p>
+
 <h2>Sitemaps</h2>
 <p>Submit your XML sitemap and check it was read successfully.</p>
 
@@ -9483,6 +9485,8 @@ module.exports = [
   <li>Monthly reports tied to Search Console and Analytics data</li>
   <li>You keep ownership of everything</li>
 </ul>
+
+<p>Not sure what a useful monthly report should include? See <a href="/blog/seo-reporting-what-to-track/">what to track in a monthly SEO report</a>.</p>
 
 <h2>Questions to ask before hiring</h2>
 <ol>
@@ -11018,6 +11022,8 @@ module.exports = [
   <li>Use breadcrumbs on deeper pages; see <a href="/blog/breadcrumbs-explained/">breadcrumbs explained</a></li>
   <li>Add contextual internal links in content; see <a href="/blog/internal-linking-explained/">internal linking</a></li>
 </ul>
+
+<p>Pages that no menu or other page links to become orphans; see <a href="/blog/orphan-pages-fix/">how to find and fix orphan pages</a>.</p>
 
 <h2>Test it</h2>
 <p>Ask someone unfamiliar with your business to find a specific service and your contact details. Watch where they hesitate, then simplify.</p>
@@ -21309,6 +21315,251 @@ Template: astra
 <p>A quarterly check of every branch page against its profile catches most mistakes before customers do.</p>
 
 <p>Planning a site for several branches? <a href="/wordpress-website-development/">WordPress website development</a> can give you a branch template that stays consistent as you grow, and <a href="/wordpress-seo-services/">WordPress SEO</a> support can set up the profiles, schema and branch pages so each location can rank.</p>
+`,
+  },
+  {
+    slug: 'search-console-page-indexing-errors',
+    seoTitle: 'Search Console Page Indexing Errors Explained',
+    title: 'Search Console Page Indexing Errors: What Each Status Means and What to Do',
+    description: 'What Crawled or Discovered – currently not indexed, duplicate canonical and other Search Console statuses mean, which to ignore and how to fix the rest.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-maintenance'],
+    body: `
+<p>Open the Pages report in Google Search Console and you'll usually see a grey bar of "Not indexed" pages, with a list of reasons that sound alarming. Some statuses are perfectly normal, a few need action, and one or two can quietly keep your most important pages out of Google. This guide explains the common statuses in plain English and what to do about each. For an overview of the other reports, see <a href="/blog/google-search-console-reports-explained/">Google Search Console reports explained</a>.</p>
+
+<h2>First, ask: should this page be indexed?</h2>
+<p>First, click into a status and look at the example URLs. Sort them into two groups:</p>
+<ul>
+  <li><strong>Pages that should be in Google:</strong> your homepage, service pages, location pages, products, categories and blog posts</li>
+  <li><strong>Pages that don't need to be:</strong> thank-you pages, cart and checkout, login pages, internal search results (<code>?s=</code>), feed URLs ending in <code>/feed/</code>, tag and date archives, URLs with tracking parameters, and old URLs that now redirect</li>
+</ul>
+<p>If a status only contains the second group, it's usually fine. Leftover demo content from a theme import is better deleted. The number of not-indexed pages isn't a score. What matters is whether the pages you care about are indexed, so run your key pages through the URL Inspection tool to check each one directly.</p>
+
+<h2>Crawled – currently not indexed</h2>
+<p>Google visited the page, read it, and decided not to add it to the index. Nothing is technically blocking it. It's usually a judgement about quality or value.</p>
+<p>Common causes:</p>
+<ul>
+  <li>Thin pages with little unique text, such as a service page with two lines and a contact form</li>
+  <li>Pages very similar to others on your site, like near-identical city pages</li>
+  <li>Low-value archives: tag pages, author pages or paginated blog archives</li>
+  <li>New pages on a young site that Google hasn't built trust in yet</li>
+</ul>
+<p><strong>What to do:</strong> make the pages that matter genuinely useful. Add real detail, answers to common questions, photos of your work, what affects pricing, and proof such as reviews or project examples. Link to them from relevant pages on your site, merge weak pages that overlap, then request indexing in URL Inspection. For low-value archives, it's fine to leave them out or set them to noindex.</p>
+
+<h2>Discovered – currently not indexed</h2>
+<p>Google knows the URL exists, usually from your sitemap or a link, but hasn't crawled it yet. Google's own help notes that this often happens when crawling right then was expected to overload the site, so the crawl was rescheduled.</p>
+<p>Common causes:</p>
+<ul>
+  <li>A new site, or a large batch of pages published at once</li>
+  <li>Slow hosting or server errors that make Google crawl cautiously</li>
+  <li>Pages with few or no internal links, so Google treats them as unimportant</li>
+  <li>Thousands of low-value URLs (filters, parameters, archives) competing for Google's attention</li>
+</ul>
+<p><strong>What to do:</strong> link to these pages from your navigation, homepage or related content, improve server response times, and stop low-value URLs being generated. On a new site, patience plus good internal links usually solves it; see <a href="/blog/get-website-indexed-google-faster/">how to get your website indexed faster</a>.</p>
+
+<h2>Duplicate and canonical statuses</h2>
+<p>These three are about which version of a page Google treats as the original:</p>
+<table>
+  <thead><tr><th>Status</th><th>What it means</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>Alternate page with proper canonical tag</td><td>The page points to another URL as the original, and Google agreed</td><td>Usually nothing. This is working as intended.</td></tr>
+    <tr><td>Duplicate without user-selected canonical</td><td>Google sees this page as a duplicate, no canonical is set, and Google picked another URL as the original</td><td>If Google's choice is right, leave it. If not, add a canonical tag pointing to your preferred URL.</td></tr>
+    <tr><td>Duplicate, Google chose different canonical than user</td><td>Your canonical tag says one thing, but Google chose another URL</td><td>Check the pages really are duplicates, make internal links and your sitemap match your canonical, or make the pages clearly different.</td></tr>
+  </tbody>
+</table>
+<p>On WordPress sites, typical culprits are http and https (or www and non-www) versions both loading, URLs with parameters such as <code>?replytocom=</code> or ad tracking tags, and near-identical product or location pages. URL Inspection shows which canonical Google selected for any page. More detail in <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</p>
+
+<h2>Excluded on purpose, or by accident</h2>
+<ul>
+  <li><strong>Excluded by 'noindex' tag:</strong> the page tells Google not to index it. Right for thank-you pages and private areas; a serious problem on a service page. Common causes are the WordPress "Discourage search engines" setting left on after launch, or an SEO plugin setting applied to a whole post type by mistake.</li>
+  <li><strong>Blocked by robots.txt:</strong> Google isn't allowed to crawl the URL. Fine for admin and cart URLs, but check no important folder is blocked. Robots.txt controls crawling, not indexing, so use noindex to keep a page out of results; see <a href="/blog/robots-txt-explained/">robots.txt explained</a>.</li>
+  <li><strong>Page with redirect:</strong> the URL redirects somewhere else. Normal after a redesign or URL change; make sure your sitemap and internal links point to the final URLs, not the old ones.</li>
+</ul>
+
+<h2>Errors that need fixing quickly</h2>
+<ul>
+  <li><strong>Not found (404):</strong> the URL no longer exists. If it's an old page with links or traffic, 301 redirect it to the closest relevant page. If it was never important, a 404 is fine.</li>
+  <li><strong>Soft 404:</strong> the page loads normally but looks empty or like an error to Google, such as an empty category or a product page with no content left. Add proper content, redirect it, or let it return a real 404.</li>
+  <li><strong>Server error (5xx):</strong> your server failed when Google visited. The odd error happens; repeated ones point to hosting limits, a plugin conflict or a firewall blocking Googlebot.</li>
+  <li><strong>Redirect error:</strong> a redirect chain that's too long, a loop, or a redirect to a broken URL. Often caused by conflicting rules in a redirect plugin, .htaccess and a CDN.</li>
+</ul>
+
+<h2>Fixing, validating and checking monthly</h2>
+<ol>
+  <li>Fix the cause on your site first</li>
+  <li>In URL Inspection, use Test live URL to confirm Google now sees the fixed version</li>
+  <li>Request indexing for a few important pages</li>
+  <li>Click Validate fix on that status in the Pages report, so Google rechecks the affected URLs</li>
+  <li>Be patient: recrawling and validation can take days to weeks</li>
+</ol>
+<p>Once a month, check that your key pages are still indexed and look for new statuses that include important URLs. A sudden jump in not-indexed service pages usually means a technical change, such as a plugin update, a redesign or a noindex setting, rather than a Google penalty.</p>
+
+<p>Looking at a long list of not-indexed pages and unsure which ones matter? I review Search Console and fix the underlying WordPress issues as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>, and keep an eye on them through <a href="/wordpress-maintenance/">ongoing WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'orphan-pages-fix',
+    title: 'Orphan Pages: What They Are and How to Find and Fix Them',
+    description: 'Orphan pages have no internal links pointing to them, so visitors and Google struggle to find them. How to spot them on WordPress and fix them properly.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>An orphan page is a page that no other page on your website links to. It exists, and it may even be in your sitemap, but no menu item, button or text link leads to it. Visitors can't click their way there, and Google has fewer signals that the page matters. Most business websites have a few, usually created by accident during a redesign or a busy campaign. Here's how to find and fix them on a WordPress site. For the basics of linking your own pages, start with <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
+
+<h2>Why orphan pages are a problem</h2>
+<p>Search engines find and understand pages mainly by following links. When nothing on your site links to a page:</p>
+<ul>
+  <li><strong>Google may crawl it rarely.</strong> If Google only knows the URL from your sitemap, it has little reason to treat it as important. Pages like this often sit under "Discovered – currently not indexed" in Search Console.</li>
+  <li><strong>It gets none of your site's authority.</strong> Links from your homepage and popular pages help other pages rank. An orphan page gets no share of that.</li>
+  <li><strong>Visitors never see it.</strong> Even a useful service or product page does no work for you if people already on your site can't reach it.</li>
+  <li><strong>It goes out of date.</strong> Pages nobody visits tend to be forgotten, so old prices, discontinued services or a wrong phone number can sit there for years.</li>
+</ul>
+
+<h2>How pages become orphans</h2>
+<p>Orphan pages are rarely created on purpose. Common causes on WordPress sites:</p>
+<ul>
+  <li>A redesign removed pages from the menu, but the pages were never deleted or redirected</li>
+  <li>Landing pages built for Google or Facebook ads, reachable only from the ad</li>
+  <li>Location or service pages that were published but never added to a menu, hub page or related links</li>
+  <li>Old blog posts that slipped off the first few pages of the blog and have no links from newer posts</li>
+  <li>Products removed from every category, or categories dropped from the shop menu</li>
+  <li>Internal links broken by a URL change, so the page lost the only links it had</li>
+</ul>
+<p>Some are fine: an ad landing page is often meant to stand alone. The problem is important pages orphaned by accident.</p>
+
+<h2>How to find orphan pages</h2>
+<p>The idea is simple: compare a list of every page you have with a list of pages that can be reached by following links. Anything on the first list but not the second is an orphan.</p>
+<h3>1. List every page you have</h3>
+<p>Your XML sitemap is the easiest starting point. On WordPress it's usually at /wp-sitemap.xml, or /sitemap_index.xml if you use an SEO plugin. Add the Pages, Posts and Products lists from your dashboard, plus landing pages from Google Analytics and pages showing in Search Console's Performance report. More in <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
+<h3>2. List the pages reachable by links</h3>
+<p>A website crawler starts at your homepage and follows every link, the way a search engine does. Desktop crawlers such as Screaming Frog SEO Spider can do this, and can also compare the crawl with your sitemap to flag URLs found only in the sitemap. Check what the free version allows for your site's size.</p>
+<h3>3. Use what WordPress and Search Console already show</h3>
+<ul>
+  <li>Some SEO plugins, such as Yoast SEO and Rank Math, can show how many internal links point to each post or page in the dashboard list. Check what your version and plan include.</li>
+  <li>Search Console's Links report lists your most internally linked pages. Important pages missing from that list, or with very few links, deserve a closer look.</li>
+</ul>
+<p>On a small site, a manual check works too: open the sitemap and, for each page, ask "which page on my site links here?" If you can't answer, it's probably an orphan.</p>
+
+<h2>Decide what each orphan page should be</h2>
+<p>Sort them before adding links:</p>
+<table>
+  <thead><tr><th>Type of page</th><th>Example</th><th>Best fix</th></tr></thead>
+  <tbody>
+    <tr><td>Useful and current</td><td>A service or location page never added to the menu</td><td>Keep it and add internal links</td></tr>
+    <tr><td>Useful but overlapping</td><td>Two similar pages about the same service</td><td>Merge into the stronger page and 301 redirect the other</td></tr>
+    <tr><td>Outdated, but has traffic or links</td><td>An old offer page or a discontinued product</td><td>301 redirect to the closest relevant page</td></tr>
+    <tr><td>Standalone on purpose</td><td>An ad landing page or a thank-you page</td><td>Leave it unlinked; add noindex if it shouldn't appear in Google</td></tr>
+    <tr><td>No value, no traffic, no links</td><td>Demo content, test pages, empty old event pages</td><td>Delete it and make sure it's gone from the sitemap</td></tr>
+  </tbody>
+</table>
+<p>Before deleting or redirecting anything, check Search Console and Analytics for traffic, and whether other websites link to the page. If they do, a redirect keeps that value; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
+
+<h2>How to fix orphan pages with internal links</h2>
+<p>For each page you keep, create a clear path in:</p>
+<ol>
+  <li><strong>Find its natural parent.</strong> A location page belongs under its service; a blog post belongs in a category and supports a service page. Link from that parent first.</li>
+  <li><strong>Add two or three contextual links</strong> from related pages or posts, in the body text where the topic comes up. Use descriptive anchor text such as "AC repair in Pune", not "click here".</li>
+  <li><strong>Link back out.</strong> Link from the rescued page to the relevant service page and your contact page, so it becomes part of the site instead of a dead end.</li>
+  <li><strong>Consider the menu or footer</strong> for key service, category or location pages.</li>
+  <li><strong>Use hub pages</strong> such as "Areas we serve" or "All services" to link to groups of pages that would crowd the menu.</li>
+  <li><strong>Request indexing</strong> for the most important pages in Search Console's URL Inspection tool once the links are live.</li>
+</ol>
+<p>Make sure these are normal HTML links in the page content. Links that only appear inside a search box, or after clicking a JavaScript widget, may not be followed reliably.</p>
+
+<h2>Preventing new orphan pages</h2>
+<ul>
+  <li><strong>Add a linking step to publishing.</strong> Link every new page or post from at least two related pages when it goes live.</li>
+  <li><strong>Crawl after big changes.</strong> After a redesign, menu change or URL change, crawl the site and compare it with the sitemap. Lost internal links are one reason rankings can dip after a relaunch; see <a href="/blog/redesign-website-without-losing-rankings/">how to redesign without losing rankings</a>.</li>
+  <li><strong>Keep older posts connected</strong> through categories, related posts and links from newer articles.</li>
+  <li><strong>Check every few months.</strong> A quick sitemap-versus-crawl comparison catches new orphans early.</li>
+</ul>
+
+<p>Not sure which of your pages are orphaned, or planning a redesign and want every important page to stay connected? I handle this as part of <a href="/wordpress-seo-services/">WordPress SEO services</a> and <a href="/website-redesign/">website redesign</a> projects.</p>
+`,
+  },
+  {
+    slug: 'seo-reporting-what-to-track',
+    seoTitle: 'Monthly SEO Reports: What to Track (and What to Ignore)',
+    title: 'Monthly SEO Reports: What to Track and How to Spot Vanity Metrics',
+    description: 'What a small business should track in a monthly SEO report, from enquiries and Search Console clicks to local visibility, and how to spot vanity metrics.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>Whether you do SEO yourself or pay someone to do it, a monthly report should answer one question: is Google search bringing in more of the right customers? Many reports don't. They're long PDFs full of charts, keyword lists and scores that look impressive but say little about enquiries. This guide covers what a small business should track each month, where to find each number, and how to read a report without being misled. For analytics beyond SEO, see <a href="/blog/website-analytics-metrics-that-matter/">the website metrics that actually matter</a>.</p>
+
+<h2>Start with enquiries and sales from search</h2>
+<p>Traffic only matters if some of it turns into business. The first lines of any SEO report should be:</p>
+<ul>
+  <li><strong>Organic enquiries:</strong> form submissions, click-to-call taps, WhatsApp clicks and bookings from visitors who arrived through Google search</li>
+  <li><strong>Organic sales:</strong> for online stores, orders and revenue from organic search</li>
+  <li><strong>The pages that produced them:</strong> where those visitors first landed on your site</li>
+</ul>
+<p>In Google Analytics 4 these come from key events (what GA4 used to call conversions), filtered to the Organic Search channel. If calls, WhatsApp clicks and form submissions aren't tracked yet, fix that first; see <a href="/blog/ga4-events-explained/">GA4 events explained</a>. It also helps to ask new customers how they found you, because some people search, then save your number and call days later.</p>
+
+<h2>Search Console: clicks, impressions and queries</h2>
+<p>Google Search Console shows how your site performs in Google search itself. Each month, note:</p>
+<ul>
+  <li><strong>Clicks:</strong> visits from Google search, the most direct measure of SEO traffic</li>
+  <li><strong>Impressions:</strong> how often your pages appeared in results. Rising impressions often come before rising clicks, especially on newer sites.</li>
+  <li><strong>Branded vs non-branded searches:</strong> people searching your business name already know you. Growth in searches like "physiotherapist in Indore" or "CNC machining services" shows SEO reaching new customers. Use the query filter to exclude your brand name and compare.</li>
+  <li><strong>Pages and queries on the move:</strong> which pages gained or lost clicks, and which queries show your site but get few clicks</li>
+</ul>
+<p>Treat average position with care. It can fall simply because you started appearing for many new searches lower down, which is often good news. Look at positions for specific queries and pages, not the site-wide average.</p>
+
+<h2>Rankings: a short list, read carefully</h2>
+<p>Tracking a handful of priority searches is useful if the list reflects what customers actually type. Focus on your main services, combined with your city or areas where relevant, rather than hundreds of keywords.</p>
+<p>Rankings vary by location, device and search history, especially for local searches. A screenshot from one phone in one neighbourhood isn't the full picture. A rank tracker set to your target city, read alongside Search Console, is more reliable.</p>
+
+<h2>Local visibility and technical health</h2>
+<p>For businesses serving a city or area, much of the action happens in the map results. Your Google Business Profile's performance section shows calls, direction requests, website clicks and messages, plus the searches that showed your profile. Include these, along with new reviews and your replies.</p>
+<p>A short technical section should confirm nothing is quietly broken:</p>
+<ul>
+  <li>Important pages still indexed (the Pages report in Search Console)</li>
+  <li>No security issues or manual actions</li>
+  <li>Core Web Vitals status on mobile</li>
+  <li>Broken links, 404 errors and redirect problems found and fixed</li>
+</ul>
+<p>This can be brief when all is well. It matters most after updates, redesigns or plugin changes.</p>
+
+<h2>Vanity metrics to question</h2>
+<p>These aren't useless, but on their own they don't show business results:</p>
+<ul>
+  <li><strong>Total keywords ranking:</strong> the count includes positions so far down that nobody sees them</li>
+  <li><strong>Top rankings for terms nobody searches:</strong> easy wins that bring no visitors, or simply your own business name</li>
+  <li><strong>Third-party authority scores:</strong> metrics such as Domain Authority or Domain Rating come from SEO tool companies, not Google</li>
+  <li><strong>Total backlinks:</strong> a few relevant links matter more than hundreds of directory or spam links</li>
+  <li><strong>Total sessions:</strong> traffic from every source, including bots and irrelevant overseas visitors, can hide what organic search is doing</li>
+  <li><strong>Tasks completed or posts published:</strong> activity isn't the same as results</li>
+</ul>
+<p>A report that leads with these and never mentions enquiries is a warning sign. See <a href="/blog/seo-red-flags-scams/">SEO red flags and scams</a> for others.</p>
+
+<h2>How to read a report without being misled</h2>
+<ol>
+  <li><strong>Compare with the same month last year</strong>, not just last month. Many businesses have strong seasons, such as festivals, weddings, admissions or summer for AC repair, so a monthly dip can be normal.</li>
+  <li><strong>Look at three- to six-month trends.</strong> SEO moves slowly and single months are noisy; see <a href="/blog/how-long-does-seo-take/">how long SEO takes</a>.</li>
+  <li><strong>Connect changes to causes.</strong> A good report notes what was done and when, such as pages published, fixes made or links earned, so you can see what moved the numbers.</li>
+  <li><strong>Check traffic against enquiries.</strong> If organic clicks rise but enquiries don't, the pages themselves may be the problem: an unclear offer, a weak call to action or slow mobile loading.</li>
+  <li><strong>Make sure you own the data.</strong> You should have your own access to Search Console, Analytics and your Business Profile, so you can check any number yourself.</li>
+</ol>
+
+<h2>A simple one-page monthly report</h2>
+<table>
+  <thead><tr><th>Section</th><th>Where the data comes from</th><th>What to look for</th></tr></thead>
+  <tbody>
+    <tr><td>Organic enquiries and sales</td><td>GA4 key events, your CRM or order records</td><td>Trend vs last month and last year</td></tr>
+    <tr><td>Clicks and impressions</td><td>Search Console Performance report</td><td>Non-branded growth; pages gaining or losing</td></tr>
+    <tr><td>Priority searches</td><td>Search Console queries, a rank tracker</td><td>Movement on searches that bring customers</td></tr>
+    <tr><td>Local profile</td><td>Google Business Profile performance</td><td>Calls, directions, website clicks, reviews</td></tr>
+    <tr><td>Technical health</td><td>Search Console, speed and uptime tools</td><td>New errors, lost indexing, Core Web Vitals issues</td></tr>
+    <tr><td>Work done and next steps</td><td>You, or whoever does your SEO</td><td>Clear tasks tied to goals, not just activity</td></tr>
+  </tbody>
+</table>
+<p>If the first row can't be filled in, sort out tracking before anything else.</p>
+
+<p>Want SEO reporting you can actually read, tied to enquiries rather than vanity numbers? I set up tracking and report on what matters as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. If visitors arrive but don't enquire, a focused <a href="/landing-page-design/">landing page</a> can help turn that traffic into leads.</p>
 `,
   },
 ];

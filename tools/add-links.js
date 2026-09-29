@@ -395,6 +395,10 @@ const LINKS = [
   ['keyword-research-small-business', '<h2>Understand search intent</h2>', '<p>For a step-by-step method that also covers Business Profiles, ranking pages and links, see <a href="/blog/competitor-seo-analysis/">how to analyse your competitors\' SEO</a>.</p>\n\n'],
   ['website-for-home-services', '<h2>Pricing guidance</h2>', '<p>Working from home or a van rather than a shop? See <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> for the right Business Profile settings and when area pages are worth building.</p>\n\n'],
   ['local-landing-pages-without-doorway-pages', '<h2>What makes a location page genuinely useful</h2>', '<p>If your business has several branches or clinics, see <a href="/blog/multi-location-business-website/">how to structure a multi-location business website</a>, including Business Profiles and schema for each branch.</p>\n\n'],
+  // Agent 15
+  ['google-search-console-reports-explained', '<h2>Sitemaps</h2>', '<p>For what each status means and which ones need fixing, see <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors explained</a>.</p>\n\n'],
+  ['website-navigation-structure', '<h2>Test it</h2>', '<p>Pages that no menu or other page links to become orphans; see <a href="/blog/orphan-pages-fix/">how to find and fix orphan pages</a>.</p>\n\n'],
+  ['seo-red-flags-scams', '<h2>Questions to ask before hiring</h2>', '<p>Not sure what a useful monthly report should include? See <a href="/blog/seo-reporting-what-to-track/">what to track in a monthly SEO report</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
