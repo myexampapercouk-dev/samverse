@@ -38,6 +38,8 @@ module.exports = [
   <li><strong>Custom features:</strong> booking systems, memberships, multilingual sites or custom integrations add to the cost based on complexity.</li>
 </ul>
 
+<p>Planning an online store? See <a href="/blog/ecommerce-website-cost-india/">what affects the cost of an e-commerce website in India</a> for platform, payment, shipping and running-cost factors.</p>
+
 <h2>What makes a website cost more?</h2>
 <h3>1. Number of pages and templates</h3>
 <p>Each unique page layout takes design and build time. Twenty service pages sharing one template cost far less than twenty completely different designs.</p>
@@ -6953,6 +6955,8 @@ module.exports = [
 <h2>Padlock missing or "partially secure" (mixed content)</h2>
 <p><strong>Cause:</strong> the page loads over https, but some images, scripts or styles still load over http.<br><strong>Fix:</strong> update old http links in content, theme settings and page builder sections to https. Tools and plugins can find and fix mixed content.</p>
 
+<p>For a step-by-step clean-up, see <a href="/blog/mixed-content-warnings-fix/">how to fix mixed content warnings in WordPress</a>.</p>
+
 <h2>Warnings after moving hosts or domains</h2>
 <p><strong>Cause:</strong> the certificate wasn't issued on the new host before DNS switched, or DNS still points to the old server.<br><strong>Fix:</strong> issue the certificate on the new host and check DNS records. Plan this step in any migration; see <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
@@ -8592,6 +8596,8 @@ module.exports = [
   <li><strong>Refreshed copy</strong> on your top pages</li>
 </ol>
 
+<p>Sometimes these improvements are all your site needs; see <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a> to decide.</p>
+
 <h2>Phase the redesign</h2>
 <ul>
   <li><strong>Phase 1:</strong> new design for homepage, key service pages and contact</li>
@@ -9308,6 +9314,8 @@ module.exports = [
   <li><strong>Using 302 for permanent moves</strong></li>
   <li><strong>Forgetting internal links:</strong> update links to point directly to new URLs</li>
 </ul>
+
+<p>If a loop has taken your whole site offline with a "too many redirects" error, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS in WordPress</a>.</p>
 
 <h2>Setting up redirects on WordPress</h2>
 <ul>
@@ -12489,6 +12497,8 @@ module.exports = [
 <h2>Email delivery matters more than the plugin</h2>
 <p>Many "form not working" problems are really email problems. WordPress's default mail often lands in spam or never arrives. Use an SMTP plugin with a proper email service, and set up SPF, DKIM and DMARC; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">email deliverability</a>.</p>
 
+<p>For a step-by-step fix, see <a href="/blog/wordpress-not-sending-emails-smtp/">why WordPress doesn't send emails and how to set up SMTP</a>.</p>
+
 <h2>Spam protection</h2>
 <p>Use honeypots, time checks or invisible challenges rather than annoying puzzles; see <a href="/blog/stop-contact-form-spam/">stopping contact form spam</a>.</p>
 
@@ -14093,6 +14103,8 @@ module.exports = [
   <li>Guaranteed Google rankings; see <a href="/blog/seo-red-flags-scams/">SEO red flags</a></li>
   <li>Full payment upfront</li>
 </ul>
+
+<p>Tempted by the lowest quote? See <a href="/blog/cheap-website-risks/">what very cheap websites usually leave out</a> before you decide.</p>
 
 <h2>Think in total cost</h2>
 <p>A cheaper website that doesn't bring enquiries, or needs rebuilding in a year, costs more in the end. Compare the total cost over two or three years, including hosting, maintenance and likely changes. See <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> and try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
@@ -24199,6 +24211,505 @@ Template: astra
 <p>If you start on .co.in or .in and later move to a .com, it's very doable. Every old URL is 301-redirected to its new address, Search Console's Change of Address tool tells Google about the move, and your email, Google Business Profile, social profiles and printed material are updated. Expect some temporary ranking movement while Google processes the change. Keep the old domain renewed permanently so the redirects keep working.</p>
 
 <p>Setting up a new business website, or moving to a new domain? See <a href="/website-for-startups/">websites for startups</a> and <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'mixed-content-warnings-fix',
+    seoTitle: 'How to Fix Mixed Content Warnings in WordPress',
+    title: 'Mixed Content Warnings After Moving WordPress to HTTPS: How to Fix Them',
+    description: 'Padlock missing after moving WordPress to HTTPS? How to find insecure http images and scripts, run a safe search-replace, and fix CDN and theme settings.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-migration'],
+    body: `
+<p>You installed an SSL certificate and your site now opens on https, yet the browser still won't show a secure padlock. Some images may have vanished, a slider has stopped working, or the layout looks broken. The usual cause is mixed content: a secure page that still loads some of its files over plain http. Here's how to find every insecure link and fix it properly, rather than just hiding the warning.</p>
+
+<h2>What mixed content is</h2>
+<p>A page is only fully secure when everything on it, including images, stylesheets, scripts, fonts and embedded videos, loads over https. When an https page pulls in even one file over http, browsers treat the page as not fully secure.</p>
+<p>Browsers generally handle it in two ways:</p>
+<ul>
+  <li><strong>Scripts, stylesheets and iframes</strong> loaded over http are blocked outright, which can break menus, sliders, forms and layouts</li>
+  <li><strong>Images, audio and video</strong> are often upgraded to https automatically, and blocked if the file isn't available that way</li>
+</ul>
+<p>Either way, visitors see a missing padlock or a broken page, and a checkout or enquiry form without a padlock is exactly where people hesitate. For other certificate warnings, see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a>.</p>
+
+<h2>Why it appears after moving to HTTPS</h2>
+<p>Installing a certificate doesn't change the links already stored in your website. WordPress saves full URLs, including the http part, in many places:</p>
+<ul>
+  <li>Images and links inside posts and pages</li>
+  <li>Page builder data, widgets and theme customiser settings such as the logo</li>
+  <li>Theme files and custom CSS with hardcoded http addresses</li>
+  <li>Old tracking codes, chat widgets, fonts and embeds pasted into the header or footer</li>
+  <li>A CDN or caching plugin still set to an http address</li>
+</ul>
+
+<h2>Step 1: Find the insecure files</h2>
+<ol>
+  <li>Open the page in Chrome, press F12 and look at the Console tab. Each mixed content warning names the exact http file being requested.</li>
+  <li>Right-click, choose View Page Source, and search for <code>http://</code>. Ignore normal links to other websites; you're looking for images, scripts, stylesheets and fonts.</li>
+  <li>Check different page types, not just the homepage: a blog post, a service page, a product page, the cart, checkout and contact page. Different templates pull in different files.</li>
+</ol>
+<p>Note down where each URL comes from. A pattern usually appears quickly, such as all older blog images, or one script in the footer.</p>
+
+<h2>Step 2: Confirm WordPress's own addresses</h2>
+<p>In Settings → General, both the WordPress Address and Site Address should start with https. If these fields are greyed out, they're set in wp-config.php, and a developer should change them there. Take a full backup before changing either setting, because a mistake here can lock you out of the dashboard; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</p>
+<p>Also make sure the http version of every page permanently redirects to https, usually through your host's "force HTTPS" option or a server rule. Set this up in one place only, or you risk a redirect loop.</p>
+
+<h2>Step 3: Search and replace old URLs safely</h2>
+<p>Most mixed content lives in the database, so the lasting fix is to replace <code>http://yourdomain.com</code> with <code>https://yourdomain.com</code> throughout it. Do it carefully:</p>
+<ul>
+  <li><strong>Use a tool that understands serialised data.</strong> WordPress and plugins store many settings in a format that breaks if text is changed blindly with a raw database query. Plugins such as Better Search Replace, or WP-CLI's search-replace command, handle this correctly.</li>
+  <li><strong>Back up first and do a dry run</strong> to see how many changes will be made before committing them.</li>
+  <li><strong>Replace only your own domain</strong>, including the www or non-www version you used before. Never replace every "http://" on the site, because some external sites you link to may not support https.</li>
+  <li><strong>Elementor sites:</strong> Elementor has its own Replace URL tool under Elementor → Tools. Afterwards, regenerate its CSS files from the same screen so the stored styles update too.</li>
+</ul>
+
+<h2>Step 4: Fix hardcoded links in the theme and scripts</h2>
+<p>Anything outside the database needs finding and editing by hand:</p>
+<ul>
+  <li><strong>Theme files:</strong> look for http links in header and footer templates, and background images in CSS files. Make edits in a child theme so theme updates don't undo them.</li>
+  <li><strong>Additional CSS and theme options:</strong> logo, favicon and background image fields sometimes store a full http URL.</li>
+  <li><strong>Header and footer scripts:</strong> old analytics, chat, font or map snippets may still use http. Replace them with the provider's current https code.</li>
+  <li><strong>Third-party embeds</strong> that don't support https at all should be replaced or removed.</li>
+</ul>
+<p>If a premium theme or plugin itself outputs http links, update it first; current versions usually handle https properly.</p>
+
+<h2>Step 5: Check the CDN and clear every cache</h2>
+<p>If a caching plugin rewrites file URLs to a CDN, make sure the CDN address in its settings starts with https and that the CDN has a valid certificate. With a proxy CDN such as Cloudflare, features like automatic HTTPS rewrites can catch leftover links, but treat them as a safety net rather than the fix. See <a href="/blog/what-is-a-cdn/">what a CDN is</a> for how the two common setups differ.</p>
+<p>Then purge the caching plugin, the server cache, the CDN cache and your browser cache. Old cached pages often keep showing the warning after the real problem has been fixed.</p>
+
+<h2>Quick fixes: useful, but not the cure</h2>
+<ul>
+  <li><strong>SSL plugins</strong> often include a mixed content fixer that rewrites http links as each page loads. It works, but adds processing to every page view, and the warnings return if the plugin is ever switched off.</li>
+  <li><strong>The upgrade-insecure-requests header</strong> tells browsers to request your http files over https instead. It only helps when those files are actually available on https; see <a href="/blog/website-security-headers-explained/">security headers explained</a>.</li>
+</ul>
+<p>Use these as a temporary bridge while you fix the source links. Afterwards, add a quick mixed content check to your routine after every redesign, migration or new embed, and test forms and checkout on https each time.</p>
+
+<p>Moving a site to HTTPS or a new host? I handle SSL setup, redirects and mixed content clean-up as part of <a href="/wordpress-migration/">WordPress migration</a>, and keep it all in check afterwards with <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'too-many-redirects-error-fix',
+    seoTitle: 'How to Fix ERR_TOO_MANY_REDIRECTS in WordPress',
+    title: 'ERR_TOO_MANY_REDIRECTS on WordPress: Causes and How to Fix It',
+    description: 'Site "redirected you too many times"? How to fix redirect loops in WordPress: site URL settings, CDN flexible SSL, .htaccess, redirect plugins and cookies.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-migration'],
+    body: `
+<p>Instead of your website, Chrome shows "This page isn't working" and says your domain redirected you too many times, with the code ERR_TOO_MANY_REDIRECTS. Firefox calls it "The page isn't redirecting properly". It's alarming because the whole site can disappear at once, but the cause is almost always a settings conflict that can be fixed without losing any content.</p>
+
+<h2>What the error means</h2>
+<p>A redirect sends a browser from one address to another, for example from http to https, or from www to non-www. A redirect loop happens when two rules disagree: address A sends visitors to B, and B sends them straight back to A. The browser follows the loop a number of times, then gives up and shows the error.</p>
+<p>The most common causes on WordPress sites:</p>
+<table>
+  <thead><tr><th>Cause</th><th>Typical trigger</th></tr></thead>
+  <tbody>
+    <tr><td>Site URL settings don't match the server's redirects</td><td>Switching to https, or between www and non-www</td></tr>
+    <tr><td>CDN or proxy using "Flexible" SSL</td><td>Connecting Cloudflare, then forcing https on the server</td></tr>
+    <tr><td>The same redirect set up in several places</td><td>A hosting "force HTTPS" switch, an SSL plugin and .htaccess rules all at once</td></tr>
+    <tr><td>A faulty redirect rule</td><td>A redirect plugin rule that points a page back to itself</td></tr>
+    <tr><td>Stale cookies or cached redirects</td><td>Loops that affect only you, or only the login page</td></tr>
+    <tr><td>Settings left over from a migration</td><td>Site URL still pointing to the old domain or a staging address</td></tr>
+  </tbody>
+</table>
+<p>A different problem: if your site sends visitors to spam or gambling sites, that's malware, not a loop; see <a href="/blog/fix-wordpress-redirect-hack/">how to fix the WordPress redirect hack</a>.</p>
+
+<h2>Step 1: Rule out cookies and your browser</h2>
+<p>Open the site in a private or incognito window, and on your phone using mobile data. If it loads there, the problem is on your device: clear cookies and cached data for that site only (in Chrome, through the site information icon next to the address bar), then try again.</p>
+<p>If it fails everywhere, find the loop itself. In Chrome's developer tools (F12), open the Network tab, tick "Preserve log" and reload. You'll see the chain of 301 or 302 responses and exactly which addresses keep bouncing, for example <code>https://example.com</code> to <code>http://example.com</code> and back again. That tells you which two rules are fighting. For redirect basics, see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
+
+<h2>Step 2: Check the WordPress site URLs</h2>
+<p>WordPress stores two addresses, the WordPress Address and the Site Address, in Settings → General. Both must match your preferred version exactly: https, and either with or without www, the same way your server redirects.</p>
+<p>If the loop stops you reaching the dashboard, a developer can set them from outside WordPress:</p>
+<ul>
+  <li>Add <code>WP_HOME</code> and <code>WP_SITEURL</code> definitions to wp-config.php with the correct https address</li>
+  <li>Or edit the <code>siteurl</code> and <code>home</code> values in the options table using phpMyAdmin</li>
+</ul>
+<p>Take a backup first. After a migration, check that neither address still points to the old domain or a staging copy.</p>
+
+<h2>Step 3: Check your CDN's SSL mode</h2>
+<p>This is the classic cause after connecting Cloudflare. In "Flexible" mode, Cloudflare talks to visitors over https but to your hosting over plain http. If your server or WordPress then redirects http to https, Cloudflare passes that redirect back to the browser, which asks again over https, and the loop begins.</p>
+<p>The fix is to have a valid certificate on your hosting (most hosts provide free ones) and set Cloudflare's SSL/TLS mode to "Full (strict)". Dashboard menus change over time, so check the current wording. Other proxy and firewall services have similar settings. Behind some proxies or load balancers, WordPress can't tell that a visitor arrived on https and needs a small wp-config.php setting to recognise it; your host or developer can confirm. See <a href="/blog/what-is-a-cdn/">what a CDN is</a> for how proxy setups work.</p>
+
+<h2>Step 4: Remove duplicate redirect rules</h2>
+<p>Your http-to-https and www redirects should live in one place. Common places they pile up:</p>
+<ul>
+  <li>A "force HTTPS" switch in the hosting panel</li>
+  <li>Rules in the .htaccess file, on Apache and LiteSpeed servers</li>
+  <li>An SSL plugin, a redirect plugin or the redirect feature of an SEO plugin</li>
+  <li>Redirect rules or page rules at the CDN</li>
+</ul>
+<p>To test .htaccess, rename it temporarily (for example to .htaccess-old) using File Manager or FTP. If the site loads, a rule inside it was the culprit. Go to Settings → Permalinks and click Save to regenerate WordPress's default rules, then add back only the redirects you actually need. On Nginx servers, redirects sit in the server configuration, so ask your host.</p>
+
+<h2>Step 5: Check plugins and caches</h2>
+<p>If the loop started after installing or updating a plugin, that's your first suspect. Without dashboard access, rename the plugins folder inside wp-content using File Manager or FTP to switch them all off. If the site loads, rename the folder back and reactivate plugins one at a time from the Plugins screen, testing after each. Redirect, SSL, caching, security and language or country redirect plugins are the usual culprits. A single redirect rule that sends a page to an address that redirects back is enough.</p>
+<p>Browsers and caches can remember redirects. Once you've fixed the cause, purge the caching plugin, server cache and CDN cache, then test in a fresh private window; see <a href="/blog/wordpress-changes-not-showing/">why changes don't show on your site</a> for every layer to clear.</p>
+
+<h2>When only the login page loops</h2>
+<p>Sometimes the front of the site works, but logging in sends you back to the login page again and again, or wp-admin redirects endlessly. Common causes:</p>
+<ul>
+  <li>Old login cookies: clear cookies for the site and try again</li>
+  <li>Site URLs using www while you log in without it, or the reverse</li>
+  <li>The login page or admin area being cached, when both should always be excluded from caching</li>
+  <li>A security plugin that changed the login address or is blocking your IP address</li>
+</ul>
+
+<h2>How to prevent redirect loops</h2>
+<ul>
+  <li>Choose one version of your domain (https, with or without www) and use it everywhere</li>
+  <li>Handle each redirect in one place only, and write down where</li>
+  <li>Test SSL, CDN and redirect changes on a staging site first when you can</li>
+  <li>After a migration or SSL change, test the homepage, login, a few inner pages, forms and checkout</li>
+  <li>Use uptime monitoring so you hear about a loop before your customers do</li>
+</ul>
+
+<p>Site stuck in a loop and you'd rather not touch server files? I fix issues like this as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and set up SSL and redirects correctly during <a href="/wordpress-migration/">WordPress migrations</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-not-sending-emails-smtp',
+    title: 'WordPress Not Sending Emails? How to Fix It With SMTP',
+    description: 'Password resets, WooCommerce order emails or form enquiries not arriving? Why WordPress emails fail and how to fix them with SMTP or a transactional service.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>A customer places an order but never gets a confirmation. You click "Lost your password?" and the reset link never arrives. Your contact form says "Thank you", but no enquiry reaches your inbox. When WordPress emails go missing, the website itself is usually fine; the problem is how it sends email. Here's why it happens and how to fix it properly with SMTP or a transactional email service.</p>
+
+<h2>Why WordPress emails go missing</h2>
+<p>By default, WordPress hands every email to your web server's built-in mail function. That's simple, but unreliable:</p>
+<ul>
+  <li><strong>No authentication.</strong> The server usually isn't listed in your domain's SPF record or signing with DKIM, so Gmail, Outlook and others treat the email as suspicious and send it to spam or reject it.</li>
+  <li><strong>Hosts restrict it.</strong> Many hosts limit or disable server mail to stop spam, sometimes with low hourly sending limits.</li>
+  <li><strong>Shared reputation.</strong> On shared hosting, your emails leave from a server that many other sites also use.</li>
+  <li><strong>The wrong "From" address.</strong> WordPress sends from wordpress@yourdomain by default, an address that often doesn't exist, and some form plugins send "from" the visitor's own email, which fails authentication checks.</li>
+  <li><strong>Email hosted elsewhere.</strong> If your mailbox is on Google Workspace, Zoho Mail or Microsoft 365 but your hosting thinks it handles mail locally, emails to your own domain may never leave the server. In cPanel, this is the Email Routing setting.</li>
+</ul>
+
+<h2>First, confirm it's really an email problem</h2>
+<ol>
+  <li><strong>Check the source.</strong> Does the order exist in WooCommerce? Is the enquiry saved in your form plugin's entries? If yes, the site works and only the email failed.</li>
+  <li><strong>Check spam folders and recipients.</strong> Confirm notifications go to an inbox someone actually reads: the administration email in Settings → General, the recipients in WooCommerce's email settings, and each form's notification settings.</li>
+  <li><strong>Send a test</strong> to a Gmail address and to your business address. If one arrives and the other doesn't, you've already narrowed down the cause.</li>
+</ol>
+<p>If submissions arrive but genuine enquiries are still few, the problem may be the form itself; see <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a>.</p>
+
+<h2>The fix: SMTP or a transactional email service</h2>
+<p>Instead of the server's mail function, WordPress should send through a proper email service that signs in with credentials and is authorised to send for your domain. An SMTP plugin makes this switch for every email the site sends, whichever plugin created it.</p>
+<table>
+  <thead><tr><th>Option</th><th>Good for</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Your business mailbox over SMTP (Google Workspace, Zoho Mail, Microsoft 365 or host email)</td><td>Brochure sites with a few form emails a day</td><td>Mailbox sending limits, and the connection breaking when passwords or security settings change</td></tr>
+    <tr><td>A transactional email service (for example Amazon SES, Brevo, Mailgun, Postmark or ZeptoMail)</td><td>Online stores, membership sites and busy forms</td><td>Domain verification, DNS records and account approval before you can send</td></tr>
+    <tr><td>Your host's SMTP server</td><td>Simple sites on good hosting</td><td>Hourly limits and shared server reputation</td></tr>
+  </tbody>
+</table>
+<p>Transactional services are built for automated emails like order confirmations and password resets, with delivery logs and bounce tracking. Plans and free allowances change, so check current pricing. Popular SMTP plugins include WP Mail SMTP, FluentSMTP and Post SMTP; use only one at a time.</p>
+
+<h2>How to set it up</h2>
+<ol>
+  <li><strong>Pick a From address on your domain</strong>, such as orders@ or info@yourbusiness.com, and a clear From name.</li>
+  <li><strong>Verify your domain with the service</strong> by adding the SPF and DKIM records it gives you, plus a DMARC record if you don't have one; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>. Keep a single SPF record that includes every sender.</li>
+  <li><strong>Install one SMTP plugin</strong> and enter the service's details: server, port (usually 587 with TLS, or 465 with SSL), and a username and password or API key. Many plugins can also connect to popular services by API, which avoids blocked ports.</li>
+  <li><strong>Force the From address</strong> so every plugin sends from the same verified address.</li>
+  <li><strong>Send test emails</strong> to Gmail and Outlook addresses and check they land in the inbox. In Gmail, "Show original" shows whether SPF, DKIM and DMARC passed.</li>
+  <li><strong>Turn on email logging</strong>, either in the SMTP plugin or with a separate log plugin, so you can see what the site sent and whether anything failed.</li>
+</ol>
+<p>With Gmail or Google Workspace, Google no longer accepts a plain password from most apps, so use the plugin's Google sign-in option or an app password. If the connection times out, your host may block outgoing SMTP ports; ask them, or switch to an API connection.</p>
+
+<h2>Password resets, orders and forms: specific checks</h2>
+<h3>Password reset emails</h3>
+<p>If you're locked out because the reset email never comes, another administrator can reset your password from the Users screen, or a developer can set one through the hosting database. Fix sending before you change the administration email address, too: WordPress emails the new address to confirm the change, and that email needs to arrive.</p>
+<h3>WooCommerce order emails</h3>
+<p>In WooCommerce → Settings → Emails, check each email is enabled and the "New order" recipient is correct. WooCommerce sends the new order email when an order moves to processing, on-hold or completed, so an order stuck in "Pending payment", for example because the gateway never confirmed a UPI or card payment, won't trigger it. For branding and content, see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce order emails</a>.</p>
+<h3>Contact form notifications</h3>
+<p>Set the From address to your own domain and put the visitor's email in the Reply-To field, so you can still reply with one click. Make sure entries are saved in the dashboard too, and consider a second alert such as WhatsApp or a Google Sheet, so one failed email never means a lost lead.</p>
+
+<h2>Keep website email working</h2>
+<ul>
+  <li>Check the email log and send a test form entry every month</li>
+  <li>Update the SMTP settings whenever the mailbox password, app password or API key changes</li>
+  <li>Copy all email DNS records (MX, SPF, DKIM and DMARC) when changing hosting or nameservers</li>
+  <li>Watch sending limits as your store grows, especially before festival sales</li>
+  <li>If you get bounces for emails you never sent, investigate straight away; see <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam emails</a></li>
+</ul>
+
+<p>Need reliable website email without the trial and error? I can set up SMTP, DNS records and testing as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, or from the start on a new build through <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'ecommerce-website-cost-india',
+    seoTitle: 'E-commerce Website Cost in India: What Affects the Price',
+    title: 'How Much Does an E-commerce Website Cost in India? What Affects the Price',
+    description: 'What drives the cost of an online store in India: platform, products, design, payments, shipping, integrations and yearly running costs, explained simply.',
+    date: '2026-09-28',
+    category: 'Pricing',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>An online store is a bigger project than a regular business website. As well as pages about your brand, it needs a product catalogue, a cart, a checkout, payments, shipping rules, order emails and a way to manage it all every day. That's why quotes for "an e-commerce website" can vary so widely.</p>
+<p>This guide explains what actually drives the cost of an e-commerce website in India, so you can plan a sensible budget and compare quotes on the same terms. For a regular business site, see <a href="/blog/wordpress-website-cost-india/">how much a WordPress website costs in India</a>.</p>
+
+<h2>The platform you choose</h2>
+<p>Your platform affects both what you pay to build the store and what you pay every year to run it.</p>
+<ul>
+  <li><strong>WooCommerce (on WordPress):</strong> the software is free and you own the site. You pay for hosting, a domain, any premium plugins and the developer's time to set it up. It's flexible, so it suits stores with specific needs.</li>
+  <li><strong>Shopify:</strong> a hosted platform with a monthly subscription. Setup can be quicker, but many features come from paid apps, and depending on your plan and payment provider there may be extra transaction fees. Check current plans before you decide.</li>
+  <li><strong>Custom-built:</strong> usually the most expensive to build and maintain. It rarely makes sense unless your business model is unusual.</li>
+</ul>
+<p>For a side-by-side comparison, see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
+
+<h2>Your products and catalogue</h2>
+<p>The number of products matters less than how complicated they are and who does the work of adding them.</p>
+<table>
+  <thead><tr><th>Factor</th><th>Keeps cost lower</th><th>Adds to the cost</th></tr></thead>
+  <tbody>
+    <tr><td>Product types</td><td>Simple products with one price</td><td>Variations (sizes, colours, weights), bundles and custom options</td></tr>
+    <tr><td>Product data</td><td>A clean spreadsheet you prepare</td><td>Details scattered across catalogues, PDFs and WhatsApp messages</td></tr>
+    <tr><td>Uploading</td><td>Bulk import from a spreadsheet</td><td>Manual entry, one product at a time</td></tr>
+    <tr><td>Photos and descriptions</td><td>Ready, consistent photos and written copy</td><td>Photo editing, background removal and copywriting by the developer</td></tr>
+    <tr><td>Navigation</td><td>A few clear categories</td><td>Deep categories and filters by size, price, brand or material</td></tr>
+  </tbody>
+</table>
+<p>If you have a large catalogue, preparing the product data yourself in a spreadsheet is one of the easiest ways to save money.</p>
+
+<h2>Design and the shopping experience</h2>
+<p>A store has more templates than a brochure site: home, category, product, cart, checkout, account pages and order emails. Cost depends on whether a good theme is adapted to your brand or each template is designed from scratch.</p>
+<p>Other decisions that affect the effort involved:</p>
+<ul>
+  <li>How much the product page needs beyond the basics, such as size charts, delivery estimates, reviews and related products</li>
+  <li>Search and filters, which matter more as the catalogue grows</li>
+  <li>How carefully the mobile experience is designed and tested, since many Indian shoppers browse and buy on their phones</li>
+  <li>Speed optimisation, which takes more work on stores with many images and plugins</li>
+</ul>
+
+<h2>Payments and checkout</h2>
+<p>Indian shoppers expect UPI, cards, net banking and wallets, and many still want cash on delivery. Connecting a payment gateway is usually straightforward, but the work around it adds up:</p>
+<ul>
+  <li>Gateway account approval and testing real transactions before launch</li>
+  <li>Cash on delivery rules, such as limits by order value or pincode</li>
+  <li>GST-ready invoices and correct tax settings (confirm the details with your CA)</li>
+  <li>Checkout changes like extra fields, gift messages or delivery date selection</li>
+</ul>
+<p>Payment gateways generally charge a fee on each transaction, which is a running cost rather than a build cost. See <a href="/blog/accept-online-payments-wordpress-india/">how to accept online payments in India</a> for the main options.</p>
+
+<h2>Shipping and delivery</h2>
+<p>Shipping is where many Indian stores get complicated. A single flat rate is quick to set up. Rates by weight, zone or order value, free shipping thresholds, pincode serviceability checks and integration with a courier or shipping aggregator all take longer to build and test. If you deliver locally yourself, delivery slots and area restrictions add work too.</p>
+
+<h2>Integrations and extra features</h2>
+<p>Each connection to another system needs development and testing, and some need paid plugins or apps with yearly or monthly fees. Common examples:</p>
+<ul>
+  <li>Syncing stock with inventory, billing or accounting software</li>
+  <li>Order updates by SMS, email or WhatsApp</li>
+  <li>Product feeds for Google Merchant Center</li>
+  <li>Wholesale or dealer pricing for B2B buyers</li>
+  <li>Subscriptions, memberships or digital downloads</li>
+  <li>Multiple languages or currencies for international customers</li>
+</ul>
+<p>A good way to control cost is to separate the must-haves for launch from features that can wait until the store is selling.</p>
+
+<h2>Ongoing costs after launch</h2>
+<p>Budget for running costs as well as the build:</p>
+<ul>
+  <li><strong>Hosting:</strong> stores need better hosting than simple websites, because carts, checkouts and account pages can't be fully cached</li>
+  <li><strong>Domain renewal</strong> every year</li>
+  <li><strong>Premium plugin, theme or app licences,</strong> usually renewed yearly or monthly</li>
+  <li><strong>Payment gateway fees</strong> on each transaction</li>
+  <li><strong>Maintenance:</strong> updates, backups, security checks and test orders so nothing breaks quietly</li>
+  <li><strong>Marketing:</strong> ads, SEO and content to bring shoppers to the store</li>
+</ul>
+<p>A cheaper build with high monthly fees can cost more over two or three years than a slightly larger one-time investment, so compare total cost, not just the first invoice.</p>
+
+<h2>How to get an accurate quote</h2>
+<ol>
+  <li>List your product types, a rough product count and any variations</li>
+  <li>Decide which payment methods and shipping rules you need</li>
+  <li>Note any software the store must connect to</li>
+  <li>Share two or three stores you like, and what you like about them</li>
+  <li>Mark each feature as "needed at launch" or "later"</li>
+</ol>
+<p>With this, developers can quote on the same scope. For a quick ballpark first, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<p>Planning an online store? See <a href="/woocommerce-developer/">WooCommerce development</a> to talk through your products, payments and shipping before you commit to a budget.</p>
+`,
+  },
+  {
+    slug: 'cheap-website-risks',
+    seoTitle: 'Cheap Website Risks: What You Get and What You Don\'t',
+    title: 'The Real Risks of Very Cheap Websites (and How to Get Good Value on a Small Budget)',
+    description: 'What very cheap websites usually include and leave out, the hidden costs that appear later, red flags to watch for, and how to get value on a small budget.',
+    date: '2026-09-28',
+    category: 'Pricing',
+    related: ['hire-wordpress-developer', 'website-redesign'],
+    body: `
+<p>You've probably seen the offers: a complete business website, with hosting and a domain, for a price that seems too good to be true. Sometimes it's a genuinely good deal. More often, the low price is possible because important work is skipped, and you pay for it later in lost enquiries, extra charges or a rebuild.</p>
+<p>This guide explains what very cheap websites usually include, what they tend to leave out, and how to get real value when your budget is small.</p>
+
+<h2>How some websites are made so cheap</h2>
+<p>A low price isn't automatically a bad sign. A freelancer with low overheads using a good theme can deliver a solid small website at a modest cost. But very low prices are often reached by cutting corners:</p>
+<ul>
+  <li>The same template reused for every client, with only the logo, colours and text changed</li>
+  <li>No planning of pages, content or calls to action</li>
+  <li>Little or no testing on phones, browsers or speed</li>
+  <li>Pirated ("nulled") themes and plugins instead of licensed ones</li>
+  <li>A low entry price, with most of the money made on renewals and paid changes later</li>
+</ul>
+
+<h2>What you typically get</h2>
+<p>A very cheap package usually includes:</p>
+<ul>
+  <li>A ready-made template with your logo and colours</li>
+  <li>A handful of pages: home, about, services, gallery and contact</li>
+  <li>A basic contact form</li>
+  <li>A layout that shrinks to fit phones, though it may not be designed for them</li>
+  <li>Sometimes a domain and hosting for the first year, often in the provider's account</li>
+</ul>
+<p>That can be enough to say "we have a website". Whether it brings enquiries is another matter.</p>
+
+<h2>What's often missing</h2>
+<table>
+  <thead><tr><th>Area</th><th>What's often skipped</th><th>Why it matters</th></tr></thead>
+  <tbody>
+    <tr><td>Content and structure</td><td>Clear service pages, headlines and calls to action</td><td>Visitors don't understand what you offer or how to contact you</td></tr>
+    <tr><td>Mobile experience</td><td>Real testing on phones</td><td>Many local customers will see your site on a phone first</td></tr>
+    <tr><td>Speed</td><td>Image compression, caching, lean plugins</td><td>Slow pages lose visitors and hurt rankings</td></tr>
+    <tr><td>SEO basics</td><td>Page titles, descriptions, headings, Search Console setup</td><td>Google struggles to understand and show your pages</td></tr>
+    <tr><td>Security and backups</td><td>Updates, login protection, off-site backups</td><td>A hack or crash can take the site down with nothing to restore</td></tr>
+    <tr><td>Form delivery</td><td>Checking enquiries actually reach your inbox</td><td>Leads can silently go to spam or nowhere at all</td></tr>
+    <tr><td>Ownership and access</td><td>Admin login, domain and hosting in your name</td><td>You may not be able to change developers or even your own site</td></tr>
+  </tbody>
+</table>
+
+<h2>Hidden costs that show up later</h2>
+<ul>
+  <li><strong>Renewals:</strong> bundled hosting or "maintenance" renewed at a much higher rate, sometimes with no choice because the provider controls the account</li>
+  <li><strong>Paying for every small change,</strong> because you can't edit the site yourself</li>
+  <li><strong>Malware clean-ups,</strong> especially where pirated themes or plugins were used; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a></li>
+  <li><strong>Licences you didn't know about,</strong> when a premium plugin stops updating after the first year</li>
+  <li><strong>A rebuild,</strong> when the site can't be fixed, sped up or extended</li>
+  <li><strong>Lost enquiries,</strong> the cost you never see on an invoice</li>
+</ul>
+
+<h2>Red flags in a very cheap offer</h2>
+<ul>
+  <li>No written scope listing pages, features and what happens after launch</li>
+  <li>The domain registered in the developer's name, not yours</li>
+  <li>"Lifetime free hosting" or unlimited pages for a tiny one-time fee</li>
+  <li>Guaranteed first-page Google rankings</li>
+  <li>No live websites you can open and test on your own phone</li>
+  <li>Vague answers about which theme and plugins will be used, and whether they're licensed</li>
+  <li>Pressure to pay the full amount upfront</li>
+</ul>
+
+<h2>How to get good value on a small budget</h2>
+<ol>
+  <li><strong>Reduce scope, not quality.</strong> Five well-written, fast pages will do more than fifteen thin ones. A single focused landing page can be a sensible start.</li>
+  <li><strong>Use a quality, lightweight theme</strong> rather than paying for a fully custom design.</li>
+  <li><strong>Prepare your own content and photos,</strong> so you're paying for development time, not waiting time.</li>
+  <li><strong>Launch the essentials first</strong> and add a blog, booking or store later.</li>
+  <li><strong>Keep your domain, hosting and admin login in your own name;</strong> the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> covers what to check.</li>
+  <li><strong>Get the scope in writing</strong> and compare like with like; see <a href="/blog/compare-website-quotes/">how to compare website quotes</a>.</li>
+</ol>
+
+<h2>Questions to ask before you pay</h2>
+<ul>
+  <li>Whose name will the domain and hosting be in, and what do they cost to renew?</li>
+  <li>Will I get full administrator access?</li>
+  <li>Which theme and plugins will you use, and are they licensed?</li>
+  <li>Will you test the site on phones and check its speed?</li>
+  <li>What is included after launch, and what does a small change cost?</li>
+  <li>Can I see two or three live sites you've built recently?</li>
+</ul>
+<p>Good answers to these questions matter more than the headline price. For a realistic ballpark before you talk to anyone, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<p>Working with a small budget and want it spent well? See <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to discuss a scope that fits.</p>
+`,
+  },
+  {
+    slug: 'website-refresh-vs-redesign',
+    title: 'Website Refresh vs Redesign: Which Does Your Business Need?',
+    description: 'When updating content, tweaking the design and fixing speed is enough, when a full website redesign is the better investment, and a simple way to decide.',
+    date: '2026-09-28',
+    category: 'Pricing',
+    related: ['website-redesign', 'wordpress-speed-optimization'],
+    body: `
+<p>When a website starts to feel tired, the instinct is often to start again. Sometimes that's right. But many sites only need a refresh: updated content, a few design improvements and some speed work. Choosing the right option saves money and avoids risking rankings you've already earned.</p>
+<p>Here's what each option involves, the signs that point one way or the other, and a simple way to decide.</p>
+
+<h2>What a refresh involves</h2>
+<p>A refresh improves the website you already have. The platform, structure and page addresses (URLs) mostly stay the same. Typical work includes:</p>
+<ul>
+  <li><strong>Content updates:</strong> current services, prices or offers, new photos, recent testimonials and case studies</li>
+  <li><strong>Design tweaks:</strong> a cleaner hero section, updated colours and fonts, better spacing and clearer buttons</li>
+  <li><strong>Conversion fixes:</strong> stronger calls to action, WhatsApp and tap-to-call buttons, shorter forms</li>
+  <li><strong>Speed work:</strong> compressing images, adding caching and removing plugins you no longer use</li>
+  <li><strong>SEO touch-ups:</strong> page titles, descriptions and headings on your key pages</li>
+</ul>
+<p>Because the foundations stay in place, a refresh is usually quicker, cheaper and lower risk.</p>
+
+<h2>What a redesign involves</h2>
+<p>A redesign changes the website more fundamentally. It often means:</p>
+<ul>
+  <li>A new visual design, planned page by page</li>
+  <li>A new structure and navigation, based on how customers look for your services today</li>
+  <li>Rewritten content for key pages</li>
+  <li>A new theme or a rebuild, and sometimes a move to a new platform</li>
+  <li>Changed URLs, which need redirects so you don't lose rankings</li>
+</ul>
+<p>It's a bigger investment of money and time, including your own time for content and feedback, but it fixes problems that tweaks can't reach.</p>
+
+<h2>When a refresh is enough</h2>
+<ul>
+  <li>The structure still makes sense and visitors can find what they need</li>
+  <li>The site runs on a reasonably current, maintained setup that updates safely</li>
+  <li>You or your team can edit it without difficulty</li>
+  <li>It works on phones, even if it could look better</li>
+  <li>The problems are specific: slow pages, dated photos, weak calls to action or old content</li>
+  <li>It already ranks well and brings enquiries, and you don't want to disturb that</li>
+</ul>
+
+<h2>When you need a full redesign</h2>
+<ul>
+  <li>The site was never built for phones, and fixing the layout means rebuilding it anyway</li>
+  <li>It uses an abandoned theme or builder that can't be updated safely</li>
+  <li>It keeps getting hacked or breaking after updates</li>
+  <li>Your business has changed: new services, a rebrand or a different type of customer</li>
+  <li>Visitors get lost because the navigation and page structure no longer fit</li>
+  <li>Heavy code or plugins make it slow in ways that tuning can't fix</li>
+  <li>You need major features, such as online booking or a store, that the current setup can't support well</li>
+</ul>
+<p>For more warning signs, see <a href="/blog/signs-you-need-a-new-website/">signs your business needs a new website</a>.</p>
+
+<h2>A simple way to decide</h2>
+<p>Run a quick check first; the <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> works well. Then answer these questions:</p>
+<table>
+  <thead><tr><th>Question</th><th>If yes</th><th>If no</th></tr></thead>
+  <tbody>
+    <tr><td>Does the site work properly on a phone?</td><td>Refresh</td><td>Redesign</td></tr>
+    <tr><td>Can WordPress, the theme and plugins be updated safely?</td><td>Refresh</td><td>Redesign</td></tr>
+    <tr><td>Does the menu still match what you sell?</td><td>Refresh</td><td>Redesign</td></tr>
+    <tr><td>Can you edit content yourself?</td><td>Refresh</td><td>Redesign</td></tr>
+    <tr><td>Can speed be improved without rebuilding pages?</td><td>Refresh</td><td>Redesign</td></tr>
+    <tr><td>Does the site already bring steady enquiries or rankings?</td><td>Refresh, carefully</td><td>Either</td></tr>
+  </tbody>
+</table>
+<p>If most answers point to a refresh, start there. If two or more core questions point to a redesign, patching the old site is likely to cost more over time than replacing it.</p>
+
+<h2>The middle ground: refresh now, redesign in phases</h2>
+<p>You don't always have to choose one or the other. A common approach is to refresh the pages that matter most, such as the homepage, top services and contact page, and plan a fuller redesign in stages as budget allows. This gets improvements live sooner and spreads the cost. See <a href="/blog/redesign-website-tight-budget/">how to redesign on a tight budget</a> for how to phase the work.</p>
+
+<h2>Protect what already works</h2>
+<p>Whichever you choose, a few steps keep the change from backfiring:</p>
+<ol>
+  <li>Take a full backup and record current traffic, rankings and enquiries as a baseline</li>
+  <li>Make changes on a staging copy, not the live site</li>
+  <li>Keep URLs the same where possible, and redirect any that change</li>
+  <li>Keep the content that already ranks, and improve it rather than deleting it</li>
+  <li>Compare results against your baseline for a few weeks after launch</li>
+</ol>
+<p>For the details, see <a href="/blog/redesign-website-without-losing-rankings/">how to redesign without losing Google rankings</a>.</p>
+
+<p>Not sure which your site needs? See <a href="/website-redesign/">website redesign</a>, or <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> if slow pages are the main problem.</p>
 `,
   },
 ];

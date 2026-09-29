@@ -2652,5 +2652,47 @@
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
     <description>.in, .com or .co.in for an Indian business? How your audience, name availability, trust, typing habits and Google country targeting should shape the choice.</description>
   </item>
+  <item>
+    <title>Mixed Content Warnings After Moving WordPress to HTTPS: How to Fix Them</title>
+    <link>https://samverse.space/blog/mixed-content-warnings-fix/</link>
+    <guid>https://samverse.space/blog/mixed-content-warnings-fix/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Padlock missing after moving WordPress to HTTPS? How to find insecure http images and scripts, run a safe search-replace, and fix CDN and theme settings.</description>
+  </item>
+  <item>
+    <title>ERR_TOO_MANY_REDIRECTS on WordPress: Causes and How to Fix It</title>
+    <link>https://samverse.space/blog/too-many-redirects-error-fix/</link>
+    <guid>https://samverse.space/blog/too-many-redirects-error-fix/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Site &quot;redirected you too many times&quot;? How to fix redirect loops in WordPress: site URL settings, CDN flexible SSL, .htaccess, redirect plugins and cookies.</description>
+  </item>
+  <item>
+    <title>WordPress Not Sending Emails? How to Fix It With SMTP</title>
+    <link>https://samverse.space/blog/wordpress-not-sending-emails-smtp/</link>
+    <guid>https://samverse.space/blog/wordpress-not-sending-emails-smtp/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Password resets, WooCommerce order emails or form enquiries not arriving? Why WordPress emails fail and how to fix them with SMTP or a transactional service.</description>
+  </item>
+  <item>
+    <title>How Much Does an E-commerce Website Cost in India? What Affects the Price</title>
+    <link>https://samverse.space/blog/ecommerce-website-cost-india/</link>
+    <guid>https://samverse.space/blog/ecommerce-website-cost-india/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What drives the cost of an online store in India: platform, products, design, payments, shipping, integrations and yearly running costs, explained simply.</description>
+  </item>
+  <item>
+    <title>The Real Risks of Very Cheap Websites (and How to Get Good Value on a Small Budget)</title>
+    <link>https://samverse.space/blog/cheap-website-risks/</link>
+    <guid>https://samverse.space/blog/cheap-website-risks/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What very cheap websites usually include and leave out, the hidden costs that appear later, red flags to watch for, and how to get value on a small budget.</description>
+  </item>
+  <item>
+    <title>Website Refresh vs Redesign: Which Does Your Business Need?</title>
+    <link>https://samverse.space/blog/website-refresh-vs-redesign/</link>
+    <guid>https://samverse.space/blog/website-refresh-vs-redesign/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>When updating content, tweaking the design and fixing speed is enough, when a full website redesign is the better investment, and a simple way to decide.</description>
+  </item>
 </channel>
 </rss>

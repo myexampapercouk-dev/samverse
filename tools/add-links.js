@@ -439,6 +439,14 @@ const LINKS = [
   ['wordpress-vs-wix-vs-shopify', '<h2>Already on Wix or another platform?</h2>', '<p>Also weighing up Squarespace? See <a href="/blog/wordpress-vs-squarespace/">WordPress vs Squarespace</a> for ownership, long-term costs and Indian payments.</p>\n\n'],
   ['hire-developer-vs-diy-website', '<h2>Hiring a developer makes sense when...</h2>', '<p>Thinking of a free builder like Google Sites? Here\'s <a href="/blog/wordpress-vs-google-sites/">when a free website is enough, and when it isn\'t</a>.</p>\n\n'],
   ['choose-domain-name-business', '<h2>Check its history</h2>', '<p>Still undecided on the extension? See <a href="/blog/in-vs-com-domain/">.in vs .com for Indian businesses</a>.</p>\n\n'],
+  // Agent 26
+  ['ssl-certificate-errors-fix', '<h2>Warnings after moving hosts or domains</h2>', '<p>For a step-by-step clean-up, see <a href="/blog/mixed-content-warnings-fix/">how to fix mixed content warnings in WordPress</a>.</p>\n\n'],
+  ['301-vs-302-redirects', '<h2>Setting up redirects on WordPress</h2>', '<p>If a loop has taken your whole site offline with a "too many redirects" error, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS in WordPress</a>.</p>\n\n'],
+  ['wordpress-form-plugins-compared', '<h2>Spam protection</h2>', '<p>For a step-by-step fix, see <a href="/blog/wordpress-not-sending-emails-smtp/">why WordPress doesn\'t send emails and how to set up SMTP</a>.</p>\n\n'],
+  // Agent 29
+  ['wordpress-website-cost-india', '<h2>What makes a website cost more?</h2>', '<p>Planning an online store? See <a href="/blog/ecommerce-website-cost-india/">what affects the cost of an e-commerce website in India</a> for platform, payment, shipping and running-cost factors.</p>\n\n'],
+  ['compare-website-quotes', '<h2>Think in total cost</h2>', '<p>Tempted by the lowest quote? See <a href="/blog/cheap-website-risks/">what very cheap websites usually leave out</a> before you decide.</p>\n\n'],
+  ['redesign-website-tight-budget', '<h2>Phase the redesign</h2>', '<p>Sometimes these improvements are all your site needs; see <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a> to decide.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
