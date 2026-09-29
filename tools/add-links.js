@@ -387,6 +387,14 @@ const LINKS = [
   ['image-optimization-wordpress', '<h2>Special cases</h2>', '<p>Alt text and file names are only part of getting your photos found in search; see the <a href="/blog/image-seo-guide/">image SEO guide</a> for Google Images and Google Lens.</p>\n\n'],
   ['faq-page-seo', '<h2>Where to put FAQs</h2>', '<p>Answer-first writing also suits people who ask their phones questions out loud; see <a href="/blog/voice-search-local-seo/">voice search for local businesses</a>.</p>\n\n'],
   ['google-business-profile-checklist', '<h2>Connect it to your website</h2>', '<p>For post ideas, offers, events and a simple weekly routine, see <a href="/blog/google-business-profile-posts/">how to use Google Business Profile posts and photos</a>.</p>\n\n'],
+  // Agent 13
+  ['google-algorithm-updates-small-business', '<h2>How to recover</h2>', '<p>These questions sum up what Google calls E-E-A-T; see <a href="/blog/eeat-explained-small-business/">E-E-A-T explained for small business websites</a> for practical ways to show it.</p>\n\n'],
+  ['get-more-enquiries-from-your-website', '<h2>Guide visitors to act</h2>', '<p>Reviews and photos are only part of the picture. For contact details, credentials, policies and security too, work through the <a href="/blog/website-trust-signals-checklist/">website trust signals checklist</a>.</p>\n\n'],
+  ['ethical-link-building-small-business', '<h2>Be patient and consistent</h2>', '<p>If links like these were built for your site in the past, see <a href="/blog/backlink-audit-disavow/">how to audit your backlinks and when to use the disavow tool</a>.</p>\n\n'],
+  // Agent 14
+  ['keyword-research-small-business', '<h2>Understand search intent</h2>', '<p>For a step-by-step method that also covers Business Profiles, ranking pages and links, see <a href="/blog/competitor-seo-analysis/">how to analyse your competitors\' SEO</a>.</p>\n\n'],
+  ['website-for-home-services', '<h2>Pricing guidance</h2>', '<p>Working from home or a van rather than a shop? See <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> for the right Business Profile settings and when area pages are worth building.</p>\n\n'],
+  ['local-landing-pages-without-doorway-pages', '<h2>What makes a location page genuinely useful</h2>', '<p>If your business has several branches or clinics, see <a href="/blog/multi-location-business-website/">how to structure a multi-location business website</a>, including Business Profiles and schema for each branch.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

@@ -605,6 +605,8 @@ module.exports = [
 
 <p>If your form gets no submissions at all, check that it isn't broken. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a>.</p>
 
+<p>Reviews and photos are only part of the picture. For contact details, credentials, policies and security too, work through the <a href="/blog/website-trust-signals-checklist/">website trust signals checklist</a>.</p>
+
 <h2>Guide visitors to act</h2>
 <h3>10. Create a page for each service</h3>
 <p>A dedicated page for each service lets you speak directly to that customer's needs and rank for those specific searches.</p>
@@ -6163,6 +6165,8 @@ module.exports = [
   <li>You have <strong>something specific</strong> to say about that location</li>
 </ul>
 
+<p>If your business has several branches or clinics, see <a href="/blog/multi-location-business-website/">how to structure a multi-location business website</a>, including Business Profiles and schema for each branch.</p>
+
 <h2>What makes a location page genuinely useful</h2>
 <ol>
   <li><strong>Local details:</strong> branch address, map, hours, local phone and team</li>
@@ -7156,6 +7160,8 @@ module.exports = [
 
 <h2>Areas served</h2>
 <p>List the areas and localities you cover. Create separate location pages only where you have genuine local detail; see <a href="/blog/local-landing-pages-without-doorway-pages/">local pages without doorway pages</a>.</p>
+
+<p>Working from home or a van rather than a shop? See <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> for the right Business Profile settings and when area pages are worth building.</p>
 
 <h2>Pricing guidance</h2>
 <p>Visiting charges and "starting from" prices for common jobs reduce price-shopping calls and build trust. Be clear about what's extra (parts, gas refill).</p>
@@ -9542,6 +9548,8 @@ module.exports = [
   <li>Keyword-stuffed anchor text everywhere</li>
 </ul>
 <p>These risk penalties and waste money; see <a href="/blog/seo-red-flags-scams/">SEO red flags</a>.</p>
+
+<p>If links like these were built for your site in the past, see <a href="/blog/backlink-audit-disavow/">how to audit your backlinks and when to use the disavow tool</a>.</p>
 
 <h2>Be patient and consistent</h2>
 <p>A handful of relevant, trusted links earned over months beats hundreds of low-quality ones. Combine link building with strong content and technical SEO; see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
@@ -12952,6 +12960,8 @@ module.exports = [
 <h2>Look at what competitors rank for</h2>
 <p>Search your main terms and study the pages that rank: what topics do they cover, and what pages do they have that you don't?</p>
 
+<p>For a step-by-step method that also covers Business Profiles, ranking pages and links, see <a href="/blog/competitor-seo-analysis/">how to analyse your competitors' SEO</a>.</p>
+
 <h2>Understand search intent</h2>
 <p>Each keyword signals what the searcher wants: information, a comparison or a provider to hire. The type of page you create must match; see <a href="/blog/search-intent-explained/">search intent explained</a>.</p>
 
@@ -13181,6 +13191,8 @@ module.exports = [
   <li>Is it better than other pages ranking for the same search?</li>
   <li>Was it created mainly for people, or mainly to rank?</li>
 </ul>
+
+<p>These questions sum up what Google calls E-E-A-T; see <a href="/blog/eeat-explained-small-business/">E-E-A-T explained for small business websites</a> for practical ways to show it.</p>
 
 <h2>How to recover</h2>
 <ul>
@@ -20739,6 +20751,564 @@ Template: astra
 <p>This needn't take long. Many businesses add a trusted staff member as a manager so the routine doesn't depend on the owner; just make sure you stay the primary owner of the profile.</p>
 
 <p>Your profile works best when the website it links to turns visitors into enquiries. See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or for food businesses, <a href="/website-for-restaurants/">websites for restaurants and cafés</a>.</p>
+`,
+  },
+  {
+    slug: 'eeat-explained-small-business',
+    seoTitle: 'E-E-A-T Explained for Small Business Websites',
+    title: 'E-E-A-T Explained in Plain English for Small Business Websites',
+    description: 'What E-E-A-T (experience, expertise, authoritativeness and trust) really means, what it isn\'t, and practical ways a small business website can show it.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>If you've read anything about SEO recently, you've probably seen "E-E-A-T" mentioned as if it were a secret ranking formula. It isn't a formula, and it isn't a secret. It's Google's shorthand for the qualities that make content worth trusting. Here's what it means in plain English, and the practical things a small business website can do to show it.</p>
+
+<h2>What E-E-A-T stands for</h2>
+<table>
+  <thead>
+    <tr><th>Letter</th><th>Meaning</th><th>Small business example</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Experience</td><td>First-hand experience of the topic</td><td>A pest control company showing photos and notes from jobs it actually did</td></tr>
+    <tr><td>Expertise</td><td>Knowledge or skill in the subject</td><td>A CA explaining a tax change, with their qualification shown</td></tr>
+    <tr><td>Authoritativeness</td><td>Being a recognised go-to source</td><td>A manufacturer listed by its industry association and mentioned in trade publications</td></tr>
+    <tr><td>Trust</td><td>Being accurate, honest, safe and reliable</td><td>Clear contact details, genuine reviews and honest claims</td></tr>
+  </tbody>
+</table>
+<p>Google added the first "E", for Experience, in late 2022. It describes trust as the most important of the four; the other three mostly exist to support it.</p>
+
+<h2>What E-E-A-T is (and isn't)</h2>
+<p>E-E-A-T comes from Google's Search Quality Rater Guidelines, a document used by people Google hires to assess the quality of search results. Their ratings help Google judge whether its systems are working well. They don't directly move your pages up or down.</p>
+<ul>
+  <li>It is <strong>not</strong> a single score Google calculates for your site</li>
+  <li>There is <strong>no</strong> plugin or setting that "adds" E-E-A-T</li>
+  <li>It <strong>is</strong> a useful description of what Google's ranking systems try to reward: helpful, reliable content made for people</li>
+</ul>
+<p>So treat it as a checklist for being the kind of business, and website, that people and search engines can trust. It lines up closely with <a href="/blog/google-algorithm-updates-small-business/">what Google rewards after core updates</a>.</p>
+
+<h2>Why it matters more for some businesses</h2>
+<p>Google holds some topics to a higher standard. Its guidelines call them "Your Money or Your Life" (YMYL) topics: subjects that could affect someone's health, finances, safety or legal situation. If your website is for a clinic, hospital, pharmacy, financial advisor, insurance agent, lawyer, CA or immigration consultant, E-E-A-T carries extra weight. A plumber's post about fixing a dripping tap needs less proof than a clinic's page about treatment options.</p>
+<p>That doesn't mean other businesses can ignore it. A customer choosing a caterer or a packers and movers company is still asking, "Can I trust these people?"</p>
+
+<h2>Show experience: prove you've done the work</h2>
+<p>Experience is often the easiest quality for a genuine small business to show, because you have it and large content websites often don't.</p>
+<ul>
+  <li>Use real photos of your projects, premises, products and team instead of stock images</li>
+  <li>Write case studies with the actual problem, what you did and what happened; see <a href="/blog/write-case-studies-business-website/">how to write case studies</a></li>
+  <li>Add details only a practitioner would know: what usually goes wrong, what customers in your city ask, what you'd do differently</li>
+  <li>In blog posts, say what you've seen first-hand, for example "In our clinic, patients most often ask..."</li>
+</ul>
+
+<h2>Show expertise: put names and qualifications on your content</h2>
+<ul>
+  <li>Add an author name to blog posts and guides, with a short bio and relevant qualifications</li>
+  <li>Create a simple author or team page for each person who writes or reviews content</li>
+  <li>For medical, legal or financial content, have a qualified person write or review it, and say so on the page</li>
+  <li>Show registrations, certifications and memberships that are current and verifiable, following any advertising rules your professional body sets</li>
+  <li>Go deeper on service pages: explain your process, options, timelines and what affects cost, instead of three lines of generic text</li>
+</ul>
+<p>If you use AI tools to draft content, someone with real expertise still needs to check it and add to it; see <a href="/blog/ai-tools-website-content-responsibly/">using AI tools for content responsibly</a>.</p>
+
+<h2>Show authority: be known beyond your own website</h2>
+<p>Authority comes mostly from what others say about you, so it builds slowly. Useful signals for a small business include:</p>
+<ul>
+  <li>A complete Google Business Profile with genuine reviews and thoughtful replies</li>
+  <li>Listings with industry associations, chambers of commerce and trade bodies you belong to</li>
+  <li>Mentions and links from suppliers, partners, local news sites or industry publications</li>
+  <li>Talks, interviews, podcasts or guest articles where you share real knowledge</li>
+  <li>The same business name, address and phone number everywhere you're listed</li>
+</ul>
+<p>Stay focused on your field. Being a respected source on a few topics beats writing a little about everything.</p>
+
+<h2>Show trust: the part that matters most</h2>
+<p>Trust ties everything together. On a small business website, it usually comes down to these basics:</p>
+<ul>
+  <li><strong>Who you are:</strong> an About page with real names and faces; see <a href="/blog/write-about-page-that-builds-trust/">how to write an About page that builds trust</a></li>
+  <li><strong>How to reach you:</strong> full address, phone, WhatsApp and a business email on your own domain</li>
+  <li><strong>Honest claims:</strong> no "No. 1 in India" or "guaranteed results" unless you can genuinely back it up</li>
+  <li><strong>Accurate, current content:</strong> keep services, prices and team details up to date, and show a "last updated" date on guides</li>
+  <li><strong>Clear policies:</strong> a privacy policy, plus refund, cancellation and shipping terms if you take payments</li>
+  <li><strong>A secure, working site:</strong> HTTPS, no broken forms, no spammy pop-ups and no signs of hacking</li>
+</ul>
+<p>Structured data such as Organization or Person schema can help Google connect your website to your business and your people, but it only describes trust you already have. It can't create it.</p>
+
+<h2>Mistakes that backfire</h2>
+<ul>
+  <li><strong>Fake reviews or testimonials:</strong> they break Google's policies and destroy trust when customers spot them</li>
+  <li><strong>Invented authors</strong> with stock photos and made-up credentials</li>
+  <li><strong>Stock photos presented as your team</strong> or your work</li>
+  <li><strong>Exaggerated numbers</strong> like "thousands of happy clients" that you can't support</li>
+  <li><strong>Mass-produced content</strong> published without anyone knowledgeable checking it</li>
+  <li><strong>Hiding the business behind the website:</strong> no address, no names, only a form</li>
+</ul>
+<p>None of this is quick, and that's the point. E-E-A-T rewards real businesses for making their reality visible. Start with your About page, your most important service pages and your Google Business Profile, then improve one page at a time.</p>
+
+<p>Want help making your expertise visible to customers and Google? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or consider a <a href="/website-redesign/">website redesign</a> if your current site hides who you are.</p>
+`,
+  },
+  {
+    slug: 'website-trust-signals-checklist',
+    seoTitle: 'Website Trust Signals Checklist for Small Businesses',
+    title: 'Website Trust Signals Checklist: What Makes Visitors Confident Enough to Enquire',
+    description: 'A practical checklist of website trust signals, from contact details and real photos to reviews, policies, security and credentials, that help visitors enquire.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>Before someone fills in your form or taps the WhatsApp button, they quietly ask one question: "Are these people real, and can I trust them?" Most visitors never tell you why they left, and missing trust signals are a common reason. Use this checklist to go through your website the way a cautious first-time customer would.</p>
+
+<h2>Contact details that prove you're a real business</h2>
+<p>Hidden or incomplete contact details are one of the quickest ways to lose a careful visitor. Check that your site shows:</p>
+<ul>
+  <li>A full business address, with a map on the contact page, matching your Google Business Profile</li>
+  <li>A phone number that someone actually answers during business hours, tappable on mobile</li>
+  <li>A WhatsApp button linked to your business number, not a staff member's personal number</li>
+  <li>An email address on your own domain rather than a free Gmail or Yahoo address</li>
+  <li>Your registered business name, and your GSTIN if you're registered and sell to other businesses</li>
+  <li>Opening hours, and how quickly you usually reply</li>
+</ul>
+<p>Put the phone number and WhatsApp button in the header or footer of every page, not only on the contact page.</p>
+
+<h2>Real people and real photos</h2>
+<p>People buy from people. Stock photos of smiling models in suits are easy to recognise, and they make a genuine business look like a template.</p>
+<ul>
+  <li>Photos of the owner and team, with names and roles</li>
+  <li>Photos of your office, shop, clinic, factory or vehicles</li>
+  <li>Photos of real projects, products and deliveries; phone photos are fine if they're sharp and well lit</li>
+  <li>A short founder message or video explaining who you are and how you work</li>
+  <li>An About page with your story and experience; see <a href="/blog/write-about-page-that-builds-trust/">how to write an About page that builds trust</a></li>
+</ul>
+
+<h2>Reviews, testimonials and proof of work</h2>
+<ul>
+  <li>Testimonials with a full name (or first name and city), a photo or company name, and a specific detail about what you did</li>
+  <li>Your Google rating and a link to your Google reviews, kept current</li>
+  <li>Case studies or project galleries showing what you actually delivered</li>
+  <li>Client logos, but only with permission and only for clients you've genuinely worked with</li>
+  <li>Polite replies to reviews, including negative ones, which show you take feedback seriously</li>
+</ul>
+<p>Place proof close to the point of decision: next to the enquiry form, on service pages and near prices. For more, see <a href="/blog/collect-display-customer-testimonials/">how to collect and display testimonials</a>.</p>
+
+<h2>Credentials, registrations and memberships</h2>
+<p>Credentials reassure visitors that you're qualified and accountable. Show the ones that genuinely apply to you:</p>
+<ul>
+  <li>Professional qualifications and registrations for doctors, CAs, architects or engineers, shown in the way your professional body's rules allow</li>
+  <li>Licence or registration numbers customers expect in your industry, such as an FSSAI licence for food businesses or RERA numbers for real estate projects; check the current display rules for your sector</li>
+  <li>Certifications such as ISO, and authorised dealer or partner status from brands you work with</li>
+  <li>Memberships of industry associations or chambers of commerce</li>
+  <li>Years in business and number of projects, but only numbers you can back up</li>
+</ul>
+<p>Make credentials verifiable. A registration number that a visitor can check with the issuing body is far more convincing than a badge image anyone could copy.</p>
+
+<h2>Clear policies and honest terms</h2>
+<p>Policies feel boring, but visitors look for them as soon as money is involved.</p>
+<ul>
+  <li>A privacy policy explaining what you collect through forms, analytics and chat; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics</a></li>
+  <li>Terms of service or terms of sale</li>
+  <li>Refund, cancellation and return policies in plain language</li>
+  <li>Delivery timelines and shipping charges, if you sell products</li>
+  <li>How warranties, AMCs or guarantees work, including what they don't cover</li>
+</ul>
+<p>If you sell online, India's consumer protection rules for e-commerce generally expect sellers to show details such as their legal name, address, customer care contact and grievance process. Rules change, so confirm the current requirements with your CA or lawyer.</p>
+
+<h2>Security and a website that works</h2>
+<ul>
+  <li>HTTPS on every page, with no "Not secure" warning in the browser; see <a href="/blog/ssl-certificate-errors-fix/">fixing SSL certificate warnings</a></li>
+  <li>Payments through a recognised payment gateway, and UPI details that show your business name rather than a personal name</li>
+  <li>Forms that work, confirm the submission and lead to a thank-you page</li>
+  <li>No broken links, missing images or pages that have said "coming soon" for months</li>
+  <li>Pages that load quickly on mobile data</li>
+  <li>No spammy pop-ups, strange redirects or unfamiliar links, which can be signs of a hacked site</li>
+</ul>
+
+<h2>Small details that quietly break trust</h2>
+<ul>
+  <li>A footer copyright year that's several years old</li>
+  <li>Last Diwali's offer banner still on the homepage</li>
+  <li>Spelling mistakes, placeholder text or unfinished pages</li>
+  <li>Claims like "No. 1 in India" or "100% guaranteed" without any proof</li>
+  <li>Fake urgency, such as countdown timers that reset on every visit</li>
+  <li>Different phone numbers or addresses on different pages and listings</li>
+  <li>Social media icons that lead to accounts with no recent posts</li>
+  <li>A blog whose latest post is years old</li>
+</ul>
+<p>None of these is dramatic on its own, but together they make visitors wonder whether the business is still running.</p>
+
+<h2>Check your own site in 15 minutes</h2>
+<ol>
+  <li>Open your website on your phone, on mobile data, as if you'd never heard of your business</li>
+  <li>Within a few seconds, can you tell who runs it, where they are and how to contact them?</li>
+  <li>Find one review, one real photo and one credential without searching hard</li>
+  <li>Submit the form and tap the WhatsApp button, then check that the enquiry actually arrives</li>
+  <li>Look for the policies a customer would want to read before paying</li>
+  <li>Ask a recent customer what, if anything, made them hesitate</li>
+</ol>
+<p>Fix the gaps on your homepage, contact page and main service pages first, because those are the pages most visitors see before deciding whether to enquire.</p>
+
+<p>If your website needs to earn more trust, I can help. See <a href="/landing-page-design/">landing page design</a> for pages built around enquiries, or <a href="/wordpress-website-development/">WordPress website development</a> for a complete site that shows who you really are.</p>
+`,
+  },
+  {
+    slug: 'backlink-audit-disavow',
+    seoTitle: 'Backlink Audit and Disavow Guide for Small Businesses',
+    title: 'Backlink Audits and the Disavow Tool: When "Toxic" Links Really Matter',
+    description: 'How to audit your backlinks using Google Search Console, why "toxic link" scores rarely matter, and the few cases where Google\'s disavow tool is worth using.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>Every so often, a business owner receives an alarming email or tool report: "Your site has hundreds of toxic backlinks. Disavow them now or lose your rankings." Usually there's nothing to worry about. Here's how to look at your backlinks sensibly, when Google's disavow tool is genuinely useful, and which myths you can safely ignore.</p>
+
+<h2>What a backlink audit is</h2>
+<p>A backlink is a link from another website to yours. A backlink audit means reviewing those links to understand who links to you, which of your pages attract links, and whether any links could cause a problem.</p>
+<p>For most small businesses, the main value isn't finding "bad" links. It's learning which content earns links, spotting good links to pages you've moved or deleted, and checking for traces of poor SEO work done in the past.</p>
+
+<h2>When an audit is worth doing</h2>
+<ul>
+  <li>Search Console shows a manual action for unnatural links to your site</li>
+  <li>You, or an earlier SEO provider, bought links, joined link schemes or ordered "backlink packages"; see <a href="/blog/seo-red-flags-scams/">SEO red flags and scams</a></li>
+  <li>Traffic fell sharply and you've already ruled out tracking, technical and content causes; see <a href="/blog/website-traffic-dropped/">what to check when traffic drops</a></li>
+  <li>Your site was hacked and spam pages were created on it</li>
+  <li>You're buying an existing website or domain and want to know its history</li>
+</ul>
+<p>If none of these apply, a quick look once or twice a year is plenty.</p>
+
+<h2>How to audit your backlinks, step by step</h2>
+<ol>
+  <li><strong>Start with Google Search Console.</strong> The Links report shows your top linking sites, top linked pages and top linking text. It's free and reflects links Google knows about; see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</li>
+  <li><strong>Export the list.</strong> The Links report lets you export external links to a spreadsheet.</li>
+  <li><strong>Review by domain, not by URL.</strong> One site can link to you hundreds of times from a sidebar or footer, so judge the website as a whole.</li>
+  <li><strong>Use a paid tool only if you need more.</strong> Tools such as Ahrefs, Semrush and Moz keep their own link databases and may show links Search Console doesn't; check current plans. Treat their scores as rough guides, not as Google's view.</li>
+  <li><strong>Sort each domain into a category</strong> using the table below, and act only where action is needed.</li>
+</ol>
+<table>
+  <thead>
+    <tr><th>Type of link</th><th>Examples</th><th>What to do</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Good</td><td>Suppliers, associations, local news, industry sites, genuine directories</td><td>Nothing, except building more relationships like these</td></tr>
+    <tr><td>Harmless noise</td><td>Scraper sites, auto-generated "website worth" pages, random foreign directories</td><td>Ignore them; Google generally ignores them too</td></tr>
+    <tr><td>Broken</td><td>Good sites linking to pages that no longer exist on your site</td><td>Redirect the old URL to the right page, or ask them to update the link</td></tr>
+    <tr><td>Unnatural</td><td>Paid links, link networks, excessive exchanges, keyword-stuffed anchors someone arranged</td><td>Try to get them removed; consider disavowing if you can't</td></tr>
+  </tbody>
+</table>
+
+<h2>The "toxic links" myth</h2>
+<p>Many SEO tools label links as "toxic" and give your site a risk score. Those scores are calculated by the tools themselves, not by Google, and they often flag links that are simply low quality or unusual rather than harmful.</p>
+<ul>
+  <li><strong>Most sites don't need to disavow anything.</strong> Google's own help pages say it can usually work out which links to trust without your help.</li>
+  <li><strong>Every site collects junk links over time.</strong> Scraper and spam sites copy content and links automatically. It doesn't mean anyone is attacking you.</li>
+  <li><strong>Third-party metrics</strong> such as authority or spam scores are not something Google uses.</li>
+  <li><strong>"Negative SEO"</strong>, where a competitor points spam links at your site, is something Google says its systems are designed to cope with. Check the usual causes of a ranking drop before blaming it.</li>
+</ul>
+<p>Be cautious about paying for monthly "toxic link removal". It often changes nothing, and disavowing good links by mistake can harm your site.</p>
+
+<h2>When the disavow tool actually helps</h2>
+<p>The disavow tool asks Google to ignore specific links when assessing your site. Google's guidance is to use it only when both of these are true:</p>
+<ol>
+  <li>You have a considerable number of spammy, artificial or low-quality links pointing to your site</li>
+  <li>Those links have caused a manual action, or are likely to</li>
+</ol>
+<p>In practice, that usually means a site with a history of paid links or link schemes, often arranged by an earlier SEO provider. If you've never bought or arranged links, you almost certainly don't need it.</p>
+
+<h2>How to disavow safely</h2>
+<ul>
+  <li>First try to get unnatural links removed by contacting the site owners, and keep a record of your requests</li>
+  <li>Create a plain text (.txt) file with one entry per line: either a full URL, or <code>domain:example.com</code> to cover a whole site</li>
+  <li>Lines starting with # are comments, useful for noting why you disavowed something</li>
+  <li>Upload the file through Google's disavow links tool for the correct Search Console property</li>
+  <li>Each upload replaces the previous file, so add new entries to your existing list rather than uploading only the new ones</li>
+  <li>Never disavow links from genuine websites just because a tool flagged them</li>
+</ul>
+<p>Google applies the file as it recrawls the web, so any effect can take weeks or longer.</p>
+
+<h2>If you have a manual action for unnatural links</h2>
+<ol>
+  <li>Read the notice under Security and Manual Actions in Search Console; it shows whether the action affects the whole site or only some pages</li>
+  <li>Identify the unnatural links, especially paid, exchanged or network links</li>
+  <li>Ask site owners to remove them, or to mark paid links with nofollow or sponsored attributes</li>
+  <li>Disavow the links you couldn't get removed</li>
+  <li>Submit a reconsideration request explaining what happened, what you removed and what you disavowed</li>
+</ol>
+<p>Be honest in the request. If an agency built the links, say so, and explain how you've made sure it won't happen again.</p>
+
+<h2>A better use of your time</h2>
+<p>For most small businesses, the links that matter are the ones you earn next, not the junk you already have. Build relationships with suppliers, associations and local media, and publish content worth linking to; see <a href="/blog/ethical-link-building-small-business/">ethical link building for small businesses</a>. Redirect moved pages so existing links still work, keep your site secure so it can't be used for spam, and let Google ignore the noise.</p>
+
+<p>Worried about links built by a previous SEO provider? See <a href="/wordpress-seo-services/">WordPress SEO services</a> for help reviewing your links and fixing what actually matters.</p>
+`,
+  },
+  {
+    slug: 'competitor-seo-analysis',
+    seoTitle: 'Competitor SEO Analysis for Small Businesses',
+    title: 'How to Analyse Your Competitors\' SEO and Find Gaps You Can Win',
+    description: 'A step-by-step way for small businesses to study competitors\' websites, rankings, Google profiles and links, spot the gaps, and turn them into an action plan.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-redesign'],
+    body: `
+<p>Every search you want to win is already being won by someone. Studying those businesses (the pages they have, how their Google Business Profile looks, why Google trusts them) is one of the quickest ways to work out what your own website is missing. You don't need to copy anyone. You need to see the gaps clearly and decide which ones you can realistically close.</p>
+
+<h2>Step 1: Find your real search competitors</h2>
+<p>Your search competitors aren't always the businesses you compete with offline. The shop down the road may have no website at all, while a company from the next city takes the top spots.</p>
+<ol>
+  <li>List 5 to 10 searches your customers actually use, such as "{service} in {city}", "{service} near me" and "{service} cost". If you haven't done this yet, start with <a href="/blog/keyword-research-small-business/">keyword research for small businesses</a>.</li>
+  <li>Search each one in a private window on your phone, from your own area. Results change with location, so this is close to what nearby customers see.</li>
+  <li>Note who appears in the map pack (the businesses shown with the map) and who appears in the normal results below it.</li>
+  <li>Set aside directories, marketplaces and news sites, and pick the 3 to 5 businesses that keep appearing.</li>
+</ol>
+<p>Keep a simple spreadsheet: one row per competitor, one column for each thing you check below.</p>
+
+<h2>Step 2: Compare Google Business Profiles</h2>
+<p>For local searches, the map pack often matters more than the website. Open each competitor's profile and note:</p>
+<ul>
+  <li><strong>Category:</strong> the primary category shown under their name, compared with yours</li>
+  <li><strong>Reviews:</strong> how many, how recent, and whether the owner replies</li>
+  <li><strong>Photos:</strong> real work, team and premises, or just a logo and stock images</li>
+  <li><strong>Completeness:</strong> services listed, hours, description and regular posts</li>
+</ul>
+<p>If the three businesses above you all have a more specific category and a steady stream of recent reviews, you've found your first job, and it has nothing to do with your website.</p>
+
+<h2>Step 3: Map their website structure</h2>
+<p>Open each competitor's site and look at its pages, not its design. The questions that matter:</p>
+<ul>
+  <li>Does each main service have its own page, or is everything on one "Services" page?</li>
+  <li>Do they have pages for areas or branches you also serve?</li>
+  <li>Do they answer common questions about pricing factors, process, timelines and guarantees?</li>
+  <li>Do they show proof: project photos, case studies, testimonials, certifications?</li>
+  <li>How easy is it to contact them on a phone: call button, WhatsApp, short form?</li>
+</ul>
+<p>To see which of their pages Google has indexed, search <strong>site:theirdomain.com</strong>. The result count is only a rough estimate, but scrolling through shows which pages they've built and how they've titled them.</p>
+
+<h2>Step 4: Study the pages that actually rank</h2>
+<p>For each target search, open the page that ranks, not just the homepage, and compare it honestly with your equivalent page.</p>
+<table>
+  <thead><tr><th>Check</th><th>What to compare</th></tr></thead>
+  <tbody>
+    <tr><td>Title and description</td><td>How each appears in the results, and which gives a clearer reason to click</td></tr>
+    <tr><td>Page type</td><td>Is the ranking page a service page, a price guide, a list or an article? Google is showing you what searchers want</td></tr>
+    <tr><td>Depth</td><td>Do they explain the service, process, what affects cost and common questions, while yours has two paragraphs?</td></tr>
+    <tr><td>Proof</td><td>Real photos, reviews and examples of work near the searcher</td></tr>
+    <tr><td>Speed and mobile</td><td>Does their page load faster and feel easier to use on a phone?</td></tr>
+  </tbody>
+</table>
+<p>Speed is easy to compare because free tools work on any public page; see <a href="/blog/website-speed-test-tools-explained/">website speed test tools explained</a>. If every top result is a detailed service page and yours is thin, the gap is content, not a secret trick. <a href="/blog/write-service-pages-that-convert/">Writing service pages that rank and convert</a> covers how to close it.</p>
+
+<h2>Step 5: Find the content gaps</h2>
+<p>A content gap is a topic customers search for that competitors cover and you don't, or that nobody covers well yet. Look for:</p>
+<ul>
+  <li>Services or sub-services they have separate pages for</li>
+  <li>Cost, comparison and "how to choose" guides</li>
+  <li>Questions in Google's "People also ask" boxes that no ranking page answers properly</li>
+  <li>Local knowledge you have and they don't: permits, seasonal problems, common issues in your city</li>
+</ul>
+<p>Paid tools such as Semrush and Ahrefs estimate which keywords a competitor ranks for, which speeds this up. Treat their numbers as estimates, check current plans before paying, and remember that a small local business can often manage with Google itself and some patience.</p>
+
+<h2>Step 6: See who links to them and mentions them</h2>
+<p>Links and mentions from other websites are part of how Google judges trust. Search each competitor's business name in quotes and note where they appear:</p>
+<ul>
+  <li>Industry associations and trade bodies</li>
+  <li>Local news, events and sponsorships</li>
+  <li>Supplier and brand "find a dealer" or "authorised installer" pages</li>
+  <li>Reputable directories relevant to your industry</li>
+</ul>
+<p>Some of these you can match honestly; paid link schemes and spammy directories you should ignore. See <a href="/blog/ethical-link-building-small-business/">ethical link building for small businesses</a>.</p>
+
+<h2>What not to copy</h2>
+<ul>
+  <li><strong>Their text:</strong> copying is unethical, can breach copyright, and gives Google nothing new</li>
+  <li><strong>Keyword-stuffed names or fake addresses</strong> on Google Maps, which break Google's guidelines and can get a profile suspended</li>
+  <li><strong>Fake reviews or bought links</strong>, however well they seem to work for someone else</li>
+  <li><strong>Every habit of the top result:</strong> a business may rank despite something, not because of it. Years of reviews and reputation explain a lot.</li>
+</ul>
+
+<h2>Turn findings into an action plan</h2>
+<p>Finish with a short list, not a long report. Group the gaps by effort:</p>
+<ol>
+  <li><strong>This week:</strong> Business Profile fixes, clearer page titles, a visible call and WhatsApp button</li>
+  <li><strong>This month:</strong> new or improved service pages that match what ranks</li>
+  <li><strong>Ongoing:</strong> reviews after every job, one genuinely useful article a month, and earning real local mentions</li>
+</ol>
+<p>Repeat the exercise every three to six months. Competitors change their sites, rankings move and new gaps appear.</p>
+
+<p>Want a second pair of eyes? A <a href="/wordpress-seo-services/">WordPress SEO</a> review can compare your site with the competitors that matter and turn the gaps into a prioritised plan. If the gap turns out to be the whole website, see <a href="/website-redesign/">website redesign</a>.</p>
+`,
+  },
+  {
+    slug: 'service-area-business-seo',
+    seoTitle: 'SEO for Service-Area Businesses Without a Shopfront',
+    title: 'SEO for Service-Area Businesses: How to Rank Without a Shopfront',
+    description: 'How plumbers, cleaners, movers and other businesses that visit customers can set up Google Business Profile, service pages and area pages to rank locally.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>Plumbers, electricians, cleaners, pest control teams, packers and movers, home tutors and mobile mechanics have one thing in common: customers never visit them. They go to the customer. Google calls these service-area businesses, and they play by slightly different rules in local search. Get the set-up right and you can compete with businesses that have a shop on the main road. Get it wrong and your Business Profile can be suspended, or your website fills up with pages Google ignores.</p>
+
+<h2>How local search treats a business without a shopfront</h2>
+<p>Google says local results depend mainly on three things: relevance (how well you match the search), distance (how far you are from the searcher or the place they typed) and prominence (how well known and well reviewed you are).</p>
+<p>Hiding your address on your Business Profile doesn't take it out of this; the profile is still tied to the location you verified. In practice:</p>
+<ul>
+  <li>You'll usually show most strongly in the map pack near your base</li>
+  <li>Listing lots of localities won't make you appear in the map pack across the whole city</li>
+  <li>For areas further away, your website ranking in the normal results matters more</li>
+</ul>
+<p>So you need two things working together: a correctly set-up profile for nearby searches, and a website that can rank for "{service} in {area}" searches everywhere else you work.</p>
+
+<h2>Set up your Business Profile correctly</h2>
+<ol>
+  <li><strong>Hide your address if customers don't come to you.</strong> Google's guidelines say a business that only serves customers at their location should remove its address and set service areas instead. Showing your home address as if it were a shop risks suspension.</li>
+  <li><strong>Set realistic service areas.</strong> Add the cities, localities or PIN codes you actually cover. Google limits how many you can add, and its help pages advise keeping the overall area within roughly two hours' drive of your base; check the current guidance.</li>
+  <li><strong>Don't borrow an address to appear in another city.</strong> Google's guidelines generally treat virtual offices, PO boxes and unstaffed addresses as ineligible, and competitors do report them.</li>
+  <li><strong>One profile per real business.</strong> Creating a separate profile for each area you serve, without staffed premises there, breaks the guidelines.</li>
+  <li><strong>Hybrid businesses</strong>, such as a repair counter that also does home visits, can show the address and add service areas as well.</li>
+</ol>
+<p>Google may ask you to verify with a short video showing your vehicle, tools and proof of business, so keep these handy. The rest of the profile (categories, services, photos, reviews) works the same as for any business; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+
+<h2>Make your coverage obvious on your website</h2>
+<p>Your website doesn't need your home address, but visitors should know within seconds whether you come to their area.</p>
+<ul>
+  <li>Say "Based in {city}, serving {areas}" near the top of the homepage and on the contact page</li>
+  <li>Use the same business name and phone number as your Business Profile, everywhere</li>
+  <li>Add an "Areas we serve" section or page listing localities, grouped by zone</li>
+  <li>Make call and WhatsApp buttons easy to tap on a phone, because most of these searches are urgent and on mobile</li>
+</ul>
+
+<h2>Area pages: when to build them and what goes on them</h2>
+<p>This is where most service-area websites go wrong. Twenty pages saying "Best plumber in {area}" with only the area name swapped are doorway pages, and they can drag down the whole site. Our guide to <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a> explains the rules; here's how they apply when you don't have a branch in each area.</p>
+<p>Build a separate area page only when you have genuine material for it, such as:</p>
+<ul>
+  <li>Jobs you've actually done there, with photos (never showing a customer's house number or face without permission)</li>
+  <li>Reviews from customers in that area</li>
+  <li>Local conditions that change the work: hard water, older buildings with outdated wiring, monsoon seepage, or society rules on lift bookings and working hours for movers</li>
+  <li>Practical details: response time, visiting charge and which team covers it</li>
+</ul>
+<p>Packers and movers often want route pages such as "Pune to Bengaluru". The same test applies: build one only if it says something genuinely useful about that move, such as the transit time you can commit to, vehicle options and what the customer should prepare.</p>
+<p>Everywhere else, one strong service page plus a clear list of areas beats a thin page per locality. Start with your two or three busiest areas, do them properly, and add more as real jobs and reviews build up.</p>
+
+<h2>Let service pages do the heavy lifting</h2>
+<p>For searches beyond your immediate area, Google usually ranks service pages, not your homepage. Give each main service its own page: bathroom leakage repair, deep cleaning, home shifting, termite treatment. On each one:</p>
+<ul>
+  <li>Mention your city and main areas naturally, in the title and the text</li>
+  <li>Explain the problems you solve, what a visit involves and what affects the cost</li>
+  <li>Answer the questions you get on every call: timings, guarantees, what the customer needs to arrange</li>
+  <li>Show photos of real work and your team</li>
+</ul>
+<h2>Reviews, photos and mentions without an address</h2>
+<p>Prominence is the factor you can build steadily, and for a service-area business that mostly means reviews.</p>
+<ul>
+  <li>Ask after every job, while the technician is still there or on WhatsApp the same evening</li>
+  <li>A gentle prompt such as "it helps others if you mention which service we did" is reasonable; never write reviews for customers or offer discounts in return</li>
+  <li>Reply to every review, mentioning the service where it fits naturally</li>
+  <li>Add job photos to your profile regularly</li>
+</ul>
+<p>See <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a> for message templates. Directory listings help too if your name and phone number are consistent and your address is hidden where possible; see <a href="/blog/business-directories-citations-india/">business directories and local citations in India</a> covers which ones are worth it.</p>
+
+<h2>Track which areas bring enquiries</h2>
+<p>Decide where to add area pages based on data, not guesses.</p>
+<ul>
+  <li>Add a locality or PIN code field to your enquiry form</li>
+  <li>Ask callers where they found you and note their area</li>
+  <li>Check Business Profile performance for calls, website clicks and the searches that found you</li>
+  <li>Use Search Console to see which service and area searches your pages already appear for</li>
+</ul>
+<p>If one area keeps producing jobs, it has earned a proper page. If another never does, it may be too far away to rank, or not worth the travel.</p>
+
+<p>Want help setting this up? <a href="/wordpress-seo-services/">WordPress SEO</a> support can cover your profile set-up, service pages and area pages without creating doorway pages. Running ads to particular areas? A focused <a href="/landing-page-design/">landing page</a> for each campaign usually works better than sending clicks to your homepage.</p>
+`,
+  },
+  {
+    slug: 'multi-location-business-website',
+    seoTitle: 'Multi-Location Business Website: How to Structure It',
+    title: 'Websites for Businesses With Multiple Branches: Location Pages, Profiles and Schema',
+    description: 'How to structure a website for a business with several branches or clinics: branch pages, a Google Business Profile per branch, schema and avoiding duplication.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>A group of clinics, a coaching institute with five centres, a restaurant chain, showrooms in three cities: once a business has more than one branch, its website has a new job. It has to help each customer find the right branch quickly, and help Google understand that each branch is a real place with its own address, hours and reviews. Most multi-location sites fall short in the same few ways: one contact page listing every address, branch pages copied from each other, and every Business Profile pointing at the homepage.</p>
+
+<h2>One website, separate websites or Multisite?</h2>
+<table>
+  <thead><tr><th>Option</th><th>Works well when</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>One website with branch pages</td><td>Branches share a brand, services and booking process (most businesses)</td><td>Needs a good template so every branch page is complete and consistent</td></tr>
+    <tr><td>Separate website per branch</td><td>Franchisees or branches run almost as independent businesses</td><td>Each site builds its SEO from scratch, and designs and details drift apart</td></tr>
+    <tr><td>WordPress Multisite</td><td>Many branches need their own sections, managed by separate local teams</td><td>More complex hosting, plugins and maintenance; rarely needed for a handful of branches</td></tr>
+  </tbody>
+</table>
+<p>For most businesses with a few branches, one website with a page per branch is the simplest and strongest option, because every review, link and article builds up one domain. If you're considering the third option, see <a href="/blog/wordpress-multisite-when-needed/">when a business needs WordPress Multisite</a>.</p>
+
+<h2>Plan the URLs and navigation</h2>
+<ul>
+  <li><strong>A locations hub</strong> at a short address like /locations/ or /branches/, listing every branch with its area, phone number and a link to its page</li>
+  <li><strong>One page per branch</strong>, such as /locations/saket/ or /clinics/pune-baner/. Add a city level (/locations/delhi/saket/) only if you have several branches in each city</li>
+  <li><strong>Services stay central.</strong> Keep one main page per service and link to it from branch pages, rather than copying every service page for every branch</li>
+  <li><strong>A "Find a branch" or "Locations" item</strong> in the main menu, plus the branch list in the footer</li>
+</ul>
+<p>If a service is only offered at some branches (MRI at one centre, say), mention it on the service page and link to those branches.</p>
+
+<h2>What every branch page needs</h2>
+<p>A branch page should answer everything a customer needs to get there and get served. Doing this well also makes each page naturally different from the others.</p>
+<ul>
+  <li>Full address, a landmark and a map (loaded only when needed, so the page stays fast)</li>
+  <li>Opening hours, including Sunday and festival changes</li>
+  <li>A phone number and WhatsApp that reach that branch, not a central number that transfers calls</li>
+  <li>Photos of the actual building, entrance and interior, so people recognise it when they arrive</li>
+  <li>Parking, nearest metro or bus stop, and lift or wheelchair access</li>
+  <li>Which services, doctors, trainers or teachers are available there, and on which days</li>
+  <li>The branch manager or team, and reviews from customers of that branch</li>
+  <li>A booking or enquiry form that pre-selects the branch and sends the enquiry to the right people</li>
+</ul>
+
+<h2>Avoid duplicate and thin branch pages</h2>
+<p>The quickest way to build ten branch pages is to write one and copy it nine times, changing only the address. Google may treat those pages as near-duplicates and show just one of them, so the others rarely rank.</p>
+<ul>
+  <li>Keep shared content (company history, general service descriptions) short on branch pages, and link to the main page instead</li>
+  <li>Write the parts that are genuinely local: what's nearby, who works there, what that branch is known for, and the questions local customers ask</li>
+  <li>Don't create pages for cities where you have no branch. If a nearby branch serves customers there, mention it on that branch's page</li>
+</ul>
+
+<h2>One Google Business Profile per branch</h2>
+<p>For searches like "{service} near me", each branch competes on its own Business Profile. Generally, each staffed location that is open to customers can have its own profile.</p>
+<ul>
+  <li><strong>Link each profile to its branch page</strong>, not the homepage. The branch page then confirms the same address, phone and hours Google sees on the profile</li>
+  <li><strong>Use your real business name</strong> as it appears on the signboard. Adding area names or keywords that aren't part of that name goes against Google's guidelines</li>
+  <li><strong>Keep ownership central.</strong> Manage all profiles from an account the company controls, adding branch managers as managers rather than owners, so nothing is lost when someone leaves</li>
+  <li><strong>Ask for reviews at every branch</strong>, so newer branches aren't left with a handful of old reviews</li>
+</ul>
+<p>Google offers bulk management and verification options for businesses with many locations; check the current requirements. The <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers the details for each individual profile.</p>
+
+<h2>Schema markup for multiple locations</h2>
+<p>Structured data helps Google connect each branch to the brand. A common, sensible set-up:</p>
+<ul>
+  <li><strong>Organization</strong> markup once, usually on the homepage, with your brand name, logo and official social profiles</li>
+  <li><strong>LocalBusiness</strong> markup (or a more specific type, such as Dentist or MedicalClinic) on each branch page, with that branch's name, address, phone, opening hours, map coordinates and page URL</li>
+  <li>Each branch linked back to the main organisation, for example with the parentOrganization property</li>
+</ul>
+<p>Every value must match what's visible on that page and on the branch's Business Profile. See <a href="/blog/schema-markup-explained/">schema markup explained</a> for how to add and test it.</p>
+
+<h2>Build branch pages from a template in WordPress</h2>
+<p>With more than a few branches, typing each page by hand gets messy. A cleaner approach is a "Location" content type with fields for address, hours, phone, WhatsApp, map, photos, services and team. One template then displays every branch the same way:</p>
+<ul>
+  <li>Staff update hours or a phone number in one field, and it changes everywhere that branch appears</li>
+  <li>No branch page is missing its map or timings because someone forgot a section</li>
+  <li>The locations hub, footer and schema can all be generated from the same data</li>
+</ul>
+<p><a href="/blog/custom-post-types-fields/">Custom post types and custom fields</a> explains how this works in WordPress.</p>
+
+<h2>Keep everything in sync when branches change</h2>
+<p>Most multi-location problems come from changes that weren't updated everywhere.</p>
+<ul>
+  <li><strong>New branch:</strong> publish its page and link it from the hub, then create and verify its Business Profile pointing to that page</li>
+  <li><strong>Changed phone number or hours:</strong> update the website, Business Profile and main directory listings on the same day</li>
+  <li><strong>Moved branch:</strong> update the address everywhere, keep the same page if it serves the same area, and expect Google to ask you to verify the new address</li>
+  <li><strong>Closed branch:</strong> mark the profile as permanently closed, and redirect its page to the nearest branch or the locations hub</li>
+</ul>
+<p>A quarterly check of every branch page against its profile catches most mistakes before customers do.</p>
+
+<p>Planning a site for several branches? <a href="/wordpress-website-development/">WordPress website development</a> can give you a branch template that stays consistent as you grow, and <a href="/wordpress-seo-services/">WordPress SEO</a> support can set up the profiles, schema and branch pages so each location can rank.</p>
 `,
   },
 ];
