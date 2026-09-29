@@ -379,6 +379,10 @@ const LINKS = [
   ['website-for-coaches-consultants', '<h2>Keep claims honest</h2>', '<p>If you mainly sell workshops and programmes to companies rather than one-to-one coaching, see <a href="/blog/website-for-corporate-training-companies/">websites for corporate training companies</a>.</p>\n\n'],
   ['school-coaching-website-what-parents-look-for', '<h2>Keep it updated</h2>', '<p>Teaching coding, data or other IT skills to college students and working professionals? See <a href="/blog/website-for-software-training-institutes/">websites for software training institutes</a>.</p>\n\n'],
   ['website-for-overseas-education-consultants', '<h2>Counsellors</h2>', '<p>If you run IELTS, PTE or spoken English classes as a separate institute, see <a href="/blog/website-for-ielts-spoken-english-institutes/">websites for IELTS and spoken English institutes</a>.</p>\n\n'],
+  // Agent 11
+  ['faq-page-seo', '<h2>Keep them up to date</h2>', '<p>Clear question-and-answer formatting can also earn a place in Google\'s answer boxes; see <a href="/blog/featured-snippets-how-to-win/">how to win featured snippets and People Also Ask</a>.</p>\n\n'],
+  ['keyword-research-small-business', '<h2>Map keywords to pages</h2>', '<p>To find and use these longer, more specific phrases, see <a href="/blog/long-tail-keywords-explained/">long-tail keywords explained</a>.</p>\n\n'],
+  ['301-vs-302-redirects', '<h2>Common mistakes</h2>', '<p>Changing a page slug or your WordPress permalink settings also needs redirects; see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs in WordPress</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

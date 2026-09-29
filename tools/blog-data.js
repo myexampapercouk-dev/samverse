@@ -6717,6 +6717,8 @@ module.exports = [
 </ul>
 <p>See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
 
+<p>Clear question-and-answer formatting can also earn a place in Google's answer boxes; see <a href="/blog/featured-snippets-how-to-win/">how to win featured snippets and People Also Ask</a>.</p>
+
 <h2>Keep them up to date</h2>
 <p>Review FAQs when prices, processes or policies change. Outdated answers damage trust.</p>
 
@@ -9240,6 +9242,8 @@ module.exports = [
   <li>Deleting or merging pages</li>
   <li>Moving to HTTPS and one preferred www/non-www version</li>
 </ul>
+
+<p>Changing a page slug or your WordPress permalink settings also needs redirects; see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs in WordPress</a>.</p>
 
 <h2>Common mistakes</h2>
 <ul>
@@ -12952,6 +12956,8 @@ module.exports = [
   <li><strong>Relevant:</strong> they lead to services you actually want to sell</li>
 </ul>
 <p>Don't chase huge generic terms with low buying intent. A small number of highly relevant searches can bring more enquiries than thousands of casual visitors.</p>
+
+<p>To find and use these longer, more specific phrases, see <a href="/blog/long-tail-keywords-explained/">long-tail keywords explained</a>.</p>
 
 <h2>Map keywords to pages</h2>
 <table>
@@ -20214,6 +20220,271 @@ Template: astra
 </ul>
 
 <p>An English institute website works when a student can find the right course, see a batch that fits their day and book a free level check in minutes. For a website built around admissions, see <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a>, and for search visibility see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'featured-snippets-how-to-win',
+    seoTitle: 'Featured Snippets and People Also Ask: How to Win Them',
+    title: 'Featured Snippets and People Also Ask: How Small Businesses Can Win Them',
+    description: 'How Google\'s featured snippets and People Also Ask boxes work, which questions to target, and how to format answers, lists and tables so your pages get picked.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>Search for a question on Google and you'll often see an answer pulled from a website, shown in a box above the normal results. Just below, there's usually a "People also ask" list of related questions. Both are chances for a small business to appear at the very top of the page, sometimes above much bigger competitors, simply by answering questions clearly. Here's how they work and how to format your pages to earn them.</p>
+
+<h2>What featured snippets and People Also Ask are</h2>
+<p>A <strong>featured snippet</strong> is a short extract from a web page that Google shows prominently for some searches, with a link to the source. Google picks the extract automatically from pages it has indexed, usually ones that already rank well for that search. The common forms are:</p>
+<ul>
+  <li><strong>Paragraph:</strong> a short definition or direct answer, common for "what is" and "why" questions</li>
+  <li><strong>List:</strong> numbered steps or bullet points, common for "how to" and "types of" searches</li>
+  <li><strong>Table:</strong> rows of information, common for comparisons, timings and specifications</li>
+</ul>
+<p><strong>People Also Ask</strong> is the box of related questions. Clicking a question expands a short answer taken from a web page, with a link, and often loads more questions. Each answer is effectively a small snippet, so the same techniques help with both.</p>
+
+<h2>Are they worth chasing?</h2>
+<p>Usually yes, with realistic expectations. A snippet puts your business name and your answer in front of searchers before anyone else's, which builds recognition and trust. But for simple questions, some people read the answer and never click. And for many searches Google now also shows AI Overviews, which can push snippets further down the page.</p>
+<p>The best targets are questions where a short answer naturally leads to wanting more: "how long does a kitchen renovation take", "how often should an AC be serviced", "what happens during a root canal". The snippet gives the headline answer, your page gives the detail, and the person who needs help knows who to call. The same clear formatting also helps with AI assistants; see <a href="/blog/ai-search-optimization-website/">AI search and your website</a>.</p>
+
+<h2>Which questions to target</h2>
+<ol>
+  <li><strong>Queries you already rank for on page one.</strong> Snippets are usually taken from pages near the top, so start there. In Google Search Console, look for question-style queries where your page already has a good average position; see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</li>
+  <li><strong>Questions customers actually ask.</strong> Calls, WhatsApp chats, emails and walk-in conversations are full of them, in the exact words people use.</li>
+  <li><strong>People Also Ask boxes.</strong> Search your main services and note every question that appears. Expand a few to reveal more.</li>
+  <li><strong>Searches that already show a snippet.</strong> If Google shows one today, it's willing to show one for that search. Your job is to offer a clearer, more complete answer than the current one.</li>
+</ol>
+<p>Stick to questions connected to what you sell. A snippet for a trivia question brings visitors who will never become customers.</p>
+
+<h2>How to format answers Google can lift</h2>
+<p>The core method is simple: <strong>ask the question as a heading, then answer it immediately.</strong></p>
+<ul>
+  <li>Use the question, or a close version of it, as an H2 or H3 heading</li>
+  <li>Put a direct, complete answer in the first two or three sentences below it, short enough to read in one breath</li>
+  <li>Start definitions plainly: "A root canal is..." rather than "Many patients often wonder..."</li>
+  <li>Then add the detail: examples, exceptions, what the answer depends on and your own local experience</li>
+</ul>
+<p>Match the format to the question:</p>
+<table>
+  <thead><tr><th>Type of question</th><th>Best format</th><th>Example search</th></tr></thead>
+  <tbody>
+    <tr><td>What is / why</td><td>Short paragraph</td><td>"What is a site survey for rooftop solar?"</td></tr>
+    <tr><td>How to / steps</td><td>Numbered list, one step per item</td><td>"How to prepare a home for pest control"</td></tr>
+    <tr><td>Types / options / checklists</td><td>Bulleted list with short items</td><td>"Types of dental implants"</td></tr>
+    <tr><td>Comparisons and specifications</td><td>Table with clear column headings</td><td>"Split AC vs window AC"</td></tr>
+  </tbody>
+</table>
+<p>Use real lists and tables (the List and Table blocks in the WordPress editor create proper HTML), not screenshots of tables or lines of text broken up with dashes. Google can't reliably read a table that is really an image.</p>
+
+<h2>Page-level things that help</h2>
+<ul>
+  <li><strong>Rank first.</strong> Formatting alone won't win a snippet if the page isn't competitive. Useful, well-organised content on a fast, mobile-friendly page is the foundation.</li>
+  <li><strong>One clear topic per page,</strong> matching what the searcher actually wants.</li>
+  <li><strong>A logical heading structure:</strong> one H1, then H2s and H3s in order, so each answer sits directly under its question.</li>
+  <li><strong>Be accurate and specific.</strong> If the honest answer is "it depends", say what it depends on, and keep details up to date.</li>
+  <li><strong>No special markup is required.</strong> There is no schema that turns a page into a featured snippet. Structured data still helps Google understand the page, but the answer itself has to be in the visible content.</li>
+</ul>
+
+<h2>Winning People Also Ask with FAQ sections</h2>
+<p>People Also Ask questions are a ready-made list of what searchers want to know next. The simplest way to answer them is an FAQ section on the relevant service page:</p>
+<ol>
+  <li>Collect the questions shown for your main service searches, including "{service} in {city}" variations</li>
+  <li>Keep the ones a genuine customer would ask, and merge duplicates</li>
+  <li>Answer each in two to four sentences, answer first</li>
+  <li>Link to a fuller article where one exists</li>
+</ol>
+<p>This helps visitors as much as Google, because the same questions usually come up just before people enquire. See <a href="/blog/faq-page-seo/">how to create FAQ sections that help customers and SEO</a>.</p>
+
+<h2>Tracking and keeping snippets</h2>
+<ul>
+  <li><strong>Check manually.</strong> Search your target questions in a private browser window. Results vary by location and device, so check on a phone too.</li>
+  <li><strong>Watch Search Console.</strong> It doesn't label featured snippets separately, but rising impressions and clicks for a question, with an average position near the top, is a good sign.</li>
+  <li><strong>Expect change.</strong> Google tests and swaps snippets regularly. Review your key pages every few months and improve answers that could be clearer or more current.</li>
+  <li><strong>Don't over-optimise.</strong> Robotic, keyword-stuffed answers written for Google make pages worse for people, which is the opposite of what Google rewards.</li>
+</ul>
+
+<p>Earning snippets is mostly about writing clear, well-structured answers on pages that already rank. If you'd like help finding the right questions and restructuring your service pages and articles around them, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'long-tail-keywords-explained',
+    seoTitle: 'Long-Tail Keywords Explained for Small Businesses',
+    title: 'Long-Tail Keywords Explained: Why They Matter for Small and Local Businesses',
+    description: 'What long-tail keywords are, why specific searches suit small and local businesses, and how to find them and use them on service pages, FAQs and blog posts.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-for-startups'],
+    body: `
+<p>When most business owners think about SEO, they picture ranking for a big, obvious search like "dentist" or "interior designer". Those searches are hard to win and often vague. The searches that quietly bring many small businesses their best enquiries are longer and more specific: "dentist open on Sunday in Andheri" or "2BHK interior design cost in Gurgaon". These are long-tail keywords. Here's what they are, why they matter, and how to find and use them on your website.</p>
+
+<h2>What long-tail keywords are</h2>
+<p>A long-tail keyword is a specific search phrase that relatively few people type, but that says clearly what the searcher wants. The name comes from a chart of search demand: a small number of popular terms get very large volumes (the "head"), followed by a very long "tail" of specific searches that are each typed only occasionally. Added together, that tail makes up a large share of all searches.</p>
+<p>Long-tail keywords are usually longer, but length isn't really the definition. What matters is that they are specific and lower in volume.</p>
+<table>
+  <thead><tr><th>Head term</th><th>Long-tail variations</th></tr></thead>
+  <tbody>
+    <tr><td>AC repair</td><td>"AC not cooling repair in Pune", "split AC gas refilling cost"</td></tr>
+    <tr><td>Waterproofing</td><td>"terrace waterproofing before monsoon", "bathroom leakage repair without breaking tiles"</td></tr>
+    <tr><td>CA services</td><td>"CA for GST registration for a small business in Jaipur"</td></tr>
+    <tr><td>Birthday cake</td><td>"eggless photo cake delivery in Noida"</td></tr>
+  </tbody>
+</table>
+
+<h2>Why they matter for small and local businesses</h2>
+<ul>
+  <li><strong>Less competition.</strong> Directories, marketplaces and national brands fight over head terms. Far fewer sites answer specific needs well, so a small business has a realistic chance.</li>
+  <li><strong>Clearer intent.</strong> "Interior designer" could be a student, a job seeker or a homeowner. "Modular kitchen designer for a 2BHK in Whitefield" is almost certainly a potential customer.</li>
+  <li><strong>Closer to a decision.</strong> People usually add detail to a search once they know what they need, so these visitors are more likely to call, send a WhatsApp message or fill in a form.</li>
+  <li><strong>They add up.</strong> One long-tail phrase may bring only a few visitors a month. A page that answers a whole group of related phrases can bring a steady flow.</li>
+  <li><strong>They match how people really search.</strong> Voice searches and questions typed on phones tend to be conversational and specific.</li>
+</ul>
+<p>For a local business, a handful of the right visitors each month can be worth more than thousands of casual ones.</p>
+
+<h2>Common types of long-tail searches</h2>
+<ul>
+  <li><strong>Service plus location:</strong> "{service} in {area}", including neighbourhoods and nearby towns you genuinely serve</li>
+  <li><strong>Problem-based:</strong> "washing machine not draining", "termites in wooden wardrobe"</li>
+  <li><strong>Questions:</strong> "how long does a root canal take", "how often should a water tank be cleaned"</li>
+  <li><strong>Cost and pricing:</strong> "cost of rooftop solar for a 3BHK house"</li>
+  <li><strong>Specific products or specifications:</strong> "5 kVA silent generator on rent", "cotton kurta sets for office wear"</li>
+  <li><strong>Qualifiers:</strong> "open on Sunday", "same day", "home visit", "for senior citizens"</li>
+</ul>
+
+<h2>How to find long-tail keywords</h2>
+<p>This builds on the basic process in <a href="/blog/keyword-research-small-business/">keyword research for small businesses</a>, with the focus on specific phrases.</p>
+<ol>
+  <li><strong>Listen to customers.</strong> Note the exact words people use on calls, WhatsApp chats, emails and at the counter. The questions they ask before booking are often long-tail searches.</li>
+  <li><strong>Use Google's own suggestions.</strong> Type your main service and look at autocomplete, "People also ask" and the related searches at the bottom of the page. Try adding words like "cost", "near", "best", "for" and "how".</li>
+  <li><strong>Check Search Console.</strong> The Performance report shows the real queries your pages appear for. Long, specific queries with impressions but few clicks point to topics you could cover better; see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</li>
+  <li><strong>Read reviews and local groups.</strong> Your own and competitors' Google reviews, and local community groups, show how people describe their problems.</li>
+  <li><strong>Don't trust volume numbers too much.</strong> Keyword tools often show very low or no volume for long-tail phrases. That doesn't mean nobody searches them; estimates are simply rough for less common searches.</li>
+</ol>
+
+<h2>How to use them on your website</h2>
+<p>The key is to group long-tail keywords by what the searcher wants, not to create one page per phrase.</p>
+<table>
+  <thead><tr><th>Kind of long-tail search</th><th>Where it belongs</th></tr></thead>
+  <tbody>
+    <tr><td>Variations of one service ("AC gas refill", "AC not cooling")</td><td>Sections or FAQs on the main service page</td></tr>
+    <tr><td>A distinct service with its own process and pricing</td><td>Its own service page</td></tr>
+    <tr><td>Questions and problems</td><td>Blog articles or FAQ answers</td></tr>
+    <tr><td>Specific products and specifications</td><td>Product or category pages with full details</td></tr>
+    <tr><td>Areas you serve</td><td>A location page only where you have genuinely local information</td></tr>
+  </tbody>
+</table>
+<p>On the page itself, use the phrase where it fits naturally: in a heading, in the first answer below a question and in the body text. Then write the rest for people, covering the detail that prompted the search. Search engines understand close variations, so there's no need to repeat awkward phrases word for word.</p>
+
+<h2>Mistakes to avoid</h2>
+<ul>
+  <li><strong>One page per phrase.</strong> Near-identical pages for "AC repair in Kothrud", "AC repair in Baner" and so on help nobody and can be treated as doorway pages; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages done right</a>.</li>
+  <li><strong>Stuffing unnatural phrases.</strong> Forcing "best cheap dentist Delhi" into a sentence makes the page worse for readers.</li>
+  <li><strong>Chasing irrelevant phrases.</strong> A long-tail search is only worth targeting if it leads to something you sell, in an area you serve.</li>
+  <li><strong>Ignoring intent.</strong> Someone searching "how to fix a leaking tap" may want a DIY guide, not a booking page. Match the page to the need.</li>
+  <li><strong>Giving up too early.</strong> Individual phrases bring small numbers, so judge results across a group of pages over several months.</li>
+</ul>
+
+<h2>Measuring results</h2>
+<p>In Search Console, check how many different queries each page appears for, along with its clicks and impressions. A useful page often picks up more long-tail queries over time. Then look at what matters most: are enquiries coming in for the specific services and areas you targeted? Simply asking new customers what they searched for is a quick, useful check.</p>
+
+<p>Long-tail keywords are where most small business websites can realistically win. If you'd like help finding the right phrases and building pages around them, see <a href="/wordpress-seo-services/">WordPress SEO services</a>, or if you're just starting out, <a href="/website-for-startups/">websites for startups</a>.</p>
+`,
+  },
+  {
+    slug: 'seo-friendly-urls',
+    seoTitle: 'SEO-Friendly URLs in WordPress: Set Up and Change Safely',
+    title: 'SEO-Friendly URLs in WordPress: Permalinks, Slugs and Changing Them Safely',
+    description: 'How to structure clean, SEO-friendly URLs and permalinks in WordPress, write good slugs, and change existing URLs safely with 301 redirects to protect rankings.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-migration'],
+    body: `
+<p>Every page on your website has a URL, and in WordPress you control most of it through the permalink settings and each page's slug. Clean, readable URLs help visitors understand where they are, look more trustworthy in search results and when shared on WhatsApp, and keep your site organised as it grows. Messy URLs are rarely a disaster, but changing them carelessly can be. Here's how to set them up well, and how to change them without losing traffic.</p>
+
+<h2>What makes a URL SEO-friendly</h2>
+<ul>
+  <li><strong>Readable:</strong> a person can guess what the page is about from the URL alone</li>
+  <li><strong>Short and descriptive:</strong> the main topic, without filler words</li>
+  <li><strong>Lowercase, with hyphens between words:</strong> not spaces, underscores or capital letters</li>
+  <li><strong>Stable:</strong> no dates, years or details that are likely to change</li>
+  <li><strong>Consistent:</strong> one pattern across the site, and one preferred version (https, with or without www)</li>
+</ul>
+<table>
+  <thead><tr><th>Less helpful</th><th>Better</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>/?p=482</td><td>/ac-repair-pune/</td><td>Says what the page is about</td></tr>
+    <tr><td>/2024/03/our-best-offers-for-this-summer-season-2024/</td><td>/summer-ac-service-offers/</td><td>Shorter, and doesn't go out of date</td></tr>
+    <tr><td>/Services/Dental_Implants/</td><td>/services/dental-implants/</td><td>Lowercase with hyphens</td></tr>
+    <tr><td>/best-dentist-delhi-top-dentist-cheap-dentist/</td><td>/dentist-delhi/</td><td>No keyword repetition</td></tr>
+  </tbody>
+</table>
+
+<h2>Do URLs affect rankings?</h2>
+<p>A little, but less than many people think. Words in a URL are generally a minor signal, and a page with a messy URL can still rank well if its content is strong. The bigger benefits are practical:</p>
+<ul>
+  <li>Search results often show the URL path, so a clear one reassures people before they click</li>
+  <li>Links shared on WhatsApp, email and social media are easier to trust when they're readable</li>
+  <li>A logical structure, such as /services/ and /blog/, makes analytics reports and site management easier</li>
+</ul>
+<p>So get URLs right on new pages, but don't rush to rewrite old ones that already perform well.</p>
+
+<h2>Choosing a permalink structure in WordPress</h2>
+<p>Go to <strong>Settings, then Permalinks</strong> in the dashboard. WordPress offers several structures:</p>
+<table>
+  <thead><tr><th>Option</th><th>Example</th><th>Good for most businesses?</th></tr></thead>
+  <tbody>
+    <tr><td>Plain</td><td>/?p=123</td><td>No, it tells visitors nothing</td></tr>
+    <tr><td>Day and name, Month and name</td><td>/2026/09/28/post-name/</td><td>Rarely, dates make lasting content look old</td></tr>
+    <tr><td>Numeric</td><td>/archives/123</td><td>No</td></tr>
+    <tr><td>Post name</td><td>/post-name/</td><td>Yes, short and clear</td></tr>
+    <tr><td>Custom structure</td><td>/blog/%postname%/</td><td>Sometimes, for example to group articles under /blog/</td></tr>
+  </tbody>
+</table>
+<p>Post name suits most business websites. Pages work slightly differently: they use their own slug plus any parent page, so a "Dental Implants" page placed under a "Services" parent becomes /services/dental-implants/. Avoid putting categories in post URLs unless you have a good reason, because recategorising a post later changes its URL.</p>
+<p>WooCommerce stores also get a "Product permalinks" section on the same screen. Decide on all of this before launch, when changing it costs nothing.</p>
+
+<h2>Writing good slugs for pages and posts</h2>
+<p>The slug is the last part of the URL. WordPress creates it from the title, which is often too long, and you can edit it in the page or post settings (look for the URL or permalink field in the editor's sidebar).</p>
+<ul>
+  <li>Keep the main topic: "How Much Does a Modular Kitchen Cost in Bengaluru? A Complete Guide" can become /modular-kitchen-cost-bengaluru/</li>
+  <li>Leave out years and counts you'll update, like "2026" or "15 tips", so the URL still fits when the content changes</li>
+  <li>Include a city only if the page is genuinely about that location</li>
+  <li>Don't repeat keywords or cram in several phrases</li>
+  <li>On Hindi or regional-language pages, consider simple Latin-character slugs, because non-Latin characters often turn into long strings of % codes when a link is copied and shared</li>
+  <li>Watch for "-2" at the end: WordPress adds a number when a slug is already taken, for example by another page or an uploaded image</li>
+  <li>Set the slug before you publish and share the page</li>
+</ul>
+
+<h2>Should you change existing URLs?</h2>
+<p>Only when the benefit is clear. Good reasons include:</p>
+<ul>
+  <li>The site uses Plain or date-based permalinks and you're planning a wider clean-up or redesign</li>
+  <li>A URL is misleading, for example it names a service you no longer offer</li>
+  <li>You're merging several weak pages into one stronger page</li>
+  <li>You're moving platforms and the old URL pattern can't be kept</li>
+</ul>
+<p>If a page ranks well and brings enquiries, and its URL is merely imperfect, it's usually better left alone. Even with correct redirects, rankings can fluctuate for a while as Google processes the change.</p>
+
+<h2>How to change URLs safely</h2>
+<ol>
+  <li><strong>List every current URL.</strong> Use your XML sitemap, the page indexing report in Search Console and your analytics, so pages with traffic or links aren't missed.</li>
+  <li><strong>Take a full backup,</strong> and for site-wide changes, test on a staging copy first; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</li>
+  <li><strong>Map old to new.</strong> Keep a spreadsheet with each old URL and its closest new equivalent.</li>
+  <li><strong>Make the change and add 301 redirects</strong> from every old URL to its new one. A redirect plugin or your SEO plugin can handle individual pages, and structure-wide changes (like removing dates) can use a pattern-based rule. WordPress sometimes redirects a changed post slug automatically, but don't rely on it. See <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
+  <li><strong>Update internal links and menus</strong> so they point straight to the new URLs instead of passing through redirects.</li>
+  <li><strong>Update links you control elsewhere:</strong> your Google Business Profile website and appointment links, social media profiles, Google Ads final URLs, email signatures, saved WhatsApp quick replies, and QR codes on brochures or visiting cards.</li>
+  <li><strong>Test and monitor.</strong> Open a sample of old URLs to confirm they land on the right page, resubmit your sitemap in Search Console, and watch for 404 errors over the following weeks.</li>
+</ol>
+<p>Keep the redirects in place permanently. Old links on other websites, in bookmarks and on printed material will keep being used for years.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>Changing a slug or the permalink setting on a live site without redirects, creating broken links overnight</li>
+  <li>Redirecting all old URLs to the homepage instead of to matching pages</li>
+  <li>Changing URLs repeatedly, which builds redirect chains; point old URLs straight to the final address</li>
+  <li>Changing URLs, design and content all at once, which makes it hard to tell what caused any drop; see <a href="/blog/redesign-website-without-losing-rankings/">how to redesign without losing rankings</a></li>
+  <li>Stuffing keywords or lists of cities into slugs</li>
+</ul>
+
+<p>Planning a URL clean-up, redesign or platform move? See <a href="/wordpress-seo-services/">WordPress SEO services</a> or <a href="/wordpress-migration/">WordPress migration</a> for help making the change without losing traffic.</p>
 `,
   },
 ];
