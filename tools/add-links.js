@@ -355,6 +355,10 @@ const LINKS = [
   ['website-for-property-management-companies', '<h2>Trust</h2>', '<p>Running an entire residential complex rather than individual flats? See <a href="/blog/website-for-housing-societies-rwas/">websites for housing societies and RWAs</a>.</p>\n\n'],
   ['website-for-chemical-pharma-manufacturers', '<h2>SEO</h2>', '<p>Marketing finished formulations through distributors and franchise partners instead? See <a href="/blog/website-for-pharma-franchise-companies/">websites for PCD pharma franchise companies</a>.</p>\n\n'],
   ['website-for-gyms-fitness-studios', '<h2>Essential pages and features</h2>', '<p>Running a dedicated yoga studio or teaching yoga independently? See <a href="/blog/website-for-yoga-studios-teachers/">websites for yoga studios and teachers</a>.</p>\n\n'],
+  // Agent 20
+  ['wordpress-maintenance-checklist', '<h2>Golden rules</h2>', '<p>Running an online store? Add store-specific tasks like test orders and payment checks from the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>\n\n'],
+  ['wordpress-caching-explained', '<h2>Clearing the cache</h2>', '<p>Running an online store? The <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a> covers cart fragments, object caching and other store-specific fixes.</p>\n\n'],
+  ['woocommerce-checkout-skimmer-malware', '<h2>Ongoing protection</h2>', '<p>For the wider picture, including staff accounts, card-testing bots and fraud orders, work through the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

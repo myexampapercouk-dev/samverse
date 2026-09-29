@@ -550,6 +550,8 @@ module.exports = [
 
 <p>For a safe step-by-step process, see <a href="/blog/update-wordpress-safely/">how to update WordPress without breaking your site</a>.</p>
 
+<p>Running an online store? Add store-specific tasks like test orders and payment checks from the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
+
 <h2>Golden rules</h2>
 <ol>
   <li>Always back up before updating.</li>
@@ -11837,6 +11839,8 @@ module.exports = [
 </ul>
 <p>Good caching plugins exclude standard WooCommerce pages automatically, but always test.</p>
 
+<p>Running an online store? The <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a> covers cart fragments, object caching and other store-specific fixes.</p>
+
 <h2>Clearing the cache</h2>
 <p>If you update a page and don't see the change, the old cached copy may still be served. Clear the cache from your plugin or hosting panel after design changes, plugin updates or theme edits. Most plugins clear a page's cache automatically when you update it.</p>
 
@@ -15504,6 +15508,8 @@ module.exports = [
 </ul>
 <p>Even then, attackers can try to swap in fake forms, so monitoring still matters. See <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments</a>.</p>
 
+<p>For the wider picture, including staff accounts, card-testing bots and fraud orders, work through the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a>.</p>
+
 <h2>Ongoing protection</h2>
 <ul>
   <li>Keep WooCommerce, plugins and themes updated</li>
@@ -18574,6 +18580,268 @@ Template: astra
 <p>A yoga website should feel calm, but calm doesn't mean heavy. Large background videos and full-screen sliders slow pages down on mobile data. Use a few good photos of your real space and teachers, embed class videos carefully, and keep the timetable, WhatsApp button and "Book a trial" link easy to reach on a phone.</p>
 
 <p>Planning a yoga studio or teacher website you can update yourself? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> for teacher training and retreat campaigns.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-maintenance-checklist',
+    seoTitle: 'WooCommerce Maintenance Checklist: Weekly to Quarterly Tasks',
+    title: 'WooCommerce Maintenance Checklist: Weekly, Monthly and Quarterly Tasks',
+    description: 'A WooCommerce maintenance checklist of weekly, monthly and quarterly tasks: test orders, payment and shipping checks, safe updates, database care and backups.',
+    date: '2026-09-28',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-maintenance'],
+    body: `
+<p>An online store has more moving parts than a normal business website: payments, shipping rates, stock, order emails and customer accounts. Any of them can quietly break after an update, and you often find out only when a customer complains or orders stop coming in. This checklist covers the store-specific tasks to add on top of regular <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance</a>.</p>
+
+<h2>Why a store needs extra care</h2>
+<p>On a brochure website, a broken contact form costs you enquiries. On a WooCommerce store, a broken checkout costs you sales every hour it goes unnoticed. Stores also change constantly: orders, stock movements and customer details are written to the database all day, which affects how you update, back up and restore.</p>
+<ul>
+  <li>WooCommerce, payment gateway and shipping plugins update often and depend on each other</li>
+  <li>Your theme may contain customised WooCommerce templates that go out of date</li>
+  <li>Payment gateways and courier services change their settings, APIs and requirements over time</li>
+</ul>
+
+<h2>Weekly checks</h2>
+<ul>
+  <li><strong>Place a test order.</strong> Use a low-priced, hidden test product, pay with UPI or a card, then refund it. This confirms the whole flow works: cart, checkout, payment, order status and emails.</li>
+  <li><strong>Look for stuck orders.</strong> Filter orders by "Pending payment" and "Failed". If your gateway dashboard shows a successful payment but the order is still pending, the gateway's webhook or callback is probably not reaching your site.</li>
+  <li><strong>Confirm order emails arrive.</strong> Check both the new-order alert to you and the confirmation to the customer, and make sure they aren't landing in spam.</li>
+  <li><strong>Check low-stock and out-of-stock products</strong> so bestsellers aren't showing as unavailable, or being oversold.</li>
+  <li><strong>Confirm backups ran</strong> and are stored off-site, not only on the same server.</li>
+  <li><strong>Glance at the logs</strong> under WooCommerce &gt; Status &gt; Logs for new fatal errors or payment gateway errors.</li>
+</ul>
+
+<h2>Monthly checks</h2>
+<ul>
+  <li><strong>Apply updates on staging first.</strong> Update WooCommerce, extensions, the gateway plugin and the theme on a <a href="/blog/staging-sites-explained/">staging site</a>, test the checkout, then repeat on the live store. If WooCommerce asks to run a database update afterwards, make sure you have a fresh backup first.</li>
+  <li><strong>Check for outdated template files.</strong> The System Status report under WooCommerce &gt; Status flags theme templates that are older than your WooCommerce version. Outdated overrides can break product pages, the cart or checkout.</li>
+  <li><strong>Test every payment method</strong> on a phone: UPI, cards, net banking, wallets and Cash on Delivery if you offer it.</li>
+  <li><strong>Test shipping.</strong> Try addresses in different zones or pincodes, check free-shipping thresholds, and compare your rates with what your courier actually charges.</li>
+  <li><strong>Review scheduled actions.</strong> WooCommerce and many extensions run background tasks, listed under WooCommerce &gt; Status &gt; Scheduled Actions. A growing pile of failed or past-due actions points to a problem worth investigating.</li>
+  <li><strong>Reconcile payments.</strong> Compare gateway settlements with completed orders so missing or duplicate orders are caught early.</li>
+  <li><strong>Tidy coupons and sales.</strong> Remove expired coupons and check that scheduled sale prices start and end as planned.</li>
+</ul>
+
+<h2>Quarterly checks</h2>
+<ul>
+  <li><strong>Test a restore</strong> of a recent backup on a staging site. An untested backup may fail when you need it most.</li>
+  <li><strong>Audit plugins and extensions.</strong> Remove ones you no longer use, and check that premium extension licences are active so you keep receiving updates.</li>
+  <li><strong>Review staff accounts.</strong> Remove people who have left, and make sure staff who only process orders have the Shop Manager role rather than Administrator.</li>
+  <li><strong>Clean the database.</strong> Clear expired transients and old sessions, and review which tables are growing; see <a href="/blog/wordpress-database-optimization/">database optimisation</a>.</li>
+  <li><strong>Check the PHP version and hosting resources.</strong> A busy store needs more server capacity than a brochure site, especially as the catalogue and order history grow.</li>
+  <li><strong>Review tax, invoice and policy settings.</strong> Confirm GST settings with your CA if anything has changed, and check that your shipping, returns and privacy policies still match how you actually work.</li>
+  <li><strong>Check renewals:</strong> domain, hosting, SSL and any paid gateway, shipping or invoicing services.</li>
+</ul>
+
+<h2>Backups work differently for stores</h2>
+<p>A daily backup is usually fine for a brochure site. For a store, restoring yesterday's database would wipe out every order, customer account and stock change made since then. So:</p>
+<ul>
+  <li>Back up more often, or use a backup service that saves database changes in near real time</li>
+  <li>Never restore the full live database just to fix a design problem; restore only the affected files, or fix it on staging</li>
+  <li>Be careful when pushing a staging site to live: copying the staging database over the live one overwrites new orders</li>
+  <li>If you must restore after a disaster, export recent orders first so nothing is lost</li>
+</ul>
+<p>More detail in the <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a>.</p>
+
+<h2>Before festival sales and big campaigns</h2>
+<p>Diwali, Raksha Bandhan, end-of-season sales or a big Instagram campaign can bring far more traffic than a normal day. A couple of weeks before:</p>
+<ol>
+  <li>Finish all updates, then freeze non-essential changes until the sale is over</li>
+  <li>Test coupons, sale prices and free-shipping offers exactly as customers will use them</li>
+  <li>Update stock levels and confirm your courier can handle extra pickups</li>
+  <li>Ask your host whether your plan can cope with a traffic spike</li>
+  <li>Take a fresh backup and make sure someone can respond quickly if checkout breaks</li>
+</ol>
+
+<h2>Keep a simple maintenance log</h2>
+<p>Write down what you updated, when, and what you tested. When something breaks, the log tells you what changed last, which makes the fix much faster. A shared spreadsheet is enough: date, task, plugin versions and any issues found. It also helps if you ever hand the store over to a new developer.</p>
+
+<p>Don't want to handle this yourself? I look after WooCommerce stores on monthly plans, including updates, test orders and backups. See <a href="/woocommerce-developer/">WooCommerce development</a> and <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-speed-optimization',
+    seoTitle: 'WooCommerce Speed Optimization: Make Your Store Faster',
+    title: 'WooCommerce Speed Optimization: How to Make Your Online Store Faster',
+    description: 'How to speed up a WooCommerce store: hosting, caching with the right exclusions, cart fragments, product images, plugins, database clean-up and object caching.',
+    date: '2026-09-28',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-speed-optimization'],
+    body: `
+<p>A slow online store loses sales in a way you rarely notice. A shopper on mobile data taps a product from Instagram, waits a few seconds, and goes back to scrolling. WooCommerce can be fast, but a store is harder to speed up than a normal business website because some of its most important pages can't simply be cached. This guide covers the store-specific fixes; for general causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</p>
+
+<h2>Why WooCommerce stores are harder to speed up</h2>
+<p>On a brochure site, almost every visitor sees the same page, so a saved copy can be served instantly. A store works differently:</p>
+<ul>
+  <li>The cart, checkout and My Account pages are different for every shopper and must be built fresh each time</li>
+  <li>Logged-in customers usually bypass the page cache completely</li>
+  <li>Large catalogues, product variations and filters mean heavier database queries</li>
+  <li>Payment, shipping, review and marketing extensions each add their own scripts and processing</li>
+</ul>
+<p>So a fast store needs two things: good caching for the pages that can be cached, and a capable server for the pages that can't.</p>
+
+<h2>Measure the right pages first</h2>
+<p>Don't test only the homepage. Check each type of page, and always test on a phone:</p>
+<table>
+  <thead>
+    <tr><th>Page</th><th>What to check</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Homepage and category pages</td><td>Load time on mobile, image weight, number of scripts</td></tr>
+    <tr><td>Product pages</td><td>How quickly the main image appears, gallery and review scripts</td></tr>
+    <tr><td>Cart and checkout</td><td>Server response time, add-to-cart, quantity and coupon speed</td></tr>
+  </tbody>
+</table>
+<p>PageSpeed Insights is useful for the shop and product pages. For the cart and checkout, time the steps yourself: add a product, change the quantity, apply a coupon and move to payment. If one step drags, that's where to dig. On a staging copy, a debugging plugin such as Query Monitor can show slow database queries and which plugin caused them.</p>
+
+<h2>Hosting matters more for stores</h2>
+<p>Because cart and checkout pages are built fresh for every shopper, they depend directly on your server. Cheap shared hosting that copes with a brochure site can struggle when several people check out at once, especially during a festival sale. When reviewing hosting for a store, look for:</p>
+<ul>
+  <li>A current, supported PHP version</li>
+  <li>Enough memory and PHP workers to handle several uncached requests at the same time</li>
+  <li>Server-level caching and support for an object cache such as Redis</li>
+  <li>A data centre in or near India if most of your customers are here</li>
+</ul>
+<p>Check current plans with your host, and ask directly how much simultaneous checkout traffic your plan can realistically handle.</p>
+
+<h2>Page caching, with the right exclusions</h2>
+<p>Cache the pages that are the same for everyone: the homepage, category pages, product pages and blog posts. Never cache:</p>
+<ul>
+  <li>The cart, checkout and My Account pages</li>
+  <li>Pages for a visitor who has items in their cart or is logged in</li>
+</ul>
+<p>WooCommerce sets cookies such as <strong>woocommerce_items_in_cart</strong> and <strong>woocommerce_cart_hash</strong> when a shopper adds something to the cart, and good caching plugins and hosts use them to skip the cache for that shopper. Most detect WooCommerce automatically, but always test: open a private window, add a product, then check the cart count and prices on other pages. If you show prices in different currencies or change them by location, test extra carefully, because a cached page can show the wrong price. More in <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
+
+<h2>Cart fragments</h2>
+<p>The small cart icon in your header that shows the number of items is often updated by a script called cart fragments. It sends a background request (you may see <strong>get_refreshed_fragments</strong> in a speed test waterfall) that can't be cached. If it runs on every page for every visitor, it adds server load and delay even to pages that are otherwise cached.</p>
+<p>Recent WooCommerce versions no longer load this script everywhere by default, but many themes and header mini-cart widgets still do. Your options include:</p>
+<ul>
+  <li>Loading it only on shop, product and cart pages</li>
+  <li>Using a theme or mini-cart that updates the count without it</li>
+  <li>Turning it off on blog and information pages through a performance plugin setting, where one is available</li>
+</ul>
+<p>After any change, check that the cart count still updates correctly when a product is added.</p>
+
+<h2>Product images and galleries</h2>
+<p>Product photos are usually the heaviest part of a store. Upload images at a sensible size, compress them and serve modern formats such as WebP. In classic themes, check the product image sizes under Appearance &gt; Customize &gt; WooCommerce &gt; Product Images so the store isn't generating oversized thumbnails.</p>
+<ul>
+  <li>Lazy-load images further down the page, but not the main product image, which is often the largest element Google measures</li>
+  <li>Keep gallery sliders, zoom and 360-degree viewers light, and load them only on product pages</li>
+  <li>Use a click-to-play embed for product videos instead of loading the full video player upfront</li>
+</ul>
+<p>See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> for the details.</p>
+
+<h2>Plugins, scripts and the theme</h2>
+<p>Stores collect plugins over time: reviews, wishlists, filters, pop-ups, live chat, tracking pixels and more. Many load their CSS and JavaScript on every page, even where they do nothing.</p>
+<ul>
+  <li>Remove extensions you no longer use, and replace heavy ones where a lighter option does the job</li>
+  <li>Stop scripts loading where they aren't needed; a payment gateway's script, for example, only needs to load on checkout</li>
+  <li>Delay chat widgets and marketing scripts until the visitor interacts with the page</li>
+  <li>On large catalogues, choose product filters carefully, as some run heavy queries on every click</li>
+  <li>Avoid building product and category templates from bloated page-builder layouts</li>
+</ul>
+
+<h2>Database, orders and object caching</h2>
+<p>An active store's database grows every day with orders, sessions, logs and background tasks. Keeping it tidy helps the uncached pages and the admin area:</p>
+<ul>
+  <li><strong>Expired sessions and transients:</strong> clear them regularly</li>
+  <li><strong>Scheduled Actions:</strong> WooCommerce and many extensions log background tasks, and old completed or failed actions can pile up</li>
+  <li><strong>Autoloaded options:</strong> leftover settings from removed plugins can slow down every request</li>
+  <li><strong>Order storage:</strong> High-Performance Order Storage (HPOS) keeps orders in their own tables. Newer stores use it by default; older stores can check under WooCommerce &gt; Settings &gt; Advanced &gt; Features, after confirming their extensions are compatible</li>
+</ul>
+<p>An object cache such as Redis keeps the results of database queries in memory, which particularly helps pages that can't be page-cached, such as the cart, checkout and admin. Ask your host whether it's available on your plan. Always take a backup before any clean-up; see <a href="/blog/wordpress-database-optimization/">database optimisation</a>.</p>
+
+<p>Want a faster store without breaking the checkout? See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> or <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-security-checklist',
+    seoTitle: 'WooCommerce Security Checklist: Protect Your Store',
+    title: 'WooCommerce Security Checklist: How to Protect Your Online Store',
+    description: 'A WooCommerce security checklist: staff accounts, payment gateways, updates, firewalls, card-testing bots, fraud and COD orders, and protecting customer data.',
+    date: '2026-09-28',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-malware-removal'],
+    body: `
+<p>An online store is a more attractive target than a normal business website. It holds customers' names, phone numbers, addresses and order histories, and it sits in the path of their payments. The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers the basics every site needs; this checklist adds the store-specific steps for WooCommerce.</p>
+
+<h2>Admin and staff accounts</h2>
+<p>Many store break-ins start with a login. Treat every account that can see orders as sensitive.</p>
+<ul>
+  <li>Give every person their own account; never share one login among staff</li>
+  <li>Use the Shop Manager role for staff who process orders and edit products, and keep Administrator for the one or two people who truly need it; see <a href="/blog/wordpress-user-roles-explained/">user roles explained</a></li>
+  <li>Turn on two-factor authentication for all administrators and shop managers</li>
+  <li>Remove accounts for staff, freelancers and agencies as soon as their work ends</li>
+  <li>Use strong, unique passwords and limit login attempts</li>
+</ul>
+<p>Protect the accounts around the store too: your hosting panel, domain registrar, payment gateway dashboard and business email. If any of these is taken over, the store is at risk.</p>
+
+<h2>Let the payment gateway handle card details</h2>
+<p>The safest store never lets card numbers touch its own server. Use a reputable payment gateway and prefer a checkout where the customer enters card details on the gateway's own page, or in fields served by the gateway. UPI payments also avoid card numbers being typed on your site.</p>
+<ul>
+  <li>Never store card numbers, CVVs or UPI PINs, and never ask customers to send them by WhatsApp, email or phone</li>
+  <li>Keep gateway API keys and webhook secrets private, and regenerate them if a developer leaves or you suspect a leak</li>
+  <li>Check that the gateway is in live mode, not test mode, and remove old or unused gateway plugins</li>
+  <li>Confirm payments in the gateway dashboard before shipping, never from a customer's screenshot</li>
+</ul>
+<p>Even with a hosted checkout, attackers can inject fake payment forms into a hacked store. Learn the warning signs in <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce card skimming malware</a>.</p>
+
+<h2>Updates and extensions</h2>
+<p>WooCommerce, payment gateways and popular extensions regularly release security fixes, and a store running months-old versions is an easy target.</p>
+<ul>
+  <li>Update WooCommerce, extensions, themes and WordPress promptly, testing the checkout on staging first</li>
+  <li>Buy premium extensions only from the official marketplace or the developer, and keep licences active so updates keep arriving</li>
+  <li>Never install nulled (pirated) plugins or themes; they often contain hidden malware</li>
+  <li>Delete extensions you don't use rather than leaving them deactivated</li>
+  <li>Keep PHP on a supported version</li>
+</ul>
+
+<h2>Firewall and bot protection</h2>
+<p>Stores attract automated attacks: password guessing, fake account registrations and card testing, where criminals use your checkout to check whether stolen card numbers work. Signs of card testing include a burst of small failed orders in a short time, often from guest customers with random-looking details.</p>
+<ul>
+  <li>Use a web application firewall (WAF) at the cloud, server or plugin level; see <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a></li>
+  <li>Add rate limiting or bot protection to the login, registration and checkout forms, then check that genuine customers can still buy easily</li>
+  <li>Turn on any fraud and card-testing protection your payment gateway offers</li>
+  <li>Disable account registration if you don't need it, or protect it from spam sign-ups</li>
+</ul>
+
+<h2>Fraud orders and COD abuse</h2>
+<p>Not every threat is technical. Fake and fraudulent orders cost Indian stores money in shipping, return-to-origin charges and tied-up stock.</p>
+<ul>
+  <li>Watch for red flags: mismatched names and addresses, unusually large quantities, several orders from one phone number to different addresses, or urgent requests to change the delivery address</li>
+  <li>For Cash on Delivery, confirm higher-value or first-time orders by phone or WhatsApp before dispatch; some stores also use OTP verification at checkout</li>
+  <li>Set sensible limits, such as a maximum COD order value, and consider prepaid-only for products that are often abused</li>
+  <li>Be wary of "payment done" screenshots and requests to refund to a different account; check the gateway dashboard every time</li>
+</ul>
+
+<h2>Protect customer data</h2>
+<p>Customer details are your responsibility. India's Digital Personal Data Protection Act, 2023 sets out duties for businesses that collect personal data, and its rules are being phased in, so check current requirements with a lawyer. Good habits help either way:</p>
+<ul>
+  <li>Collect only the details you need to fulfil orders</li>
+  <li>Limit who can view and export orders and customer lists</li>
+  <li>Don't leave order exports in public server folders, open shared drives or WhatsApp groups</li>
+  <li>Store backups securely, since they contain customer data too</li>
+  <li>Run the whole site on HTTPS and keep your privacy policy accurate</li>
+</ul>
+
+<h2>Monitoring and a response plan</h2>
+<p>Store security is a routine, not a one-time setup. A simple schedule:</p>
+<table>
+  <thead>
+    <tr><th>Check</th><th>How often</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Look for unusual failed or pending orders</td><td>Weekly</td></tr>
+    <tr><td>Review new administrator and shop manager accounts</td><td>Weekly</td></tr>
+    <tr><td>Apply updates after testing on staging</td><td>Weekly or monthly</td></tr>
+    <tr><td>Malware scans and file-change alerts</td><td>Automatic, with alerts reviewed promptly</td></tr>
+    <tr><td>Review who can access hosting, the gateway and email</td><td>Quarterly</td></tr>
+    <tr><td>Test restoring a backup</td><td>Quarterly</td></tr>
+  </tbody>
+</table>
+<p>If you suspect a hack, act quickly: turn off online payments or put the checkout into maintenance, inform your payment gateway, keep a backup and logs as evidence, and have the store cleaned before reopening. Indian rules may require reporting certain cyber incidents within a short time, so take advice promptly.</p>
+
+<p>Worried your store isn't secure, or think it may already be compromised? See <a href="/wordpress-malware-removal/">malware removal and security</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> for ongoing store care.</p>
 `,
   },
 ];
