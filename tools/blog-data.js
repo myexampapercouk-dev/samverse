@@ -1101,6 +1101,8 @@ module.exports = [
 </table>
 <p>Compare current transaction fees, settlement times and supported methods on each provider's website before choosing, as these change over time.</p>
 
+<p>Still deciding between providers? See <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a> for what to compare, from settlement times to KYC and WooCommerce support.</p>
+
 <h2>Ways to take payments on WordPress</h2>
 <h3>1. WooCommerce (for online stores)</h3>
 <p>WooCommerce adds products, cart and checkout. Install your gateway's WooCommerce plugin, add your API keys, and customers can pay by UPI, card or net banking at checkout. You can also enable <strong>Cash on Delivery</strong>, which many Indian shoppers still prefer.</p>
@@ -5599,6 +5601,8 @@ module.exports = [
   <li><strong>Cash on Delivery</strong> if your audience expects it</li>
 </ul>
 
+<p>Planning subscribe-and-save for staples? See <a href="/blog/woocommerce-subscriptions/">selling subscriptions with WooCommerce</a> for how recurring plans and payments work in India.</p>
+
 <h2>Content that sells</h2>
 <p>Recipes, health and usage guides, and "how it's made" content attract search traffic and give people reasons to buy. Link each piece to the relevant products.</p>
 
@@ -7953,6 +7957,8 @@ module.exports = [
 
 <h2>Online teaching setup</h2>
 <p>If you teach online, explain the tools you use, class recordings, and how you share materials. Selling recorded courses or test series is possible with WordPress plugins when you're ready.</p>
+
+<p>When you're ready to sell notes, recorded courses or test series, see <a href="/blog/sell-digital-products-wordpress/">how to sell digital products on WordPress</a>.</p>
 
 <h2>Get found</h2>
 <ul>
@@ -22099,6 +22105,285 @@ Template: astra
 </ul>
 
 <p>Want reviews on your site that build trust without slowing it down? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> for structured data done properly.</p>
+`,
+  },
+  {
+    slug: 'payment-gateways-india-compared',
+    seoTitle: 'Choosing a Payment Gateway in India: What to Compare',
+    title: 'How to Choose a Payment Gateway for Your Indian Website: What to Compare',
+    description: 'How to choose a payment gateway for an Indian website: compare payment methods, fees, settlement times, KYC, international cards and WooCommerce support.',
+    date: '2026-09-28',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Choosing a payment gateway looks simple until you compare a few. They all promise UPI, cards and quick settlements, but the details that matter to your business are buried in pricing pages and onboarding emails. This guide covers what to compare before you sign up, so the gateway fits how your customers pay and how your business runs. If you're new to taking payments online, start with <a href="/blog/accept-online-payments-wordpress-india/">how to accept online payments on a WordPress website</a>, then come back here to choose a provider.</p>
+
+<h2>Start with how your customers pay</h2>
+<p>Before comparing providers, write down a few facts about your own business:</p>
+<ul>
+  <li>What you sell: physical products, services, fees, courses or digital downloads</li>
+  <li>Your typical order value, and whether you take many small payments or a few large ones</li>
+  <li>Whether your customers are mostly in India, or also overseas</li>
+  <li>Whether customers pay once, in instalments or on a recurring basis</li>
+  <li>Roughly how many orders you expect each month</li>
+</ul>
+<p>A shop selling low-value items to UPI-first mobile shoppers needs something different from a consultant billing overseas clients or an institute collecting large fees. The "best" gateway is simply the one that fits these answers.</p>
+
+<h2>Payment methods</h2>
+<p>Most Indian gateways support the common methods, but check exactly what will be available on your account, since some methods are enabled only on request or after extra checks:</p>
+<ul>
+  <li><strong>UPI:</strong> how it works on mobile (opening the customer's UPI app directly) and on desktop (QR code or UPI ID)</li>
+  <li><strong>Debit and credit cards,</strong> including RuPay</li>
+  <li><strong>Net banking,</strong> and how many banks are covered</li>
+  <li><strong>Wallets</strong></li>
+  <li><strong>EMI and pay-later options,</strong> useful for higher-value products</li>
+  <li><strong>Recurring payments,</strong> if you sell subscriptions or memberships</li>
+</ul>
+<p>Also look at the payment screen itself. Is it a popup on your site or a redirect to the gateway's page? Is it clean and quick on a small phone? A clumsy payment step loses orders you had otherwise already won.</p>
+
+<h2>Fees and pricing structure</h2>
+<p>Fees change, and published rates are not always what you'll be offered, so I won't quote numbers here. Instead, ask each provider these questions and compare the answers side by side:</p>
+<ul>
+  <li>Is there a setup fee, annual fee or minimum commitment?</li>
+  <li>What is the per-transaction fee, and does it differ by method (UPI, cards, net banking, international cards, EMI)?</li>
+  <li>Is GST charged on top of the fees?</li>
+  <li>Are there charges for refunds, faster settlement or extra features?</li>
+  <li>Can pricing be negotiated as your volume grows?</li>
+</ul>
+<p>Work out the cost on a realistic month of your own orders, not on a single headline rate. Always check the provider's current pricing page and your agreement before signing up.</p>
+
+<h2>Settlements and reconciliation</h2>
+<p>Settlement is when the money actually reaches your bank account. It matters for cash flow, especially if you buy stock or pay suppliers quickly.</p>
+<ul>
+  <li>What is the standard settlement cycle, and is it different for new accounts?</li>
+  <li>Is faster or instant settlement available, and what does it cost?</li>
+  <li>In what situations can the gateway hold or delay settlements?</li>
+  <li>Do settlement reports show fees, GST and refunds clearly for each transaction?</li>
+</ul>
+<p>Good reports make it easy for you or your accountant to match gateway payouts with website orders. If you're GST-registered, also see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>.</p>
+
+<h2>KYC and onboarding</h2>
+<p>Payment aggregators in India operate under RBI rules, so onboarding involves proper verification. Expect to provide documents such as PAN, bank account details and business proof, plus GST details if you're registered. Requirements differ for sole proprietors, partnerships, companies, trusts and NGOs.</p>
+<p>Check before you apply:</p>
+<ul>
+  <li>Does the gateway accept your business type and category? Some categories are restricted or need extra approval.</li>
+  <li>What does your website need to show? Gateways commonly review contact details, pricing, terms, privacy, refund and shipping policies.</li>
+  <li>How long does activation usually take, and can you build and test in sandbox mode meanwhile?</li>
+</ul>
+<p>Getting your website ready first avoids a lot of back-and-forth; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy basics for Indian websites</a>.</p>
+
+<h2>International cards and overseas customers</h2>
+<p>If you sell outside India, this can be the deciding factor. International card acceptance is often a separate activation with its own checks. Ask:</p>
+<ul>
+  <li>Are international cards supported on your account, and what extra documents are needed?</li>
+  <li>Can customers pay in their own currency, or only in rupees?</li>
+  <li>How are foreign payments converted and settled into your Indian bank account?</li>
+  <li>What paperwork do you receive for exports of goods or services, for your CA?</li>
+  <li>Are fees and settlement times different for international payments?</li>
+</ul>
+<p>Some businesses use one gateway for Indian customers and a second for overseas buyers. That's fine, as long as the checkout stays simple and each customer sees only the options that suit them.</p>
+
+<h2>WooCommerce and WordPress support</h2>
+<p>If your website runs on WordPress, the quality of the gateway's plugin matters as much as the gateway itself. Check:</p>
+<ul>
+  <li>Is there an official WooCommerce plugin maintained by the gateway, and is it updated regularly?</li>
+  <li>Does it work with the current WooCommerce version, including the block-based checkout?</li>
+  <li>Can you issue refunds from the WooCommerce order screen?</li>
+  <li>Does it use webhooks, so orders update correctly even if a customer closes the browser straight after paying?</li>
+  <li>Does it support what you need beyond one-time payments, such as subscriptions?</li>
+  <li>For sites without a store: does it work with your form plugin, or offer payment links and payment pages?</li>
+</ul>
+<p>Test everything in the gateway's test mode, including failed and cancelled payments, before you go live.</p>
+
+<h2>A quick comparison checklist</h2>
+<p>Use a simple table like this to compare two or three shortlisted gateways:</p>
+<table>
+  <thead><tr><th>What to compare</th><th>Questions to answer</th></tr></thead>
+  <tbody>
+    <tr><td>Payment methods</td><td>UPI, cards, net banking, wallets, EMI, recurring</td></tr>
+    <tr><td>Fees</td><td>Rates per method, setup or annual fees, GST, refund charges</td></tr>
+    <tr><td>Settlement</td><td>Standard cycle, faster options, clear reports</td></tr>
+    <tr><td>KYC</td><td>Documents, business category, activation time</td></tr>
+    <tr><td>International</td><td>Card support, currencies, export paperwork</td></tr>
+    <tr><td>WooCommerce</td><td>Official plugin, block checkout, refunds, webhooks</td></tr>
+    <tr><td>Support</td><td>How to reach them, and how disputes and chargebacks are handled</td></tr>
+  </tbody>
+</table>
+<p>Cash on Delivery isn't a gateway feature, but if you offer it, plan it alongside prepaid payments; see <a href="/blog/woocommerce-cash-on-delivery-india/">Cash on Delivery in WooCommerce</a>.</p>
+
+<p>Want your gateway set up, tested and connected to your store properly? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-subscriptions',
+    seoTitle: 'Selling Subscriptions With WooCommerce in India',
+    title: 'Selling Subscriptions With WooCommerce: Recurring Products, Payments and Retention',
+    description: 'How to sell subscriptions and recurring products with WooCommerce in India: use cases, recurring payment options, renewals, operations and retention tips.',
+    date: '2026-09-28',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'website-for-startups'],
+    body: `
+<p>Subscriptions turn one-time buyers into regular customers: a monthly pack of coffee, a meal plan, a membership or an annual service plan. Recurring revenue is also easier to plan around than chasing new orders every month. WooCommerce can handle subscriptions well, but in India the payment side needs extra thought. Here's how it works and what to plan for.</p>
+
+<h2>What you can sell on subscription</h2>
+<ul>
+  <li><strong>Repeat consumables:</strong> tea, coffee, oils, flours, pet food or skincare refills, often with subscribe-and-save pricing</li>
+  <li><strong>Meal and tiffin plans:</strong> weekly or monthly plans; see <a href="/blog/website-for-tiffin-meal-subscriptions/">websites for tiffin and meal subscriptions</a></li>
+  <li><strong>Curated boxes:</strong> snacks, books, stationery or hobby kits</li>
+  <li><strong>Memberships:</strong> clubs, communities, gyms or members-only content</li>
+  <li><strong>Services:</strong> maintenance plans (AMCs), retainers or monthly coaching</li>
+  <li><strong>Digital access:</strong> software licences, template libraries or course access</li>
+</ul>
+
+<h2>Do you need full subscriptions?</h2>
+<p>Automatic recurring billing is powerful, but it adds complexity. Sometimes a simpler setup does the job:</p>
+<table>
+  <thead><tr><th>Setup</th><th>Best when</th></tr></thead>
+  <tbody>
+    <tr><td>Prepaid plans, such as a three-month pack</td><td>Customers are happy to pay upfront, and you have no renewals to manage</td></tr>
+    <tr><td>Manual renewals with reminders</td><td>You have a small customer base and can send a payment link each cycle</td></tr>
+    <tr><td>Automatic recurring billing</td><td>You have many subscribers, predictable cycles and a gateway that supports it</td></tr>
+  </tbody>
+</table>
+<p>Many businesses start with prepaid plans or manual renewals and move to automatic billing once demand is proven.</p>
+
+<h2>How subscriptions work in WooCommerce</h2>
+<p>WooCommerce doesn't include subscriptions out of the box. The official WooCommerce Subscriptions extension is the most established option, and other subscription plugins exist too, so compare features and current pricing before choosing. Typical features include:</p>
+<ul>
+  <li>Billing every week, month, quarter or year</li>
+  <li>Free trials and sign-up fees</li>
+  <li>Different plan levels or pack sizes under one product</li>
+  <li>Renewal orders created automatically, with emails to the customer</li>
+  <li>A My Account area where customers can view their subscription and, depending on your settings, pause, cancel or switch plans</li>
+  <li>Reports on active subscriptions, renewals and cancellations</li>
+</ul>
+
+<h2>Recurring payments in India</h2>
+<p>This is where Indian stores need care. Under RBI rules, automatic debits generally need a mandate the customer approves upfront, with a notification before each charge and extra authentication for payments above certain limits. The details change from time to time, so check the current rules with your gateway.</p>
+<p>In practice:</p>
+<ul>
+  <li><strong>Mandate options:</strong> gateways may support card mandates, UPI AutoPay and eNACH (bank account debits), each with its own limits and sign-up flow</li>
+  <li><strong>Plugin support:</strong> a gateway offering recurring payments doesn't automatically mean its WooCommerce plugin supports automatic renewals with your subscription plugin. Confirm this specifically before you build.</li>
+  <li><strong>Manual renewals as a fallback:</strong> subscription plugins can usually email the customer a renewal invoice with a link to pay each cycle when automatic billing isn't available</li>
+  <li><strong>Failed payments:</strong> cards expire and mandates get cancelled, so plan retry rules and reminders by email or WhatsApp</li>
+</ul>
+<p>For the basics of connecting a gateway, see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>.</p>
+
+<h2>Running physical product subscriptions</h2>
+<ul>
+  <li><strong>Renewal dates:</strong> decide whether all renewals fall on the same day of the month, which makes packing and dispatch easier, or run from each customer's sign-up date</li>
+  <li><strong>Stock planning:</strong> active subscriptions tell you roughly what you'll need next cycle</li>
+  <li><strong>Shipping:</strong> make sure shipping charges and delivery areas apply correctly to renewal orders</li>
+  <li><strong>Invoices:</strong> each renewal is a new order, so a GST invoice should be generated every time; see <a href="/blog/woocommerce-gst-invoices-india/">GST invoices in WooCommerce</a></li>
+  <li><strong>Price changes:</strong> decide how you'll handle price increases for existing subscribers, and tell them well in advance</li>
+</ul>
+
+<h2>Retention: keeping subscribers longer</h2>
+<p>Getting subscribers is only half the job. Keeping them is where recurring revenue really comes from.</p>
+<ul>
+  <li><strong>Make the first cycle great:</strong> the first delivery or first month largely decides whether people stay</li>
+  <li><strong>Offer pause and skip:</strong> someone travelling for a month may pause rather than cancel</li>
+  <li><strong>Send renewal reminders:</strong> a friendly note before a charge builds trust and reduces disputes</li>
+  <li><strong>Let people switch plans:</strong> moving to a smaller plan is better than a cancellation</li>
+  <li><strong>Ask why people cancel:</strong> a one-question survey shows you what to fix</li>
+  <li><strong>Reward loyalty:</strong> small perks for long-term subscribers, such as a free add-on</li>
+</ul>
+<p>Don't hide the cancel option. Making cancellation difficult frustrates customers, leads to payment disputes and damages your reputation.</p>
+
+<h2>Be clear in your terms and checkout</h2>
+<ul>
+  <li>Show the recurring price, billing frequency and any sign-up fee on the product page and at checkout</li>
+  <li>State when the first and later payments will be taken</li>
+  <li>Explain how to pause, cancel or change a plan, and your refund rules for renewals; see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce stores</a></li>
+  <li>Check current consumer protection rules for auto-renewals with your lawyer or CA</li>
+</ul>
+
+<p>Planning a subscription store, or adding recurring plans to an existing one? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/website-for-startups/">websites for startups</a> if you're launching a new subscription brand.</p>
+`,
+  },
+  {
+    slug: 'sell-digital-products-wordpress',
+    seoTitle: 'How to Sell Digital Products on WordPress',
+    title: 'How to Sell Digital Products on WordPress: E-books, Courses and Templates',
+    description: 'How to sell e-books, courses and templates on WordPress: choosing a platform, delivering files securely, handling piracy, GST caution and sales pages.',
+    date: '2026-09-28',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>E-books, online courses, templates and printables can be sold again and again without packing or shipping anything. WordPress is a good home for them because you keep control of your customers, pricing and brand, instead of depending entirely on a marketplace. Here's how to choose a setup, deliver files safely and avoid the common mistakes.</p>
+
+<h2>What you can sell</h2>
+<ul>
+  <li><strong>E-books and guides:</strong> PDFs, workbooks and recipe books</li>
+  <li><strong>Online courses:</strong> recorded video lessons, test series and cohort programmes</li>
+  <li><strong>Templates:</strong> design templates, spreadsheets, résumé and business document templates</li>
+  <li><strong>Printables:</strong> planners, worksheets and colouring pages</li>
+  <li><strong>Creative assets:</strong> photo presets, stock photos and music</li>
+  <li><strong>Software:</strong> plugins, themes or tools with licence keys</li>
+</ul>
+
+<h2>Choosing the right setup</h2>
+<table>
+  <thead><tr><th>Option</th><th>Good for</th><th>Keep in mind</th></tr></thead>
+  <tbody>
+    <tr><td>WooCommerce (virtual and downloadable products)</td><td>Stores selling digital and physical products together, or many products</td><td>Keep the checkout lean for digital-only orders</td></tr>
+    <tr><td>Easy Digital Downloads</td><td>Sites selling only digital files or software</td><td>Check which features, such as licensing, need paid add-ons</td></tr>
+    <tr><td>An LMS plugin such as LearnDash, Tutor LMS or LifterLMS</td><td>Courses with lessons, quizzes and progress tracking</td><td>Video hosting and student support need planning</td></tr>
+    <tr><td>A payment form or link with delivery by email</td><td>One or two products, or testing demand</td><td>Delivery must be reliable; automate it once sales grow</td></tr>
+  </tbody>
+</table>
+<p>If you already run WooCommerce, adding digital products is usually the simplest path: mark a product as virtual and downloadable, and WooCommerce skips shipping. Compare current plans and features of any premium plugin before you commit.</p>
+
+<h2>Delivering files securely</h2>
+<ul>
+  <li><strong>Protect file links:</strong> serve downloads through your store rather than sharing a public file URL. WooCommerce, for example, has settings for how files are served, so choose one that doesn't expose the file's real location.</li>
+  <li><strong>Set download limits and expiry:</strong> allow a sensible number of downloads and an expiry period, with an easy way for genuine buyers to ask for a fresh link.</li>
+  <li><strong>Deliver in two places:</strong> buyers should find their downloads in their account as well as in the order email.</li>
+  <li><strong>Check email deliverability:</strong> if order emails land in spam, buyers assume they've been cheated; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</li>
+  <li><strong>Host large files sensibly:</strong> course videos don't belong on basic shared hosting. Use a video hosting service with privacy and domain restrictions.</li>
+  <li><strong>Test on a phone:</strong> many buyers download on mobile, so offer PDFs directly where you can, and explain how to open ZIP files when you can't.</li>
+</ul>
+
+<h2>Selling courses and memberships</h2>
+<p>Courses are different from downloads: people need ongoing access, not just a file.</p>
+<ul>
+  <li>Organise lessons into modules, with progress tracking and optional quizzes</li>
+  <li>Decide on access: lifetime, a fixed period such as one year, or while a subscription stays active</li>
+  <li>Offer a free preview lesson so buyers know what they're getting</li>
+  <li>Plan for support: a way for students to ask questions, and clear response times</li>
+  <li>Keep login simple, because forgotten passwords are a common support request</li>
+</ul>
+
+<h2>Piracy: what you can and can't control</h2>
+<p>Any file a buyer can download can be shared. You can't stop piracy completely, but you can make sharing less convenient and buying more attractive.</p>
+<ul>
+  <li><strong>Stamp PDFs</strong> with the buyer's name or email so people think twice before sharing; plugins can do this automatically</li>
+  <li><strong>Keep courses behind a login</strong> rather than offering video downloads, and consider limiting simultaneous logins</li>
+  <li><strong>Use licence keys</strong> for software, plugins and themes, tied to updates and support</li>
+  <li><strong>Add value beyond the file:</strong> updates, community access, support or certificates that pirated copies don't include</li>
+  <li><strong>Act on serious copies:</strong> platforms and hosting companies generally have a process for reporting copyright infringement</li>
+</ul>
+<p>Don't let anti-piracy measures annoy paying customers. Overly strict limits can end up hurting genuine buyers more than pirates.</p>
+
+<h2>Payments, GST and refunds</h2>
+<ul>
+  <li><strong>Payments:</strong> UPI and cards through an Indian gateway for local buyers, and international card support if you sell overseas; see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>.</li>
+  <li><strong>GST caution:</strong> the GST treatment of digital products and online courses, and of sales to overseas buyers, can differ from physical goods, and registration rules may apply differently. Speak to your CA before you launch, not after.</li>
+  <li><strong>Invoices:</strong> buyers, especially businesses, may need proper invoices, so set this up from day one.</li>
+  <li><strong>Refund policy:</strong> digital products can't be returned, so state clearly when refunds are and aren't given, for example for a duplicate purchase or a faulty file. Payment gateways usually expect a visible refund policy too.</li>
+</ul>
+
+<h2>Pages that sell digital products</h2>
+<ul>
+  <li><strong>A dedicated sales page</strong> for each product: who it's for, what's inside, format, file size or course length, and what buyers get straight after paying</li>
+  <li><strong>Samples:</strong> a free chapter, preview lesson or template screenshots</li>
+  <li><strong>Honest reviews</strong> from real buyers</li>
+  <li><strong>An FAQ</strong> covering access, devices, updates and refunds</li>
+  <li><strong>A free lead magnet</strong> to build an email list you can sell to later; see <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets and newsletters</a></li>
+</ul>
+<p>Authors and creators can build this into a wider personal site; see <a href="/blog/website-for-authors-content-creators/">websites for authors and content creators</a>.</p>
+
+<p>Ready to sell your e-books, courses or templates from your own site? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/landing-page-design/">landing page design</a> for a sales page that converts.</p>
 `,
   },
 ];

@@ -407,6 +407,10 @@ const LINKS = [
   ['whatsapp-on-business-website', '<h2>Best practices</h2>', '<p>These same features can also help you win repeat business from past customers; see <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a>.</p>\n\n'],
   ['conversion-rate-optimization-basics', '<h2>Quick wins that usually work</h2>', '<p>Pop-ups are a common thing to test; see <a href="/blog/exit-intent-popups/">when exit-intent pop-ups help and when they hurt</a> before adding one.</p>\n\n'],
   ['collect-display-customer-testimonials', '<h2>Permissions and honesty</h2>', '<p>Your Google reviews can sit alongside testimonials in these places too; see <a href="/blog/google-reviews-on-website/">how to show Google reviews on your website</a>.</p>\n\n'],
+  // Agent 21
+  ['accept-online-payments-wordpress-india', '<h2>Ways to take payments on WordPress</h2>', '<p>Still deciding between providers? See <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a> for what to compare, from settlement times to KYC and WooCommerce support.</p>\n\n'],
+  ['website-for-d2c-food-brands', '<h2>Content that sells</h2>', '<p>Planning subscribe-and-save for staples? See <a href="/blog/woocommerce-subscriptions/">selling subscriptions with WooCommerce</a> for how recurring plans and payments work in India.</p>\n\n'],
+  ['website-for-home-tutors-online-teachers', '<h2>Get found</h2>', '<p>When you\'re ready to sell notes, recorded courses or test series, see <a href="/blog/sell-digital-products-wordpress/">how to sell digital products on WordPress</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
