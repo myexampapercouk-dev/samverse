@@ -3075,6 +3075,8 @@ module.exports = [
   <li>Emails landing in the inbox, not spam (use a proper sending setup)</li>
 </ol>
 
+<p>For branding, content and inbox delivery in detail, see <a href="/blog/customize-woocommerce-emails/">how to customise WooCommerce order emails</a>.</p>
+
 <h2>Speed, mobile and SEO</h2>
 <ol start="24">
   <li>Checkout tested on real phones, start to finish</li>
@@ -4327,6 +4329,8 @@ module.exports = [
 
 <h2>5. Product schema</h2>
 <p>WooCommerce and SEO plugins add Product schema (price, availability, reviews), which can make your listings eligible for richer search results. Keep prices and stock status accurate. See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+
+<p>Those ratings should come from genuine customer reviews shown on the page; see <a href="/blog/woocommerce-product-reviews/">how to collect and display WooCommerce product reviews</a>.</p>
 
 <h2>6. Handle duplicate and thin pages</h2>
 <ul>
@@ -13656,6 +13660,8 @@ module.exports = [
   <li>Use your website for exclusive products or bundles</li>
 </ul>
 
+<p>Thinking of running your own marketplace, with other sellers listing on your site? See <a href="/blog/woocommerce-multi-vendor-marketplace/">building a multi-vendor marketplace with WooCommerce</a>.</p>
+
 <h2>Choosing a platform for your store</h2>
 <p>See <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for India</a> and the <a href="/blog/woocommerce-store-launch-checklist/">store launch checklist</a>.</p>
 `,
@@ -22633,6 +22639,287 @@ Template: astra
 <p>If your ads send people to a landing page instead, the Pixel and Conversions API are what connect those visits to results. The page itself matters just as much; see <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a>.</p>
 
 <p>Want Meta and Google tracking set up properly on your landing pages or online store? See <a href="/landing-page-design/">landing page design</a> or <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-product-reviews',
+    seoTitle: 'WooCommerce Product Reviews: Collect and Display Them',
+    title: 'WooCommerce Product Reviews: How to Collect, Moderate and Display Them',
+    description: 'How to get genuine product reviews in WooCommerce: verified-buyer settings, well-timed review requests, photo reviews, fair moderation, display tips and schema.',
+    date: '2026-09-28',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-seo-services'],
+    body: `
+<p>Reviews from real buyers answer the questions your product page can't: does the colour match the photos, does the size run small, did it arrive on time? For a small online store, a steady stream of honest reviews builds trust faster than almost anything else. Here's how to collect, moderate and display product reviews in WooCommerce without cutting corners.</p>
+
+<h2>Why product reviews matter</h2>
+<ul>
+  <li><strong>Trust for new visitors:</strong> shoppers who have never heard of your brand look for proof that others bought and were happy</li>
+  <li><strong>Answers to real questions:</strong> reviews mention fit, taste, quality and packaging in the words buyers actually use</li>
+  <li><strong>Fresh, unique content:</strong> product pages gain original text that competitors copying the manufacturer's description don't have</li>
+  <li><strong>Feedback for you:</strong> repeated complaints point to a problem with a product, a supplier or your courier</li>
+</ul>
+<p>Reviews are one part of a strong product page; see <a href="/blog/woocommerce-product-page-optimization/">WooCommerce product page optimization</a> for the rest.</p>
+
+<h2>Set up reviews properly in WooCommerce</h2>
+<p>WooCommerce has reviews built in. Under WooCommerce → Settings → Products you can:</p>
+<ul>
+  <li>Enable product reviews</li>
+  <li>Show a "verified owner" label on reviews from customers who actually bought the product</li>
+  <li>Allow reviews only from verified owners, which cuts spam and fake reviews sharply</li>
+  <li>Enable star ratings and make them required</li>
+</ul>
+<p>Reviews are stored as a type of WordPress comment, so your discussion settings, such as holding new comments for approval, generally apply to them too. New reviews appear under Products → Reviews for moderation. If your theme hides the reviews tab or shows it badly on mobile, fix that before you start asking for reviews.</p>
+
+<h2>Ask at the right moment</h2>
+<p>Most happy customers never leave a review unless asked. Timing and channel make a big difference.</p>
+<ul>
+  <li><strong>After delivery, not after payment.</strong> Nobody can review a product they haven't received. Courier delivery in India can take anything from a day to a week or more, so time the request from delivery (or from when you mark the order complete on delivery), not from checkout.</li>
+  <li><strong>Allow time to use it.</strong> A skincare product or a pressure cooker needs a few days of use; a greeting card doesn't.</li>
+  <li><strong>Make it one tap.</strong> Link straight to the review form for the product they bought.</li>
+  <li><strong>Use channels they read.</strong> Email works for many buyers. A WhatsApp message, sent only to customers who agreed to receive messages, often gets noticed faster. A small printed card in the parcel helps too.</li>
+  <li><strong>One reminder at most.</strong> Chasing repeatedly annoys customers.</li>
+</ul>
+<p>WooCommerce doesn't send review requests on its own. Review plugins such as Customer Reviews for WooCommerce, and several paid review services, add automated reminder emails, photo uploads and review widgets. Compare current features and pricing, and check how each one affects page speed before committing.</p>
+
+<h2>Photo and video reviews</h2>
+<p>A photo from a real customer, showing the saree in daylight or the cake as it actually arrived, is often more convincing than your studio shots. Photo reviews work especially well for fashion, home decor, food and handmade products.</p>
+<ul>
+  <li>Ask for photos explicitly, and say what helps: "show it in use" or "show the fit"</li>
+  <li>Compress and lazy-load review images so product pages stay fast on mobile data</li>
+  <li>Moderate photos before they go live, checking for other people's faces, addresses on parcel labels and anything inappropriate</li>
+  <li>Ask permission before reusing a customer's photo in ads or on social media</li>
+</ul>
+
+<h2>Moderation: what to remove and what to keep</h2>
+<p>Moderation exists to protect shoppers, not your pride. A clear, consistent policy helps:</p>
+<table>
+  <thead><tr><th>Remove or hold back</th><th>Keep and publish</th></tr></thead>
+  <tbody>
+    <tr><td>Spam, links and promotions</td><td>Honest negative reviews</td></tr>
+    <tr><td>Abusive or offensive language</td><td>Mixed reviews with pros and cons</td></tr>
+    <tr><td>Personal data such as phone numbers or addresses</td><td>Complaints about delivery or packaging</td></tr>
+    <tr><td>Reviews of a different product, or clearly not from a buyer</td><td>Short reviews, even a single line</td></tr>
+  </tbody>
+</table>
+<p>Reply to critical reviews publicly, calmly and with a fix: a replacement, a refund or an explanation. Future shoppers read your replies as closely as the review itself. See <a href="/blog/handle-negative-reviews/">how to handle negative reviews</a>.</p>
+
+<h2>Display reviews where they help</h2>
+<ul>
+  <li>Show the star rating and review count near the product title and price</li>
+  <li>Show ratings on shop and category pages so shoppers can compare quickly</li>
+  <li>On products with many reviews, let shoppers sort or filter them, for example by rating or by reviews with photos</li>
+  <li>Keep the "verified owner" label visible so genuine reviews stand out</li>
+  <li>Don't bury reviews in a collapsed tab on mobile where nobody finds them</li>
+</ul>
+<p>Product reviews and business reviews do different jobs. Product reviews belong on product pages; reviews of your business as a whole belong on your Google Business Profile, where they help local search. See <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a>.</p>
+
+<h2>Reviews, schema and Google</h2>
+<p>WooCommerce and most SEO plugins add Product structured data to product pages, including the average rating and review count once reviews exist. This can make your products eligible for star ratings in Google results, though Google decides whether to show them.</p>
+<ul>
+  <li>Only mark up reviews that are visible on the page</li>
+  <li>Don't copy Google Business Profile reviews or general testimonials into product schema</li>
+  <li>Never add ratings through custom code or plugin settings that aren't backed by real reviews</li>
+  <li>Test a few product pages with Google's Rich Results Test after theme or plugin changes</li>
+</ul>
+<p>More background: <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+
+<h2>Stay honest</h2>
+<p>Fake reviews are tempting when a new product has none, but they damage trust once noticed and can break consumer protection rules and platform policies. Keep it clean:</p>
+<ul>
+  <li>Never write reviews yourself, or ask staff, friends or family to review as if they were customers</li>
+  <li>Never buy reviews or swap them with other sellers</li>
+  <li>Don't delete or hide genuine negative reviews</li>
+  <li>If you offer anything for leaving a review, such as a coupon, offer it for any honest review rather than only positive ones, and disclose it; check current rules and platform policies first</li>
+</ul>
+<p>In India, the Bureau of Indian Standards has published a standard on online consumer reviews (IS 19000:2022) that sets out good practice for collecting, moderating and publishing them, and consumer protection rules cover misleading practices. Rules change, so check the current position or ask your lawyer if you're unsure.</p>
+
+<p>Want review requests, moderation and product schema set up properly on your store? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'customize-woocommerce-emails',
+    seoTitle: 'How to Customise WooCommerce Order Emails',
+    title: 'Customising WooCommerce Order Emails: Branding, Content and Deliverability',
+    description: 'Customise WooCommerce order emails: built-in settings, plugins, template overrides, what each email should say, inbox delivery, and WhatsApp or SMS updates.',
+    date: '2026-09-28',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Every WooCommerce order triggers emails: a confirmation to the customer, an alert to you, and updates as the order moves along. Out of the box they're plain and generic. A little work makes them look like your brand, answer customers' next questions and, most importantly, actually reach the inbox. Here's what to customise and how.</p>
+
+<h2>The emails WooCommerce sends</h2>
+<p>You'll find them under WooCommerce → Settings → Emails. Each one can be switched on or off, and its subject, heading and extra text edited.</p>
+<table>
+  <thead><tr><th>Email</th><th>Goes to</th><th>When</th></tr></thead>
+  <tbody>
+    <tr><td>New order</td><td>You (admin)</td><td>An order is placed</td></tr>
+    <tr><td>Processing order</td><td>Customer</td><td>Payment is received, or a Cash on Delivery order is placed</td></tr>
+    <tr><td>On-hold order</td><td>Customer</td><td>Payment is awaited, for example a bank transfer</td></tr>
+    <tr><td>Completed order</td><td>Customer</td><td>You mark the order complete</td></tr>
+    <tr><td>Refunded order</td><td>Customer</td><td>A full or partial refund is issued</td></tr>
+    <tr><td>Cancelled and failed order</td><td>You (admin)</td><td>An order is cancelled or a payment fails</td></tr>
+    <tr><td>Customer note, order details, account and password emails</td><td>Customer</td><td>When you or the customer trigger them</td></tr>
+  </tbody>
+</table>
+<p>Recent WooCommerce versions have added a few more emails and design options, so check the list in your own store.</p>
+
+<h2>Quick wins in the built-in settings</h2>
+<ul>
+  <li><strong>Sender name and address:</strong> use your brand name and an address on your own domain, such as orders@yourbrand.in, not a Gmail address</li>
+  <li><strong>Logo and colours:</strong> add a header image and set the base, background and text colours to match your brand</li>
+  <li><strong>Subjects and headings:</strong> make them specific, like "Your order #1234 is confirmed", rather than generic</li>
+  <li><strong>Additional content:</strong> a short, friendly line in each email, such as how long dispatch usually takes</li>
+  <li><strong>Footer:</strong> business name, support email, phone or WhatsApp number, and a link to your returns policy</li>
+  <li><strong>Admin recipients:</strong> send new order alerts to everyone who packs or approves orders; several addresses can be separated with commas</li>
+</ul>
+<p>Newer versions of WooCommerce have been adding more styling options and a live preview, so check what yours offers before reaching for a plugin.</p>
+
+<h2>Going further: plugins or template overrides</h2>
+<p>For layouts the settings can't handle, there are two routes.</p>
+<ul>
+  <li><strong>Email customiser plugins</strong> give you a visual editor for layout, fonts, sections and per-email content. They're the easiest option for most stores. Pick one that is actively maintained and compatible with your WooCommerce version.</li>
+  <li><strong>Template overrides:</strong> a developer copies WooCommerce's email templates into your theme and edits them. This gives full control, but always use a <a href="/blog/wordpress-child-theme-explained/">child theme</a> so theme updates don't wipe the changes, and check WooCommerce → Status after updates, which flags outdated template overrides.</li>
+</ul>
+<p>Keep the design simple either way. Most customers read order emails on a phone, so use a single column, readable text, a modest logo and no heavy images, which some email apps block by default.</p>
+
+<h2>What to put in each email</h2>
+<p>Good order emails answer the customer's next question before they pick up the phone.</p>
+<ul>
+  <li><strong>Confirmation:</strong> what they ordered, the total, payment method, delivery address and when to expect dispatch</li>
+  <li><strong>Cash on Delivery orders:</strong> the amount to keep ready, and whether they can pay by UPI on delivery if your courier supports it</li>
+  <li><strong>Shipping updates:</strong> courier name and tracking link; shipment tracking plugins can add these to your emails</li>
+  <li><strong>Invoices:</strong> a GST invoice attached or linked if you're registered; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a></li>
+  <li><strong>Help:</strong> how to reach you, and a link to your returns and refunds policy</li>
+</ul>
+<p>Watch the wording of the "Completed" email. Many Indian stores mark orders complete at dispatch, so a message saying "your order is complete" can arrive days before the parcel. Either reword it or add a custom "Shipped" status with its own email. Keep promotions light: a small "you might also like" block is fine, but order emails should mainly be about the order.</p>
+
+<h2>Make sure the emails arrive</h2>
+<p>The best-designed email is useless in the spam folder. By default WordPress sends mail through your web server, which many email providers treat with suspicion.</p>
+<ol>
+  <li>Send through proper SMTP, using an SMTP plugin connected to your business email provider or a transactional email service</li>
+  <li>Set up SPF, DKIM and DMARC for your domain; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a></li>
+  <li>Make sure the "From" address uses the domain you authenticated</li>
+  <li>Turn on email logging, so when a customer says an email never came you can check whether it was sent</li>
+  <li>Send test orders to Gmail, Outlook and a phone email app, and check both the inbox and spam</li>
+</ol>
+<p>Busy stores should also check the sending limits on their hosting or email plan, since shared hosting often caps outgoing mail.</p>
+
+<h2>WhatsApp and SMS alongside email</h2>
+<p>Many Indian customers check WhatsApp long before email. Order updates on WhatsApp or SMS can cut down "where is my order?" calls and help confirm COD orders before you ship them.</p>
+<ul>
+  <li><strong>WhatsApp:</strong> automated order messages use the WhatsApp Business Platform, usually through a provider, with pre-approved message templates and the customer's opt-in</li>
+  <li><strong>SMS:</strong> business SMS in India generally needs DLT registration of your sender ID and message templates; your SMS provider can guide you through it</li>
+  <li><strong>Keep email as the record:</strong> invoices, full order details and policies still belong in email</li>
+  <li><strong>Don't duplicate everything:</strong> pick key moments like confirmation, dispatch and out for delivery, rather than sending every update on every channel</li>
+</ul>
+<p>For WhatsApp on the website itself, see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
+
+<h2>Test before and after every change</h2>
+<ul>
+  <li>Place test orders with each payment method you offer (UPI or cards, COD, bank transfer), since each can trigger different emails</li>
+  <li>Check how emails look on small screens and in dark mode</li>
+  <li>Re-test after WooCommerce, theme or email plugin updates</li>
+  <li>Every few months, place a real order yourself and read every message you receive as a customer would</li>
+</ul>
+
+<p>Want your store's emails branded, reliable and backed up by WhatsApp updates? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for wider work on your site.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-multi-vendor-marketplace',
+    seoTitle: 'Multi-Vendor Marketplace With WooCommerce: A Guide',
+    title: 'Building a Multi-Vendor Marketplace With WooCommerce: A Practical Guide',
+    description: 'When a WooCommerce multi-vendor marketplace makes sense, how plugins work, commissions and payouts, GST and legal basics, vendor onboarding and operations.',
+    date: '2026-09-28',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'website-for-startups'],
+    body: `
+<p>A multi-vendor marketplace lets other sellers list and sell products on your website while you run the platform and earn a commission. Think of a marketplace for handloom weavers, organic farmers in one region, or suppliers in a niche industry. WooCommerce can power this with the right plugin, but the technology is the easy part. Here's what to think through before you build one.</p>
+
+<h2>When a marketplace makes sense</h2>
+<p>A marketplace is a business model, not a feature. It tends to work when:</p>
+<ul>
+  <li>Buyers in your niche struggle to find good sellers, and sellers struggle to reach buyers</li>
+  <li>You already have access to sellers, through a community, a trade cluster or an association</li>
+  <li>You can bring buyers yourself, through content, SEO, social media or an existing audience</li>
+  <li>You're ready to handle support, disputes and quality control, not just software</li>
+</ul>
+<table>
+  <thead><tr><th>Model</th><th>Who sells</th><th>Who takes payment</th></tr></thead>
+  <tbody>
+    <tr><td>Single-vendor store</td><td>You</td><td>You</td></tr>
+    <tr><td>Directory or listing site</td><td>Listed businesses, directly to buyers</td><td>The businesses themselves; you may charge for listings</td></tr>
+    <tr><td>Multi-vendor marketplace</td><td>Many vendors, on your site</td><td>Usually you, paying vendors after deducting commission</td></tr>
+  </tbody>
+</table>
+<p>If you only sell your own products, a single-vendor store is far simpler. If sellers just need to be found, a listing site may be enough; see <a href="/blog/directory-website-wordpress/">directory websites on WordPress</a>.</p>
+
+<h2>How it works on WooCommerce</h2>
+<p>WooCommerce on its own sells one store's products. Multi-vendor plugins add the marketplace layer. Well-known options include Dokan, WCFM Marketplace, MultiVendorX, WC Vendors and WooCommerce's own Product Vendors extension. Features vary by plugin and plan, but typically include:</p>
+<ul>
+  <li>Vendor registration and a front-end dashboard for products, orders and earnings</li>
+  <li>Individual vendor store pages with their own details and ratings</li>
+  <li>Commission settings and payout or withdrawal requests</li>
+  <li>Splitting a cart with products from several vendors into separate vendor orders</li>
+  <li>Per-vendor shipping settings</li>
+</ul>
+<p>Compare current features and pricing carefully, and check compatibility with the other plugins you need, such as your payment gateway, shipping and GST invoicing. Anything unusual, like special commission rules or ERP integrations, may need <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a>.</p>
+
+<h2>Commissions, payments and payouts</h2>
+<p>Decide how money flows before you choose tools.</p>
+<ul>
+  <li><strong>Commission model:</strong> a percentage, a fixed fee per sale, different rates per category, a monthly vendor subscription, or a mix</li>
+  <li><strong>Who pays what:</strong> payment gateway fees, shipping charges and returns, and how commission is reversed when an order is refunded</li>
+  <li><strong>Payouts:</strong> manual payouts on a fixed schedule are simplest to start with; some Indian payment gateways offer split-settlement products for marketplaces, which usually need extra approval and KYC</li>
+  <li><strong>Holding period:</strong> many marketplaces release payouts only after the return window closes</li>
+</ul>
+<p>For the payment side in general, see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a>.</p>
+
+<h2>Tax and legal basics to check early</h2>
+<p>A marketplace in India carries obligations that a normal store doesn't. In broad terms, and subject to current rules:</p>
+<ul>
+  <li>Under GST, an e-commerce operator generally has to register and may need to collect tax at source (TCS) on sales that vendors make through the platform</li>
+  <li>Vendors selling through a marketplace usually need their own GST registration, though exemptions for small sellers have changed over time</li>
+  <li>Consumer protection rules for e-commerce generally expect marketplaces to show seller details, run a grievance redressal process and avoid misleading practices</li>
+  <li>You'll need clear vendor terms, buyer terms, and returns and privacy policies</li>
+</ul>
+<p>This isn't legal or tax advice. Speak to your CA and a lawyer before launch, because these rules shape your commission structure, invoices and payouts.</p>
+
+<h2>Vendor onboarding and quality control</h2>
+<p>A marketplace is judged by its weakest seller. Build a simple, firm process:</p>
+<ol>
+  <li><strong>Application:</strong> business details, what they sell and sample photos</li>
+  <li><strong>Verification:</strong> PAN, GSTIN where applicable and bank details, checked before the first payout</li>
+  <li><strong>Agreement:</strong> commission, dispatch times, returns, and what happens if standards slip</li>
+  <li><strong>Listing guidelines:</strong> photo standards, description format and pricing rules, with new products approved before they go live</li>
+  <li><strong>Training:</strong> a short guide or video on using the vendor dashboard</li>
+</ol>
+<p>Many small vendors struggle with product photos and descriptions. Offering help, or a done-for-you listing service, lifts quality across the whole site.</p>
+
+<h2>Day-to-day operations</h2>
+<ul>
+  <li><strong>Shipping:</strong> vendors ship their own orders, or stock is collected centrally. Vendor shipping is easier to start but harder to control</li>
+  <li><strong>Customer support:</strong> buyers will contact you, not the vendor, so decide who answers what and how fast vendors must respond</li>
+  <li><strong>Returns and disputes:</strong> a clear process for damaged items, wrong products and delays</li>
+  <li><strong>Reviews:</strong> product and vendor ratings help buyers choose and keep sellers on their toes</li>
+  <li><strong>Performance tracking:</strong> dispatch times, cancellations and complaints for each vendor</li>
+</ul>
+
+<h2>Hosting, speed and security at scale</h2>
+<p>A marketplace has many people logging in, uploading images and editing products, which means more server load and more risk than a simple store.</p>
+<ul>
+  <li>Choose hosting with room to grow, not the cheapest shared plan</li>
+  <li>Compress vendor-uploaded images automatically</li>
+  <li>Give vendors only the access they need, never admin rights</li>
+  <li>Test updates on a staging site first, since marketplace plugins touch orders and payouts</li>
+  <li>Keep daily backups, including the database</li>
+</ul>
+
+<h2>Start small, then grow</h2>
+<p>Launch with one category, one region or a small group of trusted vendors. Prove that buyers come and that vendors fulfil orders reliably, then expand. Cost depends on the plugin and plan, custom features, design, payment and shipping integrations, and ongoing maintenance; the <a href="/website-cost-calculator/">website cost calculator</a> gives a starting point.</p>
+
+<p>Planning a marketplace? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/website-for-startups/">websites for startups</a> if you're launching a new venture.</p>
 `,
   },
 ];

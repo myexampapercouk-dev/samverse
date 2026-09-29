@@ -397,5 +397,8 @@
  "blog-sell-digital-products-wordpress": "fe181f0e93bf57a06da1e5438c380954559127da",
  "blog-call-tracking-small-business": "e536d1ac1e5f89a303869dcc7ba0c60ca0a141f8",
  "blog-google-ads-conversion-tracking-setup": "d0f873c84c74daa49c23525cdf72d40d42859966",
- "blog-meta-pixel-conversions-api": "cabbc051b8905d0eb618deece3575b88cc80a6eb"
+ "blog-meta-pixel-conversions-api": "cabbc051b8905d0eb618deece3575b88cc80a6eb",
+ "blog-woocommerce-product-reviews": "540c035cbe9bde6cfd83bdd0a28c8d9dd47347f0",
+ "blog-customize-woocommerce-emails": "984e1f4354be36ef292562485679cb51a130177e",
+ "blog-woocommerce-multi-vendor-marketplace": "3bb577fd492efba7e918b0981d0d5ec852d747c9"
 }

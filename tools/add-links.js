@@ -415,6 +415,10 @@ const LINKS = [
   ['ga4-events-explained', '<h2>Reading the results</h2>', '<p>A tap on a phone number shows intent, not a conversation; see <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a> for ways to measure real calls and WhatsApp chats.</p>\n\n'],
   ['website-ready-for-google-ads', '<h2>4. A clear call to action</h2>', '<p>For a step-by-step walkthrough, see <a href="/blog/google-ads-conversion-tracking-setup/">how to set up Google Ads conversion tracking on WordPress</a>.</p>\n\n'],
   ['landing-page-mistakes-google-ads', '<h2>10. Never testing anything</h2>', '<p>If you advertise on Facebook or Instagram, see <a href="/blog/meta-pixel-conversions-api/">the Meta Pixel and Conversions API explained</a>.</p>\n\n'],
+  // Agent 22
+  ['woocommerce-seo-guide', '<h2>6. Handle duplicate and thin pages</h2>', '<p>Those ratings should come from genuine customer reviews shown on the page; see <a href="/blog/woocommerce-product-reviews/">how to collect and display WooCommerce product reviews</a>.</p>\n\n'],
+  ['woocommerce-store-launch-checklist', '<h2>Speed, mobile and SEO</h2>', '<p>For branding, content and inbox delivery in detail, see <a href="/blog/customize-woocommerce-emails/">how to customise WooCommerce order emails</a>.</p>\n\n'],
+  ['own-website-vs-marketplaces', '<h2>Choosing a platform for your store</h2>', '<p>Thinking of running your own marketplace, with other sellers listing on your site? See <a href="/blog/woocommerce-multi-vendor-marketplace/">building a multi-vendor marketplace with WooCommerce</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

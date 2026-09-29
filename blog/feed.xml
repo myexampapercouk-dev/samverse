@@ -2526,5 +2526,26 @@
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
     <description>What the Meta Pixel and Conversions API do for Facebook and Instagram ads, which events to track, setup options on WordPress, testing, and privacy basics.</description>
   </item>
+  <item>
+    <title>WooCommerce Product Reviews: How to Collect, Moderate and Display Them</title>
+    <link>https://samverse.space/blog/woocommerce-product-reviews/</link>
+    <guid>https://samverse.space/blog/woocommerce-product-reviews/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to get genuine product reviews in WooCommerce: verified-buyer settings, well-timed review requests, photo reviews, fair moderation, display tips and schema.</description>
+  </item>
+  <item>
+    <title>Customising WooCommerce Order Emails: Branding, Content and Deliverability</title>
+    <link>https://samverse.space/blog/customize-woocommerce-emails/</link>
+    <guid>https://samverse.space/blog/customize-woocommerce-emails/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Customise WooCommerce order emails: built-in settings, plugins, template overrides, what each email should say, inbox delivery, and WhatsApp or SMS updates.</description>
+  </item>
+  <item>
+    <title>Building a Multi-Vendor Marketplace With WooCommerce: A Practical Guide</title>
+    <link>https://samverse.space/blog/woocommerce-multi-vendor-marketplace/</link>
+    <guid>https://samverse.space/blog/woocommerce-multi-vendor-marketplace/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>When a WooCommerce multi-vendor marketplace makes sense, how plugins work, commissions and payouts, GST and legal basics, vendor onboarding and operations.</description>
+  </item>
 </channel>
 </rss>
