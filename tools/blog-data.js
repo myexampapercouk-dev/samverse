@@ -5492,6 +5492,8 @@ module.exports = [
 <h2>Start with clear positioning</h2>
 <p>Say who you help and with what, in one sentence: "We build and maintain Shopify and WooCommerce stores for D2C brands" is far stronger than a list of 30 technologies.</p>
 
+<p>If your business sells and installs computers, laptops and networking hardware rather than software, see <a href="/blog/website-for-it-hardware-computer-dealers/">websites for computer, laptop and IT hardware dealers</a>.</p>
+
 <h2>Essential pages</h2>
 <ol>
   <li><strong>Services or products:</strong> one page each, explaining the problem, solution, process and outcomes</li>
@@ -5789,6 +5791,8 @@ module.exports = [
 </ul>
 <p>For standard products, simple online ordering with fixed price tiers can work; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 
+<p>If you make shop boards, LED letters and other signage rather than printed products and packaging, see <a href="/blog/website-for-signage-companies/">websites for signage and LED board companies</a>.</p>
+
 <h2>SEO for printing and packaging</h2>
 <ul>
   <li>Target specific product searches: "custom rigid boxes manufacturer", "printed pouches for food"</li>
@@ -5828,6 +5832,8 @@ module.exports = [
   <li><strong>Careers:</strong> security and facility companies hire constantly, so a careers page helps recruitment too</li>
   <li><strong>Enquiry form:</strong> service needed, site type, location and scale</li>
 </ol>
+
+<p>If your business installs CCTV, access control and alarm systems rather than providing guards, see <a href="/blog/website-for-cctv-security-installers/">websites for CCTV and security system installers</a>.</p>
 
 <h2>Build trust</h2>
 <ul>
@@ -17988,6 +17994,299 @@ Template: astra
 <p>You don't need a full price list, but "starting from" guidance for common jobs cuts down on price-shopping calls and shows you have nothing to hide.</p>
 
 <p>Want more bookings in the summer rush and more AMC renewals the rest of the year? See <a href="/wordpress-website-development/">WordPress website development</a>, and <a href="/landing-page-design/">landing page design</a> for your seasonal campaigns.</p>
+`,
+  },
+  {
+    slug: 'website-for-cctv-security-installers',
+    seoTitle: 'Websites for CCTV and Security System Installers',
+    title: 'Websites for CCTV, Access Control and Security System Installers',
+    description: 'How CCTV, access control and security system installers can use their website to win site survey bookings, AMC contracts and local business clients.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>When someone searches for "CCTV installation near me" after a break-in, or a facility manager needs access control for a new office floor, they want three answers quickly: do you handle properties like mine, can you be trusted with our security, and how soon can someone come and see the site? A good installer website answers all three and makes booking a site survey the easiest next step.</p>
+
+<p>This guide is for businesses that design, install and maintain CCTV, access control, alarm and related systems. If you mainly provide guards and facility staff, see <a href="/blog/website-for-security-facility-management/">websites for security and facility management companies</a> instead.</p>
+
+<h2>What customers look for before they call</h2>
+<ul>
+  <li><strong>Relevance:</strong> whether you work with homes, shops, societies, offices or factories like theirs</li>
+  <li><strong>Systems and brands:</strong> which cameras, recorders and access control systems you install and support</li>
+  <li><strong>Service area:</strong> the cities and localities you actually cover</li>
+  <li><strong>After-sales support:</strong> warranty handling, repairs and annual maintenance</li>
+  <li><strong>Trust:</strong> real installations, a physical office, genuine reviews and a named contact person</li>
+</ul>
+<p>Most visitors won't read every page. They scan for these answers, then call, send a WhatsApp message or fill in a form.</p>
+
+<h2>Organise solutions by customer type</h2>
+<p>Customers think about their property, not your product categories. Alongside your service pages, create solution pages for the main types of customer you serve:</p>
+<table>
+  <thead>
+    <tr><th>Customer type</th><th>What they usually care about</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Homes and villas</td><td>Viewing cameras on the phone, video door phones, night vision, neat wiring</td></tr>
+    <tr><td>Housing societies</td><td>Gate and perimeter coverage, boom barriers, visitor management, recording retention</td></tr>
+    <tr><td>Shops and showrooms</td><td>Cash counter coverage, remote viewing for owners, theft deterrence</td></tr>
+    <tr><td>Offices</td><td>Access control, attendance, visitor logs, integration with the office network</td></tr>
+    <tr><td>Factories and warehouses</td><td>Large outdoor areas, long cable runs, multi-site monitoring</td></tr>
+    <tr><td>Schools and hospitals</td><td>Entry control, coverage of common areas, reliability and quick support</td></tr>
+  </tbody>
+</table>
+<p>Each page should explain typical requirements, the systems you would normally recommend, photos from similar sites and a clear button to book a survey.</p>
+
+<h2>Service pages for each system</h2>
+<p>People also search for each system separately, so give the major ones their own pages:</p>
+<ul>
+  <li>CCTV installation: IP and HD analogue cameras, NVR/DVR setup and mobile viewing</li>
+  <li>Access control: biometric, RFID card and face recognition systems, electronic door locks</li>
+  <li>Video door phones and intercoms</li>
+  <li>Intrusion alarms and fire alarm systems, if you install them</li>
+  <li>Boom barriers, gate automation and attendance systems</li>
+  <li>Repairs, upgrades and shifting of existing systems</li>
+</ul>
+<p>Answer the practical questions customers worry about: how many days of recording they will get, whether they can watch cameras on a phone, what happens during a power cut and how long installation usually takes. Honest, plain answers build more trust than a page full of specifications.</p>
+
+<h2>Show the brands you work with</h2>
+<p>Many buyers search by brand, such as Hikvision, CP Plus, Dahua, Honeywell or Matrix. A brands page, or a brands section on each service page, helps you appear for those searches. Be accurate:</p>
+<ul>
+  <li>Only say "authorised dealer" or "partner" if you actually hold that status, and follow each brand's rules on using its logo</li>
+  <li>Say which brands you install and which you can service, since many customers already have a system fitted by someone else</li>
+  <li>Certification and compliance requirements for CCTV products sold in India have been changing, so check current rules and only claim certifications your products genuinely hold</li>
+</ul>
+
+<h2>Make site survey booking easy</h2>
+<p>For most installers the site survey is the real conversion. Make it the main call to action on every page, with a short form asking for:</p>
+<ol>
+  <li>Property type and approximate size</li>
+  <li>What they need: new installation, upgrade, repair or AMC</li>
+  <li>Approximate number of cameras or doors, if known</li>
+  <li>Locality and pin code</li>
+  <li>Preferred date and time for the visit</li>
+</ol>
+<p>Add a WhatsApp button so people can send photos of their premises or existing setup; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a>. Keep phone numbers tappable on mobile and reply quickly, because someone who has just had a theft rarely waits a day for a call back.</p>
+
+<h2>Sell annual maintenance contracts</h2>
+<p>AMCs bring steady, repeat revenue. A dedicated AMC page helps you win them from your own customers and from people whose original installer is no longer answering the phone. Cover:</p>
+<ul>
+  <li>What's included: preventive visits, camera cleaning and alignment, recorder and hard disk health checks</li>
+  <li>Response times for breakdowns and how to raise a complaint</li>
+  <li>Whether parts are covered or charged separately</li>
+  <li>Whether you take over systems installed by other companies</li>
+</ul>
+<p>A simple service request form, or a WhatsApp number used only for support, shows buyers you take after-sales seriously. Housing societies and offices in particular compare AMC terms before choosing an installer.</p>
+
+<h2>Build trust carefully</h2>
+<ul>
+  <li>A project gallery of real installations (neat cable work, control rooms, gate setups), shared with client permission and without revealing sensitive camera views or exact locations</li>
+  <li>Short case studies: property type, problem, system installed and what changed for the client</li>
+  <li>How technicians are trained and verified, and how you handle customers' passwords and footage</li>
+  <li>Genuine Google reviews, years in business and your office address</li>
+</ul>
+<p>Security customers are giving you access to their premises and recordings, so a clear note on privacy and data handling matters more here than in most industries.</p>
+
+<h2>Local SEO and speed</h2>
+<p>Installers win most of their work locally, so visibility in your own city matters most:</p>
+<ul>
+  <li>Target searches like "CCTV installation in {city}", "access control system {city}" and "CCTV AMC {area}"</li>
+  <li>Keep your Google Business Profile complete, with photos of real installations and your service area</li>
+  <li>Create area pages only where you genuinely work, with useful local details; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages done right</a></li>
+  <li>Add FAQ sections answering common questions about storage, mobile viewing and maintenance</li>
+</ul>
+<p>Keep the site fast on mobile data: compress project photos, avoid heavy sliders and make sure the survey form loads quickly on a phone.</p>
+
+<h2>Need a website that brings in survey bookings?</h2>
+<p>I build WordPress websites for installers and service businesses, with solution pages, booking forms and local SEO built in. See <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-it-hardware-computer-dealers',
+    title: 'Websites for Computer, Laptop and IT Hardware Dealers',
+    description: 'What computer, laptop and IT hardware dealers and system integrators need on their website: product catalogue, B2B quote requests, corporate pages and service.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>A computer dealer's website has to serve very different visitors. One person wants a laptop for college this weekend. Another is an office administrator who needs forty laptops, a server and a new Wi-Fi network before a team moves in next month. Both will judge you by your website before they call, and both need to find what they want quickly.</p>
+
+<p>This guide is for dealers, resellers and system integrators who sell and support computers, laptops, networking and other IT hardware. If you mainly repair devices, see <a href="/blog/website-for-mobile-laptop-repair/">websites for mobile and laptop repair shops</a>.</p>
+
+<h2>Know your two audiences</h2>
+<p>Most dealers serve both retail buyers and business buyers. Their journeys are different, so plan pages and calls to action for each:</p>
+<table>
+  <thead>
+    <tr><th>Question</th><th>Retail buyers</th><th>Business buyers</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Typical need</td><td>One laptop, desktop, printer or accessory</td><td>Bulk devices, servers, networking, licences and support</td></tr>
+    <tr><td>What they check</td><td>Models in stock, price, brand, warranty, store location</td><td>Range, capacity to deliver, GST invoicing, after-sales service, references</td></tr>
+    <tr><td>Best next step</td><td>Call, WhatsApp or visit the store</td><td>Request a quote or book a requirement discussion</td></tr>
+  </tbody>
+</table>
+<p>A homepage that clearly offers both paths, for example "Shop for yourself" and "IT solutions for business", saves each visitor from wading through content meant for the other.</p>
+
+<h2>A product catalogue that works</h2>
+<p>You don't need to list every model you can source, but you do need a catalogue organised the way buyers think:</p>
+<ul>
+  <li><strong>Categories:</strong> laptops, desktops, workstations, servers and storage, networking, printers, UPS, peripherals and software licences</li>
+  <li><strong>Brand filters:</strong> buyers often search for a specific brand such as Dell, HP, Lenovo, Acer or Asus</li>
+  <li><strong>Key specifications:</strong> processor, memory, storage, screen and warranty, shown consistently</li>
+  <li><strong>Use-case pages:</strong> laptops for students, for design work, for office staff or for gaming</li>
+</ul>
+<p>Hardware prices change often, so many dealers use a catalogue with "Get best price" buttons instead of fixed prices, and sell only accessories and stable items online. Whichever you choose, keep what you show accurate; see <a href="/blog/show-prices-on-website/">should you show prices on your website?</a> WooCommerce can handle both approaches, including catalogue-only products and quote requests.</p>
+
+<h2>B2B quote requests</h2>
+<p>For business buyers, the quote request is the main conversion. Make it easy to send a complete requirement in one go:</p>
+<ol>
+  <li>Items needed, with quantity and any preferred brand or specification</li>
+  <li>Company name, GSTIN and billing details</li>
+  <li>Delivery location and deadline</li>
+  <li>Whether installation, configuration or data migration is needed</li>
+  <li>An upload option for a requirement list or BOQ</li>
+</ol>
+<p>A "quote list" feature, where buyers add several products and submit them together, works well for mixed orders. Business buyers usually want a proper GST invoice so they can claim input tax credit, so mention this clearly. If you also take online orders, see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>.</p>
+
+<h2>Pages for corporate clients</h2>
+<p>System integrators win bigger contracts, and those buyers want to see solutions rather than products. Useful pages include:</p>
+<ul>
+  <li>Office IT setup for new offices and expansions</li>
+  <li>Networking, structured cabling and Wi-Fi</li>
+  <li>Servers, storage and backup</li>
+  <li>Laptop and desktop rental, if you offer it</li>
+  <li>Sector pages for schools, hospitals, startups or factories, where you have real experience</li>
+</ul>
+<p>Procurement teams also look for a downloadable company profile, your GST and registration details, and client names or logos (only with permission). If you are registered to sell on government portals such as GeM, say so on the relevant page.</p>
+
+<h2>Service and support</h2>
+<p>After-sales service is what keeps corporate clients with you for years. Explain it clearly:</p>
+<ul>
+  <li>How warranty claims work for the brands you sell, and how you help customers with them</li>
+  <li>Annual maintenance contracts for office IT, with what's included and response times</li>
+  <li>On-site support, installation and setup services</li>
+  <li>A simple support request form and a WhatsApp number for existing customers</li>
+</ul>
+
+<h2>Trust signals that matter</h2>
+<ul>
+  <li>Authorised reseller or partner status, only if you genuinely hold it, following each brand's logo rules</li>
+  <li>A clear promise on genuine, new products, and honest labelling of any refurbished stock</li>
+  <li>Photos of your real store, warehouse and team</li>
+  <li>Genuine Google reviews, years in business and your full address</li>
+  <li>Certifications your engineers actually hold</li>
+</ul>
+
+<h2>Local SEO and speed</h2>
+<p>Most dealer searches are local, such as "laptop dealer in {city}", "Dell laptop showroom {area}", "networking solutions company {city}" or "IT AMC services {city}". To show up:</p>
+<ul>
+  <li>Keep your Google Business Profile complete, with store photos, hours and accurate categories</li>
+  <li>Write unique category and brand pages rather than copying manufacturer descriptions</li>
+  <li>Add product schema to catalogue pages so search engines understand them</li>
+</ul>
+<p>Large catalogues get slow quickly. Compress product images, use good hosting and caching, and check the site on a phone over mobile data before launch.</p>
+
+<h2>Ready to build your catalogue?</h2>
+<p>I build WooCommerce catalogues and stores for dealers, with quote requests, brand filters and GST-ready ordering. See <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-signage-companies',
+    title: 'Websites for Signage, LED Board and Branding Companies',
+    description: 'What signage, LED board and branding companies need on their website: a strong project portfolio, sign type pages, detailed quote forms and B2B rollout pages.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'landing-page-design'],
+    body: `
+<p>A café owner opening next month needs a lit board over the shopfront. A retail brand needs the same signage made and installed across twenty outlets in different cities. A hospital wants wayfinding signs for a new block. Each of them will look at your website before asking for a quote, and each wants to know the same things: have you made signs like this before, will they look good and last, and how quickly can you deliver and install?</p>
+
+<p>This guide is for companies that design, fabricate and install signage: shop boards, LED and acrylic letters, glow signs, neon, digital displays, wayfinding and in-store branding. If your main work is printed products and packaging, see <a href="/blog/website-for-printing-packaging-companies/">websites for printing and packaging companies</a> instead.</p>
+
+<h2>What signage buyers want to know</h2>
+<ul>
+  <li><strong>Proof of work:</strong> real signs you have made, ideally for businesses like theirs</li>
+  <li><strong>Options:</strong> the sign types, materials and lighting you offer, and what suits their budget</li>
+  <li><strong>Durability:</strong> how your signs cope with sun, dust and monsoon rain</li>
+  <li><strong>End-to-end service:</strong> whether you handle design, fabrication and installation, or only part of it</li>
+  <li><strong>Timelines and coverage:</strong> how long a typical job takes and which cities you install in</li>
+  <li><strong>After-sales:</strong> who fixes it when a letter stops glowing</li>
+</ul>
+<p>Answer these clearly and visitors won't need to call three competitors just to compare the basics.</p>
+
+<h2>A portfolio that sells the work</h2>
+<p>Signage is visual, so your portfolio is the most important part of the site. Organise it so buyers can find relevant examples quickly:</p>
+<ul>
+  <li>Filter projects by sign type (ACP boards, LED letters, neon, wayfinding) and by sector (retail, restaurants, clinics, offices, real estate)</li>
+  <li>For each project, note what was made, the materials, approximate size, lighting and the city</li>
+  <li>Show lit signs in both daytime and night-time photos, because customers will see them both ways</li>
+  <li>Include before-and-after shots of shopfronts where you can</li>
+  <li>Name clients or show their logos only with permission</li>
+</ul>
+<p>For bigger jobs such as multi-outlet rollouts or large facades, write short case studies: the brief, the challenge (a tight deadline, difficult access or strict brand guidelines), what you delivered and how installation went. See <a href="/blog/write-case-studies-business-website/">how to write case studies for your website</a>.</p>
+
+<h2>Pages for each sign type</h2>
+<p>People search for specific kinds of signage, so give each major type its own page:</p>
+<table>
+  <thead>
+    <tr><th>Sign type</th><th>What buyers usually ask</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ACP boards with 3D letters</td><td>Finish options, lit or non-lit, how well they last outdoors</td></tr>
+    <tr><td>LED and acrylic letters</td><td>Front-lit or back-lit, letter sizes, power use, warranty on LEDs</td></tr>
+    <tr><td>Glow sign boards and light boxes</td><td>Budget options, replacing the printed face later</td></tr>
+    <tr><td>LED neon signs</td><td>Custom text and logos, colours, indoor use</td></tr>
+    <tr><td>Digital LED displays and video walls</td><td>Screen size, viewing distance, how content is updated</td></tr>
+    <tr><td>Wayfinding and safety signs</td><td>Standard designs, quantities, installation across floors</td></tr>
+    <tr><td>Office and in-store branding</td><td>Reception logos, wall graphics, window films, display stands</td></tr>
+  </tbody>
+</table>
+<p>Each page should show real photos, the materials and lighting options you offer, typical uses, what affects the price (size, material, lighting, installation height and access) and a clear quote button. Short guides such as "ACP or acrylic signage?" or "front-lit vs back-lit letters" help buyers decide and bring in extra search traffic.</p>
+
+<h2>Quote forms that capture the right details</h2>
+<p>Signage prices depend heavily on specifications, so a well-planned quote form saves both sides time. Ask for:</p>
+<ol>
+  <li>Sign type, with a "not sure, please suggest" option</li>
+  <li>Approximate width and height</li>
+  <li>Indoor or outdoor, lit or non-lit</li>
+  <li>Logo and artwork upload (AI, CDR, PDF or a clear image)</li>
+  <li>Installation address, floor or height, and whether an old sign needs removing</li>
+  <li>Quantity or number of locations</li>
+  <li>Deadline, such as a store opening date</li>
+</ol>
+<p>Add a WhatsApp button so customers can send photos of the shopfront or wall, which often tells you more than the form does; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a>. For larger projects, offer a site visit for measurement. Rather than listing fixed prices, explain what drives the cost so enquiries arrive with realistic expectations.</p>
+
+<h2>Pages for brands and multi-location clients</h2>
+<p>Retail chains, franchises, banks, hospitals, builders and corporate offices bring repeat, higher-value work. They want to see that you can deliver consistently at scale:</p>
+<ul>
+  <li><strong>Rollout capability:</strong> how you handle surveys, production and installation across many sites, and which cities you cover directly or through installation partners</li>
+  <li><strong>Brand consistency:</strong> matching colours, fonts and specifications to brand guidelines at every outlet</li>
+  <li><strong>Project management:</strong> a single point of contact, progress updates and photos after each installation</li>
+  <li><strong>Vendor paperwork:</strong> GST details, a downloadable company profile and references</li>
+  <li><strong>Sector pages:</strong> retail, hospitality, healthcare, real estate or corporate offices, only where you have real projects to show</li>
+</ul>
+<p>If you run Google Ads for searches like "LED sign board maker", send that traffic to a focused landing page with relevant portfolio examples and a short quote form, not to your homepage.</p>
+
+<h2>Trust signals that matter</h2>
+<ul>
+  <li>Photos or a short video of your workshop, machines and team, showing what you make in-house</li>
+  <li>Clear warranty terms for LED modules, power supplies and installation, including what isn't covered</li>
+  <li>Safety practices for working at height and handling electrical connections</li>
+  <li>Repair, relighting and maintenance services for existing signs, including ones made by others</li>
+  <li>Genuine Google reviews, years in business and your workshop address</li>
+</ul>
+<p>Outdoor signs and hoardings may need approval from the local municipal body, and the rules differ from city to city. If you help clients with this, say so, but check current local rules and never promise approvals.</p>
+
+<h2>Local SEO and speed</h2>
+<p>Most signage work comes from your own city and nearby towns, through searches like "sign board maker in {city}", "LED sign board {city}", "ACP signage {area}" and "neon sign shop near me". To show up:</p>
+<ul>
+  <li>Keep your Google Business Profile updated with photos of recent installations</li>
+  <li>Ask happy clients for a review once their sign is up and working</li>
+  <li>Create city pages only where you genuinely install, with local projects on each</li>
+  <li>Add FAQs about materials, lighting, timelines and maintenance</li>
+</ul>
+<p>Portfolio-heavy sites get slow quickly. Compress photos, use thumbnails that open into larger images, avoid autoplaying videos and heavy sliders, and test the site on a phone over mobile data.</p>
+
+<h2>Need a website that wins signage projects?</h2>
+<p>I build WordPress websites for fabricators and B2B businesses, with filterable portfolios, detailed quote forms and local SEO built in. See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, or <a href="/landing-page-design/">landing page design</a> for your ad campaigns.</p>
 `,
   },
 ];

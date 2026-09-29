@@ -347,6 +347,10 @@ const LINKS = [
   ['website-for-construction-companies', '<h2>Performance with lots of photos</h2>', '<p>Specialist finishing trades need a slightly different approach; see <a href="/blog/website-for-painting-contractors/">websites for painting contractors</a>.</p>\n\n'],
   ['website-for-construction-companies', '<h2>Show projects properly</h2>', '<p>If you specialise in fixing leaks and dampness rather than building, see <a href="/blog/website-for-waterproofing-companies/">websites for waterproofing companies</a>.</p>\n\n'],
   ['website-for-home-services', '<h2>Local SEO is everything</h2>', '<p>If AC repair, installation and maintenance contracts are your main business, see the more detailed guide to <a href="/blog/website-for-ac-repair-services/">websites for AC repair services</a>.</p>\n\n'],
+  // Agent 05
+  ['website-for-security-facility-management', '<h2>Build trust</h2>', '<p>If your business installs CCTV, access control and alarm systems rather than providing guards, see <a href="/blog/website-for-cctv-security-installers/">websites for CCTV and security system installers</a>.</p>\n\n'],
+  ['website-for-it-software-companies', '<h2>Essential pages</h2>', '<p>If your business sells and installs computers, laptops and networking hardware rather than software, see <a href="/blog/website-for-it-hardware-computer-dealers/">websites for computer, laptop and IT hardware dealers</a>.</p>\n\n'],
+  ['website-for-printing-packaging-companies', '<h2>SEO for printing and packaging</h2>', '<p>If you make shop boards, LED letters and other signage rather than printed products and packaging, see <a href="/blog/website-for-signage-companies/">websites for signage and LED board companies</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
