@@ -399,6 +399,10 @@ const LINKS = [
   ['google-search-console-reports-explained', '<h2>Sitemaps</h2>', '<p>For what each status means and which ones need fixing, see <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors explained</a>.</p>\n\n'],
   ['website-navigation-structure', '<h2>Test it</h2>', '<p>Pages that no menu or other page links to become orphans; see <a href="/blog/orphan-pages-fix/">how to find and fix orphan pages</a>.</p>\n\n'],
   ['seo-red-flags-scams', '<h2>Questions to ask before hiring</h2>', '<p>Not sure what a useful monthly report should include? See <a href="/blog/seo-reporting-what-to-track/">what to track in a monthly SEO report</a>.</p>\n\n'],
+  // Agent 16
+  ['thank-you-pages-forms', '<h2>Tracking conversions</h2>', '<p>A promise like "within 24 hours" only helps if you keep it; see <a href="/blog/respond-to-website-enquiries-fast/">how to respond to website enquiries fast</a> for a simple routine.</p>\n\n'],
+  ['wordpress-form-plugins-compared', '<h2>Email delivery matters more than the plugin</h2>', '<p>To send every entry on to a CRM, Google Sheet or email tool automatically, see <a href="/blog/connect-website-forms-to-crm/">connecting WordPress forms to a CRM or Google Sheets</a>.</p>\n\n'],
+  ['landing-page-mistakes-google-ads', '<h2>7. No trust signals</h2>', '<p>If you do need more detail before calling, a short multi-step form can collect it without a wall of fields; see <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms for lead qualification</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
