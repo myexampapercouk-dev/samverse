@@ -2685,9 +2685,7 @@ module.exports = [
 </ul>
 <p>As a real-world example, the <a href="/work/our-temples/">Our Temples</a> site uses a directory theme because hundreds of listings need search and filters, while simpler business sites like <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a> use a minimal theme with Elementor.</p>
 
-<p>Building a listings site? See <a href="/blog/directory-website-wordpress/">how directory websites work on WordPress</a>.</p>
-
-<p>Building with Elementor? See <a href="/blog/best-theme-for-elementor/">the best themes for Elementor</a>.</p>
+<p>Building a listings site? See <a href="/blog/directory-website-wordpress/">how directory websites work on WordPress</a>. Using Elementor? See <a href="/blog/best-theme-for-elementor/">the best themes for Elementor</a>.</p>
 
 <h2>Mistakes to avoid</h2>
 <ul>
@@ -3053,9 +3051,7 @@ module.exports = [
   <li>Gateway webhooks configured</li>
   <li>Cash on Delivery enabled or disabled deliberately, with any limits you need</li>
 </ol>
-<p>More detail in <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a>.</p>
-
-<p>More detail: <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+<p>More detail: <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a> and <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 
 <h2>Shipping and taxes</h2>
 <ol start="12">
@@ -4105,9 +4101,7 @@ module.exports = [
 <h2>Photographers: speed matters</h2>
 <p>Image-heavy portfolios can be slow. Use properly sized, compressed images in modern formats, lazy-load galleries and choose good hosting. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>. For client galleries, use password-protected pages or a dedicated gallery tool.</p>
 
-<p>Event and wedding planners face the same challenge with large galleries; see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a>.</p>
-
-<p>Photographers: see the full guide to <a href="/blog/website-for-photographers/">websites for photographers</a>.</p>
+<p>Event and wedding planners face the same challenge with large galleries (see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a>), and photographers have <a href="/blog/website-for-photographers/">a full guide of their own</a>.</p>
 
 <h2>Get found</h2>
 <ul>
@@ -7388,9 +7382,7 @@ module.exports = [
 <h2>Performance and accessibility</h2>
 <p>Many visitors are older or anxious. Large readable text, simple navigation and fast pages matter; see <a href="/blog/website-accessibility-older-users/">designing for older visitors</a>.</p>
 
-<p>Supplying hospitals? See <a href="/blog/website-for-medical-equipment-suppliers/">websites for medical equipment suppliers</a>.</p>
-
-<p>Offering home care after discharge? See <a href="/blog/website-for-elder-care-home-nursing/">websites for elder care and home nursing</a>.</p>
+<p>Supplying hospitals? See <a href="/blog/website-for-medical-equipment-suppliers/">websites for medical equipment suppliers</a>. Offering home care after discharge? See <a href="/blog/website-for-elder-care-home-nursing/">websites for elder care and home nursing</a>.</p>
 
 <h2>SEO</h2>
 <ul>
