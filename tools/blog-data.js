@@ -5317,6 +5317,8 @@ module.exports = [
   <li>Post new work regularly on Instagram and link back to your site</li>
 </ul>
 
+<p>Work as a freelance or bridal makeup artist who travels to clients? See <a href="/blog/website-for-makeup-artists/">websites for makeup artists</a> for portfolios, packages and date bookings.</p>
+
 <h2>Common mistakes</h2>
 <ul>
   <li>No prices at all, which leads to endless enquiry calls</li>
@@ -5591,6 +5593,8 @@ module.exports = [
   <li>Loyalty discounts or subscribe-and-save pricing</li>
   <li>Easy re-ordering from past orders</li>
 </ul>
+
+<p>The same repeat-order ideas work for skincare, haircare and makeup, where ingredient lists and careful claims matter even more; see <a href="/blog/website-for-beauty-cosmetics-brands/">websites for beauty and cosmetics brands</a>.</p>
 
 <h2>SEO for food brands</h2>
 <ul>
@@ -15102,6 +15106,8 @@ module.exports = [
   <li>State your cancellation and refund policy clearly</li>
 </ul>
 
+<p>Businesses that need a consultation before a booking, such as tattoo studios, can pair an enquiry form with a deposit; see <a href="/blog/website-for-tattoo-studios/">websites for tattoo studios</a>.</p>
+
 <h2>Reduce no-shows</h2>
 <ul>
   <li>Reminders with easy reschedule links</li>
@@ -19117,6 +19123,276 @@ Template: astra
 <p>For search, create category pages for real queries like "educational toys for 3 year olds", "return gifts for kids" and "toy shop in {area}", each with a short, unique introduction. If you have a physical store, keep your Google Business Profile updated with photos, hours and stock highlights, and list your products on Google for free through <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center</a>.</p>
 
 <p>Planning a toy store or kids' brand website? See <a href="/woocommerce-developer/">WooCommerce development</a>, and use a <a href="/landing-page-design/">landing page</a> for festive and birthday campaigns.</p>
+`,
+  },
+  {
+    slug: 'website-for-beauty-cosmetics-brands',
+    title: 'Websites for Beauty, Skincare and Cosmetics Brands in India',
+    description: 'How Indian beauty, skincare and cosmetics brands can build a D2C website: product pages, ingredient info, careful claims, honest reviews and repeat orders.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>Beauty shoppers are careful. Before they buy a serum, lipstick or sunscreen from a brand they haven't tried, they want to know what's in it, whether it suits their skin type and tone, and whether people like them were happy with it. A good website answers those questions honestly, and gives you a store where you own the customer relationship instead of renting it from a marketplace.</p>
+
+<h2>What beauty shoppers look for</h2>
+<ul>
+  <li><strong>Ingredients they understand:</strong> the full list, plus the key actives explained in plain language</li>
+  <li><strong>Suitability:</strong> skin type, concern, hair type, or a shade match for Indian skin tones</li>
+  <li><strong>Real experiences:</strong> reviews, customer photos and honest swatches</li>
+  <li><strong>Safety basics:</strong> patch test advice, expiry dates and how to store the product</li>
+  <li><strong>Easy buying:</strong> UPI, cards, COD where it makes sense, clear delivery times and a fair return policy</li>
+</ul>
+
+<h2>Own store, marketplaces or both?</h2>
+<p>Most Indian beauty brands also sell on marketplaces, and that's fine. Marketplaces bring volume and discovery; your own site brings better margins, customer relationships (with consent) and room to tell your story and educate. Many brands use their website for launches, bundles, subscriptions and loyal repeat buyers. See <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a> for the trade-offs.</p>
+<p>On platform: WooCommerce gives you full control over content, SEO and integrations, while Shopify is quicker to start with monthly fees and paid apps. Either can run a good beauty store; the right choice depends on your team and plans. <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> compares them in detail.</p>
+
+<h2>Essential pages</h2>
+<ol>
+  <li><strong>Home:</strong> hero products, what the brand stands for, and shop-by-concern shortcuts</li>
+  <li><strong>Shop by concern and category:</strong> acne, pigmentation, dryness, sun care, hair fall; plus cleansers, serums, lip and eye</li>
+  <li><strong>Product pages</strong> that answer every question (more below)</li>
+  <li><strong>Ingredient glossary:</strong> a short page per key ingredient, what it does and which products contain it</li>
+  <li><strong>Our story:</strong> who founded the brand, where products are made, and your quality checks</li>
+  <li><strong>Routine guides:</strong> morning and night routines, and the order to apply products in</li>
+  <li><strong>Policies:</strong> shipping, returns and refunds, privacy, terms and full contact details</li>
+  <li><strong>FAQs and contact:</strong> including WhatsApp for pre-purchase questions</li>
+</ol>
+
+<h2>Product pages that answer every question</h2>
+<ul>
+  <li>The full ingredient list, with key ingredients highlighted and explained</li>
+  <li>Who it's for: skin type and concern, and who should avoid it or check with a doctor first</li>
+  <li>How to use it: amount, frequency, where it sits in a routine, and patch test advice</li>
+  <li>Texture, fragrance and finish, shown in close-up photos and a short video</li>
+  <li>For makeup: shade swatches photographed on several skin tones, in natural light</li>
+  <li>Pack size, price, shelf life, and storage advice</li>
+  <li>Reviews that show the reviewer's skin type, where they choose to share it</li>
+</ul>
+<p>Write every description yourself instead of copying the carton text; see <a href="/blog/write-product-descriptions-that-sell/">how to write product descriptions that sell</a>.</p>
+
+<h2>Be careful with claims</h2>
+<p>This is where beauty websites most often go wrong. In India, cosmetics are regulated under the Drugs and Cosmetics Act and the Cosmetics Rules, advertising is covered by consumer protection law, and the Advertising Standards Council of India (ASCI) publishes guidelines on claims and influencer disclosures. Rules change, so check the current position with a regulatory consultant or lawyer, but some sensible habits apply to every brand:</p>
+<ul>
+  <li>Avoid medical claims: a cosmetic that "cures acne" or "treats hair loss" is making a drug-like claim</li>
+  <li>Don't promise guaranteed, permanent or overnight results</li>
+  <li>Only say "clinically tested", "dermatologically tested", "vegan" or "cruelty-free" if you have the evidence or certification, and can show it if asked</li>
+  <li>Be wary of "chemical-free" and "100% natural"; vague claims like these invite complaints</li>
+  <li>Never retouch before-and-after photos, and make clear that results vary</li>
+  <li>Ask influencers and affiliates to disclose paid partnerships clearly</li>
+</ul>
+<p>The details printed on your packs, such as manufacturer, net quantity, price and dates, should generally be visible on the product page too. Your adviser can confirm exactly what your products need.</p>
+
+<h2>Reviews and social proof, done honestly</h2>
+<ul>
+  <li>Ask for a review a couple of weeks after delivery, once customers have actually used the product</li>
+  <li>Publish critical reviews too, and reply politely; a wall of perfect ratings looks suspicious</li>
+  <li>Let customers add photos, and ask permission before featuring them elsewhere</li>
+  <li>Never buy reviews or write them yourself</li>
+  <li>Show creator content only with permission, and label paid collaborations</li>
+</ul>
+
+<h2>Store features that grow repeat orders</h2>
+<ul>
+  <li><strong>Bundles and regimens:</strong> a cleanser, serum and sunscreen sold together as a routine</li>
+  <li><strong>Minis and trial sizes</strong> that lower the risk of trying something new</li>
+  <li><strong>Subscriptions or refill reminders</strong> for products people use up regularly</li>
+  <li><strong>Gift sets</strong> for festivals, weddings and corporate gifting</li>
+  <li><strong>Payments:</strong> UPI and cards through an Indian payment gateway, and COD with sensible limits if your customers expect it</li>
+  <li><strong>A clear returns policy:</strong> many brands don't accept opened products for hygiene reasons, so spell out what happens with damaged, leaking or wrong items</li>
+  <li><strong>WhatsApp and email updates</strong> for orders, restocks and launches, sent only with consent</li>
+</ul>
+
+<h2>SEO and speed</h2>
+<p>Beauty searches are specific: "niacinamide serum for oily skin", "sunscreen for Indian skin", "matte lipstick for dusky skin". Build concern and category pages that match those needs, and publish helpful guides on ingredients and routines, reviewed by a qualified person where the topic touches on skin conditions. Add product schema so price, availability and ratings can appear in Google results.</p>
+<p>Keep pages fast. Beauty stores are image-heavy and most shoppers browse on their phones, so compress product photos and swatches, lazy-load reviews and videos, and resist adding a new plugin or app for every small feature.</p>
+
+<p>Planning a beauty store, or relaunching one that isn't selling? See <a href="/woocommerce-developer/">WooCommerce store development</a>, or a dedicated <a href="/landing-page-design/">landing page</a> for your next product launch.</p>
+`,
+  },
+  {
+    slug: 'website-for-makeup-artists',
+    title: 'Websites for Makeup Artists: More Bridal and Party Bookings',
+    description: 'How bridal and freelance makeup artists can use a website to show real looks, explain packages, take date enquiries and turn Instagram followers into bookings.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Most makeup artists in India find clients on Instagram, and that won't change. But a bride choosing her wedding makeup usually shortlists several artists and then compares them properly: the looks, the packages, whether you travel to her city, and whether you're free on her date. A website gives her all of that in one organised place, shows up when she searches on Google, and gives you a booking channel that doesn't depend on a single app.</p>
+<p>If you work from a salon chair, see <a href="/blog/website-for-salons-spas/">websites for salons and spas</a>. This guide is for freelance and bridal makeup artists who go to clients, work across several functions, and book by date rather than by time slot.</p>
+
+<h2>What brides and clients look for</h2>
+<ul>
+  <li><strong>Looks that suit them:</strong> work on skin tones and features like theirs, in the style they want, whether soft and natural, glam, HD or airbrush</li>
+  <li><strong>Real brides:</strong> actual clients, not only styled shoots and editorial work</li>
+  <li><strong>Clear packages:</strong> what's included, what costs extra, and whether a trial is available</li>
+  <li><strong>Travel:</strong> the cities you cover, whether you take destination weddings, and how early you can start</li>
+  <li><strong>Availability:</strong> a quick answer on whether her date is free</li>
+  <li><strong>Hygiene:</strong> clean brushes, fresh applicators and the kind of products you use</li>
+  <li><strong>Reviews</strong> from brides and families who have booked you</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ol>
+  <li><strong>Home:</strong> your signature style, the cities you serve, a few of your best looks and a clear "Check your date" button</li>
+  <li><strong>Portfolio:</strong> organised by occasion and look (more below)</li>
+  <li><strong>Bridal packages:</strong> wedding day, pre-wedding functions and reception</li>
+  <li><strong>Party and family makeup:</strong> guests, bridesmaids, mothers, engagements and events</li>
+  <li><strong>About:</strong> your training, how long you've been working, and how you run the wedding morning</li>
+  <li><strong>Reviews:</strong> with the bride's name only if she's happy to share it</li>
+  <li><strong>FAQs:</strong> trials, advance payments, travel charges, start times and skin prep before the wedding</li>
+  <li><strong>Booking enquiry:</strong> a short form plus WhatsApp</li>
+</ol>
+<p>If you also teach, add a page for makeup courses and workshops with dates, duration, what students learn and what the kit includes.</p>
+
+<h2>Show your work honestly</h2>
+<p>Your portfolio sells more than any text on the site, so organise it the way brides think: bridal looks by tradition and outfit colour, then reception, engagement, mehendi and sangeet, party and photoshoot. Within each, pick your strongest work rather than posting everything.</p>
+<ul>
+  <li>Label real clients separately from styled shoots and collaborations</li>
+  <li>Show close-ups of the base and eyes as well as the full look with jewellery and dupatta</li>
+  <li>Keep editing light; if a photo is heavily filtered, the bride will expect something she won't see in the mirror</li>
+  <li>Get the bride's permission before posting, and respect those who would rather stay private</li>
+  <li>Many of your best photos are taken by the wedding photographer, so ask before using them and credit the photographer</li>
+  <li>Add a few short videos, set to load only when tapped so the page stays fast</li>
+</ul>
+
+<h2>Packages and what to spell out</h2>
+<p>Most booking disputes come from unclear packages. Put the details in writing on the website, and repeat them in your booking confirmation.</p>
+<table>
+  <thead>
+    <tr><th>Package</th><th>What to spell out</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bridal (wedding day)</td><td>Type of makeup, hairstyling, saree or dupatta draping, lashes, touch-ups, and how long you stay</td></tr>
+    <tr><td>Pre-wedding functions</td><td>Which functions are covered, looks per function, and combined package options</td></tr>
+    <tr><td>Family and guests</td><td>Per-person basis, minimum numbers, and whether an assistant does some looks</td></tr>
+    <tr><td>Trial</td><td>Whether it's paid, and whether the fee is adjusted if she books</td></tr>
+    <tr><td>Travel and outstation</td><td>Travel, stay, very early starts and destination weddings</td></tr>
+  </tbody>
+</table>
+<p>Showing "starting from" prices filters out mismatched enquiries and saves you answering the same question all day; see <a href="/blog/show-prices-on-website/">should you show prices on your website</a>. Also state your advance amount, what happens if the date changes, and your cancellation terms.</p>
+
+<h2>Make date bookings easy</h2>
+<p>Wedding bookings are about dates, not time slots, so your enquiry form should collect everything you need to check availability and quote in one reply:</p>
+<ul>
+  <li>Wedding date and the functions she needs you for</li>
+  <li>City, venue and the getting-ready location</li>
+  <li>Number of people needing makeup</li>
+  <li>The look she wants, with a place to upload reference photos</li>
+  <li>Her phone number, and whether she prefers WhatsApp</li>
+</ul>
+<p>Add a WhatsApp button with a pre-filled message such as "Hi, I'd like to check your availability for my wedding on...". Brides often message several artists at once, so reply quickly. When she confirms, take the advance by UPI or a payment link, and send a written confirmation with the package, date, timings and balance due. A reminder before the trial and a week before the wedding shows her everything is on track.</p>
+
+<h2>Connect Instagram and your website</h2>
+<ul>
+  <li>Point your Instagram bio link to your packages or booking page, not just the homepage</li>
+  <li>Turn your best reels into portfolio entries with a short story: the outfit, the look she wanted, the season and the city</li>
+  <li>Link to the photographers, planners and venues you work with, and ask them to link back to you</li>
+  <li>Don't rely only on Instagram; accounts can be hacked or restricted, while your website and client list stay yours</li>
+</ul>
+<p>Avoid heavy Instagram feed plugins on every page. A handful of hand-picked images loads faster and looks better.</p>
+
+<h2>Local SEO</h2>
+<p>Brides search for things like "bridal makeup artist in Lucknow", "airbrush bridal makeup" and "party makeup at home near me". To show up:</p>
+<ul>
+  <li>Create or claim your Google Business Profile, choose the closest category, and add photos, services and the areas you serve; if you work from home, you can generally hide your address and list service areas instead</li>
+  <li>Give each main service its own page, such as bridal, airbrush, engagement and party makeup</li>
+  <li>If you regularly work in other cities, create city pages only when you can add real content, such as weddings you've done there; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages done right</a></li>
+  <li>Ask brides for a Google review a few days after the wedding, once they are relaxed and have seen their photos</li>
+  <li>Write descriptive alt text, like "South Indian bridal makeup with temple jewellery", instead of "IMG_2045"</li>
+</ul>
+
+<h2>Speed and design</h2>
+<p>Most brides browse on their phones, often on mobile data, so a heavy gallery can lose them before they reach your best look. Resize and compress photos, use WebP and lazy-load galleries; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>. Keep the design simple and elegant so your work stands out, with plenty of white space, readable text and a booking button that's always easy to find.</p>
+
+<p>Want a website that turns Instagram followers into confirmed bookings? See <a href="/wordpress-website-development/">WordPress website development</a>, or a <a href="/landing-page-design/">landing page</a> for your wedding-season campaigns.</p>
+`,
+  },
+  {
+    slug: 'website-for-tattoo-studios',
+    title: 'Websites for Tattoo Studios: Portfolios, Safety and Bookings',
+    description: 'What a tattoo studio website needs: portfolios by style and artist, hygiene and safety information, a consultation-first booking flow, deposits and aftercare.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>A tattoo is permanent, so people research carefully before they book. They look for an artist whose style they love, check that the studio is clean and safe, and want an easy way to discuss their idea. Instagram is where many people first discover you, but a website does jobs Instagram can't: it organises your work by style and artist, explains your safety practices and policies, and brings in people searching Google for a tattoo studio near them.</p>
+
+<h2>What clients look for</h2>
+<ul>
+  <li><strong>The right artist for their style:</strong> fine line, realism, blackwork, traditional, lettering, ornamental, colour or cover-ups</li>
+  <li><strong>Healed work:</strong> how tattoos look months later, not just freshly done under studio lights</li>
+  <li><strong>Hygiene:</strong> signs that the studio takes cleanliness and safety seriously</li>
+  <li><strong>A rough idea of cost:</strong> the minimum charge and what affects the price</li>
+  <li><strong>How booking works:</strong> consultations, deposits, waiting times and walk-ins</li>
+  <li><strong>Reviews</strong> from people who have had work done</li>
+</ul>
+
+<h2>Essential pages</h2>
+<ol>
+  <li><strong>Home:</strong> your studio's styles and strengths, a few standout pieces and a clear "Book a consultation" button</li>
+  <li><strong>Portfolio:</strong> filterable by style and by artist</li>
+  <li><strong>Artist profiles:</strong> one page per artist with their styles, experience, work and booking status, plus guest artists with their dates</li>
+  <li><strong>Hygiene and safety:</strong> how you work, in plain language</li>
+  <li><strong>Booking and consultation:</strong> the steps, the enquiry form and your deposit policy</li>
+  <li><strong>Pricing and FAQs:</strong> minimum charge, how quotes work, age policy, pain, healing and touch-ups</li>
+  <li><strong>Aftercare:</strong> a page clients can bookmark and you can share</li>
+  <li><strong>Contact:</strong> address, map, opening hours, walk-in times and parking</li>
+</ol>
+<p>If you offer piercing, cover-ups or reworks, give each its own page so it can rank for those searches.</p>
+
+<h2>Portfolio by style and artist</h2>
+<p>People rarely want just "a tattoo". They want a particular style, often from a particular artist. Tag every piece by style, artist and placement, so a visitor can filter to one artist's fine line work in a single tap.</p>
+<ul>
+  <li>Show healed photos alongside fresh ones wherever you can; they build more trust than anything else</li>
+  <li>Photograph in soft, natural light, without glare from wrap film or heavy filters</li>
+  <li>Include work on a range of skin tones, so visitors can see how colour and fine detail look on skin like theirs</li>
+  <li>For cover-ups, show the before and after</li>
+  <li>Post flash sheets or available designs for flash days and walk-ins</li>
+  <li>Get the client's consent before posting, especially for intimate placements</li>
+  <li>Only show your studio's own work; passing off someone else's tattoo as yours destroys trust fast</li>
+</ul>
+<p>For portfolio principles that apply to any creative business, see <a href="/blog/portfolio-website-freelancers-creatives/">portfolio websites for creatives</a>.</p>
+
+<h2>Hygiene, safety and consent</h2>
+<p>This page reassures nervous first-timers more than any design element. Describe only what you actually do, for example:</p>
+<ul>
+  <li>Single-use needles and cartridges, opened in front of the client</li>
+  <li>Fresh gloves, barrier film on machines and surfaces, and disposable ink caps</li>
+  <li>How workstations are cleaned between clients, and how any reusable equipment is sterilised</li>
+  <li>Where your inks come from, without claims you can't back up</li>
+</ul>
+<p>Add photos of your workstations, and set out your policies clearly: the minimum age you tattoo and the ID you ask for, whether you'll tattoo someone who has been drinking, and which health conditions or medicines mean a client should check with their doctor first. Rules can differ by state and city, so check what applies to you, and keep medical wording general rather than giving advice.</p>
+<p>If you collect consent forms online, ask only for what you need and store it securely; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy basics for Indian websites</a>.</p>
+
+<h2>A consultation and booking flow that works</h2>
+<p>Custom tattoos need a conversation before a time slot, so a plain booking calendar rarely works on its own. A flow that suits most studios:</p>
+<ol>
+  <li><strong>Enquiry form:</strong> the idea, placement, approximate size, style, colour or black and grey, preferred artist, reference images and, for cover-ups, a photo of the existing tattoo</li>
+  <li><strong>Reply from the artist</strong> with questions, a rough estimate and the likely session length</li>
+  <li><strong>Consultation</strong> in the studio or by video call for larger pieces</li>
+  <li><strong>Deposit</strong> by UPI or card to hold the slot, usually adjusted against the final price, with your reschedule and cancellation terms stated upfront</li>
+  <li><strong>Reminder</strong> before the session with prep tips: eat well, sleep, wear clothes that give easy access to the area, and bring ID</li>
+</ol>
+<p>Short sessions and flash pieces can use direct online booking. For tools, reminders and deposits, see <a href="/blog/online-appointment-booking-website/">online appointment booking on your website</a>. Keep a WhatsApp button for quick questions, and show walk-in hours if you accept walk-ins.</p>
+
+<h2>Pricing guidance</h2>
+<p>Most studios can't give a fixed price without seeing the design, and clients understand that. What they want to know is whether you're within their budget. Explain what affects the price (size, detail, colour, placement and time), state your minimum charge, and give "starting from" guidance for small pieces if you're comfortable doing so. Avoid bait prices that change once the client arrives; that shows up quickly in reviews.</p>
+
+<h2>Aftercare that saves you time</h2>
+<p>A clear aftercare page answers the questions clients would otherwise message you about at midnight. Cover what your artists recommend for the first hours and days, washing and moisturising, what to avoid while healing (such as swimming, direct sun and picking), what normal healing looks like, and the signs that mean they should see a doctor. Share the link on WhatsApp after every session, and explain your touch-up policy on the same page.</p>
+
+<h2>Local SEO and speed</h2>
+<p>People search for "tattoo studio near me", "tattoo shop in {area}" and style-specific terms like "fine line tattoo in Bengaluru" or "cover-up tattoo in Pune".</p>
+<ul>
+  <li>Complete your Google Business Profile with hours, services, and photos of your work and studio; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
+  <li>Create pages for your main styles and services, each with real portfolio examples</li>
+  <li>Ask happy clients for reviews once their tattoo has healed, and reply to every review</li>
+  <li>Compress portfolio images, lazy-load galleries, and avoid embedding full Instagram feeds, which slow pages down on mobile</li>
+</ul>
+
+<p>Planning a new studio website, or want your portfolio to work harder in Google? See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
 ];

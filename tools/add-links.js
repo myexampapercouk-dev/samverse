@@ -363,6 +363,10 @@ const LINKS = [
   ['website-for-car-dealers-workshops', '<h2>Make it easy on mobile</h2>', '<p>Run a dedicated wash, detailing or coating studio rather than a full workshop? See <a href="/blog/website-for-car-wash-detailing/">websites for car wash, detailing and ceramic coating studios</a>.</p>\n\n'],
   ['website-for-veterinary-pet-clinics', '<h2>Pet owner guides</h2>', '<p>If grooming, boarding or a pet supplies shop is your main business rather than a clinic, see <a href="/blog/website-for-pet-shops-grooming/">websites for pet shops, grooming and boarding services</a>.</p>\n\n'],
   ['website-for-florists-gift-shops', '<h2>Checkout essentials</h2>', '<p>Selling toys and games as gifts for children? Age filters and safety information matter too; see <a href="/blog/website-for-toy-stores/">websites for toy stores and kids\' brands</a>.</p>\n\n'],
+  // Agent 01
+  ['website-for-d2c-food-brands', '<h2>SEO for food brands</h2>', '<p>The same repeat-order ideas work for skincare, haircare and makeup, where ingredient lists and careful claims matter even more; see <a href="/blog/website-for-beauty-cosmetics-brands/">websites for beauty and cosmetics brands</a>.</p>\n\n'],
+  ['website-for-salons-spas', '<h2>Common mistakes</h2>', '<p>Work as a freelance or bridal makeup artist who travels to clients? See <a href="/blog/website-for-makeup-artists/">websites for makeup artists</a> for portfolios, packages and date bookings.</p>\n\n'],
+  ['online-appointment-booking-website', '<h2>Reduce no-shows</h2>', '<p>Businesses that need a consultation before a booking, such as tattoo studios, can pair an enquiry form with a deposit; see <a href="/blog/website-for-tattoo-studios/">websites for tattoo studios</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
