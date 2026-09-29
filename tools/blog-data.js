@@ -6272,6 +6272,8 @@ module.exports = [
 <h2>India's data protection law</h2>
 <p>India's Digital Personal Data Protection framework sets obligations for businesses that process personal data, and its detailed rules and timelines matter for compliance. Because requirements can change and depend on your business, get current legal advice rather than relying on templates.</p>
 
+<p>For a closer look at consent, notices and security under the Act, see <a href="/blog/dpdp-act-website-basics/">what the DPDP Act generally means for small business websites</a>.</p>
+
 <h2>Practical next steps</h2>
 <ol>
   <li>List the data your site collects and the tools involved</li>
@@ -11442,6 +11444,8 @@ module.exports = [
   <li>Business details and registrations shown where required</li>
 </ol>
 
+<p>Not sure what your terms page should say? See <a href="/blog/website-terms-and-conditions/">what website terms and conditions usually cover</a>.</p>
+
 <h2>Launch and after</h2>
 <ol start="37">
   <li>Submit sitemap and request indexing for key pages</li>
@@ -11472,6 +11476,8 @@ module.exports = [
   <li>Your process: people at work, equipment, behind the scenes</li>
   <li>Happy customers (with permission)</li>
 </ul>
+
+<p>Tempted to use stock images instead? See <a href="/blog/stock-photos-vs-real-photos/">stock photos vs real photos</a> for where each one belongs.</p>
 
 <h2>Phone photography tips</h2>
 <ul>
@@ -12129,6 +12135,8 @@ module.exports = [
 
 <h2>11. Put it in writing</h2>
 <p>Your contract or agreement should state that you own the website, content and accounts once paid. See the <a href="/blog/website-brief-template/">website brief template</a> for planning the project.</p>
+
+<p>When a project finishes, use the <a href="/blog/website-handover-checklist/">website handover checklist</a> to confirm you have received everything.</p>
 
 <h2>Keep a secure record</h2>
 <p>Store all logins in a password manager, and update it whenever access changes.</p>
@@ -13834,6 +13842,8 @@ module.exports = [
 
 <h2>Transfer vs changing nameservers</h2>
 <p>These are different things. <strong>Transferring</strong> moves where the domain is registered and renewed. <strong>Changing nameservers or DNS</strong> changes where your website and email point. You can do either without the other. If you only want to move hosting, you may not need a transfer at all; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+
+<p>Changing to a different domain name altogether is a bigger job; see <a href="/blog/change-domain-name-without-losing-seo/">how to change your domain name without losing SEO</a>.</p>
 
 <h2>Before you start</h2>
 <ul>
@@ -23169,6 +23179,8 @@ Template: astra
 </ul>
 <p>Tag Manager helps you organise tags, but it doesn't make them free. A container full of tags still loads all of them.</p>
 
+<p>New to Tag Manager? Our guide to <a href="/blog/google-tag-manager-basics/">Google Tag Manager basics</a> explains how to set it up, test it and keep the container lean.</p>
+
 <h2>Keep it from creeping back</h2>
 <ul>
   <li>Keep a simple list of every third-party tool on the site, who owns it and why</li>
@@ -24702,6 +24714,561 @@ Template: astra
 <p>For the details, see <a href="/blog/redesign-website-without-losing-rankings/">how to redesign without losing Google rankings</a>.</p>
 
 <p>Not sure which your site needs? See <a href="/website-redesign/">website redesign</a>, or <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> if slow pages are the main problem.</p>
+`,
+  },
+  {
+    slug: 'dpdp-act-website-basics',
+    seoTitle: 'DPDP Act and Your Website: A Small Business Guide',
+    title: 'India\'s DPDP Act and Your Website: What Small Businesses Should Know',
+    description: 'A plain-English overview of India\'s DPDP Act, 2023 for small business websites: consent, notices, forms, analytics, security and when to ask a lawyer.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-maintenance'],
+    body: `
+<p>If your website has a contact form, an online store or even Google Analytics, it almost certainly handles personal data. India's Digital Personal Data Protection Act, 2023 (the DPDP Act) sets out how businesses must treat that data. This is a plain-English overview of what it generally means for a small business website, written by a web developer, not a lawyer. It isn't legal advice; for your situation, speak to a qualified lawyer.</p>
+
+<h2>Where things stand</h2>
+<p>Parliament passed the DPDP Act in 2023. The Act sets out the main principles, and government rules fill in details such as how notices work, how breaches are reported and when obligations take effect. Implementing rules have been notified, and many obligations are being phased in over a transition period rather than applying all at once.</p>
+<p>Because dates and details can change, check the current rules or ask your lawyer before treating any deadline as settled. Most of what the Act asks for is sensible practice that also builds customer trust, so you can start now.</p>
+
+<h2>Key terms in plain English</h2>
+<table>
+  <thead>
+    <tr><th>Term in the Act</th><th>What it generally means for you</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Data Principal</td><td>The person the data is about, such as a customer, patient or enquirer (for a child, this includes their parent or lawful guardian)</td></tr>
+    <tr><td>Data Fiduciary</td><td>The business that decides why and how the data is processed; for your website, usually you</td></tr>
+    <tr><td>Data Processor</td><td>A service that processes data on your behalf, such as a CRM or email marketing tool</td></tr>
+    <tr><td>Consent Manager</td><td>A registered platform people can use to give, manage and withdraw consent</td></tr>
+    <tr><td>Data Protection Board of India</td><td>The body that deals with complaints and breaches and can impose penalties</td></tr>
+  </tbody>
+</table>
+
+<h2>Does it apply to your website?</h2>
+<p>The Act covers digital personal data: information about an identifiable person that is collected digitally, or collected on paper and later digitised. For a typical business website, that includes:</p>
+<ul>
+  <li>Names, phone numbers and emails from enquiry and quote forms</li>
+  <li>Appointment bookings, orders, delivery addresses and customer accounts</li>
+  <li>Newsletter and WhatsApp opt-ins</li>
+  <li>Job applications and CVs sent through a careers page</li>
+  <li>Data collected by analytics, advertising pixels and chat widgets, where it can identify a person</li>
+</ul>
+<p>There's no blanket exemption for being a small business, although the government can exempt certain classes of businesses from some provisions. Don't assume you're exempt without checking.</p>
+
+<h2>Consent and notices on your forms</h2>
+<p>Consent is one of the main legal grounds for processing personal data under the Act. It generally needs to be free, specific, informed and unambiguous, given through a clear action (like ticking an unticked box), and limited to the data needed for the stated purpose. People must be able to withdraw consent as easily as they gave it.</p>
+<p>When you ask for consent, the Act expects you to give a notice that explains:</p>
+<ul>
+  <li>What personal data you're collecting and why</li>
+  <li>How people can withdraw consent and exercise their rights</li>
+  <li>How they can complain, including to the Data Protection Board</li>
+</ul>
+<p>People must also be able to read the notice in English or any language in the Eighth Schedule of the Constitution, which matters if your customers prefer Hindi or a regional language.</p>
+<p>The Act also recognises certain "legitimate uses" where consent isn't the basis, such as someone voluntarily sharing their details for a specific purpose. Where your forms fall is a question for your lawyer; in practice, a short, honest line next to the submit button and a separate, unticked box for marketing messages is a sensible start.</p>
+
+<h2>Collect less, and use it only for what you said</h2>
+<p>Data collected for one purpose shouldn't quietly be reused for another. For a website, that usually means:</p>
+<ul>
+  <li>Removing form fields you don't need, such as date of birth or full address "just in case"</li>
+  <li>Not adding enquiry numbers to WhatsApp broadcasts or promotional SMS lists unless people agreed to that</li>
+  <li>Deciding how long you keep enquiries, CVs and old orders, and deleting what you no longer need unless another law (such as tax rules) requires it</li>
+  <li>Limiting who in your team can see form entries and customer data; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a></li>
+</ul>
+<h3>Children's data needs extra care</h3>
+<p>For anyone under 18, the Act generally requires verifiable parental consent and restricts tracking, behavioural monitoring and targeted advertising directed at children. Schools, coaching institutes and kids' brands should get specific advice on their forms.</p>
+
+<h2>Analytics, pixels, chat widgets and other tools</h2>
+<p>Most websites pass data to other services: analytics, ad pixels, CRMs, booking tools, payment gateways, live chat and email platforms. Under the Act, you generally remain responsible for personal data that processors handle for you, and they should work under a proper contract.</p>
+<ul>
+  <li>List every third-party tool on your site and what data it receives</li>
+  <li>Remove tools you no longer use; old tracking codes often linger for years</li>
+  <li>Check each provider's data processing terms and where data is stored</li>
+  <li>Avoid sending names, phone numbers or emails into analytics or ad platforms</li>
+</ul>
+<p>The Act has no cookie-specific rules like European law, but where tracking tools collect data that can identify a person, that's likely to be personal data. How consent applies to analytics and advertising is worth getting advice on. Transfers outside India are generally allowed unless the government restricts particular countries, though some sector rules are stricter, so check if your tools store data abroad.</p>
+
+<h2>Security, breaches and requests</h2>
+<p>The Act expects reasonable security safeguards to prevent personal data breaches, and requires informing the Data Protection Board and affected people if one happens. For a WordPress site, that typically starts with:</p>
+<ul>
+  <li>HTTPS everywhere, strong passwords and two-factor authentication for admins</li>
+  <li>Regular updates to WordPress, themes and plugins</li>
+  <li>Backups, activity logs and malware monitoring</li>
+  <li>Not leaving sensitive uploads, such as ID proofs or medical reports, in publicly accessible folders</li>
+</ul>
+<p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers these in detail. Also publish contact details for someone who can answer privacy questions, and have a simple process for complaints and requests to access, correct or erase data.</p>
+
+<h2>A practical starting checklist</h2>
+<ol>
+  <li>Map what personal data your site collects, where it goes and who can see it</li>
+  <li>Update your privacy notice to match; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie consent basics</a></li>
+  <li>Rewrite form consent lines, separate marketing opt-ins and remove unneeded fields and tools</li>
+  <li>Set retention periods and delete old data you don't need</li>
+  <li>Tighten security and user access</li>
+  <li>Name a contact for privacy questions and set up a way to handle requests</li>
+  <li>Have a lawyer review your approach against the current rules</li>
+</ol>
+
+<p>Many of these changes are technical: form wording, consent checkboxes, removing old scripts and securing the site. For help putting them in place, see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'website-terms-and-conditions',
+    seoTitle: 'Website Terms and Conditions: What They Should Cover',
+    title: 'Website Terms and Conditions: What They Cover and Why Templates Need Care',
+    description: 'What website terms and conditions usually cover for business sites and online stores, how they differ from policies, and why copied templates need care.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Most business websites have a "Terms and Conditions" link in the footer, and many of those pages were copied from somewhere else years ago. That's risky. Good terms explain how your website and services work, set expectations with customers and support your other policies. This guide explains what terms pages usually cover and why templates need care. It's general information, not legal advice; for terms you'll rely on, work with a lawyer.</p>
+
+<h2>Terms, policies and disclaimers: what's the difference?</h2>
+<p>Websites often have several legal pages, and each does a different job:</p>
+<table>
+  <thead>
+    <tr><th>Page</th><th>What it usually covers</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Terms of use</td><td>The rules for using your website: acceptable use, content ownership, disclaimers and liability</td></tr>
+    <tr><td>Terms and conditions of sale</td><td>The agreement when someone buys or books: orders, pricing, payment, delivery and cancellations</td></tr>
+    <tr><td>Privacy policy</td><td>What personal data you collect, why, and how you protect it</td></tr>
+    <tr><td>Returns and refunds policy</td><td>How returns, exchanges and refunds work</td></tr>
+    <tr><td>Shipping or delivery policy</td><td>Delivery areas, timelines and charges</td></tr>
+  </tbody>
+</table>
+<p>Smaller sites often combine terms of use and terms of sale on one page. Privacy has its own rules and deserves its own page; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie consent basics</a>.</p>
+
+<h2>Does your website need terms?</h2>
+<ul>
+  <li><strong>Brochure or service website:</strong> a short terms of use page is usually enough, covering content ownership, accuracy of information and links to other sites</li>
+  <li><strong>Online store:</strong> terms of sale are essential, alongside returns and shipping policies</li>
+  <li><strong>Bookings, courses and subscriptions:</strong> you need clear terms on deposits, rescheduling, cancellations, renewals and refunds</li>
+  <li><strong>User accounts, reviews or listings:</strong> you need rules for what users can post and what happens if they break them</li>
+</ul>
+<p>Payment gateways commonly check for terms, privacy, refund and contact pages when reviewing a website for activation, so having them ready before launch can save delays.</p>
+
+<h2>What a terms of use page usually covers</h2>
+<ul>
+  <li><strong>Who you are:</strong> your legal business name, address and contact details</li>
+  <li><strong>Acceptance:</strong> that using the site means agreeing to the terms</li>
+  <li><strong>Intellectual property:</strong> that your text, photos, logos and designs belong to you (or are licensed) and can't be copied without permission</li>
+  <li><strong>Acceptable use:</strong> no spam, scraping, hacking attempts or misuse of forms</li>
+  <li><strong>Accuracy and disclaimers:</strong> that information is general and may change, which matters for doctors, consultants and financial services</li>
+  <li><strong>Third-party links and tools:</strong> that you're not responsible for other websites</li>
+  <li><strong>Limitation of liability:</strong> limits on what you're responsible for, drafted carefully and within the law</li>
+  <li><strong>Governing law and jurisdiction:</strong> often Indian law and the courts of your city</li>
+  <li><strong>Changes:</strong> how you update the terms, with a "last updated" date</li>
+</ul>
+
+<h2>Extra terms for online stores and bookings</h2>
+<p>If you sell or take bookings, customers need to know how the deal works before they pay:</p>
+<ul>
+  <li>How orders are confirmed, and what happens if an item is out of stock or wrongly priced</li>
+  <li>Prices, taxes such as GST, and delivery charges</li>
+  <li>Accepted payment methods: UPI, cards, net banking, wallets or cash on delivery</li>
+  <li>Delivery areas and timelines</li>
+  <li>Cancellations, whether by the customer or by you</li>
+  <li>Returns, refunds and warranties, with a link to your full policy</li>
+  <li>For bookings: deposits, rescheduling, late arrivals and no-shows</li>
+  <li>For subscriptions: renewal dates, how to cancel and whether partial refunds apply</li>
+  <li>Contact and grievance details</li>
+</ul>
+<p>India's Consumer Protection (E-Commerce) Rules, 2020 require online sellers to display certain information clearly, including return, refund, exchange, warranty, delivery and grievance redressal details. Check the current rules or ask a lawyer about what applies to you. For the returns side, see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce stores</a>.</p>
+
+<h2>Why copied templates cause problems</h2>
+<p>Free generators and copied terms are tempting, but they often create more risk than they remove:</p>
+<ul>
+  <li><strong>Wrong country:</strong> references to foreign laws, courts or regulators that don't apply to an Indian business</li>
+  <li><strong>Wrong business:</strong> clauses about software licences on a bakery website, or nothing about deliveries on an online store</li>
+  <li><strong>Contradictions:</strong> terms that promise a 30-day return window while your returns page says 7 days</li>
+  <li><strong>Clauses that may not hold up:</strong> India's consumer protection law allows certain one-sided terms to be challenged as unfair, so "no refunds under any circumstances" may not protect you the way you expect</li>
+  <li><strong>Copyright:</strong> copying another company's terms word for word can raise copyright issues of its own</li>
+  <li><strong>Out of date:</strong> terms written years ago that don't reflect how you sell today</li>
+</ul>
+<p>A template can be a useful checklist of topics. The actual wording should reflect your business and be reviewed by a lawyer.</p>
+
+<h2>Making terms easy to find and accept</h2>
+<ul>
+  <li>Link your terms and policies in the footer of every page</li>
+  <li>Show a clear "I agree to the terms and conditions" checkbox at checkout or on booking forms; WooCommerce has a built-in setting for this once you assign a terms page</li>
+  <li>Summarise key points near the buy button, such as delivery time and return window</li>
+  <li>Write in plain language with headings, so customers can actually read it</li>
+  <li>Add a "last updated" date and keep old versions for your records</li>
+  <li>Link the terms in order confirmation emails where relevant</li>
+</ul>
+<p>Terms that customers actively accept are generally easier to rely on than a link buried in the footer, but whether a particular clause is enforceable is a question for your lawyer. The <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a> shows where these pages fit before you go live.</p>
+
+<h2>Working with a lawyer and your developer</h2>
+<p>You'll save time and fees by preparing the facts before a lawyer drafts or reviews your terms:</p>
+<ol>
+  <li>What you sell, to whom, and where you deliver</li>
+  <li>Your payment, cancellation, delivery and returns processes as they actually work</li>
+  <li>Any accounts, reviews, uploads or user content on the site</li>
+  <li>The third-party services you rely on, such as payment gateways, booking systems and couriers</li>
+</ol>
+<p>Your developer then builds the pages, adds checkout or booking consent and makes sure everything is linked consistently. Review your terms whenever you add a new service, payment method or sales channel.</p>
+
+<p>Setting up an online store or booking site and want the legal pages, checkout consent and policies wired in properly? See <a href="/woocommerce-developer/">WooCommerce store development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-handover-checklist',
+    seoTitle: 'Website Handover Checklist: What to Get at Project End',
+    title: 'Website Handover Checklist: What You Should Receive When Your Project Ends',
+    description: 'What to receive when your website project is handed over: logins, documentation, training, licences, backups, source files and clear support terms.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['hire-wordpress-developer', 'wordpress-maintenance'],
+    body: `
+<p>The last day of a website project is easy to rush. The site is live, everyone is relieved and the final invoice goes out. But what you receive at handover decides how easily you can run, update and, if needed, move your website for years to come. Here's what a proper handover should include, whoever builds your site.</p>
+<p>This is different from making sure accounts are registered in your name in the first place; for that, see the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>. Handover is the moment you confirm you've actually received everything.</p>
+
+<h2>Agree the handover before work starts</h2>
+<p>The easiest time to agree what you'll receive is before the project begins. Add a short handover list to your quote or contract, alongside payment terms and ownership; the <a href="/blog/website-design-contract-checklist/">website design contract checklist</a> covers what else to agree. Then, on handover day, you're ticking off a list rather than negotiating.</p>
+
+<h2>Logins and access</h2>
+<p>You should receive, or already hold, working access to everything the site depends on:</p>
+<ul>
+  <li>Your own WordPress Administrator account, not a shared developer login</li>
+  <li>Domain registrar and DNS, including Cloudflare or similar if used</li>
+  <li>The hosting control panel, which gives SFTP and database access</li>
+  <li>Business email admin</li>
+  <li>Google Analytics, Search Console, Tag Manager and Google Business Profile, with you as owner</li>
+  <li>Payment gateway, courier, CRM, booking and email marketing accounts connected to the site</li>
+  <li>Any service used to send website emails (SMTP) or block spam</li>
+</ul>
+<p>Credentials should be shared securely, ideally through a password manager, not pasted into a WhatsApp chat or email. Log in to each one yourself before you sign off, then change the passwords. If your developer will keep maintaining the site, they should have their own separate account that you can remove later.</p>
+
+<h2>Documentation</h2>
+<p>A short handover document saves hours for you and for any developer who works on the site later. It doesn't need to be long, but it should cover:</p>
+<ul>
+  <li>How the site is built: theme, child theme, page builder or block editor</li>
+  <li>A list of plugins and what each one does</li>
+  <li>Where any custom code lives and what it does</li>
+  <li>How forms work: where entries are stored and who receives the emails</li>
+  <li>Integrations such as payments, WhatsApp, CRM or booking, and which account each is connected to</li>
+  <li>Caching, security and scheduled tasks worth knowing about</li>
+  <li>Known limitations and settings not to change</li>
+</ul>
+<p>Passwords and API keys don't belong in this document. Keep them in your password manager instead.</p>
+
+<h2>Training</h2>
+<p>You should be able to handle everyday updates without calling your developer. A good handover includes a live walkthrough, ideally recorded, showing how to:</p>
+<ul>
+  <li>Edit text and images on pages</li>
+  <li>Add blog posts, team members, projects or products</li>
+  <li>Manage orders, bookings or enquiries, if your site takes them</li>
+  <li>Update menus and the footer</li>
+  <li>Check form entries and where they go</li>
+</ul>
+<p>Short written notes or screen recordings are worth asking for too. They're useful when a new staff member takes over the website.</p>
+
+<h2>Licences and renewals</h2>
+<table>
+  <thead>
+    <tr><th>Item</th><th>What to confirm</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Premium theme and page builder</td><td>Whose account holds the licence, the licence key and the renewal date</td></tr>
+    <tr><td>Premium plugins</td><td>The same; a lapsed licence usually means no more updates</td></tr>
+    <tr><td>Fonts and stock images</td><td>That the licence covers use on your business website</td></tr>
+    <tr><td>Domain and hosting</td><td>Renewal dates, auto-renew and the payment method on file</td></tr>
+    <tr><td>Other paid tools</td><td>Plans and who is billed for forms, booking, email or chat services</td></tr>
+  </tbody>
+</table>
+<p>If a licence stays in your developer's name, get that in writing, along with what happens if you part ways.</p>
+
+<h2>Backups and source files</h2>
+<ul>
+  <li>A full backup (files and database) taken at launch and stored somewhere you control</li>
+  <li>Automatic backups scheduled, with at least one test restore done; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a></li>
+  <li>Design files, such as Figma files, if a designer was involved</li>
+  <li>Logo files in vector formats, plus brand colours and fonts</li>
+  <li>Original photos and videos, not only the compressed versions on the site</li>
+  <li>Custom theme or plugin code, and access to the code repository if one was used</li>
+  <li>Details of any staging site and how to use it</li>
+</ul>
+
+<h2>Support terms after launch</h2>
+<p>Launch is rarely the end of small fixes. Before you sign off, be clear about:</p>
+<ul>
+  <li>How long the free bug-fix period lasts and what it covers</li>
+  <li>What counts as a bug and what counts as a new request; see <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></li>
+  <li>How to report problems and typical response times</li>
+  <li>Who is responsible for WordPress, theme and plugin updates from now on</li>
+  <li>Maintenance plan options, if you want ongoing help</li>
+  <li>What happens in an emergency, such as the site going down or being hacked</li>
+</ul>
+
+<h2>Handover sign-off checklist</h2>
+<ol>
+  <li>I've logged in to WordPress, hosting, domain, email and Google accounts myself</li>
+  <li>Passwords are changed and stored in our password manager</li>
+  <li>I have the handover document and the training recording</li>
+  <li>Licences and renewal dates are listed, with the account each one is under</li>
+  <li>A launch backup is stored in our own storage</li>
+  <li>Design files, brand assets and original media have been delivered</li>
+  <li>Support terms are agreed in writing</li>
+</ol>
+<p>Only when every item is ticked is the project truly finished.</p>
+
+<p>Want a developer who hands everything over properly, or ongoing help after launch? See <a href="/hire-wordpress-developer/">hire a WordPress developer</a> or <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'stock-photos-vs-real-photos',
+    seoTitle: 'Stock Photos vs Real Photos for Business Websites',
+    title: 'Stock Photos vs Real Photos: Which Should Your Business Website Use?',
+    description: 'Where stock photos are fine on a business website, where real photos build more trust, what stock licences allow, and how to get usable photos of your own.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Almost every new website runs into the same question: use polished stock images now, or wait for photos of the real business? Stock photos are quick and look professional, but visitors have seen them many times before. Here's how to decide where each belongs, what to check in a stock licence, and how to make your own photos good enough to use.</p>
+
+<h2>Why real photos usually win</h2>
+<p>People choosing a clinic, contractor, restaurant or consultant want to know who they'll deal with and what they'll get. A real photo answers that question. A stock photo only decorates the page.</p>
+<ul>
+  <li><strong>They prove you exist.</strong> Your actual shopfront, team and work show there's a real business behind the website.</li>
+  <li><strong>They set honest expectations.</strong> A customer who visits your showroom or clinic should recognise it from your website.</li>
+  <li><strong>They're unique.</strong> The same image of a handshake or a smiling receptionist appears on countless other sites, sometimes including your competitors'.</li>
+  <li><strong>They match your other listings.</strong> Photos on your Google Business Profile are meant to show your actual business, and a website that looks consistent with them feels more believable.</li>
+</ul>
+<p>Real photos of you and your team are also one of the simplest ways to make an <a href="/blog/write-about-page-that-builds-trust/">About page build trust</a>.</p>
+
+<h2>When stock photos are perfectly fine</h2>
+<p>Stock isn't forbidden. It works well when the image illustrates an idea rather than claiming to show your business:</p>
+<ul>
+  <li>Background images behind a headline, such as textures, skylines or landscapes</li>
+  <li>Blog post images that illustrate a topic, like a calculator on an article about tax deadlines</li>
+  <li>Concepts that are hard to photograph, such as "data security" or "exporting worldwide"</li>
+  <li>Destination images for a travel business, as long as they're licensed and not passed off as your own trip photos</li>
+  <li>Temporary placeholders at launch, with a clear plan and date to replace them</li>
+</ul>
+
+<h2>Where stock photos hurt</h2>
+<p>Stock becomes a problem when it pretends to be you. Avoid it for:</p>
+<ul>
+  <li><strong>Team and "meet the doctor" sections:</strong> models in suits or scrubs suggest the real people are hiding</li>
+  <li><strong>Your premises:</strong> a glossy office that isn't yours misleads visitors who later walk in</li>
+  <li><strong>Portfolios, projects and before-and-after results:</strong> for interior designers, builders, clinics and salons, showing work that isn't yours is simply misleading</li>
+  <li><strong>Testimonials:</strong> a stock face next to a review makes a genuine review look fake</li>
+  <li><strong>Food and products you sell:</strong> customers expect the dish or product they receive to look like the photo</li>
+</ul>
+<p>A useful test: if a customer could reasonably think "that's them" or "that's what I'll get", the photo should be real.</p>
+
+<h2>Stock photo licensing: free doesn't mean unrestricted</h2>
+<p>Every stock image comes with a licence, and it's worth reading before you publish. Things to check:</p>
+<ul>
+  <li><strong>Royalty-free is not the same as free.</strong> It usually means you pay once (or download from a free site) and can reuse the image within the licence terms.</li>
+  <li><strong>Editorial-only images</strong>, such as news events, recognisable brands or public figures, generally can't be used to promote a business.</li>
+  <li><strong>Sensitive uses</strong> like health conditions, debt or personal problems are often restricted when a recognisable person is shown, because it implies something about the model.</li>
+  <li><strong>Logos and trademarks:</strong> most licences don't allow stock images to form part of your logo.</li>
+  <li><strong>Attribution:</strong> some free images require a credit, so check each site's current terms.</li>
+</ul>
+<p>Never take images from Google Images, Pinterest or another business's website. "Found online" is not a licence, and it can lead to copyright notices or takedown requests. Keep a simple record of where each image came from and its licence, stored alongside the file. AI-generated images raise the same trust questions as stock and come with the tool's own terms, so don't use them to depict your "team" or "office". If you're unsure whether a use is allowed, ask the stock site or a lawyer.</p>
+
+<h2>Making real photos work on a small budget</h2>
+<p>You don't need a studio. Most businesses can get a solid set of photos with a recent phone and one well-organised day.</p>
+<ol>
+  <li><strong>Write a shot list</strong> from your website pages: homepage banner, team, each service, premises and work samples.</li>
+  <li><strong>Clean up first:</strong> tidy counters, remove clutter, switch on the lights and ask the team to wear their usual uniform.</li>
+  <li><strong>Use daylight:</strong> shoot near windows or outdoors in soft light, and avoid harsh midday sun.</li>
+  <li><strong>Shoot wide and in landscape</strong> for banners, leaving space for text.</li>
+  <li><strong>Capture people doing things:</strong> a technician at work or a chef plating food beats a stiff line-up.</li>
+  <li><strong>Get consent</strong> from anyone recognisable, especially customers, patients and children.</li>
+</ol>
+<p>Our guide to <a href="/blog/prepare-photos-for-website/">preparing photos for your website</a> covers phone photography, editing and file preparation in more detail. For hotels, restaurants, real estate, interiors and product catalogues, where visuals drive the decision, a professional photographer for the key images is often worth it.</p>
+
+<h2>Mixing stock and real photos</h2>
+<p>Most sites end up using both. A simple rule of thumb:</p>
+<table>
+  <thead>
+    <tr><th>Section</th><th>Best choice</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Homepage banner</td><td>Real photo of your work, place or team; stock only if it's abstract</td></tr>
+    <tr><td>About and team</td><td>Always real</td></tr>
+    <tr><td>Service pages</td><td>Real photos of the service being delivered; stock for supporting concepts</td></tr>
+    <tr><td>Portfolio and case studies</td><td>Always real</td></tr>
+    <tr><td>Testimonials</td><td>A real photo with permission, or no photo at all</td></tr>
+    <tr><td>Blog posts</td><td>Stock images or simple graphics are fine</td></tr>
+  </tbody>
+</table>
+<p>Keep the style consistent. If your own photos are warm and natural, choose stock images with similar lighting and colours, and avoid heavily posed shots that clash with the real ones.</p>
+
+<h2>Don't let photos slow the site down</h2>
+<p>Stock or real, oversized images are one of the most common reasons business websites load slowly, especially on mobile data. Stock downloads are often huge, so never upload the original file straight from the stock site. Resize images to the size they're actually displayed, compress them, use WebP where possible, and give each one a descriptive file name and alt text. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a> for the details.</p>
+<p>Original photos have one more advantage: they give search engines something unique to show in image results, which a stock image published on many other sites rarely does.</p>
+
+<p>Planning a new website and not sure how to make the most of the photos you have? I build WordPress sites around real business content; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'google-tag-manager-basics',
+    title: 'Google Tag Manager Basics for Small Business Websites',
+    description: 'What Google Tag Manager does, when to use it instead of adding tags directly, how tags, triggers and variables work, and how to test it and avoid tag bloat.',
+    date: '2026-09-28',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>Once a website has Google Analytics, a Google Ads conversion tag, a Meta Pixel and perhaps a chat widget, tracking code starts piling up in the theme, and every small change needs a developer. Google Tag Manager (GTM) is Google's free tool for managing that code in one place. Here's what it does, whether your site actually needs it, and how to use it without creating a mess.</p>
+
+<h2>What Google Tag Manager is</h2>
+<p>GTM is a container. You add one snippet of code to your website once, and from then on you add, edit and remove tracking tags inside the GTM web interface instead of editing your theme files.</p>
+<p>It doesn't replace Google Analytics or your ad platforms. It's the delivery system that loads their code and tells them when something happens, such as a form submission or a tap on your WhatsApp button. Every change is saved as a version, so you can see what changed and roll back if something breaks.</p>
+
+<h2>GTM or direct tags: which do you need?</h2>
+<p>GTM isn't compulsory, and for some sites it adds complexity for little benefit.</p>
+<table>
+  <thead>
+    <tr><th>Your situation</th><th>Sensible choice</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Simple brochure site with only Google Analytics 4</td><td>Add the Google tag directly or through a trusted plugin</td></tr>
+    <tr><td>GA4 plus Google Ads and Meta conversions</td><td>GTM keeps everything in one place</td></tr>
+    <tr><td>Regular campaigns and new landing pages</td><td>GTM, so a marketer can add tags without touching code</td></tr>
+    <tr><td>Tracking clicks on phone, WhatsApp and email links</td><td>GTM makes this easy without editing templates</td></tr>
+    <tr><td>WooCommerce store tracking purchases</td><td>A dedicated integration plugin, sometimes combined with GTM</td></tr>
+  </tbody>
+</table>
+<p>One rule applies either way: use one method per tool. If GA4 is installed through a plugin and through GTM at the same time, every page view is counted twice.</p>
+
+<h2>Tags, triggers and variables</h2>
+<p>Everything in GTM is built from three pieces.</p>
+<h3>Tags</h3>
+<p>A tag is the code that sends data somewhere: the Google tag for GA4, a GA4 event, a Google Ads conversion or a Meta Pixel event. GTM has built-in templates for many common tools, so you usually fill in an ID rather than paste raw code.</p>
+<h3>Triggers</h3>
+<p>A trigger decides when a tag fires. Common ones are all page views, a view of one specific page (such as your thank-you page), clicks on certain links, form submissions, scroll depth and custom events sent by your website.</p>
+<h3>Variables</h3>
+<p>Variables hold the details a trigger or tag needs, like the page URL, the clicked link's URL or its text. The built-in click variables have to be switched on in the Variables section before you can use them.</p>
+<p>Put together, it looks like this: a GA4 event <em>tag</em> called whatsapp_click fires on a link-click <em>trigger</em> when the Click URL <em>variable</em> contains wa.me (or api.whatsapp.com, depending on how your button is built). That's how many businesses start counting WhatsApp enquiries. See <a href="/blog/ga4-events-explained/">GA4 events explained</a> for which events are worth tracking.</p>
+
+<h2>Setting it up on a WordPress site</h2>
+<ol>
+  <li>Create a GTM account and a web container using the business's own Google account, not a freelancer's or agency's personal one.</li>
+  <li>Add the container code: one part goes in the page head and one just after the opening body tag. A lightweight plugin or your theme's header settings can handle this.</li>
+  <li>Remove any tags you're moving into GTM from plugins and theme files, to avoid double counting.</li>
+  <li>Add your tags one at a time, starting with the Google tag for GA4.</li>
+  <li>Test in Preview mode, then publish with a clear version name like "Added WhatsApp click event".</li>
+</ol>
+<p>Give your developer or agency access as a user rather than handing over ownership. GTM lets you grant edit rights without publish rights, so changes can be checked before they go live. It's part of <a href="/blog/website-ownership-checklist/">making sure you truly own your website</a>.</p>
+
+<h2>A starter setup for most small businesses</h2>
+<ul>
+  <li>The Google tag for GA4, firing on all pages</li>
+  <li>A GA4 event for successful form submissions</li>
+  <li>GA4 events for clicks on phone (tel:) links, WhatsApp buttons and email links</li>
+  <li>Google Ads conversion tags, only if you run Google Ads</li>
+  <li>The Meta Pixel, only if you run Facebook or Instagram ads</li>
+</ul>
+<p>For many service businesses, that's everything. Add more only when you'll actually use the data.</p>
+
+<h2>Test before you publish</h2>
+<p>Tracking that silently fails can be worse than no tracking, because you end up making decisions on wrong numbers.</p>
+<ul>
+  <li><strong>Preview mode:</strong> GTM's Preview opens your site alongside a debugging panel (Tag Assistant) showing which tags fired on each page view and click.</li>
+  <li><strong>Test the real action:</strong> submit a genuine test enquiry, tap the call button on a phone and click WhatsApp, rather than just checking that pages load.</li>
+  <li><strong>Check the destination:</strong> confirm the event appears in GA4's DebugView or real-time report, and that ad conversions show as recording.</li>
+  <li><strong>Count successes, not attempts:</strong> fire form conversions on a <a href="/blog/thank-you-pages-forms/">thank-you page</a> or a success event, not on a click of the submit button.</li>
+</ul>
+<p>If something goes wrong after publishing, you can restore the previous version in a few clicks.</p>
+
+<h2>Avoiding tag bloat</h2>
+<p>GTM makes adding tags easy, which is exactly why containers fill up. Each tag still loads its own code, so a crowded container slows your pages, especially on mobile networks.</p>
+<ul>
+  <li>Review the container every few months, and pause or delete tags for finished campaigns and tools you no longer use</li>
+  <li>Use clear names like "GA4 event: form submit" so anyone can understand the setup later</li>
+  <li>Be careful with Custom HTML tags and only add code from sources you trust, because GTM can inject any script into your site</li>
+  <li>Limit who has publish access, and remove people who no longer work with you</li>
+  <li>Handle consent properly: GTM has consent settings that work with Google's Consent Mode, and your privacy policy should mention the tools you use</li>
+</ul>
+
+<p>Want tracking set up and tested properly on your campaign pages? I build fast landing pages with GA4 events, Meta Pixel and Google Ads conversion tracking in place; see <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'change-domain-name-without-losing-seo',
+    title: 'How to Change Your Domain Name Without Losing SEO',
+    description: 'Moving your website to a new domain? How to plan the move, set up page-by-page 301 redirects, use Search Console\'s Change of Address tool and update profiles.',
+    date: '2026-09-28',
+    category: 'SEO',
+    related: ['wordpress-migration', 'wordpress-seo-services'],
+    body: `
+<p>Businesses change domains for good reasons: a rebrand, a shorter name, a .com for international buyers, or finally getting the name they always wanted. Done carefully, a domain change keeps most of your search visibility. Done carelessly, it can wipe out years of Google traffic almost overnight. Here's a step-by-step process.</p>
+<p>This guide is about moving your website to a different domain name. If you're keeping the same name and only changing where it's registered, see <a href="/blog/transfer-domain-to-another-registrar/">how to transfer a domain to another registrar</a> instead.</p>
+
+<h2>Is a domain change worth it?</h2>
+<p>Your domain carries history: links from other websites, brand searches, bookmarks, printed material and customers' memories. A move usually brings a period of ranking fluctuation while Google processes it, and it can take weeks or months to settle. Before committing, ask:</p>
+<ul>
+  <li>Is the new name clearly better for the business, not just slightly nicer?</li>
+  <li>Can you keep the old domain registered for years, ideally for good? If it expires, every redirect breaks and someone else can buy it.</li>
+  <li>Can you avoid a redesign or platform change at the same time? Changing one big thing at a time makes problems far easier to diagnose.</li>
+</ul>
+<p>Pick a quieter season too. Moving a gifting store's domain just before Diwali is asking for trouble.</p>
+
+<h2>Plan before you move</h2>
+<ol>
+  <li><strong>List every URL</strong> on the old site: pages, posts, products, categories and any PDFs that get traffic. Use your XML sitemap, a crawler and Search Console's Performance report.</li>
+  <li><strong>Record benchmarks:</strong> organic clicks, top pages, key search terms and monthly enquiries, so you have something to compare against after the move.</li>
+  <li><strong>Export your top backlinks</strong> from Search Console's Links report. You'll ask the most valuable sites to update them later.</li>
+  <li><strong>Prepare the new domain:</strong> hosting, an SSL certificate and a copy of the site, kept out of search results until launch.</li>
+  <li><strong>Plan your email:</strong> if your business email uses the old domain, decide whether to move it, forward it or run both for a while, and set up SPF, DKIM and DMARC records for the new domain.</li>
+</ol>
+
+<h2>Set up page-by-page 301 redirects</h2>
+<p>Redirects are what carry your rankings and links across. Each old URL should permanently (301) redirect to its equivalent page on the new domain.</p>
+<ul>
+  <li><strong>Map one-to-one:</strong> the old /services/ac-repair/ page should go to the new /services/ac-repair/ page, not to the new homepage. Sending everything to the homepage loses much of the value.</li>
+  <li><strong>Keep the same paths if you can.</strong> Then a single server-level rule can redirect the whole domain while preserving each path.</li>
+  <li><strong>Avoid chains:</strong> the http, https, www and non-www versions of the old domain should each go straight to the final new URL in one hop.</li>
+  <li><strong>Keep the old domain pointing at a server</strong> that serves the redirects, and leave them in place for at least a year, ideally permanently.</li>
+</ul>
+<p>For when to use permanent and temporary redirects, see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
+
+<h2>Update the new site itself</h2>
+<ul>
+  <li>Change WordPress's site address settings and run a search-and-replace on the database, using a tool that handles WordPress's serialised data safely, so internal links, images and settings use the new domain</li>
+  <li>Check canonical tags point to the new domain, not the old one</li>
+  <li>Remove any noindex setting or password protection left over from preparation</li>
+  <li>Generate a fresh XML sitemap on the new domain and make sure robots.txt isn't blocking anything important</li>
+  <li>Update structured data, such as your business name, URL and logo, if the brand has changed</li>
+  <li>Test forms, payments, email notifications and tracking on the new domain</li>
+</ul>
+
+<h2>Tell Google with the Change of Address tool</h2>
+<p>Google Search Console has a Change of Address tool built for this situation. The rough sequence:</p>
+<ol>
+  <li>Verify the new domain in Search Console using the same Google account that owns the old property.</li>
+  <li>Make sure the 301 redirects are live, as the tool checks that the old site redirects to the new one.</li>
+  <li>In the old property's settings, open Change of Address, choose the new property and submit.</li>
+  <li>Submit the new XML sitemap in the new property.</li>
+</ol>
+<p>The tool is meant for moving a whole site from one domain to another, not for switching to HTTPS or moving individual pages. It supports your redirects; it doesn't replace them. Check Google's current documentation when you do it, as the steps can change.</p>
+
+<h2>Update links and profiles everywhere</h2>
+<p>Redirects catch old links, but it's better when the important ones point straight to the new domain.</p>
+<ul>
+  <li>Your Google Business Profile website and appointment links</li>
+  <li>Facebook, Instagram, LinkedIn, YouTube and WhatsApp Business profiles</li>
+  <li>Business directories and listings such as Justdial, IndiaMART and industry associations</li>
+  <li>Your most valuable backlinks from partners, suppliers and press, with a polite request to update them</li>
+  <li>Final URLs in Google Ads and Meta ads, and the website set in GA4, Merchant Center and your payment gateway account (which may need to approve the new domain)</li>
+  <li>Email signatures, invoices, letterheads, visiting cards, vehicle branding and printed QR codes</li>
+</ul>
+<p>Printed QR codes are easy to forget; they keep working only as long as the old domain keeps redirecting. For keeping listings consistent, see <a href="/blog/business-directories-citations-india/">business directories and citations in India</a>.</p>
+
+<h2>Monitor after the move</h2>
+<ul>
+  <li><strong>First week:</strong> crawl a list of old URLs and confirm each one redirects in a single hop to the right page. Check the new property's Pages report for errors.</li>
+  <li><strong>First few months:</strong> watch impressions and clicks rise on the new domain as they fall on the old one. Some dip is normal; a steep, lasting drop usually points to missing or incorrect redirects.</li>
+  <li><strong>Enquiries:</strong> compare form submissions, calls and WhatsApp clicks against your benchmark, not just traffic.</li>
+  <li><strong>404 errors:</strong> fix any old URLs that land on "page not found" by adding the missing redirects.</li>
+</ul>
+<p>If traffic falls sharply and stays down, work through this <a href="/blog/website-traffic-dropped/">traffic drop checklist</a>.</p>
+
+<p>Want the move handled for you, redirects and all? See <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
   },
 ];

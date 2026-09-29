@@ -447,6 +447,14 @@ const LINKS = [
   ['wordpress-website-cost-india', '<h2>What makes a website cost more?</h2>', '<p>Planning an online store? See <a href="/blog/ecommerce-website-cost-india/">what affects the cost of an e-commerce website in India</a> for platform, payment, shipping and running-cost factors.</p>\n\n'],
   ['compare-website-quotes', '<h2>Think in total cost</h2>', '<p>Tempted by the lowest quote? See <a href="/blog/cheap-website-risks/">what very cheap websites usually leave out</a> before you decide.</p>\n\n'],
   ['redesign-website-tight-budget', '<h2>Phase the redesign</h2>', '<p>Sometimes these improvements are all your site needs; see <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a> to decide.</p>\n\n'],
+  // Agent 27
+  ['privacy-policy-cookie-basics-india', '<h2>Practical next steps</h2>', '<p>For a closer look at consent, notices and security under the Act, see <a href="/blog/dpdp-act-website-basics/">what the DPDP Act generally means for small business websites</a>.</p>\n\n'],
+  ['website-launch-checklist', '<h2>Launch and after</h2>', '<p>Not sure what your terms page should say? See <a href="/blog/website-terms-and-conditions/">what website terms and conditions usually cover</a>.</p>\n\n'],
+  ['website-ownership-checklist', '<h2>Keep a secure record</h2>', '<p>When a project finishes, use the <a href="/blog/website-handover-checklist/">website handover checklist</a> to confirm you have received everything.</p>\n\n'],
+  // Agent 30
+  ['prepare-photos-for-website', '<h2>Phone photography tips</h2>', '<p>Tempted to use stock images instead? See <a href="/blog/stock-photos-vs-real-photos/">stock photos vs real photos</a> for where each one belongs.</p>\n\n'],
+  ['third-party-scripts-slow-website', '<h2>Keep it from creeping back</h2>', '<p>New to Tag Manager? Our guide to <a href="/blog/google-tag-manager-basics/">Google Tag Manager basics</a> explains how to set it up, test it and keep the container lean.</p>\n\n'],
+  ['transfer-domain-to-another-registrar', '<h2>Before you start</h2>', '<p>Changing to a different domain name altogether is a bigger job; see <a href="/blog/change-domain-name-without-losing-seo/">how to change your domain name without losing SEO</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
