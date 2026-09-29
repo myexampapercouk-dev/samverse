@@ -367,6 +367,14 @@ const LINKS = [
   ['website-for-d2c-food-brands', '<h2>SEO for food brands</h2>', '<p>The same repeat-order ideas work for skincare, haircare and makeup, where ingredient lists and careful claims matter even more; see <a href="/blog/website-for-beauty-cosmetics-brands/">websites for beauty and cosmetics brands</a>.</p>\n\n'],
   ['website-for-salons-spas', '<h2>Common mistakes</h2>', '<p>Work as a freelance or bridal makeup artist who travels to clients? See <a href="/blog/website-for-makeup-artists/">websites for makeup artists</a> for portfolios, packages and date bookings.</p>\n\n'],
   ['online-appointment-booking-website', '<h2>Reduce no-shows</h2>', '<p>Businesses that need a consultation before a booking, such as tattoo studios, can pair an enquiry form with a deposit; see <a href="/blog/website-for-tattoo-studios/">websites for tattoo studios</a>.</p>\n\n'],
+  // Agent 07
+  ['video-on-business-website', '<h2>Make videos effective</h2>', '<p>If video is your product rather than a marketing extra, see <a href="/blog/website-for-video-production-companies/">websites for video production companies</a>.</p>\n\n'],
+  ['website-for-event-rental-businesses', '<h2>Show your work</h2>', '<p>Performers face the same date and package questions; see <a href="/blog/website-for-djs-live-bands/">websites for wedding DJs and live bands</a>.</p>\n\n'],
+  ['website-for-handicraft-artisan-brands', '<h2>Wholesale and B2B</h2>', '<p>Selling original paintings, limited-edition prints or commissions instead? See <a href="/blog/website-for-artists-art-galleries/">websites for artists and art galleries</a>.</p>\n\n'],
+  // Agent 08
+  ['website-for-authors-content-creators', '<h2>For YouTubers and podcasters</h2>', '<p>Running a publishing house or independent press rather than promoting your own books? See <a href="/blog/website-for-book-publishers/">websites for book publishers</a>.</p>\n\n'],
+  ['website-for-florists-gift-shops', '<h2>Festival campaigns</h2>', '<p>If corporate orders are your main business rather than a sideline, see <a href="/blog/website-for-corporate-gifting-companies/">websites for corporate gifting companies</a>.</p>\n\n'],
+  ['website-for-furniture-businesses', '<h2>Product pages that sell furniture</h2>', '<p>Selling cushions, curtains, rugs and lighting rather than furniture? See <a href="/blog/website-for-home-decor-stores/">websites for home decor and furnishing stores</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

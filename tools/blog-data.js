@@ -5401,6 +5401,8 @@ module.exports = [
   <li><strong>Hybrid:</strong> buy standard items online, enquire for custom work</li>
 </ul>
 
+<p>Selling cushions, curtains, rugs and lighting rather than furniture? See <a href="/blog/website-for-home-decor-stores/">websites for home decor and furnishing stores</a>.</p>
+
 <h2>Product pages that sell furniture</h2>
 <ul>
   <li>Multiple photos, including styled room shots and close-ups of materials and finishes</li>
@@ -7597,6 +7599,8 @@ module.exports = [
 <h2>Corporate gifting</h2>
 <p>Companies buy in bulk for festivals, events and client gifts. A dedicated page with hampers, customisation options, bulk pricing and a quote form can bring large orders.</p>
 
+<p>If corporate orders are your main business rather than a sideline, see <a href="/blog/website-for-corporate-gifting-companies/">websites for corporate gifting companies</a>.</p>
+
 <h2>Festival campaigns</h2>
 <p>Diwali, Rakhi, Valentine's Day and New Year are peak seasons. Plan landing pages and collections in advance, and promote them with ads and WhatsApp; see <a href="/landing-page-design/">landing page design</a>.</p>
 
@@ -7972,6 +7976,8 @@ module.exports = [
   <li>Clear returns policy (especially for international orders)</li>
 </ul>
 <p>See <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup</a> and <a href="/blog/website-for-export-businesses/">websites for exporters</a>.</p>
+
+<p>Selling original paintings, limited-edition prints or commissions instead? See <a href="/blog/website-for-artists-art-galleries/">websites for artists and art galleries</a>.</p>
 
 <h2>Wholesale and B2B</h2>
 <p>Boutiques, interior designers and international retailers buy in bulk. A wholesale enquiry page with MOQs, customisation options and a catalogue download can bring larger orders.</p>
@@ -8695,6 +8701,8 @@ module.exports = [
 </ul>
 <p>See <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
 
+<p>If video is your product rather than a marketing extra, see <a href="/blog/website-for-video-production-companies/">websites for video production companies</a>.</p>
+
 <h2>Make videos effective</h2>
 <ul>
   <li>Keep them short: under two minutes for most website videos</li>
@@ -8902,6 +8910,8 @@ module.exports = [
   <li>Events, readings and media appearances</li>
   <li>A blog or updates on upcoming work</li>
 </ul>
+
+<p>Running a publishing house or independent press rather than promoting your own books? See <a href="/blog/website-for-book-publishers/">websites for book publishers</a>.</p>
 
 <h2>For YouTubers and podcasters</h2>
 <ul>
@@ -10545,6 +10555,8 @@ module.exports = [
   <li>Clear delivery, setup and dismantling terms</li>
   <li>Security deposit and damage policy</li>
 </ul>
+
+<p>Performers face the same date and package questions; see <a href="/blog/website-for-djs-live-bands/">websites for wedding DJs and live bands</a>.</p>
 
 <h2>Show your work</h2>
 <p>Galleries of real events you've equipped, with setup photos and short videos, demonstrate scale and quality.</p>
@@ -19393,6 +19405,547 @@ Template: astra
 </ul>
 
 <p>Planning a new studio website, or want your portfolio to work harder in Google? See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-video-production-companies',
+    seoTitle: 'Websites for Video Production and Corporate Film Companies',
+    title: 'Websites for Video Production Companies: Showreels, Services and Enquiries',
+    description: 'How video production and corporate film companies can build a website that wins briefs: fast showreels, project pages, pricing signals and enquiry forms.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'wordpress-speed-optimization'],
+    body: `
+<p>For a video production company, your website is judged the way your films are: in the first few seconds. A marketing manager, founder or agency producer lands on your site to check whether your work suits their brand, whether you've handled projects like theirs and how to get a quote. If the showreel buffers, the page crawls on mobile or the services are vague, they move on to the next production house on their list.</p>
+
+<p>Here's what a video production or corporate film company website needs, and how to show plenty of video without making the site slow.</p>
+
+<h2>What clients look for</h2>
+<p>Most enquiries come from people who already have a brief and a deadline. Before contacting you, they usually want to know:</p>
+<ul>
+  <li><strong>Quality and style:</strong> does your work look like what they have in mind?</li>
+  <li><strong>Relevant experience:</strong> have you made corporate films, product videos, ad films or event coverage like theirs?</li>
+  <li><strong>Scope:</strong> do you handle everything from script to final edit, or only the shoot?</li>
+  <li><strong>Process and timelines:</strong> how long will it take, and how many revisions are included?</li>
+  <li><strong>Budget fit:</strong> are you roughly in their range before they spend time on calls?</li>
+</ul>
+
+<h2>The showreel and work pages</h2>
+<p>Your showreel is your strongest sales tool, so put it near the top of the homepage. Keep it short and open with your best shots, not a long logo animation. Then let visitors go deeper:</p>
+<ul>
+  <li><strong>Work filtered by type:</strong> corporate films, brand and ad films, product videos, explainers and animation, testimonials, events and social media reels</li>
+  <li><strong>Work filtered by industry</strong> where you have depth: manufacturing, real estate, healthcare, education</li>
+  <li><strong>A page for each key project</strong> with the video, the client (with permission), the brief, your approach, the crew and what you delivered</li>
+</ul>
+<p>Project pages are where serious clients are won. A short note such as "two-day shoot across a factory and office, delivered one brand film plus short cut-downs for LinkedIn" tells a buyer far more than the video alone. See <a href="/blog/write-case-studies-business-website/">how to write case studies</a> for a simple structure.</p>
+
+<h2>Hosting video without slowing the site</h2>
+<p>A site full of embedded videos can become painfully slow, which hurts first impressions and Google rankings alike. A few rules keep it fast:</p>
+<ul>
+  <li><strong>Don't upload video files to your WordPress media library.</strong> Host them on a video platform such as YouTube or Vimeo, which stream at a suitable quality for each viewer's connection. Large video files on ordinary web hosting use up storage and bandwidth and play badly on slow connections.</li>
+  <li><strong>Use click-to-play previews.</strong> Show a custom thumbnail with a play button and load the video player only when someone taps it. Every standard embed loads its own scripts, so a work page with twenty players loading at once will be heavy.</li>
+  <li><strong>Be careful with background video in the hero.</strong> If you use a silent loop, keep it very short and compressed, show a poster image first, and consider a still image on mobile.</li>
+  <li><strong>Optimise thumbnails</strong> like any other image: the right size, compressed, in a modern format.</li>
+</ul>
+<p>Many production houses use Vimeo for its clean, ad-free player and privacy controls, and YouTube for reach. Check each platform's current plans. For more on getting video right, see <a href="/blog/video-on-business-website/">video on your business website</a>.</p>
+
+<h2>Services and process pages</h2>
+<p>Give each main service its own page instead of one long list. Someone searching for "product video shoot" wants a page about product videos, with relevant examples, not a page naming twelve services.</p>
+<p>Then explain how a project runs. A clear process makes you look organised and answers nervous questions before they're asked:</p>
+<ol>
+  <li><strong>Brief and discovery:</strong> goals, audience, where the video will be used and deadlines</li>
+  <li><strong>Pre-production:</strong> concept, script, storyboard, location recce, casting and scheduling</li>
+  <li><strong>Shoot:</strong> crew, equipment, locations and number of shoot days</li>
+  <li><strong>Post-production:</strong> editing, colour grading, sound design, music licensing, motion graphics and subtitles</li>
+  <li><strong>Review and revisions:</strong> how many rounds are included and how feedback is shared</li>
+  <li><strong>Delivery:</strong> file formats, aspect ratios for different platforms, versions and cut-downs</li>
+</ol>
+<p>Add an FAQ for the questions corporate clients often ask: who owns the final video and raw footage, whether you sign NDAs, whether you travel for shoots and whether you can deliver versions in several languages.</p>
+
+<h2>Pricing signals</h2>
+<p>Video budgets vary widely, so most production companies don't publish fixed prices. But giving no signal at all brings enquiries that were never a fit. Explain what drives cost (shoot days, crew size, locations, talent, animation, number of edits and versions) and consider "starting from" packages for repeatable work such as testimonial videos, product shoots or event highlights. See <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
+
+<h2>Enquiry forms that qualify leads</h2>
+<p>A generic "name, email, message" form leads to long back-and-forth before you can quote. Ask a few useful questions instead:</p>
+<ul>
+  <li>Type of video and where it will be used: website, ads, LinkedIn, an event screen</li>
+  <li>Approximate length and number of videos</li>
+  <li>Shoot location and preferred dates</li>
+  <li>Delivery deadline</li>
+  <li>Budget range</li>
+  <li>Links to reference videos they like</li>
+</ul>
+<p>Keep required fields to a minimum, and offer WhatsApp and a phone number for people who would rather talk. Reply quickly: a prompt response with thoughtful questions about their brief makes a strong first impression when a client is comparing several production houses.</p>
+
+<h2>Trust signals</h2>
+<ul>
+  <li>Client logos, only with permission and only for work you actually did</li>
+  <li>Short video testimonials from clients; you're a video company, so show it</li>
+  <li>Your team: directors, cinematographers and editors, with photos and short bios</li>
+  <li>In-house facilities such as an edit suite, studio floor or equipment you own</li>
+  <li>Awards, festival selections or press coverage, only if genuine</li>
+  <li>Behind-the-scenes photos that show a professional crew at work</li>
+</ul>
+
+<h2>Getting found</h2>
+<p>Corporate clients usually search by service and location: "corporate video production in Pune", "ad film makers in Mumbai", "product video shoot in Bengaluru". To show up for those searches:</p>
+<ul>
+  <li>Build service pages that mention the cities you genuinely work in, naturally</li>
+  <li>Keep your Google Business Profile complete, with stills from your work and client reviews</li>
+  <li>Write a clear title, description and short text summary on every project page, because search engines can't watch your videos</li>
+  <li>Add video structured data to project pages so search engines understand what each video is</li>
+  <li>Link your YouTube and Vimeo channels back to the matching pages on your website</li>
+</ul>
+<p>For the basics of ranking in your city, see the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian businesses</a>.</p>
+
+<p>I build fast WordPress websites that show off video work without slowing down. See <a href="/wordpress-website-development/">WordPress website development</a>, or if your current site struggles under heavy embeds, <a href="/wordpress-speed-optimization/">speed optimisation</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-djs-live-bands',
+    title: 'Websites for Wedding DJs, Live Bands and Performers',
+    description: 'How wedding DJs, live bands and performers can get more bookings from a website: performance videos, clear packages, event types, availability and enquiries.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Couples, wedding planners and corporate event managers rarely book a DJ or band on the strength of a poster and a phone number. They want to hear you, see you working a crowd and know exactly what they get for their budget, usually within a few minutes of scrolling on their phone. Instagram shows your vibe, but a website is where a serious client checks your packages, confirms you play the kind of event they're planning and sends a proper enquiry.</p>
+
+<p>Here's what a website for a wedding DJ, live band or performance act needs to turn that interest into bookings.</p>
+
+<h2>What clients want to know before booking</h2>
+<p>Whether it's a couple planning a sangeet or an HR team organising an annual party, the questions are much the same:</p>
+<ul>
+  <li><strong>Will you suit our crowd?</strong> Genres, languages and the kind of events you usually play</li>
+  <li><strong>What do you sound like live?</strong> Real performance footage, not just studio tracks or posters</li>
+  <li><strong>What's included?</strong> Hours, sound system, lights, musicians, an anchor or dhol players</li>
+  <li><strong>Are you free on our date?</strong> Especially in peak wedding season</li>
+  <li><strong>Can we rely on you?</strong> Punctuality, backup equipment and how you handle a mixed-age audience</li>
+  <li><strong>Does it fit our budget?</strong> Even a rough idea helps</li>
+</ul>
+<p>Answer these clearly and you'll get fewer "just checking" messages and more enquiries from people who are ready to book.</p>
+
+<h2>Show performances, not just posters</h2>
+<p>Video is your most persuasive content, so put a short highlight reel near the top of the homepage: a packed dance floor, the baraat entry, a crowd singing along with your band. Then organise clips by occasion so visitors quickly find what's relevant to them:</p>
+<ul>
+  <li>Weddings: sangeet, mehendi, haldi, baraat, cocktail and reception</li>
+  <li>Corporate events, award nights and product launches</li>
+  <li>Private parties, anniversaries and birthdays</li>
+  <li>College fests, clubs and public events</li>
+</ul>
+<p>Host videos on a platform such as YouTube and use click-to-play previews on your site, so pages stay fast on mobile data. Clips built on commercial recordings can sometimes be muted or blocked by video platforms, so live performances and your own arrangements are usually safer to showcase; check each platform's current rules. Add a line of context under each clip: the event type, the city and roughly how big the crowd was. For more on using video well, see <a href="/blog/video-on-business-website/">video on your business website</a>.</p>
+
+<h2>Event types, line-up and packages</h2>
+<p>Give each main offering its own page or a clearly separate section. A couple looking for a Sufi band for their sangeet doesn't want to scroll past your club nights.</p>
+<h3>For DJs</h3>
+<p>List the genres you play (Bollywood, Punjabi, regional, EDM, retro, English pop), whether you take requests, the equipment you bring and whether you supply lighting, LED screens or special effects yourself or through a partner.</p>
+<h3>For live bands and performers</h3>
+<p>Show the line-up (vocalists and instrumentalists), your repertoire, a sample song list and the formats you offer: an acoustic duo for a cocktail evening, a full band for a reception, a dhol group for the baraat. Mention the stage space and power you need, and offer a downloadable technical rider for venues and sound vendors.</p>
+<h3>Packages</h3>
+<p>Packages make comparison easy. For each one, state:</p>
+<table>
+  <thead>
+    <tr><th>Detail</th><th>Why it matters</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Performance hours and number of sets</td><td>Avoids disputes about overtime later</td></tr>
+    <tr><td>Sound and lighting included</td><td>Clients need to know whether to hire extra equipment</td></tr>
+    <tr><td>Performers and crew</td><td>Shows exactly who will turn up</td></tr>
+    <tr><td>Travel and outstation terms</td><td>Destination weddings are common, and costs add up</td></tr>
+    <tr><td>Overtime and add-ons</td><td>Anchors, dhol, extra lights or a second setup for another function</td></tr>
+  </tbody>
+</table>
+<p>Whether to publish prices is your call. "Starting from" figures filter out mismatched budgets without locking you in; see <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
+
+<h2>Availability and enquiries</h2>
+<p>In this business, the date is everything. Make the enquiry form ask for what you need to check availability and quote:</p>
+<ul>
+  <li>Event date and timings</li>
+  <li>City and venue, and whether it's indoors or outdoors</li>
+  <li>Event type and function (for example sangeet or reception)</li>
+  <li>Approximate guest count</li>
+  <li>Whether the venue or planner is providing sound and lights</li>
+  <li>Budget range (optional)</li>
+</ul>
+<p>Add a WhatsApp button too, because many clients prefer to send a quick "are you free on the 14th?" message. If you show an availability calendar, keep it accurate: a calendar showing dates as free when you've already booked them causes more trouble than having no calendar at all.</p>
+<p>Explain how booking works: how a date is confirmed, the advance (by UPI or bank transfer), what happens if the event is cancelled or postponed, and that you follow venue and local rules on sound levels and late-night music. Clear terms upfront prevent awkward conversations later.</p>
+
+<h2>Trust signals</h2>
+<ul>
+  <li>Google reviews from couples, planners and corporate clients; ask soon after the event while the excitement is fresh (see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a>)</li>
+  <li>Venues, hotels and cities you've performed in, stated honestly</li>
+  <li>Photos of your actual setup, so clients know what they're paying for</li>
+  <li>Backup plans: spare equipment and a standby performer if someone falls ill</li>
+  <li>Team photos and short bios for the band or DJ crew</li>
+  <li>TV appearances, festival slots or brand collaborations, only if genuine</li>
+</ul>
+
+<h2>A page for planners and venues</h2>
+<p>Wedding planners, event companies and hotels can send you repeat work, so make their job easy. A simple "for planners" page or press kit can hold high-resolution photos, a short bio, your logo, the technical rider, the formats you offer and a direct contact. Planners building a proposal then won't have to chase you for material. To understand what planners need from their own sites, see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a>.</p>
+
+<h2>Getting found</h2>
+<p>Clients usually search with an occasion and a city: "wedding DJ in Jaipur", "live band for sangeet in Delhi", "Sufi band in Mumbai", "DJ for corporate event in Bengaluru". To appear for these:</p>
+<ul>
+  <li>Create pages for the event types and genres you're genuinely known for, with real clips and details</li>
+  <li>Mention the cities you're based in and regularly travel to, naturally, rather than creating dozens of copy-paste city pages</li>
+  <li>Set up a Google Business Profile (as a service-area business if clients don't visit you at an address) and add event photos and reviews</li>
+  <li>Link your Instagram and YouTube to the matching pages on your website</li>
+  <li>Keep pages light so they load quickly for someone tapping the link in your Instagram bio on mobile data</li>
+</ul>
+
+<p>Planning a website for your DJ service, band or performance act? See <a href="/wordpress-website-development/">WordPress website development</a>, or if you advertise during wedding season, a focused <a href="/landing-page-design/">landing page</a> built around one package and a quick enquiry form.</p>
+`,
+  },
+  {
+    slug: 'website-for-artists-art-galleries',
+    seoTitle: 'Websites for Artists and Art Galleries: Selling Art Online',
+    title: 'Websites for Artists and Art Galleries: Portfolios, Sales and Commissions',
+    description: 'How artists and art galleries can build a website that sells: portfolios, artwork pages, selling originals and prints online, commissions and exhibitions.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>For an artist or art gallery, Instagram is a great shop window but a poor catalogue. Older works disappear down the feed, there's no proper place for prices, sizes or availability, and the algorithm decides who sees your latest series. A website gives collectors, interior designers and curators a permanent, organised place to view your work, check what's available and buy or enquire with confidence.</p>
+
+<p>Here's what an artist or gallery website needs, whether you sell originals, prints or commissions, or run exhibitions. (If you make crafts or homeware in quantity rather than original artworks, see <a href="/blog/website-for-handicraft-artisan-brands/">websites for handicraft and artisan brands</a>.)</p>
+
+<h2>Who visits and what they want</h2>
+<ul>
+  <li><strong>Collectors and art buyers:</strong> availability, price, size, medium and a sense of your track record</li>
+  <li><strong>Interior designers and architects:</strong> works that suit a particular space, sizes, colours and whether you take commissions</li>
+  <li><strong>Corporate buyers:</strong> art for offices, hotels and lobbies, with proper invoices</li>
+  <li><strong>Gallery visitors:</strong> current exhibitions, opening hours and how to get there</li>
+  <li><strong>Curators, galleries and press:</strong> your statement, CV and good-quality images</li>
+</ul>
+<p>A good site serves all of them without making anyone dig.</p>
+
+<h2>The portfolio: organised and complete</h2>
+<p>Group works into series or collections rather than one endless grid. It shows how your practice has developed and makes browsing easier. Every artwork deserves its own page with:</p>
+<ul>
+  <li>Title, year and medium (for example acrylic on canvas, or mixed media on paper)</li>
+  <li>Dimensions in both centimetres and inches, and whether it's framed</li>
+  <li>Status: available, reserved or sold</li>
+  <li>Price, or "price on request" if you prefer to discuss it</li>
+  <li>Several images: the full work, close-ups of texture and detail, and a view on a wall to show scale</li>
+  <li>A few lines about the piece: the idea, the process or the place that inspired it</li>
+</ul>
+<p>Keep sold works on the site, clearly marked. They show your range and that collectors buy your work. Add an artist statement, a short bio and a CV of exhibitions, residencies and awards, listing only what's genuine.</p>
+<p>Photography matters more for artists than for almost anyone else. Shoot in even, diffused light, avoid glare on varnished or glazed work, and check the colours match the original. See <a href="/blog/prepare-photos-for-website/">how to prepare photos for your website</a>.</p>
+
+<h2>Selling artwork online</h2>
+<p>There's no single right model. Choose what fits how you sell today:</p>
+<table>
+  <thead>
+    <tr><th>Model</th><th>Suits</th><th>What the site needs</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Enquiry only</td><td>High-value originals and galleries that prefer a conversation</td><td>Listed prices or "price on request", with an enquiry form and WhatsApp on every artwork page</td></tr>
+    <tr><td>Online checkout for originals</td><td>Artists with a steady range of mid-priced works</td><td>A store where each original has a stock of one, so it can't be sold twice online</td></tr>
+    <tr><td>Prints and editions</td><td>Artists who want more affordable options alongside originals</td><td>Size and paper options, edition numbers and clear details of print quality</td></tr>
+  </tbody>
+</table>
+<p>A WooCommerce store can take UPI, cards and net banking through Indian payment gateways, and international payments where your gateway supports them; see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>. Mark an original as sold on the website as soon as it sells at an exhibition or through Instagram, or you risk selling it twice.</p>
+<p>Be clear about shipping: whether canvases travel rolled or stretched, how framed works are packed, transit insurance, delivery times within India and abroad, and what happens if a work arrives damaged. Say whether originals come with a certificate of authenticity. For GST on art sales and paperwork for international shipments, check current rules with your CA.</p>
+
+<h2>Commissions</h2>
+<p>Portraits, murals and large pieces for homes and corporate walls often start with a website enquiry. A commissions page should explain:</p>
+<ol>
+  <li><strong>The brief:</strong> subject, size, style, colours and where the work will hang</li>
+  <li><strong>Sketch or concept approval</strong> before you start the final piece</li>
+  <li><strong>Advance and payment stages</strong></li>
+  <li><strong>Timeline</strong>, including drying, framing and delivery</li>
+  <li><strong>Changes:</strong> what can be adjusted at each stage</li>
+</ol>
+<p>Show past commissions with the client's permission, and ask for useful details in the enquiry form: a photo of the wall or room, approximate size, deadline and budget range. Interior designers who source art for their projects will appreciate a short note on how you work with them.</p>
+
+<h2>For galleries: exhibitions and artists</h2>
+<p>A gallery website has extra jobs to do:</p>
+<ul>
+  <li><strong>Exhibitions:</strong> current, upcoming and past shows, each with dates, artists, a curatorial note and the works on display</li>
+  <li><strong>Artist pages:</strong> a bio and available works for each artist you represent</li>
+  <li><strong>Online viewing rooms:</strong> the works from a show with sizes, prices or "price on request" and availability, for collectors who can't visit</li>
+  <li><strong>Visit information:</strong> address, map, opening hours, closed days and parking</li>
+  <li><strong>Events:</strong> preview nights, artist talks and workshops, with a simple RSVP form</li>
+</ul>
+<p>A mailing list is valuable for galleries and artists alike: collectors like to hear about new work and previews before anyone else. Offer a sign-up on exhibition and artwork pages, and only email people who have opted in.</p>
+
+<h2>Protecting your work and building trust</h2>
+<ul>
+  <li>Upload web-sized images rather than full-resolution files, so copies are less useful for printing</li>
+  <li>Use a small, subtle watermark if you like, but don't let it spoil the work</li>
+  <li>Add a copyright notice and a short note on how your images may be used</li>
+  <li>Skip right-click blocking: it frustrates visitors and doesn't stop screenshots</li>
+  <li>Show where your work has been exhibited or collected, naming collectors only with permission</li>
+  <li>Collector testimonials, and Google reviews for studios and galleries</li>
+  <li>Clear policies on payments, shipping, returns and commissions</li>
+</ul>
+
+<h2>Getting found and staying fast</h2>
+<p>An artwork titled "Untitled III" tells search engines nothing. Describe each work in words: subject, style, colours and medium. That helps people searching for "abstract paintings for living room", "Madhubani paintings online" or "portrait artist in Pune" find you.</p>
+<ul>
+  <li>Write descriptive alt text and file names for artwork images</li>
+  <li>Create pages for your main styles, mediums and commission types</li>
+  <li>If your gallery or studio receives visitors, keep a complete Google Business Profile with opening hours and photos</li>
+  <li>Link your Instagram and other profiles back to the relevant pages on your site</li>
+</ul>
+<p>Large, high-quality images can make an art website slow, especially on mobile. Resize and compress them, use modern formats and lazy-load galleries; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
+
+<p>Want a website that shows your art properly and sells it? See <a href="/woocommerce-developer/">WooCommerce development</a> for selling originals and prints online, or <a href="/wordpress-website-development/">WordPress website development</a> for a portfolio and enquiry site.</p>
+`,
+  },
+  {
+    slug: 'website-for-book-publishers',
+    seoTitle: 'Website for Book Publishers and Independent Presses',
+    title: 'Website for Book Publishers and Independent Presses: Catalogue, Submissions and Sales',
+    description: 'What a publisher or independent press website needs: a browsable catalogue, author pages, clear submission guidelines, direct book sales and trade orders.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>A publisher's website serves more audiences than most business sites: readers looking for their next book, writers hoping to be published, booksellers and libraries placing orders, and journalists or rights buyers asking for review copies. Whether you're an established publishing house or a small independent press, the site needs to serve all of them without turning into a maze. This guide covers the publisher's side; if you're an individual writer, see <a href="/blog/website-for-authors-content-creators/">websites for authors and content creators</a> instead.</p>
+
+<h2>Who visits a publisher's website</h2>
+<table>
+  <thead>
+    <tr><th>Visitor</th><th>What they want</th><th>Where they should land</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Readers</td><td>New releases, a specific title, where to buy</td><td>Catalogue and book pages</td></tr>
+    <tr><td>Aspiring authors</td><td>Whether you publish their genre and how to submit</td><td>Submissions page</td></tr>
+    <tr><td>Booksellers, schools and libraries</td><td>Catalogues, trade terms and bulk ordering</td><td>Trade and bulk orders page</td></tr>
+    <tr><td>Media and reviewers</td><td>Review copies, press releases and author interviews</td><td>Press page</td></tr>
+    <tr><td>Rights buyers and translators</td><td>Titles available for translation or adaptation</td><td>Rights page</td></tr>
+  </tbody>
+</table>
+<p>Your main menu should make each of these routes obvious. Most small presses only need five or six top-level items.</p>
+
+<h2>A catalogue readers can browse</h2>
+<p>The catalogue is the heart of the site. Each book deserves its own page, not just a cover in a grid:</p>
+<ul>
+  <li>A sharp cover image and, where possible, a few sample interior pages</li>
+  <li>The blurb, a short excerpt or "look inside" sample, and a table of contents for non-fiction</li>
+  <li>Format details for paperback, hardcover, e-book or audiobook, with page count, dimensions and ISBN for each</li>
+  <li>Language, age group for children's books, and reading order for series</li>
+  <li>Review quotes you have permission to use, plus any awards or shortlists</li>
+  <li>Clear buying options: your own store, plus links to other retailers if you use them</li>
+</ul>
+<p>As the list grows, add filters for genre, language, author, age group and format, and make sure search works on title, author and ISBN. Separate "new releases" and "coming soon" sections give returning readers a reason to come back.</p>
+
+<h2>Author pages that connect your list</h2>
+<p>Every author you publish should have a profile page with a photo, a short bio, all their titles with you, upcoming events and links to their own website and social profiles. Author pages help a reader who enjoyed one book find the next, and they often appear in searches for the author's name, which matters most when a book is being talked about. Update them whenever a new title comes out or an author wins recognition.</p>
+
+<h2>Submissions without the inbox chaos</h2>
+<p>If you accept manuscripts, the submissions page is likely to be one of your busiest pages. A clear one saves hours of sorting through unsuitable emails:</p>
+<ol>
+  <li>State what you publish and what you don't: genres, languages, audience and length</li>
+  <li>Say whether submissions are open or closed right now, and keep that current</li>
+  <li>List exactly what to send, such as a synopsis, sample chapters and an author bio</li>
+  <li>Use a form with file upload instead of a bare email address, so every submission arrives in the same format</li>
+  <li>Give an honest response time, and say whether you reply to every submission</li>
+</ol>
+<p>Be transparent about your model. If you offer paid publishing or self-publishing services alongside traditional publishing, explain clearly what authors pay for and what they receive. Writers research publishers carefully before submitting, and vague wording around fees damages trust quickly.</p>
+
+<h2>Selling books from your own site</h2>
+<p>Marketplaces bring reach, but selling directly gives you the customer relationship and more of the margin on each copy. Many presses do both; see <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a> for the trade-offs. A WooCommerce store for books typically needs:</p>
+<ul>
+  <li>Formats set up as variations of one product, so paperback and hardcover share a page; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a></li>
+  <li>E-books as downloadable products, if you sell them direct</li>
+  <li>Pre-orders for upcoming titles, and box sets or bundles for series</li>
+  <li>Weight-based shipping, because one novel and a set of ten textbooks cost very different amounts to send; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a></li>
+  <li>UPI, card and cash on delivery options, with proper GST invoices</li>
+</ul>
+<p>Tax treatment can differ between printed books and e-books, so confirm the current GST position for each format with your CA before setting up tax rules.</p>
+
+<h2>Trade, bulk and institutional orders</h2>
+<p>Bookshops, schools, colleges, libraries and companies buying books for events order very differently from individual readers. Give them a dedicated page with:</p>
+<ul>
+  <li>A downloadable catalogue, refreshed each season</li>
+  <li>Your trade terms, or a simple form to request them</li>
+  <li>A bulk order form asking for titles, quantities, delivery city and deadline</li>
+  <li>Direct contact details for your sales or distribution team, including WhatsApp</li>
+</ul>
+<p>If you publish academic or school titles, inspection copies for teachers and a clear list of titles by subject and level can be especially useful.</p>
+
+<h2>Press, rights and events</h2>
+<ul>
+  <li><strong>Press room:</strong> press releases, high-resolution covers and author photos, and a review copy request form</li>
+  <li><strong>Rights:</strong> which titles are available for translation, audio or screen adaptation, and who to contact</li>
+  <li><strong>Events:</strong> launches, readings and literature festival appearances, with dates and venues</li>
+  <li><strong>Newsletter:</strong> new releases and events sent straight to readers, a channel no social media algorithm controls</li>
+</ul>
+<p>Indian presses that publish in several languages should also consider a multilingual site, so Hindi, Marathi, Tamil or Bengali readers can browse comfortably in their own language.</p>
+
+<h2>SEO and speed for a growing catalogue</h2>
+<ul>
+  <li>Write your own book descriptions instead of pasting the same jacket copy that appears on every retailer's site</li>
+  <li>Give book and author pages descriptive titles, such as the book title followed by the author's name</li>
+  <li>Use structured data for books and your organisation to help search engines understand your catalogue</li>
+  <li>Publish helpful content: reading lists, author interviews and themed recommendations</li>
+  <li>Compress cover and interior images and lazy-load them, because a single catalogue page can hold dozens of covers</li>
+</ul>
+<p>If readers can visit your office or bookshop, keep your Google Business Profile updated with opening hours and photos.</p>
+
+<p>WordPress with WooCommerce suits most publishers: it handles large catalogues, author profiles, submission forms and a store in one place that your team can update without a developer. If you're planning a new site or rebuilding an old one, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-corporate-gifting-companies',
+    seoTitle: 'Website for Corporate Gifting Companies: Win Bulk Orders',
+    title: 'Website for Corporate Gifting Companies: Catalogues, Branding and Bulk Quotes',
+    description: 'What a corporate gifting website needs: a catalogue by occasion and budget, clear branding options, festival campaign pages and a quote form for bulk orders.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>Corporate gifting is a different business from a gift shop. Your buyers are HR teams, admin and procurement staff, marketing managers and founders, and they are ordering dozens or thousands of pieces with a logo, a budget per head and a fixed deadline. They usually compare several vendors before choosing one, so your website has to answer their practical questions quickly and make asking for a quote effortless. If you mainly sell flowers and gifts to individual shoppers, see <a href="/blog/website-for-florists-gift-shops/">websites for florists and gift shops</a> instead.</p>
+
+<h2>What corporate buyers want to know first</h2>
+<table>
+  <thead>
+    <tr><th>Buyer</th><th>Typical need</th><th>What they look for on your site</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>HR and people teams</td><td>Festival gifts, welcome kits, work anniversary and award gifts</td><td>Ideas by occasion, budget bands, delivery to every employee</td></tr>
+    <tr><td>Marketing and events teams</td><td>Branded merchandise for conferences, trade shows and launches</td><td>Branding options, lead times, quantities</td></tr>
+    <tr><td>Admin and procurement</td><td>A reliable vendor with proper paperwork</td><td>GST invoices, company details, payment terms</td></tr>
+    <tr><td>Founders and sales teams</td><td>Premium gifts for key clients</td><td>Curated hampers, packaging, personal notes</td></tr>
+  </tbody>
+</table>
+<p>Across all of them, the same questions come up: what can I get within my budget, what is the minimum order quantity, can you add our logo, and can you deliver by my date? Answer those on your pages rather than making buyers ask.</p>
+
+<h2>A catalogue organised the way buyers shop</h2>
+<p>Corporate buyers rarely start with a specific product. They start with an occasion and a budget, so organise your catalogue around both:</p>
+<ul>
+  <li><strong>By occasion:</strong> Diwali, New Year, employee onboarding, work anniversaries, client appreciation, events and conferences</li>
+  <li><strong>By budget per piece:</strong> a few price bands that match how you actually quote</li>
+  <li><strong>By product type:</strong> drinkware, bags, tech accessories, stationery, apparel, hampers and eco-friendly gifts</li>
+  <li><strong>By recipient:</strong> employees, clients, event attendees</li>
+</ul>
+<p>Each product page should show real photos (including a branded sample), the minimum order quantity, available branding methods, typical production time, packaging options and either tiered pricing or a clear "request a quote" button. Because prices depend on quantity, branding and packaging, most gifting businesses work on quotes. A WooCommerce site can combine a browsable catalogue with an enquiry cart, and still sell small ready-made orders online if that suits you.</p>
+<p>A downloadable PDF catalogue is still useful for procurement teams who circulate options internally, but keep every product on a proper web page too. Web pages can be found on Google and updated in minutes; a PDF goes out of date the moment prices or stock change.</p>
+
+<h2>Make branding and customisation clear</h2>
+<p>Branding is a big part of what buyers are paying for, so explain it properly:</p>
+<ul>
+  <li>List the methods you offer, such as screen printing, laser engraving, embroidery, UV printing or debossing, and which products each suits</li>
+  <li>Show close-up photos of finished branded work, using client logos only where you have permission</li>
+  <li>Explain your mock-up process: when buyers see a digital proof, and how many revisions are included</li>
+  <li>Offer custom packaging, sleeves and printed message cards, plus personalisation with individual names if you can do it</li>
+  <li>Say which logo files you need, typically a vector file such as AI, EPS, SVG or PDF</li>
+</ul>
+
+<h2>A quote form that wins bulk orders</h2>
+<p>Your quote form is where enquiries become orders. Ask for enough detail to send a useful quote in your first reply:</p>
+<ol>
+  <li>Products or occasion, or a "suggest options for me" choice</li>
+  <li>Quantity and budget per piece</li>
+  <li>Branding needed, with a logo upload</li>
+  <li>Required delivery date</li>
+  <li>Delivery to one office, several offices or individual home addresses</li>
+  <li>Company name, contact person, phone and email</li>
+</ol>
+<p>Let buyers shortlist several products and send them in one enquiry, rather than filling in a form for each. Add a WhatsApp button for quick questions, since many buyers prefer it for follow-ups; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>. An automatic reply that says when you'll respond reassures buyers who are contacting several vendors at once.</p>
+
+<h2>Plan for Diwali and year-end peaks</h2>
+<p>For many gifting businesses, a large share of the year's orders arrives in the weeks around Diwali and the New Year, and companies often shortlist vendors well before then. Prepare early:</p>
+<ul>
+  <li>Publish a dedicated Diwali gifting page before buyers start searching, and update the same page each year instead of creating a new URL, so it builds up rankings over time</li>
+  <li>Show a clear "last date to order" for branded gifts, based on your real production and delivery times</li>
+  <li>Build focused landing pages for Google Ads or LinkedIn campaigns, with one offer and one quote form</li>
+  <li>Test the site's speed and forms before the rush, not during it</li>
+</ul>
+<p>For a full planning timeline, see <a href="/blog/seasonal-festival-campaigns-website/">seasonal and festival campaigns</a>.</p>
+
+<h2>Trust signals for business buyers</h2>
+<p>A company placing a large order is taking a risk on a vendor. Reduce that risk with:</p>
+<ul>
+  <li>Your registered business name, GST details, office address and phone number</li>
+  <li>Photos of your workspace, packing area and team</li>
+  <li>Short project stories: the brief, quantity, branding method and how you met the deadline</li>
+  <li>Your sample policy, including whether samples are charged</li>
+  <li>Clear payment terms, cancellation rules and what happens if items arrive damaged</li>
+  <li>Genuine reviews and, with permission, logos of companies you have supplied</li>
+</ul>
+
+<h2>SEO and speed</h2>
+<ul>
+  <li>Target specific searches such as "corporate gifts in {city}", "Diwali corporate gifts", "employee welcome kit" and "customised gifts with logo"</li>
+  <li>Write your own product descriptions; many resellers use the same supplier photos and text, which gives Google little reason to rank one over another</li>
+  <li>Add helpful guides, such as gift ideas by budget or what to put in an onboarding kit</li>
+  <li>Keep your Google Business Profile updated if buyers can visit your office or showroom</li>
+  <li>Compress product images, because a single catalogue page can easily hold dozens of photos</li>
+</ul>
+
+<p>WordPress with WooCommerce handles a large gifting catalogue, enquiry carts and seasonal campaign pages in one place your team can update. If you're planning a new site, see <a href="/woocommerce-developer/">WooCommerce development</a>, and for festival ad campaigns, <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-home-decor-stores',
+    seoTitle: 'Website for Home Decor and Furnishing Stores',
+    title: 'Website for Home Decor and Furnishing Stores: Collections, Inspiration and Online Sales',
+    description: 'What a home decor or furnishing store website needs: shoppable collections, room inspiration, accurate product details, reliable delivery and local SEO.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-seo-services'],
+    body: `
+<p>A home decor store sells a mood as much as a product. Shoppers browsing cushions, curtains, rugs, bed linen, lamps and wall art want to picture each piece in their own home, check it matches what they already have, and trust that it will arrive undamaged. Compared with furniture, decor items cost less, are bought more often and come in many more colours and sizes, which changes what the website needs to do. If you mainly sell sofas, beds and tables, see <a href="/blog/website-for-furniture-businesses/">websites for furniture showrooms and manufacturers</a>.</p>
+
+<h2>Help shoppers browse the way they think</h2>
+<p>Decor shoppers arrive with different starting points, so give them several ways in:</p>
+<ul>
+  <li><strong>By room:</strong> living room, bedroom, dining, balcony, kids' room</li>
+  <li><strong>By category:</strong> cushion covers, curtains, rugs, bedding, lighting, wall decor, vases and planters</li>
+  <li><strong>By style:</strong> minimal, boho, traditional, block print, contemporary</li>
+  <li><strong>By occasion:</strong> Diwali decor, housewarming gifts, wedding season</li>
+</ul>
+<p>Within each category, add filters for colour, size, material and price. Colour filters matter more here than in most stores, because many shoppers are matching an existing sofa, wall or bedspread.</p>
+
+<h2>Collections and room inspiration</h2>
+<p>Inspiration is what turns browsing into a basket. Styled content works harder than product grids alone:</p>
+<ul>
+  <li><strong>Shop the look:</strong> styled room photos where each item links to its product page</li>
+  <li><strong>Seasonal collections:</strong> festive decor, summer linens or a new colour story, each with its own landing page</li>
+  <li><strong>Complete the set:</strong> cushions, throws and runners designed to go together, suggested on each product page</li>
+  <li><strong>Styling guides:</strong> how to choose curtain length, pick a rug size, or refresh a rented flat without drilling</li>
+</ul>
+<p>If most of your styling content lives on Instagram, reuse your best photos on the website too. Embedded social feeds can slow pages down, and your website is where shoppers can actually filter, compare and buy.</p>
+
+<h2>Product pages that prevent returns</h2>
+<p>Decor returns often come down to colour or size: the item looked different on screen, or it didn't fit the space. Good product pages head off both:</p>
+<ul>
+  <li>Photos in natural light, close-ups of texture and weave, and at least one shot of the item in a room for scale</li>
+  <li>Exact dimensions in centimetres and inches, with size guides for curtains, rugs and bedsheets</li>
+  <li>Material, fabric weight where relevant, and care instructions</li>
+  <li>A clear note on what's included, such as whether a cushion cover comes with a filler</li>
+  <li>An honest line that handmade or hand-dyed pieces vary slightly, and that screen colours can differ</li>
+</ul>
+<p>Set up colours and sizes as variations of one product, so a cushion cover in six shades lives on a single page; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>. For made-to-measure curtains or blinds, custom width and height fields with a calculated price or a quote request work better than a long list of fixed sizes.</p>
+
+<h2>Running the online store</h2>
+<ul>
+  <li><strong>Payments:</strong> UPI, cards and cash on delivery, with any COD limits or charges stated before checkout</li>
+  <li><strong>Shipping:</strong> a rolled rug and a set of coasters cost very different amounts to send, so use weight or size-based rates; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a></li>
+  <li><strong>Fragile items:</strong> explain how you pack ceramics, glass and mirrors, and how customers should report breakage (some stores ask for an unboxing video)</li>
+  <li><strong>Stock:</strong> keep website stock in sync with your shop, especially for one-off handmade pieces</li>
+  <li><strong>Gifting:</strong> gift wrap, gift messages and gift cards, since decor is a popular housewarming and festival gift</li>
+</ul>
+<p>Publish a returns and exchange policy that covers colour mismatch, damage in transit and custom-made items, because these are the situations customers will ask about before they buy.</p>
+
+<h2>Showroom visits and local services</h2>
+<p>If you have a physical store, the website should bring people through the door as well as selling online. Show your address, map, opening hours and photos of the store, and keep your Google Business Profile updated with the same details and fresh photos.</p>
+<p>Many furnishing stores also offer services that need a home visit, such as curtain stitching and fitting, blinds or wallpaper installation. Give each service its own page with a "book a measurement visit" form and a WhatsApp button, and mention the areas you cover.</p>
+<p>Interior designers, homestays, cafés and offices often buy decor and soft furnishings in bulk. A short trade page with a simple enquiry form can bring repeat project orders.</p>
+
+<h2>SEO and speed for an image-heavy store</h2>
+<ul>
+  <li>Write your own product descriptions; many decor sellers stock similar pieces from the same suppliers, so copied text rarely stands out</li>
+  <li>Add short, useful intro text to category pages such as "cotton cushion covers" or "blackout curtains"</li>
+  <li>Target local searches like "home decor store in {city}" and "curtain shop near me" on your store and services pages</li>
+  <li>Serve images in modern formats, compress them and lazy-load photos further down the page; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a></li>
+  <li>Add product structured data, which can help prices and availability appear in search results</li>
+</ul>
+
+<p>WordPress with WooCommerce suits most decor and furnishing stores: collections, inspiration pages, variations and a blog all sit in one place your team can manage. See <a href="/woocommerce-developer/">WooCommerce development</a> to plan your store, or <a href="/wordpress-seo-services/">WordPress SEO</a> if your existing site isn't being found.</p>
 `,
   },
 ];
