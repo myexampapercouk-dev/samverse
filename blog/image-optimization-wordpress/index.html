@@ -202,6 +202,8 @@
 <h2 id="5-set-image-dimensions">5. Set image dimensions</h2>
 <p>Images should have width and height set so the browser reserves space for them. This prevents layout shifts (CLS) where text jumps as images load.</p>
 
+<p>Missing dimensions are only one cause of jumping pages; fonts, ads, banners and sticky headers can shift content too. See <a href="/blog/fix-cls-layout-shift/">how to fix Cumulative Layout Shift</a>.</p>
+
 <h2 id="6-serve-responsive-sizes">6. Serve responsive sizes</h2>
 <p>WordPress automatically creates multiple sizes of each image and lets browsers choose the right one for the screen. Make sure your theme and builder use this properly, so phones don't download desktop-sized images.</p>
 

@@ -423,6 +423,14 @@ const LINKS = [
   ['image-optimization-wordpress', '<h2>5. Set image dimensions</h2>', '<p>Lazy loading applies to videos and embeds too; see <a href="/blog/lazy-loading-explained/">lazy loading explained</a> for what to lazy-load and what to leave alone.</p>\n\n'],
   ['choose-website-colours-fonts', '<h2>Apply them as global styles</h2>', '<p>For the practical side, including weights, self-hosting, font-display and preloading, see <a href="/blog/web-fonts-performance/">how to load web fonts without slowing your site</a>.</p>\n\n'],
   ['website-chatbot-worth-it', '<h2>Answer questions on the page first</h2>', '<p>Chat widgets are only one kind of external code; see <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a> to audit trackers, embeds and the rest.</p>\n\n'],
+  // Agent 19
+  ['landing-page-vs-website', '<h2>When sending ads to your website makes sense</h2>', '<p>To find out which headline or offer really works better, rather than guessing, see <a href="/blog/landing-page-ab-testing/">A/B testing landing pages</a>.</p>\n\n'],
+  ['conversion-rate-optimization-basics', '<h2>Step 3: Form hypotheses</h2>', '<p>For how to set these tools up, what to look for and which privacy settings to use, see <a href="/blog/website-heatmaps-session-recordings/">heatmaps and session recordings</a>.</p>\n\n'],
+  ['woocommerce-coupons-discounts', '<h2>Watch out for</h2>', '<p>Coupons can also power a customer referral programme; see <a href="/blog/referral-program-website/">how to set up a referral programme on your website</a>.</p>\n\n'],
+  // Agent 23
+  ['core-web-vitals-explained', '<h2>How to improve INP (responsiveness)</h2>', '<p>For a step-by-step walkthrough, including how to find your LCP element and which part of it is slow, see <a href="/blog/fix-lcp-largest-contentful-paint/">how to fix slow Largest Contentful Paint</a>.</p>\n\n'],
+  ['image-optimization-wordpress', '<h2>6. Serve responsive sizes</h2>', '<p>Missing dimensions are only one cause of jumping pages; fonts, ads, banners and sticky headers can shift content too. See <a href="/blog/fix-cls-layout-shift/">how to fix Cumulative Layout Shift</a>.</p>\n\n'],
+  ['website-speed-indian-mobile-networks', '<h2>Serve it fast</h2>', '<p>Heavy JavaScript mostly shows up as slow taps and clicks, which Google measures as INP; see <a href="/blog/fix-inp-interaction-to-next-paint/">how to improve Interaction to Next Paint</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

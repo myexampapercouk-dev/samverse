@@ -2568,5 +2568,47 @@
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
     <description>How chat widgets, tracking pixels, embeds and ad scripts slow your website, and how to audit them, remove what you don't need and delay the rest safely.</description>
   </item>
+  <item>
+    <title>A/B Testing Landing Pages: A Practical Guide for Small Businesses</title>
+    <link>https://samverse.space/blog/landing-page-ab-testing/</link>
+    <guid>https://samverse.space/blog/landing-page-ab-testing/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How small businesses can A/B test landing pages: what to test first, how much traffic you need, tools after Google Optimize, and how to avoid false conclusions.</description>
+  </item>
+  <item>
+    <title>Heatmaps and Session Recordings: See How Visitors Really Use Your Website</title>
+    <link>https://samverse.space/blog/website-heatmaps-session-recordings/</link>
+    <guid>https://samverse.space/blog/website-heatmaps-session-recordings/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How heatmaps and session recordings from tools like Microsoft Clarity show where visitors click, scroll and get stuck, and which privacy settings to use.</description>
+  </item>
+  <item>
+    <title>How to Set Up a Customer Referral Programme on Your Website</title>
+    <link>https://samverse.space/blog/referral-program-website/</link>
+    <guid>https://samverse.space/blog/referral-program-website/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to run a customer referral programme from your website: choosing rewards, referral codes and links, WooCommerce plugins, WhatsApp sharing and fraud checks.</description>
+  </item>
+  <item>
+    <title>How to Fix Slow Largest Contentful Paint (LCP) on WordPress</title>
+    <link>https://samverse.space/blog/fix-lcp-largest-contentful-paint/</link>
+    <guid>https://samverse.space/blog/fix-lcp-largest-contentful-paint/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to fix slow Largest Contentful Paint on WordPress: find your LCP element, speed up server response, prioritise the hero image and cut render-blocking CSS.</description>
+  </item>
+  <item>
+    <title>How to Fix Cumulative Layout Shift (CLS) on WordPress</title>
+    <link>https://samverse.space/blog/fix-cls-layout-shift/</link>
+    <guid>https://samverse.space/blog/fix-cls-layout-shift/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Fix Cumulative Layout Shift on WordPress: reserve space for images and embeds, tame web fonts, ads and banners, and stop sticky headers making pages jump.</description>
+  </item>
+  <item>
+    <title>How to Improve Interaction to Next Paint (INP) on WordPress</title>
+    <link>https://samverse.space/blog/fix-inp-interaction-to-next-paint/</link>
+    <guid>https://samverse.space/blog/fix-inp-interaction-to-next-paint/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>Improve Interaction to Next Paint on WordPress: find slow taps, cut long JavaScript tasks, tame third-party scripts and heavy plugins, and fix laggy menus.</description>
+  </item>
 </channel>
 </rss>

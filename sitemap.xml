@@ -2389,6 +2389,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://samverse.space/blog/landing-page-ab-testing/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/website-heatmaps-session-recordings/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/referral-program-website/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/fix-lcp-largest-contentful-paint/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/fix-cls-layout-shift/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/fix-inp-interaction-to-next-paint/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://samverse.space/work/</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>

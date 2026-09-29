@@ -403,5 +403,11 @@
  "blog-woocommerce-multi-vendor-marketplace": "3bb577fd492efba7e918b0981d0d5ec852d747c9",
  "blog-lazy-loading-explained": "6a80a87cc2517205b90d9834496b7d1cfbb9bf4f",
  "blog-web-fonts-performance": "50f885283f0891e401458edfbf874cd6f92e9bee",
- "blog-third-party-scripts-slow-website": "e15db5dd5c7fa3dc08d09f64d3b8ef918a7e3746"
+ "blog-third-party-scripts-slow-website": "e15db5dd5c7fa3dc08d09f64d3b8ef918a7e3746",
+ "blog-landing-page-ab-testing": "168b3bedb728a486247ecd3200b7cf1e69d09a81",
+ "blog-website-heatmaps-session-recordings": "8ade0a91dff213d1beed069c61b2262a2e13691a",
+ "blog-referral-program-website": "24731832260549bde4b9e798dcceb5b48cb5fb8a",
+ "blog-fix-lcp-largest-contentful-paint": "a8a0d98f77556ee4fa7d07d6238b6e17634afd93",
+ "blog-fix-cls-layout-shift": "ee343ba53f238cdce8094ae4bebb215c6c687fbe",
+ "blog-fix-inp-interaction-to-next-paint": "045873afc99a83653361b8dd64dfb6d22c317798"
 }

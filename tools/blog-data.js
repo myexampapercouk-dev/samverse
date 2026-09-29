@@ -1313,6 +1313,8 @@ module.exports = [
   <li>Avoid large sliders and videos above the fold</li>
 </ul>
 
+<p>For a step-by-step walkthrough, including how to find your LCP element and which part of it is slow, see <a href="/blog/fix-lcp-largest-contentful-paint/">how to fix slow Largest Contentful Paint</a>.</p>
+
 <h2>How to improve INP (responsiveness)</h2>
 <ul>
   <li>Remove unnecessary plugins and third-party scripts (chat widgets, trackers)</li>
@@ -2546,6 +2548,8 @@ module.exports = [
   <li><strong>Easy to test:</strong> headlines and offers can be tweaked per campaign</li>
 </ul>
 
+<p>To find out which headline or offer really works better, rather than guessing, see <a href="/blog/landing-page-ab-testing/">A/B testing landing pages</a>.</p>
+
 <h2>When sending ads to your website makes sense</h2>
 <ul>
   <li>Brand campaigns where people search your business name</li>
@@ -3301,6 +3305,8 @@ module.exports = [
 
 <h2>5. Set image dimensions</h2>
 <p>Images should have width and height set so the browser reserves space for them. This prevents layout shifts (CLS) where text jumps as images load.</p>
+
+<p>Missing dimensions are only one cause of jumping pages; fonts, ads, banners and sticky headers can shift content too. See <a href="/blog/fix-cls-layout-shift/">how to fix Cumulative Layout Shift</a>.</p>
 
 <h2>6. Serve responsive sizes</h2>
 <p>WordPress automatically creates multiple sizes of each image and lets browsers choose the right one for the screen. Make sure your theme and builder use this properly, so phones don't download desktop-sized images.</p>
@@ -6413,6 +6419,8 @@ module.exports = [
   <li>Keep page builder layouts lean. See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</li>
 </ul>
 
+<p>Heavy JavaScript mostly shows up as slow taps and clicks, which Google measures as INP; see <a href="/blog/fix-inp-interaction-to-next-paint/">how to improve Interaction to Next Paint</a>.</p>
+
 <h2>Serve it fast</h2>
 <ul>
   <li>Hosting with servers in or near India (for Indian audiences)</li>
@@ -8521,6 +8529,8 @@ module.exports = [
   <li>Heatmaps and session recordings (with privacy settings) show where people get stuck</li>
   <li>Ask customers what nearly stopped them from contacting you</li>
 </ul>
+
+<p>For how to set these tools up, what to look for and which privacy settings to use, see <a href="/blog/website-heatmaps-session-recordings/">heatmaps and session recordings</a>.</p>
 
 <h2>Step 3: Form hypotheses</h2>
 <p>For example: "If we add WhatsApp next to the form on service pages, more mobile visitors will enquire, because many prefer chat." A clear hypothesis makes results easier to interpret.</p>
@@ -13526,6 +13536,8 @@ module.exports = [
   <li><strong>Loyalty discounts</strong> for repeat customers</li>
   <li><strong>Prepaid discounts</strong> to reduce COD; see <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery</a></li>
 </ul>
+
+<p>Coupons can also power a customer referral programme; see <a href="/blog/referral-program-website/">how to set up a referral programme on your website</a>.</p>
 
 <h2>Watch out for</h2>
 <ul>
@@ -23150,6 +23162,528 @@ Template: astra
 </ul>
 
 <p>If you suspect third-party scripts are dragging your site down, a <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> audit will show exactly what each one costs. Running ads? I also build fast, lean <a href="/landing-page-design/">landing pages</a> that keep tracking intact.</p>
+`,
+  },
+  {
+    slug: 'landing-page-ab-testing',
+    seoTitle: 'A/B Testing Landing Pages for Small Businesses',
+    title: 'A/B Testing Landing Pages: A Practical Guide for Small Businesses',
+    description: 'How small businesses can A/B test landing pages: what to test first, how much traffic you need, tools after Google Optimize, and how to avoid false conclusions.',
+    date: '2026-09-28',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>You've built a landing page for your Google or Facebook ads and it's bringing in some enquiries. Could a different headline, a shorter form or a WhatsApp button bring in more? A/B testing is how you find out with evidence instead of opinions. It's also easy to do badly, especially on the modest traffic most small businesses have. Here's how to test sensibly, and when not to bother.</p>
+
+<h2>What A/B testing is (and what it isn't)</h2>
+<p>In an A/B test, visitors are split at random between two versions of a page: the current version (A, the "control") and a changed version (B, the "variant"). Both run at the same time, and you compare how many visitors on each version take the action you care about, such as submitting a form or tapping WhatsApp.</p>
+<p>Running both versions at the same time is the important part. Changing your page this month and comparing it with last month is not an A/B test. Festivals, school holidays, changes to your ad budget or a competitor's offer can move your numbers far more than your new headline did.</p>
+
+<h2>Do you have enough traffic?</h2>
+<p>This is the question most guides skip. What matters is not visits but <strong>conversions</strong>: the number of enquiries, calls or orders each version produces. With only a handful of conversions per version, random chance can easily make a worse page look better.</p>
+<p>A simple illustration: if version A gets 6 enquiries and version B gets 9 from similar traffic, B looks 50% better. With numbers that small, though, the difference could vanish next week. Free A/B test sample size calculators show how many visitors you need, based on your current conversion rate and the size of improvement you hope to detect. For many small business pages, the honest answer is "more than you'll get in a few months".</p>
+<p>If your traffic is low, you still have good options:</p>
+<ul>
+  <li><strong>Test big changes, not small ones.</strong> A different offer or page structure is far more likely to produce a difference you can see than a new button colour.</li>
+  <li><strong>Make clearly better changes directly.</strong> Fixing a slow page, a broken form or a hidden phone number doesn't need a test.</li>
+  <li><strong>Use qualitative evidence.</strong> Ask customers what nearly stopped them from enquiring, and listen to how leads describe their problem on calls.</li>
+</ul>
+<p>The <a href="/blog/conversion-rate-optimization-basics/">CRO basics guide</a> explains how to find and prioritise these improvements.</p>
+
+<h2>What to test first</h2>
+<p>Start with the things that shape a visitor's decision, not cosmetic details. A good test idea comes from something you've noticed, written as a hypothesis: "If we show a starting price, we'll get fewer unsuitable enquiries, because price is the first question on most calls."</p>
+<table>
+  <thead>
+    <tr><th>Element</th><th>Example test</th><th>Why it can matter</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Headline and offer</td><td>Service-focused headline vs outcome-focused headline</td><td>It's the first thing visitors read and decides whether they stay</td></tr>
+    <tr><td>Call to action</td><td>Form only vs form plus WhatsApp button</td><td>Some visitors, especially on mobile, would rather chat than fill in a form</td></tr>
+    <tr><td>Form length</td><td>Five fields vs name and phone only</td><td>Fewer fields can mean more leads, but check their quality</td></tr>
+    <tr><td>Proof</td><td>Testimonials beside the form vs lower down the page</td><td>Trust matters most at the moment of decision</td></tr>
+    <tr><td>Pricing</td><td>"Starting from" price shown vs "call for a quote"</td><td>Can change both the number and the quality of enquiries</td></tr>
+  </tbody>
+</table>
+<p>If your page has obvious problems, fix those before testing anything; see <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a>.</p>
+
+<h2>Tools for running a test</h2>
+<p>Google Optimize, once the go-to free option, shut down in 2023. These are the main routes now; check current features and pricing before committing.</p>
+<ul>
+  <li><strong>Ad platform experiments:</strong> Google Ads and Meta Ads Manager both have built-in experiment features that split traffic between versions of a campaign or ad, and these can often be set up to compare two landing page URLs. For ad landing pages, this is usually the simplest option.</li>
+  <li><strong>WordPress testing plugins:</strong> plugins such as Nelio A/B Testing run tests from inside WordPress.</li>
+  <li><strong>Dedicated testing platforms:</strong> services such as VWO and Optimizely are powerful, but usually priced for larger businesses.</li>
+</ul>
+<p>Avoid running two identical ads with different URLs and comparing them: ad platforms show whichever ad they predict will perform better more often, so the split isn't random.</p>
+<p>Many testing tools swap content with JavaScript after the page loads, which can cause a visible flicker and slow things down, so check both versions on a mid-range phone. If test pages can be indexed, Google's guidance is to point the variant at the original with a <a href="/blog/canonical-tags-explained/">canonical tag</a>, use temporary redirects rather than permanent ones, and end the test once you have an answer.</p>
+
+<h2>Setting up a fair test</h2>
+<ol>
+  <li><strong>Pick one primary goal.</strong> Usually a form submission, call or WhatsApp click, tracked as a key event; see <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</li>
+  <li><strong>Write down the hypothesis</strong> and what result would make you switch.</li>
+  <li><strong>Decide the duration in advance.</strong> Run for full weeks, because weekday and weekend visitors behave differently, and avoid overlapping with a festival sale unless that's what you're testing.</li>
+  <li><strong>Test one idea at a time.</strong> A variant can include several edits serving one idea, such as "make the offer clearer", but not five unrelated ideas.</li>
+  <li><strong>Check both versions properly.</strong> Test forms, buttons, tracking and the mobile layout on each version before sending traffic.</li>
+  <li><strong>Leave everything else alone.</strong> Changing ad copy, targeting or budgets mid-test muddies the result.</li>
+</ol>
+
+<h2>Avoiding false conclusions</h2>
+<p>Most bad decisions from A/B tests come from reading the results too eagerly.</p>
+<ul>
+  <li><strong>Stopping early:</strong> results swing a lot in the first few days. Checking daily and stopping the moment B pulls ahead is the most common mistake.</li>
+  <li><strong>Ignoring lead quality:</strong> a shorter form might bring more enquiries but fewer genuine customers. Track which leads become paying clients, not just form counts.</li>
+  <li><strong>Slicing the data until something wins:</strong> if B lost overall, discovering that it "won on Android on Tuesdays" is usually noise.</li>
+  <li><strong>Misreading "significance":</strong> when a tool says a result is statistically significant, it means the difference is unlikely to be pure chance, not that the improvement is large or permanent.</li>
+</ul>
+<p>An inconclusive result is still useful. It tells you that change didn't matter much, so your next test should be bolder.</p>
+
+<h2>Keep a simple test log</h2>
+<p>Record each test in a spreadsheet: dates, page, hypothesis, what changed, visitors and conversions per version, the decision and what you learned. After a few tests, it becomes a record of what your customers respond to, useful for your ads and sales calls too.</p>
+
+<p>Need a landing page that's built to be tested and improved? See <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'website-heatmaps-session-recordings',
+    seoTitle: 'Heatmaps and Session Recordings for Business Websites',
+    title: 'Heatmaps and Session Recordings: See How Visitors Really Use Your Website',
+    description: 'How heatmaps and session recordings from tools like Microsoft Clarity show where visitors click, scroll and get stuck, and which privacy settings to use.',
+    date: '2026-09-28',
+    category: 'Growth',
+    related: ['landing-page-design', 'website-redesign'],
+    body: `
+<p>Analytics can tell you that hundreds of people visited your services page last month and only a few enquired. It can't show you why the rest left. Heatmaps and session recordings fill that gap by showing where visitors click, how far they scroll and where they get stuck. Free tools such as Microsoft Clarity make this easy to try, but recording visitors also comes with privacy responsibilities. Here's how to use these tools well.</p>
+
+<h2>What heatmaps and session recordings show</h2>
+<p>A small script records how visitors interact with each page and shows the data in a few ways:</p>
+<ul>
+  <li><strong>Click (tap) heatmaps:</strong> which parts of a page get clicked or tapped most, including things that aren't links.</li>
+  <li><strong>Scroll heatmaps:</strong> what share of visitors reach each part of the page. Useful for checking whether people ever see your call to action, prices or testimonials.</li>
+  <li><strong>Session recordings:</strong> a replay of one visit's taps, scrolling and page changes, reconstructed from the page rather than a camera recording of the person.</li>
+  <li><strong>Frustration signals:</strong> some tools flag patterns automatically. Clarity, for example, highlights "rage clicks" (repeated clicks in one spot), "dead clicks" (clicks that do nothing) and "quick backs" (visitors who leave a page almost immediately and return to the previous one).</li>
+</ul>
+
+<h2>Why analytics alone isn't enough</h2>
+<p>Google Analytics 4 is good at the numbers: how many people came, from where, and how many converted. It's much weaker at explaining behaviour on a single page. Once you know which pages matter, using the <a href="/blog/website-analytics-metrics-that-matter/">metrics that actually matter</a>, heatmaps and recordings help you find the reason a busy page doesn't convert.</p>
+<p>Common problems they reveal:</p>
+<ul>
+  <li>Visitors tapping a phone number that isn't a clickable link</li>
+  <li>People repeatedly tapping gallery photos that don't open</li>
+  <li>Most mobile visitors leaving before they reach the enquiry form at the bottom</li>
+  <li>A floating WhatsApp button covering the "Submit" button on small screens</li>
+</ul>
+
+<h2>Setting up Microsoft Clarity on WordPress</h2>
+<p>Clarity is a free tool from Microsoft and a sensible first choice for most small businesses. Other tools, such as Hotjar, offer similar features on free and paid plans; check current plans and limits before choosing.</p>
+<ol>
+  <li><strong>Create a project</strong> in Clarity with your website's address.</li>
+  <li><strong>Add the tracking code</strong> using Clarity's official WordPress plugin, Google Tag Manager or your theme's header settings. Use one method only, so the script doesn't load twice.</li>
+  <li><strong>Check the masking settings</strong> before real visitors are recorded (more on this below).</li>
+  <li><strong>Connect Google Analytics</strong> if you use GA4; Clarity offers an integration (check its current documentation).</li>
+  <li><strong>Wait a week or two</strong> for data to build up before drawing conclusions.</li>
+</ol>
+<p>Every third-party script adds some weight, so run a speed test before and after installing it. If you only need it for a round of research, remove it afterwards.</p>
+
+<h2>What to look for, and what to try</h2>
+<table>
+  <thead>
+    <tr><th>What you see</th><th>What it may mean</th><th>What to try</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Rage clicks on photos</td><td>Visitors expect them to enlarge</td><td>Add a lightbox or link to a full gallery</td></tr>
+    <tr><td>Dead clicks on text or icons</td><td>It looks clickable but isn't</td><td>Make it a real link, or restyle it so it doesn't look like a button</td></tr>
+    <tr><td>Few visitors scroll to the form</td><td>The call to action is too far down</td><td>Add a button, call link or WhatsApp link near the top</td></tr>
+    <tr><td>Visitors stop at one form field</td><td>The field is confusing or feels intrusive</td><td>Remove it, make it optional or explain why you need it</td></tr>
+    <tr><td>Quick backs from ad traffic</td><td>The page doesn't match what the ad promised</td><td>Match the headline and offer to the ad</td></tr>
+    <tr><td>Pinch-zooming on mobile</td><td>Text or buttons are too small</td><td>Increase font size and spacing between buttons</td></tr>
+  </tbody>
+</table>
+<p>Treat each observation as a clue, not proof: act on patterns seen across many sessions, not one impatient visitor.</p>
+
+<h2>How to review recordings without wasting hours</h2>
+<p>A busy site can collect thousands of recordings, and watching them at random tells you little. Instead:</p>
+<ul>
+  <li><strong>Start with one question,</strong> such as "why don't mobile visitors on the AC repair page enquire?"</li>
+  <li><strong>Filter</strong> by page, device, traffic source or country, and by sessions with rage or dead clicks.</li>
+  <li><strong>Watch sessions that nearly converted,</strong> such as visitors who reached the contact page but didn't submit.</li>
+  <li><strong>Note each problem</strong> in a simple list and count how often it appears across, say, 10 to 20 recordings.</li>
+  <li><strong>Check heatmaps have enough data.</strong> Heatmaps from a few dozen visits can mislead, and sliders or pop-ups make them harder to read.</li>
+</ul>
+
+<h2>Privacy: record responsibly</h2>
+<p>Session recordings capture what visitors do on your site, so handle them with care, especially if you run a clinic, law practice or financial business, or collect sensitive details in forms. This is general guidance, not legal advice.</p>
+<ul>
+  <li><strong>Mask what visitors type.</strong> Clarity masks sensitive content by default and offers a stricter masking mode. Keep form inputs masked, and never switch masking off to "see what people typed".</li>
+  <li><strong>Exclude sensitive pages.</strong> Don't record account areas, checkout pages, patient or medical forms, or anything that shows personal details. Most tools let you mask specific elements or keep the script off certain pages.</li>
+  <li><strong>Disclose it.</strong> Mention the tool in your privacy policy. Clarity's terms ask sites to tell visitors they use it, so check the current terms.</li>
+  <li><strong>Handle consent where required.</strong> Visitors from the EU and UK are covered by stricter consent rules, and Clarity has introduced consent requirements for visitors from some regions. In India, the Digital Personal Data Protection Act, 2023 and its rules are being phased in. See <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie consent basics</a>, and ask a lawyer about your situation.</li>
+  <li><strong>Limit access.</strong> Only people who need the data should see the dashboard, and recordings shouldn't be shared in WhatsApp groups.</li>
+  <li><strong>Collect only what you'll use.</strong> If nobody is reviewing the data, remove the tool.</li>
+</ul>
+
+<h2>Turning what you see into improvements</h2>
+<p>Recordings are only useful if they lead to changes. Sort what you find into three groups:</p>
+<ol>
+  <li><strong>Obvious fixes:</strong> broken buttons, phone numbers that can't be tapped, overlapping elements on mobile. Fix these straight away.</li>
+  <li><strong>Likely improvements:</strong> moving a call to action higher, shortening a form, answering a common question near the price. Make the change and compare conversions over the following weeks.</li>
+  <li><strong>Bigger questions:</strong> a new offer or a different page structure. These are worth testing properly; the <a href="/blog/conversion-rate-optimization-basics/">CRO basics guide</a> explains how to form and test a hypothesis.</li>
+</ol>
+<p>After changes go live, check the heatmaps again to confirm visitors now reach and use the form.</p>
+
+<p>Planning bigger changes after seeing how visitors really use your site? See <a href="/website-redesign/">website redesign</a>, or for ad campaigns, <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'referral-program-website',
+    title: 'How to Set Up a Customer Referral Programme on Your Website',
+    description: 'How to run a customer referral programme from your website: choosing rewards, referral codes and links, WooCommerce plugins, WhatsApp sharing and fraud checks.',
+    date: '2026-09-28',
+    category: 'Growth',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>Most small businesses in India already grow through word of mouth. A happy customer tells a neighbour, forwards your number to a WhatsApp group or recommends you at a family function. A referral programme doesn't replace that. It makes recommending you easier, gives people a reason to do it now, and shows you which customers are sending work your way. Here's how to set one up on your website without it turning into a discount leak.</p>
+
+<h2>Is a referral programme right for your business?</h2>
+<p>Referral programmes work best when:</p>
+<ul>
+  <li>Customers are genuinely happy. A reward won't make people recommend a business they wouldn't recommend anyway.</li>
+  <li>Your customers know people like them, such as parents at the same school or families in the same housing society.</li>
+  <li>A new customer is worth enough that you can share some of that value as a reward.</li>
+  <li>Buying depends on trust, as it does for home services, tuition, salons, D2C brands and B2B suppliers.</li>
+</ul>
+<p>If reviews are mixed or complaints are common, fix the service first. Referrals amplify whatever experience you already give.</p>
+
+<h2>Choose a reward that fits</h2>
+<p>The most common structure is two-sided: the new customer gets something on their first order, and the person who referred them gets something once that order is complete. It feels fair to both sides.</p>
+<table>
+  <thead>
+    <tr><th>Reward</th><th>Suits</th><th>Watch out for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Discount on the next order</td><td>Online stores and repeat services</td><td>Only valuable to people who buy again</td></tr>
+    <tr><td>Store credit or wallet points</td><td>WooCommerce stores with regular buyers</td><td>Needs a plugin and clear expiry rules</td></tr>
+    <tr><td>Free add-on or upgrade</td><td>Salons, cleaning, AC servicing, coaching</td><td>Must feel worthwhile to the customer</td></tr>
+    <tr><td>Cash or UPI payout</td><td>Higher-value work such as solar, interiors or renovation</td><td>Needs careful records; ask your CA how to account for it</td></tr>
+  </tbody>
+</table>
+<p>Keep the reward well within what a new customer is worth to you after costs, and simple enough to explain in one sentence.</p>
+
+<h2>How referrals are tracked</h2>
+<p>You need a reliable way to connect each new customer to their referrer. Many businesses combine these methods:</p>
+<ul>
+  <li><strong>Referral codes:</strong> each customer gets a unique code that friends enter at checkout or mention when enquiring. Codes work well when people share by WhatsApp, phone or in person.</li>
+  <li><strong>Referral links:</strong> each customer gets a personal link, and the site remembers the referrer (usually with a cookie) for a set period. Convenient, but the link is lost if the friend switches devices or later searches for you on Google.</li>
+  <li><strong>A "referred by" field:</strong> an optional field on your enquiry form asking who recommended you. Low-tech, but it works for service businesses.</li>
+</ul>
+<p>Don't use customers' phone numbers as codes; a short code based on a first name plus a few characters is easy to share and keeps personal details private. If you promote the programme through campaigns, tag links with <a href="/blog/utm-tags-explained/">UTM tags</a> so referral visits show up clearly in Google Analytics.</p>
+
+<h2>Setting it up in WooCommerce</h2>
+<p>If you sell online with WooCommerce, there are options from manual to fully automated:</p>
+<ol>
+  <li><strong>Manual coupons:</strong> create a coupon for each referrer with limits such as usage per customer and minimum spend, and reward referrers by hand. Fine for trying the idea with a small group; see <a href="/blog/woocommerce-coupons-discounts/">WooCommerce coupons and discounts</a> for the restrictions available.</li>
+  <li><strong>A referral plugin:</strong> tools such as the Refer a Friend add-on for AutomateWoo can create referral codes or links, give the friend a discount and reward the referrer automatically. Other referral plugins exist; compare features, reviews and how actively they're updated.</li>
+  <li><strong>An affiliate plugin:</strong> plugins such as AffiliateWP are built for affiliates and creators, but can be adapted for customer referrals with commission tracking.</li>
+</ol>
+<p>Check current features and pricing of any paid plugin. Before launching, place a test order through a referral link and check how the plugin handles cancellations, returns and cash-on-delivery refusals.</p>
+
+<h2>Referral programmes for service businesses</h2>
+<p>You don't need an online store. For a cleaning company, pest control business, tuition centre or interior designer, a simple setup works:</p>
+<ul>
+  <li>A <strong>"Refer a friend" page</strong> explaining the offer, the reward and the rules in plain words</li>
+  <li>An optional <strong>"Who referred you?"</strong> field on your enquiry form</li>
+  <li>A <strong>spreadsheet or CRM</strong> recording each referral, its status and when the reward is due</li>
+  <li>A <strong>clear trigger for the reward,</strong> such as when the referred customer's first job is completed and paid for</li>
+</ul>
+<p>Avoid forms that ask customers to submit friends' phone numbers for you to call. The friend hasn't agreed to be contacted. Give your customer something easy to forward instead, so the friend contacts you when ready.</p>
+
+<h2>Make sharing easy with WhatsApp</h2>
+<p>Most referrals in India will be shared on WhatsApp, so design for it:</p>
+<ul>
+  <li><strong>A "Share on WhatsApp" button</strong> on the referral page or customer account that opens WhatsApp with a short, friendly pre-written message containing the customer's link or code, which they can edit before sending.</li>
+  <li><strong>Ask at the right moment:</strong> on the order thank-you page, in the delivery confirmation or after a job is finished, when the customer is happiest.</li>
+  <li><strong>Add offline prompts:</strong> a card in the parcel or with the invoice, with a QR code that opens the referral page.</li>
+</ul>
+<p>Only message customers who have agreed to hear from you, and don't keep sending reminders.</p>
+
+<h2>Rules, fraud and professional limits</h2>
+<p>Publish short terms on your referral page and apply them consistently:</p>
+<ul>
+  <li><strong>Reward only completed purchases.</strong> For online stores, wait until the return window has passed and the order hasn't been cancelled or refused on delivery.</li>
+  <li><strong>Block self-referrals.</strong> Watch for the same address, phone number or payment details behind "new" customers.</li>
+  <li><strong>Cap rewards</strong> per customer, at least while you learn how the programme behaves.</li>
+  <li><strong>Keep codes from going public.</strong> Codes posted on coupon websites become open discounts, so limit how many times each can be used.</li>
+  <li><strong>Keep reviews separate.</strong> Offering rewards in exchange for Google reviews goes against Google's policies, so never link the two.</li>
+  <li><strong>Check professional rules.</strong> Some professions, including doctors, advocates and chartered accountants, have rules that restrict paying for referrals or soliciting work. Advocates, for example, should read <a href="/blog/website-for-advocates-bar-council-rules/">what the Bar Council rules allow</a> and check with their professional body first.</li>
+  <li><strong>Ask your CA</strong> how rewards and discounts should be recorded for tax.</li>
+</ul>
+
+<h2>Measure and improve</h2>
+<p>After a couple of months, compare how many customers shared, how many referrals became paying customers, and what rewards cost against the new business. If few people share, the reward may be too small or the offer too complicated. If many share but few friends buy, look at the friend's offer and the page they land on.</p>
+
+<p>Want a referral programme built into your online store, with codes, rewards and WhatsApp sharing working together? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'fix-lcp-largest-contentful-paint',
+    title: 'How to Fix Slow Largest Contentful Paint (LCP) on WordPress',
+    description: 'How to fix slow Largest Contentful Paint on WordPress: find your LCP element, speed up server response, prioritise the hero image and cut render-blocking CSS.',
+    date: '2026-09-28',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'elementor-developer'],
+    body: `
+<p>Largest Contentful Paint (LCP) measures how long the biggest piece of content in the first screen, usually a hero image, banner or main heading, takes to appear. When it's rated "poor", visitors stare at a mostly empty screen for too long, and some of them leave. Here's how to find what's slowing LCP on a WordPress site and how to fix each cause. If you're new to the three metrics, start with <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>What counts as a good LCP</h2>
+<table>
+  <thead><tr><th>LCP time</th><th>Google's rating</th></tr></thead>
+  <tbody>
+    <tr><td>2.5 seconds or less</td><td>Good</td></tr>
+    <tr><td>Between 2.5 and 4 seconds</td><td>Needs improvement</td></tr>
+    <tr><td>More than 4 seconds</td><td>Poor</td></tr>
+  </tbody>
+</table>
+<p>Google judges this from real visits at the 75th percentile, so most of your visitors need a good experience, not just those on fast office Wi-Fi. Mobile and desktop are rated separately. For most Indian business sites, mobile matters most, because that's where most visitors are and where phones and networks are slowest.</p>
+
+<h2>Step 1: Identify your LCP element</h2>
+<p>The measured element varies by page, and often between mobile and desktop.</p>
+<ol>
+  <li>Run the page through PageSpeed Insights and select the mobile results.</li>
+  <li>Check the field data at the top to confirm real visitors are affected, not just the lab test.</li>
+  <li>In the diagnostics, find the item that names the Largest Contentful Paint element: the exact image or block of text measured.</li>
+  <li>For more detail, record a page load in the Performance panel of Chrome DevTools and look for the LCP marker.</li>
+</ol>
+<p>Common LCP elements on WordPress sites are a hero image, a slider's first slide, an Elementor section background, a post's featured image or, on mobile, a large heading or opening paragraph.</p>
+
+<h2>Step 2: Work out which part is slow</h2>
+<p>LCP time breaks down into four parts, and each points to a different fix:</p>
+<table>
+  <thead><tr><th>Part</th><th>What it means</th><th>Usual fix</th></tr></thead>
+  <tbody>
+    <tr><td>Server response</td><td>Time before the first byte of HTML arrives (often called TTFB)</td><td>Caching, better hosting, fewer heavy plugins</td></tr>
+    <tr><td>Load delay</td><td>Time between the HTML arriving and the browser starting to download the LCP image</td><td>Make the image discoverable early; raise its priority</td></tr>
+    <tr><td>Load duration</td><td>Time spent downloading the image itself</td><td>Smaller, compressed, correctly sized images</td></tr>
+    <tr><td>Render delay</td><td>Time between the content being ready and it actually appearing</td><td>Remove render-blocking CSS, JavaScript, fonts and animations</td></tr>
+  </tbody>
+</table>
+<p>If your LCP element is text, there's no image to download, so the time is usually split between server response and render delay.</p>
+
+<h2>Fix slow server response</h2>
+<p>If the HTML itself takes a long time to arrive, everything else waits. On WordPress, the usual causes are:</p>
+<ul>
+  <li><strong>No page caching:</strong> without it, WordPress builds every page from scratch with PHP and database queries. A caching plugin or your host's built-in cache serves a ready-made copy instead. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</li>
+  <li><strong>Overloaded or distant hosting:</strong> cheap shared servers get busy, and a server on another continent adds delay for visitors in India.</li>
+  <li><strong>Heavy plugins:</strong> some run slow database queries or call external services on every page load.</li>
+  <li><strong>Outdated PHP:</strong> newer supported PHP versions are generally faster, after testing compatibility.</li>
+</ul>
+<p>A quick check: if even cached pages are slow to start arriving, the hosting or server location is the likely problem, not just your plugins.</p>
+
+<h2>Fix the hero image</h2>
+<p>When the LCP element is an image, most gains come from getting it discovered early and making it small.</p>
+<h3>Don't lazy-load it</h3>
+<p>Lazy loading helps images further down the page but delays the first one. WordPress tries to skip lazy loading for the first large image, but page builders and optimisation plugins can override this. Most let you exclude above-the-fold images.</p>
+<h3>Give it high priority</h3>
+<p>Adding <code>fetchpriority="high"</code> to the hero image tells the browser to download it ahead of less important files. Recent WordPress versions add this automatically to the image they guess is the main one, so check the page source to confirm it's on the right image. Use it on one image only.</p>
+<h3>Avoid CSS background images for the hero</h3>
+<p>Background images set in CSS, which is how many Elementor sections and theme headers work, can't be found until the stylesheet has downloaded and been processed. That creates a long load delay. Where possible, use a normal image element for the hero. If it has to be a background, preload that one image.</p>
+<h3>Preload carefully</h3>
+<p>Preloading helps only for the resource that really is the LCP element. Preloading several images, fonts and scripts makes them compete for bandwidth and can slow LCP down. If the image uses responsive sizes, the preload must use the same sizes, or the browser may download two versions.</p>
+<h3>Make it small and replace sliders</h3>
+<p>Resize the image to its displayed size, compress it and serve WebP or AVIF, with a smaller version for phones; <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> covers this. If the hero is a slider, its first slide often can't appear until the slider's JavaScript has run. A single strong image with a clear headline loads faster and is often clearer anyway.</p>
+
+<h2>Remove render-blocking CSS, JavaScript and fonts</h2>
+<p>If your LCP element is a heading, or the image has downloaded but still appears late, the problem is render delay. The browser won't paint the page until it has processed the stylesheets and scripts that block rendering.</p>
+<ul>
+  <li><strong>CSS:</strong> reduce unused CSS and consider critical CSS, the small set of styles the first screen needs, so the rest can load later. Test carefully, as removing CSS wrongly breaks layouts.</li>
+  <li><strong>JavaScript:</strong> defer scripts the first screen doesn't need, and avoid scripts in the page head that hold up rendering.</li>
+  <li><strong>Fonts:</strong> use one or two families with only the weights you need, host them on your own domain where practical, use <code>font-display: swap</code> so text shows in a fallback font immediately, and preload the main font if the hero heading uses it.</li>
+  <li><strong>Entrance animations:</strong> a hero heading or image set to fade or slide in stays invisible until the animation runs, which pushes LCP back. Keep animations out of the first screen.</li>
+</ul>
+
+<h2>Confirm the fix worked</h2>
+<ul>
+  <li>Clear your caching plugin and any CDN cache, then re-test several times, as lab results vary between runs</li>
+  <li>Check mobile and desktop, and a few page types: home, service and blog pages</li>
+  <li>Field data covers a rolling 28-day period, so real-user LCP improves gradually; use "Validate fix" in Search Console's Core Web Vitals report to track it</li>
+</ul>
+<p>LCP usually has more than one cause, and fixes like critical CSS are easy to get wrong. My <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service targets your specific Core Web Vitals issues and shows before-and-after results. For Elementor hero sections that need rebuilding more efficiently, see <a href="/elementor-developer/">Elementor development</a>.</p>
+`,
+  },
+  {
+    slug: 'fix-cls-layout-shift',
+    title: 'How to Fix Cumulative Layout Shift (CLS) on WordPress',
+    description: 'Fix Cumulative Layout Shift on WordPress: reserve space for images and embeds, tame web fonts, ads and banners, and stop sticky headers making pages jump.',
+    date: '2026-09-28',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-website-development'],
+    body: `
+<p>Cumulative Layout Shift (CLS) measures how much visible content moves unexpectedly on a page. You start reading, an image loads above the text and everything jumps down. You go to tap "Call now" and hit a banner that has just appeared. Here's how to find and fix the usual causes on WordPress. For how CLS fits alongside LCP and INP, see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>How CLS is scored</h2>
+<table>
+  <thead><tr><th>CLS score</th><th>Google's rating</th></tr></thead>
+  <tbody>
+    <tr><td>0.1 or less</td><td>Good</td></tr>
+    <tr><td>Between 0.1 and 0.25</td><td>Needs improvement</td></tr>
+    <tr><td>More than 0.25</td><td>Poor</td></tr>
+  </tbody>
+</table>
+<p>CLS isn't a time. Each shift is scored by how much of the screen was affected and how far things moved. Shifts close together are grouped, and your CLS is the worst group during the visit. Two details explain most confusion:</p>
+<ul>
+  <li><strong>Expected shifts don't count.</strong> Changes within about half a second of a tap, click or key press are ignored, like an accordion opening. Scrolling doesn't count as that kind of input.</li>
+  <li><strong>The whole visit counts.</strong> Shifts while someone scrolls, from lazy-loaded images or a header changing size, are included.</li>
+</ul>
+<p>So a page can pass a lab test but fail in Search Console: lab tools mostly measure the first load, while field data comes from real visitors who scroll, wait and tap.</p>
+
+<h2>Find what's shifting</h2>
+<ol>
+  <li>In Search Console's Core Web Vitals report, open the CLS issue to see example URLs. Similar pages are grouped, so fixing a shared template often fixes many pages.</li>
+  <li>Run an example page through PageSpeed Insights on mobile. The diagnostics list the elements involved in the largest shifts.</li>
+  <li>Open the page on your phone using mobile data, then scroll to the bottom and back. Slower connections make late-arriving content easier to spot.</li>
+  <li>In Chrome DevTools, the Rendering panel can highlight layout shift regions as they happen, and a Performance panel recording lists each shift and the elements that moved.</li>
+</ol>
+<p>Usually the culprit is something above the moved element that appeared late or changed size.</p>
+
+<h2>Images, videos and embeds without reserved space</h2>
+<p>This is the most common cause. If the browser doesn't know how big something will be, it gives it no space, then pushes everything down when it arrives.</p>
+<ul>
+  <li><strong>Images:</strong> WordPress adds width and height to images inserted into posts, but theme templates, page builder widgets, custom HTML and some plugins can miss them. Check the page source for image tags without width and height, and add them; with <code>height: auto</code> in the CSS, images still scale on phones. See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</li>
+  <li><strong>Lazy-loaded images:</strong> fine when dimensions are set. Without them, each image shifts the page as the visitor scrolls.</li>
+  <li><strong>Videos:</strong> give YouTube and other video containers a fixed aspect ratio, such as 16:9, so the space exists before the player loads.</li>
+  <li><strong>Maps, social feeds, review and booking widgets:</strong> these load from other servers, often last. Give their containers a minimum height close to their final size. For maps, see <a href="/blog/google-maps-on-website/">adding Google Maps without slowing your site</a>.</li>
+  <li><strong>Sliders:</strong> before the slider's script runs, slides can appear stacked, then collapse. Set a fixed height for the slider area, or use a single image instead.</li>
+</ul>
+
+<h2>Ads and content added after loading</h2>
+<p>Ad sizes often aren't known in advance. If your site shows ads:</p>
+<ul>
+  <li>Reserve space for each slot with a minimum height matching the ad size usually served there</li>
+  <li>Avoid slots at the very top of the content, where a late ad pushes the most content down</li>
+  <li>Test pages after switching on automatic ad placement, which inserts ads wherever it chooses</li>
+  <li>Keep an empty slot's space rather than collapsing it after loading</li>
+</ul>
+<p>The same applies to anything JavaScript adds later, such as related products, review carousels or notices: reserve space for it, or add it below what the visitor is looking at.</p>
+
+<h2>Web fonts</h2>
+<p>When a custom font arrives after the text has appeared, the text swaps from a fallback font to the web font. If the two differ in size, lines rewrap and everything below moves.</p>
+<ul>
+  <li>Use one or two font families and only the weights you need</li>
+  <li>Host fonts on your own domain where practical, and preload the main one</li>
+  <li>Choose a fallback font of similar size, or adjust it with CSS font descriptors such as <code>size-adjust</code>, so the swap is barely visible</li>
+  <li>Consider <code>font-display: optional</code> for body text: the web font is used only if it arrives almost immediately, so there's no late swap, though some first-time visitors will see the fallback</li>
+</ul>
+
+<h2>Banners, cookie notices and offer bars</h2>
+<p>Cookie notices, festival offer strips, "free delivery above" bars and app banners are frequent causes on business sites. When one is inserted at the top after the page has rendered, everything shifts down.</p>
+<ul>
+  <li>Show notices as an overlay fixed to the top or bottom of the screen. Something that appears over the page without moving other content doesn't count as a layout shift.</li>
+  <li>If a bar must sit in the page flow, include it in the page's HTML from the start instead of adding it with JavaScript later.</li>
+  <li>Watch cached pages: some notice plugins decide with JavaScript whether to show a bar after the cached page loads, causing a late jump. Reserve its space or switch to an overlay.</li>
+</ul>
+
+<h2>Sticky and shrinking headers</h2>
+<p>These shifts only happen after scrolling, so lab tests often miss them.</p>
+<ul>
+  <li><strong>Switching to fixed:</strong> a header that becomes fixed on scroll leaves the page flow, and the content below jumps up by its height. CSS <code>position: sticky</code> keeps its space, or a placeholder of the same height can fill the gap.</li>
+  <li><strong>Shrinking:</strong> a header whose height changes on scroll moves content with it. Animate with transforms, which don't affect layout, or let the header sit over a fixed gap at the top of the page.</li>
+  <li><strong>Delayed scripts:</strong> if your optimisation plugin delays JavaScript until the visitor interacts, the header, menu or slider may look unfinished, then jump when its script runs. Exclude those scripts from the delay.</li>
+</ul>
+
+<h2>Confirm the fix</h2>
+<ul>
+  <li>Clear your caching plugin and any CDN cache, then re-test a few page types on mobile, scrolling each from top to bottom</li>
+  <li>Field data covers a rolling 28 days, so Search Console takes a few weeks to catch up; use "Validate fix" once you're done</li>
+  <li>Re-check after adding a plugin, ad, widget or banner, as each can bring shifts back</li>
+</ul>
+
+<p>Most CLS fixes are small; finding the cause is the slow part. If you'd like it handled, my <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service covers all three Core Web Vitals. Planning a new site? With <a href="/wordpress-website-development/">WordPress website development</a>, space for images, embeds and headers is reserved from the start.</p>
+`,
+  },
+  {
+    slug: 'fix-inp-interaction-to-next-paint',
+    title: 'How to Improve Interaction to Next Paint (INP) on WordPress',
+    description: 'Improve Interaction to Next Paint on WordPress: find slow taps, cut long JavaScript tasks, tame third-party scripts and heavy plugins, and fix laggy menus.',
+    date: '2026-09-28',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'elementor-developer'],
+    body: `
+<p>Interaction to Next Paint (INP) measures how quickly a page visibly responds when someone taps, clicks or types. Tap the menu button and nothing happens for a moment; tap "Add to cart" and the button seems frozen. That lag is what INP captures. It replaced First Input Delay as a Core Web Vital in March 2024, and it's the metric many WordPress sites struggle with on phones. For the basics of all three metrics, see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>How INP is measured</h2>
+<table>
+  <thead><tr><th>INP</th><th>Google's rating</th></tr></thead>
+  <tbody>
+    <tr><td>200 milliseconds or less</td><td>Good</td></tr>
+    <tr><td>Between 200 and 500 milliseconds</td><td>Needs improvement</td></tr>
+    <tr><td>More than 500 milliseconds</td><td>Poor</td></tr>
+  </tbody>
+</table>
+<p>INP watches the clicks, taps and key presses during a visit and reports roughly the slowest one; on pages with many interactions, a few extreme outliers are ignored. Scrolling and hovering don't count. Each interaction has three parts:</p>
+<ul>
+  <li><strong>Input delay:</strong> waiting because the browser is busy with something else, often scripts still loading</li>
+  <li><strong>Processing:</strong> running the code attached to that tap, such as opening a menu or checking a form</li>
+  <li><strong>Presentation delay:</strong> working out the new layout and painting it, which takes longer on large, complex pages</li>
+</ul>
+<p>All three happen on the browser's main thread, which does one thing at a time. A task that keeps it busy for more than 50 milliseconds is called a long task, and a tap that arrives during one has to wait.</p>
+
+<h2>How to find slow interactions</h2>
+<p>INP needs a real person to interact, so a standard page-load test can't measure it directly.</p>
+<ul>
+  <li><strong>Field data:</strong> PageSpeed Insights and Search Console's Core Web Vitals report show INP from real Chrome users, if your site gets enough traffic.</li>
+  <li><strong>Total Blocking Time:</strong> this lab metric adds up how much long tasks block the main thread during loading. It isn't INP, but a high figure usually means early taps will feel slow.</li>
+  <li><strong>Chrome DevTools:</strong> the Performance panel shows live INP as you click around. Turn on CPU throttling to behave more like a mid-range phone, then try the menu, accordions, filters and forms. Record a trace of a slow one to see which scripts ran.</li>
+</ul>
+<p>Test on a real mid-range Android phone too. JavaScript that feels instant on a laptop can be far slower on the phones many Indian visitors use. For which numbers to trust, see <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</p>
+
+<h2>Common causes on WordPress sites</h2>
+<table>
+  <thead><tr><th>Cause</th><th>What happens</th></tr></thead>
+  <tbody>
+    <tr><td>Too much JavaScript at load</td><td>Taps made while scripts are still being processed have to wait</td></tr>
+    <tr><td>Third-party scripts</td><td>Chat widgets, tag managers, pixels, heatmaps and ad scripts compete for the main thread</td></tr>
+    <tr><td>Heavy plugins</td><td>Sliders, pop-up builders, animation add-ons and builder add-on packs load code on every page</td></tr>
+    <tr><td>Busy event handlers</td><td>Menus, filters and search boxes do too much work on each tap or key press</td></tr>
+    <tr><td>Very large pages</td><td>Layouts with thousands of elements take longer to update and repaint</td></tr>
+  </tbody>
+</table>
+
+<h2>Tame third-party scripts</h2>
+<ul>
+  <li><strong>List every external script:</strong> analytics, Tag Manager, ad pixels, chat, heatmaps, review widgets and embeds. Remove anything nobody uses.</li>
+  <li><strong>Clean up Tag Manager:</strong> tags from old campaigns, and tags that fire on every click, add work to each tap.</li>
+  <li><strong>Load chat widgets on demand:</strong> show a lightweight button that loads the full widget only when tapped. A simple WhatsApp link needs no script at all; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</li>
+  <li><strong>Use previews for embeds:</strong> show an image for YouTube videos and maps, and load the real embed on tap.</li>
+  <li><strong>Be careful with "delay JavaScript" options:</strong> optimisation plugins that hold scripts back until the first interaction help loading scores, but that first tap can then trigger all the delayed scripts at once. Exclude scripts that menus and buttons need, and test the first tap on a phone.</li>
+</ul>
+
+<h2>Slim down plugins and page builder layouts</h2>
+<ul>
+  <li>Check which plugins load scripts on pages that don't use them, such as a form or slider plugin loading everywhere. Many can be limited to the pages that need them, through plugin settings or an asset-management plugin.</li>
+  <li>Replace plugins that add a lot of code for one small job, and avoid stacking several page builder add-on packs.</li>
+  <li>Reduce page size. Deeply nested sections, columns and inner containers make every update slower. In Elementor, flexbox containers usually produce leaner markup than old-style sections and columns. See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</li>
+  <li>Keep long pages sensible: a home page with dozens of sections, counters and animations is harder for a phone to handle.</li>
+</ul>
+
+<h2>Fix slow menus, sliders and forms</h2>
+<h3>Menus</h3>
+<p>Opening a mobile menu should be a simple show-and-hide, not a heavy animation. Mega menus with hundreds of links and images add rendering work; trim them or simplify the mobile version.</p>
+<h3>Sliders and carousels</h3>
+<p>Autoplaying sliders keep the main thread busy, so a tap can land in the middle of a slide change. A static hero, or one lightweight slider, is kinder to phones.</p>
+<h3>Forms, filters and search</h3>
+<ul>
+  <li>Show instant feedback, such as a pressed button or spinner, before doing heavy work or waiting for the server. Time spent waiting for the network after that first paint doesn't count against INP.</li>
+  <li>Don't run heavy validation or live search on every key press; wait until the visitor pauses typing.</li>
+  <li>For WooCommerce product filters, consider applying filters on a button tap rather than on every change.</li>
+</ul>
+<h3>For developers</h3>
+<p>Break long tasks into smaller pieces and yield to the main thread between them, so the browser can respond in between. Do the visible update first and defer non-urgent work, like analytics events, until after it.</p>
+
+<h2>Confirm the fix</h2>
+<ul>
+  <li>Retest the same interactions in DevTools with CPU throttling, and check Total Blocking Time in PageSpeed Insights</li>
+  <li>Field data covers a rolling 28 days, so give it a few weeks, then use "Validate fix" in Search Console</li>
+  <li>Re-check whenever plugins or marketing tags are added, as a new tag can undo the work without anyone touching the site's code</li>
+</ul>
+
+<p>INP problems usually come from several scripts adding up, so fixing them means deciding what each page really needs. My <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service finds the slow interactions and fixes them without breaking features. For Elementor sites that need leaner layouts, see <a href="/elementor-developer/">Elementor development</a>.</p>
 `,
   },
 ];
