@@ -339,6 +339,10 @@ const LINKS = [
   ['website-for-homestays-bnbs', '<h2>Direct booking options</h2>', '<p>Hosting guests on a working farm, with day visits and school trips as well as stays? See <a href="/blog/website-for-farm-stays-agritourism/">websites for farm stays and agritourism</a>.</p>\n\n'],
   ['website-for-interior-designers-architects', '<h2>Make enquiring easy</h2>', '<p>If you design outdoor spaces such as terraces, lawns and society gardens, see <a href="/blog/website-for-landscaping-gardening-services/">websites for landscaping and gardening services</a>.</p>\n\n'],
   ['website-for-home-services', '<h2>Local SEO is everything</h2>', '<p>Brand names need extra care for water purifier businesses, where fake helpline numbers are common; see <a href="/blog/website-for-water-purifier-ro-service/">websites for water purifier and RO service businesses</a>.</p>\n\n'],
+  // Agent 04
+  ['website-for-furniture-businesses', '<h2>B2B buyers</h2>', '<p>Selling fitted kitchens and wardrobes rather than loose furniture? See <a href="/blog/website-for-modular-kitchen-companies/">websites for modular kitchen and wardrobe companies</a>.</p>\n\n'],
+  ['website-for-hardware-building-materials', '<h2>Online catalogue or store?</h2>', '<p>Fabricate and install windows, doors or glass work rather than supplying materials? See <a href="/blog/website-for-glass-aluminium-fabricators/">websites for glass, aluminium and uPVC fabricators</a>.</p>\n\n'],
+  ['b2b-manufacturer-website-guide', '<h2>Make enquiring effortless</h2>', '<p>Run a fabrication shop that works to customers\' drawings? See <a href="/blog/website-for-steel-fabrication-companies/">websites for steel and metal fabrication companies</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

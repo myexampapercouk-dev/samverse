@@ -732,6 +732,8 @@ module.exports = [
   <li>Case studies of projects delivered</li>
 </ul>
 
+<p>Run a fabrication shop that works to customers' drawings? See <a href="/blog/website-for-steel-fabrication-companies/">websites for steel and metal fabrication companies</a>.</p>
+
 <h2>Make enquiring effortless</h2>
 <ul>
   <li>Quote forms that ask for product, quantity and delivery location</li>
@@ -5407,6 +5409,8 @@ module.exports = [
   <li>Genuine reviews and project photos from customers</li>
 </ul>
 
+<p>Selling fitted kitchens and wardrobes rather than loose furniture? See <a href="/blog/website-for-modular-kitchen-companies/">websites for modular kitchen and wardrobe companies</a>.</p>
+
 <h2>B2B buyers</h2>
 <p>Hotels, offices, architects and interior designers buy in bulk. A dedicated section for trade and project enquiries, with capacity, past projects and a quote form, can bring high-value orders; see the <a href="/blog/industrial-website-product-catalogue/">product catalogue guide</a>.</p>
 
@@ -8146,6 +8150,8 @@ module.exports = [
   <li>Design and selection help, such as tile visualisation or consultations</li>
   <li>WhatsApp for sending photos and asking about availability</li>
 </ul>
+
+<p>Fabricate and install windows, doors or glass work rather than supplying materials? See <a href="/blog/website-for-glass-aluminium-fabricators/">websites for glass, aluminium and uPVC fabricators</a>.</p>
 
 <h2>Online catalogue or store?</h2>
 <p>For heavy, variable or project-based items, a catalogue with enquiries usually works best. Small hardware and accessories can sometimes be sold online; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
@@ -17407,6 +17413,282 @@ Template: astra
 <p>Almost all service searches happen on phones, often from people who want an answer immediately. Keep pages light, compress product images, and make sure the call button works well on every screen size. For how the wider home services category handles urgency, see <a href="/blog/website-for-home-services/">websites for home services</a>.</p>
 
 <p>A clear, fast website with honest branding, simple AMC plans and one-tap booking can steadily grow your local service base. See <a href="/wordpress-website-development/">WordPress website development</a> for the build, and <a href="/wordpress-seo-services/">WordPress SEO</a> to rank in local searches.</p>
+`,
+  },
+  {
+    slug: 'website-for-modular-kitchen-companies',
+    title: 'Websites for Modular Kitchen and Wardrobe Companies',
+    description: 'What modular kitchen and wardrobe company websites need: design galleries, material guides, 3D design consultations, showroom visit booking and quote forms.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>People buying a modular kitchen or wardrobes are usually doing up a new flat or renovating a home they plan to live in for years. They compare several companies, look at a lot of photos, and want to understand materials and costs before they step into a showroom. Your website is where that comparison happens. Here's what it should include to turn browsers into design consultations and showroom visits.</p>
+
+<h2>What buyers look for before they call</h2>
+<ul>
+  <li>Kitchens and wardrobes that look like what they want, in homes like theirs</li>
+  <li>Clear information on materials, finishes and hardware, not just attractive renders</li>
+  <li>A rough idea of cost, or at least what drives it</li>
+  <li>How the process works, from measurement to installation, and how long it takes</li>
+  <li>Warranty and after-sales service</li>
+  <li>Proof that you're a real, established business: a showroom, a factory or workshop, and genuine reviews</li>
+</ul>
+
+<h2>Organise designs the way buyers think</h2>
+<p>Most people start with a layout or a style, so give them galleries they can browse that way:</p>
+<ul>
+  <li><strong>Kitchens by layout:</strong> straight, L-shaped, U-shaped, parallel, island and peninsula</li>
+  <li><strong>Kitchens by style:</strong> contemporary, handleless, classic, and compact kitchens for smaller flats</li>
+  <li><strong>Wardrobes:</strong> sliding, hinged, walk-in, with lofts, and storage for children's rooms</li>
+  <li><strong>Other units</strong> you make, such as TV units, crockery units, study tables and vanities</li>
+</ul>
+<p>Mark clearly which images are real installations and which are 3D renders. Buyers notice, and honest labelling builds trust. For each installed project, a short note on the layout, materials, finish and city helps far more than a photo alone. If you also handle full home interiors, see <a href="/blog/website-for-interior-designers-architects/">websites for interior designers and architects</a> for how to present complete projects.</p>
+
+<h2>Explain materials, finishes and hardware</h2>
+<p>This is where many modular kitchen websites fall short, and where you can stand out. Buyers hear confusing terms in every showroom. A clear materials page answers their questions and positions you as the expert.</p>
+<table>
+  <thead>
+    <tr><th>Topic</th><th>What to explain</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Carcass material</td><td>The board options you use (for example BWP plywood, HDHMR or MDF), where each is suitable, and which you use in wet areas like the sink unit</td></tr>
+    <tr><td>Shutter finishes</td><td>Laminate, acrylic, PU paint, membrane, veneer or glass: look, durability, maintenance and relative cost</td></tr>
+    <tr><td>Countertops</td><td>Granite, quartz and any other options you supply or recommend</td></tr>
+    <tr><td>Hardware</td><td>Hinges, drawer systems, baskets and corner solutions, and the hardware brands you use</td></tr>
+    <tr><td>Appliances</td><td>Whether you supply and fit a hob, chimney or built-in appliances</td></tr>
+  </tbody>
+</table>
+<p>Only list materials and brands you actually use, and update the page when your range changes. Comparisons like "acrylic vs laminate shutters" also make excellent blog topics, because buyers search for exactly these questions.</p>
+
+<h2>Make the design consultation the main call to action</h2>
+<p>For most modular kitchen companies, the goal isn't an online sale; it's a consultation that leads to a 3D design and a quote. Make that step obvious and easy:</p>
+<ul>
+  <li>A prominent "Book a design consultation" button, repeated on every design page (only call it free if it is)</li>
+  <li>A choice of how to meet: showroom visit, home visit for measurement, or a video call</li>
+  <li>A short form asking for city or area, property type (new flat or renovation), what they need (kitchen, wardrobes or both), expected possession or start date, and a preferred time</li>
+  <li>A WhatsApp button so people can send a floor plan or photos of their space; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a></li>
+</ul>
+<p>Explain your process on its own page: consultation, site measurement, 3D design and revisions, quote, order confirmation, production, installation and handover. Give typical timelines only if you can honestly meet them, and say what can cause delays, such as pending civil or electrical work at the site.</p>
+
+<h2>Handle the pricing question honestly</h2>
+<p>Everyone wants to know what a kitchen will cost. You don't have to publish a full price list, but saying nothing makes people assume the worst. Options that work well:</p>
+<ul>
+  <li>Explain what drives the price: size, layout, carcass material, finish, hardware and accessories, countertop and appliances</li>
+  <li>Offer a few clearly defined packages or "starting from" guides, if your pricing allows it, and state exactly what's included</li>
+  <li>Add a simple estimate tool where visitors choose layout, size and finish level to see an indicative range, followed by the consultation form</li>
+</ul>
+<p>Whatever you show, make it clear that it's indicative and that the final quote follows measurement and design. See <a href="/blog/show-prices-on-website/">should you show prices on your website</a> for the trade-offs.</p>
+
+<h2>Build trust beyond the photos</h2>
+<ul>
+  <li><strong>Showroom page:</strong> address, map, timings, parking, and photos of the displays so people know the visit is worthwhile</li>
+  <li><strong>Factory or workshop:</strong> if you manufacture in-house, show your machinery and production process</li>
+  <li><strong>Warranty:</strong> what's covered, for how long, and what isn't, written plainly</li>
+  <li><strong>After-sales service:</strong> how customers can request an adjustment or repair after installation</li>
+  <li><strong>Reviews:</strong> real Google reviews and customer photos, shared with permission</li>
+  <li><strong>Trade partners:</strong> if you work with builders, architects or interior designers, a separate page and enquiry form for them</li>
+</ul>
+
+<h2>Local SEO for kitchen and wardrobe companies</h2>
+<p>Buyers search locally: "modular kitchen in {city}", "modular kitchen showroom near me", "sliding wardrobe manufacturer {city}". To show up for these searches:</p>
+<ul>
+  <li>Keep your Google Business Profile complete, with showroom and installation photos, the right categories and regular updates; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
+  <li>Create separate service pages for modular kitchens, wardrobes and other units, each with its own title and content</li>
+  <li>If you serve several cities, build location pages around genuine local projects rather than copies with the city name swapped</li>
+  <li>Publish helpful guides: kitchen layouts for small flats, choosing a shutter finish, planning wardrobe storage</li>
+</ul>
+
+<h2>Keep a photo-heavy site fast</h2>
+<p>Galleries, 3D renders and walkthrough videos can make pages slow, especially on mobile data. Resize and compress images before uploading, use modern image formats, lazy-load long galleries, and embed videos from YouTube rather than uploading large files to your own hosting. A fast gallery keeps people browsing long enough to book a consultation.</p>
+
+<p>Planning a new website for your modular kitchen or wardrobe business? See <a href="/wordpress-website-development/">WordPress website development</a>. If you run ads around new housing possessions, send that traffic to a focused page with one offer and one form; see <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-glass-aluminium-fabricators',
+    title: 'Websites for Glass, Aluminium and uPVC Window Fabricators',
+    description: 'What glass, aluminium and uPVC window and door fabricators need online: product pages, project galleries, site measurement booking and builder enquiries.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-seo-services'],
+    body: `
+<p>Whether you make uPVC windows, aluminium sliding doors, toughened glass partitions or shower enclosures, your customers usually fall into two groups. Homeowners want better windows for a new flat or a renovation, and they compare a few local fabricators before inviting anyone home. Builders, architects and contractors need a reliable partner for a whole project, and they check whether you can handle the quantity and the specification. A good website serves both, and turns visits into site measurement bookings and project enquiries.</p>
+
+<h2>What customers look for</h2>
+<table>
+  <thead>
+    <tr><th>Homeowners</th><th>Builders, architects and contractors</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Window and door styles that suit their home</td><td>The profile systems, glass types and hardware you work with</td></tr>
+    <tr><td>Help choosing between uPVC, aluminium and different glass options</td><td>Fabrication capacity, and how many openings you can deliver on time</td></tr>
+    <tr><td>Whether you cover their area, and how soon you can measure</td><td>Similar projects you've completed, with their scale and scope</td></tr>
+    <tr><td>What affects the cost, and what the warranty covers</td><td>Your installation team, site supervision and after-sales support</td></tr>
+    <tr><td>Real photos and reviews from nearby homes</td><td>A company profile they can share with their team or client</td></tr>
+  </tbody>
+</table>
+<p>Your homepage should point each group to the right place quickly, for example with two clear paths: "For homes" and "For builders and projects".</p>
+
+<h2>Give every product type its own page</h2>
+<p>People search for specific products, not "fenestration solutions". Separate pages help them find what they need and help you rank:</p>
+<ul>
+  <li><strong>Windows:</strong> sliding, casement, tilt-and-turn, fixed, bay windows and ventilators</li>
+  <li><strong>Doors:</strong> sliding, sliding-folding, French and balcony doors</li>
+  <li><strong>Glass work:</strong> toughened glass partitions, shower enclosures, glass railings and canopies</li>
+  <li><strong>Commercial work:</strong> shopfronts, office partitions, curtain walls and structural glazing, if you do them</li>
+  <li><strong>Add-ons:</strong> mosquito mesh, grilles, blinds and security hardware</li>
+</ul>
+<p>On each page, explain where the product works best, the colour and finish options, the glass choices, the hardware and locking, and show photos of your own installations. If you fabricate with a particular brand's profile system, name it only if you're genuinely authorised to, and be clear about which parts you make and which you buy in.</p>
+
+<h2>Help buyers choose the right material and glass</h2>
+<p>Most homeowners don't know the difference between uPVC and aluminium, or between toughened and laminated glass. Explaining it simply builds trust and brings in search traffic, because these are exactly the questions people type into Google.</p>
+<table>
+  <thead>
+    <tr><th>Guide topic</th><th>What to cover</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>uPVC vs aluminium</td><td>Look, frame size, colours and finishes, maintenance, where each suits best, and relative cost</td></tr>
+    <tr><td>Glass types</td><td>Plain, toughened, laminated and double-glazed units, and where safety glass matters</td></tr>
+    <tr><td>Noise, heat and dust</td><td>What frames, seals and glazing can realistically improve, without overpromising</td></tr>
+    <tr><td>Monsoon performance</td><td>Drainage, sealing and installation practices that keep water out</td></tr>
+    <tr><td>Care and maintenance</td><td>Cleaning tracks, lubricating hardware and checking seals</td></tr>
+  </tbody>
+</table>
+<p>Be careful with performance claims. If you mention noise reduction or energy savings, keep it general, or base it on test data that the profile or glass manufacturer actually publishes.</p>
+
+<h2>Make site measurement the main call to action</h2>
+<p>Nobody orders windows straight from a web page. The real conversion is a site visit to measure and advise, so make booking one easy:</p>
+<ul>
+  <li>A clear "Book a site measurement" button on every product page, saying whether the visit is free or chargeable</li>
+  <li>A short form asking for area or pin code, property type, new construction or replacement, the products they're interested in, the approximate number of openings and a preferred date</li>
+  <li>A WhatsApp option so people can send photos of their existing windows or a floor plan; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a></li>
+  <li>A list of the areas you serve, so people outside them know before they enquire</li>
+</ul>
+<p>Explain your process on its own page: measurement, quotation, order confirmation, fabrication, installation, finishing and handover. Mention what affects timing, such as whether plastering and flooring are complete, and only give typical lead times if you can keep to them.</p>
+
+<h2>Show projects, not just products</h2>
+<p>Real installations sell far better than catalogue images. Organise your gallery by product and by project type (apartments, villas, offices, showrooms), and for key jobs add a short write-up: the brief, the products and glass used, the number of openings and the result. Label any manufacturer or stock images clearly, and ask customers' permission before showing their homes. Before-and-after photos of window replacements work especially well.</p>
+
+<h2>A separate path for builders and architects</h2>
+<p>Project buyers need different information from homeowners. Give them a dedicated page with:</p>
+<ul>
+  <li>Your fabrication unit, machinery and installation team, with real photos</li>
+  <li>The size and type of projects you've handled, naming builders only where you have permission</li>
+  <li>An RFQ form that accepts drawings, window schedules or a BOQ, along with the site location and timeline</li>
+  <li>A downloadable company profile, plus any test reports or certificates you genuinely hold</li>
+  <li>How you handle samples, mock-up installations and site supervision</li>
+</ul>
+<p>Much of this overlaps with how other trade businesses win project work; see <a href="/blog/website-for-hardware-building-materials/">websites for hardware and building material suppliers</a> and <a href="/blog/website-for-construction-companies/">websites for construction companies</a> for what contractors expect.</p>
+
+<h2>Build trust with warranty and service details</h2>
+<ul>
+  <li><strong>Warranty:</strong> what's covered for profiles, hardware, glass and workmanship, for how long, and what isn't covered</li>
+  <li><strong>After-sales service:</strong> how customers raise a request, such as a stiff slider or a worn seal</li>
+  <li><strong>Safety:</strong> where you use toughened or laminated glass, and how railings and partitions are fixed</li>
+  <li><strong>Reviews:</strong> genuine Google reviews and customer photos, shared with permission</li>
+  <li><strong>Your business:</strong> years of experience, and the address of your workshop or showroom with a map</li>
+</ul>
+
+<h2>Local SEO and speed</h2>
+<p>Most searches are local: "upvc windows in {city}", "aluminium sliding windows near me", "toughened glass partition {city}", "shower glass enclosure {area}". To show up for them:</p>
+<ul>
+  <li>Keep your Google Business Profile complete, with installation photos and the right categories</li>
+  <li>Give each product its own page and title, rather than one long "services" page</li>
+  <li>If you serve several cities, build location pages around real projects there; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages done right</a></li>
+  <li>Publish guides that answer common questions, such as choosing between sliding and casement windows</li>
+</ul>
+<p>Galleries full of large photos slow pages down on mobile data, so compress images, lazy-load long galleries and host videos on YouTube rather than on your own server.</p>
+
+<p>Planning a website for your fabrication business? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>. If you want to rank for product and city searches, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-steel-fabrication-companies',
+    title: 'Websites for Steel and Metal Fabrication Companies',
+    description: 'What structural steel and metal fabrication companies need on their website: capability and machinery pages, project case studies, certifications and RFQ forms.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-website-development'],
+    body: `
+<p>Fabrication buyers rarely browse for fun. An EPC contractor, a plant engineer or an OEM's purchase team usually has a drawing in hand and a deadline, and wants to know one thing: can this shop make it to specification and deliver on time? Unlike a manufacturer selling standard products, a fabrication company sells capability. Your website should prove that capability quickly and make it easy to send an RFQ. For general advice on B2B websites, see <a href="/blog/b2b-manufacturer-website-guide/">how manufacturers can get more B2B enquiries</a>; this guide focuses on job-shop and project fabrication.</p>
+
+<h2>What fabrication buyers check</h2>
+<ul>
+  <li><strong>Processes:</strong> the cutting, forming, welding, machining and finishing you do in-house</li>
+  <li><strong>Limits:</strong> the materials, thicknesses, sizes and weights you can handle</li>
+  <li><strong>Capacity:</strong> shop floor area, lifting capacity and how much work you can take on</li>
+  <li><strong>Quality:</strong> welding procedures, inspection, documentation and certifications</li>
+  <li><strong>Experience:</strong> similar jobs for similar industries</li>
+  <li><strong>Logistics:</strong> your location, delivery reach and whether you erect on site</li>
+</ul>
+<p>If a buyer has to phone you just to learn your maximum plate thickness or bed size, they may simply move on to a shop that publishes it.</p>
+
+<h2>Build capability pages, one per process</h2>
+<p>Capability pages are the heart of a fabrication website. Give each main process its own page, with clear and honest limits:</p>
+<table>
+  <thead>
+    <tr><th>Capability</th><th>What to state</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Cutting</td><td>Laser, plasma, oxy-fuel or waterjet; materials, maximum thickness and bed size</td></tr>
+    <tr><td>Forming</td><td>Press brake bending, plate rolling and section bending; tonnage, length and thickness limits</td></tr>
+    <tr><td>Welding</td><td>Processes (MIG/MAG, TIG, SAW, stick), materials such as mild steel, stainless steel and aluminium, and welder qualifications</td></tr>
+    <tr><td>Machining</td><td>Turning, milling, drilling and boring of fabricated parts</td></tr>
+    <tr><td>Finishing</td><td>Shot blasting, paint systems, powder coating or galvanising, and which you do in-house versus through partners</td></tr>
+    <tr><td>Erection</td><td>Site installation teams, cranes, safety practices and the regions you cover</td></tr>
+  </tbody>
+</table>
+<p>Only list what you can reliably deliver. If finishing or galvanising is outsourced, say so. Buyers find out eventually, and honesty up front saves arguments later.</p>
+
+<h2>Show what you make, and for whom</h2>
+<p>Alongside processes, many buyers search by the thing they need. Create pages for the main types of work you take on, for example:</p>
+<ul>
+  <li><strong>Structural steel:</strong> industrial sheds, pre-engineered buildings, mezzanine floors, platforms, staircases and pipe racks</li>
+  <li><strong>Process equipment:</strong> tanks, hoppers, chutes, ducting, skids and frames</li>
+  <li><strong>Sheet metal:</strong> enclosures, panels, cabinets and machine guards</li>
+  <li><strong>Architectural metalwork:</strong> gates, railings, canopies and facade elements</li>
+</ul>
+<p>Then add industry pages if you serve particular sectors, such as pharma, food processing, power, cement or warehousing, explaining the materials, finishes and documentation those clients usually expect.</p>
+
+<h2>A machinery and infrastructure page</h2>
+<p>A simple, up-to-date machinery list does a lot of selling. Present it as a table with the machine type, the make or model if you're happy to share it, and its key capacity. Add photos and short videos of the shop floor, overhead cranes, material storage and inspection area. Keep it current: a list that includes machines you've sold, or misses new ones, undermines trust the moment a buyer visits your shop.</p>
+
+<h2>Certifications and quality, stated precisely</h2>
+<p>Certifications often decide whether you get onto a vendor list. List only those you currently hold, with the scope, the certifying body and the expiry date, and offer copies as downloads or on request. Depending on your work, buyers may ask about:</p>
+<ul>
+  <li>A quality management system such as ISO 9001</li>
+  <li>Welding quality standards such as ISO 3834, along with qualified welding procedures and welders</li>
+  <li>EN 1090, if you supply structural steel to European markets</li>
+  <li>Approvals under ASME codes or the Indian Boiler Regulations, if you make pressure vessels, boilers or their components</li>
+  <li>Vendor approvals with large companies, mentioned only where you're allowed to</li>
+</ul>
+<p>Requirements vary by product and market, so check current rules with the relevant certifying body rather than relying on a general article. Alongside certificates, describe your inspection process: incoming material checks, dimensional inspection, any NDT you arrange, and the documents you supply, such as mill test certificates and inspection reports.</p>
+
+<h2>Projects that prove it</h2>
+<p>For each notable job, write a short case study: the industry, the scope (fabrication only, or supply and erection), materials and grades, approximate size or tonnage, the timeline and any challenge you solved. Add photos from the shop floor, dispatch and site. Name clients only with written permission; otherwise describe them generally, such as "a food processing plant in western India". See <a href="/blog/write-case-studies-business-website/">how to write case studies</a> for a simple structure.</p>
+
+<h2>An RFQ form built for drawings</h2>
+<p>Your RFQ form is where interest becomes work. Make it fit the way buyers actually send enquiries:</p>
+<ol>
+  <li><strong>File upload</strong> for drawings and specifications (PDF, DWG, DXF or STEP), with a sensible size limit and an email alternative for very large files</li>
+  <li><strong>Material and grade</strong>, quantity, and the required finish or coating</li>
+  <li><strong>Scope:</strong> fabrication only, supply and erection, or repair and modification</li>
+  <li><strong>Inspection and documentation</strong> requirements, if any</li>
+  <li><strong>Delivery location</strong> and required date</li>
+</ol>
+<p>Drawings can be commercially sensitive, so restrict the file types your form accepts and keep uploads out of public folders. Say that drawings are treated confidentially, and that you'll sign an NDA if asked, but only if both are true. Route submissions to someone who can estimate, send an automatic acknowledgement so buyers know the RFQ arrived, and add a WhatsApp number for quick questions. If your form isn't bringing in RFQs, see <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a>.</p>
+
+<h2>SEO for fabricators</h2>
+<p>Buyers search by process, product and place: "steel fabrication in {city}", "sheet metal fabrication {industrial area}", "laser cutting service near me", "MS structure fabricator {city}", "PEB shed manufacturer {state}". Your capability and product pages are what rank for these, so give each one a clear title, specific content and photos of real work.</p>
+<ul>
+  <li>Keep your Google Business Profile complete, with shop and project photos</li>
+  <li>List your company on relevant B2B directories, each linking back to your website</li>
+  <li>Write practical articles, such as choosing between mild steel and stainless steel for a particular use</li>
+  <li>Host machinery videos on YouTube and compress photos and PDFs, so pages load quickly for buyers checking your site from a plant or site office</li>
+</ul>
+
+<p>Building or rebuilding your fabrication company's website? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for a site built around your capabilities and RFQs.</p>
 `,
   },
 ];
