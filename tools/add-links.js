@@ -351,6 +351,10 @@ const LINKS = [
   ['website-for-security-facility-management', '<h2>Build trust</h2>', '<p>If your business installs CCTV, access control and alarm systems rather than providing guards, see <a href="/blog/website-for-cctv-security-installers/">websites for CCTV and security system installers</a>.</p>\n\n'],
   ['website-for-it-software-companies', '<h2>Essential pages</h2>', '<p>If your business sells and installs computers, laptops and networking hardware rather than software, see <a href="/blog/website-for-it-hardware-computer-dealers/">websites for computer, laptop and IT hardware dealers</a>.</p>\n\n'],
   ['website-for-printing-packaging-companies', '<h2>SEO for printing and packaging</h2>', '<p>If you make shop boards, LED letters and other signage rather than printed products and packaging, see <a href="/blog/website-for-signage-companies/">websites for signage and LED board companies</a>.</p>\n\n'],
+  // Agent 10
+  ['website-for-property-management-companies', '<h2>Trust</h2>', '<p>Running an entire residential complex rather than individual flats? See <a href="/blog/website-for-housing-societies-rwas/">websites for housing societies and RWAs</a>.</p>\n\n'],
+  ['website-for-chemical-pharma-manufacturers', '<h2>SEO</h2>', '<p>Marketing finished formulations through distributors and franchise partners instead? See <a href="/blog/website-for-pharma-franchise-companies/">websites for PCD pharma franchise companies</a>.</p>\n\n'],
+  ['website-for-gyms-fitness-studios', '<h2>Essential pages and features</h2>', '<p>Running a dedicated yoga studio or teaching yoga independently? See <a href="/blog/website-for-yoga-studios-teachers/">websites for yoga studios and teachers</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

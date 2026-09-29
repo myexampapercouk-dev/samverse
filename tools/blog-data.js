@@ -3852,6 +3852,8 @@ module.exports = [
   <li>Reviews and transformation stories (with permission)</li>
 </ul>
 
+<p>Running a dedicated yoga studio or teaching yoga independently? See <a href="/blog/website-for-yoga-studios-teachers/">websites for yoga studios and teachers</a>.</p>
+
 <h2>Essential pages and features</h2>
 <ol>
   <li><strong>Home:</strong> what makes you different, location, main offer and a "Book a free trial" button</li>
@@ -8068,6 +8070,8 @@ module.exports = [
 <h2>Compliance cautions</h2>
 <p>Pharmaceutical products and certain chemicals are regulated. Avoid therapeutic claims, keep safety information accurate, and check what information is appropriate to publish for your products and markets.</p>
 
+<p>Marketing finished formulations through distributors and franchise partners instead? See <a href="/blog/website-for-pharma-franchise-companies/">websites for PCD pharma franchise companies</a>.</p>
+
 <h2>SEO</h2>
 <ul>
   <li>Unique pages for key products, including CAS numbers and specifications</li>
@@ -9638,6 +9642,8 @@ module.exports = [
   <li>Maintenance request form</li>
   <li>Move-in and move-out process</li>
 </ul>
+
+<p>Running an entire residential complex rather than individual flats? See <a href="/blog/website-for-housing-societies-rwas/">websites for housing societies and RWAs</a>.</p>
 
 <h2>Trust</h2>
 <ul>
@@ -18287,6 +18293,287 @@ Template: astra
 
 <h2>Need a website that wins signage projects?</h2>
 <p>I build WordPress websites for fabricators and B2B businesses, with filterable portfolios, detailed quote forms and local SEO built in. See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, or <a href="/landing-page-design/">landing page design</a> for your ad campaigns.</p>
+`,
+  },
+  {
+    slug: 'website-for-housing-societies-rwas',
+    seoTitle: 'Websites for Housing Societies and RWAs: What to Include',
+    title: 'Websites for Housing Societies and RWAs: Notices, Dues, Complaints and Member Areas',
+    description: 'What a housing society or RWA website needs: notices, committee details, maintenance payments, complaint tracking, member areas and residents\' privacy.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['website-for-temples-and-ngos', 'wordpress-website-development'],
+    body: `
+<p>A housing society or resident welfare association (RWA) is a small organisation in its own right: a managing committee, a budget, rules, vendors and hundreds of households. Most of it runs on WhatsApp groups, where important notices get buried under good-morning messages and new residents ask the same questions every month. A simple, well-organised website gives the society one official place for information, payments and requests.</p>
+
+<h2>Who the website is for</h2>
+<ul>
+  <li><strong>Residents and owners:</strong> notices, rules, dues, amenity bookings and complaints</li>
+  <li><strong>Owners who live elsewhere:</strong> including NRIs who need documents, receipts and AGM updates without being on site</li>
+  <li><strong>Tenants:</strong> move-in rules, parking, emergency contacts and who to call for what</li>
+  <li><strong>Staff and vendors:</strong> security agencies, housekeeping and maintenance contractors</li>
+  <li><strong>Prospective buyers and tenants:</strong> a good public face for the society, its amenities and how it is run</li>
+</ul>
+
+<h2>Public pages vs member-only pages</h2>
+<p>The most important planning decision is what anyone can see and what needs a login. A sensible split looks like this:</p>
+<table>
+  <thead>
+    <tr><th>Public</th><th>Members only</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>About the society, location and amenities</td><td>Minutes of meetings and AGM documents</td></tr>
+    <tr><td>Committee roles and an official contact email</td><td>Accounts, budgets and audit reports</td></tr>
+    <tr><td>General notices (water cuts, festival events)</td><td>Individual dues, receipts and payment history</td></tr>
+    <tr><td>Emergency numbers and visitor guidelines</td><td>Resident directory, if residents opt in</td></tr>
+    <tr><td>Contact form for outsiders and vendors</td><td>Complaint tickets, amenity bookings and bye-laws</td></tr>
+  </tbody>
+</table>
+<p>When in doubt, keep it behind the login. It is easy to make a page public later, and hard to undo something that has already been indexed by Google.</p>
+
+<h2>Notices, circulars and meeting documents</h2>
+<p>An online notice board is usually the feature committees value most.</p>
+<ul>
+  <li>Each notice has a date, a category (maintenance, events, security, meetings) and a clear title</li>
+  <li>Old notices move into a searchable archive instead of disappearing</li>
+  <li>AGM and SGM notices, agendas and minutes sit in one place, so nobody can say they never received them</li>
+  <li>Write the key points as text on the page, not just a scanned PDF, so notices are readable on a phone</li>
+  <li>Share the notice link on WhatsApp and email, so the website stays the official record</li>
+</ul>
+
+<h2>Maintenance payments and receipts</h2>
+<p>Collecting dues is where a website can save the treasurer the most time. Common options:</p>
+<ol>
+  <li><strong>Payment gateway on the website:</strong> residents pay by UPI, card or net banking, and receive an automatic receipt. The gateway account must be in the society's name, and the provider will ask for its registration and bank documents.</li>
+  <li><strong>UPI or bank details with a reference:</strong> simpler, but someone has to match payments to flats manually.</li>
+  <li><strong>Linking to a society management app:</strong> many societies already use apps such as MyGate, ADDA or NoBrokerHood for gate management or billing. If yours does, the website can point residents there instead of duplicating it.</li>
+</ol>
+<p>Whichever you choose, each member should see only their own dues and receipts. Late fees, interest and tax treatment of maintenance charges depend on your bye-laws and current rules, so confirm them with your CA before you automate anything. For the technical side, see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>.</p>
+
+<h2>Complaints and service requests</h2>
+<p>A structured complaint form works far better than messages in a group chat:</p>
+<ul>
+  <li>Categories such as plumbing, electrical, lift, security, housekeeping and parking</li>
+  <li>Flat number, a short description and an optional photo</li>
+  <li>An automatic ticket number and email or WhatsApp acknowledgement</li>
+  <li>Routing to the right committee member or facility manager</li>
+  <li>A status the resident can check: open, in progress, resolved</li>
+</ul>
+<p>Keep complaints private between the resident and the committee. A public list of complaints helps nobody and can cause friction between neighbours.</p>
+
+<h2>Member logins and access control</h2>
+<p>A member area is only as good as the way accounts are managed:</p>
+<ul>
+  <li>Residents request an account, and a committee member approves it against the member register</li>
+  <li>Different roles for committee members, owners, tenants and staff, each seeing only what they need</li>
+  <li>Accounts are removed when a flat is sold or a tenant moves out</li>
+  <li>Committee and admin accounts use strong passwords and two-factor authentication</li>
+</ul>
+<p>Committees change every few years, so the website must belong to the society, not to one person. Register the domain and hosting in the society's name and keep logins in society records. See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> and the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
+
+<h2>Privacy: protect residents' data</h2>
+<p>A society holds a lot of personal information: names, phone numbers, flat numbers, vehicle details, and sometimes ID documents of tenants and domestic staff. Handle it carefully:</p>
+<ul>
+  <li>Never publish flat-wise names, phone numbers or vehicle lists on public pages</li>
+  <li>Think carefully before putting defaulter lists online; discuss it with the committee and take advice</li>
+  <li>Collect only what the society actually needs, and restrict who can download it</li>
+  <li>Keep ID documents and CCTV footage off the website entirely</li>
+  <li>Stop search engines from indexing the member area, and publish a clear privacy policy</li>
+</ul>
+<p>India's data protection law generally applies to organisations that handle personal data digitally, so don't assume a society is exempt. Our guide to <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and consent basics</a> covers the essentials; check current requirements with a lawyer.</p>
+
+<h2>Keep it easy to run</h2>
+<ul>
+  <li><strong>Simple editing:</strong> committee members should be able to post a notice in two minutes from a phone</li>
+  <li><strong>Amenity booking:</strong> clubhouse, party hall and guest parking with a calendar that prevents double bookings</li>
+  <li><strong>Readable for everyone:</strong> large text and clear menus for older residents, and Hindi or a regional language if residents prefer it</li>
+  <li><strong>Fast on mobile:</strong> most residents will open notices from a WhatsApp link on their phone</li>
+  <li><strong>Regular updates and backups:</strong> a member area with personal data needs ongoing maintenance, not a build-and-forget approach</li>
+</ul>
+
+<p>Want a society website that the committee can run without a developer on call? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/website-for-temples-and-ngos/">websites for trusts and community organisations</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-pharma-franchise-companies',
+    seoTitle: 'PCD Pharma Franchise Company Websites: What to Include',
+    title: 'Websites for PCD Pharma Franchise Companies: Products, Enquiries and Compliance',
+    description: 'How PCD pharma franchise companies can win more distributor enquiries online: product lists, franchise pages, lead forms, trust signals and careful compliance.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'landing-page-design'],
+    body: `
+<p>A PCD pharma franchise company sells to people in the trade, not to patients. Its visitors are medical representatives planning to start their own business, distributors looking for a new range, and stockists comparing companies before they commit to a territory. They arrive with specific questions: which products do you have, which areas are still open, who manufactures your range, and how quickly do you dispatch? A website that answers these clearly gets better enquiries than one that simply calls itself the best pharma franchise company.</p>
+
+<h2>Who visits a PCD pharma website</h2>
+<ul>
+  <li><strong>Medical representatives and area managers</strong> who want to start their own franchise and need a company they can rely on</li>
+  <li><strong>Existing distributors and stockists</strong> adding a new range or a new speciality division</li>
+  <li><strong>Doctors and hospital purchase teams</strong> who have seen your products and want to check the company behind them</li>
+  <li><strong>Other companies</strong> looking for third-party manufacturing, if you offer it</li>
+</ul>
+<p>Most of them are on a phone, often comparing several company websites and directory listings at once. Clarity and speed matter more than decoration.</p>
+
+<h2>The product list is the heart of the site</h2>
+<p>Franchise partners judge a company largely by its range. A good product list:</p>
+<ul>
+  <li>Shows each product's brand name, composition (salt names and strengths), dosage form and pack size</li>
+  <li>Has a clear packshot for each product, photographed consistently</li>
+  <li>Can be filtered by division (for example gynae, paediatric, derma, ortho or cardio-diabetic) and by dosage form (tablets, capsules, syrups, injections, ointments)</li>
+  <li>Is searchable by composition, because partners often look for a specific molecule combination rather than your brand name</li>
+  <li>Offers a downloadable product list PDF that matches the website</li>
+</ul>
+<p>Build products as structured entries rather than one long page or a pasted image of the catalogue, so adding a new launch is quick and each product can have its own page. Our guide to <a href="/blog/industrial-website-product-catalogue/">building a product catalogue website</a> explains the approach, and it works just as well for a pharma range.</p>
+
+<h2>Franchise pages that answer the real questions</h2>
+<p>Before filling in a form, a prospective partner wants to understand how working with you actually works. Useful pages include:</p>
+<ul>
+  <li><strong>How our franchise works:</strong> monopoly or territory rights, what the partner is expected to do, and how orders, dispatch and billing work</li>
+  <li><strong>Promotional support:</strong> visual aids, product literature, MR bags or other inputs you genuinely provide</li>
+  <li><strong>Available territories:</strong> states or districts where you are appointing partners, updated when an area is taken</li>
+  <li><strong>New launches:</strong> recently added products, which also show the company is active</li>
+  <li><strong>FAQs:</strong> documents needed, investment and minimum order expectations, dispatch time and payment terms, answered honestly</li>
+</ul>
+<p>Avoid promising earnings or guaranteed returns. Describe the arrangement clearly and let partners decide.</p>
+
+<h2>An enquiry form that qualifies leads</h2>
+<p>PCD companies often receive many enquiries that go nowhere. A slightly more detailed form saves the sales team time:</p>
+<ol>
+  <li>Name, firm name and WhatsApp number</li>
+  <li>State and district of interest</li>
+  <li>Whether they hold a drug licence, or are applying for one</li>
+  <li>Divisions or products they are interested in</li>
+  <li>Current role: MR, distributor, stockist or new to the trade</li>
+</ol>
+<p>Send each enquiry to email and WhatsApp, and reply quickly, because partners usually contact several companies on the same day. A WhatsApp enquiry button on each product page also works well for partners who want to ask about one specific product.</p>
+
+<h2>Compliance: be careful with medical claims</h2>
+<p>Medicines are among the most tightly regulated products to promote in India, and a franchise website is still a public page. Some practical cautions:</p>
+<ul>
+  <li><strong>No cure or treatment promises:</strong> avoid phrases like "cures", "guaranteed relief" or "best medicine for" a condition. Laws such as the Drugs and Magic Remedies (Objectionable Advertisements) Act restrict advertising remedies for a range of diseases and conditions.</li>
+  <li><strong>Prescription medicines are not consumer products:</strong> present the range as information for the trade and healthcare professionals, and don't add a public "Buy now" cart for prescription drugs.</li>
+  <li><strong>Accurate product details:</strong> composition, strength and pack information should match the approved label exactly.</li>
+  <li><strong>Only genuine certifications:</strong> if products are made by a third-party manufacturer, say so, and mention certifications such as WHO-GMP only if the manufacturing unit actually holds them. Don't use regulators' names or logos to imply approvals you don't have.</li>
+  <li><strong>Marketing codes:</strong> the Uniform Code for Pharmaceutical Marketing Practices (UCPMP) from the Department of Pharmaceuticals covers how companies promote to healthcare professionals, so check the current version before describing any doctor-facing schemes.</li>
+</ul>
+<p>Rules change and depend on the product, so have your regulatory consultant or lawyer review product pages and claims before launch. This is general guidance, not legal advice.</p>
+
+<h2>Trust signals partners check</h2>
+<ul>
+  <li>Registered company name, office address, GSTIN and drug licence details, shown consistently across the site</li>
+  <li>Years in business, and photos of your office, warehouse and dispatch area</li>
+  <li>Manufacturing partner details and their certifications, where you have permission to share them</li>
+  <li>Named contacts for new franchise enquiries and for existing partners</li>
+  <li>A verified Google Business Profile for your office, with genuine reviews</li>
+</ul>
+<p>Stock photos of laboratories and capsules tell a partner nothing. Your own packshots and premises say far more.</p>
+
+<h2>SEO: product, division and territory pages</h2>
+<p>Partners search for things like "PCD pharma franchise in {state}", "{division} pharma franchise company" and specific compositions. To be found:</p>
+<ul>
+  <li>Give key products their own pages, with composition, dosage form and pack size in the title and text</li>
+  <li>Create division pages (gynae range, derma range and so on) with a useful introduction, not just a grid of images</li>
+  <li>Build state or city pages only where you genuinely appoint partners, each with real information about territories, dispatch and contacts. Copy-pasted pages for every district tend to be treated as doorway pages; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages done right</a>.</li>
+  <li>Keep directory and B2B portal listings consistent, pointing back to your website</li>
+</ul>
+<p>If you manufacture APIs or bulk chemicals rather than marketing finished formulations, the approach is different; see <a href="/blog/website-for-chemical-pharma-manufacturers/">websites for chemical and pharma manufacturers</a>.</p>
+
+<h2>Keep a large catalogue fast and current</h2>
+<p>A range of a few hundred products means a few hundred images. Resize and compress packshots before upload, load product grids in pages or with filters rather than as one enormous page, and lazy-load images further down. See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>. Just as important, make sure your own team can add and retire products easily, so the website never falls behind the printed product list.</p>
+
+<p>Need a franchise website with a searchable product range and enquiry forms that reach your team on WhatsApp? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, or <a href="/landing-page-design/">landing page design</a> for state or division-specific ad campaigns.</p>
+`,
+  },
+  {
+    slug: 'website-for-yoga-studios-teachers',
+    seoTitle: 'Websites for Yoga Studios and Teachers: What to Include',
+    title: 'Websites for Yoga Studios and Teachers: Classes, Schedules and Online Sessions',
+    description: 'What yoga studios and teachers need online: beginner-friendly class pages, schedules, online sessions, memberships, real credentials and careful health claims.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Someone looking for a yoga class is rarely just comparing prices. A beginner wants to know whether they will cope, someone with back pain wants to know whether it is safe, and a student abroad wants to know whether your online batch fits their time zone. A yoga website has to answer these questions calmly and clearly. Our guide to <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms and fitness studios</a> covers the general fitness side; this one focuses on what is specific to yoga studios and independent yoga teachers.</p>
+
+<h2>Studio or independent teacher?</h2>
+<p>The structure of the site depends on how you work:</p>
+<table>
+  <thead>
+    <tr><th>Aspect</th><th>Yoga studio</th><th>Independent teacher</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Main focus</td><td>Timetable, styles, teachers and memberships</td><td>You: your training, approach and availability</td></tr>
+    <tr><td>Typical offers</td><td>Group classes, class packs, workshops, teacher training</td><td>Private sessions, home visits, corporate classes, online batches</td></tr>
+    <tr><td>Main action</td><td>Book a trial class</td><td>Book a first session or a short call</td></tr>
+    <tr><td>Typical searches</td><td>"yoga classes in {area}"</td><td>"yoga teacher for home in {city}", "online yoga teacher"</td></tr>
+  </tbody>
+</table>
+<p>Teachers building a name for themselves can borrow ideas from <a href="/blog/personal-brand-website-professionals/">personal brand websites for professionals</a>.</p>
+
+<h2>Class pages that reassure beginners</h2>
+<p>Instead of a bare list of class names, give each style or class type its own short page or section:</p>
+<ul>
+  <li><strong>What it is:</strong> Hatha, Vinyasa, Ashtanga, Yin, prenatal, kids or chair yoga, explained in plain words</li>
+  <li><strong>Level:</strong> beginner, all levels or experienced, and whether newcomers can join any week</li>
+  <li><strong>What to expect:</strong> pace, duration, and how much breathwork, chanting or meditation is included</li>
+  <li><strong>What to bring:</strong> mat, clothing, water, and whether to avoid a heavy meal beforehand</li>
+  <li><strong>Who should check first:</strong> for example during pregnancy, after surgery or with an injury</li>
+</ul>
+<p>A short "Your first class" page that answers common worries (flexibility, age, fitness level, what happens when you arrive) often does more for enquiries than any discount.</p>
+
+<h2>Schedules, time zones and online sessions</h2>
+<ul>
+  <li><strong>An editable timetable:</strong> the teacher or studio staff should be able to change a class, mark a substitute or cancel a session from a phone in minutes</li>
+  <li><strong>Morning and evening batches</strong> clearly separated, since that is how many students choose</li>
+  <li><strong>Time zones:</strong> if you teach students abroad, state the time zone next to every online class (for example "7:00 am IST") and consider showing the time for your main overseas markets too</li>
+  <li><strong>Private links:</strong> send Zoom or Google Meet links only after booking or payment, by email or WhatsApp, never on a public page</li>
+  <li><strong>Recordings:</strong> if you offer replays, keep them in a members-only area rather than on public video pages</li>
+</ul>
+<p>Trials, private sessions and group classes can all be booked online with automatic reminders; see <a href="/blog/online-appointment-booking-website/">online appointment booking</a>.</p>
+
+<h2>Memberships, packs and payments</h2>
+<p>Yoga pricing usually mixes several formats, and the website should make them easy to compare:</p>
+<ul>
+  <li>Drop-in or trial classes</li>
+  <li>Class packs with a clear validity period</li>
+  <li>Monthly or quarterly memberships for in-studio, online or both</li>
+  <li>Workshops, retreats and teacher training courses, priced separately</li>
+</ul>
+<p>Collect payments by UPI, cards and net banking through a payment gateway, and check whether your gateway plan accepts international cards if you have overseas students. Write clear pause, freeze and refund rules for memberships and publish them before anyone pays. Our guide to <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a> explains the options.</p>
+
+<h2>Teacher credentials, described honestly</h2>
+<p>Students increasingly check who will be teaching them. For each teacher, include:</p>
+<ul>
+  <li>A real photo and a short, personal introduction</li>
+  <li>Where and how they trained, and the certifications they hold, such as Yoga Alliance registration or Yoga Certification Board certification, with levels stated accurately</li>
+  <li>Years of teaching and the groups they specialise in, such as beginners, seniors or prenatal students</li>
+  <li>The languages they teach in</li>
+</ul>
+<p>List only certifications a teacher actually holds, and keep them current. Vague labels such as "expert" or "world-famous" mean little to a new student; clear training details mean a lot.</p>
+
+<h2>Health claims and student safety</h2>
+<p>People often search for yoga in connection with back pain, stress, PCOS, thyroid problems or diabetes. It is fine to describe classes designed for particular groups, but be careful with the wording:</p>
+<ul>
+  <li>Avoid saying yoga "cures" or "reverses" a disease, or promising specific medical results</li>
+  <li>Encourage students with medical conditions, injuries or pregnancies to consult their doctor before starting</li>
+  <li>Use a short health questionnaire at sign-up and limit who can see the answers, since health details deserve extra care</li>
+  <li>Share student stories only with consent, and keep them about experience rather than medical outcomes</li>
+</ul>
+<p>Claims about treating medical conditions can fall under advertising rules, so if you run therapeutic programmes, have the wording reviewed by someone qualified.</p>
+
+<h2>Local SEO and seasonal moments</h2>
+<ul>
+  <li>Target searches such as "yoga classes in {area}", "morning yoga batch near me", "prenatal yoga in {city}" and "online yoga classes for beginners"</li>
+  <li>Keep your Google Business Profile updated with class times, photos of the studio and genuine reviews</li>
+  <li>Write helpful articles that answer beginner questions, rather than copied lists of poses</li>
+  <li>Plan events and pages around International Day of Yoga on 21 June, the new year and summer batches for children</li>
+  <li>Give teacher training and retreats their own landing pages, with dates, syllabus, accommodation, eligibility and an application form</li>
+</ul>
+
+<h2>A calm design that still loads fast</h2>
+<p>A yoga website should feel calm, but calm doesn't mean heavy. Large background videos and full-screen sliders slow pages down on mobile data. Use a few good photos of your real space and teachers, embed class videos carefully, and keep the timetable, WhatsApp button and "Book a trial" link easy to reach on a phone.</p>
+
+<p>Planning a yoga studio or teacher website you can update yourself? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> for teacher training and retreat campaigns.</p>
 `,
   },
 ];
