@@ -375,6 +375,10 @@ const LINKS = [
   ['website-for-authors-content-creators', '<h2>For YouTubers and podcasters</h2>', '<p>Running a publishing house or independent press rather than promoting your own books? See <a href="/blog/website-for-book-publishers/">websites for book publishers</a>.</p>\n\n'],
   ['website-for-florists-gift-shops', '<h2>Festival campaigns</h2>', '<p>If corporate orders are your main business rather than a sideline, see <a href="/blog/website-for-corporate-gifting-companies/">websites for corporate gifting companies</a>.</p>\n\n'],
   ['website-for-furniture-businesses', '<h2>Product pages that sell furniture</h2>', '<p>Selling cushions, curtains, rugs and lighting rather than furniture? See <a href="/blog/website-for-home-decor-stores/">websites for home decor and furnishing stores</a>.</p>\n\n'],
+  // Agent 09
+  ['website-for-coaches-consultants', '<h2>Keep claims honest</h2>', '<p>If you mainly sell workshops and programmes to companies rather than one-to-one coaching, see <a href="/blog/website-for-corporate-training-companies/">websites for corporate training companies</a>.</p>\n\n'],
+  ['school-coaching-website-what-parents-look-for', '<h2>Keep it updated</h2>', '<p>Teaching coding, data or other IT skills to college students and working professionals? See <a href="/blog/website-for-software-training-institutes/">websites for software training institutes</a>.</p>\n\n'],
+  ['website-for-overseas-education-consultants', '<h2>Counsellors</h2>', '<p>If you run IELTS, PTE or spoken English classes as a separate institute, see <a href="/blog/website-for-ielts-spoken-english-institutes/">websites for IELTS and spoken English institutes</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

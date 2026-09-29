@@ -2082,6 +2082,8 @@ module.exports = [
 
 <p>Other learning businesses: <a href="/blog/website-for-music-dance-academies/">music and dance academies</a>, <a href="/blog/website-for-driving-schools/">driving schools</a> and <a href="/blog/website-for-home-tutors-online-teachers/">home tutors</a>.</p>
 
+<p>Teaching coding, data or other IT skills to college students and working professionals? See <a href="/blog/website-for-software-training-institutes/">websites for software training institutes</a>.</p>
+
 <h2>Keep it updated</h2>
 <p>Nothing damages trust faster than last year's admission dates or an old notice board. Build the site so staff can post notices, events and results themselves in minutes.</p>
 
@@ -10451,6 +10453,8 @@ module.exports = [
   <li>Clear fee structure and what's included</li>
 </ul>
 
+<p>If you run IELTS, PTE or spoken English classes as a separate institute, see <a href="/blog/website-for-ielts-spoken-english-institutes/">websites for IELTS and spoken English institutes</a>.</p>
+
 <h2>Counsellors</h2>
 <p>Profiles with experience, study-abroad background and specialisations build trust.</p>
 
@@ -12592,6 +12596,8 @@ module.exports = [
   <li>Logos of organisations you've trained, with permission</li>
   <li>Media appearances, talks and publications</li>
 </ul>
+
+<p>If you mainly sell workshops and programmes to companies rather than one-to-one coaching, see <a href="/blog/website-for-corporate-training-companies/">websites for corporate training companies</a>.</p>
 
 <h2>Keep claims honest</h2>
 <p>Avoid promising specific incomes, promotions or life changes. Share real, typical results and be clear that outcomes depend on the client. Honest claims build long-term reputation.</p>
@@ -19946,6 +19952,268 @@ Template: astra
 </ul>
 
 <p>WordPress with WooCommerce suits most decor and furnishing stores: collections, inspiration pages, variations and a blog all sit in one place your team can manage. See <a href="/woocommerce-developer/">WooCommerce development</a> to plan your store, or <a href="/wordpress-seo-services/">WordPress SEO</a> if your existing site isn't being found.</p>
+`,
+  },
+  {
+    slug: 'website-for-corporate-training-companies',
+    title: 'Websites for Corporate Training Companies and L&D Providers',
+    description: 'What HR and L&D buyers look for on a corporate training website: programme pages, trainer profiles, client logos used with permission and proposal forms.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['website-for-lawyers-and-consultants', 'landing-page-design'],
+    body: `
+<p>Corporate training is bought differently from most services. The person on your website is usually an HR manager, an L&amp;D head or a business owner, shortlisting two or three providers before asking for a proposal. They often have to justify their choice to a manager or a procurement team. A good training company website makes that shortlist easy to defend.</p>
+
+<p>This guide is for training companies that sell programmes to organisations. If you're an individual coach selling one-to-one programmes, see <a href="/blog/website-for-coaches-consultants/">websites for business, career and life coaches</a>.</p>
+
+<h2>Who visits, and what they need</h2>
+<ul>
+  <li><strong>HR and L&amp;D teams:</strong> programme fit, delivery formats, who the trainers are and proof you've worked with similar organisations</li>
+  <li><strong>Business heads and founders:</strong> what will change for their team, how much time away from work it needs and what affects the cost</li>
+  <li><strong>Procurement and finance:</strong> registered company details, GST registration and a company profile for vendor onboarding</li>
+  <li><strong>Individual professionals:</strong> if you run open workshops, they want dates, venue, fees and certificate details</li>
+</ul>
+<p>Design the website around these buyers, not around your own history. Your story belongs on the About page; the homepage should answer "can they train my people?"</p>
+
+<h2>Essential pages</h2>
+<ol>
+  <li><strong>Home:</strong> what you train, which industries and team sizes you work with, your delivery formats and a clear "Request a proposal" button</li>
+  <li><strong>Programmes:</strong> a catalogue grouped by skill area, such as leadership, communication, sales, customer service, compliance topics and technical skills</li>
+  <li><strong>Individual programme pages:</strong> one page per programme (more on these below)</li>
+  <li><strong>Trainers:</strong> profiles of the facilitators who actually deliver</li>
+  <li><strong>Clients and case studies:</strong> evidence you've done this before</li>
+  <li><strong>Workshop calendar:</strong> only if you run public or open programmes</li>
+  <li><strong>About:</strong> your approach, methodology and how you customise</li>
+  <li><strong>Contact:</strong> proposal form, phone, WhatsApp and office address</li>
+</ol>
+
+<h2>Programme pages that win in-house training</h2>
+<p>Most enquiries start on a programme page, so each one should work like a short proposal:</p>
+<ul>
+  <li><strong>Who it's for:</strong> roles, seniority and ideal group size</li>
+  <li><strong>Learning objectives:</strong> in plain language, not jargon</li>
+  <li><strong>Outline:</strong> modules, activities and duration options (half day, full day or a series of shorter sessions)</li>
+  <li><strong>Formats:</strong> on-site at the client's office, virtual instructor-led, blended or offsite</li>
+  <li><strong>Customisation:</strong> how you adapt examples and case exercises to the client's industry</li>
+  <li><strong>Measurement:</strong> how you check it worked, such as pre and post assessments, feedback forms and follow-up sessions</li>
+  <li><strong>A downloadable outline</strong> that the HR contact can forward internally</li>
+  <li><strong>A "Request this programme" button</strong> that pre-fills the programme name in the enquiry form</li>
+</ul>
+
+<h2>Trainer profiles</h2>
+<p>Buyers know that a programme is only as good as the person delivering it. For each trainer, include a professional photo, industry and corporate experience, topics they specialise in, genuine certifications, and the languages they can deliver in. Language matters in India: a sales or safety programme for field or plant teams may land better in Hindi or a regional language than in English.</p>
+<p>Be clear about who delivers. If you work with associate trainers, say so, and remove profiles of people who no longer work with you. A short clip of a trainer facilitating, filmed with participants' consent, can do more than a long bio.</p>
+
+<h2>Proof: client logos, case studies and testimonials</h2>
+<ul>
+  <li><strong>Client logos with permission:</strong> many companies have brand guidelines, and some training contracts include confidentiality clauses. Ask before showing a logo, and only show organisations you've genuinely trained.</li>
+  <li><strong>Case studies:</strong> the client's challenge, the programme you designed, how it was delivered and what changed. If a client prefers privacy, describe them generally, for example "a mid-sized manufacturing company in Gujarat". See <a href="/blog/write-case-studies-business-website/">how to write case studies</a>.</li>
+  <li><strong>Testimonials:</strong> from HR heads and participants, with names and roles shared only with consent</li>
+  <li><strong>Results:</strong> only share outcomes the client has measured and agreed to publish. Never estimate ROI figures for them.</li>
+  <li><strong>Session photos:</strong> real ones beat stock images, but get consent and check that no confidential slides or whiteboards are visible</li>
+</ul>
+
+<h2>The in-house training enquiry form</h2>
+<p>A generic "Name, Email, Message" form gets vague enquiries. A few targeted fields help you reply with a relevant proposal quickly:</p>
+<table>
+  <thead>
+    <tr><th>Field</th><th>Why it helps</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Company name and industry</td><td>Lets you tailor examples and check relevant experience</td></tr>
+    <tr><td>Training topic or skill need</td><td>Routes the enquiry to the right trainer</td></tr>
+    <tr><td>Number of participants and their level</td><td>Defines scope, batches and effort</td></tr>
+    <tr><td>Location or online</td><td>Covers logistics and travel</td></tr>
+    <tr><td>Preferred dates or timeline</td><td>Shows urgency and checks availability</td></tr>
+    <tr><td>Name, work email and phone</td><td>For follow-up</td></tr>
+  </tbody>
+</table>
+<p>Keep the extra fields optional so nobody abandons the form. Send people to a thank-you page that explains what happens next and when, and offer a downloadable company profile for vendor registration. Share documents like GST and PAN details privately when asked, not as public downloads.</p>
+
+<h2>Public workshops and online registration</h2>
+<p>If you run open programmes, list them on a calendar with dates, venue or online link details, what's included and seats available. Online registration with payment via UPI, cards and netbanking saves chasing. Add an optional GSTIN field for companies sponsoring employees so invoices come out right. See <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>. Send joining instructions automatically, and hide or mark past workshops so the calendar never looks abandoned.</p>
+
+<h2>Getting found by HR and L&amp;D buyers</h2>
+<ul>
+  <li>Target specific searches on programme pages: "{topic} training for managers", "corporate {skill} training in {city}"</li>
+  <li>Create city pages only where you genuinely deliver and have something useful to say; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages done right</a></li>
+  <li>Keep your Google Business Profile complete if clients visit your office or training centre</li>
+  <li>Publish articles that answer L&amp;D questions: running a training needs analysis, virtual vs in-person training, measuring training impact</li>
+  <li>Share those articles on LinkedIn, where many HR buyers spend time, with your website as the destination</li>
+  <li>Keep the site fast, and compress brochure PDFs so they open quickly on office laptops and phones</li>
+</ul>
+
+<p>A corporate training website works when an L&amp;D manager can find the right programme, trust the trainer and request a proposal in minutes. If you need one built or improved, see <a href="/website-for-lawyers-and-consultants/">websites for consultants and professional firms</a>, or <a href="/landing-page-design/">landing page design</a> for a single programme campaign.</p>
+`,
+  },
+  {
+    slug: 'website-for-software-training-institutes',
+    seoTitle: 'Websites for Software and IT Training Institutes',
+    title: 'Websites for Software Training Institutes: Courses, Batches and Demo Classes',
+    description: 'How software and IT training institutes can present courses and batches, make honest placement claims and turn website visitors into demo class bookings.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['website-for-schools-and-coaching', 'landing-page-design'],
+    body: `
+<p>Someone looking for a Python, full stack, data analytics or software testing course usually compares several institutes before calling any of them. They open websites from a search like "data analytics course in Pune" or from an Instagram ad, and within a minute they decide whether you look current, credible and honest. Most of them are on a phone.</p>
+
+<p>This guide is for institutes that teach software and IT skills to students and working professionals. For school tuition and competitive exam coaching, see <a href="/blog/school-coaching-website-what-parents-look-for/">school and coaching institute websites</a>.</p>
+
+<h2>Who is looking, and what they want to know</h2>
+<ul>
+  <li><strong>College students and freshers:</strong> what they will learn, how long it takes, whether they will build real projects and what help they get with jobs</li>
+  <li><strong>Working professionals:</strong> evening and weekend batches, online options and whether the course fits a career switch or an upskilling goal</li>
+  <li><strong>Parents:</strong> often paying for a fresher's course, they check the address, reviews and whether the institute looks established</li>
+  <li><strong>Companies:</strong> some institutes also run batches for corporate teams, which needs its own page and enquiry form</li>
+</ul>
+<p>The common thread is doubt. Many learners have heard stories of outdated syllabuses and inflated placement promises, so your website has to answer questions plainly.</p>
+
+<h2>Course pages that answer real questions</h2>
+<p>Give every course its own page. A single "Courses" page with a list of names doesn't rank and doesn't convince anyone. Each course page should cover:</p>
+<table>
+  <thead>
+    <tr><th>Section</th><th>What learners check</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Who it's for</td><td>Prerequisites, and whether a non-IT graduate can join</td></tr>
+    <tr><td>Syllabus by module</td><td>Tools and technologies covered, and whether they are current</td></tr>
+    <tr><td>Duration and format</td><td>Total weeks, hours per week, classroom, live online or hybrid</td></tr>
+    <tr><td>Projects</td><td>What they will actually build and can show employers</td></tr>
+    <tr><td>Certificate</td><td>Whether it's your institute's certificate or preparation for a vendor exam</td></tr>
+    <tr><td>Fees</td><td>The fee or what affects it, what's included and any instalment option</td></tr>
+    <tr><td>Trainer</td><td>Who teaches this course and their industry background</td></tr>
+  </tbody>
+</table>
+<p>Be precise about certification. Your own course completion certificate is fine, but don't imply it is an official vendor certification. If you are an authorised training partner of a technology company, say so only while the partnership is current. Add a downloadable syllabus PDF, a short FAQ and a "Book a free demo class" button on every course page.</p>
+
+<h2>Batch calendar and timings</h2>
+<p>"When does the next batch start?" is one of the most common questions institutes get on WhatsApp. Answer it on the website:</p>
+<ul>
+  <li>Upcoming start dates for each course, with weekday or weekend, morning or evening, and classroom or online</li>
+  <li>Seats remaining, but only if you genuinely track them</li>
+  <li>Separate branches listed clearly if you have more than one centre</li>
+  <li>Past batches removed automatically, so the calendar never looks abandoned</li>
+</ul>
+<p>Build the calendar so your counsellors can add a batch in a minute without calling a developer. Avoid fake countdown timers and permanent "last 2 seats" banners. Students notice when the deadline resets.</p>
+
+<h2>Placement claims: specific and honest</h2>
+<p>This is where many training websites lose credibility. Instead of big promises, describe exactly what your placement support includes:</p>
+<ul>
+  <li>Resume and LinkedIn profile reviews</li>
+  <li>Mock technical and HR interviews</li>
+  <li>Interview referrals or a job opportunities board, if you have them</li>
+  <li>How long support continues after the course ends</li>
+</ul>
+<p>Show placed students only with their written consent, with the course and batch they studied in. Don't present one high salary package as typical, don't show company logos in a way that implies a hiring partnership you don't have, and avoid words like "guaranteed placement" unless you truly guarantee it in writing. India's consumer protection regulator has issued guidelines on misleading claims in coaching advertisements, so check the current rules and ask your lawyer how they apply to your institute.</p>
+
+<h2>Demo class booking that people actually attend</h2>
+<p>A free demo class is often the step between interest and enrolment. Make it easy to book:</p>
+<ol>
+  <li>A short form: name, phone, course of interest, classroom or online, and preferred slot</li>
+  <li>A choice of upcoming demo slots rather than "we'll call you"</li>
+  <li>An automatic confirmation on WhatsApp or email, with the address or online joining link</li>
+  <li>A reminder a day before and an hour before</li>
+  <li>A thank-you page explaining what the demo covers and how long it lasts</li>
+</ol>
+<p>Reminders make a real difference to attendance; see <a href="/blog/online-appointment-booking-website/">online appointment booking and reminders</a>. Keep a WhatsApp button for quick questions, and let people download the syllabus without forcing them to fill in a form first.</p>
+
+<h2>Trainers, projects and reviews</h2>
+<ul>
+  <li><strong>Trainer profiles:</strong> real photos, industry experience, technologies they work with and how long they have been teaching</li>
+  <li><strong>Student projects:</strong> short write-ups of capstone projects, shared with the student's permission</li>
+  <li><strong>Reviews:</strong> Google reviews and short video testimonials, recorded with consent</li>
+  <li><strong>Classroom and lab photos:</strong> real ones, not stock images of people pointing at screens</li>
+</ul>
+
+<h2>Getting found and running ads</h2>
+<ul>
+  <li>Target searches like "{course} course in {city}", "{course} training institute near me" and "online {course} course with projects"</li>
+  <li>Keep a complete Google Business Profile for each real centre, with photos, timings and reviews</li>
+  <li>Write helpful career content, such as the skills needed for a data analyst role or manual vs automation testing, and link it to the relevant course</li>
+  <li>Send ad traffic to a dedicated course landing page, not your homepage; see <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a></li>
+  <li>Keep pages light: compress images and syllabus PDFs, and load demo videos only when someone taps play. See <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</li>
+</ul>
+
+<p>A training institute website works when a learner can see what they will learn, when the next batch starts and what help they will really get, then book a demo in a minute. If you want one built or improved, see <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a>, or <a href="/landing-page-design/">landing page design</a> for course ad campaigns.</p>
+`,
+  },
+  {
+    slug: 'website-for-ielts-spoken-english-institutes',
+    title: 'Websites for IELTS, PTE and Spoken English Institutes',
+    description: 'What students look for on an IELTS, PTE or spoken English institute website: course pages, batch timings, mock tests, online classes and honest results.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['website-for-schools-and-coaching', 'wordpress-seo-services'],
+    body: `
+<p>Students preparing for IELTS or PTE usually have a deadline: a university intake, a job application or a visa plan. Spoken English learners have a different goal, such as an interview, a new job or simply confidence. Both groups search for "IELTS coaching near me" or "spoken English classes in {area}", open a few websites and shortlist the institutes that look clear and trustworthy.</p>
+
+<p>This guide is for institutes that teach English and prepare students for English tests. If your main work is university admissions and visa applications, see <a href="/blog/website-for-overseas-education-consultants/">websites for overseas education consultants</a>.</p>
+
+<h2>Two audiences, two sets of questions</h2>
+<ul>
+  <li><strong>Test preparation students:</strong> which test and version they need, their target band or score, their planned test date, how much time they have and which module they find hardest</li>
+  <li><strong>Spoken English learners:</strong> their current level, whether beginners are welcome, batch size, whether the trainer can explain in Hindi or a regional language at first, and how much speaking practice they will actually get</li>
+  <li><strong>Parents:</strong> for school students and young learners, they want to know about safety, timings and who teaches</li>
+</ul>
+<p>Keep these journeys separate in your menu so a nervous beginner never lands on a page full of test jargon.</p>
+
+<h2>Course pages for each test and level</h2>
+<p>Create a page for each course you run, for example IELTS Academic, IELTS General Training, PTE Academic, spoken English for beginners, interview and workplace English, and one-to-one coaching. Each page should include:</p>
+<ul>
+  <li>Who the course is for and the starting level expected</li>
+  <li>Duration, hours per week and batch size</li>
+  <li>What's included: study material, sectional and full mock tests, speaking practice sessions and corrected writing tasks</li>
+  <li>Classroom, live online or both</li>
+  <li>Fees, or what affects them, and how to pay</li>
+  <li>A button to book a free level check or demo class</li>
+</ul>
+<p>Be careful with official names. IELTS and PTE are run by their official test owners, and generally their names and logos are trademarks. Don't use official logos or call yourself "official" or "authorised" unless you have a current agreement that allows it. Test formats and rules change, so date your exam explainers and tell students to confirm details on the official test website before booking.</p>
+
+<h2>Batch timings and online classes</h2>
+<p>Timings often decide the enquiry, especially for college students and working learners. Show a clear timetable:</p>
+<table>
+  <thead>
+    <tr><th>Batch</th><th>What to show</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Weekday morning and evening</td><td>Days, times and next start date</td></tr>
+    <tr><td>Weekend</td><td>Saturday and Sunday timings, and total duration</td></tr>
+    <tr><td>Fast-track</td><td>Who it suits, such as students with a test date soon</td></tr>
+    <tr><td>Live online</td><td>Timings in IST, and other time zones if you teach learners abroad</td></tr>
+  </tbody>
+</table>
+<p>For online classes, explain how they work: the video platform you use, whether sessions are recorded, how speaking practice happens online and how students submit writing for feedback. Let staff update the timetable themselves, so old batches never linger.</p>
+
+<h2>Mock tests and free level checks</h2>
+<p>A mock test or level check is one of the strongest enquiry tools an English institute has, because it gives students something useful straight away. Offer:</p>
+<ul>
+  <li>A bookable full or sectional mock test, at your centre or online</li>
+  <li>A short online reading or listening practice quiz on the website</li>
+  <li>A speaking assessment slot with a trainer for spoken English learners</li>
+</ul>
+<p>The booking form only needs name, phone, test type, target score and planned test date. Send confirmations and reminders on WhatsApp; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>. Be clear that mock scores are an estimate from your trainers, not a prediction of the real result.</p>
+
+<h2>Trainers and teaching style</h2>
+<p>Students want to know who will correct their essays and listen to their speaking. Add trainer profiles with genuine qualifications, years of teaching and the languages they speak. Short videos with speaking tips or a common grammar mistake show your teaching style better than any claim. If you teach with a structured method, such as regular speaking clubs or one-to-one feedback sessions, describe it plainly.</p>
+
+<h2>Honest results and reviews</h2>
+<ul>
+  <li>Share band scores and results only with the student's written consent</li>
+  <li>Don't publish test report forms with candidate numbers, dates of birth or other personal details visible</li>
+  <li>Don't present a few top scores as typical, and add context such as starting level and weeks of preparation where the student agrees</li>
+  <li>Never guarantee a band score, a visa or a job; consumer protection rules in India generally frown on misleading coaching claims, so check the current guidelines</li>
+  <li>Ask satisfied students for Google reviews; see <a href="/blog/get-more-google-reviews/">getting more Google reviews ethically</a></li>
+</ul>
+
+<h2>Getting found in local and online search</h2>
+<ul>
+  <li>Target specific searches: "IELTS coaching in {city}", "PTE classes near me", "spoken English classes in {area}" and "online IELTS classes"</li>
+  <li>Keep a complete Google Business Profile for each centre, with timings, photos and reviews</li>
+  <li>Write helpful articles, such as IELTS Academic vs General Training or how to prepare for the speaking test, and keep them updated</li>
+  <li>Keep pages fast on mobile, and compress practice audio and PDF files</li>
+</ul>
+
+<p>An English institute website works when a student can find the right course, see a batch that fits their day and book a free level check in minutes. For a website built around admissions, see <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a>, and for search visibility see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
 ];
