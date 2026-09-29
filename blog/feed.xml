@@ -2547,5 +2547,26 @@
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
     <description>When a WooCommerce multi-vendor marketplace makes sense, how plugins work, commissions and payouts, GST and legal basics, vendor onboarding and operations.</description>
   </item>
+  <item>
+    <title>Lazy Loading Explained: Images, Videos and Iframes in WordPress (and When Not to Use It)</title>
+    <link>https://samverse.space/blog/lazy-loading-explained/</link>
+    <guid>https://samverse.space/blog/lazy-loading-explained/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How lazy loading works for images, iframes and videos in WordPress, what WordPress does by default, and why your hero or LCP image should never be lazy-loaded.</description>
+  </item>
+  <item>
+    <title>Web Fonts and Website Speed: How to Load Fonts Without Slowing Your Site</title>
+    <link>https://samverse.space/blog/web-fonts-performance/</link>
+    <guid>https://samverse.space/blog/web-fonts-performance/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How web fonts slow pages and cause layout shift, and how to load them efficiently: fewer weights, self-hosting, WOFF2, font-display and preloading key fonts.</description>
+  </item>
+  <item>
+    <title>Third-Party Scripts: How Chat Widgets, Trackers and Embeds Slow Your Website</title>
+    <link>https://samverse.space/blog/third-party-scripts-slow-website/</link>
+    <guid>https://samverse.space/blog/third-party-scripts-slow-website/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How chat widgets, tracking pixels, embeds and ad scripts slow your website, and how to audit them, remove what you don't need and delay the rest safely.</description>
+  </item>
 </channel>
 </rss>

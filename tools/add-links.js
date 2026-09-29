@@ -419,6 +419,10 @@ const LINKS = [
   ['woocommerce-seo-guide', '<h2>6. Handle duplicate and thin pages</h2>', '<p>Those ratings should come from genuine customer reviews shown on the page; see <a href="/blog/woocommerce-product-reviews/">how to collect and display WooCommerce product reviews</a>.</p>\n\n'],
   ['woocommerce-store-launch-checklist', '<h2>Speed, mobile and SEO</h2>', '<p>For branding, content and inbox delivery in detail, see <a href="/blog/customize-woocommerce-emails/">how to customise WooCommerce order emails</a>.</p>\n\n'],
   ['own-website-vs-marketplaces', '<h2>Choosing a platform for your store</h2>', '<p>Thinking of running your own marketplace, with other sellers listing on your site? See <a href="/blog/woocommerce-multi-vendor-marketplace/">building a multi-vendor marketplace with WooCommerce</a>.</p>\n\n'],
+  // Agent 24
+  ['image-optimization-wordpress', '<h2>5. Set image dimensions</h2>', '<p>Lazy loading applies to videos and embeds too; see <a href="/blog/lazy-loading-explained/">lazy loading explained</a> for what to lazy-load and what to leave alone.</p>\n\n'],
+  ['choose-website-colours-fonts', '<h2>Apply them as global styles</h2>', '<p>For the practical side, including weights, self-hosting, font-display and preloading, see <a href="/blog/web-fonts-performance/">how to load web fonts without slowing your site</a>.</p>\n\n'],
+  ['website-chatbot-worth-it', '<h2>Answer questions on the page first</h2>', '<p>Chat widgets are only one kind of external code; see <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a> to audit trackers, embeds and the rest.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

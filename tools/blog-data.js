@@ -3297,6 +3297,8 @@ module.exports = [
 <h2>4. Lazy load, but not the hero image</h2>
 <p>Lazy loading delays images until they're about to scroll into view, which speeds up initial loading. But the main image at the top of the page should load immediately. Lazy-loading it delays your Largest Contentful Paint. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
 
+<p>Lazy loading applies to videos and embeds too; see <a href="/blog/lazy-loading-explained/">lazy loading explained</a> for what to lazy-load and what to leave alone.</p>
+
 <h2>5. Set image dimensions</h2>
 <p>Images should have width and height set so the browser reserves space for them. This prevents layout shifts (CLS) where text jumps as images load.</p>
 
@@ -11337,6 +11339,8 @@ module.exports = [
 <h2>Performance</h2>
 <p>Web fonts should load efficiently (only needed weights, with a fallback shown while loading) so they don't slow pages or cause text to jump.</p>
 
+<p>For the practical side, including weights, self-hosting, font-display and preloading, see <a href="/blog/web-fonts-performance/">how to load web fonts without slowing your site</a>.</p>
+
 <h2>Apply them as global styles</h2>
 <p>Set colours and typography as global styles in your theme or builder, so the whole site stays consistent and changes happen in one place; see <a href="/blog/figma-to-wordpress-designer-guide/">design handoff tips</a>.</p>
 
@@ -12950,6 +12954,8 @@ module.exports = [
   <li>Load the widget only when the visitor interacts, not on page load</li>
   <li>Don't auto-open it on every page</li>
 </ul>
+
+<p>Chat widgets are only one kind of external code; see <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a> to audit trackers, embeds and the rest.</p>
 
 <h2>Answer questions on the page first</h2>
 <p>Often the best "chatbot" is a clear page. Good FAQs, pricing guidance and service details answer most questions without any widget; see <a href="/blog/faq-page-seo/">FAQ pages</a>.</p>
@@ -22920,6 +22926,230 @@ Template: astra
 <p>Launch with one category, one region or a small group of trusted vendors. Prove that buyers come and that vendors fulfil orders reliably, then expand. Cost depends on the plugin and plan, custom features, design, payment and shipping integrations, and ongoing maintenance; the <a href="/website-cost-calculator/">website cost calculator</a> gives a starting point.</p>
 
 <p>Planning a marketplace? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/website-for-startups/">websites for startups</a> if you're launching a new venture.</p>
+`,
+  },
+  {
+    slug: 'lazy-loading-explained',
+    seoTitle: 'Lazy Loading in WordPress: What to Lazy-Load and What Not To',
+    title: 'Lazy Loading Explained: Images, Videos and Iframes in WordPress (and When Not to Use It)',
+    description: 'How lazy loading works for images, iframes and videos in WordPress, what WordPress does by default, and why your hero or LCP image should never be lazy-loaded.',
+    date: '2026-09-28',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-website-development'],
+    body: `
+<p>Lazy loading is one of the simplest speed techniques there is: don't load things until the visitor is about to see them. Done well, it makes long pages feel much lighter, especially on phones and mobile data. Done badly, it makes the most important part of your page appear later. Here's how it works in WordPress, what to lazy-load, and the one mistake that undoes the benefit.</p>
+
+<h2>What lazy loading actually does</h2>
+<p>Without lazy loading, the browser tries to download every image, map and video embed on a page as soon as it opens, even the ones at the very bottom that most visitors never scroll to. With lazy loading, those items wait. The browser loads what's on screen first and fetches the rest a little before the visitor scrolls to it.</p>
+<p>The result:</p>
+<ul>
+  <li>Less data downloaded up front, which matters on slower connections</li>
+  <li>The browser can focus on what the visitor sees first</li>
+  <li>Visitors who leave early never download the rest of the page</li>
+</ul>
+<p>Modern browsers support this natively. A single attribute, <code>loading="lazy"</code>, on an image or iframe tells the browser to wait. No extra JavaScript is needed.</p>
+
+<h2>What WordPress already does for you</h2>
+<p>WordPress has added native lazy loading automatically for several years: images in your content get the <code>loading="lazy"</code> attribute, and so do iframes such as YouTube and Google Maps embeds. Newer versions also try to skip lazy loading on the first large image and mark it as high priority, so the browser fetches it early.</p>
+<p>That guesswork isn't perfect, though. Page builders, sliders, header images set by the theme and CSS background images can all confuse it. And performance plugins, themes and builders often add their own lazy-loading settings on top, so the actual behaviour on your site depends on your whole setup. It's worth checking rather than assuming.</p>
+
+<h2>What to lazy-load</h2>
+<table>
+  <thead><tr><th>Item</th><th>Lazy-load?</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Images further down the page</td><td>Yes</td><td>Galleries, team photos, portfolio grids, blog images below the first screen</td></tr>
+    <tr><td>YouTube and Vimeo embeds</td><td>Yes</td><td>Even better: show a preview image and load the player only when tapped</td></tr>
+    <tr><td>Google Maps embeds</td><td>Yes</td><td>Maps are heavy; a static preview that loads on tap is lighter still</td></tr>
+    <tr><td>Social feeds, review widgets, embedded forms</td><td>Yes</td><td>Usually further down the page, and often among the heaviest items on it</td></tr>
+    <tr><td>Self-hosted videos</td><td>Load on demand</td><td>Use a poster image and avoid auto-playing background videos</td></tr>
+    <tr><td>Hero image, logo, first slide</td><td>No</td><td>These should load immediately</td></tr>
+  </tbody>
+</table>
+<p>For videos in particular, the "click to play" approach saves far more than lazy loading alone, because the video player's scripts never load for visitors who don't press play. See <a href="/blog/video-on-business-website/">video on your business website</a> for when video is worth it at all.</p>
+
+<h2>When NOT to lazy-load</h2>
+<p>This is the part most sites get wrong. Anything visible on the first screen, before the visitor scrolls, should load straight away. That's called "above the fold" content.</p>
+<p>The most important case is your <strong>LCP image</strong>. Largest Contentful Paint measures how quickly the biggest element on the first screen appears, and on most business websites that's the hero image, a banner or the first product photo. If that image is lazy-loaded, the browser deliberately waits before fetching it, and your LCP gets worse. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> for why LCP matters.</p>
+<p>Don't lazy-load:</p>
+<ul>
+  <li>The hero or banner image at the top of the page</li>
+  <li>The first slide of a slider (later slides can wait)</li>
+  <li>The featured image at the top of a blog post</li>
+  <li>The main product photo on a product page</li>
+  <li>Your logo and anything in the header</li>
+</ul>
+<p>Remember that the fold is different on phones. An image below the first screen on a laptop may be the first thing a mobile visitor sees, and most of your visitors are probably on mobile. Check both.</p>
+
+<h2>Common lazy-loading mistakes</h2>
+<ul>
+  <li><strong>Lazy loading everything.</strong> A plugin set to lazy-load all images, with no exclusions, catches the hero image too. Most performance plugins let you exclude specific images by file name or CSS class.</li>
+  <li><strong>Hero images as CSS backgrounds.</strong> Browsers discover background images late, and some builders offer to lazy-load them as well. For the main hero, a normal image element that loads early is usually faster.</li>
+  <li><strong>Doubling up.</strong> WordPress, your theme, your page builder and a caching plugin may all try to lazy-load. Script-based lazy loading layered on top of the native version adds code and can delay images further. Pick one method.</li>
+  <li><strong>Missing image dimensions.</strong> If images don't have width and height set, content jumps as they appear, hurting your layout stability (CLS).</li>
+  <li><strong>Hiding real content.</strong> Lazy loading is for images and embeds. Text and links that only appear after a scroll or a click may be missed by visitors and search engines.</li>
+</ul>
+
+<h2>How to check your site</h2>
+<ol>
+  <li>Run your homepage and a key inner page through <strong>PageSpeed Insights</strong> on mobile. It identifies your LCP element and will usually warn you if that image was lazy-loaded. See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a> for reading the report.</li>
+  <li>On a computer, right-click your hero image, choose "Inspect" and look at the image tag. If you see <code>loading="lazy"</code>, it needs excluding.</li>
+  <li>Scroll a long page on your phone using mobile data. Images should appear as you reach them, not leave blank gaps for seconds.</li>
+</ol>
+
+<h2>Does lazy loading affect SEO?</h2>
+<p>Used properly, no. Google's own guidance treats native browser lazy loading as fine. Problems come from older script-based methods that only load images when a scroll event fires, because Google's crawler doesn't scroll like a person does. If you rely on a plugin's lazy loading, check an important page with the URL Inspection tool in Search Console and confirm the images appear in the rendered page. And keep images properly optimised in the first place; lazy loading is no substitute for <a href="/blog/image-optimization-wordpress/">compressing and resizing images</a>.</p>
+
+<p>Not sure whether lazy loading is helping or hurting your site? A <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> audit checks your LCP element, lazy-loading settings and everything else that slows your pages down.</p>
+`,
+  },
+  {
+    slug: 'web-fonts-performance',
+    seoTitle: 'Web Fonts and Website Speed: How to Load Fonts Efficiently',
+    title: 'Web Fonts and Website Speed: How to Load Fonts Without Slowing Your Site',
+    description: 'How web fonts slow pages and cause layout shift, and how to load them efficiently: fewer weights, self-hosting, WOFF2, font-display and preloading key fonts.',
+    date: '2026-09-28',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'elementor-developer'],
+    body: `
+<p>Good typography makes a website look professional. But every custom font is a file the visitor has to download before your text looks right, and a careless font setup can delay your headline, make text flash or jump, and quietly add weight to every page. The good news: you rarely have to give up your brand fonts. You just need to load them sensibly.</p>
+
+<h2>How web fonts slow a page down</h2>
+<p>Each font family, weight and style is usually a separate file. Regular, medium, semi-bold and bold, plus italics of each, can easily mean eight font files for a single family. Add a second family for headings and an icon font, and the count keeps climbing.</p>
+<p>Fonts are also discovered late. The browser only finds out it needs a font after it has downloaded and read your CSS and worked out which text uses it. If the fonts come from another domain, such as a font service, it also has to open a connection to that server first. All of that happens while your visitor is waiting for the headline to appear.</p>
+
+<h2>Invisible text, flashes and layout shift</h2>
+<p>While a font downloads, browsers do one of two things:</p>
+<ul>
+  <li><strong>Hide the text</strong> for a short time, leaving blank spaces where your headline should be</li>
+  <li><strong>Show a fallback font</strong> (such as Arial) and swap in your font when it arrives</li>
+</ul>
+<p>The swap can cause a visible jump. If the fallback font is wider or taller than your brand font, lines rewrap, buttons move and the whole page shifts. That movement counts against your Cumulative Layout Shift (CLS) score, and slow fonts can also delay Largest Contentful Paint when your main heading is the largest element on the screen. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>Use fewer families, weights and styles</h2>
+<p>This is the biggest and easiest win. For most business websites:</p>
+<ul>
+  <li><strong>One or two families:</strong> one for headings and one for body text, or one for both</li>
+  <li><strong>Two or three weights:</strong> for example regular for body text and bold for headings and buttons</li>
+  <li><strong>No italics</strong> unless your design genuinely uses them</li>
+</ul>
+<p>Check your theme or builder's typography settings. It's common to find a weight selected for one button on one page, loading on every page of the site. <strong>Variable fonts</strong>, where one file covers a range of weights, can help if you use several weights, but may be larger than you need if you only use one or two. For choosing fonts in the first place, see <a href="/blog/choose-website-colours-fonts/">how to choose website colours and fonts</a>.</p>
+<p>Also consider a <strong>system font stack</strong> for body text. It uses fonts already installed on the visitor's device, so there's nothing to download at all. Many well-designed sites pair one brand font for headings with system fonts for everything else.</p>
+
+<h2>Self-host your fonts and use WOFF2</h2>
+<p>Loading fonts from a third-party service is convenient, but it means extra connections to other servers before any text is styled. Hosting the font files on your own site (or your CDN) removes that step and gives you control over caching.</p>
+<ul>
+  <li><strong>WOFF2</strong> is the modern, compressed font format supported by current browsers. Use it rather than older formats.</li>
+  <li><strong>Subsets</strong> keep files small by including only the characters you need. If your site is in Hindi or another Indian language, you need the right script, and those fonts are often larger, so choose weights even more carefully. See <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</li>
+  <li><strong>In WordPress,</strong> Elementor has a setting to load Google Fonts locally, block themes include a Font Library that installs fonts into your own site, and there are plugins that download and host fonts for you. Option names change between versions, so check your current setup.</li>
+</ul>
+<p>Self-hosting has a privacy benefit too: visitors' browsers don't contact a third-party font server just to show your text, which matters if you have visitors from regions with strict privacy laws.</p>
+
+<h2>Use font-display to keep text visible</h2>
+<p>The <code>font-display</code> setting tells the browser what to do while a font loads:</p>
+<ul>
+  <li><strong>swap</strong> shows the fallback immediately and swaps in your font when ready. Text is never invisible, which is why it's the most common choice.</li>
+  <li><strong>optional</strong> uses your font only if it arrives almost instantly, otherwise the fallback stays for that page view. It avoids layout shift, at the cost of some visitors seeing the fallback.</li>
+</ul>
+<p>To make the swap less jarring, choose a fallback font with similar proportions to your brand font. Modern CSS can also fine-tune the fallback's size so the swap barely moves anything, which a developer can set up for your main fonts.</p>
+
+<h2>Preload only the fonts that matter</h2>
+<p>A preload hint tells the browser to fetch a file early instead of waiting to discover it. For the one or two fonts used in your headline and body text on the first screen, this can make text appear sooner. A typical preload looks like <code>&lt;link rel=&quot;preload&quot; href=&quot;/fonts/heading.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</code>.</p>
+<p>Don't preload everything. Every preloaded file competes for bandwidth with your hero image and CSS, so preloading five fonts can make the page slower, not faster. Preload the fonts visible above the fold and let the rest load normally.</p>
+
+<h2>Icon fonts and duplicate font loading</h2>
+<p>Two more hidden costs are common on WordPress sites:</p>
+<ul>
+  <li><strong>Icon fonts:</strong> loading an entire icon library to show a phone, email and WhatsApp icon is wasteful. Inline SVG icons are lighter, and some builders, including Elementor, offer an option to render icons as SVG.</li>
+  <li><strong>Duplicates:</strong> the theme loads fonts, the page builder loads them again, and a slider or form plugin adds its own. Set fonts in one place and turn off font loading everywhere else. See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> for other builder-specific fixes.</li>
+</ul>
+<p>To see what your site actually loads, open Chrome DevTools, go to the Network tab, filter by "Font" and reload the page. Every file listed is something your visitors download. PageSpeed Insights will also flag font-related issues, such as text not staying visible while fonts load.</p>
+
+<p>Want your brand fonts to look right without slowing the site? I can audit and clean up font loading as part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or rebuild typography settings properly on an <a href="/elementor-developer/">Elementor website</a>.</p>
+`,
+  },
+  {
+    slug: 'third-party-scripts-slow-website',
+    seoTitle: 'Third-Party Scripts Slowing Your Website? Audit and Fix Them',
+    title: 'Third-Party Scripts: How Chat Widgets, Trackers and Embeds Slow Your Website',
+    description: 'How chat widgets, tracking pixels, embeds and ad scripts slow your website, and how to audit them, remove what you don\'t need and delay the rest safely.',
+    date: '2026-09-28',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'landing-page-design'],
+    body: `
+<p>You can compress every image and install the best caching plugin, and still have a slow website. Often the culprit isn't your site's own code at all, but the scripts it loads from other companies: chat widgets, tracking pixels, embedded videos, review badges and ad tags. Each one was added for a good reason. Together, they can make up a large share of the code on your pages. Here's how to find them, measure their cost and decide what stays.</p>
+
+<h2>What counts as a third-party script</h2>
+<p>A third-party script is code loaded from someone else's server rather than your own. On a typical business website that includes:</p>
+<ul>
+  <li><strong>Analytics and tag managers:</strong> Google Analytics, Google Tag Manager, heatmap and session-recording tools</li>
+  <li><strong>Ad and remarketing pixels:</strong> Meta, Google Ads, LinkedIn and others</li>
+  <li><strong>Chat and support widgets:</strong> live chat, chatbots and floating WhatsApp widgets</li>
+  <li><strong>Embeds:</strong> YouTube videos, Google Maps, Instagram feeds, booking and calendar widgets</li>
+  <li><strong>Trust and marketing tools:</strong> review widgets, pop-up and notification tools, cookie banners</li>
+  <li><strong>Ads:</strong> display ad networks on blogs and content sites</li>
+  <li><strong>Spam protection:</strong> CAPTCHA scripts, sometimes loaded on every page instead of only where forms are</li>
+</ul>
+
+<h2>How they slow your site down</h2>
+<ul>
+  <li><strong>Extra connections:</strong> every new domain means the browser has to look it up and connect before downloading anything</li>
+  <li><strong>Heavy JavaScript:</strong> many widgets download far more code than their small bubble or badge suggests, and budget phones take longer to process it</li>
+  <li><strong>Slower taps and clicks:</strong> while a phone is busy running third-party code, it can't respond to the visitor, which hurts Interaction to Next Paint (INP)</li>
+  <li><strong>Layout jumps:</strong> ads, banners and embeds that appear late push content around, hurting CLS</li>
+  <li><strong>Chains:</strong> one tag often loads several more scripts, which load more again</li>
+  <li><strong>No control:</strong> the provider can change or enlarge its script at any time, and your site slows down without you changing anything</li>
+</ul>
+<p>For what INP and CLS mean, see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>Step 1: List everything your site loads</h2>
+<p>Scripts get added in many places over the years, so check them all:</p>
+<ol>
+  <li><strong>Plugins:</strong> chat, pop-up, analytics, social feed and review plugins</li>
+  <li><strong>Header and footer code:</strong> your theme options, page builder settings or a "header scripts" plugin, where pixels are often pasted</li>
+  <li><strong>Google Tag Manager:</strong> open the container and list every tag, including old campaign tags nobody removed</li>
+  <li><strong>Individual pages:</strong> embeds added to single pages or landing pages</li>
+</ol>
+<p>For each item, write down who added it, what it's for and whether anyone still uses it. It's common to find the same analytics tag installed twice (once by a plugin and once in Tag Manager), pixels from an agency you stopped working with, or a heatmap tool whose trial ended long ago.</p>
+
+<h2>Step 2: Measure what each one costs</h2>
+<ul>
+  <li><strong>PageSpeed Insights:</strong> run your key pages on mobile and look for the section on third-party code, which lists each provider and how much main-thread time it uses. See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</li>
+  <li><strong>Chrome DevTools:</strong> the Network tab shows every request and which domain it came from. Its request blocking feature lets you block one script's domain, reload, and see how the page behaves without it.</li>
+  <li><strong>Test before and after:</strong> whenever you add a new tool, run the same page through PageSpeed Insights before and after, so you know what it costs.</li>
+</ul>
+
+<h2>Step 3: Remove, restrict or delay</h2>
+<table>
+  <thead><tr><th>Script</th><th>Common problem</th><th>Better approach</th></tr></thead>
+  <tbody>
+    <tr><td>Old pixels and trial tools</td><td>Loading for no reason</td><td>Remove them</td></tr>
+    <tr><td>Chat widget</td><td>Heavy code on every page, before anyone chats</td><td>Load it only when the visitor taps a chat button, or after they interact with the page</td></tr>
+    <tr><td>WhatsApp widget plugin</td><td>Scripts for a feature a simple link can do</td><td>A plain click-to-chat link button needs no script; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a></td></tr>
+    <tr><td>YouTube and map embeds</td><td>Players and map code load on page open</td><td>Preview image that loads the real embed on tap, and only on pages that need it</td></tr>
+    <tr><td>Social feeds and review widgets</td><td>Heavy scripts for a small section</td><td>Show a few curated items directly on the page, or load the widget lower down and lazily</td></tr>
+    <tr><td>CAPTCHA</td><td>Loaded site-wide</td><td>Load only on pages with forms, if your form plugin allows it</td></tr>
+  </tbody>
+</table>
+<p>Performance plugins such as WP Rocket, LiteSpeed Cache and Perfmatters include options to defer or delay JavaScript until the visitor scrolls, taps or moves the mouse. This can make a big difference, but test carefully: delayed scripts sometimes break sliders, menus or forms, so check every important feature afterwards. Features change between versions, so check what your current plugin offers.</p>
+
+<h2>Don't break your tracking</h2>
+<p>Delaying analytics and ad pixels speeds up the page, but it has a trade-off. Visitors who leave within a second or two may not be counted, and ad platforms may see fewer conversions. After any change:</p>
+<ul>
+  <li>Submit a test enquiry and confirm it still shows up as a conversion in Google Analytics and your ad accounts</li>
+  <li>Compare visitor numbers for a week or two before and after</li>
+  <li>Keep conversion tags reliable, even if you delay less important scripts more aggressively</li>
+</ul>
+<p>Tag Manager helps you organise tags, but it doesn't make them free. A container full of tags still loads all of them.</p>
+
+<h2>Keep it from creeping back</h2>
+<ul>
+  <li>Keep a simple list of every third-party tool on the site, who owns it and why</li>
+  <li>Agree a rule with your team and agencies: new scripts get tested for speed before going live</li>
+  <li>Review the list every few months and remove anything unused</li>
+  <li>Keep ad landing pages especially lean, since paid visitors are the most expensive ones to lose; see <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes</a></li>
+</ul>
+
+<p>If you suspect third-party scripts are dragging your site down, a <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> audit will show exactly what each one costs. Running ads? I also build fast, lean <a href="/landing-page-design/">landing pages</a> that keep tracking intact.</p>
 `,
   },
 ];

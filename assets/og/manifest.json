@@ -400,5 +400,8 @@
  "blog-meta-pixel-conversions-api": "cabbc051b8905d0eb618deece3575b88cc80a6eb",
  "blog-woocommerce-product-reviews": "540c035cbe9bde6cfd83bdd0a28c8d9dd47347f0",
  "blog-customize-woocommerce-emails": "984e1f4354be36ef292562485679cb51a130177e",
- "blog-woocommerce-multi-vendor-marketplace": "3bb577fd492efba7e918b0981d0d5ec852d747c9"
+ "blog-woocommerce-multi-vendor-marketplace": "3bb577fd492efba7e918b0981d0d5ec852d747c9",
+ "blog-lazy-loading-explained": "6a80a87cc2517205b90d9834496b7d1cfbb9bf4f",
+ "blog-web-fonts-performance": "50f885283f0891e401458edfbf874cd6f92e9bee",
+ "blog-third-party-scripts-slow-website": "e15db5dd5c7fa3dc08d09f64d3b8ef918a7e3746"
 }
