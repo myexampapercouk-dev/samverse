@@ -431,6 +431,10 @@ const LINKS = [
   ['core-web-vitals-explained', '<h2>How to improve INP (responsiveness)</h2>', '<p>For a step-by-step walkthrough, including how to find your LCP element and which part of it is slow, see <a href="/blog/fix-lcp-largest-contentful-paint/">how to fix slow Largest Contentful Paint</a>.</p>\n\n'],
   ['image-optimization-wordpress', '<h2>6. Serve responsive sizes</h2>', '<p>Missing dimensions are only one cause of jumping pages; fonts, ads, banners and sticky headers can shift content too. See <a href="/blog/fix-cls-layout-shift/">how to fix Cumulative Layout Shift</a>.</p>\n\n'],
   ['website-speed-indian-mobile-networks', '<h2>Serve it fast</h2>', '<p>Heavy JavaScript mostly shows up as slow taps and clicks, which Google measures as INP; see <a href="/blog/fix-inp-interaction-to-next-paint/">how to improve Interaction to Next Paint</a>.</p>\n\n'],
+  // Agent 25
+  ['monthly-website-maintenance-plan', '<h2>Emergency support</h2>', '<p>Before signing up, see <a href="/blog/choose-wordpress-maintenance-provider/">how to choose a WordPress maintenance provider</a>, including what a useful monthly report looks like.</p>\n\n'],
+  ['wordpress-backup-restore-guide', '<h2>Where to store backups</h2>', '<p>If scheduled backups sometimes don\'t run on time, WordPress\'s built-in scheduler may be the reason; see <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</p>\n\n'],
+  ['fix-wordpress-critical-error', '<h2>Step 4: Fix the cause</h2>', '<p>For memory errors in detail, see <a href="/blog/wordpress-memory-limit-errors/">how to fix "Allowed memory size exhausted" errors</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

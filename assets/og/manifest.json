@@ -409,5 +409,8 @@
  "blog-referral-program-website": "24731832260549bde4b9e798dcceb5b48cb5fb8a",
  "blog-fix-lcp-largest-contentful-paint": "a8a0d98f77556ee4fa7d07d6238b6e17634afd93",
  "blog-fix-cls-layout-shift": "ee343ba53f238cdce8094ae4bebb215c6c687fbe",
- "blog-fix-inp-interaction-to-next-paint": "045873afc99a83653361b8dd64dfb6d22c317798"
+ "blog-fix-inp-interaction-to-next-paint": "045873afc99a83653361b8dd64dfb6d22c317798",
+ "blog-choose-wordpress-maintenance-provider": "588e338d022ea1dce926779d450a8b0d1b113b3c",
+ "blog-wordpress-cron-explained": "96c4ede82f016c209161e635aeec4990a42e4437",
+ "blog-wordpress-memory-limit-errors": "0e99632ad42a848a36bc9876d45cfa740cbba0ff"
 }

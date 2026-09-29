@@ -4202,6 +4202,8 @@ module.exports = [
 </table>
 <p>Always take a backup immediately before updates, redesigns or migrations.</p>
 
+<p>If scheduled backups sometimes don't run on time, WordPress's built-in scheduler may be the reason; see <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</p>
+
 <h2>Where to store backups</h2>
 <ul>
   <li><strong>Off-site:</strong> cloud storage such as Google Drive, Dropbox or Amazon S3, not only on the same server. If the server fails or is hacked, backups stored there can be lost too.</li>
@@ -16373,6 +16375,8 @@ module.exports = [
 <h2>A monthly report</h2>
 <p>A short report showing updates done, backups, uptime, security status, speed and any issues fixed. It shows the work is actually happening.</p>
 
+<p>Before signing up, see <a href="/blog/choose-wordpress-maintenance-provider/">how to choose a WordPress maintenance provider</a>, including what a useful monthly report looks like.</p>
+
 <h2>Emergency support</h2>
 <p>What happens if the site goes down or gets hacked? A good plan includes priority response and, ideally, malware clean-up; see <a href="/blog/remove-malware-wordpress-step-by-step/">malware removal</a>.</p>
 
@@ -16529,6 +16533,8 @@ module.exports = [
   <li>Or enable WordPress debug logging temporarily to write errors to a private log file, and turn it off afterwards</li>
 </ul>
 <p>An error mentioning "Allowed memory size exhausted" points to memory limits; one naming a plugin file points to that plugin.</p>
+
+<p>For memory errors in detail, see <a href="/blog/wordpress-memory-limit-errors/">how to fix "Allowed memory size exhausted" errors</a>.</p>
 
 <h2>Step 4: Fix the cause</h2>
 <ul>
@@ -23684,6 +23690,268 @@ Template: astra
 </ul>
 
 <p>INP problems usually come from several scripts adding up, so fixing them means deciding what each page really needs. My <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service finds the slow interactions and fixes them without breaking features. For Elementor sites that need leaner layouts, see <a href="/elementor-developer/">Elementor development</a>.</p>
+`,
+  },
+  {
+    slug: 'choose-wordpress-maintenance-provider',
+    seoTitle: 'How to Choose a WordPress Maintenance Provider',
+    title: 'How to Choose a WordPress Maintenance Provider: Questions, Reports and Red Flags',
+    description: 'How to compare WordPress maintenance providers: the questions to ask, what a monthly report should show, response times to agree in writing, and red flags.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>Handing your website to a maintenance provider means trusting someone with your admin access, your backups and, when something breaks, your enquiries. Most providers promise the same things: updates, backups, security and support. The real difference shows up in how they do the work and how they behave when something goes wrong. Here's how to compare them before you sign.</p>
+
+<h2>Start with what your site actually needs</h2>
+<p>A five-page brochure site, a busy WooCommerce store and a membership site need very different levels of care. Before you speak to anyone, note down:</p>
+<ul>
+  <li>What the site does for your business: enquiries, bookings, orders or just credibility</li>
+  <li>How often you need content changes such as prices, photos or new pages</li>
+  <li>What would hurt most if it stopped working, and for how long you could live with it</li>
+  <li>Who has access today: an old developer, a marketing agency, your own team</li>
+</ul>
+<p>For the tasks a plan should cover each month, see <a href="/blog/monthly-website-maintenance-plan/">what a monthly WordPress maintenance plan should include</a>. This guide is about choosing the person or company who does them.</p>
+
+<h2>Questions to ask before you sign</h2>
+<ol>
+  <li><strong>How do you test updates?</strong> Look for a backup before every update and a check of key pages afterwards, ideally on a staging copy for bigger updates. "We turn on auto-updates" is not a process.</li>
+  <li><strong>Where are backups stored, and how often are they taken?</strong> They should be off-site, with several copies kept. Ask when they last restored one.</li>
+  <li><strong>What happens if my site is hacked?</strong> Is clean-up included, charged separately or not offered at all?</li>
+  <li><strong>What are your response times?</strong> For emergencies and for routine changes, and whether that means working hours or any time.</li>
+  <li><strong>How many content changes are included?</strong> In hours or tasks, and what happens to unused time.</li>
+  <li><strong>How will you access my site?</strong> A provider should have its own user account, not share yours.</li>
+  <li><strong>Who pays for premium plugin licences, and in whose name are they?</strong></li>
+  <li><strong>Do you take on sites you didn't build?</strong> If yes, ask what the first health check involves.</li>
+  <li><strong>What happens if I leave?</strong> Access, backups and licence details should be handed over without drama.</li>
+  <li><strong>Can I cancel monthly,</strong> or is there a minimum term?</li>
+</ol>
+<p>Vague answers to the first three questions tell you more than any sales page.</p>
+
+<h2>What a monthly report should show</h2>
+<p>A report is how you know the work is actually happening. It doesn't need to be long, but it should be specific.</p>
+<table>
+  <thead><tr><th>Section</th><th>A useful report shows</th><th>Warning sign</th></tr></thead>
+  <tbody>
+    <tr><td>Updates</td><td>Which plugins, themes and core versions were updated</td><td>"All updates done" with no detail</td></tr>
+    <tr><td>Backups</td><td>Dates, where they're stored and the last restore test</td><td>No mention of where backups live</td></tr>
+    <tr><td>Uptime</td><td>Any downtime, how long it lasted and the cause</td><td>A percentage with no explanation of incidents</td></tr>
+    <tr><td>Security</td><td>Scan results and anything that needed action</td><td>Scary numbers of "blocked attacks" with no context</td></tr>
+    <tr><td>Speed</td><td>Key pages tested and changes since last month</td><td>A single score with no pages named</td></tr>
+    <tr><td>Forms and checkout</td><td>Test enquiries or orders sent and received</td><td>Not tested at all</td></tr>
+    <tr><td>Work and next steps</td><td>Issues fixed, changes made and recommendations</td><td>No recommendations, month after month</td></tr>
+  </tbody>
+</table>
+<p>Ask to see a sample report before you sign. Anyone doing the work properly will have one ready.</p>
+
+<h2>Response times: agree them in writing</h2>
+<p>"Quick support" means different things to different people. Agree severity levels like these, with a response time for each:</p>
+<ul>
+  <li><strong>Critical:</strong> site down, hacked, or checkout and payments broken</li>
+  <li><strong>High:</strong> contact form not sending, a key page broken on mobile</li>
+  <li><strong>Routine:</strong> content changes, new photos, price updates</li>
+</ul>
+<p>Then check the details:</p>
+<ul>
+  <li><strong>Response or resolution?</strong> "We'll reply within an hour" is not the same as "we'll fix it within an hour".</li>
+  <li><strong>Working hours and holidays.</strong> Does support pause on Sundays, during Diwali or over long weekends? For overseas businesses, which time zone applies?</li>
+  <li><strong>How to reach them.</strong> WhatsApp, email or a ticket system, and which one counts for emergencies.</li>
+</ul>
+
+<h2>Red flags</h2>
+<ul>
+  <li>Asking for your personal admin login instead of creating their own account; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a></li>
+  <li>Backups kept only on the same server as the website</li>
+  <li>Using nulled (pirated) premium plugins to save on licences</li>
+  <li>Registering your domain or hosting in their own name</li>
+  <li>Long lock-in contracts, or a large annual payment upfront with no trial period</li>
+  <li>"Unlimited" everything at a price that can't cover real work</li>
+  <li>No reports, or reports that never change from month to month</li>
+  <li>Being unable to explain in plain language what they did and why</li>
+</ul>
+<p>Whoever you hire, run through the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> so your domain, hosting and key accounts stay in your name.</p>
+
+<h2>Freelancer, agency or your hosting company?</h2>
+<table>
+  <thead><tr><th>Option</th><th>Strengths</th><th>What to check</th></tr></thead>
+  <tbody>
+    <tr><td>Freelancer</td><td>Direct contact with the person doing the work, who gets to know your site</td><td>Who covers emergencies when they're unavailable</td></tr>
+    <tr><td>Agency</td><td>A bigger team and more formal processes</td><td>Who actually works on your site, and how requests are passed on</td></tr>
+    <tr><td>Hosting company's managed service</td><td>Server-level backups, security and sometimes automatic updates</td><td>Whether fixing plugin conflicts, broken layouts or forms is included; plans vary, so check current details</td></tr>
+  </tbody>
+</table>
+<p>Many businesses combine them: good hosting for the server, and a developer for everything inside WordPress.</p>
+
+<h2>What a good first month looks like</h2>
+<ol>
+  <li>A full backup before anything is touched</li>
+  <li>A health check of plugins, themes, PHP version, user accounts and security</li>
+  <li>A list of problems found, sorted by urgency, with what's included and what would cost extra</li>
+  <li>Uptime monitoring and off-site backups set up and confirmed</li>
+  <li>A first report that gives you a baseline to compare future months against</li>
+</ol>
+<p>If a provider updates everything on day one without a backup or a health check, that's probably how they'll work every month.</p>
+
+<p>For budgeting, see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>. My own plans are month to month, include a monthly report, and start with a health check if I didn't build your site. I'm happy to answer every question above before you decide; see <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-cron-explained',
+    seoTitle: 'WP-Cron Explained: Why Scheduled Tasks Fail in WordPress',
+    title: 'WP-Cron Explained: Why Scheduled Posts, Emails and Backups Fail (and How to Fix It)',
+    description: 'What WP-Cron is, why scheduled posts show "Missed schedule" and emails or backups run late, and how to switch WordPress to a reliable server cron job.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-speed-optimization'],
+    body: `
+<p>You schedule a blog post for 9 am, and at noon it still says "Missed schedule". Your backup plugin claims to run nightly, yet the latest backup is a week old. Reminder emails go out hours late. These problems often share one cause: WP-Cron, the way WordPress runs scheduled tasks. Here's how it works, why it fails and how to fix it properly.</p>
+
+<h2>What WP-Cron is</h2>
+<p>WordPress and many plugins need to do things on a schedule: publish scheduled posts, check for updates, send emails, run backups and clear out old data. On a normal server this is the job of "cron", the operating system's scheduler, which runs tasks at set times.</p>
+<p>WordPress can't assume every host offers that, so it has its own system called WP-Cron. Instead of running at exact times, it checks for due tasks whenever someone loads a page. If something is due, WordPress sends a background request to its own wp-cron.php file to run it.</p>
+<p>That works on most sites most of the time. But it means tasks run when a visit happens, not at the time you set.</p>
+
+<h2>What depends on it</h2>
+<ul>
+  <li><strong>Scheduled posts and pages</strong></li>
+  <li><strong>Backup plugins</strong> that run on a schedule. Backups taken by your hosting company are separate and don't depend on WordPress</li>
+  <li><strong>Timed emails:</strong> newsletters, digests, reminders and follow-ups. If emails send on time but land in spam, that's a different problem; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">email deliverability explained</a></li>
+  <li><strong>WooCommerce tasks</strong> such as scheduled sale prices and background jobs in its Action Scheduler queue</li>
+  <li><strong>Update checks, security scans and log clean-ups</strong></li>
+  <li><strong>Imports and syncs</strong> with a CRM, inventory system or feed</li>
+</ul>
+
+<h2>Why scheduled tasks fail or run late</h2>
+<h3>Low traffic</h3>
+<p>If nobody visits between 1 am and 8 am, nothing triggers WP-Cron, so a 2 am backup waits for the first visitor of the morning. New or small business sites can go hours without a visit, especially at night.</p>
+<h3>Page caching</h3>
+<p>Caching is good for speed, but when a page is served straight from the cache, WordPress may not run fully, so that visit doesn't trigger WP-Cron. A well-cached site with modest traffic can see long gaps between runs. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
+<h3>Blocked loopback requests</h3>
+<p>WP-Cron works by the site sending a request to itself. Firewalls, security plugins, password protection on a staging site, SSL problems and some hosting set-ups can block that request, and then scheduled tasks quietly stop.</p>
+<h3>WP-Cron switched off without a replacement</h3>
+<p>A line in wp-config.php can disable WP-Cron. That's correct when a real server cron job replaces it, but if the line is there and the cron job isn't, nothing scheduled runs at all. This often happens after a migration to a new host.</p>
+<h3>Long or broken tasks</h3>
+<p>A backup or import that runs out of time or memory can fail halfway, and an error in one plugin's task can hold up others. Plugins you removed long ago can also leave events behind.</p>
+
+<h2>How to check what's happening</h2>
+<ul>
+  <li><strong>Site Health:</strong> Tools → Site Health warns about failed loopback requests and late or failed scheduled events</li>
+  <li><strong>WP Crontrol:</strong> a free plugin that lists every scheduled event, shows when each is next due, and lets you run one manually to see whether it works</li>
+  <li><strong>WooCommerce:</strong> WooCommerce → Status → Scheduled Actions lists pending, completed and failed background jobs</li>
+  <li><strong>Your backup plugin's log</strong> shows when backups actually ran, not just when they were meant to</li>
+  <li><strong>The posts list:</strong> "Missed schedule" next to a post means it wasn't published on time</li>
+</ul>
+<p>If events are overdue and never run, WP-Cron isn't being triggered. If they run but fail, the problem is the task itself.</p>
+
+<h2>The fix: use a real server cron</h2>
+<p>For most business sites, the dependable solution is to let the server trigger WordPress on a fixed timetable, instead of waiting for visitors.</p>
+<ol>
+  <li><strong>Take a backup</strong> first; see <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</li>
+  <li><strong>Stop the visitor-triggered checks</strong> by adding <code>define( 'DISABLE_WP_CRON', true );</code> to wp-config.php, above the comment that begins "That's all, stop editing!".</li>
+  <li><strong>Create a cron job</strong> in your hosting control panel. cPanel and Hostinger's hPanel both have a Cron Jobs section. Set it to call your site's wp-cron.php every 5 or 15 minutes, for example: <code>wget -q -O - https://yourdomain.com/wp-cron.php?doing_wp_cron &gt;/dev/null 2&gt;&amp;1</code></li>
+  <li><strong>Test it:</strong> schedule a test post a few minutes ahead, confirm it publishes on time, and check that the next backup runs when expected.</li>
+</ol>
+<p>Your host may recommend a different command, such as running wp-cron.php with PHP directly or using WP-CLI. Any of these is fine as long as it runs reliably. Some shared hosting plans limit how often cron jobs can run, so check with your host.</p>
+
+<h2>Does it help speed?</h2>
+<p>Somewhat, mainly by making things predictable. With WP-Cron, a visitor's page load is what kicks off pending tasks, so heavy jobs such as backups or imports can start during busy periods. With a server cron, tasks run on a fixed timetable and page loads no longer need to check the schedule. On busy sites, or on shared hosting where resources are tight, that can smooth out slow moments. On its own it won't fix a slow site, but it removes one source of random slowdowns.</p>
+
+<h2>Keep scheduled tasks healthy</h2>
+<ul>
+  <li>After a migration or change of domain, confirm the cron job points to the right address and still runs</li>
+  <li>After removing plugins, check for leftover events, and only delete ones you're sure belong to plugins you no longer use</li>
+  <li>Watch backup logs, not just the backup schedule</li>
+  <li>Include a quick scheduled-post test in your monthly maintenance checks</li>
+</ul>
+
+<p>Scheduled posts, backups or emails not running on time? I can check your set-up and move it to a reliable server cron as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-memory-limit-errors',
+    seoTitle: 'WordPress Memory Limit Errors: Causes and Fixes',
+    title: '"Allowed Memory Size Exhausted" in WordPress: Causes and Fixes for Memory Limit Errors',
+    description: 'What "Allowed memory size exhausted" and other WordPress memory errors mean, how to check PHP memory and WP_MEMORY_LIMIT, and how to fix the real cause.',
+    date: '2026-09-28',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-speed-optimization'],
+    body: `
+<p>If your site shows "There has been a critical error on this website" and the error log mentions "Allowed memory size of 134217728 bytes exhausted", WordPress ran out of the memory it's allowed to use for that page. Raising the limit often gets the site back quickly, but it isn't always the real fix. Here's what memory errors mean, how to check your limits and how to deal with the cause.</p>
+
+<h2>What the error means</h2>
+<p>Each time a page loads, PHP (the language WordPress runs on) gives that request a fixed amount of memory. If WordPress, your theme and your plugins need more than that, PHP stops with a fatal error. Visitors see a critical error message or a blank white page, while the full message appears in your error log or in the email WordPress sends to the admin address.</p>
+<p>A typical message looks like this: <code>Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /wp-content/plugins/some-plugin/file.php</code></p>
+<ul>
+  <li><strong>The first number is the limit in bytes:</strong> 134217728 is 128 MB and 268435456 is 256 MB</li>
+  <li><strong>"Tried to allocate"</strong> is only the last small request that tipped it over</li>
+  <li><strong>The file named</strong> is where memory ran out, not necessarily what used it up. Treat it as a clue, not a verdict</li>
+</ul>
+<p>For the full process of getting a site with a critical error back online, see <a href="/blog/fix-wordpress-critical-error/">how to fix "There has been a critical error"</a>.</p>
+
+<h2>Other memory errors you might see</h2>
+<table>
+  <thead><tr><th>What you see</th><th>What it usually means</th></tr></thead>
+  <tbody>
+    <tr><td>"Allowed memory size ... exhausted"</td><td>The PHP memory limit for a single request was reached</td></tr>
+    <tr><td>"Out of memory (allocated ...)"</td><td>The server couldn't provide more memory at all, usually a hosting account or server limit rather than the PHP setting</td></tr>
+    <tr><td>Errors only on certain admin screens</td><td>A heavy task, such as a page builder editor, a large report or an import, needs more than normal pages</td></tr>
+    <tr><td>Image uploads failing with a message that the server can't process the image</td><td>Resizing a very large photo needed more memory than was available</td></tr>
+    <tr><td>500 or 503 errors, or a "resource limit reached" page on shared hosting</td><td>The hosting account hit its overall limits, not just PHP's per-request limit</td></tr>
+  </tbody>
+</table>
+
+<h2>Common causes</h2>
+<ul>
+  <li><strong>A heavy or badly coded plugin</strong> that loads far more than it needs on every page</li>
+  <li><strong>A plugin conflict or loop:</strong> two plugins interacting badly can eat memory until the limit is hit, often straight after an update</li>
+  <li><strong>Page builders on very long pages</strong> with many sections and widgets, especially in the editor</li>
+  <li><strong>Imports, exports and reports:</strong> WooCommerce product imports, large order exports and analytics screens</li>
+  <li><strong>Backup plugins</strong> compressing a large site from inside WordPress</li>
+  <li><strong>Very large images:</strong> phone photos uploaded at full size</li>
+  <li><strong>A low limit set by the host</strong> on some budget plans</li>
+  <li><strong>Malware:</strong> occasionally, injected code is behind sudden, unexplained memory use</li>
+</ul>
+
+<h2>Check your current limits</h2>
+<p>In the dashboard, go to Tools → Site Health → Info:</p>
+<ul>
+  <li><strong>Server → PHP memory limit:</strong> the limit set on your hosting</li>
+  <li><strong>WordPress Constants → WP_MEMORY_LIMIT:</strong> the memory WordPress asks for on normal pages</li>
+  <li><strong>WordPress Constants → WP_MAX_MEMORY_LIMIT:</strong> the memory WordPress asks for during heavier admin tasks</li>
+</ul>
+<p>WordPress tries to raise PHP's limit to match these settings, but many hosts set a cap it can't go past. If changing the WordPress setting makes no difference, the limit has to be raised on the hosting side.</p>
+
+<h2>How to fix it</h2>
+<h3>1. Get the site back online</h3>
+<p>If visitors can't see the site, use the recovery mode link in the admin email, or deactivate the plugin named in the error by renaming its folder. Take a backup before changing anything else.</p>
+<h3>2. Raise WordPress's memory setting</h3>
+<p>Add this line to wp-config.php, above the comment that begins "That's all, stop editing!":</p>
+<p><code>define( 'WP_MEMORY_LIMIT', '256M' );</code></p>
+<p>256M is a sensible setting for most business sites. If errors only happen in the dashboard, for example during imports or updates, WP_MAX_MEMORY_LIMIT controls admin tasks and can be set the same way. Ask your developer if you're not comfortable editing this file.</p>
+<h3>3. Raise the PHP limit at your host</h3>
+<p>Most control panels let you change PHP options, including memory_limit, in a section such as "Select PHP Version", "MultiPHP INI Editor" or PHP configuration. If you can't find it, ask your host's support team. Some guides suggest editing .htaccess or php.ini instead; that only works on certain server set-ups and can cause a 500 error, so prefer the control panel.</p>
+<h3>4. Find what's actually using the memory</h3>
+<p>If normal pages need far more than 256M, raising the limit further only hides a problem that will come back. Instead:</p>
+<ul>
+  <li>Check the error log to see which plugin files keep appearing</li>
+  <li>Use the free Query Monitor plugin on a staging copy to see peak memory use for each page</li>
+  <li>Deactivate plugins one at a time on staging until usage drops; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
+  <li>Replace heavy or abandoned plugins, split very long builder pages and run big imports in smaller batches</li>
+  <li>Resize photos before uploading them</li>
+</ul>
+
+<h2>When hosting is the real problem</h2>
+<p>On budget shared plans, the PHP limit may be low and the account's total memory is shared by every visitor and background task. Signs you've outgrown your plan include memory errors that return during busy periods, a sluggish dashboard, backups that fail partway and resource warnings in your hosting panel. Sometimes a better plan or host is the right fix; see <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>.</p>
+
+<h2>Stop it happening again</h2>
+<ul>
+  <li>Test plugin and theme updates on staging before applying them to the live site</li>
+  <li>Keep your plugin list lean and remove anything you don't use</li>
+  <li>Keep PHP on a current, supported version</li>
+  <li>Review error logs as part of monthly maintenance, so warnings are caught before visitors see errors</li>
+</ul>
+
+<p>Seeing memory errors or a critical error right now? I fix broken WordPress sites and track down the plugin or setting behind the problem; see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
 ];

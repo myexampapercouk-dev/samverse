@@ -2610,5 +2610,26 @@
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
     <description>Improve Interaction to Next Paint on WordPress: find slow taps, cut long JavaScript tasks, tame third-party scripts and heavy plugins, and fix laggy menus.</description>
   </item>
+  <item>
+    <title>How to Choose a WordPress Maintenance Provider: Questions, Reports and Red Flags</title>
+    <link>https://samverse.space/blog/choose-wordpress-maintenance-provider/</link>
+    <guid>https://samverse.space/blog/choose-wordpress-maintenance-provider/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>How to compare WordPress maintenance providers: the questions to ask, what a monthly report should show, response times to agree in writing, and red flags.</description>
+  </item>
+  <item>
+    <title>WP-Cron Explained: Why Scheduled Posts, Emails and Backups Fail (and How to Fix It)</title>
+    <link>https://samverse.space/blog/wordpress-cron-explained/</link>
+    <guid>https://samverse.space/blog/wordpress-cron-explained/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What WP-Cron is, why scheduled posts show &quot;Missed schedule&quot; and emails or backups run late, and how to switch WordPress to a reliable server cron job.</description>
+  </item>
+  <item>
+    <title>&quot;Allowed Memory Size Exhausted&quot; in WordPress: Causes and Fixes for Memory Limit Errors</title>
+    <link>https://samverse.space/blog/wordpress-memory-limit-errors/</link>
+    <guid>https://samverse.space/blog/wordpress-memory-limit-errors/</guid>
+    <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
+    <description>What &quot;Allowed memory size exhausted&quot; and other WordPress memory errors mean, how to check PHP memory and WP_MEMORY_LIMIT, and how to fix the real cause.</description>
+  </item>
 </channel>
 </rss>
