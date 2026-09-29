@@ -5354,6 +5354,8 @@ module.exports = [
   <li><strong>Contact and enquiry form</strong> with project type, location and timeline</li>
 </ol>
 
+<p>If you specialise in fixing leaks and dampness rather than building, see <a href="/blog/website-for-waterproofing-companies/">websites for waterproofing companies</a>.</p>
+
 <h2>Show projects properly</h2>
 <p>Construction is visual. Use progress photos, before and after images, drone shots and short videos, organised by project type. Write a short case study for key projects; see <a href="/blog/write-case-studies-business-website/">how to write case studies</a>.</p>
 
@@ -5366,6 +5368,8 @@ module.exports = [
   <li>A complete Google Business Profile with project photos and reviews</li>
   <li>Helpful articles on costs, timelines, approvals and materials</li>
 </ul>
+
+<p>Specialist finishing trades need a slightly different approach; see <a href="/blog/website-for-painting-contractors/">websites for painting contractors</a>.</p>
 
 <h2>Performance with lots of photos</h2>
 <p>Project galleries get heavy. Compress images and use modern formats so pages stay fast on site visits over mobile data; see <a href="/blog/image-optimization-wordpress/">image optimization</a>.</p>
@@ -7138,6 +7142,8 @@ module.exports = [
 </ul>
 
 <p>Brand names need extra care for water purifier businesses, where fake helpline numbers are common; see <a href="/blog/website-for-water-purifier-ro-service/">websites for water purifier and RO service businesses</a>.</p>
+
+<p>If AC repair, installation and maintenance contracts are your main business, see the more detailed guide to <a href="/blog/website-for-ac-repair-services/">websites for AC repair services</a>.</p>
 
 <h2>Local SEO is everything</h2>
 <ul>
@@ -17689,6 +17695,299 @@ Template: astra
 </ul>
 
 <p>Building or rebuilding your fabrication company's website? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for a site built around your capabilities and RFQs.</p>
+`,
+  },
+  {
+    slug: 'website-for-painting-contractors',
+    seoTitle: 'Websites for Painting Contractors: What to Include',
+    title: 'Websites for Painting Contractors: Win More House and Commercial Jobs',
+    description: 'What a painting contractor\'s website needs: before-and-after galleries, easy estimate requests, colour consultation, trust signals and local SEO for your city.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Whether it's a family repainting their flat before Diwali, a housing society planning exterior work or an office manager refreshing a floor, people searching for painters want the same things: proof of good work, a fair and clear estimate, and confidence that your team will finish on time and leave the place clean. Your website can answer all of that before the first phone call.</p>
+
+<h2>What customers want to know before they call</h2>
+<ul>
+  <li><strong>What you do:</strong> interior and exterior painting, texture and designer walls, wood polish, enamel on grills and doors, and commercial or industrial work</li>
+  <li><strong>Whether you handle their property:</strong> a 2BHK flat, an independent house, a society building, a shop, a school or a factory</li>
+  <li><strong>How pricing works:</strong> per square foot, per room or per job, and whether the quote is labour-only or includes paint</li>
+  <li><strong>Which paint brands you use</strong>, and whether they can choose the brand and product range</li>
+  <li><strong>The practical side:</strong> how long it takes, whether they can live in the home during the work, and how furniture and floors are protected</li>
+</ul>
+<p>If your homepage and service pages answer these clearly, the calls you get are from people who are already half-convinced.</p>
+
+<h2>Build a before-and-after gallery that sells</h2>
+<p>Painting is visual, and a good gallery does more selling than any paragraph. A few habits make it far more convincing:</p>
+<ul>
+  <li>Shoot before and after photos from the same angle and in similar light</li>
+  <li>Organise work by type: interiors, exteriors, texture walls, wood finishes and commercial projects</li>
+  <li>Caption each job with the property type, locality, surfaces painted, finish used, preparation done (crack filling, putty, primer) and how long it took</li>
+  <li>Add short walk-through videos of finished rooms or buildings</li>
+  <li>Ask owners for permission, and avoid showing personal belongings, family photos or house numbers</li>
+</ul>
+<p>Phone photos are fine if they are sharp and well lit; see <a href="/blog/prepare-photos-for-website/">how to prepare photos for your website</a> so a large gallery doesn't slow the site down.</p>
+
+<h2>Make estimate requests easy</h2>
+<p>Most painting jobs start with an estimate, so that form is the most important thing on your site. Ask for what you actually need to quote, and no more:</p>
+<ul>
+  <li>Property type and locality</li>
+  <li>Interior, exterior or both, with approximate size (BHK or square feet)</li>
+  <li>Rooms or surfaces to paint, and current condition (dampness, peeling, cracks)</li>
+  <li>Labour-only or with material, and any brand preference</li>
+  <li>Preferred start date, and an option to upload photos</li>
+</ul>
+<p>Add a WhatsApp button too, because many people would rather send a few photos of their walls than fill in a form. Then explain what happens next:</p>
+<table>
+  <thead>
+    <tr><th>Estimate type</th><th>Works well for</th><th>What to explain on the site</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Photo-based quote</td><td>Single rooms, touch-ups, grills and doors</td><td>That the final price is confirmed after seeing the site</td></tr>
+    <tr><td>Site visit and measurement</td><td>Full homes and exteriors</td><td>Whether the visit is free or chargeable, and how soon you can come</td></tr>
+    <tr><td>Detailed written quotation</td><td>Societies, offices and commercial buildings</td><td>Itemised surface preparation, products, number of coats, labour and timeline</td></tr>
+  </tbody>
+</table>
+<p>You don't have to publish fixed rates, but explaining what affects the price builds trust; see <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
+
+<h2>Offer colour consultation</h2>
+<p>Many homeowners delay repainting simply because they can't decide on colours. If you help with this, give it its own page:</p>
+<ul>
+  <li>How the consultation works: a visit, shade cards, sample patches on the actual wall and a look at natural light in each room</li>
+  <li>Room-by-room ideas for living rooms, bedrooms, kitchens and children's rooms</li>
+  <li>Exterior schemes that suit the building and any society guidelines</li>
+  <li>Finishes explained simply: matt, satin, gloss and texture, and where each works best</li>
+</ul>
+<p>Colour guides also make excellent blog content, because people search for colour ideas long before they search for a painter.</p>
+
+<h2>Trust signals for letting a crew into someone's home</h2>
+<p>Customers worry about mess, delays, diluted paint and workers they don't know. Address each worry directly. A clear, step-by-step process helps:</p>
+<ol>
+  <li>Moving and covering furniture, floors and fittings</li>
+  <li>Masking switches, windows and edges</li>
+  <li>Scraping, sanding, crack filling and putty where needed</li>
+  <li>Primer, then the agreed number of finish coats</li>
+  <li>Daily cleanup, a final walk-through and touch-ups</li>
+</ol>
+<p>Then add proof:</p>
+<ul>
+  <li>A named supervisor for each job and a trained, consistent crew</li>
+  <li>Paint arriving in sealed containers, opened on site</li>
+  <li>A written workmanship warranty, if you offer one, stating clearly what it covers</li>
+  <li>Genuine Google reviews and photos of your team at work</li>
+  <li>Any paint brand contractor or applicator programmes you genuinely belong to</li>
+  <li>A clear payment schedule, with UPI and bank transfer options</li>
+</ul>
+
+<h2>Separate pages for homes and commercial clients</h2>
+<p>Homeowners and commercial buyers decide differently. Residential pages can focus on convenience, cleanliness and colour. Commercial pages for offices, shops, hotels, schools, hospitals and factories should cover:</p>
+<ul>
+  <li>Working after hours or on weekends to avoid disruption</li>
+  <li>Crew size, equipment and safety practices for work at height</li>
+  <li>Projects of a similar scale, with permission</li>
+  <li>GST invoicing and a downloadable company profile</li>
+</ul>
+<p>Housing societies deserve their own page too, covering exterior repainting, committee approvals and quotations that are easy to compare. Larger contractors can borrow ideas from <a href="/blog/website-for-construction-companies/">websites for construction companies</a>.</p>
+
+<h2>Local SEO for painting contractors</h2>
+<ul>
+  <li>Complete your Google Business Profile with service areas, hours and real job photos; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
+  <li>Ask for reviews after every job, and encourage customers to mention the work done</li>
+  <li>Create pages for the services people search for, such as "house painting services in {city}", "exterior painting {city}" and "texture painting near me"</li>
+  <li>Add area pages only where you genuinely work and can show local projects</li>
+  <li>Plan around seasons: interior demand often rises before festivals, and many people schedule exterior painting for drier months</li>
+</ul>
+
+<h2>Keep it fast and simple on mobile</h2>
+<p>Most people will find you on their phone, often while standing in the room they want painted. Keep a tap-to-call and WhatsApp button always visible, keep pages light despite the photos, and make the estimate form short enough to finish in a minute.</p>
+
+<p>Want a website that shows off your work and brings in estimate requests? See <a href="/wordpress-website-development/">WordPress website development</a>, and <a href="/wordpress-seo-services/">WordPress SEO</a> for ranking in your city.</p>
+`,
+  },
+  {
+    slug: 'website-for-waterproofing-companies',
+    seoTitle: 'Websites for Waterproofing and Damp-Proofing Companies',
+    title: 'Websites for Waterproofing and Damp-Proofing Companies: Turning Leaks Into Site Inspections',
+    description: 'What a waterproofing company\'s website needs: pages for each leak problem, methods explained simply, clear warranties, easy inspection booking and local SEO.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Nobody thinks about waterproofing until something goes wrong: a damp patch spreading across the bedroom ceiling, seepage behind the bathroom wall, or water dripping into the parking after the first heavy rain. By the time people search, they are worried and often sceptical, because many have already paid for a fix that didn't last. Your website has to show that you understand the problem, explain how you would solve it, and make booking an inspection easy.</p>
+
+<h2>Organise services around the problems customers see</h2>
+<p>Homeowners don't search for product names or technical systems. They search for "terrace leakage repair", "bathroom seepage solution" or "damp wall treatment". Build your service pages around those problems:</p>
+<ul>
+  <li>Terrace and roof leakage</li>
+  <li>Bathroom and kitchen seepage, including leaks into the flat below</li>
+  <li>Damp walls, peeling paint and white salt deposits (efflorescence)</li>
+  <li>Rising damp at the base of ground-floor walls</li>
+  <li>Basement, lift pit and podium leaks</li>
+  <li>Water tank and swimming pool leaks</li>
+  <li>Cracks in external walls and leaks around windows</li>
+</ul>
+<p>Each page should cover the symptoms, the usual causes, how you diagnose the problem, the methods you might use, how long the work takes and what the customer needs to arrange, such as keeping a bathroom unused for a few days or giving access to the terrace. Add a short FAQ at the end. For structure and wording, see <a href="/blog/write-service-pages-that-convert/">how to write service pages that rank and convert</a>.</p>
+
+<h2>Explain your methods in plain language</h2>
+<p>Customers often receive quotes that look completely different. One contractor suggests a coating, another a membrane, a third wants to break the tiles. A simple methods page helps them understand why you recommend what you do:</p>
+<table>
+  <thead>
+    <tr><th>Method</th><th>Commonly used for</th><th>What to explain</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Liquid-applied coatings</td><td>Terraces, balconies, bathrooms before tiling</td><td>Surface preparation, number of coats and whether the area can be walked on afterwards</td></tr>
+    <tr><td>Sheet membranes</td><td>Roofs, terraces and basements</td><td>How joints and overlaps are sealed, and what protects the membrane on top</td></tr>
+    <tr><td>Injection grouting</td><td>Cracks, construction joints and some leaks through tile joints</td><td>Where it works well, and where it is only a temporary measure</td></tr>
+    <tr><td>Chemical damp-proof course</td><td>Rising damp in older walls</td><td>That walls take time to dry and plaster repair usually follows</td></tr>
+    <tr><td>Tile joint sealing and regrouting</td><td>Minor bathroom seepage</td><td>When it is enough, and when retiling is the honest answer</td></tr>
+  </tbody>
+</table>
+<p>Describe the systems you actually use, name product brands only if you genuinely use them, and mention any manufacturer applicator training you have completed. Avoid claiming that one method is a permanent cure for every leak; experienced customers know it isn't, and it makes the rest of your site less believable.</p>
+
+<h2>Be clear about warranties</h2>
+<p>The warranty is often the deciding factor, and it is also where most disputes start. Put the details on your website, in plain words:</p>
+<ul>
+  <li><strong>What is covered:</strong> the treated area, and recurrence of the leak you fixed</li>
+  <li><strong>What is not covered:</strong> new damage, later drilling or tile work by others, structural movement and plumbing leaks</li>
+  <li><strong>How long it lasts</strong>, and whether this differs by method or area</li>
+  <li><strong>How to raise a claim</strong>, and how quickly you respond</li>
+  <li><strong>Whether you issue a written warranty certificate</strong> after the work</li>
+</ul>
+<p>If a product manufacturer offers its own material warranty, explain that it is separate from your workmanship warranty. Never promise "lifetime" or "guaranteed leak-proof" results unless you can honour them in writing.</p>
+
+<h2>Make booking a site inspection easy</h2>
+<p>Most jobs need an inspection, because the damp patch is often some distance from where the water actually gets in. Keep the inspection form short and useful:</p>
+<ul>
+  <li>Property type, floor and locality</li>
+  <li>Where the problem shows (ceiling, wall, floor or basement) and what is above or beside it</li>
+  <li>When it started, and whether it gets worse during rain</li>
+  <li>Photos or a short video, with a WhatsApp option for sending them</li>
+  <li>Preferred date and time for the visit</li>
+</ul>
+<p>Then explain what the inspection involves: what you check, any tools you use such as moisture meters or thermal cameras (only if you have them), whether the visit is free or chargeable, and whether the fee is adjusted against the work. Say whether you provide a written report with photos, and how soon the quotation follows.</p>
+
+<h2>Show proof that your fixes last</h2>
+<p>Waterproofing work is mostly hidden once it's finished, so show the stages customers never see:</p>
+<ul>
+  <li>Photos of surface preparation, crack filling, primer, each coat and the finished surface</li>
+  <li>Water or ponding tests on terraces and bathrooms, if you carry them out</li>
+  <li>Short case studies covering the problem, your diagnosis, the method and how the area held up through the next monsoon; see <a href="/blog/write-case-studies-business-website/">how to write case studies</a></li>
+  <li>Genuine Google reviews, especially ones that mention a leak staying fixed after the rains</li>
+  <li>Housing societies and commercial clients you've worked for, with permission</li>
+  <li>Years in business, GST registration and a named supervisor for each job</li>
+</ul>
+
+<h2>Pages for housing societies and commercial buildings</h2>
+<p>Large jobs are decided by committees and facility managers, not individual homeowners. A dedicated page for housing societies can cover terrace and external wall waterproofing, working while residents live in the building, and itemised quotations that are easy to compare at a committee meeting.</p>
+<p>For offices, factories, hotels and hospitals, cover basements, podiums, industrial roofs, water tanks and treatment plants. Mention method statements, safety practices for work at height, working around business hours and any annual inspection contracts you offer. A downloadable company profile helps here.</p>
+
+<h2>Local SEO and the monsoon cycle</h2>
+<ul>
+  <li>Complete your Google Business Profile with service areas and real job photos; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
+  <li>Create pages for what people actually search, such as "terrace waterproofing in {city}", "bathroom leakage repair without breaking tiles" and "waterproofing contractors near me"</li>
+  <li>Write about local conditions you really deal with, such as heavy coastal rain or older buildings in your area</li>
+  <li>Answer common questions in blog posts, like why a ceiling leaks only during rain, or why paint keeps peeling on one wall</li>
+</ul>
+<p>Enquiries tend to peak once the rains start, but many treatments work best on dry surfaces before the monsoon. Run a pre-monsoon inspection campaign with its own page and offer; see <a href="/blog/seasonal-festival-campaigns-website/">seasonal campaigns on your website</a>.</p>
+
+<h2>Keep it simple on mobile</h2>
+<p>Many customers will find you while standing under the leak with their phone. Keep tap-to-call and WhatsApp buttons always visible, compress your job photos so pages load quickly, and make the inspection form easy to complete in under a minute.</p>
+
+<p>Want a website that explains your work clearly and fills your inspection calendar? See <a href="/wordpress-website-development/">WordPress website development</a>, and <a href="/wordpress-seo-services/">WordPress SEO</a> for ranking in your city.</p>
+`,
+  },
+  {
+    slug: 'website-for-ac-repair-services',
+    seoTitle: 'Websites for AC Repair, Installation and AMC Services',
+    title: 'Websites for AC Repair, Installation and AMC Services: More Bookings All Year',
+    description: 'What an AC repair and service business needs online: clear service pages, quick booking, emergency calls, areas served, easy AMC plans and seasonal campaigns.',
+    date: '2026-09-28',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>When the AC stops cooling in the middle of May, people don't browse. They search "AC repair near me", look at two or three results and call. But an AC business also sells planned work: new installations, shifting, and annual maintenance contracts for homes, shops and offices. Our guide to <a href="/blog/website-for-home-services/">websites for home services</a> covers the basics for plumbers, electricians and technicians. This article goes deeper into what an AC repair, installation and AMC business needs from its website.</p>
+
+<h2>A separate page for each AC service</h2>
+<p>People search for specific jobs, so give each one its own page rather than a single "AC services" list:</p>
+<ul>
+  <li><strong>AC repair:</strong> not cooling, water dripping from the indoor unit, strange noises, error codes, tripping</li>
+  <li><strong>Servicing:</strong> routine cleaning and deep cleaning, and what each includes</li>
+  <li><strong>Gas refill and leak repair:</strong> explain that refrigerant normally only runs low when there is a leak, so finding and fixing the leak comes first</li>
+  <li><strong>Installation, uninstallation and reinstallation</strong>, including shifting to a new home</li>
+  <li><strong>AMC plans</strong> for homes and businesses</li>
+  <li><strong>Commercial systems</strong> such as cassette, ductable or VRF units, only if you genuinely handle them</li>
+</ul>
+<p>On each page, mention the AC types you work on (split, window and inverter models) and the brands you service. Only call yourself an authorised service centre for a brand if you actually are one; customers check, and a false claim undoes the trust the rest of your site builds.</p>
+
+<h2>Booking that matches how customers call</h2>
+<p>A booking form for non-urgent jobs saves both sides a phone call. Ask only what helps your technician arrive prepared:</p>
+<ul>
+  <li>AC type, number of units, brand and approximate age</li>
+  <li>The problem, from a short list (not cooling, water leakage, noise, error code, servicing, installation)</li>
+  <li>Locality or pincode</li>
+  <li>Preferred date and time slot</li>
+</ul>
+<p>If you can manage a slot calendar, let customers pick an available time; see <a href="/blog/online-appointment-booking-website/">online appointment booking</a>. Confirm every booking on WhatsApp or SMS, and send the technician's name before the visit. People are far more comfortable opening the door to someone they were told to expect.</p>
+
+<h2>Handle emergency and same-day calls properly</h2>
+<ul>
+  <li>Keep tap-to-call and WhatsApp buttons fixed on screen on mobile</li>
+  <li>State your working hours honestly, and say whether you take emergency or same-day calls, in which areas, and whether an extra charge applies</li>
+  <li>Offer priority handling for clinics, shops and offices with server rooms, if you can support it</li>
+  <li>Publish response times only if you consistently meet them</li>
+</ul>
+<p>During peak weeks, a simple banner such as "Next available slots from Thursday" saves customers frustration and saves your team from repeat calls.</p>
+
+<h2>Areas served and local SEO</h2>
+<p>Customers want to know straight away whether you come to their locality. List the areas and pincodes you cover, show a map, and say whether outer areas carry a travel charge. Then:</p>
+<ul>
+  <li>Keep your Google Business Profile complete, with service areas, hours and photos of real jobs</li>
+  <li>Ask for a review after every visit, especially from AMC customers you see regularly</li>
+  <li>Target searches like "AC repair in {area}", "split AC installation {city}" and "AC gas refill near me"</li>
+  <li>Build area pages only where you have genuine local detail, not dozens of copies with the city name swapped; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a></li>
+</ul>
+
+<h2>Make AMC plans easy to understand</h2>
+<p>AMCs bring steady income outside the summer rush, but only if customers understand exactly what they're buying. Lay each plan out clearly:</p>
+<table>
+  <thead>
+    <tr><th>Plan detail</th><th>What to state clearly</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Scheduled services</td><td>How many visits a year, and what each visit includes</td></tr>
+    <tr><td>Breakdown visits</td><td>Whether they are included, and how many</td></tr>
+    <tr><td>Parts</td><td>Comprehensive (most parts covered, with listed exclusions) or non-comprehensive (labour only)</td></tr>
+    <tr><td>Gas refill</td><td>Included or charged separately</td></tr>
+    <tr><td>Response time</td><td>How soon you attend a breakdown call</td></tr>
+    <tr><td>Renewal</td><td>How and when you remind customers before the plan ends</td></tr>
+  </tbody>
+</table>
+<p>Business customers need a little more: multiple units across sites, a service report after every visit, GST invoices and a single contact person. A short AMC enquiry form, or a downloadable proposal, makes it easier for an office manager to get approval. Home customers should be able to pay for a renewal online by UPI.</p>
+
+<h2>Plan for seasonal demand</h2>
+<p>AC work is heavily seasonal, and your website should change with the seasons rather than look the same all year:</p>
+<ol>
+  <li><strong>Before summer:</strong> run a pre-summer servicing campaign with its own page and offer, and promote AMCs</li>
+  <li><strong>Peak summer:</strong> focus on repairs, show real availability, and pause ads when you are fully booked</li>
+  <li><strong>Monsoon:</strong> water leakage and drainage issues become common, so highlight those pages</li>
+  <li><strong>Cooler months:</strong> push installations, shifting and AMC renewals, and publish helpful articles such as "AC not cooling: checks before you call a technician"</li>
+</ol>
+<p>For timing and planning, see <a href="/blog/seasonal-festival-campaigns-website/">seasonal campaigns on your website</a>.</p>
+
+<h2>Pricing clarity and trust</h2>
+<p>Customers worry about being overcharged for parts and gas. Answer those worries directly:</p>
+<ul>
+  <li>State your visiting or inspection charge, what it covers, and whether it is adjusted against the repair</li>
+  <li>Explain that parts and gas are extra and that you always ask for approval before replacing anything</li>
+  <li>Offer a written service warranty on repairs, if you give one, and say what it covers</li>
+  <li>Say whether you use original or compatible spares, and offer to show replaced parts</li>
+  <li>Introduce your technicians: training, uniforms, ID cards and background checks if you do them</li>
+  <li>Accept UPI and cards, and share a digital bill after each visit</li>
+</ul>
+<p>You don't need a full price list, but "starting from" guidance for common jobs cuts down on price-shopping calls and shows you have nothing to hide.</p>
+
+<p>Want more bookings in the summer rush and more AMC renewals the rest of the year? See <a href="/wordpress-website-development/">WordPress website development</a>, and <a href="/landing-page-design/">landing page design</a> for your seasonal campaigns.</p>
 `,
   },
 ];

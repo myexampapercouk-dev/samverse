@@ -343,6 +343,10 @@ const LINKS = [
   ['website-for-furniture-businesses', '<h2>B2B buyers</h2>', '<p>Selling fitted kitchens and wardrobes rather than loose furniture? See <a href="/blog/website-for-modular-kitchen-companies/">websites for modular kitchen and wardrobe companies</a>.</p>\n\n'],
   ['website-for-hardware-building-materials', '<h2>Online catalogue or store?</h2>', '<p>Fabricate and install windows, doors or glass work rather than supplying materials? See <a href="/blog/website-for-glass-aluminium-fabricators/">websites for glass, aluminium and uPVC fabricators</a>.</p>\n\n'],
   ['b2b-manufacturer-website-guide', '<h2>Make enquiring effortless</h2>', '<p>Run a fabrication shop that works to customers\' drawings? See <a href="/blog/website-for-steel-fabrication-companies/">websites for steel and metal fabrication companies</a>.</p>\n\n'],
+  // Agent 03
+  ['website-for-construction-companies', '<h2>Performance with lots of photos</h2>', '<p>Specialist finishing trades need a slightly different approach; see <a href="/blog/website-for-painting-contractors/">websites for painting contractors</a>.</p>\n\n'],
+  ['website-for-construction-companies', '<h2>Show projects properly</h2>', '<p>If you specialise in fixing leaks and dampness rather than building, see <a href="/blog/website-for-waterproofing-companies/">websites for waterproofing companies</a>.</p>\n\n'],
+  ['website-for-home-services', '<h2>Local SEO is everything</h2>', '<p>If AC repair, installation and maintenance contracts are your main business, see the more detailed guide to <a href="/blog/website-for-ac-repair-services/">websites for AC repair services</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
