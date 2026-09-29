@@ -411,6 +411,10 @@ const LINKS = [
   ['accept-online-payments-wordpress-india', '<h2>Ways to take payments on WordPress</h2>', '<p>Still deciding between providers? See <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a> for what to compare, from settlement times to KYC and WooCommerce support.</p>\n\n'],
   ['website-for-d2c-food-brands', '<h2>Content that sells</h2>', '<p>Planning subscribe-and-save for staples? See <a href="/blog/woocommerce-subscriptions/">selling subscriptions with WooCommerce</a> for how recurring plans and payments work in India.</p>\n\n'],
   ['website-for-home-tutors-online-teachers', '<h2>Get found</h2>', '<p>When you\'re ready to sell notes, recorded courses or test series, see <a href="/blog/sell-digital-products-wordpress/">how to sell digital products on WordPress</a>.</p>\n\n'],
+  // Agent 18
+  ['ga4-events-explained', '<h2>Reading the results</h2>', '<p>A tap on a phone number shows intent, not a conversation; see <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a> for ways to measure real calls and WhatsApp chats.</p>\n\n'],
+  ['website-ready-for-google-ads', '<h2>4. A clear call to action</h2>', '<p>For a step-by-step walkthrough, see <a href="/blog/google-ads-conversion-tracking-setup/">how to set up Google Ads conversion tracking on WordPress</a>.</p>\n\n'],
+  ['landing-page-mistakes-google-ads', '<h2>10. Never testing anything</h2>', '<p>If you advertise on Facebook or Instagram, see <a href="/blog/meta-pixel-conversions-api/">the Meta Pixel and Conversions API explained</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
