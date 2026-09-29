@@ -3235,6 +3235,8 @@ module.exports = [
   <li><strong>Labels:</strong> organise chats as new lead, quoted, follow-up or won</li>
 </ul>
 
+<p>These same features can also help you win repeat business from past customers; see <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a>.</p>
+
 <h2>Best practices</h2>
 <ul>
   <li><strong>Reply fast.</strong> WhatsApp sets an expectation of quick responses.</li>
@@ -5038,6 +5040,8 @@ module.exports = [
   <li><strong>Case studies:</strong> a quote from the client in the story</li>
   <li><strong>Landing pages:</strong> essential proof for ad traffic</li>
 </ul>
+
+<p>Your Google reviews can sit alongside testimonials in these places too; see <a href="/blog/google-reviews-on-website/">how to show Google reviews on your website</a>.</p>
 
 <h2>Permissions and honesty</h2>
 <ul>
@@ -8511,6 +8515,8 @@ module.exports = [
   <li>Run changes long enough to get meaningful numbers</li>
   <li>For low-traffic sites, make bigger, clearly better changes rather than tiny A/B tests</li>
 </ul>
+
+<p>Pop-ups are a common thing to test; see <a href="/blog/exit-intent-popups/">when exit-intent pop-ups help and when they hurt</a> before adding one.</p>
 
 <h2>Quick wins that usually work</h2>
 <ol>
@@ -21827,6 +21833,272 @@ Template: astra
 <p>Most popular form plugins support multi-step forms and conditional logic, though some keep these features for paid plans; see <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a>. Some plugins can also save partly completed forms. If you use that feature, treat the data carefully and mention it in your privacy policy, since the person hasn't chosen to submit it.</p>
 
 <p>Want an enquiry form designed around how your business actually sells? See <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'whatsapp-marketing-small-business',
+    seoTitle: 'WhatsApp Marketing for Small Businesses: A Practical Guide',
+    title: 'WhatsApp Marketing for Small Businesses: Using WhatsApp Business to Win Repeat Customers',
+    description: 'How small businesses can use WhatsApp Business catalogues, labels, broadcasts and Status with their website to win repeat customers, with proper consent.',
+    date: '2026-09-28',
+    category: 'Growth',
+    related: ['landing-page-design', 'woocommerce-developer'],
+    body: `
+<p>Your website brings in new enquiries, but WhatsApp is often where the relationship actually continues. For many Indian businesses, customers already message on WhatsApp to ask prices, confirm orders and share UPI payment screenshots. Used thoughtfully, WhatsApp Business can turn those one-off chats into repeat customers.</p>
+<p>This guide covers the marketing side and how it works with your website. Adding a chat button to your site is covered separately in <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
+
+<h2>WhatsApp Business app or the API?</h2>
+<p>There are two routes, and most small businesses should start with the first.</p>
+<table>
+  <thead><tr><th></th><th>WhatsApp Business app</th><th>WhatsApp Business Platform (API)</th></tr></thead>
+  <tbody>
+    <tr><td>Best for</td><td>Shops, clinics, consultants and small teams replying personally</td><td>Stores and businesses sending automated or high-volume messages</td></tr>
+    <tr><td>Cost</td><td>The app itself is free</td><td>Meta charges for many message types, plus any provider fees; check current pricing</td></tr>
+    <tr><td>Automation</td><td>Greeting and away messages, quick replies</td><td>Order updates, reminders and integrations with your website or CRM</td></tr>
+    <tr><td>Key rules</td><td>Broadcasts only reach people who have saved your number</td><td>Opt-in required; messages sent more than 24 hours after the customer's last message must use pre-approved templates</td></tr>
+  </tbody>
+</table>
+<p>Start with the app. Consider the API when you're sending the same messages by hand dozens of times a day, or you want your online store to send order and delivery updates automatically.</p>
+
+<h2>Catalogue: a shop window inside WhatsApp</h2>
+<p>The catalogue lets you list products or services with photos, prices and descriptions. Customers can browse without leaving the chat, and you can share an item in a couple of taps instead of typing the same details again.</p>
+<ul>
+  <li><strong>Mirror your website, don't replace it.</strong> Use the same product names, photos and prices, and add a link to each item's page on your site where the app allows, so customers can see full details and policies.</li>
+  <li><strong>Keep it current.</strong> An out-of-stock item or an old price causes awkward conversations. Update the catalogue whenever you update the website.</li>
+  <li><strong>Services work too.</strong> A salon can list packages, a tutor can list courses, a repair shop can list common jobs.</li>
+</ul>
+<p>If you sell many products, an online store still handles orders, payments and GST invoices more cleanly; the catalogue should point customers there.</p>
+
+<h2>Labels: know who is who</h2>
+<p>Labels let you tag chats so you can find the right people later.</p>
+<ul>
+  <li><strong>By stage:</strong> new enquiry, quoted, paid, delivered, repeat customer</li>
+  <li><strong>By interest:</strong> the product range or service they asked about</li>
+  <li><strong>By consent:</strong> a label such as "Offers OK" for people who have agreed to hear about offers</li>
+</ul>
+<p>That last label matters most. It keeps your broadcasts limited to people who actually asked for them.</p>
+
+<h2>Broadcast lists: offers without spamming</h2>
+<p>A broadcast list sends one message to many contacts, but each person receives it as a normal individual chat, and replies come only to you. Two rules shape how you use them:</p>
+<ol>
+  <li><strong>Only people who have saved your number receive broadcasts.</strong> So encourage customers to save it, which is itself a sign of genuine interest.</li>
+  <li><strong>People can block or report you.</strong> Irrelevant or frequent messages lead to blocks, and repeated reports can get a business account restricted.</li>
+</ol>
+<p>Good broadcasts are occasional, relevant and useful:</p>
+<ul>
+  <li>A festival offer for past customers, linked to a dedicated offer page on your website</li>
+  <li>New stock or a fresh batch for customers who bought that category before</li>
+  <li>Seasonal reminders, such as AC servicing before summer or admission dates for coaching classes</li>
+  <li>A thank-you after a completed job, with a request for a review (see <a href="/blog/get-more-google-reviews/">getting more Google reviews ethically</a>)</li>
+</ul>
+<p>Keep separate lists by interest, so a customer who bought sarees isn't sent kitchenware offers. Always give an easy way out, such as "Reply STOP if you'd rather not get these", and honour it straight away.</p>
+
+<h2>Status: gentle, everyday visibility</h2>
+<p>Status updates disappear after 24 hours and can be seen by contacts who have saved your number. For a local business, that's a free way to stay visible without messaging anyone directly.</p>
+<ul>
+  <li>Today's fresh stock, specials or new arrivals</li>
+  <li>Before-and-after photos from a recent job (with the customer's permission)</li>
+  <li>A short tip related to your service, with a link to the full article on your website</li>
+</ul>
+<p>Because people choose to view Status, it suits more frequent posts than you would ever send as broadcasts.</p>
+
+<h2>Opt-in and consent: do it properly</h2>
+<p>Consent is good manners and increasingly a legal expectation. India's Digital Personal Data Protection Act generally requires clear, specific consent for using personal data, and WhatsApp's own business policies expect you to have permission before sending marketing messages. The rules are being phased in, so check current requirements with your CA or lawyer.</p>
+<p>Practical ways to collect opt-in:</p>
+<ul>
+  <li><strong>On website forms:</strong> an unticked checkbox such as "Send me offers and updates on WhatsApp", separate from the enquiry itself</li>
+  <li><strong>At checkout:</strong> the same optional checkbox on your online store</li>
+  <li><strong>In the chat:</strong> ask "Would you like us to share festival offers here now and then?" and label people who say yes</li>
+  <li><strong>In your shop:</strong> a QR code that opens a chat with a pre-filled message like "Yes, send me offers"</li>
+</ul>
+<p>Mention WhatsApp in your privacy policy, and don't add numbers collected for one purpose (say, delivery) to marketing lists without asking. See <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics</a>.</p>
+
+<h2>Connect WhatsApp and your website</h2>
+<p>WhatsApp works best as a loop with your website, not a separate channel:</p>
+<ol>
+  <li><strong>Website to WhatsApp:</strong> product and service pages carry click-to-chat buttons with page-specific pre-filled messages, so you know what each person wants.</li>
+  <li><strong>WhatsApp to website:</strong> broadcasts and Status link to a specific page (the offer, the product, the booking page), not just your homepage.</li>
+  <li><strong>Track it:</strong> add UTM tags to links you share on WhatsApp so Google Analytics shows the visits and orders they bring; see <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</li>
+  <li><strong>Make reordering easy:</strong> for things people buy again, such as groceries, cosmetics, pet food or printer supplies, send a reminder with a direct link to the product.</li>
+</ol>
+<p>For online stores, automated order and shipping updates on WhatsApp (through the API) cut down "where is my order?" calls.</p>
+
+<h2>A simple weekly routine</h2>
+<ul>
+  <li>Label every new chat the same day</li>
+  <li>Post a few Status updates a week</li>
+  <li>Send broadcasts only when you have something genuinely useful to say</li>
+  <li>Check which links got clicks and which messages got replies</li>
+  <li>Remove anyone who asks to stop, immediately</li>
+</ul>
+<p>Small, consistent habits beat occasional blasts, and they keep your number in customers' phones for the next purchase.</p>
+
+<p>Want a website that works hand in hand with WhatsApp, from click-to-chat landing pages to a store that sends order updates? See <a href="/landing-page-design/">landing page design</a> and <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'exit-intent-popups',
+    seoTitle: 'Exit-Intent Pop-ups: When They Help and When They Hurt',
+    title: 'Exit-Intent Pop-ups: When They Help, When They Hurt and How to Use Them Well',
+    description: 'When exit-intent pop-ups win leads and when they annoy visitors, what Google says about intrusive mobile pop-ups, and best practices for triggers and offers.',
+    date: '2026-09-28',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>Pop-ups have a bad reputation, and mostly they've earned it: a box that covers the page the moment you arrive, asking for your email before you've read a word. But a well-timed pop-up with a genuinely useful offer can capture visitors who would otherwise leave and never come back. The difference is almost entirely in when, where and how you use it.</p>
+<p>This guide explains what exit-intent pop-ups are, when they help, when they hurt, and how to set one up without annoying visitors or Google.</p>
+
+<h2>What an exit-intent pop-up is</h2>
+<p>An exit-intent pop-up appears when a visitor looks like they're about to leave, rather than when they arrive. On a desktop or laptop, the script watches the mouse: when the cursor moves quickly towards the top of the browser, where the tabs, address bar and close button are, the pop-up appears.</p>
+<p>On phones there is no mouse, so tools guess using other signals, such as a quick scroll back up the page or a period of inactivity. These guesses are much less reliable, so a "leaving" pop-up often appears while someone is still happily reading. That's one reason to treat mobile very differently, as covered below.</p>
+
+<h2>When pop-ups help</h2>
+<p>Most visitors aren't ready to enquire or buy on their first visit. An exit-intent pop-up is a last, polite chance to stay in touch. It tends to work when:</p>
+<ul>
+  <li><strong>The offer is genuinely useful.</strong> A checklist, cost guide or price list related to the page, not just "join our newsletter". See <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets and newsletters</a> for ideas.</li>
+  <li><strong>It matches the page.</strong> Someone reading an article on choosing solar panels is offered a solar buying checklist, not a generic discount.</li>
+  <li><strong>It offers another way to reach you.</strong> On a service page, "Have a quick question? Chat with us on WhatsApp" can rescue a visitor who wasn't ready to fill in a form.</li>
+  <li><strong>It helps shoppers finish.</strong> On an online store, a reminder about delivery charges, cash on delivery or easy returns can answer the doubt that was making someone leave. See <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</li>
+  <li><strong>There's a real, time-bound offer.</strong> A festival sale with a genuine end date, linked to the offer page.</li>
+</ul>
+
+<h2>When pop-ups hurt</h2>
+<ul>
+  <li><strong>Instant pop-ups on arrival.</strong> The visitor hasn't seen your content yet, so they have no reason to trust you with their details.</li>
+  <li><strong>Pop-ups on every page, every visit.</strong> Closing the same box five times is how people learn to dislike a website.</li>
+  <li><strong>Interrupting the action you want.</strong> A pop-up over your contact form, booking page or checkout can stop an enquiry or sale that was about to happen.</li>
+  <li><strong>Hard-to-close designs.</strong> A tiny, faint close button, or one that appears only after a delay.</li>
+  <li><strong>Guilt-tripping and fake urgency.</strong> "No thanks, I don't want to grow my business" buttons and countdown timers that reset on every visit damage trust.</li>
+  <li><strong>Stacking.</strong> A pop-up on top of a cookie notice on top of a chat widget leaves no room for the page itself.</li>
+</ul>
+
+<h2>Mobile pop-ups and Google's guidance</h2>
+<p>Google has long said that intrusive interstitials, meaning pop-ups that make content hard to reach, give mobile users a poor experience, and that pages where content isn't easily accessible may not rank as highly. The examples it gives include:</p>
+<ul>
+  <li>A pop-up that covers the main content as soon as someone arrives from search, or while they're reading</li>
+  <li>A standalone screen that must be dismissed before the content can be seen</li>
+  <li>A layout where the top of the page looks like a pop-up and the real content is pushed below it</li>
+</ul>
+<p>Some things are generally not treated as intrusive: notices required by law, such as cookie consent or age checks, login boxes for private content, and small banners that use a reasonable amount of screen space and are easy to dismiss.</p>
+<p>How much weight this carries isn't public, and it's one signal among many, but the practical rule is simple: on mobile, avoid full-screen pop-ups. Use a small bar at the bottom of the screen, a slide-in, or a form placed within the content instead. See <a href="/blog/mobile-first-design-explained/">mobile-first design explained</a>.</p>
+
+<h2>Best practices</h2>
+<table>
+  <thead><tr><th>Decision</th><th>Better choice</th><th>Avoid</th></tr></thead>
+  <tbody>
+    <tr><td>Trigger</td><td>Exit intent on desktop, or after someone has scrolled most of an article</td><td>Showing it the instant the page loads</td></tr>
+    <tr><td>Pages</td><td>Blog posts, guides, product and category pages</td><td>Contact, booking, checkout and thank-you pages</td></tr>
+    <tr><td>Frequency</td><td>Once per visitor, then hidden for a few weeks; never again after they sign up</td><td>Every page, every visit</td></tr>
+    <tr><td>Offer</td><td>One specific, useful thing related to the page</td><td>"Subscribe for updates" with no clear benefit</td></tr>
+    <tr><td>Form</td><td>Just an email address or WhatsApp number, with a note on what they'll receive</td><td>Long forms asking for company, budget and phone</td></tr>
+    <tr><td>Closing</td><td>A clear close button; the Escape key and clicking outside also work</td><td>Hidden or delayed close buttons</td></tr>
+    <tr><td>Mobile</td><td>A small bottom banner or an inline form</td><td>A full-screen overlay</td></tr>
+  </tbody>
+</table>
+<p>Two more details matter. If you collect emails or WhatsApp numbers for offers, make consent clear and mention it in your privacy policy. And make the pop-up usable with a keyboard and screen reader, so focus moves into it when it opens and returns to the page when it closes.</p>
+
+<h2>Setting it up on WordPress</h2>
+<p>There are a few common routes:</p>
+<ul>
+  <li><strong>Page builder pop-ups:</strong> Elementor Pro includes a pop-up builder with exit-intent, scroll and timing triggers, which is handy if your site already uses it.</li>
+  <li><strong>Pop-up plugins:</strong> tools such as Popup Maker handle triggers, page targeting and frequency; some offer exit intent only in paid versions, so check current plans.</li>
+  <li><strong>Hosted services:</strong> platforms such as OptinMonster add advanced targeting and testing, usually on a subscription.</li>
+</ul>
+<p>Whatever you choose, watch the speed cost. Pop-up tools add scripts and styles to every page they load on, so load them only where needed and check your mobile speed scores before and after. A pop-up with a large image or extra fonts can slow the page for everyone, including visitors who never see it.</p>
+
+<h2>Measure whether it's worth it</h2>
+<p>A pop-up's own sign-up rate only tells half the story. Also check:</p>
+<ul>
+  <li>Whether total enquiries, sales or sign-ups actually rose, rather than just moving from your inline forms to the pop-up</li>
+  <li>Whether engagement dropped on pages where the pop-up shows</li>
+  <li>Whether the people who sign up ever become customers</li>
+  <li>Any comments from customers or staff about the pop-up</li>
+</ul>
+<p>Change one thing at a time, such as the offer or the trigger, and give each version enough traffic to judge fairly. See <a href="/blog/conversion-rate-optimization-basics/">CRO basics</a> for a simple testing approach.</p>
+
+<p>Want lead capture that works without annoying visitors? See <a href="/landing-page-design/">landing page design</a> or <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'google-reviews-on-website',
+    seoTitle: 'How to Show Google Reviews on Your Website',
+    title: 'How to Show Google Reviews on Your Website: Widgets, Speed and SEO',
+    description: 'Ways to show Google reviews on your website, how review widgets affect speed, keeping it honest, and why your own review stars rarely appear in Google results.',
+    date: '2026-09-28',
+    category: 'Growth',
+    related: ['wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>Your Google reviews already persuade people who find you on Maps. But many visitors reach your website another way: from an ad, a social media post, a WhatsApp link or a search for your business name. Showing your Google reviews on the site puts that proof in front of them too, at the moment they're deciding whether to get in touch.</p>
+<p>This guide is about displaying the reviews you already have. If you need more of them first, see <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a>.</p>
+
+<h2>Why Google reviews work well on a website</h2>
+<ul>
+  <li><strong>They're verifiable.</strong> Visitors know you can't simply write them yourself, and they can click through to check.</li>
+  <li><strong>They show volume and recency.</strong> A rating backed by many reviews, some from last month, is more convincing than three undated quotes.</li>
+  <li><strong>They answer doubts.</strong> Reviews often mention exactly what new customers worry about: punctuality, cleanliness, pricing and how problems were handled.</li>
+</ul>
+<p>They complement, rather than replace, detailed testimonials and case studies; see <a href="/blog/collect-display-customer-testimonials/">collecting and displaying testimonials</a>.</p>
+
+<h2>Four ways to show them</h2>
+<table>
+  <thead><tr><th>Method</th><th>Good for</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Hand-picked reviews added as normal text</td><td>Speed, full design control, and choosing reviews that mention specific services</td><td>Needs updating by hand; must be copied word for word</td></tr>
+    <tr><td>A review widget (plugin or hosted service)</td><td>Showing new reviews automatically</td><td>Extra scripts; some can only fetch a handful of reviews; some need a Google API key or a subscription</td></tr>
+    <tr><td>A rating badge linking to your Google profile</td><td>A light proof point in the header, footer or near forms</td><td>Must show your current rating and review count accurately</td></tr>
+    <tr><td>A Google Maps embed</td><td>Contact pages, where the map shows your location and often your rating</td><td>Map embeds are heavy, so load them only where needed</td></tr>
+  </tbody>
+</table>
+<p>For most small businesses, a mix works best: a handful of hand-picked reviews on key pages, plus a clear "Read all our reviews on Google" link to your profile.</p>
+
+<h2>Watch the speed cost</h2>
+<p>Review widgets are a common, quiet cause of slow pages. Many load JavaScript from another server, then fetch the reviews, reviewer photos and sometimes fonts after the page appears. That can delay loading, make the page feel less responsive and cause content to jump when the widget finally shows up. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+<ul>
+  <li><strong>Prefer tools that store reviews on your own server</strong> and output them as normal HTML, rather than loading everything in the visitor's browser.</li>
+  <li><strong>Reserve space</strong> for the widget so the layout doesn't shift when it loads.</li>
+  <li><strong>Load it only where it's needed</strong>, not on every page of the site.</li>
+  <li><strong>Keep it below the first screen</strong> where possible, and lazy-load it.</li>
+  <li><strong>Skip auto-scrolling carousels.</strong> They're hard to read and awkward for keyboard and screen reader users. A simple grid of three to six reviews works better.</li>
+  <li><strong>Test before and after</strong> on a mid-range phone and with PageSpeed Insights.</li>
+</ul>
+
+<h2>Keep it honest</h2>
+<p>Featuring your best reviews is normal. Misleading people is not.</p>
+<ul>
+  <li><strong>Copy reviews word for word.</strong> Don't reword them; if you shorten one, mark the cut with an ellipsis and never change the meaning.</li>
+  <li><strong>Credit them as they appear on Google</strong>, usually with the reviewer's name as shown and the date. If a review touches on something sensitive, such as a medical treatment, consider asking the reviewer before featuring it.</li>
+  <li><strong>Show your real overall rating and review count</strong>, and link to your Google profile so visitors can read everything, including the less glowing ones.</li>
+  <li><strong>Keep numbers current.</strong> A badge showing a rating you no longer have is misleading.</li>
+  <li><strong>Never invent, buy or borrow reviews</strong>, and don't present Google reviews as testimonials written for your website.</li>
+</ul>
+<p>Misleading claims in advertising can also fall foul of consumer protection rules in India, so if you're unsure about something, ask your lawyer. Professions with their own advertising rules, such as doctors and advocates, should check those too.</p>
+
+<h2>Why your review stars rarely show in Google results</h2>
+<p>Many business owners hope that adding reviews to their site will put gold stars next to their listing in Google. For most local businesses, it won't.</p>
+<ul>
+  <li><strong>Self-serving reviews don't get stars.</strong> Since 2019, Google hasn't shown review stars for reviews a business displays about itself, whether added directly or through an embedded widget, when they're marked up as LocalBusiness or Organization reviews.</li>
+  <li><strong>Copied reviews shouldn't be marked up.</strong> Google's review snippet guidelines say ratings should come directly from users of your site, not be gathered from other websites. Marking up Google reviews shown on your site goes against that.</li>
+  <li><strong>Bad markup carries risk.</strong> Some widgets add review schema automatically. Structured data that breaks Google's guidelines can be ignored or, in serious cases, lead to a manual action. Check what your widget outputs, and switch that feature off if needed.</li>
+</ul>
+<p>Product reviews left by buyers on your own online store are different, and can be eligible for stars on product pages. But for a local business, your stars already appear where they matter most: your Google Business Profile in Maps and local results. On your website, treat reviews as proof for visitors, not a search trick. See <a href="/blog/schema-markup-explained/">schema markup explained</a> for markup that is worth adding.</p>
+
+<h2>Where to place reviews</h2>
+<ul>
+  <li><strong>Near calls to action:</strong> beside the enquiry form, booking button or WhatsApp button</li>
+  <li><strong>On service pages:</strong> reviews that mention that particular service</li>
+  <li><strong>On landing pages for ads:</strong> visitors from ads usually haven't seen your profile yet</li>
+  <li><strong>On the contact page:</strong> reassurance just before someone gets in touch</li>
+</ul>
+
+<h2>Keep the loop going</h2>
+<p>Displaying reviews works best alongside a steady habit of asking for them and replying to them:</p>
+<ul>
+  <li>Swap in a recent review every month or two so the site never looks stale</li>
+  <li>Link your "Read all reviews" button to your Google profile, and add your review link to thank-you pages</li>
+  <li>Reply to reviews on Google, including critical ones, because website visitors who click through will read your replies</li>
+</ul>
+
+<p>Want reviews on your site that build trust without slowing it down? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> for structured data done properly.</p>
 `,
   },
 ];

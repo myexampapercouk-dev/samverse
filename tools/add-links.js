@@ -403,6 +403,10 @@ const LINKS = [
   ['thank-you-pages-forms', '<h2>Tracking conversions</h2>', '<p>A promise like "within 24 hours" only helps if you keep it; see <a href="/blog/respond-to-website-enquiries-fast/">how to respond to website enquiries fast</a> for a simple routine.</p>\n\n'],
   ['wordpress-form-plugins-compared', '<h2>Email delivery matters more than the plugin</h2>', '<p>To send every entry on to a CRM, Google Sheet or email tool automatically, see <a href="/blog/connect-website-forms-to-crm/">connecting WordPress forms to a CRM or Google Sheets</a>.</p>\n\n'],
   ['landing-page-mistakes-google-ads', '<h2>7. No trust signals</h2>', '<p>If you do need more detail before calling, a short multi-step form can collect it without a wall of fields; see <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms for lead qualification</a>.</p>\n\n'],
+  // Agent 17
+  ['whatsapp-on-business-website', '<h2>Best practices</h2>', '<p>These same features can also help you win repeat business from past customers; see <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a>.</p>\n\n'],
+  ['conversion-rate-optimization-basics', '<h2>Quick wins that usually work</h2>', '<p>Pop-ups are a common thing to test; see <a href="/blog/exit-intent-popups/">when exit-intent pop-ups help and when they hurt</a> before adding one.</p>\n\n'],
+  ['collect-display-customer-testimonials', '<h2>Permissions and honesty</h2>', '<p>Your Google reviews can sit alongside testimonials in these places too; see <a href="/blog/google-reviews-on-website/">how to show Google reviews on your website</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
