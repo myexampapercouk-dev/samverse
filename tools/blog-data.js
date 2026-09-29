@@ -139,6 +139,8 @@ module.exports = [
   <li><strong>Content-heavy site or blog:</strong> WordPress, without question.</li>
 </ul>
 
+<p>Also weighing up Squarespace? See <a href="/blog/wordpress-vs-squarespace/">WordPress vs Squarespace</a> for ownership, long-term costs and Indian payments.</p>
+
 <h2>Already on Wix or another platform?</h2>
 <p>You can move to WordPress. Your pages and content are rebuilt on WordPress, and redirects protect any Google rankings you already have. It's a common upgrade once a business outgrows a DIY builder.</p>
 `,
@@ -4617,6 +4619,8 @@ module.exports = [
   <li><strong>Consider buying common variations</strong> (.com and .in, or a common misspelling) and redirecting them to your main domain.</li>
   <li><strong>Register it in your own name and account</strong>, never your developer's or agency's.</li>
 </ol>
+
+<p>Still undecided on the extension? See <a href="/blog/in-vs-com-domain/">.in vs .com for Indian businesses</a>.</p>
 
 <h2>Check its history</h2>
 <p>If a domain was used before, check what was on it using web archive tools. A domain previously used for spam can carry baggage.</p>
@@ -11521,6 +11525,8 @@ module.exports = [
   <li>The site is mainly informational, with few features</li>
   <li>You're testing an idea before investing more</li>
 </ul>
+
+<p>Thinking of a free builder like Google Sites? Here's <a href="/blog/wordpress-vs-google-sites/">when a free website is enough, and when it isn't</a>.</p>
 
 <h2>Hiring a developer makes sense when...</h2>
 <ul>
@@ -23952,6 +23958,247 @@ Template: astra
 </ul>
 
 <p>Seeing memory errors or a critical error right now? I fix broken WordPress sites and track down the plugin or setting behind the problem; see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-vs-squarespace',
+    seoTitle: 'WordPress vs Squarespace for a Business Website',
+    title: 'WordPress vs Squarespace: Which Is Better for Your Business Website?',
+    description: 'WordPress vs Squarespace for an Indian business: ownership, flexibility, cost over time, UPI and Indian payment gateways, SEO control, and when each one fits.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-migration'],
+    body: `
+<p>Squarespace is known for polished templates and an all-in-one setup where hosting, design and security come in one subscription. WordPress is known for flexibility and ownership. Both can produce a professional business website. The real question is which one suits your business over the next five years, not just the next five days, especially if you're running it from India.</p>
+
+<h2>Quick comparison</h2>
+<table>
+  <thead><tr><th></th><th>WordPress (self-hosted)</th><th>Squarespace</th></tr></thead>
+  <tbody>
+    <tr><td><strong>What it is</strong></td><td>Open-source software you install on hosting you choose</td><td>Hosted website builder, paid by subscription</td></tr>
+    <tr><td><strong>Ownership</strong></td><td>Full; move the whole site to any host or developer</td><td>Your content and domain are yours, but the site runs only on Squarespace</td></tr>
+    <tr><td><strong>Running costs</strong></td><td>Hosting, domain, optional licences and maintenance</td><td>Ongoing plan fee; store features on higher plans</td></tr>
+    <tr><td><strong>Design</strong></td><td>Anything, from themes to fully custom builds</td><td>Polished templates with less room to go beyond them</td></tr>
+    <tr><td><strong>Features</strong></td><td>Tens of thousands of plugins plus custom code</td><td>Built-in tools and a smaller extensions ecosystem</td></tr>
+    <tr><td><strong>Indian payments</strong></td><td>Wide choice of Indian gateways, UPI and COD</td><td>Limited set of payment processors</td></tr>
+    <tr><td><strong>Maintenance</strong></td><td>Updates and backups are your (or your developer's) job</td><td>Handled by Squarespace</td></tr>
+  </tbody>
+</table>
+<p>One note: this compares self-hosted WordPress (from WordPress.org), which is what most business sites use, not the hosted WordPress.com service.</p>
+
+<h2>Ownership: who really controls your website</h2>
+<p>With Squarespace, your text, images and domain belong to you, but the website itself only exists on Squarespace. If you leave, the design and most features stay behind. Squarespace offers a limited export, mainly pages and blog posts in a WordPress-compatible format, so moving away usually means rebuilding.</p>
+<p>WordPress is open-source. Your site is a set of files and a database you can copy to any host, and any WordPress developer can work on it. If a hosting company or developer disappoints you, you take everything and go.</p>
+<p>Whichever you choose, register your domain in your own account, ideally with a separate registrar, and keep every login in your name. The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> covers what to hold on to.</p>
+
+<h2>Flexibility and features</h2>
+<p>Squarespace's strength is that everything is designed to work together. Galleries, forms, a blog and simple selling are built in, and there are no plugins to update or conflict. For a site that needs exactly what the platform offers, that simplicity is valuable.</p>
+<p>The limits show when your business needs something specific:</p>
+<ul>
+  <li>Booking rules that match how your clinic or salon actually runs</li>
+  <li>Hindi or regional-language versions of your pages</li>
+  <li>Enquiry forms that feed a CRM or Google Sheet</li>
+  <li>Custom tools such as quote calculators, dealer portals or product catalogues with filters</li>
+  <li>Directories, memberships or course platforms</li>
+</ul>
+<p>On WordPress, these are usually a plugin or a small piece of custom development away. On Squarespace, you're limited to what the platform and its extensions support.</p>
+
+<h2>Cost over time</h2>
+<p>Squarespace's subscription covers hosting, SSL, templates, security and support. You keep paying for as long as the site exists, and commerce features generally sit on higher plans. Check current plans, what each includes, and how you'll be billed and taxed from India.</p>
+<p>WordPress software is free. You pay for hosting and a domain, sometimes premium theme or plugin licences, and usually a developer to build and maintain it. That often means a higher cost upfront, but you choose every ongoing expense and can change suppliers at any time.</p>
+<p>To compare fairly, add up three to five years on each side, including your own time. A DIY Squarespace site costs hours of your evenings; a developer-built WordPress site costs money but frees you to run the business. For a ballpark on the WordPress side, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<h2>Indian payments and selling online</h2>
+<p>This is where the difference is sharpest for Indian businesses. Squarespace's checkout works with a small set of payment processors, and popular Indian gateways, UPI and cash on delivery are generally not among its built-in options. If you plan to sell to customers in India, check what's currently available for an India-registered business before you commit.</p>
+<p>WordPress with WooCommerce connects to Indian gateways such as Razorpay, PayU and Cashfree, which support UPI, cards, net banking and wallets. It also works with GST invoice plugins, COD rules and Indian courier integrations. See <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a>.</p>
+<p>If your website only needs to generate calls and WhatsApp enquiries, payments matter less, and the decision comes down to ownership, features and cost.</p>
+
+<h2>SEO and speed</h2>
+<p>Both platforms handle the basics: editable page titles and meta descriptions, clean URLs, automatic sitemaps, SSL and redirects. A Squarespace site can rank well for a local business.</p>
+<p>The difference is control. On Squarespace, you work within the settings the platform exposes, and you can't choose your hosting or fine-tune performance. On WordPress, SEO plugins, schema markup, caching and image optimisation give you full control, but also full responsibility. A poorly built WordPress site with heavy plugins can easily be slower than a Squarespace one.</p>
+<p>In practice, rankings depend far more on your content, service pages, Google Business Profile and reviews than on the platform.</p>
+
+<h2>Which should you choose?</h2>
+<h3>Squarespace fits if...</h3>
+<ul>
+  <li>You're a photographer, designer, artist or small café that wants a polished look quickly</li>
+  <li>You'll build and edit the site yourself and don't want to think about updates</li>
+  <li>You don't need Indian payment gateways, bookings with custom rules or integrations</li>
+  <li>You're comfortable paying a subscription for as long as the site runs</li>
+</ul>
+<h3>WordPress fits if...</h3>
+<ul>
+  <li>Your website is a main source of leads or sales, for a clinic, manufacturer, consultant or service business</li>
+  <li>You want to take payments through Indian gateways and UPI, or run a proper online store</li>
+  <li>You publish content regularly or plan to grow with new pages and features</li>
+  <li>You want full ownership and the freedom to hire any developer</li>
+</ul>
+<p>Comparing other builders too? See <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a>.</p>
+
+<h2>Moving from Squarespace to WordPress later</h2>
+<p>It's common for a business to start on Squarespace and outgrow it. The move is manageable: the design and pages are rebuilt on WordPress, content is brought across, every old URL is mapped and redirected with 301 redirects, and the domain is pointed to the new hosting. Done carefully, you keep the Google rankings you've already earned.</p>
+
+<p>Want a WordPress site you fully own, or need to move an existing Squarespace site? See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-vs-google-sites',
+    seoTitle: 'WordPress vs Google Sites: Is a Free Website Enough?',
+    title: 'WordPress vs Google Sites: Is a Free Website Good Enough for Your Business?',
+    description: 'Google Sites and other free builders vs a WordPress website: the limits of free, professionalism, SEO, when a free site is genuinely enough and when to upgrade.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'website-for-startups'],
+    body: `
+<p>Google Sites costs nothing, takes an afternoon to learn and is hosted by Google. Free plans on other website builders make similar promises. So it's fair to ask why any small business should pay for a WordPress website. The honest answer: sometimes free is enough, and sometimes it quietly costs you customers. Here's how to tell which situation you're in.</p>
+
+<h2>What Google Sites does well</h2>
+<p>Google Sites is a simple drag-and-drop page builder that comes free with a Google account. Its strengths are real:</p>
+<ul>
+  <li><strong>No cost</strong> for the builder or hosting, and no servers to manage</li>
+  <li><strong>Easy editing</strong>, with several people able to work on the same site</li>
+  <li><strong>Google integrations:</strong> embed Docs, Sheets, Slides, Forms, Maps, Calendar and YouTube videos</li>
+  <li><strong>Security and uptime</strong> handled by Google</li>
+</ul>
+<p>That makes it good for internal team sites, event pages, project pages, class information and quick one-page summaries. It was never designed to be a full business website platform, and that's where the gaps appear.</p>
+
+<h2>Where free builders fall short</h2>
+<p>Google Sites and the free plans of other builders share similar limits:</p>
+<ul>
+  <li><strong>Design:</strong> a handful of themes and layouts, so your site looks like many others</li>
+  <li><strong>No proper blog:</strong> Google Sites has no posts, categories or feeds, which makes regular content hard</li>
+  <li><strong>No payments or bookings:</strong> you can link out or embed other tools, but nothing is built in</li>
+  <li><strong>Basic forms:</strong> usually an embedded Google Form rather than a form that fits your design and feeds your CRM</li>
+  <li><strong>Limited tracking:</strong> a basic analytics connection, with little room for tracking calls, WhatsApp clicks or form submissions properly</li>
+  <li><strong>Free plans elsewhere</strong> typically put you on the platform's subdomain, show their branding or ads, and cap features to encourage an upgrade</li>
+</ul>
+
+<h2>Professionalism and trust</h2>
+<p>A new Google Sites site lives at an address like sites.google.com/view/yourbusiness, and free plans on other builders use similar subdomains. On a visiting card or a quotation, that looks temporary. Customers comparing you with two or three competitors notice these details, and so do B2B buyers, investors and job applicants.</p>
+<p>At a minimum, connect your own domain (Google Sites supports custom domains; follow Google's current help pages for the steps) and use business email rather than a free address. See <a href="/blog/business-email-options/">business email options</a>.</p>
+<p>There's also platform risk. Free products change or disappear. Google itself switched off the free websites it used to offer through Business Profiles in 2024, and businesses relying on them had to find another home quickly.</p>
+
+<h2>SEO: can a Google Sites page rank?</h2>
+<p>Yes, Google can index a Google Sites page, and it may show up when someone searches your exact business name. Being a Google product gives it no ranking advantage, though.</p>
+<p>Ranking for searches like "physiotherapist in Indore" or "packaging supplier in Ahmedabad" usually needs more than a free builder offers:</p>
+<ul>
+  <li>Separate, detailed pages for each service and area</li>
+  <li>Control over page titles, meta descriptions and heading structure</li>
+  <li>Structured data (schema) that tells Google your address, hours and services</li>
+  <li>A blog or resources section that answers customer questions</li>
+  <li>Fast, mobile-friendly pages you can tune</li>
+</ul>
+<p>For local businesses, your Google Business Profile often matters more than your website for "near me" searches, and it's free. Start with the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+
+<h2>Side-by-side</h2>
+<table>
+  <thead><tr><th></th><th>Google Sites / free builders</th><th>WordPress</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Cost</strong></td><td>Free (custom domain extra)</td><td>Hosting, domain and usually a developer</td></tr>
+    <tr><td><strong>Address</strong></td><td>Platform subdomain unless you connect a domain</td><td>Your own domain</td></tr>
+    <tr><td><strong>Design</strong></td><td>Limited themes</td><td>Fully flexible</td></tr>
+    <tr><td><strong>Blog</strong></td><td>None or basic</td><td>Built in</td></tr>
+    <tr><td><strong>Payments and bookings</strong></td><td>Only via outside links or embeds</td><td>Plugins for UPI, gateways and bookings</td></tr>
+    <tr><td><strong>SEO control</strong></td><td>Minimal</td><td>Full</td></tr>
+    <tr><td><strong>Maintenance</strong></td><td>None needed</td><td>Updates, backups and security</td></tr>
+  </tbody>
+</table>
+
+<h2>When free is genuinely enough</h2>
+<ul>
+  <li>You're testing a business idea and need something live this week</li>
+  <li>You need a simple page for an event, a workshop or an internal team</li>
+  <li>You're a small local shop that gets customers through walk-ins, Google Maps and WhatsApp</li>
+  <li>You need a stopgap while a proper website is being built</li>
+</ul>
+<p>If you go free, connect your own domain from day one, register that domain in your own account, and put your phone number and WhatsApp link on every page. For shops, see <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website?</a></p>
+
+<h2>When it's time for WordPress</h2>
+<ul>
+  <li>Your website should bring in enquiries, not just confirm you exist</li>
+  <li>You need service pages, location pages or a blog to rank on Google</li>
+  <li>You want online payments, appointment booking or product catalogues</li>
+  <li>Forms should go to your CRM, a Google Sheet or WhatsApp automatically</li>
+  <li>You sell to businesses, or need to look credible to investors and partners</li>
+</ul>
+<p>A small, well-built WordPress site doesn't have to be expensive. You can start with five or six pages and add more as the business grows. Get a ballpark with the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<h2>Moving from Google Sites to WordPress</h2>
+<p>There's no direct export from Google Sites to WordPress, so content is copied across and pages are rebuilt, usually with better structure along the way. If your site used your own domain, you simply point it to the new hosting. If it only lived on a sites.google.com address, you can't redirect those old URLs, which is one more reason to use your own domain from the start.</p>
+
+<p>Ready for a website that grows with your business? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/website-for-startups/">websites for startups</a> if you're just getting going.</p>
+`,
+  },
+  {
+    slug: 'in-vs-com-domain',
+    seoTitle: '.in vs .com: Which Domain Should an Indian Business Choose?',
+    title: '.in vs .com (and .co.in): Which Domain Should an Indian Business Choose?',
+    description: '.in, .com or .co.in for an Indian business? How your audience, name availability, trust, typing habits and Google country targeting should shape the choice.',
+    date: '2026-09-28',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'website-for-startups'],
+    body: `
+<p>You've settled on a business name, and now the registrar is offering .com, .in, .co.in and a dozen newer extensions. Which one should you pick? For most Indian businesses there's no single wrong answer, but the right choice depends on who your customers are and what's actually available. This guide focuses on the extension; for choosing the name itself, see <a href="/blog/choose-domain-name-business/">how to choose a domain name for your business</a>.</p>
+
+<h2>The short answer</h2>
+<ul>
+  <li><strong>Customers mainly in India:</strong> .in is a strong, natural choice, and .com works just as well if you can get it</li>
+  <li><strong>Customers abroad, or plans to go global:</strong> .com, because it carries no country signal</li>
+  <li><strong>New business choosing today:</strong> prefer .in over .co.in; it's shorter and more familiar</li>
+  <li><strong>If both are available:</strong> register .in and .com, use one as your main address and redirect the other</li>
+</ul>
+
+<h2>Start with your audience</h2>
+<p>Think about where your customers are and what they expect.</p>
+<ul>
+  <li><strong>Local and national businesses:</strong> clinics, coaching institutes, contractors, shops and service companies serving Indian customers. A .in address clearly says "Indian business", which is usually a plus.</li>
+  <li><strong>Exporters and international B2B:</strong> overseas buyers are most familiar with .com. A .in address isn't a problem in itself, but it signals a focus on India, which isn't always the message you want.</li>
+  <li><strong>SaaS, IT services and startups with global ambitions:</strong> .com is the safer long-term choice, even if your first customers are in India.</li>
+</ul>
+
+<h2>Availability and cost</h2>
+<p>Short, memorable .com names are hard to find because so many are already registered. The same name is often still free as a .in. Before choosing, check what's on the .com version of your name:</p>
+<ul>
+  <li><strong>Parked or unused:</strong> manageable, but some customers will land there by mistake</li>
+  <li><strong>For sale:</strong> only worth buying if the price makes sense for your business</li>
+  <li><strong>An active business in your field:</strong> risky, because customers and emails will go to them, and there may be trademark issues</li>
+</ul>
+<p>Don't twist your name into a hyphenated or misspelt .com just to get the extension. A clean .in beats an awkward .com. And whichever you choose, check the renewal price, not just the first-year offer.</p>
+
+<h2>Trust, familiarity and typing habits</h2>
+<p>.com is the default most people type without thinking. Indian customers are also used to seeing .in addresses, so either looks professional.</p>
+<p>The practical risk is habit. If your address is yourbrand.in, some people will type yourbrand.com, especially when writing your email address. If someone else owns that .com, those visitors and emails go to them. Owning both extensions solves this.</p>
+<h3>What about .co.in and other options?</h3>
+<ul>
+  <li><strong>.co.in</strong> was common before plain .in registrations became popular. It's longer, and people easily shorten it to .co or .in by mistake. If you've used one for years it's fine to keep; for a new business, .in is simpler.</li>
+  <li><strong>.org.in</strong> suits non-profits and trusts; <strong>.gov.in</strong> and academic extensions like <strong>.ac.in</strong> are restricted to eligible government and educational institutions.</li>
+  <li><strong>Newer extensions</strong> such as .shop or .tech can work for strong brands but are less familiar to many customers.</li>
+</ul>
+
+<h2>SEO: does the extension affect rankings?</h2>
+<p>A little, in a specific way. Google treats .in as a country-code domain, so it takes it as a signal that the site is especially relevant to users in India. That helps Google understand your audience; it doesn't make you rank higher on its own.</p>
+<p>A .com is generic and has no country attached. Google works out who it's for from other signals: your content and language, addresses and phone numbers, links from Indian websites, your Google Business Profile and, for multi-country sites, hreflang tags. Google has also retired the old country-targeting setting in Search Console, so you can't simply set a country for a .com there any more.</p>
+<ul>
+  <li>A .com site can rank perfectly well in India</li>
+  <li>A .in site can rank abroad, but the country signal works against it for international audiences</li>
+  <li>For local searches like "CA in Jaipur", your Google Business Profile, reviews and location pages matter far more than the extension; see the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian businesses</a></li>
+  <li>Keywords in the domain carry little weight, so choose for your brand, not for search</li>
+</ul>
+
+<h2>Buying both, and setting it up properly</h2>
+<ol>
+  <li><strong>Register both in your own account</strong>, not your developer's, and turn on auto-renew</li>
+  <li><strong>Pick one primary domain</strong> for your website, business email, visiting cards and Google Business Profile</li>
+  <li><strong>Redirect the other</strong> with a permanent 301 redirect to the same page on your main domain</li>
+  <li><strong>Don't run two copies</strong> of the same website on both extensions; that creates duplicate content</li>
+  <li><strong>Consider email forwarding</strong> on the second domain, so messages sent to the wrong extension still reach you</li>
+</ol>
+<p>Every extra domain is one more renewal to track; keep them on the <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a>.</p>
+
+<h2>Switching extensions later</h2>
+<p>If you start on .co.in or .in and later move to a .com, it's very doable. Every old URL is 301-redirected to its new address, Search Console's Change of Address tool tells Google about the move, and your email, Google Business Profile, social profiles and printed material are updated. Expect some temporary ranking movement while Google processes the change. Keep the old domain renewed permanently so the redirects keep working.</p>
+
+<p>Setting up a new business website, or moving to a new domain? See <a href="/website-for-startups/">websites for startups</a> and <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
 ];

@@ -412,5 +412,8 @@
  "blog-fix-inp-interaction-to-next-paint": "045873afc99a83653361b8dd64dfb6d22c317798",
  "blog-choose-wordpress-maintenance-provider": "588e338d022ea1dce926779d450a8b0d1b113b3c",
  "blog-wordpress-cron-explained": "96c4ede82f016c209161e635aeec4990a42e4437",
- "blog-wordpress-memory-limit-errors": "0e99632ad42a848a36bc9876d45cfa740cbba0ff"
+ "blog-wordpress-memory-limit-errors": "0e99632ad42a848a36bc9876d45cfa740cbba0ff",
+ "blog-wordpress-vs-squarespace": "5d134114b78a12a120e0abd6a19b1118d31a743d",
+ "blog-wordpress-vs-google-sites": "6ac2b48c4c540d27000e70b32b97220d44408870",
+ "blog-in-vs-com-domain": "e42406bffc16148c3954234a692411b83202616c"
 }

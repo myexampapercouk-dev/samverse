@@ -435,6 +435,10 @@ const LINKS = [
   ['monthly-website-maintenance-plan', '<h2>Emergency support</h2>', '<p>Before signing up, see <a href="/blog/choose-wordpress-maintenance-provider/">how to choose a WordPress maintenance provider</a>, including what a useful monthly report looks like.</p>\n\n'],
   ['wordpress-backup-restore-guide', '<h2>Where to store backups</h2>', '<p>If scheduled backups sometimes don\'t run on time, WordPress\'s built-in scheduler may be the reason; see <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</p>\n\n'],
   ['fix-wordpress-critical-error', '<h2>Step 4: Fix the cause</h2>', '<p>For memory errors in detail, see <a href="/blog/wordpress-memory-limit-errors/">how to fix "Allowed memory size exhausted" errors</a>.</p>\n\n'],
+  // Agent 28
+  ['wordpress-vs-wix-vs-shopify', '<h2>Already on Wix or another platform?</h2>', '<p>Also weighing up Squarespace? See <a href="/blog/wordpress-vs-squarespace/">WordPress vs Squarespace</a> for ownership, long-term costs and Indian payments.</p>\n\n'],
+  ['hire-developer-vs-diy-website', '<h2>Hiring a developer makes sense when...</h2>', '<p>Thinking of a free builder like Google Sites? Here\'s <a href="/blog/wordpress-vs-google-sites/">when a free website is enough, and when it isn\'t</a>.</p>\n\n'],
+  ['choose-domain-name-business', '<h2>Check its history</h2>', '<p>Still undecided on the extension? See <a href="/blog/in-vs-com-domain/">.in vs .com for Indian businesses</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
