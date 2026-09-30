@@ -6172,6 +6172,8 @@ module.exports = [
   <li>Show estimated delivery times on product and checkout pages</li>
 </ul>
 
+<p>A <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checker</a> on product pages lets shoppers see delivery dates and COD availability before they reach checkout.</p>
+
 <h2>6. Packaging</h2>
 <p>Choose packaging that protects products and suits courier volumetric weight rules. Oversized boxes increase costs.</p>
 
@@ -12786,6 +12788,8 @@ module.exports = [
   <li>Credit terms or payment on invoice for approved accounts</li>
   <li>GST invoices; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a></li>
 </ul>
+
+<p>For the technical setup of dealer roles, price tiers and hidden trade prices, see <a href="/blog/woocommerce-wholesale-dealer-pricing/">WooCommerce wholesale and dealer pricing</a>.</p>
 
 <h2>Get found</h2>
 <ul>
@@ -22886,6 +22890,8 @@ Template: astra
 </ul>
 <p>Watch the wording of the "Completed" email. Many Indian stores mark orders complete at dispatch, so a message saying "your order is complete" can arrive days before the parcel. Either reword it or add a custom "Shipped" status with its own email. Keep promotions light: a small "you might also like" block is fine, but order emails should mainly be about the order.</p>
 
+<p>Custom statuses like "Shipped" work best as part of a clear <a href="/blog/woocommerce-order-management-workflow/">order management workflow</a> that the whole team follows.</p>
+
 <h2>Make sure the emails arrive</h2>
 <p>The best-designed email is useless in the spam folder. By default WordPress sends mail through your web server, which many email providers treat with suspicion.</p>
 <ol>
@@ -27417,6 +27423,261 @@ Template: astra
 <p>Many fixes are content edits you can make yourself, like alt text, headings and link wording. Others, such as focus styles, menus and theme colours, usually need a developer. Re-run the audit after major changes and every six months or so. If many of your customers are older, add the checks in <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>
 
 <p>Need help fixing what your audit finds, or want accessibility built in from the start? See <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/website-redesign/">website redesign</a>.</p>
+`,
+  },
+  {
+    slug: 'pincode-delivery-checker-woocommerce',
+    title: 'Pin Code Delivery Checkers for Indian WooCommerce Stores',
+    description: 'How a pin code checker helps an Indian WooCommerce store: courier serviceability, COD by pin code, honest delivery dates and the main ways to set one up.',
+    date: '2026-09-30',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'website-for-startups'],
+    body: `
+<p>Few things annoy a shopper more than filling a cart, reaching checkout and only then finding out you don't deliver to their area, or that cash on delivery isn't available there. A pin code checker on the product page answers those questions before the shopper commits. Here's why Indian WooCommerce stores benefit from one, where the delivery data comes from and the main ways to set it up.</p>
+
+<h2>Why pin code checks matter in India</h2>
+<p>Delivery coverage in India is uneven. A courier that reaches every corner of a metro may not serve some rural, hilly or remote pin codes at all, or may serve them for prepaid parcels only. Without a checker, the shopper finds this out too late, or you find out after the order is placed.</p>
+<ul>
+  <li><strong>Fewer cancelled orders:</strong> you stop accepting orders you can't fulfil</li>
+  <li><strong>Fewer support messages:</strong> "Do you deliver to my area?" is one of the most common WhatsApp questions stores get</li>
+  <li><strong>More confidence for first-time buyers:</strong> seeing "Delivery available, COD available" reassures people who don't know your brand yet</li>
+  <li><strong>Local-only products:</strong> cakes, flowers, fresh food and heavy items often need a delivery radius, and a checker enforces it politely</li>
+</ul>
+
+<h2>What a good checker tells the shopper</h2>
+<p>The shopper types a six-digit pin code near the Add to Cart button and gets a clear answer in a second or two.</p>
+<table>
+  <thead><tr><th>Shopper's question</th><th>What the checker should show</th></tr></thead>
+  <tbody>
+    <tr><td>Can you deliver here?</td><td>Yes or no, and if no, an alternative such as pickup or a WhatsApp enquiry</td></tr>
+    <tr><td>When will it arrive?</td><td>An estimated date or date range</td></tr>
+    <tr><td>Can I pay cash on delivery?</td><td>Whether COD is available for that pin code</td></tr>
+    <tr><td>What will delivery cost?</td><td>The shipping charge, or how close they are to free shipping</td></tr>
+  </tbody>
+</table>
+<p>Keep the wording friendly. "Sorry, we don't deliver to this pin code yet. Message us on WhatsApp and we'll check other options" is far better than a bare "Not serviceable".</p>
+
+<h2>Where the delivery data comes from</h2>
+<h3>A pin code list you maintain</h3>
+<p>The simplest option is a spreadsheet of pin codes you serve, often with delivery days and a COD yes/no column, uploaded to the store. It works well for local delivery and for stores using one or two couriers, but someone has to keep it up to date.</p>
+<h3>Live checks with your courier or shipping aggregator</h3>
+<p>Many couriers and shipping aggregators offer a serviceability check through their API or WooCommerce integration: send the pickup pin code, delivery pin code and parcel weight, and get back whether it's serviceable, whether COD is allowed and an estimated transit time. The data stays current, but your checker now depends on their service being fast and available, so plan a fallback message for when it isn't.</p>
+<h3>WooCommerce shipping zones</h3>
+<p>WooCommerce's built-in shipping zones can match postcodes, including ranges and wildcards, so you can offer shipping only to the areas you serve. This blocks unserviceable pin codes at checkout, but it doesn't show anything on the product page by itself. See <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a> for how zones work.</p>
+
+<h2>Cash on delivery by pin code</h2>
+<p>Serviceability and COD are separate questions. A courier may deliver prepaid parcels to a pin code but not accept COD there, and your own records may show that some areas refuse COD parcels far more often than others.</p>
+<ul>
+  <li><strong>Built-in option:</strong> WooCommerce lets you enable COD only for certain shipping methods, so a zone containing your COD pin codes with its own method gives basic control</li>
+  <li><strong>Plugins:</strong> for finer rules, such as COD by pin code, product or order value</li>
+  <li><strong>Show it early:</strong> tell shoppers on the product page whether COD is available, so the checkout holds no surprises</li>
+  <li><strong>Nudge prepaid:</strong> where COD isn't offered, mention UPI and any prepaid benefit right there</li>
+</ul>
+<p>For the wider picture of refused parcels and RTO costs, see <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery without losing money</a>.</p>
+
+<h2>Showing estimated delivery dates honestly</h2>
+<p>A delivery date is a promise, so calculate it carefully:</p>
+<ol>
+  <li>Start from your dispatch cut-off time (for example, orders before a certain hour ship the same day)</li>
+  <li>Add your processing time, especially for made-to-order products</li>
+  <li>Add transit days for that pin code or zone</li>
+  <li>Skip Sundays and holidays when you don't dispatch</li>
+</ol>
+<p>Unless you run your own local delivery, show a range such as "Delivered between 3 and 5 October" rather than a single date. Stretch the range during festival sales and bad weather, when couriers slow down. Keep the same estimate on the product page, at checkout and in the confirmation email, so the customer never sees three different answers.</p>
+
+<h2>Setting it up in WooCommerce</h2>
+<p>There are three main routes:</p>
+<ul>
+  <li><strong>A ready-made pin code checker plugin:</strong> you upload your pin code list and it adds the check to product pages, often with delivery days and COD flags. Choose one that is actively maintained and compatible with your WooCommerce version and theme.</li>
+  <li><strong>Your shipping aggregator's integration:</strong> some integrations include serviceability checks; otherwise a developer can connect their API to a small checker on your product page.</li>
+  <li><strong>A custom build:</strong> worth it for multiple warehouses, product-specific restrictions (fragile or perishable items) or a local delivery radius.</li>
+</ul>
+<h3>Technical details that matter</h3>
+<ul>
+  <li><strong>Check in the background:</strong> the result should load via a small background request, so it works with page caching and doesn't slow the product page. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</li>
+  <li><strong>Mobile-friendly input:</strong> bring up the number keypad and check for six digits before sending the request</li>
+  <li><strong>Remember the pin code:</strong> keep it for the visit so shoppers don't retype it on every product, and prefill it at checkout</li>
+  <li><strong>Enforce it at checkout too:</strong> the product-page checker is a convenience, and shoppers can skip it, so checkout must also block pin codes you can't serve</li>
+</ul>
+
+<h2>Keeping the data accurate</h2>
+<ul>
+  <li>Update your pin code list whenever courier coverage or your delivery area changes, and review it at least monthly</li>
+  <li>Track delays and refused parcels by pin code, and adjust COD rules and delivery estimates accordingly</li>
+  <li>Log searches for pin codes you don't serve; they show where demand exists if you add a courier later</li>
+  <li>After every change, test a few pin codes: your own city, a metro, a remote area and an invalid code</li>
+</ul>
+
+<p>Want a pin code checker that matches your couriers, COD rules and delivery promises? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-wholesale-dealer-pricing',
+    title: 'WooCommerce Wholesale and Dealer Pricing: How to Set It Up',
+    description: 'Set up wholesale and dealer pricing in WooCommerce: user roles, price tiers, minimum quantities, hiding trade prices from the public and GST invoices.',
+    date: '2026-09-30',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'website-for-manufacturers'],
+    body: `
+<p>Selling to dealers, retailers and bulk buyers from the same WooCommerce store as your retail customers is very doable, but the setup needs care. Get it wrong and the public sees your dealer rates, or dealers get charged retail prices. This guide covers the technical side: roles, price tiers, minimum quantities, hidden prices and GST invoices. If you're still planning what a wholesale website should contain, start with the <a href="/blog/website-for-wholesalers-distributors/">wholesalers and distributors website guide</a>.</p>
+
+<h2>Write down your pricing rules first</h2>
+<p>Before touching any settings, agree the rules on paper. Most problems come from rules that were never clearly defined.</p>
+<table>
+  <thead><tr><th>Customer group</th><th>Who they are</th><th>Typical price rule</th><th>Typical payment</th></tr></thead>
+  <tbody>
+    <tr><td>Retail</td><td>The public</td><td>Standard price</td><td>UPI, cards, COD</td></tr>
+    <tr><td>Dealer</td><td>Approved shops and resellers</td><td>Fixed dealer price or a set discount</td><td>Prepaid or bank transfer</td></tr>
+    <tr><td>Distributor</td><td>Regional partners</td><td>Lower tier with larger minimums</td><td>Credit terms by agreement</td></tr>
+  </tbody>
+</table>
+<p>Also decide who approves new dealers, whether sale prices and coupons apply to dealers, and what happens when a dealer orders less than the minimum.</p>
+
+<h2>User roles and dealer registration</h2>
+<p>WooCommerce gives every shopper the standard Customer role. Wholesale pricing works by adding roles such as "Dealer" or "Distributor" and attaching prices and rules to them. Wholesale plugins usually create these roles for you, or a developer can add them in code. See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> for how roles and permissions work.</p>
+<ul>
+  <li><strong>A separate dealer registration form:</strong> business name, GSTIN, address, phone, business type and anything else you need to verify</li>
+  <li><strong>Manual approval:</strong> new applicants start as normal customers or pending accounts; you check their details, then assign the dealer role</li>
+  <li><strong>Approval emails:</strong> tell the dealer when their account is active and how to log in</li>
+  <li><strong>Never self-selected:</strong> nobody should be able to pick the dealer role themselves at sign-up</li>
+</ul>
+
+<h2>Setting up price tiers</h2>
+<p>There are four common ways to structure trade prices, and many stores combine two of them.</p>
+<ul>
+  <li><strong>Fixed price per role:</strong> a dealer price field on each product and each variation. The most precise option, but more data entry; use CSV import and export for large catalogues.</li>
+  <li><strong>Percentage discount by role or category:</strong> for example, dealers get a set discount on one category. Less work, but check margins on low-margin items and exclude them where needed.</li>
+  <li><strong>Quantity breaks:</strong> the price drops at higher quantities or per carton. Show the tier table on the product page so dealers can see what they're working towards.</li>
+  <li><strong>Customer-specific price lists:</strong> negotiated rates for key accounts. These are the most complex and often need custom work, especially if the prices come from your accounting or ERP software.</li>
+</ul>
+<p>Remember variations: if a product comes in sizes or pack quantities, each variation usually needs its own dealer price.</p>
+
+<h2>Minimum quantities, pack sizes and order values</h2>
+<ul>
+  <li><strong>Minimum quantity per product</strong> for dealers only, so retail shoppers can still buy one</li>
+  <li><strong>Quantity steps:</strong> force multiples of a carton or pack size, so nobody orders a quantity you can't pack</li>
+  <li><strong>Minimum order value per role,</strong> with a cart message showing how much more is needed</li>
+  <li><strong>A quick order form:</strong> a table of products with quantity boxes and SKU search, plus easy reordering of past orders, saves repeat buyers a lot of clicking</li>
+</ul>
+<p>Make every rule visible before the cart. A dealer who only discovers the minimum at checkout will simply phone you instead.</p>
+
+<h2>Hiding prices from the public</h2>
+<p>You have three broad options:</p>
+<ol>
+  <li><strong>Public retail prices, dealer prices after login:</strong> the usual choice for stores that sell to both</li>
+  <li><strong>No prices for logged-out visitors:</strong> products stay visible, with "Log in for trade prices" or "Request a quote" in place of the price</li>
+  <li><strong>A fully private B2B shop:</strong> everything behind a login. Your products won't appear in Google, so keep public category or brand pages for search.</li>
+</ol>
+<p>Then check the places trade prices can leak:</p>
+<ul>
+  <li><strong>Page caching:</strong> a cached page viewed by a dealer must never be served to the public. Most caching setups skip logged-in users, but verify it, especially with server-level or CDN caching. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</li>
+  <li><strong>Structured data and product feeds:</strong> schema markup and shopping feeds should only carry your public price, if any</li>
+  <li><strong>Other price displays:</strong> search results, related products, the mini cart and quick-view pop-ups</li>
+</ul>
+
+<h2>GST, invoices and payment terms</h2>
+<ul>
+  <li><strong>Tax display:</strong> dealers usually think in prices excluding GST, while retail shoppers expect prices including it. WooCommerce's display setting applies store-wide, so showing each group its preferred format needs a plugin or custom code.</li>
+  <li><strong>B2B invoices:</strong> business buyers need their business name, GSTIN and correct place of supply on the invoice to claim input tax credit. Collect the GSTIN at registration and pass it through to the invoice. See <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>, and confirm the format with your CA.</li>
+  <li><strong>E-invoicing:</strong> businesses above certain turnover thresholds have extra e-invoicing requirements; ask your CA whether they apply to you</li>
+  <li><strong>Payment methods by role:</strong> for example, COD for retail only, and bank transfer or pay-later only for approved dealers. Credit limits and outstanding balances are usually better managed in your accounting software.</li>
+  <li><strong>A purchase order number field</strong> at checkout, which many business buyers need for their own records</li>
+</ul>
+
+<h2>Plugin or custom code, and testing</h2>
+<p>A good wholesale plugin covers most stores: roles, role-based prices, minimums, hidden prices and dealer registration. Before choosing, check it is actively maintained and works with your variations, theme and invoice plugin. Custom code makes sense for unusual rules, such as price lists synced from accounting software like Tally or pricing that depends on region.</p>
+<p>Test on a staging copy before going live. Log in as a retail customer, a dealer and a distributor, and also browse logged out. For each, check the product page, category listing, search, cart, checkout, order emails and invoice. Prices should be right everywhere, every time.</p>
+
+<p>Need dealer pricing set up properly on your store? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-order-management-workflow',
+    seoTitle: 'WooCommerce Order Management Workflow for Small Teams',
+    title: 'WooCommerce Order Management: A Simple Workflow for Small Teams',
+    description: 'A practical WooCommerce order workflow for small teams: order statuses, packing and dispatch, customer updates, returns, staff access and a daily routine.',
+    date: '2026-09-30',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-maintenance'],
+    body: `
+<p>When a store gets a few orders a week, the owner can keep everything in their head. Once orders arrive daily and two or three people share the work, things slip: a COD order ships without being confirmed, a parcel goes out without a tracking update, a refund is forgotten. A simple, written workflow fixes most of this. Here's how to set one up in WooCommerce for a small team.</p>
+
+<h2>Know what each order status means</h2>
+<p>Everyone on the team should read the statuses the same way. Here are WooCommerce's main ones:</p>
+<table>
+  <thead><tr><th>Status</th><th>What it means</th><th>What the team does</th></tr></thead>
+  <tbody>
+    <tr><td>Pending payment</td><td>Order created, payment not received, for example an abandoned UPI or card payment</td><td>Don't ship. The "Hold stock" setting can cancel unpaid orders automatically after a set time.</td></tr>
+    <tr><td>Failed</td><td>Payment failed or was declined</td><td>Don't ship; follow up if it looks genuine</td></tr>
+    <tr><td>On hold</td><td>Waiting for a payment you must confirm, such as a bank transfer</td><td>Check the bank account, then move it to Processing</td></tr>
+    <tr><td>Processing</td><td>Paid, or a COD order placed, and waiting to be fulfilled</td><td>This is the team's to-do list</td></tr>
+    <tr><td>Completed</td><td>Fulfilled</td><td>Nothing, unless the customer gets in touch</td></tr>
+    <tr><td>Cancelled</td><td>Cancelled by you or the customer</td><td>Check stock was restored and any payment refunded</td></tr>
+    <tr><td>Refunded</td><td>Fully refunded</td><td>Note the reason</td></tr>
+  </tbody>
+</table>
+
+<h2>Add a few custom statuses, only if they help</h2>
+<p>Many Indian stores find "Processing" too broad. Plugins or a little custom code can add statuses such as:</p>
+<ul>
+  <li><strong>Confirmed:</strong> a COD order verified by WhatsApp or phone</li>
+  <li><strong>Packed:</strong> ready for courier pickup</li>
+  <li><strong>Shipped:</strong> handed over, with tracking added</li>
+  <li><strong>RTO:</strong> the parcel is coming back undelivered</li>
+</ul>
+<p>Keep the list short. Every status should have a clear owner and a clear next step, or it becomes a place where orders get forgotten. A "Shipped" status also solves the common problem of the "Completed" email arriving days before the parcel; see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce order emails</a>. After adding custom statuses, check your WooCommerce Analytics settings so those orders still count correctly in sales reports.</p>
+
+<h2>Packing and dispatch, step by step</h2>
+<ol>
+  <li>Filter orders by Processing (or Confirmed), oldest first</li>
+  <li>Confirm COD orders before packing and hold any that don't respond; see <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery without losing money</a></li>
+  <li>Print packing slips and invoices in one batch; invoice and packing slip plugins can do this from the orders screen</li>
+  <li>Pick each item and check it against the slip, including size, colour and SKU</li>
+  <li>Pack, weigh and note the dimensions for the courier; for high-value parcels, take a photo or short video while packing in case of disputes</li>
+  <li>Create the shipment and label through your courier or shipping aggregator, and schedule the pickup</li>
+  <li>Add the tracking number to the order and move it to Shipped, which notifies the customer</li>
+</ol>
+<p>Set a daily dispatch cut-off time, publish it on your shipping page and stick to it. It gives the team a deadline and customers a realistic expectation.</p>
+
+<h2>Keep customers and the team informed</h2>
+<ul>
+  <li><strong>Status emails:</strong> each status change should send the customer a clear, useful message</li>
+  <li><strong>WhatsApp or SMS:</strong> for key moments such as confirmation, dispatch and out for delivery, with the customer's opt-in</li>
+  <li><strong>Order notes:</strong> WooCommerce lets you add a private note for the team (such as "customer wants evening delivery") or a note to the customer, which is emailed to them. Use private notes so nobody has to rely on memory.</li>
+  <li><strong>New order alerts:</strong> send them to the people who actually pack, not just the owner</li>
+</ul>
+
+<h2>Handle cancellations, returns and failed deliveries</h2>
+<ul>
+  <li><strong>Cancellations before dispatch:</strong> cancel the order, confirm stock went back, and refund if it was prepaid</li>
+  <li><strong>Returns:</strong> approve the request, arrange reverse pickup, inspect the item, restock it only if it's in sellable condition, then refund from the order screen. See <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce stores</a>.</li>
+  <li><strong>RTO parcels:</strong> mark them separately, contact the customer, then decide whether to reship or cancel</li>
+  <li><strong>Keep a reason log:</strong> a simple sheet of why orders were cancelled, returned or refused shows which products, sizes or pin codes cause repeated trouble</li>
+</ul>
+
+<h2>Give each person the right access</h2>
+<ul>
+  <li><strong>Shop Manager role:</strong> WooCommerce's built-in role for staff who manage orders and products without the full control of an administrator</li>
+  <li><strong>A narrower role for packing staff:</strong> a plugin or custom code can create a role that only views and updates orders</li>
+  <li><strong>One login per person:</strong> never share the admin password; separate logins, ideally with an activity log, show who changed what</li>
+  <li><strong>Remove access promptly</strong> when someone leaves</li>
+</ul>
+<p>See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> for the details.</p>
+
+<h2>A simple daily routine</h2>
+<table>
+  <thead><tr><th>When</th><th>Task</th><th>Who</th></tr></thead>
+  <tbody>
+    <tr><td>Morning</td><td>Review new orders, on-hold bank transfers and failed payments; confirm COD orders</td><td>Order desk</td></tr>
+    <tr><td>Late morning</td><td>Print slips, pick and pack</td><td>Packing</td></tr>
+    <tr><td>Before pickup</td><td>Create labels, hand parcels to the courier, add tracking</td><td>Packing</td></tr>
+    <tr><td>Afternoon</td><td>Reply to customer queries; process returns and RTOs</td><td>Order desk</td></tr>
+    <tr><td>End of day</td><td>Check nothing in Processing is older than your dispatch promise; review low-stock alerts</td><td>Owner or manager</td></tr>
+  </tbody>
+</table>
+<p>Once a week, look at dispatch times, return reasons and RTOs, and adjust the workflow. As order numbers grow, a slow order screen wastes everyone's time, so keep WooCommerce, plugins and hosting in good shape.</p>
+
+<p>Want your order workflow set up with the right statuses, emails and staff access? See <a href="/woocommerce-developer/">WooCommerce development</a>, and <a href="/wordpress-maintenance/">WordPress maintenance</a> to keep the store running smoothly.</p>
 `,
   },
 ];

@@ -487,6 +487,10 @@ const LINKS = [
   ['website-down-what-to-do', '<h2>Prevent the next outage</h2>', '<p>An outage is far easier to handle when roles, contacts and backups are sorted out in advance; see <a href="/blog/website-disaster-recovery-plan/">how to write a simple website disaster recovery plan</a>.</p>\n\n'],
   ['wordpress-user-roles-explained', '<h2>Review users regularly</h2>', '<p>To see what each account actually does once it has access, add an activity log; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs explained</a>.</p>\n\n'],
   ['website-accessibility-basics', '<h2>Accessibility is ongoing</h2>', '<p>To check your own pages step by step, work through the <a href="/blog/website-accessibility-audit-checklist/">website accessibility audit checklist</a>.</p>\n\n'],
+  // Agent 40
+  ['woocommerce-shipping-setup-india', '<h2>6. Packaging</h2>', '<p>A <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checker</a> on product pages lets shoppers see delivery dates and COD availability before they reach checkout.</p>\n\n'],
+  ['website-for-wholesalers-distributors', '<h2>Get found</h2>', '<p>For the technical setup of dealer roles, price tiers and hidden trade prices, see <a href="/blog/woocommerce-wholesale-dealer-pricing/">WooCommerce wholesale and dealer pricing</a>.</p>\n\n'],
+  ['customize-woocommerce-emails', '<h2>Make sure the emails arrive</h2>', '<p>Custom statuses like "Shipped" work best as part of a clear <a href="/blog/woocommerce-order-management-workflow/">order management workflow</a> that the whole team follows.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
