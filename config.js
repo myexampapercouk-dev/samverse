@@ -2,7 +2,7 @@
 // Used by every page on the site.
 window.SITE_CONFIG = {
   GA_ID: "G-86LW5SCHJN",           // Google Analytics 4 Measurement ID (Samverse › samverse.space)
-  ADSENSE_ID: "ca-pub-XXXXXXXXXXXXXXXX", // Google AdSense publisher ID
+  ADSENSE_ID: "ca-pub-7430741863334470", // Google AdSense publisher ID (ads load on blog articles only)
   CLARITY_ID: "ypg7gxx1ew"              // Microsoft Clarity project ID (heatmaps + recordings)
 };
 (function (c) {

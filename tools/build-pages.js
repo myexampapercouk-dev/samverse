@@ -146,6 +146,7 @@ const render = p => {
   <title>${esc(p.title)}</title>
   <meta name="description" content="${esc(p.description)}">
   <meta name="author" content="Sameer Gupta">
+  <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="${url}">
   <meta property="og:type" content="website">
@@ -395,6 +396,7 @@ const headCommon = (title, description, url, extra = '') => `<!DOCTYPE html>
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
   <meta name="author" content="Sameer Gupta">
+  <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="${url}">
   <meta property="og:site_name" content="Samverse">
