@@ -459,6 +459,22 @@ const LINKS = [
   ['equipment-rental-website-guide', '<h2>Speak to each customer type</h2>', '<p>Renting furniture and appliances to households on monthly plans works differently, with tenure-based rents, deposits and KYC; see <a href="/blog/website-for-furniture-appliance-rental/">websites for furniture and appliance rental businesses</a>.</p>\n\n'],
   ['website-for-car-dealers-workshops', '<h2>Campaigns</h2>', '<p>Selling spare parts and accessories as well? Parts catalogues need fitment search by make and model; see <a href="/blog/website-for-auto-parts-dealers/">websites for auto parts and accessories dealers</a>.</p>\n\n'],
   ['woocommerce-subscriptions', '<h2>Retention: keeping subscribers longer</h2>', '<p>Daily deliveries such as milk bring their own needs, like morning slots, cut-off times and pause and resume; see <a href="/blog/website-for-dairy-milk-delivery/">websites for dairy brands and milk delivery services</a>.</p>\n\n'],
+  // Agent 31
+  ['write-case-studies-business-website', '<h2>Make it visual</h2>', '<p>Marketing agencies are judged on this more than most businesses; see <a href="/blog/website-for-digital-marketing-agencies/">what a digital marketing agency\'s own website needs</a>.</p>\n\n'],
+  ['website-for-coworking-spaces', '<h2>Show the space</h2>', '<p>Renting quiet study seats to students rather than desks to professionals? See <a href="/blog/website-for-study-centres-libraries/">websites for self-study centres and reading libraries</a>.</p>\n\n'],
+  ['website-for-astrologers-vastu-consultants', '<h2>Content and SEO</h2>', '<p>If you also help families with matchmaking, see <a href="/blog/website-for-marriage-bureaus/">websites for marriage bureaus and matrimony services</a> for handling profiles privately and building trust.</p>\n\n'],
+  // Agent 34
+  ['website-for-physiotherapy-clinics', '<h2>Easy booking</h2>', '<p>Working mainly with children? See <a href="/blog/website-for-speech-therapy-child-development/">websites for speech therapy and child development centres</a> for what parents look for.</p>\n\n'],
+  ['website-for-interior-designers-architects', '<h2>Turn projects into case studies</h2>', '<p>Studios that produce renders and walkthroughs for other firms have a different brief; see <a href="/blog/website-for-3d-visualisation-studios/">websites for 3D visualisation studios</a>.</p>\n\n'],
+  ['does-a-local-shop-need-a-website', '<h2>What a simple shop website needs</h2>', '<p>Grocery and organic stores that deliver usually need more than a simple site; see <a href="/blog/website-for-grocery-delivery-stores/">websites for grocery delivery stores</a>.</p>\n\n'],
+  // Agent 36
+  ['schema-markup-explained', '<h2>A practical example</h2>', '<p>For a step-by-step walkthrough of these tools, and how to fix the errors and warnings they report, see <a href="/blog/test-structured-data-rich-results/">how to test structured data and rich results</a>.</p>\n\n'],
+  ['lead-magnets-newsletter-small-business', '<h2>Setting it up on WordPress</h2>', '<p>Starting from scratch? Our guide on <a href="/blog/email-newsletter-small-business/">how to start an email newsletter for your small business</a> covers tools, consent, content and measurement.</p>\n\n'],
+  ['repurpose-website-content-social-media', '<h2>Case studies work especially well</h2>', '<p>If you sell to other businesses, LinkedIn deserves extra attention; see <a href="/blog/linkedin-b2b-website-traffic/">how to use LinkedIn to bring B2B visitors to your website</a>.</p>\n\n'],
+  // Agent 35
+  ['duplicate-content-explained', '<h2>The principle</h2>', '<p>Not sure which archives count as low-value? See <a href="/blog/category-tag-pages-seo/">when to index or noindex WordPress category and tag pages</a>.</p>\n\n'],
+  ['helpful-404-pages', '<h2>Technical must-haves</h2>', '<p>A search box only helps if it returns good results; see <a href="/blog/improve-wordpress-site-search/">how to improve WordPress site search</a>.</p>\n\n'],
+  ['multilingual-wordpress-website-hindi-english', '<h2>Real examples</h2>', '<p>For URL structures, hreflang codes and checking that Google shows the right version, see <a href="/blog/hreflang-multilingual-seo-india/">hreflang and multilingual SEO for Indian websites</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
