@@ -13614,6 +13614,8 @@ module.exports = [
 <h2>Automatic discounts</h2>
 <p>For "buy 2 get 1" or tiered pricing applied automatically, you'll need a dynamic pricing plugin.</p>
 
+<p>Another way to raise order value without a coupon is to sell sensible sets or suggest the right add-ons; see <a href="/blog/woocommerce-product-bundles-upsells/">product bundles, upsells and cross-sells in WooCommerce</a>.</p>
+
 <h2>Measure results</h2>
 <p>WooCommerce reports show coupon usage and discount amounts. Compare orders and profit during campaigns with normal periods, and track campaign links with <a href="/blog/utm-tags-explained/">UTM tags</a>.</p>
 `,
@@ -22364,6 +22366,8 @@ Template: astra
   <li>Reports on active subscriptions, renewals and cancellations</li>
 </ul>
 
+<p>Selling access to members-only content or a community rather than products? See <a href="/blog/membership-website-wordpress/">how to build a membership website on WordPress</a>.</p>
+
 <h2>Recurring payments in India</h2>
 <p>This is where Indian stores need care. Under RBI rules, automatic debits generally need a mandate the customer approves upfront, with a notification before each charge and extra authentication for payments above certain limits. The details change from time to time, so check the current rules with your gateway.</p>
 <p>In practice:</p>
@@ -22461,6 +22465,8 @@ Template: astra
   <li>Plan for support: a way for students to ask questions, and clear response times</li>
   <li>Keep login simple, because forgotten passwords are a common support request</li>
 </ul>
+
+<p>For a fuller walkthrough of LMS plugins, video hosting, quizzes and certificates, see <a href="/blog/online-course-website-wordpress/">how to build an online course website on WordPress</a>.</p>
 
 <h2>Piracy: what you can and can't control</h2>
 <p>Any file a buyer can download can be shared. You can't stop piracy completely, but you can make sharing less convenient and buying more attractive.</p>
@@ -27678,6 +27684,274 @@ Template: astra
 <p>Once a week, look at dispatch times, return reasons and RTOs, and adjust the workflow. As order numbers grow, a slow order screen wastes everyone's time, so keep WooCommerce, plugins and hosting in good shape.</p>
 
 <p>Want your order workflow set up with the right statuses, emails and staff access? See <a href="/woocommerce-developer/">WooCommerce development</a>, and <a href="/wordpress-maintenance/">WordPress maintenance</a> to keep the store running smoothly.</p>
+`,
+  },
+  {
+    slug: 'membership-website-wordpress',
+    title: 'How to Build a Membership Website on WordPress',
+    description: 'How to build a membership website on WordPress: use cases, membership plugins, gated content, recurring payments in India, member experience and security.',
+    date: '2026-09-30',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'woocommerce-developer'],
+    body: `
+<p>A membership website sells access rather than a product: members-only articles, a video library, a community, a directory listing or a bundle of benefits. WordPress handles this well, but a membership site is closer to a small web application than a brochure website. Logins, payments, renewals and support all need planning before you build. Here's how to approach it.</p>
+
+<h2>Is a membership site right for you?</h2>
+<p>Memberships work best when you can keep delivering value month after month. Common examples:</p>
+<ul>
+  <li><strong>Professional associations and trade bodies:</strong> member directories, circulars, event discounts and resources</li>
+  <li><strong>Paid communities:</strong> coaching groups, hobby clubs or alumni networks with discussions and live sessions</li>
+  <li><strong>Premium content:</strong> research reports, market updates, recipes, design resources or exam notes released regularly</li>
+  <li><strong>Video libraries:</strong> yoga, fitness, music or cooking classes that members stream whenever they like</li>
+  <li><strong>Free member areas:</strong> dealer, partner or client portals where access is approved rather than paid for</li>
+</ul>
+<p>It helps to be clear about how this differs from related setups. Selling a one-time e-book or template is a digital product; see <a href="/blog/sell-digital-products-wordpress/">how to sell digital products on WordPress</a>. Charging a customer every month for a box of coffee is a subscription; see <a href="/blog/woocommerce-subscriptions/">selling subscriptions with WooCommerce</a>. A membership is about ongoing access, and it often uses subscription billing underneath.</p>
+
+<h2>Choosing a membership plugin</h2>
+<p>WordPress doesn't include paid memberships on its own, so you'll need a plugin. Established options include:</p>
+<table>
+  <thead><tr><th>Plugin</th><th>Good fit when</th></tr></thead>
+  <tbody>
+    <tr><td>MemberPress</td><td>You want an all-in-one paid plugin with levels, content rules and payments in one place</td></tr>
+    <tr><td>Paid Memberships Pro</td><td>You prefer a free core plugin and add-ons for extra features</td></tr>
+    <tr><td>Restrict Content Pro</td><td>Your main need is restricting content by membership level</td></tr>
+    <tr><td>WooCommerce Memberships</td><td>You already run WooCommerce, or want member-only products and discounts</td></tr>
+    <tr><td>Ultimate Member</td><td>Member profiles and a member directory matter more than payments</td></tr>
+  </tbody>
+</table>
+<p>Before choosing, check which payment gateways the plugin supports for automatic renewals (many are built mainly around international gateways), whether it produces proper invoices, and how easily members can upgrade, downgrade or cancel. Compare current plans, since features and pricing change.</p>
+
+<h2>Planning levels and gated content</h2>
+<p>The heart of a membership site is deciding who sees what.</p>
+<ul>
+  <li><strong>Keep levels simple:</strong> two or three levels, such as free, standard and premium, are easier to sell and support than six</li>
+  <li><strong>Restrict by rule, not page by page:</strong> gate whole categories, content types or sections so new content is protected automatically</li>
+  <li><strong>Drip content thoughtfully:</strong> releasing lessons or issues over time gives members a reason to stay, but don't hold back what you promised on day one</li>
+  <li><strong>Show a teaser:</strong> an introduction and a clear "join to read the rest" message converts better than a blank login wall</li>
+  <li><strong>Protect files, not just pages:</strong> PDFs uploaded to the media library can usually be opened by anyone with the direct link, so use your plugin's file protection if it has one, or a protected storage setup</li>
+</ul>
+<p>For SEO, Google can only rank what it can see, so keep the sales page, free articles and teasers public. If members-only articles show more to search engines than to logged-out visitors, follow Google's structured data guidance for paywalled content so it isn't mistaken for cloaking.</p>
+
+<h2>Recurring payments in India</h2>
+<p>Most memberships renew monthly or yearly, and this is where Indian sites need the most care. Automatic renewals generally rely on a mandate the member approves once, with a notification before each charge, under RBI rules that are updated from time to time.</p>
+<ul>
+  <li><strong>Check the gateway and plugin together:</strong> a gateway that supports recurring payments isn't enough; its integration with your membership plugin must support automatic renewals too. Some international gateways also have limited availability for Indian businesses, so confirm the current position.</li>
+  <li><strong>Consider fixed-term plans:</strong> a yearly membership paid upfront by UPI or card avoids mandate issues entirely, with reminders to renew before it ends</li>
+  <li><strong>Keep manual renewal as a fallback:</strong> an emailed payment link each cycle works well for smaller member bases</li>
+  <li><strong>Handle failed payments gently:</strong> allow a short grace period and send reminders by email or WhatsApp before removing access</li>
+  <li><strong>Sort out GST and invoices early:</strong> ask your CA how your memberships should be invoiced and taxed</li>
+</ul>
+<p>The subscriptions guide above covers mandates and UPI AutoPay in more detail.</p>
+
+<h2>Designing a good member experience</h2>
+<p>Members pay for convenience as much as content. What happens after someone joins decides whether they renew.</p>
+<ul>
+  <li><strong>A clear joining page:</strong> what each level includes, the price, the billing frequency and how to cancel</li>
+  <li><strong>A welcome email and a "start here" page</strong> that shows new members where everything is</li>
+  <li><strong>A member dashboard</strong> with their plan, renewal date, invoices and a way to update payment details</li>
+  <li><strong>Easy login:</strong> forgotten passwords are a common support request, so make resets simple and make sure the emails actually arrive</li>
+  <li><strong>Mobile-friendly pages:</strong> many members will read, watch and pay on their phones</li>
+  <li><strong>A visible cancel option:</strong> hiding it leads to payment disputes and damages trust far more than an honest exit does</li>
+</ul>
+
+<h2>Security, privacy and performance</h2>
+<p>With personal data, payment records and many accounts, a membership site is a bigger target than a brochure site.</p>
+<ul>
+  <li><strong>Secure logins:</strong> strong passwords, limits on login attempts and two-factor authentication for admins; see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a></li>
+  <li><strong>Block spam sign-ups</strong> on free registration forms with email verification or an anti-spam service</li>
+  <li><strong>Limit account sharing</strong> if it becomes a problem, for example by restricting simultaneous logins, without making life hard for genuine members</li>
+  <li><strong>Give members the lowest role:</strong> members should never get editor or administrator access</li>
+  <li><strong>Collect only the data you need</strong> and explain how you use it; see <a href="/blog/dpdp-act-website-basics/">India's DPDP Act and your website</a></li>
+  <li><strong>Plan hosting for logged-in users:</strong> page caching usually doesn't apply to logged-in members, so the server does more work per visit, and basic shared hosting may struggle</li>
+  <li><strong>Test caching rules</strong> so members-only pages are never cached and shown to the wrong person</li>
+</ul>
+
+<h2>Launching without over-building</h2>
+<p>It's tempting to build forums, badges and many levels before anyone has joined. A smaller start is wiser:</p>
+<ol>
+  <li>Launch with one or two levels and enough content to deliver clear value in the first month</li>
+  <li>Build and test on a staging site, then test the full journey: join, pay, access, renew, fail a payment and cancel</li>
+  <li>Invite an existing audience first, such as newsletter subscribers or past clients, and ask for feedback</li>
+  <li>Add features based on what members actually ask for, and keep publishing on a schedule they can rely on</li>
+</ol>
+
+<p>Planning a membership site for your association, community or content business? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> if you'll also sell products to members.</p>
+`,
+  },
+  {
+    slug: 'online-course-website-wordpress',
+    title: 'How to Build an Online Course Website on WordPress',
+    description: 'Build an online course website on WordPress: choosing an LMS plugin, structuring courses, hosting video safely, quizzes, certificates, payments and support.',
+    date: '2026-09-30',
+    category: 'Guides',
+    related: ['website-for-schools-and-coaching', 'woocommerce-developer'],
+    body: `
+<p>Selling courses from your own website means you keep your students, your pricing and your brand, instead of depending entirely on a marketplace. WordPress with a learning management system (LMS) plugin can run anything from a single recorded course to a full online academy. The guide on <a href="/blog/sell-digital-products-wordpress/">selling digital products on WordPress</a> covers e-books and templates; this one goes deeper into courses.</p>
+
+<h2>Is WordPress the right platform?</h2>
+<p>Hosted course platforms are quicker to start with because they handle hosting, video and payments for you. A WordPress course site takes more setup, but gives you more control.</p>
+<table>
+  <thead><tr><th></th><th>Hosted course platform</th><th>WordPress with an LMS plugin</th></tr></thead>
+  <tbody>
+    <tr><td>Setup</td><td>Fast, little technical work</td><td>Needs hosting, plugins and configuration</td></tr>
+    <tr><td>Design and branding</td><td>Limited to the platform's templates</td><td>Fully customisable</td></tr>
+    <tr><td>SEO and content</td><td>Often basic</td><td>Strong, with your blog and course pages on one site</td></tr>
+    <tr><td>Ongoing costs</td><td>Platform plans and sometimes transaction fees</td><td>Hosting, plugin licences and maintenance</td></tr>
+    <tr><td>Ownership</td><td>You work within their rules</td><td>You own the site and student data</td></tr>
+  </tbody>
+</table>
+<p>WordPress makes most sense when courses are a long-term part of your business, you want your courses and content marketing on one site, or you need features a platform doesn't offer.</p>
+
+<h2>Choosing an LMS plugin</h2>
+<p>Several established LMS plugins exist, each with a different pricing model:</p>
+<ul>
+  <li><strong>LearnDash:</strong> a paid, long-established plugin with many integrations</li>
+  <li><strong>Tutor LMS:</strong> a free version, with a Pro plan that adds more features</li>
+  <li><strong>LifterLMS:</strong> a free core plugin, with many extras sold as paid add-ons</li>
+  <li><strong>Sensei LMS:</strong> from Automattic, with paid courses sold through WooCommerce</li>
+</ul>
+<p>Rather than picking by popularity, compare them against your needs: how easy the course builder is, quiz types, certificates, drip scheduling, the student dashboard, reports, payment options and whether they work well with your theme. Add up the cost of the add-ons you'll actually need, and check current plans, since features move between free and paid versions.</p>
+
+<h2>Structuring your courses</h2>
+<p>Good structure makes a course easier to finish, and students who finish are the ones who recommend you.</p>
+<ul>
+  <li><strong>Start with a clear outcome:</strong> what will a student be able to do at the end?</li>
+  <li><strong>Break it into modules and short lessons</strong>, each focused on one idea, with notes or worksheets to download</li>
+  <li><strong>Offer a free preview lesson</strong> so buyers can judge your teaching before paying</li>
+  <li><strong>Decide how content is released:</strong> everything at once for self-paced learners, or dripped weekly for cohort-style batches</li>
+  <li><strong>Set access rules:</strong> lifetime access, a fixed period such as one year, or access while a subscription is active</li>
+  <li><strong>Consider language:</strong> many Indian learners prefer Hindi or a regional language, or a mix, so say clearly which language each course uses</li>
+</ul>
+
+<h2>Hosting course videos</h2>
+<p>Don't upload course videos to your WordPress media library. Large files strain ordinary hosting, play badly on slow connections and are easy to download.</p>
+<ul>
+  <li><strong>YouTube (unlisted):</strong> free and reliable, but anyone with the link can watch and share it, so it suits free previews rather than paid lessons</li>
+  <li><strong>Vimeo:</strong> paid plans let you restrict playback to your own domain</li>
+  <li><strong>Bunny Stream:</strong> usage-based video hosting with options to restrict where videos play</li>
+  <li><strong>VdoCipher:</strong> focuses on encrypted playback and viewer watermarks, aimed at ed-tech and test-prep businesses</li>
+</ul>
+<p>Choose a service with adaptive streaming, so videos adjust to the student's connection, and add subtitles where you can. No setup can stop someone recording their screen, but domain restrictions and watermarks make casual sharing much harder.</p>
+
+<h2>Quizzes, assignments and certificates</h2>
+<ul>
+  <li><strong>Quizzes:</strong> use them to check understanding, not to trip people up. Set a passing mark, allow retakes and use question banks so answers aren't simply passed around.</li>
+  <li><strong>Timed tests:</strong> useful for exam preparation and test series, but test them carefully on mobile phones</li>
+  <li><strong>Assignments:</strong> file uploads with manual grading work well, but plan instructor time before promising feedback</li>
+  <li><strong>Certificates:</strong> include the student's name, course, completion date and a unique ID that can be checked on your site</li>
+</ul>
+<p>Be honest about what a certificate means. Your own completion certificate is fine, but don't imply government recognition or accreditation you don't have; see the note on certification in <a href="/blog/website-for-software-training-institutes/">websites for software training institutes</a>.</p>
+
+<h2>Payments, pricing and access</h2>
+<p>You can sell courses through your LMS's own checkout or through WooCommerce. WooCommerce is often the more flexible route in India because it works with many Indian gateways and suits sites that also sell books or kits.</p>
+<ul>
+  <li><strong>Payment methods:</strong> UPI, cards and net banking for Indian students, and international cards if you teach abroad; see <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway</a></li>
+  <li><strong>Pricing models:</strong> one-time purchase, instalments for higher-priced programmes, an all-access subscription or course bundles</li>
+  <li><strong>Automatic access:</strong> enrolment should happen instantly after payment, without you adding students manually</li>
+  <li><strong>GST and invoices:</strong> the treatment of online courses can differ from physical goods, so check with your CA before launch</li>
+  <li><strong>Refund policy:</strong> state clearly when refunds are available, for example within a short period and before much of the course is completed</li>
+</ul>
+
+<h2>Student support and engagement</h2>
+<p>Recorded courses still need people behind them. Plan support before launch:</p>
+<ul>
+  <li>A Q&amp;A area on each lesson or a discussion forum, so answers help other students too</li>
+  <li>Regular live doubt-clearing sessions on Zoom or Google Meet for higher-priced courses</li>
+  <li>A WhatsApp or Telegram group, if you have the time to moderate it</li>
+  <li>An FAQ covering login, devices, access period and certificates</li>
+  <li>Automatic emails that nudge inactive students back to their next lesson</li>
+  <li>Stated response times, so students know when to expect help</li>
+</ul>
+
+<h2>Hosting and speed for course sites</h2>
+<p>Students are logged in, and pages for logged-in users usually can't be served from the page cache, so every lesson view does real work on the server. A course site with many active students needs better hosting than a brochure site; see <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>. Keep plugins lean, test lesson pages on a mid-range phone and check load times during your busiest hours.</p>
+
+<p>Planning an online course site, or adding courses to your coaching institute's website? See <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> if you'll sell courses alongside books or other products.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-product-bundles-upsells',
+    title: 'Product Bundles, Upsells and Cross-Sells in WooCommerce',
+    description: 'How bundles, upsells and cross-sells raise WooCommerce order value: when they help, built-in linked products, bundle plugins, honest pricing and measurement.',
+    date: '2026-09-30',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>Getting a shopper to your store is the expensive part. Once they're there, suggesting the right extra item, or offering a sensible set, can raise the value of each order without spending more on ads. Done badly, the same tactics feel pushy and clutter your pages. Here's how bundles, upsells and cross-sells work in WooCommerce, and how to use them honestly.</p>
+
+<h2>What's the difference?</h2>
+<table>
+  <thead><tr><th>Tactic</th><th>What it is</th><th>Example</th></tr></thead>
+  <tbody>
+    <tr><td>Bundle</td><td>Several products sold together as one item, often at a small saving</td><td>A gift hamper, a skincare routine kit or a starter pack</td></tr>
+    <tr><td>Upsell</td><td>A better, bigger or more complete alternative to the product being viewed</td><td>The larger pack instead of the small one, or the premium model</td></tr>
+    <tr><td>Cross-sell</td><td>A complementary item that goes with what's already in the cart</td><td>A cover for a phone, batteries for a toy or a stand for a planter</td></tr>
+  </tbody>
+</table>
+<p>In WooCommerce's own terms, upsells appear on the product page and cross-sells appear in the cart.</p>
+
+<h2>When they help, and when they don't</h2>
+<p>They tend to work when:</p>
+<ul>
+  <li>Products are naturally used together, such as a routine, a kit or refills</li>
+  <li>People are buying gifts, especially around festivals, and want a ready-made set</li>
+  <li>New customers aren't sure what to choose, and a starter kit makes the decision easy</li>
+  <li>A larger order helps cover shipping costs, or reaches your free shipping threshold</li>
+</ul>
+<p>They tend to backfire when suggestions are unrelated, when there are so many that the page feels like a catalogue, or when discounts on low-margin items eat your profit. If you sell one hero product with nothing that genuinely goes with it, don't force it.</p>
+
+<h2>Built-in options: linked and grouped products</h2>
+<p>WooCommerce includes useful tools without any extra plugin:</p>
+<ul>
+  <li><strong>Upsells and cross-sells:</strong> set them per product under Product data → Linked Products. You choose exactly which products appear.</li>
+  <li><strong>Related products:</strong> shown automatically based on shared categories and tags. You don't pick them, so tidy categories give better results.</li>
+  <li><strong>Grouped products:</strong> a product type that shows several separate products on one page, each with its own quantity box. Good for a set of matching items, but there's no combined bundle price.</li>
+</ul>
+<p>Pick two to four suggestions per product rather than dozens, and curate your bestsellers by hand. How these sections look depends on your theme and on whether your cart page uses the newer block-based layout, so check them on a phone after setting them up. For other ways to strengthen product pages, see <a href="/blog/woocommerce-product-page-optimization/">WooCommerce product page optimisation</a>.</p>
+
+<h2>Bundle plugins for real bundles</h2>
+<p>If you need a bundle to be one item with its own price, with stock deducted from each product inside it, you'll need a plugin. Options include the official Product Bundles extension, Composite Products for kits where customers choose one option from each component, and Mix and Match Products for build-your-own boxes such as "pick any six". Free and freemium alternatives exist too, and some add "frequently bought together" boxes on product pages.</p>
+<p>Whichever you choose, check:</p>
+<ul>
+  <li><strong>Stock:</strong> the bundle should become unavailable when any item inside it runs out; see <a href="/blog/woocommerce-inventory-management/">WooCommerce inventory management</a></li>
+  <li><strong>Orders and packing:</strong> each item in the bundle should show clearly on the order so your team packs the right things</li>
+  <li><strong>Shipping:</strong> weights and dimensions should be calculated correctly for the whole bundle</li>
+  <li><strong>GST:</strong> items in a bundle may carry different GST rates, and there are specific rules for goods supplied together, so ask your CA before pricing mixed bundles; see <a href="/blog/woocommerce-gst-invoices-india/">GST setup and invoices in WooCommerce</a></li>
+  <li><strong>Compatibility and speed:</strong> test with your theme, payment gateway and shipping plugins on a staging site first</li>
+</ul>
+<p>For a one-off festival hamper with fixed contents, a simple product with manual stock may be enough. Just remember its stock won't be linked to the individual items.</p>
+
+<h2>Pricing bundles honestly</h2>
+<ul>
+  <li><strong>Show what's inside,</strong> ideally with individual prices, so customers can see the real saving</li>
+  <li><strong>Don't inflate the "regular price"</strong> to make a discount look bigger than it is</li>
+  <li><strong>Never pre-tick add-ons or add items without consent.</strong> India's consumer protection authority has issued guidelines against dark patterns, including sneaking items into the basket and false urgency, so check the current rules</li>
+  <li><strong>Recommend genuinely better options:</strong> an upsell should be a better fit or better value, not simply the most expensive product</li>
+  <li><strong>Explain returns:</strong> say whether a bundle can be partly returned, and how refunds are calculated</li>
+  <li><strong>Check margins:</strong> work out profit after the bundle saving, packing, shipping and payment fees; see <a href="/blog/woocommerce-coupons-discounts/">coupons and discounts without killing margins</a></li>
+</ul>
+
+<h2>Where to place offers</h2>
+<ul>
+  <li><strong>Product page:</strong> upsells and "frequently bought together" below the main product details, never pushing the Add to cart button out of view</li>
+  <li><strong>Cart:</strong> one or two low-cost cross-sells that make sense with what's already there</li>
+  <li><strong>Checkout:</strong> keep it clean; at most a single, clearly optional offer that is unticked by default</li>
+  <li><strong>After purchase:</strong> suggest refills or accessories on the thank-you page or in a follow-up email, and on WhatsApp only if the customer agreed to hear from you</li>
+  <li><strong>Collection pages:</strong> a dedicated "gift sets" or "kits" category gives bundles a home you can promote</li>
+</ul>
+
+<h2>Measuring what works</h2>
+<p>WooCommerce Analytics shows average order value and product sales, which is enough to start. Track:</p>
+<ul>
+  <li><strong>Average order value</strong> before and after, comparing similar periods rather than a festival week with a normal one</li>
+  <li><strong>Attach rate:</strong> how often a suggested product is added alongside the main one</li>
+  <li><strong>Conversion rate:</strong> make sure extra offers aren't reducing the number of completed orders</li>
+  <li><strong>Profit per order</strong>, not just revenue</li>
+  <li><strong>Returns and complaints</strong> on bundles compared with single products</li>
+</ul>
+<p>Change one thing at a time, give it a few weeks and remove suggestions nobody takes up.</p>
+
+<p>Want bundles and upsells set up properly in your store? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/landing-page-design/">landing page design</a> for a dedicated gift-set or offer page.</p>
 `,
   },
 ];

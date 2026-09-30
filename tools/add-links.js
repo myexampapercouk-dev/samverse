@@ -491,6 +491,10 @@ const LINKS = [
   ['woocommerce-shipping-setup-india', '<h2>6. Packaging</h2>', '<p>A <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checker</a> on product pages lets shoppers see delivery dates and COD availability before they reach checkout.</p>\n\n'],
   ['website-for-wholesalers-distributors', '<h2>Get found</h2>', '<p>For the technical setup of dealer roles, price tiers and hidden trade prices, see <a href="/blog/woocommerce-wholesale-dealer-pricing/">WooCommerce wholesale and dealer pricing</a>.</p>\n\n'],
   ['customize-woocommerce-emails', '<h2>Make sure the emails arrive</h2>', '<p>Custom statuses like "Shipped" work best as part of a clear <a href="/blog/woocommerce-order-management-workflow/">order management workflow</a> that the whole team follows.</p>\n\n'],
+  // Agent 39
+  ['woocommerce-subscriptions', '<h2>Recurring payments in India</h2>', '<p>Selling access to members-only content or a community rather than products? See <a href="/blog/membership-website-wordpress/">how to build a membership website on WordPress</a>.</p>\n\n'],
+  ['sell-digital-products-wordpress', '<h2>Piracy: what you can and can\'t control</h2>', '<p>For a fuller walkthrough of LMS plugins, video hosting, quizzes and certificates, see <a href="/blog/online-course-website-wordpress/">how to build an online course website on WordPress</a>.</p>\n\n'],
+  ['woocommerce-coupons-discounts', '<h2>Measure results</h2>', '<p>Another way to raise order value without a coupon is to sell sensible sets or suggest the right add-ons; see <a href="/blog/woocommerce-product-bundles-upsells/">product bundles, upsells and cross-sells in WooCommerce</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
