@@ -483,6 +483,10 @@ const LINKS = [
   ['video-on-business-website', '<h2>SEO</h2>', '<p>Publishing these videos on YouTube as well? See <a href="/blog/youtube-video-seo-small-business/">YouTube and video SEO for small businesses</a> for titles, chapters and video schema.</p>\n\n'],
   ['repurpose-website-content-social-media', '<h2>Keep a simple workflow</h2>', '<p>For Instagram in particular, see <a href="/blog/instagram-to-website-enquiries/">how to turn Instagram followers into website enquiries</a>.</p>\n\n'],
   ['website-ready-for-google-ads', '<h2>10. A plan to review and improve</h2>', '<p>Not sure how much to spend? See <a href="/blog/google-ads-budget-small-business/">how to set a sensible Google Ads budget</a>.</p>\n\n'],
+  // Agent 38
+  ['website-down-what-to-do', '<h2>Prevent the next outage</h2>', '<p>An outage is far easier to handle when roles, contacts and backups are sorted out in advance; see <a href="/blog/website-disaster-recovery-plan/">how to write a simple website disaster recovery plan</a>.</p>\n\n'],
+  ['wordpress-user-roles-explained', '<h2>Review users regularly</h2>', '<p>To see what each account actually does once it has access, add an activity log; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs explained</a>.</p>\n\n'],
+  ['website-accessibility-basics', '<h2>Accessibility is ongoing</h2>', '<p>To check your own pages step by step, work through the <a href="/blog/website-accessibility-audit-checklist/">website accessibility audit checklist</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

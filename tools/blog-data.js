@@ -3388,6 +3388,8 @@ module.exports = [
   <li>Page builder sections that are visually fine but badly structured</li>
 </ul>
 
+<p>To check your own pages step by step, work through the <a href="/blog/website-accessibility-audit-checklist/">website accessibility audit checklist</a>.</p>
+
 <h2>Accessibility is ongoing</h2>
 <p>Every new page, image and form is a chance to keep things accessible. Build good habits into your content process: alt text on every upload, clear headings, and descriptive links. See also <a href="/blog/website-design-mistakes/">design mistakes that cost customers</a>.</p>
 
@@ -6340,6 +6342,8 @@ module.exports = [
   <li>Keep ownership of hosting, domain and the main admin account yourself</li>
   <li>Change or remove access when the project ends</li>
 </ul>
+
+<p>To see what each account actually does once it has access, add an activity log; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs explained</a>.</p>
 
 <h2>Review users regularly</h2>
 <p>Check <strong>Users</strong> in your dashboard every month or two. Unknown administrator accounts can be a sign of a hack; see <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site is hacked</a>.</p>
@@ -13798,6 +13802,8 @@ module.exports = [
 
 <h2>Keep customers informed</h2>
 <p>While fixing it, post an update on your Google Business Profile and social media, and make sure your phone and WhatsApp still work so enquiries aren't lost.</p>
+
+<p>An outage is far easier to handle when roles, contacts and backups are sorted out in advance; see <a href="/blog/website-disaster-recovery-plan/">how to write a simple website disaster recovery plan</a>.</p>
 
 <h2>Prevent the next outage</h2>
 <ul>
@@ -27143,6 +27149,274 @@ Template: astra
 <p>Stop, or step back and rethink, if after a fair test (with tracking working and the landing page improved) your cost per enquiry stays well above what an enquiry is worth. That isn't failure; it's a clear answer, and the money can go into SEO, your Google Business Profile or referrals instead.</p>
 
 <p>Want a landing page built to make every click count? See <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'website-disaster-recovery-plan',
+    seoTitle: 'Website Disaster Recovery Plan for Small Businesses',
+    title: 'Website Disaster Recovery Plan: A Simple Guide for Small Businesses',
+    description: 'A simple website disaster recovery plan: what can go wrong, backups and restore tests, who does what, a contact list, and how to keep customers informed.',
+    date: '2026-09-30',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal'],
+    body: `
+<p>Most small businesses only think about website disasters after one has happened: the site is down, a customer is on the phone and nobody can find the hosting login. A disaster recovery plan is simply a short document, written in advance, that answers "what do we do now?" It doesn't need to be long or technical. One or two pages, kept up to date, can turn a stressful week into an afternoon's work.</p>
+
+<h2>What can go wrong</h2>
+<p>Start by listing the realistic problems for your site. For most business websites, they look like this:</p>
+<table>
+  <thead><tr><th>What happens</th><th>Typical cause</th><th>Usual recovery</th></tr></thead>
+  <tbody>
+    <tr><td>Site shows an error after an update</td><td>Plugin, theme or PHP conflict</td><td>Roll back the update or restore a backup</td></tr>
+    <tr><td>Site hacked or redirecting to spam</td><td>Outdated plugin or weak password</td><td>Proper clean-up, then close the entry point</td></tr>
+    <tr><td>Website and email both stop working</td><td>Domain expired or DNS records changed</td><td>Renew the domain, correct the DNS</td></tr>
+    <tr><td>Hosting suspended or server down</td><td>Unpaid bill, resource limits or a host outage</td><td>Contact the host, or restore to new hosting</td></tr>
+    <tr><td>Pages, products or orders deleted</td><td>Human error or a bad import</td><td>Restore from a backup</td></tr>
+    <tr><td>Nobody can log in</td><td>Developer left, lost 2FA phone, forgotten passwords</td><td>Recover access through the account owner</td></tr>
+  </tbody>
+</table>
+<p>For what to check in the moment, see <a href="/blog/website-down-what-to-do/">what to do when your website is down</a>. This plan is about being ready before that moment arrives.</p>
+
+<h2>Decide how much downtime and data loss you can accept</h2>
+<p>Two questions shape the whole plan:</p>
+<ul>
+  <li><strong>How long can the site be offline before it really hurts?</strong> A consultant's brochure site might cope with a day. A WooCommerce store during a Diwali sale, or a clinic taking online appointments, probably can't.</li>
+  <li><strong>How much recent work can you afford to lose?</strong> If you restore yesterday's backup, anything added since (blog posts, orders, form entries) disappears from the website. For a store taking orders all day, that matters far more than for a site that changes once a month.</li>
+</ul>
+<p>Your answers decide how often you back up, how quickly your developer or host needs to respond, and how much it's worth spending on hosting and support.</p>
+
+<h2>Backups and restore testing</h2>
+<ul>
+  <li><strong>Automatic backups of files and database</strong>, at a frequency that matches your answers above</li>
+  <li><strong>At least one copy away from the server</strong>, such as cloud storage, so a hacked or failed server doesn't take your backups with it</li>
+  <li><strong>Several older copies kept</strong>, because hacks and mistakes are sometimes noticed days later</li>
+  <li><strong>An extra backup before every update</strong>, redesign or migration</li>
+</ul>
+<p>Then test. Every few months, restore a backup to a staging copy of the site and check that pages, images, forms and checkout work. Note how long the restore took; that's your realistic recovery time, not a guess. The <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> covers the details.</p>
+
+<h2>Who does what</h2>
+<p>In a crisis, confusion wastes more time than the technical fix. Write down names, not just job titles, with a backup person for each role:</p>
+<table>
+  <thead><tr><th>Role</th><th>Responsible for</th></tr></thead>
+  <tbody>
+    <tr><td>Decision maker (usually the owner)</td><td>Approving a restore, spending money, deciding what to tell customers</td></tr>
+    <tr><td>Technical lead (developer or maintenance provider)</td><td>Diagnosing the problem, restoring backups, cleaning up hacks</td></tr>
+    <tr><td>Accounts holder</td><td>Logging in to the domain registrar and hosting, raising support tickets</td></tr>
+    <tr><td>Customer communication</td><td>Updating Google Business Profile, social media, WhatsApp and phone staff</td></tr>
+  </tbody>
+</table>
+<p>In a small business, one person may wear several hats. That's fine, as long as everyone knows who makes the final call.</p>
+
+<h2>Keep a contact and access list</h2>
+<p>This is the part most businesses are missing. Keep an up-to-date list of:</p>
+<ul>
+  <li>Domain registrar, hosting company and DNS provider, with account IDs and support contacts</li>
+  <li>Your developer or maintenance provider, with an emergency number</li>
+  <li>Business email provider, payment gateway and any booking or CRM tools connected to the site</li>
+  <li>Where backups are stored and how to reach them</li>
+  <li>Renewal dates for the domain, hosting, SSL and premium plugin licences</li>
+</ul>
+<p>Keep passwords and two-factor recovery codes in a password manager rather than in the plan itself, and make sure at least two trusted people can reach them. If a former developer still controls key accounts, fix that now using the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
+
+<h2>The first hour: a simple response order</h2>
+<ol>
+  <li>Confirm the problem from another device and network, and note the time and the exact error</li>
+  <li>Tell the technical lead and the decision maker</li>
+  <li>Stop further changes to the site so data and evidence aren't overwritten</li>
+  <li>Check the obvious: recent updates, domain and hosting renewals, emails from your host</li>
+  <li>Decide whether to fix in place or restore a known-good backup to get back online while the cause is investigated</li>
+  <li>Start customer updates if the outage will last more than a short while</li>
+  <li>Keep a brief log of what was done and when</li>
+</ol>
+<p>If the site was hacked, restoring a backup alone can bring back the same weakness. The way in has to be found and closed too.</p>
+
+<h2>Communicating with customers during downtime</h2>
+<p>Customers are usually forgiving if they know what's happening and can still reach you. Prepare these in advance:</p>
+<ul>
+  <li><strong>A short status message</strong> ready to post on your Google Business Profile, Instagram or Facebook, saying what's affected and how to reach you meanwhile</li>
+  <li><strong>A WhatsApp Business away or greeting message</strong> that points people to phone or WhatsApp orders</li>
+  <li><strong>A simple script for staff</strong> answering calls, so everyone gives the same answer</li>
+  <li><strong>For online stores:</strong> how to handle orders paid during the outage, and whom to contact if UPI or card payments look stuck</li>
+</ul>
+<p>Keep your phone number and WhatsApp independent of the website so enquiries don't stop. If customer data may have been exposed in a hack, take advice promptly on what you may need to report under current rules such as India's DPDP Act, rather than guessing.</p>
+
+<h2>Review and practise the plan</h2>
+<p>Update the plan whenever you change host, developer or key staff, and after every incident. Once a year, run a short drill: can the right people log in to the registrar and host, find the latest backup and restore it to staging? <a href="/blog/uptime-monitoring-explained/">Uptime monitoring</a> helps too, so you hear about problems before your customers do.</p>
+
+<p>Want someone else to handle this? My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include regular off-site backups, security monitoring and uptime checks, and <a href="/wordpress-malware-removal/">malware removal</a> is there if a hack is the disaster.</p>
+`,
+  },
+  {
+    slug: 'wordpress-activity-logs',
+    title: 'WordPress Activity Logs: Track Who Changed What on Your Site',
+    description: 'What WordPress activity logs record, how they help with security and teamwork, what to look for in a plugin, what to review each month, and privacy basics.',
+    date: '2026-09-30',
+    category: 'Security',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal'],
+    body: `
+<p>"Who changed the price on this product?" "When did this page disappear?" "Did anyone log in last night?" On most WordPress sites, nobody can answer these questions, because WordPress doesn't keep a detailed history of admin activity by default. An activity log (sometimes called an audit log) fills that gap. It's a small addition that helps with security, teamwork and troubleshooting.</p>
+
+<h2>What an activity log records</h2>
+<p>An activity log plugin records events inside WordPress: who did what, when, and usually from which IP address. Typical events include:</p>
+<table>
+  <thead><tr><th>Area</th><th>Examples of logged events</th></tr></thead>
+  <tbody>
+    <tr><td>Logins</td><td>Successful logins, failed attempts, logouts, password resets</td></tr>
+    <tr><td>Users</td><td>New accounts, role changes, deleted users, profile edits</td></tr>
+    <tr><td>Content</td><td>Pages and posts published, edited, trashed or restored</td></tr>
+    <tr><td>Plugins and themes</td><td>Installed, activated, deactivated, updated or deleted</td></tr>
+    <tr><td>Settings</td><td>Changes to the site address, permalinks and other core settings</td></tr>
+    <tr><td>WooCommerce</td><td>Product, price and stock changes, order status updates and coupon edits, depending on the plugin</td></tr>
+  </tbody>
+</table>
+<p>WordPress revisions already show changes to the content of a single page or post, but they don't cover logins, users, plugins or settings. That's what an activity log adds.</p>
+
+<h2>Why it helps with security</h2>
+<ul>
+  <li><strong>Spot suspicious activity early:</strong> a new administrator nobody created, a login at 3 a.m. from an unfamiliar location, or a plugin nobody asked for</li>
+  <li><strong>See password-guessing attacks:</strong> bursts of failed logins show bots at work, a sign to tighten login security</li>
+  <li><strong>Build a timeline after a hack:</strong> knowing when a user was created or a plugin changed helps find the way in, and helps choose a clean backup from before it</li>
+</ul>
+<p>Logins are the front door, so pair a log with the steps in <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>. If the log shows signs of a break-in, the <a href="/blog/remove-malware-wordpress-step-by-step/">step-by-step malware clean-up guide</a> explains what a proper clean-up involves.</p>
+
+<h2>Why it helps with teamwork</h2>
+<p>Many business sites are edited by several people: the owner, a marketing executive, an agency and a developer. When something changes unexpectedly, a log replaces guesswork and blame with facts.</p>
+<ul>
+  <li>Find out who changed a price, phone number or offer, and put it right quickly</li>
+  <li>See which update happened just before a layout broke, so it can be rolled back</li>
+  <li>Check what an agency or freelancer actually worked on during a project</li>
+  <li>Tell the difference between an honest mistake and a deliberate decision someone forgot to mention</li>
+</ul>
+<p>Logs only work when everyone has their own login. With a shared account, every entry just says "admin", which tells you nothing; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> for giving each person the right access.</p>
+
+<h2>Choosing an activity log plugin</h2>
+<p>Well-known options include <strong>WP Activity Log</strong>, <strong>Simple History</strong> and <strong>Stream</strong>, and some security plugins include basic login or change logs. Features and free versus paid limits change, so check current plans. Look for:</p>
+<ul>
+  <li><strong>Coverage</strong> of the areas you care about, including WooCommerce or your form plugin if you rely on them</li>
+  <li><strong>Alerts</strong> by email or another channel for critical events, such as a new administrator</li>
+  <li><strong>Retention settings</strong> so the log doesn't grow forever and bloat the database</li>
+  <li><strong>Export or off-site storage</strong>, because an attacker with admin access may be able to delete logs kept on the site itself</li>
+  <li><strong>Search and filters</strong> by user, date and type of event</li>
+  <li><strong>Active development</strong>, with recent updates and good reviews</li>
+</ul>
+<p>Stick to one logging plugin. Two doing the same job just doubles the load on your database.</p>
+
+<h2>What to review, and how often</h2>
+<p>A log nobody reads only helps after the damage is done. A light routine is enough for most small businesses:</p>
+<ul>
+  <li><strong>Straight away, via alerts:</strong> new administrator accounts, anyone promoted to administrator, plugins installed, and files edited from the dashboard</li>
+  <li><strong>Weekly:</strong> spikes in failed logins, and logins by unexpected users or from unexpected places</li>
+  <li><strong>Monthly:</strong> plugin, theme and settings changes, plus accounts that haven't been used and can be removed</li>
+</ul>
+<p>If you have a maintenance provider, ask whether reviewing the log is part of their monthly checks and report.</p>
+
+<h2>Privacy and retention</h2>
+<p>Activity logs contain personal data: usernames, email addresses, IP addresses and, on online stores, sometimes customer and order details. Treat them with care:</p>
+<ul>
+  <li><strong>Limit access</strong> to the administrators who actually need it</li>
+  <li><strong>Keep logs only as long as you need them.</strong> Choose a retention period that covers security investigations and your business needs, and let the plugin delete older entries automatically</li>
+  <li><strong>Don't log more than you need.</strong> Some plugins can track customer and visitor activity in detail, which many businesses don't require</li>
+  <li><strong>Mention it in your privacy policy</strong> if you log the activity of customers or other users, not only staff</li>
+</ul>
+<p>India's DPDP Act sets general expectations around the purpose, security and retention of personal data; see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a>, and confirm the specifics with your lawyer or adviser.</p>
+
+<h2>What activity logs can't do</h2>
+<p>A WordPress activity log records what happens inside WordPress. It won't catch everything at server level, such as files changed over FTP or a compromised hosting account; your host's access and error logs cover some of that. A log also doesn't block attacks on its own. Treat it as one layer alongside prompt updates, strong logins, a firewall and tested backups.</p>
+
+<p>Want your site's security watched every month? Security scans, monitoring and updates are part of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, and if the log reveals a break-in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'website-accessibility-audit-checklist',
+    title: 'Website Accessibility Audit Checklist for Business Owners',
+    description: 'An accessibility audit you can run yourself: keyboard, colour contrast, alt text, forms, headings, zoom and screen reader checks, and what to fix first.',
+    date: '2026-09-30',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'website-redesign'],
+    body: `
+<p>If you've read the <a href="/blog/website-accessibility-basics/">website accessibility basics</a>, you know what an accessible site looks like. This guide is the next step: a hands-on audit you can run yourself in an afternoon, without technical skills, to find where your own website falls short and what to fix first.</p>
+
+<h2>Before you start</h2>
+<ul>
+  <li><strong>Pick five to eight key pages:</strong> the homepage, a main service or product page, the contact page, a blog post, and any page with a form, booking or checkout</li>
+  <li><strong>Make a simple record:</strong> a spreadsheet with columns for page, problem, who it affects and priority</li>
+  <li><strong>Know the benchmark:</strong> the Web Content Accessibility Guidelines (WCAG) at level AA are what most organisations aim for. You don't need to read them all; the checks below cover the most common problems</li>
+  <li><strong>Run an automated scan first</strong> with Lighthouse (in Chrome DevTools) or a browser extension such as WAVE or axe DevTools, and note what it flags. Automated tools catch only some issues, so the manual checks matter more</li>
+</ul>
+<p>In India, accessibility requirements apply most clearly to government websites, while the Rights of Persons with Disabilities Act, 2016 covers accessibility more broadly. If you're unsure what applies to your business, check with a lawyer.</p>
+
+<h2>1. Keyboard check</h2>
+<p>Put the mouse aside and use only the keyboard: <strong>Tab</strong> to move forward, <strong>Shift+Tab</strong> to move back, <strong>Enter</strong> to follow links and <strong>Space</strong> to press buttons or tick boxes.</p>
+<ul>
+  <li>Can you always see where you are? Each link and button should show a clear focus outline</li>
+  <li>Does focus move in a logical order, top to bottom and left to right?</li>
+  <li>Can you open and use the menu, including dropdowns and the mobile menu?</li>
+  <li>Can you close pop-ups, cookie banners and chat widgets with <strong>Esc</strong> or a reachable close button, without getting trapped?</li>
+  <li>Can you complete the contact form, booking or checkout from start to finish?</li>
+  <li>Is there a "Skip to content" link at the first Tab stop, so keyboard users don't tab through the whole menu on every page?</li>
+</ul>
+
+<h2>2. Colour, contrast and zoom</h2>
+<ul>
+  <li>Check body text, buttons, links, placeholder text and text over images with a contrast checker. WCAG AA asks for a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text</li>
+  <li>Look out for light grey text, white text on pale brand colours, and text over busy photos or sliders</li>
+  <li>Make sure colour isn't the only signal: links in paragraphs should be underlined, and form errors should include text, not just a red border</li>
+  <li>Zoom your browser to 200%: does text grow without being cut off or overlapping?</li>
+  <li>Zoom to 400% on a desktop, which is roughly the width of a small phone: does content reflow into one column without sideways scrolling?</li>
+  <li>On your phone, can you pinch to zoom? Some themes disable it, which is a real problem for people with low vision</li>
+</ul>
+
+<h2>3. Images and alt text</h2>
+<ul>
+  <li>Meaningful images, such as products, team photos, diagrams and before-and-after results, need alt text describing what they show</li>
+  <li>Purely decorative images should have empty alt text so screen readers skip them</li>
+  <li>Images containing text, like offer banners, need the same words in the alt text or, better, as real text on the page</li>
+  <li>Icon-only buttons, such as WhatsApp, search or menu icons, need an accessible label</li>
+</ul>
+<p>In WordPress you can add or fix alt text in the Media Library, and Lighthouse and WAVE both flag images that have none.</p>
+
+<h2>4. Forms</h2>
+<ul>
+  <li>Every field has a visible label that stays in place, not just placeholder text that vanishes when you start typing</li>
+  <li>Required fields are marked in words or with a clear symbol explained on the form, not only with colour</li>
+  <li>Submit the form with mistakes: do error messages say what went wrong and how to fix it, next to the right field?</li>
+  <li>After a successful submission, is there a clear confirmation message or thank-you page?</li>
+  <li>If you use a CAPTCHA, is there an option that doesn't depend only on reading distorted images?</li>
+</ul>
+<p>Your contact form is often the most important part of the site; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms don't get enquiries</a> for more fixes.</p>
+
+<h2>5. Headings, links and page structure</h2>
+<ul>
+  <li>Each page has one main heading (H1) that says what the page is about</li>
+  <li>Sections use H2, sub-sections H3, in order, rather than headings picked for their size</li>
+  <li>Text that looks like a heading is marked up as one, and headings aren't used just to make text big</li>
+  <li>Link text makes sense on its own ("View AC service prices", not "click here")</li>
+  <li>The page language is set correctly, especially on Hindi or regional-language pages</li>
+</ul>
+<p>The WAVE extension shows a page's heading structure at a glance, which makes skipped or misused headings easy to spot.</p>
+
+<h2>6. Screen reader basics</h2>
+<p>You don't need to become an expert, but ten minutes with a screen reader is eye-opening. <strong>NVDA</strong> is a free download for Windows, <strong>VoiceOver</strong> is built into Macs and iPhones, and <strong>TalkBack</strong> comes with Android phones.</p>
+<ul>
+  <li>Listen to your homepage: does it start with something meaningful, or a string of unlabelled links and icons?</li>
+  <li>Jump between headings (screen readers have a shortcut for this): do they outline the page sensibly?</li>
+  <li>Do buttons announce what they do, such as "Book appointment", rather than just "button"?</li>
+  <li>Do images read out useful descriptions, while decorative ones stay silent?</li>
+  <li>Can you fill in and submit your contact form?</li>
+</ul>
+
+<h2>Record, prioritise and fix</h2>
+<table>
+  <thead><tr><th>Priority</th><th>Examples</th></tr></thead>
+  <tbody>
+    <tr><td>Fix first</td><td>Anything that blocks a task: forms you can't submit by keyboard, pop-ups that trap focus, unlabelled fields, unreadable buttons</td></tr>
+    <tr><td>Fix soon</td><td>Missing alt text, broken heading order, no visible focus outline, zoom disabled</td></tr>
+    <tr><td>Improve over time</td><td>Clearer link text, captions for older videos, simpler wording</td></tr>
+  </tbody>
+</table>
+<p>Many fixes are content edits you can make yourself, like alt text, headings and link wording. Others, such as focus styles, menus and theme colours, usually need a developer. Re-run the audit after major changes and every six months or so. If many of your customers are older, add the checks in <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>
+
+<p>Need help fixing what your audit finds, or want accessibility built in from the start? See <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/website-redesign/">website redesign</a>.</p>
 `,
   },
 ];
