@@ -327,6 +327,7 @@ ${PAGES.filter(x => x.type === type).map(x => '          ' + card(x)).join('\n')
   <title>WordPress Services &amp; Industries | Samverse by Sameer Gupta</title>
   <meta name="description" content="All WordPress services by Sameer Gupta: website design for doctors, manufacturers, restaurants, real estate and more, plus redesign, speed, SEO, maintenance and security.">
   <meta name="robots" content="index, follow">
+  <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <link rel="canonical" href="${url}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${url}">
