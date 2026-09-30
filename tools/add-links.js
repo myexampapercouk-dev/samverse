@@ -455,6 +455,10 @@ const LINKS = [
   ['prepare-photos-for-website', '<h2>Phone photography tips</h2>', '<p>Tempted to use stock images instead? See <a href="/blog/stock-photos-vs-real-photos/">stock photos vs real photos</a> for where each one belongs.</p>\n\n'],
   ['third-party-scripts-slow-website', '<h2>Keep it from creeping back</h2>', '<p>New to Tag Manager? Our guide to <a href="/blog/google-tag-manager-basics/">Google Tag Manager basics</a> explains how to set it up, test it and keep the container lean.</p>\n\n'],
   ['transfer-domain-to-another-registrar', '<h2>Before you start</h2>', '<p>Changing to a different domain name altogether is a bigger job; see <a href="/blog/change-domain-name-without-losing-seo/">how to change your domain name without losing SEO</a>.</p>\n\n'],
+  // Agent 32
+  ['equipment-rental-website-guide', '<h2>Speak to each customer type</h2>', '<p>Renting furniture and appliances to households on monthly plans works differently, with tenure-based rents, deposits and KYC; see <a href="/blog/website-for-furniture-appliance-rental/">websites for furniture and appliance rental businesses</a>.</p>\n\n'],
+  ['website-for-car-dealers-workshops', '<h2>Campaigns</h2>', '<p>Selling spare parts and accessories as well? Parts catalogues need fitment search by make and model; see <a href="/blog/website-for-auto-parts-dealers/">websites for auto parts and accessories dealers</a>.</p>\n\n'],
+  ['woocommerce-subscriptions', '<h2>Retention: keeping subscribers longer</h2>', '<p>Daily deliveries such as milk bring their own needs, like morning slots, cut-off times and pause and resume; see <a href="/blog/website-for-dairy-milk-delivery/">websites for dairy brands and milk delivery services</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
