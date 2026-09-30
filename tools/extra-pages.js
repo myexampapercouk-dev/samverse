@@ -224,7 +224,7 @@ module.exports = [
             <p class="about-name">Sameer Gupta</p>
             <p class="muted">WordPress &amp; Web Developer</p>
             <ul class="about-meta">
-              <li><span>Based in</span> Pune, India</li>
+              <li><span>Based in</span> <a href="/wordpress-developer-pune/">Pune</a>, India</li>
               <li><span>Working since</span> 2020</li>
               <li><span>Works with</span> Clients &amp; agencies</li>
             </ul>

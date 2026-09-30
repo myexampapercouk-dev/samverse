@@ -113,6 +113,14 @@ module.exports = {
       ['Flexible engagement', 'Hire me for a one-off project, a monthly maintenance plan, ongoing support hours, or white-label delivery for your agency. You can switch as your needs change.'],
     ],
   },
+  'wordpress-developer-pune': {
+    title: 'How we would work together',
+    items: [
+      ['Start with a conversation', 'Tell me about your business, your customers and what the website needs to do. I suggest a page structure, then send a fixed quote and timeline, usually within 24 hours.'],
+      ['Built for local customers', 'Each main service gets its own page, with your address, area, phone and WhatsApp easy to find, fast loading on mobile data, and structured data that helps Google understand where you work.'],
+      ['Launch, then keep improving', 'After launch I set up Search Console, check your Business Profile links to the site, and offer maintenance so updates, backups and security are handled every month.'],
+    ],
+  },
   'website-redesign': {
     title: 'Redesigning without losing what works',
     items: [

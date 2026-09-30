@@ -98,9 +98,11 @@ ${d.items.map(([h, t], i) => `          <article class="depth-item reveal"><span
 
 // Blog posts that recommend this landing page
 // Up to 8 supporting articles per landing page (topic cluster links): posts that name this page first come first
+// `readingFrom` lets a page (e.g. a location page) borrow another page's reading list
 const readingFor = p => {
-  const posts = POSTS.filter(x => x.related.includes(p.slug))
-    .map((x, i) => ({ x, i, rank: x.related.indexOf(p.slug) }))
+  const key = p.readingFrom || p.slug;
+  const posts = POSTS.filter(x => x.related.includes(key))
+    .map((x, i) => ({ x, i, rank: x.related.indexOf(key) }))
     .sort((a, b) => a.rank - b.rank || a.i - b.i)
     .slice(0, 8).map(o => o.x);
   if (!posts.length) return "";
@@ -123,7 +125,7 @@ const render = p => {
     '@graph': [
       {
         '@type': 'Service', '@id': `${url}#service`, name: plainH1, serviceType: p.nav, description: p.description, url,
-        areaServed: 'Worldwide',
+        areaServed: p.areaServed ? p.areaServed.map(name => ({ '@type': 'City', name })) : 'Worldwide',
         provider: { '@type': 'Person', '@id': `${SITE}/#sameer`, name: 'Sameer Gupta', url: `${SITE}/`, telephone: '+91-7417049145' },
       },
       {
@@ -708,7 +710,7 @@ const INDUSTRY_SECTORS = [
   ['Hospitality, travel & events', /restaurant|cafe|hotel|homestay|farm-stay|catering|sweet-shops|cloud-kitchen|wedding-venues|event-wedding|event-rental|djs|hostels|travel|trekking/],
   ['Property, construction & energy', /real-estate|interior|construction|furniture-bus|hardware-building|modular-kitchen|painting|waterproofing|landscaping|property-management|coworking|solar/],
   ['Education & training', /school|driving|music-dance|overseas-education|sports-academ|preschool|college|training|ielts|study-centre|librar/],
-  ['Manufacturing, trade & logistics', /manufactur|industrial|equipment-rental|export|logistics|printing|agriculture|medical-equipment|wholesalers|fabricat|signage|pharma-franchise/],
+  ['Manufacturing, trade & logistics', /manufactur|industrial|equipment-rental|export|logistics|printing|agriculture|medical-equipment|wholesalers|fabricat|signage|pharma-franchise|cold-storage|warehous|electrical-contract/],
   ['Professional & tech services', /lawyers|advocates|it-software|it-hardware|saas|security-facility|insurance|immigration|recruitment|astrolog|coaches|photographers|video-production|art-galleries|publishers|marriage|visualisation/],
   ['Retail, beauty & local services', /home-services|cleaning|packers|pest-control|laundry|tailoring|mobile-laptop|car-dealers|ev-dealers|car-wash|taxi|jewellers|cosmetics|makeup|tattoo|pet-shops|toy|home-decor|gifting|water-purifier|ac-repair|cctv|appliance-rental|auto-parts|dairy|grocery/],
   ['Community, temples & non-profits', /temple|ngo|housing-societ/],
