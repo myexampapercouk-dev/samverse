@@ -6560,6 +6560,8 @@ module.exports = [
   <li>Plenty of white space</li>
 </ul>
 
+<p>For visitors with hearing loss, a phone call can be the hardest way to reach you, so always offer WhatsApp, email or a form as well; see <a href="/blog/website-for-hearing-aid-centres/">websites for hearing aid centres</a>.</p>
+
 <h2>Trust and reassurance</h2>
 <p>Older visitors may be more cautious about scams. Show clear contact details, a physical address, real photos and straightforward policies. Avoid pressure tactics.</p>
 
@@ -10094,6 +10096,8 @@ module.exports = [
 
 <h2>Careful with health claims</h2>
 <p>Avoid promising cures or guaranteed results. Describe therapies accurately, encourage consultation, and follow applicable regulations for health claims and advertising.</p>
+
+<p>Homeopathy clinics face similar questions about credentials and claims; see <a href="/blog/website-for-homeopathy-clinics/">websites for homeopathy clinics</a>.</p>
 
 <h2>Booking</h2>
 <ul>
@@ -14780,6 +14784,8 @@ module.exports = [
   <li>Photos of signature dishes (not every item)</li>
   <li>Notes on taxes and service charges, if applicable</li>
 </ul>
+
+<p>Cafes have a few menu details of their own, such as milk options, seasonal drinks and eggless bakes; see <a href="/blog/website-for-cafes-coffee-shops/">websites for cafes and coffee shops</a>.</p>
 
 <h2>Make it easy to scan</h2>
 <ul>
@@ -26566,6 +26572,297 @@ Template: astra
 <p>Search Console's old International Targeting report has been retired, so crawler checks and spot checks are now the main way to catch hreflang mistakes.</p>
 
 <p>Planning Hindi or regional versions of your site? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/wordpress-website-development/">WordPress website development</a> if you're building a multilingual site from scratch.</p>
+`,
+  },
+  {
+    slug: 'website-for-cafes-coffee-shops',
+    title: 'Websites for Cafes and Coffee Shops: What Customers Look For',
+    description: 'What a cafe or coffee shop website needs: a cafe-friendly menu, real photos of the space, work-friendly details, events, ordering options and local SEO.',
+    date: '2026-09-30',
+    category: 'Industries',
+    related: ['website-for-restaurants', 'wordpress-seo-services'],
+    body: `
+<p>People rarely choose a cafe on coffee alone. They want to know what the place feels like, whether they can sit with a laptop for two hours, whether there's something eggless to eat, and whether it's open right now. A cafe website that answers those questions quickly turns a "cafe near me" search into a visit. If you run a full-service restaurant, our guide to <a href="/blog/restaurant-website-online-ordering/">restaurant websites and online ordering</a> covers that side; this one focuses on what is specific to cafes and coffee shops.</p>
+
+<h2>What people check before visiting a cafe</h2>
+<p>Most cafe visits are decided on a phone within minutes, around the same few questions:</p>
+<ul>
+  <li><strong>Is it open now?</strong> Opening hours, including early mornings, late evenings and holiday changes</li>
+  <li><strong>What's the vibe?</strong> Quiet and cosy, lively, family-friendly or good for a first date</li>
+  <li><strong>What will it cost?</strong> A rough idea of the price range, which the menu answers</li>
+  <li><strong>Can I work here?</strong> Wi-Fi, power sockets and whether laptops are welcome</li>
+  <li><strong>How do I get there?</strong> Location, landmarks, parking and whether there are stairs</li>
+</ul>
+<p>Put the answers on the homepage, not three clicks deep: hours, address with a map link, a "View menu" button and a one-tap call or WhatsApp button.</p>
+
+<h2>A menu page built for a cafe</h2>
+<p>A cafe menu has quirks a restaurant menu doesn't. Build it as a proper web page rather than a PDF or a photo of the chalkboard, and include:</p>
+<ul>
+  <li><strong>Drinks with their options:</strong> hot and iced versions, cup sizes, and milk alternatives such as oat or almond milk, with any extra charge</li>
+  <li><strong>Beans and brew methods:</strong> if you serve pour-over, cold brew or single-origin coffee, say where the beans come from</li>
+  <li><strong>Food by time of day:</strong> breakfast, all-day plates, sandwiches, bakes and desserts, with breakfast timings stated clearly</li>
+  <li><strong>Dietary markers:</strong> veg and non-veg symbols, plus "eggless" or "contains egg" on bakes, which many customers in India look for</li>
+  <li><strong>Seasonal specials:</strong> a small section you can update in minutes, instead of reprinting everything</li>
+</ul>
+<p>Link your table QR codes to this same page, so the menu customers see at the table is always the current one.</p>
+
+<h2>Show the space as it really is</h2>
+<p>For a cafe, the room is part of the product. Visitors want to picture where they will sit before they arrive, so use real photos rather than stock images:</p>
+<ul>
+  <li>Each seating area: window tables, sofas, communal tables, the counter and any outdoor seating</li>
+  <li>The space at different times of day, if the mood changes from bright mornings to warm evenings</li>
+  <li>Your signature drinks and dishes, photographed in natural light</li>
+  <li>The team behind the counter, if they are happy to be featured</li>
+</ul>
+<p>Also answer the questions people otherwise call about: whether pets are welcome, whether there's step-free access, and whether you take reservations or are walk-in only. Compress photos so the gallery stays fast on mobile data.</p>
+
+<h2>Information for people who want to work</h2>
+<p>Students, freelancers and remote workers are regular cafe customers, and they plan ahead. A short "Working from here" FAQ sets fair expectations:</p>
+<table>
+  <thead>
+    <tr><th>Question</th><th>What to tell them</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Is there Wi-Fi?</td><td>Yes or no, and whether they should ask staff for the password</td></tr>
+    <tr><td>Are there power sockets?</td><td>Roughly where they are, and whether they are limited</td></tr>
+    <tr><td>Are laptops welcome all day?</td><td>Any laptop-free hours, such as weekend lunch</td></tr>
+    <tr><td>Is there a minimum order or time limit?</td><td>Your policy, stated politely</td></tr>
+  </tbody>
+</table>
+<p>If you'd rather not attract all-day laptop users, say so kindly. Being clear avoids awkward conversations at the table and disappointed reviews later.</p>
+
+<h2>Events, workshops and private bookings</h2>
+<p>Many cafes host open mics, board game nights, book clubs, live music, coffee tastings or art workshops. An events page turns these into a reason to visit and a reason to come back:</p>
+<ul>
+  <li>Upcoming events with date, time, price and what's included</li>
+  <li>Online registration, with UPI or card payment for paid workshops so seats are confirmed</li>
+  <li>A short archive of past events with photos, which shows the cafe is lively</li>
+  <li>A private booking enquiry form for birthdays, small gatherings, team outings or shoots, asking for the date, group size and budget</li>
+</ul>
+<p>Remove events once they're over; an events page still promoting last season's open mic makes the site look abandoned.</p>
+
+<h2>Takeaway, delivery and selling coffee beans</h2>
+<p>Ordering on a cafe website is usually lighter than for a restaurant, but a few options work well:</p>
+<ul>
+  <li><strong>Order ahead for pickup:</strong> office-goers can pay for their coffee in advance and collect it without queuing</li>
+  <li><strong>WhatsApp ordering</strong> for regulars and bulk orders, such as coffee and snacks for an office meeting</li>
+  <li><strong>Delivery app links</strong> for customers who prefer them, shown clearly but not ahead of your direct options</li>
+  <li><strong>Retail products:</strong> roasted beans, ground coffee, drip bags, mugs and gift boxes can be sold through a small online shop, including repeat orders for beans</li>
+</ul>
+<p>Selling beans online widens your reach beyond the neighbourhood, but it brings packaging, shipping and GST questions, so start with a few products and check the tax side with your CA.</p>
+
+<h2>Instagram and your website</h2>
+<p>Instagram is where many people discover cafes, so it deserves a place on your website, but not at the cost of speed:</p>
+<ul>
+  <li>Link to your Instagram profile clearly in the header or footer</li>
+  <li>Instead of a heavy live feed widget, show a small, hand-picked gallery of your best posts as optimised images; live embeds load extra code, as explained in our guide to <a href="/blog/third-party-scripts-slow-website/">third-party scripts that slow websites</a></li>
+  <li>Point the link in your Instagram bio to your menu or events page, not just the homepage</li>
+  <li>Keep hours, prices and menu items consistent across Instagram, your website and Google</li>
+</ul>
+<h2>Local SEO for cafes</h2>
+<p>Most cafe searches are local and often made on the spot. To appear for them:</p>
+<ul>
+  <li>Complete your Google Business Profile with the right category, hours, menu link, photos and the attributes Google offers, such as Wi-Fi or outdoor seating; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
+  <li>Use your area naturally in page titles and text, for example "cafe in {area}" or "coffee shop near {landmark}"</li>
+  <li>Mention what makes you a good fit for common searches, such as "work-friendly cafe", "pet-friendly cafe" or "breakfast in {area}", but only if it's true</li>
+  <li>Add structured data (schema.org has a CafeOrCoffeeShop type) with your address, hours and menu link</li>
+  <li>Ask happy regulars for Google reviews, and reply to them, including the critical ones</li>
+</ul>
+<p>Finally, keep the site fast: people search for cafes on the move, and a slow page sends them to the cafe down the road.</p>
+
+<p>Planning a cafe website with a menu you can update yourself, an events page and optional online ordering? See <a href="/website-for-restaurants/">websites for restaurants and cafes</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-hearing-aid-centres',
+    seoTitle: 'Websites for Hearing Aid Centres and Audiologists',
+    title: 'Websites for Hearing Aid Centres and Audiologists: Tests, Trials and Trust',
+    description: 'What hearing aid centres and audiologists need online: simple hearing test booking, a clear device guide, trials and aftercare, credentials and accessibility.',
+    date: '2026-09-30',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'wordpress-seo-services'],
+    body: `
+<p>Most people visiting a hearing aid centre's website have been putting off the decision for a while. It might be a retired teacher who struggles to follow conversations at family gatherings, a daughter booking a test for her father, or parents concerned about their child's hearing. They want to know what a hearing test involves, what the options roughly cost and whether they can trust you. Here's what a hearing aid centre or audiology clinic website should include.</p>
+
+<h2>Who visits, and what they need</h2>
+<table>
+  <thead>
+    <tr><th>Visitor</th><th>What they are looking for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Older adults noticing hearing loss</td><td>Reassurance, a simple explanation of the test and an easy way to book</td></tr>
+    <tr><td>Adult children booking for a parent</td><td>Timings, rough costs, home visit options and whether they can come along</td></tr>
+    <tr><td>Parents of young children</td><td>Children's hearing tests, speech therapy and a gentle approach</td></tr>
+    <tr><td>Existing hearing aid users</td><td>Batteries, servicing, repairs and fine-tuning appointments</td></tr>
+  </tbody>
+</table>
+<p>Give each group a clear path from the homepage, such as "Book a hearing test", "Hearing aids", "Children's hearing" and "Repairs and batteries".</p>
+
+<h2>Make booking a hearing test simple</h2>
+<p>The hearing test is where most new patients start, so give it its own page covering:</p>
+<ul>
+  <li>What happens during the appointment, in plain words, and roughly how long it takes</li>
+  <li>The tests you offer, such as pure tone audiometry, speech audiometry and tympanometry, with a one-line explanation of each</li>
+  <li>Whether there is a fee, and what the report includes</li>
+  <li>What to bring: previous hearing reports, details of any current hearing aids and a list of medicines</li>
+  <li>That a family member is welcome to come along</li>
+</ul>
+<p>For the booking itself, remember that a phone call can be the hardest option for someone with hearing loss. Offer an online form, WhatsApp and email alongside your number, and a "booking for someone else" option for families arranging appointments for parents. Our guide to <a href="/blog/online-appointment-booking-website/">online appointment booking</a> explains how to add reminders so fewer appointments are missed.</p>
+
+<h2>Explain the hearing aid range without jargon</h2>
+<p>Most first-time buyers don't know one hearing aid style from another. A simple comparison helps them arrive informed:</p>
+<table>
+  <thead>
+    <tr><th>Style</th><th>In plain words</th><th>Often suits</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Behind-the-ear (BTE)</td><td>Sits behind the ear, with a tube or mould into the ear</td><td>A wide range of hearing loss; easier to handle</td></tr>
+    <tr><td>Receiver-in-canal (RIC)</td><td>A small unit behind the ear with a thin wire to a speaker in the ear canal</td><td>People wanting a discreet, versatile option</td></tr>
+    <tr><td>In-the-ear styles (ITE, ITC, CIC)</td><td>Custom-made to sit inside the ear</td><td>People who prefer nothing behind the ear, depending on ear shape and hearing loss</td></tr>
+  </tbody>
+</table>
+<p>Then explain the features people ask about: rechargeable or battery-powered, Bluetooth streaming from phones and TVs, and different technology levels. Name only the brands you are authorised to sell and fit. If you show prices, use honest ranges and state what's included, such as fitting visits, adjustments, warranty and servicing. Always make it clear that the right device depends on the hearing test.</p>
+
+<h2>Trials, fitting and aftercare</h2>
+<p>A hearing aid is the start of a long relationship, not a one-off sale. Spell out the process:</p>
+<ol>
+  <li><strong>Trial:</strong> if you offer a trial period, explain how long it lasts, whether a deposit is needed and what happens at the end</li>
+  <li><strong>Fitting:</strong> programming the device to the test results and checking comfort</li>
+  <li><strong>Follow-up adjustments:</strong> how many are included and how to book them</li>
+  <li><strong>Aftercare:</strong> cleaning, servicing, wax guards, batteries, chargers and repairs, including other brands if you handle them</li>
+</ol>
+<p>Consumables such as batteries, cleaning kits and chargers can be sold online with UPI payment and home delivery, which saves regular users a trip.</p>
+
+<h2>Qualifications and trust</h2>
+<p>People are trusting you with a sensitive health issue and a significant purchase. Show:</p>
+<ul>
+  <li>Your audiologists by name, with photos, qualifications such as BASLP or MASLP, registration details where applicable and years of experience</li>
+  <li>Any ENT doctors you work with, described accurately</li>
+  <li>Your testing setup, such as a sound-treated room and calibrated equipment, with real photos</li>
+  <li>Genuine reviews, shared only with the patient's consent</li>
+  <li>Your address, parking and whether the centre is on the ground floor or has a lift</li>
+</ul>
+<p>Be careful with claims. Avoid promising that anyone will "hear perfectly again" or that a device will cure tinnitus. Hearing aids help many people, but results vary with the type and degree of hearing loss, and honest wording builds more trust than big promises. If you advertise, have your wording checked against current advertising rules.</p>
+
+<h2>Design for older visitors and people with hearing loss</h2>
+<p>Your audience includes many older adults and, naturally, many people who find sound difficult. Design for them:</p>
+<ul>
+  <li>Large, high-contrast text and big, clearly labelled buttons</li>
+  <li>Captions on every video, and a written summary alongside any audio</li>
+  <li>No auto-playing sound or video</li>
+  <li>Short forms with clear labels and simple error messages</li>
+  <li>Contact options that don't depend on hearing: WhatsApp, email and forms</li>
+</ul>
+<p>Our guide to <a href="/blog/website-accessibility-older-users/">making your website easy to use for older visitors</a> goes into more detail.</p>
+
+<h2>Keep hearing reports private</h2>
+<p>Audiograms and hearing histories are health information. Don't ask patients to upload reports through a basic contact form that simply emails them around. Collect only what you need, store reports securely, limit who can see them, and explain in your privacy policy how you use the information. India's data protection law adds duties around consent and security; see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a>.</p>
+
+<h2>Local SEO for hearing care</h2>
+<ul>
+  <li>Target searches such as "hearing test in {city}", "hearing aid centre near me", "audiologist in {area}" and "hearing aid repair {city}"</li>
+  <li>Create separate pages for hearing tests, hearing aids, children's hearing, tinnitus support and repairs, so each can rank for its own searches</li>
+  <li>Keep a Google Business Profile for each centre with hours, photos and genuine reviews</li>
+  <li>If you offer home visits, list the areas you cover</li>
+  <li>Publish helpful articles that answer real questions, such as how to tell whether a parent needs a hearing test</li>
+</ul>
+
+<p>Planning a website for a hearing care centre or audiology clinic? See <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-homeopathy-clinics',
+    seoTitle: 'Websites for Homeopathy Clinics: What to Include',
+    title: 'Websites for Homeopathy Clinics: Credentials, Consultations and Honest Claims',
+    description: 'What a homeopathy clinic website needs: clear credentials, how consultations work, online consultations, responsible claims without cure promises, and privacy.',
+    date: '2026-09-30',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'landing-page-design'],
+    body: `
+<p>People looking for a homeopath online often have a long-standing concern, such as a skin problem, allergies or recurring colds, and many have already tried other treatments. Before booking, they want to know who you are, how consultations work, what it costs and whether you can see them online. A homeopathy clinic website has to answer those questions clearly while staying careful about claims. Ayurveda centres face many of the same issues; see <a href="/blog/website-for-ayurveda-wellness-centres/">websites for Ayurveda and wellness centres</a>.</p>
+
+<h2>What patients look for before booking</h2>
+<ul>
+  <li>The practitioner's qualifications and registration</li>
+  <li>How the first consultation works and how long it takes</li>
+  <li>Fees for first and follow-up consultations, and whether medicines are included</li>
+  <li>Clinic timings, location and parking</li>
+  <li>Whether online consultations are available</li>
+  <li>Reviews from real patients</li>
+</ul>
+<p>Put the essentials, a "Book a consultation" button and WhatsApp contact where visitors see them on the first screen of a phone.</p>
+
+<h2>Show credentials clearly</h2>
+<p>For each practitioner, include:</p>
+<ul>
+  <li>A real photo and a short introduction in their own voice</li>
+  <li>Qualifications such as BHMS or MD (Hom), with the institution</li>
+  <li>Registration details with the relevant state board or council, or the central register, as applicable</li>
+  <li>Years of practice, languages spoken and areas of interest</li>
+  <li>Any hospital or teaching roles, described accurately</li>
+</ul>
+<p>List only qualifications and memberships that are real and current. Vague labels such as "world-famous homeopath" add nothing and can raise doubts.</p>
+
+<h2>Explain the consultation process</h2>
+<p>A homeopathic first consultation is often longer and more detailed than patients expect, so explaining the process puts them at ease:</p>
+<ol>
+  <li><strong>First consultation:</strong> a detailed case history covering symptoms, medical history and lifestyle; say roughly how long it takes</li>
+  <li><strong>What to bring:</strong> previous reports, prescriptions and a list of current medicines</li>
+  <li><strong>Medicines:</strong> how they are given, whether they are included in the fee, and for how many days</li>
+  <li><strong>Follow-ups:</strong> how often they usually happen and how to book them</li>
+</ol>
+<p>Also state plainly that patients should not stop medicines prescribed by another doctor without speaking to that doctor, and that emergencies need a hospital, not a clinic appointment. This protects patients and shows you practise responsibly.</p>
+
+<h2>Online consultations</h2>
+<p>Many homeopaths now see patients from other cities or abroad by video call. If you do:</p>
+<ul>
+  <li>Explain how it works: booking, payment, the call itself, and how medicines or prescriptions reach the patient</li>
+  <li>Take payment in advance by UPI, cards or net banking through a payment gateway, and check whether it accepts international cards if you see overseas patients</li>
+  <li>Send video call links privately after booking, never on a public page</li>
+  <li>Say which cases need an in-person visit</li>
+  <li>Check the current telemedicine guidance for homoeopathy practitioners, and the rules on sending medicines by courier, especially abroad</li>
+</ul>
+<p>An <a href="/blog/online-appointment-booking-website/">online booking system</a> with automatic reminders works well for both clinic and video appointments.</p>
+
+<h2>Responsible claims: no cure promises</h2>
+<p>This is where many homeopathy websites go wrong. Wording that looks like good marketing can mislead patients and break the rules:</p>
+<ul>
+  <li>Avoid "permanent cure", "guaranteed results", "100% safe" or "no side effects" claims</li>
+  <li>Don't advertise cures for serious conditions such as cancer or diabetes, or suggest homeopathy replaces conventional treatment</li>
+  <li>Don't use patient stories or before-and-after photos as proof that a treatment works</li>
+  <li>Describe what you do, such as consultation, individual prescribing and follow-up, rather than promising outcomes</li>
+</ul>
+<p>India has laws restricting advertisements for remedies that claim to cure certain diseases, such as the Drugs and Magic Remedies (Objectionable Advertisements) Act, and registered practitioners may also be bound by professional conduct rules on advertising. Rules and their interpretation change, so ask a lawyer familiar with healthcare advertising to review your website. Ad platforms have their own healthcare policies too, so campaign landing pages need the same care.</p>
+
+<h2>Condition pages and helpful content</h2>
+<p>Patients often search by concern, for example "homeopathy doctor for skin allergy in {city}". You can create pages about the concerns you commonly see, but write them carefully:</p>
+<ul>
+  <li>Describe the concern, when to see a doctor urgently, and how your consultation approaches it</li>
+  <li>Avoid success rates and promises, and never copy content from other sites</li>
+  <li>Show who wrote or reviewed each page, with their qualifications</li>
+  <li>Keep articles up to date, and remove anything you can no longer stand behind</li>
+</ul>
+<p>Google holds health content to high standards, so clear authorship and honest information matter more than volume; see <a href="/blog/eeat-explained-small-business/">E-E-A-T explained</a>.</p>
+
+<h2>Privacy for detailed case histories</h2>
+<p>Homeopathic case-taking can cover very personal details, including emotional, family and sexual health history. Handle it with care:</p>
+<ul>
+  <li>Keep the website enquiry form short: name, phone, preferred time and a brief reason</li>
+  <li>Collect detailed histories during the consultation or through a secure intake form, not a plain email form</li>
+  <li>Limit who in the clinic can see patient information, and never discuss cases on social media</li>
+  <li>Get written consent before sharing any testimonial, and leave out identifying health details</li>
+  <li>Publish a clear privacy policy explaining what you collect and why, in line with India's data protection law</li>
+</ul>
+
+<h2>Local SEO and trust</h2>
+<ul>
+  <li>Target searches such as "homeopathy clinic in {area}", "homeopathic doctor near me" and "online homeopathy consultation"</li>
+  <li>Keep your Google Business Profile complete with timings, clinic photos and genuine reviews</li>
+  <li>Show your address, a map and real photos of the reception and consultation room</li>
+  <li>Keep the site fast and easy to read on a phone, with large text for older patients</li>
+</ul>
+
+<p>Need a homeopathy clinic website that is clear, credible and careful with claims? See <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>, or <a href="/landing-page-design/">landing page design</a> for consultation campaigns.</p>
 `,
   },
 ];

@@ -475,6 +475,10 @@ const LINKS = [
   ['duplicate-content-explained', '<h2>The principle</h2>', '<p>Not sure which archives count as low-value? See <a href="/blog/category-tag-pages-seo/">when to index or noindex WordPress category and tag pages</a>.</p>\n\n'],
   ['helpful-404-pages', '<h2>Technical must-haves</h2>', '<p>A search box only helps if it returns good results; see <a href="/blog/improve-wordpress-site-search/">how to improve WordPress site search</a>.</p>\n\n'],
   ['multilingual-wordpress-website-hindi-english', '<h2>Real examples</h2>', '<p>For URL structures, hreflang codes and checking that Google shows the right version, see <a href="/blog/hreflang-multilingual-seo-india/">hreflang and multilingual SEO for Indian websites</a>.</p>\n\n'],
+  // Agent 33
+  ['restaurant-menu-on-website', '<h2>Make it easy to scan</h2>', '<p>Cafes have a few menu details of their own, such as milk options, seasonal drinks and eggless bakes; see <a href="/blog/website-for-cafes-coffee-shops/">websites for cafes and coffee shops</a>.</p>\n\n'],
+  ['website-accessibility-older-users', '<h2>Trust and reassurance</h2>', '<p>For visitors with hearing loss, a phone call can be the hardest way to reach you, so always offer WhatsApp, email or a form as well; see <a href="/blog/website-for-hearing-aid-centres/">websites for hearing aid centres</a>.</p>\n\n'],
+  ['website-for-ayurveda-wellness-centres', '<h2>Booking</h2>', '<p>Homeopathy clinics face similar questions about credentials and claims; see <a href="/blog/website-for-homeopathy-clinics/">websites for homeopathy clinics</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
