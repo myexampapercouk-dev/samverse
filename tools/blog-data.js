@@ -6012,6 +6012,8 @@ module.exports = [
 <h2>9. A sensible budget and scope</h2>
 <p>Start with your most profitable services and locations, tightly targeted, rather than everything at once.</p>
 
+<p>Not sure how much to spend? See <a href="/blog/google-ads-budget-small-business/">how to set a sensible Google Ads budget</a>.</p>
+
 <h2>10. A plan to review and improve</h2>
 <p>Check search terms, conversions and cost per lead weekly. Improve landing pages based on what converts. Avoid the <a href="/blog/landing-page-mistakes-google-ads/">common landing page mistakes</a>.</p>
 
@@ -8790,6 +8792,8 @@ module.exports = [
   <li>End with a clear call to action</li>
 </ul>
 
+<p>Publishing these videos on YouTube as well? See <a href="/blog/youtube-video-seo-small-business/">YouTube and video SEO for small businesses</a> for titles, chapters and video schema.</p>
+
 <h2>SEO</h2>
 <ul>
   <li>Add a short text summary or transcript next to the video</li>
@@ -11339,6 +11343,8 @@ module.exports = [
   <li>Use UTM tags to see which platforms send visitors</li>
   <li>Make sure the article has a clear next step (enquiry, WhatsApp)</li>
 </ul>
+
+<p>For Instagram in particular, see <a href="/blog/instagram-to-website-enquiries/">how to turn Instagram followers into website enquiries</a>.</p>
 
 <h2>Keep a simple workflow</h2>
 <ol>
@@ -26863,6 +26869,280 @@ Template: astra
 </ul>
 
 <p>Need a homeopathy clinic website that is clear, credible and careful with claims? See <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>, or <a href="/landing-page-design/">landing page design</a> for consultation campaigns.</p>
+`,
+  },
+  {
+    slug: 'youtube-video-seo-small-business',
+    seoTitle: 'YouTube and Video SEO for Small Businesses',
+    title: 'YouTube and Video SEO for Small Businesses: Titles, Chapters and Schema',
+    description: 'How small businesses can get videos found on YouTube and Google: titles, descriptions, chapters, captions, fast website embeds and basic video schema markup.',
+    date: '2026-09-30',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>A good video can answer a customer's question, show your work and build trust before they ever call you. But a video nobody finds does none of that. This guide covers the practical side of getting small business videos found on YouTube and in Google, and putting them on your website without making it slow. If you're still deciding whether video belongs on your site at all, start with <a href="/blog/video-on-business-website/">when video helps and when it hurts</a>.</p>
+
+<h2>Two places your videos can be found</h2>
+<p>Your videos can be discovered in two separate places, and each works slightly differently:</p>
+<ul>
+  <li><strong>YouTube search and suggestions:</strong> YouTube looks at your title, description and captions, and at how viewers respond, such as whether they click and keep watching.</li>
+  <li><strong>Google search:</strong> videos can appear in the Videos tab, in video results on the main results page, or as "key moments" that jump straight to one part of a video.</li>
+</ul>
+<p>The good news is that the same basics help in both: a clear topic, an honest title, a useful description and a sensible structure.</p>
+
+<h2>Pick topics people actually search for</h2>
+<p>Many small business channels struggle because they post whatever is convenient, like office celebrations or generic promos. Instead, make videos that answer the questions customers ask before they buy:</p>
+<ul>
+  <li>"What affects the price of..." explainers</li>
+  <li>Comparisons, such as "split AC vs window AC" or "tiles vs marble flooring"</li>
+  <li>How-to, set-up and care videos for products you sell</li>
+  <li>Project walkthroughs and before-and-after videos</li>
+  <li>Short answers to the questions your team hears on the phone every week</li>
+</ul>
+<p>Type your topic into YouTube's search bar and note the suggestions that appear, since they reflect what people search for. Hindi or regional language videos can work well if that's how your customers speak, even when your website is in English.</p>
+
+<h2>Write titles and descriptions that do the work</h2>
+<h3>Titles</h3>
+<ul>
+  <li>Put the main topic near the start: "Terrace Waterproofing: What the Process Involves" says far more than "Our Latest Project!!"</li>
+  <li>Add a city or area only when it's natural, such as a local project walkthrough</li>
+  <li>Keep it honest. A title the video doesn't deliver on makes people leave quickly, which works against you</li>
+</ul>
+<h3>Descriptions</h3>
+<ul>
+  <li>Only the first line or two show before viewers tap "more", so summarise the video there and include your main topic naturally</li>
+  <li>Link to the most relevant page on your website, not just the homepage, and tag the link so you can see those visits in analytics; see <a href="/blog/utm-tags-explained/">UTM tags explained</a></li>
+  <li>Include your business name, service area and a contact option</li>
+  <li>Write a few natural sentences about what the video covers instead of long keyword lists or piles of hashtags</li>
+</ul>
+<p>Tags matter far less than titles and descriptions, so don't spend long on them.</p>
+
+<h2>Add chapters, captions and a clear thumbnail</h2>
+<ul>
+  <li><strong>Chapters:</strong> add timestamps to your description, starting with 0:00, with a short label for each section. YouTube turns these into chapters (check its current rules on the minimum number and length), and Google can use them to show key moments in search results.</li>
+  <li><strong>Captions:</strong> automatic captions are a start but often get names, technical terms and Hindi-English mixes wrong. Edit or upload accurate captions. They help people watching without sound and give YouTube more text to understand the video.</li>
+  <li><strong>Thumbnails:</strong> use a clear, uncluttered image with a few large words that match the title. Real photos of your work, your team or your face generally feel more trustworthy than stock images. Custom thumbnails may need a verified account.</li>
+  <li><strong>Playlists:</strong> group videos by service or question, such as "Kitchen projects" or "Buying guides", so viewers watch more than one.</li>
+</ul>
+
+<h2>Embed videos on your website without slowing it down</h2>
+<p>A standard YouTube embed loads the full player and its scripts as soon as the page opens, even if nobody presses play. Add a few of those to one page and it gets noticeably slower, especially on mobile data.</p>
+<p>The fix is a "facade", sometimes called a lite embed:</p>
+<ol>
+  <li>The page shows only the video's thumbnail with a play button, which is a single lightweight image</li>
+  <li>The real YouTube player loads only when someone taps play</li>
+</ol>
+<p>Many WordPress performance plugins can do this automatically, or a developer can build it into your theme. A few more rules:</p>
+<ul>
+  <li>Don't put an auto-playing YouTube video in the top section of a page</li>
+  <li>Give the video area a fixed aspect ratio so the page doesn't jump around as it loads</li>
+  <li>Lazy-load videos further down the page; see <a href="/blog/lazy-loading-explained/">lazy loading explained</a></li>
+  <li>Consider YouTube's privacy-enhanced embed mode, which is designed to reduce tracking of visitors who don't play the video</li>
+</ul>
+
+<h2>Video schema basics</h2>
+<p>Schema markup is code that describes your page to search engines. For videos the type is <strong>VideoObject</strong>, and it usually includes:</p>
+<ul>
+  <li>The video's name and a short description</li>
+  <li>A thumbnail image URL</li>
+  <li>The upload date</li>
+  <li>The duration and the embed URL</li>
+</ul>
+<p>Some SEO and video plugins add this for you. Check Google's current documentation for which fields are required, and test the page with the Rich Results Test. For the wider picture, see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+<p>Schema helps Google understand a video; it doesn't guarantee a video result. Google has said it focuses video features on pages where the video is the main content, so a long text page with a video near the bottom may not show as a video result. For your most important videos, consider a dedicated page with the video at the top, a written summary and a clear next step.</p>
+
+<h2>Connect your channel and your website</h2>
+<ul>
+  <li>Use the same business name, logo and contact details on YouTube, your website and your Google Business Profile</li>
+  <li>Add your website link to the channel's profile</li>
+  <li>Embed each video on the most relevant service or blog page, with a short written summary or key points beside it</li>
+  <li>Link from the video description back to that same page</li>
+  <li>Reply to comments; the questions people ask there are ideas for your next videos</li>
+</ul>
+
+<h2>What to measure</h2>
+<ul>
+  <li><strong>In YouTube Studio:</strong> impressions, click-through rate, average view duration and the searches that bring viewers</li>
+  <li><strong>In Google Analytics:</strong> visits from your tagged YouTube links, and whether those visitors enquire</li>
+  <li><strong>In Search Console:</strong> the video indexing report, if your site has pages built around videos</li>
+</ul>
+<p>Views alone don't pay the bills. A video with modest views that brings steady enquiries is worth more than a popular one that brings none.</p>
+
+<p>Want your service pages, videos and schema working together? See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'instagram-to-website-enquiries',
+    title: 'How to Turn Instagram Followers Into Website Enquiries',
+    description: 'Practical ways to turn Instagram followers into website enquiries: link in bio, matching landing pages, Highlights, DM to WhatsApp, UTM tags and measurement.',
+    date: '2026-09-30',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>Plenty of Indian businesses have a busy Instagram account and a quiet website. Followers like the posts, a few send "price?" in the DMs, and most never visit the site or become customers. The problem usually isn't the content itself but the path from a post to an enquiry. Here's how to build that path, and how to tell whether it's working.</p>
+
+<h2>Why likes don't turn into enquiries</h2>
+<p>Instagram is designed to keep people on Instagram. Links in post captions aren't clickable, people scroll quickly, and someone who is interested today may forget you by tomorrow. So you need to:</p>
+<ul>
+  <li>Make the next step obvious in every post and story</li>
+  <li>Send people to a page that continues the conversation the post started</li>
+  <li>Make enquiring easy on a phone, in a few taps</li>
+  <li>Track what happens, so you know which posts actually bring business</li>
+</ul>
+
+<h2>Make your bio link work harder</h2>
+<p>The bio link is the main clickable route from your profile to your website. Instagram lets you add more than one link, but most people tap the first, so choose carefully. You have three main options:</p>
+<table>
+  <thead>
+    <tr><th>Option</th><th>Good for</th><th>Watch out for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>A third-party link-in-bio tool</td><td>Quick set-up, easy to change</td><td>Visitors land on someone else's page first; tracking and branding can be limited on free plans</td></tr>
+    <tr><td>A "links" page on your own website</td><td>Your branding, full analytics, a chance to show reviews and a WhatsApp button</td><td>It must load fast and be kept up to date</td></tr>
+    <tr><td>Linking straight to one landing page</td><td>A single offer or seasonal campaign</td><td>Remember to change it when the campaign ends</td></tr>
+  </tbody>
+</table>
+<p>A simple page on your own site with four to six large buttons (current offer, services or products, prices, reviews, WhatsApp) works well for most businesses. Rewrite the bio text too: say what you do, where, and what to tap, for example "Modular kitchens in Pune. Tap below for designs and a free site visit."</p>
+
+<h2>Send people to a page that matches the post</h2>
+<p>If a reel shows a bridal make-up look and the link opens your homepage, the visitor has to go hunting, and most won't. Send them to a page about exactly that service or product. For offers and campaigns, a dedicated landing page usually does better than a general page; see <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</p>
+<p>Instagram visitors arrive on a phone, often inside Instagram's own in-app browser, so the page should:</p>
+<ul>
+  <li>Load quickly and show the same look, product or offer they just saw</li>
+  <li>Put the main action (WhatsApp, call or a short form) near the top</li>
+  <li>Give price guidance or a starting range if you can; see <a href="/blog/show-prices-on-website/">should you show prices on your website</a></li>
+  <li>Include real photos, reviews and your location to build trust</li>
+  <li>Keep forms short, and test them inside the Instagram app, not only in Chrome</li>
+</ul>
+
+<h2>Use Stories, Highlights and pinned posts as signposts</h2>
+<ul>
+  <li><strong>Link stickers in Stories:</strong> the easiest way to send people to a specific page. Add a clear instruction such as "Tap for the price list".</li>
+  <li><strong>Highlights:</strong> treat them like a mini website menu: Services, Work, Reviews, Prices, How to book, FAQs. Keep them current and add link stickers to the key stories.</li>
+  <li><strong>Pinned posts:</strong> pin your strongest work, a reviews post and a short explainer on how to book or order.</li>
+  <li><strong>Captions:</strong> end with a specific next step ("Tap the link in bio for sizes and prices" or "DM KITCHEN for the catalogue") rather than a vague "link in bio".</li>
+</ul>
+
+<h2>Move DM conversations to WhatsApp, politely</h2>
+<p>Many customers in India prefer to discuss details, share photos and pay over WhatsApp. When someone asks a genuine question in your DMs:</p>
+<ol>
+  <li>Answer briefly in the DM first, so they feel heard</li>
+  <li>Offer WhatsApp for the details: "Happy to send the full catalogue and prices on WhatsApp. Tap this link to start a chat."</li>
+  <li>Use a WhatsApp link with a pre-filled message, such as "Hi, I saw your Instagram post about...", so you know where the chat came from</li>
+  <li>Save quick replies for common questions so everyone on the team answers consistently</li>
+</ol>
+<p>Only message people on WhatsApp once they've agreed to it. A business profile on Instagram can also show contact buttons, including WhatsApp if you connect your WhatsApp Business number; check the current settings in the app. To make the same route work on your site, see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
+
+<h2>Tag every link with UTM parameters</h2>
+<p>Without tags, visits from Instagram can show up in analytics as a vague referral or even as direct traffic, and you can't tell a bio click from a story click. Add UTM tags to every link you share:</p>
+<ul>
+  <li><strong>utm_source=instagram</strong> for everything from Instagram</li>
+  <li><strong>utm_medium=social</strong>, used consistently</li>
+  <li><strong>utm_campaign</strong> to name the offer or season, such as diwali-offer</li>
+  <li><strong>utm_content</strong> to tell apart bio, story and highlight links</li>
+</ul>
+<p>Keep the tagged links in a simple sheet and stick to the same naming every time. <a href="/blog/utm-tags-explained/">UTM tags explained</a> covers the details.</p>
+
+<h2>Measure what actually becomes business</h2>
+<p>Followers and likes are easy to see but say little about revenue. Each month, look at:</p>
+<ul>
+  <li>Website visits from Instagram, split by bio, story and highlight links</li>
+  <li>Enquiries from those visits: form submissions, WhatsApp clicks and calls, tracked as events in Google Analytics</li>
+  <li>DM enquiries, and how many moved to WhatsApp or a call</li>
+  <li>How many of these became paying customers</li>
+</ul>
+<p>Also ask every new customer "How did you hear about us?" and write it down. After a few months you'll see which kinds of posts bring customers, not just attention, and you can make more of those.</p>
+
+<p>Need a fast, mobile-first page for your Instagram visitors to land on? See <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'google-ads-budget-small-business',
+    title: 'How to Set a Sensible Google Ads Budget for a Small Business',
+    description: 'How to set a Google Ads budget for a small business: work back from what an enquiry is worth, start small, understand cost per click and know when to stop.',
+    date: '2026-09-30',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-seo-services'],
+    body: `
+<p>"How much should I spend on Google Ads?" is one of the first questions business owners ask. The honest answer is that it depends on what a customer is worth to you and what clicks cost in your market. Rather than picking a round number, you can work it out. This guide shows how, without assuming any particular rupee figure, because costs vary widely by industry, city and competition.</p>
+
+<h2>Start with what an enquiry is worth</h2>
+<p>Before thinking about clicks, work out how much you can afford to pay for one enquiry. You need three numbers from your own business:</p>
+<ol>
+  <li><strong>Profit per customer:</strong> not revenue, but what you keep after costs. For repeat businesses such as clinics, salons or AMC services, you can consider what a customer is worth over a year, but be realistic</li>
+  <li><strong>Close rate:</strong> out of every ten enquiries, how many become paying customers?</li>
+  <li><strong>The share of that profit you're willing to spend</strong> to win a new customer</li>
+</ol>
+<p>Then: <strong>affordable cost per enquiry = profit per customer × close rate × the share you'll spend</strong>. For example, if you close two in ten enquiries and you're happy to spend half the profit to win a customer, you can afford to pay a tenth of one customer's profit for each enquiry.</p>
+<p>If you don't know your close rate, track it for a month before you start. Guessing here is how budgets get wasted. <a href="/blog/measure-website-roi/">Measuring your website's ROI</a> covers these numbers in more detail.</p>
+
+<h2>Work back to an affordable cost per click</h2>
+<p>Next, estimate how many visitors it takes to get one enquiry. That's your landing page's conversion rate. Then:</p>
+<p><strong>Affordable cost per click = affordable cost per enquiry × conversion rate</strong></p>
+<table>
+  <thead>
+    <tr><th>If your page converts...</th><th>You get one enquiry every...</th><th>You can afford per click...</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1 in 10 visitors</td><td>10 clicks</td><td>a tenth of your affordable cost per enquiry</td></tr>
+    <tr><td>1 in 20 visitors</td><td>20 clicks</td><td>a twentieth</td></tr>
+    <tr><td>1 in 50 visitors</td><td>50 clicks</td><td>a fiftieth</td></tr>
+  </tbody>
+</table>
+<p>These ratios are illustrations, not benchmarks. The point is that a better landing page directly raises what you can afford to pay per click. Now compare this with reality: Google's Keyword Planner shows rough bid ranges for your keywords and location. If typical costs are far above what you can afford, improve the page, the offer or the targeting first, or ask whether ads are the right channel right now; see <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a>.</p>
+
+<h2>What affects your cost per click</h2>
+<p>Google Ads is an auction, so you don't set the price alone. What you pay per click depends on:</p>
+<ul>
+  <li><strong>Competition:</strong> how many advertisers want the same searches, and how much they're willing to pay</li>
+  <li><strong>Industry:</strong> fields where one customer is worth a lot, such as legal, finance or education, tend to cost more per click</li>
+  <li><strong>Location:</strong> big cities are usually more competitive than smaller towns</li>
+  <li><strong>Search intent:</strong> ready-to-buy searches like "AC repair near me" often cost more than research searches, but they convert better</li>
+  <li><strong>Relevance and quality:</strong> Google rewards ads that match the search and landing pages that are useful, so a close match between keyword, ad and page can lower what you pay</li>
+  <li><strong>Timing and device:</strong> costs can shift by time of day, day of the week, season and device</li>
+</ul>
+
+<h2>Start small and narrow</h2>
+<p>A small budget spread across every service and every city buys a few clicks everywhere and teaches you nothing. Instead:</p>
+<ul>
+  <li>Choose one or two of your most profitable services</li>
+  <li>Target the area you actually serve, not the whole state or country</li>
+  <li>Start with phrase and exact match keywords, and add negative keywords (such as "free", "jobs", "course" or "DIY") to block irrelevant searches</li>
+  <li>Run ads during hours when someone can answer the phone or WhatsApp</li>
+  <li>Send each ad group to a matching landing page; see <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a></li>
+</ul>
+<p>Set the daily budget so it can buy a meaningful number of clicks each day at your expected cost per click. If it only buys one or two, you'll wait a very long time to learn anything. Google may also spend more than your daily budget on some days and less on others, balancing it over the month, so check Google's current help pages for how this works before you set a figure.</p>
+
+<h2>Track conversions before you judge anything</h2>
+<p>A budget decision is only as good as the data behind it. Before spending seriously, make sure Google Ads records form submissions, calls and WhatsApp clicks as conversions, and test each one yourself. See <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a>.</p>
+<p>Track lead quality, not just the count. Ten enquiries from outside your service area aren't worth one serious local one. A simple sheet with the date, source, service and outcome of each enquiry is enough.</p>
+
+<h2>Give it enough time and data</h2>
+<p>New campaigns need a few weeks to settle. During that time:</p>
+<ul>
+  <li>Check the search terms report every week and add negative keywords for irrelevant searches</li>
+  <li>Pause keywords that keep spending without converting after a fair number of clicks</li>
+  <li>Improve ad text and landing pages based on what does convert</li>
+  <li>Avoid changing everything at once, or you won't know what helped</li>
+</ul>
+<p>Once you have steady conversions, automated bidding that aims for a target cost per enquiry becomes more useful, because it needs conversion data to work well.</p>
+
+<h2>When to increase, pause or stop</h2>
+<table>
+  <thead>
+    <tr><th>What you see</th><th>What to do</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Cost per enquiry is below your limit and leads are good</td><td>Increase the budget gradually, or add the next service or area</td></tr>
+    <tr><td>Cost per enquiry is slightly above your limit</td><td>Tighten keywords, add negatives, improve the landing page, then review</td></tr>
+    <tr><td>Plenty of clicks but almost no enquiries</td><td>Check tracking, the landing page and search terms before blaming the budget</td></tr>
+    <tr><td>Enquiries, but poor quality</td><td>Refine keywords, location settings and the ad's wording about who you serve</td></tr>
+    <tr><td>You can't handle more work or reply quickly</td><td>Pause or reduce spend; unanswered leads are wasted money</td></tr>
+  </tbody>
+</table>
+<p>Stop, or step back and rethink, if after a fair test (with tracking working and the landing page improved) your cost per enquiry stays well above what an enquiry is worth. That isn't failure; it's a clear answer, and the money can go into SEO, your Google Business Profile or referrals instead.</p>
+
+<p>Want a landing page built to make every click count? See <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
 ];

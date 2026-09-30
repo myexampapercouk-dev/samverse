@@ -479,6 +479,10 @@ const LINKS = [
   ['restaurant-menu-on-website', '<h2>Make it easy to scan</h2>', '<p>Cafes have a few menu details of their own, such as milk options, seasonal drinks and eggless bakes; see <a href="/blog/website-for-cafes-coffee-shops/">websites for cafes and coffee shops</a>.</p>\n\n'],
   ['website-accessibility-older-users', '<h2>Trust and reassurance</h2>', '<p>For visitors with hearing loss, a phone call can be the hardest way to reach you, so always offer WhatsApp, email or a form as well; see <a href="/blog/website-for-hearing-aid-centres/">websites for hearing aid centres</a>.</p>\n\n'],
   ['website-for-ayurveda-wellness-centres', '<h2>Booking</h2>', '<p>Homeopathy clinics face similar questions about credentials and claims; see <a href="/blog/website-for-homeopathy-clinics/">websites for homeopathy clinics</a>.</p>\n\n'],
+  // Agent 37
+  ['video-on-business-website', '<h2>SEO</h2>', '<p>Publishing these videos on YouTube as well? See <a href="/blog/youtube-video-seo-small-business/">YouTube and video SEO for small businesses</a> for titles, chapters and video schema.</p>\n\n'],
+  ['repurpose-website-content-social-media', '<h2>Keep a simple workflow</h2>', '<p>For Instagram in particular, see <a href="/blog/instagram-to-website-enquiries/">how to turn Instagram followers into website enquiries</a>.</p>\n\n'],
+  ['website-ready-for-google-ads', '<h2>10. A plan to review and improve</h2>', '<p>Not sure how much to spend? See <a href="/blog/google-ads-budget-small-business/">how to set a sensible Google Ads budget</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
