@@ -591,6 +591,10 @@ const LINKS = [
   ['woocommerce-product-variations', '<h2>Keep large variation sets manageable</h2>', '<p>For a worked example where size charts, size buttons and stock by size matter on every product, see <a href="/blog/website-for-footwear-stores/">websites for footwear stores</a>.</p>\n\n'],
   ['website-for-fashion-boutiques', '<h2>Connect Instagram and the website</h2>', '<p>Selling sarees and ethnic wear brings its own challenges, from colour accuracy to blouse stitching; see <a href="/blog/website-for-saree-ethnic-wear-stores/">websites for saree and ethnic wear stores</a>.</p>\n\n'],
   ['website-for-jewellers', '<h2>Collections and occasions</h2>', '<p>If you also sell watches, the same enquiry-led approach works, with extra care over dealer status and warranties; see <a href="/blog/website-for-watch-stores/">websites for watch stores</a>.</p>\n\n'],
+  // Agent 64
+  ['service-area-business-seo', '<h2>Let service pages do the heavy lifting</h2>', '<p>For a city-specific example, see <a href="/blog/local-seo-pune-businesses/">local SEO for businesses in Pune and Pimpri-Chinchwad</a>, including which neighbourhoods deserve their own page.</p>\n\n'],
+  ['google-business-profile-checklist', '<h2>Services and description</h2>', '<p>Profile set up but still missing from the map? See <a href="/blog/not-showing-on-google-maps/">why a business isn\'t showing on Google Maps</a> for a troubleshooting checklist.</p>\n\n'],
+  ['woocommerce-order-management-workflow', '<h2>Handle cancellations, returns and failed deliveries</h2>', '<p>For which updates to send on each channel, WhatsApp templates and DLT registration for SMS, see <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">WooCommerce order notifications by email, SMS and WhatsApp</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

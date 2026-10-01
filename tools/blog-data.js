@@ -1497,6 +1497,8 @@ module.exports = [
   <li><strong>Hours:</strong> accurate regular hours, plus special hours for holidays.</li>
 </ul>
 
+<p>Profile set up but still missing from the map? See <a href="/blog/not-showing-on-google-maps/">why a business isn't showing on Google Maps</a> for a troubleshooting checklist.</p>
+
 <h2>Services and description</h2>
 <ul>
   <li>Add every <strong>service</strong> you offer, with a short description for each.</li>
@@ -21447,6 +21449,8 @@ Template: astra
 <p>Packers and movers often want route pages such as "Pune to Bengaluru". The same test applies: build one only if it says something genuinely useful about that move, such as the transit time you can commit to, vehicle options and what the customer should prepare.</p>
 <p>Everywhere else, one strong service page plus a clear list of areas beats a thin page per locality. Start with your two or three busiest areas, do them properly, and add more as real jobs and reviews build up.</p>
 
+<p>For a city-specific example, see <a href="/blog/local-seo-pune-businesses/">local SEO for businesses in Pune and Pimpri-Chinchwad</a>, including which neighbourhoods deserve their own page.</p>
+
 <h2>Let service pages do the heavy lifting</h2>
 <p>For searches beyond your immediate area, Google usually ranks service pages, not your homepage. Give each main service its own page: bathroom leakage repair, deep cleaning, home shifting, termite treatment. On each one:</p>
 <ul>
@@ -27788,6 +27792,8 @@ Template: astra
   <li><strong>Order notes:</strong> WooCommerce lets you add a private note for the team (such as "customer wants evening delivery") or a note to the customer, which is emailed to them. Use private notes so nobody has to rely on memory.</li>
   <li><strong>New order alerts:</strong> send them to the people who actually pack, not just the owner</li>
 </ul>
+
+<p>For which updates to send on each channel, WhatsApp templates and DLT registration for SMS, see <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">WooCommerce order notifications by email, SMS and WhatsApp</a>.</p>
 
 <h2>Handle cancellations, returns and failed deliveries</h2>
 <ul>
@@ -34478,6 +34484,257 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Everyday watches can still sell directly through an online store, with high-value pieces kept enquiry-only. See <a href="/blog/online-appointment-booking-website/">online appointment booking</a> for setting up store visit slots.</p>
 
 <p>Building a website for your watch store? See <a href="/woocommerce-developer/">WooCommerce development</a> if you want to sell online, or <a href="/wordpress-website-development/">WordPress website development</a> for a catalogue and enquiry site.</p>
+`,
+  },
+  {
+    slug: 'local-seo-pune-businesses',
+    seoTitle: 'Local SEO for Pune and Pimpri-Chinchwad Businesses',
+    title: 'Local SEO for Pune Businesses: Getting Found Across Pune and Pimpri-Chinchwad',
+    description: 'Local SEO for Pune and PCMC businesses: honest area pages, Google Business Profile, Marathi, Hindi or English content, listings, reviews and enquiry tracking.',
+    date: '2026-10-01',
+    category: 'SEO',
+    related: ['wordpress-developer-pune', 'wordpress-seo-services'],
+    body: `
+<p>Pune is really several local markets stitched together. Someone in Kothrud looking for a physiotherapist, a family in Wakad searching for pest control and a purchase manager in Chakan hunting for a fabricator are all "in Pune", but they see different results and expect different things. I'm based in Pune myself, and this guide covers what changes when your market is Pune and Pimpri-Chinchwad. For the basics, start with the <a href="/blog/local-seo-guide-small-business-india/">step-by-step local SEO guide</a>.</p>
+
+<h2>Think in areas, not just "Pune"</h2>
+<p>Google's local results lean heavily on distance, so a business in Hadapsar rarely appears in the map pack for someone searching from Baner, however good its profile. In a city this spread out, customers also prefer someone nearby, and they often search by locality: "dentist in Aundh", "AC repair Pimple Saudagar" or "CA office near Deccan".</p>
+<ul>
+  <li><strong>Be honest about your catchment.</strong> A clinic or salon mostly serves people within a short drive. A plumber, interior designer or packers and movers company may genuinely cover the whole city.</li>
+  <li><strong>Remember the PCMC split.</strong> Localities such as Wakad, Nigdi and Bhosari fall under Pimpri-Chinchwad, and addresses there often say so. Customers don't think in municipal boundaries, so mention both names naturally if you serve both.</li>
+  <li><strong>Industrial buyers search differently.</strong> Manufacturers and suppliers around Chakan, Bhosari and the other MIDC areas get searches like "CNC machining Chakan" or "sheet metal fabrication Pune", which are answered by websites and B2B directories as much as by the map.</li>
+</ul>
+
+<h2>Area pages: only for neighbourhoods you genuinely serve</h2>
+<p>The tempting shortcut is a page for every locality, "Best interior designer in Baner", "Best interior designer in Kharadi", with only the name swapped. Those are doorway pages, and they tend to drag the whole site down. See <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a> for the rules.</p>
+<p>A Pune area page earns its place when you can fill it with things that are true only of that area:</p>
+<ul>
+  <li>Projects or jobs you've completed there, with photos shared with the customer's permission</li>
+  <li>Reviews from customers in that locality</li>
+  <li>Local conditions that change the work, such as older buildings in the peth areas of the old city, or newer high-rise societies with their own rules on work timings and lift use</li>
+  <li>Practical details: which branch or team covers it, typical response time, and landmarks or parking if customers visit you</li>
+</ul>
+<p>Start with the two or three areas that already bring you the most work. If customers don't come to your premises, the approach in <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> applies: one strong page per service plus a clear list of areas served, with dedicated area pages added only as real jobs and reviews build up.</p>
+
+<h2>Get your Google Business Profile right for Pune</h2>
+<ul>
+  <li><strong>Pin the location accurately.</strong> Pune addresses often depend on landmarks, lane numbers and society names. Check the map pin sits on your actual entrance, not on the main road or the wrong side of a flyover.</li>
+  <li><strong>Hide the address if customers don't visit you,</strong> and set realistic service areas instead of listing every locality in the city.</li>
+  <li><strong>Choose the most specific primary category</strong> and add only genuine secondary ones.</li>
+  <li><strong>Keep hours accurate,</strong> including your weekly off and special hours around Ganeshotsav, Diwali and other holidays when many businesses change timings.</li>
+  <li><strong>Add photos that help people find you:</strong> the building, signboard, entrance and parking, because "which building is it?" is a common question in busy areas.</li>
+</ul>
+<p>Use exactly the same business name, phone number and address on your profile, website and every listing, so everything reads as one business.</p>
+
+<h2>Marathi, Hindi or English?</h2>
+<p>Pune customers search in all three languages, and the right mix depends on who your customers are rather than on a general rule.</p>
+<table>
+  <thead><tr><th>Language</th><th>Often suits</th></tr></thead>
+  <tbody>
+    <tr><td>English</td><td>B2B, IT and professional services, and newer residential areas where people have moved in from across India</td></tr>
+    <tr><td>Marathi</td><td>Businesses serving long-established local families, traditional services, older customers, and anyone whose customers already talk to them in Marathi</td></tr>
+    <tr><td>Hindi</td><td>Services used by people who have moved from Hindi-speaking states, and businesses recruiting workers</td></tr>
+  </tbody>
+</table>
+<p>Whatever you choose:</p>
+<ul>
+  <li>Look at how customers actually word their WhatsApp messages and calls, and ask a few which language they prefer</li>
+  <li>Translate a few important pages properly (home, main services, contact) rather than machine-translating the whole site</li>
+  <li>Give each language its own URLs and set up hreflang so Google shows the right version; see <a href="/blog/hreflang-multilingual-seo-india/">hreflang and multilingual SEO for Indian websites</a></li>
+  <li>Remember that many Marathi and Hindi speakers still type searches in English or in Roman script, so a clear English page with local place names may already reach them</li>
+</ul>
+
+<h2>Local listings and mentions that matter</h2>
+<ul>
+  <li><strong>The basics:</strong> Google Business Profile, Bing Places, Apple Maps and the big Indian directories such as Justdial and Sulekha, all with identical details</li>
+  <li><strong>B2B:</strong> IndiaMART or TradeIndia for manufacturers and suppliers, plus member listings from industry associations and chambers of commerce you genuinely belong to</li>
+  <li><strong>Local mentions:</strong> Pune-focused news sites and blogs, sponsorships of college or society events, and suppliers or partners who can link to you</li>
+</ul>
+<p>Keep a simple sheet of every listing and its login. When you move premises, update them all, because old addresses linger for years. And ignore cold calls promising a "top position in Pune" on a paid directory; a listing is worth having only if your customers use that platform.</p>
+
+<h2>Reviews: steady, genuine and replied to</h2>
+<ul>
+  <li>Ask every happy customer, ideally on WhatsApp the same day, with your direct review link</li>
+  <li>A gentle prompt such as "it helps if you mention which service we did" is fine; never write reviews for customers, buy them or offer discounts in return</li>
+  <li>Reply to every review, in the language the customer used where you can</li>
+  <li>Show a few genuine reviews on the relevant service or area page of your website</li>
+</ul>
+
+<h2>Track where your Pune enquiries come from</h2>
+<ul>
+  <li>Add an optional "Your area" field to enquiry forms, or ask callers which locality they're in</li>
+  <li>Check Business Profile performance for calls, direction requests and website clicks</li>
+  <li>In Search Console, filter queries containing "pune", "pcmc" or locality names to see which area searches already find your pages</li>
+  <li>Add UTM tags to the website link on your Business Profile so its visits show separately in Google Analytics</li>
+</ul>
+<p>After a few months you'll know which neighbourhoods deserve a proper page, and which you can stop chasing.</p>
+
+<p>Want a website that works hand in hand with your Business Profile for searches across Pune and PCMC? I'm a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>, and my <a href="/wordpress-seo-services/">WordPress SEO</a> work covers service pages, honest area pages and local set-up.</p>
+`,
+  },
+  {
+    slug: 'not-showing-on-google-maps',
+    title: 'Business Not Showing on Google Maps? What to Check and Fix',
+    description: 'Why a business isn\'t showing on Google Maps or the local pack: verification, suspensions, duplicates, category, service areas, distance, reviews and NAP issues.',
+    date: '2026-10-01',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>You've set up a Google Business Profile, but when you search for your service you're nowhere on the map. Or you were there last month and now you've vanished. Before changing everything at once, work through the likely causes in order. Google doesn't publish exact ranking weights for local results, so nobody can promise a fix, but most "invisible on Maps" problems come down to a handful of things you can check yourself.</p>
+<p>If the profile isn't fully set up yet, start with the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>. This guide is for troubleshooting a profile that exists but isn't showing.</p>
+
+<h2>First, check what's really happening</h2>
+<p>"Not showing" can mean quite different things:</p>
+<ul>
+  <li><strong>You don't appear even for your exact business name.</strong> That points to a profile problem: unverified, suspended, duplicated or not yet published.</li>
+  <li><strong>You appear for your name but not for "{service} near me".</strong> The profile works; it's a ranking question of category, distance, reviews and website.</li>
+  <li><strong>You appear in some places but not others.</strong> That's usually distance, and it's normal.</li>
+</ul>
+<p>Your own results are influenced by where you are and what you've searched before, so one search from your office tells you little. Search on your phone in a few locations, and ask customers in different areas what they see. If you can't find yourself by name at all, see <a href="/blog/rank-for-your-business-name/">how to rank for your own business name</a>.</p>
+
+<h2>Is the profile verified and active?</h2>
+<p>Sign in to the Google account that manages the profile and check its status.</p>
+<ul>
+  <li><strong>Not verified, or verification pending:</strong> unverified profiles generally don't show reliably. Complete whichever verification method Google offers you, which is often a short video showing your premises, signboard and proof of business.</li>
+  <li><strong>Newly verified or recently edited:</strong> changes can take a while to go live, and some edits are reviewed first. Lots of edits in quick succession can trigger further reviews.</li>
+  <li><strong>Suspended or disabled:</strong> Google may suspend a profile it believes breaks its guidelines, for example a keyword-stuffed name, an ineligible address, or an address shown for a business customers can't visit. Fix the cause first, then submit a reinstatement request. Don't create a new profile to get around it.</li>
+  <li><strong>Lost access:</strong> if a former employee or agency set it up, request ownership through Google's process rather than creating a second listing.</li>
+</ul>
+
+<h2>Duplicates and outdated listings</h2>
+<p>Two listings for the same business split your reviews and confuse Google about which one is real. Duplicates often come from:</p>
+<ul>
+  <li>An old profile at a previous address</li>
+  <li>A listing created by a staff member, a previous agency or a customer</li>
+  <li>Separate profiles for a practice and an individual doctor, lawyer or consultant, where Google has specific rules about what's allowed</li>
+</ul>
+<p>Search Maps for your name, phone number and old addresses. Report true duplicates through Google's support options, and ask for an old-address listing to be removed or merged rather than leaving it live.</p>
+
+<h2>Category, name and details</h2>
+<ul>
+  <li><strong>Primary category:</strong> one of the strongest relevance signals you control. A physiotherapy clinic listed only as "Medical clinic", or a caterer listed as "Restaurant", will struggle for the searches that matter. Pick the most specific match and add genuine secondary categories.</li>
+  <li><strong>Business name:</strong> use your real trading name. Adding "Best AC Repair Pune" may bring a short-term lift, then a suspension when a competitor reports it.</li>
+  <li><strong>Services and description:</strong> list what you actually do, in the words customers use.</li>
+  <li><strong>Hours:</strong> wrong hours cost you calls and visits even when you do appear, so keep them and holiday hours accurate.</li>
+</ul>
+
+<h2>Address, service area and the map pin</h2>
+<ul>
+  <li><strong>Service-area businesses:</strong> if you hide your address there's no public pin, but the profile is still tied to the location you verified, and you'll usually show most strongly near it. Adding more service areas doesn't make you appear across all of them. See <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a>.</li>
+  <li><strong>Shops and offices:</strong> check the pin sits on your actual building and entrance. A misplaced pin can put you in the wrong neighbourhood.</li>
+  <li><strong>Ineligible addresses:</strong> virtual offices, PO boxes and shared spaces without your own staffed presence and signage are generally not allowed, and are a common reason for suspension.</li>
+</ul>
+
+<h2>Proximity: you can't rank everywhere</h2>
+<p>Google says local results are based mainly on relevance, distance and prominence. It doesn't publish how much each one counts, and the balance varies from search to search. What is clear is that distance matters a great deal, and it's the one factor you can't change.</p>
+<ul>
+  <li>A clinic in one part of a city rarely appears in the map pack for someone searching from the far side, however good its profile</li>
+  <li>"Near me" searches are judged from the searcher's location; a search that names an area is judged against that area</li>
+  <li>In crowded categories, the map pack may only reach a small radius around the searcher</li>
+</ul>
+<p>Beyond that radius, your website ranking in the normal results is usually the better route: strong service pages, plus genuine area pages where you really have work to show.</p>
+
+<h2>Reviews, consistency and your website</h2>
+<p>When relevance and distance are similar, prominence decides, and you can build it steadily.</p>
+<ul>
+  <li><strong>Reviews:</strong> a few old reviews against competitors with a steady flow of recent ones is a common gap. Ask every happy customer, reply to every review and never buy them; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a>.</li>
+  <li><strong>NAP consistency:</strong> your name, address and phone number should match on your profile, website, Justdial, IndiaMART and other listings. An old number or address on several directories muddies the picture.</li>
+  <li><strong>Your website:</strong> Google also draws on information about you from across the web. Link the profile to a relevant page that mentions your services and location, shows the same contact details, includes LocalBusiness schema and is indexed in Google.</li>
+</ul>
+
+<h2>A sensible order to work through</h2>
+<ol>
+  <li>Confirm the profile is verified, published and not suspended</li>
+  <li>Find and deal with duplicates</li>
+  <li>Fix the primary category, name and pin</li>
+  <li>Make your details consistent across the web</li>
+  <li>Build reviews and improve the linked page on your website</li>
+  <li>Watch calls, direction requests and website clicks in the profile's performance data for a couple of months before judging</li>
+</ol>
+<p>Be wary of anyone who guarantees a top-three map position. Nobody outside Google controls the ranking.</p>
+
+<p>Want a second pair of eyes on your profile and website? My <a href="/wordpress-seo-services/">WordPress SEO</a> work covers Business Profile troubleshooting, service pages and local schema, so your website supports your map listing.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-order-notifications-sms-whatsapp',
+    title: 'WooCommerce Order Notifications by Email, SMS and WhatsApp',
+    description: 'Which WooCommerce order updates to send by email, SMS and WhatsApp, the WhatsApp Business API, DLT registration for SMS in India, opt-in and reliable delivery.',
+    date: '2026-10-01',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>A customer who pays and then hears nothing starts to worry. A customer who gets six messages about one parcel starts to ignore you. Good order notifications sit in between: the right message, on the right channel, at the moments customers actually care about. Here's how to plan them for a WooCommerce store in India, across email, SMS and WhatsApp.</p>
+<p>For branding and editing WooCommerce's built-in emails, see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce order emails</a>. This guide is about the bigger picture: which messages to send, and where.</p>
+
+<h2>The messages customers actually want</h2>
+<table>
+  <thead><tr><th>Moment</th><th>What it should say</th><th>Good channels</th></tr></thead>
+  <tbody>
+    <tr><td>Order confirmed</td><td>Order number, items, total, payment method, expected dispatch</td><td>Email, plus a short WhatsApp or SMS</td></tr>
+    <tr><td>COD confirmation</td><td>Order summary, amount to keep ready, a way to confirm or cancel</td><td>WhatsApp, with a phone call as back-up</td></tr>
+    <tr><td>Shipped</td><td>Courier name, tracking link, expected delivery</td><td>Email and WhatsApp or SMS</td></tr>
+    <tr><td>Out for delivery</td><td>It arrives today; keep your phone handy</td><td>WhatsApp or SMS</td></tr>
+    <tr><td>Delivered</td><td>Confirmation, and how to get help or start a return</td><td>Email, optionally WhatsApp</td></tr>
+    <tr><td>Refund processed</td><td>Amount, method and when to expect it</td><td>Email</td></tr>
+  </tbody>
+</table>
+<p>Failed payments, cancellations and delays deserve a message too, but there's no need to announce internal steps like "packed" or "label created". "Out for delivery" and "delivered" updates usually come from your courier or shipping aggregator, which may already send its own SMS, so check before adding yours. COD confirmation matters most for your margins, because it helps cut refused deliveries; see <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery without losing money</a>.</p>
+
+<h2>Email: the record that must arrive</h2>
+<p>Email remains the home for invoices, full order details and policies, and WooCommerce sends it without extra tools. But by default WordPress sends mail through the web server, and many of those messages land in spam or never arrive.</p>
+<ul>
+  <li>Send through SMTP or a transactional email service instead; see <a href="/blog/wordpress-not-sending-emails-smtp/">how to fix WordPress emails with SMTP</a></li>
+  <li>Use a From address on your own domain, with SPF, DKIM and DMARC set up</li>
+  <li>Turn on email logging, so when a customer says nothing arrived you can check whether it was sent</li>
+  <li>Place a real test order after every major update</li>
+</ul>
+
+<h2>WhatsApp: manual or the Business API?</h2>
+<p>Many Indian shoppers check WhatsApp long before email. There are two ways to use it for orders.</p>
+<h3>Manually, with the WhatsApp Business app</h3>
+<p>For a handful of orders a day, the team can message customers from the app, using quick replies for common updates. Some plugins add a click-to-chat button on the order screen with a pre-filled message. It's free and personal, but it depends on someone remembering, and it doesn't scale.</p>
+<h3>Automatically, with the WhatsApp Business Platform (API)</h3>
+<ul>
+  <li>Usually set up through a provider, often with a WooCommerce plugin that sends a message when an order changes status</li>
+  <li>Messages sent outside the 24-hour window after a customer's last message must use templates approved in advance, with variables such as name, order number and tracking link</li>
+  <li>Order updates generally belong in the utility template category; adding offers can get a template rejected or reclassified as marketing</li>
+  <li>Templates can carry buttons, useful for "Confirm order" and "Cancel order" on COD orders, with the reply recorded against the order if your provider supports it</li>
+  <li>Meta charges for many message types, on top of any provider fees, and its pricing model has changed before; check current rates</li>
+</ul>
+<p>For more on the app versus the API, see <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a>.</p>
+
+<h2>SMS in India: DLT registration first</h2>
+<p>SMS still earns its place: it works on any phone, without mobile data, and doesn't depend on the customer using WhatsApp. But business SMS in India falls under TRAI's rules on commercial communication, which generally mean:</p>
+<ul>
+  <li><strong>Registering your business</strong> as a principal entity on a telecom operator's DLT (Distributed Ledger Technology) platform</li>
+  <li><strong>Registering a sender ID</strong> (the header), the short name that appears instead of a phone number</li>
+  <li><strong>Registering every message template</strong>, with placeholders for variables like the order number; order updates are generally treated as service messages, and offers as promotional</li>
+  <li><strong>Matching templates exactly:</strong> messages that don't match a registered template are typically blocked</li>
+  <li><strong>Checking links:</strong> TRAI has also tightened rules on URLs in SMS, so tracking links may need to be whitelisted</li>
+</ul>
+<p>These rules have been updated several times, so check the current requirements with your SMS provider, who can usually guide you through registration. Allow time for approvals before launch.</p>
+
+<h2>Opt-in, and not spamming</h2>
+<ul>
+  <li><strong>Ask at checkout:</strong> a clear option such as "Send my order updates on WhatsApp". Meta's policies expect opt-in, and India's DPDP Act points the same way; check current requirements with your CA or lawyer.</li>
+  <li><strong>Keep order updates about the order.</strong> Squeezing offers into them annoys customers.</li>
+  <li><strong>Treat marketing separately,</strong> with its own consent and an easy way to stop.</li>
+  <li><strong>Don't duplicate channels.</strong> One WhatsApp or SMS per key moment is plenty, alongside the email.</li>
+  <li><strong>Mind your reputation.</strong> On the API, blocks and reports can lower your number's quality rating and limit how many messages you can send.</li>
+</ul>
+
+<h2>Setting it up in WooCommerce</h2>
+<ol>
+  <li><strong>Map your order statuses</strong> and decide which ones trigger a customer message; add a "Shipped" status if "Completed" doesn't fit your process</li>
+  <li><strong>Choose a provider</strong> for SMS, WhatsApp or both; many offer a WooCommerce plugin. Pick one that is actively maintained, logs every message and supports your approved templates.</li>
+  <li><strong>Collect phone numbers cleanly:</strong> make the phone field required, validate Indian mobile numbers and store them with the country code</li>
+  <li><strong>Add tracking details to each order</strong>, manually or through your shipping aggregator, so the "Shipped" message carries a working link</li>
+  <li><strong>Test every path:</strong> prepaid, COD, failed payment, cancellation and refund</li>
+  <li><strong>Watch the logs and costs</strong> for the first few weeks, and fix failed messages quickly</li>
+</ol>
+
+<p>Want order updates that reliably reach customers where they look? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for wider work on your site.</p>
 `,
   },
 ];
