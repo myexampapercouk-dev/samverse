@@ -5881,6 +5881,8 @@ module.exports = [
   <li>A "Request a quote" button</li>
 </ul>
 
+<p>If you print T-shirts, jerseys and merchandise rather than packaging, see <a href="/blog/website-for-custom-tshirt-printing/">websites for custom T-shirt printing businesses</a>.</p>
+
 <h2>Show your capability</h2>
 <ul>
   <li>Machinery, capacity and in-house processes</li>
@@ -10799,6 +10801,8 @@ module.exports = [
   <li>Adult and fitness batches, if offered</li>
 </ul>
 
+<p>Running a dedicated swim school or learn-to-swim programme? See <a href="/blog/website-for-swimming-classes/">websites for swimming classes and pool academies</a>.</p>
+
 <h2>Coaches</h2>
 <p>Coach profiles with certifications, playing and coaching experience, and photos. Coaches are a key reason parents choose an academy.</p>
 
@@ -15414,6 +15418,8 @@ module.exports = [
   <li>A clear cancellation window</li>
   <li>Confirmation messages that feel personal</li>
 </ul>
+
+<p>Venues that rent space by the hour, such as box cricket and football turfs, apply the same ideas to slots, advances and rain policies; see <a href="/blog/website-for-sports-turfs/">websites for box cricket and football turfs</a>.</p>
 
 <h2>Make booking visible</h2>
 <ul>
@@ -36863,6 +36869,292 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>If none of those apply yet, put the time into service pages, projects and reviews instead. For most service businesses, that's the better use of limited time.</p>
 
 <p>Want help building service and area pages that can rank? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/landing-page-design/">landing page design</a> if you're also running ads for particular services.</p>
+`,
+  },
+  {
+    slug: 'website-for-sports-turfs',
+    seoTitle: 'Websites for Sports Turfs: Slot Booking and Payments',
+    title: 'Websites for Box Cricket and Football Turfs: Slot Booking, Payments and Policies',
+    description: 'What a box cricket or football turf website needs: live slot booking, advance payments, clear rain and cancellation rules, corporate bookings and local SEO.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Many turf bookings still start with a WhatsApp message: "Is 8 to 9 free tonight?" That works until you're running two grounds, juggling regular groups and answering messages at midnight. A good website lets players see open slots, pay an advance and get a confirmation without waiting for you, and it gives corporate teams and tournament organisers a proper place to enquire.</p>
+<p>This guide is for box cricket grounds, football turfs and multi-sport arenas that rent space by the hour. If you run coaching programmes, see <a href="/blog/website-for-sports-academies/">websites for sports academies</a>.</p>
+
+<h2>What players check before they book</h2>
+<p>Whoever is organising the game for their group is usually comparing two or three venues on a phone, often late in the evening. They want quick answers to:</p>
+<ul>
+  <li>Is my preferred slot free tonight or this weekend?</li>
+  <li>What's the rate for that slot, and is it different at peak times or weekends?</li>
+  <li>How much advance do I pay, and how?</li>
+  <li>What happens if it rains or someone drops out?</li>
+  <li>Which formats does the ground suit, such as box cricket or 5-a-side and 7-a-side football?</li>
+  <li>Is there parking, floodlighting, a washroom and drinking water?</li>
+</ul>
+<p>Put the answers on the homepage in short form, with "Check availability" as the main button.</p>
+
+<h2>Live slot availability and online booking</h2>
+<p>A slot grid that shows what's genuinely free is the most useful thing a turf website can have. You have three broad options:</p>
+<table>
+  <thead>
+    <tr><th>Option</th><th>Good for</th><th>Watch out for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sports booking apps and marketplaces</td><td>Reaching players who search inside the app</td><td>Commission or fees, and less control over customer details; check current terms</td></tr>
+    <tr><td>A booking plugin on your WordPress site</td><td>Direct bookings with your own branding and policies</td><td>Needs careful setup of slots, prices and blocked times</td></tr>
+    <tr><td>Venue management software with a booking widget</td><td>Several grounds, staff logins and reports</td><td>An ongoing subscription; make sure it embeds cleanly on your site</td></tr>
+  </tbody>
+</table>
+<p>Whatever you choose, the calendar has to be the single source of truth. Bookings taken on the phone, at the counter or through an app must block the same slot on the website, or sooner or later two teams will arrive for one ground. Many venues use an app for discovery and their own site for regulars and direct bookings, which works as long as availability stays in sync.</p>
+<p>Set up slot lengths, peak and off-peak rates, maintenance blocks and how far ahead people can book. Recurring weekly slots for regular groups save everyone a weekly message. For the general mechanics, see <a href="/blog/online-appointment-booking-website/">online appointment booking</a>.</p>
+
+<h2>Advances, payments and confirmations</h2>
+<p>An advance is what turns a casual "hold it for us" into a real booking. Be clear about:</p>
+<ul>
+  <li>Whether you take full payment or an advance online, and how the balance is paid at the venue</li>
+  <li>Accepted methods, usually UPI, cards and net banking through a payment gateway; see <a href="/blog/payment-gateways-india-compared/">choosing a payment gateway</a></li>
+  <li>Whether the advance is refundable, adjustable against a future booking, or neither</li>
+  <li>Whose name the booking is under, so ground staff know who to expect</li>
+</ul>
+<p>Send an instant confirmation by email and WhatsApp or SMS with the date, slot, ground, amount paid, balance due and a map link. A reminder a few hours before helps groups who booked days in advance.</p>
+
+<h2>Cancellation and rain policies, stated clearly</h2>
+<p>Many turf disputes come from rules nobody explained. Write your policies in plain language on the booking page itself, not hidden in the terms and conditions, and show them again before payment:</p>
+<table>
+  <thead>
+    <tr><th>Situation</th><th>What to state</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Player cancels</td><td>How much notice is needed for a refund or reschedule, and how to request it</td></tr>
+    <tr><td>Rain or bad weather</td><td>Who decides the ground is unplayable, and whether you reschedule, refund or give credit</td></tr>
+    <tr><td>Power or floodlight failure</td><td>What happens to the time that's lost</td></tr>
+    <tr><td>Late arrival</td><td>That slots end on time so the next group isn't delayed</td></tr>
+    <tr><td>No-show</td><td>Whether the advance is kept</td></tr>
+  </tbody>
+</table>
+<p>If your arena is covered, say so prominently; it's a genuine reason to choose you during the monsoon. Whatever you decide, apply it consistently. A clear policy applied fairly earns more trust, and better reviews, than case-by-case arguments on WhatsApp.</p>
+
+<h2>Corporate, league and tournament bookings</h2>
+<p>Company sports days, office leagues, school events and weekend tournaments can be among your most valuable bookings, and they don't fit a one-hour slot grid. Give them a separate page with an enquiry form asking for:</p>
+<ul>
+  <li>Preferred dates and times, and how many hours or days</li>
+  <li>Number of teams or players, and the format</li>
+  <li>Extras you actually offer, such as umpires or referees, scoring, equipment, refreshments or trophies</li>
+  <li>Whether they need a GST invoice, if you're GST-registered</li>
+</ul>
+<p>Add pages for birthday parties and private events if you host them, and for monthly packages for regular groups or coaching academies that rent your ground. If you run your own leagues, keep one page with the format, how to enter, fixtures and results, and update it while the league is on.</p>
+
+<h2>Facilities, photos and house rules</h2>
+<p>Players book what they can see. Show real photos and a short video of the actual ground, including at night under the floodlights, since evening slots are often the busiest. List facilities plainly:</p>
+<ul>
+  <li>Playing area dimensions and the formats it suits</li>
+  <li>Surface type, and whether the area is netted or covered</li>
+  <li>Floodlights, changing rooms, washrooms, drinking water and seating</li>
+  <li>Equipment available to borrow or rent, such as balls, bats and bibs</li>
+  <li>House rules, such as permitted footwear on the turf and no smoking</li>
+</ul>
+<p>Avoid stock photos of stadiums. If you have more than one ground or sport, give each its own section or page with its own photos and slot grid.</p>
+
+<h2>Location, parking and local SEO</h2>
+<p>People search for "box cricket near me", "football turf in Baner" or "turf booking in Gurgaon", so local visibility matters as much as the website itself:</p>
+<ul>
+  <li>An embedded map, written directions from a well-known landmark, and clear parking information, including two-wheeler parking</li>
+  <li>A complete Google Business Profile with opening hours, photos and your booking link; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
+  <li>Separate pages for each sport and each location, written for those searches</li>
+  <li>Reviews from groups after their game, requested politely</li>
+</ul>
+<p>Keep the site fast on mobile data. The slot grid in particular should load quickly and be easy to tap on a small screen, because that's where most players book.</p>
+
+<p>Planning a turf website with online slot booking? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> if you're promoting a league or tournament.</p>
+`,
+  },
+  {
+    slug: 'website-for-swimming-classes',
+    seoTitle: 'Websites for Swimming Classes and Pool Academies',
+    title: 'Websites for Swimming Classes and Pool Academies: Batches, Safety and Trial Lessons',
+    description: 'What a swimming class or pool academy website needs: batches by age and level, honest coach credentials, safety details, trial lessons and photo consent.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-schools-and-coaching', 'landing-page-design'],
+    body: `
+<p>Parents looking for swimming classes worry about one thing before anything else: will my child be safe in the water? After that come the practical questions: which batch suits their age and ability, when it runs, who teaches, and whether they can try a class first. Adults learning to swim have similar questions, often with a little nervousness attached. A clear website answers all of this before the first call.</p>
+<p>This guide is specifically for swimming coaches, learn-to-swim programmes and pool academies. For academies teaching several sports, see <a href="/blog/website-for-sports-academies/">websites for sports academies</a>.</p>
+
+<h2>What parents and adult learners want to know first</h2>
+<ul>
+  <li>Is there a batch for my child's age, or for a complete beginner adult?</li>
+  <li>How deep is the pool, and is there a shallow area for learners?</li>
+  <li>How many swimmers does each coach handle, and who is watching the pool?</li>
+  <li>When are the batches, and do they change between summer and the rest of the year?</li>
+  <li>Are there ladies-only batches or women coaches?</li>
+  <li>What are the fees, and can we book a trial lesson?</li>
+</ul>
+<p>Answer these briefly on the homepage and link to the detail. Make "Book a trial lesson" the main button.</p>
+
+<h2>Batches by age, level and season</h2>
+<p>Organise your programmes the way parents think about them, by age and ability, and give each a short page or section:</p>
+<table>
+  <thead>
+    <tr><th>Batch</th><th>Who it's for</th><th>What to describe</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Water confidence</td><td>Young or nervous beginners</td><td>Minimum age, parent involvement, how you handle fear of water</td></tr>
+    <tr><td>Learn to swim</td><td>Children who can't yet swim independently</td><td>Skills covered and how you decide when a child moves up</td></tr>
+    <tr><td>Stroke development</td><td>Children who can swim a length</td><td>Strokes taught, technique work, any levels or badges</td></tr>
+    <tr><td>Competitive squad</td><td>Swimmers training for meets, if you run one</td><td>Selection, training load and commitment expected</td></tr>
+    <tr><td>Adult batches</td><td>Beginners and those improving technique</td><td>Timings, privacy and ladies-only options if offered</td></tr>
+  </tbody>
+</table>
+<p>Swimming is seasonal in much of India, with summer holiday batches filling quickly and outdoor pools sometimes closing or cutting back in winter. Say clearly what you do in each season. Keep one permanent summer batch page and update the dates each year rather than creating a new page every time; see <a href="/blog/seasonal-festival-campaigns-website/">planning seasonal campaigns</a>.</p>
+<p>If you teach at a club, hotel or housing society pool rather than your own, say which pools and which batches run where, and check with the pool's management before using its name or photos.</p>
+
+<h2>Coaches and their qualifications, stated honestly</h2>
+<p>Coach profiles with a photo, experience and the age groups each person teaches help parents choose. List certifications only if they are genuinely held and current, such as a coaching certificate, a lifesaving or lifeguard qualification, or first aid and CPR training, and name the organisation that issued them. Don't imply an affiliation with a federation or association you don't have, and don't describe a past achievement as a current qualification.</p>
+<p>If a qualification lapses, update the page. Parents may ask to see certificates, and an honest profile builds more trust than an impressive but vague one.</p>
+
+<h2>Safety and supervision</h2>
+<p>This is the section parents read most carefully. Describe only the measures you actually have in place:</p>
+<ul>
+  <li>Whether a trained lifeguard is on duty during every session, separate from the coach</li>
+  <li>The coach-to-swimmer ratio for each batch</li>
+  <li>Pool depths, depth markings and the learner area</li>
+  <li>First aid arrangements and how parents are contacted after an incident</li>
+  <li>Water treatment and hygiene practices, described in general terms</li>
+  <li>Supervision in changing rooms, and who is allowed in the pool area</li>
+  <li>Pool rules, such as swim caps, showering before entry and no running</li>
+</ul>
+<p>Ask parents to tell you privately about relevant medical conditions such as epilepsy, asthma or ear problems, but keep those questions off your general enquiry form. Collect them at enrolment and store them securely.</p>
+
+<h2>Trial lessons and enrolment</h2>
+<p>A trial or assessment lesson lets you place a swimmer in the right batch and lets parents see how you teach. Keep the booking form short: parent's name, phone number, swimmer's age, current ability and preferred timing. Then confirm the slot on screen and on WhatsApp, send a reminder with the address and what to bring, and follow up afterwards with the suitable batch and fees.</p>
+<p>Publish fees or a starting range, how payment works (UPI is usually easiest), what happens to classes missed because of illness, and what happens if the pool closes for maintenance or bad weather.</p>
+
+<h2>Parent communication</h2>
+<ul>
+  <li>A notices page for pool closures, holiday schedules and batch changes</li>
+  <li>WhatsApp updates using broadcast lists or a community, so parents' numbers aren't shared with everyone</li>
+  <li>Progress updates sent to each parent privately rather than in a group</li>
+  <li>A parent FAQ covering what to bring, viewing rules, refunds and changing batches</li>
+</ul>
+
+<h2>Photos and children's consent</h2>
+<p>Photos of children in swimwear need extra care. Use photos of the pool, the facilities, coaches and adult swimmers where you can, and publish images of children only with written parental consent. Even then, prefer group shots taken from a distance over close-ups, never pair photos with full names, and never take or allow photos in changing areas. Remove any photo promptly if a parent withdraws consent.</p>
+<p>Ask only for the data you need, aim your marketing at parents rather than children, and publish a clear privacy policy. India's Digital Personal Data Protection Act has specific rules on children's data, including parental consent; check the current position with a lawyer, and see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a> for an overview.</p>
+
+<h2>Getting found by local families</h2>
+<ul>
+  <li>Pages written for searches like "swimming classes for kids in Kothrud" or "adult swimming lessons in Indiranagar"</li>
+  <li>A complete Google Business Profile with pool photos, batch timings and reviews</li>
+  <li>A separate page for each pool or branch, with its own map, parking information and timings</li>
+  <li>A fast, mobile-friendly site, since parents usually browse on their phones</li>
+</ul>
+
+<p>Planning a website or a summer batch campaign for your swimming classes? See <a href="/website-for-schools-and-coaching/">websites for schools and coaching</a> and <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-custom-tshirt-printing',
+    seoTitle: 'Websites for Custom T-Shirt and Merchandise Printers',
+    title: 'Websites for Custom T-Shirt Printing and Merchandise Businesses',
+    description: 'What a custom T-shirt printing website needs: print-method pages, design uploads, minimum orders, bulk quote forms, proof approval and honest delivery times.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>People ordering custom T-shirts range from someone wanting one birthday shirt to an HR team ordering embroidered polos for a whole office. They all want to know the same few things: can you print my design on the product I want, how many do I have to order, what will it look like, and will it arrive in time? A website that answers those clearly turns browsing into orders and quote requests, and cuts down the back-and-forth on WhatsApp.</p>
+<p>This guide is for T-shirt and merchandise printers. For cartons, labels and commercial printing, see <a href="/blog/website-for-printing-packaging-companies/">websites for printing and packaging companies</a>.</p>
+
+<h2>Who orders, and what each buyer needs</h2>
+<table>
+  <thead>
+    <tr><th>Buyer</th><th>Typical order</th><th>What they ask</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Individuals</td><td>One or a few shirts for gifts or occasions</td><td>Can I order just one? How long will it take?</td></tr>
+    <tr><td>College clubs and fests</td><td>Batch T-shirts and hoodies</td><td>Can you work from our sizes list and deliver before the event?</td></tr>
+    <tr><td>Companies</td><td>Logo polos, joining kits and event merchandise</td><td>Will the logo look right? Can we get a GST invoice?</td></tr>
+    <tr><td>Sports teams</td><td>Jerseys with names and numbers</td><td>How are names handled? Will the print last?</td></tr>
+    <tr><td>Brands and creators</td><td>Merchandise to sell</td><td>Quality, consistency and repeat orders</td></tr>
+  </tbody>
+</table>
+<p>Give each a clear path from the homepage: "Order online" for small quantities and "Get a bulk quote" for larger ones.</p>
+
+<h2>Product pages for garments and merchandise</h2>
+<p>Give each product its own page: round-neck and polo T-shirts, hoodies, sports jerseys, caps, and any mugs, bags or other items you genuinely offer. On each page include:</p>
+<ul>
+  <li>Fabric, GSM (fabric weight) and fit, with real photos in good light</li>
+  <li>Available colours, ideally photographed rather than shown as flat swatches alone</li>
+  <li>A size chart with actual garment measurements, not just S, M and L</li>
+  <li>Which print methods work on that product, and where on it you can print</li>
+  <li>Care instructions so prints last</li>
+</ul>
+<p>If you sell online, set sizes and colours up as proper variations so stock and pricing stay accurate; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>
+
+<h2>Explain your print methods</h2>
+<p>Most customers don't know the difference between screen printing and DTF, and they shouldn't have to. A page for each method, plus a simple comparison, helps them choose and shows you know your craft:</p>
+<table>
+  <thead>
+    <tr><th>Method</th><th>Generally suits</th><th>Worth explaining</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Screen printing</td><td>Larger runs of one design with a few solid colours</td><td>Each colour needs its own screen, so setup makes very small runs uneconomical</td></tr>
+    <tr><td>DTF (direct-to-film)</td><td>Full-colour designs and small quantities on many fabric types</td><td>How the print feels on the fabric and how to wash it</td></tr>
+    <tr><td>Embroidery</td><td>Logos on polos, caps and jackets</td><td>Logos are digitised into a stitch file, and very fine detail or tiny text may need simplifying</td></tr>
+    <tr><td>Sublimation</td><td>All-over prints, such as sports jerseys</td><td>Needs polyester or high-polyester fabric in light colours, not cotton</td></tr>
+  </tbody>
+</table>
+<p>Only list methods you do in-house or reliably outsource, and say which is which if it affects timelines.</p>
+
+<h2>Design uploads and online mock-ups</h2>
+<p>Let customers upload artwork on the order or quote form, and say which files you accept. Vector files such as AI, EPS, SVG or PDF are ideal for logos, and high-resolution PNG files with transparent backgrounds work for most other designs. Explain what happens if a file isn't print-ready, such as whether you can redraw a logo and whether that costs extra.</p>
+<p>An online designer, where customers add text and images to a product preview, can work well for individual orders. There are product customiser plugins for WooCommerce as well as standalone design tools; test how they behave on phones, since that's where many customers will use them. Make clear that on-screen previews are indicative and that colours can look different on fabric.</p>
+<p>State that customers must own or have permission to use the artwork they upload, and that you may decline designs using other brands' logos or characters.</p>
+
+<h2>Minimum orders and bulk quote forms</h2>
+<p>Unclear minimum order quantities waste everyone's time. State them per product and method, for example whether you accept single pieces with DTF but need a minimum for screen printing or embroidery. If the price per piece drops as quantity rises, say so, even if you don't publish exact figures.</p>
+<p>For corporate and bulk orders, a quote form should ask for:</p>
+<ul>
+  <li>Product, colour and print method, with a "not sure, please advise" option</li>
+  <li>Total quantity and the size breakdown, with the option to upload a spreadsheet</li>
+  <li>Print positions, such as front, back and sleeve, and the number of colours</li>
+  <li>Names and numbers for team jerseys</li>
+  <li>Required delivery date and delivery location</li>
+  <li>Artwork upload, and whether a GST invoice is needed</li>
+</ul>
+<p>Send enquiries to email and WhatsApp so someone replies quickly; see <a href="/blog/rfq-forms-b2b-websites/">request-for-quote forms</a> for how to follow up.</p>
+
+<h2>Proof approval before printing</h2>
+<p>Many reprint disputes come from a design nobody checked properly. Make proof approval a clear step in your process, and explain it on the website:</p>
+<ol>
+  <li>You send a digital proof showing the design on the garment, with placement, print size and colours</li>
+  <li>The customer checks spelling, names, numbers and the size breakdown</li>
+  <li>They approve in writing, by email or WhatsApp, and production starts only then</li>
+  <li>For large orders, you offer a physical sample first, if you can</li>
+</ol>
+<p>Say what happens if changes are requested after approval, and keep a record of every approved proof.</p>
+
+<h2>Delivery timelines, stated honestly</h2>
+<p>Deadlines drive this business: the fest is on Friday and the offsite starts on Monday. Be honest about timelines so customers can plan:</p>
+<ul>
+  <li>Explain that production time starts after proof approval and payment, not from the first enquiry</li>
+  <li>Give typical production times by method and quantity, as ranges you reliably meet</li>
+  <li>Offer rush orders only if you can genuinely deliver them, and mention any extra charge</li>
+  <li>State shipping options and typical courier times, with tracking</li>
+  <li>Flag busy periods, such as college fest season and year-end corporate orders, and suggest ordering early</li>
+</ul>
+<p>A next-day promise you miss once can cost you more in reviews than an honest timeline ever loses.</p>
+
+<h2>Trust, local SEO and speed</h2>
+<ul>
+  <li>A gallery of real orders, with clients' permission before showing their logos</li>
+  <li>Reviews on Google and your own site, and a complete Google Business Profile</li>
+  <li>Pages for searches like "custom T-shirt printing in Pune", "corporate polo T-shirts with logo" or "embroidered caps"</li>
+  <li>Optimised product images, since galleries and mock-up tools can slow pages down on mobile data</li>
+</ul>
+
+<p>Want to take custom orders and bulk quotes online? See <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
 ];

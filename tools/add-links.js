@@ -627,6 +627,10 @@ const LINKS = [
   ['how-long-does-seo-take', '<h2>How to judge progress early</h2>', '<p>Launching on a brand-new domain? See <a href="/blog/seo-for-new-websites/">SEO for a new website</a> for which pages to build first and what to measure.</p>\n\n'],
   ['image-seo-guide', '<h2>Common mistakes, and how to check your results</h2>', '<p>Large, original images also matter for Google\'s personalised feed; see <a href="/blog/google-discover-small-business/">Google Discover for small business websites</a>.</p>\n\n'],
   ['add-blog-to-existing-website', '<h2>Subfolder vs subdomain</h2>', '<p>Not sure a blog is worth it yet? See <a href="/blog/seo-for-service-pages-without-blog/">how to rank a service business website without a blog</a>.</p>\n\n'],
+  // Agent 75
+  ['online-appointment-booking-website', '<h2>Make booking visible</h2>', '<p>Venues that rent space by the hour, such as box cricket and football turfs, apply the same ideas to slots, advances and rain policies; see <a href="/blog/website-for-sports-turfs/">websites for box cricket and football turfs</a>.</p>\n\n'],
+  ['website-for-sports-academies', '<h2>Coaches</h2>', '<p>Running a dedicated swim school or learn-to-swim programme? See <a href="/blog/website-for-swimming-classes/">websites for swimming classes and pool academies</a>.</p>\n\n'],
+  ['website-for-printing-packaging-companies', '<h2>Show your capability</h2>', '<p>If you print T-shirts, jerseys and merchandise rather than packaging, see <a href="/blog/website-for-custom-tshirt-printing/">websites for custom T-shirt printing businesses</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
