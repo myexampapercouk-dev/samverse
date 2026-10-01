@@ -567,6 +567,14 @@ const LINKS = [
   ['website-trust-signals-checklist', '<h2>Real people and real photos</h2>', '<p>For the contact page itself, from which options to show to setting reply-time expectations, see <a href="/blog/contact-page-that-gets-enquiries/">how to design a contact page that turns visitors into enquiries</a>.</p>\n\n'],
   ['write-about-page-that-builds-trust', '<h2>Writing tips</h2>', '<p>If you have more than a couple of people, a dedicated team page can carry the detail; see <a href="/blog/meet-the-team-page/">how to create a meet the team page</a>.</p>\n\n'],
   ['google-business-profile-checklist', '<h2>Reviews: the biggest ongoing factor</h2>', '<p>For which photos to add, choosing a cover and logo, handling customer photos and myths like geotagging, see <a href="/blog/google-business-profile-photos/">Google Business Profile photos explained</a>.</p>\n\n'],
+  // Agent 58
+  ['website-for-home-services', '<h2>Seasonal campaigns</h2>', '<p>Running a plumbing business on your own or with a small team? See <a href="/blog/website-for-plumbers/">websites for plumbers</a> for emergency call buttons, explaining visit charges and before-and-after job photos.</p>\n\n'],
+  ['website-for-modular-kitchen-companies', '<h2>Handle the pricing question honestly</h2>', '<p>Independent carpenters who make wardrobes, beds and other pieces to measure can follow a similar approach; see <a href="/blog/website-for-carpenters/">websites for carpenters and custom woodwork workshops</a>.</p>\n\n'],
+  ['website-for-taxi-car-rental', '<h2>Local SEO</h2>', '<p>Renting out self-drive scooters and motorcycles needs even clearer document, deposit and damage terms; see <a href="/blog/website-for-bike-rentals/">websites for bike and scooter rental businesses</a>.</p>\n\n'],
+  // Agent 60
+  ['website-for-toy-stores', '<h2>For kids\' brands selling direct</h2>', '<p>Many toy shops also stock school stationery and art supplies; if that is a big part of your business, see <a href="/blog/website-for-stationery-shops/">websites for stationery and office supplies shops</a>.</p>\n\n'],
+  ['website-for-book-publishers', '<h2>Press, rights and events</h2>', '<p>If you run a bookshop rather than a press, the priorities are different; see <a href="/blog/website-for-bookstores/">websites for independent bookstores</a>.</p>\n\n'],
+  ['website-for-landscaping-gardening-services', '<h2>Make enquiring easy</h2>', '<p>For more on plant catalogues, seasonal stock and delivering live plants, see <a href="/blog/website-for-plant-nurseries/">websites for plant nurseries</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
