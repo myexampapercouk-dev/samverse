@@ -551,6 +551,10 @@ const LINKS = [
   ['website-for-sports-bicycle-stores', '<h2>Team, school and club orders</h2>', '<p>If treadmills, home gyms and commercial fitness setups are the main part of your business, see <a href="/blog/website-for-gym-equipment-sellers/">websites for gym and fitness equipment sellers</a>.</p>\n\n'],
   ['website-for-medical-equipment-suppliers', '<h2>Service and support</h2>', '<p>Supplying research, college and industrial QC labs rather than hospitals? See <a href="/blog/website-for-lab-scientific-equipment-suppliers/">websites for laboratory and scientific equipment suppliers</a>.</p>\n\n'],
   ['change-domain-name-without-losing-seo', '<h2>Plan before you move</h2>', '<p>If the new domain is part of a wider rebrand, with a new name, logo and messaging, see <a href="/blog/rebranding-your-website/">what to update on your website after a rebrand</a>.</p>\n\n'],
+  // Agent 57
+  ['website-for-photographers', '<h2>Get found locally</h2>', '<p>Offering aerial shoots, surveys or inspections with a drone as a separate service? See <a href="/blog/website-for-drone-services/">websites for drone service companies</a>.</p>\n\n'],
+  ['website-for-pet-shops-grooming', '<h2>Grooming bookings that work</h2>', '<p>If fish, tanks and aquarium maintenance are the main part of your business, see <a href="/blog/website-for-aquarium-shops/">websites for aquarium and pet fish shops</a>.</p>\n\n'],
+  ['website-for-music-dance-academies', '<h2>Trial class and enrolment</h2>', '<p>If students need to buy or rent an instrument, a partner shop can help; see <a href="/blog/website-for-musical-instrument-stores/">websites for musical instrument stores</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

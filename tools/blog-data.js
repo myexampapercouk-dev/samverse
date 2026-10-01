@@ -7980,6 +7980,8 @@ module.exports = [
   <li>Registration and material costs</li>
 </ul>
 
+<p>If students need to buy or rent an instrument, a partner shop can help; see <a href="/blog/website-for-musical-instrument-stores/">websites for musical instrument stores</a>.</p>
+
 <h2>Trial class and enrolment</h2>
 <ul>
   <li>A free or paid trial class booking form</li>
@@ -12719,6 +12721,8 @@ module.exports = [
 
 <h2>Protecting your images</h2>
 <p>Right-click blocking annoys visitors and doesn't stop determined copying. Subtle watermarks, sensible image sizes and copyright notices are more practical.</p>
+
+<p>Offering aerial shoots, surveys or inspections with a drone as a separate service? See <a href="/blog/website-for-drone-services/">websites for drone service companies</a>.</p>
 
 <h2>Get found locally</h2>
 <ul>
@@ -19235,6 +19239,8 @@ Template: astra
 </ul>
 <p>Keep product descriptions factual. Don't claim a food or supplement treats a health condition; suggest a vet visit for health concerns. If you stock veterinary medicines or prescription diets, check current rules before selling them online.</p>
 <p>If your shop sells live animals, fish or birds, list them as enquiries rather than add-to-cart products, so you can talk to buyers first. Pet shops dealing in animals generally need registration with the State Animal Welfare Board under India's pet shop rules, so check the current requirements with a lawyer and show your registration details where required.</p>
+
+<p>If fish, tanks and aquarium maintenance are the main part of your business, see <a href="/blog/website-for-aquarium-shops/">websites for aquarium and pet fish shops</a>.</p>
 
 <h2>Grooming bookings that work</h2>
 <p>Grooming time depends heavily on the pet. A Shih Tzu's full groom takes far longer than a bath for a short-coated dog, so your booking form needs a few details up front:</p>
@@ -31796,6 +31802,270 @@ Template: astra
 </ul>
 
 <p>Planning a rebrand and want the website side handled carefully? See <a href="/website-redesign/">website redesign</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> to protect your rankings through the change.</p>
+`,
+  },
+  {
+    slug: 'website-for-drone-services',
+    seoTitle: 'Websites for Drone Services: Aerial, Survey and Inspection',
+    title: 'Websites for Drone Service Companies: Aerial Shoots, Surveys, Inspections and Spraying',
+    description: 'How drone service companies can show footage and deliverables, explain their process, state DGCA registration honestly and win aerial, survey and spraying work.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Drone companies sell very different things to very different buyers. A couple wants aerial shots of their wedding venue, a builder needs progress photos of a site, an engineering firm wants a topographic survey, a solar plant needs panel inspections, and a farmer group wants crops sprayed. Each of them is asking the same underlying question: can this operator do the job safely, legally and to the standard I need? Your website should answer that before they pick up the phone.</p>
+
+<h2>What clients want to know before hiring a drone operator</h2>
+<ul>
+  <li>Whether you offer their specific service, not just "drone services"</li>
+  <li>Real examples of footage, maps or reports similar to what they need</li>
+  <li>What they will actually receive, in what format and how soon</li>
+  <li>Whether you are registered and your pilots are certified under current rules</li>
+  <li>Which areas you cover, and whether you can fly at their location</li>
+  <li>How pricing works, even if you quote per project</li>
+</ul>
+
+<h2>Give each service its own page</h2>
+<p>A single "Services" page listing everything makes it hard for buyers to see themselves in your work, and hard for Google to rank you for specific searches. Separate pages work better:</p>
+<table>
+  <thead>
+    <tr><th>Service</th><th>Typical buyers</th><th>What to show</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Aerial photography and video</td><td>Weddings, events, hotels, real estate, brands</td><td>Showreel clips, stills, edited and raw delivery options</td></tr>
+    <tr><td>Surveying and mapping</td><td>Builders, engineers, planners, mining and infrastructure firms</td><td>Sample orthomosaics, contour maps, 3D models and the accuracy approach you use</td></tr>
+    <tr><td>Inspections</td><td>Solar plants, telecom towers, factories, bridges, building facades</td><td>Sample inspection reports with defects marked, thermal imagery if you offer it</td></tr>
+    <tr><td>Agricultural spraying</td><td>Farmers, FPOs, plantations, agri-input companies</td><td>Field videos, area covered per visit, how bookings and crop details work</td></tr>
+  </tbody>
+</table>
+<p>On each page, explain who the service is for, the equipment and software you use in general terms, what the client receives and a few common questions. If aerial shoots are a small part of a larger photography business, the guide to <a href="/blog/website-for-photographers/">websites for photographers</a> covers portfolio pages in more depth.</p>
+
+<h2>Show sample footage and deliverables</h2>
+<p>Drone work is visual, and buyers trust what they can see. But "deliverables" mean different things for each service:</p>
+<ul>
+  <li><strong>Aerial video:</strong> a short showreel plus a few full clips by category. Host videos on YouTube or Vimeo and use click-to-play previews so pages stay fast on mobile data; see <a href="/blog/website-for-video-production-companies/">websites for video production companies</a> for hosting options.</li>
+  <li><strong>Surveys:</strong> screenshots of maps and models, plus a downloadable sample file or PDF with client details removed.</li>
+  <li><strong>Inspections:</strong> a redacted sample report showing how defects are located, photographed and prioritised.</li>
+  <li><strong>Spraying:</strong> short field videos and a simple explanation of how a visit runs.</li>
+</ul>
+<p>Only publish client work you have permission to show, and blur sensitive sites, faces and number plates where needed. Label everything honestly: if a clip is from a demo flight rather than a paid project, say so.</p>
+
+<h2>Explain your process and what clients receive</h2>
+<p>Many buyers have never hired a drone operator before, so a clear process page reduces nervous questions:</p>
+<ol>
+  <li><strong>Enquiry:</strong> location, service, date and purpose</li>
+  <li><strong>Feasibility check:</strong> airspace zone, permissions needed, site access and weather</li>
+  <li><strong>Quote and confirmation:</strong> scope, deliverables, timeline and any advance</li>
+  <li><strong>Flight day:</strong> what the client needs to arrange, such as site access, a contact person and safe take-off space</li>
+  <li><strong>Processing:</strong> editing, map processing or report writing</li>
+  <li><strong>Delivery:</strong> file formats, delivery method, revision rounds and how long you keep the data</li>
+</ol>
+<p>Be specific about formats. A builder wants to know whether they get a PDF, a CAD-friendly file or an online viewer link; a couple wants to know how many minutes of edited film and whether raw footage is included.</p>
+
+<h2>Permissions and compliance: state them honestly</h2>
+<p>In India, civil drone operations are regulated by the Directorate General of Civil Aviation (DGCA) under the Drone Rules, 2021, with registration and airspace permissions handled through the Digital Sky platform. Requirements depend on the drone's size and category, the type of operation and where you fly, and the rules have been amended since they were introduced, so check the current position rather than relying on old information.</p>
+<p>On your website:</p>
+<ul>
+  <li>State what you genuinely hold, such as drone registration and remote pilot certificates, in plain words</li>
+  <li>Don't use phrases like "DGCA approved" or "government certified" unless they accurately describe your status</li>
+  <li>Explain that you check airspace zones before every job and that some locations need extra permission or can't be flown at all</li>
+  <li>Mention insurance only if you have it, and describe what it covers accurately</li>
+  <li>For spraying, note that crop protection products and application are subject to separate agriculture guidelines, and that farmers should follow label and expert advice</li>
+</ul>
+<p>Honest compliance information is a selling point. Corporate and government-linked clients often have to verify it before issuing a work order.</p>
+
+<h2>Enquiry forms that capture site details</h2>
+<p>A generic contact form leads to long back-and-forth. Ask for what you need to quote:</p>
+<ul>
+  <li>Service required and purpose of the footage or data</li>
+  <li>Site location, with a map pin or address</li>
+  <li>Approximate area (acres or hectares) for surveys and spraying</li>
+  <li>Preferred dates and any deadline</li>
+  <li>For spraying: crop, stage and what is to be applied</li>
+  <li>Phone and WhatsApp for quick follow-up</li>
+</ul>
+<p>Keep the first step short, then ask for details on a second step. For ad campaigns targeting one service, such as real estate aerial shoots, a focused landing page usually converts better than sending traffic to the homepage.</p>
+
+<h2>Getting found locally</h2>
+<p>People search for drone services by task and place: "drone shoot in {city}", "drone survey company {state}", "solar panel drone inspection" or "agriculture drone spraying near me".</p>
+<ul>
+  <li>Complete your Google Business Profile with services, service areas and real project photos</li>
+  <li>Create location pages only where you genuinely operate and can show local work; see <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a></li>
+  <li>Write project write-ups with the client's permission, describing the site type, challenge and deliverable</li>
+  <li>Ask satisfied clients for Google reviews that mention the service they used</li>
+</ul>
+<p>Keep the site fast despite heavy media: compress stills, avoid autoplaying background video on mobile and keep call and WhatsApp buttons easy to reach.</p>
+
+<p>Planning a website for your drone business, or a landing page for a specific service? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-aquarium-shops',
+    seoTitle: 'Websites for Aquarium and Pet Fish Shops',
+    title: 'Websites for Aquarium and Pet Fish Shops: Livestock, Tanks and Maintenance',
+    description: 'How aquarium and pet fish shops can keep livestock lists current, sell tanks and setups, promote maintenance services and set clear local delivery limits.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'woocommerce-developer'],
+    body: `
+<p>An aquarium shop is a strange mix of businesses: part pet shop, part equipment store, part installation and maintenance service. Fishkeepers want to know what's in your tanks this week, beginners want help choosing their first setup, and offices and restaurants want someone to keep their display tank looking good. A website that handles all three, without a stale stock list, can bring in steady local enquiries.</p>
+<p>This guide is for shops that focus on fish and aquariums. If you sell supplies for dogs, cats and other pets, or run grooming and boarding, see <a href="/blog/website-for-pet-shops-grooming/">websites for pet shops, grooming and boarding</a>.</p>
+
+<h2>What fishkeepers look for</h2>
+<ul>
+  <li>Which fish, shrimp and plants you have in stock right now</li>
+  <li>Whether you stock the equipment and food they already use</li>
+  <li>Help with compatibility, tank size and setting up a new aquarium</li>
+  <li>Whether you deliver live fish to their area, or they need to visit</li>
+  <li>Maintenance and cleaning services for home and office tanks</li>
+  <li>Photos of your shop and display tanks, which hint at how well you care for livestock</li>
+</ul>
+
+<h2>Livestock lists that are easy to keep current</h2>
+<p>Livestock changes every week. A beautifully designed fish catalogue that nobody updates is worse than none, because customers travel for fish that sold out a month ago. Design for easy updating rather than perfection:</p>
+<ul>
+  <li><strong>A simple stock list</strong> grouped by type (community fish, cichlids, livebearers, shrimp, plants, marine if you keep it), which staff can update from a phone in a few minutes</li>
+  <li><strong>A visible "last updated" date</strong> at the top, so visitors know how fresh it is</li>
+  <li><strong>Key details per species:</strong> common and scientific name, approximate size, temperament and basic needs</li>
+  <li><strong>"New arrivals" posts</strong> when a shipment comes in, which can be shared to WhatsApp and Instagram</li>
+  <li><strong>"Ask about this fish" buttons</strong> rather than add-to-cart for most livestock, so you can check the buyer's tank first</li>
+</ul>
+<p>Only list species you can legally sell. Some animals are protected or restricted, and shops dealing in live animals may come under animal welfare rules that include registration, so check current requirements with a lawyer and display registration details where required.</p>
+
+<h2>Tanks, setups and equipment</h2>
+<p>Dry goods are where an online store makes most sense. Organise them the way fishkeepers shop:</p>
+<table>
+  <thead>
+    <tr><th>Category</th><th>Examples</th><th>Helpful filters or details</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Tanks and cabinets</td><td>Ready-made tanks, custom-built tanks, stands</td><td>Dimensions, volume, glass thickness, lead time for custom builds</td></tr>
+    <tr><td>Filtration and equipment</td><td>Filters, heaters, air pumps, lights, CO2 kits</td><td>Suitable tank size, power use, brand</td></tr>
+    <tr><td>Food and care</td><td>Flakes, pellets, frozen food, water conditioners, test kits</td><td>Fish type, pack size</td></tr>
+    <tr><td>Decor and substrate</td><td>Gravel, sand, plant soil, rocks, driftwood</td><td>Weight, colour, freshwater or marine</td></tr>
+  </tbody>
+</table>
+<p>Starter packages are popular: a tank, filter, heater, light and substrate sized to work together, with a note on which fish suit it. Sell pack sizes and tank sizes as variations rather than separate products, and keep stock accurate so you don't sell what you no longer have; see <a href="/blog/woocommerce-inventory-management/">WooCommerce inventory management</a>.</p>
+<p>Custom tanks need a quote form instead of a cart: dimensions, location in the room, freshwater or marine, cabinet needed and budget.</p>
+
+<h2>Maintenance and setup services</h2>
+<p>Regular maintenance contracts for homes, offices, clinics, hotels and restaurants can be steady income. Give them a proper page:</p>
+<ul>
+  <li>What a visit includes, such as water change, glass cleaning, filter cleaning and a health check of livestock</li>
+  <li>Visit frequency options and whether you offer annual contracts</li>
+  <li>Set-up services for new tanks, including cycling advice before fish are added</li>
+  <li>Shifting and relocating existing aquariums, if you do it</li>
+  <li>Before and after photos of tanks you maintain, with the owner's permission</li>
+</ul>
+<p>The booking form should ask for tank size, freshwater or marine, location, current problems and a photo upload, so you can quote and plan the visit.</p>
+
+<h2>Care guides that bring visitors</h2>
+<p>Beginners search a lot before they buy: how to set up a first aquarium, which fish live peacefully together, why water turns cloudy, how often to change water. Short, practical guides written from your shop's experience answer those searches and bring people to your door.</p>
+<ul>
+  <li>Link each guide to the products and services it mentions</li>
+  <li>Keep advice general and accurate, and suggest visiting the shop with a water sample for specific problems</li>
+  <li>Avoid promising cures for fish diseases; describe what a product is intended for and follow the label</li>
+</ul>
+
+<h2>Local delivery limits for live fish</h2>
+<p>Live fish don't travel like a parcel. Be clear about what you deliver and where:</p>
+<ul>
+  <li><strong>Live fish and plants:</strong> state the areas and time windows you deliver within, or say that livestock is pick-up only</li>
+  <li><strong>Packing:</strong> explain how fish are bagged and how long they can safely stay packed</li>
+  <li><strong>Arrival policy:</strong> what happens if a fish arrives dead or unwell, and what proof you need, written plainly</li>
+  <li><strong>Dry goods:</strong> these can usually be shipped further; a pin code checker shows customers instantly what reaches them; see <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checkers</a></li>
+</ul>
+<p>Many couriers restrict or refuse live animals, so check before promising anything outside your own delivery area.</p>
+
+<h2>WhatsApp enquiries and local SEO</h2>
+<p>Most aquarium questions are easiest to answer with a photo: "what's wrong with my fish?", "will this fit in my tank?", "is this fish in stock?". A WhatsApp button on livestock, service and product pages makes that easy; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>. Use quick replies for common questions and record enquiries so you can follow up when requested fish arrive.</p>
+<p>People search locally for "aquarium shop near me", "aquarium maintenance in {area}" and "custom fish tank {city}". Keep your Google Business Profile hours accurate, post new arrivals and tank photos, and ask happy customers for reviews. Keep the site fast on mobile by compressing tank photos and avoiding heavy video backgrounds.</p>
+
+<p>Want a website that sells equipment online and keeps livestock enquiries flowing? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-musical-instrument-stores',
+    seoTitle: 'Websites for Musical Instrument Stores',
+    title: 'Websites for Musical Instrument Stores: Catalogue, Repairs, Rentals and Lessons',
+    description: 'How instrument shops can organise a catalogue by instrument and brand, show stock versus orderable items, add demo videos and promote repairs and rentals.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Buying an instrument is personal. A beginner's parent wants something affordable that won't put the child off, a working musician wants a specific model and wants to hear it first, and a temple or school wants a harmonium or drum kit that will last. Online marketplaces sell instruments too, but a local shop can offer what they can't: advice, a proper setup, repairs, rentals and a place to try before buying. Your website should make those advantages obvious.</p>
+
+<h2>What musicians and parents look for</h2>
+<ul>
+  <li>Whether you carry their instrument, brand and price range</li>
+  <li>Whether a model is in the shop now or has to be ordered</li>
+  <li>How it sounds, ideally from a demo recorded in your shop</li>
+  <li>Warranty, setup and after-sales support</li>
+  <li>Repairs and servicing for instruments they already own</li>
+  <li>Rentals, beginner packages and help finding a teacher</li>
+</ul>
+
+<h2>Organise the catalogue by instrument, then brand</h2>
+<p>Most visitors arrive knowing the instrument they want, and many also know the brand. Make both easy:</p>
+<ul>
+  <li><strong>Top-level categories by instrument family:</strong> guitars and basses, keyboards and digital pianos, drums and percussion, Indian classical instruments (harmonium, tabla, sitar, flute and others), strings, wind instruments, and live and studio sound</li>
+  <li><strong>Brand pages</strong> for the brands you stock, with a short note on what each is known for; only describe yourself as an authorised dealer where that's true</li>
+  <li><strong>Filters that match real decisions:</strong> price band, beginner or professional, acoustic or electric, number of keys, left-handed options</li>
+  <li><strong>Accessories linked from each instrument:</strong> strings, cases, stands, tuners, cables and books</li>
+</ul>
+<p>Write your own product descriptions instead of copying the manufacturer's text, and keep names consistent so search and filters work.</p>
+
+<h2>Show what's in stock versus what can be ordered</h2>
+<p>Instrument shops often can order far more than they keep on the floor. That's useful, as long as customers can tell the difference. Use clear labels:</p>
+<table>
+  <thead>
+    <tr><th>Label</th><th>Meaning</th><th>Best action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>In stock in store</td><td>Available to try and take home today</td><td>Buy online, reserve or visit</td></tr>
+    <tr><td>Available to order</td><td>Supplied by the distributor or brand on request</td><td>Order with advance, showing typical lead time</td></tr>
+    <tr><td>Display piece</td><td>Floor model, possibly at a different price</td><td>Enquire or visit</td></tr>
+    <tr><td>Discontinued</td><td>No longer available</td><td>Suggest a current alternative</td></tr>
+  </tbody>
+</table>
+<p>Avoid importing a whole distributor catalogue and marking it all "in stock". It leads to disappointed customers and cancelled orders. Keep counts accurate for items you hold; see <a href="/blog/woocommerce-inventory-management/">WooCommerce inventory management</a>. A "check availability" button that opens WhatsApp with the product name already filled in works well for expensive or rare items.</p>
+
+<h2>Product pages with demo videos and honest details</h2>
+<p>Hearing an instrument matters more than reading about it. Short demo videos recorded in your shop, playing the actual model, are among the most persuasive things you can add. Keep them simple: a few clean minutes, consistent audio and no exaggerated claims.</p>
+<ul>
+  <li>Specifications in a consistent format: body or tonewood, number of keys, action, pickups, tuning, dimensions</li>
+  <li>What's in the box and what you add, such as a setup, tuning or a gig bag</li>
+  <li>Warranty as provided by the manufacturer, and who handles claims</li>
+  <li>Payment options such as UPI, cards and EMI where your payment gateway supports it</li>
+</ul>
+<p>Host videos on YouTube and load them only when clicked, so product pages stay fast; see <a href="/blog/video-on-business-website/">video on your business website</a>.</p>
+
+<h2>Repairs and servicing</h2>
+<p>Repairs bring people back to your shop and build trust for future purchases. Give servicing its own page listing what you handle, such as guitar setups and restringing, fret and electronics work, harmonium tuning and reed work, tabla and drum head replacement, and keyboard repairs. Only list work your team or a trusted technician actually does.</p>
+<ol>
+  <li>Drop off or describe the problem online, with photos</li>
+  <li>Assessment and quote before work starts</li>
+  <li>Typical turnaround, with a note that parts can take longer</li>
+  <li>Collection, plus how you notify the customer it's ready</li>
+</ol>
+
+<h2>Rentals for events and beginners</h2>
+<p>Renting helps students try an instrument before committing, and helps event organisers who need a keyboard, drum kit or sound system for one day. If you offer rentals, explain the essentials clearly: rental periods, the deposit, ID needed, delivery or pick-up, and what happens if the instrument is damaged. Offer rent-to-own only if you genuinely run it. The guide to <a href="/blog/equipment-rental-website-guide/">equipment rental websites</a> covers booking and deposit flows that work.</p>
+
+<h2>Lessons and academy partnerships</h2>
+<p>Most beginners need a teacher as well as an instrument. Partnering with local music schools and private teachers helps both sides:</p>
+<ul>
+  <li>A "find a teacher" page listing partner academies, with their consent</li>
+  <li>Beginner kits recommended by partner teachers</li>
+  <li>Student offers, if you choose to run them, explained plainly</li>
+  <li>Workshops or demo days hosted at your shop, announced on the site</li>
+</ul>
+<p>Academies benefit from a shop that can supply and service students' instruments; see <a href="/blog/website-for-music-dance-academies/">websites for music and dance academies</a> for how they present their classes.</p>
+
+<h2>Local SEO and speed</h2>
+<p>People search "musical instrument shop near me", "guitar shop in {city}", "harmonium repair {area}" and "keyboard on rent {city}". Create pages for each main service, keep your Google Business Profile updated with photos, hours and new arrivals, and ask customers to mention what they bought or had repaired in reviews. With hundreds of products and videos, compress images and keep the store fast on mobile.</p>
+
+<p>Ready to put your instrument catalogue, repairs and rentals online? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
 ];
