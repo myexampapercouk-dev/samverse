@@ -579,6 +579,10 @@ const LINKS = [
   ['website-for-auto-parts-dealers', '<h2>Trade accounts for garages and mechanics</h2>', '<p>Garages face the same question when they explain parts choices to car owners; see <a href="/blog/website-for-car-service-garages/">websites for car service centres and independent garages</a>.</p>\n\n'],
   ['website-for-insurance-financial-advisors', '<h2>Educational content builds trust</h2>', '<p>Loan agents and DSAs need similar care with lender names, claims and wording; see <a href="/blog/website-for-loan-agents-dsa/">websites for loan agents and DSAs</a>.</p>\n\n'],
   ['website-for-ev-dealers', '<h2>Showroom and service</h2>', '<p>If you sell petrol motorcycles and scooters alongside electric models, see <a href="/blog/website-for-two-wheeler-dealers/">websites for two-wheeler dealers</a>.</p>\n\n'],
+  // Agent 62
+  ['update-wordpress-safely', '<h2>Make it routine</h2>', '<p>Not sure which parts to leave on automatic? See <a href="/blog/wordpress-auto-updates/">whether to turn on WordPress auto-updates</a> for core, plugins and themes.</p>\n\n'],
+  ['compare-website-quotes', '<h2>Warning signs</h2>', '<p>Comparing developers in Pune? See <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>, from checking live sites to who owns the logins.</p>\n\n'],
+  ['website-content-calendar', '<h2>Step 5: Write, publish, promote</h2>', '<p>Want a ready-made routine to copy? See this <a href="/blog/website-content-calendar-small-business/">sample monthly content calendar</a> mixing blog posts, case studies and Google Business Profile posts.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

@@ -5231,6 +5231,8 @@ module.exports = [
   <li><strong>Page builders, WooCommerce, theme and major versions:</strong> better updated manually after a backup and test</li>
 </ul>
 
+<p>Not sure which parts to leave on automatic? See <a href="/blog/wordpress-auto-updates/">whether to turn on WordPress auto-updates</a> for core, plugins and themes.</p>
+
 <h2>Make it routine</h2>
 <p>Check for updates weekly or fortnightly. If you'd rather not deal with it, a <a href="/wordpress-maintenance/">maintenance plan</a> covers updates, testing and rollbacks for you.</p>
 `,
@@ -8790,6 +8792,8 @@ module.exports = [
 
 <h2>Step 4: Set a realistic schedule</h2>
 <p>Consistency beats bursts. Two good articles a month that you keep up for a year beat twenty in one week followed by silence. Put dates, topics, target service page and owner in a simple spreadsheet.</p>
+
+<p>Want a ready-made routine to copy? See this <a href="/blog/website-content-calendar-small-business/">sample monthly content calendar</a> mixing blog posts, case studies and Google Business Profile posts.</p>
 
 <h2>Step 5: Write, publish, promote</h2>
 <ol>
@@ -14233,6 +14237,8 @@ module.exports = [
   <li><strong>Communication:</strong> did they ask good questions about your business?</li>
   <li><strong>Clarity:</strong> is the quote specific, or vague?</li>
 </ul>
+
+<p>Comparing developers in Pune? See <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>, from checking live sites to who owns the logins.</p>
 
 <h2>Warning signs</h2>
 <ul>
@@ -33660,6 +33666,270 @@ Template: astra
 </ul>
 
 <p>Planning a website for your two-wheeler dealership? See <a href="/wordpress-website-development/">WordPress website development</a>, and <a href="/landing-page-design/">landing page design</a> for launch and festive campaigns.</p>
+`,
+  },
+  {
+    slug: 'wordpress-auto-updates',
+    seoTitle: 'WordPress Auto-Updates: Should You Turn Them On?',
+    title: 'WordPress Auto-Updates: Should You Turn Them On for Core, Plugins and Themes?',
+    description: 'What WordPress auto-update settings for core, plugins and themes do, the real risks, a sensible middle ground, and when to test updates on staging first.',
+    date: '2026-10-01',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>WordPress can update itself in the background: core, plugins, themes and translations. It sounds like the perfect way to stay secure without effort, and for some parts of your site it is. For others, an update that arrives at 3am can break a layout, a form or your checkout before anyone notices. Here's what each setting does and how to decide what to switch on.</p>
+
+<p>This article is about the auto-update settings themselves. For the hands-on process of updating by hand, see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>.</p>
+
+<h2>What each auto-update setting does</h2>
+<table>
+  <thead><tr><th>Setting</th><th>Where to find it</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr><td>Minor core updates</td><td>On by default</td><td>Installs maintenance and security releases (for example 6.x.1 to 6.x.2) automatically</td></tr>
+    <tr><td>Major core updates</td><td>Dashboard &gt; Updates</td><td>Moves your site to new major versions of WordPress without asking</td></tr>
+    <tr><td>Plugin auto-updates</td><td>Plugins screen, per plugin</td><td>Installs each new version of that plugin as soon as WordPress picks it up</td></tr>
+    <tr><td>Theme auto-updates</td><td>Appearance &gt; Themes, in the theme details</td><td>Updates that theme automatically</td></tr>
+    <tr><td>Translations</td><td>Automatic</td><td>Keeps language files for core, plugins and themes current</td></tr>
+  </tbody>
+</table>
+<p>A few details worth knowing:</p>
+<ul>
+  <li>Auto-updates run through WordPress's built-in scheduler, which relies on site visits, so on quiet sites they can happen later than you expect.</li>
+  <li>WordPress emails the site's admin address after auto-updates. If that address is an old developer's inbox, nobody hears about failures.</li>
+  <li>Some hosts manage updates themselves or hide these toggles. Developers can also control core updates in wp-config.php. If a setting is missing or greyed out, check with your host or developer.</li>
+</ul>
+
+<h2>The case for turning them on</h2>
+<p>Outdated plugins are one of the most common ways WordPress sites get hacked. When a security fix is released, auto-updates get it onto your site within hours rather than whenever someone remembers to log in. They make most sense when:</p>
+<ul>
+  <li>Nobody on your team logs into the dashboard every week</li>
+  <li>The site is a simple brochure site with a handful of well-maintained plugins</li>
+  <li>The plugin in question is small and single-purpose, from an established developer</li>
+</ul>
+
+<h2>The risks</h2>
+<h3>Breaking changes</h3>
+<p>Major versions of page builders, WooCommerce and themes sometimes change how things work. Theme templates that override WooCommerce can go out of date, and a new version may need a newer PHP version than your hosting runs.</p>
+<h3>Silent breakage</h3>
+<p>Recent WordPress versions can roll back a plugin auto-update that causes a fatal error. But a misaligned layout, a contact form that stops sending emails or a checkout bug isn't a fatal error, so nothing rolls back, and you may not notice for days.</p>
+<h3>Bad timing</h3>
+<p>An update can land in the middle of a festival sale or a paid ad campaign, exactly when a broken page costs you most.</p>
+<h3>Premium plugins that don't auto-update</h3>
+<p>Premium plugins and themes update through their own licence system. If the licence has expired, no updates arrive at all, even with the toggle switched on. Plugins bundled with a premium theme often only update when the theme itself does. Auto-updates give a false sense of security if you never check these.</p>
+
+<h2>A sensible middle ground</h2>
+<p>For most business websites, a mix works better than all-on or all-off:</p>
+<table>
+  <thead><tr><th>Part of the site</th><th>Auto-update?</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Minor core releases</td><td>Yes, leave on</td><td>Small security and bug fixes that rarely break anything</td></tr>
+    <tr><td>Major core releases</td><td>Usually manual, after a short wait</td><td>Gives plugin and theme authors time to fix compatibility issues</td></tr>
+    <tr><td>Small, well-maintained plugins</td><td>Often yes</td><td>Low risk, and security fixes arrive quickly</td></tr>
+    <tr><td>Page builder, WooCommerce and its extensions, booking or membership plugins</td><td>Manual, after testing</td><td>They control layouts, payments and customer data</td></tr>
+    <tr><td>Your active theme</td><td>Manual</td><td>Theme updates can change layouts and styling</td></tr>
+    <tr><td>Unused plugins and themes</td><td>Delete them</td><td>Inactive code can still be a security risk</td></tr>
+    <tr><td>Translations</td><td>Yes</td><td>Very low risk</td></tr>
+  </tbody>
+</table>
+<p>Write the list down, so whoever looks after the site knows which plugins update themselves and which are done by hand.</p>
+
+<h2>Safety nets to put in place first</h2>
+<p>Auto-updates are only safe if you can spot a problem quickly and undo it:</p>
+<ul>
+  <li><strong>Daily automatic backups</strong> stored away from your hosting account, so you can restore yesterday's site. See the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</li>
+  <li><strong>Uptime monitoring</strong> that alerts you when the site goes down. It catches outages and fatal errors, not broken layouts. See <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a>.</li>
+  <li><strong>Update emails going to a real inbox</strong> that someone reads.</li>
+  <li><strong>A quick weekly check:</strong> open the homepage on your phone, send a test enquiry through the contact form and, for stores, add something to the cart.</li>
+</ul>
+
+<h2>When to use staging instead</h2>
+<p>A staging site is a private copy of your website where you can test updates before they touch the live site. It's worth using when:</p>
+<ul>
+  <li>You run a WooCommerce store or take bookings and payments</li>
+  <li>A major version of your page builder, WooCommerce or theme is released</li>
+  <li>You're changing the PHP version on your hosting</li>
+  <li>The site has custom code or a long list of plugins</li>
+  <li>A big campaign or sale is coming up</li>
+</ul>
+<p>One catch: auto-updates on the live site don't wait for your staging tests. For any plugin you want to test first, switch its auto-update off on the live site. See <a href="/blog/staging-sites-explained/">staging sites explained</a> for how to set one up.</p>
+
+<h2>Make it someone's job</h2>
+<p>Whatever you choose, someone should own it. Once a month, review which plugins are set to auto-update, check that premium licences are active, delete anything unused and read through the update emails for failures. The <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> shows where this fits alongside backups, security and speed checks.</p>
+
+<p>Rather not manage updates yourself? See <a href="/wordpress-maintenance/">WordPress maintenance</a> for help with updates, backups and testing.</p>
+`,
+  },
+  {
+    slug: 'choose-wordpress-developer-pune',
+    title: 'How to Choose a WordPress Developer or Agency in Pune',
+    description: 'How Pune businesses can choose a WordPress developer or agency: local vs remote, checking live sites, questions to ask, fair proposals and ownership.',
+    date: '2026-10-01',
+    category: 'Guides',
+    related: ['wordpress-developer-pune', 'hire-wordpress-developer'],
+    body: `
+<p>Whether you run a clinic in Kothrud, a manufacturing unit in Chakan or a startup in Baner, you'll find plenty of people in Pune offering to build your website: freelancers, small studios and larger agencies. Choice is good, but it makes them hard to tell apart. Here's a practical way to choose. One disclosure: I'm a WordPress developer based in Pune myself, so use this checklist on everyone you speak to, including me.</p>
+
+<h2>Know what you need before you shortlist</h2>
+<p>Developers can only give you a useful answer if you give them a clear question. Before you call anyone, write down:</p>
+<ul>
+  <li>The pages you need and the main action you want visitors to take (call, WhatsApp, enquiry form, booking, purchase)</li>
+  <li>Features such as an online store, payments, bookings or Marathi and Hindi versions</li>
+  <li>Who will write the text and supply the photos</li>
+  <li>Your rough budget range and any deadline, such as a launch before a festival season or an exhibition</li>
+</ul>
+<p>The <a href="/blog/website-brief-template/">website brief template</a> turns this into one page you can send to everyone. It also helps you decide between a freelancer, a small studio and an agency; see <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> for the trade-offs.</p>
+
+<h2>Local or remote: what actually matters</h2>
+<p>Being in the same city has real advantages:</p>
+<ul>
+  <li>You can meet face to face for the planning meeting, which some owners and teams prefer</li>
+  <li>A local developer is more likely to know Pune's areas and how customers search, such as "dentist in Wakad" or "CA near Hadapsar"</li>
+  <li>Visiting your shop, factory or clinic is easy if it helps them understand the business</li>
+</ul>
+<p>But location matters less than people think. Even with a local developer, most of the work happens over WhatsApp, calls and screen-sharing. A responsive developer elsewhere in India is better than an unresponsive one down the road. Judge them on communication, process and the quality of their live work first, and treat being local as a bonus.</p>
+
+<h2>Check portfolios and live sites properly</h2>
+<p>Screenshots and mock-ups prove very little. Ask for links to live websites and check them yourself:</p>
+<ol>
+  <li><strong>Open them on your phone using mobile data,</strong> not office Wi-Fi. Do they load quickly and read easily?</li>
+  <li><strong>Try the buttons</strong> a customer would use: call, WhatsApp and directions links. Don't submit forms on other businesses' sites, but check they're easy to find.</li>
+  <li><strong>Ask what they did on each site:</strong> design, development, content, or only small changes.</li>
+  <li><strong>Look for work similar to yours,</strong> such as clinics, manufacturers, restaurants or online stores.</li>
+  <li><strong>Check the sites are still live and looked after.</strong> Broken pages or an expired SSL certificate say something about aftercare.</li>
+  <li><strong>Ask to speak to one or two past clients,</strong> and read the developer's own Google reviews.</li>
+</ol>
+
+<h2>Questions to ask in the first conversation</h2>
+<ul>
+  <li><strong>Who will actually build my website?</strong> Some agencies pass work on to subcontractors. That isn't always bad, but you should know.</li>
+  <li><strong>Which theme or page builder will you use, and why for my site?</strong></li>
+  <li><strong>Will I be able to edit text and photos myself,</strong> and will you show me how?</li>
+  <li><strong>How do you make sites fast on mobile networks?</strong></li>
+  <li><strong>What do you need from me, and by when?</strong> What happens to the timeline if my content is late?</li>
+  <li><strong>What isn't included?</strong> Content writing, photography, premium plugin licences and hosting are common extras.</li>
+  <li><strong>What SEO basics are included?</strong> Page titles, Search Console, and linking the site to your Google Business Profile.</li>
+</ul>
+<p>A good developer will also ask you plenty of questions. If they quote without understanding your business, be careful.</p>
+
+<h2>What a fair proposal includes</h2>
+<p>Quotes in Pune, as anywhere, vary widely because people quote for different things. Compare the scope, not just the total. A fair proposal spells out:</p>
+<ul>
+  <li>The list of pages and features, and the design approach</li>
+  <li>How many rounds of revisions are included</li>
+  <li>Who supplies content and images</li>
+  <li>A timeline with milestones, and payments linked to those milestones rather than everything upfront</li>
+  <li>What's excluded, and what extras would cost</li>
+  <li>Whether GST is included, if the developer is registered</li>
+  <li>The support period after launch, and maintenance options</li>
+</ul>
+<p>For a side-by-side method, see <a href="/blog/compare-website-quotes/">how to compare website quotes</a>.</p>
+
+<h2>Ownership of domain, hosting and logins</h2>
+<p>This is where many business owners get caught out years later. Before you pay, agree that:</p>
+<ul>
+  <li>The domain is registered in your business's name, with your email address on the account</li>
+  <li>The hosting account belongs to you, with the developer added as a user if needed</li>
+  <li>You get an administrator login to WordPress, not just an editor account</li>
+  <li>Premium theme and plugin licences are bought in your name, or the proposal says clearly who holds them</li>
+  <li>You are the owner of Google Analytics, Search Console and your Google Business Profile</li>
+</ul>
+<p>The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> covers everything you should hold.</p>
+
+<h2>Plan for maintenance after launch</h2>
+<p>A website needs updates, backups and the occasional fix long after launch day. Ask before you sign:</p>
+<ul>
+  <li>How long free fixes last after launch, and what counts as a fix rather than a new change</li>
+  <li>Whether they offer a monthly maintenance plan, and what it covers</li>
+  <li>How quickly they respond if the site goes down</li>
+  <li>What you'll receive at handover: logins, a short guide and backups</li>
+</ul>
+<p>If they don't offer maintenance, that's fine, as long as you know who will handle it before the site goes live.</p>
+
+<p>If you're a Pune or PCMC business and want a second opinion on a proposal, or a quote of your own, see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
+`,
+  },
+  {
+    slug: 'website-content-calendar-small-business',
+    seoTitle: 'A Sample Content Calendar for Small Business Websites',
+    title: 'A Sample Content Calendar for Small Businesses: Blog Posts, Case Studies and Google Posts',
+    description: 'A monthly content routine for small businesses: turn customer questions into blog posts, case studies and Google Business Profile posts, then review results.',
+    date: '2026-10-01',
+    category: 'Growth',
+    related: ['wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>Most small business owners don't need a complicated content strategy. They need a routine that fits around running the business. This article gives you a ready-made monthly rhythm you can copy, mixing website articles, case studies and Google Business Profile posts, with one short review each month to see what's working.</p>
+
+<p>If you want the planning steps first, such as mapping topics to your services, see <a href="/blog/website-content-calendar/">how to plan a website content calendar</a>. This article is the practical template that sits on top of that plan.</p>
+
+<h2>Start with a question bank, not a blank page</h2>
+<p>The best topics come from your customers, not from brainstorming. Keep one shared Google Sheet or note called "Questions" and add to it whenever someone asks something on a call, on WhatsApp or at the counter. Write the question in the customer's own words, and note which service it relates to.</p>
+<p>A few weeks of this gives you more topics than you can write. For example:</p>
+<ul>
+  <li><strong>A dental clinic:</strong> "Does a root canal hurt?" or "How many visits does it take?"</li>
+  <li><strong>A CA firm:</strong> "Which documents do I need for GST registration?"</li>
+  <li><strong>An interior designer:</strong> "How long does a 2BHK interior take?"</li>
+</ul>
+<p>Each good question can become a blog post, an FAQ on a service page, a Google Business Profile post and a few social posts.</p>
+
+<h2>How often to publish, realistically</h2>
+<p>Pick a level you can keep up for a whole year. A steady, modest routine beats an ambitious one that stops after six weeks.</p>
+<table>
+  <thead><tr><th>Level</th><th>Website</th><th>Google Business Profile</th><th>Best for</th></tr></thead>
+  <tbody>
+    <tr><td>Light</td><td>One article a month</td><td>A post or photo update every week or two</td><td>Owners doing it all themselves</td></tr>
+    <tr><td>Steady</td><td>Two articles a month, plus a case study every couple of months</td><td>A post every week</td><td>Businesses with one person who can give it a few hours</td></tr>
+    <tr><td>Active</td><td>Weekly articles or page updates, plus regular case studies</td><td>Weekly posts and regular photos</td><td>Competitive services and multiple locations</td></tr>
+  </tbody>
+</table>
+<p>If you're unsure, start light. You can always step up once the habit sticks.</p>
+
+<h2>The mix: blog posts, case studies and Google posts</h2>
+<p>Each format does a different job:</p>
+<ul>
+  <li><strong>Blog posts</strong> answer the questions people type into Google and link readers to your service pages.</li>
+  <li><strong>Case studies</strong> are proof. They show real work, the problem, what you did and the outcome, which helps people who are close to deciding. See <a href="/blog/write-case-studies-business-website/">how to write case studies</a>.</li>
+  <li><strong>Google Business Profile posts</strong> keep your profile looking active to people who find you on Maps and in local results. They're short and can link to your new article or case study. See <a href="/blog/google-business-profile-posts/">how to use Google Business Profile posts</a>.</li>
+</ul>
+<p>Google posts don't replace website content. Think of them as signposts pointing people to the fuller story on your website.</p>
+
+<h2>A sample month</h2>
+<p>Here's what the "Steady" level can look like in practice:</p>
+<table>
+  <thead><tr><th>Week</th><th>Website</th><th>Google Business Profile</th><th>Social and WhatsApp</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Publish an article answering your most common question</td><td>A post linking to the article</td><td>Share the main tip as a short post or status</td></tr>
+    <tr><td>2</td><td>Add an FAQ or fresh photos to a service page</td><td>Photos of recent work</td><td>Behind-the-scenes photo or short video</td></tr>
+    <tr><td>3</td><td>Publish a second article, or a case study in alternate months</td><td>A post about the project, with a photo</td><td>Before-and-after post linking to the case study</td></tr>
+    <tr><td>4</td><td>Review results and pick next month's topics</td><td>An offer or event post, if you have one</td><td>Reshare the month's most useful tip</td></tr>
+  </tbody>
+</table>
+<p>Around festivals and peak seasons, swap in timely topics a few weeks early, so the content is live before customers start searching.</p>
+
+<h2>Reuse every piece on social media</h2>
+<p>Writing is the slow part, so get more out of each piece. One article can become:</p>
+<ul>
+  <li>Three or four short tips for Instagram, Facebook or LinkedIn</li>
+  <li>A carousel that walks through the main steps</li>
+  <li>A WhatsApp status, or a message to customers who have opted in to updates</li>
+  <li>A short video of you answering the question in a minute</li>
+</ul>
+<p>Always link back to the full article on your website, where visitors can see your services and contact you.</p>
+
+<h2>Review what works in Search Console</h2>
+<p>Set aside 20 minutes in the last week of each month. In Google Search Console, open the Performance report and look at:</p>
+<ol>
+  <li><strong>Which pages gained impressions and clicks</strong> compared with the previous period. Write more on those topics.</li>
+  <li><strong>Queries with plenty of impressions but few clicks.</strong> A clearer page title and description can help.</li>
+  <li><strong>Questions you don't have a page for yet.</strong> Add them to your question bank.</li>
+  <li><strong>Articles with almost no impressions after a few months.</strong> Improve them, merge them into a stronger page, or leave the topic.</li>
+</ol>
+<p>Also check which pages lead to enquiries, calls and WhatsApp messages, not just visits. For more ways to dig into the data, see <a href="/blog/search-console-content-ideas/">finding content ideas in Search Console</a>.</p>
+
+<h2>Keep the system simple</h2>
+<p>A spreadsheet is enough. Use one row per piece, with columns for topic, the customer question it answers, related service, format, owner, due date, status, published link, and whether it has gone out on Google and social media.</p>
+<p>If writing is the bottleneck, record a voice note answering the question as you would to a customer, then turn it into an article or ask someone to edit it. Batch the work: one afternoon to draft two pieces is often easier than squeezing writing into every week.</p>
+
+<p>Need a website that's easy to publish on, with the SEO basics in place? See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
 ];
