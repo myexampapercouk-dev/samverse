@@ -1897,6 +1897,8 @@ module.exports = [
 <h3>5. FAQ</h3>
 <p>Answer questions about installation time, maintenance, warranties, net metering and monsoon performance.</p>
 
+<p>If your business mainly sells inverters, UPS systems and batteries for power backup, the website needs are a little different; see <a href="/blog/website-for-inverter-battery-dealers/">websites for inverter, UPS and battery dealers</a>.</p>
+
 <h2>Build trust quickly</h2>
 <ul>
   <li>Certifications, partnerships and brands you install</li>
@@ -3302,6 +3304,8 @@ module.exports = [
 
 <h2>2. Compress</h2>
 <p>Compression reduces file size with little or no visible quality loss. Image optimization plugins can compress new uploads automatically and bulk-compress existing images. For photos, moderate compression is usually invisible to visitors.</p>
+
+<p>Not sure which compression tool to use? See <a href="/blog/image-compression-plugins-compared/">WordPress image compression plugins compared</a>.</p>
 
 <h2>3. Use modern formats</h2>
 <ul>
@@ -19321,6 +19325,8 @@ Template: astra
 <p>Parents take toy safety seriously, and so do the rules. In India, toys are generally required to meet BIS standards and carry the ISI mark under the toy quality control order, including imported toys. E-commerce rules also generally expect listings to show details such as MRP, seller information and country of origin. Rules change, so confirm the current requirements for your products with your supplier, CA or lawyer.</p>
 <p>On the website, show certification details honestly, only for products that actually have them. A short "Toy safety" page explaining how you choose suppliers, check products and handle safety complaints builds trust. If you ship abroad, remember that each country has its own toy safety rules.</p>
 
+<p>Selling baby care products such as lotions, wipes or feeding items as well? They need even more careful ingredient and age information; see <a href="/blog/website-for-baby-products-brands/">websites for baby care and baby products brands</a>.</p>
+
 <h2>Make gifting easy</h2>
 <ul>
   <li>Gift wrapping as a checkout option, with a photo of how it looks</li>
@@ -30699,6 +30705,287 @@ Template: astra
 <p>Once a month, compare scores with what actually happened. Which hot leads became customers? Did any low scores turn into good jobs? If a signal doesn't predict anything, drop it or lower its points; if a pattern keeps appearing among your best clients, add it. Comparing scores by source also shows which pages and campaigns bring the most promising enquiries, which helps when you <a href="/blog/measure-website-roi/">measure your website's ROI</a>.</p>
 
 <p>Want enquiry forms that collect the details you need to score and prioritise leads? See <a href="/landing-page-design/">landing page design</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for a site built around how your business sells.</p>
+`,
+  },
+  {
+    slug: 'website-for-baby-products-brands',
+    title: 'Websites for Baby Care and Baby Products Brands',
+    description: 'What parents look for on a baby products website: safety and ingredient details, age guidance, careful claims, honest reviews, easy gifting and a D2C store.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>Parents research baby products more carefully than almost anything else they buy. Before choosing a lotion, wipe, bottle or carrier from a brand they haven't tried, they want to know exactly what's in it, whether it suits their baby's age, and whether other parents trusted it. A baby care brand's website has to answer those questions calmly and honestly, without overclaiming, and make buying and gifting easy. If you also sell toys, the guide to <a href="/blog/website-for-toy-stores/">websites for toy stores and kids' brands</a> covers toy safety marks and age filters in detail.</p>
+
+<h2>What parents check before they buy</h2>
+<ul>
+  <li><strong>Ingredients and materials:</strong> the full list, and what has been left out, such as fragrance, where that's true</li>
+  <li><strong>Age suitability:</strong> is it suitable from birth, or only from six months?</li>
+  <li><strong>Safety:</strong> how the product was tested, and any certifications that genuinely apply</li>
+  <li><strong>Other parents' experiences:</strong> reviews, especially from parents of babies with sensitive skin</li>
+  <li><strong>Practical details:</strong> pack size, expiry, storage, and how quickly it can be delivered</li>
+  <li><strong>Someone to ask:</strong> WhatsApp or email for questions before buying</li>
+</ul>
+<p>Many of these buyers are tired, short of time and shopping on a phone at odd hours. Short, clear answers near the top of each page matter more than clever design.</p>
+
+<h2>Organise the store by age, stage and need</h2>
+<p>New parents often don't know product names, but they know their baby's age and what they're trying to solve. Give them both routes in:</p>
+<table>
+  <thead>
+    <tr><th>Shop by</th><th>Examples</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Age or stage</td><td>Newborn, 0–6 months, 6–12 months, toddler</td></tr>
+    <tr><td>Need</td><td>Bath time, skin care, diapering, feeding, sleep, travel</td></tr>
+    <tr><td>Concern</td><td>Dry or sensitive skin, summer heat, winter care</td></tr>
+    <tr><td>Occasion</td><td>Hospital bag, baby shower, naming ceremony, first birthday</td></tr>
+  </tbody>
+</table>
+<p>Use the same age labels everywhere, taken from the manufacturer's guidance, so filters work reliably. For diapers and clothes, add a size guide by weight as well as age, since babies grow at different rates.</p>
+
+<h2>Product pages: safety, ingredients and age guidance</h2>
+<ul>
+  <li>The full ingredient list as printed on the pack, with key ingredients explained in plain language</li>
+  <li>Materials for non-skin products, such as the type of plastic, silicone or fabric, and which parts come apart for cleaning</li>
+  <li>The recommended age from the packaging, shown prominently rather than buried in the description</li>
+  <li>How to use it, plus the warnings from the label, such as patch testing or adult supervision</li>
+  <li>Cleaning and sterilising instructions for feeding items</li>
+  <li>Expiry information, pack size and storage advice</li>
+  <li>Photos showing the real texture, size and contents, and a short how-to video where it helps</li>
+</ul>
+<p>A separate "Safety and quality" page explaining where products are made, how you choose suppliers, what testing is done and how to report a problem builds trust across the whole store. State only what you can back up.</p>
+
+<h2>Be careful with claims, and check which rules apply</h2>
+<p>Baby products span several regulated categories. In India, baby skin and hair care is generally regulated as cosmetics under the Drugs and Cosmetics Act and the Cosmetics Rules, baby foods fall under food safety regulation, and the promotion of infant milk substitutes, feeding bottles and infant foods is restricted under the IMS Act, which can affect how you market them online. Some products, such as certain rash creams, may be classed differently depending on their ingredients and claims. Rules change, so confirm your position with a regulatory consultant or lawyer before writing product copy or running ads.</p>
+<p>A few habits apply whatever you sell:</p>
+<ul>
+  <li>Don't claim a cosmetic treats or prevents a condition such as eczema or rashes</li>
+  <li>Use "dermatologically tested", "hypoallergenic", "paediatrician recommended" or "organic" only with evidence you can show</li>
+  <li>Avoid "100% safe", "toxin-free" and "chemical-free"; absolute promises invite complaints</li>
+  <li>Show the details printed on your packs, such as manufacturer, net quantity, price and dates, on the product page too</li>
+</ul>
+<p>The guide for <a href="/blog/website-for-beauty-cosmetics-brands/">beauty and skincare brands</a> covers claims, ingredient pages and influencer disclosures in more depth.</p>
+
+<h2>Reviews and trust from other parents</h2>
+<ul>
+  <li>Ask for a review a few weeks after delivery, once the product has actually been used</li>
+  <li>Let reviewers mention their baby's age or skin type if they choose; it helps other parents</li>
+  <li>Publish critical reviews and reply calmly, and take any safety complaint seriously and follow it up properly</li>
+  <li>Don't publish photos of babies without the parent's clear permission, and ask again before using them in ads</li>
+  <li>Never buy or write reviews, and label paid creator content clearly</li>
+</ul>
+
+<h2>Gifting: baby showers, newborn hampers and first birthdays</h2>
+<ul>
+  <li>Ready-made hampers by budget for newborns, baby showers and first birthdays</li>
+  <li>Gift wrapping, a gift message and prices left off the packing slip</li>
+  <li>Delivery to a different address, such as the new parents' or grandparents' home</li>
+  <li>A simple wishlist expecting parents can share with family</li>
+  <li>Gift cards for people who don't know what the parents already have</li>
+  <li>A bulk enquiry form for companies sending gifts to employees with new babies</li>
+</ul>
+
+<h2>D2C store features that bring parents back</h2>
+<p>Baby care is repeat buying: diapers, wipes and washes run out on a predictable schedule.</p>
+<ul>
+  <li><strong>Subscriptions or refill reminders</strong> for consumables; see <a href="/blog/woocommerce-subscriptions/">selling subscriptions with WooCommerce</a></li>
+  <li><strong>Size-up reminders</strong> for diapers and clothes, sent only with consent</li>
+  <li><strong>Bundles</strong> such as a bath-time set or a hospital-bag kit</li>
+  <li><strong>Payments:</strong> UPI, cards and cash on delivery if it suits your margins</li>
+  <li><strong>Delivery estimates by pin code</strong>, because a parent who has run out of diapers can't wait a week</li>
+  <li><strong>A clear returns policy:</strong> hygiene products usually can't be returned once opened, so explain what happens with damaged, leaking or wrong items</li>
+</ul>
+<p>Be careful with the data you collect. A baby's name and date of birth are personal data about a child, and India's data protection law treats children's data with extra care. Collect only what you need, explain why, and check current requirements; see <a href="/blog/dpdp-act-website-basics/">DPDP Act basics for websites</a>.</p>
+
+<h2>SEO and speed</h2>
+<p>Parents search in practical terms: "baby lotion for newborn", "fragrance-free baby wipes", "baby shower gift hamper in {city}". Build category and stage pages that match those searches, each with a short, useful introduction, and publish helpful guides such as a hospital-bag checklist, reviewed by a qualified person where a topic touches on health. Add product schema so price, availability and ratings can appear in Google.</p>
+<p>Keep the store fast on mobile. Compress product photos, skip heavy sliders, and keep review widgets and chat tools light.</p>
+
+<p>Planning a baby care store, or relaunching one that isn't converting? See <a href="/woocommerce-developer/">WooCommerce store development</a>, or a focused <a href="/landing-page-design/">landing page</a> for a launch or gifting campaign.</p>
+`,
+  },
+  {
+    slug: 'website-for-inverter-battery-dealers',
+    title: 'Websites for Inverter, UPS and Battery Dealers',
+    description: 'How inverter, UPS and battery dealers can win more enquiries online: products by backup need, simple load calculators, installation, service and warranty pages.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'wordpress-seo-services'],
+    body: `
+<p>When the power goes out in peak summer, people don't browse for long. They search "inverter battery near me", call the first dealer who looks reliable, and want it installed the same day. Others plan ahead: a family moving into a new flat, a clinic that can't let its fridge go warm, an office whose computers must stay on. An inverter, UPS or battery dealer's website has to serve both, with instant contact for the urgent buyer and clear guidance for the planner. If you also install solar systems, the <a href="/blog/solar-company-website-guide/">solar company website guide</a> covers savings, subsidy and project pages.</p>
+
+<h2>What customers want to know</h2>
+<ul>
+  <li>What do I need to run my fans, lights, Wi-Fi router, TV or fridge during a power cut?</li>
+  <li>How many hours of backup will I get?</li>
+  <li>Which battery type suits me, and how much maintenance does it need?</li>
+  <li>What will it cost in total, including the battery and installation?</li>
+  <li>Can you take my old battery in exchange?</li>
+  <li>What does the warranty cover, and who do I call when something goes wrong?</li>
+  <li>Can you deliver and install today or tomorrow?</li>
+</ul>
+
+<h2>Organise products by backup need</h2>
+<p>Most customers don't know VA ratings or Ah figures. They know what they want to keep running. Lead with needs, then show the matching products:</p>
+<table>
+  <thead>
+    <tr><th>Customer need</th><th>What usually fits</th><th>Questions to ask</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Home basics: fans, lights, router</td><td>A home inverter with one battery</td><td>How many fans and lights? How long are typical cuts?</td></tr>
+    <tr><td>Bigger homes or heavier loads</td><td>A higher-capacity inverter, often with two batteries</td><td>Which heavier appliances must run? Is there space for two batteries?</td></tr>
+    <tr><td>Computers in shops and offices</td><td>UPS units for computers and network equipment</td><td>How many systems? Do they need time to save work, or to keep running?</td></tr>
+    <tr><td>Servers, labs and sensitive equipment</td><td>Online UPS systems, usually after a site survey</td><td>What equipment, what load and how much runtime?</td></tr>
+    <tr><td>Lower bills as well as backup</td><td>Solar or hybrid inverters</td><td>Roof space, monthly bill and any existing inverter</td></tr>
+  </tbody>
+</table>
+<p>Under each need, compare battery options in plain language. Flat plate, tubular and lithium-ion batteries differ in price, lifespan, maintenance and space, and customers value an honest comparison more than a push towards the most expensive option. Use the manufacturer's specifications for every product, not your own estimates.</p>
+
+<h2>Load and backup calculators, explained simply</h2>
+<p>A backup calculator is one of the most useful tools a dealer can add, as long as it's honest about its limits. A simple version works in four steps:</p>
+<ol>
+  <li>The customer ticks the appliances they want to run, with a typical wattage pre-filled that they can correct from the label</li>
+  <li>The calculator adds up the total load</li>
+  <li>The customer chooses how many hours of backup they need</li>
+  <li>It suggests a suitable inverter capacity and battery range, with matching products</li>
+</ol>
+<p>Explain the terms in a line each. Inverter capacity is shown in VA, and the load it can actually run in watts is lower than that figure. Battery capacity is shown in Ah, and a higher Ah generally means longer backup at the same load. Real backup also depends on the inverter's efficiency, the battery's age and condition, and what's switched on.</p>
+<p>Label every result as an estimate and invite people to confirm it. "Send this to us on WhatsApp for a recommendation" works better than hiding the result behind a long form, and confirming the sizing before you sell avoids customers whose backup runs out far sooner than they expected.</p>
+
+<h2>Installation, service and battery care</h2>
+<ul>
+  <li><strong>Installation:</strong> what happens on the day, how long it takes, where the unit and battery should sit (dry, ventilated and out of children's reach) and whether wiring changes are needed</li>
+  <li><strong>Battery care:</strong> for batteries that need topping up, how and when to check water levels with distilled water, plus the signs a battery is weakening</li>
+  <li><strong>Service and AMC plans:</strong> what each visit includes, battery health checks and realistic response times</li>
+  <li><strong>Old battery exchange:</strong> if you offer it, explain how the exchange value is decided instead of promising a fixed amount</li>
+  <li><strong>Disposal:</strong> used batteries must be handled properly and India has rules on battery waste, so explain how you send old batteries for recycling and check current requirements</li>
+  <li><strong>A service request form</strong> asking for the product, purchase date and problem, with a photo upload</li>
+</ul>
+
+<h2>Make warranty information easy to find</h2>
+<p>Warranty questions cause more confusion in this trade than almost anything else. A clear warranty page saves time for you and your customers:</p>
+<ul>
+  <li>Who provides the warranty: the manufacturer, you, or both</li>
+  <li>The warranty period for each product, taken from the manufacturer's terms, including whether part of it is pro-rata</li>
+  <li>How to register a product, if the manufacturer requires it</li>
+  <li>What to keep: the invoice, warranty card and serial number</li>
+  <li>Conditions the manufacturer sets, such as installation or maintenance requirements</li>
+  <li>How claims work in practice: who inspects the battery and roughly how long a replacement takes</li>
+</ul>
+<p>Never promise more than the manufacturer's terms allow. If a customer later finds your website said something different, you lose their trust and may invite a complaint.</p>
+
+<h2>Brands: only show what you're authorised for</h2>
+<p>Brand pages can bring useful search traffic, but be precise about your relationship with each brand:</p>
+<ul>
+  <li>Say "authorised dealer" or "authorised distributor" only if you hold a current authorisation, and be ready to show it</li>
+  <li>Use brand logos only with permission, and follow any dealer guidelines the brand gives you</li>
+  <li>Don't suggest you're an authorised service centre if you're not</li>
+  <li>If you stock a brand without being authorised, say so plainly and explain how warranty claims work for those products</li>
+</ul>
+
+<h2>Local SEO, prices and urgent enquiries</h2>
+<p>Most searches in this trade are local: "inverter battery dealer in {area}", "UPS for computer in {city}", "inverter repair near me". To show up and win the call:</p>
+<ul>
+  <li>Keep your Google Business Profile complete, with accurate hours, photos of your shop and stock, and your service area; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
+  <li>Create pages for the areas you genuinely deliver to and service, with real local details</li>
+  <li>Put click-to-call and WhatsApp buttons on every page, and answer quickly during summer peaks</li>
+  <li>Show price ranges or starting prices where you can, so people can compare without calling first; see <a href="/blog/show-prices-on-website/">should you show prices on your website</a></li>
+  <li>Keep pages light, because many customers are searching on mobile data in the middle of a power cut</li>
+</ul>
+
+<p>Need a website that turns power-cut searches into calls? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> to rank for local searches in the areas you serve.</p>
+`,
+  },
+  {
+    slug: 'image-compression-plugins-compared',
+    seoTitle: 'WordPress Image Compression Plugins Compared',
+    title: 'WordPress Image Compression Plugins Compared: ShortPixel, Imagify, EWWW and Smush',
+    description: 'Compare WordPress image compression: built-in features, ShortPixel, Imagify, EWWW Image Optimizer, Smush, CDN optimisation, WebP, AVIF and what to check.',
+    date: '2026-10-01',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'woocommerce-developer'],
+    body: `
+<p>Every WordPress site needs some form of image compression, but there are several ways to get it: WordPress's own features, a compression plugin, your caching plugin or host, or a CDN that optimises images as it delivers them. They overlap a lot, and running two at once can cause more trouble than it saves. This guide compares the main approaches so you can choose one sensibly. For the basics of resizing, alt text and lazy loading, start with <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
+
+<h2>What WordPress already does</h2>
+<ul>
+  <li><strong>Multiple sizes:</strong> each upload is saved in several sizes (thumbnail, medium, large and any your theme adds), and browsers pick a suitable one through responsive image markup</li>
+  <li><strong>Big image scaling:</strong> very large uploads are scaled down to a sensible maximum, with the original kept on the server</li>
+  <li><strong>Some compression:</strong> the resized copies are saved with moderate compression</li>
+  <li><strong>Modern formats:</strong> recent versions accept WebP uploads, and AVIF where the server supports it</li>
+  <li><strong>Lazy loading</strong> for images further down the page</li>
+</ul>
+<p>What WordPress doesn't do on its own is compress aggressively, convert your existing JPEGs and PNGs to WebP or AVIF, or bulk-optimise an old media library. The WordPress performance team's free Modern Image Formats plugin can create WebP or AVIF versions of new uploads, and the plugins below cover the rest.</p>
+
+<h2>Lossy, lossless and modern formats in plain English</h2>
+<ul>
+  <li><strong>Lossless</strong> removes hidden data without changing how the image looks. Savings are modest.</li>
+  <li><strong>Lossy</strong> discards detail most people won't notice. Savings are much larger, and for photos it's usually the right choice.</li>
+  <li><strong>WebP</strong> is supported by all modern browsers and is usually much smaller than JPEG or PNG at similar quality.</li>
+  <li><strong>AVIF</strong> can be smaller still, though it takes more processing to create, so check how your tool and host handle it.</li>
+</ul>
+<p>Some tools offer a middle setting between lossy and lossless. Whatever you choose, check a few product photos, faces and images containing text at full size before bulk-processing the whole library.</p>
+
+<h2>The main plugins compared</h2>
+<p>These are some of the best-known compression plugins. Features, free limits and pricing change often, so check each one's current plans before you decide.</p>
+<table>
+  <thead>
+    <tr><th>Plugin</th><th>Where compression happens</th><th>Generally known for</th><th>Worth knowing</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ShortPixel</td><td>ShortPixel's cloud servers</td><td>Lossy, glossy and lossless modes, WebP and AVIF creation, bulk optimisation</td><td>Credit-based plans with a small free monthly allowance; generated thumbnails usually use credits too</td></tr>
+    <tr><td>Imagify</td><td>Imagify's cloud servers</td><td>Simple settings, WebP and AVIF conversion, bulk optimisation</td><td>From the team behind WP Rocket; the free plan has a monthly limit</td></tr>
+    <tr><td>EWWW Image Optimizer</td><td>Your own server in the free version, with paid cloud options</td><td>Free local compression without monthly quotas, WebP conversion, and an image CDN in paid plans</td><td>Local compression needs your host to allow the tools it uses, and it uses your server's resources</td></tr>
+    <tr><td>Smush</td><td>WPMU DEV's servers</td><td>An easy free version with basic compression and lazy loading</td><td>Stronger compression, next-gen formats and a CDN have mainly been paid features; check what the free version currently includes</td></tr>
+  </tbody>
+</table>
+<p>Other reputable tools exist. The bigger decisions are where processing happens, how new formats are delivered and what happens if you stop paying.</p>
+
+<h2>CDN and host-level optimisation</h2>
+<ul>
+  <li><strong>Image CDNs</strong> resize, compress and convert images on the fly, serving each visitor a suitable size and format. Options include Jetpack's site accelerator, image features on some Cloudflare plans and dedicated image CDN services. See <a href="/blog/what-is-a-cdn/">what a CDN is</a> for how this works.</li>
+  <li><strong>Caching plugins and hosts:</strong> LiteSpeed Cache, for example, offers image optimisation through its QUIC.cloud service, and some hosts include image tools in their plans.</li>
+</ul>
+<p>The upside is no processing load on your server and no pile of extra files. The downsides: you depend on the service staying active, image URLs may point to another domain, and some setups need careful testing with your cache and page builder. If a CDN already optimises your images, you probably don't need a compression plugin doing the same job.</p>
+
+<h2>How WebP and AVIF actually get served</h2>
+<p>Creating WebP files is only half the job; the site also has to deliver them. Tools use one of these methods:</p>
+<ol>
+  <li><strong>Server rewrite rules:</strong> the server serves the WebP version to browsers that support it. This works well on Apache and LiteSpeed; Nginx needs extra configuration.</li>
+  <li><strong>Picture tags:</strong> the plugin rewrites your HTML so each browser chooses the best format. Reliable, but it can occasionally upset theme or page builder styling.</li>
+  <li><strong>CDN delivery:</strong> the CDN picks the format for each visitor.</li>
+  <li><strong>Replacing originals:</strong> uploads are converted and served as WebP directly. Simple, but keep backups of the originals.</li>
+</ol>
+<p>Afterwards, check it's working. Inspect a few images in your browser's developer tools or run a speed test and confirm WebP or AVIF files are being served. CSS background images and slider images are often missed. The guide to <a href="/blog/website-speed-test-tools-explained/">speed test tools</a> explains which reports to look at.</p>
+
+<h2>What to look for before you choose</h2>
+<ul>
+  <li><strong>Bulk optimisation</strong> for your existing library, not just new uploads</li>
+  <li><strong>Backups of originals</strong>, so you can restore or re-compress later; they do use disk space</li>
+  <li><strong>Control over compression level</strong>, ideally with a before-and-after preview</li>
+  <li><strong>WebP and AVIF support</strong>, with a delivery method that suits your server</li>
+  <li><strong>How thumbnails are counted</strong> on credit-based plans, since one upload can produce many sizes</li>
+  <li><strong>What happens if you cancel:</strong> compressed files usually stay, but CDN-based optimisation stops</li>
+  <li><strong>Server load</strong> if processing happens on shared hosting</li>
+  <li><strong>Compatibility</strong> with your theme, page builder, caching plugin and WooCommerce galleries</li>
+</ul>
+<p>Most important of all, use one image optimisation tool. Two plugins compressing the same files, or a plugin and a CDN both converting formats, means wasted credits, odd results and bugs that are hard to trace.</p>
+
+<h2>Which approach suits your site?</h2>
+<table>
+  <thead>
+    <tr><th>Type of site</th><th>A sensible approach</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Small brochure site with few images</td><td>Resize before uploading, then use a free plugin tier or your caching plugin's image feature</td></tr>
+    <tr><td>Blog or portfolio with a large library</td><td>A plugin with bulk optimisation and WebP, run once over the library and then on new uploads</td></tr>
+    <tr><td>WooCommerce store</td><td>A plugin or image CDN with WebP or AVIF, tested on product galleries and category pages; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a></td></tr>
+    <tr><td>Busy or international site already on a CDN</td><td>Let the CDN handle formats and resizing, and skip a separate compression plugin</td></tr>
+  </tbody>
+</table>
+<p>No plugin fixes images uploaded far larger than needed, or a hero image that's lazy-loaded; those still need fixing at the source.</p>
+
+<p>Not sure which setup your site needs? Image optimisation is usually one of the first steps in my <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> work. Running an online store? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
 ];

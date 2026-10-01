@@ -535,6 +535,10 @@ const LINKS = [
   ['website-for-bakeries-cake-shops', '<h2>Trust and practical details</h2>', '<p>Teaching baking as well as selling it? See <a href="/blog/website-for-cooking-baking-classes/">websites for cooking and baking class studios</a>.</p>\n\n'],
   ['website-for-video-production-companies', '<h2>Getting found</h2>', '<p>Running a sound recording, podcast or dubbing studio instead? See <a href="/blog/website-for-recording-studios/">websites for recording studios</a>.</p>\n\n'],
   ['multi-step-forms-lead-qualification', '<h2>Measure, then adjust</h2>', '<p>To rank incoming enquiries and decide who to call first, see <a href="/blog/lead-scoring-small-business/">simple lead scoring for small businesses</a>.</p>\n\n'],
+  // Agent 51
+  ['website-for-toy-stores', '<h2>Make gifting easy</h2>', '<p>Selling baby care products such as lotions, wipes or feeding items as well? They need even more careful ingredient and age information; see <a href="/blog/website-for-baby-products-brands/">websites for baby care and baby products brands</a>.</p>\n\n'],
+  ['solar-company-website-guide', '<h2>Build trust quickly</h2>', '<p>If your business mainly sells inverters, UPS systems and batteries for power backup, the website needs are a little different; see <a href="/blog/website-for-inverter-battery-dealers/">websites for inverter, UPS and battery dealers</a>.</p>\n\n'],
+  ['image-optimization-wordpress', '<h2>3. Use modern formats</h2>', '<p>Not sure which compression tool to use? See <a href="/blog/image-compression-plugins-compared/">WordPress image compression plugins compared</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
