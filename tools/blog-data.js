@@ -19562,6 +19562,8 @@ Template: astra
   <li>Add a few short videos, set to load only when tapped so the page stays fast</li>
 </ul>
 
+<p>If you also offer bridal mehendi, or work alongside a mehendi artist at the same weddings, see <a href="/blog/website-for-mehendi-artists/">websites for mehendi artists</a>.</p>
+
 <h2>Packages and what to spell out</h2>
 <p>Most booking disputes come from unclear packages. Put the details in writing on the website, and repeat them in your booking confirmation.</p>
 <table>
@@ -26821,6 +26823,8 @@ Template: astra
 </ul>
 <p>Selling beans online widens your reach beyond the neighbourhood, but it brings packaging, shipping and GST questions, so start with a few products and check the tax side with your CA.</p>
 
+<p>Running an ice cream parlour or gelato counter, where flavours change weekly and party orders matter? See <a href="/blog/website-for-ice-cream-parlours/">websites for ice cream parlours and dessert shops</a>.</p>
+
 <h2>Instagram and your website</h2>
 <p>Instagram is where many people discover cafes, so it deserves a place on your website, but not at the cost of speed:</p>
 <ul>
@@ -28847,6 +28851,8 @@ Template: astra
   </tbody>
 </table>
 <p>Describe a typical session, the batch size, what's included and how you track progress. Keep outcomes realistic: promises that a class will "boost IQ" or turn every child into a genius can't be backed up, and they put thoughtful parents off. If you award certificates, make clear they come from your centre unless they genuinely come from an outside body.</p>
+
+<p>Teaching chess, where children are grouped by playing level and tournament experience rather than age alone? See <a href="/blog/website-for-chess-academies/">websites for chess academies and coaches</a>.</p>
 
 <h2>Batches, timings and a camp calendar</h2>
 <ul>
@@ -35010,6 +35016,301 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>When comparing quotes, ask each developer which of these are included and which you'll pay separately. For the build itself and typical yearly costs, see <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a>, or get a rough estimate with the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
 
 <p>Want someone to keep your site updated, backed up and secure, and keep an eye on renewals for you? See <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-ice-cream-parlours',
+    title: 'Websites for Ice Cream Parlours, Gelato and Dessert Shops',
+    description: 'What an ice cream parlour or gelato shop website needs: a flavour menu you can update daily, party and bulk orders, delivery links, FSSAI details and local SEO.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-restaurants', 'landing-page-design'],
+    body: `
+<p>Nobody needs convincing to eat ice cream. What people need is a reason to choose your parlour over the one down the road: the flavours you have today, whether there's something eggless for a fussy cousin, how late you're open, and whether you can send twenty tubs to a birthday party on Saturday. A good website answers all of that on a phone in under a minute. If you also serve coffee and snacks, our guide to <a href="/blog/website-for-cafes-coffee-shops/">websites for cafes and coffee shops</a> covers seating and events; this one focuses on ice cream parlours, gelato counters and dessert shops.</p>
+
+<h2>What customers check before they visit</h2>
+<ul>
+  <li><strong>Is it open now?</strong> Many dessert visits happen after dinner, so late hours and weekend timings matter</li>
+  <li><strong>What flavours are on today?</strong> Especially seasonal favourites such as mango or sitaphal</li>
+  <li><strong>Dietary options:</strong> eggless, vegan, no added sugar or nut-free, shown only where true</li>
+  <li><strong>Price range:</strong> per scoop, cup, cone, sundae or tub</li>
+  <li><strong>Can they order for an event?</strong> Birthdays, weddings and office celebrations</li>
+  <li><strong>How to get there,</strong> or how to get it delivered</li>
+</ul>
+<p>Put hours, location, a "Today's flavours" button and one-tap WhatsApp at the top of the homepage.</p>
+
+<h2>A flavour menu that changes as often as your counter</h2>
+<p>An ice cream menu has a problem most menus don't: it changes every week, sometimes every day. A printed card or a photo of the board goes out of date quickly, so build the menu as a web page you can edit from your phone; see <a href="/blog/restaurant-menu-on-website/">putting your menu online the right way</a>.</p>
+<ul>
+  <li><strong>Core flavours</strong> that are always available, listed permanently</li>
+  <li><strong>Seasonal and limited flavours</strong> in their own section, with a simple "available now" or "sold out" switch staff can change in seconds</li>
+  <li><strong>Formats and sizes:</strong> single and double scoops, cups, cones, sundaes, shakes, family packs and tubs, with prices</li>
+  <li><strong>Dietary markers:</strong> veg, eggless, contains nuts, and any vegan or no-added-sugar options, used only when you are sure they are accurate for every batch</li>
+  <li><strong>Allergen notes:</strong> milk, nuts, and gluten in cones or toppings, plus a line explaining that cross-contact is possible at a shared counter</li>
+</ul>
+<p>A short line on each new flavour ("made with seasonal mango, available while it lasts") gives people a reason to come back and something to share. Point your in-store QR codes to the same page so everyone sees the current list.</p>
+
+<h2>Party, bulk and event orders</h2>
+<p>A single party order can be worth more than a busy evening of walk-ins, and it often starts with a search like "ice cream for birthday party near me". Give bulk orders their own page covering:</p>
+<ul>
+  <li>Tubs and family packs for home parties, and how much notice you need</li>
+  <li>Ice cream cakes and dessert boxes, if you make them</li>
+  <li>An ice cream counter or cart at weddings, birthdays and corporate events, with what's included: staff, cups, toppings and setup</li>
+  <li>How far you can deliver while keeping products frozen, and how customers should store them on arrival</li>
+</ul>
+<p>Use an enquiry form that asks for the date, venue or delivery area, number of guests, preferred flavours and whether they need a counter, so you can quote in one reply. For larger events, take an advance by UPI or a payment link and confirm flavours, quantities, timings and setup in writing.</p>
+
+<h2>Delivery apps vs direct orders</h2>
+<p>Delivery apps bring customers who already use them, but charge commission and keep most of the customer relationship. Direct ordering lets regulars and bulk buyers come to you.</p>
+<table>
+  <thead>
+    <tr><th>Option</th><th>Works well for</th><th>Watch out for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Delivery app links</td><td>Single servings and impulse orders</td><td>Commission, and little customer data</td></tr>
+    <tr><td>WhatsApp ordering</td><td>Regulars, tubs and small party orders</td><td>Someone has to reply quickly</td></tr>
+    <tr><td>Website ordering with online payment</td><td>Tubs, packs, gift boxes and pre-orders</td><td>Delivery radius, packaging and time slots</td></tr>
+    <tr><td>Order ahead, pick up in store</td><td>Party orders collected by the customer</td><td>Clear pickup times, so tubs aren't left waiting</td></tr>
+  </tbody>
+</table>
+<p>Show delivery app buttons if customers expect them, but don't put them ahead of your own options. Ice cream travels badly, so set a realistic delivery radius and use insulated packaging. The ideas in our guide to <a href="/blog/website-for-cloud-kitchens/">direct orders for cloud kitchens</a> apply here too.</p>
+
+<h2>Photos that make people want a scoop</h2>
+<ul>
+  <li>Real photos of your own scoops, sundaes and counter, not stock images or a supplier's pictures</li>
+  <li>Shoot in natural light with everything set up first, before each scoop starts to melt</li>
+  <li>The parlour itself, and events you've served (with the client's permission)</li>
+</ul>
+<p>Compress images and lazy-load galleries so the menu appears first on mobile data, and show a few hand-picked Instagram posts instead of a heavy feed widget.</p>
+
+<h2>Food safety, licences and honest labels</h2>
+<p>People buying for children and events want reassurance. Food businesses in India generally need FSSAI registration or a licence, and many show the number on their premises, packaging and website. Add yours to the footer or the About page, and check the current display requirements for your type of business.</p>
+<ul>
+  <li><strong>Ice cream or frozen dessert:</strong> if any products are made with vegetable fat instead of milk fat, food rules generally require them to be described as frozen desserts rather than ice cream; check the current FSSAI rules and describe each product accurately</li>
+  <li><strong>Claims:</strong> avoid "100% natural", "guilt-free" or "sugar-free" unless the recipe and labelling genuinely support it</li>
+  <li><strong>Hygiene:</strong> a short note on how you store, handle and serve, describing only what you actually do</li>
+</ul>
+
+<h2>Franchise enquiries</h2>
+<p>Growing dessert brands often receive franchise questions mixed in with birthday orders. If you offer franchises, give them a separate page explaining the formats (kiosk, parlour or cart), your support and the application process, without promising returns or payback periods; see <a href="/blog/website-for-franchise-brands/">websites for franchise brands</a>. If you don't franchise, say so politely in an FAQ.</p>
+
+<h2>Local SEO and speed</h2>
+<ul>
+  <li>Complete your Google Business Profile with the right category, late-night hours, a menu link, photos and delivery options</li>
+  <li>Use your area naturally in page titles and text, such as "ice cream parlour in {area}", "gelato in {city}" or "ice cream for parties in {area}"</li>
+  <li>Add structured data using schema.org's IceCreamShop type, with your address, hours and menu link</li>
+  <li>Keep hours, flavours and prices consistent across your website, Google and delivery apps</li>
+  <li>Ask happy customers and party clients for Google reviews, and reply to them</li>
+</ul>
+<p>Most dessert searches happen on a phone, often just after dinner, so a fast, simple site matters more than fancy effects.</p>
+
+<p>Planning a website for your parlour, with a flavour menu you can update yourself and a page for party orders? See <a href="/website-for-restaurants/">websites for restaurants and cafes</a>, or a <a href="/landing-page-design/">landing page</a> for summer and festival campaigns.</p>
+`,
+  },
+  {
+    slug: 'website-for-mehendi-artists',
+    title: 'Websites for Mehendi Artists: Portfolios, Bookings and Travel',
+    description: 'How mehendi artists can win more wedding bookings online: portfolios by style, clear travel and group booking terms, careful henna safety notes and Instagram.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Most mehendi artists get noticed on Instagram, but brides and their families rarely book from a reel alone. Before choosing an artist for the wedding, they compare designs, check whether you'll travel to their venue, ask how many artists you can bring for the guests, and want to know what's in your paste. A website puts all of that in one organised place, shows up when families search on Google, and gives you a booking channel you control. Many of the ideas in our guide to <a href="/blog/website-for-makeup-artists/">websites for makeup artists</a> apply here too; this one focuses on what's specific to mehendi.</p>
+
+<h2>What brides and families look for</h2>
+<ul>
+  <li><strong>Designs in the style they want:</strong> traditional bridal, Arabic, Indo-Arabic, minimal or modern</li>
+  <li><strong>Real brides' hands:</strong> actual weddings, not only practice designs</li>
+  <li><strong>The final colour:</strong> how the stain looks after the paste comes off, not just the fresh paste</li>
+  <li><strong>Availability</strong> on the date of the mehendi function</li>
+  <li><strong>Guest coverage:</strong> whether you have a team for family and guests</li>
+  <li><strong>Travel:</strong> the areas you cover and how travel charges work</li>
+  <li><strong>Safety:</strong> what goes into your paste</li>
+</ul>
+<p>Answer these briefly on the homepage, with a "Check your date" button that's always easy to find.</p>
+
+<h2>A portfolio organised by style</h2>
+<p>Brides usually know the look they want before they contact you, so organise your portfolio the way they search:</p>
+<table>
+  <thead>
+    <tr><th>Style</th><th>What to show</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bridal</td><td>Full hands and feet, close-ups of fine detail, and personal elements such as names, portraits or wedding scenes</td></tr>
+    <tr><td>Arabic and Indo-Arabic</td><td>Bold, flowing designs for brides who want lighter coverage, plus quicker versions for guests</td></tr>
+    <tr><td>Minimal and modern</td><td>Finger designs, mandalas and small motifs for engagements, festivals and guests</td></tr>
+    <tr><td>Guests and children</td><td>Quick designs you can repeat across many guests</td></tr>
+    <tr><td>Festivals</td><td>Karwa Chauth, Teej, Eid and other occasions you serve</td></tr>
+  </tbody>
+</table>
+<p>For each bride, show the fresh design and, if you can, the stain a day or two later. Label real clients separately from practice pieces, keep editing light so the colour looks true, and ask permission before posting. Many of the best photos are taken by the wedding photographer, so ask before using them and credit the photographer.</p>
+
+<h2>Booking for weddings and events</h2>
+<p>Mehendi bookings revolve around one date and one function, usually a day or two before the wedding. Your enquiry form should collect what you need to check availability and quote in a single reply:</p>
+<ul>
+  <li>Function date, start time and how long you'll have</li>
+  <li>City, venue or the area of the home where the function is held</li>
+  <li>Bridal coverage: hands only or up to the elbows, and how far up the legs</li>
+  <li>Roughly how many guests want mehendi</li>
+  <li>Reference designs, with an image upload</li>
+  <li>Phone number, and whether they prefer WhatsApp</li>
+</ul>
+<p>Add a WhatsApp button with a pre-filled message and reply quickly in wedding season, when families message several artists at once. Once a booking is confirmed, take the advance by UPI or a payment link, and send a written confirmation of the date, timings, coverage, team size and balance due.</p>
+
+<h2>Group bookings and guest mehendi</h2>
+<p>Guest mehendi is where many bookings grow, and it's also where confusion starts. Explain clearly:</p>
+<ul>
+  <li>Whether guest mehendi is charged per hand, per person or per artist for a set number of hours</li>
+  <li>How many artists you can bring, and that guest designs are kept simpler so more people can be covered</li>
+  <li>Any minimum for group bookings, especially outside your city</li>
+  <li>Options for corporate events, college fests, festival gatherings and baby showers</li>
+</ul>
+<p>Avoid promising a fixed number of guests per hour, because it depends on the designs people choose. If you list prices, "starting from" figures filter out mismatched enquiries; see <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
+
+<h2>Travel charges, explained clearly</h2>
+<p>Travel is the detail most likely to cause a disagreement later, so explain how it works even if you quote the amount for each booking:</p>
+<table>
+  <thead>
+    <tr><th>Situation</th><th>What to explain</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Within your city</td><td>Which areas are included and which carry a travel charge</td></tr>
+    <tr><td>Nearby towns</td><td>Whether you charge by distance or a fixed amount per trip</td></tr>
+    <tr><td>Outstation and destination weddings</td><td>Who books travel and stay for you and your team, and any minimum booking</td></tr>
+    <tr><td>Early mornings and late nights</td><td>Any extra for very early starts or late finishes, and safe transport home for your team</td></tr>
+  </tbody>
+</table>
+<p>Also state your advance, what happens if the date moves, and your cancellation terms, and repeat them in the booking confirmation.</p>
+
+<h2>Natural henna, allergies and patch tests</h2>
+<p>Families care about what goes on the bride's skin, so write about this carefully:</p>
+<ul>
+  <li>Describe your paste accurately: if you mix your own from henna powder, say what you add, and only call it natural if every ingredient is</li>
+  <li>Explain that so-called "black henna" may contain PPD, a hair-dye chemical linked to serious skin reactions, and say clearly that you don't use it, if that's true</li>
+  <li>Avoid claims like "100% chemical-free" or "safe for everyone"; no paste suits every skin</li>
+  <li>Offer a small patch test well before the wedding for clients with sensitive skin or known allergies, and suggest that anyone with a skin condition checks with their doctor first</li>
+  <li>Be honest about colour: the stain depends on skin, aftercare and how long the paste stays on, so don't promise the darkest shade</li>
+</ul>
+<p>A simple aftercare page you can share on WhatsApp saves a lot of repeated messages.</p>
+
+<h2>Instagram and your website</h2>
+<ul>
+  <li>Point your Instagram bio link to your bridal or booking page, not just the homepage</li>
+  <li>Turn your best reels into portfolio entries with a line about the style, the occasion and the city</li>
+  <li>Show a few hand-picked images rather than a heavy live feed widget, which slows the page</li>
+  <li>Keep enquiries and your client list on your own website too; Instagram accounts can be hacked or restricted</li>
+</ul>
+<p>Our guide to <a href="/blog/instagram-to-website-enquiries/">turning Instagram followers into website enquiries</a> covers this in more detail.</p>
+
+<h2>Local SEO and speed</h2>
+<ul>
+  <li>Create or claim your Google Business Profile; if you work from home, you can generally hide your address and list the areas you serve instead</li>
+  <li>Give bridal, Arabic and guest mehendi their own pages, written for searches like "bridal mehendi artist in Jaipur" or "mehendi artist near me"</li>
+  <li>Ask brides for a Google review once the stain has developed and they've seen their photos</li>
+  <li>Use descriptive alt text, such as "bridal mehendi with figures on both hands", instead of camera file names</li>
+  <li>Compress photos and lazy-load galleries, since most families browse on their phones</li>
+</ul>
+
+<p>Want a website that turns Instagram interest into confirmed wedding bookings? See <a href="/wordpress-website-development/">WordPress website development</a>, or a <a href="/landing-page-design/">landing page</a> for your wedding-season campaigns.</p>
+`,
+  },
+  {
+    slug: 'website-for-chess-academies',
+    seoTitle: 'Websites for Chess Academies and Chess Coaches',
+    title: 'Websites for Chess Academies and Coaches: Classes, Trials and Trust',
+    description: 'What a chess academy website needs: programmes by level, online and in-person classes, coach credentials stated accurately, honest results and easy trials.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-schools-and-coaching', 'landing-page-design'],
+    body: `
+<p>Chess coaching has grown well beyond the school club. Parents look for academies that can take a beginner to their first rated tournament, adult learners want flexible online lessons, and some families abroad look for coaches in India who teach in their time zone. Almost all of them compare coaches before enrolling, and in chess many claims are easy to check. A website that explains your programmes, presents credentials accurately and makes a trial class easy will win the families who take the game seriously. For general enrichment classes, see <a href="/blog/website-for-kids-activity-classes/">websites for kids' activity classes</a>; this guide focuses on chess.</p>
+
+<h2>What parents and students look for</h2>
+<ul>
+  <li>Is there a batch for my child's level, not just their age?</li>
+  <li>Who is the coach, and what have they actually achieved as a player and a teacher?</li>
+  <li>Online or at the centre, and at what times?</li>
+  <li>How is progress tracked, and will my child play tournaments?</li>
+  <li>What does it cost, and can we try a class first?</li>
+</ul>
+<p>Answer these briefly on the homepage, with a "Book a trial class" button near the top.</p>
+
+<h2>Programmes by level</h2>
+<p>Group programmes by what students can already do, not only by age, since a seven-year-old may be well ahead of a twelve-year-old:</p>
+<table>
+  <thead>
+    <tr><th>Level</th><th>Who it suits</th><th>What to describe</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Beginner</td><td>New to chess, or just knows how the pieces move</td><td>Rules, basic checkmates, simple tactics and good habits at the board</td></tr>
+    <tr><td>Intermediate</td><td>Plays regularly, perhaps in school events</td><td>Tactics, opening principles, endgames and recording moves</td></tr>
+    <tr><td>Advanced</td><td>Plays rated tournaments</td><td>Game analysis, opening preparation and tournament planning</td></tr>
+    <tr><td>Adults</td><td>Beginners and returning players</td><td>Flexible timings and a pace that suits working learners</td></tr>
+  </tbody>
+</table>
+<p>Explain how you place new students, such as a short assessment game, and how they move up. Describe batch size, session length, homework and what a typical class looks like. Keep outcomes realistic: no coach can promise a rating gain or a title within a set time.</p>
+
+<h2>Online and in-person classes</h2>
+<p>Many academies run both, and families want to understand the difference before choosing:</p>
+<ul>
+  <li><strong>At the centre:</strong> address, parking, batch timings, and whether parents can wait on site</li>
+  <li><strong>Online:</strong> the platform you use, what device and connection students need, and whether a parent should be nearby for younger children</li>
+  <li><strong>Time zones:</strong> if you teach students abroad, show batch times in their time zone as well as IST</li>
+  <li><strong>Recordings:</strong> whether classes are recorded, who can watch them and how long you keep them</li>
+  <li><strong>Private lessons:</strong> one-to-one coaching for tournament players, online or in person</li>
+</ul>
+<p>Our guide to <a href="/blog/website-for-home-tutors-online-teachers/">websites for home tutors and online teachers</a> covers the online teaching setup in more detail.</p>
+
+<h2>Coach profiles and credentials</h2>
+<p>In chess, ratings and titles can be checked against official lists, so accuracy matters more than polish. For each coach, include:</p>
+<ul>
+  <li>A real photo, years of coaching and the levels they teach</li>
+  <li>A FIDE title or rating only if they genuinely hold it, saying which rating it is (classical, rapid or blitz), and labelling a peak rating as a peak</li>
+  <li>Their FIDE ID, so parents can verify it themselves</li>
+  <li>Any trainer qualifications they genuinely hold, written with the exact title</li>
+  <li>Playing and coaching experience in plain language, without vague phrases like "international-level coach" that can't be checked</li>
+</ul>
+<p>Don't describe a coach as a title-holder before the title has been formally awarded, or show an old rating as if it were current. A coach without a title who explains clearly how they teach is far more convincing than an inflated profile a parent can disprove in a minute.</p>
+
+<h2>Tournament results, stated accurately</h2>
+<p>Results show that your coaching works, but only when they are presented honestly:</p>
+<ul>
+  <li>Name the event, year, category or age group, and the actual placing</li>
+  <li>Only claim students who trained with you for a meaningful period, and don't claim results from before a player joined</li>
+  <li>Keep rated tournaments, school events and your own in-house competitions separate</li>
+  <li>Get parental consent before publishing children's names and photos, and avoid pairing full names with school details</li>
+  <li>Date your achievements page, and avoid round totals like "hundreds of champions" that you can't back up</li>
+</ul>
+<p>A calendar of upcoming tournaments your students are entering also shows the academy is active.</p>
+
+<h2>Trial classes and enrolment</h2>
+<p>A trial class or level assessment is the natural first step, so make it the main button on every page. Keep the form short: parent's name, phone number, student's age, current level or rating if any, online or in person, and preferred times. Then:</p>
+<ol>
+  <li>Confirm the slot on screen and on WhatsApp straight away</li>
+  <li>Send the address or online class link, with a reminder the day before</li>
+  <li>Follow up afterwards with a suggested batch, timings and fees</li>
+</ol>
+<p>If you run ads for a summer chess camp or a new beginners' batch, send them to a focused landing page with dates, levels and a single booking form, rather than the homepage.</p>
+
+<h2>Parent communication</h2>
+<ul>
+  <li>A notices page for holidays, schedule changes and upcoming tournaments</li>
+  <li>Regular progress updates sent privately to each family, such as topics covered and games reviewed</li>
+  <li>Homework puzzles or practice tasks, with a note on how much screen time they involve</li>
+  <li>Fee payment by UPI with receipts, and a clear policy on missed classes and refunds</li>
+  <li>WhatsApp broadcast lists rather than large groups, so parents' numbers aren't shared with everyone</li>
+</ul>
+<p>Children's data needs care, especially photos, names and online class recordings; see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a>, and check current requirements with a lawyer.</p>
+
+<h2>Local SEO and speed</h2>
+<ul>
+  <li>A complete Google Business Profile with real class photos (with consent), timings and reviews</li>
+  <li>Pages written for searches like "chess classes for kids in {area}", "chess coaching in {city}" and "online chess classes"</li>
+  <li>A separate page for each branch, and for school chess programmes if you run them</li>
+  <li>A fast, mobile-friendly site, since most parents browse on their phones between other tasks</li>
+</ul>
+
+<p>Planning a website for your chess academy, or a campaign for a new batch? See <a href="/website-for-schools-and-coaching/">websites for schools and coaching</a> and <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
 ];

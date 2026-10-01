@@ -599,6 +599,10 @@ const LINKS = [
   ['seo-red-flags-scams', '<h2>If you\'ve been burned</h2>', '<p>Comparing prices as well as providers? See <a href="/blog/seo-pricing-models-india/">how SEO services are priced in India</a> and what each pricing model should include.</p>\n\n'],
   ['website-design-contract-checklist', '<h2>6. Ownership</h2>', '<p>For more on advances, milestone payments, scope changes and refunds, see <a href="/blog/website-payment-terms-milestones/">fair payment terms for a website project</a>.</p>\n\n'],
   ['domain-hosting-renewal-checklist', '<h2>The checklist</h2>', '<p>Renewals are only part of the picture; see <a href="/blog/hidden-website-costs/">the hidden costs of running a website</a>, from licences and email to maintenance and marketing.</p>\n\n'],
+  // Agent 67
+  ['website-for-cafes-coffee-shops', '<h2>Instagram and your website</h2>', '<p>Running an ice cream parlour or gelato counter, where flavours change weekly and party orders matter? See <a href="/blog/website-for-ice-cream-parlours/">websites for ice cream parlours and dessert shops</a>.</p>\n\n'],
+  ['website-for-makeup-artists', '<h2>Packages and what to spell out</h2>', '<p>If you also offer bridal mehendi, or work alongside a mehendi artist at the same weddings, see <a href="/blog/website-for-mehendi-artists/">websites for mehendi artists</a>.</p>\n\n'],
+  ['website-for-kids-activity-classes', '<h2>Batches, timings and a camp calendar</h2>', '<p>Teaching chess, where children are grouped by playing level and tournament experience rather than age alone? See <a href="/blog/website-for-chess-academies/">websites for chess academies and coaches</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
