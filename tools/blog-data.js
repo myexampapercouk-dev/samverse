@@ -6663,6 +6663,8 @@ module.exports = [
   <li>Update plugins, themes and WordPress</li>
 </ol>
 
+<p>To go through every remaining account properly, follow this <a href="/blog/wordpress-user-accounts-audit/">WordPress user accounts audit</a>.</p>
+
 <h2>Step 6: Consider moving</h2>
 <p>If the site is on the developer's hosting, migrating it to hosting in your own name is often the cleanest fix; see <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
@@ -6710,6 +6712,8 @@ module.exports = [
 
 <h2>6. Anti-spam services and filters</h2>
 <p>Spam-filtering plugins and services analyse submissions and flag likely spam. Keep a spam folder to review occasionally, so real enquiries aren't lost.</p>
+
+<p>Getting fake user accounts rather than fake messages? See <a href="/blog/stop-spam-user-registrations-wordpress/">how to stop spam user registrations</a>.</p>
 
 <h2>What to avoid</h2>
 <ul>
@@ -14182,6 +14186,8 @@ module.exports = [
 
 <h2>6. Disable XML-RPC if you don't need it</h2>
 <p>XML-RPC is an older remote access feature that attackers use for password-guessing. If you don't use apps or services that need it, disable it with a security plugin or server rule.</p>
+
+<p>Not sure whether anything on your site still needs it? See <a href="/blog/wordpress-xmlrpc-explained/">WordPress XML-RPC explained</a> for how to check and how to disable it safely.</p>
 
 <h2>7. Add a firewall</h2>
 <p>A web application firewall (from your host, Cloudflare or a security plugin) blocks known malicious traffic before it reaches your login page.</p>
@@ -35311,6 +35317,246 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ul>
 
 <p>Planning a website for your chess academy, or a campaign for a new batch? See <a href="/website-for-schools-and-coaching/">websites for schools and coaching</a> and <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-xmlrpc-explained',
+    title: 'WordPress XML-RPC Explained: Should You Disable xmlrpc.php?',
+    description: 'What xmlrpc.php does, what still uses it (Jetpack, some apps), how attackers abuse it, and safe ways to disable or restrict XML-RPC without breaking your site.',
+    date: '2026-10-01',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance'],
+    body: `
+<p>If you've looked at your security plugin's reports or your hosting logs, you may have noticed a file called xmlrpc.php being hit again and again. It's a part of WordPress that most business sites no longer use, yet it's switched on by default and bots love it. Here's what it is, how to tell whether anything on your site still relies on it, and how to switch it off or restrict it safely.</p>
+
+<h2>What xmlrpc.php actually is</h2>
+<p>XML-RPC is an older way for other programs to talk to your WordPress site remotely: publishing posts, uploading images, reading comments and so on, by sending XML messages to a single file, xmlrpc.php, in your site's main folder. It dates from the days when people wrote blog posts in desktop apps and sent them to their site, and it has been enabled by default in WordPress for many years.</p>
+<p>Today, most of that work is done by the WordPress REST API, a newer system used by the block editor and most modern plugins and apps. XML-RPC is still included for backwards compatibility, which is why it sits on almost every WordPress site, used or not.</p>
+
+<h2>What still uses it</h2>
+<ul>
+  <li><strong>Jetpack:</strong> the Jetpack plugin has historically relied on XML-RPC to connect your site to WordPress.com for features such as stats, backups and downtime monitoring. Blocking xmlrpc.php completely can break that connection.</li>
+  <li><strong>Some mobile and desktop apps:</strong> older versions of the WordPress mobile app, and some third-party blogging or publishing tools, use XML-RPC to log in and publish.</li>
+  <li><strong>Pingbacks:</strong> the automatic notifications one WordPress blog sends another when it links to it travel over XML-RPC.</li>
+  <li><strong>Older integrations:</strong> a few auto-posting and remote management services still use it.</li>
+</ul>
+<p>The block editor, WooCommerce, contact forms and most modern plugins don't need XML-RPC at all.</p>
+
+<h2>Why attackers like it</h2>
+<h3>Password guessing at scale</h3>
+<p>XML-RPC accepts a username and password with each request, so bots treat it as a second login page. A method called system.multicall lets one request carry many calls at once, which attackers have used to try many passwords in a single request. Recent WordPress versions have reduced how far a single request can be abused this way, but xmlrpc.php remains a favourite target, and every request still loads WordPress and uses server resources. On budget shared hosting, a steady flood of these requests can slow the whole site.</p>
+<p>There's another catch: some login protection, such as attempt limits, CAPTCHAs or two-factor authentication, only covers the normal wp-login.php page. Unless your security setup also covers XML-RPC, it can be a side door around those defences. The steps in <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a> work best when this side door is closed too.</p>
+<h3>Pingback abuse</h3>
+<p>The pingback feature makes your server send a request to whatever address it's asked to check. Attackers have abused this to get large numbers of WordPress sites to flood a victim with traffic, and to reveal a site's real server address when it's hidden behind a firewall or CDN. Your site ends up as a tool in someone else's attack, on your server's resources.</p>
+
+<h2>How to check whether you need it</h2>
+<ol>
+  <li><strong>Check your plugins:</strong> is Jetpack installed and connected? Does any other plugin describe a connection to an external service or app?</li>
+  <li><strong>Ask how content gets published:</strong> does anyone post from a mobile app, a desktop editor or an automation tool rather than the dashboard?</li>
+  <li><strong>List external services</strong> that publish to, back up or monitor your site, and check their documentation for XML-RPC requirements.</li>
+  <li><strong>Look at your access logs</strong> in your hosting control panel. Large numbers of POST requests to xmlrpc.php from random IP addresses are almost certainly bots; regular requests from a known service suggest something genuine is using it.</li>
+</ol>
+<p>For a typical brochure site, clinic site or WooCommerce store without Jetpack, the answer is usually that nothing needs it.</p>
+
+<h2>Safe ways to disable or restrict XML-RPC</h2>
+<h3>Option 1: a security plugin setting</h3>
+<p>Most well-known WordPress security plugins include an option to disable XML-RPC entirely, or to switch off just its login methods or pingbacks. This is the easiest route for most site owners, and it's easy to reverse. Option names vary, so check your plugin's documentation.</p>
+<h3>Option 2: a server or firewall rule</h3>
+<p>Blocking xmlrpc.php before WordPress loads saves the most server resources, because bot requests are refused without running any PHP. On Apache or LiteSpeed hosting, a developer can add a rule like this to the .htaccess file:</p>
+<pre><code>&lt;Files xmlrpc.php&gt;
+  Require all denied
+&lt;/Files&gt;</code></pre>
+<p>Nginx servers use an equivalent location rule, and cloud firewalls such as Cloudflare let you block or challenge requests to that path. Some hosts will add a block for you on request. A mistake in .htaccess can take the whole site offline, so take a backup first or ask your developer. See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> for how these layers fit together.</p>
+<h3>Option 3: restrict rather than block</h3>
+<p>If you use Jetpack or an app that needs XML-RPC, it doesn't have to be all or nothing. You can disable pingbacks only, rate-limit xmlrpc.php at the firewall, or allow only the services you rely on. Check Jetpack's current documentation before restricting anything, since its requirements can change.</p>
+
+<h2>Test afterwards</h2>
+<p>Whichever method you choose, check that nothing has quietly broken:</p>
+<ul>
+  <li>Open the website and the dashboard, and save a test draft</li>
+  <li>Check Jetpack's connection status, if you use it</li>
+  <li>Try any app or tool that publishes to your site</li>
+  <li>Confirm that backup, monitoring and auto-posting services still report normally over the next few days</li>
+  <li>Watch your security logs: requests to xmlrpc.php should now be refused before they reach WordPress</li>
+</ul>
+<p>If something stops working, undo the change and switch to restricting instead of blocking.</p>
+
+<h2>Don't confuse it with the REST API</h2>
+<p>Some guides suggest disabling the REST API at the same time. Be careful: the block editor, WooCommerce and many plugins depend on the REST API, and turning it off completely can break your dashboard and checkout. Restricting the REST API is a separate, more delicate job.</p>
+
+<h2>One small step in a bigger picture</h2>
+<p>Disabling XML-RPC reduces bot noise and closes a side door, but it won't protect a site with outdated plugins or weak passwords. Treat it as one item alongside updates, two-factor authentication, backups and a firewall. And if bots hammering xmlrpc.php make you suspect someone has already got in, work through the <a href="/blog/find-remove-wordpress-backdoors/">guide to finding and removing backdoors</a>.</p>
+
+<p>Want this handled for you? Security hardening, including XML-RPC, is part of my <a href="/wordpress-malware-removal/">WordPress malware removal and security</a> service, and ongoing checks are included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-user-accounts-audit',
+    seoTitle: 'How to Audit WordPress User Accounts (Step by Step)',
+    title: 'How to Audit Your WordPress User Accounts: Old Admins, Roles and Shared Logins',
+    description: 'Audit WordPress user accounts step by step: remove ex-staff and old developer admins, use least-privilege roles, end shared logins and spot unknown admins.',
+    date: '2026-10-01',
+    category: 'Security',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal'],
+    body: `
+<p>Most WordPress sites collect user accounts the way a drawer collects old keys: a developer from the launch three years ago, a marketing intern who left, an agency you stopped working with, a shared "office" login half the team knows. Each one is a way into your website, and often nobody is checking them. A user accounts audit takes under an hour on most business sites, and it closes some of the easiest doors attackers use.</p>
+<p>If you're not sure what each role can do, read <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> first. This guide is about the clean-up itself.</p>
+
+<h2>Step 1: Get a full list of accounts</h2>
+<p>Go to <strong>Users</strong> in your dashboard. The links above the list show how many accounts each role has, such as Administrator (4) or Editor (2). Click through each role and note:</p>
+<ul>
+  <li>Who the account belongs to, and whether that person still works with you</li>
+  <li>The email address on it: a personal Gmail, an old agency address, or one you don't recognise at all?</li>
+  <li>The role, and whether it still matches what they do</li>
+</ul>
+<p>WordPress doesn't show when each user last logged in by default. An activity log or security plugin can record this, which makes future audits much easier; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs</a>.</p>
+<p>One quick check: if the number next to Administrator doesn't match the administrators you can actually see in the list, something may be hiding an account. Ask a developer to check the database directly.</p>
+
+<h2>Step 2: Remove people who no longer need access</h2>
+<p>Accounts that commonly need removing:</p>
+<ul>
+  <li><strong>Former staff</strong>, including people who left on good terms</li>
+  <li><strong>Previous developers and agencies</strong> whose project or contract has ended</li>
+  <li><strong>Freelancers</strong> given access for a one-off job, such as a writer or SEO consultant</li>
+  <li><strong>Test and demo accounts</strong> created during the build</li>
+  <li><strong>Temporary support logins</strong> that some theme or plugin vendors create for troubleshooting</li>
+  <li><strong>An old "admin" username</strong>, once you've created a properly named replacement</li>
+</ul>
+<p>If you're unsure whether someone still needs access, change their role to Subscriber and reset their password instead of deleting straight away. If nobody asks about it within a few weeks, delete the account.</p>
+
+<h2>Step 3: Apply least privilege</h2>
+<p>For everyone who stays, give the lowest role that still lets them do their job.</p>
+<table>
+  <thead><tr><th>Person</th><th>Usually needs</th></tr></thead>
+  <tbody>
+    <tr><td>Business owner</td><td>Administrator, on their own personal account</td></tr>
+    <tr><td>Current developer or maintenance provider</td><td>Administrator on a separate named account, removed when the work ends</td></tr>
+    <tr><td>Marketing manager editing pages and posts</td><td>Editor</td></tr>
+    <tr><td>Staff writer</td><td>Author or Contributor</td></tr>
+    <tr><td>Staff handling WooCommerce orders and products</td><td>Shop Manager</td></tr>
+    <tr><td>Customers and members</td><td>Customer or Subscriber</td></tr>
+  </tbody>
+</table>
+<p>For most small businesses, the owner plus one trusted developer is enough administrators. If you have five, ask why each one needs full control.</p>
+
+<h2>Step 4: Stop shared logins</h2>
+<p>A single "office" or "website" login used by several people is convenient, but it causes real problems:</p>
+<ul>
+  <li>You can't remove one person's access without changing the password for everyone</li>
+  <li>Activity logs only say "office" did something, never who</li>
+  <li>The password ends up in WhatsApp chats, notebooks and former employees' phones</li>
+  <li>Two-factor authentication becomes awkward, so it often gets switched off</li>
+</ul>
+<p>Create a separate account for each person, with their own work email, a strong password and 2FA. Then delete the shared account, moving its content to a real person as described below.</p>
+
+<h2>Step 5: Delete users without losing content</h2>
+<p>When you delete a user who has written posts or pages, WordPress asks what to do with their content: delete it all, or attribute it to another user. Almost always choose <strong>Attribute all content to</strong> and pick a current account. Otherwise pages and blog posts can disappear along with the user.</p>
+<ul>
+  <li><strong>Take a backup first</strong>, so a wrong click can be undone</li>
+  <li><strong>Delete staff and admin accounts one at a time</strong>, reading the content question carefully each time</li>
+  <li><strong>Be careful with WooCommerce customers.</strong> Past orders are business records, so don't bulk-delete customer accounts without checking how your store handles orders from deleted users</li>
+  <li><strong>Think about bylines:</strong> if a former writer's name should stay on their articles, keep their account as a Subscriber with an email address you control and a new password, rather than deleting it</li>
+</ul>
+
+<h2>Step 6: Treat unknown admins as a warning sign</h2>
+<p>An administrator account nobody in your business created, especially one with an odd username or an email on an unfamiliar domain, is one of the classic <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a>. Attackers create these accounts so they can get back in later. If you find one:</p>
+<ol>
+  <li>Don't just delete it and move on. Note its username, email and registration date first; the date can show roughly when the site was compromised</li>
+  <li>Check your activity log, if you have one, for what the account did</li>
+  <li>Change the passwords of every remaining administrator, plus hosting and SFTP</li>
+  <li>Look for the hidden code that often comes with these accounts; see <a href="/blog/find-remove-wordpress-backdoors/">how to find and remove backdoors</a></li>
+</ol>
+<p>Deleting the account without closing the way in often means it reappears days later.</p>
+
+<h2>Beyond the Users screen</h2>
+<ul>
+  <li><strong>Application passwords:</strong> on each administrator's profile page, revoke any application passwords nobody recognises. They let apps and services access the site without the main password.</li>
+  <li><strong>Active sessions:</strong> after removing someone's access or spotting something odd, use the option on your profile to log out of all other sessions.</li>
+  <li><strong>Other accounts:</strong> hosting, SFTP, Google Search Console and Analytics users also need removing when people leave.</li>
+</ul>
+
+<h2>Make it a routine</h2>
+<ul>
+  <li><strong>Whenever someone leaves or a project ends:</strong> remove or downgrade their account the same day</li>
+  <li><strong>Every quarter:</strong> repeat Steps 1 to 4 and compare with your last list</li>
+  <li><strong>Always on:</strong> alerts for new administrator accounts, so you don't wait for the next audit to spot one</li>
+  <li><strong>Once a year:</strong> review application passwords, hosting users and other connected accounts too</li>
+</ul>
+<p>Keep a short record of who has access and why. It makes each audit faster and helps when you hand the site to a new developer.</p>
+
+<p>Want these checks done every month? User reviews and security alerts are part of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Found an account you can't explain? Get help with <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'stop-spam-user-registrations-wordpress',
+    seoTitle: 'Stop Spam User Registrations in WordPress & WooCommerce',
+    title: 'How to Stop Spam User Registrations in WordPress and WooCommerce',
+    description: 'Stop fake sign-ups on WordPress and WooCommerce: when to turn off registration, CAPTCHA and honeypots, email checks, and how to clean up spam accounts safely.',
+    date: '2026-10-01',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'woocommerce-developer'],
+    body: `
+<p>You open the Users screen and find hundreds of accounts with random names and strange email addresses, all created in the last few weeks. Fake sign-ups are one of the most common nuisances on WordPress and WooCommerce sites. Usually they're just bots, but they clutter your database, can trigger emails from your site to fake addresses, and occasionally point to a more serious problem. Here's how to stop them and clean up safely.</p>
+
+<h2>Why bots register on your site</h2>
+<ul>
+  <li>To post spam comments, reviews or forum posts that need a logged-in account</li>
+  <li>To create profile pages with links, on sites running membership, forum or directory plugins</li>
+  <li>To probe for vulnerable plugins that might give a new account more access than it should have</li>
+  <li>Simply because an open registration form exists, and spam bots fill in every form they find</li>
+</ul>
+<p>Most of these accounts never do anything. But they show that bots can reach a form you may not even know is open.</p>
+
+<h2>Does "Anyone can register" need to be on?</h2>
+<p>Go to <strong>Settings &gt; General</strong> and find <strong>Membership</strong>. If "Anyone can register" is ticked, anyone can create an account through the standard WordPress registration page.</p>
+<p>Most business websites, such as service businesses, clinics, B2B companies and brochure sites, don't need this. Staff accounts are created by an administrator, so you can untick it. Leave it on only if visitors genuinely need accounts, for example on a membership, course or community site.</p>
+<p>While you're there, check <strong>New User Default Role</strong>. It should be Subscriber (or Customer on a store). If it shows Administrator, Editor or another role with editing rights and nobody on your team set it, treat that as a likely sign of a hack, not a setting to quietly fix.</p>
+<h3>WooCommerce account settings</h3>
+<p>WooCommerce has its own account options under <strong>WooCommerce &gt; Settings &gt; Accounts &amp; Privacy</strong>, separate from the WordPress setting. You can choose whether customers can create an account on the My Account page, during checkout, or both, and whether guest checkout is allowed. Much store registration spam comes through the My Account form, so allowing accounts only at checkout, with guest checkout enabled, can cut fake sign-ups considerably without affecting real customers. Option names change between versions, so check what yours shows.</p>
+
+<h2>Add bot protection to every registration form</h2>
+<p>If registration has to stay open, protect it the same way you would a contact form. The methods in <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a> apply here too:</p>
+<ul>
+  <li><strong>Honeypot fields:</strong> hidden fields that bots fill in and people never see. They're invisible to customers and stop many simple bots.</li>
+  <li><strong>Invisible or low-friction challenges</strong> such as Cloudflare Turnstile, Google reCAPTCHA or hCaptcha, added through a plugin that supports both the WordPress and WooCommerce registration forms</li>
+  <li><strong>Rate limiting:</strong> a firewall or security plugin that limits how many registrations can come from one IP address in a short time</li>
+</ul>
+<p>Make sure the protection covers every registration form on the site. It's common to protect the standard WordPress registration page but miss the WooCommerce My Account form, or a membership plugin's own sign-up page. Avoid hard puzzles that frustrate real customers, especially on mobile.</p>
+
+<h2>Verify email addresses</h2>
+<p>By default, WordPress creates the account straight away and emails a link to set a password. A bot using a fake address never sets one, but the account still sits in your database. Email verification goes further: the account isn't activated until the person clicks a confirmation link.</p>
+<p>Many membership, registration and security plugins offer email confirmation or manual approval of new accounts. Manual approval suits small communities and B2B dealer portals where you know who should be signing up. On a busy shop, extra verification steps add friction, so weigh them against how much spam you actually get.</p>
+
+<h2>Block disposable and suspicious email domains</h2>
+<p>Many fake sign-ups use throwaway email services that create temporary inboxes. Some plugins can block registrations from known disposable domains, or from domains and patterns you add yourself.</p>
+<ul>
+  <li>Disposable domain lists go out of date, so choose an actively maintained plugin</li>
+  <li>Don't block big free providers like Gmail; many genuine Indian customers and small businesses use them</li>
+  <li>Review what gets blocked now and then, so real customers aren't turned away silently</li>
+</ul>
+
+<h2>Clean up existing spam accounts safely</h2>
+<ol>
+  <li><strong>Take a full backup</strong> of the database before deleting anything</li>
+  <li><strong>Close the door first:</strong> switch off or protect registration, or new spam keeps arriving while you clean</li>
+  <li><strong>Identify the spam:</strong> Subscriber or Customer role, no orders, no comments, random-looking usernames, unusual email domains and sign-ups in short bursts</li>
+  <li><strong>Don't delete accounts with orders</strong> without checking; real customers sometimes have odd-looking emails, and their order history is a business record</li>
+  <li><strong>Delete in small batches</strong> from the Users screen, or have a developer use WP-CLI for thousands of accounts, tested on a staging copy first</li>
+  <li><strong>Check for higher roles:</strong> a "spam" account with Editor, Shop Manager or Administrator rights is not ordinary spam</li>
+</ol>
+
+<h2>When spam registrations signal a bigger problem</h2>
+<p>Usually fake sign-ups are just noise. Look more closely if you see any of these:</p>
+<ul>
+  <li>New accounts with Administrator, Editor or Shop Manager roles that nobody created</li>
+  <li>The default role or "Anyone can register" changed without anyone on your team doing it</li>
+  <li>Accounts still appearing after you've switched registration off everywhere, which can point to a vulnerable plugin or another way in</li>
+  <li>Your host warning about outgoing email, or people receiving odd emails from your site; see <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam emails</a></li>
+  <li>Strange pages, redirects or unfamiliar files appearing around the same time</li>
+</ul>
+<p>Any of these deserves a proper security check, not just a bulk delete. If you run a store, the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a> is a good place to start.</p>
+
+<p>Need fake sign-ups stopped without blocking real customers? I set this up as part of <a href="/woocommerce-developer/">WooCommerce development</a>, and if something looks more serious, I can investigate through <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
 ];

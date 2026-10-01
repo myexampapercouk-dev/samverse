@@ -3513,5 +3513,26 @@
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
     <description>What a chess academy website needs: programmes by level, online and in-person classes, coach credentials stated accurately, honest results and easy trials.</description>
   </item>
+  <item>
+    <title>WordPress XML-RPC Explained: Should You Disable xmlrpc.php?</title>
+    <link>https://samverse.space/blog/wordpress-xmlrpc-explained/</link>
+    <guid>https://samverse.space/blog/wordpress-xmlrpc-explained/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>What xmlrpc.php does, what still uses it (Jetpack, some apps), how attackers abuse it, and safe ways to disable or restrict XML-RPC without breaking your site.</description>
+  </item>
+  <item>
+    <title>How to Audit Your WordPress User Accounts: Old Admins, Roles and Shared Logins</title>
+    <link>https://samverse.space/blog/wordpress-user-accounts-audit/</link>
+    <guid>https://samverse.space/blog/wordpress-user-accounts-audit/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Audit WordPress user accounts step by step: remove ex-staff and old developer admins, use least-privilege roles, end shared logins and spot unknown admins.</description>
+  </item>
+  <item>
+    <title>How to Stop Spam User Registrations in WordPress and WooCommerce</title>
+    <link>https://samverse.space/blog/stop-spam-user-registrations-wordpress/</link>
+    <guid>https://samverse.space/blog/stop-spam-user-registrations-wordpress/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Stop fake sign-ups on WordPress and WooCommerce: when to turn off registration, CAPTCHA and honeypots, email checks, and how to clean up spam accounts safely.</description>
+  </item>
 </channel>
 </rss>

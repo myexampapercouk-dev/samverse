@@ -3205,6 +3205,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://samverse.space/blog/wordpress-xmlrpc-explained/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/wordpress-user-accounts-audit/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/stop-spam-user-registrations-wordpress/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://samverse.space/work/</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>

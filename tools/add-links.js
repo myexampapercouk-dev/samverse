@@ -603,6 +603,10 @@ const LINKS = [
   ['website-for-cafes-coffee-shops', '<h2>Instagram and your website</h2>', '<p>Running an ice cream parlour or gelato counter, where flavours change weekly and party orders matter? See <a href="/blog/website-for-ice-cream-parlours/">websites for ice cream parlours and dessert shops</a>.</p>\n\n'],
   ['website-for-makeup-artists', '<h2>Packages and what to spell out</h2>', '<p>If you also offer bridal mehendi, or work alongside a mehendi artist at the same weddings, see <a href="/blog/website-for-mehendi-artists/">websites for mehendi artists</a>.</p>\n\n'],
   ['website-for-kids-activity-classes', '<h2>Batches, timings and a camp calendar</h2>', '<p>Teaching chess, where children are grouped by playing level and tournament experience rather than age alone? See <a href="/blog/website-for-chess-academies/">websites for chess academies and coaches</a>.</p>\n\n'],
+  // Agent 68
+  ['secure-wordpress-login', '<h2>7. Add a firewall</h2>', '<p>Not sure whether anything on your site still needs it? See <a href="/blog/wordpress-xmlrpc-explained/">WordPress XML-RPC explained</a> for how to check and how to disable it safely.</p>\n\n'],
+  ['regain-website-access-old-developer', '<h2>Step 6: Consider moving</h2>', '<p>To go through every remaining account properly, follow this <a href="/blog/wordpress-user-accounts-audit/">WordPress user accounts audit</a>.</p>\n\n'],
+  ['stop-contact-form-spam', '<h2>What to avoid</h2>', '<p>Getting fake user accounts rather than fake messages? See <a href="/blog/stop-spam-user-registrations-wordpress/">how to stop spam user registrations</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
