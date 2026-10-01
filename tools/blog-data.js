@@ -6865,6 +6865,8 @@ module.exports = [
 </ul>
 <p>When in doubt, have a compliance professional review the site.</p>
 
+<p>Loan agents and DSAs need similar care with lender names, claims and wording; see <a href="/blog/website-for-loan-agents-dsa/">websites for loan agents and DSAs</a>.</p>
+
 <h2>Educational content builds trust</h2>
 <p>Plain-English guides on topics like "how much term insurance do I need?" or "health insurance for parents" attract searchers and show expertise. Keep them general and accurate, and update them when rules change.</p>
 
@@ -10325,6 +10327,8 @@ module.exports = [
   <li>Subsidies or incentives, with links to official sources, as these change</li>
 </ul>
 <p>Honest explainers build trust and attract searches.</p>
+
+<p>If you sell petrol motorcycles and scooters alongside electric models, see <a href="/blog/website-for-two-wheeler-dealers/">websites for two-wheeler dealers</a>.</p>
 
 <h2>Showroom and service</h2>
 <ul>
@@ -25594,6 +25598,8 @@ Template: astra
 </ul>
 <p>Honest aftermarket options at fair prices earn more repeat business than vague "original quality" claims.</p>
 
+<p>Garages face the same question when they explain parts choices to car owners; see <a href="/blog/website-for-car-service-garages/">websites for car service centres and independent garages</a>.</p>
+
 <h2>Trade accounts for garages and mechanics</h2>
 <p>Garages can be your most valuable customers because they order often. Give them their own route:</p>
 <ul>
@@ -33399,6 +33405,261 @@ Template: astra
 </ul>
 
 <p>Ready to sell plants online? See <a href="/woocommerce-developer/">WooCommerce development</a> for a nursery store with local delivery, or <a href="/wordpress-website-development/">WordPress website development</a> for a catalogue and enquiry site.</p>
+`,
+  },
+  {
+    slug: 'website-for-car-service-garages',
+    seoTitle: 'Websites for Car Service Centres and Independent Garages',
+    title: 'Websites for Car Service Centres and Garages: Bookings, Estimates and Trust',
+    description: 'What a car service centre or garage website needs: makes covered, slot booking, pickup and drop, estimates before extra work and honest parts advice.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Most car owners have one worry when they hand over their keys to a garage: "Will I get a surprise bill?" An independent service centre that answers that worry before the customer even calls has a real advantage over both the authorised workshop and the unknown garage down the road. A good website does exactly that. It shows which cars you work on, makes booking a slot easy, explains how you handle extra work, and is honest about parts. This guide covers what to include.</p>
+
+<h2>What car owners want to know before they book</h2>
+<table>
+  <thead>
+    <tr><th>Question</th><th>What the website should show</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Do you work on my car?</td><td>Makes, fuel types and kinds of vehicle you service</td></tr>
+    <tr><td>What will it cost?</td><td>What each service includes, and how estimates work</td></tr>
+    <tr><td>How long will it take?</td><td>Typical turnaround for common jobs</td></tr>
+    <tr><td>Do I have to come in?</td><td>Pickup and drop areas and how it works</td></tr>
+    <tr><td>Can I trust you?</td><td>Real photos, your team, reviews and a clear approval process</td></tr>
+  </tbody>
+</table>
+<p>If a visitor can answer all five on their phone in under a minute, you'll get more bookings and fewer price-shopping calls.</p>
+
+<h2>Service pages and makes covered</h2>
+<p>Give each main service its own page rather than one long list: periodic servicing, general repairs, car AC repair, denting and painting, wheel alignment and balancing, batteries and tyres, clutch and brakes, and diagnostics. Each page should explain what's included, what's checked, typical turnaround and what affects the cost. If you help customers with insurance claims, say exactly what you do, and only mention cashless tie-ups with insurers you actually have.</p>
+<p>Then be clear about the cars you work on. List the makes and fuel types you service regularly, and say so if you specialise, for example in European cars, CNG cars or hybrids. Two cautions:</p>
+<ul>
+  <li><strong>Don't imply you're authorised.</strong> "We service Hyundai and Maruti Suzuki cars" is fine; using a carmaker's logo or calling yourself a "service centre" for a brand suggests an official link you don't have.</li>
+  <li><strong>Don't make warranty promises.</strong> Owners often ask whether servicing outside the dealer network affects their warranty. That depends on the manufacturer's terms, so suggest they check their warranty booklet rather than giving a blanket answer.</li>
+</ul>
+
+<h2>Make booking a service slot easy</h2>
+<p>A short booking form beats a "call us" button for customers who are at work when they think about their car. Ask only for:</p>
+<ol>
+  <li>Car make, model, year and fuel type</li>
+  <li>The service needed, with a "Not sure, please inspect" option</li>
+  <li>Preferred date and drop-off time</li>
+  <li>Whether they need pickup and drop</li>
+  <li>Name and mobile number</li>
+</ol>
+<p>Limit slots to what your bays and team can really handle each day, and confirm every booking on WhatsApp or by call. Automatic reminders the day before reduce no-shows; see <a href="/blog/online-appointment-booking-website/">online appointment booking on your website</a> for setup options.</p>
+
+<h2>Pickup and drop, explained clearly</h2>
+<p>Pickup and drop is a big reason people choose a garage, but it also asks them to hand their car to a stranger. Reassure them on a dedicated section or page:</p>
+<ul>
+  <li>The areas or pin codes you cover, and any charge stated upfront</li>
+  <li>Who collects the car, and that your drivers are your own staff or verified</li>
+  <li>A condition check at pickup, with photos, fuel level and odometer reading shared on WhatsApp</li>
+  <li>Updates during the day, and the expected return time</li>
+</ul>
+
+<h2>Estimates and approval before extra work</h2>
+<p>This is the section that wins trust. Explain your process in plain steps, and then follow it every time:</p>
+<ol>
+  <li><strong>Inspection:</strong> the car is checked before work starts</li>
+  <li><strong>Written estimate:</strong> parts and labour listed separately, sent on WhatsApp or email</li>
+  <li><strong>Evidence:</strong> photos or short videos of worn parts when something extra is needed</li>
+  <li><strong>Approval:</strong> no additional work without the customer's go-ahead</li>
+  <li><strong>Final invoice:</strong> matches what was approved, with old parts shown or returned on request</li>
+</ol>
+<p>Put a short version of this on the homepage and every service page. "We'll never do extra work without asking you first" is a stronger promise than any discount, as long as you keep it.</p>
+
+<h2>Genuine and aftermarket parts, explained honestly</h2>
+<p>Customers hear "original" used loosely, so a simple explainer page helps:</p>
+<ul>
+  <li><strong>Genuine parts</strong> are supplied through the carmaker's own parts channel</li>
+  <li><strong>OEM-brand parts</strong> are made by companies that supply carmakers, sold under their own brand</li>
+  <li><strong>Aftermarket parts</strong> come from other makers, and quality varies by brand</li>
+</ul>
+<p>Offer a choice where it makes sense, show both options on the estimate, and state the warranty that comes with each. Never describe an aftermarket part as genuine. Parts dealers face the same labelling questions; see <a href="/blog/website-for-auto-parts-dealers/">websites for auto parts and accessories dealers</a>.</p>
+
+<h2>Reviews, local SEO and speed</h2>
+<ul>
+  <li><strong>Reviews:</strong> ask every customer for a Google review when you return the car, and reply to all of them, including the critical ones; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a></li>
+  <li><strong>Real photos:</strong> your workshop, bays, equipment and team, not stock images of shiny garages</li>
+  <li><strong>Google Business Profile:</strong> the right category, accurate hours, and your pickup area set as a service area</li>
+  <li><strong>Searches to target:</strong> "car service near me", "{make} car service in {area}" and "car AC repair in {city}"</li>
+  <li><strong>Speed:</strong> most people search on a phone, often when something has just gone wrong, so keep pages light with tap-to-call and WhatsApp always visible</li>
+</ul>
+
+<p>Want a garage website that turns searches into booked slots? See <a href="/wordpress-website-development/">WordPress website development</a>, and <a href="/landing-page-design/">landing pages</a> for seasonal service offers like monsoon or AC check-ups.</p>
+`,
+  },
+  {
+    slug: 'website-for-loan-agents-dsa',
+    seoTitle: 'Websites for Loan Agents, DSAs and Loan Advisors',
+    title: 'Websites for Loan Agents and DSAs: Building Trust Without Overpromising',
+    description: 'What a loan agent or DSA website needs: the lenders you work with, loan types explained, document checklists, eligibility forms and careful, honest wording.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-lawyers-and-consultants', 'landing-page-design'],
+    body: `
+<p>Borrowers are cautious, and with good reason. Fake loan offers, fraud calls and pushy agents have made many people suspicious of anyone who says they can "get you a loan". If you're a loan agent, a direct selling agent (DSA) or an advisor who helps people choose between lenders, your website has two jobs: explain clearly how you help, and show that you're the kind of professional who doesn't overpromise. This guide covers what to include and what to leave out. It isn't legal or compliance advice, so check the specifics with the lenders you work with and, where needed, a compliance professional.</p>
+
+<h2>What borrowers want to know</h2>
+<ul>
+  <li><strong>Who you are:</strong> your real name, office address, photo and how long you've been doing this work</li>
+  <li><strong>Which lenders you work with,</strong> and in what capacity</li>
+  <li><strong>Which loans you help with,</strong> and which you don't</li>
+  <li><strong>What it costs them:</strong> whether you charge borrowers anything, or are paid by the lender</li>
+  <li><strong>What happens next:</strong> documents, steps and who makes the final decision</li>
+</ul>
+<p>The last point matters most. Say plainly that interest rates, fees, loan amounts and approval are decided by the lender, based on its own assessment. You help with choosing, paperwork and follow-up; you don't make the decision.</p>
+
+<h2>Name your lenders only with permission, and accurately</h2>
+<p>A list of the banks and NBFCs you work with builds confidence, but only if every name on it is true and current:</p>
+<ul>
+  <li>List a lender only if you have a current agreement and it allows you to mention the relationship publicly</li>
+  <li>Use logos only with written permission and in line with the lender's brand guidelines; many lenders have rules on how partners may present them</li>
+  <li>Describe your role in the terms your agreement uses, such as DSA, channel partner or connector, and never suggest you are the lender, a branch or an employee</li>
+  <li>Remove a lender from the site as soon as the arrangement ends</li>
+</ul>
+<p>A borrower may check with the lender whether you're an authorised partner, so what your website says should match what the lender would confirm.</p>
+
+<h2>Explain each loan type in plain language</h2>
+<p>Create a page for each loan you actually help with, such as home loans, loans against property, business loans, personal loans, vehicle loans or education loans. Each page can follow the same structure:</p>
+<table>
+  <thead>
+    <tr><th>Section</th><th>What to include</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Who it suits</td><td>Salaried people, the self-employed or business owners, and typical uses</td></tr>
+    <tr><td>What lenders generally look at</td><td>Income, credit history, existing EMIs and, for secured loans, the property or asset</td></tr>
+    <tr><td>The process</td><td>Enquiry, documents, application, lender checks, decision and disbursal</td></tr>
+    <tr><td>Your role</td><td>What you do at each step, and what the lender does</td></tr>
+  </tbody>
+</table>
+<p>Don't publish interest rates or "starting from" figures unless the lender has approved them and you can keep them current; rates change and depend on each borrower's profile. If you add an EMI calculator, label it as an illustration only and let users enter their own rate. Short, accurate answers to questions like "what is a loan against property?" also attract searches; see <a href="/blog/faq-page-seo/">FAQ sections that help customers and SEO</a>.</p>
+
+<h2>Document checklists people can actually use</h2>
+<p>A clear checklist saves hours of back-and-forth on WhatsApp. Split it by loan type and by applicant type, because a salaried person and a business owner need different papers. Commonly requested items include identity and address proof, income proof such as salary slips or income tax returns, bank statements, business registration documents for business loans, and property papers for secured loans.</p>
+<p>Add a note that each lender sets its own requirements and may ask for more. Offer the checklist as a printable page, with a WhatsApp button for questions. Don't ask people to upload documents through an ordinary website contact form; collect them later through a secure process agreed with the lender.</p>
+
+<h2>Eligibility enquiry forms that collect less</h2>
+<p>Call your form an "eligibility enquiry" or "request a call back", not "instant approval". Keep it short:</p>
+<ol>
+  <li>Name, mobile number and city</li>
+  <li>Loan type and approximate amount</li>
+  <li>Employment type: salaried, self-employed or business</li>
+  <li>Best time to call</li>
+</ol>
+<p>You don't need PAN, Aadhaar, bank account numbers or OTPs at this stage, so don't ask for them. A simple step-by-step layout can help; see <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms for lead qualification</a>. Under the form, say how you'll use the details, that you'll share them with a lender only when the borrower agrees, and link to your privacy policy. India's data protection law applies to this kind of personal data; see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a>.</p>
+
+<h2>Wording to avoid, and rules to check</h2>
+<p>Lenders regulated by the RBI generally remain responsible for how their agents deal with customers, and RBI rules cover areas such as fair practices, disclosures and digital lending. Lenders often add their own marketing rules for partners. Before you publish, check with each lender, and a compliance professional if needed, what you may advertise and how. As a general rule, avoid:</p>
+<ul>
+  <li>"Guaranteed approval", "100% approval" or "loans for everyone"</li>
+  <li>"Lowest interest rates" or "best rates in the market"</li>
+  <li>"No documents needed" or "credit score doesn't matter"</li>
+  <li>Specific approval or disbursal times you can't control</li>
+  <li>Testimonials that suggest an outcome is certain</li>
+</ul>
+<p>If it's true for your business, add a line saying what you will never do, such as ask for an OTP or an upfront fee to "release" a loan. It reassures genuine borrowers and helps protect them from fraudsters using your name. If you run ads, check each platform's financial services policies too, as some require advertiser verification.</p>
+
+<h2>Keep financial data safe, and get found locally</h2>
+<ul>
+  <li>Use HTTPS, send enquiries to a secure CRM or inbox rather than a widely shared spreadsheet, and limit who can see them</li>
+  <li>Delete enquiries you no longer need, and never sell or pass on leads without consent</li>
+  <li>Complete your Google Business Profile with your real office address and hours</li>
+  <li>Target searches like "home loan agent in {city}" and "business loan consultant in {area}" with genuinely useful loan pages</li>
+  <li>Keep the site fast and simple on mobile, with tap-to-call and WhatsApp easy to find</li>
+</ul>
+<p>Insurance agents and investment advisors face similar trust and compliance questions; see <a href="/blog/website-for-insurance-financial-advisors/">websites for insurance agents and financial advisors</a>.</p>
+
+<p>Want a careful, credible website for your loan advisory business? See <a href="/website-for-lawyers-and-consultants/">websites for consultants and professional advisors</a>, or <a href="/landing-page-design/">landing pages</a> for focused campaigns on a single loan type.</p>
+`,
+  },
+  {
+    slug: 'website-for-two-wheeler-dealers',
+    title: 'Websites for Two-Wheeler Dealers: Bikes, Scooters and EVs',
+    description: 'What a motorcycle and scooter dealership website needs: model pages, on-road price enquiries, test ride booking, finance, exchange, service and brand rules.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Buying a motorcycle or scooter is usually a quicker decision than buying a car, but buyers still do their homework. They compare models on their phone, watch reviews, ask friends, and then look for a nearby showroom that will give them a straight on-road price and a test ride. Whether you sell petrol bikes, electric scooters or both, your website is the showroom's front door: clear model information, easy enquiries, and a service department people can book online.</p>
+
+<h2>What two-wheeler buyers look for</h2>
+<table>
+  <thead>
+    <tr><th>Buyer</th><th>What matters most</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Students and first-time riders</td><td>EMI options, mileage or range, and a model parents will approve of</td></tr>
+    <tr><td>Daily commuters</td><td>Running costs, comfort and convenient servicing</td></tr>
+    <tr><td>Delivery and gig riders</td><td>Reliability, low running costs and quick service turnaround</td></tr>
+    <tr><td>Families</td><td>Scooters that suit two riders, storage space and safety features</td></tr>
+    <tr><td>Enthusiasts</td><td>Performance, accessories, riding gear and group rides</td></tr>
+  </tbody>
+</table>
+<p>Your homepage can route these buyers with simple links such as "Scooters", "Motorcycles", "Electric", "Book a test ride" and "Book a service".</p>
+
+<h2>Model pages that help people choose</h2>
+<p>Give each model you sell its own page, written for your local buyers rather than pasted from the brochure:</p>
+<ul>
+  <li>Variants and colours, and what changes between them</li>
+  <li>Key specifications from the manufacturer's official information, rechecked whenever a model is updated</li>
+  <li>Your own photos of the vehicle in your showroom, alongside official images where you're allowed to use them</li>
+  <li>Availability and typical waiting time, stated honestly</li>
+  <li>Clear buttons: "Get on-road price", "Book a test ride" and WhatsApp</li>
+</ul>
+<p>For electric models, buyers also want range (with the testing basis noted), charging options and battery warranty explained; see <a href="/blog/website-for-ev-dealers/">websites for electric vehicle dealers</a> for EV-specific content.</p>
+
+<h2>On-road price enquiries, not invented prices</h2>
+<p>Buyers search for the on-road price, which typically adds registration, insurance and any accessories or extended warranty they choose to the ex-showroom price. These costs vary by state and city, change with manufacturer price revisions, and differ between variants. Publishing figures you can't keep updated leads to arguments at the counter.</p>
+<p>A better approach is a short "Get on-road price" form asking for the model, variant, city or pin code, mobile number and when they plan to buy. Reply quickly with an itemised quote on WhatsApp. If you do show prices, label them clearly as ex-showroom, with a "last updated" date and a note that they may change. For the wider trade-offs, see <a href="/blog/show-prices-on-website/">should you show prices on your website?</a></p>
+
+<h2>Test ride booking</h2>
+<p>A test ride is often the step that turns an enquiry into a sale, so make it easy to book:</p>
+<ul>
+  <li>Choose the model, a preferred date and a time slot</li>
+  <li>Showroom ride or doorstep test ride, if you offer one, with the areas covered</li>
+  <li>A reminder to bring a valid driving licence and wear a helmet</li>
+  <li>Instant confirmation on WhatsApp, and a reminder on the day</li>
+</ul>
+<p>Show which models are available for test rides. Booking a ride on a model that isn't in the showroom is a frustrating start.</p>
+
+<h2>Finance and exchange enquiries</h2>
+<p>Many two-wheelers are bought on EMI, and plenty of buyers have an old vehicle to trade in. Add a simple finance enquiry form asking for the model, the down payment they have in mind and their employment type, and say clearly that loan approval, interest rates and terms are decided by the financier. Name financing partners only where you have a real tie-up, and avoid phrases like "guaranteed finance" or "zero down payment for everyone".</p>
+<p>For exchange, ask for the old vehicle's make, model, year, kilometres and a few photos, and explain that the final value is confirmed after inspection. If you also sell used bikes, those listings need their own details and photos; see <a href="/blog/website-for-car-dealers-workshops/">websites for car dealers and auto workshops</a>.</p>
+
+<h2>Service booking, spares and accessories</h2>
+<p>Service brings customers back long after the sale. Give your workshop its own section with:</p>
+<ul>
+  <li>An online booking form: model, year, service type and preferred slot</li>
+  <li>An explanation of scheduled services, following the manufacturer's service schedule</li>
+  <li>Pickup and drop, if you offer it, with areas and charges</li>
+  <li>Spares, helmets, riding gear and accessories, even as a simple enquiry catalogue</li>
+</ul>
+<p>Service reminders on WhatsApp, sent with the customer's permission, keep your bays busy between buying seasons.</p>
+
+<h2>Brand guidelines for authorised dealers</h2>
+<p>If you're an authorised dealer, your dealership agreement and the manufacturer's brand guidelines usually decide a lot about your website:</p>
+<ul>
+  <li>How you may use the brand name and logo, including in your domain name</li>
+  <li>Which official images, videos and specifications you may use</li>
+  <li>Whether offers and prices must be approved before you publish them</li>
+  <li>Whether the manufacturer provides its own dealer pages, and how your site should relate to them</li>
+</ul>
+<p>Check these before you build, because fixing a non-compliant site later costs more. Don't publish a national offer unless it applies at your dealership. Multi-brand and used vehicle dealers should never imply they're authorised for a brand they simply stock.</p>
+
+<h2>Local SEO and campaigns</h2>
+<ul>
+  <li>Complete your Google Business Profile for the showroom, and for the service centre if it's at a separate address</li>
+  <li>Target searches like "{brand} showroom in {city}", "scooter dealer near me" and "two-wheeler service in {area}"</li>
+  <li>Keep pages fast on mobile, with tap-to-call and WhatsApp always visible</li>
+  <li>Run festive and launch campaigns on dedicated landing pages, and track calls and WhatsApp clicks</li>
+</ul>
+
+<p>Planning a website for your two-wheeler dealership? See <a href="/wordpress-website-development/">WordPress website development</a>, and <a href="/landing-page-design/">landing page design</a> for launch and festive campaigns.</p>
 `,
   },
 ];

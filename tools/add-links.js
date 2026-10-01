@@ -575,6 +575,10 @@ const LINKS = [
   ['website-for-toy-stores', '<h2>For kids\' brands selling direct</h2>', '<p>Many toy shops also stock school stationery and art supplies; if that is a big part of your business, see <a href="/blog/website-for-stationery-shops/">websites for stationery and office supplies shops</a>.</p>\n\n'],
   ['website-for-book-publishers', '<h2>Press, rights and events</h2>', '<p>If you run a bookshop rather than a press, the priorities are different; see <a href="/blog/website-for-bookstores/">websites for independent bookstores</a>.</p>\n\n'],
   ['website-for-landscaping-gardening-services', '<h2>Make enquiring easy</h2>', '<p>For more on plant catalogues, seasonal stock and delivering live plants, see <a href="/blog/website-for-plant-nurseries/">websites for plant nurseries</a>.</p>\n\n'],
+  // Agent 61
+  ['website-for-auto-parts-dealers', '<h2>Trade accounts for garages and mechanics</h2>', '<p>Garages face the same question when they explain parts choices to car owners; see <a href="/blog/website-for-car-service-garages/">websites for car service centres and independent garages</a>.</p>\n\n'],
+  ['website-for-insurance-financial-advisors', '<h2>Educational content builds trust</h2>', '<p>Loan agents and DSAs need similar care with lender names, claims and wording; see <a href="/blog/website-for-loan-agents-dsa/">websites for loan agents and DSAs</a>.</p>\n\n'],
+  ['website-for-ev-dealers', '<h2>Showroom and service</h2>', '<p>If you sell petrol motorcycles and scooters alongside electric models, see <a href="/blog/website-for-two-wheeler-dealers/">websites for two-wheeler dealers</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
