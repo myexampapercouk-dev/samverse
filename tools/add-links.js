@@ -523,6 +523,18 @@ const LINKS = [
   ['website-for-textile-manufacturers', '<h2>Capability</h2>', '<p>If finished school, corporate or hospital uniforms are your main line, see <a href="/blog/website-for-uniform-manufacturers/">websites for uniform manufacturers and suppliers</a>.</p>\n\n'],
   ['website-for-water-purifier-ro-service', '<h2>AMC plans, explained clearly</h2>', '<p>Many purifier customers rely on borewell water. If drilling new borewells or installing submersible pumps is part of your business, see <a href="/blog/website-for-borewell-drilling/">websites for borewell drilling and water well services</a>.</p>\n\n'],
   ['website-for-pharma-franchise-companies', '<h2>An enquiry form that qualifies leads</h2>', '<p>Consumer brands that franchise outlets, such as food, retail or education chains, need a different set of pages; see <a href="/blog/website-for-franchise-brands/">websites for franchise brands</a>.</p>\n\n'],
+  // Agent 48
+  ['website-for-hardware-building-materials', '<h2>For contractors and projects</h2>', '<p>Run a dedicated tiles and bathroom fittings showroom? See <a href="/blog/website-for-tiles-sanitaryware-showrooms/">websites for tiles, sanitaryware and bathroom fittings showrooms</a>.</p>\n\n'],
+  ['website-for-furniture-businesses', '<h2>Inspire and reassure</h2>', '<p>Selling mattresses, pillows or bedding? See <a href="/blog/website-for-mattress-sleep-brands/">websites for mattress and sleep brands</a> for comparison pages, trial periods and careful comfort claims.</p>\n\n'],
+  ['ethical-link-building-small-business', '<h2>What to avoid</h2>', '<p>For a step-by-step approach to stories, data and expert comment that journalists can use, see <a href="/blog/digital-pr-small-business/">digital PR for small businesses</a>.</p>\n\n'],
+  // Agent 49
+  ['website-for-travel-agencies', '<h2>Enquiry vs online booking</h2>', '<p>Guides who sell single walks and local experiences rather than packages need a slightly different setup; see <a href="/blog/website-for-tour-guides-heritage-walks/">websites for tour guides and heritage walk operators</a>.</p>\n\n'],
+  ['website-copywriting-mistakes', '<h2>8. Ignoring objections</h2>', '<p>The small words on buttons, forms and messages matter too; see <a href="/blog/website-microcopy-that-converts/">website microcopy that converts</a> for before-and-after examples.</p>\n\n'],
+  ['website-for-wholesalers-distributors', '<h2>Online B2B ordering</h2>', '<p>For more detail on fields, file uploads and routing, see <a href="/blog/rfq-forms-b2b-websites/">request-for-quote forms for B2B websites</a>.</p>\n\n'],
+  // Agent 50
+  ['website-for-bakeries-cake-shops', '<h2>Trust and practical details</h2>', '<p>Teaching baking as well as selling it? See <a href="/blog/website-for-cooking-baking-classes/">websites for cooking and baking class studios</a>.</p>\n\n'],
+  ['website-for-video-production-companies', '<h2>Getting found</h2>', '<p>Running a sound recording, podcast or dubbing studio instead? See <a href="/blog/website-for-recording-studios/">websites for recording studios</a>.</p>\n\n'],
+  ['multi-step-forms-lead-qualification', '<h2>Measure, then adjust</h2>', '<p>To rank incoming enquiries and decide who to call first, see <a href="/blog/lead-scoring-small-business/">simple lead scoring for small businesses</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
