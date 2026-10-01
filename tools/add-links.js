@@ -587,6 +587,10 @@ const LINKS = [
   ['website-for-baby-products-brands', '<h2>D2C store features that bring parents back</h2>', '<p>For how shareable gift lists work in practice, see <a href="/blog/woocommerce-wishlist/">adding a wishlist to a WooCommerce store</a>.</p>\n\n'],
   ['wordpress-plugin-conflicts-troubleshooting', '<h2>First, protect the live site</h2>', '<p>If all you see is a completely blank page with no message, start with <a href="/blog/wordpress-white-screen-of-death/">fixing the WordPress white screen of death</a>.</p>\n\n'],
   ['common-wordpress-errors-fixes', '<h2>404 errors on pages that should exist</h2>', '<p>Step-by-step guide: <a href="/blog/error-establishing-database-connection-fix/">how to fix "Error establishing a database connection"</a>.</p>\n\n'],
+  // Agent 63
+  ['woocommerce-product-variations', '<h2>Keep large variation sets manageable</h2>', '<p>For a worked example where size charts, size buttons and stock by size matter on every product, see <a href="/blog/website-for-footwear-stores/">websites for footwear stores</a>.</p>\n\n'],
+  ['website-for-fashion-boutiques', '<h2>Connect Instagram and the website</h2>', '<p>Selling sarees and ethnic wear brings its own challenges, from colour accuracy to blouse stitching; see <a href="/blog/website-for-saree-ethnic-wear-stores/">websites for saree and ethnic wear stores</a>.</p>\n\n'],
+  ['website-for-jewellers', '<h2>Collections and occasions</h2>', '<p>If you also sell watches, the same enquiry-led approach works, with extra care over dealer status and warranties; see <a href="/blog/website-for-watch-stores/">websites for watch stores</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

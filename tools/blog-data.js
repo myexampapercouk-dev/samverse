@@ -5553,6 +5553,8 @@ module.exports = [
   <li><strong>WhatsApp:</strong> many buyers want to ask about customisation or availability first</li>
 </ul>
 
+<p>If you also sell watches, the same enquiry-led approach works, with extra care over dealer status and warranties; see <a href="/blog/website-for-watch-stores/">websites for watch stores</a>.</p>
+
 <h2>Collections and occasions</h2>
 <p>Organise by category (rings, necklaces, bangles), metal and occasion (bridal, festive, gifting, daily wear). Occasion pages match how people search and shop.</p>
 
@@ -5735,6 +5737,8 @@ module.exports = [
   <li>WhatsApp for styling and size questions</li>
   <li>Abandoned cart reminders (with consent) to recover lost sales</li>
 </ul>
+
+<p>Selling sarees and ethnic wear brings its own challenges, from colour accuracy to blouse stitching; see <a href="/blog/website-for-saree-ethnic-wear-stores/">websites for saree and ethnic wear stores</a>.</p>
 
 <h2>Connect Instagram and the website</h2>
 <ul>
@@ -13578,6 +13582,8 @@ module.exports = [
   <li><strong>Size charts:</strong> a clear chart next to the size selector</li>
   <li><strong>Show availability:</strong> grey out out-of-stock combinations</li>
 </ul>
+
+<p>For a worked example where size charts, size buttons and stock by size matter on every product, see <a href="/blog/website-for-footwear-stores/">websites for footwear stores</a>.</p>
 
 <h2>Keep large variation sets manageable</h2>
 <p>Products with dozens or hundreds of variations can slow the admin and product pages. Consider:</p>
@@ -34207,6 +34213,271 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ul>
 
 <p>Site down with a database error, or planning a move and want to avoid one? See <a href="/wordpress-maintenance/">WordPress maintenance and support</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-footwear-stores',
+    seoTitle: 'Websites for Footwear Stores: Fit, Sizes and Exchanges',
+    title: 'Websites for Shoe and Footwear Stores: Fit, Sizes and Exchanges',
+    description: 'How shoe shops and footwear brands can sell online: brand-wise size charts, size-variant stock in WooCommerce, easy exchanges and store locators.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Shoes are one of the harder things to sell online. Buyers worry about fit more than almost anything else, sizing differs between brands, and a single style can come in a dozen sizes and several colours. Whether you run a family shoe shop, a multi-brand store with several branches or your own footwear label, your website has to answer the fit question, show the shoe properly and make exchanges painless. Here is what I focus on when building footwear websites.</p>
+
+<h2>What shoe buyers want to know</h2>
+<ul>
+  <li>Will this size fit me, and does this brand run true to size?</li>
+  <li>Is my size in stock right now, online or at my nearest branch?</li>
+  <li>What is it made of: leather, synthetic, canvas or mesh? How is the sole attached?</li>
+  <li>What happens if it doesn't fit?</li>
+  <li>How quickly will it arrive, and is cash on delivery available?</li>
+</ul>
+<p>Every section below is really about answering one of these questions before the customer has to message you.</p>
+
+<h2>Size charts and fit guidance by brand</h2>
+<p>One generic size chart is not enough for a multi-brand store, because the same size number can feel different from one brand to the next. Keep fit information at the right level:</p>
+<ul>
+  <li><strong>Brand size charts:</strong> UK, EU and US sizes side by side, taken from each brand's own chart rather than a generic conversion table</li>
+  <li><strong>Foot-length guide:</strong> how to measure a foot at home with paper and a ruler, with centimetre lengths mapped to sizes</li>
+  <li><strong>Brand-level fit notes:</strong> "runs small, consider half a size up" or "narrow fit", written from your staff's experience and real customer feedback</li>
+  <li><strong>Width:</strong> regular, wide or extra wide, where the brand offers it</li>
+  <li><strong>Kids' sizes:</strong> age ranges are only a rough guide, so lead with foot length</li>
+</ul>
+<p>Put the "size guide" link right next to the size buttons, not in the footer. Product-level notes such as "customers say this style fits slightly snug" are the most useful of all, but only write them when they come from genuine feedback.</p>
+
+<h2>Size-variant stock in WooCommerce</h2>
+<p>In WooCommerce each shoe style is usually one variable product, with size and colour as attributes, and each combination tracked as its own variation with its own SKU and stock count. A few things make this work well for footwear:</p>
+<ul>
+  <li>Global attributes for size, colour and brand, so shoppers can filter the whole store to "my size, in stock"</li>
+  <li>Size buttons instead of a dropdown, with sold-out sizes greyed out rather than hidden</li>
+  <li>A "notify me when back in stock" option for popular sizes</li>
+  <li>Only the combinations you actually stock; ten sizes in four colours is already 40 variations</li>
+  <li>A plan for keeping website stock in step with your shop's billing or POS software, so the last pair isn't sold twice</li>
+</ul>
+<p>The <a href="/blog/woocommerce-product-variations/">guide to WooCommerce product variations</a> covers the setup, and <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a> explains filtering by size, brand and price without slowing the store down.</p>
+
+<h2>Photos from several angles</h2>
+<p>Shoppers can't pick the shoe up and turn it over, so your photos have to do it for them. For each style, aim for:</p>
+<ul>
+  <li>Outer side profile, front, back (heel) and top-down views</li>
+  <li>The sole, which tells people about grip and build quality</li>
+  <li>Close-ups of stitching, material texture, lining and insole</li>
+  <li>An on-foot shot for scale, plus a short video for your best sellers</li>
+  <li>A separate image set for each colour, so the main photo changes when a colour is selected</li>
+</ul>
+<p>Shoot every style with the same background and the same angles so category pages look tidy and comparable. Keep colours honest under neutral light, because "tan" and "brown" can look very different on a phone screen. Compress every image, since a category page showing dozens of shoes gets heavy quickly on mobile data.</p>
+
+<h2>Exchanges for the wrong size</h2>
+<p>Even with good size guidance, some pairs won't fit. A simple, visible size exchange process makes people more willing to order in the first place:</p>
+<ul>
+  <li>A clear exchange window and conditions: unworn, tried indoors only, with the original box and tags</li>
+  <li>Size exchange as a separate, quicker route than a full return and refund</li>
+  <li>Reverse pickup, or "exchange at any of our branches" if you have shops</li>
+  <li>A short exchange request form or WhatsApp flow asking for the order number and the new size</li>
+  <li>Holding the replacement size for the customer as soon as the request arrives, when stock is tight</li>
+  <li>A one-line summary on the product page ("easy size exchange") linking to the full policy</li>
+</ul>
+<p>Be specific about exceptions, such as sale items or customised shoes. See <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce stores</a> for what the full policy should cover.</p>
+
+<h2>School shoes, seasonal ranges and occasions</h2>
+<p>Footwear demand follows the calendar, and your website should too:</p>
+<ul>
+  <li><strong>School shoes:</strong> a dedicated page ahead of the new school year with black and white school shoes, sports shoes and socks, plus foot-length guidance for growing feet. If you supply particular schools, list the approved styles by school</li>
+  <li><strong>Monsoon:</strong> floaters, sandals, and waterproof or quick-dry styles</li>
+  <li><strong>Weddings and festivals:</strong> juttis, mojaris, kolhapuris, embellished heels and formal shoes for grooms</li>
+  <li><strong>Sports and running:</strong> grouped by activity, with plain-English notes on cushioning and use</li>
+  <li><strong>Winter:</strong> boots and closed shoes, especially if you have branches in colder cities</li>
+</ul>
+<p>Keep these as permanent pages that you refresh each year rather than new pages every season. They build up search visibility over time and are ready before demand peaks.</p>
+
+<h2>Store locator and local SEO for multi-branch shops</h2>
+<p>Many shoe buyers still prefer to try a pair on in person, so the website should send people to your shops as well as take orders:</p>
+<ul>
+  <li>A store locator listing each branch with address, map, opening hours, phone and WhatsApp</li>
+  <li>A page for each branch with real photos, brands stocked and landmark or parking details</li>
+  <li>"Check availability at a branch" or "reserve to try on", if your stock systems allow it</li>
+  <li>A Google Business Profile for every branch, linking to that branch's page</li>
+  <li>Pages targeting searches like "shoe shop in {area}", "school shoes in {city}" or "{brand} shoes in {city}", only for brands you genuinely stock</li>
+</ul>
+<p>For the structure behind this, see <a href="/blog/multi-location-business-website/">websites for businesses with multiple branches</a>.</p>
+
+<p>Planning a footwear store, or adding online sales to your shoe shop? See <a href="/woocommerce-developer/">WooCommerce development</a> for how I can help.</p>
+`,
+  },
+  {
+    slug: 'website-for-saree-ethnic-wear-stores',
+    seoTitle: 'Websites for Saree and Ethnic Wear Stores',
+    title: 'Websites for Saree and Ethnic Wear Stores: Selling Drape and Detail',
+    description: 'How saree and ethnic wear shops can sell online: honest colour photos, weave and care details, blouse stitching, video calls and genuine handloom claims.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>A saree is bought on colour, fabric, weave and drape, and most of those are hard to judge on a phone screen. Customers also have questions a general clothing store never hears: is the zari real, is there a blouse piece, can you stitch the blouse, will the colour match the photo? This guide covers what saree and ethnic wear shops need beyond the basics in <a href="/blog/website-for-fashion-boutiques/">websites for fashion boutiques</a>, whether you sell sarees, lehengas, suits or men's ethnic wear.</p>
+
+<h2>Photograph fabric and drape honestly</h2>
+<p>If a saree looks a different colour in person, the customer feels misled, and that usually ends in a return. Aim for photos that look like the saree does in the hand:</p>
+<ul>
+  <li>Shoot in consistent daylight or neutral studio lighting, and keep editing to light corrections, not filters</li>
+  <li>Check edited photos against the actual saree on more than one screen before publishing</li>
+  <li>Show the full drape on a model or mannequin, plus separate shots of the body, border, pallu and blouse piece</li>
+  <li>Add close-ups of the weave, the zari and the motifs, and for handloom pieces, the reverse side of the fabric</li>
+  <li>A short video in natural light showing movement and sheen, which photos struggle to capture</li>
+  <li>A plain note that colours can vary slightly between screens, without using it as an excuse for inaccurate photos</li>
+</ul>
+<p>Silk and zari reflect light, so expect to spend more time on each shoot than you would for cotton. The guide to <a href="/blog/prepare-photos-for-website/">preparing photos for your website</a> covers sizing and compression so long collection pages still load quickly.</p>
+
+<h2>Fabric, weave and care details</h2>
+<p>Buyers who know sarees look for specifics, and buyers who don't need help understanding them. On every product page, include:</p>
+<ul>
+  <li><strong>Fabric:</strong> pure silk, silk blend, cotton, linen, georgette, chiffon, organza and so on, stated plainly</li>
+  <li><strong>Weave or craft:</strong> for example Kanjeevaram, Banarasi, Chanderi, ikat, jamdani or block print, used only where it is accurate</li>
+  <li><strong>Zari:</strong> whether it is pure, tested or imitation zari, if you know</li>
+  <li><strong>Length and blouse piece:</strong> the saree length, and whether a blouse piece is attached and in what colour</li>
+  <li><strong>Weight and feel:</strong> lightweight for daily wear, or heavy for weddings</li>
+  <li><strong>Care:</strong> dry clean only, first wash separately, how to store silk and zari</li>
+</ul>
+<p>Short buying guides, such as "how to tell handloom from powerloom" or "caring for silk sarees", help customers and also rank for the questions they search before buying.</p>
+
+<h2>Blouse stitching and customisation</h2>
+<p>For many customers, the saree is only half the purchase. Offering stitching online can set your store apart, as long as the options are clear:</p>
+<ul>
+  <li><strong>Choices at checkout:</strong> unstitched, ready-to-wear in standard sizes, or custom stitched to measurements</li>
+  <li><strong>Design options:</strong> neck styles, sleeve length, lining and padding, shown with photos</li>
+  <li><strong>Add-ons:</strong> fall and pico, tassels on the pallu, or pre-pleating where you offer them</li>
+  <li><strong>Measurements:</strong> a guided form, or the option to send a blouse that already fits well</li>
+  <li><strong>Timelines:</strong> how many extra days stitching adds before dispatch</li>
+  <li><strong>Returns:</strong> state clearly if custom-stitched items can't be returned</li>
+</ul>
+<p>In WooCommerce these are usually handled with product add-ons that carry their own prices, rather than separate stock-tracked variations.</p>
+
+<h2>WhatsApp video calls for shopping</h2>
+<p>Many saree buyers want to see the piece live before paying, especially for wedding purchases. A structured video call service turns this into a sales channel rather than a distraction:</p>
+<ul>
+  <li>A "book a video call" button on the site and on high-value product pages</li>
+  <li>A short booking form asking for occasion, budget, colours and preferred time</li>
+  <li>Staff who drape the saree, show it near a window in daylight and talk through the fabric</li>
+  <li>A shortlist sent afterwards with product links, so the customer can pay online or receive a payment link</li>
+  <li>Clear hours, and a fallback of short video clips on WhatsApp for those who don't want a live call</li>
+</ul>
+<p>See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a> for adding chat and call buttons without slowing the site.</p>
+
+<h2>Wedding and festival collections</h2>
+<p>Ethnic wear demand peaks around weddings and festivals, and many of those occasions are regional:</p>
+<ul>
+  <li><strong>Bridal and trousseau:</strong> a dedicated section, with appointment booking for brides and their families</li>
+  <li><strong>Festival edits:</strong> for example kasavu sarees before Onam or red-and-white sarees before Durga Puja, depending on where your customers are</li>
+  <li><strong>Family and group orders:</strong> matching or coordinated outfits for wedding functions, with a simple bulk enquiry form</li>
+  <li><strong>Gifting:</strong> gift wrapping, gift messages and price-band pages</li>
+  <li><strong>Dispatch cut-off dates:</strong> stated clearly, so nobody orders too late for the event</li>
+</ul>
+<p>Keep these as permanent pages you refresh each year, so they keep the search visibility they have earned.</p>
+
+<h2>Authenticity claims, only where genuinely held</h2>
+<p>Words like "handloom", "pure silk" and the names of famous weaves carry real weight, and customers who later find a claim was untrue rarely come back. Be careful and precise:</p>
+<ul>
+  <li><strong>Silk Mark:</strong> mention it or show the label only on products that genuinely carry it</li>
+  <li><strong>Handloom labels:</strong> display marks such as India Handloom Brand or Handloom Mark only where you or your supplier are registered for them</li>
+  <li><strong>GI names:</strong> some saree types are registered Geographical Indications, so use those names only for sarees genuinely from that origin and check the current rules on using GI names and logos</li>
+  <li><strong>Powerloom and blends:</strong> describe them honestly, for example "Banarasi-style" or "art silk", rather than implying handloom or pure silk</li>
+  <li><strong>Weaver stories:</strong> share them only when they are real and you have permission</li>
+</ul>
+<p>If you are unsure what a label allows, check with the issuing body before using it on your site.</p>
+
+<h2>Store visits and local search</h2>
+<ul>
+  <li>A Google Business Profile with photos of the shop, the collection and the trial area</li>
+  <li>Pages that match local searches, such as "silk saree shop in {city}" or "bridal lehenga in {area}"</li>
+  <li>Appointment booking for bridal shopping, so families arrive at a quiet time</li>
+</ul>
+
+<p>Want to take your saree or ethnic wear shop online? See <a href="/woocommerce-developer/">WooCommerce development</a> for how I can help.</p>
+`,
+  },
+  {
+    slug: 'website-for-watch-stores',
+    title: 'Websites for Watch Stores and Authorised Watch Retailers',
+    description: 'What watch shops need online: brand pages within guidelines, accurate dealer status, warranty and repair details, honest pre-owned grading and enquiries.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Buying a watch, especially an expensive one, is built on trust. Customers want to know the watch is genuine, that the warranty will be honoured and that someone will service it later. A watch shop's website has to show the collection well, state its dealer status accurately and make it easy to enquire, visit the store or book a repair. Many of the same principles apply as in <a href="/blog/website-for-jewellers/">websites for jewellers</a>, with a few watch-specific details.</p>
+
+<h2>What watch buyers check first</h2>
+<ul>
+  <li>Are you an authorised retailer for this brand, and at which branch?</li>
+  <li>Is the watch in stock, and can I see it in person?</li>
+  <li>What warranty comes with it, and who honours it?</li>
+  <li>Can you change batteries, adjust bracelets and service watches later?</li>
+  <li>For pre-owned pieces: what condition is it in, and how do you know it's genuine?</li>
+</ul>
+
+<h2>Brand pages within brand guidelines</h2>
+<p>Brand pages help people searching for a specific brand in your city find you, but authorised retailers usually have to follow the brand's rules on how it is presented. Before building them, check your dealer agreement and any brand guidelines for:</p>
+<ul>
+  <li>Use of logos, official product images and campaign material, often supplied through a brand's retailer portal</li>
+  <li>Whether prices may be shown online, and whether online sales or only enquiries are permitted</li>
+  <li>Approved wording for describing the brand and its technology</li>
+  <li>Rules on discounts, offers and paid advertising using the brand name</li>
+</ul>
+<p>Within those rules, a good brand page has a short introduction in your own words, the collections you actually stock, which branches carry them and a clear way to enquire. Avoid copying the brand's own website text word for word.</p>
+
+<h2>Authorised dealer status, stated accurately</h2>
+<p>"Authorised dealer" is one of the strongest trust signals a watch shop has, so it must be exactly right:</p>
+<ul>
+  <li>Claim authorised status only for brands where you hold a current agreement, and only for the branches it covers</li>
+  <li>Keep "authorised retailer" and "authorised service centre" separate; they are not the same thing</li>
+  <li>Remove a brand's name and logo promptly if an agreement ends</li>
+  <li>If you also sell brands you are not authorised for, such as pre-owned pieces, say clearly that you are an independent seller for those, and explain what that means for the warranty</li>
+</ul>
+
+<h2>Warranty and service information</h2>
+<p>Warranty questions often come up before the sale, so answer them on the site:</p>
+<ul>
+  <li>Manufacturer warranty terms by brand, as stated by the brand, with a link to its official terms where available</li>
+  <li>How warranty registration works: a stamped card, digital activation or both</li>
+  <li>What is usually covered and what isn't, such as straps, glass, batteries or accidental damage, following each brand's terms</li>
+  <li>Where warranty claims are handled, and whether you accept watches bought elsewhere</li>
+  <li>Any extended warranty or service plan of your own, only if you actually offer one, with its terms written out</li>
+</ul>
+
+<h2>Repairs, battery replacement and servicing</h2>
+<p>Repairs bring steady footfall and often lead to the next sale. Give them their own section rather than a line on the contact page:</p>
+<ul>
+  <li>Services listed clearly: battery replacement, strap and bracelet sizing, glass replacement, water-resistance testing if you have the equipment, and servicing of automatic and mechanical watches</li>
+  <li>Which brands and movement types you can and can't work on</li>
+  <li>How estimates work and typical turnaround times, explained honestly</li>
+  <li>A repair request form with photo upload, and repair status updates on WhatsApp</li>
+  <li>Whether you use genuine parts, stated only where true</li>
+</ul>
+<p>Repair pages also match urgent local searches like "watch battery replacement near me" and "watch repair in {area}".</p>
+
+<h2>Pre-owned watches with honest condition grading</h2>
+<p>Pre-owned and vintage watches can be a valuable line, but only if buyers trust your descriptions. Publish your grading scale, for example unworn, excellent, very good and good, with a plain definition of each, and then for every watch show:</p>
+<ul>
+  <li>Real photos of that exact watch from several angles, including any scratches or wear</li>
+  <li>Reference or model number, case size, movement type and, where known, the year</li>
+  <li>Whether it comes with the original box and papers</li>
+  <li>Service history and whether the case has been polished, where known</li>
+  <li>The checks you carry out before listing, and any warranty you provide</li>
+</ul>
+<p>Never describe a pre-owned watch as new, and keep records of where you sourced each piece.</p>
+
+<h2>Enquiry-led sales for high-value pieces</h2>
+<p>For expensive watches, most buyers want a conversation before paying. Design the site around that:</p>
+<ul>
+  <li>"Enquire about this watch" buttons that pre-fill the model and reference in a form or WhatsApp message</li>
+  <li>Booking for store visits or private viewings, plus video calls for buyers in other cities</li>
+  <li>Price shown, or "price on request", depending on your brand agreements; see <a href="/blog/show-prices-on-website/">should you show prices on your website</a></li>
+  <li>Fast replies from a named person, since high-value buyers often enquire at several stores</li>
+  <li>Insured, tracked delivery explained clearly for watches sold online</li>
+</ul>
+<p>Everyday watches can still sell directly through an online store, with high-value pieces kept enquiry-only. See <a href="/blog/online-appointment-booking-website/">online appointment booking</a> for setting up store visit slots.</p>
+
+<p>Building a website for your watch store? See <a href="/woocommerce-developer/">WooCommerce development</a> if you want to sell online, or <a href="/wordpress-website-development/">WordPress website development</a> for a catalogue and enquiry site.</p>
 `,
   },
 ];
