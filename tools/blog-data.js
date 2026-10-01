@@ -5283,6 +5283,8 @@ module.exports = [
   <li>How to get a quote and track shipments</li>
 </ul>
 
+<p>If storage space is your main business rather than transport, see <a href="/blog/website-for-cold-storage-warehousing/">websites for cold storage and warehousing companies</a>.</p>
+
 <h2>Essential pages</h2>
 <ol>
   <li><strong>Service pages:</strong> one per mode or service, with who it's for and how it works</li>
@@ -5395,6 +5397,8 @@ module.exports = [
   <li>Quality, safety and compliance practices</li>
   <li>Proof of reliability: timelines met, repeat clients, testimonials</li>
 </ul>
+
+<p>Electrical contracting firms are judged on licences, safety and after-sales support too; see <a href="/blog/website-for-electrical-contractors/">websites for electrical contractors</a>.</p>
 
 <h2>Essential pages</h2>
 <ol>
@@ -8828,6 +8832,8 @@ module.exports = [
   <li>Fare structure: per km, packages (8 hours/80 km), driver allowance, tolls and parking</li>
   <li>Clear notes on what's included and extra</li>
 </ul>
+
+<p>If tempo travellers, mini buses and coaches for groups make up most of your fleet, see <a href="/blog/website-for-tempo-traveller-bus-rental/">websites for tempo traveller and bus rental operators</a>.</p>
 
 <h2>Popular routes and services</h2>
 <ul>
@@ -27952,6 +27958,285 @@ Template: astra
 <p>Change one thing at a time, give it a few weeks and remove suggestions nobody takes up.</p>
 
 <p>Want bundles and upsells set up properly in your store? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/landing-page-design/">landing page design</a> for a dedicated gift-set or offer page.</p>
+`,
+  },
+  {
+    slug: 'website-for-electrical-contractors',
+    seoTitle: 'Electrical Contractor Websites: Win Industrial Projects',
+    title: 'Websites for Electrical Contractors: Winning Commercial and Industrial Work',
+    description: 'What commercial and industrial electrical contractors need on their website: service pages, licences, project portfolio, safety, RFQ enquiries and AMC plans.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-website-development'],
+    body: `
+<p>When a factory is expanding, a warehouse needs a new substation or a hospital is looking for a maintenance partner, the people choosing an electrical contractor rarely pick from a phone directory. Plant heads, project consultants, EPC companies and purchase teams search, shortlist and then check your website before they send an RFQ. This guide is for contractors doing commercial and industrial work; if you mainly handle household repairs, see <a href="/blog/website-for-home-services/">websites for home services</a> instead.</p>
+
+<h2>What buyers check before shortlisting you</h2>
+<p>Commercial buyers are cautious because a bad electrical contractor means shutdowns, safety risks and failed inspections. They look for:</p>
+<ul>
+  <li><strong>Scope:</strong> the type of work you do and the voltage levels you handle, LT only or HT as well</li>
+  <li><strong>Licences:</strong> the contractor licence you hold and its class or grade</li>
+  <li><strong>Similar projects:</strong> work for plants, buildings or clients like theirs</li>
+  <li><strong>Capacity:</strong> team size, supervisors, engineers, tools and testing equipment</li>
+  <li><strong>Safety:</strong> how you work on live sites and in running plants</li>
+  <li><strong>After-handover support:</strong> whether you can maintain what you install</li>
+</ul>
+
+<h2>Service pages, one per type of work</h2>
+<p>A single "Our Services" page listing everything tells a buyer very little. Give each major service its own page, for example:</p>
+<ul>
+  <li>HT and LT electrical installations</li>
+  <li>Substations and transformer installation</li>
+  <li>LT panels, switchgear and power distribution</li>
+  <li>Cabling, cable trays and industrial wiring</li>
+  <li>Factory, warehouse and outdoor lighting</li>
+  <li>Earthing and lightning protection</li>
+  <li>Testing and commissioning</li>
+</ul>
+<p>Each page should explain the scope, the kind of clients you do it for, the brands and standards you usually work with, related projects and a clear enquiry button. Only list services your own team actually delivers. It also helps to add short "industries served" pages (manufacturing, warehouses, hospitals, commercial buildings, housing societies) that link back to the relevant services.</p>
+
+<h2>Licences and credentials, stated precisely</h2>
+<p>This is where many contractor websites are vague, and where buyers are most careful. Be specific and honest:</p>
+<ul>
+  <li><strong>Contractor licence:</strong> the licence issued by your state's licensing board or electrical inspectorate, with its class or grade, number and validity. Names and grades vary from state to state, so use the exact wording on your certificate.</li>
+  <li><strong>Key people:</strong> supervisors and engineers with their certificates of competency, where you hold them</li>
+  <li><strong>Government enlistment:</strong> registration with departments such as CPWD or the state PWD, only if you are enlisted, and in which class</li>
+  <li><strong>ISO and other certifications:</strong> only if current, with the scope they cover</li>
+  <li><strong>Manufacturer authorisations:</strong> only if you genuinely hold them, and use brand logos only with permission</li>
+</ul>
+<p>Never show lapsed certificates, and set a reminder to update the page when licences are renewed. Tender teams often cross-check.</p>
+
+<h2>A project portfolio that proves capacity</h2>
+<p>Your projects do more selling than any paragraph about quality. For each key project, include:</p>
+<table>
+  <thead><tr><th>Detail</th><th>Why it matters</th></tr></thead>
+  <tbody>
+    <tr><td>Client type and location</td><td>Buyers look for work similar to theirs; name the client only with permission</td></tr>
+    <tr><td>Scope and scale</td><td>Actual quantities, such as substation rating, number of panels or length of cabling</td></tr>
+    <tr><td>Duration and constraints</td><td>Shutdown windows, working inside a running plant, tight handover dates</td></tr>
+    <tr><td>Photos</td><td>Real photos of panels, cable trays and substations, not stock images</td></tr>
+  </tbody>
+</table>
+<p>Let visitors filter projects by industry and service. A few detailed write-ups beat fifty photos with no context; see <a href="/blog/write-case-studies-business-website/">how to write case studies</a>.</p>
+
+<h2>Give safety its own page</h2>
+<p>Many companies now ask about safety during vendor registration, and their EHS teams read this page. Describe what you actually do: permit-to-work procedures, lockout and tagout, PPE, toolbox talks, safety training and calibrated testing instruments. Photos of your team in proper PPE on real sites support the words. Don't claim an accident-free record unless you track it properly and can back it up.</p>
+
+<h2>Make tender and RFQ enquiries easy</h2>
+<p>A generic "name, email, message" form doesn't suit this work. Build an RFQ form that asks for:</p>
+<ol>
+  <li>Project type and site location</li>
+  <li>Scope and approximate connected load</li>
+  <li>Expected start date and timeline</li>
+  <li>Uploads for the BOQ, drawings or single line diagram</li>
+  <li>Tender reference number, if there is one</li>
+  <li>Name, company, role, phone and email</li>
+</ol>
+<p>Splitting this across two or three steps keeps it manageable; see <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a>. Send enquiries straight to your estimation team, send the visitor an automatic acknowledgement and add spam protection, as upload forms attract junk. Also offer a downloadable company profile PDF with your licences, key projects, team and equipment, since consultants often need one for pre-qualification.</p>
+
+<h2>Sell AMC and maintenance</h2>
+<p>Annual maintenance contracts bring steady income and keep you close to clients for future projects. Give AMC its own page covering:</p>
+<ul>
+  <li>What's maintained: substations, transformers, panels, DG set changeover, earthing</li>
+  <li>Visit frequency and the checks done on each visit</li>
+  <li>Breakdown support and response times you can genuinely commit to</li>
+  <li>Reports the client receives after each visit</li>
+</ul>
+<p>Add a short AMC quote form asking for the equipment list, connected load and location.</p>
+
+<h2>Local SEO and speed</h2>
+<ul>
+  <li>Target searches like "industrial electrical contractor in {city}", "HT electrical contractor {city}" and "substation installation contractor"</li>
+  <li>Mention the industrial areas you serve naturally on service and project pages</li>
+  <li>Keep your Google Business Profile complete, with the most accurate category, real project photos and reviews from clients</li>
+  <li>Compress project photos so pages load quickly for site engineers checking on mobile data</li>
+</ul>
+
+<p>Want a website that brings in RFQs from factories and businesses? See how I build <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-cold-storage-warehousing',
+    title: 'Websites for Cold Storage and Warehousing Companies',
+    description: 'What cold storage and warehouse operators need on their website: capacity, temperature ranges, locations, compliance, space enquiry forms and B2B trust.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-seo-services'],
+    body: `
+<p>Food processors, traders, exporters, pharma distributors and online brands looking for storage space usually compare several facilities before they call anyone. They want to know quickly whether you have the right temperature, enough space, a convenient location and the paperwork their business depends on. A clear website answers those questions and turns a comparison into an enquiry. This guide is for businesses whose main product is storage space; if transport and freight are your core services, see <a href="/blog/website-for-logistics-transport-companies/">websites for logistics and transport companies</a>.</p>
+
+<h2>What storage buyers want to know first</h2>
+<ul>
+  <li><strong>Temperature:</strong> can you hold their product at the range it needs?</li>
+  <li><strong>Space:</strong> how much capacity you have, and whether any is available now</li>
+  <li><strong>Location:</strong> distance from their plant, market, port or customers, and truck access</li>
+  <li><strong>Commodities:</strong> whether you already handle products like theirs</li>
+  <li><strong>Monitoring:</strong> how temperature, stock and security are tracked</li>
+  <li><strong>Terms:</strong> how charges work, minimum periods and handling fees</li>
+</ul>
+<p>If a visitor has to call just to learn your temperature range, many will call a competitor whose website already told them.</p>
+
+<h2>Capacity and facilities, in numbers</h2>
+<p>Storage is bought on specifics, so give real figures instead of "state-of-the-art facility":</p>
+<ul>
+  <li>Total capacity in the units your customers use: tonnes, pallet positions or square feet</li>
+  <li>Number and size of chambers, and the racking type</li>
+  <li>Loading docks, dock levellers and space for reefer trucks</li>
+  <li>Material handling equipment such as forklifts and pallet trucks</li>
+  <li>Power backup for continuous cooling</li>
+  <li>Temperature monitoring, alarms and data logging</li>
+  <li>Warehouse management software and the stock reports customers receive</li>
+  <li>CCTV, access control and fire safety systems</li>
+</ul>
+<p>Show real photos of chambers, docks and the building, plus a short walkthrough video if you can. For availability, either keep a "space available" note up to date or simply ask visitors to enquire; an out-of-date "space available" banner annoys buyers more than no banner at all.</p>
+
+<h2>Temperature ranges and the products you handle</h2>
+<p>Organise this section by storage type, and state your actual set points and how closely you hold them:</p>
+<table>
+  <thead><tr><th>Storage type</th><th>Typical products</th><th>What to state</th></tr></thead>
+  <tbody>
+    <tr><td>Frozen</td><td>Frozen foods, meat, seafood, ice cream</td><td>Set point range, blast freezing if offered</td></tr>
+    <tr><td>Chilled</td><td>Dairy, fruit, vegetables, some medicines</td><td>Range, humidity control, separate chambers</td></tr>
+    <tr><td>Ripening or controlled atmosphere</td><td>Specific fruits, if you have these chambers</td><td>Which products and how the process works</td></tr>
+    <tr><td>Ambient or dry</td><td>Packaged goods, FMCG, e-commerce stock</td><td>Whether temperature is controlled or simply sheltered</td></tr>
+  </tbody>
+</table>
+<p>Many cold stores are built around one crop or commodity, such as potatoes. If that's you, say so clearly and explain when space typically opens up in the season.</p>
+
+<h2>Locations and access</h2>
+<p>For each facility, publish the full address, a map, and practical details: distance to highways, mandis, ports, airports or industrial areas, the largest vehicle that can reach the dock, parking for waiting trucks and inward and outward timings. If you run more than one facility, give each its own page and its own Google Business Profile; see <a href="/blog/multi-location-business-website/">websites for businesses with multiple branches</a>.</p>
+
+<h2>Compliance you actually hold</h2>
+<p>Buyers in food and pharma often need to show auditors where their goods were stored, so they check your registrations early. Depending on what you store, relevant ones may include:</p>
+<ul>
+  <li>An FSSAI licence or registration for storing food products</li>
+  <li>Drug licence and documented storage conditions if you store medicines</li>
+  <li>Registration with the Warehousing Development and Regulatory Authority, if you are registered</li>
+  <li>A customs bonded warehouse licence, if you operate one</li>
+  <li>Fire safety clearances and any ISO or food safety certifications</li>
+</ul>
+<p>List only what you hold, with numbers and validity where appropriate, and keep them current. Rules differ by product and state, so check with your consultant or CA what applies to you. Never imply pharma-grade storage or audit readiness you haven't been assessed for. Also explain what your insurance covers and what customers should insure themselves.</p>
+
+<h2>Enquiry forms built for space requests</h2>
+<p>A good space enquiry form gives your team everything needed to quote in one go:</p>
+<ol>
+  <li>Commodity and packaging (bags, cartons, pallets)</li>
+  <li>Quantity in tonnes, pallets or bags</li>
+  <li>Temperature required</li>
+  <li>Start date and expected storage period</li>
+  <li>How often goods will come in and go out</li>
+  <li>Services needed: loading, sorting, labelling, repacking or transport</li>
+  <li>Company name, contact person, phone and email</li>
+</ol>
+<p>Add a WhatsApp button and tap-to-call for urgent requirements, and reply the same day. Rather than publishing a rate card, explain what affects charges: storage per pallet, tonne or bag per month, handling fees, minimum periods and peak-season demand.</p>
+
+<h2>B2B trust signals</h2>
+<ul>
+  <li>Years in operation and the industries you serve, with client logos only with permission</li>
+  <li>Your standard procedures: inward inspection, FIFO or FEFO stock rotation, hygiene and pest control schedules</li>
+  <li>A sample stock or temperature report format, with client details removed</li>
+  <li>An open invitation for facility visits and audits</li>
+  <li>Names and direct contacts for the operations and sales team</li>
+</ul>
+
+<h2>SEO for storage companies</h2>
+<ul>
+  <li>Target searches like "cold storage in {city}", "warehouse for rent in {area}" and "pharma cold storage {city}"</li>
+  <li>Create pages for each storage type and main commodity, with real details</li>
+  <li>Write helpful guides on storage conditions and inward documentation for the products you handle</li>
+  <li>Keep pages fast; heavy image galleries on shared hosting are a common problem</li>
+</ul>
+
+<p>Need your facility found by the businesses searching for storage? See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-tempo-traveller-bus-rental',
+    title: 'Websites for Tempo Traveller and Bus Rental Operators',
+    description: 'How tempo traveller, mini bus and bus rental operators can win more group bookings online with fleet pages, route pages, quote forms, WhatsApp and local SEO.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>A family pilgrimage, a wedding with guests arriving from three cities, a company offsite, a college tour: group trips are usually planned by one organiser who compares a few operators and books the one that feels clearest and most reliable. That decision is bigger than booking a cab, because the organiser is responsible for everyone on board. If you run cars and sedans for individual trips, see <a href="/blog/website-for-taxi-car-rental/">websites for taxi and car rental services</a>. This guide covers tempo travellers, mini buses and larger buses for groups.</p>
+
+<h2>What group organisers want to know</h2>
+<ul>
+  <li>Which vehicle fits their group, including luggage</li>
+  <li>How comfortable it is on a long journey: AC, seats, legroom</li>
+  <li>The full cost, including driver allowance, tolls and permits</li>
+  <li>Whether the driver is experienced on their route</li>
+  <li>Whether you're available on their dates</li>
+  <li>How quickly they can get a firm quote</li>
+</ul>
+<p>Your website should answer all of these before the organiser picks up the phone.</p>
+
+<h2>Fleet pages by seating capacity</h2>
+<p>Organisers think in group size, so organise your fleet that way. Give each vehicle type its own page, for example 12-seater and 17-seater tempo travellers, mini buses and full-size coaches.</p>
+<table>
+  <thead><tr><th>Vehicle type</th><th>Suits</th><th>Show on the page</th></tr></thead>
+  <tbody>
+    <tr><td>Tempo traveller</td><td>Families, small tours, airport group transfers</td><td>Seat layout, pushback seats, luggage carrier, AC</td></tr>
+    <tr><td>Mini bus</td><td>Wedding guests, school and college trips</td><td>Seating, aisle space, luggage capacity</td></tr>
+    <tr><td>Large bus or coach</td><td>Corporate events, big tours, pilgrimages</td><td>Seating, boot space, onboard facilities</td></tr>
+  </tbody>
+</table>
+<p>Use real photos of your own vehicles, inside and out, taken in good light. Stock photos of spotless coaches are easy to spot, and organisers often ask for actual photos on WhatsApp anyway. Mention charging points, music systems or reclining seats only if every vehicle in that category has them.</p>
+
+<h2>Route and trip pages</h2>
+<p>Many searches name a route or occasion: "{city} to {destination} tempo traveller", "bus for wedding in {city}", "tempo traveller for {pilgrimage} trip". Build pages for the trips you genuinely run most often:</p>
+<ul>
+  <li>Weekend getaways and hill station trips</li>
+  <li>Pilgrimage circuits</li>
+  <li>Wedding guest pick-ups and shuttles</li>
+  <li>Corporate offsites and employee transport</li>
+  <li>School, college and group tours</li>
+</ul>
+<p>Each route page should include distance, typical travel time, a suggested day-by-day plan for multi-day trips, useful stops, the vehicles that suit it and what's included. Avoid dozens of near-identical pages with only the city name changed; see <a href="/blog/local-landing-pages-without-doorway-pages/">local pages without doorway pages</a>.</p>
+
+<h2>A fare structure without surprises</h2>
+<p>Group bookings often go wrong over extras discovered at the end of the trip. Explain how you charge, even if you don't publish exact rates:</p>
+<ul>
+  <li>Per-km charges and any minimum daily kilometres on outstation trips</li>
+  <li>Driver allowance and night charges</li>
+  <li>Tolls, parking and interstate permit or tax charges, and whether they're included</li>
+  <li>Local packages by hours and kilometres</li>
+  <li>Extra hours, waiting time and cancellation terms</li>
+</ul>
+<p>A worked example with placeholder figures ("a 3-day trip of about X km would be charged like this") helps organisers compare you fairly with operators who quote a low base fare and add extras later.</p>
+
+<h2>Quote forms and WhatsApp booking</h2>
+<p>Keep the quote form short but complete:</p>
+<ol>
+  <li>Pickup city and destinations</li>
+  <li>Start and return dates</li>
+  <li>Number of passengers and rough luggage</li>
+  <li>Vehicle preference and AC or non-AC</li>
+  <li>One-way or round trip</li>
+  <li>Name and mobile number</li>
+</ol>
+<p>Many organisers would rather message than fill a form, so add a WhatsApp button with a pre-filled message that includes the vehicle or route page they were viewing. They can then send their itinerary directly. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a> for the setup. Once booked, confirm the driver's name, vehicle number and pickup time in writing, and accept advance payments by UPI with a proper receipt.</p>
+
+<h2>Driver and safety information</h2>
+<p>For long trips with families and children, safety is often the deciding factor. Describe what you actually do:</p>
+<ul>
+  <li>Driver experience on highways and hill routes, and how you verify drivers</li>
+  <li>Rest rules on long journeys, and when you provide a second driver</li>
+  <li>Regular servicing, cleaning and checks before each trip</li>
+  <li>Valid registration, fitness, insurance and the permits needed for interstate trips; check current rules with your RTO</li>
+  <li>GPS tracking, first-aid kits, fire extinguishers and seat belts, only where fitted</li>
+</ul>
+<p>Genuine Google reviews that mention the driver and the trip carry more weight than anything you write about yourself.</p>
+
+<h2>Local SEO and ad landing pages</h2>
+<ul>
+  <li>Target searches like "tempo traveller on rent in {city}", "mini bus on rent {city}" and "bus hire for wedding in {city}"</li>
+  <li>Keep your Google Business Profile complete, with vehicle photos, service areas and regular reviews</li>
+  <li>Run seasonal ads for summer holidays and the wedding season to focused landing pages rather than your homepage</li>
+  <li>Make sure pages load quickly on mobile, because most organisers search from their phones</li>
+</ul>
+
+<p>Want a website that turns group trip searches into bookings? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> for your seasonal ad campaigns.</p>
 `,
   },
 ];

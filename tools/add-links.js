@@ -495,6 +495,10 @@ const LINKS = [
   ['woocommerce-subscriptions', '<h2>Recurring payments in India</h2>', '<p>Selling access to members-only content or a community rather than products? See <a href="/blog/membership-website-wordpress/">how to build a membership website on WordPress</a>.</p>\n\n'],
   ['sell-digital-products-wordpress', '<h2>Piracy: what you can and can\'t control</h2>', '<p>For a fuller walkthrough of LMS plugins, video hosting, quizzes and certificates, see <a href="/blog/online-course-website-wordpress/">how to build an online course website on WordPress</a>.</p>\n\n'],
   ['woocommerce-coupons-discounts', '<h2>Measure results</h2>', '<p>Another way to raise order value without a coupon is to sell sensible sets or suggest the right add-ons; see <a href="/blog/woocommerce-product-bundles-upsells/">product bundles, upsells and cross-sells in WooCommerce</a>.</p>\n\n'],
+  // Agent 41
+  ['website-for-construction-companies', '<h2>Essential pages</h2>', '<p>Electrical contracting firms are judged on licences, safety and after-sales support too; see <a href="/blog/website-for-electrical-contractors/">websites for electrical contractors</a>.</p>\n\n'],
+  ['website-for-logistics-transport-companies', '<h2>Essential pages</h2>', '<p>If storage space is your main business rather than transport, see <a href="/blog/website-for-cold-storage-warehousing/">websites for cold storage and warehousing companies</a>.</p>\n\n'],
+  ['website-for-taxi-car-rental', '<h2>Popular routes and services</h2>', '<p>If tempo travellers, mini buses and coaches for groups make up most of your fleet, see <a href="/blog/website-for-tempo-traveller-bus-rental/">websites for tempo traveller and bus rental operators</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
