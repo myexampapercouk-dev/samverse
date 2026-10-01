@@ -8987,6 +8987,8 @@ module.exports = [
 <h2>Quality and compliance</h2>
 <p>Display the certifications, registrations and approvals relevant to your products and markets that you genuinely hold, and keep them current. Avoid medical claims beyond what's appropriate for the product and its approvals.</p>
 
+<p>Supplying research, college and industrial QC labs rather than hospitals? See <a href="/blog/website-for-lab-scientific-equipment-suppliers/">websites for laboratory and scientific equipment suppliers</a>.</p>
+
 <h2>Service and support</h2>
 <ul>
   <li>Installation, training and preventive maintenance</li>
@@ -25342,6 +25344,8 @@ Template: astra
 </ul>
 <p>Pick a quieter season too. Moving a gifting store's domain just before Diwali is asking for trouble.</p>
 
+<p>If the new domain is part of a wider rebrand, with a new name, logo and messaging, see <a href="/blog/rebranding-your-website/">what to update on your website after a rebrand</a>.</p>
+
 <h2>Plan before you move</h2>
 <ol>
   <li><strong>List every URL</strong> on the old site: pages, posts, products, categories and any PDFs that get traffic. Use your XML sitemap, a crawler and Search Console's Performance report.</li>
@@ -28898,6 +28902,8 @@ Template: astra
 </ul>
 <p>A short booking form should ask for the item, the problem, a preferred date and whether pickup and drop is needed. Send a confirmation and a reminder; see <a href="/blog/online-appointment-booking-website/">online appointment booking</a> for the options. Show prices or "starting from" guidance if you're comfortable doing so, and explain that parts are charged separately.</p>
 
+<p>If treadmills, home gyms and commercial fitness setups are the main part of your business, see <a href="/blog/website-for-gym-equipment-sellers/">websites for gym and fitness equipment sellers</a>.</p>
+
 <h2>Team, school and club orders</h2>
 <p>Schools, academies, corporate sports days and local clubs buy in bulk, and a single team order can be worth a lot of walk-in sales. Make these orders easy to place:</p>
 <ul>
@@ -31527,6 +31533,269 @@ Template: astra
 </ul>
 
 <p>Would you rather not chase conflicts yourself? My <a href="/wordpress-maintenance/">WordPress maintenance</a> plans include tested updates, backups and troubleshooting when something breaks.</p>
+`,
+  },
+  {
+    slug: 'website-for-gym-equipment-sellers',
+    seoTitle: 'Websites for Gym and Fitness Equipment Sellers',
+    title: 'Websites for Gym and Fitness Equipment Sellers: Home Ranges, Gym Setups and Service',
+    description: 'How gym equipment sellers can use their website to sell home fitness ranges, win commercial gym and society projects, and promote installation and service.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-seo-services'],
+    body: `
+<p>People buying fitness equipment fall into two very different groups. A family choosing a treadmill for the spare room wants help picking the right model, a clear price and confidence that someone will install and service it. A gym owner, housing society or company setting up a fitness room wants a layout, a full equipment list, a proper quote and a supplier who will still answer the phone three years later. A good website serves both without confusing either.</p>
+<p>This guide is for businesses that sell, install and service fitness equipment. If you run a gym or studio yourself, see <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms, yoga studios and fitness trainers</a> instead.</p>
+
+<h2>Separate home and commercial ranges</h2>
+<p>The first question every visitor asks is "is this for me?" Give home buyers and commercial buyers separate paths from the homepage and the main menu.</p>
+<table>
+  <thead><tr><th></th><th>Home fitness</th><th>Commercial fitness</th></tr></thead>
+  <tbody>
+    <tr><td>Typical buyers</td><td>Families, working professionals, older adults</td><td>Gyms, housing societies, hotels, offices, schools and academies</td></tr>
+    <tr><td>What they compare</td><td>Price, size, noise, foldability, maximum user weight</td><td>Build quality, suitability for heavy daily use, warranty terms, service support</td></tr>
+    <tr><td>How they buy</td><td>Online order or a showroom visit</td><td>Site visit, layout plan, quote and purchase order</td></tr>
+    <tr><td>Main call to action</td><td>Buy now, or book a showroom demo</td><td>Request a gym setup consultation</td></tr>
+  </tbody>
+</table>
+<p>Within each path, organise by category: treadmills, exercise and spin bikes, cross trainers, rowers, multi-gyms, strength machines, benches and racks, dumbbells and plates, flooring and accessories. Add filters for the decisions buyers actually make, such as maximum user weight, footprint, foldable or not, and price band.</p>
+
+<h2>Product pages that answer the hard questions</h2>
+<p>Fitness equipment is bulky, expensive and awkward to return, so buyers want certainty before they order. Every product page should cover:</p>
+<ul>
+  <li><strong>Specifications in a consistent table:</strong> dimensions in use and folded, machine weight, maximum user weight, motor or resistance type, speed or incline range and power requirement</li>
+  <li><strong>Space and setup:</strong> the floor area needed and any electrical requirements, using the manufacturer's figures</li>
+  <li><strong>Who it suits:</strong> walking or running, beginner or regular training, home or light commercial use</li>
+  <li><strong>Warranty in plain words</strong> (more on this below)</li>
+  <li><strong>Delivery and installation:</strong> whether installation is included and any extra charges, for example for upper floors without a lift</li>
+  <li><strong>Real photos and a short video</strong> of the machine in use and folded away</li>
+</ul>
+<p>Write your own descriptions rather than pasting the brand's text, and avoid health promises such as guaranteed weight loss. If one machine comes in several colours or weight options, sell it as one product with choices; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>
+
+<h2>Gym setup consultations</h2>
+<p>A society committee or HR team setting up a fitness room rarely knows exactly what to buy. That's your opportunity: sell the expertise, not just the machines.</p>
+<ul>
+  <li>A dedicated page explaining your process: site visit or video call, measurements, layout plan, equipment list, quote, delivery, installation and handover</li>
+  <li>Example packages by space and user type, such as a compact society gym, a hotel fitness room or a full commercial gym, presented as starting points rather than fixed bundles</li>
+  <li>Layout drawings and photos from past projects, shared with the client's permission</li>
+  <li>Guidance on the things buyers forget: flooring, mirrors, ventilation and power points</li>
+  <li>A project gallery labelled by type (society, hotel, corporate, commercial gym) so visitors find examples like their own</li>
+</ul>
+
+<h2>B2B quote forms for gyms, societies and offices</h2>
+<p>A generic contact form wastes time on both sides. A short, staged quote form gets you what you need to reply properly:</p>
+<ol>
+  <li>Type of facility: commercial gym, housing society, hotel, office, school or academy</li>
+  <li>Approximate floor area and expected daily users</li>
+  <li>Equipment needed (cardio, strength, free weights or a full setup), or an uploaded list</li>
+  <li>Budget range and any preferred brands</li>
+  <li>Location, timeline and whether it's a new gym or an upgrade</li>
+  <li>Contact person and preferred channel, including WhatsApp</li>
+</ol>
+<p>See <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms for lead qualification</a>. Say upfront that you issue GST invoices and accept purchase orders, since companies and societies usually need both. Committees often compare several quotes, so a clear quote with model numbers, warranty and service terms helps you stand out.</p>
+
+<h2>Installation, service and AMC</h2>
+<p>After-sales service is what separates a serious equipment business from a marketplace listing. Give it a proper section of the site:</p>
+<ul>
+  <li><strong>Installation and assembly:</strong> what's included, typical timelines and what the customer should arrange beforehand</li>
+  <li><strong>Service requests:</strong> a form asking for the model, the problem, a photo or short video, and the address</li>
+  <li><strong>Annual maintenance contracts</strong> for gyms and societies, listing what each visit covers, such as lubrication, belt and cable checks, and upholstery</li>
+  <li><strong>Repairs and spares</strong> for equipment bought elsewhere, if you offer it, which brings in new customers</li>
+  <li><strong>Service areas,</strong> so people know whether you cover their city</li>
+</ul>
+
+<h2>Warranty information buyers can trust</h2>
+<p>Warranty is one of the first things buyers compare, and vague claims lead to disputes later. On each product page, state:</p>
+<ul>
+  <li>Coverage for each part separately where the brand does so, such as frame, motor, parts and labour</li>
+  <li>Who handles claims: you, the brand's service network, or both</li>
+  <li>Whether the terms change for commercial use, as some brands' warranties do</li>
+  <li>What isn't covered, such as wear parts or damage from misuse</li>
+  <li>How to register the product and raise a claim</li>
+</ul>
+<p>Take these details from each manufacturer's current terms and update them when they change. Only describe yourself as an authorised dealer or service centre for brands where that's true, and check before using brand logos.</p>
+
+<h2>Selling online: payments and delivery</h2>
+<ul>
+  <li>UPI, cards and net banking; if your payment gateway offers EMI on larger items, describe it exactly as the gateway's terms allow</li>
+  <li>A part-advance or COD limit for heavy items, so cancelled deliveries don't eat your margin</li>
+  <li>A pin code check that limits bulky items to areas where your team can deliver and install</li>
+  <li>Clear rules on returns and cancellations once equipment has been assembled</li>
+  <li>An invitation to try machines in your showroom before ordering online</li>
+</ul>
+
+<h2>Local SEO, trust and speed</h2>
+<p>Buyers search for things like "treadmill shop near me", "gym equipment dealer in {city}" and "commercial gym setup in {city}". Keep your Google Business Profile complete with showroom photos, hours and reviews, mention the areas you serve, and publish practical buying guides such as how to choose a home treadmill or what a society gym needs. Keep pages fast too: equipment galleries and videos are heavy, so compress images, load videos only when tapped and skip large sliders on mobile.</p>
+
+<p>Planning a website or online store for your fitness equipment business? See <a href="/woocommerce-developer/">WooCommerce store development</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> to reach more local buyers.</p>
+`,
+  },
+  {
+    slug: 'website-for-lab-scientific-equipment-suppliers',
+    seoTitle: 'Websites for Lab and Scientific Equipment Suppliers',
+    title: 'Websites for Laboratory and Scientific Equipment Suppliers: Catalogues, Service and Tenders',
+    description: 'How lab and scientific equipment suppliers can build a website with a spec-rich catalogue, datasheets, calibration and service pages, and tender enquiry forms.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'woocommerce-developer'],
+    body: `
+<p>Lab equipment buyers are careful, technical and often slow to decide. A QC manager at a pharma plant, a professor setting up a research lab or a purchase officer at a government institute needs exact specifications, proof that you can supply and support the instrument, and paperwork that satisfies their procurement process. Your website should give them all three without making them call you for the basics.</p>
+<p>This guide is for suppliers of laboratory instruments, glassware, consumables and lab furniture to research, education and industrial labs. If you mainly sell to hospitals and clinics, see <a href="/blog/website-for-medical-equipment-suppliers/">websites for medical equipment suppliers</a>.</p>
+
+<h2>Who buys, and what they need from your site</h2>
+<table>
+  <thead><tr><th>Buyer</th><th>What they look for</th></tr></thead>
+  <tbody>
+    <tr><td>Pharma and chemical QC labs</td><td>Precise specifications, documentation, qualification support and calibration</td></tr>
+    <tr><td>Food, water and environmental testing labs</td><td>Instruments suited to their test methods, steady consumables supply and quick service</td></tr>
+    <tr><td>Universities and research institutes</td><td>Specs that match tender requirements, proforma invoices, installation and training</td></tr>
+    <tr><td>Schools and teaching labs</td><td>Complete lab setups, safety, budget options and reliable delivery</td></tr>
+    <tr><td>Industrial R&amp;D and production</td><td>Reliability, spares availability and maintenance contracts</td></tr>
+  </tbody>
+</table>
+<p>Turn these groups into "industries" or "applications" pages that link to the relevant products, so a food testing lab doesn't have to wade through school science kits to find what it needs.</p>
+
+<h2>A catalogue built around specifications</h2>
+<p>Organise categories the way lab staff think: instruments by type (balances, centrifuges, incubators, ovens, autoclaves, microscopes, pH and conductivity meters, spectrophotometers, fume hoods), then glassware and plasticware, consumables and lab furniture. Every product page needs:</p>
+<ul>
+  <li>A specification table with consistent fields, such as capacity, range, readability or accuracy, temperature range, power supply, dimensions and model number</li>
+  <li>Models in a range compared side by side when they differ mainly by capacity</li>
+  <li>Applications in plain words: which tests or sample types the instrument suits</li>
+  <li>Linked accessories, consumables and spares</li>
+  <li>Downloadable datasheets, brochures and manuals</li>
+  <li>A "Request a quote" button that carries the model number into the form</li>
+</ul>
+<p>Filters on the most-compared specifications save buyers a lot of time. For more on structure and product pages, see <a href="/blog/industrial-website-product-catalogue/">how to build a product catalogue website</a>. Most suppliers don't need a shopping cart for instruments, which are usually quoted, but consumables and glassware can sell well online.</p>
+
+<h2>Datasheets and brands: accurate and authorised</h2>
+<ul>
+  <li>Use each manufacturer's current datasheets, and replace them when models are updated or discontinued</li>
+  <li>Write your own product descriptions rather than copying the manufacturer's text, which already appears on many other sites; see <a href="/blog/duplicate-content-explained/">duplicate content explained</a></li>
+  <li>Only list brands you're authorised to sell, and only use words like "authorised dealer" or "distributor" where that's true. Check each brand's rules before using its logo.</li>
+  <li>Keep datasheets free to download. Asking for an email before every PDF frustrates technical buyers; save forms for quotes and demos.</li>
+  <li>Give PDFs clear file names with the brand and model, and keep them reasonably small</li>
+</ul>
+<p>Manufacturer authorisation letters often matter in tenders, so keep current copies ready to share on request.</p>
+
+<h2>Calibration, installation and service</h2>
+<p>For many labs, support matters as much as the instrument itself. Give each service its own page:</p>
+<ul>
+  <li>Installation, commissioning and user training</li>
+  <li>Qualification documentation (IQ, OQ and PQ) if you provide it, which regulated labs often require</li>
+  <li>Calibration: which instruments and parameters you cover, on-site or at your facility, and what the certificate includes. If your calibration lab is NABL-accredited, state the scope accurately, and never imply accreditation you don't hold.</li>
+  <li>Preventive maintenance, AMC and CMC options</li>
+  <li>Repairs and spares, including for instruments you didn't supply, if you offer this</li>
+  <li>Service coverage areas and how to raise a request</li>
+</ul>
+<p>A service request form should ask for the instrument, make, model, serial number, the problem and the lab's location. Reminders before calibration certificates fall due are a simple way to win repeat business.</p>
+
+<h2>Institutional and tender enquiries</h2>
+<p>Universities, government labs and large companies buy through formal procurement. Make that process easier for them:</p>
+<ul>
+  <li>A page for institutional buyers explaining how you handle quotations, proforma invoices, purchase orders and payment terms</li>
+  <li>A bulk and tender enquiry form that accepts uploaded specification sheets or tender documents</li>
+  <li>The government procurement platforms you're registered on, such as GeM, if that applies to you</li>
+  <li>The documents you can usually provide, such as company registration, GST details, manufacturer authorisation and past supply references; requirements vary by tender, so check each one</li>
+  <li>Past supply references by sector, shown with each institution's permission</li>
+</ul>
+<p>Reply quickly, with a named contact. Lab purchases are often tied to budget cycles and tender deadlines, and a slow response can mean waiting another year.</p>
+
+<h2>Getting found and trusted</h2>
+<ul>
+  <li><strong>Search terms:</strong> build pages around real searches like "{instrument} supplier in {city}", "{brand} dealer in {state}", "food testing lab equipment" and "school science lab equipment suppliers"</li>
+  <li><strong>Locations:</strong> create city pages only where you genuinely have an office or service team</li>
+  <li><strong>Credibility:</strong> years in business, your team's technical background and the size of your service team, stated honestly</li>
+  <li><strong>Proof:</strong> installations and lab setups you've completed, with permission</li>
+  <li><strong>Usability:</strong> site search that finds model numbers, compressed images and a fast mobile experience for engineers checking specs on site</li>
+</ul>
+
+<p>Building or rebuilding a catalogue website for your lab equipment business? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B suppliers</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> if you want to sell consumables online.</p>
+`,
+  },
+  {
+    slug: 'rebranding-your-website',
+    seoTitle: 'Rebranding Your Website After a Name or Brand Change',
+    title: 'Rebranding Your Website: What to Update After a Name or Brand Change',
+    description: 'What to update on your website after a rebrand or business name change: logo and design, keeping or changing the domain, redirects, listings and protecting SEO.',
+    date: '2026-10-01',
+    category: 'Guides',
+    related: ['website-redesign', 'wordpress-seo-services'],
+    body: `
+<p>A rebrand touches almost everything customers see: your name, logo, colours, tone of voice and sometimes your domain. The website is where it all comes together, and it's also where a rushed rebrand does the most damage, through broken links, confused customers and lost Google rankings. Here's how to update your website after a rebrand or business name change, in a sensible order.</p>
+
+<h2>Decide what's actually changing</h2>
+<p>"Rebrand" can mean very different jobs, and each level adds work and risk:</p>
+<table>
+  <thead><tr><th>Type of change</th><th>What it affects on the website</th><th>SEO risk</th></tr></thead>
+  <tbody>
+    <tr><td>New logo and colours</td><td>Logo files, favicon, colours, social images</td><td>Low</td></tr>
+    <tr><td>New name, same domain</td><td>Site title, page text, structured data, legal pages, emails, listings</td><td>Moderate, mainly around brand searches</td></tr>
+    <tr><td>New name and new domain</td><td>All of the above, plus redirects and a full domain move</td><td>Highest</td></tr>
+  </tbody>
+</table>
+<p>Before announcing a new name, check it isn't already used or trademarked by someone in your field (a trademark attorney can advise), and secure the matching domain and social handles. If you're also planning a redesign, consider staging the work, for example launching the new look on your current domain first and moving domains once it has settled.</p>
+
+<h2>Update the logo, design and brand assets</h2>
+<ul>
+  <li>Logo in the header, footer, emails and invoices, ideally as SVG plus transparent PNG versions</li>
+  <li>Favicon and home-screen icons, which browsers cache stubbornly, so test in a private window</li>
+  <li>Brand colours and fonts set as global styles, so the change applies everywhere at once</li>
+  <li>The default social share image, so links shared on WhatsApp and LinkedIn show the new brand</li>
+  <li>Banners, photos with old signage, and PDFs such as brochures, price lists and menus</li>
+</ul>
+<p>For the files you'll need, see <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>. A new logo is also a good moment to decide whether the site needs a full redesign or just a refresh, rather than letting a simple logo swap turn into an unplanned rebuild.</p>
+
+<h2>Find every mention of the old name</h2>
+<p>Old names hide in more places than you'd expect:</p>
+<ul>
+  <li>The site title and tagline in WordPress settings, and SEO title templates that add the business name to every page</li>
+  <li>Headings, body text, image alt text, the About page and the footer copyright line</li>
+  <li>Privacy policy, terms and refund policy, which name the business and its contact details; if the legal entity has changed too, ask your CA or lawyer what these should say</li>
+  <li>Structured data: your organisation or local business name, logo and social profile links</li>
+  <li>Form notifications, auto-replies, WooCommerce order emails and invoice templates; check with your CA which name and details invoices must show</li>
+  <li>Email signatures, sender names, chat widgets and booking confirmations</li>
+</ul>
+<p>A search of the site's database on a staging copy catches most of these, and a crawl of the live site catches the rest.</p>
+
+<h2>Keep the domain or change it?</h2>
+<p>A new name doesn't automatically mean a new domain.</p>
+<ul>
+  <li><strong>Keep the domain</strong> if it's neutral or still fits. Nothing needs redirecting and your rankings carry on as before.</li>
+  <li><strong>Change the domain</strong> if it contains the old name and would genuinely confuse customers. This is a project in its own right, with page-by-page 301 redirects and Search Console's Change of Address tool.</li>
+  <li><strong>Register the new domain anyway,</strong> even if you don't switch yet, so nobody else takes it.</li>
+</ul>
+<p>If you do move, follow <a href="/blog/change-domain-name-without-losing-seo/">how to change your domain name without losing SEO</a>, keep the old domain renewed for years, and keep forwarding email sent to old addresses so customer replies don't bounce.</p>
+
+<h2>Redirect any URLs that change</h2>
+<p>Even on the same domain, rebrands often change URLs: renamed services or products, a page that included the old name, or a restructured menu. Every URL that changes needs a 301 redirect to its closest new equivalent. List old and new URLs in a spreadsheet, avoid redirect chains, and don't rename working URLs just because they mention the old name unless it's genuinely confusing; a page with history is worth keeping. The <a href="/blog/redesign-website-without-losing-rankings/">guide to redesigning without losing rankings</a> walks through URL mapping in detail.</p>
+
+<h2>Google Business Profile and listings</h2>
+<ul>
+  <li>Update your Google Business Profile name, logo, photos and website link. Use the real new name as it appears on your signage and documents, not a keyword-stuffed version. A name change may trigger a review or re-verification, so make it when you can respond quickly.</li>
+  <li>Update social profile names, handles where possible, bios, profile pictures and website links</li>
+  <li>Update directories and platforms such as Justdial, IndiaMART, industry associations and any booking or delivery apps you use</li>
+  <li>Refresh ad text, display names and sitelinks in Google Ads and Meta ads</li>
+  <li>Plan offline changes too: signage, visiting cards, vehicle branding, packaging and printed QR codes</li>
+</ul>
+<p>Matching details everywhere help Google connect the new name to your existing reputation and reviews; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+
+<h2>Tell customers clearly</h2>
+<ul>
+  <li>A short homepage announcement or banner: "We're now New Name (formerly Old Name)"</li>
+  <li>A paragraph on the About page explaining why the name changed and what stays the same, such as the team, address, service and warranties</li>
+  <li>An email to existing customers and a message to WhatsApp contacts who have opted in</li>
+  <li>If bank or UPI details change, announce it only through official channels and tell customers how to verify, because changed payment details are a common hook for fraud</li>
+</ul>
+
+<h2>Protect your SEO through the switch</h2>
+<ul>
+  <li><strong>Benchmark first:</strong> note clicks, top pages, brand searches and monthly enquiries from Search Console and analytics</li>
+  <li><strong>Keep the old name visible:</strong> people will search for it for months or years, so mention "formerly Old Name" on the About page and footer, and add it as an alternate name in your structured data</li>
+  <li><strong>Test on staging</strong> and launch in a quieter season for your business</li>
+  <li><strong>Watch after launch:</strong> check Search Console for 404 errors, confirm searches for both names find you, and be patient while Google updates titles and your business profile</li>
+</ul>
+
+<p>Planning a rebrand and want the website side handled carefully? See <a href="/website-redesign/">website redesign</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> to protect your rankings through the change.</p>
 `,
   },
 ];
