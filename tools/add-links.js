@@ -539,6 +539,10 @@ const LINKS = [
   ['website-for-toy-stores', '<h2>Make gifting easy</h2>', '<p>Selling baby care products such as lotions, wipes or feeding items as well? They need even more careful ingredient and age information; see <a href="/blog/website-for-baby-products-brands/">websites for baby care and baby products brands</a>.</p>\n\n'],
   ['solar-company-website-guide', '<h2>Build trust quickly</h2>', '<p>If your business mainly sells inverters, UPS systems and batteries for power backup, the website needs are a little different; see <a href="/blog/website-for-inverter-battery-dealers/">websites for inverter, UPS and battery dealers</a>.</p>\n\n'],
   ['image-optimization-wordpress', '<h2>3. Use modern formats</h2>', '<p>Not sure which compression tool to use? See <a href="/blog/image-compression-plugins-compared/">WordPress image compression plugins compared</a>.</p>\n\n'],
+  // Agent 52
+  ['website-for-music-dance-academies', '<h2>Teachers</h2>', '<p>If your teachers also prepare couples and families for wedding performances, that work deserves its own pages; see <a href="/blog/website-for-wedding-choreographers/">websites for wedding and sangeet choreographers</a>.</p>\n\n'],
+  ['website-for-astrologers-vastu-consultants', '<h2>Language</h2>', '<p>If you also perform pujas and sanskars at clients\' homes or online, see <a href="/blog/website-for-pandit-puja-services/">websites for pandits and puja booking services</a>.</p>\n\n'],
+  ['woocommerce-coupons-discounts', '<h2>Restrictions to protect margins</h2>', '<p>Coupons reduce a price, while gift cards and store credit hold value a customer has paid for or earned; for those, see <a href="/blog/woocommerce-gift-cards/">selling gift cards and store credit in WooCommerce</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

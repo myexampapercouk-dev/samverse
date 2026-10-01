@@ -7964,6 +7964,8 @@ module.exports = [
   <li>Online and offline classes</li>
 </ul>
 
+<p>If your teachers also prepare couples and families for wedding performances, that work deserves its own pages; see <a href="/blog/website-for-wedding-choreographers/">websites for wedding and sangeet choreographers</a>.</p>
+
 <h2>Teachers</h2>
 <p>Teacher profiles with training, experience, performances and teaching style, with photos. Teachers are often the main reason families choose an academy.</p>
 
@@ -12638,6 +12640,8 @@ module.exports = [
   <li>WhatsApp for questions; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a></li>
 </ul>
 
+<p>If you also perform pujas and sanskars at clients' homes or online, see <a href="/blog/website-for-pandit-puja-services/">websites for pandits and puja booking services</a>.</p>
+
 <h2>Language</h2>
 <p>Many clients prefer Hindi or a regional language. A bilingual website can reach more people; see <a href="/blog/multilingual-wordpress-website-hindi-english/">Hindi and English websites</a>.</p>
 
@@ -13625,6 +13629,8 @@ module.exports = [
   <li><strong>Fixed product discount:</strong> an amount off specific products</li>
   <li><strong>Free shipping:</strong> a coupon can enable free shipping when your shipping method allows it</li>
 </ul>
+
+<p>Coupons reduce a price, while gift cards and store credit hold value a customer has paid for or earned; for those, see <a href="/blog/woocommerce-gift-cards/">selling gift cards and store credit in WooCommerce</a>.</p>
 
 <h2>Restrictions to protect margins</h2>
 <ul>
@@ -30986,6 +30992,275 @@ Template: astra
 <p>No plugin fixes images uploaded far larger than needed, or a hero image that's lazy-loaded; those still need fixing at the source.</p>
 
 <p>Not sure which setup your site needs? Image optimisation is usually one of the first steps in my <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> work. Running an online store? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-wedding-choreographers',
+    title: 'Websites for Wedding and Sangeet Choreographers',
+    description: 'What a wedding and sangeet choreographer\'s website needs: fast-loading performance videos, clear packages, home and online sessions, availability and enquiries.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Families planning a sangeet don't just want a good dancer. They want someone who can get a nervous groom, two shy aunties and a grandfather who hasn't danced in decades on stage, in step and smiling, within a few weeks. Instagram shows your energy, but a website is where a family checks your packages, sees how sessions work and sends a proper enquiry with their date.</p>
+<p>This guide is for choreographers who prepare couples and families for weddings. If you run regular weekly classes, see <a href="/blog/website-for-music-dance-academies/">websites for music and dance academies</a> instead, as the needs are quite different.</p>
+
+<h2>What families want to know before booking</h2>
+<p>Most enquiries come from the bride, the groom or a cousin who has been put in charge of the sangeet. Their questions are usually the same:</p>
+<ul>
+  <li><strong>Can you teach non-dancers?</strong> Patience with beginners and older relatives matters more than your own skill</li>
+  <li><strong>Which styles do you choreograph?</strong> Bollywood, Punjabi and bhangra, garba and dandiya, regional styles, couple dances, contemporary</li>
+  <li><strong>How many sessions will we need,</strong> and how many weeks before the wedding should we start?</li>
+  <li><strong>Where do sessions happen?</strong> At our home, at your studio or online</li>
+  <li><strong>What else do you handle?</strong> Song edits and mixes, entries, stage blocking, props and coordinating with the DJ on the day</li>
+  <li><strong>Are you free on our dates?</strong> Especially in peak wedding season</li>
+</ul>
+<p>Answer these on your homepage and service pages, and you'll get fewer vague "rates?" messages and more enquiries from families ready to book.</p>
+
+<h2>Show performances without slowing the site</h2>
+<p>Video is your strongest proof, but it's also the quickest way to make a site painfully slow on mobile data. A few rules keep both:</p>
+<ul>
+  <li>Host videos on a platform such as YouTube or Vimeo, not as large files uploaded to WordPress</li>
+  <li>Use click-to-play previews (a thumbnail that loads the player only when tapped) rather than autoplaying embeds</li>
+  <li>Put one short highlight reel near the top of the homepage, then group the rest by type: couple dances, family performances, bridal entries, flash mobs</li>
+  <li>Embed only a few hand-picked Instagram reels; social media feed plugins load heavy scripts on every page</li>
+  <li>Add a line under each clip: the occasion, the city and who performed, such as "parents of the groom, first-time dancers"</li>
+</ul>
+<p>Rehearsal clips next to the final performance show your teaching ability better than a polished video alone. Always get the family's permission before publishing wedding footage, and take extra care with clips of children. Videos set to commercial songs can sometimes be muted or blocked by platforms, so check each platform's current rules. For more on using video well, see <a href="/blog/video-on-business-website/">video on your business website</a>.</p>
+
+<h2>Packages that are easy to compare</h2>
+<p>Families compare two or three choreographers at once, so make your packages easy to understand at a glance.</p>
+<table>
+  <thead>
+    <tr><th>Package</th><th>What to spell out</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Couple dance</td><td>Number of sessions, length of each, one song or a medley</td></tr>
+    <tr><td>Family performances</td><td>Number of acts, maximum dancers per act, age range you're comfortable with</td></tr>
+    <tr><td>Complete sangeet</td><td>All acts, running order, song edits, rehearsal at the venue and presence on the night</td></tr>
+    <tr><td>Online coaching</td><td>Live video sessions, practice videos and how relatives in other cities join in</td></tr>
+    <tr><td>Destination weddings</td><td>Travel, stay, how many days you'll be there and on-site rehearsals</td></tr>
+  </tbody>
+</table>
+<p>Also state what costs extra: additional sessions, travel beyond your usual area, props or costume coordination. Whether to publish prices is your decision; "starting from" figures filter out mismatched budgets without locking you in. See <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
+
+<h2>Home, studio and online sessions</h2>
+<p>Explain each format on its own page or in a clear section, because families plan around them very differently.</p>
+<h3>Home sessions</h3>
+<p>List the areas you cover, any travel charge, and what the family needs to arrange: a cleared room, a speaker and a time when everyone can be present. Say if you can send a male or female choreographer on request, as some families have a preference.</p>
+<h3>Studio sessions</h3>
+<p>Share the address with a map, parking details and photos of the space, so families know it's large enough for a group.</p>
+<h3>Online sessions</h3>
+<p>Many families have relatives in other cities or abroad. Explain how live video sessions work, how you share private practice videos and how the whole group comes together for final rehearsals.</p>
+
+<h2>Availability and enquiries</h2>
+<p>The wedding date is the first thing you need, so make the enquiry form ask for what you need to check availability and quote:</p>
+<ul>
+  <li>Sangeet date, city and venue</li>
+  <li>Number of performances and approximate number of dancers</li>
+  <li>Age range of the dancers</li>
+  <li>Preferred format: home, studio or online</li>
+  <li>When they'd like to start</li>
+  <li>Budget range (optional)</li>
+</ul>
+<p>Add a WhatsApp button with a pre-filled message such as "Hi, we'd like choreography for a sangeet on...". If you show an availability calendar, keep it accurate; showing booked dates as free causes more problems than having no calendar at all. Explain how a booking is confirmed, the advance (by UPI or bank transfer) and what happens if the wedding is postponed.</p>
+
+<h2>Trust signals families look for</h2>
+<ul>
+  <li>Google reviews from families, requested soon after the wedding while memories are fresh</li>
+  <li>Your training and experience, stated honestly, plus profiles of any assistant choreographers who'll take sessions</li>
+  <li>Photos from real practice sessions, not only stage shots</li>
+  <li>A note on how you adapt steps for older relatives or anyone with knee or back problems</li>
+  <li>Clear terms on rescheduling and missed sessions</li>
+</ul>
+
+<h2>Getting found</h2>
+<p>Families search with an occasion and a city: "sangeet choreographer in Delhi", "wedding choreographer near me", "couple dance choreographer in Mumbai", "bridal entry choreography". To appear for these:</p>
+<ul>
+  <li>Create separate pages for the services you're genuinely known for, with real clips and details</li>
+  <li>Set up a Google Business Profile, as a service-area business if you mostly visit homes</li>
+  <li>Link your Instagram bio to the most relevant page, not just the homepage</li>
+  <li>Build relationships with planners and venues who can refer you; see what they need in <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a></li>
+  <li>Update your packages and dates before each wedding season</li>
+</ul>
+
+<p>Planning a website for your choreography business? See <a href="/wordpress-website-development/">WordPress website development</a>, or for wedding-season ads, a focused <a href="/landing-page-design/">landing page</a> built around one package and a quick enquiry form.</p>
+`,
+  },
+  {
+    slug: 'website-for-pandit-puja-services',
+    title: 'Websites for Pandits and Puja Booking Services',
+    description: 'How pandits and puja services can use a website: services by occasion, languages, home and online puja booking, samagri lists and honest dakshina guidance.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-temples-and-ngos', 'landing-page-design'],
+    body: `
+<p>Families still find a pandit through relatives and neighbours, but more and more of them now search online: "pandit for griha pravesh in Pune", "Bengali purohit in Bengaluru", "online puja for family abroad". A clear, respectful website helps them understand what you perform, in which language and tradition, and how to book, without a dozen phone calls.</p>
+<p>This guide is for individual pandits, groups of pandits and puja booking services. Temples have different needs, such as darshan timings and donations; see <a href="/blog/temple-ngo-website-online-donations/">temple, trust and NGO websites</a> for those.</p>
+
+<h2>What families want to know</h2>
+<ul>
+  <li><strong>Which rituals you perform,</strong> and in which tradition or regional practice</li>
+  <li><strong>Languages:</strong> whether you can explain the ritual in Hindi, Marathi, Tamil, Telugu, Bengali, Gujarati, English or another language the family understands</li>
+  <li><strong>Experience and training,</strong> stated simply and truthfully</li>
+  <li><strong>Muhurat:</strong> whether you help choose an auspicious date and time</li>
+  <li><strong>Format:</strong> at their home, at a temple or hall, or online</li>
+  <li><strong>Samagri:</strong> what they need to arrange and what you bring</li>
+  <li><strong>Dakshina:</strong> roughly what to expect, a question many families feel awkward asking</li>
+</ul>
+
+<h2>Organise services by occasion</h2>
+<p>Families think in terms of the occasion, not the ritual's formal name, so build your service pages around occasions:</p>
+<ul>
+  <li><strong>New beginnings:</strong> griha pravesh, bhoomi puja, office or shop opening, new vehicle puja</li>
+  <li><strong>Life events:</strong> naamkaran, annaprashan, mundan, upanayana, vivah and related ceremonies</li>
+  <li><strong>Kathas and pujas:</strong> Satyanarayan katha, Rudrabhishek, havan, Navgraha shanti</li>
+  <li><strong>Festivals:</strong> Diwali Lakshmi puja, Ganesh Chaturthi, Navratri, Durga puja</li>
+  <li><strong>Remembrance:</strong> shraddh and other rituals for departed family members</li>
+</ul>
+<p>Each page should explain, in plain words, what the ritual is for, how long it usually takes, how many pandits are involved, what the family does during it and whether it can be done online. Write remembrance pages with particular care: families reading them are often grieving, so keep the tone gentle and make contact simple.</p>
+
+<h2>Home and online puja booking</h2>
+<p>A short booking form saves both sides time. Ask only for what you need:</p>
+<ul>
+  <li>Occasion and preferred date, with a "please suggest a muhurat" option</li>
+  <li>City and area</li>
+  <li>Preferred language</li>
+  <li>Home, venue or online</li>
+  <li>Whether they'd like you to bring the samagri</li>
+  <li>Phone number and WhatsApp</li>
+</ul>
+<p>For online pujas, explain how the video call works, what the family should keep ready, how they take part in the sankalp and how you handle time zones for families abroad. Confirm every booking on WhatsApp with the date, time, address or call link and samagri list. Names, gotra, birth details and home addresses are personal information, so collect them only when needed, keep them private and publish a privacy policy.</p>
+
+<h2>Samagri details</h2>
+<p>A missing item on the day causes stress for everyone. For each puja, offer a clear samagri list that families can print or forward on WhatsApp, split into:</p>
+<ul>
+  <li>Items the family keeps ready, such as flowers, fruits, sweets, plates and a kalash</li>
+  <li>Items you bring as part of your service</li>
+  <li>An optional complete samagri kit, with what it contains and whether it's charged separately</li>
+</ul>
+<p>Mention substitutes for items that are hard to find in some cities or abroad, if your tradition allows them.</p>
+
+<h2>Dakshina: transparent guidance without fixed prices</h2>
+<p>Many pandits prefer not to publish a rate card, because dakshina is traditionally an offering and every ceremony differs. But silence leaves families anxious about what to expect. You can be transparent without fixing a price:</p>
+<ul>
+  <li>Explain the factors that affect dakshina: the ritual, its duration, the number of pandits, travel distance and whether samagri is included</li>
+  <li>Say clearly what is included and what isn't, so there are no surprises on the day</li>
+  <li>State how and when it's paid, such as UPI, bank transfer or cash, and whether an advance confirms the date</li>
+  <li>Mention outstation travel and stay arrangements for ceremonies in other cities</li>
+  <li>Invite families to ask, and give a clear answer once they share the details</li>
+</ul>
+<p>For more on this choice, see <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
+
+<h2>A respectful tone that builds trust</h2>
+<ul>
+  <li>Calm colours, readable text and simple menus; many visitors are older family members on basic phones</li>
+  <li>An About page with your training, years of practice and the communities you serve, stated honestly</li>
+  <li>Real photos of ceremonies you've performed, shared with the family's permission</li>
+  <li>Google reviews from families, with genuine names only when they agree</li>
+  <li>No promises of guaranteed results and no fear-based claims about doshas or misfortune</li>
+</ul>
+<p>Families often prefer reading in their own language, so a bilingual site can help; see <a href="/blog/multilingual-wordpress-website-hindi-english/">Hindi, English and regional language websites</a>. If you also offer kundli, matchmaking or muhurat consultations as a separate service, see <a href="/blog/website-for-astrologers-vastu-consultants/">websites for astrologers and vastu consultants</a>.</p>
+
+<h2>Getting found</h2>
+<p>Most searches combine a ritual or language with a place: "pandit for Satyanarayan katha near me", "Marathi guruji for wedding in Pune", "Tamil vadhyar in Hyderabad", "online griha pravesh puja". To appear for them:</p>
+<ul>
+  <li>Create a page for each main occasion and mention the languages and areas you genuinely serve</li>
+  <li>Set up a Google Business Profile, as a service-area business if you travel to families' homes</li>
+  <li>Publish booking information for Diwali, Navratri and other busy festivals a few weeks ahead</li>
+  <li>Keep pages light and fast so they open quickly on mobile data</li>
+</ul>
+
+<p>Want a calm, easy-to-use website for your puja services? See <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a>, or a simple <a href="/landing-page-design/">landing page</a> for festival bookings.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-gift-cards',
+    title: 'Selling Gift Cards and Store Credit in WooCommerce',
+    description: 'How to sell gift cards and store credit in WooCommerce: use cases, plugin options, careful expiry and terms wording, GST questions for your CA and fraud checks.',
+    date: '2026-10-01',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>Gift cards solve a common problem for shoppers: they want to give something from your store but don't know the recipient's size, taste or what they already own. Store credit solves a problem for you: it keeps value inside your business when an order is returned or a customer needs a goodwill gesture. WooCommerce doesn't include either out of the box, but both are straightforward to add if you plan the rules carefully.</p>
+
+<h2>Why sell gift cards and offer store credit</h2>
+<ul>
+  <li><strong>Festival and occasion gifting:</strong> Diwali, Rakhi, birthdays, weddings and anniversaries</li>
+  <li><strong>Last-minute gifts:</strong> an e-gift card delivered by email arrives instantly, when it's too late to ship a parcel</li>
+  <li><strong>Corporate orders:</strong> companies buying cards for employees or clients in bulk</li>
+  <li><strong>Returns and exchanges:</strong> offering store credit as an option alongside a refund</li>
+  <li><strong>Goodwill and rewards:</strong> credit for a delayed order, a loyalty reward or a referral</li>
+</ul>
+<p>Gift cards also bring new customers: the person receiving one often discovers your store for the first time.</p>
+
+<h2>Gift cards, store credit and coupons compared</h2>
+<table>
+  <thead>
+    <tr><th>Option</th><th>How it works</th><th>Best for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Gift card</td><td>Bought and paid for by a customer, often for someone else, with a balance that can be used over several orders</td><td>Gifting and corporate orders</td></tr>
+    <tr><td>Store credit</td><td>A balance you issue to a customer's account or as a code</td><td>Returns, goodwill and rewards</td></tr>
+    <tr><td>Coupon</td><td>A discount on an order, usually not tied to money already paid</td><td>Promotions and offers</td></tr>
+  </tbody>
+</table>
+<p>Coupons are a different tool with their own rules; see <a href="/blog/woocommerce-coupons-discounts/">WooCommerce coupons and discounts</a>.</p>
+
+<h2>Plugin approaches</h2>
+<p>There are three common ways to add gift cards and credit:</p>
+<ol>
+  <li><strong>A dedicated gift card plugin.</strong> Options include the official Gift Cards extension on WooCommerce.com and established third-party plugins. Typical features are fixed or custom amounts, card designs, a personal message, scheduled delivery to the recipient's email, partial redemption and balance tracking</li>
+  <li><strong>A coupon-based store credit plugin.</strong> Some plugins extend WooCommerce coupons so they carry a balance that reduces with each use, which suits returns and goodwill credit</li>
+  <li><strong>Custom development.</strong> Worth considering if you need physical cards that also work in a shop, or a link with your billing or POS software</li>
+</ol>
+<p>Whichever you choose, check current features and pricing, and look for partial redemption, balance checks for customers, an admin screen to view and adjust balances, and clear logs of how each card was used. Before launch, test the full journey on a staging site: buying a card, delivery, scheduled sending, redeeming part of it, refunding an order paid with a card, and how the card appears on invoices.</p>
+
+<h2>Expiry and terms: word them carefully</h2>
+<p>Most complaints about gift cards come from rules the buyer didn't notice. Decide your terms, then show them consistently on the product page, at checkout, in the delivery email and on your terms page:</p>
+<ul>
+  <li>How long the card is valid, stated as a clear date or period, not buried in small print</li>
+  <li>Whether it can be used across several orders, with or without coupons, and on sale items</li>
+  <li>What happens to the balance if an order paid with a card is returned</li>
+  <li>What to do if a code is lost or sent to the wrong email address</li>
+  <li>Whether it can be exchanged for cash</li>
+</ul>
+<p>Rules on expiry, refunds and unfair terms can apply to gift cards, and they change, so have a lawyer review your wording rather than copying another store's. Store credit given in place of a refund should generally be something the customer chooses, not something imposed; check your obligations and keep your <a href="/blog/website-terms-and-conditions/">website terms and conditions</a> in line with your refund policy.</p>
+<p>Keep your cards usable only in your own store. Cards that can be spent at other businesses can fall under RBI rules for prepaid payment instruments, which is a very different undertaking; check with your CA or lawyer if you're considering anything beyond your own store.</p>
+
+<h2>GST and accounting: ask your CA first</h2>
+<p>The GST treatment of gift vouchers, including when tax applies and how it appears on invoices, has been the subject of rulings and clarifications over the years, and it can depend on how your voucher is designed. Before you launch, ask your CA:</p>
+<ul>
+  <li>How GST applies when a card is sold and when it's redeemed</li>
+  <li>What your invoices and order emails should show at each stage</li>
+  <li>How to account for unused balances and expired cards</li>
+</ul>
+<p>Then configure the plugin and your invoices to match their advice. For the wider setup, see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>.</p>
+
+<h2>Preventing gift card fraud</h2>
+<p>Gift cards are attractive to fraudsters because they work like cash and can be resold quickly. Sensible precautions:</p>
+<ul>
+  <li>Use long, random codes, never sequential or guessable ones</li>
+  <li>Limit how many times someone can try codes or check balances, to stop guessing attempts</li>
+  <li>Set a maximum card value and a limit on cards per order</li>
+  <li>Hold high-value or unusual orders, such as many cards sent to different emails, for a manual check before delivery</li>
+  <li>Never allow cash on delivery for gift cards, and don't let gift cards be used to buy more gift cards</li>
+  <li>Turn on your payment gateway's risk checks and watch for chargebacks</li>
+  <li>Add a note that your store will never ask anyone to pay with gift card codes over a call or message</li>
+</ul>
+<p>Gift card balances are only as safe as your store, so keep admin access tight; see the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a>.</p>
+
+<h2>Promoting your gift cards</h2>
+<ul>
+  <li>Give gift cards their own page in the main menu, with designs for festivals, birthdays and weddings</li>
+  <li>Promote e-gift cards as the last-minute answer in the days before festivals, when delivery cut-offs have passed</li>
+  <li>Suggest a gift card on product pages and in the cart: "Not sure what they'd like?"</li>
+  <li>Offer a simple bulk-order form for companies</li>
+  <li>Let buyers share the card on WhatsApp as well as by email</li>
+</ul>
+<p>If you add bonus credit as a promotion, keep it separate from the paid card, with its own clearly stated expiry, so the paid balance and the free bonus aren't confused.</p>
+
+<p>Want gift cards or store credit set up properly on your store? See <a href="/woocommerce-developer/">WooCommerce development</a>, or a focused <a href="/landing-page-design/">landing page</a> for a festival gift card campaign.</p>
 `,
   },
 ];
