@@ -3203,6 +3203,8 @@ module.exports = [
   <li><strong>Pure machine translation:</strong> risky. Awkward wording damages trust, especially in religious, legal or medical contexts.</li>
 </ul>
 
+<p>If you run a translation or interpretation agency yourself, see <a href="/blog/website-for-translation-services/">websites for translation and interpretation agencies</a>.</p>
+
 <h2>SEO best practices</h2>
 <ul>
   <li><strong>Separate URLs per language</strong>, not automatic switching based on location</li>
@@ -3638,6 +3640,8 @@ module.exports = [
 <h2>The essentials</h2>
 <h3>1. SEO</h3>
 <p>An SEO plugin (such as Rank Math or Yoast SEO) handles titles, meta descriptions, XML sitemaps, schema basics and redirects.</p>
+<p>Choosing between the popular options? See <a href="/blog/wordpress-seo-plugins-compared/">Yoast SEO vs Rank Math vs All in One SEO compared</a>.</p>
+
 <h3>2. Security</h3>
 <p>A reputable security plugin or firewall adds login protection, malware scanning and blocks malicious traffic. See the <a href="/blog/wordpress-security-checklist/">security checklist</a>.</p>
 <h3>3. Backups</h3>
@@ -3838,6 +3842,8 @@ module.exports = [
 <p>Case studies show how you think, which matters more to serious clients than pretty pictures alone. See how case studies are structured on this site's <a href="/work/">portfolio</a>.</p>
 
 <p><strong>Real example:</strong> the <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a> shows a Hyderabad interior studio site with a filterable project gallery, detailed services, a design partner page and free quote calls to action throughout.</p>
+
+<p>Civil and structural engineering consultants can present projects the same way; see <a href="/blog/website-for-civil-engineering-consultants/">websites for civil and structural engineering consultants</a>.</p>
 
 <h2>Explain your services and process</h2>
 <ul>
@@ -8320,6 +8326,8 @@ module.exports = [
 </ul>
 <p><strong>Use it to:</strong> find queries with many impressions but few clicks (improve titles and descriptions) and pages ranking around positions 8–20 (improve content and internal links).</p>
 
+<p>For a step-by-step method that turns this report into content ideas and a list of pages to improve, see <a href="/blog/search-console-content-ideas/">how to find content ideas in Search Console</a>.</p>
+
 <h2>Pages (indexing)</h2>
 <p>Shows which pages are indexed and why others aren't: "crawled, currently not indexed", "duplicate without canonical", "excluded by noindex" and more. Not every excluded page is a problem, but important pages should be indexed.</p>
 
@@ -9682,6 +9690,8 @@ module.exports = [
   <li>Update all listings when you move or change numbers</li>
 </ul>
 <p>Keep a simple spreadsheet of every listing and its login.</p>
+
+<p>Consistent details also help Google connect everything to you when people search your name; see <a href="/blog/rank-for-your-business-name/">how to make sure your business ranks for its own name</a>.</p>
 
 <h2>Avoid spammy directories</h2>
 <p>Hundreds of low-quality directory submissions don't help and can look spammy. Focus on platforms your customers actually use and reputable industry sites.</p>
@@ -28062,6 +28072,8 @@ Template: astra
 </ul>
 <p>Add a short AMC quote form asking for the equipment list, connected load and location.</p>
 
+<p>If lifts and elevators are your main business, AMC and breakdown support matter even more; see <a href="/blog/website-for-lift-elevator-companies/">websites for lift and elevator companies</a>.</p>
+
 <h2>Local SEO and speed</h2>
 <ul>
   <li>Target searches like "industrial electrical contractor in {city}", "HT electrical contractor {city}" and "substation installation contractor"</li>
@@ -29056,6 +29068,525 @@ Template: astra
 <p>Fragrance searches are specific: "oud attar", "long-lasting perfume for men", "alcohol-free attar", "mogra perfume" or "perfume gift set for her". Build category and scent-family pages around these, plus helpful guides on topics like how to apply attar or the difference between EDP and EDT. Add product schema so price, availability and ratings can appear in search results. Keep pages fast, since most shoppers browse on their phones: compress product photos and avoid loading heavy videos and pop-ups on every page.</p>
 
 <p>Launching a fragrance brand online, or fixing a store that isn't converting? See <a href="/woocommerce-developer/">WooCommerce store development</a>, or <a href="/landing-page-design/">landing page design</a> for a new launch or festive collection.</p>
+`,
+  },
+  {
+    slug: 'website-for-translation-services',
+    title: 'Websites for Translation and Interpretation Agencies',
+    description: 'What translation and interpretation agencies need on their website: language pairs, document types, certified work wording, turnaround and secure quote uploads.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-lawyers-and-consultants', 'landing-page-design'],
+    body: `
+<p>People usually look for a translator at a stressful moment: a visa file due next week, a university asking for English transcripts, a court date, or a conference that needs an interpreter by Monday. They search for things like "certified translation in Pune" or "German to English translator", open a few websites and contact the one that answers their questions fastest. Here's what a translation and interpretation agency's website needs to win those enquiries.</p>
+
+<h2>What clients check before they send a document</h2>
+<p>Whether it's an individual with one certificate or a company with a long technical manual, most clients want answers to the same questions:</p>
+<ul>
+  <li><strong>Languages:</strong> do you handle my exact language pair, in the direction I need?</li>
+  <li><strong>Document type:</strong> have you translated this kind of document before?</li>
+  <li><strong>Certification:</strong> what comes with the translation, and will it suit my purpose?</li>
+  <li><strong>Turnaround:</strong> can you deliver by my deadline?</li>
+  <li><strong>Price:</strong> how is it charged, and how quickly can I get a quote?</li>
+  <li><strong>Confidentiality:</strong> who will see my passport, medical report or contract?</li>
+</ul>
+<p>Your homepage should answer each of these briefly and link to the page that answers it fully, with a clear "Get a quote" button on every page.</p>
+
+<h2>Language, service and document pages</h2>
+<p>Clients search by language and by document, so organise the site the same way. Three types of page usually work well:</p>
+<table>
+  <thead><tr><th>Page type</th><th>Examples</th><th>What to include</th></tr></thead>
+  <tbody>
+    <tr><td>Language pairs</td><td>German to English, English to Arabic, Japanese, Tamil, Marathi</td><td>Directions you handle, the documents you most often translate in that language, who does the work</td></tr>
+    <tr><td>Services</td><td>Legal, technical, medical, website localisation, subtitling, transcription, interpretation</td><td>Scope, typical clients, file formats you accept, your review process</td></tr>
+    <tr><td>Document types</td><td>Birth and marriage certificates, degree certificates and transcripts, court papers, contracts, product manuals</td><td>What the document is commonly needed for, what the client receives, how certification works for it</td></tr>
+  </tbody>
+</table>
+<p>Only list languages you can deliver reliably through in-house or vetted translators. Interpretation deserves its own section: consecutive, simultaneous, conference, business meeting, phone and video interpreting, with the cities you cover in person.</p>
+<p>Avoid creating hundreds of near-identical "X to Y translation" pages with only the language names swapped. They don't help visitors, and Google may treat them as doorway pages; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages done right</a>.</p>
+
+<h2>Use the word "certified" with care</h2>
+<p>This is where translation websites most often overpromise. Terms like certified, sworn, notarised, attested and apostilled mean different things, and what's accepted depends on the country, embassy, university or court receiving the document. Requirements also change, so be precise:</p>
+<ul>
+  <li><strong>Describe what your certification actually is</strong>, for example a signed and stamped declaration on your letterhead stating that the translation is accurate, along with the translator's details</li>
+  <li><strong>Don't guarantee acceptance.</strong> The receiving authority decides. Say something like "Please check the requirements of the authority you're submitting to; we're happy to help you understand them"</li>
+  <li><strong>Avoid titles you don't hold</strong>, such as "sworn translator" or "government-approved", unless you have that status in the relevant country and can show it</li>
+  <li><strong>Be clear about your role in notarisation, attestation or apostille.</strong> These are carried out by notaries and government authorities. If you help clients arrange them, say so, and explain the extra time involved</li>
+</ul>
+<p>Avoid "100% accurate" guarantees too. Instead, explain your quality process: qualified translators, a second linguist who reviews the work, formatting that mirrors the original, and how you handle corrections.</p>
+
+<h2>Be clear about turnaround and pricing</h2>
+<p>Turnaround is often the deciding factor, so give honest guidance rather than one fixed promise. Explain what affects delivery time:</p>
+<ul>
+  <li>Word count or number of pages</li>
+  <li>Language pair, as less common languages can take longer</li>
+  <li>Source format: an editable Word file is quicker than a blurred phone photo</li>
+  <li>Specialist subject matter that needs an expert translator</li>
+  <li>Certification, notarisation or couriering hard copies</li>
+</ul>
+<p>If you offer an urgent service, explain when it's available and how it's charged. You don't need a rate card, but do say how you charge: per word, per page, per document, a minimum charge, or per hour or day for interpreters, with the final quote following once you've seen the document. See <a href="/blog/show-prices-on-website/">should you show prices on your website</a> for the trade-offs, and list payment options such as UPI and bank transfer.</p>
+
+<h2>A quote form built around uploads</h2>
+<p>The quote form is the most important part of the site. A good one asks for:</p>
+<ol>
+  <li>Source and target languages</li>
+  <li>Document type and purpose (visa, university, court, business)</li>
+  <li>File uploads, allowing several files in common formats like PDF, JPG and DOCX</li>
+  <li>Deadline</li>
+  <li>Whether certification or hard copies are needed, with a "not sure" option</li>
+  <li>Name, phone, email and preferred contact method</li>
+</ol>
+<p>Interpretation requests need different questions: date, duration, city or online platform, type of interpreting and subject. A simple first choice ("Translate a document" or "Book an interpreter") can route visitors to the right questions; see <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a>. Many people photograph documents on their phone, so test uploads on mobile and send an automatic acknowledgement saying when they'll hear back. A WhatsApp button helps with quick questions, but encourage clients to send sensitive files through the form.</p>
+
+<h2>Show how you protect confidential documents</h2>
+<p>Your clients send passports, medical records, financial statements, court papers and unreleased business documents. A short, specific confidentiality page reassures them:</p>
+<ul>
+  <li>Who can access files, and whether translators sign confidentiality agreements</li>
+  <li>Whether you'll sign an NDA for business clients on request</li>
+  <li>How long you keep files, and how clients can ask for deletion</li>
+  <li>How you deliver finished work securely</li>
+</ul>
+<p>The website must match what you promise: uploaded files shouldn't sit in a public folder or the media library, and old uploads should be removed regularly. Your privacy policy should explain this in plain words; see <a href="/blog/dpdp-act-website-basics/">India's DPDP Act and your website</a>. Mention certifications such as ISO 17100 or ISO 27001 only if you're actually certified, with the scope stated correctly.</p>
+
+<h2>Trust signals and local search</h2>
+<ul>
+  <li><strong>Translator profiles:</strong> languages, qualifications and subject experience. First names only are fine if translators prefer privacy</li>
+  <li><strong>Redacted samples</strong> showing your formatting, used only with permission and with personal details removed</li>
+  <li><strong>Sectors served:</strong> legal, medical, manufacturing, education or government work, described honestly</li>
+  <li><strong>Reviews</strong> from real clients on your website and Google Business Profile</li>
+  <li><strong>Local searches:</strong> target phrases like "translation services in {city}", "certified translation near me" and "{language} translator in {city}", and keep your Google Business Profile accurate with office hours and walk-in details</li>
+  <li><strong>Speed:</strong> keep pages light for urgent searches on mobile data</li>
+</ul>
+
+<p>Want a website that turns document uploads into paid jobs? I build websites for professional service firms; see <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a>, or <a href="/landing-page-design/">landing page design</a> if you run ads for urgent translation work.</p>
+`,
+  },
+  {
+    slug: 'website-for-civil-engineering-consultants',
+    title: 'Websites for Civil and Structural Engineering Consultants',
+    description: 'What civil and structural engineering consultants and surveyors need on their website: services, project portfolios, precise registrations and B2B enquiries.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-website-development'],
+    body: `
+<p>Civil engineering consultancy is won on reputation and referrals, but referrals now get checked online. A developer recommended to you by an architect will look at your website before calling. A government department shortlisting consultants will look for your registrations and past work. A housing society searching for "structural audit in {city}" will contact whoever explains the process most clearly. This guide covers what a website needs for structural design firms, civil engineering consultants, surveyors and soil investigation firms. If you also build, see <a href="/blog/website-for-construction-companies/">websites for construction companies</a> for the contracting side.</p>
+
+<h2>Who hires you, and what they check</h2>
+<table>
+  <thead><tr><th>Client</th><th>What they look for</th></tr></thead>
+  <tbody>
+    <tr><td>Builders and developers</td><td>Similar projects, economical designs, experience with approvals and quick turnaround on drawings</td></tr>
+    <tr><td>Architects</td><td>Smooth coordination, the software you work in and responsiveness during construction</td></tr>
+    <tr><td>Industrial clients</td><td>Experience with factories, warehouses, pre-engineered buildings and heavy foundations</td></tr>
+    <tr><td>Government departments and PSUs</td><td>Empanelment, registrations, key staff and past government assignments</td></tr>
+    <tr><td>Homeowners and housing societies</td><td>Structural audits, repair advice, clear fees and plain-English explanations</td></tr>
+  </tbody>
+</table>
+<p>Most firms serve two or three of these groups. Make it obvious from the homepage which ones you serve, then give each a clear path to the right services and projects.</p>
+
+<h2>A page for each service</h2>
+<p>A single "Civil engineering services" page doesn't rank well and doesn't reassure anyone. Give each discipline its own page, for example:</p>
+<ul>
+  <li>Structural design for RCC, steel and pre-engineered buildings</li>
+  <li>Structural audits, stability assessments and repair recommendations</li>
+  <li>Retrofitting and rehabilitation of older buildings</li>
+  <li>Non-destructive testing, such as rebound hammer and ultrasonic pulse velocity tests</li>
+  <li>Land, topographic and contour surveys using total stations, DGPS or drones (where you hold the required permissions)</li>
+  <li>Geotechnical investigation and soil testing</li>
+  <li>Quantity surveying, estimation and BOQ preparation</li>
+  <li>Project management consultancy and site supervision</li>
+  <li>Road, drainage and infrastructure design, and detailed project reports</li>
+  <li>Proof checking and third-party design review</li>
+</ul>
+<p>On each page, explain the scope, what the client receives (drawings, calculations, reports or survey data in the formats they need), the codes and standards you design to, the software you use, typical timelines and related projects. Only list services your own team delivers; if you partner with a lab or survey firm, say so.</p>
+
+<h2>A portfolio that shows the engineering</h2>
+<p>A photo of a finished tower says little about what the structural consultant did. For each key project, explain:</p>
+<ul>
+  <li><strong>Project type, scale and location:</strong> number of floors, built-up area, spans, length of road or survey area. Name the client only with permission</li>
+  <li><strong>Your exact role:</strong> structural design, proof checking, PMC or survey. Be precise; claiming the whole building when you did the soil investigation will be noticed</li>
+  <li><strong>The challenge and your solution:</strong> poor soil, a tight plot, adding floors to an old structure, a fast-track schedule</li>
+  <li><strong>Visuals:</strong> site photos, construction progress, simplified drawings or survey outputs that are cleared for sharing</li>
+</ul>
+<p>Let visitors filter projects by sector (residential, commercial, industrial, infrastructure, government) and by service. A few detailed write-ups do more than a long list of project names; see <a href="/blog/write-case-studies-business-website/">how to write case studies</a>.</p>
+
+<h2>Qualifications and registrations, stated precisely</h2>
+<p>Engineering is a credentials-driven field, and the people reading this page often verify what they read. List:</p>
+<ul>
+  <li><strong>Principal engineers:</strong> degrees, specialisations and years of experience, with short profiles</li>
+  <li><strong>Local licences or registrations:</strong> for example, registration as a structural engineer or licensed surveyor with a municipal corporation or development authority, where your city requires one. Titles vary between cities and states, so use the exact wording, number and validity on your certificate</li>
+  <li><strong>Professional memberships:</strong> bodies such as the Institution of Engineers (India), only if your membership is current, and with the correct grade</li>
+  <li><strong>Government empanelment:</strong> with departments, PSUs or municipal bodies, only if you're empanelled, and in which category</li>
+  <li><strong>ISO certification and professional indemnity insurance:</strong> only if you hold them, with the correct scope</li>
+</ul>
+<p>Remove lapsed registrations promptly and set reminders for renewals. An outdated or inflated claim can cost you a tender, and in regulated work it can cause bigger problems.</p>
+
+<h2>Winning B2B and government work</h2>
+<p>Larger clients rarely decide from a homepage. Help the person who found you build a case internally:</p>
+<ul>
+  <li><strong>A downloadable company profile</strong> with registrations, key staff, equipment, software, sectors served and selected projects, kept to a sensible file size</li>
+  <li><strong>A government work page</strong> listing your empanelments and the types of consultancy assignments you take on, if this is a focus</li>
+  <li><strong>Technical articles</strong> answering questions clients actually ask, such as when an old building needs a structural audit or what a soil report includes. These show expertise and bring in search traffic</li>
+  <li><strong>LinkedIn activity</strong> that points back to new projects and articles; see <a href="/blog/linkedin-b2b-website-traffic/">using LinkedIn for B2B traffic</a></li>
+</ul>
+
+<h2>Enquiry forms that collect the right details</h2>
+<p>Engineering work is hard to quote without details, so use separate short forms for your main services:</p>
+<ul>
+  <li><strong>Design enquiry:</strong> project type, location, plot size or built-up area, number of floors, current stage (concept, approvals or construction) and an upload for architectural drawings</li>
+  <li><strong>Structural audit:</strong> building age, number of floors and flats, city, and the problems noticed, such as cracks, leakage or exposed steel</li>
+  <li><strong>Survey or soil testing:</strong> site location (a map pin helps), approximate area, the type of survey and the deliverables needed</li>
+</ul>
+<p>Allow PDF and DWG uploads, route each enquiry to the right engineer and send an automatic acknowledgement. Show a direct phone and WhatsApp number for clients who prefer to talk first.</p>
+
+<h2>Local SEO and speed</h2>
+<ul>
+  <li>Target searches like "structural engineer in {city}", "structural audit in {city}", "land survey in {city}" and "soil testing near me"</li>
+  <li>Keep your Google Business Profile complete, with the most accurate category, real site photos and reviews from clients</li>
+  <li>Mention the areas and districts you work in naturally on service and project pages</li>
+  <li>Compress photos and avoid embedding heavy PDFs and drawings directly on pages, so the site loads quickly for engineers checking it from site</li>
+</ul>
+
+<p>Want a website that helps you win consultancy assignments? See how I build <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, or explore <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-lift-elevator-companies',
+    seoTitle: 'Lift and Elevator Company Websites: Sales, AMC and Support',
+    title: 'Websites for Lift and Elevator Companies: Sales, AMC and Breakdown Support',
+    description: 'What lift and elevator companies need on their website: product range, home vs commercial lifts, AMC plans, safety and compliance details and breakdown support.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-seo-services'],
+    body: `
+<p>A lift company's website has two very different jobs. It has to win new installations from builders, architects, hospitals and families adding a home lift, and it has to serve existing customers, including the society secretary calling because a lift has stopped between floors. Many lift websites do neither well: a brochure-style homepage, a generic contact form and a service number buried in the footer. Here's how to structure a site that brings in installation and AMC enquiries while keeping support easy to reach.</p>
+
+<h2>Who visits, and what each visitor needs</h2>
+<table>
+  <thead><tr><th>Visitor</th><th>What they want</th><th>Where to send them</th></tr></thead>
+  <tbody>
+    <tr><td>Builders and architects</td><td>Specifications, shaft and pit requirements, capacities, lead times, past projects</td><td>Product pages, downloadable layouts, project enquiry form</td></tr>
+    <tr><td>Homeowners</td><td>Space needed, safety, power backup, noise, maintenance</td><td>Home lift pages and site survey booking</td></tr>
+    <tr><td>Housing societies and building managers</td><td>Modernising old lifts, AMC terms, response times</td><td>Modernisation and AMC pages</td></tr>
+    <tr><td>Hospitals, factories and malls</td><td>Stretcher lifts, goods lifts, escalators, reliability</td><td>Commercial product pages and enquiry form</td></tr>
+    <tr><td>Existing customers</td><td>Breakdown help, right now</td><td>A service number on every page</td></tr>
+  </tbody>
+</table>
+
+<h2>Product pages organised by use</h2>
+<p>Group your range the way buyers think about it, not by internal model codes. Typical categories include passenger lifts, home lifts, hospital and stretcher lifts, goods lifts, car lifts, dumbwaiters, and escalators or travelators if you supply them. Explain drive types in plain language too: traction, machine-room-less, hydraulic and, for homes, compact or vacuum lifts if you offer them.</p>
+<p>Each product page should cover:</p>
+<ul>
+  <li>Capacity (persons or kg), speed range and maximum number of stops</li>
+  <li>Space requirements such as shaft size, pit depth and headroom, noting that final figures follow a site survey</li>
+  <li>Door types, cabin finishes and control options, with photos of real installations</li>
+  <li>Power supply needs and safety features such as automatic rescue devices, overload sensing, door sensors and emergency alarms, listing only what the product actually has</li>
+  <li>Warranty, and what happens when it ends</li>
+</ul>
+<p>If you're a dealer or authorised partner for a manufacturer, say so accurately and use their logos only with permission.</p>
+
+<h2>Separate paths for homes and commercial buildings</h2>
+<p>A family adding a lift to a duplex and a builder specifying lifts for a tower need very different conversations, so give them separate sections.</p>
+<h3>Home lifts</h3>
+<p>Homeowners worry about whether a lift will fit in an existing house, how much civil work is needed, what happens during a power cut and whether it's safe for elderly parents and children. Answer these in plain English, show retrofit examples and make booking a site survey the main call to action. Many of these buyers are older themselves, so readable text and large buttons matter; see <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>
+<h3>Commercial and project sales</h3>
+<p>Builders and consultants want specifications, layout drawings and evidence that you deliver on schedule. Offer downloadable brochures and layouts, a project list by building type, and an enquiry form asking for the number of lifts, floors, building type, project stage and timeline. Add a modernisation page too, since replacing controllers, doors or whole lifts in occupied buildings is a distinct service with its own buyers.</p>
+
+<h2>Explain your AMC plans clearly</h2>
+<p>Annual maintenance contracts bring recurring revenue, and many buyers choose an installer partly on service. Lift AMCs are usually offered as comprehensive or non-comprehensive. Generally, a comprehensive AMC includes most spare parts, while a non-comprehensive one covers servicing with parts charged separately, but terms vary, so spell out yours:</p>
+<table>
+  <thead><tr><th>Question</th><th>What your AMC page should answer</th></tr></thead>
+  <tbody>
+    <tr><td>Which parts are covered?</td><td>Under each plan, which parts are included and which are charged extra</td></tr>
+    <tr><td>How often are visits?</td><td>Preventive maintenance frequency and the checks done on each visit</td></tr>
+    <tr><td>How fast is breakdown response?</td><td>Response times you can genuinely meet, and whether support runs round the clock</td></tr>
+    <tr><td>Do you service other brands?</td><td>Whether you take over lifts installed by other companies</td></tr>
+    <tr><td>What's excluded?</td><td>For example, damage from misuse, water entering the pit or electrical faults outside the lift</td></tr>
+  </tbody>
+</table>
+<p>Finish with a short AMC quote form asking for the number of lifts, make, age, floors served and location.</p>
+
+<h2>Safety and compliance, stated carefully</h2>
+<p>Lifts are safety-critical, and buyers, especially societies and hospitals, want to know you work properly. In India, many states have their own lift rules covering installation permission, registration and periodic inspection, and the details vary from state to state. On your website:</p>
+<ul>
+  <li>Explain which statutory steps you handle for clients in the states you serve, such as licence applications or inspection support, using wording you can back up</li>
+  <li>Name the standards your products are designed to only if you're confident they apply</li>
+  <li>List company licences, registrations and ISO certification only if current, with the correct scope</li>
+  <li>Describe technician training, site safety procedures and the testing you do before handover</li>
+  <li>Avoid absolute claims like "100% safe" or "zero breakdowns"</li>
+</ul>
+<p>A short guide for building owners on routine checks and what to do in a breakdown also builds trust. Keep the advice simple: use the alarm or intercom, never try to force the doors open, and call your helpline or emergency services.</p>
+
+<h2>Make breakdown support impossible to miss</h2>
+<p>When a lift stops, nobody wants to hunt through menus. Put a "Report a breakdown" button or service number in the header and keep it visible on mobile. Also:</p>
+<ul>
+  <li>Use separate numbers for sales and service, so breakdown calls don't queue behind sales enquiries</li>
+  <li>State support hours honestly, and claim round-the-clock support only if someone really answers at night</li>
+  <li>Offer a short breakdown form: building name, lift number, the problem, whether anyone is trapped and a contact number</li>
+  <li>Add a WhatsApp option for non-urgent service requests; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a></li>
+  <li>Make sure the service number inside every lift car matches the one on your website</li>
+</ul>
+<p>For larger AMC customers, a simple login area with service history and visit reports can be added later.</p>
+
+<h2>Local SEO and speed</h2>
+<ul>
+  <li>Target searches like "home lift in {city}", "lift AMC in {city}", "elevator company near me" and "lift modernisation in {city}"</li>
+  <li>Keep a Google Business Profile for each branch, with the most accurate category, real installation photos and reviews from societies, builders and homeowners</li>
+  <li>If you serve several cities from one office, build city pages around real local projects rather than copies; see <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a></li>
+  <li>Lazy-load installation videos and compress photos, so product pages load quickly on mobile</li>
+</ul>
+
+<p>Want a website that brings in lift enquiries and keeps AMC customers close? See how I build <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, and how <a href="/wordpress-seo-services/">WordPress SEO</a> helps you rank in the cities you serve.</p>
+`,
+  },
+  {
+    slug: 'search-console-content-ideas',
+    seoTitle: 'Find Content Ideas in Google Search Console',
+    title: 'How to Find Content Ideas and Pages to Improve in Search Console',
+    description: 'Use Search Console\'s Performance report to find content ideas: queries with impressions but few clicks, near-page-one rankings and questions people ask.',
+    date: '2026-10-01',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>Most business owners open Google Search Console, glance at the clicks graph and close it again. That's a missed chance: the Performance report shows the actual words people typed before your site appeared in Google, which makes it one of the best free sources of content ideas. Here's a working method for turning that data into a short to-do list. For an overview of every report first, read <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
+
+<h2>Set up the report so it's useful</h2>
+<p>Open Performance, then Search results, and make a few changes before you start digging:</p>
+<ul>
+  <li><strong>Turn on all four metrics:</strong> total clicks, total impressions, average CTR and average position. You need all four to spot opportunities.</li>
+  <li><strong>Use a longer date range:</strong> the last three months is a good default. A single week is too noisy for a small business site.</li>
+  <li><strong>Switch between tabs:</strong> Queries shows what people searched; Pages shows which of your URLs appeared.</li>
+  <li><strong>Export when the list gets long:</strong> the export button sends the table to Google Sheets or Excel, where sorting and filtering are easier.</li>
+</ul>
+<p>Treat average position as a rough guide, since it's averaged across many searches, locations and devices. Google also leaves out some rare queries for privacy, so the table won't always add up to the graph's totals.</p>
+
+<h2>Queries with impressions but few clicks</h2>
+<p>Sort the Queries table by impressions and look down the CTR column. A query with plenty of impressions and very few clicks is telling you something. Check its average position first:</p>
+<ul>
+  <li><strong>Position well beyond page one:</strong> you're appearing, but too far down for people to click. That's a content problem, not a title problem; see the next section.</li>
+  <li><strong>Position on page one but low CTR:</strong> searchers see you and choose someone else. Your title and description may be vague or may not match what they want, or the map pack, ads and videos may be pushing you down the screen.</li>
+  <li><strong>The query doesn't match the page:</strong> if "AC service charges" shows impressions for your general services page, people want a specific answer that page doesn't give. That may be a new section or page waiting to be written.</li>
+</ul>
+<p>For page-one results with weak CTR, rewrite the title and meta description so they're specific and answer the search directly; see <a href="/blog/write-meta-titles-descriptions/">how to write meta titles and descriptions</a>. Note the date you made the change, so you can compare fairly later.</p>
+
+<h2>Near-page-one queries: your quickest wins</h2>
+<p>Queries where your average position is roughly 8 to 20 are close to page one but not quite there. Improving the page that already ranks often moves these faster than starting a new page from nothing. Use the filter above the table, or your exported sheet, to show positions in that range, then sort by impressions.</p>
+<p>For each promising query, open the page that ranks for it and ask:</p>
+<ol>
+  <li>Does the page properly answer this query, or only mention it in passing?</li>
+  <li>Is there a clear heading and section for it, or is it buried in a paragraph?</li>
+  <li>Is the information current: prices, steps, rules and years?</li>
+  <li>Do other relevant pages on your site link to it with descriptive link text?</li>
+  <li>Compared with the pages ranking above you, what's missing: examples, a table, real photos, an FAQ?</li>
+</ol>
+<p>Then strengthen the existing page rather than writing a new one on the same topic, which would only compete with it. The full process is in <a href="/blog/update-old-blog-posts/">how to update old blog posts</a>.</p>
+
+<h2>Questions people are already asking</h2>
+<p>Question searches are ready-made blog titles and FAQ entries. Add a filter, choose Query, then the Custom (regex) option. A pattern like this shows queries that start with common question words:</p>
+<p><strong>^(how|what|why|which|when|can|does|should|kya|kaise|kitna)</strong></p>
+<p>Hindi and Hinglish question words often come at the end of a search ("website banane ka kharcha kitna hai"), so try a second filter with just <strong>kya|kaise|kitna</strong> as well. Then group what you find:</p>
+<ul>
+  <li><strong>Questions your page already answers well:</strong> make sure the answer is near the top and easy to spot.</li>
+  <li><strong>Questions answered badly or not at all:</strong> add a short section or FAQ to the relevant page; see <a href="/blog/faq-page-seo/">FAQ sections that help customers and SEO</a>.</li>
+  <li><strong>Questions big enough for their own article:</strong> cost, comparison and "how to choose" questions often deserve a dedicated post.</li>
+</ul>
+<p>Questions that reveal doubts before buying, such as "how long does it take" or "what's included", are worth answering on your service pages too.</p>
+
+<h2>Topics hiding inside your existing pages</h2>
+<p>In the Pages tab, click one of your main pages, then go back to Queries. Pages often appear for searches they were never written for. Look for patterns:</p>
+<ul>
+  <li><strong>Location searches:</strong> impressions for "pest control in Noida" on a page that mentions Noida only once may justify a genuinely useful local section or page.</li>
+  <li><strong>Sub-services:</strong> a general "AC services" page showing up for "AC gas refilling" and "split AC installation" may be ready to split into dedicated pages.</li>
+  <li><strong>Prices and comparisons:</strong> searches with "price", "charges", "cost" or "vs" show what people want to know before they enquire.</li>
+  <li><strong>Two pages taking turns:</strong> if two of your pages appear for the same query and swap places, consider merging them or making each one's focus clearer.</li>
+</ul>
+
+<h2>Turn findings into a simple action list</h2>
+<table>
+  <thead><tr><th>What you see</th><th>What it usually means</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>High impressions, low CTR, page one</td><td>Your result isn't tempting or doesn't match the search</td><td>Rewrite the title and description</td></tr>
+    <tr><td>Position 8–20 for a valuable query</td><td>The page is relevant but not strong enough</td><td>Improve the content and internal links</td></tr>
+    <tr><td>Question queries</td><td>People want a direct answer</td><td>Add an FAQ or section, or write a post</td></tr>
+    <tr><td>Searches a page wasn't written for</td><td>Demand for a topic you don't cover properly</td><td>Add a section or create a dedicated page</td></tr>
+    <tr><td>Falling clicks on a once-strong page</td><td>Outdated content or stronger competitors</td><td>Refresh and update the page</td></tr>
+  </tbody>
+</table>
+<p>Pick three to five actions a month and log what you changed and when.</p>
+
+<h2>Mistakes to avoid</h2>
+<ul>
+  <li><strong>Reacting to a few days of data.</strong> Judge changes over several weeks.</li>
+  <li><strong>Comparing different seasons.</strong> Festivals, exams, weddings and the monsoon change what people search, so compare with the same period last year where you can.</li>
+  <li><strong>Copying queries word for word into pages.</strong> Write naturally for the person searching; awkward phrases pasted from the report read badly.</li>
+  <li><strong>Chasing irrelevant queries.</strong> Impressions for things you don't offer aren't opportunities.</li>
+  <li><strong>Overhauling pages that already bring enquiries</strong> without a clear reason.</li>
+</ul>
+
+<p>Want someone to turn your Search Console data into a clear plan of pages to write and improve? See my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'rank-for-your-business-name',
+    title: 'How to Make Sure Your Business Ranks for Its Own Name',
+    description: 'Not showing up when people search your business name? How to win branded searches with consistent details, a Business Profile, About page and social profiles.',
+    date: '2026-10-01',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>When someone hears about you from a friend, sees your hoarding or picks up your visiting card, the first thing they usually do is search your business name. If Google shows a directory listing, an old address, a similarly named company or nothing useful at all, you can lose a customer who had already decided to contact you. Your own name should be the easiest search to win, yet many small business websites don't manage it. Here's how to check where you stand and fix it.</p>
+
+<h2>Check what people see today</h2>
+<p>Search for your business the way customers would, on your phone and in a private (incognito) window so your own browsing doesn't affect the results:</p>
+<ul>
+  <li>Your exact business name</li>
+  <li>Your name plus your city or area, for example "ABC Dental Clinic Nashik"</li>
+  <li>Your name plus "reviews", "contact" or "address"</li>
+  <li>Common misspellings and short forms people might type</li>
+</ul>
+<p>Note everything that appears: your website, your Google Business Profile, social profiles, directory listings and news mentions, and anything that's wrong or outdated. Check Google Maps too. Once your site is in Search Console, you can also filter the Performance report for queries containing your name and watch how branded searches change over time.</p>
+
+<h2>Why a business doesn't rank for its own name</h2>
+<ul>
+  <li><strong>The site is new or not indexed yet.</strong> Google can't show pages it hasn't found; see <a href="/blog/get-website-indexed-google-faster/">how to get a new website indexed faster</a>.</li>
+  <li><strong>A setting is blocking search engines.</strong> The WordPress "discourage search engines" option or a noindex tag left on after development quietly keeps a site out of Google.</li>
+  <li><strong>The name is generic.</strong> Names like "Shree Enterprises" are shared by many businesses, so Google needs more signals to know which one you mean.</li>
+  <li><strong>Your name only appears inside your logo image.</strong> If it isn't in text, titles and structured data, Google has less to go on.</li>
+  <li><strong>Your details don't match.</strong> Different spellings, old phone numbers and old addresses across the web make it harder to connect everything to one business.</li>
+</ul>
+
+<h2>Put your name where Google reads it</h2>
+<ul>
+  <li><strong>Homepage title:</strong> include your business name, usually with what you do and where, for example "ABC Dental Clinic | Dentist in Nashik Road".</li>
+  <li><strong>Visible text:</strong> use the full name in the homepage heading or opening lines, the footer and the contact page.</li>
+  <li><strong>Logo alt text:</strong> set it to your business name.</li>
+  <li><strong>Structured data:</strong> add Organization or LocalBusiness schema with your name, logo, address, phone number and links to your official profiles. WebSite schema can also tell Google which site name you'd like shown in results. See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</li>
+</ul>
+
+<h2>Use one name and one set of details everywhere</h2>
+<p>Choose the name customers know you by and use it the same way on your website, Google Business Profile, social profiles, directories, invoices, WhatsApp Business profile and signboard. If your registered or GST legal name differs from your trading name, it's usually fine to mention the legal name on your About or contact page, but lead with the name people actually search for.</p>
+<p>Keep your address format and main phone number identical across listings as well, and update them all whenever anything changes. A simple spreadsheet of every listing and its login makes this manageable.</p>
+
+<h2>Claim your Business Profile and social profiles</h2>
+<p>For local businesses, a verified Google Business Profile is often the most prominent result for a branded search, showing your reviews, hours, photos, map and call button. Fill it in completely and keep it accurate; the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers the details. Don't add keywords or locations to the business name field: Google's guidelines generally require your real-world name, and stuffing extra words in can get a profile suspended.</p>
+<p>Next, create or tidy up profiles on the platforms you actually use, such as Facebook, Instagram, LinkedIn and YouTube. Use the same name, logo and website link on each. These profiles often rank for your name too, which helps you fill more of page one with results you control.</p>
+
+<h2>Make your About page do its job</h2>
+<p>People searching your name often want to know who is behind the business before they call. An About page that mentions your full business name, the founders or team, your location, how long you've been operating and links to your official profiles gives both visitors and Google a clear picture. See <a href="/blog/write-about-page-that-builds-trust/">how to write an About page that builds trust</a>.</p>
+
+<h2>Sitelinks: you can help, but you can't choose</h2>
+<p>Sitelinks are the extra links to pages like Services, About or Contact that sometimes appear under your homepage for branded searches. Google generates them automatically, and there's no setting to add or pick them. You can make them more likely and more useful with:</p>
+<ul>
+  <li>A clear menu with short, descriptive labels</li>
+  <li>Unique, accurate titles on each important page</li>
+  <li>Links to your key pages from the homepage</li>
+  <li>A sensible structure, without dozens of near-identical pages</li>
+</ul>
+
+<h2>When another business has a similar name</h2>
+<p>Sharing a name with another business, especially in another city or industry, is common in India. You can't make the other business disappear, but you can make it easy for Google and customers to tell you apart:</p>
+<ul>
+  <li>Add a consistent descriptor wherever it fits, such as your city or category: "ABC Caterers, Indore" rather than just "ABC Caterers".</li>
+  <li>Earn reviews and local mentions, such as association listings, local news and supplier pages, that use your full name and city.</li>
+  <li>Use your own domain and business email, so your details always point to one official website.</li>
+  <li>Don't use another business's name on your pages to borrow its searches; it confuses customers and can cause legal trouble.</li>
+</ul>
+<p>If a name clash is causing real confusion, someone is impersonating you, or you're considering a rebrand, speak to a trademark lawyer before making changes.</p>
+
+<p>Want your website set up so people find you by name and by service? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/wordpress-website-development/">WordPress website development</a> if you need a new site.</p>
+`,
+  },
+  {
+    slug: 'wordpress-seo-plugins-compared',
+    seoTitle: 'Yoast vs Rank Math vs All in One SEO Compared',
+    title: 'Yoast SEO vs Rank Math vs All in One SEO: Which Should You Use?',
+    description: 'Yoast SEO, Rank Math and All in One SEO compared for business websites: what each does, the features that matter, why not to run two, and how to switch safely.',
+    date: '2026-10-01',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>Almost every WordPress business website needs an SEO plugin, and three names come up again and again: Yoast SEO, Rank Math and All in One SEO (often shortened to AIOSEO). All three are widely used and handle the basics well. The honest truth is that the plugin you choose matters far less than how it's configured and what you publish. This guide explains what these plugins do, how they differ in general terms, and how to switch without harming your rankings. For the other plugins a business site needs, see <a href="/blog/essential-wordpress-plugins-business/">essential WordPress plugins</a>.</p>
+
+<h2>What an SEO plugin actually does</h2>
+<p>An SEO plugin handles technical housekeeping that WordPress doesn't fully cover on its own:</p>
+<ul>
+  <li><strong>Titles and meta descriptions</strong> for every page, with templates for posts, categories and products</li>
+  <li><strong>XML sitemaps</strong> listing the pages you want Google to find</li>
+  <li><strong>Indexing controls,</strong> such as noindex for thin pages like tag archives or thank-you pages</li>
+  <li><strong>Canonical tags</strong> pointing Google to the main version of a page</li>
+  <li><strong>Structured data</strong> describing your organisation, articles, products and breadcrumbs</li>
+  <li><strong>Social previews:</strong> the title, description and image shown when a link is shared on WhatsApp, Facebook or LinkedIn</li>
+  <li><strong>Content suggestions</strong> while you write</li>
+</ul>
+<p>What it doesn't do: write useful content, earn links, speed up your site or fix a confusing structure. A green score in the editor is a checklist, not a ranking.</p>
+
+<h2>The three at a glance</h2>
+<p>Features and plan contents change regularly, so treat this as a general picture and check each plugin's current free and paid plans before deciding.</p>
+<table>
+  <thead><tr><th>Plugin</th><th>Known for</th><th>Worth knowing</th></tr></thead>
+  <tbody>
+    <tr><td>Yoast SEO</td><td>One of the longest-established SEO plugins, with a familiar interface and SEO and readability analysis</td><td>The free version covers the essentials; extras such as a redirect manager are in the paid version</td></tr>
+    <tr><td>Rank Math</td><td>A newer plugin with a large free feature set, including redirects and modules you can switch on or off</td><td>Lots of options; turn off modules you don't use to keep things tidy</td></tr>
+    <tr><td>All in One SEO</td><td>Another long-standing plugin, with a setup wizard and on-page analysis</td><td>Several advanced features, such as local SEO tools, sit in paid plans</td></tr>
+  </tbody>
+</table>
+<p>All three can produce sitemaps, schema, social previews and indexing controls. For most small business sites, any of them will do the job well when set up properly.</p>
+
+<h2>What matters for a business website</h2>
+<ul>
+  <li><strong>Reliability:</strong> regular updates and compatibility with the current WordPress version</li>
+  <li><strong>Clean output:</strong> one title, one description, one canonical tag and sensible schema on every page</li>
+  <li><strong>Business details:</strong> a way to set your organisation name, logo and social profiles, plus LocalBusiness schema if you serve customers locally</li>
+  <li><strong>Redirects:</strong> built in, or handled by a separate dedicated plugin, so changed URLs don't break</li>
+  <li><strong>Ease of use</strong> for whoever writes and edits pages, not just the developer</li>
+  <li><strong>WooCommerce support</strong> for product and category pages, if you sell online</li>
+  <li><strong>Cost over the years:</strong> paid plans are usually yearly subscriptions, so check renewal pricing</li>
+</ul>
+<p>Don't pick a plugin for a long feature list you'll never use. Fewer active features means fewer settings to get wrong.</p>
+
+<h2>Never run two SEO plugins at once</h2>
+<p>It's surprisingly common to find two SEO plugins active, often left behind when someone tried a new one without removing the old. This can cause:</p>
+<ul>
+  <li>Duplicate or conflicting titles and meta descriptions</li>
+  <li>Two sets of structured data that contradict each other</li>
+  <li>Two sitemaps listing different pages</li>
+  <li>Conflicting noindex or canonical settings, which can quietly drop pages from Google</li>
+</ul>
+<p>Some themes, page builders and all-in-one plugins add their own SEO fields or schema too, so check those as well. A quick test: open a page, view the page source and search for <strong>name="description"</strong>. You should find exactly one.</p>
+
+<h2>How to switch plugins safely</h2>
+<ol>
+  <li><strong>Take a full backup</strong> first, and use a staging copy if you can; see <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</li>
+  <li><strong>Record your current setup:</strong> title templates, noindex settings, sitemap address, schema settings, and a list or export of any redirects.</li>
+  <li><strong>Note a few important pages</strong> with their current titles, descriptions and canonical tags, so you can compare afterwards.</li>
+  <li><strong>Install the new plugin and use its import tool.</strong> These plugins generally offer to import titles, descriptions and settings from the others; check it supports your current one.</li>
+  <li><strong>Deactivate the old plugin,</strong> but don't delete it until you've checked everything.</li>
+  <li><strong>Check your sample pages,</strong> the new sitemap and your redirects. Test structured data using the tools in <a href="/blog/test-structured-data-rich-results/">how to test structured data</a>.</li>
+  <li><strong>Submit the new sitemap</strong> in Search Console if its address changed, and watch the Performance and Pages reports for a few weeks.</li>
+  <li><strong>Remove the old plugin</strong> once you're confident nothing was lost.</li>
+</ol>
+<p>Redirects deserve special care: if they lived in the old plugin and don't import, old URLs will start showing 404 errors.</p>
+
+<h2>Settings to check, whichever you choose</h2>
+<ul>
+  <li><strong>Organisation details:</strong> the correct business name, logo and social profile links</li>
+  <li><strong>Archive pages:</strong> decide whether tag, author and date archives should be indexed; see <a href="/blog/category-tag-pages-seo/">SEO for category and tag pages</a></li>
+  <li><strong>Media attachment pages:</strong> make sure they redirect or are noindexed rather than appearing as thin pages</li>
+  <li><strong>Title templates:</strong> sensible defaults, so new posts and products don't go out with poor titles</li>
+  <li><strong>Sitemap contents:</strong> your real pages, not test pages, thank-you pages or empty archives</li>
+  <li><strong>Search engine visibility:</strong> the WordPress "discourage search engines" option must be off on the live site</li>
+</ul>
+
+<h2>So which one should you use?</h2>
+<ul>
+  <li><strong>Already using one that works?</strong> Keep it. Switching carries risk and rarely improves rankings by itself.</li>
+  <li><strong>Building a new site?</strong> Choose the one the person maintaining the site finds easiest, and compare its current free features with what you need.</li>
+  <li><strong>Want redirects and richer schema without paying?</strong> Compare what each free version includes today, since this is where they differ most.</li>
+  <li><strong>Running WooCommerce or several branches?</strong> Check how each handles product schema and local business details before deciding.</li>
+</ul>
+<p>Whichever you pick, configure it properly once, then put your effort into content and pages that genuinely help customers.</p>
+
+<p>Not sure your SEO plugin is set up correctly, or need to switch without losing rankings? See my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
 ];

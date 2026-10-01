@@ -511,6 +511,14 @@ const LINKS = [
   ['website-for-sports-academies', '<h2>Fees and enrolment</h2>', '<p>If your academy also sells kit and equipment, or works closely with a local sports shop, see <a href="/blog/website-for-sports-bicycle-stores/">websites for sports goods and bicycle stores</a>.</p>\n\n'],
   ['website-for-furniture-appliance-rental', '<h2>Deposits, charges and terms in plain language</h2>', '<p>If you sell TVs, fridges and washing machines outright rather than renting them, see <a href="/blog/website-for-electronics-appliance-stores/">websites for electronics and home appliance stores</a>.</p>\n\n'],
   ['website-for-beauty-cosmetics-brands', '<h2>Reviews and social proof, done honestly</h2>', '<p>Fragrance brands face their own version of these questions, from describing scents honestly to shipping alcohol-based perfumes; see <a href="/blog/website-for-perfume-fragrance-brands/">websites for perfume, attar and fragrance brands</a>.</p>\n\n'],
+  // Agent 44
+  ['multilingual-wordpress-website-hindi-english', '<h2>SEO best practices</h2>', '<p>If you run a translation or interpretation agency yourself, see <a href="/blog/website-for-translation-services/">websites for translation and interpretation agencies</a>.</p>\n\n'],
+  ['website-for-interior-designers-architects', '<h2>Explain your services and process</h2>', '<p>Civil and structural engineering consultants can present projects the same way; see <a href="/blog/website-for-civil-engineering-consultants/">websites for civil and structural engineering consultants</a>.</p>\n\n'],
+  ['website-for-electrical-contractors', '<h2>Local SEO and speed</h2>', '<p>If lifts and elevators are your main business, AMC and breakdown support matter even more; see <a href="/blog/website-for-lift-elevator-companies/">websites for lift and elevator companies</a>.</p>\n\n'],
+  // Agent 46
+  ['google-search-console-reports-explained', '<h2>Pages (indexing)</h2>', '<p>For a step-by-step method that turns this report into content ideas and a list of pages to improve, see <a href="/blog/search-console-content-ideas/">how to find content ideas in Search Console</a>.</p>\n\n'],
+  ['business-directories-citations-india', '<h2>Avoid spammy directories</h2>', '<p>Consistent details also help Google connect everything to you when people search your name; see <a href="/blog/rank-for-your-business-name/">how to make sure your business ranks for its own name</a>.</p>\n\n'],
+  ['essential-wordpress-plugins-business', '<h3>2. Security</h3>', '<p>Choosing between the popular options? See <a href="/blog/wordpress-seo-plugins-compared/">Yoast SEO vs Rank Math vs All in One SEO compared</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
