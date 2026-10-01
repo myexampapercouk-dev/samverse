@@ -10018,6 +10018,8 @@ module.exports = [
   <li>The specific opportunities listed: large images, render-blocking resources, unused JavaScript</li>
 </ul>
 
+<p>Seeing "reduce unused CSS" or "reduce unused JavaScript" in that list? Read <a href="/blog/reduce-unused-css-javascript-wordpress/">how to reduce unused CSS and JavaScript in WordPress</a> first, as not every warning is worth chasing.</p>
+
 <h2>Don't chase 100</h2>
 <p>A perfect score isn't the goal; a fast experience for real visitors is. A page scoring 85 that loads quickly on phones and converts well beats a 100 with no content.</p>
 
@@ -16385,6 +16387,8 @@ module.exports = [
 
 <h2>1. Measure first</h2>
 <p>Test key pages with PageSpeed Insights on mobile, and note server response time and the biggest issues; see <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>. If the server responds slowly, focus on hosting and caching. If the server is fast but the page is slow, focus on images, scripts and the theme.</p>
+
+<p>To measure server response time properly and work through the causes in order, see <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time (TTFB) on WordPress</a>.</p>
 
 <h2>2. Check resource usage in hPanel</h2>
 <p>hPanel shows CPU, memory and process usage. If you regularly hit your plan's limits, pages slow down or show errors. Causes include heavy plugins, bot traffic, too many sites on one plan, or simply outgrowing an entry-level plan.</p>
@@ -23737,6 +23741,8 @@ Template: astra
   <li><strong>Fonts:</strong> use one or two families with only the weights you need, host them on your own domain where practical, use <code>font-display: swap</code> so text shows in a fallback font immediately, and preload the main font if the hero heading uses it.</li>
   <li><strong>Entrance animations:</strong> a hero heading or image set to fade or slide in stays invisible until the animation runs, which pushes LCP back. Keep animations out of the first screen.</li>
 </ul>
+
+<p>For a step-by-step guide to critical CSS, deferring scripts and checking that menus and forms still work, see <a href="/blog/eliminate-render-blocking-resources/">how to eliminate render-blocking resources in WordPress</a>.</p>
 
 <h2>Confirm the fix worked</h2>
 <ul>
@@ -35850,6 +35856,250 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Send issues in one batch rather than a trickle of messages, retest every fix, and only then share the staging link with your client. Save the sheet as a template for the next project. The same habits help when your client's feedback arrives; see <a href="/blog/give-website-feedback-developer/">giving clear website feedback</a>.</p>
 
 <p>I test agency builds against a checklist like this before handing them over, and a second pass from your team is always worth it. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> and <a href="/elementor-developer/">Elementor development</a>.</p>
+`,
+  },
+  {
+    slug: 'reduce-server-response-time-ttfb',
+    title: 'How to Reduce Server Response Time (TTFB) on WordPress',
+    description: 'What TTFB measures, how to check it in PageSpeed Insights and browser dev tools, why WordPress servers respond slowly, and the fixes to try first.',
+    date: '2026-10-01',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-migration'],
+    body: `
+<p>Before a visitor sees anything on your website, their browser has to wait for your server to send back the first part of the page. On a slow WordPress site, that wait can be the single biggest delay, and every image, font and script queues up behind it. This guide explains what server response time (usually called TTFB) measures, how to check yours, and which fixes to try first.</p>
+
+<h2>What TTFB actually measures</h2>
+<p>Time to First Byte is the time from the browser asking for a page to the first byte of the reply arriving. It covers several steps:</p>
+<ul>
+  <li><strong>Redirects:</strong> for example from http to https, or from the non-www address to the www one</li>
+  <li><strong>Connection setup:</strong> looking up your domain, connecting to the server and setting up the secure HTTPS connection</li>
+  <li><strong>Server processing:</strong> WordPress running PHP, querying the database and building the HTML, unless a ready-made cached copy exists</li>
+</ul>
+<p>TTFB isn't one of the three Core Web Vitals, but it comes before all of them. The page can't show its main image or heading until the HTML has arrived, so a slow server pushes back Largest Contentful Paint as well; see <a href="/blog/fix-lcp-largest-contentful-paint/">how to fix slow LCP</a>. Google's guidance treats roughly 0.8 seconds or less as a good TTFB for most sites, as a rough guide rather than a hard rule.</p>
+
+<h2>How to check your TTFB</h2>
+<h3>PageSpeed Insights</h3>
+<p>If your site has enough traffic, the real-user section at the top includes Time to First Byte alongside the Core Web Vitals. Further down, the lab report has a diagnostic for how long the server took to respond, labelled something like "Reduce initial server response time" or "Document request latency" depending on the version.</p>
+<h3>Browser developer tools</h3>
+<ol>
+  <li>Open the page in a private or incognito window, so you're logged out of WordPress</li>
+  <li>Press F12 in Chrome or Edge and go to the Network tab</li>
+  <li>Reload the page and click the first request in the list, which is the page itself</li>
+  <li>Open the Timing tab and look at "Waiting for server response"</li>
+</ol>
+<p>Reload a few times, as the first load may build the page fresh. Many hosts, caching plugins and CDNs also add a response header, visible under the Headers tab, showing whether the page was a cache "hit" or "miss". And always test logged out: WordPress normally skips the page cache for logged-in users, so your own view is often slower than your visitors'.</p>
+
+<h2>Common causes of slow server response</h2>
+<table>
+  <thead><tr><th>Cause</th><th>What's happening</th><th>Typical clue</th></tr></thead>
+  <tbody>
+    <tr><td>No page caching</td><td>WordPress builds every page from scratch for every visitor</td><td>Every load is slow, not just the first</td></tr>
+    <tr><td>Slow or overloaded hosting</td><td>Too little CPU, memory or PHP capacity, or a crowded shared server</td><td>Slow even when cached; worse at busy times</td></tr>
+    <tr><td>Heavy plugins and queries</td><td>Plugins running slow database queries or calling outside services on each request</td><td>Uncached pages are far slower than cached ones</td></tr>
+    <tr><td>Uncached WooCommerce pages</td><td>Cart, checkout, account pages and shoppers with items in the cart bypass the cache</td><td>Product pages are fine, checkout drags</td></tr>
+    <tr><td>Distant server</td><td>The server is on another continent from most of your visitors</td><td>Fast when tested near the server, slow from India</td></tr>
+  </tbody>
+</table>
+<p>Outdated PHP and redirect chains add to the delay too. Work through the fixes below in order: on a typical business site, the earlier ones usually make the biggest difference.</p>
+
+<h2>Fix 1: Turn on page caching, and check it works</h2>
+<p>A page cache stores ready-made HTML so the server can send it without running WordPress. Use your host's server-level cache if it has one (on LiteSpeed servers, via the LiteSpeed Cache plugin), or one reputable caching plugin. Then check the headers to confirm visitors really get cached pages. Common reasons they don't:</p>
+<ul>
+  <li>The whole cache is cleared too often, for example by a plugin that purges everything on every small edit</li>
+  <li>A plugin sets a cookie for every visitor, which some caches treat as a reason to skip caching</li>
+  <li>Pages are only cached after the first visitor arrives, so rarely visited pages are always slow; a preload option fixes this</li>
+</ul>
+<p>The setup options are covered in <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
+
+<h2>Fix 2: Better hosting, closer to your visitors</h2>
+<p>If cached pages still respond slowly, the server itself is the problem. Check three things:</p>
+<ul>
+  <li><strong>Location:</strong> a data centre in or near India if most customers are here</li>
+  <li><strong>Resources:</strong> whether your hosting panel shows CPU or memory limits being hit</li>
+  <li><strong>Software:</strong> a current, supported PHP version, tested first, and server-level caching</li>
+</ul>
+<p>If the plan is simply underpowered, moving is often the fix that makes everything else work; see <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>. A CDN can help too, and some can cache whole pages, as long as carts, checkouts and logged-in pages are excluded.</p>
+
+<h2>Fix 3: Find heavy plugins and slow queries</h2>
+<p>For pages that can't be cached, and for every cache miss, WordPress's own processing time matters. On a staging copy of the site:</p>
+<ul>
+  <li>Use a debugging plugin such as Query Monitor to spot slow database queries, outside requests and the plugin responsible</li>
+  <li>Deactivate plugins one at a time and re-time an uncached page to see which adds the most</li>
+  <li>Look for plugins that contact outside services, such as social feeds, on every page load</li>
+  <li>Clean up the database, especially large autoloaded settings left behind by removed plugins</li>
+</ul>
+<p>Then replace or remove what's slow; sometimes one feature from a heavy plugin can be rebuilt as a small snippet.</p>
+
+<h2>Fix 4: WooCommerce and other dynamic pages</h2>
+<p>Stores, membership sites and booking systems have pages built fresh for each person. For these:</p>
+<ul>
+  <li>Ask your host about an object cache such as Redis, which keeps database results in memory</li>
+  <li>Make sure your plan can handle several shoppers checking out at once, especially before festival sales</li>
+  <li>Stop background cart-update requests from running on pages that don't need them</li>
+</ul>
+<p>The <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a> covers these in more detail.</p>
+
+<h2>Smaller fixes, then re-test</h2>
+<ul>
+  <li>Use your final https address in ads, social profiles and Google Business Profile, so visitors skip redirects</li>
+  <li>Remove redirect chains, such as http to https to www</li>
+  <li>Use a reliable DNS provider; many CDNs include one</li>
+</ul>
+<p>After each change, clear the cache, test logged out and time several page types, including product and checkout pages for stores. Lab results vary, so compare a few runs. Real-user data covers the previous 28 days, so improvements there appear gradually.</p>
+
+<p>Still slow after caching? That usually needs a proper diagnosis. My <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service covers this, and if the answer is a better host, see <a href="/wordpress-migration/">WordPress migration and hosting</a>.</p>
+`,
+  },
+  {
+    slug: 'eliminate-render-blocking-resources',
+    title: 'How to Eliminate Render-Blocking Resources in WordPress',
+    description: 'How to fix the "eliminate render-blocking resources" warning on WordPress: critical CSS, deferring JavaScript, loading fonts and testing that nothing breaks.',
+    date: '2026-10-01',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'elementor-developer'],
+    body: `
+<p>"Eliminate render-blocking resources" is one of the most common warnings in a WordPress PageSpeed report, and one of the easiest to fix badly. Switch on every optimisation setting at once and the score may rise while the mobile menu, slider or contact form quietly stops working. Here's what the warning means, how to fix it properly and how to check that nothing has broken.</p>
+
+<h2>What "render-blocking" means</h2>
+<p>A browser reads a page's HTML from the top. Two kinds of files in the page's head make it stop and wait before it shows anything:</p>
+<ul>
+  <li><strong>Stylesheets (CSS):</strong> the browser won't paint the page until it has downloaded and processed them, so visitors don't see unstyled content</li>
+  <li><strong>Ordinary scripts (JavaScript):</strong> a script without <code>defer</code> or <code>async</code> pauses the reading of the HTML until it has downloaded and run</li>
+</ul>
+<p>Meanwhile the visitor sees a blank or half-drawn screen. PageSpeed Insights lists the files responsible and estimates the time they cost; newer versions of the report may call the same check "Render-blocking requests". These files delay the first content appearing and often your Largest Contentful Paint too; see <a href="/blog/fix-lcp-largest-contentful-paint/">how to fix slow LCP</a> for the wider picture.</p>
+
+<h2>Why WordPress sites have so many</h2>
+<p>Every theme and plugin can add its own stylesheets and scripts, and many add them to every page, in the head. A typical business site might load the theme's CSS, a page builder's CSS and scripts, a slider, a form plugin, an icon library, Google Fonts and jQuery before the first heading appears. Each is small on its own. Together, on a budget phone using mobile data, they add up.</p>
+<p>That's why the first fix is often removing plugins and features you don't use. Less code means less to block, and fewer things to configure in the steps below.</p>
+
+<h2>Fix CSS with critical CSS</h2>
+<p>You can't simply defer all CSS, or the page would appear unstyled and then jump into shape. The standard approach is critical CSS:</p>
+<ol>
+  <li>Work out the small set of styles the first screen needs: header, menu, hero and opening text</li>
+  <li>Place those styles directly in the page's HTML, so no extra download is needed</li>
+  <li>Load the full stylesheet in a way that doesn't block, so it applies a moment later</li>
+</ol>
+<p>Things to watch:</p>
+<ul>
+  <li>Different templates need different critical CSS, because the homepage, service pages, blog posts and product pages look different at the top</li>
+  <li>If a style is missing, you'll see a flash of unstyled or misaligned content as the page loads, which can also cause layout shift</li>
+  <li>Regenerate it after design changes, theme updates or new sections near the top of a page</li>
+</ul>
+
+<h2>Defer or delay JavaScript</h2>
+<table>
+  <thead><tr><th>Option</th><th>What it does</th><th>Good for</th></tr></thead>
+  <tbody>
+    <tr><td><code>defer</code></td><td>Downloads in the background and runs, in order, after the HTML has been read</td><td>Most theme and plugin scripts, including jQuery and scripts that depend on it</td></tr>
+    <tr><td><code>async</code></td><td>Downloads in the background and runs as soon as it arrives, in any order</td><td>Independent scripts, such as some analytics tags</td></tr>
+    <tr><td>Delay until interaction</td><td>Doesn't load the script until the visitor scrolls, taps or moves the mouse</td><td>Chat widgets, pop-ups, heatmaps and marketing pixels</td></tr>
+  </tbody>
+</table>
+<p>The usual way this breaks is dependency. If jQuery is deferred but a small inline script in the page expects it straight away, that script fails. Good optimisation plugins account for this, but it's the first thing to check when something stops working. Delaying tracking also needs care so enquiries and sales are still recorded; <a href="/blog/third-party-scripts-slow-website/">third-party scripts</a> covers that balance.</p>
+<p>For developers: since WordPress 6.3, themes and plugins can register scripts with a defer or async loading strategy, which is cleaner than rewriting tags afterwards.</p>
+
+<h2>Load fonts properly</h2>
+<p>Fonts often appear in this warning, especially when Google Fonts is loaded from Google's servers through a stylesheet in the head. Use fewer families and weights, host the fonts on your own domain, use <code>font-display: swap</code> so text shows straight away in a fallback font, and preload only the main font used at the top of the page. <a href="/blog/web-fonts-performance/">Web fonts and website speed</a> walks through each step. Also check for duplicates: themes, page builders and plugins sometimes each load the same font or icon library.</p>
+
+<h2>Plugin settings that do this for you</h2>
+<p>You rarely need to hand-code these fixes. Performance plugins such as WP Rocket, LiteSpeed Cache, Autoptimize and Perfmatters offer some or all of these options: deferring JavaScript, delaying scripts until interaction, loading CSS without blocking and generating critical CSS. Names and features differ and change between versions, so check the current settings. Some practical rules:</p>
+<ul>
+  <li>Use one plugin for these optimisations; two plugins both rewriting your CSS and JavaScript is a reliable way to break a site</li>
+  <li>Turn on one setting at a time and test after each</li>
+  <li>Use the plugin's exclusion list for any script that breaks when deferred or delayed</li>
+  <li>On Elementor sites, also check Elementor's own performance settings, such as loading Google Fonts locally, which vary by version</li>
+</ul>
+
+<h2>Test that nothing broke</h2>
+<p>After each change, clear every cache (plugin, server and CDN), open the site in a private window and check on a real phone as well as a computer:</p>
+<ul>
+  <li><strong>Menus:</strong> the mobile menu opens and closes, dropdowns work and sticky headers behave</li>
+  <li><strong>Sliders and carousels:</strong> they appear straight away, without stacked images first</li>
+  <li><strong>Forms:</strong> they submit, show error messages and pass spam protection</li>
+  <li><strong>Pop-ups, tabs, accordions and galleries</strong> open as expected</li>
+  <li><strong>Online stores:</strong> add to cart, the cart count, coupons and checkout</li>
+  <li><strong>Tracking:</strong> analytics and conversion events still fire</li>
+</ul>
+<p>Open the browser console (F12) and look for red errors. A message such as "jQuery is not defined" usually means a script that needed to run early was deferred or delayed; exclude it and test again. It's safest to try all this on a <a href="/blog/staging-sites-explained/">staging site</a> first.</p>
+
+<p>Critical CSS and script deferral are where speed work most often goes wrong. If you'd rather have it set up and tested properly, see <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or <a href="/elementor-developer/">Elementor development</a> if your pages need rebuilding more efficiently.</p>
+`,
+  },
+  {
+    slug: 'reduce-unused-css-javascript-wordpress',
+    seoTitle: 'Reduce Unused CSS and JavaScript in WordPress',
+    title: 'Reduce Unused CSS and JavaScript in WordPress: What to Fix and What to Ignore',
+    description: 'Why plugins and page builders load CSS and JavaScript on every page, how to load them only where needed, and when the unused-code warning isn\'t worth chasing.',
+    date: '2026-10-01',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'elementor-developer'],
+    body: `
+<p>PageSpeed Insights often tells WordPress site owners to "reduce unused CSS" and "reduce unused JavaScript", with a list of files and an estimate of how much could be saved. Some of that saving is real and worth having. Some of it is noise. Here's where unused code comes from, how to cut it safely and when the warning is best left alone.</p>
+
+<h2>What the warning actually measures</h2>
+<p>During the test, the browser tracks which parts of each CSS and JavaScript file were used while the page loaded. Everything else counts as unused, and files with a lot of it get listed.</p>
+<p>"Unused" means unused on this page, during this load. A stylesheet may hold rules for your contact page, the open mobile menu or a pop-up that hasn't appeared yet, and code that only runs when someone clicks counts as unused too. So the figure points to where waste may be; it isn't a list of code you can delete.</p>
+<p>To see it yourself, open Chrome's developer tools, choose Coverage from the More tools menu and reload the page. Each file is shown with its used and unused portions.</p>
+
+<h2>Why WordPress sites load code everywhere</h2>
+<p>A plugin usually can't know which pages you'll use it on, so many play safe and load their files on every page:</p>
+<ul>
+  <li>A form plugin's styles and scripts site-wide, though the form is only on the contact page</li>
+  <li>A slider's files everywhere for one slider on the homepage</li>
+  <li>WooCommerce files on blog posts and the About page</li>
+  <li>Page builder add-on packs loading code for dozens of widgets you never use</li>
+  <li>Full icon libraries for a handful of icons</li>
+  <li>Multipurpose themes bundling features for every kind of website</li>
+</ul>
+<p>Browsers cache these files after the first visit, but a new customer arriving from Google has to download and process all of it. JavaScript costs more than CSS, because the phone has to run it, which can also make taps feel sluggish; see <a href="/blog/fix-inp-interaction-to-next-paint/">how to improve INP</a>.</p>
+
+<h2>Step 1: Remove plugins you don't need</h2>
+<p>The cleanest unused code is code that never loads. Go through your plugin list and ask of each one: why is it here, is that reason still current, and could something already on the site do the job?</p>
+<ul>
+  <li>Delete plugins left over from old campaigns, trials or a previous developer</li>
+  <li>Don't run two plugins that do the same thing, such as two form or two slider plugins</li>
+  <li>Keep page builder add-ons to one well-made pack, or none</li>
+  <li>Replace a heavy plugin used for one small feature with a lighter option or a short snippet</li>
+</ul>
+<p>Deactivate on a staging copy first, test, then delete. <a href="/blog/essential-wordpress-plugins-business/">Essential WordPress plugins</a> covers what most business sites actually need.</p>
+
+<h2>Step 2: Load scripts only where they're needed</h2>
+<p>Next, stop the plugins you keep from loading everywhere. A sensible map for a typical site:</p>
+<table>
+  <thead><tr><th>Asset</th><th>Load it on</th></tr></thead>
+  <tbody>
+    <tr><td>Form plugin and spam protection</td><td>Pages with a form</td></tr>
+    <tr><td>Slider or carousel</td><td>Pages with a slider</td></tr>
+    <tr><td>WooCommerce shop and cart scripts</td><td>Shop, product, cart and checkout pages (plus any header mini-cart)</td></tr>
+    <tr><td>Payment gateway scripts</td><td>Checkout</td></tr>
+    <tr><td>Map or booking widget</td><td>Contact or booking pages</td></tr>
+  </tbody>
+</table>
+<p>Developers do this with a few lines of code that remove a file unless the page matches a condition, kept in a child theme or small custom plugin so updates don't overwrite it. Some plugins also have a setting to load only where their block or shortcode appears, so check for that first. Block themes help too: WordPress can load core block styles only for the blocks used on each page.</p>
+
+<h2>Asset manager plugins</h2>
+<p>If you'd rather not touch code, an asset manager plugin lists every CSS and JavaScript file each page loads and lets you switch files off per page, per post type or site-wide with exceptions. Some performance plugins include a similar script manager. Used carefully, they work well. Used carelessly, they break things:</p>
+<ul>
+  <li>Files depend on each other, so switching off a shared library can break several plugins at once</li>
+  <li>A file that looks unnecessary may power the mobile menu, cookie banner or form validation</li>
+  <li>Rules are easy to forget, so a new page with a form may go live without the form's scripts</li>
+</ul>
+<p>Change one thing at a time, test logged out with caches cleared, and keep a note of every rule so the next person working on the site understands it.</p>
+
+<h2>Page builders and "remove unused CSS" features</h2>
+<p>Page builders are a common source of this warning because they're designed to build anything. Recent Elementor versions include performance features, some switchable in its settings and some on by default, that load widget code only where those widgets are used. Flatter layouts with fewer widgets and add-ons mean less code as well; see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</p>
+<p>Several performance plugins also offer a "remove unused CSS" option that builds a trimmed stylesheet for each page. It can work well, but styles that only apply after interaction, such as an open mobile menu, a pop-up or a form error message, may be stripped because they weren't used during the scan. These plugins let you safelist such styles, so check menus, pop-ups and forms on a phone after enabling it.</p>
+
+<h2>When the warning isn't worth chasing</h2>
+<ul>
+  <li><strong>The savings are small.</strong> A few kilobytes across a couple of files won't change what visitors feel</li>
+  <li><strong>It's third-party code you need.</strong> Analytics, Tag Manager, payment and chat scripts include code you don't use, and you can't edit them; you can only decide whether and when they load (see <a href="/blog/third-party-scripts-slow-website/">third-party scripts</a>)</li>
+  <li><strong>Real-user Core Web Vitals are already good.</strong> If visitors get a fast experience, clearing a lab warning adds little</li>
+  <li><strong>The fix costs more than it's worth.</strong> Rebuilding a theme just to clear a warning rarely makes sense unless a redesign is due anyway</li>
+</ul>
+<p>Focus on large files, on JavaScript before CSS, and on the pages that bring enquiries or sales.</p>
+
+<p>Want the unused code trimmed without breaking your forms and menus? See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or <a href="/elementor-developer/">Elementor development</a> for builder sites that need a leaner rebuild.</p>
 `,
   },
 ];

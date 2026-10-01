@@ -545,5 +545,8 @@
  "blog-stop-spam-user-registrations-wordpress": "ac749a725b18ad690373828f0d4bffe9bf33794e",
  "blog-agency-wordpress-care-plans": "fe93a6d70d0609e7ddbdbe8c480df0413789e932",
  "blog-agency-developer-handoff-checklist": "0ac16ca240db791790e4f1876f758399d479bad2",
- "blog-website-qa-checklist-before-launch-agencies": "7cb5287778c8995d42ef8f2d041053c610e1e7e4"
+ "blog-website-qa-checklist-before-launch-agencies": "7cb5287778c8995d42ef8f2d041053c610e1e7e4",
+ "blog-reduce-server-response-time-ttfb": "7b486e943406227d1f95e7d20eaa303bdd56629c",
+ "blog-eliminate-render-blocking-resources": "72d5cdc0d58ecf068658fbed4ba92ae06e928c26",
+ "blog-reduce-unused-css-javascript-wordpress": "ce326f3a81d28b9bab0c5c42fec8df6586b30e82"
 }

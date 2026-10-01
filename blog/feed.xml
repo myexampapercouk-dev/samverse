@@ -3555,5 +3555,26 @@
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
     <description>An internal QA checklist for agencies to run on a WordPress build before client review: design, responsive, forms, speed, SEO, accessibility and issue logging.</description>
   </item>
+  <item>
+    <title>How to Reduce Server Response Time (TTFB) on WordPress</title>
+    <link>https://samverse.space/blog/reduce-server-response-time-ttfb/</link>
+    <guid>https://samverse.space/blog/reduce-server-response-time-ttfb/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>What TTFB measures, how to check it in PageSpeed Insights and browser dev tools, why WordPress servers respond slowly, and the fixes to try first.</description>
+  </item>
+  <item>
+    <title>How to Eliminate Render-Blocking Resources in WordPress</title>
+    <link>https://samverse.space/blog/eliminate-render-blocking-resources/</link>
+    <guid>https://samverse.space/blog/eliminate-render-blocking-resources/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>How to fix the &quot;eliminate render-blocking resources&quot; warning on WordPress: critical CSS, deferring JavaScript, loading fonts and testing that nothing breaks.</description>
+  </item>
+  <item>
+    <title>Reduce Unused CSS and JavaScript in WordPress: What to Fix and What to Ignore</title>
+    <link>https://samverse.space/blog/reduce-unused-css-javascript-wordpress/</link>
+    <guid>https://samverse.space/blog/reduce-unused-css-javascript-wordpress/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Why plugins and page builders load CSS and JavaScript on every page, how to load them only where needed, and when the unused-code warning isn't worth chasing.</description>
+  </item>
 </channel>
 </rss>

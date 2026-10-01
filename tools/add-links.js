@@ -611,6 +611,10 @@ const LINKS = [
   ['choose-wordpress-maintenance-provider', '<h2>What a good first month looks like</h2>', '<p>Agencies often deliver maintenance through a white-label partner working behind their brand; if you run an agency, see <a href="/blog/agency-wordpress-care-plans/">how to offer WordPress care plans to your clients</a>.</p>\n\n'],
   ['figma-to-wordpress-approaches', '<h2>Prepare the design well</h2>', '<p>Agencies handing a build to an outside developer should settle these answers before work starts; the <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a> covers everything else to send.</p>\n\n'],
   ['white-label-wordpress-development-agencies', '<h2>Is white-label right for your agency?</h2>', '<p>Before any client review, run your own QA pass on the staging build; this <a href="/blog/website-qa-checklist-before-launch-agencies/">website QA checklist for agencies</a> covers what to check and how to log issues.</p>\n\n'],
+  // Agent 69
+  ['hostinger-website-slow-fix', '<h2>2. Check resource usage in hPanel</h2>', '<p>To measure server response time properly and work through the causes in order, see <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time (TTFB) on WordPress</a>.</p>\n\n'],
+  ['fix-lcp-largest-contentful-paint', '<h2>Confirm the fix worked</h2>', '<p>For a step-by-step guide to critical CSS, deferring scripts and checking that menus and forms still work, see <a href="/blog/eliminate-render-blocking-resources/">how to eliminate render-blocking resources in WordPress</a>.</p>\n\n'],
+  ['website-speed-test-tools-explained', '<h2>Don\'t chase 100</h2>', '<p>Seeing "reduce unused CSS" or "reduce unused JavaScript" in that list? Read <a href="/blog/reduce-unused-css-javascript-wordpress/">how to reduce unused CSS and JavaScript in WordPress</a> first, as not every warning is worth chasing.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
