@@ -623,6 +623,10 @@ const LINKS = [
   ['website-for-wedding-venues-banquet-halls', '<h2>SEO</h2>', '<p>Decorators who work at venues like yours face similar questions about photos, dates and packages; see <a href="/blog/website-for-wedding-decorators/">websites for wedding and event decorators</a>.</p>\n\n'],
   ['website-for-home-decor-stores', '<h2>SEO and speed for an image-heavy store</h2>', '<p>If curtains and blinds are your main business rather than one category among many, see <a href="/blog/website-for-curtain-blinds-shops/">websites for curtain, blinds and soft-furnishing shops</a>.</p>\n\n'],
   ['website-for-furniture-businesses', '<h2>Speed matters</h2>', '<p>Cafés, hotels and offices also need existing seating re-covered between refits; if that is your trade, see <a href="/blog/website-for-upholstery-services/">websites for upholstery and sofa repair services</a>.</p>\n\n'],
+  // Agent 74
+  ['how-long-does-seo-take', '<h2>How to judge progress early</h2>', '<p>Launching on a brand-new domain? See <a href="/blog/seo-for-new-websites/">SEO for a new website</a> for which pages to build first and what to measure.</p>\n\n'],
+  ['image-seo-guide', '<h2>Common mistakes, and how to check your results</h2>', '<p>Large, original images also matter for Google\'s personalised feed; see <a href="/blog/google-discover-small-business/">Google Discover for small business websites</a>.</p>\n\n'],
+  ['add-blog-to-existing-website', '<h2>Subfolder vs subdomain</h2>', '<p>Not sure a blog is worth it yet? See <a href="/blog/seo-for-service-pages-without-blog/">how to rank a service business website without a blog</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

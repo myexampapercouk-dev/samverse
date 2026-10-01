@@ -9541,6 +9541,8 @@ module.exports = [
   <li>Stopping and starting</li>
 </ul>
 
+<p>Launching on a brand-new domain? See <a href="/blog/seo-for-new-websites/">SEO for a new website</a> for which pages to build first and what to measure.</p>
+
 <h2>How to judge progress early</h2>
 <p>Rankings for your main keyword are a lagging indicator. Watch these in Google Search Console first:</p>
 <ul>
@@ -11373,6 +11375,8 @@ module.exports = [
     related: ['wordpress-website-development', 'wordpress-seo-services', 'website-redesign'],
     body: `
 <p>A blog helps your website answer customer questions, attract search traffic and show expertise. If your site doesn't have one yet, it's usually easy to add, as long as it's set up the right way.</p>
+
+<p>Not sure a blog is worth it yet? See <a href="/blog/seo-for-service-pages-without-blog/">how to rank a service business website without a blog</a>.</p>
 
 <h2>Subfolder vs subdomain</h2>
 <p>A blog at <code>yourdomain.com/blog/</code> (subfolder) keeps everything under one site and is generally the simplest, most effective choice for small businesses. A subdomain (<code>blog.yourdomain.com</code>) is treated more like a separate site and needs its own authority built up.</p>
@@ -20861,6 +20865,8 @@ Template: astra
   <li>Allow large image previews. WordPress does this by default, but check your SEO plugin hasn't changed the setting</li>
   <li>Avoid text-heavy graphics as the main image, as they look poor when shrunk to a thumbnail</li>
 </ul>
+
+<p>Large, original images also matter for Google's personalised feed; see <a href="/blog/google-discover-small-business/">Google Discover for small business websites</a>.</p>
 
 <h2>Common mistakes, and how to check your results</h2>
 <p>These are the problems I see most often on WordPress sites:</p>
@@ -36626,6 +36632,237 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ul>
 
 <p>Want a website that turns sofa photos into booked jobs? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> for focused campaigns such as pre-festival sofa makeovers.</p>
+`,
+  },
+  {
+    slug: 'seo-for-new-websites',
+    title: 'SEO for a New Website: What to Do in the First Few Months',
+    description: 'SEO for a brand-new website: getting indexed, why new domains rank slowly, which pages to build first, early quick wins, real links and what to measure.',
+    date: '2026-10-01',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>A new website starts with a blank slate in Google: no history, no links and nobody searching for it by name yet. That's normal, and it doesn't mean your SEO is failing. It means the first few months are about laying foundations in the right order. Here's how I approach SEO for a brand-new business website, and what's realistic to expect.</p>
+
+<h2>Step one: make sure Google can find and index it</h2>
+<p>Nothing else matters until your pages are in Google's index. The essentials:</p>
+<ul>
+  <li>Verify the site in Google Search Console, ideally as a domain property so every version of the site is covered</li>
+  <li>Submit your XML sitemap and check it's read without errors</li>
+  <li>Use URL Inspection to request indexing for the homepage and your main service pages</li>
+  <li>Confirm the "Discourage search engines" setting is off and no leftover <code>noindex</code> tags from the staging site remain</li>
+</ul>
+<p>Our guide on <a href="/blog/get-website-indexed-google-faster/">getting a new website indexed faster</a> covers each step and the common blockers. Once your key pages show as indexed, move on; requesting indexing again and again won't speed anything up.</p>
+
+<h2>Why a new domain takes time to rank</h2>
+<p>Being indexed and ranking well are different things. When your site is new, Google has very little to go on:</p>
+<ul>
+  <li><strong>No links:</strong> other websites haven't mentioned or linked to you yet</li>
+  <li><strong>No track record:</strong> Google hasn't seen how your pages serve searchers over time</li>
+  <li><strong>No brand demand:</strong> people aren't yet searching for your business name</li>
+  <li><strong>Established competitors:</strong> the businesses already ranking may have years of content, reviews and links behind them</li>
+</ul>
+<p>You'll sometimes hear this called the "Google sandbox". Google's representatives have generally said there's no deliberate penalty for new sites, but the practical effect is similar: trust builds gradually. Specific, less competitive searches tend to move first, and broad city-wide terms take much longer. See <a href="/blog/how-long-does-seo-take/">how long SEO takes</a> for an honest picture of timelines.</p>
+
+<h2>Which pages to build first</h2>
+<p>New sites often rush into blogging. For a service business, the pages that bring enquiries are the ones matching what customers search when they're ready to hire, such as "{service} in {city}". Build these first and make them thorough:</p>
+<table>
+  <thead><tr><th>Page</th><th>Why it comes first</th></tr></thead>
+  <tbody>
+    <tr><td>One page per main service</td><td>Matches buying searches; a single "Services" page can't rank for each service</td></tr>
+    <tr><td>Homepage</td><td>Ranks for your business name and explains what you do and where</td></tr>
+    <tr><td>Location or area pages (only where genuine)</td><td>Helps with nearby searches if you have real local work to show</td></tr>
+    <tr><td>About and contact</td><td>Builds trust and confirms your name, address and phone number</td></tr>
+    <tr><td>Case studies or project pages</td><td>Proof for visitors, and unique content Google can't find anywhere else</td></tr>
+  </tbody>
+</table>
+<p>Blog articles can come once these are solid. A handful of strong service pages usually does more for a new site than dozens of thin posts.</p>
+
+<h2>Quick wins that don't depend on domain age</h2>
+<p>Some visibility doesn't have to wait for your website to build authority:</p>
+<ul>
+  <li><strong>Google Business Profile:</strong> for local businesses, the map results can bring calls before your website ranks for much. Complete every field, add real photos and link the profile to your site</li>
+  <li><strong>Your own name:</strong> use your exact business name in the homepage title, About page and profiles, so brand searches find your site rather than a directory listing</li>
+  <li><strong>Directories and profiles:</strong> a few relevant listings, such as industry bodies, trusted local directories and social profiles, all with the same name, address and phone number</li>
+  <li><strong>Existing customers:</strong> share the new link on WhatsApp and in your email signature, and ask happy customers for Google reviews</li>
+</ul>
+
+<h2>Early links from real relationships</h2>
+<p>A new site needs other websites to vouch for it, and this is where many owners get tempted by cheap "backlink packages". Avoid them: paid link schemes go against Google's guidelines and rarely help. Start instead with people who already know you:</p>
+<ul>
+  <li>Suppliers and brands you're an authorised dealer, partner or installer for</li>
+  <li>Clients who might credit you on their own site</li>
+  <li>Trade associations, chambers of commerce and local business groups you belong to</li>
+  <li>Businesses you refer work to, and who refer work to you</li>
+  <li>Local news or community sites, if you've done something genuinely newsworthy</li>
+</ul>
+<p>A few relevant links from real relationships are worth far more than hundreds from unrelated sites. More ideas in <a href="/blog/ethical-link-building-small-business/">ethical link building for small businesses</a>.</p>
+
+<h2>What to measure in the first months</h2>
+<p>Checking your main keyword every morning will only frustrate you. These signals show whether the foundations are working:</p>
+<ol>
+  <li><strong>Indexed pages:</strong> are all your important pages indexed in Search Console?</li>
+  <li><strong>Impressions:</strong> is Google showing your pages for more searches each month, even if clicks are still low?</li>
+  <li><strong>Queries:</strong> which searches are you appearing for, and do they match your services?</li>
+  <li><strong>Brand searches:</strong> does your site come up when people search your name?</li>
+  <li><strong>Business Profile actions:</strong> calls, direction requests and website clicks</li>
+  <li><strong>Enquiries:</strong> form submissions, calls and WhatsApp clicks, tracked as key events in GA4</li>
+</ol>
+<p>Rising impressions usually come before rising clicks. If impressions are growing for relevant searches, you're heading in the right direction.</p>
+
+<h2>Mistakes that slow new sites down</h2>
+<ul>
+  <li>Launching with placeholder text, empty pages or content copied from a template or competitor</li>
+  <li>Publishing lots of quick, generic articles before the service pages are finished</li>
+  <li>Creating near-identical pages for dozens of localities</li>
+  <li>Changing page URLs repeatedly in the first few months without redirects</li>
+  <li>Buying links or paying for "guaranteed page one" packages</li>
+  <li>Giving up after a few weeks because rankings haven't moved</li>
+</ul>
+<p>For the wider launch plan beyond SEO, including tracking, reviews and early content, see <a href="/blog/first-90-days-after-website-launch/">the first 90 days after your website launches</a>.</p>
+
+<p>Launching a new site and want the SEO foundations right from day one? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or if the site is still being planned, <a href="/wordpress-website-development/">WordPress website development</a> with SEO set up as part of the build.</p>
+`,
+  },
+  {
+    slug: 'google-discover-small-business',
+    title: 'Google Discover for Small Business Websites: What to Know',
+    description: 'What Google Discover is, how it differs from search, what content tends to appear, how to read the Discover report and why it\'s a bonus rather than a plan.',
+    date: '2026-10-01',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>Some website owners open Search Console one day and notice a report they didn't have before: Discover. It's a source of traffic that works very differently from normal Google search, and it can send a sudden burst of visitors to a single page. For a small business it's worth understanding, but not worth chasing. Here's what it is and how to approach it sensibly.</p>
+
+<h2>What Google Discover is</h2>
+<p>Discover is a feed of articles and videos that Google shows people without them searching for anything. It appears in the Google app and on Google's mobile homepage, and on many Android phones it's a swipe away from the home screen. The feed is personalised: Google picks content based on what it thinks each person is interested in, using signals such as their activity on Google products (where they've allowed it) and topics they've chosen to follow.</p>
+<p>There's nothing to sign up for. If your pages are indexed by Google and meet its content policies, they're eligible to appear. Eligible isn't the same as shown, though, and Google doesn't guarantee Discover traffic to any site.</p>
+
+<h2>How Discover differs from search</h2>
+<table>
+  <thead><tr><th>Aspect</th><th>Google Search</th><th>Google Discover</th></tr></thead>
+  <tbody>
+    <tr><td>What triggers it</td><td>Someone types or speaks a query</td><td>Google predicts what a person might like</td></tr>
+    <tr><td>Type of content</td><td>Answers to a specific need, often evergreen</td><td>Often fresh, timely or visually appealing</td></tr>
+    <tr><td>Traffic pattern</td><td>Usually steady, building over time</td><td>Often spiky: a burst, then little or nothing</td></tr>
+    <tr><td>Keywords</td><td>Central to how pages are matched</td><td>Much less relevant, as there's no query to match</td></tr>
+    <tr><td>Visitor mindset</td><td>Often actively looking to buy or hire</td><td>Browsing out of interest</td></tr>
+  </tbody>
+</table>
+<p>That last row matters most for a business. Someone searching "AC repair near me" wants help today. Someone scrolling Discover might enjoy your article and never think about hiring anyone.</p>
+
+<h2>What tends to appear</h2>
+<p>Google doesn't publish a formula, but its guidance and what you see in the feed point the same way. Content that appears in Discover is usually:</p>
+<ul>
+  <li><strong>Timely:</strong> new launches, seasonal guides, changes in rules that affect people, local events</li>
+  <li><strong>Visual:</strong> led by a strong, original photo rather than a stock image or a logo</li>
+  <li><strong>Genuinely helpful or interesting:</strong> it tells a story well or offers insight readers can't easily find elsewhere</li>
+  <li><strong>From a site with clear expertise</strong> on the topic, built up over many pages rather than one lucky post</li>
+</ul>
+<p>For small businesses, realistic candidates include a well-photographed home renovation story from an interior designer, a festive gifting guide from a sweet shop, a pre-monsoon checklist from a waterproofing company, or a travel agency's guide to a destination people are suddenly interested in. Service pages, contact pages and price lists are unlikely to appear, and that's fine: those pages are built for search.</p>
+
+<h2>Images and the max-image-preview setting</h2>
+<p>Discover is a visual feed, and large images stand out far more than small thumbnails. Google's guidance for Discover recommends:</p>
+<ul>
+  <li>Using a high-quality image at least 1,200 pixels wide as the main image for the page</li>
+  <li>Allowing large image previews with the <code>max-image-preview:large</code> robots setting</li>
+  <li>Not using your site logo as the main image</li>
+</ul>
+<p>WordPress adds the large image preview setting by default on public sites, but SEO plugins and themes can change robots settings, so check your plugin's options or the page source. Then make sure each article has a relevant featured image and social sharing image that represents the content. Our <a href="/blog/image-seo-guide/">image SEO guide</a> covers choosing and preparing these images. They need to load quickly too, so compress them without making them blurry.</p>
+
+<h2>Titles that inform, not mislead</h2>
+<p>Because Discover shows your title and image without any search context, it's tempting to write teasing headlines. Google's guidance warns against this: titles should capture what the page is about, and preview content shouldn't exaggerate, withhold key information to force a click, or rely on shock. Clickbait might win one click, but it works against the kind of content Google says it wants in the feed, and it disappoints the reader.</p>
+<p>A simple test: would the reader feel the article delivered what the headline promised? If not, rewrite it. The same principle applies to search results; see <a href="/blog/write-meta-titles-descriptions/">how to write meta titles and descriptions</a>.</p>
+
+<h2>Checking the Discover report in Search Console</h2>
+<p>In Google Search Console, look under Performance. If your site has had enough Discover impressions, you'll see a Discover report alongside the usual search results report. If it isn't there, your site simply hasn't appeared in the feed enough to qualify, which is very common for small business sites.</p>
+<p>The report shows:</p>
+<ul>
+  <li><strong>Impressions:</strong> how often your content appeared in people's feeds</li>
+  <li><strong>Clicks and CTR:</strong> how many people tapped through</li>
+  <li><strong>Pages:</strong> which pages appeared, so you can see what kind of content was picked</li>
+</ul>
+<p>There's no query data, because nobody typed a search. Analytics tools don't always label Discover visits clearly, so treat Search Console as the more reliable record. For the rest of the tool, see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
+
+<h2>A bonus, not a strategy</h2>
+<p>Google itself describes Discover traffic as less predictable than search traffic, and there's no way to make your content appear. A page that brings a burst of visitors one week may never show again. Building your marketing around it is risky, especially for a business that depends on steady enquiries.</p>
+<p>A sensible approach for a small business:</p>
+<ol>
+  <li>Focus first on what brings enquiries reliably: strong service pages, local SEO and your Google Business Profile</li>
+  <li>When you publish articles, make them timely or genuinely useful, with an original lead image and an honest title</li>
+  <li>Check the technical basics once: large image previews allowed, featured images set, pages fast on mobile</li>
+  <li>If Discover traffic arrives, treat it as a bonus. Look at which page was picked and whether those visitors went on to read a service page or get in touch</li>
+</ol>
+<p>Be wary of anyone selling "guaranteed Discover traffic". Nobody outside Google controls the feed.</p>
+
+<p>Want your articles and images set up so they have a fair chance in both search and Discover? See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'seo-for-service-pages-without-blog',
+    title: 'How to Rank a Service Business Website Without a Blog',
+    description: 'You don\'t need a blog to rank a service business. How service pages, honest area pages, FAQs, case studies and reviews do the work, and when a blog is worth it.',
+    date: '2026-10-01',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>Many service business owners are told they "need a blog" for SEO, then struggle to post every week and give up after five articles. The good news: for most service businesses, a blog isn't what brings in enquiries. The searches that lead to paid work, like "{service} in {city}", are usually won by service pages, location pages and your Google Business Profile. Here's how to rank without running a blog, and when one becomes worth the effort.</p>
+
+<h2>Why a blog isn't the starting point</h2>
+<p>Google tries to show the type of page that best matches what someone wants. When a person searches "packers and movers in Hyderabad" or "CA for GST registration in Pune", they want a business to hire, not an article to read. For searches like these, Google mostly shows service pages, business listings in the map results and directories.</p>
+<p>Blog posts suit research searches, such as "how to stop wall seepage in the monsoon". They can bring visitors, but those visitors are often further from hiring anyone. And if your core pages are thin, a blog won't make up for it.</p>
+
+<h2>Make every service page strong</h2>
+<p>Your service pages do the work a blog would otherwise do, so they need real substance. For each main service:</p>
+<ul>
+  <li>Give it its own page and URL, rather than listing everything on one "Services" page</li>
+  <li>Explain who it's for, what's included, the process and what affects the cost</li>
+  <li>Use the words customers use, including your city or areas where relevant</li>
+  <li>Show proof: photos of real work, a related project and a testimonial</li>
+  <li>Answer the questions you hear on every enquiry call</li>
+</ul>
+<p>If a service has variations people search for separately, such as "office deep cleaning" and "sofa cleaning", consider a page for each, as long as each has enough to say. Our guide to <a href="/blog/write-service-pages-that-convert/">writing service pages that rank and convert</a> gives a full structure.</p>
+
+<h2>Location and area pages, done properly</h2>
+<p>If you serve several cities or localities, area pages can help you appear for "{service} in {area}" searches. They only work when each page has something genuinely local:</p>
+<ul>
+  <li>Projects or jobs completed in that area, with photos</li>
+  <li>Reviews from customers there</li>
+  <li>Local details that change the work, such as building types, society rules or travel time</li>
+  <li>Practical information: who covers the area, visiting days and how quickly you can get there</li>
+</ul>
+<p>Pages that only swap the area name are doorway pages and can do more harm than good. Start with your two or three busiest areas and add more as real work builds up. See <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a>.</p>
+
+<h2>FAQs that answer real questions</h2>
+<p>FAQs let a service page cover the extra questions people search without needing separate articles. Pull them from real conversations: what customers ask on calls and WhatsApp, the doubts that come up before they book, and the questions in Google's "People also ask" boxes for your services.</p>
+<p>Keep answers short and direct, put the relevant ones on each service page rather than in one giant FAQ page, and update them when prices or processes change. More in <a href="/blog/faq-page-seo/">how to create FAQ sections that help customers and SEO</a>.</p>
+
+<h2>Case studies and project pages</h2>
+<p>Here's what many service businesses miss: case studies and project pages are content, and often better content than a generic blog post. Each one is unique to you, shows real expertise and naturally includes the words people search, such as the service, the type of property or client, and the location.</p>
+<ul>
+  <li>Create a page for each notable project: the client's problem, what you did, photos and the outcome</li>
+  <li>Only share results and details you can back up, and get the client's permission first</li>
+  <li>Link each project to the related service page, and show relevant projects on that service page</li>
+</ul>
+<p>Adding one project a month is far easier for most businesses than writing weekly articles, and it builds proof at the same time.</p>
+
+<h2>Reviews and your Google Business Profile</h2>
+<p>For local service searches, the map results often appear above the normal results, and they're driven by your Google Business Profile rather than your blog. Keep it complete and accurate, choose the right categories, list your services, add real photos regularly and reply to every review.</p>
+<p>Ask every happy customer for a review, and make it easy by sending a direct link on WhatsApp. Google says review count and rating are among the factors in local rankings, and reviews reassure people comparing you with competitors. Link the profile to your website and keep your business name, address and phone number consistent everywhere. See the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+
+<h2>When a blog actually becomes worth it</h2>
+<p>A blog earns its place once the basics above are done and at least one of these is true:</p>
+<ul>
+  <li>Customers research a lot before buying, as with solar installations, home renovations, overseas education or B2B services</li>
+  <li>Competitors rank with useful guides that your customers clearly read</li>
+  <li>You keep answering the same detailed questions and want one page to send people to</li>
+  <li>You serve a wider region or the whole country and need visibility beyond local searches</li>
+  <li>Someone in the business can write genuinely useful articles regularly, from real experience</li>
+</ul>
+<p>Even then, a few thorough articles that link to your service pages beat a stream of short, generic posts. Our guide to <a href="/blog/add-blog-to-existing-website/">adding a blog to an existing website</a> covers setting one up properly.</p>
+<p>If none of those apply yet, put the time into service pages, projects and reviews instead. For most service businesses, that's the better use of limited time.</p>
+
+<p>Want help building service and area pages that can rank? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/landing-page-design/">landing page design</a> if you're also running ads for particular services.</p>
 `,
   },
 ];
