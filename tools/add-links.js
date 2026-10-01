@@ -619,6 +619,10 @@ const LINKS = [
   ['respond-to-website-enquiries-fast', '<h2>Build the website around fast replies</h2>', '<p>For a fuller routine covering alerts, auto-replies, lead ownership and a day-by-day follow-up sequence, see <a href="/blog/follow-up-website-leads-fast/">how to follow up website leads properly</a>.</p>\n\n'],
   ['show-prices-on-website', '<h2>Give prices context</h2>', '<p>If a calculator suits your business, see <a href="/blog/website-calculators-lead-generation/">how to use website calculators to generate leads</a> with honest, visible assumptions.</p>\n\n'],
   ['multi-step-forms-lead-qualification', '<h2>Qualifying questions that actually help</h2>', '<p>The same easy-first pattern works for product and service finders; see <a href="/blog/website-quiz-lead-generation/">using website quizzes to generate leads</a>.</p>\n\n'],
+  // Agent 72
+  ['website-for-wedding-venues-banquet-halls', '<h2>SEO</h2>', '<p>Decorators who work at venues like yours face similar questions about photos, dates and packages; see <a href="/blog/website-for-wedding-decorators/">websites for wedding and event decorators</a>.</p>\n\n'],
+  ['website-for-home-decor-stores', '<h2>SEO and speed for an image-heavy store</h2>', '<p>If curtains and blinds are your main business rather than one category among many, see <a href="/blog/website-for-curtain-blinds-shops/">websites for curtain, blinds and soft-furnishing shops</a>.</p>\n\n'],
+  ['website-for-furniture-businesses', '<h2>Speed matters</h2>', '<p>Cafés, hotels and offices also need existing seating re-covered between refits; if that is your trade, see <a href="/blog/website-for-upholstery-services/">websites for upholstery and sofa repair services</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

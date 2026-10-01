@@ -5511,6 +5511,8 @@ module.exports = [
 <h2>B2B buyers</h2>
 <p>Hotels, offices, architects and interior designers buy in bulk. A dedicated section for trade and project enquiries, with capacity, past projects and a quote form, can bring high-value orders; see the <a href="/blog/industrial-website-product-catalogue/">product catalogue guide</a>.</p>
 
+<p>Cafés, hotels and offices also need existing seating re-covered between refits; if that is your trade, see <a href="/blog/website-for-upholstery-services/">websites for upholstery and sofa repair services</a>.</p>
+
 <h2>Speed matters</h2>
 <p>Furniture sites are image-heavy. Optimized images and good hosting keep category pages fast; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
 
@@ -7803,6 +7805,8 @@ module.exports = [
   <li>Partner decorators, photographers and caterers</li>
   <li>Years in operation and notable events</li>
 </ul>
+
+<p>Decorators who work at venues like yours face similar questions about photos, dates and packages; see <a href="/blog/website-for-wedding-decorators/">websites for wedding and event decorators</a>.</p>
 
 <h2>SEO</h2>
 <ul>
@@ -20250,6 +20254,8 @@ Template: astra
 <p>If you have a physical store, the website should bring people through the door as well as selling online. Show your address, map, opening hours and photos of the store, and keep your Google Business Profile updated with the same details and fresh photos.</p>
 <p>Many furnishing stores also offer services that need a home visit, such as curtain stitching and fitting, blinds or wallpaper installation. Give each service its own page with a "book a measurement visit" form and a WhatsApp button, and mention the areas you cover.</p>
 <p>Interior designers, homestays, cafés and offices often buy decor and soft furnishings in bulk. A short trade page with a simple enquiry form can bring repeat project orders.</p>
+
+<p>If curtains and blinds are your main business rather than one category among many, see <a href="/blog/website-for-curtain-blinds-shops/">websites for curtain, blinds and soft-furnishing shops</a>.</p>
 
 <h2>SEO and speed for an image-heavy store</h2>
 <ul>
@@ -36341,6 +36347,285 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Then look at what happens afterwards. If one result leads to frequent returns or "not what I expected" feedback, the mapping is probably wrong. If many people answer "Not sure" to a question, rewrite it or remove it.</p>
 
 <p>Want a product or service finder that's fast, honest and connected to your store or enquiry process? See <a href="/woocommerce-developer/">WooCommerce development</a> for online stores, or <a href="/wordpress-website-development/">WordPress website development</a> for service businesses.</p>
+`,
+  },
+  {
+    slug: 'website-for-wedding-decorators',
+    seoTitle: 'Websites for Wedding and Event Decorators',
+    title: 'Websites for Wedding and Event Decorators: Portfolios, Packages and Bookings',
+    description: 'How wedding and event decorators can use a website to show mandap, stage, floral and lighting work, explain packages and booking terms, and win more enquiries.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Couples and families rarely hire a decorator on words alone. They want to see mandaps, stages, floral work and lighting that look like what they have in mind, at a venue like theirs, and then they want to know whether you're free on their date. A good decorator website answers those questions quickly and turns a scroll through your work into an enquiry. If you plan whole events rather than decorate them, see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a>.</p>
+
+<h2>What clients look for before they contact you</h2>
+<p>Most people comparing decorators are trying to answer a short list of questions:</p>
+<ul>
+  <li>Have you done work in the style and scale they want, whether a grand mandap, a floral haldi set-up or a minimal reception stage?</li>
+  <li>Do you work in their city, and have you worked at their venue or one like it?</li>
+  <li>What does a package actually include, and what costs extra?</li>
+  <li>Are you available on their date, and how do they lock it in?</li>
+  <li>Can they trust you to set up on time and coordinate with the venue and planner?</li>
+</ul>
+<p>Every section of your website should help answer one of these.</p>
+
+<h2>A portfolio organised by event type and venue</h2>
+<p>A single gallery of hundreds of photos makes visitors work too hard. Organise your work the way clients think about their events:</p>
+<ul>
+  <li><strong>By function:</strong> mandap, haldi, mehendi, sangeet, reception, engagement, puja and housewarming</li>
+  <li><strong>By element:</strong> mandaps, stage backdrops, entrances and pathways, floral installations, ceiling work, table centrepieces and lighting</li>
+  <li><strong>By event type:</strong> weddings, birthdays and baby showers, corporate events and product launches</li>
+  <li><strong>By venue type:</strong> banquet halls, lawns, hotels, farmhouses and functions at home</li>
+</ul>
+<p>Treat your best events as short project stories: the function, the theme, the main elements, and photos of the set-up in both daylight and evening lighting, since lighting changes how décor looks. Credit the photographer whenever you use their images.</p>
+<p>Ask clients for permission before publishing photos from their wedding, and favour shots where the décor is the focus rather than the guests. Check with venues before naming them on your site. Pages about decorating at a particular venue can help with venue-name searches, but only create them where you have real work and photos there; otherwise they read as thin, copy-paste pages.</p>
+
+<h2>Themes and packages described by scope</h2>
+<p>Many decorators avoid putting packages online because every event is different. You don't need to publish a rate card, but describing what each package covers helps clients shortlist you and makes the first call more productive. Whether to show starting prices is a business decision; see <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
+<table>
+  <thead>
+    <tr><th>Package element</th><th>What to describe</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Mandap or stage</td><td>Structure, size options, fabric draping, seating for the couple and family</td></tr>
+    <tr><td>Florals</td><td>Fresh, artificial or a mix, and which areas are covered</td></tr>
+    <tr><td>Lighting</td><td>Fairy lights, uplighting, chandeliers and focus lights for photography</td></tr>
+    <tr><td>Entrance and pathways</td><td>Gates, arches, welcome boards and aisle décor</td></tr>
+    <tr><td>Add-ons</td><td>Photo booths, name boards, car décor, ceiling work and effects the venue allows</td></tr>
+  </tbody>
+</table>
+<p>Also explain what changes the quote: venue size and ceiling height, fresh versus artificial flowers, the number of functions, set-up time, travel and any venue rules. Theme pages such as pastel floral, traditional South Indian, royal or minimal give clients the words to describe what they want.</p>
+
+<h2>Site visits, mood boards and your design process</h2>
+<p>Clients feel more confident when they can see how a booking turns into a finished set-up. Lay out your process in plain steps:</p>
+<ol>
+  <li><strong>Enquiry and call:</strong> date, venue, functions, guest count and the look they're after</li>
+  <li><strong>Site visit:</strong> measurements, power points, set-up and teardown timings, and the venue's rules on fixing, open flames or special effects</li>
+  <li><strong>Mood board:</strong> colour palette, reference images, and sketches or 3D views if you offer them</li>
+  <li><strong>Revisions and final quote:</strong> every agreed element listed in writing</li>
+  <li><strong>Set-up day:</strong> who from your team is on site and how you coordinate with the planner and venue</li>
+</ol>
+<p>Invite clients to share inspiration photos, outfit colours and the venue name in the enquiry form, so you're prepared for the first call.</p>
+
+<h2>Booking dates and advance terms, explained simply</h2>
+<p>Popular wedding dates are in demand, so many clients want to know how to secure their date before every detail is final. Explain your terms in general language on a booking or FAQ page:</p>
+<ul>
+  <li>How a date is held, for example only once the quote is accepted and an advance is paid</li>
+  <li>When the balance is due and which payment methods you accept, such as UPI or bank transfer</li>
+  <li>What happens if the date changes, the event is postponed or the scope grows</li>
+  <li>Your cancellation terms, written clearly rather than buried in small print</li>
+</ul>
+<p>Keep the full details in your written quotation or agreement, and have your terms reviewed by a lawyer or your CA rather than copying them from another business. A "check availability" form asking for the date and city gives clients a clear first step.</p>
+
+<h2>Working with planners and venues</h2>
+<p>A lot of décor work comes through wedding planners and venues rather than directly from couples. Give these partners a page of their own that covers:</p>
+<ul>
+  <li>The types and scale of events you handle, and how many you can take on in one day</li>
+  <li>Your team, inventory and transport, so they know you can deliver on time</li>
+  <li>How you coordinate on the day: a single point of contact, set-up windows and teardown</li>
+  <li>A downloadable portfolio PDF they can share with their own clients</li>
+</ul>
+<p>Mention venues you regularly work at only with their agreement. Many venues keep a list of decorators they recommend, so it helps to understand what they look for; see <a href="/blog/website-for-wedding-venues-banquet-halls/">websites for wedding venues and banquet halls</a>.</p>
+
+<h2>Enquiries, local search and speed</h2>
+<p>Keep the enquiry form short: event type, date, city or venue, functions, approximate guest count and an optional budget range, with a way to attach inspiration images. Add a WhatsApp button, because many families prefer to send photos and voice notes there, and reply quickly during the wedding season.</p>
+<ul>
+  <li>Target searches like "wedding decorator in {city}", "mandap decoration {city}" and "haldi decoration ideas"</li>
+  <li>Keep your Google Business Profile updated with recent event photos, and ask happy clients for reviews</li>
+  <li>Reuse your best Instagram reels and photos on the website, where clients can see them organised by function</li>
+  <li>Compress images and use gallery thumbnails so photo-heavy pages stay fast on mobile; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a></li>
+</ul>
+
+<p>Want a portfolio website that shows your décor at its best and brings in date enquiries? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> for wedding-season campaigns.</p>
+`,
+  },
+  {
+    slug: 'website-for-curtain-blinds-shops',
+    seoTitle: 'Websites for Curtain, Blinds and Soft-Furnishing Shops',
+    title: 'Websites for Curtain and Blinds Shops: Swatches, Measuring and Installation',
+    description: 'What curtain and blinds shops need online: real swatch photos, measuring and installation details, motorised blinds, sample requests and trade enquiries.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'woocommerce-developer'],
+    body: `
+<p>Curtains and blinds are bought by touch and by measurement. Customers want to feel the fabric, see how much light it blocks and be sure it will fit their windows, which is why most curtain shops sell through a showroom or home visit rather than a shopping cart. Your website's job is to help people reach the right shortlist and then book that visit. This guide is for specialist curtain, blinds and soft-furnishing shops; if you run a broader decor store, see <a href="/blog/website-for-home-decor-stores/">websites for home decor and furnishing stores</a>.</p>
+
+<h2>What customers want to know before they call</h2>
+<ul>
+  <li>Which products you offer: curtains, sheers, blackout options, roller, zebra, roman, Venetian and vertical blinds, and tracks and rods</li>
+  <li>Whether you measure and install in their area</li>
+  <li>How long it takes from measurement to installation, and what affects that</li>
+  <li>How they can see fabrics before deciding</li>
+  <li>Whether you also make cushion covers, bed linen and upholstery, or supply wallpaper</li>
+</ul>
+<p>Give each main product its own page, with photos, the rooms it works best in and a clear button to book a measurement visit or request samples.</p>
+
+<h2>Fabric catalogues with real swatch photos</h2>
+<p>A fabric catalogue is the heart of a curtain shop's website, and real photos are what make it useful. Supplier images are often edited or show the fabric in a staged room; your own photos, taken in daylight, show what customers will actually get. If you do want to use supplier images, check you have permission first.</p>
+<ul>
+  <li>A flat swatch photo and a close-up showing weave and texture</li>
+  <li>A photo with light behind the fabric, so customers can compare sheer, dim-out and blackout options</li>
+  <li>Composition, fabric width, care instructions and whether it suits sun-facing windows</li>
+  <li>Filters by colour, opacity, pattern and room</li>
+  <li>An honest note that colours vary between screens and that a physical sample is the best way to judge</li>
+</ul>
+<p>Most curtain work is made to measure, so a catalogue with "request sample" and "get a quote" buttons usually works better than fixed-price products. If you also sell ready-made curtains, set sizes and colours up as variations of one product; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>
+
+<h2>Helping customers visualise their options</h2>
+<p>Many customers don't know the difference between blind types. A simple comparison helps them arrive with a clearer idea of what they want:</p>
+<table>
+  <thead>
+    <tr><th>Option</th><th>Often chosen for</th><th>Worth explaining</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Roller blinds</td><td>A clean look in bedrooms, studies and offices</td><td>Available in different opacities, from light-filtering to blackout</td></tr>
+    <tr><td>Zebra blinds</td><td>Adjustable light in living rooms</td><td>Alternating sheer and solid bands that can be lined up or offset</td></tr>
+    <tr><td>Roman blinds</td><td>A soft, fabric look</td><td>They fold up in pleats, so fabric choice matters</td></tr>
+    <tr><td>Venetian blinds</td><td>Control over light and privacy</td><td>Slats tilt; aluminium and wooden versions suit different rooms</td></tr>
+    <tr><td>Vertical blinds</td><td>Wide windows and sliding doors</td><td>Common in offices and large openings</td></tr>
+  </tbody>
+</table>
+<p>Back this up with galleries of completed installations sorted by room: living rooms, bedrooms, kids' rooms, offices and cafés. Room-visualiser tools exist, but for a local shop a well-organised gallery and an invitation to send window photos on WhatsApp for suggestions often does the job.</p>
+
+<h2>Motorised blinds and curtains</h2>
+<p>Motorised blinds and curtain tracks interest people with tall windows, large glass walls or smart homes, and they raise questions a normal product page doesn't answer. Give them their own page explaining:</p>
+<ul>
+  <li>Control options such as remotes, wall switches and apps, and whether a system works with smart home assistants (always confirm with the manufacturer)</li>
+  <li>Wired versus battery or rechargeable motors, and the need for a power point near wired installations</li>
+  <li>Why it helps to plan wiring before painting or false ceiling work</li>
+  <li>A short demo video from your showroom, set up so it doesn't slow the page</li>
+</ul>
+<p>Builders and interior designers specifying motorised systems want technical detail, so offer product sheets on request rather than overloading the page.</p>
+
+<h2>Your measuring and installation service</h2>
+<p>Explain the whole process so customers know what to expect:</p>
+<ol>
+  <li><strong>Book a visit:</strong> pick a date and share the address and number of windows</li>
+  <li><strong>Measure and advise:</strong> your team measures, checks the wall or ceiling for fixing, and brings sample books</li>
+  <li><strong>Quotation:</strong> itemised by window, covering fabric, stitching style, tracks or brackets and installation</li>
+  <li><strong>Making:</strong> stitching or fabrication, with timelines that depend on fabric availability and order size</li>
+  <li><strong>Installation:</strong> fitting, finishing and a quick demo for blinds and motorised systems</li>
+</ol>
+<p>List the areas you cover, whether the measurement visit is free or adjusted against the order, and what's included, such as removing old curtains or fixing tracks. If some customers prefer to measure themselves, a simple measuring guide with diagrams reduces mistakes.</p>
+
+<h2>Sample requests and enquiry forms that ask the right questions</h2>
+<p>A sample request form lets customers pick a few swatches to see at home or collect from the shop. State clearly whether samples are free, chargeable or adjusted against an order.</p>
+<p>For quotes, ask only for what you actually need, and keep most fields optional:</p>
+<ul>
+  <li>Number of windows and the rough width and height of each</li>
+  <li>Room type and product interest, such as blackout curtains or zebra blinds</li>
+  <li>Photos of the windows, uploaded or sent on WhatsApp</li>
+  <li>Area or pin code and a preferred visit date</li>
+</ul>
+<p>A multi-step form can collect all this without feeling long; see <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms for lead qualification</a>.</p>
+
+<h2>Serving interior designers and builders</h2>
+<p>Interior designers, architects and builders can bring repeat, multi-window orders. A trade page should cover the project types you handle (apartments, villas, offices, hotels), your capacity for large orders, sample books for designers, coordination with site timelines and GST invoicing. Add a separate project enquiry form so trade leads don't get mixed up with retail ones. Designers judge suppliers by finish, so show completed projects with their permission; see <a href="/blog/website-for-interior-designers-architects/">websites for interior designers and architects</a> for what they show their own clients.</p>
+
+<h2>Local SEO and speed</h2>
+<ul>
+  <li>Target searches like "curtain shop in {city}", "blinds in {area}", "motorised blinds {city}" and "blackout curtains near me"</li>
+  <li>Keep your Google Business Profile updated with showroom photos, opening hours and recent installations</li>
+  <li>Write your own fabric and product descriptions instead of copying supplier text</li>
+  <li>Compress swatch and gallery images so catalogue pages load quickly on mobile</li>
+</ul>
+
+<p>Planning a website for your curtain or blinds business? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> if you also want to sell ready-made products or samples online.</p>
+`,
+  },
+  {
+    slug: 'website-for-upholstery-services',
+    seoTitle: 'Websites for Upholstery and Sofa Repair Services',
+    title: 'Websites for Upholstery and Sofa Repair Services: Galleries, Estimates and Pickup',
+    description: 'How upholstery and sofa repair businesses can win more jobs with before and after galleries, fabric guides, photo estimates, pickup and drop, and reviews.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Most people with a tired sofa aren't sure whether to repair it or replace it. They search "sofa repair near me", look at a few photos and want a rough idea of cost and time before they call anyone. An upholstery website that shows real transformations, makes estimates easy and explains pickup and drop can win that customer while they're still comparing. This guide covers what to include; if you make or sell new furniture, see <a href="/blog/website-for-furniture-businesses/">websites for furniture showrooms and manufacturers</a>.</p>
+
+<h2>What customers want to know first</h2>
+<ul>
+  <li>Can this sofa, chair or headboard be fixed, and is it worth it compared with buying new?</li>
+  <li>What exactly you do: re-covering, foam replacement, spring and webbing repairs, frame repairs, cushion refilling, dining chairs, recliners and headboards</li>
+  <li>Roughly what it will cost and how long it will take</li>
+  <li>Whether you collect and deliver, and which areas you cover</li>
+  <li>Whether they can see fabrics before choosing</li>
+</ul>
+<p>Answer the "repair or replace" question honestly. Explaining when re-upholstery makes sense, such as a solid frame, a piece with sentimental value or an unusual size, and when it may not, builds more trust than suggesting everything is worth saving.</p>
+
+<h2>Before and after galleries</h2>
+<p>Upholstery sells on transformation, so before and after photos are your strongest content. Make them convincing:</p>
+<ul>
+  <li>Shoot both photos from the same angle and in similar light</li>
+  <li>Group them by service: full re-covering, foam replacement, frame repair, leatherette work and chairs</li>
+  <li>Add a short caption saying what was done and which fabric was used</li>
+  <li>Include a few work-in-progress shots of a stripped frame or new foam, so customers see the work that's hidden once the fabric goes on</li>
+</ul>
+<p>Ask customers before publishing photos taken in their homes, and crop out personal items. Only ever show jobs your own workshop has done.</p>
+
+<h2>Fabric options</h2>
+<p>Fabric choice drives both the look and the cost, and customers often feel lost here. Create a fabric page that explains the main types you work with, such as cotton blends, velvets, chenille, jacquards and leatherette, with real photos, typical uses and care advice. Cover practical points like homes with pets or small children, sun-facing rooms and how easy a fabric is to clean, without overstating what any fabric can do.</p>
+<p>Offer a way to see swatches: a showroom visit, a home visit with sample books, or swatch photos on WhatsApp. If you accept customer-supplied fabric, say so and explain how you advise on the quantity needed.</p>
+
+<h2>Estimates from photos</h2>
+<p>Photo estimates save a wasted visit for both sides. Ask for:</p>
+<ul>
+  <li>Photos from the front, side and back, plus close-ups of any damage</li>
+  <li>Approximate dimensions and the number of seats</li>
+  <li>What they want done and any fabric preference</li>
+  <li>Area or pin code for pickup</li>
+</ul>
+<p>Make clear that a photo estimate is a range and the final quote follows inspection, because hidden frame or spring damage often only shows once the old fabric comes off. Explain the factors behind the price:</p>
+<table>
+  <thead>
+    <tr><th>Factor</th><th>Why it changes the quote</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Size and design</td><td>More seats, curves, tufting or piping take more fabric and labour</td></tr>
+    <tr><td>Fabric</td><td>Prices vary widely between fabric types and ranges</td></tr>
+    <tr><td>Foam and cushioning</td><td>New foam adds material cost but often makes the biggest difference to comfort</td></tr>
+    <tr><td>Frame and springs</td><td>Structural repairs add time and materials</td></tr>
+    <tr><td>Pickup distance</td><td>Transporting bulky pieces may be charged separately</td></tr>
+  </tbody>
+</table>
+<p>A WhatsApp button for sending photos is often the easiest route for customers; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
+
+<h2>Pickup, drop and timelines</h2>
+<p>Lay out the process step by step:</p>
+<ol>
+  <li>The customer sends photos and gets an estimate range</li>
+  <li>Fabric is chosen at your showroom or during a home visit</li>
+  <li>Your team collects the furniture, wrapped for transport</li>
+  <li>Work is done in your workshop, with a progress photo if the customer wants one</li>
+  <li>The piece is checked, cleaned and delivered back</li>
+</ol>
+<p>Give honest timelines in stages rather than one promise, and explain what can extend them, such as fabric availability or repairs found after stripping. List the areas you cover for pickup, and mention if small jobs can be done at the customer's home.</p>
+
+<h2>Commercial work: cafés, hotels and offices</h2>
+<p>Cafés, restaurants, hotels and offices need seating re-covered from time to time, and these jobs are often larger and can repeat. Give commercial clients a separate page covering:</p>
+<ul>
+  <li>Types of work: booth seating, restaurant chairs, hotel headboards and lobby sofas, office chairs and reception furniture</li>
+  <li>Working in phases or outside business hours, so they don't have to close</li>
+  <li>Fabrics suited to heavy use, and help checking any fabric requirements a hotel group, mall or landlord specifies</li>
+  <li>Bulk quotes, GST invoices and a single point of contact</li>
+  <li>Past commercial projects, shown with the client's permission</li>
+</ul>
+<p>A project enquiry form with fields for the number of pieces, photos and preferred schedule keeps these leads separate from household ones.</p>
+
+<h2>Reviews, trust and local SEO</h2>
+<p>Upholstery is a local, trust-based service: customers are handing over furniture they may have owned for years.</p>
+<ul>
+  <li>Ask happy customers for Google reviews, ideally with their own after photos; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a></li>
+  <li>Show your workshop and team, and mention a workmanship warranty only if you actually offer one</li>
+  <li>Target searches like "sofa repair in {city}", "sofa re-upholstery {area}", "dining chair repair" and "sofa cover stitching near me"</li>
+  <li>Keep your Google Business Profile updated with recent before and after photos</li>
+  <li>Compress gallery images so pages load quickly on mobile</li>
+</ul>
+
+<p>Want a website that turns sofa photos into booked jobs? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> for focused campaigns such as pre-festival sofa makeovers.</p>
 `,
   },
 ];
