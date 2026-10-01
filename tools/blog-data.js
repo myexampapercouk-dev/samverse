@@ -6970,6 +6970,8 @@ module.exports = [
 <h2>"Error establishing a database connection"</h2>
 <p><strong>Usually:</strong> the database server is down, the database credentials changed, or the database is corrupted.<br><strong>First steps:</strong> check your host's status page. If the host is fine, the database details in the site's configuration may need correcting. This often appears after migrations.</p>
 
+<p>Step-by-step guide: <a href="/blog/error-establishing-database-connection-fix/">how to fix "Error establishing a database connection"</a>.</p>
+
 <h2>404 errors on pages that should exist</h2>
 <p><strong>Usually:</strong> permalink settings or redirects broke after a change or migration.<br><strong>First steps:</strong> re-save permalinks (Settings → Permalinks → Save). If URLs changed, set up 301 redirects; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
 
@@ -30851,6 +30853,8 @@ Template: astra
   <li>A bulk enquiry form for companies sending gifts to employees with new babies</li>
 </ul>
 
+<p>For how shareable gift lists work in practice, see <a href="/blog/woocommerce-wishlist/">adding a wishlist to a WooCommerce store</a>.</p>
+
 <h2>D2C store features that bring parents back</h2>
 <p>Baby care is repeat buying: diapers, wipes and washes run out on a predictable schedule.</p>
 <ul>
@@ -31524,6 +31528,8 @@ Template: astra
   <li>An admin area that becomes slow, or settings screens that go missing</li>
 </ul>
 <p>Not every problem is a conflict. Hosting limits, a hack or stale caching can look very similar, so keep an open mind while you investigate.</p>
+
+<p>If all you see is a completely blank page with no message, start with <a href="/blog/wordpress-white-screen-of-death/">fixing the WordPress white screen of death</a>.</p>
 
 <h2>First, protect the live site</h2>
 <ol>
@@ -33930,6 +33936,277 @@ Template: astra
 <p>If writing is the bottleneck, record a voice note answering the question as you would to a customer, then turn it into an article or ask someone to edit it. Batch the work: one afternoon to draft two pieces is often easier than squeezing writing into every week.</p>
 
 <p>Need a website that's easy to publish on, with the SEO basics in place? See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-wishlist',
+    seoTitle: 'WooCommerce Wishlist: When It Helps and How to Add It',
+    title: 'Adding a Wishlist to Your WooCommerce Store: When It Helps and How to Do It Right',
+    description: 'When a wishlist helps a WooCommerce store, guest vs logged-in lists, shareable gift lists, consent-based stock and price alerts, and keeping pages fast.',
+    date: '2026-10-01',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>A wishlist lets shoppers save products they like but aren't ready to buy yet. On some stores it quietly becomes one of the most-used features; on others it's a heart icon nobody clicks. Here's how to tell which kind of store you run, and how to add a wishlist to WooCommerce without cluttering the shop or slowing it down.</p>
+
+<h2>When a wishlist actually helps</h2>
+<p>A wishlist earns its place when people naturally take time over a purchase, or buy on behalf of someone else:</p>
+<ul>
+  <li><strong>Gifting:</strong> stores selling gifts, toys, books or hampers, where shoppers shortlist ideas before a birthday, Diwali or Rakhi</li>
+  <li><strong>High-consideration products:</strong> jewellery, furniture, electronics, mattresses and designer clothing, where buyers compare options over days or weeks and often check with family first</li>
+  <li><strong>Weddings and new babies:</strong> registry-style lists that couples or expecting parents share with relatives, so people don't buy the same thing twice</li>
+  <li><strong>Large catalogues:</strong> fashion and home decor stores where shoppers browse many items and want to come back to a shortlist</li>
+  <li><strong>Trade buyers:</strong> interior designers or retailers saving products for a client before placing an order</li>
+</ul>
+<p>It helps far less on stores with a handful of low-cost products bought on impulse or on repeat. There, a faster checkout or a subscription option is a better use of your effort.</p>
+
+<h2>Wishlist vs cart: different jobs</h2>
+<p>Many shoppers already use the cart as a parking spot for "maybe later" items. That muddies your abandoned cart numbers and makes it harder to tell who was genuinely about to buy. A wishlist gives browsing intent a proper home, so the cart stays closer to buying intent.</p>
+<p>It doesn't replace cart recovery, though; the two work together. See <a href="/blog/woocommerce-abandoned-cart-recovery/">WooCommerce abandoned cart recovery</a> for the other half of the picture.</p>
+
+<h2>Guest wishlists vs logged-in wishlists</h2>
+<p>This is the main design decision, and each option has trade-offs.</p>
+<table>
+  <thead>
+    <tr><th>Question</th><th>Guest wishlist</th><th>Logged-in wishlist</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Where it's saved</td><td>In the browser, or on the server tied to a cookie</td><td>In the customer's account on your site</td></tr>
+    <tr><td>Friction</td><td>None; one tap and it's saved</td><td>Needs an account or login</td></tr>
+    <tr><td>Works across devices</td><td>No; a list made on a phone isn't on the laptop</td><td>Yes</td></tr>
+    <tr><td>How long it lasts</td><td>Until cookies are cleared or the browser changes</td><td>As long as the account exists</td></tr>
+    <tr><td>Reminders possible</td><td>Only if the shopper gives an email address</td><td>Yes, with consent</td></tr>
+  </tbody>
+</table>
+<p>A sensible approach for most Indian stores: let anyone save items without logging in, then offer to keep the list safe by creating an account or logging in with a one-time password. Forcing sign-up before someone can tap the heart icon loses most people, especially on mobile.</p>
+
+<h2>Sharing lists for gifting, weddings and baby showers</h2>
+<p>Sharing is where a wishlist turns into a sales channel. Useful options include:</p>
+<ul>
+  <li>A shareable link that opens a read-only copy of the list</li>
+  <li>A WhatsApp share button, since that's where most families coordinate gifts</li>
+  <li>A list name and short note, such as "Wedding gifts, December"</li>
+  <li>Showing which items have already been bought, so relatives don't double up (this usually needs a registry-style plugin or custom work)</li>
+  <li>Delivery to the list owner's address, with gift wrap and a message</li>
+</ul>
+<p>Keep privacy in mind. Lists should be private by default, with the owner choosing to share, and a shared link shouldn't reveal the owner's address or phone number to whoever opens it.</p>
+
+<h2>Back-in-stock and price-drop reminders, with consent</h2>
+<p>A wishlist tells you exactly what someone wants. Reminders turn that into sales, but only if the shopper has agreed to hear from you:</p>
+<ul>
+  <li><strong>Back in stock:</strong> when a saved item that was sold out returns</li>
+  <li><strong>Price drop or sale:</strong> when a saved item goes on offer</li>
+  <li><strong>Low stock:</strong> a gentle note that a saved item is nearly gone, sent only when it's true</li>
+</ul>
+<p>Ask for permission clearly, with an unticked checkbox or a separate "Notify me" button. Say what you'll send and how often, and make unsubscribing easy. Email is the natural channel; WhatsApp reminders need the customer's opt-in and approved message templates through the WhatsApp Business Platform.</p>
+<p>India's data protection law also sets expectations around consent and purpose; see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a>, and check current rules with your adviser.</p>
+
+<h2>Choosing a wishlist plugin</h2>
+<p>WooCommerce doesn't include a wishlist out of the box, so you'll use a plugin or custom code. Several established wishlist plugins exist, often with a free version and a paid upgrade. When comparing them, check:</p>
+<ul>
+  <li>Guest wishlists, and whether they merge into the account after login</li>
+  <li>Sharing options, including WhatsApp and a clean shareable link</li>
+  <li>Multiple named lists, if you sell for weddings or registries</li>
+  <li>Back-in-stock or price-drop emails built in, or easy integration with your email tool</li>
+  <li>Support for variable products, so the chosen size or colour is saved, not just the parent product</li>
+  <li>Compatibility with your theme, page builder and caching setup</li>
+  <li>Recent updates, good reviews and responsive support</li>
+</ul>
+<p>Sometimes a simple heart icon and a "save for later" link in the cart are all you need. If a plugin does five times more than that, you pay for the extras in speed and maintenance.</p>
+
+<h2>Keeping the wishlist from slowing your store</h2>
+<p>Wishlist plugins can quietly hurt performance, mainly because they need to know who the visitor is on every page:</p>
+<ul>
+  <li><strong>Caching:</strong> a wishlist count in the header can stop pages being cached. Make sure the count loads separately with a small request, so the rest of the page stays cached</li>
+  <li><strong>Scripts and styles:</strong> load the wishlist's files only where they're used, not on blog posts and policy pages</li>
+  <li><strong>Icon fonts:</strong> some plugins load a whole icon library just for one heart; a small inline SVG does the same job</li>
+  <li><strong>Database growth:</strong> guest lists stored on the server can pile up, so set them to expire</li>
+  <li><strong>Real-world testing:</strong> check category pages on a mid-range Android phone after installing</li>
+</ul>
+<p>See <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> for the wider checklist.</p>
+
+<h2>Measuring whether it's worth keeping</h2>
+<p>Track wishlist adds, shares and how many saved items are eventually bought. Then put the data to work: restock popular saved items first, feature them in festive campaigns, or combine them into <a href="/blog/woocommerce-product-bundles-upsells/">bundles and gift sets</a>. If, after a few months, hardly anyone uses the wishlist, remove it and keep the store lighter.</p>
+
+<p>Want a wishlist, gift registry or stock alerts set up properly on your store? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-white-screen-of-death',
+    seoTitle: 'WordPress White Screen of Death: Causes and Fixes',
+    title: 'WordPress White Screen of Death: What Causes It and How to Fix It',
+    description: 'Fix the WordPress white screen of death: the usual causes, enabling WP_DEBUG safely, the recovery mode email, disabling plugins by FTP and restoring a backup.',
+    date: '2026-10-01',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal'],
+    body: `
+<p>You open your website and see nothing at all: no error, no logo, just a blank white page. This is the "white screen of death", and while it looks frightening, your content is almost always still safe in the database. Something stopped WordPress before it could build the page. Here's how to find out what, and how to get the site back without making things worse.</p>
+
+<h2>What the white screen of death actually is</h2>
+<p>WordPress runs on PHP. When PHP hits a fatal error, it stops. On a properly configured live server, error messages are hidden from visitors, so instead of a helpful message you get an empty page.</p>
+<p>Newer versions of WordPress catch many of these errors and show "There has been a critical error on this website" instead; if that's what you see, follow <a href="/blog/fix-wordpress-critical-error/">the critical error fix guide</a>. A truly blank page still happens, though, especially on older installations, when the error occurs very early in loading, or when the server runs out of memory or time. It also comes in a few variations:</p>
+<ul>
+  <li>The whole site is blank, front end and admin</li>
+  <li>Only the dashboard (wp-admin) is blank, while visitors see the site normally</li>
+  <li>Only one page or post type is blank</li>
+  <li>The page starts loading, then stops halfway</li>
+</ul>
+<p>Note which one you have; it narrows down the cause.</p>
+
+<h2>Quick checks before you touch anything</h2>
+<ol>
+  <li>Open the site in a private window and on mobile data, to rule out your browser or network</li>
+  <li>If you use a caching plugin or CDN, a blank page may be cached; purging the cache can bring the real page (or the real error) back</li>
+  <li>Check whether wp-admin loads. If it does, you can deactivate plugins normally</li>
+  <li>Ask yourself what changed: an update, a new plugin, a code edit, a hosting change</li>
+  <li>Log in to your hosting panel and look for resource limit warnings or a suspension notice</li>
+</ol>
+<p>Then take a backup of the current state, even though it's broken, so you can undo anything you try.</p>
+
+<h2>The usual causes</h2>
+<table>
+  <thead>
+    <tr><th>Cause</th><th>Typical clue</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Plugin or theme conflict</td><td>Started right after installing or updating something</td></tr>
+    <tr><td>PHP memory limit exhausted</td><td>Heavy pages, imports or the admin go blank first</td></tr>
+    <tr><td>PHP version change</td><td>Your host upgraded PHP, or you switched it, and old code doesn't support the new version</td></tr>
+    <tr><td>Failed or interrupted update</td><td>An automatic update ran overnight, or an update timed out</td></tr>
+    <tr><td>Code edit mistake</td><td>Someone edited functions.php or added a snippet</td></tr>
+    <tr><td>Hacked or corrupted files</td><td>Unfamiliar files, strange redirects or spam pages as well</td></tr>
+  </tbody>
+</table>
+<p>Memory problems have their own guide: <a href="/blog/wordpress-memory-limit-errors/">fixing "Allowed memory size exhausted" errors</a>. For PHP version issues, see <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a>.</p>
+
+<h2>Check for the recovery mode email</h2>
+<p>When WordPress detects a fatal error, it usually emails the site's admin address with a subject like "Your Site is Experiencing a Technical Issue". The email names the plugin or theme that failed and includes a special recovery mode link.</p>
+<ol>
+  <li>Search your inbox and spam folder for that email</li>
+  <li>Open the link and log in; the faulty plugin is paused only for your session</li>
+  <li>Deactivate the plugin or switch away from the theme named in the email</li>
+  <li>Exit recovery mode, then update, roll back or replace the faulty plugin</li>
+</ol>
+<p>The email goes to the address under Settings, General. If that's an old developer's address, you won't see it, which is one more reason to keep it pointed at a mailbox you check.</p>
+
+<h2>Enable WP_DEBUG safely to see the real error</h2>
+<p>If there's no email, make WordPress write the error to a private log file instead of showing it to visitors. Using your hosting file manager or SFTP, open wp-config.php and find the existing WP_DEBUG line. Replace it (don't add a second copy) with:</p>
+<pre><code>define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );</code></pre>
+<p>Reload the blank page, then open wp-content/debug.log. Look for the most recent line containing "Fatal error". It shows a file path: if it mentions wp-content/plugins/ followed by a folder name, that plugin is your suspect; if it mentions wp-content/themes/, it's the theme.</p>
+<p>When you're done, set WP_DEBUG back to false and delete debug.log, because the log can reveal details about your server. Your hosting panel's own error log is another good source if you'd rather not edit files.</p>
+
+<h2>Disable plugins or the theme through FTP or the file manager</h2>
+<p>If you can't reach the dashboard, you can still deactivate things from the files:</p>
+<ol>
+  <li>Go to wp-content and rename the plugins folder to something like plugins-off. WordPress deactivates every plugin</li>
+  <li>If the site comes back, rename the folder back, then rename individual plugin folders one at a time until the white screen returns. The last one you renamed is the culprit</li>
+  <li>If plugins aren't the cause, rename your active theme's folder. WordPress falls back to a default theme, provided one is installed</li>
+</ol>
+<p>Once the site loads, log in, and reactivate everything else. Then fix the cause: update or roll back the plugin, ask your host to raise the memory limit, or temporarily switch PHP back while incompatible code is updated.</p>
+
+<h2>Restore a backup if you're stuck</h2>
+<p>If the site needs to be online now and you can't find the cause quickly, restore the most recent working backup from your host or backup plugin, and investigate on a staging copy afterwards. See the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</p>
+<p>Be careful on online stores and booking sites: a full restore can wipe out orders, enquiries or bookings received since the backup was taken. Sometimes restoring only the files, and leaving the database alone, is the safer option.</p>
+
+<h2>When to call a developer</h2>
+<ul>
+  <li>You can't access the admin email, hosting panel or files</li>
+  <li>The log points to your theme's core files or custom code</li>
+  <li>It's an online store and orders are being lost while the site is down</li>
+  <li>You see signs of a hack, such as unknown files or spam redirects</li>
+  <li>The white screen keeps coming back after updates</li>
+  <li>You don't have a recent backup</li>
+</ul>
+<p>Those situations need someone who can read the error, fix the code and protect your data while doing it.</p>
+
+<p>Site showing a blank page right now? See <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/wordpress-malware-removal/">malware removal</a> if you suspect a hack.</p>
+`,
+  },
+  {
+    slug: 'error-establishing-database-connection-fix',
+    seoTitle: 'Fix "Error Establishing a Database Connection"',
+    title: '"Error Establishing a Database Connection" in WordPress: How to Fix It',
+    description: 'What "Error establishing a database connection" means in WordPress, its usual causes, checking wp-config.php safely, repairing tables and when to ask your host.',
+    date: '2026-10-01',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-migration'],
+    body: `
+<p>Instead of your homepage, a single line of text: "Error establishing a database connection". It usually appears without warning, often right after a migration or a hosting change, and it takes the whole site offline. The good news is that your content is normally still there. WordPress just can't reach it. Here's how to work out why, step by step.</p>
+
+<h2>What the error means</h2>
+<p>A WordPress site has two parts: the files (WordPress itself, your theme and plugins) and a database that stores your pages, posts, settings, users and, on a store, your orders. Every time a page loads, WordPress connects to the database using four details saved in a file called wp-config.php:</p>
+<ul>
+  <li><strong>DB_NAME:</strong> the database's name</li>
+  <li><strong>DB_USER:</strong> the database username</li>
+  <li><strong>DB_PASSWORD:</strong> that user's password</li>
+  <li><strong>DB_HOST:</strong> the server the database lives on</li>
+</ul>
+<p>If any of these is wrong, or the database server doesn't respond, WordPress stops and shows this error. A related message in the dashboard, "One or more database tables are unavailable", points to damaged tables rather than a failed connection.</p>
+
+<h2>The usual causes</h2>
+<table>
+  <thead>
+    <tr><th>Cause</th><th>Typical clue</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Wrong details in wp-config.php</td><td>Right after a migration, a host change, or someone changing the database password</td></tr>
+    <tr><td>Database server down or overloaded</td><td>The error comes and goes, or other sites on the same hosting are down too</td></tr>
+    <tr><td>Hosting limits reached</td><td>Happens during traffic spikes on busy shared hosting</td></tr>
+    <tr><td>Database or user removed</td><td>After hosting changes, an expired plan or a suspended account</td></tr>
+    <tr><td>Corrupted tables</td><td>After a server crash or failed update; the dashboard mentions tables needing repair</td></tr>
+    <tr><td>Tampered wp-config.php</td><td>Rare, but possible after a hack; unfamiliar code in the file</td></tr>
+  </tbody>
+</table>
+
+<h2>Step 1: Rule out the hosting server</h2>
+<p>Many of these errors are on the host's side and fixed by them. Check your host's status page or support chat, and see whether other websites on the same hosting account are also failing. If the error appears on and off, especially at busy times, the database server is likely struggling or hitting connection limits.</p>
+<p>Look in your hosting panel for resource limit warnings or a suspension notice too. For a wider checklist of what to look at when a site won't open, see <a href="/blog/website-down-what-to-do/">website down: what to check, step by step</a>.</p>
+
+<h2>Step 2: Check the database details in wp-config.php</h2>
+<p>If the host says everything is running, the connection details are the next suspect. Using your hosting file manager or SFTP, download a copy of wp-config.php before changing anything. Then compare it with the MySQL Databases section of your hosting panel:</p>
+<ol>
+  <li><strong>Database name:</strong> does a database with exactly that name exist? Many panels add your account name as a prefix, and the full name must match</li>
+  <li><strong>Username:</strong> does that user exist, and is it assigned to this database with all privileges?</li>
+  <li><strong>Host:</strong> often "localhost", but some hosts use a separate database server name. Your hosting panel or the host's documentation will tell you</li>
+  <li><strong>Password:</strong> panels rarely show existing passwords, so reset the database user's password in the panel and paste the new one into wp-config.php</li>
+</ol>
+<p>Watch for stray spaces and keep the quote marks around each value intact. Save the file and reload the site. Never paste the contents of wp-config.php into public forums or screenshots, because it contains working passwords.</p>
+
+<h2>Step 3: Repair corrupted tables</h2>
+<p>If the site connects but the dashboard says tables are unavailable, WordPress has a built-in repair tool:</p>
+<ol>
+  <li>Take a database backup first, from your hosting panel or phpMyAdmin</li>
+  <li>Add this line to wp-config.php, above the line that says to stop editing: <code>define( 'WP_ALLOW_REPAIR', true );</code></li>
+  <li>Visit yoursite.com/wp-admin/maint/repair.php and choose Repair Database</li>
+  <li>Remove the line straight afterwards, because that repair page works without anyone logging in</li>
+</ol>
+<p>Your host can also check and repair tables from their side. If repair doesn't fix things, restoring the database is the next step.</p>
+
+<h2>Step 4: Restore the database from a backup</h2>
+<p>If the database was deleted or is badly damaged, restore the latest good copy from your host's backups or your backup plugin; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</p>
+<p>On a WooCommerce store or booking site, remember that anything received after the backup was taken, such as orders, bookings and enquiries, won't be in the restored copy. Note them from your emails and payment gateway dashboard before you restore.</p>
+
+<h2>After a migration: the most common case</h2>
+<p>Moving to new hosting is the classic trigger. The new host gives you a new database name, user and password, and wp-config.php still has the old ones. Other migration-related issues:</p>
+<ul>
+  <li>The database import failed partway, leaving tables missing</li>
+  <li>DNS is still pointing some visitors to the old server, where the hosting may already be cancelled</li>
+  <li>If you see the WordPress installation screen instead of the error, the table prefix in wp-config.php probably doesn't match the imported tables</li>
+</ul>
+<p>Keep the old hosting active until the new site is fully tested and DNS has settled.</p>
+
+<h2>How to stop it happening again</h2>
+<ul>
+  <li>Store your database details securely, in a password manager, not in an email thread</li>
+  <li>Choose hosting with enough resources for your traffic; see <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting in India</a></li>
+  <li>Use caching, which reduces how often pages need the database</li>
+  <li>Keep automatic daily backups that include the database, stored off the server</li>
+  <li>Set up <a href="/blog/uptime-monitoring-explained/">uptime monitoring</a> so you hear about outages before your customers do</li>
+</ul>
+
+<p>Site down with a database error, or planning a move and want to avoid one? See <a href="/wordpress-maintenance/">WordPress maintenance and support</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
   },
 ];

@@ -3408,5 +3408,26 @@
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
     <description>A monthly content routine for small businesses: turn customer questions into blog posts, case studies and Google Business Profile posts, then review results.</description>
   </item>
+  <item>
+    <title>Adding a Wishlist to Your WooCommerce Store: When It Helps and How to Do It Right</title>
+    <link>https://samverse.space/blog/woocommerce-wishlist/</link>
+    <guid>https://samverse.space/blog/woocommerce-wishlist/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>When a wishlist helps a WooCommerce store, guest vs logged-in lists, shareable gift lists, consent-based stock and price alerts, and keeping pages fast.</description>
+  </item>
+  <item>
+    <title>WordPress White Screen of Death: What Causes It and How to Fix It</title>
+    <link>https://samverse.space/blog/wordpress-white-screen-of-death/</link>
+    <guid>https://samverse.space/blog/wordpress-white-screen-of-death/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Fix the WordPress white screen of death: the usual causes, enabling WP_DEBUG safely, the recovery mode email, disabling plugins by FTP and restoring a backup.</description>
+  </item>
+  <item>
+    <title>&quot;Error Establishing a Database Connection&quot; in WordPress: How to Fix It</title>
+    <link>https://samverse.space/blog/error-establishing-database-connection-fix/</link>
+    <guid>https://samverse.space/blog/error-establishing-database-connection-fix/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>What &quot;Error establishing a database connection&quot; means in WordPress, its usual causes, checking wp-config.php safely, repairing tables and when to ask your host.</description>
+  </item>
 </channel>
 </rss>

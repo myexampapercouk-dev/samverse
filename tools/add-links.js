@@ -583,6 +583,10 @@ const LINKS = [
   ['update-wordpress-safely', '<h2>Make it routine</h2>', '<p>Not sure which parts to leave on automatic? See <a href="/blog/wordpress-auto-updates/">whether to turn on WordPress auto-updates</a> for core, plugins and themes.</p>\n\n'],
   ['compare-website-quotes', '<h2>Warning signs</h2>', '<p>Comparing developers in Pune? See <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>, from checking live sites to who owns the logins.</p>\n\n'],
   ['website-content-calendar', '<h2>Step 5: Write, publish, promote</h2>', '<p>Want a ready-made routine to copy? See this <a href="/blog/website-content-calendar-small-business/">sample monthly content calendar</a> mixing blog posts, case studies and Google Business Profile posts.</p>\n\n'],
+  // Agent 65
+  ['website-for-baby-products-brands', '<h2>D2C store features that bring parents back</h2>', '<p>For how shareable gift lists work in practice, see <a href="/blog/woocommerce-wishlist/">adding a wishlist to a WooCommerce store</a>.</p>\n\n'],
+  ['wordpress-plugin-conflicts-troubleshooting', '<h2>First, protect the live site</h2>', '<p>If all you see is a completely blank page with no message, start with <a href="/blog/wordpress-white-screen-of-death/">fixing the WordPress white screen of death</a>.</p>\n\n'],
+  ['common-wordpress-errors-fixes', '<h2>404 errors on pages that should exist</h2>', '<p>Step-by-step guide: <a href="/blog/error-establishing-database-connection-fix/">how to fix "Error establishing a database connection"</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
