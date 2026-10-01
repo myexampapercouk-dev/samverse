@@ -519,6 +519,10 @@ const LINKS = [
   ['google-search-console-reports-explained', '<h2>Pages (indexing)</h2>', '<p>For a step-by-step method that turns this report into content ideas and a list of pages to improve, see <a href="/blog/search-console-content-ideas/">how to find content ideas in Search Console</a>.</p>\n\n'],
   ['business-directories-citations-india', '<h2>Avoid spammy directories</h2>', '<p>Consistent details also help Google connect everything to you when people search your name; see <a href="/blog/rank-for-your-business-name/">how to make sure your business ranks for its own name</a>.</p>\n\n'],
   ['essential-wordpress-plugins-business', '<h3>2. Security</h3>', '<p>Choosing between the popular options? See <a href="/blog/wordpress-seo-plugins-compared/">Yoast SEO vs Rank Math vs All in One SEO compared</a>.</p>\n\n'],
+  // Agent 47
+  ['website-for-textile-manufacturers', '<h2>Capability</h2>', '<p>If finished school, corporate or hospital uniforms are your main line, see <a href="/blog/website-for-uniform-manufacturers/">websites for uniform manufacturers and suppliers</a>.</p>\n\n'],
+  ['website-for-water-purifier-ro-service', '<h2>AMC plans, explained clearly</h2>', '<p>Many purifier customers rely on borewell water. If drilling new borewells or installing submersible pumps is part of your business, see <a href="/blog/website-for-borewell-drilling/">websites for borewell drilling and water well services</a>.</p>\n\n'],
+  ['website-for-pharma-franchise-companies', '<h2>An enquiry form that qualifies leads</h2>', '<p>Consumer brands that franchise outlets, such as food, retail or education chains, need a different set of pages; see <a href="/blog/website-for-franchise-brands/">websites for franchise brands</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
