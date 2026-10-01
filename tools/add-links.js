@@ -595,6 +595,10 @@ const LINKS = [
   ['service-area-business-seo', '<h2>Let service pages do the heavy lifting</h2>', '<p>For a city-specific example, see <a href="/blog/local-seo-pune-businesses/">local SEO for businesses in Pune and Pimpri-Chinchwad</a>, including which neighbourhoods deserve their own page.</p>\n\n'],
   ['google-business-profile-checklist', '<h2>Services and description</h2>', '<p>Profile set up but still missing from the map? See <a href="/blog/not-showing-on-google-maps/">why a business isn\'t showing on Google Maps</a> for a troubleshooting checklist.</p>\n\n'],
   ['woocommerce-order-management-workflow', '<h2>Handle cancellations, returns and failed deliveries</h2>', '<p>For which updates to send on each channel, WhatsApp templates and DLT registration for SMS, see <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">WooCommerce order notifications by email, SMS and WhatsApp</a>.</p>\n\n'],
+  // Agent 66
+  ['seo-red-flags-scams', '<h2>If you\'ve been burned</h2>', '<p>Comparing prices as well as providers? See <a href="/blog/seo-pricing-models-india/">how SEO services are priced in India</a> and what each pricing model should include.</p>\n\n'],
+  ['website-design-contract-checklist', '<h2>6. Ownership</h2>', '<p>For more on advances, milestone payments, scope changes and refunds, see <a href="/blog/website-payment-terms-milestones/">fair payment terms for a website project</a>.</p>\n\n'],
+  ['domain-hosting-renewal-checklist', '<h2>The checklist</h2>', '<p>Renewals are only part of the picture; see <a href="/blog/hidden-website-costs/">the hidden costs of running a website</a>, from licences and email to maintenance and marketing.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

@@ -9648,6 +9648,8 @@ module.exports = [
   <li>What happens if I stop working with you?</li>
 </ol>
 
+<p>Comparing prices as well as providers? See <a href="/blog/seo-pricing-models-india/">how SEO services are priced in India</a> and what each pricing model should include.</p>
+
 <h2>If you've been burned</h2>
 <p>Check Search Console for manual actions, review your backlinks, remove fake reviews, and regain control of your accounts; see <a href="/blog/regain-website-access-old-developer/">regaining website access</a>.</p>
 
@@ -12553,6 +12555,8 @@ module.exports = [
   <li>Payment schedule, such as an advance, a milestone payment and final payment at launch</li>
   <li>Taxes, and costs paid separately like domain, hosting and premium plugins</li>
 </ul>
+
+<p>For more on advances, milestone payments, scope changes and refunds, see <a href="/blog/website-payment-terms-milestones/">fair payment terms for a website project</a>.</p>
 
 <h2>6. Ownership</h2>
 <p>State that you own the website, content and design once fully paid, and that domain, hosting and accounts are in your name. See the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
@@ -16593,6 +16597,8 @@ module.exports = [
     <tr><td>CDN, backup or security services</td><td>Protection or backups stop quietly</td></tr>
   </tbody>
 </table>
+
+<p>Renewals are only part of the picture; see <a href="/blog/hidden-website-costs/">the hidden costs of running a website</a>, from licences and email to maintenance and marketing.</p>
 
 <h2>The checklist</h2>
 <ol>
@@ -34735,6 +34741,275 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ol>
 
 <p>Want order updates that reliably reach customers where they look? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for wider work on your site.</p>
+`,
+  },
+  {
+    slug: 'seo-pricing-models-india',
+    seoTitle: 'SEO Pricing Models in India: Retainers, Audits and More',
+    title: 'How SEO Services Are Priced in India: Retainers, Audits and Performance Deals',
+    description: 'How SEO services are priced in India: monthly retainers, one-off audits, project fees and performance deals, what each should include, and red flags to avoid.',
+    date: '2026-10-01',
+    category: 'Pricing',
+    related: ['wordpress-seo-services', 'hire-wordpress-developer'],
+    body: `
+<p>Ask three SEO providers for a price and you may get a monthly fee, a one-off audit and an offer to "only pay when you rank". They're hard to compare because they're often selling different things. This guide explains the common ways SEO services are priced in India, what each model should include and the warning signs to watch for, so you can judge proposals on what you actually get rather than the headline number.</p>
+
+<h2>What drives the cost of SEO</h2>
+<p>SEO is mostly skilled time, so the price depends on how much work your website and market need:</p>
+<ul>
+  <li><strong>Competition:</strong> ranking for "dentist in Nagpur" is a very different task from ranking nationally for "CRM software"</li>
+  <li><strong>Size and state of your website:</strong> a ten-page site with clean foundations needs less work than a large store with years of technical problems</li>
+  <li><strong>Content:</strong> whether new pages and articles are written by the provider, by you, or not at all</li>
+  <li><strong>Local SEO:</strong> Google Business Profile work, reviews and citations for one location or several</li>
+  <li><strong>Who makes the changes:</strong> some providers only recommend fixes; others implement them on your website</li>
+  <li><strong>Experience and reporting:</strong> senior specialists, detailed reports and regular calls all take time</li>
+</ul>
+
+<h2>The four common pricing models</h2>
+<table>
+  <thead>
+    <tr><th>Model</th><th>How you pay</th><th>Best for</th><th>Watch for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Monthly retainer</td><td>A fixed fee every month</td><td>Ongoing growth, especially in competitive markets</td><td>Vague deliverables, long lock-ins</td></tr>
+    <tr><td>One-off audit</td><td>A single fee for a review and action plan</td><td>Finding out what's wrong before committing</td><td>Automated reports with no priorities</td></tr>
+    <tr><td>Project fee</td><td>A fixed price for a defined piece of work</td><td>Launches, redesigns, local SEO set-up</td><td>Unclear scope or end point</td></tr>
+    <tr><td>Performance-based</td><td>Payment linked to rankings or leads</td><td>Only with clear, verifiable terms</td><td>Easy keywords, risky tactics</td></tr>
+  </tbody>
+</table>
+
+<h2>Monthly retainers: what should be included</h2>
+<p>A retainer makes sense when you want steady, ongoing improvement. The fee should buy specific work, not just "SEO". A good proposal spells out:</p>
+<ul>
+  <li>An audit and a written, prioritised plan in the first month</li>
+  <li>Technical fixes, and who will make them on your site</li>
+  <li>On-page work: titles, descriptions, headings and internal links on key pages</li>
+  <li>Content: how many pages or articles each month, and who writes them</li>
+  <li>Google Business Profile management for local businesses</li>
+  <li>How links will be earned, explained in plain language</li>
+  <li>A monthly report and a short call to discuss it</li>
+</ul>
+<p>Also ask about the minimum term, the notice period and what happens to content and accounts if you stop. SEO takes months to show results (see <a href="/blog/how-long-does-seo-take/">how long SEO takes</a>), so a short initial commitment is reasonable, but you should never be locked in without clear deliverables.</p>
+
+<h2>One-off audits and project fees</h2>
+<h3>Audits</h3>
+<p>An audit reviews your site's technical health, content, local presence and competitors, then gives you a prioritised list of what to fix. It's a sensible first step before committing to a retainer, and useful if you or your developer will do the work. Ask to see a sample first. A good audit explains why each issue matters and what to tackle first; a poor one is a tool export listing hundreds of "errors" with no priorities.</p>
+<h3>Projects</h3>
+<p>Fixed-price projects suit work with a clear end point, such as:</p>
+<ul>
+  <li>SEO set-up for a new website: titles, schema, sitemap, Search Console and Analytics</li>
+  <li>Protecting rankings during a redesign or migration</li>
+  <li>Setting up and optimising a Google Business Profile</li>
+  <li>Writing or improving a set of service or location pages</li>
+</ul>
+<p>For both, check whether implementation is included or whether you only receive recommendations.</p>
+
+<h2>"Performance-based" SEO: read the fine print</h2>
+<p>"Pay only when you rank" sounds risk-free, but the details matter:</p>
+<ul>
+  <li><strong>Which keywords?</strong> Rankings for rarely searched phrases or your own business name are easy to achieve and bring few new customers</li>
+  <li><strong>What counts as a lead?</strong> Spam form submissions and existing customers can inflate the numbers</li>
+  <li><strong>Which tactics?</strong> Pressure for quick results can push providers towards shortcuts that put your domain at risk with Google</li>
+  <li><strong>When does it end?</strong> Some deals keep charging for rankings long after the work stops</li>
+</ul>
+<p>A fairer version is a base fee for agreed work plus a bonus tied to outcomes you can verify yourself, such as organic enquiries tracked in Google Analytics, with every term defined in writing.</p>
+
+<h2>What a monthly report should show</h2>
+<p>Whatever the model, a monthly report should answer one question: is search bringing in more of the right customers? Look for:</p>
+<ul>
+  <li>Enquiries, calls and sales from organic search</li>
+  <li>Search Console clicks and impressions, split into branded and non-branded searches</li>
+  <li>Positions for a short list of searches customers actually use</li>
+  <li>The work done this month and the plan for next month</li>
+  <li>Problems found, and whether they were fixed</li>
+</ul>
+<p>Be wary of reports full of charts, scores and "backlinks built" with nothing about enquiries. See <a href="/blog/seo-reporting-what-to-track/">what to track in a monthly SEO report</a>.</p>
+
+<h2>Red flags in SEO pricing</h2>
+<ul>
+  <li><strong>Guaranteed #1 rankings.</strong> Nobody controls Google's results.</li>
+  <li><strong>Secret techniques</strong> the provider won't explain.</li>
+  <li><strong>Backlink packages by the thousand.</strong> Bulk links from low-quality sites waste money and can harm your site.</li>
+  <li><strong>No access to your own accounts.</strong> You should own your Search Console, Analytics, Google Business Profile and website logins.</li>
+  <li><strong>A price far below everyone else's</strong> with a vague promise that "everything is included".</li>
+  <li><strong>Long contracts</strong> with no deliverables or exit terms.</li>
+</ul>
+<p>More warning signs, and what to do if you've been caught out: <a href="/blog/seo-red-flags-scams/">SEO scams and red flags</a>.</p>
+
+<h2>How to compare SEO proposals</h2>
+<ol>
+  <li>Share the same goals with every provider: your services, locations and the enquiries you want</li>
+  <li>Ask each one to list monthly deliverables, not just a fee</li>
+  <li>Compare the total cost over the minimum term, including content writing and any tools billed to you</li>
+  <li>Ask for examples of similar work and how success was measured</li>
+  <li>Confirm you'll own all accounts, content and data</li>
+</ol>
+<p>The same approach works for website quotes; see <a href="/blog/compare-website-quotes/">how to compare website quotes</a>.</p>
+
+<p>Running a WordPress site and want SEO work that's explained clearly and reported honestly? See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'website-payment-terms-milestones',
+    seoTitle: 'Website Payment Terms: Advances and Milestones',
+    title: 'Fair Payment Terms for a Website Project: Advances, Milestones and Refunds',
+    description: 'How to set fair payment terms for a website project: a sensible advance, milestones tied to deliverables, scope changes, final payment, refunds and handover.',
+    date: '2026-10-01',
+    category: 'Pricing',
+    related: ['wordpress-website-development', 'hire-wordpress-developer'],
+    body: `
+<p>Many disagreements in website projects come down to money: when it's due, what it covers and what happens when plans change. Fair payment terms protect both sides. You don't pay for work you haven't seen, and your developer isn't left unpaid for work they've done. Here's how to structure payments for a website project, whoever you hire.</p>
+
+<h2>Why the payment structure matters</h2>
+<p>How you pay matters as much as how much. A good payment structure:</p>
+<ul>
+  <li>Links each payment to something you can see and check</li>
+  <li>Keeps both sides committed until the project is finished</li>
+  <li>Makes it clear what happens when scope, timelines or plans change</li>
+</ul>
+<p>It also depends on how the project is priced. The terms below assume a fixed price for a defined scope, the most common arrangement for new websites; see <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly billing</a> for the alternatives.</p>
+
+<h2>The advance: what it's for</h2>
+<p>Most developers ask for an advance before starting. That's reasonable: it confirms your commitment, reserves time in their schedule and covers early work such as planning and design. In general terms:</p>
+<ul>
+  <li>The advance should be a portion of the total, not most of it</li>
+  <li>For small projects, splitting the fee into two parts, at the start and at launch, is common</li>
+  <li>Larger projects usually spread payments across several milestones</li>
+  <li>Being asked for the full amount upfront, before anything is designed, is a warning sign</li>
+</ul>
+<p>Ask for an invoice or receipt for every payment, whether you pay by bank transfer or UPI.</p>
+
+<h2>Tie milestones to deliverables, not dates</h2>
+<p>Milestone payments work best when each one falls due after something specific is delivered and approved, rather than on a calendar date. A typical structure looks like this:</p>
+<table>
+  <thead>
+    <tr><th>Stage</th><th>What you should be able to check</th><th>Payment</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Agreement</td><td>Written scope, timeline and price</td><td>Advance</td></tr>
+    <tr><td>Design approved</td><td>Homepage and key page designs, revised as agreed</td><td>Milestone payment</td></tr>
+    <tr><td>Development complete</td><td>A working site on a staging link you can test on your phone</td><td>Milestone payment</td></tr>
+    <tr><td>Launch and handover</td><td>Live site, logins and files received</td><td>Final payment</td></tr>
+  </tbody>
+</table>
+<p>The number of stages depends on the size of the project. What matters is that each milestone has a clear definition of "done" that both sides agree before work starts.</p>
+
+<h2>Scope changes: agree the process upfront</h2>
+<p>Ideas change once you see your website taking shape. That's normal, but changes to scope should affect the price or timeline in a way you've both agreed. A fair process is:</p>
+<ol>
+  <li>You request the change in writing</li>
+  <li>The developer confirms whether it's in scope and, if not, quotes the cost and any effect on the timeline</li>
+  <li>You approve before the work begins</li>
+  <li>The extra amount is added to the next milestone or invoiced separately</li>
+</ol>
+<p>Small tweaks within the agreed revision rounds shouldn't cost extra. New pages, new features or a change of direction usually do.</p>
+
+<h2>Delays and paused projects</h2>
+<p>Projects often stall while waiting for content, photos or feedback from the client. Agree in advance what happens if that occurs: for example, that a milestone becomes payable once the developer's part is complete, or that the project can be paused and rescheduled after an agreed period without a response. Equally, if the developer repeatedly misses agreed dates without good reason, you should be able to raise it and, in serious cases, end the project under the terms below.</p>
+
+<h2>Final payment and handover</h2>
+<p>The final payment is usually due when the website is live and working as agreed. In return, you should receive everything you need to own and run it: administrator access, domain and hosting access, licences, backups and short documentation. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists what to expect.</p>
+<p>Many developers hand over remaining files and access once the final payment clears, which is fair, provided the domain and hosting were registered in your name from the start. Also agree a short bug-fix period after launch, so genuine defects are fixed without a new invoice.</p>
+
+<h2>If the project stops: refunds and work done</h2>
+<p>Sometimes a project ends early. Budgets change, priorities shift or the working relationship breaks down. Fair terms usually say:</p>
+<ul>
+  <li>You pay for work completed up to that point, measured against the milestones</li>
+  <li>If the advance covered work that hasn't been done, an agreed part is refunded</li>
+  <li>You receive the work you've paid for, such as designs and files</li>
+  <li>Either side gives written notice before ending the agreement</li>
+</ul>
+<p>Without written terms, these situations quickly become arguments. If the amounts involved are significant, ask a lawyer to review the agreement; this article isn't legal advice.</p>
+
+<h2>Put it in writing</h2>
+<p>A formal contract is ideal, but even an email confirmed by both sides is far better than a verbal agreement. It should record:</p>
+<ul>
+  <li>The total price, what it includes and whether GST applies (check with your CA if unsure)</li>
+  <li>Each milestone, its deliverable and the amount due</li>
+  <li>How scope changes and delays are handled</li>
+  <li>Refund and cancellation terms</li>
+  <li>When ownership and access are handed over</li>
+  <li>For overseas clients, the currency and who pays bank or transfer charges</li>
+</ul>
+<p>Payment terms are one part of a wider agreement; the <a href="/blog/website-design-contract-checklist/">website design contract checklist</a> covers the rest.</p>
+
+<p>Planning a new website and want a clear scope with milestone-based payments from day one? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'hidden-website-costs',
+    seoTitle: 'Hidden Website Costs: What to Budget After Launch',
+    title: 'Hidden Website Costs: What You\'ll Pay After Your Website Is Built',
+    description: 'The website costs people forget: domain and hosting renewals, plugin and theme licences, business email, fonts and images, backups, maintenance, ads and SEO.',
+    date: '2026-10-01',
+    category: 'Pricing',
+    related: ['wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>The quote for building your website is only part of what it costs. Once it's live, a website has running costs, and some are easy to miss until a renewal email or an expired licence catches you out. Here are the costs business owners most often forget, what drives each one and how to plan for them. Every site is different, so treat this as a checklist rather than a price list.</p>
+
+<h2>Domain and hosting renewals</h2>
+<p>Your domain name and hosting renew every year, or every few years if you pay for a longer term. Two things regularly surprise people:</p>
+<ul>
+  <li><strong>Renewal prices:</strong> many hosts advertise a low introductory price that applies only to the first term, with renewals at the regular rate</li>
+  <li><strong>"Free" domains:</strong> a domain bundled with hosting is usually free for the first year only</li>
+</ul>
+<p>Check renewal prices before you buy and compare the total over several years, not just the first. See <a href="/blog/hosting-renewal-price-increase/">why hosting renewals cost more</a>. As your site and traffic grow, you may also need a bigger hosting plan.</p>
+
+<h2>Premium plugin and theme licences</h2>
+<p>WordPress itself is free, and many sites run well on free plugins. But premium themes, page builder Pro versions, form and backup plugins and WooCommerce extensions are often sold as yearly licences. When a licence lapses, the software usually keeps working but stops receiving updates and support, which becomes a security risk over time.</p>
+<ul>
+  <li>Ask your developer for a list of every paid licence, its renewal date and who it's registered to</li>
+  <li>Make sure licences are bought in your business's name, not the developer's</li>
+  <li>Avoid "nulled" copies of premium plugins and themes; they can contain hidden malware</li>
+</ul>
+
+<h2>Business email</h2>
+<p>An address like info@yourbusiness.in looks far more professional than a free Gmail address, but it isn't always part of the website quote. Some hosting plans include basic mailboxes, while dedicated services such as Google Workspace, Microsoft 365 or Zoho Mail usually charge per mailbox, so the cost grows with your team. Check current plans and storage limits before you choose; see <a href="/blog/business-email-options/">business email options</a>.</p>
+
+<h2>Fonts, images and other media</h2>
+<ul>
+  <li><strong>Fonts:</strong> Google Fonts are free to use, but some premium fonts need a web licence, priced according to how they're used</li>
+  <li><strong>Stock photos and illustrations:</strong> images found through a Google search aren't free to use; licensed stock is usually paid per image or by subscription</li>
+  <li><strong>Photography and video:</strong> professional photos of your team, premises or products cost money but usually build more trust than stock</li>
+  <li><strong>Icons and graphics:</strong> some libraries are free, while others need a paid licence for commercial use</li>
+</ul>
+<p>Keep a record of what was licensed and under whose account, so you can show you're allowed to use it.</p>
+
+<h2>SSL certificates: often free now</h2>
+<p>SSL gives your site the padlock and "https" in the browser. Most good hosts now include a free certificate that renews automatically, which is enough for most business websites. Think twice before paying for an SSL upgrade at checkout unless you have a specific reason, and check that the free certificate really does renew, because an expired one triggers browser security warnings.</p>
+
+<h2>Backups, security and maintenance</h2>
+<p>A WordPress site needs regular updates, off-site backups, security monitoring and checks that forms still deliver enquiries. You can do some of this yourself, pay for individual tools, or use a maintenance plan. Skipping it is the most expensive option in the long run, because cleaning up a hacked site or rebuilding after data loss usually costs far more than prevention.</p>
+<p>Content updates add up too: new services, price changes, staff photos, festival offers. Check whether your plan includes small edits or charges for each one. See <a href="/blog/website-maintenance-cost-india/">website maintenance costs in India</a> for what plans usually cover.</p>
+
+<h2>Getting visitors: ads, SEO and content</h2>
+<p>A website doesn't bring customers on its own. Most businesses spend something on getting found:</p>
+<ul>
+  <li><strong>Google or Meta ads:</strong> the ad budget itself, plus management time if someone runs the campaigns for you</li>
+  <li><strong>SEO:</strong> ongoing work on content, technical health and your Google Business Profile</li>
+  <li><strong>Content:</strong> service pages, articles and product descriptions, whether you pay a writer or spend your own time</li>
+  <li><strong>Tools:</strong> email marketing, booking, live chat or CRM subscriptions connected to your site</li>
+</ul>
+<p>None of these is compulsory, but if your website exists to bring in enquiries, budget for at least one way of driving visitors to it.</p>
+
+<h2>How to budget for the full cost</h2>
+<p>Make a simple list of every running cost, how often it's billed and who pays it:</p>
+<table>
+  <thead>
+    <tr><th>Cost</th><th>Usually billed</th><th>Watch for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Domain</td><td>Yearly or multi-year</td><td>Renewal price and auto-renew settings</td></tr>
+    <tr><td>Hosting</td><td>Yearly or multi-year</td><td>Introductory vs renewal price</td></tr>
+    <tr><td>Business email</td><td>Monthly or yearly, per mailbox</td><td>Cost growing with your team</td></tr>
+    <tr><td>Plugin and theme licences</td><td>Usually yearly</td><td>Licences in someone else's name</td></tr>
+    <tr><td>Maintenance</td><td>Monthly or yearly</td><td>What's included, especially content edits</td></tr>
+    <tr><td>Marketing</td><td>Monthly</td><td>Ad spend vs management fees</td></tr>
+  </tbody>
+</table>
+<p>When comparing quotes, ask each developer which of these are included and which you'll pay separately. For the build itself and typical yearly costs, see <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a>, or get a rough estimate with the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<p>Want someone to keep your site updated, backed up and secure, and keep an eye on renewals for you? See <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
 ];
