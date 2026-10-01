@@ -4185,6 +4185,8 @@ module.exports = [
 <h2>Performance with lots of photos</h2>
 <p>Event galleries can be huge. Compress images, use thumbnails in grids, lazy-load galleries and choose good hosting so pages stay fast; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
 
+<p>Selling tickets to public events, where launch-day traffic spikes are a real risk? See <a href="/blog/website-for-event-organisers-ticketing/">websites for event organisers selling tickets</a>.</p>
+
 <h2>SEO and marketing</h2>
 <ul>
   <li>Target "wedding planner in {city}", "destination wedding planner {place}" and "corporate event management {city}"</li>
@@ -6948,6 +6950,8 @@ module.exports = [
 <h2>White screen (blank page)</h2>
 <p><strong>Usually:</strong> a PHP error or exhausted memory.<br><strong>First steps:</strong> think about what changed recently (update, new plugin). Restore the last backup or disable the latest plugin. Your host can check error logs.</p>
 
+<p>Suspect a plugin but not sure which one? See <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find and fix WordPress plugin conflicts</a>.</p>
+
 <h2>500 Internal Server Error</h2>
 <p><strong>Usually:</strong> a server configuration issue, corrupted .htaccess file, plugin error or hosting resource limits.<br><strong>First steps:</strong> check your hosting account for resource warnings and ask your host for the error log, which tells you exactly what failed.</p>
 
@@ -8138,6 +8142,8 @@ module.exports = [
 
 <h2>Helpful content</h2>
 <p>Crop guides, seasonal advice and videos demonstrating products attract searches and build trust. Keep advice accurate and practical.</p>
+
+<p>Selling tractors, implements or harvesters rather than crop inputs? See <a href="/blog/website-for-tractor-farm-equipment-dealers/">websites for tractor and farm equipment dealers</a>.</p>
 
 <h2>Enquiries</h2>
 <ul>
@@ -31261,6 +31267,266 @@ Template: astra
 <p>If you add bonus credit as a promotion, keep it separate from the paid card, with its own clearly stated expiry, so the paid balance and the free bonus aren't confused.</p>
 
 <p>Want gift cards or store credit set up properly on your store? See <a href="/woocommerce-developer/">WooCommerce development</a>, or a focused <a href="/landing-page-design/">landing page</a> for a festival gift card campaign.</p>
+`,
+  },
+  {
+    slug: 'website-for-tractor-farm-equipment-dealers',
+    seoTitle: 'Websites for Tractor and Farm Equipment Dealers',
+    title: 'Websites for Tractor and Farm Equipment Dealers: More Showroom Enquiries',
+    description: 'How tractor and farm equipment dealers can win more enquiries: models by use, careful finance and subsidy wording, service, spares and regional languages.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-seo-services'],
+    body: `
+<p>Farmers rarely buy a tractor on impulse. They compare horsepower, ask neighbours, check finance options and often visit the showroom more than once. More of that research now starts on a phone, with a search like "tractor dealer near me" or a model name plus the nearest town. A clear dealer website turns that research into a call, a WhatsApp message or a showroom visit.</p>
+
+<p>This guide is for tractor, harvester and implement dealers. If you make or supply seeds, fertilisers or other crop inputs, see <a href="/blog/website-for-agriculture-businesses/">websites for agriculture and agri-input companies</a> instead.</p>
+
+<h2>What farmers want to know before they call</h2>
+<ul>
+  <li>Which models suit their land size, crops and soil</li>
+  <li>The on-road price, or at least how to get it quickly</li>
+  <li>Finance options and the documents they will need</li>
+  <li>Where the nearest service point is and whether spares are easy to get</li>
+  <li>What their old tractor might fetch in exchange</li>
+  <li>That you are a genuine, established dealer with a real showroom</li>
+</ul>
+<p>Answer these on the website and the first phone call becomes a serious conversation rather than a list of basic questions.</p>
+
+<h2>Organise models by use, not just by name</h2>
+<p>Model numbers mean little to a first-time buyer. Group your range the way farmers think about their work:</p>
+<ul>
+  <li><strong>By horsepower band:</strong> small, mid-range and high-HP tractors</li>
+  <li><strong>By job:</strong> orchards and vineyards, puddling and paddy, haulage, heavy tillage, small holdings</li>
+  <li><strong>Implements:</strong> rotavators, cultivators, ploughs, seed drills, sprayers, trolleys and threshers</li>
+  <li><strong>Harvesters and specialised machines</strong>, if you sell them</li>
+  <li><strong>Used and exchange tractors</strong>, with year, hours run, condition notes and real photos</li>
+</ul>
+<p>Each model page should show real photos, key specifications taken from the manufacturer's current brochure, matching implements and a clear "Get on-road price" button. Prices and specifications change, so a quick price enquiry often works better than a figure that quietly goes out of date.</p>
+
+<h2>Finance and subsidy wording: be careful</h2>
+<p>Finance and subsidies are major reasons farmers enquire, and also where dealer websites most often overpromise.</p>
+<ul>
+  <li>Name only the banks and finance companies you actually work with</li>
+  <li>Present EMI calculators as indicative only; final terms depend on the lender's approval</li>
+  <li>Avoid phrases like "guaranteed loan" or "zero down payment" unless the offer is real, current and shown with its conditions</li>
+  <li>Government support for farm machinery generally varies by state and scheme, changes over time and depends on eligibility. Say you can help farmers understand current schemes and paperwork, rather than promising an amount</li>
+  <li>Put an end date on every offer and remove it when it expires</li>
+</ul>
+<p>Honest wording protects your reputation in a market where word of mouth travels fast. If you're unsure what an offer can claim, check with the lender, your brand and your CA.</p>
+
+<h2>Show your service and spares strength</h2>
+<p>A tractor is a long relationship, and good after-sales service is often why farmers return to the same dealer. Give it proper space on the website:</p>
+<ul>
+  <li>Service booking by form or WhatsApp, for periodic and breakdown service</li>
+  <li>Workshop location, timings and whether you offer a mobile service van</li>
+  <li>A spares enquiry that asks for the model and part, or lets customers send a photo of the part on WhatsApp</li>
+  <li>Service camps and demo days, announced well before sowing and harvest seasons</li>
+  <li>Warranty registration and service schedule information from the manufacturer</li>
+</ul>
+
+<h2>Brand names and logos: only if you're authorised</h2>
+<p>Most dealers represent one or two brands. If you're an authorised dealer, follow the manufacturer's dealer guidelines for logos, model names, images and offers; some brands have specific rules for dealer websites, so ask before you build. If you're a multi-brand or used tractor dealer, don't call yourself "authorised" or use brand logos in a way that suggests a dealership you don't hold. Describe what you do accurately: "used tractors of all major brands" is fine, an implied tie-up isn't.</p>
+
+<h2>Hindi and regional languages</h2>
+<p>Many customers are more comfortable in Hindi, Punjabi, Marathi, Telugu or another regional language. You don't need every page translated on day one. Start with the homepage, key model pages and the finance and service pages, written or checked by someone who speaks the language naturally rather than relying on machine translation alone. See <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a> for how to set this up properly.</p>
+<p>Use the local terms farmers actually say, and keep the language switcher visible at the top of every page.</p>
+
+<h2>Make calls and WhatsApp the main buttons</h2>
+<p>Most farm equipment enquiries arrive by phone. Make it effortless:</p>
+<ul>
+  <li>A sticky click-to-call and WhatsApp bar on mobile</li>
+  <li>WhatsApp links that pre-fill the model name, so your team knows what the farmer was looking at</li>
+  <li>A short form: name, phone number, village or tehsil, and the model or implement of interest</li>
+  <li>Separate numbers or routing for sales, service and spares, so calls reach the right person</li>
+</ul>
+<p>See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>, and reply quickly: a farmer comparing two dealers usually visits the one who calls back first.</p>
+
+<h2>Local SEO, branches and speed</h2>
+<ul>
+  <li>Keep a Google Business Profile for each showroom and workshop, with photos, timings and regular updates</li>
+  <li>Give each branch its own page with address, map, team and services, not thin copies of the same text; see <a href="/blog/multi-location-business-website/">websites for businesses with multiple branches</a></li>
+  <li>Target searches like "tractor dealer in {district}", "{brand} tractor showroom {town}" and "rotavator price {district}"</li>
+  <li>Keep pages light: compress photos and skip heavy sliders, because many visitors browse on patchy rural networks</li>
+</ul>
+
+<p>Want a fast, bilingual dealership website with model pages, service booking and WhatsApp enquiries? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B businesses</a>, or <a href="/wordpress-seo-services/">WordPress SEO</a> to get found across your district.</p>
+`,
+  },
+  {
+    slug: 'website-for-event-organisers-ticketing',
+    title: 'Websites for Event Organisers: Selling Tickets Online',
+    description: 'How event organisers can sell tickets on their own website: event pages, ticketing and payments, schedules, venue details, refund terms and launch-day speed.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['landing-page-design', 'woocommerce-developer'],
+    body: `
+<p>Concerts, conferences, comedy nights, workshops, marathons and exhibitions all have one thing in common: people pay before they turn up. That gives an event organiser's website a different job from a portfolio. It must answer every question about the event, take payment smoothly and stay online when everyone tries to buy at once.</p>
+
+<p>If you plan weddings and private events for clients, see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a>. This guide is about public, ticketed events.</p>
+
+<h2>One clear page for every event</h2>
+<p>Each event deserves its own page with a permanent URL, not just a poster on the homepage. Include:</p>
+<ul>
+  <li>Event name, date, start and end times, and when gates open</li>
+  <li>Venue name and city, visible in the first screen</li>
+  <li>Ticket tiers, prices including fees, and what each tier includes</li>
+  <li>Line-up, speakers or performers, with short bios and photos you have permission to use</li>
+  <li>Age limits, dress code and entry rules</li>
+  <li>An FAQ section and a "Book tickets" button that stays within reach on mobile</li>
+</ul>
+<p>Write the key details as real text rather than only inside images, so search engines and people using screen readers can read them. Event structured data can also help search engines understand the date, venue and ticket details.</p>
+
+<h2>Choosing how to sell tickets</h2>
+<table>
+<thead><tr><th>Option</th><th>Good for</th><th>Watch out for</th></tr></thead>
+<tbody>
+<tr><td>Third-party ticketing platform (link or embedded widget)</td><td>Big launches, quick setup, ready-made check-in tools</td><td>Platform fees, their branding, limited access to buyer data</td></tr>
+<tr><td>Tickets sold on your own WordPress site (ticketing plugin or WooCommerce)</td><td>Recurring events, workshops and conferences where you want to own the customer relationship</td><td>You manage capacity, hosting, payments and check-in yourself</td></tr>
+<tr><td>Hybrid</td><td>Your site for information and early-bird sales, a platform for peak demand</td><td>Keeping prices and availability consistent in both places</td></tr>
+</tbody>
+</table>
+<p>Whichever you choose, keep the event information on your own website. Those pages build search visibility and audience trust across every edition, while a platform listing disappears when the sale ends.</p>
+
+<h2>Payments, ticket delivery and check-in</h2>
+<ul>
+  <li>Offer UPI, cards and net banking through a reliable gateway; see <a href="/blog/payment-gateways-india-compared/">choosing a payment gateway</a></li>
+  <li>Show convenience fees and taxes before checkout, not as a surprise at the last step, and ask your CA how GST applies to your tickets</li>
+  <li>Set a capacity limit for each tier so you never oversell</li>
+  <li>Email tickets with a QR code or unique ID, and consider a WhatsApp or SMS confirmation as well</li>
+  <li>Plan check-in: a scanning app or a list your gate staff can search on a phone</li>
+  <li>Offer group, student or corporate bookings and early-bird prices with clear end dates</li>
+</ul>
+<p>Test the full purchase on a phone, including a failed payment and the confirmation email, before you announce the sale.</p>
+
+<h2>Schedules and venue information</h2>
+<p>For multi-day festivals and conferences, publish the schedule by day, stage or track, and update it as sessions change. For online or hybrid events, show the time zone next to every time.</p>
+<p>A good venue section answers the questions that otherwise flood your phone on event day:</p>
+<ul>
+  <li>An embedded map, entry gates and parking</li>
+  <li>The nearest metro, bus stop or cab drop-off point</li>
+  <li>Access for wheelchair users and older visitors</li>
+  <li>Bag policy, prohibited items, food and water, and re-entry rules</li>
+  <li>Weather plans for open-air events</li>
+</ul>
+
+<h2>Refunds, transfers and terms</h2>
+<p>Unclear terms lead to angry messages and payment disputes. Spell out:</p>
+<ul>
+  <li>Whether tickets can be refunded, transferred or changed, and until when</li>
+  <li>What happens if the event is postponed, cancelled or the line-up changes</li>
+  <li>How refunds are processed and roughly how long they take</li>
+  <li>Entry conditions and when entry can be refused</li>
+</ul>
+<p>Keep these consistent with any ticketing platform's own terms, link them from the checkout, and have a lawyer review them; see <a href="/blog/website-terms-and-conditions/">website terms and conditions</a>.</p>
+
+<h2>Sponsors and partners</h2>
+<ul>
+  <li>Show sponsor logos by tier on event pages and on a dedicated sponsors page</li>
+  <li>Add a "Become a sponsor" page with your audience profile, past editions and an enquiry form, so the site sells sponsorships as well as tickets</li>
+  <li>Include exhibitor or stall booking details for expos and fairs</li>
+  <li>Use only logos you have permission for, and audience figures you can back up</li>
+</ul>
+
+<h2>Staying fast when tickets go live</h2>
+<p>The moment a sale opens is when your website is most likely to struggle. Prepare well before:</p>
+<ul>
+  <li>Cache event pages and serve images through a CDN so information pages stay quick</li>
+  <li>Remember that cart and checkout pages can't be fully cached, so check your hosting can handle many buyers at once</li>
+  <li>Remove heavy sliders, autoplay videos and unnecessary third-party scripts from ticket pages</li>
+  <li>Announce the exact sale time, and don't make big website changes on launch day</li>
+  <li>Keep a fallback ready, such as a short notice and a backup ticket link, in case something fails</li>
+</ul>
+<p>Selling through your own store? See <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a>.</p>
+
+<h2>Before and after the event</h2>
+<ul>
+  <li>Collect "notify me" sign-ups before tickets open, so you can email fans the moment sales start</li>
+  <li>Use focused landing pages for ads and social campaigns, one per event</li>
+  <li>After the event, add a gallery, highlights video and recap, then point visitors to the next edition</li>
+</ul>
+
+<p>Planning a ticketed event? I build fast event pages and WooCommerce ticketing setups that hold up on launch day; see <a href="/landing-page-design/">landing page design</a> and <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-plugin-conflicts-troubleshooting',
+    title: 'WordPress Plugin Conflicts: How to Find and Fix Them Safely',
+    description: 'How to spot, find and fix WordPress plugin conflicts safely: symptoms, staging, Health Check troubleshooting mode, error logs and reporting to developers.',
+    date: '2026-10-01',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>A plugin conflict happens when two plugins, or a plugin and your theme, interfere with each other. Each works fine on its own, but together something breaks: a form stops sending, a layout falls apart or the site shows a critical error. Conflicts are among the most common WordPress problems, and the good news is that they can be tracked down methodically without putting your live site at risk.</p>
+
+<h2>Common symptoms of a plugin conflict</h2>
+<ul>
+  <li>A "critical error" message or white screen right after installing or updating a plugin</li>
+  <li>Buttons, sliders, pop-ups or menus that stop responding, often a sign of a JavaScript conflict</li>
+  <li>Layouts or styling that suddenly look wrong on some pages</li>
+  <li>Forms that won't submit, or a checkout that hangs</li>
+  <li>A page builder editor that won't load</li>
+  <li>Duplicate output, such as two sets of meta tags from two SEO plugins, or images that never appear because two plugins both lazy-load them</li>
+  <li>An admin area that becomes slow, or settings screens that go missing</li>
+</ul>
+<p>Not every problem is a conflict. Hosting limits, a hack or stale caching can look very similar, so keep an open mind while you investigate.</p>
+
+<h2>First, protect the live site</h2>
+<ol>
+  <li>Take a fresh backup of files and database before changing anything; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a></li>
+  <li>Write down what changed recently: a new plugin, an update, a theme change or a PHP upgrade</li>
+  <li>Clear every cache (plugin, hosting and CDN) and check again in a private browser window, because sometimes the "problem" is an old cached page</li>
+  <li>If the site is down or a store can't take orders, roll back the last update or restore the backup first, then investigate</li>
+</ol>
+
+<h2>Reproduce it on a staging site</h2>
+<p>Switching plugins on and off on a live site can break things for real visitors, especially on stores and booking sites. A staging copy lets you test freely, and many hosts create one in a few clicks; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+<p>Confirm the problem appears on staging too. If it doesn't, the cause may be specific to the live environment, such as server caching, a CDN rule or different PHP settings.</p>
+
+<h2>Use Health Check troubleshooting mode</h2>
+<p>When staging isn't available, the free Health Check &amp; Troubleshooting plugin from the WordPress.org community offers a safer option. Its troubleshooting mode disables all plugins and switches to a default theme only for your logged-in session, while visitors keep seeing the normal site.</p>
+<p>From there you can enable plugins one at a time from the admin bar and watch for the moment the problem returns. It isn't perfect, since anything that depends on server-level caching or scheduled tasks may behave differently, but it's a useful first step for many conflicts.</p>
+
+<h2>Disable plugins one at a time</h2>
+<p>The classic method still works best:</p>
+<ol>
+  <li>Switch to a default WordPress theme (one of the "Twenty" themes). If the problem disappears, your theme is involved</li>
+  <li>Deactivate all plugins except the one showing the problem. If it now works, a conflict is confirmed</li>
+  <li>Reactivate the other plugins one by one, checking after each, until the problem returns</li>
+  <li>On sites with many plugins, reactivate them in halves to narrow down the culprit faster</li>
+  <li>Once you've found the pair, test them together on their own to be sure</li>
+</ol>
+<p>Deactivate, don't delete: deleting some plugins also removes their settings and data. If you're locked out of the admin, a developer can disable plugins by renaming their folders through hosting file access; see <a href="/blog/fix-wordpress-critical-error/">how to fix the critical error</a>.</p>
+
+<h2>Read the logs and the browser console</h2>
+<ul>
+  <li><strong>PHP error log:</strong> ask your host for it, or enable WordPress debug logging on staging (WP_DEBUG and WP_DEBUG_LOG in wp-config.php) so errors are written to a log file instead of being shown to visitors. The log usually names the plugin file involved</li>
+  <li><strong>Browser console:</strong> open your browser's developer tools on the broken page; red JavaScript errors often name the script that failed</li>
+  <li><strong>Query Monitor:</strong> a free plugin that shows PHP errors, database queries and the scripts loaded on each page, handy on staging</li>
+</ul>
+<p>Switch debugging off when you're done, and never leave error messages displaying on a live site.</p>
+
+<h2>Report it to the plugin developers</h2>
+<p>Once you know which plugins clash, tell their developers. A useful report includes:</p>
+<ul>
+  <li>Your WordPress, PHP and theme versions, plus both plugin versions (Tools → Site Health → Info lists most of this)</li>
+  <li>Exact steps to reproduce the problem</li>
+  <li>Any error messages from the log or console</li>
+  <li>Confirmation that it still happens with a default theme and only those two plugins active</li>
+</ul>
+<p>Use the plugin's support forum on WordPress.org, or the developer's own support channel for premium plugins. Many conflicts are fixed in the next release. Meanwhile, roll back to the last working version if that's safe, or keep the less important plugin switched off.</p>
+
+<h2>Choosing a replacement and preventing future conflicts</h2>
+<p>If a developer doesn't respond or the plugin looks abandoned, replace it:</p>
+<ul>
+  <li>Choose plugins that are actively maintained, tested with recent WordPress versions and well reviewed</li>
+  <li>Avoid overlapping plugins: one SEO plugin, one caching plugin, one security plugin</li>
+  <li>Prefer a few well-built plugins over many small ones; sometimes a little custom code is cleaner</li>
+  <li>Never use nulled copies of premium plugins</li>
+  <li>Update important plugins one at a time and test key pages afterwards</li>
+</ul>
+
+<p>Would you rather not chase conflicts yourself? My <a href="/wordpress-maintenance/">WordPress maintenance</a> plans include tested updates, backups and troubleshooting when something breaks.</p>
 `,
   },
 ];
