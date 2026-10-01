@@ -1513,6 +1513,8 @@ module.exports = [
   <li>Add new photos regularly, because fresh, real photos build trust</li>
 </ul>
 
+<p>For which photos to add, choosing a cover and logo, handling customer photos and myths like geotagging, see <a href="/blog/google-business-profile-photos/">Google Business Profile photos explained</a>.</p>
+
 <h2>Reviews: the biggest ongoing factor</h2>
 <ol>
   <li>Ask every satisfied customer for a review, ideally right after a good experience.</li>
@@ -4978,6 +4980,8 @@ module.exports = [
 <p>A few testimonials, case studies or client logos. See <a href="/blog/collect-display-customer-testimonials/">how to collect and display testimonials</a>.</p>
 <h3>7. A clear next step</h3>
 <p>End with a call to action: book a consultation, get a quote or chat on WhatsApp.</p>
+
+<p>If you have more than a couple of people, a dedicated team page can carry the detail; see <a href="/blog/meet-the-team-page/">how to create a meet the team page</a>.</p>
 
 <h2>Writing tips</h2>
 <ul>
@@ -21094,6 +21098,8 @@ Template: astra
 </ul>
 <p>Put the phone number and WhatsApp button in the header or footer of every page, not only on the contact page.</p>
 
+<p>For the contact page itself, from which options to show to setting reply-time expectations, see <a href="/blog/contact-page-that-gets-enquiries/">how to design a contact page that turns visitors into enquiries</a>.</p>
+
 <h2>Real people and real photos</h2>
 <p>People buy from people. Stock photos of smiling models in suits are easy to recognise, and they make a genuine business look like a template.</p>
 <ul>
@@ -32607,6 +32613,276 @@ Template: astra
 <p>Some combinations match real searches, such as "cotton kurtis", "Bosch drill machines" or "sugar-free sweets". Rather than hoping a filter URL ranks, create a proper subcategory, brand page or landing page with a clean URL, a short helpful introduction, its own title and description, and links from your menus or category pages. That gives Google a stable page to rank and gives shoppers a page written for them. The <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a> covers category page structure in more detail.</p>
 
 <p>Need filters that help shoppers without slowing your store or cluttering Google's index? See <a href="/woocommerce-developer/">WooCommerce development</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'contact-page-that-gets-enquiries',
+    seoTitle: 'Contact Page Design That Turns Visitors Into Enquiries',
+    title: 'How to Design a Contact Page That Turns Visitors Into Enquiries',
+    description: 'How to design a contact page that gets enquiries: which contact options to show, short forms, WhatsApp and click-to-call, maps, hours, reply times and tracking.',
+    date: '2026-10-01',
+    category: 'Growth',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Your contact page is where interested visitors go when they're ready to act. Yet on many business websites it's an afterthought: a form, an address and a stock photo of a telephone headset. If the page is confusing, slow or feels unattended, people who were ready to enquire go back to Google and call the next business. This guide covers how to design the page itself. If your form is set up but submissions aren't arriving, start with <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a> instead.</p>
+
+<h2>What visitors want from a contact page</h2>
+<p>Someone who opens your contact page has usually decided they're interested. Now they're asking three quick questions:</p>
+<ul>
+  <li><strong>Can I reach you the way I prefer?</strong> Some people want to call, some want WhatsApp, some want to write.</li>
+  <li><strong>Will anyone actually reply, and when?</strong></li>
+  <li><strong>Are you real and nearby?</strong> An address, map and hours answer this at a glance.</li>
+</ul>
+<p>Design the page to answer all three within one screen on a phone. A short headline such as "Talk to us about your project" and one line on what happens next works better than a paragraph about your company history.</p>
+
+<h2>Choose your contact options deliberately</h2>
+<p>Listing every possible channel with equal weight makes people hesitate. Pick one or two primary options based on how your best customers actually get in touch, and show the rest as secondary.</p>
+<table>
+  <thead>
+    <tr><th>Option</th><th>Works best for</th><th>Tip</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Click-to-call</td><td>Urgent or local services such as repairs, clinics and pest control</td><td>Show the hours when someone answers</td></tr>
+    <tr><td>WhatsApp</td><td>Quick questions, photos of the problem, price checks</td><td>Use a business number, not a staff member's personal one</td></tr>
+    <tr><td>Enquiry form</td><td>Detailed requirements, B2B and project work</td><td>Keep it short and say when you'll reply</td></tr>
+    <tr><td>Email</td><td>Overseas clients, documents and tenders</td><td>Use an address on your own domain</td></tr>
+    <tr><td>Booking link</td><td>Consultations, demos and appointments</td><td>Only if the calendar is kept up to date</td></tr>
+    <tr><td>Visit us</td><td>Showrooms, clinics and shops</td><td>Add landmarks and parking details</td></tr>
+  </tbody>
+</table>
+<p>If different people handle different requests, such as sales, support and job applications, say so clearly so each enquiry reaches the right person first time.</p>
+
+<h2>Keep the form short and friendly</h2>
+<p>The form is for people who would rather write than talk. Ask only for what you need to reply well:</p>
+<ul>
+  <li>Name</li>
+  <li>Phone number (using a field that opens the number keypad on mobile) or email</li>
+  <li>An optional dropdown for the type of enquiry, if it helps you route or prioritise</li>
+  <li>A message box with a helpful prompt, such as "Tell us what you need and your location"</li>
+</ul>
+<p>Put clear labels above each field rather than placeholder text that disappears when people start typing, and use a specific button label like "Send enquiry" instead of "Submit". Make error messages explain exactly what to fix. Save longer qualifying questions for the follow-up call.</p>
+<p>Spam is a real nuisance on contact pages, but hard puzzles block genuine customers too. Invisible methods are usually the better first step; see <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a>.</p>
+
+<h2>Make WhatsApp and click-to-call work properly</h2>
+<p>On mobile, most people would rather tap than type. A few details make a big difference:</p>
+<ul>
+  <li>Make the phone number a tappable call link, and show it in full so desktop visitors can dial it from their phone</li>
+  <li>Link the WhatsApp button to your business number with a short pre-filled message, such as "Hi, I'm enquiring from your website about..."</li>
+  <li>Say when calls and messages are answered, for example "Mon to Sat, 9am to 7pm"</li>
+  <li>Make sure whoever answers knows what to ask and where to record the lead</li>
+  <li>Keep buttons large enough to tap, and check a floating chat widget isn't covering them</li>
+</ul>
+
+<h2>Add your address, map and hours</h2>
+<p>For businesses that customers visit, location details often matter more than the form. Include:</p>
+<ul>
+  <li>Your full address, written exactly as it appears on your Google Business Profile</li>
+  <li>A nearby landmark, since many Indian addresses are easier to find that way ("opposite the metro station, first floor above the bank")</li>
+  <li>Opening hours, plus a note about holidays and festival closures</li>
+  <li>Parking or access information where it's relevant</li>
+  <li>A map, or a "Get directions" link that opens Google Maps</li>
+</ul>
+<p>Embedded maps can slow a page down, so load them carefully; see <a href="/blog/google-maps-on-website/">how to add Google Maps without slowing your site</a>. If you visit customers at their location and don't want your address public, list the areas you cover instead.</p>
+
+<h2>Set expectations about replies</h2>
+<p>Uncertainty stops people from getting in touch. Tell visitors what happens next:</p>
+<ol>
+  <li>When they'll hear back, such as "We reply within one working day", but only if you can genuinely keep that promise</li>
+  <li>Who will contact them and how: a call, a WhatsApp message or an email</li>
+  <li>What the next step usually is, such as a site visit, a short call or a written quote</li>
+</ol>
+<p>Repeat the promise in the confirmation message or thank-you page after the form is sent, and in an automatic email reply if you use one. Then keep it. A fast, helpful reply wins more work than any design change.</p>
+
+<h2>Put trust signals near the form</h2>
+<p>The contact page is a decision point, so a little reassurance goes a long way:</p>
+<ul>
+  <li>One or two short testimonials, or your Google rating with a link to the reviews</li>
+  <li>A real photo of your team, office or shopfront rather than a stock image</li>
+  <li>Your registered business name, and your GSTIN where business customers expect it</li>
+  <li>A short privacy note, such as "We'll only use your details to reply to your enquiry", linking to your privacy policy</li>
+</ul>
+<p>Avoid clutter. A few honest signals beside the form work better than a wall of badges and logos.</p>
+
+<h2>Track every enquiry</h2>
+<p>You can't improve a contact page if you don't know what it produces. Set up tracking for:</p>
+<ul>
+  <li>Form submissions, ideally confirmed with a thank-you page or a tracked event</li>
+  <li>Taps on the phone number and the WhatsApp button</li>
+  <li>Clicks on "Get directions" and any booking link</li>
+</ul>
+<p>A tap on a call or WhatsApp button doesn't always mean a conversation happened, so also ask new customers how they found you. See <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a> for ways to connect calls and chats to your website. Finally, test the form yourself every month and after plugin updates, because a silently broken form is an expensive problem.</p>
+
+<p>Want a contact page, and a website around it, that's built to bring in enquiries? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'meet-the-team-page',
+    title: 'How to Create a Meet the Team Page for a Small Business',
+    description: 'How to create a meet the team page for a small business: who to include, real photos, bios that show expertise, accurate qualifications and staff consent.',
+    date: '2026-10-01',
+    category: 'Growth',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>People like to know who they'll be dealing with. A patient wants to see the doctor before booking, a homeowner wants to know who will come to measure the kitchen, and a business client wants to know who will actually do the work. A good team page answers that honestly. This guide covers who to include, how to write bios, what to check before publishing and how to keep the page accurate as your team changes. For the wider story of your business, see <a href="/blog/write-about-page-that-builds-trust/">how to write an About page that builds trust</a>.</p>
+
+<h2>Do you need a separate team page?</h2>
+<p>Not always. If your business is you and one or two colleagues, a short team section on your About page is usually enough. A separate page makes sense when:</p>
+<ul>
+  <li>Customers choose a specific person, such as a doctor, lawyer, trainer or stylist</li>
+  <li>You have several specialists and visitors want to know who handles what</li>
+  <li>Your team's experience is a big part of why customers pick you, as with consultancies, agencies and engineering firms</li>
+  <li>You're hiring and want candidates to see who they'd work with</li>
+</ul>
+<p>For clinics and professional firms, individual profile pages for key people can also help, because patients and clients often search for them by name.</p>
+
+<h2>Who to include</h2>
+<p>Start with the people customers will meet or speak to, then add the people whose expertise shapes the result:</p>
+<ul>
+  <li><strong>Founders and partners:</strong> the people accountable for the business</li>
+  <li><strong>Client-facing staff:</strong> doctors, consultants, project managers, front-desk staff and site supervisors</li>
+  <li><strong>Key specialists:</strong> designers, engineers, therapists or technicians whose skill customers are paying for</li>
+</ul>
+<p>You don't need to list every employee. A larger team can be shown with a group photo and a line such as "supported by our service technicians across Pune". If you work with freelancers or associates, describe the relationship honestly rather than presenting them as full-time staff.</p>
+
+<h2>Real photos beat stock every time</h2>
+<p>A team page full of stock models is worse than no team page, because it suggests the real people are hiding. Use real photos, and make them consistent:</p>
+<ul>
+  <li>The same background, framing and lighting for every headshot, so the grid looks tidy</li>
+  <li>Natural expressions and the clothes people actually wear at work</li>
+  <li>A few "at work" photos alongside the headshots: the team on site, in the clinic or around the workshop table</li>
+  <li>A recent phone and good daylight are enough; one organised photo session is easier than chasing people individually</li>
+</ul>
+<p>Never use AI-generated faces or stock photos to represent staff. For when stock images are fine and when they aren't, see <a href="/blog/stock-photos-vs-real-photos/">stock photos vs real photos</a>.</p>
+
+<h2>Write bios that show expertise</h2>
+<p>A good bio tells the customer what this person does for them and why they're good at it. Keep each one to roughly 50 to 120 words and follow a simple structure:</p>
+<ol>
+  <li><strong>Name and role,</strong> written plainly ("Senior Site Engineer", not "Chief Happiness Officer")</li>
+  <li><strong>What they handle for customers,</strong> such as "leads every kitchen installation from measurement to handover"</li>
+  <li><strong>Relevant experience,</strong> with specifics: the type of projects, the kind of patients, the industries they know</li>
+  <li><strong>Qualifications and memberships</strong> that genuinely apply</li>
+  <li><strong>One human detail,</strong> if they're happy to share it, such as the languages they speak</li>
+</ol>
+<p>Write every bio in the same voice, usually the third person, and avoid clichés like "passionate" and "dedicated professional". Languages spoken are especially useful in India, where many customers prefer to explain their problem in Hindi or a regional language.</p>
+
+<h2>State qualifications accurately</h2>
+<p>Qualifications are where a team page earns trust, and where exaggeration does the most damage. Before publishing, check each claim with the person concerned:</p>
+<ul>
+  <li>Write degrees and certifications with their exact names, as they appear on the certificate</li>
+  <li>Use "certified" or "registered" only when the person holds a current certification or registration</li>
+  <li>Give years of experience the person can back up, not a rounded-up figure</li>
+  <li>Keep memberships current, and remove any that have lapsed</li>
+</ul>
+<p>Doctors, advocates, chartered accountants and some other professions have rules from their professional bodies about how they may present themselves and advertise. Check the current rules for your profession, or ask your professional body, before adding registration numbers, titles or claims about specialisation.</p>
+
+<h2>Get consent and respect privacy</h2>
+<p>A team member's name, photo and bio are personal information, so ask before publishing them. Get agreement in writing (an email is fine), show them the final bio and photo, and let them choose what's included. Some people prefer to show only their first name, or no photo, and that's reasonable, especially for junior staff or anyone with personal safety concerns.</p>
+<ul>
+  <li>Don't publish personal mobile numbers or personal email addresses; use role-based addresses such as appointments@ on your own domain</li>
+  <li>Link to someone's LinkedIn profile only if they want it linked</li>
+  <li>Agree in advance what happens to their photo and bio if they leave</li>
+</ul>
+<p>It's worth understanding the basics of data protection here; see <a href="/blog/dpdp-act-website-basics/">India's DPDP Act and your website</a>, and ask a lawyer if you're unsure what applies to you.</p>
+
+<h2>Keep it updated when people leave</h2>
+<p>An outdated team page causes real problems: customers ask for someone who left a year ago, or a former employee finds their photo still promoting your business. Build updates into your routine:</p>
+<ul>
+  <li>Add "update the website" to your joining and leaving checklists, alongside email access and ID cards</li>
+  <li>Remove a departed person's photo and bio promptly, and check other pages and your Google Business Profile for mentions</li>
+  <li>If someone had their own profile page, redirect it to the team page rather than leaving a broken link</li>
+  <li>Review the whole page every few months for changed roles, new qualifications and old photos</li>
+</ul>
+<p>On WordPress, storing team members as a simple custom content type, with fields for photo, role and bio, makes updates quick and keeps the layout consistent, even when someone without design skills does the editing.</p>
+
+<h2>Design the page for scanning</h2>
+<ul>
+  <li>A grid of cards showing photo, name and role, with the bio below or on a profile page</li>
+  <li>Customer-facing people first, rather than strict order of seniority</li>
+  <li>A clear next step, such as a "Book with this doctor" button or a link to your contact page</li>
+  <li>Compressed images, with each person's name and role as alt text, so the page stays fast on mobile</li>
+</ul>
+
+<p>Need a team page that's easy for you to keep up to date? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'google-business-profile-photos',
+    seoTitle: 'Google Business Profile Photos: What to Add and How Often',
+    title: 'Google Business Profile Photos: What to Add, How Often and Myths to Ignore',
+    description: 'Which photos to add to your Google Business Profile, choosing a cover and logo, how often to add more, customer photos, and why geotags aren\'t a ranking trick.',
+    date: '2026-10-01',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'landing-page-design'],
+    body: `
+<p>For many local searches, your Google Business Profile photos are the first look a customer gets at your business, often before they ever see your website. They help people recognise your shopfront, judge the quality of your work and decide whether to call. Our <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers the whole profile, and our guide to <a href="/blog/google-business-profile-posts/">posts, offers and keeping your profile active</a> covers regular updates. This article goes deeper on photos: what to add, how often, how to handle customer photos and which popular tips to ignore.</p>
+
+<h2>Why photos matter on your profile</h2>
+<p>When someone compares three businesses in the map results, photos answer questions the text can't. Does the clinic look clean? Is the restaurant right for a family dinner? Has this contractor done jobs like mine? A profile with only a logo and one blurry exterior shot makes people wonder whether the business is still open.</p>
+<p>Be realistic about what photos do for rankings. Google suggests adding photos as part of keeping your profile complete, but it describes local results as based mainly on relevance, distance and prominence. Think of photos as the way you win the click, the call and the visit from people who are already looking at your profile.</p>
+
+<h2>Cover photo and logo</h2>
+<ul>
+  <li><strong>Logo:</strong> a clean, square version of your logo that's readable at small sizes and matches your website and signage</li>
+  <li><strong>Cover photo:</strong> the image that best represents your business at a glance, such as your shopfront, your dining area, your team at work or a signature project; choose a sharp, well-lit landscape photo without text on it</li>
+</ul>
+<p>Google doesn't always show your chosen cover photo first. It may display a different image, sometimes one a customer uploaded, if it judges that more relevant to the search. You can't fully control this, but a strong set of photos across every type means whichever one appears still represents you well.</p>
+
+<h2>Which photos to add</h2>
+<table>
+  <thead>
+    <tr><th>Photo type</th><th>What it tells customers</th><th>Ideas</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Exterior</td><td>How to recognise you when they arrive</td><td>Shopfront and signboard from the street, the building entrance, the floor sign or gate</td></tr>
+    <tr><td>Interior</td><td>What it's like inside</td><td>Reception or waiting area, showroom, seating, treatment rooms, workspaces</td></tr>
+    <tr><td>Team</td><td>Who they'll deal with</td><td>Owner and staff, the doctor in the clinic, technicians in uniform</td></tr>
+    <tr><td>At work</td><td>How you do the job</td><td>An installation in progress, a chef in the kitchen, a stylist with a client (with consent)</td></tr>
+    <tr><td>Work and products</td><td>What they'll get</td><td>Finished projects, before-and-after shots, best-selling products, popular dishes</td></tr>
+  </tbody>
+</table>
+<p>Depending on your category, Google may offer extra photo types such as food and drink, rooms or products. Whatever the type, use real photos of your own business. Stock images, text-heavy posters and photos of somewhere else don't belong on your profile, and Google's guidelines ask for photos that represent reality without heavy filters or editing.</p>
+<p>Service-area businesses without a shopfront can skip the exterior and focus on branded vehicles, uniforms, the team on site and finished jobs.</p>
+
+<h2>Taking photos that work</h2>
+<ul>
+  <li>Shoot in daylight and keep the subject in focus; a recent phone is fine</li>
+  <li>Tidy up first: clear counters, switch on the lights and move clutter out of frame</li>
+  <li>Get permission from customers, patients and staff before photographing them, and take extra care with children</li>
+  <li>Keep photos honest; if the waiting area is small, show it as it is, because customers notice when reality doesn't match</li>
+  <li>Check Google's current help pages for supported file formats and sizes before uploading</li>
+</ul>
+<p>The same photos often work on your website too; see <a href="/blog/prepare-photos-for-website/">how to prepare photos for your website</a>.</p>
+
+<h2>How often to add new photos</h2>
+<p>There's no official number. A steady rhythm works better than uploading a hundred photos once and then forgetting the profile for two years:</p>
+<ul>
+  <li>Add a few new photos whenever something changes: a renovation, new stock, a new menu or a new team member</li>
+  <li>Add photos of recent work as you complete it, especially if you're a contractor or designer</li>
+  <li>Replace photos that are out of date, such as an old signboard, a former staff member or a closed branch</li>
+  <li>Look over the full set every few months as part of your regular profile check</li>
+</ul>
+<p>Recent photos show that the business is active and set accurate expectations. New uploads can take a while to appear, and occasionally one isn't approved; if that happens, check it against Google's photo guidelines and try a better image.</p>
+
+<h2>Customer photos, and reporting bad ones</h2>
+<p>Customers can add photos to your profile, either on their own or with a review. These are often more persuasive than yours because they're unpolished and independent. You can't delete them, but you can manage them:</p>
+<ul>
+  <li>Look through customer photos regularly, not just your own uploads</li>
+  <li>Report photos that break Google's policies, such as offensive content, spam, images of a different business or photos that expose someone's private information</li>
+  <li>Don't report photos just because they're unflattering; an honest photo of a messy counter is a reason to fix the counter</li>
+  <li>Invite happy customers to add a photo with their review, but never offer anything in return</li>
+</ul>
+<p>Reporting doesn't guarantee removal, because Google reviews each report against its own policies.</p>
+
+<h2>Myths to ignore: geotags, file names and daily uploads</h2>
+<p>A lot of photo advice in local SEO isn't backed by evidence:</p>
+<ul>
+  <li><strong>Geotagging:</strong> adding GPS coordinates to photo files before uploading is often sold as a ranking boost. There's no confirmed ranking benefit. Google hasn't said it uses geotags for local rankings, and it's widely reported that location data is stripped from photos when they're uploaded. Your verified address or service area already tells Google where you are.</li>
+  <li><strong>Keyword file names:</strong> renaming files to "best-dentist-in-jaipur.jpg" before uploading them to your profile has no confirmed benefit either. Descriptive file names do help images on your own website, which is a different matter.</li>
+  <li><strong>Uploading every day:</strong> adding large batches of near-identical photos won't make your profile rank higher. Useful, varied photos added over time do more for customers.</li>
+</ul>
+<p>Be wary of anyone selling photo tricks as a shortcut. The reliable local SEO work is in accurate categories and details, genuine reviews and a website that backs up your profile.</p>
+
+<p>Your profile sends visitors to your website, so make sure the page they land on turns that interest into enquiries. See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
 ];

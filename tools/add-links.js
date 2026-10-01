@@ -563,6 +563,10 @@ const LINKS = [
   ['website-for-pet-shops-grooming', '<h2>Selling food and supplies online</h2>', '<p>If dog training or behaviour work is your main service, see the guide to <a href="/blog/website-for-dog-trainers/">websites for dog trainers and behaviourists</a>.</p>\n\n'],
   ['choose-website-colours-fonts', '<h2>Performance</h2>', '<p>Building a Hindi or bilingual site? See <a href="/blog/hindi-devanagari-fonts-website/">choosing and loading Hindi and Devanagari fonts</a> for sizes, line height and testing tips.</p>\n\n'],
   ['woocommerce-seo-guide', '<h2>7. Speed and mobile</h2>', '<p>Product filters are the most common source of these duplicates, since every colour, size and price combination can create a new URL; see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters and faceted search</a>.</p>\n\n'],
+  // Agent 59
+  ['website-trust-signals-checklist', '<h2>Real people and real photos</h2>', '<p>For the contact page itself, from which options to show to setting reply-time expectations, see <a href="/blog/contact-page-that-gets-enquiries/">how to design a contact page that turns visitors into enquiries</a>.</p>\n\n'],
+  ['write-about-page-that-builds-trust', '<h2>Writing tips</h2>', '<p>If you have more than a couple of people, a dedicated team page can carry the detail; see <a href="/blog/meet-the-team-page/">how to create a meet the team page</a>.</p>\n\n'],
+  ['google-business-profile-checklist', '<h2>Reviews: the biggest ongoing factor</h2>', '<p>For which photos to add, choosing a cover and logo, handling customer photos and myths like geotagging, see <a href="/blog/google-business-profile-photos/">Google Business Profile photos explained</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
