@@ -499,6 +499,10 @@ const LINKS = [
   ['website-for-construction-companies', '<h2>Essential pages</h2>', '<p>Electrical contracting firms are judged on licences, safety and after-sales support too; see <a href="/blog/website-for-electrical-contractors/">websites for electrical contractors</a>.</p>\n\n'],
   ['website-for-logistics-transport-companies', '<h2>Essential pages</h2>', '<p>If storage space is your main business rather than transport, see <a href="/blog/website-for-cold-storage-warehousing/">websites for cold storage and warehousing companies</a>.</p>\n\n'],
   ['website-for-taxi-car-rental', '<h2>Popular routes and services</h2>', '<p>If tempo travellers, mini buses and coaches for groups make up most of your fleet, see <a href="/blog/website-for-tempo-traveller-bus-rental/">websites for tempo traveller and bus rental operators</a>.</p>\n\n'],
+  // Agent 45
+  ['website-for-cctv-security-installers', '<h2>Show the brands you work with</h2>', '<p>If fire alarms, extinguishers and hydrant systems are a large part of your work, see <a href="/blog/website-for-fire-safety-companies/">websites for fire safety and fire protection companies</a>.</p>\n\n'],
+  ['website-for-it-hardware-computer-dealers', '<h2>Trust signals that matter</h2>', '<p>Corporate clients replacing old machines often ask about safe disposal. If e-waste collection and recycling is your main business, see <a href="/blog/website-for-recycling-ewaste-companies/">websites for scrap, recycling and e-waste companies</a>.</p>\n\n'],
+  ['wordpress-backup-restore-guide', '<h2>How to restore safely</h2>', '<p>For a closer look at host backups versus tools such as UpdraftPlus, BlogVault and Duplicator, see <a href="/blog/wordpress-backup-plugins-compared/">WordPress backup plugins compared</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
