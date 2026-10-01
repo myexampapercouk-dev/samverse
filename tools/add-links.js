@@ -615,6 +615,10 @@ const LINKS = [
   ['hostinger-website-slow-fix', '<h2>2. Check resource usage in hPanel</h2>', '<p>To measure server response time properly and work through the causes in order, see <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time (TTFB) on WordPress</a>.</p>\n\n'],
   ['fix-lcp-largest-contentful-paint', '<h2>Confirm the fix worked</h2>', '<p>For a step-by-step guide to critical CSS, deferring scripts and checking that menus and forms still work, see <a href="/blog/eliminate-render-blocking-resources/">how to eliminate render-blocking resources in WordPress</a>.</p>\n\n'],
   ['website-speed-test-tools-explained', '<h2>Don\'t chase 100</h2>', '<p>Seeing "reduce unused CSS" or "reduce unused JavaScript" in that list? Read <a href="/blog/reduce-unused-css-javascript-wordpress/">how to reduce unused CSS and JavaScript in WordPress</a> first, as not every warning is worth chasing.</p>\n\n'],
+  // Agent 71
+  ['respond-to-website-enquiries-fast', '<h2>Build the website around fast replies</h2>', '<p>For a fuller routine covering alerts, auto-replies, lead ownership and a day-by-day follow-up sequence, see <a href="/blog/follow-up-website-leads-fast/">how to follow up website leads properly</a>.</p>\n\n'],
+  ['show-prices-on-website', '<h2>Give prices context</h2>', '<p>If a calculator suits your business, see <a href="/blog/website-calculators-lead-generation/">how to use website calculators to generate leads</a> with honest, visible assumptions.</p>\n\n'],
+  ['multi-step-forms-lead-qualification', '<h2>Qualifying questions that actually help</h2>', '<p>The same easy-first pattern works for product and service finders; see <a href="/blog/website-quiz-lead-generation/">using website quizzes to generate leads</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
