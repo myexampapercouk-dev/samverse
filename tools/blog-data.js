@@ -1992,6 +1992,8 @@ module.exports = [
   <li>Keep access and credentials organised and secure</li>
 </ul>
 
+<p>Before any client review, run your own QA pass on the staging build; this <a href="/blog/website-qa-checklist-before-launch-agencies/">website QA checklist for agencies</a> covers what to check and how to log issues.</p>
+
 <h2>Is white-label right for your agency?</h2>
 <p>If you regularly turn down or delay website projects, or your team spends more time building than selling and strategising, white-label development can help you grow without the overhead of new hires. Learn how I work with agencies on <a href="/wordpress-developer-for-agencies/">white-label WordPress development</a>, or see examples of agency websites like <a href="/work/streak-creative/">Streak Creative</a> and <a href="/work/third-eye-social/">Third Eye Social</a>.</p>
 `,
@@ -14810,6 +14812,8 @@ module.exports = [
   <li>Will another developer maintain it later?</li>
 </ul>
 
+<p>Agencies handing a build to an outside developer should settle these answers before work starts; the <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a> covers everything else to send.</p>
+
 <h2>Prepare the design well</h2>
 <p>Whatever the approach, well-organised Figma files make the build faster and more accurate; see the <a href="/blog/figma-to-wordpress-designer-guide/">Figma handoff guide</a>.</p>
 
@@ -24011,6 +24015,8 @@ Template: astra
   </tbody>
 </table>
 <p>Many businesses combine them: good hosting for the server, and a developer for everything inside WordPress.</p>
+
+<p>Agencies often deliver maintenance through a white-label partner working behind their brand; if you run an agency, see <a href="/blog/agency-wordpress-care-plans/">how to offer WordPress care plans to your clients</a>.</p>
 
 <h2>What a good first month looks like</h2>
 <ol>
@@ -35557,6 +35563,293 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Any of these deserves a proper security check, not just a bulk delete. If you run a store, the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a> is a good place to start.</p>
 
 <p>Need fake sign-ups stopped without blocking real customers? I set this up as part of <a href="/woocommerce-developer/">WooCommerce development</a>, and if something looks more serious, I can investigate through <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'agency-wordpress-care-plans',
+    seoTitle: 'White-Label WordPress Care Plans for Agencies',
+    title: 'White-Label WordPress Care Plans: What Agencies Can Offer Clients',
+    description: 'How agencies can offer WordPress care plans under their own brand: what to include, tiers by scope, client reports, exclusions and working with a partner.',
+    date: '2026-10-01',
+    category: 'Agencies',
+    related: ['wordpress-developer-for-agencies', 'wordpress-maintenance'],
+    body: `
+<p>For most agency websites, launch isn't the end. A few weeks later the client wants a new team photo, a plugin needs updating, or a form quietly stops sending emails. A care plan turns that scattered after-launch work into a defined monthly service, and a white-label partner can handle the technical side while your client only ever deals with your agency. This guide covers what to include, how to structure tiers and what to leave out. For outsourcing the build itself, see <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development</a>.</p>
+
+<h2>Why care plans suit agencies</h2>
+<ul>
+  <li><strong>Recurring work:</strong> predictable monthly income alongside one-off projects</li>
+  <li><strong>The relationship continues:</strong> clients stay with you instead of drifting to whoever fixes their site next</li>
+  <li><strong>Fewer emergencies for your designers:</strong> updates, backups and monitoring happen on schedule, not in a panic</li>
+  <li><strong>Your portfolio stays healthy:</strong> a slow or hacked site you built still reflects on you</li>
+  <li><strong>A natural route to new projects:</strong> regular contact brings up needs for landing pages, redesigns or SEO</li>
+</ul>
+
+<h2>What a care plan includes</h2>
+<p>The core is similar for most WordPress sites. The table shows what the partner does and what your client actually sees.</p>
+<table>
+  <thead><tr><th>Task</th><th>What the work involves</th><th>What the client sees</th></tr></thead>
+  <tbody>
+    <tr><td>Updates</td><td>WordPress core, plugins and theme updated on a schedule; bigger updates tested on staging first</td><td>An update summary in the monthly report</td></tr>
+    <tr><td>Backups</td><td>Automatic off-site backups with an agreed retention period, and restores tested from time to time</td><td>Confirmation that backups ran and were checked</td></tr>
+    <tr><td>Uptime monitoring</td><td>Regular automated checks, with alerts going to the partner and your team</td><td>An uptime record, with any downtime explained</td></tr>
+    <tr><td>Security</td><td>Firewall, malware scanning, login protection, two-factor authentication for admins and a review of user accounts</td><td>Security status and anything found</td></tr>
+    <tr><td>Functional checks</td><td>Test form submissions, and checkout for stores, after updates</td><td>Confidence that enquiries and orders still arrive</td></tr>
+    <tr><td>Small edits</td><td>Text, image and price changes, a new team member or a blog post upload, within an agreed time allowance</td><td>Requests completed, listed in the report</td></tr>
+    <tr><td>Renewals</td><td>Tracking domain, SSL and premium licence expiry dates</td><td>Reminders in advance, with no surprise expiries</td></tr>
+  </tbody>
+</table>
+<p>For the full monthly task list from a business owner's point of view, see <a href="/blog/monthly-website-maintenance-plan/">what a monthly maintenance plan should include</a>.</p>
+
+<h2>Structuring tiers by scope</h2>
+<p>Tiers work best when they differ in what's covered and how fast you respond, not just in price. A common structure has three levels:</p>
+<table>
+  <thead><tr><th>Tier</th><th>Suited to</th><th>Typically covers</th></tr></thead>
+  <tbody>
+    <tr><td>Essential</td><td>Brochure sites that rarely change</td><td>Updates, backups, uptime and security monitoring, and a short monthly report</td></tr>
+    <tr><td>Growth</td><td>Lead-generation sites that change often</td><td>Everything in Essential, plus a monthly allowance for small edits, form testing, speed checks and a Search Console review</td></tr>
+    <tr><td>Commerce or Priority</td><td>WooCommerce stores and business-critical sites</td><td>Everything in Growth, plus more frequent backups, checkout testing after every update and faster agreed response times</td></tr>
+  </tbody>
+</table>
+<p>You set your own prices, but the partner's cost will depend on site size, the number of plugins, whether it's a store and the response times you promise. Decide these points upfront:</p>
+<ul>
+  <li><strong>What counts as a small edit:</strong> for example, a task that fits within a set amount of time and needs no new design work</li>
+  <li><strong>Unused time:</strong> does it roll over or reset each month?</li>
+  <li><strong>Response times:</strong> separate targets for emergencies (site down, hacked) and routine requests</li>
+  <li><strong>Onboarding:</strong> sites you didn't build need a health check and any urgent fixes before they join a plan</li>
+</ul>
+
+<h2>How the partner works behind your brand</h2>
+<ul>
+  <li><strong>Requests come to you:</strong> clients email your support address or helpdesk, and you pass requests to the partner through a shared project tool</li>
+  <li><strong>No direct contact:</strong> the partner never emails or calls your clients unless you've agreed otherwise, and this is written into an NDA with a non-solicitation clause</li>
+  <li><strong>Separate logins:</strong> the partner gets their own administrator account on each site, never a shared password, so activity is traceable and access can be removed cleanly</li>
+  <li><strong>Branded tools:</strong> several maintenance dashboards and reporting tools let you add your own logo and colours; check current plans</li>
+  <li><strong>An emergency path:</strong> agree who receives downtime alerts out of hours and who tells the client</li>
+  <li><strong>A site register:</strong> one document per client listing hosting, DNS, plugins, licences and who owns each account</li>
+</ul>
+
+<h2>Reporting to clients</h2>
+<p>The monthly report is the only part of maintenance most clients ever see, so it carries a lot of weight. Keep it short, branded as your agency and written in plain language:</p>
+<ol>
+  <li>A two-line summary at the top: all healthy, or what needs attention</li>
+  <li>Updates applied, and anything that needed fixing afterwards</li>
+  <li>Backup status and uptime for the month</li>
+  <li>Security scan results</li>
+  <li>Edits completed from the client's requests</li>
+  <li>Upcoming renewals and recommendations</li>
+</ol>
+<p>A practical split is for the partner to prepare the data and a draft, and for your account manager to review it, add context and send it. Recommendations are often where the next project starts, so don't skip them.</p>
+
+<h2>What's excluded</h2>
+<p>Many disagreements about care plans come from unspoken assumptions about scope. Spell out what isn't covered, both in the plan document and in your client contract:</p>
+<ul>
+  <li>New pages, new features and redesigns</li>
+  <li>Content writing, ongoing SEO campaigns and ad management, unless you sell these separately</li>
+  <li>Hosting fees and premium plugin licences, unless the plan explicitly includes them</li>
+  <li>Fixing problems caused by changes made outside the plan, such as a client installing new plugins</li>
+  <li>Malware clean-up: some plans include it and some charge separately, so say which yours does</li>
+  <li>Outages at third-party services such as hosting providers or payment gateways, which you can monitor but not fix</li>
+</ul>
+<p>Clients often mix up bugs and change requests; <a href="/blog/website-bug-vs-change-request/">bug or change request?</a> is a useful explainer to share with them.</p>
+
+<h2>Getting started</h2>
+<p>Start small. Put two or three existing clients on a plan, run it with your partner for a few months, and refine the request process and report before offering it more widely. On new projects, offer the plan at handover, when its value is easiest to explain and the site is in its best shape.</p>
+
+<p>I work with agencies on white-label maintenance as well as builds, under your brand and without contacting your clients. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> and <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'agency-developer-handoff-checklist',
+    seoTitle: 'Agency Handoff Checklist for WordPress Builds',
+    title: 'Agency Handoff Checklist: What to Give Your WordPress Developer',
+    description: 'What an agency should give a WordPress developer before a build: final designs with states, licences, copy, sitemap, integrations, access and sign-off criteria.',
+    date: '2026-10-01',
+    category: 'Agencies',
+    related: ['wordpress-developer-for-agencies', 'figma-to-wordpress'],
+    body: `
+<p>When an agency outsources a WordPress build, most delays don't come from the code. They come from missing pieces: a font nobody licensed, a form nobody specified, hosting access that arrives a week late. This checklist covers everything to hand your development partner once the project is sold and the design is approved. It's different from the <a href="/blog/website-brief-template/">website brief template</a>, which helps a business get an accurate quote; this is the full package for a project that's ready to build.</p>
+
+<h2>1. Final design files, including every state</h2>
+<ul>
+  <li>One approved Figma or XD file, with final frames clearly labelled and explorations archived or moved to a separate page</li>
+  <li>Desktop and mobile frames for every page, and tablet frames where layouts are complex</li>
+  <li><strong>Interactive states:</strong> hover, focus and active for buttons and links, open menus and dropdowns, and sticky header behaviour</li>
+  <li><strong>Form states:</strong> validation errors, success messages and disabled buttons</li>
+  <li><strong>Easily forgotten templates:</strong> blog post, blog archive, search results, 404 page, legal pages and, for stores, product, category, cart and checkout</li>
+  <li><strong>Empty states:</strong> no search results, an empty cart, a category with no posts yet</li>
+  <li>Inspect or Dev Mode access for the developer</li>
+</ul>
+<p>How the file itself should be set up, with styles, components and spacing, is covered in the <a href="/blog/figma-to-wordpress-designer-guide/">Figma to WordPress handoff guide</a>. Share it with your designers.</p>
+
+<h2>2. Assets, fonts and licences</h2>
+<ul>
+  <li>Logos and icons as SVG, plus a favicon</li>
+  <li>Photos at full resolution; the developer will resize and compress them</li>
+  <li>Video files or embed links, and any animation files</li>
+  <li><strong>Fonts:</strong> Google Fonts names, or font files with a web licence that covers the client's domain. A desktop licence bought for design work doesn't always cover web use, so check the foundry's terms.</li>
+  <li><strong>Stock images:</strong> licence details, and who holds each licence</li>
+  <li><strong>Premium themes and plugins:</strong> who buys them, and whether licences sit in the client's name or the agency's</li>
+</ul>
+<p>Licensing gaps tend to surface after launch, when they're awkward to fix, so settle them in the handoff.</p>
+
+<h2>3. Final copy and the sitemap</h2>
+<ul>
+  <li>Approved copy for every page, in a document that uses the same section names as the design</li>
+  <li>SEO titles and meta descriptions, if your agency writes them</li>
+  <li><strong>A sitemap:</strong> every page, its URL slug, its parent page, and the header and footer menus</li>
+  <li><strong>For redesigns:</strong> a redirect map listing old URLs and their new equivalents</li>
+  <li><strong>Content entry:</strong> who adds content (the developer, your team or the client), including any blog posts or products being migrated</li>
+</ul>
+<p>If copy isn't final, say which pages will change and roughly by how much. Long headings and extra paragraphs can break layouts that looked fine with placeholder text.</p>
+
+<h2>4. Functionality notes and integrations</h2>
+<table>
+  <thead><tr><th>Item</th><th>What to specify</th></tr></thead>
+  <tbody>
+    <tr><td>Forms</td><td>Fields, which are required, who receives notifications, autoresponder text and the thank-you page</td></tr>
+    <tr><td>Integrations</td><td>CRM, email marketing, booking, payments, WhatsApp and maps, with accounts or API access ready</td></tr>
+    <tr><td>Tracking</td><td>Google Analytics 4, Tag Manager, ad pixels and the events to track</td></tr>
+    <tr><td>Plugins</td><td>Any the client already pays for or insists on, and any to avoid</td></tr>
+    <tr><td>Editing</td><td>Which sections the client must be able to edit, and whether they expect Elementor or the block editor</td></tr>
+    <tr><td>Special features</td><td>Multilingual content, filters, calculators, member areas or store rules</td></tr>
+    <tr><td>Animations</td><td>What moves, when, and on which devices</td></tr>
+  </tbody>
+</table>
+<p>The editing question shapes the whole build approach; see <a href="/blog/figma-to-wordpress-approaches/">page builder, block theme or custom theme</a>.</p>
+
+<h2>5. Hosting and account access</h2>
+<ul>
+  <li><strong>Staging:</strong> agree where the site is built: the partner's staging server, yours or the client's hosting</li>
+  <li><strong>Hosting:</strong> access to the client's hosting for launch, or a decision on who sets it up</li>
+  <li><strong>Domain and DNS:</strong> usually needed only at launch, but find out early who controls them</li>
+  <li><strong>Third-party accounts:</strong> Analytics, Tag Manager, Search Console, reCAPTCHA, email sending (SMTP) and any integration logins</li>
+  <li><strong>Existing site:</strong> for redesigns, admin access and a recent backup</li>
+</ul>
+<p>Share credentials through a password manager rather than chat or email, and create separate user accounts for the partner instead of passing on the client's own login.</p>
+
+<h2>6. Acceptance criteria and a browser and device list</h2>
+<p>Agree what "done" means before the build starts, not during review:</p>
+<ul>
+  <li><strong>Design fidelity:</strong> what counts as a match, and how small differences between design tool and browser rendering are handled</li>
+  <li><strong>Browsers and devices:</strong> a written list, such as current Chrome, Safari, Firefox and Edge, plus an iPhone and an Android phone, and anything else the client's audience relies on</li>
+  <li><strong>Performance:</strong> which key pages will be tested in PageSpeed Insights, and what result is expected</li>
+  <li><strong>Accessibility:</strong> a baseline such as keyboard navigation, readable contrast, alt text and labelled form fields</li>
+  <li><strong>SEO basics:</strong> titles, headings, redirects and the XML sitemap</li>
+  <li><strong>Out of scope:</strong> anything the client might assume is included</li>
+</ul>
+
+<h2>7. Timeline and review rounds</h2>
+<ol>
+  <li>A kick-off call to walk through the handoff and answer questions</li>
+  <li>The homepage or first key template, built for early feedback</li>
+  <li>The remaining pages, built on staging</li>
+  <li>Your agency's internal QA</li>
+  <li>A client review round, with consolidated feedback</li>
+  <li>Fixes, a final check and launch</li>
+</ol>
+<p>State how many review rounds are included, how feedback is delivered (one consolidated list, with screenshots) and the response time each side commits to. Name one contact on each side, and agree overlapping working hours if you're in different time zones. Build in a buffer, because content and client approvals are what most often slip. Sharing <a href="/blog/give-website-feedback-developer/">how to give clear website feedback</a> with your clients helps keep each round focused.</p>
+
+<p>I build WordPress sites from Figma for agencies, white-label and behind your brand. See <a href="/figma-to-wordpress/">Figma to WordPress</a> and <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>.</p>
+`,
+  },
+  {
+    slug: 'website-qa-checklist-before-launch-agencies',
+    seoTitle: 'Agency Website QA Checklist Before Client Review',
+    title: 'Website QA Checklist for Agencies: What to Check Before Client Review',
+    description: 'An internal QA checklist for agencies to run on a WordPress build before client review: design, responsive, forms, speed, SEO, accessibility and issue logging.',
+    date: '2026-10-01',
+    category: 'Agencies',
+    related: ['wordpress-developer-for-agencies', 'elementor-developer'],
+    body: `
+<p>When your development partner says a build is ready, it's tempting to forward the staging link straight to the client. Resist it. Clients judge the whole project on that first review, and a broken form or a stretched image costs more trust than it takes to fix. This is the internal QA checklist to run before the client sees anything. It's different from the <a href="/blog/website-launch-checklist/">website launch checklist</a>, which covers going live; this one happens earlier, on staging, so the client review can focus on content and feel rather than bugs.</p>
+
+<h2>Who runs QA, and when</h2>
+<ul>
+  <li><strong>When:</strong> after the developer has done their own testing and marked the build ready, and before the client gets the link</li>
+  <li><strong>Who:</strong> someone who didn't build it. The designer is best placed to check fidelity, and a project manager can test functionality.</li>
+  <li><strong>Where:</strong> on a password-protected, noindexed staging site; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
+  <li><strong>Timing:</strong> leave room for a fix round before the client review date, not after it</li>
+</ul>
+
+<h2>Design fidelity</h2>
+<ul>
+  <li>Compare each page with its Figma frame at the same width: spacing, font sizes, weights, line heights and colours</li>
+  <li>Check interactive states: hover, focus, open menus, accordions and tabs</li>
+  <li>Look for placeholder text, dummy images and leftover demo content</li>
+  <li>Check image crops, sharpness and aspect ratios, especially where real photos replaced design mock-ups</li>
+  <li>Review templates beyond the main pages: blog post, archive, search results, 404 and legal pages</li>
+  <li>Check the favicon and the social share image</li>
+</ul>
+<p>Side-by-side screenshots of design and build make differences easy to spot and easy to report.</p>
+
+<h2>Responsive and cross-browser checks</h2>
+<table>
+  <thead><tr><th>Check</th><th>How to do it</th></tr></thead>
+  <tbody>
+    <tr><td>Breakpoints</td><td>Resize the browser slowly from wide to narrow and watch for layouts breaking between the designed widths</td></tr>
+    <tr><td>Real phones</td><td>At least one iPhone in Safari and one Android phone in Chrome, since browser emulation misses some issues</td></tr>
+    <tr><td>Browsers</td><td>Everything on the agreed browser list, typically current Chrome, Safari, Firefox and Edge</td></tr>
+    <tr><td>Navigation</td><td>The mobile menu opens, closes and scrolls, and sticky headers don't cover content</td></tr>
+    <tr><td>Touch</td><td>Buttons and links are big enough to tap and not crowded together</td></tr>
+    <tr><td>Overflow</td><td>No sideways scrolling, overlapping text or cut-off headings</td></tr>
+  </tbody>
+</table>
+
+<h2>Forms, emails and analytics</h2>
+<ul>
+  <li>Submit every form with test data, including deliberate mistakes to see the error messages</li>
+  <li>Confirm the thank-you page or message appears</li>
+  <li>Check notification emails reach the right inbox and don't land in spam; on staging they may go to a test address, so note what changes at launch</li>
+  <li>Test autoresponders, CRM or Google Sheets connections, and any booking or payment flows in test mode</li>
+  <li>Tap click-to-call, WhatsApp and email links on a phone</li>
+  <li>If analytics is set up on staging, confirm key events fire using DebugView in Google Analytics 4 or Tag Assistant, and make sure staging visits won't pollute live reports</li>
+  <li>If there's a cookie consent banner, check it appears and that tags respect the visitor's choice</li>
+</ul>
+
+<h2>Speed basics</h2>
+<ul>
+  <li>Run key templates through PageSpeed Insights, or Lighthouse in Chrome's developer tools if staging is password-protected</li>
+  <li>Look for oversized or uncompressed images</li>
+  <li>Check how many font families and weights load</li>
+  <li>Question heavy sliders, background videos and third-party widgets</li>
+  <li>Remember that staging may not have the live server's caching or CDN, so treat results as a guide and recheck after launch</li>
+</ul>
+
+<h2>SEO basics</h2>
+<ul>
+  <li>Each key page has a unique title and meta description</li>
+  <li>One H1 per page, and headings chosen for structure rather than size</li>
+  <li>Alt text on images that carry meaning</li>
+  <li>URL slugs match the agreed sitemap</li>
+  <li>For redesigns, the redirect map is ready and checked against the old site's important pages</li>
+  <li>No links or images hard-coded to the staging domain</li>
+  <li><strong>Noindex:</strong> staging should be noindexed now, so add removing it to the launch task list. A site that goes live with "Discourage search engines" still ticked won't be indexed, and a redesigned site can drop out of search results.</li>
+</ul>
+
+<h2>Accessibility basics</h2>
+<ul>
+  <li>Tab through each page with the keyboard: is the focus visible, and can you use menus, forms and pop-ups?</li>
+  <li>Check the colour contrast of text and buttons, especially text over images</li>
+  <li>Form fields have proper labels, not just placeholder text</li>
+  <li>Link text says where it goes, rather than "click here"</li>
+  <li>Zoom the browser to 200% and check nothing breaks or overlaps</li>
+</ul>
+<p>For a deeper review, use the <a href="/blog/website-accessibility-audit-checklist/">website accessibility audit checklist</a>.</p>
+
+<h2>Logging and tracking issues</h2>
+<p>A QA pass is only useful if the findings reach the developer clearly. Keep one list, in a spreadsheet, your project tool or a visual feedback tool, and record for each issue:</p>
+<ul>
+  <li>Page URL, device and browser</li>
+  <li>A screenshot with the problem marked</li>
+  <li>What you expected, and what happened instead</li>
+  <li><strong>Severity:</strong> blocker, major, minor or polish</li>
+  <li><strong>Type:</strong> bug, design mismatch or new request, since new requests may fall outside the agreed scope</li>
+  <li><strong>Status:</strong> open, fixed, retested or closed</li>
+</ul>
+<p>Send issues in one batch rather than a trickle of messages, retest every fix, and only then share the staging link with your client. Save the sheet as a template for the next project. The same habits help when your client's feedback arrives; see <a href="/blog/give-website-feedback-developer/">giving clear website feedback</a>.</p>
+
+<p>I test agency builds against a checklist like this before handing them over, and a second pass from your team is always worth it. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> and <a href="/elementor-developer/">Elementor development</a>.</p>
 `,
   },
 ];

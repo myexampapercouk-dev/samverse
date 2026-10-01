@@ -607,6 +607,10 @@ const LINKS = [
   ['secure-wordpress-login', '<h2>7. Add a firewall</h2>', '<p>Not sure whether anything on your site still needs it? See <a href="/blog/wordpress-xmlrpc-explained/">WordPress XML-RPC explained</a> for how to check and how to disable it safely.</p>\n\n'],
   ['regain-website-access-old-developer', '<h2>Step 6: Consider moving</h2>', '<p>To go through every remaining account properly, follow this <a href="/blog/wordpress-user-accounts-audit/">WordPress user accounts audit</a>.</p>\n\n'],
   ['stop-contact-form-spam', '<h2>What to avoid</h2>', '<p>Getting fake user accounts rather than fake messages? See <a href="/blog/stop-spam-user-registrations-wordpress/">how to stop spam user registrations</a>.</p>\n\n'],
+  // Agent 70
+  ['choose-wordpress-maintenance-provider', '<h2>What a good first month looks like</h2>', '<p>Agencies often deliver maintenance through a white-label partner working behind their brand; if you run an agency, see <a href="/blog/agency-wordpress-care-plans/">how to offer WordPress care plans to your clients</a>.</p>\n\n'],
+  ['figma-to-wordpress-approaches', '<h2>Prepare the design well</h2>', '<p>Agencies handing a build to an outside developer should settle these answers before work starts; the <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a> covers everything else to send.</p>\n\n'],
+  ['white-label-wordpress-development-agencies', '<h2>Is white-label right for your agency?</h2>', '<p>Before any client review, run your own QA pass on the staging build; this <a href="/blog/website-qa-checklist-before-launch-agencies/">website QA checklist for agencies</a> covers what to check and how to log issues.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
