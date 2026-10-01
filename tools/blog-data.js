@@ -309,6 +309,8 @@ module.exports = [
   <li><strong>Memberships, awards and affiliations.</strong> Hospital associations, professional bodies and recognitions.</li>
 </ol>
 
+<p>Specialists such as orthopaedic surgeons, cardiologists and gynaecologists need more, including procedure pages and a second opinion page; see <a href="/blog/website-for-specialist-doctors/">websites for specialist doctors</a>.</p>
+
 <h2>Information patients need</h2>
 <ol start="5">
   <li><strong>Treatments and services pages.</strong> A separate page for each major treatment explains it clearly and helps you rank for those searches.</li>
@@ -7377,6 +7379,8 @@ module.exports = [
 <h2>Emergency information first</h2>
 <p>Emergency phone number, ambulance contact and directions should be visible on every page, especially on mobile. Nobody should have to search for them.</p>
 
+<p>Private ambulance operators need the same emergency-first approach across their whole website; see <a href="/blog/website-for-ambulance-services/">websites for private ambulance services</a>.</p>
+
 <h2>Departments and specialities</h2>
 <p>A page for each department (cardiology, orthopaedics, obstetrics and so on) covering conditions treated, procedures, facilities, the doctors in that department, and how to book.</p>
 
@@ -7958,6 +7962,8 @@ module.exports = [
   <li>WhatsApp for questions</li>
   <li>Online fee payment; see <a href="/blog/accept-online-payments-wordpress-india/">online payments on WordPress</a></li>
 </ul>
+
+<p>Running abacus, robotics, coding or art classes, or a summer camp? See <a href="/blog/website-for-kids-activity-classes/">websites for kids' activity classes and summer camps</a>.</p>
 
 <h2>Show your academy in action</h2>
 <p>Photos and short videos of classes, recitals and student performances (with parental consent for minors) are your strongest content.</p>
@@ -10718,6 +10724,8 @@ module.exports = [
   <li>Safety measures, first aid and supervision</li>
   <li>Location, timings and parking</li>
 </ul>
+
+<p>If your academy also sells kit and equipment, or works closely with a local sports shop, see <a href="/blog/website-for-sports-bicycle-stores/">websites for sports goods and bicycle stores</a>.</p>
 
 <h2>Fees and enrolment</h2>
 <ul>
@@ -19371,6 +19379,8 @@ Template: astra
 </ul>
 <p>The details printed on your packs, such as manufacturer, net quantity, price and dates, should generally be visible on the product page too. Your adviser can confirm exactly what your products need.</p>
 
+<p>Fragrance brands face their own version of these questions, from describing scents honestly to shipping alcohol-based perfumes; see <a href="/blog/website-for-perfume-fragrance-brands/">websites for perfume, attar and fragrance brands</a>.</p>
+
 <h2>Reviews and social proof, done honestly</h2>
 <ul>
   <li>Ask for a review a couple of weeks after delivery, once customers have actually used the product</li>
@@ -25380,6 +25390,8 @@ Template: astra
 </table>
 <p>Use real photos of your actual stock, not only manufacturer images. Bundles such as a 1BHK starter pack, a bedroom set or a work-from-home desk set suit people setting up a home quickly, so give them their own pages.</p>
 
+<p>If you sell TVs, fridges and washing machines outright rather than renting them, see <a href="/blog/website-for-electronics-appliance-stores/">websites for electronics and home appliance stores</a>.</p>
+
 <h2>Deposits, charges and terms in plain language</h2>
 <p>Rental disputes usually come from terms nobody read. Write a short, clear terms page, with a summary on each product page, covering:</p>
 <ul>
@@ -28497,6 +28509,553 @@ Template: astra
   </tbody>
 </table>
 <p>Backups, update checks and restore testing are part of every <a href="/wordpress-maintenance/">WordPress maintenance</a> plan I run. If your site has already been hacked, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-ambulance-services',
+    title: 'Websites for Private Ambulance Services: What to Include',
+    description: 'How private ambulance services can build a site that gets calls: a 24/7 call button first, clear services, areas covered, real fleet details and honest trust.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'landing-page-design'],
+    body: `
+<p>When someone searches for a private ambulance, they are usually frightened, in a hurry and on a phone. A family member has collapsed, a parent needs moving from one hospital to another, or a discharge has been arranged for this evening. Your website has one main job: get them through to a person who can help, quickly. Everything else on the site supports that call, or helps the people who are planning ahead rather than panicking.</p>
+
+<h2>Put the call button first</h2>
+<p>On every page, the first thing a visitor sees should be your 24/7 number as a large tap-to-call button. On mobile, keep it fixed at the top or bottom of the screen so it never scrolls out of view.</p>
+<ul>
+  <li><strong>One number, answered round the clock.</strong> If calls go to a personal mobile that is sometimes switched off or busy, fix that before you build the website. A call that rings out does more damage than having no site at all.</li>
+  <li><strong>WhatsApp as a second option</strong> for non-urgent bookings such as a scheduled transfer, and for sharing the pickup location. Make it clear that urgent requests should call.</li>
+  <li><strong>Nothing covering the number.</strong> No pop-ups, sliders or chat widgets that a stressed visitor has to close first.</li>
+  <li><strong>Say clearly that you are a private service.</strong> Don't use wording, colours or numbers that suggest you are the government 108 service.</li>
+</ul>
+
+<h2>Explain the services you actually offer</h2>
+<p>"Ambulance service" covers very different needs. Give each service you genuinely provide its own short section or page, so families can tell at a glance whether you can help:</p>
+<table>
+  <thead>
+    <tr><th>Service</th><th>What to explain</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Emergency pickup</td><td>Areas covered, hospitals you usually take patients to, what to do while waiting</td></tr>
+    <tr><td>Hospital-to-hospital transfer</td><td>Vehicle and staff options, paperwork the hospitals need, booking ahead</td></tr>
+    <tr><td>Discharge and home transfer</td><td>Stretcher or wheelchair support, help with stairs, scheduled timings</td></tr>
+    <tr><td>ICU or ventilator ambulance</td><td>Equipment on board, who travels with the patient, notice needed</td></tr>
+    <tr><td>Long-distance transfer</td><td>Inter-city routes, staff changes on long trips, how charges are worked out</td></tr>
+    <tr><td>Event medical standby</td><td>Marathons, concerts, school sports days and corporate events, with a quote form</td></tr>
+    <tr><td>Mortuary van or freezer box</td><td>Described with dignity, on a separate, calm page</td></tr>
+  </tbody>
+</table>
+<p>If you arrange some services through partners, such as air ambulance, say so honestly instead of implying you operate them yourself. Hospitals that run their own ambulances face similar questions; see <a href="/blog/website-for-hospitals/">websites for hospitals</a>.</p>
+
+<h2>Show the areas you cover</h2>
+<p>People search for "ambulance service in {area}" or "ambulance near me", so be specific about where you operate. List your city, the main localities and the highways or routes you serve, and the hospitals you regularly transfer patients to (stated as fact, without their logos unless they agree).</p>
+<p>If you keep vehicles stationed in several parts of the city, a short page for each base can help, but only if it contains real local information. Avoid thin copies of one page with only the area name changed. See <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> for how to rank without a shopfront.</p>
+
+<h2>Explain what happens when someone calls</h2>
+<p>A calm, step-by-step explanation reduces panic and helps your team get the right information faster. Cover:</p>
+<ol>
+  <li><strong>Who answers:</strong> a coordinator or control room, at any hour.</li>
+  <li><strong>What they will ask:</strong> the patient's condition, the exact pickup address with a landmark, and the destination hospital.</li>
+  <li><strong>Dispatch:</strong> the nearest suitable vehicle is sent, and the caller is given an estimated arrival time on the call.</li>
+  <li><strong>What to keep ready:</strong> prescriptions, recent reports, ID and a family member to travel with the patient.</li>
+  <li><strong>Payment:</strong> how charges are worked out (vehicle type, distance, staff and waiting time) and whether you accept UPI, card or cash.</li>
+</ol>
+<p>Avoid promises like "ambulance in 10 minutes". Traffic, weather and vehicle availability change by the hour, and a guarantee you can't keep is misleading at the moment trust matters most. Describe your process honestly instead. If insurance may cover some ambulance charges, suggest that families check with their insurer rather than promising reimbursement.</p>
+
+<h2>Show your real fleet and equipment</h2>
+<p>Families and hospital staff want to know exactly what will arrive. For each type of vehicle you run, list:</p>
+<ul>
+  <li>The vehicle type, such as patient transport, basic life support or advanced life support, using the term that matches how it is actually equipped and staffed</li>
+  <li>Equipment on board, such as oxygen, stretcher, monitor or ventilator, only where it is fitted and maintained</li>
+  <li>Who travels with the patient: driver, trained attendant, paramedic, nurse or doctor, and which of these are available only on request</li>
+</ul>
+<p>Use real photos of your own vehicles, inside and out, rather than stock images of an ambulance you don't own. Update the page when your fleet changes, and if an ICU ambulance needs advance notice, say so.</p>
+
+<h2>Build trust without overpromising</h2>
+<ul>
+  <li><strong>Company details:</strong> registered business name, full address, and any licences or registrations your state requires (check current rules with the local transport and health authorities)</li>
+  <li><strong>Staff training:</strong> describe the first aid, life support or nursing training your team actually has</li>
+  <li><strong>Pricing guidance:</strong> explain what affects the charge and that it is confirmed when booking, because families worry about surprise extras</li>
+  <li><strong>Reviews:</strong> link to your Google reviews and, with permission, share feedback from families or hospitals you work with</li>
+  <li><strong>Tie-ups:</strong> mention hospital, corporate or event partnerships only if they are real and current</li>
+</ul>
+
+<h2>Speed, Google and ads</h2>
+<p>An emergency visitor may be on a weak signal in a hospital corridor or on a highway. Keep the site light: compressed images, few plugins, no autoplay video and no heavy chat widgets. See <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
+<ul>
+  <li><strong>Google Business Profile:</strong> 24-hour opening hours, service areas, real vehicle photos and the same phone number as the website</li>
+  <li><strong>Schema markup</strong> for your business name, phone number and opening hours</li>
+  <li><strong>Ads:</strong> if you run Google Ads for "ambulance near me", send clicks to a focused page with the call button at the top, and track calls so you know which campaigns bring them; see <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a></li>
+</ul>
+
+<p>Need a fast, call-first website or ad landing page for your ambulance service? See <a href="/landing-page-design/">landing page design</a> or <a href="/wordpress-website-for-doctors/">websites for doctors and healthcare providers</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-specialist-doctors',
+    seoTitle: 'Websites for Specialist Doctors: What Patients Look For',
+    title: 'Websites for Specialist Doctors: Credentials, Procedures and Second Opinions',
+    description: 'What specialist doctors need on a website: verifiable credentials, condition and procedure pages, second opinions, hospital affiliations and careful claims.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-for-doctors', 'wordpress-seo-services'],
+    body: `
+<p>Patients rarely find a specialist by chance. A family doctor has suggested seeing an orthopaedic surgeon, a check-up has flagged something for a cardiologist, or a pregnancy needs a gynaecologist the family can trust. By the time they reach your website, they are comparing you with two or three other names, and often a son or daughter in another city is doing the research for a parent.</p>
+<p>This guide covers what a specialist's website needs beyond the basics. For timings, maps, contact buttons and the other essentials every practice needs, start with the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a>.</p>
+
+<h2>What patients check before choosing a specialist</h2>
+<ul>
+  <li>Is this doctor experienced in my specific problem, not just the broad speciality?</li>
+  <li>Do they perform the procedure I've been told I may need?</li>
+  <li>Which hospital would I be admitted to, and does it accept my insurance?</li>
+  <li>Can I get a second opinion before deciding on surgery?</li>
+  <li>When and where can I see the doctor, and how do I book?</li>
+</ul>
+<p>Your site should answer each of these within a click or two of the homepage.</p>
+
+<h2>Credentials that are specific and verifiable</h2>
+<p>Specialists have years of training behind them, and patients want to see it laid out clearly:</p>
+<ul>
+  <li><strong>Degrees in full,</strong> such as MS (Orthopaedics), DM (Cardiology), MD or MS (Obstetrics and Gynaecology) or DNB, with the institution</li>
+  <li><strong>Medical council registration number,</strong> so patients and referring doctors can verify it</li>
+  <li><strong>Fellowships and special training,</strong> for example in joint replacement, interventional cardiology or high-risk pregnancy, with where they were completed</li>
+  <li><strong>Current and past positions,</strong> such as consultant or head of department</li>
+  <li><strong>Areas of focus</strong> within the speciality, such as sports injuries, heart rhythm problems or infertility</li>
+</ul>
+<p>Leave out vague labels like "best surgeon in the city" and awards nobody can check. Precise facts are more convincing, and health is the area where Google's guidelines put the most weight on expertise and trust; see <a href="/blog/eeat-explained-small-business/">E-E-A-T explained</a>.</p>
+
+<h2>Conditions and procedures pages</h2>
+<p>A single "Services" page listing twenty items won't help patients or rank in search. Give the main conditions you treat and the procedures you perform their own pages:</p>
+<table>
+  <thead>
+    <tr><th>Speciality</th><th>Condition pages</th><th>Procedure pages</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Orthopaedics</td><td>Knee arthritis, ligament tears, back pain</td><td>Knee replacement, arthroscopy, fracture fixation</td></tr>
+    <tr><td>Cardiology</td><td>Chest pain, high blood pressure, heart failure</td><td>Echocardiography, TMT, angiography, angioplasty</td></tr>
+    <tr><td>Gynaecology</td><td>PCOS, fibroids, high-risk pregnancy</td><td>Laparoscopic surgery, hysteroscopy, antenatal care</td></tr>
+  </tbody>
+</table>
+<p>Each page should explain, in plain language, what the condition or procedure is, common symptoms or reasons it is recommended, how it is diagnosed, the treatment options (including non-surgical ones where they exist), what recovery generally involves, and the questions patients usually ask. Make clear that every patient is different and a consultation is needed for personal advice. Show the doctor as author or reviewer, with the date the page was last reviewed.</p>
+
+<h2>A clear second opinion page</h2>
+<p>Many patients look for a specialist because they want a second opinion before major surgery or a long course of treatment. A dedicated page makes this easy and signals confidence:</p>
+<ul>
+  <li>What a second opinion includes, and what can't be judged without examining the patient</li>
+  <li>What to bring or send: previous reports, scans, imaging CDs, discharge summaries and current medicines</li>
+  <li>Whether it is available in person, by video consultation or both, and the fee</li>
+  <li>A secure way to share reports, rather than asking patients to send scans to a personal WhatsApp number</li>
+</ul>
+<p>For video consultations, follow the current telemedicine guidelines. Keep the tone respectful towards the patient's current doctor: the aim is to help them decide, not to win them over by criticising someone else.</p>
+
+<h2>Hospital affiliations and where you consult</h2>
+<p>Many specialists see patients at a private clinic in the morning and at one or two hospitals later in the day, and operate somewhere else again. Patients get confused quickly. A "Where I consult" page should list each location with:</p>
+<ul>
+  <li>Days and OPD timings</li>
+  <li>How to book there: your clinic's number or the hospital's appointment desk</li>
+  <li>Address, map link and parking notes</li>
+  <li>Which hospitals you admit patients to and operate at</li>
+</ul>
+<p>State affiliations factually and keep them current; remove a hospital as soon as you stop consulting there, and use hospital logos only with permission. For cashless insurance questions, point patients to the hospital's insurance desk, since the hospital handles it. To see how hospitals present their own departments and doctors, read <a href="/blog/website-for-hospitals/">websites for hospitals</a>.</p>
+
+<h2>Responsible claims and patient stories</h2>
+<p>Careful wording protects both patients and your reputation:</p>
+<ul>
+  <li>No guaranteed outcomes, "painless" promises or success rates you can't support from your own records</li>
+  <li>No "best" or "number one" labels, and no comparisons with other doctors</li>
+  <li>Patient stories and testimonials only with written consent, without identifying details the patient hasn't agreed to share</li>
+  <li>No scans, X-rays or before-and-after images that could identify a patient without consent</li>
+  <li>A clear note about urgent symptoms, especially on cardiology pages: anyone with chest pain right now should go to the nearest emergency department, not fill in a form</li>
+</ul>
+<p>India's medical council rules on professional conduct have long restricted how doctors may promote themselves, and the regulations have been under revision in recent years. Check the current National Medical Commission guidance and your state medical council before publishing, and ask a lawyer if you're unsure.</p>
+
+<h2>Booking and local search</h2>
+<ul>
+  <li><strong>Appointment requests by location,</strong> so the patient picks the clinic or hospital first, then a day</li>
+  <li><strong>Call and WhatsApp buttons</strong> for patients and families who prefer to talk</li>
+  <li><strong>A Google Business Profile</strong> with accurate timings for each location, matching the website</li>
+  <li><strong>Pages that match real searches,</strong> such as "knee replacement surgeon in Pune" or "cardiologist in Indore", built on genuinely useful content</li>
+  <li><strong>Schema markup</strong> for the doctor, the practice and each location</li>
+  <li><strong>Fast, readable pages,</strong> since many visitors are older, or reading on a parent's behalf on a phone</li>
+</ul>
+<p>For a live example of a specialist's website, see the <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta pulmonology clinic</a> case study.</p>
+
+<p>Want a website that presents your expertise clearly and responsibly? See <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>, or <a href="/wordpress-seo-services/">WordPress SEO</a> if your current site isn't being found.</p>
+`,
+  },
+  {
+    slug: 'website-for-kids-activity-classes',
+    title: 'Websites for Kids\' Activity Classes and Summer Camps',
+    description: 'What parents look for on a kids\' activity class or summer camp website: age groups, batches, trial classes, safety, parent updates and children\'s data privacy.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['website-for-schools-and-coaching', 'landing-page-design'],
+    body: `
+<p>Parents looking for an abacus centre, a robotics or coding class, art lessons or a summer camp are usually juggling school timings, travel and a child who may lose interest within a month. They want to know quickly whether your class suits their child's age, fits the week, is safe and is worth trying. A clear website answers those questions before the first phone call, and makes booking a trial class the obvious next step.</p>
+<p>This guide is for enrichment classes and holiday camps. For music and dance, see <a href="/blog/website-for-music-dance-academies/">websites for music and dance academies</a>, and for sport, <a href="/blog/website-for-sports-academies/">websites for sports academies</a>.</p>
+
+<h2>What parents want to know first</h2>
+<ul>
+  <li>Which age group or level is this for, and will my child keep up?</li>
+  <li>What will they actually do and learn in a session?</li>
+  <li>When are the batches, and is there one after school or at the weekend?</li>
+  <li>Where is it, and is there an online option?</li>
+  <li>Who teaches, how many children are in a batch, and how are they supervised?</li>
+  <li>What does it cost, and can we try a class first?</li>
+</ul>
+<p>Answer these on your homepage in short form, with links to the detail.</p>
+
+<h2>Programme pages by activity and age group</h2>
+<p>Give each activity its own page, divided by age group or level, and answer the questions parents actually ask:</p>
+<table>
+  <thead>
+    <tr><th>Activity</th><th>Organise by</th><th>Questions to answer</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Abacus and mental maths</td><td>Level</td><td>How long does each level take? How much practice at home?</td></tr>
+    <tr><td>Robotics</td><td>Age and experience</td><td>Is the kit included? Can my child take projects home?</td></tr>
+    <tr><td>Coding</td><td>Age, from block-based to text-based</td><td>Do we need a laptop at home? What will they build?</td></tr>
+    <tr><td>Art and craft</td><td>Age</td><td>Are materials provided? Is there an exhibition?</td></tr>
+    <tr><td>Summer camp</td><td>Age bands</td><td>What does a day look like? What should they bring?</td></tr>
+  </tbody>
+</table>
+<p>Describe a typical session, the batch size, what's included and how you track progress. Keep outcomes realistic: promises that a class will "boost IQ" or turn every child into a genius can't be backed up, and they put thoughtful parents off. If you award certificates, make clear they come from your centre unless they genuinely come from an outside body.</p>
+
+<h2>Batches, timings and a camp calendar</h2>
+<ul>
+  <li>A simple timetable showing each batch by day, time, age group and mode (at the centre or online)</li>
+  <li>Fees, or at least a starting range, with payment options such as UPI</li>
+  <li>Term dates, holidays and how missed classes can be made up</li>
+  <li>For summer and winter camps: dates, daily hours, a sample day, what to bring, whether snacks are included, and the drop-off and pick-up routine</li>
+  <li>"Seats left" only if it's true and kept up to date</li>
+</ul>
+<p>Build the timetable so your staff can update it in a few minutes. An old timetable or last year's camp dates make parents assume you've closed. Keep one permanent summer camp page and refresh it each year rather than creating a new page every time, so it keeps its place in search; see <a href="/blog/seasonal-festival-campaigns-website/">planning seasonal campaigns</a>.</p>
+
+<h2>Trial classes that turn into enrolments</h2>
+<p>For many parents, a trial class is what turns interest into a decision, so make it the main button on every page. Keep the form short: parent's name, phone number, child's age, activity and preferred slot. Then:</p>
+<ol>
+  <li>Confirm the slot on screen straight away, and on WhatsApp or SMS</li>
+  <li>Send a reminder the day before with the address and what to bring</li>
+  <li>Follow up after the class with suitable batches and fees</li>
+</ol>
+<p>If you run ads for a summer camp or a new batch, send them to a focused landing page with the dates, age groups, fees and a single booking form, rather than your homepage.</p>
+
+<h2>Safety and supervision</h2>
+<p>Parents are handing over their children, so explain plainly how you look after them:</p>
+<ul>
+  <li>How many adults supervise each batch, and who the teachers are</li>
+  <li>Staff background checks and training, if you carry them out</li>
+  <li>Pick-up rules: who can collect a child and how you check</li>
+  <li>First aid arrangements and how parents are contacted if something happens</li>
+  <li>Tool and equipment safety in robotics, and child-safe materials in art</li>
+  <li>For camps: outings, transport, food, allergies and how medical information is handled</li>
+</ul>
+<p>Only describe measures you genuinely have in place. If you have CCTV, you can say so, but never share footage of children online.</p>
+
+<h2>Parent communication</h2>
+<ul>
+  <li>A notices page for holidays, events and schedule changes</li>
+  <li>WhatsApp updates that parents opt into, using broadcast lists where possible so parents' numbers aren't shared with everyone</li>
+  <li>Progress updates, such as level results or project showcases, sent to each parent privately</li>
+  <li>Easy fee payment by UPI, with receipts</li>
+  <li>A parent FAQ covering refunds, missed classes and changing batches</li>
+</ul>
+
+<h2>Children's data and privacy</h2>
+<p>Activity classes collect a lot of personal information: children's names, ages, schools, photos and sometimes medical notes. Handle it carefully:</p>
+<ul>
+  <li>Forms should be filled in by parents and ask only for what you need</li>
+  <li>Publish children's photos, artwork or names only with written parental consent, and avoid pairing full names with photos</li>
+  <li>Keep medical and allergy details off general enquiry forms; store them securely and limit who can see them</li>
+  <li>Aim your marketing at parents, and don't track or target ads at children</li>
+  <li>Publish a clear privacy policy explaining what you collect and why</li>
+</ul>
+<p>India's Digital Personal Data Protection Act has specific requirements for children's data, including verifiable parental consent and limits on tracking and targeted advertising, and its rules are being phased in. Check the current position with a lawyer; for an overview, see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a>.</p>
+
+<h2>Get found by local parents</h2>
+<ul>
+  <li>A complete Google Business Profile with real class photos (with consent), timings and reviews</li>
+  <li>One page per activity, written for searches like "abacus classes in Whitefield" or "summer camp in Noida"</li>
+  <li>A separate page for each branch if you have more than one</li>
+  <li>A fast, mobile-friendly site, since most parents browse on their phones between other tasks</li>
+</ul>
+
+<p>Planning a new website or a summer camp campaign? See <a href="/website-for-schools-and-coaching/">websites for schools and coaching</a> and <a href="/landing-page-design/">landing page design</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-sports-bicycle-stores',
+    seoTitle: 'Websites for Sports Goods and Bicycle Stores',
+    title: 'Websites for Sports Goods and Bicycle Stores: Catalogue, Fitting and Servicing',
+    description: 'How sports goods and bicycle stores can build a website with a clear catalogue, size and fitting guides, servicing bookings, team orders and local SEO.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-seo-services'],
+    body: `
+<p>Sports goods shops and bicycle stores sell products where fit really matters. A cricket bat that's too heavy, running shoes half a size off or a cycle frame that's too big for the rider all lead to unhappy customers and returns. Most buyers now research online before they visit or order, so your website needs to help them choose the right item, check you have it, and book the fitting or servicing that keeps them coming back.</p>
+<p>This guide is for shops that sell sports equipment, fitness gear and bicycles. If you run coaching programmes rather than a store, see <a href="/blog/website-for-sports-academies/">websites for sports academies</a>.</p>
+
+<h2>What sports and cycling customers look for</h2>
+<ul>
+  <li><strong>Range and availability:</strong> do you stock the brand, model and size they want, and is it in stock today?</li>
+  <li><strong>Help choosing:</strong> which bat, racquet, shoe or cycle suits their age, level and budget</li>
+  <li><strong>Prices or price ranges:</strong> enough to know whether a visit is worth it</li>
+  <li><strong>After-sales service:</strong> cycle servicing, racquet stringing, repairs and spares</li>
+  <li><strong>Easy contact:</strong> a WhatsApp button, phone number, store timings and a map</li>
+  <li><strong>Delivery or pickup:</strong> whether you deliver to their area, and whether bicycles arrive assembled</li>
+</ul>
+<p>Parents and first-time buyers need plain-language guidance more than long lists of specifications.</p>
+
+<h2>A catalogue organised the way people shop</h2>
+<p>Customers rarely think in your stock categories. Organise the catalogue around how they search:</p>
+<ul>
+  <li><strong>By sport:</strong> cricket, football, badminton, tennis, table tennis, swimming, fitness and cycling</li>
+  <li><strong>By player:</strong> kids, juniors, adults and women's ranges</li>
+  <li><strong>By level:</strong> beginner, club and advanced, so a new player isn't overwhelmed by professional gear</li>
+  <li><strong>For cycles:</strong> kids' cycles, city and commuter bikes, mountain bikes, road bikes, hybrids and e-bikes, plus helmets, lights, locks and other accessories</li>
+</ul>
+<p>Use filters that match real decisions: size, weight, material, brand and price band. Products sold in several sizes or colours should be one product with options rather than separate listings; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>
+<p>If your online stock isn't synced with your billing software, be honest about it. A "check availability on WhatsApp" button beats taking an order for an item that sold out in the shop yesterday.</p>
+
+<h2>Size and fitting guides that prevent wrong purchases</h2>
+<p>Good fitting information is the most useful content a sports store can publish, and it cuts returns. Sizing differs between brands, so use each manufacturer's own size chart on the product page rather than inventing a universal one.</p>
+<table>
+  <thead><tr><th>Product</th><th>What customers need to know</th><th>What to add on the page</th></tr></thead>
+  <tbody>
+    <tr><td>Bicycles</td><td>Frame or wheel size for the rider's height</td><td>The brand's size chart and a "book a test ride or fitting" button</td></tr>
+    <tr><td>Kids' cycles</td><td>Wheel size by age and height, and whether training wheels are included</td><td>Guidance for parents and an invitation to bring the child in</td></tr>
+    <tr><td>Cricket bats</td><td>Bat size and weight for the player's height and strength</td><td>Size and weight on every listing, and whether knocking-in is offered</td></tr>
+    <tr><td>Racquets</td><td>Weight, balance and grip size</td><td>Specs in plain words, plus stringing options</td></tr>
+    <tr><td>Shoes and clothing</td><td>UK, US or EU sizing and how the brand fits</td><td>The brand's chart, how to measure, and the size exchange policy</td></tr>
+    <tr><td>Helmets and protective gear</td><td>Head or body measurements</td><td>A simple how-to-measure guide</td></tr>
+  </tbody>
+</table>
+<p>Short guides such as "how to choose your first cricket bat" or "which cycle for a seven-year-old" also answer the questions people type into Google, and bring in visitors who are close to buying.</p>
+
+<h2>Servicing, repairs and bookings</h2>
+<p>Servicing brings customers back long after the sale, and it's often what sets a local shop apart from online marketplaces. Give each service its own page or section:</p>
+<ul>
+  <li>Cycle servicing packages, with exactly what each one includes (brakes, gears, chain, wheel truing and so on)</li>
+  <li>Puncture repairs, spare parts and upgrades</li>
+  <li>Racquet stringing, with string types and tension options</li>
+  <li>Bat knocking-in, grip replacement and other equipment care</li>
+  <li>Assembly of cycles and home fitness equipment, if you offer it</li>
+</ul>
+<p>A short booking form should ask for the item, the problem, a preferred date and whether pickup and drop is needed. Send a confirmation and a reminder; see <a href="/blog/online-appointment-booking-website/">online appointment booking</a> for the options. Show prices or "starting from" guidance if you're comfortable doing so, and explain that parts are charged separately.</p>
+
+<h2>Team, school and club orders</h2>
+<p>Schools, academies, corporate sports days and local clubs buy in bulk, and a single team order can be worth a lot of walk-in sales. Make these orders easy to place:</p>
+<ul>
+  <li>A dedicated page for schools, academies and clubs explaining what you supply</li>
+  <li>A quote form that captures the sport, quantities, a size breakdown (or an uploaded size sheet), names, numbers and logos for printing, and the deadline</li>
+  <li>Clear information on customisation, minimum order quantities and typical lead times</li>
+  <li>Photos of team kits you've supplied, shared with the team's permission</li>
+  <li>GST invoices and purchase order handling mentioned upfront, since institutions need them</li>
+</ul>
+
+<h2>Selling online: delivery, cycles and returns</h2>
+<p>If you sell online, plan for the awkward items:</p>
+<ul>
+  <li><strong>Bicycles:</strong> explain whether they're delivered fully assembled locally or shipped partly assembled further away, and what the customer needs to fit themselves</li>
+  <li><strong>Click and collect:</strong> many buyers prefer to pay online and pick up, especially for cycles that need a final fitting</li>
+  <li><strong>Delivery areas:</strong> a pincode check for bulky items you only deliver locally</li>
+  <li><strong>Returns:</strong> state clearly what can't be returned once used, such as worn shoes, knocked-in bats or strung racquets, and how size exchanges work</li>
+  <li><strong>Payments:</strong> UPI, cards and COD with sensible limits; if your payment gateway offers EMI on premium cycles, describe it exactly as the gateway's terms allow</li>
+</ul>
+
+<h2>Local SEO, trust and speed</h2>
+<p>Much of your business comes from people nearby searching "cycle shop near me", "bicycle repair in {area}", "cricket kit shop in {city}" or "badminton racquet stringing near me". To show up:</p>
+<ul>
+  <li>Complete your Google Business Profile with the right categories, opening hours and real photos of the store and workshop, and ask happy customers for reviews</li>
+  <li>Mention the areas you serve and your workshop services on the website, in natural language</li>
+  <li>Only describe yourself as an authorised dealer for brands where that's true, and check before using brand logos</li>
+  <li>Share community activity, such as group rides, tournaments you sponsor or school events, which builds local trust</li>
+</ul>
+<p>The <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian small businesses</a> covers the basics step by step. Keep the site fast too: sports catalogues are image-heavy and most visitors browse on mobile data, so compress photos and avoid heavy sliders.</p>
+
+<p>Planning a website for your sports or cycle store? See <a href="/woocommerce-developer/">WooCommerce store development</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> if you want more local customers to find you.</p>
+`,
+  },
+  {
+    slug: 'website-for-electronics-appliance-stores',
+    seoTitle: 'Websites for Electronics and Home Appliance Stores',
+    title: 'Websites for Electronics and Home Appliance Stores: Catalogue, Offers and Service',
+    description: 'What electronics and home appliance stores need online: a spec-led catalogue, careful EMI and offer wording, installation and warranty details, and WhatsApp.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>People buying a TV, fridge, washing machine or AC rarely walk in cold. They compare models and prices on their phones, read reviews, check offers and only then decide where to buy. Many still choose a local store for delivery, installation, an exchange deal or simply someone to call if something goes wrong. Your website's job is to make sure they find you during that research and feel confident enough to visit, call or message.</p>
+<p>This guide is for consumer electronics and home appliance retailers. If you mainly sell laptops, desktops and networking equipment to businesses, see <a href="/blog/website-for-it-hardware-computer-dealers/">websites for computer and IT hardware dealers</a> instead.</p>
+
+<h2>How appliance buyers shop</h2>
+<ul>
+  <li>They know roughly what they want (a 1.5 ton AC, a 55-inch TV, a front-load washer) but not which model</li>
+  <li>They compare specs, energy ratings and running costs, not just the price</li>
+  <li>They look for offers: bank discounts, EMI options and exchange deals</li>
+  <li>They want to know when it can be delivered and who will install it</li>
+  <li>The decision is often made by the whole family, by sharing links on WhatsApp</li>
+</ul>
+<p>So your site needs accurate product information, clear offer terms, practical service details and a quick way to ask a question.</p>
+
+<h2>A catalogue built around real decisions</h2>
+<p>Organise products by category (TVs, refrigerators, washing machines, ACs, kitchen appliances, small appliances and audio) and then by the specs people actually use to choose:</p>
+<ul>
+  <li>Screen size and display type for TVs</li>
+  <li>Capacity in litres for fridges and in kilograms for washing machines</li>
+  <li>Tonnage, and inverter or non-inverter, for ACs</li>
+  <li>Energy star rating, brand and price band</li>
+</ul>
+<p>On each product page, give the exact model number, key specs taken from the manufacturer and double-checked, dimensions (will it fit the kitchen niche?), what's in the box, power and installation requirements, and warranty terms. Add a short note in your own words on who the model suits, instead of pasting the brand's spec sheet.</p>
+<p>Buying guides help too: "which AC tonnage for my room", "front-load vs top-load washing machines" or "what size fridge for a family of four". Keep them practical, and point to the manufacturer's guidance where the answer depends on room size, sunlight or usage.</p>
+<p>Decide early whether to sell online or show a catalogue with enquiry buttons. Some brands have their own policies on how dealers advertise prices or sell online, so check your dealer agreements first. A catalogue with "get the best price" and WhatsApp buttons is a sensible start for many stores.</p>
+
+<h2>Offers, EMI and prices: word them carefully</h2>
+<p>Offers sell appliances, but loosely worded offers cause complaints and can mislead. Advertising in India is covered by consumer protection law, and the Advertising Standards Council of India (ASCI) publishes guidelines on misleading claims, so check the current rules with your lawyer. Some sensible habits:</p>
+<table>
+  <thead><tr><th>Risky wording</th><th>Clearer approach</th></tr></thead>
+  <tbody>
+    <tr><td>"No-cost EMI on everything"</td><td>Name the eligible cards or finance partners and tenures, and mention that processing fees and approval conditions may apply as per the lender</td></tr>
+    <tr><td>"Flat cashback"</td><td>State the bank, the minimum purchase, the validity dates and when the cashback is credited</td></tr>
+    <tr><td>"Lowest price guaranteed"</td><td>Avoid it unless you have a written policy you can honour</td></tr>
+    <tr><td>"Best exchange value"</td><td>Explain that exchange value depends on the old appliance's brand, age and condition</td></tr>
+    <tr><td>"Free installation"</td><td>Say what standard installation covers and what costs extra</td></tr>
+  </tbody>
+</table>
+<p>Put every offer on an offers page with start and end dates, link to the full terms, and remove expired offers promptly. Only name banks, finance companies and brands you actually have arrangements with, and make it clear whether prices include GST, delivery and installation.</p>
+
+<h2>Delivery, installation and warranty information</h2>
+<p>After-sales service is often the reason people buy from a local store, so make it easy to find:</p>
+<ul>
+  <li><strong>Delivery:</strong> the areas you serve, typical delivery times, and whether you deliver to upper floors in buildings without lifts</li>
+  <li><strong>Installation:</strong> who installs each category (your team or the brand's service partner), how soon, what standard installation includes, and typical extras such as additional AC piping, stands or wall mounts</li>
+  <li><strong>Demo and setup:</strong> for TVs, washing machines and kitchen appliances</li>
+  <li><strong>Warranty:</strong> the manufacturer's warranty and how to register and claim it, plus any extended warranty you sell and exactly who provides it</li>
+  <li><strong>Exchange and disposal:</strong> how you take back old appliances</li>
+  <li><strong>Invoices:</strong> a GST invoice for every sale, which customers often need for warranty claims</li>
+</ul>
+<p>A short FAQ covering each of these cuts down repetitive calls.</p>
+
+<h2>Store locations and local pages</h2>
+<p>Searches like "electronics shop near me", "AC dealer in {area}" and "washing machine showroom in {city}" are where local stores can win. If you have more than one branch, give each its own page with the address, map, opening hours, phone and WhatsApp number, parking, photos and the categories or brands on display there. Match each page to its own Google Business Profile, and keep hours updated during festival seasons. The guide to <a href="/blog/multi-location-business-website/">websites for businesses with multiple branches</a> explains how to do this without thin, duplicate pages.</p>
+
+<h2>WhatsApp enquiries and quick quotes</h2>
+<p>Many appliance buyers would rather message than call. Make that easy:</p>
+<ul>
+  <li>A "check price on WhatsApp" button on every product, with the model number pre-filled in the message</li>
+  <li>A short callback form for people who prefer a phone call</li>
+  <li>Replies within business hours that include the price, offer terms and delivery date in one message</li>
+  <li>Tracking, so you know which products and pages bring enquiries</li>
+</ul>
+<p>See <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your business website</a> for setup tips. For Diwali, festive and summer AC sales, a dedicated landing page with the offers, terms and a single enquiry button works better than a homepage banner; <a href="/blog/seasonal-festival-campaigns-website/">planning seasonal campaigns</a> covers the timing.</p>
+
+<h2>Trust, SEO and speed</h2>
+<ul>
+  <li>Real photos of your showroom, team and delivery vans, not only brand images</li>
+  <li>Authorised dealer status only for brands where it's true, and brand logos used only with permission</li>
+  <li>Google reviews that mention delivery, installation and service</li>
+  <li>Your GST number, full address and contact details on the About and Contact pages</li>
+  <li>Product schema with price and availability, kept accurate as offers change</li>
+  <li>Compressed images and a lightweight theme, because large catalogues slow down quickly on mobile</li>
+</ul>
+
+<p>Planning a website for your electronics or appliance store? See <a href="/woocommerce-developer/">WooCommerce store development</a> for catalogues and online sales, or <a href="/landing-page-design/">landing page design</a> for your next festive sale.</p>
+`,
+  },
+  {
+    slug: 'website-for-perfume-fragrance-brands',
+    seoTitle: 'Websites for Perfume, Attar and Fragrance Brands',
+    title: 'Websites for Perfume, Attar and Fragrance Brands: Selling Scent Online',
+    description: 'How perfume, attar and fragrance brands can sell online: describing scents in words, sample kits, gifting, honest claims, product pages and shipping rules.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>Perfume is one of the hardest products to sell online, because the thing customers most want to know is the one thing a screen can't show: how it smells. Yet fragrance brands, from traditional attar makers to new D2C perfume labels, can sell well online when the website turns scent into clear words, lowers the risk of trying something new and handles the practical side of shipping liquids carefully.</p>
+
+<h2>What fragrance buyers want to know</h2>
+<ul>
+  <li>What it smells like, in words they recognise</li>
+  <li>How strong it is and how long it lasts on skin</li>
+  <li>When to wear it: office, evenings, weddings, summer or winter</li>
+  <li>Whether it's alcohol-based or an alcohol-free oil, which matters to many attar buyers</li>
+  <li>Whether they can try a sample before committing to a full bottle</li>
+  <li>Whether it will arrive safely, without leaking</li>
+</ul>
+
+<h2>Describing scents in words people understand</h2>
+<p>Most shoppers don't speak in perfumers' terms, so give them a few ways in:</p>
+<ul>
+  <li><strong>Scent family:</strong> floral, woody, citrus, fresh, spicy, amber, musky, oud or gourmand (sweet, edible notes such as vanilla). Let people filter by family.</li>
+  <li><strong>Notes:</strong> the top notes they smell first, the heart notes that follow and the base notes that linger. Keep the list short and accurate.</li>
+  <li><strong>Everyday comparisons:</strong> "like fresh mogra garlands", "rain on dry earth", "sandalwood and warm spice". Evocative, but honest.</li>
+  <li><strong>Mood and occasion:</strong> light and fresh for daytime, rich and warm for evenings and festive wear.</li>
+</ul>
+<p>Be careful with "inspired by" or "smells like" comparisons to other brands' famous perfumes. Using another company's trademark to sell your product can create legal risk, so take advice from a lawyer before using any brand names in product titles, descriptions or ads.</p>
+
+<h2>Product pages that answer every question</h2>
+<table>
+  <thead><tr><th>Detail</th><th>What to include</th></tr></thead>
+  <tbody>
+    <tr><td>Type and concentration</td><td>Eau de parfum, eau de toilette, perfume oil or attar, as your formulation actually is</td></tr>
+    <tr><td>Base</td><td>Alcohol-based spray or alcohol-free oil</td></tr>
+    <tr><td>Notes and family</td><td>Top, heart and base notes, plus the scent family</td></tr>
+    <tr><td>Strength and longevity</td><td>Typical performance from your own testing, with a note that it varies with skin and weather</td></tr>
+    <tr><td>How to apply</td><td>Spray, roll-on or dab; pulse points; how much to use</td></tr>
+    <tr><td>Size and pack</td><td>Volume in ml, bottle type and a photo of the bottle in a hand for scale</td></tr>
+    <tr><td>Safety and storage</td><td>Patch test advice, keeping it away from heat, sunlight and flames, and shelf life</td></tr>
+  </tbody>
+</table>
+<p>Show the label details printed on your pack, such as net quantity, MRP, manufacturer and dates; your consultant can confirm what applies to your products. Photography of the bottle, cap, box and gift packaging matters more than usual, because the packaging is part of what people are buying. For writing tips, see <a href="/blog/write-product-descriptions-that-sell/">how to write product descriptions that sell</a>.</p>
+
+<h2>Sample kits, discovery sets and trial sizes</h2>
+<p>Samples are the most reliable way to get past "I can't smell it online":</p>
+<ul>
+  <li>A discovery set of small vials covering your bestsellers or one scent family</li>
+  <li>Trial sizes of attars, which are often sold in small quantities anyway</li>
+  <li>A coupon in the discovery set that credits its price against a full bottle</li>
+  <li>A free sample with every order, so customers find their next favourite</li>
+  <li>"Build your own set" options that let customers pick three or five scents</li>
+</ul>
+<p>WooCommerce can handle these as bundles or grouped products; see <a href="/blog/woocommerce-product-bundles-upsells/">product bundles, upsells and cross-sells</a>.</p>
+
+<h2>Gifting and occasions</h2>
+<p>Fragrance is a popular gift, so build for gift buyers:</p>
+<ul>
+  <li>Gift sets and pages by occasion: Diwali, Eid, Raksha Bandhan, weddings, anniversaries and birthdays</li>
+  <li>Gift wrapping, a message card and an option to leave prices off the packing slip</li>
+  <li>Engraving or personalised boxes, if you offer them, with clear lead times</li>
+  <li>A bulk enquiry form for wedding favours and corporate gifting that asks for quantity, budget range, branding and delivery date</li>
+</ul>
+<p>Plan festive collections early and give each one its own landing page.</p>
+
+<h2>Honest claims and labelling</h2>
+<p>Perfumes and attars applied to the body are generally treated as cosmetics in India, and advertising is covered by consumer protection law and ASCI guidelines. Check the current position with a regulatory consultant or lawyer, and follow some simple habits:</p>
+<ul>
+  <li>Don't promise exact longevity, such as "lasts 24 hours", unless you've tested it, and say that results vary</li>
+  <li>Avoid health or therapeutic claims like "cures headaches" or "treats anxiety"; describe mood and feel instead</li>
+  <li>Avoid "attracts anyone" or pheromone-style promises</li>
+  <li>Say "100% natural", "pure", "alcohol-free" or "halal certified" only when it's true and you can show evidence or certification</li>
+  <li>Publish real reviews, including mixed ones, and never write your own</li>
+</ul>
+<p>The guide to <a href="/blog/website-for-beauty-cosmetics-brands/">websites for beauty and cosmetics brands</a> covers claims and reviews in more detail.</p>
+
+<h2>Shipping rules for fragrances</h2>
+<p>Shipping is where many new fragrance brands get caught out. Alcohol-based perfumes are flammable, and couriers often treat them as restricted or dangerous goods, particularly for air shipments. Rules differ between couriers and services and change over time, so:</p>
+<ul>
+  <li>Ask your courier or shipping aggregator in writing which services accept perfumes and attars, and about any limits on quantity or bottle size</li>
+  <li>Expect that some fast air services may not be available, and set delivery times on the site to match</li>
+  <li>Treat international shipping as stricter still; check the courier's rules and the destination country's import rules before offering it</li>
+  <li>Pack for leaks and heat: sealed caps, leak-proof inner pouches, cushioning and sturdy outer boxes</li>
+  <li>Show delivery times and serviceable pincodes before checkout</li>
+</ul>
+<p>Write a clear returns policy too. Many brands don't accept opened fragrances for hygiene reasons, so explain what happens with damaged, leaking or wrong items, such as asking for photos or an unboxing video within a set time. For zones, rates and couriers, see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+
+<h2>SEO and speed</h2>
+<p>Fragrance searches are specific: "oud attar", "long-lasting perfume for men", "alcohol-free attar", "mogra perfume" or "perfume gift set for her". Build category and scent-family pages around these, plus helpful guides on topics like how to apply attar or the difference between EDP and EDT. Add product schema so price, availability and ratings can appear in search results. Keep pages fast, since most shoppers browse on their phones: compress product photos and avoid loading heavy videos and pop-ups on every page.</p>
+
+<p>Launching a fragrance brand online, or fixing a store that isn't converting? See <a href="/woocommerce-developer/">WooCommerce store development</a>, or <a href="/landing-page-design/">landing page design</a> for a new launch or festive collection.</p>
 `,
   },
 ];

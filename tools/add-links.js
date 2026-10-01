@@ -503,6 +503,14 @@ const LINKS = [
   ['website-for-cctv-security-installers', '<h2>Show the brands you work with</h2>', '<p>If fire alarms, extinguishers and hydrant systems are a large part of your work, see <a href="/blog/website-for-fire-safety-companies/">websites for fire safety and fire protection companies</a>.</p>\n\n'],
   ['website-for-it-hardware-computer-dealers', '<h2>Trust signals that matter</h2>', '<p>Corporate clients replacing old machines often ask about safe disposal. If e-waste collection and recycling is your main business, see <a href="/blog/website-for-recycling-ewaste-companies/">websites for scrap, recycling and e-waste companies</a>.</p>\n\n'],
   ['wordpress-backup-restore-guide', '<h2>How to restore safely</h2>', '<p>For a closer look at host backups versus tools such as UpdraftPlus, BlogVault and Duplicator, see <a href="/blog/wordpress-backup-plugins-compared/">WordPress backup plugins compared</a>.</p>\n\n'],
+  // Agent 42
+  ['website-for-hospitals', '<h2>Departments and specialities</h2>', '<p>Private ambulance operators need the same emergency-first approach across their whole website; see <a href="/blog/website-for-ambulance-services/">websites for private ambulance services</a>.</p>\n\n'],
+  ['clinic-website-checklist-for-doctors', '<h2>Information patients need</h2>', '<p>Specialists such as orthopaedic surgeons, cardiologists and gynaecologists need more, including procedure pages and a second opinion page; see <a href="/blog/website-for-specialist-doctors/">websites for specialist doctors</a>.</p>\n\n'],
+  ['website-for-music-dance-academies', '<h2>Show your academy in action</h2>', '<p>Running abacus, robotics, coding or art classes, or a summer camp? See <a href="/blog/website-for-kids-activity-classes/">websites for kids\' activity classes and summer camps</a>.</p>\n\n'],
+  // Agent 43
+  ['website-for-sports-academies', '<h2>Fees and enrolment</h2>', '<p>If your academy also sells kit and equipment, or works closely with a local sports shop, see <a href="/blog/website-for-sports-bicycle-stores/">websites for sports goods and bicycle stores</a>.</p>\n\n'],
+  ['website-for-furniture-appliance-rental', '<h2>Deposits, charges and terms in plain language</h2>', '<p>If you sell TVs, fridges and washing machines outright rather than renting them, see <a href="/blog/website-for-electronics-appliance-stores/">websites for electronics and home appliance stores</a>.</p>\n\n'],
+  ['website-for-beauty-cosmetics-brands', '<h2>Reviews and social proof, done honestly</h2>', '<p>Fragrance brands face their own version of these questions, from describing scents honestly to shipping alcohol-based perfumes; see <a href="/blog/website-for-perfume-fragrance-brands/">websites for perfume, attar and fragrance brands</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
