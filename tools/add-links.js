@@ -555,6 +555,14 @@ const LINKS = [
   ['website-for-photographers', '<h2>Get found locally</h2>', '<p>Offering aerial shoots, surveys or inspections with a drone as a separate service? See <a href="/blog/website-for-drone-services/">websites for drone service companies</a>.</p>\n\n'],
   ['website-for-pet-shops-grooming', '<h2>Grooming bookings that work</h2>', '<p>If fish, tanks and aquarium maintenance are the main part of your business, see <a href="/blog/website-for-aquarium-shops/">websites for aquarium and pet fish shops</a>.</p>\n\n'],
   ['website-for-music-dance-academies', '<h2>Trial class and enrolment</h2>', '<p>If students need to buy or rent an instrument, a partner shop can help; see <a href="/blog/website-for-musical-instrument-stores/">websites for musical instrument stores</a>.</p>\n\n'],
+  // Agent 54
+  ['website-for-elder-care-home-nursing', '<h2>Respect residents\' privacy</h2>', '<p>Agencies that place attendants, nannies and other helpers in private homes face similar questions about verification; see <a href="/blog/website-for-domestic-help-agencies/">websites for domestic help and nanny agencies</a>.</p>\n\n'],
+  ['industrial-website-product-catalogue', '<h2>Make quote requests effortless</h2>', '<p>Datasheets and brochure PDFs can be found in Google too, if they are set up properly; see <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs, brochures and catalogues</a>.</p>\n\n'],
+  ['google-merchant-center-woocommerce', '<h2>Next: Shopping ads</h2>', '<p>The same product data can also power ads and shopping on Instagram and Facebook; see <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to Meta\'s catalog</a>.</p>\n\n'],
+  // Agent 56
+  ['website-for-pet-shops-grooming', '<h2>Selling food and supplies online</h2>', '<p>If dog training or behaviour work is your main service, see the guide to <a href="/blog/website-for-dog-trainers/">websites for dog trainers and behaviourists</a>.</p>\n\n'],
+  ['choose-website-colours-fonts', '<h2>Performance</h2>', '<p>Building a Hindi or bilingual site? See <a href="/blog/hindi-devanagari-fonts-website/">choosing and loading Hindi and Devanagari fonts</a> for sizes, line height and testing tips.</p>\n\n'],
+  ['woocommerce-seo-guide', '<h2>7. Speed and mobile</h2>', '<p>Product filters are the most common source of these duplicates, since every colour, size and price combination can create a new URL; see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters and faceted search</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

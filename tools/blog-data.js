@@ -2362,6 +2362,8 @@ module.exports = [
   <li><strong>Related products and accessories</strong></li>
 </ol>
 
+<p>Datasheets and brochure PDFs can be found in Google too, if they are set up properly; see <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs, brochures and catalogues</a>.</p>
+
 <h2>Make quote requests effortless</h2>
 <ul>
   <li>Ask for product, quantity, company name, location and contact details</li>
@@ -4376,6 +4378,8 @@ module.exports = [
   <li>Variations should normally live on one product page rather than separate near-identical products.</li>
   <li>Out-of-stock products: keep the page if it will return, and redirect it to the closest alternative if discontinued.</li>
 </ul>
+
+<p>Product filters are the most common source of these duplicates, since every colour, size and price combination can create a new URL; see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters and faceted search</a>.</p>
 
 <h2>7. Speed and mobile</h2>
 <p>Stores are image-heavy and plugin-heavy. Optimized images, caching (with cart and checkout excluded) and good hosting keep product and category pages fast. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
@@ -11452,6 +11456,8 @@ module.exports = [
   <li><strong>Support for your languages</strong>, including Devanagari or regional scripts if needed</li>
 </ul>
 
+<p>Building a Hindi or bilingual site? See <a href="/blog/hindi-devanagari-fonts-website/">choosing and loading Hindi and Devanagari fonts</a> for sizes, line height and testing tips.</p>
+
 <h2>Performance</h2>
 <p>Web fonts should load efficiently (only needed weights, with a fallback shown while loading) so they don't slow pages or cause text to jump.</p>
 
@@ -12964,6 +12970,8 @@ module.exports = [
   <li>Clear information about how families receive updates</li>
 </ul>
 
+<p>Agencies that place attendants, nannies and other helpers in private homes face similar questions about verification; see <a href="/blog/website-for-domestic-help-agencies/">websites for domestic help and nanny agencies</a>.</p>
+
 <h2>Respect residents' privacy</h2>
 <p>Only use photos of residents with their informed consent (or that of their legal guardian). Never share health details on the website or social media.</p>
 
@@ -13737,6 +13745,8 @@ module.exports = [
   <li>Multiple quality images</li>
   <li>Product reviews</li>
 </ul>
+
+<p>The same product data can also power ads and shopping on Instagram and Facebook; see <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to Meta's catalog</a>.</p>
 
 <h2>Next: Shopping ads</h2>
 <p>Once your feed is clean, the same Merchant Center feed powers Google Shopping and Performance Max campaigns. See <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a>.</p>
@@ -19227,6 +19237,8 @@ Template: astra
     <tr><td>About and policies</td><td>Your team, hygiene practices, cancellation and safety policies</td><td>Call or WhatsApp</td></tr>
   </tbody>
 </table>
+
+<p>If dog training or behaviour work is your main service, see the guide to <a href="/blog/website-for-dog-trainers/">websites for dog trainers and behaviourists</a>.</p>
 
 <h2>Selling food and supplies online</h2>
 <p>Pet food is a repeat purchase that runs out on a predictable schedule, which makes it a good fit for an online store with local delivery.</p>
@@ -32066,6 +32078,535 @@ Template: astra
 <p>People search "musical instrument shop near me", "guitar shop in {city}", "harmonium repair {area}" and "keyboard on rent {city}". Create pages for each main service, keep your Google Business Profile updated with photos, hours and new arrivals, and ask customers to mention what they bought or had repaired in reviews. With hundreds of products and videos, compress images and keep the store fast on mobile.</p>
 
 <p>Ready to put your instrument catalogue, repairs and rentals online? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-domestic-help-agencies',
+    seoTitle: 'Websites for Domestic Help and Nanny Agencies',
+    title: 'Websites for Domestic Help, Nanny and Caretaker Placement Agencies',
+    description: 'How domestic help, nanny and caretaker agencies can build websites families trust: service pages, honest verification, replacement terms, fees and privacy.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Families looking for a cook, a nanny, a live-in helper or a caretaker for an elderly parent are about to let a stranger into their home, so they check an agency's website and reviews carefully before calling. This guide is for agencies that place domestic workers with households. If you provide nursing or medical care with your own staff, see <a href="/blog/website-for-elder-care-home-nursing/">websites for elder care and home nursing</a> instead.</p>
+
+<h2>Two audiences: families and workers</h2>
+<ul>
+  <li><strong>Families</strong> want to know what help you provide, how you check people, what it costs, how soon someone can start and what happens if it doesn't work out.</li>
+  <li><strong>Workers</strong> want to know whether you have jobs in their area, what the work and pay involve, and whether you are genuine. Give them a simple "Looking for work?" page with call and WhatsApp buttons, in Hindi or the local language as well as English.</li>
+</ul>
+<p>Fake agencies sometimes take money from both groups. A short page listing your real phone numbers, office address and how you accept payments helps people check they are dealing with you.</p>
+
+<h2>Service pages families look for</h2>
+<p>Give each service its own page rather than one long list. Typical services include:</p>
+<ul>
+  <li>Full-time and live-in helpers for housework</li>
+  <li>Part-time help for cleaning, dishes and laundry</li>
+  <li>Cooks, with the cuisines and food preferences they can handle (vegetarian, Jain, non-vegetarian)</li>
+  <li>Nannies and babysitters</li>
+  <li>Japa maids and newborn care helpers</li>
+  <li>Elderly caretakers and patient attendants</li>
+</ul>
+<p>On each page, explain the duties usually included and excluded, typical hours and weekly offs, what a live-in arrangement expects from the family (a room, meals), how long placement usually takes, and common questions. For caretakers and attendants, make clear the role is non-medical unless the person is a qualified nurse.</p>
+
+<h2>Explaining verification without overclaiming</h2>
+<p>Safety is the family's biggest worry, so it's tempting to write "100% verified, trusted staff". No agency can guarantee how a person will behave, and if something goes wrong, those words do far more damage than an honest description. Explain exactly what you check instead:</p>
+<ul>
+  <li>Which identity documents you see, and how you store the copies</li>
+  <li>How you confirm the current and permanent address</li>
+  <li>Reference calls to previous employers, made by your team</li>
+  <li>Police verification: whether you apply for it, whether it is completed before placement, or whether the family completes it with their local police. Many city police forces run a domestic help verification process, often in the employer's name, so check how it works where you operate.</li>
+  <li>Interviews, skill trials and any training you provide, and what it covers</li>
+</ul>
+<table>
+  <thead>
+    <tr><th>Avoid</th><th>Say instead</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>"100% safe and verified staff"</td><td>"We check ID and call previous employers before suggesting anyone"</td></tr>
+    <tr><td>"Police verified" (when only applied for)</td><td>"Police verification applied for; we share the status with you"</td></tr>
+    <tr><td>"Fully trained nannies"</td><td>"Nannies with childcare experience; any training is listed on their profile"</td></tr>
+    <tr><td>"Replacement guaranteed in 24 hours"</td><td>"We aim to suggest a replacement within [your usual time]"</td></tr>
+  </tbody>
+</table>
+<p>Suggesting sensible precautions, such as a trial period and keeping valuables secure, shows you take safety seriously.</p>
+
+<h2>Replacement policy wording that avoids disputes</h2>
+<p>Many disputes are about replacements. Put your policy on its own page, link to it from every service page, and keep it consistent with your written agreement. Cover:</p>
+<ul>
+  <li>How long the replacement period lasts, and how many replacements are included</li>
+  <li>Which situations it covers, such as a helper leaving or the family not being satisfied during the trial</li>
+  <li>Which it doesn't, such as the family changing the job from part-time to live-in</li>
+  <li>How quickly you usually suggest someone, stated as an aim rather than a promise</li>
+  <li>Whether any part of the fee is refundable, and how</li>
+  <li>How salary for days already worked is settled</li>
+</ul>
+<p>Specific wording works best, for example: "If your helper leaves within [your period] of starting, we will suggest up to [number] replacements at no extra fee. We usually suggest someone within [your usual time], depending on availability." Have a lawyer review your terms before publishing.</p>
+
+<h2>Fees: what families pay, and what workers pay</h2>
+<p>Explain the fee structure even if you don't publish exact amounts:</p>
+<ul>
+  <li>Whether you charge a one-time placement fee, a monthly service fee, or both</li>
+  <li>That the worker's salary is separate, and whether it is paid to them directly or through you</li>
+  <li>What affects the fee: live-in or part-time, hours, household size, specialised work like newborn care, and the city</li>
+  <li>Whether GST applies, if you are registered</li>
+  <li>How families can pay (UPI, bank transfer) and that they will receive a receipt</li>
+</ul>
+<p>Be equally clear about workers. A widely accepted principle of ethical recruitment is that workers shouldn't pay to get a job, and some states have rules on registering and running placement agencies, so check the current requirements where you operate. If you don't charge workers anything, say so prominently. For ways to present costs, see <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
+
+<h2>Respecting workers' dignity and privacy</h2>
+<ul>
+  <li>Show profiles with a first name, experience, skills, languages and availability. Use photos only with consent, and never publish surnames together with home villages or phone numbers.</li>
+  <li>Never show Aadhaar cards or other ID documents on the website or in WhatsApp groups.</li>
+  <li>Use respectful words: helper, cook, nanny, caretaker. Families may search for "maid", so the word can appear in page titles, but describe people with respect.</li>
+  <li>Don't list or filter workers by religion, caste or region. Focus on skills, experience and languages.</li>
+  <li>Store ID copies and verification forms securely, limit who can see them, and delete them when you no longer need them.</li>
+</ul>
+<p>You collect personal data from both families and workers, so publish a clear privacy policy and follow India's data protection rules; see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a>.</p>
+
+<h2>Enquiries, WhatsApp and local search</h2>
+<p>Families often need help urgently, so make contacting you quick:</p>
+<ul>
+  <li>Call and WhatsApp buttons visible on every page of the mobile site</li>
+  <li>A short enquiry form: service needed, live-in or part-time, hours, locality, household (adults, children, elders), preferred languages and start date</li>
+  <li>A same-day reply during working hours, and your opening hours shown clearly</li>
+</ul>
+<p>People search with phrases like "maid agency in Gurgaon", "nanny services in Bengaluru", "japa maid in Pune" or "cook for home near me". Use these words naturally in service page titles and headings, list the areas you serve, and keep your Google Business Profile complete with genuine reviews from families; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>. Keep pages light so they load quickly on mobile data.</p>
+
+<p>Want a website that earns families' trust? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> to promote one service, such as newborn care.</p>
+`,
+  },
+  {
+    slug: 'seo-for-pdfs-brochures',
+    seoTitle: 'SEO for PDFs, Brochures and Catalogues',
+    title: 'SEO for PDFs, Brochures and Catalogues: Getting Them Found on Google',
+    description: 'How Google indexes PDFs, brochures and catalogues, how to set titles, text and file sizes, link and update them, and why key content belongs on web pages too.',
+    date: '2026-10-01',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'website-for-manufacturers'],
+    body: `
+<p>Many businesses keep their most detailed information in PDFs: product catalogues, company brochures, datasheets, price lists, prospectuses and menus. Google can find and rank PDFs, and a good datasheet sometimes appears for searches your web pages miss. But a PDF is rarely the best place for a visitor to land. Here's how Google treats PDFs, how to set yours up properly, and why the key information should also be on normal web pages.</p>
+
+<h2>Does Google index PDFs?</h2>
+<p>Yes. Google can crawl PDFs, index the text inside them, show them in search results (labelled as PDF) and follow links within them. In practice, a PDF is only likely to be indexed when:</p>
+<ul>
+  <li>It is linked from a page Google can crawl, or listed in your XML sitemap</li>
+  <li>It isn't blocked by robots.txt, protected by a password or hidden behind a form</li>
+  <li>It contains real text that can be extracted, not just scanned images</li>
+  <li>Its content is useful, not simply a copy of a page Google already has</li>
+</ul>
+<p>A brochure that visitors can only get by entering their email address won't be indexed. That can be a fair trade-off for a lead magnet, but it means the content does nothing for search.</p>
+
+<h2>Why key information should also be on web pages</h2>
+<table>
+  <thead>
+    <tr><th>Question</th><th>Web page</th><th>PDF</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>On a phone</td><td>Fits the screen</td><td>Pinching, zooming, sometimes a download</td></tr>
+    <tr><td>Next step</td><td>Menu, related products, enquiry and WhatsApp buttons</td><td>Often a dead end</td></tr>
+    <tr><td>Updating</td><td>Edit and save</td><td>Re-export and re-upload, while old copies keep circulating</td></tr>
+    <tr><td>Analytics</td><td>Full visit and enquiry tracking</td><td>Download clicks at best</td></tr>
+    <tr><td>Search appearance</td><td>Your own title, description and structured data</td><td>Limited control</td></tr>
+  </tbody>
+</table>
+<p>Keep the PDF for people who want to print, save or forward it, as many B2B buyers ask for a catalogue on WhatsApp, but make a web page the main version of each product, service or menu. Restaurants face the same choice; see <a href="/blog/restaurant-menu-on-website/">restaurant menus: PDF vs web page</a>. For product ranges, an <a href="/blog/industrial-website-product-catalogue/">online product catalogue</a> with a page per product will usually serve buyers better than one large PDF.</p>
+
+<h2>Make sure the text is real text</h2>
+<p>Google reads the text layer in a PDF. If there isn't one, there's little to index.</p>
+<ul>
+  <li>Export from Word, InDesign, Canva or similar as a normal PDF, not a flattened image</li>
+  <li>Test it: open the PDF and try to select and copy a sentence, or search for a word with Ctrl+F</li>
+  <li>Designers sometimes convert text to outlines for printing; ask for a separate web version with live text</li>
+  <li>For scanned documents, run text recognition (OCR) or retype the key content</li>
+  <li>Use real tables for specifications, not screenshots of tables</li>
+</ul>
+<p>Visitors may land straight on the PDF from Google, with no website around it. Include your company name, phone, WhatsApp number and website address inside, plus clickable links back to the relevant product or contact page.</p>
+
+<h2>Titles, file names and document properties</h2>
+<ul>
+  <li><strong>File name:</strong> in WordPress, the file name becomes part of the URL. Rename "final_v3_new.pdf" to something like "ss-ball-valves-catalogue.pdf" before uploading. A stable name you can keep when you update the file works better than one with a version number.</li>
+  <li><strong>Title property:</strong> Google may use the title stored in the document's properties, or prominent text from the first page, as the title in search results. Set it in Word's document properties, Acrobat's Document Properties or your design tool's export settings, so results don't show something like "Microsoft Word - Document1".</li>
+  <li><strong>First page:</strong> start with a clear heading that says what the document is, for example "Stainless Steel Ball Valves: Product Catalogue".</li>
+  <li><strong>Language and tags:</strong> setting the document language and exporting a tagged PDF also makes it more usable for screen reader users.</li>
+</ul>
+
+<h2>Keep file sizes sensible</h2>
+<p>Print-quality brochures with high-resolution photos can be huge, and they are painful to open on mobile data. Export a web version using your tool's smaller file size setting, compress large images, and split very large catalogues into one PDF per product category, matching your category pages. Show the type and size next to the link, such as "Download datasheet (PDF, 2 MB)", so people know what to expect.</p>
+
+<h2>Linking and updating PDFs without breaking things</h2>
+<ul>
+  <li>Link each PDF from the most relevant page with descriptive text, such as "Download the ball valve datasheet", not "click here"</li>
+  <li>Include PDFs you want indexed in your XML sitemap; some SEO plugins leave media files out by default, so check</li>
+  <li>When you upload a new version, WordPress usually saves it under a new URL (often adding "-1" to the name), leaving the old version live and your links pointing to it. Either replace the file in place with a media replacement plugin, or redirect the old URL to the new one; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a></li>
+  <li>Remove or redirect outdated price lists and brochures, because old prices that still rank lead to awkward conversations</li>
+  <li>Clear your cache or CDN after replacing a file, so visitors get the new version</li>
+</ul>
+
+<h2>When to keep a PDF out of Google</h2>
+<p>Not every PDF should rank. Dealer price lists, internal forms and PDFs that duplicate a web page are usually better left out. A PDF can't contain a meta robots tag, so a developer adds an <strong>X-Robots-Tag: noindex</strong> HTTP header instead. Don't also block the file in robots.txt, or Google can't see the noindex; see <a href="/blog/robots-txt-explained/">robots.txt explained</a>. If a PDF is outranking the web page it duplicates, a canonical link sent in the HTTP header can point Google to the page instead.</p>
+<p>Noindex is not security. Files in the WordPress uploads folder can be opened by anyone with the link, so keep confidential documents behind a proper login, or off the website entirely.</p>
+
+<h2>Checking how your PDFs perform</h2>
+<ul>
+  <li>Search Console's URL Inspection tool works for PDF URLs, and the Performance report shows clicks to PDFs alongside your pages</li>
+  <li>A Google search for "site:yourdomain.com filetype:pdf" gives a rough list of indexed PDFs</li>
+  <li>Google Analytics 4 can record clicks on PDF links as file download events through enhanced measurement, but it can't see people who open a PDF directly from Google, so use Search Console for those</li>
+</ul>
+
+<p>Want your catalogues, brochures and product pages working together in search? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/website-for-manufacturers/">websites for manufacturers</a> if you sell to B2B buyers.</p>
+`,
+  },
+  {
+    slug: 'meta-catalog-instagram-shopping-woocommerce',
+    seoTitle: 'WooCommerce to Meta Catalog: Instagram and Facebook Shopping',
+    title: 'Connecting WooCommerce to Meta\'s Catalog for Instagram and Facebook Shopping',
+    description: 'How to connect WooCommerce to Meta\'s catalog for Instagram and Facebook shopping and ads: setup options, feed fields, policies and keeping stock in sync.',
+    date: '2026-10-01',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'landing-page-design'],
+    body: `
+<p>If you run a WooCommerce store and advertise on Instagram or Facebook, Meta will soon ask for a catalogue: a list of your products with prices, images, links and stock status. Once connected, it can power ads that show shoppers the products they looked at, and shopping features where available. Here's how the connection works, the main ways to set it up and how to keep it accurate. Meta changes its commerce features and requirements often, so check its current help pages before you start.</p>
+
+<h2>What a Meta catalogue is used for</h2>
+<p>Your catalogue lives in Commerce Manager, inside your Meta business portfolio (previously called Business Manager). It can be used for:</p>
+<ul>
+  <li><strong>Catalogue ads</strong> (currently called Advantage+ catalog ads): Meta automatically shows products to people who viewed them on your site, or to new people likely to be interested</li>
+  <li><strong>Carousel and collection ads</strong> built from your products, without designing each one by hand</li>
+  <li><strong>Shopping features</strong> such as a shop on your Facebook Page or Instagram profile and product tags in posts and reels, where your account is eligible</li>
+</ul>
+<p>Shopping features have changed several times and vary by country. Checkout inside Meta's apps has generally been limited to a few markets, so for most Indian stores shoppers tap through to your WooCommerce site to buy. Check what Commerce Manager currently offers your account before planning around a feature.</p>
+
+<h2>How it differs from Google Merchant Center</h2>
+<table>
+  <thead>
+    <tr><th>Question</th><th>Google Merchant Center</th><th>Meta catalogue</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Where products appear</td><td>Google Search, the Shopping tab, Images and Google ads</td><td>Instagram and Facebook feeds, Stories, Reels and shops</td></tr>
+    <tr><td>Shopper mindset</td><td>Actively searching for a product</td><td>Scrolling, discovering and being reminded</td></tr>
+    <tr><td>Free exposure</td><td>Free product listings</td><td>Mostly through ads; organic shopping features vary</td></tr>
+    <tr><td>What matching depends on</td><td>Identifiers such as GTIN, brand and MPN</td><td>Product IDs that match your Pixel events</td></tr>
+  </tbody>
+</table>
+<p>The underlying product data is much the same, and one well-kept WooCommerce store can feed both. If you haven't set up Google yet, see <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a>.</p>
+
+<h2>Get the groundwork ready</h2>
+<ul>
+  <li><strong>Own the accounts:</strong> create the business portfolio in your company's name with your own admin access, and add your agency or developer as a partner, not the other way round</li>
+  <li><strong>Connect your Facebook Page and Instagram professional account</strong> to the business portfolio</li>
+  <li><strong>Verify your domain</strong> in the business settings</li>
+  <li><strong>Set up the Meta Pixel and Conversions API</strong>, because catalogue ads depend on product events; see <a href="/blog/meta-pixel-conversions-api/">Meta Pixel and Conversions API explained</a></li>
+  <li><strong>Publish clear store policies:</strong> contact details, shipping, returns and privacy</li>
+  <li><strong>Tidy your product data:</strong> every product needs a SKU, a good main image, a real description, the correct price and stock status, and a brand</li>
+</ul>
+
+<h2>Ways to connect WooCommerce</h2>
+<table>
+  <thead>
+    <tr><th>Approach</th><th>How it works</th><th>Watch out for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Meta's official WooCommerce extension (long listed as Facebook for WooCommerce)</td><td>Connects your store to your business portfolio, syncs products as you save them, and can set up the Pixel and Conversions API</td><td>Sync errors after bulk changes, and conflicts with other Pixel plugins</td></tr>
+    <tr><td>Feed plugin with a scheduled feed</td><td>A plugin builds a product feed file at a URL, and Commerce Manager fetches it on a schedule you set</td><td>Changes only appear after the next fetch</td></tr>
+    <tr><td>Manual spreadsheet upload</td><td>You upload a file in Commerce Manager</td><td>Goes out of date quickly; only for small or test catalogues</td></tr>
+    <tr><td>Custom integration via Meta's API</td><td>A developer sends updates as soon as prices or stock change</td><td>Development and maintenance cost; mainly worth it for large catalogues or stock managed in an ERP</td></tr>
+  </tbody>
+</table>
+<p>Most small and medium stores start with the official extension or a feed plugin that also produces their Google feed; check current features before choosing. Use one method per catalogue, as two methods updating the same products cause duplicates or overwritten values.</p>
+
+<h2>Getting the product data right</h2>
+<ul>
+  <li><strong>Required fields:</strong> Meta's specification currently includes an ID, title, description, availability, condition, price, link, image link and brand; confirm the current list in Meta's help pages</li>
+  <li><strong>Consistent IDs:</strong> the ID in the catalogue must match the content ID your Pixel and Conversions API send with ViewContent, AddToCart and Purchase events. If one uses the SKU and the other the WooCommerce product ID, catalogue ads can't connect shoppers to products</li>
+  <li><strong>Variations:</strong> each size or colour is usually a separate item, linked by a shared item group ID; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a></li>
+  <li><strong>Prices:</strong> in rupees with the currency code, matching what the product page shows, with a separate sale price field for offers</li>
+  <li><strong>Titles:</strong> brand, product type and key attributes, without capitals or "50% OFF" in the title itself</li>
+  <li><strong>Images:</strong> clear photos of the product, without text overlays or watermarks; square images display well across Meta's placements</li>
+</ul>
+
+<h2>Policies and product approvals</h2>
+<p>Products in your catalogue are checked against Meta's Commerce Policies for shopping features and its advertising standards for ads. Some categories are restricted or prohibited, such as tobacco, weapons, adult products and prescription medicines, and there are rules on health claims and before-and-after images. Read the current policies before listing anything in a sensitive category.</p>
+<p>Rejected items appear in Commerce Manager with a reason. Fix the product data or listing and request a review where that option is offered. Repeated violations can lead to restrictions on your shop or ad account, so keep listings honest: accurate descriptions, real photos and prices that match your site.</p>
+
+<h2>Keeping prices and stock in sync</h2>
+<p>Ads showing old prices or sold-out products waste money and annoy shoppers. To stay accurate:</p>
+<ul>
+  <li><strong>Know what triggers a sync:</strong> the official extension usually updates products when they are saved in WordPress. Bulk imports, stock updates from inventory software or direct database edits may not trigger it, so check a few products after big changes</li>
+  <li><strong>Match feed schedules to reality:</strong> if prices change daily, a weekly fetch isn't enough. Before and after a festival sale, trigger a manual update</li>
+  <li><strong>Mark stock correctly:</strong> out-of-stock items should show as out of stock so catalogue ads stop promoting them, and drafts or deleted products should leave the catalogue</li>
+  <li><strong>Review diagnostics weekly:</strong> Commerce Manager flags mismatches, missing fields and rejected items</li>
+  <li><strong>Test after updates:</strong> plugin or WooCommerce updates can break syncing, so compare a few products in Commerce Manager with your live site</li>
+</ul>
+<p>Accurate stock in WooCommerce is the foundation of all this; see <a href="/blog/woocommerce-inventory-management/">WooCommerce inventory management</a>. Each month, compare the purchases Meta reports with your actual WooCommerce orders, so you know whether the catalogue is paying for itself.</p>
+
+<p>Need your WooCommerce store connected to Meta and Google properly, with tracking that matches? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/landing-page-design/">landing page design</a> for campaign pages.</p>
+`,
+  },
+  {
+    slug: 'website-for-dog-trainers',
+    seoTitle: 'Websites for Dog Trainers and Behaviourists',
+    title: 'Websites for Dog Trainers and Behaviourists: Winning Owners\' Trust',
+    description: 'What dog owners check before hiring a trainer: programme pages, honest methods, home visits, real qualifications, booking forms and videos shared with consent.',
+    date: '2026-10-01',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>People rarely look for a dog trainer when everything is fine. They search because their puppy bites, their dog pulls on the lead, barks at every scooter or has started growling at visitors. They're often embarrassed, sometimes worried, and they want two answers quickly: can you help with this specific problem, and will you treat their dog kindly? A good website answers both before they pick up the phone.</p>
+<p>This guide is for dog trainers, behaviour consultants and training academies. If you also run grooming, boarding or a pet shop, the guide to <a href="/blog/website-for-pet-shops-grooming/">websites for pet shops, grooming and boarding</a> covers those services.</p>
+
+<h2>What dog owners want to know before they call</h2>
+<ul>
+  <li>Whether you deal with their problem: toilet training, puppy biting, pulling, jumping, barking, reactivity, aggression or separation anxiety</li>
+  <li>How you train, and whether you use harsh equipment or punishment</li>
+  <li>Whether you come home, run classes, or both, and which areas you cover</li>
+  <li>How many sessions it usually takes, how packages work and what affects the price</li>
+  <li>What they will need to practise between sessions</li>
+  <li>Who you are, what training you've had and how long you've worked with dogs</li>
+  <li>Whether you've worked with dogs like theirs: Indies, large breeds, rescues or senior dogs</li>
+</ul>
+
+<h2>Give each programme its own page</h2>
+<p>A single "Services" page listing everything forces owners to guess. Separate pages rank better for specific searches and let you explain each programme properly.</p>
+<table>
+  <thead>
+    <tr><th>Programme</th><th>What to explain</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Puppy foundation</td><td>Age range, toilet training, biting, socialisation, vaccination requirements for classes</td></tr>
+    <tr><td>Basic obedience and lead manners</td><td>Skills covered, number of sessions, what "finished" looks like</td></tr>
+    <tr><td>Behaviour consultations</td><td>Reactivity, fear, aggression and anxiety; the assessment process; when you refer to a vet</td></tr>
+    <tr><td>Group classes</td><td>Venue, batch size, schedule and what to bring</td></tr>
+    <tr><td>Board-and-train (if offered)</td><td>Where the dog stays, the daily routine, how owners get updates and the handover sessions</td></tr>
+    <tr><td>Online consultations</td><td>What can and can't be done over a video call</td></tr>
+  </tbody>
+</table>
+<p>On each page, describe a typical session, the owner's homework and an honest picture of progress. Behaviour change depends on the dog, its history and how consistently the family practises, so avoid promises like "fixed in seven days".</p>
+
+<h2>Explain your methods honestly</h2>
+<p>More owners now ask how a trainer works before they hire one. A short "How I train" page builds more trust than labels like "positive" or "balanced" with no detail behind them.</p>
+<ul>
+  <li>Describe your approach in plain words: how you reward behaviour you want, and how you handle behaviour you don't</li>
+  <li>Say which equipment you use and which you don't, such as choke chains, prong collars or shock collars</li>
+  <li>Explain what happens in a first session and why you ask so many questions</li>
+  <li>Be clear that sudden behaviour changes can have medical causes, and that you may ask owners to see a vet first</li>
+</ul>
+<p>Whatever your approach, make sure the website matches what you actually do in sessions. An owner who reads one thing and sees another won't come back, and will probably say so in a review.</p>
+
+<h2>Qualifications: say exactly what you hold</h2>
+<p>Dog training generally isn't a licensed profession in India the way veterinary practice is, so almost anyone can call themselves a trainer. That's exactly why specific, checkable details stand out:</p>
+<ul>
+  <li>Name each course or certification in full, with the organisation that issued it and the year</li>
+  <li>Keep formal certifications separate from workshops and seminars you attended</li>
+  <li>Describe your hands-on experience honestly, such as the years you've trained and the kinds of dogs you work with most</li>
+  <li>Use "behaviourist" or "behaviour consultant" only if your training supports it, and never "Dr." unless you're a qualified vet</li>
+  <li>Mention that you work alongside a vet on difficult cases only if the arrangement is real</li>
+</ul>
+<p>Keep your About page personal too: why you started and the problems you most enjoy working on.</p>
+
+<h2>Home visits, classes and service areas</h2>
+<p>Many trainers in Indian cities work mainly through home visits, with weekend group classes in a park or a rented ground. Make the logistics clear:</p>
+<ul>
+  <li>The areas you cover for home visits, and whether travel to distant areas costs extra</li>
+  <li>Class venues with a map, timings and parking details</li>
+  <li>Session lengths, and whether timings move to early mornings and evenings in summer, or indoors during the monsoon</li>
+  <li>Vaccination and health requirements for classes, and how you handle dogs that react to other dogs</li>
+</ul>
+<p>If you only do home visits, set up your Google Business Profile as a service-area business with your home address hidden; see <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a>.</p>
+
+<h2>Booking: start with an assessment</h2>
+<p>Most trainers want to understand the dog before recommending a package. A short assessment form does this and filters out mismatched enquiries:</p>
+<ol>
+  <li>Owner name, phone or WhatsApp number and area</li>
+  <li>Dog's name, age, breed or type, and how long they've had the dog</li>
+  <li>The main problem in their own words, and how long it has been happening</li>
+  <li>Any bite history, and who lives at home (children, older relatives, other pets)</li>
+  <li>Vaccination status and any health issues</li>
+  <li>Preference: home visit, class or online</li>
+</ol>
+<p>Then reply on WhatsApp to schedule the first session. For classes with fixed batches, online booking with a UPI deposit works well, as long as cancellation and rescheduling rules are written clearly.</p>
+
+<h2>Videos and stories, shared with permission</h2>
+<p>Video is the most convincing proof a trainer can show: a dog walking calmly past other dogs, or a puppy settling on a mat while the family eats. Handle it carefully:</p>
+<ul>
+  <li>Get the owner's written permission before filming for your website or social media, and agree where the video will appear</li>
+  <li>Avoid showing children's faces, house numbers or anything that identifies the family's home unless they're comfortable with it</li>
+  <li>Show real progress, including the slow middle stages, not only a dramatic before and after</li>
+  <li>Use first names or initials in written stories unless the owner is happy to be named</li>
+</ul>
+<p>Host videos on YouTube and show a lightweight thumbnail until the visitor presses play, so pages stay fast; see <a href="/blog/video-on-business-website/">video on your business website</a>.</p>
+
+<h2>Local SEO and speed</h2>
+<p>Owners search phrases like "dog trainer in {area}", "puppy training {city}" or "dog behaviourist for aggression {city}". Use these naturally in page titles and headings, keep your Google Business Profile complete with services and genuine photos, and ask owners for a review once they see progress. Most visitors use phones, so keep call and WhatsApp buttons easy to tap and pages light.</p>
+
+<p>Want a training website that explains your methods clearly and brings in the right enquiries? See <a href="/wordpress-website-development/">WordPress website development</a>, or a focused <a href="/landing-page-design/">landing page</a> for puppy class or behaviour consultation ads.</p>
+`,
+  },
+  {
+    slug: 'hindi-devanagari-fonts-website',
+    seoTitle: 'Hindi and Devanagari Fonts for Websites: A Practical Guide',
+    title: 'Hindi and Devanagari Fonts on Your Website: Readable, Fast and Tested',
+    description: 'How to choose readable Hindi and Devanagari fonts, pair them with English, set sizes and line height, load them efficiently and test on real phones.',
+    date: '2026-10-01',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'wordpress-speed-optimization'],
+    body: `
+<p>A Hindi version of your website can win customers who prefer their own language, but only if the text is comfortable to read. Devanagari, the script used for Hindi, Marathi, Sanskrit and Nepali, behaves differently from English on screen. Pick the wrong font or copy your English line spacing, and matras get clipped, conjuncts break and the page looks cramped. Here's how to choose, load and test fonts for Hindi and other Indian scripts.</p>
+<p>If you're still deciding how to structure a Hindi and English site, start with <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</p>
+
+<h2>Start with Unicode text, not images or legacy fonts</h2>
+<p>Two habits from print still cause problems on Indian websites:</p>
+<ul>
+  <li><strong>Legacy fonts such as Kruti Dev or Chanakya:</strong> text typed in these fonts is stored as English letters that only look like Hindi when that exact font is installed. On a website it shows as gibberish, can't be searched and isn't read by screen readers. Convert it to Unicode first, and proofread the result, because converters often get matras and half letters wrong.</li>
+  <li><strong>Hindi text inside images:</strong> banners and pamphlets saved as JPGs can't be read by Google, can't be zoomed cleanly and often look blurry on phones. Keep headings, offers and contact details as real text.</li>
+</ul>
+<p>New content typed on phones and computers is usually Unicode already; the risk is old files from a DTP operator or printer.</p>
+
+<h2>Choosing a readable Devanagari font</h2>
+<p>For body text, readability matters more than personality. Look for:</p>
+<ul>
+  <li><strong>Correct conjuncts:</strong> combinations such as क्ष, त्र, ज्ञ, श्र, द्ध and र्क should appear as proper joined forms, not broken pieces with a visible halant</li>
+  <li><strong>Clear matras:</strong> ि, ी, ु, ू, the nukta and the nasal marks should stay distinct at small sizes</li>
+  <li><strong>Simple, open shapes:</strong> calligraphic and display fonts suit a festival banner headline but tire readers in paragraphs</li>
+  <li><strong>Real weights:</strong> at least regular and bold, designed for the script rather than faked by the browser</li>
+</ul>
+<p>Well-known free options on Google Fonts include Noto Sans Devanagari, Mukta, Hind, Poppins and Baloo 2 for clean sans-serif text, and Noto Serif Devanagari or Tiro Devanagari Hindi for a more traditional, bookish feel. Families such as Noto, Hind and Baloo also have versions for Bengali, Gujarati, Tamil, Telugu and other scripts, which helps if you add more languages later. Check each font's character coverage and licence before you commit.</p>
+
+<h2>Pairing Hindi with English text</h2>
+<p>Hindi pages almost always contain English as well: brand names, product codes, email addresses. There are two approaches:</p>
+<ol>
+  <li><strong>One family that covers both scripts.</strong> Fonts like Poppins, Mukta, Hind and Baloo 2 include Latin and Devanagari designed to sit together, so mixed lines look consistent.</li>
+  <li><strong>Your brand's English font plus a matching Devanagari font.</strong> List both in the font stack, English first. The browser uses the first font for every character it contains and falls back to the next one for the rest, so English comes from your brand font and Hindi from the Devanagari font.</li>
+</ol>
+<p>With the second approach, match the overall feel and compare both fonts in a real mixed sentence, not a font preview.</p>
+<p>Also decide on numerals. Many Hindi websites use international digits (1, 2, 3) for prices and phone numbers, while Devanagari digits (१, २, ३) suit some religious or literary content. Whichever you choose, stay consistent.</p>
+
+<h2>Sizes, line height and spacing</h2>
+<p>Devanagari hangs from a headline bar (the shirorekha), with matras rising above it and dropping below, so it needs more vertical room than English. Good starting points, to adjust by eye:</p>
+<ul>
+  <li><strong>Body size:</strong> often a pixel or two larger than your English body text, because Devanagari tends to look smaller at the same size</li>
+  <li><strong>Line height:</strong> more generous than English, roughly 1.6 to 1.8 for paragraphs, so marks on one line don't touch the next</li>
+  <li><strong>Headings:</strong> avoid very tight line height on headings that wrap, or upper and lower marks get clipped</li>
+  <li><strong>Letter-spacing:</strong> leave it at normal, as extra tracking can break the connected headline bar</li>
+  <li><strong>Emphasis:</strong> Devanagari has no capital letters and most fonts have no italic, so browsers slant it artificially. Use bold or colour instead.</li>
+</ul>
+<p>Watch fixed-height buttons, menu items and form fields. If they cut off overflowing content, Hindi labels can lose their top or bottom marks.</p>
+
+<h2>Loading Devanagari fonts efficiently</h2>
+<p>Devanagari fonts contain far more glyphs than English ones, to cover conjuncts and vowel combinations, so the files are larger. The advice in <a href="/blog/web-fonts-performance/">web fonts and website speed</a> applies even more strongly here:</p>
+<ul>
+  <li><strong>Load only the weights you use.</strong> Regular and bold are usually enough for Hindi text.</li>
+  <li><strong>Keep the Devanagari file separate from the Latin one,</strong> with a unicode-range in the @font-face rule, so browsers download it only on pages containing Hindi characters. Google Fonts already splits fonts this way; keep that structure if you self-host.</li>
+  <li><strong>Don't over-subset.</strong> Cutting a Devanagari font down to "the characters you use" can strip the shaping data that builds conjuncts. Stick to the standard Devanagari subset.</li>
+  <li><strong>Consider system fonts for body text.</strong> Devices usually ship with a Devanagari font, typically Noto on Android, Kohinoor Devanagari on Apple devices and Nirmala UI on Windows, so nothing needs downloading, at the cost of a slightly different look per device.</li>
+  <li><strong>Use font-display: swap,</strong> so readers on slow connections see text straight away in a fallback font.</li>
+</ul>
+
+<h2>Setting it up in WordPress</h2>
+<ul>
+  <li>Make sure Hindi pages carry the correct language attribute (lang="hi") so browsers, screen readers and search engines know the language. Multilingual plugins usually set this; check your page source.</li>
+  <li>Use the :lang(hi) CSS selector to give Hindi pages their own font, size and line height without touching English pages.</li>
+  <li>In Elementor or a block theme, set typography as global styles, and make sure the theme, builder and plugins aren't each loading the same font.</li>
+  <li>Check WooCommerce order emails and PDF invoices too; some PDF generators need extra font setup before Devanagari renders correctly.</li>
+</ul>
+
+<h2>Test on real phones</h2>
+<p>A font that looks perfect on your laptop can behave differently on a budget Android phone or an older iPhone. Before launch:</p>
+<ol>
+  <li>Write a test paragraph with difficult conjuncts, every matra, nukta letters such as क़ and ज़, numbers and a few English words</li>
+  <li>Check it on a budget Android phone, an iPhone, and Windows and Mac browsers</li>
+  <li>Look closely at wrapped headings, buttons, menus, forms and the footer</li>
+  <li>Type Hindi into your contact form and search box, and confirm it arrives correctly in the enquiry email</li>
+  <li>Throttle the connection in browser developer tools and watch how text appears while the font loads</li>
+  <li>Ask a native Hindi reader to read a full page; they'll spot awkward rendering faster than anyone</li>
+</ol>
+
+<p>Building a Hindi or bilingual website that reads well and loads fast? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> if heavy fonts are already slowing your site down.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-product-filters',
+    seoTitle: 'WooCommerce Product Filters and Faceted Search Guide',
+    title: 'WooCommerce Product Filters: Faceted Search That Helps Buyers (and SEO)',
+    description: 'Which WooCommerce filters help buyers, setting up attributes, built-in filters vs plugins, keeping filtered pages fast and handling filter URLs for SEO.',
+    date: '2026-10-01',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-seo-services'],
+    body: `
+<p>Once a category grows past a few dozen products, scrolling stops working. Shoppers want to narrow hundreds of kurtas down to "cotton, size L, in stock" in a few taps. Product filters, also called faceted search or layered navigation, do exactly that. Badly planned filters do the opposite: confusing options, slow pages and thousands of near-duplicate URLs for Google to crawl. Here's how to get them right in WooCommerce.</p>
+
+<h2>Does your store need filters yet?</h2>
+<p>Filters earn their place when categories are large and products differ in ways buyers care about. A store with twenty products in clear categories is usually better served by good category pages and a working search box. Consider filters when shoppers regularly scroll through several pages of a category, or keep asking on WhatsApp "do you have this in blue?" or "is this available in XL?".</p>
+
+<h2>Choose filters from how buyers decide</h2>
+<p>The right filters depend on the product, not on what a plugin happens to offer. Ask what a buyer checks first, and use your site search terms and customer questions as evidence.</p>
+<table>
+  <thead>
+    <tr><th>Store type</th><th>Filters that usually help</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Clothing and ethnic wear</td><td>Size, colour, fabric, occasion, price</td></tr>
+    <tr><td>Electronics and appliances</td><td>Brand, capacity or wattage, key features, price</td></tr>
+    <tr><td>Auto parts</td><td>Vehicle make, model and year, brand</td></tr>
+    <tr><td>Food and groceries</td><td>Veg or non-veg, dietary needs, pack size, brand</td></tr>
+    <tr><td>Industrial and B2B products</td><td>Material, dimensions, specification ranges</td></tr>
+  </tbody>
+</table>
+<p>A few general rules:</p>
+<ul>
+  <li>Show the most-used filters first and collapse the rest</li>
+  <li>Show product counts next to options, and hide options with no matching products</li>
+  <li>Add an "in stock only" option if many items sell out</li>
+  <li>Skip filters where almost every product has the same value</li>
+</ul>
+
+<h2>Set up attributes properly first</h2>
+<p>Filters are only as good as the product data behind them. WooCommerce's built-in filters, and most filter plugins, work best with <strong>global attributes</strong> (Products, then Attributes) rather than custom attributes typed into a single product. So:</p>
+<ul>
+  <li>Create global attributes for everything you want to filter by, such as size, colour, fabric and brand</li>
+  <li>Use one consistent set of terms. "Red", "red" and "Maroon Red" become three separate filter options</li>
+  <li>Group sensibly: shoppers filter by "Red", not by fourteen shades, so keep a broad colour attribute and mention the exact shade in the description</li>
+  <li>Fill in attributes for every product, including old ones; a product with no fabric set vanishes when someone filters by fabric</li>
+  <li>For variable products, test whether filtering by a size hides products where that size is sold out. The result depends on your WooCommerce version, the "hide out of stock" setting and your filter tool</li>
+</ul>
+<p>For how attributes and variations fit together, see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>
+
+<h2>Built-in filters or a plugin?</h2>
+<p>WooCommerce includes filter blocks for price, attributes, stock status and rating, which cover simple needs well on block-based themes. Larger catalogues and page-builder sites often use a dedicated plugin, such as FacetWP, YITH WooCommerce Ajax Product Filter, Filter Everything or Crocoblock's JetSmartFilters on Elementor sites. Features and plans change, so compare current versions on:</p>
+<ul>
+  <li>Whether results update without a full page reload</li>
+  <li>Speed with your real product count, ideally tested on a staging copy</li>
+  <li>Mobile layout and compatibility with your theme, builder and caching</li>
+  <li>How it builds filter URLs, and whether it lets you control indexing</li>
+</ul>
+<p>Most shoppers will filter on a phone. Put "Filter" and "Sort" buttons at the top of category pages, open filters in a full-screen panel, show how many products match before they tap "Apply", and show active filters as chips that are easy to remove, with a "Clear all" option.</p>
+
+<h2>Keep filtered pages fast</h2>
+<p>Filters are hard work for a server. Every combination is a different page, so page caching rarely helps, and counting matching products for every option means more database queries. To keep things quick:</p>
+<ul>
+  <li>Prefer a filter tool that builds its own index of product data instead of querying everything live on each click</li>
+  <li>Filter on attributes and categories rather than custom fields where possible, as they're usually faster to query</li>
+  <li>Limit the number of filters and options shown at once</li>
+  <li>Use object caching, such as Redis, if your host supports it</li>
+  <li>Watch for bots crawling endless filter combinations, which can push server load up; the SEO steps below help here too</li>
+</ul>
+<p>For store-wide fixes, see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a>.</p>
+
+<h2>Filter URLs and SEO: avoid crawl waste</h2>
+<p>Most filters add parameters to the URL, such as ?filter_colour=red&amp;filter_size=l, plus sorting parameters like ?orderby=price. A handful of colours, sizes, price ranges and sort orders can create thousands of URLs for one category, nearly all showing similar products. Google may spend its time crawling those instead of your real product and category pages, and some may get indexed as thin duplicates.</p>
+<p>Your main options, which Google's own documentation on faceted navigation also discusses:</p>
+<ul>
+  <li><strong>A canonical tag</strong> on filtered pages pointing to the main category. It's a hint that consolidates signals, but the URLs still get crawled; see <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</li>
+  <li><strong>Noindex</strong> on filtered pages. It keeps them out of search results, but they're still crawled.</li>
+  <li><strong>Blocking filter parameters in robots.txt.</strong> This stops the crawling itself, which matters most for large stores. But Google then can't see a noindex or canonical on those URLs, so if filtered pages are already indexed, let noindex remove them first and block afterwards.</li>
+</ul>
+<p>For most small and medium stores, a sensible default is: filtered and sorted URLs carry either noindex or a canonical to the category (not both), and crawl-heavy parameters are blocked once you've confirmed they're out of the index. Your SEO or filter plugin may handle some of this, so check what actually appears in the page source, then watch the Pages and Crawl stats reports in Search Console.</p>
+
+<h2>When a filtered view deserves to rank</h2>
+<p>Some combinations match real searches, such as "cotton kurtis", "Bosch drill machines" or "sugar-free sweets". Rather than hoping a filter URL ranks, create a proper subcategory, brand page or landing page with a clean URL, a short helpful introduction, its own title and description, and links from your menus or category pages. That gives Google a stable page to rank and gives shoppers a page written for them. The <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a> covers category page structure in more detail.</p>
+
+<p>Need filters that help shoppers without slowing your store or cluttering Google's index? See <a href="/woocommerce-developer/">WooCommerce development</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
 ];
