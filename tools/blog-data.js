@@ -819,6 +819,8 @@ module.exports = [
   <li>You want content that isn't tied to a third-party builder</li>
 </ul>
 
+<p>Lock-in shows most clearly when a plugin is removed; see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks vs page-builder widgets</a> for how each one stores your content.</p>
+
 <h2>What about speed?</h2>
 <p>Gutenberg sites are usually lighter out of the box. But a well-built Elementor site on good hosting, with a lightweight theme like Hello Elementor, caching and optimized images, can still be very fast. Most slow Elementor sites are slow because of how they were built, not because of Elementor itself.</p>
 
@@ -4800,6 +4802,8 @@ module.exports = [
 
 <h2>What is headless WordPress?</h2>
 <p>In a normal WordPress site, WordPress manages content <em>and</em> displays the website using a theme. In a headless setup, WordPress only manages content; a separate front end (often built with a JavaScript framework such as Next.js) fetches that content and displays the site.</p>
+
+<p>That separate front end usually fetches its content through the WordPress REST API; see <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a> for what it is and what it makes public.</p>
 
 <h2>Potential benefits</h2>
 <ul>
@@ -17479,6 +17483,8 @@ Template: astra
     <tr><td>The parent theme's files</td><td>Never; updates overwrite them</td></tr>
   </tbody>
 </table>
+
+<p>Whichever home you choose, most custom code plugs into WordPress through hooks; see <a href="/blog/wordpress-hooks-actions-filters/">WordPress hooks, actions and filters explained</a>.</p>
 
 <h2>Questions to ask</h2>
 <ol>
@@ -37155,6 +37161,263 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ul>
 
 <p>Want to take custom orders and bulk quotes online? See <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-rest-api-explained',
+    seoTitle: 'WordPress REST API Explained for Business Owners',
+    title: 'The WordPress REST API Explained: What It Is and When You Need It',
+    description: 'What the WordPress REST API is, what relies on it, what it shows publicly by default (like user lists), how application passwords work and when you need it.',
+    date: '2026-10-01',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'hire-wordpress-developer'],
+    body: `
+<p>If a developer has mentioned "the REST API", or a security scan has flagged /wp-json/ on your site, you may have wondered what it is and whether to worry. In short: it's a built-in part of WordPress that lets software talk to your website, it's already working on your site, and it needs sensible limits rather than switching off. Here's what business owners and junior developers should know.</p>
+
+<h2>What the REST API is, in plain language</h2>
+<p>Your website normally answers visitors with web pages: HTML designed for people to read. The REST API is a second doorway that answers with plain data instead, in a format called JSON that other programs can read easily. Ask it for your latest blog posts and it returns titles, dates, content and links, without any design.</p>
+<p>Each type of data has its own address, called an endpoint, under /wp-json/ on your domain. For example:</p>
+<pre><code>https://yoursite.com/wp-json/wp/v2/posts
+https://yoursite.com/wp-json/wp/v2/pages
+https://yoursite.com/wp-json/wp/v2/categories</code></pre>
+<p>Programs can read data from these endpoints and, with permission, create, update or delete it. The REST API has been part of WordPress core since 2016, and plugins can add their own endpoints alongside the built-in ones.</p>
+
+<h2>What already uses it on your site</h2>
+<p>Even if nobody has ever "set up" an API for you, it's probably busy:</p>
+<ul>
+  <li><strong>The block editor:</strong> when you edit a page in Gutenberg, the editor loads and saves content through the REST API in the background. This is why switching the API off completely can break editing.</li>
+  <li><strong>Plugins:</strong> many form, SEO, booking and analytics plugins use it to save settings, submit forms or load data without reloading the page.</li>
+  <li><strong>WooCommerce:</strong> parts of its admin screens and its newer block-based cart and checkout rely on API endpoints, and it has its own API for connecting a store to inventory, accounting or shipping software.</li>
+  <li><strong>Apps and integrations:</strong> mobile apps, automation tools and CRMs can read or write content through it.</li>
+  <li><strong>Headless websites:</strong> where a separate front end fetches all its content from WordPress; see <a href="/blog/headless-wordpress-small-business/">headless WordPress for small businesses</a> for whether that's worth it.</li>
+</ul>
+
+<h2>What's public by default</h2>
+<p>Anyone can read the same content through the API that they could already see on your website: published posts and pages, categories, tags and media details. Drafts, private posts and site settings need a logged-in user with the right permissions. Custom post types only appear if they're registered to show in the API, which matters when you structure content such as properties or courses; see <a href="/blog/custom-post-types-fields/">custom post types and custom fields</a>.</p>
+<h3>The user listing</h3>
+<p>One endpoint surprises people: /wp-json/wp/v2/users. For visitors who aren't logged in, it lists users who have published posts, with each one's display name, profile details and a URL slug. By default that slug is based on the login username, so the list can hand bots the usernames they want for password-guessing attacks.</p>
+<p>That isn't a hack in itself (author archive pages often reveal the same slug), but there's no reason to advertise it. Many security plugins can restrict the users endpoint for logged-out visitors. A developer can do the same with a short snippet, while logged-in editors keep full access:</p>
+<pre><code>add_filter( 'rest_endpoints', function ( $endpoints ) {
+    if ( ! is_user_logged_in() ) {
+        foreach ( array_keys( $endpoints ) as $route ) {
+            if ( str_starts_with( $route, '/wp/v2/users' ) ) {
+                unset( $endpoints[ $route ] );
+            }
+        }
+    }
+    return $endpoints;
+} );</code></pre>
+<p>Code like this belongs in a small site-specific plugin, not a parent theme, and should be tested on a copy of the site first. Remember that the real protection is strong passwords and two-factor authentication, which make a known username useless to an attacker; see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
+
+<h2>Authentication and application passwords</h2>
+<p>Reading public content needs no login. Anything that changes or reads private data needs the request to prove who it's from. Common ways:</p>
+<ul>
+  <li><strong>Your normal login:</strong> when you're logged in to the dashboard, the editor and plugins send requests with your login cookie plus a security token (a nonce), so you never notice</li>
+  <li><strong>Application passwords:</strong> built into WordPress since version 5.6, for external apps and services</li>
+  <li><strong>Plugin-specific keys:</strong> WooCommerce, for example, issues its own API keys with read, write or read/write permission, and some plugins add other methods such as tokens</li>
+</ul>
+<p>An application password is a long, separate password generated for one app from your profile page under <strong>Users</strong>. It works only for API requests, not for logging in to the dashboard. It's shown once, and it can be revoked on its own without changing your main password. By default, WordPress only offers application passwords on sites running HTTPS.</p>
+<p>Good habits:</p>
+<ul>
+  <li>Create one application password per service, with a clear name such as "CRM sync"</li>
+  <li>Connect integrations through a dedicated user with the lowest role that works, because the app can do whatever that user can do</li>
+  <li>Revoke passwords for services you've stopped using, and any you don't recognise</li>
+  <li>Never give an integration, or the person setting it up, your main admin password</li>
+</ul>
+
+<h2>When a business actually needs the REST API</h2>
+<p>Every WordPress site uses it. The real question is whether you need someone to build something with it. A rough guide:</p>
+<table>
+  <thead><tr><th>Situation</th><th>Custom API work needed?</th></tr></thead>
+  <tbody>
+    <tr><td>Brochure site with a contact form and blog</td><td>No; it works quietly in the background</td></tr>
+    <tr><td>Sending website enquiries to a CRM or Google Sheet</td><td>Usually not; many form plugins and CRMs have ready-made connections (see <a href="/blog/connect-website-forms-to-crm/">connecting forms to a CRM</a>)</td></tr>
+    <tr><td>Syncing WooCommerce orders or stock with inventory, billing or ERP software</td><td>Often, if no reliable ready-made connector exists</td></tr>
+    <tr><td>A mobile app that shows your products, courses or listings</td><td>Yes; the app reads its content from the API</td></tr>
+    <tr><td>Live calculators, filters or dashboards that update without reloading</td><td>Often, through custom endpoints</td></tr>
+    <tr><td>A headless front end</td><td>Yes, for everything</td></tr>
+  </tbody>
+</table>
+<p>If a developer proposes custom endpoints, ask three questions: who can call each one, what data does it return, and how are permissions checked?</p>
+
+<h2>Don't switch it off; restrict it</h2>
+<p>Some older security advice says to disable the REST API entirely. On a modern site that tends to break the block editor, forms, WooCommerce features and plugin settings. A better approach:</p>
+<ul>
+  <li>Restrict specific endpoints that expose more than they should, such as the user listing</li>
+  <li>Keep plugins updated: custom endpoints that forget to check permissions are a common source of plugin vulnerabilities</li>
+  <li>Deactivate and delete plugins you no longer use, so their endpoints and code are gone</li>
+  <li>Use a firewall or security plugin to rate-limit abusive requests to /wp-json/</li>
+  <li>Test the editor, forms and checkout after changing any API-related setting</li>
+</ul>
+
+<p>Planning an integration, an app or a headless build, or want your site's API locked down sensibly? I build and maintain integrations as part of <a href="/wordpress-website-development/">WordPress website development</a>, or you can <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a> for a specific job.</p>
+`,
+  },
+  {
+    slug: 'wordpress-hooks-actions-filters',
+    seoTitle: 'WordPress Hooks Explained: Actions vs Filters',
+    title: 'WordPress Hooks Explained: Actions and Filters in Plain English',
+    description: 'A plain-English guide to WordPress hooks: what actions and filters do, a tiny example of each, where custom code should live and why random snippets are risky.',
+    date: '2026-10-01',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'hire-wordpress-developer'],
+    body: `
+<p>Ask a WordPress developer how they changed something on your site and you may hear "I used a hook". Hooks are why WordPress can be customised so heavily without anyone editing its core files. Understanding them, even roughly, helps business owners judge whether work has been done properly, and helps junior developers avoid changes that break after updates. Here are actions and filters in plain language, with one tiny example of each.</p>
+
+<h2>What a hook is</h2>
+<p>As WordPress builds a page, it passes through hundreds of named checkpoints: loading plugins, preparing the page header, fetching a post, printing the content, building the footer. At each checkpoint it effectively asks, "Does anyone want to do something here, or change this?"</p>
+<p>Those checkpoints are hooks. WordPress core places them, and well-built themes and plugins add their own; WooCommerce, for example, has hooks throughout its product pages, cart, checkout and order emails. Your custom code "hooks in" by telling WordPress which checkpoint to listen for and which function to run when it gets there.</p>
+<p>There are two kinds, and the difference is simple:</p>
+<ul>
+  <li><strong>Actions</strong> let you <em>do</em> something at a particular moment</li>
+  <li><strong>Filters</strong> let you <em>change</em> a piece of data before WordPress uses it</li>
+</ul>
+
+<h2>Actions: do something at the right moment</h2>
+<p>An action runs your code when something happens: the page head is being printed, a post is saved, a user registers, an order is placed. This action adds a site verification tag to the head of every page:</p>
+<pre><code>add_action( 'wp_head', function () {
+    echo '&lt;meta name="example-verification" content="your-code-here"&gt;';
+} );</code></pre>
+<p><code>wp_head</code> is the name of the hook, and the function is what runs when WordPress reaches it. Nothing is handed back; the action simply does its job. Other common actions include <code>init</code> (WordPress has finished loading), <code>wp_enqueue_scripts</code> (the right place to load CSS and JavaScript files), <code>save_post</code> (a post was saved) and <code>woocommerce_thankyou</code> (a customer reached the order confirmation page).</p>
+
+<h2>Filters: change something before it's used</h2>
+<p>A filter receives a value, lets you modify it and expects you to hand it back. This one shortens automatic post excerpts from WordPress's default of 55 words to 30:</p>
+<pre><code>add_filter( 'excerpt_length', function ( $length ) {
+    return 30;
+} );</code></pre>
+<p>Filters sit behind many everyday tweaks: changing a button label such as WooCommerce's "Add to cart", adjusting the wording of an email, adding a class to menu items or changing how page titles are built.</p>
+<p>The golden rule: <strong>a filter must always return a value</strong>. If a filter on post content forgets to return anything, posts across the site can appear blank. It's one of the most common mistakes in copied snippets.</p>
+<table>
+  <thead><tr><th></th><th>Action</th><th>Filter</th></tr></thead>
+  <tbody>
+    <tr><td>Purpose</td><td>Do something at a moment</td><td>Change a value</td></tr>
+    <tr><td>Added with</td><td><code>add_action()</code></td><td><code>add_filter()</code></td></tr>
+    <tr><td>Must return a value?</td><td>No</td><td>Yes, always</td></tr>
+    <tr><td>Business example</td><td>Notify the sales team when an order is placed</td><td>Change the "Add to cart" button text</td></tr>
+  </tbody>
+</table>
+<p>Both accept an optional priority number, 10 by default. Lower numbers run earlier, which matters when several plugins hook into the same place.</p>
+
+<h2>Why hooks beat editing core or plugin files</h2>
+<p>The tempting shortcut is to edit a plugin or theme file directly. It works until the next update replaces the file and silently wipes out the change. Editing WordPress core files is worse: updates overwrite them too, and a mistake can affect every page.</p>
+<p>Hooks keep your changes in your own file, separate from code you don't control. WordPress, the theme and plugins can all be updated, and your customisation keeps working as long as the hook still exists. Hooks can also undo things: <code>remove_action()</code> and <code>remove_filter()</code> switch off behaviour a theme or plugin adds, without touching its files.</p>
+<p>Theme templates follow the same principle: rather than editing the parent theme, a <a href="/blog/wordpress-child-theme-explained/">child theme</a> lets you override them safely.</p>
+
+<h2>Where custom code should live</h2>
+<p>Hook code has to go somewhere. There are three sensible homes:</p>
+<ul>
+  <li><strong>A child theme's functions.php:</strong> for design-related code that belongs to the current theme. It stops running if you switch themes, which is fine for styling tweaks but not for business features.</li>
+  <li><strong>A small site-specific plugin:</strong> for functionality that should survive a redesign, such as custom post types, WooCommerce rules or integrations. It can be as simple as one PHP file in wp-content/plugins with a short header:
+<pre><code>&lt;?php
+/*
+Plugin Name: Site Functions
+Description: Custom code for this website.
+*/</code></pre>
+  </li>
+  <li><strong>A code snippets plugin:</strong> tools such as Code Snippets or WPCode store small snippets in the database and let you switch each one on or off from the dashboard. Handy for a handful of tweaks, but anyone with admin access can edit them, and they're easy to forget about.</li>
+</ul>
+<p>Never put custom code in a parent theme, a third-party plugin or WordPress core. For a fuller decision guide, see <a href="/blog/plugin-vs-custom-code-wordpress/">plugin or custom code</a>.</p>
+
+<h2>The risks of pasting random snippets</h2>
+<p>Search for almost any WordPress tweak and you'll find a snippet ready to copy. Many are fine. Some are years out of date, written for a different setup, or simply wrong. Common problems:</p>
+<ul>
+  <li><strong>Site crashes:</strong> one missing bracket, or a function your PHP version no longer supports, can take the site down; see <a href="/blog/fix-wordpress-critical-error/">fixing the WordPress critical error</a></li>
+  <li><strong>Security holes:</strong> snippets that print data without escaping it, skip permission checks or switch off security features</li>
+  <li><strong>Hidden slowdowns:</strong> code that runs a heavy database query on every page load</li>
+  <li><strong>Conflicts:</strong> two snippets, or a snippet and a plugin, doing the same job in different ways</li>
+  <li><strong>Mystery code:</strong> six months later, nobody remembers what a snippet does or whether it's safe to remove</li>
+</ul>
+<h3>A safer routine</h3>
+<ol>
+  <li>Understand what each line does before adding it, or ask a developer</li>
+  <li>Take a backup and test on a staging copy first; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
+  <li>Keep SFTP or hosting file manager access handy, so a broken snippet can be removed even if the dashboard won't load</li>
+  <li>Add a comment above each snippet: what it does, why, and when it was added</li>
+  <li>Avoid editing PHP through the dashboard's theme file editor, which has no proper version history</li>
+</ol>
+
+<h2>What business owners should ask</h2>
+<p>You don't need to write hooks to manage a developer who does. Ask:</p>
+<ul>
+  <li>Were any theme, plugin or core files edited directly? The answer should be no.</li>
+  <li>Where does our custom code live, and is it backed up or in version control?</li>
+  <li>Is each customisation documented, so another developer could take over?</li>
+  <li>Will this keep working after updates, and what should we check if it doesn't?</li>
+</ul>
+
+<p>Need a feature added, or a tangle of old snippets cleaned up? I write hook-based customisations that survive updates as part of <a href="/wordpress-website-development/">WordPress website development</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for ongoing work.</p>
+`,
+  },
+  {
+    slug: 'wordpress-shortcodes-vs-blocks',
+    title: 'Shortcodes vs Blocks vs Page-Builder Widgets in WordPress',
+    description: 'What WordPress shortcodes, Gutenberg blocks and page-builder widgets are, why stray [brackets] appear after removing a plugin, and how to migrate to blocks.',
+    date: '2026-10-01',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'elementor-developer'],
+    body: `
+<p>Open an old WordPress page in the editor and you might find text like [contact-form-7 id="123"] or [vc_row] in the content. Those are shortcodes, the original way of putting dynamic features into WordPress pages. Today there are three options: shortcodes, blocks in the built-in block editor (Gutenberg), and widgets inside page builders such as Elementor. Each stores your content differently, which decides what happens when a plugin is removed or the site is redesigned.</p>
+
+<h2>The three options at a glance</h2>
+<table>
+  <thead><tr><th></th><th>Shortcode</th><th>Block</th><th>Page-builder widget</th></tr></thead>
+  <tbody>
+    <tr><td>What editors see</td><td>A tag in square brackets</td><td>A visual preview in the editor</td><td>A visual element in the builder</td></tr>
+    <tr><td>How it's stored</td><td>Plain text in the page content</td><td>HTML in the page content, with labels marking each block</td><td>Usually in the builder's own data format</td></tr>
+    <tr><td>If its plugin is removed</td><td>Raw [brackets] appear on the page</td><td>Saved HTML usually remains; dynamic blocks can vanish</td><td>The element, and often its styling, disappears</td></tr>
+    <tr><td>Best for</td><td>Small dynamic bits and older plugins</td><td>Most content on modern sites</td><td>Visually designed pages edited without code</td></tr>
+  </tbody>
+</table>
+
+<h2>Shortcodes: small tags that run code</h2>
+<p>A shortcode is a word in square brackets that WordPress swaps for something else when the page is displayed: a form, a gallery, a button, a pricing table. WordPress itself includes a few, such as [gallery] and [caption], and plugins and themes have added thousands more.</p>
+<p>For developers, registering one takes a few lines:</p>
+<pre><code>add_shortcode( 'current_year', function () {
+    return wp_date( 'Y' );
+} );</code></pre>
+<p>Typing [current_year] in a page now shows the current year, handy for a footer copyright line. Note that the function <em>returns</em> its output. Echoing it instead makes the output appear in the wrong place on the page, a classic beginner mistake.</p>
+<p>The weakness is the editing experience. Editors see a cryptic tag rather than what visitors will see, attributes like id="123" are easy to mistype, and nothing warns you when the code behind a tag has gone.</p>
+
+<h2>Why shortcodes break or leave [brackets] behind</h2>
+<p>A shortcode is only text stored in your page. WordPress replaces it at display time if, and only if, an active plugin or theme has registered that tag. Remove the plugin, or switch away from a theme that bundled its own shortcodes for buttons, columns or tabs, and WordPress no longer recognises the tag, so visitors see the raw text. This is why features like shortcodes are generally best kept in plugins rather than themes.</p>
+<p>It gets worse with some older page builders. WPBakery and classic versions of Divi, for example, store whole layouts as nested shortcodes. Deactivate the builder and pages turn into walls of [vc_row] and [vc_column] tags wrapped around your text.</p>
+<p>If brackets are already showing, the proper fix is to find every affected page (a developer can search the database for the tag name) and replace each shortcode with a block or fresh content. As a temporary stopgap, the old tag can be registered again so it outputs only the text inside it, hiding the brackets while pages are rebuilt:</p>
+<pre><code>add_shortcode( 'old_button', function ( $atts, $content = '' ) {
+    return do_shortcode( $content );
+} );</code></pre>
+
+<h2>Blocks: the native WordPress format</h2>
+<p>Since WordPress 5.0, the default editor has been the block editor. Every paragraph, image, button or form is a block that you edit visually. Behind the scenes, blocks are stored as ordinary HTML with comment labels telling the editor where each block starts and ends:</p>
+<pre><code>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Call or WhatsApp us for a free quote.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;</code></pre>
+<p>That format is why blocks age well. Most blocks save their finished HTML into the page, so if the plugin that provided a block is removed, the content usually still displays; the editor warns that the block isn't supported and offers to keep it as HTML. The exception is <strong>dynamic blocks</strong>, such as a plugin's product grid or events list, which are generated fresh on every page load. Without their plugin they show nothing, though at least they don't leave brackets behind.</p>
+<p>For components designed around your brand, such as service cards or testimonial sliders, developers can build blocks of their own; see <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a>.</p>
+
+<h2>Page-builder widgets</h2>
+<p>Page builders such as Elementor have their own building pieces, usually called widgets: headings, carousels, forms, pricing tables and more, often extended by third-party add-on packs. They give non-technical teams plenty of visual control, which is why they're popular for marketing pages.</p>
+<p>The trade-off is lock-in. Builders like Elementor keep layouts in their own data rather than as standard content, so if the builder is switched off, pages lose their layout and styling. Remove an add-on pack and every widget it supplied disappears from your pages. Moving from one builder to another, or to blocks, is effectively a rebuild. For the wider comparison, see <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>.</p>
+
+<h2>Migrating shortcodes to blocks</h2>
+<ol>
+  <li><strong>Make an inventory:</strong> list every shortcode in use, which plugin or theme provides it, and which pages contain it</li>
+  <li><strong>Check for a block version:</strong> many form, gallery, slider and booking plugins now offer their own blocks, so the swap may take minutes</li>
+  <li><strong>Rebuild simple ones with core blocks:</strong> Buttons, Columns, Table and Details (a simple accordion) replace many old theme shortcodes; save repeated layouts as patterns</li>
+  <li><strong>Build custom blocks</strong> for anything specific to your business that has no equivalent</li>
+  <li><strong>Convert classic content:</strong> older posts open inside a Classic block with a "Convert to blocks" option, and any remaining shortcodes can sit in the core Shortcode block until they're replaced</li>
+  <li><strong>Work on a staging copy and check every page</strong>, especially enquiry and high-traffic pages, before going live; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
+</ol>
+<p>Sites built entirely with a shortcode-based builder are a different job: the pages need rebuilding rather than converting, so treat it like a redesign and plan content, redirects and SEO checks accordingly; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
+
+<h2>What to choose for a new build</h2>
+<ul>
+  <li><strong>Blocks by default:</strong> core blocks and patterns for normal content and blog posts, with custom blocks for branded components. This keeps content in standard WordPress format and is the most future-proof option.</li>
+  <li><strong>A page builder</strong> when a non-technical team needs to design and rearrange marketing pages themselves, accepting some lock-in. Keep add-on packs to a minimum.</li>
+  <li><strong>Shortcodes only where needed:</strong> for a plugin that offers nothing else, or a small dynamic snippet in a place blocks can't reach, registered in a plugin rather than the theme.</li>
+</ul>
+<p>Whatever you choose, keep a simple list of which plugins provide which blocks, widgets or shortcodes, so nobody removes one without knowing which pages depend on it.</p>
+
+<p>Stuck with a site full of old shortcodes, or planning a rebuild in blocks or Elementor? See <a href="/elementor-developer/">Elementor development</a> or my <a href="/wordpress-website-development/">WordPress website development</a> service.</p>
 `,
   },
 ];

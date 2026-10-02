@@ -631,6 +631,10 @@ const LINKS = [
   ['online-appointment-booking-website', '<h2>Make booking visible</h2>', '<p>Venues that rent space by the hour, such as box cricket and football turfs, apply the same ideas to slots, advances and rain policies; see <a href="/blog/website-for-sports-turfs/">websites for box cricket and football turfs</a>.</p>\n\n'],
   ['website-for-sports-academies', '<h2>Coaches</h2>', '<p>Running a dedicated swim school or learn-to-swim programme? See <a href="/blog/website-for-swimming-classes/">websites for swimming classes and pool academies</a>.</p>\n\n'],
   ['website-for-printing-packaging-companies', '<h2>Show your capability</h2>', '<p>If you print T-shirts, jerseys and merchandise rather than packaging, see <a href="/blog/website-for-custom-tshirt-printing/">websites for custom T-shirt printing businesses</a>.</p>\n\n'],
+  // Agent 73
+  ['headless-wordpress-small-business', '<h2>Potential benefits</h2>', '<p>That separate front end usually fetches its content through the WordPress REST API; see <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a> for what it is and what it makes public.</p>\n\n'],
+  ['plugin-vs-custom-code-wordpress', '<h2>Questions to ask</h2>', '<p>Whichever home you choose, most custom code plugs into WordPress through hooks; see <a href="/blog/wordpress-hooks-actions-filters/">WordPress hooks, actions and filters explained</a>.</p>\n\n'],
+  ['elementor-vs-gutenberg', '<h2>What about speed?</h2>', '<p>Lock-in shows most clearly when a plugin is removed; see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks vs page-builder widgets</a> for how each one stores your content.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

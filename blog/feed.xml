@@ -3660,5 +3660,26 @@
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
     <description>What a custom T-shirt printing website needs: print-method pages, design uploads, minimum orders, bulk quote forms, proof approval and honest delivery times.</description>
   </item>
+  <item>
+    <title>The WordPress REST API Explained: What It Is and When You Need It</title>
+    <link>https://samverse.space/blog/wordpress-rest-api-explained/</link>
+    <guid>https://samverse.space/blog/wordpress-rest-api-explained/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>What the WordPress REST API is, what relies on it, what it shows publicly by default (like user lists), how application passwords work and when you need it.</description>
+  </item>
+  <item>
+    <title>WordPress Hooks Explained: Actions and Filters in Plain English</title>
+    <link>https://samverse.space/blog/wordpress-hooks-actions-filters/</link>
+    <guid>https://samverse.space/blog/wordpress-hooks-actions-filters/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>A plain-English guide to WordPress hooks: what actions and filters do, a tiny example of each, where custom code should live and why random snippets are risky.</description>
+  </item>
+  <item>
+    <title>Shortcodes vs Blocks vs Page-Builder Widgets in WordPress</title>
+    <link>https://samverse.space/blog/wordpress-shortcodes-vs-blocks/</link>
+    <guid>https://samverse.space/blog/wordpress-shortcodes-vs-blocks/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>What WordPress shortcodes, Gutenberg blocks and page-builder widgets are, why stray [brackets] appear after removing a plugin, and how to migrate to blocks.</description>
+  </item>
 </channel>
 </rss>
