@@ -635,6 +635,10 @@ const LINKS = [
   ['headless-wordpress-small-business', '<h2>Potential benefits</h2>', '<p>That separate front end usually fetches its content through the WordPress REST API; see <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a> for what it is and what it makes public.</p>\n\n'],
   ['plugin-vs-custom-code-wordpress', '<h2>Questions to ask</h2>', '<p>Whichever home you choose, most custom code plugs into WordPress through hooks; see <a href="/blog/wordpress-hooks-actions-filters/">WordPress hooks, actions and filters explained</a>.</p>\n\n'],
   ['elementor-vs-gutenberg', '<h2>What about speed?</h2>', '<p>Lock-in shows most clearly when a plugin is removed; see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks vs page-builder widgets</a> for how each one stores your content.</p>\n\n'],
+  // Agent 77
+  ['website-for-software-training-institutes', '<h2>Batch calendar and timings</h2>', '<p>If your centre mainly teaches basic computing, Tally and accounting, or design courses to school students, job seekers and beginners, see <a href="/blog/website-for-computer-training-institutes/">websites for computer training institutes</a>.</p>\n\n'],
+  ['website-for-kids-activity-classes', '<h2>Trial classes that turn into enrolments</h2>', '<p>Running an abacus or Vedic maths centre, where children move through levels over many months? See <a href="/blog/website-for-abacus-vedic-maths-classes/">websites for abacus and Vedic maths classes</a>.</p>\n\n'],
+  ['website-for-pet-shops-grooming', '<h2>Trust and safety</h2>', '<p>If boarding and daycare are your whole business, see the detailed guide to <a href="/blog/website-for-pet-boarding-daycare/">websites for pet boarding, daycare and pet hotels</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
