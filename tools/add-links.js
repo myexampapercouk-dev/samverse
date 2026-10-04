@@ -643,6 +643,10 @@ const LINKS = [
   ['woocommerce-abandoned-cart-recovery', '<h2>Recover abandoned carts</h2>', '<p>For a step-by-step walkthrough of these fixes, see <a href="/blog/woocommerce-checkout-optimization/">how to make WooCommerce checkout quick and easy</a>.</p>\n\n'],
   ['woocommerce-shipping-setup-india', '<h2>2. Choose a rate method</h2>', '<p>Shipping abroad? See <a href="/blog/woocommerce-sell-internationally/">how to sell internationally from an Indian WooCommerce store</a> for currencies, payments and customs duties.</p>\n\n'],
   ['woocommerce-inventory-management', '<h2>Out of stock: hide or show?</h2>', '<p>Taking orders before stock arrives? See <a href="/blog/woocommerce-pre-orders-backorders/">pre-orders and backorders in WooCommerce</a> for payment timing, honest dates and Google Merchant Center.</p>\n\n'],
+  // Agent 79
+  ['ecommerce-website-cost-india', '<h2>How to get an accurate quote</h2>', '<p>For a closer look at each running cost, from gateway fees and shipping to returns, see <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a>.</p>\n\n'],
+  ['choose-wordpress-hosting-india', '<h2>8 things to check before you buy</h2>', '<p>For more on each type, who manages what and when to upgrade, see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>.</p>\n\n'],
+  ['landing-page-mistakes-google-ads', '<h2>2. Slow loading on mobile</h2>', '<p>Planning a dedicated page for your campaign? See <a href="/blog/landing-page-cost-factors/">what affects the cost of a landing page</a> and how to brief one.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

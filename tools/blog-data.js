@@ -850,6 +850,8 @@ module.exports = [
   <li><strong>Cloud / VPS hosting:</strong> dedicated resources that scale. It's best for busy sites and stores, and usually needs technical setup.</li>
 </ul>
 
+<p>For more on each type, who manages what and when to upgrade, see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>.</p>
+
 <h2>8 things to check before you buy</h2>
 <ol>
   <li><strong>Server location:</strong> if most visitors are in India, choose servers in India or nearby (Mumbai, Singapore) for faster loading.</li>
@@ -901,6 +903,8 @@ module.exports = [
 
 <h2>1. Sending ad traffic to your homepage</h2>
 <p>Your homepage talks about everything. A landing page should match the ad exactly, with the same offer, the same words and one clear goal.</p>
+
+<p>Planning a dedicated page for your campaign? See <a href="/blog/landing-page-cost-factors/">what affects the cost of a landing page</a> and how to brief one.</p>
 
 <h2>2. Slow loading on mobile</h2>
 <p>Most ad clicks come from phones. If the page takes more than a few seconds to load, many visitors leave before it appears, and you've already paid for the click. Keep pages light, compress images and avoid heavy sliders.</p>
@@ -24784,6 +24788,8 @@ Template: astra
 </ul>
 <p>A cheaper build with high monthly fees can cost more over two or three years than a slightly larger one-time investment, so compare total cost, not just the first invoice.</p>
 
+<p>For a closer look at each running cost, from gateway fees and shipping to returns, see <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a>.</p>
+
 <h2>How to get an accurate quote</h2>
 <ol>
   <li>List your product types, a rough product count and any variations</li>
@@ -37983,6 +37989,258 @@ Description: Custom code for this website.
 <p>For preorder and backorder, Google also asks for an availability date, so check the current product data specification. Your product schema should say the same thing, using the PreOrder or BackOrder availability values. Check what your feed plugin actually sends: WooCommerce's "On backorder" status may map across automatically, while products from a pre-order plugin may need their availability and date set in the feed plugin's settings. Mismatches between the feed and the page are a common cause of disapprovals; see <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a>.</p>
 
 <p>Planning a launch or restock and want pre-orders set up properly? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-store-running-costs',
+    seoTitle: 'WooCommerce Store Running Costs: What to Budget For',
+    title: 'WooCommerce Store Running Costs: What to Budget For After Launch',
+    description: 'Ongoing costs of a WooCommerce store explained: hosting, payment gateway fees, shipping, plugin renewals, maintenance, marketing and returns, and how to budget.',
+    date: '2026-10-01',
+    category: 'Pricing',
+    related: ['woocommerce-developer', 'wordpress-maintenance'],
+    body: `
+<p>Building a WooCommerce store is a one-time project, but running it is a monthly commitment. Hosting, payment fees, shipping, plugin renewals, maintenance, marketing and returns continue for as long as the store is open, and some of them grow with every order. Here's what drives each one and how to keep it under control. For the build itself, see <a href="/blog/ecommerce-website-cost-india/">how much an e-commerce website costs in India</a>.</p>
+
+<h2>Hosting that suits a store</h2>
+<p>A WooCommerce store asks more of its server than a brochure website. Cart, checkout and account pages are different for every shopper, so they can't be served from a simple page cache, and every order writes to the database. A cheap shared plan that copes with a five-page site can struggle during a sale or a festival rush.</p>
+<p>What drives hosting cost for a store:</p>
+<ul>
+  <li><strong>Server resources:</strong> CPU, memory and PHP workers decide how many shoppers can browse and check out at the same time</li>
+  <li><strong>Catalogue and order volume:</strong> more products, images and order history mean a bigger database and more storage</li>
+  <li><strong>Traffic peaks:</strong> plan for your busiest days, not an average Tuesday</li>
+  <li><strong>Extras:</strong> object caching, staging sites, off-site backups and a CDN may be included or charged separately</li>
+  <li><strong>Renewal pricing:</strong> introductory prices often apply only to the first term</li>
+</ul>
+<p>When comparing plans, check the renewal price and whether you can upgrade without migrating. A slow checkout loses orders quietly, so hosting is rarely the best place to save money.</p>
+
+<h2>Payment gateway fees</h2>
+<p>Most payment gateways charge a fee on each successful transaction, usually a percentage of the order value and sometimes a fixed amount as well. The rate isn't one number: it often varies by payment method (UPI, debit cards, credit cards, net banking, wallets, international cards), by provider and by the plan or agreement you're on. GST is generally charged on the gateway's fee too, so check how it appears on your statements with your CA.</p>
+<p>Points to compare between providers:</p>
+<ul>
+  <li>The fee for each payment method your customers actually use, not just the headline rate</li>
+  <li>Any setup, annual or maintenance charges</li>
+  <li>Charges for refunds, chargebacks, international cards or currency conversion</li>
+  <li>Settlement timing, since slower settlements tie up your cash</li>
+</ul>
+<p>Because the fee is a share of every sale, build it into your product pricing rather than treating it as an overhead. See <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a> for a fuller comparison checklist.</p>
+
+<h2>Shipping and packaging</h2>
+<p>For many Indian stores, shipping is the biggest cost per order after the product itself. What you pay depends on:</p>
+<ul>
+  <li><strong>Weight and size:</strong> couriers often charge by volumetric weight, so light but bulky items can cost more than you expect</li>
+  <li><strong>Zones:</strong> local, within-state, metro-to-metro and remote pincodes are usually priced differently</li>
+  <li><strong>Courier or aggregator:</strong> direct courier contracts and shipping aggregators have different rates, minimums and pickup terms</li>
+  <li><strong>Cash on delivery:</strong> COD orders often carry an extra collection charge</li>
+  <li><strong>Packaging:</strong> boxes, mailers, bubble wrap, tape, labels and branded inserts add a little to every order</li>
+</ul>
+<p>Decide whether you'll absorb shipping, pass it on or offer free shipping above an order value, and make sure the numbers still work for your heaviest and most remote orders.</p>
+
+<h2>Premium plugin and extension renewals</h2>
+<p>WooCommerce itself is free, but most stores rely on a few paid extras: a premium theme, payment or shipping integrations, GST invoices, product filters, subscriptions, backup or security tools. Many are sold as yearly licences. If a licence lapses, the plugin usually keeps working but stops getting updates, which becomes a security and compatibility risk over time.</p>
+<ul>
+  <li>Keep a list of every paid plugin, its renewal date and the account it's registered to</li>
+  <li>Make sure licences are bought in your business's name</li>
+  <li>Review the list each year: remove plugins you no longer use and stop paying twice for overlapping features</li>
+</ul>
+<p>Some services, such as SMS or WhatsApp notifications, charge per message instead, so their cost rises with your orders.</p>
+
+<h2>Maintenance and security</h2>
+<p>A store holds customer details and takes payments, so it needs more care than a simple website. Regular work includes updating WordPress, WooCommerce and plugins (ideally tested on a staging copy first), off-site backups that include recent orders, security monitoring, uptime checks and test orders to confirm payments, emails and invoices still work.</p>
+<p>You can do this in-house, pay for individual tools or use a maintenance plan. Compare plans by what they actually include: how often updates run, whether a staging site is used, how quickly problems are handled and whether small content changes are covered. The <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> lists the weekly, monthly and quarterly tasks.</p>
+
+<h2>Marketing to bring shoppers in</h2>
+<p>A store doesn't sell without visitors. Common ongoing spend includes Google Shopping and search ads, Meta ads, SEO and content, email or WhatsApp marketing tools, and photography for new arrivals. Discounts and coupons are a real cost too, even though no invoice arrives: they reduce your margin on every order that uses them.</p>
+<p>Track cost per order by channel where you can, so you know which spend is working.</p>
+
+<h2>Returns, refunds and failed deliveries</h2>
+<p>Returns are easy to leave out of a budget, but they can eat into margins, especially in fashion and footwear. The costs include:</p>
+<ul>
+  <li>Reverse pickup charges, on top of the original shipping you've already paid</li>
+  <li>Products that come back damaged or can't be resold</li>
+  <li>Return-to-origin (RTO) charges when COD orders are refused or undeliverable</li>
+  <li>Gateway fees that may not be returned when you refund an order (check your provider's terms)</li>
+  <li>Staff time to inspect, restock and process refunds</li>
+</ul>
+<p>Clear size guides, accurate photos and confirming COD orders before dispatch can all reduce returns.</p>
+
+<h2>Putting it together: a running-cost sheet</h2>
+<p>Split your costs into fixed costs, which you pay whether you sell or not, and variable costs, which rise with every order:</p>
+<table>
+  <thead><tr><th>Cost</th><th>Type</th><th>Usually billed</th></tr></thead>
+  <tbody>
+    <tr><td>Hosting and domain</td><td>Fixed</td><td>Monthly, yearly or multi-year</td></tr>
+    <tr><td>Plugin and theme licences</td><td>Fixed</td><td>Mostly yearly</td></tr>
+    <tr><td>Maintenance</td><td>Fixed</td><td>Monthly or yearly</td></tr>
+    <tr><td>Payment gateway fees</td><td>Variable</td><td>Per transaction</td></tr>
+    <tr><td>Shipping and packaging</td><td>Variable</td><td>Per order</td></tr>
+    <tr><td>Messaging and shipping software</td><td>Variable</td><td>Per message or shipment</td></tr>
+    <tr><td>Returns and RTO</td><td>Variable</td><td>Per return</td></tr>
+    <tr><td>Marketing</td><td>Either</td><td>Monthly budget or per click</td></tr>
+  </tbody>
+</table>
+<p>Work out the variable cost of a typical order and check your prices still leave a healthy margin after it. Then add up the fixed costs to see how many orders a month the store needs just to cover itself. For the running costs every website has, including email and media licences, see <a href="/blog/hidden-website-costs/">hidden website costs</a>.</p>
+
+<p>Want a store that's set up to be efficient to run, with only the plugins it really needs? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'shared-vs-vps-vs-managed-wordpress-hosting',
+    seoTitle: 'Shared vs VPS vs Managed WordPress Hosting Explained',
+    title: 'Shared vs VPS vs Cloud vs Managed WordPress Hosting: Which Do You Need?',
+    description: 'Shared, VPS, cloud and managed WordPress hosting explained for business owners: who manages what, when a site outgrows shared hosting and how to move safely.',
+    date: '2026-10-01',
+    category: 'Guides',
+    related: ['wordpress-migration', 'wordpress-speed-optimization'],
+    body: `
+<p>Hosting companies sell shared, VPS, cloud and managed WordPress plans, often with overlapping names and features. For a business owner, the important questions are simpler: how much server power do you get, who looks after the server, and when is it time to move up? This guide explains each type in plain English. For the checklist to use once you've picked a type, see <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>.</p>
+
+<h2>Shared hosting: one server, many websites</h2>
+<p>On shared hosting, your website sits on a server alongside many other websites, all drawing on the same processor, memory and storage. The host looks after the server, its software and security patches, and gives you a control panel to manage files, databases, email and SSL.</p>
+<ul>
+  <li><strong>Good for:</strong> brochure sites, new businesses and blogs with modest traffic</li>
+  <li><strong>Strengths:</strong> lowest cost, easy to use, nothing technical to maintain at server level</li>
+  <li><strong>Limits:</strong> each account has caps on CPU, memory and processes, and a busy site on the same server can affect yours</li>
+</ul>
+<p>Quality varies a lot between hosts and plans. A well-run shared plan is perfectly fine for many small business websites.</p>
+
+<h2>VPS hosting: your own slice of a server</h2>
+<p>A virtual private server (VPS) splits one physical server into several virtual machines, each with its own allocated resources. Your site no longer competes with neighbours for the same pool, and you can usually configure the server to suit your site.</p>
+<p>The catch is responsibility. On an <strong>unmanaged</strong> VPS you, or your developer, handle the operating system, web server, PHP, security updates, firewall and backups. A <strong>managed</strong> VPS costs more, but the host takes care of much of that server administration. Some VPS plans also need a paid control panel licence, so check what's included.</p>
+
+<h2>Cloud hosting: resources that can grow</h2>
+<p>Cloud hosting runs on a network of servers rather than one machine, which usually makes it easier to add memory or processing power as your site grows, sometimes in a few clicks. Some cloud providers charge for the resources you actually use; others sell fixed monthly plans.</p>
+<p>The term is used loosely. Some "cloud hosting" plans behave like shared hosting with better hardware, while others give you a full cloud server that someone has to manage. There are also managed platforms that run servers on large providers such as AWS, Google Cloud or DigitalOcean and add a simpler dashboard, backups and support on top. Always ask what you're actually getting and who maintains it.</p>
+
+<h2>Managed WordPress hosting: tuned for WordPress</h2>
+<p>Managed WordPress hosting is built specifically for WordPress sites. Plans commonly include server-level caching, automatic backups, one-click staging sites, malware scanning, WordPress core updates and support staff who understand WordPress.</p>
+<ul>
+  <li><strong>Good for:</strong> businesses that want a fast, reliable site without managing a server, and busier sites or stores that need consistent performance</li>
+  <li><strong>Watch for:</strong> limits on visits, storage or number of sites, plugins the host doesn't allow (often caching or backup plugins that duplicate its own features), and business email that may not be included</li>
+</ul>
+<p>Managed hosting looks after the server and the WordPress environment, but usually not your plugins, theme or content. Plugin updates, design changes and fixing site-level problems are still your job or your developer's.</p>
+
+<h2>Who manages what</h2>
+<table>
+  <thead><tr><th>Task</th><th>Shared</th><th>Unmanaged VPS or cloud</th><th>Managed WordPress</th></tr></thead>
+  <tbody>
+    <tr><td>Server hardware and network</td><td>Host</td><td>Host</td><td>Host</td></tr>
+    <tr><td>Operating system and security patches</td><td>Host</td><td>You or your developer</td><td>Host</td></tr>
+    <tr><td>Web server, PHP and caching setup</td><td>Host (limited options)</td><td>You or your developer</td><td>Host</td></tr>
+    <tr><td>Backups</td><td>Varies by plan</td><td>You or your developer</td><td>Usually host</td></tr>
+    <tr><td>WordPress core updates</td><td>You</td><td>You</td><td>Often host</td></tr>
+    <tr><td>Plugins, theme and content</td><td>You</td><td>You</td><td>You</td></tr>
+  </tbody>
+</table>
+<p>A managed VPS or managed cloud plan sits between the middle and right-hand columns, depending on exactly what the host covers.</p>
+
+<h2>Signs your site has outgrown shared hosting</h2>
+<ul>
+  <li>Emails or errors from your host about hitting resource limits</li>
+  <li>Slow server response time even with caching set up properly</li>
+  <li>The site slows down or goes down during ad campaigns, sales or seasonal peaks</li>
+  <li>A WooCommerce store where cart and checkout feel sluggish as orders grow</li>
+  <li>A very slow WordPress dashboard for you and your team</li>
+  <li>You need staging sites, a specific PHP setup or server access that your plan doesn't offer</li>
+</ul>
+<p>Before upgrading, rule out problems that better hosting won't fix, such as heavy plugins, an overloaded page builder or huge images. See <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time</a> to work out whether the server or the site is the bottleneck. For many small business sites, moving to a better shared plan or entry-level managed hosting is enough; a VPS makes most sense when you need guaranteed resources and have someone to manage it.</p>
+
+<h2>Moving to a new type of hosting</h2>
+<p>Switching hosting type is usually a migration to a new server, so plan it properly:</p>
+<ol>
+  <li><strong>Take a full backup</strong> of files and the database, and keep a copy off the server</li>
+  <li><strong>Check email first:</strong> if your mailboxes live on the old host, decide where they'll go, because changing DNS can cut off email if MX records aren't handled</li>
+  <li><strong>Test the site on the new server</strong> using a temporary URL before switching the domain over</li>
+  <li><strong>Check compatibility:</strong> PHP version, caching plugins that clash with server caching, scheduled tasks and email sending (SMTP)</li>
+  <li><strong>Switch DNS at a quiet time</strong> and confirm the SSL certificate is issued on the new host</li>
+  <li><strong>For stores,</strong> pause orders briefly or make sure orders placed during the move aren't lost</li>
+  <li><strong>Keep the old hosting active</strong> for a few days until you're sure everything works</li>
+</ol>
+<p>Done carefully, a move causes little or no downtime and shouldn't affect your Google rankings.</p>
+
+<p>Planning to upgrade or switch hosts? See <a href="/wordpress-migration/">WordPress migration and hosting</a> for help choosing the right plan and moving your site safely.</p>
+`,
+  },
+  {
+    slug: 'landing-page-cost-factors',
+    seoTitle: 'Landing Page Cost: What Affects the Price',
+    title: 'Landing Page Cost: What Affects the Price (and How to Brief One)',
+    description: 'What drives the cost of a landing page: copy, template vs custom design, sections, forms, tracking, speed, A/B tests and campaign edits, and how to brief one.',
+    date: '2026-10-01',
+    category: 'Pricing',
+    related: ['landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>Ask for a landing page quote and you might hear anything from "a few hours' work" to a project that takes weeks. Both can be honest answers, because "landing page" covers everything from a template with your logo swapped in to a researched, custom-designed page connected to your CRM and ad tracking. Here's what drives the cost, and how to brief a landing page so the quotes you get are actually comparable.</p>
+
+<h2>Copywriting: who writes the words</h2>
+<p>The words do most of the selling on a landing page, and writing them well takes time. The cost depends on:</p>
+<ul>
+  <li><strong>Who writes it:</strong> you, the developer or a specialist copywriter</li>
+  <li><strong>Research:</strong> understanding your offer, audience, competitors and the ads that will point to the page</li>
+  <li><strong>Versions:</strong> separate headlines or pages for different ad groups, cities or services</li>
+  <li><strong>Languages:</strong> a Hindi or regional-language version means extra writing and checking, not just translation</li>
+</ul>
+<p>Even if you write the copy yourself, having someone review it for clarity and for a close match with your ads is usually money well spent.</p>
+
+<h2>Design: template or from scratch</h2>
+<p>A ready-made template or page builder layout, adapted with your colours, fonts and photos, is the quickest route. A custom design, mocked up first in a tool like Figma and then built, takes longer but fits your brand and offer exactly.</p>
+<table>
+  <thead><tr><th>Approach</th><th>Suits</th><th>Trade-off</th></tr></thead>
+  <tbody>
+    <tr><td>Adapted template</td><td>Quick campaigns, testing a new offer, tight budgets</td><td>Can look generic and may carry unused code that slows it down</td></tr>
+    <tr><td>Custom design on your existing site</td><td>Ongoing campaigns that should match your brand</td><td>More design and build time</td></tr>
+    <tr><td>Fully custom, lightweight build</td><td>Larger campaigns where speed and conversion matter most</td><td>Most time up front</td></tr>
+  </tbody>
+</table>
+<p>Where the page lives matters too. A page on your existing WordPress site reuses its hosting and setup, while a separate domain or microsite needs its own hosting, SSL and upkeep.</p>
+
+<h2>Length and number of sections</h2>
+<p>A page for a simple offer, such as a free consultation, might need only a headline, benefits, proof and a form. A page for a considered purchase, like a real estate project, a course or a B2B service, often needs more: features, plans, a gallery, FAQs, comparison tables, a location map and testimonials. Each extra section means more writing, design and mobile testing, so the number of sections is one of the clearest cost drivers.</p>
+<p>Supply your own photos, videos and testimonials where you can, because sourcing or creating them adds to the work.</p>
+
+<h2>Forms and integrations</h2>
+<p>A basic form that sends an email is simple. Costs rise with:</p>
+<ul>
+  <li>Multi-step forms or conditional questions</li>
+  <li>Sending leads to a CRM, Google Sheets or an email marketing tool</li>
+  <li>Instant WhatsApp, SMS or email alerts to your sales team</li>
+  <li>Appointment booking, payments or brochure downloads after the form</li>
+  <li>Spam protection and a proper thank-you page</li>
+</ul>
+<p>Each connection needs setting up and testing end to end, ideally with real test submissions before the ads go live.</p>
+
+<h2>Tracking setup</h2>
+<p>If you're paying for clicks, tracking isn't optional. Setup can include Google Analytics 4 events, Google Ads conversion tracking, the Meta Pixel and Conversions API, Google Tag Manager, call and WhatsApp click tracking, and UTM tags so you know which campaign each lead came from. It takes longer when you advertise on several platforms or want leads matched back to campaigns in your CRM. Ask whether each quote includes tracking and which conversions will be tracked; see <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a>.</p>
+
+<h2>Speed work</h2>
+<p>Many ad clicks come from phones, often on patchy mobile data, and a slow page wastes clicks you've already paid for. Making a page load fast means compressing images, limiting fonts and scripts, avoiding heavy sliders and testing on real devices. A page built on a heavy theme, or carrying several tracking scripts, can need extra work to perform well. Ask whether speed testing is part of the quote and on which devices.</p>
+
+<h2>A/B testing and changes during a campaign</h2>
+<p>A landing page is rarely finished on launch day. Budget for:</p>
+<ul>
+  <li><strong>A/B tests:</strong> building a second version of the headline, offer or form, setting up the test and reading the results, which only makes sense with enough traffic (see <a href="/blog/landing-page-ab-testing/">A/B testing landing pages</a>)</li>
+  <li><strong>Campaign edits:</strong> new offers, festival deadlines, price changes or extra sections based on questions your sales team hears</li>
+  <li><strong>Turnaround:</strong> same-day changes during a live campaign usually cost more than changes that can wait</li>
+</ul>
+<p>Agree up front whether changes are included for a set period, charged per change or covered by a monthly arrangement.</p>
+
+<h2>How to brief a landing page so quotes are comparable</h2>
+<p>Quotes vary most when each developer is guessing at a different scope. Send everyone the same short brief:</p>
+<ol>
+  <li><strong>Goal and offer:</strong> what visitors should do and what they get</li>
+  <li><strong>Traffic source:</strong> Google Ads, Meta ads, email or a mix, plus the ad copy if you have it</li>
+  <li><strong>Copy:</strong> supplied by you, edited, or written from scratch</li>
+  <li><strong>Design:</strong> template, custom design or matching your existing site, with two or three pages you like</li>
+  <li><strong>Sections:</strong> a rough list, from headline to FAQ</li>
+  <li><strong>Form and integrations:</strong> fields, where leads should go and who gets alerts</li>
+  <li><strong>Tracking:</strong> ad platforms and the conversions to track</li>
+  <li><strong>Where it lives:</strong> your existing site or a new domain</li>
+  <li><strong>Changes and testing:</strong> how long the campaign runs and whether you want A/B tests</li>
+  <li><strong>Deadline:</strong> when the ads are due to start</li>
+</ol>
+<p>Then check every quote against the same list; <a href="/blog/compare-website-quotes/">how to compare website quotes</a> explains what else to look for. And before choosing the cheapest option, read <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a> to see where cutting corners costs you later.</p>
+
+<p>Planning a campaign? See <a href="/landing-page-design/">landing page design</a> to talk through your offer, tracking and timeline.</p>
 `,
   },
 ];
