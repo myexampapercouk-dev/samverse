@@ -6157,6 +6157,8 @@ module.exports = [
   <li><strong>Show trust signals:</strong> secure payment badges, return policy, delivery times and support contact</li>
 </ol>
 
+<p>For a step-by-step walkthrough of these fixes, see <a href="/blog/woocommerce-checkout-optimization/">how to make WooCommerce checkout quick and easy</a>.</p>
+
 <h2>Recover abandoned carts</h2>
 <p>Abandoned cart plugins can capture email or phone numbers entered during checkout and send reminders:</p>
 <ul>
@@ -6199,6 +6201,8 @@ module.exports = [
   <li>Specific remote regions, if courier costs differ</li>
   <li>International (if you ship abroad)</li>
 </ul>
+
+<p>Shipping abroad? See <a href="/blog/woocommerce-sell-internationally/">how to sell internationally from an Indian WooCommerce store</a> for currencies, payments and customs duties.</p>
 
 <h2>2. Choose a rate method</h2>
 <ul>
@@ -13662,6 +13666,8 @@ module.exports = [
 
 <h2>Backorders</h2>
 <p>You can allow orders for out-of-stock items, useful for made-to-order products or items you can restock quickly. Tell customers the expected dispatch time clearly.</p>
+
+<p>Taking orders before stock arrives? See <a href="/blog/woocommerce-pre-orders-backorders/">pre-orders and backorders in WooCommerce</a> for payment timing, honest dates and Google Merchant Center.</p>
 
 <h2>Out of stock: hide or show?</h2>
 <ul>
@@ -37707,6 +37713,276 @@ Description: Custom code for this website.
 <p>Owners search for "dog boarding in {area}", "pet hotel in {city}", "cat boarding near me" and "dog daycare near me". Create separate pages for boarding, daycare and cat boarding, keep your Google Business Profile complete with real photos, and ask happy owners for reviews at pick-up. Most owners browse on their phones, so compress photos and load videos only when tapped.</p>
 
 <p>A pet boarding website works when owners can see the facility, understand your rules and routine, trust your emergency plan and book their dates easily. If you want one built, see <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> for holiday-season campaigns.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-checkout-optimization',
+    seoTitle: 'WooCommerce Checkout Optimization: Make Buying Easier',
+    title: 'WooCommerce Checkout Optimization: How to Make Buying Quick and Easy',
+    description: 'Make WooCommerce checkout easier: fewer fields, guest checkout, block vs classic checkout, early delivery charges, UPI and COD, trust cues and real order tests.',
+    date: '2026-10-01',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-speed-optimization'],
+    body: `
+<p>By the time someone reaches your checkout, they have already decided to buy. Your job now is to stay out of their way: every unnecessary field, surprise charge or confusing payment step gives them a reason to stop. This guide covers the checkout page itself. For shoppers who do leave, see <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</p>
+
+<h2>Ask only for what you need</h2>
+<p>The default WooCommerce checkout asks for more than most Indian stores need. For a typical home delivery, you need:</p>
+<ul>
+  <li>Name and mobile number (couriers often call before delivering)</li>
+  <li>Pin code, address, city and state</li>
+  <li>Email, if you send order confirmations and invoices by email</li>
+</ul>
+<p>Common fields to hide or make optional:</p>
+<ul>
+  <li><strong>Company name:</strong> hide it unless you sell to businesses</li>
+  <li><strong>Address line 2:</strong> make it optional, or relabel it "Landmark", which Indian couriers find genuinely useful</li>
+  <li><strong>Order notes:</strong> remove them unless customers really need them, for example for gift messages</li>
+  <li><strong>GSTIN:</strong> if you sell to businesses, add it as an optional field rather than a required one</li>
+</ul>
+<p>Filling in city and state automatically from the pin code saves typing on a phone; some checkout plugins do this, or it can be added with a little custom code. Add a short line explaining why you need the phone number.</p>
+
+<h2>Let people buy without an account</h2>
+<p>Forcing shoppers to create an account before paying is one of the easiest ways to lose a first order. In WooCommerce → Settings → Accounts &amp; Privacy, allow customers to place orders without an account. You can still offer account creation for repeat buyers, but don't make it a hurdle.</p>
+<p>Guest orders still give you the customer's email and phone number, so you can send order updates and, with consent, offers later. Returning customers also benefit from browser autofill, which works best when fields use standard names and input types.</p>
+
+<h2>Block checkout or classic checkout?</h2>
+<p>WooCommerce now has two checkout systems. New stores generally get the block-based Checkout by default, while many older stores still run the classic shortcode checkout. Both work; the differences are mostly about flexibility and compatibility.</p>
+<table>
+  <thead><tr><th>Aspect</th><th>Block checkout</th><th>Classic checkout</th></tr></thead>
+  <tbody>
+    <tr><td>Editing</td><td>Edited in the block editor, with simple options to show, hide or require some fields</td><td>Changed through settings, field editor plugins or code</td></tr>
+    <tr><td>Design</td><td>Modern, mobile-friendly layout out of the box</td><td>Depends largely on your theme</td></tr>
+    <tr><td>Plugin support</td><td>Growing, but some older plugins don't support it yet</td><td>Very wide, after many years in use</td></tr>
+    <tr><td>Custom logic</td><td>Needs block-compatible extensions or development</td><td>Easy for developers to extend with hooks</td></tr>
+  </tbody>
+</table>
+<p>Before switching either way, list every plugin that touches the checkout: payment gateway, COD rules, pin code checker, GST fields, abandoned cart tracking and analytics. Confirm each one supports the checkout you plan to use, and test the switch on a staging copy first.</p>
+
+<h2>Show delivery charges and dates early</h2>
+<p>Surprise costs at the last step are a common reason shoppers give up. Instead:</p>
+<ul>
+  <li>Show shipping charges, or your free-shipping threshold, on product and cart pages</li>
+  <li>Show an estimated delivery date or range, ideally based on the customer's pin code</li>
+  <li>Display prices inclusive of GST so the total doesn't jump at checkout</li>
+  <li>Show any COD fee clearly before the customer chooses how to pay</li>
+  <li>Keep a "free shipping above" message in the cart, showing how much more is needed</li>
+</ul>
+<p>Much of this belongs on the product page, where the buying decision starts; see <a href="/blog/woocommerce-product-page-optimization/">WooCommerce product page optimisation</a>.</p>
+
+<h2>Offer the payment options Indian shoppers expect</h2>
+<p>Indian shoppers expect to pay by UPI, cards (including RuPay), net banking or wallets, and many first-time buyers still want Cash on Delivery. A few details make a real difference:</p>
+<ul>
+  <li><strong>Make UPI easy:</strong> on mobile, the payment step should open the customer's UPI app directly; on desktop, a QR code works well</li>
+  <li><strong>Use clear labels:</strong> "Pay online: UPI, cards, net banking" means more to a shopper than a gateway's brand name</li>
+  <li><strong>Keep the list short:</strong> two or three clear options beat a long list of near-duplicates</li>
+  <li><strong>Handle failures well:</strong> if a UPI payment fails or times out, the customer should be able to retry or pick another method without re-entering their address</li>
+  <li><strong>Configure webhooks</strong> so paid orders don't get stuck as "pending payment" when a customer closes the browser too soon</li>
+</ul>
+<p>COD brings its own risk of refused deliveries; see <a href="/blog/woocommerce-cash-on-delivery-india/">how to offer COD without losing money</a> for limits, confirmations and prepaid incentives.</p>
+
+<h2>Add trust cues where people pay</h2>
+<p>The checkout is where doubts come back: is this store real, and what happens if something goes wrong? Answer those doubts on the page itself:</p>
+<ul>
+  <li>A clear order summary with product names, images, quantities and the full total</li>
+  <li>A short returns and refund summary near the "Place order" button, linking to the full policy</li>
+  <li>A phone number or WhatsApp link for quick questions</li>
+  <li>HTTPS across the whole site, with no browser security warnings</li>
+  <li>Only badges and claims that are true; made-up security seals do more harm than good</li>
+</ul>
+<p>Remove distractions too: pop-ups, newsletter prompts and chat widgets that cover the "Place order" button on a small screen.</p>
+
+<h2>Design for the phone first</h2>
+<p>Many of your shoppers will check out on a phone, often on patchy mobile data. Check that:</p>
+<ul>
+  <li>Phone and pin code fields open a number keypad</li>
+  <li>Buttons and payment options are large enough to tap easily</li>
+  <li>Error messages appear next to the field that needs fixing, in plain words</li>
+  <li>The page doesn't jump around as shipping costs and payment options load</li>
+  <li>The checkout loads quickly: checkout pages can't be fully cached, so hosting quality and the number of plugins matter here</li>
+</ul>
+
+<h2>Test with real orders</h2>
+<p>Test mode is useful, but only real orders show you what customers actually experience. Before launch, and after any major update:</p>
+<ol>
+  <li>Place real, low-value orders with each payment method: UPI on Android and iPhone, a card, net banking and COD</li>
+  <li>Check order emails, invoices, stock levels and shipping charges for a few different pin codes</li>
+  <li>Try a failed payment and a cancelled payment, and confirm the order status is correct</li>
+  <li>Apply a coupon and check the totals</li>
+  <li>Refund the test orders from the WooCommerce order screen</li>
+</ol>
+<p>Then watch someone who has never used your store buy something on their own phone, without helping them. Wherever they hesitate is what to fix next. In analytics, compare how many people start checkout with how many complete an order, and change one thing at a time so you know what helped.</p>
+
+<p>Want your checkout reviewed, simplified or moved to the block checkout safely? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-speed-optimization/">speed optimisation</a> if the checkout itself is slow.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-sell-internationally',
+    title: 'How to Sell Internationally From an Indian WooCommerce Store',
+    description: 'Selling abroad from an Indian WooCommerce store: showing vs charging other currencies, international payments, shipping, customs duties and GST/LUT points.',
+    date: '2026-10-01',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Indian products such as handicrafts, textiles, jewellery, Ayurvedic products and packaged foods have buyers all over the world, including the many Indians living abroad. A WooCommerce store can sell to them, but international orders raise questions a domestic store never faces: which currency to charge in, how to get paid, what shipping costs, who pays customs duty, and what paperwork you need. This guide covers selling directly to overseas customers through your online store. If you mainly want bulk enquiries from importers, see <a href="/blog/website-for-export-businesses/">websites for export businesses</a> instead.</p>
+
+<h2>Start with a few countries</h2>
+<p>You don't have to sell everywhere on day one. Start where you already have demand: the countries your Instagram followers, past enquiries or website visitors come from. Then check:</p>
+<ul>
+  <li>Whether your products can be shipped there at all. Food, cosmetics, liquids, batteries, plant material and some medicines often face restrictions from couriers or destination countries.</li>
+  <li>Whether shipping costs still leave a sensible price for your typical order</li>
+  <li>Whether you can handle returns or replacements from that country</li>
+</ul>
+<p>In WooCommerce → Settings → General, you can limit selling and shipping locations to specific countries, so customers elsewhere can't place orders you can't fulfil.</p>
+
+<h2>Showing other currencies vs charging in them</h2>
+<p>WooCommerce works with one store currency by default. There are two ways to go beyond it:</p>
+<table>
+  <thead><tr><th>Approach</th><th>How it works</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Display only</td><td>Prices are shown converted into the visitor's currency, but payment is taken in rupees</td><td>The amount on the customer's card statement can differ from the price shown, and their bank may add foreign transaction fees</td></tr>
+    <tr><td>Charging in other currencies</td><td>Customers see and pay in their own currency, using a multi-currency plugin and a gateway that supports those currencies</td><td>More setup, exchange rate decisions, and settlements and reports to reconcile</td></tr>
+  </tbody>
+</table>
+<p>If you charge in other currencies, consider setting rounded prices for each currency rather than relying on live exchange rates, so products don't show awkward prices. Whatever you choose, keep the currency consistent across the cart, checkout, order emails and invoices, and make it clear what customers will actually be charged.</p>
+
+<h2>Taking international payments</h2>
+<p>Many Indian payment gateways can accept international cards, but it is often a separate activation with extra checks and documents. Global payment providers are another option, and some stores use one gateway for Indian customers and a second for overseas buyers. Before deciding, ask each provider:</p>
+<ul>
+  <li>Which currencies customers can pay in, and how payments are converted and settled into your Indian bank account</li>
+  <li>What fees apply to international payments and currency conversion</li>
+  <li>What documentation they provide for foreign payments received, which your bank and CA may need</li>
+  <li>How disputes and chargebacks are handled</li>
+</ul>
+<p>For a fuller checklist, see <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a>. Turn off Cash on Delivery for international shipping zones, and look carefully at unusual international orders, such as large first orders with inconsistent details, before you dispatch.</p>
+
+<h2>Shipping rates and courier options</h2>
+<p>Set up international shipping zones in WooCommerce, grouping countries your courier prices similarly, for example the USA, the UK and Europe, the Gulf, and Australia. Weight-based rates usually work better than flat rates abroad, and volumetric weight matters a lot on air shipments, so compact packaging saves money. The basics of zones and rates are covered in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+<p>Your main courier options are:</p>
+<ul>
+  <li><strong>International express couriers:</strong> fast and well tracked, usually the most expensive</li>
+  <li><strong>India Post international services:</strong> often more economical for small parcels, but slower</li>
+  <li><strong>Shipping aggregators with cross-border services:</strong> compare several couriers' rates and print labels from one dashboard</li>
+</ul>
+<p>Show realistic delivery times for each region on product pages and in your shipping policy, and send tracking links automatically.</p>
+
+<h2>Customs duties: who pays?</h2>
+<p>When a parcel reaches its destination, that country may charge import duty and taxes depending on the product, its value and local rules. You need to decide who pays them:</p>
+<ul>
+  <li><strong>The customer pays on delivery</strong> (often called DDU or DAP). Simpler for you, but an unexpected bill at the door can lead to refused parcels and unhappy reviews.</li>
+  <li><strong>You pay, and build it into the price</strong> (DDP). A smoother experience for buyers, but it needs a courier service that supports it and careful pricing.</li>
+</ul>
+<p>Either way, say clearly on product pages, at checkout and in your shipping policy whether duties and taxes are included. Some markets, such as the UK and the EU, have their own rules on how VAT is collected on lower-value imports, which can create obligations for the seller, so check before you start selling there. Always declare goods accurately on customs paperwork; under-declaring the value to save the customer duty can get parcels held and cause bigger problems.</p>
+
+<h2>Export paperwork, GST and LUT</h2>
+<p>This part needs your chartered accountant, because the right approach depends on your business, your products and how you ship. Points to discuss with them:</p>
+<ul>
+  <li><strong>IEC:</strong> exporters of goods generally need an Importer Exporter Code; ask whether it applies to the way you ship</li>
+  <li><strong>GST on exports:</strong> exports are generally treated as zero-rated, and businesses commonly either export under a Letter of Undertaking (LUT) without paying IGST, or pay IGST and claim a refund</li>
+  <li><strong>Export invoices:</strong> these usually need different details from domestic GST invoices; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a> for the domestic side, then confirm the export format with your CA</li>
+  <li><strong>Foreign payment records:</strong> keep each order, shipment and payment linked, as your bank and CA may need to match them</li>
+</ul>
+<p>WooCommerce can be set up to apply different tax rules to international orders and to print the invoice details your CA specifies, but the rules themselves should come from your CA, not from a plugin's defaults.</p>
+
+<h2>Make the store work for overseas visitors</h2>
+<ul>
+  <li><strong>Address and phone fields:</strong> WooCommerce adjusts address formats by country, so make sure checkout customisations haven't forced Indian-only fields such as a six-digit pin code</li>
+  <li><strong>Sizes and units:</strong> give sizes and dimensions in both centimetres and inches where relevant</li>
+  <li><strong>Speed:</strong> a CDN helps pages load quickly for visitors far from your server</li>
+  <li><strong>Support across time zones:</strong> say when you reply, and answer email and WhatsApp messages promptly</li>
+  <li><strong>Clear policies:</strong> international returns are expensive, so state plainly whether overseas orders get refunds, replacements or store credit</li>
+</ul>
+
+<p>Planning to take your store international? See <a href="/woocommerce-developer/">WooCommerce development</a> for help setting up currencies, payments, shipping zones and invoices properly.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-pre-orders-backorders',
+    seoTitle: 'WooCommerce Pre-Orders and Backorders: A Practical Guide',
+    title: 'Pre-Orders and Backorders in WooCommerce: How to Sell Before Stock Arrives',
+    description: 'Run pre-orders and backorders in WooCommerce: the built-in backorder setting, pre-order plugins, when to charge, honest dates and Merchant Center availability.',
+    date: '2026-10-01',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Sometimes you want to take orders for products you don't have on the shelf: a new launch that hasn't arrived yet, a bestseller waiting for restock, or a festive collection still being made. WooCommerce can handle this in two ways, backorders and pre-orders. Done well, they keep sales coming in while you wait for stock. Done badly, they fill your inbox with customers asking where their order is. Here's how to set them up and run them honestly.</p>
+
+<h2>Backorders vs pre-orders</h2>
+<table>
+  <thead><tr><th>Aspect</th><th>Backorder</th><th>Pre-order</th></tr></thead>
+  <tbody>
+    <tr><td>What it is</td><td>A product you normally stock is temporarily out, and you keep taking orders until it's restocked</td><td>A product that hasn't been released or received yet, sold ahead of a launch date</td></tr>
+    <tr><td>In WooCommerce</td><td>Built in</td><td>Usually needs an extension or plugin</td></tr>
+    <tr><td>Typical wait</td><td>Until the next restock</td><td>Until the launch or arrival date</td></tr>
+  </tbody>
+</table>
+<p>Made-to-order products are a slightly different case. If everything is made after ordering, it's usually clearer to keep them "in stock" and state the making time, rather than labelling them as backordered.</p>
+
+<h2>Setting up backorders in WooCommerce</h2>
+<p>Backorders are a built-in setting on each product's Inventory tab. With "Manage stock" ticked, you'll see "Allow backorders?" with three choices:</p>
+<ul>
+  <li><strong>Do not allow:</strong> the product can't be bought once stock reaches zero</li>
+  <li><strong>Allow, but notify customer:</strong> the product page shows that it's available on backorder, and the order marks which items were backordered</li>
+  <li><strong>Allow:</strong> orders are accepted without telling the customer, which is rarely a good idea</li>
+</ul>
+<p>Stock then goes below zero as backorders come in, so you can see how many units you owe. If you don't manage stock for a product, you can set its stock status to "On backorder" instead. For variable products, set this for each variation.</p>
+<p>Core WooCommerce doesn't show an expected date for backorders, so add a short note near the price or use a plugin that displays one. For the wider stock settings, see <a href="/blog/woocommerce-inventory-management/">WooCommerce inventory management</a>.</p>
+
+<h2>What pre-order plugins add</h2>
+<p>WooCommerce's own Pre-Orders extension and several third-party plugins add proper pre-order handling. Features vary, so check current details and compatibility with your payment gateway and checkout, but they typically offer:</p>
+<ul>
+  <li>A release or availability date shown on the product page</li>
+  <li>Custom button text such as "Pre-order now" instead of "Add to cart"</li>
+  <li>A choice between charging upfront and charging on release</li>
+  <li>A separate order status, so pre-orders don't get mixed into normal dispatch</li>
+  <li>Automatic emails when an order is placed, when the date changes and when the product is released</li>
+  <li>Bulk actions to complete or cancel pre-orders</li>
+</ul>
+<p>For a small launch, you may not need a plugin at all. A "notify me" waitlist collects interest without taking money, which is often the honest choice when you don't yet have a firm date.</p>
+
+<h2>Charge upfront or on release?</h2>
+<table>
+  <thead><tr><th>Option</th><th>Pros</th><th>Cons</th></tr></thead>
+  <tbody>
+    <tr><td>Full payment upfront</td><td>Committed buyers, cash to fund the stock, simple to run</td><td>You hold customers' money, and delays mean refunds and complaints</td></tr>
+    <tr><td>Charge on release</td><td>Customers pay only when you can ship</td><td>The gateway must charge a saved payment method later, which many Indian setups don't support</td></tr>
+    <tr><td>Advance now, balance later</td><td>Filters out casual orders while asking for less upfront</td><td>More admin: collecting balances and chasing unpaid ones</td></tr>
+  </tbody>
+</table>
+<p>In India, rules around saved cards and recurring payments make "charge later" harder than in some other countries, so most stores take full payment upfront or a partial advance. Ask your gateway what its WooCommerce plugin supports before you promise customers anything. Cash on Delivery is usually a poor fit for pre-orders: the longer the wait, the more likely a buyer is to change their mind.</p>
+
+<h2>Communicate dates honestly</h2>
+<p>Problems with pre-orders and backorders usually start with expectations. To keep them realistic:</p>
+<ul>
+  <li>Show the expected dispatch date on the product page, in the cart, at checkout and in the order email</li>
+  <li>Say "expected to dispatch by" rather than promising a delivery date you don't control</li>
+  <li>Build in a buffer: if your supplier says two weeks, don't promise two weeks</li>
+  <li>Decide what happens with mixed carts: wait and ship everything together, or ship in-stock items now and absorb or charge the extra shipping. Some plugins simply stop pre-order items being bought with other products, which keeps things simple.</li>
+  <li>If a date slips, tell customers before they ask, by email or WhatsApp, with a new date and an easy option to cancel for a full refund</li>
+</ul>
+<p>Indian consumer protection rules for e-commerce generally expect clear information on delivery, cancellation and refunds, so keep your policies consistent with what product pages say (check current rules if unsure); see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce stores</a>.</p>
+
+<h2>Managing stock, cancellations and refunds</h2>
+<ul>
+  <li><strong>Cap orders at what's coming:</strong> for a pre-order, set the stock quantity to the number of units you actually expect, so you can't sell more than will arrive</li>
+  <li><strong>Keep them out of the dispatch queue:</strong> use "On hold" or a dedicated pre-order status so your team doesn't try to pack something that isn't there</li>
+  <li><strong>Fulfil in order:</strong> when stock arrives, ship the oldest orders first and update stock counts</li>
+  <li><strong>Make cancellation easy:</strong> customers waiting weeks may change their minds, and a quick refund is better than a dispute</li>
+  <li><strong>Refund through the gateway:</strong> if your gateway plugin supports it, refunds can be issued from the WooCommerce order screen, keeping records tidy</li>
+  <li><strong>Review weekly:</strong> list open backorders and pre-orders with their expected dates, so nothing is forgotten</li>
+</ul>
+
+<h2>How they show in Google Merchant Center</h2>
+<p>If your products appear on Google through Merchant Center, the availability you send must match what the product page says. Google's product data uses these availability values:</p>
+<ul>
+  <li><strong>in_stock:</strong> ready to ship</li>
+  <li><strong>out_of_stock:</strong> not available to buy</li>
+  <li><strong>preorder:</strong> not yet released, but can be ordered</li>
+  <li><strong>backorder:</strong> temporarily out of stock, but can be ordered</li>
+</ul>
+<p>For preorder and backorder, Google also asks for an availability date, so check the current product data specification. Your product schema should say the same thing, using the PreOrder or BackOrder availability values. Check what your feed plugin actually sends: WooCommerce's "On backorder" status may map across automatically, while products from a pre-order plugin may need their availability and date set in the feed plugin's settings. Mismatches between the feed and the page are a common cause of disapprovals; see <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a>.</p>
+
+<p>Planning a launch or restock and want pre-orders set up properly? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
 ];

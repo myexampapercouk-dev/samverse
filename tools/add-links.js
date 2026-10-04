@@ -639,6 +639,10 @@ const LINKS = [
   ['website-for-software-training-institutes', '<h2>Batch calendar and timings</h2>', '<p>If your centre mainly teaches basic computing, Tally and accounting, or design courses to school students, job seekers and beginners, see <a href="/blog/website-for-computer-training-institutes/">websites for computer training institutes</a>.</p>\n\n'],
   ['website-for-kids-activity-classes', '<h2>Trial classes that turn into enrolments</h2>', '<p>Running an abacus or Vedic maths centre, where children move through levels over many months? See <a href="/blog/website-for-abacus-vedic-maths-classes/">websites for abacus and Vedic maths classes</a>.</p>\n\n'],
   ['website-for-pet-shops-grooming', '<h2>Trust and safety</h2>', '<p>If boarding and daycare are your whole business, see the detailed guide to <a href="/blog/website-for-pet-boarding-daycare/">websites for pet boarding, daycare and pet hotels</a>.</p>\n\n'],
+  // Agent 76
+  ['woocommerce-abandoned-cart-recovery', '<h2>Recover abandoned carts</h2>', '<p>For a step-by-step walkthrough of these fixes, see <a href="/blog/woocommerce-checkout-optimization/">how to make WooCommerce checkout quick and easy</a>.</p>\n\n'],
+  ['woocommerce-shipping-setup-india', '<h2>2. Choose a rate method</h2>', '<p>Shipping abroad? See <a href="/blog/woocommerce-sell-internationally/">how to sell internationally from an Indian WooCommerce store</a> for currencies, payments and customs duties.</p>\n\n'],
+  ['woocommerce-inventory-management', '<h2>Out of stock: hide or show?</h2>', '<p>Taking orders before stock arrives? See <a href="/blog/woocommerce-pre-orders-backorders/">pre-orders and backorders in WooCommerce</a> for payment timing, honest dates and Google Merchant Center.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
