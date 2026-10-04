@@ -647,6 +647,10 @@ const LINKS = [
   ['ecommerce-website-cost-india', '<h2>How to get an accurate quote</h2>', '<p>For a closer look at each running cost, from gateway fees and shipping to returns, see <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a>.</p>\n\n'],
   ['choose-wordpress-hosting-india', '<h2>8 things to check before you buy</h2>', '<p>For more on each type, who manages what and when to upgrade, see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>.</p>\n\n'],
   ['landing-page-mistakes-google-ads', '<h2>2. Slow loading on mobile</h2>', '<p>Planning a dedicated page for your campaign? See <a href="/blog/landing-page-cost-factors/">what affects the cost of a landing page</a> and how to brief one.</p>\n\n'],
+  // Agent 78
+  ['common-wordpress-errors-fixes', '<h2>Browser security warnings</h2>', '<p>Step-by-step guide: <a href="/blog/wordpress-stuck-in-maintenance-mode/">how to fix WordPress stuck in maintenance mode</a>.</p>\n\n'],
+  ['wordpress-memory-limit-errors', '<h2>When hosting is the real problem</h2>', '<p>If WordPress rejects a file before it even uploads, with a message that it exceeds the maximum upload size, that\'s a different PHP limit; see <a href="/blog/increase-wordpress-upload-size-limit/">how to increase the WordPress upload size limit</a>.</p>\n\n'],
+  ['helpful-404-pages', '<h2>After redesigns and migrations</h2>', '<p>If every page or post on your site suddenly shows a 404 while the homepage still works, the cause is usually technical rather than missing pages; see <a href="/blog/wordpress-pages-404-permalinks-fix/">how to fix WordPress pages showing 404</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

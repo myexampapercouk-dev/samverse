@@ -7006,6 +7006,8 @@ module.exports = [
 <h2>"Briefly unavailable for scheduled maintenance"</h2>
 <p><strong>Usually:</strong> an update was interrupted.<br><strong>First steps:</strong> a leftover maintenance file needs removing via hosting file access, then the interrupted update should be re-run.</p>
 
+<p>Step-by-step guide: <a href="/blog/wordpress-stuck-in-maintenance-mode/">how to fix WordPress stuck in maintenance mode</a>.</p>
+
 <h2>Browser security warnings</h2>
 <p><strong>Usually:</strong> an SSL certificate problem, or Google has flagged malware.<br><strong>First steps:</strong> see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> and <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>.</p>
 
@@ -11320,6 +11322,8 @@ module.exports = [
   <li>Fix internal links to point to the right pages</li>
   <li>Set up 301 redirects for removed or moved pages that still get visits or have links; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a></li>
 </ol>
+
+<p>If every page or post on your site suddenly shows a 404 while the homepage still works, the cause is usually technical rather than missing pages; see <a href="/blog/wordpress-pages-404-permalinks-fix/">how to fix WordPress pages showing 404</a>.</p>
 
 <h2>After redesigns and migrations</h2>
 <p>404s often spike after URL changes. Monitor closely in the first weeks; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
@@ -24225,6 +24229,8 @@ Template: astra
   <li>Replace heavy or abandoned plugins, split very long builder pages and run big imports in smaller batches</li>
   <li>Resize photos before uploading them</li>
 </ul>
+
+<p>If WordPress rejects a file before it even uploads, with a message that it exceeds the maximum upload size, that's a different PHP limit; see <a href="/blog/increase-wordpress-upload-size-limit/">how to increase the WordPress upload size limit</a>.</p>
 
 <h2>When hosting is the real problem</h2>
 <p>On budget shared plans, the PHP limit may be low and the account's total memory is shared by every visitor and background task. Signs you've outgrown your plan include memory errors that return during busy periods, a sluggish dashboard, backups that fail partway and resource warnings in your hosting panel. Sometimes a better plan or host is the right fix; see <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>.</p>
@@ -38241,6 +38247,260 @@ Description: Custom code for this website.
 <p>Then check every quote against the same list; <a href="/blog/compare-website-quotes/">how to compare website quotes</a> explains what else to look for. And before choosing the cheapest option, read <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a> to see where cutting corners costs you later.</p>
 
 <p>Planning a campaign? See <a href="/landing-page-design/">landing page design</a> to talk through your offer, tracking and timeline.</p>
+`,
+  },
+  {
+    slug: 'wordpress-stuck-in-maintenance-mode',
+    seoTitle: 'WordPress Stuck in Maintenance Mode? How to Fix It',
+    title: 'WordPress Stuck in Maintenance Mode? How to Fix "Briefly Unavailable for Scheduled Maintenance"',
+    description: 'Seeing "Briefly unavailable for scheduled maintenance"? Why updates get stuck, how to delete the .maintenance file, finish the update safely and prevent it.',
+    date: '2026-10-01',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>You clicked update, something interrupted it, and now every visitor sees a single line: "Briefly unavailable for scheduled maintenance. Check back in a minute." A minute passes, then ten, and it's still there. The good news is that this is one of the easiest WordPress problems to fix, and your content is almost never affected. Here's why it happens, how to clear it and how to make sure the interrupted update actually finished.</p>
+
+<h2>Why WordPress shows this message</h2>
+<p>Whenever WordPress updates its core files, a plugin or a theme, it briefly puts the site into maintenance mode so visitors don't load half-replaced files. It does this by creating a small file called <code>.maintenance</code> in the main WordPress folder. When the update finishes, WordPress deletes the file and the site returns to normal, usually within seconds.</p>
+<p>If the update is interrupted, the file can be left behind. Common reasons:</p>
+<ul>
+  <li>Closing the browser tab or losing your internet connection partway through an update</li>
+  <li>Updating many plugins at once on a slow or busy shared hosting plan</li>
+  <li>The server hitting a time or memory limit, or running out of disk space</li>
+  <li>A plugin failing partway through its own update</li>
+</ul>
+<p>This message is one of several covered briefly in <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>; this guide walks through the full fix.</p>
+
+<h2>First, wait a few minutes and refresh</h2>
+<p>WordPress is designed to stop treating the site as under maintenance once that file is around ten minutes old, so a stuck message sometimes clears on its own. Before touching any files:</p>
+<ul>
+  <li>Wait ten to fifteen minutes, then do a hard refresh (Ctrl+F5 on Windows) or open the site in a private window</li>
+  <li>Check on your phone using mobile data, in case your browser or office network is showing a cached copy</li>
+  <li>Don't keep clicking update in the dashboard while you wait</li>
+</ul>
+<p>If the message is still there after that, or you can't reach the dashboard at all, remove the file yourself.</p>
+
+<h2>How to delete the .maintenance file</h2>
+<p>You'll need access to your website's files through your hosting control panel or FTP. The file sits in the same folder as wp-config.php and the wp-admin, wp-content and wp-includes folders. On shared hosting this is often called public_html.</p>
+<h3>Using your hosting file manager</h3>
+<ol>
+  <li>Log in to your hosting account (hPanel, cPanel or your host's own dashboard) and open the File Manager</li>
+  <li>Open the folder where WordPress is installed</li>
+  <li>Look for <code>.maintenance</code>. Files whose names start with a dot are hidden by default in some file managers, so turn on the option to show hidden files if you can't see it</li>
+  <li>Delete the file. It only records when the update started, so removing it is safe</li>
+</ol>
+<h3>Using FTP or SFTP</h3>
+<p>Connect with an FTP app such as FileZilla using the FTP details from your hosting panel, switch on the option to show hidden files, open the WordPress folder and delete <code>.maintenance</code>.</p>
+<p>Then reload the site. If you use a caching plugin, your host's cache or a CDN, clear those as well so visitors don't keep seeing a stored copy of the maintenance message.</p>
+
+<h2>Check whether the update actually finished</h2>
+<p>Deleting the file brings the site back, but the update that was interrupted may be incomplete. Spend five minutes checking:</p>
+<ul>
+  <li><strong>Dashboard → Updates:</strong> see whether WordPress, plugins or themes still show as needing an update, and which WordPress version is listed</li>
+  <li><strong>The Plugins screen:</strong> check version numbers, and look for any plugin WordPress has deactivated with a message that the plugin file doesn't exist, which usually means its folder was only partly copied</li>
+  <li><strong>The live site:</strong> open the homepage, a few inner pages and your contact form and, for online stores, the cart and checkout</li>
+  <li><strong>Your error log:</strong> your hosting panel, or your host's support team, can show errors logged around the time of the update</li>
+</ul>
+<p>Recent WordPress versions try to restore the previous version of a plugin or theme when its update fails, but that doesn't catch every kind of interruption. Don't assume everything is fine just because the homepage loads.</p>
+
+<h2>Re-run the interrupted update safely</h2>
+<ol>
+  <li><strong>Take a backup first,</strong> of both files and database; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a></li>
+  <li><strong>Update one item at a time,</strong> starting with whatever was updating when it got stuck</li>
+  <li><strong>Keep the tab open</strong> until WordPress confirms the update is complete</li>
+  <li><strong>For WordPress itself,</strong> Dashboard → Updates offers a re-install button that copies fresh core files over the existing ones without touching your pages, posts or uploads</li>
+  <li><strong>For a half-updated plugin,</strong> download a fresh zip of the plugin (from WordPress.org or your licence account for premium plugins) and upload it through Plugins → Add New → Upload Plugin; WordPress will offer to replace the installed version. Avoid deleting the plugin from the dashboard first, because some plugins remove their settings when deleted</li>
+  <li><strong>Test again</strong> after each update</li>
+</ol>
+<p>If an update keeps failing, check your hosting panel for disk space and resource-limit warnings, and confirm the plugin supports your PHP and WordPress versions.</p>
+
+<h2>When deleting the file isn't enough</h2>
+<ul>
+  <li><strong>"There has been a critical error on this website":</strong> a plugin or theme was left half-updated or isn't compatible; see <a href="/blog/fix-wordpress-critical-error/">how to fix a critical error</a></li>
+  <li><strong>A blank white page:</strong> usually a PHP error caused by incomplete files. Restore your backup, or disable the plugin that was updating by renaming its folder inside wp-content/plugins</li>
+  <li><strong>"Another update is currently in progress":</strong> WordPress sets a temporary lock during core updates, which normally clears by itself after about 15 minutes. Wait rather than forcing it</li>
+  <li><strong>A designed "coming soon" or maintenance page:</strong> this comes from a maintenance-mode plugin, your theme or a setting in your hosting panel, not the .maintenance file, so switch it off there</li>
+</ul>
+
+<h2>How to stop it happening again</h2>
+<ul>
+  <li>Update plugins and themes one at a time rather than selecting everything and clicking update</li>
+  <li>Take a backup before every round of updates, and keep copies off the server</li>
+  <li>Update during quiet hours, not in the middle of a festival sale or a busy ad campaign</li>
+  <li>Test major updates (new WordPress versions, page builders, WooCommerce) on a staging copy first</li>
+  <li>Keep enough free disk space, and move to a better plan if your hosting is constantly hitting its limits</li>
+  <li>Use a stable connection, not patchy mobile data while travelling</li>
+</ul>
+<p>For a complete routine, see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>.</p>
+
+<p>Would you rather not deal with updates at all? I handle WordPress updates, backups and fixes like this for businesses every month; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'increase-wordpress-upload-size-limit',
+    seoTitle: 'How to Increase the WordPress Upload Size Limit',
+    title: 'How to Increase the WordPress Upload Size Limit (and Fix Upload Errors)',
+    description: 'Fix "exceeds the maximum upload size for this site": where the limit comes from, how to raise it in hosting settings, why some tricks fail and better options.',
+    date: '2026-10-01',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-migration'],
+    body: `
+<p>You try to upload a brochure PDF, a theme zip or a product video and WordPress refuses with "exceeds the maximum upload size for this site". Many guides suggest pasting code into one file or another, and some of those tricks quietly do nothing. Here's where the limit actually comes from, how to raise it properly, and when a bigger limit isn't the right answer at all.</p>
+
+<h2>Where the upload limit comes from</h2>
+<p>WordPress doesn't set its own upload limit. It reads the limits from PHP, the language your site runs on, and those are controlled by your hosting. Two settings matter most:</p>
+<table>
+  <thead><tr><th>Setting</th><th>What it controls</th></tr></thead>
+  <tbody>
+    <tr><td><code>upload_max_filesize</code></td><td>The largest single file PHP will accept</td></tr>
+    <tr><td><code>post_max_size</code></td><td>The largest total amount of data in one request; it should be equal to or larger than upload_max_filesize</td></tr>
+    <tr><td><code>memory_limit</code></td><td>Memory available to process the upload, such as resizing a large photo</td></tr>
+    <tr><td><code>max_execution_time</code> and <code>max_input_time</code></td><td>How long PHP waits, which matters for big files on slow connections</td></tr>
+  </tbody>
+</table>
+<p>WordPress uses the smaller of the first two as your effective limit. On a WordPress multisite network, the network admin settings can set a lower limit on top of this.</p>
+
+<h2>Check your current limit</h2>
+<ul>
+  <li><strong>Media → Add New:</strong> WordPress shows "Maximum upload file size" below the upload area</li>
+  <li><strong>Tools → Site Health → Info:</strong> the Media Handling and Server sections list the PHP upload and post size values</li>
+</ul>
+<p>Note the numbers before you change anything, so you can confirm afterwards that your change worked.</p>
+
+<h2>Raise the limit in your hosting control panel</h2>
+<p>This is the most reliable method because it changes PHP's settings at the source.</p>
+<ul>
+  <li><strong>Hostinger's hPanel:</strong> look in the advanced section for PHP configuration, where a PHP options tab lets you change values such as upload_max_filesize and post_max_size</li>
+  <li><strong>cPanel hosts:</strong> look for "MultiPHP INI Editor" or "Select PHP Version", which often has an options tab</li>
+  <li><strong>Other hosts and managed WordPress plans:</strong> look for PHP settings, or ask support to raise the limit for you</li>
+</ul>
+<p>Increase upload_max_filesize to what you genuinely need, set post_max_size a little higher, save, then recheck Media → Add New. Menu names change over time, so check your host's help pages if you can't find the option. Some budget plans cap these values, and the only way past the cap is a different plan.</p>
+
+<h2>.htaccess, php.ini and wp-config.php: why they often don't work</h2>
+<p>You'll find three popular do-it-yourself methods online. Each works only on certain server set-ups:</p>
+<ul>
+  <li><strong>.htaccess:</strong> lines starting with <code>php_value</code> work only where the server supports them. On many hosts they're ignored, and on some they cause a 500 Internal Server Error that takes the whole site down</li>
+  <li><strong>php.ini or .user.ini:</strong> a file in the site's main folder can override PHP settings on some hosts, and changes can take a few minutes to apply. Other hosts ignore these files entirely</li>
+  <li><strong>wp-config.php:</strong> adding an <code>ini_set()</code> line for the upload size generally has no effect, because PHP doesn't allow upload_max_filesize and post_max_size to be changed once WordPress is already running. The memory setting you may have seen, WP_MEMORY_LIMIT, controls memory, not upload size</li>
+</ul>
+<p>If you do try one of these, take a backup of the file first and remove your change if it doesn't help. A forgotten line in .htaccess can cause confusing problems months later. Prefer the control panel whenever it's available.</p>
+
+<h2>Other upload errors and what they mean</h2>
+<table>
+  <thead><tr><th>What you see</th><th>Likely cause</th></tr></thead>
+  <tbody>
+    <tr><td>"The link you followed has expired" when uploading a theme or plugin</td><td>The zip is larger than post_max_size or upload_max_filesize</td></tr>
+    <tr><td>"413 Request Entity Too Large"</td><td>A limit on the web server itself, separate from PHP, which your host needs to raise</td></tr>
+    <tr><td>"The server cannot process the image"</td><td>Not enough memory to resize a very large photo; see <a href="/blog/wordpress-memory-limit-errors/">memory limit errors</a></td></tr>
+    <tr><td>"Sorry, you are not allowed to upload this file type"</td><td>WordPress blocks some file types for security; it's not a size problem</td></tr>
+    <tr><td>"Unable to create directory" for the uploads folder</td><td>Folder permissions or a full disk on your hosting account</td></tr>
+    <tr><td>A vague "HTTP error"</td><td>Often a time-out, memory limit or security rule; try a smaller file and check the error log</td></tr>
+  </tbody>
+</table>
+<p>For other error messages, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
+
+<h2>Better options for big files</h2>
+<p>A higher limit fixes the error, but it isn't always the right fix. Large files slow your site and fill your hosting storage and backups.</p>
+<ul>
+  <li><strong>Photos:</strong> resize and compress before uploading. A phone photo several megabytes in size can usually be reduced to a small fraction of that with no visible difference on screen; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a></li>
+  <li><strong>Videos:</strong> upload to YouTube or Vimeo and embed them, rather than hosting video files on your server; see <a href="/blog/video-on-business-website/">video on your business website</a></li>
+  <li><strong>PDF brochures and catalogues:</strong> compress them before uploading, especially if they were exported at print quality</li>
+  <li><strong>Very large downloads:</strong> consider a cloud storage link for files only a few people need</li>
+  <li><strong>Themes and plugins:</strong> upload the unzipped folder to wp-content/themes or wp-content/plugins through FTP instead</li>
+  <li><strong>Migration backups:</strong> importing a whole-site backup through the browser often hits these limits; uploading via FTP or using your host's migration tool is usually simpler</li>
+</ul>
+
+<p>Stuck on upload errors, or moving a large site to new hosting? I can sort out server settings and migrations for you; see <a href="/wordpress-maintenance/">WordPress maintenance</a> or <a href="/wordpress-migration/">WordPress migration</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-pages-404-permalinks-fix',
+    seoTitle: 'WordPress Pages Showing 404? How to Fix Permalink Errors',
+    title: 'WordPress Pages Showing 404 but the Homepage Works? How to Fix It',
+    description: 'Pages or posts suddenly showing 404 while the homepage works? How to fix WordPress permalinks, .htaccess, migration issues, custom post types and redirects.',
+    date: '2026-10-01',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-migration'],
+    body: `
+<p>Your homepage loads fine, but click any page, blog post or product and you get "Page not found". Nothing was deleted, and the pages are still sitting in the dashboard. This is almost always a problem with how WordPress turns friendly URLs into pages, not with the pages themselves, and it's usually quick to fix. This guide is about real pages that have started returning 404s; to improve the page visitors see when a URL genuinely doesn't exist, see <a href="/blog/helpful-404-pages/">404 pages that help instead of frustrate</a>.</p>
+
+<h2>Why pages 404 while the homepage works</h2>
+<p>Your pages don't exist as separate files. When someone visits /services/, the server hands the request to WordPress's index.php, and WordPress looks up which page matches that URL using its stored rewrite rules. Two things have to work:</p>
+<ul>
+  <li><strong>The server must pass the request to WordPress.</strong> On Apache and LiteSpeed servers, common on shared hosting, this is done by rules in the .htaccess file. On Nginx servers, it's set in the server configuration</li>
+  <li><strong>WordPress's own rewrite rules must be up to date.</strong> They're stored in the database and rebuilt when permalink settings are saved</li>
+</ul>
+<p>The homepage works because the server loads index.php directly. A useful clue: if the 404 page looks like your site, with your header and footer, WordPress received the request but couldn't match it. If it's a plain, unstyled server page, the request never reached WordPress, which points to .htaccess or the server configuration.</p>
+
+<h2>Fix 1: Re-save your permalinks</h2>
+<p>This is the first thing to try, and often all you need:</p>
+<ol>
+  <li>Go to Settings → Permalinks in the dashboard</li>
+  <li>Don't change anything; just click Save Changes</li>
+  <li>Open a few inner pages in a private window</li>
+</ol>
+<p>Saving rebuilds WordPress's rewrite rules and, where it can, rewrites the WordPress section of .htaccess. If WordPress can't write to the file, it shows a notice with the rules to add yourself. Clear your caching plugin, host cache and CDN afterwards, because a 404 can stay cached after the cause is fixed.</p>
+<p>Don't switch to the "Plain" setting as a workaround. It makes pages load again, but it changes every URL on your site.</p>
+
+<h2>Fix 2: Check the .htaccess file</h2>
+<p>If re-saving doesn't help on an Apache or LiteSpeed server, open your hosting file manager and find .htaccess in the main WordPress folder, the one containing wp-config.php. It's a hidden file, so you may need to turn on the option to show hidden files.</p>
+<ul>
+  <li><strong>The file is missing:</strong> common after a migration, because some transfer methods skip hidden files. Create an empty file called .htaccess, then re-save permalinks</li>
+  <li><strong>The WordPress section is missing or damaged:</strong> a plugin, security tool or manual edit may have broken it</li>
+  <li><strong>The file isn't writable:</strong> incorrect file permissions can stop WordPress updating it</li>
+</ul>
+<p>For a site installed in the main folder, the standard WordPress section looks like this (newer installs may include one extra line):</p>
+<pre><code># BEGIN WordPress
+&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+&lt;/IfModule&gt;
+# END WordPress</code></pre>
+<p>Download a copy of the existing file before editing, because rules for caching, security or redirects may live in the same file. A typing mistake can cause a 500 error across the whole site; if that happens, put your saved copy back.</p>
+<p>Nginx ignores .htaccess files, so the server configuration needs a rule that sends unknown URLs to index.php. On shared or managed hosting, ask support to check it. On your own server, Apache also needs its rewrite module enabled and permission to read .htaccess files.</p>
+
+<h2>After a migration: what else to check</h2>
+<p>Pages often break straight after a move to new hosting, a new domain or from a staging copy. Beyond .htaccess, check:</p>
+<ul>
+  <li><strong>Settings → General:</strong> the WordPress Address and Site Address should both show the live domain, with https and the correct www or non-www version</li>
+  <li><strong>Subfolder mismatches:</strong> a site moved from yoursite.com/new/ to the main domain, or the other way round, needs the RewriteBase and final RewriteRule lines in .htaccess to match its new location</li>
+  <li><strong>Old addresses in content and menus:</strong> links pointing to the staging address or old domain need a proper database search and replace</li>
+</ul>
+<p>If URLs genuinely changed during the move, the old ones need 301 redirects; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
+
+<h2>Custom post types and plugin changes</h2>
+<p>If only one type of content fails, such as projects, properties, courses or products, while normal pages work, look at whatever registers that content type:</p>
+<ul>
+  <li><strong>Rules not refreshed:</strong> after a custom post type is added or its URL slug is changed, WordPress needs its rewrite rules rebuilt, which re-saving permalinks does</li>
+  <li><strong>The theme or plugin was removed:</strong> if a portfolio or listings section was registered by a theme you've switched away from, or a plugin you deactivated, those URLs stop working although the content is still in the database. Reactivate it, or move the registration into a small plugin; see <a href="/blog/custom-post-types-fields/">custom post types and custom fields</a></li>
+  <li><strong>Slug clashes:</strong> a page and a post type archive using the same slug, such as a "projects" page and a projects archive at /projects/, can conflict so that one of them can't be reached</li>
+  <li><strong>WooCommerce:</strong> check the product permalink options on the Permalinks screen, and that the Shop page is still assigned in WooCommerce's settings</li>
+</ul>
+
+<h2>Check redirects, caching and single missing pages</h2>
+<p>If only certain URLs fail, check these:</p>
+<ul>
+  <li><strong>Redirect rules:</strong> a redirect plugin, your SEO plugin or old .htaccess rules may send visitors to an address that no longer exists. Open the page in a private window and watch where the address bar ends up</li>
+  <li><strong>Page status:</strong> make sure the page is published, not a draft, private, scheduled or in the trash</li>
+  <li><strong>Changed slugs or parent pages:</strong> both change the URL, so old links need a redirect</li>
+  <li><strong>Security plugins and firewalls</strong> occasionally block particular URLs; test by pausing the rule on a staging copy</li>
+</ul>
+<p>Search Console's Page indexing report also lists URLs returning "Not found (404)", which helps you spot whole sections that broke.</p>
+
+<h2>Stop it happening again</h2>
+<ul>
+  <li>Back up the site, including .htaccess, before migrations and big changes</li>
+  <li>After any migration, theme change or plugin removal, re-save permalinks and test a sample of pages, posts and products</li>
+  <li>Keep custom post types in a plugin rather than the theme</li>
+  <li>Check Search Console regularly for new 404s</li>
+</ul>
+<p>For other errors you might meet after an update or move, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
+
+<p>Pages broke after a migration and you need them back quickly? I fix permalink, .htaccess and post-move problems as part of <a href="/wordpress-migration/">WordPress migration</a> and <a href="/wordpress-maintenance/">maintenance</a> work.</p>
 `,
   },
 ];

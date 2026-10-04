@@ -3744,5 +3744,26 @@
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
     <description>What drives the cost of a landing page: copy, template vs custom design, sections, forms, tracking, speed, A/B tests and campaign edits, and how to brief one.</description>
   </item>
+  <item>
+    <title>WordPress Stuck in Maintenance Mode? How to Fix &quot;Briefly Unavailable for Scheduled Maintenance&quot;</title>
+    <link>https://samverse.space/blog/wordpress-stuck-in-maintenance-mode/</link>
+    <guid>https://samverse.space/blog/wordpress-stuck-in-maintenance-mode/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Seeing &quot;Briefly unavailable for scheduled maintenance&quot;? Why updates get stuck, how to delete the .maintenance file, finish the update safely and prevent it.</description>
+  </item>
+  <item>
+    <title>How to Increase the WordPress Upload Size Limit (and Fix Upload Errors)</title>
+    <link>https://samverse.space/blog/increase-wordpress-upload-size-limit/</link>
+    <guid>https://samverse.space/blog/increase-wordpress-upload-size-limit/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Fix &quot;exceeds the maximum upload size for this site&quot;: where the limit comes from, how to raise it in hosting settings, why some tricks fail and better options.</description>
+  </item>
+  <item>
+    <title>WordPress Pages Showing 404 but the Homepage Works? How to Fix It</title>
+    <link>https://samverse.space/blog/wordpress-pages-404-permalinks-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-pages-404-permalinks-fix/</guid>
+    <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Pages or posts suddenly showing 404 while the homepage works? How to fix WordPress permalinks, .htaccess, migration issues, custom post types and redirects.</description>
+  </item>
 </channel>
 </rss>

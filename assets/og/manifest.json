@@ -572,5 +572,8 @@
  "blog-woocommerce-pre-orders-backorders": "2d3959e8c6240ee90ef177567cd3b8f1827d5832",
  "blog-woocommerce-store-running-costs": "80b4176bec1f7ddff33dbcbb27403f7ddcd29b43",
  "blog-shared-vs-vps-vs-managed-wordpress-hosting": "0741ed2236b6ff54b7bb632190924628350bc9f8",
- "blog-landing-page-cost-factors": "f49a874c6afdf1457f186e7860997052dede0ba1"
+ "blog-landing-page-cost-factors": "f49a874c6afdf1457f186e7860997052dede0ba1",
+ "blog-wordpress-stuck-in-maintenance-mode": "9ced7e5c30c241f285334e72503553212e5b64ab",
+ "blog-increase-wordpress-upload-size-limit": "5b4e0a807eabad390d0eb31aa09c31f932db2c46",
+ "blog-wordpress-pages-404-permalinks-fix": "d78415b7878c67f9fba8ef476fe646ecd3e8ca9d"
 }
