@@ -675,6 +675,10 @@ const LINKS = [
   ['figma-to-wordpress-approaches', '<h2>Option 2: Block theme and custom blocks (Gutenberg)</h2>', '<p>Agencies that design in-house and hand the build to a partner can see how <a href="/blog/white-label-elementor-development/">white-label Elementor development</a> works, from global styles to what clients are allowed to edit.</p>\n\n'],
   ['website-for-digital-marketing-agencies', '<h2>Honest case studies beat logo walls</h2>', '<p>If clients ask for web design or maintenance your team doesn\'t do in-house, you can still offer it; see <a href="/blog/wordpress-reseller-for-marketing-agencies/">how marketing agencies can resell WordPress development</a> through a partner.</p>\n\n'],
   ['fixed-price-vs-hourly-website-projects', '<h2>Avoiding scope creep</h2>', '<p>Agencies that send a developer regular work each month can read how an <a href="/blog/agency-development-retainer/">agency development retainer</a> handles request queues, priorities and unused hours.</p>\n\n'],
+  // Agent 86
+  ['google-search-console-reports-explained', '<h2>URL Inspection</h2>', '<p>If the status says "Couldn\'t fetch" or shows an HTTP error instead, here is <a href="/blog/search-console-sitemap-couldnt-fetch/">how to fix a sitemap Search Console couldn\'t fetch</a>.</p>\n\n'],
+  ['website-traffic-dropped', '<h2>Step 2: Is the site working?</h2>', '<p>If Google Analytics shows no data at all, or the tag seems to have stopped working, run through <a href="/blog/google-analytics-not-tracking-wordpress/">these checks for GA4 not tracking on WordPress</a> before looking any further.</p>\n\n'],
+  ['get-website-indexed-google-faster', '<h2>How long does it take?</h2>', '<p>If your site still doesn\'t appear on Google at all, go through <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn\'t showing on Google</a> and check each cause in Search Console.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

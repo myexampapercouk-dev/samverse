@@ -3891,5 +3891,26 @@
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
     <description>How a monthly development retainer between an agency and a WordPress partner works: what it covers, hours vs scope, request queues, unused time and reviews.</description>
   </item>
+  <item>
+    <title>Search Console Says Sitemap &quot;Couldn't Fetch&quot;? Causes, Checks and When to Wait</title>
+    <link>https://samverse.space/blog/search-console-sitemap-couldnt-fetch/</link>
+    <guid>https://samverse.space/blog/search-console-sitemap-couldnt-fetch/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Search Console says your sitemap couldn't be fetched, or shows a General HTTP error? See the usual causes, the checks to run in order and when to simply wait.</description>
+  </item>
+  <item>
+    <title>Google Analytics 4 Not Showing Data on Your WordPress Site? How to Find and Fix It</title>
+    <link>https://samverse.space/blog/google-analytics-not-tracking-wordpress/</link>
+    <guid>https://samverse.space/blog/google-analytics-not-tracking-wordpress/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>GA4 showing no data on your WordPress site? Check for a missing or doubled tag, the wrong measurement ID, cookie banners, caching plugins and filters.</description>
+  </item>
+  <item>
+    <title>WordPress Site Not Showing on Google at All? What to Check and How to Fix It</title>
+    <link>https://samverse.space/blog/wordpress-site-not-showing-on-google/</link>
+    <guid>https://samverse.space/blog/wordpress-site-not-showing-on-google/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>WordPress site missing from Google? Check the Discourage search engines setting, SEO plugin noindex, robots.txt, a new domain and manual actions, step by step.</description>
+  </item>
 </channel>
 </rss>

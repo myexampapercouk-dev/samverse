@@ -2923,6 +2923,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>Duplicate versions of the site (http/https, www/non-www) without redirects</li>
 </ul>
 
+<p>If your site still doesn't appear on Google at all, go through <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn't showing on Google</a> and check each cause in Search Console.</p>
+
 <h2>How long does it take?</h2>
 <p>Some pages are indexed within days; others take weeks, especially on brand-new domains with few links. Keep publishing useful content, building internal links and earning mentions, and indexing speeds up over time.</p>
 
@@ -4001,6 +4003,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>Compare Google Analytics with Google Search Console. If Search Console clicks are steady, it's probably a tracking issue.</li>
   <li>Check date ranges, filters and whether a cookie consent change is blocking tracking</li>
 </ul>
+
+<p>If Google Analytics shows no data at all, or the tag seems to have stopped working, run through <a href="/blog/google-analytics-not-tracking-wordpress/">these checks for GA4 not tracking on WordPress</a> before looking any further.</p>
 
 <h2>Step 2: Is the site working?</h2>
 <ul>
@@ -8860,6 +8864,8 @@ wp plugin verify-checksums --all</code></pre>
 
 <h2>Sitemaps</h2>
 <p>Submit your XML sitemap and check it was read successfully.</p>
+
+<p>If the status says "Couldn't fetch" or shows an HTTP error instead, here is <a href="/blog/search-console-sitemap-couldnt-fetch/">how to fix a sitemap Search Console couldn't fetch</a>.</p>
 
 <h2>URL Inspection</h2>
 <p>Check a specific page: is it indexed, when was it last crawled, is it mobile-friendly? You can also request indexing for new or updated important pages.</p>
@@ -41159,6 +41165,226 @@ wp user reset-password &lt;username&gt;</code></pre>
 <p>Most retainers work best after a few projects together, once you know the partner's quality and communication. Then put the scope, hours or deliverables, priorities, response times, rollover and overage rules, billing, confidentiality and notice into one short written agreement, and review it after the first couple of months.</p>
 
 <p>If your agency sends WordPress work every month, I can work as your development partner behind your brand, and we can talk through whether per-project quotes or a monthly arrangement suits your volume. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for the ways we can work together.</p>
+`,
+  },
+  {
+    slug: 'search-console-sitemap-couldnt-fetch',
+    seoTitle: 'Sitemap "Couldn\'t Fetch" in Search Console: How to Fix It',
+    title: 'Search Console Says Sitemap "Couldn\'t Fetch"? Causes, Checks and When to Wait',
+    description: 'Search Console says your sitemap couldn\'t be fetched, or shows a General HTTP error? See the usual causes, the checks to run in order and when to simply wait.',
+    date: '2026-10-11',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-maintenance'],
+    body: `
+<p>You submit your XML sitemap in Google Search Console, and instead of "Success" the Sitemaps report says "Couldn't fetch", or shows a "General HTTP error". Usually the cause is something small: a wrong address, a redirect, a security rule, or simply a sitemap Google hasn't got round to yet. This guide covers what the messages mean, the checks to run in order, and when waiting is the right answer. For a refresher on what a sitemap is and what belongs in it, start with <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
+
+<h2>What "Couldn't fetch" and "General HTTP error" mean</h2>
+<p>Both messages say the same basic thing: when Google tried to download your sitemap, it didn't get a usable file back.</p>
+<ul>
+  <li><strong>Couldn't fetch</strong> means Google couldn't retrieve the sitemap, or hasn't managed to yet.</li>
+  <li><strong>General HTTP error</strong> means your server answered with an error instead of the file. That could be a "not found", "forbidden" or server error response, and the status code tells you which.</li>
+</ul>
+<p>Neither message means your pages have been removed from Google. A sitemap is a helpful list, not a requirement: Google also finds pages by following links. Check how your important pages are doing in URL Inspection and the Pages report, which <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors explained</a> walks through.</p>
+
+<h2>The common causes</h2>
+<h3>1. The wrong URL was submitted</h3>
+<p>Each sitemap system uses its own address: WordPress's built-in sitemap lives at <code>/wp-sitemap.xml</code>, while SEO plugins often use <code>/sitemap_index.xml</code> or something similar. If you switched SEO plugins, or someone submitted <code>/sitemap.xml</code> out of habit, Google may be asking for a file that doesn't exist. Typos, http instead of https, and www versus non-www count too. Note that WordPress also switches off its built-in sitemap while "Discourage search engines" is ticked under Settings → Reading.</p>
+<h3>2. Robots.txt blocks it</h3>
+<p>If a Disallow rule covers the sitemap's path, or a leftover staging rule blocks the whole site, Googlebot isn't allowed to request the file. <a href="/blog/robots-txt-explained/">Robots.txt explained</a> shows how the rules work.</p>
+<h3>3. Redirects</h3>
+<p>The sitemap URL redirects somewhere else: from http to https, from an old plugin's sitemap to the homepage, or round in a loop. A redirect that ends on an ordinary web page hands Google HTML instead of XML. Submit the final address, and make sure no redirect plugin rule catches it.</p>
+<h3>4. Server errors and blocked bots</h3>
+<p>WordPress sitemaps are usually generated on the fly, so a slow or overloaded server, a PHP error or a plugin conflict can make the request fail. Security plugins, hosting firewalls and CDN bot protection can also answer Googlebot with "forbidden", or with a challenge page a crawler can't pass. Maintenance and "coming soon" modes do the same.</p>
+<h3>5. A new property or sitemap still processing</h3>
+<p>On a newly verified property, or soon after you submit, the report can show "Couldn't fetch" even when the file is perfectly fine. It often just means Google hasn't processed it yet.</p>
+
+<h2>Checks to run, in order</h2>
+<ol>
+  <li><strong>Copy the exact URL from the Sitemaps report</strong> and open it in a private browser window, so you aren't seeing it as a logged-in admin. You should see a plain list of links or of smaller sitemap files.</li>
+  <li><strong>Check the status code.</strong> A free online HTTP header checker, or the Network tab in your browser's developer tools, shows what the server returns. You want 200. A 301 or 302 is a redirect, 403 means something is refusing access, 404 means the URL is wrong, and 500 or 503 point to a server problem.</li>
+  <li><strong>Open the child sitemaps.</strong> A sitemap index lists several smaller sitemaps for posts, pages or products. One broken child can be the real problem.</li>
+  <li><strong>Read your robots.txt</strong> at yourdomain.com/robots.txt and look for Disallow rules matching the sitemap path or the whole site. Search Console's robots.txt report shows the version Google last fetched.</li>
+  <li><strong>Run the sitemap URL through URL Inspection</strong> and click Test live URL. This checks whether Googlebot can fetch it, whether crawling is allowed and what it actually receives.</li>
+  <li><strong>Check the property.</strong> A URL-prefix property only covers addresses starting with that exact prefix, so a sitemap on the www version doesn't belong to a non-www property. A Domain property covers every version.</li>
+  <li><strong>Ask your host about blocks.</strong> If the file loads for you but not for Google, server or firewall logs will show whether Googlebot's requests were refused.</li>
+</ol>
+
+<h2>What you see, and what it usually means</h2>
+<table>
+  <thead><tr><th>When you open the sitemap URL</th><th>Likely cause</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>A "page not found" error</td><td>Wrong URL, or that sitemap system is switched off</td><td>Find the current sitemap address in your SEO plugin and submit that</td></tr>
+    <tr><td>The homepage or another page</td><td>A redirect</td><td>Remove the redirect rule, or submit the real final URL</td></tr>
+    <tr><td>A login page, captcha or "checking your browser" screen</td><td>Maintenance mode, a security plugin or CDN bot protection</td><td>Let search engine crawlers through, then retest</td></tr>
+    <tr><td>A server error, or a very slow load</td><td>Hosting limits, a PHP error or a plugin conflict</td><td>Check the error logs; reduce the URLs per sitemap if your plugin allows it</td></tr>
+    <tr><td>An XML parsing error, or stray text above the list</td><td>A plugin or theme printing output before the XML</td><td>Deactivate plugins one at a time on a staging copy to find it</td></tr>
+    <tr><td>A clean list of URLs</td><td>Still processing, or a block that only affects Googlebot</td><td>Run the live test in URL Inspection, then wait</td></tr>
+  </tbody>
+</table>
+<p>After any change, purge your caching plugin and CDN cache so nobody is looking at an old copy.</p>
+
+<h2>When to simply wait</h2>
+<p>If the sitemap loads in a private window with a 200 status, the XML is clean, robots.txt allows it and the live test in URL Inspection fetches it successfully, there's nothing left to fix on your side. In that case:</p>
+<ul>
+  <li>Resubmit it once, then leave it alone. There's no sign that removing and re-adding it every day gets it read any sooner.</li>
+  <li>Watch the "Last read" date in the Sitemaps report; once the status changes to Success, you're done.</li>
+  <li>Check whether your key pages are getting indexed in URL Inspection, since that matters more than the sitemap's status label.</li>
+</ul>
+<p>There's no fixed timescale for this, especially on a new domain. For a brand-new site, the steps in <a href="/blog/get-website-indexed-google-faster/">how to get your website indexed faster</a> help more than repeated resubmissions. If it stays stuck for weeks despite every check passing, revisit firewall and hosting rules.</p>
+
+<p>Still seeing "Couldn't fetch", or not sure which sitemap your site should be using? I find and fix what's blocking Google as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'google-analytics-not-tracking-wordpress',
+    seoTitle: 'GA4 Not Showing Data on WordPress? How to Find and Fix It',
+    title: 'Google Analytics 4 Not Showing Data on Your WordPress Site? How to Find and Fix It',
+    description: 'GA4 showing no data on your WordPress site? Check for a missing or doubled tag, the wrong measurement ID, cookie banners, caching plugins and filters.',
+    date: '2026-10-11',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>You open Google Analytics 4 and it shows zero visitors, a fraction of what you expected, or numbers that stopped on a particular day. On WordPress the cause is usually one of a handful of things: the tag isn't on the page, it's there twice, it carries the wrong ID, a cookie banner or speed plugin is stopping it, or a GA4 setting is hiding the data. Work through the checks below in order. If you're setting GA4 up from scratch, follow <a href="/blog/setup-google-analytics-search-console/">how to set up GA4 and Search Console</a> first.</p>
+
+<h2>Before you start: test with Realtime, not standard reports</h2>
+<p>Standard GA4 reports aren't instant. Data is processed first, so a newly tracked site can look empty in normal reports for a while even when everything works. For testing, use the <strong>Realtime</strong> report and <strong>DebugView</strong>, which show activity almost as it happens.</p>
+<p>Test in a clean browser too: ad blockers and privacy extensions block Google Analytics, so you may not see your own visit even when the tag is fine. Then match what you see to the likely cause:</p>
+
+<table>
+  <thead><tr><th>What you see</th><th>Most likely cause</th></tr></thead>
+  <tbody>
+    <tr><td>Zero users from the start</td><td>Tag not installed, or installed with the wrong ID</td></tr>
+    <tr><td>Data stopped on a specific date</td><td>A theme change, plugin update, new cookie banner or new speed setting around that date</td></tr>
+    <tr><td>Page views roughly double what you'd expect</td><td>The tag is installed twice</td></tr>
+    <tr><td>Far fewer users than expected</td><td>Consent banner, delayed JavaScript or visitors' ad blockers</td></tr>
+    <tr><td>Realtime shows visits but reports stay empty</td><td>Processing time, a filter, or the wrong property or date range</td></tr>
+  </tbody>
+</table>
+
+<h2>1. Check the tag is on the page at all</h2>
+<p>Open your site in a private window, right-click and choose View Page Source, then search (Ctrl+F) for your measurement ID, which starts with <code>G-</code>. If GA4 is loaded through Google Tag Manager, search for your <code>GTM-</code> container ID instead. If neither appears, the tag isn't there. Common reasons:</p>
+<ul>
+  <li>The plugin that added it, such as Site Kit, an analytics plugin or your SEO plugin, was deactivated, disconnected or reset</li>
+  <li>The code was pasted into the old theme's header file and disappeared when the theme was changed or updated</li>
+  <li>It was added to some pages only, for example through a page builder widget on the homepage</li>
+  <li>It was set up on the staging site and never added to the live one</li>
+</ul>
+<p>Check a few page types, not just the homepage.</p>
+
+<h2>2. Check the measurement ID</h2>
+<ul>
+  <li><strong>An old UA- ID:</strong> Universal Analytics IDs start with <code>UA-</code>, and Universal Analytics stopped processing data in 2023. You need a GA4 ID starting with <code>G-</code>.</li>
+  <li><strong>A Tag Manager ID in the wrong field:</strong> a container ID starting with <code>GTM-</code> belongs in a Tag Manager setting, not a field asking for a measurement ID.</li>
+  <li><strong>An ID from someone else's property:</strong> an earlier developer or agency may have created GA4 under their own account. Compare the ID in your page source with the one in GA4 under Admin → Data streams. If they don't match, your data is going to a property you can't see.</li>
+</ul>
+
+<h2>3. Check it isn't installed twice</h2>
+<p>WordPress makes it easy to add GA4 in several places at once: Site Kit, an SEO plugin's analytics option, a theme setting, a header-code plugin and Tag Manager. Two copies can count every page view twice. Tag Assistant (covered below) lists every Google tag on the page, which is the easiest way to spot duplicates. Keep one method and remove the rest. If you use Tag Manager, let it handle GA4 entirely; see <a href="/blog/google-tag-manager-basics/">Google Tag Manager basics</a>.</p>
+
+<h2>4. Cookie consent banners</h2>
+<p>Many consent banners hold analytics back until a visitor accepts cookies. Visitors who reject or ignore the banner then don't appear, or appear only partly if you use Google's Consent Mode, which can send limited signals without analytics cookies. That's the banner doing its job, not a fault.</p>
+<p>The real problem is a banner that blocks analytics even after someone accepts. To test, open a private window, accept all cookies, browse two pages and look for yourself in Realtime. If you never appear, check which category the banner puts Google Analytics in and whether its script blocking is set up correctly. Don't switch consent off to recover numbers; <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie consent basics</a> covers the essentials, and check the current rules with your lawyer for anything specific.</p>
+
+<h2>5. Caching and speed plugins</h2>
+<p>Speed plugins are an easily missed cause:</p>
+<ul>
+  <li><strong>Delayed JavaScript:</strong> features that delay scripts until someone scrolls, taps or moves the mouse mean visitors who leave without interacting may never be counted</li>
+  <li><strong>Combining and minifying JavaScript:</strong> merging scripts can break the small inline Google tag code or load it in the wrong order</li>
+  <li><strong>Stale cached pages:</strong> if you added or changed the tag without purging the cache, visitors still receive the old HTML</li>
+</ul>
+<p>Exclude the Google tag from delay and combine settings, then purge the plugin cache, server cache and any CDN. If you delay analytics on purpose for speed, accept that some short visits won't be recorded. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers the different cache layers.</p>
+
+<h2>6. Filters, properties and report settings</h2>
+<ul>
+  <li><strong>Data filters:</strong> under Admin → Data filters, an internal traffic filter set to Active with an IP rule that's too broad can exclude real visitors. Use the Testing state before activating a filter, because data an active filter removes can't be brought back later.</li>
+  <li><strong>The wrong property:</strong> if you manage several sites, check the property name at the top of GA4.</li>
+  <li><strong>Report settings:</strong> a narrow date range, a comparison or a report filter can make a report look empty.</li>
+</ul>
+
+<h2>7. Confirm the fix with Tag Assistant, DebugView and Realtime</h2>
+<ol>
+  <li><strong>Tag Assistant:</strong> go to tagassistant.google.com, enter your site's address and connect. Your site opens in a debug session, and Tag Assistant shows each Google tag it finds, its ID and the events it sends.</li>
+  <li><strong>DebugView:</strong> with that session running, open DebugView in GA4 Admin (under Data display). Events such as page_view arrive one by one from your device.</li>
+  <li><strong>Realtime:</strong> close the debug session, visit the site normally on your phone using mobile data, and check Reports → Realtime for an active user.</li>
+</ol>
+<p>If you're comfortable with developer tools, the Network tab gives one more check: filter for "collect" and you should see requests to google-analytics.com as you browse. Once page views come through, track form submissions and call clicks too.</p>
+
+<p>Still seeing nothing in GA4, or want tracking set up and tested properly in one go? I install and verify GA4, Tag Manager and enquiry tracking as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-site-not-showing-on-google',
+    seoTitle: 'WordPress Site Not Showing on Google? What to Check',
+    title: 'WordPress Site Not Showing on Google at All? What to Check and How to Fix It',
+    description: 'WordPress site missing from Google? Check the Discourage search engines setting, SEO plugin noindex, robots.txt, a new domain and manual actions, step by step.',
+    date: '2026-10-11',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>You search for your business, or even your exact domain name, and your WordPress site is nowhere on Google. When a whole site is missing rather than a few pages, the cause is usually one setting or block that affects every page at once. This guide goes through those causes in a sensible order and shows where each one appears in Google Search Console. If only some pages are missing, <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors explained</a> is the better starting point.</p>
+
+<h2>First, confirm the site really isn't indexed</h2>
+<ul>
+  <li>Search Google for <code>site:yourdomain.com</code>. If pages appear, your site is indexed and the problem is ranking rather than visibility. <a href="/blog/rank-for-your-business-name/">How to rank for your own business name</a> covers the most common version of that.</li>
+  <li>If you haven't set up Search Console yet, do it now. Every check below relies on it.</li>
+  <li>Paste your homepage address into <strong>URL Inspection</strong>. A status such as "URL is not on Google" with a reason beats guessing.</li>
+</ul>
+<p>In the URL Inspection result, open the page indexing details and look at two lines: <strong>Crawl allowed?</strong> and <strong>Indexing allowed?</strong> Between them they point to most of the causes below. Click <strong>Test live URL</strong> as well, because the stored result can be out of date.</p>
+
+<h2>1. "Discourage search engines" is still ticked</h2>
+<p>Under Settings → Reading, WordPress has a "Search engine visibility" option with a box labelled "Discourage search engines from indexing this site". Developers tick it while building a site so half-finished pages stay out of Google, and it's easy to forget at launch. Copying a staging site to live can carry it across too.</p>
+<p>While it's ticked, WordPress adds a noindex robots tag to every page, and the dashboard's At a Glance box shows "Search engine discouraged". URL Inspection reports that indexing isn't allowed because of a noindex tag.</p>
+<p><strong>Fix:</strong> untick the box, save, purge any page cache, then run Test live URL on the homepage and request indexing.</p>
+
+<h2>2. Noindex from an SEO plugin</h2>
+<p>SEO plugins such as Yoast SEO and Rank Math control robots tags too, and one wrong setting can hide a whole section:</p>
+<ul>
+  <li><strong>Content type settings:</strong> an option such as showing pages or posts in search results switched off, or a global robots setting of noindex</li>
+  <li><strong>Individual pages:</strong> the robots or advanced section of a page's SEO panel set to noindex, sometimes on the homepage itself</li>
+  <li><strong>Imported settings:</strong> configuration copied from a staging site or another project</li>
+</ul>
+<p>To check, view the page source and search for "noindex". URL Inspection will say something like "'noindex' detected in 'robots' meta tag". Less often, the noindex comes from an X-Robots-Tag header set by the server or a plugin, which URL Inspection names too. Fix the setting at its source, then test the live URL again.</p>
+
+<h2>3. Robots.txt is blocking Google</h2>
+<p>Visit yourdomain.com/robots.txt. A line reading <code>Disallow: /</code> under <code>User-agent: *</code> blocks every crawler from the whole site. It usually comes from a staging site, or from a physical robots.txt file someone uploaded that overrides the one WordPress or your SEO plugin generates.</p>
+<p>URL Inspection shows that crawling isn't allowed because of robots.txt, and the robots.txt report in Search Console's settings shows the file Google last fetched. A blocked site can still appear as bare addresses with no description, because Google knows the URLs exist but can't read the pages. Remove the rule; <a href="/blog/robots-txt-explained/">robots.txt explained</a> shows a safe WordPress setup.</p>
+
+<h2>4. The domain is new and Google hasn't found it yet</h2>
+<p>If nothing is blocking the site, it may simply be undiscovered. A brand-new domain with no links pointing to it, no sitemap and no Search Console property gives Google little reason to visit. URL Inspection will typically say the URL is unknown to Google.</p>
+<p>Submit your sitemap, request indexing for the homepage and main service pages, link the site from your Google Business Profile and social profiles, and give it time. There's no fixed timescale for a new domain. The full set of steps is in <a href="/blog/get-website-indexed-google-faster/">how to get your website indexed faster</a>, so I won't repeat them here.</p>
+
+<h2>5. A manual action or security issue</h2>
+<p>Occasionally a site is missing because Google has acted against it. In Search Console, open <strong>Security &amp; Manual Actions</strong> and check both reports:</p>
+<ul>
+  <li><strong>Manual actions:</strong> a reviewer at Google found a guidelines violation, such as spam. A site-wide action can remove the whole site from results. This can follow a hack that injected spam pages, or come with a domain bought with a spammy history.</li>
+  <li><strong>Security issues:</strong> Google detected hacked content or malware.</li>
+</ul>
+<p>Both should say no issues detected. If not, the report describes the problem. Clean up thoroughly, then use Request Review to explain what you changed. Ask for a review only once the work is complete.</p>
+
+<h2>Other blocks that hide a whole site</h2>
+<ul>
+  <li><strong>Coming soon or maintenance mode</strong> showing Google a placeholder instead of your content</li>
+  <li><strong>Password protection</strong> left on from the build, at hosting or plugin level</li>
+  <li><strong>Canonical tags pointing to the staging domain</strong>, telling Google another address is the original</li>
+  <li><strong>A firewall or bot protection</strong> refusing Googlebot, so the live test can't fetch the page</li>
+</ul>
+
+<h2>Where to check each cause in Search Console</h2>
+<table>
+  <thead><tr><th>Cause</th><th>Where to look</th><th>What you'll see</th></tr></thead>
+  <tbody>
+    <tr><td>Discourage search engines</td><td>URL Inspection</td><td>Indexing not allowed: noindex detected</td></tr>
+    <tr><td>SEO plugin noindex</td><td>URL Inspection, Pages report</td><td>Noindex detected; pages listed under "Excluded by 'noindex' tag"</td></tr>
+    <tr><td>Robots.txt block</td><td>URL Inspection, robots.txt report</td><td>Crawl not allowed: blocked by robots.txt</td></tr>
+    <tr><td>New, undiscovered domain</td><td>URL Inspection, Sitemaps</td><td>URL is unknown to Google</td></tr>
+    <tr><td>Manual action or security issue</td><td>Security &amp; Manual Actions</td><td>An issue listed instead of none</td></tr>
+    <tr><td>Wrong canonical</td><td>URL Inspection</td><td>The Google-selected canonical is a different address</td></tr>
+    <tr><td>Firewall, password or maintenance mode</td><td>URL Inspection live test</td><td>The fetch fails, or the screenshot shows a placeholder</td></tr>
+  </tbody>
+</table>
+<p>After fixing any of these, run Test live URL to confirm Google sees the real page, request indexing for your homepage and key pages, and resubmit your sitemap. Then give Google time to recrawl.</p>
+
+<p>If your WordPress site still isn't appearing after these checks, I can find what's blocking it and fix it as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
 ];
