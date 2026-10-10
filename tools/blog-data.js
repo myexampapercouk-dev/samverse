@@ -331,73 +331,160 @@ module.exports = [
   },
   {
     slug: 'signs-wordpress-site-hacked',
-    title: '8 Signs Your WordPress Site Has Been Hacked (and What to Do)',
-    description: 'Spam redirects, Google warnings, unknown admin users? Learn the 8 warning signs of a hacked WordPress website and the exact steps to take to clean and protect it.',
+    seoTitle: 'How to Tell If Your WordPress Site Has Been Hacked',
+    title: 'How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First',
+    description: 'How to tell if your WordPress site has been hacked: a 10-minute check with Google tools, the clear warning signs, and what to do first if something is wrong.',
     date: '2026-09-27',
+    updated: '2026-10-10',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
-<p>Hacked websites don't always look hacked. Many infections are designed to stay hidden from the site owner while redirecting visitors, injecting spam or stealing data. Here are the warning signs to watch for, and what to do if you spot them.</p>
+<p>Hacked WordPress sites often look perfectly normal to the owner. Many infections are built to stay hidden: they redirect only mobile visitors, show spam only to Google, or skip anyone who is logged in. So "it looks fine when I open it" doesn't mean the site is clean.</p>
+<p>Here's a ten-minute check, the clear signs of a hack, the false alarms, and what to do first.</p>
 
-<h2>8 signs your WordPress site is hacked</h2>
-
-<h3>1. Visitors are redirected to other websites</h3>
-<p>A classic sign: people clicking your site from Google or on mobile end up on spam, gambling or fake prize sites, while it looks normal when you visit directly as a logged-in admin.</p>
-
-<h3>2. Google shows a warning</h3>
-<p>Messages like "This site may be hacked" in search results, or a red "Deceptive site ahead" browser warning, mean Google has detected a problem.</p>
-
-<h3>3. Strange pages appear in Google</h3>
-<p>Search <code>site:yourdomain.com</code> on Google. If you see pages you never created, often in other languages or about pharmacy products or loans, spam has been injected.</p>
-
-<h3>4. Unknown admin users</h3>
-<p>Check <strong>Users</strong> in your dashboard. New administrator accounts you didn't create are a serious red flag.</p>
-
-<h3>5. Your hosting company suspends the site</h3>
-<p>Hosts often suspend accounts that send spam emails or run malicious scripts.</p>
-
-<h3>6. The site is suddenly very slow or crashes</h3>
-<p>Malware running in the background can overload your server.</p>
-
-<h3>7. Unexpected files or code</h3>
-<p>Unfamiliar PHP files in your uploads folder, or strange code at the top of theme files, are common signs of an infection.</p>
-
-<h3>8. You can't log in</h3>
-<p>If your password suddenly stops working and the reset email never arrives, someone may have changed your account details.</p>
-
-<p>The full clean-up process: <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove WordPress malware step by step</a>.</p>
-
-<h2>What to do if your site is hacked</h2>
-<ol>
-  <li><strong>Don't panic, and don't delete everything.</strong> Your real content can usually be saved.</li>
-  <li><strong>Take a backup</strong> of the current files and database, even though they're infected. It's useful for recovery and investigation.</li>
-  <li><strong>Change all passwords:</strong> WordPress admins, hosting, FTP/SFTP and database.</li>
-  <li><strong>Scan the site</strong> with a security plugin or your host's malware scanner.</li>
-  <li><strong>Clean infected files and database entries</strong>, and reinstall WordPress core, themes and plugins from official sources.</li>
-  <li><strong>Remove unknown users and backdoors</strong>. Hackers often leave hidden ways to get back in.</li>
-  <li><strong>Request a review in Google Search Console</strong> once the site is clean, to remove warnings.</li>
-  <li><strong>Harden security</strong> so it doesn't happen again (below).</li>
-</ol>
-
-<p>Seeing a red browser warning? See <a href="/blog/deceptive-site-ahead-warning-fix/">how to fix "Deceptive site ahead"</a>.</p>
-
-<h2>How to prevent it happening again</h2>
+<h2>The quick answer</h2>
+<p>Your WordPress site has probably been hacked if any of these are true:</p>
 <ul>
-  <li>Keep WordPress, themes and plugins updated. Outdated plugins are the most common way in.</li>
-  <li>Delete plugins and themes you don't use.</li>
-  <li>Never install "nulled" (pirated) premium themes or plugins. They often contain malware.</li>
-  <li>Use strong, unique passwords and two-factor authentication for admins.</li>
-  <li>Install a reputable security plugin or firewall.</li>
-  <li>Keep automatic off-site backups so you can restore quickly.</li>
-  <li>Choose reliable hosting with good security practices.</li>
+  <li>Google Search Console shows anything in the <strong>Security issues</strong> report</li>
+  <li>A <code>site:yourdomain.com</code> search on Google shows pages you never created</li>
+  <li>There are administrator accounts in WordPress that nobody on your team made</li>
+  <li>Visitors, especially on mobile or arriving from Google, are sent to other websites</li>
+  <li>There are PHP files inside <code>wp-content/uploads</code></li>
+  <li>Your host has emailed you about malware, spam or a suspension</li>
+</ul>
+<p>Here's how to check each of these properly.</p>
+
+<h2>Check if your WordPress site is hacked in 10 minutes</h2>
+
+<h3>1. Google Safe Browsing site status (1 minute)</h3>
+<p>Google's Transparency Report has a free Safe Browsing site status tool. Enter your domain and it tells you whether Google currently considers the site unsafe, for example for malware or phishing. This is the system behind red "Deceptive site ahead" browser warnings. A clean result only covers what Google has detected so far.</p>
+
+<h3>2. Search Console: Security issues and Manual actions (2 minutes)</h3>
+<p>If your site is verified in Google Search Console, open <strong>Security &amp; Manual Actions</strong> and check both reports:</p>
+<ul>
+  <li><strong>Security issues</strong> lists hacked content, malware, deceptive pages and similar problems, often with sample URLs</li>
+  <li><strong>Manual actions</strong> shows whether Google has taken action against spam on your site</li>
+</ul>
+<p>While you're there, open <strong>Settings &gt; Users and permissions</strong>. An owner you don't recognise is a serious red flag, because attackers sometimes verify themselves so they can submit their own spam sitemaps. If you haven't set up Search Console yet, see <a href="/blog/setup-google-analytics-search-console/">setting up Analytics and Search Console</a>.</p>
+
+<h3>3. A site: search for spam pages (2 minutes)</h3>
+<p>Search Google for <code>site:yourdomain.com</code> and scroll through the results. Look for titles in a language you don't use, cheap medicines, casino or loan keywords, replica goods, or URLs with random strings. Then try targeted searches such as <code>site:yourdomain.com casino</code> or <code>site:yourdomain.com viagra</code>. Spam pages are often cloaked, so they appear in Google even though you can't see them on your site. If you find them, see <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing the Japanese keyword and SEO spam hack</a>.</p>
+
+<h3>4. Unknown admin users (1 minute)</h3>
+<p>In the WordPress dashboard, go to <strong>Users</strong> and click the <strong>Administrator</strong> filter. Every admin should be someone you can name. Some malware hides its accounts from this list, so compare the number shown next to "Administrator" with the accounts you can actually see. A mismatch is suspicious. Also check <strong>Settings &gt; General</strong>: if "Anyone can register" is ticked and the default role is Administrator, someone has changed it. See <a href="/blog/wordpress-user-accounts-audit/">auditing WordPress user accounts</a>.</p>
+
+<h3>5. Recently modified or unfamiliar files (2 minutes)</h3>
+<p>Open your hosting control panel's File Manager (or connect by SFTP) and look at:</p>
+<ul>
+  <li><strong>wp-content/uploads:</strong> this folder should hold images and documents. PHP files here are almost always malicious.</li>
+  <li><strong>The main folder:</strong> unfamiliar files with random names, or names that imitate WordPress files</li>
+  <li><strong>Last modified dates:</strong> sort by date. Core files, <code>wp-config.php</code>, <code>index.php</code> or <code>.htaccess</code> changing when nobody updated anything is a warning sign.</li>
+</ul>
+<p>If you or your developer have SSH access, WP-CLI can compare files with the official versions:</p>
+<pre><code>wp core verify-checksums
+wp plugin verify-checksums --all</code></pre>
+<p>The plugin check covers WordPress.org plugins only.</p>
+
+<h3>6. Redirects that only happen on mobile (1 minute)</h3>
+<p>Take your phone, switch off Wi-Fi so you're on mobile data, open a private or incognito tab, search Google for your business name and tap your own result. Redirect malware often targets exactly this visitor: mobile, logged out and arriving from a search engine. Some infections redirect a visitor only once, so use a fresh private tab for each test. Details are in <a href="/blog/fix-wordpress-redirect-hack/">how to fix the WordPress redirect hack</a>.</p>
+
+<h3>7. Hosting alerts and your inbox (1 minute)</h3>
+<p>Search your email for messages from your host about malware, quarantined files, high resource usage, outgoing spam or account suspension. Many hosts run their own malware scanner, so check its results in your control panel too. Bounced emails or complaints that your messages are landing in spam can mean your server is sending spam; see <a href="/blog/wordpress-site-sending-spam-emails/">WordPress site sending spam emails</a>.</p>
+
+<p>Passing all seven checks is reassuring but not a guarantee, as some backdoors sit quietly until used. For a deeper scan, see <a href="/blog/wordpress-malware-scanners-compared/">WordPress malware scanners compared</a>.</p>
+
+<h2>Clear signs your WordPress site has been hacked</h2>
+
+<h3>Signs your visitors and Google see</h3>
+<ul>
+  <li><strong>Redirects</strong> to gambling, dating, fake prize, tech-support or adult sites</li>
+  <li><strong>Browser warnings</strong> such as "Deceptive site ahead"; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing browser warnings</a></li>
+  <li><strong>"This site may be hacked"</strong> under your listing in search results; see <a href="/blog/this-site-may-be-hacked-google/">removing that label</a></li>
+  <li><strong>Spam titles or descriptions</strong> on your real pages in search results</li>
+  <li><strong>Pop-ups, ads or push-notification prompts</strong> you never added</li>
+  <li><strong>Visitors' antivirus software</strong> blocking your site</li>
 </ul>
 
-<p>A hack is one common cause of sudden traffic loss; see <a href="/blog/website-traffic-dropped/">what to check when traffic drops</a>.</p>
+<h3>Signs inside WordPress</h3>
+<ul>
+  <li>Administrator accounts nobody recognises</li>
+  <li>Plugins you didn't install, often with harmless-sounding names</li>
+  <li>Your security plugin switched off, or its alerts suddenly stopping</li>
+  <li>Posts or pages you didn't write, sometimes hidden as drafts or private</li>
+  <li>The site address or admin email changed under <strong>Settings &gt; General</strong></li>
+  <li>Your password no longer works and reset emails go somewhere else</li>
+</ul>
 
-<p>Specific hacks: <a href="/blog/fix-wordpress-redirect-hack/">spam redirects</a>, <a href="/blog/fix-japanese-keyword-seo-spam-hack/">Japanese keyword and pharma spam</a> and <a href="/blog/wordpress-site-sending-spam-emails/">sites sending spam emails</a>.</p>
+<h3>Signs on the server</h3>
+<ul>
+  <li>PHP files in the uploads folder, or files with random names</li>
+  <li>Long blocks of scrambled code at the top or bottom of theme or core files</li>
+  <li>Unknown cron jobs in your hosting control panel</li>
+  <li>CPU or memory usage spiking with no rise in real visitors</li>
+  <li>Your host suspending the account; see <a href="/blog/hosting-suspended-malware/">hosting suspended for malware</a></li>
+</ul>
 
-<h2>Need it fixed fast?</h2>
-<p>Cleaning a hacked site properly takes experience. Removing the visible symptoms isn't enough if a backdoor remains. If your business depends on your website, get professional help quickly: the longer malware stays, the more damage it does to your reputation and Google rankings.</p>
+<h3>Signs in your data</h3>
+<ul>
+  <li>A sudden drop in Google traffic; see <a href="/blog/website-traffic-dropped/">what to check when traffic drops</a></li>
+  <li>A sharp rise in indexed pages in Search Console's Pages report</li>
+  <li>Search Console queries for keywords you've never used, often in other languages</li>
+  <li>Sitemaps in Search Console that you didn't submit</li>
+  <li>An email from Google saying a new owner was added to your property</li>
+</ul>
+
+<h2>Things that look like a hack but usually aren't</h2>
+<p>Not every problem is malware. These usually have ordinary causes:</p>
+<ul>
+  <li><strong>A critical error or white screen right after an update:</strong> usually a plugin or theme conflict; see <a href="/blog/fix-wordpress-critical-error/">fixing the critical error</a></li>
+  <li><strong>"Too many redirects":</strong> usually a settings or SSL loop, not a spam redirect; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a></li>
+  <li><strong>"Not secure" in the address bar:</strong> an SSL or mixed content issue; see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors</a></li>
+  <li><strong>Only one person sees redirects or pop-ups:</strong> a browser extension or adware on their own device is possible, so ask whether it happens on other devices too</li>
+</ul>
+<p>If you're unsure, run the seven checks above. Real hacks usually leave more than one trace.</p>
+
+<h2>What to do first if your site is hacked</h2>
+<ol>
+  <li><strong>Don't delete the site or restore an old backup straight away.</strong> Your content can usually be saved, and older backups may already contain the infection.</li>
+  <li><strong>Back up the current files and database</strong>, even though they're infected. It preserves evidence and your latest real content.</li>
+  <li><strong>Tell your host.</strong> They may already know what's wrong, can share logs and may need to lift a suspension later.</li>
+  <li><strong>Change every password from a device you trust:</strong> hosting, SFTP, database, all WordPress admins and the email account linked to the site. If your own computer might be infected, scan it first.</li>
+  <li><strong>Note what you've seen</strong> (unknown users, file names, redirect destinations, dates) before removing anything. It helps find the entry point.</li>
+  <li><strong>Protect visitors.</strong> If people are being redirected or a checkout may be compromised, put up a maintenance page or pause payments. For stores, see <a href="/blog/woocommerce-checkout-skimmer-malware/">checkout skimmer malware</a>.</li>
+  <li><strong>Don't ask Google for a review yet.</strong> Clean first; a failed review only slows things down.</li>
+</ol>
+<p>Then work through the full clean-up: <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>. Backdoors are the main reason cleaned sites get reinfected, so read <a href="/blog/find-remove-wordpress-backdoors/">finding and removing backdoors</a> too. Once the site is clean, <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a> covers the Google side.</p>
+
+<h2>How to stop it happening again</h2>
+<ul>
+  <li>Keep WordPress, themes and plugins updated, delete what you don't use, and never install <a href="/blog/nulled-themes-plugins-risks/">nulled themes or plugins</a></li>
+  <li>Use strong, unique passwords and two-factor authentication; see <a href="/blog/secure-wordpress-login/">securing your WordPress login</a></li>
+  <li>Add a <a href="/blog/wordpress-firewall-waf-explained/">firewall</a>, automatic off-site backups and an activity log</li>
+  <li>Check Search Console and your security alerts every month</li>
+</ul>
+<p>The full list is in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>, and <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a> explains the usual ways in.</p>
+
+<h2>FAQs</h2>
+
+<h3>How can I check if my WordPress site is hacked for free?</h3>
+<p>Use Google's Safe Browsing site status tool, the Security issues report in Search Console and a <code>site:yourdomain.com</code> search on Google. Then check your admin users, look for PHP files in the uploads folder and test the site on your phone using mobile data. Free security plugins and your host's scanner can add a file scan.</p>
+
+<h3>Why does my site look fine to me but customers say it's hacked?</h3>
+<p>Many infections deliberately hide from site owners. They skip logged-in users, visitors who come back, or IP addresses that have used the dashboard, and target mobile visitors arriving from Google instead. Your caching setup can also show you a different copy of the page from the one visitors get. Test in a private window on mobile data.</p>
+
+<h3>Can a security plugin tell me if my site is hacked?</h3>
+<p>It can catch a lot, especially known malware and modified core files, but no scanner catches everything. Plugins run inside WordPress, so malware that has tampered with WordPress can sometimes hide from them. Combine a plugin scan with a server-side scan from your host and the manual checks above.</p>
+
+<h3>Will Google tell me if my site is hacked?</h3>
+<p>Often, but not always and not instantly. If your site is verified in Search Console, Google can email you when it detects hacked content or malware, and the issue shows in the Security issues report. Infections that Google hasn't spotted yet, or that only affect some visitors, can go unreported, so don't rely on Google as your only alarm.</p>
+
+<h3>Should I restore a backup or clean the site?</h3>
+<p>Restoring is quicker if you have a backup from before the infection and you know when it happened. Many hacks sit unnoticed for weeks, though, so recent backups may be infected too. Either way, you still need to change passwords and fix the hole the attacker used, or the site will be hacked again.</p>
+
+<h3>Can a hacked WordPress site be fixed without losing content?</h3>
+<p>Usually, yes. Posts, pages and media live in the database and uploads folder and can be kept after the malicious code is removed. A proper clean-up replaces WordPress core, plugins and themes with fresh copies while keeping your content.</p>
+
+<p>If any of these checks turned something up, or you'd rather not dig through files and databases yourself, I can investigate, clean the site properly and close the hole it came in through. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>, or keep things updated, backed up and monitored every month with <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
@@ -6923,57 +7010,143 @@ module.exports = [
   },
   {
     slug: 'faq-page-seo',
-    seoTitle: 'How to Create an FAQ Section That Helps SEO',
-    title: 'How to Create FAQ Sections That Help Customers and SEO',
-    description: 'How to write FAQ sections that answer real customer questions, reduce enquiries about basics, support SEO and AI answers, and where to place them, with tips on structure and schema.',
+    seoTitle: 'FAQ Pages for SEO: How to Write Good FAQs (With Examples)',
+    title: 'FAQs for SEO: How to Write a Good FAQ Section for Service, Sales and Local Pages',
+    description: 'How to write FAQs that help SEO and sales: finding real questions, writing answers, FAQs for service, sales and local pages, FAQ schema facts, with examples.',
     date: '2026-09-27',
+    updated: '2026-10-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
-<p>Good FAQs do two jobs: they answer the questions stopping visitors from contacting you, and they help search engines and AI assistants understand exactly what you offer. Here's how to write them well.</p>
+<p>Good FAQs do two jobs at once. They answer the questions that stop visitors from contacting you or buying, and they help search engines and AI assistants understand exactly what you offer. Bad FAQs do neither: they repeat the sales pitch as questions nobody asked.</p>
+<p>This guide covers how to choose the right questions, how to write a good FAQ answer, how FAQs work on service, sales and local business pages, and what FAQ schema does and doesn't do today, with examples.</p>
 
-<h2>Find the real questions</h2>
+<h2>Do FAQs help SEO?</h2>
+<p>They can, indirectly. FAQs don't give a page a ranking boost on their own, but well-chosen ones help in a few practical ways:</p>
 <ul>
-  <li>Questions customers ask on calls, WhatsApp and email</li>
-  <li>Objections that come up before people buy: price, timing, process, guarantees</li>
-  <li>Search queries in Google Search Console</li>
-  <li>"People also ask" boxes in Google for your main topics</li>
+  <li><strong>They cover more of what people search.</strong> Specific questions match specific, longer searches; see <a href="/blog/long-tail-keywords-explained/">long-tail keywords explained</a>.</li>
+  <li><strong>Clear question-and-answer formatting is easy to quote.</strong> It can help a page get picked for featured snippets and People Also Ask, though there's no guarantee; see <a href="/blog/featured-snippets-how-to-win/">how to win featured snippets</a>.</li>
+  <li><strong>AI assistants can understand and cite them easily</strong>; see <a href="/blog/ai-search-optimization-website/">AI search optimisation</a>.</li>
+  <li><strong>They help visitors decide.</strong> A page that answers the last few doubts usually turns more visitors into enquiries.</li>
+</ul>
+<p>FAQs written only for search engines, stuffed with keywords and padded with obvious questions, add clutter and help nobody.</p>
+
+<h2>A separate FAQ page or FAQs on every page?</h2>
+<p>Both have a place, but FAQs on the page they relate to are usually more useful:</p>
+<ul>
+  <li><strong>Service and product pages:</strong> questions about that specific service or product. This is the most valuable placement.</li>
+  <li><strong>Sales and landing pages:</strong> the objections that stop people buying, placed near the price or call to action.</li>
+  <li><strong>Location pages:</strong> questions about that area, timings and access.</li>
+  <li><strong>A main FAQ page:</strong> general questions about payments, delivery, cancellations and how you work, with links to the relevant service pages.</li>
+</ul>
+<p>Avoid pasting the same FAQ block onto every page. Tailor the questions to each page, and keep shared policies in one place.</p>
+
+<h2>How to pick the right questions</h2>
+
+<h3>Search Console</h3>
+<p>In Google Search Console, open the <strong>Performance</strong> report, add a <strong>Query</strong> filter and choose <strong>Custom (regex)</strong>. A pattern like this pulls out question-style searches:</p>
+<pre><code>^(how|what|why|when|which|where|who|can|does|should)</code></pre>
+<p>It will catch a little noise, but you'll see the questions people already find your site for. Filter by page to see which questions each page attracts. Questions with impressions but few clicks are good candidates; see <a href="/blog/search-console-content-ideas/">finding content ideas in Search Console</a>.</p>
+
+<h3>People Also Ask and autocomplete</h3>
+<p>Search for your main service, with and without your city, and note the questions in Google's "People also ask" box and the autocomplete suggestions. Keep only the ones your customers would genuinely ask. See <a href="/blog/keyword-research-small-business/">keyword research for small businesses</a>.</p>
+
+<h3>Sales calls, WhatsApp and email</h3>
+<p>This is the best source. Keep a running list of questions people ask before they buy, and the doubts that come up just before they go quiet. Ask whoever answers your phone. Their words are the words your customers search with.</p>
+
+<h3>Reviews</h3>
+<p>Your reviews, and your competitors' reviews, show what customers worry about: hidden charges, delays, parking, aftercare. Each worry is a question you can answer before it's asked.</p>
+<p>Then filter. Keep questions that real people ask, that matter to the decision and that you can answer honestly. Drop vanity questions like "Why are we the best?", or rewrite them as real questions, such as "How are you different from a cheaper option?"</p>
+
+<h2>How to write a good FAQ answer</h2>
+<ul>
+  <li><strong>Answer in the first sentence.</strong> "Yes", "No", or the direct answer first, then the detail.</li>
+  <li><strong>Phrase the question as the customer would.</strong> "Do you charge for a visit?" rather than "Inspection fee policy".</li>
+  <li><strong>Be specific.</strong> If the answer is "it depends", say what it depends on.</li>
+  <li><strong>Keep most answers short</strong>, around two to four sentences. Link to a full page when more detail exists.</li>
+  <li><strong>One question per item.</strong> Don't combine three questions under one heading.</li>
+  <li><strong>Stay consistent</strong> with the rest of the page, your prices, policies and Google Business Profile.</li>
+  <li><strong>Write naturally.</strong> Don't force the same keyword into every question.</li>
 </ul>
 
-<h2>Write answers that help</h2>
+<h3>Example: weak vs better</h3>
+<p>For a plumbing business:</p>
+<blockquote><p><strong>Q: Do you charge for a visit?</strong><br>Weak: "Please contact us for details."<br>Better: "Yes, there's a fixed visit charge. If you go ahead with the repair, we adjust it against the final bill, and we always tell you the price before starting work."</p></blockquote>
+<p>The better answer removes a real worry and sets expectations. Use your own policy, of course; the point is the shape of the answer.</p>
+
+<h2>How to write an FAQ for a sales page</h2>
+<p>On a sales or landing page, the FAQ is where you handle the last objections before someone pays or enquires. Place it near the price or the main button, and order questions the way doubts arise:</p>
+<ol>
+  <li><strong>Fit:</strong> Who is this for, and who isn't it for?</li>
+  <li><strong>What's included:</strong> What exactly do I get, and what costs extra?</li>
+  <li><strong>Process and timing:</strong> What happens after I pay, and how long does it take?</li>
+  <li><strong>Payment:</strong> Which payment methods do you accept? Can I pay in instalments?</li>
+  <li><strong>Risk:</strong> What if it doesn't work for me? What's your cancellation or refund policy?</li>
+  <li><strong>Support:</strong> Who do I contact if I get stuck?</li>
+</ol>
+<p>Five to eight questions is usually enough. Answer honestly: don't promise results or guarantees you can't keep, and never use the FAQ to bury important terms. Where it's natural, end an answer with the next step, such as "You can start with a free consultation." For the rest of the page, see <a href="/blog/write-service-pages-that-convert/">writing service pages that convert</a> and <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes</a>; whether to show prices is covered in <a href="/blog/show-prices-on-website/">should you show prices</a>.</p>
+<p>An example for an online course sales page:</p>
+<blockquote><p><strong>Q: What if I fall behind?</strong><br>"You keep access to the recordings for [your access period], so you can catch up at your own pace. Live doubt sessions are held every [day], and you can ask questions in the course group between sessions."</p></blockquote>
+
+<h2>FAQs for service pages</h2>
+<p>Service-page FAQs answer questions about that one service: what's included, what affects the price, how long it takes, what the customer needs to provide and what happens afterwards. Four to eight questions is plenty. Every service page on this site has its own, for example <a href="/wordpress-maintenance/">WordPress maintenance</a> and <a href="/woocommerce-developer/">WooCommerce development</a>. If you rely on service pages rather than a blog, see <a href="/blog/seo-for-service-pages-without-blog/">ranking without a blog</a>.</p>
+
+<h2>FAQs for local businesses</h2>
+<p>For a local business, FAQs answer the practical questions people ask before visiting or booking, often on their phones and often out loud:</p>
 <ul>
-  <li><strong>Answer first, in the first sentence.</strong> Then add detail.</li>
-  <li><strong>Be specific and honest.</strong> Avoid vague answers like "it depends" without explaining what it depends on.</li>
-  <li><strong>Keep answers short:</strong> two to four sentences for most questions</li>
-  <li><strong>Link to more detail</strong> where it exists, such as a service page or guide</li>
+  <li>Which areas do you serve, or where exactly are you?</li>
+  <li>Are you open on Sundays or public holidays?</li>
+  <li>Is there parking, and is the entrance accessible?</li>
+  <li>Do I need an appointment, or can I walk in?</li>
+  <li>Do you offer home visits or same-day service?</li>
+  <li>Which payment methods do you accept, such as UPI or cards?</li>
+  <li>Which languages do you speak?</li>
 </ul>
+<p>Keep answers consistent with your Google Business Profile, especially timings and service areas. Name the real localities you serve, but don't stuff city names into every answer. If you have several location pages, write FAQs for each location rather than copying one set and swapping the city name; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a>. More in the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> and <a href="/blog/voice-search-local-seo/">voice search for local businesses</a>.</p>
+<p>An example for a dental clinic:</p>
+<blockquote><p><strong>Q: Do you see patients on Sundays?</strong><br>"Yes, we're open on Sunday mornings for appointments only. For dental emergencies outside clinic hours, call the number on this page and we'll advise you on what to do next."</p></blockquote>
 
-<p>Answer-first writing also suits people who ask their phones questions out loud; see <a href="/blog/voice-search-local-seo/">voice search for local businesses</a>.</p>
-
-<h2>Where to put FAQs</h2>
+<h2>FAQPage schema: what it does now</h2>
+<p>FAQPage schema is structured data that labels questions and answers on a page. It used to make expandable FAQ dropdowns appear under many sites' search results. That changed in August 2023, when Google limited FAQ rich results to well-known, authoritative government and health websites. For almost every business site, adding FAQ schema will not produce those dropdowns.</p>
+<p>It can still be worth adding, as long as you keep expectations realistic:</p>
 <ul>
-  <li><strong>Service pages:</strong> questions specific to that service. This is the most valuable placement.</li>
-  <li><strong>Homepage:</strong> the top five or six general questions</li>
-  <li><strong>Product pages:</strong> sizing, delivery, usage and returns</li>
-  <li><strong>Landing pages:</strong> objections that stop people converting</li>
+  <li>It describes your content clearly to machines, which may help some search features and tools understand it</li>
+  <li>It is not a ranking factor and won't lift a page by itself</li>
+  <li>The marked-up questions and answers must be visible on the page, word for word</li>
+  <li>If the same FAQ appears on several pages, Google's guidelines say to mark up only one instance</li>
+  <li>Google's guidelines also say FAQ markup shouldn't be used for advertising, which is another reason not to expect much from it on sales pages</li>
 </ul>
-<p>A single giant FAQ page is less useful than relevant FAQs on each page.</p>
+<p>On WordPress, many SEO plugins and FAQ blocks add the markup for you. Check the output with the Rich Results Test or Schema Markup Validator; see <a href="/blog/test-structured-data-rich-results/">testing structured data</a> and <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
 
-<h2>FAQs and SEO</h2>
+<h2>Layout tips</h2>
 <ul>
-  <li>FAQs help a page cover more of the questions searchers ask</li>
-  <li>Clear question-and-answer structure is easy for AI tools to use; see <a href="/blog/ai-search-optimization-website/">AI search optimization</a></li>
-  <li>FAQ schema can be added to describe the content, though Google shows FAQ rich results only for limited types of sites, so don't expect special search displays</li>
+  <li><strong>Accordions are fine.</strong> Google has said content in accordions and tabs is indexed normally, and they keep long FAQs tidy on mobile.</li>
+  <li><strong>Use real headings or clear labels</strong> for questions, so people can scan and screen readers can navigate.</li>
+  <li><strong>Group long FAQ pages</strong> into topics with jump links.</li>
+  <li><strong>Don't hide essentials only in FAQs.</strong> Price basics, location and how to book should also appear in the main content.</li>
 </ul>
-<p>See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
-
-<p>Clear question-and-answer formatting can also earn a place in Google's answer boxes; see <a href="/blog/featured-snippets-how-to-win/">how to win featured snippets and People Also Ask</a>.</p>
 
 <h2>Keep them up to date</h2>
-<p>Review FAQs when prices, processes or policies change. Outdated answers damage trust.</p>
+<p>Review FAQs whenever prices, timings, processes or policies change, and add new questions as they come up in calls. An outdated answer does more damage to trust than a missing one.</p>
 
-<h2>Examples</h2>
-<p>Every service page on this site has its own FAQs, for example <a href="/wordpress-maintenance/">WordPress maintenance</a> and <a href="/woocommerce-developer/">WooCommerce development</a>, answering questions specific to each service.</p>
+<h2>FAQs</h2>
+
+<h3>Are FAQs good for SEO?</h3>
+<p>They help when they answer real questions people search for, because the page then covers more of what searchers want and is easier to quote in snippets and AI answers. They don't add rankings on their own, and padded FAQs can make a page worse.</p>
+
+<h3>How many FAQs should a page have?</h3>
+<p>Usually four to eight on a service or sales page. A main FAQ page can have more if it's grouped into clear sections. Include as many as there are genuine, useful questions, and no more.</p>
+
+<h3>Is FAQ schema still worth adding?</h3>
+<p>It's optional. Since 2023 it won't produce FAQ rich results for most business sites, but valid, accurate markup does no harm and describes your content clearly. Don't add it expecting more clicks.</p>
+
+<h3>How long should an FAQ answer be?</h3>
+<p>Long enough to answer properly: usually two to four sentences, with the direct answer first. If you need several paragraphs, link to a full page instead.</p>
+
+<h3>Can I use AI to write FAQs?</h3>
+<p>AI can help with drafting and tidying, but the questions should come from real customers and the answers must match your actual prices, policies and process. Check every answer before publishing; see <a href="/blog/ai-tools-website-content-responsibly/">using AI tools for website content responsibly</a>.</p>
+
+<p>Want FAQs and service pages that answer real customer questions and are set up properly for search? I improve on-page structure, fix technical SEO and add accurate schema for WordPress sites. See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -15315,58 +15488,170 @@ module.exports = [
   },
   {
     slug: 'hotel-booking-engine-channel-manager',
-    seoTitle: 'Hotel Booking Engine & Channel Manager Explained',
-    title: 'Hotel Booking Engine and Channel Manager Explained: Take Direct Bookings Without Overbooking',
-    description: 'What a hotel booking engine, channel manager and PMS do, how they connect your website with OTAs to prevent overbooking, choosing one, direct booking perks and Google free booking links.',
+    seoTitle: 'Hotel Booking Engine, Channel Manager & PMS Explained',
+    title: 'Hotel Booking Engine and Channel Manager Explained: How They Work With Your PMS, Website and OTAs',
+    description: 'What a hotel booking engine, channel manager and PMS do, how they connect your website and OTAs, what to check before choosing, and how to avoid overbooking.',
     date: '2026-09-27',
+    updated: '2026-10-10',
     category: 'Industries',
     related: ['hotel-website-design', 'wordpress-website-development', 'landing-page-design'],
     body: `
-<p>Hotels and resorts that want direct bookings need more than a nice website. They need a way to take reservations online and keep room availability in sync with booking sites like Booking.com, MakeMyTrip, Agoda and Airbnb. That's where booking engines and channel managers come in.</p>
+<p>Hotels, resorts and homestays that want direct bookings need more than a good-looking website. They need a way to take reservations online and keep room availability in sync with Booking.com, MakeMyTrip, Agoda, Airbnb and the other sites they sell on. That's the job of a booking engine and a channel manager, usually working alongside a property management system (PMS).</p>
+<p>The three are often confused, and many providers sell them together. This guide explains what each one does, how they connect, what to check before choosing, and the mistakes that lead to overbookings.</p>
 
-<h2>The three key systems</h2>
+<h2>Booking engine vs channel manager vs PMS</h2>
 <table>
-  <thead><tr><th>System</th><th>What it does</th></tr></thead>
+  <thead><tr><th>System</th><th>What it does</th><th>Where it works</th></tr></thead>
   <tbody>
-    <tr><td>Booking engine</td><td>Lets guests check availability, choose rooms and pay on your own website</td></tr>
-    <tr><td>Channel manager</td><td>Syncs rates and availability across your website and all the OTAs you use</td></tr>
-    <tr><td>PMS (property management system)</td><td>Manages reservations, check-ins, housekeeping and billing at the property</td></tr>
+    <tr><td>Booking engine</td><td>Lets guests check availability, choose a room and rate, and pay or confirm on your own website</td><td>Your website (direct bookings)</td></tr>
+    <tr><td>Channel manager</td><td>Sends your rates and availability to every OTA and brings their bookings back, so all channels stay in sync</td><td>Between you and the OTAs</td></tr>
+    <tr><td>PMS (property management system)</td><td>Runs day-to-day operations: reservations, check-in and check-out, room status, housekeeping, billing and invoices</td><td>At the front desk</td></tr>
   </tbody>
 </table>
-<p>Many providers offer all three together, which reduces integration headaches.</p>
+<p>In short: the booking engine sells rooms on your website, the channel manager keeps every sales channel up to date, and the PMS runs the property.</p>
 
-<h2>Why you need a channel manager</h2>
-<p>Without one, if a room is booked on one OTA, you must manually update every other channel. Miss one, and you risk overbooking. A channel manager updates all channels automatically when a booking comes in from anywhere.</p>
-
-<h2>What to look for in a booking engine</h2>
+<h2>What a booking engine does</h2>
+<p>A booking engine is the "Check availability" and "Book now" part of your website. A good one lets guests:</p>
 <ul>
-  <li>Mobile-friendly booking flow with few steps</li>
-  <li>Integration with your channel manager and PMS</li>
-  <li>Indian payment options: UPI, cards, net banking</li>
-  <li>Promo codes, packages and add-ons (breakfast, airport transfers)</li>
-  <li>Multi-currency for international guests</li>
-  <li>Embeds within your website's design, not a clunky external page</li>
-  <li>Booking confirmation emails and WhatsApp notifications</li>
+  <li>Search by dates and number of guests</li>
+  <li>Compare room types with photos, amenities and occupancy</li>
+  <li>Choose between rate plans, such as room only, with breakfast, or non-refundable</li>
+  <li>Add extras like airport transfers or meal plans</li>
+  <li>Pay in full, pay a deposit or pay at the hotel, depending on your policy</li>
+  <li>Receive an instant confirmation by email, and often WhatsApp or SMS</li>
 </ul>
+<p>Direct bookings don't carry OTA commission, but booking engines aren't free. Pricing models vary: monthly subscriptions, a fee per booking, or a mix, so compare total cost at your expected volume.</p>
+
+<h2>What a channel manager does</h2>
+<p>A channel manager connects to each OTA and does two things:</p>
+<ul>
+  <li><strong>Pushes out</strong> availability, rates and restrictions (such as minimum stay or stop-sell) to every connected channel</li>
+  <li><strong>Pulls in</strong> new bookings, modifications and cancellations from those channels</li>
+</ul>
+<p>When a room sells anywhere, the channel manager reduces availability everywhere else. You change rates in one place instead of logging in to each extranet.</p>
+
+<h2>What a PMS does</h2>
+<p>The PMS is the hotel's operational system: the reservations calendar, guest records, check-in and check-out, room status, housekeeping, folios, payments, GST invoices and reports. Most are cloud-based now. Smaller properties sometimes manage without one, using the channel manager's calendar instead, but that becomes harder as rooms and staff grow.</p>
+
+<h2>How they connect: following a booking</h2>
+
+<h3>A guest books on your website</h3>
+<ol>
+  <li>The guest searches dates in the booking engine on your site and pays or confirms.</li>
+  <li>The booking reaches your PMS (or channel manager calendar).</li>
+  <li>Availability drops by one room, and the channel manager pushes the new figure to every OTA.</li>
+</ol>
+
+<h3>A guest books on an OTA</h3>
+<ol>
+  <li>The OTA sends the booking to your channel manager.</li>
+  <li>The channel manager passes it to your PMS and reduces availability.</li>
+  <li>The updated availability goes to your booking engine and all other OTAs.</li>
+</ol>
+
+<h3>A guest walks in or books by phone</h3>
+<p>Staff enter the booking in the PMS, which updates the channel manager, which updates every channel. This step is where many overbookings start: if phone or walk-in bookings aren't entered straight away, the room is still on sale online.</p>
+
+<h3>Pooled inventory vs allocations</h3>
+<p>Most modern setups use <strong>pooled inventory</strong>: all channels sell from the same pool of rooms, so the last room can sell anywhere. Some properties still give each OTA a fixed <strong>allocation</strong>, which is simpler but can leave rooms unsold on one channel while another is full. Ask which model a system uses and whether it suits you.</p>
+
+<h2>Do you need all three?</h2>
+<ul>
+  <li><strong>A small homestay on one or two platforms</strong> may manage with a booking engine and calendar (iCal) sync. iCal is one-way per link and updates on a delay, so overbookings are possible when dates sell on two sites at once. See <a href="/blog/website-for-homestays-bnbs/">websites for homestays and B&amp;Bs</a>.</li>
+  <li><strong>A hotel or resort selling on several OTAs</strong> needs a channel manager with real two-way connections.</li>
+  <li><strong>Properties with a front desk, housekeeping team and billing</strong> benefit from a PMS connected to both.</li>
+</ul>
+<p>All-in-one suites reduce integration problems because one provider owns the whole chain. Separate best-of-breed tools can work well too, as long as the integrations between them are live and supported.</p>
+
+<h2>What to check when choosing</h2>
+
+<h3>Real two-way sync</h3>
+<p>Ask how bookings, modifications and cancellations flow in both directions, how quickly updates reach each OTA, and what happens when a connection fails. Good systems alert you to failed updates and retry; you don't want to discover a sync problem from a guest standing at reception.</p>
+
+<h3>The OTAs you actually use</h3>
+<p>Get a written list of live connections and confirm each one you rely on, such as Booking.com, Agoda, Expedia, MakeMyTrip and Goibibo, Airbnb or Cleartrip. Check that each connection supports your room types, rate plans and restrictions, not just availability.</p>
+
+<h3>Rates and rate parity</h3>
+<p>Look for derived rates (for example, one rate plan calculated from another), easy bulk changes for seasons and festivals, and a single place to manage restrictions. Rate parity means showing consistent prices across channels. What your OTA agreements say about pricing on your own website varies by platform and changes over time, so read your contracts rather than assuming.</p>
+
+<h3>Payment gateways in India</h3>
+<ul>
+  <li>UPI, cards, net banking and wallets through an Indian payment gateway</li>
+  <li>International cards, if you host foreign guests</li>
+  <li>Whether payments settle into your own gateway account or are collected by the provider first</li>
+  <li>Deposits, pay-at-hotel options and automated refunds that match your cancellation policy</li>
+  <li>How card guarantees and OTA virtual cards are handled securely; card details should never sit in emails or spreadsheets</li>
+</ul>
+<p>See <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway</a> and <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
+
+<h3>GST and invoicing</h3>
+<p>Check that prices display clearly with or without taxes, and that the PMS produces correct GST invoices. GST rates on rooms depend on the tariff and have changed over time, so confirm the current rules with your chartered accountant.</p>
+
+<h3>The guest's booking experience</h3>
+<ul>
+  <li>Fast, simple booking on mobile, with few steps</li>
+  <li>Styled to match your website, ideally on your own domain or subdomain</li>
+  <li>Packages, promo codes and add-ons</li>
+  <li>Multi-currency and multiple languages if your guests need them</li>
+</ul>
+
+<h3>Google free booking links</h3>
+<p>Google can show your direct booking link alongside OTAs in hotel search results. This works through a connectivity partner, usually your booking engine or channel manager, so ask whether they connect to Google's hotel listings.</p>
+
+<h3>Data, contracts and support</h3>
+<p>Can you export bookings and guest data if you leave? Is there a lock-in period or setup fee? Who handles room mapping and training, and is support available when you need it, including weekends? Guest data also brings privacy responsibilities; see <a href="/blog/dpdp-act-website-basics/">DPDP Act basics</a>.</p>
+
+<h2>Common mistakes that cause overbookings</h2>
+<ul>
+  <li><strong>Changing availability directly in an OTA extranet</strong> instead of the channel manager, so other channels never hear about it</li>
+  <li><strong>Wrong room or rate mapping</strong>, so a booking for one room type reduces another</li>
+  <li><strong>Walk-in and phone bookings not entered</strong> in the PMS straight away</li>
+  <li><strong>Relying on iCal</strong> across several busy channels</li>
+  <li><strong>Ignoring sync error alerts</strong>, or having nobody assigned to check them</li>
+  <li><strong>Rooms out of order</strong> for repairs not blocked in the system</li>
+  <li><strong>Cancellation policies that differ</strong> between your website and OTAs, causing disputes</li>
+  <li><strong>Never testing</strong> with a real booking and cancellation after setup or changes</li>
+</ul>
+<p>If an overbooking does happen, contact the guest early, arrange a comparable room nearby and cover the difference. Handling it early and generously protects your reviews.</p>
+
+<h2>Adding a booking engine to your WordPress website</h2>
+<ul>
+  <li>Put a date search widget on the homepage and a "Book now" button on every room page</li>
+  <li>Make the booking page load quickly and match your site's design</li>
+  <li>Set up tracking that follows the guest from your site to the booking page so you can see which marketing brings bookings; see <a href="/blog/ga4-events-explained/">GA4 events explained</a></li>
+  <li>WordPress booking plugins can suit small properties, but many only offer iCal sync, so check before relying on one for several OTAs</li>
+</ul>
+<p>For the rest of the direct booking picture, see <a href="/blog/hotel-website-direct-bookings/">getting more direct hotel bookings</a> and the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
 
 <h2>Give guests a reason to book direct</h2>
 <ul>
-  <li>Best rate on your website, or at least rate parity</li>
-  <li>Direct-booking perks: free breakfast, late checkout, room upgrades when available</li>
-  <li>Flexible cancellation</li>
+  <li>Your best available rate on your own website</li>
+  <li>Direct-booking perks: breakfast, late checkout or an upgrade when available</li>
+  <li>Clear, flexible cancellation terms</li>
   <li>Quick answers on WhatsApp</li>
 </ul>
 
-<h2>Google free booking links</h2>
-<p>Google can show your direct booking link alongside OTAs in hotel search results. Many booking engines and channel managers can connect to Google's hotel listings; ask your provider. Keep your Google Business Profile complete too; see the <a href="/blog/google-business-profile-checklist/">Business Profile checklist</a>.</p>
+<h2>FAQs</h2>
 
-<h2>Integrating with WordPress</h2>
-<p>Most booking engines provide a search widget for your homepage and room pages, with booking completed on a secure booking page styled to match your site. Make sure it loads quickly and works well on mobile.</p>
+<h3>What is the difference between a booking engine and a channel manager?</h3>
+<p>A booking engine takes bookings on your own website. A channel manager keeps rates and availability in sync across the OTAs and other channels you sell on. You usually need both: one to sell direct, the other to stop the same room selling twice.</p>
 
-<h2>Track direct bookings</h2>
-<p>Set up conversion tracking for completed bookings so you know which marketing brings direct revenue; see <a href="/blog/ga4-events-explained/">GA4 events</a>.</p>
+<h3>Is a channel manager the same as a PMS?</h3>
+<p>No. The channel manager handles distribution to OTAs; the PMS handles operations such as check-in, housekeeping and billing. Many providers sell both in one package, which is why they're often confused.</p>
 
-<p>See also <a href="/blog/hotel-website-direct-bookings/">getting more direct hotel bookings</a> and <a href="/hotel-website-design/">hotel website design</a>.</p>
+<h3>Can a channel manager stop overbooking completely?</h3>
+<p>It greatly reduces the risk, but it can't fix manual changes made outside it, wrong mapping or bookings that staff don't enter. Overbookings can also happen if two channels sell the last room at almost the same moment, before updates arrive.</p>
+
+<h3>Do I need a channel manager for a small homestay?</h3>
+<p>Not always. With few rooms on one or two platforms, a booking engine with calendar sync can be enough if you watch for clashes. Once you sell on several busy channels, a channel manager usually saves time and mistakes.</p>
+
+<h3>Can guests pay by UPI through a hotel booking engine?</h3>
+<p>Many booking engines used in India support UPI through an integrated payment gateway. Confirm which gateways are supported and where the money settles before you sign.</p>
+
+<h3>Can I use a WordPress booking plugin instead?</h3>
+<p>For a small property selling mainly direct, a plugin can work. For several OTAs you need reliable two-way channel connections, which dedicated booking engines and channel managers usually handle better.</p>
+
+<p>Planning a new hotel or homestay website, or want your booking engine to sit properly inside the one you have? I build fast, mobile-friendly hotel websites designed around direct bookings. See <a href="/hotel-website-design/">hotel website design</a>.</p>
 `,
   },
   {
@@ -15673,150 +15958,329 @@ module.exports = [
   },
   {
     slug: 'remove-malware-wordpress-step-by-step',
-    seoTitle: 'How to Remove Malware from WordPress: Step by Step',
-    title: 'How to Remove Malware from a Hacked WordPress Site: A Step-by-Step Clean-up Process',
-    description: 'The clean-up process I follow for hacked WordPress sites: backup, access reset, scanning, replacing core and plugins, checking uploads and the database, removing backdoors, hardening and Google review.',
+    seoTitle: 'WordPress Malware Removal: Step-by-Step Cleanup Guide',
+    title: 'How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide',
+    description: 'WordPress malware removal step by step: contain the hack, reset access, replace files, clean the database, remove backdoors and get Google warnings removed.',
     date: '2026-09-27',
+    updated: '2026-10-10',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-seo-services'],
     body: `
-<p>Cleaning a hacked WordPress site isn't just deleting one bad file. Attackers usually leave several ways back in, so a partial clean-up often gets reinfected within days. This is the process I follow when cleaning sites. If you're not comfortable working with files and databases, use it to understand what a proper clean-up involves, and get help.</p>
+<p>Cleaning a hacked WordPress site isn't just deleting one bad file. Attackers usually leave several ways back in, so a quick clean-up often gets reinfected within days. This is the step-by-step process I follow for WordPress malware cleanup, including the part many guides skip: getting Google's warnings removed afterwards.</p>
+<p>If you're not comfortable working with files and databases, use this guide to understand what a proper clean-up involves, and get help. A mistake in the wrong file can take the whole site offline.</p>
+
+<h2>Before you start: clean or restore?</h2>
+<p>If you have a backup from before the infection, and you're confident of when the infection started, restoring it can be the fastest route. The catch is that many infections sit unnoticed for weeks, so recent backups are often infected too. Restoring also doesn't fix how the attacker got in.</p>
+<p>Either way, you'll still need to reset access (step 3), close the entry point (step 9) and check the site afterwards. If you can't be sure a backup is clean, clean the current site instead. Not sure the site is hacked at all? Start with <a href="/blog/signs-wordpress-site-hacked/">how to tell if your WordPress site has been hacked</a>.</p>
+
+<h2>What you'll need</h2>
+<ul>
+  <li>Hosting control panel access, and SFTP or a file manager</li>
+  <li>Database access, usually through phpMyAdmin</li>
+  <li>SSH and WP-CLI if your host offers them; they make checking files much faster</li>
+  <li>A list of your plugins and themes, and the licence details for premium ones</li>
+  <li>A computer you trust. If your own machine might be infected, scan it first, or new passwords may be stolen too.</li>
+</ul>
 
 <h2>Step 1: Contain the damage</h2>
 <ul>
-  <li>Tell your host; they may already see the problem and can help</li>
-  <li>If visitors are being redirected or infected, put up a maintenance page or restrict access temporarily</li>
-  <li>Note what you've seen: redirects, spam pages, warnings, new users</li>
+  <li>Tell your host. They may already see the problem, can share logs and may need to lift a suspension later; see <a href="/blog/hosting-suspended-malware/">hosting suspended for malware</a>.</li>
+  <li>If visitors are being redirected or infected, put up a maintenance page or restrict access temporarily.</li>
+  <li>If a WooCommerce checkout may be compromised, pause card payments; see <a href="/blog/woocommerce-checkout-skimmer-malware/">checkout skimmer malware</a>.</li>
+  <li>Write down what you've seen: redirects, spam pages, warnings, new users, dates.</li>
 </ul>
 
-<h2>Step 2: Take a backup of the infected site</h2>
-<p>Back up all files and the database before changing anything. It preserves evidence and lets you recover real content if something goes wrong during clean-up.</p>
+<h2>Step 2: Back up the infected site</h2>
+<p>Back up all files and the database before changing anything, and store the copy off the server, clearly labelled as infected. It preserves evidence and lets you recover real content if something goes wrong during the clean-up. Never restore it over the clean site later.</p>
 
 <h2>Step 3: Reset access</h2>
 <ul>
-  <li>Change hosting, SFTP, database and all WordPress admin passwords</li>
-  <li>Remove WordPress users you don't recognise, especially administrators</li>
-  <li>Generate new security keys (salts) in wp-config.php, which logs everyone out</li>
+  <li>Change hosting, SFTP, database and all WordPress admin passwords. After changing the database password, update it in wp-config.php.</li>
+  <li>Remove WordPress users you don't recognise, especially administrators, and check the admin email under <strong>Settings &gt; General</strong>.</li>
+  <li>Remove unknown SFTP accounts, database users and hosting sub-users.</li>
+  <li>Generate new security keys (salts) in wp-config.php, which logs everyone out.</li>
+  <li>Rotate API keys stored on the site, such as payment gateway or email sending keys, if they could have been read.</li>
 </ul>
-<p>Change passwords again after the clean-up is complete, in case anything was captured during it.</p>
+<p>Change passwords once more after the clean-up is complete, in case anything was captured during it. See <a href="/blog/wordpress-user-accounts-audit/">auditing WordPress user accounts</a>.</p>
 
-<h2>Step 4: Scan and find what changed</h2>
+<h2>Step 4: Scan and map the infection</h2>
 <ul>
-  <li>Run a server-side scan (many hosts provide one) and a WordPress security plugin scan</li>
+  <li>Run your host's server-side scan and a WordPress security plugin scan</li>
   <li>Use a remote scanner to see what visitors and Google see</li>
   <li>List recently modified files; a burst of changes around the infection date is a clue</li>
-  <li>Verify WordPress core and plugin files against official checksums (WP-CLI can do this)</li>
+  <li>Check your host's access logs for unusual POST requests to odd files, which often point to backdoors and the entry point</li>
 </ul>
-<p>No scanner catches everything; see <a href="/blog/wordpress-malware-scanners-compared/">malware scanners compared</a>.</p>
+<p>With WP-CLI, verify core and WordPress.org plugin files against official checksums:</p>
+<pre><code>wp core verify-checksums
+wp plugin verify-checksums --all</code></pre>
+<p>When reading suspicious PHP files, watch for long encoded strings and functions often used to hide code, such as <code>eval</code>, <code>base64_decode</code>, <code>gzinflate</code>, <code>str_rot13</code> and <code>assert</code>, especially when combined with data from <code>$_POST</code>, <code>$_REQUEST</code> or <code>$_COOKIE</code>. Legitimate plugins use some of these too, so judge the context. No scanner catches everything; see <a href="/blog/wordpress-malware-scanners-compared/">malware scanners compared</a>.</p>
 
 <h2>Step 5: Replace core, plugins and themes with clean copies</h2>
 <ul>
-  <li>Replace the wp-admin and wp-includes folders with fresh copies of your WordPress version, and check root files like index.php and wp-config.php by hand</li>
-  <li>Delete and reinstall every plugin and theme from official sources</li>
+  <li>Replace the wp-admin and wp-includes folders with fresh copies of your WordPress version, and check root files such as index.php and wp-config.php by hand</li>
+  <li>Delete and reinstall every plugin and theme from WordPress.org or the original vendor</li>
   <li>Delete unused plugins and themes entirely</li>
   <li>Remove any nulled (pirated) plugins or themes; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes</a></li>
+  <li>For a custom or modified theme, compare it with a known clean copy from your developer or version control</li>
 </ul>
 
 <h2>Step 6: Check the places malware hides</h2>
 <ul>
   <li><strong>wp-content/uploads:</strong> PHP files here are almost always malicious</li>
-  <li><strong>mu-plugins:</strong> "must-use" plugins load automatically and are easy to miss</li>
+  <li><strong>wp-content/mu-plugins:</strong> "must-use" plugins load automatically and are easy to miss</li>
+  <li><strong>Drop-ins</strong> such as advanced-cache.php and object-cache.php in wp-content: fine if your caching setup made them, suspicious if not</li>
   <li><strong>.htaccess files</strong> in every folder: look for unfamiliar redirects and rewrite rules</li>
-  <li><strong>wp-config.php:</strong> look for injected code at the top or bottom</li>
-  <li><strong>Unfamiliar files and folders</strong> with random names or names mimicking WordPress files</li>
+  <li><strong>wp-config.php:</strong> injected code at the top or bottom, or includes of strange files</li>
+  <li><strong>Unfamiliar files and folders</strong> with random names or names that imitate WordPress files</li>
+  <li><strong>Other sites in the same hosting account:</strong> one infected neighbour can reinfect the rest</li>
 </ul>
-<p>See <a href="/blog/find-remove-wordpress-backdoors/">finding and removing backdoors</a>.</p>
+<p>See <a href="/blog/find-remove-wordpress-backdoors/">finding and removing backdoors</a>. If visitors are being redirected, <a href="/blog/fix-wordpress-redirect-hack/">fixing the redirect hack</a> shows what the code typically looks like.</p>
 
 <h2>Step 7: Clean the database</h2>
 <ul>
-  <li>Search posts, pages and widgets for injected scripts, iframes and hidden links</li>
-  <li>Check the site URL and home URL settings</li>
-  <li>Look for spam posts or pages created by the attacker</li>
+  <li>Search posts, pages, widgets and theme options for injected scripts, iframes and hidden links</li>
+  <li>Check the <code>siteurl</code> and <code>home</code> settings</li>
+  <li>Check the settings of any plugin that adds header or footer code to every page</li>
+  <li>Delete spam posts or pages created by the attacker</li>
   <li>Check user roles and capabilities for hidden administrators</li>
 </ul>
+<p>In phpMyAdmin, queries like these show where scripts appear (your table prefix may not be <code>wp_</code>):</p>
+<pre><code>SELECT ID, post_title FROM wp_posts WHERE post_content LIKE '%&lt;script%';
+SELECT option_name FROM wp_options WHERE option_value LIKE '%&lt;script%';</code></pre>
+<p>Some results will be legitimate, such as maps or booking widgets, so review each one before removing it.</p>
 
-<h2>Step 8: Check scheduled tasks and caches</h2>
-<p>Look for unfamiliar server cron jobs and WordPress scheduled events that could reinstall malware. Then clear all caches, including plugin cache, server cache and CDN, so infected copies of pages stop being served.</p>
+<h2>Step 8: Remove malicious scheduled tasks</h2>
+<p>Look for unfamiliar cron jobs in your hosting control panel and unfamiliar WordPress scheduled events (<code>wp cron event list</code> shows them). Either can download or rewrite malware after you've cleaned it. See <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</p>
 
 <h2>Step 9: Close the entry point</h2>
-<p>Find out how they got in: an outdated plugin, a weak password or a vulnerable theme. Update everything, remove what you don't need and <a href="/blog/secure-wordpress-login/">secure logins</a>. Otherwise the same hole lets them straight back in. See <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a>.</p>
-
-<h2>Step 10: Clean up with Google and monitor</h2>
+<p>Work out how they got in: an outdated plugin, a weak or reused password, a vulnerable theme or an infected neighbouring site. Then:</p>
 <ul>
-  <li>Check Search Console for security issues and unknown owners</li>
-  <li>Request a review if the site was flagged; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing "Deceptive site ahead"</a></li>
-  <li>Remove spam URLs from search; see <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a></li>
-  <li>Set up a firewall, file-change monitoring and off-site backups</li>
+  <li>Update WordPress, plugins, themes and, if it's old, your <a href="/blog/update-php-version-wordpress/">PHP version</a></li>
+  <li><a href="/blog/secure-wordpress-login/">Secure logins</a> with strong passwords and two-factor authentication</li>
+  <li>Disable file editing in the dashboard; see <a href="/blog/harden-wp-config-php/">hardening wp-config.php</a></li>
+  <li>Block PHP from running in uploads and fix <a href="/blog/wordpress-file-permissions/">file permissions</a></li>
+</ul>
+<p>Otherwise the same hole lets them straight back in. See <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a>.</p>
+
+<h2>Step 10: Clear caches and test</h2>
+<p>Purge your caching plugin, your host's server cache and your CDN, so infected copies of pages stop being served. Then test logged out, on mobile data, in a private window and by clicking through from Google. Run your scans again and confirm the core checksums now pass.</p>
+
+<h2>After cleanup: getting Google warnings removed</h2>
+
+<h3>Check what Google has flagged</h3>
+<p>In Search Console, open <strong>Security &amp; Manual Actions</strong> and check both <strong>Security issues</strong> and <strong>Manual actions</strong>. Also check your domain in Google's Safe Browsing site status tool. Fix everything listed, including the sample URLs, before going further.</p>
+
+<h3>Remove rogue Search Console owners</h3>
+<p>Under <strong>Settings &gt; Users and permissions</strong>, remove any owner you don't recognise, and delete their verification method too (an HTML file, meta tag or DNS record). If the verification stays, they can simply verify again.</p>
+
+<h3>Request a review</h3>
+<ol>
+  <li>Open the <strong>Security issues</strong> report.</li>
+  <li>Confirm the issues are fixed across the whole site, not just on the sample URLs.</li>
+  <li>Tick the box confirming you've fixed the issues and click <strong>Request review</strong>.</li>
+  <li>Explain briefly what you found, what you removed and how you closed the entry point.</li>
+</ol>
+<p>Review times vary by issue type. Google's guidance suggests malware and phishing reviews tend to be quicker, often days, while reviews for spam-type hacks can take several weeks. If the review fails, Google shows example URLs that still have problems; fix those and request again. Sites that get reinfected repeatedly may have to wait longer before they can request another review, so make sure the clean-up is complete first. If there's a manual action, fix it and submit a reconsideration request from the Manual actions report. More detail: <a href="/blog/deceptive-site-ahead-warning-fix/">fixing "Deceptive site ahead"</a> and <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a>.</p>
+
+<h3>Clean up spam URLs in search</h3>
+<ul>
+  <li>Let deleted spam URLs return a 404 or 410 so Google drops them</li>
+  <li>Don't block them in robots.txt, because Google then can't see they're gone</li>
+  <li>Use the Removals tool to hide the worst URLs temporarily</li>
+  <li>Resubmit your genuine sitemap and request indexing for key pages</li>
+</ul>
+<p>See <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a> and <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
+
+<h3>Check other blocklists</h3>
+<p>Some antivirus vendors keep their own blocklists, so check your domain on a few site-reputation checkers. If the site was sending spam, check email blacklists too; see <a href="/blog/wordpress-site-sending-spam-emails/">WordPress site sending spam emails</a>.</p>
+
+<h2>Keep it clean after the cleanup</h2>
+<ul>
+  <li>Add a <a href="/blog/wordpress-firewall-waf-explained/">firewall</a> and file-change monitoring</li>
+  <li>Keep an <a href="/blog/wordpress-activity-logs/">activity log</a> so you can see who changed what</li>
+  <li>Keep automatic off-site backups; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore</a></li>
+  <li>Check Search Console and rescan weekly for the first month</li>
 </ul>
 
-<p>Afterwards, see <a href="/blog/recover-rankings-after-hack/">how to recover Google rankings after a hack</a>.</p>
+<h2>FAQs</h2>
 
-<h2>Want it done for you?</h2>
-<p>I clean hacked WordPress sites urgently, usually within 24–48 hours of getting access, and harden them so it doesn't happen again. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+<h3>How long does WordPress malware removal take?</h3>
+<p>It depends on how deep the infection goes and how many sites share the hosting account. A simple infection on one site can be cleaned in hours; a heavily infected account takes longer. Google's review is a separate wait that can add days or weeks.</p>
+
+<h3>Can I remove malware from WordPress without a plugin?</h3>
+<p>Yes. Plugins help with scanning, but the clean-up itself is replacing files with clean copies, removing malicious files and cleaning the database, all done through your host's file manager, SFTP, phpMyAdmin or WP-CLI.</p>
+
+<h3>Is a security plugin enough to clean a hacked site?</h3>
+<p>Usually not on its own. Scanners miss some infections, especially in the database or in files that imitate WordPress, and they don't tell you how the attacker got in.</p>
+
+<h3>Will I lose my content or rankings?</h3>
+<p>Your posts, pages and media can normally be kept. Rankings often dip while warnings or spam pages are showing, and usually recover after a thorough clean-up, though how long that takes varies.</p>
+
+<h3>How do I know the malware is really gone?</h3>
+<p>Core checksums pass, scans come back clean, Google's review succeeds, and nothing returns over the following weeks. File-change monitoring will alert you if something reappears.</p>
+
+<h3>Why did the malware come back after cleaning?</h3>
+<p>Usually a missed backdoor, an unpatched plugin, a password that wasn't changed, a malicious cron job or another infected site in the same hosting account.</p>
+
+<p>If you'd rather have it handled for you, I clean hacked WordPress sites, remove the backdoors behind the infection, close the entry point and help with the Google review. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>, and to keep the site updated and monitored afterwards, <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
     slug: 'fix-wordpress-redirect-hack',
-    seoTitle: 'WordPress Redirecting to Spam Sites? How to Fix It',
-    title: 'WordPress Site Redirecting to Spam Sites? How to Find and Fix the Redirect Hack',
-    description: 'Why a hacked WordPress site redirects visitors to spam or scam sites (often only on mobile or from Google), where the redirect code hides, how to test for it and how to remove it for good.',
+    seoTitle: 'WordPress Redirect Hack: How to Remove Redirect Malware',
+    title: 'WordPress Site Redirecting to Spam? How to Find and Remove the Redirect Hack',
+    description: 'WordPress site redirecting to spam? Why redirect malware hides, where it lives (.htaccess, wp-config, theme files, database) and how to remove it for good.',
     date: '2026-09-27',
+    updated: '2026-10-10',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
-<p>Customers say your website sends them to a gambling, dating or fake prize site, but when you open it, everything looks normal. That's typical of a redirect hack: the malicious code is designed to hide from site owners so it survives longer.</p>
+<p>Customers tell you your website sends them to a gambling, dating, fake prize or "your phone has a virus" page. When you open it yourself, everything looks normal. That's the classic WordPress redirect hack: malicious code that sends some visitors elsewhere while hiding from the site owner, so it survives as long as possible.</p>
+<p>Here's why you might not see it, how to catch it, where the code hides and how to remove it for good.</p>
 
-<h2>Why you might not see it</h2>
-<p>Redirect malware is often conditional. It may only trigger:</p>
+<h2>First, make sure it's really a hack</h2>
+<p>A few harmless things can look like a redirect hack. Rule them out quickly:</p>
 <ul>
-  <li>For visitors arriving from Google or social media</li>
-  <li>On mobile devices</li>
-  <li>For visitors who aren't logged in to WordPress</li>
-  <li>Once per visitor, using a cookie so repeat visits look normal</li>
-  <li>For certain countries</li>
+  <li><strong>A redirect plugin rule</strong> or a rule your developer added. Check any redirect plugin's list and your SEO plugin's redirect settings.</li>
+  <li><strong>"Too many redirects" errors</strong> are a settings loop, not spam; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a>.</li>
+  <li><strong>Ads or third-party scripts.</strong> If you run ads or embed widgets, a bad ad or a compromised third-party script can redirect visitors without your site being hacked.</li>
+  <li><strong>Only one person sees it.</strong> A browser extension or adware on their own phone or computer may be the cause. Ask whether it happens on other devices.</li>
+  <li><strong>Domain or DNS problems.</strong> An expired domain, or DNS records changed at your registrar, can send all visitors to someone else's server; see <a href="/blog/domain-expired-what-to-do/">domain expired: what to do</a>.</li>
 </ul>
+<p>If it happens to different people on different devices and you didn't set it up, treat it as malware.</p>
 
-<h2>How to test for it</h2>
+<h2>Why the redirect only happens on mobile or to logged-out visitors</h2>
+<p>Redirect malware is usually conditional. The code checks who is visiting before deciding whether to redirect:</p>
 <ul>
-  <li>Open your site in a private window on your phone using mobile data</li>
-  <li>Search Google for your business and click through from the results</li>
-  <li>Clear cookies between tests</li>
-  <li>View the page source and look for unfamiliar scripts, especially long obfuscated code</li>
-  <li>Use your browser's developer tools (Network tab) to see requests to unknown domains</li>
-  <li>Run a remote malware scanner</li>
+  <li><strong>Device:</strong> it reads the browser's user agent and targets phones, because owners mostly check their site on a computer</li>
+  <li><strong>Where the visitor came from:</strong> it redirects people arriving from Google, Facebook or other search engines, but not people who type your address directly</li>
+  <li><strong>Logged-in status:</strong> it looks for the WordPress login cookie and leaves administrators alone</li>
+  <li><strong>Once per visitor:</strong> it sets a cookie so the second visit looks normal, which makes the problem hard to reproduce</li>
+  <li><strong>Location or IP address:</strong> it targets certain countries, or skips IP addresses that have used the dashboard</li>
 </ul>
+<p>Caching adds another layer. Logged-out visitors usually get cached copies of pages while logged-in admins bypass the cache, so an infected cached page can keep redirecting visitors even after the code is removed. Browsers can also remember a permanent redirect and keep sending a visitor there.</p>
 
-<h2>Where redirect code hides</h2>
+<h2>How to catch the redirect</h2>
+<ul>
+  <li><strong>Phone test:</strong> switch off Wi-Fi, open a private tab, search Google for your business and tap your result. Use a fresh private tab for each attempt.</li>
+  <li><strong>Desktop test:</strong> in Chrome's developer tools, turn on device emulation, open the Network tab, tick "Preserve log", then visit your site from a Google result and watch for unfamiliar domains.</li>
+  <li><strong>View the page source:</strong> search for script tags loading from unfamiliar domains, and for long scrambled code containing things like <code>eval(</code>, <code>atob(</code> or <code>String.fromCharCode</code>.</li>
+  <li><strong>Remote scanner:</strong> an online scanner fetches your pages as a visitor would and flags known redirect code.</li>
+</ul>
+<p>If you're comfortable with a terminal, you can pretend to be a mobile visitor arriving from Google:</p>
+<pre><code>curl -sI -A "Mozilla/5.0 (iPhone)" -e "https://www.google.com/" https://yourdomain.com/</code></pre>
+<p>A <code>Location:</code> header pointing to another domain means a server-side redirect. This won't reveal JavaScript redirects, which only run in a browser, so use the browser tests as well.</p>
+
+<h2>Where WordPress redirect malware hides</h2>
 <table>
   <thead><tr><th>Location</th><th>What to look for</th></tr></thead>
   <tbody>
-    <tr><td>.htaccess files</td><td>Rewrite rules sending visitors to external sites based on referrer or device</td></tr>
-    <tr><td>Theme files (header.php, footer.php, functions.php)</td><td>Injected scripts or PHP redirect code</td></tr>
-    <tr><td>Plugin files</td><td>Code added to legitimate plugins, or fake plugins with harmless-sounding names</td></tr>
-    <tr><td>Database</td><td>Scripts injected into posts, widgets, theme options or plugin settings; changed site URL settings</td></tr>
-    <tr><td>Core files</td><td>Modified index.php, wp-config.php or files in wp-includes</td></tr>
-    <tr><td>JavaScript files</td><td>Malicious code appended to your theme's or plugins' .js files</td></tr>
+    <tr><td>.htaccess files</td><td>Rewrite rules that check the referrer or device and send visitors to external domains</td></tr>
+    <tr><td>wp-config.php and index.php</td><td>Extra PHP at the very top or bottom, or includes of odd files</td></tr>
+    <tr><td>Theme header.php, footer.php, functions.php</td><td>Injected script tags or PHP that checks the user agent</td></tr>
+    <tr><td>JavaScript files</td><td>Scrambled code appended to theme or plugin .js files</td></tr>
+    <tr><td>Database</td><td>Scripts in posts, widgets, theme options or "header and footer scripts" settings; changed site URLs</td></tr>
+    <tr><td>Plugins, mu-plugins and drop-ins</td><td>Fake plugins, hidden plugins and files that load automatically</td></tr>
+    <tr><td>Scheduled tasks</td><td>Cron jobs that put the code back after you remove it</td></tr>
   </tbody>
 </table>
 
-<h2>How to fix it</h2>
+<h3>.htaccess files</h3>
+<p>On Apache and LiteSpeed hosting, .htaccess controls redirects before WordPress even loads. A malicious rule often looks something like this:</p>
+<pre><code>RewriteEngine On
+RewriteCond %{HTTP_REFERER} (google|bing|facebook) [NC]
+RewriteCond %{HTTP_USER_AGENT} (android|iphone|mobile) [NC]
+RewriteRule ^(.*)$ https://spam-domain.example/ [R=302,L]</code></pre>
+<p>That rule redirects only mobile visitors arriving from search engines or Facebook. Check the .htaccess file in your main folder and in subfolders such as wp-content and uploads, and in any folder above your site. Keep the standard <code># BEGIN WordPress</code> to <code># END WordPress</code> block and rules you can explain, such as those from your caching or security plugin.</p>
+
+<h3>wp-config.php and index.php</h3>
+<p>These files load on every request, which makes them attractive. Look for code before the normal opening <code>&lt;?php</code> line, long encoded strings, or an include of a strange file, often disguised with an image or icon extension:</p>
+<pre><code>&lt;?php @include "/home/account/public_html/wp-content/uploads/2024/03/.cache.ico"; ?&gt;</code></pre>
+<p>The root <code>index.php</code> in a normal WordPress install is only a few lines long. If yours is much longer, compare it with a fresh download of WordPress.</p>
+
+<h3>Theme files</h3>
+<p>Check <code>header.php</code>, <code>footer.php</code> and <code>functions.php</code> in your active theme and child theme. Injected scripts are often disguised as jQuery, analytics or a CDN file:</p>
+<pre><code>&lt;script src="https://cdn-jquery-min.example/jquery.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>Also look for PHP that reads <code>HTTP_USER_AGENT</code> or <code>HTTP_REFERER</code> in a theme that has no reason to.</p>
+
+<p>Attackers also append long, scrambled lines to legitimate .js files in themes and plugins. Sort by last modified date and compare suspicious files with clean copies.</p>
+
+<h3>The database</h3>
+<p>Redirect scripts are often injected into post content, widgets, theme options or the settings of plugins that add code to every page. Your table prefix may differ from <code>wp_</code>. In phpMyAdmin, queries like these find likely places:</p>
+<pre><code>SELECT ID, post_title FROM wp_posts WHERE post_content LIKE '%&lt;script%';
+SELECT option_name FROM wp_options WHERE option_value LIKE '%&lt;script%';</code></pre>
+<p>With WP-CLI, you can search the whole database and check the site address settings:</p>
+<pre><code>wp db search "&lt;script" --all-tables
+wp option get siteurl
+wp option get home</code></pre>
+<p>Some results will be legitimate embeds, such as maps or booking widgets, so review each one rather than deleting everything. Take a database backup before editing anything.</p>
+
+<h3>Rogue plugins and mu-plugins</h3>
+<p>Look in <code>wp-content/plugins</code> for folders you didn't install, especially with generic names that mimic real plugins. Some malware hides itself from the Plugins screen, so compare the folders on the server with the list in your dashboard.</p>
+<p>Then check <code>wp-content/mu-plugins</code>. "Must-use" plugins load automatically, can't be deactivated from the dashboard and are easy to miss. If you didn't knowingly add any, an unexpected file here is a strong warning sign. Also check drop-in files directly inside wp-content, such as <code>advanced-cache.php</code> and <code>object-cache.php</code>: they're normal if your caching setup created them, suspicious if not.</p>
+
+<h3>Scheduled tasks</h3>
+<p>If the redirect returns within hours of cleaning, look for a cron job in your hosting control panel that downloads or rewrites files, and list WordPress scheduled events with <code>wp cron event list</code> or a cron viewer plugin. Remove anything you can't account for.</p>
+
+<h2>How to fix the WordPress redirect hack, step by step</h2>
 <ol>
-  <li>Back up the site, then change all passwords</li>
-  <li>Replace WordPress core, plugins and themes with clean copies</li>
-  <li>Inspect and clean .htaccess files and the database</li>
-  <li>Remove unknown admin users and backdoors; see <a href="/blog/find-remove-wordpress-backdoors/">finding backdoors</a></li>
-  <li>Clear all caches and the CDN, since cached pages can keep serving the redirect</li>
-  <li>Test again from mobile, Google and a private window</li>
+  <li><strong>Back up the infected site</strong> (files and database) and note the redirect destinations and dates.</li>
+  <li><strong>Change every password:</strong> hosting, SFTP, database (then update wp-config.php) and all WordPress admins. Generate new security keys in wp-config.php to log everyone out.</li>
+  <li><strong>Remove admin users you don't recognise.</strong></li>
+  <li><strong>Replace WordPress core:</strong> fresh wp-admin and wp-includes folders for your version, then check root files by hand or with <code>wp core verify-checksums</code>.</li>
+  <li><strong>Reinstall plugins and themes</strong> from official sources, and delete unused or nulled ones. If your theme has custom changes, compare it with a known clean copy.</li>
+  <li><strong>Clean .htaccess, wp-config.php and index.php</strong> as described above.</li>
+  <li><strong>Remove PHP files from uploads</strong> and anything suspicious in mu-plugins.</li>
+  <li><strong>Clean the database:</strong> injected scripts, spam posts and changed site URLs.</li>
+  <li><strong>Remove malicious cron jobs</strong> and scheduled events.</li>
+  <li><strong>Purge every cache:</strong> your caching plugin, your host's server cache and your CDN.</li>
+  <li><strong>Test again</strong> on mobile data, from Google, in fresh private windows, and repeat over the next few days.</li>
 </ol>
-<p>The full process is in <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware step by step</a>.</p>
+<p>Backdoors are what usually bring the redirect back, so read <a href="/blog/find-remove-wordpress-backdoors/">finding and removing WordPress backdoors</a> as well. The complete process is in <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>.</p>
 
-<h2>Why it keeps coming back</h2>
-<p>If the redirect returns days later, a backdoor remains or the original vulnerability is still open, such as an outdated plugin or a compromised password. Some infections also reinstall themselves through scheduled tasks.</p>
+<h2>Why the redirect keeps coming back</h2>
+<ul>
+  <li><strong>A backdoor was missed:</strong> attackers usually leave several ways back in</li>
+  <li><strong>The entry point is still open:</strong> an outdated plugin or theme, or a reused password</li>
+  <li><strong>Another site in the same hosting account is infected</strong> and keeps reinfecting yours; see <a href="/blog/hosting-suspended-malware/">cleaning a whole hosting account</a></li>
+  <li><strong>A cron job reinstalls the code</strong></li>
+  <li><strong>A computer with saved FTP or hosting passwords is infected</strong>, so new passwords get stolen too</li>
+</ul>
 
-<h2>Check Google too</h2>
-<p>Redirect hacks often lead to a browser warning or "This site may be hacked" in search results. Check Search Console's Security issues report and request a review once clean; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing browser warnings</a>.</p>
+<h2>Check Google once it's clean</h2>
+<p>Redirect hacks often lead to a red browser warning or "This site may be hacked" in search results. Once the site is clean, check Search Console's <strong>Security issues</strong> report and request a review; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing "Deceptive site ahead"</a> and <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a>. If rankings dropped, see <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
 
-<p>Need it fixed urgently? See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+<h2>How to prevent redirect hacks</h2>
+<ul>
+  <li>Keep WordPress, plugins and themes updated, and delete anything you don't use</li>
+  <li>Never use nulled plugins or themes; see <a href="/blog/nulled-themes-plugins-risks/">the risks</a></li>
+  <li>Use two-factor authentication for admins; see <a href="/blog/secure-wordpress-login/">securing your WordPress login</a></li>
+  <li>Disable file editing in the dashboard and protect wp-config.php; see <a href="/blog/harden-wp-config-php/">hardening wp-config.php</a></li>
+  <li>Block PHP from running in the uploads folder, and set sensible <a href="/blog/wordpress-file-permissions/">file permissions</a></li>
+  <li>Use a <a href="/blog/wordpress-firewall-waf-explained/">firewall</a> and file-change monitoring</li>
+</ul>
+
+<h2>FAQs</h2>
+
+<h3>Why is my WordPress website redirecting to another site?</h3>
+<p>If you didn't set up the redirect, the most likely cause is malware injected into .htaccess, a core or theme file, a plugin or the database. Less often it's a bad ad, a compromised third-party script, or a domain or DNS problem. Test on several devices to tell them apart.</p>
+
+<h3>Why does the redirect only happen on mobile?</h3>
+<p>The malware checks the visitor's device and where they came from, and deliberately targets mobile visitors from search engines. Site owners mostly check on a computer while logged in, so the infection goes unnoticed for longer.</p>
+
+<h3>Can a security plugin remove redirect malware automatically?</h3>
+<p>It can detect and remove some known infections, but redirect code in the database, .htaccess or a fake plugin is often missed, and plugins don't close the hole the attacker used. Use a scanner to help, then check the locations above by hand.</p>
+
+<h3>Will a redirect hack hurt my Google rankings?</h3>
+<p>It can, through browser warnings, visitors bouncing straight back and spam pages indexed under your domain. Rankings usually recover after a thorough clean-up and a successful review, though how long that takes varies.</p>
+
+<h3>Do I need to reinstall WordPress to fix it?</h3>
+<p>You should replace WordPress core, plugins and themes with clean copies, but you don't need to start from scratch. Your posts, pages and media can be kept once the database and uploads folder are cleaned.</p>
+
+<h3>The redirect came back after I removed it. What now?</h3>
+<p>Something was missed: usually a backdoor, a cron job, an infected neighbouring site or an unpatched plugin. Change passwords again from a clean device and work through every location in this guide.</p>
+
+<p>If your site is redirecting visitors right now and you need it stopped quickly, I can find the redirect code, remove the backdoors behind it, close the entry point and help with the Google review. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
