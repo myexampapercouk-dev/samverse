@@ -22,6 +22,13 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
+# The form posts to /api/send-quote.php (PHP on Hostinger); on Netlify, run the function instead
+[[redirects]]
+  from = "/api/send-quote.php"
+  to = "/.netlify/functions/send-quote"
+  status = 200
+  force = true
+
 # publish = "." serves the whole folder, so hide project files from the web
 [[redirects]]
   from = "/node_modules/*"

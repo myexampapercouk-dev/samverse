@@ -21,11 +21,11 @@
     <description>An honest comparison of WordPress, Wix and Shopify for small businesses: cost, flexibility, SEO, ownership and ease of use, and which one to choose for your needs.</description>
   </item>
   <item>
-    <title>Why Is My WordPress Site Slow? 9 Common Causes and Fixes</title>
+    <title>Why Is My WordPress Site Slow? 12 Common Causes and How to Fix Them</title>
     <link>https://samverse.space/blog/why-is-my-wordpress-site-slow/</link>
     <guid>https://samverse.space/blog/why-is-my-wordpress-site-slow/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Is your WordPress website slow? Learn the 9 most common causes, from heavy images and too many plugins to cheap hosting, and how to fix each one to speed up your site.</description>
+    <description>WordPress site slow? Diagnose it in 5 minutes with free tools, then fix the 12 most common causes, plus a slow admin, slow mobile pages and slow WooCommerce.</description>
   </item>
   <item>
     <title>8 Signs Your WordPress Site Has Been Hacked (and What to Do)</title>
@@ -1743,11 +1743,11 @@
     <description>The difference between a website bug and a change request, what a typical post-launch support period covers, how to report issues well and when an ongoing maintenance plan makes sense.</description>
   </item>
   <item>
-    <title>Outsourcing WordPress Development to India: A Practical Guide for Businesses and Agencies</title>
+    <title>Outsourcing WordPress Development to India: A Practical Guide for Agencies and Businesses</title>
     <link>https://samverse.space/blog/outsource-wordpress-development-india/</link>
     <guid>https://samverse.space/blog/outsource-wordpress-development-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>A practical guide for overseas businesses and agencies outsourcing WordPress work to an Indian developer: benefits, choosing a partner, time zones, communication, payments, contracts and quality.</description>
+    <description>How agencies and businesses outsource WordPress development to India: the process, white-label and NDAs, time zones, pricing models, QA checks and red flags.</description>
   </item>
   <item>
     <title>Web Designer vs Web Developer vs WordPress Developer: Who Do You Need?</title>
@@ -2678,7 +2678,7 @@
     <link>https://samverse.space/blog/ecommerce-website-cost-india/</link>
     <guid>https://samverse.space/blog/ecommerce-website-cost-india/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What drives the cost of an online store in India: platform, products, design, payments, shipping, integrations and yearly running costs, explained simply.</description>
+    <description>What an online store costs to build and run in India: what drives the price, costs by type of store, one-time vs ongoing costs, and WooCommerce vs Shopify.</description>
   </item>
   <item>
     <title>The Real Risks of Very Cheap Websites (and How to Get Good Value on a Small Budget)</title>
@@ -3785,6 +3785,69 @@
     <guid>https://samverse.space/blog/website-for-escape-room-gaming-zones/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
     <description>What escape rooms and gaming zones need online: game pages with difficulty and group size, slot booking with payment, party packages, safety rules and reviews.</description>
+  </item>
+  <item>
+    <title>Click-to-WhatsApp Ads vs a Website Landing Page: Which Suits Your Business?</title>
+    <link>https://samverse.space/blog/click-to-whatsapp-ads-vs-website/</link>
+    <guid>https://samverse.space/blog/click-to-whatsapp-ads-vs-website/</guid>
+    <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Should your Meta ads open WhatsApp or a landing page? When each suits a small business, what you lose without a page, and how to measure real enquiries.</description>
+  </item>
+  <item>
+    <title>Video Testimonials for Your Website: How to Collect, Edit and Use Them Honestly</title>
+    <link>https://samverse.space/blog/video-testimonials-website/</link>
+    <guid>https://samverse.space/blog/video-testimonials-website/</guid>
+    <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
+    <description>How to ask customers for video testimonials with consent, record them on a phone, edit honestly, host them without slowing your site, and place them well.</description>
+  </item>
+  <item>
+    <title>QR Codes for Your Business: Bringing Offline Customers to Your Website</title>
+    <link>https://samverse.space/blog/qr-codes-for-business-website/</link>
+    <guid>https://samverse.space/blog/qr-codes-for-business-website/</guid>
+    <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
+    <description>How to use QR codes on counters, packaging, cards and menus: linking the right page, tracking scans with UTM tags, static vs dynamic codes, and scam safety.</description>
+  </item>
+  <item>
+    <title>Websites for EV Charging Stations: Locations, Chargers and Installations</title>
+    <link>https://samverse.space/blog/website-for-ev-charging-stations/</link>
+    <guid>https://samverse.space/blog/website-for-ev-charging-stations/</guid>
+    <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
+    <description>How EV charging operators and installers can plan a website: accurate station and connector details, app links, home and society charger enquiries and surveys.</description>
+  </item>
+  <item>
+    <title>Websites for Trophy and Awards Shops: Catalogue, Engraving and Bulk Orders</title>
+    <link>https://samverse.space/blog/website-for-trophy-awards-shops/</link>
+    <guid>https://samverse.space/blog/website-for-trophy-awards-shops/</guid>
+    <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
+    <description>How trophy, medal and awards shops can win more orders online: catalogues by occasion and material, engraving proofs, bulk quote forms and honest lead times.</description>
+  </item>
+  <item>
+    <title>Websites for Organic Food Stores and Farm-to-Home Brands: Sourcing, Certification and Delivery</title>
+    <link>https://samverse.space/blog/website-for-organic-food-stores/</link>
+    <guid>https://samverse.space/blog/website-for-organic-food-stores/</guid>
+    <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
+    <description>How organic food stores and farm-to-home brands build trust online: honest sourcing, accurate certification claims, subscriptions, local delivery and returns.</description>
+  </item>
+  <item>
+    <title>White-Label WooCommerce Development for Agencies: Who Does What</title>
+    <link>https://samverse.space/blog/white-label-woocommerce-development/</link>
+    <guid>https://samverse.space/blog/white-label-woocommerce-development/</guid>
+    <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
+    <description>How white-label WooCommerce builds work for agencies: what your partner sets up, what your agency keeps, how to test checkout and how to support the store.</description>
+  </item>
+  <item>
+    <title>Working With an Offshore WordPress Developer Across Time Zones</title>
+    <link>https://samverse.space/blog/offshore-wordpress-developer-time-zones/</link>
+    <guid>https://samverse.space/blog/offshore-wordpress-developer-time-zones/</guid>
+    <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
+    <description>A practical routine for agencies working with an offshore WordPress developer: overlap hours, async updates, staging links, response times and urgent fixes.</description>
+  </item>
+  <item>
+    <title>Agency Overflow WordPress Work: When and How to Use a Development Partner</title>
+    <link>https://samverse.space/blog/agency-overflow-wordpress-work/</link>
+    <guid>https://samverse.space/blog/agency-overflow-wordpress-work/</guid>
+    <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
+    <description>When your agency is at capacity, a development partner can take overflow WordPress work. When it makes sense, how to keep quality consistent and how to start.</description>
   </item>
 </channel>
 </rss>

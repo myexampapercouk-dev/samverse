@@ -119,7 +119,7 @@ form.addEventListener("submit", async e => {
   try {
     const ctrl = new AbortController();
     const timer = setTimeout(() => ctrl.abort(), 10000);
-    const res = await fetch("/.netlify/functions/send-quote", {
+    const res = await fetch("/api/send-quote.php", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: payload.toString(),

@@ -132,9 +132,12 @@ module.exports = {
   'wordpress-speed-optimization': {
     title: 'How speed work is done',
     items: [
-      ['Measure first', 'Every job starts with a baseline: PageSpeed Insights for key pages, Core Web Vitals, and a look at the theme, plugins and hosting to find the real bottlenecks.'],
-      ['Fix the biggest wins', 'Typical fixes include caching, image compression and WebP, lazy loading below the fold, deferring non-critical scripts, removing heavy plugins and cleaning the database.'],
-      ['Safe and verified', 'A full backup is taken first, changes are tested page by page, and you receive a before-and-after report.'],
+      ['Measure first', 'Every job starts with a baseline for each key page type, such as the homepage, a service or product page and, for stores, category, cart and checkout pages. PageSpeed Insights, browser tools and Query Monitor show whether the bottleneck is hosting, plugins, the theme, images, scripts or the database.'],
+      ['Fix the biggest wins first', 'Work is done in order of impact: server response and caching, then images, then the theme or page builder, plugins, scripts and fonts, then the database. Typical fixes include WebP images, lazy loading below the fold, deferring non-critical scripts and replacing heavy plugins with lighter options.'],
+      ['WooCommerce-specific work', 'Cart, checkout and account pages are kept out of the page cache, while everything else is cached. Product images, filters, search, cart scripts, scheduled actions and order data are reviewed, and test orders confirm that payments and emails still work after each change.'],
+      ['Hosting, PHP and server checks', 'The PHP version, server caching, object caching (where the host supports it) and CDN setup are checked. If the hosting itself is the bottleneck, you get an honest recommendation rather than endless plugin tweaks.'],
+      ['Safe and tested', 'A full backup is taken first, changes are made on staging where possible, and pages, menus, forms and the checkout are tested on desktop and mobile after each round of changes.'],
+      ['What you receive', 'A before-and-after report with PageSpeed Insights results and Core Web Vitals for key pages, a plain-English list of what was changed and why, and simple guidelines for keeping the site fast as you add content.'],
     ],
   },
   'wordpress-maintenance': {

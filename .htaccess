@@ -1,0 +1,26 @@
+# samverse.space on Hostinger (Apache/LiteSpeed). Mirrors netlify.toml.
+Options -Indexes
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+AddType application/manifest+json .webmanifest
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# www -> bare domain (HTTPS itself is forced in hPanel once the SSL certificate is active)
+	RewriteCond %{HTTP_HOST} ^www\.samverse\.space$ [NC]
+	RewriteRule ^ https://samverse.space%{REQUEST_URI} [L,R=301]
+
+	# The whole repo is deployed, so hide project files from the web
+	RewriteRule ^(\.git|node_modules|netlify|tools|docs)(/|$) - [R=404,L]
+	RewriteRule ^(package\.json|package-lock\.json|netlify\.toml|README\.md|\.gitignore|\.gitattributes)$ - [R=404,L]
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+	Header always set X-Content-Type-Options "nosniff"
+	Header always set X-Frame-Options "SAMEORIGIN"
+	Header always set Referrer-Policy "strict-origin-when-cross-origin"
+	Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+	Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>

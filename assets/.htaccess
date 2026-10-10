@@ -1,0 +1,4 @@
+# Cache static assets (logos, thumbnails) for a week (same as netlify.toml)
+<IfModule mod_headers.c>
+	Header set Cache-Control "public, max-age=604800"
+</IfModule>
