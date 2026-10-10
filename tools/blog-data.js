@@ -5,14 +5,31 @@
 module.exports = [
   {
     slug: 'wordpress-website-cost-india',
+    seoTitle: 'WordPress Website Cost in India: Build and Yearly Costs',
     title: 'How Much Does a WordPress Website Cost in India? (2026 Guide)',
-    description: 'A clear breakdown of WordPress website costs in India: domain, hosting, design, development, plugins and maintenance, with typical price ranges for each type of site.',
+    description: 'WordPress website cost in India explained: one-time build costs, yearly domain, hosting and maintenance, typical ranges by site type and how to get a quote.',
     date: '2026-09-27',
+    updated: '2026-10-10',
     category: 'Pricing',
     related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
 <p>"How much will my website cost?" is the first question almost every client asks, and the honest answer is: it depends on what the website needs to do. A simple five-page business site and a WooCommerce store with hundreds of products are very different projects.</p>
-<p>This guide breaks down every cost involved in a WordPress website in India, so you can budget properly and compare quotes with confidence.</p>
+<p>This guide breaks down every cost involved in a WordPress website in India, both the one-time build and the yearly running costs, so you can budget properly and compare quotes with confidence.</p>
+
+<h2>The short answer</h2>
+<p>For most small businesses in India, a professional WordPress website costs between ₹15,000 and ₹40,000, plus a few thousand rupees a year for domain and hosting. Online stores and larger sites cost more. Focus on value, not the lowest price: a fast, mobile-friendly website that brings in enquiries pays for itself quickly.</p>
+<p>The rest of this guide explains where that money goes, what moves a project up or down the range, and what you'll keep paying every year.</p>
+
+<h2>Is WordPress free?</h2>
+<p>The WordPress software itself (from WordPress.org) is free and open source: there's no licence fee to use it, however big your site gets. What you pay for is everything around it:</p>
+<ul>
+  <li><strong>A domain name</strong> (your web address), renewed every year</li>
+  <li><strong>Hosting</strong> (the server your site lives on), usually paid yearly</li>
+  <li><strong>Design and development</strong>, the time someone spends building the site</li>
+  <li><strong>Optional premium themes and plugins</strong>, many with yearly licences</li>
+  <li><strong>Ongoing maintenance</strong>, whether you do it yourself or pay someone</li>
+</ul>
+<p>Don't confuse this with WordPress.com, a hosted service with its own paid plans. Most business sites built by developers in India use the free WordPress.org software on their own hosting. If these terms are new, see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
 
 <h2>The one-time and yearly costs</h2>
 <p>Every website has two kinds of cost: what you pay once to build it, and what you pay every year to keep it running.</p>
@@ -28,6 +45,20 @@ module.exports = [
 </table>
 <p>WordPress itself is free. Most of your budget goes into design and development, meaning the time a developer spends planning, building, testing and launching your site.</p>
 
+<h3>What the one-time cost covers</h3>
+<ul>
+  <li>Planning the pages, structure and features with you</li>
+  <li>Design, either adapting a theme or building from a custom design</li>
+  <li>Building and testing every page on phones, tablets and desktops</li>
+  <li>Setting up forms, WhatsApp buttons, maps, payments or bookings</li>
+  <li>Basic SEO setup, speed optimisation and security hardening</li>
+  <li>Launch: connecting the domain, SSL, backups and a short handover</li>
+</ul>
+<p>Ask what's included in each quote, because two quotes can cover very different amounts of this list.</p>
+
+<h3>What you pay every year</h3>
+<p>The yearly cost of a WordPress website is mostly your domain and hosting renewals, plus any premium licences and maintenance you choose. Many hosts include a free SSL certificate, and business email may be included or charged separately depending on the plan. Two things catch people out: hosting that was discounted in the first year renews at a higher price, and premium plugins stop getting updates if the licence lapses. See <a href="/blog/hidden-website-costs/">hidden website costs</a> for everything you'll pay after launch, and <a href="/blog/hosting-renewal-price-increase/">why hosting renewals cost more</a>.</p>
+
 <h2>Typical price ranges by type of website</h2>
 <p>These are typical freelance market ranges in India. Agencies usually charge more; very cheap offers often cut corners on speed, security or mobile design.</p>
 <ul>
@@ -40,6 +71,17 @@ module.exports = [
 
 <p>Planning an online store? See <a href="/blog/ecommerce-website-cost-india/">what affects the cost of an e-commerce website in India</a> for platform, payment, shipping and running-cost factors.</p>
 
+<h2>Examples: where different sites usually land</h2>
+<p>Ranges are easier to use with examples. These show where projects tend to fall within the ranges above; they aren't quotes:</p>
+<ul>
+  <li><strong>A consultant or CA firm with five pages, a contact form and a WhatsApp button, using a good theme and their own text:</strong> towards the lower end of the small business range.</li>
+  <li><strong>A clinic with a page per treatment, doctor profiles and online appointment requests:</strong> higher in the small business range, because booking needs setting up and testing.</li>
+  <li><strong>A manufacturer with a product catalogue, downloadable brochures and quote forms:</strong> the larger business range; the number of templates and how much product data needs entering matter most.</li>
+  <li><strong>A clothing store with sizes and colours, cash on delivery, shipping zones and GST invoices:</strong> the WooCommerce range, moving higher with many variations, custom features or a large product upload.</li>
+  <li><strong>A single landing page for an ad campaign:</strong> the landing page range, depending on design work and tracking needs (see <a href="/blog/landing-page-cost-factors/">landing page cost factors</a>).</li>
+  <li><strong>A redesign of an existing site:</strong> similar to a new build of the same size; sometimes less if content is reused, sometimes more if many old URLs need redirecting.</li>
+</ul>
+
 <h2>What makes a website cost more?</h2>
 <h3>1. Number of pages and templates</h3>
 <p>Each unique page layout takes design and build time. Twenty service pages sharing one template cost far less than twenty completely different designs.</p>
@@ -50,7 +92,11 @@ module.exports = [
 <h3>4. Content</h3>
 <p>If you provide finished text and good photos, the project moves faster. Content writing, photo editing or product uploads are usually charged separately.</p>
 <h3>5. Speed and SEO work</h3>
-<p>A properly optimized site with caching, compressed images, schema markup and clean structure takes more effort than a basic build, but it pays back in better rankings and more enquiries.</p>
+<p>A properly optimised site with caching, compressed images, schema markup and clean structure takes more effort than a basic build, but it pays back in better rankings and more enquiries.</p>
+<h3>6. Who builds it</h3>
+<p>Freelancers, small studios and larger agencies have different overheads, processes and levels of support, and price accordingly. See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> for the trade-offs.</p>
+<h3>7. Deadline and support</h3>
+<p>A rushed deadline means rearranging other work, and some quotes include post-launch support or training while others don't. Both affect the price.</p>
 
 <p>Running a service business? See <a href="/blog/show-prices-on-website/">whether you should show prices on your website</a>.</p>
 
@@ -63,6 +109,9 @@ module.exports = [
 </ul>
 
 <p>For ongoing costs after launch, see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>.</p>
+
+<h2>Why quotes vary so much</h2>
+<p>It's normal to receive quotes that are far apart for what sounds like the same website. Usually they aren't for the same thing: one includes content entry, speed work, SEO setup and a month of support; another is a theme installed with your logo. Very cheap websites often skip the work you don't see, such as backups, security, mobile testing and clean code, and those gaps cost more to fix later. See <a href="/blog/cheap-website-risks/">the real risks of very cheap websites</a>.</p>
 
 <h2>How to get an accurate quote</h2>
 <p>To get a fixed, accurate quote from any developer, share:</p>
@@ -78,10 +127,33 @@ module.exports = [
 
 <p>Ready to request quotes? Use the <a href="/blog/website-brief-template/">website brief template</a> so every developer quotes on the same scope.</p>
 
-<p>Got several quotes? See <a href="/blog/compare-website-quotes/">how to compare website quotes</a>.</p>
+<p>Got several quotes? See <a href="/blog/compare-website-quotes/">how to compare website quotes</a>, and agree <a href="/blog/website-payment-terms-milestones/">fair payment terms and milestones</a> before work starts.</p>
 
-<h2>The bottom line</h2>
-<p>For most small businesses in India, a professional WordPress website costs between ₹15,000 and ₹40,000, plus a few thousand rupees a year for domain and hosting. Online stores and larger sites cost more. Focus on value, not the lowest price: a fast, mobile-friendly website that brings in enquiries pays for itself quickly.</p>
+<h2>How to keep the cost down without cutting corners</h2>
+<ul>
+  <li>Start with the pages you really need and add more later</li>
+  <li>Use a well-supported theme instead of a fully custom design if a unique look isn't essential</li>
+  <li>Have your text and photos ready before the project starts</li>
+  <li>Add advanced features in a second phase, once the site is bringing in enquiries</li>
+  <li>Choose hosting on its renewal price and support, not just the first-year offer</li>
+  <li>Avoid paying for premium plugins that duplicate features you already have</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>How much does a WordPress website cost in India?</h3>
+<p>It depends on the type of site. Most small business websites fall in the small business range shown above; landing pages cost less, and larger business sites and WooCommerce stores cost more. A clear brief gets you an exact figure.</p>
+<h3>What is the yearly cost of a WordPress website?</h3>
+<p>At minimum, your domain and hosting renewals every year. On top of that, budget for any premium theme or plugin licences and, if you want someone to handle updates and backups, a maintenance plan. The table above shows typical ranges for each.</p>
+<h3>Is WordPress free to use?</h3>
+<p>Yes, the WordPress.org software is free. You pay for the domain, hosting, the developer's time to build the site and any premium add-ons you choose.</p>
+<h3>Does WooCommerce cost extra?</h3>
+<p>The WooCommerce plugin is free, but a store takes more work to build than a brochure site: products, payments, shipping, taxes and order emails all need setting up and testing. Payment gateways charge transaction fees and some extensions have yearly licences, so check current terms with each provider.</p>
+<h3>Is maintenance really necessary?</h3>
+<p>It's optional, but someone needs to update WordPress, plugins and themes, take backups and check the site regularly. If you don't do it yourself, a maintenance plan usually costs far less than cleaning up a hacked or broken site.</p>
+<h3>Are freelancers cheaper than agencies?</h3>
+<p>Usually, because freelancers have lower overheads, while agencies can offer bigger teams and more formal processes. What matters most is relevant experience, a clear scope and support after launch.</p>
+
+<p>Want a fixed quote for your WordPress website? Send me your page list, a few sites you like and the features you need, and I'll tell you exactly what it will cost and what's included. See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -4753,94 +4825,177 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'technical-seo-audit-wordpress',
-    seoTitle: 'Technical SEO Audit Checklist for WordPress',
-    title: 'Technical SEO Audit Checklist for WordPress Websites',
-    description: 'A step-by-step technical SEO audit for WordPress: crawling and indexing, sitemaps, robots.txt, redirects, canonicals, HTTPS, speed, mobile, structured data and duplicate content.',
+    seoTitle: 'WordPress Technical SEO Audit: A Practical Checklist',
+    title: 'WordPress Technical SEO Audit: A Practical Checklist (With WooCommerce Checks)',
+    description: 'A practical WordPress technical SEO audit checklist: indexing, sitemaps, robots.txt, canonicals, redirects, Core Web Vitals, schema and WooCommerce checks.',
     date: '2026-09-27',
+    updated: '2026-10-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-speed-optimization', 'wordpress-migration'],
     body: `
-<p>Great content can't rank if search engines struggle to crawl, index or understand your site. A technical SEO audit finds those hidden problems. Use this checklist once a year, after redesigns or migrations, or whenever traffic drops unexpectedly.</p>
+<p>Great content can't rank if search engines struggle to crawl, index or understand your site. A technical SEO audit finds those hidden problems: pages Google can't reach, duplicate versions competing with each other, broken redirects, slow templates and settings that quietly tell Google to stay away. This checklist is written for WordPress and WooCommerce sites, in the order I'd work through it. Run it once a year, after a redesign or migration, or whenever traffic drops unexpectedly (see <a href="/blog/website-traffic-dropped/">what to check when traffic drops</a>).</p>
+<p>Technical SEO is about whether search engines can find, crawl and index your pages properly; on-page SEO is about what each page says. Both matter, and the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a> covers the second part.</p>
 
-<h2>1. Indexing</h2>
+<h2>Tools for a WordPress technical audit</h2>
 <ul>
-  <li>Search Console → Pages: how many pages are indexed vs not indexed, and why?</li>
-  <li>WordPress Settings → Reading: "Discourage search engines" must be off</li>
-  <li>No accidental <code>noindex</code> on important pages</li>
-  <li>Thin or low-value pages (tag archives, author archives on single-author sites) intentionally excluded if needed</li>
+  <li><strong>Google Search Console:</strong> the most important tool, because it shows what Google itself has crawled and indexed. If it isn't set up yet, see <a href="/blog/setup-google-analytics-search-console/">setting up Search Console</a></li>
+  <li><strong>PageSpeed Insights:</strong> speed and Core Web Vitals for individual URLs, with real-visitor data where Google has enough of it</li>
+  <li><strong>A website crawler:</strong> a desktop or online tool that follows your links the way a search engine does and lists every URL with its status code, title, canonical and click depth</li>
+  <li><strong>Your SEO plugin settings:</strong> many technical issues come down to a single setting</li>
+  <li><strong>A real phone and "view source":</strong> to check what visitors and search engines actually receive</li>
+</ul>
+<p>New to the reports? See <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
+<h3>A simple way to start: compare three lists</h3>
+<p>Before working through the checklist, gather three lists of URLs: what your crawler finds by following links, what your XML sitemap contains, and what Search Console reports as indexed. Comparing them shows a lot quickly:</p>
+<ul>
+  <li>In the sitemap but not found by the crawler: likely orphan pages with no internal links</li>
+  <li>Found by the crawler but not in the sitemap: either pages missing from the sitemap, or junk URLs (parameters, archives) that shouldn't exist</li>
+  <li>In the sitemap but not indexed: pages Google has chosen to skip, which need a closer look</li>
 </ul>
 
-<h2>2. Crawlability</h2>
+<h2>1. Crawling and indexing</h2>
+<p>Start here, because nothing else matters if important pages aren't in Google's index.</p>
 <ul>
-  <li>robots.txt doesn't block important content, CSS or JavaScript</li>
-  <li>XML sitemap exists, contains only indexable URLs, and is submitted in Search Console</li>
-  <li>Important pages reachable within a few clicks from the homepage</li>
-  <li>No important links that only work with JavaScript</li>
+  <li>Search Console &gt; Pages: how many pages are indexed vs not indexed, and the reason given for each group</li>
+  <li>URL Inspection on your key pages: is each one indexed, and which canonical has Google chosen?</li>
+  <li>Settings &gt; Reading: "Discourage search engines from indexing this site" must be unticked on the live site</li>
+  <li>No accidental <code>noindex</code> on important pages, or on whole post types in your SEO plugin</li>
+  <li>Thin pages (empty tag archives, internal search results, author archives on single-author sites) deliberately kept out of the index where needed</li>
 </ul>
+<p>Not every "not indexed" status is a problem; redirects and deliberately noindexed pages belong there. See <a href="/blog/search-console-page-indexing-errors/">page indexing errors explained</a>.</p>
 
+<h2>2. XML sitemaps and robots.txt</h2>
+<ul>
+  <li>One sitemap setup, not two: WordPress has a built-in sitemap at /wp-sitemap.xml, and SEO plugins usually replace it with their own</li>
+  <li>Only indexable, canonical URLs that load normally: no redirects, 404s or noindexed pages</li>
+  <li>No unwanted content types listed, such as page-builder templates, attachment pages or plugin-created post types</li>
+  <li>The sitemap submitted in Search Console, with no errors in the Sitemaps report</li>
+  <li>robots.txt not blocking important content, CSS or JavaScript; check the robots.txt report in Search Console settings</li>
+  <li>robots.txt not used to hide pages from the index: blocking crawling doesn't remove an indexed page, and it stops Google seeing a noindex tag</li>
+</ul>
 <p>Background reading: <a href="/blog/xml-sitemaps-explained/">XML sitemaps</a> and <a href="/blog/robots-txt-explained/">robots.txt</a> explained.</p>
 
-<h2>3. One version of the site</h2>
+<h2>3. One version of every page: HTTPS and canonicals</h2>
 <ul>
-  <li>HTTPS everywhere, with a valid certificate</li>
-  <li>http → https and www/non-www redirects to one preferred version</li>
-  <li>Canonical tags pointing to the correct URLs on every page</li>
-  <li>Staging or temporary domains not indexable</li>
+  <li>HTTPS everywhere, with a valid certificate and no mixed content warnings (see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content</a>)</li>
+  <li>http to https, and www to non-www (or the reverse), redirecting in one step to your preferred version</li>
+  <li>Consistent trailing slashes, so /page and /page/ don't both load as separate pages</li>
+  <li>A canonical tag on every page pointing to its own preferred URL, not to the homepage or a redirected address</li>
+  <li>Paginated archives (page 2, page 3) canonicalised to themselves, not all to page 1</li>
+  <li>Staging or temporary domains blocked from indexing, ideally with a password</li>
+</ul>
+<p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</p>
+
+<h2>4. Redirects, 404s and broken links</h2>
+<ul>
+  <li>No broken internal links pointing to 404 pages; your crawler will list them</li>
+  <li>Old URLs redirected (301) to their closest new equivalent</li>
+  <li>No redirect chains or loops; update internal links to point straight to the final URL</li>
+  <li>No "soft 404s": near-empty or "not found" pages that still return a normal status</li>
+  <li>Redirects managed in one place, either a plugin or the server, not scattered across both</li>
+  <li>A helpful custom 404 page (see <a href="/blog/helpful-404-pages/">404 pages that help</a>)</li>
+</ul>
+<p>See <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> for which to use when.</p>
+
+<h2>5. Core Web Vitals and speed</h2>
+<ul>
+  <li>Search Console &gt; Core Web Vitals: which groups of URLs are flagged for LCP (loading), INP (responsiveness) or CLS (layout shift)</li>
+  <li>PageSpeed Insights on one URL of each template: homepage, service page, blog post, category and product page</li>
+  <li>Real-visitor data given priority over the lab score, which is a diagnostic rather than a ranking</li>
+  <li>The usual WordPress causes checked: oversized images, no page caching, slow hosting, heavy page builders and third-party scripts</li>
+</ul>
+<p>Fixing a template fixes every page that uses it. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>6. Mobile experience</h2>
+<p>Google mainly uses the mobile version of a page for indexing and ranking, and it has retired its standalone mobile-friendly test and mobile usability report, so check on real phones and with Lighthouse in PageSpeed Insights.</p>
+<ul>
+  <li>The same content and internal links on mobile as on desktop</li>
+  <li>No horizontal scrolling, tiny text or tap targets that are too close together</li>
+  <li>Pop-ups and chat widgets not covering the main content</li>
 </ul>
 
-<h2>4. Redirects and errors</h2>
+<h2>7. Structured data</h2>
 <ul>
-  <li>No broken internal links (404s)</li>
-  <li>Old URLs redirected (301) to their new equivalents</li>
-  <li>No redirect chains or loops</li>
-  <li>A helpful custom 404 page</li>
+  <li>Organization or LocalBusiness, BreadcrumbList, Article and Product markup where relevant</li>
+  <li>Only one plugin or theme outputting schema, so markup isn't duplicated or conflicting</li>
+  <li>Markup that matches what's visible on the page, such as prices, ratings and business details</li>
+  <li>No errors in Search Console enhancement reports, and key templates checked in the Rich Results Test</li>
 </ul>
+<p>Google has reduced some rich results, such as FAQ results, for most sites, so accurate markup describes your content but doesn't guarantee extra features. See <a href="/blog/schema-markup-explained/">schema markup explained</a> and <a href="/blog/test-structured-data-rich-results/">how to test structured data</a>.</p>
 
-<h2>5. Duplicate content</h2>
+<h2>8. Internal links and site structure</h2>
 <ul>
-  <li>Unique title tags and meta descriptions on every page</li>
-  <li>No near-duplicate pages targeting the same keyword</li>
-  <li>Filter, sort and tracking parameters not creating indexable duplicates</li>
-</ul>
-
-<p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags</a>, <a href="/blog/duplicate-content-explained/">duplicate content</a> and <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
-
-<h2>6. Speed and Core Web Vitals</h2>
-<ul>
-  <li>Search Console → Core Web Vitals report</li>
-  <li>PageSpeed Insights for key templates: homepage, service page, article, product</li>
-  <li>Images optimized, caching on, unnecessary scripts removed</li>
-</ul>
-<p>See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
-
-<h2>7. Mobile usability</h2>
-<ul>
-  <li>No horizontal scrolling or tiny tap targets</li>
-  <li>Text readable without zooming</li>
-  <li>Pop-ups not blocking content</li>
-</ul>
-
-<h2>8. Structured data</h2>
-<ul>
-  <li>Organization/LocalBusiness, Breadcrumb, Article, Product and FAQ where relevant</li>
-  <li>No errors in Search Console enhancement reports</li>
-</ul>
-
-<h2>9. Security</h2>
-<ul>
-  <li>No security issues or manual actions in Search Console</li>
-  <li>WordPress, plugins and themes up to date</li>
-</ul>
-
-<h2>10. Internal links and structure</h2>
-<ul>
-  <li>No orphan pages</li>
-  <li>Service pages linked from the homepage and relevant articles</li>
+  <li>No orphan pages that nothing links to (see <a href="/blog/orphan-pages-fix/">fixing orphan pages</a>)</li>
+  <li>Important pages reachable within a few clicks from the homepage</li>
+  <li>Service and category pages linked from the menu, the homepage and relevant articles</li>
+  <li>Normal HTML links, not buttons that only work with JavaScript</li>
 </ul>
 <p>See <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
 
-<h2>Prioritise the fixes</h2>
-<p>Fix indexing blockers first, then duplicate versions and redirects, then speed and structured data. Need a professional review? See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<h2>9. Duplicate and thin pages</h2>
+<ul>
+  <li>Unique title tags and meta descriptions on important pages; a crawler will list duplicates</li>
+  <li>No near-duplicate pages targeting the same search</li>
+  <li>Tag, category, date and author archives either improved or kept out of the index</li>
+  <li>Attachment pages redirected to the file or parent post (newer WordPress installs turn them off; older sites may still have them)</li>
+  <li>Filter, sort and tracking parameters not creating indexable copies of the same page</li>
+</ul>
+<p>More detail: <a href="/blog/duplicate-content-explained/">duplicate content</a> and <a href="/blog/category-tag-pages-seo/">category and tag pages</a>.</p>
+
+<h2>10. WordPress and SEO plugin settings</h2>
+<ul>
+  <li>Only one SEO plugin active; two can output duplicate titles, canonicals and sitemaps</li>
+  <li>Readable permalinks, and no slug changes without redirects (see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs</a>)</li>
+  <li>Title templates that produce sensible titles for posts, pages, products and archives</li>
+  <li>Index and noindex settings checked for each post type and taxonomy</li>
+  <li>Hreflang set up correctly if you run more than one language version</li>
+</ul>
+
+<h2>11. Security and manual actions</h2>
+<ul>
+  <li>No security issues or manual actions reported in Search Console</li>
+  <li>No unfamiliar spam pages showing in a site: search, which can be a sign of a hack</li>
+  <li>WordPress, plugins and themes up to date</li>
+</ul>
+
+<h2>Extra checks for a WooCommerce technical SEO audit</h2>
+<ul>
+  <li><strong>Filters and sorting:</strong> colour, size, price and sort parameters not creating thousands of indexable URLs</li>
+  <li><strong>Add-to-cart links:</strong> URLs with add-to-cart parameters not being crawled and indexed</li>
+  <li><strong>Cart, checkout and My Account:</strong> kept out of the index and sitemap</li>
+  <li><strong>Out-of-stock and discontinued products:</strong> temporarily unavailable products kept live and marked out of stock; discontinued ones redirected to the closest alternative or category</li>
+  <li><strong>Product structured data:</strong> price, availability and reviews accurate, with no errors in Search Console's product reports</li>
+  <li><strong>Category pages:</strong> useful introductory text, and not dozens of near-empty categories</li>
+  <li><strong>Product descriptions:</strong> not copied word for word from the manufacturer on every product</li>
+</ul>
+<p>See <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a> and <a href="/blog/woocommerce-product-filters/">product filters and SEO</a>.</p>
+
+<h2>How to prioritise the fixes</h2>
+<p>An audit usually produces a long list. Sort it by impact and effort, and work in this order:</p>
+<table>
+  <thead><tr><th>Priority</th><th>What it covers</th></tr></thead>
+  <tbody>
+    <tr><td>1. Blockers</td><td>Important pages noindexed, blocked or missing from the index; site-wide HTTPS, redirect or canonical errors; hacked content</td></tr>
+    <tr><td>2. Site-wide template issues</td><td>Problems that affect many pages at once: duplicate titles, wrong canonicals, slow post or product templates</td></tr>
+    <tr><td>3. Key-page fixes</td><td>Broken links, redirect chains and Core Web Vitals issues on pages that bring enquiries or sales</td></tr>
+    <tr><td>4. Improvements</td><td>Structured data, internal links, thin archives and general tidy-up</td></tr>
+  </tbody>
+</table>
+<p>Within each group, start with the pages that matter most to the business. Record what you changed and when, use "Validate fix" in Search Console where it's offered, and recheck after a few weeks, because Google needs time to recrawl.</p>
+
+<h2>FAQs</h2>
+<h3>How often should I run a technical SEO audit on WordPress?</h3>
+<p>A full audit once a year suits most business sites, with a quick monthly look at Search Console. Run one straight away after a redesign, migration, domain change or unexplained traffic drop.</p>
+<h3>Can I do a WordPress SEO audit myself?</h3>
+<p>Yes, for the basics. Search Console, PageSpeed Insights and a crawler will show most issues, and the <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> is a good starting point. Fixing redirects, templates, canonicals and speed safely is where developer help is usually worth it.</p>
+<h3>What is the best tool for a technical SEO audit?</h3>
+<p>Search Console comes first because it shows Google's own view of your site. Add PageSpeed Insights for speed and a crawler for broken links, redirects and duplicate titles. No single tool covers everything.</p>
+<h3>Will a technical audit improve my rankings straight away?</h3>
+<p>Not on its own. Fixing blockers can help once Google recrawls, but most fixes remove obstacles rather than add rankings. Content, relevance and links still decide where you rank.</p>
+<h3>How long does a technical SEO audit take?</h3>
+<p>It depends on the size of the site. A small business site can be reviewed much faster than a large WooCommerce store with thousands of products and filter URLs.</p>
+
+<p>Want a professional technical review of your WordPress or WooCommerce site, with a prioritised list of fixes and the fixes themselves done safely? See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -9657,50 +9812,130 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'duplicate-content-explained',
-    seoTitle: 'Duplicate Content Explained: Myths and Fixes',
-    title: 'Duplicate Content Explained: Myths, Real Risks and Fixes',
-    description: 'What duplicate content really means for SEO, the myth of the "duplicate content penalty", real problems it causes (diluted rankings, wasted crawling) and how to fix them on business websites.',
+    seoTitle: 'What Is Duplicate Content? SEO Penalty Myths and Fixes',
+    title: 'Duplicate Content Explained: What It Is, the Penalty Myth and How to Fix It',
+    description: 'What duplicate content is, whether Google really penalises it, the common WordPress causes and how to fix them with canonicals, redirects, noindex or merging.',
     date: '2026-09-27',
+    updated: '2026-10-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'woocommerce-developer', 'website-redesign'],
     body: `
-<p>"Duplicate content" worries many business owners. The truth is more nuanced: normal technical duplication rarely causes penalties, but some kinds of duplication do hold sites back.</p>
+<p>"Duplicate content" worries many business owners, usually because they've heard there's a Google penalty for it. The truth is more nuanced: normal technical duplication rarely causes penalties, but some kinds of duplication do hold sites back, and deliberate copying can get a site into real trouble. This guide explains what duplicate content is, what Google actually says about the "penalty", the common causes on WordPress sites and how to fix each one.</p>
 
-<h2>The myth</h2>
-<p>There's no automatic penalty for having some duplicate text, such as a shared disclaimer, a product described similarly to another, or a quote. Google usually just picks one version to show.</p>
+<h2>What is duplicate content?</h2>
+<p>Duplicate content is the same, or very similar, content available at more than one URL. It comes in a few forms:</p>
+<ul>
+  <li><strong>Exact duplicates on your own site:</strong> the same page loading at two addresses, such as with and without www</li>
+  <li><strong>Near-duplicates on your own site:</strong> pages that are mostly the same, such as service pages where only the city name changes</li>
+  <li><strong>Duplicates across sites:</strong> your text copied by another site, or text you've used from elsewhere, such as manufacturer product descriptions</li>
+</ul>
+<p>Most duplicate content isn't created on purpose. It's a side effect of how websites, and WordPress in particular, generate URLs.</p>
 
-<h2>The real problems</h2>
+<h2>The duplicate content penalty: myth vs reality</h2>
+<p>Google's stated position has been consistent for years: duplicate content on its own isn't grounds for action against a site, unless the duplication appears intended to deceive users or manipulate search results. Its documentation explains that most duplication is accidental and handled automatically.</p>
+<p>What Google does instead is group duplicate URLs together, choose one as the main (canonical) version and show that one in results. The others aren't punished; they just aren't shown.</p>
+<table>
+  <thead><tr><th>Myth</th><th>Reality</th></tr></thead>
+  <tbody>
+    <tr><td>Any duplicate text gets your site penalised</td><td>Normal duplication, such as a shared disclaimer or a quoted paragraph, isn't penalised; Google picks one version to show</td></tr>
+    <tr><td>There's a safe percentage of duplicate content</td><td>There's no official percentage; what matters is whether each page offers something useful of its own</td></tr>
+    <tr><td>Duplicate content never matters</td><td>It can split ranking signals and lead Google to show the wrong URL</td></tr>
+    <tr><td>Copying content is fine if you credit the source</td><td>Copied or lightly reworded content adds little value and rarely ranks; at scale it can be treated as spam</td></tr>
+  </tbody>
+</table>
+<p>Where it does become a real problem is deliberate duplication: scraping or spinning other sites' content, or mass-producing near-identical pages to target lots of searches. Those can fall under Google's spam policies and, in serious cases, lead to a manual action reported in Search Console.</p>
+
+<h2>How Google chooses which version to show</h2>
+<p>When Google finds several URLs with the same content, it looks at a number of signals to decide which one to treat as the canonical:</p>
+<ul>
+  <li><strong>Redirects:</strong> a permanent redirect is a strong sign that the destination is the preferred URL</li>
+  <li><strong>Canonical tags:</strong> a strong hint, but a hint rather than an order; Google can choose differently if other signals disagree</li>
+  <li><strong>Internal links:</strong> the version your own menus and articles link to</li>
+  <li><strong>Sitemaps:</strong> the URLs you list in your XML sitemap</li>
+  <li><strong>HTTPS:</strong> Google generally prefers the secure version when both exist</li>
+</ul>
+<p>The practical lesson is to make every signal agree. If your canonical says one URL but your menu links to another and your sitemap lists a third, don't be surprised when Google picks one you didn't want.</p>
+
+<h2>The real problems duplicate content causes</h2>
 <ul>
   <li><strong>Split ranking signals:</strong> links and relevance spread across several URLs for the same content</li>
-  <li><strong>Google choosing the wrong version</strong> to show in results</li>
-  <li><strong>Wasted crawling</strong> on large sites with many near-identical pages</li>
+  <li><strong>Google choosing the wrong version</strong> to show in results, such as a URL with tracking parameters or an old address</li>
+  <li><strong>Wasted crawling</strong> on large sites with many near-identical pages, so new or updated pages are picked up more slowly</li>
   <li><strong>Thin, scaled pages:</strong> many near-identical pages created to target keywords (like city-swapped pages) can be treated as spam. See <a href="/blog/local-landing-pages-without-doorway-pages/">avoiding doorway pages</a>.</li>
   <li><strong>Copied content from other sites</strong> adds little value and rarely ranks</li>
 </ul>
 
-<h2>Common sources on business sites</h2>
+<h2>Common causes of duplicate content on WordPress sites</h2>
+<h3>Tags, categories and other archives</h3>
+<p>WordPress creates archive pages for every category, tag, author and date. Each lists the same post excerpts, so a site with lots of thinly used tags can have dozens of pages repeating the same snippets. On a single-author site, the author archive is often a copy of the main blog page. See <a href="/blog/category-tag-pages-seo/">when to index or noindex category and tag pages</a>.</p>
+<h3>URL parameters</h3>
+<p>Anything after a question mark in a URL can create a new address for the same page: tracking tags such as ?utm_source=, sorting and filtering on stores, comment reply links on older setups, and session or currency parameters. Google usually works these out, but on stores with many filters they can still waste crawling. See <a href="/blog/woocommerce-product-filters/">product filters and SEO</a>.</p>
+<h3>HTTP vs HTTPS, www vs non-www and trailing slashes</h3>
+<p>If your site loads at both http and https, and with and without www, every page technically exists in four versions. The same applies when /page and /page/ both load. A site-wide redirect to one version fixes this; see <a href="/blog/mixed-content-warnings-fix/">moving WordPress to HTTPS properly</a> if the switch was never finished.</p>
+<h3>Print pages, attachment pages and paginated comments</h3>
+<p>Print-friendly versions created by plugins, attachment pages for every uploaded image (newer WordPress installs disable these; older sites may still have them) and comments split across several pages can all produce extra URLs with little unique content.</p>
+<h3>Staging and development copies</h3>
+<p>A staging site on a subdomain or temporary address that Google can reach is a complete copy of your site. It should be password-protected or blocked from indexing; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+<h3>Scraped and syndicated content</h3>
+<p>Other sites sometimes copy your articles automatically. Google is usually good at identifying the original, especially for an established site. If you republish your own articles elsewhere on purpose, ask the other site to link back to the original and, ideally, add a canonical tag pointing to it.</p>
+<h3>Product and location pages</h3>
+<p>Stores that use the manufacturer's description, like every other retailer, compete with many identical pages. Service businesses that copy one page and swap the city name create near-duplicates that rarely rank well.</p>
+
+<h2>How to find duplicate content</h2>
 <ul>
-  <li>Multiple URL versions (http/https, www/non-www)</li>
-  <li>Store filter and sort parameters</li>
-  <li>Manufacturer product descriptions used by every retailer</li>
-  <li>Service pages with the same text and only the location changed</li>
-  <li>Tag and category archives that repeat post excerpts</li>
+  <li><strong>Search Console &gt; Pages:</strong> look for "Duplicate without user-selected canonical", "Duplicate, Google chose different canonical than user" and "Alternate page with proper canonical tag" (the last is usually fine). See <a href="/blog/search-console-page-indexing-errors/">page indexing statuses explained</a>.</li>
+  <li><strong>URL Inspection:</strong> compare the canonical you declared with the one Google selected.</li>
+  <li><strong>A website crawler:</strong> lists duplicate titles, descriptions and pages with very similar content.</li>
+  <li><strong>A quoted search:</strong> put a distinctive sentence from your page in quotation marks in Google to see where else it appears.</li>
 </ul>
 
-<h2>How to fix it</h2>
-<ol>
-  <li>Redirect to one preferred domain version</li>
+<h2>How to fix duplicate content</h2>
+<table>
+  <thead><tr><th>Situation</th><th>Best fix</th></tr></thead>
+  <tbody>
+    <tr><td>Same page at http/https, www/non-www or with and without a trailing slash</td><td>301 redirect to one preferred version</td></tr>
+    <tr><td>Two pages on the same topic competing with each other</td><td>Merge into one stronger page and 301 redirect the other</td></tr>
+    <tr><td>Duplicates you need to keep, such as tracking or sort parameters</td><td>Canonical tag pointing to the main URL</td></tr>
+    <tr><td>Low-value archives or internal search results</td><td>Noindex, or improve them so they're worth indexing</td></tr>
+    <tr><td>Staging copy indexed</td><td>Password-protect it and remove it from Google</td></tr>
+    <tr><td>Manufacturer or copied descriptions</td><td>Rewrite with your own details, starting with best sellers</td></tr>
+  </tbody>
+</table>
+<p>A few more habits help Google pick the right version:</p>
+<ul>
   <li>Use canonical tags for necessary duplicates; see <a href="/blog/canonical-tags-explained/">canonical tags explained</a></li>
-  <li>Write unique product and service descriptions</li>
-  <li>Merge near-duplicate pages into one stronger page, with redirects</li>
-  <li>Noindex low-value archives if they add nothing</li>
+  <li>Link internally only to the preferred URLs, and list only those in your XML sitemap</li>
+  <li>Write unique product and service descriptions, starting with the pages that matter most</li>
   <li>Control filter URLs on stores; see <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a></li>
-</ol>
-
-<p>Not sure which archives count as low-value? See <a href="/blog/category-tag-pages-seo/">when to index or noindex WordPress category and tag pages</a>.</p>
+  <li>Handle URL parameters on the site itself; Google has retired the old URL parameters tool in Search Console</li>
+</ul>
+<p>When merging pages, use <a href="/blog/301-vs-302-redirects/">301 redirects</a> so links and visitors carry over.</p>
+<h3>What not to do</h3>
+<ul>
+  <li><strong>Don't block duplicates in robots.txt:</strong> Google then can't crawl them to see the canonical or noindex tag</li>
+  <li><strong>Don't mix signals:</strong> a noindex tag plus a canonical pointing elsewhere, or a canonical pointing to a redirected URL, sends confusing instructions</li>
+  <li><strong>Don't canonicalise every paginated page to page 1:</strong> page 2 and beyond list different items and should point to themselves</li>
+  <li><strong>Don't delete pages in bulk</strong> without checking which ones get traffic or links; redirect or improve them instead</li>
+</ul>
 
 <h2>The principle</h2>
 <p>Each page should exist for a reason and offer something unique. If two pages would answer the same question, combine them into one better page.</p>
+
+<h2>FAQs</h2>
+<h3>Does Google penalise duplicate content?</h3>
+<p>Generally no. Google says duplicate content isn't grounds for action unless it's meant to deceive or manipulate results; it simply picks one version to show. Deliberate scraping and mass-produced near-identical pages are the exception.</p>
+<h3>How much duplicate content is acceptable?</h3>
+<p>There's no official percentage. Shared disclaimers, quotes and similar product specifications are normal. The question to ask is whether each page offers something useful that the others don't.</p>
+<h3>Is using manufacturer product descriptions a problem?</h3>
+<p>It isn't penalised, but those pages compete with every other shop using the same text, so they rarely stand out. Adding your own details, photos, sizing advice and answers to common questions gives Google a reason to show your page.</p>
+<h3>Someone copied my content. What should I do?</h3>
+<p>Often nothing: Google usually recognises the original. If the copy outranks you or harms your business, contact the site owner or their host, and look at Google's copyright removal request process; take legal advice if needed.</p>
+<h3>Should I use a canonical tag or a 301 redirect?</h3>
+<p>Use a 301 redirect when visitors don't need the duplicate URL at all. Use a canonical when the duplicate must stay accessible, such as a sorted or tracked version of a page.</p>
+<h3>Do WordPress tag pages cause duplicate content?</h3>
+<p>They can, if you have many tags with only one or two posts each. Either use fewer, meaningful tags or noindex the tag archives.</p>
+
+<p>Not sure whether duplicate URLs, archives or filter pages are holding your site back? I audit and fix technical SEO issues on WordPress and WooCommerce sites. See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -15015,16 +15250,36 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'what-does-wordpress-developer-do',
-    seoTitle: 'What Does a WordPress Developer Do? (Explained Simply)',
-    title: 'What Does a WordPress Developer Actually Do?',
-    description: 'A plain-English explanation of what a WordPress developer does: building websites, themes and plugins, WooCommerce, speed, security, SEO setup, maintenance, fixes and migrations, and when to hire one.',
+    seoTitle: 'What Is a WordPress Developer, and What Do They Do?',
+    title: 'What Does a WordPress Developer Actually Do? Roles, Skills and When to Hire One',
+    description: 'What a WordPress developer is and does: theme, plugin and site developers, daily tasks, key skills, how they differ from web designers, and when to hire one.',
     date: '2026-09-27',
+    updated: '2026-10-10',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-website-development', 'wordpress-maintenance'],
     body: `
-<p>WordPress powers a large share of the world's websites, and it's designed so non-technical people can manage content. So what does a WordPress developer do that you can't? Quite a lot, as it turns out, especially when your website matters to your business.</p>
+<p>WordPress powers a large share of the world's websites, and it's designed so non-technical people can manage their own content. So what does a WordPress developer do that you can't? Quite a lot, as it turns out, especially when your website matters to your business. This guide explains what a WordPress developer is, the different kinds, what they do day to day, the skills involved, how the role differs from a web designer, and how to hire one.</p>
 
-<h2>Building websites</h2>
+<h2>What is a WordPress developer?</h2>
+<p>A WordPress developer is someone who builds, customises, fixes and looks after websites made with WordPress. That can mean building a complete business website or online store, writing a custom theme or plugin, or keeping an existing site fast, secure and working.</p>
+<p>The difference between editing a WordPress site and developing one is a bit like the difference between driving a car and servicing it. Adding a blog post or changing a phone number is editing, and you can do that yourself (see <a href="/blog/edit-website-content-wordpress/">editing your WordPress content</a>). Deciding how the site is structured, making it fast and secure, adding features, connecting payments and fixing things when they break is development.</p>
+
+<h2>Types of WordPress developer</h2>
+<p>"WordPress developer" covers several kinds of work. Many developers do more than one, but it helps to know which you need.</p>
+<h3>Theme developers</h3>
+<p>Themes control how a WordPress site looks and how its templates are laid out. Theme developers build custom themes from a design, create child themes to customise existing ones safely, and increasingly work with block themes and the Site Editor. See <a href="/blog/custom-wordpress-theme-development/">custom theme development</a> and <a href="/blog/wordpress-child-theme-explained/">child themes explained</a>.</p>
+<h3>Plugin developers</h3>
+<p>Plugins add features. Plugin developers write custom functionality when no existing plugin fits, such as a quote calculator, a dealer portal or a connection to your CRM or billing software, using WordPress's hooks and APIs so the code survives updates. See <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a> and <a href="/blog/plugin-vs-custom-code-wordpress/">plugin or custom code?</a></p>
+<h3>Site builders</h3>
+<p>Most business websites are built this way: choosing a well-supported theme, building pages from a design with the block editor or a page builder such as Elementor, choosing the right plugins and configuring everything properly. Done well, this is real development work, because the choices made here decide how fast, secure and easy to manage the site will be.</p>
+<h3>WooCommerce developers</h3>
+<p>Store specialists set up and customise WooCommerce: products and variations, payments, shipping, taxes, invoices, emails and checkout changes. See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<h3>Maintenance and support developers</h3>
+<p>Some developers focus on existing sites: updates, backups, fixes, speed, security and small changes. This is the work that keeps a site healthy after launch.</p>
+<p>You'll also hear about front-end developers (what visitors see and interact with), back-end developers (server-side code and the database) and full-stack developers who do both. Some developers also contribute to WordPress itself, the open-source software everyone uses.</p>
+
+<h2>What a WordPress developer does day to day</h2>
+<h3>Building websites</h3>
 <ul>
   <li>Planning structure, pages and features with you</li>
   <li>Setting up hosting, domain, SSL and WordPress</li>
@@ -15032,46 +15287,108 @@ wp plugin verify-checksums --all</code></pre>
   <li>Making everything responsive on phones, tablets and desktops</li>
   <li>Setting up forms, WhatsApp, maps, booking and payments</li>
 </ul>
-
-<h2>Themes and plugins</h2>
+<h3>Choosing themes and plugins</h3>
 <ul>
   <li>Choosing a lightweight, well-supported theme, or building a custom one</li>
   <li>Selecting reliable plugins and avoiding bloat</li>
   <li>Writing custom functionality when no plugin fits</li>
 </ul>
-
-<p>More detail: <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a> and <a href="/blog/custom-wordpress-theme-development/">custom theme development</a>.</p>
-
-<h2>Online stores</h2>
-<p>Setting up WooCommerce: products, variations, payments, shipping, taxes, invoices and emails. See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
-
-<h2>Speed and performance</h2>
-<p>Optimising images, caching, scripts and hosting so pages load fast and pass Core Web Vitals; see <a href="/wordpress-speed-optimization/">speed optimisation</a>.</p>
-
-<h2>Security</h2>
-<p>Hardening logins, firewalls, updates, backups and cleaning up hacked sites; see <a href="/wordpress-malware-removal/">malware removal</a>.</p>
-
-<h2>SEO foundations</h2>
-<p>Technical SEO like clean URLs, titles, schema, sitemaps, redirects and site structure, so your content has the best chance to rank.</p>
-
-<h2>Maintenance and fixes</h2>
+<h3>Speed, security and SEO foundations</h3>
+<p>Optimising images, caching, scripts and hosting so pages load fast and pass Core Web Vitals (see <a href="/wordpress-speed-optimization/">speed optimisation</a>). Hardening logins, firewalls, updates and backups, and cleaning up hacked sites (see <a href="/wordpress-malware-removal/">malware removal</a>). Setting up technical SEO such as clean URLs, titles, schema, sitemaps, redirects and site structure, so your content has the best chance to rank.</p>
+<h3>Maintenance and fixes</h3>
 <ul>
-  <li>Safe updates of WordPress, themes and plugins</li>
-  <li>Fixing errors, broken layouts and forms</li>
+  <li>Safe updates of WordPress, themes and plugins, tested on staging where it matters</li>
+  <li>Fixing errors, broken layouts and forms that stop sending</li>
   <li>Monitoring uptime and backups</li>
 </ul>
-
-<h2>Migrations and redesigns</h2>
+<h3>Migrations and redesigns</h3>
 <p>Moving sites between hosts or from other platforms, and redesigning without losing rankings; see <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<p>A typical week might include building a new service page template, fixing a contact form that stopped sending emails, testing plugin updates on a staging copy, speeding up a slow product page and answering a client's question about a new feature.</p>
 
-<h2>When do you need one?</h2>
+<h2>How a typical WordPress project runs</h2>
+<p>For a new business website, the work usually follows the same broad steps, whoever you hire:</p>
+<ol>
+  <li><strong>Brief and planning:</strong> agreeing the pages, features, examples you like, deadline and budget</li>
+  <li><strong>Design:</strong> adapting a theme or working from a custom design, usually starting with the homepage</li>
+  <li><strong>Build:</strong> setting up WordPress and building the pages and features, ideally on a staging copy you can review</li>
+  <li><strong>Content:</strong> adding your text, photos and products, and setting up forms and tracking</li>
+  <li><strong>Testing:</strong> checking phones, browsers, forms, speed and basic SEO before anything goes live</li>
+  <li><strong>Launch and handover:</strong> connecting the domain, taking a backup and showing you how to edit your own content</li>
+  <li><strong>Support:</strong> fixes after launch, then ongoing maintenance if you want it</li>
+</ol>
+<p>A good developer explains each step and tells you what they need from you, so the project doesn't stall waiting for content or decisions.</p>
+
+<h2>Skills a WordPress developer needs</h2>
+<table>
+  <thead><tr><th>Skill</th><th>What it's used for</th></tr></thead>
+  <tbody>
+    <tr><td>HTML and CSS</td><td>Page structure, layout and responsive design</td></tr>
+    <tr><td>PHP</td><td>Themes, plugins and changing how WordPress behaves</td></tr>
+    <tr><td>JavaScript</td><td>Interactive features and custom blocks for the block editor</td></tr>
+    <tr><td>MySQL databases</td><td>Where WordPress stores content, settings and orders</td></tr>
+    <tr><td>WordPress hooks and APIs</td><td>Adding features without editing WordPress's own files (see <a href="/blog/wordpress-hooks-actions-filters/">hooks explained</a>)</td></tr>
+    <tr><td>Hosting, DNS and SSL</td><td>Launching and moving sites, and fixing "site not loading" problems</td></tr>
+    <tr><td>Staging, backups and version control</td><td>Making changes without risking the live site</td></tr>
+    <tr><td>Performance, security and technical SEO</td><td>Fast, safe sites that search engines can crawl</td></tr>
+    <tr><td>Communication</td><td>Understanding what the business needs and explaining trade-offs clearly</td></tr>
+  </tbody>
+</table>
+<p>Not every developer needs deep skills in all of these. A site builder relies more on WordPress know-how, page builders and good judgement; a plugin developer needs strong PHP. The non-technical skills, such as asking the right questions and writing a clear scope, often make the biggest difference to clients.</p>
+
+<h2>WordPress developer vs web designer</h2>
+<p>The two roles overlap, which is why the titles get mixed up.</p>
+<table>
+  <thead><tr><th>Role</th><th>Main focus</th><th>Typical output</th></tr></thead>
+  <tbody>
+    <tr><td>Web designer</td><td>How the site looks and how visitors move through it</td><td>Layouts and mock-ups (often in Figma), colours, typography</td></tr>
+    <tr><td>WordPress developer</td><td>Turning the design into a working WordPress site and keeping it running</td><td>A live, editable, fast and secure website</td></tr>
+    <tr><td>General web developer</td><td>Websites or web apps, often built with other technologies</td><td>Custom code, not necessarily on WordPress</td></tr>
+  </tbody>
+</table>
+<p>Many freelancers handle both design and development for small business sites, especially when adapting a theme. For a custom design, a designer and developer often work together. See <a href="/blog/web-designer-vs-web-developer/">web designer vs web developer vs WordPress developer</a> to decide who you need.</p>
+
+<h2>When does a business need a WordPress developer?</h2>
 <ul>
   <li>Building a new website that should bring enquiries or sales</li>
   <li>Your site is slow, broken or hacked</li>
-  <li>You need a feature you can't set up yourself</li>
+  <li>You need a feature you can't set up yourself, such as payments, bookings or an integration</li>
+  <li>You're moving hosts, changing domain or redesigning, and can't afford to lose rankings</li>
   <li>You don't have time to maintain it safely</li>
 </ul>
-<p>See <a href="/blog/hire-developer-vs-diy-website/">hire a developer vs DIY</a> and <a href="/blog/web-designer-vs-web-developer/">web designer vs developer</a>.</p>
+<p>You may not need one for simple text and image changes, a personal blog or a short-term site you're happy to build with a basic theme. See <a href="/blog/hire-developer-vs-diy-website/">hire a developer vs DIY</a>.</p>
+
+<h2>How to hire a WordPress developer</h2>
+<ol>
+  <li><strong>Write down what you need:</strong> pages, features, examples you like and your deadline. The <a href="/blog/website-brief-template/">website brief template</a> helps.</li>
+  <li><strong>Choose between a freelancer and an agency:</strong> see <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a>.</li>
+  <li><strong>Look at similar work:</strong> live sites rather than screenshots, ideally in your industry or with the features you need.</li>
+  <li><strong>Ask how they work:</strong> do they use staging, how do they handle updates and backups, and what happens after launch?</li>
+  <li><strong>Get a written scope and price:</strong> what's included, how many revisions, and what counts as extra work.</li>
+  <li><strong>Keep ownership:</strong> the domain, hosting and admin accounts should be in your name.</li>
+</ol>
+<h3>Red flags</h3>
+<ul>
+  <li>No live examples, or reluctance to share them</li>
+  <li>Using "nulled" (pirated) premium themes and plugins to save cost; see <a href="/blog/nulled-themes-plugins-risks/">why nulled plugins are risky</a></li>
+  <li>Registering your domain or hosting in their own name</li>
+  <li>Guaranteed Google rankings, or a vague scope with no written agreement</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What is a WordPress developer in simple terms?</h3>
+<p>Someone who builds, customises and maintains websites made with WordPress, from setting up the site and its features to keeping it fast, secure and up to date.</p>
+<h3>Is a WordPress developer a real developer?</h3>
+<p>Yes. The work ranges from configuring themes and plugins to writing custom PHP and JavaScript. Skills vary a lot between developers, so judge them on the work they've done rather than the title.</p>
+<h3>Do WordPress developers need to know how to code?</h3>
+<p>For custom themes, plugins and serious troubleshooting, yes: PHP, HTML, CSS and JavaScript. Some site builders work mostly with page builders, but coding knowledge is what lets a developer fix problems properly instead of adding another plugin.</p>
+<h3>Can a WordPress developer handle design and SEO too?</h3>
+<p>Many handle design for small business sites and the technical side of SEO: speed, structure, sitemaps, schema and redirects. Content strategy and link building are usually separate specialisms.</p>
+<h3>Should I hire a freelancer or an agency?</h3>
+<p>A freelancer usually suits small and medium business sites, where you want to deal directly with the person doing the work. An agency can make sense for large projects that need a bigger team. Either way, check similar live work and get the scope in writing.</p>
+<h3>How much does it cost to hire a WordPress developer?</h3>
+<p>It depends on the work, the developer's experience and whether it's a fixed project or ongoing support. See <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> for what drives the price.</p>
+
+<p>Need a WordPress developer for a new site, a fix or ongoing support? I build and look after WordPress and WooCommerce sites for businesses and agencies. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
   },
   {
@@ -19704,22 +20021,24 @@ Template: astra
   },
   {
     slug: 'woocommerce-speed-optimization',
-    seoTitle: 'WooCommerce Speed Optimization: Make Your Store Faster',
-    title: 'WooCommerce Speed Optimization: How to Make Your Online Store Faster',
-    description: 'How to speed up a WooCommerce store: hosting, caching with the right exclusions, cart fragments, product images, plugins, database clean-up and object caching.',
+    seoTitle: 'WooCommerce Speed Optimization: How to Speed Up Your Store',
+    title: 'WooCommerce Speed Optimization: How to Speed Up Your Online Store',
+    description: 'How to speed up a WooCommerce store: hosting and object caching, caching around cart and checkout, cart fragments, images, filters, search and database tidy-up.',
     date: '2026-09-28',
+    updated: '2026-10-10',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization'],
     body: `
-<p>A slow online store loses sales in a way you rarely notice. A shopper on mobile data taps a product from Instagram, waits a few seconds, and goes back to scrolling. WooCommerce can be fast, but a store is harder to speed up than a normal business website because some of its most important pages can't simply be cached. This guide covers the store-specific fixes; for general causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</p>
+<p>A slow online store loses sales in a way you rarely notice. A shopper on mobile data taps a product from Instagram, waits a few seconds, and goes back to scrolling. WooCommerce can be fast, but a store is harder to speed up than a normal business website because some of its most important pages can't simply be cached. This guide covers WooCommerce speed optimisation step by step: what to measure, what to fix and how to test without breaking the checkout. For general WordPress causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</p>
 
 <h2>Why WooCommerce stores are harder to speed up</h2>
 <p>On a brochure site, almost every visitor sees the same page, so a saved copy can be served instantly. A store works differently:</p>
 <ul>
   <li>The cart, checkout and My Account pages are different for every shopper and must be built fresh each time</li>
-  <li>Logged-in customers usually bypass the page cache completely</li>
-  <li>Large catalogues, product variations and filters mean heavier database queries</li>
+  <li>Logged-in customers, and shoppers with something in their cart, usually bypass the page cache</li>
+  <li>Large catalogues, product variations, filters and search mean heavier database queries</li>
   <li>Payment, shipping, review and marketing extensions each add their own scripts and processing</li>
+  <li>Every order adds data: order records, sessions, logs and background tasks</li>
 </ul>
 <p>So a fast store needs two things: good caching for the pages that can be cached, and a capable server for the pages that can't.</p>
 
@@ -19730,22 +20049,26 @@ Template: astra
     <tr><th>Page</th><th>What to check</th></tr>
   </thead>
   <tbody>
-    <tr><td>Homepage and category pages</td><td>Load time on mobile, image weight, number of scripts</td></tr>
-    <tr><td>Product pages</td><td>How quickly the main image appears, gallery and review scripts</td></tr>
-    <tr><td>Cart and checkout</td><td>Server response time, add-to-cart, quantity and coupon speed</td></tr>
+    <tr><td>Homepage and category pages</td><td>Mobile load time, image weight, number of scripts</td></tr>
+    <tr><td>Product pages</td><td>How quickly the main image appears; gallery, variation and review scripts</td></tr>
+    <tr><td>Search and filtered results</td><td>How long a search or filter click takes</td></tr>
+    <tr><td>Cart and checkout</td><td>Server response time, add-to-cart, quantity changes, coupons, shipping calculation</td></tr>
+    <tr><td>My Account</td><td>Login and order history speed for returning customers</td></tr>
   </tbody>
 </table>
-<p>PageSpeed Insights is useful for the shop and product pages. For the cart and checkout, time the steps yourself: add a product, change the quantity, apply a coupon and move to payment. If one step drags, that's where to dig. On a staging copy, a debugging plugin such as Query Monitor can show slow database queries and which plugin caused them.</p>
+<p>PageSpeed Insights is useful for shop and product pages, and the Core Web Vitals report in Search Console shows how real visitors experience groups of similar pages. For the cart and checkout, time the steps yourself: add a product, change the quantity, apply a coupon, enter a pin code and move to payment. If one step drags, that's where to dig. On a staging copy, a debugging plugin such as Query Monitor can show slow database queries and which plugin caused them. See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</p>
 
-<h2>Hosting matters more for stores</h2>
-<p>Because cart and checkout pages are built fresh for every shopper, they depend directly on your server. Cheap shared hosting that copes with a brochure site can struggle when several people check out at once, especially during a festival sale. When reviewing hosting for a store, look for:</p>
+<h2>Hosting and object caching</h2>
+<p>Because cart and checkout pages are built fresh for every shopper, they depend directly on your server. Cheap shared hosting that copes with a brochure site can struggle when several people check out at once, especially during a festival sale. For a store, look for:</p>
 <ul>
-  <li>A current, supported PHP version</li>
+  <li>A current, supported PHP version (see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a>)</li>
   <li>Enough memory and PHP workers to handle several uncached requests at the same time</li>
-  <li>Server-level caching and support for an object cache such as Redis</li>
+  <li>Server-level caching and support for an object cache such as Redis or Memcached</li>
   <li>A data centre in or near India if most of your customers are here</li>
 </ul>
-<p>Check current plans with your host, and ask directly how much simultaneous checkout traffic your plan can realistically handle.</p>
+<p>Ask your host directly how much simultaneous checkout traffic your plan can realistically handle. If the server is slow before anything else loads, start with <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time</a>, and if you've outgrown shared hosting, compare <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared, VPS and managed hosting</a>.</p>
+<h3>Why an object cache helps stores in particular</h3>
+<p>A page cache saves whole pages, which doesn't help the cart or checkout. An object cache keeps the results of repeated database lookups in memory, so WordPress doesn't ask the database the same question again and again. That helps exactly the pages that can't be page-cached: cart, checkout, My Account and the admin. It needs server support plus a plugin or host setting to connect WordPress to it, so ask whether your plan includes it, and test the checkout after turning it on.</p>
 
 <h2>Page caching, with the right exclusions</h2>
 <p>Cache the pages that are the same for everyone: the homepage, category pages, product pages and blog posts. Never cache:</p>
@@ -19753,10 +20076,22 @@ Template: astra
   <li>The cart, checkout and My Account pages</li>
   <li>Pages for a visitor who has items in their cart or is logged in</li>
 </ul>
-<p>WooCommerce sets cookies such as <strong>woocommerce_items_in_cart</strong> and <strong>woocommerce_cart_hash</strong> when a shopper adds something to the cart, and good caching plugins and hosts use them to skip the cache for that shopper. Most detect WooCommerce automatically, but always test: open a private window, add a product, then check the cart count and prices on other pages. If you show prices in different currencies or change them by location, test extra carefully, because a cached page can show the wrong price. More in <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
+<p>WooCommerce sets cookies such as <strong>woocommerce_items_in_cart</strong> and <strong>woocommerce_cart_hash</strong> when a shopper adds something to the cart, and good caching plugins and hosts use them to skip the cache for that shopper. Most detect WooCommerce automatically, but always test: open a private window, add a product, then check the cart count and prices on other pages.</p>
+<p>If you show prices in different currencies or change them by location, test extra carefully, because a cached page can show the wrong price. Similarly, WooCommerce's "geolocate with page caching support" option adds a code to your URLs, creating many variations; only geolocate if you need location-based taxes or prices. More in <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> and <a href="/blog/what-is-a-cdn/">what a CDN does</a>.</p>
+
+<h2>Speeding up cart, checkout and My Account</h2>
+<p>These pages make you money, and caching can't rescue them. Beyond hosting and an object cache, look at what runs on them:</p>
+<ul>
+  <li><strong>Live shipping and pin code lookups:</strong> extensions that ask a courier's system for rates on every change can add a noticeable wait if that service is slow</li>
+  <li><strong>Discount, fee and pricing rules:</strong> complex rule plugins recalculate the cart on every update; keep only the rules you use</li>
+  <li><strong>Payment gateways:</strong> each loads its own scripts; disable gateways you don't offer</li>
+  <li><strong>Extra fields and add-ons:</strong> address autocomplete, gift options and upsell pop-ups all add weight</li>
+  <li><strong>Actions when the order is placed:</strong> slow email sending or many integrations firing at once can make the final step feel stuck</li>
+</ul>
+<p>WooCommerce offers both a block-based checkout and the older classic checkout. Either can be fast; what matters is which extensions you rely on and whether they support the version you use. For layout and form changes that also help conversions, see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
 
 <h2>Cart fragments</h2>
-<p>The small cart icon in your header that shows the number of items is often updated by a script called cart fragments. It sends a background request (you may see <strong>get_refreshed_fragments</strong> in a speed test waterfall) that can't be cached. If it runs on every page for every visitor, it adds server load and delay even to pages that are otherwise cached.</p>
+<p>The cart icon in your header that shows the number of items is often updated by a script called cart fragments. It sends a background request (you may see <strong>get_refreshed_fragments</strong> in a speed test waterfall) that can't be cached. If it runs on every page for every visitor, it adds server load and delay even to pages that are otherwise cached.</p>
 <p>Recent WooCommerce versions no longer load this script everywhere by default, but many themes and header mini-cart widgets still do. Your options include:</p>
 <ul>
   <li>Loading it only on shop, product and cart pages</li>
@@ -19770,31 +20105,60 @@ Template: astra
 <ul>
   <li>Lazy-load images further down the page, but not the main product image, which is often the largest element Google measures</li>
   <li>Keep gallery sliders, zoom and 360-degree viewers light, and load them only on product pages</li>
-  <li>Use a click-to-play embed for product videos instead of loading the full video player upfront</li>
+  <li>Watch products with dozens of variations and colour swatches, as each option adds data to the page</li>
+  <li>Use a click-to-play embed for product videos instead of loading the full player upfront</li>
 </ul>
-<p>See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> for the details.</p>
+<p>See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> and <a href="/blog/fix-lcp-largest-contentful-paint/">fixing slow LCP</a> for the details.</p>
 
-<h2>Plugins, scripts and the theme</h2>
+<h2>Filters, search and large catalogues</h2>
+<p>With hundreds or thousands of products and many attributes, filters and search can become the slowest part of a store, and they're usually uncached because every combination is different.</p>
+<ul>
+  <li><strong>Choose filters carefully:</strong> some filter plugins run heavy queries on every click. Prefer ones that use indexed data, and in recent WooCommerce versions check that the product attributes lookup table is used for filtering (WooCommerce &gt; Settings &gt; Products &gt; Advanced)</li>
+  <li><strong>Keep filter URLs out of Google:</strong> endless combinations waste crawling and server resources; see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a></li>
+  <li><strong>Improve site search:</strong> default WordPress search gets slow and imprecise on big catalogues; a search plugin with its own index, or a hosted search service, usually helps (see <a href="/blog/improve-wordpress-site-search/">improving site search</a>)</li>
+  <li><strong>Trim heavy page sections:</strong> related products, "recently viewed" and upsell carousels each run extra queries; keep the ones that help sales</li>
+</ul>
+
+<h2>Database: orders, sessions, transients and HPOS</h2>
+<p>An active store's database grows every day. Keeping it tidy helps the uncached pages and the admin area:</p>
+<ul>
+  <li><strong>Sessions and transients:</strong> expired cart sessions and temporary cached data should clear automatically, but only if scheduled tasks are actually running</li>
+  <li><strong>Scheduled Actions:</strong> WooCommerce and many extensions log background tasks; check WooCommerce &gt; Status &gt; Scheduled Actions for large numbers of failed or pending items</li>
+  <li><strong>Autoloaded options:</strong> leftover settings from removed plugins can slow down every request</li>
+  <li><strong>Order storage:</strong> High-Performance Order Storage (HPOS) keeps orders in their own dedicated tables instead of mixing them with posts, which is designed to scale better as orders grow. Newer stores use it by default; older stores can check under WooCommerce &gt; Settings &gt; Advanced &gt; Features, after confirming their extensions are compatible</li>
+</ul>
+<p>Always take a full backup before any clean-up. See <a href="/blog/wordpress-database-optimization/">database optimisation</a>, and <a href="/blog/wordpress-admin-slow/">why the admin gets slow</a> if the problem is mainly in the dashboard.</p>
+
+<h2>Plugins, theme and third-party scripts</h2>
 <p>Stores collect plugins over time: reviews, wishlists, filters, pop-ups, live chat, tracking pixels and more. Many load their CSS and JavaScript on every page, even where they do nothing.</p>
 <ul>
   <li>Remove extensions you no longer use, and replace heavy ones where a lighter option does the job</li>
-  <li>Stop scripts loading where they aren't needed; a payment gateway's script, for example, only needs to load on checkout</li>
+  <li>Stop scripts loading where they aren't needed; a payment gateway's script only needs to load on checkout</li>
+  <li>Review tracking: several pixels and tag managers doing the same job add up quickly on mobile</li>
   <li>Delay chat widgets and marketing scripts until the visitor interacts with the page</li>
-  <li>On large catalogues, choose product filters carefully, as some run heavy queries on every click</li>
   <li>Avoid building product and category templates from bloated page-builder layouts</li>
 </ul>
+<p>See <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a>.</p>
 
-<h2>Database, orders and object caching</h2>
-<p>An active store's database grows every day with orders, sessions, logs and background tasks. Keeping it tidy helps the uncached pages and the admin area:</p>
-<ul>
-  <li><strong>Expired sessions and transients:</strong> clear them regularly</li>
-  <li><strong>Scheduled Actions:</strong> WooCommerce and many extensions log background tasks, and old completed or failed actions can pile up</li>
-  <li><strong>Autoloaded options:</strong> leftover settings from removed plugins can slow down every request</li>
-  <li><strong>Order storage:</strong> High-Performance Order Storage (HPOS) keeps orders in their own tables. Newer stores use it by default; older stores can check under WooCommerce &gt; Settings &gt; Advanced &gt; Features, after confirming their extensions are compatible</li>
-</ul>
-<p>An object cache such as Redis keeps the results of database queries in memory, which particularly helps pages that can't be page-cached, such as the cart, checkout and admin. Ask your host whether it's available on your plan. Always take a backup before any clean-up; see <a href="/blog/wordpress-database-optimization/">database optimisation</a>.</p>
+<h2>Test safely and keep it fast</h2>
+<p>Speed work on a store has one rule: never trade a faster page for a broken checkout. Make changes on a staging copy after a backup, change one thing at a time, and place a real test order each time: add to cart, coupon, shipping, payment and confirmation email. Check on a phone on mobile data, and re-test after major updates and before big sales. The <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the regular checks that stop a store slowly getting heavier again.</p>
 
-<p>Want a faster store without breaking the checkout? See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> or <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<h2>DIY or a WooCommerce speed optimisation service?</h2>
+<p>Compressing images, removing unused plugins and turning on caching are reasonable DIY jobs. Get help when the slow pages are the cart and checkout, when you have a large catalogue with filters, when the database needs clean-up, or when earlier "speed plugins" made things worse. A good service starts with measurement, works on staging, explains each change and tests a full order before anything goes live. Be wary of anyone promising a particular score without looking at your store first.</p>
+
+<h2>FAQs</h2>
+<h3>Why is my WooCommerce store so slow?</h3>
+<p>Usually a mix of underpowered hosting, too many plugins loading scripts everywhere, heavy product images, cart fragments running on every page and a cluttered database. Test each page type separately to find which one is actually slow, then fix that first.</p>
+<h3>Can I cache the WooCommerce cart and checkout?</h3>
+<p>No. They're different for every shopper, so caching them can show one customer another's cart or the wrong totals. Speed them up with better hosting, an object cache and fewer heavy extensions instead.</p>
+<h3>Should I disable cart fragments?</h3>
+<p>Not blindly. Limit it to pages that need a live cart count, or use a mini-cart that doesn't rely on it, then check the count still updates when products are added.</p>
+<h3>Does WooCommerce need Redis?</h3>
+<p>It isn't required, but an object cache such as Redis often helps busy stores because it speeds up the pages that can't be page-cached. How much it helps depends on your store and hosting, so measure before and after.</p>
+<h3>Will switching to HPOS make my store faster?</h3>
+<p>HPOS is designed to make order storage more efficient, and it tends to matter more as order numbers grow, particularly in the admin. Check your extensions support it, back up and test on staging before switching an older store.</p>
+
+<p>Want a faster store without breaking the checkout? I speed up WooCommerce stores on staging, test a full order before anything goes live and explain every change. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> or <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {

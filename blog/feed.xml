@@ -11,7 +11,7 @@
     <link>https://samverse.space/blog/wordpress-website-cost-india/</link>
     <guid>https://samverse.space/blog/wordpress-website-cost-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>A clear breakdown of WordPress website costs in India: domain, hosting, design, development, plugins and maintenance, with typical price ranges for each type of site.</description>
+    <description>WordPress website cost in India explained: one-time build costs, yearly domain, hosting and maintenance, typical ranges by site type and how to get a quote.</description>
   </item>
   <item>
     <title>WordPress vs Wix vs Shopify: Which Is Best for Your Business?</title>
@@ -490,11 +490,11 @@
     <description>What internal links are, why they matter for SEO and visitors, and a simple strategy for linking service pages, blog posts and case studies on a small business website.</description>
   </item>
   <item>
-    <title>Technical SEO Audit Checklist for WordPress Websites</title>
+    <title>WordPress Technical SEO Audit: A Practical Checklist (With WooCommerce Checks)</title>
     <link>https://samverse.space/blog/technical-seo-audit-wordpress/</link>
     <guid>https://samverse.space/blog/technical-seo-audit-wordpress/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>A step-by-step technical SEO audit for WordPress: crawling and indexing, sitemaps, robots.txt, redirects, canonicals, HTTPS, speed, mobile, structured data and duplicate content.</description>
+    <description>A practical WordPress technical SEO audit checklist: indexing, sitemaps, robots.txt, canonicals, redirects, Core Web Vitals, schema and WooCommerce checks.</description>
   </item>
   <item>
     <title>How to Choose a Domain Name for Your Business (10 Practical Tips)</title>
@@ -1106,11 +1106,11 @@
     <description>What canonical tags are, when your site creates duplicate URLs (www, parameters, product variants), how canonicals fix it, and common canonical mistakes that hurt rankings.</description>
   </item>
   <item>
-    <title>Duplicate Content Explained: Myths, Real Risks and Fixes</title>
+    <title>Duplicate Content Explained: What It Is, the Penalty Myth and How to Fix It</title>
     <link>https://samverse.space/blog/duplicate-content-explained/</link>
     <guid>https://samverse.space/blog/duplicate-content-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What duplicate content really means for SEO, the myth of the &quot;duplicate content penalty&quot;, real problems it causes (diluted rankings, wasted crawling) and how to fix them on business websites.</description>
+    <description>What duplicate content is, whether Google really penalises it, the common WordPress causes and how to fix them with canonicals, redirects, noindex or merging.</description>
   </item>
   <item>
     <title>301 vs 302 Redirects: Which to Use and When</title>
@@ -1757,11 +1757,11 @@
     <description>The difference between web designers, web developers and WordPress developers, what each actually does, who you need for a new site, a redesign or fixes, and when one person can do both.</description>
   </item>
   <item>
-    <title>What Does a WordPress Developer Actually Do?</title>
+    <title>What Does a WordPress Developer Actually Do? Roles, Skills and When to Hire One</title>
     <link>https://samverse.space/blog/what-does-wordpress-developer-do/</link>
     <guid>https://samverse.space/blog/what-does-wordpress-developer-do/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>A plain-English explanation of what a WordPress developer does: building websites, themes and plugins, WooCommerce, speed, security, SEO setup, maintenance, fixes and migrations, and when to hire one.</description>
+    <description>What a WordPress developer is and does: theme, plugin and site developers, daily tasks, key skills, how they differ from web designers, and when to hire one.</description>
   </item>
   <item>
     <title>Is Elementor Pro Worth It for a Business Website?</title>
@@ -2219,11 +2219,11 @@
     <description>A WooCommerce maintenance checklist of weekly, monthly and quarterly tasks: test orders, payment and shipping checks, safe updates, database care and backups.</description>
   </item>
   <item>
-    <title>WooCommerce Speed Optimization: How to Make Your Online Store Faster</title>
+    <title>WooCommerce Speed Optimization: How to Speed Up Your Online Store</title>
     <link>https://samverse.space/blog/woocommerce-speed-optimization/</link>
     <guid>https://samverse.space/blog/woocommerce-speed-optimization/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to speed up a WooCommerce store: hosting, caching with the right exclusions, cart fragments, product images, plugins, database clean-up and object caching.</description>
+    <description>How to speed up a WooCommerce store: hosting and object caching, caching around cart and checkout, cart fragments, images, filters, search and database tidy-up.</description>
   </item>
   <item>
     <title>WooCommerce Security Checklist: How to Protect Your Online Store</title>
