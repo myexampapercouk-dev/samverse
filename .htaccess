@@ -13,7 +13,7 @@ AddType application/manifest+json .webmanifest
 
 	# The whole repo is deployed, so hide project files from the web
 	RewriteRule ^(\.git|node_modules|netlify|tools|docs)(/|$) - [R=404,L]
-	RewriteRule ^(package\.json|package-lock\.json|netlify\.toml|README\.md|\.gitignore|\.gitattributes)$ - [R=404,L]
+	RewriteRule ^(package\.json|package-lock\.json|netlify\.toml|README\.md|\.gitignore|\.gitattributes|server\.js|\.htaccess)$ - [R=404,L]
 </IfModule>
 
 # Security headers
