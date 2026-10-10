@@ -12,7 +12,8 @@
  *     'smtp_user' => 'you@gmail.com',
  *     'smtp_pass' => 'gmail app password',
  *   ];
- * Without smtp_user/smtp_pass it falls back to PHP mail() from website@<domain>.
+ * The private file is optional: without it (or without smtp_user/smtp_pass) enquiries go to the
+ * public business address through PHP mail() from website@<domain>.
  */
 
 header('Content-Type: application/json; charset=utf-8');
@@ -65,11 +66,15 @@ if (count($hits) >= 5) {
 $hits[] = time();
 @file_put_contents($rateFile, implode(',', $hits));
 
+// Optional private config (SMTP login for reliable delivery). Without it, enquiries go to the
+// public business address below through the host's PHP mail().
 $configFile = dirname(__DIR__, 2) . '/samverse-private/mail-config.php';
 $cfg = is_readable($configFile) ? (include $configFile) : [];
-if (!is_array($cfg) || empty($cfg['mail_to'])) {
-	error_log('samverse send-quote: mail config missing at ' . $configFile);
-	reply(500, ['ok' => false, 'error' => 'Email is not configured']);
+if (!is_array($cfg)) {
+	$cfg = [];
+}
+if (empty($cfg['mail_to'])) {
+	$cfg['mail_to'] = 'sameergpt9719@gmail.com';
 }
 
 $oneLine = function ($s) { return trim(preg_replace('/[\r\n]+/', ' ', $s)); };
