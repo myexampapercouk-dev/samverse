@@ -667,6 +667,10 @@ const LINKS = [
   ['white-label-wordpress-development-agencies', '<h2>How it typically works</h2>', '<p>Online stores add extra steps, from payment gateways and shipping rules to checkout testing; <a href="/blog/white-label-woocommerce-development/">white-label WooCommerce development</a> explains how that work is usually split between your agency and the partner.</p>\n\n'],
   ['outsource-wordpress-development-india', '<h2>What to send your developer</h2>', '<p>For response times on live issues, urgent fixes outside the overlap and the tools that keep async work moving, see <a href="/blog/offshore-wordpress-developer-time-zones/">working with an offshore WordPress developer across time zones</a>.</p>\n\n'],
   ['website-qa-checklist-before-launch-agencies', '<h2>Who runs QA, and when</h2>', '<p>If you bring in a partner when your own team is at capacity, running their builds through this same checklist keeps quality consistent; see <a href="/blog/agency-overflow-wordpress-work/">using a development partner for overflow work</a>.</p>\n\n'],
+  // Agent 84
+  ['regain-website-access-old-developer', '<h2>Step 5: Secure everything</h2>', '<p>If the reset email never arrives, or the login page keeps refreshing or locking you out, work through <a href="/blog/wordpress-login-not-working-fix/">how to fix WordPress login problems</a>.</p>\n\n'],
+  ['image-optimization-wordpress', '<h2>2. Compress</h2>', '<p>Resizing first also prevents a common upload problem: very large photos can make WordPress fail with a vague message, covered in <a href="/blog/wordpress-http-error-image-upload-fix/">fixing the HTTP error when uploading images</a>.</p>\n\n'],
+  ['wordpress-changes-not-showing', '<h2>7. Editing the wrong place</h2>', '<p>If text updates appear but styling changes don\'t, the cause is often specificity, loading order or optimised CSS files; see <a href="/blog/wordpress-css-changes-not-showing/">WordPress CSS changes not showing</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

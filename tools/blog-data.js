@@ -3518,6 +3518,8 @@ wp plugin verify-checksums --all</code></pre>
 <h2>1. Resize before uploading</h2>
 <p>If an image displays at 1200 pixels wide, there's no need to upload a 4000-pixel original. Resize photos to roughly the largest size they'll be shown at (hero images around 1600–2000 px wide, content images around 1200 px).</p>
 
+<p>Resizing first also prevents a common upload problem: very large photos can make WordPress fail with a vague message, covered in <a href="/blog/wordpress-http-error-image-upload-fix/">fixing the HTTP error when uploading images</a>.</p>
+
 <h2>2. Compress</h2>
 <p>Compression reduces file size with little or no visible quality loss. Image optimization plugins can compress new uploads automatically and bulk-compress existing images. For photos, moderate compression is usually invisible to visitors.</p>
 
@@ -6877,6 +6879,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>With hosting access, a developer can create a new administrator account safely</li>
   <li>Then remove or downgrade old accounts you don't recognise</li>
 </ul>
+
+<p>If the reset email never arrives, or the login page keeps refreshing or locking you out, work through <a href="/blog/wordpress-login-not-working-fix/">how to fix WordPress login problems</a>.</p>
 
 <h2>Step 5: Secure everything</h2>
 <ol>
@@ -17499,6 +17503,8 @@ wp option get home</code></pre>
 
 <h2>6. Elementor CSS files</h2>
 <p>Elementor stores styles in generated CSS files. If design changes don't appear, go to Elementor → Tools and use the option to regenerate files and data, then clear all caches.</p>
+
+<p>If text updates appear but styling changes don't, the cause is often specificity, loading order or optimised CSS files; see <a href="/blog/wordpress-css-changes-not-showing/">WordPress CSS changes not showing</a>.</p>
 
 <h2>7. Editing the wrong place</h2>
 <ul>
@@ -40288,6 +40294,252 @@ RewriteRule . /index.php [L]
 </ul>
 
 <p>When your team is at capacity, I can take on overflow WordPress builds white-label, from your designs and to your standards. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> and send a small first project to see how we work together.</p>
+`,
+  },
+  {
+    slug: 'wordpress-login-not-working-fix',
+    seoTitle: 'WordPress Login Not Working? How to Fix It Step by Step',
+    title: 'WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords',
+    description: 'Can\'t log in to WordPress? Fix login pages that keep refreshing, cookie errors, wrong site URLs, security lockouts and forgotten passwords, step by step.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal'],
+    body: `
+<p>You type your username and password, press Log In, and the login page simply reloads. Or WordPress insists the password is wrong when you're sure it isn't, or tells you you've been locked out. Being shut out of your own website is stressful, but login problems rarely mean anything has been lost. Work through the checks below in order, and take a backup before changing any files or the database.</p>
+
+<h2>First, match the symptom to the likely cause</h2>
+<table>
+  <thead><tr><th>What happens</th><th>Most likely cause</th></tr></thead>
+  <tbody>
+    <tr><td>The login page reloads with no error message</td><td>Cookies, a cached login page or mismatched site URL settings</td></tr>
+    <tr><td>"Cookies are blocked or not supported by your browser"</td><td>Browser settings or extensions, or a cache or CDN interfering with cookies</td></tr>
+    <tr><td>"The password you entered is incorrect" or an unknown username</td><td>Wrong details, or the account was changed by someone else</td></tr>
+    <tr><td>"Too many failed attempts", a 403 page or an access denied message</td><td>A security plugin, firewall or host has blocked your IP address</td></tr>
+    <tr><td>The login page shows a 404 error</td><td>A security plugin has moved the login address</td></tr>
+    <tr><td>The browser says the page redirected too many times</td><td>A redirect loop; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a></td></tr>
+    <tr><td>A blank screen or critical error after logging in</td><td>A plugin or theme error; see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a></td></tr>
+  </tbody>
+</table>
+
+<h2>Step 1: Rule out your browser and cookies</h2>
+<p>WordPress keeps you logged in with cookies. If the browser refuses them, or holds on to old ones, the login appears to work and then sends you straight back.</p>
+<ul>
+  <li>Try a private or incognito window, a different browser, or your phone on mobile data</li>
+  <li>If that works, clear cookies and cached data for your site only, rather than wiping everything</li>
+  <li>Temporarily switch off privacy, ad-blocking or script-blocking extensions</li>
+  <li>Type the address exactly as the site uses it. Cookies are tied to the domain, so logging in at the www version of a site set up without www (or the reverse) can fail</li>
+</ul>
+
+<h2>Step 2: Check the site URL settings</h2>
+<p>WordPress stores two addresses in Settings → General: the WordPress Address and the Site Address. If they don't match how the site is actually reached, for example after a move to https or a migration, WordPress sets its login cookie for the wrong address and you bounce back to the login page.</p>
+<p>Without dashboard access, a developer can set them by adding two lines to wp-config.php, above the comment that says to stop editing:</p>
+<pre><code>define( 'WP_HOME', 'https://www.example.com' );
+define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
+<p>Use your real address, with or without www exactly as your site uses it. The alternative is editing the <code>siteurl</code> and <code>home</code> rows in the options table through phpMyAdmin; the table name starts with your site's prefix, which isn't always <code>wp_</code>. Keep a copy of the original file or values so you can undo the change.</p>
+
+<h2>Step 3: Security plugin and firewall lockouts</h2>
+<p>Security tools are meant to block repeated failed logins, and sometimes they block the owner too.</p>
+<ul>
+  <li><strong>Lockout after failed attempts:</strong> most lockouts expire after a set time. Trying from a different network, such as your phone's mobile data, confirms whether your IP address is the problem</li>
+  <li><strong>Custom login address forgotten:</strong> check your handover notes or the plugin's set-up emails. Failing that, rename the security plugin's folder inside wp-content/plugins using your host's File Manager or SFTP. That deactivates it and restores the normal login page</li>
+  <li><strong>Lost two-factor phone:</strong> use the backup codes you saved when setting it up. Without them, deactivating the plugin the same way lets you in, and you should set up two-factor again straight away</li>
+  <li><strong>Host or CDN firewall:</strong> if the login page itself won't load, your host or CDN dashboard can show and lift the block</li>
+</ul>
+<p>Whatever you disable, rename it back and re-enable it once you're in. For setting these protections up sensibly, see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
+
+<h2>Step 4: Make sure the login page isn't cached</h2>
+<p>The login page and the dashboard should never be cached. If a caching plugin, server cache or CDN rule stores a copy of wp-login.php, people get an old page with expired security tokens, and logins fail or loop. A "cache everything" rule at the CDN is a common culprit.</p>
+<ul>
+  <li>Purge the caching plugin, the hosting cache and any CDN cache</li>
+  <li>Check that wp-login.php and the /wp-admin/ area are excluded from caching, and that logged-in users bypass the cache</li>
+  <li>If you can't reach the plugin settings, rename the caching plugin's folder temporarily, as above</li>
+</ul>
+
+<h2>Step 5: Reset a forgotten password safely</h2>
+<p>The simplest route is the "Lost your password?" link on the login page, which emails a reset link. If the email never arrives, check spam, and check whether the account uses an old address, such as a former employee's or a previous developer's. Many sites can't send email reliably until SMTP is set up; see <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a>.</p>
+<h3>Through phpMyAdmin</h3>
+<p>In your hosting panel, open phpMyAdmin, export a backup of the database, then open the users table (again with your site's prefix). Edit your account's row, choose MD5 from the function dropdown beside <code>user_pass</code>, type a new password and save. WordPress accepts this older format for your next login and then replaces it with its own stronger hash. Don't touch any other fields.</p>
+<h3>Through WP-CLI</h3>
+<p>If your host offers SSH access with WP-CLI, these commands list administrator accounts and send a fresh reset email:</p>
+<pre><code>wp user list --role=administrator
+wp user reset-password &lt;username&gt;</code></pre>
+<p>Sending a reset email is safer than typing a new password on the command line, where it can stay in the server's history. If you're unsure about either method, ask your host or developer rather than guessing.</p>
+
+<h2>When it could be something more serious</h2>
+<p>Be suspicious if your password or admin email changed without anyone on your team doing it, if there are administrator accounts you don't recognise, or if logging in sends you to an unfamiliar site. Those are signs of a compromised site. Change every password (hosting, WordPress, email and SFTP), and get a proper cleanup rather than just regaining access; see <a href="/wordpress-malware-removal/">hacked site repair</a>.</p>
+
+<h2>How to avoid getting locked out again</h2>
+<ul>
+  <li>Keep the admin email address current, using a mailbox someone checks</li>
+  <li>Use a password manager, and store two-factor backup codes and any custom login address with your site records</li>
+  <li>Give a trusted person a second administrator account of their own</li>
+  <li>Set up SMTP so reset emails arrive</li>
+</ul>
+
+<p>Still locked out, or would you rather not touch wp-config.php and the database yourself? I sort out login problems, lockouts and access recovery as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-http-error-image-upload-fix',
+    seoTitle: 'WordPress HTTP Error When Uploading Images: How to Fix It',
+    title: '"HTTP Error" When Uploading Images to WordPress: Causes and Fixes',
+    description: 'Getting "HTTP error" when uploading images to WordPress? Check file size, memory, Imagick vs GD, permissions, security rules and plugins, in the right order.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-speed-optimization'],
+    body: `
+<p>You drag a photo into the media library, the progress bar fills up, and WordPress shows just two words: "HTTP error". The message is vague because WordPress itself doesn't know what went wrong; the server sent back something it didn't expect. The causes are well known, though, and checking them in the right order usually finds the problem quickly.</p>
+
+<h2>What the "HTTP error" actually means</h2>
+<p>Uploading an image is two jobs. First the file is sent to the server. Then WordPress processes it: it creates several resized copies (thumbnail, medium, large and any extra sizes your theme or plugins register) and scales very large photos down to a more sensible maximum. The second job is the heavy one. If the server runs out of memory or time, or a security rule interrupts the request, WordPress gets an error back and shows the generic message.</p>
+<p>Newer versions sometimes show a longer message saying post-processing failed and suggesting a smaller image; it's the same problem. The original file may have uploaded without its resized copies, so check the media library before trying again.</p>
+<p>If the message mentions the maximum upload size instead, that's a different limit; see <a href="/blog/increase-wordpress-upload-size-limit/">how to increase the WordPress upload size limit</a>.</p>
+
+<h2>Check 1: Retry, and test with a small image</h2>
+<ul>
+  <li>Wait a minute and try again; a busy shared server can fail once and then succeed</li>
+  <li>Log out and back in, as an expired session can make uploads fail</li>
+  <li>Try a private window or another browser, with extensions off</li>
+  <li>Upload a small test image, such as a screenshot</li>
+</ul>
+<p>If small images work and large ones fail, look at size, memory and the image library (checks 2 to 4). If every upload fails, look at permissions, security rules and plugins (checks 5 to 7).</p>
+
+<h2>Check 2: File size, dimensions and format</h2>
+<p>Pixel dimensions matter more than file size. A camera photo may be only a few megabytes as a JPEG, but to resize it the server must unpack it to full size in memory. Resizing photos before uploading often fixes the error on its own.</p>
+<table>
+  <thead><tr><th>Issue</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>Very large dimensions, such as a camera original</td><td>Resize to roughly the largest size it will be shown at</td></tr>
+    <tr><td>Unusual characters or a very long file name</td><td>Rename to simple lowercase words with hyphens, such as <code>office-reception.jpg</code></td></tr>
+    <tr><td>HEIC photos from an iPhone</td><td>Recent WordPress versions can convert them only if the server supports HEIC; otherwise export as JPEG first</td></tr>
+    <tr><td>WebP or AVIF files</td><td>These work only when the server's image library supports the format</td></tr>
+    <tr><td>Print files, such as CMYK JPEGs exported for a brochure</td><td>Re-export in RGB for screen use</td></tr>
+  </tbody>
+</table>
+
+<h2>Check 3: Memory and time limits</h2>
+<p>If large images fail and small ones work, memory is the usual suspect. Tools → Site Health → Info shows the PHP memory limit, WP_MEMORY_LIMIT and the maximum execution time. Low values on a site with a heavy theme and many plugins leave little room for image processing. How to raise them safely is covered in <a href="/blog/wordpress-memory-limit-errors/">memory limit errors in WordPress</a>.</p>
+<p>On shared hosting, uploading dozens of photos at once can also hit the account's overall resource limits even when the memory setting is fine. Upload in smaller batches and see whether the errors stop.</p>
+
+<h2>Check 4: The image library, Imagick or GD</h2>
+<p>WordPress uses a PHP image library to do the resizing. It prefers Imagick when the server has it and falls back to GD otherwise. You can see which one is active under Tools → Site Health → Info → Media Handling.</p>
+<p>Imagick usually produces good results, but on some shared servers it tries to use more processing threads or memory than the account allows. Two common fixes:</p>
+<ul>
+  <li><strong>Ask your host</strong> to check the Imagick set-up or limit its thread count for your account</li>
+  <li><strong>Test with GD instead</strong> by adding this snippet to a child theme's functions.php or a code snippets plugin</li>
+</ul>
+<pre><code>add_filter( 'wp_image_editors', function( $editors ) {
+    return array( 'WP_Image_Editor_GD', 'WP_Image_Editor_Imagick' );
+} );</code></pre>
+<p>If uploads start working, Imagick was the problem. GD doesn't support every format Imagick does, so treat this as a diagnosis and let your host fix the underlying set-up where possible. If Site Health shows neither library, the host needs to enable one.</p>
+
+<h2>Check 5: Folder permissions and disk space</h2>
+<p>If every upload fails, including tiny ones, WordPress may not be able to write to wp-content/uploads and the year and month folders inside it.</p>
+<ul>
+  <li><strong>Permissions:</strong> folders are usually 755 and files 644, owned by the account the website runs as. Never set folders to 777 to "fix" uploads, because that lets anything on the server write there. If ownership looks wrong, ask your host to correct it</li>
+  <li><strong>Disk space:</strong> a full hosting account stops uploads. Check storage in your hosting panel; old backups saved on the server are a common space hog</li>
+  <li><strong>After a migration:</strong> an old server path left in the upload settings can send files to a folder that doesn't exist on the new host</li>
+</ul>
+
+<h2>Check 6: Security rules and mod_security</h2>
+<p>Many hosts run a server firewall, often ModSecurity, that inspects requests. Occasionally it mistakes an image upload for an attack, perhaps because of the file name or data hidden inside the photo. Security plugins and CDN firewalls can do the same.</p>
+<p>To confirm it, open your browser's developer tools (F12), go to the Network tab and upload again. Find the request to <code>async-upload.php</code>: a 403, 406 or 500 status points to a block or server error. Your hosting error or firewall log may show a rule ID; send it to your host and ask them to adjust that one rule for your site, rather than switching the firewall off. Ignore old forum advice to disable security filtering in .htaccess; on modern servers it usually does nothing or causes a 500 error.</p>
+
+<h2>Check 7: Plugins and themes</h2>
+<p>Some plugins do extra work on every upload:</p>
+<ul>
+  <li>Compression plugins that send each file to an outside service and can time out</li>
+  <li>Watermark, media offload or media folder plugins</li>
+  <li>Themes and plugins that register many extra image sizes, so each upload creates more copies</li>
+</ul>
+<p>Use the Health Check plugin's troubleshooting mode, or a staging copy, to switch plugins off for your session only and test again; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find plugin conflicts</a>. Media → Add New also offers a simpler "browser uploader" link, a useful test when you suspect a script problem. For other error messages, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
+
+<p>Still seeing "HTTP error", or are heavy images slowing your pages? I fix upload and server issues as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and set up fast image handling through <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-css-changes-not-showing',
+    seoTitle: 'WordPress CSS Changes Not Showing? How to Fix It',
+    title: 'WordPress CSS Changes Not Showing? Caches, Elementor and Overrides Explained',
+    description: 'CSS or design changes not showing in WordPress? Clear browser, page and CDN caches safely, regenerate Elementor CSS, and fix child theme order and specificity.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'elementor-developer'],
+    body: `
+<p>You've added CSS in the Customizer, your child theme or Elementor, saved it, refreshed the page, and nothing has changed. Styling changes go missing more often than text changes for two reasons: stylesheets are separate files that every layer of caching likes to keep, and CSS rules compete, so a correct rule can still lose. For edits to text, images and menus, see <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>; this guide is about CSS.</p>
+
+<h2>First, find out which problem you have</h2>
+<p>There are only two possibilities: the browser never received your new CSS, or it received it and another rule won. Your browser's developer tools tell you which. Right-click the element you changed, choose Inspect and look at the Styles panel.</p>
+<table>
+  <thead><tr><th>What you see</th><th>What it means</th><th>Where to look</th></tr></thead>
+  <tbody>
+    <tr><td>Your rule isn't listed at all</td><td>An old stylesheet is being served, or your CSS isn't loading</td><td>Caches, optimisation plugins, Elementor files</td></tr>
+    <tr><td>Your rule is listed but crossed out</td><td>Another rule is overriding it</td><td>Loading order and specificity</td></tr>
+    <tr><td>Your rule is active, but the page still looks wrong</td><td>The change is needed on a different element or screen size</td><td>Your selector and media queries</td></tr>
+  </tbody>
+</table>
+<p>If the rule is missing, click the stylesheet name beside any rule to open the file and check whether your edit is in it.</p>
+
+<h2>Browser cache and version numbers</h2>
+<p>Browsers keep CSS files for a long time because servers tell them to. A hard refresh (Ctrl+F5 or Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac) fetches fresh copies, and ticking "Disable cache" in the developer tools Network tab keeps them fresh while the tools are open.</p>
+<p>Your visitors won't hard-refresh, though. WordPress adds a version number to stylesheet addresses, such as <code>style.css?ver=1.0.2</code>, and when it changes, browsers and CDNs fetch the new file. Edit a child theme stylesheet without changing its version, and returning visitors may keep the old one. Update the version the child theme uses when it loads the stylesheet (often the Version line in its header), or use the file's modification time:</p>
+<pre><code>wp_enqueue_style( 'child-style', get_stylesheet_uri(), array( 'parent-style' ), filemtime( get_stylesheet_directory() . '/style.css' ) );</code></pre>
+<p>Replace <code>parent-style</code> with the handle your parent theme actually uses.</p>
+
+<h2>Page cache, server cache and CDN cache</h2>
+<p>A cached page stores the HTML, including the link to the stylesheet. If it points to an old file or version number, visitors keep loading the old CSS. A CDN may also hold its own copy of the CSS file.</p>
+<ul>
+  <li><strong>Caching plugin:</strong> use its purge or clear all option</li>
+  <li><strong>Hosting cache:</strong> purge it from the hosting panel or the admin bar button many hosts add</li>
+  <li><strong>CDN:</strong> purge the changed file's address, or everything after a bigger redesign. Many CDNs also have a temporary development mode that bypasses the cache while you work</li>
+</ul>
+<p>Purge rather than delete: removing cache folders by hand over FTP can leave a caching plugin in a broken state. Switch development modes off when you're done.</p>
+
+<h2>Minification and combination plugins</h2>
+<p>Optimisation plugins often minify stylesheets or combine several into one, saved as new files. Your edit changes the original, but visitors get the optimised copy until it's rebuilt. These files usually have their own clear button, separate from the page cache, so clear both.</p>
+<p>Features that remove unused CSS or generate critical CSS are a special case. They build a trimmed stylesheet for each page and can strip out a new selector, especially one for a class added by JavaScript, such as an open mobile menu. If a style appears when you're logged in but not in a private window, turn CSS optimisation off briefly to confirm, then regenerate or add an exclusion for that selector.</p>
+
+<h2>Elementor's generated CSS</h2>
+<p>Elementor turns your design settings into CSS files in the uploads folder, which can go stale after updates, migrations or changes to global colours and fonts.</p>
+<ul>
+  <li>Use the option under Elementor → Tools to regenerate CSS files and data (the wording varies by version), then clear every cache</li>
+  <li>The CSS print method setting switches between external files and internal embedding. Trying internal embedding briefly is a quick way to rule out file caching</li>
+  <li>Check device views: a style set for tablet or mobile overrides the desktop value on those screens</li>
+  <li>Check the template: headers, footers and post layouts may come from the Theme Builder, not the page you edited</li>
+</ul>
+<p>If the layout broke after an Elementor update rather than after your own edit, that's a different fix; see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</p>
+
+<h2>Child theme and loading order</h2>
+<p>When two rules are equally specific, the one loaded last wins, so the order of stylesheets matters:</p>
+<ul>
+  <li><strong>Child stylesheet loading too early:</strong> it should load after the parent's. Listing the parent stylesheet as a dependency when enqueueing sets that order; see <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a></li>
+  <li><strong>Editing a file the theme doesn't load:</strong> many themes keep their real styles in a minified file in an assets folder, and style.css holds little more than the theme's details. Edits there do nothing, and edits to a parent theme are lost at the next update anyway</li>
+  <li><strong>Additional CSS:</strong> CSS added in Appearance → Customize → Additional CSS, or the Site Editor's Styles panel for block themes, prints late in the page, so it usually wins ties</li>
+  <li><strong>Block themes:</strong> styles saved in the Site Editor live in the database and can override the theme's files</li>
+</ul>
+
+<h2>Specificity, !important and small mistakes</h2>
+<p>A more specific selector beats a less specific one, wherever it loads. Page builders often use long, very specific selectors, so a short rule can lose without any warning.</p>
+<pre><code>/* Too weak: the builder's own rule wins */
+.site-header a { color: #1a1a1a; }
+
+/* More specific: scoped to a class you added */
+.site-header .main-menu a { color: #1a1a1a; }</code></pre>
+<p>Adding your own class to an element (most builders have a CSS classes field in the advanced settings) gives you a clean hook to target. Use <code>!important</code> sparingly; once several rules rely on it, every later change gets harder.</p>
+<p>Also look for small mistakes. One missing closing brace can break every rule after it, a rule inside a mobile media query won't show on desktop, and a mistyped class name matches nothing.</p>
+
+<h2>A safe order for clearing every layer</h2>
+<ol>
+  <li>Save or update the change, and confirm it's in the stylesheet or editor</li>
+  <li>Inspect the element: is your rule missing, or overridden?</li>
+  <li>Regenerate Elementor or other builder CSS</li>
+  <li>Clear the optimisation plugin's minified and combined files</li>
+  <li>Purge the page cache, then the hosting cache, then the CDN</li>
+  <li>Check in a private window and on your phone using mobile data</li>
+</ol>
+<p>Make bigger styling changes on a staging copy first, keep custom CSS in one place, and note where it lives. For error messages rather than styling problems, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
+
+<p>Want design changes made cleanly, without fighting caches and overrides? I build and fix Elementor sites as an <a href="/elementor-developer/">Elementor developer</a>, and handle ongoing tweaks through <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
 ];

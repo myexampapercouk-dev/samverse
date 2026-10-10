@@ -3849,5 +3849,26 @@
     <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
     <description>When your agency is at capacity, a development partner can take overflow WordPress work. When it makes sense, how to keep quality consistent and how to start.</description>
   </item>
+  <item>
+    <title>WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords</title>
+    <link>https://samverse.space/blog/wordpress-login-not-working-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-login-not-working-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Can't log in to WordPress? Fix login pages that keep refreshing, cookie errors, wrong site URLs, security lockouts and forgotten passwords, step by step.</description>
+  </item>
+  <item>
+    <title>&quot;HTTP Error&quot; When Uploading Images to WordPress: Causes and Fixes</title>
+    <link>https://samverse.space/blog/wordpress-http-error-image-upload-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-http-error-image-upload-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Getting &quot;HTTP error&quot; when uploading images to WordPress? Check file size, memory, Imagick vs GD, permissions, security rules and plugins, in the right order.</description>
+  </item>
+  <item>
+    <title>WordPress CSS Changes Not Showing? Caches, Elementor and Overrides Explained</title>
+    <link>https://samverse.space/blog/wordpress-css-changes-not-showing/</link>
+    <guid>https://samverse.space/blog/wordpress-css-changes-not-showing/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>CSS or design changes not showing in WordPress? Clear browser, page and CDN caches safely, regenerate Elementor CSS, and fix child theme order and specificity.</description>
+  </item>
 </channel>
 </rss>
