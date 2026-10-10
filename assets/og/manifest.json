@@ -1,5 +1,5 @@
 {
- "blog-wordpress-website-cost-india": "8ab7413f460b239529a0a1c7818d5a57412392b1",
+ "blog-wordpress-website-cost-india": "a834e0d2f9ee15213dcd205224f27e7b7a516853",
  "blog-wordpress-vs-wix-vs-shopify": "75f298307e2ecec4aa0275d01bcaf9c10b5804f4",
  "blog-why-is-my-wordpress-site-slow": "b3d1fa30e34abbcf530d1e37f76b831880b56116",
  "blog-signs-wordpress-site-hacked": "baf1373cea49a86b83166279144dcb16b987be30",
@@ -68,7 +68,7 @@
  "blog-woocommerce-seo-guide": "2f552dd20ffb24fad45c905ab119987a6a4586ac",
  "blog-get-more-google-reviews": "5eee1eadaad7f79dab433777edec0d871f84a41b",
  "blog-internal-linking-explained": "957b8fbef09a1790cea7f6462c5855b68e2c4d75",
- "blog-technical-seo-audit-wordpress": "2f275c2cae67c061a50892466e19fe807d33d3c1",
+ "blog-technical-seo-audit-wordpress": "a6117643de5f65555929958ebfa7502a7353f52b",
  "blog-choose-domain-name-business": "c66aa5a8e4d7e0928239b161567548e2bb1e0cdf",
  "blog-website-for-export-businesses": "89a04b168a02528f0cff1aaf3bd33bc9cdf0d88f",
  "blog-why-elementor-sites-slow": "9b091b134ecbd913fe91239752e63f5d18927b63",
@@ -156,7 +156,7 @@
  "blog-xml-sitemaps-explained": "9de23b1477a0bf5c1312dcb2c6502c0105385cdb",
  "blog-robots-txt-explained": "e431a61227c2a78ee6fe0ed35a8a446f2fda65d5",
  "blog-canonical-tags-explained": "b67169a6fbf58ccde39139fcddce91c336b4f5b5",
- "blog-duplicate-content-explained": "d7f96c9a6f628a1d5ebf16538ef1e11aed9a4286",
+ "blog-duplicate-content-explained": "b037314d4ffb649f9c281b5362b0f027e1de0e6e",
  "blog-301-vs-302-redirects": "83a428062bda849fb16dc7e349dbef97958b3651",
  "blog-keep-visitors-engaged-website": "81882d91cf6fa39669e7eb3ff352985db4e4e6b7",
  "page-wordpress-developer-for-agencies": "dc40d556d6627a7c7133372f7e99a806297be3db",
@@ -283,7 +283,7 @@
  "blog-website-bug-vs-change-request": "e6491162a8c6b76b3bd0ae1840062ddf498c39df",
  "blog-outsource-wordpress-development-india": "fba69ee109c844a6b923d293c1f6044b9ddbdcd1",
  "blog-web-designer-vs-web-developer": "161f336a22bcc22a3396cb0e7315c707cb8a4d59",
- "blog-what-does-wordpress-developer-do": "be15e658b8dcd71d28adbd8b3708f2acdc5813cb",
+ "blog-what-does-wordpress-developer-do": "0d2ce0495fd82ffc3a00175abe61c33e311bb232",
  "blog-elementor-pro-worth-it": "59fb263767349f6642692604d3ca0b46f456705a",
  "blog-best-theme-for-elementor": "c9b5e2df0e57a2b24bdb8a249930860d29e2236e",
  "blog-figma-to-wordpress-approaches": "9f8a43a944326ef5ce185d4c2b211f9cdecfc1c9",
@@ -354,7 +354,7 @@
  "blog-website-for-pharma-franchise-companies": "9e40305891272eb878774263ab9e313de177c3df",
  "blog-website-for-yoga-studios-teachers": "a2c49a8af59c22166512c0fc8b87fbb75b2de035",
  "blog-woocommerce-maintenance-checklist": "c11054625059e5065536547c4bea37ffd8cbd529",
- "blog-woocommerce-speed-optimization": "9df44143e3ebc25cedf6be0a044569dd104fd9b6",
+ "blog-woocommerce-speed-optimization": "656d831b67f57d52a3eef057b5c01cdd0a024cb0",
  "blog-woocommerce-security-checklist": "28236ba12ab805de83c350812ea99401218bf2a3",
  "blog-website-for-car-wash-detailing": "e1ffe32e2c657e0ac4911ba97714c2b4be1dc739",
  "blog-website-for-pet-shops-grooming": "559d712e5883abb4a74597c6d32f2a1bb32e18c6",
@@ -590,5 +590,8 @@
  "blog-agency-overflow-wordpress-work": "cedac2487a08662e637f9bf4d424dd58a881eb50",
  "blog-wordpress-login-not-working-fix": "0c9de8783e248284b06f1e39caf641b12e53b269",
  "blog-wordpress-http-error-image-upload-fix": "7566ab909bd446bee3973c85b5a8e84ffc590143",
- "blog-wordpress-css-changes-not-showing": "b8dae5b6cd7f529354c425c27b83283ee94c63d9"
+ "blog-wordpress-css-changes-not-showing": "b8dae5b6cd7f529354c425c27b83283ee94c63d9",
+ "blog-white-label-elementor-development": "eb57672780a4a4c5fbd9e8541aa91826d9100d84",
+ "blog-wordpress-reseller-for-marketing-agencies": "5cd85a2fe4c4fe32d9a4f05cc5509de063d263c0",
+ "blog-agency-development-retainer": "f108cfad0ba05068daf56fbd448e17547b39d449"
 }

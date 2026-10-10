@@ -671,6 +671,10 @@ const LINKS = [
   ['regain-website-access-old-developer', '<h2>Step 5: Secure everything</h2>', '<p>If the reset email never arrives, or the login page keeps refreshing or locking you out, work through <a href="/blog/wordpress-login-not-working-fix/">how to fix WordPress login problems</a>.</p>\n\n'],
   ['image-optimization-wordpress', '<h2>2. Compress</h2>', '<p>Resizing first also prevents a common upload problem: very large photos can make WordPress fail with a vague message, covered in <a href="/blog/wordpress-http-error-image-upload-fix/">fixing the HTTP error when uploading images</a>.</p>\n\n'],
   ['wordpress-changes-not-showing', '<h2>7. Editing the wrong place</h2>', '<p>If text updates appear but styling changes don\'t, the cause is often specificity, loading order or optimised CSS files; see <a href="/blog/wordpress-css-changes-not-showing/">WordPress CSS changes not showing</a>.</p>\n\n'],
+  // Agent 85
+  ['figma-to-wordpress-approaches', '<h2>Option 2: Block theme and custom blocks (Gutenberg)</h2>', '<p>Agencies that design in-house and hand the build to a partner can see how <a href="/blog/white-label-elementor-development/">white-label Elementor development</a> works, from global styles to what clients are allowed to edit.</p>\n\n'],
+  ['website-for-digital-marketing-agencies', '<h2>Honest case studies beat logo walls</h2>', '<p>If clients ask for web design or maintenance your team doesn\'t do in-house, you can still offer it; see <a href="/blog/wordpress-reseller-for-marketing-agencies/">how marketing agencies can resell WordPress development</a> through a partner.</p>\n\n'],
+  ['fixed-price-vs-hourly-website-projects', '<h2>Avoiding scope creep</h2>', '<p>Agencies that send a developer regular work each month can read how an <a href="/blog/agency-development-retainer/">agency development retainer</a> handles request queues, priorities and unused hours.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

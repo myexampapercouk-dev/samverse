@@ -14895,6 +14895,8 @@ wp plugin verify-checksums --all</code></pre>
 </ul>
 <p><strong>Best for:</strong> maintenance, regular updates, agencies with steady work; see <a href="/blog/website-maintenance-vs-management/">maintenance vs management</a>.</p>
 
+<p>Agencies that send a developer regular work each month can read how an <a href="/blog/agency-development-retainer/">agency development retainer</a> handles request queues, priorities and unused hours.</p>
+
 <h2>Avoiding scope creep</h2>
 <ul>
   <li>Write a detailed brief and scope; see the <a href="/blog/website-brief-template/">brief template</a></li>
@@ -15517,6 +15519,8 @@ wp plugin verify-checksums --all</code></pre>
   <li><strong>Cons:</strong> heavier pages if not built carefully, some pixel-perfect details take workarounds, editing freedom can let clients break layouts</li>
   <li><strong>Best for:</strong> marketing sites where clients want to edit layouts themselves</li>
 </ul>
+
+<p>Agencies that design in-house and hand the build to a partner can see how <a href="/blog/white-label-elementor-development/">white-label Elementor development</a> works, from global styles to what clients are allowed to edit.</p>
 
 <h2>Option 2: Block theme and custom blocks (Gutenberg)</h2>
 <ul>
@@ -26982,6 +26986,8 @@ Template: astra
   <li>How you measure progress, and how pricing works (a starting point, a range, or what affects the quote)</li>
 </ul>
 <p>Stating clearly that ad spend is separate from your management fee avoids awkward conversations later. For structure and copy tips, see <a href="/blog/write-service-pages-that-convert/">how to write service pages that convert</a>.</p>
+
+<p>If clients ask for web design or maintenance your team doesn't do in-house, you can still offer it; see <a href="/blog/wordpress-reseller-for-marketing-agencies/">how marketing agencies can resell WordPress development</a> through a partner.</p>
 
 <h2>Honest case studies beat logo walls</h2>
 <p>Business owners have seen plenty of screenshots claiming huge returns. What persuades a sceptical prospect is context: the type of client, the starting point, what you actually did, what changed and over what period, and what you learned when something didn't work.</p>
@@ -40904,6 +40910,255 @@ wp user reset-password &lt;username&gt;</code></pre>
 <p>Make bigger styling changes on a staging copy first, keep custom CSS in one place, and note where it lives. For error messages rather than styling problems, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
 
 <p>Want design changes made cleanly, without fighting caches and overrides? I build and fix Elementor sites as an <a href="/elementor-developer/">Elementor developer</a>, and handle ongoing tweaks through <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'white-label-elementor-development',
+    seoTitle: 'White-Label Elementor Development for Design Agencies',
+    title: 'White-Label Elementor Development for Design Agencies: Builds Clients Can Edit',
+    description: 'How design agencies can hand Elementor builds to a white-label partner: global styles, templates, client editing permissions, speed care and handover training.',
+    date: '2026-10-11',
+    category: 'Agencies',
+    related: ['wordpress-developer-for-agencies', 'elementor-developer'],
+    body: `
+<p>Design agencies are usually strongest at the part clients see first: the brand, the layouts and the visual story. Turning those designs into a WordPress site the client can edit is a different job, and Elementor is the builder many clients ask for by name. A white-label Elementor partner builds the site behind your brand while your agency keeps the design and the client. For the model in general, see <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development for agencies</a>; this guide covers what matters when the build is in Elementor.</p>
+
+<h2>Who does what on a white-label Elementor build</h2>
+<table>
+  <thead><tr><th>Area</th><th>Your agency</th><th>The Elementor partner</th></tr></thead>
+  <tbody>
+    <tr><td>Design</td><td>Approved Figma or XD files, with mobile layouts and interactive states</td><td>Questions on anything unclear, asked before building</td></tr>
+    <tr><td>Site structure</td><td>Sitemap, menus and the pages the client will add later</td><td>Theme Builder templates, page layouts and reusable sections</td></tr>
+    <tr><td>Design system</td><td>Colours, type scale, spacing and button styles in the design file</td><td>Global colours, global fonts and site settings set up to match</td></tr>
+    <tr><td>Client editing</td><td>What the client should and shouldn't change</td><td>User roles, protected templates and a tidy page structure</td></tr>
+    <tr><td>Client contact</td><td>All calls, approvals and training sessions</td><td>None, unless you arrange it under your agency's name</td></tr>
+  </tbody>
+</table>
+<p>The cleaner the design file, the closer the build. Share the <a href="/blog/figma-to-wordpress-designer-guide/">Figma to WordPress handoff guide</a> with your designers so styles and components are set up in a way that maps neatly onto Elementor.</p>
+
+<h2>Turning agency designs into editable Elementor pages</h2>
+<p>A build can match the design and still be painful to edit. The difference is in the structure:</p>
+<ul>
+  <li><strong>Containers, not deep nesting:</strong> layouts built with Elementor's flexbox containers, kept as shallow as the design allows, are easier to edit and lighter to load</li>
+  <li><strong>Theme Builder for repeated parts:</strong> header, footer, blog post, archive, search and 404 templates built once with Elementor Pro, so nobody edits the same footer on twenty pages</li>
+  <li><strong>Dynamic content where things repeat:</strong> team members, projects, locations or services pulled from posts or custom fields, so adding one doesn't mean copying a whole section</li>
+  <li><strong>Every breakpoint checked:</strong> tablet and mobile layouts adjusted deliberately, not left to whatever stacks by default</li>
+  <li><strong>Clear naming:</strong> containers labelled in the Navigator, such as "Hero" or "Testimonials", so your team and the client can find their way around</li>
+</ul>
+
+<h2>Global styles and templates</h2>
+<p>Global settings keep an Elementor site consistent as the client edits it. Before building pages, the partner should set up:</p>
+<ul>
+  <li><strong>Global colours</strong> named after their role, such as primary, accent, text and background, rather than their colour codes</li>
+  <li><strong>Global fonts</strong> for headings, body text and buttons, matching the type scale in the design</li>
+  <li><strong>Site settings</strong> for buttons, form fields, content width and spacing</li>
+  <li><strong>Saved templates</strong> for sections the client will reuse, such as a call-to-action band, a testimonial row or a service page layout</li>
+</ul>
+<p>Widgets should use these globals rather than one-off values typed into each element. Then a brand colour change takes minutes instead of a page-by-page hunt. Elementor keeps adding design-system features, so agree which ones the build will rely on, especially if your team maintains other Elementor sites.</p>
+
+<h2>Editing permissions for clients</h2>
+<p>Elementor's freedom is why clients want it, and why they sometimes break layouts. Agree which parts the client will edit, then set the site up to match:</p>
+<ul>
+  <li><strong>Separate accounts:</strong> the client's team gets its own logins, often with the Editor role for day-to-day content, while administrator access stays with whoever maintains the site</li>
+  <li><strong>Content-only editing:</strong> Elementor Pro's Role Manager can restrict a role to editing content rather than layout and styling; check what your version and licence include</li>
+  <li><strong>Templates kept out of reach:</strong> headers, footers and global settings changed only by your team or the partner</li>
+  <li><strong>Repeated content outside the builder:</strong> blog posts, team members or projects added through WordPress's own editor and simple fields, without opening Elementor at all</li>
+  <li><strong>Approved layouts to start from:</strong> when the client needs a new service or landing page, they copy an existing template instead of building from a blank page</li>
+</ul>
+<p>Put the agreed editing rules in your handover notes, so the client knows what's theirs to change.</p>
+
+<h2>Keeping Elementor sites fast</h2>
+<p>Elementor sites can be quick, but they slow down when builds take shortcuts. A partner who cares about performance will:</p>
+<ul>
+  <li>Use a lightweight theme underneath and as few add-on packs as possible</li>
+  <li>Limit fonts and font weights to the ones in the design, and avoid loading whole icon libraries for a handful of icons</li>
+  <li>Resize and compress images, and avoid heavy background videos on mobile</li>
+  <li>Keep animations for the moments that matter rather than every section</li>
+  <li>Review Elementor's built-in performance settings and set up caching that suits the client's hosting</li>
+  <li>Test key pages in PageSpeed Insights before your team reviews the site</li>
+</ul>
+<p>The common causes and fixes are covered in <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>. After launch, Elementor and Elementor Pro updates should be tested on staging first, because an update can occasionally change how a layout renders. Building that into your <a href="/blog/agency-wordpress-care-plans/">white-label care plans</a> keeps the site as fast and stable as it was at handover.</p>
+
+<h2>Handover training for your client</h2>
+<p>Good training turns a stream of "how do I…" emails into a client who edits confidently. Plan it as part of the project:</p>
+<ul>
+  <li><strong>A short recorded walkthrough</strong> of the client's own site: editing text and images, adding a blog post, creating a page from a template and updating menus. The partner can record it without any names or branding, or prepare notes for your team to record it</li>
+  <li><strong>A one-page editing guide</strong> under your agency's brand, listing what the client can safely change and what to send to you</li>
+  <li><strong>A live session</strong> run by your agency, with the partner briefing your account manager beforehand on anything tricky</li>
+  <li><strong>Licence and access details:</strong> who holds the Elementor Pro licence, when it renews, and which accounts belong to the client</li>
+  <li><strong>A route for questions:</strong> requests come to your agency, and you pass anything technical to the partner</li>
+</ul>
+<p>Check in a few weeks after launch: the client's first edits show whether the setup and training worked.</p>
+
+<h2>Testing a new partner</h2>
+<p>Start with something contained, such as a landing page or a few templates. Then look inside the build, not just at the front end: the Navigator structure, whether globals are used and how easily your own team can make a change.</p>
+
+<p>I build Elementor sites from agency designs, white-label and under NDA, with global styles, client-friendly editing and handover notes your team can brand as its own. See <a href="/elementor-developer/">Elementor development</a> to send me your next design for a quote.</p>
+`,
+  },
+  {
+    slug: 'wordpress-reseller-for-marketing-agencies',
+    seoTitle: 'How Marketing Agencies Can Resell WordPress Development',
+    title: 'Reselling WordPress Development and Maintenance: A Guide for SEO and Marketing Agencies',
+    description: 'How SEO and marketing agencies can resell WordPress builds and maintenance through a partner: packaging, scoping, client contact, reporting and healthy margins.',
+    date: '2026-10-11',
+    category: 'Agencies',
+    related: ['wordpress-developer-for-agencies', 'wordpress-maintenance'],
+    body: `
+<p>Clients who pay an SEO or marketing agency every month soon ask for website work too: a faster site, landing pages for a campaign, technical fixes from an audit or a full redesign. Without developers in-house, you can send them elsewhere and risk losing part of the relationship, or you can resell WordPress development and maintenance through a partner who works behind your brand. This guide covers how to package, scope and manage that work so it strengthens client relationships and stays profitable. For the white-label model itself, see <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development for agencies</a>.</p>
+
+<h2>Why website work fits alongside SEO and ads</h2>
+<ul>
+  <li><strong>Your recommendations get done:</strong> audit findings such as slow pages, broken redirects or missing schema stop sitting in the client's to-do list</li>
+  <li><strong>Campaigns launch on time:</strong> landing pages are ready when the ads are, built to your brief</li>
+  <li><strong>Tracking stays reliable:</strong> forms, thank-you pages and conversion events are set up and checked with your reporting in mind</li>
+  <li><strong>One point of contact:</strong> the client deals with one agency for marketing and the website, which many prefer</li>
+  <li><strong>Fewer surprises:</strong> no outside developer changing the site in ways that affect rankings or tracking without telling you</li>
+</ul>
+
+<h2>Packaging what you sell</h2>
+<p>Clients buy more easily from a short menu than from an open offer of "website services". Most marketing agencies start with a few packages that connect to work they already do:</p>
+<table>
+  <thead><tr><th>Package</th><th>What it covers</th><th>Good fit for</th></tr></thead>
+  <tbody>
+    <tr><td>Campaign landing pages</td><td>Pages built from your brief or design, with forms, tracking and speed checks</td><td>Clients running Google or Meta ads</td></tr>
+    <tr><td>SEO implementation</td><td>Technical fixes from your audits: speed, redirects, schema, headings and indexing issues</td><td>SEO clients whose sites need developer help</td></tr>
+    <tr><td>Builds and redesigns</td><td>New WordPress sites or redesigns, quoted per project</td><td>Clients whose current site holds back their marketing</td></tr>
+    <tr><td>Maintenance and care</td><td>Updates, backups, security, uptime monitoring and small edits each month</td><td>Most clients with a WordPress site</td></tr>
+  </tbody>
+</table>
+<p>Maintenance is often the easiest to add, because it's recurring and protects the work you're already doing; <a href="/blog/agency-wordpress-care-plans/">white-label care plans</a> covers what to include and how to structure tiers. Name packages in client language, but define each one's deliverables in writing.</p>
+
+<h2>Scoping before you quote</h2>
+<p>The quickest way to lose money on resold work is to quote the client first and ask the partner second. Reverse the order:</p>
+<ol>
+  <li>Gather the brief: pages, features, content, integrations, hosting and deadline</li>
+  <li>Send it to your partner and get a written scope with exclusions, revision rounds and a timeline</li>
+  <li>Ask about anything likely to grow, such as content entry, migrations or plugin licences</li>
+  <li>Build your proposal on that scope, adding your own time for project management, SEO and account work</li>
+  <li>Make sure the client contract mirrors the partner's scope, so the client isn't promised more than the partner has agreed to deliver</li>
+</ol>
+<p>For redesigns, list redirects and SEO checks in the scope explicitly. A marketing agency is the last business that should let a relaunch cost a client its rankings.</p>
+
+<h2>Who talks to the client</h2>
+<p>In most reseller arrangements, the client deals only with your agency. In practice:</p>
+<ul>
+  <li>Your account manager is the client's single contact for website work as well as marketing</li>
+  <li>The partner sends questions and updates to your team, and you pass on what the client needs to see</li>
+  <li>Client feedback is gathered into one consolidated list per review round before it reaches the partner</li>
+  <li>If a technical call would help, the partner joins as part of your team, agreed beforehand</li>
+  <li>An NDA with a non-solicitation clause confirms the partner won't contact or take work from your clients</li>
+</ul>
+<p>Agree response times with the partner first, and never promise the client anything faster.</p>
+
+<h2>Reporting website work with your marketing results</h2>
+<p>You probably already send a monthly marketing report. Add a short website section rather than a separate document:</p>
+<ul>
+  <li>Tasks completed, linked to the goals they support, such as "landing page for the festive campaign" or "redirect errors from the audit fixed"</li>
+  <li>Updates, backups, uptime and security status for clients on maintenance</li>
+  <li>Speed checks on key pages, where relevant</li>
+  <li>What's planned next, and anything waiting on the client</li>
+</ul>
+<p>The partner can draft the website section each month; your team reviews it, adds context and sends it under your brand. Keep it as honest as the rest of the report, in the spirit of <a href="/blog/seo-reporting-what-to-track/">monthly reports without vanity metrics</a>.</p>
+
+<h2>Keeping margins healthy with clear scope</h2>
+<p>Resold website work rarely loses money on the main job. It loses money on everything around it:</p>
+<ul>
+  <li><strong>Unscoped extras:</strong> "can you also add…" requests absorbed instead of quoted</li>
+  <li><strong>Open-ended revisions:</strong> no limit on review rounds in either contract</li>
+  <li><strong>Content delays:</strong> a project stalled waiting for copy, with your team and the partner on hold</li>
+  <li><strong>Rush jobs:</strong> deadlines agreed with the client before checking the partner's availability</li>
+  <li><strong>Vague small edits:</strong> a maintenance allowance with no definition of what counts</li>
+</ul>
+<p>Most of these are solved by agreeing a change process once and using it every time: new requests are logged, the partner estimates them, the client approves, and only then does work start. Explaining <a href="/blog/website-bug-vs-change-request/">the difference between a bug and a change request</a> to clients early makes those conversations easier. Every few months, review each client's website work and adjust packages that regularly take longer than planned.</p>
+
+<h2>Getting started</h2>
+<p>Begin with clients who already need website help, such as an SEO client with a slow site or an ads client waiting on landing pages. Run one or two small projects with your partner, refine your scope template and report format, then add website packages to your proposals and service pages.</p>
+
+<p>I work white-label for SEO and marketing agencies on landing pages, SEO fixes, WordPress builds and monthly maintenance, behind your brand and without contacting your clients. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> to talk through what you would like to resell.</p>
+`,
+  },
+  {
+    slug: 'agency-development-retainer',
+    seoTitle: 'Agency Development Retainers With a WordPress Partner',
+    title: 'Agency Development Retainers: How a Monthly Arrangement With a WordPress Partner Works',
+    description: 'How a monthly development retainer between an agency and a WordPress partner works: what it covers, hours vs scope, request queues, unused time and reviews.',
+    date: '2026-10-11',
+    category: 'Agencies',
+    related: ['wordpress-developer-for-agencies', 'hire-wordpress-developer'],
+    body: `
+<p>When an agency sends a WordPress partner work every week, quoting each task separately starts to slow everyone down. A monthly development retainer replaces that with an agreed amount of the partner's time, or an agreed scope, each month, so requests can start without a fresh quote and the partner keeps capacity free for you. This guide covers how such an arrangement usually works between an agency and its partner. It's different from a client-facing <a href="/blog/agency-wordpress-care-plans/">white-label care plan</a>, which is a product you sell, and from <a href="/blog/agency-overflow-wordpress-work/">occasional overflow work</a>, which is quoted project by project.</p>
+
+<h2>When a retainer makes sense</h2>
+<ul>
+  <li>Requests arrive every week: content changes, landing pages, fixes and small features across several client sites</li>
+  <li>You resell maintenance, and the technical work behind it needs a dependable home</li>
+  <li>Quoting and approving each small task takes longer than doing it</li>
+  <li>You want a partner who already knows your client sites, standards and tools</li>
+</ul>
+<p>A retainer fits less well when work is irregular or mostly large one-off builds. Those are usually better quoted per project, with the retainer covering the smaller work around them.</p>
+
+<h2>What a retainer usually covers</h2>
+<p>Write down what the retainer is for, so both sides know what goes into the queue and what gets quoted separately.</p>
+<table>
+  <thead><tr><th>Usually included</th><th>Usually quoted or agreed separately</th></tr></thead>
+  <tbody>
+    <tr><td>Content and layout changes on client sites</td><td>New website builds and redesigns</td></tr>
+    <tr><td>Landing pages and extra templates from approved designs</td><td>Design and copywriting</td></tr>
+    <tr><td>Bug fixes and plugin conflicts</td><td>Hosting fees and premium plugin licences</td></tr>
+    <tr><td>Maintenance tasks behind your care plans</td><td>Out-of-hours emergency cover, unless specifically agreed</td></tr>
+    <tr><td>Speed and SEO fixes from your audits</td><td>Large custom features that need their own scope</td></tr>
+  </tbody>
+</table>
+
+<h2>Hours-based or scope-based</h2>
+<p>Retainers generally take one of two shapes, and some agencies combine them.</p>
+<table>
+  <thead><tr><th></th><th>Hours-based</th><th>Scope-based</th></tr></thead>
+  <tbody>
+    <tr><td>How it works</td><td>A set amount of the partner's time each month, logged against tasks</td><td>An agreed list of task types or deliverables each month, without tracking time per task</td></tr>
+    <tr><td>Works well when</td><td>Requests vary a lot in size and type</td><td>The work is predictable, such as maintenance across a known set of sites</td></tr>
+    <tr><td>Watch out for</td><td>Time logs too vague to check against client sites</td><td>Disagreements over what fits within the agreed scope</td></tr>
+  </tbody>
+</table>
+<p>Either way, agree what happens when a request turns out bigger than expected: the partner estimates it and waits for your approval before it uses up the month. The trade-offs are similar to those in <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly billing</a>.</p>
+
+<h2>Request queues and priorities</h2>
+<p>A retainer runs smoothly only if requests arrive in one place, in a consistent format, in a clear order:</p>
+<ul>
+  <li><strong>One queue:</strong> a shared board or ticket system, not requests scattered across email, chat and calls</li>
+  <li><strong>A request template:</strong> client site, page URL, what's needed, screenshots or designs, and any deadline</li>
+  <li><strong>One person setting priorities:</strong> usually your project manager, so the partner never has to choose between two account managers' "urgent" tasks</li>
+  <li><strong>Priority levels:</strong> for example urgent (site down or checkout broken), high (this week), normal and low</li>
+  <li><strong>Estimates for bigger tasks</strong> before work starts, so one request doesn't quietly use the whole month</li>
+  <li><strong>A short weekly check:</strong> what's done, what's next and what's waiting on your team or the client</li>
+</ul>
+<p>If your partner works in another time zone, agree response times by severity and an emergency path; see <a href="/blog/offshore-wordpress-developer-time-zones/">working with an offshore WordPress developer across time zones</a>.</p>
+
+<h2>Rollover and unused time</h2>
+<p>Quiet months happen, so decide in advance what happens to time or capacity you don't use. Common approaches:</p>
+<ul>
+  <li><strong>No rollover:</strong> the partner kept the time free for you, so unused time lapses. Simple, but it can feel wasteful in a slow month.</li>
+  <li><strong>Limited rollover:</strong> unused time carries into the next month only, or up to an agreed cap, then lapses</li>
+  <li><strong>A quiet-month backlog:</strong> a list of useful non-urgent work, such as speed improvements, plugin clean-ups or your agency's own website, so spare time is put to good use</li>
+</ul>
+<p>Agree overage too. When a busy month needs more, extra work should be approved in advance and either billed on agreed terms or scheduled into the next month. Whatever you choose, put it in writing, because unclear rollover rules cause more friction than almost anything else in a retainer.</p>
+
+<h2>Reviewing the arrangement</h2>
+<p>A monthly summary from the partner keeps things transparent: tasks completed per client site, time or scope used, what's queued and any recurring problems worth fixing at the source. Every few months, step back and ask:</p>
+<ul>
+  <li>Is the retainer the right size, or are you regularly over or well under?</li>
+  <li>Are the right kinds of requests going through it, or would some be better quoted as projects?</li>
+  <li>Are turnaround and response times being met on both sides?</li>
+  <li>Is quality consistent, or do the same issues keep coming back?</li>
+  <li>Does the work map cleanly onto what you bill your clients?</li>
+</ul>
+<p>Agree a notice period as well, and how the arrangement ends: open tasks finished or handed back, documentation shared and the partner's access to client sites removed.</p>
+
+<h2>Setting one up</h2>
+<p>Most retainers work best after a few projects together, once you know the partner's quality and communication. Then put the scope, hours or deliverables, priorities, response times, rollover and overage rules, billing, confidentiality and notice into one short written agreement, and review it after the first couple of months.</p>
+
+<p>If your agency sends WordPress work every month, I can work as your development partner behind your brand, and we can talk through whether per-project quotes or a monthly arrangement suits your volume. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for the ways we can work together.</p>
 `,
   },
 ];
