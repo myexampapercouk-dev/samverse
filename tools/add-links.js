@@ -651,6 +651,10 @@ const LINKS = [
   ['common-wordpress-errors-fixes', '<h2>Browser security warnings</h2>', '<p>Step-by-step guide: <a href="/blog/wordpress-stuck-in-maintenance-mode/">how to fix WordPress stuck in maintenance mode</a>.</p>\n\n'],
   ['wordpress-memory-limit-errors', '<h2>When hosting is the real problem</h2>', '<p>If WordPress rejects a file before it even uploads, with a message that it exceeds the maximum upload size, that\'s a different PHP limit; see <a href="/blog/increase-wordpress-upload-size-limit/">how to increase the WordPress upload size limit</a>.</p>\n\n'],
   ['helpful-404-pages', '<h2>After redesigns and migrations</h2>', '<p>If every page or post on your site suddenly shows a 404 while the homepage still works, the cause is usually technical rather than missing pages; see <a href="/blog/wordpress-pages-404-permalinks-fix/">how to fix WordPress pages showing 404</a>.</p>\n\n'],
+  // Agent 80
+  ['industrial-website-product-catalogue', '<h2>Structure your categories like buyers think</h2>', '<p>Suppliers of restaurant and hotel kitchen equipment face the same choice, plus layout and service needs; see <a href="/blog/website-for-commercial-kitchen-equipment-suppliers/">websites for commercial kitchen equipment suppliers</a>.</p>\n\n'],
+  ['website-for-auto-parts-dealers', '<h2>Organise the catalogue the way people search</h2>', '<p>If your shop also fits seat covers, dashcams or stereos, see <a href="/blog/website-for-car-accessories-shops/">websites for car accessories shops</a> for installation booking and shop-by-car pages.</p>\n\n'],
+  ['website-for-event-organisers-ticketing', '<h2>Choosing how to sell tickets</h2>', '<p>Venues that sell time slots every day rather than one-off events, such as escape rooms and gaming zones, need a different setup; see <a href="/blog/website-for-escape-room-gaming-zones/">websites for escape rooms and gaming zones</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
