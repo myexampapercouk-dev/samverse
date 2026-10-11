@@ -687,6 +687,10 @@ const LINKS = [
   ['wordpress-firewall-waf-explained', '<h2>Firewalls don\'t replace the basics</h2>', '<p>Even a well-tuned firewall occasionally blocks a real customer, or you, by mistake, usually with a "403 Forbidden" page; see <a href="/blog/wordpress-403-forbidden-error-fix/">how to fix a 403 Forbidden error on WordPress</a> to find which rule fired and lift it safely.</p>\n\n'],
   ['common-wordpress-errors-fixes', '<h2>"Error establishing a database connection"</h2>', '<p>Step-by-step guide: <a href="/blog/wordpress-500-internal-server-error-fix/">how to fix a 500 Internal Server Error</a>, including how to read the error log and enable WP_DEBUG_LOG safely.</p>\n\n'],
   ['shared-vs-vps-vs-managed-wordpress-hosting', '<h2>Moving to a new type of hosting</h2>', '<p>Frequent 502 Bad Gateway or 504 Gateway Timeout errors when traffic picks up can be another sign; <a href="/blog/wordpress-502-504-gateway-timeout-fix/">fixing 502 and 504 errors on WordPress</a> explains how to tell whether the plan or the site is the bottleneck.</p>\n\n'],
+  // Agent 89
+  ['what-is-a-cdn', '<h2>A CDN isn\'t a cure-all</h2>', '<p>If you\'re putting a WordPress site behind Cloudflare\'s free plan, follow <a href="/blog/cloudflare-wordpress-setup-guide/">our Cloudflare setup guide for WordPress</a> to pick the right SSL mode, cache exclusions and email records before you change nameservers.</p>\n\n'],
+  ['search-console-page-indexing-errors', '<h2>Fixing, validating and checking monthly</h2>', '<p>To find which of your own pages still link to those missing URLs, and to decide between updating the link, a redirect or a 410, see <a href="/blog/find-fix-broken-links-wordpress/">how to find and fix broken links on WordPress</a>.</p>\n\n'],
+  ['improve-wordpress-site-search', '<h2>Improve relevance first</h2>', '<p>If your search box returns nothing at all, shows the same results for every search or takes ages to respond, that\'s usually a fault rather than a limit; see <a href="/blog/wordpress-search-not-working-fix/">how to fix WordPress search that isn\'t working</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

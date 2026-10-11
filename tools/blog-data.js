@@ -7613,6 +7613,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>Test the site, forms and checkout thoroughly afterwards</li>
 </ul>
 
+<p>If you're putting a WordPress site behind Cloudflare's free plan, follow <a href="/blog/cloudflare-wordpress-setup-guide/">our Cloudflare setup guide for WordPress</a> to pick the right SSL mode, cache exclusions and email records before you change nameservers.</p>
+
 <h2>A CDN isn't a cure-all</h2>
 <p>A CDN won't fix a slow server response, a bloated theme or huge images. Optimize those first; see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> and <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
 
@@ -23189,6 +23191,8 @@ Template: astra
   <li><strong>Redirect error:</strong> a redirect chain that's too long, a loop, or a redirect to a broken URL. Often caused by conflicting rules in a redirect plugin, .htaccess and a CDN.</li>
 </ul>
 
+<p>To find which of your own pages still link to those missing URLs, and to decide between updating the link, a redirect or a 410, see <a href="/blog/find-fix-broken-links-wordpress/">how to find and fix broken links on WordPress</a>.</p>
+
 <h2>Fixing, validating and checking monthly</h2>
 <ol>
   <li>Fix the cause on your site first</li>
@@ -28290,6 +28294,8 @@ Template: astra
   <li><strong>Plain results pages</strong> with no product images, prices or filters</li>
 </ul>
 <p>WooCommerce product search is built on the same system, so online stores feel these limits most.</p>
+
+<p>If your search box returns nothing at all, shows the same results for every search or takes ages to respond, that's usually a fault rather than a limit; see <a href="/blog/wordpress-search-not-working-fix/">how to fix WordPress search that isn't working</a>.</p>
 
 <h2>Improve relevance first</h2>
 <p>Before adding plugins, tidy up what gets searched and how it's described:</p>
@@ -42475,6 +42481,239 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Their answers usually show whether the fix belongs in the site or the hosting. If the error turns out to be a plain 500, <a href="/blog/wordpress-500-internal-server-error-fix/">the 500 error guide</a> explains how to read those logs.</p>
 
 <p>If gateway errors keep coming back at the worst moments, I can find what's tying up your server and fix it. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+`,
+  },
+  {
+    slug: 'cloudflare-wordpress-setup-guide',
+    seoTitle: 'Cloudflare Free Plan for WordPress: A Safe Setup Guide',
+    title: 'Setting Up Cloudflare\'s Free Plan on WordPress: SSL, Caching and Common Problems',
+    description: 'Set up Cloudflare\'s free plan on WordPress safely: nameservers, the right SSL mode, cache exclusions, APO, security settings and fixes for 52x errors.',
+    date: '2026-10-11',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-maintenance'],
+    body: `
+<p>Cloudflare's free plan puts a global network between your visitors and your hosting. Set up well, it takes load off your server, serves files from nearby locations and filters junk traffic. Set up in a hurry, it causes redirect loops and lost email. Cloudflare changes its dashboard and plan features from time to time, so treat menu names here as a guide and check its current documentation as you go.</p>
+
+<h2>Full setup or partial setup?</h2>
+<ul>
+<li><strong>Full setup (changing nameservers):</strong> Cloudflare becomes your DNS provider. You copy your DNS records into Cloudflare, then change the nameservers at your registrar to the two Cloudflare gives you. This is the normal route on the free plan.</li>
+<li><strong>Partial (CNAME) setup:</strong> your DNS stays where it is and only chosen hostnames point to Cloudflare. At the time of writing this is limited to higher paid plans, so check before planning around it.</li>
+</ul>
+<p>If your host offers its own Cloudflare integration, read its guide first to avoid two conflicting setups. Each DNS record in Cloudflare is either <strong>proxied</strong> (orange cloud: traffic passes through Cloudflare) or <strong>DNS only</strong> (grey cloud). Website records are normally proxied. Mail records must not be.</p>
+
+<h2>Moving your DNS without breaking email</h2>
+<p>Cloudflare scans your existing DNS records when you add a site, but it can miss some. Compare its list line by line with your current zone before changing nameservers, especially:</p>
+<ul>
+<li><strong>MX records</strong> for Google Workspace, Microsoft 365, Zoho or your host's mail</li>
+<li><strong>TXT records</strong> for SPF, DKIM, DMARC and site verifications</li>
+<li><strong>Mail hostnames</strong> such as mail, webmail or smtp, which should be DNS only</li>
+<li><strong>Subdomains</strong> for a shop, booking system, staging site or app</li>
+</ul>
+<p>If DNSSEC is on at your registrar, turn it off before changing nameservers and re-enable it through Cloudflare once the zone is active; old DNSSEC settings can stop the domain resolving. Nameserver changes take a while to spread, so switch at a quiet time and leave the old zone untouched until everything works.</p>
+
+<h2>SSL/TLS modes, and why Flexible causes loops</h2>
+<p>Cloudflare encrypts the connection between the visitor and Cloudflare. The SSL/TLS mode decides what happens on the second leg, between Cloudflare and your hosting:</p>
+<table>
+<thead><tr><th>Mode</th><th>Cloudflare to your server</th><th>Use it?</th></tr></thead>
+<tbody>
+<tr><td>Flexible</td><td>Plain HTTP, unencrypted</td><td>Avoid for WordPress</td></tr>
+<tr><td>Full</td><td>HTTPS, but the certificate isn't checked</td><td>Only as a short stopgap</td></tr>
+<tr><td>Full (strict)</td><td>HTTPS with a valid certificate</td><td>Yes, the target for every site</td></tr>
+</tbody>
+</table>
+<p>Flexible causes the classic loop. Your site redirects HTTP to HTTPS, but Cloudflare always asks your server over HTTP, so the server keeps replying "go to HTTPS" until the browser shows ERR_TOO_MANY_REDIRECTS. Flexible can also make WordPress think visitors are on HTTP, causing mixed content. If you're stuck, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS</a>.</p>
+<p>Full (strict) needs a valid certificate on your server: the free Let's Encrypt certificate most hosts provide, or a free Cloudflare Origin CA certificate. Origin certificates are trusted only by Cloudflare, so if you later switch the record to DNS only, visitors will see warnings. Cloudflare has also been introducing an automatic mode, so check which mode your site actually uses.</p>
+
+<h2>Caching: what to cache and what to bypass</h2>
+<p>By default, Cloudflare caches static files such as images, CSS and JavaScript and passes HTML pages through to your server. That's safe for WordPress and a good start, alongside a caching plugin or your host's cache; see <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
+<p>If you add a rule to cache HTML too, exclude anything personal or changing:</p>
+<ul>
+<li>/wp-admin/ and wp-login.php</li>
+<li>WooCommerce cart, checkout and My Account pages</li>
+<li>Logged-in users and shoppers with items in their cart, usually detected by cookies</li>
+<li>Search results, previews and form submissions</li>
+</ul>
+<p>Matching on cookies may not be available on every plan, which is one reason many owners leave HTML caching off on the free plan or use APO. Purge the cache after design changes, use Development Mode while editing, and test switches such as Rocket Loader on key pages, because they can break some scripts.</p>
+
+<h2>APO for WordPress</h2>
+<p>Automatic Platform Optimization (APO) is Cloudflare's WordPress option for caching whole pages on its network. It works with the official Cloudflare WordPress plugin, which tells Cloudflare when content changes, and is designed to skip the cache for logged-in users and common WooCommerce pages. For free-plan sites it's a paid add-on (included with some paid plans at the time of writing), so check current pricing and compatibility notes. It helps most when visitors are spread across regions, but it won't fix a slow server: the admin, checkout and uncached pages still depend on it.</p>
+
+<h2>Security settings worth knowing</h2>
+<ul>
+<li><strong>Always Use HTTPS:</strong> redirects HTTP to HTTPS at Cloudflare. Keep one HTTPS redirect in charge rather than stacking rules in Cloudflare, your host and a plugin.</li>
+<li><strong>Bot Fight Mode:</strong> challenges traffic that looks automated, but can also block payment gateway callbacks, uptime monitors or integrations, and on the free plan you may not be able to make exceptions. If something breaks, test with it off.</li>
+<li><strong>WAF and custom rules:</strong> the free plan includes some managed protection and a small number of custom rules, useful for challenging visits to wp-login.php or blocking xmlrpc.php if nothing needs it.</li>
+<li><strong>Under Attack mode:</strong> challenges every visitor during an attack. Turn it off afterwards.</li>
+</ul>
+<p>With all traffic arriving via Cloudflare, check that your host or security plugin reads the real visitor IP, or a login limiter can block everyone at once.</p>
+
+<h2>Common problems after switching</h2>
+<ul>
+<li><strong>Too many redirects:</strong> usually Flexible SSL or duplicate HTTPS and www redirects. Move to Full (strict) and keep one redirect.</li>
+<li><strong>Mixed content:</strong> old http:// addresses in content, theme settings or the database. Automatic HTTPS Rewrites can cover some, but fix the source; see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content warnings</a>.</li>
+<li><strong>Email stopped:</strong> MX, SPF or DKIM records weren't copied, or mail hostnames were proxied.</li>
+</ul>
+<p>Cloudflare's 52x errors mean it couldn't get a proper answer from your server:</p>
+<table>
+<thead><tr><th>Error</th><th>Usual meaning</th><th>First check</th></tr></thead>
+<tbody>
+<tr><td>520</td><td>Empty or unexpected response</td><td>Server error logs, crashing PHP, a security module</td></tr>
+<tr><td>521</td><td>Connection refused</td><td>Is the web server running? Is the host's firewall blocking Cloudflare?</td></tr>
+<tr><td>522</td><td>Connection timed out</td><td>Wrong IP in DNS, an overloaded server or a firewall dropping requests</td></tr>
+<tr><td>523</td><td>Origin unreachable</td><td>The A record points to an old or wrong IP</td></tr>
+<tr><td>524</td><td>Server took too long to respond</td><td>Slow pages, long imports or exports, heavy reports</td></tr>
+<tr><td>525 / 526</td><td>SSL handshake failed / invalid certificate</td><td>Install or renew the certificate on your server</td></tr>
+</tbody>
+</table>
+<p>Send your host the Ray ID from the error page, the time and the URL. For timeouts that start on the server, see <a href="/blog/wordpress-502-504-gateway-timeout-fix/">502 and 504 errors on WordPress</a>.</p>
+
+<p>Want Cloudflare set up properly, with the right SSL mode, cache exclusions and email records checked, as part of making your site faster? See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
+`,
+  },
+  {
+    slug: 'find-fix-broken-links-wordpress',
+    seoTitle: 'How to Find and Fix Broken Links on WordPress',
+    title: 'How to Find and Fix Broken Links on WordPress (Without Slowing Your Site)',
+    description: 'Find broken internal links, dead outbound links and missing images on WordPress, then decide whether to update the link, add a 301 redirect or leave a 404.',
+    date: '2026-10-11',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-maintenance'],
+    body: `
+<p>Every website collects broken links. A page gets deleted, a slug is tidied up, the site is redesigned, or another website you linked to quietly disappears. A few 404s are normal, and Google has said they don't harm a site in general. The real cost is practical: visitors hit dead ends, images go missing, and links other sites gave you point at nothing. Here's how to find them and decide what to do with each, without a heavy plugin.</p>
+
+<h2>Four kinds of broken link</h2>
+<ul>
+<li><strong>Internal links</strong> from your own pages, menus or footer to pages that no longer exist. Fully in your control, and the first to fix.</li>
+<li><strong>Outbound links</strong> to other websites that have moved or closed. Common in older blog posts and resource pages.</li>
+<li><strong>Broken images</strong>, usually after a migration, a domain change, a media clean-up or removing an image or CDN plugin.</li>
+<li><strong>Inbound links</strong> from other sites to URLs you've removed or renamed. You can't edit their link, but you can redirect the old URL.</li>
+</ul>
+
+<h2>Start with Search Console's "Not found (404)" report</h2>
+<p>In Google Search Console, open <strong>Indexing &gt; Pages</strong> and look under "Why pages aren't indexed" for <strong>Not found (404)</strong>. It lists URLs Google tried to crawl that returned a 404. Click a URL and inspect it: the inspection details can show a referring page or sitemap where Google found it, which tells you what needs fixing.</p>
+<p>Don't treat the list as a to-do list. It includes pages you removed on purpose, typos on other sites and junk URLs invented by bots. Concentrate on URLs that were real pages, still get visits or have links. The report updates with a delay, so fixed URLs can stay listed for a while. Nearby statuses such as soft 404 are covered in <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a>.</p>
+
+<h2>Crawl your site to find the links themselves</h2>
+<p>Search Console tells you which URLs are missing. A crawler tells you which of your pages link to them. It visits your site the way a search engine does, follows every link and records the response for each one. Well-known options include:</p>
+<ul>
+<li><strong>Screaming Frog SEO Spider</strong>, a desktop crawler with a free version that limits how many URLs it crawls</li>
+<li><strong>Sitebulb</strong>, a paid desktop crawler</li>
+<li><strong>Ahrefs Webmaster Tools</strong> and similar online site audit tools, which can crawl a site once you verify you own it</li>
+<li><strong>The W3C Link Checker</strong>, a free online tool for checking the links on a page or a small group of pages</li>
+</ul>
+<p>Check each tool's current limits and pricing. Look for internal links returning 404 and the pages they sit on, outbound links returning errors, images that don't load, and redirects. Crawling from outside adds no load beyond the page visits themselves.</p>
+
+<h2>Why heavy broken-link plugins can slow your site</h2>
+<p>Checking links from inside WordPress sounds convenient, but the traditional design is expensive. The plugin scans your content, stores every link in the database, then checks them from your server in the background, again and again, through WP-Cron. On a site with hundreds of posts, that means a steady stream of outgoing requests and database writes, which can slow the admin and use up shared hosting limits. Some managed hosts discourage or block plugins that work this way.</p>
+<p>Some newer checkers do the work on an external service, which is far lighter, so check how a plugin works before installing it. Otherwise, crawl monthly or quarterly, or activate a checker, run one scan and deactivate it. Set 404 logs in redirect plugins to keep a limited history so the table doesn't grow forever.</p>
+
+<h2>Update the link, redirect or leave a 404?</h2>
+<p>For each broken URL, ask two questions: did this page have value, and is there a genuine replacement?</p>
+<table>
+<thead><tr><th>Situation</th><th>What to do</th></tr></thead>
+<tbody>
+<tr><td>Your own link points to a page that moved</td><td>Update the link to the new URL, and 301 redirect the old URL if it was ever public</td></tr>
+<tr><td>Removed page with a close replacement</td><td>301 redirect to that replacement, not the homepage</td></tr>
+<tr><td>Removed page with links or traffic but no replacement</td><td>Redirect to the closest relevant category or service page, or bring the content back</td></tr>
+<tr><td>Removed page with no value and no replacement</td><td>Leave it as a 404, or return 410 Gone if it's gone for good, and remove internal links to it</td></tr>
+<tr><td>Junk or mistyped URLs from elsewhere</td><td>Leave them as 404s</td></tr>
+<tr><td>Dead outbound link</td><td>Find the resource's new address, link a different reliable source, or remove the link</td></tr>
+<tr><td>Broken image</td><td>Re-upload it, fix the file path after a migration with a careful search and replace, or regenerate missing thumbnail sizes</td></tr>
+</tbody>
+</table>
+<p>Two rules keep this clean. First, fix your own links at the source instead of relying on redirects; redirects are for people and search engines arriving from outside. Second, don't send every 404 to the homepage. It confuses visitors, and Google may treat irrelevant redirects as soft 404s anyway. A good custom 404 page handles what's left; see <a href="/blog/helpful-404-pages/">404 pages that help</a>, and <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> for which type to use.</p>
+
+<h2>Watch out for redirect chains</h2>
+<p>A redirect chain is one URL redirecting to a second, which redirects to a third. Chains build up over several redesigns, and with HTTP-to-HTTPS and www redirects added, one click can bounce several times. Each hop slows the visitor, and search engines may stop following a long chain.</p>
+<ul>
+<li>Use your crawler's redirect report to find chains and loops</li>
+<li>Edit old redirects so each one points straight to the final URL</li>
+<li>Update internal links, menus and your sitemap to the final URL so they don't redirect at all</li>
+<li>Keep redirects in one place: a redirect plugin, your SEO plugin's redirect manager or the server, not all three</li>
+</ul>
+<p>If nearly every page suddenly returns a 404 while the homepage works, it's a settings problem rather than broken links; see <a href="/blog/wordpress-pages-404-permalinks-fix/">WordPress pages showing 404</a>.</p>
+
+<h2>A simple routine for checking</h2>
+<ol>
+<li><strong>Monthly:</strong> check the Not found (404) report and your 404 log, if you keep one, and fix anything that was a real page</li>
+<li><strong>Quarterly:</strong> run a full crawl, fix broken internal links and images, and tidy redirect chains</li>
+<li><strong>Once or twice a year:</strong> check outbound links in older posts, guides and resource pages</li>
+<li><strong>Whenever you delete or rename a page:</strong> decide on the redirect then, not months later</li>
+<li><strong>After a redesign or migration:</strong> crawl a list of the old URLs and confirm each lands on the right new page</li>
+</ol>
+<p>Keep a simple spreadsheet of the redirects you add and why, so the next person editing the site doesn't undo them.</p>
+
+<p>If your site has years of moved pages and tangled redirects and you'd like it cleaned up properly, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-search-not-working-fix',
+    seoTitle: 'WordPress Search Not Working? How to Fix It',
+    title: 'WordPress Search Not Working? Fixing Missing, Wrong and Slow Results',
+    description: 'WordPress search showing no results, the wrong results or loading slowly? See how default search works and fix WooCommerce, page builder and caching causes.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'woocommerce-developer'],
+    body: `
+<p>When site search fails, visitors rarely tell you. They type a product name, see "Nothing found" or a list of unrelated posts, and leave. Search problems usually fall into three groups: no results for things that exist, wrong results, and slow search. Here are the usual causes of each, starting with the checks that cost nothing.</p>
+
+<h2>How default WordPress search works</h2>
+<p>Knowing what WordPress actually does explains most "missing" results:</p>
+<ul>
+<li>It searches the <strong>title, content and excerpt</strong> of published posts, pages and other public content types. It doesn't look in custom fields, product attributes, categories, tags or the text inside PDFs</li>
+<li>It matches what you type fairly literally, with no typo tolerance and only limited handling of different word forms</li>
+<li>Its ordering is basic: posts with the search words in the title come first, then the rest, newest first. It has no real sense of which result is most useful</li>
+<li>Drafts, private posts and content types set to be excluded from search don't appear for visitors</li>
+</ul>
+<p>A quick test: type your address followed by "/?s=" and a word from a page title, such as "yoursite.com/?s=pricing", into the browser's address bar. If that finds the page but your search box doesn't, the problem is the search form or widget, not WordPress itself.</p>
+
+<h2>Products or SKUs not found in WooCommerce</h2>
+<p>WooCommerce product search builds on the same system, so the same limits apply, plus some store-specific causes:</p>
+<ul>
+<li><strong>Catalog visibility:</strong> each product has a visibility setting in the Publish box. Products set to "Shop only" or "Hidden" won't appear in search results</li>
+<li><strong>Out-of-stock hiding:</strong> if "Hide out of stock items from the catalog" is ticked in the inventory settings, those products vanish from search too</li>
+<li><strong>SKUs:</strong> the admin product search finds SKUs, but depending on your WooCommerce version and theme, the storefront search may not. Variation SKUs are even less likely to be searched</li>
+<li><strong>Attributes and brands</strong> stored only as attributes or custom fields aren't searched by default</li>
+<li><strong>Mixed results:</strong> a general search box can return blog posts and pages alongside products, while a product search form limits results to products</li>
+</ul>
+<p>If your buyers search by model or part number, as they often do in B2B and spare-parts stores, plan for SKU search rather than hoping it works.</p>
+
+<h2>Page builders, themes and search widgets</h2>
+<p>Many "search is broken" reports turn out to be the template, not the search:</p>
+<ul>
+<li><strong>The search results template:</strong> with a theme builder such as Elementor Pro, the results page is often a custom archive template. If its posts or loop widget uses its own query instead of the current query, it shows the same posts whatever someone types</li>
+<li><strong>The form itself:</strong> a custom form must send the search term in a field named "s" to your own site. Forms copied from a demo import or another site may point somewhere else</li>
+<li><strong>Hidden filters:</strong> some widgets and themes quietly limit search to one post type or category</li>
+<li><strong>Theme and plugin code:</strong> plugins and themes can change the search query. If results changed after an update, look for a conflict on a staging copy; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find plugin conflicts safely</a></li>
+</ul>
+
+<h2>When caching gets in the way</h2>
+<p>Search results should be built fresh for every query. Many caching plugins don't cache search results by default, but problems appear when:</p>
+<ul>
+<li>A CDN or server cache is set to cache everything, or to ignore query strings, so different searches return the same cached page</li>
+<li>A live search box, where results appear as you type, stops working on cached pages because the page holds an expired security token. It works for a while after you clear the cache, then fails again</li>
+<li>A search plugin's index is out of date, so new or edited products don't show until it's rebuilt</li>
+</ul>
+<p>Exclude search URLs and your search plugin's background requests from page and CDN caching, and read the plugin's documentation on caching. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> for what should never be cached.</p>
+
+<h2>Fixing slow search</h2>
+<p>Default search runs a fresh database query that has to check the text of every published post, page and product for a match, and it can't use the shortcuts the database uses for most WordPress queries. On a large site that gets slow, and every search bypasses the page cache. Things that help:</p>
+<ul>
+<li>Use a search plugin that builds its own index instead of scanning content on every search</li>
+<li>Make live search wait until the visitor has typed a few characters, so it isn't querying on every keystroke</li>
+<li>Watch for bots hammering search URLs with spam terms. A firewall rate limit helps, and search results pages should be set to noindex, which most SEO plugins do</li>
+</ul>
+<p>For online stores, search is one part of overall store speed; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</p>
+
+<h2>Better relevance with a search plugin</h2>
+<p>If the basics are fixed and results are still poor, a dedicated search plugin is the usual next step. Well-known options include Relevanssi and SearchWP, which build their own index and can search custom fields and weight title matches above body text, and FiboSearch, a live product search for WooCommerce. Features differ between free and paid versions and change over time, so check current details and test on a staging copy with your real content.</p>
+<p>For very large catalogues, or instant search across many thousands of products, sites move search off the WordPress database to a dedicated search engine. Common routes are Elasticsearch through a plugin such as ElasticPress, or a hosted search service. These add running costs and setup work, so they're usually worth it only when the catalogue and traffic justify them. For synonyms, Hinglish terms and fixing zero-result searches, see <a href="/blog/improve-wordpress-site-search/">how to improve site search on WordPress</a>.</p>
+
+<h2>Track what visitors search for</h2>
+<p>Search terms show what people expected to find. GA4's enhanced measurement can record site searches when the term appears in the page address, and WordPress's standard "s" parameter is one it looks for by default. Searches are recorded as a view_search_results event, and an Exploration report is usually the easiest place to read the terms. Live search boxes that never load a results page may not be captured.</p>
+<p>Many search plugins also keep their own log, including searches that returned nothing. That's the most useful list of all: each zero-result search is a missing synonym, a product search can't find, or a gap in what you offer. Review it monthly.</p>
+
+<p>If your site search returns the wrong results or slows the site down and you'd like it fixed properly, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
 ];

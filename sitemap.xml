@@ -3583,6 +3583,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://samverse.space/blog/cloudflare-wordpress-setup-guide/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/find-fix-broken-links-wordpress/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/wordpress-search-not-working-fix/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://samverse.space/work/</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>

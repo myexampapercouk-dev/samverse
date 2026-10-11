@@ -3954,5 +3954,26 @@
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
     <description>What 502 Bad Gateway and 504 Gateway Timeout mean on WordPress, and how to fix them: PHP workers, heavy plugins, slow queries, Cloudflare and host limits.</description>
   </item>
+  <item>
+    <title>Setting Up Cloudflare's Free Plan on WordPress: SSL, Caching and Common Problems</title>
+    <link>https://samverse.space/blog/cloudflare-wordpress-setup-guide/</link>
+    <guid>https://samverse.space/blog/cloudflare-wordpress-setup-guide/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Set up Cloudflare's free plan on WordPress safely: nameservers, the right SSL mode, cache exclusions, APO, security settings and fixes for 52x errors.</description>
+  </item>
+  <item>
+    <title>How to Find and Fix Broken Links on WordPress (Without Slowing Your Site)</title>
+    <link>https://samverse.space/blog/find-fix-broken-links-wordpress/</link>
+    <guid>https://samverse.space/blog/find-fix-broken-links-wordpress/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Find broken internal links, dead outbound links and missing images on WordPress, then decide whether to update the link, add a 301 redirect or leave a 404.</description>
+  </item>
+  <item>
+    <title>WordPress Search Not Working? Fixing Missing, Wrong and Slow Results</title>
+    <link>https://samverse.space/blog/wordpress-search-not-working-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-search-not-working-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>WordPress search showing no results, the wrong results or loading slowly? See how default search works and fix WooCommerce, page builder and caching causes.</description>
+  </item>
 </channel>
 </rss>

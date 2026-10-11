@@ -602,5 +602,8 @@
  "blog-website-for-ayurvedic-product-brands": "c45d1133826dba2a5fc944124cb4ee5e90d17bb8",
  "blog-wordpress-403-forbidden-error-fix": "dcd759d681b8d8201c21da7866f4033ad8c5b137",
  "blog-wordpress-500-internal-server-error-fix": "eb8addce3a23d5f50c6f3db6f1c001aa97bc4231",
- "blog-wordpress-502-504-gateway-timeout-fix": "221f1378fba46f2ba7f0cc45899a5bd8d5dce53b"
+ "blog-wordpress-502-504-gateway-timeout-fix": "221f1378fba46f2ba7f0cc45899a5bd8d5dce53b",
+ "blog-cloudflare-wordpress-setup-guide": "76e0c1f8603005c144034ce0e638c633b9689d34",
+ "blog-find-fix-broken-links-wordpress": "a55432aa8d20e4b5a51732c3dea8727abbf5d4a8",
+ "blog-wordpress-search-not-working-fix": "db332abdaee1287b09ffa455d8bf100375ea4255"
 }
