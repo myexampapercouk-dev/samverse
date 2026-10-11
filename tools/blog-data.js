@@ -232,6 +232,8 @@ module.exports = [
 <p>A slow WordPress site loses visitors before they've read a word, especially on mobile data, and speed is part of Google's page experience signals. The good news: WordPress itself isn't slow. Most slow sites share the same handful of problems, and once you know which one you have, the fix is usually straightforward.</p>
 <p>Start with the 5-minute diagnosis below, then work through the 12 common causes in order of impact. There are also specific fixes for slow mobile pages, a slow admin, a site that slowed down after an update and a slow WooCommerce store.</p>
 
+<p>Prefer to have it fixed for you? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> finds the real cause and fixes it safely, with a before-and-after report.</p>
+
 <h2>The short answer</h2>
 <p>A slow WordPress website is almost always down to one or more of these:</p>
 <ul>
@@ -413,6 +415,8 @@ module.exports = [
     body: `
 <p>Hacked WordPress sites often look perfectly normal to the owner. Many infections are built to stay hidden: they redirect only mobile visitors, show spam only to Google, or skip anyone who is logged in. So "it looks fine when I open it" doesn't mean the site is clean.</p>
 <p>Here's a ten-minute check, the clear signs of a hack, the false alarms, and what to do first.</p>
+
+<p>If you have already spotted these signs and want the site cleaned properly, my <a href="/wordpress-malware-removal/">WordPress malware removal service</a> covers the clean-up, hardening and help with Google warnings.</p>
 
 <h2>The quick answer</h2>
 <p>Your WordPress site has probably been hacked if any of these are true:</p>
@@ -736,6 +740,8 @@ wp plugin verify-checksums --all</code></pre>
   </tbody>
 </table>
 
+<p>Platform fees are only one part of the budget. For build costs by type of store, see <a href="/blog/ecommerce-website-cost-india/">how much an e-commerce website costs in India</a>.</p>
+
 <h2>Choose WooCommerce if...</h2>
 <ul>
   <li>You want to avoid monthly platform fees and keep costs predictable</li>
@@ -781,6 +787,8 @@ wp plugin verify-checksums --all</code></pre>
     body: `
 <p>A WordPress website isn't "done" when it launches. Like a car, it needs regular care to stay fast, secure and reliable. Most hacked or broken WordPress sites simply weren't maintained.</p>
 <p>Here's a practical checklist you can follow yourself, or hand to your developer.</p>
+
+<p>Prefer to hand these jobs over? My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> cover updates, off-site backups, security monitoring, uptime checks and small content changes every month.</p>
 
 <h2>Weekly</h2>
 <ul>
@@ -981,6 +989,8 @@ wp plugin verify-checksums --all</code></pre>
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'website-redesign'],
     body: `
 <p>For many Indian manufacturers, the website is still a digital brochure that nobody updates. Meanwhile, procurement teams and importers research suppliers online before they ever send an RFQ. A well-built website can quietly bring in enquiries every week, from India and abroad.</p>
+
+<p>If you want this built for you, I make <a href="/website-for-manufacturers/">websites for manufacturers and industrial companies</a>, with product catalogues, enquiry forms and SEO aimed at bulk and export buyers.</p>
 
 <h2>What B2B buyers look for</h2>
 <p>A buyer comparing suppliers wants to answer a few questions quickly:</p>
@@ -1216,6 +1226,8 @@ wp plugin verify-checksums --all</code></pre>
     body: `
 <p>You can have a great ad and still waste money if the page it sends people to doesn't convert. The landing page is where ad spend turns into leads, or disappears. Here are 10 common mistakes and how to fix them.</p>
 
+<p>If you'd rather start with a page built for your campaign, see my <a href="/landing-page-design/">landing page design for Google and Facebook ads</a>: fast, mobile-first pages with one goal and tracking set up.</p>
+
 <h2>1. Sending ad traffic to your homepage</h2>
 <p>Your homepage talks about everything. A landing page should match the ad exactly, with the same offer, the same words and one clear goal.</p>
 
@@ -1344,6 +1356,8 @@ wp plugin verify-checksums --all</code></pre>
     body: `
 <p>A redesign should bring more enquiries, not fewer. But it's common for businesses to launch a beautiful new website and then watch their Google traffic drop. That almost always happens because a few SEO steps were skipped. Here's how to avoid it.</p>
 
+<p>If the redesign comes with a new business name or logo, the guide to <a href="/blog/rebranding-your-website/">rebranding your website</a> covers everything else to update, from brand assets and listings to telling customers.</p>
+
 <h2>Why redesigns lose rankings</h2>
 <ul>
   <li>Page URLs change and old links lead to 404 errors</li>
@@ -1363,6 +1377,8 @@ wp plugin verify-checksums --all</code></pre>
 <p>The safest URL is the one that doesn't change. Keep the same slugs for important pages whenever you can.</p>
 <h3>4. Map every changed URL</h3>
 <p>Create a simple spreadsheet: old URL, then new URL. Every old page should point to its closest new equivalent, not just the homepage.</p>
+
+<p>Moving to a new domain as part of the redesign? Follow the guide to <a href="/blog/change-domain-name-without-losing-seo/">changing your domain name without losing SEO</a> too, including Google's Change of Address tool.</p>
 
 <h2>During the build</h2>
 <ul>
@@ -2042,6 +2058,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>When you want to launch quickly on a sensible budget</li>
 </ul>
 
+<p>That last point matters to startups that need a marketing site live while the product is still being built; see how I build <a href="/website-for-startups/">startup websites on WordPress</a>.</p>
+
 <h2>When custom code makes sense</h2>
 <ul>
   <li>Web applications with complex, unique functionality (dashboards, SaaS products)</li>
@@ -2261,6 +2279,8 @@ wp plugin verify-checksums --all</code></pre>
     body: `
 <p>Many agencies hit the same wall: more website projects than their team can deliver, but not enough steady work to justify another full-time developer. White-label WordPress development solves this by letting you outsource the build while keeping your brand and client relationship.</p>
 
+<p>Looking for a partner now? See how I work as a <a href="/wordpress-developer-for-agencies/">white-label WordPress developer for agencies</a>, from brief to handover.</p>
+
 <h2>What is white-label WordPress development?</h2>
 <p>A white-label developer builds websites on your behalf. You sell and manage the project with your client; the developer delivers the WordPress site behind the scenes. Your client sees only your agency. No credits, no direct contact unless you want it.</p>
 
@@ -2306,6 +2326,8 @@ wp plugin verify-checksums --all</code></pre>
   <li><strong>Reliability:</strong> realistic timelines, met consistently</li>
 </ul>
 <p>Start with a small trial project before handing over bigger ones.</p>
+
+<p>If the partner you choose is in India, read how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a> for the practical side, from NDAs and time zones to choosing the right partner.</p>
 
 <h2>Keeping quality high</h2>
 <ul>
@@ -2593,6 +2615,8 @@ wp plugin verify-checksums --all</code></pre>
     related: ['figma-to-wordpress', 'elementor-developer', 'wordpress-developer-for-agencies'],
     body: `
 <p>A great Figma design can lose a lot in translation if the handoff is messy. A little preparation helps your WordPress developer build it faster and closer to your vision, with fewer revision rounds. Here's what to prepare.</p>
+
+<p>Handing your design to a developer in another country? The guide on how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a> explains how an outsourced project usually runs, from what to send to the final checks.</p>
 
 <h2>1. Set up styles properly</h2>
 <ul>
@@ -2989,6 +3013,8 @@ wp plugin verify-checksums --all</code></pre>
 
 <h2>What a theme does (and doesn't do)</h2>
 <p>A theme provides the design framework: layouts, typography, headers, footers and styling. Features like contact forms, SEO and security should come from plugins, not the theme. Themes that bundle dozens of features lock you in, and switching later can break your site.</p>
+
+<p>Building with Elementor and want the theme and templates set up for you? I work as an <a href="/elementor-developer/">Elementor developer</a>, creating custom page designs and Theme Builder headers, footers and blog templates.</p>
 
 <h2>6 things to check before choosing</h2>
 <h3>1. Speed</h3>
@@ -6024,6 +6050,8 @@ wp plugin verify-checksums --all</code></pre>
   <li><strong>Contact / demo:</strong> a short form or calendar booking</li>
 </ol>
 
+<p>Launching a new software product rather than selling services? My <a href="/website-for-startups/">websites for startups</a> start with the landing and product pages you need now and are built to grow with the product.</p>
+
 <h2>For software products</h2>
 <ul>
   <li>A clear product demo or screenshots</li>
@@ -8755,6 +8783,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>R&amp;D and custom synthesis or contract manufacturing capabilities</li>
   <li>Safety and environmental practices</li>
 </ul>
+
+<p>Need the catalogue, enquiry forms and SEO set up for you? See my <a href="/website-for-manufacturers/">website design service for manufacturers</a>, built to bring in bulk and export enquiries.</p>
 
 <h2>Enquiries and documents</h2>
 <ul>
@@ -11567,6 +11597,8 @@ wp plugin verify-checksums --all</code></pre>
 <h2>Facilities</h2>
 <p>Classrooms, play areas and outdoor spaces, shown in real photos (without identifiable children unless you have consent).</p>
 
+<p>For a site built around admissions enquiries, photo galleries and a notice board for parents, see my <a href="/website-for-schools-and-coaching/">website design for schools and coaching centres</a>.</p>
+
 <h2>Admissions</h2>
 <ul>
   <li>Age groups and programmes (playgroup, nursery, KG, daycare)</li>
@@ -12695,6 +12727,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>Keep a simple spreadsheet of sources, mediums and campaign names</li>
 </ul>
 
+<p>Tags show where visitors came from, but the page they land on decides whether they enquire. For paid campaigns, a <a href="/landing-page-design/">dedicated landing page for your ads</a>, with its form and tracking already set up, gives each campaign a fair test.</p>
+
 <h2>Reading the results</h2>
 <p>In GA4, traffic acquisition reports show sessions and key events by source, medium and campaign. Combine with event tracking to see which campaigns actually bring enquiries; see <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</p>
 
@@ -13708,6 +13742,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>Admission process and important dates</li>
   <li>Hostel, transport and location</li>
 </ul>
+
+<p>If you'd like help putting this together, I build <a href="/website-for-schools-and-coaching/">websites for schools, colleges and coaching institutes</a> with course pages, admissions enquiries, results and notice boards.</p>
 
 <h2>Course pages: the most important pages</h2>
 <p>Give every programme its own page with eligibility, duration, curriculum highlights, fees, career options, faculty and an enquiry form. These pages match what students search for, like "BBA college in {city}".</p>
@@ -15326,6 +15362,8 @@ wp plugin verify-checksums --all</code></pre>
 <p>Agencies and businesses in the UK, US, Europe, Australia and the Middle East regularly outsource WordPress development to India, and so do Indian agencies that need extra hands in busy months. Done well, it gives you an experienced developer at competitive rates and frees your team to focus on clients. Done carelessly, it leads to missed deadlines, messy builds and awkward conversations with your client.</p>
 <p>This guide explains how a typical outsourced project runs, how white-label work and NDAs protect your client relationships, how to handle time zones, what to send your developer, how pricing is usually structured and which red flags to watch for.</p>
 
+<p>If you run an agency and want a dependable partner rather than a marketplace hire, see how I work as a <a href="/wordpress-developer-for-agencies/">white-label WordPress developer for agencies</a>.</p>
+
 <h2>Why agencies outsource WordPress work to India</h2>
 <ul>
   <li><strong>Capacity without hiring:</strong> take on more projects in busy months without recruiting, training or paying for idle time in quiet ones</li>
@@ -15662,6 +15700,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>Guaranteed Google rankings, or a vague scope with no written agreement</li>
 </ul>
 
+<p>To see what finished projects look like, browse my <a href="/work/">WordPress portfolio and case studies</a>, with live sites for agencies, manufacturers, healthcare and directory businesses.</p>
+
 <h2>FAQs</h2>
 <h3>What is a WordPress developer in simple terms?</h3>
 <p>Someone who builds, customises and maintains websites made with WordPress, from setting up the site and its features to keeping it fast, secure and up to date.</p>
@@ -15864,6 +15904,8 @@ wp plugin verify-checksums --all</code></pre>
     related: ['website-for-startups', 'landing-page-design', 'wordpress-website-development'],
     body: `
 <p>For a software startup, the marketing website is often the first product experience people have. It must explain what the product does, who it's for and why it's better, then make signing up or booking a demo effortless.</p>
+
+<p>If you need the marketing site live quickly, see my <a href="/website-for-startups/">startup website development</a> service: landing and product pages, a blog and analytics on WordPress, easy for your team to edit.</p>
 
 <h2>Positioning on the homepage</h2>
 <ul>
@@ -16580,6 +16622,8 @@ wp plugin verify-checksums --all</code></pre>
 <p>Cleaning a hacked WordPress site isn't just deleting one bad file. Attackers usually leave several ways back in, so a quick clean-up often gets reinfected within days. This is the step-by-step process I follow for WordPress malware cleanup, including the part many guides skip: getting Google's warnings removed afterwards.</p>
 <p>If you're not comfortable working with files and databases, use this guide to understand what a proper clean-up involves, and get help. A mistake in the wrong file can take the whole site offline.</p>
 
+<p>This guide is for doing the clean-up yourself. If you prefer to hand it over, my <a href="/wordpress-malware-removal/">WordPress malware removal service</a> takes care of the clean-up and hardens the site afterwards.</p>
+
 <h2>Before you start: clean or restore?</h2>
 <p>If you have a backup from before the infection, and you're confident of when the infection started, restoring it can be the fastest route. The catch is that many infections sit unnoticed for weeks, so recent backups are often infected too. Restoring also doesn't fix how the attacker got in.</p>
 <p>Either way, you'll still need to reset access (step 3), close the entry point (step 9) and check the site afterwards. If you can't be sure a backup is clean, clean the current site instead. Not sure the site is hacked at all? Start with <a href="/blog/signs-wordpress-site-hacked/">how to tell if your WordPress site has been hacked</a>.</p>
@@ -16749,6 +16793,8 @@ SELECT option_name FROM wp_options WHERE option_value LIKE '%&lt;script%';</code
 <p>Customers tell you your website sends them to a gambling, dating, fake prize or "your phone has a virus" page. When you open it yourself, everything looks normal. That's the classic WordPress redirect hack: malicious code that sends some visitors elsewhere while hiding from the site owner, so it survives as long as possible.</p>
 <p>Here's why you might not see it, how to catch it, where the code hides and how to remove it for good.</p>
 
+<p>Redirect hacks often come back when a backdoor is missed. If you would rather have it handled for you, see my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>.</p>
+
 <h2>First, make sure it's really a hack</h2>
 <p>A few harmless things can look like a redirect hack. Rule them out quickly:</p>
 <ul>
@@ -16870,6 +16916,8 @@ wp option get home</code></pre>
   <li>Block PHP from running in the uploads folder, and set sensible <a href="/blog/wordpress-file-permissions/">file permissions</a></li>
   <li>Use a <a href="/blog/wordpress-firewall-waf-explained/">firewall</a> and file-change monitoring</li>
 </ul>
+
+<p>Most of this list is routine upkeep rather than a one-off job. If you'd rather not keep on top of it yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> takes care of updates, backups and security monitoring each month.</p>
 
 <h2>FAQs</h2>
 
@@ -17167,6 +17215,8 @@ wp option get home</code></pre>
 <p>Plugins that haven't been updated in years won't get security fixes, even when problems are found.</p>
 <p><strong>Fix:</strong> replace abandoned plugins with maintained alternatives and delete what you don't use.</p>
 
+<p>If updates keep slipping down your to-do list, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> hands them to someone who takes a backup first and checks the site afterwards.</p>
+
 <h2>3. Nulled (pirated) themes and plugins</h2>
 <p>"Free" copies of premium software often contain hidden malware and never receive updates.</p>
 <p><strong>Fix:</strong> use genuine licences; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a>.</p>
@@ -17442,6 +17492,8 @@ find wp-content/uploads -name "*.php"</code></pre>
     body: `
 <p>Seeing "This site may be hacked" under your website in Google's search results is alarming, and it makes searchers far less likely to click. Google shows this label when it believes a third party may have changed pages on your site or added new spam pages, often in other languages or stuffed with pharmacy, gambling or counterfeit-goods keywords.</p>
 <p>The short answer on removing it: confirm the problem in Google Search Console's <strong>Security issues</strong> report, lock out the attacker, clean the site completely and close the way they got in, then <strong>request a review</strong>. Once Google confirms the site is clean, the label is removed from results. The steps below cover each stage, how long it can take and how to stop it happening again.</p>
+
+<p>If the warning is already showing in search results and you need the site cleaned and a review requested, see my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>.</p>
 
 <h2>What the warning means</h2>
 <ul>
@@ -17725,6 +17777,8 @@ find wp-content/uploads -name "*.php"</code></pre>
     related: ['wordpress-malware-removal', 'wordpress-seo-services', 'website-redesign'],
     body: `
 <p>A hack can damage rankings through spam pages, warnings, redirects and lost content. The good news is that rankings usually recover once the site is truly clean and Google has recrawled it. Here's how to speed that up.</p>
+
+<p>If the hack hasn't been cleaned up yet, deal with that first: my <a href="/wordpress-malware-removal/">WordPress malware removal service</a> removes the infection, helps get Google warnings lifted and hardens the site against reinfection.</p>
 
 <h2>Why rankings drop after a hack</h2>
 <ul>
@@ -18258,6 +18312,8 @@ find wp-content/uploads -name "*.php"</code></pre>
 <h2>8. Mobile vs desktop settings</h2>
 <p>Elementor lets you set different styles or hide elements per device. A change made in desktop view may be overridden by a tablet or mobile setting.</p>
 
+<p>Still can't tell whether a style comes from a template, a device setting or Elementor's generated CSS? An <a href="/elementor-developer/">Elementor developer</a> can trace it and fix it at the source.</p>
+
 <h2>9. Image still old?</h2>
 <p>If you uploaded a new image with the same file name, caches may keep the old one. Upload with a new file name, or purge caches.</p>
 
@@ -18381,6 +18437,8 @@ find wp-content/uploads -name "*.php"</code></pre>
 
 <h2>First: know how your pages were built</h2>
 <p>Open a page in the dashboard (Pages → All Pages → Edit). If you see an "Edit with Elementor" button, the page uses Elementor. Otherwise it probably uses the WordPress block editor. Your developer can tell you which tools were used.</p>
+
+<p>Text and image changes like the ones below are easy to make yourself. On an Elementor site, a new layout, a Theme Builder template or a page that looks wrong on mobile is a better job for an <a href="/elementor-developer/">Elementor developer</a>.</p>
 
 <h2>Editing text</h2>
 <ul>
@@ -20505,6 +20563,8 @@ Template: astra
     related: ['woocommerce-developer', 'wordpress-speed-optimization'],
     body: `
 <p>A slow online store loses sales in a way you rarely notice. A shopper on mobile data taps a product from Instagram, waits a few seconds, and goes back to scrolling. WooCommerce can be fast, but a store is harder to speed up than a normal business website because some of its most important pages can't simply be cached. This guide covers WooCommerce speed optimisation step by step: what to measure, what to fix and how to test without breaking the checkout. For general WordPress causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</p>
+
+<p>If you would rather have it done for you, my <a href="/wordpress-speed-optimization/">WooCommerce speed optimization service</a> covers the store-specific fixes in this guide.</p>
 
 <h2>Why WooCommerce stores are harder to speed up</h2>
 <p>On a brochure site, almost every visitor sees the same page, so a saved copy can be served instantly. A store works differently:</p>
@@ -26406,6 +26466,8 @@ Template: astra
 <p>An online store is a bigger project than a regular business website. As well as pages about your brand, it needs a product catalogue, a cart, a checkout, payments, shipping rules, order emails and a way to manage it all every day. That's why quotes for "an e-commerce website" can vary so widely.</p>
 <p>This guide explains what actually drives the cost of an e-commerce website in India, how costs differ by type of store, which costs are one-time and which keep coming, and how WooCommerce and Shopify compare, so you can plan a sensible budget and compare quotes on the same terms. For a regular business site, see <a href="/blog/wordpress-website-cost-india/">how much a WordPress website costs in India</a>.</p>
 
+<p>For a fixed quote on your own store, see my work as a <a href="/woocommerce-developer/">WooCommerce developer in India</a>.</p>
+
 <h2>The short answer</h2>
 <p>There's no fixed price for "an online store", because two stores can need very different amounts of work. Six things decide most of the cost:</p>
 <ol>
@@ -27255,6 +27317,8 @@ Template: astra
   <li><strong>Prepare the new domain:</strong> hosting, an SSL certificate and a copy of the site, kept out of search results until launch.</li>
   <li><strong>Plan your email:</strong> if your business email uses the old domain, decide whether to move it, forward it or run both for a while, and set up SPF, DKIM and DMARC records for the new domain.</li>
 </ol>
+
+<p>Redesigning the site at the same time as the move? Also follow the steps to <a href="/blog/redesign-website-without-losing-rankings/">redesign a website without losing rankings</a>, so titles, content and key pages carry over intact.</p>
 
 <h2>Set up page-by-page 301 redirects</h2>
 <p>Redirects are what carry your rankings and links across. Each old URL should permanently (301) redirect to its equivalent page on the new domain.</p>
@@ -35863,6 +35927,8 @@ Template: astra
   <li><strong>Ask to speak to one or two past clients,</strong> and read the developer's own Google reviews.</li>
 </ol>
 
+<p>You can practise these checks on my own <a href="/work/">portfolio of WordPress case studies</a>; the case studies link to the live sites, so you can open them on your phone.</p>
+
 <h2>Questions to ask in the first conversation</h2>
 <ul>
   <li><strong>Who will actually build my website?</strong> Some agencies pass work on to subcontractors. That isn't always bad, but you should know.</li>
@@ -37032,6 +37098,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ul>
 <p>None of these is compulsory, but if your website exists to bring in enquiries, budget for at least one way of driving visitors to it.</p>
 
+<p>Selling online adds its own costs, such as payment gateway fees, shipping and paid extensions; see <a href="/blog/ecommerce-website-cost-india/">e-commerce website cost in India</a> for what drives the price of a store.</p>
+
 <h2>How to budget for the full cost</h2>
 <p>Make a simple list of every running cost, how often it's billed and who pays it:</p>
 <table>
@@ -37717,6 +37785,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li><strong>Onboarding:</strong> sites you didn't build need a health check and any urgent fixes before they join a plan</li>
 </ul>
 
+<p>Thinking of a partner in India for this behind-the-scenes work? The guide on how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a> covers white-label and NDA basics, time zones and the quality checks to agree on.</p>
+
 <h2>How the partner works behind your brand</h2>
 <ul>
   <li><strong>Requests come to you:</strong> clients email your support address or helpdesk, and you pass requests to the partner through a shared project tool</li>
@@ -37836,6 +37906,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li><strong>SEO basics:</strong> titles, headings, redirects and the XML sitemap</li>
   <li><strong>Out of scope:</strong> anything the client might assume is included</li>
 </ul>
+
+<p>If your developer works from India, plan review rounds around the time difference. The guide on how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a> covers communication across time zones, pricing models and red flags.</p>
 
 <h2>7. Timeline and review rounds</h2>
 <ol>
@@ -41353,6 +41425,8 @@ RewriteRule . /index.php [L]
 </ul>
 <p>Custom features might include product configurators, wholesale pricing, booking slots, subscriptions or a link to the client's stock system. For each, the partner should say whether an established extension covers it or custom code is needed, since that affects cost, testing and future updates.</p>
 
+<p>If you're comparing development partners in India, the practical guide to <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> explains how projects usually run, how pricing is structured and which red flags to watch for.</p>
+
 <h2>What your agency keeps</h2>
 <p>White-label works because the client's experience doesn't change. Your agency keeps:</p>
 <ul>
@@ -41885,6 +41959,8 @@ wp user reset-password &lt;username&gt;</code></pre>
   <li><strong>A route for questions:</strong> requests come to your agency, and you pass anything technical to the partner</li>
 </ul>
 <p>Check in a few weeks after launch: the client's first edits show whether the setup and training worked.</p>
+
+<p>Weighing up a partner based in India? See how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a>, including how communication works across time zones and what to check before you sign off a build.</p>
 
 <h2>Testing a new partner</h2>
 <p>Start with something contained, such as a landing page or a few templates. Then look inside the build, not just at the front end: the Navigator structure, whether globals are used and how easily your own team can make a change.</p>
