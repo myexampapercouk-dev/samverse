@@ -891,7 +891,7 @@ ${w.goals.map(g => `            <li>${tick} ${esc(g)}</li>`).join('\n')}
           <h2>What I built</h2>
           <ul class="cs-built">
 ${w.built.map(b => `            <li>${esc(b)}</li>`).join('\n')}
-          </ul>
+          </ul>${(w.sections || []).map(s => `\n          <h2>${esc(s.h)}</h2>\n${s.p.map(t => `          <p>${esc(t)}</p>`).join('\n')}`).join('')}${(w.reading || []).length ? `\n          <h2>Related reading</h2>\n          <ul class="cs-built">\n${w.reading.map(r => POSTS.find(p => p.slug === r)).filter(Boolean).map(p => `            <li><a href="/blog/${p.slug}/" class="link-inline">${esc(p.title)}</a></li>`).join('\n')}\n          </ul>` : ''}
         </div>
         <aside class="cs-side">
           <dl>
