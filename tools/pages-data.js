@@ -602,6 +602,9 @@ const PAGES = [
       ['What if my design has no mobile version?', 'I create sensible mobile and tablet layouts based on your desktop design and share them for approval.'],
       ['Which builder do you use?', 'Usually Elementor Pro for easy editing, or Gutenberg blocks if you prefer a lighter setup.'],
       ['Do you work white-label for designers and agencies?', 'Yes. I regularly build designs for agencies and designers under their brand.'],
+      ['Will the finished site look exactly like my Figma design?', 'It will be a close match. I compare every page side by side with your frames at each breakpoint and fix differences in spacing, type and alignment. Small differences can come from how browsers render fonts, and from real content being longer or shorter than the placeholder text, so I flag those rather than forcing them.'],
+      ['Do you use a plugin that converts Figma to WordPress automatically?', 'No. Automatic export tools tend to produce deeply nested, fixed-size layouts that are heavy, hard to edit and awkward on mobile. I build by hand from your styles and components, so the site is lighter, responsive and easy for your client to update.'],
+      ['Can the design change once the build has started?', 'Yes, but it helps to settle the design before the build. Small tweaks during the build are normal. Larger changes, such as new templates or a reworked layout after a page has been approved, are quoted separately so the timeline and cost stay clear.'],
     ],
   },
   {

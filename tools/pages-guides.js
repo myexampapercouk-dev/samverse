@@ -1343,4 +1343,67 @@ module.exports = {
 </ul>
 <p>Send me your current website or listing for a free review and a fixed quote.</p>
 `,
+  'figma-to-wordpress': `
+<h2>Converting a Figma design to WordPress: how I work</h2>
+<p>I have been building WordPress sites from designers' files since 2020, mostly in Figma and sometimes in Adobe XD. The goal is always the same: a live site that looks like the design at every screen size, and that the client can still edit months later without breaking the layout. Here is the process, the build options and what you need to send me.</p>
+<h2>The process, step by step</h2>
+<ol>
+<li><strong>Design review.</strong> I go through every frame before quoting: the page list, unique templates, components, states such as hover and open menus, and anything dynamic like a blog, filters or forms. Questions and gaps go back to you in one list, so nothing is guessed later.</li>
+<li><strong>Design system and global styles.</strong> Figma colour styles, text styles and spacing become global colours, global fonts and theme styles in WordPress. Buttons, form fields and links are styled once, so every new element matches the design from the start.</li>
+<li><strong>Responsive breakpoints.</strong> I map your desktop, tablet and mobile frames onto WordPress breakpoints and agree how in-between widths should behave, such as when a three-column grid drops to two.</li>
+<li><strong>Build on staging.</strong> The header, footer and repeating sections are built as templates first, then pages, on a private staging copy so nothing is public before you approve it.</li>
+<li><strong>Pixel QA.</strong> I compare each page side by side with the Figma frame at every breakpoint, checking spacing, type sizes, line heights, alignment and image crops, then test interactions, forms and menus in current browsers on real phones.</li>
+<li><strong>Handover.</strong> A video-call walkthrough, a short note on which global styles and templates control what, and a full backup. For agencies, the handover can go to you or straight to your client.</li>
+</ol>
+<h2>Elementor, block theme or custom-coded theme?</h2>
+<p>There is more than one way to turn a Figma file into WordPress. Which suits your project depends mostly on who will edit the site and how strict the speed targets are:</p>
+<table>
+<thead><tr><th>Factor</th><th>Elementor build</th><th>Block theme</th><th>Custom-coded theme</th></tr></thead>
+<tbody>
+<tr><td>Client editing</td><td>Visual drag-and-drop editing of layout and content</td><td>Block editor with locked patterns and custom blocks</td><td>Structured fields; layout changes need a developer</td></tr>
+<tr><td>Design accuracy</td><td>Close match with global styles and custom CSS where needed</td><td>Close match through theme.json and custom blocks</td><td>Full control over every element</td></tr>
+<tr><td>Page weight</td><td>Heavier, kept lean by careful building</td><td>Light</td><td>Lightest</td></tr>
+<tr><td>Build time</td><td>Usually quickest</td><td>Moderate</td><td>Longest</td></tr>
+<tr><td>Plugin dependency</td><td>Elementor, usually Elementor Pro</td><td>WordPress core only</td><td>WordPress core only</td></tr>
+<tr><td>Best for</td><td>Marketing sites edited often by non-technical teams</td><td>Content sites that need speed and consistent layouts</td><td>Complex sites with strict performance or editorial rules</td></tr>
+</tbody>
+</table>
+<p>Most of my Figma to Elementor builds go this way because clients want to change pages themselves. <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a> compares the two editors, <a href="/blog/block-themes-full-site-editing/">block themes and full site editing</a> explains the newer approach, and <a href="/blog/figma-to-wordpress-approaches/">page builder, block theme or custom theme</a> goes deeper on choosing.</p>
+<h2>What designers should prepare in Figma</h2>
+<p>A tidy file makes the build faster and closer to the design. The things that help most:</p>
+<ul>
+<li><strong>Auto layout</strong> on sections, cards and buttons, so padding and gaps are real values rather than shapes nudged into place. Auto layout maps neatly onto Flexbox containers.</li>
+<li><strong>Colour and text styles</strong> named by role, such as primary, heading 2 or body small, instead of loose hex values and one-off font sizes.</li>
+<li><strong>Components with variants</strong> for buttons, cards, form fields and navigation, including hover, active and disabled states.</li>
+<li><strong>Mobile frames,</strong> at least for the homepage and each unique template. Tablet frames help too. If you only have desktop, I propose mobile layouts for your approval.</li>
+<li><strong>Exported assets:</strong> icons and logos as SVG, photos at full resolution, and font files or a link to the licensed font.</li>
+<li><strong>Real content</strong> where possible, because placeholder text rarely matches the length of the final copy.</li>
+</ul>
+<p><a href="/blog/figma-to-wordpress-designer-guide/">The Figma to WordPress handoff guide</a> covers file preparation in more detail; it is worth sharing with your designers before they finish the file.</p>
+<h2>What is included, and what is not</h2>
+<p>A conversion includes the design system set up as global styles, templates for headers, footers and repeating layouts, every page in the agreed list, responsive layouts, working forms, basic speed and on-page SEO settings, cross-browser testing and the walkthrough. Not included unless the quote says otherwise:</p>
+<ul>
+<li><strong>Design work.</strong> I build your design; I do not redesign it. Missing mobile layouts and small gaps are the exception.</li>
+<li><strong>Elementor Pro, premium plugin and font licences,</strong> which are bought in your or your client's name.</li>
+<li><strong>Hosting, the domain, copywriting and photography.</strong></li>
+<li><strong>New pages or design changes after approval,</strong> which are quoted separately.</li>
+</ul>
+<h2>How long a conversion takes</h2>
+<p>The number of unique templates matters more than the number of pages, since ten pages built from one template go much faster than ten different layouts. A single landing page usually takes a few working days once the file and content are final, and a full business site a few weeks. Complex interactions, WooCommerce, missing mobile frames or late content add time, and I give you a timeline with the quote after the design review.</p>
+<h2>Who this is for</h2>
+<ul>
+<li><strong>Freelance designers</strong> who design in Figma and want a developer who respects their spacing and type choices rather than approximating them.</li>
+<li><strong>Design and branding agencies</strong> without an in-house WordPress developer, who need builds delivered under their own brand. <a href="/blog/white-label-elementor-development/">White-label Elementor development</a> explains how that works, and <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> covers ongoing partnerships.</li>
+<li><strong>Businesses and startups</strong> that already have a finished design from a designer and need it turned into a working website.</li>
+</ul>
+<p>If you do not have a design yet and want one built straight in WordPress, my <a href="/elementor-developer/">Elementor development</a> service is the better fit.</p>
+<h2>What you get at the end</h2>
+<ul>
+<li>A responsive WordPress site that matches your Figma frames at desktop, tablet and mobile.</li>
+<li>Global colours, fonts and templates set up from your design system, so future pages stay on brand.</li>
+<li>Tested forms and interactions, and a site checked across current browsers and real phones.</li>
+<li>A video-call walkthrough, a short editing note and a full backup, with every login and licence in your or your client's name.</li>
+</ul>
+<p>Share your Figma link for a free review and a fixed quote.</p>
+`,
 };
