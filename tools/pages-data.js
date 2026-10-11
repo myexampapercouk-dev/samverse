@@ -85,6 +85,10 @@ const PAGES = [
       ['Do you build catalogues without online payments?', 'Yes. Most B2B sites use a catalogue with "Request a Quote" instead of a cart, and I can set up either.'],
       ['Can the website support export enquiries?', 'Yes. I can structure the site for international buyers and add multilingual support if you need it.'],
       ['How long does a B2B website take?', 'Usually 2–3 weeks depending on the number of products and pages, once content is ready.'],
+      ['Should every product have its own page?', 'Not always. Products that differ only by size or rating usually work best as one product family page with a full specification table. Products with different uses, materials or buyers deserve their own pages, because each one answers a different search.'],
+      ['Can buyers attach drawings to a quote request?', 'Yes. RFQ forms can accept drawings and specifications in the formats your team uses, such as PDF, DWG or STEP, with size limits and file-type checks, and a secure link in the notification email instead of large attachments.'],
+      ['Can you import our products from a spreadsheet or old catalogue?', 'Yes. Product data in a spreadsheet can be imported in one go, which is much faster than adding a large range by hand. If your products only exist in a PDF catalogue, the data is first organised into a spreadsheet so it can be checked before import.'],
+      ['Should our brochure be a free download or behind a form?', 'It depends on what you want from it. A free download can be found on Google and shared freely. Asking for contact details first gives you leads, but Google will not index the file. A common middle ground is to keep the main catalogue free and put a detailed guide behind a short form.'],
     ],
   },
   {
@@ -551,6 +555,10 @@ const PAGES = [
       ['Can you fix my existing Elementor site?', 'Yes. I can fix broken layouts, responsive issues and slow pages on existing Elementor websites.'],
       ['Will I be able to edit the pages myself?', 'Yes. I build with global styles and clean structure so editing text and images is simple.'],
       ['Do you work for agencies?', 'Yes. I often build Elementor sites white-label for agencies.'],
+      ['Should the Elementor Pro licence be in my name or yours?', 'Yours. If the licence sits in a developer\'s account and lapses, you lose updates and support, and Pro features can stop being editable. I can help you buy it in your business name and add it to the site.'],
+      ['Can you take over an Elementor site another developer built?', 'Yes. I start by reviewing the Elementor and Pro versions, the theme, the add-ons and how the pages are structured, then tell you what is worth keeping, what needs cleaning up and what it would cost, before any work starts.'],
+      ['Is Elementor bad for SEO?', 'No. Google looks at your content, headings, links and speed, not at which builder made the page. An Elementor page with the right heading tags, a sensible structure and good loading speed can rank as well as any other, which is why I build with those in mind.'],
+      ['Do you use Elementor add-on plugins?', 'Only when the site needs a widget that Elementor and Elementor Pro do not have, and then one well-maintained add-on at most. Several add-on packs loaded "just in case" are one of the most common reasons Elementor sites get slow.'],
     ],
   },
   {
@@ -605,6 +613,10 @@ const PAGES = [
       ['Will you set up conversion tracking?', 'Yes. I set up GA4 events, Meta Pixel and Google Ads conversion tracking for form submits and WhatsApp clicks.'],
       ['How fast can you deliver?', 'Most landing pages are ready in 3–5 working days once the content and offer are clear.'],
       ['Can you write the page content?', 'I can structure the page and help sharpen your copy for conversions.'],
+      ['Should my landing page be indexed by Google?', 'Usually not, if it is built only for ads. Campaign versions often repeat what your service pages say, so keeping them out of Google stops them competing with the pages you want to rank. Ads can still send visitors to a page that is not indexed.'],
+      ['Do I need a separate landing page for each ad group?', 'Only when the ad groups promise different things, such as a different service, offer or location. Ad groups with the same promise can share one page. The aim is that every visitor sees the words their ad used.'],
+      ['Is managing the Google Ads campaign part of this service?', 'No. This service covers the landing page and the conversion tracking your campaigns need to measure enquiries. Keywords, bids and budgets stay with you or the person who manages your ads, and I am happy to work alongside them.'],
+      ['Can I edit the landing page myself after launch?', 'Yes. Headlines, text, images and offers can be changed in the WordPress editor, and I show you how to duplicate the page for a test without breaking the tracking.'],
     ],
   },
   {
@@ -632,6 +644,10 @@ const PAGES = [
       ['Do you guarantee first-page rankings?', 'No honest SEO can guarantee rankings. I make sure your site is technically sound and optimized to compete.'],
       ['Do you do local SEO?', 'Yes. I optimize for local searches and help set up and link your Google Business Profile.'],
       ['Do you write blog content?', 'I focus on technical and on-page SEO, and can advise on which content to create.'],
+      ['Do you buy backlinks or offer link-building packages?', 'No. Bought links, link packages and private blog networks break Google\'s spam policies and can get a site penalised. I help you earn links the honest way, from suppliers, associations, partners and business profiles, and keep your site\'s foundations strong so those links count.'],
+      ['Why is Google not indexing some of my pages?', 'Common reasons are a noindex setting, the page missing from your sitemap or internal links, a canonical pointing elsewhere, or Google judging the page too thin or too similar to another. On a new site with few links, Google also crawls slowly. The audit finds which applies to each page.'],
+      ['Can you fix SEO on a site someone else built?', 'Yes. I work with your existing theme and SEO plugin, take a backup before any change, and only suggest switching plugins or rebuilding pages when the current setup is genuinely the problem.'],
+      ['Will SEO changes break my website?', 'They should not. Changes are made after a backup, risky ones are tried on staging first, and any URL that changes is redirected so visitors and Google land on the right page.'],
     ],
   },
   {

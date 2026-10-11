@@ -621,4 +621,329 @@ module.exports = {
 </ul>
 <p>Send me the pages you need and two or three sites you like, and you will get a fixed quote after a free review.</p>
 `,
+  'elementor-developer': `
+<h2>Hiring an Elementor developer: what the work involves</h2>
+<p>Every client website in my case studies is built with Elementor, on themes ranging from the lightweight Hello Elementor to Astra, OceanWP and dedicated directory and magazine themes. Here is how I handle new builds, design systems and repairs.</p>
+<h2>An Elementor project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> For an existing site, I check the Elementor and Pro versions, the theme and the add-ons first, so the price reflects what is really there.</li>
+<li><strong>Design system first.</strong> Global colours, fonts, button and form styles and layout widths are set before any page is built.</li>
+<li><strong>Templates, then pages.</strong> Header, footer and repeating layouts come next, then pages built with flat Flexbox containers and as few widgets as the design allows.</li>
+<li><strong>Work on staging,</strong> so your live site is untouched until you approve.</li>
+<li><strong>Testing</strong> at desktop, tablet and mobile breakpoints, with forms and popups tested end to end and speed checked on mobile.</li>
+<li><strong>Handover:</strong> a video-call walkthrough, a short note on which styles and templates control what, and a full backup.</li>
+</ol>
+<h2>Elementor or Elementor Pro?</h2>
+<p>The free version is a capable builder. Pro is a yearly licence that adds what many business sites need:</p>
+<table>
+<thead><tr><th>Feature</th><th>Elementor (free)</th><th>Elementor Pro</th></tr></thead>
+<tbody>
+<tr><td>Drag-and-drop editor, Flexbox containers and responsive controls</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Global colours, global fonts and theme styles</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Performance settings</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Theme Builder: headers, footers, post templates, archives and the 404 page</td><td>No</td><td>Yes</td></tr>
+<tr><td>Form widget with email notifications and integrations</td><td>No, a separate form plugin is used</td><td>Yes</td></tr>
+<tr><td>Popup Builder with triggers and display rules</td><td>No</td><td>Yes</td></tr>
+<tr><td>WooCommerce Builder: product, shop, cart and checkout layouts</td><td>No</td><td>Yes</td></tr>
+<tr><td>Dynamic content from post data and custom fields</td><td>No</td><td>Yes</td></tr>
+<tr><td>Custom CSS per element, custom fonts and icons</td><td>No</td><td>Yes</td></tr>
+</tbody>
+</table>
+<p>Features and plans change, so check Elementor's current plan details before buying. I do not push Pro on every site: a simple brochure site on a theme with good header and footer controls can do without it. <a href="/blog/elementor-pro-worth-it/">Is Elementor Pro worth it?</a> walks through the decision, and <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a> helps if you have not chosen a builder yet. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a> is an example built with Elementor Pro on the Hello Elementor theme.</p>
+<h2>Global styles: a design system inside Elementor</h2>
+<p>On most messy Elementor sites, every heading and button was styled by hand, so changing the brand colour means editing hundreds of widgets. A design system in Site Settings avoids that:</p>
+<ul>
+<li><strong>Global colours named by role,</strong> such as primary, accent, text and background, so a rebrand is one change.</li>
+<li><strong>Global fonts for each job:</strong> headings, body text and buttons, in one or two families with only the weights the design uses.</li>
+<li><strong>Theme styles</strong> for headings, buttons, links and form fields, so a new widget looks right the moment it is added.</li>
+<li><strong>Layout defaults:</strong> content width, container padding and breakpoints set once.</li>
+<li><strong>Templates for anything that repeats,</strong> such as the header, footer or a call-to-action band, edited in one place.</li>
+</ul>
+<p>If your designer works in Figma, its colour and text styles map straight onto these settings; see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+<h2>Keeping an Elementor site fast</h2>
+<p>Most slow Elementor sites are slow because of how they were built, not because of Elementor; <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> covers the causes. The habits I build with:</p>
+<ul>
+<li>Flat Flexbox containers instead of sections nested inside columns inside sections.</li>
+<li>One well-coded add-on pack at most, and only for widgets the site uses.</li>
+<li>A lightweight theme underneath; <a href="/blog/best-theme-for-elementor/">choosing a theme for Elementor</a> compares the options.</li>
+<li>Elementor's performance settings, such as improved asset and CSS loading, switched on and tested one at a time.</li>
+<li>Images sized for where they appear and served as WebP, and animations kept to a few meaningful places.</li>
+</ul>
+<p>Key pages are then checked against Core Web Vitals; <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> covers what LCP, INP and CLS mean. If an existing site needs deeper work on hosting, caching or the database, that is a <a href="/wordpress-speed-optimization/">speed optimization</a> job.</p>
+<h2>Layouts your team can edit without breaking them</h2>
+<ul>
+<li><strong>Content in fields, not hand-built pages.</strong> Posts, products and listings are ordinary WordPress content shown through templates, so adding one never means copying a layout. Every temple listing on <a href="/work/our-temples/">Our Temples</a> follows one template, and the 100-plus dishes on <a href="/work/southern-flavours/">Southern Flavours</a> are WooCommerce products managed from the dashboard.</li>
+<li><strong>Clear names in the Navigator,</strong> so "Pricing section" is easy to find instead of an unnamed container.</li>
+<li><strong>No duplicate mobile sections.</strong> Building a section twice, one hidden on desktop and one on mobile, means every text change is made twice. I adjust one section per breakpoint instead.</li>
+<li><strong>Editing limited where it helps.</strong> With Pro, the Role Manager can restrict a staff account to editing content, so text and images change while the layout stays put.</li>
+</ul>
+<h2>Fixing a broken Elementor site</h2>
+<p>The usual problems: the layout broke after an update, the editor is stuck loading, CSS changes do not show, or the mobile layout is a mess. The approach is the same each time:</p>
+<ol>
+<li>Take a full backup, and work on a staging copy where hosting allows.</li>
+<li>Check that Elementor, Elementor Pro, the theme and PHP are compatible. A free and Pro version out of step is a common cause.</li>
+<li>Regenerate Elementor's CSS files and clear every cache layer, from the plugin to the host and CDN.</li>
+<li>Switch add-ons off one at a time on staging to find a conflict. Rolling back a version is a stopgap, not the fix.</li>
+<li>Fix the cause, then retest every template on desktop, tablet and mobile.</li>
+</ol>
+<p>To try first, read <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a> or <a href="/blog/elementor-not-loading-fix/">Elementor stuck on loading</a>. Nulled copies of Elementor Pro are a common source of malware, so I only work with genuine licences.</p>
+<h2>What is included, and what is not</h2>
+<p>A build includes the design system, Theme Builder templates where Pro is used, layouts for every breakpoint, tested forms and popups, speed and SEO basics, and a walkthrough. Outside it, unless the quote says otherwise:</p>
+<ul>
+<li><strong>Elementor Pro and add-on licences,</strong> bought in your name so updates never depend on me.</li>
+<li><strong>Hosting, the domain, copywriting and photography.</strong></li>
+<li><strong>Rebuilding a site past repair.</strong> If patching would cost more than starting again, I say so and quote the rebuild separately.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>A landing page usually takes 3 to 5 working days once the content is clear, and a business website a few weeks, depending mostly on the number of unique templates. Fixes and speed work on an existing Elementor site usually take a few working days. Late content, a stack of add-ons or no staging on your plan stretch it.</p>
+<h2>Who this is for</h2>
+<ul>
+<li>Businesses that want a site they can edit without calling a developer for every change.</li>
+<li>Owners of an Elementor site that has become slow, broken or inconsistent.</li>
+<li>Designers and agencies who need Elementor builds under their own brand; see <a href="/blog/white-label-elementor-development/">white-label Elementor development</a>.</li>
+</ul>
+<p>It suits you less if you need editing locked to structured fields or a custom-coded theme for strict performance targets.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>WordPress admin and hosting logins, and whether your plan includes staging.</li>
+<li>Who bought the Elementor Pro licence, and which account it sits in.</li>
+<li>For a fix: what broke, when, and what changed just before, ideally with a screenshot or screen recording.</li>
+<li>For a new build: the design file or two or three sites you like, and who will edit the site.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A site built or repaired in Elementor, with global styles and templates you can see in Site Settings and Theme Builder.</li>
+<li>A video-call walkthrough and a short note on what controls what.</li>
+<li>Every login and licence in your name, and a full backup.</li>
+</ul>
+<p>Send me your website address or design for a free review and a fixed quote.</p>
+`,
+  'landing-page-design': `
+<h2>Landing page design for Google Ads: how I build one</h2>
+<p>A landing page has one job: turn a paid click into an enquiry. Here is how I plan, build and track them for Google Ads and Meta campaigns.</p>
+<h2>A landing page project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> You send the ad copy or keyword list, the offer and the action you want visitors to take. If an existing service page would work as well, I will say so.</li>
+<li><strong>Message map.</strong> I list each ad group and the promise its ads make, then decide whether one page covers them all or a different offer needs its own version.</li>
+<li><strong>Structure and copy.</strong> Headline, benefits, proof, a short FAQ and the call to action, in that order. I structure the page and sharpen your copy; the facts about your offer come from you.</li>
+<li><strong>Build.</strong> On your existing WordPress site or a separate campaign setup, mobile-first, with no main menu and nothing heavy above the fold.</li>
+<li><strong>Tracking.</strong> Form submissions, WhatsApp clicks and phone taps are set up as conversions in GA4, Google Ads and Meta Pixel, then confirmed with test enquiries before any ad money is spent.</li>
+<li><strong>Launch and variations.</strong> The page goes live with a thank-you page, and a duplicate is ready for testing a different headline or offer.</li>
+</ol>
+<h2>Message match: the page must repeat the ad</h2>
+<p>Someone who clicks an ad for "same-day AC repair in Kothrud" and lands on a page headed "Welcome to our company" wonders if they are in the right place, and many leave. Message match means the headline repeats the ad's promise in the same words, the offer and location are the same, and the button asks for the action the ad suggested.</p>
+<p>When ad groups promise different things, such as a free inspection in one and an annual contract in another, each gets its own version of the page. Google Ads also scores landing page experience in Quality Score, so relevance helps the ads too. <a href="/blog/landing-page-mistakes-google-ads/">Ten landing page mistakes that waste ad budget</a> shows what usually goes wrong.</p>
+<h2>One goal per page</h2>
+<p>A landing page asks for one thing; a menu, blog links or a second offer give visitors somewhere else to go. The form, WhatsApp button and phone number are fine together, because they are three routes to the same enquiry. The online consultation page on <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's</a> site works this way on a normal website: one instruction, send a WhatsApp message to book, with the message already written.</p>
+<h2>Forms, WhatsApp and calls: the conversion paths</h2>
+<ul>
+<li><strong>A short form.</strong> Name and phone are often enough for a first call. Ask more only when your team needs it before calling, and send leads to email, a Google Sheet or your CRM straight away.</li>
+<li><strong>WhatsApp with a pre-filled message</strong> that names the campaign, so your team knows where the chat came from. For many Indian buyers this is the easiest way to enquire from a phone.</li>
+<li><strong>Tap-to-call</strong> for people who would rather talk now.</li>
+<li><strong>A call-back request</strong> for buyers who want to talk at their own time. <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a> keeps "Request a Call Back" in the header and an "Enquire Now" button at the end of each section.</li>
+</ul>
+<p>If you are deciding between this and ads that open WhatsApp directly, <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs a landing page</a> compares the two.</p>
+<h2>Speed: you pay for every click that leaves</h2>
+<p>Most ad clicks come from phones, and a visitor who leaves while the page loads has already cost you the click. I keep landing pages light: compressed images sized for phones, no sliders or video backgrounds at the top, one or two fonts, and tracking tags loaded so they do not hold the page back. Each page is tested on a mid-range phone.</p>
+<h2>Tracking: knowing which ads bring enquiries</h2>
+<p>Without conversion tracking you can see clicks but not enquiries, and Google's automated bidding has nothing useful to learn from. What I set up:</p>
+<ul>
+<li>Conversions counted on successful submissions, through a thank-you page or the form's success event, not on clicks of the submit button; see <a href="/blog/thank-you-pages-forms/">why every form needs a thank-you page</a>.</li>
+<li>WhatsApp clicks and phone taps tracked as key events in GA4; <a href="/blog/ga4-events-explained/">GA4 events explained</a> covers how.</li>
+<li>Google Ads conversions through the Ads tag or imported from GA4, never both as primary for the same action, so no enquiry is counted twice.</li>
+<li>Meta Pixel events if you advertise on Facebook or Instagram.</li>
+</ul>
+<p><a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a> explains the choices in detail. A simple "How did you hear about us?" question backs up the numbers: <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a> asks it on its enquiry form, with options such as Google, Facebook ads, Instagram and word of mouth.</p>
+<h2>A/B testing basics</h2>
+<p>An A/B test splits visitors at random between two versions running at the same time, and compares how many enquire on each. Comparing this month with last is not a test. With modest traffic, test big differences such as the offer, the headline or form length, not button colours, and fix obvious problems like a slow page without testing at all. Google Ads and Meta both have experiment features that can often split traffic between two page URLs. <a href="/blog/landing-page-ab-testing/">A/B testing landing pages</a> covers sample sizes and setting up a fair test.</p>
+<h2>Landing page or website?</h2>
+<table>
+<thead><tr><th></th><th>Landing page</th><th>Website</th></tr></thead>
+<tbody>
+<tr><td>Purpose</td><td>Turn one audience into enquiries for one offer</td><td>Inform many types of visitor about everything you do</td></tr>
+<tr><td>Navigation</td><td>Usually none</td><td>Full menu and many pages</td></tr>
+<tr><td>Best traffic</td><td>Paid ads and campaigns</td><td>Google search, referrals and returning visitors</td></tr>
+<tr><td>Role in SEO</td><td>Small; campaign versions are often kept out of Google</td><td>Central; each service page can rank</td></tr>
+<tr><td>Typical build time</td><td>3 to 5 working days</td><td>A few weeks</td></tr>
+</tbody>
+</table>
+<p>Most businesses need both: the website builds credibility, and many visitors check it after seeing a landing page. <a href="/blog/landing-page-vs-website/">Landing page vs website</a> goes deeper, and if you need the full site, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2>What is included, and what is not</h2>
+<p>Every landing page includes the layout, form and WhatsApp, mobile-first build, speed work, conversion tracking, a thank-you page and a variation ready for testing. Outside the scope:</p>
+<ul>
+<li><strong>Running the ads.</strong> Keywords, bids and budgets stay with you or whoever manages your campaigns; I build the page and tracking to work with them.</li>
+<li><strong>Ad spend and paid tools,</strong> such as a CRM or testing platform subscription.</li>
+<li><strong>Writing everything from scratch and photography.</strong></li>
+<li><strong>Organic rankings.</strong> A campaign page is not built to rank; for that, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>Most landing pages are ready in 3 to 5 working days once the content and offer are clear. Late copy, waiting for access to Google Ads or Analytics, or several versions for different ad groups stretch it.</p>
+<h2>Who it is for</h2>
+<p>Businesses running or planning Google Ads or Meta campaigns, such as clinics, coaching institutes, property projects, manufacturers and local services, and agencies that need campaign pages for clients. A landing page brings no traffic on its own; without a campaign behind it, a strong service page is the better investment.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Your ad copy or keyword list, and the offer in one sentence.</li>
+<li>The one action you want, and who answers enquiries and how quickly.</li>
+<li>Proof you can use: testimonials with permission, project photos, client logos.</li>
+<li>User access to GA4, Google Ads and Meta Business, rather than shared passwords.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A live landing page and thank-you page on your own domain.</li>
+<li>Conversion tracking confirmed with test enquiries, and a short note on where to see leads in GA4 and Google Ads.</li>
+<li>A duplicate version ready for your first test, with every account in your name.</li>
+</ul>
+<p>Send me your ad or campaign plan for a free review and a fixed quote.</p>
+`,
+  'website-for-manufacturers': `
+<h2>Building a B2B manufacturer website, in detail</h2>
+<p>Procurement teams and importers usually shortlist suppliers online before anyone picks up the phone. This is how I plan and build websites for manufacturers and industrial suppliers in India: the catalogue, the RFQ forms, the capability pages and the details export buyers check. <a href="/blog/b2b-manufacturer-website-guide/">How manufacturers get more B2B and export enquiries</a> covers the wider strategy.</p>
+<h2>A manufacturer website project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send your current website, product list or PDF catalogue, and the markets you sell to.</li>
+<li><strong>Catalogue plan.</strong> We agree the categories, product families and names before any design, using the terms your buyers search with.</li>
+<li><strong>Content gathering.</strong> Specifications as tables, product photos and drawings, the machinery list, certificates and brochures.</li>
+<li><strong>Build on staging.</strong> Templates for category, product and capability pages, RFQ forms, and products imported from a spreadsheet where the catalogue is large.</li>
+<li><strong>SEO and testing.</strong> Titles, descriptions and schema on every product page, test RFQs sent to confirm each one reaches the right person, and every page checked on phones and desktops.</li>
+<li><strong>Launch and walkthrough.</strong> Search Console connected, a backup taken, and a video call showing your team how to add products and upload datasheets.</li>
+</ol>
+<h2>Catalogue, store or PDF brochure?</h2>
+<table>
+<thead><tr><th></th><th>PDF brochure on a basic site</th><th>Catalogue with quote requests</th><th>Online store with checkout</th></tr></thead>
+<tbody>
+<tr><td>Best for</td><td>Very small ranges that rarely change</td><td>Most manufacturers: prices depend on quantity and specification</td><td>Standard items sold at fixed prices, including spares</td></tr>
+<tr><td>How buyers enquire</td><td>Phone or email, after downloading</td><td>Request a Quote on every product, plus WhatsApp</td><td>Add to cart and pay online</td></tr>
+<tr><td>Found on Google</td><td>Weakly; one file covers everything</td><td>Strongly; each product family has its own page</td><td>Strongly, with product pages</td></tr>
+<tr><td>Updating</td><td>Re-export and re-upload the PDF</td><td>Edit a product in the dashboard</td><td>Edit products, stock and prices in the dashboard</td></tr>
+</tbody>
+</table>
+<p>Most B2B sites are best served by a catalogue with quote requests. If you also sell standard items online, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<h2>Structuring the product catalogue</h2>
+<p>The basics are to group products by type, then by application. Beyond that, these decisions make a catalogue work:</p>
+<ul>
+<li><strong>Family pages or single products.</strong> When items differ only by size or rating, one product family page with a full specification table usually beats forty near-identical pages that Google may treat as duplicates.</li>
+<li><strong>Organise by how buyers specify.</strong> <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a generator rental company, splits its fleet into seven capacity bands, each with its own page covering typical uses, what affects the rental price and questions specific to that size.</li>
+<li><strong>Search that understands model numbers,</strong> and filters by capacity, material or size once the range is large.</li>
+<li><strong>Specifications as real text,</strong> not images, so buyers can copy them and Google can read them.</li>
+</ul>
+<p><a href="/blog/industrial-website-product-catalogue/">How to build a product catalogue website</a> goes through product page layouts in detail.</p>
+<h2>RFQ forms that give sales what it needs</h2>
+<p>A request for quote is not a contact form. The buyer wants a price, so the form should collect enough to prepare one without days of back-and-forth:</p>
+<ul>
+<li>The product name filled in automatically from the page the buyer was on.</li>
+<li>Quantity with a unit dropdown, the delivery city or country, and requirement details.</li>
+<li>Uploads for drawings and specifications in the formats your team opens, such as PDF, DWG or STEP.</li>
+<li>Contact details last, and the page address captured so sales knows what the buyer was viewing.</li>
+</ul>
+<p>On <a href="/work/vansh-group/">Vansh Group</a>, an electronics OEM, the enquiry form has a service dropdown (product, PCB, part or tool development), so every enquiry arrives tagged with the kind of work needed. <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a> covers routing and follow-up.</p>
+<h2>Capability and infrastructure pages</h2>
+<p>Large buyers want to know whether you make things yourself. Name your machines and facilities instead of writing "state-of-the-art infrastructure". Vansh Group's site names a tool room, power press machines, an SMT room and injection moulding machines, gives three manufacturing units in Northern India, introduces the leadership team and shows testimonials with each person's name, title and company. Add production capacity, your quality checks and real photos of the shop floor, not stock images. The <a href="/blog/website-trust-signals-checklist/">website trust signals checklist</a> lists what else buyers look for.</p>
+<h2>Certifications and compliance</h2>
+<p>Show the certifications you actually hold, such as ISO, BIS or CE where relevant, with the certificate number, scope and validity date, and a PDF copy buyers can verify. Remove any that have lapsed. Product-level compliance belongs on product pages: Sahni Power Solutions refers to CPCB-IV+ emission standards and Karnataka State Pollution Control Board noise limits for its silent units, right where buyers need them.</p>
+<h2>Export buyers and multilingual sites</h2>
+<ul>
+<li>Clear English with correct technical terms, and international units where buyers expect them.</li>
+<li>Countries served, minimum order quantities, typical lead times and shipping terms such as FOB or CIF, stated only where accurate.</li>
+<li>Translated pages for key markets, each language on its own URL with hreflang tags, written or checked by a fluent speaker; see <a href="/blog/hreflang-multilingual-seo-india/">hreflang and multilingual SEO</a>.</li>
+<li>Hosting or a CDN that keeps the site fast for overseas visitors.</li>
+</ul>
+<p><a href="/blog/website-for-export-businesses/">Websites for export businesses</a> covers what international buyers check first.</p>
+<h2>PDFs and brochures that help SEO</h2>
+<p>Buyers still ask for a catalogue to forward internally. Vansh Group offers its company profile and two product catalogues as PDF downloads. Google can index PDFs, but only when they contain real text, are linked from a crawlable page and are not locked behind a form. Every important product should also have a web page, with the PDF as the printable companion. I upload brochures with descriptive file names, a proper document title, and your phone, WhatsApp and website inside the file, compressed for mobile data. <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs and brochures</a> explains the details.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every manufacturer site includes. These are separate or provided by you:</p>
+<ul>
+<li><strong>Technical specifications and certificates.</strong> They must come from you so they are accurate.</li>
+<li><strong>Factory photography, video and translations.</strong> I can advise on what to shoot and how to brief a translator.</li>
+<li><strong>Ongoing SEO and marketplace listings</strong> such as IndiaMART; for search work after launch, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>Usually 2 to 3 weeks once content is ready, depending on the number of products and pages. Large catalogues, product data that needs cleaning, extra languages and slow approvals stretch it.</p>
+<h2>Who it is for</h2>
+<p>Manufacturers, OEMs, fabricators, industrial suppliers and exporters selling to procurement teams in India or abroad, and companies whose current site is an outdated brochure. If you sell mainly through IndiaMART and never send buyers to your own site, start there first.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Your product list in a spreadsheet: names, model numbers, categories and key specifications.</li>
+<li>Existing catalogues, datasheets and certificates with their validity dates.</li>
+<li>Machinery, capacity and quality details, and photos of your facility.</li>
+<li>Who handles enquiries for each product line or region, and your export markets.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A website on hosting in your name, with a catalogue your team can update from the dashboard.</li>
+<li>RFQ forms tested to reach the right inbox, and brochures set up to be found.</li>
+<li>Search Console connected, a walkthrough on adding products, and a full backup.</li>
+</ul>
+<p>Send me your product list or current catalogue for a free review and a fixed quote.</p>
+`,
+  'wordpress-seo-services': `
+<h2>Technical SEO for WordPress: what I actually do</h2>
+<p>Many WordPress sites are not held back by a missing keyword. They are held back by pages Google cannot reach, duplicate versions competing with each other, slow templates or a setting that quietly tells Google to stay away. This is how I find and fix those problems, what to expect afterwards, and what I will not do.</p>
+<h2>An SEO project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> You send the website address and the searches you want to be found for. I look at what Google has indexed and send a fixed quote for the audit and fixes.</li>
+<li><strong>Access.</strong> You add me as a user in Search Console and Google Analytics, and give me a WordPress login. If Search Console is not set up yet, that comes first.</li>
+<li><strong>Technical audit.</strong> Crawling, indexing, Core Web Vitals, schema and internal links, checked in the order below.</li>
+<li><strong>A plain-English report.</strong> Every issue with why it matters, ranked by impact, so the fixes that unblock the most pages come first.</li>
+<li><strong>Fixes on your site.</strong> I make the changes myself rather than handing you a list, after a backup and on staging where the change is risky.</li>
+<li><strong>On-page work</strong> on your key pages, then a follow-up check in Search Console as Google recrawls.</li>
+</ol>
+<h2>The technical audit</h2>
+<h3>Crawling and indexing</h3>
+<p>I compare three lists: what a crawler finds by following your links, what your XML sitemap contains, and what Search Console reports as indexed. Pages in the sitemap with no internal links, junk URLs Google keeps finding, and important pages Google has chosen to skip all show up quickly. I also check for accidental noindex settings, the "discourage search engines" box left ticked after launch, thin tag and attachment pages, canonicals, redirect chains and broken links. <a href="/blog/technical-seo-audit-wordpress/">The WordPress technical SEO audit checklist</a> lists every check.</p>
+<h3>Core Web Vitals</h3>
+<p>Search Console's Core Web Vitals report and PageSpeed Insights show which templates are slow for real visitors. Quick wins are fixed as part of the SEO work; if the cause is hosting, a heavy theme or the database, that becomes a <a href="/wordpress-speed-optimization/">speed optimization</a> job.</p>
+<h3>Schema markup</h3>
+<p>Structured data for your business, services, products, articles and breadcrumbs, checked with Google's testing tools. To be honest about it: schema helps Google understand a page, but it does not guarantee rich results, and FAQ rich results have been limited to a small group of sites since 2023. <a href="/blog/schema-markup-explained/">Schema markup explained</a> covers what is still worth adding.</p>
+<h3>Internal links</h3>
+<p>Pages with no links pointing to them, key pages buried several clicks deep, and blog posts that never link to the service they relate to. Internal links are one of the few ranking signals entirely in your control. On <a href="/work/india-automation-hub/">India Automation Hub</a>, every subcategory, from PLC and SCADA to OT security, has its own archive, and each post card carries its category tag, so readers and crawlers can move between related articles.</p>
+<h2>On-page work</h2>
+<ul>
+<li><strong>One page per search.</strong> I map each target search to one page, so two pages do not compete for the same phrase.</li>
+<li><strong>Titles and descriptions</strong> written to fit in results without being cut off, leading with the words searchers use.</li>
+<li><strong>Headings, alt text and URLs,</strong> with any changed URL redirected so existing visibility is kept.</li>
+<li><strong>Content gaps.</strong> I do not write your blog, but I tell you which pages or answers are missing and what each should cover.</li>
+</ul>
+<p><a href="/blog/on-page-seo-checklist/">The on-page SEO checklist</a> is the list I work through for each page.</p>
+<h2>Local SEO with Google Business Profile</h2>
+<p>For businesses serving a city or region, the Business Profile often brings more enquiries than the website itself. I help you set it up or improve it: the right primary category, services, service areas or address, hours, photos, and a link to the most relevant page rather than always the homepage. The profile stays in your business Google account, and Google may ask you to complete verification yourself. On the website side, your name, address and phone match the profile exactly and LocalBusiness schema confirms them. Service pages and FAQs should use the words local customers search with: <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, for example, names Bangalore localities such as Whitefield and Peenya alongside its Pan India service. Reviews come from real customers you ask, never bought or written for you. <a href="/blog/google-business-profile-checklist/">The Google Business Profile checklist</a> covers each setting.</p>
+<h2>Search Console setup and monitoring</h2>
+<p>Search Console is set up as a domain property in your Google account, with the sitemap submitted and Google Analytics 4 linked; see <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a>. After the fixes I watch the Pages report as Google recrawls, request indexing for key pages, and check for manual actions and security issues. Not every "not indexed" status is a problem, and <a href="/blog/search-console-page-indexing-errors/">page indexing errors explained</a> shows which ones matter.</p>
+<h2>One-time SEO project or ongoing help?</h2>
+<table>
+<thead><tr><th></th><th>SEO plugin on its own</th><th>One-time audit and fixes</th><th>Ongoing monthly help</th></tr></thead>
+<tbody>
+<tr><td>What it covers</td><td>Titles, sitemaps and basic schema, if configured well</td><td>Crawling, indexing, schema, internal links, on-page work and local setup</td><td>Monitoring Search Console, fixing new issues and optimising new pages</td></tr>
+<tr><td>What it cannot do</td><td>Decide which page targets which search, or fix structural problems</td><td>Keep up with changes you make later</td><td>Replace content and links you earn yourself</td></tr>
+<tr><td>Good for</td><td>Small sites with clean foundations</td><td>Sites that are live but not being found, or after a redesign</td><td>Sites that add pages often, and stores</td></tr>
+<tr><td>What you pay</td><td>Nothing, or a premium licence</td><td>A fixed quote after a free review</td><td>A fixed monthly quote</td></tr>
+</tbody>
+</table>
+<h2>Honest timelines, and no guarantees</h2>
+<p>The audit and fixes for a typical business site take a few working days; a large store or a site with years of problems takes longer. Google's response is slower. Technical fixes take effect as Google recrawls your site, usually over a few weeks. Specific long-tail searches often take a few months, and competitive searches six months or more, especially on a new domain with few links. These are patterns, not promises; <a href="/blog/how-long-does-seo-take/">how long SEO takes</a> explains why. Nobody can honestly guarantee first-page rankings, and anyone who does is a red flag.</p>
+<h2>What is included, and what is not</h2>
+<p>Included: the audit, the technical and on-page fixes, schema, Search Console and GA4 setup, and Business Profile help. Not included:</p>
+<ul>
+<li><strong>Buying links, link packages, private blog networks or link swaps.</strong> I never do these; they risk penalties. <a href="/blog/ethical-link-building-small-business/">Ethical link building</a> shows what works instead.</li>
+<li><strong>Fake reviews,</strong> or copy-paste pages for every locality.</li>
+<li><strong>Writing blog articles every month,</strong> and running Google Ads.</li>
+<li><strong>Rebuilding the site.</strong> If the structure is the problem, a <a href="/website-redesign/">redesign</a> is quoted separately with redirects planned.</li>
+</ul>
+<h2>Who it is for</h2>
+<p>Business sites that are live but not getting found, sites whose pages sit in "Discovered" or "Crawled, currently not indexed", sites that lost traffic after a redesign or move, and local businesses that want to show up in Maps. It suits you less if you want guaranteed positions by a date.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>User access to Search Console and GA4, and a WordPress login.</li>
+<li>Your services or products in order of importance, and the areas you serve.</li>
+<li>The searches you think customers use, and two or three competitors.</li>
+<li>Your site's history: redesigns, domain changes and any past SEO or link building.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A prioritised audit report, with every fix made on your site listed.</li>
+<li>A map of which page targets which search, and the content worth adding next.</li>
+<li>Search Console and GA4 in your own Google account, with notes on what to watch.</li>
+</ul>
+<p>Send me your website address for a free review and a fixed quote.</p>
+`,
 };

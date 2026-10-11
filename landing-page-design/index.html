@@ -102,6 +102,38 @@
             "@type": "Answer",
             "text": "I can structure the page and help sharpen your copy for conversions."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Should my landing page be indexed by Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not, if it is built only for ads. Campaign versions often repeat what your service pages say, so keeping them out of Google stops them competing with the pages you want to rank. Ads can still send visitors to a page that is not indexed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a separate landing page for each ad group?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only when the ad groups promise different things, such as a different service, offer or location. Ad groups with the same promise can share one page. The aim is that every visitor sees the words their ad used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is managing the Google Ads campaign part of this service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This service covers the landing page and the conversion tracking your campaigns need to measure enquiries. Keywords, bids and budgets stay with you or the person who manages your ads, and I am happy to work alongside them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I edit the landing page myself after launch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Headlines, text, images and offers can be changed in the WordPress editor, and I show you how to duplicate the page for a test without breaking the tracking."
+          }
         }
       ]
     }
@@ -201,6 +233,87 @@
         </div>
       </div>
     </section>
+    <section class="section lp-guide">
+      <div class="container">
+        <div class="post-body lp-guide-body">
+<h2>Landing page design for Google Ads: how I build one</h2>
+<p>A landing page has one job: turn a paid click into an enquiry. Here is how I plan, build and track them for Google Ads and Meta campaigns.</p>
+<h2>A landing page project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> You send the ad copy or keyword list, the offer and the action you want visitors to take. If an existing service page would work as well, I will say so.</li>
+<li><strong>Message map.</strong> I list each ad group and the promise its ads make, then decide whether one page covers them all or a different offer needs its own version.</li>
+<li><strong>Structure and copy.</strong> Headline, benefits, proof, a short FAQ and the call to action, in that order. I structure the page and sharpen your copy; the facts about your offer come from you.</li>
+<li><strong>Build.</strong> On your existing WordPress site or a separate campaign setup, mobile-first, with no main menu and nothing heavy above the fold.</li>
+<li><strong>Tracking.</strong> Form submissions, WhatsApp clicks and phone taps are set up as conversions in GA4, Google Ads and Meta Pixel, then confirmed with test enquiries before any ad money is spent.</li>
+<li><strong>Launch and variations.</strong> The page goes live with a thank-you page, and a duplicate is ready for testing a different headline or offer.</li>
+</ol>
+<h2>Message match: the page must repeat the ad</h2>
+<p>Someone who clicks an ad for "same-day AC repair in Kothrud" and lands on a page headed "Welcome to our company" wonders if they are in the right place, and many leave. Message match means the headline repeats the ad's promise in the same words, the offer and location are the same, and the button asks for the action the ad suggested.</p>
+<p>When ad groups promise different things, such as a free inspection in one and an annual contract in another, each gets its own version of the page. Google Ads also scores landing page experience in Quality Score, so relevance helps the ads too. <a href="/blog/landing-page-mistakes-google-ads/">Ten landing page mistakes that waste ad budget</a> shows what usually goes wrong.</p>
+<h2>One goal per page</h2>
+<p>A landing page asks for one thing; a menu, blog links or a second offer give visitors somewhere else to go. The form, WhatsApp button and phone number are fine together, because they are three routes to the same enquiry. The online consultation page on <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's</a> site works this way on a normal website: one instruction, send a WhatsApp message to book, with the message already written.</p>
+<h2>Forms, WhatsApp and calls: the conversion paths</h2>
+<ul>
+<li><strong>A short form.</strong> Name and phone are often enough for a first call. Ask more only when your team needs it before calling, and send leads to email, a Google Sheet or your CRM straight away.</li>
+<li><strong>WhatsApp with a pre-filled message</strong> that names the campaign, so your team knows where the chat came from. For many Indian buyers this is the easiest way to enquire from a phone.</li>
+<li><strong>Tap-to-call</strong> for people who would rather talk now.</li>
+<li><strong>A call-back request</strong> for buyers who want to talk at their own time. <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a> keeps "Request a Call Back" in the header and an "Enquire Now" button at the end of each section.</li>
+</ul>
+<p>If you are deciding between this and ads that open WhatsApp directly, <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs a landing page</a> compares the two.</p>
+<h2>Speed: you pay for every click that leaves</h2>
+<p>Most ad clicks come from phones, and a visitor who leaves while the page loads has already cost you the click. I keep landing pages light: compressed images sized for phones, no sliders or video backgrounds at the top, one or two fonts, and tracking tags loaded so they do not hold the page back. Each page is tested on a mid-range phone.</p>
+<h2>Tracking: knowing which ads bring enquiries</h2>
+<p>Without conversion tracking you can see clicks but not enquiries, and Google's automated bidding has nothing useful to learn from. What I set up:</p>
+<ul>
+<li>Conversions counted on successful submissions, through a thank-you page or the form's success event, not on clicks of the submit button; see <a href="/blog/thank-you-pages-forms/">why every form needs a thank-you page</a>.</li>
+<li>WhatsApp clicks and phone taps tracked as key events in GA4; <a href="/blog/ga4-events-explained/">GA4 events explained</a> covers how.</li>
+<li>Google Ads conversions through the Ads tag or imported from GA4, never both as primary for the same action, so no enquiry is counted twice.</li>
+<li>Meta Pixel events if you advertise on Facebook or Instagram.</li>
+</ul>
+<p><a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a> explains the choices in detail. A simple "How did you hear about us?" question backs up the numbers: <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a> asks it on its enquiry form, with options such as Google, Facebook ads, Instagram and word of mouth.</p>
+<h2>A/B testing basics</h2>
+<p>An A/B test splits visitors at random between two versions running at the same time, and compares how many enquire on each. Comparing this month with last is not a test. With modest traffic, test big differences such as the offer, the headline or form length, not button colours, and fix obvious problems like a slow page without testing at all. Google Ads and Meta both have experiment features that can often split traffic between two page URLs. <a href="/blog/landing-page-ab-testing/">A/B testing landing pages</a> covers sample sizes and setting up a fair test.</p>
+<h2>Landing page or website?</h2>
+<table>
+<thead><tr><th></th><th>Landing page</th><th>Website</th></tr></thead>
+<tbody>
+<tr><td>Purpose</td><td>Turn one audience into enquiries for one offer</td><td>Inform many types of visitor about everything you do</td></tr>
+<tr><td>Navigation</td><td>Usually none</td><td>Full menu and many pages</td></tr>
+<tr><td>Best traffic</td><td>Paid ads and campaigns</td><td>Google search, referrals and returning visitors</td></tr>
+<tr><td>Role in SEO</td><td>Small; campaign versions are often kept out of Google</td><td>Central; each service page can rank</td></tr>
+<tr><td>Typical build time</td><td>3 to 5 working days</td><td>A few weeks</td></tr>
+</tbody>
+</table>
+<p>Most businesses need both: the website builds credibility, and many visitors check it after seeing a landing page. <a href="/blog/landing-page-vs-website/">Landing page vs website</a> goes deeper, and if you need the full site, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2>What is included, and what is not</h2>
+<p>Every landing page includes the layout, form and WhatsApp, mobile-first build, speed work, conversion tracking, a thank-you page and a variation ready for testing. Outside the scope:</p>
+<ul>
+<li><strong>Running the ads.</strong> Keywords, bids and budgets stay with you or whoever manages your campaigns; I build the page and tracking to work with them.</li>
+<li><strong>Ad spend and paid tools,</strong> such as a CRM or testing platform subscription.</li>
+<li><strong>Writing everything from scratch and photography.</strong></li>
+<li><strong>Organic rankings.</strong> A campaign page is not built to rank; for that, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>Most landing pages are ready in 3 to 5 working days once the content and offer are clear. Late copy, waiting for access to Google Ads or Analytics, or several versions for different ad groups stretch it.</p>
+<h2>Who it is for</h2>
+<p>Businesses running or planning Google Ads or Meta campaigns, such as clinics, coaching institutes, property projects, manufacturers and local services, and agencies that need campaign pages for clients. A landing page brings no traffic on its own; without a campaign behind it, a strong service page is the better investment.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Your ad copy or keyword list, and the offer in one sentence.</li>
+<li>The one action you want, and who answers enquiries and how quickly.</li>
+<li>Proof you can use: testimonials with permission, project photos, client logos.</li>
+<li>User access to GA4, Google Ads and Meta Business, rather than shared passwords.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A live landing page and thank-you page on your own domain.</li>
+<li>Conversion tracking confirmed with test enquiries, and a short note on where to see leads in GA4 and Google Ads.</li>
+<li>A duplicate version ready for your first test, with every account in your name.</li>
+</ul>
+<p>Send me your ad or campaign plan for a free review and a fixed quote.</p>
+        </div>
+      </div>
+    </section>
 
     <section class="section" id="work">
       <div class="container">
@@ -288,6 +401,22 @@
           <details>
             <summary>Can you write the page content?</summary>
             <p>I can structure the page and help sharpen your copy for conversions.</p>
+          </details>
+          <details>
+            <summary>Should my landing page be indexed by Google?</summary>
+            <p>Usually not, if it is built only for ads. Campaign versions often repeat what your service pages say, so keeping them out of Google stops them competing with the pages you want to rank. Ads can still send visitors to a page that is not indexed.</p>
+          </details>
+          <details>
+            <summary>Do I need a separate landing page for each ad group?</summary>
+            <p>Only when the ad groups promise different things, such as a different service, offer or location. Ad groups with the same promise can share one page. The aim is that every visitor sees the words their ad used.</p>
+          </details>
+          <details>
+            <summary>Is managing the Google Ads campaign part of this service?</summary>
+            <p>No. This service covers the landing page and the conversion tracking your campaigns need to measure enquiries. Keywords, bids and budgets stay with you or the person who manages your ads, and I am happy to work alongside them.</p>
+          </details>
+          <details>
+            <summary>Can I edit the landing page myself after launch?</summary>
+            <p>Yes. Headlines, text, images and offers can be changed in the WordPress editor, and I show you how to duplicate the page for a test without breaking the tracking.</p>
           </details>
         </div>
       </div>
