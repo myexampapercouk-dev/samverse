@@ -23993,6 +23993,8 @@ Template: astra
 </ul>
 <p>Test everything in the gateway's test mode, including failed and cancelled payments, before you go live.</p>
 
+<p>Already live and seeing failed payments, or paid orders stuck at "Pending payment"? See <a href="/blog/woocommerce-payment-gateway-not-working-india/">how to fix a payment gateway that isn't working in WooCommerce</a>, from webhooks to test and live keys.</p>
+
 <h2>A quick comparison checklist</h2>
 <p>Use a simple table like this to compare two or three shortlisted gateways:</p>
 <table>
@@ -39560,6 +39562,8 @@ Description: Custom code for this website.
   <li>The checkout loads quickly: checkout pages can't be fully cached, so hosting quality and the number of plugins matter here</li>
 </ul>
 
+<p>If the checkout won't load at all, spins forever or ignores the "Place order" button, that's a fault rather than a design problem; see <a href="/blog/woocommerce-checkout-not-working-fix/">how to fix a WooCommerce checkout that isn't working</a>.</p>
+
 <h2>Test with real orders</h2>
 <p>Test mode is useful, but only real orders show you what customers actually experience. Before launch, and after any major update:</p>
 <ol>
@@ -40061,6 +40065,8 @@ Description: Custom code for this website.
   <li><strong>Test again</strong> after each update</li>
 </ol>
 <p>If an update keeps failing, check your hosting panel for disk space and resource-limit warnings, and confirm the plugin supports your PHP and WordPress versions.</p>
+
+<p>If the re-run stops again with "Download failed", "The package could not be installed" or "Another update is currently in progress", work through <a href="/blog/wordpress-update-failed-fix/">how to fix a failed WordPress update</a>.</p>
 
 <h2>When deleting the file isn't enough</h2>
 <ul>
@@ -42714,6 +42720,263 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Many search plugins also keep their own log, including searches that returned nothing. That's the most useful list of all: each zero-result search is a missing synonym, a product search can't find, or a gap in what you offer. Review it monthly.</p>
 
 <p>If your site search returns the wrong results or slows the site down and you'd like it fixed properly, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-checkout-not-working-fix',
+    seoTitle: 'WooCommerce Checkout Not Working? How to Find and Fix It',
+    title: 'WooCommerce Checkout Not Working? Fixing Endless Spinners, Errors and a Dead "Place Order" Button',
+    description: 'Fix a WooCommerce checkout that won\'t load, spins forever or ignores "Place order": caching, script conflicts, block checkout, gateways, SSL and sessions.',
+    date: '2026-10-11',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-maintenance'],
+    body: `
+<p>A broken checkout is one of the costliest faults a store can have, because the shoppers who reach it have already decided to buy. The checkout page won't load, a spinner never stops, the "Place order" button does nothing, or the shopper sees "There was an error processing your order". Here are the usual causes in a sensible order. WooCommerce changes quickly, so menu names may differ slightly on your version.</p>
+
+<h2>First, see what the browser is telling you</h2>
+<p>Open the checkout in a private window, add a product and press F12 to open the developer tools. Two tabs matter:</p>
+<ul>
+<li><strong>Console:</strong> red errors mean a script failed. One broken script anywhere on the page can stop the checkout's own scripts.</li>
+<li><strong>Network:</strong> click "Place order" and watch the requests. The classic checkout sends requests containing <code>wc-ajax</code>; the block checkout uses the Store API, with <code>wc/store</code> in the address. Click a failing request to see its status and response.</li>
+</ul>
+<table>
+<thead><tr><th>What you see</th><th>Likely cause</th></tr></thead>
+<tbody>
+<tr><td>403 on checkout requests</td><td>A firewall, security plugin or CDN rule blocking them</td></tr>
+<tr><td>500 error</td><td>A PHP error in a plugin or theme; check the logs</td></tr>
+<tr><td>502 or 504</td><td>The server timed out, often waiting on a gateway or shipping service</td></tr>
+<tr><td>A response full of HTML or PHP warnings</td><td>Something printed output where the checkout expected clean data</td></tr>
+<tr><td>No request at all</td><td>A JavaScript error, or the button is covered or blocked</td></tr>
+</tbody>
+</table>
+<p>"There was an error processing your order" is a general message. It often means the server sent back something the checkout couldn't read, such as a PHP warning or fatal error. Check WooCommerce → Status → Logs, where fatal errors can be recorded, and your hosting error log at the time of your test.</p>
+
+<h2>Cart and checkout pages must not be cached</h2>
+<p>Cart, checkout and My Account pages are personal to each shopper, so they must never come from a page cache. WooCommerce tells caching plugins to skip them, and most do, but server caches, CDN "cache everything" rules and some optimisation plugins can still serve a stored copy. The result: an empty cart, "Sorry, your session has expired", or a spinner that never finishes because the page carries an expired security token.</p>
+<p>Exclude these pages in every cache layer, including your host's cache and any CDN, and let shoppers with items in their cart bypass cached pages. Settings that combine, defer or delay JavaScript are just as common a cause: delaying jQuery, WooCommerce's scripts or the gateway's script often breaks checkout. Exclude the checkout from them, clear every cache and test again. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers each layer.</p>
+
+<h2>JavaScript and plugin conflicts</h2>
+<p>The checkout relies on JavaScript, so it's often the first thing a conflict breaks. Usual suspects:</p>
+<ul>
+<li>Checkout field editors, pin code checkers and delivery date plugins</li>
+<li>Captcha or anti-spam plugins on the checkout form</li>
+<li>Pop-ups, chat widgets or cookie banners covering "Place order" on a phone</li>
+<li>Tracking scripts with errors of their own</li>
+<li>Outdated WooCommerce template copies in your theme; WooCommerce → Status flags these</li>
+<li>Dull ones: a required field hidden by CSS, or an error shown above where the shopper has scrolled</li>
+</ul>
+<p>To find the culprit, use a staging copy: switch to a default theme such as Storefront, deactivate everything except WooCommerce and your gateway, then reactivate plugins one at a time. The Health Check &amp; Troubleshooting plugin can do this for your login session only. See <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find and fix plugin conflicts</a>.</p>
+
+<h2>Block checkout or classic shortcode checkout?</h2>
+<p>Recent WooCommerce versions set up new stores with the block-based Checkout, while many older stores still use the classic <code>[woocommerce_checkout]</code> shortcode. WooCommerce → Settings → Advanced shows which page is your checkout; edit it to see which one it contains. A missing checkout page setting, or two pages competing for the job, is a fault in itself.</p>
+<p>Block checkout problems to check:</p>
+<ul>
+<li><strong>Missing payment methods or fields:</strong> extensions built only for the classic checkout may not appear. Update them and check their block support.</li>
+<li><strong>Blocked REST API:</strong> the block checkout needs the WordPress REST API, so security settings that switch it off for visitors can stop orders.</li>
+</ul>
+<p>If an essential plugin doesn't support blocks yet, going back to the classic checkout is a valid fix; recent versions offer a switch in the Checkout block's settings. Try it on staging first. The trade-offs are covered in <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimization</a>.</p>
+
+<h2>Payment plugin issues</h2>
+<p>If the form submits but the payment step fails, suspect the gateway plugin: an outdated version, test keys on the live site, a store currency it doesn't support, or a payment popup blocked by the browser, an ad blocker or a strict content security policy. Turn on its debug log if it has one.</p>
+<p>A quick staging test: temporarily enable an offline method such as Cash on Delivery. If orders go through with that but not with the gateway, the checkout is fine and the gateway plugin, its settings or its support team are your next stop. If customers pay but orders stay at "Pending payment", the cause is usually a missing webhook.</p>
+
+<h2>SSL, mixed content, sessions and nonces</h2>
+<p>Checkout scripts and payment forms need a clean HTTPS page. If files still load over http://, browsers block them and parts of the checkout silently fail. In Settings → General, both addresses should start with https:// and match the www or non-www form your site redirects to. Fix leftover http:// links at the source; see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content warnings</a>.</p>
+<p>WooCommerce keeps each cart in a session linked to a browser cookie. Lose the cookie and the cart empties at checkout: typically a www mismatch, a cached page, a rule stripping cookies or a database problem.</p>
+<p>Checkout forms also carry nonces, short-lived security tokens. Send an expired one from a cached or long-open page and WooCommerce rejects the order with a message such as "We were unable to process your order, please try again". Firewalls and bot protection can block the order request too, which shows as a 403; the firewall's log will name the rule.</p>
+
+<h2>A safe test routine</h2>
+<ol>
+<li><strong>Work on staging</strong> for anything beyond clearing a cache, and stop it emailing real customers.</li>
+<li><strong>Use the gateway's test mode,</strong> logged out in a private window and on a phone over mobile data.</li>
+<li><strong>Place a test order with each payment method</strong> while watching the Console and Network tabs.</li>
+<li><strong>Check the result:</strong> order status, emails, stock and the gateway's order notes.</li>
+<li><strong>Change one thing at a time,</strong> and note what you changed.</li>
+<li><strong>Finish on the live site</strong> with a real low-value order, then refund it.</li>
+</ol>
+<p>If checkout broke straight after an update, roll that update back first and investigate on staging.</p>
+
+<p>Checkout still failing, or want the cause found without guesswork on your live store? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-payment-gateway-not-working-india',
+    seoTitle: 'Payment Gateway Not Working in WooCommerce (India): Fixes',
+    title: 'Payment Gateway Not Working in WooCommerce? Fixing Failed Payments and Pending Orders in India',
+    description: 'Razorpay, PayU, Cashfree, PhonePe or Paytm payments failing, or paid orders stuck in Pending payment? Check webhooks, keys, INR settings and firewall blocks.',
+    date: '2026-10-11',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-maintenance'],
+    body: `
+<p>When online payments go wrong on an Indian WooCommerce store, it's usually one of two problems. Either customers can't pay at all, or they pay and the order stays at "Pending payment". Both can happen with Razorpay, PayU, Cashfree, PhonePe, Paytm or any other gateway, and the causes are mostly the same. Plugins and dashboards change often, so treat this as a checklist and follow your gateway's current documentation for exact settings.</p>
+
+<h2>First, work out which problem you have</h2>
+<table>
+<thead><tr><th>Symptom</th><th>Where to look first</th></tr></thead>
+<tbody>
+<tr><td>The gateway doesn't appear at checkout</td><td>Whether it's enabled in WooCommerce → Settings → Payments, the store currency, block checkout support</td></tr>
+<tr><td>An error before the payment page opens</td><td>API keys, test or live mode, account activation, your server reaching the gateway</td></tr>
+<tr><td>Payment fails on the gateway's page</td><td>The failure reason in the gateway dashboard; whether that method is enabled on your account</td></tr>
+<tr><td>Customer paid, order stuck at Pending payment</td><td>Webhooks and the return (callback) URL</td></tr>
+<tr><td>Customer paid, order cancelled</td><td>A late confirmation plus WooCommerce's hold stock setting</td></tr>
+</tbody>
+</table>
+<p>"Pending payment" means no payment has been confirmed yet; "Failed" means it was declined or didn't complete; "Processing" means it was received. If customers can't reach the payment step at all, the checkout itself may be at fault; see <a href="/blog/woocommerce-checkout-not-working-fix/">how to fix a WooCommerce checkout that isn't working</a>.</p>
+
+<h2>Webhooks, and why they matter</h2>
+<p>A gateway can tell your store about a payment in two ways:</p>
+<ul>
+<li><strong>The return redirect:</strong> after paying, the customer's browser returns to your site, which checks the payment and updates the order.</li>
+<li><strong>The webhook:</strong> the gateway's server sends a message straight to your site, whatever happens in the customer's browser.</li>
+</ul>
+<p>The redirect often fails: customers close the tab, switch to their UPI app and never return, or lose signal. Without a webhook, those paid orders stay pending. Set one up properly by:</p>
+<ul>
+<li>Using the exact webhook URL your plugin's settings or documentation gives</li>
+<li>Selecting the events the plugin's documentation lists</li>
+<li>Entering the same webhook secret in the gateway dashboard and the plugin, where a secret is used</li>
+<li>Creating live-mode webhooks separately from test-mode ones, if your gateway keeps them apart</li>
+</ul>
+<p>Some plugins create webhooks automatically, but confirm one exists in the dashboard. Many dashboards also log recent deliveries and your site's response, the quickest way to spot a problem.</p>
+
+<h2>API keys in test mode and live mode</h2>
+<p>Gateways issue separate credentials for test (sandbox) and live use. Mixing them up causes errors, and "successful" payments that exist only in test mode. Some keys show their mode at a glance (Razorpay's key IDs include "test" or "live"); otherwise check the dashboard.</p>
+<ul>
+<li>Switch the plugin to live mode and paste live keys only once your account is activated</li>
+<li>Copy keys without stray spaces, and update the plugin if you regenerate them</li>
+<li>When you copy the live site to staging, switch the staging copy to test keys</li>
+<li>If you've changed domain or switched between www and non-www, check the website registered with your gateway, as some gateways check where payments come from</li>
+</ul>
+
+<h2>Currency, payment methods and settings</h2>
+<p>In WooCommerce → Settings → General, check the currency is set to Indian rupee. Some gateway plugins hide themselves at checkout if the store currency isn't one they support, and multi-currency plugins that show overseas visitors another currency can make the gateway disappear or send an unexpected amount. International card payments usually need a separate activation; see <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a>.</p>
+<p>Also confirm each method you advertise (UPI, cards, net banking, wallets, EMI) is enabled on your gateway account, and that the plugin is up to date and supports your checkout type.</p>
+
+<h2>Callback URLs and firewall blocks</h2>
+<p>For webhooks and return redirects to work, the gateway must be able to reach your site. Common blockers:</p>
+<ul>
+<li>Security plugin rules, your host's server firewall or a CDN's bot protection treating gateway requests as suspicious</li>
+<li>Country blocking that also catches the servers your gateway sends from</li>
+<li>A password-protected staging site, or a maintenance or "coming soon" mode</li>
+<li>An old http:// or pre-migration address as the webhook URL; redirects may not be followed</li>
+<li>The return page being served from a page cache</li>
+</ul>
+<p>The status codes in the gateway's webhook log help: 403 usually means blocked, 404 a wrong URL and 500 a PHP error. Match the time against your firewall log, WooCommerce → Status → Logs and the plugin's debug log. Your server also needs outgoing access to the gateway's API, which an outdated server SSL setup or a host blocking outbound connections can break; your host can check. <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> shows where these rules live.</p>
+
+<h2>Paid, but not marked as paid</h2>
+<ol>
+<li><strong>Find the payment in the gateway dashboard</strong> by order number, email or phone, and confirm it succeeded. Some gateways treat authorised and captured payments differently, so check your capture settings in their docs.</li>
+<li><strong>Check the order notes</strong> in WooCommerce for a payment or transaction ID.</li>
+<li><strong>If the payment succeeded,</strong> change the order to Processing and add a private note with the gateway's payment ID. This normally sends the customer's order email and reduces stock if it wasn't reduced already.</li>
+<li><strong>Don't ask the customer to pay again</strong> until you've checked. If they did pay twice, refund the duplicate.</li>
+</ol>
+<p>Watch the hold stock setting too, under WooCommerce → Settings → Products → Inventory. With stock management on, WooCommerce cancels unpaid pending orders after that many minutes, so a late confirmation can arrive for an order that's already cancelled. Working webhooks make this rare; a very short hold time makes it likelier.</p>
+
+<h2>Reconcile with the gateway dashboard</h2>
+<p>Daily for busy stores, weekly otherwise, export the gateway's payments for a date range and compare them with your orders. Look for:</p>
+<ul>
+<li>Successful payments whose orders are still pending, failed or cancelled</li>
+<li>Processing orders with no matching payment, other than Cash on Delivery</li>
+<li>Refunds made in the gateway dashboard that don't show on the order, since they may not sync back</li>
+<li>Settlement reports that don't match the payouts in your bank account</li>
+</ul>
+<p>Keeping the payment ID on every order makes this quick.</p>
+
+<h2>Test changes safely</h2>
+<p>Try updates and setting changes on a <a href="/blog/staging-sites-explained/">staging site</a> with test keys, remembering that staging passwords can block webhooks. Test successful, failed and cancelled payments, and close the tab straight after paying to check the webhook alone updates the order. Finish with a real low-value UPI payment on a phone on the live site. If it still fails, give the gateway's support the order number, payment ID, time and exact error.</p>
+
+<p>Want your gateway, webhooks and order statuses set up and tested properly? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-maintenance/">WordPress maintenance</a> for checks after every update.</p>
+`,
+  },
+  {
+    slug: 'wordpress-update-failed-fix',
+    seoTitle: 'WordPress Update Failed? How to Fix Common Update Errors',
+    title: 'WordPress Update Failed? How to Fix "Download Failed", Locked Updates and Half-Finished Plugin Updates',
+    description: 'Fix WordPress "Update failed", "Download failed", "The package could not be installed" and "Another update is currently in progress" errors, step by step.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>WordPress updates usually take seconds, but sometimes they stop with "Update failed", "Download failed", "The package could not be installed" or "Another update is currently in progress". Sometimes a plugin update stops halfway. Your content is rarely affected, but a site that can't update falls behind on security fixes. Back up files and database before you retry anything.</p>
+<p>If visitors see "Briefly unavailable for scheduled maintenance", deal with that first; see <a href="/blog/wordpress-stuck-in-maintenance-mode/">WordPress stuck in maintenance mode</a>.</p>
+
+<h2>Read the exact message first</h2>
+<table>
+<thead><tr><th>Message</th><th>Usual cause</th></tr></thead>
+<tbody>
+<tr><td>Another update is currently in progress.</td><td>A core update lock that hasn't cleared</td></tr>
+<tr><td>Download failed.</td><td>The server couldn't fetch the update: a timeout, a blocked connection or a premium licence problem</td></tr>
+<tr><td>Update package not available.</td><td>Usually a premium plugin or theme without an active licence</td></tr>
+<tr><td>The package could not be installed.</td><td>A wrong or damaged zip, or no room to unpack it</td></tr>
+<tr><td>Could not create directory / Could not copy file.</td><td>File permissions, ownership or disk space</td></tr>
+<tr><td>WordPress asks for FTP details</td><td>WordPress can't write files directly, usually an ownership problem</td></tr>
+<tr><td>A plugin deactivates or disappears after updating</td><td>The update was interrupted, often by a timeout</td></tr>
+</tbody>
+</table>
+<p>"Update failed" on the Plugins screen is usually followed by one of these more specific messages. Copy any extra detail, such as "cURL error 28", exactly; your host will ask for it.</p>
+
+<h2>"Another update is currently in progress"</h2>
+<p>When WordPress updates its core files, it saves a lock in the database, an option called <code>core_updater.lock</code>, so two updates can't run at once. The lock is removed when the update finishes and treated as expired after about 15 minutes. If an update crashed, the lock stays behind until then.</p>
+<ol>
+<li>Wait 15 minutes, then try again, making sure no one else, and none of your host's tools, is running updates.</li>
+<li>If it's still locked, delete the option. In phpMyAdmin, open the options table (usually <code>wp_options</code>, though your prefix may differ), find the row whose option_name is <code>core_updater.lock</code> and delete only that row.</li>
+<li>If your host provides WP-CLI, the same fix is one command:</li>
+</ol>
+<pre><code>wp option delete core_updater.lock</code></pre>
+<p>Background automatic updates use a similar lock called <code>auto_updater.lock</code>. Only remove a lock when you're sure no update is actually running.</p>
+
+<h2>"Download failed" and missing packages</h2>
+<p>Your server downloads updates itself, so a download failure is usually a server problem:</p>
+<ul>
+<li><strong>Timeouts:</strong> "cURL error 28" means the connection took too long. Retry later and ask your host if it persists.</li>
+<li><strong>Blocked or broken connections:</strong> a host firewall, DNS trouble or outdated SSL certificates on the server can stop outgoing downloads. Tools → Site Health checks whether your site can communicate with WordPress.org.</li>
+<li><strong>Temporary folder problems:</strong> a message about the "destination directory for file streaming" points to the server's temp folder not being writable. Your host can fix it.</li>
+<li><strong>Premium licences:</strong> paid plugins and themes update from the vendor's servers only while a valid licence key is entered and active. An expired licence or a domain change often explains "Update package not available".</li>
+</ul>
+
+<h2>"The package could not be installed" and permission errors</h2>
+<p>After downloading, WordPress unpacks the zip into <code>wp-content/upgrade</code> and copies the new files into place. Recent versions also keep a temporary backup of the old plugin or theme so they can restore it if the update fails. Every step needs write access and free space.</p>
+<ul>
+<li><strong>Wrong or damaged zip:</strong> when uploading manually, "No valid plugins were found" usually means you uploaded the vendor's whole download bundle rather than the plugin's own zip. Re-download if it might be corrupt.</li>
+<li><strong>Disk space:</strong> a full hosting account, or one at its file-count (inode) limit, causes copy failures. Delete old backup archives stored on the server, and clear leftover folders in wp-content/upgrade while no update is running.</li>
+<li><strong>Permissions:</strong> folders are commonly 755 and files 644. Never use 777 as a quick fix.</li>
+<li><strong>Ownership:</strong> files should belong to the account PHP runs as. After a migration or uploads by another user, WordPress may fail to create folders or ask for FTP details. Ask your host to correct ownership rather than adding FS_METHOD to wp-config.php as a workaround.</li>
+</ul>
+<p>See <a href="/blog/wordpress-file-permissions/">WordPress file permissions explained</a> for safe settings and how to check them.</p>
+
+<h2>PHP timeouts and updates that stop halfway</h2>
+<p>Large plugins such as page builders and WooCommerce take longer to install. On a slow or busy server, PHP can hit its time limit (max_execution_time) or memory limit partway through, and updating many plugins at once makes that likelier.</p>
+<p>Signs of a half-finished update: a plugin deactivated with "Plugin file does not exist", a critical error, or a version number that didn't change. To recover:</p>
+<ol>
+<li>Clear any leftover .maintenance file first, using the maintenance mode guide linked above.</li>
+<li>Re-run updates one at a time, keeping the browser tab open until each finishes.</li>
+<li>If one plugin keeps failing, update it manually (below) and ask your host about raising PHP's time and memory limits.</li>
+</ol>
+
+<h2>Updating manually via SFTP</h2>
+<p>For a plugin, download a fresh zip from WordPress.org or your vendor account. The simplest route is Plugins → Add New → Upload Plugin; WordPress offers to replace the installed version with the uploaded one. Over SFTP, rename the old folder in wp-content/plugins, upload the new unzipped folder under the original name, test, then delete the old copy. Don't delete the plugin from the dashboard first; some remove their settings when deleted.</p>
+<p>For WordPress core:</p>
+<ol>
+<li>Take a full backup, then download the latest WordPress zip from wordpress.org only and unzip it on your computer.</li>
+<li>Connect by SFTP and open the WordPress folder, the one containing wp-config.php.</li>
+<li>Rename the existing wp-admin and wp-includes folders, then upload the new ones.</li>
+<li>Upload the loose files from the new package's top level, overwriting the old ones. Don't upload the wp-content folder, and leave wp-config.php and .htaccess alone.</li>
+<li>Open /wp-admin/. If WordPress asks to update the database, let it.</li>
+<li>Clear caches, test the site, then delete the renamed old folders.</li>
+</ol>
+<p>Where WP-CLI is available, <code>wp core update</code> and <code>wp plugin update plugin-name</code> do the same job from the command line and usually avoid web server time limits.</p>
+
+<h2>Habits that prevent failed updates</h2>
+<ul>
+<li>Back up before every round of updates, and keep copies off the server</li>
+<li>Update important plugins one at a time, and read changelogs for major versions</li>
+<li>Test major updates on a staging copy first</li>
+<li>Keep free disk space, and run a PHP version your plugins support</li>
+<li>Update at quiet times, not mid-sale</li>
+<li>Keep premium licences active</li>
+</ul>
+<p>For the full routine, see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>, and for which updates to automate, <a href="/blog/wordpress-auto-updates/">WordPress auto-updates explained</a>.</p>
+
+<p>Tired of updates failing or breaking things? I handle WordPress updates, backups and fixes like these every month as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
 ];

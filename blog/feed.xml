@@ -3975,5 +3975,26 @@
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
     <description>WordPress search showing no results, the wrong results or loading slowly? See how default search works and fix WooCommerce, page builder and caching causes.</description>
   </item>
+  <item>
+    <title>WooCommerce Checkout Not Working? Fixing Endless Spinners, Errors and a Dead &quot;Place Order&quot; Button</title>
+    <link>https://samverse.space/blog/woocommerce-checkout-not-working-fix/</link>
+    <guid>https://samverse.space/blog/woocommerce-checkout-not-working-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Fix a WooCommerce checkout that won't load, spins forever or ignores &quot;Place order&quot;: caching, script conflicts, block checkout, gateways, SSL and sessions.</description>
+  </item>
+  <item>
+    <title>Payment Gateway Not Working in WooCommerce? Fixing Failed Payments and Pending Orders in India</title>
+    <link>https://samverse.space/blog/woocommerce-payment-gateway-not-working-india/</link>
+    <guid>https://samverse.space/blog/woocommerce-payment-gateway-not-working-india/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Razorpay, PayU, Cashfree, PhonePe or Paytm payments failing, or paid orders stuck in Pending payment? Check webhooks, keys, INR settings and firewall blocks.</description>
+  </item>
+  <item>
+    <title>WordPress Update Failed? How to Fix &quot;Download Failed&quot;, Locked Updates and Half-Finished Plugin Updates</title>
+    <link>https://samverse.space/blog/wordpress-update-failed-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-update-failed-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Fix WordPress &quot;Update failed&quot;, &quot;Download failed&quot;, &quot;The package could not be installed&quot; and &quot;Another update is currently in progress&quot; errors, step by step.</description>
+  </item>
 </channel>
 </rss>

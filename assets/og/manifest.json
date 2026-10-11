@@ -605,5 +605,8 @@
  "blog-wordpress-502-504-gateway-timeout-fix": "221f1378fba46f2ba7f0cc45899a5bd8d5dce53b",
  "blog-cloudflare-wordpress-setup-guide": "76e0c1f8603005c144034ce0e638c633b9689d34",
  "blog-find-fix-broken-links-wordpress": "a55432aa8d20e4b5a51732c3dea8727abbf5d4a8",
- "blog-wordpress-search-not-working-fix": "db332abdaee1287b09ffa455d8bf100375ea4255"
+ "blog-wordpress-search-not-working-fix": "db332abdaee1287b09ffa455d8bf100375ea4255",
+ "blog-woocommerce-checkout-not-working-fix": "c86fda20eba190bc03c134ac9a99729efd507a86",
+ "blog-woocommerce-payment-gateway-not-working-india": "99b24bd7fcf031570a80814b3bb822257c984b36",
+ "blog-wordpress-update-failed-fix": "358b208682b754660f9a44844d3911fdd7abcd23"
 }

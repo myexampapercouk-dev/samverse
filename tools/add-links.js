@@ -691,6 +691,10 @@ const LINKS = [
   ['what-is-a-cdn', '<h2>A CDN isn\'t a cure-all</h2>', '<p>If you\'re putting a WordPress site behind Cloudflare\'s free plan, follow <a href="/blog/cloudflare-wordpress-setup-guide/">our Cloudflare setup guide for WordPress</a> to pick the right SSL mode, cache exclusions and email records before you change nameservers.</p>\n\n'],
   ['search-console-page-indexing-errors', '<h2>Fixing, validating and checking monthly</h2>', '<p>To find which of your own pages still link to those missing URLs, and to decide between updating the link, a redirect or a 410, see <a href="/blog/find-fix-broken-links-wordpress/">how to find and fix broken links on WordPress</a>.</p>\n\n'],
   ['improve-wordpress-site-search', '<h2>Improve relevance first</h2>', '<p>If your search box returns nothing at all, shows the same results for every search or takes ages to respond, that\'s usually a fault rather than a limit; see <a href="/blog/wordpress-search-not-working-fix/">how to fix WordPress search that isn\'t working</a>.</p>\n\n'],
+  // Agent 90
+  ['woocommerce-checkout-optimization', '<h2>Test with real orders</h2>', '<p>If the checkout won\'t load at all, spins forever or ignores the "Place order" button, that\'s a fault rather than a design problem; see <a href="/blog/woocommerce-checkout-not-working-fix/">how to fix a WooCommerce checkout that isn\'t working</a>.</p>\n\n'],
+  ['payment-gateways-india-compared', '<h2>A quick comparison checklist</h2>', '<p>Already live and seeing failed payments, or paid orders stuck at "Pending payment"? See <a href="/blog/woocommerce-payment-gateway-not-working-india/">how to fix a payment gateway that isn\'t working in WooCommerce</a>, from webhooks to test and live keys.</p>\n\n'],
+  ['wordpress-stuck-in-maintenance-mode', '<h2>When deleting the file isn\'t enough</h2>', '<p>If the re-run stops again with "Download failed", "The package could not be installed" or "Another update is currently in progress", work through <a href="/blog/wordpress-update-failed-fix/">how to fix a failed WordPress update</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
