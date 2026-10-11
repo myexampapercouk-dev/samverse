@@ -17,7 +17,7 @@ const LINKS = [
   ['website-for-travel-agencies', '<h2>Campaign landing pages</h2>', '<p>If you also run accommodation, read <a href="/blog/hotel-website-direct-bookings/">how hotels and homestays get more direct bookings</a>.</p>\n\n'],
   ['hotel-website-direct-bookings', '<h2>Getting started</h2>', '<p>Tour operators and travel agencies can use many of the same ideas; see <a href="/blog/website-for-travel-agencies/">websites for travel agencies</a>.</p>\n\n'],
   ['personal-brand-website-professionals', '<h2>Design tips</h2>', '<p>Lawyers, chartered accountants and consultants have specific needs around practice areas and guidelines; see <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers, CAs and consultants</a>.</p>\n\n'],
-  ['clinic-website-checklist-for-doctors', '<h2>Next step</h2>', '<p>Doctors who also coach, teach or run programs can go further with a <a href="/blog/personal-brand-website-professionals/">personal brand website</a>. Dental practices should also read <a href="/blog/website-for-dentists/">what patients look for in a dental clinic website</a>.</p>\n\n'],
+  ['clinic-website-checklist-for-doctors', '<h2>FAQs</h2>', '<p>Doctors who also coach, teach or run programs can go further with a <a href="/blog/personal-brand-website-professionals/">personal brand website</a>. Dental practices should also read <a href="/blog/website-for-dentists/">what patients look for in a dental clinic website</a>.</p>\n\n'],
   ['accept-online-payments-wordpress-india', '<h3>3. Payment links and buttons</h3>', '<p>Schools and coaching institutes often collect fees this way; see <a href="/blog/school-coaching-website-what-parents-look-for/">what parents and students look for</a>.</p>\n'],
   ['accept-online-payments-wordpress-india', '<h2>Common problems and fixes</h2>', '<p>Launching a full store? Use the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> before going live.</p>\n\n'],
   ['choose-wordpress-hosting-india', '<h2>How much should you spend?</h2>', '<p>New to all this? Start with <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained simply</a>.</p>\n\n'],
@@ -123,7 +123,7 @@ const LINKS = [
   ['website-for-lawyers-and-chartered-accountants', '<h2>Local SEO for professionals</h2>', '<p>Insurance and financial advisors face similar rules; see <a href="/blog/website-for-insurance-financial-advisors/">websites for insurance agents and financial advisors</a>.</p>\n\n'],
   ['real-estate-website-must-have-features', '<h2>Common mistakes</h2>', '<p>Agents and brokers have different needs from builders; see <a href="/blog/website-for-real-estate-agents-brokers/">websites for real estate agents and brokers</a>.</p>\n\n'],
   // Round 11
-  ['update-wordpress-safely', '<h2>Automatic updates: yes or no?</h2>', '<p>Seeing an error message? See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>\n\n'],
+  ['update-wordpress-safely', '<h2>WooCommerce, page builders and premium themes</h2>', '<p>Seeing an error message? See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>\n\n'],
   ['domain-hosting-ssl-explained', '<h2>Business email</h2>', '<p>Seeing certificate warnings? See <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a>.</p>\n\n'],
   ['why-is-my-wordpress-site-slow', '<h2>When to get help</h2>', '<p>Serving visitors across regions? A <a href="/blog/what-is-a-cdn/">CDN</a> can help.</p>\n\n'],
   ['local-seo-guide-small-business-india', '<h2>Step 5: Get listed in trusted directories</h2>', '<p>Adding a map to your contact page? See <a href="/blog/google-maps-on-website/">how to add Google Maps without slowing your site</a>.</p>\n\n'],
@@ -132,7 +132,7 @@ const LINKS = [
   // Round 12
   ['website-for-salons-spas', '<h2>Design tips</h2>', '<p>Other booking-driven local services: <a href="/blog/website-for-home-services/">home services</a> and <a href="/blog/website-for-cleaning-services/">cleaning services</a>.</p>\n\n'],
   ['website-for-logistics-transport-companies', '<h2>SEO for logistics companies</h2>', '<p>Household moves are different; see <a href="/blog/website-for-packers-movers/">websites for packers and movers</a>.</p>\n\n'],
-  ['clinic-website-checklist-for-doctors', '<h2>Your Google Business Profile matters too</h2>', '<p>Larger or specialist practices: <a href="/blog/website-for-hospitals/">hospitals</a>, <a href="/blog/website-for-physiotherapy-clinics/">physiotherapy clinics</a> and <a href="/blog/website-for-eye-clinics-opticians/">eye clinics</a>.</p>\n\n'],
+  ['clinic-website-checklist-for-doctors', '<h2>Common mistakes to avoid</h2>', '<p>Larger or specialist practices: <a href="/blog/website-for-hospitals/">hospitals</a>, <a href="/blog/website-for-physiotherapy-clinics/">physiotherapy clinics</a> and <a href="/blog/website-for-eye-clinics-opticians/">eye clinics</a>.</p>\n\n'],
   // Round 13
   ['website-for-dentists', '<h2>Stay within guidelines</h2>', '<p>Animal care has its own needs; see <a href="/blog/website-for-veterinary-pet-clinics/">websites for vets and pet clinics</a>.</p>\n\n'],
   ['restaurant-website-online-ordering', '<h2>Common mistakes</h2>', '<p>Bakeries have extra needs like custom orders; see <a href="/blog/website-for-bakeries-cake-shops/">websites for bakeries and cake shops</a>.</p>\n\n'],
@@ -181,7 +181,7 @@ const LINKS = [
   ['woocommerce-product-page-optimization', '<h2>Remove doubts</h2>', '<p>For the copy itself, see <a href="/blog/write-product-descriptions-that-sell/">how to write product descriptions that sell</a>.</p>\n\n'],
   ['business-email-deliverability-spf-dkim-dmarc', '<h2>SPF: who may send</h2>', '<p>Still choosing a provider? See <a href="/blog/business-email-options/">business email options for small businesses</a>.</p>\n\n'],
   ['core-web-vitals-explained', '<h2>How to check your scores</h2>', '<p>Confused by different scores? See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</p>\n\n'],
-  ['google-business-profile-checklist', '<h2>Connect it to your website</h2>', '<p>Wondering whether a small shop needs a website at all? See <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website</a>.</p>\n\n'],
+  ['google-business-profile-checklist', '<h2>Google Business Profile management checklist</h2>', '<p>Wondering whether a small shop needs a website at all? See <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website</a>.</p>\n\n'],
   ['seo-red-flags-scams', '<h2>Green flags</h2>', '<p>Related: <a href="/blog/domain-seo-scam-emails/">how to spot domain renewal and SEO scam emails</a>.</p>\n\n'],
   // Round 21
   ['website-for-dentists', '<h2>Local SEO for dentists</h2>', '<p>Cosmetic and skin practices: see <a href="/blog/website-for-dermatology-skin-clinics/">websites for dermatology and skin clinics</a>.</p>\n\n'],
@@ -229,7 +229,7 @@ const LINKS = [
   ['woocommerce-shipping-setup-india', '<h2>4. Couriers and aggregators</h2>', '<p>More on reducing refused deliveries: <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery without losing money</a>.</p>\n\n'],
   ['accept-online-payments-wordpress-india', '<h2>Testing before you go live</h2>', '<p>Registered under GST? See <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>.</p>\n\n'],
   ['regain-website-access-old-developer', '<h2>Prevent it happening again</h2>', '<p>Use this <a href="/blog/website-ownership-checklist/">website ownership checklist</a> once you have access back.</p>\n\n'],
-  ['clinic-website-checklist-for-doctors', '<h2>Next step</h2>', '<p>Related guides: websites for <a href="/blog/website-for-nutritionists-dietitians/">nutritionists and dietitians</a> and <a href="/blog/website-for-psychologists-counsellors/">psychologists and counsellors</a>.</p>\n\n'],
+  ['clinic-website-checklist-for-doctors', '<h2>FAQs</h2>', '<p>Related guides: websites for <a href="/blog/website-for-nutritionists-dietitians/">nutritionists and dietitians</a> and <a href="/blog/website-for-psychologists-counsellors/">psychologists and counsellors</a>.</p>\n\n'],
   ['website-for-gyms-fitness-studios', '<h2>Local SEO</h2>', '<p>Offering diet plans too? See <a href="/blog/website-for-nutritionists-dietitians/">websites for nutritionists</a>.</p>\n\n'],
   // Round 28
   ['update-wordpress-safely', '<h2>Automatic updates: yes or no?</h2>', '<p>Don\'t forget the server side: <a href="/blog/update-php-version-wordpress/">update your PHP version safely</a>.</p>\n\n'],
@@ -740,6 +740,7 @@ const LINKS = [
 
 let src = fs.readFileSync(FILE, 'utf8');
 let added = 0, skipped = 0;
+const missing = [];
 for (const [slug, anchor, insert] of LINKS) {
   const start = src.indexOf(`slug: '${slug}',`);
   if (start < 0) throw new Error(`Post not found: ${slug}`);
@@ -749,6 +750,8 @@ for (const [slug, anchor, insert] of LINKS) {
   const target = (insert.match(/href="(\/[^"]+)"/) || [])[1];
   if (target && body.includes(`href="${target}"`)) { skipped++; continue; }
   const count = body.split(anchor).length - 1;
+  // A rewritten post may no longer have the heading; report it instead of failing.
+  if (count === 0) { missing.push(`${slug} -> ${target}`); continue; }
   if (count !== 1) throw new Error(`Anchor found ${count} times in ${slug}: ${anchor}`);
   body = body.replace(anchor, insert + anchor);
   src = src.slice(0, bodyStart) + body + src.slice(bodyEnd);
@@ -756,3 +759,4 @@ for (const [slug, anchor, insert] of LINKS) {
 }
 fs.writeFileSync(FILE, src);
 console.log(`contextual links added: ${added}, already present: ${skipped}`);
+if (missing.length) console.log('anchor heading gone (link not added):\n  ' + missing.join('\n  '));

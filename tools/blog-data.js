@@ -652,6 +652,10 @@ wp plugin verify-checksums --all</code></pre>
   </tbody>
 </table>
 
+<p>Running a diagnostic lab or pathology centre? See <a href="/blog/website-for-diagnostic-labs/">websites for diagnostic labs</a>.</p>
+
+<p>Larger or specialist practices: <a href="/blog/website-for-hospitals/">hospitals</a>, <a href="/blog/website-for-physiotherapy-clinics/">physiotherapy clinics</a> and <a href="/blog/website-for-eye-clinics-opticians/">eye clinics</a>.</p>
+
 <h2>Common mistakes to avoid</h2>
 <ul>
   <li>A single page listing treatments with no detail</li>
@@ -663,6 +667,10 @@ wp plugin verify-checksums --all</code></pre>
   <li>Exaggerated claims or promised results</li>
 </ul>
 <p>You can see several of these points on a live site in the <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care case study</a>.</p>
+
+<p>Doctors who also coach, teach or run programs can go further with a <a href="/blog/personal-brand-website-professionals/">personal brand website</a>. Dental practices should also read <a href="/blog/website-for-dentists/">what patients look for in a dental clinic website</a>.</p>
+
+<p>Related guides: websites for <a href="/blog/website-for-nutritionists-dietitians/">nutritionists and dietitians</a> and <a href="/blog/website-for-psychologists-counsellors/">psychologists and counsellors</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What should a private clinic website include?</h3>
@@ -1953,6 +1961,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>Consistent details on directories like Justdial and industry listings; see <a href="/blog/business-directories-citations-india/">business directories and citations in India</a></li>
 </ul>
 <p>The website side is covered step by step in the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for small businesses in India</a>.</p>
+
+<p>Wondering whether a small shop needs a website at all? See <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website</a>.</p>
 
 <h2>Google Business Profile management checklist</h2>
 <p>Once it's set up, a profile needs a little attention regularly rather than a big effort once a year:</p>
@@ -5900,6 +5910,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li><strong>Find the cause before updating again:</strong> check the plugin's support forum or changelog for a known issue, and look for a conflict with another plugin; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">plugin conflicts</a>.</li>
   <li><strong>Pause auto-updates</strong> for that plugin until a fixed version is out.</li>
 </ol>
+
+<p>Seeing an error message? See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
 
 <h2>WooCommerce, page builders and premium themes</h2>
 <ul>
