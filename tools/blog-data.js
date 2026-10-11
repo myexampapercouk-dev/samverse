@@ -1049,57 +1049,102 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'elementor-vs-gutenberg',
-    seoTitle: "Elementor vs Gutenberg: Which Should You Use?",
+    seoTitle: 'Elementor vs Gutenberg: Which WordPress Editor to Choose?',
     title: 'Elementor vs Gutenberg: Which WordPress Builder Should You Use?',
-    description: 'Elementor or the Gutenberg block editor? Compare ease of use, design flexibility, speed and cost to decide which WordPress page builder is right for your website.',
+    description: 'Elementor vs Gutenberg compared: editing experience, speed, design flexibility, cost, lock-in and client editing, with clear advice on when to choose each one.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Guides',
     related: ['elementor-developer', 'figma-to-wordpress', 'wordpress-speed-optimization'],
     body: `
-<p>If you're building or redesigning a WordPress site, you'll probably choose between two ways of creating pages: <strong>Elementor</strong>, the popular drag-and-drop page builder, or <strong>Gutenberg</strong>, WordPress's built-in block editor. Both are good. The right choice depends on your priorities.</p>
+<p>If you're building or redesigning a WordPress site, you'll probably choose between two ways of creating pages: <strong>Elementor</strong>, the popular drag-and-drop page builder plugin, or <strong>Gutenberg</strong>, WordPress's built-in block editor. Both are good, and I build with both. The right choice depends on who will edit the site, how design-heavy it is and how much you care about speed and long-term flexibility.</p>
 
 <h2>Quick comparison</h2>
 <table>
-  <thead><tr><th></th><th>Elementor</th><th>Gutenberg (Block Editor)</th></tr></thead>
+  <thead><tr><th></th><th>Elementor</th><th>Gutenberg (block editor)</th></tr></thead>
   <tbody>
-    <tr><td><strong>Editing</strong></td><td>Visual drag-and-drop, see exactly what you get</td><td>Block-based, increasingly visual</td></tr>
-    <tr><td><strong>Design flexibility</strong></td><td>Very high out of the box</td><td>Good, and growing with block themes</td></tr>
-    <tr><td><strong>Speed</strong></td><td>Heavier, needs optimization</td><td>Lighter by default</td></tr>
-    <tr><td><strong>Cost</strong></td><td>Free version; Pro is paid yearly</td><td>Free, built into WordPress</td></tr>
-    <tr><td><strong>Learning curve for owners</strong></td><td>Very easy</td><td>Easy for text, harder for layouts</td></tr>
-    <tr><td><strong>Lock-in</strong></td><td>Content tied to Elementor</td><td>Native WordPress content</td></tr>
+    <tr><td><strong>Editing</strong></td><td>Visual drag-and-drop on a live canvas</td><td>Block-based, increasingly visual</td></tr>
+    <tr><td><strong>Design flexibility</strong></td><td>Very high out of the box</td><td>Good, and growing with block themes and patterns</td></tr>
+    <tr><td><strong>Performance</strong></td><td>Heavier, needs a careful build</td><td>Lighter by default</td></tr>
+    <tr><td><strong>Cost</strong></td><td>Free version; Pro is a paid yearly licence</td><td>Free, part of WordPress</td></tr>
+    <tr><td><strong>Learning curve for owners</strong></td><td>Very easy for visual changes</td><td>Easy for text, harder for layouts</td></tr>
+    <tr><td><strong>Lock-in</strong></td><td>Layouts tied to Elementor</td><td>Native WordPress content</td></tr>
+    <tr><td><strong>Popups, forms, theme building</strong></td><td>Built into Pro</td><td>Site Editor for templates; other features via plugins</td></tr>
+    <tr><td><strong>Best for</strong></td><td>Marketing sites and landing pages</td><td>Blogs, content sites, lean business sites</td></tr>
   </tbody>
 </table>
 
-<h2>Choose Elementor if...</h2>
+<h2>What each one actually is</h2>
+<p><strong>Gutenberg</strong> was the project name for the block editor that became WordPress's default editor in version 5.0, at the end of 2018. Every paragraph, image, heading and button is a block, and blocks are saved as normal WordPress content. With a block theme, the same blocks are used in the Site Editor to design headers, footers and page templates, and global colours and fonts are managed in one place. See <a href="/blog/block-themes-full-site-editing/">block themes and full site editing</a>.</p>
+<p><strong>Elementor</strong> is a separate plugin that replaces the editing screen with its own visual canvas. You drag widgets into containers and style each one, with separate settings for desktop, tablet and mobile. The free version covers page design; Elementor Pro adds a theme builder for headers, footers and templates, forms, popups, dynamic content and WooCommerce templates.</p>
+
+<h2>Editing experience</h2>
+<p>Elementor feels like a design tool. You see exactly what visitors will see, click any element to change it and preview each screen size. For non-technical teams that's reassuring. The downside is that every widget has dozens of settings, so pages built by different people can drift apart: slightly different spacing, fonts and button styles on every page.</p>
+<p>Gutenberg feels like a writing tool that has grown layout features. Writing and editing text is quick and clean, and reusable patterns make it easy to insert a ready-made section. Building complex layouts from scratch is harder for beginners, and the design options available depend heavily on the theme. The upside is consistency: styles come from the theme, so pages tend to look like they belong together.</p>
+
+<h2>Performance</h2>
+<p>Gutenberg sites are usually lighter out of the box. WordPress can load styles only for the blocks used on each page, and there's no extra editor framework running on the front end.</p>
+<p>Elementor adds more code: its own stylesheets and scripts, extra wrapper elements in the HTML (reduced by its newer container layout), icon libraries, fonts and animations, and often add-on widget packs. But a well-built Elementor site on good hosting, with a lightweight theme, caching, optimised images and only the features it needs, can still be very fast. Most slow Elementor sites are slow because of how they were built, not because of Elementor itself.</p>
+<p>If your Elementor site is already slow, see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow and how to fix them</a>.</p>
+<p>Gutenberg isn't automatically fast either: a heavy theme, large block libraries, sliders and unoptimised images will slow any site. Measure with real tests rather than assumptions; see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>Design flexibility</h2>
+<p>For design-heavy pages, Elementor gives more out of the box: motion effects, custom layouts per device, popups, forms, loops of posts or products, and theme templates, all without code. A designer's Figma file can usually be matched closely.</p>
+<p>Gutenberg has caught up a lot. Group, row, stack and grid blocks handle most layouts, patterns give you reusable sections, and block themes control the whole site. Where something isn't possible with core blocks, a developer can build custom blocks that match your design exactly and give editors only the fields they need; see <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a>. That takes more development time up front, but the result is lean and hard to break.</p>
+<p>Your theme matters just as much as the builder; see <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
+
+<h2>Cost</h2>
+<p>Gutenberg is free and comes with WordPress. Elementor's free version is enough for simple pages, but most business sites end up using Pro for the theme builder, forms and popups. Pro is a yearly licence, priced by the number of sites, and renewing it is what keeps updates and support coming. Check Elementor's current terms for what happens to Pro features if a licence lapses, and budget for any add-on packs, which usually have their own licences.</p>
+<p>The other cost is development time. An Elementor site is often quicker to build; a custom block setup costs more up front but may need less fixing later.</p>
+<p>Going with Elementor? See <a href="/blog/elementor-pro-worth-it/">is Elementor Pro worth it?</a></p>
+
+<h2>Lock-in and switching later</h2>
+<p>Elementor stores layouts in its own format. If you deactivate it, the text on your pages usually remains as plain, unstyled content, but the layout and design are gone, and pages built with it have to be rebuilt in whatever you move to. That's manageable for a ten-page site and a real project for a large one.</p>
+<p>Gutenberg content is native WordPress content and survives a theme change far better. Third-party block plugins create a smaller version of the same problem: remove the plugin and its blocks stop displaying properly.</p>
+<p>Lock-in shows most clearly when a plugin is removed; see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks vs page-builder widgets</a> for how each one stores your content.</p>
+
+<h2>Client editing: who will update the site?</h2>
+<p>This is often the deciding question. If the owner or marketing team wants to change headlines, swap images and build new landing pages without calling a developer, Elementor is easier to learn. The risk is that the same freedom makes it easy to break a layout or a mobile view by accident. Elementor Pro's role manager can limit some users to editing content only.</p>
+<p>With Gutenberg, a developer can lock blocks and patterns so editors can change text and images but not move or delete sections, which suits teams who mainly publish posts and update existing pages. Whichever you choose, ask for a short handover showing your team what to edit and what to leave alone; see <a href="/blog/edit-website-content-wordpress/">editing your website content in WordPress</a>.</p>
+
+<h2>Updates and maintenance</h2>
+<p>Gutenberg improves with each WordPress release, so there's one less plugin to update. Elementor releases updates often, and major ones occasionally change how layouts render, so test on a staging copy before updating a live site; see <a href="/blog/elementor-layout-broken-after-update/">fixing an Elementor layout broken after an update</a>.</p>
+
+<h2>When to choose each</h2>
+<h3>Choose Elementor if...</h3>
 <ul>
   <li>You want to edit layouts visually without touching code</li>
   <li>You need custom, design-heavy pages, landing pages and popups</li>
   <li>Your team isn't technical and wants to make changes confidently</li>
-  <li>You want features like forms, popups and theme templates in one tool (Elementor Pro)</li>
+  <li>You want forms, popups and theme templates in one tool (Elementor Pro)</li>
 </ul>
-
-<p>If your Elementor site is already slow, see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow and how to fix them</a>.</p>
-
-<h2>Choose Gutenberg if...</h2>
+<p>Pair it with a lightweight theme; see <a href="/blog/best-theme-for-elementor/">the best theme for Elementor</a>.</p>
+<h3>Choose Gutenberg if...</h3>
 <ul>
-  <li>Maximum speed and a lightweight site are top priorities</li>
-  <li>Your site is content-focused: blogs, news, documentation</li>
-  <li>You want to avoid yearly plugin licence costs</li>
+  <li>Speed and a lightweight site are top priorities</li>
+  <li>Your site is content-focused: blogs, news, documentation, resources</li>
+  <li>You want to avoid yearly builder licence costs</li>
   <li>You want content that isn't tied to a third-party builder</li>
 </ul>
 
-<p>Lock-in shows most clearly when a plugin is removed; see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks vs page-builder widgets</a> for how each one stores your content.</p>
-
-<h2>What about speed?</h2>
-<p>Gutenberg sites are usually lighter out of the box. But a well-built Elementor site on good hosting, with a lightweight theme like Hello Elementor, caching and optimized images, can still be very fast. Most slow Elementor sites are slow because of how they were built, not because of Elementor itself.</p>
-
-<p>Your theme matters just as much as the builder; see <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
-
-<p>Going with Elementor? See <a href="/blog/elementor-pro-worth-it/">is Elementor Pro worth it?</a></p>
-
 <h2>My recommendation</h2>
 <p>For most small business websites where owners want to update pages themselves, <strong>Elementor</strong> offers the best balance of design freedom and ease of use, as long as it's built carefully. For content-heavy sites and blogs where speed is critical, <strong>Gutenberg</strong> is an excellent, lightweight choice. You can also combine them: Gutenberg for blog posts, and Elementor for key marketing pages.</p>
+
+<h2>FAQs</h2>
+<h3>Is Gutenberg replacing Elementor?</h3>
+<p>No. Gutenberg is WordPress's built-in editor and keeps getting more capable, but Elementor remains a separate, widely used builder. Many sites use both.</p>
+<h3>Is Elementor bad for SEO?</h3>
+<p>Not in itself. Google ranks content, relevance and page experience, not the editor. Elementor sites can rank well if they're fast, use proper headings and have good content.</p>
+<h3>Can I switch from Elementor to Gutenberg?</h3>
+<p>Yes, but there's no clean automatic conversion. Pages are usually rebuilt in blocks, which is a good moment to simplify the design and improve speed.</p>
+<h3>Can I use Elementor and Gutenberg on the same site?</h3>
+<p>Yes. You choose per page or post, so blog posts can use the block editor while the homepage and landing pages use Elementor.</p>
+<h3>Do I need Elementor Pro?</h3>
+<p>Not always. If you need a custom header and footer, forms, popups or templates for posts and products, Pro is usually worth it. For a few simple pages, the free version may be enough.</p>
+<h3>Which is better for a blog?</h3>
+<p>Gutenberg. Writing is faster, content stays native to WordPress, and post templates can be designed in the Site Editor or by your theme.</p>
+
+<p>Not sure which suits your site, or need an existing build made faster? I build and fix both Elementor and block editor sites, including pixel-matched designs from Figma: see <a href="/elementor-developer/">Elementor development</a>, or <a href="/figma-to-wordpress/">Figma to WordPress</a> if you have a design ready.</p>
 `,
   },
   {
@@ -16929,58 +16974,119 @@ wp option get home</code></pre>
   },
   {
     slug: 'nulled-themes-plugins-risks',
-    seoTitle: 'Nulled WordPress Themes & Plugins: Why They Are Dangerous',
-    title: 'Nulled WordPress Themes and Plugins: Why "Free" Premium Software Is So Risky',
-    description: 'What nulled WordPress themes and plugins are, the hidden malware, SEO spam and backdoors they often contain, the update and legal problems, how to check your site and how to replace them safely.',
+    seoTitle: 'Nulled WordPress Themes and Plugins: Risks and Clean-Up',
+    title: 'Nulled WordPress Themes and Plugins: Why Pirated Premium Software Is So Risky',
+    description: 'What nulled WordPress themes and plugins are, the malware, backdoors and SEO spam they often hide, how to check your site for pirated code and replace it.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'elementor-developer'],
     body: `
-<p>A "nulled" theme or plugin is a premium product with its licence check removed, shared for free on unofficial websites. It's tempting to save on licence fees, but nulled software is one of the most common sources of malware I find on hacked business websites.</p>
+<p>A "nulled" WordPress theme or plugin is a premium product with its licence check removed, shared for free or cheaply on unofficial websites. Search for "nulled WordPress" and you'll find whole sites offering thousands of pirated themes and plugins. It's tempting to save on licence fees, and some site owners don't even know they have one, because a previous developer installed it. But nulled software is one of the most common sources of malware I find on hacked business websites, and the trouble it causes usually costs far more than the licence it replaced.</p>
 
-<h2>What can be hidden inside</h2>
+<h2>What "nulled" actually means</h2>
+<p>Premium themes and plugins normally check a licence key so the developer can deliver updates and support to paying customers. A nulled copy has that check removed or faked. Whoever does the removing has full control of the code, and nothing stops them adding their own code at the same time.</p>
+<table>
+  <thead>
+    <tr><th>Where it comes from</th><th>Updates</th><th>Support</th><th>Risk</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bought from the original developer</td><td>Yes, through the dashboard</td><td>Yes</td><td>Low, if kept updated</td></tr>
+    <tr><td>Free version on WordPress.org</td><td>Yes</td><td>Community forums</td><td>Low, if kept updated</td></tr>
+    <tr><td>"GPL" redistribution site</td><td>Manual, and often late</td><td>No support from the developer</td><td>Medium: you're trusting a third party's copy</td></tr>
+    <tr><td>Nulled download from a forum or file site</td><td>No</td><td>No</td><td>High: unknown changes to the code</td></tr>
+  </tbody>
+</table>
+<p>WordPress itself is licensed under the GPL, and much of the PHP code in themes and plugins is too, which is why some sites resell copies legally. But images, scripts, design files and the developer's brand may be covered by different terms, and these copies don't come with official updates, support or a valid licence key. Whether a particular copy can be redistributed depends on that product's terms, so treat this as general information rather than legal advice.</p>
+
+<h2>What can be hidden inside nulled code</h2>
 <ul>
-  <li><strong>Backdoors</strong> giving the distributor access to your site</li>
-  <li><strong>Hidden spam links</strong> or code that creates spam pages; see <a href="/blog/fix-japanese-keyword-seo-spam-hack/">SEO spam hacks</a></li>
-  <li><strong>Redirects</strong> sending your visitors to other sites</li>
-  <li><strong>Code that creates admin users</strong> or sends your data elsewhere</li>
-  <li><strong>Crypto-mining or ad-injection scripts</strong> that slow your site</li>
+  <li><strong>Backdoors:</strong> small pieces of code that let the distributor run commands or upload files on your server whenever they like</li>
+  <li><strong>Hidden admin users:</strong> code that quietly creates an administrator account, sometimes hidden from the Users screen</li>
+  <li><strong>SEO spam:</strong> links or whole pages of spam, often shown only to Google and not to you; see <a href="/blog/fix-japanese-keyword-seo-spam-hack/">SEO spam hacks</a></li>
+  <li><strong>Redirects:</strong> visitors arriving from Google on a phone get sent to scam or adult sites, while you see a normal site on your laptop; see <a href="/blog/fix-wordpress-redirect-hack/">fixing redirect hacks</a></li>
+  <li><strong>Payment skimmers:</strong> on WooCommerce stores, scripts that copy card details at checkout; see <a href="/blog/woocommerce-checkout-skimmer-malware/">checkout skimmer malware</a></li>
+  <li><strong>Ad injection and crypto-mining scripts</strong> that slow your site and annoy visitors</li>
 </ul>
-<p>The malicious code may stay dormant for weeks before activating, so the site can seem fine at first.</p>
+<p>Malicious code is usually obfuscated, meaning scrambled so it doesn't look like code, and it may stay dormant for weeks before activating, so the site can seem fine at first. One well-known example, the WP-VCD malware, spread largely through nulled themes and plugins and added files that gave attackers ongoing access to infected sites.</p>
 
-<h2>Other problems</h2>
+<h2>The problems even if a copy is clean</h2>
 <ul>
-  <li><strong>No updates:</strong> security fixes never arrive, leaving known vulnerabilities open</li>
-  <li><strong>No support</strong> from the developer when something breaks</li>
-  <li><strong>Legal risk:</strong> using pirated software violates the developer's licence terms</li>
-  <li><strong>SEO damage:</strong> hidden spam links can hurt rankings and trigger Google warnings</li>
+  <li><strong>No security updates:</strong> when the developer fixes a vulnerability, the fix never reaches you, and attackers scan for exactly those known holes</li>
+  <li><strong>Updates from the same source:</strong> the only way to "update" is to download another nulled copy from the same untrusted site</li>
+  <li><strong>No support:</strong> when a WordPress or PHP update breaks something, there's nobody to ask; see <a href="/blog/update-php-version-wordpress/">updating your PHP version</a></li>
+  <li><strong>Licence and reputation:</strong> using pirated software breaks the developer's terms, and an agency that hands a client nulled software puts the client's business at risk</li>
+  <li><strong>Hosting and Google penalties:</strong> malware can get your account suspended and your site labelled in search results; see <a href="/blog/hosting-suspended-malware/">hosting suspended for malware</a> and <a href="/blog/this-site-may-be-hacked-google/">"This site may be hacked" warnings</a></li>
 </ul>
 
-<h2>How to check your site</h2>
+<h2>How to check if your site uses nulled themes or plugins</h2>
+<h3>1. Make an inventory</h3>
+<p>Open Plugins and Appearance &gt; Themes and list every premium product. For each one, answer three questions: who bought it, which account holds the licence, and can it update from the dashboard? If nobody can show a purchase, treat it as suspect. Ask your current or previous developer directly where each product came from.</p>
+
+<h3>2. Look for the usual signs</h3>
 <ul>
-  <li>List every premium theme and plugin and confirm you have a valid licence, ideally in your business's name</li>
-  <li>Check that updates are available through the official channel</li>
-  <li>Ask your developer where each premium product came from</li>
-  <li>Run a malware scan; see <a href="/blog/wordpress-malware-scanners-compared/">malware scanners compared</a></li>
+  <li>The plugin says it's "activated" or "registered", but nobody has an account with the developer</li>
+  <li>Update notices never appear, even though the developer has released newer versions</li>
+  <li>Extra text files or readme notes mentioning a download site</li>
+  <li>Files with random-looking names, or files that don't exist in the official version</li>
+  <li>Admin users nobody recognises; see <a href="/blog/wordpress-user-accounts-audit/">auditing WordPress user accounts</a></li>
 </ul>
 
-<h2>How to replace them safely</h2>
+<h3>3. Compare with official copies</h3>
+<p>Download a fresh copy of the same version from the developer's site, or from WordPress.org for free plugins, and compare the folders with a file comparison tool. If you or your host can use WP-CLI, these commands check WordPress core and WordPress.org plugins against the official files:</p>
+<pre><code>wp core verify-checksums
+wp plugin verify-checksums --all
+wp user list --role=administrator</code></pre>
+<p>Plugin checksums only work for plugins hosted on WordPress.org, so premium plugins need the manual comparison.</p>
+
+<h3>4. Search for suspicious code</h3>
+<p>Obfuscated malware often relies on a handful of PHP functions. Searching for them is a quick first pass:</p>
+<pre><code>grep -rnF -e "eval(" -e "base64_decode" -e "gzinflate" -e "str_rot13" wp-content/
+find wp-content/uploads -name "*.php"</code></pre>
+<p>Legitimate plugins use some of these functions too, so a match is a reason to look closer, not proof of infection. PHP files inside the uploads folder, however, are almost always worth investigating. A scanner adds another layer; see <a href="/blog/wordpress-malware-scanners-compared/">malware scanners compared</a>. Remember that a scanner looks for known malicious patterns: it can't tell you whether a copy is pirated, and it can miss new or custom code.</p>
+
+<h3>5. Check what Google sees</h3>
+<p>Search <em>site:yourdomain.com</em> and look for pages you didn't create, in other languages or about unrelated products. In Search Console, check the Security issues report and the Pages report, and use URL Inspection to view the HTML Google crawled, which reveals spam shown only to search engines.</p>
+
+<h2>How to clean up and replace nulled software</h2>
 <ol>
-  <li>Back up the site</li>
-  <li>Buy a genuine licence, or choose a free alternative from WordPress.org</li>
-  <li>Delete the nulled copy completely, not just deactivate it</li>
-  <li>Install a fresh copy from the official source</li>
-  <li>Scan the whole site and check for backdoors left behind; see <a href="/blog/find-remove-wordpress-backdoors/">finding backdoors</a></li>
-  <li>Change passwords and security keys</li>
+  <li><strong>Back up everything</strong>, files and database, and keep a copy offline; see <a href="/blog/wordpress-backup-restore-guide/">backing up and restoring WordPress</a></li>
+  <li><strong>Decide on each nulled item:</strong> buy a genuine licence, switch to a maintained free alternative, or remove the feature if you don't need it</li>
+  <li><strong>Delete the nulled copy completely,</strong> not just deactivate it, and check the mu-plugins folder for anything it added</li>
+  <li><strong>Install a fresh copy</strong> from the official source and activate the licence in the business's own account</li>
+  <li><strong>Reinstall WordPress core files</strong> and verify checksums</li>
+  <li><strong>Hunt for backdoors elsewhere:</strong> nulled code often copies itself into other themes, the uploads folder or wp-config.php; see <a href="/blog/find-remove-wordpress-backdoors/">finding backdoors</a></li>
+  <li><strong>Check the database</strong> for unknown admin users, injected scripts in options and spam links in posts</li>
+  <li><strong>Reset every password</strong> (WordPress admins, hosting, SFTP, database) and generate new security keys in wp-config.php</li>
+  <li><strong>Request a review</strong> in Search Console if Google flagged the site; see <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a></li>
 </ol>
+<p>If the nulled item is your theme and someone edited its files directly, those edits will be lost when you replace it. Move genuine customisations into a child theme first; see <a href="/blog/wordpress-child-theme-explained/">child themes explained</a>. Already have a genuine premium theme? See <a href="/blog/update-premium-theme-safely/">how to update it safely</a>.</p>
 
-<p>Already have a genuine premium theme? See <a href="/blog/update-premium-theme-safely/">how to update it safely</a>.</p>
+<h2>Licensed and free alternatives</h2>
+<ul>
+  <li><strong>Free versions:</strong> many premium plugins have a free version on WordPress.org that covers what a small business site actually uses</li>
+  <li><strong>The block editor:</strong> WordPress's built-in editor and block themes can replace some page-builder add-ons; see <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a></li>
+  <li><strong>Fewer plugins:</strong> the cheapest licence is the one you don't need; see <a href="/blog/essential-wordpress-plugins-business/">essential plugins for business sites</a></li>
+  <li><strong>Licences in your name:</strong> buy with a business email, and keep a simple register of each product, the account email, renewal date and who manages it</li>
+  <li><strong>Agency licences:</strong> agencies can use multi-site licences where the terms allow, but should tell clients who holds each licence and what happens at handover</li>
+</ul>
+<p>A yearly licence costs far less than a malware clean-up, lost enquiries and damaged rankings, and renewals are what keep updates and support coming.</p>
 
-<h2>Licences are cheaper than clean-ups</h2>
-<p>A yearly licence costs far less than a malware clean-up, lost enquiries and damaged rankings. Many excellent themes and plugins are also free on WordPress.org, maintained and reviewed.</p>
+<h2>FAQs</h2>
+<h3>Are nulled WordPress plugins illegal?</h3>
+<p>Using them generally breaks the developer's licence terms and may infringe copyright or trademarks, depending on the product and where you are. The GPL makes the picture more complicated for some code, so ask a lawyer if you need a definite answer. The security risk is reason enough to avoid them.</p>
+<h3>Is a "GPL club" site the same as a nulled site?</h3>
+<p>Not always. Some redistribute unmodified copies, which is lower risk than a random forum download, but you still get no developer support, delayed updates and no guarantee the files weren't changed.</p>
+<h3>Can a malware scanner tell me if a plugin is nulled?</h3>
+<p>No. A scanner looks for known malicious code. A pirated copy can pass a scan, and a new backdoor can go undetected. Check your licences and compare files with official copies.</p>
+<h3>My developer installed a nulled theme. What should I do?</h3>
+<p>Ask for the purchase details. If there are none, buy a genuine licence in your own account or move to a free theme, then follow the clean-up steps above. The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> helps you take control of every account.</p>
+<h3>If I delete the nulled plugin, is my site clean?</h3>
+<p>Not necessarily. Backdoors and admin users created by the plugin can remain after it's gone, which is why you need to scan the rest of the site and reset passwords.</p>
+<h3>Will a nulled theme hurt my SEO?</h3>
+<p>It can. Hidden spam links, cloaked pages and redirects can damage rankings and trigger warnings in search results, sometimes long before you notice anything wrong.</p>
 
-<h2>Ask your developer</h2>
-<p>A trustworthy developer uses genuine licences and tells you who owns them. See the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
+<p>Found nulled software, spam pages or suspicious code on your site? I can check every theme and plugin, remove malicious code and backdoors, and replace pirated products with licensed or free alternatives: see <a href="/wordpress-malware-removal/">WordPress malware removal</a>, and <a href="/wordpress-maintenance/">WordPress maintenance</a> to keep everything updated afterwards.</p>
 `,
   },
   {
@@ -19868,94 +19974,142 @@ Template: astra
   },
   {
     slug: 'website-for-yoga-studios-teachers',
-    seoTitle: 'Websites for Yoga Studios and Teachers: What to Include',
-    title: 'Websites for Yoga Studios and Teachers: Classes, Schedules and Online Sessions',
-    description: 'What yoga studios and teachers need online: beginner-friendly class pages, schedules, online sessions, memberships, real credentials and careful health claims.',
+    seoTitle: 'Yoga Studio Website: Classes, Teacher Training and Booking',
+    title: 'Websites for Yoga Studios and Teachers: Classes, Teacher Training, Retreats and Online Batches',
+    description: 'Plan a yoga studio or teacher website: style and level pages, batch timetables, online classes, teacher training, retreats, safety wording and a sample sitemap.',
     date: '2026-09-28',
+    updated: '2026-10-11',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design'],
     body: `
-<p>Someone looking for a yoga class is rarely just comparing prices. A beginner wants to know whether they will cope, someone with back pain wants to know whether it is safe, and a student abroad wants to know whether your online batch fits their time zone. A yoga website has to answer these questions calmly and clearly. Our guide to <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms and fitness studios</a> covers the general fitness side; this one focuses on what is specific to yoga studios and independent yoga teachers.</p>
+<p>A yoga website has a different job from a gym website. Someone choosing a gym compares equipment and prices; someone choosing a yoga class wants to know which style suits them, whether a beginner will cope, whether it is safe with their back problem, and whether the online batch fits their time zone. On top of that, many studios also run workshops, retreats and teacher training courses, and each of those is a different purchase with different questions. Our guide to <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms and fitness studios</a> covers general fitness businesses; this one is only about yoga studios, independent yoga teachers and yoga schools.</p>
 
-<h2>Studio or independent teacher?</h2>
-<p>The structure of the site depends on how you work:</p>
+<h2>Studio, independent teacher or training school?</h2>
+<p>Start by being clear about what you mainly sell, because it decides what the homepage leads with:</p>
 <table>
   <thead>
-    <tr><th>Aspect</th><th>Yoga studio</th><th>Independent teacher</th></tr>
+    <tr><th>Aspect</th><th>Yoga studio</th><th>Independent teacher</th><th>Teacher training school</th></tr>
   </thead>
   <tbody>
-    <tr><td>Main focus</td><td>Timetable, styles, teachers and memberships</td><td>You: your training, approach and availability</td></tr>
-    <tr><td>Typical offers</td><td>Group classes, class packs, workshops, teacher training</td><td>Private sessions, home visits, corporate classes, online batches</td></tr>
-    <tr><td>Main action</td><td>Book a trial class</td><td>Book a first session or a short call</td></tr>
-    <tr><td>Typical searches</td><td>"yoga classes in {area}"</td><td>"yoga teacher for home in {city}", "online yoga teacher"</td></tr>
+    <tr><td>Main focus</td><td>Timetable, styles, teachers and memberships</td><td>You: your training, approach and availability</td><td>Course syllabus, faculty, dates and eligibility</td></tr>
+    <tr><td>Typical offers</td><td>Group batches, class packs, workshops</td><td>Private sessions, home visits, corporate and online classes</td><td>Residential or weekend courses, mentoring</td></tr>
+    <tr><td>Main action</td><td>Book a trial class</td><td>Book a first session or a short call</td><td>Download the syllabus or apply</td></tr>
   </tbody>
 </table>
-<p>Teachers building a name for themselves can borrow ideas from <a href="/blog/personal-brand-website-professionals/">personal brand websites for professionals</a>.</p>
+<p>Many studios are a mix of all three. That's fine, but each offer still needs its own page rather than one long "Programmes" page. Teachers building a name for themselves can borrow ideas from <a href="/blog/personal-brand-website-professionals/">personal brand websites for professionals</a>.</p>
 
-<h2>Class pages that reassure beginners</h2>
-<p>Instead of a bare list of class names, give each style or class type its own short page or section:</p>
+<h2>Style and level pages that help people choose</h2>
+<h3>Explain each style in your own words</h3>
+<p>A bare list of names such as Hatha, Vinyasa and Yin means nothing to a beginner, and the same name can mean quite different classes at different studios. Give each style a short page or section describing how you teach it:</p>
 <ul>
-  <li><strong>What it is:</strong> Hatha, Vinyasa, Ashtanga, Yin, prenatal, kids or chair yoga, explained in plain words</li>
-  <li><strong>Level:</strong> beginner, all levels or experienced, and whether newcomers can join any week</li>
-  <li><strong>What to expect:</strong> pace, duration, and how much breathwork, chanting or meditation is included</li>
-  <li><strong>What to bring:</strong> mat, clothing, water, and whether to avoid a heavy meal beforehand</li>
-  <li><strong>Who should check first:</strong> for example during pregnancy, after surgery or with an injury</li>
+  <li><strong>Hatha:</strong> often a slower class with postures held for a few breaths, and at many studios the usual starting point</li>
+  <li><strong>Vinyasa or flow:</strong> movement linked to the breath, usually faster and more continuous</li>
+  <li><strong>Ashtanga:</strong> a set sequence, physically demanding, sometimes taught in a self-paced format</li>
+  <li><strong>Yin or restorative:</strong> long, quiet floor-based holds, often with props</li>
+  <li><strong>Alignment-focused classes</strong> using blocks, belts and chairs</li>
+  <li><strong>Specialist classes:</strong> prenatal, postnatal, kids, seniors, chair yoga, pranayama and meditation</li>
 </ul>
-<p>A short "Your first class" page that answers common worries (flexibility, age, fitness level, what happens when you arrive) often does more for enquiries than any discount.</p>
+<p>For each one, say how long the class runs, how much breathwork, chanting or meditation it includes, and what a student will feel afterwards in plain terms ("a steady workout" or "slow and calming").</p>
 
-<h2>Schedules, time zones and online sessions</h2>
+<h3>Use one level system everywhere</h3>
+<p>Pick simple levels, such as Foundations, Level 1, Level 2 and All levels, and define each in terms of what a student can already do, for example "new to yoga or returning after a long break". Then use exactly the same labels on the style pages, the timetable and the booking form. Mixed labels ("beginner-friendly", "basic", "easy flow") leave people unsure where to start.</p>
+
+<h3>A "Your first class" page</h3>
+<p>This page often does more for trial bookings than any discount. Answer the real worries: "I'm not flexible", "I'm overweight", "I'm over 60", what to wear, whether mats and props are provided, when to arrive, whether to avoid a heavy meal beforehand, and to tell the teacher about injuries or pregnancy before class starts.</p>
+
+<h2>Timetables and booking that match how yoga students attend</h2>
+<p>Yoga studios in India often run fixed monthly batches (the 6:30 am weekday batch, the evening batch) alongside drop-in classes and class packs. These work differently, so present them differently:</p>
 <ul>
-  <li><strong>An editable timetable:</strong> the teacher or studio staff should be able to change a class, mark a substitute or cancel a session from a phone in minutes</li>
-  <li><strong>Morning and evening batches</strong> clearly separated, since that is how many students choose</li>
-  <li><strong>Time zones:</strong> if you teach students abroad, state the time zone next to every online class (for example "7:00 am IST") and consider showing the time for your main overseas markets too</li>
-  <li><strong>Private links:</strong> send Zoom or Google Meet links only after booking or payment, by email or WhatsApp, never on a public page</li>
-  <li><strong>Recordings:</strong> if you offer replays, keep them in a members-only area rather than on public video pages</li>
+  <li><strong>Batches:</strong> show the days, time, level, teacher, start date and seats left, and let people join or enquire for the next intake</li>
+  <li><strong>Drop-in classes:</strong> let students book a specific class, with a capacity limit based on how many mats your room really holds and a waitlist when it fills</li>
+  <li><strong>Cancellation cut-off:</strong> decide how late a student can cancel and keep their credit, and show that rule at the moment of booking</li>
+  <li><strong>Changes:</strong> mark substitute teachers, holidays and cancelled classes on the timetable itself, so regulars don't learn about them from a WhatsApp forward</li>
 </ul>
-<p>Trials, private sessions and group classes can all be booked online with automatic reminders; see <a href="/blog/online-appointment-booking-website/">online appointment booking</a>.</p>
+<p>Keep the timetable as real text on the page, not an image or PDF, so staff can update it from a phone and students can read it easily on theirs. Trials, private sessions and group classes can all be booked online with automatic reminders; see <a href="/blog/online-appointment-booking-website/">online appointment booking</a>.</p>
 
-<h2>Memberships, packs and payments</h2>
-<p>Yoga pricing usually mixes several formats, and the website should make them easy to compare:</p>
+<h2>Online classes: live, recorded and hybrid</h2>
 <ul>
-  <li>Drop-in or trial classes</li>
-  <li>Class packs with a clear validity period</li>
-  <li>Monthly or quarterly memberships for in-studio, online or both</li>
-  <li>Workshops, retreats and teacher training courses, priced separately</li>
+  <li><strong>Live batches:</strong> state the time zone next to every class ("7:00 am IST"), and consider showing times for your main overseas markets too</li>
+  <li><strong>Private links:</strong> send Zoom or Google Meet links only after booking or payment, never on a public page</li>
+  <li><strong>Camera and space:</strong> explain whether students should keep their camera on so you can offer corrections, how much floor space they need and which household items can replace props</li>
+  <li><strong>Recorded classes:</strong> keep replays and on-demand courses in a members-only area; see <a href="/blog/membership-website-wordpress/">membership websites on WordPress</a> and <a href="/blog/online-course-website-wordpress/">selling online courses</a></li>
+  <li><strong>Hybrid passes:</strong> spell out exactly what each membership includes: studio only, online only or both</li>
 </ul>
-<p>Collect payments by UPI, cards and net banking through a payment gateway, and check whether your gateway plan accepts international cards if you have overseas students. Write clear pause, freeze and refund rules for memberships and publish them before anyone pays. Our guide to <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a> explains the options.</p>
+<p>Collect payments by UPI, cards and net banking through a payment gateway, and check whether your plan accepts international cards if you teach students abroad. Our guide to <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a> explains the options. Ask your CA how tax applies to overseas students.</p>
 
-<h2>Teacher credentials, described honestly</h2>
-<p>Students increasingly check who will be teaching them. For each teacher, include:</p>
+<h2>Workshops, retreats and teacher training need their own pages</h2>
+<h3>Workshops</h3>
+<p>One-off sessions on themes such as inversions, backbends, pranayama or yoga for desk workers deserve a page each, with the date, duration, prerequisites, what to bring, seats available and the refund rule. Archive or redirect the page after the event rather than leaving an old date live.</p>
+
+<h3>Retreats</h3>
+<p>A retreat buyer is booking travel as well as yoga. Include a day-by-day schedule, accommodation types, the food served, how to reach the venue from the nearest airport or railway station, what is and isn't included, the level the retreat suits, the cancellation policy and real photos of the venue. Wellness centres face many of the same questions; see <a href="/blog/website-for-ayurveda-wellness-centres/">websites for Ayurveda and wellness centres</a>.</p>
+
+<h3>Teacher training courses</h3>
+<p>People considering a teacher training course compare carefully and read everything. A strong course page covers:</p>
 <ul>
-  <li>A real photo and a short, personal introduction</li>
-  <li>Where and how they trained, and the certifications they hold, such as Yoga Alliance registration or Yoga Certification Board certification, with levels stated accurately</li>
-  <li>Years of teaching and the groups they specialise in, such as beginners, seniors or prenatal students</li>
-  <li>The languages they teach in</li>
+  <li>Total hours and the format: residential, weekends, or online with in-person practicum</li>
+  <li>The syllabus by module, such as asana practice, anatomy, philosophy, teaching method and practice teaching</li>
+  <li>Lead trainers, with their own training described accurately</li>
+  <li>How students are assessed and what certificate they receive</li>
+  <li>Any registration or certification body the course is linked to, stated exactly as it stands, with a link to that body's own directory so students can verify it</li>
+  <li>Eligibility, upcoming dates and an application form with a few screening questions</li>
 </ul>
-<p>List only certifications a teacher actually holds, and keep them current. Vague labels such as "expert" or "world-famous" mean little to a new student; clear training details mean a lot.</p>
+<p>Registration schemes and their requirements change, so check the current rules of any body you mention, and don't suggest a certificate qualifies graduates for something it doesn't.</p>
 
-<h2>Health claims and student safety</h2>
-<p>People often search for yoga in connection with back pain, stress, PCOS, thyroid problems or diabetes. It is fine to describe classes designed for particular groups, but be careful with the wording:</p>
+<h2>Safety, health claims and disclaimers</h2>
+<p>People often search for yoga alongside back pain, stress, PCOS, thyroid problems or diabetes. You can describe classes designed for particular groups, but be careful with the wording:</p>
 <ul>
-  <li>Avoid saying yoga "cures" or "reverses" a disease, or promising specific medical results</li>
-  <li>Encourage students with medical conditions, injuries or pregnancies to consult their doctor before starting</li>
-  <li>Use a short health questionnaire at sign-up and limit who can see the answers, since health details deserve extra care</li>
+  <li>Avoid saying yoga "cures" or "reverses" a condition, or promising specific medical results</li>
+  <li>Add a plain note on class and booking pages that yoga is physical activity, and that students with injuries, medical conditions or pregnancy should tell the teacher and check with their doctor first</li>
+  <li>For prenatal and therapeutic classes, say who the class is for and who should not join without medical advice</li>
+  <li>Use a short health questionnaire at sign-up, limit who can see the answers and check current data protection rules for health information</li>
   <li>Share student stories only with consent, and keep them about experience rather than medical outcomes</li>
 </ul>
-<p>Claims about treating medical conditions can fall under advertising rules, so if you run therapeutic programmes, have the wording reviewed by someone qualified.</p>
+<p>If you use a waiver or consent form, or run programmes for specific conditions, have the wording reviewed by a lawyer or another qualified person.</p>
 
-<h2>Local SEO and seasonal moments</h2>
+<h2>A worked example: page structure for a small studio</h2>
+<p>Imagine a studio with one practice room, morning and evening batches, one live online batch, a monthly workshop and an annual teacher training course. A sensible structure would be:</p>
 <ul>
-  <li>Target searches such as "yoga classes in {area}", "morning yoga batch near me", "prenatal yoga in {city}" and "online yoga classes for beginners"</li>
-  <li>Keep your Google Business Profile updated with class times, photos of the studio and genuine reviews</li>
-  <li>Write helpful articles that answer beginner questions, rather than copied lists of poses</li>
-  <li>Plan events and pages around International Day of Yoga on 21 June, the new year and summer batches for children</li>
-  <li>Give teacher training and retreats their own landing pages, with dates, syllabus, accommodation, eligibility and an application form</li>
+  <li><strong>Home:</strong> today's classes, "Book a trial", styles at a glance, location and WhatsApp</li>
+  <li><strong>Classes:</strong> one page each for Hatha, Vinyasa, Yin and prenatal</li>
+  <li><strong>Timetable:</strong> filterable by level and by studio or online</li>
+  <li><strong>Your first class</strong></li>
+  <li><strong>Online classes:</strong> time zones, how links are sent, equipment</li>
+  <li><strong>Pricing and memberships:</strong> with pause and refund rules</li>
+  <li><strong>Workshops:</strong> one page per upcoming workshop</li>
+  <li><strong>Teacher training:</strong> overview, syllabus, faculty, dates and application</li>
+  <li><strong>Retreats</strong>, if you run them</li>
+  <li><strong>Teachers:</strong> photo, training, languages, specialisms</li>
+  <li><strong>Journal:</strong> answers to beginner questions</li>
+  <li><strong>Contact and location:</strong> map, parking, nearest landmark</li>
+</ul>
+<p>Each style page can be found for searches like "Yin yoga in {area}", the teacher training page can be found by people researching courses, and the journal can answer questions such as "Hatha or Vinyasa for beginners?" in your own voice. Keep your Google Business Profile in step with this: the right category, class times, photos of the room set up with mats and props, and genuine reviews. International Day of Yoga on 21 June and new-year batches are natural moments for fresh pages and posts.</p>
+
+<h2>Common mistakes on yoga websites</h2>
+<ul>
+  <li>A timetable posted as an image or PDF that nobody updates</li>
+  <li>One "Classes" page listing style names with no explanation or level</li>
+  <li>Zoom links published on a public page or in a public post</li>
+  <li>Health claims such as "yoga for thyroid cure"</li>
+  <li>"Certified teacher" with no detail of where or how, or certifications that have lapsed</li>
+  <li>A teacher training page with no syllabus, hours or dates, which reads like a brochure</li>
+  <li>Retreat pages without inclusions or a cancellation policy</li>
+  <li>A full-screen background video that makes the site slow on mobile data</li>
 </ul>
 
-<h2>A calm design that still loads fast</h2>
-<p>A yoga website should feel calm, but calm doesn't mean heavy. Large background videos and full-screen sliders slow pages down on mobile data. Use a few good photos of your real space and teachers, embed class videos carefully, and keep the timetable, WhatsApp button and "Book a trial" link easy to reach on a phone.</p>
+<h2>FAQs</h2>
+<h3>Do I need a website if I already teach through Instagram and WhatsApp?</h3>
+<p>Instagram is good for showing your practice, but it can't hold a timetable, explain levels, take bookings and payments or rank for "yoga classes in {area}". A simple site gives your Instagram followers somewhere to book, and gives people searching on Google a way to find you.</p>
+<h3>Can one website handle monthly batches and drop-in classes?</h3>
+<p>Yes. Most booking setups can sell both memberships and single classes. The important part is presenting them clearly and stating validity, pause and cancellation rules before payment.</p>
+<h3>How do I stop recorded classes being shared?</h3>
+<p>No system stops sharing completely, but a members-only area with individual logins is far better than unlisted video links, which anyone can forward.</p>
+<h3>Should I show my class prices?</h3>
+<p>For regular classes and packs, clear prices usually reduce back-and-forth questions. For private and corporate sessions, a "starting from" note or an enquiry form often works better. See <a href="/blog/show-prices-on-website/">whether to show prices on your website</a>.</p>
+<h3>Can I update the timetable myself?</h3>
+<p>You should be able to. Ask for a timetable built as editable content, and a short handover so you can change times, teachers and holidays from your phone.</p>
 
-<p>Planning a yoga studio or teacher website you can update yourself? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> for teacher training and retreat campaigns.</p>
+<p>Planning a yoga studio or teacher website with a timetable you can update yourself and proper pages for workshops, retreats and teacher training? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> for teacher training and retreat campaigns.</p>
 `,
   },
   {
@@ -21900,25 +22054,41 @@ Template: astra
   },
   {
     slug: 'image-seo-guide',
-    seoTitle: 'Image SEO: Get Your Photos Found in Google Images',
-    title: 'Image SEO: How to Get Your Photos Found in Google Images and Lens',
-    description: 'Image SEO for business websites: file names, alt text, captions, formats, image sitemaps and how to get your photos found in Google Images and Google Lens.',
+    seoTitle: 'Image SEO: How to Optimise Images for Google Search',
+    title: 'Image SEO: How to Optimise Images for Google Images, Lens and Discover',
+    description: 'A practical image SEO guide: file names, alt text, formats, compression, responsive images, lazy loading, image sitemaps and getting found in Google Images.',
     date: '2026-09-28',
+    updated: '2026-10-11',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-speed-optimization'],
     body: `
-<p>Most advice about website images is about speed: resize, compress, use WebP. That matters, and it's covered in our guide to <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>. This article is about the other half: helping Google understand your images so they appear in Google Images, Google Lens and image-rich results, and bring customers to your site.</p>
+<p>Image SEO means helping search engines find, understand and show your images, so they appear in Google Images, Google Lens and image-rich results and bring visitors to your site. It overlaps with speed, because heavy images slow pages down, and that side is covered in our guide to <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>. This guide covers both halves briefly and focuses on what makes images findable.</p>
+
+<h2>Image SEO at a glance</h2>
+<table>
+  <thead>
+    <tr><th>Element</th><th>What to do</th><th>Why it matters</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Photo choice</td><td>Use original photos where you can</td><td>Unique images have a better chance of being shown</td></tr>
+    <tr><td>File name</td><td>A few descriptive words with hyphens</td><td>A small clue to what the image shows</td></tr>
+    <tr><td>Alt text</td><td>A short, natural description</td><td>Accessibility, and a key signal for Google</td></tr>
+    <tr><td>Nearby text</td><td>Place images beside related headings and captions</td><td>Gives the image context</td></tr>
+    <tr><td>Format and size</td><td>WebP or AVIF, compressed, responsive sizes</td><td>Faster pages and better Core Web Vitals</td></tr>
+    <tr><td>Markup</td><td>Real image tags, width and height set, sensible lazy loading</td><td>Google can index them and the layout doesn't jump</td></tr>
+    <tr><td>Discovery</td><td>Images in your sitemap, stable URLs</td><td>Google finds and keeps your images</td></tr>
+  </tbody>
+</table>
 
 <h2>Why image search matters for businesses</h2>
-<p>People search with pictures more than many business owners realise. A shopper sees a lamp in a café, photographs it with Google Lens and looks for where to buy it. Someone planning a home browses Google Images for "modular kitchen design" ideas and clicks through to the interior designer whose photos they liked. A patient checks what a clinic looks like before visiting.</p>
-<p>Image search works best for visual businesses such as interiors, architecture, furniture, fashion, jewellery, food, products, real estate, events and travel. But any business with real photos of its work can benefit.</p>
+<p>People search with pictures more than many business owners realise. A shopper photographs a lamp in a cafe with Google Lens and looks for where to buy it. Someone planning a home browses Google Images for "modular kitchen design" and clicks through to the interior designer whose photos they liked. A patient checks what a clinic looks like before visiting. Image search matters most for visual businesses such as interiors, furniture, fashion, jewellery, food, products, real estate, events and travel, but any business with real photos of its work can benefit.</p>
 
 <h2>Use original photos wherever you can</h2>
-<p>Stock photos appear on thousands of websites, so Google has little reason to show yours over everyone else's, and a Lens search on a stock image usually leads to someone else's page. Original photos of your products, projects, team and premises are unique to you, which makes them more likely to be shown and more convincing to customers. Our guide to <a href="/blog/prepare-photos-for-website/">preparing photos for your website</a> covers taking and editing them.</p>
+<p>Stock photos appear on thousands of websites, so Google has little reason to show yours, and a Lens search on a stock image usually leads to someone else's page. Original photos of your products, projects, team and premises are unique to you and more convincing to customers. See <a href="/blog/stock-photos-vs-real-photos/">stock photos vs real photos</a> and our guide to <a href="/blog/prepare-photos-for-website/">preparing photos for your website</a>.</p>
 
 <h2>File names, alt text and captions</h2>
 <h3>File names</h3>
-<p>Rename files before uploading. <code>teak-dining-table-6-seater.webp</code> tells Google far more than <code>IMG_20260914.jpg</code>. Use a few descriptive words separated by hyphens, and don't stuff your city and every keyword into each file name.</p>
+<p>Rename files before uploading. <code>teak-dining-table-6-seater.webp</code> tells Google far more than <code>IMG_20260914.jpg</code>. Use a few descriptive words separated by hyphens, and don't stuff your city and every keyword into each name.</p>
 <h3>Alt text</h3>
 <p>Alt text is read aloud by screen readers, and Google uses it as an important clue to what an image shows. Describe the image in a short, natural phrase:</p>
 <ul>
@@ -21926,56 +22096,90 @@ Template: astra
   <li><strong>Weak:</strong> "solar" or "image1"</li>
   <li><strong>Bad:</strong> "solar panels solar company Pune best solar installer Pune"</li>
 </ul>
-<p>Purely decorative images, such as background shapes and divider icons, can have empty alt text. In WordPress, alt text is set in the media library and reused wherever the image appears, so check it still makes sense on each page.</p>
+<p>A few more rules that help:</p>
+<ul>
+  <li>Don't start with "image of" or "photo of"; screen readers already announce it as an image</li>
+  <li>For product variants, describe the difference: "Blue cotton kurta, side view"</li>
+  <li>For a linked image, such as a logo linking to the homepage, describe where the link goes</li>
+  <li>Purely decorative images, such as background shapes and divider icons, can have empty alt text</li>
+</ul>
+<p>In WordPress, alt text is set in the media library and reused wherever the image appears, so check it still makes sense on each page.</p>
 <h3>Captions and surrounding text</h3>
 <p>Google also reads the text around an image: the heading above it, the paragraph beside it and any caption. Place images next to the text they relate to, and add captions where they help readers, such as a project name, a product name or what a before-and-after comparison shows.</p>
 
+<h2>Formats, compression and dimensions</h2>
+<ul>
+  <li><strong>Photos:</strong> WebP is usually the best balance of quality and file size, and AVIF can be smaller still; JPEG is a safe fallback</li>
+  <li><strong>Graphics with transparency:</strong> PNG or WebP</li>
+  <li><strong>Logos and icons:</strong> SVG stays sharp at any size</li>
+  <li><strong>Compression:</strong> compress every upload, ideally automatically; see <a href="/blog/image-compression-plugins-compared/">image compression plugins compared</a></li>
+  <li><strong>Dimensions:</strong> resize to roughly the largest size the image is shown at, rather than uploading straight from a camera or phone</li>
+</ul>
+<p>Google can index JPEG, PNG, WebP, GIF, SVG, BMP and AVIF, so format is mostly a speed decision rather than a ranking one. Always set width and height on images (WordPress does this for images inserted normally) so the page doesn't jump as they load; see <a href="/blog/fix-cls-layout-shift/">fixing layout shift</a>.</p>
+
+<h2>Responsive images</h2>
+<p>Responsive images let the browser pick a smaller file on a phone and a larger one on a desktop screen. WordPress creates several sizes of every upload and adds them to the image tag automatically, so a phone doesn't download a 2,000-pixel image to show it 400 pixels wide. Problems usually come from page builders or themes that always load the full-size original, or from images added as CSS backgrounds. Check with your browser's developer tools: if the file downloaded on a phone is much larger than its displayed size, the setup needs fixing.</p>
+
+<h2>Lazy loading done right</h2>
+<p>Lazy loading delays images further down the page until the visitor scrolls near them, which saves data and speeds up the first view. WordPress adds native lazy loading automatically, and that's search-friendly. Two cautions:</p>
+<ul>
+  <li><strong>Don't lazy-load the main image at the top of the page.</strong> It's often the Largest Contentful Paint element, and delaying it slows your score. Recent WordPress versions try to skip it, but builders and plugins can override that; see <a href="/blog/fix-lcp-largest-contentful-paint/">fixing LCP</a></li>
+  <li><strong>Avoid script-only galleries</strong> that load images only after a click or swipe, because search engines may never see them</li>
+</ul>
+<p>A well-marked-up image looks like this:</p>
+<pre><code>&lt;img src="teak-dining-table-6-seater.webp" alt="Six-seater teak dining table in a bright dining room" width="1200" height="800" loading="lazy"&gt;</code></pre>
+<p>Our guide to <a href="/blog/lazy-loading-explained/">lazy loading explained</a> goes into more detail.</p>
+
 <h2>Put images on the page the right way</h2>
 <ul>
-  <li><strong>Use real image elements.</strong> Google indexes images added with standard HTML image tags, but not images set as CSS backgrounds. Page builders often create banner sections with background images. That's fine for decoration, but photos you want found in search should be inserted as normal images.</li>
-  <li><strong>Use supported formats.</strong> JPEG, PNG, WebP, GIF, SVG and AVIF can all be indexed. WebP is usually the best balance of quality and file size.</li>
-  <li><strong>Keep lazy loading standard.</strong> WordPress's built-in lazy loading is search-friendly. Some script-heavy sliders and galleries only load images after a click or swipe, and search engines may never see them.</li>
-  <li><strong>Use sharp, good-quality images.</strong> Tiny, blurry thumbnails rarely do well. Serve a large enough version and let responsive image sizes keep files small on phones.</li>
-  <li><strong>Keep image URLs stable.</strong> Changing image addresses during a migration or redesign means Google has to rediscover them, so plan redirects and keep file paths where you can.</li>
+  <li><strong>Use real image elements.</strong> Google indexes images added with standard HTML image tags, but not images set as CSS backgrounds. Page builders often create banners with background images. That's fine for decoration, but photos you want found should be inserted as normal images.</li>
+  <li><strong>Use sharp, good-quality images.</strong> Tiny, blurry thumbnails rarely do well. Serve a large enough version and let responsive sizes keep files small on phones.</li>
+  <li><strong>Keep image URLs stable.</strong> Changing image addresses during a migration or redesign means Google has to rediscover them, so keep file paths where you can and plan redirects where you can't.</li>
 </ul>
 
-<h2>Image sitemaps</h2>
-<p>An image sitemap lists the images on each page, helping Google discover images it might otherwise miss, such as those loaded by scripts.</p>
+<h2>Image sitemaps and structured data</h2>
+<p>An image sitemap lists the images on each page, helping Google discover images it might otherwise miss.</p>
 <ul>
   <li>WordPress's built-in sitemap doesn't list images, but popular SEO plugins can include them in your page and post sitemaps. Check your plugin's settings.</li>
   <li>Google now only uses the image location from image sitemaps. Older tags for captions, titles and licences were deprecated, so there's no benefit in filling them in.</li>
   <li>Submit your sitemap in Search Console and check it for errors. See <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</li>
 </ul>
+<p>Structured data helps too. Product, article and recipe markup include an image property that can make your image eligible for richer results, and photographers can add licence details through structured data or photo metadata so Google Images can show a "Licensable" label. See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
 
 <h2>Google Lens and product images</h2>
-<p>Lens identifies objects in a photo and shows matching products, places and web pages. To give your images a chance of appearing:</p>
 <ul>
   <li>Show products clearly: one main product per image, good light and an uncluttered background, plus a few in-use shots</li>
   <li>Photograph products from several angles, because people will photograph them from any angle</li>
   <li>Add Product schema with price and availability to product pages; most WooCommerce SEO setups can generate this</li>
-  <li>For online stores, submit your products to Google Merchant Center so they can appear in Google's shopping results. See <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a>.</li>
+  <li>For online stores, submit products to Google Merchant Center so they can appear in Google's shopping results. See <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a>.</li>
 </ul>
 
-<h2>Choose the image that represents each page</h2>
-<p>Search results, Google Discover and WhatsApp link previews often show a thumbnail next to your page. Help them pick a good one:</p>
-<ul>
-  <li>Set a relevant featured image and social sharing (Open Graph) image on every important page, ideally at least 1200 pixels wide, and not just your logo</li>
-  <li>Allow large image previews. WordPress does this by default, but check your SEO plugin hasn't changed the setting</li>
-  <li>Avoid text-heavy graphics as the main image, as they look poor when shrunk to a thumbnail</li>
-</ul>
-
-<p>Large, original images also matter for Google's personalised feed; see <a href="/blog/google-discover-small-business/">Google Discover for small business websites</a>.</p>
+<h2>Featured images, Discover and link previews</h2>
+<p>Search results, Google Discover and WhatsApp link previews often show a thumbnail next to your page. Set a relevant featured image and social sharing image on every important page, ideally at least 1,200 pixels wide and not just your logo. Allow large image previews (WordPress does by default, but check your SEO plugin hasn't changed it), and avoid text-heavy graphics as the main image, as they look poor when shrunk. See <a href="/blog/google-discover-small-business/">Google Discover for small business websites</a>.</p>
 
 <h2>Common mistakes, and how to check your results</h2>
-<p>These are the problems I see most often on WordPress sites:</p>
 <ul>
-  <li><strong>Thin attachment pages:</strong> older WordPress sites can have a separate, nearly empty page for every uploaded image. Newer installs disable these, and SEO plugins can redirect them</li>
+  <li><strong>Thin attachment pages:</strong> older WordPress sites can have a nearly empty page for every uploaded image; SEO plugins can redirect them</li>
   <li><strong>Blocking image folders</strong> in robots.txt, which stops Google indexing your images</li>
   <li><strong>Blank or copied alt text</strong> across whole galleries</li>
-  <li><strong>Important text inside images,</strong> such as prices or service lists, which search engines may not read reliably and screen readers can't read at all</li>
-  <li><strong>Large watermarks</strong> across the product. A small corner logo is fine</li>
+  <li><strong>Important text inside images,</strong> such as prices or service lists, which screen readers can't read</li>
+  <li><strong>Large watermarks</strong> across the product; a small corner logo is fine</li>
 </ul>
-<p>To see whether your work is paying off, open Google Search Console's Performance report and switch the search type to Image to see which searches show your images and how many clicks they bring. Look for pages with plenty of impressions but few clicks, and improve their images, alt text and surrounding content.</p>
+<p>To see whether your work is paying off, open Search Console's Performance report and switch the search type to Image. Look for pages with plenty of impressions but few clicks, and improve their images, alt text and surrounding content.</p>
+
+<h2>FAQs</h2>
+<h3>Does alt text help SEO?</h3>
+<p>Yes. Google uses alt text, along with the page content and file name, to understand an image. It's also essential for visitors using screen readers, so write it for them first.</p>
+<h3>How long should alt text be?</h3>
+<p>There's no fixed limit. A short phrase or one sentence that describes what matters in the image is usually enough. Long keyword lists help nobody.</p>
+<h3>Is WebP better for SEO than JPEG?</h3>
+<p>Not directly. Google indexes both. WebP files are usually smaller, which makes pages faster, and that helps visitors and Core Web Vitals.</p>
+<h3>Does the image title attribute matter?</h3>
+<p>It has little known value for search. Spend the effort on alt text, file names and the text around the image.</p>
+<h3>Why aren't my images showing in Google Images?</h3>
+<p>Common causes are CSS background images, blocked image folders, script-only galleries, stock photos that appear on many other sites, or pages that aren't indexed. Check the page with URL Inspection in Search Console first.</p>
+<h3>Can Google read text inside images?</h3>
+<p>Google Lens can often recognise text in images, but don't rely on it for search. Put important words such as product names, prices and services in real text on the page.</p>
 
 <p>Want your images, and the rest of your SEO, set up properly? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, and pair it with <a href="/wordpress-speed-optimization/">speed optimisation</a> so your images are fast as well as findable.</p>
 `,
@@ -36254,48 +36458,68 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-ice-cream-parlours',
-    title: 'Websites for Ice Cream Parlours, Gelato and Dessert Shops',
-    description: 'What an ice cream parlour or gelato shop website needs: a flavour menu you can update daily, party and bulk orders, delivery links, FSSAI details and local SEO.',
+    seoTitle: 'Ice Cream Parlour Websites: Flavour Menus and Party Orders',
+    title: 'Websites for Ice Cream Parlours and Gelato Shops: Flavour Menus, Party Orders and Delivery',
+    description: 'Plan an ice cream parlour or gelato shop website: a flavour board you update daily, seasonal launches, party and bulk orders, delivery choices and FSSAI basics.',
     date: '2026-10-01',
+    updated: '2026-10-11',
     category: 'Industries',
     related: ['website-for-restaurants', 'landing-page-design'],
     body: `
-<p>Nobody needs convincing to eat ice cream. What people need is a reason to choose your parlour over the one down the road: the flavours you have today, whether there's something eggless for a fussy cousin, how late you're open, and whether you can send twenty tubs to a birthday party on Saturday. A good website answers all of that on a phone in under a minute. If you also serve coffee and snacks, our guide to <a href="/blog/website-for-cafes-coffee-shops/">websites for cafes and coffee shops</a> covers seating and events; this one focuses on ice cream parlours, gelato counters and dessert shops.</p>
+<p>Nobody needs convincing to eat ice cream. What people need is a reason to choose your parlour over the one down the road: the flavours you have today, whether there's something eggless for a fussy cousin, how late you're open, and whether you can send tubs to a birthday party on Saturday. An ice cream website is unusual because its most important page, the flavour list, changes every week. If you also serve coffee and snacks, our guide to <a href="/blog/website-for-cafes-coffee-shops/">websites for cafes and coffee shops</a> covers seating and events; this one is only about ice cream parlours, gelato counters and frozen dessert shops.</p>
 
 <h2>What customers check before they visit</h2>
 <ul>
   <li><strong>Is it open now?</strong> Many dessert visits happen after dinner, so late hours and weekend timings matter</li>
-  <li><strong>What flavours are on today?</strong> Especially seasonal favourites such as mango or sitaphal</li>
+  <li><strong>What's on the counter today?</strong> Especially seasonal favourites such as mango or sitaphal</li>
   <li><strong>Dietary options:</strong> eggless, vegan, no added sugar or nut-free, shown only where true</li>
   <li><strong>Price range:</strong> per scoop, cup, cone, sundae or tub</li>
-  <li><strong>Can they order for an event?</strong> Birthdays, weddings and office celebrations</li>
-  <li><strong>How to get there,</strong> or how to get it delivered</li>
+  <li><strong>Party orders:</strong> birthdays, weddings and office celebrations</li>
+  <li><strong>How to get there,</strong> or how to get it delivered still frozen</li>
 </ul>
 <p>Put hours, location, a "Today's flavours" button and one-tap WhatsApp at the top of the homepage.</p>
 
-<h2>A flavour menu that changes as often as your counter</h2>
-<p>An ice cream menu has a problem most menus don't: it changes every week, sometimes every day. A printed card or a photo of the board goes out of date quickly, so build the menu as a web page you can edit from your phone; see <a href="/blog/restaurant-menu-on-website/">putting your menu online the right way</a>.</p>
+<h2>A flavour board built for rotation</h2>
+<p>A printed card or a photo of the menu board goes out of date within days. Build the menu as a web page staff can edit from a phone; our guide to <a href="/blog/restaurant-menu-on-website/">putting your menu online the right way</a> covers the basics. For ice cream, organise it as a flavour board with clear sections:</p>
 <ul>
-  <li><strong>Core flavours</strong> that are always available, listed permanently</li>
-  <li><strong>Seasonal and limited flavours</strong> in their own section, with a simple "available now" or "sold out" switch staff can change in seconds</li>
+  <li><strong>Always on:</strong> core flavours that never leave the counter</li>
+  <li><strong>On the counter today:</strong> rotating and limited flavours, each with an "available" or "sold out" switch</li>
+  <li><strong>Coming back soon:</strong> popular flavours between batches or out of season, so people know to return</li>
   <li><strong>Formats and sizes:</strong> single and double scoops, cups, cones, sundaes, shakes, family packs and tubs, with prices</li>
-  <li><strong>Dietary markers:</strong> veg, eggless, contains nuts, and any vegan or no-added-sugar options, used only when you are sure they are accurate for every batch</li>
-  <li><strong>Allergen notes:</strong> milk, nuts, and gluten in cones or toppings, plus a line explaining that cross-contact is possible at a shared counter</li>
 </ul>
-<p>A short line on each new flavour ("made with seasonal mango, available while it lasts") gives people a reason to come back and something to share. Point your in-store QR codes to the same page so everyone sees the current list.</p>
+<p>Make updating the board part of the opening routine, done by whoever opens the shop, and show a small "updated today" line. A board that is current every morning becomes a reason for regulars to check your site before they leave home. Point in-store QR codes to the same page; see <a href="/blog/qr-codes-for-business-website/">QR codes for your business website</a>.</p>
+
+<h3>Plan a seasonal flavour calendar</h3>
+<p>Seasonal flavours are the biggest reason to update the site, so plan them a year ahead. A typical calendar for an Indian parlour might include:</p>
+<ul>
+  <li><strong>Summer:</strong> mango in its many forms, plus light sorbets and fruit flavours</li>
+  <li><strong>Monsoon:</strong> warm brownie sundaes, hot fudge and coffee flavours</li>
+  <li><strong>Festive season:</strong> kesar pista, gulkand, paan, kaju and dry fruit specials, and gift packs for Diwali</li>
+  <li><strong>Winter:</strong> strawberry, sitaphal, chikoo, chocolate and Christmas or new-year specials</li>
+</ul>
+<p>Fruit seasons vary by region and year, so follow your own suppliers rather than a fixed date. One useful habit: give each recurring season a permanent page, such as /flavours/mango-season/, and update it every year instead of creating a new one. The page keeps its links and search history, so it is ready to be found as soon as people start searching "mango ice cream near me" again.</p>
+
+<h3>Dietary markers and allergens</h3>
+<ul>
+  <li>Mark veg, eggless, contains nuts, vegan and no-added-sugar options only when you are sure they are accurate for every batch</li>
+  <li>List common allergens such as milk, nuts and gluten in cones, waffles and toppings</li>
+  <li>Add a line explaining that cross-contact is possible at a shared counter with shared scoops</li>
+</ul>
 
 <h2>Party, bulk and event orders</h2>
-<p>A single party order can be worth more than a busy evening of walk-ins, and it often starts with a search like "ice cream for birthday party near me". Give bulk orders their own page covering:</p>
+<p>A single party order can be worth more than a busy evening of walk-ins, and it often starts with a search like "ice cream for birthday party near me". Give bulk orders their own page, separate from the menu, covering:</p>
 <ul>
-  <li>Tubs and family packs for home parties, and how much notice you need</li>
-  <li>Ice cream cakes and dessert boxes, if you make them</li>
-  <li>An ice cream counter or cart at weddings, birthdays and corporate events, with what's included: staff, cups, toppings and setup</li>
-  <li>How far you can deliver while keeping products frozen, and how customers should store them on arrival</li>
+  <li><strong>Tubs and family packs</strong> for home parties, with a simple serving guide based on your own tub sizes and how much notice you need</li>
+  <li><strong>Ice cream cakes and dessert boxes,</strong> if you make them, with photos and lead times; our guide to <a href="/blog/website-for-bakeries-cake-shops/">websites for bakeries and cake shops</a> covers custom cake orders</li>
+  <li><strong>Counters and carts</strong> for weddings, birthdays and corporate events, with what's included: staff, cups, cones, toppings and setup time</li>
+  <li><strong>Corporate orders:</strong> office celebrations and gifting, and whether you can issue a GST invoice</li>
+  <li><strong>Delivery range and storage:</strong> how far you can deliver while keeping products frozen, and how customers should store tubs on arrival</li>
 </ul>
-<p>Use an enquiry form that asks for the date, venue or delivery area, number of guests, preferred flavours and whether they need a counter, so you can quote in one reply. For larger events, take an advance by UPI or a payment link and confirm flavours, quantities, timings and setup in writing.</p>
+<h3>What the enquiry form should ask</h3>
+<p>Ask for the event date and time, venue or delivery area, number of guests, preferred flavours, dietary needs, whether they need a counter or just tubs, and a phone number for WhatsApp. With those answers you can quote in one reply instead of five. For larger events, take an advance by UPI or a payment link and confirm flavours, quantities, timings and setup in writing.</p>
 
 <h2>Delivery apps vs direct orders</h2>
-<p>Delivery apps bring customers who already use them, but charge commission and keep most of the customer relationship. Direct ordering lets regulars and bulk buyers come to you.</p>
+<p>Delivery apps bring customers who already use them, but they charge commission and keep most of the customer relationship. Direct ordering lets regulars and party customers come to you.</p>
 <table>
   <thead>
     <tr><th>Option</th><th>Works well for</th><th>Watch out for</th></tr>
@@ -36307,38 +36531,62 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     <tr><td>Order ahead, pick up in store</td><td>Party orders collected by the customer</td><td>Clear pickup times, so tubs aren't left waiting</td></tr>
   </tbody>
 </table>
-<p>Show delivery app buttons if customers expect them, but don't put them ahead of your own options. Ice cream travels badly, so set a realistic delivery radius and use insulated packaging. The ideas in our guide to <a href="/blog/website-for-cloud-kitchens/">direct orders for cloud kitchens</a> apply here too.</p>
+<p>Show delivery app buttons if customers expect them, but don't put them ahead of your own options. Ice cream travels badly, so limit website delivery to areas you can reach quickly, use insulated packaging, and let customers check their pincode before they pay; see <a href="/blog/pincode-delivery-checker-woocommerce/">pincode delivery checks for WooCommerce</a>. The ideas in our guide to <a href="/blog/website-for-cloud-kitchens/">direct orders for cloud kitchens</a> apply here too.</p>
 
-<h2>Photos that make people want a scoop</h2>
-<ul>
-  <li>Real photos of your own scoops, sundaes and counter, not stock images or a supplier's pictures</li>
-  <li>Shoot in natural light with everything set up first, before each scoop starts to melt</li>
-  <li>The parlour itself, and events you've served (with the client's permission)</li>
-</ul>
-<p>Compress images and lazy-load galleries so the menu appears first on mobile data, and show a few hand-picked Instagram posts instead of a heavy feed widget.</p>
-
-<h2>Food safety, licences and honest labels</h2>
-<p>People buying for children and events want reassurance. Food businesses in India generally need FSSAI registration or a licence, and many show the number on their premises, packaging and website. Add yours to the footer or the About page, and check the current display requirements for your type of business.</p>
+<h2>FSSAI, labels and honest claims</h2>
+<p>People buying for children and events want reassurance. Food businesses in India generally need FSSAI registration or a licence, and many show the number on their premises, packaging and website. Add yours to the footer or the About page, and check the current display requirements for your type of business, especially if you sell packed tubs online.</p>
 <ul>
   <li><strong>Ice cream or frozen dessert:</strong> if any products are made with vegetable fat instead of milk fat, food rules generally require them to be described as frozen desserts rather than ice cream; check the current FSSAI rules and describe each product accurately</li>
   <li><strong>Claims:</strong> avoid "100% natural", "guilt-free" or "sugar-free" unless the recipe and labelling genuinely support it</li>
+  <li><strong>Packed products:</strong> labelling rules for packaged food can apply to tubs sold online, so confirm what your labels need</li>
   <li><strong>Hygiene:</strong> a short note on how you store, handle and serve, describing only what you actually do</li>
 </ul>
 
 <h2>Franchise enquiries</h2>
-<p>Growing dessert brands often receive franchise questions mixed in with birthday orders. If you offer franchises, give them a separate page explaining the formats (kiosk, parlour or cart), your support and the application process, without promising returns or payback periods; see <a href="/blog/website-for-franchise-brands/">websites for franchise brands</a>. If you don't franchise, say so politely in an FAQ.</p>
+<p>Growing dessert brands often receive franchise questions mixed in with birthday orders. If you offer franchises, give them a separate page explaining the formats (kiosk, parlour or cart), the support you provide and the application process, without promising returns or payback periods; see <a href="/blog/website-for-franchise-brands/">websites for franchise brands</a>. If you don't franchise, say so politely in an FAQ so the enquiries stop.</p>
 
-<h2>Local SEO and speed</h2>
+<h2>A worked example: page structure for a two-outlet parlour</h2>
+<p>Imagine a gelato brand with two outlets, a rotating counter, party orders and a few delivery apps. A practical structure would be:</p>
 <ul>
-  <li>Complete your Google Business Profile with the right category, late-night hours, a menu link, photos and delivery options</li>
-  <li>Use your area naturally in page titles and text, such as "ice cream parlour in {area}", "gelato in {city}" or "ice cream for parties in {area}"</li>
-  <li>Add structured data using schema.org's IceCreamShop type, with your address, hours and menu link</li>
-  <li>Keep hours, flavours and prices consistent across your website, Google and delivery apps</li>
-  <li>Ask happy customers and party clients for Google reviews, and reply to them</li>
+  <li><strong>Home:</strong> open now, today's flavours, party orders, order direct, WhatsApp</li>
+  <li><strong>Flavours:</strong> the live flavour board, with dietary markers and allergens</li>
+  <li><strong>Seasonal pages:</strong> mango season, festive specials, winter flavours, each kept at a permanent address</li>
+  <li><strong>Party and event orders:</strong> tubs, cakes, counters and the quote form</li>
+  <li><strong>Order online:</strong> pickup or delivery, with the delivery area and time slots</li>
+  <li><strong>Outlets:</strong> one page per outlet with hours, map, parking and anything only that outlet serves</li>
+  <li><strong>About:</strong> how you make the product, FSSAI details and hygiene</li>
+  <li><strong>Franchise:</strong> only if you offer it</li>
+  <li><strong>FAQs:</strong> storage, eggless options, delivery and advance orders</li>
 </ul>
-<p>Most dessert searches happen on a phone, often just after dinner, so a fast, simple site matters more than fancy effects.</p>
+<p>Separate outlet pages help each location be found for "ice cream parlour in {area}" and keep timings clear when outlets close at different hours. Add structured data using schema.org's IceCreamShop type to each outlet page (see <a href="/blog/schema-markup-explained/">schema markup explained</a>), keep hours consistent across your website, Google and delivery apps, and share each new seasonal flavour as a <a href="/blog/google-business-profile-posts/">Google Business Profile post</a>.</p>
 
-<p>Planning a website for your parlour, with a flavour menu you can update yourself and a page for party orders? See <a href="/website-for-restaurants/">websites for restaurants and cafes</a>, or a <a href="/landing-page-design/">landing page</a> for summer and festival campaigns.</p>
+<h2>Common mistakes on ice cream websites</h2>
+<ul>
+  <li>The menu as a photo of the board or a PDF, which can't be updated quickly and is hard to read on a phone</li>
+  <li>Flavours listed that sold out months ago, so customers arrive disappointed</li>
+  <li>Delivery app buttons first and your own ordering hidden</li>
+  <li>Calling a frozen dessert "ice cream", or using claims such as "sugar-free" without support</li>
+  <li>No party order page, only a phone number that rings during the evening rush</li>
+  <li>A heavy Instagram feed widget or autoplay video that slows the menu down on mobile data</li>
+  <li>Late-night hours on the website that don't match Google</li>
+</ul>
+<p>Photos matter too: use real shots of your own scoops and counter, taken in natural light before they melt, rather than a supplier's pictures, and compress them so the flavour board appears first.</p>
+
+<h2>FAQs</h2>
+<h3>Should I put prices on the flavour menu?</h3>
+<p>Yes, at least for scoops, cups and tubs. People decide quickly on dessert, and a clear price list saves staff from answering the same question on WhatsApp all evening.</p>
+<h3>How often should I update the flavour list?</h3>
+<p>Whenever the counter changes. For most rotating parlours that means a quick update at opening, which takes a minute if the board is built with simple switches.</p>
+<h3>Can customers order tubs online for delivery?</h3>
+<p>Yes, with online payment and time slots, but keep the delivery area small enough to arrive frozen and use insulated packaging. Many parlours offer pickup for larger party orders.</p>
+<h3>Do I need to show my FSSAI number on my website?</h3>
+<p>Many food businesses do, and it builds trust. The exact requirements depend on your licence type and how you sell, so check the current FSSAI rules or ask your food safety consultant.</p>
+<h3>Is a delivery app listing enough?</h3>
+<p>It helps with single orders, but an app page can't hold your party order details, seasonal pages or outlet information, and the customer relationship stays with the app.</p>
+<h3>Should each outlet have its own page?</h3>
+<p>Yes, if outlets have different hours, menus or delivery areas. One website with an outlet page each is easier to manage than separate websites.</p>
+
+<p>Planning a website for your parlour, with a flavour board you can update from your phone and a proper page for party orders? See <a href="/website-for-restaurants/">websites for restaurants and cafes</a>, or a <a href="/landing-page-design/">landing page</a> for summer and festival campaigns.</p>
 `,
   },
   {
