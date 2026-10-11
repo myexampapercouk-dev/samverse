@@ -253,7 +253,7 @@ h3 { font-size: 1.15rem; }
 .btn-outline-light { background: transparent; border: 1.5px solid rgba(255, 255, 255, .6); box-shadow: none; }
 .btn-outline-light:hover { background: rgba(255, 255, 255, .12); border-color: #fff; }
 
-.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1.2fr 1.3fr; gap: 40px; padding: 64px 0 48px; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1.1fr 1.1fr 1.3fr; gap: 36px; padding: 64px 0 48px; }
 .footer-brand p { color: var(--muted); margin: 18px 0; max-width: 340px; font-size: .95rem; }
 .footer .brand-text { font-size: 1.3rem; }
 .footer-status {
