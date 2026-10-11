@@ -14558,63 +14558,117 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'woocommerce-coupons-discounts',
-    seoTitle: 'WooCommerce Coupons & Discounts: Strategies That Work',
-    title: 'WooCommerce Coupons and Discounts: Boost Sales Without Killing Margins',
-    description: 'WooCommerce coupons and discounts: coupon types, usage limits, first-order and free-shipping offers, avoiding margin loss and leaks, and measuring results.',
+    seoTitle: 'WooCommerce Coupon Types and Discounts: A Practical Guide',
+    title: 'WooCommerce Coupon Types and Discounts: Set Up Offers That Sell Without Killing Margins',
+    description: 'WooCommerce coupon discount types explained: percentage, fixed cart and fixed product, plus usage limits, free shipping coupons, auto-apply, BOGO and sale tips.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'landing-page-design', 'website-for-startups'],
     body: `
-<p>Discounts can bring first-time buyers, clear old stock and recover abandoned carts. Used carelessly, they train customers to never pay full price and eat into your profits. WooCommerce's built-in coupons give you plenty of control.</p>
+<p>Discounts can bring first-time buyers, clear old stock and recover abandoned carts. Used carelessly, they train customers never to pay full price and eat into your profits. WooCommerce's built-in coupons give you plenty of control once you know what each setting does.</p>
+<p><strong>In short:</strong> WooCommerce has three coupon discount types, percentage discount, fixed cart discount and fixed product discount, and any coupon can also grant free shipping. You create them under Marketing, then Coupons, and control who can use them with usage restrictions and limits. Automatic discounts and "buy one, get one" offers need an extension. Menu names can change between versions, so check WooCommerce's current docs if something has moved.</p>
 
-<h2>Coupon types in WooCommerce</h2>
-<ul>
-  <li><strong>Percentage discount:</strong> for example, 10% off</li>
-  <li><strong>Fixed cart discount:</strong> for example, ₹200 off the whole order</li>
-  <li><strong>Fixed product discount:</strong> an amount off specific products</li>
-  <li><strong>Free shipping:</strong> a coupon can enable free shipping when your shipping method allows it</li>
-</ul>
-
+<h2>The three WooCommerce coupon discount types</h2>
+<table>
+  <thead><tr><th>Discount type</th><th>What it does</th><th>Example</th><th>Good for</th></tr></thead>
+  <tbody>
+    <tr><td>Percentage discount</td><td>Takes a percentage off the eligible items in the cart</td><td>10% off everything, or 15% off one category</td><td>Site-wide sales, category offers, first-order codes</td></tr>
+    <tr><td>Fixed cart discount</td><td>Takes a fixed amount off the whole cart, once per order</td><td>₹200 off the order</td><td>Minimum-spend offers, abandoned cart codes</td></tr>
+    <tr><td>Fixed product discount</td><td>Takes a fixed amount off each eligible item, for every unit in the cart</td><td>₹50 off each T-shirt</td><td>Product launches, clearing specific stock</td></tr>
+  </tbody>
+</table>
+<p>The difference between the two fixed types catches people out. A fixed cart discount applies once, however many items are in the cart. A fixed product discount applies to every eligible unit, so five T-shirts get five discounts. Use the "Limit usage to X items" setting to cap that.</p>
 <p>Coupons reduce a price, while gift cards and store credit hold value a customer has paid for or earned; for those, see <a href="/blog/woocommerce-gift-cards/">selling gift cards and store credit in WooCommerce</a>.</p>
 
-<h2>Restrictions to protect margins</h2>
+<h2>How to create a coupon in WooCommerce</h2>
+<ol>
+  <li>Check coupons are switched on: WooCommerce, Settings, General, "Enable the use of coupon codes"</li>
+  <li>Go to Marketing, Coupons and click Add coupon</li>
+  <li>Enter the code customers will type, or generate a random one</li>
+  <li>In the General tab, choose the discount type and amount, tick free shipping if needed, and set an expiry date</li>
+  <li>Set usage restrictions and usage limits (below), then publish</li>
+  <li>Test the code in a private window with a real cart before announcing it</li>
+</ol>
+
+<h2>Usage restrictions: who and what a coupon applies to</h2>
 <ul>
-  <li><strong>Minimum spend:</strong> for example, ₹200 off orders above ₹1,500</li>
-  <li><strong>Specific products or categories:</strong> include or exclude items</li>
-  <li><strong>Exclude sale items</strong> to avoid double discounts</li>
-  <li><strong>Individual use only:</strong> can't be combined with other coupons</li>
-  <li><strong>Usage limits:</strong> per coupon and per customer</li>
-  <li><strong>Expiry date</strong></li>
-  <li><strong>Allowed emails:</strong> restrict to specific customers</li>
+  <li><strong>Minimum and maximum spend:</strong> for example, a fixed amount off orders above a set cart value. A maximum stops a percentage code being used on very large orders.</li>
+  <li><strong>Individual use only:</strong> the coupon can't be combined with other coupons</li>
+  <li><strong>Exclude sale items:</strong> avoids double discounts. Product-level coupons won't apply to sale items, and cart-level coupons only work if the cart has at least one item not on sale.</li>
+  <li><strong>Products and categories:</strong> include or exclude specific items, such as new arrivals or low-margin products</li>
+  <li><strong>Allowed emails:</strong> restrict a code to specific customers, such as a list of past buyers or one corporate client</li>
 </ul>
+
+<h2>Usage limits: how many times</h2>
+<ul>
+  <li><strong>Usage limit per coupon:</strong> the total number of times the code can be used, useful for "first 100 orders" offers</li>
+  <li><strong>Usage limit per user:</strong> usually 1 for welcome codes; WooCommerce checks this against the customer's account or billing email</li>
+  <li><strong>Limit usage to X items:</strong> caps how many items a percentage or fixed product discount applies to</li>
+</ul>
+<p>Public codes leak to coupon websites quickly. For private offers, use unique codes per customer, an allowed-emails list or a low usage limit.</p>
+
+<h2>Free shipping coupons</h2>
+<p>Free shipping needs two settings working together, which is why it often "doesn't work":</p>
+<ol>
+  <li>On the coupon, tick "Allow free shipping"</li>
+  <li>In WooCommerce, Settings, Shipping, add the Free shipping method to the right shipping zone, and set "Free shipping requires" to a valid free shipping coupon (or a coupon or minimum order amount)</li>
+</ol>
+<p>The coupon can be a free-shipping-only code with a zero discount amount, or combined with a discount. If you ship across India with different courier rates, set up your zones first; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+
+<h2>Auto-apply coupons, coupon links and BOGO</h2>
+<p>Core WooCommerce coupons are typed in by the customer. For anything automatic, you need an extension:</p>
+<ul>
+  <li><strong>Auto-apply and coupon links:</strong> coupon plugins such as Smart Coupons and Advanced Coupons can apply a code automatically when conditions are met, or from a link in an email or WhatsApp message</li>
+  <li><strong>Buy one, get one (BOGO):</strong> offered by coupon extensions and by dynamic pricing plugins such as Discount Rules for WooCommerce</li>
+  <li><strong>Tiered and bulk pricing:</strong> "buy 3, save more" rules are usually better handled by a dynamic pricing plugin than by coupons; for trade customers, see <a href="/blog/woocommerce-wholesale-dealer-pricing/">wholesale and dealer pricing</a></li>
+</ul>
+<p>Features differ between free and paid versions and change over time, so check each plugin's current feature list. Also confirm it works with your checkout, especially if you use WooCommerce's block-based cart and checkout, and avoid running two discount plugins whose rules can stack.</p>
 
 <h2>Discount ideas that work</h2>
 <ul>
-  <li><strong>First-order discount</strong> for newsletter or WhatsApp sign-ups</li>
+  <li><strong>First-order discount</strong> for newsletter or WhatsApp sign-ups, limited to one use per customer</li>
   <li><strong>Free shipping</strong> above a cart value that raises average order size</li>
   <li><strong>Abandoned cart coupon</strong> in a follow-up message; see <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a></li>
-  <li><strong>Festival offers</strong> with clear start and end dates; see <a href="/blog/seasonal-festival-campaigns-website/">festival campaigns</a></li>
-  <li><strong>Loyalty discounts</strong> for repeat customers</li>
-  <li><strong>Prepaid discounts</strong> to reduce COD; see <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery</a></li>
+  <li><strong>Loyalty discounts</strong> for repeat customers, using allowed emails</li>
+  <li><strong>Prepaid discounts</strong> to reduce COD; see <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery</a>. Core coupons can't restrict by payment method, so this needs a plugin or custom code</li>
 </ul>
+<p>Coupons can also power a customer referral programme; see <a href="/blog/referral-program-website/">how to set up a referral programme on your website</a>. Another way to raise order value without a coupon is to sell sensible sets or suggest the right add-ons; see <a href="/blog/woocommerce-product-bundles-upsells/">product bundles, upsells and cross-sells in WooCommerce</a>.</p>
 
-<p>Coupons can also power a customer referral programme; see <a href="/blog/referral-program-website/">how to set up a referral programme on your website</a>.</p>
+<h2>Festival-sale tips for Indian stores</h2>
+<p>Diwali, Navratri, Raksha Bandhan, Independence Day and end-of-season sales bring the biggest coupon traffic of the year. Plan them properly; see <a href="/blog/seasonal-festival-campaigns-website/">festival campaigns</a> for the wider campaign. For the coupons themselves:</p>
+<ul>
+  <li><strong>Check the timezone:</strong> coupon expiry follows your store's timezone in WordPress, Settings, General, so make sure it's set to India before relying on a midnight cut-off</li>
+  <li><strong>Decide how codes combine:</strong> if products already have sale prices, use "Exclude sale items" or "Individual use only" so discounts don't stack beyond your margin</li>
+  <li><strong>Use separate codes per channel:</strong> one for Instagram, one for email, one per influencer, so you can see which worked</li>
+  <li><strong>Show the offer clearly:</strong> a banner with the code, the minimum spend and the end date reduces "code not working" messages</li>
+  <li><strong>Check GST invoices:</strong> ask your CA how discounts should appear on invoices; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a></li>
+  <li><strong>Test under load:</strong> run a full checkout with each code before launch, and make sure the store stays fast when traffic jumps; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a></li>
+</ul>
 
 <h2>Watch out for</h2>
 <ul>
-  <li><strong>Coupon sites:</strong> public codes leak to coupon websites. Use unique or limited codes for private offers</li>
-  <li><strong>Constant sales:</strong> shoppers wait for the next discount</li>
+  <li><strong>Constant sales:</strong> shoppers learn to wait for the next discount</li>
   <li><strong>Hidden margins:</strong> calculate profit after discount, shipping and payment fees</li>
   <li><strong>Coupon field distraction:</strong> an obvious coupon box can send shoppers off searching for codes; consider making it less prominent</li>
 </ul>
 
-<h2>Automatic discounts</h2>
-<p>For "buy 2 get 1" or tiered pricing applied automatically, you'll need a dynamic pricing plugin.</p>
-
-<p>Another way to raise order value without a coupon is to sell sensible sets or suggest the right add-ons; see <a href="/blog/woocommerce-product-bundles-upsells/">product bundles, upsells and cross-sells in WooCommerce</a>.</p>
-
 <h2>Measure results</h2>
-<p>WooCommerce reports show coupon usage and discount amounts. Compare orders and profit during campaigns with normal periods, and track campaign links with <a href="/blog/utm-tags-explained/">UTM tags</a>.</p>
+<p>WooCommerce's Analytics section has a Coupons report showing how often each code was used and the total discount given. Compare orders and profit during campaigns with normal periods, and track campaign links with <a href="/blog/utm-tags-explained/">UTM tags</a>.</p>
+
+<h2>FAQs</h2>
+<h3>What are the coupon discount types in WooCommerce?</h3>
+<p>Three: percentage discount, fixed cart discount and fixed product discount. Free shipping is a separate tick box that can be added to any of them.</p>
+<h3>Can WooCommerce apply a coupon automatically?</h3>
+<p>Not with core coupons, which customers type in. Coupon and dynamic pricing extensions add auto-apply rules and coupon links.</p>
+<h3>Why is my WooCommerce free shipping coupon not working?</h3>
+<p>Usually because the Free shipping method isn't added to the customer's shipping zone, or isn't set to require a coupon. Both the coupon and the shipping method need setting up.</p>
+<h3>Can customers use more than one coupon in WooCommerce?</h3>
+<p>Yes, by default. Tick "Individual use only" on a coupon to stop it being combined with others.</p>
+<h3>How do I limit a WooCommerce coupon to one use per customer?</h3>
+<p>Set "Usage limit per user" to 1 in the coupon's usage limits. For extra control, restrict it to allowed emails.</p>
+
+<p>Need coupon rules, festival offers or a discount plugin set up and tested properly? I build and fix WooCommerce stores; see <a href="/woocommerce-developer/">WooCommerce developer in India</a>.</p>
 `,
   },
   {
@@ -17890,56 +17944,115 @@ find wp-content/uploads -name "*.php"</code></pre>
   },
   {
     slug: 'hostinger-website-slow-fix',
-    seoTitle: 'Hostinger WordPress Site Slow? How to Speed It Up',
-    title: 'WordPress Site Slow on Hostinger? How to Diagnose and Speed It Up',
-    description: 'Hostinger WordPress site slow? Check hPanel resource limits, LiteSpeed Cache, PHP version, object cache, CDN, images and plugins, and know when to upgrade.',
+    seoTitle: 'Why Is Hostinger So Slow? How to Speed Up WordPress on It',
+    title: 'Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger',
+    description: 'Why is Hostinger so slow? Read hPanel resource limits, set up LiteSpeed Cache, a CDN and PHP, clean the database and plugins, and know when to upgrade.',
     date: '2026-09-28',
+    updated: '2026-10-11',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
-<p>Hostinger's servers can run WordPress fast, but many sites on it still load slowly. Usually the cause is the site's setup rather than the host itself. Here's how to find and fix the bottleneck.</p>
+<p>Hostinger can run WordPress quickly. When a site on it is slow, the cause is usually one of a handful of things: the plan's resource limits, caching that isn't set up, an old PHP version, a bloated database, heavy plugins, or a front end that would be slow on any host. Here's how to tell which one you're dealing with, in the order I check.</p>
+<p><strong>The short answer to "why is Hostinger so slow?"</strong> Most often the site is hitting its plan's CPU or memory limits, or pages aren't being served from the LiteSpeed cache. Check resource usage in hPanel and confirm caching works before you blame the host or upgrade. (This guide isn't sponsored. Hostinger changes its plans and panel from time to time, so check its current help pages for exact menu names.)</p>
 
-<h2>1. Measure first</h2>
-<p>Test key pages with PageSpeed Insights on mobile, and note server response time and the biggest issues; see <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>. If the server responds slowly, focus on hosting and caching. If the server is fast but the page is slow, focus on images, scripts and the theme.</p>
-
+<h2>Measure first: is it the server or the page?</h2>
+<p>Test key pages with PageSpeed Insights on mobile, and note server response time and the biggest issues; see <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>. That tells you where to look:</p>
+<table>
+  <thead><tr><th>What you see</th><th>Likely cause</th><th>Where to look</th></tr></thead>
+  <tbody>
+    <tr><td>Slow server response on every page</td><td>Uncached pages, resource limits, a slow database or plugins</td><td>hPanel resource usage, LiteSpeed Cache, the database</td></tr>
+    <tr><td>Fast server response, slow page</td><td>Large images, page builder bloat, third-party scripts</td><td>The front end, not the host</td></tr>
+    <tr><td>Fine at quiet times, slow or erroring when busy</td><td>Hitting CPU, memory or process limits</td><td>hPanel resource usage history</td></tr>
+    <tr><td>Only the dashboard is slow</td><td>Admin-heavy plugins, no object cache</td><td>Plugins and object caching</td></tr>
+  </tbody>
+</table>
 <p>To measure server response time properly and work through the causes in order, see <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time (TTFB) on WordPress</a>.</p>
 
-<h2>2. Check resource usage in hPanel</h2>
-<p>hPanel shows CPU, memory and process usage. If you regularly hit your plan's limits, pages slow down or show errors. Causes include heavy plugins, bot traffic, too many sites on one plan, or simply outgrowing an entry-level plan.</p>
-
-<h2>3. Configure LiteSpeed Cache properly</h2>
+<h2>How to read your hPanel resource limits</h2>
+<p>Shared and cloud hosting plans cap how much of the server your account can use. hPanel shows resource usage graphs for each hosting plan, usually alongside the plan's performance or usage details. The figures that matter:</p>
 <ul>
-  <li>Enable page caching and browser caching</li>
-  <li>Exclude cart, checkout and account pages on WooCommerce (usually automatic, but check)</li>
-  <li>Use CSS and JS optimisation carefully, testing the site after each change</li>
-  <li>Don't run a second caching plugin alongside it</li>
+  <li><strong>CPU:</strong> processing power. Long stretches at the limit mean requests queue up and every page slows down.</li>
+  <li><strong>Memory (RAM):</strong> each PHP process needs memory. At the limit, requests wait or fail.</li>
+  <li><strong>Processes:</strong> how many requests can run at the same time. Traffic spikes and bot floods hit this cap first, causing slow loads and error pages.</li>
+  <li><strong>Disk and inodes:</strong> storage and file count. These don't slow pages directly, but a full account breaks backups and updates.</li>
 </ul>
-<p>See <a href="/blog/wordpress-caching-explained/">caching explained</a>.</p>
+<p>Look for patterns rather than single spikes. Usage that peaks at the same time every day often points to a backup, a scheduled task or a crawler. Usage that is always high points to heavy plugins, uncached pages or too many sites on one plan. Every site on a plan shares the same limits, so an old test site or a forgotten store can slow down your main website.</p>
 
-<h2>4. Update PHP</h2>
-<p>Check your PHP version in hPanel and move to a current supported version after testing; see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a>.</p>
-
-<h2>5. Object caching for dynamic sites</h2>
-<p>WooCommerce stores and membership sites benefit from object caching, which some plans support. It speeds up uncached pages and the dashboard.</p>
-
-<h2>6. Use a CDN</h2>
-<p>A CDN serves images and files from locations close to visitors. Hostinger includes a CDN on some plans, or you can use Cloudflare; see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
-
-<h2>7. Fix the front end</h2>
+<h2>Set up LiteSpeed Cache properly</h2>
+<p>Hostinger's web hosting plans have generally run on LiteSpeed servers, which pair with the free LiteSpeed Cache plugin. The plugin controls the server's own page cache, so it's usually the fastest option there. Settings move between versions, so treat this as a starting point and check the plugin's current documentation:</p>
 <ul>
-  <li>Compress and resize images, and use WebP; see <a href="/blog/image-optimization-wordpress/">image optimisation</a></li>
-  <li>Remove unused plugins, sliders and heavy widgets</li>
-  <li>Limit fonts and third-party scripts</li>
-  <li>Keep page builder pages lean; see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a></li>
+  <li><strong>Page cache:</strong> make sure caching is on, and check that cart, checkout and My Account pages are excluded on WooCommerce (usually automatic, but check)</li>
+  <li><strong>Browser cache:</strong> enable it so repeat visitors don't download the same files again</li>
+  <li><strong>CSS and JavaScript:</strong> minifying is usually safe. Combining files, generating critical CSS and delaying JavaScript can give bigger gains but break layouts more often. Turn on one option at a time and test menus, forms and the cart after each change</li>
+  <li><strong>Object cache:</strong> if your plan offers Memcached or Redis, connecting it speeds up uncached pages, WooCommerce and the dashboard</li>
+  <li><strong>One cache only:</strong> don't run a second caching plugin alongside it, and check whether Hostinger's own tools already handle a feature before switching it on twice</li>
 </ul>
+<p>Then confirm it works: log out or use a private window, check the response headers in your browser's developer tools for a LiteSpeed cache hit, and compare server response time before and after. For how page, browser and object caching fit together, see this guide to <a href="/blog/wordpress-caching-explained/">WordPress cache</a> types.</p>
 
-<h2>8. Server location</h2>
-<p>If your visitors are in India but the site is hosted far away, every request takes longer. Choose the nearest data centre your plan offers, or use a CDN.</p>
+<h2>Turn on a CDN</h2>
+<p>A CDN serves images and files from locations close to your visitors and takes some load off your plan. Hostinger includes its own CDN on some plans, switched on from hPanel. Alternatively, use Cloudflare's free plan; see <a href="/blog/cloudflare-wordpress-setup-guide/">setting up Cloudflare on WordPress</a>. Use one CDN, not both, and remember to purge its cache after design changes. For when a CDN helps most, see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
 
-<h2>9. When to upgrade</h2>
-<p>If you've optimised properly and still hit resource limits, upgrading your plan (or moving to a higher tier of hosting) is the right call.</p>
+<h2>Update the PHP version</h2>
+<p>Newer PHP versions run WordPress faster and still receive security fixes. hPanel's PHP configuration section shows which version your site uses and lets you change it. Check that your theme and plugins support the newer version, take a backup, switch, then test key pages and forms; see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a>. If something breaks, switch back while you fix the plugin responsible.</p>
 
-<p>Want it fixed properly? See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+<h2>Clean up the database</h2>
+<p>A slow database makes every uncached page and the whole dashboard slow. Common culprits on older sites:</p>
+<ul>
+  <li>Thousands of post revisions, spam comments and expired transients</li>
+  <li>Large autoloaded options left behind by plugins you deleted long ago, which load on every request</li>
+  <li>WooCommerce sessions and scheduled-action logs that have grown unchecked</li>
+  <li>Statistics and logging plugins that write to the database on every visit</li>
+</ul>
+<p>Back up first, then clean up carefully; see <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a>. LiteSpeed Cache includes basic database clean-up tools, but large autoloaded options usually need checking by hand.</p>
+
+<h2>Find the heavy plugins</h2>
+<p>What each plugin does matters more than how many you have. The ones that most often strain a shared plan:</p>
+<ul>
+  <li>Page builders with several add-on packs loading on every page; see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a></li>
+  <li>Security plugins running frequent scans or logging all traffic</li>
+  <li>Broken link checkers, related-post plugins and on-site statistics that do heavy work on each visit</li>
+  <li>Backup plugins running during busy hours</li>
+  <li>Sliders, popups and social feeds that load scripts on every page</li>
+</ul>
+<p>Remove what you don't use, swap heavy plugins for lighter ones, and schedule backups and scans for quiet hours. WP-Cron is worth a look too: it runs scheduled tasks on page loads, and a real server cron job, which hPanel supports, is more predictable. See <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</p>
+
+<h2>Watch for bots</h2>
+<p>Aggressive crawlers and login attacks can use up your CPU and process limits without a single real visitor. If resource usage climbs while analytics shows normal traffic, check your access logs (hPanel provides them on most plans; ask support if you can't find them) for repeated hits on wp-login.php, xmlrpc.php or search pages. Block bad traffic at the CDN or firewall level, before it reaches WordPress.</p>
+
+<h2>When it isn't Hostinger's fault</h2>
+<p>If server response is fast and resource usage is comfortable, moving host won't change much, because the slowness is in the page itself:</p>
+<ul>
+  <li><strong>Images:</strong> compress and resize them, and use WebP; see <a href="/blog/image-optimization-wordpress/">image optimisation</a></li>
+  <li><strong>Third-party scripts:</strong> chat widgets, trackers and embeds run in the visitor's browser, whatever the host</li>
+  <li><strong>Page builder bloat:</strong> deeply nested sections and dozens of widgets per page</li>
+  <li><strong>Server location:</strong> if your visitors are in India but the site is hosted far away, every request takes longer. Choose the nearest data centre your plan offers, or use a CDN</li>
+  <li><strong>How you test:</strong> testing while logged in bypasses the cache, and testing from a distant location adds delay, which makes any host look slow</li>
+</ul>
+<p>For the full list of site-side causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a>.</p>
+
+<h2>When to upgrade your plan</h2>
+<p>Upgrade when you've optimised properly and still hit resource limits. Typical signs:</p>
+<ul>
+  <li>CPU, memory or process graphs regularly reach the cap even with caching working</li>
+  <li>A WooCommerce store, membership or course site with many logged-in users, whose pages can't be fully cached</li>
+  <li>Several active sites sharing one plan</li>
+  <li>Growing traffic, ad campaigns or festival sales that bring sharp spikes</li>
+</ul>
+<p>A higher shared tier or a cloud plan raises the limits; a VPS gives more control but needs someone to manage it. See <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>. Upgrading an uncached, plugin-heavy site usually just moves the problem to a bigger plan.</p>
+
+<h2>FAQs</h2>
+<h3>Why is Hostinger so slow?</h3>
+<p>Usually because the site is hitting its plan's resource limits or isn't being served from the LiteSpeed cache. Heavy plugins, an old PHP version, a bloated database and large images are the other common causes. Check hPanel's resource usage and your caching first.</p>
+<h3>Is Hostinger slow in India?</h3>
+<p>Distance matters more than the brand. If most visitors are in India, choose the closest data centre your plan offers and add a CDN, then compare server response time from an Indian test location before deciding.</p>
+<h3>Does LiteSpeed Cache work on Hostinger?</h3>
+<p>Yes, on plans that run LiteSpeed servers, which has included Hostinger's web hosting plans. It controls the server's built-in cache, so it's usually the best caching choice there. Check your plan details to confirm.</p>
+<h3>Should I upgrade my Hostinger plan or optimise first?</h3>
+<p>Optimise first. If the resource graphs still hit their limits with caching, a CDN and lean plugins in place, then upgrade.</p>
+<h3>Why is my WordPress dashboard slow on Hostinger?</h3>
+<p>The admin is never page-cached, so heavy plugins, a large database and missing object caching show up there first. See <a href="/blog/wordpress-admin-slow/">why the WordPress admin is slow</a>.</p>
+
+<p>Want your Hostinger site diagnosed and fixed properly, without breaking anything? I measure first, fix the real bottleneck, then re-test so you can see the difference. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
 `,
   },
   {
@@ -18329,49 +18442,104 @@ find wp-content/uploads -name "*.php"</code></pre>
   },
   {
     slug: 'elementor-not-loading-fix',
-    seoTitle: 'Elementor Stuck on Loading or Preview Not Loading? Fixes',
-    title: 'Elementor Stuck on Loading or "Preview Could Not Be Loaded": How to Fix It',
-    description: 'Elementor stuck on loading or preview not loading? Fix plugin conflicts, memory limits, PHP version, URL and SSL mismatches, CDN scripts and security rules.',
+    seoTitle: 'Elementor Stuck on Loading Forever? How to Fix It',
+    title: 'Elementor Stuck on Loading or "Preview Could Not Be Loaded"? How to Fix the Elementor Loading Problem',
+    description: 'Elementor stuck on loading forever? Step-by-step fixes for PHP memory, plugin conflicts, mod_security, caching and CDN, the editor loader setting and PHP.',
     date: '2026-09-28',
+    updated: '2026-10-11',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
-<p>You click "Edit with Elementor" and the loading screen spins forever, the editor is blank, or you see "Preview could not be loaded". These problems are common, and usually caused by something around Elementor rather than Elementor itself.</p>
+<p>You click "Edit with Elementor" and the loading screen spins forever, the editor stays blank, or you see "Preview could not be loaded". The Elementor loading problem is common, and it's usually caused by something around Elementor rather than Elementor itself: low PHP memory, a plugin conflict, a server security rule, or caching and CDN scripts interfering with the editor.</p>
+<p>Work through the fixes below in order. Make a backup first, and where you can, test on a staging copy rather than the live site. Elementor's menus change between versions, so if a setting isn't where I describe it, check Elementor's current docs.</p>
 
-<h2>1. Plugin conflicts</h2>
-<p>Elementor add-on plugins and other plugins that load scripts in the editor are the most common cause.</p>
-<ul>
-  <li>Use Elementor's Safe Mode (in Elementor → Tools), which loads the editor without other plugins and your theme</li>
-  <li>If the editor works in Safe Mode, deactivate plugins one by one to find the conflict</li>
-  <li>Keep Elementor, Elementor Pro and add-ons updated together</li>
-</ul>
+<h2>Before you start: find the error behind the loading screen</h2>
+<p>Two minutes of checking saves an hour of guessing:</p>
+<ol>
+  <li><strong>Browser console:</strong> on the stuck editor, press F12 and open the Console tab. Red errors often name the plugin or file at fault.</li>
+  <li><strong>Network tab:</strong> reload the editor with the Network tab open and look for failed requests, especially to admin-ajax.php or the REST API, with status codes such as 403, 500 or 503.</li>
+  <li><strong>System Info:</strong> Elementor's System Info screen lists your PHP version, memory limit and active plugins in one place.</li>
+  <li><strong>Server error log:</strong> your hosting panel's error log shows PHP fatal errors that the browser never sees.</li>
+</ol>
 
-<h2>2. PHP memory limit</h2>
-<p>The editor needs more memory than normal page views. If the memory limit is low, it can fail silently. Check Elementor → System Info for the WordPress memory limit, and ask your host to increase it if it's low.</p>
+<h2>Elementor stuck on loading because of low PHP memory</h2>
+<p>The editor needs far more memory than a normal page view. When the limit is too low, it can fail silently and spin forever.</p>
+<ol>
+  <li>Open Elementor's System Info and note the WordPress memory limit. Elementor's requirements have recommended 256 MB or more; check its current docs.</li>
+  <li>Edit wp-config.php (via your host's File Manager or SFTP) and add <code>define( 'WP_MEMORY_LIMIT', '256M' );</code> above the line that says to stop editing.</li>
+  <li>WordPress can't go above the server's own PHP limit, so also raise memory_limit in your hosting panel's PHP settings, or ask your host.</li>
+  <li>Reload the editor. If System Info still shows the old figure, the host is capping it.</li>
+</ol>
+<p>For memory errors in general, see <a href="/blog/wordpress-memory-limit-errors/">"Allowed memory size exhausted" errors in WordPress</a>.</p>
 
-<h2>3. Outdated PHP or WordPress</h2>
-<p>Check Elementor's current requirements and update PHP and WordPress if needed; see <a href="/blog/update-php-version-wordpress/">updating PHP</a>.</p>
+<h2>Elementor loading problem after an update: plugin conflicts</h2>
+<p>Elementor add-on packs and other plugins that load scripts in the editor are the most common cause, especially right after an update.</p>
+<ol>
+  <li>Turn on Safe Mode (Elementor, Tools, General). It loads the editor without other plugins or your theme, for the editor only, not for visitors.</li>
+  <li>If the editor works in Safe Mode, a plugin or the theme is at fault. Turn Safe Mode off again when you're done.</li>
+  <li>On staging, deactivate all plugins except Elementor and Elementor Pro, then reactivate them one at a time, reloading the editor after each, until it breaks.</li>
+  <li>Update the plugin responsible, look for a known issue in its changelog or support forum, or replace it.</li>
+  <li>Keep Elementor, Elementor Pro and add-ons updated together; a Pro version far behind the free plugin can stop the editor loading.</li>
+</ol>
+<p>For a safe method on a live site, see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find and fix plugin conflicts</a>.</p>
 
-<h2>4. Site URL and SSL mismatch</h2>
-<p>"Preview could not be loaded" often happens when WordPress and site addresses don't match, for example one uses http:// and the other https://, or www and non-www differ. Check Settings → General and make sure the whole site loads on HTTPS.</p>
+<h2>Elementor loading forever because of .htaccess or mod_security</h2>
+<p>If the Network tab shows the editor's requests failing with 403, 406 or 500 errors, the server may be blocking them.</p>
+<ol>
+  <li><strong>Reset .htaccess:</strong> in File Manager, rename .htaccess to .htaccess-old, then go to Settings, Permalinks and click Save to create a fresh default file. Test the editor. If it works, compare the old file for redirect or security rules added by plugins.</li>
+  <li><strong>Check mod_security:</strong> server firewalls such as mod_security sometimes flag the editor's large requests as attacks, especially when saving. Ask your host to check the firewall logs at the time of the failure and whitelist that specific rule, rather than switching the firewall off for the whole site.</li>
+  <li><strong>Check security plugins:</strong> a plugin firewall can block the same requests. Look at its blocked-request log, or pause it briefly to test.</li>
+</ol>
+<p>See <a href="/blog/wordpress-403-forbidden-error-fix/">403 Forbidden errors on WordPress</a> for more on firewall blocks.</p>
 
-<h2>5. CDN or optimisation scripts</h2>
-<p>Script optimisation features, such as combining or delaying JavaScript, or CDN features that change how scripts load, can break the editor. Exclude the editor from optimisation, or temporarily disable those features to test.</p>
+<h2>Caching or CDN scripts breaking the Elementor editor</h2>
+<p>Script optimisation, such as combining, deferring or delaying JavaScript, and CDN features that rewrite scripts can stop the editor loading.</p>
+<ol>
+  <li>Purge every cache: your caching plugin, the server cache and the CDN.</li>
+  <li>Temporarily turn off JavaScript optimisation in your caching or optimisation plugin and test the editor.</li>
+  <li>If that fixes it, keep optimisation on for visitors but exclude logged-in users and the editor, or exclude Elementor's scripts.</li>
+  <li>On Cloudflare, features that rewrite how scripts load, such as Rocket Loader, are a common culprit; turn them off or bypass them for wp-admin and the editor. See <a href="/blog/cloudflare-wordpress-setup-guide/">setting up Cloudflare on WordPress</a>.</li>
+</ol>
 
-<h2>6. Server security rules</h2>
-<p>Hosting firewalls (mod_security and similar) sometimes block the editor's requests, especially when saving. If saving fails or loading stalls, ask your host to check their firewall logs.</p>
+<h2>Try the "Switch Editor Loader Method" setting</h2>
+<p>Elementor has an advanced setting that changes how the editor loads, which can help on some server setups. At the time of writing it's under Elementor, Settings, Advanced, labelled "Switch Editor Loader Method". Enable it, save, and reload the editor. If it makes no difference, switch it back so you know exactly what changed.</p>
 
-<h2>7. Editor loader method</h2>
-<p>Elementor has an advanced setting to switch the editor loader method, which can help on some server setups.</p>
+<h2>Browser extensions blocking the editor</h2>
+<ol>
+  <li>Open the editor in a private or incognito window, where most extensions are off by default.</li>
+  <li>If it loads there, disable extensions one at a time in your normal window. Ad blockers, privacy and script blockers, and some grammar or password tools are frequent causes.</li>
+  <li>Clear your browser cache, or try another browser, to rule out old cached editor files.</li>
+</ol>
 
-<h2>8. Theme problems</h2>
-<p>A theme that doesn't support Elementor properly can break the editor. Test by temporarily switching to Hello Elementor on a staging site; see <a href="/blog/best-theme-for-elementor/">best themes for Elementor</a>.</p>
+<h2>Outdated PHP version</h2>
+<p>System Info shows your PHP version. Check it against Elementor's current requirements, and ask whether your add-ons support it too, as both too old and, occasionally, too new for an old add-on can cause trouble. Back up, switch the version in your hosting panel, then test the editor and the site; see <a href="/blog/update-php-version-wordpress/">updating PHP</a>.</p>
 
-<h2>9. Browser issues</h2>
-<p>Try another browser or a private window, and disable browser extensions like ad blockers that may block scripts.</p>
+<h2>Only one page stuck on loading: corrupted Elementor data</h2>
+<p>If other pages open fine and one page always spins, that page's saved Elementor data is the likely problem.</p>
+<ol>
+  <li>Regenerate files and data under Elementor, Tools, then clear caches and try again.</li>
+  <li>Think about what changed last. A widget from an add-on you've since deactivated can stop a page loading; reactivate the add-on, open the page and remove the widget.</li>
+  <li>Restore an earlier revision from the WordPress revisions screen, which also restores Elementor's content for that revision.</li>
+  <li>If nothing works, restore the page from a backup, or rebuild it from a saved template.</li>
+</ol>
 
-<h2>Still stuck?</h2>
-<p>Check the browser console for errors and the server error log for PHP errors; they usually point to the cause. Or get help from an <a href="/elementor-developer/">Elementor developer</a>. Also see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</p>
+<h2>Site URL, SSL and theme checks</h2>
+<p>"Preview could not be loaded" often happens when the WordPress Address and Site Address in Settings, General don't match, for example http:// and https://, or www and non-www. Make sure the whole site loads on HTTPS; after a migration, Elementor's Replace URL tool (Elementor, Tools) updates old addresses in its data. See <a href="/blog/mixed-content-warnings-fix/">mixed content warnings after moving to HTTPS</a>.</p>
+<p>A theme that doesn't support Elementor properly can also break the editor. Test by temporarily switching to Hello Elementor on a staging site; see <a href="/blog/best-theme-for-elementor/">best themes for Elementor</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Why is Elementor stuck on the loading screen?</h3>
+<p>Usually low PHP memory, a plugin conflict, a server firewall blocking the editor's requests, or caching and CDN scripts. The browser console and Safe Mode will tell you which.</p>
+<h3>Why does Elementor say "Preview could not be loaded"?</h3>
+<p>Most often the site addresses don't match (http and https, or www and non-www), a security rule blocks the preview, or a redirect interferes with it.</p>
+<h3>Elementor is loading forever on one page only. What does that mean?</h3>
+<p>That page's data is probably the problem, often a widget from a missing add-on. Restore a revision or remove the widget.</p>
+<h3>Is it safe to use Elementor's Safe Mode on a live site?</h3>
+<p>Yes. It affects only the editor for logged-in users, not what visitors see. Switch it off once you've finished testing.</p>
+<h3>Will reinstalling Elementor fix the loading problem?</h3>
+<p>Rarely on its own, because the cause is usually around Elementor. Diagnose first; reinstalling the same version over itself only helps if its files were damaged.</p>
+
+<p>Still stuck, or don't want to experiment on a live site? I fix Elementor editor problems and the plugin, server and caching issues behind them; get help from an <a href="/elementor-developer/">Elementor developer</a>. If the editor loads but the design has changed, see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</p>
 `,
   },
   {
@@ -25495,13 +25663,16 @@ Template: astra
   },
   {
     slug: 'fix-cls-layout-shift',
-    title: 'How to Fix Cumulative Layout Shift (CLS) on WordPress',
-    description: 'Fix Cumulative Layout Shift on WordPress: reserve space for images and embeds, tame web fonts, ads and banners, and stop sticky headers making pages jump.',
+    seoTitle: 'How to Fix Cumulative Layout Shift (CLS) on WordPress',
+    title: 'How to Fix Cumulative Layout Shift (CLS) on WordPress: Images, Fonts, Elementor and Banners',
+    description: 'How to fix cumulative layout shift on a WordPress site: image sizes, fonts, ads, embeds, Elementor, lazy loading and cookie banners, and how to find what moves.',
     date: '2026-09-28',
+    updated: '2026-10-11',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-website-development'],
     body: `
-<p>Cumulative Layout Shift (CLS) measures how much visible content moves unexpectedly on a page. You start reading, an image loads above the text and everything jumps down. You go to tap "Call now" and hit a banner that has just appeared. Here's how to find and fix the usual causes on WordPress. For how CLS fits alongside LCP and INP, see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+<p>To fix cumulative layout shift on a WordPress site, give every image, video, embed and ad slot set dimensions or an aspect ratio, preload your main web font with a size-matched fallback, show cookie and offer banners as overlays, and stop headers or sliders changing size after load. Then find any remaining shifts in PageSpeed Insights.</p>
+<p>Cumulative Layout Shift (CLS) measures how much visible content moves unexpectedly. You start reading, an image loads above the text and everything jumps down. You go to tap "Call now" and hit a banner that has just appeared. Below are the usual causes on WordPress and how to fix each. For how CLS fits alongside LCP and INP, see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
 
 <h2>How CLS is scored</h2>
 <table>
@@ -25512,66 +25683,84 @@ Template: astra
     <tr><td>More than 0.25</td><td>Poor</td></tr>
   </tbody>
 </table>
-<p>CLS isn't a time. Each shift is scored by how much of the screen was affected and how far things moved. Shifts close together are grouped, and your CLS is the worst group during the visit. Two details explain most confusion:</p>
+<p>CLS isn't a time. Each shift is scored by how much of the screen was affected and how far things moved; shifts close together are grouped, and your CLS is the worst group during the visit. Two details explain most confusion:</p>
 <ul>
   <li><strong>Expected shifts don't count.</strong> Changes within about half a second of a tap, click or key press are ignored, like an accordion opening. Scrolling doesn't count as that kind of input.</li>
   <li><strong>The whole visit counts.</strong> Shifts while someone scrolls, from lazy-loaded images or a header changing size, are included.</li>
 </ul>
-<p>So a page can pass a lab test but fail in Search Console: lab tools mostly measure the first load, while field data comes from real visitors who scroll, wait and tap.</p>
+<p>That's why a page can pass a lab test but fail in Search Console: lab tools mostly measure the first load, while field data comes from real visitors who scroll, wait and tap.</p>
 
-<h2>Find what's shifting</h2>
+<h2>How to find what's shifting</h2>
+<h3>Search Console and PageSpeed Insights</h3>
 <ol>
   <li>In Search Console's Core Web Vitals report, open the CLS issue to see example URLs. Similar pages are grouped, so fixing a shared template often fixes many pages.</li>
-  <li>Run an example page through PageSpeed Insights on mobile. The diagnostics list the elements involved in the largest shifts.</li>
-  <li>Open the page on your phone using mobile data, then scroll to the bottom and back. Slower connections make late-arriving content easier to spot.</li>
-  <li>In Chrome DevTools, the Rendering panel can highlight layout shift regions as they happen, and a Performance panel recording lists each shift and the elements that moved.</li>
+  <li>Run an example page through PageSpeed Insights on mobile. Real-visitor data appears at the top when the page has enough traffic; the lab diagnostics below list the elements behind the largest shifts (shown as "Avoid large layout shifts" or, in newer versions, a layout shift insight). See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</li>
+  <li>Open the page on your phone using mobile data and scroll to the bottom and back. Slow connections make late-arriving content easier to spot.</li>
 </ol>
-<p>Usually the culprit is something above the moved element that appeared late or changed size.</p>
+<h3>The Chrome DevTools Performance panel</h3>
+<ol>
+  <li>Open the page in Chrome, press F12 and go to the Performance panel</li>
+  <li>Turn on CPU and network throttling so it behaves more like a mid-range phone</li>
+  <li>Click the record-and-reload button, scroll down the page, then stop the recording</li>
+  <li>Find the layout shifts track (labelled differently in older versions) and click a shift to see its score and the elements that moved</li>
+</ol>
+<p>The Rendering panel, under DevTools' "More tools" menu, also has a Layout Shift Regions option that flashes shifting areas as you use the page. The culprit is usually something above the moved element that appeared late or changed size.</p>
 
-<h2>Images, videos and embeds without reserved space</h2>
-<p>This is the most common cause. If the browser doesn't know how big something will be, it gives it no space, then pushes everything down when it arrives.</p>
+<h2>Images without dimensions</h2>
+<p>This is the most common cause. If the browser doesn't know how big an image will be, it gives it no space, then pushes everything down when it arrives.</p>
 <ul>
-  <li><strong>Images:</strong> WordPress adds width and height to images inserted into posts, but theme templates, page builder widgets, custom HTML and some plugins can miss them. Check the page source for image tags without width and height, and add them; with <code>height: auto</code> in the CSS, images still scale on phones. See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</li>
-  <li><strong>Lazy-loaded images:</strong> fine when dimensions are set. Without them, each image shifts the page as the visitor scrolls.</li>
-  <li><strong>Videos:</strong> give YouTube and other video containers a fixed aspect ratio, such as 16:9, so the space exists before the player loads.</li>
-  <li><strong>Maps, social feeds, review and booking widgets:</strong> these load from other servers, often last. Give their containers a minimum height close to their final size. For maps, see <a href="/blog/google-maps-on-website/">adding Google Maps without slowing your site</a>.</li>
-  <li><strong>Sliders:</strong> before the slider's script runs, slides can appear stacked, then collapse. Set a fixed height for the slider area, or use a single image instead.</li>
+  <li>WordPress adds width and height to images inserted into posts, but theme templates, page builder widgets, custom HTML and some plugins can miss them. Check the page source for image tags without width and height, and add them; with <code>height: auto</code> in the CSS, images still scale on phones. See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</li>
+  <li>For background images and responsive boxes, set the space with the CSS <code>aspect-ratio</code> property or a minimum height.</li>
+  <li>Sliders can show slides stacked before their script runs, then collapse. Give the slider area a fixed height, or use a single image instead.</li>
 </ul>
 
-<h2>Ads and content added after loading</h2>
-<p>Ad sizes often aren't known in advance. If your site shows ads:</p>
+<h2>Lazy-loading pitfalls</h2>
+<p>Lazy loading itself doesn't cause shifts; lazy loading without reserved space does.</p>
 <ul>
-  <li>Reserve space for each slot with a minimum height matching the ad size usually served there</li>
-  <li>Avoid slots at the very top of the content, where a late ad pushes the most content down</li>
-  <li>Test pages after switching on automatic ad placement, which inserts ads wherever it chooses</li>
-  <li>Keep an empty slot's space rather than collapsing it after loading</li>
+  <li><strong>Missing dimensions:</strong> each lazy-loaded image without width and height shifts the page as the visitor scrolls. Field data counts these, even though lab tests often miss them.</li>
+  <li><strong>Wrong-sized placeholders:</strong> some JavaScript lazy-load plugins show a tiny placeholder first. If it doesn't keep the image's proportions, the box resizes when the real image arrives.</li>
+  <li><strong>Two methods at once:</strong> WordPress adds native lazy loading on its own. Layering a plugin's lazy load on top can add placeholders and scripts you don't need, so pick one.</li>
+  <li><strong>Hero images:</strong> don't lazy-load images at the top of the page; it slows LCP, and fade-in placeholders there can shift the first screen.</li>
 </ul>
-<p>The same applies to anything JavaScript adds later, such as related products, review carousels or notices: reserve space for it, or add it below what the visitor is looking at.</p>
+<p>See <a href="/blog/lazy-loading-explained/">lazy loading explained</a> for what to lazy-load and what not to.</p>
 
-<h2>Web fonts</h2>
+<h2>Web fonts: font-display and preload</h2>
 <p>When a custom font arrives after the text has appeared, the text swaps from a fallback font to the web font. If the two differ in size, lines rewrap and everything below moves.</p>
 <ul>
-  <li>Use one or two font families and only the weights you need</li>
-  <li>Host fonts on your own domain where practical, and preload the main one</li>
-  <li>Choose a fallback font of similar size, or adjust it with CSS font descriptors such as <code>size-adjust</code>, so the swap is barely visible</li>
-  <li>Consider <code>font-display: optional</code> for body text: the web font is used only if it arrives almost immediately, so there's no late swap, though some first-time visitors will see the fallback</li>
+  <li><strong>font-display:</strong> <code>swap</code> shows the fallback straight away, then swaps, which can shift text. <code>optional</code> uses the web font only if it arrives almost immediately, so there's no late swap, though some first-time visitors see the fallback.</li>
+  <li><strong>Preload the main font:</strong> a tag in the page head such as <code>&lt;link rel="preload" as="font" type="font/woff2" crossorigin&gt;</code>, pointing at your font file, fetches it early. Preload one or two files only; preloading every weight delays other resources.</li>
+  <li><strong>Match the fallback:</strong> choose a fallback of similar size, or adjust it with CSS descriptors such as <code>size-adjust</code>, so the swap is barely visible.</li>
+  <li><strong>Load less:</strong> one or two families, only the weights you use, hosted on your own domain where practical.</li>
+</ul>
+<p>More detail in <a href="/blog/web-fonts-performance/">web fonts and website speed</a>.</p>
+
+<h2>Ads, embeds and content added later</h2>
+<ul>
+  <li><strong>Ads:</strong> reserve space for each slot with a minimum height matching the ad size usually served there, avoid slots at the very top of the content, keep an empty slot's space rather than collapsing it, and re-test after switching on automatic ad placement</li>
+  <li><strong>Videos:</strong> give YouTube and other players a fixed aspect ratio, such as 16:9, so the space exists before the player loads</li>
+  <li><strong>Maps, social feeds, review and booking widgets:</strong> these load from other servers, often last. Give their containers a minimum height close to their final size. For maps, see <a href="/blog/google-maps-on-website/">adding Google Maps without slowing your site</a></li>
 </ul>
 
-<h2>Banners, cookie notices and offer bars</h2>
-<p>Cookie notices, festival offer strips, "free delivery above" bars and app banners are frequent causes on business sites. When one is inserted at the top after the page has rendered, everything shifts down.</p>
+<h2>Elementor-specific causes</h2>
 <ul>
-  <li>Show notices as an overlay fixed to the top or bottom of the screen. Something that appears over the page without moving other content doesn't count as a layout shift.</li>
+  <li><strong>Carousels and slides:</strong> Elementor's carousel and slider widgets can render stacked or unsized until their script runs. Set a height on the container, or avoid a carousel in the first screen.</li>
+  <li><strong>CSS loaded late:</strong> optimisation plugins that load CSS asynchronously or generate critical CSS can show the page briefly unstyled, then snap into Elementor's layout. Exclude Elementor's CSS from async loading or regenerate critical CSS after design changes, and regenerate Elementor's files (Elementor, Tools) after updates.</li>
+  <li><strong>Delayed JavaScript:</strong> if a plugin delays scripts until the visitor interacts, tabs, menus, counters and sticky headers can look unfinished, then jump. Exclude Elementor's front-end scripts from the delay.</li>
+  <li><strong>Sticky and shrinking headers:</strong> Elementor Pro's sticky option normally holds the header's space, but custom shrink effects that change height or padding move the content below.</li>
+  <li><strong>Google Fonts:</strong> Elementor loads Google Fonts by default. At the time of writing its settings include options for how they load (font-display) and for loading them locally; check Elementor's current settings.</li>
+  <li><strong>Animations:</strong> built-in entrance animations normally use opacity and transforms, which don't count as layout shifts, but custom animations that change margins or height do.</li>
+</ul>
+<p>For Elementor pages that are slow as well as jumpy, see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</p>
+
+<h2>Cookie banners, offer bars and sticky headers</h2>
+<p>Cookie notices, festival offer strips, "free delivery above" bars and app banners are frequent causes on business sites. When one is inserted at the top after the page has rendered, everything moves down.</p>
+<ul>
+  <li>Show notices as an overlay fixed to the top or bottom of the screen. Something that appears over the page without moving other content isn't a layout shift.</li>
   <li>If a bar must sit in the page flow, include it in the page's HTML from the start instead of adding it with JavaScript later.</li>
-  <li>Watch cached pages: some notice plugins decide with JavaScript whether to show a bar after the cached page loads, causing a late jump. Reserve its space or switch to an overlay.</li>
+  <li>Watch cached pages: some consent and notice plugins decide with JavaScript whether to show a bar after the cached page loads. Reserve its space or switch to an overlay.</li>
+  <li>A header that becomes fixed on scroll leaves the page flow, and the content below jumps up by its height. CSS <code>position: sticky</code> keeps its space; animate shrinking headers with transforms.</li>
 </ul>
-
-<h2>Sticky and shrinking headers</h2>
-<p>These shifts only happen after scrolling, so lab tests often miss them.</p>
-<ul>
-  <li><strong>Switching to fixed:</strong> a header that becomes fixed on scroll leaves the page flow, and the content below jumps up by its height. CSS <code>position: sticky</code> keeps its space, or a placeholder of the same height can fill the gap.</li>
-  <li><strong>Shrinking:</strong> a header whose height changes on scroll moves content with it. Animate with transforms, which don't affect layout, or let the header sit over a fixed gap at the top of the page.</li>
-  <li><strong>Delayed scripts:</strong> if your optimisation plugin delays JavaScript until the visitor interacts, the header, menu or slider may look unfinished, then jump when its script runs. Exclude those scripts from the delay.</li>
-</ul>
+<p>For what your consent banner needs to say, see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie consent basics</a>.</p>
 
 <h2>Confirm the fix</h2>
 <ul>
@@ -25579,6 +25768,16 @@ Template: astra
   <li>Field data covers a rolling 28 days, so Search Console takes a few weeks to catch up; use "Validate fix" once you're done</li>
   <li>Re-check after adding a plugin, ad, widget or banner, as each can bring shifts back</li>
 </ul>
+
+<h2>FAQs</h2>
+<h3>How do I fix "avoid large layout shifts" in WordPress?</h3>
+<p>Open the audit in PageSpeed Insights to see which elements moved, then fix the cause above them: add image dimensions, reserve space for embeds and ads, switch banners to overlays, or stop fonts and scripts loading late.</p>
+<h3>Why is my CLS good in PageSpeed but poor in Search Console?</h3>
+<p>Lab tests measure the first load without scrolling. Search Console uses real visits, including shifts from lazy-loaded images, sticky headers and late banners while people scroll.</p>
+<h3>Does Elementor cause layout shift?</h3>
+<p>Not by itself, but carousels, late-loading CSS, delayed scripts, custom header effects and Google Fonts on Elementor sites are common causes. Each can be fixed without rebuilding the page.</p>
+<h3>Can a plugin fix CLS automatically?</h3>
+<p>Partly. Some optimisation plugins add missing image dimensions or preload fonts, but they can also cause shifts by delaying scripts or loading CSS late. Test after every setting you change.</p>
 
 <p>Most CLS fixes are small; finding the cause is the slow part. If you'd like it handled, my <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service covers all three Core Web Vitals. Planning a new site? With <a href="/wordpress-website-development/">WordPress website development</a>, space for images, embeds and headers is reserved from the start.</p>
 `,
@@ -29385,61 +29584,76 @@ Template: astra
   },
   {
     slug: 'wordpress-activity-logs',
-    title: 'WordPress Activity Logs: Track Who Changed What on Your Site',
-    description: 'What WordPress activity logs record, how they help with security and teamwork, what to look for in a plugin, what to review each month, and privacy basics.',
+    seoTitle: 'WordPress Activity Log (Change Log): Who Changed What',
+    title: 'WordPress Activity Logs and Change Logs: Track Who Changed What on Your Site',
+    description: 'WordPress activity logs explained: track who changed what, activity vs error vs server logs, what to log, plugin options, and retention and privacy basics.',
     date: '2026-09-30',
+    updated: '2026-10-11',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
-<p>"Who changed the price on this product?" "When did this page disappear?" "Did anyone log in last night?" On most WordPress sites, nobody can answer these questions, because WordPress doesn't keep a detailed history of admin activity by default. An activity log (sometimes called an audit log) fills that gap. It's a small addition that helps with security, teamwork and troubleshooting.</p>
+<p>"Who changed the price on this product?" "When did this page disappear?" "Did anyone log in last night?" On most WordPress sites, nobody can answer these questions, because WordPress doesn't keep a detailed change log of admin activity by default. An activity log (also called an audit log or change log) fills that gap. It's a small addition that helps with security, teamwork and troubleshooting.</p>
+<p><strong>In short:</strong> a WordPress activity log is a plugin that records events inside WordPress, such as logins, content edits, plugin updates and settings changes, with the user, time and IP address. It isn't the same as an error log or a server log, which record different things in different places; the table below shows which one answers which question.</p>
+
+<h2>Activity log vs error log vs server log</h2>
+<p>"WordPress logs" can mean several different things. Knowing which one you need saves a lot of searching:</p>
+<table>
+  <thead><tr><th>Log</th><th>What it records</th><th>Where it lives</th><th>Use it to answer</th></tr></thead>
+  <tbody>
+    <tr><td>Activity (audit) log</td><td>Actions by users inside WordPress: logins, edits, plugin, theme and settings changes</td><td>A plugin, usually stored in the WordPress database</td><td>Who changed what, and when?</td></tr>
+    <tr><td>Revisions</td><td>Earlier versions of a single post or page's content</td><td>Built into WordPress</td><td>What did this page say before?</td></tr>
+    <tr><td>Error log (PHP or debug log)</td><td>PHP warnings and fatal errors from WordPress, themes and plugins</td><td>The host's PHP error log, or wp-content/debug.log when debugging is switched on</td><td>Why is the site showing a critical error or a blank page?</td></tr>
+    <tr><td>Server access log</td><td>Every request to the server: IP address, page, status code, browser or bot</td><td>The web server, viewed through your hosting panel</td><td>Is a bot hammering the site? Where are 404s and attacks coming from?</td></tr>
+    <tr><td>Server error log</td><td>Errors from the web server itself</td><td>Your hosting panel</td><td>Why am I seeing 500 or 403 errors?</td></tr>
+  </tbody>
+</table>
+<p>To turn on WordPress's own debug log temporarily, add <code>define( 'WP_DEBUG', true );</code>, <code>define( 'WP_DEBUG_LOG', true );</code> and <code>define( 'WP_DEBUG_DISPLAY', false );</code> to wp-config.php. Switch it off when you're done, because a debug.log file in a public folder can expose details about your site. For using error logs to fix specific problems, see <a href="/blog/fix-wordpress-critical-error/">"There has been a critical error on this website"</a> and <a href="/blog/wordpress-500-internal-server-error-fix/">500 Internal Server Error in WordPress</a>.</p>
 
 <h2>What an activity log records</h2>
-<p>An activity log plugin records events inside WordPress: who did what, when, and usually from which IP address. Typical events include:</p>
 <table>
   <thead><tr><th>Area</th><th>Examples of logged events</th></tr></thead>
   <tbody>
     <tr><td>Logins</td><td>Successful logins, failed attempts, logouts, password resets</td></tr>
     <tr><td>Users</td><td>New accounts, role changes, deleted users, profile edits</td></tr>
     <tr><td>Content</td><td>Pages and posts published, edited, trashed or restored</td></tr>
-    <tr><td>Plugins and themes</td><td>Installed, activated, deactivated, updated or deleted</td></tr>
+    <tr><td>Plugins and themes</td><td>Installed, activated, deactivated, updated or deleted, and files edited from the dashboard</td></tr>
     <tr><td>Settings</td><td>Changes to the site address, permalinks and other core settings</td></tr>
     <tr><td>WooCommerce</td><td>Product, price and stock changes, order status updates and coupon edits, depending on the plugin</td></tr>
   </tbody>
 </table>
-<p>WordPress revisions already show changes to the content of a single page or post, but they don't cover logins, users, plugins or settings. That's what an activity log adds.</p>
+<p>Revisions already show changes to a single page's content, but they don't cover logins, users, plugins or settings. That's what an activity log adds.</p>
+
+<h2>What to log (and what to skip)</h2>
+<ul>
+  <li><strong>Always:</strong> logins and failed logins, new users and role changes, plugin and theme installs, updates and deletions, file edits from the dashboard, and changes to core settings</li>
+  <li><strong>For most business sites:</strong> page and post changes, menu and widget changes, and form plugin settings, so a broken enquiry form can be traced</li>
+  <li><strong>For stores:</strong> price, stock and coupon changes, and order status changes made by staff</li>
+  <li><strong>Usually skip:</strong> detailed tracking of every visitor or customer action. It fills the database and collects personal data you probably don't need</li>
+</ul>
 
 <h2>Why it helps with security</h2>
 <ul>
-  <li><strong>Spot suspicious activity early:</strong> a new administrator nobody created, a login at 3 a.m. from an unfamiliar location, or a plugin nobody asked for</li>
+  <li><strong>Spot suspicious activity early:</strong> a new administrator nobody created, a login at 3 a.m. from an unfamiliar location, or a plugin nobody asked for; see <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site has been hacked</a></li>
   <li><strong>See password-guessing attacks:</strong> bursts of failed logins show bots at work, a sign to tighten login security</li>
   <li><strong>Build a timeline after a hack:</strong> knowing when a user was created or a plugin changed helps find the way in, and helps choose a clean backup from before it</li>
 </ul>
 <p>Logins are the front door, so pair a log with the steps in <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>. If the log shows signs of a break-in, the <a href="/blog/remove-malware-wordpress-step-by-step/">step-by-step malware clean-up guide</a> explains what a proper clean-up involves.</p>
 
 <h2>Why it helps with teamwork</h2>
-<p>Many business sites are edited by several people: the owner, a marketing executive, an agency and a developer. When something changes unexpectedly, a log replaces guesswork and blame with facts.</p>
-<ul>
-  <li>Find out who changed a price, phone number or offer, and put it right quickly</li>
-  <li>See which update happened just before a layout broke, so it can be rolled back</li>
-  <li>Check what an agency or freelancer actually worked on during a project</li>
-  <li>Tell the difference between an honest mistake and a deliberate decision someone forgot to mention</li>
-</ul>
-<p>Logs only work when everyone has their own login. With a shared account, every entry just says "admin", which tells you nothing; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> for giving each person the right access.</p>
+<p>Many business sites are edited by several people: the owner, a marketing executive, an agency and a developer. When something changes unexpectedly, a log replaces guesswork and blame with facts: who changed a price or phone number, which update happened just before a layout broke, and what an agency actually worked on.</p>
+<p>Logs only work when everyone has their own login. With a shared account, every entry just says "admin"; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> for giving each person the right access, and <a href="/blog/wordpress-user-accounts-audit/">how to audit your WordPress user accounts</a> to clear out old logins.</p>
 
-<h2>Choosing an activity log plugin</h2>
-<p>Well-known options include <strong>WP Activity Log</strong>, <strong>Simple History</strong> and <strong>Stream</strong>, and some security plugins include basic login or change logs. Features and free versus paid limits change, so check current plans. Look for:</p>
+<h2>Activity log plugins</h2>
+<p>Well-known options include the following. Features and free versus paid limits change, so check each plugin's current listing before choosing:</p>
 <ul>
-  <li><strong>Coverage</strong> of the areas you care about, including WooCommerce or your form plugin if you rely on them</li>
-  <li><strong>Alerts</strong> by email or another channel for critical events, such as a new administrator</li>
-  <li><strong>Retention settings</strong> so the log doesn't grow forever and bloat the database</li>
-  <li><strong>Export or off-site storage</strong>, because an attacker with admin access may be able to delete logs kept on the site itself</li>
-  <li><strong>Search and filters</strong> by user, date and type of event</li>
-  <li><strong>Active development</strong>, with recent updates and good reviews</li>
+  <li><strong>WP Activity Log:</strong> detailed coverage of WordPress events, with support for WooCommerce and some other popular plugins; paid plans add features such as notifications, reports and external log storage</li>
+  <li><strong>Simple History:</strong> a clear, readable history in the dashboard, with optional paid add-ons</li>
+  <li><strong>Stream:</strong> a free activity log with alerts for selected events</li>
+  <li><strong>Security plugins:</strong> some include login records or a basic change log, which may be enough for a small site</li>
 </ul>
-<p>Stick to one logging plugin. Two doing the same job just doubles the load on your database.</p>
+<p>Whichever you choose, look for coverage of the areas you care about, email alerts for critical events, retention settings, search and filters, and export or off-site storage, because an attacker with admin access may be able to delete logs kept on the site. Stick to one logging plugin; two doing the same job doubles the load on your database.</p>
 
 <h2>What to review, and how often</h2>
-<p>A log nobody reads only helps after the damage is done. A light routine is enough for most small businesses:</p>
 <ul>
   <li><strong>Straight away, via alerts:</strong> new administrator accounts, anyone promoted to administrator, plugins installed, and files edited from the dashboard</li>
   <li><strong>Weekly:</strong> spikes in failed logins, and logins by unexpected users or from unexpected places</li>
@@ -29447,18 +29661,28 @@ Template: astra
 </ul>
 <p>If you have a maintenance provider, ask whether reviewing the log is part of their monthly checks and report.</p>
 
-<h2>Privacy and retention</h2>
-<p>Activity logs contain personal data: usernames, email addresses, IP addresses and, on online stores, sometimes customer and order details. Treat them with care:</p>
+<h2>Retention and privacy</h2>
+<p>Activity logs contain personal data: usernames, email addresses, IP addresses and, on stores, sometimes customer and order details. Treat them with care:</p>
 <ul>
+  <li><strong>Set a retention period</strong> long enough to investigate problems you might discover weeks later, and let the plugin delete older entries automatically. Unlimited retention also bloats the database; see <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a></li>
+  <li><strong>Export what matters:</strong> before old entries are deleted, keep a copy of anything tied to a security incident</li>
   <li><strong>Limit access</strong> to the administrators who actually need it</li>
-  <li><strong>Keep logs only as long as you need them.</strong> Choose a retention period that covers security investigations and your business needs, and let the plugin delete older entries automatically</li>
-  <li><strong>Don't log more than you need.</strong> Some plugins can track customer and visitor activity in detail, which many businesses don't require</li>
-  <li><strong>Mention it in your privacy policy</strong> if you log the activity of customers or other users, not only staff</li>
+  <li><strong>Don't log more than you need,</strong> and mention it in your privacy policy if you log customers or other users, not only staff</li>
 </ul>
-<p>India's DPDP Act sets general expectations around the purpose, security and retention of personal data; see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a>, and confirm the specifics with your lawyer or adviser.</p>
+<p>India's DPDP Act sets general expectations around the purpose, security and retention of personal data, and its rules are being phased in. Separately, CERT-In directions issued in 2022 include log-keeping requirements for many organisations. Whether and how these apply depends on your business, so see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a> and confirm the specifics with your lawyer or adviser.</p>
 
 <h2>What activity logs can't do</h2>
-<p>A WordPress activity log records what happens inside WordPress. It won't catch everything at server level, such as files changed over FTP or a compromised hosting account; your host's access and error logs cover some of that. A log also doesn't block attacks on its own. Treat it as one layer alongside prompt updates, strong logins, a firewall and tested backups.</p>
+<p>A WordPress activity log records what happens inside WordPress. It won't catch files changed over FTP or a compromised hosting account; your host's logs cover some of that. It also doesn't block attacks on its own. Treat it as one layer alongside prompt updates, strong logins, a firewall and tested backups.</p>
+
+<h2>FAQs</h2>
+<h3>Does WordPress have a change log built in?</h3>
+<p>Only partly. Revisions record changes to post and page content, but WordPress doesn't log logins, user changes, plugin updates or settings by default. You need an activity log plugin for that.</p>
+<h3>Where are WordPress logs stored?</h3>
+<p>Activity logs are usually stored in the WordPress database by the plugin. The debug log is written to wp-content/debug.log when enabled, and server access and error logs are in your hosting panel.</p>
+<h3>Can I see who deleted a page in WordPress?</h3>
+<p>Only if an activity log was running at the time. Without one, check the trash, the page's revisions and, if needed, ask your host whether their logs show the request.</p>
+<h3>Do activity logs slow down WordPress?</h3>
+<p>Recording admin events adds very little load. Problems come from logging every visitor action or keeping entries forever, so limit what you log and set a retention period.</p>
 
 <p>Want your site's security watched every month? Security scans, monitoring and updates are part of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, and if the log reveals a break-in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
