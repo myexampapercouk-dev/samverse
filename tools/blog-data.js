@@ -7497,6 +7497,8 @@ wp plugin verify-checksums --all</code></pre>
 <h2>500 Internal Server Error</h2>
 <p><strong>Usually:</strong> a server configuration issue, corrupted .htaccess file, plugin error or hosting resource limits.<br><strong>First steps:</strong> check your hosting account for resource warnings and ask your host for the error log, which tells you exactly what failed.</p>
 
+<p>Step-by-step guide: <a href="/blog/wordpress-500-internal-server-error-fix/">how to fix a 500 Internal Server Error</a>, including how to read the error log and enable WP_DEBUG_LOG safely.</p>
+
 <h2>"Error establishing a database connection"</h2>
 <p><strong>Usually:</strong> the database server is down, the database credentials changed, or the database is corrupted.<br><strong>First steps:</strong> check your host's status page. If the host is fine, the database details in the site's configuration may need correcting. This often appears after migrations.</p>
 
@@ -17358,6 +17360,8 @@ find wp-content/uploads -name "*.php"</code></pre>
   <li>A WordPress security plugin for login protection and file monitoring, if your host doesn't cover those</li>
   <li>Avoid stacking multiple firewall plugins that do the same job, since they conflict and slow the site</li>
 </ul>
+
+<p>Even a well-tuned firewall occasionally blocks a real customer, or you, by mistake, usually with a "403 Forbidden" page; see <a href="/blog/wordpress-403-forbidden-error-fix/">how to fix a 403 Forbidden error on WordPress</a> to find which rule fired and lift it safely.</p>
 
 <h2>Firewalls don't replace the basics</h2>
 <p>A firewall can't protect a site with an admin password leaked elsewhere, or one running abandoned plugins forever. Keep updating, use 2FA and keep backups. See <a href="/blog/secure-wordpress-login/">securing your login</a> and the <a href="/blog/wordpress-security-checklist/">security checklist</a>.</p>
@@ -39563,6 +39567,8 @@ Description: Custom code for this website.
 </ul>
 <p>Before upgrading, rule out problems that better hosting won't fix, such as heavy plugins, an overloaded page builder or huge images. See <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time</a> to work out whether the server or the site is the bottleneck. For many small business sites, moving to a better shared plan or entry-level managed hosting is enough; a VPS makes most sense when you need guaranteed resources and have someone to manage it.</p>
 
+<p>Frequent 502 Bad Gateway or 504 Gateway Timeout errors when traffic picks up can be another sign; <a href="/blog/wordpress-502-504-gateway-timeout-fix/">fixing 502 and 504 errors on WordPress</a> explains how to tell whether the plan or the site is the bottleneck.</p>
+
 <h2>Moving to a new type of hosting</h2>
 <p>Switching hosting type is usually a migration to a new server, so plan it properly:</p>
 <ol>
@@ -41886,6 +41892,265 @@ wp user reset-password &lt;username&gt;</code></pre>
 <p>WooCommerce gives you full control over product pages, ingredient content and SEO. Build pages around how people search for ingredients and product types, such as "bhringraj hair oil" or "what is triphala", rather than disease-led pages promising a remedy. Add product schema so price, availability and ratings can appear in Google, and keep the site fast despite rich photography. If you plan to ship abroad, check each destination country's rules for herbal products first, as they can differ a lot from India's.</p>
 
 <p>Planning to sell your Ayurvedic range direct, or fixing a store that isn't converting? See <a href="/woocommerce-developer/">WooCommerce store development</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for a brand site with an enquiry-led catalogue.</p>
+`,
+  },
+  {
+    slug: 'wordpress-403-forbidden-error-fix',
+    seoTitle: '403 Forbidden Error on WordPress: Causes and How to Fix It',
+    title: '403 Forbidden on WordPress or wp-admin: Causes and a Safe Fix Order',
+    description: 'Seeing "403 Forbidden" on your WordPress site or wp-admin? Find out who is blocking you: permissions, .htaccess, a security plugin, firewall, your CDN or host.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-malware-removal'],
+    body: `
+<p>A "403 Forbidden" page means the server understood your request and refused it. Nothing is necessarily broken or deleted. Something between the visitor and WordPress has decided the request isn't allowed: a file permission, an .htaccess rule, a security plugin, the host's firewall or your CDN. So first work out who is refusing, rather than changing settings at random.</p>
+
+<h2>What the 403 page tells you</h2>
+<p>The look of the error page is your first clue, so take a screenshot before changing anything.</p>
+<table>
+<thead><tr><th>What you see</th><th>Who is probably blocking</th></tr></thead>
+<tbody>
+<tr><td>A plain white page: "Forbidden. You don't have permission to access this resource"</td><td>The web server itself: permissions, .htaccess rules, a missing index file or a server firewall</td></tr>
+<tr><td>A page branded by your security plugin, or a message such as "Access denied" or "Your IP has been blocked"</td><td>A WordPress security plugin</td></tr>
+<tr><td>A page branded by your CDN, such as "Sorry, you have been blocked" with a reference ID</td><td>A CDN or cloud firewall rule</td></tr>
+<tr><td>A host-branded page mentioning security, a firewall or ModSecurity</td><td>The host's web application firewall</td></tr>
+</tbody>
+</table>
+<p>Then note where it happens: the whole site, only wp-admin and the login page, only when saving or submitting, or only on images. Each points somewhere different.</p>
+
+<h2>First checks: is it you, or everyone?</h2>
+<ol>
+<li>Open the address on your phone using mobile data, not office Wi-Fi. If it works there, your IP address has probably been blocked, not the site</li>
+<li>Try a private window to rule out old cookies and browser extensions</li>
+<li>Think about what changed: a new security plugin, a migration, an .htaccess edit, a CDN setting or a permissions "fix" from a tutorial</li>
+</ol>
+<p>Before editing anything, take a backup, including a copy of .htaccess.</p>
+
+<h2>Security plugins and IP blocks</h2>
+<p>Security plugins block IP addresses after repeated failed logins or patterns that look like attacks. Because many connections share or rotate IP addresses, you can inherit someone else's block, or one person's wrong passwords can lock out a whole office.</p>
+<ul>
+<li>Most lockouts expire on their own after the time set in the plugin</li>
+<li>If you can log in from another network, allowlist your office IP and check the plugin's block log for the reason</li>
+<li>If you can't log in at all, renaming the plugin's folder in wp-content/plugins deactivates it; the <a href="/blog/wordpress-login-not-working-fix/">login troubleshooting guide</a> covers this step by step</li>
+</ul>
+<p>Hosts also run server firewalls that can block an IP after repeated failed logins to email, FTP or the control panel, often triggered by an old email password saved on someone's phone. Only the host can lift that kind of block.</p>
+
+<h2>Bad or overly strict .htaccess rules</h2>
+<p>On Apache and LiteSpeed servers, .htaccess files can allow or deny access by IP address, folder or file type. Common causes of a 403:</p>
+<ul>
+<li>A rule limiting wp-admin to one IP address, which stops working when your provider gives you a new one</li>
+<li>"Deny from all" or "Require all denied" lines placed in the wrong folder by a plugin or tutorial</li>
+<li>Extra .htaccess files in wp-admin, wp-includes or wp-content/uploads. Blocking PHP in uploads is good; blocking every file there breaks your images</li>
+<li>Rules injected by malware</li>
+</ul>
+<p>To test, rename the main .htaccess to .htaccess-old and reload. If the 403 disappears, re-save Settings → Permalinks to generate a fresh WordPress section, then copy back only the rules you still need. The standard rules are shown in <a href="/blog/wordpress-pages-404-permalinks-fix/">the guide to pages showing 404</a>. If an .htaccess edit produces a 500 error instead, see <a href="/blog/wordpress-500-internal-server-error-fix/">fixing a 500 Internal Server Error</a>. Nginx servers ignore .htaccess, so there your host needs to check the server configuration.</p>
+
+<h2>File and folder permissions</h2>
+<p>The server won't serve files it isn't allowed to read. Wrong permissions or ownership are common after a migration, a manual upload or a malware clean-up.</p>
+<ul>
+<li>Folders are usually 755 and files 644, with wp-config.php stricter; follow your host's recommendations</li>
+<li>Check the main site folder itself. If it can't be read, the whole site returns 403</li>
+<li>Make sure index.php exists in the main folder. With no index file and directory listing switched off, which is the safe default, the homepage returns 403</li>
+<li>Never use 777. It's a security risk, and some servers refuse to run files with permissions that open</li>
+</ul>
+<p>Many hosting panels can reset permissions in one go, while ownership problems need the host. See <a href="/blog/wordpress-file-permissions/">WordPress file permissions explained</a>. Some hosts also lock files they've flagged as infected, which shows up as a 403; their notification email usually says so.</p>
+
+<h2>Firewalls, ModSecurity and saving content</h2>
+<p>If the site loads but you get a 403 when you click Update, save an Elementor page or submit a form, a web application firewall has probably mistaken your content for an attack. Host firewalls such as ModSecurity inspect each request, and code snippets, script tags or certain phrases in a post can match one of their rules.</p>
+<ul>
+<li>Note the exact time, page and action, and ask your host to check the firewall log for that request</li>
+<li>Ask them to allowlist that specific rule for that address, rather than switching ModSecurity off for the whole site</li>
+<li>If your panel lets you turn ModSecurity off, do so only as a brief test</li>
+</ul>
+<p>Security plugin firewalls can do the same, as can blocks on the WordPress REST API, which the block editor needs in order to save. For how the layers fit together, see <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a>.</p>
+
+<h2>CDN rules and hotlink protection</h2>
+<p>If you use a CDN or cloud firewall, search its security events log for the reference ID shown on the block page. Look for:</p>
+<ul>
+<li>Country blocks or challenges that catch real customers, including travellers and VPN users</li>
+<li>Rules that only allow certain IP addresses into wp-admin or wp-login.php</li>
+<li>Bot protection or rate limiting tight enough to block payment gateway callbacks or your uptime monitor</li>
+</ul>
+<p>Hotlink protection stops other websites displaying your images, but set up badly it blocks your own. If images return a 403 after a domain change, a move to https or adding www, check that every version of your domain is on the allowed list.</p>
+
+<h2>When to ask your host</h2>
+<p>Contact support if the 403 covers the whole site while .htaccess and permissions look right, if it only happens when saving or submitting, if your IP is blocked at server level, if the server runs Nginx or if file ownership needs fixing. Send the exact URL, the date and time, your public IP address (search "what is my IP"), a screenshot of the error page and what you've already tried, so they can find the matching log entry quickly.</p>
+
+<p>Rather not edit server files or dig through firewall logs yourself? I can track down what's blocking your site and fix it without weakening its security. See <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-500-internal-server-error-fix',
+    seoTitle: '500 Internal Server Error in WordPress: How to Fix It',
+    title: '500 Internal Server Error in WordPress: How to Find the Cause and Fix It',
+    description: 'How to fix a 500 Internal Server Error in WordPress: read the error log, enable WP_DEBUG_LOG safely, then check .htaccess, plugins, memory, PHP and limits.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>A 500 Internal Server Error is the server's way of saying "something went wrong" without saying what. Guessing at fixes wastes time, because the real reason is almost always written in an error log within seconds of the failure. Here's how to find and read that log, switch on WordPress's debug log safely, and recognise each common cause.</p>
+
+<h2>A 500 error or a critical error?</h2>
+<p>How the error appears is itself a clue:</p>
+<ul>
+<li><strong>"There has been a critical error on this website":</strong> WordPress caught a PHP fatal error itself. Start with <a href="/blog/fix-wordpress-critical-error/">the critical error guide</a></li>
+<li><strong>A plain "Internal Server Error" page from the server:</strong> the request failed before WordPress could respond, which points to .htaccess, server settings or a very early PHP failure</li>
+<li><strong>The browser's own "HTTP ERROR 500" page:</strong> the server sent an empty page with a 500 status, usually a PHP failure with error display switched off</li>
+</ul>
+<p>Note the scope too. A 500 on every page suggests .htaccess, a damaged core file or server limits; one only in wp-admin, or after clicking a particular button, points to the plugin that runs there. For 502 or 504 errors, see <a href="/blog/wordpress-502-504-gateway-timeout-fix/">fixing 502 and 504 gateway errors</a> instead.</p>
+
+<h2>Find and read the server error log</h2>
+<p>Before changing anything, check the "Errors" or "Logs" section of your hosting panel, or an error_log file in the main site folder or wp-admin, which many shared hosts create automatically. Reload the broken page once, then read the newest entries, which look like this:</p>
+<pre><code>[11-Oct-2026 10:42:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function old_helper() in /home/account/public_html/wp-content/plugins/example-plugin/includes/loader.php:88</code></pre>
+<p>Read it in four parts:</p>
+<ol>
+<li><strong>Time:</strong> match it to when you loaded the page; logs often use UTC or the server's time zone rather than IST</li>
+<li><strong>Severity:</strong> "Fatal error" and "Parse error" stop the page; warnings, notices and "Deprecated" lines are usually noise</li>
+<li><strong>Message:</strong> what went wrong; see the table below</li>
+<li><strong>File path:</strong> the folder after wp-content/plugins/ or wp-content/themes/ names the culprit, and the number at the end is the line a developer should check</li>
+</ol>
+<table>
+<thead><tr><th>Log message contains</th><th>Likely cause</th></tr></thead>
+<tbody>
+<tr><td>"Invalid command", "not allowed here" or a mention of .htaccess</td><td>A bad line in .htaccess</td></tr>
+<tr><td>"Allowed memory size ... exhausted"</td><td>PHP memory limit</td></tr>
+<tr><td>"Call to undefined function", or "Uncaught Error" in a plugin path</td><td>A plugin or theme that doesn't suit your PHP version or another plugin</td></tr>
+<tr><td>"syntax error, unexpected ..."</td><td>A broken code edit, or code that needs a newer PHP version</td></tr>
+<tr><td>"Maximum execution time ... exceeded"</td><td>A task running longer than the server allows</td></tr>
+<tr><td>"End of script output before headers" or "Premature end of script headers"</td><td>PHP crashed or was stopped, often by a server limit</td></tr>
+</tbody>
+</table>
+
+<h2>Turn on WP_DEBUG_LOG safely</h2>
+<p>If the server log is empty or hard to reach, WordPress can write PHP errors to its own file. A typo in wp-config.php itself causes a 500, so:</p>
+<ol>
+<li>Download a copy of wp-config.php first</li>
+<li>Edit it in the file manager or a plain text editor, never a word processor, which turns straight quotes curly</li>
+<li>Replace the existing WP_DEBUG line rather than adding a second one, keeping it above the comment that says to stop editing</li>
+</ol>
+<pre><code>define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', '/home/account/logs/wp-errors.log' );
+define( 'WP_DEBUG_DISPLAY', false );</code></pre>
+<p>Giving WP_DEBUG_LOG a file path, supported since WordPress 5.1, keeps the log outside your public folder; ask your host for a suitable path in a folder that already exists. If you set it to true instead, it writes to wp-content/debug.log, which anyone can often open in a browser, so delete it as soon as you've read it. WP_DEBUG_DISPLAY set to false keeps errors off visitors' screens.</p>
+<p>Reproduce the error once, read the newest "Fatal error" line, then set WP_DEBUG back to false, remove the extra lines and delete the log. If the log stays empty, the failure happens before WordPress loads, usually in .htaccess or the server, and only the server log will show it.</p>
+
+<h2>Corrupt or invalid .htaccess</h2>
+<p>On Apache and LiteSpeed servers, one bad line in .htaccess takes down every page, including wp-admin. Typical culprits are typing mistakes, leftovers from removed plugins and php_value lines copied from tutorials, which cause an instant 500 on many servers that don't run PHP as an Apache module. PHP settings belong in your host's PHP options screen instead.</p>
+<p>To test, rename .htaccess to .htaccess-old. If the site comes back, re-save Settings → Permalinks to create a clean file, then add back custom rules one at a time, testing after each. Rules that refuse access cause a different error; see <a href="/blog/wordpress-403-forbidden-error-fix/">fixing a 403 Forbidden error</a>.</p>
+
+<h2>Plugin and theme fatal errors</h2>
+<p>When the log names a file inside wp-content/plugins or wp-content/themes, that code is the problem, often straight after an update:</p>
+<ul>
+<li>Rename just that plugin's folder by file manager or SFTP, which deactivates it, and reload</li>
+<li>If the theme is named, rename its folder so WordPress falls back to a default theme, provided one is installed</li>
+<li>Then roll back, wait for a fixed release or replace the plugin</li>
+</ul>
+<p>If the log doesn't point anywhere useful, <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">the plugin conflict guide</a> explains how to test plugins one by one on a staging copy. Errors in functions.php or a snippets plugin usually come from a recent manual edit, so undo it.</p>
+
+<h2>Memory, PHP version and server limits</h2>
+<h3>PHP memory</h3>
+<p>"Allowed memory size exhausted" means a page needed more memory than PHP allows. Raising the limit helps, but finding what's using the memory matters more; see <a href="/blog/wordpress-memory-limit-errors/">fixing memory limit errors</a>.</p>
+<h3>PHP version mismatch</h3>
+<p>When a host retires an old PHP version, outdated plugins and themes that rely on removed functions can break. The reverse happens too, when a plugin update needs a newer PHP version than your server runs. Switching PHP back in the hosting panel is a quick temporary fix while the code is updated; see <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a>.</p>
+<h3>Server limits</h3>
+<p>Shared hosting caps CPU, memory, simultaneous processes and script run time. Large imports, backups or a traffic spike can hit those caps, so the 500 comes and goes. Your panel's resource usage page shows whether limits were reached; if so, move heavy jobs to quiet hours or ask whether a larger plan is needed.</p>
+
+<h2>A safe fix order, and when to call your host</h2>
+<ol>
+<li>Note the time, the URL and recent changes, and back up the site even though it's broken</li>
+<li>Read the server error log</li>
+<li>Test .htaccess by renaming it</li>
+<li>Deal with the plugin or theme named in the log, then check memory, PHP version and limits</li>
+<li>If the site must be online now, restore a working backup and investigate on staging; on a store, restoring the database can wipe out recent orders</li>
+</ol>
+<p>Ask your host when you can't find the logs, when they mention script headers, resource limits or "Permission denied", when the error started after the host changed something, or when it only appears at busy times. Give them the exact time and URL.</p>
+
+<p>Want the error log read and the site fixed properly, not just patched? I diagnose and repair server errors as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-502-504-gateway-timeout-fix',
+    seoTitle: '502 Bad Gateway and 504 Gateway Timeout Errors on WordPress',
+    title: '502 Bad Gateway and 504 Gateway Timeout on WordPress: Causes and Fixes',
+    description: 'What 502 Bad Gateway and 504 Gateway Timeout mean on WordPress, and how to fix them: PHP workers, heavy plugins, slow queries, Cloudflare and host limits.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-speed-optimization', 'wordpress-migration'],
+    body: `
+<p>A 502 or 504 error often appears when the site is busy or a long task is running, then disappears minutes later, which makes it hard to pin down. Unlike a 500 error, the cause usually isn't a broken file but a failed or slow hand-off between two pieces of server software, so it helps to understand that hand-off first.</p>
+
+<h2>Proxy, PHP and upstream in plain words</h2>
+<p>Many WordPress sites are served by two layers working together:</p>
+<ul>
+<li><strong>The front server,</strong> often called a proxy, receives every request. It might be Nginx on your hosting server, a load balancer, or a CDN such as Cloudflare in front of your host</li>
+<li><strong>The back end,</strong> or "upstream", does the real work. For WordPress that's PHP, usually run by PHP-FPM as a pool of worker processes that run WordPress, query the database and build each page</li>
+</ul>
+<p>Think of a waiter taking orders to a kitchen:</p>
+<table>
+<thead><tr><th>Error</th><th>What happened</th><th>In the restaurant</th></tr></thead>
+<tbody>
+<tr><td>502 Bad Gateway</td><td>The front server got no valid reply: PHP crashed, was restarted, refused the connection or sent back something broken</td><td>The kitchen door is shut, or the dish comes back wrong</td></tr>
+<tr><td>504 Gateway Timeout</td><td>The front server waited for PHP and gave up when its time limit ran out</td><td>The waiter gives up waiting</td></tr>
+</tbody>
+</table>
+<p>The front server is only the messenger; the fix almost always lies behind it.</p>
+
+<h2>Read the error page first</h2>
+<ul>
+<li><strong>A plain page saying "502 Bad Gateway" or "504 Gateway Timeout", often with "nginx" underneath:</strong> the proxy on your own hosting server couldn't get an answer from PHP</li>
+<li><strong>A Cloudflare-branded page:</strong> it marks whether the problem is at your browser, Cloudflare or the host. "Host: Error" means your server didn't answer properly</li>
+<li><strong>Cloudflare codes in the 520s:</strong> 521 means your server refused the connection, 522 means the connection timed out, and 524 means your server connected but took too long to send the page. All of them point back to your server</li>
+</ul>
+<p>Also note when it happens. Errors on every page, all the time, suggest PHP is down or misconfigured; errors only at busy times or on certain actions suggest capacity or slow code. Write down the time of each one.</p>
+
+<h2>PHP workers: the most common bottleneck</h2>
+<p>Each PHP worker handles one uncached request at a time, and your hosting plan allows a fixed number of them. When all are busy, new requests queue. If the queue doesn't clear fast enough, visitors get 504s, or 502s once the server starts turning requests away. Common causes:</p>
+<ul>
+<li><strong>Uncached pages:</strong> cached pages are served without PHP, so a site without working page caching needs a worker for every visit</li>
+<li><strong>Logged-in users and stores:</strong> admins, members, carts and checkouts bypass the cache by design, so a sale or a busy team in the dashboard uses many workers at once</li>
+<li><strong>Bots:</strong> aggressive crawlers, fake searches and password-guessing on wp-login.php or xmlrpc.php tie up workers just as real visitors do</li>
+<li><strong>Background requests:</strong> admin-ajax calls, the Heartbeat feature in open dashboard tabs and WP-Cron jobs all run PHP too</li>
+</ul>
+<p>Working page caching, blocking abusive bots at a firewall or CDN, and spreading out scheduled tasks free up workers without spending more on hosting.</p>
+
+<h2>Heavy plugins, slow queries and outside services</h2>
+<p>A worker that spends many seconds on one request is a worker nobody else can use. Look for:</p>
+<ul>
+<li>Plugins that run heavy database queries on every page, such as some related-posts, statistics or broken-link plugins</li>
+<li>Large imports, exports, backups or bulk edits run from the browser, which can outlast the proxy's time limit</li>
+<li>A bloated database, especially huge autoloaded settings left by old plugins</li>
+<li>Plugins that contact outside services, such as shipping rates, social feeds or licence checks, while the page waits. If that service is slow or down, your page hangs with it</li>
+</ul>
+<p>On a staging copy, a debugging plugin such as Query Monitor shows slow queries and outside calls for each page; the method is covered in <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time</a>. Run big jobs in smaller batches, at quiet hours, or through WP-CLI if your host offers it. If the database server itself is down, you'll usually see a different message; see <a href="/blog/error-establishing-database-connection-fix/">fixing "Error establishing a database connection"</a>.</p>
+
+<h2>Cloudflare and CDN problems</h2>
+<p>A CDN adds a second hand-off, from the CDN to your server, and problems on either side can look similar. Check:</p>
+<ul>
+<li><strong>The CDN's status page,</strong> in case the problem really is on their side</li>
+<li><strong>Your host's firewall:</strong> with a CDN in front, visitor traffic arrives from the CDN's IP addresses. If the server firewall mistakes that for an attack and blocks them, you get 502, 521 or 522 errors. Ask the host to allowlist the CDN's published IP ranges</li>
+<li><strong>Timeouts:</strong> a CDN gives up after a set time, so long requests need to be made shorter or moved into the background</li>
+<li><strong>SSL settings:</strong> a mismatch between the CDN's SSL mode and your server's certificate causes its own errors, and often redirect loops; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a></li>
+</ul>
+<p>Your developer can also test the server directly, bypassing the CDN, to confirm whether your own server is failing.</p>
+
+<h2>Server limits on shared hosting</h2>
+<p>Shared plans cap CPU, memory and simultaneous processes for each account. When you hit a cap, the host may slow your site, stop processes or return 502, 503 or 504 errors until usage drops. Signs that limits are the problem:</p>
+<ul>
+<li>Errors cluster at busy times: ad campaigns, festival sales, a newsletter going out</li>
+<li>Your hosting panel's resource graphs, or emails from your host, show limits reached at the same times</li>
+</ul>
+<p>Fix the waste first: caching, bots, heavy plugins and scheduled jobs. If the site still needs more than the plan gives, more PHP workers or dedicated resources is the honest answer; see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>. On a VPS, your developer should check the PHP-FPM log for warnings that the pool hit its maximum number of processes, and the slow log, which records scripts that ran too long. Simply raising every timeout tends to hide slow code and keeps workers tied up longer.</p>
+
+<h2>What to send your host</h2>
+<p>Send your host the exact times of the errors with the time zone, the URLs affected, whether it's every page or particular actions, and a screenshot of the error page including any Ray ID or reference from the CDN. Then ask directly:</p>
+<ul>
+<li>Were PHP workers or process limits reached at those times?</li>
+<li>Was PHP-FPM restarted, or stopped for using too much memory?</li>
+<li>Do the slow logs or access logs show particular scripts or bots?</li>
+</ul>
+<p>Their answers usually show whether the fix belongs in the site or the hosting. If the error turns out to be a plain 500, <a href="/blog/wordpress-500-internal-server-error-fix/">the 500 error guide</a> explains how to read those logs.</p>
+
+<p>If gateway errors keep coming back at the worst moments, I can find what's tying up your server and fix it. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
 `,
   },
 ];

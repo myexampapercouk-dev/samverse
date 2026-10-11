@@ -3933,5 +3933,26 @@
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
     <description>How Ayurvedic and herbal D2C brands can plan a website: ingredient and usage pages, careful health claims, genuine certifications, reviews and subscriptions.</description>
   </item>
+  <item>
+    <title>403 Forbidden on WordPress or wp-admin: Causes and a Safe Fix Order</title>
+    <link>https://samverse.space/blog/wordpress-403-forbidden-error-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-403-forbidden-error-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Seeing &quot;403 Forbidden&quot; on your WordPress site or wp-admin? Find out who is blocking you: permissions, .htaccess, a security plugin, firewall, your CDN or host.</description>
+  </item>
+  <item>
+    <title>500 Internal Server Error in WordPress: How to Find the Cause and Fix It</title>
+    <link>https://samverse.space/blog/wordpress-500-internal-server-error-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-500-internal-server-error-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>How to fix a 500 Internal Server Error in WordPress: read the error log, enable WP_DEBUG_LOG safely, then check .htaccess, plugins, memory, PHP and limits.</description>
+  </item>
+  <item>
+    <title>502 Bad Gateway and 504 Gateway Timeout on WordPress: Causes and Fixes</title>
+    <link>https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>What 502 Bad Gateway and 504 Gateway Timeout mean on WordPress, and how to fix them: PHP workers, heavy plugins, slow queries, Cloudflare and host limits.</description>
+  </item>
 </channel>
 </rss>

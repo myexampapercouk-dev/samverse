@@ -683,6 +683,10 @@ const LINKS = [
   ['website-for-gyms-fitness-studios', '<h2>Turn visitors into members</h2>', '<p>If you coach clients one to one instead of running a gym, whether at their homes, in a studio or online, see <a href="/blog/website-for-personal-trainers/">websites for personal trainers and fitness coaches</a>.</p>\n\n'],
   ['website-for-painting-contractors', '<h2>Trust signals for letting a crew into someone\'s home</h2>', '<p>If you also run a paint shop, where shade cards, colour tools and quantity calculators do much of this work, see <a href="/blog/website-for-paint-dealers/">websites for paint dealers and paint shops</a>.</p>\n\n'],
   ['website-for-ayurveda-wellness-centres', '<h2>Design</h2>', '<p>Selling your own oils, powders or herbal teas online as well? See <a href="/blog/website-for-ayurvedic-product-brands/">websites for Ayurvedic and herbal product brands</a> for product pages, careful claims and subscriptions.</p>\n\n'],
+  // Agent 88
+  ['wordpress-firewall-waf-explained', '<h2>Firewalls don\'t replace the basics</h2>', '<p>Even a well-tuned firewall occasionally blocks a real customer, or you, by mistake, usually with a "403 Forbidden" page; see <a href="/blog/wordpress-403-forbidden-error-fix/">how to fix a 403 Forbidden error on WordPress</a> to find which rule fired and lift it safely.</p>\n\n'],
+  ['common-wordpress-errors-fixes', '<h2>"Error establishing a database connection"</h2>', '<p>Step-by-step guide: <a href="/blog/wordpress-500-internal-server-error-fix/">how to fix a 500 Internal Server Error</a>, including how to read the error log and enable WP_DEBUG_LOG safely.</p>\n\n'],
+  ['shared-vs-vps-vs-managed-wordpress-hosting', '<h2>Moving to a new type of hosting</h2>', '<p>Frequent 502 Bad Gateway or 504 Gateway Timeout errors when traffic picks up can be another sign; <a href="/blog/wordpress-502-504-gateway-timeout-fix/">fixing 502 and 504 errors on WordPress</a> explains how to tell whether the plan or the site is the bottleneck.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

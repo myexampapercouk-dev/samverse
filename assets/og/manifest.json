@@ -599,5 +599,8 @@
  "blog-wordpress-site-not-showing-on-google": "a6f86f0c4822ece5fbf4582cb14a55872d05ee50",
  "blog-website-for-personal-trainers": "9e79d94a029cf9cc73c97b899740c1770cb93e2a",
  "blog-website-for-paint-dealers": "f005cdf22dd9ed4ec3d10af09370c51f6aa69c6c",
- "blog-website-for-ayurvedic-product-brands": "c45d1133826dba2a5fc944124cb4ee5e90d17bb8"
+ "blog-website-for-ayurvedic-product-brands": "c45d1133826dba2a5fc944124cb4ee5e90d17bb8",
+ "blog-wordpress-403-forbidden-error-fix": "dcd759d681b8d8201c21da7866f4033ad8c5b137",
+ "blog-wordpress-500-internal-server-error-fix": "eb8addce3a23d5f50c6f3db6f1c001aa97bc4231",
+ "blog-wordpress-502-504-gateway-timeout-fix": "221f1378fba46f2ba7f0cc45899a5bd8d5dce53b"
 }
