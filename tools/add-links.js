@@ -695,6 +695,10 @@ const LINKS = [
   ['woocommerce-checkout-optimization', '<h2>Test with real orders</h2>', '<p>If the checkout won\'t load at all, spins forever or ignores the "Place order" button, that\'s a fault rather than a design problem; see <a href="/blog/woocommerce-checkout-not-working-fix/">how to fix a WooCommerce checkout that isn\'t working</a>.</p>\n\n'],
   ['payment-gateways-india-compared', '<h2>A quick comparison checklist</h2>', '<p>Already live and seeing failed payments, or paid orders stuck at "Pending payment"? See <a href="/blog/woocommerce-payment-gateway-not-working-india/">how to fix a payment gateway that isn\'t working in WooCommerce</a>, from webhooks to test and live keys.</p>\n\n'],
   ['wordpress-stuck-in-maintenance-mode', '<h2>When deleting the file isn\'t enough</h2>', '<p>If the re-run stops again with "Download failed", "The package could not be installed" or "Another update is currently in progress", work through <a href="/blog/wordpress-update-failed-fix/">how to fix a failed WordPress update</a>.</p>\n\n'],
+  // Agent 91
+  ['wordpress-http-error-image-upload-fix', '<h2>Check 7: Plugins and themes</h2>', '<p>The same firewall and security rules can also block the media library\'s background requests, leaving the grid stuck on a spinner even when uploads work; see <a href="/blog/wordpress-media-library-not-loading-fix/">how to fix a WordPress media library that won\'t load</a>.</p>\n\n'],
+  ['search-console-page-indexing-errors', '<h2>Errors that need fixing quickly</h2>', '<p>Seeing "Indexed, though blocked by robots.txt", or important pages listed under "Blocked by robots.txt"? See <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">how to fix both robots.txt statuses and when to use noindex instead</a>.</p>\n\n'],
+  ['stop-contact-form-spam', '<h2>4. Validation</h2>', '<p>If you use Google reCAPTCHA and see "Invalid domain for site key", a missing badge or forms that won\'t send, work through <a href="/blog/recaptcha-not-working-wordpress/">how to fix reCAPTCHA on WordPress</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

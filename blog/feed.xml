@@ -3996,5 +3996,26 @@
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
     <description>Fix WordPress &quot;Update failed&quot;, &quot;Download failed&quot;, &quot;The package could not be installed&quot; and &quot;Another update is currently in progress&quot; errors, step by step.</description>
   </item>
+  <item>
+    <title>WordPress Media Library Not Loading? Fixing Spinners, Grey Boxes and Missing Images</title>
+    <link>https://samverse.space/blog/wordpress-media-library-not-loading-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-media-library-not-loading-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Fix a WordPress media library that spins forever, shows an empty grid, grey boxes or broken images after a move: conflicts, limits, URLs, permissions and CDNs.</description>
+  </item>
+  <item>
+    <title>&quot;Indexed, Though Blocked by robots.txt&quot; and &quot;Blocked by robots.txt&quot;: What They Mean and How to Fix Them</title>
+    <link>https://samverse.space/blog/indexed-though-blocked-by-robots-txt-fix/</link>
+    <guid>https://samverse.space/blog/indexed-though-blocked-by-robots-txt-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>What Search Console's &quot;Indexed, though blocked by robots.txt&quot; and &quot;Blocked by robots.txt&quot; mean, when to use noindex instead, and how to fix and validate them.</description>
+  </item>
+  <item>
+    <title>reCAPTCHA Not Working on WordPress? Fixing &quot;Invalid Domain&quot;, Key Type Errors and Forms That Won't Send</title>
+    <link>https://samverse.space/blog/recaptcha-not-working-wordpress/</link>
+    <guid>https://samverse.space/blog/recaptcha-not-working-wordpress/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Fix Google reCAPTCHA on WordPress forms: invalid domain or key type errors, a missing badge, failed submissions, v3 score settings and spam still getting through.</description>
+  </item>
 </channel>
 </rss>

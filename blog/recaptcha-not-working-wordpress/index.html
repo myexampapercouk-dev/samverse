@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reCAPTCHA Not Working on WordPress? Causes and Fixes | Samverse</title>
+  <meta name="description" content="Fix Google reCAPTCHA on WordPress forms: invalid domain or key type errors, a missing badge, failed submissions, v3 score settings and spam still getting through.">
+  <meta name="author" content="Sameer Gupta">
+  <meta name="google-adsense-account" content="ca-pub-7430741863334470">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://samverse.space/blog/recaptcha-not-working-wordpress/">
+  <meta property="og:site_name" content="Samverse">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://samverse.space/blog/recaptcha-not-working-wordpress/">
+  <meta property="og:title" content="reCAPTCHA Not Working on WordPress? Causes and Fixes | Samverse">
+  <meta property="og:description" content="Fix Google reCAPTCHA on WordPress forms: invalid domain or key type errors, a missing badge, failed submissions, v3 score settings and spam still getting through.">
+  <meta property="og:image" content="https://samverse.space/assets/og/blog-recaptcha-not-working-wordpress.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://samverse.space/assets/og/blog-recaptcha-not-working-wordpress.png">
+  <meta name="theme-color" content="#6D4AFF">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="Samverse Blog" href="https://samverse.space/blog/feed.xml">
+  <script src="/config.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="/style.min.css">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-10-11">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://samverse.space/blog/recaptcha-not-working-wordpress/#article",
+      "headline": "reCAPTCHA Not Working on WordPress? Fixing \"Invalid Domain\", Key Type Errors and Forms That Won't Send",
+      "description": "Fix Google reCAPTCHA on WordPress forms: invalid domain or key type errors, a missing badge, failed submissions, v3 score settings and spam still getting through.",
+      "datePublished": "2026-10-11",
+      "dateModified": "2026-10-11",
+      "mainEntityOfPage": "https://samverse.space/blog/recaptcha-not-working-wordpress/",
+      "image": "https://samverse.space/assets/og/blog-recaptcha-not-working-wordpress.png",
+      "articleSection": "Maintenance",
+      "inLanguage": "en-IN",
+      "author": {
+        "@type": "Person",
+        "@id": "https://samverse.space/#sameer",
+        "name": "Sameer Gupta",
+        "url": "https://samverse.space/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Samverse",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://samverse.space/assets/icon-512.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://samverse.space/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://samverse.space/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Speed, security & maintenance",
+          "item": "https://samverse.space/blog/topic/speed-security/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "reCAPTCHA Not Working on WordPress? Fixing \"Invalid Domain\", Key Type Errors and Forms That Won't Send",
+          "item": "https://samverse.space/blog/recaptcha-not-working-wordpress/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <!-- Generated by tools/build-pages.js from tools/blog-data.js -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="Samverse home">
+        <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+        <span class="brand-text">sam<span class="grad">verse</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/#industries">Industries</a>
+        <a href="/#work">Work</a>
+        <a href="/#process">Process</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/blog/">Blog</a>
+        <a href="#contact" class="btn btn-sm">Hire Me</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="read-progress" aria-hidden="true"><span id="readProgress"></span></div>
+
+  <main>
+    <article class="post">
+      <header class="post-hero">
+        <div class="container post-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
+          <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
+          <h1>reCAPTCHA Not Working on WordPress? Fixing &quot;Invalid Domain&quot;, Key Type Errors and Forms That Won't Send</h1>
+          <p class="post-dek">Fix Google reCAPTCHA on WordPress forms: invalid domain or key type errors, a missing badge, failed submissions, v3 score settings and spam still getting through.</p>
+          <div class="post-byline">
+            <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
+            <div class="post-byline-text">
+              <a href="/about/">Sameer Gupta</a>
+              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+            </div>
+            <div class="share share-top">
+              <a href="https://wa.me/?text=reCAPTCHA%20Not%20Working%20on%20WordPress%3F%20Fixing%20%22Invalid%20Domain%22%2C%20Key%20Type%20Errors%20and%20Forms%20That%20Won't%20Send%20https%3A%2F%2Fsamverse.space%2Fblog%2Frecaptcha-not-working-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Frecaptcha-not-working-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=reCAPTCHA%20Not%20Working%20on%20WordPress%3F%20Fixing%20%22Invalid%20Domain%22%2C%20Key%20Type%20Errors%20and%20Forms%20That%20Won't%20Send&url=https%3A%2F%2Fsamverse.space%2Fblog%2Frecaptcha-not-working-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/recaptcha-not-working-wordpress/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+          <figure class="post-cover"><img src="/assets/og/blog-recaptcha-not-working-wordpress.webp" alt="reCAPTCHA Not Working on WordPress? Fixing &quot;Invalid Domain&quot;, Key Type Errors and Forms That Won't Send" width="1200" height="630" fetchpriority="high"></figure>
+        </div>
+      </header>
+
+      <div class="post-layout container">
+        <div class="post-body">
+          <details class="toc-mobile">
+            <summary>On this page</summary>
+            <ol>
+              <li><a href="#read-the-error-first">Read the error first</a></li>
+              <li><a href="#v2-and-v3-keys-can-t-be-mixed">v2 and v3 keys can't be mixed</a></li>
+              <li><a href="#check-the-domains-in-the-admin-console">Check the domains in the admin console</a></li>
+              <li><a href="#badge-missing-or-form-not-loading-caching-script-delay-and-consent">Badge missing or form not loading: caching, script delay and consent</a></li>
+              <li><a href="#forms-failing-or-spam-getting-through-v3-scores">Forms failing or spam getting through: v3 scores</a></li>
+              <li><a href="#alternatives-turnstile-honeypots-and-layers">Alternatives: Turnstile, honeypots and layers</a></li>
+            </ol>
+          </details>
+          <div class="takeaways">
+            <strong>Key takeaways</strong>
+            <ul>
+              <li>&quot;Invalid domain for site key&quot; means the domain is missing from the key's list, and &quot;Invalid key type&quot; means a v2 key and a v3 integration, or vice versa, have been mixed.</li>
+              <li>Script delay, lazy-loading, caching and cookie consent tools often stop reCAPTCHA loading or leave tokens expired, so exclude its scripts and test in a private window.</li>
+              <li>Start v3 near the 0.5 threshold Google suggests, make sure submissions are verified on the server, and consider Turnstile or a honeypot as lower-friction alternatives.</li>
+            </ul>
+          </div>
+<p>Google reCAPTCHA is meant to stop bots quietly. When it's set up wrongly, it does the opposite: a red "ERROR for site owner" box appears on your contact form, the form refuses to send, or real enquiries are rejected while spam carries on. Here's how to find the cause. Google has been moving reCAPTCHA keys into Google Cloud, so screens may differ from older tutorials.</p>
+
+<h2 id="read-the-error-first">Read the error first</h2>
+<table>
+<thead><tr><th>What you see</th><th>Usual cause</th></tr></thead>
+<tbody>
+<tr><td>"ERROR for site owner: Invalid domain for site key"</td><td>Your domain isn't on the key's list of allowed domains</td></tr>
+<tr><td>"ERROR for site owner: Invalid key type"</td><td>The key's type doesn't match the integration, such as a v3 key in a v2 widget</td></tr>
+<tr><td>"ERROR for site owner: Invalid site key"</td><td>A typo, a stray space, the secret key pasted into the site key field, or a deleted key</td></tr>
+<tr><td>"Localhost is not in the list of supported domains"</td><td>Testing on a local or staging copy with the live key</td></tr>
+<tr><td>No checkbox or badge, and no error</td><td>The script isn't loading: blocked, delayed or held back by a consent tool</td></tr>
+<tr><td>The form spins, fails or says the message looks like spam</td><td>The server-side check is failing: wrong secret key, low v3 score, expired token or no connection to Google</td></tr>
+</tbody>
+</table>
+
+<h2 id="v2-and-v3-keys-can-t-be-mixed">v2 and v3 keys can't be mixed</h2>
+<p>reCAPTCHA comes in different types, and each key is created for one of them:</p>
+<ul>
+<li><strong>v2 "I'm not a robot":</strong> the familiar checkbox, sometimes followed by an image challenge.</li>
+<li><strong>v2 Invisible:</strong> no checkbox; a badge appears and a challenge shows only when traffic looks suspicious.</li>
+<li><strong>v3:</strong> never shows a challenge. It gives each visit a score from 0.0 (likely a bot) to 1.0 (likely a person), and your form plugin decides what to do with it.</li>
+</ul>
+<p>The type is chosen when the key is created, and a v2 key won't work with a v3 integration or the other way round. Check which type your form plugin expects; some built-in integrations support only one. If the key doesn't match, create a new key of the right type rather than forcing it. Each key also comes as a pair: the site key goes in the page, the secret key is used by your server, and both must come from the same key.</p>
+<p>Load reCAPTCHA once per page. If a form plugin, a separate reCAPTCHA plugin and a security plugin each add their own script, possibly with different versions or keys, they clash and produce key type errors or widgets that never appear. Pick one integration and switch reCAPTCHA off in the others.</p>
+
+<aside class="inline-cta">
+  <strong>Need help with website maintenance?</strong>
+  <p>Monthly WordPress maintenance: updates, backups, security monitoring, uptime checks and small content changes, so your website stays fast, secure and online.</p>
+  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22reCAPTCHA%20Not%20Working%20on%20WordPress%3F%20Fixing%20%22Invalid%20Domain%22%2C%20Key%20Type%20Errors%20and%20Forms%20That%20Won't%20Send%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+</aside>
+
+<h2 id="check-the-domains-in-the-admin-console">Check the domains in the admin console</h2>
+<p>Sign in to the reCAPTCHA admin console with the Google account that created the key. Often that's a former developer's or agency's account; if nobody can get in, create new keys under an account the business owns and update them in your plugin.</p>
+<ul>
+<li>Enter domain names only, such as example.com, without https:// or paths. A registered domain generally covers its subdomains, including www.</li>
+<li>Add the new domain after a rebrand or domain change; the old key won't follow you.</li>
+<li>Use a separate key for staging, or add the staging domain deliberately, and remember to tidy it up later.</li>
+<li>Domain changes can take a little while to apply, so wait before deciding they didn't work.</li>
+</ul>
+
+<h2 id="badge-missing-or-form-not-loading-caching-script-delay-and-consent">Badge missing or form not loading: caching, script delay and consent</h2>
+<p>Speed and privacy tools are a common cause of reCAPTCHA failing on a site that worked before:</p>
+<ul>
+<li><strong>Delay or defer JavaScript:</strong> settings that hold scripts until the visitor scrolls or taps can stop the checkbox appearing, or leave the v3 token missing when the form is sent. Exclude scripts containing "recaptcha" and your form plugin's scripts from delay, defer and combine settings.</li>
+<li><strong>Lazy-loading iframes:</strong> the checkbox and challenge load inside iframes, which some lazy-loading features rewrite. Exclude them.</li>
+<li><strong>Page caching:</strong> reCAPTCHA tokens are valid for only about two minutes, so a token created when the page loads can be stale by the time a visitor sends a long message. Good integrations request a fresh token on submit. Cached pages can also carry expired security tokens from the form plugin; see <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> for exclusions.</li>
+<li><strong>Cookie consent tools:</strong> if reCAPTCHA is blocked until visitors accept cookies, anyone who declines may be unable to send the form. How to categorise it is partly a legal question, so check current privacy rules with your lawyer.</li>
+<li><strong>Security headers:</strong> a Content Security Policy must allow the Google domains reCAPTCHA uses.</li>
+</ul>
+<p>A badge can also be hidden with CSS. Google's FAQ allows that only if you show its required notice and links near the form; check the current wording. Then clear every cache, including the CDN, and test in a private window.</p>
+
+<h2 id="forms-failing-or-spam-getting-through-v3-scores">Forms failing or spam getting through: v3 scores</h2>
+<p>With v3, your form plugin rejects submissions below a threshold. Google's documentation suggests 0.5 as a starting point. Set it too high and visitors on VPNs, privacy-focused browsers or shared office networks may be rejected with a vague error, and you'll never hear about the enquiry. Set it too low and bots get through. Google also notes that scores improve as reCAPTCHA sees real traffic on your site, so results on staging or just after setup may differ.</p>
+<p>If spam still arrives, check that:</p>
+<ul>
+<li>The secret key is entered and the plugin verifies every submission on the server; a script on the page alone protects nothing</li>
+<li>Your server can reach Google to verify, since some hosts block outgoing connections; the error log will show failed requests</li>
+<li>Every form is covered, including comments, registration, newsletter sign-ups and WooCommerce forms</li>
+</ul>
+<p>No CAPTCHA stops people paid to fill in forms by hand. For layered defences, see <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a>.</p>
+
+<h2 id="alternatives-turnstile-honeypots-and-layers">Alternatives: Turnstile, honeypots and layers</h2>
+<ul>
+<li><strong>Cloudflare Turnstile:</strong> a low-friction challenge that can be used even if your site doesn't run through Cloudflare. Many form plugins support it directly or through an add-on; check current plans and terms.</li>
+<li><strong>Honeypot fields and time checks:</strong> invisible to visitors and verified on the server. They stop many simple bots and suit low-traffic forms well.</li>
+<li><strong>Spam-filtering services:</strong> check the content of submissions and keep a spam folder you can review.</li>
+</ul>
+<p>Whatever you use, mention it in your privacy policy, then send a test enquiry on desktop and mobile after every change. A form that silently rejects real people costs more than spam; <a href="/blog/contact-form-not-getting-enquiries/">why a contact form stops getting enquiries</a> covers the other checks.</p>
+
+<p>Forms still failing, or tired of fighting spam? I set up and test form protection, email delivery and plugin updates as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+
+          <div class="post-cta">
+            <h2>Need help with your website?</h2>
+            <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn">Get a Free Quote</a>
+              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22reCAPTCHA%20Not%20Working%20on%20WordPress%3F%20Fixing%20%22Invalid%20Domain%22%2C%20Key%20Type%20Errors%20and%20Forms%20That%20Won't%20Send%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+            </div>
+          </div>
+
+          <div class="post-share-end">
+            <strong>Found this useful? Share it:</strong>
+            <div class="share share-end">
+              <a href="https://wa.me/?text=reCAPTCHA%20Not%20Working%20on%20WordPress%3F%20Fixing%20%22Invalid%20Domain%22%2C%20Key%20Type%20Errors%20and%20Forms%20That%20Won't%20Send%20https%3A%2F%2Fsamverse.space%2Fblog%2Frecaptcha-not-working-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Frecaptcha-not-working-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=reCAPTCHA%20Not%20Working%20on%20WordPress%3F%20Fixing%20%22Invalid%20Domain%22%2C%20Key%20Type%20Errors%20and%20Forms%20That%20Won't%20Send&url=https%3A%2F%2Fsamverse.space%2Fblog%2Frecaptcha-not-working-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/recaptcha-not-working-wordpress/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+
+          <div class="post-author">
+            <img src="/assets/logo-mark.svg" alt="" width="56" height="56">
+            <div><strong><a href="/about/">Sameer Gupta</a></strong><p>Freelance WordPress developer and founder of Samverse, building websites for clinics, manufacturers, agencies and online stores since 2020.</p><a href="/about/" class="link-inline">More about me</a></div>
+          </div>
+
+          <nav class="post-nav" aria-label="More in Speed, security &amp; maintenance">
+            <a class="post-nav-prev" href="/blog/wordpress-media-library-not-loading-fix/"><span>← Previous in Speed, security &amp; maintenance</span><strong>WordPress Media Library Not Loading? Fixing Spinners, Grey Boxes and Missing Images</strong></a>
+            <a class="post-nav-next" href="/blog/why-is-my-wordpress-site-slow/"><span>Next in Speed, security &amp; maintenance →</span><strong>Why Is My WordPress Site Slow? 12 Common Causes and How to Fix Them</strong></a>
+          </nav>
+        </div>
+
+        <aside class="post-side">
+          <nav class="post-toc" aria-label="On this page">
+            <strong>On this page</strong>
+            <ol>
+              <li><a href="#read-the-error-first">Read the error first</a></li>
+              <li><a href="#v2-and-v3-keys-can-t-be-mixed">v2 and v3 keys can't be mixed</a></li>
+              <li><a href="#check-the-domains-in-the-admin-console">Check the domains in the admin console</a></li>
+              <li><a href="#badge-missing-or-form-not-loading-caching-script-delay-and-consent">Badge missing or form not loading: caching, script delay and consent</a></li>
+              <li><a href="#forms-failing-or-spam-getting-through-v3-scores">Forms failing or spam getting through: v3 scores</a></li>
+              <li><a href="#alternatives-turnstile-honeypots-and-layers">Alternatives: Turnstile, honeypots and layers</a></li>
+            </ol>
+          </nav>
+          <div class="side-cta">
+            <strong>Need help with this?</strong>
+            <p>Get a clear plan and a fixed quote within 24 hours.</p>
+            <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
+            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22reCAPTCHA%20Not%20Working%20on%20WordPress%3F%20Fixing%20%22Invalid%20Domain%22%2C%20Key%20Type%20Errors%20and%20Forms%20That%20Won't%20Send%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+          </div>
+        </aside>
+      </div>
+    </article>
+
+    <section class="section related">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Services</span><h2>How I can help</h2></div>
+        <div class="industries related-grid reveal">
+          <a class="industry" href="/wordpress-maintenance/"><h3>Website Maintenance</h3><p>Monthly WordPress maintenance: updates, backups, security monitoring, uptime checks and small content changes, so your website stays fast, secure and online.</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/wordpress-website-development/"><h3>WordPress Website Development</h3><p>Custom WordPress website development: business websites, portfolios, catalogues and portals that are fast, mobile-friendly, SEO-ready and easy for you to update.</p><span class="ind-arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
+        <div class="post-grid reveal">
+          <a class="post-card" href="/blog/stop-contact-form-spam/"><img class="post-card-img" src="/assets/og/blog-stop-contact-form-spam.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Stop Contact Form Spam on Your WordPress Website</h3><p>Tired of spam form submissions? Practical ways to stop contact form spam on WordPress (honeypots, time checks, friendly CAPTCHAs, validation and email filtering) without blocking real customers.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/contact-form-not-getting-enquiries/"><img class="post-card-img" src="/assets/og/blog-contact-form-not-getting-enquiries.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Growth</span><h3>Why Your Website Contact Form Isn't Getting Enquiries (and How to Fix It)</h3><p>Getting traffic but no form submissions? Common reasons contact forms fail, from broken email delivery and spam filters to too many fields, with fixes that bring enquiries back.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-caching-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-caching-explained.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)</h3><p>WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-copy">
+            <span class="eyebrow">Contact</span>
+            <h2>Let's build your next <span class="grad">website</span></h2>
+            <p class="muted">Available for freelance projects, agency white-label work and long-term maintenance. Feel free to pass this along to your team or company.</p>
+            <ul class="contact-list">
+              <li>
+                <a href="tel:+917417049145">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+                  <span><small>Call</small>+91 74170 49145</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:sameergpt9719@gmail.com?subject=WordPress%20project%20enquiry">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.2 7H4v.3l8 5.3 8-5.3V7h-.2L12 12.2z"/></svg></span>
+                  <span><small>Email</small>sameergpt9719@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/917417049145" target="_blank" rel="noopener">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+                  <span><small>WhatsApp</small>Chat instantly</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot: hidden from people, bots fill it in -->
+            <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <label>Your name<input type="text" name="name" required maxlength="120" placeholder="John Doe" autocomplete="name"></label>
+            <div class="form-row">
+              <label>Phone / WhatsApp<input type="tel" name="phone" required maxlength="40" placeholder="+91 98765 43210" autocomplete="tel"></label>
+              <label>Email <span class="opt">(optional)</span><input type="email" name="email" maxlength="160" placeholder="you@company.com" autocomplete="email"></label>
+            </div>
+            <label>Project type
+              <select name="type">
+                <option>New WordPress website</option>
+                <option>WooCommerce store</option>
+                <option>Website redesign</option>
+                <option>Speed / SEO optimization</option>
+                <option>Maintenance &amp; support</option>
+                <option>Agency / white-label work</option>
+              </select>
+            </label>
+            <label>Message<textarea name="message" rows="4" maxlength="4000" placeholder="Tell me a bit about your project…"></textarea></label>
+            <div class="captcha">
+              <label for="captchaInput">Quick check: <strong id="captchaQ">3 + 4</strong> = ?</label>
+              <div class="captcha-row">
+                <input type="text" id="captchaInput" name="captcha" inputmode="numeric" required placeholder="Answer" autocomplete="off">
+                <button type="button" class="captcha-refresh" id="captchaRefresh" aria-label="New question">↻</button>
+              </div>
+              <p class="form-error" id="formError" role="alert"></p>
+            </div>
+            <button type="submit" class="btn btn-block" id="formSubmit">Send Enquiry</button>
+            <p class="form-msg" id="msg" role="status"></p>
+            <p class="form-note">Your details are emailed to me, then WhatsApp opens so we can chat right away.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cta">
+        <div>
+          <h2>Have a WordPress project in mind?</h2>
+          <p>Tell me about it and I'll reply within 24 hours with a plan and a quote.</p>
+        </div>
+        <div class="footer-cta-actions">
+          <a href="https://wa.me/917417049145" class="btn btn-light" target="_blank" rel="noopener">WhatsApp Me</a>
+          <a href="mailto:sameergpt9719@gmail.com?subject=WordPress%20project%20enquiry" class="btn btn-outline-light">Send an Email</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand">
+            <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+            <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
+          </a>
+          <p>Sameer Gupta, freelance <a href="/wordpress-developer-pune/">WordPress developer based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020.</p>
+          <span class="footer-status"><span class="dot"></span> Taking new projects</span>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Explore</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/work/">Portfolio</a></li>
+            <li><a href="/#process">Process</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/website-cost-calculator/">Cost Calculator</a></li>
+            <li><a href="/wordpress-glossary/">Glossary</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Services</h3>
+          <ul>
+            <li><a href="/wordpress-maintenance/">WordPress Maintenance</a></li>
+            <li><a href="/wordpress-speed-optimization/">Speed Optimization</a></li>
+            <li><a href="/wordpress-malware-removal/">Malware Removal</a></li>
+            <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
+            <li><a href="/elementor-developer/">Elementor Developer</a></li>
+            <li><a href="/landing-page-design/">Landing Page Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Industries</h3>
+          <ul>
+            <li><a href="/wordpress-developer-for-agencies/">White-label for Agencies</a></li>
+            <li><a href="/wordpress-website-for-doctors/">Doctors &amp; Clinics</a></li>
+            <li><a href="/website-for-manufacturers/">Manufacturers &amp; B2B</a></li>
+            <li><a href="/woocommerce-developer/">WooCommerce Stores</a></li>
+            <li><a href="/website-for-startups/">Startups</a></li>
+            <li><a href="/website-for-schools-and-coaching/">Schools &amp; Coaching</a></li>
+            <li><a href="/solutions/">All Industries &amp; Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Get in touch</h3>
+          <ul class="footer-contact">
+            <li><a href="tel:+917417049145">+91 74170 49145</a></li>
+            <li><a href="mailto:sameergpt9719@gmail.com">sameergpt9719@gmail.com</a></li>
+            <li><a href="https://wa.me/917417049145" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+            <li><span>India · Working worldwide</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Sameer Gupta · samverse.space. All rights reserved. · <a href="/privacy-policy/">Privacy Policy</a></p>
+        <a href="#top" class="to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20saw%20your%20website%20and%20have%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+    <span>Chat now</span>
+  </a>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

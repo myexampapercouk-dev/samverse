@@ -234,6 +234,8 @@
 <p>Many hosts run a server firewall, often ModSecurity, that inspects requests. Occasionally it mistakes an image upload for an attack, perhaps because of the file name or data hidden inside the photo. Security plugins and CDN firewalls can do the same.</p>
 <p>To confirm it, open your browser's developer tools (F12), go to the Network tab and upload again. Find the request to <code>async-upload.php</code>: a 403, 406 or 500 status points to a block or server error. Your hosting error or firewall log may show a rule ID; send it to your host and ask them to adjust that one rule for your site, rather than switching the firewall off. Ignore old forum advice to disable security filtering in .htaccess; on modern servers it usually does nothing or causes a 500 error.</p>
 
+<p>The same firewall and security rules can also block the media library's background requests, leaving the grid stuck on a spinner even when uploads work; see <a href="/blog/wordpress-media-library-not-loading-fix/">how to fix a WordPress media library that won't load</a>.</p>
+
 <h2 id="check-7-plugins-and-themes">Check 7: Plugins and themes</h2>
 <p>Some plugins do extra work on every upload:</p>
 <ul>

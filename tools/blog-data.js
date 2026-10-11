@@ -7134,6 +7134,8 @@ wp plugin verify-checksums --all</code></pre>
 <h2>3. Simple questions or invisible challenges</h2>
 <p>A basic question (like a simple sum) or an invisible challenge service stops more determined bots. Prefer options that don't make people solve frustrating puzzles, especially on mobile.</p>
 
+<p>If you use Google reCAPTCHA and see "Invalid domain for site key", a missing badge or forms that won't send, work through <a href="/blog/recaptcha-not-working-wordpress/">how to fix reCAPTCHA on WordPress</a>.</p>
+
 <h2>4. Validation</h2>
 <ul>
   <li>Require valid phone number and email formats</li>
@@ -23271,6 +23273,8 @@ Template: astra
   <li><strong>Blocked by robots.txt:</strong> Google isn't allowed to crawl the URL. Fine for admin and cart URLs, but check no important folder is blocked. Robots.txt controls crawling, not indexing, so use noindex to keep a page out of results; see <a href="/blog/robots-txt-explained/">robots.txt explained</a>.</li>
   <li><strong>Page with redirect:</strong> the URL redirects somewhere else. Normal after a redesign or URL change; make sure your sitemap and internal links point to the final URLs, not the old ones.</li>
 </ul>
+
+<p>Seeing "Indexed, though blocked by robots.txt", or important pages listed under "Blocked by robots.txt"? See <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">how to fix both robots.txt statuses and when to use noindex instead</a>.</p>
 
 <h2>Errors that need fixing quickly</h2>
 <ul>
@@ -41699,6 +41703,8 @@ wp user reset-password &lt;username&gt;</code></pre>
 <p>Many hosts run a server firewall, often ModSecurity, that inspects requests. Occasionally it mistakes an image upload for an attack, perhaps because of the file name or data hidden inside the photo. Security plugins and CDN firewalls can do the same.</p>
 <p>To confirm it, open your browser's developer tools (F12), go to the Network tab and upload again. Find the request to <code>async-upload.php</code>: a 403, 406 or 500 status points to a block or server error. Your hosting error or firewall log may show a rule ID; send it to your host and ask them to adjust that one rule for your site, rather than switching the firewall off. Ignore old forum advice to disable security filtering in .htaccess; on modern servers it usually does nothing or causes a 500 error.</p>
 
+<p>The same firewall and security rules can also block the media library's background requests, leaving the grid stuck on a spinner even when uploads work; see <a href="/blog/wordpress-media-library-not-loading-fix/">how to fix a WordPress media library that won't load</a>.</p>
+
 <h2>Check 7: Plugins and themes</h2>
 <p>Some plugins do extra work on every upload:</p>
 <ul>
@@ -43259,6 +43265,230 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>For the full routine, see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>, and for which updates to automate, <a href="/blog/wordpress-auto-updates/">WordPress auto-updates explained</a>.</p>
 
 <p>Tired of updates failing or breaking things? I handle WordPress updates, backups and fixes like these every month as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-media-library-not-loading-fix',
+    seoTitle: 'WordPress Media Library Not Loading? Causes and Fixes',
+    title: 'WordPress Media Library Not Loading? Fixing Spinners, Grey Boxes and Missing Images',
+    description: 'Fix a WordPress media library that spins forever, shows an empty grid, grey boxes or broken images after a move: conflicts, limits, URLs, permissions and CDNs.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-migration'],
+    body: `
+<p>You open Media → Library and get a spinner that never stops. Or the grid is empty, every thumbnail is a grey box, or your pages show broken images after a move to new hosting. These are different faults, so first work out which one you have. If the problem is uploading new files and seeing "HTTP error", see <a href="/blog/wordpress-http-error-image-upload-fix/">how to fix the HTTP error when uploading images</a>.</p>
+
+<h2>Match the symptom to the likely cause</h2>
+<table>
+<thead><tr><th>What you see</th><th>Usually points to</th></tr></thead>
+<tbody>
+<tr><td>Grid view spins forever or stays empty</td><td>A JavaScript error or a failed background (admin-ajax) request</td></tr>
+<tr><td>Grid fails but list view shows your files</td><td>A plugin or theme conflict, or PHP output breaking the response</td></tr>
+<tr><td>Both views are slow or time out</td><td>Memory or PHP limits, or a very large library on modest hosting</td></tr>
+<tr><td>Thumbnails show as grey boxes or broken icons</td><td>Missing resized files, wrong URLs, permissions or a CDN problem</td></tr>
+<tr><td>Images missing after a migration</td><td>Old URLs or upload paths in the database, or files that were never copied</td></tr>
+</tbody>
+</table>
+<p>Start with the dull checks: a hard reload (Ctrl+F5), a private window with browser extensions off, and logging out and back in. Ad blockers occasionally block admin scripts.</p>
+
+<h2>Grid view vs list view: the quickest test</h2>
+<p>The grid view is built with JavaScript and fetches your files in the background through admin-ajax.php. The list view is an ordinary page generated by PHP. Switch with the list icon at the top of the library, or add <code>?mode=list</code> to the upload.php address.</p>
+<ul>
+<li><strong>List view works, grid doesn't:</strong> your files and database are fine. Something is breaking the JavaScript or the background request.</li>
+<li><strong>Both look empty:</strong> check for a date or type filter left selected, or a media folder plugin showing one folder. If it really is empty, the attachment records may be missing from the database (see the migration section).</li>
+<li><strong>Both are slow or fail:</strong> look at memory, server limits and hosting.</li>
+</ul>
+
+<h2>JavaScript conflicts and admin-ajax errors</h2>
+<p>Open the grid view, press F12 and look at two tabs in the developer tools:</p>
+<ul>
+<li><strong>Console:</strong> red errors naming a plugin or theme file are a strong clue. One broken admin script can stop the media library's own scripts.</li>
+<li><strong>Network:</strong> reload and find the admin-ajax.php request whose payload includes <code>query-attachments</code>. Check its status and response.</li>
+</ul>
+<p>A healthy response is clean data listing your files. A 403 suggests a security plugin, firewall or CDN rule blocking the request. A 500 points to a PHP error, so check the error log. A response starting with PHP warnings or stray HTML means something printed output where the library expected clean data, often because error display is on. On a live site, keep <code>WP_DEBUG_DISPLAY</code> off and log errors to a file.</p>
+<p>To find the culprit, use the Health Check &amp; Troubleshooting plugin to disable plugins and switch theme for your login only, or work on a staging copy, then reactivate things one at a time. Media folder, gallery, page builder and admin-customisation plugins are frequent suspects. The full method is in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find and fix plugin conflicts</a>.</p>
+
+<h2>Memory, PHP limits and large libraries</h2>
+<p>If the library is slow, times out or fails only on sites with thousands of images, the server may be running out of memory or time. Tools → Site Health → Info shows the PHP memory limit, WordPress memory limit and maximum execution time. An "Allowed memory size exhausted" message in the error log confirms it; see <a href="/blog/wordpress-memory-limit-errors/">fixing memory limit errors in WordPress</a>. If raising limits only helps for a day or two, the hosting plan may be too small for the site.</p>
+
+<h2>Broken images or grey boxes after a migration</h2>
+<p>Open a broken image in a new tab and look at its address:</p>
+<ul>
+<li><strong>It shows your old domain, or http instead of https:</strong> the database still holds old URLs. A search-replace from the old address to the new one usually fixes it. Use a tool that handles serialised data, such as WP-CLI's <code>wp search-replace</code> or a well-maintained plugin, take a full backup first and do a dry run. A plain find-and-replace on an SQL export can corrupt serialised settings.</li>
+<li><strong>The address is right but returns a 404:</strong> the files aren't on the server. The uploads folder may not have been copied, or only the originals were.</li>
+<li><strong>It returns a 403:</strong> usually permissions, ownership or hotlink protection. Files normally use 644 and directories 755, owned by the account the site runs as; see <a href="/blog/wordpress-file-permissions/">WordPress file permissions explained</a>.</li>
+</ul>
+<p>Then check Settings → Media. If you see "Store uploads in this folder" or "Full URL path to files", a custom upload path came over from the old server; clearing those fields usually restores the default wp-content/uploads. A custom <code>UPLOADS</code> line in wp-config.php can cause the same problem.</p>
+<p>Also remember the library lists attachment records in the database, not files in a folder. Images copied into wp-content/uploads by FTP won't appear until they're imported, for example with WP-CLI's <code>wp media import</code>.</p>
+
+<h2>CDN and media offload plugins</h2>
+<p>Plugins that rewrite image addresses to a CDN, or move uploads to cloud storage, add more things that can break:</p>
+<ul>
+<li>A CDN address that no longer exists, or isn't set up for a new domain</li>
+<li>Expired storage credentials or a deleted bucket</li>
+<li>An offload plugin that removed local copies, then was deactivated, leaving WordPress pointing at missing files</li>
+<li>CDN hotlink protection or firewall rules blocking your own admin</li>
+</ul>
+<p>Don't deactivate an offload plugin as a quick test. Check whether local copies exist and use the plugin's own option to bring files back first.</p>
+
+<h2>Regenerate missing thumbnails</h2>
+<p>WordPress creates resized copies of every upload: thumbnail, medium, large and any sizes your theme or plugins add. Grey boxes, or blurry or oddly cropped images, can mean those copies are missing or don't match the current theme, typically after a theme change, new sizes in Settings → Media, or a migration that copied only the originals.</p>
+<p>A thumbnail regeneration plugin, or WP-CLI's <code>wp media regenerate</code> (add <code>--only-missing</code> to skip existing sizes), rebuilds them. It's heavy work, so take a backup and run it at a quiet time, in batches for large libraries. If the originals are missing, restore them from a backup.</p>
+
+<p>Media library still stuck, or images broken after a move? I track down faults like these as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+`,
+  },
+  {
+    slug: 'indexed-though-blocked-by-robots-txt-fix',
+    seoTitle: '"Indexed, Though Blocked by robots.txt": How to Fix It',
+    title: '"Indexed, Though Blocked by robots.txt" and "Blocked by robots.txt": What They Mean and How to Fix Them',
+    description: 'What Search Console\'s "Indexed, though blocked by robots.txt" and "Blocked by robots.txt" mean, when to use noindex instead, and how to fix and validate them.',
+    date: '2026-10-11',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-maintenance'],
+    body: `
+<p>Two statuses in Search Console's Pages report cause a lot of confusion: "Blocked by robots.txt" and "Indexed, though blocked by robots.txt". The second sounds like a contradiction. How can Google index a page it isn't allowed to visit? The answer explains both statuses, and tells you whether you need to fix anything. If robots.txt itself is new to you, start with <a href="/blog/robots-txt-explained/">robots.txt explained</a>; for the other statuses in the report, see <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a>.</p>
+
+<h2>What the two statuses mean</h2>
+<ul>
+<li><strong>Blocked by robots.txt:</strong> Google found the URL, your robots.txt told it not to crawl the page, and the URL isn't indexed. That's correct for admin, cart and account URLs. It's a problem when service pages, products or blog posts appear in the list.</li>
+<li><strong>Indexed, though blocked by robots.txt:</strong> Google still isn't allowed to crawl the page, but it has added the URL to its index anyway, usually because links point to it. Because Google can't read the page, the search result often appears with no proper description. Search Console treats this as a warning on indexed pages rather than an error.</li>
+</ul>
+
+<h2>Robots.txt blocks crawling, not indexing</h2>
+<p>Robots.txt asks crawlers not to fetch certain URLs. It doesn't tell Google to keep those URLs out of search results. If other pages link to a blocked URL, Google can index the address based on those links alone.</p>
+<p>The key detail: Google only sees a noindex tag when it crawls the page. Block a page in robots.txt and add noindex, and the noindex is never read. Google also doesn't support noindex rules written inside robots.txt. So choose the tool by what you actually want:</p>
+<table>
+<thead><tr><th>Goal</th><th>Use</th></tr></thead>
+<tbody>
+<tr><td>Keep a page out of search results</td><td>A noindex meta tag (or an X-Robots-Tag header for PDFs), with crawling allowed</td></tr>
+<tr><td>Remove a page for good</td><td>Delete it so it returns 404 or 410, or 301 redirect it to the closest relevant page</td></tr>
+<tr><td>Keep content private</td><td>A password or login; robots.txt is public and secures nothing</td></tr>
+<tr><td>Stop Google wasting crawling on endless low-value URLs</td><td>A robots.txt Disallow rule</td></tr>
+<tr><td>Hide a URL from results urgently</td><td>Search Console's Removals tool, which is temporary, plus one of the permanent fixes above</td></tr>
+</tbody>
+</table>
+
+<h2>First decide: should these URLs be in Google?</h2>
+<p>Click each status and look at the example URLs.</p>
+<ul>
+<li><strong>Important pages in either status:</strong> remove the rule that blocks them. This is the urgent case.</li>
+<li><strong>Low-value URLs under "Blocked by robots.txt":</strong> usually fine. Leave them.</li>
+<li><strong>Low-value URLs under "Indexed, though blocked":</strong> often harmless, because these results rarely show for real searches. If you want them gone, allow crawling, add noindex and stop linking to them. Once URL Inspection shows they've dropped out, you can decide whether to block them again.</li>
+</ul>
+
+<h2>Common WordPress causes</h2>
+<ul>
+<li><strong>An SEO plugin's robots.txt editor:</strong> rules added there, sometimes from old advice or a copied template. Depending on the plugin, edits change WordPress's virtual file or write a real one.</li>
+<li><strong>A physical file overriding the virtual one:</strong> WordPress only generates robots.txt when no real file exists. If a robots.txt sits in the site's root folder, the server sends that instead, and changes made in WordPress may never appear. Some hosts and CDNs can also add rules of their own, for example for AI crawlers, so always check the live file.</li>
+<li><strong>Staging rules left in:</strong> a <code>Disallow: /</code> written for a staging copy and carried over at launch. Staging sites are better protected with a password.</li>
+<li><strong>Blocking /wp-content/, /wp-includes/ or CSS and JavaScript:</strong> old advice that stops Google rendering pages properly. Blocking /wp-content/ also blocks your images in /wp-content/uploads/ from image search.</li>
+<li><strong>Parameter and filter URLs:</strong> rules for sort orders, internal search (<code>?s=</code>), add-to-cart links or WooCommerce filter URLs. Sensible in moderation, but a broad rule such as <code>Disallow: /*?</code> blocks every URL containing a question mark, including every post on a site still using "Plain" permalinks. URLs that were indexed before a rule was added often move to "Indexed, though blocked". For planning filters, see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a>.</li>
+</ul>
+<p>Google supports the <code>*</code> and <code>$</code> wildcards, paths are case-sensitive, and when an Allow and a Disallow rule both match, the more specific (longer) rule wins. A simple WordPress file often needs little more than this:</p>
+<pre><code>User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://www.example.com/sitemap.xml</code></pre>
+<p>Use your own sitemap address, which depends on your SEO plugin.</p>
+
+<h2>Testing with Search Console</h2>
+<p>Tools change, so treat these menu names as a guide rather than gospel:</p>
+<ul>
+<li><strong>Open the live file:</strong> visit yourdomain.com/robots.txt in a private window. Each host has its own file, so check the version your site actually uses, with or without www.</li>
+<li><strong>Robots.txt report:</strong> in Settings, the robots.txt report shows the files Google found, when it last fetched them and any problems. It also lets you ask Google to recrawl the file after an urgent fix. The older robots.txt Tester has been retired.</li>
+<li><strong>URL Inspection:</strong> inspect an affected URL. The crawl details show whether robots.txt blocked it, and Test live URL checks against your current file.</li>
+</ul>
+<p>Google generally caches robots.txt for up to a day, so a fix may not register instantly. If robots.txt returns a server error, Google may slow or pause crawling of the whole site; a 404 is simply treated as having no rules.</p>
+
+<h2>Fix it and validate</h2>
+<ol>
+<li>Copy your current robots.txt somewhere safe before editing.</li>
+<li>Edit the rule in one place only: the physical file or your SEO plugin, not both.</li>
+<li>Clear your site and CDN caches, then reload the live file to confirm the change.</li>
+<li>In the robots.txt report, request a recrawl if the fix is urgent.</li>
+<li>Run an important URL through URL Inspection, use Test live URL, then request indexing.</li>
+<li>Open the status in the Pages report and click Validate fix where it's offered. Validation can take days or weeks.</li>
+</ol>
+<p>If you chose the noindex route, expect URLs to move to "Excluded by 'noindex' tag" over time. Don't add the block back until they have.</p>
+
+<p>Not sure which rules your site needs, or why important pages keep showing up as blocked? I review robots.txt, indexing and Search Console reports as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'recaptcha-not-working-wordpress',
+    seoTitle: 'reCAPTCHA Not Working on WordPress? Causes and Fixes',
+    title: 'reCAPTCHA Not Working on WordPress? Fixing "Invalid Domain", Key Type Errors and Forms That Won\'t Send',
+    description: 'Fix Google reCAPTCHA on WordPress forms: invalid domain or key type errors, a missing badge, failed submissions, v3 score settings and spam still getting through.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-website-development'],
+    body: `
+<p>Google reCAPTCHA is meant to stop bots quietly. When it's set up wrongly, it does the opposite: a red "ERROR for site owner" box appears on your contact form, the form refuses to send, or real enquiries are rejected while spam carries on. Here's how to find the cause. Google has been moving reCAPTCHA keys into Google Cloud, so screens may differ from older tutorials.</p>
+
+<h2>Read the error first</h2>
+<table>
+<thead><tr><th>What you see</th><th>Usual cause</th></tr></thead>
+<tbody>
+<tr><td>"ERROR for site owner: Invalid domain for site key"</td><td>Your domain isn't on the key's list of allowed domains</td></tr>
+<tr><td>"ERROR for site owner: Invalid key type"</td><td>The key's type doesn't match the integration, such as a v3 key in a v2 widget</td></tr>
+<tr><td>"ERROR for site owner: Invalid site key"</td><td>A typo, a stray space, the secret key pasted into the site key field, or a deleted key</td></tr>
+<tr><td>"Localhost is not in the list of supported domains"</td><td>Testing on a local or staging copy with the live key</td></tr>
+<tr><td>No checkbox or badge, and no error</td><td>The script isn't loading: blocked, delayed or held back by a consent tool</td></tr>
+<tr><td>The form spins, fails or says the message looks like spam</td><td>The server-side check is failing: wrong secret key, low v3 score, expired token or no connection to Google</td></tr>
+</tbody>
+</table>
+
+<h2>v2 and v3 keys can't be mixed</h2>
+<p>reCAPTCHA comes in different types, and each key is created for one of them:</p>
+<ul>
+<li><strong>v2 "I'm not a robot":</strong> the familiar checkbox, sometimes followed by an image challenge.</li>
+<li><strong>v2 Invisible:</strong> no checkbox; a badge appears and a challenge shows only when traffic looks suspicious.</li>
+<li><strong>v3:</strong> never shows a challenge. It gives each visit a score from 0.0 (likely a bot) to 1.0 (likely a person), and your form plugin decides what to do with it.</li>
+</ul>
+<p>The type is chosen when the key is created, and a v2 key won't work with a v3 integration or the other way round. Check which type your form plugin expects; some built-in integrations support only one. If the key doesn't match, create a new key of the right type rather than forcing it. Each key also comes as a pair: the site key goes in the page, the secret key is used by your server, and both must come from the same key.</p>
+<p>Load reCAPTCHA once per page. If a form plugin, a separate reCAPTCHA plugin and a security plugin each add their own script, possibly with different versions or keys, they clash and produce key type errors or widgets that never appear. Pick one integration and switch reCAPTCHA off in the others.</p>
+
+<h2>Check the domains in the admin console</h2>
+<p>Sign in to the reCAPTCHA admin console with the Google account that created the key. Often that's a former developer's or agency's account; if nobody can get in, create new keys under an account the business owns and update them in your plugin.</p>
+<ul>
+<li>Enter domain names only, such as example.com, without https:// or paths. A registered domain generally covers its subdomains, including www.</li>
+<li>Add the new domain after a rebrand or domain change; the old key won't follow you.</li>
+<li>Use a separate key for staging, or add the staging domain deliberately, and remember to tidy it up later.</li>
+<li>Domain changes can take a little while to apply, so wait before deciding they didn't work.</li>
+</ul>
+
+<h2>Badge missing or form not loading: caching, script delay and consent</h2>
+<p>Speed and privacy tools are a common cause of reCAPTCHA failing on a site that worked before:</p>
+<ul>
+<li><strong>Delay or defer JavaScript:</strong> settings that hold scripts until the visitor scrolls or taps can stop the checkbox appearing, or leave the v3 token missing when the form is sent. Exclude scripts containing "recaptcha" and your form plugin's scripts from delay, defer and combine settings.</li>
+<li><strong>Lazy-loading iframes:</strong> the checkbox and challenge load inside iframes, which some lazy-loading features rewrite. Exclude them.</li>
+<li><strong>Page caching:</strong> reCAPTCHA tokens are valid for only about two minutes, so a token created when the page loads can be stale by the time a visitor sends a long message. Good integrations request a fresh token on submit. Cached pages can also carry expired security tokens from the form plugin; see <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> for exclusions.</li>
+<li><strong>Cookie consent tools:</strong> if reCAPTCHA is blocked until visitors accept cookies, anyone who declines may be unable to send the form. How to categorise it is partly a legal question, so check current privacy rules with your lawyer.</li>
+<li><strong>Security headers:</strong> a Content Security Policy must allow the Google domains reCAPTCHA uses.</li>
+</ul>
+<p>A badge can also be hidden with CSS. Google's FAQ allows that only if you show its required notice and links near the form; check the current wording. Then clear every cache, including the CDN, and test in a private window.</p>
+
+<h2>Forms failing or spam getting through: v3 scores</h2>
+<p>With v3, your form plugin rejects submissions below a threshold. Google's documentation suggests 0.5 as a starting point. Set it too high and visitors on VPNs, privacy-focused browsers or shared office networks may be rejected with a vague error, and you'll never hear about the enquiry. Set it too low and bots get through. Google also notes that scores improve as reCAPTCHA sees real traffic on your site, so results on staging or just after setup may differ.</p>
+<p>If spam still arrives, check that:</p>
+<ul>
+<li>The secret key is entered and the plugin verifies every submission on the server; a script on the page alone protects nothing</li>
+<li>Your server can reach Google to verify, since some hosts block outgoing connections; the error log will show failed requests</li>
+<li>Every form is covered, including comments, registration, newsletter sign-ups and WooCommerce forms</li>
+</ul>
+<p>No CAPTCHA stops people paid to fill in forms by hand. For layered defences, see <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a>.</p>
+
+<h2>Alternatives: Turnstile, honeypots and layers</h2>
+<ul>
+<li><strong>Cloudflare Turnstile:</strong> a low-friction challenge that can be used even if your site doesn't run through Cloudflare. Many form plugins support it directly or through an add-on; check current plans and terms.</li>
+<li><strong>Honeypot fields and time checks:</strong> invisible to visitors and verified on the server. They stop many simple bots and suit low-traffic forms well.</li>
+<li><strong>Spam-filtering services:</strong> check the content of submissions and keep a spam folder you can review.</li>
+</ul>
+<p>Whatever you use, mention it in your privacy policy, then send a test enquiry on desktop and mobile after every change. A form that silently rejects real people costs more than spam; <a href="/blog/contact-form-not-getting-enquiries/">why a contact form stops getting enquiries</a> covers the other checks.</p>
+
+<p>Forms still failing, or tired of fighting spam? I set up and test form protection, email delivery and plugin updates as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
 ];
