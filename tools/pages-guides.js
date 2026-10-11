@@ -1406,4 +1406,441 @@ module.exports = {
 </ul>
 <p>Share your Figma link for a free review and a fixed quote.</p>
 `,
+  'hotel-website-design': `
+<h2>Building a hotel, resort or homestay website, in detail</h2>
+<p>Guests often find a property on an OTA or Google Maps, then search its name to check photos, compare rates and look for a way to book direct. This is how I plan and build websites for hotels, resorts, homestays and farm stays in India: room pages, the booking set-up, local search and the policies guests read before paying. <a href="/blog/hotel-website-direct-bookings/">How hotels and homestays get more direct bookings</a> covers the wider strategy.</p>
+<h2>A hotel website project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send your current site or OTA listing, your room types and the tools you already use, such as a channel manager or PMS.</li>
+<li><strong>Booking decision.</strong> Enquiry form and WhatsApp, a booking plugin, or your channel manager's booking engine, settled before design.</li>
+<li><strong>Content gathering.</strong> Room details, photos, policies, amenities, directions and the places nearby you genuinely recommend.</li>
+<li><strong>Build on staging.</strong> Room templates, the booking flow, galleries and a getting-here page at a private address.</li>
+<li><strong>Testing.</strong> Test bookings or enquiries for each room type, payment links checked, and every page tested on a phone over mobile data, since many guests browse while travelling.</li>
+<li><strong>Launch and walkthrough.</strong> Search Console connected, your Google Business Profile linked, and a call showing your team how to change rates, offers and photos.</li>
+</ol>
+<h2>Enquiry form, booking engine or channel manager?</h2>
+<p>These get confused, and the right mix depends on how many rooms you sell and on how many OTAs.</p>
+<table>
+<thead><tr><th></th><th>Enquiry form and WhatsApp</th><th>Booking plugin on the website</th><th>Booking engine with a channel manager</th></tr></thead>
+<tbody>
+<tr><td>Best for</td><td>Homestays and small properties that confirm each booking personally</td><td>Small hotels with one or two OTA listings</td><td>Hotels and resorts selling the same rooms on several OTAs</td></tr>
+<tr><td>Guest experience</td><td>Sends a request, then gets availability and a payment link</td><td>Picks dates, sees availability, pays online</td><td>Picks dates, sees live availability, pays online</td></tr>
+<tr><td>Double-booking risk</td><td>Low, because you check every request</td><td>Moderate if OTA calendars sync by iCal, which is not instant</td><td>Lowest, when rates and inventory are only changed in the channel manager</td></tr>
+<tr><td>Running cost</td><td>Nothing beyond the website</td><td>Sometimes a plugin licence</td><td>Subscription or per-booking fees to the provider</td></tr>
+</tbody>
+</table>
+<p>If you already pay for a channel manager, its booking engine usually plugs into the website, and I would not build a second system beside it. <a href="/blog/hotel-booking-engine-channel-manager/">Booking engine and channel manager explained</a> follows one booking through each system and covers the mix of direct and OTA bookings.</p>
+<h2>Room pages that answer what guests message about</h2>
+<p>Each room type gets its own page, answering the same questions in the same order:</p>
+<ul>
+<li>Photos of that actual room, including the bathroom and the view, compressed for mobile.</li>
+<li>Bed type, maximum occupancy, extra bed and child policy.</li>
+<li>What is included, such as breakfast, Wi-Fi, parking and air conditioning, and what costs extra.</li>
+<li>Rates or a starting rate, stating clearly whether taxes are included.</li>
+<li>A booking or enquiry button that carries the room name into the form or WhatsApp message.</li>
+</ul>
+<p>A separate policies page covers check-in and check-out times, ID requirements (including passport and visa for foreign guests), cancellation and refund terms, pets and house rules. Guests read it closely before paying an advance, so write it plainly. For smaller properties, <a href="/blog/website-for-homestays-bnbs/">websites for homestays and bed and breakfasts</a> covers what changes.</p>
+<h2>Advances, payments and WhatsApp booking</h2>
+<p>Many Indian guests prefer to message before they book. A short form for dates and guests can open WhatsApp with those details and the room name filled in, so your reply starts with availability instead of questions. To confirm, you send a payment link for the advance through a gateway such as Razorpay, or the booking plugin takes UPI or card payment on the site. Either way, the confirmation repeats the dates, room, amount paid, balance due and cancellation terms. <a href="/blog/accept-online-payments-wordpress-india/">Accepting online payments in India</a> compares the options.</p>
+<h3>A reason to book direct</h3>
+<p>Perks shown beside the booking button, such as breakfast included, early check-in when available or an airport pickup, persuade more than a vague "best rate" line. If you are unsure what your OTA agreements say about pricing, perks sidestep the question.</p>
+<h2>Getting here, the local area and Google Maps</h2>
+<p>Travellers want to know how to reach you before they book, especially in hill stations, beach towns and pilgrimage centres. A getting-here page lists the nearest airport, railway station and bus stand, the condition of the last stretch of road, and parking. <a href="/work/our-temples/">Our Temples</a>, a temple directory I built, gives every temple page a travel block covering the nearest airport, bus, train, taxi and parking, and the same layout suits a hotel. A short guide to places you genuinely recommend, written from experience, helps guests plan and is the kind of page that can appear for searches about your area.</p>
+<p>Your Google Business Profile matters as much as the site. Choose the closest category Google offers, such as hotel, resort hotel or guest house, add real photos, amenities and check-in times, and link it to your booking page. Google's free booking links come through a booking engine or channel manager partner that connects to Google, not from the website itself, so ask your provider. On the site, Hotel, Resort or BedAndBreakfast schema confirms your address, check-in and check-out times and amenities. Reviews come from real guests you ask after their stay. See the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+<h2>Registration and other details to show</h2>
+<ul>
+<li><strong>State registration,</strong> if your state tourism department has registered or classified the property; many states run their own homestay or bed and breakfast schemes.</li>
+<li><strong>Tariffs with taxes stated,</strong> so the amount at checkout matches the room page.</li>
+<li><strong>No ID uploads on public forms.</strong> Collect ID documents at check-in or through your PMS, not through a website enquiry form.</li>
+<li><strong>A privacy notice and consent line</strong> on booking forms, as India's DPDP Act expects.</li>
+</ul>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every hotel site includes. These are separate or come from you:</p>
+<ul>
+<li><strong>Booking engine, channel manager and PMS subscriptions.</strong> You pay the provider; I connect the booking engine to the site.</li>
+<li><strong>Managing OTA listings, rates and inventory.</strong></li>
+<li><strong>Photography and video.</strong> I can suggest what to shoot room by room.</li>
+<li><strong>Running ads,</strong> including paid hotel ads on Google.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>Usually 1 to 3 weeks, depending on the number of rooms, pages and booking features. Connecting a booking engine depends on your provider's set-up time, and gathering good photos and final policies often takes longer than the build.</p>
+<h2>Who it is for</h2>
+<p>Independent hotels, resorts, homestays, <a href="/blog/website-for-farm-stays-agritourism/">farm stays</a>, guest houses and boutique properties, especially those relying almost entirely on OTAs or whose website shows outdated rooms and rates.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Room types with occupancy, bed configuration, inclusions and rates or starting rates.</li>
+<li>Your policies: check-in and check-out, cancellation, children, pets and ID.</li>
+<li>Real photos of every room, common areas and the view, plus directions and nearby places.</li>
+<li>Logins or contacts for your booking engine, channel manager or PMS, and your Google Business Profile.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A website on hosting in your name, with rooms, rates and offers your team can update.</li>
+<li>A booking or enquiry flow tested for every room type, with payments checked.</li>
+<li>Search Console connected, your Business Profile linked, a walkthrough and a full backup.</li>
+</ul>
+<p>Send me your current website or OTA listing for a free review and a fixed quote.</p>
+`,
+  'real-estate-website-design': `
+<h2>Building a real estate website, in detail</h2>
+<p>Property buyers shortlist projects online long before they visit a site, and they check the details: the RERA registration, the carpet area, the builder's completed projects and how far the site really is from the highway or metro. This is how I plan and build websites for builders, developers and property agents in India: project pages, RERA details, lead capture, ad landing pages and tracking. <a href="/blog/real-estate-website-must-have-features/">Real estate website must-haves</a> lists the features in brief.</p>
+<h2>A real estate website project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send your current site, the projects you want to feature and whether you run Google or Meta ads.</li>
+<li><strong>Structure.</strong> We decide how projects are organised, by city, status or type, and whether a launch needs its own microsite; <a href="/blog/real-estate-project-microsite/">project microsites</a> explains the trade-off.</li>
+<li><strong>Content and compliance details.</strong> RERA numbers, approved plans, carpet areas, amenities, location details and brochures, all from your team.</li>
+<li><strong>Build on staging.</strong> A project template, enquiry and site-visit forms, gated brochure downloads and WhatsApp, at a private address.</li>
+<li><strong>Tracking and testing.</strong> Test enquiries for every project, conversion tracking for ads, and each page checked on phones over mobile data.</li>
+<li><strong>Launch and walkthrough.</strong> Search Console connected, and a call showing your team how to add a project, update its status and swap a price sheet.</li>
+</ol>
+<h2>Property portal listing or your own website?</h2>
+<table>
+<thead><tr><th></th><th>Portals such as 99acres, MagicBricks or Housing.com</th><th>Your own website</th></tr></thead>
+<tbody>
+<tr><td>Who sees you</td><td>Buyers browsing the portal, next to competing projects</td><td>Buyers searching your brand or project name, and visitors from your ads</td></tr>
+<tr><td>Leads</td><td>Buyers usually enquire with several sellers at once</td><td>Come only to you</td></tr>
+<tr><td>Presentation</td><td>A fixed template set by the portal</td><td>The full project story, walkthrough video, floor plans and location</td></tr>
+<tr><td>Ad campaigns</td><td>The portal's own paid packages</td><td>Your Google and Meta ads, with leads tracked by campaign</td></tr>
+<tr><td>Cost</td><td>Listing or subscription packages</td><td>The build, then hosting and upkeep</td></tr>
+</tbody>
+</table>
+<p>Portals are useful for reach, resale and rentals. For a new project, your own site is where ad clicks, brochure requests and site-visit bookings should land.</p>
+<h2>Project pages buyers trust</h2>
+<h3>What every project page shows</h3>
+<ul>
+<li>Configurations, such as 1, 2 or 3 BHK, plots or shops, with carpet area as defined under RERA, not only super built-up area.</li>
+<li>Floor and unit plans as images that zoom on a phone, with a PDF for printing.</li>
+<li>Amenities, specifications and construction status, with dated site photos.</li>
+<li>Location: a map, distances to schools, hospitals and transport that you have checked, and directions to the site office.</li>
+<li>A price or starting price with what it includes, if you choose to publish it.</li>
+</ul>
+<h3>RERA details, displayed properly</h3>
+<p>Under the Real Estate (Regulation and Development) Act, advertisements for a registered project must show its RERA registration number and the address of the state RERA website, and a project page on your website is generally treated as advertising. I put both near the top of each project page, and agents' pages carry the agent's registration number. Some authorities add their own requirements, such as MahaRERA's QR code on advertisements, so check your state's current rules. A project that needs registration should not be marketed before it is registered, which rules out "pre-launch" pages for it. Renders are labelled as artist's impressions.</p>
+<h2>Lead capture: site visits, brochures and WhatsApp</h2>
+<ul>
+<li><strong>Site-visit booking</strong> with a preferred date and time, so your sales team calls to confirm a slot rather than asking "when can you come?".</li>
+<li><strong>Gated brochure downloads</strong> that ask only for a name, phone and email, with the brochure sent to the email address given.</li>
+<li><strong>A short enquiry form</strong> with configuration and budget dropdowns. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, an interior design studio I built a site for, asks for project stage, budget and time frame, so the team knows what each lead needs before calling; the same idea works for property buyers.</li>
+<li><strong>WhatsApp and tap-to-call</strong> on every page, with the project name pre-filled in the message.</li>
+</ul>
+<p>Each enquiry is emailed instantly and can also go to a Google Sheet or your CRM, with a consent line and privacy notice under the form. Property leads cool quickly, so the first call should happen the same day; <a href="/blog/respond-to-website-enquiries-fast/">responding to enquiries fast</a> covers alerts and auto-replies.</p>
+<h2>Landing pages, tracking and speed for ad campaigns</h2>
+<p>Builders often run Google and Meta ads around a launch. Each campaign should land on a page about that project alone, with a headline matching the ad, one form and no menu leading elsewhere; see <a href="/landing-page-design/">landing page design</a>. Form submissions, WhatsApp clicks and calls are tracked as conversions in GA4, Google Ads and Meta, so you can see which campaign brings site visits, not just clicks. <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a> explains the setup. Walkthrough videos are embedded from YouTube and load only when tapped, and renders are compressed, because a slow page wastes paid clicks on mobile data.</p>
+<h2>Local SEO and schema for builders and agents</h2>
+<p>Buyers search by locality and configuration, such as "2 BHK in Wakad" or "plots near Hinjewadi". A page for each project, and for agents a genuinely useful page for each locality you work in, matches those searches; copies with the area name swapped do not. <a href="/blog/local-landing-pages-without-doorway-pages/">Local landing pages without doorway pages</a> explains the difference. The business gets RealEstateAgent or Organization schema, project pages get breadcrumbs, and your Google Business Profile links to the site. Keep project status current, because a sold-out project still shown as available costs trust.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every real estate site includes. These are separate or come from you:</p>
+<ul>
+<li><strong>RERA details, approved plans, price sheets and legal disclaimers.</strong> They must come from you and your advisers so they are accurate.</li>
+<li><strong>3D renders, walkthrough videos and drone shoots.</strong></li>
+<li><strong>CRM software and running ad campaigns.</strong> Forms can feed the CRM you already use.</li>
+<li><strong>Managing portal listings.</strong></li>
+</ul>
+<h2>How long it takes</h2>
+<p>It depends on the number of projects and whether each needs its own microsite or landing pages, and I confirm the timeline with the fixed quote. A launch date is often the real deadline, so start once the registration number and approved plans are in hand.</p>
+<h2>Who it is for</h2>
+<p>Builders and developers with one or several projects, plotted developments, commercial projects, channel partners and property agents, and companies whose site still shows projects that sold out years ago.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Each project's RERA number, approved plans, configurations and carpet areas.</li>
+<li>Brochures, renders, site photos and any walkthrough video.</li>
+<li>Price sheets, or a decision to share prices on request.</li>
+<li>Who handles leads for each project, and access to your ad and analytics accounts.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A website on hosting in your name, with projects your team can add and update.</li>
+<li>Enquiry, site-visit and brochure forms tested, with conversion tracking in place.</li>
+<li>Search Console connected, a walkthrough and a full backup.</li>
+</ul>
+<p>Send me your current website or project brochure for a free review and a fixed quote.</p>
+`,
+  'website-for-lawyers-and-consultants': `
+<h2>Building a website for lawyers, CAs and consultants, in detail</h2>
+<p>People looking for an advocate, a chartered accountant or a consultant usually have a specific problem and want to know quickly whether you handle it, where you are and how to reach you. This is how I plan and build websites for law practices, CA firms and consultants in India: practice area pages, professional rules, consultation requests, articles and local search. <a href="/blog/website-for-lawyers-and-chartered-accountants/">What clients look for in lawyer and CA websites</a> covers the client's side.</p>
+<h2>A professional website project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send your current site or profile, your practice areas or services and the cities you work in.</li>
+<li><strong>Page plan.</strong> We list the practice areas or services that deserve their own page, and note what your professional rules allow you to say.</li>
+<li><strong>Content.</strong> Profiles with qualifications and enrolment or membership details, service descriptions and office details. You write or approve every professional statement.</li>
+<li><strong>Build on staging.</strong> Service templates, consultation forms, an articles section and the disclaimer, at a private address.</li>
+<li><strong>Testing.</strong> Test requests sent to confirm they reach the right partner, and every page checked on phones.</li>
+<li><strong>Launch and walkthrough.</strong> Search Console connected, your Google Business Profile linked, and a call showing your team how to publish an article.</li>
+</ol>
+<h2>Advocate, CA or consultant: what the website can say</h2>
+<p>Professional rules differ, and they shape the copy more than the design does.</p>
+<table>
+<thead><tr><th></th><th>Advocates and law firms</th><th>Chartered accountants</th><th>Tax, business and other consultants</th></tr></thead>
+<tbody>
+<tr><td>Rules to check</td><td>Bar Council of India rules on advertising and solicitation</td><td>ICAI's Code of Ethics and its guidance on members' websites</td><td>No single professional body, but rules against misleading claims still apply</td></tr>
+<tr><td>Typical content</td><td>Name, contact details, enrolment, qualifications and areas of practice, stated factually</td><td>Firm and partner details, qualifications and services, within ICAI guidance</td><td>Services, process, case studies and fees if you choose</td></tr>
+<tr><td>Testimonials and success claims</td><td>Leave them out</td><td>Check current ICAI guidance first</td><td>Fine if genuine and verifiable</td></tr>
+<tr><td>Disclaimer</td><td>Commonly shown before visitors enter</td><td>Useful on articles and updates</td><td>Useful on articles and updates</td></tr>
+</tbody>
+</table>
+<p>This is a starting point, not legal advice, so check the current version of your body's rules before launch. <a href="/blog/website-for-advocates-bar-council-rules/">What the Bar Council rules allow</a> covers advocates in more detail.</p>
+<h2>Practice area and service pages</h2>
+<p>A page for each area you handle, such as property disputes, matrimonial matters, GST registration and returns, income tax notices or company incorporation, does two jobs. It tells a visitor in plain language whether you handle their situation, and it gives Google a specific page for that search. Each page covers who it is for, the situations you commonly handle, how the process usually runs and the documents to keep ready. For advocates the tone stays factual, with no "best" or "top" and no promised outcomes.</p>
+<p><a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's</a> site, from another profession, is a good model of precision: it gives his degree, medical college, year and registration number, and is just as clear about what his programme does not replace. Professionals gain from the same honesty about scope, such as which courts or tribunals you appear before, or the kinds of matters you do not take on.</p>
+<h2>Consultation requests that respect confidentiality</h2>
+<ul>
+<li><strong>A short form:</strong> name, phone, city, a matter type dropdown and a brief outline, with a note asking visitors not to send confidential details before you have agreed to act.</li>
+<li><strong>No file uploads on public forms.</strong> Documents are shared later through a channel your office controls.</li>
+<li><strong>WhatsApp and tap-to-call</strong> on every page, with the first message pre-filled, as on the Dr. Sudhir Arora consultation page.</li>
+<li><strong>Calendar booking</strong> for paid consultations, if you already use a scheduling tool, embedded rather than rebuilt.</li>
+<li><strong>A consent line and privacy notice,</strong> because enquiries often contain personal details. <a href="/blog/dpdp-act-website-basics/">The DPDP Act and your website</a> explains the basics.</li>
+</ul>
+<h2>Articles and legal updates that stay current</h2>
+<p>Articles that explain a law, a deadline or a process in general terms are some of the most useful content a practice can publish, and they suit advocates when they stay educational. Each article carries a date, the author's name and a line saying it is not legal or tax advice. Old articles need revisiting when the law changes: posts citing IPC sections, for example, needed updating after the Bharatiya Nyaya Sanhita replaced the IPC in July 2024, and GST rates and due dates change often.</p>
+<p>For consultants selling to businesses, case studies work well where your rules allow them. <a href="/work/third-eye-social/">Third Eye Social</a>, an AI automation agency I built a site for, gives every case study the same order: outcomes first, then the challenge, the solution and the results. <a href="/blog/write-case-studies-business-website/">Writing case studies for your website</a> explains how.</p>
+<h2>Local SEO and schema for professionals</h2>
+<p>Clients search by need and place, such as "property lawyer in Pune", "GST consultant near me" or "CA for company registration", so page titles and headings use those words. Your Google Business Profile links to the site with the same name, address and phone, and each office gets its own page. LegalService, AccountingService or ProfessionalService schema confirms your details to Google. For advocates, I leave review widgets off the website unless you are satisfied your rules permit them. For search work after launch, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every professional site includes. These are separate or come from you:</p>
+<ul>
+<li><strong>Legal, tax and professional content.</strong> I structure and edit it, but the substance must come from you.</li>
+<li><strong>A compliance review</strong> of the wording against your professional body's rules.</li>
+<li><strong>Practice management software, client portals and e-signing tools.</strong> The site can link to them, not replace them.</li>
+<li><strong>Writing regular articles and running ads.</strong></li>
+</ul>
+<h2>How long it takes</h2>
+<p>Usually 1 to 2 weeks once your content and profile details are ready. Several partners or offices stretch it, and agreeing the wording among partners often takes longer than the build.</p>
+<h2>Who it is for</h2>
+<p>Advocates in independent practice, law firms, CA and company secretary firms, tax and GST consultants, management and compliance consultants, and <a href="/blog/website-for-civil-engineering-consultants/">civil and structural engineering consultants</a>, especially those whose only online presence is a directory listing.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Profiles with qualifications, enrolment or membership numbers and a professional photo.</li>
+<li>Your practice areas or services, with a few lines on each.</li>
+<li>Office addresses, hours, phone and WhatsApp numbers.</li>
+<li>Any articles you have written, and your reading of your body's current website rules.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A website on hosting in your name, with articles and updates your team can publish.</li>
+<li>Consultation forms tested to reach the right person, with your disclaimer and privacy notice in place.</li>
+<li>Search Console connected, a walkthrough and a full backup.</li>
+</ul>
+<p>Send me your current website or profile for a free review and a fixed quote.</p>
+`,
+  'website-for-restaurants': `
+<h2>Building a restaurant or cafe website, in detail</h2>
+<p>Most people choosing where to eat open Google Maps, look at the photos, then tap through to the menu. This is how I plan and build websites for restaurants, cafes, bakeries and cloud kitchens in India: the menu, table bookings, direct ordering, your Google Business Profile and the details diners check before they walk in. <a href="/blog/restaurant-website-online-ordering/">Restaurant website must-haves and online ordering options</a> covers the basics in brief.</p>
+<h2>A restaurant website project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send your current website or Instagram page, your Google Maps listing and how you take bookings and orders today.</li>
+<li><strong>Choose the main action.</strong> Table booking, WhatsApp orders, online ordering with payment, or a mix.</li>
+<li><strong>Menu and photos.</strong> Your current menu with prices and veg markers, plus real photos of your dishes and dining room.</li>
+<li><strong>Build on staging.</strong> Menu pages, the booking or ordering flow, gallery, map and hours, at a private address you can check on your phone.</li>
+<li><strong>Testing.</strong> Test bookings and orders sent to the right phone or inbox, and every page checked on a mid-range phone over mobile data.</li>
+<li><strong>Launch and walkthrough.</strong> Search Console connected, the site linked from your Google Business Profile, and a call showing staff how to change prices and mark dishes unavailable.</li>
+</ol>
+<h2>Own website or a Zomato and Swiggy listing?</h2>
+<table>
+<thead><tr><th></th><th>Delivery app listing</th><th>Your own website</th></tr></thead>
+<tbody>
+<tr><td>Who finds you</td><td>People browsing the app, next to every competitor nearby</td><td>People searching your name, cuisine or area on Google and Maps</td></tr>
+<tr><td>Cost per order</td><td>Commission and fees set by the platform</td><td>Gateway charges on online payments; nothing extra on WhatsApp or pay-at-counter orders</td></tr>
+<tr><td>Customer details</td><td>Mostly stay with the platform</td><td>Come to you, so you can tell regulars about specials</td></tr>
+<tr><td>Delivery</td><td>The platform's riders</td><td>Your own staff, pickup, or a delivery partner you arrange</td></tr>
+<tr><td>Dine-in and events</td><td>Limited or none</td><td>Table bookings, private dining and party enquiries</td></tr>
+</tbody>
+</table>
+<p>For most restaurants the answer is both: the apps for discovery and delivery, your own site for bookings and regulars. <a href="/blog/website-for-cloud-kitchens/">Websites for cloud kitchens</a> looks at the same decision for delivery-only brands.</p>
+<h2>The pages a restaurant website needs</h2>
+<h3>A menu built as a web page</h3>
+<p>The menu is usually the first page diners look for. Each section, such as starters, mains, breads and drinks, gets its own heading and jump link, and every dish shows its price, a veg or non-veg marker and notes such as spice level, Jain options or eggless. Prices are edited in the dashboard, so a change takes a minute rather than a new PDF. <a href="/blog/restaurant-menu-on-website/">Putting your menu online</a> explains why a web page beats a PDF.</p>
+<h3>Your signature offer, near the top</h3>
+<p>Give the thing you are known for its own section, with days and times spelled out. On <a href="/work/southern-flavours/">Southern Flavours</a>, the website I built for an Indian restaurant in Solihull, UK, the unlimited South Indian breakfast buffet is the first section after the hero, and the opening hours state that it runs from 09:30 to 12:00 on Saturdays and Sundays. A thali lunch or a live music night deserves the same treatment.</p>
+<h3>Photos, hours and location</h3>
+<p>Use real photos of your food and space, compressed so the gallery loads on mobile data. List each session as it really runs, including when the kitchen stops taking orders; Southern Flavours notes that its kitchen closes 30 minutes before closing time. Write the address with a landmark and parking details, with a map and tap-to-call beside it.</p>
+<h2>Table bookings, WhatsApp and online ordering</h2>
+<ul>
+<li><strong>A short reservation form.</strong> The Southern Flavours form asks only for the number of people and a date, then shows "Reservation received! We'll confirm shortly." on the same screen, so the guest knows the request has gone through.</li>
+<li><strong>WhatsApp ordering.</strong> A button that opens WhatsApp with a pre-filled message suits small menus and local delivery. It costs nothing to run, but every order is handled by hand. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</li>
+<li><strong>Online ordering with payment.</strong> A WooCommerce menu with add-ons, delivery areas, minimum order values, UPI and card payments, and ordering that pauses outside kitchen hours. The Southern Flavours shop lists more than 100 dishes in 13 categories, each with a price and an Add to Cart button. See <a href="/woocommerce-developer/">WooCommerce development</a>.</li>
+<li><strong>A booking or ordering tool you already pay for,</strong> linked or embedded rather than replaced.</li>
+</ul>
+<p>Whichever route you choose, someone has to answer quickly. A booking request left unconfirmed all evening is usually a table lost.</p>
+<h2>Google Business Profile, local SEO and schema</h2>
+<p>For searches like "restaurant near me" or "best biryani in Baner", your Google Business Profile usually appears before any website, so the two must agree. I keep the name, address, phone and hours identical on both, and point the profile's menu, ordering and reservation links, where Google offers them, at the matching pages rather than the homepage. Festival closures go into the profile as well as the site.</p>
+<p>Page titles use your cuisine and area the way people search, such as "South Indian restaurant in Kothrud". Restaurant schema, or CafeOrCoffeeShop and Bakery where they fit, tells Google your cuisine, price range, hours, menu page and whether you take reservations. It helps Google understand the page but does not guarantee any special display; <a href="/blog/schema-markup-explained/">schema markup explained</a> covers why. Reviews come from real diners you ask, never written for you. If you do not appear on Maps at all, start with the profile; <a href="/blog/not-showing-on-google-maps/">business not showing on Google Maps</a> lists what to check.</p>
+<h2>FSSAI, allergens and other details to get right</h2>
+<ul>
+<li><strong>Your FSSAI licence or registration number.</strong> Food businesses in India need one, and FSSAI expects the number to be shown to customers, including on bills and where food is sold online. I put it in the footer and on ordering pages. Your FSSAI consultant can confirm the current rules for your licence type.</li>
+<li><strong>Allergen and dietary notes</strong> such as nuts, gluten, dairy and egg, supplied by your kitchen, not guessed.</li>
+<li><strong>Clear totals,</strong> with taxes, packaging and delivery charges shown before payment.</li>
+<li><strong>A privacy notice and consent line</strong> if you collect phone numbers for orders or offers.</li>
+</ul>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every restaurant site includes. These are separate or come from you:</p>
+<ul>
+<li><strong>Food photography.</strong> I can suggest what to shoot; good daylight phone photos often work.</li>
+<li><strong>Aggregator listings.</strong> The site links to your Zomato or Swiggy pages, but I do not manage them.</li>
+<li><strong>Billing, POS and kitchen display systems.</strong> Orders arrive by email or in the dashboard; a POS integration, where your provider supports one, is quoted separately.</li>
+<li><strong>Running ads and social media.</strong></li>
+</ul>
+<h2>How long it takes</h2>
+<p>Usually 1 to 2 weeks once I have your menu, photos and logo. Online ordering with delivery zones, several outlets or a second language take longer. Getting a clean, current menu with prices is often the slowest part.</p>
+<h2>Who it is for</h2>
+<p>Restaurants, cafes, bakeries, sweet shops, cloud kitchens and caterers, from single outlets to small chains, especially those whose online menu is still a photo of the printed card.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Your full menu in a document or spreadsheet: categories, dishes, prices, veg or non-veg, and dietary notes.</li>
+<li>Hours for each session, the address with a landmark, and your booking and order numbers.</li>
+<li>Your FSSAI number, logo and a good set of real photos.</li>
+<li>Access to your Google Business Profile.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A website on hosting in your name, with a menu and specials your staff can update.</li>
+<li>Bookings and orders tested end to end, and the site linked from your Google Business Profile.</li>
+<li>Search Console connected, a staff walkthrough and a full backup.</li>
+</ul>
+<p>Send me your menu and Google Maps link for a free review and a fixed quote.</p>
+`,
+  'website-for-solar-and-power-companies': `
+<h2>Building a solar or power company website, in detail</h2>
+<p>Rooftop solar buyers research savings, subsidies and installers for a long time before they ask for a site survey, and businesses buying inverters, gensets or electrical work compare suppliers on capacity and proof. This is how I plan and build websites for solar installers, power solution providers, generator hire companies and electrical contractors in India: solution pages, subsidy information, quote forms, project proof and local search. <a href="/blog/solar-company-website-guide/">The solar company website guide</a> covers what buyers want to know.</p>
+<h2>A solar or power website project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send your current site or listings, your products and services, and the cities or districts you cover.</li>
+<li><strong>Page plan.</strong> Residential, housing society and commercial solar, plus inverters, batteries, gensets or electrical services, each with its own page where the buyer is different.</li>
+<li><strong>Content gathering.</strong> Datasheets, the brands you are authorised for, completed projects with photos, certifications and the subsidy process as you handle it.</li>
+<li><strong>Build on staging.</strong> Solution templates, quote forms, a projects section and service area pages at a private address.</li>
+<li><strong>Testing.</strong> Test quote requests sent to your sales team, any calculator checked against your own figures, and every page tested on phones.</li>
+<li><strong>Launch and walkthrough.</strong> Search Console connected, your Google Business Profile linked, and a call showing your team how to add a project.</li>
+</ol>
+<h2>Justdial or IndiaMART listing, or your own website?</h2>
+<table>
+<thead><tr><th></th><th>Listings such as Justdial or IndiaMART</th><th>Your own website</th></tr></thead>
+<tbody>
+<tr><td>Leads</td><td>Often sent to several suppliers at once</td><td>Come only to you</td></tr>
+<tr><td>Explaining subsidy, sizing and process</td><td>A short profile and product photos</td><td>A full page for each solution, with FAQs</td></tr>
+<tr><td>Proof of work</td><td>A limited gallery</td><td>Project pages with capacity, location and photos</td></tr>
+<tr><td>Lead details</td><td>A name, a number and sometimes a requirement line</td><td>Bill amount, roof type, connection and location from your own form</td></tr>
+<tr><td>Cost</td><td>Paid packages for better visibility</td><td>The build, then hosting and upkeep</td></tr>
+</tbody>
+</table>
+<p>Listings bring reach, especially for B2B power equipment. Your website is where people who already know your name, or find you on Google Maps, decide whether you are worth calling.</p>
+<h2>Solution pages written for buyers, not engineers</h2>
+<h3>Separate pages for separate buyers</h3>
+<p>A homeowner, a housing society secretary and a factory's maintenance head ask different questions, so each gets a page: rooftop solar for homes (savings, subsidy, net metering, roof space), housing societies (common-area loads and committee approval) and commercial and industrial systems (capacity, payback assumptions, monitoring and AMC). Inverters, batteries and gensets are grouped by the backup or load they serve rather than by model number; <a href="/blog/website-for-inverter-battery-dealers/">websites for inverter and battery dealers</a> explains why.</p>
+<h3>Organise equipment the way buyers specify it</h3>
+<p><a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a diesel generator rental company I built a website for, splits its fleet into seven capacity bands, each with its own page. The 82.5 to 125 kVA page lists typical uses, from small industries and hospitals to party halls, explains what affects the rental price (hire duration, fuel arrangement, whether an operator is included and the distance from its yard) and compares 100 kVA with 125 kVA for a small hospital. A solar company can do the same with system sizes: one page for home systems of a few kilowatts, another for society or commercial capacities, each answering that size's own questions.</p>
+<h2>Subsidy, net metering and honest savings figures</h2>
+<p>Home buyers ask about the PM Surya Ghar subsidy and net metering before almost anything else. I build a page that explains the process as you handle it: the application on the national portal, DISCOM feasibility approval, installation, the net meter and inspection, then the subsidy release. Amounts and eligibility change, so the page links to the official portal and dates any figures it shows, and it mentions DISCOM empanelment or registered vendor status only if you hold it. Net metering rules vary by state, so name the DISCOMs you work with.</p>
+<p>A savings calculator helps people judge whether solar suits them, as long as every result is labelled an estimate, the assumptions such as generation per kilowatt and tariff are shown, and the figures come from you. <a href="/blog/website-calculators-lead-generation/">Website calculators for lead generation</a> covers how to build one honestly.</p>
+<h2>Quote forms, proof and compliance</h2>
+<p>The quote form asks for what your team needs to prepare a meaningful proposal, and no more at first:</p>
+<ul>
+<li>Property type (home, housing society, shop or factory) and city or PIN code.</li>
+<li>Average monthly electricity bill or sanctioned load, and single or three-phase connection.</li>
+<li>Roof type, such as RCC or tin shed, and shadow-free area if known.</li>
+<li>Interest in the subsidy, and a preferred callback time.</li>
+</ul>
+<p>I keep an electricity bill upload optional, or leave it to WhatsApp once a conversation has started, because bills carry the consumer number and address. Generator and equipment enquiries suit a "Request a Call Back" button in the header and an "Enquire Now" button at the end of each section, as on Sahni Power Solutions. For proof, show completed projects with capacity, location and photos taken with the customer's permission, certifications with their numbers, and compliance where buyers need it: Sahni Power Solutions states CPCB-IV+ emission standards and Karnataka State Pollution Control Board noise limits for its silent units. Name brands only where you are authorised.</p>
+<h2>Local SEO for solar installers and generator hire</h2>
+<p>Most of these businesses travel to the customer, so they work as service-area businesses: a Google Business Profile with service areas, and no public address if customers do not visit you, the same name and phone everywhere, and pages for the cities or districts you genuinely serve, each with projects and details from that area rather than copies with the name swapped. Sahni Power Solutions names Bangalore localities such as Whitefield, Electronic City, Peenya and Hebbal in its FAQ alongside Pan India service, in the words people search with. LocalBusiness schema, with Service markup on solution pages, confirms what you do and where. <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> explains the setup, and <a href="/wordpress-seo-services/">WordPress SEO services</a> covers search work after launch.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every solar or power site includes. These are separate or come from you:</p>
+<ul>
+<li><strong>Subsidy applications and DISCOM paperwork,</strong> which stay with your team.</li>
+<li><strong>Product specifications, savings assumptions and certificates.</strong> They must come from you so they are accurate.</li>
+<li><strong>Project photography and drone footage.</strong></li>
+<li><strong>Managing Justdial or IndiaMART listings and running ads.</strong></li>
+</ul>
+<h2>How long it takes</h2>
+<p>Usually 1 to 3 weeks, depending on the number of products and pages. A large product range, a calculator or many service area pages take longer, and collecting project photos and details is often the slowest part.</p>
+<h2>Who it is for</h2>
+<p>Rooftop solar installers and EPC companies, solar product distributors, inverter and battery dealers, generator sales and hire companies, and electrical contractors, especially those relying on listing sites for most leads. <a href="/blog/equipment-rental-website-guide/">Equipment and generator rental websites</a> covers the rental side.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Your products and brands, with datasheets and proof of authorisation.</li>
+<li>Completed projects: capacity, location, type and photos you may use.</li>
+<li>The cities, districts and DISCOMs you serve, and the subsidy process as you run it.</li>
+<li>Who handles quote requests, and your Google Business Profile access.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A website on hosting in your name, with projects and products your team can add.</li>
+<li>Quote and callback forms tested to reach your sales team.</li>
+<li>Search Console connected, a walkthrough and a full backup.</li>
+</ul>
+<p>Send me your current website or listing for a free review and a fixed quote.</p>
+`,
+  'website-for-temples-and-ngos': `
+<h2>Building a temple, trust or NGO website, in detail</h2>
+<p>Devotees search for darshan timings and festival dates, donors look for proof that money is used well, and volunteers want to know how to help. This is how I plan and build websites for temples, religious trusts and NGOs in India: timings and events, online donations and receipts, registration details, languages and local search. <a href="/blog/temple-ngo-website-online-donations/">Temple, trust and NGO websites</a> covers the basics.</p>
+<h2>A temple or NGO website project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send your current site or social pages, how donations are collected today and who will update the site.</li>
+<li><strong>Page plan.</strong> Timings, festivals, sevas, causes and projects, and which pages need Hindi or a regional language.</li>
+<li><strong>Registration and payment details.</strong> Trust or society registration, 12A, 80G and FCRA status where held, and a payment gateway account in the organisation's name.</li>
+<li><strong>Build on staging.</strong> Donation page, events calendar, gallery and volunteer form at a private address.</li>
+<li><strong>Testing.</strong> Donations tested in the gateway's test mode, receipts checked, and pages tried on basic phones.</li>
+<li><strong>Launch and training.</strong> Search Console connected, your Google Business Profile linked, and a call showing volunteers or office staff how to update timings and post events.</li>
+</ol>
+<h2>Online donation to temples and NGOs: choosing the method</h2>
+<table>
+<thead><tr><th></th><th>UPI QR code on the page</th><th>Donation form with a payment gateway</th><th>Bank transfer details</th></tr></thead>
+<tbody>
+<tr><td>Donor effort</td><td>Scan and pay</td><td>Choose an amount, enter details, pay by UPI, card or net banking</td><td>Add you as a payee in a banking app</td></tr>
+<tr><td>Donor details captured</td><td>Only what your bank statement shows</td><td>Name, email, phone, and PAN and address when needed</td><td>Often only a name</td></tr>
+<tr><td>Automatic receipt</td><td>No</td><td>Yes, by email straight after payment</td><td>No</td></tr>
+<tr><td>Purpose or seva chosen</td><td>No</td><td>Yes, from a list</td><td>Only if the donor adds a note</td></tr>
+<tr><td>Monthly giving</td><td>No</td><td>Possible where the gateway supports recurring payments</td><td>Only if the donor sets it up</td></tr>
+</tbody>
+</table>
+<p>I make a gateway form the main route, with a UPI QR for devotees standing at the temple and bank details for large donors.</p>
+<h2>Donation pages, receipts and 80G</h2>
+<ul>
+<li><strong>Suggested amounts and purposes,</strong> such as annadanam, gaushala, renovation or a named programme, plus a custom amount.</li>
+<li><strong>An instant acknowledgement</strong> by email with the transaction details, sent automatically.</li>
+<li><strong>80G only where it applies.</strong> If the trust holds a valid 80G registration, the page says so and the form collects the name, address and PAN your CA needs. The certificate donors use for the deduction, Form 10BE, is issued after the trust files its statement of donations, so the website receipt is an acknowledgement, and should say so. Without 80G, state clearly that donations are not eligible for the deduction.</li>
+<li><strong>Foreign donations.</strong> Temples, trusts and NGOs generally need FCRA registration to accept money from foreign sources, received in the designated FCRA bank account. Without it, the form asks donors to confirm they are Indian citizens. Take professional advice on this.</li>
+</ul>
+<p><a href="/blog/ngo-website-donations-80g/">80G receipts, FCRA and payment setup</a> goes into more detail. Gateways ask for registration documents and a bank account in the organisation's name before they activate, so start early.</p>
+<h2>Timings, festivals, sevas and live darshan</h2>
+<p>Timings are usually the first thing devotees look for, so they sit on the homepage and on their own page, with a row for each aarti or darshan and a notice area for festival changes. Each festival gets its own page or event entry with dates, special timings and crowd arrangements, published well ahead so people find it when they search. <a href="/blog/seasonal-festival-campaigns-website/">Planning for festival peaks</a> covers the busy weeks.</p>
+<p>If you offer sevas or pooja bookings, a form with the seva, date, devotee's name and gotra, paid through the same gateway, saves phone calls. Prasad by post needs delivery areas and charges set up properly. A live darshan or aarti stream works best embedded from YouTube, loading only when tapped, so the page stays fast.</p>
+<h3>A practical order for each page</h3>
+<p><a href="/work/our-temples/">Our Temples</a>, a temple directory I built, gives every temple page the same order: photo gallery and address, a map with directions, travel details such as the nearest airport, bus, train, taxi and parking, opening hours with an "Open now" status, then history, pooja details, dress code, festivals and a short FAQ. A temple's own website benefits from the same order, because pilgrims planning a visit ask the same questions.</p>
+<h2>Transparency for NGOs and trusts</h2>
+<ul>
+<li>Registration details, 12A and 80G status with registration numbers, and FCRA registration if held.</li>
+<li>Your CSR-1 registration number if you seek CSR funding, since companies generally fund registered implementing agencies.</li>
+<li>Annual reports, audited accounts and the names of trustees or governing body members.</li>
+<li>Programmes shown with real photos and stories shared with consent, with extra care for children and beneficiaries, and impact figures only when you can back them up.</li>
+<li>A volunteer form that asks only what you need, with a consent line and privacy notice as India's DPDP Act expects.</li>
+</ul>
+<h2>Languages, readability and local search</h2>
+<p>Many devotees and supporters read Hindi, Marathi, Telugu or another regional language more comfortably than English. Timings, donation and contact pages are the first to translate, each language on its own URL with fonts tested for the script; Our Temples shows temple names and sections in Hindi and Telugu alongside English. See <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>. Large text, plain menus and fast loading help older visitors on basic phones.</p>
+<p>On Google, PlaceOfWorship schema (HinduTemple, for example) or NGO schema confirms your details, Event markup suits festival pages, and the Google Business Profile carries the same timings, including festival hours. See the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every temple or NGO site includes. These are separate or come from you:</p>
+<ul>
+<li><strong>The payment gateway account and its fees.</strong> It is opened in your organisation's name; I configure it on the site.</li>
+<li><strong>Tax and legal advice</strong> on 80G, 12A and FCRA, which comes from your CA.</li>
+<li><strong>Translation.</strong> I set up the languages; the text should come from a fluent speaker.</li>
+<li><strong>Photography, live-stream equipment and social media.</strong></li>
+</ul>
+<h2>How long it takes</h2>
+<p>It depends on the number of pages, languages and whether sevas are booked online, and I confirm the timeline with the fixed quote. Gateway activation and gathering registration documents often take longer than the build, so start well before a major festival or appeal.</p>
+<h2>Who it is for</h2>
+<p>Temples and mandirs, religious and charitable trusts, NGOs, foundations and community associations, especially those still collecting donations only in person or by sharing bank details on WhatsApp.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Registration certificates, and 12A, 80G, FCRA and CSR-1 details where held.</li>
+<li>Daily timings, the festival calendar, sevas and their offerings.</li>
+<li>History, activities and photos you have permission to use.</li>
+<li>The name of the person or team who will update the site.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A website on hosting in your organisation's name, with timings and events your team can update.</li>
+<li>A donation flow tested end to end, with automatic acknowledgements.</li>
+<li>Search Console connected, a walkthrough and a full backup, with optional <a href="/wordpress-maintenance/">maintenance</a> if no volunteer can look after updates.</li>
+</ul>
+<p>Send me your current website or social page for a free review and a fixed quote.</p>
+`,
 };
