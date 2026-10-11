@@ -12652,67 +12652,132 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'wordpress-caching-explained',
-    seoTitle: 'WordPress Caching Explained: Page, Browser, Object & CDN',
-    title: 'WordPress Caching Explained: How Caching Makes Your Site Faster',
-    description: 'A plain-English guide to WordPress caching: page caching, browser caching, object caching, OPcache and CDN caching, which plugin to use, what not to cache and how to clear cache safely.',
+    seoTitle: 'WordPress Caching Explained: Types, Plugins and Testing',
+    title: 'WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)',
+    description: 'WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
-<p>Every time someone opens a WordPress page, the server normally runs PHP code, queries the database and assembles the page from scratch. Caching saves the finished result so it can be served again instantly. Done right, it's one of the biggest speed improvements you can make.</p>
+<p>Every time someone opens a WordPress page, the server normally runs PHP code, queries the database and assembles the page from scratch. <strong>Caching</strong> saves the result of that work so it can be reused instead of rebuilt. Done right, it's one of the biggest speed improvements you can make; done wrong, it shows visitors stale pages or breaks forms and carts.</p>
+<p>In short: most business websites need <strong>page caching</strong> (from the host or one plugin), <strong>browser caching</strong> for files, and often a <strong>CDN</strong>. Online stores, membership sites and busy admin areas also benefit from <strong>object caching</strong> with Redis or Memcached. <strong>OPcache</strong> runs at server level and is usually switched on by your host. Here is what each one does, how to choose a setup, what never to cache, and how to clear and test it.</p>
 
 <h2>The main types of caching</h2>
 <table>
-  <thead><tr><th>Type</th><th>What it stores</th><th>Where it lives</th></tr></thead>
+  <thead><tr><th>Type</th><th>What it stores</th><th>Where it lives</th><th>Helps most with</th></tr></thead>
   <tbody>
-    <tr><td>Page caching</td><td>Complete HTML pages</td><td>Server (plugin or host)</td></tr>
-    <tr><td>Browser caching</td><td>Images, CSS, JS files</td><td>The visitor's browser</td></tr>
-    <tr><td>Object caching</td><td>Database query results</td><td>Server memory (Redis, Memcached)</td></tr>
-    <tr><td>OPcache</td><td>Compiled PHP code</td><td>Server</td></tr>
-    <tr><td>CDN caching</td><td>Files and sometimes pages</td><td>Servers around the world</td></tr>
+    <tr><td>Page caching</td><td>Complete HTML pages</td><td>Server (plugin or host)</td><td>Server response time for visitors who aren't logged in</td></tr>
+    <tr><td>Browser caching</td><td>Images, CSS, JavaScript, fonts</td><td>The visitor's browser</td><td>Repeat visits and moving between pages</td></tr>
+    <tr><td>Object caching</td><td>Results of database queries</td><td>Server memory (Redis, Memcached)</td><td>Stores, memberships, logged-in users, the admin</td></tr>
+    <tr><td>OPcache</td><td>Compiled PHP code</td><td>Server memory</td><td>Every request that runs PHP</td></tr>
+    <tr><td>CDN caching</td><td>Files, and sometimes whole pages</td><td>Servers around the world</td><td>Visitors far from your server, traffic spikes</td></tr>
   </tbody>
 </table>
 
 <h2>Page caching: the big win</h2>
-<p>Page caching saves a ready-made HTML copy of each page. Instead of running WordPress for every visitor, the server hands over the saved copy. For most business websites, whose pages don't change per visitor, this dramatically cuts server response time.</p>
+<p>Page caching saves a ready-made HTML copy of each page. Instead of running WordPress for every visitor, the server hands over the saved copy. For most business websites, whose pages look the same to every visitor, this cuts server response time dramatically; see <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time</a>.</p>
+<p>Page caching can be done by a plugin, which saves HTML files that the server sends, or at server level, where the web server itself (for example LiteSpeed, Nginx or Varnish) serves cached pages before WordPress even loads. Server-level caching is usually faster. Useful settings to look for:</p>
+<ul>
+  <li><strong>Cache lifespan:</strong> how long a copy is kept before it's rebuilt</li>
+  <li><strong>Preloading:</strong> building cached copies in advance so the first visitor doesn't get a slow, uncached page</li>
+  <li><strong>Automatic purging:</strong> clearing a page's cache when you update it</li>
+  <li><strong>Separate mobile cache:</strong> only needed if your theme serves different HTML to phones</li>
+</ul>
+
+<h2>Server-level caching on hosts like Hostinger</h2>
+<p>Many hosts now build caching into the server, so check what yours provides before installing anything:</p>
+<ul>
+  <li><strong>LiteSpeed servers:</strong> hosts that run LiteSpeed, which has included many Hostinger plans, pair the server's built-in cache with the free LiteSpeed Cache plugin. The plugin controls the server cache rather than creating its own, and also handles extras like image and CSS optimisation. Check your hosting panel to confirm which server your plan uses</li>
+  <li><strong>Hosting panel caches:</strong> some panels, Hostinger's hPanel among them, have their own cache settings and a purge button; check the current docs for where these live</li>
+  <li><strong>Managed WordPress hosts:</strong> many run their own page caching and advise against, or block, other caching plugins</li>
+</ul>
+<p>If a LiteSpeed-hosted site is still slow, see <a href="/blog/hostinger-website-slow-fix/">WordPress site slow on Hostinger</a>.</p>
 
 <h2>Browser caching</h2>
-<p>Browser caching tells visitors' browsers to keep files like your logo, fonts and stylesheets for a while, so repeat visits and page-to-page navigation load faster. It's set with cache headers, usually by your caching plugin or host.</p>
+<p>Browser caching tells visitors' browsers to keep files like your logo, fonts and stylesheets for a set time, so repeat visits and page-to-page navigation load faster. It's set with cache headers, usually by your caching plugin or host. Static files can be cached for a long time because WordPress and most plugins add version numbers to file addresses when they change. The HTML page itself should have a short browser lifespan, or visitors may keep seeing an old version.</p>
 
-<h2>Object caching</h2>
-<p>Object caching stores the results of database queries in memory. It helps most on dynamic sites that can't be fully page-cached: WooCommerce stores, membership sites and sites with many logged-in users. It needs Redis or Memcached support from your host.</p>
+<h2>Object caching with Redis or Memcached</h2>
+<p>WordPress already caches database results in memory, but only for the length of a single page load. A <strong>persistent object cache</strong> keeps those results in Redis or Memcached between requests, so repeated queries for menus, settings and product data don't hit the database every time.</p>
+<ul>
+  <li>It helps most on pages that can't be page-cached: WooCommerce cart and checkout, membership and course sites, and the admin</li>
+  <li>It needs Redis or Memcached on the server plus a connector plugin, so check your host supports it; WordPress's Site Health screen may suggest it</li>
+  <li>It isn't a fix for slow, bloated queries; see <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a></li>
+</ul>
+
+<h2>OPcache</h2>
+<p>PHP is compiled before it runs. OPcache keeps the compiled code in server memory, so PHP doesn't recompile WordPress files on every request. It's a server setting rather than something a plugin does, and most decent hosts enable it. If you're unsure, ask your host or check the PHP settings in your hosting panel.</p>
 
 <h2>CDN caching</h2>
-<p>A CDN stores copies of your files on servers closer to your visitors; see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
+<p>A CDN stores copies of your files on servers closer to your visitors, which helps when they are spread across India or abroad. Most CDNs cache images, CSS and JavaScript by default; caching whole HTML pages at the CDN is possible but needs careful rules so dynamic pages are never served from the edge. See <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
 
 <h2>Choosing a caching setup</h2>
+<table>
+  <thead><tr><th>Your site</th><th>A sensible setup</th></tr></thead>
+  <tbody>
+    <tr><td>Business site on a LiteSpeed host</td><td>LiteSpeed Cache plugin with the server cache, browser caching, optional CDN</td></tr>
+    <tr><td>Business site on another shared host</td><td>One reputable caching plugin, such as WP Rocket (paid), W3 Total Cache or WP Super Cache</td></tr>
+    <tr><td>Managed WordPress hosting</td><td>The host's built-in caching; add only what the host allows</td></tr>
+    <tr><td>WooCommerce store</td><td>Page caching with store exclusions, object caching, CDN for images</td></tr>
+    <tr><td>Membership or course site</td><td>Object caching, with page caching for logged-out visitors only</td></tr>
+  </tbody>
+</table>
+<p>Whatever you choose, use only one page-caching plugin. Two caching plugins fighting each other cause strange errors and stale pages.</p>
+
+<h2>What not to cache</h2>
 <ul>
-  <li><strong>Check your host first:</strong> many managed hosts include server-level caching and advise against extra caching plugins</li>
-  <li><strong>LiteSpeed servers:</strong> the LiteSpeed Cache plugin works with the server's built-in cache</li>
-  <li><strong>Other servers:</strong> a reputable caching plugin such as WP Rocket (paid), W3 Total Cache or WP Super Cache</li>
-  <li><strong>Use only one caching plugin.</strong> Two caching plugins fighting each other cause strange errors</li>
+  <li><strong>WooCommerce cart, checkout and My Account pages:</strong> these are different for every shopper, and caching them can show one customer another's cart or details</li>
+  <li><strong>Logged-in users:</strong> they see admin bars, account details and personalised content</li>
+  <li><strong>Shoppers with items in the cart:</strong> WooCommerce sets cookies that caching tools normally use to bypass the cache, so don't override that</li>
+  <li><strong>Personalised or fast-changing content:</strong> pages based on location, live stock or prices that change by the minute</li>
+  <li><strong>The admin area and login page</strong></li>
 </ul>
+<p>Forms need care too. WordPress security tokens (nonces) generally expire within a day, so a page cached for longer can serve an expired token and the form fails. Keep the cache lifespan shorter than that on form pages, or use a plugin that handles it, and test forms after enabling caching. Good caching plugins exclude standard WooCommerce pages automatically, but always check. For store-specific fixes, see the <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a>.</p>
 
-<h2>What should not be cached</h2>
+<h2>How to clear the cache</h2>
+<p>If you update a page and don't see the change, an old cached copy is probably being served. Clear the layers in this order:</p>
+<ol>
+  <li><strong>Plugin cache:</strong> use your caching plugin's purge option</li>
+  <li><strong>Server cache:</strong> purge from your hosting panel if it has its own cache</li>
+  <li><strong>CDN cache:</strong> purge the changed files or the whole site from the CDN dashboard</li>
+  <li><strong>Browser cache:</strong> hard refresh (Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac) or check in a private window</li>
+</ol>
+<p>Clear the cache after design changes, theme edits and plugin updates. Most plugins clear a page's cache automatically when you update it, but not always for menus, widgets or global styles. Edits not appearing? See <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>, and for stylesheets specifically, <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a>.</p>
+
+<h2>How to test that caching works</h2>
+<ol>
+  <li>Log out, or use a private window, because logged-in users usually bypass the cache</li>
+  <li>Load a page twice; the first visit may build the cache</li>
+  <li>Open your browser's developer tools, go to the Network tab, click the page request and check the response headers. Look for headers such as <code>x-litespeed-cache: hit</code>, <code>cf-cache-status: HIT</code>, <code>x-cache</code> or <code>age</code>; names vary by host and CDN</li>
+  <li>Compare server response time before and after with a speed tool; see <a href="/blog/website-speed-test-tools-explained/">website speed test tools explained</a></li>
+  <li>Submit every form, and on a store add a product to the cart in one browser and check a second browser doesn't show it</li>
+</ol>
+
+<h2>Common caching mistakes</h2>
 <ul>
-  <li>Cart, checkout and account pages on WooCommerce</li>
-  <li>Pages for logged-in users</li>
-  <li>Pages showing personalised or frequently changing information</li>
-  <li>Form pages where security tokens are used (test forms after enabling caching)</li>
+  <li>Running two caching plugins, or a caching plugin on a host that already caches</li>
+  <li>Caching cart, checkout or account pages</li>
+  <li>Turning on every minify and combine option at once, then not knowing what broke the layout</li>
+  <li>Testing only while logged in, and concluding caching does nothing</li>
+  <li>Forgetting the CDN when clearing caches after a change</li>
 </ul>
-<p>Good caching plugins exclude standard WooCommerce pages automatically, but always test.</p>
-
-<p>Running an online store? The <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a> covers cart fragments, object caching and other store-specific fixes.</p>
-
-<h2>Clearing the cache</h2>
-<p>If you update a page and don't see the change, the old cached copy may still be served. Clear the cache from your plugin or hosting panel after design changes, plugin updates or theme edits. Most plugins clear a page's cache automatically when you update it.</p>
-
-<p>Edits not appearing? See <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>.</p>
 
 <h2>Caching won't fix everything</h2>
 <p>Caching speeds up delivery, but huge images, heavy page builders and too many scripts still slow the page in the browser. See <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a> and <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
 
-<p>Want it configured properly? See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+<h2>FAQs</h2>
+<h3>Do I need a caching plugin if my host already caches?</h3>
+<p>Often not for page caching. Use the host's cache, and on LiteSpeed hosting use the LiteSpeed Cache plugin, which works with it. Check your host's documentation before adding another caching plugin.</p>
+<h3>Which WordPress caching plugin is best?</h3>
+<p>It depends on your server. On LiteSpeed, LiteSpeed Cache is the natural fit; elsewhere, WP Rocket, W3 Total Cache and WP Super Cache are common choices. A well-configured single plugin matters more than which one you pick.</p>
+<h3>Is Redis object caching worth it?</h3>
+<p>For WooCommerce stores, membership sites and sites with many logged-in users it often helps, because those pages can't be fully page-cached. For a small brochure site with good page caching, the difference is usually small.</p>
+<h3>Why can't I see my changes after updating a page?</h3>
+<p>A cached copy is still being served somewhere. Purge the plugin, server and CDN caches, then hard refresh or check in a private window.</p>
+<h3>Does caching help SEO?</h3>
+<p>Indirectly. Faster server responses help page experience and make it easier for Google to crawl your site, but caching won't make up for weak content.</p>
+
+<p>Want caching set up properly for your host, without breaking forms or the checkout? I configure and test caching layer by layer, then measure the result. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
 `,
   },
   {
@@ -14179,61 +14244,128 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'woocommerce-product-variations',
-    seoTitle: 'WooCommerce Product Variations: Sizes, Colours & More',
-    title: 'WooCommerce Product Variations: Selling Sizes, Colours and Options',
-    description: 'How to set up variable products in WooCommerce: attributes, variations, per-variation prices, stock and images, colour swatches, size charts and keeping large variation sets manageable.',
+    seoTitle: 'WooCommerce Product Variations: Setup, Stock and Swatches',
+    title: 'WooCommerce Product Variations: How to Set Up Sizes, Colours, Stock and Swatches',
+    description: 'How to set up WooCommerce product variations: attributes vs variations, global attributes, bulk editing, variation images, swatches, stock, SKUs and SEO.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development', 'wordpress-speed-optimization'],
     body: `
-<p>If you sell a T-shirt in five sizes and four colours, you don't want 20 separate products. WooCommerce's variable products let customers choose options on one product page, with each combination having its own price, stock and image.</p>
+<p>If you sell a T-shirt in five sizes and four colours, you don't want 20 separate products. WooCommerce's <strong>variable products</strong> let customers choose options on one product page, and each combination, called a variation, can have its own price, SKU, stock level and image.</p>
+<p>The quick version: set the product type to "Variable product", add attributes such as Size and Colour, tick "Used for variations", generate the variations, then give each one a price, SKU, stock and image. A variation with no price won't be sold, so don't skip that step. The rest of this guide covers each step properly, plus bulk editing, swatches, performance limits and SEO.</p>
 
-<h2>Key terms</h2>
-<ul>
-  <li><strong>Attribute:</strong> an option type, like size, colour or weight</li>
-  <li><strong>Terms:</strong> the values of an attribute, like S, M, L or Red, Blue</li>
-  <li><strong>Variation:</strong> a specific combination, like "Medium, Blue"</li>
-</ul>
+<h2>Attributes vs variations</h2>
+<p>The terms get mixed up, so it helps to be precise:</p>
+<table>
+  <thead><tr><th>Term</th><th>What it is</th><th>Example</th></tr></thead>
+  <tbody>
+    <tr><td>Attribute</td><td>An option type</td><td>Size, Colour, Material</td></tr>
+    <tr><td>Term</td><td>A value of an attribute</td><td>S, M, L or Red, Blue</td></tr>
+    <tr><td>Variation</td><td>One purchasable combination of terms</td><td>Medium, Blue</td></tr>
+  </tbody>
+</table>
+<p>Attributes can also be purely descriptive. A "Fabric: Cotton" attribute that isn't used for variations simply shows in the Additional information tab and, if it's global, can power filters. Only attributes ticked as "Used for variations" create choices for the shopper.</p>
 
 <h2>Global vs custom attributes</h2>
-<p><strong>Global attributes</strong> (Products → Attributes) are reusable across products and can be used for filtering, such as filtering the whole store by size. <strong>Custom attributes</strong> are defined on a single product. Use global attributes for common options like size and colour.</p>
+<table>
+  <thead><tr><th></th><th>Global attributes</th><th>Custom attributes</th></tr></thead>
+  <tbody>
+    <tr><td>Where you create them</td><td>Products, then Attributes, with terms configured once</td><td>Inside a single product</td></tr>
+    <tr><td>Reusable across products</td><td>Yes</td><td>No, typed per product</td></tr>
+    <tr><td>Usable in shop filters</td><td>Yes</td><td>Generally no</td></tr>
+    <tr><td>Best for</td><td>Size, colour, material and anything shoppers filter by</td><td>One-off options, like a specific engraving style</td></tr>
+  </tbody>
+</table>
+<p>Use global attributes for common options. They keep spelling consistent ("Navy" rather than "navy blue" on one product and "Navy Blue" on another), and they are what attribute filters rely on; see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a>.</p>
 
-<h2>Setting up a variable product</h2>
+<h2>How to set up a variable product, step by step</h2>
 <ol>
-  <li>Choose "Variable product" as the product type</li>
-  <li>Add attributes and tick "Used for variations"</li>
-  <li>Generate variations from all attribute combinations, or add them one by one</li>
-  <li>For each variation, set price, SKU, stock and image</li>
-  <li>Set a default selection if one option is most popular</li>
+  <li><strong>Create global attributes.</strong> Go to Products, then Attributes, add Size and Colour, and configure their terms.</li>
+  <li><strong>Choose the product type.</strong> On a new product, set Product data to "Variable product".</li>
+  <li><strong>Add attributes.</strong> In the Attributes tab, add each attribute, select the terms this product uses, tick "Visible on the product page" and "Used for variations", then save attributes.</li>
+  <li><strong>Create variations.</strong> In the Variations tab, use "Generate variations" to create every combination, or add them manually if you only sell some. WooCommerce limits how many it generates in one run, so very large sets may need more than one pass; check the current docs.</li>
+  <li><strong>Fill in each variation.</strong> Price (and sale price), SKU, stock, weight and dimensions if they differ, shipping class, image and an optional short description.</li>
+  <li><strong>Set default form values.</strong> Preselect the most popular option, or leave it blank so shoppers choose deliberately.</li>
+  <li><strong>Publish and test.</strong> Select every option on the live page on a phone, check prices, images and stock messages, and add one variation to the cart.</li>
 </ol>
 
-<h2>Variation images</h2>
-<p>Assign an image to each colour so the main photo changes when the customer selects it. This reduces confusion and returns.</p>
-
-<h2>Better option selection</h2>
+<h2>Price, stock and SKU per variation</h2>
 <ul>
-  <li><strong>Swatches:</strong> colour circles and size buttons instead of dropdowns, via a swatches plugin or theme feature</li>
-  <li><strong>Size charts:</strong> a clear chart next to the size selector</li>
-  <li><strong>Show availability:</strong> grey out out-of-stock combinations</li>
+  <li><strong>Price:</strong> every variation needs a regular price. If all variations cost the same, set it once with a bulk action</li>
+  <li><strong>SKU:</strong> give each variation its own unique SKU, such as TSHIRT-BLU-M. It makes order picking, stock counts and syncing with billing or marketplace software far easier</li>
+  <li><strong>Stock per variation:</strong> tick "Manage stock?" on each variation to track sizes and colours separately. If you leave it unticked, the variation follows the parent product's stock settings, which suits made-to-order items</li>
+  <li><strong>"Any" options:</strong> a variation can be set to "Any Size", which saves creating combinations, but then you can't track stock or price by size for it</li>
+  <li><strong>Out of stock:</strong> decide whether sold-out combinations should show as unavailable or be hidden, and test what your theme actually does</li>
 </ul>
+<p>For stock settings, low-stock alerts and syncing with a physical shop, see <a href="/blog/woocommerce-inventory-management/">WooCommerce inventory management</a>.</p>
 
-<p>For a worked example where size charts, size buttons and stock by size matter on every product, see <a href="/blog/website-for-footwear-stores/">websites for footwear stores</a>.</p>
-
-<h2>Keep large variation sets manageable</h2>
-<p>Products with dozens or hundreds of variations can slow the admin and product pages. Consider:</p>
+<h2>Bulk editing variations</h2>
+<p>Editing 40 variations one by one is slow and error-prone. Two built-in tools help:</p>
 <ul>
-  <li>Only creating combinations you actually sell</li>
-  <li>Using product add-ons for options that don't need separate stock (like gift wrapping or engraving)</li>
-  <li>Splitting very different versions into separate products</li>
+  <li><strong>Bulk actions in the Variations tab:</strong> set or change regular and sale prices (including increases by an amount or percentage), toggle stock management, set stock status, and set weights and dimensions for all variations of a product at once</li>
+  <li><strong>CSV import and export:</strong> WooCommerce's product exporter and importer handle variations as separate rows linked to their parent, which suits large catalogues and seasonal price changes</li>
 </ul>
+<p>Bulk changes are hard to undo, so back up first and try a CSV import on a staging copy before running it on the live store. Edits across many products at once, such as raising every price in a category, usually need a dedicated bulk-edit plugin or a short custom script.</p>
 
-<h2>Bulk editing</h2>
-<p>WooCommerce lets you set prices and stock for all variations at once, and CSV import/export helps manage large catalogues.</p>
+<h2>Variation images, swatches and size charts</h2>
+<ul>
+  <li><strong>Variation images:</strong> assign an image to each colour so the main photo changes when the shopper selects it, which reduces confusion and returns. By default each variation gets one image; extra gallery images per variation need a plugin or a theme that supports them</li>
+  <li><strong>Swatches:</strong> colour circles and size buttons are easier to use than dropdowns, especially on phones. They come from a swatches plugin or a theme feature, and newer block-based product templates may include button-style options, so check what your setup already offers</li>
+  <li><strong>Size charts:</strong> a clear chart beside the size selector, with measurements in the units your customers use</li>
+  <li><strong>Availability:</strong> grey out or cross out combinations that are out of stock, so shoppers don't pick an option only to be told it's unavailable</li>
+</ul>
+<p>For a worked example where size charts, size buttons and stock by size matter on every product, see <a href="/blog/website-for-footwear-stores/">websites for footwear stores</a>. Pair good variations with a strong product page; see <a href="/blog/woocommerce-product-page-optimization/">product page optimisation</a>.</p>
+
+<h2>How many variations is too many?</h2>
+<p>Each variation is stored as its own record in the database, so products with dozens or hundreds of variations make the product editor slower and product pages heavier. There is also a specific front-end limit worth knowing about: the <strong>AJAX variation threshold</strong>.</p>
+<ul>
+  <li>When a product has fewer variations than the threshold (30 by default at the time of writing), WooCommerce loads all variation data into the page, so it can grey out unavailable combinations as the shopper chooses</li>
+  <li>Above the threshold, WooCommerce instead looks up the chosen variation after all options are selected, so a shopper may only find out a combination is unavailable at the end</li>
+  <li>A developer can raise the threshold with a filter, but every variation then adds to the page weight, so test speed on a phone before and after</li>
+</ul>
+<p>Ways to keep variation sets lean:</p>
+<ul>
+  <li>Create only the combinations you actually sell, not every possible one</li>
+  <li>Use product add-ons for options that don't need separate stock, like gift wrapping, engraving or a printed name</li>
+  <li>Split very different versions into separate products, such as a cotton and a silk range</li>
+</ul>
+<p>For other store speed fixes, see the <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a>.</p>
 
 <h2>SEO for variable products</h2>
-<p>Variations share one product URL, which keeps ranking signals together. Mention available sizes and colours in the description. See the <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a>.</p>
+<ul>
+  <li><strong>One URL per product:</strong> variations share the product URL, which keeps ranking signals together. Links that preselect an option add a query parameter, and the canonical tag should point back to the main product URL; see <a href="/blog/canonical-tags-explained/">canonical tags explained</a></li>
+  <li><strong>Describe the options in text:</strong> mention available sizes, colours and materials in the description, not just in the dropdowns</li>
+  <li><strong>Image alt text:</strong> describe each variation image, such as "navy cotton T-shirt, front view"</li>
+  <li><strong>Structured data:</strong> WooCommerce's built-in product markup typically shows a price range for variable products. Google also supports markup for product variants; support in SEO plugins varies, so check current docs</li>
+  <li><strong>Shopping feeds:</strong> Google Merchant Center treats each variation as its own item grouped under the parent, so each needs accurate price, stock and a GTIN where one exists; see <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a></li>
+  <li><strong>When to split:</strong> if a version has strong search demand of its own, a separate product page can rank for it better than a dropdown option</li>
+</ul>
+<p>For category pages, titles and product schema, see the <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a>.</p>
 
-<p>Pair good variations with a strong product page; see <a href="/blog/woocommerce-product-page-optimization/">product page optimisation</a>.</p>
+<h2>Common mistakes</h2>
+<ul>
+  <li>Leaving a variation without a price, so it silently doesn't appear for sale</li>
+  <li>Using custom attributes for size and colour, then finding filters don't work</li>
+  <li>Generating every combination when only a few exist, then selling items you don't have</li>
+  <li>Reusing the same SKU on several variations</li>
+  <li>Forgetting variation images, so the photo doesn't match the colour chosen</li>
+  <li>Running a big CSV import on the live store without a backup</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What is the difference between an attribute and a variation in WooCommerce?</h3>
+<p>An attribute is an option type, like Size, with terms such as S, M and L. A variation is one purchasable combination of those terms, like Medium and Blue, with its own price, stock and SKU.</p>
+<h3>Why is my WooCommerce variation not showing?</h3>
+<p>The usual causes are a missing price, the variation being disabled, it being out of stock with out-of-stock items hidden, or the attribute not ticked as "Used for variations". Check each in the Variations and Attributes tabs.</p>
+<h3>How many variations can a WooCommerce product have?</h3>
+<p>There is no small hard limit, but large numbers slow the editor and product page, and above the AJAX variation threshold the page stops greying out unavailable combinations in advance. Keep sets to what you actually sell.</p>
+<h3>Can each variation have its own images?</h3>
+<p>Each variation can have one image by default. Several gallery images per variation need a plugin or a theme that supports it.</p>
+<h3>Do I need a plugin for colour swatches?</h3>
+<p>Usually, yes, unless your theme or product template already includes them. Choose a well-maintained option and check it doesn't add heavy scripts to every page.</p>
+
+<p>Setting up a store with lots of sizes, colours or options, or struggling with slow variable products? I configure attributes, variations, swatches and stock properly and test every option before launch. See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -17203,57 +17335,129 @@ find wp-content/uploads -name "*.php"</code></pre>
   },
   {
     slug: 'this-site-may-be-hacked-google',
-    seoTitle: '"This Site May Be Hacked" in Google Results: How to Remove It',
-    title: '"This Site May Be Hacked" Label in Google Results: How to Remove It',
-    description: 'What the "This site may be hacked" label in Google search results means, why it appears, how to find and clean the hacked content, and how to request a review in Search Console to remove it.',
+    seoTitle: '"This Site May Be Hacked" Google Warning: How to Remove It',
+    title: '"This Site May Be Hacked" in Google Results: What It Means and How to Remove It',
+    description: 'What Google\'s "This site may be hacked" label means, how to confirm it in Search Console, clean up your WordPress site, request a review and stop it returning.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-seo-services', 'wordpress-maintenance'],
     body: `
-<p>Seeing "This site may be hacked" under your website in Google's search results is alarming, and it makes searchers much less likely to click. Google shows this label when it believes a third party may have changed pages on your site or added spam. Here's how to get rid of it.</p>
+<p>Seeing "This site may be hacked" under your website in Google's search results is alarming, and it makes searchers far less likely to click. Google shows this label when it believes a third party may have changed pages on your site or added new spam pages, often in other languages or stuffed with pharmacy, gambling or counterfeit-goods keywords.</p>
+<p>The short answer on removing it: confirm the problem in Google Search Console's <strong>Security issues</strong> report, lock out the attacker, clean the site completely and close the way they got in, then <strong>request a review</strong>. Once Google confirms the site is clean, the label is removed from results. The steps below cover each stage, how long it can take and how to stop it happening again.</p>
 
-<h2>How it differs from browser warnings</h2>
+<h2>What the warning means</h2>
 <ul>
-  <li><strong>"This site may be hacked":</strong> a label in search results, usually for spam content added by hackers</li>
-  <li><strong>"Deceptive site ahead" / "Dangerous site":</strong> a full-page browser warning, usually for phishing or malware; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing browser warnings</a></li>
+  <li><strong>Google has detected hacked content:</strong> spam pages, injected links, changed titles or redirects that someone other than you added</li>
+  <li><strong>It affects searchers, not just you:</strong> the label appears in search results for anyone who sees your listing</li>
+  <li><strong>Your site may look normal to you:</strong> many spam hacks hide their content from logged-in owners and show it only to Google or to visitors arriving from search</li>
+  <li><strong>It won't go away by itself quickly:</strong> the hack needs cleaning, and Google needs to see the clean site</li>
 </ul>
-<p>Both mean the site needs cleaning, but the label often relates to SEO spam.</p>
+<p>It is different from other warnings you might see:</p>
+<table>
+  <thead><tr><th>Warning</th><th>Where it appears</th><th>Usually means</th></tr></thead>
+  <tbody>
+    <tr><td>"This site may be hacked"</td><td>Under your listing in Google search results</td><td>Spam content, links or redirects added by a hacker</td></tr>
+    <tr><td>"Deceptive site ahead" or "Dangerous site"</td><td>A full-page red warning in the browser</td><td>Phishing pages or malware; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing browser warnings</a></td></tr>
+    <tr><td>Hosting account suspended</td><td>Your site is offline or shows a host notice</td><td>The host found malware or spam sending on its server</td></tr>
+  </tbody>
+</table>
+<p>All of them mean the site needs cleaning, but the search result label most often relates to SEO spam.</p>
 
-<h2>Why it appears</h2>
+<h2>Step 1: Confirm it in Search Console</h2>
+<p>If you haven't already, verify ownership of your site in Google Search Console; see <a href="/blog/setup-google-analytics-search-console/">setting up Search Console</a>. Then:</p>
+<ol>
+  <li>Open <strong>Security &amp; Manual Actions</strong>, then <strong>Security issues</strong></li>
+  <li>Read the issue type, which may be something like content injection, code injection or URL injection, and note the sample URLs Google lists</li>
+  <li>Check the <strong>Manual actions</strong> report too, since a separate spam penalty needs its own fix</li>
+  <li>Look at the Performance report for unfamiliar queries or pages, especially in other languages</li>
+</ol>
+<p>Google's Safe Browsing site status page, part of its Transparency Report, is a useful second check. For a tour of the other reports, see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
+
+<h2>Step 2: Lock the attacker out</h2>
 <ul>
-  <li>Spam pages added to your site, often in other languages</li>
-  <li>Hidden spam links injected into your pages</li>
-  <li>Changed titles and descriptions showing spam keywords in results</li>
-  <li>Redirects sending search visitors elsewhere</li>
+  <li><strong>Search Console users:</strong> in Settings, then Users and permissions, remove anyone you don't recognise. Also remove their verification method, such as an HTML file or meta tag on your site, or they can verify again. Delete any sitemaps you didn't submit</li>
+  <li><strong>WordPress users:</strong> remove unknown administrators and check every account with editing rights</li>
+  <li><strong>Passwords:</strong> change WordPress, hosting, SFTP/FTP, database and email passwords, and reset the security keys (salts) in wp-config.php to log everyone out</li>
+  <li><strong>Take a copy of the hacked site</strong> before cleaning, so you can investigate what happened if needed</li>
 </ul>
-
-<h2>Step 1: Verify your site in Search Console</h2>
-<p>If you haven't already, verify ownership in Google Search Console; see <a href="/blog/setup-google-analytics-search-console/">setting up Search Console</a>. Check the Security issues report for details and sample URLs.</p>
-
-<h2>Step 2: Check for rogue owners</h2>
-<p>In Settings → Users and permissions, remove anyone you don't recognise. Attackers often add themselves to submit spam sitemaps.</p>
 
 <h2>Step 3: Find the hacked content</h2>
 <ul>
-  <li>Search <code>site:yourdomain.com</code> for unfamiliar pages</li>
-  <li>Inspect sample URLs from Search Console with URL Inspection</li>
-  <li>Look for cloaked content that only Googlebot sees</li>
+  <li>Search <code>site:yourdomain.com</code> in Google and look for pages you didn't create</li>
+  <li>Use URL Inspection on Google's sample URLs and run a live test; "View tested page" shows what Googlebot sees, which reveals cloaked spam that only appears to Google</li>
+  <li>Check for unfamiliar files, recently modified files and PHP files in the uploads folder</li>
+  <li>Look in the database for spam posts, injected scripts and changed site settings</li>
+  <li>Check .htaccess and other server config files for redirects aimed at search visitors</li>
 </ul>
-<p>See <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a>.</p>
+<p>The most common patterns have their own guides: <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a> and <a href="/blog/fix-wordpress-redirect-hack/">the WordPress redirect hack</a>. If you're not sure what you're looking at, start with <a href="/blog/signs-wordpress-site-hacked/">the signs a WordPress site has been hacked</a>.</p>
 
 <h2>Step 4: Clean the site completely</h2>
-<p>Remove spam pages and injected code, then find and close the entry point and remove backdoors. See <a href="/blog/remove-malware-wordpress-step-by-step/">removing malware step by step</a>.</p>
+<p>Deleting the spam pages you can see isn't enough. If the way in and the backdoors remain, the spam comes back within days.</p>
+<ol>
+  <li>Restore a clean backup from before the hack if you have one and know when it started, then update everything</li>
+  <li>Otherwise, reinstall WordPress core, plugins and themes from official sources, and remove anything unused, unknown or nulled</li>
+  <li>Remove injected code from the database, theme files and configuration files</li>
+  <li>Find and remove backdoors, the hidden files that let attackers back in; see <a href="/blog/find-remove-wordpress-backdoors/">finding and removing backdoors</a></li>
+  <li>Make spam URLs return a 404 or 410 status. Don't block them in robots.txt, because Google needs to crawl them to see they're gone, and don't redirect them to your homepage</li>
+  <li>Identify and fix the entry point, such as an outdated plugin, a stolen password or a nulled theme</li>
+  <li>Scan again with a server-side scanner, and check the site as a logged-out visitor and as Googlebot</li>
+</ol>
+<p>The full process is in <a href="/blog/remove-malware-wordpress-step-by-step/">removing malware step by step</a>.</p>
 
 <h2>Step 5: Request a review</h2>
-<p>In the Security issues report, confirm you've fixed the issues and request a review, describing what you found and how you fixed it. Once Google confirms the site is clean, the label is removed from results.</p>
+<p>When you're confident the site is clean, go back to the Security issues report, confirm you've fixed the issues and request a review. In the description, explain briefly:</p>
+<ul>
+  <li>What you found, such as spam pages, injected links or a malicious plugin</li>
+  <li>What you removed and how you cleaned the site</li>
+  <li>How you closed the entry point and what you've done to prevent it happening again</li>
+</ul>
+<p>Only request a review once the site is genuinely clean; if Google still finds hacked content, the request is rejected and you start again. Search Console shows the outcome and usually sends an email too.</p>
 
-<h2>If the label came without a Security issues report</h2>
-<p>Sometimes the label appears without detailed information. Clean the site anyway, make sure spam URLs return 404 or 410, submit your clean sitemap and monitor results as Google recrawls.</p>
+<h2>How long removal can take</h2>
+<p>Timing varies and isn't in your control. Google's own guidance has said that reviews for sites hacked with spam can take longer than other security reviews, potentially several weeks, so check the current Search Console documentation for up-to-date expectations. After a successful review, the label is removed as results update, and spam URLs drop out of the index as Google recrawls them.</p>
+<p>If spam URLs are still showing for your brand searches, the Removals tool in Search Console can hide specific URLs temporarily (for around six months, at the time of writing) while Google catches up. It hides them from results; it doesn't replace cleaning them.</p>
+
+<h2>If the label appears without a Security issues report</h2>
+<p>Sometimes the label shows in results but the report has no details, or the site was never verified. Clean the site anyway, make sure spam URLs return 404 or 410, submit your clean sitemap and monitor results as Google recrawls. Once Search Console is verified, check the report again, because the issue may appear there after verification. If the label persists long after a thorough clean, Google's Search Central help community is the place to ask.</p>
 
 <h2>Recover your traffic</h2>
-<p>After the label goes, check your important pages are indexed and ranking; see <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
+<p>After the label goes, check your important pages are indexed, that their titles and descriptions are yours again, and that rankings are returning; see <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
 
-<p>Need it cleaned quickly? See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+<h2>How to stop it happening again</h2>
+<ul>
+  <li>Keep WordPress, plugins and themes updated, and delete anything you don't use</li>
+  <li>Never install nulled (pirated) themes or plugins</li>
+  <li>Use unique passwords and two-factor login for every admin and hosting account</li>
+  <li>Give each person only the access they need, and remove old accounts</li>
+  <li>Add a firewall; see <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a></li>
+  <li>Keep automatic off-site backups, so a clean restore point always exists</li>
+  <li>Make sure Search Console alerts reach an inbox someone actually reads</li>
+</ul>
+<p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers the full set of protections.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>Requesting a review before the site is fully clean</li>
+  <li>Deleting spam pages but leaving the backdoor that created them</li>
+  <li>Blocking spam URLs in robots.txt, so Google can't see they're gone</li>
+  <li>Restoring a backup that was already infected</li>
+  <li>Missing a rogue Search Console owner who keeps submitting spam sitemaps</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>How long does it take to remove "This site may be hacked"?</h3>
+<p>It depends on how quickly the site is cleaned and how long Google's review and recrawl take. Spam-hack reviews can take longer than other security reviews, sometimes weeks, so clean thoroughly first to avoid a rejected request.</p>
+<h3>Will my Google rankings come back after the hack?</h3>
+<p>Often they recover once the site is clean and the label is gone, but there's no guaranteed timeline. Fixing titles, removing spam URLs and checking indexing helps.</p>
+<h3>Can I remove the label without Search Console?</h3>
+<p>Google can remove it after recrawling a clean site, but Search Console shows you the details, lets you request a review and alerts you if it happens again. Verifying it is strongly worth it.</p>
+<h3>Should I delete spam pages or redirect them?</h3>
+<p>Delete them so they return a 404 or 410. Redirecting spam URLs to your homepage or other pages can confuse Google and keep them in the index longer.</p>
+<h3>I have a security plugin. Why was my site still hacked?</h3>
+<p>Security plugins reduce risk but can't fix an outdated plugin, a reused password or a nulled theme. Updates, strong logins and good backups matter as much as the plugin.</p>
+
+<p>Need the hack cleaned and the label removed without the guesswork? I clean hacked WordPress sites, close the entry point, prepare the review request and help you recover traffic afterwards. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -24414,14 +24618,16 @@ Template: astra
   },
   {
     slug: 'woocommerce-multi-vendor-marketplace',
-    seoTitle: 'Multi-Vendor Marketplace With WooCommerce: A Guide',
-    title: 'Building a Multi-Vendor Marketplace With WooCommerce: A Practical Guide',
-    description: 'When a WooCommerce multi-vendor marketplace makes sense, how plugins work, commissions and payouts, GST and legal basics, vendor onboarding and operations.',
+    seoTitle: 'WooCommerce Multi-Vendor Marketplace: How to Build One',
+    title: 'How to Build a WooCommerce Multi-Vendor Marketplace: Plugins, Payouts, GST and Scale',
+    description: 'How to build a WooCommerce multi-vendor marketplace: choosing a plugin, commission and payout models, vendor KYC, GST and TCS basics, and hosting at scale.',
     date: '2026-09-28',
+    updated: '2026-10-11',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-startups'],
     body: `
-<p>A multi-vendor marketplace lets other sellers list and sell products on your website while you run the platform and earn a commission. Think of a marketplace for handloom weavers, organic farmers in one region, or suppliers in a niche industry. WooCommerce can power this with the right plugin, but the technology is the easy part. Here's what to think through before you build one.</p>
+<p>Yes, you can build a multi-vendor marketplace on WooCommerce. WooCommerce runs the store, and a multi-vendor plugin such as Dokan, WCFM Marketplace, MultiVendorX, WC Vendors or WooCommerce's own Product Vendors extension adds the marketplace layer: vendor sign-up, vendor dashboards, commissions and payouts. Other sellers list products on your site, buyers check out once, and you keep a commission before paying each vendor their share.</p>
+<p>The plugin is the easy part. What decides whether a marketplace works is how the money flows, how you vet sellers, how tax is handled and whether your hosting copes as vendors and products grow.</p>
 
 <h2>When a marketplace makes sense</h2>
 <p>A marketplace is a business model, not a feature. It tends to work when:</p>
@@ -24441,71 +24647,116 @@ Template: astra
 </table>
 <p>If you only sell your own products, a single-vendor store is far simpler. If sellers just need to be found, a listing site may be enough; see <a href="/blog/directory-website-wordpress/">directory websites on WordPress</a>.</p>
 
-<h2>How it works on WooCommerce</h2>
-<p>WooCommerce on its own sells one store's products. Multi-vendor plugins add the marketplace layer. Well-known options include Dokan, WCFM Marketplace, MultiVendorX, WC Vendors and WooCommerce's own Product Vendors extension. Features vary by plugin and plan, but typically include:</p>
-<ul>
-  <li>Vendor registration and a front-end dashboard for products, orders and earnings</li>
-  <li>Individual vendor store pages with their own details and ratings</li>
-  <li>Commission settings and payout or withdrawal requests</li>
-  <li>Splitting a cart with products from several vendors into separate vendor orders</li>
-  <li>Per-vendor shipping settings</li>
-</ul>
-<p>Compare current features and pricing carefully, and check compatibility with the other plugins you need, such as your payment gateway, shipping and GST invoicing. Anything unusual, like special commission rules or ERP integrations, may need <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a>.</p>
+<h2>How to build a WooCommerce marketplace, step by step</h2>
+<ol>
+  <li><strong>Define the niche and the rules.</strong> Decide what can be sold, who can sell it, your commission, and who handles shipping and returns.</li>
+  <li><strong>Get tax advice early.</strong> Speak to a CA about GST registration, TCS and invoicing, because the answers shape your settings.</li>
+  <li><strong>Set up hosting and a staging site.</strong> Start on a plan that can scale, with a staging copy for testing changes.</li>
+  <li><strong>Install WooCommerce and a multi-vendor plugin.</strong> Configure vendor registration, store pages, commission and withdrawal settings.</li>
+  <li><strong>Connect payments and shipping.</strong> Test full orders that contain products from more than one vendor.</li>
+  <li><strong>Publish your policies and vendor agreement.</strong> Have vendors accept the agreement when they register.</li>
+  <li><strong>Onboard a small pilot group of vendors.</strong> Help them list well, then run real test orders end to end, including a refund.</li>
+  <li><strong>Launch, measure and expand.</strong> Track dispatch times, complaints and repeat buyers before adding categories or regions.</li>
+</ol>
 
-<h2>Commissions, payments and payouts</h2>
-<p>Decide how money flows before you choose tools.</p>
-<ul>
-  <li><strong>Commission model:</strong> a percentage, a fixed fee per sale, different rates per category, a monthly vendor subscription, or a mix</li>
-  <li><strong>Who pays what:</strong> payment gateway fees, shipping charges and returns, and how commission is reversed when an order is refunded</li>
-  <li><strong>Payouts:</strong> manual payouts on a fixed schedule are simplest to start with; some Indian payment gateways offer split-settlement products for marketplaces, which usually need extra approval and KYC</li>
-  <li><strong>Holding period:</strong> many marketplaces release payouts only after the return window closes</li>
-</ul>
-<p>For the payment side in general, see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a>.</p>
+<h2>Choosing a multi-vendor plugin</h2>
+<p>WooCommerce on its own sells one store's products. Well-known multi-vendor plugins include Dokan, WCFM Marketplace, MultiVendorX and WC Vendors, plus WooCommerce's own Product Vendors extension. Typical features include vendor registration and front-end dashboards, vendor store pages with ratings, commission and withdrawal settings, splitting a mixed cart into per-vendor orders, per-vendor shipping and product approval. Several offer a free core with paid upgrades, and features differ by plan, so check each one's current feature list and pricing rather than relying on old reviews.</p>
+<p>Rather than asking which plugin is "best", test your shortlist against your own requirements on a staging site:</p>
+<table>
+  <thead><tr><th>Question to ask</th><th>Why it matters</th></tr></thead>
+  <tbody>
+    <tr><td>Does it split orders per vendor the way you want?</td><td>Vendors need to see and ship only their items, and your reports need to reconcile</td></tr>
+    <tr><td>Can commission vary by vendor, category or product?</td><td>Most marketplaces end up needing more than one rate</td></tr>
+    <tr><td>Does it work with your payment gateway and payout method?</td><td>Payout automation often depends on a specific gateway integration</td></tr>
+    <tr><td>Can it match your GST invoicing setup?</td><td>Invoices may need to show the vendor's details rather than yours; your CA can confirm</td></tr>
+    <tr><td>Is it actively maintained for current WooCommerce?</td><td>Marketplace plugins touch orders and money, so outdated code is a real risk</td></tr>
+  </tbody>
+</table>
+<p>Anything unusual, like special commission rules or ERP integrations, may need <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a> on top of the plugin you choose.</p>
 
-<h2>Tax and legal basics to check early</h2>
-<p>A marketplace in India carries obligations that a normal store doesn't. In broad terms, and subject to current rules:</p>
+<h2>Commission models</h2>
+<table>
+  <thead><tr><th>Model</th><th>How it works</th><th>Often suits</th></tr></thead>
+  <tbody>
+    <tr><td>Percentage per sale</td><td>You keep a fixed share of each order's value</td><td>Most general marketplaces; easy for vendors to understand</td></tr>
+    <tr><td>Fixed fee per sale or item</td><td>A flat amount per order or item</td><td>Products or services with similar prices</td></tr>
+    <tr><td>Category-based rates</td><td>Different percentages for different categories</td><td>Catalogues where margins vary by category</td></tr>
+    <tr><td>Vendor subscription</td><td>A monthly or yearly fee, with low or no commission</td><td>Niches with steady, regular sellers</td></tr>
+    <tr><td>Hybrid</td><td>A smaller subscription plus a lower commission</td><td>Marketplaces offering extra services to vendors</td></tr>
+  </tbody>
+</table>
+<p>Then settle the details that cause arguments later:</p>
 <ul>
-  <li>Under GST, an e-commerce operator generally has to register and may need to collect tax at source (TCS) on sales that vendors make through the platform</li>
-  <li>Vendors selling through a marketplace usually need their own GST registration, though exemptions for small sellers have changed over time</li>
-  <li>Consumer protection rules for e-commerce generally expect marketplaces to show seller details, run a grievance redressal process and avoid misleading practices</li>
-  <li>You'll need clear vendor terms, buyer terms, and returns and privacy policies</li>
+  <li>Is commission calculated on the product price alone, or including shipping and tax? Ask your CA how this interacts with GST</li>
+  <li>Who absorbs payment gateway fees: you, the vendor or a split?</li>
+  <li>What happens to commission when an order is cancelled, returned or partly refunded?</li>
 </ul>
-<p>This isn't legal or tax advice. Speak to your CA and a lawyer before launch, because these rules shape your commission structure, invoices and payouts.</p>
 
-<h2>Vendor onboarding and quality control</h2>
+<h2>Payment flow and vendor payouts</h2>
+<p>In most WooCommerce marketplaces the buyer pays you, and you pay vendors later after deducting commission. Three common ways to handle payouts:</p>
+<ul>
+  <li><strong>Manual payouts on a schedule:</strong> you review vendor earnings weekly or fortnightly and pay by bank transfer. Simplest to start with and easy to control</li>
+  <li><strong>Withdrawal requests:</strong> vendors request their available balance from their dashboard, and you approve and pay it, often above a minimum amount</li>
+  <li><strong>Automated split settlement:</strong> some Indian payment gateways offer marketplace products that route each vendor's share to their bank account. These usually need separate approval, KYC for each vendor and a plugin integration that supports them</li>
+</ul>
+<p>Whichever you choose, hold each vendor's earnings until the return window closes, so you aren't chasing money for refunded orders, and give vendors a clear statement of sales, commission, fees and payouts. How you hold and move sellers' money can have regulatory implications too, so check your setup with your CA and your gateway. For the basics, see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a> and <a href="/blog/payment-gateways-india-compared/">how to compare payment gateways</a>.</p>
+
+<h2>Vendor onboarding, KYC and quality control</h2>
 <p>A marketplace is judged by its weakest seller. Build a simple, firm process:</p>
 <ol>
   <li><strong>Application:</strong> business details, what they sell and sample photos</li>
-  <li><strong>Verification:</strong> PAN, GSTIN where applicable and bank details, checked before the first payout</li>
-  <li><strong>Agreement:</strong> commission, dispatch times, returns, and what happens if standards slip</li>
-  <li><strong>Listing guidelines:</strong> photo standards, description format and pricing rules, with new products approved before they go live</li>
-  <li><strong>Training:</strong> a short guide or video on using the vendor dashboard</li>
+  <li><strong>KYC:</strong> PAN, GSTIN where applicable, business address and bank details, verified before the first payout. Some categories need specific licences, such as food safety registration for food sellers, so check what applies in your niche</li>
+  <li><strong>Agreement:</strong> commission, dispatch times, returns, prohibited items and what happens if standards slip</li>
+  <li><strong>Listing guidelines:</strong> photo and description standards, with new products approved before they go live</li>
 </ol>
-<p>Many small vendors struggle with product photos and descriptions. Offering help, or a done-for-you listing service, lifts quality across the whole site.</p>
+<p>Give vendors a role with only the access they need, never admin rights; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>. Store KYC documents securely and explain how you use them in your privacy policy. Many small vendors struggle with product photos and descriptions, so offering help lifts quality across the whole site.</p>
 
-<h2>Day-to-day operations</h2>
+<h2>GST, TCS and legal basics for Indian marketplaces</h2>
+<p>A marketplace in India carries obligations that a normal online store doesn't. In broad terms, and subject to current rules, which do change:</p>
 <ul>
-  <li><strong>Shipping:</strong> vendors ship their own orders, or stock is collected centrally. Vendor shipping is easier to start but harder to control</li>
-  <li><strong>Customer support:</strong> buyers will contact you, not the vendor, so decide who answers what and how fast vendors must respond</li>
-  <li><strong>Returns and disputes:</strong> a clear process for damaged items, wrong products and delays</li>
-  <li><strong>Reviews:</strong> product and vendor ratings help buyers choose and keep sellers on their toes</li>
-  <li><strong>Performance tracking:</strong> dispatch times, cancellations and complaints for each vendor</li>
+  <li><strong>Registration:</strong> an e-commerce operator that is required to collect tax at source generally has to register under GST, whatever its turnover</li>
+  <li><strong>TCS:</strong> operators are generally required to collect tax at source on taxable sales that vendors make through the platform, deposit it and file a TCS return; vendors can then claim credit for it</li>
+  <li><strong>Income tax TDS:</strong> separate income tax rules (Section 194-O) can require e-commerce operators to deduct TDS on sellers' sales</li>
+  <li><strong>Vendor registration:</strong> marketplace sellers have usually needed their own GST registration, though exemptions for small sellers have changed over time</li>
+  <li><strong>Consumer protection:</strong> e-commerce rules generally expect marketplaces to show seller details, run a grievance redressal process and avoid misleading practices</li>
 </ul>
+<p>Rates and thresholds have changed more than once, so treat this as a list of questions for your CA, not tax or legal advice. Who issues each invoice, and under whose GSTIN, depends on your model, and the plugin must be set up to match. Have a lawyer draft your vendor terms, buyer terms, returns and privacy policies. For invoicing in WooCommerce generally, see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>.</p>
 
-<h2>Hosting, speed and security at scale</h2>
-<p>A marketplace has many people logging in, uploading images and editing products, which means more server load and more risk than a simple store.</p>
+<h2>Shipping, returns and support</h2>
+<p>Vendors can ship their own orders, or stock can be collected centrally; vendor shipping is easier to start but harder to control, and a mixed cart may arrive as several parcels. Buyers will contact you rather than the vendor, so set response times for vendors, a clear process for damaged or wrong items, and track dispatch times, cancellations and complaints per vendor. For courier and rate options, see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+
+<h2>Hosting and performance at scale</h2>
+<p>A marketplace has many people logging in, uploading images and editing products at once. Logged-in vendors and shoppers with items in their cart usually bypass page caching, so the server does more work per visitor than on a simple store.</p>
 <ul>
-  <li>Choose hosting with room to grow, not the cheapest shared plan</li>
-  <li>Compress vendor-uploaded images automatically</li>
-  <li>Give vendors only the access they need, never admin rights</li>
-  <li>Test updates on a staging site first, since marketplace plugins touch orders and payouts</li>
-  <li>Keep daily backups, including the database</li>
+  <li><strong>Hosting:</strong> start on a plan with guaranteed resources rather than the cheapest shared plan; see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a></li>
+  <li><strong>Object caching:</strong> Redis or Memcached, if your host supports it, speeds up pages that can't be page-cached</li>
+  <li><strong>Images:</strong> resize and compress vendor uploads automatically, cap upload sizes and use a CDN</li>
+  <li><strong>Lean plugins and reliable cron:</strong> every add-on runs on dashboards and checkout, and order emails and payout tasks run more reliably on a real server cron</li>
+  <li><strong>Safety:</strong> test updates on staging, keep daily backups including the database, and use two-factor login for admins</li>
 </ul>
+<p>The <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a> covers caching around cart and checkout, object caching and database tidy-up in more detail.</p>
 
-<h2>Start small, then grow</h2>
-<p>Launch with one category, one region or a small group of trusted vendors. Prove that buyers come and that vendors fulfil orders reliably, then expand. Cost depends on the plugin and plan, custom features, design, payment and shipping integrations, and ongoing maintenance; the <a href="/website-cost-calculator/">website cost calculator</a> gives a starting point.</p>
+<h2>Common mistakes to avoid</h2>
+<ul>
+  <li>Choosing a plugin before deciding the commission, payout and tax model</li>
+  <li>Launching with lots of unvetted vendors and thin listings</li>
+  <li>Paying vendors immediately, then chasing them for refunded orders</li>
+  <li>Leaving GST and TCS questions until the first filing is due</li>
+  <li>Having no plan to bring buyers; vendors leave quickly if they get no orders</li>
+</ul>
+<p>Launch with one category, one region or a small group of trusted vendors, prove that buyers come and vendors deliver, then expand. Cost depends on the plugin and plan, custom features, design, integrations and ongoing maintenance; the <a href="/website-cost-calculator/">website cost calculator</a> gives a starting point.</p>
 
-<p>Planning a marketplace? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/website-for-startups/">websites for startups</a> if you're launching a new venture.</p>
+<h2>FAQs</h2>
+<h3>Can WooCommerce handle a multi-vendor marketplace?</h3>
+<p>Yes. With a multi-vendor plugin, WooCommerce can run vendor accounts, split orders, commissions and payouts. How well it scales depends mostly on hosting, add-ons and maintenance.</p>
+<h3>Which multi-vendor plugin is best for WooCommerce?</h3>
+<p>There isn't one best plugin for every marketplace. Shortlist two or three, check their current features against your commission, payout, shipping and invoicing needs, and test them on a staging site before deciding.</p>
+<h3>Do I need GST registration to run a marketplace in India?</h3>
+<p>In general, e-commerce operators that must collect TCS are required to register under GST regardless of turnover, but the rules depend on your model and change over time. Confirm with your CA before launch.</p>
+<h3>Can vendors be paid automatically?</h3>
+<p>Yes, through gateway marketplace products that split payments, if your plugin supports them and the gateway approves your account. Many marketplaces start with manual scheduled payouts and automate once volumes justify it.</p>
+
+<p>Planning a marketplace and want it built on a setup that can grow? I set up and customise WooCommerce marketplaces, test multi-vendor orders, refunds and payouts on staging before launch, and explain each choice in plain language. See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/website-for-startups/">websites for startups</a> if you're launching a new venture.</p>
 `,
   },
   {
@@ -33234,14 +33485,16 @@ Template: astra
   },
   {
     slug: 'rebranding-your-website',
-    seoTitle: 'Rebranding Your Website After a Name or Brand Change',
-    title: 'Rebranding Your Website: What to Update After a Name or Brand Change',
-    description: 'What to update on your website after a rebrand or business name change: logo and design, keeping or changing the domain, redirects, listings and protecting SEO.',
+    seoTitle: 'Rebranding Your Website: SEO-Safe Steps and Checklist',
+    title: 'Rebranding Your Website: What to Update, How to Protect SEO and a Launch Checklist',
+    description: 'How to rebrand your website without losing SEO: what to update, keeping URLs, 301 redirect maps, moving domains in Search Console and a launch checklist.',
     date: '2026-10-01',
+    updated: '2026-10-11',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-seo-services'],
     body: `
-<p>A rebrand touches almost everything customers see: your name, logo, colours, tone of voice and sometimes your domain. The website is where it all comes together, and it's also where a rushed rebrand does the most damage, through broken links, confused customers and lost Google rankings. Here's how to update your website after a rebrand or business name change, in a sensible order.</p>
+<p>A rebrand touches almost everything customers see: your name, logo, colours, tone of voice and sometimes your domain. The website is where it all comes together, and it's also where a rushed rebrand does the most damage, through broken links, confused customers and lost Google rankings.</p>
+<p>The short version: decide exactly what is changing, keep your existing URLs wherever you can, 301-redirect anything that must change, update every brand asset and every mention of the old name, use Search Console's Change of Address tool if the domain changes, then tell customers and watch your data closely for a few months. Here is how to do each step in a sensible order, with a launch checklist at the end.</p>
 
 <h2>Decide what's actually changing</h2>
 <p>"Rebrand" can mean very different jobs, and each level adds work and risk:</p>
@@ -33253,7 +33506,45 @@ Template: astra
     <tr><td>New name and new domain</td><td>All of the above, plus redirects and a full domain move</td><td>Highest</td></tr>
   </tbody>
 </table>
-<p>Before announcing a new name, check it isn't already used or trademarked by someone in your field (a trademark attorney can advise), and secure the matching domain and social handles. If you're also planning a redesign, consider staging the work, for example launching the new look on your current domain first and moving domains once it has settled.</p>
+<p>Before announcing a new name, check it isn't already used or trademarked by someone in your field (a trademark attorney can advise), and secure the matching domain and social handles. If you're also planning a redesign, consider staging the work: launch the new look on your current domain first and move domains once it has settled, so you can tell which change caused any drop.</p>
+
+<h2>Keep your URLs wherever you can</h2>
+<p>Google ranks pages, and each URL carries its history: links from other sites, bookmarks and the trust it has built. The safest rebrand changes the design and the words but leaves URLs alone. Don't rename a working URL just because it mentions the old name, unless it would genuinely confuse visitors.</p>
+<p>When URLs must change, because services were renamed, pages merged or the menu restructured, every old URL needs a permanent (301) redirect to its closest new equivalent. Build a redirect map before launch:</p>
+<ol>
+  <li>List every URL on the old site from a crawl, your XML sitemap and Search Console's top pages, plus pages with backlinks</li>
+  <li>Match each one to the most relevant new page, one to one, in a spreadsheet</li>
+  <li>Redirect removed pages to the closest relevant page, not all to the homepage</li>
+  <li>Avoid chains, where one redirect points to another; send each old URL straight to its final address</li>
+  <li>After launch, crawl the old URL list and confirm each returns a single 301 to the right page</li>
+</ol>
+<table>
+  <thead><tr><th>Old URL</th><th>New URL</th><th>Note</th></tr></thead>
+  <tbody>
+    <tr><td>/services/oldname-interiors/</td><td>/services/interior-design/</td><td>Renamed service</td></tr>
+    <tr><td>/about-oldname/</td><td>/about/</td><td>Old name removed from URL</td></tr>
+    <tr><td>/offers-2024/</td><td>/offers/</td><td>Retired page, closest match</td></tr>
+  </tbody>
+</table>
+<p>Google's guidance has been to keep redirects in place for at least a year, and longer is safer. For the difference between redirect types, see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>, and the <a href="/blog/redesign-website-without-losing-rankings/">guide to redesigning without losing rankings</a> walks through URL mapping in more detail.</p>
+
+<h2>Keep the domain or change it?</h2>
+<p>A new name doesn't automatically mean a new domain.</p>
+<ul>
+  <li><strong>Keep the domain</strong> if it's neutral or still fits. Nothing needs redirecting and your rankings carry on as before.</li>
+  <li><strong>Change the domain</strong> if it contains the old name and would genuinely confuse customers. This is a project in its own right.</li>
+  <li><strong>Register the new domain anyway,</strong> even if you don't switch yet, so nobody else takes it.</li>
+</ul>
+<h3>Moving domains in Search Console</h3>
+<ol>
+  <li>Verify the new domain as a property in Google Search Console, keeping the old property verified too</li>
+  <li>Put page-by-page 301 redirects in place from the old domain to the new one, following your redirect map</li>
+  <li>In the old property, open Settings and use the Change of Address tool to tell Google about the move; it runs some checks, such as whether the old homepage redirects</li>
+  <li>Submit the new XML sitemap in the new property</li>
+  <li>Update Google Analytics, Google Ads final URLs, social profiles and the most important backlinks you can influence</li>
+  <li>Watch both properties: traffic should shift from old to new over the following weeks</li>
+</ol>
+<p>Requirements change, so check Google's current site move documentation before you start. Keep the old domain renewed for years, and forward email sent to old addresses so customer replies don't bounce. The full process is in <a href="/blog/change-domain-name-without-losing-seo/">how to change your domain name without losing SEO</a>.</p>
 
 <h2>Update the logo, design and brand assets</h2>
 <ul>
@@ -33262,38 +33553,27 @@ Template: astra
   <li>Brand colours and fonts set as global styles, so the change applies everywhere at once</li>
   <li>The default social share image, so links shared on WhatsApp and LinkedIn show the new brand</li>
   <li>Banners, photos with old signage, and PDFs such as brochures, price lists and menus</li>
+  <li>A simple brand sheet with logo files, colour codes and fonts, so designers and staff use the same assets</li>
 </ul>
-<p>For the files you'll need, see <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>. A new logo is also a good moment to decide whether the site needs a full redesign or just a refresh, rather than letting a simple logo swap turn into an unplanned rebuild.</p>
+<p>For the files you'll need, see <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>, and for choosing a palette that works on screen, <a href="/blog/choose-website-colours-fonts/">how to choose website colours and fonts</a>. A new logo is also a good moment to decide between a refresh and a full redesign; see <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a>.</p>
 
 <h2>Find every mention of the old name</h2>
 <p>Old names hide in more places than you'd expect:</p>
 <ul>
   <li>The site title and tagline in WordPress settings, and SEO title templates that add the business name to every page</li>
   <li>Headings, body text, image alt text, the About page and the footer copyright line</li>
-  <li>Privacy policy, terms and refund policy, which name the business and its contact details; if the legal entity has changed too, ask your CA or lawyer what these should say</li>
-  <li>Structured data: your organisation or local business name, logo and social profile links</li>
+  <li>Privacy policy, terms and refund policy; if the legal entity has changed too, ask your CA or lawyer what these should say</li>
+  <li>Structured data: your organisation or local business name, logo and social profile links, plus the site name Google may show in results</li>
   <li>Form notifications, auto-replies, WooCommerce order emails and invoice templates; check with your CA which name and details invoices must show</li>
   <li>Email signatures, sender names, chat widgets and booking confirmations</li>
 </ul>
-<p>A search of the site's database on a staging copy catches most of these, and a crawl of the live site catches the rest.</p>
-
-<h2>Keep the domain or change it?</h2>
-<p>A new name doesn't automatically mean a new domain.</p>
-<ul>
-  <li><strong>Keep the domain</strong> if it's neutral or still fits. Nothing needs redirecting and your rankings carry on as before.</li>
-  <li><strong>Change the domain</strong> if it contains the old name and would genuinely confuse customers. This is a project in its own right, with page-by-page 301 redirects and Search Console's Change of Address tool.</li>
-  <li><strong>Register the new domain anyway,</strong> even if you don't switch yet, so nobody else takes it.</li>
-</ul>
-<p>If you do move, follow <a href="/blog/change-domain-name-without-losing-seo/">how to change your domain name without losing SEO</a>, keep the old domain renewed for years, and keep forwarding email sent to old addresses so customer replies don't bounce.</p>
-
-<h2>Redirect any URLs that change</h2>
-<p>Even on the same domain, rebrands often change URLs: renamed services or products, a page that included the old name, or a restructured menu. Every URL that changes needs a 301 redirect to its closest new equivalent. List old and new URLs in a spreadsheet, avoid redirect chains, and don't rename working URLs just because they mention the old name unless it's genuinely confusing; a page with history is worth keeping. The <a href="/blog/redesign-website-without-losing-rankings/">guide to redesigning without losing rankings</a> walks through URL mapping in detail.</p>
+<p>A search of the database on a staging copy catches most of these, and a crawl of the live site catches the rest. For the markup side, see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
 
 <h2>Google Business Profile and listings</h2>
 <ul>
-  <li>Update your Google Business Profile name, logo, photos and website link. Use the real new name as it appears on your signage and documents, not a keyword-stuffed version. A name change may trigger a review or re-verification, so make it when you can respond quickly.</li>
-  <li>Update social profile names, handles where possible, bios, profile pictures and website links</li>
-  <li>Update directories and platforms such as Justdial, IndiaMART, industry associations and any booking or delivery apps you use</li>
+  <li>Update your Google Business Profile name, logo, photos and website link, using the real new name as it appears on your signage and documents. A name change may trigger a review or re-verification, so make it when you can respond quickly</li>
+  <li>Update social profile names, handles where possible, bios, profile pictures and links</li>
+  <li>Update directories such as Justdial, IndiaMART, associations and any booking or delivery apps</li>
   <li>Refresh ad text, display names and sitelinks in Google Ads and Meta ads</li>
   <li>Plan offline changes too: signage, visiting cards, vehicle branding, packaging and printed QR codes</li>
 </ul>
@@ -33301,7 +33581,7 @@ Template: astra
 
 <h2>Tell customers clearly</h2>
 <ul>
-  <li>A short homepage announcement or banner: "We're now New Name (formerly Old Name)"</li>
+  <li>A short homepage banner: "We're now New Name (formerly Old Name)"</li>
   <li>A paragraph on the About page explaining why the name changed and what stays the same, such as the team, address, service and warranties</li>
   <li>An email to existing customers and a message to WhatsApp contacts who have opted in</li>
   <li>If bank or UPI details change, announce it only through official channels and tell customers how to verify, because changed payment details are a common hook for fraud</li>
@@ -33311,11 +33591,55 @@ Template: astra
 <ul>
   <li><strong>Benchmark first:</strong> note clicks, top pages, brand searches and monthly enquiries from Search Console and analytics</li>
   <li><strong>Keep the old name visible:</strong> people will search for it for months or years, so mention "formerly Old Name" on the About page and footer, and add it as an alternate name in your structured data</li>
-  <li><strong>Test on staging</strong> and launch in a quieter season for your business</li>
-  <li><strong>Watch after launch:</strong> check Search Console for 404 errors, confirm searches for both names find you, and be patient while Google updates titles and your business profile</li>
+  <li><strong>Test on staging</strong> and launch in a quieter season; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
+  <li><strong>Win the new brand search:</strong> a brand-new name has no search history, so make sure the homepage, profiles and listings all use it consistently; see <a href="/blog/rank-for-your-business-name/">how to rank for your business name</a></li>
 </ul>
 
-<p>Planning a rebrand and want the website side handled carefully? See <a href="/website-redesign/">website redesign</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> to protect your rankings through the change.</p>
+<h2>Rebrand launch checklist</h2>
+<h3>Before launch</h3>
+<ul>
+  <li>Full backup of files and database, and a staging copy with the new brand</li>
+  <li>Crawl of the old site saved, redirect map complete and benchmarks recorded</li>
+  <li>New logo, favicon, social image and global styles in place; old-name search done</li>
+  <li>Emails, invoices, forms and legal pages updated and checked</li>
+</ul>
+<h3>Launch day</h3>
+<ul>
+  <li>Go live, then test the homepage, key pages, forms, checkout and SSL on desktop and mobile</li>
+  <li>Test a sample of old URLs for single-step 301s</li>
+  <li>Submit the sitemap; run Change of Address if the domain changed</li>
+  <li>Update Google Business Profile, social profiles and analytics, and publish the announcement</li>
+</ul>
+<h3>First few weeks after</h3>
+<ul>
+  <li>Check Search Console for 404s, indexing problems and crawl errors, and fix redirects as needed</li>
+  <li>Confirm searches for both old and new names find you</li>
+  <li>Work through directories, backlinks you can update and offline materials</li>
+  <li>Compare clicks and enquiries with your benchmark, and be patient while Google updates titles, site name and your profile</li>
+</ul>
+
+<h2>Common rebrand mistakes</h2>
+<ul>
+  <li>Changing name, domain, design and URL structure all at once with no redirect map</li>
+  <li>Redirecting every old page to the homepage</li>
+  <li>Letting the old domain expire a year later, breaking every redirect and old email address</li>
+  <li>Forgetting SEO title templates, schema and invoice templates that still show the old name</li>
+  <li>Removing every trace of the old name, so people searching for it can't find you</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Will rebranding my website hurt my Google rankings?</h3>
+<p>A new logo and colours on the same URLs carries little risk. A name change can affect brand searches for a while, and a domain change carries the most risk. Keeping URLs, redirecting carefully and monitoring Search Console keeps any dip as small and short as possible.</p>
+<h3>How long should I keep 301 redirects after a rebrand?</h3>
+<p>Google's guidance has been at least a year, but many businesses keep them indefinitely because old links and bookmarks keep sending visitors. Keep the old domain renewed for as long as the redirects matter.</p>
+<h3>Do I need to change my domain when I change my business name?</h3>
+<p>No. If the current domain is neutral or still fits, keeping it avoids a domain move entirely. Change it only if the old name in the domain would genuinely confuse customers, and register the new domain either way.</p>
+<h3>How long until Google shows my new brand name?</h3>
+<p>It varies. Titles usually update as pages are recrawled, while the site name in results and your business profile can take longer. Consistent naming across the site, structured data and listings helps.</p>
+<h3>Should I mention my old name on the new website?</h3>
+<p>Yes. A "formerly Old Name" line on the About page and footer, plus an alternate name in structured data, helps customers and Google connect the two names.</p>
+
+<p>Planning a rebrand and want the website side handled carefully? I map redirects, update every brand touchpoint on a staging copy and monitor Search Console after launch. See <a href="/website-redesign/">website redesign</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> to protect your rankings through the change.</p>
 `,
   },
   {

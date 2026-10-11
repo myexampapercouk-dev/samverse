@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Caching Explained: Page, Browser, Object &amp; CDN</title>
-  <meta name="description" content="A plain-English guide to WordPress caching: page caching, browser caching, object caching, OPcache and CDN caching, which plugin to use, what not to cache and how to clear cache safely.">
+  <title>WordPress Caching Explained: Types, Plugins and Testing</title>
+  <meta name="description" content="WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.">
   <meta name="author" content="Sameer Gupta">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-caching-explained/">
-  <meta property="og:title" content="WordPress Caching Explained: Page, Browser, Object &amp; CDN">
-  <meta property="og:description" content="A plain-English guide to WordPress caching: page caching, browser caching, object caching, OPcache and CDN caching, which plugin to use, what not to cache and how to clear cache safely.">
+  <meta property="og:title" content="WordPress Caching Explained: Types, Plugins and Testing">
+  <meta property="og:description" content="WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-caching-explained.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-caching-explained/#article",
-      "headline": "WordPress Caching Explained: How Caching Makes Your Site Faster",
-      "description": "A plain-English guide to WordPress caching: page caching, browser caching, object caching, OPcache and CDN caching, which plugin to use, what not to cache and how to clear cache safely.",
+      "headline": "WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)",
+      "description": "WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
+      "dateModified": "2026-10-11",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-caching-explained/",
       "image": "https://samverse.space/assets/og/blog-wordpress-caching-explained.png",
       "articleSection": "Speed",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "WordPress Caching Explained: How Caching Makes Your Site Faster",
+          "name": "WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)",
           "item": "https://samverse.space/blog/wordpress-caching-explained/"
         }
       ]
@@ -129,22 +129,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Speed</a>
-          <h1>WordPress Caching Explained: How Caching Makes Your Site Faster</h1>
-          <p class="post-dek">A plain-English guide to WordPress caching: page caching, browser caching, object caching, OPcache and CDN caching, which plugin to use, what not to cache and how to clear cache safely.</p>
+          <h1>WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)</h1>
+          <p class="post-dek">WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Sameer Gupta</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · 3 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=WordPress%20Caching%20Explained%3A%20How%20Caching%20Makes%20Your%20Site%20Faster%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=WordPress%20Caching%20Explained%3A%20Page%2C%20Browser%2C%20Object%2C%20OPcache%20and%20CDN%20Caching%20(and%20What%20Not%20to%20Cache)%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=WordPress%20Caching%20Explained%3A%20How%20Caching%20Makes%20Your%20Site%20Faster&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WordPress%20Caching%20Explained%3A%20Page%2C%20Browser%2C%20Object%2C%20OPcache%20and%20CDN%20Caching%20(and%20What%20Not%20to%20Cache)&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/wordpress-caching-explained/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-wordpress-caching-explained.webp" alt="WordPress Caching Explained: How Caching Makes Your Site Faster" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-wordpress-caching-explained.webp" alt="WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -155,99 +155,168 @@
             <ol>
               <li><a href="#the-main-types-of-caching">The main types of caching</a></li>
               <li><a href="#page-caching-the-big-win">Page caching: the big win</a></li>
+              <li><a href="#server-level-caching-on-hosts-like-hostinger">Server-level caching on hosts like Hostinger</a></li>
               <li><a href="#browser-caching">Browser caching</a></li>
-              <li><a href="#object-caching">Object caching</a></li>
+              <li><a href="#object-caching-with-redis-or-memcached">Object caching with Redis or Memcached</a></li>
+              <li><a href="#opcache">OPcache</a></li>
               <li><a href="#cdn-caching">CDN caching</a></li>
               <li><a href="#choosing-a-caching-setup">Choosing a caching setup</a></li>
-              <li><a href="#what-should-not-be-cached">What should not be cached</a></li>
-              <li><a href="#clearing-the-cache">Clearing the cache</a></li>
+              <li><a href="#what-not-to-cache">What not to cache</a></li>
+              <li><a href="#how-to-clear-the-cache">How to clear the cache</a></li>
+              <li><a href="#how-to-test-that-caching-works">How to test that caching works</a></li>
+              <li><a href="#common-caching-mistakes">Common caching mistakes</a></li>
               <li><a href="#caching-won-t-fix-everything">Caching won't fix everything</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Page caching serves ready-made HTML and is the biggest speed win for most sites.</li>
-              <li>Object caching helps dynamic sites; browser and CDN caching speed repeat visits.</li>
-              <li>Use one caching plugin, exclude cart and checkout, and clear cache after changes.</li>
+              <li>Page caching serves ready-made HTML and is the biggest win for most sites; browser and CDN caching speed up files and repeat visits, object caching (Redis or Memcached) helps dynamic sites, and OPcache is usually handled by your host.</li>
+              <li>Use your host's server-level cache where it exists (for example LiteSpeed with the LiteSpeed Cache plugin) or one reputable caching plugin, never two, and always exclude cart, checkout, My Account and logged-in users.</li>
+              <li>Clear caches in order (plugin, server, CDN, browser) after changes, and test that caching works by checking response headers in a private window, then testing forms and the cart.</li>
             </ul>
           </div>
-<p>Every time someone opens a WordPress page, the server normally runs PHP code, queries the database and assembles the page from scratch. Caching saves the finished result so it can be served again instantly. Done right, it's one of the biggest speed improvements you can make.</p>
+<p>Every time someone opens a WordPress page, the server normally runs PHP code, queries the database and assembles the page from scratch. <strong>Caching</strong> saves the result of that work so it can be reused instead of rebuilt. Done right, it's one of the biggest speed improvements you can make; done wrong, it shows visitors stale pages or breaks forms and carts.</p>
+<p>In short: most business websites need <strong>page caching</strong> (from the host or one plugin), <strong>browser caching</strong> for files, and often a <strong>CDN</strong>. Online stores, membership sites and busy admin areas also benefit from <strong>object caching</strong> with Redis or Memcached. <strong>OPcache</strong> runs at server level and is usually switched on by your host. Here is what each one does, how to choose a setup, what never to cache, and how to clear and test it.</p>
 
 <h2 id="the-main-types-of-caching">The main types of caching</h2>
 <table>
-  <thead><tr><th>Type</th><th>What it stores</th><th>Where it lives</th></tr></thead>
+  <thead><tr><th>Type</th><th>What it stores</th><th>Where it lives</th><th>Helps most with</th></tr></thead>
   <tbody>
-    <tr><td>Page caching</td><td>Complete HTML pages</td><td>Server (plugin or host)</td></tr>
-    <tr><td>Browser caching</td><td>Images, CSS, JS files</td><td>The visitor's browser</td></tr>
-    <tr><td>Object caching</td><td>Database query results</td><td>Server memory (Redis, Memcached)</td></tr>
-    <tr><td>OPcache</td><td>Compiled PHP code</td><td>Server</td></tr>
-    <tr><td>CDN caching</td><td>Files and sometimes pages</td><td>Servers around the world</td></tr>
+    <tr><td>Page caching</td><td>Complete HTML pages</td><td>Server (plugin or host)</td><td>Server response time for visitors who aren't logged in</td></tr>
+    <tr><td>Browser caching</td><td>Images, CSS, JavaScript, fonts</td><td>The visitor's browser</td><td>Repeat visits and moving between pages</td></tr>
+    <tr><td>Object caching</td><td>Results of database queries</td><td>Server memory (Redis, Memcached)</td><td>Stores, memberships, logged-in users, the admin</td></tr>
+    <tr><td>OPcache</td><td>Compiled PHP code</td><td>Server memory</td><td>Every request that runs PHP</td></tr>
+    <tr><td>CDN caching</td><td>Files, and sometimes whole pages</td><td>Servers around the world</td><td>Visitors far from your server, traffic spikes</td></tr>
   </tbody>
 </table>
 
 <h2 id="page-caching-the-big-win">Page caching: the big win</h2>
-<p>Page caching saves a ready-made HTML copy of each page. Instead of running WordPress for every visitor, the server hands over the saved copy. For most business websites, whose pages don't change per visitor, this dramatically cuts server response time.</p>
+<p>Page caching saves a ready-made HTML copy of each page. Instead of running WordPress for every visitor, the server hands over the saved copy. For most business websites, whose pages look the same to every visitor, this cuts server response time dramatically; see <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time</a>.</p>
+<p>Page caching can be done by a plugin, which saves HTML files that the server sends, or at server level, where the web server itself (for example LiteSpeed, Nginx or Varnish) serves cached pages before WordPress even loads. Server-level caching is usually faster. Useful settings to look for:</p>
+<ul>
+  <li><strong>Cache lifespan:</strong> how long a copy is kept before it's rebuilt</li>
+  <li><strong>Preloading:</strong> building cached copies in advance so the first visitor doesn't get a slow, uncached page</li>
+  <li><strong>Automatic purging:</strong> clearing a page's cache when you update it</li>
+  <li><strong>Separate mobile cache:</strong> only needed if your theme serves different HTML to phones</li>
+</ul>
 
 <aside class="inline-cta">
   <strong>Need help with speed optimization?</strong>
   <p>WordPress &amp; WooCommerce speed optimization service: a full audit, caching, image, plugin, script and database fixes, and a before-and-after report.</p>
-  <div><a href="/wordpress-speed-optimization/" class="link-inline">See Speed Optimization →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20Caching%20Explained%3A%20How%20Caching%20Makes%20Your%20Site%20Faster%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/wordpress-speed-optimization/" class="link-inline">See Speed Optimization →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20Caching%20Explained%3A%20Page%2C%20Browser%2C%20Object%2C%20OPcache%20and%20CDN%20Caching%20(and%20What%20Not%20to%20Cache)%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="browser-caching">Browser caching</h2>
-<p>Browser caching tells visitors' browsers to keep files like your logo, fonts and stylesheets for a while, so repeat visits and page-to-page navigation load faster. It's set with cache headers, usually by your caching plugin or host.</p>
+<h2 id="server-level-caching-on-hosts-like-hostinger">Server-level caching on hosts like Hostinger</h2>
+<p>Many hosts now build caching into the server, so check what yours provides before installing anything:</p>
+<ul>
+  <li><strong>LiteSpeed servers:</strong> hosts that run LiteSpeed, which has included many Hostinger plans, pair the server's built-in cache with the free LiteSpeed Cache plugin. The plugin controls the server cache rather than creating its own, and also handles extras like image and CSS optimisation. Check your hosting panel to confirm which server your plan uses</li>
+  <li><strong>Hosting panel caches:</strong> some panels, Hostinger's hPanel among them, have their own cache settings and a purge button; check the current docs for where these live</li>
+  <li><strong>Managed WordPress hosts:</strong> many run their own page caching and advise against, or block, other caching plugins</li>
+</ul>
+<p>If a LiteSpeed-hosted site is still slow, see <a href="/blog/hostinger-website-slow-fix/">WordPress site slow on Hostinger</a>.</p>
 
-<h2 id="object-caching">Object caching</h2>
-<p>Object caching stores the results of database queries in memory. It helps most on dynamic sites that can't be fully page-cached: WooCommerce stores, membership sites and sites with many logged-in users. It needs Redis or Memcached support from your host.</p>
+<h2 id="browser-caching">Browser caching</h2>
+<p>Browser caching tells visitors' browsers to keep files like your logo, fonts and stylesheets for a set time, so repeat visits and page-to-page navigation load faster. It's set with cache headers, usually by your caching plugin or host. Static files can be cached for a long time because WordPress and most plugins add version numbers to file addresses when they change. The HTML page itself should have a short browser lifespan, or visitors may keep seeing an old version.</p>
+
+<h2 id="object-caching-with-redis-or-memcached">Object caching with Redis or Memcached</h2>
+<p>WordPress already caches database results in memory, but only for the length of a single page load. A <strong>persistent object cache</strong> keeps those results in Redis or Memcached between requests, so repeated queries for menus, settings and product data don't hit the database every time.</p>
+<ul>
+  <li>It helps most on pages that can't be page-cached: WooCommerce cart and checkout, membership and course sites, and the admin</li>
+  <li>It needs Redis or Memcached on the server plus a connector plugin, so check your host supports it; WordPress's Site Health screen may suggest it</li>
+  <li>It isn't a fix for slow, bloated queries; see <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a></li>
+</ul>
+
+<h2 id="opcache">OPcache</h2>
+<p>PHP is compiled before it runs. OPcache keeps the compiled code in server memory, so PHP doesn't recompile WordPress files on every request. It's a server setting rather than something a plugin does, and most decent hosts enable it. If you're unsure, ask your host or check the PHP settings in your hosting panel.</p>
 
 <h2 id="cdn-caching">CDN caching</h2>
-<p>A CDN stores copies of your files on servers closer to your visitors; see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
+<p>A CDN stores copies of your files on servers closer to your visitors, which helps when they are spread across India or abroad. Most CDNs cache images, CSS and JavaScript by default; caching whole HTML pages at the CDN is possible but needs careful rules so dynamic pages are never served from the edge. See <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
 
 <h2 id="choosing-a-caching-setup">Choosing a caching setup</h2>
+<table>
+  <thead><tr><th>Your site</th><th>A sensible setup</th></tr></thead>
+  <tbody>
+    <tr><td>Business site on a LiteSpeed host</td><td>LiteSpeed Cache plugin with the server cache, browser caching, optional CDN</td></tr>
+    <tr><td>Business site on another shared host</td><td>One reputable caching plugin, such as WP Rocket (paid), W3 Total Cache or WP Super Cache</td></tr>
+    <tr><td>Managed WordPress hosting</td><td>The host's built-in caching; add only what the host allows</td></tr>
+    <tr><td>WooCommerce store</td><td>Page caching with store exclusions, object caching, CDN for images</td></tr>
+    <tr><td>Membership or course site</td><td>Object caching, with page caching for logged-out visitors only</td></tr>
+  </tbody>
+</table>
+<p>Whatever you choose, use only one page-caching plugin. Two caching plugins fighting each other cause strange errors and stale pages.</p>
+
+<h2 id="what-not-to-cache">What not to cache</h2>
 <ul>
-  <li><strong>Check your host first:</strong> many managed hosts include server-level caching and advise against extra caching plugins</li>
-  <li><strong>LiteSpeed servers:</strong> the LiteSpeed Cache plugin works with the server's built-in cache</li>
-  <li><strong>Other servers:</strong> a reputable caching plugin such as WP Rocket (paid), W3 Total Cache or WP Super Cache</li>
-  <li><strong>Use only one caching plugin.</strong> Two caching plugins fighting each other cause strange errors</li>
+  <li><strong>WooCommerce cart, checkout and My Account pages:</strong> these are different for every shopper, and caching them can show one customer another's cart or details</li>
+  <li><strong>Logged-in users:</strong> they see admin bars, account details and personalised content</li>
+  <li><strong>Shoppers with items in the cart:</strong> WooCommerce sets cookies that caching tools normally use to bypass the cache, so don't override that</li>
+  <li><strong>Personalised or fast-changing content:</strong> pages based on location, live stock or prices that change by the minute</li>
+  <li><strong>The admin area and login page</strong></li>
 </ul>
+<p>Forms need care too. WordPress security tokens (nonces) generally expire within a day, so a page cached for longer can serve an expired token and the form fails. Keep the cache lifespan shorter than that on form pages, or use a plugin that handles it, and test forms after enabling caching. Good caching plugins exclude standard WooCommerce pages automatically, but always check. For store-specific fixes, see the <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a>.</p>
 
-<h2 id="what-should-not-be-cached">What should not be cached</h2>
+<h2 id="how-to-clear-the-cache">How to clear the cache</h2>
+<p>If you update a page and don't see the change, an old cached copy is probably being served. Clear the layers in this order:</p>
+<ol>
+  <li><strong>Plugin cache:</strong> use your caching plugin's purge option</li>
+  <li><strong>Server cache:</strong> purge from your hosting panel if it has its own cache</li>
+  <li><strong>CDN cache:</strong> purge the changed files or the whole site from the CDN dashboard</li>
+  <li><strong>Browser cache:</strong> hard refresh (Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac) or check in a private window</li>
+</ol>
+<p>Clear the cache after design changes, theme edits and plugin updates. Most plugins clear a page's cache automatically when you update it, but not always for menus, widgets or global styles. Edits not appearing? See <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>, and for stylesheets specifically, <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a>.</p>
+
+<h2 id="how-to-test-that-caching-works">How to test that caching works</h2>
+<ol>
+  <li>Log out, or use a private window, because logged-in users usually bypass the cache</li>
+  <li>Load a page twice; the first visit may build the cache</li>
+  <li>Open your browser's developer tools, go to the Network tab, click the page request and check the response headers. Look for headers such as <code>x-litespeed-cache: hit</code>, <code>cf-cache-status: HIT</code>, <code>x-cache</code> or <code>age</code>; names vary by host and CDN</li>
+  <li>Compare server response time before and after with a speed tool; see <a href="/blog/website-speed-test-tools-explained/">website speed test tools explained</a></li>
+  <li>Submit every form, and on a store add a product to the cart in one browser and check a second browser doesn't show it</li>
+</ol>
+
+<h2 id="common-caching-mistakes">Common caching mistakes</h2>
 <ul>
-  <li>Cart, checkout and account pages on WooCommerce</li>
-  <li>Pages for logged-in users</li>
-  <li>Pages showing personalised or frequently changing information</li>
-  <li>Form pages where security tokens are used (test forms after enabling caching)</li>
+  <li>Running two caching plugins, or a caching plugin on a host that already caches</li>
+  <li>Caching cart, checkout or account pages</li>
+  <li>Turning on every minify and combine option at once, then not knowing what broke the layout</li>
+  <li>Testing only while logged in, and concluding caching does nothing</li>
+  <li>Forgetting the CDN when clearing caches after a change</li>
 </ul>
-<p>Good caching plugins exclude standard WooCommerce pages automatically, but always test.</p>
-
-<p>Running an online store? The <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a> covers cart fragments, object caching and other store-specific fixes.</p>
-
-<h2 id="clearing-the-cache">Clearing the cache</h2>
-<p>If you update a page and don't see the change, the old cached copy may still be served. Clear the cache from your plugin or hosting panel after design changes, plugin updates or theme edits. Most plugins clear a page's cache automatically when you update it.</p>
-
-<p>Edits not appearing? See <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>.</p>
 
 <h2 id="caching-won-t-fix-everything">Caching won't fix everything</h2>
 <p>Caching speeds up delivery, but huge images, heavy page builders and too many scripts still slow the page in the browser. See <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a> and <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
 
-<p>Want it configured properly? See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>Do I need a caching plugin if my host already caches?</h3>
+<p>Often not for page caching. Use the host's cache, and on LiteSpeed hosting use the LiteSpeed Cache plugin, which works with it. Check your host's documentation before adding another caching plugin.</p>
+<h3>Which WordPress caching plugin is best?</h3>
+<p>It depends on your server. On LiteSpeed, LiteSpeed Cache is the natural fit; elsewhere, WP Rocket, W3 Total Cache and WP Super Cache are common choices. A well-configured single plugin matters more than which one you pick.</p>
+<h3>Is Redis object caching worth it?</h3>
+<p>For WooCommerce stores, membership sites and sites with many logged-in users it often helps, because those pages can't be fully page-cached. For a small brochure site with good page caching, the difference is usually small.</p>
+<h3>Why can't I see my changes after updating a page?</h3>
+<p>A cached copy is still being served somewhere. Purge the plugin, server and CDN caches, then hard refresh or check in a private window.</p>
+<h3>Does caching help SEO?</h3>
+<p>Indirectly. Faster server responses help page experience and make it easier for Google to crawl your site, but caching won't make up for weak content.</p>
+
+<p>Want caching set up properly for your host, without breaking forms or the checkout? I configure and test caching layer by layer, then measure the result. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20Caching%20Explained%3A%20How%20Caching%20Makes%20Your%20Site%20Faster%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20Caching%20Explained%3A%20Page%2C%20Browser%2C%20Object%2C%20OPcache%20and%20CDN%20Caching%20(and%20What%20Not%20to%20Cache)%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=WordPress%20Caching%20Explained%3A%20How%20Caching%20Makes%20Your%20Site%20Faster%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=WordPress%20Caching%20Explained%3A%20Page%2C%20Browser%2C%20Object%2C%20OPcache%20and%20CDN%20Caching%20(and%20What%20Not%20to%20Cache)%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=WordPress%20Caching%20Explained%3A%20How%20Caching%20Makes%20Your%20Site%20Faster&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WordPress%20Caching%20Explained%3A%20Page%2C%20Browser%2C%20Object%2C%20OPcache%20and%20CDN%20Caching%20(and%20What%20Not%20to%20Cache)&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/wordpress-caching-explained/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -269,20 +338,25 @@
             <ol>
               <li><a href="#the-main-types-of-caching">The main types of caching</a></li>
               <li><a href="#page-caching-the-big-win">Page caching: the big win</a></li>
+              <li><a href="#server-level-caching-on-hosts-like-hostinger">Server-level caching on hosts like Hostinger</a></li>
               <li><a href="#browser-caching">Browser caching</a></li>
-              <li><a href="#object-caching">Object caching</a></li>
+              <li><a href="#object-caching-with-redis-or-memcached">Object caching with Redis or Memcached</a></li>
+              <li><a href="#opcache">OPcache</a></li>
               <li><a href="#cdn-caching">CDN caching</a></li>
               <li><a href="#choosing-a-caching-setup">Choosing a caching setup</a></li>
-              <li><a href="#what-should-not-be-cached">What should not be cached</a></li>
-              <li><a href="#clearing-the-cache">Clearing the cache</a></li>
+              <li><a href="#what-not-to-cache">What not to cache</a></li>
+              <li><a href="#how-to-clear-the-cache">How to clear the cache</a></li>
+              <li><a href="#how-to-test-that-caching-works">How to test that caching works</a></li>
+              <li><a href="#common-caching-mistakes">Common caching mistakes</a></li>
               <li><a href="#caching-won-t-fix-everything">Caching won't fix everything</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20Caching%20Explained%3A%20How%20Caching%20Makes%20Your%20Site%20Faster%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20Caching%20Explained%3A%20Page%2C%20Browser%2C%20Object%2C%20OPcache%20and%20CDN%20Caching%20(and%20What%20Not%20to%20Cache)%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>

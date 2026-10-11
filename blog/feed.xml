@@ -1463,11 +1463,11 @@
     <description>Why a dedicated thank-you page (or confirmation message) matters after form submissions: reassurance, tracking conversions, next steps, cross-selling and what to include.</description>
   </item>
   <item>
-    <title>WordPress Caching Explained: How Caching Makes Your Site Faster</title>
+    <title>WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)</title>
     <link>https://samverse.space/blog/wordpress-caching-explained/</link>
     <guid>https://samverse.space/blog/wordpress-caching-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>A plain-English guide to WordPress caching: page caching, browser caching, object caching, OPcache and CDN caching, which plugin to use, what not to cache and how to clear cache safely.</description>
+    <description>WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.</description>
   </item>
   <item>
     <title>WooCommerce GST Setup and Invoices: A Guide for Indian Online Stores</title>
@@ -1638,11 +1638,11 @@
     <description>How to write a clear return and refund policy for an Indian online store, what information to display, handling returns and refunds in WooCommerce, and reducing returns in the first place.</description>
   </item>
   <item>
-    <title>WooCommerce Product Variations: Selling Sizes, Colours and Options</title>
+    <title>WooCommerce Product Variations: How to Set Up Sizes, Colours, Stock and Swatches</title>
     <link>https://samverse.space/blog/woocommerce-product-variations/</link>
     <guid>https://samverse.space/blog/woocommerce-product-variations/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to set up variable products in WooCommerce: attributes, variations, per-variation prices, stock and images, colour swatches, size charts and keeping large variation sets manageable.</description>
+    <description>How to set up WooCommerce product variations: attributes vs variations, global attributes, bulk editing, variation images, swatches, stock, SKUs and SEO.</description>
   </item>
   <item>
     <title>WooCommerce Inventory Management: Avoid Overselling and Stockouts</title>
@@ -1925,11 +1925,11 @@
     <description>Why hosts suspend accounts for malware, spam or phishing, what to ask your host, how to clean the account (including every site in it), get reactivated and avoid another suspension.</description>
   </item>
   <item>
-    <title>&quot;This Site May Be Hacked&quot; Label in Google Results: How to Remove It</title>
+    <title>&quot;This Site May Be Hacked&quot; in Google Results: What It Means and How to Remove It</title>
     <link>https://samverse.space/blog/this-site-may-be-hacked-google/</link>
     <guid>https://samverse.space/blog/this-site-may-be-hacked-google/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What the &quot;This site may be hacked&quot; label in Google search results means, why it appears, how to find and clean the hacked content, and how to request a review in Search Console to remove it.</description>
+    <description>What Google's &quot;This site may be hacked&quot; label means, how to confirm it in Search Console, clean up your WordPress site, request a review and stop it returning.</description>
   </item>
   <item>
     <title>WordPress File Permissions Explained: 644, 755 and Keeping Files Safe</title>
@@ -2541,11 +2541,11 @@
     <description>Customise WooCommerce order emails: built-in settings, plugins, template overrides, what each email should say, inbox delivery, and WhatsApp or SMS updates.</description>
   </item>
   <item>
-    <title>Building a Multi-Vendor Marketplace With WooCommerce: A Practical Guide</title>
+    <title>How to Build a WooCommerce Multi-Vendor Marketplace: Plugins, Payouts, GST and Scale</title>
     <link>https://samverse.space/blog/woocommerce-multi-vendor-marketplace/</link>
     <guid>https://samverse.space/blog/woocommerce-multi-vendor-marketplace/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>When a WooCommerce multi-vendor marketplace makes sense, how plugins work, commissions and payouts, GST and legal basics, vendor onboarding and operations.</description>
+    <description>How to build a WooCommerce multi-vendor marketplace: choosing a plugin, commission and payout models, vendor KYC, GST and TCS basics, and hosting at scale.</description>
   </item>
   <item>
     <title>Lazy Loading Explained: Images, Videos and Iframes in WordPress (and When Not to Use It)</title>
@@ -3234,11 +3234,11 @@
     <description>How lab and scientific equipment suppliers can build a website with a spec-rich catalogue, datasheets, calibration and service pages, and tender enquiry forms.</description>
   </item>
   <item>
-    <title>Rebranding Your Website: What to Update After a Name or Brand Change</title>
+    <title>Rebranding Your Website: What to Update, How to Protect SEO and a Launch Checklist</title>
     <link>https://samverse.space/blog/rebranding-your-website/</link>
     <guid>https://samverse.space/blog/rebranding-your-website/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>What to update on your website after a rebrand or business name change: logo and design, keeping or changing the domain, redirects, listings and protecting SEO.</description>
+    <description>How to rebrand your website without losing SEO: what to update, keeping URLs, 301 redirect maps, moving domains in Search Console and a launch checklist.</description>
   </item>
   <item>
     <title>Websites for Drone Service Companies: Aerial Shoots, Surveys, Inspections and Spraying</title>
