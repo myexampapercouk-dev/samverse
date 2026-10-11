@@ -679,6 +679,10 @@ const LINKS = [
   ['google-search-console-reports-explained', '<h2>URL Inspection</h2>', '<p>If the status says "Couldn\'t fetch" or shows an HTTP error instead, here is <a href="/blog/search-console-sitemap-couldnt-fetch/">how to fix a sitemap Search Console couldn\'t fetch</a>.</p>\n\n'],
   ['website-traffic-dropped', '<h2>Step 2: Is the site working?</h2>', '<p>If Google Analytics shows no data at all, or the tag seems to have stopped working, run through <a href="/blog/google-analytics-not-tracking-wordpress/">these checks for GA4 not tracking on WordPress</a> before looking any further.</p>\n\n'],
   ['get-website-indexed-google-faster', '<h2>How long does it take?</h2>', '<p>If your site still doesn\'t appear on Google at all, go through <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn\'t showing on Google</a> and check each cause in Search Console.</p>\n\n'],
+  // Agent 87
+  ['website-for-gyms-fitness-studios', '<h2>Turn visitors into members</h2>', '<p>If you coach clients one to one instead of running a gym, whether at their homes, in a studio or online, see <a href="/blog/website-for-personal-trainers/">websites for personal trainers and fitness coaches</a>.</p>\n\n'],
+  ['website-for-painting-contractors', '<h2>Trust signals for letting a crew into someone\'s home</h2>', '<p>If you also run a paint shop, where shade cards, colour tools and quantity calculators do much of this work, see <a href="/blog/website-for-paint-dealers/">websites for paint dealers and paint shops</a>.</p>\n\n'],
+  ['website-for-ayurveda-wellness-centres', '<h2>Design</h2>', '<p>Selling your own oils, powders or herbal teas online as well? See <a href="/blog/website-for-ayurvedic-product-brands/">websites for Ayurvedic and herbal product brands</a> for product pages, careful claims and subscriptions.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

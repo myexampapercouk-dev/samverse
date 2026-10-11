@@ -4211,6 +4211,8 @@ wp plugin verify-checksums --all</code></pre>
   <li><strong>Contact:</strong> map, hours, phone and WhatsApp</li>
 </ol>
 
+<p>If you coach clients one to one instead of running a gym, whether at their homes, in a studio or online, see <a href="/blog/website-for-personal-trainers/">websites for personal trainers and fitness coaches</a>.</p>
+
 <h2>Turn visitors into members</h2>
 <ul>
   <li><strong>Free trial or first-class offer</strong> with a short sign-up form</li>
@@ -10764,6 +10766,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>WhatsApp for questions</li>
   <li>Online deposits for retreats where suitable</li>
 </ul>
+
+<p>Selling your own oils, powders or herbal teas online as well? See <a href="/blog/website-for-ayurvedic-product-brands/">websites for Ayurvedic and herbal product brands</a> for product pages, careful claims and subscriptions.</p>
 
 <h2>Design</h2>
 <p>A calm, natural design with real photos of the centre, treatment rooms and surroundings. Keep pages fast despite rich imagery; see <a href="/blog/image-optimization-wordpress/">image optimization</a>.</p>
@@ -19142,6 +19146,8 @@ Template: astra
   <li>Finishes explained simply: matt, satin, gloss and texture, and where each works best</li>
 </ul>
 <p>Colour guides also make excellent blog content, because people search for colour ideas long before they search for a painter.</p>
+
+<p>If you also run a paint shop, where shade cards, colour tools and quantity calculators do much of this work, see <a href="/blog/website-for-paint-dealers/">websites for paint dealers and paint shops</a>.</p>
 
 <h2>Trust signals for letting a crew into someone's home</h2>
 <p>Customers worry about mess, delays, diluted paint and workers they don't know. Address each worry directly. A clear, step-by-step process helps:</p>
@@ -41385,6 +41391,253 @@ wp user reset-password &lt;username&gt;</code></pre>
 <p>After fixing any of these, run Test live URL to confirm Google sees the real page, request indexing for your homepage and key pages, and resubmit your sitemap. Then give Google time to recrawl.</p>
 
 <p>If your WordPress site still isn't appearing after these checks, I can find what's blocking it and fix it as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'website-for-personal-trainers',
+    seoTitle: 'Websites for Personal Trainers and Online Fitness Coaches',
+    title: 'Websites for Personal Trainers: Packages, Consultations and Honest Results',
+    description: 'How personal trainers and fitness coaches can plan a website: packages described by scope, home and online coaching, free consultations and honest results.',
+    date: '2026-10-11',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>Someone looking for a personal trainer isn't just choosing a place to work out; they are choosing a person. They want to know whether you train people like them, where and when you can train them, what they get for their money and whether you are qualified and safe. Some will invite you into their home or follow your plan from another city, so trust matters even more than it does for a gym. If you run a gym or studio with several trainers, see <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms, yoga studios and fitness trainers</a>; this guide is for independent trainers and coaches.</p>
+
+<h2>Show who you train and where</h2>
+<p>Start with the two questions every visitor has: "Can you help someone like me?" and "Can you train me where I am?" Name the people you work with best, such as beginners, busy professionals, women returning to exercise after pregnancy, older adults or people training for a sport, but only the groups you are genuinely trained and experienced to help.</p>
+<p>Then be clear about the formats you offer:</p>
+<table>
+<thead><tr><th>Format</th><th>What clients want to know</th><th>What to put on the site</th></tr></thead>
+<tbody>
+<tr><td>In person at a gym or studio</td><td>Which gym, whether they need a membership there, available timings</td><td>Location, any gym entry rules, typical slots</td></tr>
+<tr><td>Home visits</td><td>Whether you cover their area, what equipment you bring, how much space is needed</td><td>Areas covered, travel policy, equipment list, what to prepare</td></tr>
+<tr><td>Online coaching</td><td>Live or app-based, how often you check in, how form gets corrected</td><td>How it works step by step, tools used, response times</td></tr>
+</tbody>
+</table>
+
+<h2>Describe packages by scope, not promises</h2>
+<p>"Fat loss transformation programme" tells a client very little. A package page should explain exactly what they are buying:</p>
+<ul>
+  <li>Number and length of sessions, and how often they happen</li>
+  <li>Whether a written workout plan, progress check-ins or chat support between sessions is included</li>
+  <li>How long the package stays valid, and the rescheduling and cancellation policy</li>
+  <li>Whether diet guidance is included, and what kind (more on this below)</li>
+  <li>What happens at the end: a review, a new plan or a renewal option</li>
+</ul>
+<p>Describe outcomes as goals you work towards ("build strength safely", "feel comfortable in the gym", "prepare for a running event"), not guaranteed results with a number of kilos and a deadline. If you prefer not to publish fees, explain what affects them: format, frequency, travel distance for home visits and package length. Either way, a client should be able to tell which package fits them before they message you.</p>
+
+<h2>Credentials, stated honestly</h2>
+<p>Clients often can't judge a fitness certificate, but they notice when details are vague. List each qualification you genuinely hold with the name of the course, the organisation that issued it and the year. Do the same for specialist training, such as working with older adults, pre- and postnatal clients or injury rehabilitation alongside a physiotherapist. A current first aid and CPR certificate is worth mentioning if you have one.</p>
+<ul>
+  <li>Don't list courses you are still studying as if they are complete; say "currently studying" instead</li>
+  <li>Don't call yourself a nutritionist, dietitian or physiotherapist unless you are qualified as one</li>
+  <li>Be clear about your scope: you don't diagnose injuries or medical conditions, and you will ask clients to check with their doctor when needed</li>
+</ul>
+<p>Food is the usual grey area. General healthy-eating guidance is one thing; meal plans for medical conditions belong with a qualified professional. Many trainers work alongside a nutritionist for this, and if you do, say so; see <a href="/blog/website-for-nutritionists-dietitians/">websites for nutritionists and dietitians</a> for how they present their services.</p>
+
+<h2>Transformation photos and testimonials, handled honestly</h2>
+<p>Before-and-after photos are powerful, which is why they need care. They show people's bodies, so treat them as sensitive personal data:</p>
+<ul>
+  <li>Get written consent that says which photos you will use, where (website, Instagram, ads) and for how long, and that the client can withdraw it</li>
+  <li>Remove photos promptly when someone asks, and crop out faces if a client prefers</li>
+  <li>Never edit, filter or retouch body photos, and take before and after shots in similar light and poses</li>
+  <li>Add honest context: the time period, the training format and anything else that played a part</li>
+  <li>Say plainly that results vary from person to person</li>
+</ul>
+<p>Testimonials work the same way. Use real words from real clients, with permission to use their name or initials, and never write them yourself or polish them into claims the client didn't make. A short quote about how you helped someone feel confident, stay consistent or train around a bad knee is often more persuasive than a dramatic weight-loss figure. See <a href="/blog/collect-display-customer-testimonials/">how to collect and display customer testimonials</a> for a simple process.</p>
+
+<h2>Make the free consultation easy to book</h2>
+<p>For most trainers, the first conversion isn't a package sale but a free consultation or trial session. Give it a clear button on every page and explain what happens: a short call or meeting to talk about goals, training history and any injuries, followed by an honest recommendation.</p>
+<ul>
+  <li>Let people pick a slot from a booking calendar instead of messaging back and forth; see <a href="/blog/online-appointment-booking-website/">online appointment booking on your website</a></li>
+  <li>Keep the form short: name, phone, goal, preferred format, area (for home visits) and preferred times</li>
+  <li>Ask health questions later, through a pre-exercise questionnaire that you store securely, and collect only what you need</li>
+  <li>Add a WhatsApp button for quick questions about areas, timings and packages</li>
+</ul>
+
+<h2>Give online coaching its own page</h2>
+<p>Online clients can't see you in person, so the page has to do more explaining. Cover how the programme is delivered (an app, shared plans or live video sessions), how often you check in, how clients send videos for form feedback, how quickly you reply and what happens if they miss a week. If you coach clients in other countries, mention time zones and currencies. Take payment through a gateway that supports UPI and cards, and publish a clear refund and pause policy before anyone pays.</p>
+
+<h2>Get found locally and build authority</h2>
+<ul>
+  <li>Set up a Google Business Profile as a service-area business if you visit homes, without showing your home address</li>
+  <li>Create pages for what people search, such as "personal trainer in {area}", "home personal trainer {city}" and "online fitness coach"</li>
+  <li>Publish helpful content: beginner routines, exercise technique videos and honest answers to common questions, with sensible safety notes</li>
+  <li>Ask happy clients for Google reviews, and reply to every one</li>
+  <li>Keep pages fast and mobile-friendly, because most people will find you on their phone</li>
+</ul>
+
+<p>Want a website that turns followers and searches into booked consultations? See <a href="/wordpress-website-development/">WordPress website development</a>, or a focused <a href="/landing-page-design/">landing page</a> for a new programme or online coaching launch.</p>
+`,
+  },
+  {
+    slug: 'website-for-paint-dealers',
+    seoTitle: 'Websites for Paint Dealers and Paint Shops: What to Include',
+    title: 'Websites for Paint Dealers and Paint Shops: Shades, Quantities and Contractor Orders',
+    description: 'How paint dealers and shops can plan a website: brand ranges, colour help, quantity calculators with honest assumptions, painter referrals and bulk orders.',
+    date: '2026-10-11',
+    category: 'Industries',
+    related: ['wordpress-website-development', 'landing-page-design'],
+    body: `
+<p>A paint shop serves very different customers across the same counter. A homeowner wants help choosing a colour and working out how much to buy. A painter wants the right product tinted quickly and ready when they arrive. A builder or housing society wants a quotation for a large order delivered to site. A good website helps all of them before they visit or call. This guide is for dealers and retailers; if you do the painting yourself, see <a href="/blog/website-for-painting-contractors/">websites for painting contractors</a> instead.</p>
+
+<h2>Who visits a paint dealer's website</h2>
+<table>
+<thead><tr><th>Visitor</th><th>What they want</th><th>Where to send them</th></tr></thead>
+<tbody>
+<tr><td>Homeowner</td><td>Colour ideas, the right product for each surface, how much to buy, a painter</td><td>Colour pages, product guides, the calculator and the painter referral page</td></tr>
+<tr><td>Painter or contractor</td><td>Stock, tinting, quick collection, trade terms</td><td>A trade page with WhatsApp ordering and opening hours</td></tr>
+<tr><td>Builder, society or facility manager</td><td>A quotation, consistent supply, delivery, GST invoice</td><td>The bulk enquiry form</td></tr>
+</tbody>
+</table>
+<p>Put the main paths on the homepage: "Find a colour", "Work out how much paint" and "Get a bulk quote", along with your address, hours and a WhatsApp button.</p>
+
+<h2>Brand ranges, presented within brand guidelines</h2>
+<p>Most customers arrive knowing a brand or a type of product, so organise your catalogue both ways, plus one more:</p>
+<ul>
+  <li><strong>By category:</strong> interior and exterior emulsions, enamels, wood finishes, primers, putty, waterproofing, textures, and tools such as rollers, brushes and masking tape</li>
+  <li><strong>By brand:</strong> a page for each brand you stock, listing the ranges you actually keep or can order</li>
+  <li><strong>By job:</strong> repainting a bedroom, protecting exterior walls before the monsoon or polishing a wooden door, linking to the products needed</li>
+</ul>
+<p>Paint companies usually have rules for how dealers use their names, logos, product images and promotions, so ask your brand representative for official assets and guidelines before building these pages. Call yourself an authorised dealer only if you have genuinely been appointed. Keep product descriptions in line with the manufacturer's own material instead of inventing performance claims, and link to the brand's technical data sheets for coverage, drying time and surface preparation. Avoid ranking brands against each other; explain which product type suits which surface and let customers choose.</p>
+<p>If you have a tinting machine, say which brands' shades you can mix in the store and how long tinting usually takes.</p>
+
+<h2>Colour visualisers and shade cards</h2>
+<p>Choosing a colour is where most customers get stuck. You don't need to build your own visualiser: many paint brands offer online colour tools and digital shade cards, and you can link to them, or embed them where the brand allows. What you can add is local, practical help:</p>
+<ul>
+  <li>Invite customers to send a photo of their room on WhatsApp so you can suggest a few shade options</li>
+  <li>Explain that colours on a screen never match paint on a wall exactly, because screens, lighting and finish all change how a colour looks</li>
+  <li>Encourage sample pots or test patches, and physical shade cards from the store, before anyone buys a full quantity</li>
+  <li>Let customers type a shade name or code into the enquiry form so you can confirm you can tint it</li>
+  <li>Publish colour combination ideas for living rooms, bedrooms, kitchens and exteriors, linking to the products used</li>
+</ul>
+
+<h2>Quantity calculators with honest assumptions</h2>
+<p>"How much paint do I need?" is one of the questions a paint shop hears most, and a calculator on your site can answer it at any hour. The key is to show your assumptions instead of hiding them:</p>
+<table>
+<thead><tr><th>Input</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Wall length and height, minus doors and windows</td><td>Gives the actual area to be painted</td></tr>
+<tr><td>Number of coats</td><td>Most jobs need more than one, and a big colour change may need extra</td></tr>
+<tr><td>Coverage of the chosen product</td><td>Taken from the manufacturer's data sheet; it varies from product to product</td></tr>
+<tr><td>Surface condition</td><td>New plaster, porous or textured walls usually take more paint</td></tr>
+<tr><td>Primer and putty</td><td>Worked out separately, as they have their own coverage</td></tr>
+</tbody>
+</table>
+<p>Show the result as an approximate range in the pack sizes you sell, with a note that a painter's site measurement will be more accurate. Suggest buying all the tinted paint for a job together, since separate batches can differ slightly in shade. Ask for a phone number only if the customer wants the estimate sent to them or a quote prepared, never just to see the result. See <a href="/blog/website-calculators-lead-generation/">website calculators for lead generation</a> for how to build one that helps rather than annoys.</p>
+
+<h2>Painter referrals, with a clear relationship</h2>
+<p>Customers often ask the shop to recommend a painter. A referral page can be genuinely useful, as long as everyone understands the arrangement:</p>
+<ul>
+  <li>Get each painter's consent before listing their name, phone number, areas and photos of their work</li>
+  <li>Explain whether painters are independent, how you know them and whether you have checked their work</li>
+  <li>Make clear that the customer agrees the job, price and payment with the painter, and who to contact about workmanship</li>
+  <li>Avoid promising results or timelines on a painter's behalf</li>
+</ul>
+<p>Painters are customers too: a trade page can cover early collection, WhatsApp ordering and any brand loyalty schemes, described exactly as the brand runs them.</p>
+
+<h2>Bulk and contractor enquiries</h2>
+<p>Larger orders from builders, housing societies, schools and offices need a proper enquiry form, not just a phone number. Ask for:</p>
+<ul>
+  <li>Project type and location, and whether it covers interiors, exteriors or both</li>
+  <li>Products, brands and shade codes, or an option to upload a bill of quantities or specification</li>
+  <li>Approximate area or quantities, and the delivery date needed</li>
+  <li>Whether a GST invoice is required, with the company name and GSTIN</li>
+</ul>
+<p>State your delivery areas and how you handle large tinting orders, and mention credit or trade accounts only if you offer them. If you also stock tiles, plywood, sanitaryware or hardware, see <a href="/blog/website-for-hardware-building-materials/">websites for hardware and building material suppliers</a> for presenting a wider catalogue.</p>
+
+<h2>Store locator and local SEO</h2>
+<p>Most paint is bought close to home, so local search matters most:</p>
+<ul>
+  <li>Give each branch its own page with address, map, hours, phone, WhatsApp, brands stocked and whether tinting is available; see <a href="/blog/multi-location-business-website/">websites for businesses with multiple branches</a></li>
+  <li>Keep a complete Google Business Profile for every store, with real photos of the counter, tinting machine and displays</li>
+  <li>Target searches such as "paint shop near me", "paint dealer in {area}" and "{brand} paint dealer {city}", using only brands you genuinely deal in</li>
+  <li>Plan seasonal content and offers around festivals and the drier months when many people repaint, within each brand's promotion rules</li>
+</ul>
+
+<p>Want a website that brings homeowners, painters and contractors to your counter? See <a href="/wordpress-website-development/">WordPress website development</a>, or a <a href="/landing-page-design/">landing page</a> for a seasonal painting campaign.</p>
+`,
+  },
+  {
+    slug: 'website-for-ayurvedic-product-brands',
+    seoTitle: 'Websites for Ayurvedic and Herbal Product Brands',
+    title: 'Websites for Ayurvedic and Herbal Product Brands: Ingredients, Claims and Repeat Orders',
+    description: 'How Ayurvedic and herbal D2C brands can plan a website: ingredient and usage pages, careful health claims, genuine certifications, reviews and subscriptions.',
+    date: '2026-10-11',
+    category: 'Industries',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>Ayurvedic and herbal brands selling direct online, from hair oils and herbal teas to churnas and skincare, have a particular challenge. Shoppers are curious and often loyal, but they are wary of exaggerated claims and want to know exactly what is in a product, how to use it and who makes it. Your website has to inform and sell without promising more than you are allowed to say or can honestly back up. If you run a treatment centre or retreat rather than a product brand, see <a href="/blog/website-for-ayurveda-wellness-centres/">websites for Ayurveda and wellness centres</a>; for food products sold direct, see <a href="/blog/website-for-d2c-food-brands/">websites for organic and D2C food brands</a>.</p>
+
+<h2>Know which category each product falls into</h2>
+<p>"Ayurvedic" covers products that can be regulated quite differently in India. Depending on formulation and licence, a product may be treated as an Ayurvedic medicine, a cosmetic or a food or supplement, and each category has its own rules on licences, labelling and advertising. Ayurvedic medicines, for example, generally need a manufacturing licence from the relevant state AYUSH licensing authority. The category depends on the product and its licence, not on how you would like to market it, so confirm it with a regulatory consultant before writing product pages.</p>
+<table>
+<thead><tr><th>Product type</th><th>Examples</th><th>Website care points</th></tr></thead>
+<tbody>
+<tr><td>Ayurvedic medicines</td><td>Churnas, tablets, arishtas, medicated oils</td><td>Show label and licence details, give dosage as on the label, suggest consulting a qualified practitioner, avoid disease claims</td></tr>
+<tr><td>Herbal cosmetics and personal care</td><td>Hair oils, face packs, soaps, ubtans</td><td>Keep to cosmetic claims such as cleansing and conditioning, not treatment claims</td></tr>
+<tr><td>Herbal foods and teas</td><td>Herbal teas, health mixes, honey blends</td><td>Food labelling and licence details, ingredients and nutrition information, no medicinal claims</td></tr>
+</tbody>
+</table>
+<p>Treat this as a starting point for a conversation with your adviser, not a ruling. The same herb, or even a similar-looking hair oil, can fall into different categories.</p>
+
+<h2>Product pages: ingredients, usage and who it's for</h2>
+<p>Ayurvedic shoppers read labels. Give them everything the pack says, with more context:</p>
+<ul>
+  <li><strong>Full ingredient list</strong> with common and botanical names, for example ashwagandha (Withania somnifera), the part of the plant used and the quantities shown on the label</li>
+  <li><strong>How to use it:</strong> amount, time of day, what to take or apply it with and for how long, exactly as on the label</li>
+  <li><strong>Who should check first:</strong> pregnant or breastfeeding women, parents buying for children, people taking other medicines and anyone with allergies</li>
+  <li><strong>Clear photos of the front and back of the pack,</strong> so label details are readable</li>
+  <li><strong>Manufacturer details:</strong> who made it and where, including a third-party unit if one makes it for you</li>
+  <li><strong>Pack size, shelf life and storage,</strong> and where to find batch and expiry details</li>
+</ul>
+<p>Tell your sourcing story honestly too: where herbs come from, how products are made and what quality checks you run, without implying more than you can show.</p>
+
+<h2>Careful wording about health claims</h2>
+<p>This is where Ayurvedic websites most often get into trouble. In general terms, Ayurvedic medicines and cosmetics come under the Drugs and Cosmetics Act and its rules, foods under food safety regulations, and advertising under consumer protection law, along with a separate law restricting advertisements for remedies for certain diseases. ASCI also publishes guidelines on claims. Advertising of Ayurvedic and herbal products has drawn close attention in recent years and interpretations can change, so have a regulatory consultant or lawyer review your claims. Some habits suit every brand:</p>
+<ul>
+  <li>Don't say a product cures, treats or prevents a disease, and keep disease names out of product titles and ads</li>
+  <li>Avoid "no side effects", "100% safe" and "natural, so it can't harm you"</li>
+  <li>Don't promise guaranteed, permanent or quick results</li>
+  <li>Describe traditional use cautiously, only where it is accurate and fits your product's category and licence</li>
+  <li>Don't say "doctor recommended" or "clinically proven" unless you have the evidence and are allowed to say it</li>
+  <li>Have health articles written or reviewed by a qualified Ayurvedic practitioner, named only if they genuinely did the work</li>
+</ul>
+<p>Herbal skincare raises similar questions; see <a href="/blog/website-for-beauty-cosmetics-brands/">websites for beauty and cosmetics brands</a> for more on cosmetic claims and influencer disclosures.</p>
+
+<h2>Certifications, only where genuinely held</h2>
+<p>Certificates build trust only when they are real and clearly explained. Examples might include GMP certification for the manufacturing unit, organic certification for specific ingredients or third-party lab reports. For each one you actually hold, show:</p>
+<ul>
+  <li>What it is and who issued it</li>
+  <li>What it covers: the unit, an ingredient or a specific product</li>
+  <li>Its validity, with a copy available to view or on request</li>
+</ul>
+<p>Be careful with loose phrases. "AYUSH approved", "government certified" or "certified organic" can mislead if what you hold is a manufacturing licence, or if only one ingredient is certified. Describe exactly what you hold, product by product, and remove badges when a certificate lapses.</p>
+
+<h2>Reviews that help without becoming claims</h2>
+<ul>
+  <li>Ask for reviews a few weeks after delivery, once customers have actually used the product</li>
+  <li>Publish critical reviews too, and reply politely</li>
+  <li>Never write, buy or reward fake reviews</li>
+  <li>Agree a moderation policy for reviews claiming a product cured an illness; featuring them can turn a customer's words into your claim, so ask your adviser how to handle them</li>
+  <li>Get permission before using a review or customer photo in ads, and ask influencers to label paid partnerships</li>
+</ul>
+
+<h2>Subscriptions, bundles and repeat orders</h2>
+<p>Many Ayurvedic products are used daily, which suits repeat buying:</p>
+<ul>
+  <li><strong>Subscriptions</strong> for oils, teas and other daily-use products, timed to how long a pack lasts, with easy pause, skip and cancel; see <a href="/blog/woocommerce-subscriptions/">selling subscriptions with WooCommerce</a> for how recurring payments work in India</li>
+  <li><strong>Refill reminders</strong> by email or WhatsApp, sent only with consent</li>
+  <li><strong>Bundles and gift boxes</strong> for festivals and corporate gifting, presented as routines or gift sets rather than treatment courses for a condition</li>
+  <li><strong>Trial sizes</strong> so new customers can try a product before committing</li>
+  <li><strong>Payments</strong> through an Indian gateway with UPI and cards, and COD with sensible limits if your customers expect it</li>
+</ul>
+
+<h2>Store setup, SEO and selling abroad</h2>
+<p>WooCommerce gives you full control over product pages, ingredient content and SEO. Build pages around how people search for ingredients and product types, such as "bhringraj hair oil" or "what is triphala", rather than disease-led pages promising a remedy. Add product schema so price, availability and ratings can appear in Google, and keep the site fast despite rich photography. If you plan to ship abroad, check each destination country's rules for herbal products first, as they can differ a lot from India's.</p>
+
+<p>Planning to sell your Ayurvedic range direct, or fixing a store that isn't converting? See <a href="/woocommerce-developer/">WooCommerce store development</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for a brand site with an enquiry-led catalogue.</p>
 `,
   },
 ];
