@@ -699,6 +699,10 @@ const LINKS = [
   ['wordpress-http-error-image-upload-fix', '<h2>Check 7: Plugins and themes</h2>', '<p>The same firewall and security rules can also block the media library\'s background requests, leaving the grid stuck on a spinner even when uploads work; see <a href="/blog/wordpress-media-library-not-loading-fix/">how to fix a WordPress media library that won\'t load</a>.</p>\n\n'],
   ['search-console-page-indexing-errors', '<h2>Errors that need fixing quickly</h2>', '<p>Seeing "Indexed, though blocked by robots.txt", or important pages listed under "Blocked by robots.txt"? See <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">how to fix both robots.txt statuses and when to use noindex instead</a>.</p>\n\n'],
   ['stop-contact-form-spam', '<h2>4. Validation</h2>', '<p>If you use Google reCAPTCHA and see "Invalid domain for site key", a missing badge or forms that won\'t send, work through <a href="/blog/recaptcha-not-working-wordpress/">how to fix reCAPTCHA on WordPress</a>.</p>\n\n'],
+  // Agent 92
+  ['website-speed-indian-mobile-networks', '<h2>Reduce page weight</h2>', '<p>If your tests show a site that is quick on desktop but slow on phones, see <a href="/blog/wordpress-site-slow-on-mobile-fix/">why a WordPress site is slow on mobile and how to fix it</a>.</p>\n\n'],
+  ['woocommerce-order-management-workflow', '<h2>Add a few custom statuses, only if they help</h2>', '<p>If a customer says they paid but their order is stuck at Pending payment or missing from the list altogether, work through <a href="/blog/woocommerce-orders-not-showing-fix/">how to fix WooCommerce orders that aren\'t showing</a>.</p>\n\n'],
+  ['wordpress-user-roles-explained', '<h2>Best practices</h2>', '<p>If your own menus have vanished or WordPress says "Sorry, you are not allowed to access this page", your role may have changed; see <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">how to fix a missing admin bar or dashboard menus</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

@@ -4017,5 +4017,26 @@
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
     <description>Fix Google reCAPTCHA on WordPress forms: invalid domain or key type errors, a missing badge, failed submissions, v3 score settings and spam still getting through.</description>
   </item>
+  <item>
+    <title>WordPress Site Slow on Mobile but Fast on Desktop? Causes and Fixes</title>
+    <link>https://samverse.space/blog/wordpress-site-slow-on-mobile-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-site-slow-on-mobile-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Why a WordPress site feels fast on desktop but slow on phones, and how to fix it: sliders, images, scripts, popups, fonts, layout shift and real-phone tests.</description>
+  </item>
+  <item>
+    <title>WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails</title>
+    <link>https://samverse.space/blog/woocommerce-orders-not-showing-fix/</link>
+    <guid>https://samverse.space/blog/woocommerce-orders-not-showing-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Orders missing from WooCommerce admin, customers who paid but have no order, or no order email? Check statuses, HPOS sync, webhooks, caching and email setup.</description>
+  </item>
+  <item>
+    <title>WordPress Admin Bar or Dashboard Menus Missing? Fixing &quot;Sorry, You Are Not Allowed to Access This Page&quot;</title>
+    <link>https://samverse.space/blog/wordpress-admin-bar-dashboard-missing-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-admin-bar-dashboard-missing-fix/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Fix a missing WordPress admin bar, vanished dashboard menus or &quot;Sorry, you are not allowed to access this page&quot;: roles, profile setting, plugins, migrations.</description>
+  </item>
 </channel>
 </rss>

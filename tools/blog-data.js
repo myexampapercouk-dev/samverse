@@ -6802,6 +6802,8 @@ wp plugin verify-checksums --all</code></pre>
 </table>
 <p>WooCommerce adds <strong>Shop Manager</strong> (manages products and orders without full site settings) and <strong>Customer</strong> roles.</p>
 
+<p>If your own menus have vanished or WordPress says "Sorry, you are not allowed to access this page", your role may have changed; see <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">how to fix a missing admin bar or dashboard menus</a>.</p>
+
 <h2>Best practices</h2>
 <ul>
   <li><strong>Least privilege:</strong> give the lowest role that lets someone do their job</li>
@@ -6903,6 +6905,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>Try your site on an older phone with mobile data</li>
   <li>Check Search Console's Core Web Vitals report for real-user data</li>
 </ul>
+
+<p>If your tests show a site that is quick on desktop but slow on phones, see <a href="/blog/wordpress-site-slow-on-mobile-fix/">why a WordPress site is slow on mobile and how to fix it</a>.</p>
 
 <h2>Reduce page weight</h2>
 <ul>
@@ -29680,6 +29684,8 @@ Template: astra
   </tbody>
 </table>
 
+<p>If a customer says they paid but their order is stuck at Pending payment or missing from the list altogether, work through <a href="/blog/woocommerce-orders-not-showing-fix/">how to fix WooCommerce orders that aren't showing</a>.</p>
+
 <h2>Add a few custom statuses, only if they help</h2>
 <p>Many Indian stores find "Processing" too broad. Plugins or a little custom code can add statuses such as:</p>
 <ul>
@@ -43489,6 +43495,211 @@ Sitemap: https://www.example.com/sitemap.xml</code></pre>
 <p>Whatever you use, mention it in your privacy policy, then send a test enquiry on desktop and mobile after every change. A form that silently rejects real people costs more than spam; <a href="/blog/contact-form-not-getting-enquiries/">why a contact form stops getting enquiries</a> covers the other checks.</p>
 
 <p>Forms still failing, or tired of fighting spam? I set up and test form protection, email delivery and plugin updates as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-site-slow-on-mobile-fix',
+    seoTitle: 'WordPress Site Slow on Mobile? How to Fix It',
+    title: 'WordPress Site Slow on Mobile but Fast on Desktop? Causes and Fixes',
+    description: 'Why a WordPress site feels fast on desktop but slow on phones, and how to fix it: sliders, images, scripts, popups, fonts, layout shift and real-phone tests.',
+    date: '2026-10-11',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-maintenance'],
+    body: `
+<p>A common complaint: the site opens instantly on the office computer, but customers say it crawls on their phones, and PageSpeed Insights shows a healthy desktop score next to a poor mobile one. Some gap is normal, but a large gap usually has a few specific causes. Here is how to find and fix them.</p>
+
+<h2>Why mobile and desktop scores differ</h2>
+<p>PageSpeed Insights runs two separate lab tests. The mobile test simulates a mid-range phone with a slower processor on a slower mobile connection, so every heavy image and script costs more. The desktop test assumes a faster machine and connection. A lower mobile score doesn't by itself mean something is broken; it means your page has less headroom.</p>
+<p>Two parts of the report matter more than the score:</p>
+<ul>
+<li><strong>Field data</strong> ("Discover what your real users are experiencing"), shown when Google has enough visits from Chrome users. It is reported separately for mobile and desktop and reflects real visitors rather than a simulation.</li>
+<li><strong>The individual metrics</strong>: Largest Contentful Paint (LCP), Interaction to Next Paint (INP) and Cumulative Layout Shift (CLS). Note which one fails on mobile only, because that tells you where to look.</li>
+</ul>
+<p>Google mainly uses the mobile version of your site for indexing, so the mobile experience is the one that counts. For a broader list of causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a>.</p>
+
+<h2>Sliders, hero videos and background animations</h2>
+<p>The top of the page is where most mobile problems start. A homepage slider with five full-width images, a background video or an animated hero section may look fine on a fast laptop, but on a phone the browser has to download, decode and lay out all of it before the main content settles.</p>
+<ul>
+<li>Replace the slider with one strong static image and a clear heading. If you keep a slider, make sure only the first slide loads straight away.</li>
+<li>Don't autoplay a background video on mobile. Show a poster image instead and let people tap to play.</li>
+<li>Check whether your page builder hides desktop sections on mobile with CSS only. "Hidden" sections are often still downloaded, so the phone loads both the desktop and the mobile versions.</li>
+<li>Cut entrance animations on the first screen. Content that fades in late can delay LCP.</li>
+</ul>
+<p>If LCP is the metric failing, <a href="/blog/fix-lcp-largest-contentful-paint/">how to fix slow LCP on WordPress</a> walks through the hero element in detail.</p>
+
+<h2>Oversized images and responsive images</h2>
+<p>A phone screen doesn't need a 2,400-pixel-wide photo. WordPress creates several sizes of each uploaded image and, for images added through the editor, adds <code>srcset</code> and <code>sizes</code> attributes so the browser can pick a smaller file. That only helps when the theme or builder actually uses them. Common ways it breaks:</p>
+<ul>
+<li>Images set as CSS backgrounds in a page builder, which usually load one size for every screen.</li>
+<li>Theme templates that output the full-size image directly.</li>
+<li>Photos uploaded straight from a camera or phone at huge dimensions and never compressed.</li>
+</ul>
+<p>Resize before uploading, compress, use a modern format such as WebP where your setup supports it, and give background images a smaller mobile version if your builder allows it. Don't lazy-load the main image at the top of the page; recent WordPress versions try to avoid this, but plugins and builders can override it. <a href="/blog/image-optimization-wordpress/">Image optimisation for WordPress</a> covers the full workflow.</p>
+
+<h2>Third-party scripts hit phones hardest</h2>
+<p>Chat widgets, analytics and ad tags, heatmaps, social feeds, review widgets and embedded maps all run JavaScript. On a phone's slower processor that work competes with the page itself, which shows up as a poor INP score or a page that looks loaded but doesn't respond to taps.</p>
+<ol>
+<li>List every third-party tool on the site and ask whether anyone still uses it.</li>
+<li>Remove tags that duplicate each other, for example the same analytics added by a plugin and again through a tag manager.</li>
+<li>Load chat widgets only after the visitor interacts or after a delay, if the tool allows it.</li>
+<li>Replace live embeds (maps, videos, social feeds) with a static image or link that loads the real thing on tap.</li>
+</ol>
+<p>Test any "delay JavaScript" setting carefully. It can help, but it can also break menus, forms and checkout.</p>
+
+<h2>Mobile menus, popups and sticky bars</h2>
+<p>Elements that only appear on mobile deserve their own check:</p>
+<ul>
+<li><strong>Mobile menus</strong> built with a heavy mega menu plugin can add a lot of script and markup. A simple menu is usually enough on a phone.</li>
+<li><strong>Popups</strong> that cover the content on load frustrate mobile visitors and add script. Google has long advised against intrusive interstitials on mobile, so show offers later, smaller or as a slim bar.</li>
+<li><strong>Sticky headers, cookie banners and WhatsApp buttons</strong> that appear after a short delay can push content around and add to layout shift.</li>
+</ul>
+
+<h2>Fonts and layout shift on small screens</h2>
+<p>Web fonts often cause problems that only show on mobile. Several families and weights mean several downloads before text looks right, and when the custom font arrives late the text reflows. On a narrow screen, a heading that wraps onto one more line pushes everything below it down.</p>
+<ul>
+<li>Stick to one or two font families and only the weights you use. Host them locally where possible.</li>
+<li>Use <code>font-display: swap</code> with a fallback font of similar proportions.</li>
+<li>Give images, videos, ad slots and embeds a width and height (or aspect ratio) so space is reserved.</li>
+<li>Reserve space for banners and notices instead of inserting them above the content after load.</li>
+</ul>
+<p>If CLS fails on mobile only, <a href="/blog/fix-cls-layout-shift/">how to fix layout shift on WordPress</a> shows how to find the element that moves.</p>
+
+<h2>Test on a real mid-range phone</h2>
+<p>Lab tests are useful, but they are a simulation. Before and after making changes, test the way your customers browse:</p>
+<ul>
+<li>Use an ordinary mid-range Android phone, not the latest flagship, on mobile data rather than office Wi-Fi.</li>
+<li>Open the page in a private tab so no cache or logged-in state helps it.</li>
+<li>Note when the main heading and image appear, whether anything jumps, and how quickly the menu opens when tapped.</li>
+<li>Try the pages that bring enquiries or sales: home, a service or product page, the contact form and, for shops, cart and checkout.</li>
+<li>Connect the phone to a computer and use Chrome's remote debugging if you need to see which files load on the device.</li>
+</ul>
+<p>Make one change at a time, clear every cache and re-test, so you know what actually helped. Field data in PageSpeed Insights and Search Console covers a rolling period of roughly four weeks, so real-user numbers improve gradually rather than overnight.</p>
+
+<p>If your site still drags on phones after these checks, I can test it on real devices and fix the causes rather than chase a score. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> for how I work.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-orders-not-showing-fix',
+    seoTitle: 'WooCommerce Orders Not Showing? How to Find and Fix Them',
+    title: 'WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails',
+    description: 'Orders missing from WooCommerce admin, customers who paid but have no order, or no order email? Check statuses, HPOS sync, webhooks, caching and email setup.',
+    date: '2026-10-11',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-maintenance'],
+    body: `
+<p>"I paid, where's my order?" is a stressful message for any store owner, especially when the Orders screen shows nothing. Missing orders usually fall into one of three problems: the order exists but you can't see it, the payment went through but WooCommerce never heard about it, or the order is fine and only the email is missing. Each has a different fix, so start by working out which one you have. Menu names below may vary slightly with your WooCommerce version.</p>
+
+<h2>First, work out which problem you have</h2>
+<table>
+<thead><tr><th>What you notice</th><th>Most likely cause</th><th>Where to look</th></tr></thead>
+<tbody>
+<tr><td>Customer has an order number, but you can't find it</td><td>A status filter, the trash, or an order storage sync issue</td><td>The status tabs on the Orders screen and the HPOS settings</td></tr>
+<tr><td>Customer was charged, order shows "Pending payment"</td><td>The gateway's confirmation never reached the site</td><td>Order notes, gateway dashboard and webhook settings</td></tr>
+<tr><td>Customer was charged, no order at all</td><td>Payment made on another site, a staging copy or a payment link</td><td>Gateway dashboard, searched by email, phone or payment ID</td></tr>
+<tr><td>Order is in admin, but no email arrived</td><td>An email setting or delivery problem</td><td>WooCommerce email settings and your mail setup</td></tr>
+</tbody>
+</table>
+
+<h2>Check the status tabs and filters</h2>
+<p>Before assuming anything is broken, look properly at the Orders screen. The order may be under a status tab you don't usually check, such as Pending payment, Failed, Cancelled or Draft, or in the trash. Clear any date, customer or search filter and search by the customer's email address rather than their name.</p>
+<p>Also check you're looking in the right place. With High-Performance Order Storage (HPOS) switched on, orders live at WooCommerce → Orders under an address containing <code>page=wc-orders</code>. Older bookmarks pointing to the legacy posts-based screen can show an outdated or empty list. If a staff member can't see orders but an administrator can, check their user role, especially if a role editor plugin has changed the Shop Manager capabilities.</p>
+
+<h2>What "Pending payment" and "Failed" really mean</h2>
+<p>WooCommerce creates the order before the customer pays. Its status then depends on what the gateway reports back:</p>
+<ul>
+<li><strong>Pending payment:</strong> the order exists but WooCommerce hasn't received confirmation of payment. The shopper may have abandoned the payment page, or they paid and the confirmation got lost.</li>
+<li><strong>Failed:</strong> the gateway reported that the payment was declined or didn't complete. The customer may have retried successfully in a separate order.</li>
+<li><strong>Cancelled:</strong> unpaid orders can be cancelled automatically when the "Hold stock" time in the inventory settings runs out, if stock management is on.</li>
+</ul>
+<p>By default the "New order" email to the store is sent when an order moves to Processing, On hold or Completed, not when it's created as Pending. So a pending order can sit in admin without anyone being told. Never mark it as Processing until the gateway dashboard confirms the money arrived.</p>
+
+<h2>Paid, but no order or a stuck order</h2>
+<p>When a customer shows a bank debit but the order stays at Pending payment, the site usually never received the gateway's confirmation. Shoppers who close the tab before being redirected back are the classic case, and a correctly set up webhook is what covers them. Open the order notes, then find the payment in the gateway dashboard and check its status there.</p>
+<p>Common causes include a webhook that was never added, a webhook still pointing at an old domain or staging site after a migration, test keys on a live store, and a firewall or bot protection rule blocking the gateway's callback. <a href="/blog/woocommerce-payment-gateway-not-working-india/">How to fix a payment gateway that isn't working in WooCommerce</a> covers these step by step. If customers can't even get as far as paying, see <a href="/blog/woocommerce-checkout-not-working-fix/">how to fix a WooCommerce checkout that isn't working</a>.</p>
+<p>If the payment exists in the gateway but there's no matching order anywhere, check whether it came through a payment link, a different website on the same gateway account, or a staging copy of your shop that still has live keys.</p>
+
+<h2>HPOS and legacy order storage</h2>
+<p>WooCommerce can store orders in its own dedicated tables (HPOS) or in the older WordPress posts tables. Recent versions use HPOS by default on new stores, and you can see which is active under WooCommerce → Settings → Advanced → Features. There is also a compatibility mode that keeps both copies in sync.</p>
+<p>Problems tend to appear when the two get out of step, for example after switching storage, during a migration or while the sync is still working through a backlog. Signs include orders that appear in one report but not another, or a plugin (an invoicing, shipping or export tool, say) that can't find recent orders because it still reads only the old tables.</p>
+<ul>
+<li>Check the Features screen for a message about orders still waiting to be synchronised.</li>
+<li>Confirm every order-related plugin declares HPOS compatibility; WooCommerce flags incompatible ones on that screen.</li>
+<li>Don't switch storage modes on a live store as a quick fix. Take a full backup and test on staging first, because behaviour differs between versions and setups.</li>
+</ul>
+
+<h2>Caching and scheduled actions</h2>
+<p>The admin area shouldn't be page cached, but other layers can still cause confusion. A persistent object cache such as Redis can serve stale order counts or lists after a fault; flushing it is quick and usually safe. A page cache or CDN rule that caches My Account or the order-received page can show customers an old version, so they think their order is missing.</p>
+<p>WooCommerce also relies on background jobs, listed under WooCommerce → Status → Scheduled Actions. If many past-due actions are piling up, WP-Cron may not be running, which can delay order sync, emails and other tasks. <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a> covers how to fix it with a real server cron.</p>
+
+<h2>The order is there, but the email isn't</h2>
+<p>If the order shows correctly in admin, this is an email problem, not an order problem. Check WooCommerce → Settings → Emails: is "New order" enabled, and is the recipient address correct? Ask customers to check spam and promotions folders. Then test whether WordPress can send email at all, because many servers deliver PHP mail poorly. <a href="/blog/wordpress-not-sending-emails-smtp/">How to fix WordPress not sending emails with SMTP</a> walks through the setup, and an email log plugin will show whether a message was sent and failed or never sent.</p>
+<p>After any fix, place a real low-value order, confirm it in the gateway dashboard and in admin, and check that both the customer and store emails arrive.</p>
+
+<p>If orders keep going missing and you'd rather someone traced it properly, I can audit the checkout, gateway, order storage and email setup together. See <a href="/woocommerce-developer/">WooCommerce development</a> for how I help online stores.</p>
+`,
+  },
+  {
+    slug: 'wordpress-admin-bar-dashboard-missing-fix',
+    seoTitle: 'WordPress Admin Bar or Dashboard Menus Missing? Fixes',
+    title: 'WordPress Admin Bar or Dashboard Menus Missing? Fixing "Sorry, You Are Not Allowed to Access This Page"',
+    description: 'Fix a missing WordPress admin bar, vanished dashboard menus or "Sorry, you are not allowed to access this page": roles, profile setting, plugins, migrations.',
+    date: '2026-10-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>You log in and something is wrong: the black admin bar has vanished from the top of your site, half the dashboard menu is missing, or WordPress says "Sorry, you are not allowed to access this page" on a screen you used yesterday. These problems look alarming but usually come down to a handful of causes. Work through them in order, and take a backup before changing anything in the database.</p>
+
+<h2>Which symptom do you have?</h2>
+<table>
+<thead><tr><th>Symptom</th><th>Start by checking</th></tr></thead>
+<tbody>
+<tr><td>Admin bar missing on the front end only</td><td>Your profile setting, caching, the theme and plugins that hide it</td></tr>
+<tr><td>Some dashboard menus missing</td><td>Your user role, menu-hiding plugins and hosting settings</td></tr>
+<tr><td>"Sorry, you are not allowed to access this page" everywhere</td><td>Your role and, after a migration, the database table prefix</td></tr>
+<tr><td>"Sorry, you are not allowed..." on one screen only</td><td>The plugin that owns that page, or a capability your role lacks</td></tr>
+<tr><td>wp-admin shows a 404, a redirect or a block page</td><td>A security plugin, firewall or changed login address</td></tr>
+</tbody>
+</table>
+
+<h2>Admin bar missing on the front end</h2>
+<p>The admin bar (WordPress calls it the Toolbar) only appears for logged-in users. If it's missing while you browse the site:</p>
+<ul>
+<li><strong>Check your profile.</strong> Go to Users → Profile and make sure "Show Toolbar when viewing site" is ticked. It's set per user, so a colleague may see it while you don't.</li>
+<li><strong>Check you're logged in on the same address.</strong> If you logged in at www.example.com but are viewing example.com, or http instead of https, WordPress may treat you as logged out.</li>
+<li><strong>Check caching.</strong> Caching plugins normally skip logged-in users, but a CDN "cache everything" rule or a server cache can serve the logged-out copy of a page, without the bar.</li>
+<li><strong>Check the theme.</strong> The bar is added through the theme's footer hook. A custom or badly built theme that leaves out <code>wp_footer()</code> breaks it, along with many plugins. Switch to a default theme briefly to test.</li>
+<li><strong>Check plugins and custom code.</strong> Some plugins and snippets hide the bar deliberately using the <code>show_admin_bar</code> filter. WooCommerce also hides it, and redirects away from wp-admin, for users such as customers who lack editing or shop management capabilities.</li>
+</ul>
+
+<h2>Dashboard menus missing: roles and capabilities</h2>
+<p>WordPress shows each menu only to users whose role includes the matching capability. An Editor sees posts and pages but not Plugins or Settings; a Shop Manager sees WooCommerce but not everything else. If menus are missing, first check what role your account actually has under Users → All Users. If you can't see the Users menu at all, you probably aren't an administrator any more.</p>
+<p>Roles can change because someone edited your account, a role editor plugin altered a role's capabilities, or a security clean-up downgraded accounts. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> covers what each role should be able to do. If you have server access, WP-CLI can check and repair this quickly:</p>
+<pre><code>wp user list --fields=ID,user_login,roles
+wp user set-role your-username administrator</code></pre>
+<p>Two other causes are easy to miss. On multisite, some menus, such as installing plugins and themes, are only available to the Super Admin. And some hosts disable plugin and theme installation or the file editor in wp-config.php (using constants such as <code>DISALLOW_FILE_MODS</code> or <code>DISALLOW_FILE_EDIT</code>), which removes those menus for everyone. Ask your host before assuming something is broken.</p>
+
+<h2>Plugins that hide menus, and plugin conflicts</h2>
+<p>Admin menu editors, white-label tools, "client mode" features in page builders and some agency dashboards can hide menus for chosen roles or users. If a developer set the site up, they may have hidden menus to keep the dashboard simple and forgotten to tell you. Look for such a plugin and check its settings before deactivating anything.</p>
+<p>A plugin conflict or PHP error can also stop menus from loading after an update. Test on staging with a default theme, then reactivate plugins one at a time until the problem returns. <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">How to find and fix plugin conflicts</a> explains a safe routine, including how to deactivate plugins over SFTP when you can't reach the dashboard.</p>
+
+<h2>"Sorry, you are not allowed to access this page"</h2>
+<p>This message means WordPress checked your account's capabilities and found the one it needed missing. If it appears on a single screen, the usual reasons are a bookmark to a page belonging to a deactivated or updated plugin, or a page that needs a capability your role doesn't have. Open the dashboard from its main menu rather than an old bookmark, and check whether the plugin is still active.</p>
+<p>If it appears on every admin screen, including the main dashboard, your account has effectively lost its role. Check the role as described above. If the role looks correct and the site was recently moved or restored, the table prefix is the next suspect.</p>
+
+<h2>Broken table prefix after a migration</h2>
+<p>Every WordPress database table starts with a prefix set in wp-config.php, often <code>wp_</code> or a random string. Some migration methods change it. The catch is that WordPress also stores the prefix inside a few database values: your role is saved in user meta under a key such as <code>wp_capabilities</code>, and the list of roles in an option such as <code>wp_user_roles</code>. If the tables were renamed to a new prefix but those keys weren't, WordPress may not be able to find your role, and you can log in yet be allowed to do nothing.</p>
+<ul>
+<li>Confirm the <code>$table_prefix</code> in wp-config.php matches the actual table names.</li>
+<li>In the usermeta table, look for keys starting with the old prefix (capabilities, user_level and similar) and rename them to the new prefix.</li>
+<li>In the options table, rename the old user_roles option to the new prefix.</li>
+</ul>
+<p>Take a full database backup first, and if you're not comfortable editing tables in phpMyAdmin, ask whoever did the migration to fix it. Good migration tools handle this automatically, so it's mainly a problem with manual moves.</p>
+
+<h2>A security plugin hiding or blocking wp-admin</h2>
+<p>Many security plugins can rename the login address, hide wp-admin from logged-out visitors, or allow the dashboard only from certain IP addresses or countries. If you visit /wp-admin/ and get a 404, a redirect to the home page or a block message, that's often the cause. Use the custom login address if you know it; otherwise, rename the security plugin's folder over SFTP to disable it, log in, and fix its settings. A firewall or server rule can also block admin pages outright; see <a href="/blog/wordpress-403-forbidden-error-fix/">how to fix 403 Forbidden on wp-admin</a>. If you can't log in at all, <a href="/blog/wordpress-login-not-working-fix/">how to fix WordPress login problems</a> covers loops, lockouts and lost passwords.</p>
+<p>Finally, if roles changed and nobody on your team made the change, treat it as a possible security issue: check the user list for unknown administrators and change passwords.</p>
+
+<p>If you'd rather have someone untangle roles, plugins and access for you, I can help with this as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
 ];

@@ -611,5 +611,8 @@
  "blog-wordpress-update-failed-fix": "358b208682b754660f9a44844d3911fdd7abcd23",
  "blog-wordpress-media-library-not-loading-fix": "7867c54dcf96123b563a1e2463403edcdf970104",
  "blog-indexed-though-blocked-by-robots-txt-fix": "7622f7c8cbe0fc9a75b8cf11e136b30c615f504a",
- "blog-recaptcha-not-working-wordpress": "4996ece0058e3bf44c1eabdc5aceb21e8241b86a"
+ "blog-recaptcha-not-working-wordpress": "4996ece0058e3bf44c1eabdc5aceb21e8241b86a",
+ "blog-wordpress-site-slow-on-mobile-fix": "6e5b4f555c9b347d44badbd61caf4fa7d0c95e53",
+ "blog-woocommerce-orders-not-showing-fix": "2c01dc64315f83da78a83fffc12397fae1045090",
+ "blog-wordpress-admin-bar-dashboard-missing-fix": "bea57703ac4915d1ba505c81d5f0460f35bf2e7d"
 }
