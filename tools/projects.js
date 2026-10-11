@@ -6,7 +6,7 @@
 // After editing, run: node tools/build-pages.js
 module.exports = [
   { name: 'Third Eye Social',      url: 'https://thirdeye.social/',         study: '/work/third-eye-social/',      tag: 'AI Automation Agency',      thumb: '/assets/work/thirdeye.svg',       color: '#1A1A1A' },
-  { name: 'Southern Flavours',     url: 'https://southernflavours.co.uk/',  study: '/work/southern-flavours/',     tag: 'Restaurant, UK',                                                       color: '#B45309' },
+  { name: 'Southern Flavours',     url: 'https://southernflavours.co.uk/',  study: '/work/southern-flavours/',     tag: 'Restaurant, UK',                                                       color: '#B45309', hideOnHome: true },
   { name: 'Vansh Group',           url: 'https://vansh.group/',             study: '/work/vansh-group/',           tag: 'Electronics Manufacturing',                                            color: '#0EA5E9' },
   { name: 'Studio Agama Interiors', url: 'https://interiorstudioagama.com/', study: '/work/studio-agama-interiors/', tag: 'Interior Design Studio',                                             color: '#A16207' },
   { name: 'Dr. Sunaina Dental Care', url: 'https://drsunainadentalcare.com/', study: '/work/dr-sunaina-dental-care/', tag: 'Dental Clinic',                                                      color: '#0891B2' },
