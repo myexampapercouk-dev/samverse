@@ -654,7 +654,7 @@ const PAGES = [
     type: 'service',
     slug: 'wordpress-malware-removal',
     nav: 'Malware Removal & Security',
-    title: 'WordPress Malware Removal & Hacked Site Repair | Samverse',
+    title: 'WordPress Malware Removal Service: Hacked Site Repair',
     description: 'Hacked WordPress site? Fast malware removal, spam redirect and injected code cleanup, Google blacklist removal help and hardening to stop reinfection.',
     eyebrow: 'Hacked site repair & security',
     h1: 'Hacked WordPress site? <span class="grad">Let\'s fix it fast.</span>',

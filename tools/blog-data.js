@@ -2252,7 +2252,7 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'white-label-wordpress-development-agencies',
-    seoTitle: 'White-Label WordPress Development: A Guide for Agencies',
+    seoTitle: 'How White-Label WordPress Development Works for Agencies',
     title: 'White-Label WordPress Development: How Agencies Scale Without Hiring',
     description: 'White-label WordPress development for agencies: how it works, pricing models, NDAs, quality control and choosing a partner so you can take on more projects.',
     date: '2026-09-27',
@@ -14341,7 +14341,7 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'woocommerce-product-variations',
-    seoTitle: 'WooCommerce Product Variations: Setup, Stock and Swatches',
+    seoTitle: 'WooCommerce Product Variations (Variants): Setup and Stock',
     title: 'WooCommerce Product Variations: How to Set Up Sizes, Colours, Stock and Swatches',
     description: 'How to set up WooCommerce product variations: attributes vs variations, global attributes, bulk editing, variation images, swatches, stock, SKUs and SEO.',
     date: '2026-09-27',
@@ -15315,7 +15315,7 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'outsource-wordpress-development-india',
-    seoTitle: 'Outsource WordPress Development to India: Agency Guide',
+    seoTitle: 'Outsource WordPress Development to India: Costs & Process',
     title: 'Outsourcing WordPress Development to India: A Practical Guide for Agencies and Businesses',
     description: 'How agencies and businesses outsource WordPress development to India: the process, white-label and NDAs, time zones, pricing models, QA checks and red flags.',
     date: '2026-09-27',
@@ -16099,7 +16099,7 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'hotel-booking-engine-channel-manager',
-    seoTitle: 'Hotel Booking Engine, Channel Manager & PMS Explained',
+    seoTitle: 'Booking Engine vs Channel Manager: How They Work Together',
     title: 'Hotel Booking Engine and Channel Manager Explained: How They Work With Your PMS, Website and OTAs',
     description: 'What a hotel booking engine, channel manager and PMS do, how they connect your website and OTAs, what to check before choosing, and how to avoid overbooking.',
     date: '2026-09-27',
@@ -16569,7 +16569,7 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'remove-malware-wordpress-step-by-step',
-    seoTitle: 'WordPress Malware Removal: Step-by-Step Cleanup Guide',
+    seoTitle: 'How to Remove Malware From WordPress (Step-by-Step)',
     title: 'How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide',
     description: 'WordPress malware removal step by step: contain the hack, reset access, replace files, clean the database, remove backdoors and get Google warnings removed.',
     date: '2026-09-27',
@@ -33709,7 +33709,7 @@ Template: astra
   },
   {
     slug: 'rebranding-your-website',
-    seoTitle: 'Rebranding Your Website: SEO-Safe Steps and Checklist',
+    seoTitle: 'Website Rebrand SEO: How to Rebrand Without Losing Rankings',
     title: 'Rebranding Your Website: What to Update, How to Protect SEO and a Launch Checklist',
     description: 'How to rebrand your website without losing SEO: what to update, keeping URLs, 301 redirect maps, moving domains in Search Console and a launch checklist.',
     date: '2026-10-01',
