@@ -76,7 +76,7 @@
           "name": "Which payment gateways can you set up?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Popular Indian gateways such as Razorpay, PayU, Cashfree and PhonePe, plus PayPal or Stripe for international payments, and Cash on Delivery."
+            "text": "Popular Indian gateways such as Razorpay, PayU, Cashfree and PhonePe, plus PayPal for international payments, and Cash on Delivery."
           }
         },
         {
@@ -101,6 +101,38 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Usually 2–4 weeks, depending on the number of products and features, once product details and photos are ready."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you set up GST invoices for my store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Each GST rate gets a tax class, tax is split into CGST and SGST or charged as IGST based on the shipping state, and an invoice plugin adds your GSTIN, HSN codes and invoice numbering. Ask your CA to confirm the rates and invoice format before launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reduce refused cash on delivery orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Limit COD by order value or pin code, show any COD fee clearly at checkout, and confirm COD orders by phone or WhatsApp before dispatch. Some stores also offer a small discount for paying online. These rules are set up to match how you work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose WooCommerce or Shopify for an Indian store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WooCommerce suits you if you want low running costs, full control and room for content and custom features, and you are happy for a developer to look after updates. Shopify suits you if you want a hosted platform and accept the monthly plan and app costs. If Shopify genuinely fits you better, I will say so."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you move my store from Shopify or a marketplace to WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Products, categories and images can be moved across, along with customers and past orders where the old platform allows exports, and old URLs are redirected to protect your search visibility. Marketplace listings usually need reworking into proper product pages for your own site."
           }
         }
       ]
@@ -201,6 +233,90 @@
         </div>
       </div>
     </section>
+    <section class="section lp-guide">
+      <div class="container">
+        <div class="post-body lp-guide-body">
+<h2>WooCommerce store setup in India, step by step</h2>
+<p>An Indian online store has more moving parts than a business website: payment gateway approval, cash on delivery rules, GST and couriers. This is how I set up a WooCommerce store, from your first message to your first real order.</p>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Tell me what you sell, roughly how many products, how you want to be paid, where you ship and whether you are GST-registered. You get a written scope, a fixed price and a timeline.</li>
+<li><strong>Payment gateway application.</strong> You apply to a gateway such as Razorpay, PayU, Cashfree or PhonePe in your business name, because the money settles to your bank account. Approval depends on the provider's KYC checks, so it is worth starting early.</li>
+<li><strong>Catalogue plan.</strong> Categories, attributes and variations are agreed before any products go in.</li>
+<li><strong>Design and build on staging.</strong> Shop, product, cart and checkout pages are built on a private staging link and kept light and simple for phones.</li>
+<li><strong>Products, shipping and tax.</strong> Products are added or imported from your spreadsheet, then shipping zones, COD rules and GST settings are configured.</li>
+<li><strong>Test orders.</strong> With the gateway in test mode, I check prepaid and COD orders, failed and cancelled payments, order emails, invoices and stock levels.</li>
+<li><strong>Launch.</strong> Live keys go in, and a real low-value order confirms the whole flow works.</li>
+<li><strong>Training.</strong> On a video call I show you how to process orders, issue refunds, update stock and add products, including from the WooCommerce mobile app.</li>
+</ol>
+<h2>Payments, COD, GST and shipping for Indian stores</h2>
+<h3>UPI, cards and net banking</h3>
+<p>A gateway like Razorpay or Cashfree gives shoppers UPI, cards, net banking and wallets in one checkout. WooCommerce adds no transaction fee of its own; you pay only the gateway's charges. Webhooks are set up and tested so that a paid order is marked as paid even if the shopper closes the browser before returning to your site. An international option such as PayPal can be added for overseas customers. <a href="/blog/payment-gateways-india-compared/">Choosing a payment gateway</a> lists what to compare.</p>
+<h3>Cash on delivery</h3>
+<p>COD still matters to many Indian shoppers, but every refused delivery costs you shipping both ways. COD can be limited by order value or pin code, a COD fee can be shown clearly at checkout, and COD orders can be confirmed by phone or WhatsApp before dispatch. <a href="/blog/woocommerce-cash-on-delivery-india/">Offering COD without losing money</a> covers the options.</p>
+<h3>GST and invoices</h3>
+<p>Tax is calculated on the customer's shipping state, with CGST and SGST for orders within your state and IGST for the rest. Each GST rate gets its own tax class, and an invoice plugin adds your GSTIN, HSN codes and consecutive invoice numbers. Business buyers can enter their GSTIN at checkout. Your CA should confirm the rates and invoice format; <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a> shows each step.</p>
+<h3>Shipping across India</h3>
+<p>Shipping zones usually run from your city to your state to the rest of India, with flat, weight-based or free-above-a-threshold rates. Accurate product weights matter, and a courier or shipping aggregator can be connected for labels and tracking emails. A pin code checker on product pages shows delivery dates and COD availability before checkout. See <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+<h2>WooCommerce, Shopify or a marketplace?</h2>
+<table>
+<thead><tr><th></th><th>WooCommerce store</th><th>Shopify</th><th>Amazon or Flipkart</th></tr></thead>
+<tbody>
+<tr><td>Platform cost</td><td>Free plugin; you pay for hosting, the domain and any premium plugins</td><td>A monthly subscription, plus paid apps</td><td>Commission and fees on every sale</td></tr>
+<tr><td>Payment fees</td><td>Only your gateway's charges</td><td>Gateway charges, and an extra transaction fee may apply if you do not use Shopify's own payments</td><td>Taken from your payouts along with the marketplace fees</td></tr>
+<tr><td>COD rules</td><td>Yours to set</td><td>Supported</td><td>Set by the marketplace</td></tr>
+<tr><td>Customer relationship</td><td>Yours, including your email list</td><td>Yours, within Shopify</td><td>Mostly stays with the marketplace</td></tr>
+<tr><td>Design, content and SEO</td><td>Almost unlimited, with a full WordPress blog</td><td>Good, within the platform's limits</td><td>A listing template</td></tr>
+<tr><td>Upkeep</td><td>You or your developer handle updates</td><td>Handled by Shopify</td><td>Handled by the marketplace</td></tr>
+<tr><td>Traffic</td><td>You bring it: search, ads and social</td><td>You bring it</td><td>Shoppers are already there</td></tr>
+</tbody>
+</table>
+<p>Many brands use both: a marketplace for reach, and their own store for margin and repeat customers. <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> and <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a> go into the costs in more detail.</p>
+<h2>What is included, and what is not</h2>
+<p>The store features are listed near the top of this page. These sit outside the build:</p>
+<ul>
+<li><strong>Gateway, courier and premium plugin accounts,</strong> which are opened in your business name, with their fees paid to the providers.</li>
+<li><strong>Product photography and writing every description.</strong> I set up the product template and import what you have; the photos and product facts come from you.</li>
+<li><strong>Tax and legal advice.</strong> GST is configured the way your CA advises, and your returns, refund and shipping policies need your approval.</li>
+<li><strong>Advanced features,</strong> such as subscriptions, wholesale pricing for dealers or a multi-vendor marketplace, which are scoped and quoted on their own.</li>
+</ul>
+<h2>How long a store takes</h2>
+<p>Usually 2–4 weeks once product details and photos are ready. What moves it:</p>
+<ul>
+<li>The number of products, and whether the data is already in a tidy spreadsheet.</li>
+<li>How many variations each product has, such as sizes, colours or weights.</li>
+<li>Payment gateway approval, which is in the provider's hands.</li>
+<li>Extra features such as a pin code checker, WhatsApp order notifications or dealer pricing.</li>
+<li>Moving from Shopify or another platform, with redirects for the old URLs; see <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</li>
+</ul>
+<h2>Who this is for</h2>
+<ul>
+<li>D2C brands in food, fashion, beauty or handicrafts that are ready to sell on their own site.</li>
+<li>Shops taking orders on Instagram or WhatsApp that want a proper catalogue and checkout.</li>
+<li>Marketplace sellers who want repeat customers without paying commission on every order.</li>
+<li>Restaurants adding online ordering. For <a href="/work/southern-flavours/">Southern Flavours</a>, a restaurant in the UK, I built a WooCommerce shop and cart alongside a table reservation form.</li>
+<li>Existing stores that have become slow, through <a href="/wordpress-speed-optimization/">WooCommerce speed optimization</a>.</li>
+</ul>
+<h2>How to prepare</h2>
+<ul>
+<li>A spreadsheet of products with name, price, SKU, stock, weight, category and variations.</li>
+<li>Product photos taken the same way, on the same background.</li>
+<li>Your GSTIN if you are registered, and your business bank account and KYC documents ready for the gateway application.</li>
+<li>Where you ship, what you charge, which couriers you use and your COD rules.</li>
+<li>Your returns and refunds policy, even in rough form.</li>
+</ul>
+<p>The <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a> lists what gets checked before going live.</p>
+<h2>What you have at launch</h2>
+<ul>
+<li>A store on hosting in your name, with your own administrator login.</li>
+<li>A payment gateway account in your business name, settling straight to your bank.</li>
+<li>A training call on orders, refunds, stock and products.</li>
+<li>A full backup taken at launch, with the test orders cleared out.</li>
+<li>The option of a <a href="/wordpress-maintenance/">maintenance plan</a> that includes a test order after updates.</li>
+</ul>
+<p>Send me what you sell and roughly how many products you have, and you will get a fixed quote after a free review.</p>
+        </div>
+      </div>
+    </section>
 
     <section class="section" id="work">
       <div class="container">
@@ -263,7 +379,7 @@
         <div class="faq reveal">
           <details>
             <summary>Which payment gateways can you set up?</summary>
-            <p>Popular Indian gateways such as Razorpay, PayU, Cashfree and PhonePe, plus PayPal or Stripe for international payments, and Cash on Delivery.</p>
+            <p>Popular Indian gateways such as Razorpay, PayU, Cashfree and PhonePe, plus PayPal for international payments, and Cash on Delivery.</p>
           </details>
           <details>
             <summary>How many products can the store have?</summary>
@@ -276,6 +392,22 @@
           <details>
             <summary>How long does a store take to build?</summary>
             <p>Usually 2–4 weeks, depending on the number of products and features, once product details and photos are ready.</p>
+          </details>
+          <details>
+            <summary>Can you set up GST invoices for my store?</summary>
+            <p>Yes. Each GST rate gets a tax class, tax is split into CGST and SGST or charged as IGST based on the shipping state, and an invoice plugin adds your GSTIN, HSN codes and invoice numbering. Ask your CA to confirm the rates and invoice format before launch.</p>
+          </details>
+          <details>
+            <summary>How do I reduce refused cash on delivery orders?</summary>
+            <p>Limit COD by order value or pin code, show any COD fee clearly at checkout, and confirm COD orders by phone or WhatsApp before dispatch. Some stores also offer a small discount for paying online. These rules are set up to match how you work.</p>
+          </details>
+          <details>
+            <summary>Should I choose WooCommerce or Shopify for an Indian store?</summary>
+            <p>WooCommerce suits you if you want low running costs, full control and room for content and custom features, and you are happy for a developer to look after updates. Shopify suits you if you want a hosted platform and accept the monthly plan and app costs. If Shopify genuinely fits you better, I will say so.</p>
+          </details>
+          <details>
+            <summary>Can you move my store from Shopify or a marketplace to WooCommerce?</summary>
+            <p>Yes. Products, categories and images can be moved across, along with customers and past orders where the old platform allows exports, and old URLs are redirected to protect your search visibility. Marketplace listings usually need reworking into proper product pages for your own site.</p>
           </details>
         </div>
       </div>

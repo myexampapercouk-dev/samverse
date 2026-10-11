@@ -296,4 +296,329 @@ module.exports = {
 <h2>What you are left with</h2>
 <p>Alongside the report, you keep the full backup taken before work started, every login stays yours, and any temporary access can be removed. Send me your website address for a free review and a fixed quote.</p>
 `,
+  'hire-wordpress-developer': `
+<h2>Hiring a freelance WordPress developer: how it works with me</h2>
+<p>Whether you run a business in India, a company abroad or an agency, this explains what hiring me involves, how I compare with your other options, and what you have in hand when the work is done.</p>
+<h2>From first message to finished work</h2>
+<ol>
+<li><strong>You send the brief.</strong> A WhatsApp message or the contact form is enough to start: what you need, your current website if there is one, and any deadline. If you want to be thorough, the <a href="/blog/website-brief-template/">website brief template</a> covers everything I would otherwise ask.</li>
+<li><strong>Questions, then a fixed quote.</strong> I reply with any questions, then send a written scope, a fixed price and a timeline, usually within 24 hours. The scope lists the pages or tasks, the features, the revision rounds and anything excluded.</li>
+<li><strong>An advance to start.</strong> Projects usually begin with an advance, with the balance due before launch. Monthly plans are billed monthly.</li>
+<li><strong>Work on a staging site.</strong> New builds and bigger changes happen on a private copy. I share the link so you can check progress on your own phone, and nothing reaches your live site until you approve it.</li>
+<li><strong>Testing and launch.</strong> Pages are checked on real phones and desktops, forms are tested to make sure the emails arrive, stores get test orders, and speed and SEO basics are in place before anything goes live.</li>
+<li><strong>Handover and support.</strong> A walkthrough on a video call, your logins confirmed and a backup taken, and I stay available for changes and fixes.</li>
+</ol>
+<h2>Which kind of engagement fits</h2>
+<ul>
+<li><strong>A fixed-price project</strong> suits anything with a clear end point: a new website, a redesign, a WooCommerce store or a migration.</li>
+<li><strong>A batch of fixes</strong> suits a list of smaller jobs, such as a broken layout, a slow page and a form that stopped sending, quoted together as one fixed price.</li>
+<li><strong>A monthly maintenance plan</strong> suits a site that already works and needs updates, backups, monitoring and small content changes. See <a href="/wordpress-maintenance/">WordPress maintenance</a>.</li>
+<li><strong>Ongoing support hours</strong> suit businesses that change their site often and want someone who already knows it.</li>
+<li><strong>White-label delivery</strong> suits agencies that sell websites under their own brand. See <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a>.</li>
+</ul>
+<p>You can switch between them as your needs change.</p>
+<h2>Freelancer, marketplace, agency or full-time hire?</h2>
+<table>
+<thead><tr><th></th><th>Freelancer hired directly (like me)</th><th>Marketplace freelancer</th><th>Agency</th><th>Full-time employee</th></tr></thead>
+<tbody>
+<tr><td>Who does the work</td><td>The person you talk to</td><td>Whoever wins the bid, which can change from job to job</td><td>A team behind an account manager</td><td>Your employee</td></tr>
+<tr><td>Commitment</td><td>Per project, or month to month</td><td>Per job</td><td>Per project or retainer</td><td>Salary, benefits and a notice period</td></tr>
+<tr><td>Cost pattern</td><td>A fixed quote with no agency overheads</td><td>The freelancer's rate plus platform fees</td><td>Team and management costs built in</td><td>Paid whether or not there is WordPress work that month</td></tr>
+<tr><td>Best for</td><td>Business sites, stores, redesigns and ongoing care</td><td>Small, tightly defined tasks</td><td>Large projects that need design, copy and ads managed together</td><td>Companies with full-time WordPress work every day</td></tr>
+<tr><td>Main risk</td><td>One person's capacity, so ask about availability</td><td>Little continuity or aftercare once the job closes</td><td>Work handed to junior staff or subcontractors</td><td>Hard to justify in quiet months</td></tr>
+</tbody>
+</table>
+<p>If you need branding, copywriting and advertising run by one team, an agency may genuinely suit you better. <a href="/blog/freelancer-vs-agency-web-developer/">Freelancer vs agency</a> includes ten questions worth asking whoever you speak to.</p>
+<h2>What to check before you hire anyone, including me</h2>
+<ul>
+<li><strong>Live work, and what they did on it.</strong> Open their sites on your phone and ask what they personally built. My case studies spell it out, from the magazine-style layout and deep category structure of <a href="/work/india-automation-hub/">India Automation Hub</a> to the <a href="/work/our-temples/">Our Temples</a> directory, searchable by state and by deity, with registration for guests and temple owners.</li>
+<li><strong>Whose name the accounts are in.</strong> The domain, hosting and WordPress administrator account should belong to you, not the developer. The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists every account to confirm.</li>
+<li><strong>A written scope and fair payment terms.</strong> Pages, features, revisions, exclusions and milestones should be agreed before work starts; see <a href="/blog/website-payment-terms-milestones/">fair payment terms for a website project</a>.</li>
+<li><strong>Licensed software.</strong> Premium themes and plugins should be genuine licences, never "nulled" copies.</li>
+<li><strong>How they communicate before you pay.</strong> Sensible questions about your brief are a good sign. A quote sent within minutes, with no questions at all, is not.</li>
+</ul>
+<h2>Hiring a WordPress developer in India from abroad</h2>
+<p>I work with clients and agencies outside India over WhatsApp, email and video calls. <a href="/work/southern-flavours/">Southern Flavours</a>, a restaurant in Solihull, UK, is one example: table reservations, a WooCommerce shop for online ordering, and the legal pages a UK business needs.</p>
+<p>India Standard Time is UTC+5:30 and does not change for daylight saving, so the gap with your office moves by an hour when your clocks change. UK mornings overlap the Indian working day, and for US clients, feedback sent in your afternoon can be worked on while you sleep. <a href="/blog/outsource-wordpress-development-india/">Outsourcing WordPress development to India</a> covers time zones, contracts and pricing models in more detail.</p>
+<h2>What is included, and what is not</h2>
+<p>Every website project includes the written scope, the staging link, testing on real devices, speed optimization, SEO basics, a walkthrough and support after launch. These sit outside it unless the quote says otherwise:</p>
+<ul>
+<li><strong>Hosting, domain and premium licence fees,</strong> which are paid to the providers, ideally in your name.</li>
+<li><strong>Writing all your content from scratch, and photography.</strong> I structure the pages and polish your text, but the facts about your business have to come from you.</li>
+<li><strong>Work beyond the agreed scope.</strong> New pages or features are quoted before I start, so the invoice never surprises you. <a href="/blog/website-bug-vs-change-request/">Bug or change request?</a> explains where the line usually sits.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>You get a timeline with every quote. As a rough guide, from the point content and access are ready:</p>
+<ul>
+<li>A landing page: 3–5 working days.</li>
+<li>A business website: a few weeks, depending on the number of pages.</li>
+<li>A WooCommerce store: usually 2–4 weeks.</li>
+<li>Speed optimization: usually 2–4 working days.</li>
+<li>A hacked site: most cleanups within 24–48 hours of getting access.</li>
+</ul>
+<p>What stretches these: content that is not ready, slow or scattered feedback, custom features such as bookings or a second language, waiting for payment gateway approval, and hosting access that takes days to arrive.</p>
+<h2>Who hires me</h2>
+<ul>
+<li>Business owners in India who want one person to build their site and look after it afterwards.</li>
+<li>Companies abroad that need an experienced WordPress developer without hiring one full time.</li>
+<li>Agencies that need extra capacity in busy months.</li>
+<li>Owners whose previous developer has disappeared. I can take over an existing site after a quick review of the setup, and <a href="/blog/regain-website-access-old-developer/">regaining control from a previous developer</a> explains how to recover the logins first.</li>
+</ul>
+<h2>How to prepare</h2>
+<ul>
+<li>What the website or the fix needs to achieve: more enquiries, online sales or a faster site.</li>
+<li>Two or three websites you like, and what you like about them.</li>
+<li>Your WordPress, hosting and domain logins, or the name of whoever holds them.</li>
+<li>Where your content stands: ready, half-written or not started.</li>
+<li>Who makes the final decision, and any fixed deadline such as a launch or a campaign.</li>
+</ul>
+<h2>What you have when the work is done</h2>
+<ul>
+<li>A site on hosting in your name, with your own administrator login.</li>
+<li>A video-call walkthrough, so you can edit text, images and pages yourself.</li>
+<li>A full backup taken at launch.</li>
+<li>Any temporary access I used removed, unless you keep me on for maintenance.</li>
+</ul>
+<p>The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists everything you should receive from any developer. To hire me, send your requirements on WhatsApp or through the form, and you will get a fixed quote after a free review.</p>
+`,
+  'woocommerce-developer': `
+<h2>WooCommerce store setup in India, step by step</h2>
+<p>An Indian online store has more moving parts than a business website: payment gateway approval, cash on delivery rules, GST and couriers. This is how I set up a WooCommerce store, from your first message to your first real order.</p>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Tell me what you sell, roughly how many products, how you want to be paid, where you ship and whether you are GST-registered. You get a written scope, a fixed price and a timeline.</li>
+<li><strong>Payment gateway application.</strong> You apply to a gateway such as Razorpay, PayU, Cashfree or PhonePe in your business name, because the money settles to your bank account. Approval depends on the provider's KYC checks, so it is worth starting early.</li>
+<li><strong>Catalogue plan.</strong> Categories, attributes and variations are agreed before any products go in.</li>
+<li><strong>Design and build on staging.</strong> Shop, product, cart and checkout pages are built on a private staging link and kept light and simple for phones.</li>
+<li><strong>Products, shipping and tax.</strong> Products are added or imported from your spreadsheet, then shipping zones, COD rules and GST settings are configured.</li>
+<li><strong>Test orders.</strong> With the gateway in test mode, I check prepaid and COD orders, failed and cancelled payments, order emails, invoices and stock levels.</li>
+<li><strong>Launch.</strong> Live keys go in, and a real low-value order confirms the whole flow works.</li>
+<li><strong>Training.</strong> On a video call I show you how to process orders, issue refunds, update stock and add products, including from the WooCommerce mobile app.</li>
+</ol>
+<h2>Payments, COD, GST and shipping for Indian stores</h2>
+<h3>UPI, cards and net banking</h3>
+<p>A gateway like Razorpay or Cashfree gives shoppers UPI, cards, net banking and wallets in one checkout. WooCommerce adds no transaction fee of its own; you pay only the gateway's charges. Webhooks are set up and tested so that a paid order is marked as paid even if the shopper closes the browser before returning to your site. An international option such as PayPal can be added for overseas customers. <a href="/blog/payment-gateways-india-compared/">Choosing a payment gateway</a> lists what to compare.</p>
+<h3>Cash on delivery</h3>
+<p>COD still matters to many Indian shoppers, but every refused delivery costs you shipping both ways. COD can be limited by order value or pin code, a COD fee can be shown clearly at checkout, and COD orders can be confirmed by phone or WhatsApp before dispatch. <a href="/blog/woocommerce-cash-on-delivery-india/">Offering COD without losing money</a> covers the options.</p>
+<h3>GST and invoices</h3>
+<p>Tax is calculated on the customer's shipping state, with CGST and SGST for orders within your state and IGST for the rest. Each GST rate gets its own tax class, and an invoice plugin adds your GSTIN, HSN codes and consecutive invoice numbers. Business buyers can enter their GSTIN at checkout. Your CA should confirm the rates and invoice format; <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a> shows each step.</p>
+<h3>Shipping across India</h3>
+<p>Shipping zones usually run from your city to your state to the rest of India, with flat, weight-based or free-above-a-threshold rates. Accurate product weights matter, and a courier or shipping aggregator can be connected for labels and tracking emails. A pin code checker on product pages shows delivery dates and COD availability before checkout. See <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+<h2>WooCommerce, Shopify or a marketplace?</h2>
+<table>
+<thead><tr><th></th><th>WooCommerce store</th><th>Shopify</th><th>Amazon or Flipkart</th></tr></thead>
+<tbody>
+<tr><td>Platform cost</td><td>Free plugin; you pay for hosting, the domain and any premium plugins</td><td>A monthly subscription, plus paid apps</td><td>Commission and fees on every sale</td></tr>
+<tr><td>Payment fees</td><td>Only your gateway's charges</td><td>Gateway charges, and an extra transaction fee may apply if you do not use Shopify's own payments</td><td>Taken from your payouts along with the marketplace fees</td></tr>
+<tr><td>COD rules</td><td>Yours to set</td><td>Supported</td><td>Set by the marketplace</td></tr>
+<tr><td>Customer relationship</td><td>Yours, including your email list</td><td>Yours, within Shopify</td><td>Mostly stays with the marketplace</td></tr>
+<tr><td>Design, content and SEO</td><td>Almost unlimited, with a full WordPress blog</td><td>Good, within the platform's limits</td><td>A listing template</td></tr>
+<tr><td>Upkeep</td><td>You or your developer handle updates</td><td>Handled by Shopify</td><td>Handled by the marketplace</td></tr>
+<tr><td>Traffic</td><td>You bring it: search, ads and social</td><td>You bring it</td><td>Shoppers are already there</td></tr>
+</tbody>
+</table>
+<p>Many brands use both: a marketplace for reach, and their own store for margin and repeat customers. <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> and <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a> go into the costs in more detail.</p>
+<h2>What is included, and what is not</h2>
+<p>The store features are listed near the top of this page. These sit outside the build:</p>
+<ul>
+<li><strong>Gateway, courier and premium plugin accounts,</strong> which are opened in your business name, with their fees paid to the providers.</li>
+<li><strong>Product photography and writing every description.</strong> I set up the product template and import what you have; the photos and product facts come from you.</li>
+<li><strong>Tax and legal advice.</strong> GST is configured the way your CA advises, and your returns, refund and shipping policies need your approval.</li>
+<li><strong>Advanced features,</strong> such as subscriptions, wholesale pricing for dealers or a multi-vendor marketplace, which are scoped and quoted on their own.</li>
+</ul>
+<h2>How long a store takes</h2>
+<p>Usually 2–4 weeks once product details and photos are ready. What moves it:</p>
+<ul>
+<li>The number of products, and whether the data is already in a tidy spreadsheet.</li>
+<li>How many variations each product has, such as sizes, colours or weights.</li>
+<li>Payment gateway approval, which is in the provider's hands.</li>
+<li>Extra features such as a pin code checker, WhatsApp order notifications or dealer pricing.</li>
+<li>Moving from Shopify or another platform, with redirects for the old URLs; see <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</li>
+</ul>
+<h2>Who this is for</h2>
+<ul>
+<li>D2C brands in food, fashion, beauty or handicrafts that are ready to sell on their own site.</li>
+<li>Shops taking orders on Instagram or WhatsApp that want a proper catalogue and checkout.</li>
+<li>Marketplace sellers who want repeat customers without paying commission on every order.</li>
+<li>Restaurants adding online ordering. For <a href="/work/southern-flavours/">Southern Flavours</a>, a restaurant in the UK, I built a WooCommerce shop and cart alongside a table reservation form.</li>
+<li>Existing stores that have become slow, through <a href="/wordpress-speed-optimization/">WooCommerce speed optimization</a>.</li>
+</ul>
+<h2>How to prepare</h2>
+<ul>
+<li>A spreadsheet of products with name, price, SKU, stock, weight, category and variations.</li>
+<li>Product photos taken the same way, on the same background.</li>
+<li>Your GSTIN if you are registered, and your business bank account and KYC documents ready for the gateway application.</li>
+<li>Where you ship, what you charge, which couriers you use and your COD rules.</li>
+<li>Your returns and refunds policy, even in rough form.</li>
+</ul>
+<p>The <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a> lists what gets checked before going live.</p>
+<h2>What you have at launch</h2>
+<ul>
+<li>A store on hosting in your name, with your own administrator login.</li>
+<li>A payment gateway account in your business name, settling straight to your bank.</li>
+<li>A training call on orders, refunds, stock and products.</li>
+<li>A full backup taken at launch, with the test orders cleared out.</li>
+<li>The option of a <a href="/wordpress-maintenance/">maintenance plan</a> that includes a test order after updates.</li>
+</ul>
+<p>Send me what you sell and roughly how many products you have, and you will get a fixed quote after a free review.</p>
+`,
+  'wordpress-developer-for-agencies': `
+<h2>White-label WordPress development from India: how it works with me</h2>
+<p>For agencies in the UK, US and Australia outsourcing WordPress development to India: how projects, time-zone handoffs, confidentiality and pricing work with me. New to the model? Start with <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development explained</a>.</p>
+<h2>A white-label project, step by step</h2>
+<ol>
+<li><strong>Brief and NDA.</strong> You send the designs (Figma, XD or PDF), the content or a note on who provides it, and hosting or staging access. I'm happy to sign your NDA before you share client details.</li>
+<li><strong>Questions, then a fixed quote.</strong> I send my questions in one numbered list, then confirm the scope, timeline and a fixed price, so you can quote your client and protect your margin.</li>
+<li><strong>Build on staging.</strong> I build on a staging site kept out of search engines, at an address you can share with your client under your brand.</li>
+<li><strong>Written updates.</strong> At the end of each working session you get a short note: what is done, with staging links, what is next, numbered questions and anything blocked.</li>
+<li><strong>My QA, then yours.</strong> I test before your team reviews. Feedback comes back as one consolidated list per round, and revisions go through you, never directly to your client unless you ask.</li>
+<li><strong>Launch and handover.</strong> The site goes live on your client's hosting, or your team launches it, with a handover note you can pass straight to your client.</li>
+</ol>
+<h2>Time zones: how handoffs work with the UK, US and Australia</h2>
+<p>India Standard Time is UTC+5:30 and never changes for daylight saving, so the gap with your office moves by an hour when your clocks do. Calls and decisions happen in the overlap, building happens while you are offline, and a written update is waiting when you start.</p>
+<table>
+<thead><tr><th>Your office</th><th>Difference from IST</th><th>Overlap</th><th>How a handoff usually runs</th></tr></thead>
+<tbody>
+<tr><td>UK</td><td>IST is 4.5 hours ahead in summer, 5.5 in winter</td><td>Your morning is the Indian afternoon</td><td>Morning feedback can be discussed the same day; anything later is picked up at the start of my next working day</td></tr>
+<tr><td>US East Coast</td><td>IST is 9.5 hours ahead in summer, 10.5 in winter</td><td>Little or none in normal working hours</td><td>Feedback sent in your afternoon is worked on during the Indian day, and the update is waiting when you start</td></tr>
+<tr><td>US West Coast</td><td>IST is 12.5 hours ahead in summer, 13.5 in winter</td><td>None in normal working hours</td><td>Mostly written, with calls in an early or late slot agreed in advance</td></tr>
+<tr><td>Sydney and Melbourne</td><td>IST is 4.5 hours behind in winter, 5.5 in summer</td><td>Your afternoon is the Indian morning</td><td>Questions sent in your morning are waiting when my day starts, and your afternoon overlaps it for calls</td></tr>
+</tbody>
+</table>
+<p>We agree overlap hours and a call slot before the first project, recheck them when your clocks change, and schedule launches and DNS changes inside the overlap. Answering my numbered questions before my next working day keeps a build moving.</p>
+<p><a href="/blog/offshore-wordpress-developer-time-zones/">Working with an offshore developer across time zones</a> covers response times for live issues, and <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers the wider picture, including red flags.</p>
+<h2>Confidentiality and working under your brand</h2>
+<ul>
+<li><strong>NDA.</strong> I sign your NDA, covering your client's name, designs, data and business information.</li>
+<li><strong>No credits.</strong> No credit links, footer mentions or developer branding anywhere on the site, on staging or in the handover note.</li>
+<li><strong>No client contact unless you want it.</strong> If you ask me to join a call with your client, I join as part of your team.</li>
+<li><strong>Billing through you.</strong> I invoice your agency, and you bill your client however you choose.</li>
+<li><strong>Accounts in the right names.</strong> Hosting, licences and admin accounts stay in your or your client's name; my own login can be removed at any time.</li>
+<li><strong>Personal data.</strong> If the work touches personal data such as orders, tell me which rules apply on your side, such as UK GDPR or Australia's Privacy Act, so my access is limited to what the job needs.</li>
+</ul>
+<h2>Communication</h2>
+<p>I work in the channels your team already uses: a Slack channel in your workspace, email or WhatsApp for quick questions; your project board for feedback and bugs, one item per issue with the page URL, device and a screenshot; and video calls with screen sharing in the overlap for kick-off and reviews. Short screen recordings help in both directions, and one decision-maker on your side avoids conflicting feedback.</p>
+<h2>Staging and QA before your client sees anything</h2>
+<p>My QA pass comes before your team's review, so your time goes on judgement calls, not on things I should have caught:</p>
+<ul>
+<li>The build against the design on desktop, tablet and real mobile devices, in current browsers.</li>
+<li>Forms, emails, payments and integrations, tested end to end.</li>
+<li>Speed, image optimization and Core Web Vitals.</li>
+<li>SEO basics, with search engine indexing switched on at launch.</li>
+<li>Global styles and a tidy structure, so your client can edit without breaking the layout.</li>
+</ul>
+<p>The <a href="/blog/website-qa-checklist-before-launch-agencies/">website QA checklist for agencies</a> is a good template for your own review.</p>
+<h2>How agency work is priced</h2>
+<p>I do not publish rates, because a landing page and a WooCommerce build are very different jobs. You get a fixed quote after I review your brief. The usual models:</p>
+<ul>
+<li><strong>Fixed price per project,</strong> for builds with final designs and a clear brief. It is the simplest to mark up for your client.</li>
+<li><strong>A monthly <a href="/wordpress-maintenance/">maintenance plan</a> per client site,</strong> covering updates, backups, security checks and small changes, which you can resell as your own care plan; see <a href="/blog/agency-wordpress-care-plans/">white-label WordPress care plans</a>.</li>
+<li><strong>Ongoing support hours,</strong> for agencies with a steady flow of changes across several sites; <a href="/blog/agency-development-retainer/">how a development retainer works</a> explains the arrangement.</li>
+</ul>
+<p>Changes outside the agreed scope are quoted before any work starts, and regular partners get priority scheduling.</p>
+<h2>Timelines</h2>
+<p>Typical timelines, confirmed with each quote: a landing page in 3–5 working days once content is clear, a business site in a few weeks, a WooCommerce store in 2–4 weeks. Unique templates, final designs, content readiness and quick answers decide where in the range you land.</p>
+<h2>Who this suits</h2>
+<ul>
+<li>Design and branding agencies with Figma designs and no in-house WordPress developer; see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</li>
+<li>Marketing and SEO agencies that need sites, campaign landing pages and care plans to resell.</li>
+<li>Agencies with more projects in busy months than their team can deliver.</li>
+</ul>
+<p>It suits you less if you need a developer online for your whole working day, every day. A US agency in that position is better served by someone in its own time zone.</p>
+<p>I have also built websites for agencies themselves: <a href="/work/streak-creative/">Streak Creative</a>, a growth marketing agency, with pages for its LOOP methodology and a lead magnet, and <a href="/work/third-eye-social/">Third Eye Social</a>, an AI automation agency, with use-case sections for each type of AI agent.</p>
+<h2>How to prepare for the first project</h2>
+<p>Start small, with a landing page or a few templates, before handing over a major client. Then send:</p>
+<ul>
+<li>Final designs, with mobile layouts and hover, menu and form states.</li>
+<li>Copy and assets, or who is providing them and when.</li>
+<li>Functionality notes: forms, integrations, payments and languages.</li>
+<li>Your preferred builder or theme, and hosting or staging access.</li>
+<li>The deadline, and when your client expects to review.</li>
+</ul>
+<p>The <a href="/blog/agency-developer-handoff-checklist/">agency handoff checklist</a> covers each item in detail.</p>
+<h2>What you get at the end</h2>
+<ul>
+<li>A site built to your design, tested on staging and launched on your client's hosting, or ready for your team to launch.</li>
+<li>A handover note with no developer branding, ready to pass on.</li>
+<li>Admin accounts and licences in your or your client's name, with my access removed or kept for maintenance, as you choose.</li>
+</ul>
+<p>Send me your next brief for a fixed quote after a free review.</p>
+`,
+  'wordpress-website-development': `
+<h2>WordPress website development, step by step</h2>
+<p>The three stages are summarised above. This is the detail: what happens at each step of a WordPress website project with me, the choices that decide cost and timeline, and what you own at the end.</p>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> We talk through your goals, the pages you need, the features and two or three sites you like. You get a written scope, a fixed price and a timeline, usually within 24 hours.</li>
+<li><strong>A page plan.</strong> Before any design, I map out the pages and what each one has to answer. Every main service gets its own page, because each one is a separate search; <a href="/blog/write-service-pages-that-convert/">how to write service pages that rank and convert</a> explains why.</li>
+<li><strong>Design of the key pages.</strong> The homepage and other key pages are designed first and shared for your feedback, so the look is agreed before the full build.</li>
+<li><strong>Build on staging.</strong> The site is built on a private staging link, with colours, fonts and spacing set as global styles so it stays consistent and easy to edit. Forms, WhatsApp, maps and any integrations go in at this stage.</li>
+<li><strong>Content and SEO basics.</strong> Text and images go in, with titles, descriptions, headings and schema markup on every page, and a sitemap for the site.</li>
+<li><strong>Testing.</strong> Every page is checked on real phones and desktops, forms are tested to make sure the emails arrive, and speed is tested on mobile.</li>
+<li><strong>Launch and walkthrough.</strong> The site goes live, Search Console and Google Analytics are connected, a backup is taken, and I show you how to edit it on a video call.</li>
+</ol>
+<h2>Which kind of WordPress build fits your business?</h2>
+<p>"A WordPress website" covers very different builds. Most business sites fall into one of three approaches:</p>
+<table>
+<thead><tr><th></th><th>Quality theme, adapted</th><th>Custom design built in Elementor</th><th>Custom-coded theme</th></tr></thead>
+<tbody>
+<tr><td>What it is</td><td>A well-built theme set up with your brand, pages and content</td><td>A layout designed for you, or from your Figma file, built with Elementor and global styles</td><td>A theme written only for your site</td></tr>
+<tr><td>Best for</td><td>Tighter budgets and quick launches</td><td>Business sites that need to look distinct and stay easy to edit</td><td>Unusual functionality, locked-down editing or strict performance targets</td></tr>
+<tr><td>Editing afterwards</td><td>Easy</td><td>Easy, with drag and drop</td><td>Structured fields; layout changes usually need a developer</td></tr>
+<tr><td>Build time</td><td>Shortest</td><td>Medium</td><td>Longest</td></tr>
+<tr><td>Watch out for</td><td>Heavy multipurpose themes that slow the site down</td><td>Too many add-ons and nested sections</td><td>Lock-in if the code is undocumented</td></tr>
+</tbody>
+</table>
+<p>All the client websites in my case studies are built with Elementor on a theme: the lightweight Hello Elementor theme for <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a>, Astra for <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a> and a directory theme for <a href="/work/our-temples/">Our Temples</a>. <a href="/blog/how-to-choose-wordpress-theme/">Choosing a WordPress theme</a> and <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs a custom-coded website</a> go deeper into the trade-offs.</p>
+<h2>What that looks like on real projects</h2>
+<ul>
+<li><strong>B2B and manufacturing.</strong> For <a href="/work/vansh-group/">Vansh Group</a>, an electronics manufacturer, each engineering and manufacturing service has its own page, the contact form has a service-type dropdown so enquiries arrive pre-qualified, and a downloadable company profile supports credibility with large buyers.</li>
+<li><strong>Lead generation.</strong> Sahni Power Solutions organises its generator fleet by capacity and type, with "Enquire Now" and "Request a Call Back" buttons, a detailed FAQ and compliance information.</li>
+<li><strong>Personal brands.</strong> Dr. Sudhir Arora's site has a page for each life challenge his programs address and a free anxiety self-assessment tool to engage visitors.</li>
+<li><strong>Directories and portals.</strong> Our Temples lists temples by state and by deity, with user registration and Telugu content, while <a href="/work/india-automation-hub/">India Automation Hub</a> organises a large volume of technical news into a deep category structure.</li>
+</ul>
+<h2>A freelancer or a WordPress development company?</h2>
+<p>If you searched for a WordPress development company in India, you should know what you are getting here: one developer, not a company with departments. You talk directly to the person building your site, with no account manager in between and no agency overheads in the price. That suits business websites, catalogues and portals with one clear decision-maker. If you need branding, copywriting, photography and ads handled by one team at the same time, a larger agency may suit you better.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every website includes. These are quoted separately or paid to someone else:</p>
+<ul>
+<li><strong>Hosting, domain and premium licences,</strong> such as Elementor Pro if the build uses it, paid to the providers in your name.</li>
+<li><strong>Writing every page from scratch, and photography.</strong> I suggest what each page should say and polish your text; <a href="/blog/how-to-write-website-content/">how to write content for your business website</a> helps you draft it.</li>
+<li><strong>An online store.</strong> Products, payments and shipping are a separate scope; see <a href="/woocommerce-developer/">WooCommerce development</a>.</li>
+<li><strong>Ongoing SEO.</strong> Every site launches with SEO foundations; work after that is covered by <a href="/wordpress-seo-services/">WordPress SEO services</a>.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>Most business websites take a few weeks once content is ready. A small site of five to eight pages sits at the shorter end; a B2B site with a catalogue, or a directory, at the longer end. What decides it:</p>
+<ul>
+<li>How ready your content and photos are, the most common cause of delay.</li>
+<li>The number of unique page templates, more than the total number of pages.</li>
+<li>Custom features such as an assessment tool, directory listings, bookings or a second language.</li>
+<li>How quickly feedback comes back, and whether one person signs it off.</li>
+</ul>
+<p><a href="/blog/how-long-to-build-wordpress-website/">How long a WordPress website takes</a> gives typical ranges by type of site.</p>
+<h2>What it costs</h2>
+<p>I do not publish one price, because a five-page site on an adapted theme and a custom-designed catalogue are very different jobs. You get a fixed quote after a free review. The price moves with the number of unique templates, whether the design is custom, the features and integrations, extra languages, how much content help you need, and whether an old site has to be migrated. <a href="/blog/wordpress-website-cost-india/">What a WordPress website costs in India</a> breaks these down, the <a href="/website-cost-calculator/">website cost calculator</a> gives a quick estimate, and <a href="/blog/compare-website-quotes/">how to compare website quotes</a> helps if you are weighing several.</p>
+<h2>Who it is for</h2>
+<ul>
+<li>Businesses getting their first proper website, or replacing a DIY site that no longer represents them.</li>
+<li>Manufacturers and B2B companies that need enquiries from buyers.</li>
+<li>Doctors, coaches and consultants building a personal brand.</li>
+<li>Content-heavy sites such as directories, portals and magazines.</li>
+<li>Businesses whose current site is outdated and needs rebuilding on WordPress.</li>
+</ul>
+<h2>How to prepare</h2>
+<ul>
+<li>Your services or products in order of importance, since they become the main pages.</li>
+<li>How you want enquiries to arrive (form, WhatsApp, phone or all three) and who answers them.</li>
+<li>Domain and hosting logins, or a note that you need them set up in your name.</li>
+<li>Any fixed launch date, such as a trade exhibition or a campaign.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A WordPress website on hosting in your name, with your own administrator login.</li>
+<li>Pages you can edit yourself in Elementor or the block editor, and a video-call walkthrough showing how.</li>
+<li>Search Console and Google Analytics connected to your own Google account.</li>
+<li>A full backup taken at launch.</li>
+<li>Support after launch, with an optional monthly maintenance plan.</li>
+</ul>
+<p>Send me the pages you need and two or three sites you like, and you will get a fixed quote after a free review.</p>
+`,
 };

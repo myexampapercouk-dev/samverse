@@ -27,6 +27,10 @@ const PAGES = [
       ['How do you price agency work?', 'Each project gets a fixed quote based on the pages and features in your brief. Regular partners get priority scheduling.'],
       ['What do you need from us to start?', 'The design files or reference sites, the content (or a note on who provides it), and hosting or staging access. I\'ll confirm scope and timeline before starting.'],
       ['Can you handle ongoing maintenance for our clients?', 'Yes. I can manage updates, backups, security checks and small changes on a monthly basis for your client sites.'],
+      ['What time zone do you work in, and how do you handle the difference?', 'I work on India Standard Time (UTC+5:30), which has no daylight saving. We agree overlap hours and a regular call slot before the first project, and you get a written update with staging links at the end of each working session. UK and Australian agencies get a real overlap; US agencies usually get progress overnight.'],
+      ['Can we start with a small test project?', 'Yes, and it is a sensible way to begin. A landing page or a couple of templates from your designs shows you my communication, accuracy and build quality before you trust me with a bigger client.'],
+      ['Can you work in our tools, such as Slack or our project board?', 'Yes. I work in the channels your team already uses, whether that is a Slack channel, your project board, email or WhatsApp. Tell me your setup in the brief.'],
+      ['Will you ever speak to our clients?', 'Only if you ask. Revisions normally go through your team, and if you want me on a call with your client, I join as part of your team under your agency\'s name.'],
     ],
   },
   {
@@ -104,10 +108,14 @@ const PAGES = [
     gets: ['Product catalogue & categories', 'Payment gateway integration', 'Cash on Delivery & shipping rules', 'Order & stock management', 'Order email notifications', 'Coupons & discounts', 'WhatsApp chat button', 'Speed & SEO optimization'],
     projects: ['Southern Flavours', 'CNN Food & Spices'],
     faqs: [
-      ['Which payment gateways can you set up?', 'Popular Indian gateways such as Razorpay, PayU, Cashfree and PhonePe, plus PayPal or Stripe for international payments, and Cash on Delivery.'],
+      ['Which payment gateways can you set up?', 'Popular Indian gateways such as Razorpay, PayU, Cashfree and PhonePe, plus PayPal for international payments, and Cash on Delivery.'],
       ['How many products can the store have?', 'WooCommerce handles anything from a few products to thousands. I can also import your existing product list from a spreadsheet.'],
       ['Can I manage orders on my phone?', 'Yes. You can manage orders from the WordPress dashboard in your browser or the WooCommerce mobile app.'],
       ['How long does a store take to build?', 'Usually 2–4 weeks, depending on the number of products and features, once product details and photos are ready.'],
+      ['Can you set up GST invoices for my store?', 'Yes. Each GST rate gets a tax class, tax is split into CGST and SGST or charged as IGST based on the shipping state, and an invoice plugin adds your GSTIN, HSN codes and invoice numbering. Ask your CA to confirm the rates and invoice format before launch.'],
+      ['How do I reduce refused cash on delivery orders?', 'Limit COD by order value or pin code, show any COD fee clearly at checkout, and confirm COD orders by phone or WhatsApp before dispatch. Some stores also offer a small discount for paying online. These rules are set up to match how you work.'],
+      ['Should I choose WooCommerce or Shopify for an Indian store?', 'WooCommerce suits you if you want low running costs, full control and room for content and custom features, and you are happy for a developer to look after updates. Shopify suits you if you want a hosted platform and accept the monthly plan and app costs. If Shopify genuinely fits you better, I will say so.'],
+      ['Can you move my store from Shopify or a marketplace to WooCommerce?', 'Yes. Products, categories and images can be moved across, along with customers and past orders where the old platform allows exports, and old URLs are redirected to protect your search visibility. Marketplace listings usually need reworking into proper product pages for your own site.'],
     ],
   },
   {
@@ -353,6 +361,10 @@ const PAGES = [
       ['Do you use templates or custom designs?', 'Either. I can adapt a quality theme for speed and budget, or build a fully custom design from Figma or your references.'],
       ['Will I be able to update the website myself?', 'Yes. I build with Elementor or the block editor and show you how to edit pages, so everyday changes don\'t need a developer.'],
       ['What do you need from me to start?', 'Your logo, the pages you need, content and photos (or a plan for them), and 2–3 websites you like. Then I send a fixed quote and timeline.'],
+      ['Are you a WordPress development company?', 'No. I\'m a freelance WordPress developer based in Pune, building WordPress websites since 2020. You deal directly with the person building your site, and the price carries no agency overheads. If your project needs a large team working in parallel, an agency may be a better fit.'],
+      ['Can you build a multilingual WordPress website?', 'Yes. WordPress handles sites in English, Hindi and regional languages, with each language on its own pages so Google can show the right version. Our Temples, for example, includes Telugu content. Translations should be written or checked by a fluent speaker.'],
+      ['Will my new website be ready for Google at launch?', 'It launches with the foundations in place: titles and descriptions, a clean heading structure, schema markup, a sitemap and Search Console. Nobody can honestly guarantee rankings, but these give your pages the best start.'],
+      ['Can you rebuild my existing website on WordPress?', 'Yes. Whether it runs on an old WordPress theme, Wix or plain HTML, I rebuild it on a staging site, keep the content worth keeping, and set up redirects for any URLs that change, to protect the Google visibility you already have.'],
     ],
   },
   {
@@ -380,6 +392,10 @@ const PAGES = [
       ['Do you work with clients outside India?', 'Yes. I work with clients and agencies in other countries over WhatsApp, email and video calls.'],
       ['What are your payment terms?', 'Projects usually start with an advance, with the balance before launch. Monthly plans are billed monthly.'],
       ['Can you join an ongoing project?', 'Yes. I can take over or support existing WordPress sites after a quick review of the setup.'],
+      ['Can I hire you for a small job, or only for full websites?', 'Small jobs are welcome: a broken layout, a slow page, a form that stopped sending or a few content changes. Send the list, and you get a fixed price for the batch before I start.'],
+      ['Will I be working with you or with a team?', 'With me. I work on my own, so the person who replies to your messages is the person doing the work, from the first quote to support after launch.'],
+      ['Who owns the website when the work is finished?', 'You do. The domain and hosting should be registered in your name, you get your own administrator login, and any temporary access I used can be removed. If the accounts are currently in someone else\'s name, I can help you move them into yours.'],
+      ['What happens if I need changes after launch?', 'Message me. New pages or features get a fixed quote before I start. If you expect regular changes, a monthly maintenance plan includes small text, image and price updates.'],
     ],
   },
   {
