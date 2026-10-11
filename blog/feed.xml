@@ -1099,11 +1099,11 @@
     <description>What robots.txt does, how search engines use it, safe settings for WordPress sites, the difference between blocking crawling and preventing indexing, and mistakes that hide sites from Google.</description>
   </item>
   <item>
-    <title>Canonical Tags Explained: Telling Google Which Page Is the Original</title>
+    <title>Canonical Tags Explained: What rel=canonical Does and How to Get It Right</title>
     <link>https://samverse.space/blog/canonical-tags-explained/</link>
     <guid>https://samverse.space/blog/canonical-tags-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What canonical tags are, when your site creates duplicate URLs (www, parameters, product variants), how canonicals fix it, and common canonical mistakes that hurt rankings.</description>
+    <description>What a canonical tag does, why Google treats it as a hint, how WordPress sets it, and how to fix parameter, pagination, www and Search Console canonical issues.</description>
   </item>
   <item>
     <title>Duplicate Content Explained: What It Is, the Penalty Myth and How to Fix It</title>
@@ -2650,7 +2650,7 @@
     <link>https://samverse.space/blog/in-vs-com-domain/</link>
     <guid>https://samverse.space/blog/in-vs-com-domain/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>.in, .com or .co.in for an Indian business? How your audience, name availability, trust, typing habits and Google country targeting should shape the choice.</description>
+    <description>.in or .com for an Indian business? How audience, trust, Google country signals, cost, .in registration rules, email and owning both should shape your choice.</description>
   </item>
   <item>
     <title>Mixed Content Warnings After Moving WordPress to HTTPS: How to Fix Them</title>
@@ -2839,7 +2839,7 @@
     <link>https://samverse.space/blog/hreflang-multilingual-seo-india/</link>
     <guid>https://samverse.space/blog/hreflang-multilingual-seo-india/</guid>
     <pubDate>Wed, 30 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Set up Hindi and regional-language versions of your website for Google: URL structure, hreflang tags, x-default, keyword research and translation quality.</description>
+    <description>Set up hreflang for Hindi and regional versions of an Indian website: en-IN and hi-IN codes, return tags, x-default, HTML vs sitemap, plugins and common errors.</description>
   </item>
   <item>
     <title>Websites for Cafes and Coffee Shops: What Customers Look For</title>
@@ -3392,7 +3392,7 @@
     <link>https://samverse.space/blog/wordpress-auto-updates/</link>
     <guid>https://samverse.space/blog/wordpress-auto-updates/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>What WordPress auto-update settings for core, plugins and themes do, the real risks, a sensible middle ground, and when to test updates on staging first.</description>
+    <description>Which WordPress auto-updates to turn on for core, plugins and themes, the real risks, WooCommerce cautions, backups and staging, and how to roll back an update.</description>
   </item>
   <item>
     <title>How to Choose a WordPress Developer or Agency in Pune</title>
@@ -3518,7 +3518,7 @@
     <link>https://samverse.space/blog/wordpress-xmlrpc-explained/</link>
     <guid>https://samverse.space/blog/wordpress-xmlrpc-explained/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>What xmlrpc.php does, what still uses it (Jetpack, some apps), how attackers abuse it, and safe ways to disable or restrict XML-RPC without breaking your site.</description>
+    <description>What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.</description>
   </item>
   <item>
     <title>How to Audit Your WordPress User Accounts: Old Admins, Roles and Shared Logins</title>

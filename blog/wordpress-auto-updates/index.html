@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Auto-Updates: Should You Turn Them On? | Samverse</title>
-  <meta name="description" content="What WordPress auto-update settings for core, plugins and themes do, the real risks, a sensible middle ground, and when to test updates on staging first.">
+  <title>WordPress Auto-Updates: Should You Turn Them On or Off?</title>
+  <meta name="description" content="Which WordPress auto-updates to turn on for core, plugins and themes, the real risks, WooCommerce cautions, backups and staging, and how to roll back an update.">
   <meta name="author" content="Sameer Gupta">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-auto-updates/">
-  <meta property="og:title" content="WordPress Auto-Updates: Should You Turn Them On? | Samverse">
-  <meta property="og:description" content="What WordPress auto-update settings for core, plugins and themes do, the real risks, a sensible middle ground, and when to test updates on staging first.">
+  <meta property="og:title" content="WordPress Auto-Updates: Should You Turn Them On or Off?">
+  <meta property="og:description" content="Which WordPress auto-updates to turn on for core, plugins and themes, the real risks, WooCommerce cautions, backups and staging, and how to roll back an update.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-auto-updates.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-auto-updates/#article",
       "headline": "WordPress Auto-Updates: Should You Turn Them On for Core, Plugins and Themes?",
-      "description": "What WordPress auto-update settings for core, plugins and themes do, the real risks, a sensible middle ground, and when to test updates on staging first.",
+      "description": "Which WordPress auto-updates to turn on for core, plugins and themes, the real risks, WooCommerce cautions, backups and staging, and how to roll back an update.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-01",
+      "dateModified": "2026-10-11",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-auto-updates/",
       "image": "https://samverse.space/assets/og/blog-wordpress-auto-updates.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>WordPress Auto-Updates: Should You Turn Them On for Core, Plugins and Themes?</h1>
-          <p class="post-dek">What WordPress auto-update settings for core, plugins and themes do, the real risks, a sensible middle ground, and when to test updates on staging first.</p>
+          <p class="post-dek">Which WordPress auto-updates to turn on for core, plugins and themes, the real risks, WooCommerce cautions, backups and staging, and how to roll back an update.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Sameer Gupta</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · 5 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Auto-Updates%3A%20Should%20You%20Turn%20Them%20On%20for%20Core%2C%20Plugins%20and%20Themes%3F%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-auto-updates%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -154,31 +154,37 @@
             <summary>On this page</summary>
             <ol>
               <li><a href="#what-each-auto-update-setting-does">What each auto-update setting does</a></li>
+              <li><a href="#how-to-turn-auto-updates-on-or-off">How to turn auto-updates on or off</a></li>
               <li><a href="#the-case-for-turning-them-on">The case for turning them on</a></li>
               <li><a href="#the-risks">The risks</a></li>
-              <li><a href="#a-sensible-middle-ground">A sensible middle ground</a></li>
+              <li><a href="#woocommerce-needs-extra-caution">WooCommerce needs extra caution</a></li>
+              <li><a href="#what-to-auto-update-and-what-to-update-by-hand">What to auto-update and what to update by hand</a></li>
+              <li><a href="#managed-hosting-and-maintenance-service-updates">Managed hosting and maintenance-service updates</a></li>
               <li><a href="#safety-nets-to-put-in-place-first">Safety nets to put in place first</a></li>
               <li><a href="#when-to-use-staging-instead">When to use staging instead</a></li>
+              <li><a href="#rollback-options-when-an-update-goes-wrong">Rollback options when an update goes wrong</a></li>
               <li><a href="#make-it-someone-s-job">Make it someone's job</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Leave minor core updates and small, well-maintained plugins on auto-update, but update page builders, WooCommerce and your theme by hand after testing.</li>
-              <li>Auto-updates only roll back fatal errors, so broken layouts, silent form failures and expired premium licences still need backups, uptime monitoring and a weekly check.</li>
-              <li>Use a staging site for stores, major versions and PHP changes, and switch off auto-updates for any plugin you want to test first.</li>
+              <li>Leave minor core updates, translations and small, well-maintained plugins on auto-update, but update major core releases, page builders, WooCommerce and your theme by hand after testing.</li>
+              <li>Auto-updates only roll back fatal errors, so broken layouts, silent form failures and expired premium licences still need daily backups, uptime monitoring, a monitored admin email and a weekly check.</li>
+              <li>Use staging for stores, major versions and PHP changes, check exactly what your host's managed updates cover, and keep a recent backup, because restoring it is the most reliable rollback.</li>
             </ul>
           </div>
-<p>WordPress can update itself in the background: core, plugins, themes and translations. It sounds like the perfect way to stay secure without effort, and for some parts of your site it is. For others, an update that arrives at 3am can break a layout, a form or your checkout before anyone notices. Here's what each setting does and how to decide what to switch on.</p>
-
+<p>WordPress can update itself in the background: core, plugins, themes and translations. It sounds like the perfect way to stay secure without effort, and for some parts of your site it is. For others, an update that arrives at 3am can break a layout, a form or your checkout before anyone notices.</p>
+<p><strong>The short answer:</strong> for most business sites, leave minor core updates and translations on, turn on auto-updates for small, well-maintained plugins, and update major core releases, your theme, page builder and anything to do with WooCommerce or payments by hand, after a backup and ideally a test on staging. Here's what each setting does and how to decide.</p>
 <p>This article is about the auto-update settings themselves. For the hands-on process of updating by hand, see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>.</p>
 
 <h2 id="what-each-auto-update-setting-does">What each auto-update setting does</h2>
+<p>WordPress version numbers explain the first two rows. A change in the first two numbers, such as 6.7 to 6.8, is a major release with new features and bigger changes. A change in the third number, such as 6.8.1 to 6.8.2, is a minor maintenance or security release.</p>
 <table>
   <thead><tr><th>Setting</th><th>Where to find it</th><th>What it does</th></tr></thead>
   <tbody>
-    <tr><td>Minor core updates</td><td>On by default</td><td>Installs maintenance and security releases (for example 6.x.1 to 6.x.2) automatically</td></tr>
+    <tr><td>Minor core updates</td><td>On by default</td><td>Installs maintenance and security releases automatically</td></tr>
     <tr><td>Major core updates</td><td>Dashboard &gt; Updates</td><td>Moves your site to new major versions of WordPress without asking</td></tr>
     <tr><td>Plugin auto-updates</td><td>Plugins screen, per plugin</td><td>Installs each new version of that plugin as soon as WordPress picks it up</td></tr>
     <tr><td>Theme auto-updates</td><td>Appearance &gt; Themes, in the theme details</td><td>Updates that theme automatically</td></tr>
@@ -187,10 +193,27 @@
 </table>
 <p>A few details worth knowing:</p>
 <ul>
-  <li>Auto-updates run through WordPress's built-in scheduler, which relies on site visits, so on quiet sites they can happen later than you expect.</li>
+  <li>Plugin and theme auto-updates are off by default in WordPress itself, though some hosts switch them on. Whether major core updates are on can depend on when and how the site was installed, so check Dashboard &gt; Updates rather than assuming.</li>
+  <li>Auto-updates run through WordPress's built-in scheduler, which relies on site visits, so on quiet sites they can happen later than you expect; see <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</li>
   <li>WordPress emails the site's admin address after auto-updates. If that address is an old developer's inbox, nobody hears about failures.</li>
-  <li>Some hosts manage updates themselves or hide these toggles. Developers can also control core updates in wp-config.php. If a setting is missing or greyed out, check with your host or developer.</li>
+  <li>Some hosts manage updates themselves or hide these toggles. If a setting is missing or greyed out, check with your host or developer.</li>
 </ul>
+
+<h2 id="how-to-turn-auto-updates-on-or-off">How to turn auto-updates on or off</h2>
+<ol>
+  <li><strong>Core:</strong> go to Dashboard &gt; Updates. Near the top, WordPress says whether the site updates automatically for maintenance and security releases only, or for all new versions, with a link to switch.</li>
+  <li><strong>Plugins:</strong> go to Plugins &gt; Installed Plugins. The Automatic Updates column has an "Enable auto-updates" or "Disable auto-updates" link for each plugin, and the bulk actions menu changes several at once.</li>
+  <li><strong>Themes:</strong> go to Appearance &gt; Themes, click a theme to open its details and use the auto-updates link.</li>
+</ol>
+<p>Developers can also fix these rules in code so they can't be changed by accident. For example, this line in wp-config.php limits core to minor updates:</p>
+<pre><code>define( 'WP_AUTO_UPDATE_CORE', 'minor' );</code></pre>
+<p>Setting it to true allows all core updates, and false turns core auto-updates off. Plugins and themes can be controlled with filters in a small site-specific plugin. If the dashboard toggles are missing, something like this is probably already in place.</p>
+
+<aside class="inline-cta">
+  <strong>Need help with website maintenance?</strong>
+  <p>Monthly WordPress maintenance: updates, backups, security monitoring, uptime checks and small content changes, so your website stays fast, secure and online.</p>
+  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20Auto-Updates%3A%20Should%20You%20Turn%20Them%20On%20for%20Core%2C%20Plugins%20and%20Themes%3F%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+</aside>
 
 <h2 id="the-case-for-turning-them-on">The case for turning them on</h2>
 <p>Outdated plugins are one of the most common ways WordPress sites get hacked. When a security fix is released, auto-updates get it onto your site within hours rather than whenever someone remembers to log in. They make most sense when:</p>
@@ -200,24 +223,27 @@
   <li>The plugin in question is small and single-purpose, from an established developer</li>
 </ul>
 
-<aside class="inline-cta">
-  <strong>Need help with website maintenance?</strong>
-  <p>Monthly WordPress maintenance: updates, backups, security monitoring, uptime checks and small content changes, so your website stays fast, secure and online.</p>
-  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22WordPress%20Auto-Updates%3A%20Should%20You%20Turn%20Them%20On%20for%20Core%2C%20Plugins%20and%20Themes%3F%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
-</aside>
-
 <h2 id="the-risks">The risks</h2>
 <h3>Breaking changes</h3>
-<p>Major versions of page builders, WooCommerce and themes sometimes change how things work. Theme templates that override WooCommerce can go out of date, and a new version may need a newer PHP version than your hosting runs.</p>
+<p>Major versions of page builders, WooCommerce and themes sometimes change how things work. Theme templates that override WooCommerce can go out of date, and a new version may need a newer PHP version than your hosting runs. If a page builder update scrambles your design, see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</p>
 <h3>Silent breakage</h3>
 <p>Recent WordPress versions can roll back a plugin auto-update that causes a fatal error. But a misaligned layout, a contact form that stops sending emails or a checkout bug isn't a fatal error, so nothing rolls back, and you may not notice for days.</p>
 <h3>Bad timing</h3>
 <p>An update can land in the middle of a festival sale or a paid ad campaign, exactly when a broken page costs you most.</p>
 <h3>Premium plugins that don't auto-update</h3>
-<p>Premium plugins and themes update through their own licence system. If the licence has expired, no updates arrive at all, even with the toggle switched on. Plugins bundled with a premium theme often only update when the theme itself does. Auto-updates give a false sense of security if you never check these.</p>
+<p>Premium plugins and themes update through their own licence system. If the licence has expired, no updates arrive at all, even with the toggle switched on. Plugins bundled with a premium theme often only update when the theme itself does; see <a href="/blog/update-premium-theme-safely/">how to update a premium theme and its bundled plugins</a>.</p>
 
-<h2 id="a-sensible-middle-ground">A sensible middle ground</h2>
-<p>For most business websites, a mix works better than all-on or all-off:</p>
+<h2 id="woocommerce-needs-extra-caution">WooCommerce needs extra caution</h2>
+<p>A store has more moving parts than a brochure site, and they all touch money:</p>
+<ul>
+  <li><strong>Frequent releases:</strong> WooCommerce is updated often, and major versions can change how the cart, checkout or order storage work.</li>
+  <li><strong>Database updates:</strong> some versions update the store's database, either automatically or after you confirm a prompt. Plugin files can be rolled back; database changes are much harder to undo without a backup.</li>
+  <li><strong>Outdated template overrides:</strong> WooCommerce &gt; Status lists templates your theme overrides and flags outdated ones.</li>
+  <li><strong>Payment, shipping and invoice extensions</strong> often need to move in step with WooCommerce, and a broken payment gateway may not show any visible error.</li>
+</ul>
+<p>For most stores the safe pattern is auto-updates off for WooCommerce, its extensions, payment gateways and the theme, with updates tested on staging, then applied live at a quiet time and followed by a test order. The <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the routine around this.</p>
+
+<h2 id="what-to-auto-update-and-what-to-update-by-hand">What to auto-update and what to update by hand</h2>
 <table>
   <thead><tr><th>Part of the site</th><th>Auto-update?</th><th>Why</th></tr></thead>
   <tbody>
@@ -232,30 +258,52 @@
 </table>
 <p>Write the list down, so whoever looks after the site knows which plugins update themselves and which are done by hand.</p>
 
+<h2 id="managed-hosting-and-maintenance-service-updates">Managed hosting and maintenance-service updates</h2>
+<p>Some managed WordPress hosts and maintenance services run updates for you. The more careful ones take a backup first, compare screenshots of key pages before and after, and roll back if something looks different. Others simply switch on WordPress's own auto-updates. Before relying on one, ask:</p>
+<ul>
+  <li>Does it cover core only, or plugins, themes and premium plugins too?</li>
+  <li>When do updates run, and can you exclude plugins or pause updates during a sale?</li>
+  <li>Is a backup taken immediately before each update?</li>
+  <li>Which pages are checked afterwards, and does anyone test the checkout or forms?</li>
+  <li>Who is told when an update fails or is rolled back?</li>
+</ul>
+
 <h2 id="safety-nets-to-put-in-place-first">Safety nets to put in place first</h2>
-<p>Auto-updates are only safe if you can spot a problem quickly and undo it:</p>
 <ul>
   <li><strong>Daily automatic backups</strong> stored away from your hosting account, so you can restore yesterday's site. See the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</li>
   <li><strong>Uptime monitoring</strong> that alerts you when the site goes down. It catches outages and fatal errors, not broken layouts. See <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a>.</li>
-  <li><strong>Update emails going to a real inbox</strong> that someone reads.</li>
+  <li><strong>A monitored admin email.</strong> Update reports go there, and so does the recovery-mode link WordPress sends when a plugin causes a fatal error. If you do see "There has been a critical error on this website", follow <a href="/blog/fix-wordpress-critical-error/">this step-by-step fix</a>.</li>
   <li><strong>A quick weekly check:</strong> open the homepage on your phone, send a test enquiry through the contact form and, for stores, add something to the cart.</li>
 </ul>
 
 <h2 id="when-to-use-staging-instead">When to use staging instead</h2>
-<p>A staging site is a private copy of your website where you can test updates before they touch the live site. It's worth using when:</p>
-<ul>
-  <li>You run a WooCommerce store or take bookings and payments</li>
-  <li>A major version of your page builder, WooCommerce or theme is released</li>
-  <li>You're changing the PHP version on your hosting</li>
-  <li>The site has custom code or a long list of plugins</li>
-  <li>A big campaign or sale is coming up</li>
-</ul>
+<p>A staging site is a private copy of your website where you can test updates before they touch the live site. It's worth using when you run a store or take bookings and payments, when a major version of your page builder, WooCommerce or theme is released, when you're changing the PHP version, when the site has custom code or a long list of plugins, and before a big campaign or sale.</p>
 <p>One catch: auto-updates on the live site don't wait for your staging tests. For any plugin you want to test first, switch its auto-update off on the live site. See <a href="/blog/staging-sites-explained/">staging sites explained</a> for how to set one up.</p>
+
+<h2 id="rollback-options-when-an-update-goes-wrong">Rollback options when an update goes wrong</h2>
+<ul>
+  <li><strong>Automatic rollback of fatal errors:</strong> in recent WordPress versions, if a plugin auto-update causes a fatal error, WordPress tries to restore the previous version. It doesn't catch layout, form or checkout problems.</li>
+  <li><strong>Failed-update protection:</strong> WordPress also keeps a temporary copy of a plugin or theme while updating, so an update that fails part-way can be restored. If the site gets stuck on a maintenance message, see <a href="/blog/wordpress-stuck-in-maintenance-mode/">WordPress stuck in maintenance mode</a>.</li>
+  <li><strong>Reinstall the previous version:</strong> older versions of free plugins are usually available on their WordPress.org page (under Advanced View at the time of writing), and premium vendors often offer them in your account. This replaces files only; it doesn't undo database changes.</li>
+  <li><strong>Restore a backup or host snapshot:</strong> the most reliable option, especially after updates that changed the database.</li>
+</ul>
 
 <h2 id="make-it-someone-s-job">Make it someone's job</h2>
 <p>Whatever you choose, someone should own it. Once a month, review which plugins are set to auto-update, check that premium licences are active, delete anything unused and read through the update emails for failures. The <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> shows where this fits alongside backups, security and speed checks.</p>
 
-<p>Rather not manage updates yourself? See <a href="/wordpress-maintenance/">WordPress maintenance</a> for help with updates, backups and testing.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>Are WordPress auto-updates safe?</h3>
+<p>Minor core updates and small, well-maintained plugins are generally low risk. Larger plugins, themes and WooCommerce carry more risk, so they're safer updated by hand with a backup ready. Safety depends less on the setting than on having backups and someone checking the site.</p>
+<h3>Does WordPress update itself automatically by default?</h3>
+<p>Minor core releases and translations, yes. Plugin and theme auto-updates are off unless you or your host switch them on, and major core updates depend on your settings, so check Dashboard &gt; Updates.</p>
+<h3>Should I turn on auto-updates for WooCommerce?</h3>
+<p>For most live stores, no. Update WooCommerce and its extensions by hand after testing on staging, at a quiet time, and place a test order afterwards.</p>
+<h3>Why didn't a plugin update automatically?</h3>
+<p>Common reasons: an expired premium licence, the new version needing a newer PHP or WordPress version, WP-Cron not running on a quiet site, file permission problems, or your host controlling updates.</p>
+<h3>Can I choose what time auto-updates run?</h3>
+<p>Not from the WordPress dashboard. Some hosts and maintenance tools let you schedule updates; otherwise, switch auto-updates off for important plugins and update them yourself at a quiet time.</p>
+
+<p>Rather not manage updates yourself? See <a href="/wordpress-maintenance/">WordPress maintenance</a> for help with updates, backups and testing. Get in touch and I'll set up a sensible auto-update policy for your site, with backups and checks behind it.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -292,12 +340,17 @@
             <strong>On this page</strong>
             <ol>
               <li><a href="#what-each-auto-update-setting-does">What each auto-update setting does</a></li>
+              <li><a href="#how-to-turn-auto-updates-on-or-off">How to turn auto-updates on or off</a></li>
               <li><a href="#the-case-for-turning-them-on">The case for turning them on</a></li>
               <li><a href="#the-risks">The risks</a></li>
-              <li><a href="#a-sensible-middle-ground">A sensible middle ground</a></li>
+              <li><a href="#woocommerce-needs-extra-caution">WooCommerce needs extra caution</a></li>
+              <li><a href="#what-to-auto-update-and-what-to-update-by-hand">What to auto-update and what to update by hand</a></li>
+              <li><a href="#managed-hosting-and-maintenance-service-updates">Managed hosting and maintenance-service updates</a></li>
               <li><a href="#safety-nets-to-put-in-place-first">Safety nets to put in place first</a></li>
               <li><a href="#when-to-use-staging-instead">When to use staging instead</a></li>
+              <li><a href="#rollback-options-when-an-update-goes-wrong">Rollback options when an update goes wrong</a></li>
               <li><a href="#make-it-someone-s-job">Make it someone's job</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -324,9 +377,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/wordpress-stuck-in-maintenance-mode/"><img class="post-card-img" src="/assets/og/blog-wordpress-stuck-in-maintenance-mode.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Stuck in Maintenance Mode? How to Fix &quot;Briefly Unavailable for Scheduled Maintenance&quot;</h3><p>Seeing &quot;Briefly unavailable for scheduled maintenance&quot;? Why updates get stuck, how to delete the .maintenance file, finish the update safely and prevent it.</p><span class="post-card-meta">1 October 2026 · 6 min read</span></a>
           <a class="post-card" href="/blog/wordpress-maintenance-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-maintenance-checklist.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Maintenance Checklist: What to Do Weekly, Monthly and Yearly</h3><p>A practical WordPress maintenance checklist covering updates, backups, security, speed and SEO tasks to do weekly, monthly and yearly to keep your website healthy.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
           <a class="post-card" href="/blog/wordpress-backup-restore-guide/"><img class="post-card-img" src="/assets/og/blog-wordpress-backup-restore-guide.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Backup and Restore: A Simple Guide for Business Owners</h3><p>How WordPress backups work, what to back up, how often, where to store copies, and how to restore your site safely when something goes wrong, explained simply.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
-          <a class="post-card" href="/blog/update-wordpress-safely/"><img class="post-card-img" src="/assets/og/blog-update-wordpress-safely.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Update WordPress Safely Without Breaking Your Site</h3><p>A safe process for updating WordPress core, themes and plugins: backups, staging, update order, testing key pages and forms, and what to do if an update breaks your site.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
         </div>
       </div>
     </section>

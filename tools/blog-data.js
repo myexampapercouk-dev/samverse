@@ -9823,48 +9823,137 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'canonical-tags-explained',
-    seoTitle: 'Canonical Tags Explained for Business Owners',
-    title: 'Canonical Tags Explained: Telling Google Which Page Is the Original',
-    description: 'What canonical tags are, when your site creates duplicate URLs (www, parameters, product variants), how canonicals fix it, and common canonical mistakes that hurt rankings.',
+    seoTitle: 'Canonical Tags Explained: What rel=canonical Does in SEO',
+    title: 'Canonical Tags Explained: What rel=canonical Does and How to Get It Right',
+    description: 'What a canonical tag does, why Google treats it as a hint, how WordPress sets it, and how to fix parameter, pagination, www and Search Console canonical issues.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'SEO',
     related: ['wordpress-seo-services', 'woocommerce-developer', 'wordpress-migration'],
     body: `
-<p>The same page can often be reached through several URLs. A canonical tag tells search engines which URL is the main version to index and rank, so ranking signals aren't split across duplicates.</p>
+<p>A canonical tag is a line of code in a page's head that tells search engines which URL is the main version of that content. When the same page can be reached at several addresses, the canonical says "index and rank this one", so links and other signals are consolidated on a single URL instead of being split between duplicates. Google treats it as a strong hint, not a command, which is why canonicals only work well when the rest of your site agrees with them.</p>
+<p>Below: how canonicals work, how WordPress sets them, and how to fix the problems that show up in Google Search Console.</p>
 
-<h2>How duplicate URLs happen</h2>
+<h2>What a canonical tag looks like</h2>
+<p>A canonical is a <code>link</code> element placed in the <code>&lt;head&gt;</code> section of a page:</p>
+<pre><code>&lt;link rel="canonical" href="https://www.example.in/services/seo/" /&gt;</code></pre>
 <ul>
-  <li>http vs https, and www vs non-www versions</li>
-  <li>Tracking parameters (<code>?utm_source=...</code>)</li>
-  <li>Sorting and filter parameters on stores and listings</li>
-  <li>Print versions or session IDs</li>
-  <li>The same product in multiple categories with different URLs</li>
-  <li>Content syndicated on other sites</li>
+  <li><strong>Use the full, absolute URL</strong>, including https and the right www or non-www version. Relative URLs are allowed, but they are easy to get wrong.</li>
+  <li><strong>One canonical per page.</strong> If a theme and a plugin both output one and they disagree, Google may ignore both.</li>
+  <li><strong>It must be in the head.</strong> A canonical that ends up in the body of the page is ignored.</li>
+  <li><strong>The target should be a live, indexable page</strong> that returns a normal 200 status: not a redirect, a 404 or a page marked noindex.</li>
+</ul>
+<p>For files that have no HTML head, such as PDF brochures, the same instruction can be sent as a <code>rel="canonical"</code> HTTP header. A developer sets that at server level.</p>
+
+<h2>A hint, not a directive</h2>
+<p>Google's documentation describes the canonical tag as a strong signal, and says Google may choose a different URL if other signals point elsewhere. When it finds a group of duplicate pages, it weighs several clues together:</p>
+<ul>
+  <li><strong>Redirects</strong>, a very strong signal</li>
+  <li><strong>Canonical tags</strong> on the duplicates</li>
+  <li><strong>Internal links:</strong> which version your menus, buttons and articles link to</li>
+  <li><strong>XML sitemaps:</strong> which URLs you list</li>
+  <li><strong>HTTPS:</strong> Google generally prefers the secure version</li>
+  <li><strong>The content itself:</strong> if two pages aren't really duplicates, Google may ignore the canonical altogether</li>
+</ul>
+<p>That last point matters. A canonical is meant for pages that are the same or nearly the same. Pointing a page about one product at a page about a different product doesn't merge them; Google is likely to ignore the instruction.</p>
+
+<h2>Self-referencing canonicals</h2>
+<p>A self-referencing canonical is a page pointing to its own clean URL. It sounds pointless, but it's the recommended default. If someone links to your page with a tracking code attached, or a plugin adds a parameter, the self-referencing canonical on that version still points back to the clean address. Every page on this website includes one. Most pages should canonicalise to themselves; only true duplicates should point somewhere else.</p>
+
+<h2>How WordPress and SEO plugins set canonicals</h2>
+<p>WordPress itself has added a canonical tag to single posts and pages for many years. SEO plugins such as Yoast SEO, Rank Math and All in One SEO take over that output and extend it to the homepage, categories and other archives. They also let you set a custom canonical for an individual page, usually in an Advanced section of the plugin's panel below the editor. If you're choosing a plugin, see <a href="/blog/wordpress-seo-plugins-compared/">Yoast SEO vs Rank Math vs All in One SEO</a>.</p>
+<ul>
+  <li><strong>Leave the custom canonical field empty</strong> unless you have a specific reason. An empty field means "use this page's own URL", which is what you want most of the time.</li>
+  <li><strong>Run only one SEO plugin.</strong> Two active SEO plugins, or an SEO plugin plus a theme that adds its own SEO tags, can produce duplicate canonicals.</li>
+  <li><strong>Canonicals are built from your Site Address</strong> in Settings &gt; General. If that is wrong after a migration, every canonical on the site is wrong too.</li>
+  <li><strong>WooCommerce product URLs</strong> don't include the category by default, so a product in several categories still has one URL. If your permalink settings do include categories, make sure the canonical points to one consistent version.</li>
 </ul>
 
-<h2>How a canonical tag works</h2>
-<p>A canonical is a link tag in a page's head pointing to the preferred URL. Each page usually points to itself (a self-referencing canonical), while duplicate versions point to the main one. Google treats canonicals as a strong hint, not a command.</p>
+<h2>Parameters, tracking codes and filters</h2>
+<p>Anything after a question mark creates a new URL for the same page. How you handle it depends on what the parameter does:</p>
+<table>
+  <thead><tr><th>URL type</th><th>Example</th><th>What the canonical should do</th></tr></thead>
+  <tbody>
+    <tr><td>Tracking parameters</td><td>/offer/?utm_source=whatsapp</td><td>Point to the clean URL, /offer/</td></tr>
+    <tr><td>Sort order</td><td>/shop/?orderby=price</td><td>Point to the unsorted category; the products are the same</td></tr>
+    <tr><td>Filters you don't want ranked</td><td>/shop/?colour=red&amp;size=m</td><td>Point to the main category, or noindex the filtered pages</td></tr>
+    <tr><td>Filter pages you do want ranked</td><td>/sarees/silk/</td><td>Make it a proper page with its own content and a self-referencing canonical</td></tr>
+  </tbody>
+</table>
+<p>Google has retired the old URL Parameters tool in Search Console, so parameters now need handling on the site itself. On stores with many filters, canonicals alone may not stop Google crawling thousands of combinations; see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters and SEO</a> for how to keep filter URLs under control.</p>
 
-<h2>WordPress and canonicals</h2>
-<p>WordPress and SEO plugins add self-referencing canonicals automatically. Check them after migrations, domain changes and redesigns. Every page on this website includes one.</p>
+<h2>Pagination: don't canonicalise to page 1</h2>
+<p>Blog archives, category pages and product listings are often split across several pages: /blog/, /blog/page/2/, /blog/page/3/ and so on. A common mistake is pointing every one of them to page 1. Page 2 lists different posts or products from page 1, so it isn't a duplicate, and canonicalising it away can stop Google finding items that are only linked from deeper pages.</p>
+<p>Google's guidance is to give each paginated page its own self-referencing canonical and to link the pages together with normal, crawlable links. Google has also said it no longer uses the old rel="next" and rel="prev" tags as an indexing signal, though they do no harm. Most SEO plugins handle paginated canonicals correctly; check yours if a theme or page builder creates its own pagination.</p>
 
-<h2>Common mistakes</h2>
+<h2>Cross-domain canonicals</h2>
+<p>A canonical can point to a page on a different domain. The usual use is syndication: if your article is republished on another site, the copy can carry a canonical pointing to your original. Be aware of two things:</p>
+<ul>
+  <li>The other site has to agree to add it, and Google may still show their version instead of yours.</li>
+  <li>At the time of writing, Google's documentation says a canonical isn't the most reliable option for syndicated copies, and suggests the partner blocks their copy from indexing with noindex instead. Check the current guidance before agreeing terms.</li>
+</ul>
+<p>If you own two domains with the same content, such as a .com and a .in, or you've moved to a new domain, don't rely on cross-domain canonicals. Use 301 redirects so only one site exists; see <a href="/blog/change-domain-name-without-losing-seo/">changing your domain name without losing SEO</a>.</p>
+
+<h2>HTTP vs HTTPS, www vs non-www and trailing slashes</h2>
+<p>If your site loads at http and https, and with and without www, each page technically exists at four addresses. If /page and /page/ both load too, there are eight. Canonicals help, but they aren't the main fix here:</p>
+<ol>
+  <li><strong>Pick one version</strong>, for example https://www.example.in/ with trailing slashes.</li>
+  <li><strong>301 redirect every other version</strong> to it at server or host level. See <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
+  <li><strong>Make canonicals, internal links and your sitemap</strong> all use that same version.</li>
+  <li><strong>Test</strong> by typing the http and the other www variant into a browser and checking where you end up.</li>
+</ol>
+<p>A canonical that still says http after a move to https is a classic leftover from an unfinished migration.</p>
+
+<h2>Canonical vs redirect vs noindex</h2>
+<table>
+  <thead><tr><th>Tool</th><th>Use it when</th><th>What visitors see</th></tr></thead>
+  <tbody>
+    <tr><td>301 redirect</td><td>The old URL shouldn't exist any more: a moved page, a merged article, an old domain</td><td>They are sent to the new URL</td></tr>
+    <tr><td>Canonical</td><td>The duplicate needs to stay accessible, but one version should rank</td><td>Both URLs still work</td></tr>
+    <tr><td>Noindex</td><td>The page shouldn't appear in search at all, such as a thank-you page or internal search results</td><td>The page works but isn't indexed</td></tr>
+  </tbody>
+</table>
+<p>Don't combine a noindex with a canonical pointing to a different page; the two instructions contradict each other. And don't block duplicate URLs in robots.txt, because Google then can't crawl them to see the canonical at all.</p>
+
+<h2>How to check canonicals in Search Console</h2>
+<p>Google Search Console shows whether Google is following your canonicals:</p>
+<ul>
+  <li><strong>URL Inspection:</strong> enter a URL and, in the page indexing details, compare the "User-declared canonical" with the "Google-selected canonical". If they differ, Google has overruled you.</li>
+  <li><strong>Pages report (Indexing &gt; Pages):</strong> look at the reasons listed for pages that aren't indexed.</li>
+</ul>
+<p>Three statuses relate to canonicals:</p>
+<ul>
+  <li><strong>Alternate page with proper canonical tag:</strong> usually fine. Google found a duplicate, saw your canonical and respected it.</li>
+  <li><strong>Duplicate without user-selected canonical:</strong> Google found duplicates with no canonical and picked one itself. Add canonicals or redirects so you decide.</li>
+  <li><strong>Duplicate, Google chose different canonical than user:</strong> Google disagreed with your canonical. Check whether the page really is a duplicate, whether internal links and the sitemap point to a different version, and whether the canonical target redirects or is noindexed.</li>
+</ul>
+<p>For the other statuses in that report, see <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors explained</a>. Outside Search Console, view a page's source and search for "canonical", or run a site crawler that lists every page's canonical.</p>
+
+<h2>Common canonical mistakes</h2>
 <ul>
   <li><strong>Canonicals pointing to a staging or old domain</strong> after a migration</li>
   <li><strong>All pages canonicalised to the homepage</strong>, which tells Google to ignore them</li>
-  <li><strong>Canonical to a redirected or 404 URL</strong></li>
-  <li><strong>Conflicting signals:</strong> canonical says one URL, sitemap and internal links use another</li>
+  <li><strong>Canonical to a redirected, 404 or noindexed URL</strong></li>
+  <li><strong>Conflicting signals:</strong> the canonical says one URL, while the sitemap and internal links use another</li>
   <li><strong>Using canonicals instead of redirects</strong> when a page has permanently moved</li>
+  <li><strong>Paginated pages pointing to page 1</strong></li>
+  <li><strong>Language versions pointing to the English page.</strong> Each language version should be its own canonical; see <a href="/blog/hreflang-multilingual-seo-india/">hreflang and multilingual SEO for Indian websites</a>.</li>
 </ul>
+<p>For the wider picture of why duplicate URLs appear and when they matter, see <a href="/blog/duplicate-content-explained/">duplicate content explained</a>.</p>
 
-<h2>Canonicals vs redirects vs noindex</h2>
-<ul>
-  <li><strong>Redirect:</strong> the old URL shouldn't exist any more (page moved). See <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
-  <li><strong>Canonical:</strong> duplicates need to exist, but one version should rank</li>
-  <li><strong>Noindex:</strong> the page shouldn't appear in search at all</li>
-</ul>
+<h2>FAQs</h2>
+<h3>Is a canonical tag a ranking factor?</h3>
+<p>Not directly. It doesn't make a page rank higher on its own. It helps Google consolidate signals from duplicate URLs onto one page and show the URL you prefer, which can help that page compete.</p>
+<h3>Why is Google ignoring my canonical tag?</h3>
+<p>Usually because other signals disagree: internal links or the sitemap point to another version, the pages aren't actually duplicates, the target redirects or is noindexed, or there are two conflicting canonicals. Fix the signals, then request indexing again in URL Inspection.</p>
+<h3>Should I use a canonical or a 301 redirect?</h3>
+<p>Use a 301 redirect when visitors no longer need the old URL. Use a canonical when both URLs must keep working, such as a tracked or sorted version of a page.</p>
+<h3>Can I canonicalise similar product pages to one product?</h3>
+<p>Only if they're near-identical, such as the same product at two URLs. Different products, or variations people search for separately, should keep their own canonical; Google may ignore canonicals between pages that differ a lot.</p>
+<h3>How long does it take Google to respect a new canonical?</h3>
+<p>It depends on how often Google recrawls the pages involved; changes can take days or weeks to show in Search Console. Requesting indexing in URL Inspection may help Google notice sooner, but doesn't guarantee it will agree.</p>
 
-<p>For more on duplicates, see <a href="/blog/duplicate-content-explained/">duplicate content explained</a>.</p>
+<p>Seeing canonical warnings in Search Console, or not sure your plugin is setting the right URLs after a redesign or migration? I audit and fix technical SEO on WordPress and WooCommerce sites. Get in touch through <a href="/wordpress-seo-services/">WordPress SEO services</a> and I'll take a look.</p>
 `,
   },
   {
@@ -25952,10 +26041,11 @@ Template: astra
   },
   {
     slug: 'in-vs-com-domain',
-    seoTitle: '.in vs .com: Which Domain Should an Indian Business Choose?',
+    seoTitle: '.in vs .com Domain: Which Should an Indian Business Choose?',
     title: '.in vs .com (and .co.in): Which Domain Should an Indian Business Choose?',
-    description: '.in, .com or .co.in for an Indian business? How your audience, name availability, trust, typing habits and Google country targeting should shape the choice.',
+    description: '.in or .com for an Indian business? How audience, trust, Google country signals, cost, .in registration rules, email and owning both should shape your choice.',
     date: '2026-09-28',
+    updated: '2026-10-11',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-for-startups'],
     body: `
@@ -25969,13 +26059,30 @@ Template: astra
   <li><strong>If both are available:</strong> register .in and .com, use one as your main address and redirect the other</li>
 </ul>
 
+<h2>.in vs .com vs .co.in at a glance</h2>
+<table>
+  <thead><tr><th></th><th>.in</th><th>.com</th><th>.co.in</th></tr></thead>
+  <tbody>
+    <tr><td>What it tells Google</td><td>Relevant to users in India</td><td>No country; Google uses other signals</td><td>Same as .in</td></tr>
+    <tr><td>Familiarity in India</td><td>High</td><td>Highest</td><td>Lower, and often mistyped</td></tr>
+    <tr><td>Impression abroad</td><td>Clearly an Indian business</td><td>Neutral, the global default</td><td>Clearly an Indian business</td></tr>
+    <tr><td>Short names available</td><td>More often</td><td>Rarely</td><td>Often</td></tr>
+    <tr><td>Domain disputes</td><td>.IN dispute policy (INDRP)</td><td>Usually UDRP</td><td>.IN dispute policy (INDRP)</td></tr>
+    <tr><td>Best for</td><td>Businesses serving India</td><td>Exporters, SaaS, global brands</td><td>Businesses already using one</td></tr>
+  </tbody>
+</table>
+
 <h2>Start with your audience</h2>
-<p>Think about where your customers are and what they expect.</p>
 <ul>
   <li><strong>Local and national businesses:</strong> clinics, coaching institutes, contractors, shops and service companies serving Indian customers. A .in address clearly says "Indian business", which is usually a plus.</li>
-  <li><strong>Exporters and international B2B:</strong> overseas buyers are most familiar with .com. A .in address isn't a problem in itself, but it signals a focus on India, which isn't always the message you want.</li>
+  <li><strong>Exporters and international B2B:</strong> overseas buyers are most familiar with .com. A .in address isn't a problem in itself, but it signals a focus on India, which isn't always the message you want; see <a href="/blog/website-for-export-businesses/">websites for export businesses</a>.</li>
   <li><strong>SaaS, IT services and startups with global ambitions:</strong> .com is the safer long-term choice, even if your first customers are in India.</li>
 </ul>
+
+<h2>Trust and local signals</h2>
+<p>.com is the default most people type without thinking. Indian customers are also used to seeing .in addresses, so either looks professional. For a local business, .in can even be a small trust signal: it tells visitors at a glance that you're based in India, which matters for things like delivery, pricing in rupees and after-sales service.</p>
+<p>But the extension is a small part of trust. Visitors decide far more from your address and phone number, real photos, reviews, GST and registration details where relevant, and a fast, secure site. A .com with no local details won't look more trustworthy than a well-built .in.</p>
+<p>The practical risk is habit. If your address is yourbrand.in, some people will type yourbrand.com, especially when writing your email address. If someone else owns that .com, those visitors and emails go to them. Owning both extensions solves this.</p>
 
 <h2>Availability and cost</h2>
 <p>Short, memorable .com names are hard to find because so many are already registered. The same name is often still free as a .in. Before choosing, check what's on the .com version of your name:</p>
@@ -25984,11 +26091,31 @@ Template: astra
   <li><strong>For sale:</strong> only worth buying if the price makes sense for your business</li>
   <li><strong>An active business in your field:</strong> risky, because customers and emails will go to them, and there may be trademark issues</li>
 </ul>
-<p>Don't twist your name into a hyphenated or misspelt .com just to get the extension. A clean .in beats an awkward .com. And whichever you choose, check the renewal price, not just the first-year offer.</p>
+<p>Don't twist your name into a hyphenated or misspelt .com just to get the extension. A clean .in beats an awkward .com.</p>
+<p>On price, standard .in and .com registrations are usually in the same broad range, but first-year offers, renewal prices and whether GST is shown upfront vary by registrar. Discounted first years are common, and renewals are often higher. Names already owned by someone else, or listed as "premium", can cost far more whichever extension you choose. Compare the yearly renewal cost, not the headline offer.</p>
 
-<h2>Trust, familiarity and typing habits</h2>
-<p>.com is the default most people type without thinking. Indian customers are also used to seeing .in addresses, so either looks professional.</p>
-<p>The practical risk is habit. If your address is yourbrand.in, some people will type yourbrand.com, especially when writing your email address. If someone else owns that .com, those visitors and emails go to them. Owning both extensions solves this.</p>
+<h2>Registering a .in: rules and ownership</h2>
+<p>The .in registry is run by the National Internet Exchange of India (NIXI), and you buy through accredited registrars. A few points worth knowing, all of which can change, so check your registrar's current rules:</p>
+<ul>
+  <li><strong>Who can register:</strong> at the time of writing, you don't need to live in India or have an Indian company to register a plain .in. Some extensions, such as .gov.in and .ac.in, are restricted to eligible organisations.</li>
+  <li><strong>Accurate details:</strong> registrant details must be accurate, and registrars may ask you to verify your identity or contact details. False details can put the domain at risk.</li>
+  <li><strong>Register it in the business's name</strong>, with an email address you control, in your own registrar account. A domain registered in a developer's or ex-employee's name is a common headache later.</li>
+  <li><strong>Disputes:</strong> arguments over who has the right to a .in name go through the .IN Domain Name Dispute Resolution Policy (INDRP), while .com disputes generally use the UDRP. If you're protecting a trademark, ask a lawyer.</li>
+  <li><strong>Privacy:</strong> what contact details are shown publicly has differed between .in and .com over the years; ask your registrar.</li>
+</ul>
+<p>Once you own a domain, expect official-looking emails offering "renewals", SEO packages or rival registrations of your name in other countries. Most are sales tactics or scams; see <a href="/blog/domain-seo-scam-emails/">domain renewal and SEO scam emails</a>.</p>
+
+<h2>SEO: does the extension affect rankings?</h2>
+<p>A little, in a specific way. Google treats .in as a country-code domain, so it takes it as a signal that the site is especially relevant to users in India. That helps Google understand your audience; it doesn't make you rank higher on its own.</p>
+<p>A .com is generic and has no country attached. Search Console used to have an International Targeting report where owners of generic domains could choose a target country. Google retired that report, and its country setting, around 2022, so you can't set a country for a .com there any more. Instead Google works it out from other signals: your content and language, addresses and phone numbers, links from Indian websites, your Google Business Profile and, for multi-country sites, hreflang tags (see <a href="/blog/hreflang-multilingual-seo-india/">hreflang for Indian websites</a>).</p>
+<ul>
+  <li>A .com site can rank perfectly well in India</li>
+  <li>A .in site can rank abroad, but the country signal works against it for international audiences</li>
+  <li>Google treats a few country codes, such as .io and .co, as generic because they're used worldwide; .in isn't one of them</li>
+  <li>For local searches like "CA in Jaipur", your Google Business Profile, reviews and location pages matter far more than the extension; see the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian businesses</a></li>
+  <li>Keywords in the domain carry little weight, so choose for your brand, not for search</li>
+</ul>
+
 <h3>What about .co.in and other options?</h3>
 <ul>
   <li><strong>.co.in</strong> was common before plain .in registrations became popular. It's longer, and people easily shorten it to .co or .in by mistake. If you've used one for years it's fine to keep; for a new business, .in is simpler.</li>
@@ -25996,30 +26123,41 @@ Template: astra
   <li><strong>Newer extensions</strong> such as .shop or .tech can work for strong brands but are less familiar to many customers.</li>
 </ul>
 
-<h2>SEO: does the extension affect rankings?</h2>
-<p>A little, in a specific way. Google treats .in as a country-code domain, so it takes it as a signal that the site is especially relevant to users in India. That helps Google understand your audience; it doesn't make you rank higher on its own.</p>
-<p>A .com is generic and has no country attached. Google works out who it's for from other signals: your content and language, addresses and phone numbers, links from Indian websites, your Google Business Profile and, for multi-country sites, hreflang tags. Google has also retired the old country-targeting setting in Search Console, so you can't simply set a country for a .com there any more.</p>
+<h2>The brand and email angle</h2>
+<p>Your domain appears in far more places than your website: email addresses, visiting cards, invoices, vehicle branding and social profiles. Say it out loud over the phone before you commit.</p>
 <ul>
-  <li>A .com site can rank perfectly well in India</li>
-  <li>A .in site can rank abroad, but the country signal works against it for international audiences</li>
-  <li>For local searches like "CA in Jaipur", your Google Business Profile, reviews and location pages matter far more than the extension; see the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian businesses</a></li>
-  <li>Keywords in the domain carry little weight, so choose for your brand, not for search</li>
+  <li><strong>Email is where mix-ups hurt most.</strong> A customer who types sales@yourbrand.com instead of sales@yourbrand.in sends their enquiry or purchase order to whoever owns the .com. Owning both and forwarding mail from the second domain catches these.</li>
+  <li><strong>Use one domain consistently</strong> for email, signatures, print and your Google Business Profile.</li>
+  <li><strong>Protect the domain you don't send from.</strong> Scammers can spoof a domain that never sends email. SPF and DMARC records stating that no mail is sent from it make that harder; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</li>
 </ul>
 
 <h2>Buying both, and setting it up properly</h2>
 <ol>
   <li><strong>Register both in your own account</strong>, not your developer's, and turn on auto-renew</li>
   <li><strong>Pick one primary domain</strong> for your website, business email, visiting cards and Google Business Profile</li>
-  <li><strong>Redirect the other</strong> with a permanent 301 redirect to the same page on your main domain</li>
+  <li><strong>Redirect the other</strong> with a permanent 301 redirect to the same page on your main domain; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a></li>
+  <li><strong>Make the redirect work on https too.</strong> If someone types https://yourbrand.com, the redirecting domain needs its own SSL certificate, or visitors see a security warning first. Pointing it at your hosting and redirecting there is usually more reliable than basic registrar forwarding.</li>
   <li><strong>Don't run two copies</strong> of the same website on both extensions; that creates duplicate content</li>
   <li><strong>Consider email forwarding</strong> on the second domain, so messages sent to the wrong extension still reach you</li>
 </ol>
 <p>Every extra domain is one more renewal to track; keep them on the <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a>.</p>
 
 <h2>Switching extensions later</h2>
-<p>If you start on .co.in or .in and later move to a .com, it's very doable. Every old URL is 301-redirected to its new address, Search Console's Change of Address tool tells Google about the move, and your email, Google Business Profile, social profiles and printed material are updated. Expect some temporary ranking movement while Google processes the change. Keep the old domain renewed permanently so the redirects keep working.</p>
+<p>If you start on .co.in or .in and later move to a .com, it's very doable. Every old URL is 301-redirected to its new address, Search Console's Change of Address tool tells Google about the move, and your email, Google Business Profile, social profiles and printed material are updated. Expect some temporary ranking movement while Google processes the change, and keep the old domain renewed permanently so the redirects keep working. The full process is in <a href="/blog/change-domain-name-without-losing-seo/">how to change your domain name without losing SEO</a>.</p>
 
-<p>Setting up a new business website, or moving to a new domain? See <a href="/website-for-startups/">websites for startups</a> and <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2>FAQs</h2>
+<h3>Is .in good for SEO?</h3>
+<p>Yes, for businesses targeting India. It tells Google the site is relevant to Indian users, which helps with audience matching, but it won't lift rankings on its own. Content, links and local signals still do most of the work.</p>
+<h3>Can someone outside India register a .in domain?</h3>
+<p>At the time of writing, yes: plain .in domains are open to registrants worldwide, though details must be accurate and registrars may ask for verification. Some extensions, such as .gov.in and .ac.in, are restricted.</p>
+<h3>Is .co.in worse than .in?</h3>
+<p>Not for SEO; Google treats both as Indian country-code domains. It's just longer and easier to mistype, so for a new business .in is usually the better pick.</p>
+<h3>I already have a .in. Should I buy the .com too?</h3>
+<p>If it's available at a normal price, it's usually worth it, mainly to catch mistyped emails and visits. Redirect it to your .in rather than building a second site.</p>
+<h3>Does a .in look less professional than a .com?</h3>
+<p>Not to Indian customers, who see .in addresses all the time. Overseas buyers may read it as India-focused, which is only a drawback if you're selling internationally.</p>
+
+<p>Setting up a new business website, or moving to a new domain? See <a href="/website-for-startups/">websites for startups</a> and <a href="/wordpress-website-development/">WordPress website development</a>. Get in touch and I can help you choose the domain, set up the redirects and email properly, and build a site that earns trust whichever extension you pick.</p>
 `,
   },
   {
@@ -28358,23 +28496,75 @@ Template: astra
   },
   {
     slug: 'hreflang-multilingual-seo-india',
-    seoTitle: 'Hreflang and Multilingual SEO for Indian Websites',
+    seoTitle: 'Hreflang and Multilingual SEO in India: Hindi and x-default',
     title: 'Hreflang and Multilingual SEO for Indian Websites: Hindi and Regional Versions',
-    description: 'Set up Hindi and regional-language versions of your website for Google: URL structure, hreflang tags, x-default, keyword research and translation quality.',
+    description: 'Set up hreflang for Hindi and regional versions of an Indian website: en-IN and hi-IN codes, return tags, x-default, HTML vs sitemap, plugins and common errors.',
     date: '2026-09-30',
+    updated: '2026-10-11',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
-<p>A Hindi, Marathi or Tamil version of your website can reach customers who would rather read in their own language. But translated pages only help if Google understands which version to show to whom, and if the translation is good enough for people to trust. This guide covers the SEO side: URL structure, hreflang tags and translation quality. For whether you need a multilingual site at all and how the plugins work, start with <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</p>
+<p>Hreflang is a tag that tells Google which language, and optionally which country, each version of a page is for, so a Hindi-speaking searcher sees your Hindi page and an English-speaking searcher sees your English page. On an Indian site with English and Hindi versions, each page lists itself and its translation using codes such as <code>en-IN</code> and <code>hi-IN</code>, plus an <code>x-default</code> fallback, and every version must link back to the others. Get that right, pair it with translations people trust, and Google can show the right version to the right person.</p>
+<p>This guide covers the SEO side. For whether you need a multilingual site at all, start with <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</p>
 
 <h2>What hreflang does, and what it doesn't</h2>
-<p>Hreflang is a small piece of code that tells Google "this page also exists in these other languages, at these addresses". Google uses it to show a Hindi-speaking searcher your Hindi page and an English-speaking searcher your English page, instead of treating the versions as competitors.</p>
-<p>What it doesn't do:</p>
+<p>Hreflang tells Google "this page also exists in these languages, at these addresses", so the versions aren't treated as competitors. But:</p>
 <ul>
   <li>It doesn't boost rankings on its own; it helps Google choose the right version</li>
   <li>It doesn't translate anything or detect a visitor's language</li>
   <li>It can't fix a page that isn't really in that language. Google says it works out a page's language from its visible content, so a "Hindi" page that is mostly English will be treated as English</li>
 </ul>
+
+<h2>Language and region codes: hi, en-IN and x-default</h2>
+<p>Each hreflang value is a language code, optionally followed by a region code:</p>
+<ul>
+  <li><strong>Language</strong> uses two-letter ISO 639-1 codes: <code>hi</code> Hindi, <code>en</code> English, <code>mr</code> Marathi, <code>ta</code> Tamil, <code>te</code> Telugu, <code>bn</code> Bengali, <code>gu</code> Gujarati, <code>kn</code> Kannada, <code>ml</code> Malayalam, <code>pa</code> Punjabi.</li>
+  <li><strong>Region</strong> is optional, uses two-letter ISO 3166-1 country codes such as <code>IN</code>, <code>US</code> or <code>GB</code>, and comes after the language: <code>en-IN</code>, <code>hi-IN</code>.</li>
+  <li><strong>x-default</strong> marks the page Google should show when no listed language matches the searcher, usually your main English page or a language-choice page.</li>
+</ul>
+<table>
+  <thead><tr><th>Code</th><th>Meaning</th><th>Valid?</th></tr></thead>
+  <tbody>
+    <tr><td>hi or hi-IN</td><td>Hindi, or Hindi for users in India</td><td>Yes</td></tr>
+    <tr><td>en-IN</td><td>English for users in India</td><td>Yes</td></tr>
+    <tr><td>x-default</td><td>Fallback when nothing matches</td><td>Yes</td></tr>
+    <tr><td>IN</td><td>A country with no language</td><td>No</td></tr>
+    <tr><td>in</td><td>Often meant as "India", but not a valid language code here</td><td>No</td></tr>
+    <tr><td>en-UK</td><td>Meant as British English, but the country code is GB</td><td>No, use en-GB</td></tr>
+  </tbody>
+</table>
+<p>Do you need the region at all? If your pages are for Hindi or English speakers anywhere, <code>hi</code> and <code>en</code> are enough. Add a region when you have versions for different countries, such as en-IN with rupee pricing and en-GB or en-US for overseas buyers; see <a href="/blog/woocommerce-sell-internationally/">selling internationally from an Indian WooCommerce store</a>. Hreflang can't target a state or city, so a Marathi page is matched by language, not by Maharashtra.</p>
+
+<h2>Return tags: every version lists every version</h2>
+<p>Hreflang works in sets. If the English page lists the Hindi page, the Hindi page must list the English page back. These are called return tags, and without them Google may ignore the pair. Each page should also list itself. For a page in two languages, both versions carry the same three lines:</p>
+<pre><code>&lt;link rel="alternate" hreflang="en-IN" href="https://www.example.in/services/" /&gt;
+&lt;link rel="alternate" hreflang="hi-IN" href="https://www.example.in/hi/services/" /&gt;
+&lt;link rel="alternate" hreflang="x-default" href="https://www.example.in/services/" /&gt;</code></pre>
+<ul>
+  <li><strong>Use full URLs</strong>, with https and the right www or non-www version, not relative paths.</li>
+  <li><strong>Point to the final, indexable URL</strong>: not a redirect, a noindexed page or a 404.</li>
+  <li><strong>Each language version is its own canonical.</strong> Setting the Hindi page's canonical to the English page tells Google to ignore the Hindi one. See <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</li>
+  <li><strong>Only pair true equivalents.</strong> If a service page exists only in English, don't point its hreflang at the Hindi homepage.</li>
+</ul>
+
+<h2>Page head, XML sitemap or HTTP header?</h2>
+<p>Google accepts hreflang in three places. Pick one method; mixing them makes errors harder to find, and conflicting values can cancel each other out.</p>
+<table>
+  <thead><tr><th>Method</th><th>Best for</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Link tags in the page head</td><td>Most WordPress sites; plugins add them automatically</td><td>Many languages mean many extra lines on every page</td></tr>
+    <tr><td>XML sitemap</td><td>Large sites or many languages; keeps page code lean</td><td>Harder to spot-check, and the sitemap must stay in sync with real pages</td></tr>
+    <tr><td>HTTP header</td><td>Non-HTML files such as PDF brochures</td><td>Set at server level, so it usually needs a developer</td></tr>
+  </tbody>
+</table>
+<p>In a sitemap, each URL lists its alternates with <code>xhtml:link</code> entries, and the xhtml namespace must be declared at the top of the file:</p>
+<pre><code>&lt;url&gt;
+  &lt;loc&gt;https://www.example.in/services/&lt;/loc&gt;
+  &lt;xhtml:link rel="alternate" hreflang="en-IN" href="https://www.example.in/services/" /&gt;
+  &lt;xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.example.in/hi/services/" /&gt;
+  &lt;xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.in/services/" /&gt;
+&lt;/url&gt;</code></pre>
+<p>The Hindi URL gets its own entry with the same three alternates. For sitemap basics, see <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
 
 <h2>Choose a URL structure</h2>
 <p>Each language version needs its own URL. Avoid showing different languages at the same address based on cookies or browser settings, because Google may only ever see one version.</p>
@@ -28387,60 +28577,76 @@ Template: astra
     <tr><td>URL parameter</td><td>example.in/?lang=hi</td><td>Not recommended by Google; avoid if you can</td></tr>
   </tbody>
 </table>
-<p>For slugs on the Hindi version you can use Devanagari or Roman-script words. Google handles both, but Devanagari URLs turn into long strings of percent-codes when copied into WhatsApp or email, so many sites keep slugs in Roman script. Whatever you choose, be consistent. And don't automatically redirect visitors by IP address or browser language; offer a clear language switcher instead.</p>
+<p>Hindi slugs can use Devanagari or Roman script. Google handles both, but Devanagari URLs turn into long strings of percent-codes when copied into WhatsApp or email, so many sites keep slugs in Roman script; see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs</a>. Be consistent, and don't automatically redirect visitors by IP address or browser language; offer a clear language switcher instead.</p>
 
-<h2>Getting hreflang tags right</h2>
-<p>Most multilingual plugins, such as WPML, Polylang, TranslatePress and Weglot, add hreflang automatically once pages are linked as translations of each other. You still need to know the rules to spot mistakes:</p>
+<h2>WordPress multilingual plugins and hreflang</h2>
+<p>On WordPress you rarely write hreflang by hand. The main multilingual plugins add it once pages are linked as translations of each other. At the time of writing:</p>
 <ul>
-  <li><strong>Use the right codes.</strong> Language codes are two letters: <code>hi</code> Hindi, <code>en</code> English, <code>mr</code> Marathi, <code>ta</code> Tamil, <code>te</code> Telugu, <code>bn</code> Bengali, <code>gu</code> Gujarati, <code>kn</code> Kannada, <code>ml</code> Malayalam, <code>pa</code> Punjabi. You can add a country after the language, as in <code>en-IN</code> or <code>hi-IN</code>, but a country code on its own isn't valid.</li>
-  <li><strong>Every version lists every version, including itself.</strong> If the English page points to the Hindi page but the Hindi page doesn't point back, Google may ignore the pair.</li>
-  <li><strong>Point to the final, indexable URL</strong>: not a redirect, a noindexed page or a 404.</li>
-  <li><strong>Each language version is its own canonical.</strong> Setting the Hindi page's canonical to the English page tells Google to ignore the Hindi one. See <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</li>
-  <li><strong>Add x-default</strong> for the page Google should show when no language matches, usually the English version or a language-choice page.</li>
-  <li><strong>Only pair true equivalents.</strong> If a service page exists only in English, don't point its hreflang at the Hindi homepage.</li>
+  <li><strong>WPML</strong> is a paid plugin that stores each translation as its own post and outputs hreflang tags.</li>
+  <li><strong>Polylang</strong> has a free version and a paid Pro version, also stores translations as separate posts, and outputs hreflang tags.</li>
+  <li><strong>TranslatePress</strong> lets you translate visually on the front end, has free and paid versions, and adds hreflang to the page head.</li>
+  <li><strong>Weglot</strong> is a subscription service that stores translations on its own platform and handles hreflang for you.</li>
 </ul>
-<p>Hreflang can go in the page head, in HTTP headers or in the XML sitemap. Pick one method; mixing them makes errors harder to spot.</p>
+<p>Features, prices and defaults change, so check each plugin's current documentation for x-default, sitemap support and compatibility with your SEO plugin. Test the output either way; a misconfigured plugin can still miss return tags.</p>
 
-<h2>Research keywords in each language</h2>
+<h2>Hindi and regional-language sites</h2>
+<p>Indian businesses rarely need every language: a Pune clinic might add Marathi and Hindi, a Chennai manufacturer Tamil.</p>
+<ul>
+  <li><strong>Only add languages you can maintain.</strong> An outdated Marathi price or opening time is worse than no Marathi page.</li>
+  <li><strong>Hinglish has no separate code.</strong> Hindi typed in Roman script doesn't have a widely used hreflang value of its own, so most sites serve those searches from the English or Hindi pages rather than building a third version.</li>
+  <li><strong>Fonts matter.</strong> Devanagari, Tamil and other scripts need fonts that display correctly and load quickly; see <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on your website</a> and <a href="/blog/web-fonts-performance/">web fonts and website speed</a>.</li>
+  <li><strong>Set the <code>lang</code> attribute</strong> on each page, such as <code>lang="hi"</code>, which browsers and screen readers rely on. Multilingual plugins normally handle this.</li>
+</ul>
+<h3>Research keywords in each language</h3>
 <p>A translated page targets whatever words the translator happened to choose, which may not be what people type. Indians search in several ways at once:</p>
 <ul>
   <li>Hindi or regional script: "घर के लिए सोलर पैनल"</li>
   <li>Hinglish in Roman script: "ghar ke liye solar panel"</li>
   <li>English with local terms: "rooftop solar subsidy Pune"</li>
 </ul>
-<p>Decide which page should serve Hinglish searches. Because they're typed in Roman script, a Devanagari page may not match them well, so some businesses add natural Hinglish phrasing or FAQs to the English page. Check Google's autocomplete in each language, and once pages are live, filter Search Console's Performance report by the <code>/hi/</code> folder to see real queries and which version Google chooses. See <a href="/blog/keyword-research-small-business/">keyword research for small businesses</a> for the method.</p>
-
-<h2>Translation quality matters more than tags</h2>
-<p>Perfect hreflang won't rescue a poor translation. Readers notice stiff, word-for-word Hindi immediately, and in medical, legal, religious or financial content a mistranslation can mislead. Google's spam guidelines have also long listed text translated by an automated tool without human review as an example of low-value, automatically generated content.</p>
+<p>Decide which page should serve Hinglish searches; because they're typed in Roman script, a Devanagari page may not match them well. Check Google's autocomplete in each language, and once pages are live, filter Search Console's Performance report by the <code>/hi/</code> folder to see real queries. See <a href="/blog/keyword-research-small-business/">keyword research for small businesses</a> for the method.</p>
+<h3>Translation quality matters more than tags</h3>
+<p>Perfect hreflang won't rescue a poor translation. Readers notice stiff, word-for-word Hindi immediately, and in medical, legal or financial content a mistranslation can mislead. Google's spam policies also list text translated by an automated tool without human review as an example of low-value, automatically generated content.</p>
 <ul>
-  <li>Use native speakers for the pages that matter most: homepage, key services or products, pricing and contact</li>
-  <li>If you start with machine translation, have a fluent reviewer edit every page before it's published</li>
-  <li>Write the way your customers speak. Very formal Hindi can feel distant; everyday Hindi with familiar English words like "booking" or "online payment" is often clearer</li>
-  <li>Localise examples, units, festivals and phone formats, not just words</li>
-  <li>Keep versions in sync. An outdated Hindi price or opening time is worse than no Hindi page</li>
+  <li>Use native speakers for the pages that matter most (homepage, key services or products, pricing, contact), and have a fluent reviewer edit any machine translation before it's published</li>
+  <li>Write the way your customers speak; everyday Hindi with familiar English words like "booking" is often clearer than very formal Hindi</li>
+  <li>Translate the whole experience: SEO titles, meta descriptions, alt text, menus, buttons, form labels and messages, and thank-you pages</li>
 </ul>
 
-<h2>Translate the whole experience</h2>
-<p>A Hindi page with an English menu, English form labels and English error messages feels half-finished. For each language, check:</p>
-<ul>
-  <li>SEO title, meta description and image alt text</li>
-  <li>Menus, buttons, footer, cookie notice, form labels and form messages</li>
-  <li>Pre-filled WhatsApp messages and thank-you pages</li>
-  <li>Schema markup and details like business hours</li>
-  <li>The <code>lang</code> attribute on each page, which browsers and screen readers rely on</li>
-  <li>Fonts that display Devanagari and other scripts correctly and load efficiently; see <a href="/blog/web-fonts-performance/">web fonts and website speed</a></li>
-</ul>
+<h2>Common hreflang errors</h2>
+<table>
+  <thead><tr><th>Error</th><th>What it means</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Missing return tags</td><td>Page A lists page B, but B doesn't list A</td><td>Link the pages as translations in your plugin, or add the missing tags</td></tr>
+    <tr><td>Invalid codes</td><td>Values like IN, in, en-UK or "hindi"</td><td>Use a language, or language plus region: hi, hi-IN, en-GB</td></tr>
+    <tr><td>Non-canonical targets</td><td>Hreflang points to a URL whose canonical is another page</td><td>Point hreflang only at self-canonical URLs</td></tr>
+    <tr><td>Redirected, 404 or noindexed targets</td><td>Often left behind after slug changes or deleted translations</td><td>Update the translation link or remove the tag</td></tr>
+    <tr><td>Relative or http URLs</td><td>Hreflang uses /hi/page/, or http:// on an https site</td><td>Use full https URLs</td></tr>
+    <tr><td>Conflicting methods</td><td>Page head and sitemap say different things</td><td>Use one method only</td></tr>
+    <tr><td>Untranslated "translations"</td><td>A Hindi URL with mostly English content</td><td>Translate the visible content, or remove that version</td></tr>
+  </tbody>
+</table>
 
 <h2>Check that it's working</h2>
 <ol>
-  <li>View the source of an English and a Hindi page and confirm each lists the other, itself and x-default</li>
-  <li>Run an SEO crawler that reports hreflang errors such as missing return links, wrong codes or non-canonical targets</li>
-  <li>In Search Console, confirm both versions are indexed and compare queries by folder</li>
-  <li>Search in Hindi on a phone set to Hindi and see which version appears</li>
+  <li><strong>View the source</strong> of an English and a Hindi page and confirm each lists the other, itself and x-default, as identical sets.</li>
+  <li><strong>Run an SEO crawler</strong> or site audit tool that reports hreflang issues such as missing return links, invalid codes and non-canonical targets.</li>
+  <li><strong>Use URL Inspection in Search Console</strong> on both versions to confirm each is indexed and that the Google-selected canonical is the page itself, not its translation. See <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a> for related statuses.</li>
+  <li><strong>Search in Hindi</strong> on a phone set to Hindi and see which version appears.</li>
 </ol>
-<p>Search Console's old International Targeting report has been retired, so crawler checks and spot checks are now the main way to catch hreflang mistakes.</p>
+<p>Search Console's old International Targeting report, which used to list hreflang errors, has been retired, so crawler checks and spot checks are now the main way to catch mistakes. Recheck after adding pages, changing slugs or switching plugins.</p>
 
-<p>Planning Hindi or regional versions of your site? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/wordpress-website-development/">WordPress website development</a> if you're building a multilingual site from scratch.</p>
+<h2>FAQs</h2>
+<h3>Do I need hreflang if my site is only in English?</h3>
+<p>No. Hreflang is only for pages that exist in more than one language or regional version. A single-language site needs a correct canonical on each page, not hreflang.</p>
+<h3>Should I use hi or hi-IN?</h3>
+<p>Either is valid. Plain <code>hi</code> covers Hindi speakers anywhere; <code>hi-IN</code> targets Hindi speakers in India. For most Indian businesses with one Hindi version the difference is small, so pick one and use it consistently.</p>
+<h3>Is x-default required?</h3>
+<p>It isn't mandatory, but it's recommended. It tells Google what to show searchers whose language you don't cover, such as a Tamil speaker on a site with only English and Hindi.</p>
+<h3>Does hreflang help my Hindi pages rank higher?</h3>
+<p>Not on its own. It helps Google show the right version to the right searcher. The Hindi pages still need useful content, natural translation and links.</p>
+
+<p>Planning Hindi or regional versions of your site, or seeing hreflang errors in an audit? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/wordpress-website-development/">WordPress website development</a> if you're building a multilingual site from scratch. Get in touch with the languages you need and I'll suggest the simplest setup that works.</p>
 `,
   },
   {
@@ -35474,22 +35680,24 @@ Template: astra
   },
   {
     slug: 'wordpress-auto-updates',
-    seoTitle: 'WordPress Auto-Updates: Should You Turn Them On?',
+    seoTitle: 'WordPress Auto-Updates: Should You Turn Them On or Off?',
     title: 'WordPress Auto-Updates: Should You Turn Them On for Core, Plugins and Themes?',
-    description: 'What WordPress auto-update settings for core, plugins and themes do, the real risks, a sensible middle ground, and when to test updates on staging first.',
+    description: 'Which WordPress auto-updates to turn on for core, plugins and themes, the real risks, WooCommerce cautions, backups and staging, and how to roll back an update.',
     date: '2026-10-01',
+    updated: '2026-10-11',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-website-development'],
     body: `
-<p>WordPress can update itself in the background: core, plugins, themes and translations. It sounds like the perfect way to stay secure without effort, and for some parts of your site it is. For others, an update that arrives at 3am can break a layout, a form or your checkout before anyone notices. Here's what each setting does and how to decide what to switch on.</p>
-
+<p>WordPress can update itself in the background: core, plugins, themes and translations. It sounds like the perfect way to stay secure without effort, and for some parts of your site it is. For others, an update that arrives at 3am can break a layout, a form or your checkout before anyone notices.</p>
+<p><strong>The short answer:</strong> for most business sites, leave minor core updates and translations on, turn on auto-updates for small, well-maintained plugins, and update major core releases, your theme, page builder and anything to do with WooCommerce or payments by hand, after a backup and ideally a test on staging. Here's what each setting does and how to decide.</p>
 <p>This article is about the auto-update settings themselves. For the hands-on process of updating by hand, see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>.</p>
 
 <h2>What each auto-update setting does</h2>
+<p>WordPress version numbers explain the first two rows. A change in the first two numbers, such as 6.7 to 6.8, is a major release with new features and bigger changes. A change in the third number, such as 6.8.1 to 6.8.2, is a minor maintenance or security release.</p>
 <table>
   <thead><tr><th>Setting</th><th>Where to find it</th><th>What it does</th></tr></thead>
   <tbody>
-    <tr><td>Minor core updates</td><td>On by default</td><td>Installs maintenance and security releases (for example 6.x.1 to 6.x.2) automatically</td></tr>
+    <tr><td>Minor core updates</td><td>On by default</td><td>Installs maintenance and security releases automatically</td></tr>
     <tr><td>Major core updates</td><td>Dashboard &gt; Updates</td><td>Moves your site to new major versions of WordPress without asking</td></tr>
     <tr><td>Plugin auto-updates</td><td>Plugins screen, per plugin</td><td>Installs each new version of that plugin as soon as WordPress picks it up</td></tr>
     <tr><td>Theme auto-updates</td><td>Appearance &gt; Themes, in the theme details</td><td>Updates that theme automatically</td></tr>
@@ -35498,10 +35706,21 @@ Template: astra
 </table>
 <p>A few details worth knowing:</p>
 <ul>
-  <li>Auto-updates run through WordPress's built-in scheduler, which relies on site visits, so on quiet sites they can happen later than you expect.</li>
+  <li>Plugin and theme auto-updates are off by default in WordPress itself, though some hosts switch them on. Whether major core updates are on can depend on when and how the site was installed, so check Dashboard &gt; Updates rather than assuming.</li>
+  <li>Auto-updates run through WordPress's built-in scheduler, which relies on site visits, so on quiet sites they can happen later than you expect; see <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</li>
   <li>WordPress emails the site's admin address after auto-updates. If that address is an old developer's inbox, nobody hears about failures.</li>
-  <li>Some hosts manage updates themselves or hide these toggles. Developers can also control core updates in wp-config.php. If a setting is missing or greyed out, check with your host or developer.</li>
+  <li>Some hosts manage updates themselves or hide these toggles. If a setting is missing or greyed out, check with your host or developer.</li>
 </ul>
+
+<h2>How to turn auto-updates on or off</h2>
+<ol>
+  <li><strong>Core:</strong> go to Dashboard &gt; Updates. Near the top, WordPress says whether the site updates automatically for maintenance and security releases only, or for all new versions, with a link to switch.</li>
+  <li><strong>Plugins:</strong> go to Plugins &gt; Installed Plugins. The Automatic Updates column has an "Enable auto-updates" or "Disable auto-updates" link for each plugin, and the bulk actions menu changes several at once.</li>
+  <li><strong>Themes:</strong> go to Appearance &gt; Themes, click a theme to open its details and use the auto-updates link.</li>
+</ol>
+<p>Developers can also fix these rules in code so they can't be changed by accident. For example, this line in wp-config.php limits core to minor updates:</p>
+<pre><code>define( 'WP_AUTO_UPDATE_CORE', 'minor' );</code></pre>
+<p>Setting it to true allows all core updates, and false turns core auto-updates off. Plugins and themes can be controlled with filters in a small site-specific plugin. If the dashboard toggles are missing, something like this is probably already in place.</p>
 
 <h2>The case for turning them on</h2>
 <p>Outdated plugins are one of the most common ways WordPress sites get hacked. When a security fix is released, auto-updates get it onto your site within hours rather than whenever someone remembers to log in. They make most sense when:</p>
@@ -35513,16 +35732,25 @@ Template: astra
 
 <h2>The risks</h2>
 <h3>Breaking changes</h3>
-<p>Major versions of page builders, WooCommerce and themes sometimes change how things work. Theme templates that override WooCommerce can go out of date, and a new version may need a newer PHP version than your hosting runs.</p>
+<p>Major versions of page builders, WooCommerce and themes sometimes change how things work. Theme templates that override WooCommerce can go out of date, and a new version may need a newer PHP version than your hosting runs. If a page builder update scrambles your design, see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</p>
 <h3>Silent breakage</h3>
 <p>Recent WordPress versions can roll back a plugin auto-update that causes a fatal error. But a misaligned layout, a contact form that stops sending emails or a checkout bug isn't a fatal error, so nothing rolls back, and you may not notice for days.</p>
 <h3>Bad timing</h3>
 <p>An update can land in the middle of a festival sale or a paid ad campaign, exactly when a broken page costs you most.</p>
 <h3>Premium plugins that don't auto-update</h3>
-<p>Premium plugins and themes update through their own licence system. If the licence has expired, no updates arrive at all, even with the toggle switched on. Plugins bundled with a premium theme often only update when the theme itself does. Auto-updates give a false sense of security if you never check these.</p>
+<p>Premium plugins and themes update through their own licence system. If the licence has expired, no updates arrive at all, even with the toggle switched on. Plugins bundled with a premium theme often only update when the theme itself does; see <a href="/blog/update-premium-theme-safely/">how to update a premium theme and its bundled plugins</a>.</p>
 
-<h2>A sensible middle ground</h2>
-<p>For most business websites, a mix works better than all-on or all-off:</p>
+<h2>WooCommerce needs extra caution</h2>
+<p>A store has more moving parts than a brochure site, and they all touch money:</p>
+<ul>
+  <li><strong>Frequent releases:</strong> WooCommerce is updated often, and major versions can change how the cart, checkout or order storage work.</li>
+  <li><strong>Database updates:</strong> some versions update the store's database, either automatically or after you confirm a prompt. Plugin files can be rolled back; database changes are much harder to undo without a backup.</li>
+  <li><strong>Outdated template overrides:</strong> WooCommerce &gt; Status lists templates your theme overrides and flags outdated ones.</li>
+  <li><strong>Payment, shipping and invoice extensions</strong> often need to move in step with WooCommerce, and a broken payment gateway may not show any visible error.</li>
+</ul>
+<p>For most stores the safe pattern is auto-updates off for WooCommerce, its extensions, payment gateways and the theme, with updates tested on staging, then applied live at a quiet time and followed by a test order. The <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the routine around this.</p>
+
+<h2>What to auto-update and what to update by hand</h2>
 <table>
   <thead><tr><th>Part of the site</th><th>Auto-update?</th><th>Why</th></tr></thead>
   <tbody>
@@ -35537,30 +35765,52 @@ Template: astra
 </table>
 <p>Write the list down, so whoever looks after the site knows which plugins update themselves and which are done by hand.</p>
 
+<h2>Managed hosting and maintenance-service updates</h2>
+<p>Some managed WordPress hosts and maintenance services run updates for you. The more careful ones take a backup first, compare screenshots of key pages before and after, and roll back if something looks different. Others simply switch on WordPress's own auto-updates. Before relying on one, ask:</p>
+<ul>
+  <li>Does it cover core only, or plugins, themes and premium plugins too?</li>
+  <li>When do updates run, and can you exclude plugins or pause updates during a sale?</li>
+  <li>Is a backup taken immediately before each update?</li>
+  <li>Which pages are checked afterwards, and does anyone test the checkout or forms?</li>
+  <li>Who is told when an update fails or is rolled back?</li>
+</ul>
+
 <h2>Safety nets to put in place first</h2>
-<p>Auto-updates are only safe if you can spot a problem quickly and undo it:</p>
 <ul>
   <li><strong>Daily automatic backups</strong> stored away from your hosting account, so you can restore yesterday's site. See the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</li>
   <li><strong>Uptime monitoring</strong> that alerts you when the site goes down. It catches outages and fatal errors, not broken layouts. See <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a>.</li>
-  <li><strong>Update emails going to a real inbox</strong> that someone reads.</li>
+  <li><strong>A monitored admin email.</strong> Update reports go there, and so does the recovery-mode link WordPress sends when a plugin causes a fatal error. If you do see "There has been a critical error on this website", follow <a href="/blog/fix-wordpress-critical-error/">this step-by-step fix</a>.</li>
   <li><strong>A quick weekly check:</strong> open the homepage on your phone, send a test enquiry through the contact form and, for stores, add something to the cart.</li>
 </ul>
 
 <h2>When to use staging instead</h2>
-<p>A staging site is a private copy of your website where you can test updates before they touch the live site. It's worth using when:</p>
-<ul>
-  <li>You run a WooCommerce store or take bookings and payments</li>
-  <li>A major version of your page builder, WooCommerce or theme is released</li>
-  <li>You're changing the PHP version on your hosting</li>
-  <li>The site has custom code or a long list of plugins</li>
-  <li>A big campaign or sale is coming up</li>
-</ul>
+<p>A staging site is a private copy of your website where you can test updates before they touch the live site. It's worth using when you run a store or take bookings and payments, when a major version of your page builder, WooCommerce or theme is released, when you're changing the PHP version, when the site has custom code or a long list of plugins, and before a big campaign or sale.</p>
 <p>One catch: auto-updates on the live site don't wait for your staging tests. For any plugin you want to test first, switch its auto-update off on the live site. See <a href="/blog/staging-sites-explained/">staging sites explained</a> for how to set one up.</p>
+
+<h2>Rollback options when an update goes wrong</h2>
+<ul>
+  <li><strong>Automatic rollback of fatal errors:</strong> in recent WordPress versions, if a plugin auto-update causes a fatal error, WordPress tries to restore the previous version. It doesn't catch layout, form or checkout problems.</li>
+  <li><strong>Failed-update protection:</strong> WordPress also keeps a temporary copy of a plugin or theme while updating, so an update that fails part-way can be restored. If the site gets stuck on a maintenance message, see <a href="/blog/wordpress-stuck-in-maintenance-mode/">WordPress stuck in maintenance mode</a>.</li>
+  <li><strong>Reinstall the previous version:</strong> older versions of free plugins are usually available on their WordPress.org page (under Advanced View at the time of writing), and premium vendors often offer them in your account. This replaces files only; it doesn't undo database changes.</li>
+  <li><strong>Restore a backup or host snapshot:</strong> the most reliable option, especially after updates that changed the database.</li>
+</ul>
 
 <h2>Make it someone's job</h2>
 <p>Whatever you choose, someone should own it. Once a month, review which plugins are set to auto-update, check that premium licences are active, delete anything unused and read through the update emails for failures. The <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> shows where this fits alongside backups, security and speed checks.</p>
 
-<p>Rather not manage updates yourself? See <a href="/wordpress-maintenance/">WordPress maintenance</a> for help with updates, backups and testing.</p>
+<h2>FAQs</h2>
+<h3>Are WordPress auto-updates safe?</h3>
+<p>Minor core updates and small, well-maintained plugins are generally low risk. Larger plugins, themes and WooCommerce carry more risk, so they're safer updated by hand with a backup ready. Safety depends less on the setting than on having backups and someone checking the site.</p>
+<h3>Does WordPress update itself automatically by default?</h3>
+<p>Minor core releases and translations, yes. Plugin and theme auto-updates are off unless you or your host switch them on, and major core updates depend on your settings, so check Dashboard &gt; Updates.</p>
+<h3>Should I turn on auto-updates for WooCommerce?</h3>
+<p>For most live stores, no. Update WooCommerce and its extensions by hand after testing on staging, at a quiet time, and place a test order afterwards.</p>
+<h3>Why didn't a plugin update automatically?</h3>
+<p>Common reasons: an expired premium licence, the new version needing a newer PHP or WordPress version, WP-Cron not running on a quiet site, file permission problems, or your host controlling updates.</p>
+<h3>Can I choose what time auto-updates run?</h3>
+<p>Not from the WordPress dashboard. Some hosts and maintenance tools let you schedule updates; otherwise, switch auto-updates off for important plugins and update them yourself at a quiet time.</p>
+
+<p>Rather not manage updates yourself? See <a href="/wordpress-maintenance/">WordPress maintenance</a> for help with updates, backups and testing. Get in touch and I'll set up a sensible auto-update policy for your site, with backups and checks behind it.</p>
 `,
   },
   {
@@ -37133,22 +37383,26 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'wordpress-xmlrpc-explained',
+    seoTitle: 'WordPress XML-RPC Explained: Should You Disable xmlrpc.php?',
     title: 'WordPress XML-RPC Explained: Should You Disable xmlrpc.php?',
-    description: 'What xmlrpc.php does, what still uses it (Jetpack, some apps), how attackers abuse it, and safe ways to disable or restrict XML-RPC without breaking your site.',
+    description: 'What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.',
     date: '2026-10-01',
+    updated: '2026-10-11',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance'],
     body: `
 <p>If you've looked at your security plugin's reports or your hosting logs, you may have noticed a file called xmlrpc.php being hit again and again. It's a part of WordPress that most business sites no longer use, yet it's switched on by default and bots love it. Here's what it is, how to tell whether anything on your site still relies on it, and how to switch it off or restrict it safely.</p>
+<p><strong>The short answer:</strong> if nothing on your site uses XML-RPC, which is true for most business sites that don't use Jetpack or publish from an app, block it at the server or firewall, or at least turn it off with a security plugin. If you do rely on Jetpack or a publishing app, restrict it rather than blocking it outright.</p>
 
 <h2>What xmlrpc.php actually is</h2>
 <p>XML-RPC is an older way for other programs to talk to your WordPress site remotely: publishing posts, uploading images, reading comments and so on, by sending XML messages to a single file, xmlrpc.php, in your site's main folder. It dates from the days when people wrote blog posts in desktop apps and sent them to their site, and it has been enabled by default in WordPress for many years.</p>
 <p>Today, most of that work is done by the WordPress REST API, a newer system used by the block editor and most modern plugins and apps. XML-RPC is still included for backwards compatibility, which is why it sits on almost every WordPress site, used or not.</p>
+<p>To see whether it responds on your site, open yoursite.com/xmlrpc.php in a browser. If you see the message "XML-RPC server accepts POST requests only.", the file is reachable. A 403 or 404 page usually means something already blocks it. Note that some plugin settings switch off XML-RPC features inside WordPress while the file still shows that message.</p>
 
 <h2>What still uses it</h2>
 <ul>
-  <li><strong>Jetpack:</strong> the Jetpack plugin has historically relied on XML-RPC to connect your site to WordPress.com for features such as stats, backups and downtime monitoring. Blocking xmlrpc.php completely can break that connection.</li>
-  <li><strong>Some mobile and desktop apps:</strong> older versions of the WordPress mobile app, and some third-party blogging or publishing tools, use XML-RPC to log in and publish.</li>
+  <li><strong>Jetpack:</strong> the Jetpack plugin has historically relied on XML-RPC to connect your site to WordPress.com for features such as stats, backups and downtime monitoring. It has moved parts of that connection to the REST API, but blocking xmlrpc.php completely can still break it, so check Jetpack's current documentation first.</li>
+  <li><strong>Some mobile and desktop apps:</strong> older versions of the WordPress mobile app, and some third-party blogging or publishing tools, use XML-RPC to log in and publish. Newer app versions can connect through the REST API instead, but setups vary, so test any app you use.</li>
   <li><strong>Pingbacks:</strong> the automatic notifications one WordPress blog sends another when it links to it travel over XML-RPC.</li>
   <li><strong>Older integrations:</strong> a few auto-posting and remote management services still use it.</li>
 </ul>
@@ -37161,45 +37415,73 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h3>Pingback abuse</h3>
 <p>The pingback feature makes your server send a request to whatever address it's asked to check. Attackers have abused this to get large numbers of WordPress sites to flood a victim with traffic, and to reveal a site's real server address when it's hidden behind a firewall or CDN. Your site ends up as a tool in someone else's attack, on your server's resources.</p>
 
+<h2>How to tell whether xmlrpc.php is being attacked</h2>
+<p>Bots try xmlrpc.php on almost every WordPress site, so its appearance in your logs isn't proof of a problem; volume and impact are what matter. Warning signs:</p>
+<ul>
+  <li><strong>Large numbers of POST requests to /xmlrpc.php</strong> in your access logs, often from many different IP addresses</li>
+  <li><strong>Slowdowns, 503 errors or "resource limit reached" pages</strong> on shared hosting, or CPU spikes in your hosting dashboard while real visitor numbers are normal</li>
+  <li><strong>Security plugin alerts</strong> about failed logins when nobody has used the login page</li>
+</ul>
+<p>In cPanel, raw access logs are usually under Metrics; other hosts have a log viewer in their dashboard. A bot request looks something like this (the IP address is an example):</p>
+<pre><code>203.0.113.45 - - [10/Oct/2026:02:14:07 +0530] "POST /xmlrpc.php HTTP/1.1" 200 412</code></pre>
+<p>A 200 status means WordPress processed the request. Once you block the file, the same requests should show 403, meaning they were refused. With SSH access, a developer can count requests per IP address to see whether it's a handful of bots or a large distributed attack:</p>
+<pre><code>grep "POST /xmlrpc.php" access.log | awk '{print $1}' | sort | uniq -c | sort -rn | head -20</code></pre>
+<p>Steady requests from one recognisable source, such as Jetpack's servers or a service you use, suggest something genuine depends on XML-RPC. Your security plugin's traffic or login log, or an activity log, can show the same pattern without touching server files; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs</a>.</p>
+
 <h2>How to check whether you need it</h2>
 <ol>
   <li><strong>Check your plugins:</strong> is Jetpack installed and connected? Does any other plugin describe a connection to an external service or app?</li>
   <li><strong>Ask how content gets published:</strong> does anyone post from a mobile app, a desktop editor or an automation tool rather than the dashboard?</li>
   <li><strong>List external services</strong> that publish to, back up or monitor your site, and check their documentation for XML-RPC requirements.</li>
-  <li><strong>Look at your access logs</strong> in your hosting control panel. Large numbers of POST requests to xmlrpc.php from random IP addresses are almost certainly bots; regular requests from a known service suggest something genuine is using it.</li>
+  <li><strong>Look at your access logs</strong> as described above: random IP addresses are bots, a known service is genuine.</li>
 </ol>
 <p>For a typical brochure site, clinic site or WooCommerce store without Jetpack, the answer is usually that nothing needs it.</p>
 
 <h2>Safe ways to disable or restrict XML-RPC</h2>
 <h3>Option 1: a security plugin setting</h3>
 <p>Most well-known WordPress security plugins include an option to disable XML-RPC entirely, or to switch off just its login methods or pingbacks. This is the easiest route for most site owners, and it's easy to reverse. Option names vary, so check your plugin's documentation.</p>
-<h3>Option 2: a server or firewall rule</h3>
+<h3>Option 2: a code snippet</h3>
+<p>Developers sometimes add this filter in a small site-specific plugin:</p>
+<pre><code>add_filter( 'xmlrpc_enabled', '__return_false' );</code></pre>
+<p>Know its limits: it switches off the XML-RPC methods that need a username and password, which stops password guessing through xmlrpc.php, but pingbacks still work and every request still loads WordPress. It's a reasonable step, not a full block.</p>
+<h3>Option 3: a server rule</h3>
 <p>Blocking xmlrpc.php before WordPress loads saves the most server resources, because bot requests are refused without running any PHP. On Apache or LiteSpeed hosting, a developer can add a rule like this to the .htaccess file:</p>
 <pre><code>&lt;Files xmlrpc.php&gt;
   Require all denied
 &lt;/Files&gt;</code></pre>
-<p>Nginx servers use an equivalent location rule, and cloud firewalls such as Cloudflare let you block or challenge requests to that path. Some hosts will add a block for you on request. A mistake in .htaccess can take the whole site offline, so take a backup first or ask your developer. See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> for how these layers fit together.</p>
-<h3>Option 3: restrict rather than block</h3>
-<p>If you use Jetpack or an app that needs XML-RPC, it doesn't have to be all or nothing. You can disable pingbacks only, rate-limit xmlrpc.php at the firewall, or allow only the services you rely on. Check Jetpack's current documentation before restricting anything, since its requirements can change.</p>
+<p>Nginx servers use an equivalent location rule. A mistake in .htaccess can take the whole site offline, so take a backup first (see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>) or ask your developer. If a rule ends up blocking more than intended, <a href="/blog/wordpress-403-forbidden-error-fix/">403 Forbidden errors on WordPress</a> explains how to trace it.</p>
+<h3>Option 4: your host or a cloud firewall</h3>
+<p>Cloud firewalls such as Cloudflare let you block or challenge requests to the /xmlrpc.php path before they reach your server at all, which is the best option when bot traffic is heavy. Some managed WordPress hosts block or rate-limit xmlrpc.php by default, and others will add a block on request. See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> for how these layers fit together.</p>
+<h3>Option 5: restrict rather than block</h3>
+<p>If you use Jetpack or an app that needs XML-RPC, it doesn't have to be all or nothing. You can disable pingbacks only, rate-limit xmlrpc.php at the firewall, or allow only the services you rely on, such as Jetpack's published IP addresses. Check Jetpack's current documentation before restricting anything, since its requirements can change.</p>
 
 <h2>Test afterwards</h2>
-<p>Whichever method you choose, check that nothing has quietly broken:</p>
 <ul>
   <li>Open the website and the dashboard, and save a test draft</li>
-  <li>Check Jetpack's connection status, if you use it</li>
-  <li>Try any app or tool that publishes to your site</li>
+  <li>Check Jetpack's connection status, if you use it, and try any app or tool that publishes to your site</li>
   <li>Confirm that backup, monitoring and auto-posting services still report normally over the next few days</li>
-  <li>Watch your security logs: requests to xmlrpc.php should now be refused before they reach WordPress</li>
+  <li>Watch your logs: requests to xmlrpc.php should now be refused before they reach WordPress</li>
 </ul>
 <p>If something stops working, undo the change and switch to restricting instead of blocking.</p>
 
-<h2>Don't confuse it with the REST API</h2>
-<p>Some guides suggest disabling the REST API at the same time. Be careful: the block editor, WooCommerce and many plugins depend on the REST API, and turning it off completely can break your dashboard and checkout. Restricting the REST API is a separate, more delicate job.</p>
+<h2>The REST API: XML-RPC's modern replacement</h2>
+<p>The WordPress REST API does most of what XML-RPC was built for. It's what the block editor uses to save your pages, and what most current plugins, apps and integrations use to talk to WordPress. It also handles app logins more safely: external tools can use application passwords, built into WordPress since version 5.6, which work only for API requests, can be revoked one at a time and never expose your main password. XML-RPC tools, by contrast, typically send your real username and password.</p>
+<p>That's why you shouldn't disable the REST API along with XML-RPC, as some guides suggest. The block editor, WooCommerce and many plugins depend on it, and turning it off completely can break your dashboard and checkout. Restricting parts of it, such as the public user list, is a separate, more delicate job; see <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a>.</p>
 
 <h2>One small step in a bigger picture</h2>
-<p>Disabling XML-RPC reduces bot noise and closes a side door, but it won't protect a site with outdated plugins or weak passwords. Treat it as one item alongside updates, two-factor authentication, backups and a firewall. And if bots hammering xmlrpc.php make you suspect someone has already got in, work through the <a href="/blog/find-remove-wordpress-backdoors/">guide to finding and removing backdoors</a>.</p>
+<p>Disabling XML-RPC reduces bot noise and closes a side door, but it won't protect a site with outdated plugins or weak passwords. Treat it as one item alongside updates, two-factor authentication, backups and a firewall, as in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. And if bots hammering xmlrpc.php make you suspect someone has already got in, work through the <a href="/blog/find-remove-wordpress-backdoors/">guide to finding and removing backdoors</a>.</p>
 
-<p>Want this handled for you? Security hardening, including XML-RPC, is part of my <a href="/wordpress-malware-removal/">WordPress malware removal and security</a> service, and ongoing checks are included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+<h2>FAQs</h2>
+<h3>Is xmlrpc.php a virus or a sign of a hack?</h3>
+<p>No. It's a standard WordPress core file found on almost every WordPress site, and requests to it only mean bots are knocking. Unfamiliar PHP files with odd names in other folders are a different matter and worth investigating.</p>
+<h3>Can I just delete xmlrpc.php?</h3>
+<p>It's better not to. It's a core file, so WordPress updates will put it back. Blocking it with a server rule, firewall or plugin is cleaner and easy to undo.</p>
+<h3>Does disabling XML-RPC affect SEO?</h3>
+<p>No. Google doesn't use xmlrpc.php to crawl or index your site. Pingbacks have no real SEO value for a business site; you can switch them off under Settings &gt; Discussion, and see <a href="/blog/wordpress-comments-enable-or-disable/">whether a business site should enable comments</a>.</p>
+<h3>Why do I still see xmlrpc.php requests after disabling it?</h3>
+<p>Bots don't check first. What changes is the response: requests should now get a 403 or an error instead of being processed. To stop them reaching your server at all, block the path at a cloud firewall.</p>
+
+<p>Want this handled for you? Security hardening, including XML-RPC, is part of my <a href="/wordpress-malware-removal/">WordPress malware removal and security</a> service, and ongoing checks are included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Get in touch if bots are slowing your site down.</p>
 `,
   },
   {

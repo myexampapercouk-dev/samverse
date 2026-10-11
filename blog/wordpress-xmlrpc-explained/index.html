@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordPress XML-RPC Explained: Should You Disable xmlrpc.php?</title>
-  <meta name="description" content="What xmlrpc.php does, what still uses it (Jetpack, some apps), how attackers abuse it, and safe ways to disable or restrict XML-RPC without breaking your site.">
+  <meta name="description" content="What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.">
   <meta name="author" content="Sameer Gupta">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-xmlrpc-explained/">
   <meta property="og:title" content="WordPress XML-RPC Explained: Should You Disable xmlrpc.php?">
-  <meta property="og:description" content="What xmlrpc.php does, what still uses it (Jetpack, some apps), how attackers abuse it, and safe ways to disable or restrict XML-RPC without breaking your site.">
+  <meta property="og:description" content="What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-xmlrpc-explained.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-xmlrpc-explained/#article",
       "headline": "WordPress XML-RPC Explained: Should You Disable xmlrpc.php?",
-      "description": "What xmlrpc.php does, what still uses it (Jetpack, some apps), how attackers abuse it, and safe ways to disable or restrict XML-RPC without breaking your site.",
+      "description": "What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-01",
+      "dateModified": "2026-10-11",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-xmlrpc-explained/",
       "image": "https://samverse.space/assets/og/blog-wordpress-xmlrpc-explained.png",
       "articleSection": "Security",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
           <h1>WordPress XML-RPC Explained: Should You Disable xmlrpc.php?</h1>
-          <p class="post-dek">What xmlrpc.php does, what still uses it (Jetpack, some apps), how attackers abuse it, and safe ways to disable or restrict XML-RPC without breaking your site.</p>
+          <p class="post-dek">What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Sameer Gupta</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · 5 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20XML-RPC%20Explained%3A%20Should%20You%20Disable%20xmlrpc.php%3F%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-xmlrpc-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -156,31 +156,35 @@
               <li><a href="#what-xmlrpc-php-actually-is">What xmlrpc.php actually is</a></li>
               <li><a href="#what-still-uses-it">What still uses it</a></li>
               <li><a href="#why-attackers-like-it">Why attackers like it</a></li>
+              <li><a href="#how-to-tell-whether-xmlrpc-php-is-being-attacked">How to tell whether xmlrpc.php is being attacked</a></li>
               <li><a href="#how-to-check-whether-you-need-it">How to check whether you need it</a></li>
               <li><a href="#safe-ways-to-disable-or-restrict-xml-rpc">Safe ways to disable or restrict XML-RPC</a></li>
               <li><a href="#test-afterwards">Test afterwards</a></li>
-              <li><a href="#don-t-confuse-it-with-the-rest-api">Don't confuse it with the REST API</a></li>
+              <li><a href="#the-rest-api-xml-rpc-s-modern-replacement">The REST API: XML-RPC's modern replacement</a></li>
               <li><a href="#one-small-step-in-a-bigger-picture">One small step in a bigger picture</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>XML-RPC is an older remote access feature that most business sites no longer need, apart from Jetpack, some apps and pingbacks.</li>
-              <li>Bots use xmlrpc.php for password guessing that can bypass login protection, and pingbacks can be abused to attack other sites.</li>
-              <li>Disable or restrict it with a security plugin or server rule, then test Jetpack, apps and connected services afterwards.</li>
+              <li>XML-RPC is an older remote-access feature that most business sites no longer need; Jetpack, some apps and pingbacks are the main things that may still use it, and the REST API has replaced it for most jobs.</li>
+              <li>Floods of POST requests to xmlrpc.php in your access logs, slowdowns or resource-limit errors are signs that bots are using it for password guessing that can bypass login protection.</li>
+              <li>Block it at the server or firewall to save resources, or switch it off with a security plugin or code snippet, then test Jetpack, apps and connected services; restrict instead of blocking if something needs it.</li>
             </ul>
           </div>
 <p>If you've looked at your security plugin's reports or your hosting logs, you may have noticed a file called xmlrpc.php being hit again and again. It's a part of WordPress that most business sites no longer use, yet it's switched on by default and bots love it. Here's what it is, how to tell whether anything on your site still relies on it, and how to switch it off or restrict it safely.</p>
+<p><strong>The short answer:</strong> if nothing on your site uses XML-RPC, which is true for most business sites that don't use Jetpack or publish from an app, block it at the server or firewall, or at least turn it off with a security plugin. If you do rely on Jetpack or a publishing app, restrict it rather than blocking it outright.</p>
 
 <h2 id="what-xmlrpc-php-actually-is">What xmlrpc.php actually is</h2>
 <p>XML-RPC is an older way for other programs to talk to your WordPress site remotely: publishing posts, uploading images, reading comments and so on, by sending XML messages to a single file, xmlrpc.php, in your site's main folder. It dates from the days when people wrote blog posts in desktop apps and sent them to their site, and it has been enabled by default in WordPress for many years.</p>
 <p>Today, most of that work is done by the WordPress REST API, a newer system used by the block editor and most modern plugins and apps. XML-RPC is still included for backwards compatibility, which is why it sits on almost every WordPress site, used or not.</p>
+<p>To see whether it responds on your site, open yoursite.com/xmlrpc.php in a browser. If you see the message "XML-RPC server accepts POST requests only.", the file is reachable. A 403 or 404 page usually means something already blocks it. Note that some plugin settings switch off XML-RPC features inside WordPress while the file still shows that message.</p>
 
 <h2 id="what-still-uses-it">What still uses it</h2>
 <ul>
-  <li><strong>Jetpack:</strong> the Jetpack plugin has historically relied on XML-RPC to connect your site to WordPress.com for features such as stats, backups and downtime monitoring. Blocking xmlrpc.php completely can break that connection.</li>
-  <li><strong>Some mobile and desktop apps:</strong> older versions of the WordPress mobile app, and some third-party blogging or publishing tools, use XML-RPC to log in and publish.</li>
+  <li><strong>Jetpack:</strong> the Jetpack plugin has historically relied on XML-RPC to connect your site to WordPress.com for features such as stats, backups and downtime monitoring. It has moved parts of that connection to the REST API, but blocking xmlrpc.php completely can still break it, so check Jetpack's current documentation first.</li>
+  <li><strong>Some mobile and desktop apps:</strong> older versions of the WordPress mobile app, and some third-party blogging or publishing tools, use XML-RPC to log in and publish. Newer app versions can connect through the REST API instead, but setups vary, so test any app you use.</li>
   <li><strong>Pingbacks:</strong> the automatic notifications one WordPress blog sends another when it links to it travel over XML-RPC.</li>
   <li><strong>Older integrations:</strong> a few auto-posting and remote management services still use it.</li>
 </ul>
@@ -199,45 +203,73 @@
 <h3>Pingback abuse</h3>
 <p>The pingback feature makes your server send a request to whatever address it's asked to check. Attackers have abused this to get large numbers of WordPress sites to flood a victim with traffic, and to reveal a site's real server address when it's hidden behind a firewall or CDN. Your site ends up as a tool in someone else's attack, on your server's resources.</p>
 
+<h2 id="how-to-tell-whether-xmlrpc-php-is-being-attacked">How to tell whether xmlrpc.php is being attacked</h2>
+<p>Bots try xmlrpc.php on almost every WordPress site, so its appearance in your logs isn't proof of a problem; volume and impact are what matter. Warning signs:</p>
+<ul>
+  <li><strong>Large numbers of POST requests to /xmlrpc.php</strong> in your access logs, often from many different IP addresses</li>
+  <li><strong>Slowdowns, 503 errors or "resource limit reached" pages</strong> on shared hosting, or CPU spikes in your hosting dashboard while real visitor numbers are normal</li>
+  <li><strong>Security plugin alerts</strong> about failed logins when nobody has used the login page</li>
+</ul>
+<p>In cPanel, raw access logs are usually under Metrics; other hosts have a log viewer in their dashboard. A bot request looks something like this (the IP address is an example):</p>
+<pre><code>203.0.113.45 - - [10/Oct/2026:02:14:07 +0530] "POST /xmlrpc.php HTTP/1.1" 200 412</code></pre>
+<p>A 200 status means WordPress processed the request. Once you block the file, the same requests should show 403, meaning they were refused. With SSH access, a developer can count requests per IP address to see whether it's a handful of bots or a large distributed attack:</p>
+<pre><code>grep "POST /xmlrpc.php" access.log | awk '{print $1}' | sort | uniq -c | sort -rn | head -20</code></pre>
+<p>Steady requests from one recognisable source, such as Jetpack's servers or a service you use, suggest something genuine depends on XML-RPC. Your security plugin's traffic or login log, or an activity log, can show the same pattern without touching server files; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs</a>.</p>
+
 <h2 id="how-to-check-whether-you-need-it">How to check whether you need it</h2>
 <ol>
   <li><strong>Check your plugins:</strong> is Jetpack installed and connected? Does any other plugin describe a connection to an external service or app?</li>
   <li><strong>Ask how content gets published:</strong> does anyone post from a mobile app, a desktop editor or an automation tool rather than the dashboard?</li>
   <li><strong>List external services</strong> that publish to, back up or monitor your site, and check their documentation for XML-RPC requirements.</li>
-  <li><strong>Look at your access logs</strong> in your hosting control panel. Large numbers of POST requests to xmlrpc.php from random IP addresses are almost certainly bots; regular requests from a known service suggest something genuine is using it.</li>
+  <li><strong>Look at your access logs</strong> as described above: random IP addresses are bots, a known service is genuine.</li>
 </ol>
 <p>For a typical brochure site, clinic site or WooCommerce store without Jetpack, the answer is usually that nothing needs it.</p>
 
 <h2 id="safe-ways-to-disable-or-restrict-xml-rpc">Safe ways to disable or restrict XML-RPC</h2>
 <h3>Option 1: a security plugin setting</h3>
 <p>Most well-known WordPress security plugins include an option to disable XML-RPC entirely, or to switch off just its login methods or pingbacks. This is the easiest route for most site owners, and it's easy to reverse. Option names vary, so check your plugin's documentation.</p>
-<h3>Option 2: a server or firewall rule</h3>
+<h3>Option 2: a code snippet</h3>
+<p>Developers sometimes add this filter in a small site-specific plugin:</p>
+<pre><code>add_filter( 'xmlrpc_enabled', '__return_false' );</code></pre>
+<p>Know its limits: it switches off the XML-RPC methods that need a username and password, which stops password guessing through xmlrpc.php, but pingbacks still work and every request still loads WordPress. It's a reasonable step, not a full block.</p>
+<h3>Option 3: a server rule</h3>
 <p>Blocking xmlrpc.php before WordPress loads saves the most server resources, because bot requests are refused without running any PHP. On Apache or LiteSpeed hosting, a developer can add a rule like this to the .htaccess file:</p>
 <pre><code>&lt;Files xmlrpc.php&gt;
   Require all denied
 &lt;/Files&gt;</code></pre>
-<p>Nginx servers use an equivalent location rule, and cloud firewalls such as Cloudflare let you block or challenge requests to that path. Some hosts will add a block for you on request. A mistake in .htaccess can take the whole site offline, so take a backup first or ask your developer. See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> for how these layers fit together.</p>
-<h3>Option 3: restrict rather than block</h3>
-<p>If you use Jetpack or an app that needs XML-RPC, it doesn't have to be all or nothing. You can disable pingbacks only, rate-limit xmlrpc.php at the firewall, or allow only the services you rely on. Check Jetpack's current documentation before restricting anything, since its requirements can change.</p>
+<p>Nginx servers use an equivalent location rule. A mistake in .htaccess can take the whole site offline, so take a backup first (see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>) or ask your developer. If a rule ends up blocking more than intended, <a href="/blog/wordpress-403-forbidden-error-fix/">403 Forbidden errors on WordPress</a> explains how to trace it.</p>
+<h3>Option 4: your host or a cloud firewall</h3>
+<p>Cloud firewalls such as Cloudflare let you block or challenge requests to the /xmlrpc.php path before they reach your server at all, which is the best option when bot traffic is heavy. Some managed WordPress hosts block or rate-limit xmlrpc.php by default, and others will add a block on request. See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> for how these layers fit together.</p>
+<h3>Option 5: restrict rather than block</h3>
+<p>If you use Jetpack or an app that needs XML-RPC, it doesn't have to be all or nothing. You can disable pingbacks only, rate-limit xmlrpc.php at the firewall, or allow only the services you rely on, such as Jetpack's published IP addresses. Check Jetpack's current documentation before restricting anything, since its requirements can change.</p>
 
 <h2 id="test-afterwards">Test afterwards</h2>
-<p>Whichever method you choose, check that nothing has quietly broken:</p>
 <ul>
   <li>Open the website and the dashboard, and save a test draft</li>
-  <li>Check Jetpack's connection status, if you use it</li>
-  <li>Try any app or tool that publishes to your site</li>
+  <li>Check Jetpack's connection status, if you use it, and try any app or tool that publishes to your site</li>
   <li>Confirm that backup, monitoring and auto-posting services still report normally over the next few days</li>
-  <li>Watch your security logs: requests to xmlrpc.php should now be refused before they reach WordPress</li>
+  <li>Watch your logs: requests to xmlrpc.php should now be refused before they reach WordPress</li>
 </ul>
 <p>If something stops working, undo the change and switch to restricting instead of blocking.</p>
 
-<h2 id="don-t-confuse-it-with-the-rest-api">Don't confuse it with the REST API</h2>
-<p>Some guides suggest disabling the REST API at the same time. Be careful: the block editor, WooCommerce and many plugins depend on the REST API, and turning it off completely can break your dashboard and checkout. Restricting the REST API is a separate, more delicate job.</p>
+<h2 id="the-rest-api-xml-rpc-s-modern-replacement">The REST API: XML-RPC's modern replacement</h2>
+<p>The WordPress REST API does most of what XML-RPC was built for. It's what the block editor uses to save your pages, and what most current plugins, apps and integrations use to talk to WordPress. It also handles app logins more safely: external tools can use application passwords, built into WordPress since version 5.6, which work only for API requests, can be revoked one at a time and never expose your main password. XML-RPC tools, by contrast, typically send your real username and password.</p>
+<p>That's why you shouldn't disable the REST API along with XML-RPC, as some guides suggest. The block editor, WooCommerce and many plugins depend on it, and turning it off completely can break your dashboard and checkout. Restricting parts of it, such as the public user list, is a separate, more delicate job; see <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a>.</p>
 
 <h2 id="one-small-step-in-a-bigger-picture">One small step in a bigger picture</h2>
-<p>Disabling XML-RPC reduces bot noise and closes a side door, but it won't protect a site with outdated plugins or weak passwords. Treat it as one item alongside updates, two-factor authentication, backups and a firewall. And if bots hammering xmlrpc.php make you suspect someone has already got in, work through the <a href="/blog/find-remove-wordpress-backdoors/">guide to finding and removing backdoors</a>.</p>
+<p>Disabling XML-RPC reduces bot noise and closes a side door, but it won't protect a site with outdated plugins or weak passwords. Treat it as one item alongside updates, two-factor authentication, backups and a firewall, as in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. And if bots hammering xmlrpc.php make you suspect someone has already got in, work through the <a href="/blog/find-remove-wordpress-backdoors/">guide to finding and removing backdoors</a>.</p>
 
-<p>Want this handled for you? Security hardening, including XML-RPC, is part of my <a href="/wordpress-malware-removal/">WordPress malware removal and security</a> service, and ongoing checks are included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>Is xmlrpc.php a virus or a sign of a hack?</h3>
+<p>No. It's a standard WordPress core file found on almost every WordPress site, and requests to it only mean bots are knocking. Unfamiliar PHP files with odd names in other folders are a different matter and worth investigating.</p>
+<h3>Can I just delete xmlrpc.php?</h3>
+<p>It's better not to. It's a core file, so WordPress updates will put it back. Blocking it with a server rule, firewall or plugin is cleaner and easy to undo.</p>
+<h3>Does disabling XML-RPC affect SEO?</h3>
+<p>No. Google doesn't use xmlrpc.php to crawl or index your site. Pingbacks have no real SEO value for a business site; you can switch them off under Settings &gt; Discussion, and see <a href="/blog/wordpress-comments-enable-or-disable/">whether a business site should enable comments</a>.</p>
+<h3>Why do I still see xmlrpc.php requests after disabling it?</h3>
+<p>Bots don't check first. What changes is the response: requests should now get a 403 or an error instead of being processed. To stop them reaching your server at all, block the path at a cloud firewall.</p>
+
+<p>Want this handled for you? Security hardening, including XML-RPC, is part of my <a href="/wordpress-malware-removal/">WordPress malware removal and security</a> service, and ongoing checks are included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Get in touch if bots are slowing your site down.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -276,11 +308,13 @@
               <li><a href="#what-xmlrpc-php-actually-is">What xmlrpc.php actually is</a></li>
               <li><a href="#what-still-uses-it">What still uses it</a></li>
               <li><a href="#why-attackers-like-it">Why attackers like it</a></li>
+              <li><a href="#how-to-tell-whether-xmlrpc-php-is-being-attacked">How to tell whether xmlrpc.php is being attacked</a></li>
               <li><a href="#how-to-check-whether-you-need-it">How to check whether you need it</a></li>
               <li><a href="#safe-ways-to-disable-or-restrict-xml-rpc">Safe ways to disable or restrict XML-RPC</a></li>
               <li><a href="#test-afterwards">Test afterwards</a></li>
-              <li><a href="#don-t-confuse-it-with-the-rest-api">Don't confuse it with the REST API</a></li>
+              <li><a href="#the-rest-api-xml-rpc-s-modern-replacement">The REST API: XML-RPC's modern replacement</a></li>
               <li><a href="#one-small-step-in-a-bigger-picture">One small step in a bigger picture</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -307,9 +341,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist for Small Business Websites (20 Steps)</h3><p>A practical 20-step WordPress security checklist for small businesses: updates, passwords, 2FA, backups, firewalls, hosting and user roles, to keep your site safe from hackers.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
           <a class="post-card" href="/blog/secure-wordpress-login/"><img class="post-card-img" src="/assets/og/blog-secure-wordpress-login.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Secure Your WordPress Login: 2FA, Strong Passwords and More</h3><p>Practical ways to protect the WordPress login from brute-force attacks and account takeover: strong unique passwords, two-factor authentication, login limits, user roles, XML-RPC and firewalls.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
           <a class="post-card" href="/blog/find-remove-wordpress-backdoors/"><img class="post-card-img" src="/assets/og/blog-find-remove-wordpress-backdoors.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Find and Remove Backdoors in a Hacked WordPress Site</h3><p>What WordPress backdoors are, where attackers hide them (uploads, fake plugins, mu-plugins, core files, database, cron), warning signs in code, how to verify files and how to stop reinfection.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-firewall-waf-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-firewall-waf-explained.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Firewalls Explained: Cloud, Server and Plugin WAFs</h3><p>What a web application firewall (WAF) does for WordPress, the difference between cloud (DNS-level), server-level and plugin firewalls, virtual patching, bot protection and which setup suits a business site.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
         </div>
       </div>
     </section>
