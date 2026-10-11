@@ -732,6 +732,10 @@ const LINKS = [
   ['choose-wordpress-developer-pune', '<h2>Questions to ask in the first conversation</h2>', '<p>You can practise these checks on my own <a href="/work/">portfolio of WordPress case studies</a>; the case studies link to the live sites, so you can open them on your phone.</p>\n\n'],
   ['woocommerce-vs-shopify-india', '<h2>Choose WooCommerce if...</h2>', '<p>Platform fees are only one part of the budget. For build costs by type of store, see <a href="/blog/ecommerce-website-cost-india/">how much an e-commerce website costs in India</a>.</p>\n\n'],
   ['hidden-website-costs', '<h2>How to budget for the full cost</h2>', '<p>Selling online adds its own costs, such as payment gateway fees, shipping and paid extensions; see <a href="/blog/ecommerce-website-cost-india/">e-commerce website cost in India</a> for what drives the price of a store.</p>\n\n'],
+  // Agent 93
+  ['wordpress-multisite-when-needed', '<h2>The practical answer</h2>', '<p>If you already run a network, see <a href="/blog/wordpress-multisite-seo/">WordPress Multisite SEO</a> for setting up sitemaps, Search Console and canonicals on each site.</p>\n\n'],
+  ['shared-vs-vps-vs-managed-wordpress-hosting', '<h2>Who manages what</h2>', '<p>Price is the other big difference between these types; see <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> for what drives the cost and how to compare plans fairly.</p>\n\n'],
+  ['wordpress-caching-explained', '<h2>OPcache</h2>', '<p>On a WordPress Multisite network, object caching often matters even more because so much data is shared; see <a href="/blog/wordpress-multisite-slow/">why WordPress Multisite gets slow</a>.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');

@@ -9125,6 +9125,8 @@ wp plugin verify-checksums --all</code></pre>
   <li><strong>SEO:</strong> each site needs its own titles, sitemaps and structure; avoid duplicating content across sites</li>
 </ul>
 
+<p>If you already run a network, see <a href="/blog/wordpress-multisite-seo/">WordPress Multisite SEO</a> for setting up sitemaps, Search Console and canonicals on each site.</p>
+
 <h2>The practical answer</h2>
 <p>Most small and medium businesses are best served by a single, well-structured WordPress site. Multisite is a tool for organisations managing many similar sites with a central team. If you're unsure, describe your setup and a developer can recommend the simplest option that works; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
@@ -12835,6 +12837,8 @@ wp plugin verify-checksums --all</code></pre>
   <li>It needs Redis or Memcached on the server plus a connector plugin, so check your host supports it; WordPress's Site Health screen may suggest it</li>
   <li>It isn't a fix for slow, bloated queries; see <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a></li>
 </ul>
+
+<p>On a WordPress Multisite network, object caching often matters even more because so much data is shared; see <a href="/blog/wordpress-multisite-slow/">why WordPress Multisite gets slow</a>.</p>
 
 <h2>OPcache</h2>
 <p>PHP is compiled before it runs. OPcache keeps the compiled code in server memory, so PHP doesn't recompile WordPress files on every request. It's a server setting rather than something a plugin does, and most decent hosts enable it. If you're unsure, ask your host or check the PHP settings in your hosting panel.</p>
@@ -40464,6 +40468,8 @@ Description: Custom code for this website.
 </ul>
 <p>Managed hosting looks after the server and the WordPress environment, but usually not your plugins, theme or content. Plugin updates, design changes and fixing site-level problems are still your job or your developer's.</p>
 
+<p>Price is the other big difference between these types; see <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> for what drives the cost and how to compare plans fairly.</p>
+
 <h2>Who manages what</h2>
 <table>
   <thead><tr><th>Task</th><th>Shared</th><th>Unmanaged VPS or cloud</th><th>Managed WordPress</th></tr></thead>
@@ -44000,6 +44006,234 @@ wp user set-role your-username administrator</code></pre>
 <p>Finally, if roles changed and nobody on your team made the change, treat it as a possible security issue: check the user list for unknown administrators and change passwords.</p>
 
 <p>If you'd rather have someone untangle roles, plugins and access for you, I can help with this as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-multisite-seo',
+    seoTitle: 'WordPress Multisite SEO: Sitemaps, Domains and Duplicates',
+    title: 'WordPress Multisite SEO: Sitemaps, Search Console, Canonicals and Hreflang',
+    description: 'WordPress Multisite SEO explained: subdomains vs subdirectories, SEO plugins, sitemaps per site, Search Console, duplicate risks and hreflang across sites.',
+    date: '2026-10-11',
+    category: 'SEO',
+    related: ['wordpress-seo-services', 'wordpress-website-development'],
+    body: `
+<p>WordPress Multisite runs a network of sites from one installation. That is convenient for the team managing it, but Google doesn't see a network: it sees separate sites, each needing its own titles, sitemaps, indexing checks and clear signals about which pages are the originals. Most multi-site WordPress SEO problems come from forgetting that. If you're still deciding whether you need a network at all, start with <a href="/blog/wordpress-multisite-when-needed/">when a business actually needs WordPress Multisite</a>.</p>
+
+<h2>Subdomain vs subdirectory multisite for SEO</h2>
+<p>When a network is set up, you choose how sites are addressed: subdomains (delhi.example.com) or subdirectories (example.com/delhi/). Any site can also be given its own domain later through domain mapping, which is built into WordPress.</p>
+<p>Google has said publicly that it can crawl and rank both structures, so neither is a ranking trick. The practical differences matter more:</p>
+<table>
+  <thead><tr><th></th><th>Subdirectories</th><th>Subdomains</th></tr></thead>
+  <tbody>
+    <tr><td>How it looks</td><td>One site with sections</td><td>Separate sites under one brand</td></tr>
+    <tr><td>robots.txt</td><td>One shared file at the domain root</td><td>One per subdomain</td></tr>
+    <tr><td>Search Console</td><td>One property, plus optional per-folder properties</td><td>A Domain property, or one property per subdomain</td></tr>
+    <tr><td>Best suited to</td><td>Branches or departments of one organisation</td><td>Sites that are genuinely separate in content or audience</td></tr>
+  </tbody>
+</table>
+<p>Choose before launch. Switching a live network from one structure to the other changes every URL, needs a full set of 301 redirects and is a project in itself. Subdirectory networks also usually add /blog/ to the main site's post URLs by default, to avoid clashes with site names, so check your permalinks before you publish.</p>
+
+<h2>SEO plugins on multisite</h2>
+<p>Popular SEO plugins such as Yoast SEO and Rank Math state Multisite support, but the details differ and change between versions, so check the current documentation before you commit. Points to understand:</p>
+<ul>
+  <li><strong>Network activation</strong> switches a plugin on for every site at once, and individual site admins can't turn it off. Activating per site gives more control but more to keep track of.</li>
+  <li><strong>Settings are mostly per site.</strong> Titles, meta descriptions, schema details, social images and the sitemap all need configuring on each site, even when the plugin is network-activated.</li>
+  <li><strong>Network-level options</strong> in some plugins let a super admin set defaults for new sites or lock certain settings.</li>
+  <li><strong>Use one SEO plugin across the network</strong> where you can. Two plugins outputting titles, canonicals or schema on the same site cause duplicate tags.</li>
+</ul>
+<p>Also check each site's <strong>Settings &rarr; Reading &rarr; Search engine visibility</strong> box. Every site in a network has its own, and a site created for testing and later launched with the box still ticked will keep asking search engines not to index it.</p>
+
+<h2>Sitemaps per site</h2>
+<p>Each site in a network has its own sitemap, whether it comes from WordPress's built-in sitemap (/wp-sitemap.xml) or from your SEO plugin. On a subdirectory network that means addresses like example.com/sitemap_index.xml for the main site and example.com/delhi/sitemap_index.xml for a branch site. The exact file name depends on the plugin.</p>
+<p>Search engines only read robots.txt at the root of a host. On a subdirectory network, example.com/delhi/robots.txt is ignored, so list every site's sitemap in the root robots.txt or submit each one in Search Console, and repeat the check whenever a new site is added. Subdomain and mapped-domain sites each serve their own robots.txt and sitemap. See <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a> for what a healthy sitemap contains.</p>
+
+<h2>Search Console properties</h2>
+<p>A <strong>Domain property</strong>, verified with a DNS record, covers every subdomain and protocol of example.com, so it's the simplest starting point for a network. It shows the whole network's data together, though, which makes it hard to see how one branch site is doing.</p>
+<ul>
+  <li><strong>Subdirectory sites:</strong> add a URL-prefix property for each site, such as https://example.com/delhi/, to get its own performance and indexing reports.</li>
+  <li><strong>Subdomain sites:</strong> add a URL-prefix property per subdomain, or filter the Domain property's reports by page.</li>
+  <li><strong>Mapped domains:</strong> each separate domain needs its own property.</li>
+</ul>
+<p>Submit each sitemap in the property that covers it.</p>
+
+<h2>Canonical and duplicate risks across sites</h2>
+<p>Networks make copying easy, which is where most duplicate problems start:</p>
+<ul>
+  <li><strong>Shared service or product pages</strong> copied to every branch site with only the city name changed</li>
+  <li><strong>Content pushed to many sites</strong> by a syndication or duplication plugin</li>
+  <li><strong>Template sites</strong> cloned with sample content or placeholder pages still published</li>
+  <li><strong>Old addresses still live</strong> after domain mapping, so a site answers on both its subdomain and its new domain</li>
+  <li><strong>Test or staging sites</strong> inside the network that were never hidden from search engines</li>
+</ul>
+<p>The best fix is unique, useful content on each site: local contact details, team, reviews, photos and the services that branch really offers. Where the same article genuinely must appear on two sites, add a cross-domain canonical tag on the copy pointing to the original, remembering that Google treats it as a hint rather than an order. Old addresses should 301 redirect to the current one. See <a href="/blog/canonical-tags-explained/">canonical tags explained</a> for how canonicals, redirects and noindex differ.</p>
+
+<h2>Hreflang when sites are language versions</h2>
+<p>Some networks run one site per language, for example example.com/en/ and example.com/hi/. Google then needs hreflang tags that link each page to its translations, with return tags in both directions and an x-default where it fits.</p>
+<p>WordPress core doesn't know that a page on one site is a translation of a page on another, so a network needs a plugin built to connect them (MultilingualPress is one designed for Multisite; check its current features) or custom code. Make sure the setup outputs hreflang, keeps the links updated when pages are added or removed, and works with your SEO plugin's sitemaps. For most businesses starting fresh, a multilingual plugin on a single site is simpler. <a href="/blog/hreflang-multilingual-seo-india/">Hreflang and multilingual SEO for Indian websites</a> covers language codes and common errors.</p>
+
+<h2>When separate installs are better</h2>
+<p>Multisite doesn't help or hurt rankings by itself. It's an admin convenience, and it becomes a liability when the sites stop sharing much. Separate WordPress installs are usually better when:</p>
+<ul>
+  <li>Sites need different plugins, themes or hosting</li>
+  <li>One site has far more traffic or content than the rest</li>
+  <li>Sites belong to different businesses or clients who may move away later</li>
+  <li>Different teams want their own SEO plugins, staging sites and release schedules</li>
+  <li>A plugin you rely on doesn't support Multisite</li>
+</ul>
+<p>Moving a site out of a network later is possible, but it means exporting content, users and media, re-creating settings, and redirecting URLs if they change.</p>
+
+<p>Running a WordPress network and not sure each site is set up properly for search? I can check plugins, sitemaps, Search Console, canonicals and hreflang across the network and fix what's missing. See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-hosting-price-india',
+    title: 'WordPress Hosting Price in India: What You Pay For and Why',
+    description: 'WordPress hosting price in India explained: shared, managed, VPS and cloud plans, renewal vs intro price, GST, resources, backups, email and how to compare.',
+    date: '2026-10-11',
+    category: 'Pricing',
+    related: ['wordpress-migration', 'wordpress-maintenance'],
+    body: `
+<p>Search for WordPress hosting prices in India and you'll see monthly figures that look very cheap, then a checkout total that looks quite different. The gap comes from billing terms, renewal rates, GST and add-ons. This guide explains the main types of hosting, what drives the price of each and how to compare plans fairly. Hosts change their plans and offers often, so check current pricing on each host's own site before you decide.</p>
+
+<h2>How much does WordPress hosting cost?</h2>
+<p>It depends on the type of hosting, how much server power your site needs and how much of the work the host does for you. For a typical small business website, the <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> on this site puts hosting at roughly ₹2,500 to ₹15,000 a year across shared and managed plans. VPS and cloud plans vary too widely to give a fair range, so check current pricing, and remember that the cost of someone managing the server can matter more than the plan itself.</p>
+<p>The figure that matters is the total over three years, including renewal and GST, not the first month's headline price.</p>
+
+<h2>The main types of WordPress hosting</h2>
+<table>
+  <thead><tr><th>Type</th><th>What you get</th><th>Where it usually sits on price</th></tr></thead>
+  <tbody>
+    <tr><td>Shared hosting</td><td>Space on a server shared with many other sites; the host maintains the server</td><td>The cheapest option</td></tr>
+    <tr><td>Managed WordPress</td><td>Hosting tuned for WordPress, often with caching, backups, staging and WordPress-aware support</td><td>More than shared</td></tr>
+    <tr><td>VPS</td><td>Your own allocated slice of a server; on an unmanaged plan you or your developer run it</td><td>Varies with resources and how much is managed</td></tr>
+    <tr><td>Cloud</td><td>Resources on a network of servers that can be scaled up, on fixed plans or pay-as-you-use billing</td><td>Varies widely and can grow with usage</td></tr>
+  </tbody>
+</table>
+<p>The names overlap between hosts, so read what each plan actually includes. <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">Shared vs VPS vs cloud vs managed WordPress hosting</a> explains who manages what with each type and when to move up.</p>
+
+<h2>Renewal price vs introductory price</h2>
+<p>The biggest surprise in most hosting bills is renewal. The low advertised price usually:</p>
+<ul>
+  <li>Applies only to the first term, after which the plan renews at the regular rate, which can be several times higher</li>
+  <li>Needs you to pay for a long term, often several years, upfront</li>
+  <li>Comes with a "free" domain that is free for the first year only</li>
+</ul>
+<p>Before you buy, find the renewal price for the same plan, usually in the plan comparison table or the terms, and work out what years two and three will cost. <a href="/blog/hosting-renewal-price-increase/">Why hosting renewals cost more</a> covers your options when the renewal invoice arrives.</p>
+
+<h2>GST and currency</h2>
+<p>Indian hosting prices are often shown before GST, which is then added at checkout. When comparing hosts, make sure every figure either includes or excludes GST, or the comparison is meaningless. If your business is GST-registered, enter your GSTIN at checkout so the invoice carries it, and ask your CA whether you can claim input tax credit. Some hosts bill in US dollars; your card may then add currency conversion charges and the tax treatment can differ, so check a sample invoice before assuming it works out cheaper.</p>
+
+<h2>What drives the price: resources</h2>
+<p>Two plans with similar names can give very different server power. Compare:</p>
+<ul>
+  <li><strong>CPU and RAM</strong> allocated to your account, which decide how many visitors and admin users the site can handle at once</li>
+  <li><strong>Storage type and size</strong> (NVMe or SSD), plus any inode limit on the number of files</li>
+  <li><strong>Number of websites</strong> allowed on the plan</li>
+  <li><strong>PHP workers or entry processes</strong>, which cap how many uncached requests can run at the same time</li>
+  <li><strong>Server location:</strong> servers in or near India help if most of your visitors are here</li>
+</ul>
+<p>"Unlimited" plans still have fair-use limits, so read the details. A WooCommerce store or busy site needs more than a five-page brochure site, and choosing a plan that is too small just moves the cost into lost enquiries.</p>
+
+<h2>Backups, email and support</h2>
+<h3>Backups</h3>
+<p>Check how often backups run, how many days are kept, whether they are stored away from the server, and whether restoring one is free. On some plans, automatic daily backups are a paid add-on rather than standard.</p>
+<h3>Email</h3>
+<p>Some plans include mailboxes on your domain; others don't, or limit storage and sending. If you use a separate business email service instead, that is usually a per-user cost on top of hosting. See <a href="/blog/business-email-options/">business email options</a> to decide which suits you.</p>
+<h3>Support</h3>
+<p>A cheaper plan may offer only ticket support, while managed plans often include WordPress-aware chat support and help with staging or migrations. On an unmanaged VPS, the host looks after the hardware, not your site, so budget for a developer's time as part of the hosting cost.</p>
+
+<h2>How to compare hosting plans fairly</h2>
+<ol>
+  <li>Decide the type of hosting your site needs first, then compare plans of that type only.</li>
+  <li>Write down the price for the term you'll actually buy, the renewal price, and whether each includes GST.</li>
+  <li>Add the extras you need: backups, email, a control panel licence on a VPS, a CDN or security add-ons.</li>
+  <li>Work out the total for three years, including at least one renewal.</li>
+  <li>Compare resources, server location and support quality, not just the total.</li>
+  <li>Read the refund period and what happens if you upgrade or downgrade mid-term.</li>
+</ol>
+<p>The cheapest plan isn't always the cheapest in practice. A slow or unreliable host costs you enquiries, and moving hosts later costs time and carries some risk.</p>
+
+<p>Not sure which hosting plan your site needs, or facing a steep renewal? I can review your current plan, recommend the right type for your traffic and move your site carefully, with email and SEO planned for. See <a href="/wordpress-migration/">WordPress migration and hosting</a>.</p>
+`,
+  },
+  {
+    slug: 'wordpress-multisite-slow',
+    seoTitle: 'WordPress Multisite Slow? Causes and Fixes for Networks',
+    title: 'WordPress Multisite Slow? Why Networks Slow Down and How to Fix It',
+    description: 'Why a WordPress Multisite network gets slow, from the shared database and network plugins to cron and domain mapping, and how Redis, caching and hosting help.',
+    date: '2026-10-11',
+    category: 'Speed',
+    related: ['wordpress-speed-optimization', 'wordpress-maintenance'],
+    body: `
+<p>A WordPress Multisite network often starts fast and gets slower as sites, users and plugins are added. Pages take longer to load, the network admin drags and scheduled tasks run late. The causes differ from a single slow site, because everything in a network shares one database, one set of plugins and one server. Here's why WordPress Multisite gets slow and what to do about it. For causes that apply to any site, see <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a>.</p>
+
+<h2>Why WordPress Multisite gets slow</h2>
+<p>Most slow networks have a combination of these:</p>
+<ul>
+  <li><strong>The shared database.</strong> Every site's content lives in one database. Users are shared too: one users table and one user meta table for the whole network, with extra rows recording each user's role on each site. On networks with many sites and users these tables grow large, and queries that touch them slow down.</li>
+  <li><strong>Large options tables.</strong> Each site has its own options table, and plugins add autoloaded settings to every one of them. A plugin that stores heavy autoloaded data does it once per site.</li>
+  <li><strong>Network-activated plugins.</strong> A plugin activated across the network loads on every page of every site, including sites that never use it.</li>
+  <li><strong>Cron across sites.</strong> WP-Cron runs separately for each site and only when that site gets a visit, so busy sites run scheduled tasks during page loads while quiet sites fall behind.</li>
+  <li><strong>Domain mapping.</strong> WordPress first has to work out which site a request belongs to from its domain and path. That is normally quick, but misconfigured mapping can add redirect chains between old and new addresses, and older networks may still rely on a legacy domain-mapping plugin.</li>
+</ul>
+
+<h2>Database tables per site</h2>
+<p>Each new site gets its own set of tables named with the site's ID (wp_2_posts, wp_2_options and so on), plus any tables its plugins create. A network of a few dozen sites can easily have hundreds of tables, and very large networks thousands.</p>
+<ul>
+  <li><strong>Autoloaded options on each site</strong>, not just the main one. Site Health can warn about large autoloaded data.</li>
+  <li><strong>Leftover tables</strong> from deleted sites or removed plugins; review these carefully before deleting anything</li>
+  <li><strong>Revisions, transients and logs</strong> across every site, not only the busiest</li>
+  <li><strong>Slow queries</strong>, found with a tool like Query Monitor on a staging copy</li>
+</ul>
+<p>The clean-up steps in <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a> apply to each site in the network; back up the whole database first. Very large networks sometimes spread tables across several databases with a database drop-in such as HyperDB or LudicrousDB, but that is specialist work.</p>
+
+<h2>Object caching (Redis) on multisite</h2>
+<p>A persistent object cache keeps the results of database queries in memory between page loads. On a network it often makes the biggest difference, because so much is shared: site lookups, network options, users and each site's settings would otherwise be fetched from the database on every request.</p>
+<ul>
+  <li>Your host needs to provide Redis (or Memcached), plus a connector plugin that supports Multisite; check the plugin's documentation for network setup</li>
+  <li>Cached data must be kept separate for each site, which good connector plugins handle using the site ID</li>
+  <li>If other WordPress installs share the same Redis server, give each install its own cache key prefix so they don't overwrite each other's data</li>
+  <li>It helps the admin and logged-in users most, since they bypass page caching</li>
+</ul>
+<p>See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> for how object caching fits with the other layers.</p>
+
+<h2>Page caching on multisite</h2>
+<p>Page caching serves ready-made copies of pages instead of running WordPress for every visitor, which takes a lot of load off the shared database. Points to check on a network:</p>
+<ul>
+  <li><strong>Multisite support:</strong> not every caching plugin supports networks; some must be network-activated, and settings may be network-wide or per site</li>
+  <li><strong>Server-level caching</strong> (LiteSpeed, Nginx or Varnish, depending on the host) usually works across the network, but purge rules must clear the right site's pages when content changes</li>
+  <li><strong>Mapped domains</strong> need including in your cache, CDN and SSL setup, or they may miss out on caching</li>
+  <li><strong>Logged-in users</strong> skip the page cache, and on a subdirectory network someone logged in to one site is usually logged in across the domain, so editors see uncached pages everywhere</li>
+  <li><strong>Cache preloading</strong> across many sites can itself strain a small server; schedule it for quiet hours</li>
+</ul>
+
+<h2>Cron across sites</h2>
+<p>Scheduled tasks such as publishing posts, sending emails and running backups use WP-Cron. On a network, a common fix is to stop visits triggering cron and have a real server cron job run due tasks for each site in turn, for example with WP-CLI:</p>
+<pre><code>for url in $(wp site list --field=url); do
+  wp cron event run --due-now --url="$url"
+done</code></pre>
+<p>Your developer can run this every few minutes from the server's scheduler after setting DISABLE_WP_CRON to true in wp-config.php. Stagger heavy jobs such as backups and imports so they don't run on every site at the same moment. <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a> covers the basics.</p>
+
+<h2>Hosting resources for a network</h2>
+<p>All sites in a network share one server's CPU, memory, PHP workers and database. A traffic spike, an import or a bot attack on one site slows every other site. Signs the plan is too small:</p>
+<ul>
+  <li>Resource limit warnings from your host, or 502 and 504 errors at busy times</li>
+  <li>Slow uncached pages and a slow admin, even after caching and database clean-up</li>
+  <li>A network admin that is sluggish for everyone, not just one user</li>
+</ul>
+<p>Shared hosting is rarely a good fit for a busy network. A managed host that explicitly supports Multisite, or a VPS or cloud server with enough memory for PHP, the database and Redis, is usually the next step. Check Multisite support before you buy, as some plans don't allow it.</p>
+
+<h2>When to split the network</h2>
+<p>Sometimes the best speed fix is a smaller network. Consider moving sites out when:</p>
+<ul>
+  <li>One site has far more traffic, content or orders than the rest and keeps slowing them down</li>
+  <li>Sites need very different plugins, so every site carries code it doesn't use</li>
+  <li>Sites belong to different businesses or clients with different budgets and hosting needs</li>
+  <li>The network has outgrown one server and tuning hasn't helped</li>
+</ul>
+<p>Moving a site out means exporting its content, media and users, re-creating its settings on a new install and redirecting any URLs that change. Some migration tools can extract a single subsite; check their current features and test on staging first.</p>
+
+<p>If your network is slow and you're not sure whether the database, plugins, caching or hosting is to blame, I can profile it, fix the bottlenecks and tell you honestly whether splitting the network makes sense. See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
 ];

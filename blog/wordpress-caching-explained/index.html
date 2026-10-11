@@ -228,6 +228,8 @@
   <li>It isn't a fix for slow, bloated queries; see <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a></li>
 </ul>
 
+<p>On a WordPress Multisite network, object caching often matters even more because so much data is shared; see <a href="/blog/wordpress-multisite-slow/">why WordPress Multisite gets slow</a>.</p>
+
 <h2 id="opcache">OPcache</h2>
 <p>PHP is compiled before it runs. OPcache keeps the compiled code in server memory, so PHP doesn't recompile WordPress files on every request. It's a server setting rather than something a plugin does, and most decent hosts enable it. If you're unsure, ask your host or check the PHP settings in your hosting panel.</p>
 

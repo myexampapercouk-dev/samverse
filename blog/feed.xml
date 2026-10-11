@@ -4038,5 +4038,26 @@
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
     <description>Fix a missing WordPress admin bar, vanished dashboard menus or &quot;Sorry, you are not allowed to access this page&quot;: roles, profile setting, plugins, migrations.</description>
   </item>
+  <item>
+    <title>WordPress Multisite SEO: Sitemaps, Search Console, Canonicals and Hreflang</title>
+    <link>https://samverse.space/blog/wordpress-multisite-seo/</link>
+    <guid>https://samverse.space/blog/wordpress-multisite-seo/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>WordPress Multisite SEO explained: subdomains vs subdirectories, SEO plugins, sitemaps per site, Search Console, duplicate risks and hreflang across sites.</description>
+  </item>
+  <item>
+    <title>WordPress Hosting Price in India: What You Pay For and Why</title>
+    <link>https://samverse.space/blog/wordpress-hosting-price-india/</link>
+    <guid>https://samverse.space/blog/wordpress-hosting-price-india/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>WordPress hosting price in India explained: shared, managed, VPS and cloud plans, renewal vs intro price, GST, resources, backups, email and how to compare.</description>
+  </item>
+  <item>
+    <title>WordPress Multisite Slow? Why Networks Slow Down and How to Fix It</title>
+    <link>https://samverse.space/blog/wordpress-multisite-slow/</link>
+    <guid>https://samverse.space/blog/wordpress-multisite-slow/</guid>
+    <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Why a WordPress Multisite network gets slow, from the shared database and network plugins to cron and domain mapping, and how Redis, caching and hosting help.</description>
+  </item>
 </channel>
 </rss>
