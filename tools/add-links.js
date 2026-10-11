@@ -741,7 +741,7 @@ const LINKS = [
 let src = fs.readFileSync(FILE, 'utf8');
 let added = 0, skipped = 0;
 const missing = [];
-for (const [slug, anchor, insert] of LINKS) {
+for (let [slug, anchor, insert] of LINKS) {
   const start = src.indexOf(`slug: '${slug}',`);
   if (start < 0) throw new Error(`Post not found: ${slug}`);
   const bodyStart = src.indexOf('body: `', start);
@@ -749,7 +749,9 @@ for (const [slug, anchor, insert] of LINKS) {
   let body = src.slice(bodyStart, bodyEnd);
   const target = (insert.match(/href="(\/[^"]+)"/) || [])[1];
   if (target && body.includes(`href="${target}"`)) { skipped++; continue; }
-  const count = body.split(anchor).length - 1;
+  let count = body.split(anchor).length - 1;
+  // Fallback for rewritten posts whose heading is gone: put the link just before the FAQs.
+  if (count === 0 && body.split('<h2>FAQs</h2>').length === 2) { anchor = '<h2>FAQs</h2>'; count = 1; }
   // A rewritten post may no longer have the heading; report it instead of failing.
   if (count === 0) { missing.push(`${slug} -> ${target}`); continue; }
   if (count !== 1) throw new Error(`Anchor found ${count} times in ${slug}: ${anchor}`);

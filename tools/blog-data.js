@@ -907,58 +907,104 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'get-more-enquiries-from-your-website',
-    title: '12 Ways to Get More Enquiries From Your Business Website',
-    description: 'Visitors but few calls? 12 ways to get more enquiries from your business website, from clear headlines and WhatsApp buttons to speed and trust signals.',
+    seoTitle: 'How to Get More Enquiries From Your Website: 12 Ways',
+    title: 'Website Not Getting Enquiries? 12 Ways to Get More Enquiries From Your Business Website',
+    description: 'Website not getting enquiries? Find out why, then use 12 practical ways to get more: clearer headlines, WhatsApp, shorter forms, real proof, speed and tracking.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Growth',
     related: ['website-redesign', 'landing-page-design', 'wordpress-speed-optimization'],
     body: `
-<p>Many business websites get visitors but very few enquiries. Usually the problem isn't traffic. The website isn't making it easy or convincing enough for people to get in touch. Here are 12 practical fixes, most of which you can make in a day.</p>
+<p>If your website gets visitors but few enquiries, the problem is rarely the amount of traffic alone. Usually the site doesn't make it instantly clear what you offer, doesn't give visitors an easy way to get in touch, or doesn't give them enough reason to trust you. Fix those three first: a clear headline, an obvious call to action with WhatsApp and phone beside the form, and real proof of your work.</p>
+<p>Below is how to work out why your website isn't getting enquiries, then twelve practical fixes, most of which you can make in a day, with examples from sites I've built. If you're running ads to a page that isn't converting, <a href="/landing-page-design/">landing page design</a> covers pages built around one offer; if the whole site needs rebuilding around enquiries, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+
+<h2>Why is my website not getting enquiries?</h2>
+<p>Start by working out which of four problems you have, because the fixes are different:</p>
+<table>
+  <thead><tr><th>What you see</th><th>Likely problem</th><th>Start with</th></tr></thead>
+  <tbody>
+    <tr><td>Very few visitors in Google Analytics or Search Console</td><td>Not enough of the right people find the site</td><td>Local SEO, your Google Business Profile and a page for each service</td></tr>
+    <tr><td>Steady visitors, almost no enquiries</td><td>The site isn't persuading them or making contact easy</td><td>Fixes 1 to 9 below</td></tr>
+    <tr><td>Enquiries suddenly dropped to zero</td><td>Something broke: the form, email delivery, tracking or rankings</td><td>Test your form today</td></tr>
+    <tr><td>Plenty of enquiries, mostly the wrong kind</td><td>The site attracts or invites poor-fit leads</td><td>Clearer service pages, pricing signals and a qualifying question on the form</td></tr>
+  </tbody>
+</table>
+<p>If enquiries stopped suddenly, read <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a> first; a form that silently stopped sending is common and easy to miss. For the traffic side, especially if you serve one city, see <a href="/blog/local-seo-guide-small-business-india/">local SEO for small businesses in India</a>. The rest of this guide is about turning the visitors you already have into enquiries.</p>
+
+<h2>Test your site like a customer</h2>
+<p>Take fifteen minutes with your own phone, on mobile data:</p>
+<ol>
+  <li>Open your homepage and give yourself five seconds. Can you tell what the business does, where, and for whom?</li>
+  <li>Without scrolling, is there a button that tells you what to do next?</li>
+  <li>Tap the phone number. Does it start a call?</li>
+  <li>Tap the WhatsApp button. Does it open a chat with a sensible message already typed?</li>
+  <li>Submit the contact form. Does a thank-you message appear, and does the email arrive?</li>
+  <li>Open one of your service pages from a Google result. Does it have its own call to action, or does it dead-end?</li>
+</ol>
+<p>Whatever fails here is where to start.</p>
 
 <p>Want a structured approach? See <a href="/blog/conversion-rate-optimization-basics/">conversion rate optimization basics</a>.</p>
 
 <h2>Make it instantly clear what you do</h2>
 <h3>1. Write a headline that says what you do and for whom</h3>
-<p>"Welcome to our website" wastes your most valuable space. Try something like "Orthopaedic clinic in Pune: same-week appointments" or "Industrial automation panels manufactured in India". Visitors should understand you in five seconds.</p>
-<h3>2. Put your main call to action above the fold</h3>
-<p>A clear button like "Get a Free Quote", "Book an Appointment" or "WhatsApp Us" should be visible without scrolling, especially on mobile.</p>
+<p>"Welcome to our website" wastes your most valuable space. Try "Orthopaedic clinic in Pune: same-week appointments" or "Industrial automation panels manufactured in India". A visitor should understand you within a few seconds and see their own problem or location in the words.</p>
+<h3>2. Put one main call to action above the fold</h3>
+<p>Pick the single action you most want, such as "Get a free quote", "Book an appointment" or "Request a call back", and make it a clear button that's visible without scrolling on mobile. Other options can sit beside it, but one should stand out.</p>
 
 <h2>Remove friction</h2>
-<h3>3. Add a WhatsApp button</h3>
-<p>In India, many people prefer WhatsApp to forms or calls. A floating WhatsApp button with a pre-filled message can noticeably increase enquiries.</p>
-<h3>4. Make phone numbers tappable</h3>
-<p>On mobile, visitors should be able to tap your number to call. It's a small fix that removes a big obstacle.</p>
+<h3>3. Add WhatsApp with a pre-filled message</h3>
+<p>Many people in India would rather send a WhatsApp message than fill in a form or call. A button that opens a chat with a message such as "Hi, I'd like a quote for..." already typed makes the first step almost effortless, and can tell your team which page the enquiry came from. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
+<h3>4. Make calling easy</h3>
+<p>Phone numbers should be tappable on mobile. For buyers who want to talk at a time that suits them, a call-back request works well: <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a generator rental site I built, keeps "Request a Call Back" in the header and an "Enquire Now" button at the end of each section.</p>
 <h3>5. Shorten your forms</h3>
-<p>Every extra field reduces submissions. Ask only for what you need to follow up: usually name, phone and a short message.</p>
-<h3>6. Speed up your site</h3>
-<p>Slow pages lose visitors before they see your offer. Compress images, use caching and good hosting, and test on PageSpeed Insights.</p>
+<p>Every extra field is another reason to give up. Ask only what you need to reply, usually a name, phone number and a short message, and use a dropdown for the service instead of making people type it. On the Vansh Group site I built, a service-type dropdown means enquiries arrive already sorted by service.</p>
+<h3>6. Speed up the site on mobile</h3>
+<p>Slow pages lose visitors before they see your offer, and many of your visitors will be on phones, often on patchy mobile data. Compress images, use caching and decent hosting, and test your key pages in PageSpeed Insights on mobile.</p>
 
 <h2>Build trust</h2>
 <h3>7. Show real proof</h3>
-<p>Client logos, testimonials, Google reviews, project photos and case studies reassure visitors that you're genuine and good at what you do.</p>
-<p>See <a href="/blog/collect-display-customer-testimonials/">how to collect and display testimonials</a> that actually convince people.</p>
-<h3>8. Use real photos</h3>
-<p>Photos of your team, office, clinic or factory build more trust than stock images.</p>
-<h3>9. Answer common questions</h3>
-<p>An FAQ section handles objections (price, timelines, process) before visitors have to ask, and it helps SEO too.</p>
-
-<p>If your form gets no submissions at all, check that it isn't broken. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a>.</p>
-
-<p>Reviews and photos are only part of the picture. For contact details, credentials, policies and security too, work through the <a href="/blog/website-trust-signals-checklist/">website trust signals checklist</a>.</p>
+<p>Client logos (with permission), named testimonials, Google reviews, project photos and case studies reassure visitors that you're genuine and good at what you do. Put proof next to your calls to action, not only on a separate page. The <a href="/blog/website-trust-signals-checklist/">website trust signals checklist</a> covers credentials, policies and contact details too.</p>
+<h3>8. Use real photos and real people</h3>
+<p>Photos of your team, premises, factory or finished projects build more trust than stock images, and a named person behind the business makes enquiring feel less risky.</p>
+<h3>9. Answer the questions people hesitate over</h3>
+<p>Price, timelines, process, service area and what happens after they enquire are the usual hesitations. A short FAQ on each service page answers them before visitors have to ask. If you can't publish prices, explaining what affects the cost, or giving a starting point, still helps people decide whether to get in touch.</p>
 
 <h2>Guide visitors to act</h2>
-<h3>10. Create a page for each service</h3>
-<p>A dedicated page for each service lets you speak directly to that customer's needs and rank for those specific searches.</p>
+<h3>10. Give each service its own page</h3>
+<p>One "Services" page with a list of bullet points can't speak to everyone. A dedicated page for each service lets you describe that customer's problem, show relevant proof and rank for that specific search. See <a href="/blog/write-service-pages-that-convert/">how to write service pages that rank and convert</a>.</p>
 <h3>11. Repeat your call to action</h3>
-<p>Add a call to action after each main section, not just at the top and bottom. Visitors decide at different points.</p>
-<p>Then turn those numbers into rupees; see <a href="/blog/measure-website-roi/">how to measure website ROI</a>.</p>
-<h3>12. Track what works</h3>
-<p>Set up Google Analytics to track form submissions, WhatsApp clicks and calls. You can't improve what you don't measure.</p>
+<p>Visitors decide at different points, so add a call to action after each main section and at the end of every page and article, not just in the header. The Studio Agama Interiors site I built repeats its "Get A Free Quote" button all the way down the homepage.</p>
+<h3>12. Track enquiries, and reply fast</h3>
+<p>Set up Google Analytics to count form submissions, WhatsApp clicks and phone taps as key events, so you know which pages and campaigns bring enquiries. A "How did you hear about us?" question on the form backs up the numbers. Then reply quickly, because the first business to respond often wins the job; see <a href="/blog/respond-to-website-enquiries-fast/">how to respond to website enquiries fast</a>.</p>
+
+<h2>Other ways in for visitors who aren't ready</h2>
+<p>Not everyone is ready to enquire today. Something useful in return can start the conversation:</p>
+<ul>
+  <li><strong>A self-assessment,</strong> like the free anxiety self-assessment on the Dr. Sudhir Arora site I built, which leads naturally to a consultation.</li>
+  <li><strong>A calculator or estimator.</strong> The <a href="/website-cost-calculator/">website cost calculator</a> on this site sends the visitor's selections to WhatsApp, so the conversation starts with a brief.</li>
+  <li><strong>A brochure or company profile</strong> for B2B buyers who need something to share internally, as on the Vansh Group site.</li>
+</ul>
 
 <p>Not everyone is ready to enquire today. A useful <a href="/blog/lead-magnets-newsletter-small-business/">lead magnet or newsletter</a> keeps those visitors in touch.</p>
 
 <h2>Where to start</h2>
-<p>If you do only three things this week: add a WhatsApp button, rewrite your headline, and add testimonials. Those changes alone often make a visible difference to enquiries.</p>
+<p>If you do only three things this week: rewrite your homepage headline, add a WhatsApp button with a pre-filled message, and put real testimonials or project photos next to your main call to action. Then test your form, and set up tracking so you can see whether enquiries rise.</p>
+
+<p>Then turn those numbers into rupees; see <a href="/blog/measure-website-roi/">how to measure website ROI</a>.</p>
+<p>See <a href="/blog/collect-display-customer-testimonials/">how to collect and display testimonials</a> that actually convince people.</p>
+<h2>FAQs</h2>
+<h3>Why is my website not getting enquiries?</h3>
+<p>Either too few of the right people visit, or visitors don't see a clear reason and an easy way to contact you. Check your traffic first, then your headline, calls to action, contact options and proof. If enquiries stopped suddenly, test your form and email delivery straight away.</p>
+<h3>How can I get more enquiries from my website quickly?</h3>
+<p>The quickest changes are a headline that says what you do and where, a WhatsApp button with a pre-filled message, tappable phone numbers, a shorter form and real testimonials near the call to action. Most can be done in a day.</p>
+<h3>Is a WhatsApp button better than a contact form?</h3>
+<p>Not better, but different. Many Indian customers prefer WhatsApp, while others want to write details in a form or talk on the phone. Offer all three side by side, and track which one each enquiry used.</p>
+<h3>How many fields should an enquiry form have?</h3>
+<p>As few as you need to reply well: usually a name, a phone number or email and a message, perhaps with a service dropdown. Add qualifying questions only if your team genuinely needs the answers before calling.</p>
+<h3>Do I need more traffic or a better website?</h3>
+<p>If visitors arrive but don't enquire, more traffic just means more people leaving. Fix the site first, then spend on SEO or ads. If almost nobody visits, you need both.</p>
+
+<p>Want a second pair of eyes on why your site isn't converting? I can review it and fix the headline, calls to action, forms and tracking, or build pages designed around enquiries. See <a href="/landing-page-design/">landing page design</a> for campaign pages and <a href="/wordpress-website-development/">WordPress website development</a> for full sites.</p>
 `,
   },
   {
@@ -1335,70 +1381,123 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'how-long-to-build-wordpress-website',
-    seoTitle: "How Long Does It Take to Build a WordPress Site?",
-    title: 'How Long Does It Take to Build a WordPress Website? (Realistic Timelines)',
-    description: 'How long does it take to build a WordPress website? Realistic timelines for landing pages, business sites and WooCommerce stores, and what speeds projects up.',
+    seoTitle: 'How Long Does It Take to Build a WordPress Website?',
+    title: 'How Long Does It Take to Build a WordPress Website? Realistic Timelines by Type of Site',
+    description: 'How long does it take to build a WordPress website? Timelines by site type, from landing pages to WooCommerce stores, each stage, and what causes delays.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Guides',
     related: ['wordpress-website-development', 'woocommerce-developer', 'landing-page-design'],
     body: `
-<p>"When can it go live?" is usually the second question after "How much will it cost?". The honest answer depends on the size of the site and, more than anything, on how quickly content and feedback arrive. Here are realistic timelines and the things that make the biggest difference.</p>
+<p>Counted from the day your content is ready, a single landing page usually takes 3–5 working days, a small business website of 5–8 pages 1–2 weeks, a larger business or B2B site 2–4 weeks, and a WooCommerce store 2–4 weeks. Complex custom features such as bookings, memberships or a second language push a project to 4 weeks or more.</p>
+<p>"When can it go live?" is usually the second question after "How much will it cost?". The build itself is rarely what takes longest: content and feedback are. Below are the timelines I work to by type of site, what happens at each stage, and how to keep a project on schedule. If you already know what you need, <a href="/wordpress-website-development/">WordPress website development</a> explains how a project with me runs, and every quote comes with a timeline.</p>
 
-<h2>Typical timelines by type of website</h2>
+<h2>WordPress website timelines by type of site</h2>
 <table>
-  <thead><tr><th>Type of website</th><th>Typical build time*</th></tr></thead>
+  <thead><tr><th>Type of website</th><th>Typical build time*</th><th>What decides where in the range you land</th></tr></thead>
   <tbody>
-    <tr><td>Single landing page</td><td>3–5 working days</td></tr>
-    <tr><td>Small business website (5–8 pages)</td><td>1–2 weeks</td></tr>
-    <tr><td>Larger business / B2B site with catalogue</td><td>2–4 weeks</td></tr>
-    <tr><td>WooCommerce online store</td><td>2–4 weeks</td></tr>
-    <tr><td>Redesign of an existing site</td><td>1–3 weeks</td></tr>
-    <tr><td>Complex custom features (bookings, memberships, multilingual)</td><td>4 weeks or more</td></tr>
+    <tr><td>Landing page (one page for an ad campaign)</td><td>3–5 working days</td><td>How clear the offer and copy are, and how quickly access to Google Ads or Analytics arrives</td></tr>
+    <tr><td>Brochure or small business site (5–8 pages)</td><td>1–2 weeks</td><td>Ready content and photos, and how many pages need their own layout</td></tr>
+    <tr><td>Larger business or B2B site with a catalogue</td><td>2–4 weeks</td><td>The number of products and service pages, quote forms and brochures</td></tr>
+    <tr><td>Blog or content site</td><td>Within the business-site range; a magazine-style portal sits at the longer end</td><td>The number of templates (posts, categories, archives) and whether old posts must be imported</td></tr>
+    <tr><td>WooCommerce online store</td><td>2–4 weeks</td><td>Products and variations, shipping rules and payment gateway approval</td></tr>
+    <tr><td>Custom build (bookings, memberships, multilingual or custom features)</td><td>4 weeks or more</td><td>The features themselves, integrations and how much testing they need</td></tr>
+    <tr><td>Redesign of an existing site</td><td>1–3 weeks</td><td>Content rewriting, redirects for changed URLs and moving old content across</td></tr>
   </tbody>
 </table>
-<p>*From the moment content is ready. Waiting for content is the most common reason projects take longer.</p>
+<p>*From the moment content is ready. Waiting for content is the most common reason projects take longer than this.</p>
+<p>The number of unique page layouts matters more than the total number of pages. Ten service pages built from one template go much faster than ten pages that each look different. Two smaller jobs people often ask about: moving an existing WordPress site to a new host usually takes 1–3 working days including testing, and speeding up an existing site usually takes 2–4 working days.</p>
+
+<h2>Timelines for common types of business</h2>
+<p>Within those ranges, the type of business matters less than the number of pages and features. These are the typical timelines I give on my industry pages, again counted from when content is ready:</p>
+<table>
+  <thead><tr><th>Business</th><th>Typical time</th><th>What usually stretches it</th></tr></thead>
+  <tbody>
+    <tr><td>Clinic or doctor</td><td>1–2 weeks</td><td>Several doctors or locations, and slow approval of medical text</td></tr>
+    <tr><td>Restaurant or cafe</td><td>1–2 weeks</td><td>Online ordering with delivery zones, several outlets or a second language</td></tr>
+    <tr><td>Lawyer, CA or consultant</td><td>1–2 weeks</td><td>Several partners or offices, and agreeing the wording among partners</td></tr>
+    <tr><td>Coaching institute or small school</td><td>1–2 weeks</td><td>A multi-branch institute with online payments takes 2–4 weeks; Hindi or regional versions add more</td></tr>
+    <tr><td>Hotel or homestay</td><td>1–3 weeks</td><td>The number of rooms, booking features and the booking engine provider's set-up time</td></tr>
+    <tr><td>Manufacturer or B2B company</td><td>2–3 weeks</td><td>Large catalogues, product data that needs cleaning and slow approvals</td></tr>
+    <tr><td>Startup</td><td>1–2 weeks for a 5–8 page site</td><td>Use-case pages, integrations and a blog make it 2–4 weeks</td></tr>
+  </tbody>
+</table>
 
 <h2>The stages of a WordPress project</h2>
-<h3>1. Discovery (1–3 days)</h3>
-<p>Agreeing on goals, pages, features, reference websites and the target audience. A clear brief here saves days later.</p>
+<p>Every project, from a five-page site to a store, goes through the same five stages. These are rough durations for a typical business site; on small sites some stages overlap.</p>
+<h3>1. Discovery and planning (1–3 days)</h3>
+<p>Agreeing on goals, pages, features, reference websites and who the site is for. Before any design, I map out the pages and what each one has to answer. A clear brief saves days later; the <a href="/blog/website-brief-template/">website brief template</a> covers what to send.</p>
 <h3>2. Design (2–5 days)</h3>
-<p>The look and layout of key pages, usually the homepage first. You review and give feedback before the rest of the site is built.</p>
+<p>The homepage and other key pages are designed first and shared for your feedback, so the look is agreed before the full build. One round of clear, consolidated feedback keeps this stage short.</p>
 <h3>3. Development (3–15 days)</h3>
-<p>Building all pages in WordPress, setting up forms, WhatsApp, payment gateways or other features, and making everything responsive.</p>
+<p>Building every page on a private staging link, with global colours and fonts so the site stays consistent and easy to edit, then adding forms, WhatsApp, maps, payment gateways and other features. This stage has the widest range, because a five-page site and a store with a hundred products are very different jobs.</p>
 <h3>4. Content entry (1–5 days)</h3>
-<p>Adding text, images, products and SEO details. This is fast when content is ready and organised.</p>
+<p>Adding text, images, products, page titles and descriptions. It is quick when content arrives organised, and slow when it arrives page by page over WhatsApp.</p>
 <h3>5. Testing and launch (1–2 days)</h3>
-<p>Checking every page on mobile and desktop, testing forms and payments, speed optimization, then going live and submitting the sitemap to Google.</p>
+<p>Checking every page on real phones and desktops, testing forms to make sure the emails arrive, placing test orders on stores and checking speed. Then the site goes live, a backup is taken, and Search Console and Google Analytics are connected.</p>
 
-<h2>What speeds a project up</h2>
+<h2>What to have ready before the project starts</h2>
 <ul>
-  <li><strong>Content ready before starting:</strong> text for each page, logo, and good photos.</li>
-  <li><strong>Clear references:</strong> 2–3 websites you like and what you like about them.</li>
-  <li><strong>One decision-maker:</strong> feedback from one person avoids back-and-forth.</li>
-  <li><strong>Quick feedback:</strong> replying within a day keeps momentum.</li>
-  <li><strong>Hosting and domain access</strong> available on day one.</li>
+  <li><strong>Text for each page,</strong> or at least your services in order of importance, since they become the main pages. <a href="/blog/how-to-write-website-content/">How to write content for your business website</a> helps you draft it.</li>
+  <li><strong>Logo and photos:</strong> real photos of your team, premises and work, in the best quality you have.</li>
+  <li><strong>Two or three websites you like,</strong> and what you like about each one.</li>
+  <li><strong>Domain and hosting logins,</strong> or a note that you need them set up in your name.</li>
+  <li><strong>How enquiries should arrive:</strong> form, WhatsApp, phone or all three, and who answers them.</li>
+  <li><strong>For stores:</strong> product names, prices, variations and photos in a spreadsheet, plus your choice of payment gateway and shipping rules.</li>
+  <li><strong>Any fixed launch date,</strong> such as a trade exhibition or a campaign, shared at the very start.</li>
 </ul>
 
-<h2>What slows a project down</h2>
+<h2>Why website projects get delayed</h2>
+<p>The build is rarely the bottleneck. These are the usual causes, and how to avoid each one:</p>
+<table>
+  <thead><tr><th>Delay</th><th>Why it happens</th><th>How to avoid it</th></tr></thead>
+  <tbody>
+    <tr><td>Content arrives late or in pieces</td><td>Pages can't be finished without their text and photos</td><td>Prepare content before the start date, or launch with the essential pages first</td></tr>
+    <tr><td>Scattered feedback</td><td>Comments from several people over several days, sometimes contradicting each other</td><td>One decision-maker and one consolidated list per round; see <a href="/blog/give-website-feedback-developer/">how to give clear website feedback</a></td></tr>
+    <tr><td>Scope creep</td><td>New pages or features are added midway</td><td>Note them for a second phase unless they are essential for launch</td></tr>
+    <tr><td>Third-party approvals</td><td>Payment gateway activation, booking engines or ad account access can take days</td><td>Apply in the first week, not the last</td></tr>
+    <tr><td>Missing access</td><td>Hosting, domain or DNS logins sit with a previous developer or an ex-employee</td><td>Recover the logins before the project starts</td></tr>
+    <tr><td>Disorganised product data</td><td>Store products arrive as photos of a price list</td><td>A spreadsheet with one row per product and variation</td></tr>
+  </tbody>
+</table>
+
+<h2>Things outside the build that take time</h2>
 <ul>
-  <li>Content that arrives page by page over weeks</li>
-  <li>Adding new pages or features midway (scope creep)</li>
-  <li>Many rounds of design changes without clear direction</li>
-  <li>Waiting for payment gateway or third-party approvals (these can take days)</li>
-  <li>Product data for stores that isn't organised in a spreadsheet</li>
+  <li><strong>Payment gateway approval:</strong> gateways usually ask for business documents and pages such as refund and privacy policies before they activate live payments, and approval can take days.</li>
+  <li><strong>DNS changes:</strong> when your domain is pointed at the new site, the change usually spreads within a few hours.</li>
+  <li><strong>Appearing on Google:</strong> going live is not the same as being found. Google has to discover and index the new pages, which can take from days to a few weeks; see <a href="/blog/get-website-indexed-google-faster/">how to get a new website indexed faster</a>.</li>
+  <li><strong>Google Business Profile edits,</strong> if you are changing your address, phone or website link at the same time, can go through Google's own review.</li>
 </ul>
 
-<p>After launch, follow this <a href="/blog/first-90-days-after-website-launch/">90-day plan</a>.</p>
+<h2>Can a WordPress website be built faster?</h2>
+<p>Yes, within reason. A landing page or a small site can go live in a few days if content is ready and decisions are quick. For urgent launches, the best approach is to launch the essential pages first, usually home, services, about and contact, and add the rest in a second phase. What I don't recommend is skipping testing: a form that silently fails or a broken mobile menu costs far more than the day it saved.</p>
+<p>Ready-made themes and page builders like Elementor are a big part of why WordPress is quick to build with. If you're weighing WordPress against a fully custom build, <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs a custom-coded website</a> compares time to launch as well as cost and editing.</p>
 
-<p>Slow or scattered feedback is a common cause of delays; see <a href="/blog/give-website-feedback-developer/">how to give clear website feedback</a>.</p>
+<h2>Plan your launch date backwards</h2>
+<p>If you need the site live for a campaign, an exhibition or the festival season, work backwards from that date:</p>
+<ol>
+  <li>Take the build time for your type of site from the table above.</li>
+  <li>Add time for content and feedback. For a business site, starting at least 3–4 weeks before the deadline is sensible, and longer for a store.</li>
+  <li>Start third-party approvals, such as the payment gateway, in the first week.</li>
+  <li>Share the deadline at the start, so the schedule is planned around it rather than squeezed at the end.</li>
+</ol>
+<p>Budgeting at the same time? <a href="/blog/wordpress-website-cost-india/">How much a WordPress website costs in India</a> covers prices by type of site, and the <a href="/blog/first-90-days-after-website-launch/">first 90 days after launch</a> covers what to do once the site is live.</p>
 
-<h2>Can it be done faster?</h2>
-<p>Yes, within reason. A landing page or small site can often go live in a few days if content is ready and decisions are quick. For urgent launches, a good approach is to launch the essential pages first and add the rest in a second phase.</p>
+<h2>FAQs</h2>
+<h3>How long does it take to build a WordPress website?</h3>
+<p>Counted from when content is ready, a landing page usually takes 3–5 working days, a small business site of 5–8 pages 1–2 weeks, a larger business or B2B site 2–4 weeks and a WooCommerce store 2–4 weeks. Custom features such as bookings, memberships or multiple languages take 4 weeks or more.</p>
+<h3>How long does it take to build a WooCommerce store?</h3>
+<p>Usually 2–4 weeks once product details and photos are ready. The number of products and variations, the shipping rules and the payment gateway approval decide where in that range a store lands.</p>
+<h3>Can a WordPress website be built in a day?</h3>
+<p>WordPress itself installs in minutes, and a basic site on a ready-made theme can be put together quickly. A business website that is planned, written, tested on phones and set up for enquiries and Google takes longer; even a single landing page usually takes 3–5 working days.</p>
+<h3>Why is my website project taking so long?</h3>
+<p>Usually because content or feedback is late, new pages or features were added midway, or the project is waiting on access or a third-party approval. Ask your developer what is blocking progress; often one decision or one missing login is all it takes to unblock it.</p>
+<h3>How long does a website redesign take?</h3>
+<p>Most redesigns take 1–3 weeks once content is ready. Large sites, a move from another platform, heavy content rewriting and slow feedback stretch it, and URLs that change need redirects planned before design starts.</p>
+<h3>How long after launch will my website show on Google?</h3>
+<p>Google needs to discover and index the new pages, which can take from days to a few weeks. Submitting the sitemap in Search Console helps. Ranking well for competitive searches takes much longer than being indexed; see <a href="/blog/how-long-does-seo-take/">how long SEO takes</a>.</p>
 
-<p>Budgeting too? See <a href="/blog/wordpress-website-cost-india/">how much a WordPress website costs in India</a>.</p>
-
-<h2>Plan your launch</h2>
-<p>Work backwards from your launch date: if you need the site live for a campaign or event, start at least 3–4 weeks earlier for a business site, and longer for a store. Share your deadline at the start so your developer can plan the schedule around it.</p>
+<p>Have a launch date in mind? Send me the pages you need, two or three sites you like and your deadline, and you'll get a fixed quote with a timeline after a free review. See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> for an online store.</p>
 `,
   },
   {
@@ -2144,63 +2243,113 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'wordpress-vs-custom-coded-website',
-    title: 'WordPress vs Custom-Coded Website: Which Is Right for Your Business?',
-    description: 'WordPress or a custom-coded website? Compare cost, speed, flexibility, maintenance, SEO and ease of editing to choose the right approach for your business.',
+    seoTitle: 'WordPress vs Custom-Coded Website: What\'s the Difference?',
+    title: 'WordPress vs Custom-Coded Website: Differences, Costs and Which Is Right for Your Business',
+    description: 'WordPress vs a custom-coded website: the real differences in cost, launch time, editing, speed, SEO, security and upkeep, and which one suits your business.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Guides',
     related: ['wordpress-website-development', 'hire-wordpress-developer', 'website-for-startups'],
     body: `
-<p>When planning a new website, you'll hear two main options: build on a platform like <strong>WordPress</strong>, or have developers <strong>code a custom website</strong> from scratch (often with frameworks like React or Next.js). Both can produce excellent websites. The right choice depends on what your website needs to do.</p>
+<p>The difference between a WordPress website and a custom-coded website is what you start from. WordPress is a ready-made content management system: a developer builds your site on it with a theme, plugins and sometimes custom code, and your team edits pages through its dashboard. A custom-coded site is written from scratch, or with a framework such as React, Next.js or Laravel, so every feature, every editing screen and every future change has to be built by developers.</p>
+<p>For most business websites, WordPress is quicker to launch, cheaper and easier for your team to update. Custom code makes sense when the website is really a piece of software. Below is a full comparison, what "custom" can actually mean, and why my own site is custom-coded while I still recommend WordPress for most clients. If you've decided on WordPress and want someone to build it, see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 
-<h2>Quick comparison</h2>
+<h2>WordPress vs custom-coded: quick comparison</h2>
 <table>
   <thead><tr><th></th><th>WordPress</th><th>Custom-coded</th></tr></thead>
   <tbody>
-    <tr><td><strong>Upfront cost</strong></td><td>Lower</td><td>Higher</td></tr>
-    <tr><td><strong>Time to launch</strong></td><td>Faster</td><td>Slower</td></tr>
-    <tr><td><strong>Editing content</strong></td><td>Easy for non-technical staff</td><td>Often needs a developer or a separate CMS</td></tr>
-    <tr><td><strong>Features</strong></td><td>Thousands of plugins available</td><td>Anything, but each feature is built</td></tr>
-    <tr><td><strong>Performance</strong></td><td>Fast when built and hosted well</td><td>Can be extremely fast</td></tr>
-    <tr><td><strong>Maintenance</strong></td><td>Regular plugin/core updates</td><td>Developer needed for most changes</td></tr>
-    <tr><td><strong>Finding developers</strong></td><td>Very easy</td><td>Depends on the tech stack</td></tr>
+    <tr><td><strong>Upfront cost</strong></td><td>Lower: the editor, themes and plugins already exist</td><td>Higher: each feature is built and tested from scratch</td></tr>
+    <tr><td><strong>Time to launch</strong></td><td>Days to a few weeks for most business sites</td><td>Usually longer</td></tr>
+    <tr><td><strong>Editing content</strong></td><td>Built-in dashboard; staff edit text, images and pages</td><td>Needs a developer, or a separate CMS added on</td></tr>
+    <tr><td><strong>Features</strong></td><td>Plugins for forms, stores, bookings, SEO and more</td><td>Anything, but each one is built</td></tr>
+    <tr><td><strong>Speed</strong></td><td>Fast when built lean and hosted well</td><td>Can be very fast, if the developer builds it that way</td></tr>
+    <tr><td><strong>Security</strong></td><td>A popular target; safe with updates and good practice</td><td>A smaller target, but only as secure as its code</td></tr>
+    <tr><td><strong>Maintenance</strong></td><td>Regular core, plugin and theme updates</td><td>Framework and dependency updates, and a developer for most changes</td></tr>
+    <tr><td><strong>SEO</strong></td><td>Plugins handle titles, sitemaps and schema</td><td>Every SEO feature must be built in</td></tr>
+    <tr><td><strong>Finding another developer</strong></td><td>Easy: WordPress skills are common</td><td>Depends on the stack and the documentation</td></tr>
   </tbody>
 </table>
 
+<h2>What "custom-coded" can actually mean</h2>
+<p>"Custom" covers very different builds, and quotes often compare the wrong things:</p>
+<table>
+  <thead><tr><th>Approach</th><th>What it is</th><th>Who edits content</th></tr></thead>
+  <tbody>
+    <tr><td>WordPress with a theme or page builder</td><td>A quality theme or Elementor layout, set up with your brand and content</td><td>Your team, through the dashboard</td></tr>
+    <tr><td>WordPress with a custom theme</td><td>A theme written only for your site, often with custom blocks or fields</td><td>Your team, through structured fields</td></tr>
+    <tr><td>Headless WordPress</td><td>WordPress stores the content; a separate front end built with a framework displays it</td><td>Your team in WordPress; developers for layout</td></tr>
+    <tr><td>Static or hand-coded site</td><td>HTML, CSS and JavaScript files, sometimes generated by a build script</td><td>Developers</td></tr>
+    <tr><td>Framework-built web application</td><td>An app built in React, Next.js, Laravel or similar, often with its own database</td><td>Developers, or an admin panel built for it</td></tr>
+  </tbody>
+</table>
+<p>The middle ground is often the sweet spot: WordPress for editing, with a <a href="/blog/custom-wordpress-theme-development/">custom theme</a> or a <a href="/blog/custom-wordpress-plugin-development/">custom plugin</a> for what off-the-shelf options can't do. <a href="/blog/headless-wordpress-small-business/">Headless WordPress</a> suits fewer small businesses than its popularity suggests.</p>
+
+<h2>Cost: what you're paying for</h2>
+<p>With WordPress, much of the work already exists: the editor, user accounts, media library, SEO plugins, form plugins and WooCommerce. You pay for design, set-up, content and any custom features. My <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts most small business sites in India at ₹15,000 to ₹40,000, and larger business or B2B sites at ₹35,000 to ₹80,000.</p>
+<p>With custom code, each of those pieces is either built or wired in from separate services, and the price follows developer time. That's money well spent on genuinely unique functionality, and wasted on rebuilding a contact form and a blog. Running costs differ too: WordPress needs regular updates, while a custom site needs a developer for most changes, including ones your team could have made themselves in WordPress.</p>
+
+<h2>Editing and day-to-day changes</h2>
+<p>This is the difference business owners feel most. On WordPress, changing a price, adding a blog post or swapping a photo takes minutes in the dashboard; see <a href="/blog/edit-website-content-wordpress/">how to edit your WordPress website content</a>. On many custom-coded sites, the same change is a developer task, which is fine if you have developers on hand and frustrating if you don't.</p>
+
+<h2>Speed, SEO and security</h2>
+<h3>Speed</h3>
+<p>A slow WordPress site is usually slow because of a heavy theme, too many plugins or cheap hosting, not because of WordPress itself. A lean WordPress build with caching and good hosting can pass Core Web Vitals comfortably. A custom site can be faster still, but only if the developer makes speed a priority; a heavy JavaScript front end can be slower than a well-built WordPress page.</p>
+<h3>SEO</h3>
+<p>Google doesn't rank a site higher for being WordPress or custom. What matters is content, structure, speed and technical basics such as titles, sitemaps, redirects and structured data. Plugins like Yoast SEO or Rank Math make those basics easy on WordPress; on a custom site, each one has to be built and kept working.</p>
+<h3>Security</h3>
+<p>WordPress runs a large share of the web, so automated attacks target it constantly, mostly through outdated plugins and weak passwords. With updates, licensed plugins and good hosting it's secure; see the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. A custom site attracts fewer automated attacks, but its security depends entirely on its developer's code and on someone keeping its dependencies updated. A static site with no database or login has very little to attack at all.</p>
+
+<h2>Why my own site is custom-coded</h2>
+<p>samverse.space, the site you're reading, isn't WordPress. It's a static site: service pages, articles and case studies are entries in plain data files, and a Node.js build script turns them into HTML pages that Netlify serves as ordinary files, with a serverless function handling the contact form. The same build writes the structured data, sitemap and share images for every page. The <a href="/work/samverse/">Samverse case study</a> shows how it fits together.</p>
+<p>That suits me because I'm a developer, I'm the only person who edits it, and it has hundreds of pages that must stay identical in layout. It would suit most of my clients badly: there's no dashboard, so every typo fix means editing a file and running a build. For a business whose staff need to update prices, add blog posts or change opening hours, that's the wrong trade-off, which is why every client site in my case studies is built on WordPress.</p>
+
 <h2>When WordPress is the better choice</h2>
 <ul>
-  <li>Business websites, service sites and portfolios</li>
-  <li>Blogs, news sites and content-heavy websites</li>
-  <li>Online stores (with WooCommerce)</li>
+  <li>Business, service and portfolio websites</li>
+  <li>Blogs, news portals and content-heavy sites, such as the India Automation Hub portal I built, with a deep category structure for technical news</li>
+  <li>Online stores, with WooCommerce</li>
+  <li>Directories and member areas, such as the Our Temples directory I built, with listings by state and deity and user registration</li>
   <li>When your team wants to update pages themselves</li>
-  <li>When you want to launch quickly on a sensible budget</li>
+  <li>When you need to launch quickly on a sensible budget</li>
 </ul>
 
 <p>That last point matters to startups that need a marketing site live while the product is still being built; see how I build <a href="/website-for-startups/">startup websites on WordPress</a>.</p>
 
 <h2>When custom code makes sense</h2>
 <ul>
-  <li>Web applications with complex, unique functionality (dashboards, SaaS products)</li>
-  <li>Very high-traffic platforms with specialised performance needs</li>
+  <li>Web applications with complex, unique logic, such as dashboards, SaaS products or booking platforms with unusual rules</li>
   <li>Products where the website <em>is</em> the software</li>
+  <li>Very high-traffic platforms with specialised performance or infrastructure needs</li>
+  <li>Strict security or compliance requirements that rule out third-party plugins</li>
   <li>When you have an in-house development team to maintain it</li>
 </ul>
+<p>Startups often use both: a WordPress marketing site the team can update while the product itself is custom-built. The <a href="/blog/startup-website-checklist/">startup website checklist</a> covers what to launch with.</p>
 
-<p>Launching a startup? See the <a href="/blog/startup-website-checklist/">startup website checklist</a> for what to launch with first.</p>
+<h2>Five questions to decide</h2>
+<ol>
+  <li>Who will update the site, and how often?</li>
+  <li>Does it need features no existing plugin provides, or just forms, a store or bookings set up well?</li>
+  <li>Who will maintain it in three years, and could another developer take it over?</li>
+  <li>What's the budget for building it, and for running it each year?</li>
+  <li>How soon does it need to launch?</li>
+</ol>
+<p>If your answers are "our team, often", "standard features", "anyone" and "soon", WordPress is the practical choice.</p>
 
-<p>The middle ground: WordPress with a <a href="/blog/custom-wordpress-theme-development/">custom theme</a> and <a href="/blog/custom-wordpress-plugin-development/">custom plugins</a>.</p>
+<h2>FAQs</h2>
+<h3>What is the difference between a WordPress website and a custom-coded website?</h3>
+<p>A WordPress website is built on an existing content management system, with a theme, plugins and an editing dashboard. A custom-coded website is written from scratch or with a framework, so its features, editing tools and updates are all built and maintained by developers.</p>
+<h3>Is a custom-coded website better for SEO than WordPress?</h3>
+<p>Not by itself. Google ranks pages on content, relevance, speed and technical basics, not on the platform. WordPress makes those basics easy with SEO plugins; a custom site can do just as well if its developer builds them in.</p>
+<h3>Is WordPress cheaper than custom development?</h3>
+<p>Usually, yes, because the editor, media library, SEO tools, forms and e-commerce already exist. Custom development is priced on developer time for every feature, and most later changes need a developer too.</p>
+<h3>Is a custom website more secure than WordPress?</h3>
+<p>It attracts fewer automated attacks, but it's only as secure as its code and its upkeep. A well-maintained WordPress site with updated, licensed plugins is secure; a neglected site of either kind isn't.</p>
+<h3>Can WordPress be customised as much as custom code?</h3>
+<p>For websites, very nearly. Custom themes, blocks, plugins and integrations let a developer build almost anything a business site needs while keeping the dashboard. Complex applications are where a dedicated framework becomes the better tool.</p>
+<h3>Can I switch from one to the other later?</h3>
+<p>Yes, but it's a rebuild, not a conversion. Content can usually be moved, and old URLs must be redirected to protect rankings. Choosing well at the start saves paying for the site twice.</p>
 
-<h2>Common myths</h2>
-<h3>"WordPress is only for blogs"</h3>
-<p>Not for many years. It runs business websites, directories, stores and large media sites.</p>
-<h3>"WordPress is slow"</h3>
-<p>Poorly built WordPress sites are slow. With a lightweight theme, good hosting, caching and optimized images, WordPress sites can score very well on Core Web Vitals.</p>
-<h3>"WordPress isn't secure"</h3>
-<p>Most WordPress hacks come from outdated plugins and weak passwords. With updates, good hosting and basic security practices, WordPress is secure. See the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
-
-<p>Heard about "headless" WordPress? See <a href="/blog/headless-wordpress-small-business/">whether a small business needs headless WordPress</a>.</p>
-
-<h2>The practical answer for most businesses</h2>
-<p>For the vast majority of small and medium businesses, WordPress gives the best balance of cost, speed to launch, flexibility and ease of editing. Custom code is worth the extra investment when you're building a web application rather than a website. If you're unsure, describe what your site needs to do and a developer can recommend the right approach; start with <a href="/wordpress-website-development/">WordPress website development</a> to see what's typically included.</p>
+<p>Not sure which suits your project? Tell me what the site needs to do and who will update it, and I'll tell you honestly which approach fits. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for what a build includes.</p>
 `,
   },
   {
@@ -2388,76 +2537,132 @@ wp plugin verify-checksums --all</code></pre>
   {
     slug: 'white-label-wordpress-development-agencies',
     seoTitle: 'How White-Label WordPress Development Works for Agencies',
-    title: 'White-Label WordPress Development: How Agencies Scale Without Hiring',
-    description: 'White-label WordPress development for agencies: how it works, pricing models, NDAs, quality control and choosing a partner so you can take on more projects.',
+    title: 'White-Label WordPress Development: How It Works for Agencies, From Brief to Handover',
+    description: 'How white-label WordPress development works for agencies: the process, who does what, pricing models, NDAs, communication, QA and handover to your client.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Agencies',
     related: ['wordpress-developer-for-agencies', 'figma-to-wordpress', 'elementor-developer'],
     body: `
-<p>Many agencies hit the same wall: more website projects than their team can deliver, but not enough steady work to justify another full-time developer. White-label WordPress development solves this by letting you outsource the build while keeping your brand and client relationship.</p>
+<p>White-label WordPress development is an arrangement where your agency sells the website, manages the client and sets the price, while a development partner builds the WordPress site behind the scenes under your brand. The client only ever deals with your agency: no developer credits on the site, no direct contact unless you arrange it, and the partner invoices you, not your client.</p>
+<p>This guide explains how it works in practice: the process from brief to handover, who does what, the usual pricing models, NDAs, communication and quality control. If you're already looking for a partner, see how I work as a <a href="/wordpress-developer-for-agencies/">white-label WordPress developer for agencies</a>, including time zones, confidentiality and how quotes work.</p>
 
-<p>Looking for a partner now? See how I work as a <a href="/wordpress-developer-for-agencies/">white-label WordPress developer for agencies</a>, from brief to handover.</p>
+<h2>What white-label development is, and what it isn't</h2>
+<p>Agencies use several arrangements that overlap. The differences matter for contracts, margins and client relationships:</p>
+<table>
+  <thead><tr><th>Arrangement</th><th>Who the client sees</th><th>Typical use</th></tr></thead>
+  <tbody>
+    <tr><td>White-label development</td><td>Only your agency</td><td>Builds and maintenance delivered under your brand, project after project</td></tr>
+    <tr><td>Overflow or subcontracting</td><td>Usually only your agency</td><td>Extra capacity in busy months, alongside your own developers</td></tr>
+    <tr><td>Reselling</td><td>Your agency, selling a packaged service</td><td>SEO and marketing agencies adding websites or care plans to what they offer</td></tr>
+    <tr><td>Referral</td><td>The developer, directly</td><td>You pass the client on and step out</td></tr>
+    <tr><td>Hiring in-house</td><td>Your agency</td><td>Enough steady WordPress work to keep a full-time developer busy</td></tr>
+  </tbody>
+</table>
+<p>In practice white-label and overflow work often run together. <a href="/blog/agency-overflow-wordpress-work/">Agency overflow WordPress work</a> covers when to use a partner for extra capacity, and <a href="/blog/wordpress-reseller-for-marketing-agencies/">reselling WordPress development</a> covers packaging it for marketing clients.</p>
 
-<h2>What is white-label WordPress development?</h2>
-<p>A white-label developer builds websites on your behalf. You sell and manage the project with your client; the developer delivers the WordPress site behind the scenes. Your client sees only your agency. No credits, no direct contact unless you want it.</p>
+<h2>Who does what</h2>
+<table>
+  <thead><tr><th>Task</th><th>Your agency</th><th>White-label partner</th></tr></thead>
+  <tbody>
+    <tr><td>Winning the client and setting the price</td><td>Yes</td><td>No</td></tr>
+    <tr><td>Strategy, design and copy</td><td>Usually</td><td>Sometimes, if agreed</td></tr>
+    <tr><td>Client meetings and feedback</td><td>Yes</td><td>Only if invited, as part of your team</td></tr>
+    <tr><td>WordPress build, integrations and testing</td><td>Reviews the result</td><td>Yes</td></tr>
+    <tr><td>Hosting, domain and licences</td><td>Held in your or your client's name</td><td>Sets up or advises</td></tr>
+    <tr><td>Invoicing the client</td><td>Yes</td><td>Invoices your agency</td></tr>
+    <tr><td>Ongoing maintenance</td><td>Sells it as your own care plan</td><td>Delivers it behind the scenes</td></tr>
+  </tbody>
+</table>
 
-<h2>Why agencies use white-label developers</h2>
-<ul>
-  <li><strong>Take on more projects</strong> without hiring, training or paying idle salaries</li>
-  <li><strong>Protect margins</strong> with fixed project costs you can mark up</li>
-  <li><strong>Handle busy periods</strong> without missing deadlines</li>
-  <li><strong>Focus on strategy and sales</strong> while delivery is handled</li>
-  <li><strong>Access specialist skills</strong> such as WooCommerce, speed optimization or complex Elementor builds</li>
-</ul>
-
-<p>Online stores add extra steps, from payment gateways and shipping rules to checkout testing; <a href="/blog/white-label-woocommerce-development/">white-label WooCommerce development</a> explains how that work is usually split between your agency and the partner.</p>
-
-<h2>How it typically works</h2>
+<h2>How a white-label project works, step by step</h2>
 <ol>
-  <li><strong>Brief:</strong> you share designs (Figma/XD), content, references and requirements.</li>
-  <li><strong>Quote:</strong> the developer confirms scope, timeline and a fixed price.</li>
-  <li><strong>Build:</strong> development happens on a staging site under your branding.</li>
-  <li><strong>Review:</strong> you review (and show your client), and revisions are made.</li>
-  <li><strong>Launch:</strong> the site goes live on your client's hosting, with handover documentation.</li>
-  <li><strong>Ongoing:</strong> optional maintenance and updates, still under your brand.</li>
+  <li><strong>Brief and NDA.</strong> You send the designs (Figma, XD or PDF), the content or a note on who provides it, functionality notes and the deadline. The partner signs your NDA before client details are shared.</li>
+  <li><strong>Questions, then a quote.</strong> A good partner asks questions before quoting, then confirms the scope, timeline, revision rounds and price in writing, so you can quote your client with a margin.</li>
+  <li><strong>Build on staging.</strong> The site is built on a staging copy kept out of search engines, at an address you can share with your client under your brand.</li>
+  <li><strong>Progress updates.</strong> Regular written updates with staging links, what's next and any questions or blockers, so your account manager always knows where things stand.</li>
+  <li><strong>Partner QA, then yours.</strong> The partner tests before your team reviews, and feedback goes back as one consolidated list per round.</li>
+  <li><strong>Client review and revisions,</strong> run by your agency, with agreed changes passed to the partner.</li>
+  <li><strong>Launch and handover.</strong> The site goes live on your client's hosting, with a handover note in your branding and logins in your or your client's name.</li>
+  <li><strong>Ongoing care,</strong> if you sell it: updates, backups and small changes, still under your brand.</li>
 </ol>
+<p>Incomplete briefs cause most of the back-and-forth; the <a href="/blog/agency-developer-handoff-checklist/">agency handoff checklist</a> lists what to send.</p>
 
 <p>Smooth projects start with a clean design file; share the <a href="/blog/figma-to-wordpress-designer-guide/">Figma to WordPress handoff guide</a> with your designers.</p>
 
 <h2>Pricing models</h2>
+<table>
+  <thead><tr><th>Model</th><th>How it works</th><th>Suits</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Fixed price per project</td><td>One price for an agreed scope</td><td>Builds with final designs and a clear brief</td><td>Changes outside the scope are quoted separately</td></tr>
+    <tr><td>Hourly or per task</td><td>Billed for the time spent</td><td>Small fixes and unpredictable changes</td><td>Harder to quote your client in advance</td></tr>
+    <tr><td>Retainer or support hours</td><td>A set amount of time each month</td><td>A steady flow of changes across several sites</td><td>What happens to unused hours</td></tr>
+    <tr><td>Per-site care plan</td><td>A monthly fee per client site for maintenance</td><td>Reselling maintenance as your own care plan</td><td>What counts as a "small change"</td></tr>
+  </tbody>
+</table>
+<p>Your margin is what you add on top of the partner's price for project management, design, client communication and the risk of extra revision rounds. Avoid choosing a partner on hourly rate alone: a cheaper build that needs more of your team's time to review and fix often costs more overall. For the maintenance side, see <a href="/blog/agency-wordpress-care-plans/">white-label WordPress care plans</a>.</p>
+
+<h2>NDAs, confidentiality and ownership</h2>
+<p>Put these in writing before the first project. An NDA covers the first point; the rest belong in your agreement with the partner:</p>
 <ul>
-  <li><strong>Fixed price per project:</strong> the most common. Easy to quote your client with a margin.</li>
-  <li><strong>Hourly:</strong> useful for small fixes and ongoing changes.</li>
-  <li><strong>Monthly retainer:</strong> a set number of hours or sites per month for agencies with steady volume.</li>
+  <li><strong>Confidentiality:</strong> your client's name, designs, data and business information stay private.</li>
+  <li><strong>No credits or branding:</strong> no "developed by" links, footer mentions or developer branding on the site, on staging or in handover documents.</li>
+  <li><strong>Non-solicitation:</strong> the partner doesn't approach your clients directly, during the project or after it.</li>
+  <li><strong>Ownership:</strong> the finished work passes to your agency or client on payment, and premium licences are bought in your or your client's name, so updates never depend on the partner.</li>
+  <li><strong>Access:</strong> hosting and admin accounts stay in your or your client's name, and the partner's logins can be removed at any time.</li>
+  <li><strong>Personal data:</strong> if the work touches customer data such as orders, agree what access the partner needs and which rules apply, such as India's DPDP Act, UK GDPR or your local equivalent.</li>
+</ul>
+<p>Contract wording varies by country, so have a lawyer check anything you're unsure about.</p>
+
+<h2>Communication across teams and time zones</h2>
+<ul>
+  <li><strong>One point of contact on each side,</strong> and one decision-maker for feedback, so instructions don't conflict.</li>
+  <li><strong>Your tools:</strong> a shared Slack channel, your project board or email, with one ticket per issue including the page URL, device and a screenshot.</li>
+  <li><strong>A written update rhythm,</strong> such as a note at the end of each working session with staging links, so work moves even when working hours barely overlap.</li>
+  <li><strong>Agreed response times</strong> for problems on live sites, not just for build work.</li>
+</ul>
+<p>Working with a partner in India from the UK, US or Australia? <a href="/blog/offshore-wordpress-developer-time-zones/">Working with an offshore developer across time zones</a> covers overlap hours and urgent fixes, and <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers contracts and red flags.</p>
+
+<h2>Quality control before your client sees anything</h2>
+<p>Two layers of QA work best. The partner checks the build against the design on desktop, tablet and real phones, tests every form and integration end to end, and checks speed and SEO basics. Then your team reviews it as your client would, spending its time on judgement calls rather than broken links. A shared checklist keeps both layers consistent; see the <a href="/blog/website-qa-checklist-before-launch-agencies/">website QA checklist for agencies</a>.</p>
+<p>Specialised builds need extra checks: payment gateways, shipping and test orders for stores, covered in <a href="/blog/white-label-woocommerce-development/">white-label WooCommerce development</a>, and editable layouts and global styles for page builder sites, covered in <a href="/blog/white-label-elementor-development/">white-label Elementor development</a>.</p>
+
+<h2>What a good handover includes</h2>
+<ul>
+  <li>The site live on your client's hosting, or ready for your team to launch.</li>
+  <li>Admin accounts, licences and hosting in your or your client's name.</li>
+  <li>A handover note with no developer branding: what was built, which plugins and templates control what, and how to edit common content.</li>
+  <li>A full backup taken at launch, and a short walkthrough video if you want one for your client.</li>
+  <li>A clear agreement on who handles support after launch, and how quickly.</li>
+</ul>
+
+<h2>Choosing a white-label partner</h2>
+<ul>
+  <li><strong>Live work:</strong> open their sites on your phone and ask what they personally built.</li>
+  <li><strong>Design accuracy:</strong> can they match your Figma files closely, including mobile layouts and hover states?</li>
+  <li><strong>Questions before quotes:</strong> sensible questions about your brief are a good sign; an instant quote with none is not.</li>
+  <li><strong>Clean, editable builds:</strong> global styles and templates your clients can edit without breaking the layout.</li>
+  <li><strong>Licensed software only:</strong> genuine premium plugins and themes, never nulled copies.</li>
+  <li><strong>A small trial project first,</strong> such as a landing page or a couple of templates, before trusting them with a major client.</li>
 </ul>
 
 <p>More on pricing models: <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly</a>.</p>
 
-<h2>How to choose a white-label partner</h2>
-<ul>
-  <li><strong>Portfolio of live sites</strong> built to a high standard</li>
-  <li><strong>Design accuracy:</strong> can they match your Figma designs closely?</li>
-  <li><strong>Communication:</strong> responsive, clear and in your working hours</li>
-  <li><strong>Confidentiality:</strong> willing to sign an NDA and never contact your clients</li>
-  <li><strong>Technical quality:</strong> fast, mobile-friendly, SEO-ready builds your clients can edit</li>
-  <li><strong>Reliability:</strong> realistic timelines, met consistently</li>
-</ul>
-<p>Start with a small trial project before handing over bigger ones.</p>
+<h2>FAQs</h2>
+<h3>What is white-label WordPress development?</h3>
+<p>It's when a developer or studio builds WordPress websites for an agency, which sells them to its clients under its own brand. The client deals only with the agency, and the developer works behind the scenes under an NDA, with no credits on the site.</p>
+<h3>How much does white-label WordPress development cost?</h3>
+<p>It depends on the scope: the number of unique templates, features such as WooCommerce or integrations, and how final the designs are. Most partners quote a fixed price per project after reviewing the brief, with hourly or retainer arrangements for ongoing changes.</p>
+<h3>Is white-label web development ethical?</h3>
+<p>Yes. It's a common, long-standing arrangement, and your agency stays responsible for the result and the client relationship, as with any subcontracted work. Don't misrepresent what you deliver, and keep contracts clear about ownership and confidentiality.</p>
+<h3>Will my client know I use a white-label developer?</h3>
+<p>Not unless you tell them. A proper partner adds no credits, contacts your client only if you ask, and joins client calls as part of your team. Some agencies are open about using specialist partners, and that works too.</p>
+<h3>Who owns the website and the code?</h3>
+<p>That should be agreed in writing. Usually ownership passes to the agency or its client once the work is paid for, with hosting, licences and admin accounts in the agency's or client's name from the start.</p>
+<h3>How do I find a reliable white-label WordPress partner?</h3>
+<p>Look at live sites they built, judge their communication before you pay, confirm they'll sign your NDA and work in your tools, and start with a small trial project before handing over a major client.</p>
 
-<p>If the partner you choose is in India, read how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a> for the practical side, from NDAs and time zones to choosing the right partner.</p>
-
-<h2>Keeping quality high</h2>
-<ul>
-  <li>Use a checklist for each launch: responsive checks, forms, speed, SEO basics, browser testing</li>
-  <li>Keep design systems (fonts, colours, spacing) consistent across Figma and WordPress</li>
-  <li>Agree on revision rounds and turnaround times upfront</li>
-  <li>Keep access and credentials organised and secure</li>
-</ul>
-
-<p>Before any client review, run your own QA pass on the staging build; this <a href="/blog/website-qa-checklist-before-launch-agencies/">website QA checklist for agencies</a> covers what to check and how to log issues.</p>
-
-<h2>Is white-label right for your agency?</h2>
-<p>If you regularly turn down or delay website projects, or your team spends more time building than selling and strategising, white-label development can help you grow without the overhead of new hires. Learn how I work with agencies on <a href="/wordpress-developer-for-agencies/">white-label WordPress development</a>, or see examples of agency websites like <a href="/work/streak-creative/">Streak Creative</a> and <a href="/work/third-eye-social/">Third Eye Social</a>.</p>
+<p>Want to try a partner on your next brief? I take on white-label WordPress and Elementor work under NDA, with fixed quotes, staging builds and handover notes in your branding. See <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a> for how it works, and start with a small test project.</p>
 `,
   },
   {
@@ -4120,65 +4325,115 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'contact-form-not-getting-enquiries',
-    seoTitle: 'Website Contact Form Not Getting Enquiries? Fix It',
-    title: 'Why Your Website Contact Form Isn\'t Getting Enquiries (and How to Fix It)',
-    description: 'Contact form not getting enquiries? Why forms fail, from broken email delivery and spam filters to too many fields, with fixes that bring leads back.',
+    seoTitle: 'Website Contact Form Not Getting Enquiries? How to Fix It',
+    title: 'Why Your Website Contact Form Isn\'t Getting Enquiries: Broken, Blocked or Ignored?',
+    description: 'Contact form not getting enquiries? Find out if it is broken, blocked by spam filters or ignored by visitors, then fix email delivery, spam checks and design.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Growth',
     related: ['wordpress-maintenance', 'landing-page-design', 'website-redesign'],
     body: `
-<p>If your website gets visitors but your inbox stays empty, the contact form is a common culprit. Sometimes it's technically broken; sometimes it just isn't persuading people to use it. Here's how to diagnose and fix both.</p>
+<p>When a website contact form isn't getting enquiries, it's one of three problems: the form is broken (submissions fail or the emails never arrive), it's blocked (spam protection or filters stop real people or their messages), or it's ignored (visitors don't trust it, can't find it or find it too much effort). Start by submitting the form yourself and checking the email arrives in the right inbox. That one test tells you which problem you have.</p>
+<p>A form that silently stops sending is one of the most expensive problems a business website can have, because nothing looks wrong. When I build a site, every form is tested to make sure the emails arrive before launch; see <a href="/wordpress-website-development/">WordPress website development</a>. If you're sending ad traffic to a page and want a form built to convert, see <a href="/landing-page-design/">landing page design</a>.</p>
 
-<h2>First: is the form actually working?</h2>
-<p>Fill in your own form right now and check whether the email arrives. You'd be surprised how many businesses discover their form has been silently failing for months.</p>
+<h2>First: test your form properly</h2>
+<ol>
+  <li>Open your site in a private window on your phone, using mobile data.</li>
+  <li>Fill in the form as a customer would, with a personal email address that isn't the one receiving enquiries.</li>
+  <li>Check whether a success message or thank-you page appears.</li>
+  <li>Check the receiving inbox, including spam, promotions and any filters, within a few minutes.</li>
+  <li>Check your form plugin's stored entries, if it keeps them, to see whether the submission was recorded.</li>
+</ol>
+<table>
+  <thead><tr><th>What happened</th><th>What it means</th><th>Section to read</th></tr></thead>
+  <tbody>
+    <tr><td>An error, an endless spinner or nothing at all</td><td>The form itself is failing</td><td>Submissions failing</td></tr>
+    <tr><td>Success message and a stored entry, but no email</td><td>An email delivery problem</td><td>Emails not arriving</td></tr>
+    <tr><td>The email arrives in spam</td><td>Sending isn't authenticated, or the From address is wrong</td><td>Emails not arriving</td></tr>
+    <tr><td>Works for you, but customers say it failed</td><td>Spam protection, mobile or validation problems</td><td>Spam protection, mobile and validation</td></tr>
+    <tr><td>Everything works, still no enquiries</td><td>Visitors aren't choosing to use it</td><td>Why people don't fill it in</td></tr>
+  </tbody>
+</table>
 
-<h2>Technical reasons forms fail</h2>
-<h3>1. Emails aren't being delivered</h3>
-<p>Many WordPress sites send form emails using the server's basic mail function, which is often blocked or sent to spam. Use an authenticated sending method (SMTP or a transactional email service) and set up SPF and DKIM records for your domain.</p>
-<h3>2. Emails go to spam or an old address</h3>
-<p>Check spam folders, and confirm the form sends to an inbox someone actually reads.</p>
-<h3>3. A plugin or update broke it</h3>
-<p>Updates can break forms. Test forms after every update; see the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>.</p>
-<h3>4. Over-aggressive spam protection</h3>
-<p>Some anti-spam tools block real people too. Use invisible methods (honeypot fields, time checks) or friendly checks rather than hard puzzles.</p>
-
-<p>Getting lots of junk instead? See <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a>, and make sure your domain email is authenticated: <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
-
-<h2>Persuasion reasons people don't fill it in</h2>
-<h3>5. Too many fields</h3>
-<p>Every extra field reduces submissions. Ask only for what you need to reply: often name, phone or email, and a short message.</p>
-<h3>6. The form is hard to find</h3>
-<p>If it's only on a contact page, many visitors never see it. Add a short form or call to action to service pages and the end of articles.</p>
-<h3>7. No reason to trust you</h3>
-<p>Testimonials, client logos and a clear promise ("I'll reply within 24 hours") near the form make people comfortable sharing details.</p>
-<h3>8. Mobile problems</h3>
-<p>Tiny fields, wrong keyboards for phone numbers, or a submit button hidden behind a chat widget all stop mobile visitors.</p>
-<h3>9. No alternative</h3>
-<p>Some people prefer WhatsApp or a call. Offer both next to the form; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
-
-<p>For more ways to turn visitors into leads, see <a href="/blog/get-more-enquiries-from-your-website/">12 ways to get more enquiries from your website</a>.</p>
-
-<h2>Make sure you never miss a lead</h2>
+<h2>Submissions failing: errors, spinners and dead buttons</h2>
 <ul>
-  <li>Send enquiries to email and a backup channel (WhatsApp or a Google Sheet)</li>
-  <li>Show a clear thank-you message so people know it worked</li>
-  <li>Track submissions in Google Analytics to spot sudden drops</li>
-  <li>Reply fast, because the first business to respond often wins</li>
+  <li><strong>A plugin or theme update broke it.</strong> Check whether the problem started after an update, and test with other plugins switched off on a staging copy.</li>
+  <li><strong>JavaScript errors.</strong> Open the browser console (F12) while submitting. A script delayed or combined by an optimisation plugin often stops the form's own scripts from running.</li>
+  <li><strong>Page caching and security tokens.</strong> Some form plugins add a security token to the page that expires after a while. If your cache serves an old copy for days, submissions can fail with a vague error. Exclude the contact page from the cache or shorten the cache lifetime.</li>
+  <li><strong>A firewall blocking the request.</strong> A security plugin, host firewall or Cloudflare rule can block form submissions, especially messages that contain links. Check its logs.</li>
+  <li><strong>Broken spam protection.</strong> A reCAPTCHA key registered for another domain, or v2 keys where v3 is expected, stops every submission; see <a href="/blog/recaptcha-not-working-wordpress/">reCAPTCHA not working on WordPress</a>.</li>
 </ul>
+
+<h2>Emails not arriving, or landing in spam</h2>
+<p>This is where most broken forms fail. By default, WordPress sends email through the server's PHP mail function, with no authentication. Gmail, Outlook and Zoho treat that kind of mail with suspicion, so it goes to spam or is quietly rejected.</p>
+<h3>Send through SMTP</h3>
+<p>Install an SMTP plugin such as WP Mail SMTP, FluentSMTP or Post SMTP and connect it to a proper mailbox or sending service: Google Workspace, Zoho Mail, your host's email, or a transactional service such as Brevo. Then send a test email from the plugin's tools page. <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails? Fix it with SMTP</a> walks through the setup.</p>
+<h3>Fix the From address</h3>
+<p>Many forms are set to send "from" the visitor's own email address. That looks logical, but it fails email authentication, because your server isn't allowed to send as gmail.com or someone else's company domain. Send from an address on your own domain, such as enquiries@yourdomain.com, and put the visitor's email in Reply-To, so clicking reply still reaches them. In Contact Form 7, that means the Mail tab's From field and a Reply-To line under Additional headers:</p>
+<pre><code>From: [_site_title] &lt;enquiries@yourdomain.com&gt;
+Additional headers: Reply-To: [your-email]</code></pre>
+<h3>Check SPF, DKIM and DMARC</h3>
+<p>Your domain's DNS should have an SPF record that includes whoever sends your mail, DKIM signing for that sender, and a DMARC record on top. Without them, more of your messages land in spam. See <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
+<h3>Check where it's going</h3>
+<ul>
+  <li><strong>Is the recipient address current?</strong> Forms often still send to an ex-employee, a previous developer or an address at a domain that has lapsed.</li>
+  <li><strong>Filters and forwarding:</strong> check for Gmail filters or forwarding rules that archive or redirect the messages.</li>
+  <li><strong>Email logging:</strong> FluentSMTP logs every email it sends, and WP Mail SMTP offers logging on its paid plans at the time of writing, so you can see whether WordPress sent each message.</li>
+</ul>
+<h3>Store every submission</h3>
+<p>Don't let email be the only copy. Most form plugins can save entries in the dashboard: Contact Form 7 with the Flamingo plugin, Elementor Pro's Collect Submissions action, and the entries screens in Fluent Forms, Gravity Forms and paid WPForms plans. A connection to a Google Sheet or your CRM adds a second copy.</p>
+
+<h2>Spam protection, mobile and validation problems</h2>
+<p>When the form works for you but customers say it failed, something is stopping real people:</p>
+<ul>
+  <li><strong>Puzzle CAPTCHAs</strong> that ask visitors to pick out traffic lights put some genuine people off, especially on phones.</li>
+  <li><strong>reCAPTCHA v3 scores</strong> set too strictly can reject real visitors as bots, and on some cookie consent setups the script doesn't load for visitors who decline cookies.</li>
+  <li><strong>Keyword and link filters</strong> in anti-spam plugins sometimes flag ordinary messages.</li>
+  <li><strong>Phone validation</strong> that rejects +91, spaces or a leading zero. Accept the formats Indian visitors actually type, and use a phone field so mobiles show the number keypad.</li>
+  <li><strong>A hidden submit button</strong> behind a cookie banner, chat widget or WhatsApp button on small screens.</li>
+  <li><strong>Error messages</strong> that only appear at the top of a long form, so visitors never see what went wrong.</li>
+  <li><strong>Required fields people can't answer,</strong> such as a company name for a household customer or a budget they haven't decided yet.</li>
+</ul>
+<p>Lighter spam protection usually works better: a hidden honeypot field, a time check that drops anything submitted within a few seconds of the page loading, and Cloudflare Turnstile, which is free and usually invisible to visitors. The contact form on this site uses a honeypot, a simple addition question and a three-second time check, with no reCAPTCHA at all. <a href="/blog/stop-contact-form-spam/">How to stop contact form spam</a> covers each method.</p>
+
+<h2>Why people don't fill it in</h2>
+<p>If the form works perfectly and enquiries are still low, the problem is persuasion:</p>
+<ul>
+  <li><strong>Too many fields.</strong> Ask only what you need to reply: often a name, phone or email and a short message. A dropdown for the service, like the one on the <a href="/work/vansh-group/">Vansh Group</a> site I built, gives you context without extra typing, so enquiries arrive pre-qualified.</li>
+  <li><strong>Hard to find.</strong> If the form lives only on the contact page, many visitors never see it. Put a short form or a clear button on every service page and at the end of key articles.</li>
+  <li><strong>No reason to trust you.</strong> Testimonials, client logos, a real address and a clear promise such as "we reply within one working day" next to the form make people comfortable sharing their details.</li>
+  <li><strong>No alternative.</strong> Many Indian customers would rather WhatsApp or call. Offer both next to the form, with tap-to-call on mobile.</li>
+  <li><strong>A vague button.</strong> "Submit" says nothing. "Get my quote" or "Request a call back" says what happens next.</li>
+</ul>
+<p>The page around the form matters as much as the form itself: <a href="/blog/contact-page-that-gets-enquiries/">designing a contact page that gets enquiries</a> covers layout, and <a href="/blog/get-more-enquiries-from-your-website/">ways to get more enquiries from your website</a> covers the rest of the site.</p>
+
+<h2>Make sure you never miss an enquiry again</h2>
+<ul>
+  <li>Send each enquiry to email and a second place, such as a Google Sheet, your CRM or WhatsApp.</li>
+  <li>Show a clear thank-you message or page, so people know it worked and you can track conversions.</li>
+  <li>Track successful submissions as a key event in Google Analytics, so a sudden drop to zero is obvious.</li>
+  <li>Test the form after every plugin, theme or WordPress update, and once a month regardless.</li>
+  <li>Reply quickly: the first business to respond often wins the job.</li>
+</ul>
+<p>The form on this site is built around that idea: a serverless function emails each enquiry, then the browser opens WhatsApp with the same details already typed in, so if the email step ever fails, the enquiry still reaches me.</p>
 
 <p>And confirm every submission properly with a <a href="/blog/thank-you-pages-forms/">thank-you page</a>.</p>
 
-<h2>Quick fix checklist</h2>
-<ol>
-  <li>Test the form yourself today</li>
-  <li>Set up authenticated email sending</li>
-  <li>Cut fields to the essentials</li>
-  <li>Add WhatsApp and phone next to the form</li>
-  <li>Place calls to action on every key page</li>
-  <li>Test again after every update</li>
-</ol>
+<h2>FAQs</h2>
+<h3>Why am I not receiving emails from my website contact form?</h3>
+<p>Usually because WordPress is sending through the server's unauthenticated mail function, so messages are rejected or filtered as spam. Set up SMTP with a mailbox on your domain, send from your own address with the visitor in Reply-To, and check your SPF and DKIM records.</p>
+<h3>Why does my form say "message sent" but no email arrives?</h3>
+<p>The form worked; the email delivery didn't. Check the spam folder and the recipient address, look at the plugin's stored entries to confirm the submission, and set up SMTP with email logging to see what happens to each message.</p>
+<h3>Why do my contact form emails go to spam?</h3>
+<p>Most often the From address is the visitor's email, or the mail isn't authenticated with SPF and DKIM. Send from an address on your own domain through SMTP, and add the visitor's email as Reply-To.</p>
+<h3>How do I test if my contact form is working?</h3>
+<p>Submit it yourself from a phone on mobile data, using an email address other than the one that receives enquiries, then check the inbox, the spam folder and the form's stored entries. Repeat after every update and at least once a month.</p>
+<h3>Does reCAPTCHA stop real people from sending enquiries?</h3>
+<p>It can. Puzzle challenges put some visitors off, strict v3 scores can reject real people, and the script may not load for visitors who decline cookies on some setups. A honeypot, a time check or Cloudflare Turnstile is often enough.</p>
+<h3>My form works, so why is my website not getting enquiries?</h3>
+<p>Then visitors aren't being persuaded, or there aren't enough of the right ones. Check your traffic in Analytics first, then shorten the form, add WhatsApp and phone, show proof and a reply time near it, and put calls to action on every service page.</p>
 
-<p>Broken forms are one of the most expensive silent problems a business site can have. A <a href="/wordpress-maintenance/">maintenance plan</a> includes regular form checks so it can't happen unnoticed.</p>
+<p>Not sure whether your form is broken, blocked or simply ignored? I can test it end to end, fix email delivery and spam protection, and check it after every update so it can't fail silently again. Form checks after updates are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and if the page around the form needs rethinking, see <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -4633,66 +4888,160 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'portfolio-website-freelancers-creatives',
-    seoTitle: 'Portfolio Websites for Freelancers & Creatives',
-    title: 'Portfolio Websites for Freelancers, Photographers and Creatives',
-    description: 'Build a portfolio website that wins clients as a freelancer, photographer or designer: curation, case studies, services, pricing signals and SEO.',
+    seoTitle: 'Portfolio Websites for Freelancers & Creatives That Win Work',
+    title: 'Portfolio Websites for Freelancers, Photographers and Creatives: What to Include and How to Win Clients',
+    description: 'How to build a portfolio website as a freelancer, photographer or designer: what to include, curating work, case studies, pricing signals, speed and SEO.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Growth',
     related: ['wordpress-website-development', 'figma-to-wordpress', 'wordpress-speed-optimization'],
     body: `
-<p>For freelancers and creatives, a portfolio website does what a shop window does for a store: it shows what you can do and invites the right people in. Social media profiles are useful, but a website you own is where serious clients check you out.</p>
+<p>A good portfolio website shows a small selection of your best work, explains how you approached it, says clearly who you work with and what you offer, and makes it easy to get in touch. For freelancers, photographers, designers and other creatives, it's the one place online you control completely, and usually where a serious client goes after seeing your work on Instagram, Behance or LinkedIn.</p>
+<p>Below is what to include, how to curate and present your work, the extra needs of different creative fields, and how to get found. I build portfolio and personal brand sites on WordPress; see <a href="/wordpress-website-development/">WordPress website development</a>, or bring your own design with <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+
+<h2>Do you need a portfolio website if you're on Behance or Instagram?</h2>
+<p>Platforms are good for being discovered. A website is better for being hired:</p>
+<table>
+  <thead><tr><th></th><th>Social and portfolio platforms</th><th>Your own portfolio website</th></tr></thead>
+  <tbody>
+    <tr><td>Discovery</td><td>Strong inside the platform</td><td>Through Google, referrals and your profiles</td></tr>
+    <tr><td>Control over layout and story</td><td>Limited to the platform's format</td><td>Complete</td></tr>
+    <tr><td>Explaining services and process</td><td>A short bio</td><td>Pages for each service, your process and FAQs</td></tr>
+    <tr><td>Competitors shown next to you</td><td>Often, in feeds and suggestions</td><td>None</td></tr>
+    <tr><td>If rules or algorithms change</td><td>Your reach can drop overnight</td><td>Your site and domain stay yours</td></tr>
+    <tr><td>Professional email and domain</td><td>No</td><td>Yes, such as hello@yourname.com</td></tr>
+  </tbody>
+</table>
+<p>Use both: post work on platforms, and link every profile back to your site, where the enquiry happens.</p>
+
+<h2>Pages a portfolio website needs</h2>
+<table>
+  <thead><tr><th>Page</th><th>What it does</th><th>Tip</th></tr></thead>
+  <tbody>
+    <tr><td>Home</td><td>Says who you are, what you do and for whom, with your best work visible straight away</td><td>"Wedding photographer in Jaipur" beats "Welcome to my portfolio"</td></tr>
+    <tr><td>Work or portfolio</td><td>A curated grid of projects, grouped by type</td><td>Each item opens a project page, not just a bigger image</td></tr>
+    <tr><td>Case studies</td><td>The story behind your key projects</td><td>Brief, approach, result and the client's words</td></tr>
+    <tr><td>Services</td><td>What you offer, who it's for and how a project works</td><td>A separate page for each main service if you offer several</td></tr>
+    <tr><td>About</td><td>Who you are and why clients can trust you</td><td>A real photo, your background and how you work</td></tr>
+    <tr><td>Contact</td><td>The enquiry form, WhatsApp and email</td><td>Ask for project type, budget range and timeline</td></tr>
+    <tr><td>Optional: blog, testimonials, pricing</td><td>Depth, proof and expectations</td><td>Add them when you have something real to put there</td></tr>
+  </tbody>
+</table>
 
 <h2>Curate ruthlessly</h2>
 <ul>
-  <li>Show your best 6–12 pieces, not everything you've ever made</li>
-  <li>Feature the kind of work you want more of</li>
-  <li>Group work by type (branding, weddings, product photography, web design)</li>
+  <li><strong>Show your best 6 to 12 pieces,</strong> not everything you've ever made. Weak work drags strong work down.</li>
+  <li><strong>Feature the work you want more of.</strong> If you want branding projects, lead with branding, even if most of your income today comes from social media posts.</li>
+  <li><strong>Group work by type,</strong> such as branding, packaging, weddings, product photography or web design, so visitors find what's relevant to them.</li>
+  <li><strong>Refresh it regularly.</strong> Swap older pieces out when better ones come along, and remove work that no longer represents you.</li>
 </ul>
 
 <h2>Show your thinking with case studies</h2>
-<p>Clients hire people who solve problems. For key projects, explain the brief, your process, the result, and the client's feedback. This site's <a href="/work/">case studies</a> follow that pattern: client, goals, what was built and the tools used.</p>
-
-<p>See <a href="/blog/write-case-studies-business-website/">how to write case studies</a> for a simple structure.</p>
+<p>Clients hire people who solve problems, not just people who make nice things. For your three or four key projects, write a short case study:</p>
+<ol>
+  <li><strong>The client and the brief:</strong> who they are and what they needed.</li>
+  <li><strong>Constraints:</strong> budget, deadline, brand guidelines and audience.</li>
+  <li><strong>Your approach:</strong> the options you explored and why you chose one.</li>
+  <li><strong>The result:</strong> the final work, and what changed for the client, in their words where possible.</li>
+</ol>
+<p>My own <a href="/work/">case studies</a> follow a similar pattern: the client, their goals, what was built and the tools used. See <a href="/blog/write-case-studies-business-website/">how to write case studies</a> for a simple structure, and only share client names and results you have permission to use.</p>
 
 <h2>Make it clear what you offer</h2>
 <ul>
-  <li>A services section: what you do, who it's for, and how a project works</li>
-  <li>Pricing signals such as "projects start from" or package options. This filters out poor-fit enquiries.</li>
-  <li>Availability and turnaround times</li>
+  <li><strong>A services section</strong> explaining what you do, who it's for and the steps of a project.</li>
+  <li><strong>Pricing signals,</strong> such as "projects usually start from" or package options, which filter out poor-fit enquiries before they reach you.</li>
+  <li><strong>Availability and typical turnaround,</strong> so clients with a deadline know whether to ask.</li>
+  <li><strong>Who you work with:</strong> industries, locations, or agencies and studios if you also take white-label work.</li>
 </ul>
 
 <p>Writers and video creators: see <a href="/blog/website-for-authors-content-creators/">websites for authors and content creators</a>.</p>
 
 <h2>Build trust</h2>
 <ul>
-  <li>An about page with a real photo and your story</li>
-  <li>Client logos and testimonials (with permission)</li>
-  <li>Links to your profiles on LinkedIn, Behance, Dribbble or Instagram</li>
+  <li>An about page with a real photo of you and a short story of how you got here</li>
+  <li>Client logos and named testimonials, used with permission</li>
+  <li>Links to your LinkedIn, Behance, Dribbble or Instagram profiles</li>
+  <li>Your location or the regions you serve, and a professional email address on your own domain</li>
 </ul>
 
 <h2>Make contacting you easy</h2>
 <ul>
-  <li>A short enquiry form (name, project type, budget range, timeline)</li>
-  <li>WhatsApp and email</li>
-  <li>A clear call to action on every page</li>
+  <li>A short enquiry form asking for a name, contact details, project type, budget range and timeline</li>
+  <li>WhatsApp and email alongside the form, since many clients would rather message</li>
+  <li>A clear call to action at the end of every project and case study page</li>
+  <li>A reply time you can keep, such as one working day</li>
 </ul>
+<p>This site is my own portfolio, and its form is built that way: it emails each enquiry, then opens WhatsApp with the same details filled in, and uses light spam checks instead of a CAPTCHA. The <a href="/work/samverse/">Samverse case study</a> explains how it works.</p>
 
-<p>Interior designers and architects have extra needs, such as project stories and process pages. See <a href="/blog/website-for-interior-designers-architects/">websites for interior designers and architects</a>.</p>
+<h2>What different creatives need</h2>
+<table>
+  <thead><tr><th>Field</th><th>What to add</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Photographers</td><td>Galleries by type of shoot, password-protected client galleries, packages</td><td>Huge image files slowing every page</td></tr>
+    <tr><td>Graphic and brand designers</td><td>Case studies with process, before and after, brand guidelines</td><td>Final mock-ups with no context</td></tr>
+    <tr><td>Web designers and developers</td><td>Links to live sites, what you personally did, the tools used</td><td>Claiming whole projects you only contributed to</td></tr>
+    <tr><td>Writers and content creators</td><td>Published clips with bylines, topics and formats, sample PDFs</td><td>Links to articles that have since been taken down</td></tr>
+    <tr><td>Video editors and animators</td><td>A short showreel near the top, project videos embedded from YouTube or Vimeo</td><td>Self-hosting large video files on your web hosting</td></tr>
+    <tr><td>Interior designers and architects</td><td>Project stories with photos, plans and the brief</td><td>Galleries with no explanation of the problem solved</td></tr>
+  </tbody>
+</table>
+<p>Photographers have <a href="/blog/website-for-photographers/">a full guide of their own</a>, and so do <a href="/blog/website-for-interior-designers-architects/">interior designers and architects</a>.</p>
 
-<h2>Photographers: speed matters</h2>
-<p>Image-heavy portfolios can be slow. Use properly sized, compressed images in modern formats, lazy-load galleries and choose good hosting. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>. For client galleries, use password-protected pages or a dedicated gallery tool.</p>
-
-<p>Event and wedding planners face the same challenge with large galleries (see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a>), and photographers have <a href="/blog/website-for-photographers/">a full guide of their own</a>.</p>
-
-<h2>Get found</h2>
+<h2>Keep an image-heavy portfolio fast</h2>
+<p>Portfolios are image-heavy by nature, and a gallery that crawls on a phone undoes the work you're showing. The essentials:</p>
 <ul>
-  <li>Target your niche and location: "wedding photographer in Jaipur", "Shopify designer for fashion brands"</li>
-  <li>Write short articles or behind-the-scenes posts about projects</li>
-  <li>Get listed on relevant directories and marketplaces, linking back to your site</li>
-  <li>Ask clients to credit or link to you where appropriate</li>
+  <li>Resize images to the largest size they're displayed at, rather than uploading straight from the camera.</li>
+  <li>Compress them and serve WebP, using an image optimisation plugin if your site runs on WordPress.</li>
+  <li>Lazy-load images further down the page, but not the first image visitors see.</li>
+  <li>Embed videos from YouTube or Vimeo, ideally showing a thumbnail until someone clicks play.</li>
+  <li>Choose decent hosting; the cheapest shared plans struggle with large galleries.</li>
+</ul>
+<p>See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a> for the details.</p>
+
+<h2>Protecting your work</h2>
+<p>Disabling right-click doesn't stop anyone determined, and it annoys genuine visitors. Upload images at web size rather than full resolution, add a subtle watermark if your field expects one, and keep your originals safe. For client work under an NDA, show it only with permission, or describe the project without naming the client or showing confidential material.</p>
+
+<h2>Get found by the right clients</h2>
+<ul>
+  <li><strong>Target your niche and location</strong> in titles and headings: "wedding photographer in Jaipur" or "Shopify designer for fashion brands" rather than "creative portfolio".</li>
+  <li><strong>Give each case study its own page</strong> with a descriptive title, so it can rank for the kind of project it shows.</li>
+  <li><strong>Name and describe images properly,</strong> with descriptive file names and alt text; see the <a href="/blog/image-seo-guide/">image SEO guide</a>.</li>
+  <li><strong>Set up a Google Business Profile</strong> if you serve clients locally, as most photographers and interior designers do.</li>
+  <li><strong>Write occasionally</strong> about projects, your process or questions clients often ask.</li>
+  <li><strong>Ask clients to credit or link to you</strong> where it's appropriate.</li>
 </ul>
 
-<p>A portfolio site you own keeps working when social algorithms change. See <a href="/wordpress-website-development/">WordPress website development</a>, or bring your own design with <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+<h2>Which platform to build it on</h2>
+<p>WordPress suits most freelancers who want to grow the site over time: portfolio themes and Elementor give you full control of the layout, you can add a blog, client galleries or a shop later, and you own everything. Hosted builders such as Squarespace or Wix are quicker to start with, but give you less control and are harder to move away from. My own site is a static, custom-coded build because I'm a developer and publish a lot of pages; for most creatives, that's more work than it's worth, because every update needs code.</p>
+
+<h2>A launch checklist for your portfolio</h2>
+<ul>
+  <li>Your best 6–12 pieces, grouped by type, with three or four written up as case studies</li>
+  <li>A headline that says what you do and for whom</li>
+  <li>Services, about and contact pages</li>
+  <li>An enquiry form, WhatsApp and email, tested on your phone</li>
+  <li>Images resized and compressed, and key pages tested on mobile data</li>
+  <li>Your own domain and a professional email address</li>
+  <li>Links to and from your social and portfolio profiles</li>
+</ul>
+
+<p>Event and wedding planners face the same challenge with large galleries; see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Do freelancers need a portfolio website?</h3>
+<p>If clients hire you for the quality of your work, yes. Platforms help people discover you, but a website you own lets you present your best work your way, explain your services and take enquiries without competitors shown alongside you.</p>
+<h3>How many projects should a portfolio include?</h3>
+<p>Usually 6 to 12 of your best pieces, grouped by type, with three or four written up as case studies. A few strong projects make a better impression than dozens of mixed ones.</p>
+<h3>What should a creative portfolio website include?</h3>
+<p>A clear headline, a curated work section, case studies, a services page, an about page with a real photo, testimonials and a contact page with a short form, WhatsApp and email.</p>
+<h3>Is WordPress good for a portfolio website?</h3>
+<p>Yes, especially if you want to add a blog, client galleries or a shop later. Portfolio themes and page builders like Elementor give you control of the layout, and you own the site and its content outright.</p>
+<h3>Can I show client work I did under an NDA?</h3>
+<p>Only with the client's permission. Otherwise, describe the type of project and your role without naming the client or showing confidential material, or create a similar self-initiated piece that shows the same skill.</p>
+<h3>How much does a portfolio website cost?</h3>
+<p>It depends on the number of pages, whether the design is custom, and features such as galleries or a shop. A portfolio is usually similar in size to a small business site, which my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts at ₹15,000 to ₹40,000 in India for a professional build.</p>
+
+<p>Want a portfolio site that wins the work you actually want? I can plan the pages, build it on WordPress so you can update it yourself, and keep the galleries fast on phones. See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/figma-to-wordpress/">Figma to WordPress</a> if you've designed it yourself.</p>
 `,
   },
   {
@@ -5372,51 +5721,124 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'why-elementor-sites-slow',
-    seoTitle: 'Why Elementor Sites Get Slow (and How to Fix Them)',
-    title: 'Why Elementor Sites Get Slow, and How to Fix Them',
-    description: 'Common reasons Elementor websites become slow, from too many widgets and nested containers to heavy add-ons and images, and practical fixes to speed them up.',
+    seoTitle: 'Why Is Elementor So Slow? How to Speed Up an Elementor Site',
+    title: 'Why Elementor Sites Get Slow, and How to Fix Them (Pages and the Editor)',
+    description: 'Why is Elementor so slow? The real causes, from nested containers and add-on packs to fonts and hosting, and the Elementor settings and fixes that speed it up.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Speed',
     related: ['elementor-developer', 'wordpress-speed-optimization', 'website-redesign'],
     body: `
-<p>Elementor makes WordPress pages easy to design, but it's also easy to build slow pages with it. The good news: most slow Elementor sites are slow because of how they were built, not because of Elementor itself. Here's what usually goes wrong and how to fix it.</p>
+<p>Elementor is usually slow because of how a site was built with it, not because of Elementor itself. The common causes are deeply nested sections and containers, several add-on packs loading scripts on every page, full-size images, animations everywhere, too many fonts and icon libraries, a heavy theme underneath and weak hosting. Most of these can be fixed without rebuilding the site or switching builders.</p>
+<p>All the client sites in my case studies are built with Elementor, on themes from Hello Elementor to Astra and OceanWP, so this is the toolset I spend my time building with and fixing. If you want it done for you, see <a href="/elementor-developer/">Elementor development</a> for builds and repairs, or <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> when hosting, caching and the database need work too.</p>
+<p>If the whole site is slow and you're not sure Elementor is to blame, start with the main guide, <a href="/blog/why-is-my-wordpress-site-slow/">why is my WordPress site slow?</a>, which covers hosting, plugins and every other cause.</p>
 
-<h2>Common causes</h2>
-<h3>1. Too many nested sections and containers</h3>
-<p>Every extra container adds HTML and CSS. Pages built with sections inside columns inside sections quickly become bloated. Using Flexbox containers and flatter structures reduces this significantly.</p>
-<h3>2. Heavy add-on packs</h3>
-<p>Installing several Elementor add-on plugins "just in case" loads extra scripts and styles on every page. Use one well-coded add-on at most, and only for widgets you actually use.</p>
-<h3>3. Unoptimized images</h3>
-<p>Background images and galleries uploaded at full resolution are a major cause of slow pages. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
-<h3>4. Animations everywhere</h3>
-<p>Entrance animations, parallax and motion effects on every section add scripts and can delay content appearing.</p>
-<h3>5. Too many fonts and icon libraries</h3>
-<p>Multiple Google Fonts, weights and icon packs add requests. Stick to one or two font families and only the weights you use.</p>
-<h3>6. A heavy theme underneath</h3>
-<p>Pairing Elementor with a bloated multipurpose theme doubles the work. A minimal theme like Hello Elementor is designed for this.</p>
+<h2>Is Elementor slow, or is it your site?</h2>
+<p>Elementor adds more HTML, CSS and JavaScript than a hand-coded theme or the block editor, and that overhead is real. But a lean Elementor page on decent hosting can load quickly and pass Core Web Vitals. When a page is slow, it's usually the build: what was added, how it was structured and what it runs on. Before changing anything, run your slowest page through PageSpeed Insights on mobile and note what it flags:</p>
+<ul>
+  <li><strong>Slow Largest Contentful Paint (LCP):</strong> often a large hero image or section background, or a slow server.</li>
+  <li><strong>A warning about DOM size:</strong> too many nested containers and widgets.</li>
+  <li><strong>Unused CSS or JavaScript:</strong> add-ons, icon libraries and widgets loading on every page.</li>
+  <li><strong>Long blocking time or poor INP:</strong> heavy scripts from sliders, animations and third-party widgets.</li>
+  <li><strong>Slow server response time:</strong> if this is the main problem, look at hosting and caching before Elementor.</li>
+</ul>
 
-<h2>How to fix a slow Elementor site</h2>
+<h2>Common causes and what they look like</h2>
+<table>
+  <thead><tr><th>Cause</th><th>What you notice</th><th>The fix</th></tr></thead>
+  <tbody>
+    <tr><td>Nested sections, columns and inner sections</td><td>DOM size warnings, slow rendering on phones</td><td>Rebuild with flat Flexbox containers</td></tr>
+    <tr><td>Several add-on packs</td><td>Unused CSS and JavaScript on every page</td><td>Keep one, and disable unused widgets in its settings</td></tr>
+    <tr><td>Full-size images and backgrounds</td><td>Slow LCP, heavy pages</td><td>Resize, compress, serve WebP, don't lazy-load the hero</td></tr>
+    <tr><td>Entrance animations, parallax, motion effects</td><td>Content appears late, scrolling feels sluggish</td><td>Keep a few meaningful ones</td></tr>
+    <tr><td>Many fonts, weights and icon libraries</td><td>Extra requests, text flashing or shifting</td><td>One or two families, inline SVG icons, local fonts</td></tr>
+    <tr><td>Sliders, carousels and video backgrounds</td><td>Heavy scripts at the top of the page, poor LCP and INP</td><td>A single hero image and one clear headline</td></tr>
+    <tr><td>A heavy multipurpose theme</td><td>Theme CSS and scripts loading on top of Elementor's</td><td>A lightweight theme such as Hello Elementor</td></tr>
+    <tr><td>Weak hosting, old PHP, no page cache</td><td>A long pause before anything appears</td><td>Better hosting, a current PHP version, page caching</td></tr>
+  </tbody>
+</table>
+
+<h3>Nested sections and containers</h3>
+<p>Older Elementor sites were built with sections, columns and inner sections, and every level adds wrapper elements. A page built as sections inside columns inside sections can end up with thousands of elements, which phones take longer to lay out. Flexbox containers do the same job with far fewer wrappers. Recent versions include a Convert option that turns an old section into a container, but check the result closely, because spacing and widths often need tidying afterwards.</p>
+
+<h3>Add-on packs</h3>
+<p>Two or three add-on plugins installed "just in case" is one of the most common things I find on slow Elementor sites. Many load their CSS and scripts on every page whether their widgets are used or not. Keep one well-coded pack at most, and use its widget manager to switch off everything you don't use. Elementor has its own Element Manager in the dashboard menu, where you can disable unused core and Pro widgets too.</p>
+
+<h3>Images and backgrounds</h3>
+<p>Background images on sections and containers are easy to upload at full camera size and forget. Resize each image to the largest size it's shown at, compress it and serve WebP. Don't lazy-load the main hero image, because that delays LCP; lazy-load what sits further down the page. See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
+
+<h3>Fonts and icons</h3>
+<p>Every Google Font family and weight is another file to download. Pick one or two families and only the weights the design uses, set them as global fonts, and avoid styling individual widgets with a different font. Icon libraries are similar: loading a whole icon font to show five icons is wasteful, which is what Elementor's inline font icons setting addresses.</p>
+
+<h3>Animations, sliders and video backgrounds</h3>
+<p>Entrance animations keep content hidden until scripts run, which can delay what visitors see. Sliders and carousels load extra scripts and often several large images at the top of the page. A single strong hero image with a clear headline is faster, and usually clearer for visitors than a five-slide carousel.</p>
+
+<h3>The theme and hosting underneath</h3>
+<p>Elementor on top of a heavy multipurpose theme means two frameworks loading their own CSS and scripts. A minimal theme such as Hello Elementor, Astra or GeneratePress leaves the layout to Elementor; see <a href="/blog/best-theme-for-elementor/">choosing the best theme for Elementor</a>. And no front-end tuning fixes a server that takes a second or more to respond: that's hosting, PHP version and page caching.</p>
+
+<h2>Elementor's performance settings</h2>
+<p>Elementor ships with settings that cut what it loads. Names and locations change between versions; at the time of writing, most sit under Elementor &gt; Settings &gt; Performance, with newer options under the Features tab. Turn them on one at a time and check your key pages after each:</p>
+<ul>
+  <li><strong>CSS print method:</strong> external files are the usual choice, because browsers and caches can reuse them across pages.</li>
+  <li><strong>Optimized image loading and lazy-loaded background images:</strong> improve how images, including container backgrounds, are loaded.</li>
+  <li><strong>Improved asset loading and improved CSS loading:</strong> load each widget's scripts and styles only on pages that use it. On many recent versions these are already active.</li>
+  <li><strong>Inline font icons:</strong> shows icons as inline SVG instead of loading whole icon font libraries.</li>
+  <li><strong>Load Google Fonts locally:</strong> serves fonts from your own server instead of Google's, saving a connection to another server.</li>
+  <li><strong>Element caching:</strong> stores the rendered output of elements so pages are built faster. Test it carefully on pages with forms, loops and other dynamic content.</li>
+</ul>
+<p>After changing settings, use Elementor &gt; Tools &gt; Regenerate Files &amp; Data, then clear your caches.</p>
+
+<h2>Caching and optimisation plugins with Elementor</h2>
+<p>Page caching, such as LiteSpeed Cache on LiteSpeed hosts like Hostinger or WP Rocket elsewhere, makes the biggest difference to how quickly pages arrive. The aggressive options need care on Elementor sites:</p>
+<ul>
+  <li><strong>Delaying or deferring JavaScript</strong> can break menus, popups, sliders and forms if Elementor's own scripts are delayed. Test every interactive element after enabling it, and exclude the scripts that break.</li>
+  <li><strong>Removing unused CSS</strong> can strip styles that only apply when a visitor opens a menu, tab or popup. Check mobile menus, tabs and accordions.</li>
+  <li><strong>One caching plugin only.</strong> Two page caches, or minification in two places, cause conflicts rather than speed.</li>
+</ul>
+<p>See <a href="/blog/reduce-unused-css-javascript-wordpress/">reducing unused CSS and JavaScript</a> for what's worth chasing and what isn't.</p>
+
+<h2>A step-by-step plan to speed up an Elementor site</h2>
 <ol>
-  <li><strong>Enable Elementor's performance features</strong> (optimized asset loading, lazy loading options, improved CSS loading), testing after each change</li>
-  <li><strong>Rebuild heavy sections</strong> with Flexbox containers and fewer widgets</li>
-  <li><strong>Set global colours and fonts</strong> instead of styling each widget individually</li>
-  <li><strong>Remove unused add-ons and widgets</strong></li>
-  <li><strong>Compress images and use WebP</strong></li>
-  <li><strong>Use caching</strong> and good hosting</li>
-  <li><strong>Limit animations</strong> to a few meaningful places</li>
+  <li><strong>Back up,</strong> and work on a staging copy if your host offers one.</li>
+  <li><strong>Measure</strong> the homepage and your two or three most important pages in PageSpeed Insights on mobile.</li>
+  <li><strong>Fix the hosting basics:</strong> a current PHP version, page caching on and enough memory. Elementor &gt; System Info shows your PHP version and memory limit.</li>
+  <li><strong>Remove unused add-ons and widgets,</strong> and disable unused widgets in the Element Manager.</li>
+  <li><strong>Turn on the performance settings</strong> one at a time.</li>
+  <li><strong>Optimise images,</strong> starting with the hero and section backgrounds.</li>
+  <li><strong>Set global fonts and colours,</strong> and trim font families and weights.</li>
+  <li><strong>Rebuild the heaviest sections</strong> with flat containers and fewer widgets.</li>
+  <li><strong>Cut animations, sliders and video backgrounds</strong> near the top of the page.</li>
+  <li><strong>Re-test</strong> the same pages and compare against your starting figures.</li>
 </ol>
 
-<p>Editor not loading at all? See <a href="/blog/elementor-not-loading-fix/">Elementor stuck on loading</a>.</p>
-
-<h2>Measure before and after</h2>
-<p>Test key pages on PageSpeed Insights and look at Core Web Vitals, especially LCP and INP. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
-
-<p>Your theme matters too; see <a href="/blog/best-theme-for-elementor/">choosing a lightweight theme for Elementor</a>.</p>
+<h2>When the Elementor editor is slow</h2>
+<p>A slow editor is a different problem from slow pages, because the editor is never cached. The usual causes:</p>
+<ul>
+  <li><strong>Very long pages</strong> with hundreds of widgets. Split them, or turn repeating blocks into templates.</li>
+  <li><strong>Low PHP memory or weak hosting.</strong> Check Elementor &gt; System Info and ask your host whether you're hitting resource limits.</li>
+  <li><strong>Plugins loading code into the editor.</strong> Elementor &gt; Tools has a Safe Mode that loads the editor without other plugins or your theme, which quickly shows whether one of them is to blame.</li>
+  <li><strong>Browser extensions</strong> such as ad blockers and password managers; try a private window.</li>
+</ul>
+<p>If the editor won't load at all, see <a href="/blog/elementor-not-loading-fix/">Elementor stuck on loading</a>, and if the whole dashboard is slow, <a href="/blog/wordpress-admin-slow/">why the WordPress admin is slow</a>.</p>
 
 <h2>Should you switch away from Elementor?</h2>
-<p>Usually not. A well-built Elementor site on good hosting can perform well, and your team keeps easy editing. Switching makes sense only if the site is extremely heavy and a rebuild is needed anyway. See <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>.</p>
+<p>Usually not. Your team keeps easy drag-and-drop editing, and most of the fixes above work on the existing site. A rebuild makes sense when the site is so heavy that fixing it would cost more than starting again, or when it's being redesigned anyway. Even then, a clean Elementor rebuild with containers and global styles is often the right answer; the block editor or a custom theme suits sites with strict performance targets or locked-down editing. See <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>.</p>
 
-<p>Need your Elementor site sped up or rebuilt cleanly? See <a href="/elementor-developer/">Elementor development</a> and <a href="/wordpress-speed-optimization/">speed optimization</a>.</p>
+<h2>FAQs</h2>
+<h3>Why is Elementor so slow?</h3>
+<p>Usually because of how the site was built: nested containers, add-on packs, full-size images, animations and too many fonts, often on a heavy theme and basic hosting. Elementor adds some overhead of its own, but a lean Elementor page on good hosting can load quickly.</p>
+<h3>Is Elementor slower than Gutenberg?</h3>
+<p>Out of the box, yes: the block editor outputs less code. In practice the gap depends on how each site is built. A careful Elementor build can beat a block theme loaded with plugins, and a careless one will be slower.</p>
+<h3>Does Elementor Pro make a site slower?</h3>
+<p>Not by itself. Pro adds features such as the Theme Builder, forms and popups, and with improved asset loading active, widget assets load only on pages that use them. Sites get slow when widgets, popups and effects pile up, whether they come from Pro or from add-ons.</p>
+<h3>Which Elementor performance settings should I turn on?</h3>
+<p>Start with optimised image loading, lazy-loaded background images, inline font icons and local Google Fonts, and make sure improved asset and CSS loading are active. Turn them on one at a time, regenerate files and data, clear caches and check your key pages after each.</p>
+<h3>Why is the Elementor editor so slow?</h3>
+<p>Long pages with many widgets, low PHP memory, weak hosting and plugins loading code into the editor are the usual causes. Use Safe Mode under Elementor &gt; Tools to test without other plugins, and check System Info for your memory limit.</p>
+<h3>Will a caching plugin fix a slow Elementor site?</h3>
+<p>It helps pages arrive faster, but it doesn't reduce what the browser has to download and run once they do. Heavy layouts, add-ons and images still need fixing, and caching does nothing for the editor.</p>
+
+<p>Want your Elementor site faster without losing easy editing? I can find what's slowing it down, fix it in tested rounds and rebuild only the sections that need it. See <a href="/elementor-developer/">Elementor development</a>, or <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for hosting, caching and database work.</p>
 `,
   },
   {
@@ -15513,108 +15935,235 @@ Description: Buy %title% online. %excerpt%</code></pre>
   {
     slug: 'transfer-domain-to-another-registrar',
     seoTitle: 'How to Transfer a Domain to Another Registrar Safely',
-    title: 'How to Transfer Your Domain to Another Registrar Without Downtime',
-    description: 'Transfer a domain to another registrar safely: unlock it, get the auth code, handle transfer locks and keep DNS records so your site and email stay online.',
+    title: 'How to Transfer Your Domain to Another Registrar Without Downtime (EPP Code, Locks and DNS)',
+    description: 'How to transfer a domain to another registrar safely: unlock it, get the EPP code, avoid the 60-day lock and keep DNS and email working, including .in domains.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
-<p>You might want to move your domain to a registrar with better prices, a cleaner dashboard, or simply to get it out of an old developer's account. Transferring a domain is straightforward, but a careless transfer can take your website and email offline.</p>
+<p>To transfer a domain to another registrar: check it's eligible (usually more than 60 days since it was registered or last transferred), copy all its DNS records, unlock it at your current registrar, get the authorisation (EPP) code, then start the transfer at the new registrar and approve it. For .com and similar domains, a transfer usually completes within about five to seven days, and your website and email stay online as long as the DNS records keep working throughout.</p>
+<p>People move domains for better renewal prices, a cleaner dashboard, all their services in one place, or to get a domain out of an old developer's account. Below is the full process with the checks that prevent downtime. If you're moving hosting or email at the same time, that's the part that usually goes wrong, and it's what my <a href="/wordpress-migration/">WordPress migration</a> service handles: DNS and email records, the site itself and a tested switch-over.</p>
 
-<h2>Transfer vs changing nameservers</h2>
-<p>These are different things. <strong>Transferring</strong> moves where the domain is registered and renewed. <strong>Changing nameservers or DNS</strong> changes where your website and email point. You can do either without the other. If you only want to move hosting, you may not need a transfer at all; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+<h2>Transferring a domain vs changing nameservers</h2>
+<p>These are often confused, and you may not need a transfer at all:</p>
+<table>
+  <thead><tr><th></th><th>Domain transfer</th><th>Changing nameservers or DNS</th></tr></thead>
+  <tbody>
+    <tr><td>What changes</td><td>The company you pay to register and renew the domain</td><td>Where the domain points: website, email and other services</td></tr>
+    <tr><td>Typical reason</td><td>Price, a better dashboard, consolidating accounts, recovering control</td><td>Moving hosting, using Cloudflare, changing email provider</td></tr>
+    <tr><td>Needs an EPP code?</td><td>Yes</td><td>No</td></tr>
+    <tr><td>How long it takes</td><td>Usually several days</td><td>Usually a few hours to spread, occasionally a day or two</td></tr>
+    <tr><td>Risk to website and email</td><td>Low if DNS is prepared first</td><td>Low if every record is copied</td></tr>
+  </tbody>
+</table>
+<p>If you only want to move your website to a new host, you can usually point the domain at it and leave the registration where it is. <a href="/blog/domain-hosting-ssl-explained/">Domain, hosting and SSL explained</a> shows how the pieces fit together. Changing to a different domain name is a separate, bigger job; see <a href="/blog/change-domain-name-without-losing-seo/">changing your domain name without losing SEO</a>.</p>
 
-<p>Changing to a different domain name altogether is a bigger job; see <a href="/blog/change-domain-name-without-losing-seo/">how to change your domain name without losing SEO</a>.</p>
-
-<h2>Before you start</h2>
+<h2>Before you start: eligibility checks</h2>
 <ul>
-  <li><strong>Check eligibility:</strong> most registrars block transfers for a period (often 60 days) after registration or a previous transfer</li>
-  <li><strong>Check expiry:</strong> don't leave it until the last few days before expiry</li>
-  <li><strong>Check the contact email:</strong> transfer approvals may go to the registrant email, so make sure you can receive it</li>
-  <li><strong>Copy your DNS records:</strong> take screenshots or export all records, especially website (A/CNAME), email (MX) and verification (TXT) records</li>
+  <li><strong>The 60-day lock.</strong> At the time of writing, ICANN's transfer rules let registrars refuse a transfer within 60 days of registration or of a previous transfer, and many also lock a domain for 60 days after a change to the owner's name, organisation or email. ICANN has been updating its transfer policy, so check your registrar's current rules.</li>
+  <li><strong>The expiry date.</strong> Don't leave it to the last few days. A domain that expires mid-transfer can get stuck, and one already past expiry may need renewing first; see <a href="/blog/domain-expired-what-to-do/">domain name expired? what to do</a>.</li>
+  <li><strong>Who owns it.</strong> Look the domain up in ICANN's lookup tool (lookup.icann.org) or any WHOIS lookup to see the registrar and its status. If it's registered in a previous developer's or employee's name, sort that out first.</li>
+  <li><strong>The contact email.</strong> Codes and approvals go to the registrant or account email, so make sure it's an address you can receive, not one at a domain that no longer works.</li>
+  <li><strong>Disputes and unpaid bills.</strong> A domain under a legal dispute, or with an unpaid balance at the registrar, can be refused.</li>
 </ul>
 
-<h2>Step 1: Prepare DNS so nothing breaks</h2>
-<p>If your DNS is managed at the current registrar, it may stop working when the domain leaves. Either recreate all records at the new registrar before the transfer, or move DNS to an independent provider (like your host or Cloudflare) first. Then the transfer won't affect your website or email.</p>
+<h2>Step 1: Copy your DNS records and prepare them</h2>
+<p>This is the step that prevents downtime. Your domain's nameservers show where its DNS is managed:</p>
+<ul>
+  <li><strong>DNS at your host or Cloudflare</strong> (nameservers such as ns1.yourhost.com or name.ns.cloudflare.com): the transfer doesn't touch it. Keep the same nameservers throughout.</li>
+  <li><strong>DNS at the current registrar</strong> (its default nameservers): the zone may be deleted when the domain leaves. Recreate every record at the new registrar or an independent DNS provider and switch nameservers before the transfer, or move DNS to your host or Cloudflare first.</li>
+</ul>
+<p>Either way, export or screenshot every record before you start:</p>
+<table>
+  <thead><tr><th>Record</th><th>What it does</th><th>What breaks if it's missing</th></tr></thead>
+  <tbody>
+    <tr><td>A / AAAA</td><td>Points the domain to your web server</td><td>The website</td></tr>
+    <tr><td>CNAME</td><td>Points names such as www to another address</td><td>www, subdomains and some services</td></tr>
+    <tr><td>MX</td><td>Says which server receives your email</td><td>Incoming email</td></tr>
+    <tr><td>TXT (SPF, DKIM, DMARC)</td><td>Authorises who may send email as your domain</td><td>Outgoing email lands in spam or bounces</td></tr>
+    <tr><td>TXT (verification)</td><td>Proves ownership to Google, Microsoft and others</td><td>Search Console and other verified services</td></tr>
+  </tbody>
+</table>
+<p>If DNSSEC is switched on, turn it off, or move its DS record correctly, before changing nameservers; a mismatched DNSSEC record makes the domain stop resolving altogether. <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a> covers the email records in more detail.</p>
 
 <h2>Step 2: Unlock the domain</h2>
-<p>Turn off the transfer lock (sometimes called registrar lock) at your current registrar.</p>
+<p>In your current registrar's dashboard, turn off the transfer lock, sometimes called registrar lock or theft protection. A lookup will then stop showing the status clientTransferProhibited. Some registrars also ask you to turn off WHOIS privacy before a transfer; many no longer do.</p>
 
-<h2>Step 3: Get the authorisation code</h2>
-<p>Request the auth code (also called EPP code or transfer key) from your current registrar. Treat it like a password.</p>
+<h2>Step 3: Get the authorisation (EPP) code</h2>
+<p>Request the authorisation code, also called the EPP code, auth code or transfer key. Some registrars show it in the dashboard; others email it to the registrant address. Treat it like a password: anyone with the code and an unlocked domain can start a transfer.</p>
 
 <h2>Step 4: Start the transfer at the new registrar</h2>
-<p>Enter the domain and auth code at the new registrar and pay the transfer fee. For many extensions, this includes a one-year renewal.</p>
+<p>At the new registrar, choose transfer (not a new registration), enter the domain and the code, and pay the transfer fee. For .com and most similar extensions, the fee includes a one-year extension added to your existing expiry date, so you don't lose time you've already paid for. If the domain auto-renewed at the old registrar very recently, ask whether that year carries over.</p>
+<p>The fee is usually similar to a year's renewal. My <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts yearly .com and .in domain costs at roughly ₹500 to ₹1,200, but registrar prices change, so compare the renewal price rather than just the transfer offer.</p>
 
 <h2>Step 5: Approve and wait</h2>
-<p>Approve any confirmation emails. Transfers often take a few days to complete, and some registrars let you speed it up by approving at the old registrar.</p>
+<p>You may get an email asking you to confirm, from the new registrar, the old one or both. Approve it. For .com and other generic domains, the old registrar has up to five days to act, after which the transfer normally goes through on its own; many registrars let you approve it early from their dashboard. Don't change DNS or contact details while the transfer is in progress.</p>
 
-<h2>Step 6: Check everything after</h2>
+<h2>Step 6: Check everything afterwards</h2>
 <ul>
-  <li>Website loads correctly, with HTTPS</li>
-  <li>Email sending and receiving works</li>
-  <li>Auto-renew is on at the new registrar</li>
-  <li>Transfer lock is turned back on</li>
-  <li>Contact details are correct and in your business name</li>
+  <li>The website loads over HTTPS, on both www and non-www.</li>
+  <li>Email sends and receives, including to Gmail, without landing in spam.</li>
+  <li>The nameservers and DNS records are what you expect.</li>
+  <li>Auto-renew is on, with a payment method that won't expire soon.</li>
+  <li>The transfer lock is back on.</li>
+  <li>The registrant is your business, with a contact email you'll still have in five years.</li>
 </ul>
 
-<h2>Common problems</h2>
+<h2>Transferring a .in domain</h2>
+<p>.in domains are run by NIXI, the National Internet Exchange of India, and sold through NIXI-accredited registrars, so the new registrar must be accredited for .in. The process is the same in outline: unlock, get the auth code, start the transfer at the new registrar and approve it. Details such as lock periods, whether a year is added and how long approval takes are set by the .in registry and can differ from .com, so confirm them with the new registrar before you pay. The same goes for .co.in and other second-level .in names. <a href="/blog/in-vs-com-domain/">.in vs .com</a> covers .in registration rules and ownership.</p>
+
+<h2>How to keep a domain transfer secure</h2>
 <ul>
-  <li><strong>Invalid auth code:</strong> request a fresh one</li>
-  <li><strong>Transfer rejected:</strong> domain still locked, too recently registered, or the old registrar declined it</li>
-  <li><strong>Email stopped working:</strong> MX records weren't recreated</li>
+  <li>Request the EPP code yourself from the registrar's own dashboard, never through a link in an unexpected email.</li>
+  <li>Turn on two-factor authentication at both registrars before you start.</li>
+  <li>Ignore transfer and renewal notices from companies you don't use; many are sales tactics or scams. See <a href="/blog/domain-seo-scam-emails/">domain renewal and SEO scam emails</a>.</li>
+  <li>Keep the domain in your business's own registrar account rather than a developer's or agency's, and give others access as users where the registrar allows it.</li>
+  <li>Turn the transfer lock back on as soon as the transfer completes.</li>
 </ul>
 
-<p>Moving hosting as well? See <a href="/wordpress-migration/">WordPress migration</a> and the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
+<h2>Common problems and fixes</h2>
+<table>
+  <thead><tr><th>Problem</th><th>Usual cause</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>"Invalid auth code"</td><td>A typo, an extra space, or an old code</td><td>Copy and paste a fresh code</td></tr>
+    <tr><td>"Domain is locked"</td><td>The transfer lock is still on</td><td>Unlock it and wait a few minutes before retrying</td></tr>
+    <tr><td>Transfer refused</td><td>Inside the 60-day lock, expired, disputed or unpaid</td><td>Ask the old registrar for the reason, wait out the lock or renew first</td></tr>
+    <tr><td>Approval email never arrives</td><td>An old or mistyped contact email, or the spam folder</td><td>Approve from the dashboard, or update the email after checking whether that triggers a lock</td></tr>
+    <tr><td>Website or email stopped working</td><td>DNS records weren't recreated, or a DNSSEC mismatch</td><td>Recreate the records from your export, and fix or remove DNSSEC</td></tr>
+    <tr><td>Pending for more than a week</td><td>A registry or registrar delay</td><td>Contact the new registrar's support with the domain and order number</td></tr>
+  </tbody>
+</table>
+
+<h2>FAQs</h2>
+<h3>How long does a domain transfer take?</h3>
+<p>For .com and other generic domains, usually about five to seven days, and often faster if you approve it at the old registrar. Other extensions, including .in, follow their own registry's rules, so check with the new registrar.</p>
+<h3>Will my website or email go down during a domain transfer?</h3>
+<p>Not if DNS is prepared first. If your nameservers stay the same, or every record is recreated before the switch, the website and email keep working throughout. Downtime happens when DNS lived at the old registrar and wasn't copied.</p>
+<h3>Can I transfer a domain within 60 days of registering it?</h3>
+<p>Usually not, at the time of writing. ICANN's rules let registrars refuse transfers within 60 days of registration or a previous transfer, and many apply a similar lock after owner details change. Check your registrar's current policy, as these rules are being revised.</p>
+<h3>Do I lose the remaining years when I transfer a domain?</h3>
+<p>For .com and most generic domains, no: the remaining time carries over and the transfer adds a year. If the domain auto-renewed at the old registrar very recently, ask whether that year carries over before you start.</p>
+<h3>What is an EPP code and where do I find it?</h3>
+<p>It's the authorisation code that proves you're allowed to move the domain. You'll find it in your current registrar's domain settings, or they'll email it to the registrant address. Keep it private.</p>
+<h3>Is a domain transfer secure?</h3>
+<p>Yes, when the code comes from your registrar's own dashboard, both accounts use two-factor authentication and the lock goes back on afterwards. Be wary of unsolicited emails offering to transfer or renew your domain.</p>
+
+<p>Moving hosting or email at the same time as the domain? That's where downtime usually happens. I can copy your DNS and email records, move the site and test everything before the switch; see <a href="/wordpress-migration/">WordPress migration</a>. And make sure you control every account first with the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
 `,
   },
   {
     slug: 'wordpress-admin-slow',
-    seoTitle: 'WordPress Admin Dashboard Slow? Causes and Fixes',
-    title: 'Why Is My WordPress Admin Dashboard So Slow? Causes and Fixes',
-    description: 'WordPress admin slow? Causes like heavy plugins, admin-ajax and Heartbeat, weak hosting, database bloat and external calls, and how to fix them.',
+    seoTitle: 'WordPress Admin Slow? Causes and Fixes for a Slow Dashboard',
+    title: 'Why Is My WordPress Admin Dashboard So Slow? How to Find the Cause and Fix It',
+    description: 'WordPress admin slow but the site is fast? Find the cause with Query Monitor, then fix heavy plugins, Heartbeat, autoloaded data, cron jobs and weak hosting.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
-<p>Your website may load quickly for visitors thanks to caching, while the WordPress dashboard crawls. That's because admin pages are never cached: every click runs WordPress, plugins and database queries live. A slow dashboard wastes time and makes content updates painful.</p>
+<p>A slow WordPress admin is usually caused by plugins doing heavy work on every dashboard screen, slow requests to outside servers, large amounts of autoloaded data in the database, background tasks such as Heartbeat and WP-Cron, or hosting without enough resources. Because the dashboard is never page-cached, every click runs WordPress, your plugins and their database queries live, so these problems show up in wp-admin long before visitors notice them.</p>
+<p>The fix starts with measuring, not guessing. Below is how I diagnose a slow dashboard, the fixes in the order I'd try them, and the settings and code involved. A slow dashboard is one of the signs I list for needing a <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> job rather than another plugin.</p>
+<p>If the public pages are slow as well, start with <a href="/blog/why-is-my-wordpress-site-slow/">why is my WordPress site slow?</a>, which covers front-end causes and caching.</p>
 
-<h2>Common causes</h2>
+<h2>Why the dashboard is slow when the site is fast</h2>
+<p>Visitors usually get a cached copy of each page: a ready-made HTML file served in a fraction of the time it takes WordPress to build the page. Logged-in users, and every screen in wp-admin, skip that cache. Each time you open Posts, Orders or the editor, the server loads WordPress and every active plugin, runs the database queries and waits for any outside requests before sending anything back. A plugin that adds half a second to every page load is hidden from visitors by the cache, and fully visible to you.</p>
+
+<h2>Common causes at a glance</h2>
+<table>
+  <thead><tr><th>Symptom</th><th>Likely cause</th><th>Where to look</th></tr></thead>
+  <tbody>
+    <tr><td>Every admin screen is slow, even the dashboard home</td><td>A heavy plugin, autoloaded data, outside requests or weak hosting</td><td>Query Monitor, Site Health, hosting resource usage</td></tr>
+    <tr><td>Only one screen is slow, such as Orders or Products</td><td>Large tables, slow queries or too many items per page</td><td>Query Monitor's query panels, Screen Options</td></tr>
+    <tr><td>Slow at certain times of day</td><td>Backups, security scans or cron jobs running</td><td>Plugin schedules, WP-Cron, your host's resource graphs</td></tr>
+    <tr><td>The editor lags and saving is slow</td><td>Heartbeat, autosave, long page builder pages</td><td>Heartbeat settings, the browser's Network tab</td></tr>
+    <tr><td>Pauses of several seconds on many screens</td><td>A plugin calling a slow outside server</td><td>Query Monitor's HTTP API calls panel</td></tr>
+    <tr><td>WooCommerce admin crawls</td><td>Analytics, a backlog of scheduled actions, large order tables</td><td>WooCommerce &gt; Status &gt; Scheduled Actions</td></tr>
+  </tbody>
+</table>
+
+<h2>How to find the cause</h2>
+<h3>Rule out your browser and connection</h3>
+<p>Try another browser or a private window to rule out extensions, and open the browser's developer tools on the Network tab. If the page itself (the first request) takes several seconds to start arriving, the server is slow. If it arrives quickly but dozens of scripts or admin-ajax.php requests follow, the problem is what loads afterwards.</p>
+<h3>Use Query Monitor</h3>
+<p>Query Monitor is a free plugin that adds a panel to the admin bar for every page you load. On a slow admin screen, check:</p>
 <ul>
-  <li><strong>Heavy plugins:</strong> page builders, SEO suites, security scanners, analytics dashboards and backup plugins can load a lot in the admin</li>
-  <li><strong>Too many plugins</strong> each adding a little overhead</li>
-  <li><strong>Weak hosting:</strong> limited CPU or PHP workers on cheap shared plans</li>
-  <li><strong>Old PHP version</strong></li>
-  <li><strong>Database bloat:</strong> large autoloaded options, huge revisions or log tables</li>
-  <li><strong>External requests:</strong> plugins contacting slow external servers for licence checks, news feeds or updates</li>
-  <li><strong>The Heartbeat API:</strong> frequent background requests while editors are open</li>
-  <li><strong>WooCommerce admin:</strong> analytics and large order tables on busy stores</li>
+  <li><strong>Overview:</strong> total page generation time, peak memory use and database query time.</li>
+  <li><strong>Queries by Component:</strong> how many queries each plugin runs and how long they take.</li>
+  <li><strong>Slow Queries:</strong> individual queries over the threshold, with the plugin or theme responsible.</li>
+  <li><strong>HTTP API Calls:</strong> requests to outside servers, how long each took and which plugin made it. A licence check or news feed taking several seconds here explains a lot.</li>
+</ul>
+<p>Remove Query Monitor when you've finished; it's a diagnostic tool, not something to leave running.</p>
+<h3>Test without plugins, safely</h3>
+<p>Deactivating plugins on a live site affects visitors. The free Health Check &amp; Troubleshooting plugin has a troubleshooting mode that disables plugins and switches to a default theme for your session only, so you can re-enable them one at a time while visitors see the normal site. A staging copy works too.</p>
+<h3>Check the server</h3>
+<p>Tools &gt; Site Health &gt; Info shows your PHP version and memory limits. Your hosting panel's resource usage page shows whether you're hitting CPU, memory or process limits, which on shared hosting makes the admin slow or briefly unavailable.</p>
+
+<h2>Fixes, in the order I'd try them</h2>
+<h3>1. Remove or replace heavy plugins</h3>
+<p>Query Monitor usually points to one or two plugins doing far more than the rest: security suites running scans, statistics plugins that store and chart every visit inside WordPress, backup plugins running during working hours, social feed plugins, and plugins that haven't been updated in years. Remove what you don't need, replace heavy plugins with lighter alternatives, and move scheduled scans and backups to the middle of the night.</p>
+
+<h3>2. Control the Heartbeat API</h3>
+<p>Heartbeat is a background request to admin-ajax.php that WordPress sends while you're logged in, used for autosave, post locking and live notifications. By default it runs roughly every 15 seconds in the editor and less often elsewhere in the dashboard. With several tabs open, or several people editing at once, that adds up on modest hosting.</p>
+<p>Slow it down rather than switching it off. The Heartbeat Control plugin, or the Heartbeat settings in LiteSpeed Cache (under Toolbox) or WP Rocket, can set a longer interval for the dashboard and front end while keeping it running in the editor, where autosave depends on it. A developer can do the same with a small snippet in a child theme or code snippets plugin:</p>
+<pre><code>add_filter( 'heartbeat_settings', function ( $settings ) {
+    $settings['interval'] = 60; // seconds
+    return $settings;
+} );</code></pre>
+<p>Don't disable Heartbeat in the post editor: you'd lose autosave and the warning when two people edit the same post.</p>
+
+<h3>3. Clean up autoloaded data</h3>
+<p>WordPress loads every "autoloaded" option from the wp_options table on every request, admin included. Plugins often store large settings, caches or logs there and leave them behind when they're deleted. Recent WordPress versions warn in Site Health when autoloaded options grow large. A developer can list the biggest entries with a query like this (your table prefix may differ from wp_):</p>
+<pre><code>SELECT option_name, LENGTH(option_value) AS size
+FROM wp_options
+WHERE autoload IN ('yes', 'on', 'auto-on', 'auto')
+ORDER BY size DESC
+LIMIT 20;</code></pre>
+<p>Take a backup first, and only remove options, or stop them autoloading, when they belong to plugins you've genuinely removed. <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a> covers this, along with revisions, transients and other clean-up, safely.</p>
+
+<h3>4. Add object caching</h3>
+<p>Page caching doesn't help the admin, but a persistent object cache does: Redis or Memcached keep the results of repeated database queries in memory, so busy screens such as WooCommerce orders load faster. Many hosts offer one of them on higher plans, and LiteSpeed Cache can connect to it; see <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>. OPcache, which keeps compiled PHP in memory, should also be on, and usually is on decent hosting.</p>
+
+<h3>5. Fix WP-Cron</h3>
+<p>By default, WordPress runs scheduled tasks when someone loads a page, so a long-running task can land on your admin click. Replacing it with a real server cron job and disabling the built-in trigger stops that, and makes scheduled posts and emails more reliable; see <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</p>
+
+<h3>6. Update PHP and check memory</h3>
+<p>Newer PHP versions generally run WordPress faster than old ones, and only supported versions get security fixes. Update through your hosting panel after checking plugin compatibility, as <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a> explains. WordPress also has a separate, higher memory limit for the admin, set with WP_MAX_MEMORY_LIMIT; if Query Monitor shows peak memory close to the limit, ask your host or developer to raise it.</p>
+
+<h3>7. Tidy the screens you use most</h3>
+<ul>
+  <li>Use Screen Options at the top of list screens to show 20 items per page instead of hundreds, and hide columns you don't need.</li>
+  <li>Hide dashboard widgets you never read, especially plugin news feeds, from Screen Options on the dashboard home.</li>
+  <li>Limit post revisions on content-heavy sites, for example with <code>define( 'WP_POST_REVISIONS', 10 );</code> in wp-config.php.</li>
 </ul>
 
-<h2>How to diagnose</h2>
+<h3>8. Upgrade hosting when you've outgrown it</h3>
+<p>If the dashboard is still slow with a lean plugin list, a clean database and current PHP, the server is the limit. Cheap shared plans give each site a small share of CPU and few PHP workers, so admin requests queue behind visitors and bots. A better plan, a VPS or managed WordPress hosting is the fix; see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a>.</p>
+
+<h2>WooCommerce admin and page builder editors</h2>
 <ul>
-  <li><strong>Query Monitor</strong> (a free plugin) shows slow database queries, HTTP requests and which plugin is responsible</li>
-  <li><strong>Site Health</strong> flags common performance issues</li>
-  <li><strong>Deactivate plugins one by one on a staging site</strong> and time key admin pages</li>
-  <li><strong>Ask your host</strong> whether you're hitting resource limits</li>
+  <li><strong>Scheduled actions:</strong> WooCommerce queues background work under WooCommerce &gt; Status &gt; Scheduled Actions. Thousands of pending or failed actions slow the admin and can delay emails, so find out which plugin creates them before clearing them.</li>
+  <li><strong>Order storage:</strong> newer WooCommerce versions can store orders in their own tables (High-Performance Order Storage), which helps busy stores once every plugin you use supports it.</li>
+  <li><strong>Analytics:</strong> WooCommerce Analytics builds reports from your order data, which can be heavy on large stores. At the time of writing, if you don't use it, it can be switched off under WooCommerce's advanced feature settings.</li>
+  <li><strong>Page builder editors</strong> are heavy by nature, and very long pages load slowly in them; see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</li>
 </ul>
+<p>For the shop front end, see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</p>
 
-<h2>Fixes</h2>
-<ol>
-  <li><strong>Remove unneeded plugins</strong> and replace heavy ones with lighter alternatives</li>
-  <li><strong>Update PHP</strong> to a current supported version; see <a href="/blog/update-php-version-wordpress/">updating PHP</a></li>
-  <li><strong>Clean the database</strong> and fix large autoloaded options; see <a href="/blog/wordpress-database-optimization/">database optimisation</a></li>
-  <li><strong>Add object caching</strong> (Redis) if your host supports it; see <a href="/blog/wordpress-caching-explained/">caching explained</a></li>
-  <li><strong>Control Heartbeat</strong> frequency with a performance plugin, without disabling autosave in the editor</li>
-  <li><strong>Disable dashboard widgets</strong> and admin notices you don't need</li>
-  <li><strong>Upgrade hosting</strong> if your site has outgrown it; see <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting</a></li>
-</ol>
+<h2>FAQs</h2>
+<h3>Why is my WordPress admin so slow when the site is fast?</h3>
+<p>Visitors get cached pages, but the dashboard is never cached, so every admin screen runs your plugins and database queries live. A heavy plugin, slow outside requests, large autoloaded data or limited hosting resources show up in wp-admin first.</p>
+<h3>Does the Heartbeat API slow down the WordPress admin?</h3>
+<p>It can on modest hosting, especially with several tabs or editors open, because each Heartbeat is a full request to the server. Slow it down on the dashboard with a plugin or your caching plugin's Heartbeat settings, but keep it running in the editor for autosave.</p>
+<h3>Can too many plugins slow down the dashboard?</h3>
+<p>The number matters less than what each plugin does. One heavy security, statistics or social plugin can cost more than twenty small ones. Query Monitor shows which plugins are responsible.</p>
+<h3>Will better hosting fix a slow wp-admin?</h3>
+<p>If you're hitting your plan's CPU, memory or process limits, yes. If one plugin is making slow outside requests or the database is bloated, moving host won't help much. Measure first, then decide.</p>
+<h3>Why is the WordPress editor slow to save or update?</h3>
+<p>Saving runs every plugin hooked into it, such as SEO analysis, cache purges and page builder processing, and very long posts with many blocks take longer. Check Query Monitor while saving, and look for a plugin that purges or rebuilds a lot on every save.</p>
+<h3>Is it safe to disable the Heartbeat API?</h3>
+<p>On the front end and the dashboard, slowing or disabling it is usually fine. In the post editor, keep it running, or you'll lose autosave and the warning when someone else is editing the same post.</p>
 
-<h2>Page builder editors</h2>
-<p>Visual editors like Elementor are heavy by nature. Very long pages with many widgets load slowly in the editor. Splitting huge pages, using global templates and keeping the builder updated helps. See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</p>
-
-<h2>When to get help</h2>
-<p>If the dashboard is still slow after the basics, a developer can profile the site and find the specific bottleneck. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+<p>Still waiting for every admin screen to load? I can profile your dashboard, find the plugin, query or server limit responsible, and fix it in tested steps. See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
   {
@@ -19062,62 +19611,133 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'wordpress-changes-not-showing',
-    seoTitle: 'WordPress Changes Not Showing? How to Fix It (Cache & More)',
-    title: 'WordPress Changes Not Showing on Your Website? Here\'s Why and How to Fix It',
-    description: 'WordPress changes not showing? Check browser, plugin, server and CDN caches, Elementor CSS files, unpublished updates, templates and mobile settings.',
+    seoTitle: 'WordPress Changes Not Showing? Causes and How to Fix Them',
+    title: 'WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template',
+    description: 'WordPress changes not showing after you update or publish? Find the cause fast: caches, CDN, page builder files, mobile settings, templates or the wrong site.',
     date: '2026-09-28',
+    updated: '2026-10-11',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-speed-optimization', 'elementor-developer'],
     body: `
-<p>You updated a price, changed a photo or edited the header, but the live website still shows the old version. It's one of the most frequent support requests I get, and it's almost always caching or one of a few simple causes.</p>
+<p>When WordPress changes don't show on your website, the cause is almost always one of three things: the change didn't actually save, a cache is still serving the old version, or you edited something other than what visitors see, such as a template, a staging copy or the wrong language. Check the page in a private window first, clear your caches in order (plugin, server, CDN, then browser), and if it's still old, trace where that part of the page really comes from.</p>
+<p>It's one of the most frequent support requests I get, and this is the checklist I work through. If styling is the only thing missing, the narrower guide to <a href="/blog/wordpress-css-changes-not-showing/">WordPress CSS changes not showing</a> goes deeper into stylesheets. If you'd rather someone handled updates, small changes and problems like this for you, that's part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans.</p>
 
-<h2>1. Did the change actually save?</h2>
+<h2>Find your symptom first</h2>
+<p>Where the change is missing tells you which layer to look at:</p>
+<table>
+  <thead><tr><th>What you see</th><th>Most likely cause</th><th>Where to look first</th></tr></thead>
+  <tbody>
+    <tr><td>You see the change when logged in, visitors don't</td><td>Page cache (logged-in admins usually bypass it)</td><td>Caching plugin and host cache</td></tr>
+    <tr><td>Nobody sees the change, not even you in a private window</td><td>Not saved, or edited in the wrong place</td><td>Revisions, templates, staging</td></tr>
+    <tr><td>It shows on desktop but not on mobile</td><td>A separate mobile cache, or a device-specific builder setting</td><td>Mobile cache, responsive mode</td></tr>
+    <tr><td>Text updates show, colours or layout don't</td><td>Generated CSS files, minification or stylesheet caching</td><td>Page builder tools, optimisation plugin</td></tr>
+    <tr><td>A new image still shows the old one</td><td>Same file name, a cached image or an old WebP copy</td><td>Media library, CDN, image optimiser</td></tr>
+    <tr><td>The header, footer or menu won't change</td><td>It comes from a template, widget area or menu location</td><td>Theme Builder, Site Editor, Menus</td></tr>
+    <tr><td>The change appears, then disappears later</td><td>Overwritten by a theme update, a staging push or another editor</td><td>Child theme, staging, activity log</td></tr>
+    <tr><td>The site is updated but Google shows old text</td><td>Google hasn't recrawled the page yet</td><td>Search Console URL Inspection</td></tr>
+  </tbody>
+</table>
+
+<h2>1. Make sure the change really saved</h2>
 <ul>
-  <li>Did you click <strong>Update</strong> or <strong>Publish</strong>, not just preview or save a draft?</li>
-  <li>In Elementor, the green Update button must be clicked, not just closing the editor</li>
-  <li>Check the page's revisions to confirm the change is there</li>
+  <li><strong>Block editor:</strong> Save draft and Preview don't change the live page. Click Update or Save (the button's name depends on your WordPress version), and check the page isn't scheduled for a future date.</li>
+  <li><strong>Elementor:</strong> click the green Update or Publish button before closing the editor. Closing the tab without it leaves an autosave, not a live change.</li>
+  <li><strong>Check the revisions</strong> to confirm your edit is there. In the block editor, the Revisions link sits in the post settings sidebar; in Elementor, use the History panel's Revisions tab.</li>
+  <li><strong>No revisions at all?</strong> They only appear once a post has been saved more than once, and a developer can switch them off by setting <code>WP_POST_REVISIONS</code> to false in wp-config.php. Some hosts limit them too.</li>
 </ul>
 
-<h2>2. Browser cache</h2>
-<p>Your browser may show a stored copy. Try a hard refresh (Ctrl+F5 or Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac), a private window, or another device.</p>
-
-<h2>3. Caching plugin</h2>
-<p>If the site uses a caching plugin like LiteSpeed Cache, WP Rocket or W3 Total Cache, clear or purge its cache. Logged-in admins often see fresh pages while visitors see cached ones, which is why you might see the change and customers don't.</p>
-
-<h2>4. Server and hosting cache</h2>
-<p>Many hosts have their own server cache with a "purge" button in the hosting panel or the WordPress admin bar.</p>
-
-<h2>5. CDN cache</h2>
-<p>If you use Cloudflare or another CDN, purge the cache there too, especially for changed images, CSS and JavaScript files; see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
-
-<h2>6. Elementor CSS files</h2>
-<p>Elementor stores styles in generated CSS files. If design changes don't appear, go to Elementor → Tools and use the option to regenerate files and data, then clear all caches.</p>
-
-<p>If text updates appear but styling changes don't, the cause is often specificity, loading order or optimised CSS files; see <a href="/blog/wordpress-css-changes-not-showing/">WordPress CSS changes not showing</a>.</p>
-
-<h2>7. Editing the wrong place</h2>
+<h2>2. Look at the page the way a visitor does</h2>
+<p>Logged-in administrators usually skip the page cache, so you may see your change while every visitor still gets the old copy. Test properly:</p>
 <ul>
-  <li>Headers, footers and blog layouts may come from a <strong>template</strong> (Elementor Theme Builder or the theme customiser), not the page itself</li>
-  <li>The page you edited may be a duplicate or draft, not the one in the menu</li>
-  <li>On a staging site, changes don't appear on live until pushed</li>
+  <li>Open the page in a private or incognito window, which ignores your login and your browser cache.</li>
+  <li>Check on your phone using mobile data rather than office Wi-Fi.</li>
+  <li>Add a random query string such as ?v=2 to the end of the address. Many caches treat that as a new page, so if the change appears with it, a cache is the culprit. Some CDNs ignore query strings, so this test isn't conclusive.</li>
+  <li>Do a hard refresh (Ctrl+F5 or Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac) to reload your own browser's copy of the page and its files.</li>
 </ul>
 
-<h2>8. Mobile vs desktop settings</h2>
-<p>Elementor lets you set different styles or hide elements per device. A change made in desktop view may be overridden by a tablet or mobile setting.</p>
+<h2>3. Clear every cache layer, in order</h2>
+<p>A WordPress site can have four or five caches stacked on top of each other, and clearing one isn't enough if another still holds the old page. Work from the server outwards:</p>
+<table>
+  <thead><tr><th>Layer</th><th>Examples</th><th>How to clear it</th></tr></thead>
+  <tbody>
+    <tr><td>Caching plugin</td><td>LiteSpeed Cache, WP Rocket, W3 Total Cache, WP Super Cache</td><td>Purge All from the plugin's menu or the admin bar</td></tr>
+    <tr><td>Optimisation plugin</td><td>Autoptimize, or the minify and combine options in your caching plugin</td><td>Clear its CSS and JavaScript cache</td></tr>
+    <tr><td>Host or server cache</td><td>Hostinger's cache, LiteSpeed server cache, Varnish on managed hosts</td><td>The purge option in the hosting panel or the WordPress admin bar</td></tr>
+    <tr><td>Object cache</td><td>Redis or Memcached</td><td>Flush it from the plugin or hosting panel; it can hold menus, settings and widget data</td></tr>
+    <tr><td>CDN</td><td>Cloudflare, or your host's CDN</td><td>Purge everything, or just the changed URLs and files</td></tr>
+    <tr><td>Browser</td><td>Yours and your visitors'</td><td>Hard refresh; visitors' copies expire on their own</td></tr>
+  </tbody>
+</table>
+<p>LiteSpeed Cache can keep a separate copy of each page for mobile visitors when its mobile cache option is on, a common reason a change shows on desktop but not on phones; Purge All clears both. For how each layer works, see <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>, and for Cloudflare's settings, the <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare setup guide</a>.</p>
 
-<p>Still can't tell whether a style comes from a template, a device setting or Elementor's generated CSS? An <a href="/elementor-developer/">Elementor developer</a> can trace it and fix it at the source.</p>
+<h2>4. Regenerate page builder files</h2>
+<p>Page builders store styles in generated CSS files, and those files don't always refresh when you'd expect:</p>
+<ul>
+  <li><strong>Elementor:</strong> go to Elementor &gt; Tools and use Regenerate Files &amp; Data (older versions call it Regenerate CSS &amp; Data), then clear every cache above.</li>
+  <li><strong>Divi, Beaver Builder and others</strong> have a similar option to clear or regenerate their static CSS in the builder's settings or tools.</li>
+  <li><strong>Theme options:</strong> some premium themes write their customiser settings to a CSS file and need a save or "regenerate" to refresh it.</li>
+</ul>
+<p>Styling problems that survive all of this are usually specificity, loading order or a child theme stylesheet, which the CSS guide linked above walks through.</p>
 
-<h2>9. Image still old?</h2>
-<p>If you uploaded a new image with the same file name, caches may keep the old one. Upload with a new file name, or purge caches.</p>
+<h2>5. Check you edited the right thing</h2>
+<p>When nobody sees the change, including you in a private window, the part you edited probably isn't the part on screen:</p>
+<ul>
+  <li><strong>Templates:</strong> headers, footers, blog post layouts and archive pages often come from a template, not the page itself. In Elementor Pro, look under Templates &gt; Theme Builder; on block themes, under Appearance &gt; Editor; on classic themes, under Appearance &gt; Customize or Widgets.</li>
+  <li><strong>Synced patterns and global widgets:</strong> a block reused across pages (synced patterns, once called reusable blocks) or an Elementor global widget has one source. Editing a detached copy changes only that page.</li>
+  <li><strong>Menus:</strong> a menu only appears if it's assigned to a location, so you may be editing a menu that isn't the one in the header.</li>
+  <li><strong>Duplicate pages:</strong> a page whose address ends in "-2" is usually a copy. Check which one the menu links to.</li>
+  <li><strong>Translations:</strong> on a Hindi and English site using WPML, Polylang or similar, each language is a separate page, so editing the English version doesn't change the Hindi one; see <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</li>
+  <li><strong>Display conditions:</strong> popups, banners and some blocks only show on certain pages, devices or dates, or only to logged-out visitors.</li>
+</ul>
 
-<h2>Quick routine after any change</h2>
+<h2>6. Check you're on the right site</h2>
+<ul>
+  <li><strong>Staging vs live:</strong> changes on a staging copy don't reach the live site until they are pushed, and pushing staging to live can overwrite edits made on live in the meantime; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</li>
+  <li><strong>Two WordPress installations:</strong> an old copy in a subfolder, or a second site on the same hosting, has its own login. Check that the address bar in wp-admin shows your real domain.</li>
+  <li><strong>Just after a migration:</strong> if the domain still points to the old host, you may be editing the new site while visitors see the old one, or the other way round. A DNS lookup tool shows which server the domain points to.</li>
+</ul>
+
+<h2>7. Theme files and child themes</h2>
+<p>Edits made directly in a theme's files, such as functions.php, style.css or template files, are overwritten the next time that theme updates, which looks like your change disappearing. Code changes belong in a child theme or a code snippets plugin. The reverse happens too: edits in a child theme don't show if it isn't the active theme under Appearance &gt; Themes. See <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a>.</p>
+
+<h2>8. Changes not showing on mobile</h2>
+<ul>
+  <li><strong>Device-specific settings:</strong> Elementor and most builders let you set different sizes, spacing or visibility per device, so a change made in desktop view can be overridden by a tablet or mobile value. Switch the responsive mode and check each one.</li>
+  <li><strong>Hidden duplicates:</strong> some sites have one section for desktop and a separate copy for mobile. Edit the one that's visible on phones.</li>
+  <li><strong>Mobile cache:</strong> purge the caching plugin's mobile cache, as above.</li>
+  <li><strong>The phone's own browser:</strong> clear the site's data in the browser settings, or test in a private tab.</li>
+</ul>
+
+<h2>9. Images that won't update</h2>
+<p>If you upload a new image with the same file name as the old one, browsers, CDNs and image optimisation plugins may keep serving the old file, especially a converted WebP copy. Upload the new image with a different file name and swap it in, or regenerate the optimised versions and purge the CDN.</p>
+
+<h2>10. The site is updated but Google still shows the old version</h2>
+<p>Search results show what Google saw on its last visit, so new titles, descriptions and prices appear only after it recrawls the page. In Search Console, inspect the URL and click Request Indexing. Google can also rewrite titles and snippets on its own, so a result won't always match your page exactly.</p>
+
+<h2>A quick routine after every change</h2>
 <ol>
-  <li>Update or Publish</li>
-  <li>Clear plugin cache, then server cache, then CDN cache</li>
-  <li>Check in a private window on your phone</li>
+  <li>Click Update, and confirm the revision saved.</li>
+  <li>Clear the caching plugin, then the host cache, then the CDN.</li>
+  <li>Check the page in a private window on your phone, on mobile data.</li>
+  <li>If styles look wrong, regenerate the page builder's CSS and clear the caches again.</li>
 </ol>
+<p>If several people edit the site, an activity log shows who changed what and when, which settles "it was working yesterday" quickly; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs</a>.</p>
 
-<p>See also <a href="/blog/wordpress-caching-explained/">caching explained</a> and <a href="/blog/edit-website-content-wordpress/">how to edit your website content</a>.</p>
+<h2>FAQs</h2>
+<h3>Why are my WordPress changes not showing?</h3>
+<p>Usually a cache is still serving the old page. Clear your caching plugin, host cache and CDN, then check in a private window. If the change still isn't there, confirm it saved, and check you edited the right template, language or site rather than a staging copy.</p>
+<h3>Why are my WordPress changes not showing on mobile?</h3>
+<p>Either the page builder has a tablet or mobile setting overriding your change, the caching plugin keeps a separate mobile cache, or your phone's browser has an old copy. Check responsive mode in the editor, purge all caches and test in a private tab on mobile data.</p>
+<h3>Why can I see my changes but visitors can't?</h3>
+<p>Logged-in administrators usually bypass the page cache, so you see the latest version while visitors get a cached copy. Purge the caching plugin, server cache and CDN, then check while logged out.</p>
+<h3>Why are my WordPress revisions not showing?</h3>
+<p>Revisions only appear after a post has been saved more than once, and they can be switched off with WP_POST_REVISIONS in wp-config.php or limited by your host. Page builders keep their own history too: in Elementor, check the History panel's Revisions tab.</p>
+<h3>How do I clear the cache in WordPress?</h3>
+<p>Use Purge All in your caching plugin, then the purge option in your hosting panel, then purge your CDN, such as Cloudflare, if you use one. Finish with a hard refresh in your browser. If you're not sure which caches your site has, your host's support can tell you what runs at server level.</p>
+<h3>How long until changes show in Google search results?</h3>
+<p>Only after Google recrawls the page, which can take from days to a few weeks. Requesting indexing in Search Console's URL Inspection tool usually speeds it up for an important page.</p>
+
+<p>Still seeing the old version, or not sure which layer is responsible? I can trace where the page really comes from and fix it at the source. Updates, small changes and problems like this are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and builder-specific issues are covered under <a href="/elementor-developer/">Elementor development</a>.</p>
 `,
   },
   {

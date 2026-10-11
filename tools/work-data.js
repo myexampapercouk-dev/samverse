@@ -637,7 +637,7 @@ module.exports = [
     url: 'https://samverse.space/',
     industry: 'Portfolio & Lead Generation',
     thumb: '/assets/og-image.png',
-    metaDescription: 'Case study: samverse.space, a fast, search-focused WordPress portfolio and lead generation site with service pages, a blog and a cost calculator.',
+    metaDescription: 'Case study: samverse.space, a fast, custom-coded portfolio and lead generation site with service pages, a blog, case studies and a cost calculator.',
     summary: 'The site you\'re reading: a fast, search-focused portfolio and lead generation website for my own freelance business, with service and industry pages, a blog, case studies and a cost calculator.',
     client: 'Samverse is my own freelance WordPress development business. The website needed to explain services clearly to very different buyers, prove experience with real work, rank for high-intent searches and turn visitors into enquiries.',
     goals: [
