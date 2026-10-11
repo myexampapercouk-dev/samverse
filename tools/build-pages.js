@@ -82,9 +82,20 @@ const card = x => `<a class="industry" href="/${x.slug}/"><h3>${esc(x.nav)}</h3>
 
 // "In depth" section (tools/pages-details.js)
 const DETAILS = require('./pages-details');
+// Long-form guide for a landing page (keyed by slug): blog-style HTML (h2/h3/p/ul/ol/table/a)
+const GUIDES = require('./pages-guides');
 const depthFor = p => {
+  const g = GUIDES[p.slug];
+  const guide = g ? `    <section class="section lp-guide">
+      <div class="container">
+        <div class="post-body lp-guide-body">
+${g.trim()}
+        </div>
+      </div>
+    </section>
+` : '';
   const d = DETAILS[p.slug];
-  if (!d) return '';
+  if (!d) return guide;
   return `    <section class="section depth">
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">In depth</span><h2>${esc(d.title)}</h2></div>
@@ -93,7 +104,7 @@ ${d.items.map(([h, t], i) => `          <article class="depth-item reveal"><span
         </div>
       </div>
     </section>
-`;
+` + guide;
 };
 
 // Blog posts that recommend this landing page
