@@ -150,6 +150,28 @@
             <li>Free website cost calculator, glossary and key takeaways on every article</li>
             <li>Per-page social share images, mobile-first design and Lighthouse SEO score of 100</li>
           </ul>
+          <h2>How the site is organised</h2>
+          <p>The homepage works as a summary of the whole business. Under the headline &quot;Hi, I'm Sameer Gupta. I build WordPress websites that work.&quot; it moves through an About section, seven skills, four featured industries, nine selected projects, a short description of how a project runs, recent articles, six FAQs and the contact form, with each block linking to a deeper page.</p>
+          <p>Behind the homepage sit more than 20 service and industry pages, each written for one kind of buyer: an agency that needs white-label help, a clinic, a manufacturer, a restaurant, or a business owner whose site has been hacked. They share one layout, from benefits and inclusions to related case studies, a FAQ and blog guides, and all end at the same contact form. A /solutions/ page lists every one of them, and a dozen case studies, including this one, live under /work/.</p>
+          <h2>Hundreds of pages from simple data files</h2>
+          <p>The site has no CMS and no database. Service pages, articles and case studies are entries in plain JavaScript data files, and a Node.js build script turns them into static HTML that Netlify serves as ordinary files. I set it up this way so that adding a page takes one entry and one build, and the header, footer, contact form and styling stay identical everywhere.</p>
+          <p>The same build writes structured data for each type of page: Service, FAQPage and BreadcrumbList on the landing pages, BlogPosting on articles, CreativeWork on case studies, WebApplication on the cost calculator and DefinedTermSet on the glossary. It also regenerates the sitemap, the blog's RSS feed and an llms.txt file that describes the site for AI assistants. A separate script creates a 1200 by 630 pixel share image for every article, landing page and case study, and another submits every URL in the sitemap to IndexNow so that Bing and Yandex hear about new pages after a deploy.</p>
+          <p>The blog holds more than 570 articles grouped into six topics: planning and costs, SEO and growth, speed, security and maintenance, e-commerce, industry guides, and guides for agencies. Each article shows its read time, three key takeaways, an &quot;On this page&quot; contents list, a FAQ, related articles and services, and previous and next links within its topic.</p>
+          <h2>Enquiries without spam or lost leads</h2>
+          <p>Many business owners would rather talk on WhatsApp than wait for an email reply, so the contact form is built around it. It asks for a name, a phone or WhatsApp number, an optional email, a project type and a message. When it is sent, a Netlify Function emails the enquiry to Gmail through Nodemailer, and the browser then opens WhatsApp with the same details already typed in. If the email step fails, WhatsApp still opens, so a mail error never costs an enquiry.</p>
+          <p>Spam protection works without reCAPTCHA. The form has a hidden honeypot field that only bots fill in, a simple addition question with a button for a new one, and a check that quietly drops anything submitted within three seconds of the page loading.</p>
+          <p>The free website cost calculator is a second way in. A visitor picks a landing page, a business website, a large B2B site or a WooCommerce store, sets the number of pages (and products, for a store), ticks extras such as a booking system, online payments or multiple languages, and watches a price range in rupees update as they go. The &quot;Get an Exact Quote on WhatsApp&quot; button sends that selection as a message, so the conversation starts with a brief. Alongside it, a 40-term glossary explains words like DNS, caching and Core Web Vitals in plain English.</p>
+          <h2>What other freelancers and small businesses can take from this</h2>
+          <p>Give each service and each type of customer its own page instead of one long services page, and link everything together: articles point to the services they relate to, service pages list relevant articles and case studies, and case studies link back to services. If you publish prices, label them clearly as a guide, as the calculator does.</p>
+          <p>If your enquiries usually move to WhatsApp, send them there straight from the form while keeping an email copy, and try light spam checks before adding a captcha that real visitors find annoying. A static build is not right for every business, but for a content-heavy site run by one person it keeps hosting simple and every page consistent.</p>
+          <h2>Related reading</h2>
+          <ul class="cs-built">
+            <li><a href="/blog/portfolio-website-freelancers-creatives/" class="link-inline">Portfolio Websites for Freelancers, Photographers and Creatives</a></li>
+            <li><a href="/blog/schema-markup-explained/" class="link-inline">Schema Markup Explained: How Structured Data Helps Your Website in Google</a></li>
+            <li><a href="/blog/website-calculators-lead-generation/" class="link-inline">Website Calculators for Lead Generation: EMI, Savings and Quote Estimators</a></li>
+            <li><a href="/blog/stop-contact-form-spam/" class="link-inline">How to Stop Contact Form Spam on Your WordPress Website</a></li>
+            <li><a href="/blog/internal-linking-explained/" class="link-inline">Internal Linking Explained: How Linking Your Own Pages Helps SEO</a></li>
+          </ul>
         </div>
         <aside class="cs-side">
           <dl>
