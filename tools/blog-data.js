@@ -16203,12 +16203,13 @@ wp plugin verify-checksums --all</code></pre>
     title: 'Hotel Booking Engine and Channel Manager Explained: How They Work With Your PMS, Website and OTAs',
     description: 'What a hotel booking engine, channel manager and PMS do, how they connect your website and OTAs, what to check before choosing, and how to avoid overbooking.',
     date: '2026-09-27',
-    updated: '2026-10-10',
+    updated: '2026-10-11',
     category: 'Industries',
     related: ['hotel-website-design', 'wordpress-website-development', 'landing-page-design'],
     body: `
 <p>Hotels, resorts and homestays that want direct bookings need more than a good-looking website. They need a way to take reservations online and keep room availability in sync with Booking.com, MakeMyTrip, Agoda, Airbnb and the other sites they sell on. That's the job of a booking engine and a channel manager, usually working alongside a property management system (PMS).</p>
 <p>The three are often confused, and many providers sell them together. This guide explains what each one does, how they connect, what to check before choosing, and the mistakes that lead to overbookings.</p>
+<p><strong>Booking engine vs channel manager, in short:</strong> a booking engine is the booking system on your own website, so guests can book and pay you directly without OTA commission. A channel manager sits between you and the OTAs, keeping rates and availability in sync everywhere so the same room isn't sold twice. They do different jobs and work best together: the booking engine sells direct, and the channel manager keeps every channel, including your booking engine, up to date.</p>
 
 <h2>Booking engine vs channel manager vs PMS</h2>
 <table>
@@ -16220,6 +16221,19 @@ wp plugin verify-checksums --all</code></pre>
   </tbody>
 </table>
 <p>In short: the booking engine sells rooms on your website, the channel manager keeps every sales channel up to date, and the PMS runs the property.</p>
+
+<h3>Booking engine vs channel manager: side by side</h3>
+<table>
+  <thead><tr><th></th><th>Booking engine</th><th>Channel manager</th></tr></thead>
+  <tbody>
+    <tr><td>What it does</td><td>Takes reservations and payments from guests who book on your own website</td><td>Distributes your rooms, rates and restrictions to OTAs and collects the bookings they make</td></tr>
+    <tr><td>Where it lives</td><td>On your website, as a search widget and booking pages, ideally on your own domain or a subdomain</td><td>Behind the scenes, between your PMS or inventory calendar and each OTA; guests never see it</td></tr>
+    <tr><td>Who pays commission</td><td>No OTA commission on direct bookings; you pay the provider's subscription or per-booking fee, plus payment gateway charges</td><td>The OTAs still charge you their commission on bookings made through them; the channel manager itself usually has its own subscription fee</td></tr>
+    <tr><td>What it syncs</td><td>Reads availability and rates from your PMS or channel manager, and sends direct bookings back to them</td><td>Pushes availability, rates and restrictions out to every connected OTA, and pulls in bookings, modifications and cancellations</td></tr>
+    <tr><td>Why you need it</td><td>To earn commission-free direct bookings and keep the guest relationship with your property</td><td>To sell on several OTAs without overbooking or updating each extranet by hand</td></tr>
+  </tbody>
+</table>
+<p>Pricing models for both vary between providers, and many sell them as one package, so compare what is included and the total cost at your expected booking volume.</p>
 
 <h2>What a booking engine does</h2>
 <p>A booking engine is the "Check availability" and "Book now" part of your website. A good one lets guests:</p>
@@ -16333,6 +16347,18 @@ wp plugin verify-checksums --all</code></pre>
   <li>WordPress booking plugins can suit small properties, but many only offer iCal sync, so check before relying on one for several OTAs</li>
 </ul>
 <p>For the rest of the direct booking picture, see <a href="/blog/hotel-website-direct-bookings/">getting more direct hotel bookings</a> and the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+
+<h2>Getting the mix of direct and OTA bookings right</h2>
+<p>OTAs and direct bookings are two channels with different jobs rather than rivals. OTAs bring visibility, especially with first-time and out-of-town guests who start their search there, but every booking carries commission. Direct bookings cost less per booking and give you the guest relationship, but you have to earn that traffic through your website, Google and repeat guests.</p>
+<p>There's no ideal ratio that suits every property; it depends on your location, season, type of guest and how much effort goes into your own marketing. A practical approach:</p>
+<ul>
+  <li><strong>Track bookings by channel every month</strong>, looking at net revenue after commission, payment fees and booking engine charges, not just the number of bookings</li>
+  <li><strong>Use OTAs to fill gaps</strong>, such as weekdays, the off-season or last-minute dates, while keeping your own website competitive on rate and perks</li>
+  <li><strong>Win the next booking direct</strong> by giving OTA guests a great stay and making it easy to rebook on your website, within what your OTA agreements allow</li>
+  <li><strong>Keep the channel manager in charge of inventory</strong>, so you can open or close channels for particular dates without risking overbookings</li>
+  <li><strong>Check your OTA contracts</strong> before changing rates or restrictions by channel, since parity and promotion terms vary by platform</li>
+</ul>
+<p>The booking engine and channel manager are what make this balance manageable: one gives guests a reliable way to book direct, and the other lets you sell everywhere else from a single set of rooms and rates.</p>
 
 <h2>Give guests a reason to book direct</h2>
 <ul>
@@ -25036,15 +25062,19 @@ Template: astra
 </ul>
 <p>Whichever you choose, hold each vendor's earnings until the return window closes, so you aren't chasing money for refunded orders, and give vendors a clear statement of sales, commission, fees and payouts. How you hold and move sellers' money can have regulatory implications too, so check your setup with your CA and your gateway. For the basics, see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a> and <a href="/blog/payment-gateways-india-compared/">how to compare payment gateways</a>.</p>
 
-<h2>Vendor onboarding, KYC and quality control</h2>
-<p>A marketplace is judged by its weakest seller. Build a simple, firm process:</p>
+<h2>WooCommerce vendor onboarding: a step-by-step checklist</h2>
+<p>A marketplace is judged by its weakest seller. Build a simple, firm process, and make each step something your multi-vendor plugin or your team can tick off before a seller goes live:</p>
 <ol>
-  <li><strong>Application:</strong> business details, what they sell and sample photos</li>
-  <li><strong>KYC:</strong> PAN, GSTIN where applicable, business address and bank details, verified before the first payout. Some categories need specific licences, such as food safety registration for food sellers, so check what applies in your niche</li>
-  <li><strong>Agreement:</strong> commission, dispatch times, returns, prohibited items and what happens if standards slip</li>
-  <li><strong>Listing guidelines:</strong> photo and description standards, with new products approved before they go live</li>
+  <li><strong>Application:</strong> business details, what they sell and sample photos. Most multi-vendor plugins include a vendor registration form you can extend with your own fields, such as category, location and expected catalogue size</li>
+  <li><strong>KYC:</strong> PAN, GSTIN where applicable, business address and bank details, verified before the first payout. Some categories need specific licences, such as food safety registration for food sellers, so check what applies in your niche. Which documents to collect, and whether a seller must be GST-registered, depends on your model and on rules that change, so agree the list with your CA</li>
+  <li><strong>Approval:</strong> review each application yourself, at least in the early months, rather than auto-approving every sign-up. Check that the documents match the business name and bank account, and tell rejected applicants why</li>
+  <li><strong>Store profile setup:</strong> store name, logo, banner, pickup address, shipping zones and rates, dispatch time and return policy. A complete profile builds buyer trust and gives you the seller details that e-commerce rules generally expect marketplaces to show</li>
+  <li><strong>First product review:</strong> hold the vendor's first listings for approval against your photo and description standards, and check category, price, stock, weight and tax settings. Keep new products on approval until the vendor has shown they list well</li>
+  <li><strong>Commission and payout terms acceptance:</strong> before the store goes live, the vendor accepts (or reconfirms, if they ticked a box at registration) the vendor agreement: commission, gateway fees, payout schedule and holding period, dispatch times, returns, prohibited items and what happens if standards slip. Keep a record of which version they accepted and when</li>
+  <li><strong>Test order:</strong> place a real order for one of their products and check that the vendor gets the notification, ships on time, the invoice details are correct and their dashboard shows the right earnings after commission. Run a test refund too</li>
 </ol>
 <p>Give vendors a role with only the access they need, never admin rights; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>. Store KYC documents securely and explain how you use them in your privacy policy. Many small vendors struggle with product photos and descriptions, so offering help lifts quality across the whole site.</p>
+<p>Turn the checklist into a short seller guide or welcome email, so vendors know what to prepare before they apply and onboarding doesn't stall waiting for documents.</p>
 
 <h2>GST, TCS and legal basics for Indian marketplaces</h2>
 <p>A marketplace in India carries obligations that a normal online store doesn't. In broad terms, and subject to current rules, which do change:</p>
@@ -25090,6 +25120,8 @@ Template: astra
 <p>In general, e-commerce operators that must collect TCS are required to register under GST regardless of turnover, but the rules depend on your model and change over time. Confirm with your CA before launch.</p>
 <h3>Can vendors be paid automatically?</h3>
 <p>Yes, through gateway marketplace products that split payments, if your plugin supports them and the gateway approves your account. Many marketplaces start with manual scheduled payouts and automate once volumes justify it.</p>
+<h3>What do sellers need to join a WooCommerce marketplace?</h3>
+<p>Each marketplace sets its own requirements, but sellers are commonly asked for business details, PAN, a GSTIN where applicable, a business address, bank details for payouts and any licence their category needs, plus product photos and descriptions that meet the listing guidelines. They also accept the vendor agreement covering commission and payouts. GST and document requirements depend on the model and change over time, so marketplace owners should confirm the list with a CA.</p>
 
 <p>Planning a marketplace and want it built on a setup that can grow? I set up and customise WooCommerce marketplaces, test multi-vendor orders, refunds and payouts on staging before launch, and explain each choice in plain language. See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/website-for-startups/">websites for startups</a> if you're launching a new venture.</p>
 `,
