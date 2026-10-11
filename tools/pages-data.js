@@ -58,6 +58,10 @@ const PAGES = [
       ['Will my clinic show up on Google?', 'I set up on-page SEO, schema markup for medical practices, a sitemap and Search Console, and help link your Google Business Profile. That gives you the right foundation for local searches.'],
       ['How long does a clinic website take?', 'Usually 1–2 weeks once I have your content: photos, qualifications and the list of treatments.'],
       ['Can you write the content for the site?', 'I can structure the pages and help polish your content. Medical details should come from you so they are accurate.'],
+      ['I already have a Practo profile. Do I still need a website?', 'A directory profile helps patients who already search on that platform, but it sits on someone else\'s page, often next to other doctors, with little room to explain what you treat. Your own website can explain each condition and procedure, send bookings straight to your clinic and link to your directory profile, so the two work together.'],
+      ['Should my registration number be on the website?', 'I recommend it. Your registration number, along with your degrees and the university and year of each, lets patients check who they are booking with. I place it on the doctor profile, and suggest checking the current NMC guidance for anything else your profile should state.'],
+      ['Can one website cover several doctors or clinic locations?', 'Yes. Each doctor can have a profile with their own qualifications and specialty, and each location its own timings, address, map and booking number. Each location should also match its own Google Business Profile.'],
+      ['Can patients send reports or prescriptions through the website?', 'It is possible, but I usually advise against collecting medical documents through an open website form, because they are sensitive personal data that need careful storage and access control. A simpler route is to ask patients to bring reports to the visit or share them through the channel your clinic already uses for patient records.'],
     ],
   },
   {
