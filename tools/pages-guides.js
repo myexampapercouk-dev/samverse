@@ -946,4 +946,327 @@ module.exports = {
 </ul>
 <p>Send me your website address for a free review and a fixed quote.</p>
 `,
+  'website-for-schools-and-coaching': `
+<h2>Building a school or coaching institute website, in detail</h2>
+<p>Admission decisions start with a phone search, often by a parent comparing three or four institutes in one evening. This is how I plan and build websites for schools, junior colleges and coaching institutes: the admission flow, course and batch pages, honest results, notices, photo consent and local search. <a href="/blog/school-coaching-website-what-parents-look-for/">What parents and students look for</a> covers the visitor's side.</p>
+<h2>An education website project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send your current site or prospectus, your courses or classes, branches and the admission dates you are working towards.</li>
+<li><strong>Page plan.</strong> We agree the courses, admission steps, results format and which pages need Hindi or a regional language.</li>
+<li><strong>Content and consent.</strong> Course details, faculty profiles, results and photos, with written consent collected for every student shown.</li>
+<li><strong>Build on staging.</strong> Course templates, the enquiry form, notice board, events and galleries, all editable by your staff.</li>
+<li><strong>Testing.</strong> Test enquiries sent to each branch, pages checked on budget phones, and Search Console connected.</li>
+<li><strong>Launch and staff training.</strong> A video call showing your office team how to post notices, results and gallery albums.</li>
+</ol>
+<h2>School or coaching institute: what each site needs</h2>
+<table>
+<thead><tr><th></th><th>School or junior college</th><th>Coaching institute</th></tr></thead>
+<tbody>
+<tr><td>Who decides</td><td>Mostly parents</td><td>Students and parents together</td></tr>
+<tr><td>Most-read pages</td><td>Admissions, facilities, safety, transport, notices</td><td>Courses, batches, faculty, results, demo class</td></tr>
+<tr><td>Main action</td><td>Admission enquiry or campus visit</td><td>Demo class or counselling booking</td></tr>
+<tr><td>Busy season</td><td>Before the admission window opens</td><td>After board and entrance results, and before new batches</td></tr>
+<tr><td>Ongoing updates</td><td>Circulars, holidays, events, galleries</td><td>New batches, test schedules, results</td></tr>
+</tbody>
+</table>
+<h2>Admissions and enquiry flows</h2>
+<p>An admissions page should answer everything a parent would otherwise phone about: eligibility, the steps in order, documents needed and key dates, with dates your staff can change in one place. The enquiry form then asks only what your counsellor needs before calling:</p>
+<ul>
+<li>Student name, class or course of interest, and the parent's phone number.</li>
+<li>The preferred branch, so the enquiry reaches the right office.</li>
+<li>A "how did you hear about us?" question. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a> uses one on its enquiry form, which shows which channels bring enquiries.</li>
+</ul>
+<p>Each enquiry is emailed instantly, can open a WhatsApp chat, and can also go to a Google Sheet or CRM; <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a> help when you need more detail without a long form. For demo classes, a booking form with a date and session dropdown works well: <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta's</a> clinic site asks patients for a preferred date and time slot in the same way. During admission season, paid campaigns deserve their own <a href="/landing-page-design/">landing pages</a>.</p>
+<h2>Course, batch and fee pages</h2>
+<p>Give each course or class group its own page with the syllabus covered, duration, batch timings, mode (classroom, online or hybrid), medium of instruction, batch size and the faculty who teach it. Batches change often, so they sit in a simple table staff can edit. <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's</a> course page is a useful pattern from another field: it says group sessions run in Hindi on Saturday mornings and in English on Sunday afternoons, and states that there is a one-time enrolment fee with no monthly or hidden charges, answering the money question before anyone asks.</p>
+<p>Whether you publish fee amounts is your decision. Either way, explain the fee structure: what is included, whether instalments are possible and your refund policy, and say clearly if figures are shared on enquiry.</p>
+<h2>Results and toppers, handled honestly</h2>
+<p>Results persuade parents more than anything else, which is why inflated claims backfire when someone checks. On the sites I build, results pages follow a few rules:</p>
+<ul>
+<li>Each result names the exam, the year and the course the student actually took with you, such as a full classroom programme or a short test series.</li>
+<li>Names and photos appear only with the student's written consent, and a parent's for minors.</li>
+<li>Only your own students, and percentages only when you can show how they were calculated.</li>
+</ul>
+<p>India's consumer protection authority has issued guidelines on coaching advertisements that cover consent and disclosure of the course taken, so check the current version with your adviser.</p>
+<h2>Notices, events and galleries</h2>
+<p>The notice board is set up as its own section with categories such as circulars, holidays and exam schedules, so old notices move to an archive instead of cluttering the homepage. Circulars can be attached as PDFs, with the key points also typed on the page so they read well on phones. Events get a calendar, and each event gets its own gallery album with photos compressed so the page loads on mobile data; <a href="/blog/prepare-photos-for-website/">preparing photos for a website</a> explains how.</p>
+<h2>Photo consent for children</h2>
+<p>Children's photos need more care than any other content on the site. I recommend a photo consent line in your admission form, with an option to opt out, and a register of students who must not appear. Avoid pairing a child's full name with their photo, choose group shots over close-ups, and remove any photo quickly when a parent asks. India's data protection law expects verifiable parental consent for children's personal data; <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a> explains the basics in plain English.</p>
+<h2>Local SEO for coaching institutes</h2>
+<p>Students search by exam and area, such as "NEET coaching in Kothrud". Each branch gets its own page with its address, batches, faculty and directions, linked to its own Google Business Profile. Branch pages must be genuinely different, not copies with the area name swapped; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a>. Reviews come from real students and parents you ask, never written for you. For ongoing search work, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<h2>Hindi and regional language options</h2>
+<p>Many parents read Hindi, Marathi or another regional language more comfortably than English. You do not need to translate everything: admissions, fees, contact and notices are usually enough to start. Each language gets its own URLs and fonts tested for Devanagari or the relevant script. <a href="/work/our-temples/">Our Temples</a> shows temple names and sections such as history and festivals in Hindi and Telugu as well as English. <a href="/blog/multilingual-wordpress-website-hindi-english/">Multilingual WordPress websites</a> covers the setup.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every education site includes. These are separate or come from you:</p>
+<ul>
+<li><strong>School ERP features</strong> such as attendance, report cards and timetables; your existing system can be linked from the site.</li>
+<li><strong>Recording course videos.</strong> An LMS can be added and is quoted separately.</li>
+<li><strong>Results, fees and consent forms,</strong> which must come from you so they are accurate.</li>
+<li><strong>Photography, translation and running ads.</strong></li>
+</ul>
+<h2>How long it takes</h2>
+<p>A coaching institute or small school site usually takes 1 to 2 weeks once content is ready. A larger school or a multi-branch institute with online payments takes 2 to 4 weeks, and Hindi or regional versions or an LMS add more. Collecting consent and results often takes longer than the build, so start well before admission season.</p>
+<h2>Who it is for</h2>
+<p>Schools, junior colleges, coaching institutes for board, JEE, NEET and competitive exams, tuition classes and multi-branch chains, and institutes whose current site still shows last year's dates.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Your courses or classes with batch timings, duration and medium of instruction.</li>
+<li>The admission process, documents and dates, and who handles enquiries at each branch.</li>
+<li>Results with signed consent forms, and faculty details each teacher has approved.</li>
+<li>Real campus photos with parental consent for any child shown.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A website on hosting in your institute's name, with notices, results and galleries your staff can update.</li>
+<li>Enquiry and demo forms tested to reach each branch, with WhatsApp follow-up.</li>
+<li>Search Console connected, a staff walkthrough and a full backup.</li>
+</ul>
+<p>Send me your prospectus or current website for a free review and a fixed quote.</p>
+`,
+  'website-for-startups': `
+<h2>Building a startup website, in detail</h2>
+<p>A startup website serves early customers, investors and future hires at once, and its messaging changes every few weeks. This is how I plan and build startup websites on WordPress, what to launch with and what can wait. The <a href="/blog/startup-website-checklist/">startup website checklist</a> is the short version.</p>
+<h2>A startup website project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send your pitch deck or a one-page summary, two or three sites you like, and the one action you want visitors to take.</li>
+<li><strong>Messaging and page plan.</strong> We agree a one-sentence positioning line, the primary call to action, and which pages launch now and which come later.</li>
+<li><strong>Design.</strong> The homepage first, from your Figma file or brand guidelines, shared for feedback before the rest is built.</li>
+<li><strong>Build on staging.</strong> Reusable templates for feature, use-case and landing pages, with forms connected to your CRM or email tool.</li>
+<li><strong>Tracking and testing.</strong> GA4 and Search Console set up, every form tested end to end, and each page checked on real phones.</li>
+<li><strong>Launch and handover.</strong> A video call shows your team how to edit pages, publish posts and duplicate a landing page.</li>
+</ol>
+<h2>An MVP marketing site or a full build?</h2>
+<p>Most startups should launch small and grow the site as they learn. An MVP marketing site is home, product or features, pricing if you sell self-serve, about, contact and the legal pages, with one primary call to action and only the proof you genuinely have, such as pilots, partners or press. A full build adds use-case pages, integrations, customer stories, security, careers and a blog.</p>
+<p>The full build makes sense once your positioning holds steady and you know which audiences convert; persona pages written before anyone has used the product usually get rewritten. At the MVP stage, what matters is templates built to grow, so a new page means duplicating a template, not starting again.</p>
+<h2>Product and features pages</h2>
+<ul>
+<li><strong>Group features by the problem they solve,</strong> not internal module names, each with a screenshot.</li>
+<li><strong>One use-case page per audience</strong> once you sell to more than one, each written in that buyer's words.</li>
+<li><strong>Integrations and security pages,</strong> which B2B buyers check before a call.</li>
+<li><strong>Pricing with an FAQ</strong> on billing, trials and cancellation, or a clear "talk to us" route if pricing is custom.</li>
+</ul>
+<p>Keep the marketing site separate from the app, for example at app.yourdomain.com, so a website change never breaks a login. <a href="/blog/website-for-saas-startups/">Websites for SaaS startups</a> covers each page. On <a href="/work/third-eye-social/">Third Eye Social</a>, an AI automation agency, each agent type has a card naming the software it works with, such as HubSpot or Zendesk, so buyers see at a glance whether it fits their tools.</p>
+<h2>Waitlist and demo-booking flows</h2>
+<p>Before launch the main action is usually a waitlist; after launch, a sign-up or demo request. Both should take seconds on a phone.</p>
+<ul>
+<li><strong>Waitlist:</strong> an email field and perhaps one question, sent to your email tool, with a thank-you page saying what happens next.</li>
+<li><strong>Demo booking:</strong> a short form followed by a calendar booking step, with the lead created in your CRM so nobody copies details by hand. <a href="/blog/connect-website-forms-to-crm/">Connecting forms to a CRM</a> covers the common setups.</li>
+<li><strong>Something for visitors not ready to talk:</strong> <a href="/work/streak-creative/">Streak Creative</a> offers a growth blueprint request form and a monthly newsletter beside its "Let's Talk" buttons. <a href="/blog/lead-magnets-newsletter-small-business/">Lead magnets and newsletters</a> explains the approach.</li>
+</ul>
+<p>If your buyers prefer to chat, a booking button can open WhatsApp instead, as the "Book a Call" buttons on Third Eye Social do.</p>
+<h2>Pitch and investor pages</h2>
+<p>Investors and early hires read the homepage and About page closely: what you do, who the founders are, and whether the company is real. A short investor or press page helps, with a company summary, founder bios, logos and screenshots to download, and a contact address. Share the full pitch deck privately rather than publishing it, and only show traction figures you would defend in a meeting.</p>
+<h2>Analytics from day one</h2>
+<p>Tracking added months later misses the early data that shows which channels work. At launch I set up GA4 and Search Console in your accounts and track sign-ups, waitlist joins and demo requests as key events, counted on successful submissions rather than button clicks, with UTM tags on campaign links. <a href="/blog/ga4-events-explained/">GA4 events explained</a> shows how events work. If you collect personal data, the privacy policy and any cookie consent belong in place from the start.</p>
+<h2>WordPress, Webflow or custom code?</h2>
+<table>
+<thead><tr><th></th><th>WordPress</th><th>Webflow</th><th>Custom-coded</th></tr></thead>
+<tbody>
+<tr><td>Time to launch</td><td>Fast</td><td>Fast</td><td>Slower; every feature is built</td></tr>
+<tr><td>Editing by marketing</td><td>Easy with a visual builder or blocks</td><td>Easy for content in its Editor</td><td>Usually needs a developer or a separate CMS</td></tr>
+<tr><td>Hosting and ownership</td><td>Any host; move whenever you like</td><td>Hosted by Webflow on a subscription</td><td>Wherever your team deploys it</td></tr>
+<tr><td>Integrations</td><td>Tens of thousands of plugins</td><td>Smaller app ecosystem</td><td>Whatever you build</td></tr>
+<tr><td>Best for</td><td>Content-led growth, campaigns, multilingual sites, Indian payment gateways</td><td>Design-led sites with a Webflow-savvy team</td><td>When the website is the product, such as a web app</td></tr>
+</tbody>
+</table>
+<p>For most startup marketing sites I recommend WordPress: your team can run it without engineering time. <a href="/blog/wordpress-vs-webflow/">WordPress vs Webflow</a> and <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs a custom-coded website</a> compare them in depth. If your designer already works in Figma, see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+<h2>Scaling later: content, blog and languages</h2>
+<p>Later, the site grows three ways. A blog about the problems your product solves, organised into topic clusters, brings search visitors over time. Campaign landing pages test offers without touching the main site; see <a href="/landing-page-design/">landing page design</a>. Extra languages come when you actually serve those markets, each on its own URL with hreflang tags. All three are easier when the first build used consistent templates and global styles.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page covers what a startup site includes. These are separate or come from you:</p>
+<ul>
+<li><strong>Your app or product.</strong> Screens and dashboards inside the product stay with your engineering team.</li>
+<li><strong>Positioning and facts.</strong> I structure pages and sharpen copy; claims, metrics and customer names come from you.</li>
+<li><strong>Legal wording.</strong> I add the privacy and terms pages; the text should come from you or your lawyer.</li>
+<li><strong>Paid tools and ads,</strong> such as CRM or email subscriptions, and running campaigns.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>A waitlist or launch page usually takes 3 to 5 working days, an MVP site of five to eight pages 1 to 2 weeks, and a fuller site with use-case pages, integrations and a blog 2 to 4 weeks, counted from when content is ready. Extra languages, custom features, changing messaging and slow feedback stretch it. If you have a launch date, tell me at the start; the essential pages can go live first.</p>
+<h2>Who it is for</h2>
+<p>Founders preparing to launch, raise or hire; SaaS and product startups that need sign-ups or demo requests; and startups whose first site was rushed and no longer matches what they sell. If you only need one campaign page, a landing page is the faster start.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Your pitch deck or a one-page summary of the problem, customer and difference.</li>
+<li>Brand assets or a Figma file, and two or three sites you like.</li>
+<li>Product screenshots, and any proof you can share publicly.</li>
+<li>The CRM, email and calendar tools you use, with user access rather than shared passwords.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A fast WordPress site on hosting and a domain in your company's name.</li>
+<li>Waitlist, sign-up or demo forms tested end to end and connected to your tools.</li>
+<li>GA4 and Search Console tracking key events, and templates your team can reuse for new pages.</li>
+<li>A walkthrough on editing and adding pages, and a full backup.</li>
+</ul>
+<p>Send me your pitch deck or product summary for a free review and a fixed quote.</p>
+`,
+  'website-redesign': `
+<h2>Redesigning a website without losing what works</h2>
+<p>A redesign is the riskiest thing most businesses do to their website. The new design rarely causes trouble; the losses come from pages quietly removed, URLs changed without redirects, or a staging setting left on at launch. This is how I run a redesign so the pages that already bring traffic and enquiries survive it.</p>
+<h2>A redesign project, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send your website address and what is not working. If a refresh would do the job, I will say so.</li>
+<li><strong>Audit.</strong> With access to Search Console and GA4, I record which pages bring visitors, rankings and enquiries today.</li>
+<li><strong>Structure and redirect map.</strong> A new page list and navigation, with every old URL marked keep, redirect or merge.</li>
+<li><strong>Design.</strong> The homepage and one key inner page first, shared for your feedback before the rest is built.</li>
+<li><strong>Build on staging.</strong> Content moved across and improved, then a review round and your sign-off.</li>
+<li><strong>Launch and monitoring.</strong> The launch-day checklist, then Search Console checked closely over the following weeks.</li>
+</ol>
+<h2>Refresh, redesign, or a redesign with a platform move?</h2>
+<table>
+<thead><tr><th></th><th>Refresh</th><th>Redesign</th><th>Redesign with a platform move</th></tr></thead>
+<tbody>
+<tr><td>What changes</td><td>Content, photos, calls to action and some design details</td><td>Design, structure, navigation and key page content</td><td>Everything, including the system the site runs on</td></tr>
+<tr><td>URLs</td><td>Stay the same</td><td>Mostly kept; changed ones redirected</td><td>Usually change; every one redirected</td></tr>
+<tr><td>Risk to rankings</td><td>Low</td><td>Moderate without a redirect map</td><td>Highest without a redirect map</td></tr>
+<tr><td>Best when</td><td>Problems are specific: dated photos, weak buttons, slow pages</td><td>The site is not built for phones, or no longer fits what you sell</td><td>The current platform blocks what you need, such as Wix or an old custom CMS</td></tr>
+</tbody>
+</table>
+<p><a href="/blog/website-refresh-vs-redesign/">Website refresh vs redesign</a> has a short decision test, and <a href="/blog/redesign-website-tight-budget/">redesigning on a tight budget</a> shows how to phase the work. When the platform changes, the move follows my <a href="/wordpress-migration/">WordPress migration</a> process.</p>
+<h2>The audit before any design</h2>
+<p>Before anyone opens a design tool, I record a baseline:</p>
+<ul>
+<li><strong>Search Console Performance:</strong> the pages and searches that earn clicks over the last twelve months. These pages get the most care.</li>
+<li><strong>Search Console Links:</strong> pages other websites link to, which must keep working or redirect.</li>
+<li><strong>GA4:</strong> landing pages that lead to enquiries, form submissions or WhatsApp clicks, not just visits.</li>
+<li><strong>A full crawl and the sitemap:</strong> every URL, including PDFs and images that get search traffic.</li>
+<li><strong>Speed and enquiries:</strong> PageSpeed results for key templates, and roughly how many enquiries arrive each month.</li>
+</ul>
+<p><a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a> shows where each figure lives.</p>
+<h2>The URL and redirect map</h2>
+<p>The redirect map is a spreadsheet with one row per old URL: the new URL, the action, and a note. The rules I follow:</p>
+<ul>
+<li><strong>Keep URLs that work.</strong> The safest URL is one that does not change, even if a new name looks tidier.</li>
+<li><strong>Redirect to the closest match,</strong> never everything to the homepage.</li>
+<li><strong>Merge thin or overlapping pages</strong> into one stronger page, with each old URL redirected to it.</li>
+<li><strong>Remove pages only deliberately,</strong> after checking they have no traffic or links worth keeping.</li>
+</ul>
+<h2>Restructuring the content</h2>
+<p>A redesign is the right moment to fix structure, not just looks. The menu is rebuilt around how customers choose, usually one page per service or product family, and pages nobody visits are merged or retired using the map. Content on pages that rank is kept and improved, never trimmed just to make a layout look minimal. On <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a generator rental site I built, the fleet is split into seven capacity bands, each with its own page, because buyers think in capacity first. <a href="/blog/website-navigation-structure/">Structuring your website navigation</a> covers the approach.</p>
+<h2>Staging and approval</h2>
+<p>The new site is built on a staging copy that is password-protected and blocked from search engines, while your current site stays live; <a href="/blog/staging-sites-explained/">staging sites explained</a> covers how that works. You review real pages on your own phone, not mock-ups, and send feedback as one consolidated list from one decision-maker, which keeps rounds short; see <a href="/blog/give-website-feedback-developer/">giving clear website feedback</a>. Nothing goes live until you approve it. In the last few days before launch, changes to the old site are paused or noted so they can be copied across.</p>
+<h2>The launch-day checklist</h2>
+<ul>
+<li>A full backup of the old site, kept until the new one has settled.</li>
+<li>The "discourage search engines" setting and any noindex tags from staging removed.</li>
+<li>Every 301 redirect live, tested against the full list of old URLs.</li>
+<li>HTTPS on every page, with one preferred version of the domain.</li>
+<li>Titles, descriptions, headings and structured data present on key pages.</li>
+<li>Forms, WhatsApp buttons and phone links tested on real phones, and GA4 recording key events.</li>
+<li>A fresh sitemap submitted in Search Console, and speed checked against the baseline.</li>
+</ul>
+<p>The <a href="/blog/website-launch-checklist/">website launch checklist</a> has the full list.</p>
+<h2>Monitoring rankings after launch</h2>
+<p>For the first two weeks I check Search Console daily for 404 errors, indexing problems and redirects that were missed, and fix them straight away. After that, top pages and enquiries are compared with the baseline as Google recrawls the site. Small ranking movements for a few weeks are normal. I cannot promise rankings will not move at all; what I can make sure of is that nothing is lost through a missing redirect or a forgotten setting. <a href="/blog/redesign-website-without-losing-rankings/">Redesigning without losing rankings</a> goes through what to watch. For search work beyond the redesign, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every redesign includes, along with the audit, redirect map and post-launch monitoring. These are separate or come from you:</p>
+<ul>
+<li><strong>New features</strong> such as a store, bookings or memberships, quoted on top of the redesign.</li>
+<li><strong>Writing every page from scratch and photography.</strong> I restructure and improve existing content; new facts come from you.</li>
+<li><strong>Ongoing SEO, hosting and maintenance</strong> after the monitoring period.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>Most redesigns take 1 to 3 weeks once content is ready. Large sites, a move from another platform, heavy content rewriting and slow feedback stretch it. The audit and redirect map happen before design starts, so they never get rushed at the end.</p>
+<h2>Who it is for</h2>
+<p>Businesses whose website looks dated, is hard to use on phones, is slow or cannot be edited without a developer, especially those with traffic and enquiries worth protecting, and companies going through a rebrand. If only a few things are wrong, a refresh is the smaller, safer job.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>User access to Search Console, GA4, WordPress or your current platform, and hosting.</li>
+<li>What works today, what does not, and two or three sites you like.</li>
+<li>Services or products that have changed, and new photos or testimonials you can use.</li>
+<li>One person who gives feedback and final approval.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>A redesigned, mobile-first website you can edit yourself.</li>
+<li>The redirect map, with every old URL accounted for.</li>
+<li>A short note comparing Search Console figures with the baseline after the first weeks, and a full backup.</li>
+</ul>
+<p>Send me your website address for a free review and a fixed quote.</p>
+`,
+  'wordpress-migration': `
+<h2>WordPress migration, in detail</h2>
+<p>Most migration disasters come from small things: email records forgotten during a DNS change, a redirect sending every page to the homepage, or old hosting cancelled before anyone checked the new site. This is how I move websites between hosts, between domains and from other platforms onto WordPress, and what I check afterwards.</p>
+<h2>A migration, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send the website address, where it is hosted now, where you want it to go, and who manages your domain and email.</li>
+<li><strong>Inventory and backup.</strong> A full backup of files and database, a list of every URL, a record of every DNS record, and your current Search Console figures as a baseline.</li>
+<li><strong>Prepare the new host.</strong> The right PHP version, SSL and a staging area, with the DNS TTL lowered a day ahead so the switch spreads faster.</li>
+<li><strong>Copy and test.</strong> The site is moved, or rebuilt for a platform migration, then tested on a temporary address while the old site keeps running.</li>
+<li><strong>Switch over.</strong> A final sync of any new content or orders, then DNS is pointed to the new host, SSL is activated and redirects go live.</li>
+<li><strong>Post-move checks.</strong> The full post-move checklist, then Search Console monitoring over the following weeks.</li>
+</ol>
+<h2>Host move, platform migration or domain change?</h2>
+<table>
+<thead><tr><th></th><th>Host-to-host move</th><th>Another platform to WordPress</th><th>Domain change</th></tr></thead>
+<tbody>
+<tr><td>What changes</td><td>Where the site lives</td><td>The whole system; the site is rebuilt</td><td>The address people and Google use</td></tr>
+<tr><td>Do URLs change?</td><td>No</td><td>Usually, so every old URL needs a redirect</td><td>Yes, every one</td></tr>
+<tr><td>Main risk</td><td>Email and forms breaking after the DNS switch</td><td>Lost pages and rankings from missed redirects</td><td>A long dip if redirects are incomplete</td></tr>
+<tr><td>Typical time</td><td>1 to 3 working days</td><td>1 to 3 weeks; longer for large stores</td><td>A few days, then weeks of monitoring</td></tr>
+</tbody>
+</table>
+<h2>Moving from Wix, Blogger, Shopify and others</h2>
+<p>A platform migration is a rebuild with your content carried across, not a copy. Each platform has its own catch:</p>
+<ul>
+<li><strong>Wix</strong> has no export of its design, so pages are rebuilt in WordPress, images re-uploaded and blog posts often imported from the RSS feed; see <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a>.</li>
+<li><strong>Blogger</strong> posts and comments import well, but images hosted on Blogger must be pulled into your media library and old post URLs redirected; see <a href="/blog/migrate-blogger-to-wordpress/">moving from Blogger to WordPress</a>.</li>
+<li><strong>Shopify</strong> products, customers and orders can move to WooCommerce, but customer passwords usually cannot, and /products/ and /collections/ URLs need mapping; see <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</li>
+<li><strong>Squarespace, Joomla and static HTML</strong> follow the same pattern: list every page, move the content, map the URLs.</li>
+</ul>
+<p>Because the design is rebuilt anyway, many clients refresh it at the same time; that becomes a <a href="/website-redesign/">website redesign</a> with the migration included.</p>
+<h2>Zero-downtime steps</h2>
+<p>Visitors see no downtime because the old site keeps serving until the new one is proven. Three details make that work:</p>
+<ul>
+<li><strong>Staging and a temporary address.</strong> The copied site is tested through a preview URL or a hosts-file change on my computer before your domain points to it.</li>
+<li><strong>DNS TTL lowered in advance,</strong> so when the record changes, most visitors reach the new host within minutes to a few hours rather than a day.</li>
+<li><strong>Email records recreated exactly.</strong> If your email runs on Google Workspace, Zoho or your old host, the MX, SPF, DKIM and DMARC records are copied to the new DNS before nameservers change. This is the most common migration mistake; <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a> covers what each record does.</li>
+</ul>
+<p>For stores, the switch happens in a quiet period, and orders placed on the old site during the change are synced across.</p>
+<h2>SEO-safe redirects</h2>
+<p>On a host-to-host move nothing should change for Google, because every URL stays the same. When URLs or the domain change, I build a redirect map from your sitemap, a crawl and Search Console's top pages, then:</p>
+<ul>
+<li>Redirect each old URL to its closest new equivalent, never everything to the homepage.</li>
+<li>Use permanent 301 redirects, not temporary 302s; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
+<li>Send http, https, www and non-www versions to the final URL in one hop, with no chains.</li>
+<li>Carry over titles, descriptions, headings and structured data on pages that rank.</li>
+</ul>
+<p>For a new domain, the old domain stays registered and redirecting, and Google's Change of Address tool is used; <a href="/blog/change-domain-name-without-losing-seo/">changing your domain without losing SEO</a> goes through it.</p>
+<h2>The post-move checklist</h2>
+<ul>
+<li>SSL active on every version of the domain, with no mixed content warnings; see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content after moving to HTTPS</a>.</li>
+<li>Every form sends, and notification emails arrive, using SMTP where the new host needs it.</li>
+<li>Checkout, payment gateway webhooks and order emails tested with a real order flow.</li>
+<li>Caching suited to the new host, with old host-specific caching plugins removed.</li>
+<li>No noindex or password left from staging, a fresh sitemap submitted, and no new 404s in Search Console.</li>
+<li>Backups and uptime monitoring running on the new host, and a speed check against the old one.</li>
+<li>Old hosting kept for a week or two as a fallback, then cancelled.</li>
+</ul>
+<h2>Migrating to Hostinger</h2>
+<p>If you are moving to Hostinger, you can use its migration request in hPanel, a migration plugin or a manual transfer. I usually prefer a manual or plugin move I control, so I can test before DNS changes. After the move, its LiteSpeed Cache replaces caching plugins from your old host, and if you plan to use Hostinger email, mailboxes are set up before the MX records change. <a href="/blog/migrate-website-to-hostinger/">Migrating a WordPress site to Hostinger without downtime</a> has the full sequence. If speed was the reason for moving, <a href="/wordpress-speed-optimization/">speed optimization</a> covers what hosting alone will not fix.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every migration includes. These are separate or come from you:</p>
+<ul>
+<li><strong>Hosting, domain and email subscriptions,</strong> paid to the providers in your name.</li>
+<li><strong>Copying old mailbox contents.</strong> I keep email records working and can help coordinate a mailbox move.</li>
+<li><strong>Cleaning an infected site</strong> before it moves, and new design work, both quoted separately.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>A typical WordPress host-to-host move takes 1 to 3 working days including testing, plus a few hours for DNS to spread. Large media libraries, big stores and slow access to the old host take longer. Platform migrations follow rebuild timelines: usually 1 to 3 weeks for a business site, and longer for stores with many products. A domain change takes a few days of work, then several weeks of watching Search Console as Google processes it.</p>
+<h2>Who it is for</h2>
+<p>Businesses leaving slow or expensive hosting, sites on Wix, Blogger, Shopify or Squarespace that have outgrown them, and companies changing their domain after a rebrand. If your Wix site is small and doing its job, you may not need to move at all.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Logins for the old host, the new host, your domain registrar and wherever DNS is managed.</li>
+<li>Who provides your email, and every form, payment or integration that must keep working.</li>
+<li>A quiet time for the switch, and Search Console access.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>Your site live on the new host with SSL, email working and forms tested.</li>
+<li>A redirect map for any URLs that changed, and the completed post-move checklist.</li>
+<li>Backups running on the new host, and a reminder of when the old hosting can be cancelled.</li>
+</ul>
+<p>Send me your website address and where you want it to go for a free review and a fixed quote.</p>
+`,
 };

@@ -102,6 +102,38 @@
             "@type": "Answer",
             "text": "I make sure your email DNS records keep working, and can help coordinate moving mailboxes if needed."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I cancel my old hosting before the move?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Keep it running until the new site has been live and checked for a week or two, so there is a fallback if anything was missed. Do check its renewal date, so you are not charged for another year while you wait."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you move a WooCommerce store without losing orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The switch is planned for a quiet period, any orders placed on the old site during the change are synced across, and payments, webhooks and order emails are tested on the new host before it takes real traffic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my Wix or Shopify design come across exactly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not automatically. Wix and Shopify designs cannot run on WordPress, so the design is rebuilt. It can be matched closely, but most clients use the rebuild to improve layouts that were not working."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I change host and domain at the same time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is possible, but changing one thing at a time is safer. If rankings dip after two changes at once, it is much harder to tell which one caused it. Where both are needed, I usually move the host first and change the domain once everything is stable."
+          }
         }
       ]
     }
@@ -201,6 +233,95 @@
         </div>
       </div>
     </section>
+    <section class="section lp-guide">
+      <div class="container">
+        <div class="post-body lp-guide-body">
+<h2>WordPress migration, in detail</h2>
+<p>Most migration disasters come from small things: email records forgotten during a DNS change, a redirect sending every page to the homepage, or old hosting cancelled before anyone checked the new site. This is how I move websites between hosts, between domains and from other platforms onto WordPress, and what I check afterwards.</p>
+<h2>A migration, step by step</h2>
+<ol>
+<li><strong>Free review and a fixed quote.</strong> Send the website address, where it is hosted now, where you want it to go, and who manages your domain and email.</li>
+<li><strong>Inventory and backup.</strong> A full backup of files and database, a list of every URL, a record of every DNS record, and your current Search Console figures as a baseline.</li>
+<li><strong>Prepare the new host.</strong> The right PHP version, SSL and a staging area, with the DNS TTL lowered a day ahead so the switch spreads faster.</li>
+<li><strong>Copy and test.</strong> The site is moved, or rebuilt for a platform migration, then tested on a temporary address while the old site keeps running.</li>
+<li><strong>Switch over.</strong> A final sync of any new content or orders, then DNS is pointed to the new host, SSL is activated and redirects go live.</li>
+<li><strong>Post-move checks.</strong> The full post-move checklist, then Search Console monitoring over the following weeks.</li>
+</ol>
+<h2>Host move, platform migration or domain change?</h2>
+<table>
+<thead><tr><th></th><th>Host-to-host move</th><th>Another platform to WordPress</th><th>Domain change</th></tr></thead>
+<tbody>
+<tr><td>What changes</td><td>Where the site lives</td><td>The whole system; the site is rebuilt</td><td>The address people and Google use</td></tr>
+<tr><td>Do URLs change?</td><td>No</td><td>Usually, so every old URL needs a redirect</td><td>Yes, every one</td></tr>
+<tr><td>Main risk</td><td>Email and forms breaking after the DNS switch</td><td>Lost pages and rankings from missed redirects</td><td>A long dip if redirects are incomplete</td></tr>
+<tr><td>Typical time</td><td>1 to 3 working days</td><td>1 to 3 weeks; longer for large stores</td><td>A few days, then weeks of monitoring</td></tr>
+</tbody>
+</table>
+<h2>Moving from Wix, Blogger, Shopify and others</h2>
+<p>A platform migration is a rebuild with your content carried across, not a copy. Each platform has its own catch:</p>
+<ul>
+<li><strong>Wix</strong> has no export of its design, so pages are rebuilt in WordPress, images re-uploaded and blog posts often imported from the RSS feed; see <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a>.</li>
+<li><strong>Blogger</strong> posts and comments import well, but images hosted on Blogger must be pulled into your media library and old post URLs redirected; see <a href="/blog/migrate-blogger-to-wordpress/">moving from Blogger to WordPress</a>.</li>
+<li><strong>Shopify</strong> products, customers and orders can move to WooCommerce, but customer passwords usually cannot, and /products/ and /collections/ URLs need mapping; see <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</li>
+<li><strong>Squarespace, Joomla and static HTML</strong> follow the same pattern: list every page, move the content, map the URLs.</li>
+</ul>
+<p>Because the design is rebuilt anyway, many clients refresh it at the same time; that becomes a <a href="/website-redesign/">website redesign</a> with the migration included.</p>
+<h2>Zero-downtime steps</h2>
+<p>Visitors see no downtime because the old site keeps serving until the new one is proven. Three details make that work:</p>
+<ul>
+<li><strong>Staging and a temporary address.</strong> The copied site is tested through a preview URL or a hosts-file change on my computer before your domain points to it.</li>
+<li><strong>DNS TTL lowered in advance,</strong> so when the record changes, most visitors reach the new host within minutes to a few hours rather than a day.</li>
+<li><strong>Email records recreated exactly.</strong> If your email runs on Google Workspace, Zoho or your old host, the MX, SPF, DKIM and DMARC records are copied to the new DNS before nameservers change. This is the most common migration mistake; <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a> covers what each record does.</li>
+</ul>
+<p>For stores, the switch happens in a quiet period, and orders placed on the old site during the change are synced across.</p>
+<h2>SEO-safe redirects</h2>
+<p>On a host-to-host move nothing should change for Google, because every URL stays the same. When URLs or the domain change, I build a redirect map from your sitemap, a crawl and Search Console's top pages, then:</p>
+<ul>
+<li>Redirect each old URL to its closest new equivalent, never everything to the homepage.</li>
+<li>Use permanent 301 redirects, not temporary 302s; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
+<li>Send http, https, www and non-www versions to the final URL in one hop, with no chains.</li>
+<li>Carry over titles, descriptions, headings and structured data on pages that rank.</li>
+</ul>
+<p>For a new domain, the old domain stays registered and redirecting, and Google's Change of Address tool is used; <a href="/blog/change-domain-name-without-losing-seo/">changing your domain without losing SEO</a> goes through it.</p>
+<h2>The post-move checklist</h2>
+<ul>
+<li>SSL active on every version of the domain, with no mixed content warnings; see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content after moving to HTTPS</a>.</li>
+<li>Every form sends, and notification emails arrive, using SMTP where the new host needs it.</li>
+<li>Checkout, payment gateway webhooks and order emails tested with a real order flow.</li>
+<li>Caching suited to the new host, with old host-specific caching plugins removed.</li>
+<li>No noindex or password left from staging, a fresh sitemap submitted, and no new 404s in Search Console.</li>
+<li>Backups and uptime monitoring running on the new host, and a speed check against the old one.</li>
+<li>Old hosting kept for a week or two as a fallback, then cancelled.</li>
+</ul>
+<h2>Migrating to Hostinger</h2>
+<p>If you are moving to Hostinger, you can use its migration request in hPanel, a migration plugin or a manual transfer. I usually prefer a manual or plugin move I control, so I can test before DNS changes. After the move, its LiteSpeed Cache replaces caching plugins from your old host, and if you plan to use Hostinger email, mailboxes are set up before the MX records change. <a href="/blog/migrate-website-to-hostinger/">Migrating a WordPress site to Hostinger without downtime</a> has the full sequence. If speed was the reason for moving, <a href="/wordpress-speed-optimization/">speed optimization</a> covers what hosting alone will not fix.</p>
+<h2>What is included, and what is not</h2>
+<p>The list near the top of this page is what every migration includes. These are separate or come from you:</p>
+<ul>
+<li><strong>Hosting, domain and email subscriptions,</strong> paid to the providers in your name.</li>
+<li><strong>Copying old mailbox contents.</strong> I keep email records working and can help coordinate a mailbox move.</li>
+<li><strong>Cleaning an infected site</strong> before it moves, and new design work, both quoted separately.</li>
+</ul>
+<h2>How long it takes</h2>
+<p>A typical WordPress host-to-host move takes 1 to 3 working days including testing, plus a few hours for DNS to spread. Large media libraries, big stores and slow access to the old host take longer. Platform migrations follow rebuild timelines: usually 1 to 3 weeks for a business site, and longer for stores with many products. A domain change takes a few days of work, then several weeks of watching Search Console as Google processes it.</p>
+<h2>Who it is for</h2>
+<p>Businesses leaving slow or expensive hosting, sites on Wix, Blogger, Shopify or Squarespace that have outgrown them, and companies changing their domain after a rebrand. If your Wix site is small and doing its job, you may not need to move at all.</p>
+<h2>How to prepare</h2>
+<ul>
+<li>Logins for the old host, the new host, your domain registrar and wherever DNS is managed.</li>
+<li>Who provides your email, and every form, payment or integration that must keep working.</li>
+<li>A quiet time for the switch, and Search Console access.</li>
+</ul>
+<h2>What you get at the end</h2>
+<ul>
+<li>Your site live on the new host with SSL, email working and forms tested.</li>
+<li>A redirect map for any URLs that changed, and the completed post-move checklist.</li>
+<li>Backups running on the new host, and a reminder of when the old hosting can be cancelled.</li>
+</ul>
+<p>Send me your website address and where you want it to go for a free review and a fixed quote.</p>
+        </div>
+      </div>
+    </section>
 
     <section class="section" id="work">
       <div class="container">
@@ -288,6 +409,22 @@
           <details>
             <summary>Can you move my email too?</summary>
             <p>I make sure your email DNS records keep working, and can help coordinate moving mailboxes if needed.</p>
+          </details>
+          <details>
+            <summary>Should I cancel my old hosting before the move?</summary>
+            <p>No. Keep it running until the new site has been live and checked for a week or two, so there is a fallback if anything was missed. Do check its renewal date, so you are not charged for another year while you wait.</p>
+          </details>
+          <details>
+            <summary>Can you move a WooCommerce store without losing orders?</summary>
+            <p>Yes. The switch is planned for a quiet period, any orders placed on the old site during the change are synced across, and payments, webhooks and order emails are tested on the new host before it takes real traffic.</p>
+          </details>
+          <details>
+            <summary>Will my Wix or Shopify design come across exactly?</summary>
+            <p>Not automatically. Wix and Shopify designs cannot run on WordPress, so the design is rebuilt. It can be matched closely, but most clients use the rebuild to improve layouts that were not working.</p>
+          </details>
+          <details>
+            <summary>Can I change host and domain at the same time?</summary>
+            <p>It is possible, but changing one thing at a time is safer. If rankings dip after two changes at once, it is much harder to tell which one caused it. Where both are needed, I usually move the host first and change the domain once everything is stable.</p>
           </details>
         </div>
       </div>

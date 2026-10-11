@@ -201,6 +201,10 @@ const PAGES = [
       ['Can students apply or enquire online?', 'Yes. I set up admission and course enquiry forms that email you instantly, with WhatsApp follow-up.'],
       ['Can you add online fee payment?', 'Yes. I can integrate a payment gateway such as Razorpay so fees can be paid online.'],
       ['Can the site support online classes or course sales?', 'Yes. WordPress LMS plugins can handle video courses, quizzes and paid enrolments if you need them.'],
+      ['Should we show our fees on the website?', 'It is your decision. Some institutes publish the full fee structure, others explain what the fee covers and share figures on enquiry. Either way, say what is included, whether instalments are possible and what your refund policy is, so parents are not surprised later.'],
+      ['Can we publish toppers\' names and photos?', 'Yes, with written consent from the student, and from a parent for minors. Each result should name the exam, the year and the course the student took with you. Only your own students should appear, and anything you cannot back up should be left out.'],
+      ['Can each branch have its own page?', 'Yes. Each branch page gets its own address, batches, faculty, timings and map, linked to that branch\'s Google Business Profile, and enquiries from it can go straight to that branch\'s office.'],
+      ['Can the website replace our WhatsApp groups for notices?', 'It works best alongside them. The website keeps a permanent, searchable record of every circular and holiday, and staff can share the notice link in WhatsApp groups, so parents who join later can still find older notices.'],
     ],
   },
   {
@@ -309,6 +313,10 @@ const PAGES = [
       ['Can you connect forms to our CRM?', 'Yes. I can connect forms to HubSpot, Zoho, Mailchimp, Google Sheets and many others.'],
       ['Can you work from our Figma designs?', 'Yes. I convert Figma designs into pixel-accurate WordPress pages, or design from your brand guidelines.'],
       ['Can you support us after launch?', 'Yes. I offer ongoing support for new pages, landing pages and updates as you grow.'],
+      ['Should we launch with only a waitlist page?', 'If the product is not ready, yes. One page with a clear promise, a short waitlist form and a thank-you page that says what happens next is enough to start collecting interest and testing your message. The full site can follow once you have something to show.'],
+      ['Can the website and our app use the same domain?', 'Yes. The usual setup is the marketing site on your main domain and the app on a subdomain such as app.yourdomain.com, with Log in and Sign up buttons linking across. Keeping them separate means website changes never affect the product, and each can be hosted where it suits best.'],
+      ['Should our pitch deck be downloadable from the website?', 'Usually not. A public deck can be forwarded anywhere and goes out of date quickly. A short investor or press page with your summary, founder bios and a contact address works better, with the deck shared privately on request.'],
+      ['Do we need a blog at launch?', 'No. Two or three genuinely useful articles are better than an empty blog or a dozen thin posts. The blog template is set up at launch so your team can publish when there is something worth saying, and it becomes more valuable once your positioning is settled.'],
     ],
   },
   {
@@ -462,6 +470,10 @@ const PAGES = [
       ['Can you redesign a site that isn\'t on WordPress?', 'Yes. I can move your site from Wix, HTML, Joomla or another platform onto WordPress as part of the redesign.'],
       ['Will my website go offline during the redesign?', 'No. I build the new design on a staging site and switch over only when you approve it.'],
       ['Can I keep my existing content?', 'Yes. I can reuse and improve your existing content, images and pages.'],
+      ['Do I need a full redesign or just a refresh?', 'If the site works on phones, updates safely and still matches what you sell, a refresh of content, photos, buttons and speed is often enough. If it is not built for phones, runs on an abandoned theme or no longer fits your business, a redesign usually costs less over time than patching it.'],
+      ['Can the redesign be done in phases?', 'Yes. A common approach is to redesign the homepage, top service pages and contact page first, then the rest in later stages. Each phase still goes through staging, approval and redirect checks before it goes live.'],
+      ['How soon after launch will I know if rankings are affected?', 'Problems such as missing redirects or pages blocked from Google show up in Search Console within days, which is why it is checked daily for the first two weeks. Normal ranking movement usually settles over a few weeks as Google recrawls the site.'],
+      ['Can I keep updating my current site while the new one is built?', 'Yes. Your current site stays live and editable during the build. In the last few days before launch, changes are paused or noted so they can be copied to the new site and nothing is lost.'],
     ],
   },
   {
@@ -706,6 +718,10 @@ const PAGES = [
       ['Will I lose my Google rankings?', 'Not with proper redirects and settings. I preserve URLs where possible and redirect anything that changes.'],
       ['Can you recommend good hosting?', 'Yes. I can suggest reliable hosting based on your traffic and budget, and set it up for you.'],
       ['Can you move my email too?', 'I make sure your email DNS records keep working, and can help coordinate moving mailboxes if needed.'],
+      ['Should I cancel my old hosting before the move?', 'No. Keep it running until the new site has been live and checked for a week or two, so there is a fallback if anything was missed. Do check its renewal date, so you are not charged for another year while you wait.'],
+      ['Can you move a WooCommerce store without losing orders?', 'Yes. The switch is planned for a quiet period, any orders placed on the old site during the change are synced across, and payments, webhooks and order emails are tested on the new host before it takes real traffic.'],
+      ['Will my Wix or Shopify design come across exactly?', 'Not automatically. Wix and Shopify designs cannot run on WordPress, so the design is rebuilt. It can be matched closely, but most clients use the rebuild to improve layouts that were not working.'],
+      ['Can I change host and domain at the same time?', 'It is possible, but changing one thing at a time is safer. If rankings dip after two changes at once, it is much harder to tell which one caused it. Where both are needed, I usually move the host first and change the domain once everything is stable.'],
     ],
   },
 ];
