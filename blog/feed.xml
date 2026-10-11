@@ -112,11 +112,11 @@
     <description>How long does it take to build a WordPress website? Timelines by site type, from landing pages to WooCommerce stores, each stage, and what causes delays.</description>
   </item>
   <item>
-    <title>How to Redesign Your Website Without Losing Google Rankings</title>
+    <title>How to Redesign Your Website Without Losing Google Rankings: The SEO Migration Checklist</title>
     <link>https://samverse.space/blog/redesign-website-without-losing-rankings/</link>
     <guid>https://samverse.space/blog/redesign-website-without-losing-rankings/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Redesign your website without losing Google rankings: an SEO checklist covering URL mapping, 301 redirects, metadata, staging and post-launch checks.</description>
+    <description>Redesign your website and keep your rankings: benchmark, crawl, map every URL, set up 301s, keep content parity, block staging and monitor after launch.</description>
   </item>
   <item>
     <title>How to Accept Online Payments on a WordPress Website in India (UPI, Cards, COD)</title>
@@ -133,11 +133,11 @@
     <description>Is your website costing you customers? 10 signs your business needs a new website, from poor mobile experience and slow speed to outdated design.</description>
   </item>
   <item>
-    <title>WordPress Security Checklist for Small Business Websites (20 Steps)</title>
+    <title>WordPress Security Checklist: 25 Steps to Harden a Business Website</title>
     <link>https://samverse.space/blog/wordpress-security-checklist/</link>
     <guid>https://samverse.space/blog/wordpress-security-checklist/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>A 20-step WordPress security checklist for small businesses: updates, passwords, 2FA, backups, firewalls, hosting and user roles to keep hackers out.</description>
+    <description>A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.</description>
   </item>
   <item>
     <title>Core Web Vitals Explained for Business Owners (LCP, INP, CLS)</title>
@@ -308,11 +308,11 @@
     <description>Personal brand websites for doctors, coaches and consultants: positioning, key pages, lead magnets, content and booking that earn trust and bring clients.</description>
   </item>
   <item>
-    <title>Equipment and Generator Rental Websites: What Drives Enquiries</title>
+    <title>Equipment and Generator Rental Websites: Structure, SEO and Enquiries (With a Real Example)</title>
     <link>https://samverse.space/blog/equipment-rental-website-guide/</link>
     <guid>https://samverse.space/blog/equipment-rental-website-guide/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Equipment and generator rental websites that get enquiries: fleet pages by capacity, industry pages, fast quote forms, trust signals and local SEO.</description>
+    <description>SEO for generator hire and equipment rental websites: capacity pages, local search, Business Profile, quick quote forms and a real generator rental site.</description>
   </item>
   <item>
     <title>Directory and Listing Websites on WordPress: How They Work</title>
@@ -350,11 +350,11 @@
     <description>Multilingual WordPress sites in Hindi, English or regional languages: when you need one, how they work, translation options and SEO practices like hreflang.</description>
   </item>
   <item>
-    <title>WhatsApp on Your Business Website: How to Add It and Get More Enquiries</title>
+    <title>How to Add WhatsApp to Your Business Website: Click-to-Chat Links, Buttons, Tracking and the API</title>
     <link>https://samverse.space/blog/whatsapp-on-business-website/</link>
     <guid>https://samverse.space/blog/whatsapp-on-business-website/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Add WhatsApp to your business website: click-to-chat buttons, pre-filled messages, form-to-WhatsApp flows, WhatsApp Business features and enquiry tracking.</description>
+    <description>Add WhatsApp Business chat to your website with wa.me links and pre-filled messages, choose between the app and the API, and track WhatsApp clicks in GA4.</description>
   </item>
   <item>
     <title>Image Optimization for WordPress: Make Your Pages Load Faster</title>
@@ -469,11 +469,11 @@
     <description>Optimize WooCommerce product pages for more sales: photos, descriptions, clear pricing, trust signals, reviews, delivery info, mobile layout and speed.</description>
   </item>
   <item>
-    <title>WooCommerce SEO: How to Rank Your Product and Category Pages</title>
+    <title>WooCommerce SEO: A Practical Guide to Ranking Your Product and Category Pages</title>
     <link>https://samverse.space/blog/woocommerce-seo-guide/</link>
     <guid>https://samverse.space/blog/woocommerce-seo-guide/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WooCommerce SEO guide to rank product and category pages: keyword research, category content, product schema, duplicate content, site structure and speed.</description>
+    <description>WooCommerce SEO guide: keyword mapping, category content, Rank Math or Yoast settings, product schema, filter URLs, out-of-stock pages and store speed.</description>
   </item>
   <item>
     <title>How to Get More Google Reviews for Your Business (the Ethical Way)</title>
@@ -525,11 +525,11 @@
     <description>Headless WordPress explained: the real benefits and trade-offs in cost, complexity, editing and plugins, and when a small business should consider it.</description>
   </item>
   <item>
-    <title>How to Measure Your Website's ROI as a Small Business</title>
+    <title>How to Measure Website ROI as a Small Business: Tracking, Lead Value and a Simple Formula</title>
     <link>https://samverse.space/blog/measure-website-roi/</link>
     <guid>https://samverse.space/blog/measure-website-roi/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Measure website ROI for your small business: define conversions, track enquiries and sales, estimate lead value and compare the results against your costs.</description>
+    <description>Measuring website ROI for a small business: track enquiries with GA4 key events, UTMs and call tracking, work out lead value and compare it with costs.</description>
   </item>
   <item>
     <title>Websites for Diagnostic Labs and Pathology Centres</title>
@@ -805,11 +805,11 @@
     <description>SSL certificate errors explained: what Not Secure, connection not private and NET::ERR_CERT warnings mean, and how to fix each one on a WordPress site.</description>
   </item>
   <item>
-    <title>What Is a CDN, and Does Your Business Website Need One?</title>
+    <title>What Is a CDN? How a Content Delivery Network Speeds Up Your Website, and When You Need One</title>
     <link>https://samverse.space/blog/what-is-a-cdn/</link>
     <guid>https://samverse.space/blog/what-is-a-cdn/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What is a CDN? How a content delivery network speeds up your site, adds protection, when small businesses benefit and how to set one up safely on WordPress.</description>
+    <description>What is a website CDN? How CDN servers deliver your files from near each visitor, what a CDN file is, Cloudflare vs BunnyCDN vs QUIC.cloud, and safe setup.</description>
   </item>
   <item>
     <title>How to Add Google Maps to Your Website (Without Slowing It Down)</title>
@@ -1190,11 +1190,11 @@
     <description>Compare business email options: email from your web host, Google Workspace, Zoho Mail and Microsoft 365, plus domain setup and deliverability tips.</description>
   </item>
   <item>
-    <title>Website Speed Test Tools Explained: PageSpeed Insights, Lighthouse and More</title>
+    <title>Website Speed Test Tools Explained: PageSpeed Insights, Lighthouse, GTmetrix and WebPageTest</title>
     <link>https://samverse.space/blog/website-speed-test-tools-explained/</link>
     <guid>https://samverse.space/blog/website-speed-test-tools-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Website speed test tools explained: using PageSpeed Insights, Lighthouse and Search Console, why scores vary, lab vs field data and which numbers to act on.</description>
+    <description>Website speed test tools explained: how to read a PageSpeed test, lab vs field data, why scores vary, and when to use Lighthouse, GTmetrix or WebPageTest.</description>
   </item>
   <item>
     <title>Does a Local Shop Need a Website? An Honest Answer</title>
@@ -1470,11 +1470,11 @@
     <description>WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.</description>
   </item>
   <item>
-    <title>WooCommerce GST Setup and Invoices: A Guide for Indian Online Stores</title>
+    <title>WooCommerce GST Setup for Indian Stores: CGST, SGST, IGST, HSN Codes and GST Invoices</title>
     <link>https://samverse.space/blog/woocommerce-gst-invoices-india/</link>
     <guid>https://samverse.space/blog/woocommerce-gst-invoices-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Set up GST in WooCommerce for Indian stores: tax settings, CGST/SGST vs IGST, tax classes, tax-inclusive prices, GST invoices and when to involve your CA.</description>
+    <description>WooCommerce GST setup for Indian stores: tax classes, CGST/SGST vs IGST rates, place of supply, HSN codes, GSTIN at checkout and GST invoice plugins.</description>
   </item>
   <item>
     <title>Cash on Delivery in WooCommerce: How to Offer COD Without Losing Money</title>
@@ -1512,11 +1512,11 @@
     <description>Update your WordPress PHP version safely: why it matters for speed and security, how to check it, switch versions in your hosting panel and fix breakages.</description>
   </item>
   <item>
-    <title>WordPress Database Optimisation: How to Clean Up and Speed Up Safely</title>
+    <title>WordPress Database Optimisation: How to Clean Up and Speed Up Your Database Safely</title>
     <link>https://samverse.space/blog/wordpress-database-optimization/</link>
     <guid>https://samverse.space/blog/wordpress-database-optimization/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress database optimisation: clear revisions, transients, spam, leftover plugin data and autoloaded options safely, with backups and the right plugins.</description>
+    <description>Clean up your WordPress database safely: back up, remove revisions, transients, spam and leftovers with WP-Optimize, WP-CLI or SQL, and fix autoload.</description>
   </item>
   <item>
     <title>Website Design Contract Checklist: What to Agree Before You Start</title>

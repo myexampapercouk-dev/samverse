@@ -1502,70 +1502,125 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'redesign-website-without-losing-rankings',
-    title: 'How to Redesign Your Website Without Losing Google Rankings',
-    description: 'Redesign your website without losing Google rankings: an SEO checklist covering URL mapping, 301 redirects, metadata, staging and post-launch checks.',
+    seoTitle: 'Redesign Your Website and Keep Your Rankings: SEO Checklist',
+    title: 'How to Redesign Your Website Without Losing Google Rankings: The SEO Migration Checklist',
+    description: 'Redesign your website and keep your rankings: benchmark, crawl, map every URL, set up 301s, keep content parity, block staging and monitor after launch.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'SEO',
     related: ['website-redesign', 'wordpress-migration', 'wordpress-seo-services'],
     body: `
-<p>A redesign should bring more enquiries, not fewer. But it's common for businesses to launch a beautiful new website and then watch their Google traffic drop. That almost always happens because a few SEO steps were skipped. Here's how to avoid it.</p>
-
-<p>If the redesign comes with a new business name or logo, the guide to <a href="/blog/rebranding-your-website/">rebranding your website</a> covers everything else to update, from brand assets and listings to telling customers.</p>
+<p>To redesign a website without losing rankings, protect what Google already ranks: keep URLs where you can, 301-redirect every URL that changes to its closest new equivalent, keep the content, titles and internal links of pages that bring traffic, keep the staging site out of Google, and remove that block at launch. Then watch Search Console closely for the first few weeks and fix anything that slips.</p>
+<p>Most ranking drops after a redesign come from skipped steps, not from the new design itself. This is the redesign-specific checklist I follow on <a href="/website-redesign/">website redesign</a> projects. If the redesign also brings a new business name, see <a href="/blog/rebranding-your-website/">rebranding your website</a>; if the domain changes too, follow <a href="/blog/change-domain-name-without-losing-seo/">changing your domain without losing SEO</a> as well.</p>
 
 <h2>Why redesigns lose rankings</h2>
+<table>
+  <thead><tr><th>What goes wrong</th><th>What Google sees</th><th>How to prevent it</th></tr></thead>
+  <tbody>
+    <tr><td>URLs change with no redirects</td><td>404s, lost links and lost history</td><td>A URL map and 301 redirects</td></tr>
+    <tr><td>Ranking pages removed or merged</td><td>The content it ranked has gone</td><td>A content inventory before design starts</td></tr>
+    <tr><td>Copy cut for a "cleaner" look</td><td>A thinner, less relevant page</td><td>Content parity on pages that rank</td></tr>
+    <tr><td>Titles, headings or schema lost</td><td>Weaker signals about the page</td><td>A parity checklist</td></tr>
+    <tr><td>Staging noindex goes live</td><td>Pages dropping out of the index</td><td>Launch-day checks</td></tr>
+    <tr><td>Links point to staging or old URLs</td><td>Broken crawl paths and redirect chains</td><td>A crawl after launch</td></tr>
+    <tr><td>The new site is slower</td><td>A worse page experience</td><td>Speed tests before launch</td></tr>
+  </tbody>
+</table>
+
+<h2>Phase 1: Benchmark before you touch anything</h2>
+<p>You can't tell whether a redesign hurt rankings without a record of where you started. Save these in one spreadsheet, dated:</p>
 <ul>
-  <li>Page URLs change and old links lead to 404 errors</li>
-  <li>Pages that ranked well are removed or merged without redirects</li>
-  <li>Titles, descriptions and headings are lost or rewritten carelessly</li>
-  <li>Valuable content is cut to make the design "cleaner"</li>
-  <li>The staging site accidentally stays blocked from search engines</li>
-  <li>The new site is slower than the old one</li>
+  <li><strong>Search Console &gt; Performance:</strong> export pages and queries with clicks and impressions for the longest range available. These are the pages that need the most care.</li>
+  <li><strong>GA4 landing pages:</strong> sessions and key events by page, so you know which pages bring enquiries, not just visits.</li>
+  <li><strong>Search Console &gt; Links &gt; Top linked pages:</strong> pages other sites link to. Losing these URLs without redirects throws away those links.</li>
+  <li><strong>Positions for your important searches,</strong> checked manually or with a rank tracker.</li>
+  <li><strong>Speed:</strong> PageSpeed Insights results for your homepage, a service page and a blog post.</li>
 </ul>
 
-<h2>Before the redesign</h2>
-<h3>1. Record what's working now</h3>
-<p>Export your top pages from Google Search Console and Google Analytics: which pages get the most search clicks and which keywords they rank for. These pages need the most care.</p>
-<h3>2. Crawl the old site</h3>
-<p>Make a full list of existing URLs (a crawler tool or your sitemap works). You'll use it to plan redirects.</p>
-<h3>3. Keep URLs where possible</h3>
-<p>The safest URL is the one that doesn't change. Keep the same slugs for important pages whenever you can.</p>
-<h3>4. Map every changed URL</h3>
-<p>Create a simple spreadsheet: old URL, then new URL. Every old page should point to its closest new equivalent, not just the homepage.</p>
-
-<p>Moving to a new domain as part of the redesign? Follow the guide to <a href="/blog/change-domain-name-without-losing-seo/">changing your domain name without losing SEO</a> too, including Google's Change of Address tool.</p>
-
-<h2>During the build</h2>
+<h2>Phase 2: Crawl and inventory every URL</h2>
+<p>Crawl the old site with a tool such as Screaming Frog SEO Spider, which has a free version for smaller sites, then add URLs from your XML sitemap, the Search Console export, GA4 landing pages and your linked pages list. Crawlers only find pages that are linked, so these extra sources catch orphan pages, old PDFs and campaign pages that still get visits.</p>
+<p>For every URL, decide one action:</p>
 <ul>
-  <li><strong>Build on a staging site</strong> and block it from search engines while you work.</li>
-  <li><strong>Carry over SEO settings:</strong> titles, meta descriptions, headings and image alt text for key pages.</li>
-  <li><strong>Keep (and improve) content</strong> on pages that rank. Don't cut paragraphs just to make the page look minimal.</li>
-  <li><strong>Keep structured data</strong> (schema markup) and internal links.</li>
-  <li><strong>Test speed</strong>, because the new site should be at least as fast as the old one.</li>
+  <li><strong>Keep:</strong> the page stays at the same URL</li>
+  <li><strong>Move:</strong> the page continues at a new URL, with a 301 redirect</li>
+  <li><strong>Merge:</strong> its content joins another page, and it redirects there</li>
+  <li><strong>Remove:</strong> no equivalent exists; only acceptable for pages with no meaningful traffic or links</li>
 </ul>
 
-<p>New to staging? See <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+<h2>Phase 3: Build the URL map and redirects</h2>
+<p>The safest URL is the one that doesn't change. A WordPress-to-WordPress redesign can usually keep every important slug. Moving from Wix, Blogger or a hand-coded site often forces changes, which is when the map matters most; see <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a> for a platform-change example.</p>
+<table>
+  <thead><tr><th>Old URL</th><th>New URL</th><th>Action</th></tr></thead>
+  <tbody>
+    <tr><td>/about-us/</td><td>/about-us/</td><td>Keep</td></tr>
+    <tr><td>/services/solar-installation.html</td><td>/solar-installation/</td><td>301</td></tr>
+    <tr><td>/products/inverter-batteries/</td><td>/batteries/</td><td>301 (merged)</td></tr>
+    <tr><td>/diwali-offer-2019/</td><td>None</td><td>Remove (no traffic or links)</td></tr>
+  </tbody>
+</table>
+<ul>
+  <li><strong>Redirect to the closest equivalent,</strong> page by page. Sending everything to the homepage loses relevance, and Google tends to treat it as a soft 404.</li>
+  <li><strong>Avoid chains.</strong> If an old redirect points to a URL that is now changing, update it to point straight at the final URL.</li>
+  <li><strong>Use 301s for permanent moves,</strong> not 302s; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
+  <li><strong>Keep your existing HTTPS and www rules</strong> working alongside the new redirects.</li>
+</ul>
+<p>On WordPress, the Redirection plugin or Rank Math's redirections module handle most sites. For long lists, server-level rules in .htaccess on Apache or LiteSpeed hosting are faster:</p>
+<pre><code>Redirect 301 /services/solar-installation.html https://www.example.com/solar-installation/
+Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</code></pre>
 
-<h2>At launch</h2>
+<h2>Phase 4: Keep content parity on pages that rank</h2>
+<p>A redesign changes how pages look. It shouldn't quietly remove what made them rank. For every page in your benchmark's top list, check that the new version keeps:</p>
+<ul>
+  <li><strong>The substance of the copy:</strong> sections, details, FAQs and examples. Restyle long text with headings, columns or accordions rather than deleting it.</li>
+  <li><strong>Title tags and meta descriptions,</strong> carried over or improved deliberately, not reset to defaults.</li>
+  <li><strong>The H1 and main headings</strong> that match what people search.</li>
+  <li><strong>Internal links:</strong> a slimmer menu can leave ranking service pages with no links pointing at them. Add them to the footer, hub pages or in-content links.</li>
+  <li><strong>Images and alt text,</strong> and image URLs if images bring traffic from Google Images.</li>
+  <li><strong>Structured data:</strong> LocalBusiness, breadcrumbs, FAQ, product or article schema.</li>
+  <li><strong>Canonical tags, hreflang</strong> on multilingual sites, and robots settings.</li>
+  <li><strong>Tracking:</strong> GA4, key events, Google Ads and Meta tags.</li>
+</ul>
+<p>A practical check is to crawl the old site and the staging site and compare titles, H1s, word counts and indexability side by side.</p>
+
+<h2>Phase 5: Keep staging out of Google</h2>
+<p>WordPress's "Discourage search engines from indexing this site" setting (Settings &gt; Reading) adds a noindex tag. It works, but it's risky: the setting lives in the database, so if the staging site is copied to live, the noindex goes live with it. A password on the staging site, which most hosts offer, keeps out search engines and everyone else, and can't be indexed by accident.</p>
+<p>If a staging subdomain is already in Google, password-protect it and use the Removals tool in a Search Console property for that subdomain. More on safe testing in <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+
+<h2>Phase 6: Launch-day checklist</h2>
 <ol>
-  <li>Set up <strong>301 redirects</strong> for every changed URL from your map.</li>
-  <li><strong>Remove the "discourage search engines" setting</strong> in WordPress (Settings → Reading) and any noindex tags from staging.</li>
-  <li>Check that HTTPS works on every page and that there's one preferred version of your domain.</li>
-  <li>Submit the new <strong>XML sitemap</strong> in Google Search Console.</li>
-  <li>Test forms, WhatsApp buttons and phone links.</li>
+  <li>Untick "Discourage search engines" and check the page source of key pages for a noindex tag.</li>
+  <li>Check robots.txt doesn't contain Disallow: / from staging.</li>
+  <li>Run your full old-URL list through a crawler in list mode: each should return one 301 to a page that returns 200.</li>
+  <li>Check canonical tags, internal links and image addresses use the live domain, not staging. A database search and replace fixes leftovers, for example with WP-CLI: <code>wp search-replace 'staging.example.com' 'www.example.com' --dry-run</code>, then without --dry-run once the preview looks right.</li>
+  <li>Confirm HTTPS works everywhere and only one version of the domain loads.</li>
+  <li>Submit the XML sitemap in Search Console and inspect your most important URLs with URL Inspection; see <a href="/blog/get-website-indexed-google-faster/">getting pages indexed faster</a>.</li>
+  <li>Test forms, email delivery, WhatsApp and call buttons, and check GA4 Realtime for key events.</li>
+  <li>Clear caching plugin, host and CDN caches, then run PageSpeed Insights on key templates and compare with your benchmark.</li>
 </ol>
 
-<h2>After launch</h2>
+<h2>Phase 7: Monitor for the first two months</h2>
 <ul>
-  <li>Monitor Search Console daily for the first two weeks for 404 errors and indexing issues.</li>
-  <li>Fix any missing redirects quickly.</li>
-  <li>Compare traffic and rankings for your top pages with your "before" snapshot.</li>
-  <li>Expect small fluctuations for a few weeks as Google re-crawls the site. That's normal if the steps above are done.</li>
+  <li><strong>Daily for two weeks:</strong> the Search Console Pages report for "Not found (404)", "Excluded by noindex tag" and redirect errors, plus spot checks with URL Inspection.</li>
+  <li><strong>Weekly for the next six weeks:</strong> Performance with date comparison (compare equal periods with the same weekdays), clicks by page against your benchmark, and positions for your tracked searches.</li>
+  <li><strong>Fix fast:</strong> redirect any 404 that has traffic or links, and for pages that lose clicks, compare the old content (the Wayback Machine helps) with the new page.</li>
 </ul>
+<p>Some movement for a few weeks is normal while Google recrawls. A sharp site-wide drop usually points to a noindex, robots or canonical problem; see <a href="/blog/search-console-page-indexing-errors/">Search Console indexing errors</a> and the <a href="/blog/website-traffic-dropped/">traffic drop checklist</a>.</p>
 
-<p>If traffic does drop after launch, work through the <a href="/blog/website-traffic-dropped/">traffic drop checklist</a> step by step, and check that new pages are being indexed; see <a href="/blog/get-website-indexed-google-faster/">getting indexed faster</a>.</p>
+<h2>FAQs</h2>
+<h3>Will redesigning my website affect SEO?</h3>
+<p>It can, in either direction. A redesign that keeps URLs, content and internal links while making the site faster and clearer often helps. One that changes URLs without redirects or strips content usually hurts. The difference is the process, not the design.</p>
+<h3>How do I redesign my website and keep my rankings?</h3>
+<p>Benchmark your top pages, crawl every URL, keep URLs where possible, 301-redirect the rest to their closest equivalents, keep the content and on-page SEO of ranking pages, password-protect staging, run launch-day checks and monitor Search Console daily for two weeks.</p>
+<h3>Should I keep the same URLs when redesigning?</h3>
+<p>Yes, wherever you can. Unchanged URLs need no redirects and keep their history. Change a URL only when there's a clear reason, such as a platform move or merging duplicate pages, and redirect it.</p>
+<h3>How long do rankings take to settle after a redesign?</h3>
+<p>Usually a few weeks as Google recrawls the site and processes redirects. Problems such as missing redirects or a leftover noindex show up in Search Console within days, which is why the first two weeks need daily checks.</p>
+<h3>Can I change my WordPress theme without losing SEO?</h3>
+<p>Yes, if URLs stay the same and the new theme keeps your content, headings, internal links and schema. Test it on staging first, because some themes move content into builder layouts, drop breadcrumbs or load much more slowly.</p>
+<h3>Should I redirect deleted pages to the homepage?</h3>
+<p>No. Redirect each page to its closest equivalent. If nothing relevant exists, letting it return a 404 or 410 is better than a homepage redirect.</p>
 
-<h2>The bottom line</h2>
-<p>A redesign done with SEO in mind usually improves rankings, because the new site is faster, clearer and better structured. The key is planning redirects and protecting the pages that already bring you traffic.</p>
+<p>Planning a redesign and want to keep the rankings you've built? I rebuild on a staging site, keep important URLs, map and test redirects, carry over SEO settings and check Search Console daily for the first two weeks; see <a href="/website-redesign/">website redesign</a>. Not sure you need a full redesign? Read <a href="/blog/website-refresh-vs-redesign/">refresh vs redesign</a> first.</p>
 `,
   },
   {
@@ -1695,74 +1750,131 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'wordpress-security-checklist',
-    seoTitle: 'WordPress Security Checklist for Small Businesses',
-    title: 'WordPress Security Checklist for Small Business Websites (20 Steps)',
-    description: 'A 20-step WordPress security checklist for small businesses: updates, passwords, 2FA, backups, firewalls, hosting and user roles to keep hackers out.',
+    seoTitle: 'WordPress Security Checklist: 25 Steps to Harden Your Site',
+    title: 'WordPress Security Checklist: 25 Steps to Harden a Business Website',
+    description: 'A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
-<p>Most hacked WordPress sites aren't targeted personally. Automated bots scan millions of websites looking for known weaknesses like outdated plugins and weak passwords. The good news is that a handful of basic steps block the vast majority of these attacks. Use this checklist to secure your business website.</p>
+<p>To secure a WordPress site, keep core, plugins and themes updated, protect every admin login with a strong password and two-factor authentication, remove users and plugins you don't need, turn off file editing in the dashboard, run one reputable security plugin, and keep daily off-site backups you've tested. Those basics stop most attacks, because most hacked sites are found by automated bots scanning for known weaknesses, not targeted by a person.</p>
+<p>This is the general hardening checklist I use for business sites, split into what to do today and what to do this month. Running it every month is the core of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. If your site already shows signs of a hack, clean it first, because hardening an infected site leaves the backdoors in place; see <a href="/wordpress-malware-removal/">hacked site repair</a>.</p>
 
-<h2>Updates and software</h2>
-<ol>
-  <li><strong>Keep WordPress core updated.</strong> Minor security releases often install automatically; apply major updates after a backup.</li>
-  <li><strong>Update plugins and themes promptly.</strong> Outdated plugins are the most common way into WordPress sites.</li>
-  <li><strong>Delete unused plugins and themes.</strong> Deactivated code can still be exploited if it's vulnerable.</li>
-  <li><strong>Avoid abandoned plugins.</strong> If a plugin hasn't been updated in a long time, look for a maintained alternative.</li>
-  <li><strong>Never use "nulled" (pirated) themes or plugins.</strong> They frequently contain hidden malware.</li>
-  <li><strong>Run a current PHP version</strong> supported by your host.</li>
-</ol>
-
-<p>Worried updates will break things? Follow <a href="/blog/update-wordpress-safely/">this safe update process</a>.</p>
+<h2>Which steps to do first</h2>
+<table>
+  <thead><tr><th>Priority</th><th>Steps</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Do today</td><td>1, 2, 6, 7, 8, 23</td><td>Closes the most common ways in and makes recovery possible</td></tr>
+    <tr><td>Do this week</td><td>3, 5, 11, 16, 19, 22</td><td>Blocks password guessing and limits the damage a stolen login can do</td></tr>
+    <tr><td>Do this month</td><td>The rest</td><td>Server-level hardening, monitoring and hosting</td></tr>
+  </tbody>
+</table>
+<p>Running an online store? Payments, customer data and fraud orders need extra steps on top of these; see the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a>.</p>
 
 <h2>Logins and users</h2>
-<ol start="7">
-  <li><strong>Use strong, unique passwords</strong> for every admin, with a password manager.</li>
-  <li><strong>Turn on two-factor authentication (2FA)</strong> for all administrator accounts.</li>
-  <li><strong>Limit login attempts</strong> to slow down password-guessing bots.</li>
-  <li><strong>Don't use "admin" as a username.</strong></li>
-  <li><strong>Give people the lowest role they need.</strong> Editors and authors don't need administrator access.</li>
-  <li><strong>Remove old users</strong> such as former staff, agencies and freelancers once their work is done.</li>
-</ol>
+<ul>
+  <li><strong>1. Use strong, unique passwords</strong> for every admin, stored in a password manager. Reused passwords leaked from other sites are a common way in.</li>
+  <li><strong>2. Turn on two-factor authentication (2FA)</strong> for administrators and editors, using an authenticator app. Wordfence's login security module and Solid Security both include it in their free versions at the time of writing. Save the backup codes somewhere safe so a lost phone doesn't lock you out.</li>
+  <li><strong>3. Limit login attempts</strong> so bots can't guess passwords endlessly. Most security plugins do this, and a cloud firewall can block them before they reach your server.</li>
+  <li><strong>4. Don't use "admin" as a username,</strong> and make sure your public author name isn't your login name.</li>
+  <li><strong>5. Give people the lowest role they need.</strong> Content writers need Editor or Author access, not Administrator.</li>
+  <li><strong>6. Remove old users:</strong> former staff, agencies and freelancers. Check the full list of administrators regularly.</li>
+</ul>
+<p>More detail on locking down the login page is in <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
 
-<p>Not sure which role to give whom? See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>.</p>
+<h2>Updates and software</h2>
+<ul>
+  <li><strong>7. Keep WordPress core, plugins and themes updated,</strong> with a backup first. Outdated plugins are one of the most common ways into WordPress sites; follow <a href="/blog/update-wordpress-safely/">this safe update process</a> if you're worried about breaking things.</li>
+  <li><strong>8. Delete plugins and themes you don't use.</strong> Deactivated code can still be exploited. Keep one default theme as a fallback.</li>
+  <li><strong>9. Avoid abandoned and nulled software.</strong> Replace plugins that haven't been updated in a long time, and never install pirated premium themes or plugins, which often carry hidden malware.</li>
+  <li><strong>10. Run a supported PHP version</strong> that your plugins are tested with. Old PHP versions stop getting security fixes.</li>
+</ul>
 
-<p>More detail: <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
+<h2>wp-config.php and files</h2>
+<ul>
+  <li><strong>11. Turn off the dashboard file editor.</strong> If someone gets into an admin account, the theme and plugin editors let them add malicious code in seconds.</li>
+  <li><strong>12. Set sensible file permissions:</strong> usually 644 for files and 755 for folders, with wp-config.php tighter where your host allows it. Never use 777.</li>
+  <li><strong>13. Block PHP from running in the uploads folder,</strong> where only images and documents should live.</li>
+  <li><strong>14. Never show PHP errors to visitors</strong> on a live site, because error messages reveal file paths.</li>
+  <li><strong>15. Refresh the security keys and salts</strong> in wp-config.php after a hack or when someone with access leaves. This logs everyone out.</li>
+</ul>
+<p>Steps 11 and 14 are two lines in wp-config.php, added above the line that says "That's all, stop editing":</p>
+<pre><code>define( 'DISALLOW_FILE_EDIT', true );
+define( 'WP_DEBUG', false );</code></pre>
+<p>On Apache or LiteSpeed hosting, step 13 is a small .htaccess file placed inside wp-content/uploads. Solid Security and some hosts offer the same as a setting, and Nginx servers need it added to the server configuration instead:</p>
+<pre><code>&lt;Files *.php&gt;
+  Require all denied
+&lt;/Files&gt;</code></pre>
+<p>More wp-config.php settings, including forcing SSL for the admin area, are covered in <a href="/blog/harden-wp-config-php/">hardening wp-config.php</a>.</p>
 
-<h2>Backups</h2>
-<ol start="13">
-  <li><strong>Automatic daily backups</strong> of files and database.</li>
-  <li><strong>Store backups off-site</strong> (cloud storage), not only on the same server.</li>
-  <li><strong>Test restoring a backup</strong> occasionally. An untested backup might fail when you need it.</li>
-</ol>
+<h2>Reduce what attackers can reach</h2>
+<ul>
+  <li><strong>16. Disable XML-RPC if nothing needs it.</strong> xmlrpc.php is an old remote-access feature that bots use for password guessing. Jetpack and some apps still rely on it, so check before blocking it; see <a href="/blog/wordpress-xmlrpc-explained/">WordPress XML-RPC explained</a>.</li>
+  <li><strong>17. Consider moving the login page.</strong> Changing wp-login.php to a custom address, an option in Solid Security, cuts bot noise but isn't real protection on its own. 2FA matters far more.</li>
+  <li><strong>18. Protect forms and registrations.</strong> Untick "Anyone can register" in Settings &gt; General unless you need it, and add Cloudflare Turnstile or reCAPTCHA to forms.</li>
+</ul>
+<p>If your host uses Apache or LiteSpeed and nothing uses XML-RPC, this .htaccess rule in the site's root folder blocks it:</p>
+<pre><code>&lt;Files xmlrpc.php&gt;
+  Require all denied
+&lt;/Files&gt;</code></pre>
 
-<p>More on getting backups right: <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>
+<h2>Firewall and monitoring</h2>
+<ul>
+  <li><strong>19. Run one security plugin</strong> with a firewall and malware scanner, such as Wordfence or Solid Security. Two security plugins together often conflict and slow the site. In Wordfence's free version, new firewall rules and malware signatures arrive later than in the paid version at the time of writing.</li>
+  <li><strong>20. Consider a cloud firewall</strong> such as Cloudflare, which filters bad traffic before it reaches your hosting, so less of it ever touches WordPress.</li>
+  <li><strong>21. Keep an activity log</strong> of logins, new users, plugin installs and settings changes, so you can see what happened if something goes wrong.</li>
+  <li><strong>22. Monitor uptime and Search Console.</strong> An uptime monitor tells you when the site goes down, and Search Console emails you about security issues Google finds.</li>
+</ul>
+<p>Which plugin? Wordfence runs its firewall inside WordPress and has a detailed malware scanner, which makes it a sensible default on most hosts, though full scans can be heavy on cheap shared hosting. Solid Security leans more towards hardening and login protection, with settings for 2FA, a custom login address, file change detection and blocking PHP in uploads. Either is fine. Pick one, go through its settings rather than leaving the defaults, and read its alert emails. If your host already runs server-level scanning and a firewall, as many cPanel hosts do with tools such as Imunify360, a lighter plugin focused on logins can be enough.</p>
+<p>Developers with SSH access can check whether core and plugin files have been modified, and who has admin access, with WP-CLI:</p>
+<pre><code>wp core verify-checksums
+wp plugin verify-checksums --all
+wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 
-<p>Server-side hardening: <a href="/blog/wordpress-file-permissions/">file permissions</a> and <a href="/blog/harden-wp-config-php/">wp-config.php settings</a>.</p>
+<h2>Backups and hosting</h2>
+<ul>
+  <li><strong>23. Keep daily off-site backups</strong> of files and database, stored away from your hosting, and test a restore occasionally. An untested backup can fail exactly when you need it.</li>
+  <li><strong>24. Choose hosting that takes security seriously:</strong> account isolation, server-level malware scanning, SFTP or SSH instead of plain FTP, and 2FA on the hosting control panel. Ask whether the host keeps its own backups and how a restore works.</li>
+  <li><strong>25. Use HTTPS everywhere</strong> with a valid SSL certificate, and add basic security headers; see <a href="/blog/website-security-headers-explained/">security headers explained</a>.</li>
+</ul>
 
-<h2>Hosting and server</h2>
-<ol start="16">
-  <li><strong>Choose reputable hosting</strong> with malware scanning, firewalls and account isolation.</li>
-  <li><strong>Use HTTPS everywhere</strong> with a valid SSL certificate.</li>
-  <li><strong>Use SFTP, not FTP</strong>, and secure your hosting control panel with 2FA.</li>
-</ol>
+<h2>How to tell if hardening came too late</h2>
+<p>Redirects to spam sites, unfamiliar pages in Google results, new admin users you didn't create, or browser and Google warnings mean the site is probably already compromised. Go through the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a>, then clean it properly using the <a href="/blog/remove-malware-wordpress-step-by-step/">step-by-step malware removal guide</a> or get help, and only then apply this checklist.</p>
 
-<p>An extra layer: <a href="/blog/website-security-headers-explained/">website security headers explained</a>.</p>
-
-<h2>Monitoring and protection</h2>
-<ol start="19">
-  <li><strong>Install a reputable security plugin or firewall</strong> to block malicious traffic and scan for malware.</li>
-  <li><strong>Monitor Google Search Console</strong> for security warnings, and set up uptime monitoring so you know quickly if the site goes down.</li>
+<h2>A monthly security routine</h2>
+<ol>
+  <li>Apply updates after a backup, and test key pages and forms</li>
+  <li>Review the administrator list and remove anyone who no longer needs access</li>
+  <li>Check the security plugin's scan results and blocked attacks</li>
+  <li>Confirm backups ran and are stored off-site</li>
+  <li>Look at Search Console for security issues and unexpected pages</li>
+  <li>Remove plugins and themes that are no longer needed</li>
 </ol>
 
 <p>Keep your plugin list lean and well maintained; see <a href="/blog/essential-wordpress-plugins-business/">essential WordPress plugins (and ones to avoid)</a>.</p>
 
-<h2>Signs something is already wrong</h2>
-<p>Unexpected redirects, strange pages in Google results, unknown admin users or browser warnings are signs of an existing infection. See our guide to the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a>, and get it cleaned properly before hardening.</p>
+<p>More on getting backups right: <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>
 
-<h2>Make security routine</h2>
-<p>Security isn't a one-time task. Updates, backups and checks need to happen every month. Many businesses put their site on a <a href="/wordpress-maintenance/">maintenance plan</a> so this happens consistently without them having to remember.</p>
+<p>Not sure which role to give whom? See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>.</p>
+
+<p>Server-side hardening: <a href="/blog/wordpress-file-permissions/">file permissions</a> and <a href="/blog/harden-wp-config-php/">wp-config.php settings</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Is WordPress secure enough for a business website?</h3>
+<p>Yes, when it's maintained. WordPress core is actively maintained and security fixes are released regularly. Most hacks come from outdated plugins, weak passwords, nulled software and poor hosting, all of which this checklist addresses.</p>
+<h3>Do I need a security plugin like Wordfence?</h3>
+<p>For most business sites, yes. A plugin such as Wordfence or Solid Security adds a firewall, malware scanning, login protection and 2FA in one place. Use one, not several, and don't treat it as a substitute for updates and backups.</p>
+<h3>Should I disable XML-RPC in WordPress?</h3>
+<p>If nothing on your site uses it, yes. Most sites don't need it, and bots use it for password guessing. Check first whether you use Jetpack, the WordPress mobile app or a service that publishes remotely, because those may need it.</p>
+<h3>Does changing the WordPress login URL make it more secure?</h3>
+<p>Only a little. It reduces automated login attempts and log noise, but anyone determined can still find a login page. Strong passwords, 2FA and limited login attempts do the real work.</p>
+<h3>How often should I check WordPress security?</h3>
+<p>Check updates weekly or fortnightly and run through a routine like the one above monthly. Review users whenever someone leaves or a project with an outside developer ends.</p>
+<h3>What should I do if my WordPress site is already hacked?</h3>
+<p>Don't just restore an old backup or delete the obvious files. Find and remove the malware and any backdoors, change every password, update everything, and then harden the site. A hack that isn't fully cleaned usually comes back.</p>
+
+<p>Rather have someone else handle it? My maintenance plans cover updates with a backup first, security scans and monitoring, off-site backups and uptime checks every month; see <a href="/wordpress-maintenance/">WordPress maintenance</a>. If your site has already been hacked, see <a href="/wordpress-malware-removal/">malware removal and hardening</a>.</p>
 `,
   },
   {
@@ -3593,68 +3705,119 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'equipment-rental-website-guide',
-    seoTitle: 'Equipment & Generator Rental Websites That Get Enquiries',
-    title: 'Equipment and Generator Rental Websites: What Drives Enquiries',
-    description: 'Equipment and generator rental websites that get enquiries: fleet pages by capacity, industry pages, fast quote forms, trust signals and local SEO.',
+    seoTitle: 'SEO for Generator Hire and Equipment Rental Websites',
+    title: 'Equipment and Generator Rental Websites: Structure, SEO and Enquiries (With a Real Example)',
+    description: 'SEO for generator hire and equipment rental websites: capacity pages, local search, Business Profile, quick quote forms and a real generator rental site.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Industries',
     related: ['website-for-solar-and-power-companies', 'website-for-manufacturers', 'landing-page-design'],
     body: `
-<p>When a generator fails before an event, a site needs temporary power, or a factory plans maintenance, buyers search online and call the first rental company that looks reliable and has what they need. A well-built rental website makes sure that's you.</p>
+<p>An equipment or generator rental website gets enquiries when buyers can find the exact capacity they need, see that you serve their area and industry, and ask for a quote or callback in seconds. For SEO, that means a page for each capacity band or equipment type, titles that match "on rent" and "hire" searches with your city, a complete Google Business Profile, and FAQs written in the words customers actually use.</p>
+<p>Below is how I'd structure one, using the generator rental website I built for Sahni Power Solutions as a worked example. It's the same approach I use for <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a>, and for other rental businesses through <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 
-<h2>What rental customers need to know fast</h2>
+<h2>What rental buyers need to know in the first minute</h2>
+<p>Someone renting a generator, a crane or a sound system usually has a deadline: a power cut at a factory, an event this weekend, a site that starts work on Monday. They want answers fast:</p>
 <ul>
   <li>Do you have the right equipment and capacity?</li>
-  <li>Is it available when I need it, for how long, and where?</li>
-  <li>Can you deliver, install and support it?</li>
-  <li>How quickly can I get a quote?</li>
+  <li>Is it available on my dates, for my duration, at my location?</li>
+  <li>Do you deliver, install and maintain it, and is an operator included?</li>
+  <li>What does the price depend on, and how quickly can I get a quote?</li>
+  <li>Does it meet the emission and noise rules my site or venue has to follow?</li>
 </ul>
+<p>Every page should answer as many of these as possible and then make contacting you effortless.</p>
 
-<h2>Organise your fleet clearly</h2>
-<p>Present equipment the way customers think about it:</p>
+<h2>Structure the site the way buyers specify equipment</h2>
+<p>Buyers rarely search by your model numbers. They think in capacity, type and duration, so organise your fleet the same way:</p>
 <ul>
-  <li><strong>By capacity:</strong> for generators, kVA ranges (for example 5–62.5 kVA, 82.5–250 kVA, 320 kVA and above)</li>
-  <li><strong>By type:</strong> portable, silent/acoustic, mobile trailer-mounted, welding, industrial</li>
-  <li><strong>By rental term:</strong> daily, weekly, monthly or long-term contracts</li>
+  <li><strong>By capacity:</strong> kVA bands for generators, tonnage for cranes, wattage for sound systems</li>
+  <li><strong>By type:</strong> portable, silent, welding, mobile and industrial generators, for example</li>
+  <li><strong>By rental term:</strong> daily, weekly, monthly and annual</li>
 </ul>
-<p>Each category or capacity range deserves its own page with specifications, typical uses and an enquiry button. These pages also rank for specific searches like "500 kVA generator on rent".</p>
+<table>
+  <thead><tr><th>Page type</th><th>Searches it can target</th><th>What it must include</th></tr></thead>
+  <tbody>
+    <tr><td>Homepage</td><td>"generator on rent in [city]", your brand</td><td>Fleet summary, sectors served, service area, call-back button</td></tr>
+    <tr><td>Capacity band page</td><td>"125 kVA generator on rent", "100 kVA DG set hire"</td><td>Specifications, typical uses, price factors, FAQs, enquiry button</td></tr>
+    <tr><td>Equipment type page</td><td>"silent generator on rent", "welding generator hire"</td><td>When to choose it, noise and compliance, sizes available</td></tr>
+    <tr><td>Rental term page or section</td><td>"monthly generator rental", "long-term DG rental"</td><td>Terms, maintenance, fuel and operator arrangements</td></tr>
+    <tr><td>Industry section</td><td>"generator hire for events", "generator for construction site"</td><td>That sector's needs and the kind of jobs you do</td></tr>
+    <tr><td>Contact page</td><td>Brand and "near me" searches</td><td>Form, phone, WhatsApp, address and map</td></tr>
+  </tbody>
+</table>
+<p>One long catalogue page can't rank for "62.5 kVA" and "500 kVA" at the same time. Separate pages can, and they let a buyer who already knows roughly how much power they need go straight to the right one.</p>
 
-<p>Renting furniture and appliances to households on monthly plans works differently, with tenure-based rents, deposits and KYC; see <a href="/blog/website-for-furniture-appliance-rental/">websites for furniture and appliance rental businesses</a>.</p>
-
-<h2>Speak to each customer type</h2>
-<p>Events, construction sites, hospitals, factories and offices have different needs. Short industry sections or pages that address noise limits, fuel management, backup duration or compliance show you understand their situation.</p>
+<h2>SEO for generator hire: how to rank</h2>
+<h3>Use the words people search with</h3>
+<p>Indian buyers search "generator on rent", "DG set on rent", "genset rental" and "generator hire", usually with a capacity, a city or a locality. Use those phrases naturally in page titles, headings and FAQs. A capacity page title might read "125 kVA Generator on Rent in Bangalore | Silent DG Sets", with the H1 and first paragraph confirming the same thing.</p>
+<h3>Give each capacity band its own content</h3>
+<p>Copying the same paragraph onto every capacity page with only the number changed gives Google no reason to rank any of them. Write what's specific: typical uses for that size, what affects its price, approximate fuel use, and how it compares with the next size up or down.</p>
+<h3>Local search and your Google Business Profile</h3>
+<p>For "near me" and city searches, your Business Profile matters as much as the website. Choose the closest rental category available, set your service areas, add real photos of the fleet and installations, and ask happy customers for reviews. Keep the business name, address and phone number identical on the website and the profile; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+<p>Only create area pages for places you genuinely serve and can say something specific about, such as delivery times from your yard or jobs you've done there. Dozens of near-identical city pages tend to be ignored or treated as doorway pages; see <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a>.</p>
+<h3>FAQs written in customers' words</h3>
+<p>Answer the questions people ask on the phone: emergency hire, delivery and setup, maintenance during the rental, fuel, choosing a size, portable versus silent, and monthly rentals. Google rarely shows FAQ rich results for business sites now, but the answers still match real searches and reassure buyers; see <a href="/blog/faq-page-seo/">FAQ page SEO</a>.</p>
+<h3>Technical basics</h3>
+<p>Use an SEO plugin such as Rank Math or Yoast for titles and LocalBusiness schema, compress fleet photos, keep pages fast on mobile data, and submit your sitemap in Search Console so new capacity pages get found.</p>
 
 <h2>Make enquiring instant</h2>
 <ul>
-  <li><strong>"Enquire Now" and "Request a Call Back"</strong> on every page</li>
-  <li><strong>Short forms:</strong> equipment needed, capacity, location, dates and phone</li>
-  <li><strong>Click-to-call and WhatsApp</strong>, since urgent rentals are often arranged by phone</li>
-  <li><strong>Fast response:</strong> make sure enquiries reach someone immediately</li>
+  <li><strong>A "Request a Call Back" button in the header</strong> on every page, and an "Enquire Now" button at the end of every section.</li>
+  <li><strong>Click-to-call</strong> on mobile, because urgent rentals are often arranged by phone.</li>
+  <li><strong>WhatsApp with a page-specific message,</strong> such as "Hi, I need a 125 kVA generator on rent", so you know what they want before replying; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a>.</li>
+  <li><strong>A short form:</strong> capacity (with a "not sure, help me choose" option), site location, start date, duration, phase, name and phone.</li>
+  <li><strong>A separate route for long-term hire,</strong> such as a monthly rental enquiry button, because those enquiries are worth more and need different questions.</li>
 </ul>
+<p>Make sure every enquiry reaches someone immediately by email and phone notification. A rental buyer who waits an hour has usually called someone else.</p>
 
-<p>Vehicle-based businesses have their own needs; see <a href="/blog/website-for-car-dealers-workshops/">websites for car dealers and workshops</a>.</p>
+<h2>Pricing: show it, or explain what drives it</h2>
+<p>Most rental companies quote per job, and that's fine. What helps is explaining what the price depends on: capacity, hire duration, whether fuel is supplied, whether an operator is included, distance from your yard, transport and installation, and expected running hours. If you do publish indicative rates, label them clearly and only show figures you'll honour.</p>
 
-<h2>Build trust</h2>
+<h2>Build trust before the call</h2>
 <ul>
   <li>Years in business and project numbers you can back up</li>
-  <li>Photos of real installations and your fleet</li>
-  <li>Compliance and safety information (for example emission and noise norms)</li>
-  <li>A detailed FAQ on delivery, installation, fuel, maintenance and billing</li>
+  <li>Photos of your own fleet and real installations, not stock images</li>
+  <li>The sectors and kinds of sites you serve</li>
+  <li>Compliance details, such as the emission standard your generators meet and noise limits for silent units, checked against the current rules</li>
+  <li>What happens if equipment breaks down during the rental</li>
+  <li>Your yard or office address, phone and email on every page</li>
 </ul>
 
-<h2>Real example</h2>
-<p>The <a href="/work/sahni-power-solutions/">Sahni Power Solutions case study</a> shows this structure: a generator range organised by capacity and type, industry-specific service descriptions, prominent enquiry and callback buttons, an installation gallery, trust indicators and a detailed FAQ.</p>
+<h2>Real example: Sahni Power Solutions</h2>
+<p><a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, which works from a yard in Yelahanka, Bangalore, rents diesel generators for commercial, industrial, institutional, event and infrastructure needs, on daily, weekly, monthly and annual terms. The website I built for them follows the structure above:</p>
+<ul>
+  <li><strong>Short navigation:</strong> Home, Our Generator Range and Contact Us, with a "Request a Call Back" button in the header.</li>
+  <li><strong>Capacity pages:</strong> the generator range is split into seven capacity bands, from 5 to 62.5 kVA up to 1,500 kVA, each with its own page.</li>
+  <li><strong>Range by type as well as size:</strong> single-phase portable units from 5 to 15 kVA, three-phase units up to 125 kVA, silent generators for noise-sensitive sites, welding generators from 200 to 400 amps, and large industrial DG sets.</li>
+  <li><strong>Specific content per band:</strong> the 82.5 to 125 kVA page lists typical uses, explains what affects the rental price (duration, fuel arrangement, operator and distance from the Yelahanka yard), gives approximate fuel consumption at full load, and compares 100 kVA with 125 kVA for a small hospital.</li>
+  <li><strong>Sectors named:</strong> refineries, mining, government projects such as PWD, Smart City and metro work, data centres, events, banks, schools, hospitals, warehouses, malls and construction sites.</li>
+  <li><strong>Trust and compliance:</strong> project counters, a note that the business began as Sahni Traders in 1992, an installation gallery, and references to CPCB-IV+ emission standards and state noise limits for acoustic units.</li>
+  <li><strong>Local FAQs:</strong> sizes available in Bangalore, emergency hire, delivery and setup, and monthly rental, with localities such as Whitefield, Electronic City, Peenya and Hebbal named alongside Pan India service.</li>
+</ul>
+<p>It's built with WordPress, Elementor, the Astra theme and Rank Math SEO.</p>
+
+<h2>The same approach for other rental businesses</h2>
+<p>Cranes, scaffolding, construction equipment and portable cabins work the same way: capacity or size first, a page per category, clear price factors and fast enquiry routes. Event rentals add packages and date availability; see <a href="/blog/website-for-event-rental-businesses/">websites for event rental businesses</a>. Household furniture and appliance rental is different, with tenure-based rents, deposits and KYC; see <a href="/blog/website-for-furniture-appliance-rental/">furniture and appliance rental websites</a>.</p>
 
 <p>Solar installers face similar buyers; see the <a href="/blog/solar-company-website-guide/">solar company website guide</a>.</p>
 
-<h2>Local SEO for rental companies</h2>
-<ul>
-  <li>Target "{equipment} on rent in {city}" searches in titles and content</li>
-  <li>Keep your Google Business Profile updated with photos and reviews</li>
-  <li>Create service-area content only where you genuinely serve and have something specific to say</li>
-</ul>
+<p>Vehicle-based businesses have their own needs; see <a href="/blog/website-for-car-dealers-workshops/">websites for car dealers and workshops</a>.</p>
 
-<p>Similar principles apply to solar and power businesses; see what's included in a <a href="/website-for-solar-and-power-companies/">power company website</a>.</p>
+<h2>FAQs</h2>
+<h3>How do I do SEO for a generator hire business?</h3>
+<p>Create a page for each capacity band and generator type, use "on rent" and "hire" phrases with capacities and your city in titles and headings, add FAQs in customers' words, keep your Google Business Profile complete with real photos and reviews, and make sure the site is fast on mobile.</p>
+<h3>Do I need a separate page for each generator size?</h3>
+<p>A page per capacity band is usually the right balance. Grouping sizes into sensible bands avoids dozens of thin pages while still matching searches like "125 kVA generator on rent". Each page needs its own uses, price factors and FAQs.</p>
+<h3>Should I show rental prices on my website?</h3>
+<p>You don't have to. Explaining what affects the price answers the first question and leads naturally to a quote request. If you show indicative rates, label them as approximate and keep them up to date.</p>
+<h3>Should I create a page for every city or area I serve?</h3>
+<p>Only for areas you genuinely serve and can write something specific about. Naming the localities you cover in your FAQs and service area text is often enough, and avoids near-duplicate pages.</p>
+<h3>What should a generator rental enquiry form ask?</h3>
+<p>Capacity (with a "not sure" option), site location, start date, duration, single or three phase, name and phone number. Keep it short; details such as fuel and operator can be confirmed on the call.</p>
+<h3>How much does an equipment rental website cost?</h3>
+<p>It depends on the number of pages and features. My <a href="/blog/wordpress-website-cost-india/">website cost guide</a> puts most small business sites in India at ₹15,000 to ₹40,000, and larger business or B2B sites at ₹35,000 to ₹80,000.</p>
+
+<p>Run a generator, power or equipment rental business and want a website that turns searches into calls? I build fleet pages by capacity, enquiry and call-back flows, WhatsApp and local SEO; see <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> or <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -3985,59 +4148,124 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'whatsapp-on-business-website',
-    seoTitle: 'Adding WhatsApp to Your Business Website (Guide)',
-    title: 'WhatsApp on Your Business Website: How to Add It and Get More Enquiries',
-    description: 'Add WhatsApp to your business website: click-to-chat buttons, pre-filled messages, form-to-WhatsApp flows, WhatsApp Business features and enquiry tracking.',
+    seoTitle: 'WhatsApp Business Chat on Your Website: How to Add It',
+    title: 'How to Add WhatsApp to Your Business Website: Click-to-Chat Links, Buttons, Tracking and the API',
+    description: 'Add WhatsApp Business chat to your website with wa.me links and pre-filled messages, choose between the app and the API, and track WhatsApp clicks in GA4.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Growth',
     related: ['wordpress-website-development', 'landing-page-design', 'website-for-restaurants'],
     body: `
-<p>For many Indian customers, WhatsApp is the easiest way to contact a business: faster than email, less awkward than a phone call. Adding WhatsApp to your website properly can noticeably increase the number of people who reach out.</p>
+<p>The simplest way to add WhatsApp chat to a business website is a click-to-chat link: https://wa.me/ followed by your full number with the country code (no plus sign, spaces, dashes or leading zero), optionally with a pre-filled message. Put that link behind a "Chat on WhatsApp" button next to your main calls to action and in a small floating button on mobile. It's free, needs no API, and works with the ordinary WhatsApp Business app.</p>
+<p>For most small businesses that's all you need. The WhatsApp Business API only matters when a team shares one number, you want automation, or message volumes are high. A WhatsApp button with page-specific messages is included in the websites I build through <a href="/wordpress-website-development/">WordPress website development</a>, and in every <a href="/landing-page-design/">landing page</a> alongside the lead form.</p>
 
-<h2>Ways to add WhatsApp</h2>
-<h3>1. Floating chat button</h3>
-<p>A small WhatsApp button fixed to the corner of every page, visible on mobile and desktop. It's the simplest and most effective option.</p>
-<h3>2. Buttons in key places</h3>
-<p>"Chat on WhatsApp" next to your main call to action, on service pages, product pages and contact pages.</p>
-<h3>3. Pre-filled messages</h3>
-<p>Click-to-chat links can include a ready-made message, for example "Hi, I'm interested in your 2BHK flats" on a property page. Visitors just tap send, and you instantly know which page they came from.</p>
-<h3>4. Form-to-WhatsApp</h3>
-<p>A short form (name, requirement) that opens WhatsApp with the details filled in, or emails you and then opens WhatsApp, so no enquiry is lost. This site's contact form works that way.</p>
-
-<h2>Use WhatsApp Business features</h2>
+<h2>Step 1: Build your click-to-chat link</h2>
+<p>The link format is the same whether you use the free app or the API:</p>
+<pre><code>https://wa.me/91XXXXXXXXXX
+https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre>
 <ul>
-  <li><strong>Business profile:</strong> hours, address, website and description</li>
-  <li><strong>Greeting and away messages:</strong> instant replies when you're busy or closed</li>
-  <li><strong>Quick replies:</strong> saved answers to common questions</li>
-  <li><strong>Catalogue:</strong> show products or services inside WhatsApp</li>
-  <li><strong>Labels:</strong> organise chats as new lead, quoted, follow-up or won</li>
+  <li><strong>91</strong> is India's country code, followed by the 10-digit mobile number. Leave out the plus sign, spaces and the leading zero, or the link won't work.</li>
+  <li><strong>The message must be URL-encoded:</strong> spaces become %20 and a comma becomes %2C. Any free URL encoder does this, or type the message into a link generator.</li>
+  <li><strong>The older format</strong>, api.whatsapp.com/send?phone=91XXXXXXXXXX&amp;text=..., still works, but wa.me is shorter.</li>
+  <li><strong>Short links and QR codes:</strong> the WhatsApp Business app can generate a short link and QR code from its business tools at the time of writing, which is handy for brochures and shop counters.</li>
+</ul>
+<p>As a button in HTML, it looks like this:</p>
+<pre><code>&lt;a href=&quot;https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20need%20a%20quote&quot;&gt;Chat on WhatsApp&lt;/a&gt;</code></pre>
+
+<h2>Step 2: Choose where WhatsApp appears</h2>
+<h3>A floating button</h3>
+<p>A small WhatsApp icon fixed to the bottom corner of every page is the most common setup and works well on mobile. Make sure it doesn't cover the cookie notice, an "Add to cart" button or form fields on small screens.</p>
+<h3>Buttons beside your main calls to action</h3>
+<p>Add "Chat on WhatsApp" next to "Get a Quote" or "Book Now" on the homepage, service pages, product pages, pricing and the contact page. Some visitors will never tap a corner icon but will tap a clear button in the content.</p>
+<h3>Page-specific pre-filled messages</h3>
+<p>Different messages per page tell you exactly what each lead wants before you reply, and save the visitor from typing:</p>
+<table>
+  <thead><tr><th>Page</th><th>Pre-filled message</th></tr></thead>
+  <tbody>
+    <tr><td>Homepage</td><td>Hi, I found you on your website and have a question.</td></tr>
+    <tr><td>Real estate project page</td><td>Hi, I'm interested in the 2BHK flats at [project]. Please share the price list.</td></tr>
+    <tr><td>Clinic treatment page</td><td>Hi, I'd like to book a consultation for [treatment].</td></tr>
+    <tr><td>Product page</td><td>Hi, is [product] available in size M?</td></tr>
+    <tr><td>Service or pricing page</td><td>Hi, I'd like a quote for [service].</td></tr>
+  </tbody>
+</table>
+<h3>Form-to-WhatsApp</h3>
+<p>A short form collects the name and requirement, emails it to you so you have a record, then opens WhatsApp with the details filled in. You keep the lead even if the visitor never presses send. This site's contact form works that way.</p>
+
+<h2>Where WhatsApp works especially well</h2>
+<ul>
+  <li><strong>Restaurants and cafes:</strong> orders, table bookings and catering questions</li>
+  <li><strong>Real estate:</strong> price lists, floor plans and site-visit bookings</li>
+  <li><strong>Clinics:</strong> appointment timings and directions, while keeping medical details for the consultation</li>
+  <li><strong>Coaching institutes and schools:</strong> admission and batch timing questions from parents</li>
+  <li><strong>Online stores:</strong> size and stock questions before buying, and confirming cash on delivery orders</li>
+  <li><strong>B2B suppliers:</strong> catalogue and price list requests, where a buyer wants a quick answer before a formal quote</li>
 </ul>
 
-<p>These same features can also help you win repeat business from past customers; see <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a>.</p>
-
-<h2>Best practices</h2>
+<h2>How to add it in WordPress</h2>
 <ul>
-  <li><strong>Reply fast.</strong> WhatsApp sets an expectation of quick responses.</li>
-  <li><strong>Don't hide other options.</strong> Some people still prefer calls or forms.</li>
-  <li><strong>Make it page-specific.</strong> Different pre-filled messages per service tell you exactly what each lead wants.</li>
-  <li><strong>Respect privacy.</strong> Don't add people to broadcast lists without their consent.</li>
-  <li><strong>Keep the button unobtrusive</strong>, so it doesn't cover content or cookie notices on small screens.</li>
+  <li><strong>Elementor or the block editor:</strong> use a Button widget or block and paste the wa.me link into the link field. Use a different message on each page template.</li>
+  <li><strong>A floating button plugin:</strong> plugins such as Joinchat and Click to Chat are popular on WordPress.org at the time of writing, with options for per-page messages, opening hours and several team members.</li>
+  <li><strong>A plain link in the theme:</strong> a link with a small inline SVG icon adds almost nothing to page weight.</li>
+</ul>
+<p>Avoid heavy third-party chat widgets just to show a WhatsApp icon. Some load external scripts on every page and slow the site down; see <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a>.</p>
+
+<h2>WhatsApp Business app vs the WhatsApp Business API</h2>
+<table>
+  <thead><tr><th></th><th>WhatsApp Business app</th><th>WhatsApp Business Platform (API)</th></tr></thead>
+  <tbody>
+    <tr><td>Cost</td><td>Free</td><td>Meta charges for many message types, directly or through a provider; check the current rates</td></tr>
+    <tr><td>Setup</td><td>Install on a phone</td><td>Through Meta's Cloud API or a provider, usually with business verification</td></tr>
+    <tr><td>Team use</td><td>One number on a phone plus a few linked devices</td><td>Many agents in a shared inbox through a provider's tool</td></tr>
+    <tr><td>Automation</td><td>Greeting and away messages, quick replies, labels</td><td>Chatbots, CRM connections, automated order and appointment messages</td></tr>
+    <tr><td>Messaging customers first</td><td>Manual messages and broadcast lists</td><td>Pre-approved templates; free-form replies within the 24-hour customer service window</td></tr>
+    <tr><td>Best for</td><td>Most small businesses</td><td>Teams, high volumes and automated notifications</td></tr>
+  </tbody>
+</table>
+<p>The click-to-chat link on your website works the same with either. Moving a number to the API changes how it works in the app, so check what your provider supports before you switch. The app's catalogue, labels and broadcast lists are covered in <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a>, and automated order updates for stores in <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">order notifications by email, SMS and WhatsApp</a>.</p>
+
+<h2>Track WhatsApp clicks in Google Analytics</h2>
+<p>If you don't track WhatsApp, many of your website enquiries stay invisible in your reports. Two ways to do it:</p>
+<ol>
+  <li><strong>GA4 on its own:</strong> with enhanced measurement's outbound clicks switched on, GA4 records clicks to wa.me as click events with the link address. Create a new event in GA4 (Admin &gt; Data display &gt; Events &gt; Create event, at the time of writing) called whatsapp_click, matching when the event name is click and link_url contains wa.me, then mark it as a key event.</li>
+  <li><strong>Google Tag Manager:</strong> a "Just Links" click trigger where the Click URL contains wa.me fires a GA4 event called whatsapp_click. This also makes it easy to send the same click to Google Ads or Meta as a conversion.</li>
+</ol>
+<p>A tap isn't the same as a conversation, because some people open WhatsApp and change their mind. Label chats from the website in WhatsApp Business and compare the two numbers each month. More detail in <a href="/blog/call-tracking-small-business/">tracking phone and WhatsApp enquiries</a> and <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</p>
+
+<h2>Reply fast and handle leads properly</h2>
+<ul>
+  <li><strong>Set a greeting and an away message</strong> so people get an instant reply, with your hours in the away message.</li>
+  <li><strong>Save quick replies</strong> for prices, location, timings and documents you send often.</li>
+  <li><strong>Use labels</strong> such as New lead, Quoted, Follow up and Won, so nothing slips.</li>
+  <li><strong>Only promise a reply time you can keep.</strong> WhatsApp creates an expectation of quick answers; see <a href="/blog/respond-to-website-enquiries-fast/">responding to enquiries fast</a>.</li>
+  <li><strong>Ask before adding anyone to a broadcast list.</strong> Messaging people who only asked one question annoys them and can get your number reported. India's data protection rules also apply to how you store and use customers' details, so check with your adviser if you collect a lot of personal data.</li>
 </ul>
 
-<h2>Track WhatsApp enquiries</h2>
-<p>Set up click tracking in Google Analytics so you can see which pages and campaigns generate WhatsApp chats; see <a href="/blog/setup-google-analytics-search-console/">setting up GA4</a>. For ad campaigns, count WhatsApp clicks as conversions alongside form submissions.</p>
-
-<p>Wondering about chatbots instead? Read <a href="/blog/website-chatbot-worth-it/">do you need a chatbot?</a></p>
-
-<h2>Where it works especially well</h2>
+<h2>Common mistakes</h2>
 <ul>
-  <li><strong>Restaurants:</strong> orders and table bookings (see <a href="/blog/restaurant-website-online-ordering/">restaurant ordering options</a>)</li>
-  <li><strong>Real estate:</strong> quick questions about projects and site visits</li>
-  <li><strong>Clinics and coaches:</strong> appointment questions</li>
-  <li><strong>Landing pages:</strong> an alternative to forms for mobile visitors</li>
+  <li>The number written with a plus sign, spaces or a leading zero, so the link opens an error</li>
+  <li>A floating button covering content, the cookie notice or checkout buttons on phones</li>
+  <li>WhatsApp as the only option, when some visitors prefer a call or a form</li>
+  <li>A staff member's personal number, which leaves with them</li>
+  <li>No tracking, so WhatsApp leads never appear in your reports</li>
 </ul>
+<p>If you're also running ads, compare sending people straight to a chat with sending them to a page first; see <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs a landing page</a>.</p>
 
-<p>WhatsApp integration is included in every website I build; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2>FAQs</h2>
+<h3>How do I add WhatsApp Business chat to my website?</h3>
+<p>Create a wa.me link with your number in international format and an optional pre-filled message, then add it to a button on your key pages and a floating icon, either in your page builder or with a lightweight plugin. Test it on a phone and a desktop.</p>
+<h3>What is the wa.me link format?</h3>
+<p>https://wa.me/ followed by the country code and number with no plus sign, spaces or leading zero, for example https://wa.me/91XXXXXXXXXX. Add ?text= followed by a URL-encoded message to pre-fill the chat.</p>
+<h3>Is adding WhatsApp to a website free?</h3>
+<p>Yes. Click-to-chat links and the WhatsApp Business app are free. Costs only come in with the WhatsApp Business API, where Meta charges for many message types, and with paid plugins or chat tools.</p>
+<h3>Do I need the WhatsApp Business API for my website?</h3>
+<p>Not for a chat button. Most small businesses do well with the free app and a click-to-chat link. The API makes sense when several staff need to answer from one number, or you want chatbots and automated notifications.</p>
+<h3>Why does the WhatsApp button open WhatsApp Web on desktop?</h3>
+<p>On a computer, wa.me links open the WhatsApp desktop app if it's installed, or offer WhatsApp Web, which needs the visitor's phone linked. On mobile they open the app directly. That's normal behaviour, and it's why a form or phone number should sit alongside WhatsApp.</p>
+<h3>How do I track WhatsApp clicks in Google Analytics?</h3>
+<p>Create a GA4 event for clicks on links containing wa.me, either from the outbound click events GA4 already collects or with a Google Tag Manager click trigger, and mark it as a key event.</p>
+
+<p>Want WhatsApp set up properly on your website, with page-specific messages and click tracking? It's part of every website I build; see <a href="/wordpress-website-development/">WordPress website development</a>. Thinking about a chatbot instead? Read <a href="/blog/website-chatbot-worth-it/">do you need a chatbot?</a> first.</p>
 `,
   },
   {
@@ -5237,73 +5465,152 @@ Additional headers: Reply-To: [your-email]</code></pre>
   },
   {
     slug: 'woocommerce-seo-guide',
-    seoTitle: 'WooCommerce SEO: Rank Product & Category Pages',
-    title: 'WooCommerce SEO: How to Rank Your Product and Category Pages',
-    description: 'WooCommerce SEO guide to rank product and category pages: keyword research, category content, product schema, duplicate content, site structure and speed.',
+    seoTitle: 'WooCommerce SEO Guide: Rank Product and Category Pages',
+    title: 'WooCommerce SEO: A Practical Guide to Ranking Your Product and Category Pages',
+    description: 'WooCommerce SEO guide: keyword mapping, category content, Rank Math or Yoast settings, product schema, filter URLs, out-of-stock pages and store speed.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services', 'wordpress-speed-optimization'],
     body: `
-<p>Paid ads and marketplaces bring sales, but organic search traffic is the channel that keeps working without a cost per click. Here's how to help Google find, understand and rank your WooCommerce store.</p>
+<p>WooCommerce SEO comes down to five things: a store structure that matches how people search, category pages with useful content, unique product pages with working product schema, control over the duplicate URLs that filters and variations create, and a fast store. WooCommerce gives you a solid base and an SEO plugin such as Rank Math or Yoast fills most of the gaps, but the settings and content decisions are still yours to make.</p>
+<p>This guide is the overview: what to do, in what order, and where each topic is covered in depth. It's the checklist I work through when I build or review a store as a <a href="/woocommerce-developer/">WooCommerce developer</a>.</p>
 
-<h2>1. Research what buyers search</h2>
-<p>Buyers search at two levels: <strong>category searches</strong> ("organic spices online", "men's leather wallets") and <strong>product searches</strong> ("cold-pressed coconut oil 1 litre"). Map category keywords to category pages and specific terms to product pages.</p>
+<h2>What WooCommerce does and doesn't do for SEO</h2>
+<p>WooCommerce runs on WordPress, so you control titles, URLs, content, redirects and structured data, and it outputs basic Product schema without any extra plugin. The weak spots are the defaults: category pages are a bare grid, product tags create thin archives, filters multiply URLs, and stores slow down as plugins and images pile up. None of this is hard to fix, but none of it fixes itself.</p>
 
-<h2>2. Build a clear store structure</h2>
+<h2>WooCommerce SEO at a glance</h2>
+<table>
+  <thead><tr><th>Area</th><th>What to do</th><th>More detail</th></tr></thead>
+  <tbody>
+    <tr><td>Keyword mapping</td><td>One main search term per category and product</td><td>Step 1 below</td></tr>
+    <tr><td>Structure and URLs</td><td>Shallow categories, breadcrumbs, short stable URLs</td><td>Step 2 below</td></tr>
+    <tr><td>Category pages</td><td>Intro text, buying advice, FAQs, unique titles</td><td><a href="/blog/category-tag-pages-seo/">Category and tag page SEO</a></td></tr>
+    <tr><td>Product pages</td><td>Unique descriptions, specific titles, alt text, reviews</td><td><a href="/blog/write-product-descriptions-that-sell/">Product descriptions that sell</a></td></tr>
+    <tr><td>Titles and descriptions</td><td>Templates, plus hand-written titles for top pages</td><td><a href="/blog/write-meta-titles-descriptions/">Meta titles and descriptions</a></td></tr>
+    <tr><td>Product schema</td><td>Price, availability, brand and reviews, with no duplicates</td><td>Step 6 below</td></tr>
+    <tr><td>Filters and variations</td><td>Canonicals and noindex for parameter URLs</td><td><a href="/blog/woocommerce-product-filters/">Product filters and faceted search</a></td></tr>
+    <tr><td>Out-of-stock products</td><td>Keep, redirect or remove depending on whether they return</td><td>Step 8 below</td></tr>
+    <tr><td>Speed</td><td>Image optimisation, caching that excludes cart and checkout</td><td><a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a></td></tr>
+    <tr><td>Google Shopping</td><td>Free product listings through Merchant Center</td><td><a href="/blog/google-merchant-center-woocommerce/">Merchant Center for WooCommerce</a></td></tr>
+  </tbody>
+</table>
+
+<h2>Step 1: Map search terms to categories and products</h2>
+<p>Shoppers search at two levels. <strong>Category searches</strong> are broader, such as "cotton kurtas for women" or "cold-pressed oils online". <strong>Product searches</strong> are specific and include attributes, such as "wood-pressed groundnut oil 1 litre". Category terms belong on category pages and specific terms on product pages, with one main term per page so two of your own pages don't compete for the same search.</p>
+<p>Good places to find the words buyers use:</p>
 <ul>
-  <li>Logical categories and subcategories that match how people shop</li>
-  <li>Each product in one main category (avoid scattering it across many)</li>
-  <li>Breadcrumbs so shoppers and Google understand the hierarchy</li>
-  <li>Clean URLs like <code>/shop/spices/turmeric-powder/</code></li>
+  <li><strong>Search Console:</strong> Performance &gt; Search results, filtered by page, shows the queries each page already appears for</li>
+  <li><strong>Google:</strong> autocomplete suggestions and "People also ask"</li>
+  <li><strong>Marketplace filters:</strong> the attributes Amazon and Flipkart let shoppers filter by show what people care about</li>
+  <li><strong>Local names:</strong> many Indian shoppers search "haldi powder" as well as "turmeric powder", so use both where people genuinely do</li>
 </ul>
 
-<h2>3. Treat category pages as landing pages</h2>
-<p>Category pages often have the best chance of ranking for broader searches. Add a short, useful introduction (what's in the range, how to choose), a unique title and description, and FAQs where helpful. Many stores leave category pages as a bare grid of products and miss this opportunity.</p>
-
-<h2>4. Optimize product pages</h2>
+<h2>Step 2: Get the structure and URLs right</h2>
 <ul>
-  <li><strong>Unique descriptions:</strong> never copy manufacturer text used across the web</li>
-  <li><strong>Descriptive titles</strong> with key attributes (size, material, variant)</li>
-  <li><strong>Image alt text</strong> describing the product</li>
-  <li><strong>Reviews:</strong> fresh, genuine customer content that also builds trust</li>
-</ul>
-<p>See also <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a> for conversion tips.</p>
-
-<h2>5. Product schema</h2>
-<p>WooCommerce and SEO plugins add Product schema (price, availability, reviews), which can make your listings eligible for richer search results. Keep prices and stock status accurate. See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
-
-<p>Those ratings should come from genuine customer reviews shown on the page; see <a href="/blog/woocommerce-product-reviews/">how to collect and display WooCommerce product reviews</a>.</p>
-
-<h2>6. Handle duplicate and thin pages</h2>
-<ul>
-  <li>Filtered and sorted URLs (by price, colour) can create many near-duplicate pages. Keep them out of the index or canonicalised to the main category.</li>
-  <li>Variations should normally live on one product page rather than separate near-identical products.</li>
-  <li>Out-of-stock products: keep the page if it will return, and redirect it to the closest alternative if discontinued.</li>
+  <li><strong>Keep categories shallow,</strong> two or three levels at most, named the way shoppers think rather than how your warehouse is organised.</li>
+  <li><strong>Set a primary category</strong> for products in more than one category. Rank Math and Yoast both let you choose it, and it controls the breadcrumb trail.</li>
+  <li><strong>Turn on breadcrumbs</strong> in your theme or SEO plugin. They help shoppers move up a level and add BreadcrumbList schema.</li>
+  <li><strong>Choose product URLs once.</strong> Under Settings &gt; Permalinks, short and stable is best; "shop base with category" makes URLs longer and changes them if a product moves category.</li>
+  <li><strong>Don't change URLs on an established store just for looks.</strong> Every changed URL needs a 301 redirect, and the gain from a tidier URL is small.</li>
+  <li><strong>Noindex product tag archives</strong> unless you curate them with their own content. They usually duplicate your categories.</li>
 </ul>
 
-<p>Product filters are the most common source of these duplicates, since every colour, size and price combination can create a new URL; see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters and faceted search</a>.</p>
+<h2>Step 3: Turn category pages into landing pages</h2>
+<p>Category pages target the broader, high-intent searches, so they often have the best chance of bringing new shoppers. A bare grid of products gives Google little to understand and buyers little help. Add:</p>
+<ul>
+  <li>A short introduction above the products: what's in the range and who it's for, in two or three sentences</li>
+  <li>Buying advice below the grid: how to choose, sizes, materials, care, and the questions customers ask you on WhatsApp</li>
+  <li>A unique SEO title and meta description, not just the category name</li>
+  <li>Links to subcategories, related categories and relevant buying guides</li>
+</ul>
+<p>The intro goes in the Description field under Products &gt; Categories, which most themes show above the products. Content below the grid needs a theme option, a custom field or a small code change. For paginated categories, let page 2 onwards keep its own canonical rather than pointing every page at page 1, or Google may not find the products listed deeper down.</p>
 
-<h2>7. Speed and mobile</h2>
-<p>Stores are image-heavy and plugin-heavy. Optimized images, caching (with cart and checkout excluded) and good hosting keep product and category pages fast. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+<h2>Step 4: Make product pages unique and specific</h2>
+<ul>
+  <li><strong>Titles with key attributes:</strong> "Women's Cotton Kurta, Indigo Block Print, Straight Fit" tells shoppers and Google far more than "Indigo Kurta".</li>
+  <li><strong>Your own descriptions:</strong> manufacturer text appears on dozens of other sites. Write the short description for key facts and the long description for detail, fit, use and care.</li>
+  <li><strong>Attributes:</strong> fill in size, material, weight and similar fields so they appear in the "Additional information" tab and can feed filters and schema.</li>
+  <li><strong>Images:</strong> descriptive file names before upload, alt text that describes the product, compressed WebP files and several angles.</li>
+  <li><strong>Genuine reviews:</strong> they add fresh content, answer objections and power star ratings; see <a href="/blog/woocommerce-product-reviews/">collecting and displaying product reviews</a>.</li>
+</ul>
 
-<h2>8. Content beyond products</h2>
-<p>Buying guides, comparisons and how-to articles attract shoppers earlier in their research and link naturally to categories and products.</p>
+<h2>Step 5: Set up Rank Math or Yoast for WooCommerce</h2>
+<p>Both work well. Configuration matters more than the brand, and you should run only one SEO plugin.</p>
+<ul>
+  <li><strong>Rank Math:</strong> switch on the WooCommerce module, then set title and description templates for products and product categories under Titles &amp; Meta, with Product as the default schema type. Some advanced product schema fields, such as brand and GTIN, are in the paid version at the time of writing.</li>
+  <li><strong>Yoast:</strong> the core plugin handles titles, sitemaps and basic schema. Yoast's separate WooCommerce SEO add-on, paid at the time of writing, adds richer product schema and better breadcrumbs.</li>
+  <li><strong>Either way:</strong> check that cart, checkout and my-account pages are noindexed and out of the sitemap, and that product and category sitemaps are included.</li>
+</ul>
+<p>Templates are a safety net. For best-sellers and main categories, write titles and descriptions by hand around the term you mapped in Step 1.</p>
+
+<h2>Step 6: Product schema that matches the page</h2>
+<p>Product schema tells Google the name, images, price, stock status, brand and rating, which can make pages eligible for richer results. Three things to get right:</p>
+<ul>
+  <li><strong>Only one Product block per page.</strong> WooCommerce outputs its own; Rank Math or the Yoast add-on replace or extend it. A theme or a separate schema plugin can add a second, conflicting copy.</li>
+  <li><strong>Accuracy.</strong> Price and availability in the schema must match the visible page and your Merchant Center feed. Sale prices and stock changes should update automatically, so test after changing plugins.</li>
+  <li><strong>Testing.</strong> Run key products through the Rich Results Test and the Schema Markup Validator, then watch the Product snippets and Merchant listings reports in Search Console.</li>
+</ul>
+
+<h2>Step 7: Control filter, sort and variation URLs</h2>
+<p>Every combination of colour, size, price and sort order can become a new URL, and thousands of near-identical pages waste Google's crawling. A sensible default:</p>
+<pre><code>/product-category/wallets/                       index: the main category
+/product-category/wallets/?orderby=price         canonical to main, not in sitemap
+/product-category/wallets/?filter_colour=black   canonical to main, not in sitemap
+/product-category/wallets/black-leather/         index: a real subcategory with content</code></pre>
+<ul>
+  <li>Canonicalise filter and sort URLs to the clean category, and noindex them if your filter plugin allows it.</li>
+  <li>Don't block those URLs in robots.txt while also relying on noindex or canonical tags, because Google can't see tags on pages it isn't allowed to crawl.</li>
+  <li>If a filter combination has real search demand, such as "black leather wallets for men", create a proper subcategory or landing page with its own URL and content instead of indexing a parameter URL.</li>
+  <li>Keep variations on one product page rather than creating near-identical products, and let variation URLs point their canonical at the parent product.</li>
+</ul>
+
+<h2>Step 8: Handle out-of-stock and discontinued products</h2>
+<ul>
+  <li><strong>Temporarily out of stock:</strong> keep the page live and indexed. Show the status clearly, offer a back-in-stock alert and suggest alternatives. WooCommerce marks the schema as out of stock automatically. Hiding out-of-stock items from category listings (WooCommerce &gt; Settings &gt; Products &gt; Inventory) is fine, because the product page itself stays live.</li>
+  <li><strong>Discontinued with a replacement:</strong> 301 redirect the old product to the new version or the closest match.</li>
+  <li><strong>Discontinued with no replacement:</strong> redirect to the category if it's genuinely relevant, or keep the page with a "no longer available" note and alternatives if it still gets visits or links.</li>
+  <li><strong>Gone for good:</strong> let it return a 404 or 410. Redirecting everything to the homepage helps no one, and Google tends to treat it as a soft 404.</li>
+  <li><strong>Seasonal products:</strong> keep the same URL every year and update it.</li>
+</ul>
+
+<h2>Step 9: Speed, indexing and technical health</h2>
+<p>Slow product and category pages hurt both rankings and sales. Optimise images, cache pages while excluding cart, checkout and account pages, and remove plugins you don't need. Then check the basics: the Pages report in Search Console, submitted sitemaps, one HTTPS version of the domain and no leftover staging noindex. My <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit checklist</a> includes WooCommerce-specific checks.</p>
+
+<h2>Step 10: Content and Shopping beyond product pages</h2>
+<p>Buying guides, size guides and comparisons reach shoppers earlier in their research and link naturally to categories and products. Separately, connect your catalogue to Google Merchant Center so products can appear in free listings on the Shopping tab, a different route from ordinary rankings.</p>
+
+<h2>WooCommerce SEO checklist</h2>
+<ol>
+  <li>A main search term mapped to every category and key product</li>
+  <li>Shallow categories, primary categories set, breadcrumbs on</li>
+  <li>Stable product URLs, with 301s for anything that changes</li>
+  <li>Intro and buying advice on every main category</li>
+  <li>Unique product titles, descriptions and alt text</li>
+  <li>One SEO plugin, configured for products and categories</li>
+  <li>One accurate, tested Product schema block per product</li>
+  <li>Filter, sort and variation URLs canonicalised</li>
+  <li>A clear rule for out-of-stock and discontinued products</li>
+  <li>Sitemaps submitted and products connected to Merchant Center</li>
+</ol>
 
 <p>Industry examples: <a href="/blog/website-for-fashion-boutiques/">fashion boutiques</a>, <a href="/blog/website-for-d2c-food-brands/">D2C food brands</a> and <a href="/blog/website-for-jewellers/">jewellers</a>.</p>
 
-<p>Also get products into Google Shopping for free: <a href="/blog/google-merchant-center-woocommerce/">Merchant Center for WooCommerce</a>.</p>
+<h2>FAQs</h2>
+<h3>Is WooCommerce good for SEO?</h3>
+<p>Yes. Because it runs on WordPress you control every title, URL, redirect and piece of content, and it outputs basic product schema by default. Rankings depend on how you set it up: category content, unique product pages, controlled filter URLs and speed.</p>
+<h3>Rank Math or Yoast: which is better for WooCommerce SEO?</h3>
+<p>Both do the job. Rank Math's free plugin includes a WooCommerce module, while Yoast's richer product features need its paid add-on at the time of writing. If one is already set up properly, there's rarely a reason to switch.</p>
+<h3>How do I add product schema in WooCommerce?</h3>
+<p>WooCommerce already adds basic Product schema to product pages, and Rank Math or Yoast's WooCommerce add-on extends it with brand, identifiers and better review data. Test a few products in the Rich Results Test to confirm there is exactly one Product block with the right price and stock status.</p>
+<h3>Should I remove /product/ and /product-category/ from my URLs?</h3>
+<p>On a new store it's a reasonable choice. On an established store I usually leave them, because every URL would need a 301 redirect and the SEO benefit of a shorter URL is small compared with the risk.</p>
+<h3>Should I noindex out-of-stock products?</h3>
+<p>Not if they're coming back. Keep them indexed with a clear out-of-stock message and alternatives. Redirect discontinued products to their replacement or closest match, and only let pages 404 when there is nothing relevant to send people to.</p>
+<h3>How long does WooCommerce SEO take to work?</h3>
+<p>Technical fixes take effect as Google recrawls the store, usually over a few weeks. Rankings for competitive categories build over months as content, reviews and links grow. Nobody can honestly guarantee a position or a date.</p>
 
-<h2>Quick checklist</h2>
-<ol>
-  <li>Keyword map for categories and products</li>
-  <li>Intro content on every main category</li>
-  <li>Unique product descriptions and alt text</li>
-  <li>Product schema working</li>
-  <li>Filter URLs controlled</li>
-  <li>Sitemap submitted and pages indexed</li>
-</ol>
-
-<p>Want help with store SEO? See <a href="/wordpress-seo-services/">WordPress SEO services</a> and <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<p>Want your store set up or audited properly? I build and fix WooCommerce stores with SEO, speed and product schema handled from the start; see <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> for an audit of an existing store.</p>
 `,
   },
   {
@@ -5897,63 +6204,126 @@ Additional headers: Reply-To: [your-email]</code></pre>
   },
   {
     slug: 'measure-website-roi',
-    seoTitle: 'How to Measure Website ROI for a Small Business',
-    title: 'How to Measure Your Website\'s ROI as a Small Business',
-    description: 'Measure website ROI for your small business: define conversions, track enquiries and sales, estimate lead value and compare the results against your costs.',
+    seoTitle: 'Measuring Website ROI: A Simple Method for Small Businesses',
+    title: 'How to Measure Website ROI as a Small Business: Tracking, Lead Value and a Simple Formula',
+    description: 'Measuring website ROI for a small business: track enquiries with GA4 key events, UTMs and call tracking, work out lead value and compare it with costs.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Growth',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
     body: `
-<p>A website is an investment, and like any investment you should know whether it's paying off. You don't need complicated tools to measure it. Here's a simple, practical approach for small businesses.</p>
+<p>To measure website ROI, track every enquiry and sale back to its source, work out what an enquiry is worth from your close rate and average job value, then compare that value with what the website costs over the same period. The formula is simple: ROI equals the value the website generated, minus its costs, divided by its costs.</p>
+<p>The maths takes five minutes. The tracking is the part most small businesses skip, especially when leads arrive by phone and WhatsApp rather than through forms. Below is how to set it up properly with free tools. Conversion tracking is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, and every <a href="/landing-page-design/">landing page</a> I build comes with GA4 events for form submissions and WhatsApp clicks.</p>
+
+<h2>The website ROI formula</h2>
+<pre><code>Lead value     = average customer value × close rate
+Website value  = enquiries from the website × lead value
+Website ROI    = (website value − website costs) ÷ website costs</code></pre>
+<p>For a quick view, use revenue as the customer value. For a true ROI, use the profit you keep from a typical customer after materials, staff time and other direct costs, because a website that brings in revenue at a loss isn't a good investment.</p>
 
 <h2>Step 1: Decide what counts as a conversion</h2>
-<p>A conversion is an action that leads to business:</p>
+<p>A conversion is an action that can lead to business. Page views, time on page and scroll depth are useful signals, but they are not conversions.</p>
+<table>
+  <thead><tr><th>Conversion</th><th>Examples</th><th>How to track it</th></tr></thead>
+  <tbody>
+    <tr><td>Form submission</td><td>Contact, quote, booking and callback forms</td><td>GA4 key event on the form submit or thank-you page</td></tr>
+    <tr><td>Phone call</td><td>Taps on a click-to-call number</td><td>Click event on tel: links, or a call tracking number</td></tr>
+    <tr><td>WhatsApp chat</td><td>Taps on a WhatsApp button</td><td>Click event on wa.me links, plus page-specific pre-filled messages</td></tr>
+    <tr><td>Online order or booking</td><td>WooCommerce purchase, paid booking</td><td>GA4 purchase event with order value</td></tr>
+    <tr><td>Download</td><td>Brochure, price list or catalogue PDF</td><td>GA4 file_download event (enhanced measurement)</td></tr>
+  </tbody>
+</table>
+
+<h2>Step 2: Set up key events in GA4</h2>
+<p>GA4 calls conversions "key events". Once an event is being collected, you mark it as a key event in Admin under Data display &gt; Events, at the time of writing. If GA4 isn't installed yet, start with <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a>.</p>
 <ul>
-  <li>Contact form submissions</li>
-  <li>WhatsApp clicks and phone calls</li>
-  <li>Online orders or bookings</li>
-  <li>Quote requests and brochure downloads</li>
+  <li><strong>Forms:</strong> the most reliable method is sending people to a thank-you page after submitting, then creating a key event for views of that page. Many form plugins can also push a submit event through Google Tag Manager.</li>
+  <li><strong>Calls and WhatsApp:</strong> in Google Tag Manager, a "Just Links" click trigger where the Click URL starts with tel: fires a phone_click event, and one where it contains wa.me or api.whatsapp.com fires a whatsapp_click event.</li>
+  <li><strong>Store purchases:</strong> a WooCommerce analytics integration sends purchase events with the order value, so revenue appears directly in GA4.</li>
+  <li><strong>Google Ads:</strong> import those key events or set up Ads conversion tracking so campaigns optimise for leads, not clicks; see <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a>.</li>
+</ul>
+<p>A tap on a phone or WhatsApp button isn't the same as a conversation, because some people change their mind. Treat clicks as a close indicator and check them against your call log and chats. More detail on naming and testing events is in <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</p>
+
+<h2>Step 3: Tag your traffic sources with UTMs</h2>
+<p>UTM parameters are tags added to a link so GA4 knows where a visitor came from. Without them, visits from your Google Business Profile, Instagram bio, WhatsApp broadcasts and printed QR codes often show up as "direct" or lumped together.</p>
+<pre><code>https://example.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp-listing
+https://example.com/solar-quote/?utm_source=brochure&amp;utm_medium=qr&amp;utm_campaign=trade-fair</code></pre>
+<ul>
+  <li>Use them on your Business Profile website link, social bios, emails, WhatsApp messages and QR codes on brochures, vehicles and hoardings.</li>
+  <li>Google Ads uses auto-tagging, so you don't need UTMs there.</li>
+  <li>Keep names lowercase and consistent, and keep a simple sheet of what you use.</li>
+  <li>Never add UTMs to links within your own site, because they overwrite the visitor's real source.</li>
 </ul>
 
-<h2>Step 2: Track conversions</h2>
+<h2>Step 4: Capture phone and offline leads</h2>
+<p>Many Indian businesses get most of their leads on the phone or WhatsApp, and those never appear in GA4 as revenue. Close the gap with three habits:</p>
 <ul>
-  <li>Set up Google Analytics 4 and mark key actions as key events. See <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a>.</li>
-  <li>Ask every new enquiry "How did you find us?" and note it</li>
-  <li>For calls and WhatsApp, use distinct links or numbers where practical</li>
+  <li><strong>Ask every new enquiry how they found you,</strong> on the phone and as a dropdown on forms.</li>
+  <li><strong>Use call tracking where it's worth it.</strong> A separate number on the website or on ads shows how many calls each source produces. Keep your main number on your Google Business Profile so your listings stay consistent; see <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a>.</li>
+  <li><strong>Keep a lead sheet.</strong> A spreadsheet or simple CRM with date, name, source, page or service, quoted value, won or lost, and final invoice value. This is what turns enquiry counts into rupees.</li>
 </ul>
 
-<h2>Step 3: Estimate what a lead is worth</h2>
-<p>Use simple numbers from your own business:</p>
+<h2>Step 5: Work out what a lead is worth</h2>
 <ol>
-  <li>Average value of a customer (first job, or lifetime value if they return)</li>
-  <li>How many enquiries turn into customers (your close rate)</li>
-  <li>Lead value = customer value × close rate</li>
+  <li><strong>Average customer value:</strong> the typical first job, or lifetime value if customers come back regularly</li>
+  <li><strong>Close rate:</strong> how many enquiries become customers, from your lead sheet</li>
+  <li><strong>Lead value</strong> = customer value × close rate</li>
 </ol>
-<p>For example, if a customer is worth ₹30,000 and you win 1 in 5 enquiries, each enquiry is worth about ₹6,000.</p>
+<p>For example, if a customer is worth ₹30,000 and you win 1 in 5 enquiries, each enquiry is worth about ₹6,000. Work this out separately for your main services if their values differ a lot, because a page that brings fewer but bigger enquiries may be your most valuable one.</p>
 
-<h2>Step 4: Add up your costs</h2>
+<h2>Step 6: Add up the real costs</h2>
+<p>Include everything the website costs you for the period you're measuring. The ranges below are the typical figures from my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a>; use your own invoices where you have them.</p>
+<table>
+  <thead><tr><th>Cost</th><th>Typical range in India</th><th>How to count it</th></tr></thead>
+  <tbody>
+    <tr><td>Website build (small business)</td><td>₹15,000 – ₹40,000</td><td>Spread over its expected life, such as three years</td></tr>
+    <tr><td>Domain</td><td>₹500 – ₹1,200 a year</td><td>Yearly</td></tr>
+    <tr><td>Hosting</td><td>₹2,500 – ₹15,000 a year</td><td>Yearly</td></tr>
+    <tr><td>Premium theme and plugin licences</td><td>₹0 – ₹6,000 a year</td><td>Yearly</td></tr>
+    <tr><td>Maintenance plan (if any)</td><td>₹1,500 – ₹6,000 a month</td><td>Monthly</td></tr>
+    <tr><td>Ads, SEO and content</td><td>Depends on what you spend</td><td>Actual spend for the period</td></tr>
+  </tbody>
+</table>
+<p>If you're planning a new site and want a starting figure, the <a href="/website-cost-calculator/">website cost calculator</a> gives an estimate based on the pages and features you need.</p>
+
+<h2>Step 7: Calculate ROI and cost per lead</h2>
 <ul>
-  <li>Build or redesign cost (spread over its expected life, say 3 years)</li>
-  <li>Hosting, domain, licences and maintenance</li>
-  <li>Content, SEO and advertising spend</li>
+  <li><strong>Cost per lead</strong> = what you spent on a channel ÷ the leads it brought. If it's below your lead value, the channel is earning money.</li>
+  <li><strong>Cost per customer</strong> = spend ÷ customers won from that channel. This catches channels that bring lots of poor-quality enquiries.</li>
+  <li><strong>Website ROI</strong> uses the formula at the top, for the whole site or per channel.</li>
+</ul>
+<p>Continuing the example with made-up numbers: if your lead sheet shows the website brought 24 enquiries in a year, multiply 24 by the ₹6,000 lead value to get the value it generated. Subtract your yearly costs from the table, divide by those costs, and you have the ROI. If the result is positive, the site is paying for itself; the number tells you by how much.</p>
+
+<h2>What to review every month</h2>
+<ul>
+  <li><strong>GA4:</strong> Reports &gt; Acquisition &gt; Traffic acquisition, with your key events as the conversion column, shows which sources produce enquiries.</li>
+  <li><strong>GA4 landing pages:</strong> which pages lead to key events, and which get traffic but no enquiries.</li>
+  <li><strong>Search Console:</strong> clicks and queries for organic search, the channel GA4 can't break down by keyword.</li>
+  <li><strong>Your lead sheet:</strong> enquiries, wins and revenue by source. This is the number that matters most.</li>
+</ul>
+<p>A short monthly check beats a detailed report nobody reads; see <a href="/blog/website-analytics-metrics-that-matter/">the analytics metrics that actually matter</a>.</p>
+
+<h2>How to improve your website's ROI</h2>
+<ul>
+  <li><strong>More of the right visitors:</strong> SEO for the services you want more of, an active Business Profile, and ads that land on focused pages.</li>
+  <li><strong>A better conversion rate:</strong> clear calls to action, trust signals, WhatsApp and click-to-call on mobile, and fast pages; see <a href="/blog/conversion-rate-optimization-basics/">CRO basics</a>.</li>
+  <li><strong>Higher lead value:</strong> service pages aimed at better-fit customers rather than everyone.</li>
+  <li><strong>Lower costs:</strong> drop unused licences and stop paying for channels that never produce customers.</li>
 </ul>
 
-<h2>Step 5: Compare</h2>
-<p>Website ROI = (value generated − costs) ÷ costs. Even a rough monthly view (enquiries × lead value vs monthly costs) tells you whether the site is earning its keep.</p>
+<h2>FAQs</h2>
+<h3>How do you measure website ROI?</h3>
+<p>Track enquiries and sales from the website, multiply enquiries by your lead value (customer value × close rate), subtract the website's costs for the same period and divide by those costs. GA4 key events, UTM tags and a simple lead sheet give you the numbers.</p>
+<h3>What is a good ROI for a business website?</h3>
+<p>There's no universal figure. A positive ROI means the site earns more than it costs. More useful is comparing cost per lead and cost per customer across channels, so you know where the next rupee of marketing should go.</p>
+<h3>How do I track phone calls and WhatsApp clicks from my website?</h3>
+<p>Track taps on tel: and wa.me links as GA4 events, ideally through Google Tag Manager, and mark them as key events. For more accuracy, use a dedicated tracking number and page-specific pre-filled WhatsApp messages, and log the source of each lead.</p>
+<h3>Can I measure website ROI without Google Analytics?</h3>
+<p>Roughly, yes. Ask every enquiry how they found you, log it in a spreadsheet with the job value, and compare the total with your website costs. Analytics adds detail on which pages and campaigns work, which a spreadsheet can't show.</p>
+<h3>How long does it take for a website to show ROI?</h3>
+<p>Ads can show results within weeks because traffic starts immediately. SEO usually takes months to build. Judge an SEO-led site over a longer period rather than month by month.</p>
 
-<h2>Improve the numbers</h2>
-<ul>
-  <li><strong>More visitors:</strong> SEO, content and ads</li>
-  <li><strong>Better conversion rate:</strong> clearer calls to action, trust signals, WhatsApp and faster pages. See <a href="/blog/get-more-enquiries-from-your-website/">12 ways to get more enquiries</a>.</li>
-  <li><strong>Higher lead value:</strong> attract better-fit clients with focused service pages</li>
-</ul>
-
-<p>Not sure which numbers to watch? See <a href="/blog/website-analytics-metrics-that-matter/">the analytics metrics that actually matter</a>.</p>
-
-<h2>Review monthly</h2>
-<p>Check enquiries, sources and conversion rates once a month. Double down on the pages and channels that produce customers, and fix the ones that don't.</p>
-
-<p>Want help setting up tracking and improving conversions? See <a href="/wordpress-seo-services/">WordPress SEO services</a> and <a href="/landing-page-design/">landing page design</a>.</p>
+<p>Want to know which pages and channels actually bring you customers? I set up GA4 key events, call and WhatsApp click tracking and Search Console, then improve the pages that matter; see <a href="/wordpress-seo-services/">WordPress SEO services</a> or, for ad campaigns, <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -8361,53 +8731,120 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
   },
   {
     slug: 'what-is-a-cdn',
-    seoTitle: 'What Is a CDN and Does Your Website Need One?',
-    title: 'What Is a CDN, and Does Your Business Website Need One?',
-    description: 'What is a CDN? How a content delivery network speeds up your site, adds protection, when small businesses benefit and how to set one up safely on WordPress.',
+    seoTitle: 'What Is a Website CDN? How It Works and When You Need One',
+    title: 'What Is a CDN? How a Content Delivery Network Speeds Up Your Website, and When You Need One',
+    description: 'What is a website CDN? How CDN servers deliver your files from near each visitor, what a CDN file is, Cloudflare vs BunnyCDN vs QUIC.cloud, and safe setup.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-migration', 'woocommerce-developer'],
     body: `
-<p>A CDN, or content delivery network, is a network of servers around the world that stores copies of your website's files and delivers them from a location close to each visitor. It's one of the simplest ways to make a website faster and more resilient.</p>
+<p>A CDN, or content delivery network, is a network of servers in many cities that keeps copies of your website's files, such as images, CSS and JavaScript, and delivers them from the location nearest each visitor. Your hosting server, called the origin, still holds the real website; the CDN sits in front of it and handles repeat requests, so pages load faster and your server does less work.</p>
+<p>For most business websites a CDN is free or cheap, and it's worth having when visitors come from different regions or countries or your hosting is far from your customers. It won't fix a slow server, a heavy theme or huge images, though. Choosing and configuring a CDN, and checking it doesn't break forms or checkout, is one part of my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> work.</p>
 
-<h2>How a CDN helps</h2>
-<ul>
-  <li><strong>Speed:</strong> images, CSS and scripts load from a nearby server instead of your hosting location</li>
-  <li><strong>Less load on your hosting:</strong> the CDN serves repeat requests, so your server handles fewer</li>
-  <li><strong>Resilience:</strong> many CDNs absorb traffic spikes and some attacks</li>
-  <li><strong>Security features:</strong> many include SSL, firewall rules and bot protection</li>
-</ul>
-
-<h2>Does a small business need one?</h2>
-<ul>
-  <li><strong>Visitors from many regions or countries:</strong> yes, it helps noticeably</li>
-  <li><strong>Image-heavy sites and online stores:</strong> usually worthwhile</li>
-  <li><strong>Local business with visitors near your server:</strong> smaller gains, but still useful for resilience and security</li>
-</ul>
-
-<h2>Two common setups</h2>
+<h2>How a CDN works</h2>
 <ol>
-  <li><strong>Static file CDN:</strong> only images, CSS and JavaScript are served from the CDN. Simple and low-risk.</li>
-  <li><strong>Full proxy CDN:</strong> all traffic goes through the CDN (your DNS points to it). It adds caching and security for the whole site, but needs careful configuration.</li>
+  <li>A visitor in Chennai opens your page, and their browser requests your logo, stylesheet and photos.</li>
+  <li>The CDN routes those requests to its nearest edge server, often in the same city or region.</li>
+  <li>If that edge server already has a fresh copy (a <strong>cache hit</strong>), it sends it straight away.</li>
+  <li>If not (a <strong>cache miss</strong>), it fetches the file from your origin server, delivers it, and keeps a copy for the next visitor for a set time, known as the TTL.</li>
+  <li>When you change a file, you <strong>purge</strong> the cache so edge servers fetch the new version.</li>
+</ol>
+<p>Shorter distances mean less waiting on every request, which adds up quickly on a page with dozens of files and on mobile networks; see <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
+
+<h2>What is a CDN server, and what is a CDN file?</h2>
+<p>A <strong>CDN server</strong> is one of the edge servers in the network. Providers group them into points of presence (PoPs) in different cities, and the more PoPs near your visitors, the bigger the benefit.</p>
+<p>A <strong>CDN file</strong> is simply any file delivered through a CDN rather than straight from your hosting. On a WordPress site you may see image addresses such as cdn.yourdomain.com/wp-content/uploads/... or a provider hostname like yourzone.b-cdn.net. Public CDNs such as cdnjs and jsDelivr also host common libraries, and Google Fonts are served from Google's own network. Loading a library from a public CDN no longer gives the shared-cache benefit it once did, because browsers now keep a separate cache for each site, so hosting those files yourself behind your own CDN is often just as fast.</p>
+
+<h2>What a CDN helps with, and what it doesn't</h2>
+<table>
+  <thead><tr><th>Problem</th><th>Does a CDN help?</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Visitors far from your server</td><td>Yes, the most</td><td>The main reason to use one</td></tr>
+    <tr><td>Heavy images, CSS and JavaScript</td><td>Yes</td><td>Works best alongside image optimisation</td></tr>
+    <tr><td>Traffic spikes from a sale or campaign</td><td>Yes</td><td>Edge servers absorb repeat requests</td></tr>
+    <tr><td>Basic attacks and bad bots</td><td>Often</td><td>Cloudflare and others include protection</td></tr>
+    <tr><td>Slow server response on pages</td><td>Partly</td><td>Only if HTML is cached at the edge; otherwise fix hosting</td></tr>
+    <tr><td>Slow WordPress admin</td><td>No</td><td>The dashboard is never cached</td></tr>
+    <tr><td>Bloated theme or too many scripts</td><td>No</td><td>Fix the site itself</td></tr>
+    <tr><td>Cart, checkout and account pages</td><td>No</td><td>These must bypass the cache</td></tr>
+  </tbody>
+</table>
+<p>If pages are slow before anything even downloads, the problem is usually server response time; see <a href="/blog/reduce-server-response-time-ttfb/">reducing TTFB on WordPress</a>. For images, start with <a href="/blog/image-optimization-wordpress/">image optimisation</a>, because a CDN only delivers a 3 MB photo faster; it doesn't make it smaller unless you use its image optimisation features.</p>
+
+<h2>Does your website need a CDN?</h2>
+<ul>
+  <li><strong>Hosting in India, customers in your city:</strong> smaller speed gains, but a free CDN still adds protection and helps visitors elsewhere in India.</li>
+  <li><strong>Hosting abroad:</strong> many budget plans default to a US, European or Singapore data centre. A CDN helps a lot here, though choosing an Indian data centre in the first place helps more; see <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting in India</a>.</li>
+  <li><strong>International visitors:</strong> exporters, travel businesses and anyone with overseas clients should use one.</li>
+  <li><strong>Online stores and image-heavy sites:</strong> usually worthwhile, as long as cart and checkout are excluded.</li>
+  <li><strong>A small local site with modest traffic:</strong> optional. Good hosting and caching matter more.</li>
+</ul>
+
+<h2>Types of CDN setup</h2>
+<h3>Whole site through the CDN (reverse proxy)</h3>
+<p>You change your domain's nameservers to the CDN, and all traffic passes through it. Cloudflare works this way. It can cache static files, cache full pages with the right rules, and add a firewall and SSL. It needs the most care: DNS and email records, SSL settings, and rules so logged-in users and checkout pages are never cached.</p>
+<h3>Static files only (pull zone)</h3>
+<p>You create a pull zone pointing at your website, and a plugin rewrites image, CSS and JavaScript addresses to the CDN hostname. Pages themselves still come from your host. BunnyCDN is commonly used this way. It's low risk because DNS and email don't change.</p>
+<h3>Built into your hosting</h3>
+<p>Some hosts include a CDN you can switch on. On LiteSpeed servers, including Hostinger, QUIC.cloud connects through the LiteSpeed Cache plugin and can also cache full pages.</p>
+
+<h2>Cloudflare vs BunnyCDN vs QUIC.cloud</h2>
+<table>
+  <thead><tr><th>CDN</th><th>How it connects</th><th>Pricing model (at the time of writing)</th><th>Good fit</th></tr></thead>
+  <tbody>
+    <tr><td>Cloudflare</td><td>Nameserver change, whole site</td><td>Free plan; paid plans and add-ons such as APO for WordPress</td><td>Most business sites wanting speed and security together</td></tr>
+    <tr><td>BunnyCDN</td><td>Pull zone and URL rewrite</td><td>Pay as you go by bandwidth, with a small monthly minimum</td><td>Image-heavy sites and stores that want to keep DNS where it is</td></tr>
+    <tr><td>QUIC.cloud</td><td>LiteSpeed Cache plugin</td><td>Free allowance, then paid usage</td><td>Sites on LiteSpeed hosting</td></tr>
+  </tbody>
+</table>
+<p>Pricing and free allowances change, so check each provider's current plans before deciding.</p>
+
+<h2>How to set up a CDN on WordPress safely</h2>
+<ol>
+  <li><strong>Take a backup</strong> and write down every DNS record: MX and TXT records for email, verification records and subdomains.</li>
+  <li><strong>For Cloudflare:</strong> add the site, compare the imported DNS records with your list, keep mail records as DNS only (grey cloud), then change nameservers at your registrar. Set SSL/TLS to Full (strict) where your host has a valid certificate; Flexible causes redirect loops. My <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare setup guide for WordPress</a> covers each setting.</li>
+  <li><strong>For BunnyCDN:</strong> create a pull zone with your site as the origin, optionally add a hostname such as cdn.yourdomain.com with its free SSL, then enter the CDN address in Bunny's plugin or your caching plugin's CDN setting (WP Rocket, LiteSpeed Cache and W3 Total Cache all have one).</li>
+  <li><strong>For QUIC.cloud:</strong> link your domain from the LiteSpeed Cache plugin and enable the CDN following its current instructions.</li>
+  <li><strong>Bypass dynamic pages:</strong> wp-admin, wp-login.php, cart, checkout, my-account, and any request carrying a WordPress login or WooCommerce cart cookie.</li>
+  <li><strong>Test</strong> logged out and logged in: key pages, forms, search, a test order and the payment return page.</li>
+  <li><strong>Connect purging</strong> so your caching plugin clears the CDN when you update content.</li>
 </ol>
 
-<h2>Be careful with dynamic pages</h2>
-<p>Pages that change per visitor, such as cart, checkout, account pages and admin, must not be cached as static pages. Configure the CDN to bypass them, especially for WooCommerce stores.</p>
+<h2>How to check if your site uses a CDN</h2>
+<p>Open Chrome DevTools, go to the Network tab, reload, click an image and look at the response headers. Or run this from a terminal:</p>
+<pre><code>curl -I https://www.example.com/wp-content/uploads/photo.webp
 
-<h2>Setting up a CDN with WordPress</h2>
+HTTP/2 200
+server: cloudflare
+cf-cache-status: HIT</code></pre>
+<p>Header names vary: Cloudflare uses cf-cache-status, BunnyCDN uses cdn-cache, QUIC.cloud uses x-qc-cache, and several others use x-cache. HIT means the edge served it; MISS means it went to your server. Cloudflare shows DYNAMIC for HTML pages it isn't caching, which is normal on the free plan unless you add page caching rules.</p>
+
+<h2>Common CDN problems and fixes</h2>
 <ul>
-  <li>Many hosts include a CDN you can switch on</li>
-  <li>Caching plugins can rewrite file URLs to a CDN</li>
-  <li>For proxy CDNs, DNS changes are required, so copy email records carefully</li>
-  <li>Test the site, forms and checkout thoroughly afterwards</li>
+  <li><strong>Changes not showing:</strong> purge the CDN cache as well as your caching plugin; <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> shows how the layers fit together.</li>
+  <li><strong>Login loops or "too many redirects":</strong> usually the SSL mode; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a>.</li>
+  <li><strong>Empty carts or checkout errors:</strong> a cache rule is catching dynamic pages; add bypass rules.</li>
+  <li><strong>Missing icons or fonts:</strong> the CDN hostname needs a CORS header for font files.</li>
+  <li><strong>Email stopped after switching nameservers:</strong> MX or TXT records weren't copied correctly.</li>
+  <li><strong>Broken sliders or menus:</strong> script features such as Cloudflare's Rocket Loader can conflict with themes; turn them off and retest.</li>
 </ul>
 
-<p>If you're putting a WordPress site behind Cloudflare's free plan, follow <a href="/blog/cloudflare-wordpress-setup-guide/">our Cloudflare setup guide for WordPress</a> to pick the right SSL mode, cache exclusions and email records before you change nameservers.</p>
+<h2>FAQs</h2>
+<h3>What is a website CDN?</h3>
+<p>A network of servers in many locations that stores copies of your website's files and delivers them from the server closest to each visitor. Your hosting remains the original source, and the CDN reduces the distance files travel and the load on your server.</p>
+<h3>What is a CDN file?</h3>
+<p>Any file, usually an image, stylesheet, script or font, delivered through a CDN instead of directly from your hosting. You can often spot them by a different hostname in the file address, such as a cdn subdomain or the provider's own domain.</p>
+<h3>Is Cloudflare a CDN?</h3>
+<p>Yes. Cloudflare is a CDN that works as a reverse proxy in front of your whole site, and it also provides DNS, SSL, a firewall and bot protection. Its free plan caches static files by default; caching full pages needs extra rules or its paid APO add-on for WordPress.</p>
+<h3>Do I need a CDN if my hosting is in India?</h3>
+<p>Not always. If your server and customers are both in India, the speed gain is smaller, and good hosting with page caching matters more. A free CDN still helps visitors in other regions and adds protection, so it's often worth setting up anyway.</p>
+<h3>Does a CDN help SEO?</h3>
+<p>Indirectly. Faster loading can improve Core Web Vitals and user experience, which support rankings, but a CDN doesn't boost rankings by itself. Make sure its security settings don't block or challenge Googlebot.</p>
+<h3>Is a free CDN good enough for a small business?</h3>
+<p>Usually, yes. Cloudflare's free plan or a host-included CDN covers most small business sites. Paid options make sense for stores, high traffic or when you need full-page caching at the edge.</p>
 
-<h2>A CDN isn't a cure-all</h2>
-<p>A CDN won't fix a slow server response, a bloated theme or huge images. Optimize those first; see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> and <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
-
-<p>CDN setup is often part of a <a href="/wordpress-speed-optimization/">speed optimization</a> project.</p>
+<p>Not sure whether a CDN would help your site, or worried about breaking email and checkout? I check where the time is actually going, set up the right caching and CDN, and test everything afterwards; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>. Stores have extra caching rules, covered in <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</p>
 `,
   },
   {
@@ -11539,53 +11976,119 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   },
   {
     slug: 'website-speed-test-tools-explained',
-    seoTitle: 'Website Speed Test Tools Explained (PageSpeed & More)',
-    title: 'Website Speed Test Tools Explained: PageSpeed Insights, Lighthouse and More',
-    description: 'Website speed test tools explained: using PageSpeed Insights, Lighthouse and Search Console, why scores vary, lab vs field data and which numbers to act on.',
+    seoTitle: 'Website Speed Test Tools: PageSpeed, GTmetrix, WebPageTest',
+    title: 'Website Speed Test Tools Explained: PageSpeed Insights, Lighthouse, GTmetrix and WebPageTest',
+    description: 'Website speed test tools explained: how to read a PageSpeed test, lab vs field data, why scores vary, and when to use Lighthouse, GTmetrix or WebPageTest.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'website-redesign', 'wordpress-seo-services'],
     body: `
-<p>Run a speed test twice and you may get two different scores. Different tools measure different things. Here's how to read speed tools without getting confused, and which numbers actually matter.</p>
+<p>Start with PageSpeed Insights: the top section shows field data from real Chrome users, and the bottom shows a Lighthouse lab test with suggested fixes. Use the Core Web Vitals report in Search Console to track your whole site over time, and GTmetrix or WebPageTest when you need a waterfall chart showing exactly which file is slow. Make decisions on Core Web Vitals from field data, not on a single lab score.</p>
+<p>Scores jump between runs and between tools because each one measures different things in different conditions. Once you know what each tool is for, the numbers stop being confusing. These are the tools I use on every <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> job, including the before-and-after PageSpeed Insights report.</p>
 
 <h2>Lab data vs field data</h2>
+<table>
+  <thead><tr><th></th><th>Lab data</th><th>Field data</th></tr></thead>
+  <tbody>
+    <tr><td>What it is</td><td>A simulated page load on one device and network</td><td>Measurements from real Chrome users over the previous 28 days</td></tr>
+    <tr><td>Where you see it</td><td>Lighthouse, the lower part of PageSpeed Insights, GTmetrix, WebPageTest</td><td>The upper part of PageSpeed Insights, Search Console, CrUX</td></tr>
+    <tr><td>How often it changes</td><td>Every run</td><td>Slowly, as the 28-day window rolls forward</td></tr>
+    <tr><td>Best for</td><td>Finding problems and testing fixes</td><td>Knowing what visitors actually experience</td></tr>
+    <tr><td>Limits</td><td>Doesn't reflect your visitors' real phones and networks</td><td>Needs enough traffic; quieter pages show no data</td></tr>
+    <tr><td>Measures INP?</td><td>No, it uses Total Blocking Time as a stand-in</td><td>Yes</td></tr>
+  </tbody>
+</table>
+
+<h2>Core Web Vitals: the numbers that matter</h2>
+<p>Google assesses three Core Web Vitals from field data, at the 75th percentile of page loads:</p>
 <ul>
-  <li><strong>Lab data:</strong> a simulated test on a set device and network (for example Lighthouse). Useful for diagnosing problems; varies from run to run.</li>
-  <li><strong>Field data:</strong> real measurements from actual Chrome users over the past weeks (shown in PageSpeed Insights and Search Console when there's enough traffic). This reflects real experience.</li>
+  <li><strong>Largest Contentful Paint (LCP):</strong> how quickly the main content appears. Good is 2.5 seconds or less.</li>
+  <li><strong>Interaction to Next Paint (INP):</strong> how quickly the page responds to taps and clicks. Good is 200 milliseconds or less.</li>
+  <li><strong>Cumulative Layout Shift (CLS):</strong> how much the layout jumps around while loading. Good is 0.1 or less.</li>
+</ul>
+<p>A page passes when all three are good. Plain-English explanations are in <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2>PageSpeed Insights: how to read a PageSpeed test</h2>
+<p>Enter a URL at pagespeed.web.dev and look at the Mobile tab first, since most visitors are on phones and it's the harder test.</p>
+<ul>
+  <li><strong>The top section</strong> shows field data from the Chrome UX Report: whether the page passes the Core Web Vitals assessment, with LCP, INP and CLS. If the page doesn't have enough traffic, it falls back to data for your whole domain, or shows no data at all.</li>
+  <li><strong>The lower section</strong> is a Lighthouse lab test that simulates a mid-range phone on a throttled mobile connection. It gives a performance score from 0 to 100 (90 and above is green, 50 to 89 orange, below 50 red) based on First Contentful Paint, LCP, Total Blocking Time, CLS and Speed Index.</li>
+  <li><strong>Below the score</strong> is a list of suggested fixes, such as large images, render-blocking files, unused JavaScript and slow server response. Treat these as clues, not a to-do list; some are worth doing and some barely move real-world speed.</li>
+</ul>
+<p>The field section is what Google uses as part of its page experience signals. The lab score is a diagnostic tool, which is why a page can pass Core Web Vitals with an orange lab score, or fail them with a green one.</p>
+
+<h2>Lighthouse in Chrome DevTools</h2>
+<p>Lighthouse is the engine behind the PageSpeed Insights lab test, built into Chrome. Open DevTools, choose the Lighthouse panel and run a report. Use an Incognito window so browser extensions don't skew the result, and remember that your own computer and connection affect the numbers.</p>
+<p>Its advantage is testing pages PageSpeed Insights can't reach, such as a password-protected staging site you're logged into. Developers can also run it from the command line:</p>
+<pre><code>npm install -g lighthouse
+lighthouse https://www.example.com --view
+lighthouse https://www.example.com --preset=desktop --view</code></pre>
+
+<h2>GTmetrix</h2>
+<p>GTmetrix runs Lighthouse in a real browser from a test location and adds a waterfall chart, a video of the page loading and a history of past tests. The waterfall is the useful part: each bar is one file, so you can see whether time goes on waiting for the server, a huge image, a slow font or a third-party script.</p>
+<p>Check the test location. A test from North America shows what overseas visitors experience, not your customers in India. Which locations you can choose depends on your account type at the time of writing, so pick the closest available and keep it the same for every comparison.</p>
+
+<h2>WebPageTest</h2>
+<p>WebPageTest is the most detailed of the free tools. You choose the location, browser and connection speed, it records a filmstrip of the page appearing, and it tests both a first visit and a repeat visit, which shows how well caching works. Run three tests and look at the median result rather than the best or worst. It's the tool I reach for when the other reports don't explain why a page feels slow.</p>
+
+<h2>CrUX and the Core Web Vitals report</h2>
+<p>The Chrome UX Report (CrUX) is Google's public dataset of real-user performance from Chrome users who share usage statistics. It feeds the field data in PageSpeed Insights and Search Console, and Google's CrUX Vis tool shows how a site's numbers have changed over months.</p>
+<p>In Search Console, Experience &gt; Core Web Vitals groups similar pages together and shows how many are good, need improvement or are poor, separately for mobile and desktop. Small sites often see "Not enough usage data". After fixing an issue, the "Validate fix" button starts a monitoring period of about four weeks, because the data is based on a rolling 28 days.</p>
+
+<h2>Why your speed test scores keep changing</h2>
+<table>
+  <thead><tr><th>Cause</th><th>What happens</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>Server response varies</td><td>Waiting time differs from run to run</td><td>Run three or more tests and use the median</td></tr>
+    <tr><td>Cold cache</td><td>The first load after clearing the cache is slower</td><td>Load the page once before testing</td></tr>
+    <tr><td>Test location</td><td>Distance adds delay to every request</td><td>Test from near your visitors, and keep it consistent</td></tr>
+    <tr><td>Device simulation</td><td>Mobile tests use a slower device and network</td><td>Compare mobile with mobile, desktop with desktop</td></tr>
+    <tr><td>Third-party scripts</td><td>Ads, chat and trackers load differently each time</td><td>Test with and without them to see their cost</td></tr>
+    <tr><td>Lab vs field</td><td>Different data sources and time periods</td><td>Base decisions on field data</td></tr>
+    <tr><td>Tool updates</td><td>New Lighthouse versions change scoring</td><td>Compare results from the same tool and period</td></tr>
+  </tbody>
+</table>
+<p>Third-party scripts are a common cause of both variation and slow pages; see <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a>.</p>
+
+<h2>A simple testing routine</h2>
+<ol>
+  <li>Choose your key templates: homepage, a top service or product page, a blog post, a category page for stores, and the contact page.</li>
+  <li>Test each in PageSpeed Insights on mobile. Note whether field data passes, and the lab LCP, Total Blocking Time and CLS.</li>
+  <li>Run the lab test three times and record the median in a spreadsheet with the date.</li>
+  <li>For anything slow, run GTmetrix or WebPageTest from the closest location and use the waterfall to find the file or request responsible.</li>
+  <li>Fix one thing at a time and retest the same way, logged out and with caches warmed.</li>
+  <li>Watch the Search Console Core Web Vitals report over the following weeks.</li>
+</ol>
+
+<h2>What to fix, based on the results</h2>
+<ul>
+  <li><strong>Slow LCP:</strong> usually the hero image, slow server response or render-blocking files; see <a href="/blog/fix-lcp-largest-contentful-paint/">fixing slow LCP</a>.</li>
+  <li><strong>High Total Blocking Time or poor INP:</strong> too much JavaScript; see <a href="/blog/fix-inp-interaction-to-next-paint/">improving INP</a>.</li>
+  <li><strong>High CLS:</strong> images without dimensions, late fonts, banners and sliders; see <a href="/blog/fix-cls-layout-shift/">fixing layout shift</a>.</li>
+  <li><strong>Slow server response:</strong> hosting, caching and heavy plugins; see <a href="/blog/reduce-server-response-time-ttfb/">reducing TTFB</a>.</li>
+  <li><strong>"Reduce unused CSS/JavaScript":</strong> worth fixing only where it affects real loading; see <a href="/blog/reduce-unused-css-javascript-wordpress/">what to fix and what to ignore</a>.</li>
+  <li><strong>Fast on desktop, slow on mobile:</strong> see <a href="/blog/wordpress-site-slow-on-mobile-fix/">site slow on mobile</a>.</li>
 </ul>
 
-<h2>The main tools</h2>
-<h3>PageSpeed Insights</h3>
-<p>Shows field data (if available) at the top and a Lighthouse lab report below, with specific suggestions. Test key pages on mobile.</p>
-<h3>Lighthouse (in Chrome DevTools)</h3>
-<p>Runs a lab test in your browser, covering performance, accessibility, best practices and SEO. Test in an incognito window to avoid extensions skewing results.</p>
-<h3>Search Console: Core Web Vitals</h3>
-<p>Groups your pages by real-user experience (good, needs improvement, poor). Best for tracking progress site-wide.</p>
-<h3>Other testing tools</h3>
-<p>Various third-party tools show waterfall charts of every file loaded, which helps diagnose what's slow.</p>
+<h2>Don't chase a score of 100</h2>
+<p>A perfect lab score isn't the goal. A page that passes Core Web Vitals for real visitors, loads quickly on mobile data and turns visitors into enquiries is. Chasing the last few points often means removing analytics, chat or features the business actually needs.</p>
 
-<h2>Why scores vary</h2>
-<ul>
-  <li>Server response time changes from moment to moment</li>
-  <li>Test location and simulated network differ between tools</li>
-  <li>Third-party scripts (ads, chat, analytics) load differently each time</li>
-  <li>Caching: first visits vs repeat visits</li>
-</ul>
-<p>Run tests a few times and look at trends, not single scores.</p>
+<h2>FAQs</h2>
+<h3>What is a PageSpeed test?</h3>
+<p>Usually it means running a page through Google's PageSpeed Insights, which reports real-user Core Web Vitals from the Chrome UX Report and runs a Lighthouse lab test with a 0 to 100 performance score and suggested fixes.</p>
+<h3>Why is my PageSpeed score different every time I test?</h3>
+<p>The lab test is a fresh simulated load each time, so server response, caching, network conditions and third-party scripts all vary. Run it several times and use the median, and rely on the field data section, which changes slowly.</p>
+<h3>Which website speed test is most accurate?</h3>
+<p>For real-world experience, field data from CrUX in PageSpeed Insights and Search Console, because it comes from actual visitors. For diagnosing problems, WebPageTest and GTmetrix give the most detail. Each answers a different question.</p>
+<h3>Why is my mobile score lower than desktop?</h3>
+<p>The mobile test simulates a mid-range phone on a slower connection, so heavy images, scripts and fonts cost much more. A lower mobile score is normal, but a big gap usually means the page sends too much JavaScript or oversized images to phones.</p>
+<h3>What is a good PageSpeed Insights score?</h3>
+<p>Lighthouse treats 90 and above as good, but passing the Core Web Vitals assessment in the field data matters more. A site that feels fast to real visitors and passes Core Web Vitals can still score in the 70s or 80s on the mobile lab test.</p>
+<h3>Does PageSpeed score affect Google rankings?</h3>
+<p>Not directly. Google uses Core Web Vitals from real-user data as part of its page experience signals, not the lab score. Speed alone won't rank a page, but a slow site can hold good content back.</p>
 
-<h2>Which numbers to act on</h2>
-<ul>
-  <li><strong>Core Web Vitals</strong> (LCP, INP, CLS), especially from field data; see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a></li>
-  <li>Server response time</li>
-  <li>The specific opportunities listed: large images, render-blocking resources, unused JavaScript</li>
-</ul>
-
-<p>Seeing "reduce unused CSS" or "reduce unused JavaScript" in that list? Read <a href="/blog/reduce-unused-css-javascript-wordpress/">how to reduce unused CSS and JavaScript in WordPress</a> first, as not every warning is worth chasing.</p>
-
-<h2>Don't chase 100</h2>
-<p>A perfect score isn't the goal; a fast experience for real visitors is. A page scoring 85 that loads quickly on phones and converts well beats a 100 with no content.</p>
-
-<p>For fixes, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> or <a href="/wordpress-speed-optimization/">speed optimization</a>.</p>
+<p>Got a red score and not sure what's actually causing it? I find out whether it's hosting, plugins, the theme, images or scripts, fix it safely and share a before-and-after PageSpeed Insights report; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
   {
@@ -13847,63 +14350,136 @@ Description: Buy %title% online. %excerpt%</code></pre>
   },
   {
     slug: 'woocommerce-gst-invoices-india',
-    seoTitle: 'WooCommerce GST Setup & Invoices for Indian Stores',
-    title: 'WooCommerce GST Setup and Invoices: A Guide for Indian Online Stores',
-    description: 'Set up GST in WooCommerce for Indian stores: tax settings, CGST/SGST vs IGST, tax classes, tax-inclusive prices, GST invoices and when to involve your CA.',
+    seoTitle: 'WooCommerce GST Setup in India: Tax Rates and GST Invoices',
+    title: 'WooCommerce GST Setup for Indian Stores: CGST, SGST, IGST, HSN Codes and GST Invoices',
+    description: 'WooCommerce GST setup for Indian stores: tax classes, CGST/SGST vs IGST rates, place of supply, HSN codes, GSTIN at checkout and GST invoice plugins.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development', 'website-for-startups'],
     body: `
-<p>If you sell online in India and are registered under GST, your WooCommerce store needs to calculate tax correctly and issue proper invoices. WooCommerce can handle this, but it needs setting up. This guide covers the website side; for tax rates and legal requirements specific to your products, always confirm with your chartered accountant.</p>
+<p>To set up GST in WooCommerce, enable taxes, calculate tax on the customer's shipping address, create a tax class for each GST rate you charge, add CGST and SGST rates for your home state and IGST for every other state, assign each product its tax class, then add an invoice plugin that prints your GSTIN, HSN codes, the tax split and the place of supply. WooCommerce does the maths once it's configured, but it doesn't know Indian GST rules out of the box.</p>
+<p>This guide covers the website side. The rate for each product, HSN codes, invoice format and whether e-invoicing applies depend on your products and turnover, so check every setting with your CA before launch. I set this up for Indian stores as part of my <a href="/woocommerce-developer/">WooCommerce development</a> work, with the CA's figures in hand.</p>
 
-<h2>CGST and SGST vs IGST</h2>
+<h2>What to get from your CA first</h2>
 <ul>
-  <li><strong>Intra-state sale</strong> (customer in the same state as you): tax is split into CGST and SGST</li>
-  <li><strong>Inter-state sale</strong> (customer in another state): IGST applies</li>
-</ul>
-<p>For most online sales to consumers, the place of supply is the delivery address, so your store must calculate tax based on the customer's shipping state.</p>
-
-<h2>Step 1: Enable taxes in WooCommerce</h2>
-<ul>
-  <li>WooCommerce → Settings → General: enable tax rates and calculations</li>
-  <li>In the Tax tab, set <strong>"Calculate tax based on"</strong> to the customer shipping address</li>
-  <li>Decide whether prices are entered <strong>inclusive of tax</strong>. Most Indian consumer stores show tax-inclusive prices</li>
+  <li>Your GSTIN and the state you're registered in</li>
+  <li>The HSN code and current GST rate for each product, or SAC codes for services. Rates have been revised over the years, so don't copy a rate list from an old article.</li>
+  <li>Whether your prices will include GST</li>
+  <li>How to tax shipping charges, COD fees and extras such as gift wrapping</li>
+  <li>Your invoice number format and series</li>
+  <li>Whether e-invoicing applies to your business invoices</li>
+  <li>How to handle international orders and returns</li>
 </ul>
 
-<h2>Step 2: Create tax classes for each GST rate</h2>
-<p>Different products can fall under different GST rates. Create a tax class for each rate you use, then assign the correct class to each product. Your CA can confirm the right HSN codes and rates for your products.</p>
+<h2>CGST and SGST vs IGST: place of supply</h2>
+<p>For goods sold online and delivered to the customer, the place of supply is generally where the delivery ends, which is the shipping address. That decides which tax applies:</p>
+<table>
+  <thead><tr><th>Your registration</th><th>Delivery address</th><th>Tax charged</th><th>Example for an 18% product</th></tr></thead>
+  <tbody>
+    <tr><td>Maharashtra</td><td>Maharashtra</td><td>CGST + SGST</td><td>9% CGST + 9% SGST</td></tr>
+    <tr><td>Maharashtra</td><td>Any other state</td><td>IGST</td><td>18% IGST</td></tr>
+    <tr><td>Maharashtra</td><td>Outside India</td><td>Export rules apply</td><td>Ask your CA</td></tr>
+  </tbody>
+</table>
+<p>The customer pays the same total either way; only the split changes. Services and digital products follow different place-of-supply rules, so if you sell courses or downloads, confirm the approach with your CA.</p>
 
-<h2>Step 3: Add tax rates</h2>
+<h2>Step 1: Turn on taxes and set the basics</h2>
+<p>In WooCommerce &gt; Settings &gt; General, make sure the store address shows the state you're registered in, because WooCommerce treats it as your base location. Tick "Enable tax rates and calculations" and save. A Tax tab then appears with these options:</p>
 <ul>
-  <li>For your home state: add CGST and SGST as two separate rates (each half of the total rate)</li>
-  <li>For all other states: add IGST at the full rate</li>
-  <li>Name them clearly so they show correctly on orders and invoices</li>
+  <li><strong>Prices entered with tax:</strong> most Indian consumer stores choose "Yes, I will enter prices inclusive of tax", so the price shown is the price paid.</li>
+  <li><strong>Calculate tax based on:</strong> "Customer shipping address".</li>
+  <li><strong>Shipping tax class:</strong> set this the way your CA advises for shipping charges.</li>
+  <li><strong>Rounding:</strong> decide with your CA whether tax is rounded per line or at subtotal, so invoices match your accounts.</li>
+  <li><strong>Additional tax classes:</strong> add one per rate you charge, for example "GST 5" and "GST 18". WooCommerce's built-in "Zero rate" class suits exempt or nil-rated products.</li>
+  <li><strong>Display prices</strong> in the shop and at checkout including tax, and set tax totals to display "Itemised" so CGST and SGST show separately.</li>
 </ul>
-<p>Test with orders to your own state and another state to confirm the split is right.</p>
 
-<h2>Step 4: GST-compliant invoices</h2>
-<p>WooCommerce doesn't create GST invoices by default. A PDF invoice plugin (such as PDF Invoices &amp; Packing Slips for WooCommerce) can be configured or extended to include the required details, typically:</p>
+<h2>Step 2: Add CGST, SGST and IGST rates</h2>
+<p>Open each tax class and add three rows. WooCommerce applies only one matching rate per priority, so CGST and SGST need different priorities for both to apply. For a store registered in Maharashtra, the GST 18 class would look like this:</p>
+<pre><code>Country  State    Rate %   Tax name  Priority
+IN       MH       9.0000   CGST      1
+IN       MH       9.0000   SGST      2
+IN       (blank)  18.0000  IGST      1</code></pre>
 <ul>
-  <li>Your business name, address and GSTIN</li>
-  <li>A unique, consecutive invoice number for the financial year</li>
-  <li>Invoice date</li>
-  <li>Customer name and address, and GSTIN for business customers</li>
-  <li>HSN or SAC codes, description, quantity and value</li>
-  <li>Taxable value, tax rate and amount split into CGST/SGST or IGST</li>
-  <li>Place of supply</li>
+  <li><strong>Leave the IGST row's state blank</strong> so it covers every other state, and keep your home-state rows above it in the table. A customer in Maharashtra then gets CGST and SGST; a customer anywhere else gets IGST.</li>
+  <li><strong>Use the state codes WooCommerce uses,</strong> such as MH for Maharashtra and KA for Karnataka.</li>
+  <li><strong>Tick "Shipping"</strong> on the rows only if your CA says shipping should carry that tax.</li>
+  <li><strong>Name the rows clearly,</strong> because the names appear on orders, emails and invoices.</li>
+  <li>With several rate classes, the "Import CSV" button on each tax class page is quicker than typing rows by hand.</li>
 </ul>
-<p>Confirm the exact invoice format with your CA, especially if e-invoicing rules apply to your turnover.</p>
+
+<h2>Step 3: Assign a tax class to every product</h2>
+<p>In each product's Product data box, set Tax status to "Taxable" and choose the Tax class. Variations default to "Same as parent" but can have their own class if a size or pack falls under a different rate; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>. To change many products at once, use Bulk actions &gt; Edit on the Products list. If you import products from a spreadsheet, include the tax class column so nothing falls back to the standard rate unnoticed.</p>
+
+<h2>Step 4: Add HSN codes</h2>
+<p>WooCommerce has no HSN field by default. The common options are:</p>
+<ul>
+  <li><strong>An Indian GST invoice plugin</strong> that adds an HSN field to products and prints it on invoices</li>
+  <li><strong>A custom field</strong> added with a plugin such as Advanced Custom Fields or a few lines of code, which the invoice template then reads</li>
+  <li><strong>A product attribute,</strong> which works but is untidy and can show on the product page</li>
+</ul>
+<p>How many digits of the HSN code you must show depends on your turnover, so ask your CA.</p>
 
 <h2>Step 5: Collect GSTIN from business buyers</h2>
-<p>If you sell to businesses, add an optional GSTIN field at checkout so they can claim input tax credit. Validate the format to avoid typos.</p>
+<p>If businesses buy from you, add optional "Company name" and "GSTIN" fields at checkout so they can claim input tax credit. A checkout field plugin or a small code snippet does this; if your store uses the newer block-based checkout, check that the method you choose supports it.</p>
+<ul>
+  <li>Validate the format: a GSTIN is 15 characters, starting with a two-digit state code followed by the buyer's 10-character PAN. A format check catches typos but doesn't prove the GSTIN is active.</li>
+  <li>Show the GSTIN on the invoice, the admin order screen and the order emails; see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce order emails</a>.</li>
+</ul>
 
-<h2>Shipping and tax</h2>
-<p>Decide with your CA how shipping charges should be taxed, and configure WooCommerce's shipping tax class accordingly. See <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+<h2>Step 6: Generate GST invoices</h2>
+<p>WooCommerce doesn't create tax invoices on its own. PDF Invoices &amp; Packing Slips for WooCommerce is a widely used free plugin that attaches a PDF invoice to order emails and handles numbering, and there are India-specific plugins that add HSN fields and CGST, SGST and IGST columns. Whichever you choose, check that it's actively maintained and compatible with WooCommerce's newer order storage (HPOS).</p>
+<p>A GST invoice typically needs, subject to your CA's confirmation:</p>
+<ul>
+  <li>Your business name, address and GSTIN</li>
+  <li>A unique, consecutive invoice number for the financial year, and the invoice date</li>
+  <li>The customer's name and billing and shipping addresses, plus their GSTIN for business buyers</li>
+  <li>HSN or SAC code, description, quantity and value for each item</li>
+  <li>Taxable value, rate and tax amount, split into CGST and SGST or shown as IGST</li>
+  <li>The place of supply</li>
+</ul>
+<p>A common approach is to restart numbering each April with a prefix, for example INV/2026-27/0001. The rules cap invoice numbers at 16 characters at the time of writing, so keep the format short. For refunds and returns, you'll need credit notes, which some invoice plugins offer in their paid versions; see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce</a>.</p>
+<p>If e-invoicing applies to your turnover, business invoices need an IRN and QR code from the government's e-invoice system. Standard WooCommerce invoice plugins don't do this; it usually runs through your accounting software or a GST service provider.</p>
 
-<h2>Reports for filing</h2>
-<p>Your accountant will need sales data by tax rate and state. Export orders regularly, or use a reporting plugin that summarises tax collected. Keep invoices organised by financial year.</p>
+<h2>Shipping, COD fees, discounts and international orders</h2>
+<ul>
+  <li><strong>Shipping:</strong> how delivery charges are taxed depends on how you sell, so set WooCommerce's shipping tax class the way your CA advises; zones and rates are covered in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</li>
+  <li><strong>COD fees:</strong> if you add a cash on delivery charge, ask whether it's taxable and at what rate; see <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery in WooCommerce</a>.</li>
+  <li><strong>Coupons:</strong> WooCommerce applies discounts before tax, so GST is calculated on the discounted price. Check that matches what your CA expects.</li>
+  <li><strong>International orders:</strong> exports follow separate rules, and your CA will advise on the paperwork; see <a href="/blog/woocommerce-sell-internationally/">selling internationally from an Indian store</a>.</li>
+</ul>
 
-<p>Setting up a new store? See the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> and <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
+<h2>Test before you go live</h2>
+<ol>
+  <li>Place an order to an address in your own state and check the CGST and SGST split.</li>
+  <li>Place one to another state and check that only IGST appears.</li>
+  <li>Try a cart with products at two different rates.</li>
+  <li>Try an order with a coupon, and one with a COD fee if you charge one.</li>
+  <li>Place a business order with a GSTIN and check it appears on the invoice.</li>
+  <li>Open each invoice PDF and check every field against your CA's format.</li>
+  <li>Refund a test order and check the credit note.</li>
+</ol>
+<p>These sit alongside the payment and email checks in the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a>.</p>
+
+<h2>Reports for GST filing</h2>
+<p>WooCommerce &gt; Analytics &gt; Taxes shows tax collected by rate for any period, and an order export with the shipping state and tax lines gives your accountant what they need for returns. Many invoice plugins can export invoices in bulk. Agree a monthly routine with your CA: export orders and invoices, reconcile them with payment gateway settlements, and keep everything organised by financial year.</p>
+
+<h2>FAQs</h2>
+<h3>Does WooCommerce support GST?</h3>
+<p>Yes, through its standard tax settings. You create tax classes for each GST rate and add CGST, SGST and IGST rates by state. HSN codes, a GSTIN checkout field and GST-format invoices need a plugin or custom work.</p>
+<h3>How do I set CGST, SGST and IGST in WooCommerce?</h3>
+<p>In each tax class, add a CGST row and an SGST row for your home state, each at half the total rate and with priorities 1 and 2, then an IGST row at the full rate with the state left blank, placed below the home-state rows. Test with orders to your own state and another state.</p>
+<h3>Which plugin creates GST invoices in WooCommerce?</h3>
+<p>PDF Invoices &amp; Packing Slips for WooCommerce is a widely used free option that can be customised for GST, and several India-specific plugins add HSN codes and the CGST, SGST and IGST split. Pick one that's actively maintained, and have your CA check a sample invoice.</p>
+<h3>How do I add HSN codes to WooCommerce products?</h3>
+<p>Use a GST invoice plugin that adds an HSN field to products, or add a custom field and show it in the invoice template. Your CA can confirm the right code and how many digits you need to show.</p>
+<h3>Should prices on my Indian store include GST?</h3>
+<p>For consumer stores, showing prices inclusive of GST is the usual choice, because shoppers expect the displayed price to be the final price. Business-focused stores sometimes show prices before tax. Either way, the invoice shows the taxable value and tax separately.</p>
+<h3>Can WooCommerce generate e-invoices with an IRN?</h3>
+<p>Not on its own. If e-invoicing applies to your turnover, business invoices have to be registered with the government's e-invoice system, which usually happens through your accounting software or a GST service provider connected to the store.</p>
+
+<p>Want GST, invoices and payments set up correctly before your store goes live? I configure tax classes and rates from your CA's figures, add GSTIN and HSN fields and GST invoices, and test orders to different states; see <a href="/woocommerce-developer/">WooCommerce development</a>. Payment gateways are covered in <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
 `,
   },
   {
@@ -14225,55 +14801,129 @@ Description: Buy %title% online. %excerpt%</code></pre>
   },
   {
     slug: 'wordpress-database-optimization',
-    seoTitle: 'WordPress Database Optimisation: Clean Up Safely',
-    title: 'WordPress Database Optimisation: How to Clean Up and Speed Up Safely',
-    description: 'WordPress database optimisation: clear revisions, transients, spam, leftover plugin data and autoloaded options safely, with backups and the right plugins.',
+    seoTitle: 'Clean Up Your WordPress Database Safely: Optimisation Guide',
+    title: 'WordPress Database Optimisation: How to Clean Up and Speed Up Your Database Safely',
+    description: 'Clean up your WordPress database safely: back up, remove revisions, transients, spam and leftovers with WP-Optimize, WP-CLI or SQL, and fix autoload.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
-<p>Every WordPress site stores its content and settings in a database. Over the years it collects clutter: hundreds of post revisions, expired temporary data, spam comments and leftovers from plugins you deleted long ago. On older and busier sites, cleaning it up can make the dashboard and uncached pages noticeably quicker.</p>
+<p>To clean up a WordPress database safely, take a full backup first, then remove old post revisions, auto-drafts, trashed posts, spam comments and expired transients with a plugin such as WP-Optimize or Advanced Database Cleaner, check for large autoloaded options, and limit revisions so the clutter doesn't build up again. Leave anything you're unsure about, such as leftover plugin tables, until you've confirmed what created them.</p>
+<p>A clean-up helps most on older or busier sites, where it can make the dashboard and uncached pages noticeably quicker. It won't fix a heavy theme or weak hosting. Database and autoload clean-up is one part of my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> service, alongside caching, images and plugins.</p>
+
+<h2>Signs your database needs attention</h2>
+<ul>
+  <li>The dashboard is slow to load or save, even when the public site feels fast</li>
+  <li>Site Health warns about autoloaded options</li>
+  <li>Backups take much longer than they used to, or fail part-way</li>
+  <li>Your host warns about database size or slow queries</li>
+  <li>The site has run for years, with many plugins installed and removed along the way</li>
+</ul>
+<p>If visitors see slow pages but the dashboard is fine, the database is rarely the main cause. Page caching, hosting, images and scripts usually matter more; see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> and <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
 
 <h2>What bloats a WordPress database</h2>
+<table>
+  <thead><tr><th>Item</th><th>Where it lives</th><th>Safe to remove?</th></tr></thead>
+  <tbody>
+    <tr><td>Post revisions</td><td>wp_posts</td><td>Yes, keeping a few recent ones</td></tr>
+    <tr><td>Auto-drafts and trashed posts</td><td>wp_posts</td><td>Yes, after a quick look at the trash</td></tr>
+    <tr><td>Spam and trashed comments</td><td>wp_comments</td><td>Yes</td></tr>
+    <tr><td>Expired transients</td><td>wp_options</td><td>Yes; plugins rebuild them when needed</td></tr>
+    <tr><td>Orphaned post and comment meta</td><td>wp_postmeta, wp_commentmeta</td><td>Usually, with a backup</td></tr>
+    <tr><td>Leftover plugin tables and options</td><td>Their own tables, wp_options</td><td>Only once you know which plugin created them</td></tr>
+    <tr><td>Large autoloaded options</td><td>wp_options</td><td>Fix the cause rather than just deleting</td></tr>
+    <tr><td>Plugin logs (security, email, redirects)</td><td>Usually their own tables</td><td>Trim through the plugin's settings</td></tr>
+    <tr><td>WooCommerce orders, customers and products</td><td>Several tables</td><td>Never, as part of a clean-up</td></tr>
+  </tbody>
+</table>
+<p>Your table prefix may not be wp_; many hosts and installers use a different one. Check $table_prefix in wp-config.php.</p>
+
+<h2>Check the database size first</h2>
+<p>Tools &gt; Site Health &gt; Info &gt; Directories and Sizes shows the total database size. For a per-table breakdown, open phpMyAdmin from your hosting panel, or run this read-only query in its SQL tab:</p>
+<pre><code>SELECT table_name, ROUND((data_length + index_length) / 1024 / 1024, 1) AS size_mb
+FROM information_schema.tables
+WHERE table_schema = DATABASE()
+ORDER BY (data_length + index_length) DESC;</code></pre>
+<p>Unusually large options, postmeta, log or scheduled action tables tell you where to look first.</p>
+
+<h2>Step 1: Back up, and know how to restore</h2>
+<p>Database clean-up deletes data permanently. Take a full backup with UpdraftPlus or your host's backup tool, download a copy, and make sure you know how to restore it; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>. Developers can export the database with one command before starting:</p>
+<pre><code>wp db export before-cleanup.sql</code></pre>
+<p>Work at a quiet time, especially on a store, because table optimisation can briefly slow things down.</p>
+
+<h2>Step 2: Clean up with a plugin</h2>
+<h3>WP-Optimize</h3>
+<p>The Database tab lists each clean-up task with a count of items: revisions, auto-drafts, trashed posts, spam and trashed comments, expired transients, orphaned data and table optimisation. Tick the ones you want and run them. You can tell it to keep a set number of recent revisions, and it can run on a schedule.</p>
+<p>On a first run, start with the safe items: revisions, auto-drafts, trash, spam and expired transients. Leave anything labelled orphaned or unused for a second pass, once you've looked at what it would remove.</p>
+<p>WP-Optimize also includes page caching and image compression. If you already use a caching plugin such as LiteSpeed Cache or WP Rocket, leave those modules switched off so you don't run two caches.</p>
+<h3>Advanced Database Cleaner</h3>
+<p>Its strength is leftovers: it lists tables, options and scheduled tasks that remain after plugins are removed, and its paid version tries to identify which plugin each one belongs to at the time of writing. Delete only items you're sure about, and keep the backup handy.</p>
+<p>If you only need a clean-up occasionally, deactivate and delete the plugin afterwards. One fewer plugin is one less thing to update.</p>
+
+<h2>Step 3: The WP-CLI way</h2>
+<p>With SSH access, WP-CLI does the same jobs quickly and shows exactly what it's doing:</p>
+<pre><code>wp post list --post_type=revision --format=count
+wp post delete $(wp post list --post_type=revision --format=ids) --force
+wp comment delete $(wp comment list --status=spam --format=ids) --force
+wp transient delete --expired
+wp db optimize</code></pre>
+<p>On a site with tens of thousands of revisions, delete them in batches rather than all at once.</p>
+
+<h2>Step 4: Find and fix large autoloaded options</h2>
+<p>Options marked to autoload are loaded on every single request, front end and dashboard alike. When a plugin stores large amounts of data that way, every page pays the price. Recent versions of WordPress warn about this in Site Health. To see the biggest offenders:</p>
+<pre><code>SELECT option_name, LENGTH(option_value) AS bytes
+FROM wp_options
+WHERE autoload IN ('yes', 'on', 'auto-on', 'auto')
+ORDER BY bytes DESC
+LIMIT 20;</code></pre>
 <ul>
-  <li><strong>Post revisions:</strong> WordPress saves a copy every time you update a page</li>
-  <li><strong>Auto-drafts and trashed posts</strong></li>
-  <li><strong>Spam and trashed comments</strong></li>
-  <li><strong>Expired transients:</strong> temporary cached data that hasn't been cleared</li>
-  <li><strong>Leftover plugin data:</strong> tables and settings from removed plugins</li>
-  <li><strong>Autoloaded options:</strong> settings loaded on every page; too many slow every request</li>
-  <li><strong>Logs:</strong> some security, email and scheduling plugins keep large logs</li>
+  <li>The option name usually starts with the plugin's prefix, which tells you where it came from.</li>
+  <li>If it belongs to an active plugin, look for a logging or cache setting that's storing too much, or replace the plugin.</li>
+  <li>If it belongs to a plugin you've already removed, a developer can switch its autoload off or delete it after a backup.</li>
+</ul>
+<p>Autoload problems often show up first as a slow dashboard; see <a href="/blog/wordpress-admin-slow/">why the WordPress admin is slow</a>. A persistent object cache such as Redis, where your host supports it, reduces repeated database queries, but it doesn't make bloated autoload data small.</p>
+
+<h2>Step 5: Stop the clutter coming back</h2>
+<p>Add these two lines to wp-config.php above the line that says "That's all, stop editing", to keep the last five revisions of each post and empty the trash after seven days instead of the default 30:</p>
+<pre><code>define( 'WP_POST_REVISIONS', 5 );
+define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
+<ul>
+  <li>Stop spam at the source with form and comment protection, or turn comments off if you don't use them.</li>
+  <li>Set log retention in security, email and redirect plugins, which can quietly fill tables.</li>
+  <li>When removing a plugin, check its settings for an option to delete its data on uninstall.</li>
 </ul>
 
-<h2>Always back up first</h2>
-<p>Database clean-up deletes data permanently. Take a full backup and confirm you can restore it before you start; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</p>
+<h2>WooCommerce stores need extra care</h2>
+<ul>
+  <li><strong>WooCommerce &gt; Status &gt; Tools</strong> has buttons to clear transients and expired transients. "Clear customer sessions" empties active carts, so only use it at a quiet time and when you have a reason.</li>
+  <li><strong>Scheduled actions:</strong> WooCommerce &gt; Status &gt; Scheduled Actions can hold large numbers of completed and failed actions. Completed ones are cleaned up automatically after a while; a growing pile of past-due actions usually means WP-Cron isn't running properly; see <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</li>
+  <li><strong>Never delete orders, customers or order notes</strong> to save space. They're your accounting and GST records.</li>
+</ul>
+<p>Store databases grow faster than brochure sites, which is one reason they need their own tuning; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</p>
 
-<h2>Safe clean-up steps</h2>
-<ol>
-  <li>Delete spam and trashed comments</li>
-  <li>Empty the trash for posts and pages</li>
-  <li>Remove old revisions, keeping a few recent ones</li>
-  <li>Clear expired transients</li>
-  <li>Optimise database tables</li>
-</ol>
-<p>Plugins such as WP-Optimize or Advanced Database Cleaner can do this, and some caching plugins include database tools. Run the clean-up, then remove or deactivate the tool if you don't need it regularly.</p>
+<h2>What "optimise tables" actually does</h2>
+<p>After lots of deletions, tables keep the empty space. Optimising rebuilds each table to reclaim it. On modern InnoDB tables the speed gain is usually modest, and very large tables can be briefly locked while they rebuild, so run it off-peak. It's the last step after a clean-up, not a fix on its own.</p>
 
-<h2>Limit revisions going forward</h2>
-<p>You can limit how many revisions WordPress keeps by adding a line to wp-config.php, for example keeping the last five. Ask your developer if you're not comfortable editing this file.</p>
+<h2>How often to clean the database</h2>
+<p>For most business sites, every few months is plenty. A busy blog or store benefits from a monthly check of revisions, transients, logs and autoload size. It belongs on the same routine as updates and backups; see the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>.</p>
+<p>If the site can't reach its database at all, that's a connection problem rather than bloat; see <a href="/blog/error-establishing-database-connection-fix/">fixing "Error establishing a database connection"</a>.</p>
 
-<h2>Be careful with leftover tables and options</h2>
-<p>Removing data left by old plugins helps, but deleting the wrong table can break a working feature. Only remove leftovers you're sure belong to plugins you no longer use, or have a developer review them.</p>
+<h2>FAQs</h2>
+<h3>How do I clean up my WordPress database?</h3>
+<p>Take a full backup, then use WP-Optimize or Advanced Database Cleaner to remove revisions, auto-drafts, trashed posts, spam comments and expired transients, and optimise the tables. Check autoloaded options, and limit revisions in wp-config.php so the clutter doesn't return.</p>
+<h3>Is it safe to delete post revisions?</h3>
+<p>Yes. Revisions are earlier saved versions of your posts and pages, and deleting them doesn't affect what's published. Keep a few recent ones if you like the option of rolling back an edit.</p>
+<h3>Will cleaning the database speed up my site?</h3>
+<p>It helps most where the database is genuinely bloated, especially with large autoloaded options, and it shows mainly in the dashboard and uncached pages. Visitors seeing cached pages may notice little difference, because caching, hosting, images and scripts matter more for them.</p>
+<h3>What are transients, and can I delete them?</h3>
+<p>Transients are temporary cached data that plugins store, often in the options table, with an expiry time. Expired ones are safe to delete, and even active ones are rebuilt when needed, though deleting them all may make the next few page loads slightly slower.</p>
+<h3>Is WP-Optimize safe to use?</h3>
+<p>Yes, for the standard clean-up tasks, as long as you take a backup first. Be more careful with options that remove orphaned or leftover data, and don't enable its caching module alongside another caching plugin.</p>
+<h3>How often should I optimise the WordPress database?</h3>
+<p>Every few months for a typical business site, and monthly for busy blogs and stores. Scheduling it as part of regular maintenance stops the problem returning.</p>
 
-<h2>Autoloaded options</h2>
-<p>If a plugin stores large amounts of data as autoloaded options, every page load pays the price. Recent versions of WordPress Site Health can warn when autoloaded data is too large. Fixing it usually means removing or replacing the plugin responsible.</p>
-
-<h2>WooCommerce stores</h2>
-<p>Stores accumulate customer sessions, order notes and scheduled action logs. WooCommerce has built-in tools to clear some of these under WooCommerce → Status → Tools. Never delete order data without accounting approval.</p>
-
-<h2>How often?</h2>
-<p>For most business sites, a clean-up every few months is plenty. See the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>.</p>
-
-<p>Database work is one part of speed; also see <a href="/blog/wordpress-caching-explained/">caching explained</a> and <a href="/blog/why-is-my-wordpress-site-slow/">why your site is slow</a>.</p>
+<p>Dashboard crawling, or not sure whether the database is the problem? I find out what's actually slowing the site, clean up the database and autoload data safely after a backup, and fix the rest; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>, or keep it tidy every month with <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
