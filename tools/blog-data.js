@@ -565,73 +565,120 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'clinic-website-checklist-for-doctors',
-    seoTitle: "Clinic Website Checklist: 15 Must-Haves for Doctors",
-    title: 'Clinic Website Checklist: 15 Things Every Doctor\'s Website Needs',
-    description: 'A 15-point clinic website checklist for doctors: what your practice site needs to earn patient trust, rank in local search and bring in appointment enquiries.',
+    seoTitle: 'Private Clinic Website Checklist: 20 Must-Haves for Doctors',
+    title: 'Private Clinic Website Checklist: 20 Things Every Doctor\'s Website Needs',
+    description: 'A private clinic website checklist for doctors: 20 must-haves for patient trust, local search, appointments, speed, privacy and medical advertising rules.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Industries',
     related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'website-redesign'],
     body: `
-<p>Most patients now search online before choosing a doctor. They look at your qualifications, read reviews, check timings and decide in a few minutes whether to call you or the next clinic on the list. Your website is often the first impression.</p>
-<p>Use this checklist to make sure your clinic website builds trust and turns visitors into appointments.</p>
+<p>A private clinic website needs five things above all: a doctor profile with credentials patients can verify, a clear page for each treatment or condition, accurate timings with an address and map, an easy way to book from a phone (tap-to-call, WhatsApp and a short form), and a fast, secure site set up for local search. Everything else builds on those.</p>
+<p>Use the 20-point checklist below to audit your current site or brief a new one. It's the same list I work through when I build <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
 
-<h2>Trust and credibility</h2>
+<h2>The checklist at a glance</h2>
+<table>
+  <thead><tr><th>Area</th><th>Checklist items</th></tr></thead>
+  <tbody>
+    <tr><td>Trust and credentials</td><td>1. Doctor profile, 2. Registration details, 3. Real clinic photos, 4. Genuine reviews, 5. Affiliations and memberships</td></tr>
+    <tr><td>Patient information</td><td>6. Treatment and condition pages, 7. First-visit information, 8. Timings, 9. Address, map and directions, 10. Fees, insurance and FAQs</td></tr>
+    <tr><td>Appointments</td><td>11. Tap-to-call, 12. WhatsApp, 13. Short appointment form, 14. Tested booking flow</td></tr>
+    <tr><td>Local search</td><td>15. Specialty and city in titles, 16. Google Business Profile match, 17. Medical schema</td></tr>
+    <tr><td>Technical and privacy</td><td>18. Mobile-first and fast, 19. HTTPS, privacy notice and consent, 20. Backups and updates</td></tr>
+  </tbody>
+</table>
+
+<h2>Trust and credentials</h2>
 <ol>
-  <li><strong>A clear doctor profile.</strong> Name, photo, qualifications, registration details, specialisations and years of experience.</li>
-  <li><strong>Real clinic photos.</strong> Reception, consultation room and equipment. Real photos build far more trust than stock images.</li>
-  <li><strong>Patient testimonials.</strong> Genuine feedback (with permission) and a link to your Google reviews.</li>
-  <li><strong>Memberships, awards and affiliations.</strong> Hospital associations, professional bodies and recognitions.</li>
+  <li><strong>A complete doctor profile.</strong> Name, a professional photo, degrees with the university and year of each, specialisation, experience and the conditions you treat. "Experienced specialist" tells a patient nothing; details they can check do.</li>
+  <li><strong>Registration details.</strong> Your medical registration number and the council that issued it, on the profile page. It lets patients confirm who they're booking with. Check current NMC guidance for anything else your profile should state.</li>
+  <li><strong>Real clinic photos.</strong> Reception, consultation room, equipment and the outside of the building, so patients recognise it when they arrive. Stock photos of smiling models do the opposite.</li>
+  <li><strong>Genuine reviews.</strong> A widget showing your Google rating and recent reviews is more credible than retyped quotes, because every review can be traced; see <a href="/blog/google-reviews-on-website/">showing Google reviews on your website</a>.</li>
+  <li><strong>Affiliations and memberships.</strong> Hospitals where you consult, professional societies and teaching roles, listed factually.</li>
+</ol>
+<p>Specialists such as orthopaedic surgeons, cardiologists and gynaecologists usually need more depth, including procedure pages and a second-opinion page; see <a href="/blog/website-for-specialist-doctors/">websites for specialist doctors</a>.</p>
+
+<h2>Information patients look for</h2>
+<ol start="6">
+  <li><strong>A page for each major treatment or condition.</strong> Explain what it is, who it's for, what happens during the visit or procedure and recovery, in plain words. Separate pages also help you appear for searches like "root canal treatment in Kothrud" or "knee replacement surgeon Pune", which a single services page rarely does.</li>
+  <li><strong>First-visit information.</strong> What to bring (previous reports, prescriptions, insurance card), how long a consultation takes and whether walk-ins are accepted. It answers the questions your reception gets every day.</li>
+  <li><strong>Accurate timings.</strong> Every session as it really runs, including Sunday hours and holiday closures, in a place your staff can update without calling a developer.</li>
+  <li><strong>Address, map and directions.</strong> The full address with a landmark, an embedded Google Map, parking information and which floor you're on.</li>
+  <li><strong>Fees, insurance and FAQs.</strong> If you're comfortable sharing consultation fees, cashless or insurance arrangements, do; it filters out mismatched enquiries. Add FAQs patients really ask, such as "Is the treatment painful?"</li>
 </ol>
 
-<p>Specialists such as orthopaedic surgeons, cardiologists and gynaecologists need more, including procedure pages and a second opinion page; see <a href="/blog/website-for-specialist-doctors/">websites for specialist doctors</a>.</p>
-
-<h2>Information patients need</h2>
-<ol start="5">
-  <li><strong>Treatments and services pages.</strong> A separate page for each major treatment explains it clearly and helps you rank for those searches.</li>
-  <li><strong>Timings and days.</strong> Up to date, including holidays, and easy to change.</li>
-  <li><strong>Address with Google Maps.</strong> Plus parking and landmark directions.</li>
-  <li><strong>Consultation fees or insurance info</strong>, if you're comfortable sharing it. It reduces repetitive calls.</li>
+<h2>Appointments and contact</h2>
+<ol start="11">
+  <li><strong>Tap-to-call on every page.</strong> A call button that stays visible on mobile, not a number hidden in the footer.</li>
+  <li><strong>WhatsApp with a pre-filled message.</strong> Many patients prefer to message first. A button that opens WhatsApp with "Hi, I'd like to book an appointment" already typed removes a step; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a>.</li>
+  <li><strong>A short appointment form.</strong> Name, phone number, preferred date and morning or evening session. Don't ask for symptoms, reports or medical history in an open form. If you use a booking system or a directory's booking widget, link or embed it instead; see <a href="/blog/online-appointment-booking-website/">online appointment booking</a>.</li>
+  <li><strong>A tested booking flow.</strong> Submit a test booking every month and confirm it reaches the right phone or inbox. A form that silently stops sending can cost you enquiries for weeks before anyone notices.</li>
 </ol>
 
-<h2>Make contacting you effortless</h2>
-<ol start="9">
-  <li><strong>One-tap call button</strong> visible on mobile at all times.</li>
-  <li><strong>WhatsApp button</strong>, the preferred way for many patients to ask questions.</li>
-  <li><strong>Appointment enquiry form</strong> that asks only for what you need: name, phone, preferred date and concern.</li>
+<h2>Local search</h2>
+<ol start="15">
+  <li><strong>Specialty and city in titles and headings.</strong> "Dermatologist in Baner, Pune" tells Google and patients exactly who you are. Use the words patients type, not only the clinical term.</li>
+  <li><strong>A Google Business Profile that matches the site.</strong> The same clinic name, address, phone number and timings in both places, with the profile linking to your website. For "near me" searches the profile often appears before any website; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</li>
+  <li><strong>Medical schema markup.</strong> Structured data such as MedicalClinic, Dentist or Physician, with your address, phone, opening hours and doctors, helps Google connect the site to your practice. Multi-location clinics need a page, schema and Business Profile for each branch.</li>
 </ol>
 
-<h2>Technical essentials</h2>
-<ol start="12">
-  <li><strong>Mobile-first design.</strong> Most patients will visit on their phone.</li>
-  <li><strong>Fast loading.</strong> Compress images and use good hosting, because patients won't wait.</li>
-  <li><strong>Local SEO.</strong> Page titles and content that mention your specialty and city, schema markup for your practice, and a linked Google Business Profile.</li>
-  <li><strong>Security and privacy.</strong> HTTPS, a privacy policy, and forms that don't collect more medical information than necessary.</li>
+<h2>Technical, speed and privacy</h2>
+<ol start="18">
+  <li><strong>Mobile-first and fast.</strong> Most patients will look you up on a phone, often on a patchy connection. Compress images, use good hosting and caching, and test on a real mid-range phone; see <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</li>
+  <li><strong>HTTPS, a privacy notice and consent.</strong> Health information is sensitive. Keep forms to what you need for a callback, add a short consent line and a privacy notice, and make sure only the right staff can see submissions. India's DPDP Act is relevant here; see <a href="/blog/dpdp-act-website-basics/">DPDP Act basics for websites</a>, and take legal advice for anything beyond the basics.</li>
+  <li><strong>Backups and updates.</strong> WordPress, plugins and themes kept updated, with regular off-site backups, so the site stays secure and can be restored if something goes wrong.</li>
 </ol>
 
-<p>Running a diagnostic lab or pathology centre? See <a href="/blog/website-for-diagnostic-labs/">websites for diagnostic labs</a>.</p>
+<h2>Medical advertising and accuracy</h2>
+<p>In India, professional conduct rules for registered medical practitioners restrict how doctors may promote themselves, and the National Medical Commission has revised its guidance in recent years. Keep the tone factual:</p>
+<ul>
+  <li>No "best doctor in the city", no guaranteed outcomes and no claims you can't support</li>
+  <li>Be careful with testimonials, before-and-after photos and paid promotion, and check current NMC and state medical council guidance before using them</li>
+  <li>The doctor should approve every medical statement before it goes live</li>
+  <li>Where relevant, say what the site or a programme is not, such as a substitute for diagnosis</li>
+</ul>
+<p>This isn't legal advice; the final call on what to publish is yours.</p>
 
-<p>See these ideas on live clinic sites: <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a> and <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a>.</p>
+<h2>Which type of clinic website do you need?</h2>
+<p>The checklist applies to every practice, but the emphasis changes with the type of clinic:</p>
+<table>
+  <thead><tr><th>Type of practice</th><th>Pages that matter most</th><th>Extra needs</th></tr></thead>
+  <tbody>
+    <tr><td>Single-doctor clinic</td><td>Doctor profile, conditions treated, timings, booking</td><td>A strong personal profile and Google reviews</td></tr>
+    <tr><td>Dental clinic</td><td>Treatment pages (implants, aligners, root canal), team, sterilisation and equipment</td><td>Fee guidance and FAQs; see <a href="/blog/website-for-dentists/">dental clinic websites</a></td></tr>
+    <tr><td>Multi-speciality clinic</td><td>A profile per doctor, a page per specialty, a schedule showing who is in when</td><td>Booking by doctor or specialty</td></tr>
+    <tr><td>Diagnostic centre or lab</td><td>Test list with preparation instructions, home collection areas</td><td>Report access through a secure system, not email forms</td></tr>
+    <tr><td>Hospital</td><td>Departments, doctors, emergency contact, insurance and TPA information</td><td>Clear emergency information on every page</td></tr>
+  </tbody>
+</table>
 
 <h2>Common mistakes to avoid</h2>
 <ul>
-  <li>A single page with no detail about treatments</li>
-  <li>Outdated timings or phone numbers</li>
-  <li>Tiny text and buttons that are hard to tap on phones</li>
-  <li>No clear way to book, or only a phone number in the footer</li>
-  <li>Exaggerated claims. Keep medical content accurate and within professional guidelines.</li>
+  <li>A single page listing treatments with no detail</li>
+  <li>Old timings or a phone number nobody answers</li>
+  <li>Tiny text and buttons that are hard to tap on a phone</li>
+  <li>No clear way to book, or only a contact page</li>
+  <li>Clinic name, address or phone that differ between the website, Google and directories</li>
+  <li>Forms asking for symptoms or uploads of medical reports</li>
+  <li>Exaggerated claims or promised results</li>
 </ul>
+<p>You can see several of these points on a live site in the <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care case study</a>.</p>
 
-<p>Larger or specialist practices: <a href="/blog/website-for-hospitals/">hospitals</a>, <a href="/blog/website-for-physiotherapy-clinics/">physiotherapy clinics</a> and <a href="/blog/website-for-eye-clinics-opticians/">eye clinics</a>.</p>
+<h2>FAQs</h2>
+<h3>What should a private clinic website include?</h3>
+<p>At minimum: a doctor profile with qualifications and registration number, a page for each major treatment, timings, address with a map, tap-to-call, WhatsApp and a short appointment form, plus a privacy notice. Add genuine reviews, real photos, FAQs and local SEO to compete properly in search.</p>
+<h3>How many pages does a clinic website need?</h3>
+<p>A small clinic typically needs a home page, doctor profile, a page for each main treatment or condition, a contact and booking page, and a privacy policy. The treatment pages do most of the work in search, so a clinic offering eight distinct treatments benefits from eight focused pages rather than one long list.</p>
+<h3>Should I put my registration number on my clinic website?</h3>
+<p>Yes, I recommend it. Your registration number with your degrees, universities and years lets patients check who they're booking with, and it builds trust. Check the current NMC guidance for anything else your profile should state.</p>
+<h3>Can patients book appointments through the website?</h3>
+<p>Yes. The simplest options are a short form that emails the clinic, a WhatsApp button with a pre-filled message, and tap-to-call. If you already use an appointment system, it can usually be linked or embedded so bookings land in the same place.</p>
+<h3>Is a Practo or directory profile enough, or do I need a website?</h3>
+<p>A directory profile helps patients who already search on that platform, but it sits on someone else's page, often next to other doctors, with little room to explain your treatments. Your own website can rank for your specialty and each treatment, send bookings straight to you and link to your directory profiles, so the two work together.</p>
+<h3>Can I show patient testimonials on my clinic website?</h3>
+<p>Professional conduct rules for doctors in India are cautious about testimonials, so check current NMC and state medical council guidance first. Showing your public Google reviews through a widget, with a link to leave a review, is a more transparent option than selected quotes.</p>
 
-<h2>Your Google Business Profile matters too</h2>
-<p>For local searches like "dermatologist near me", your Google Business Profile often appears above websites. Keep it complete, add photos, respond to reviews and link it to your website. The two work together.</p>
-
-<p>Doctors who also coach, teach or run programs can go further with a <a href="/blog/personal-brand-website-professionals/">personal brand website</a>. Dental practices should also read <a href="/blog/website-for-dentists/">what patients look for in a dental clinic website</a>.</p>
-
-<p>Related guides: websites for <a href="/blog/website-for-nutritionists-dietitians/">nutritionists and dietitians</a> and <a href="/blog/website-for-psychologists-counsellors/">psychologists and counsellors</a>.</p>
-
-<h2>Next step</h2>
-<p>If your current website misses several of these points, a focused redesign can make a big difference to how many patients contact you. A good clinic website is one of the most cost-effective ways to grow a practice.</p>
+<p>If your clinic website misses several of these points, I can fix it or build a new one: credentials, treatment pages, WhatsApp booking, local SEO and a privacy-safe setup, with you approving every medical statement. See <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
 `,
   },
   {
@@ -1814,77 +1861,137 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'google-business-profile-checklist',
-    seoTitle: 'Google Business Profile Checklist for Service Businesses',
-    title: 'Google Business Profile Optimization Checklist for Service Businesses',
-    description: 'A Google Business Profile checklist for service businesses: categories, services, photos, reviews, posts, Q&A and website links to appear in Google Maps.',
+    seoTitle: 'Google Business Profile Checklist: Setup and Monthly Tasks',
+    title: 'Google Business Profile Checklist: Setup, Optimisation and Monthly Management',
+    description: 'A Google Business Profile checklist for service businesses: setup, categories, services, photos, reviews and a monthly management routine to rank in Maps.',
     date: '2026-09-27',
-    updated: '2026-09-29',
+    updated: '2026-10-11',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
     body: `
-<p>For local service businesses such as clinics, consultants, restaurants, repair services and agencies, your Google Business Profile often gets more views than your website. It's what appears in Google Maps and the local "map pack" at the top of search results. This checklist helps you get the most out of it.</p>
+<p>To optimise a Google Business Profile, claim and verify it in your business's own Google account, use your real business name, choose the most specific primary category, set an accurate address or service area, hours, phone and website link, add every service with a description, upload real photos, collect and reply to reviews, and keep it updated every month. Your website should show exactly the same name, address and phone number.</p>
+<p>Below is the full checklist, from setup to a weekly and monthly management routine. Google My Business was renamed Google Business Profile, so older guides using that name cover the same thing. If you want help with the profile and the website side of local search, it's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 
-<h2>Basic information (get this 100% right)</h2>
+<h2>The checklist at a glance</h2>
+<table>
+  <thead><tr><th>Section</th><th>What to check</th><th>How often</th></tr></thead>
+  <tbody>
+    <tr><td>Ownership</td><td>Verified, owned by the business, no old staff or agencies with access</td><td>Once, then yearly</td></tr>
+    <tr><td>Core details</td><td>Name, categories, address or service area, phone, website, hours</td><td>Setup, then monthly</td></tr>
+    <tr><td>Services and description</td><td>Every service listed with a short description, attributes filled in</td><td>Setup, then quarterly</td></tr>
+    <tr><td>Photos</td><td>Logo, cover, exterior, interior, team and work photos</td><td>Monthly</td></tr>
+    <tr><td>Reviews</td><td>Ask customers, reply to every review</td><td>Weekly</td></tr>
+    <tr><td>Posts</td><td>Updates, offers, events or recent work</td><td>Weekly or fortnightly</td></tr>
+    <tr><td>Website</td><td>Matching details, relevant landing page, map and schema</td><td>Setup, then after any change</td></tr>
+  </tbody>
+</table>
+
+<h2>1. Claim, verify and secure the profile</h2>
 <ul>
-  <li><strong>Business name:</strong> your real trading name, exactly as on your signage and website. Don't stuff keywords into it, because it breaks Google's guidelines.</li>
-  <li><strong>Primary category:</strong> the single most important choice. Pick the most specific category that matches your main service (for example "Orthopedic surgeon" rather than "Doctor").</li>
-  <li><strong>Secondary categories:</strong> add other genuine categories you serve.</li>
-  <li><strong>Address or service area:</strong> show your address if customers visit you; otherwise set service areas and hide the address.</li>
-  <li><strong>Phone number and website:</strong> use a number you answer, and link to your website (ideally the most relevant page).</li>
-  <li><strong>Hours:</strong> accurate regular hours, plus special hours for holidays.</li>
+  <li><strong>Search for your business</strong> on Google or Maps first. If a profile already exists, claim it rather than creating a duplicate.</li>
+  <li><strong>Verify it.</strong> Google chooses the method, often a short video showing your signage, workplace and proof of management. Have the business name visible, and film in one take.</li>
+  <li><strong>Own it from the business's Google account,</strong> not a staff member's or agency's personal account. Add others as managers from the profile's settings under people and access.</li>
+  <li><strong>Remove people who shouldn't have access,</strong> such as former employees and previous agencies.</li>
+  <li><strong>Report duplicates</strong> for the same location, which split reviews and confuse Google.</li>
 </ul>
 
-<p>Profile set up but still missing from the map? See <a href="/blog/not-showing-on-google-maps/">why a business isn't showing on Google Maps</a> for a troubleshooting checklist.</p>
-
-<h2>Services and description</h2>
+<h2>2. Business information: get this exactly right</h2>
 <ul>
-  <li>Add every <strong>service</strong> you offer, with a short description for each.</li>
-  <li>Write a clear <strong>business description</strong> covering what you do, who you help, where, and what makes you different, in natural language.</li>
-  <li>Fill in relevant <strong>attributes</strong> (for example wheelchair accessible, online appointments, women-led).</li>
+  <li><strong>Business name:</strong> your real trading name, as on your signage and website. Adding keywords or the city ("Sharma Dental Clinic Best Dentist Pune") breaks Google's guidelines and risks suspension.</li>
+  <li><strong>Primary category:</strong> the most important choice on the profile. Pick the most specific match for your main service, for example "Orthodontist" rather than "Dentist" if that's your focus, or "Air conditioning repair service" rather than "Contractor". Look at which categories the top-ranking competitors use.</li>
+  <li><strong>Secondary categories:</strong> add other genuine categories, but only ones you really offer.</li>
+  <li><strong>Address or service area:</strong> show your address if customers visit you. If you visit customers, as a plumber or pest control company does, set service areas and hide the address. Virtual offices and addresses you don't staff aren't allowed; see <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a>.</li>
+  <li><strong>Phone:</strong> a number someone answers during your listed hours, ideally a local or mobile number rather than a call-centre line.</li>
+  <li><strong>Website:</strong> link to the most relevant page, which for a single-location business is usually the homepage, and for branches the branch's own page. Adding UTM tags, such as ?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp, lets you see profile visits separately in Analytics.</li>
+  <li><strong>Hours:</strong> regular hours, special hours for festivals and holidays, and "more hours" for things like appointment or delivery times.</li>
+</ul>
+<p>Set up but still missing from the map? Work through <a href="/blog/not-showing-on-google-maps/">why a business isn't showing on Google Maps</a>.</p>
+
+<h2>3. Services, products, description and attributes</h2>
+<ul>
+  <li><strong>Services:</strong> add every service you offer, using the suggested ones where they fit and custom ones where they don't, each with a short description in plain language.</li>
+  <li><strong>Products:</strong> shops and stores can add products or product categories with photos and prices.</li>
+  <li><strong>Business description:</strong> up to 750 characters on what you do, who you help, where and what makes you different. Write it for people; don't repeat keywords or include links or offers.</li>
+  <li><strong>Attributes:</strong> fill in the ones that apply, such as wheelchair accessible, online appointments, women-led or languages spoken. They vary by category.</li>
+  <li><strong>Booking or appointment link:</strong> if you take bookings online, add the link so customers can book straight from the profile.</li>
 </ul>
 
-<h2>Photos and videos</h2>
+<h2>4. Photos and videos</h2>
 <ul>
-  <li>Logo and cover photo</li>
-  <li>Exterior photos so people recognise your location</li>
-  <li>Interior, team and work-in-progress photos</li>
-  <li>Photos of finished work or products</li>
-  <li>Add new photos regularly, because fresh, real photos build trust</li>
+  <li>Logo and a cover photo that represent the business well</li>
+  <li>Exterior photos from the street, so people recognise you when they arrive</li>
+  <li>Interior, team and at-work photos</li>
+  <li>Finished work, products or before-and-after results where appropriate for your industry</li>
+  <li>A few new real photos every month; stock images add nothing</li>
 </ul>
+<p>More on choosing photos, customer uploads and myths like geotagging in <a href="/blog/google-business-profile-photos/">Google Business Profile photos explained</a>.</p>
 
-<p>For which photos to add, choosing a cover and logo, handling customer photos and myths like geotagging, see <a href="/blog/google-business-profile-photos/">Google Business Profile photos explained</a>.</p>
-
-<h2>Reviews: the biggest ongoing factor</h2>
+<h2>5. Reviews: the biggest ongoing factor</h2>
 <ol>
-  <li>Ask every satisfied customer for a review, ideally right after a good experience.</li>
-  <li>Share your direct review link on WhatsApp, email or a printed QR code.</li>
-  <li>Reply to every review, thanking positive reviewers and responding calmly and helpfully to negative ones.</li>
-  <li>Never buy reviews or offer incentives for them. It violates Google's policies.</li>
+  <li><strong>Ask every happy customer,</strong> ideally right after a good experience, while they're still with you or on the same day.</li>
+  <li><strong>Make it one tap.</strong> Copy your review link from the profile's "ask for reviews" option and share it on WhatsApp, in invoices and emails, or as a QR code at the counter.</li>
+  <li><strong>Reply to every review,</strong> positive and negative, politely and without sharing customers' private details. For difficult ones, see <a href="/blog/handle-negative-reviews/">handling negative reviews professionally</a>.</li>
+  <li><strong>Never buy reviews, offer discounts for them or ask only happy customers</strong> through a filter. All of these break Google's policies, and fake reviews can be removed or the profile restricted.</li>
 </ol>
+<p>Templates and ethical ways to ask are in <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a>.</p>
 
-<p>For templates and what to avoid, read <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a>.</p>
-
-<h2>Posts, Q&amp;A and responding quickly</h2>
+<h2>6. Posts and updates</h2>
 <ul>
-  <li><strong>Posts:</strong> share updates, offers, events or recent work regularly.</li>
-  <li><strong>Q&amp;A:</strong> answer common questions where your profile allows it. Google has been changing how questions appear on profiles, so check what yours currently shows.</li>
-  <li><strong>Respond quickly</strong> to calls, WhatsApp messages and reviews. Google ended the built-in chat feature on Business Profiles in 2024, so keep your phone number and website contact options up to date.</li>
+  <li><strong>Posts:</strong> share updates, offers, events or recent work with a photo and a button. A short weekly or fortnightly post keeps the profile looking active; see <a href="/blog/google-business-profile-posts/">Google Business Profile posts and offers</a>.</li>
+  <li><strong>Questions:</strong> Google has been changing how questions and answers appear on profiles, so check what yours currently shows and make sure the information customers see is accurate.</li>
+  <li><strong>Messages:</strong> Google ended the built-in chat on Business Profiles in 2024, so make sure your phone number and website contact options are what customers use.</li>
 </ul>
 
-<p>Wondering whether a small shop needs a website at all? See <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website</a>.</p>
-
-<p>For post ideas, offers, events and a simple weekly routine, see <a href="/blog/google-business-profile-posts/">how to use Google Business Profile posts and photos</a>.</p>
-
-<h2>Connect it to your website</h2>
-<p>Your profile and website work together. Make sure your name, address and phone number match exactly on both; add a Google Map and your hours to your contact page; and create service pages on your site for the main services listed on your profile. Our <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> covers the website side in more detail.</p>
-
-<h2>Monthly routine</h2>
+<h2>7. Connect it to your website</h2>
+<p>Your profile and website support each other. Google compares them, and customers often check both.</p>
 <ul>
-  <li>Reply to all new reviews and questions</li>
-  <li>Add a post and a few new photos</li>
-  <li>Check hours and details are still correct</li>
-  <li>Review insights: searches, calls, direction requests and website clicks</li>
+  <li>The same business name, address and phone number on both, written the same way</li>
+  <li>A contact page with your hours, address and an embedded map</li>
+  <li>A page on the website for each main service listed on the profile</li>
+  <li>LocalBusiness schema markup with your name, address, phone, hours and profile link</li>
+  <li>A separate page for each branch, linked from its own profile; see <a href="/blog/multi-location-business-website/">websites for businesses with multiple branches</a></li>
+  <li>Consistent details on directories like Justdial and industry listings; see <a href="/blog/business-directories-citations-india/">business directories and citations in India</a></li>
 </ul>
+<p>The website side is covered step by step in the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for small businesses in India</a>.</p>
+
+<h2>Google Business Profile management checklist</h2>
+<p>Once it's set up, a profile needs a little attention regularly rather than a big effort once a year:</p>
+<table>
+  <thead><tr><th>When</th><th>Tasks</th></tr></thead>
+  <tbody>
+    <tr><td>Weekly</td><td>Reply to new reviews; publish a post; check for suggested edits from Google or the public</td></tr>
+    <tr><td>Monthly</td><td>Add new photos; check hours, phone and website link; add special hours for upcoming holidays; look at the Performance report</td></tr>
+    <tr><td>Quarterly</td><td>Review categories, services and description; check who has access; compare your profile with the top competitors</td></tr>
+    <tr><td>After any change</td><td>Update the profile and website together when you move, change number, add a service or change hours</td></tr>
+  </tbody>
+</table>
+<p>In the Performance report, watch calls, direction requests, website clicks and the searches that found you. If people find you for services you don't list, add them; if a service gets no visibility, improve its page on your website.</p>
+
+<h2>Mistakes that get profiles suspended</h2>
+<ul>
+  <li>Keywords or city names added to the business name</li>
+  <li>A virtual office, co-working desk you don't staff, or residential address shown when customers don't visit</li>
+  <li>Several profiles for the same business at the same address</li>
+  <li>Fake, bought or incentivised reviews, including reviews from staff and family</li>
+  <li>Frequent changes to the name, address or category in a short time</li>
+</ul>
+<p>If your profile is suspended, fix the cause first, then request reinstatement through Google's appeal process with evidence such as signage photos, a utility bill or a business registration document.</p>
+
+<h2>FAQs</h2>
+<h3>Is Google Business Profile the same as Google My Business?</h3>
+<p>Yes. Google My Business was renamed Google Business Profile, and the profile is now managed directly from Google Search and Maps. Any Google My Business checklist covers the same profile, though some menus have moved.</p>
+<h3>How do I optimise my Google Business Profile?</h3>
+<p>Use your real name, the most specific primary category and accurate details, list every service with a description, add real photos, collect and reply to reviews, post regularly and link to a website that shows the same details. Then keep it updated with a simple weekly and monthly routine.</p>
+<h3>How often should I update my Google Business Profile?</h3>
+<p>Reply to reviews as they come in, post weekly or fortnightly, add photos and check details monthly, and review categories and services every quarter. Always update hours before festivals and holidays.</p>
+<h3>Why is my business not showing on Google Maps?</h3>
+<p>Common reasons are an unverified or suspended profile, a category that doesn't match what people search, a service area set too wide or too narrow, a duplicate profile, or strong competitors closer to the searcher. Distance from the searcher matters a lot in local results, so you may show for nearby searches only.</p>
+<h3>Can I have a Google Business Profile without a shop or office?</h3>
+<p>Yes, if you serve customers at their location. Set it up as a service-area business, list the areas you cover and hide your address. You still need a real address for verification, but it won't be shown publicly.</p>
+<h3>Should my developer or agency own my Google Business Profile?</h3>
+<p>No. The business should be the primary owner, with developers and agencies added as managers. That way you keep the profile and its reviews if you change agency, and you can remove access at any time.</p>
+
+<p>Want your Google Business Profile and website working together? I can audit the profile, fix categories and details, set up matching service and location pages with schema, and give you a simple routine to keep it fresh. See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -2825,59 +2932,130 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'website-maintenance-cost-india',
-    seoTitle: 'Website Maintenance Cost in India: What\'s Included',
-    title: 'Website Maintenance Cost in India: What You Pay For and What\'s Included',
-    description: 'Website maintenance cost in India: typical ranges, what a WordPress maintenance plan should include, what counts as extra and how to choose the right plan.',
+    seoTitle: 'Website Maintenance Cost in India: Monthly and Yearly Costs',
+    title: 'Website Maintenance Cost in India: Monthly Plans, Yearly Running Costs and What\'s Included',
+    description: 'Website maintenance cost in India: typical monthly plan prices, yearly WordPress running costs, what packages include, what costs extra and how to choose.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Pricing',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
-<p>Once your website is live, it needs ongoing care: updates, backups, security and small changes. Many business owners are unsure what maintenance should cost or include. Here's a clear breakdown.</p>
+<p>For small and medium WordPress websites in India, freelance maintenance plans typically cost about <strong>₹1,500 to ₹6,000 per month</strong>, depending on the size of the site, how often it changes and whether it's an online store. Agencies and large or business-critical sites cost more. On top of maintenance, every site has yearly running costs: a domain (₹500 to ₹1,200 a year), hosting (₹2,500 to ₹15,000 a year) and any premium theme or plugin licences.</p>
+<p>These are typical market ranges, not fixed prices. Below is what each cost covers, what maintenance packages include, what moves the price and how to compare plans. For my own plans, you get a fixed monthly quote after a free review of your site; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 
-<h2>Typical costs</h2>
-<p>For small and medium WordPress websites in India, freelance maintenance plans typically range from about <strong>₹1,500 to ₹6,000 per month</strong>, depending on the size of the site, how often changes are needed, and whether it's an online store. Agencies and large or business-critical sites cost more. These are typical market ranges, not fixed prices.</p>
+<h2>The monthly and yearly cost of running a WordPress website</h2>
+<p>WordPress itself is free. What you pay for after launch is the infrastructure and the care:</p>
+<table>
+  <thead><tr><th>Item</th><th>Typical cost</th><th>How often</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Domain name (.com / .in)</td><td>₹500 – ₹1,200</td><td>Yearly</td><td>Renew on time; an expired domain takes the site and email down</td></tr>
+    <tr><td>Hosting (shared / managed)</td><td>₹2,500 – ₹15,000</td><td>Yearly</td><td>Check the renewal price, not just the first-year offer (see <a href="/blog/wordpress-hosting-price-india/">WordPress hosting prices in India</a>)</td></tr>
+    <tr><td>Premium theme or Elementor Pro</td><td>₹0 – ₹6,000</td><td>Yearly (optional)</td><td>Lapsed licences stop updates</td></tr>
+    <tr><td>Other premium plugins</td><td>Varies by vendor</td><td>Usually yearly</td><td>Check current pricing on the vendor's site</td></tr>
+    <tr><td>SSL certificate</td><td>Usually free with hosting</td><td>Renews automatically</td><td>Paid certificates are rarely needed</td></tr>
+    <tr><td>Maintenance plan</td><td>₹1,500 – ₹6,000</td><td>Monthly (optional)</td><td>Or do it yourself, or pay per job</td></tr>
+  </tbody>
+</table>
+<p>So the <strong>yearly cost of a WordPress website</strong> without a maintenance plan is mainly your domain and hosting renewals plus any licences, and the <strong>monthly cost</strong> is whatever maintenance arrangement you choose on top. Watch for hosting renewals, which often cost much more than the discounted first year; see <a href="/blog/hosting-renewal-price-increase/">why hosting renewals cost more</a> and <a href="/blog/hidden-website-costs/">hidden website costs</a>. For what it costs to build the site in the first place, see the <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a>.</p>
 
-<h2>What a good maintenance plan includes</h2>
+<h2>What a website maintenance package includes</h2>
+<p>Whatever it's called (maintenance plan, care plan, support package or AMC), a good WordPress package should cover these:</p>
+<table>
+  <thead><tr><th>Task</th><th>Typical frequency</th><th>Why it matters</th></tr></thead>
+  <tbody>
+    <tr><td>WordPress, theme and plugin updates, applied after a backup and then checked</td><td>Weekly or fortnightly</td><td>Security fixes and compatibility</td></tr>
+    <tr><td>Off-site backups, with restores when needed</td><td>Daily, or more often for stores</td><td>Recovery from hacks, mistakes or server failure</td></tr>
+    <tr><td>Security scans and login protection</td><td>Ongoing</td><td>Catch problems early</td></tr>
+    <tr><td>Uptime monitoring</td><td>Every few minutes</td><td>Know about downtime before customers do</td></tr>
+    <tr><td>Form, checkout and broken link checks</td><td>Monthly, and after updates</td><td>Make sure enquiries and orders still arrive</td></tr>
+    <tr><td>Speed checks</td><td>Monthly</td><td>Spot slowdowns after updates or new content</td></tr>
+    <tr><td>Small content changes</td><td>Within agreed time each month</td><td>Prices, text, images and notices kept current</td></tr>
+    <tr><td>Monthly report</td><td>Monthly</td><td>Shows the work is actually happening</td></tr>
+  </tbody>
+</table>
+<p>The full breakdown is in <a href="/blog/monthly-website-maintenance-plan/">what a monthly maintenance plan should include</a>.</p>
+
+<h2>Types of website maintenance packages</h2>
+<p>Most providers offer a few levels. Names and inclusions vary, but they usually look like this:</p>
+<table>
+  <thead><tr><th>Package</th><th>Usually includes</th><th>Suits</th></tr></thead>
+  <tbody>
+    <tr><td>Basic</td><td>Updates, backups, security scans and uptime monitoring</td><td>Small brochure sites that rarely change; the lower end of the range</td></tr>
+    <tr><td>Business</td><td>Everything in basic, plus content changes, speed checks, form tests and a report</td><td>Service businesses that update offers, prices or pages regularly</td></tr>
+    <tr><td>Store</td><td>Everything above, plus test orders after updates, order email checks, more frequent backups and database care</td><td>WooCommerce stores; the higher end of the range, or above it for large stores</td></tr>
+    <tr><td>Pay per job</td><td>Fixes and changes quoted individually</td><td>Owners who handle updates themselves and need occasional help</td></tr>
+  </tbody>
+</table>
+<p>Many Indian businesses know this as a website AMC (annual maintenance contract). An AMC paid yearly and a monthly plan can cover exactly the same work; the difference is the billing and how easily you can leave. Month-to-month plans keep the provider earning your business.</p>
+
+<h2>What affects the monthly price</h2>
 <ul>
-  <li><strong>Updates:</strong> WordPress core, themes and plugins, applied safely after a backup</li>
-  <li><strong>Backups:</strong> automatic, stored off-site, with restores when needed</li>
-  <li><strong>Security:</strong> malware scans, firewall and login protection</li>
-  <li><strong>Uptime monitoring:</strong> alerts if the site goes down</li>
-  <li><strong>Performance checks:</strong> speed monitoring and fixes for regressions</li>
-  <li><strong>Small content changes:</strong> text, images and prices, within an agreed amount of time</li>
-  <li><strong>Form and functionality checks:</strong> making sure enquiries still arrive</li>
-  <li><strong>Monthly report:</strong> what was done and anything you should know</li>
+  <li><strong>Type of site:</strong> a WooCommerce store needs test orders, closer database care and faster response than a five-page brochure site</li>
+  <li><strong>Number and type of plugins:</strong> page builders, payment gateways, memberships and booking plugins need more careful updating and testing</li>
+  <li><strong>How much content work you expect:</strong> an hour of changes a month is very different from weekly product uploads</li>
+  <li><strong>Backup frequency and retention:</strong> daily backups kept for a month cost less to run than near real-time backups for a busy store</li>
+  <li><strong>Response time:</strong> how quickly problems are looked at, and whether that includes weekends and festivals</li>
+  <li><strong>Condition of the site:</strong> a neglected site with outdated plugins needs catch-up work before regular maintenance can start</li>
+  <li><strong>Who does it:</strong> freelancers, agencies and hosting companies have different overheads and levels of service</li>
 </ul>
-
-<p>Full breakdown: <a href="/blog/monthly-website-maintenance-plan/">what a monthly maintenance plan should include</a>.</p>
+<p>If you run a store, the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> shows the extra work involved.</p>
 
 <h2>What usually costs extra</h2>
 <ul>
-  <li>New pages, new features or redesigns</li>
-  <li>Large content uploads (for example hundreds of products)</li>
-  <li>Premium plugin licences and hosting fees</li>
-  <li>Cleanup of a site that was already hacked before the plan started</li>
+  <li>New pages, new features, redesigns and larger design changes</li>
+  <li>Large content uploads, such as hundreds of products</li>
+  <li>Premium plugin licences and hosting fees, which are paid to the vendors</li>
+  <li>Cleaning up a site that was already hacked before the plan started; see <a href="/wordpress-malware-removal/">WordPress malware removal</a></li>
+  <li>SEO campaigns, content writing and ad management, which are separate services</li>
 </ul>
+<p>The line between keeping a site healthy and actively growing it is explained in <a href="/blog/website-maintenance-vs-management/">website maintenance vs management</a>.</p>
 
-<p>Need more than upkeep? See <a href="/blog/website-maintenance-vs-management/">maintenance vs management</a>.</p>
+<h2>Freelancer, agency, host or do it yourself?</h2>
+<table>
+  <thead><tr><th>Option</th><th>What you get</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Do it yourself</td><td>No monthly fee; free tools such as UpdraftPlus and a free uptime monitor cover the basics</td><td>Your time, and knowing what to do when an update breaks something</td></tr>
+    <tr><td>Hosting company</td><td>Automatic updates and server backups on many managed plans</td><td>Updates usually aren't followed by checks of your forms, layout or checkout</td></tr>
+    <tr><td>Freelancer</td><td>Direct contact with the person doing the work, usually at lower cost</td><td>Make sure there's a backup plan if they're unavailable</td></tr>
+    <tr><td>Agency</td><td>A team, formal processes and broader services</td><td>Higher cost, and you may deal with an account manager rather than the developer</td></tr>
+  </tbody>
+</table>
+<p>If you'd like to try doing it yourself first, use the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>.</p>
 
-<h2>Why maintenance is worth it</h2>
+<h2>Is website maintenance worth the cost?</h2>
 <ul>
-  <li><strong>Prevention is cheaper than repair.</strong> Cleaning a hacked site or rebuilding after data loss costs far more than regular upkeep.</li>
-  <li><strong>Lost enquiries are invisible.</strong> A broken contact form can cost leads for weeks before anyone notices.</li>
-  <li><strong>Speed and SEO decay.</strong> Sites slow down over time without attention.</li>
+  <li><strong>Prevention is cheaper than repair.</strong> Cleaning a hacked site or rebuilding after data loss usually costs far more than months of regular upkeep, and takes the site offline while it happens.</li>
+  <li><strong>Lost enquiries are invisible.</strong> A contact form that stops sending can cost leads for weeks before anyone notices.</li>
+  <li><strong>Sites slow down over time.</strong> New plugins, images and content gradually drag speed down without someone checking.</li>
+  <li><strong>Renewals get missed.</strong> An expired domain or premium licence can take a site or a key feature offline without warning.</li>
 </ul>
 
-<h2>How to choose a plan</h2>
+<h2>How to choose a maintenance plan</h2>
 <ol>
-  <li>Check exactly what's included, especially how many content changes per month</li>
-  <li>Ask how updates are tested and how quickly problems are fixed</li>
-  <li>Confirm backups are stored off-site and that restores are included</li>
-  <li>Prefer month-to-month plans so you're not locked in</li>
+  <li>Ask exactly what's included each month, especially how much content work, and what happens to unused time</li>
+  <li>Ask how updates are tested and what happens if one breaks the site</li>
+  <li>Confirm backups are stored off-site, separate from your hosting, and that restores are included</li>
+  <li>Ask for a sample monthly report</li>
+  <li>Prefer month-to-month terms so you're not locked in</li>
+  <li>Make sure you keep ownership of your hosting, domain and admin access</li>
 </ol>
+<p>More questions and red flags are in <a href="/blog/choose-wordpress-maintenance-provider/">how to choose a WordPress maintenance provider</a>.</p>
 
-<h2>DIY or hand it over?</h2>
-<p>You can do basic maintenance yourself with our <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>. If you'd rather focus on your business, a <a href="/wordpress-maintenance/">maintenance plan</a> makes sure it happens every month without you having to remember.</p>
+<h2>FAQs</h2>
+<h3>How much does website maintenance cost in India?</h3>
+<p>Freelance WordPress maintenance plans for small and medium sites typically cost about ₹1,500 to ₹6,000 a month. Simple brochure sites sit at the lower end and WooCommerce stores at the higher end. Agencies, large sites and business-critical sites cost more.</p>
+<h3>What is the monthly cost of a WordPress website?</h3>
+<p>WordPress has no monthly fee of its own. If you pay for hosting yearly, the only monthly cost is a maintenance plan, typically ₹1,500 to ₹6,000 a month from a freelancer, or nothing if you maintain the site yourself.</p>
+<h3>What is the yearly cost of a WordPress website?</h3>
+<p>At minimum, your domain (about ₹500 to ₹1,200 a year) and hosting (about ₹2,500 to ₹15,000 a year), plus any premium theme or plugin licences, such as a premium theme or Elementor Pro at up to about ₹6,000 a year. Add a maintenance plan if you want someone to handle updates, backups and security.</p>
+<h3>What do website maintenance packages include?</h3>
+<p>A good package covers tested updates, off-site backups with restores, security scans, uptime monitoring, form and checkout checks, speed checks, a set amount of small content changes and a monthly report. New features, redesigns and large uploads are usually extra.</p>
+<h3>Is a website AMC better than a monthly maintenance plan?</h3>
+<p>Not necessarily; they can cover the same work. An annual contract may suit your accounts, but a month-to-month plan is easier to leave if the service isn't good. Compare what's actually done each month rather than the billing period.</p>
+<h3>Can I maintain my WordPress website myself?</h3>
+<p>Yes, if you're comfortable taking backups, updating carefully and fixing problems when an update breaks something. Use a checklist, free tools for backups and uptime monitoring, and set aside time every week or two. Many owners hand it over once the site becomes important to their business.</p>
+
+<p>Want your site looked after every month without having to think about it? My maintenance plans cover tested updates, off-site backups, security and uptime monitoring, small content changes and a monthly report, month to month, with a fixed quote after a free review of your site. See <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
@@ -5626,67 +5804,136 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'update-wordpress-safely',
-    seoTitle: 'How to Update WordPress Safely (Without Breaking It)',
-    title: 'How to Update WordPress Safely Without Breaking Your Site',
-    description: 'Update WordPress safely without breaking your site: backups, staging, update order, testing key pages and forms, and what to do if an update goes wrong.',
+    seoTitle: 'How to Update WordPress Safely: Best Practices and Steps',
+    title: 'How to Update WordPress Safely: Core, Plugins and Themes Without Breaking Your Site',
+    description: 'How to update WordPress safely: backups, staging, the right update order, testing, rolling back a bad update, and best practices for plugins and themes.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
-<p>Updates keep WordPress secure and working, but a careless update can break layouts, forms or checkout. Many site owners avoid updates for that reason, which is far riskier. Here's a safe, repeatable process.</p>
+<p>To update WordPress safely, take a full backup first, check the changelog for major versions, test big updates on a staging copy, then update one thing at a time at a quiet hour: plugins, then your theme, then WordPress core. After each important update, test your key pages, forms and checkout while logged out. If something breaks, roll back that single update or restore the backup.</p>
+<p>That routine takes a few minutes on a small site and prevents most update problems, or makes them quick to undo. Below is the full process, the commands developers use, how to recover from a bad update and the extra care WooCommerce and page builders need. If you'd rather not do it yourself, updates with a backup first and checks afterwards are the core of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 
 <h2>Why updates matter</h2>
-<p>Outdated plugins and themes are the most common way WordPress sites get hacked. Updates also fix bugs and keep your site compatible with new PHP versions and browsers.</p>
+<p>Outdated plugins and themes are one of the most common ways WordPress sites get hacked, because once a security fix is public, attackers know exactly what to look for on sites that haven't installed it. Updates also fix bugs and keep your site working with new PHP versions and browsers. Skipping them doesn't avoid risk; it piles it up, and a site that is many versions behind is much harder to update later.</p>
 
-<h2>Before updating</h2>
-<ol>
-  <li><strong>Take a full backup</strong> of files and database. See the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</li>
-  <li><strong>Read the changelog</strong> for major updates, especially for page builders, WooCommerce and your theme.</li>
-  <li><strong>Use a staging site</strong> for major updates on important sites. See <a href="/blog/staging-sites-explained/">staging sites explained</a>.</li>
-  <li><strong>Pick a quiet time</strong>, not during a sale or campaign.</li>
-</ol>
+<h2>The safe update process at a glance</h2>
+<table>
+  <thead><tr><th>Step</th><th>What to do</th><th>Tools</th></tr></thead>
+  <tbody>
+    <tr><td>1. Back up</td><td>Files and database, stored off the server</td><td>UpdraftPlus, your host's backups</td></tr>
+    <tr><td>2. Check</td><td>Major or minor? Changelog, PHP requirement, licence</td><td>Dashboard &gt; Updates, "View details"</td></tr>
+    <tr><td>3. Stage</td><td>Test major updates on a copy of the site</td><td>WP Staging, host staging</td></tr>
+    <tr><td>4. Update</td><td>One at a time, in a sensible order, at a quiet hour</td><td>Dashboard or WP-CLI</td></tr>
+    <tr><td>5. Test</td><td>Pages, forms, checkout and the editor, logged out</td><td>A private browser window</td></tr>
+    <tr><td>6. Watch</td><td>Errors, emails and orders over the next day</td><td>Error log, uptime monitor</td></tr>
+  </tbody>
+</table>
 
-<h2>A sensible update order</h2>
-<ol>
-  <li>Plugins (one at a time for important ones)</li>
-  <li>Theme</li>
-  <li>WordPress core</li>
-</ol>
-<p>Updating one thing at a time makes it easy to see what caused any problem.</p>
-
-<h2>After updating: test</h2>
+<h2>Step 1: Take a backup you can actually restore</h2>
+<p>A backup is only useful if it's recent, complete and stored somewhere other than the server it protects.</p>
 <ul>
-  <li>Homepage and a few key pages on desktop and mobile</li>
-  <li>Contact forms, and check the email actually arrives</li>
-  <li>For stores: add to cart, checkout and a test payment</li>
-  <li>Logins, menus and any special features (bookings, calculators)</li>
+  <li><strong>Back up both files and the database.</strong> The database holds your content and settings; files hold plugins, themes and uploads.</li>
+  <li><strong>Store a copy off-site,</strong> for example UpdraftPlus sending backups to Google Drive or Dropbox, in addition to your host's backups.</li>
+  <li><strong>Check the date</strong> of the latest backup before you click update, and take a fresh one if it's more than a day old on a busy site.</li>
+  <li><strong>Know how to restore it.</strong> Try a restore on staging once, so you're not learning during an emergency; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</li>
 </ul>
 
-<p>Specific fixes: <a href="/blog/fix-wordpress-critical-error/">the critical error</a> and <a href="/blog/elementor-layout-broken-after-update/">Elementor layouts broken after an update</a>.</p>
-
-<h2>If something breaks</h2>
-<ol>
-  <li>Don't panic or keep changing things</li>
-  <li>Identify the update that caused it and roll that plugin back, or restore the backup</li>
-  <li>Check for a fix from the plugin developer, or wait for a patch before updating again</li>
-  <li>If you see a "critical error" message, WordPress recovery mode or hosting access can disable the faulty plugin</li>
-</ol>
-
-<p>Seeing an error message? See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
-
-<p>Don't forget the server side: <a href="/blog/update-php-version-wordpress/">update your PHP version safely</a>.</p>
-
-<h2>Automatic updates: yes or no?</h2>
+<h2>Step 2: Check what's being updated</h2>
+<p>Go to Dashboard &gt; Updates and look at what's waiting. The version number tells you how careful to be:</p>
 <ul>
-  <li><strong>Minor core security releases:</strong> usually safe to auto-update</li>
-  <li><strong>Small, well-maintained plugins:</strong> often fine to auto-update</li>
-  <li><strong>Page builders, WooCommerce, theme and major versions:</strong> better updated manually after a backup and test</li>
+  <li><strong>Minor updates</strong> change the last number (6.8.1 to 6.8.2, or a plugin's 3.2.4 to 3.2.5). They're mostly fixes and low risk.</li>
+  <li><strong>Major updates</strong> change the first numbers (WordPress 6.8 to 6.9, or a plugin's 3.x to 4.0). Read the changelog through the plugin's "View version details" link for breaking changes and new requirements.</li>
+  <li><strong>PHP requirements:</strong> a new version may need a newer PHP version than your host runs; see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a>.</li>
+  <li><strong>Premium plugins and themes</strong> often need an active licence before they'll update. An expired licence quietly leaves you on an old version.</li>
+  <li><strong>WooCommerce stores:</strong> check WooCommerce &gt; Status for outdated template overrides in your theme, which can break after a WooCommerce update.</li>
 </ul>
 
-<p>Not sure which parts to leave on automatic? See <a href="/blog/wordpress-auto-updates/">whether to turn on WordPress auto-updates</a> for core, plugins and themes.</p>
+<h2>Step 3: Test major updates on staging</h2>
+<p>A staging site is a private copy of your site where you can update and test without visitors seeing anything. Many hosts, including Hostinger on some plans, have one-click staging, and the WP Staging plugin can create one on most hosts. See <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+<p>You don't need staging for every small update. Use it for:</p>
+<ul>
+  <li>Major WordPress core releases</li>
+  <li>Major versions of WooCommerce, page builders (Elementor, Divi and so on) and your theme</li>
+  <li>Payment gateway, membership or booking plugins</li>
+  <li>PHP version changes</li>
+  <li>Any site that has gone months without updates</li>
+</ul>
 
-<h2>Make it routine</h2>
-<p>Check for updates weekly or fortnightly. If you'd rather not deal with it, a <a href="/wordpress-maintenance/">maintenance plan</a> covers updates, testing and rollbacks for you.</p>
+<h2>Step 4: Update in the right order</h2>
+<ol>
+  <li><strong>Plugins,</strong> one at a time for important ones such as WooCommerce, page builders, forms and payment plugins; small utility plugins can go together</li>
+  <li><strong>Theme,</strong> including any plugins bundled with a premium theme</li>
+  <li><strong>WordPress core</strong></li>
+</ol>
+<p>Plugin updates often add compatibility for the newest WordPress version, so updating them first is usually safest. The exception: if a plugin update says it requires a newer WordPress version, update core first. Either way, one change at a time means you know exactly what caused a problem.</p>
+<p>Developers with SSH access can do the same with WP-CLI, which also makes it easy to update a single plugin and see the result:</p>
+<pre><code>wp plugin list --update=available
+wp plugin update woocommerce
+wp theme update --all
+wp core update
+wp core update-db</code></pre>
+<p>Some plugins, WooCommerce and Elementor among them, also need a database update after a major version. When the dashboard shows that notice, run it once you've confirmed your backup.</p>
+
+<h2>Step 5: Test after updating</h2>
+<p>Clear your caching plugin, host and CDN caches, then open a private window so you see what visitors see:</p>
+<ul>
+  <li>The homepage and your most important pages, on desktop and mobile</li>
+  <li>Every contact form, and check the email actually arrives</li>
+  <li>For stores: add to cart, checkout and a test payment, plus the order emails</li>
+  <li>The page builder editor opens and saves</li>
+  <li>Logins, menus, search and special features such as bookings or calculators</li>
+</ul>
+<p>To catch hidden PHP errors, a developer can log them to a file without showing them to visitors by adding this to wp-config.php, then removing it afterwards:</p>
+<pre><code>define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );</code></pre>
+<p>Errors are then written to wp-content/debug.log. Tools &gt; Site Health is also worth a look after a big update.</p>
+
+<h2>What to do if an update breaks your site</h2>
+<ol>
+  <li><strong>Stop changing things.</strong> Note what you updated and what broke.</li>
+  <li><strong>Get back into the dashboard.</strong> For "There has been a critical error", WordPress emails the admin a recovery mode link that lets you log in with the faulty plugin paused; see <a href="/blog/fix-wordpress-critical-error/">fixing the critical error</a>. If that doesn't arrive, rename the plugin's folder in wp-content/plugins using your host's File Manager, which deactivates it.</li>
+  <li><strong>Roll back that update.</strong> The free WP Rollback plugin can reinstall a previous version of most WordPress.org plugins and themes. For premium plugins, download the older version from the vendor's account area.</li>
+  <li><strong>Or restore the backup</strong> if several things broke or you can't tell what caused it.</li>
+  <li><strong>Find the cause before updating again:</strong> check the plugin's support forum or changelog for a known issue, and look for a conflict with another plugin; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">plugin conflicts</a>.</li>
+  <li><strong>Pause auto-updates</strong> for that plugin until a fixed version is out.</li>
+</ol>
+
+<h2>WooCommerce, page builders and premium themes</h2>
+<ul>
+  <li><strong>WooCommerce:</strong> update during your quietest hours, check that payment gateway and shipping plugins support the new version, run the database update, then place a test order and check the emails and invoice.</li>
+  <li><strong>Elementor and similar builders:</strong> update the free and Pro plugins together, then regenerate CSS from the builder's tools if styles look wrong. If layouts break, see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</li>
+  <li><strong>Premium themes:</strong> they often bundle plugins that update separately, and edits made directly in the theme are lost on update, which is why customisations belong in a child theme; see <a href="/blog/update-premium-theme-safely/">updating a premium theme safely</a>.</li>
+</ul>
+
+<h2>Best practices for WordPress updates</h2>
+<ul>
+  <li>Check for updates weekly or fortnightly, and apply security fixes promptly</li>
+  <li>Don't let a site fall many versions behind; small regular updates are far safer than one giant jump</li>
+  <li>Delete plugins and themes you don't use, so there's less to update and less to attack</li>
+  <li>Keep PHP on a supported version your plugins are tested with</li>
+  <li>Keep a simple log of what was updated and when, so problems can be traced</li>
+  <li>Decide which parts update automatically and which you update by hand; see <a href="/blog/wordpress-auto-updates/">WordPress auto-updates</a></li>
+  <li>Never edit plugin or theme files directly, because updates overwrite them</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>How often should I update WordPress?</h3>
+<p>Check weekly or fortnightly and install security releases as soon as practical. Minor core releases usually install automatically. Larger updates can wait a few days for early bugs to surface, but not months.</p>
+<h3>Should I update plugins or WordPress core first?</h3>
+<p>Usually plugins first, then the theme, then core, because plugin updates often add support for the newest WordPress. If a plugin update says it needs a newer WordPress version, update core first. Always take a backup before either.</p>
+<h3>Is it safe to update WordPress without a backup?</h3>
+<p>Most updates go fine, but when one doesn't, a backup is the difference between a five-minute restore and hours of repair or lost content. Take one every time, especially before WooCommerce, page builder or major core updates.</p>
+<h3>Why is the WordPress update button missing?</h3>
+<p>Common reasons are that your user account isn't an administrator, your host manages updates itself, a developer has disabled updates in wp-config.php (for example with DISALLOW_FILE_MODS), or a premium plugin's licence isn't activated. On a Multisite network, only the Super Admin can update.</p>
+<h3>How do I roll back a WordPress plugin update?</h3>
+<p>Use the free WP Rollback plugin to reinstall a previous version of a WordPress.org plugin, or download the older version from the vendor for premium plugins. If you can't get into the dashboard, rename the plugin's folder over File Manager first. Restoring a backup works when several things changed.</p>
+<h3>Can I pay someone to handle WordPress updates?</h3>
+<p>Yes. A WordPress maintenance plan covers updates with a backup first, testing afterwards and rollback if something breaks, along with security scans, uptime monitoring and small content changes.</p>
+
+<p>Rather not hold your breath every time you click update? I'll keep your WordPress core, theme and plugins updated, take a backup first, check key pages, forms and checkout afterwards, and fix or roll back anything that breaks. See <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
@@ -7564,44 +7811,118 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'ssl-certificate-errors-fix',
-    seoTitle: 'SSL Certificate Errors Explained (and How to Fix Them)',
-    title: 'SSL Certificate Errors Explained: "Not Secure" Warnings and How to Fix Them',
-    description: 'SSL certificate errors: why browsers flag your site as not secure, from expired certificates and mixed content to wrong domains, and how to fix each one.',
+    seoTitle: 'SSL Certificate Errors: What They Mean and How to Fix Them',
+    title: 'SSL Certificate Errors Explained: "Not Secure", "Connection Not Private" and How to Fix Them',
+    description: 'SSL certificate errors explained: what Not Secure, connection not private and NET::ERR_CERT warnings mean, and how to fix each one on a WordPress site.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Security',
     related: ['wordpress-migration', 'wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
-<p>A "Not secure" label or a full-screen certificate warning scares visitors away instantly and damages trust. The good news: SSL problems are usually quick to fix once you know the cause.</p>
+<p>An SSL certificate error means the browser couldn't confirm a secure connection to the website. Usually the certificate is missing, expired, issued for a different domain name, not trusted, or the page loads some files over insecure http. On a WordPress site, most SSL issues are fixed in your hosting panel by issuing a free certificate that covers both the www and non-www addresses, then forcing HTTPS and updating old http links.</p>
+<p>Below, each common error message is matched to its cause and fix, with the WordPress, Hostinger and Cloudflare settings involved. If you'd rather someone kept your site updated, monitored and backed up every month so these problems get caught early, see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 
-<h2>"Not secure" in the address bar</h2>
-<p><strong>Cause:</strong> the site loads over http instead of https, or has no certificate.<br><strong>Fix:</strong> install a certificate (most hosts provide free, auto-renewing ones), then redirect all http traffic to https and update the WordPress site URL settings.</p>
+<h2>SSL error messages and what they mean</h2>
+<p>Start with the exact wording. In Chrome, click "Advanced" on the warning page to see the error code; Firefox and Safari use different wording for the same problems.</p>
+<table>
+  <thead><tr><th>What you see</th><th>Usual cause</th><th>Where to fix it</th></tr></thead>
+  <tbody>
+    <tr><td>"Not secure" next to the address</td><td>The site loads over http, or has no certificate</td><td>Hosting panel, then WordPress settings</td></tr>
+    <tr><td>"Your connection is not private" with NET::ERR_CERT_DATE_INVALID</td><td>The certificate has expired (or the visitor's clock is wrong)</td><td>Hosting panel: renew or reissue</td></tr>
+    <tr><td>NET::ERR_CERT_COMMON_NAME_INVALID</td><td>The certificate doesn't cover this exact name, such as www or a subdomain</td><td>Reissue covering every version of the domain</td></tr>
+    <tr><td>NET::ERR_CERT_AUTHORITY_INVALID</td><td>Self-signed or untrusted certificate, or a missing intermediate certificate</td><td>Install a proper certificate with its full chain</td></tr>
+    <tr><td>ERR_SSL_PROTOCOL_ERROR or ERR_SSL_VERSION_OR_CIPHER_MISMATCH</td><td>No certificate on this hostname, or a server or CDN configuration problem</td><td>Host or Cloudflare settings</td></tr>
+    <tr><td>No padlock, or "parts of this page are not secure"</td><td>Mixed content: images, scripts or fonts loading over http</td><td>Content, theme and page builder settings</td></tr>
+    <tr><td>ERR_TOO_MANY_REDIRECTS after switching to HTTPS</td><td>A redirect loop, often Cloudflare's Flexible SSL mode</td><td>Cloudflare SSL mode or redirect rules</td></tr>
+  </tbody>
+</table>
+<p>Full-page warnings such as "Deceptive site ahead" are not SSL problems. They mean Google has flagged malware or phishing; see <a href="/blog/signs-wordpress-site-hacked/">how to tell if your WordPress site has been hacked</a>.</p>
 
-<h2>"Your connection is not private" / certificate expired</h2>
-<p><strong>Cause:</strong> the certificate expired and didn't auto-renew.<br><strong>Fix:</strong> renew or reissue it in your hosting panel. Check that auto-renewal is working. Renewals can fail when DNS points somewhere unexpected.</p>
+<h2>Is it the website or the visitor's device?</h2>
+<p>Before changing anything, spend two minutes working out where the problem is:</p>
+<ol>
+  <li><strong>Open the site on another device,</strong> ideally a phone on mobile data. If it works there, the problem is probably the first device or network.</li>
+  <li><strong>Check the certificate details.</strong> Click the icon next to the address, then the connection or certificate option, and look at the "valid from" and "valid to" dates and the names it covers.</li>
+  <li><strong>Run a free SSL checker,</strong> such as Qualys SSL Labs' SSL Server Test. It shows the expiry date, every name on the certificate and whether the chain is complete.</li>
+</ol>
+<p>If only one person sees a security certificate problem, often on every website they visit, the cause is usually on their side: a wrong date and time on the device, antivirus software that scans HTTPS traffic, a hotel or office Wi-Fi login page, or a very old device that doesn't trust newer certificates.</p>
 
-<h2>Certificate doesn't match the domain</h2>
-<p><strong>Cause:</strong> the certificate covers <code>example.com</code> but not <code>www.example.com</code> (or vice versa), or a new domain was added without a certificate.<br><strong>Fix:</strong> issue a certificate covering all versions of your domain and redirect everything to one preferred version.</p>
+<h2>How to fix each SSL certificate error</h2>
 
-<h2>Padlock missing or "partially secure" (mixed content)</h2>
-<p><strong>Cause:</strong> the page loads over https, but some images, scripts or styles still load over http.<br><strong>Fix:</strong> update old http links in content, theme settings and page builder sections to https. Tools and plugins can find and fix mixed content.</p>
+<h3>"Not secure": no certificate, or the site is still on http</h3>
+<ol>
+  <li><strong>Install a certificate.</strong> Most hosts include a free Let's Encrypt certificate. In Hostinger's hPanel, look in the website's Security section for SSL; in cPanel, use SSL/TLS Status and run AutoSSL. Make sure it covers both example.com and www.example.com.</li>
+  <li><strong>Update WordPress.</strong> In Settings &gt; General, change both WordPress Address and Site Address to https.</li>
+  <li><strong>Force HTTPS.</strong> Use your host's "Force HTTPS" option if it has one. Otherwise, on Apache or LiteSpeed servers, add this to .htaccess above the # BEGIN WordPress block:</li>
+</ol>
+<pre><code>RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
+<p>If the site sits behind Cloudflare or another proxy, use the host's or Cloudflare's redirect setting instead, because this rule can cause a loop there. The free Really Simple SSL plugin can handle the redirect and many mixed content issues for you, which is handy, but fixing the stored http links properly is cleaner in the long run.</p>
 
-<p>For a step-by-step clean-up, see <a href="/blog/mixed-content-warnings-fix/">how to fix mixed content warnings in WordPress</a>.</p>
-
-<h2>Warnings after moving hosts or domains</h2>
-<p><strong>Cause:</strong> the certificate wasn't issued on the new host before DNS switched, or DNS still points to the old server.<br><strong>Fix:</strong> issue the certificate on the new host and check DNS records. Plan this step in any migration; see <a href="/wordpress-migration/">WordPress migration</a>.</p>
-
-<h2>Google or browser "deceptive site" warnings</h2>
-<p>These aren't SSL problems. They usually mean malware or phishing was detected. See <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site is hacked</a>.</p>
-
-<h2>Prevent SSL problems</h2>
+<h3>Expired certificate (NET::ERR_CERT_DATE_INVALID)</h3>
+<p>Free certificates only last a few months and renew automatically, so an expired one means renewal failed. Common reasons:</p>
 <ul>
-  <li>Use hosting with automatic certificate renewal</li>
-  <li>Monitor certificate expiry; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring</a></li>
-  <li>Keep one preferred domain version with proper redirects</li>
-  <li>Check for mixed content after redesigns</li>
+  <li>The domain's A record no longer points to the server that issued the certificate, for example after a host change or a DNS edit</li>
+  <li>A CAA record in DNS doesn't allow the certificate authority your host uses</li>
+  <li>A paid certificate reached the end of its term and nobody renewed it</li>
+</ul>
+<p>Check your DNS points to the right server, then reissue the certificate from the hosting panel. Renewal usually works again once DNS is correct. If the browser still shows the old expiry date, clear its cache or test in a private window.</p>
+
+<h3>Wrong domain (NET::ERR_CERT_COMMON_NAME_INVALID)</h3>
+<p>The certificate is valid, just not for the name in the address bar. Typical cases are a certificate for example.com but not www.example.com, a new subdomain without its own certificate, or a domain recently added to the hosting account. Reissue the certificate to cover every name you use, or a wildcard certificate for many subdomains, then pick one preferred version (www or non-www) and 301-redirect the other to it.</p>
+
+<h3>Untrusted certificate (NET::ERR_CERT_AUTHORITY_INVALID)</h3>
+<ul>
+  <li><strong>Self-signed or default certificate:</strong> the server is showing its own placeholder certificate, often because the domain isn't properly added to the hosting account yet</li>
+  <li><strong>Missing intermediate certificate:</strong> when a paid certificate is installed by hand, the CA bundle (intermediate certificates) must be pasted in too, or some browsers and phones won't trust it</li>
 </ul>
 
-<p>For the basics of how domains, hosting and SSL fit together, see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+<h3>Mixed content: the padlock is missing</h3>
+<p>The page itself is on HTTPS, but something on it loads over http: usually old image links in posts, a logo or background set in the theme or page builder, or a hard-coded script. Open the browser's developer tools and check the Console for "Mixed Content" warnings, which name each file.</p>
+<p>To update old links across the database, take a backup and use a search-and-replace tool that handles serialised data, such as the Better Search Replace plugin, Elementor's Tools &gt; Replace URL, or WP-CLI:</p>
+<pre><code>wp search-replace 'http://example.com' 'https://example.com' --all-tables --dry-run</code></pre>
+<p>Remove --dry-run once the preview looks right. Never do this with a plain SQL find-and-replace, which can break serialised settings. The full process is in <a href="/blog/mixed-content-warnings-fix/">fixing mixed content warnings</a>.</p>
+
+<h3>Redirect loop after switching to HTTPS</h3>
+<p>If the site shows "too many redirects" right after you enabled HTTPS and it uses Cloudflare, check the SSL/TLS mode. Flexible mode talks to your server over http while WordPress redirects to https, so they bounce visitors back and forth. With a valid certificate on the server, Full (strict) fixes it. See <a href="/blog/too-many-redirects-error-fix/">ERR_TOO_MANY_REDIRECTS</a> and the <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare setup guide</a>.</p>
+
+<h3>Warnings after moving hosts</h3>
+<p>Most hosts can only issue a free certificate once the domain points to them, so for a short window after the DNS switch visitors can reach the new server before its certificate exists. Plan for it: lower the DNS TTL beforehand, switch, and issue the certificate straight away, or use Cloudflare or DNS validation to have it ready. This step belongs in every migration plan; see <a href="/blog/migrate-website-to-hostinger/">migrating WordPress to Hostinger</a> or my <a href="/wordpress-migration/">WordPress migration service</a>.</p>
+
+<h2>Do SSL errors hurt SEO?</h2>
+<p>HTTPS is a light ranking signal, but that isn't the real risk. A full-page warning stops almost every visitor, enquiry and sale until it's fixed, and Google's crawler has trouble with an invalid certificate too. After fixing it or moving to HTTPS:</p>
+<ul>
+  <li>Make sure every http and non-preferred URL 301-redirects to the https version</li>
+  <li>Check that canonical tags, the XML sitemap and internal links all use https</li>
+  <li>Use a Domain property in Search Console, which covers http, https, www and non-www together</li>
+</ul>
+
+<h2>How to prevent SSL problems</h2>
+<ul>
+  <li>Use hosting with automatic certificate renewal, and keep the domain's DNS pointing where the certificate is issued</li>
+  <li>Monitor certificate expiry; many uptime monitors can alert you before it lapses, see <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a></li>
+  <li>Keep one preferred version of the domain with proper redirects</li>
+  <li>Check for mixed content after redesigns, theme changes and migrations</li>
+  <li>Only turn on HSTS once HTTPS has been stable for a while, because it makes browsers refuse plain http for a long time</li>
+  <li>Keep a note of where your domain, DNS and hosting are managed; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a></li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What causes SSL certificate errors?</h3>
+<p>The usual causes are a missing certificate, an expired one that failed to renew, a certificate that doesn't cover the exact domain name, an untrusted or incomplete certificate chain, and pages that load files over http. On the visitor's side, a wrong clock or antivirus software can also trigger warnings.</p>
+<h3>How do I fix "Your connection is not private" on my website?</h3>
+<p>Click "Advanced" to read the error code. NET::ERR_CERT_DATE_INVALID means the certificate expired, so reissue it in your hosting panel after checking your DNS. NET::ERR_CERT_COMMON_NAME_INVALID means it doesn't cover that name, so reissue it to include www and any subdomains. If the error only appears on one device, check that device's date and time first.</p>
+<h3>Why does my site say "Not secure" when I have an SSL certificate?</h3>
+<p>Either the site still loads over http because nothing forces HTTPS, or the page includes mixed content. Set both addresses in Settings &gt; General to https, turn on a redirect to HTTPS, and look for "Mixed Content" warnings in the browser console.</p>
+<h3>Why do I get a security certificate problem on every website?</h3>
+<p>Then the problem is almost certainly your device or network, not the websites. Check the date, time and time zone, try a different network, and temporarily turn off any antivirus feature that scans HTTPS traffic. On public Wi-Fi, you may need to open the network's login page first.</p>
+<h3>Is a free SSL certificate good enough for a business website?</h3>
+<p>For most business websites and online stores, yes. A free Let's Encrypt certificate encrypts the connection just as well as a paid one. Paid certificates add things like business validation and a warranty, but browsers no longer show a special green bar for them, so visitors see the same padlock.</p>
+<h3>How long does SSL take to start working?</h3>
+<p>Issuing a certificate usually takes minutes once the domain points to your host. If you've just changed DNS, it can take longer until the change has spread, and browsers may cache the old error for a while, so test in a private window.</p>
+
+<p>Still seeing a certificate warning, or not sure which setting is behind it? I can find the cause, fix the certificate and redirects, and clean up mixed content without breaking the site. See <a href="/wordpress-maintenance/">WordPress maintenance</a> for ongoing care, or <a href="/wordpress-migration/">WordPress migration</a> if the problem started after a move.</p>
 `,
   },
   {
@@ -9089,46 +9410,116 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'wordpress-multisite-when-needed',
-    seoTitle: 'WordPress Multisite: When Does a Business Need It?',
-    title: 'WordPress Multisite: When Does a Business Need It?',
-    description: 'WordPress Multisite explained: when it helps franchises, brands or regions, when separate sites work better, plus hosting, plugin and SEO considerations.',
+    seoTitle: 'What Is WordPress Multisite, and When Do You Need It?',
+    title: 'WordPress Multisite: What It Is, When a Business Needs It, and What It Means for SEO',
+    description: 'What WordPress Multisite is, when a business genuinely needs it, when separate sites work better, and how Multisite affects SEO, plugins and hosting.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-migration', 'wordpress-maintenance'],
     body: `
-<p>WordPress Multisite lets you run many websites from one WordPress installation. It sounds convenient, but it adds complexity. Here's when it genuinely helps and when simpler setups are better.</p>
+<p>WordPress Multisite is a built-in WordPress feature that runs a network of websites from one installation. The sites share the same WordPress core, themes, plugins and user accounts, but each has its own content and settings. It suits one team managing many similar sites, such as franchise outlets, branches or departments. For a few unrelated sites, a multilingual site or several locations of one business, a single site or separate installations is usually simpler.</p>
+<p>On SEO, Multisite itself neither helps nor hurts rankings: Google sees each site in the network as a separate website. What matters is how the network is structured and whether each site is set up properly.</p>
+<p>I build and look after WordPress sites of all shapes; if you're planning a network, see <a href="/wordpress-website-development/">WordPress website development</a> and I'll tell you honestly whether Multisite is the right tool.</p>
 
-<h2>How Multisite works</h2>
-<p>One WordPress installation hosts a network of sites, each with its own content and settings, sharing the same core files, themes and plugins. Sites can live on subdomains (city.example.com), subfolders (example.com/city/) or separate domains.</p>
-
-<h2>When it can make sense</h2>
+<h2>What is a WordPress Multisite?</h2>
+<p>A normal WordPress installation runs one website. When you enable Multisite, the same installation can run as many sites as you like, managed from a <strong>Network Admin</strong> dashboard by a <strong>Super Admin</strong>.</p>
 <ul>
-  <li><strong>Franchises or branches</strong> that need their own mini-sites with shared branding</li>
-  <li><strong>Organisations with many departments</strong>, such as schools, universities and hospitals</li>
-  <li><strong>Networks of similar sites</strong> managed by one team with shared themes and plugins</li>
+  <li><strong>Shared:</strong> WordPress core files, installed themes and plugins, and the user table, so one login can work across several sites</li>
+  <li><strong>Separate:</strong> each site's posts, pages, media, menus, widgets and settings, stored in its own database tables and its own uploads folder</li>
+  <li><strong>Controlled centrally:</strong> only the Super Admin can install themes and plugins and run updates; site admins can activate what they're allowed to use</li>
+</ul>
+<p>Sites in a network can live on <strong>subdirectories</strong> (example.com/pune/), <strong>subdomains</strong> (pune.example.com) or their <strong>own domains</strong> through domain mapping, which is built into WordPress.</p>
+
+<h2>Multisite vs separate WordPress sites</h2>
+<table>
+  <thead><tr><th></th><th>Multisite network</th><th>Separate installations</th></tr></thead>
+  <tbody>
+    <tr><td>Updates</td><td>Once for the whole network</td><td>On every site</td></tr>
+    <tr><td>Themes and plugins</td><td>Installed once, controlled by the Super Admin</td><td>Each site chooses its own</td></tr>
+    <tr><td>A bad update or hack</td><td>Can affect every site at once</td><td>Usually affects one site</td></tr>
+    <tr><td>Plugin compatibility</td><td>Not every plugin supports Multisite</td><td>Any plugin works</td></tr>
+    <tr><td>Hosting</td><td>One server carries every site's traffic</td><td>Sites can sit on different plans or hosts</td></tr>
+    <tr><td>Backups and restores</td><td>Restoring one site needs a tool that supports it</td><td>Simple, one site at a time</td></tr>
+    <tr><td>Moving a site elsewhere later</td><td>Possible, but a project</td><td>A normal migration</td></tr>
+  </tbody>
+</table>
+<p>In short, Multisite trades flexibility for central control. That's a good trade when the sites are meant to be alike, and a bad one when they aren't.</p>
+
+<h2>When a business needs Multisite</h2>
+<ul>
+  <li><strong>Franchise or dealer networks</strong> where every outlet gets a site built from the same template, with local contact details, offers and staff, managed by head office; see <a href="/blog/website-for-franchise-brands/">websites for franchise brands</a></li>
+  <li><strong>Schools, colleges and universities</strong> where departments or campuses each publish their own news and pages under one design</li>
+  <li><strong>Hospital groups or multi-brand companies</strong> with several sub-brands that must share design, plugins and governance</li>
+  <li><strong>Regional or campaign microsites</strong> that are launched often from the same template and managed by one team</li>
+  <li><strong>Platforms</strong> where users or members get their own site, which is exactly what Multisite was built for</li>
+</ul>
+<p>The common thread: many sites, one owner, one team, and a strong reason for them to look and work the same.</p>
+
+<h2>When Multisite is the wrong choice</h2>
+<ul>
+  <li><strong>A few unrelated websites.</strong> Two or three sites with different designs and plugins are easier as separate installations, managed together with a dashboard tool if needed.</li>
+  <li><strong>Multiple languages.</strong> A multilingual plugin on one site is usually simpler; see <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</li>
+  <li><strong>Several locations of one business.</strong> Location pages on a single site usually rank and convert better than thin mini-sites; see <a href="/blog/multi-location-business-website/">websites for businesses with multiple branches</a>.</li>
+  <li><strong>Sites for different clients or businesses.</strong> Different owners need separate hosting, billing, access and backups. One client's problem shouldn't take everyone else down.</li>
+  <li><strong>Sites with very different needs,</strong> such as an online store with its own payment and tax setup next to simple brochure sites.</li>
 </ul>
 
-<h2>When it's usually not the right choice</h2>
+<h2>WordPress Multisite SEO</h2>
+<p>Most multi-site WordPress SEO problems come from treating the network as one site. Google doesn't see a network; it sees separate sites, each needing its own signals. My full <a href="/blog/wordpress-multisite-seo/">WordPress Multisite SEO guide</a> covers this in depth; the essentials are below:</p>
+<h3>Subdomains or subdirectories?</h3>
+<p>Google has said it can crawl and rank both, so neither structure is a ranking trick. Subdirectories suit branches or departments of one organisation that should feel like one website. Subdomains suit sites that are genuinely separate in content or audience. Decide before launch, because switching later changes every URL and needs a full set of 301 redirects.</p>
+<h3>SEO plugin settings on each site</h3>
+<p>Yoast SEO and Rank Math both state Multisite support, but titles, meta descriptions, schema details and social images still need setting on each site, even when the plugin is network-activated. Use one SEO plugin across the network so you never get duplicate tags.</p>
+<h3>Sitemaps, robots.txt and Search Console</h3>
+<p>Every site has its own sitemap. Search engines only read robots.txt at the root of a domain, so on a subdirectory network, list each site's sitemap in the root robots.txt or submit each one in Search Console; see <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>. A Domain property in Search Console covers the whole network, and a URL-prefix property per site gives you each site's own reports.</p>
+<h3>Duplicate content across sites</h3>
+<p>Networks make copying easy. Service pages cloned to every outlet with only the city name changed, or template sites launched with sample pages still live, give Google many near-identical pages to choose between. Give each site genuinely local content, and where the same page must appear on several sites, point a canonical tag to the original; see <a href="/blog/duplicate-content-explained/">duplicate content explained</a>.</p>
+<h3>Search engine visibility on each site</h3>
+<p>Each site in a network has its own "Discourage search engines from indexing this site" box under Settings &gt; Reading. A site built for testing and launched with it still ticked won't be indexed, so check it on every new site. If sites are regional language versions of each other, add hreflang too; see <a href="/blog/hreflang-multilingual-seo-india/">hreflang and multilingual SEO</a>.</p>
+
+<h2>Hosting, plugins and performance</h2>
 <ul>
-  <li>Just a few unrelated websites: separate installations are simpler</li>
-  <li>Multiple languages: a multilingual plugin on one site is usually better. See <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress</a>.</li>
-  <li>Several locations for one business: location pages on a single site are often enough</li>
-  <li>Sites needing very different plugins or hosting</li>
+  <li><strong>Hosting:</strong> one server handles every site, so a busy network needs more memory and PHP workers than shared hosting usually gives. Choose a host that explicitly supports Multisite.</li>
+  <li><strong>Network-activated plugins</strong> load on every site, so keep that list short and activate niche plugins only where they're needed.</li>
+  <li><strong>Caching:</strong> page caching and a persistent object cache such as Redis help more on a network, because so much data is shared; see <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</li>
+  <li><strong>Backups:</strong> check that your backup tool supports Multisite and can restore a single site without rolling back the whole network. Not all can, and some only on paid plans.</li>
+  <li><strong>Scheduled tasks:</strong> each site runs its own WP-Cron, so on a large network a real server cron job is more reliable.</li>
 </ul>
 
-<h2>Things to consider</h2>
-<ul>
-  <li><strong>Plugins:</strong> not all plugins support Multisite, and a plugin problem can affect every site</li>
-  <li><strong>Hosting:</strong> one server handles all sites, so resources and backups need planning</li>
-  <li><strong>Moving a site out later</strong> is possible but more work</li>
-  <li><strong>User management:</strong> network admins vs site admins</li>
-  <li><strong>SEO:</strong> each site needs its own titles, sitemaps and structure; avoid duplicating content across sites</li>
-</ul>
+<h2>How to set up WordPress Multisite</h2>
+<p>Take a full backup first, ideally test on staging, and deactivate all plugins, which WordPress asks you to do before creating a network. Then:</p>
+<ol>
+  <li>Add this line to wp-config.php, above the line that says "That's all, stop editing!":
+<pre><code>define( 'WP_ALLOW_MULTISITE', true );</code></pre></li>
+  <li>Go to Tools &gt; Network Setup, choose subdomains or subdirectories, and enter the network title and admin email.</li>
+  <li>WordPress shows code to add to wp-config.php and .htaccess. Copy it exactly; for a subdirectory network it starts like this:
+<pre><code>define( 'MULTISITE', true );
+define( 'SUBDOMAIN_INSTALL', false );
+define( 'DOMAIN_CURRENT_SITE', 'example.com' );
+define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
+  <li>Log in again, then add sites from My Sites &gt; Network Admin &gt; Sites &gt; Add New.</li>
+</ol>
+<p>Two practical notes. On an established site with published posts older than a month, WordPress may only offer subdomains, to avoid URL clashes. And subdomain networks need wildcard subdomains set up in DNS and hosting, which not every shared host allows.</p>
 
-<p>If you already run a network, see <a href="/blog/wordpress-multisite-seo/">WordPress Multisite SEO</a> for setting up sitemaps, Search Console and canonicals on each site.</p>
+<h2>Leaving a network later</h2>
+<p>Moving a site out of a network means exporting its content, media and users, recreating its settings on a new installation and redirecting any URLs that change. Some migration tools can extract a single subsite, often in their paid versions. It's very doable, but it's more work than moving a normal site, which is another reason to only build a network when the sites truly belong together. If you're stuck with a network that no longer fits, I can help untangle it as part of a <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
-<h2>The practical answer</h2>
-<p>Most small and medium businesses are best served by a single, well-structured WordPress site. Multisite is a tool for organisations managing many similar sites with a central team. If you're unsure, describe your setup and a developer can recommend the simplest option that works; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2>FAQs</h2>
+<h3>What is a WordPress Multisite?</h3>
+<p>It's a feature built into WordPress that lets one installation run many websites. The sites share core files, themes, plugins and users, while each keeps its own content, media and settings. A Super Admin manages the whole network from a Network Admin dashboard.</p>
+<h3>Is WordPress Multisite good or bad for SEO?</h3>
+<p>Neither, on its own. Google treats each site in the network as a separate website. Multisite SEO goes well when each site has unique content, its own SEO settings and sitemap, and is checked in Search Console. It goes badly when pages are cloned across sites or test sites are left blocking indexing.</p>
+<h3>Is a subdomain or subdirectory multisite better for SEO?</h3>
+<p>Google can rank both. Subdirectories suit sections of one organisation that should feel like one site; subdomains suit genuinely separate sites. Choose at the start, because changing later means redirecting every URL.</p>
+<h3>Can each site in a Multisite network have its own domain?</h3>
+<p>Yes. Domain mapping is built into WordPress: you point the domain's DNS to your hosting, add it to the hosting account, and set it as the site's address in Network Admin &gt; Sites. Each mapped domain needs its own SSL certificate and its own Search Console property.</p>
+<h3>Should I use Multisite for a multilingual website?</h3>
+<p>Usually not. A multilingual plugin on a single site keeps translations linked, shares media and settings, and is easier to manage. Multisite per language can work for large organisations whose language sites have very different content and teams.</p>
+<h3>Why is my WordPress Multisite slow?</h3>
+<p>Common causes are hosting that is too small for the whole network, too many network-activated plugins, no persistent object cache, a database bloated by many sites, and WP-Cron running on every site. I cover the fixes in <a href="/blog/wordpress-multisite-slow/">why WordPress Multisite is slow</a>. Profile the slowest sites first; the fix is often caching and hosting rather than splitting the network.</p>
+
+<p>Planning a network of sites, or wondering whether the one you have is worth keeping? Tell me how many sites you run and who manages them, and I'll recommend the simplest setup that works. See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/hire-wordpress-developer/">hire me</a> for Multisite development and support.</p>
 `,
   },
   {
@@ -11839,56 +12230,161 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'write-meta-titles-descriptions',
-    seoTitle: 'How to Write Meta Titles & Descriptions That Get Clicks',
-    title: 'How to Write Meta Titles and Descriptions That Get Clicks',
-    description: 'Write meta titles and descriptions that get clicks: length, keywords, benefits, local terms, service and blog page examples and how to test them.',
+    seoTitle: 'How to Write Meta Titles and Descriptions (With Examples)',
+    title: 'How to Write Meta Titles and Descriptions That Get Clicks (With E-commerce Examples)',
+    description: 'How to write meta titles and descriptions that get clicks: lengths, formulas, WordPress setup, and examples for product, category and flash sale pages.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
     body: `
-<p>Your title and meta description are often the first thing people see in Google results. Good ones earn clicks even when you're not the top result; bad ones get skipped.</p>
+<p>A meta title (the title tag) is the clickable headline Google shows for your page, and the meta description is the short summary underneath it. Write titles of roughly 50 to 60 characters that start with the page's main search term and end with your brand, and descriptions of roughly 120 to 155 characters that say what the page offers and give a specific reason to click. Make every one unique.</p>
+<p>Below are the formulas I use, how to set them in Yoast and Rank Math, and a full section on e-commerce: category pages, product pages and flash sale collections, with examples. If you'd rather have someone write and test them across your whole site, it's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 
-<h2>Title tags</h2>
+<h2>What meta titles and descriptions do</h2>
+<p>Both sit in the page's HTML head rather than on the visible page:</p>
+<pre><code>&lt;title&gt;AC Repair in Pune: Same-Day Visits | ABC Cooling&lt;/title&gt;
+&lt;meta name="description" content="AC repair, servicing and gas refilling across Pune, with same-day visits in most areas. Book a technician on WhatsApp."&gt;</code></pre>
 <ul>
-  <li><strong>Lead with the main topic</strong>: the service, product or question</li>
-  <li><strong>Keep it concise:</strong> roughly 50–60 characters, so it isn't cut off</li>
-  <li><strong>Add a differentiator or location</strong> where relevant</li>
-  <li><strong>Include your brand</strong> at the end if space allows</li>
-  <li><strong>Make every title unique</strong> across your site</li>
+  <li><strong>The title</strong> is one of the clearest clues Google uses to understand what a page is about, and it's the headline searchers read first.</li>
+  <li><strong>The meta description</strong> doesn't directly affect rankings. Its job is to persuade the searcher to click your result rather than the next one.</li>
 </ul>
+<p>Google may rewrite a title that is too long or doesn't match the page, and often builds its own snippet from page text. Accurate tags get used more often.</p>
 
-<h2>Meta descriptions</h2>
-<ul>
-  <li><strong>About 140–160 characters</strong></li>
-  <li><strong>Summarise the page and the benefit</strong> of clicking</li>
-  <li><strong>Include a gentle call to action</strong> ("Get a free quote", "See the checklist")</li>
-  <li><strong>Match search intent</strong>, reflecting what the searcher wants</li>
-</ul>
-<p>Google sometimes rewrites descriptions using page text, but a good description still improves your chances.</p>
+<h2>How long should meta titles and descriptions be?</h2>
+<p>Google truncates by pixel width rather than a fixed character count, so treat these as guides:</p>
+<table>
+  <thead><tr><th>Element</th><th>Aim for</th><th>If it's longer</th></tr></thead>
+  <tbody>
+    <tr><td>Meta title</td><td>About 50–60 characters</td><td>Cut off with an ellipsis, or rewritten by Google</td></tr>
+    <tr><td>Meta description</td><td>About 120–155 characters</td><td>Cut off; on mobile the visible part can be shorter</td></tr>
+    <tr><td>H1 heading on the page</td><td>No strict limit</td><td>Not truncated, but it should cover the same topic as the title</td></tr>
+  </tbody>
+</table>
+<p>Wide letters such as W and M take more space than i or l, so a title in capitals can be cut off well before 60 characters. Yoast SEO and Rank Math show a length bar and a search preview as you type. And short is fine: a 40-character title that says exactly what the page is beats a padded 60-character one.</p>
 
-<h2>Examples</h2>
+<h2>How to write a meta title</h2>
+<p>The formula I start with for most pages:</p>
+<pre><code>Main search term + one specific detail or benefit | Brand</code></pre>
+<ol>
+  <li><strong>Find the main query.</strong> Check Search Console for the words the page already gets impressions for, or do some quick <a href="/blog/keyword-research-small-business/">keyword research</a>. Use the searcher's words ("AC repair", not "cooling solutions").</li>
+  <li><strong>Put it first.</strong> The start of the title is what people scan and what survives truncation.</li>
+  <li><strong>Add one specific detail:</strong> a location, a number, a format ("checklist", "price list") or a real differentiator.</li>
+  <li><strong>Add your brand at the end</strong> if there's room. On the homepage, the brand can go first.</li>
+</ol>
 <table>
   <thead><tr><th>Page</th><th>Weak title</th><th>Better title</th></tr></thead>
   <tbody>
-    <tr><td>Service</td><td>Services | ABC Company</td><td>AC Repair in Pune: Same-Day Service | ABC Cooling</td></tr>
-    <tr><td>Blog</td><td>Blog Post 12</td><td>How Much Does a Website Cost in India? (2026 Guide)</td></tr>
-    <tr><td>Product</td><td>Product</td><td>Cold-Pressed Groundnut Oil 1L | Brand Name</td></tr>
+    <tr><td>Service</td><td>Services | ABC Company</td><td>AC Repair in Pune: Same-Day Visits | ABC Cooling</td></tr>
+    <tr><td>Blog post</td><td>Blog Post 12</td><td>How Much Does AC Servicing Cost in Pune? Price Guide</td></tr>
   </tbody>
 </table>
 
-<h2>Common mistakes</h2>
+<h2>How to write meta descriptions that get clicks</h2>
+<p>Writing good meta descriptions is mostly about being specific. A pattern that works for most pages:</p>
+<pre><code>What the page offers + who or where it's for + a concrete detail + a next step</code></pre>
 <ul>
-  <li>The same title on many pages</li>
-  <li>Keyword stuffing ("website design, website designer, website design company…")</li>
-  <li>Titles that don't match the page content</li>
-  <li>Missing descriptions on key pages</li>
-  <li>Clickbait that disappoints visitors</li>
+  <li><strong>Answer the search.</strong> If someone searched "AC service charges Pune", say the page lists charges, not that you "offer quality services".</li>
+  <li><strong>Use the main term naturally.</strong> Google bolds words that match the query.</li>
+  <li><strong>Give a real reason to click:</strong> a price list, delivery areas, cash on delivery, a checklist or a free quote, as long as the page backs it up.</li>
+  <li><strong>End with a call to action that fits the intent:</strong> "See the checklist", "Book on WhatsApp", "Shop the range".</li>
+  </ul>
+<p><strong>Weak:</strong> "Welcome to ABC Cooling. We are a leading company providing the best AC services. Contact us for more details."</p>
+<p><strong>Better:</strong> "AC repair, servicing and gas refilling across Pune. Fixed visit charges, trained technicians and same-day slots in most areas. Book on WhatsApp."</p>
+
+<h2>Meta titles and descriptions for e-commerce pages</h2>
+<p>Stores have hundreds or thousands of pages, so ecommerce meta titles usually come from a mix of templates and hand-written tags. I hand-write the pages that bring in most of the revenue (homepage, top categories, best sellers and sale pages) and use a template for the rest. The wider store setup is in <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a>.</p>
+
+<h3>Category and collection pages</h3>
+<p>Category pages (collections on Shopify) usually target the broadest searches, such as "cotton kurtis for women". Treat them like landing pages:</p>
+<ul>
+  <li>Use the plural product type plus the modifier shoppers use: material, gender, use or size range</li>
+  <li>Use the description for range and practical details: styles, sizes, delivery, COD and returns</li>
+  <li>Add a short intro paragraph on the category page itself, so the tags have content to match</li>
 </ul>
 
-<h2>Improve with data</h2>
-<p>In Search Console, find pages with many impressions but low click-through rates, then rewrite their titles and descriptions. Check again after a few weeks; see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
+<h3>Product pages</h3>
+<ul>
+  <li>Lead with the product name as people search for it, then the key attribute: size, weight, model or material</li>
+  <li>Don't copy the manufacturer's text, which appears on every store selling the item; see <a href="/blog/write-product-descriptions-that-sell/">writing product descriptions that sell</a></li>
+  <li>Avoid typing a fixed price into the description unless it updates automatically. Google can show price, stock and ratings from product <a href="/blog/schema-markup-explained/">structured data</a> instead</li>
+</ul>
 
-<p>Part of the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>.</p>
+<h3>Meta title and description for a sale or flash sale collection</h3>
+<p>A flash sale collection is the trickiest page to write meta tags for, because the offer changes and Google may not recrawl the page before the sale ends. What works:</p>
+<ol>
+  <li><strong>Keep one permanent sale URL</strong>, such as a "Sale" product category, and reuse it for every event instead of creating a new page for each Diwali or end-of-season sale. It builds up links and history, and leaves no dead sale pages behind.</li>
+  <li><strong>Put "sale" and the strongest true offer in the title:</strong> the maximum discount, the category on offer or the occasion.</li>
+  <li><strong>Avoid hard deadlines in the meta tags.</strong> "Ends tonight" can still be showing in Google days later. Use "limited time" or "while stock lasts", and put the exact end time on the page.</li>
+  <li><strong>Update the tags when each sale starts and ends,</strong> switching to an evergreen version between sales, then request indexing in Search Console's URL Inspection tool.</li>
+</ol>
+<p>The discounts themselves are set up with WooCommerce sale prices or coupons; see <a href="/blog/woocommerce-coupons-discounts/">WooCommerce coupons and discounts</a>.</p>
+
+<h3>E-commerce examples</h3>
+<table>
+  <thead><tr><th>Page</th><th>Meta title</th><th>Meta description</th></tr></thead>
+  <tbody>
+    <tr><td>Category or collection</td><td>Cotton Kurtis for Women: Shop Online | YourStore</td><td>Shop cotton kurtis for women in sizes XS to 3XL: straight, A-line and anarkali styles. Easy returns and COD across India.</td></tr>
+    <tr><td>Product</td><td>Wood-Pressed Groundnut Oil, 1 Litre | YourStore</td><td>Unrefined wood-pressed groundnut oil in a 1-litre bottle, made in small batches. Check delivery time and COD for your pincode.</td></tr>
+    <tr><td>Flash sale collection</td><td>Flash Sale: Up to 40% Off Cotton Kurtis | YourStore</td><td>Our flash sale is live: up to 40% off selected kurtis, dupattas and sets for a limited time, while stock lasts. Shop now with COD.</td></tr>
+    <tr><td>Seasonal sale</td><td>Diwali Sale: Dry Fruit Gift Boxes and Hampers | YourStore</td><td>Diwali offers on dry fruit gift boxes, hampers and corporate gift packs, with pan-India delivery and custom gift messages.</td></tr>
+    <tr><td>Sale page between sales</td><td>Sale: Offers on Kurtis, Dupattas and Sets | YourStore</td><td>Current offers and clearance prices on kurtis, dupattas and sets. New sales are announced here first, so bookmark this page.</td></tr>
+  </tbody>
+</table>
+<p>Only use a discount figure that is true for a meaningful part of the collection, and change it when the offer changes.</p>
+
+<h3>Writing meta tags at scale with templates</h3>
+<p>Yoast SEO and Rank Math let you set a default title and description per content type using variables:</p>
+<ul>
+  <li><strong>Yoast SEO:</strong> Yoast SEO &gt; Settings &gt; Content types &gt; Products, and Categories &amp; tags &gt; Product categories</li>
+  <li><strong>Rank Math:</strong> Rank Math SEO &gt; Titles &amp; Meta &gt; Products, and Product Categories</li>
+</ul>
+<p>A simple product template in Rank Math's syntax (Yoast uses double percent signs, such as %%title%%):</p>
+<pre><code>Title: %title% %sep% %sitename%
+Description: Buy %title% online. %excerpt%</code></pre>
+<p>Variable names differ between plugins and versions, so pick them from the plugin's variable list. Templates beat empty descriptions, but your important pages still deserve hand-written tags.</p>
+
+<h2>How to add meta titles and descriptions in WordPress</h2>
+<p>WordPress has no meta description field of its own, so you need an SEO plugin:</p>
+<ul>
+  <li><strong>Yoast SEO:</strong> edit the page or product, open the Yoast SEO box below the editor and fill in SEO title and Meta description.</li>
+  <li><strong>Rank Math:</strong> open the Rank Math panel from the editor's top bar and click Edit Snippet.</li>
+  <li><strong>Categories:</strong> go to Products &gt; Categories (or Posts &gt; Categories), edit the category and scroll down to the SEO section.</li>
+  <li><strong>The WooCommerce Shop page:</strong> edit it under Pages; with some setups it's controlled from the product archive settings instead.</li>
+</ul>
+<p>Then view the page source (right-click, View Page Source, search for &lt;title&gt;) and confirm there is exactly one title tag and one meta description. Two SEO plugins, or a theme adding its own tags, can create duplicates.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>The same title or description on many pages, often from a theme default; see <a href="/blog/duplicate-content-explained/">duplicate content explained</a></li>
+  <li>Keyword stuffing ("website design, website designer, website design company…")</li>
+  <li>Titles that promise something the page doesn't deliver</li>
+  <li>The brand name first on every page, pushing the useful words out of view</li>
+  <li>Sale wording left in the snippet after the sale ends</li>
+</ul>
+
+<h2>Test and improve with Search Console</h2>
+<ol>
+  <li>Open Performance &gt; Search results and switch on Average CTR and Average position.</li>
+  <li>In the Pages tab, sort by impressions. Pages with plenty of impressions but a low click-through rate for their position are your best candidates.</li>
+  <li>Click a page, then the Queries tab, to see what people searched, and make sure the tags answer those queries in their words.</li>
+  <li>Rewrite, note the date, and compare the four weeks before and after at similar positions.</li>
+</ol>
+<p>More in <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>. Titles and descriptions are one part of the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>, so check the rest of the page too.</p>
+
+<h2>FAQs</h2>
+<h3>How long should a meta title and meta description be?</h3>
+<p>Roughly 50 to 60 characters for the title and 120 to 155 for the description. Google cuts them off by pixel width, so titles with wide letters or capitals get truncated sooner. Use the preview in Yoast or Rank Math to check.</p>
+<h3>How do I write a meta title and description for a flash sale collection?</h3>
+<p>Start the title with "Flash Sale" or "Sale", add the strongest true offer and the product category, and end with your brand. In the description, say what's discounted and use "limited time" or "while stock lasts" rather than an exact deadline, because Google may show the snippet after the sale ends. Reuse one permanent sale URL and update the tags for each event.</p>
+<h3>Do meta descriptions help SEO rankings?</h3>
+<p>Not directly; Google has said it doesn't use them as a ranking factor. They still matter because a clear, relevant description can win more clicks from the same position.</p>
+<h3>Why is Google showing a different title or description from the one I wrote?</h3>
+<p>Google rewrites titles that are too long, repetitive or don't match the page, and often writes its own snippet when page text fits the search better. Keep your tags accurate and close to the page's main heading and content, and they'll be used more often.</p>
+<h3>Do I need a unique meta description for every product?</h3>
+<p>Ideally, but on a large store it isn't realistic to write every one by hand. Hand-write your top categories and best sellers, and use a template with the product name and short description for the rest. That's far better than empty or identical descriptions.</p>
+
+<p>If your pages get impressions but few clicks, I can review your titles and descriptions, rewrite the ones that matter and set sensible templates for the rest. See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or for online stores, <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -14677,64 +15173,130 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'google-merchant-center-woocommerce',
-    seoTitle: 'Google Merchant Center for WooCommerce: Free Listings Guide',
-    title: 'Google Merchant Center for WooCommerce: Show Products on Google for Free',
-    description: 'List WooCommerce products on Google Shopping with Merchant Center: free listings, product feeds, requirements, common disapprovals, schema and Shopping ads.',
+    seoTitle: 'Google Merchant Center for WooCommerce: Step-by-Step Setup',
+    title: 'Google Merchant Center for WooCommerce: Set Up Free Listings and Fix Disapprovals',
+    description: 'Set up Google Merchant Center for WooCommerce step by step: Google for WooCommerce vs feed plugins, free listings, GST prices, shipping and disapprovals.',
     date: '2026-09-27',
+    updated: '2026-10-11',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services', 'landing-page-design'],
     body: `
-<p>Google can show your products with images and prices in the Shopping tab and other Google surfaces, and basic listings are free. To appear, you need a Google Merchant Center account and a product feed from your WooCommerce store.</p>
+<p>To show your WooCommerce products on Google for free, create a Google Merchant Center account, verify your website, and sync your products using the free Google for WooCommerce extension (previously called Google Listings &amp; Ads) or a feed plugin. Then set your shipping and return details, make sure prices (including GST) and stock match your product pages, and fix anything Merchant Center flags. Approved products can appear as free listings in the Shopping tab and other Google surfaces, and the same data powers Shopping ads later.</p>
+<p>Here's the full setup, which sync method to choose, the product data Google needs, and how to fix the disapprovals that trip up most Indian stores. If you'd rather have it set up and tested for you, that's part of my <a href="/woocommerce-developer/">WooCommerce development</a> work.</p>
 
-<h2>What free listings are</h2>
-<p>Free product listings can appear in Google's Shopping tab, Images and other places without paying for ads. Paid Shopping ads get more prominent placements, but free listings are a great start for any store.</p>
+<h2>What Merchant Center does for a WooCommerce store</h2>
+<p>Merchant Center is where Google stores your product information. Once your products are approved, they can show with an image, price and store name when people search for what you sell.</p>
+<table>
+  <thead><tr><th></th><th>Free listings</th><th>Shopping ads and Performance Max</th></tr></thead>
+  <tbody>
+    <tr><td>Cost</td><td>Free</td><td>Pay per click, through Google Ads</td></tr>
+    <tr><td>Where products can appear</td><td>Shopping tab, and other surfaces such as Search, Images and Lens</td><td>Prominent ad slots across Search, Shopping, YouTube and more</td></tr>
+    <tr><td>Control</td><td>Little: Google decides when to show them</td><td>Budgets, bids, products and targeting</td></tr>
+    <tr><td>What you need</td><td>Merchant Center and approved products</td><td>The same, plus a linked Google Ads account and conversion tracking</td></tr>
+  </tbody>
+</table>
+<p>Start with free listings. They cost nothing, and getting your product data clean is the hard part of Shopping ads anyway.</p>
 
-<h2>Step 1: Prepare your store</h2>
+<h2>Before you start: get the store ready</h2>
+<p>Google checks your website as well as your products. New stores are often suspended for "misrepresentation" simply because basic trust information is missing. Before connecting anything, make sure you have:</p>
 <ul>
-  <li>Accurate prices and stock status on product pages</li>
-  <li>Clear shipping and return policies; see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds</a></li>
-  <li>Contact information visible on the site</li>
-  <li>Secure checkout (HTTPS)</li>
-  <li>Good product images without watermarks or promotional text over them</li>
+  <li><strong>Contact details</strong> on the site: a phone number, an email address and ideally a business address, matching your Merchant Center business information</li>
+  <li><strong>A clear returns and refunds policy</strong> page; see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce stores</a></li>
+  <li><strong>Shipping information:</strong> where you deliver, costs and typical delivery times</li>
+  <li><strong>Prices that include GST,</strong> since Google expects Indian prices to include tax; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a></li>
+  <li><strong>A working HTTPS checkout</strong> that lets a real customer complete an order</li>
+  <li><strong>No placeholder content:</strong> no "Lorem ipsum", sample products or "coming soon" pages</li>
+  <li><strong>Honest claims:</strong> no fake discounts, invented reviews or "best in India" claims you can't back up</li>
 </ul>
 
-<h2>Step 2: Create a Merchant Center account</h2>
-<p>Add your business information and verify and claim your website, which is easiest through Search Console or Google tag verification.</p>
+<h2>Step 1: Create your Merchant Center account</h2>
+<ol>
+  <li>Sign in at Google Merchant Center with the Google account your business will keep long term, not a developer's personal account.</li>
+  <li>Enter your business name, country (India) and website.</li>
+  <li>Verify and claim your website. Merchant Center offers an HTML tag, a file upload or the Google tag; if you use the Google for WooCommerce extension, it can handle this for you.</li>
+  <li>Fill in business information, customer service contact details and, later, link your Google Ads account.</li>
+</ol>
+<p>Google renames Merchant Center menus fairly often, so if a setting isn't where you expect, use the search or the settings (gear) menu.</p>
 
-<h2>Step 3: Connect a product feed</h2>
-<p>Google's official WooCommerce extension (Google for WooCommerce) can sync your products automatically. Other feed plugins also generate product feeds with more control over fields.</p>
-<p>Important feed fields include title, description, link, image, price, availability, brand and, where applicable, GTIN (barcode) or MPN.</p>
+<h2>Step 2: Choose how to sync your products</h2>
+<table>
+  <thead><tr><th>Method</th><th>How it works</th><th>Best for</th></tr></thead>
+  <tbody>
+    <tr><td>Google for WooCommerce (free, official)</td><td>Connects your store to Merchant Center and Google Ads and syncs products automatically</td><td>Most stores, especially when getting started</td></tr>
+    <tr><td>Feed plugin, such as Product Feed PRO or CTX Feed</td><td>Builds an XML or CSV feed at a URL that Merchant Center fetches on a schedule</td><td>Stores needing detailed field mapping, rules or feeds for several channels</td></tr>
+    <tr><td>Manual file or Google Sheets</td><td>You upload product data yourself</td><td>Only a handful of products that rarely change</td></tr>
+  </tbody>
+</table>
 
-<h2>Step 4: Set shipping and returns in Merchant Center</h2>
-<p>Configure shipping costs and delivery times to match your website. Mismatches cause disapprovals.</p>
+<h3>Setting up Google for WooCommerce</h3>
+<ol>
+  <li>Go to Plugins &gt; Add New, search for "Google for WooCommerce", then install and activate it.</li>
+  <li>Open Marketing &gt; Google for WooCommerce and click Get started.</li>
+  <li>Connect the accounts it asks for: a WordPress.com account, your Google account, and a new or existing Merchant Center account.</li>
+  <li>Choose where you sell (India) and how shipping rates are set: synced from WooCommerce or entered manually.</li>
+  <li>Let the first sync run, then check the product feed screen for warnings.</li>
+</ol>
+<p>Each product's edit screen gets a Google for WooCommerce section for extra attributes such as brand, GTIN, MPN and condition, and a channel visibility setting to keep particular products out of the sync.</p>
 
-<h2>Common reasons products get disapproved</h2>
-<ul>
-  <li>Price or availability on the site doesn't match the feed</li>
-  <li>Missing shipping information</li>
-  <li>Missing or incorrect identifiers</li>
-  <li>Images with overlays or low quality</li>
-  <li>Restricted products or policy violations</li>
-</ul>
-<p>Check the Diagnostics section in Merchant Center and fix issues regularly.</p>
+<h3>Using a feed plugin instead</h3>
+<p>Create the feed in the plugin, map WooCommerce fields to Google's attributes (brand, GTIN, Google product category), and copy the feed URL. In Merchant Center, add a new product data source from a file, choose to fetch it from a link, and schedule a daily fetch. Make sure the fetch runs after your stock and price changes usually happen.</p>
 
-<h2>Product structured data helps too</h2>
-<p>Product schema on your pages (price, availability, reviews) helps Google understand and verify your products; see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+<h2>Step 3: Product data that gets approved</h2>
+<table>
+  <thead><tr><th>Attribute</th><th>What Google wants</th></tr></thead>
+  <tbody>
+    <tr><td>title</td><td>Brand, product type and key attributes: "YourBrand Cotton Kurti for Women, Blue, Size M"</td></tr>
+    <tr><td>description</td><td>Accurate details about the product, without promotional text or other products</td></tr>
+    <tr><td>image_link</td><td>A clear photo on a plain background, with no watermark, logo overlay or "sale" text</td></tr>
+    <tr><td>price and sale_price</td><td>In INR, including GST, exactly as shown on the product page</td></tr>
+    <tr><td>availability</td><td>In stock, out of stock or preorder, matching the site</td></tr>
+    <tr><td>brand, gtin, mpn</td><td>The manufacturer's barcode (GTIN) where one exists; brand and MPN otherwise</td></tr>
+    <tr><td>identifier_exists</td><td>Set to "no" for handmade or own-brand items that genuinely have no GTIN</td></tr>
+    <tr><td>item_group_id</td><td>Links variations (sizes, colours) of the same product; WooCommerce variations handle this</td></tr>
+  </tbody>
+</table>
+<p>Titles matter most for which searches you show up for. Use the words shoppers search, not internal codes, and put the important attributes early.</p>
 
-<h2>Optimise listings</h2>
-<ul>
-  <li>Descriptive titles: brand, product type, key attributes like size or material</li>
-  <li>Detailed, accurate descriptions</li>
-  <li>Multiple quality images</li>
-  <li>Product reviews</li>
-</ul>
+<h2>Step 4: Set shipping and returns</h2>
+<p>In Merchant Center's shipping and returns settings, add a shipping service for India with your costs, any free-shipping threshold and realistic delivery times (handling time plus transit time). Add your return policy: the return window, whether returns are free, and the policy URL. If Google for WooCommerce syncs shipping from your WooCommerce zones, check the result, because complex rules don't always translate. Whatever you enter has to match what a shopper sees at checkout; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 
-<p>The same product data can also power ads and shopping on Instagram and Facebook; see <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to Meta's catalog</a>.</p>
+<h2>Common disapprovals and how to fix them</h2>
+<p>Check the products that need attention in Merchant Center, and the diagnostics in Google for WooCommerce, every week at first:</p>
+<table>
+  <thead><tr><th>Issue</th><th>Usual cause</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Price mismatch</td><td>Feed price excludes GST, a scheduled sale price, a currency switcher, or a cached page showing an old price</td><td>Show GST-inclusive prices, sync sale prices, exclude product pages from long cache lifetimes</td></tr>
+    <tr><td>Availability mismatch</td><td>Stock changed after the last sync, or caching shows old stock</td><td>Sync more often, and purge cache when stock changes</td></tr>
+    <tr><td>Missing shipping</td><td>No shipping service set for India</td><td>Add shipping in Merchant Center or the extension</td></tr>
+    <tr><td>Image issues</td><td>Watermarks, promotional text, collages or placeholder images</td><td>Upload clean main images; keep lifestyle shots as additional images</td></tr>
+    <tr><td>Incorrect identifiers</td><td>Made-up or reused GTINs</td><td>Use real barcodes, or identifier_exists "no" where none exist</td></tr>
+    <tr><td>Misrepresentation</td><td>Missing contact details or policies, unclear business identity, unrealistic claims</td><td>Fix the site, then request a review from Merchant Center</td></tr>
+    <tr><td>Landing page not working</td><td>Deleted products, password protection, or pages blocked in robots.txt</td><td>Keep product URLs live and crawlable</td></tr>
+  </tbody>
+</table>
+<p>Caching is a frequent hidden cause of price and stock mismatches; see <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> for what to exclude.</p>
 
-<h2>Next: Shopping ads</h2>
-<p>Once your feed is clean, the same Merchant Center feed powers Google Shopping and Performance Max campaigns. See <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a>.</p>
+<h2>Product structured data</h2>
+<p>WooCommerce adds basic Product structured data to product pages, and SEO plugins can extend it. Google uses it to cross-check your feed, and Merchant Center's automatic item updates can use it to correct price and availability when they drift. Test a few product pages after any theme or plugin change; see <a href="/blog/schema-markup-explained/">schema markup explained</a> and <a href="/blog/test-structured-data-rich-results/">how to test structured data</a>.</p>
 
-<p>For organic rankings, see the <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a>.</p>
+<h2>From free listings to Shopping ads</h2>
+<p>Once products are approved and stable, link Google Ads and the same data can run Shopping or Performance Max campaigns. Set up purchase tracking first, so you can see which products and campaigns actually make money; see <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a>. Start with your best sellers and products with healthy margins. The same product data can also feed Instagram and Facebook; see <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to Meta's catalog</a>.</p>
+
+<h2>FAQs</h2>
+<h3>How do I connect WooCommerce to Google Merchant Center?</h3>
+<p>Install the free Google for WooCommerce extension, open Marketing &gt; Google for WooCommerce, connect your Google account and Merchant Center, choose India as your selling country, set shipping, and let it sync your products. Alternatively, use a feed plugin to create a feed URL and add it to Merchant Center as a scheduled file.</p>
+<h3>Is Google Merchant Center free for WooCommerce stores?</h3>
+<p>Yes. Merchant Center, the Google for WooCommerce extension and free product listings cost nothing. You only pay if you run Shopping or Performance Max ads through Google Ads, or if you choose a paid feed plugin.</p>
+<h3>Is Google for WooCommerce the same as Google Listings &amp; Ads?</h3>
+<p>Yes. Google Listings &amp; Ads was renamed Google for WooCommerce. It's the official free extension for syncing WooCommerce products to Merchant Center and running Google ads from your dashboard.</p>
+<h3>Do I need GTINs (barcodes) for my products?</h3>
+<p>If a product has a manufacturer barcode, include it, because it helps Google match the product. For handmade, custom or own-brand products with no barcode, set identifier_exists to "no" rather than inventing a number. If you want barcodes for your own brand, they're issued in India through GS1 India.</p>
+<h3>Why are my WooCommerce products disapproved in Merchant Center?</h3>
+<p>The most common reasons are price or stock that don't match the product page, prices without GST, missing shipping details, images with text or watermarks, and incorrect identifiers. Account-level suspensions are usually misrepresentation: missing contact details, policies or business information. Merchant Center lists the exact issue for each product.</p>
+<h3>How long does it take for products to show on Google?</h3>
+<p>New products and accounts go through a review, which often takes a few days. After approval, free listings can start showing, but Google decides when and where, so impressions build gradually.</p>
+
+<p>Want your products on Google without fighting feeds and disapprovals? I can set up Merchant Center and Google for WooCommerce, fix the store's prices, shipping and policies so products get approved, and make sure stock stays in sync. See <a href="/woocommerce-developer/">WooCommerce development</a>, and for organic rankings, the <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a>.</p>
 `,
   },
   {
@@ -18087,61 +18649,137 @@ find wp-content/uploads -name "*.php"</code></pre>
   },
   {
     slug: 'migrate-website-to-hostinger',
-    seoTitle: 'How to Migrate a WordPress Site to Hostinger Safely',
-    title: 'How to Migrate a WordPress Website to Hostinger Without Downtime',
-    description: 'Migrate a WordPress site to Hostinger safely: migration request, plugins or manual moves, testing before DNS changes, moving email, SSL and final checks.',
+    seoTitle: 'Hostinger Site Migration: Move WordPress Without Downtime',
+    title: 'How to Migrate a WordPress Website to Hostinger Without Downtime: 3 Methods',
+    description: 'Hostinger site migration step by step: hPanel\'s migration tool, plugins or a manual move, testing before DNS changes, keeping email working and SSL.',
     date: '2026-09-28',
+    updated: '2026-10-11',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-maintenance', 'website-redesign'],
     body: `
-<p>Moving to Hostinger for better pricing, speed or support? A careful migration keeps your website, email and rankings intact. The key is to copy and test everything before switching your domain over.</p>
+<p>To migrate a WordPress website to Hostinger without downtime, copy the site to your Hostinger account first, using hPanel's website migration tool, a plugin such as All-in-One WP Migration, or a manual files-and-database move. Test it on Hostinger before your domain points there, recreate your email DNS records, then switch the nameservers or A record. Once the domain resolves to Hostinger, let the free SSL certificate issue, run final checks and keep the old hosting for a week or two as a fallback.</p>
+<p>Done in that order, visitors never see a broken site and email keeps flowing. This guide covers each method, testing, DNS, email, the checks I run afterwards and moving from SiteGround specifically. If you'd rather hand it over, see my <a href="/wordpress-migration/">WordPress migration service</a>.</p>
 
-<h2>Before you start</h2>
+<h2>Before you start: pre-migration checklist</h2>
 <ul>
-  <li>Take a full backup of files and database from your current host</li>
-  <li>Note your current DNS records, especially email (MX) records</li>
-  <li>Check your old hosting's renewal date so you don't pay for another year unnecessarily, but don't cancel it yet</li>
-  <li>Lower the DNS TTL a day in advance if you manage DNS, so the switch happens faster</li>
+  <li><strong>Take a full backup</strong> of files and database from the current host, and keep a copy on your computer or cloud storage, separate from both hosts; see <a href="/blog/wordpress-backup-plugins-compared/">WordPress backup plugins compared</a></li>
+  <li><strong>Screenshot or export your DNS records</strong>, especially MX, TXT (SPF, DKIM, DMARC, verification codes) and any CNAMEs</li>
+  <li><strong>Find out where everything lives:</strong> who the domain is registered with, where DNS is managed (registrar, old host or Cloudflare) and where email is hosted</li>
+  <li><strong>Note the PHP and WordPress versions</strong> on the old host, so you can match PHP on Hostinger</li>
+  <li><strong>Check your Hostinger plan's limits</strong> for disk space, files (inodes) and websites</li>
+  <li><strong>Lower the DNS TTL</strong> to 300 seconds or so a day ahead, if you control DNS, so the switch spreads quickly</li>
+  <li><strong>Pick a quiet time,</strong> and for WooCommerce stores, plan how to handle orders placed during the move</li>
+  <li><strong>Check the old host's renewal date,</strong> but don't cancel anything yet</li>
 </ul>
 
-<h2>Migration options</h2>
+<h2>Three ways to migrate to Hostinger</h2>
 <table>
-  <thead><tr><th>Method</th><th>Good for</th></tr></thead>
+  <thead><tr><th>Method</th><th>How it works</th><th>Best for</th><th>Watch out for</th></tr></thead>
   <tbody>
-    <tr><td>Hostinger's migration request in hPanel</td><td>Standard WordPress sites; their team or tool moves the site for you</td></tr>
-    <tr><td>Migration plugins (e.g. All-in-One WP Migration, Duplicator)</td><td>Small to medium sites; quick, but large sites may hit size limits</td></tr>
-    <tr><td>Manual (files + database)</td><td>Large or complex sites, or when plugins fail</td></tr>
+    <tr><td>hPanel website migration tool</td><td>You give Hostinger your old site's WordPress login or upload a backup, and it copies the site</td><td>Standard WordPress sites, non-technical owners</td><td>Queue times, and it needs a working admin login or a supported backup file</td></tr>
+    <tr><td>Migration plugin</td><td>All-in-One WP Migration, Duplicator or WP Migrate packages the site and restores it on Hostinger</td><td>Small and medium sites</td><td>Upload size limits on free versions, and timeouts on large sites</td></tr>
+    <tr><td>Manual move</td><td>Files over SFTP or File Manager, database via phpMyAdmin or WP-CLI</td><td>Large or complex sites, or when tools fail</td><td>Takes more care: wp-config.php, file permissions, serialised data</td></tr>
   </tbody>
 </table>
 
-<h2>Test before switching the domain</h2>
-<p>Check the migrated site on Hostinger before pointing your domain at it, using a temporary URL or preview, or by editing your computer's hosts file. Test:</p>
-<ul>
-  <li>Every key page and the mobile layout</li>
-  <li>Forms (do emails arrive?)</li>
-  <li>WooCommerce checkout, if applicable</li>
-  <li>Logins and admin area</li>
-</ul>
+<h2>Method 1: Hostinger's Migrate Website tool</h2>
+<ol>
+  <li>In hPanel, go to Websites and choose to add or migrate a website. Hostinger's menus change from time to time, so follow the current screens if the wording differs.</li>
+  <li>Choose WordPress, then either enter your old site's admin URL, username and password, or upload a backup file such as an All-in-One WP Migration .wpress file.</li>
+  <li>Enter the domain name you're moving, and submit the request.</li>
+  <li>Wait for the migration status to show as complete, then test the copy before touching DNS.</li>
+</ol>
+<p>Rather than handing over your own admin password, create a temporary administrator account on the old site for the migration, and delete it once the move is done.</p>
 
-<h2>Switch the domain</h2>
-<p>Update the nameservers or A record to point to Hostinger. DNS changes can take a few hours to spread.</p>
+<h2>Method 2: Using a migration plugin</h2>
+<p>All-in-One WP Migration is the simplest for most small sites:</p>
+<ol>
+  <li>On the old site, install the plugin and export the site to a file.</li>
+  <li>On Hostinger, install a fresh WordPress for your domain using hPanel's auto installer.</li>
+  <li>Install the same plugin on the new install and import the file. This replaces the fresh install, including its admin login, with your old site.</li>
+  <li>Log in with your old site's username and password, then go to Settings &gt; Permalinks and click Save Changes, which fixes most 404 errors after a move.</li>
+</ol>
+<p>The free version has an import size limit, so very large sites may need a paid extension, Duplicator or one of the other methods. Duplicator builds a package plus an installer.php file that you upload and run on the new host; WP Migrate is handy for database moves with built-in find and replace.</p>
+
+<h2>Method 3: Manual migration</h2>
+<ol>
+  <li>Download all WordPress files from the old host by SFTP or File Manager, and export the database from phpMyAdmin (or run <code>wp db export</code> over SSH).</li>
+  <li>In hPanel, create a new MySQL database and user under the databases section, and note the names, which Hostinger prefixes with your account ID.</li>
+  <li>Upload the files to the domain's public_html folder and import the database through phpMyAdmin.</li>
+  <li>Edit wp-config.php with the new database details:</li>
+</ol>
+<pre><code>define( 'DB_NAME', 'u123456789_wpsite' );
+define( 'DB_USER', 'u123456789_wpuser' );
+define( 'DB_PASSWORD', 'the-password-you-set' );
+define( 'DB_HOST', 'localhost' );</code></pre>
+<p>Keep the same domain during the move so you don't need to rewrite URLs. If you do have to change them, use WP-CLI's search-replace or a plugin that handles serialised data, never a plain SQL replace.</p>
+
+<h2>Test before switching the domain</h2>
+<p>Check the migrated site on Hostinger while the old site is still live. hPanel may offer a preview or temporary domain, but the most reliable test is your computer's hosts file, which makes only your computer load the domain from Hostinger. Find the server IP in hPanel, then add a line like this:</p>
+<pre><code>203.0.113.10  example.com  www.example.com</code></pre>
+<p>On Windows, open Notepad as administrator and open the hosts file in the Windows folder, under System32, drivers, etc. On a Mac or Linux it's /etc/hosts. Then test:</p>
+<ul>
+  <li>Key pages on desktop and mobile, menus, images and sliders</li>
+  <li>Every contact form, and whether the emails arrive</li>
+  <li>WordPress admin, logins and the page builder editor</li>
+  <li>For stores: cart, checkout and a test payment in the gateway's test mode</li>
+</ul>
+<p>Remove the hosts line when you're done, or you'll keep seeing the new server after the switch and miss problems others see.</p>
+
+<h2>Switch the domain to Hostinger</h2>
+<table>
+  <thead><tr><th>Option</th><th>What you change</th><th>Email risk</th></tr></thead>
+  <tbody>
+    <tr><td>Point nameservers to Hostinger</td><td>Nameservers at your registrar, to the ones hPanel shows (usually ns1.dns-parking.com and ns2.dns-parking.com)</td><td>High, unless every email record is recreated in Hostinger's DNS zone first</td></tr>
+    <tr><td>Change only the A record</td><td>The A records for the root domain and www, in your current DNS (registrar or Cloudflare), to Hostinger's server IP</td><td>Low, because MX and TXT records stay where they are</td></tr>
+  </tbody>
+</table>
+<p>Changing only the A record is the safer choice if your DNS is already somewhere reliable. With a lowered TTL, most visitors reach the new server within minutes to a few hours.</p>
 
 <h2>Don't break email</h2>
-<p>If your email is hosted with your old provider or with Google Workspace, recreate the MX, SPF and DKIM records exactly at Hostinger before switching nameservers. This is the most common migration mistake. See <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">email deliverability</a>.</p>
-
-<h2>After the move</h2>
+<p>Email is the most common thing to break in a migration, and it's often noticed only when a client says your emails bounced.</p>
 <ul>
-  <li>Activate SSL and check for mixed content warnings</li>
-  <li>Set up LiteSpeed Cache and remove any old host-specific caching plugins</li>
-  <li>Check Search Console for crawl errors</li>
-  <li>Set up backups and monitoring</li>
-  <li>Keep the old hosting for a week or two as a fallback, then cancel</li>
+  <li><strong>Email on Google Workspace, Zoho or Microsoft 365:</strong> copy every MX, SPF, DKIM and DMARC record exactly into Hostinger's DNS zone before changing nameservers, or use the A-record method</li>
+  <li><strong>Email on the old host's cPanel:</strong> those mailboxes stop working when the old hosting is cancelled. Set up mailboxes with your new email provider and copy old mail across before the switch; see <a href="/blog/hostinger-business-email-setup/">business email on Hostinger</a></li>
+  <li><strong>Website emails:</strong> form notifications and WooCommerce emails should send through SMTP, not the server's PHP mail; see <a href="/blog/wordpress-not-sending-emails-smtp/">fixing WordPress emails with SMTP</a></li>
+</ul>
+<p>The records themselves are explained in <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
+
+<h2>After the move: final checks</h2>
+<ol>
+  <li><strong>SSL:</strong> once the domain points to Hostinger, check the free certificate is active in hPanel's security section and force HTTPS. A brief certificate warning right after the switch is normal until it issues; see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors</a>.</li>
+  <li><strong>Mixed content:</strong> look for a missing padlock on key pages; see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content warnings</a>.</li>
+  <li><strong>Caching:</strong> Hostinger's shared and cloud plans have used LiteSpeed servers, so use the LiteSpeed Cache plugin and remove the old host's plugins, such as SiteGround Optimizer or other host-specific caching and security plugins.</li>
+  <li><strong>PHP version:</strong> match or improve on the old host's version in hPanel's PHP settings.</li>
+  <li><strong>Forms, checkout and payment webhooks:</strong> test again on the live domain.</li>
+  <li><strong>Search Console:</strong> check for crawl errors over the following days.</li>
+  <li><strong>Backups and monitoring:</strong> confirm Hostinger's backups are running and add an off-site backup and uptime monitoring.</li>
+  <li><strong>Old hosting:</strong> keep it for a week or two in case anything was missed, then cancel before it renews.</li>
+</ol>
+<p>Site feeling slower than expected after the move? See <a href="/blog/hostinger-website-slow-fix/">WordPress site slow on Hostinger</a>.</p>
+
+<h2>Migrating from SiteGround to Hostinger</h2>
+<p>The process is the same, with a few SiteGround-specific points:</p>
+<ul>
+  <li>SiteGround uses its own Site Tools panel rather than cPanel, so a plugin or Hostinger's migration tool is usually the easiest way to copy the site</li>
+  <li>Remove the SiteGround Optimizer and SiteGround Security plugins after the move; they're built for SiteGround's servers</li>
+  <li>If the domain is registered with SiteGround, you can point it to Hostinger now and transfer the registration later; see <a href="/blog/transfer-domain-to-another-registrar/">transferring a domain without downtime</a></li>
+  <li>Check whether your email or DNS is hosted at SiteGround, and move those deliberately before cancelling</li>
 </ul>
 
-<h2>Moving from another platform?</h2>
-<p>Moving from Wix, Blogger or Shopify is a bigger job; see <a href="/blog/migrate-wix-to-wordpress/">Wix to WordPress</a> and <a href="/blog/migrate-blogger-to-wordpress/">Blogger to WordPress</a>.</p>
+<h2>FAQs</h2>
+<h3>Does Hostinger migrate websites for free?</h3>
+<p>Hostinger has offered free website migration with many of its hosting plans, through the migration tool in hPanel. Check the current terms for your plan, and test the result yourself before switching DNS, because a copied site still needs checking.</p>
+<h3>How long does a Hostinger site migration take?</h3>
+<p>Copying a small WordPress site with a plugin can take under an hour; larger sites and queued migration requests take longer. DNS changes then take minutes to a few hours with a low TTL, and up to a day or two in some cases.</p>
+<h3>Will my website go down during the migration?</h3>
+<p>It shouldn't. The old site keeps serving visitors while you copy and test on Hostinger, and you only switch DNS once everything works. The one short gap to plan for is the SSL certificate, which issues once the domain points to Hostinger.</p>
+<h3>Will I lose my emails when I move to Hostinger?</h3>
+<p>Not if you plan for it. If email is with Google Workspace or Zoho, recreate the MX and TXT records in Hostinger's DNS or change only the A record. If email is on the old host, move the mailboxes to a new provider before cancelling the old hosting.</p>
+<h3>Do I need to transfer my domain to Hostinger?</h3>
+<p>No. You can keep the domain registered where it is and just point it to Hostinger with nameservers or an A record. Transferring the registration is optional and can be done later, separately from the website move.</p>
 
-<p>Want a hands-off move? See <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<p>Want the move done for you, with the site tested before the switch, email records preserved and the old hosting kept as a fallback? See <a href="/wordpress-migration/">WordPress migration</a>, and if you're still choosing a host, read <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>.</p>
 `,
   },
   {
@@ -18863,63 +19501,139 @@ find wp-content/uploads -name "*.php"</code></pre>
   },
   {
     slug: 'custom-wordpress-plugin-development',
-    seoTitle: 'Custom WordPress Plugin Development: A Business Guide',
-    title: 'Custom WordPress Plugin Development: When Your Business Needs One',
-    description: 'Custom WordPress plugin development: when it beats off-the-shelf plugins, examples like calculators and portals, the process, security and long-term upkeep.',
+    seoTitle: 'Custom WordPress Plugin Development: When, How and Cost',
+    title: 'Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It\'s Built',
+    description: 'Custom WordPress plugin development explained: when a bespoke plugin beats off-the-shelf ones, real examples, the build process, cost factors and upkeep.',
     date: '2026-09-28',
+    updated: '2026-10-11',
     category: 'Guides',
     related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-developer-for-agencies'],
     body: `
-<p>There's a WordPress plugin for almost everything, but not for everything your business does. When off-the-shelf plugins don't fit your process, pile up into a slow, fragile stack, or can't talk to your other systems, a custom plugin is often the cleanest solution.</p>
+<p>A custom WordPress plugin is code written for your site to do one job your business needs: a quote calculator, dealer pricing in WooCommerce, or syncing enquiries with your CRM. It's worth building when no reputable plugin does the job properly, when you're stacking several plugins to get one feature, or when WordPress has to talk to your other systems. For common needs such as SEO, forms and backups, an established plugin is almost always the better choice.</p>
+<p>This guide covers when a bespoke plugin makes sense, real examples, how I build them, what a good one looks like under the hood, and what affects the cost. If you already know what you need, you can <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a> and get a written scope and fixed quote before any work starts.</p>
+
+<h2>Custom plugin, existing plugin or code snippet?</h2>
+<p>There are four ways to add functionality to WordPress, and the right one depends on how unique and how important the feature is:</p>
+<table>
+  <thead><tr><th>Option</th><th>Good for</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Existing plugin</td><td>Common needs: SEO, forms, backups, caching, payments</td><td>Bloat, yearly licences, features you don't need</td></tr>
+    <tr><td>Code snippet</td><td>Small tweaks: hiding a field, changing a label, one filter</td><td>Snippets scattered across functions.php are hard to track</td></tr>
+    <tr><td>Custom plugin</td><td>Business-specific features, integrations, custom rules</td><td>Needs a good developer and occasional upkeep</td></tr>
+    <tr><td>Custom theme code</td><td>Design and layout only</td><td>Features built into a theme disappear when the theme changes</td></tr>
+  </tbody>
+</table>
+<p>That last row is a mistake I often find when taking over sites: booking logic or custom fields built into the theme's functions.php, so a redesign means rebuilding the feature. Functionality belongs in a plugin; design belongs in the theme. There's more on this decision in <a href="/blog/plugin-vs-custom-code-wordpress/">plugin or custom code</a>.</p>
 
 <h2>When a custom plugin makes sense</h2>
 <ul>
-  <li>No existing plugin does what you need, or only does it with awkward workarounds</li>
-  <li>You're combining several plugins to achieve one simple feature</li>
-  <li>You need to connect WordPress with your CRM, ERP, inventory or another system</li>
-  <li>The feature is core to your business and you want full control</li>
+  <li>No existing plugin does what you need, or only with awkward workarounds your staff have to remember</li>
+  <li>You're combining three or four plugins to achieve one simple feature, and they slow the site down or conflict after updates</li>
+  <li>WordPress needs to exchange data with your CRM, ERP, inventory, accounting or courier software</li>
+  <li>The feature is central to how you make money, so you want full control over how it works and changes</li>
+  <li>A premium plugin almost fits, and a small add-on using its hooks would close the gap</li>
 </ul>
+<p>And when it doesn't: if a well-maintained plugin does almost everything and the missing piece is only a nice-to-have, use the plugin. Custom code is an asset, but it's also something you'll maintain for as long as you use it.</p>
 
-<h2>Real-world examples</h2>
+<h2>Examples of custom WordPress plugins</h2>
+<p>These are the kinds of bespoke plugins businesses most often need:</p>
 <ul>
-  <li><strong>Calculators and quote tools:</strong> price estimators, EMI or savings calculators; like this site's <a href="/website-cost-calculator/">website cost calculator</a></li>
-  <li><strong>Integrations:</strong> sending enquiries to a CRM, syncing WooCommerce stock with inventory software</li>
-  <li><strong>Custom WooCommerce rules:</strong> dealer pricing, special shipping logic, custom checkout fields</li>
-  <li><strong>Booking and scheduling logic</strong> that booking plugins can't handle</li>
-  <li><strong>Client or dealer portals</strong> with documents and restricted content</li>
-  <li><strong>Custom content types</strong> like listings, courses or projects; see <a href="/blog/custom-post-types-fields/">custom post types</a></li>
+  <li><strong>Calculators and quote tools:</strong> price estimators, EMI, savings or material calculators that capture leads, like this site's <a href="/website-cost-calculator/">website cost calculator</a>; see <a href="/blog/website-calculators-lead-generation/">website calculators for lead generation</a></li>
+  <li><strong>Integrations:</strong> sending enquiries to a CRM, pushing WooCommerce orders to accounting software, or syncing stock with an inventory system, usually through each system's API and the <a href="/blog/wordpress-rest-api-explained/">WordPress REST API</a></li>
+  <li><strong>WooCommerce custom pricing:</strong> dealer or wholesale prices by user role, quantity tiers, customer-specific price lists and minimum order quantities</li>
+  <li><strong>Checkout and shipping rules:</strong> COD only for certain pincodes or order values, extra checkout fields, custom delivery slots</li>
+  <li><strong>Client and dealer portals:</strong> logged-in areas with documents, order history, price lists or certificates</li>
+  <li><strong>Custom content types:</strong> properties, courses, products for a catalogue or project listings, with their own fields and filters; see <a href="/blog/custom-post-types-fields/">custom post types and fields</a></li>
+  <li><strong>Custom blocks:</strong> on-brand page sections editors can use without breaking the design; see <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a></li>
+  <li><strong>Admin tools:</strong> bulk importers, scheduled reports, or a cleaner screen for the one task your team does every day</li>
 </ul>
 
-<h2>The development process</h2>
+<h3>What a simple custom plugin looks like</h3>
+<p>A plugin can be a single PHP file in wp-content/plugins. Here's a stripped-down example that shows a dealer price to approved dealer accounts in WooCommerce:</p>
+<pre><code>&lt;?php
+/**
+ * Plugin Name: Acme Dealer Pricing
+ * Description: Shows dealer prices to approved dealer accounts.
+ * Version: 1.0.0
+ * Requires PHP: 7.4
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+add_filter( 'woocommerce_product_get_price', 'acme_dealer_price', 10, 2 );
+
+function acme_dealer_price( $price, $product ) {
+    if ( ! current_user_can( 'acme_view_dealer_prices' ) ) {
+        return $price;
+    }
+    $dealer_price = $product-&gt;get_meta( '_acme_dealer_price' );
+    return ( '' !== $dealer_price ) ? $dealer_price : $price;
+}</code></pre>
+<p>A production version also needs a field to enter dealer prices, handling for variable products, the cart and price display, a way to approve dealers, and testing with your caching setup. That gap between "works in a demo" and "works on a live store" is most of the job.</p>
+
+<h2>How custom plugin development works</h2>
 <ol>
-  <li><strong>Requirements:</strong> exactly what the feature should do, for whom, with edge cases</li>
-  <li><strong>Design:</strong> data structure, admin screens and front-end output</li>
-  <li><strong>Build:</strong> following WordPress coding standards, using WordPress's APIs (hooks, settings, REST API)</li>
-  <li><strong>Testing:</strong> on staging, with realistic data</li>
-  <li><strong>Deployment and documentation</strong></li>
+  <li><strong>Requirements.</strong> Exactly what the feature should do, who uses it, and the edge cases: what happens with a refund, a guest user, a product with no dealer price, or an API that's down.</li>
+  <li><strong>Check what already exists.</strong> If a reputable plugin or an add-on for one you already use covers most of it, I'll say so before writing anything.</li>
+  <li><strong>Written scope and quote.</strong> The features, admin screens, integrations, what's excluded and the price, agreed before work starts.</li>
+  <li><strong>Technical design.</strong> Where data is stored (post meta, custom tables or options), which hooks and APIs to use, and what the admin screens look like.</li>
+  <li><strong>Build on staging, in version control.</strong> Code goes into a Git repository and is tested on a copy of your site, never on the live one; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</li>
+  <li><strong>Testing.</strong> With realistic data, your theme and plugins, the PHP version your host runs, and the edge cases from step 1.</li>
+  <li><strong>Launch and handover.</strong> Deployment at a quiet time, a short guide for your team and the source code.</li>
 </ol>
 
-<h2>Security standards to expect</h2>
-<p>A well-built plugin should:</p>
+<h2>What a well-built plugin looks like</h2>
+<p>You can't judge a plugin by its admin screen. Poorly written custom code is a common way sites get hacked or slow down, so these are the standards to expect:</p>
+<table>
+  <thead><tr><th>Area</th><th>What to expect</th></tr></thead>
+  <tbody>
+    <tr><td>Security</td><td>All input sanitised and validated, all output escaped, nonces on forms and actions, capability checks before anything sensitive, and prepared statements ($wpdb-&gt;prepare) for database queries</td></tr>
+    <tr><td>Performance</td><td>Scripts and styles loaded only on pages that use them, expensive results cached with transients, and heavy jobs run in the background rather than on page load</td></tr>
+    <tr><td>Compatibility</td><td>Uses WordPress and WooCommerce hooks instead of editing core or other plugins' files, prefixes its functions to avoid clashes, and declares compatibility with WooCommerce's High-Performance Order Storage where it touches orders</td></tr>
+    <tr><td>Maintainability</td><td>Follows the WordPress coding standards, is kept in Git with a readme and changelog, and cleans up its data on uninstall if you want it to</td></tr>
+  </tbody>
+</table>
+
+<h2>What affects the cost of a custom plugin</h2>
+<p>There's no standard price, because "a plugin" can mean ten lines of code or a full dealer portal. What moves the cost:</p>
 <ul>
-  <li>Validate and sanitise all input</li>
-  <li>Escape all output</li>
-  <li>Use nonces to protect forms and actions</li>
-  <li>Check user capabilities before doing anything sensitive</li>
-  <li>Use prepared statements for database queries</li>
+  <li><strong>Scope:</strong> the number of features, settings and admin screens</li>
+  <li><strong>Integrations:</strong> connecting to another system's API depends heavily on how good its documentation and test environment are</li>
+  <li><strong>WooCommerce involvement:</strong> anything touching prices, cart, checkout or orders needs more testing</li>
+  <li><strong>Edge cases and data volume:</strong> handling a thousand products or a slow API takes more care than a handful</li>
+  <li><strong>Building from scratch vs extending:</strong> an add-on for a plugin you already use is often far cheaper than a standalone plugin</li>
 </ul>
-<p>Poorly written custom code can be a security hole; see <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a>.</p>
+<p>To keep costs down, build the core feature first and add extras once it's in use. A clear brief gets a clearer quote; the <a href="/blog/website-brief-template/">website brief template</a> works for plugin work too.</p>
 
-<h2>Performance</h2>
-<p>Load scripts and styles only on pages that need them, cache expensive operations, and avoid slow database queries.</p>
+<h2>Ownership and maintenance</h2>
+<p>Custom code should be yours. Before work starts, agree that you'll receive the full source code, ideally in a Git repository you control, and that the plugin isn't tied to the developer's licence server or account. WordPress plugins are generally distributed under the GPL, so there's no reason a developer should lock you out of code you paid for.</p>
+<p>Plan for upkeep too. WordPress, WooCommerce and PHP all change, and a custom plugin occasionally needs updating to keep up. A well-written plugin built on standard hooks needs far less of this than one that works around WordPress instead of with it.</p>
 
-<h2>Maintenance</h2>
-<p>Custom plugins need occasional updates for new WordPress and PHP versions. Keep the code in version control, documented and owned by you.</p>
+<h2>Questions to ask a custom plugin developer</h2>
+<ol>
+  <li>Is there an existing plugin that does most of this, and why not use it?</li>
+  <li>Will the code be in version control, and will I get the full source?</li>
+  <li>How will you test it, and on what: staging or my live site?</li>
+  <li>How do you handle security: sanitising, escaping, nonces and permissions?</li>
+  <li>What happens when WordPress, WooCommerce or PHP has a major update?</li>
+  <li>Can you show me a plugin or feature you've built before?</li>
+</ol>
 
-<h2>Custom plugin or existing plugin?</h2>
-<p>Use a reputable existing plugin for common needs like SEO, forms and backups; build custom for what's unique to your business. See <a href="/blog/plugin-vs-custom-code-wordpress/">plugin vs custom code</a>.</p>
+<h2>FAQs</h2>
+<h3>What is custom WordPress plugin development?</h3>
+<p>It's writing a plugin specifically for your website, rather than installing a ready-made one from WordPress.org or a marketplace. The plugin adds features your business needs, such as pricing rules, calculators or integrations, using WordPress's own hooks and APIs so it keeps working when WordPress updates.</p>
+<h3>How much does a custom WordPress plugin cost?</h3>
+<p>It depends on the scope, the integrations, how much WooCommerce logic is involved and how many edge cases need handling. A small add-on that changes one behaviour costs far less than a portal or a two-way sync with another system. Send a description of what it should do and who uses it, and ask for a written scope with a fixed price.</p>
+<h3>Will a custom plugin slow down my site?</h3>
+<p>A well-built one shouldn't. It loads its code only where it's needed and caches expensive work. A custom plugin often makes a site faster, because it replaces several general-purpose plugins that each load their own scripts on every page.</p>
+<h3>Who owns the code of a custom plugin?</h3>
+<p>You should. Agree it in writing before work starts, and make sure you receive the full source code, not just an installed copy on your site.</p>
+<h3>Can you build a custom pricing plugin for WooCommerce?</h3>
+<p>Yes. Dealer and wholesale pricing by user role, quantity discounts, customer-specific price lists and minimum order quantities are common requests. First check whether an established pricing plugin covers your rules; if it gets close, a small add-on can be cheaper than building from scratch.</p>
+<h3>Do you build bespoke plugins for clients outside India?</h3>
+<p>Yes. I work with clients and agencies in other countries over WhatsApp, email and video calls, and the process is the same: a written scope, a fixed quote, staging, then launch.</p>
 
-<p>Need a custom feature built? See <a href="/wordpress-website-development/">WordPress development</a> or <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<p>Have a feature that no plugin quite handles? Send me what it should do and who will use it, and I'll tell you honestly whether you need custom code or an existing plugin. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>, or for store features, <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
