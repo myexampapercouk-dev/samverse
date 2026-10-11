@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harden wp-config.php: WordPress Security Settings | Samverse</title>
-  <meta name="description" content="Security settings in wp-config.php explained: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file itself, with cautions for each.">
+  <meta name="description" content="Harden wp-config.php: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file, with cautions.">
   <meta name="author" content="Sameer Gupta">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/harden-wp-config-php/">
   <meta property="og:title" content="Harden wp-config.php: WordPress Security Settings | Samverse">
-  <meta property="og:description" content="Security settings in wp-config.php explained: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file itself, with cautions for each.">
+  <meta property="og:description" content="Harden wp-config.php: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file, with cautions.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-harden-wp-config-php.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/harden-wp-config-php/#article",
       "headline": "Hardening wp-config.php: Security Settings Every WordPress Site Should Use",
-      "description": "Security settings in wp-config.php explained: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file itself, with cautions for each.",
+      "description": "Harden wp-config.php: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file, with cautions.",
       "datePublished": "2026-09-27",
       "dateModified": "2026-09-27",
       "mainEntityOfPage": "https://samverse.space/blog/harden-wp-config-php/",
@@ -130,7 +130,7 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
           <h1>Hardening wp-config.php: Security Settings Every WordPress Site Should Use</h1>
-          <p class="post-dek">Security settings in wp-config.php explained: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file itself, with cautions for each.</p>
+          <p class="post-dek">Harden wp-config.php: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file, with cautions.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
@@ -183,7 +183,7 @@
 
 <aside class="inline-cta">
   <strong>Need help with malware removal &amp; security?</strong>
-  <p>Hacked WordPress site? Fast malware removal, cleanup of spam redirects and injected code, Google blacklist removal help and security hardening to stop reinfection.</p>
+  <p>Hacked WordPress site? Fast malware removal, spam redirect and injected code cleanup, Google blacklist removal help and hardening to stop reinfection.</p>
   <div><a href="/wordpress-malware-removal/" class="link-inline">See Malware Removal &amp; Security →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
@@ -271,9 +271,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Services</span><h2>How I can help</h2></div>
         <div class="industries related-grid reveal">
-          <a class="industry" href="/wordpress-malware-removal/"><h3>Malware Removal &amp; Security</h3><p>Hacked WordPress site? Fast malware removal, cleanup of spam redirects and injected code, Google blacklist removal help and security hardening to stop reinfection.</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/wordpress-malware-removal/"><h3>Malware Removal &amp; Security</h3><p>Hacked WordPress site? Fast malware removal, spam redirect and injected code cleanup, Google blacklist removal help and hardening to stop reinfection.</p><span class="ind-arrow">→</span></a>
           <a class="industry" href="/wordpress-maintenance/"><h3>Website Maintenance</h3><p>Monthly WordPress maintenance: updates, backups, security monitoring, uptime checks and small content changes, so your website stays fast, secure and online.</p><span class="ind-arrow">→</span></a>
-          <a class="industry" href="/wordpress-website-development/"><h3>WordPress Website Development</h3><p>Custom WordPress website development: business websites, portfolios, catalogues and portals that are fast, mobile-friendly, SEO-ready and easy for you to update.</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/wordpress-website-development/"><h3>WordPress Website Development</h3><p>WordPress website development in India: business sites, portfolios, catalogues and portals that are fast, mobile-friendly, SEO-ready and easy to update.</p><span class="ind-arrow">→</span></a>
         </div>
       </div>
     </section>
@@ -282,9 +282,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/find-remove-wordpress-backdoors/"><img class="post-card-img" src="/assets/og/blog-find-remove-wordpress-backdoors.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Find and Remove Backdoors in a Hacked WordPress Site</h3><p>What WordPress backdoors are, where attackers hide them (uploads, fake plugins, mu-plugins, core files, database, cron), warning signs in code, how to verify files and how to stop reinfection.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist for Small Business Websites (20 Steps)</h3><p>A practical 20-step WordPress security checklist for small businesses: updates, passwords, 2FA, backups, firewalls, hosting and user roles, to keep your site safe from hackers.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
-          <a class="post-card" href="/blog/ssl-certificate-errors-fix/"><img class="post-card-img" src="/assets/og/blog-ssl-certificate-errors-fix.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>SSL Certificate Errors Explained: &quot;Not Secure&quot; Warnings and How to Fix Them</h3><p>Why browsers show &quot;Not secure&quot; or certificate warnings on your website (expired certificates, mixed content, wrong domain) and how to fix each one so visitors trust your site again.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/find-remove-wordpress-backdoors/"><img class="post-card-img" src="/assets/og/blog-find-remove-wordpress-backdoors.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Find and Remove Backdoors in a Hacked WordPress Site</h3><p>Find and remove WordPress backdoors: where attackers hide them, from uploads and fake plugins to core files, database and cron, and how to stop reinfection.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist for Small Business Websites (20 Steps)</h3><p>A 20-step WordPress security checklist for small businesses: updates, passwords, 2FA, backups, firewalls, hosting and user roles to keep hackers out.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/ssl-certificate-errors-fix/"><img class="post-card-img" src="/assets/og/blog-ssl-certificate-errors-fix.webp" alt="" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>SSL Certificate Errors Explained: &quot;Not Secure&quot; Warnings and How to Fix Them</h3><p>SSL certificate errors: why browsers flag your site as not secure, from expired certificates and mixed content to wrong domains, and how to fix each one.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
         </div>
       </div>
     </section>
