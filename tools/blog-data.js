@@ -18348,7 +18348,7 @@ find wp-content/uploads -name "*.php"</code></pre>
   },
   {
     slug: 'fix-wordpress-critical-error',
-    seoTitle: '"There Has Been a Critical Error" in WordPress: How to Fix It',
+    seoTitle: 'WordPress "There Has Been a Critical Error": How to Fix It',
     title: '"There Has Been a Critical Error on This Website": How to Fix It Step by Step',
     description: 'Fix the WordPress critical error: causes like plugin or theme updates, PHP version and memory limits, using recovery mode and finding the culprit via SFTP.',
     date: '2026-09-28',

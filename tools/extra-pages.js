@@ -279,7 +279,7 @@ ${GLOSSARY.map(([t, d]) => `          <div class="glossary-item" id="${termId(t)
     slug: 'privacy-policy',
     crumb: 'Privacy Policy',
     title: 'Privacy Policy | Samverse',
-    description: 'How samverse.space collects and uses information: contact form enquiries, WhatsApp, Google Analytics, Microsoft Clarity and Google AdSense cookies, and your choices.',
+    description: 'How samverse.space uses information: contact form enquiries, WhatsApp, Google Analytics, Microsoft Clarity and AdSense cookies, and your choices.',
     eyebrow: 'Legal',
     h1: 'Privacy <span class="grad">policy</span>',
     lead: 'This page explains what information samverse.space collects, why, and the choices you have. Last updated: 28 September 2026.',

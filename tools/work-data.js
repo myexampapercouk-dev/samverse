@@ -65,6 +65,7 @@ module.exports = [
     name: 'Vansh Group',
     url: 'https://vansh.group/',
     industry: 'Electronics Manufacturing (OEM)',
+    metaDescription: 'Case study: a professional B2B website for an electronics OEM, presenting product development services, infrastructure and brand partnerships.',
     summary: 'A professional B2B website for an electronics OEM with decades of experience, presenting its product development services, infrastructure and brand partnerships.',
     client: 'Vansh is an electronics original equipment manufacturer offering end-to-end product development and manufacturing from facilities in North India, serving well-known electrical and lighting brands.',
     goals: [
@@ -520,6 +521,7 @@ module.exports = [
     name: 'Dr. Nitish Gupta',
     url: 'https://agrapulmonologist.com/',
     industry: 'Pulmonology Clinic',
+    metaDescription: 'Case study: a trust-building WordPress website for an interventional pulmonologist in Agra, with credentials, lung services and appointment booking.',
     summary: 'A detailed, trust-building website for an interventional pulmonologist in Agra, presenting his credentials, chest and lung services and diagnostic facilities, with easy appointment booking.',
     client: 'Dr. Nitish Gupta is a consultant physician and interventional pulmonologist at Niramaya Care Center in Agra, treating lung, chest, allergy and sleep disorders, with services including bronchoscopy, spirometry and sleep studies.',
     goals: [
@@ -635,6 +637,7 @@ module.exports = [
     url: 'https://samverse.space/',
     industry: 'Portfolio & Lead Generation',
     thumb: '/assets/og-image.png',
+    metaDescription: 'Case study: samverse.space, a fast, search-focused WordPress portfolio and lead generation site with service pages, a blog and a cost calculator.',
     summary: 'The site you\'re reading: a fast, search-focused portfolio and lead generation website for my own freelance business, with service and industry pages, a blog, case studies and a cost calculator.',
     client: 'Samverse is my own freelance WordPress development business. The website needed to explain services clearly to very different buyers, prove experience with real work, rank for high-intent searches and turn visitors into enquiries.',
     goals: [

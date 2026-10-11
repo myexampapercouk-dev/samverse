@@ -9,7 +9,7 @@ const SITE = 'https://samverse.space';
 // On-page cover images (WebP from tools/og-images.js); empty string if not generated yet
 const coverImg = key => fs.existsSync(path.join(__dirname, '..', 'assets', 'og', key + '.webp')) ? `/assets/og/${key}.webp` : '';
 // Card thumbnail: decorative (alt=""), since the card repeats the title as text
-const cardImg = p => coverImg(`blog-${p.slug}`) ? `<img class="post-card-img" src="${coverImg(`blog-${p.slug}`)}" alt="" width="1200" height="630" loading="lazy">` : '';
+const cardImg = p => coverImg(`blog-${p.slug}`) ? `<img class="post-card-img" src="${coverImg(`blog-${p.slug}`)}" alt="${esc(p.title)}" width="1200" height="630" loading="lazy">` : '';
 // Per-page social image from tools/og-images.js, falling back to the default
 const ogImage = key => fs.existsSync(path.join(__dirname, '..', 'assets', 'og', key + '.png')) ? `${SITE}/assets/og/${key}.png` : `${SITE}/assets/og-image.png`;
 const ogForUrl = url => { const parts = url.replace(SITE, '').split('/').filter(Boolean); if (parts.length === 2) return ogImage(`${parts[0]}-${parts[1]}`); if (parts.length === 1) { const k = fs.existsSync(path.join(__dirname, '..', 'assets', 'og', `extra-${parts[0]}.png`)) ? `extra-${parts[0]}` : `page-${parts[0]}`; return ogImage(k); } return ogImage('none'); };
@@ -338,7 +338,7 @@ ${PAGES.filter(x => x.type === type).map(x => '          ' + card(x)).join('\n')
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordPress Services &amp; Industries | Samverse by Sameer Gupta</title>
-  <meta name="description" content="All WordPress services by Sameer Gupta: website design for doctors, manufacturers, restaurants, real estate and more, plus redesign, speed, SEO, maintenance and security.">
+  <meta name="description" content="All WordPress services by Sameer Gupta: websites for doctors, manufacturers, restaurants and more, plus redesign, speed, SEO, maintenance and security.">
   <meta name="robots" content="index, follow">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <link rel="canonical" href="${url}">
@@ -860,7 +860,7 @@ const renderWork = (w, i) => {
       },
     ],
   };
-  return `${headCommon(title, w.summary, url, `  <meta property="og:type" content="article">
+  return `${headCommon(title, w.metaDescription || w.summary, url, `  <meta property="og:type" content="article">
   <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
   </script>
@@ -946,7 +946,7 @@ const renderWorkIndex = () => {
     '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'WordPress Portfolio: Sameer Gupta', url,
     hasPart: WORK.map(w => ({ '@type': 'CreativeWork', name: `${w.name} website`, url: `${SITE}/work/${w.slug}/` })),
   };
-  return `${headCommon('WordPress Portfolio & Case Studies | Sameer Gupta | Samverse', 'Portfolio of WordPress websites by freelance developer Sameer Gupta: case studies for agencies, manufacturers, healthcare, directories and more, built with Elementor.', url, `  <meta property="og:type" content="website">
+  return `${headCommon('WordPress Portfolio & Case Studies | Sameer Gupta | Samverse', 'WordPress portfolio of Sameer Gupta: real case studies for agencies, manufacturers, doctors, directories and local businesses, with what was built and why.', url, `  <meta property="og:type" content="website">
   <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
   </script>
