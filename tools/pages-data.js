@@ -411,6 +411,10 @@ const PAGES = [
       ['How long does a website take?', 'Most business websites take a few weeks, depending on the number of pages and how quickly content is ready. You get a clear timeline with the quote.'],
       ['Can you help my business show up on Google in Pune?', 'Yes. I build websites with local SEO foundations, service pages and structured data, and can help your Google Business Profile and website work together. Nobody can honestly guarantee rankings, but these foundations give you the best chance.'],
       ['Do you work with businesses outside Pune?', 'Yes. Most of my work happens over WhatsApp, calls and video, so I work with clients across India and abroad, including a restaurant in the UK.'],
+      ['Can you build my website in Marathi or Hindi as well as English?', 'Yes. WordPress handles multilingual sites well, with each language on its own pages so Google can show the right version. Translations should be written or checked by a fluent speaker, and it usually makes sense to start with the home page, main services and contact page rather than translating everything.'],
+      ['Can you take over a website another developer built?', 'Yes. I start with a quick review of the setup, plugins and hosting, fix anything urgent, and then take care of changes and support. It helps to have the WordPress admin, hosting and domain logins ready.'],
+      ['Will I own my website, domain and hosting?', 'Yes. The domain and hosting should be registered in your business name, and you get an administrator login to WordPress. I can work inside your accounts or help you set them up in your name, so you are never locked in.'],
+      ['Can you set up my Google Business Profile?', 'I can help you create or improve it and link it properly to your website. The profile itself should be owned by your business Google account, and Google may ask you to complete verification yourself.'],
     ],
   },
   {
@@ -469,6 +473,10 @@ const PAGES = [
       ['Can you guarantee a PageSpeed score of 100?', 'No honest developer can, because hosting, design and third-party tools such as chat, analytics and ads all affect the score. The aim is good Core Web Vitals for real visitors, and the report shows exactly what changed.'],
       ['What do you need from me to start?', 'Your website address, a WordPress admin login, hosting access if possible, and a list of the pages that matter most. Any temporary access can be removed once the work is done.'],
       ['Will my site stay fast afterwards?', 'It stays fast as long as new images, plugins and scripts are added carefully. The report includes simple guidelines, and a monthly maintenance plan can keep an eye on speed for you.'],
+      ['Is a plugin like WP Rocket enough on its own?', 'Sometimes, for a small site on good hosting. A caching plugin cannot fix slow server response, heavy plugins, oversized images or third-party scripts, and adding several optimization plugins on top of each other often causes conflicts. The free review tells you which situation you are in.'],
+      ['Why does my PageSpeed score change every time I test?', 'The score comes from a single simulated visit, so network conditions and server load at that moment move it by a few points. Look at the trend over several tests and at the real-user Core Web Vitals data, which is what Google uses.'],
+      ['Can you speed up an Elementor site without rebuilding it?', 'Usually, yes. Elementor\'s performance settings, fewer nested containers and widgets, better image and font loading, and removing unused add-ons often make a big difference. A rebuild is only worth considering when the page structure itself is the bottleneck, and I will tell you if that is the case.'],
+      ['Do I need a CDN or Cloudflare?', 'It depends on where your visitors are and how your hosting is set up. A CDN helps when visitors are spread across regions or countries. Cloudflare\'s free plan can help, but wrong settings can break logins, checkout or forms, so it is set up and tested as part of the job if it makes sense.'],
     ],
   },
   {
@@ -496,6 +504,10 @@ const PAGES = [
       ['What if my site breaks after an update?', 'Updates are tested and a backup is taken first, so anything that breaks can be fixed or rolled back quickly.'],
       ['Are content changes included?', 'Yes, small changes like text, images and prices are included each month. Bigger work is quoted separately.'],
       ['Can I cancel anytime?', 'Yes. Plans are month to month.'],
+      ['How much does WordPress maintenance cost in India?', 'It depends on whether the site is a store, how many plugins it runs, how often it needs backups and how much content work you expect each month. Rather than a one-size price, you get a fixed monthly quote after a free review of your site.'],
+      ['Do you maintain WooCommerce stores?', 'Yes. Store maintenance adds a test order through the payment flow after updates, checks on order emails and invoices, and a closer eye on scheduled tasks and the database as orders build up.'],
+      ['Can I just switch on auto-updates instead?', 'Auto-updates are fine for minor and security releases on simple sites. What they do not do is take a backup first, check forms and checkout afterwards, or roll back a bad update, which is what a maintenance plan adds.'],
+      ['Where are my backups kept, and can I have a copy?', 'Backups are stored off-site, separate from your hosting, so a server problem cannot take out both. You can ask for a copy at any time, and you take the latest one with you if you ever leave.'],
     ],
   },
   {
@@ -631,6 +643,10 @@ const PAGES = [
       ['Will my content be safe?', 'I take a backup first and clean infected files and database entries without deleting your real content.'],
       ['How do I stop it happening again?', 'After cleanup I update everything, remove vulnerable plugins, harden security and set up a firewall. A maintenance plan keeps it protected.'],
       ['What access do you need?', 'WordPress admin and hosting (cPanel or similar) access. Change the passwords after the work is done.'],
+      ['Should I restore an old backup instead of cleaning the site?', 'Only if you are sure the backup was taken before the infection began and you accept losing changes made since. Backdoors are often planted weeks before the visible symptoms, and restoring without closing the hole usually leads to the same hack again.'],
+      ['Will my Google rankings come back after the cleanup?', 'Usually they recover as Google recrawls the clean site and drops the spam pages, but nobody can honestly promise how quickly. Removing the spam URLs, fixing any warnings and requesting a review in Search Console gives you the best chance.'],
+      ['My host suspended my account. Can you still help?', 'Yes. Most hosts allow access for cleanup or can provide a copy of the files. I clean the site, then you or I can ask the host to review and reactivate the account.'],
+      ['Do you clean hacked WooCommerce stores?', 'Yes. Stores get extra checks on the checkout page, payment settings, admin users and order emails, followed by a test order. If card details may have been exposed, you should also inform your payment gateway.'],
     ],
   },
   {

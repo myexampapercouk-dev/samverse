@@ -102,6 +102,38 @@
             "@type": "Answer",
             "text": "Yes. Plans are month to month."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does WordPress maintenance cost in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on whether the site is a store, how many plugins it runs, how often it needs backups and how much content work you expect each month. Rather than a one-size price, you get a fixed monthly quote after a free review of your site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you maintain WooCommerce stores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Store maintenance adds a test order through the payment flow after updates, checks on order emails and invoices, and a closer eye on scheduled tasks and the database as orders build up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I just switch on auto-updates instead?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auto-updates are fine for minor and security releases on simple sites. What they do not do is take a backup first, check forms and checkout afterwards, or roll back a bad update, which is what a maintenance plan adds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are my backups kept, and can I have a copy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Backups are stored off-site, separate from your hosting, so a server problem cannot take out both. You can ask for a copy at any time, and you take the latest one with you if you ever leave."
+          }
         }
       ]
     }
@@ -198,6 +230,86 @@
           <article class="depth-item reveal"><span class="depth-num">01</span><h3>Updates done carefully</h3><p>WordPress core, themes and plugins are updated after a backup, then key pages and forms are checked so nothing breaks silently.</p></article>
           <article class="depth-item reveal"><span class="depth-num">02</span><h3>Backups and monitoring</h3><p>Off-site backups, uptime monitoring and security scans mean problems are caught early and the site can be restored quickly if needed.</p></article>
           <article class="depth-item reveal"><span class="depth-num">03</span><h3>Small changes included</h3><p>Text, image and price updates are handled as part of the plan, and a monthly summary tells you what was done.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section lp-guide">
+      <div class="container">
+        <div class="post-body lp-guide-body">
+<h2>How a WordPress maintenance plan starts: the first health check</h2>
+<p>I do not start clicking "update" on day one. Whether I built your site or someone else did, the first job is to understand it, because most maintenance problems come from things nobody knew were there.</p>
+<ol>
+<li><strong>Access and a full backup,</strong> before anything is touched.</li>
+<li><strong>An inventory.</strong> Every plugin and theme, its version, whether its developer still maintains it, and whether premium licences are active and in your name. An expired licence is one of the most common reasons updates quietly stop arriving.</li>
+<li><strong>Health checks.</strong> PHP version, Site Health warnings, failing scheduled tasks, whether site emails actually arrive, SSL renewal, and who has administrator access. Old PHP versions are covered in <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a>, and access in <a href="/blog/wordpress-user-accounts-audit/">auditing your WordPress user accounts</a>.</li>
+<li><strong>Urgent fixes,</strong> agreed with you first, such as an abandoned plugin with a known vulnerability or contact forms that have stopped sending. If forms are silent, the cause is often email delivery; see <a href="/blog/wordpress-not-sending-emails-smtp/">fixing WordPress emails with SMTP</a>.</li>
+<li><strong>Monitoring and a baseline.</strong> Uptime monitoring, the backup schedule, and starting speed figures for key pages, so later changes can be compared.</li>
+</ol>
+<p>The health check usually takes a few working days. It depends on how many plugins the site runs, how many problems turn up and how quickly access arrives. A neglected site with years of skipped updates is brought up to date in careful stages rather than all at once.</p>
+<h2>What gets tested after every update</h2>
+<p>Updating is the easy part. Checking that nothing broke is what you are really paying for, and it goes beyond glancing at the home page:</p>
+<ul>
+<li>Key page templates on a phone and a desktop: home, a service or product page, a blog post, the contact page.</li>
+<li>Every form submits, and the email actually arrives. On a contact form with a service-type dropdown, like the one I built for <a href="/work/vansh-group/">Vansh Group</a>, the enquiry has to arrive with the right service attached.</li>
+<li>Interactive features, such as the free anxiety self-assessment on the <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a> site I built, because these break more quietly than a layout does.</li>
+<li>For WooCommerce stores: a test order through the payment flow (Razorpay or UPI in test mode, or cash on delivery), the order emails and, if you use one, the GST invoice.</li>
+<li>Logins and sign-ups, on sites where customers or members have accounts.</li>
+</ul>
+<h3>When an update does break something</h3>
+<p>Restoring the whole site from last night's backup sounds simple, but on a store it would also wipe out every order placed since. So the first step is narrower: roll back the one plugin or theme that caused the problem, or fix the conflict directly, and hold that update until its developer releases a fix. A full restore is the last resort, not the first. <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">Finding and fixing plugin conflicts</a> shows how the culprit is tracked down.</p>
+<h2>DIY, pay-per-fix or a monthly plan?</h2>
+<table>
+<thead><tr><th></th><th>Auto-updates and a backup plugin</th><th>Calling a developer when it breaks</th><th>Monthly maintenance plan</th></tr></thead>
+<tbody>
+<tr><td>Updates</td><td>Automatic, untested</td><td>Often skipped until something fails</td><td>Done after a backup, then tested</td></tr>
+<tr><td>When problems are found</td><td>When a customer tells you</td><td>After the damage is done</td><td>Usually before customers notice</td></tr>
+<tr><td>Backups</td><td>Often stored on the same server as the site</td><td>Whatever exists when it breaks</td><td>Regular and off-site</td></tr>
+<tr><td>Cost pattern</td><td>Low, until a failure</td><td>Unpredictable, urgent-rate fixes</td><td>A fixed monthly fee, month to month</td></tr>
+<tr><td>Best for</td><td>Simple sites with an owner who checks them</td><td>Sites that rarely change</td><td>Business sites, stores and sites that bring enquiries</td></tr>
+</tbody>
+</table>
+<p>Auto-updates are not a bad idea on their own; <a href="/blog/wordpress-auto-updates/">WordPress auto-updates</a> explains which ones are safe to switch on. What they lack is the backup beforehand and someone checking afterwards.</p>
+<h2>What website maintenance costs in India, and what drives the price</h2>
+<p>I do not publish one price, because two sites that look similar can need very different amounts of care. You get a fixed monthly quote after a free review of your site. What decides it:</p>
+<ul>
+<li><strong>Brochure site or online store.</strong> Stores need test orders after updates and usually run more plugins.</li>
+<li><strong>Plugin count,</strong> and how many are premium or custom-built.</li>
+<li><strong>Backup frequency</strong> and how long backups are kept.</li>
+<li><strong>Content work</strong> you expect each month.</li>
+<li><strong>Number of sites,</strong> for businesses or agencies with several.</li>
+<li><strong>Hosting,</strong> and whether it is part of a package or paid separately.</li>
+</ul>
+<p><a href="/blog/website-maintenance-cost-india/">Website maintenance cost in India</a> breaks these down further, and <a href="/blog/hidden-website-costs/">hidden website costs</a> covers the renewals that catch owners out.</p>
+<h2>What is included, and what is not</h2>
+<p>The plan contents are listed near the top of this page. Work that is quoted separately:</p>
+<ul>
+<li>New pages, new features and redesigns.</li>
+<li>Larger content projects, such as adding a product catalogue or rewriting service pages.</li>
+<li>A full speed overhaul, if the site is slow to begin with. That is a one-time <a href="/wordpress-speed-optimization/">speed optimization</a> job; the plan then keeps it fast.</li>
+<li>Hosting, domain and premium licence renewals, which are paid to the providers, ideally in your name.</li>
+</ul>
+<h2>Signs your site needs a maintenance plan</h2>
+<ul>
+<li>The dashboard shows a long list of pending updates and nobody is sure it is safe to click.</li>
+<li>You do not know when the last backup was taken, or where it is stored.</li>
+<li>The developer who built the site has moved on, and nobody else has the logins.</li>
+<li>Forms or order emails stopped arriving, and you heard about it from a customer.</li>
+<li>A premium theme or plugin licence expired, so updates stopped.</li>
+<li>Your host keeps emailing warnings about PHP versions, disk space or resource limits.</li>
+</ul>
+<h2>Who it is for</h2>
+<p>My WordPress maintenance plans suit business owners in India and abroad who would rather not think about WordPress at all, WooCommerce stores where an hour of downtime means lost orders, and sites with member or customer accounts. Agencies can also hand me their client sites on a white-label basis; see <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a>.</p>
+<h2>How to prepare, especially if you are switching developers</h2>
+<ul>
+<li>WordPress admin and hosting logins, plus the domain registrar login if you have it.</li>
+<li>Licence keys, and the account emails used to buy premium themes and plugins.</li>
+<li>A list of who else has access: past developers, agencies and staff.</li>
+<li>Any custom code or theme changes, and known issues you have been living with.</li>
+<li>Your most important pages and forms, and for stores, the payment methods you offer.</li>
+</ul>
+<p>If you are comparing providers, <a href="/blog/choose-wordpress-maintenance-provider/">how to choose a WordPress maintenance provider</a> lists the questions worth asking, including of me.</p>
+<h2>What you get each month, and if you leave</h2>
+<p>Each month you get a short report: updates applied, backup status, uptime, anything found and fixed, and anything I recommend. Your domain, hosting and WordPress accounts stay in your name throughout. Plans are month to month, so if you leave, you take the latest backup with you and my access is removed. If your site needs looking after, send me the address for a free review and a fixed monthly quote.</p>
         </div>
       </div>
     </section>
@@ -300,6 +412,22 @@
           <details>
             <summary>Can I cancel anytime?</summary>
             <p>Yes. Plans are month to month.</p>
+          </details>
+          <details>
+            <summary>How much does WordPress maintenance cost in India?</summary>
+            <p>It depends on whether the site is a store, how many plugins it runs, how often it needs backups and how much content work you expect each month. Rather than a one-size price, you get a fixed monthly quote after a free review of your site.</p>
+          </details>
+          <details>
+            <summary>Do you maintain WooCommerce stores?</summary>
+            <p>Yes. Store maintenance adds a test order through the payment flow after updates, checks on order emails and invoices, and a closer eye on scheduled tasks and the database as orders build up.</p>
+          </details>
+          <details>
+            <summary>Can I just switch on auto-updates instead?</summary>
+            <p>Auto-updates are fine for minor and security releases on simple sites. What they do not do is take a backup first, check forms and checkout afterwards, or roll back a bad update, which is what a maintenance plan adds.</p>
+          </details>
+          <details>
+            <summary>Where are my backups kept, and can I have a copy?</summary>
+            <p>Backups are stored off-site, separate from your hosting, so a server problem cannot take out both. You can ask for a copy at any time, and you take the latest one with you if you ever leave.</p>
           </details>
         </div>
       </div>
