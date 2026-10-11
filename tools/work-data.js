@@ -168,6 +168,39 @@ module.exports = [
       'Dedicated appointment page plus a contact form',
       'Click-to-chat WhatsApp button, click-to-call phone number and social links',
     ],
+    sections: [
+      {
+        "h": "How the site is organised",
+        "p": [
+          "The navigation is kept to four items, Home, About Us, Services and Contact, with a \"Book Now\" button beside them. The homepage moves from a local headline, \"Expert Dental Care with a Personal Touch in Agra\", to a short introduction to Dr. Sunaina and her team, four treatment cards, patient testimonials, animated counters, an FAQ, a contact form and a \"We're Just a Call Away\" block with the phone number, email address and clinic address.",
+          "Every inner page ends the same way, with testimonials, a contact form and the clinic's contact details, so wherever a patient lands they finish next to a way to get in touch. The Services page lists the treatments with a one-line description each and adds the clinic's opening hours, while the About page sets out the clinic's vision and mission in collapsible panels alongside a section on its strengths."
+        ]
+      },
+      {
+        "h": "Writing for nervous patients",
+        "p": [
+          "The brief asked for a gentle, personal tone that would reassure nervous patients, and the copy follows it. The introduction talks about patients feeling at ease from the moment they walk into the Rajpur Chungi clinic, and the treatment section is headed \"Modern, gentle dental care for confident, healthy smiles.\"",
+          "Each treatment description answers a practical worry in one sentence: cleaning and whitening in one visit, root canal treatment completed in a single sitting, a choice of metal or invisible braces, zirconia for crowns and bridges, titanium-rooted implants, and removable or fixed options for full mouth rehabilitation. The FAQ tackles the biggest worry head on with \"Is the treatment painful?\", alongside questions about services, booking and location.",
+          "Each testimonial names the treatment the patient had, such as a root canal, cleaning and scaling, braces or implants, together with the patient's name and occupation. A visitor weighing up one of those treatments can find someone who has already been through it."
+        ]
+      },
+      {
+        "h": "Booking and contact on a phone",
+        "p": [
+          "Effortless booking on mobile was one of the goals, so the main booking buttons, \"Book Now\" in the header and \"Book Appointment\" in the hero, open a WhatsApp chat with the clinic's number. A \"WhatsApp us\" chat button also appears on every page, so a patient can message the clinic from their phone without filling in a form.",
+          "For patients who prefer to write, there is a short form that asks only for name, email and message, and the phone number and email address sit in a contact block that is repeated in the footer. Three fields are quick to complete on a small screen.",
+          "The address is written with landmarks: Niramaya Care Centre, behind Gol Market on Takkar Road, opposite Frontline Electrical, in Rajpur Chungi. The FAQ repeats it in answer to \"Where is your clinic located?\", and the homepage copy names both Rajpur Chungi and Agra, which ties the clinic to its neighbourhood for patients and search engines alike. Footer links lead to the clinic's Instagram and YouTube channels, and a clinic video is embedded on the homepage."
+        ]
+      },
+      {
+        "h": "What other dental clinics can take from this",
+        "p": [
+          "Put your city and neighbourhood in the main headline, describe each treatment by what the patient actually wants to know (how many visits, whether it hurts, which material), and answer the pain question directly in an FAQ. Short, plain answers are easier to scan on a phone than a long list of procedures.",
+          "If your patients already message you on WhatsApp, make that the main booking button and keep a short form as a backup. Give your address with landmarks, repeat your contact details at the end of every page, and connect each testimonial to a treatment. This site does all of that with WordPress, Elementor and the Hello Elementor theme."
+        ]
+      }
+    ],
+    reading: ["website-for-dentists","clinic-website-checklist-for-doctors","whatsapp-on-business-website","online-appointment-booking-website","faq-page-seo"],
     stack: ['WordPress', 'Elementor', 'Hello Elementor theme'],
     related: ['wordpress-website-for-doctors', 'elementor-developer', 'wordpress-seo-services'],
   },
@@ -241,6 +274,39 @@ module.exports = [
       'Top bar with email, phone and a "Book an Appointment" button on every page',
       'Site search to help patients find information quickly',
     ],
+    sections: [
+      {
+        "h": "How the site is organised",
+        "p": [
+          "The whole site lives on one long homepage. The menu items (About, Service, Bronchoscopy, Gallery, Diseases, Appointment and Contact) jump down to sections of that page instead of opening new ones, so a patient who arrives from a search can scroll from the doctor's introduction to the booking form without waiting for another page to load. The order follows the questions a new patient usually has: who is this doctor, what does he treat, what do the tests involve and how do I book, with reviews, the address, opening hours and a map at the end.",
+          "The page opens with the doctor's profile, because building trust with qualifications and memberships was the first goal. It states his MBBS from Wardha University (2012) and MD in Pulmonary Medicine from Gujarat University (2016), his former role as an assistant professor at Dhiraj Hospital in Vadodara, and his membership of the Indian Medical Association, Indian Chest Society, European Respiratory Society, American College of Chest Physicians, American Thoracic Society and Asian Pacific Society of Respirology. A later \"Who are we and our history\" block adds his training in bronchoscopy and sleep apnoea and his work with free camps and charitable hospitals."
+        ]
+      },
+      {
+        "h": "Explaining tests, procedures and diseases",
+        "p": [
+          "Patients often come to a chest specialist after being told they need a test they have never heard of. The services section starts with a quick list (chest, sleep disorders, tuberculosis, allergy, spirometry, video bronchoscopy, pleural tapping, ICD insertion, allergy testing and immunisation, and vaccination), then gives each diagnostic service its own card with a photo, a heading and a short explanation. The cards cover pulmonary function testing, peak flow monitoring, pulse oximetry, BiPAP, CPAP and oxygen therapy rental, pulmonary rehabilitation, polysomnography, the six-minute walk test, sputum tests and vaccination.",
+          "The explanations are written for patients, not doctors. The six-minute walk test card says it measures how far a patient can walk on a flat, hard surface in six minutes; the peak flow card explains that patients can use the meter on their own to track asthma or COPD; the pulmonary rehabilitation card lists exercise training, nutrition counselling, meditation and yoga. Bronchoscopy gets its own section that answers \"What is a bronchoscopy?\" and \"Why does the doctor order a bronchoscopy?\" before explaining video bronchoscopy.",
+          "The Diseases section gives asthma, allergic rhinitis, tuberculosis, lung fibrosis, pneumonia, smoking-related diseases, obstructive sleep apnoea and lung cancer a heading and a short paragraph each. That serves the goal of helping patients find information about specific conditions, and the search option in the menu lets them jump straight to a term."
+        ]
+      },
+      {
+        "h": "Booking, reviews and local details",
+        "p": [
+          "A slim top bar above the menu shows the clinic's email address, a phone number that dials on tap and a \"Book an Appointment\" button. The booking form asks for name, email, phone, a preferred date and a time slot, with the slot dropdown listing the clinic's morning and evening sessions from Monday to Saturday and its Sunday morning session, plus a message box. The clinic receives a requested date and session rather than a bare \"please call me\" message.",
+          "Testimonials come from Google instead of being typed into the page. A reviews widget shows the doctor's Google rating and recent patient reviews, with a link that takes patients straight to Google to leave a review of their own, so every quote on the page can be traced back to a public profile.",
+          "The page closes with the full address of Niramaya Care Center on Agra Shamshabad Raja Kherah Marg, Rajpur Chungi, near Gol Market, the email and phone number again, opening hours and an embedded Google Map. The page title names the doctor, his specialty and the city, and the main heading reads \"Pulmonologist in Agra (Lungs, Chest, Allergy)\", the same words a patient is likely to type when looking for a chest specialist nearby."
+        ]
+      },
+      {
+        "h": "What other specialist doctors can take from this",
+        "p": [
+          "Lead with credentials a patient can check: degrees with the university and year, past teaching roles and named professional societies say far more than \"experienced specialist\". Then explain every test and procedure you offer in two or three plain sentences, because a patient who has been told to get a lung function test or a sleep study will usually look it up before booking.",
+          "Give each condition you treat its own heading, keep the phone number and booking button at the top of the page, and ask for a preferred date and session in the booking form. If your practice already has Google reviews, show them through a widget linked to your profile instead of retyping quotes. None of this needs a complicated build: this site runs on WordPress with Elementor and the OceanWP theme."
+        ]
+      }
+    ],
+    reading: ["clinic-website-checklist-for-doctors","website-for-specialist-doctors","online-appointment-booking-website","google-reviews-on-website","google-business-profile-checklist"],
     stack: ['WordPress', 'Elementor', 'OceanWP theme'],
     related: ['wordpress-website-for-doctors', 'elementor-developer', 'wordpress-seo-services'],
   },
