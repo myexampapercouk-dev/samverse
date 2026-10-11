@@ -475,7 +475,7 @@ const renderPost = (post, i) => {
   };
   // Add the brand only when the title stays short enough for Google results
   const base = post.seoTitle || post.title;
-  const pageTitle = (base + ' | Samverse').length <= 65 ? base + ' | Samverse' : base;
+  const pageTitle = (base + ' | Samverse').length <= 60 ? base + ' | Samverse' : base;
 
   const waLink = `https://wa.me/${WA}?text=${encodeURIComponent('Hi Sameer, I read your article "' + post.title + '" and need help.')}`;
   const icon = d => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
