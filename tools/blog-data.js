@@ -8330,53 +8330,107 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'local-landing-pages-without-doorway-pages',
-    seoTitle: 'Local Landing Pages Done Right (No Doorway Pages)',
-    title: 'Local Landing Pages Done Right, and How to Avoid Doorway Pages',
-    description: 'Create local landing pages that help customers and rank, without the doorway pages Google penalises: when to make them and what unique content they need.',
+    seoTitle: 'Local Landing Pages Done Right: City Pages vs Doorway Pages',
+    title: 'Local Landing Pages Done Right: City and Area Pages That Rank Without Becoming Doorway Pages',
+    description: 'Local landing pages done right: Google\'s doorway page policy, unique content for each city or area page, when not to build them and how to fix them.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-for-solar-and-power-companies'],
     body: `
-<p>Businesses serving several cities often want a page for each location, such as "plumber in Noida" and "plumber in Gurgaon". Done well, location pages help customers and rank locally. Done badly, they're "doorway pages": near-identical pages with the city name swapped, which Google treats as spam.</p>
+<p>Local landing pages are safe, and useful, when each one is about a place you genuinely serve and contains things that are only true of that place: the branch or team that covers it, jobs you've done there, local reviews, coverage and response times. They become doorway pages when they're near-identical copies with the city name swapped, built to catch searches and send everyone to the same place. Google's spam policies treat doorways as spam, so a set of thin city pages can hold back the pages themselves and the site around them.</p>
+<p>Planning which location pages to build, how to structure and link them, and which schema to add is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>. This guide sets out the rules so you can judge your own pages.</p>
+<p>It covers the principles for any city, area or locality page. If you have several branches, also read <a href="/blog/multi-location-business-website/">how to structure a multi-location business website</a>. If you travel to customers and have no shopfront, <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> covers the Business Profile side.</p>
 
-<h2>What doorway pages look like</h2>
-<ul>
-  <li>Dozens of pages with the same text and only the city name changed</li>
-  <li>Pages for places you don't actually serve</li>
-  <li>Pages that exist only to rank and funnel visitors elsewhere</li>
-</ul>
-<p>These can hurt your whole site's standing in search.</p>
+<h2>What Google's doorway page policy says</h2>
+<p>In its spam policies, Google describes doorways as sites or pages created to rank for specific, similar searches, which lead users to essentially the same destination. The examples Google gives include pages targeted at particular cities or regions that funnel visitors to one page, and substantially similar pages that look more like search results than a clear, browsable structure.</p>
+<p>Google also has a policy against scaled content abuse: producing large numbers of pages mainly to manipulate rankings, however they're made, including with AI tools. Bulk city pages generated from a template are exactly what both policies describe.</p>
+<p>The consequences range from Google simply indexing one of the near-duplicates and ignoring the rest, to a manual action shown in Search Console's Manual actions report. Either way, the pages don't do the job you built them for.</p>
+
+<h2>Doorway page or useful local page?</h2>
+<table>
+  <thead><tr><th>Doorway signals</th><th>Useful local page signals</th></tr></thead>
+  <tbody>
+    <tr><td>The same text on every page with the city name swapped</td><td>Text written for that place, with details that wouldn't fit any other page</td></tr>
+    <tr><td>Pages for places you don't actually serve</td><td>A branch there, or an area you genuinely cover with a named team</td></tr>
+    <tr><td>No local proof at all</td><td>Projects, photos and reviews from customers in that area</td></tr>
+    <tr><td>Reachable only through a footer list of fifty city links</td><td>Linked from an "Areas we serve" page and the relevant service pages</td></tr>
+    <tr><td>Every button goes to the same generic contact form</td><td>The local branch address, phone or WhatsApp number and opening hours</td></tr>
+    <tr><td>Headings like "Best plumber in Kothrud" repeated everywhere</td><td>Headings that answer what customers in that area ask</td></tr>
+    <tr><td>Generated in bulk, by a plugin or AI</td><td>Written or checked by someone who knows the area and the work done there</td></tr>
+  </tbody>
+</table>
 
 <h2>When a location page makes sense</h2>
 <ul>
-  <li>You have a <strong>physical branch or office</strong> there</li>
-  <li>You <strong>genuinely serve</strong> the area and have real local experience: projects, clients, reviews</li>
-  <li>You have <strong>something specific</strong> to say about that location</li>
+  <li><strong>You have a branch, office, clinic or showroom there.</strong> A page per real location is expected, and it pairs with that branch's Google Business Profile.</li>
+  <li><strong>You genuinely serve the area and have local work to show:</strong> projects, clients, reviews.</li>
+  <li><strong>Something about the service changes there:</strong> different coverage, response times, charges, local conditions or rules.</li>
+  <li><strong>People search for it.</strong> Search Console queries that include the area name, or Keyword Planner data, show whether a page would answer a real search.</li>
 </ul>
 
-<p>If your business has several branches or clinics, see <a href="/blog/multi-location-business-website/">how to structure a multi-location business website</a>, including Business Profiles and schema for each branch.</p>
-
-<h2>What makes a location page genuinely useful</h2>
-<ol>
-  <li><strong>Local details:</strong> branch address, map, hours, local phone and team</li>
-  <li><strong>Local proof:</strong> projects completed in that area, photos, testimonials from local clients</li>
-  <li><strong>Local specifics:</strong> areas covered, typical travel times, local regulations or conditions relevant to your service</li>
-  <li><strong>Unique content:</strong> written for that location, not a template with the name swapped</li>
-  <li><strong>Clear call to action</strong> with local contact options</li>
-</ol>
-
-<h2>Alternatives if you don't have local specifics</h2>
+<h2>When not to build one</h2>
 <ul>
-  <li>One strong service page that lists the areas you serve</li>
-  <li>A Google Business Profile with service areas set</li>
-  <li>Location-focused articles only where you have real insight (for example "Solar subsidy process in Rajasthan")</li>
+  <li>You could serve the place but haven't, and have nothing local to say about it</li>
+  <li>The only difference between pages would be the name of the city</li>
+  <li>The area is a neighbourhood next to your main location, already covered by your main page and Business Profile</li>
+  <li>You sell online across India with no local element, such as delivery from one warehouse; a page per city adds nothing for the buyer</li>
+  <li>You have fifty localities in mind; start with the two or three that bring the most work and do them properly</li>
+  <li>Nobody will keep the pages updated when branches, numbers or teams change</li>
+</ul>
+<p>The alternatives often work better: one strong service page with a clear list of the areas you cover, service areas set in your <a href="/blog/google-business-profile-checklist/">Google Business Profile</a>, and location-focused articles where you have genuine insight. For example, the site I built for <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, a Hyderabad interior design studio, includes a blog with location-focused articles for Hyderabad, Vizag and Vijayawada, the cities the studio serves.</p>
+
+<h2>What to put on a local landing page</h2>
+<ol>
+  <li><strong>An opening that answers the local question:</strong> do you serve this area, how, and how quickly?</li>
+  <li><strong>Who covers it:</strong> the branch address, map and hours if customers visit, or the team and base that serve the area if you travel to them.</li>
+  <li><strong>Local proof:</strong> projects completed there with photos (with the customer's permission, and no house numbers), and genuine reviews from local customers.</li>
+  <li><strong>Coverage details:</strong> localities or pin codes covered, typical response or travel times, and any visiting charge.</li>
+  <li><strong>Local conditions:</strong> anything that changes the work there, such as building types, water quality, society rules on working hours, or local permissions.</li>
+  <li><strong>Area-specific FAQs:</strong> parking, timings, which branch to visit, whether you cover a nearby town.</li>
+  <li><strong>A local call to action:</strong> the number or WhatsApp that actually reaches the people serving that area.</li>
+</ol>
+<h3>How much unique content is enough?</h3>
+<p>There's no word count. The test is whether a customer in that area learns something they wouldn't learn from your main service page. If the local parts are one sentence inside a page of shared text, it's a doorway. If the local parts are most of the page, and the shared material is a short summary with a link to the main service page, you're fine.</p>
+
+<h2>URLs, internal links, schema and hreflang</h2>
+<ul>
+  <li><strong>URLs:</strong> pick one consistent pattern, such as /locations/pune/ or /ac-repair/pune/. Be wary of every combination of service and city: ten services in twenty cities is two hundred pages, and very few businesses have something unique to say on each.</li>
+  <li><strong>Internal links:</strong> link location pages from an "Areas we serve" page and from the relevant service pages, with plain anchor text. A footer packed with city links is a classic doorway pattern.</li>
+  <li><strong>Canonicals:</strong> each location page should point its canonical tag at itself, not at the main service page. If two pages are so similar you'd want to canonicalise one to the other, merge them instead; see <a href="/blog/duplicate-content-explained/">duplicate content explained</a>.</li>
+  <li><strong>Schema:</strong> use LocalBusiness markup with the address on pages for real branches. For areas without an address, describe coverage with areaServed in your Organization or Service markup rather than inventing addresses; see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</li>
+  <li><strong>Hreflang isn't needed:</strong> it tells Google about language or country versions of the same page. A Pune page and a Nashik page in English aren't alternate versions of each other, so they don't need it. It only matters if you also publish Hindi or Marathi versions; see <a href="/blog/hreflang-multilingual-seo-india/">hreflang for Indian websites</a>.</li>
 </ul>
 
-<h2>Supporting local rankings</h2>
-<p>Location pages work best alongside a complete Google Business Profile, consistent contact details and genuine reviews. See the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> and <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+<h2>Building location pages in WordPress without making doorways</h2>
+<p>Use a template for the structure, not the words. A custom post type for locations, with custom fields for the address, hours, areas covered, team, projects and reviews, keeps every page consistent and makes the gaps obvious: if a location has no projects or reviews to fill the fields, it isn't ready to publish. See <a href="/blog/custom-post-types-fields/">custom post types and custom fields</a> for how that works.</p>
+<p>Avoid plugins that generate hundreds of pages from a list of city names or spun text. They're quick, and they produce exactly what Google's policies describe.</p>
 
-<h2>The rule of thumb</h2>
-<p>If a location page would still be useful to a customer in that city even if search engines didn't exist, it's probably fine. If it only exists to catch searches, don't build it. Unsure? A <a href="/wordpress-seo-services/">WordPress SEO</a> review can help plan location pages safely.</p>
+<h2>How to fix existing doorway pages</h2>
+<ol>
+  <li><strong>List every location page</strong> and check each one in Search Console's Performance report: impressions, clicks and the queries it appears for.</li>
+  <li><strong>Keep and improve</strong> the few that get impressions and cover places you genuinely serve. Add the local substance described above.</li>
+  <li><strong>Merge the rest</strong> into the main service page or a single "Areas we serve" page listing your coverage.</li>
+  <li><strong>Redirect retired URLs with 301s</strong> to the most relevant remaining page, not all to the homepage, and remove them from your sitemap.</li>
+  <li><strong>If you have a manual action,</strong> fix every affected page first, then request reconsideration in Search Console explaining what you changed.</li>
+</ol>
+<p>For a worked example of these rules applied to one city, see <a href="/blog/local-seo-pune-businesses/">local SEO for Pune businesses</a>.</p>
+
+<h2>FAQs</h2>
+<h3>What is a doorway page in SEO?</h3>
+<p>A page built mainly to rank for a particular search, often one of many near-identical pages targeting different cities or keyword variations, which sends visitors on to the same place. Google's spam policies treat doorways as spam.</p>
+<h3>Are city pages considered doorway pages?</h3>
+<p>Not automatically. A city page for a real branch, or an area you serve with genuine local content, is a normal and useful page. It becomes a doorway when it's one of a set of copies with only the place name changed.</p>
+<h3>How many location pages should I create?</h3>
+<p>As many as you have real locations, plus areas where you have genuine local work and something specific to say. For most small businesses that means a handful, not dozens. Start with your busiest two or three areas.</p>
+<h3>How much unique content does a location page need?</h3>
+<p>Enough that the local information is the main part of the page: who serves the area, local projects and reviews, coverage, timings and local questions. There's no minimum word count; a short page with real local detail beats a long templated one.</p>
+<h3>Do I need hreflang for city pages?</h3>
+<p>No. Hreflang is for language and country versions of the same page. City pages in the same language for the same country don't need it.</p>
+<h3>Can I use AI to write location pages?</h3>
+<p>As a drafting aid, carefully. The facts that make a location page useful, such as local jobs, reviews and coverage, have to come from you, and mass-producing pages with AI falls under Google's scaled content abuse policy.</p>
+
+<p>Not sure whether your location pages help or hurt? I can review them, plan which to keep, merge or build, and set up the structure, internal links and schema; see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -11028,60 +11082,106 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   {
     slug: 'conversion-rate-optimization-basics',
     seoTitle: 'Conversion Rate Optimization Basics for Small Businesses',
-    title: 'Conversion Rate Optimization (CRO) Basics for Small Business Websites',
-    description: 'Conversion rate optimization for small businesses: measure conversions, find leaks, form hypotheses, test changes, plus the quick wins that usually work.',
+    title: 'Conversion Rate Optimization (CRO) Basics for Small Business Websites: Measure, Find the Leaks, Fix and Test',
+    description: 'Conversion rate optimization basics for small business websites: track conversions in GA4, find leaks with Microsoft Clarity, test changes and quick wins.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Growth',
     related: ['landing-page-design', 'website-redesign', 'wordpress-seo-services'],
     body: `
-<p>Conversion rate optimization (CRO) means getting more enquiries, bookings or sales from the visitors you already have. Doubling your conversion rate has the same effect as doubling your traffic, often at a fraction of the cost.</p>
+<p>Conversion rate optimization (CRO) means getting more of the visitors you already have to take the action you want: send an enquiry, call, message you on WhatsApp, book or buy. The basics are to track those actions properly in Google Analytics 4, find the pages and devices where visitors drop off, using GA4 and a free tool such as Microsoft Clarity, fix the biggest leaks first, and measure whether each change helped. On most small business sites, that means clearer headlines, a visible call to action, shorter forms, real proof and faster mobile pages, rather than endless tiny tests.</p>
+<p>For campaign traffic, a focused landing page is often the biggest single improvement. My <a href="/landing-page-design/">landing page design</a> service builds fast, single-goal pages with GA4 events, Meta Pixel and Google Ads conversion tracking set up, so you can see which clicks become leads.</p>
+<p>This guide is the process. For a list of specific fixes, see <a href="/blog/get-more-enquiries-from-your-website/">12 ways to get more enquiries from your website</a>.</p>
 
-<h2>Step 1: Measure</h2>
+<h2>What conversion rate optimization means in practice</h2>
+<p>Your conversion rate is the number of conversions divided by the number of visitors. If 1,000 visitors a month bring 20 enquiries, getting that to 30 enquiries from the same 1,000 visitors gives you the same result as 500 extra visitors would at the old rate, without spending more on SEO or ads.</p>
+<p>First decide what counts. Most sites have one or two main conversions and a few smaller signals of interest:</p>
+<table>
+  <thead><tr><th>Action</th><th>Type</th><th>How to track it</th></tr></thead>
+  <tbody>
+    <tr><td>Enquiry or quote form sent</td><td>Main conversion</td><td>A GA4 key event fired by a thank-you page or a form submission event</td></tr>
+    <tr><td>Tap on a phone number</td><td>Main conversion</td><td>A GA4 event on clicks of tel: links</td></tr>
+    <tr><td>WhatsApp click</td><td>Main conversion</td><td>A GA4 event on clicks of wa.me links</td></tr>
+    <tr><td>Order or booking</td><td>Main conversion</td><td>The purchase event from WooCommerce or the booking tool</td></tr>
+    <tr><td>Brochure or price list download</td><td>Smaller signal</td><td>GA4's enhanced measurement records file downloads automatically</td></tr>
+    <tr><td>Visit to the pricing or contact page</td><td>Smaller signal</td><td>Page views of those pages</td></tr>
+  </tbody>
+</table>
+
+<h2>Step 1: Measure conversions properly</h2>
 <ul>
-  <li>Define conversions: form submissions, calls, WhatsApp clicks, orders</li>
-  <li>Track them in analytics; see <a href="/blog/setup-google-analytics-search-console/">GA4 and Search Console setup</a></li>
-  <li>Know your baseline: conversion rate overall and by key page</li>
+  <li><strong>Set up GA4 and Search Console</strong> if you haven't; see <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a>.</li>
+  <li><strong>Create events for your main conversions</strong> and mark them as key events (Google's newer name for conversions in GA4). GA4's automatic form tracking is often unreliable, so use a thank-you page or a proper form submission event; see <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</li>
+  <li><strong>Test every event</strong> in GA4's DebugView or Realtime report by sending a test enquiry and tapping the phone and WhatsApp buttons yourself.</li>
+  <li><strong>Record a baseline:</strong> conversions per month, the conversion rate overall, and the rate for your main pages, on mobile and desktop, and by traffic source.</li>
 </ul>
+<p>In GA4, Reports &gt; Engagement &gt; Pages and screens shows traffic and key events by page, Reports &gt; Acquisition &gt; Traffic acquisition splits them by source, and Explore &gt; Funnel exploration shows where people drop out of a multi-step process such as a booking.</p>
 
-<h2>Step 2: Find the leaks</h2>
-<ul>
-  <li>High-traffic pages with low conversion rates</li>
-  <li>Where mobile visitors drop off compared with desktop</li>
-  <li>Checkout or form steps where people abandon</li>
-  <li>Heatmaps and session recordings (with privacy settings) show where people get stuck</li>
-  <li>Ask customers what nearly stopped them from contacting you</li>
-</ul>
+<h2>Step 2: Find where visitors drop off</h2>
+<p>Look for pages with plenty of visitors but few conversions, devices that convert much worse than others, and ad landing pages people leave quickly. Then watch what happens on those pages. Microsoft Clarity is free at the time of writing and adds heatmaps, scroll maps and session recordings, plus filters for rage clicks (repeated clicking in frustration), dead clicks (clicks on things that aren't links) and quick backs (people who leave a page almost immediately). It can also connect to GA4. Setup, masking and privacy settings are covered in <a href="/blog/website-heatmaps-session-recordings/">heatmaps and session recordings</a>.</p>
+<table>
+  <thead><tr><th>What you see</th><th>Likely problem</th><th>What to try</th></tr></thead>
+  <tbody>
+    <tr><td>People scroll the page but rarely click the call to action</td><td>The button is unclear, weak or easy to miss</td><td>One clear action above the fold, repeated after key sections</td></tr>
+    <tr><td>Rage clicks on an image or heading</td><td>Visitors expect it to be a link</td><td>Make it clickable, or change how it looks</td></tr>
+    <tr><td>Many people start the form, few send it</td><td>Too many fields, or confusing errors</td><td>Ask only what you need to call back; fix error messages</td></tr>
+    <tr><td>Mobile converts far worse than desktop</td><td>Layout, speed or small tap targets</td><td>Fix the mobile layout; add tap-to-call and WhatsApp</td></tr>
+    <tr><td>Quick backs from an ad landing page</td><td>The page doesn't match what the ad promised</td><td>Repeat the ad's offer in the headline</td></tr>
+    <tr><td>People view the pricing page and leave</td><td>Price shock, or not enough information to decide</td><td>Explain what's included and answer cost questions</td></tr>
+  </tbody>
+</table>
+<p>Also ask your customers. "What nearly stopped you contacting us?" on a follow-up call often finds problems no tool will show.</p>
 
-<p>For how to set these tools up, what to look for and which privacy settings to use, see <a href="/blog/website-heatmaps-session-recordings/">heatmaps and session recordings</a>.</p>
+<h2>Step 3: Turn what you saw into a hypothesis</h2>
+<p>Write each idea down in one sentence: "Because recordings show mobile visitors scrolling past the form, we believe adding a WhatsApp button at the top of service pages will increase mobile enquiries, measured by WhatsApp clicks and form sends from mobile." It forces you to say what you expect and how you'll know.</p>
+<p>Then rank your list by likely impact, how confident you are, and how easy it is to do. Start with high-impact, easy changes on the pages that get the most visitors.</p>
 
-<h2>Step 3: Form hypotheses</h2>
-<p>For example: "If we add WhatsApp next to the form on service pages, more mobile visitors will enquire, because many prefer chat." A clear hypothesis makes results easier to interpret.</p>
+<h2>Step 4: Make the change and measure it</h2>
+<p>Most small business sites don't have enough traffic for a reliable A/B test of small details. Make one clear, significant change at a time and compare a fixed period afterwards with the same length of time before, keeping a short log of what changed and when. Watch out for seasons that distort results, such as festival months or exam and admission periods.</p>
+<p>If you run ads or have plenty of traffic, a proper A/B test is worth it, especially on landing pages; see <a href="/blog/landing-page-ab-testing/">A/B testing landing pages</a> for tools and how to avoid false conclusions.</p>
 
-<h2>Step 4: Test changes</h2>
-<ul>
-  <li>Change one thing at a time where possible</li>
-  <li>Run changes long enough to get meaningful numbers</li>
-  <li>For low-traffic sites, make bigger, clearly better changes rather than tiny A/B tests</li>
-</ul>
-
-<p>Pop-ups are a common thing to test; see <a href="/blog/exit-intent-popups/">when exit-intent pop-ups help and when they hurt</a> before adding one.</p>
-
-<h2>Quick wins that usually work</h2>
+<h2>Quick wins that usually help</h2>
 <ol>
-  <li>A clearer headline that says what you do and for whom</li>
-  <li>A visible primary call to action above the fold</li>
-  <li>WhatsApp and tap-to-call on mobile</li>
-  <li>Shorter forms</li>
-  <li>Testimonials and proof near calls to action</li>
-  <li>Faster pages, especially on mobile</li>
-  <li>FAQs answering price, timeline and process objections</li>
+  <li>A headline that says what you do, for whom, and where</li>
+  <li>One main call to action per page, visible without scrolling</li>
+  <li>WhatsApp and tap-to-call buttons on mobile</li>
+  <li>Shorter forms, or a short multi-step form for detailed quotes; see <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a></li>
+  <li>Genuine reviews, project photos and client logos you're allowed to use, placed near the call to action</li>
+  <li>FAQs that answer price, timing and process questions</li>
+  <li>Fast pages on mobile data</li>
+  <li>A thank-you page that says what happens next, and fast replies to every enquiry</li>
 </ol>
-<p>More ideas: <a href="/blog/get-more-enquiries-from-your-website/">12 ways to get more enquiries</a>.</p>
+<p>Trust is often the hidden leak; the <a href="/blog/website-trust-signals-checklist/">website trust signals checklist</a> shows what visitors look for before they get in touch.</p>
 
-<h2>Track the value</h2>
-<p>Connect conversions to revenue to see what improvements are worth; see <a href="/blog/measure-website-roi/">measuring website ROI</a>.</p>
+<h2>CRO for landing pages and ad traffic</h2>
+<p>Paid clicks are where CRO pays back fastest, because every wasted click has a cost. The basics are message match (the page repeats the ad's offer), no menu or distractions, one goal, a short form with WhatsApp alongside, and tracking that reports each lead back to Google Ads or Meta. Sending ad clicks to your homepage is one of the most common leaks.</p>
 
-<p>For campaign traffic, focused <a href="/landing-page-design/">landing pages</a> are often the biggest CRO win.</p>
+<h2>Track the value, not just the rate</h2>
+<p>More enquiries isn't automatically better. A change that doubles form sends but fills them with spam or poor-fit leads hasn't helped. Note which enquiries become customers, even in a simple spreadsheet, and judge changes by qualified leads and sales; see <a href="/blog/measure-website-roi/">measuring website ROI</a>.</p>
+
+<h2>Common CRO mistakes</h2>
+<ul>
+  <li>Testing button colours on a site with a few hundred visits a month</li>
+  <li>Changing several things at once, so you can't tell what worked</li>
+  <li>Counting form starts or page views as conversions</li>
+  <li>Copying a competitor's design without knowing whether it works for them</li>
+  <li>Adding pop-ups everywhere; see <a href="/blog/exit-intent-popups/">when exit-intent pop-ups help and when they hurt</a></li>
+  <li>Ignoring mobile, where much of the traffic is</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What is conversion rate optimization in simple terms?</h3>
+<p>Making changes to your website so that more of the people who visit it take the action you want, such as sending an enquiry, calling or buying, and measuring whether those changes worked.</p>
+<h3>What is a good conversion rate for a small business website?</h3>
+<p>It depends heavily on the industry, the offer and where the traffic comes from, so published averages aren't much use. Compare against your own baseline and aim to improve it month by month.</p>
+<h3>Which tools do I need for CRO?</h3>
+<p>Google Analytics 4 to count conversions, Microsoft Clarity for heatmaps and recordings, and Search Console to see which searches bring visitors. All three are free at the time of writing. Google Tag Manager helps with tracking clicks and forms.</p>
+<h3>Can I do CRO with low traffic?</h3>
+<p>Yes. Skip formal A/B tests, use recordings and customer feedback to find problems, make clearly better changes, and compare before and after over a few weeks.</p>
+<h3>Is CRO the same as A/B testing?</h3>
+<p>No. A/B testing is one method within CRO. CRO also includes tracking, research, fixing obvious problems and judging results by lead quality.</p>
+
+<p>Running ads and want more of those clicks to become enquiries? I build focused landing pages with tracking set up, and can help you test headlines and offers; see <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -16415,50 +16515,106 @@ define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
   },
   {
     slug: 'topic-clusters-pillar-pages',
-    seoTitle: 'Topic Clusters & Pillar Pages Explained for Small Businesses',
-    title: 'Topic Clusters and Pillar Pages: Organise Your Content to Rank',
-    description: 'Topic clusters and pillar pages: link a service page to related articles, why it helps SEO and users, and how to plan clusters for a small business.',
+    seoTitle: 'Topic Clusters & Pillar Pages Explained for WordPress Sites',
+    title: 'Topic Clusters and Pillar Pages Explained: How to Plan Them and Build Them in WordPress',
+    description: 'Topic clusters and pillar pages explained: what a pillar page is, how to plan a cluster and how to build one in WordPress with links and categories.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development', 'website-redesign'],
     body: `
-<p>Publishing random blog posts rarely builds rankings. Organising content into topic clusters, where related pages support and link to each other, shows search engines and visitors that your site covers a subject in depth.</p>
+<p>A topic cluster is a group of pages about one subject: a broad pillar page that covers the topic as a whole and links out to detailed articles, each answering one specific question, with every article linking back to the pillar. On a WordPress business site, the pillar is usually a page, often the service page you want to rank, and the cluster articles are blog posts connected to it by links in the body text. Organised this way, your content shows visitors and search engines that you cover the subject properly, instead of scattering unrelated posts.</p>
+<p>Site structure and internal linking are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, alongside titles, schema and Search Console. This guide explains how to plan a cluster yourself and build it in WordPress.</p>
+<p>Clusters depend on two other skills: choosing what to write about, covered in <a href="/blog/keyword-research-small-business/">keyword research for small businesses</a>, and linking pages well, covered in <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
 
-<h2>What a topic cluster is</h2>
+<h2>The parts of a topic cluster</h2>
+<table>
+  <thead><tr><th>Part</th><th>What it is</th><th>Typical WordPress setup</th></tr></thead>
+  <tbody>
+    <tr><td>Pillar page</td><td>A broad page covering the whole topic at overview level</td><td>A page: a service page, a long guide or a hub</td></tr>
+    <tr><td>Cluster content</td><td>Articles that each answer one question or subtopic in depth</td><td>Blog posts, usually in one category</td></tr>
+    <tr><td>Links</td><td>The pillar links to each article; each article links back to the pillar and to closely related articles</td><td>Contextual links in the body text, plus breadcrumbs</td></tr>
+  </tbody>
+</table>
+
+<h2>What is a pillar page?</h2>
+<p>A pillar page is the central page for a topic. It gives a complete overview, answers the main question directly, and hands readers on to detailed articles for everything it only summarises. There are three common types:</p>
 <ul>
-  <li><strong>Pillar page:</strong> a broad, central page on a topic. For businesses, this is often a service page</li>
-  <li><strong>Cluster content:</strong> articles covering specific questions and subtopics in detail</li>
-  <li><strong>Links:</strong> cluster articles link to the pillar, and the pillar links to the articles</li>
+  <li><strong>A service page as the pillar.</strong> For most businesses this is the right choice, because it's the page you most want to rank and the one that turns visitors into enquiries.</li>
+  <li><strong>A long guide.</strong> A thorough guide to a topic, useful when the subject is informational, such as a guide to choosing a solar system for a home.</li>
+  <li><strong>A hub page.</strong> A curated page that introduces a topic and organises links to every related article, often built on top of a category.</li>
 </ul>
+<p>A good pillar isn't simply the longest page on your site. It covers each subtopic in a paragraph or two, links to the article that covers it fully, and is kept up to date as articles are added.</p>
 
-<h2>An example</h2>
-<p>On this site, the <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service page acts as a pillar. Supporting articles such as <a href="/blog/why-is-my-wordpress-site-slow/">why your site is slow</a>, <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> and <a href="/blog/wordpress-caching-explained/">caching explained</a> link back to it and to each other.</p>
+<h2>An example from this site</h2>
+<p>The <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service page works as a pillar. Articles such as <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a>, <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> and <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> each go deep on one question, link back to the service page and link to each other where it helps the reader. The security articles are organised around the malware removal page in the same way.</p>
 
-<h2>Why clusters help</h2>
+<h2>Why topic clusters help SEO and visitors</h2>
 <ul>
-  <li><strong>Topical depth:</strong> covering a subject thoroughly builds relevance</li>
-  <li><strong>Internal links:</strong> pass authority to your most important pages</li>
-  <li><strong>Better user journeys:</strong> readers find related answers easily and move towards enquiring</li>
-  <li><strong>Less overlap:</strong> each page has a clear, distinct job</li>
+  <li><strong>Coverage:</strong> a set of linked pages answering the questions around a subject helps search engines understand what your site is about and which page is the main one.</li>
+  <li><strong>Internal links:</strong> links from related articles help Google find and understand your most important pages, and pass some of the value those articles earn.</li>
+  <li><strong>Clear page roles:</strong> when each page has one job, your pages stop competing with each other for the same searches.</li>
+  <li><strong>Better journeys:</strong> someone who arrives on an article about one problem can move to the service page that solves it, which is where enquiries come from.</li>
 </ul>
+<p>Clusters aren't a trick. They're a way of organising content that's genuinely useful; a cluster of thin posts helps nobody.</p>
 
-<h2>How to plan clusters</h2>
+<h2>How to plan a topic cluster</h2>
 <ol>
-  <li><strong>Pick pillars:</strong> your main services or product categories</li>
-  <li><strong>List questions:</strong> what customers ask before buying each service; see <a href="/blog/keyword-research-small-business/">keyword research</a></li>
-  <li><strong>Group them:</strong> each question becomes an article, or a section of the pillar if it's short</li>
-  <li><strong>Link deliberately:</strong> every article links to its pillar with descriptive anchor text</li>
-  <li><strong>Fill gaps over time</strong> with a content calendar; see <a href="/blog/website-content-calendar/">content calendar</a></li>
+  <li><strong>Pick your pillars.</strong> Start with your main services or product categories. A small business might have three to six.</li>
+  <li><strong>List the questions customers ask before buying:</strong> on calls, on WhatsApp, in emails and in sales meetings. Add queries from Search Console and the "People also ask" boxes in Google.</li>
+  <li><strong>Decide article or section.</strong> If a question can be answered in a paragraph, it belongs on the pillar. If it needs its own explanation and people search for it on its own, it deserves an article.</li>
+  <li><strong>Give every page one main question</strong> and write it down, so two pages never target the same thing.</li>
+  <li><strong>Link deliberately:</strong> each article links to the pillar with descriptive anchor text, and the pillar links to each article where its subtopic comes up.</li>
+  <li><strong>Fill the gaps over time,</strong> starting with the questions closest to a buying decision; a simple <a href="/blog/website-content-calendar/">content calendar</a> keeps it going.</li>
 </ol>
+<p>Here's what a cluster map might look like for a rooftop solar installer:</p>
+<table>
+  <thead><tr><th>Page</th><th>Type</th><th>Main question it answers</th></tr></thead>
+  <tbody>
+    <tr><td>Rooftop solar installation</td><td>Pillar (service page)</td><td>Who installs rooftop solar here, and how do I get a quote?</td></tr>
+    <tr><td>On-grid vs off-grid vs hybrid</td><td>Cluster article</td><td>Which type of system suits my home or business?</td></tr>
+    <tr><td>How to size a solar system</td><td>Cluster article</td><td>How many kW do I need for my electricity bill?</td></tr>
+    <tr><td>Net metering explained</td><td>Cluster article</td><td>How does exporting power to the grid work?</td></tr>
+    <tr><td>Subsidy application process</td><td>Cluster article</td><td>How do I apply, and what documents do I need?</td></tr>
+    <tr><td>Solar panel cleaning and maintenance</td><td>Cluster article</td><td>What upkeep does a system need after installation?</td></tr>
+  </tbody>
+</table>
 
-<h2>Avoid cannibalisation</h2>
-<p>If two pages target the same keyword, they compete with each other. Give each page a distinct focus, and merge or redirect overlapping content.</p>
+<h2>How to build topic clusters in WordPress</h2>
+<h3>Pillars as pages, clusters as posts</h3>
+<p>Make the pillar a page and the cluster articles posts in a matching category. You don't need nested URLs such as /solar/net-metering/; the links between pages matter far more than folders in the address, and changing existing URLs to create folders risks losing rankings.</p>
+<h3>Contextual links do most of the work</h3>
+<p>Add links inside the body text, where the subtopic comes up, with anchor text that describes the destination. On the pillar, a short "Guides on this topic" section listing every cluster article helps too. Related-post widgets are a bonus, but they pick links automatically and don't replace deliberate ones. Some SEO plugins, including Rank Math and Yoast, offer internal link suggestions, although at the time of writing these may depend on the plan you use.</p>
+<h3>Categories, tags and breadcrumbs</h3>
+<p>A category archive can act as a hub if you add a proper introduction, which most themes show from the category description. Keep tags under control; dozens of tags with one or two posts each create thin archive pages. Turn on breadcrumbs in your SEO plugin, so every article shows its place in the structure and Google gets breadcrumb structured data.</p>
 
-<h2>Show clusters in your navigation</h2>
-<p>Category or topic pages that group related articles help visitors and crawlers see the structure. This blog groups articles into topics like <a href="/blog/topic/speed-security/">speed, security and maintenance</a>.</p>
+<h2>Avoid keyword cannibalisation</h2>
+<p>If two of your pages target the same search, they compete, and often neither ranks well. In Search Console's Performance report, click a query and open the Pages tab: if two pages keep swapping places for it, they overlap. Fix it by merging the weaker page into the stronger one and redirecting it, or by rewriting each so it answers a clearly different question, then pointing your internal links at the right page. <a href="/blog/duplicate-content-explained/">Duplicate content explained</a> covers the related problems.</p>
 
-<h2>Quality over quantity</h2>
-<p>A cluster of genuinely useful pages beats dozens of thin posts. Write each article to fully answer its question.</p>
+<h2>Common mistakes</h2>
+<ul>
+  <li>A pillar that is just a list of links with no content of its own</li>
+  <li>Cluster articles that never link back to the pillar or the service page</li>
+  <li>Publishing dozens of posts while the service pages themselves stay thin; see <a href="/blog/seo-for-service-pages-without-blog/">ranking a service business without a blog</a></li>
+  <li>Writing about topics your customers don't search for or that don't lead to anything you sell</li>
+  <li>Orphan posts with no internal links pointing to them</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What is a pillar page in WordPress?</h3>
+<p>It's a page, usually created under Pages rather than Posts, that covers a topic broadly and links to detailed blog posts on each subtopic. On a business site, the pillar is often the main service page for that topic.</p>
+<h3>What is the difference between a pillar page and a cluster page?</h3>
+<p>The pillar covers the whole topic at overview level and links out. A cluster page answers one specific question in depth and links back to the pillar.</p>
+<h3>How long should a pillar page be?</h3>
+<p>Long enough to cover every subtopic briefly and answer the main question properly; there's no target word count. A focused service page with clear sections and links to each article can work better than a very long page.</p>
+<h3>Should a pillar be a page or a post in WordPress?</h3>
+<p>Usually a page, because it's evergreen and sits in your main structure. Long guides sometimes work as posts, which is fine as long as they're linked prominently and kept updated.</p>
+<h3>Do topic clusters still work for SEO?</h3>
+<p>Yes, because they're simply good organisation: related pages that answer real questions and link sensibly. They don't work as a shortcut for thin content.</p>
+<h3>How many articles does a topic cluster need?</h3>
+<p>There's no fixed number. Start with the few questions customers ask most before buying and add more as you find new questions in enquiries and Search Console.</p>
+
+<p>Want your service pages and articles organised so they support each other? I can audit your structure, map pages to searches, fix cannibalisation and set up internal links and breadcrumbs; see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -17671,61 +17827,124 @@ LIMIT 20;</code></pre>
   {
     slug: 'deceptive-site-ahead-warning-fix',
     seoTitle: '"Deceptive Site Ahead" Warning: How to Fix and Remove It',
-    title: '"Deceptive Site Ahead" or "Dangerous Site" Warning: How to Fix It',
-    description: 'Deceptive site ahead warning? Why browsers flag your site, how to confirm it in Search Console, clean the site, request a Google review and prevent repeats.',
+    title: '"Deceptive Site Ahead" Warning on Your Website: How to Find the Phishing Pages, Clean Up and Get Google to Remove It',
+    description: 'How to remove the "Deceptive site ahead" warning: find the phishing pages, clean the site, request a review in Search Console and know how long it takes.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-seo-services'],
     body: `
-<p>A red full-screen warning saying "Deceptive site ahead" or "The site ahead contains malware" is one of the worst things that can happen to a business website. Most visitors turn back immediately. The warning comes from Google Safe Browsing, which is used by Chrome and other browsers, and it can be removed once the cause is fixed.</p>
+<p>To remove the "Deceptive site ahead" warning, open the Security issues report in Google Search Console to see which pages Google flagged, delete those phishing pages and whatever let the attacker in, then click Request Review. Once Google confirms the site is clean, Chrome and the other browsers that use Google Safe Browsing stop showing the red screen, usually within a few days for phishing. The warning does not fade on its own while the bad pages are still there.</p>
+<p>Most of the time the cause is a hacked site: someone has uploaded a fake bank, courier, webmail or payment login page into your hosting account and is sending people to it from emails or text messages. If you want it handled for you, my <a href="/wordpress-malware-removal/">WordPress malware removal service</a> covers finding the phishing kit, cleaning the site, hardening it and help with the Google review.</p>
+<p>This guide is about the full-screen browser warning. If Google shows "This site may be hacked" under your listing in search results instead, see <a href="/blog/this-site-may-be-hacked-google/">removing the "This site may be hacked" label</a>. If you are not yet sure what the attacker did, the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a> are a good place to start.</p>
 
-<h2>Why it happens</h2>
+<h2>What the "Deceptive site ahead" warning means</h2>
+<p>Google Safe Browsing keeps a list of web pages that trick people or harm their devices. Chrome, Firefox and Safari all check pages against Google's list at the time of writing, so a single flag can block most of your visitors at once. The wording tells you what Google thinks it found.</p>
+<table>
+  <thead><tr><th>What visitors see</th><th>What Google thinks it found</th><th>Category in Search Console</th></tr></thead>
+  <tbody>
+    <tr><td>"Deceptive site ahead"</td><td>Phishing: pages that trick people into entering passwords, card details, OTPs or personal information</td><td>Social engineering (deceptive pages)</td></tr>
+    <tr><td>"The site ahead contains malware"</td><td>Pages that try to install malicious software</td><td>Malware</td></tr>
+    <tr><td>"The site ahead contains harmful programs"</td><td>Downloads of unwanted or deceptive software</td><td>Unwanted software or harmful downloads</td></tr>
+    <tr><td>"This site may be hacked" (in search results only)</td><td>Spam pages, links or redirects added by a hacker</td><td>Hacked: content, code or URL injection</td></tr>
+  </tbody>
+</table>
+<p>Newer versions of Chrome may show a shorter "Dangerous site" heading for the same problems. Microsoft Edge is different: it uses Microsoft Defender SmartScreen, which keeps its own list, so Edge can show a warning when Chrome does not, or the other way round.</p>
+
+<h2>Step 1: Confirm the warning and find the flagged URLs</h2>
+<ol>
+  <li><strong>Open Search Console.</strong> Go to Security &amp; Manual Actions, then Security issues. Note the issue type and the sample URLs. The samples are examples, not a complete list.</li>
+  <li><strong>Verify the whole domain if you haven't.</strong> A Domain property, verified with a DNS TXT record, covers every subdomain, which matters because phishing kits often sit on a forgotten subdomain or an old test site. See <a href="/blog/setup-google-analytics-search-console/">setting up Search Console</a>.</li>
+  <li><strong>Check Google's Safe Browsing site status page</strong> in its Transparency Report for a second opinion on the domain.</li>
+  <li><strong>Look at the flagged URLs safely.</strong> Use a private window where you are not logged in to WordPress, or a URL scanner, rather than your everyday admin browser.</li>
+</ol>
+
+<h2>Step 2: Find the phishing pages and how they got there</h2>
+<p>Phishing kits are usually uploaded as a zip file and unpacked into a folder, so they sit outside WordPress and don't show up in your Pages list. Look in these places:</p>
 <ul>
-  <li><strong>Hacked site:</strong> hidden phishing pages, malicious redirects or injected malware, the most common cause</li>
-  <li><strong>Compromised third-party scripts</strong> loaded on your pages</li>
-  <li><strong>Hosted downloads</strong> flagged as harmful</li>
-  <li><strong>Open redirects</strong> abused by spammers</li>
-  <li>Occasionally, a false positive</li>
+  <li><strong>New folders in public_html</strong> named after a bank, courier, webmail provider or tax refund, or a random string of letters</li>
+  <li><strong>Deep inside WordPress folders</strong> such as wp-content/uploads, wp-includes or wp-admin, where a stray folder is easy to miss</li>
+  <li><strong>The .well-known folder,</strong> which exists for SSL checks and is rarely opened by owners</li>
+  <li><strong>Add-on domains, subdomains and old installs</strong> in the same hosting account</li>
+  <li><strong>Zip files</strong> anywhere in the account, which are often the kit itself</li>
+  <li><strong>Injected redirects</strong> that send visitors from your pages to a phishing site hosted elsewhere</li>
+  <li><strong>Third-party scripts and ads</strong> that show fake download buttons or "your phone has a virus" messages, which Search Console may describe as deceptive embedded resources</li>
+</ul>
+<p>Without SSH, use your host's File Manager and sort folders by last modified date. With SSH, these commands, run from the site's root folder, list recently changed files, archives, PHP files in uploads and every administrator, and check WordPress files against the official copies:</p>
+<pre><code>find . -type f -mtime -30 -not -path "./wp-content/cache/*" | head -100
+find . -name "*.zip"
+ls -la .well-known
+find wp-content/uploads -name "*.php"
+wp core verify-checksums
+wp plugin verify-checksums --all
+wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
+<p>Your access log shows where the stolen details were being sent. Form submissions to paths you don't recognise are a strong clue:</p>
+<pre><code>grep "POST" access.log | awk '{print $7}' | sort | uniq -c | sort -rn | head -20</code></pre>
+<p>Also work out how the attacker got in. The usual causes are an outdated plugin or theme, a nulled theme, a stolen hosting, cPanel or FTP password, or another neglected site in the same account.</p>
+
+<h2>Step 3: Clean the site and close the way in</h2>
+<ol>
+  <li><strong>Back up the infected copy first,</strong> labelled clearly, so you can see later how the kit arrived.</li>
+  <li><strong>Delete every phishing folder and file,</strong> not just the sample URLs. The removed URLs should return a 404 or 410 error. Don't redirect them to your homepage, and don't block them in robots.txt, because Google needs to recrawl them to see they've gone.</li>
+  <li><strong>Remove backdoors.</strong> Attackers leave small scripts that let them re-upload the kit after you delete it; see <a href="/blog/find-remove-wordpress-backdoors/">finding and removing backdoors</a>.</li>
+  <li><strong>Reinstall WordPress core, plugins and themes</strong> from official sources, and delete anything unused, unknown or pirated.</li>
+  <li><strong>Change every password:</strong> hosting, cPanel, FTP or SFTP, database, email and each WordPress administrator. Replace the security keys and salts in wp-config.php and turn on two-factor authentication.</li>
+  <li><strong>Clean the rest of the hosting account,</strong> including add-on domains and old copies, because one infected site can write to the others.</li>
+</ol>
+<p>The full process, including the database and scheduled tasks, is in <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>. If your host has already switched the account off, start with <a href="/blog/hosting-suspended-malware/">what to do when hosting is suspended for malware</a>.</p>
+
+<h2>Step 4: Request a review in Search Console</h2>
+<p>When you're confident every phishing page is gone, return to the Security issues report, tick the box confirming you have fixed the issues and click Request Review. Keep the description short and factual:</p>
+<blockquote><p>We found a phishing kit imitating a bank login in /wp-content/uploads/old/ and a second copy on the test subdomain. Both folders and the zip files have been deleted and now return 404. The entry point was an outdated file manager plugin, which has been removed. We have reinstalled WordPress core and plugins from official sources, removed a backdoor, changed all hosting, FTP, database and WordPress passwords, and turned on two-factor authentication.</p></blockquote>
+<p>If you can't use Search Console, or you believe the flag is a mistake, Google's Safe Browsing site has a form for reporting an incorrect phishing warning. Search Console is still the better route, because it shows exactly what Google found and tells you the outcome.</p>
+
+<h2>How long does it take for the warning to go away?</h2>
+<p>Google's help pages give rough review times by issue type. These are Google's figures at the time of writing, so check the current Search Console documentation:</p>
+<table>
+  <thead><tr><th>Issue type</th><th>Typical review time (Google's guidance)</th><th>If the review fails</th></tr></thead>
+  <tbody>
+    <tr><td>Phishing (social engineering)</td><td>About a day</td><td>Google lists URLs that still have problems; fix them and request again</td></tr>
+    <tr><td>Malware</td><td>A few days</td><td>Same: fix the listed URLs, then request again</td></tr>
+    <tr><td>Hacked with spam</td><td>Several weeks</td><td>See the "This site may be hacked" guide linked above</td></tr>
+  </tbody>
+</table>
+<p>After a successful review, browsers stop showing the warning as their copies of the Safe Browsing list refresh, which can take a little longer for some visitors. Be careful with your first request: Google has a repeat-offender policy, and a site that is flagged again soon after passing a review may have to wait longer before it can ask for another one. Google has mentioned 30 days; check the current policy.</p>
+
+<h2>Edge, antivirus and other blocklists</h2>
+<ul>
+  <li><strong>Microsoft Edge:</strong> if Edge still warns after Google clears you, Microsoft has its own process for site owners to report an incorrect SmartScreen warning.</li>
+  <li><strong>Antivirus and security vendors:</strong> a URL scanner such as VirusTotal shows which vendors still flag the domain. Each vendor has its own review or dispute form.</li>
+  <li><strong>Email:</strong> if the kit was also used to send phishing emails from your server, check your domain and server IP on a blacklist lookup tool such as MXToolbox.</li>
 </ul>
 
-<h2>Step 1: Confirm the issue</h2>
+<h2>Could it be a false positive?</h2>
+<p>It happens, but rarely, so assume a real problem until you've checked properly. Genuine sites sometimes get flagged for a client login page that looks like a well-known brand's, an open redirect that spammers abuse to make their links look trustworthy, or a third-party ad or script that started showing deceptive content. Remove or fix the cause, then request a review explaining it.</p>
+
+<h2>How to stop it happening again</h2>
 <ul>
-  <li>Check Google Search Console's <strong>Security issues</strong> report, which lists the problem and sample URLs</li>
-  <li>Check your site in Google's Safe Browsing site status tool (Transparency Report)</li>
+  <li>Keep WordPress, plugins and themes updated, and delete anything you don't use, including old test sites</li>
+  <li>Never install nulled themes or plugins</li>
+  <li>Use unique passwords and two-factor authentication for WordPress and the hosting account</li>
+  <li>Make sure Search Console security emails reach an inbox someone reads</li>
+  <li>Keep tested off-site backups</li>
 </ul>
+<p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers the full set of protections. If nobody has time for this every month, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include updates, security scans, off-site backups and uptime monitoring.</p>
 
-<h2>Step 2: Clean the site thoroughly</h2>
-<ul>
-  <li>Take a backup of the current state for investigation</li>
-  <li>Scan files and database for malware</li>
-  <li>Remove malicious files, unknown admin users and injected code</li>
-  <li>Replace WordPress core, themes and plugins with clean copies</li>
-  <li>Remove nulled (pirated) themes or plugins, a common source of infections</li>
-  <li>Change all passwords: WordPress, hosting, database, SFTP</li>
-</ul>
-<p>Partial clean-ups often leave backdoors, and the site gets reinfected. See <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>, or get professional <a href="/wordpress-malware-removal/">malware removal</a>.</p>
+<h2>FAQs</h2>
+<h3>How do I remove the "Deceptive site ahead" warning from my website?</h3>
+<p>Find the flagged pages in Search Console's Security issues report, delete every phishing page and backdoor, close the way the attacker got in, change all passwords, then request a review. Google removes the warning once the review confirms the site is clean.</p>
+<h3>How long does Google take to remove a deceptive site warning?</h3>
+<p>Google's guidance has said phishing reviews take about a day and malware reviews a few days, though times vary. A rejected review restarts the wait, so make sure the site is fully clean before you request one.</p>
+<h3>Why does Chrome say my site is deceptive when I can't see anything wrong?</h3>
+<p>Because the phishing pages usually live in a folder or subdomain you never visit, not on your normal pages. Your homepage can look perfect while a fake bank login sits in an uploads folder. The sample URLs in Search Console show where to look.</p>
+<h3>How do I remove a fake page someone added to my WordPress site?</h3>
+<p>If it appears in Pages or Posts, delete it and empty the trash. If it's a folder of files, as most phishing pages are, delete it through File Manager or SFTP. Then look for the backdoor or stolen password that let it in, or it will reappear.</p>
+<h3>Will the warning hurt my Google rankings?</h3>
+<p>While the warning is up, most visitors won't get past it, so you lose traffic and enquiries regardless of rankings. Once it's cleared, rankings usually recover as Google recrawls the clean site; see <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
+<h3>Can visitors still get to my site while the warning shows?</h3>
+<p>Chrome lets people click Details and continue, but very few do, and you shouldn't ask customers to ignore a security warning. Fixing the cause is the only real answer.</p>
 
-<p>Don't miss hidden access points; see <a href="/blog/find-remove-wordpress-backdoors/">finding and removing backdoors</a>.</p>
-
-<h2>Step 3: Close the hole</h2>
-<p>Find out how attackers got in: an outdated plugin, a weak password or a vulnerable theme. Update everything and harden logins; see <a href="/blog/secure-wordpress-login/">securing your WordPress login</a>.</p>
-
-<h2>Step 4: Request a review</h2>
-<p>In Search Console's Security issues report, confirm you've fixed the problems and request a review, explaining what you found and fixed. Reviews commonly take from a day to a few days. If the review fails, Google shows sample URLs that still have problems.</p>
-
-<p>Seeing a label in search results instead? See <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a>.</p>
-
-<h2>Step 5: Check other blocklists</h2>
-<p>Some antivirus and security vendors keep their own blocklists. Check your domain on multiple site-reputation checkers and request removal where needed.</p>
-
-<h2>Prevent it happening again</h2>
-<ul>
-  <li>Keep everything updated, and remove unused plugins and themes</li>
-  <li>Use a firewall and security monitoring</li>
-  <li>Keep off-site backups</li>
-  <li>Watch Search Console for security emails</li>
-</ul>
-<p>See the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
+<p>Red warning on your site right now? I treat hacked sites as urgent, and most cleanups are completed within 24 to 48 hours of getting access. Send me the Search Console message and I'll tell you what's involved; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -17853,74 +18072,108 @@ LIMIT 20;</code></pre>
   {
     slug: 'fixed-price-vs-hourly-website-projects',
     seoTitle: 'Fixed Price vs Hourly for Website Projects: Which Is Better?',
-    title: 'Fixed Price vs Hourly Billing for Website Projects: Which Is Better?',
-    description: 'Fixed price vs hourly for website projects: pros and cons of fixed, hourly and retainer pricing, which suits which project, and how to avoid scope creep.',
+    title: 'Fixed Price vs Hourly Billing for Website Projects: Which Is Better, and Which Suits Your Project?',
+    description: 'Fixed price vs hourly for website projects in India: how each works, which suits your project, hourly rates, retainers, scope creep and payment milestones.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Pricing',
     related: ['hire-wordpress-developer', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
     body: `
-<p>When you hire a web developer, you'll usually be offered a fixed price, an hourly rate, or a monthly retainer. Each has its place. Choosing the right model for your project avoids arguments and unexpected bills.</p>
+<p>For most website projects, fixed price is the better choice: a new business website, a redesign, a landing page or a clearly defined feature can be scoped upfront, so you know the total cost before work starts. Hourly billing makes more sense when nobody can know the work in advance, such as finding out why a site is slow or broken, or an open-ended stream of changes. Ongoing work after launch usually fits a monthly plan.</p>
+<p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, you get a fixed quote and timeline before any work starts, usually within 24 hours of sending your requirements. Small jobs are priced the same way: send the list and you get a fixed price for the batch. Below is how each model works, so you can judge any quote you receive.</p>
+<p>Whichever model you choose, the quality of the brief decides how accurate the price is. A clear <a href="/blog/website-brief-template/">website brief</a> gets you quotes you can actually compare.</p>
 
-<h2>Fixed price</h2>
-<p>You agree a total price for a defined scope of work.</p>
-<h3>Pros</h3>
+<h2>Fixed price vs hourly vs monthly: at a glance</h2>
+<table>
+  <thead><tr><th></th><th>Fixed price</th><th>Hourly</th><th>Monthly plan or retainer</th></tr></thead>
+  <tbody>
+    <tr><td>How the price is set</td><td>One total for an agreed scope</td><td>Rate multiplied by hours worked</td><td>A set fee each month for agreed services or hours</td></tr>
+    <tr><td>Who carries the risk of overruns</td><td>The developer</td><td>You</td><td>Shared, within the plan's limits</td></tr>
+    <tr><td>Best for</td><td>New sites, redesigns, landing pages, defined features</td><td>Investigations, unclear or changing requirements</td><td>Maintenance, regular updates, agency overflow</td></tr>
+    <tr><td>Main risk for you</td><td>Disputes over what's "in scope" if the brief was vague</td><td>A final bill bigger than expected</td><td>Paying for hours you don't use</td></tr>
+    <tr><td>Put in writing</td><td>Pages, features, revisions and how changes are priced</td><td>Rate, estimate, cap and how time is reported</td><td>What's included, response times and rollover</td></tr>
+  </tbody>
+</table>
+
+<h2>How fixed-price website projects work</h2>
+<p>You send a brief, the developer asks questions, and you receive a quote for a defined scope: the pages, features, number of revision rounds, who supplies content, and what happens at launch. Work starts once the quote is accepted and the advance is paid.</p>
+<p><strong>The advantages:</strong> you know the cost upfront, it's easy to budget and compare quotes, and if the work takes longer than the developer expected, that's their problem, not yours.</p>
+<p><strong>The disadvantages:</strong> it needs a clear scope, changes cost extra, and developers may add a buffer to cover uncertainty. Most arguments on fixed-price projects come from a vague brief, where each side remembers the scope differently.</p>
+<h3>What fixed prices look like in India</h3>
+<p>Prices vary with what the site needs to do. As a guide, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> gives these typical ranges for professionally built WordPress sites:</p>
+<table>
+  <thead><tr><th>Project</th><th>Typical fixed price</th></tr></thead>
+  <tbody>
+    <tr><td>Landing page (one page)</td><td>₹5,000 to ₹15,000</td></tr>
+    <tr><td>Small business website (5 to 8 pages)</td><td>₹15,000 to ₹40,000</td></tr>
+    <tr><td>Larger business or B2B website</td><td>₹35,000 to ₹80,000</td></tr>
+    <tr><td>WooCommerce online store</td><td>₹30,000 to ₹90,000 or more</td></tr>
+  </tbody>
+</table>
+<p>Domain, hosting and premium licences are extra, and are usually paid yearly. For a rough figure for your own project, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<h2>How hourly billing works</h2>
+<p>You pay an agreed rate for the time actually spent, usually tracked with a timer or a timesheet and reported weekly or at the end of the job. Freelance platforms often support both models: hourly contracts with time tracking, and fixed-price contracts paid by milestone.</p>
+<p><strong>The advantages:</strong> it's flexible when requirements are unclear or keep changing, you pay only for work done, and the developer doesn't need to pad the price for unknowns.</p>
+<p><strong>The disadvantages:</strong> the total is uncertain, it relies on trust and honest time reporting, and you can end up watching the clock instead of the result.</p>
+<h3>WordPress developer hourly rates in India</h3>
+<p>Hourly rates vary widely, and there's no standard figure worth quoting. The main factors are experience, specialism (a WooCommerce or custom plugin specialist charges more than a general site builder), freelancer or agency, urgency, and whether the client is in India or abroad. For a small business website, you'll often be offered a per-project price instead; hourly rates come up more on freelance platforms, with international clients and for open-ended agency work.</p>
+<p>When you compare hourly quotes, compare the likely total, not the rate. A lower rate with slower work, or with time spent learning on your project, can cost more than a higher rate from someone who has done the same job many times.</p>
+
+<h2>Monthly plans and retainers</h2>
+<p>A fixed monthly fee covers either a set of services, such as updates, backups, security checks and small content changes, or a block of hours. Freelance WordPress maintenance plans for small and medium sites typically cost about ₹1,500 to ₹6,000 a month; see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a> for what drives the price.</p>
+<p>Retainers work well for agencies that send a developer a steady flow of work, as long as everyone agrees how requests are queued and what happens to unused hours; see <a href="/blog/agency-development-retainer/">agency development retainers</a>.</p>
+
+<h2>Which model suits your project?</h2>
+<table>
+  <thead><tr><th>Project</th><th>Usually best</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>New business website</td><td>Fixed price</td><td>Pages and features can be listed upfront</td></tr>
+    <tr><td>Redesign</td><td>Fixed price, possibly in phases</td><td>Each phase can be scoped and approved separately</td></tr>
+    <tr><td>Landing page for ads</td><td>Fixed price</td><td>One page, one goal, a clear brief</td></tr>
+    <tr><td>WooCommerce store</td><td>Fixed price for the build, monthly afterwards</td><td>The build is defined; stores need regular care after launch</td></tr>
+    <tr><td>"Why is my site slow or broken?"</td><td>A fixed diagnosis or a capped number of hours, then a fixed price for the fix</td><td>Nobody knows the cause until someone looks</td></tr>
+    <tr><td>Custom feature with unclear requirements</td><td>A small paid discovery stage, then a fixed price</td><td>Turns unknowns into a scope before the big spend</td></tr>
+    <tr><td>Regular small changes</td><td>Monthly plan, or fixed prices per batch</td><td>Avoids a separate quote for every tiny change</td></tr>
+  </tbody>
+</table>
+
+<h2>How to avoid scope creep on a fixed-price project</h2>
 <ul>
-  <li>You know the cost upfront</li>
-  <li>Easy to budget and compare</li>
-  <li>The developer carries the risk if work takes longer than expected</li>
+  <li>Write the scope down: every page, feature, integration and number of revision rounds</li>
+  <li>Agree who supplies content and photos, and by when, because waiting for content is a common reason projects slip</li>
+  <li>Agree how changes are handled: a short written quote for anything outside the scope, approved before work starts</li>
+  <li>Batch small change requests instead of sending them one at a time</li>
+  <li>Keep decisions in one place, such as an email thread or a shared document, not scattered across calls and WhatsApp</li>
 </ul>
-<h3>Cons</h3>
+<p>The <a href="/blog/website-design-contract-checklist/">website contract checklist</a> covers what else belongs in the agreement, including ownership and licences.</p>
+
+<h2>How to avoid surprise bills on hourly work</h2>
 <ul>
-  <li>Needs a clear scope; changes cost extra</li>
-  <li>Developers may add a buffer for uncertainty</li>
-  <li>Disagreements over what's "in scope" if the brief was vague</li>
-</ul>
-<p><strong>Best for:</strong> new websites, redesigns and well-defined features.</p>
-
-<h2>Hourly</h2>
-<p>You pay for the time actually spent.</p>
-<h3>Pros</h3>
-<ul>
-  <li>Flexible when requirements are unclear or evolving</li>
-  <li>You pay only for work done</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-  <li>Total cost is uncertain</li>
-  <li>Requires trust and good time reporting</li>
-</ul>
-<p><strong>Best for:</strong> small fixes, investigations like finding what's slowing a site, and ongoing changes.</p>
-
-<h2>Retainer</h2>
-<p>A fixed monthly fee for a set amount of work or ongoing services.</p>
-<ul>
-  <li>Predictable monthly cost</li>
-  <li>Priority support and a developer who knows your site</li>
-  <li>Unused hours may not roll over</li>
-</ul>
-<p><strong>Best for:</strong> maintenance, regular updates, agencies with steady work; see <a href="/blog/website-maintenance-vs-management/">maintenance vs management</a>.</p>
-
-<p>Agencies that send a developer regular work each month can read how an <a href="/blog/agency-development-retainer/">agency development retainer</a> handles request queues, priorities and unused hours.</p>
-
-<h2>Avoiding scope creep</h2>
-<ul>
-  <li>Write a detailed brief and scope; see the <a href="/blog/website-brief-template/">brief template</a></li>
-  <li>Agree how changes are handled and priced</li>
-  <li>Batch small change requests</li>
-  <li>Confirm new work in writing before it starts</li>
+  <li>Ask for an estimate and a cap before work begins: "up to six hours, check with me before going further"</li>
+  <li>Ask for a time log with short notes on what each block of time was spent on</li>
+  <li>Agree the minimum billing unit and whether calls and emails count</li>
+  <li>Ask to be told as soon as the estimate looks likely to be exceeded, not after</li>
 </ul>
 
-<h2>Avoiding surprise hourly bills</h2>
-<ul>
-  <li>Ask for an estimate and a cap before work begins</li>
-  <li>Request regular time reports</li>
-  <li>Agree to be told before the estimate is exceeded</li>
-</ul>
+<h2>Payment terms and milestones</h2>
+<p>Fixed-price projects in India usually start with an advance, with the rest paid at milestones or before launch. Tie each payment to something you can see, such as an approved design or a working staging site, rather than to dates. Ask whether the quote includes GST if the developer is registered, and make sure the domain, hosting and admin access are in your name by the end. <a href="/blog/website-payment-terms-milestones/">Fair payment terms for a website project</a> goes into advances, refunds and paused projects.</p>
 
-<h2>A common, fair approach</h2>
-<p>Many developers, including me, quote a fixed price for the main build and charge hourly or through a maintenance plan for changes after launch. It combines budget certainty with flexibility.</p>
+<h2>FAQs</h2>
+<h3>Is fixed price or hourly better for a website project?</h3>
+<p>Fixed price, for most projects with a clear scope, because you know the cost upfront and the developer carries the risk of overruns. Hourly suits investigations and work whose scope can't be known until it starts.</p>
+<h3>What is the hourly rate of a WordPress developer in India?</h3>
+<p>It varies too much for a single figure to be useful: experience, specialism, urgency and freelancer or agency all change it. Compare likely totals rather than rates, and for a defined project, ask for a fixed quote instead.</p>
+<h3>Why do fixed-price website quotes vary so much?</h3>
+<p>Because quotes often cover different things: custom design or a template, who writes the content, how many revisions, testing, training and support. Send everyone the same brief; see <a href="/blog/compare-website-quotes/">how to compare website quotes</a>.</p>
+<h3>What if I want changes after the fixed price is agreed?</h3>
+<p>Small corrections within the agreed scope are part of the job. New pages or features are quoted separately and approved before work starts, so the original price stays fixed and you decide on each addition.</p>
+<h3>Should I pay the full amount upfront?</h3>
+<p>For a website build, usually not. An advance followed by payments at milestones, with the balance before launch, protects both sides. Small fixed-price jobs are sometimes paid in full upfront because the amount is small.</p>
+<h3>Can a project be partly fixed and partly hourly?</h3>
+<p>Yes. A fixed price for the defined build plus a capped hourly allowance for a part nobody can scope yet, such as a third-party integration, is a sensible middle ground. Write both into the agreement.</p>
 
-<p>Put the chosen model in your agreement; see the <a href="/blog/website-design-contract-checklist/">contract checklist</a>.</p>
+<p>Want a fixed quote for your website, or a price for a batch of fixes? Send your requirements and you'll get a clear scope, price and timeline before anything starts; see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
   },
   {
@@ -18199,62 +18452,125 @@ LIMIT 20;</code></pre>
   },
   {
     slug: 'web-designer-vs-web-developer',
-    seoTitle: 'Web Designer vs Web Developer: Who Do You Need?',
-    title: 'Web Designer vs Web Developer vs WordPress Developer: Who Do You Need?',
-    description: 'Web designer vs web developer vs WordPress developer: what each does, who you need for a new site, redesign or fixes, and when one person can do both.',
+    seoTitle: 'Web Designer vs Web Developer vs WordPress Developer',
+    title: 'Web Designer vs Web Developer vs WordPress Developer: What Each Does and Who You Need',
+    description: 'Web designer vs web developer vs WordPress developer: what each does, the key differences, who you need for your project and when one person can do both.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'figma-to-wordpress', 'wordpress-website-development'],
     body: `
-<p>"Web designer" and "web developer" are often used interchangeably, but they're different roles. Knowing the difference helps you hire the right person for your project, and understand what you're paying for.</p>
+<p>A web designer decides how a website looks and how visitors move through it: layout, typography, colours, imagery and the user experience, usually designed in a tool such as Figma. A web developer turns that design into a working website and makes everything function: pages, forms, payments, integrations, speed, security and hosting. A WordPress developer is a web developer who specialises in WordPress. For most small business websites, one person who does both well is enough; you need a developer specifically for fixes, speed, security, online stores and custom features.</p>
+<p>I'm a freelance WordPress developer. I can build from your designer's Figma files, or adapt a quality theme to your brand when budget matters more than a fully custom design. If you want to <a href="/hire-wordpress-developer/">hire a WordPress developer</a>, you deal directly with the person doing the work.</p>
+<p>For a closer look at the developer side alone, see <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer actually does</a>.</p>
 
-<h2>Web designer</h2>
-<p>Focuses on how the website looks and feels:</p>
-<ul>
-  <li>Layouts, colours, typography and imagery</li>
-  <li>User experience: how visitors move through the site</li>
-  <li>Mobile and desktop designs, usually in tools like Figma</li>
-  <li>Brand consistency</li>
-</ul>
-<p>Some designers build sites themselves with visual builders; others hand designs to developers.</p>
-
-<h2>Web developer</h2>
-<p>Focuses on making the website work:</p>
-<ul>
-  <li>Turning designs into working pages</li>
-  <li>Functionality: forms, payments, booking and integrations</li>
-  <li>Speed, security and technical SEO</li>
-  <li>Hosting, deployment and fixing problems</li>
-</ul>
-
-<h2>WordPress developer</h2>
-<p>A web developer who specialises in WordPress: themes, plugins, page builders like Elementor, WooCommerce stores, performance and maintenance. See <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer does</a>.</p>
-
-<h2>Who do you need?</h2>
+<h2>Web designer vs web developer: the key differences</h2>
 <table>
-  <thead><tr><th>Project</th><th>Who</th></tr></thead>
+  <thead><tr><th></th><th>Web designer</th><th>Web developer</th></tr></thead>
   <tbody>
-    <tr><td>New business website</td><td>A designer and developer, or one person skilled at both</td></tr>
-    <tr><td>You already have designs</td><td>A developer; see <a href="/figma-to-wordpress/">Figma to WordPress</a></td></tr>
-    <tr><td>Fix speed, errors or hacks</td><td>A developer</td></tr>
-    <tr><td>Refresh the look of a working site</td><td>A designer, then a developer to implement</td></tr>
-    <tr><td>Online store</td><td>A developer experienced with WooCommerce or Shopify</td></tr>
+    <tr><td>Main question</td><td>How should it look and feel, and how will visitors find what they need?</td><td>How do we make it work, quickly and reliably?</td></tr>
+    <tr><td>Typical tasks</td><td>Layouts, wireframes, colour and type choices, mobile and desktop designs, user journeys</td><td>Building pages, forms, payments, integrations, speed, security, hosting and fixes</td></tr>
+    <tr><td>Common tools</td><td>Figma, Adobe XD, Photoshop, sometimes a page builder</td><td>Code editors, WordPress, PHP, JavaScript, Git, staging sites, hosting panels</td></tr>
+    <tr><td>Output</td><td>Design files and a style guide, or pages built in a visual builder</td><td>A live, working website</td></tr>
+    <tr><td>You need them most for</td><td>A distinctive brand, a new look, better user experience</td><td>Building, fixing, speeding up, securing and extending a site</td></tr>
   </tbody>
 </table>
 
-<h2>Can one person do both?</h2>
-<p>Yes. Many freelancers handle design and development for small and medium business sites, which keeps communication simple and costs lower. For large or complex projects, specialists working together often produce better results.</p>
-
-<h2>What about agencies?</h2>
-<p>Agencies bring designers, developers, content writers and SEO specialists under one roof, at a higher cost. See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a>.</p>
-
-<h2>Check skills in their portfolio</h2>
+<h2>What a web designer does</h2>
 <ul>
-  <li>For design: does the work look polished, varied and on-brand?</li>
-  <li>For development: do the sites load fast, work on mobile and function properly?</li>
+  <li>Plans the structure of pages and how visitors move between them</li>
+  <li>Designs layouts for desktop, tablet and mobile</li>
+  <li>Chooses typography, colours, imagery and spacing that fit the brand</li>
+  <li>Designs calls to action, forms and navigation so they're easy to use</li>
+  <li>Hands over design files and a simple style guide, or builds the pages in a visual builder</li>
+</ul>
+<p>Titles overlap. A UI or UX designer focuses on interfaces and user experience, often for apps as well as websites. A graphic designer works on logos, print and social media, which isn't the same skill as designing a responsive website. And in India, "web designer" is often used for someone who builds complete WordPress sites with Elementor, which is really a mix of design and development. Ask what they actually deliver.</p>
+
+<h2>What a web developer does</h2>
+<ul>
+  <li><strong>Front-end development:</strong> turning designs into responsive pages with HTML, CSS and JavaScript that work on every screen size and browser</li>
+  <li><strong>Back-end development:</strong> the server side, such as PHP, databases, APIs, user accounts and payments</li>
+  <li><strong>Integrations:</strong> payment gateways, CRMs, booking systems, WhatsApp and email tools</li>
+  <li><strong>Performance and security:</strong> fast loading, safe updates, backups, hardening and cleanup after hacks</li>
+  <li><strong>Launch and upkeep:</strong> hosting, domains, migrations, monitoring and fixing what breaks</li>
+</ul>
+<p>A full-stack developer handles both front end and back end. Many developers work across several technologies; others specialise in one platform.</p>
+
+<h2>Where a WordPress developer fits</h2>
+<p>A WordPress developer specialises in the platform that runs a large share of business websites: themes and child themes, custom plugins, page builders such as Elementor, the block editor, WooCommerce stores, speed optimisation, security and migrations. Compared with a web designer, the difference is mostly in what happens under the surface:</p>
+<table>
+  <thead><tr><th>Task</th><th>Web designer</th><th>WordPress developer</th></tr></thead>
+  <tbody>
+    <tr><td>Create a custom visual design from scratch</td><td>Yes</td><td>Some can; many work from a designer's files</td></tr>
+    <tr><td>Build pages in Elementor or the block editor</td><td>Often</td><td>Yes</td></tr>
+    <tr><td>Write custom code, theme templates or plugins</td><td>Rarely</td><td>Yes</td></tr>
+    <tr><td>Set up WooCommerce, payment gateways and shipping</td><td>Sometimes, at a basic level</td><td>Yes</td></tr>
+    <tr><td>Fix slow pages, errors, plugin conflicts or a hacked site</td><td>Rarely</td><td>Yes</td></tr>
+    <tr><td>Choose fonts, colours and the overall look</td><td>Yes</td><td>Usually works within a designer's or brand's choices</td></tr>
+  </tbody>
+</table>
+
+<h2>Who do you need for your project?</h2>
+<table>
+  <thead><tr><th>Project</th><th>Who you need</th></tr></thead>
+  <tbody>
+    <tr><td>New small business website on a budget</td><td>One person who designs and builds, adapting a good theme; see <a href="/blog/how-to-choose-wordpress-theme/">choosing a WordPress theme</a></td></tr>
+    <tr><td>New website with a strong, custom brand</td><td>A designer for the look, then a developer to build it</td></tr>
+    <tr><td>You already have designs in Figma or XD</td><td>A WordPress developer; see <a href="/figma-to-wordpress/">Figma to WordPress</a></td></tr>
+    <tr><td>Site is slow, broken or hacked</td><td>A developer</td></tr>
+    <tr><td>Refresh the look of a site that works</td><td>A designer for the new look and a developer to apply it, or a developer alone for a lighter refresh</td></tr>
+    <tr><td>Online store</td><td>A developer experienced with WooCommerce or your chosen platform</td></tr>
+    <tr><td>Custom features or integrations</td><td>A developer</td></tr>
+    <tr><td>Regular updates and maintenance</td><td>A developer, usually on a monthly plan</td></tr>
+  </tbody>
+</table>
+<p>On cost, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts most professionally built small business sites in India at ₹15,000 to ₹40,000. A fully custom design from a separate designer usually costs more than a developer adapting a theme, because you're paying for two specialists' time.</p>
+
+<h2>Can one person do both?</h2>
+<p>Yes. Many freelancers handle design and development for small and medium business sites, which keeps communication simple and usually costs less than hiring two specialists. The trade-off is depth: someone strong at both is less common than someone excellent at one. For large or complex projects, a designer and developer working together, or an agency, often produces a better result; see <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a>.</p>
+
+<h2>How designers and developers work together</h2>
+<ol>
+  <li><strong>Brief and sitemap:</strong> what the site must achieve and which pages it needs</li>
+  <li><strong>Wireframes:</strong> simple layouts that agree what goes where, before any styling</li>
+  <li><strong>Visual design:</strong> desktop and mobile designs, revised with your feedback</li>
+  <li><strong>Handoff:</strong> design files, styles, images and notes on interactions</li>
+  <li><strong>Development on staging:</strong> the developer builds a working version that isn't public yet</li>
+  <li><strong>Content, testing and launch:</strong> real content added, everything tested on phones and browsers, then the site goes live</li>
+</ol>
+<p>Handoffs go wrong when designs only exist for desktop or styles are inconsistent. <a href="/blog/figma-to-wordpress-designer-guide/">What designers should prepare for a Figma to WordPress build</a> lists what to get right.</p>
+
+<h2>How to check a designer's or developer's work</h2>
+<ul>
+  <li><strong>For design:</strong> is the work polished, varied and suited to each client's brand, and are there mobile designs, not just desktop?</li>
+  <li><strong>For development:</strong> open their live sites on your phone. Do they load quickly, work properly and send forms? Run a few through PageSpeed Insights; see <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</li>
+  <li><strong>For both:</strong> ask who registers the domain and hosting (it should be you), what happens after launch and who updates the site.</li>
 </ul>
 
-<p>Ready to hire? See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
+<h2>Hiring mistakes to avoid</h2>
+<ul>
+  <li><strong>Hiring a designer to fix technical problems.</strong> A slow, broken or hacked site needs someone who can read error logs, test plugins and work on the server, whatever their portfolio looks like.</li>
+  <li><strong>Hiring a developer when the real problem is the message.</strong> If visitors arrive and don't enquire, the cause may be unclear content or weak calls to action rather than anything technical.</li>
+  <li><strong>Approving desktop designs only.</strong> Many visitors to a business site arrive on a phone, so ask to see the mobile design before anything is built.</li>
+  <li><strong>Assuming the designer's files are build-ready.</strong> Agree early who prepares images, icons and fonts, and who decides how the design behaves on tablets and small screens.</li>
+  <li><strong>Leaving out who looks after the site.</strong> A designer may move on after launch; someone still needs to handle updates, backups and fixes.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What is the difference between a web designer and a web developer?</h3>
+<p>A web designer works on how the site looks and how easy it is to use. A web developer builds the working site and handles its functionality, speed, security and hosting. Many freelancers do both for smaller sites.</p>
+<h3>Is a WordPress developer the same as a web designer?</h3>
+<p>No, though they overlap. A WordPress developer builds and maintains WordPress sites, including custom code, WooCommerce, speed and security. A web designer focuses on the look and experience, and may or may not build the site.</p>
+<h3>Do I need a web designer if I use a WordPress theme?</h3>
+<p>Not always. A good theme provides a professional starting design, and a developer can adapt it to your brand. A designer is worth it when you want a distinctive look that a theme can't give you.</p>
+<h3>Can a web developer design a website?</h3>
+<p>Many can, especially by adapting a well-made theme with your logo, colours and content, which suits most small business sites. For a distinctive custom look, a developer working from a specialist designer's files usually produces a stronger result.</p>
+<h3>Should I hire a designer or a developer first?</h3>
+<p>For a custom design, start with the designer, but involve the developer early so the design is practical to build. If you're adapting a theme, you can start with a developer.</p>
+<h3>Who matters more for SEO, the designer or the developer?</h3>
+<p>Both play a part. The developer controls technical SEO: speed, clean structure, mobile performance and indexing. The designer affects how easily visitors find information and whether they stay. Content matters as much as either.</p>
+
+<p>Have designs ready, or need a site designed and built by one person? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for fixes and ongoing work.</p>
 `,
   },
   {
@@ -20437,64 +20753,109 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'wordpress-file-permissions',
-    seoTitle: 'WordPress File Permissions Explained (644, 755 and More)',
-    title: 'WordPress File Permissions Explained: 644, 755 and Keeping Files Safe',
-    description: 'WordPress file permissions explained: recommended settings for files, folders and wp-config.php, why 777 is dangerous and how to check and fix them safely.',
+    seoTitle: 'WordPress File Permissions Explained: 644, 755 and wp-config',
+    title: 'WordPress File Permissions Explained: 644, 755, wp-config.php, Ownership and How to Fix Permission Errors',
+    description: 'WordPress file permissions explained: 644 for files, 755 for folders, 600 or 440 for wp-config.php, why 777 is dangerous and how to fix permission errors.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
-<p>File permissions control who can read, write and run files on your server. Wrong permissions can let attackers modify your files, or can break updates and uploads. Getting them right is a simple but important part of WordPress security.</p>
+<p>The correct WordPress file permissions for most sites are 755 for folders, 644 for files and a tighter 600 or 440 for wp-config.php, with every file owned by your hosting account's user. Those settings let WordPress update itself and save uploads, while stopping other users on the server from changing your files. Never set anything to 777, even when a forum post suggests it as a quick fix.</p>
+<p>The rest of this guide explains what the numbers mean, how to check and change them in cPanel, FileZilla or over SSH, and what the common permission errors are telling you. If you'd rather not touch the server yourself, I can check and fix permissions and ownership as part of a <a href="/wordpress-maintenance/">WordPress maintenance plan</a>, which starts with a health check of your site.</p>
+<p>Permissions are one part of hardening a site, not the whole of it. For the bigger picture, see the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
 
-<h2>What the numbers mean</h2>
-<p>Permissions are shown as three digits, for the file's owner, its group and everyone else:</p>
+<h2>Recommended WordPress file permissions</h2>
 <table>
-  <thead><tr><th>Digit</th><th>Meaning</th></tr></thead>
+  <thead><tr><th>File or folder</th><th>Permission</th><th>Notes</th></tr></thead>
   <tbody>
-    <tr><td>7</td><td>Read, write and execute</td></tr>
-    <tr><td>6</td><td>Read and write</td></tr>
-    <tr><td>5</td><td>Read and execute</td></tr>
-    <tr><td>4</td><td>Read only</td></tr>
-    <tr><td>0</td><td>No access</td></tr>
+    <tr><td>All folders</td><td>755</td><td>The owner can write; everyone else can only read and open the folder</td></tr>
+    <tr><td>All files</td><td>644</td><td>The owner can write; everyone else can only read</td></tr>
+    <tr><td>wp-config.php</td><td>600 or 440 (640 on some hosts)</td><td>Holds your database password, so keep it as private as your server allows</td></tr>
+    <tr><td>.htaccess</td><td>644</td><td>444 locks it, but then WordPress and plugins can't update permalink or caching rules</td></tr>
+    <tr><td>wp-content/uploads</td><td>755</td><td>WordPress must be able to write here; fix ownership rather than loosening permissions</td></tr>
+    <tr><td>Anything</td><td>Never 777</td><td>Lets any user or process on the server change the file</td></tr>
   </tbody>
 </table>
-<p>So 644 means the owner can read and write, while everyone else can only read.</p>
+<p>The right values can differ slightly depending on how your server runs PHP, so if your host publishes its own recommendations, follow those.</p>
 
-<h2>Commonly recommended settings</h2>
+<h2>What 644, 755 and 600 actually mean</h2>
+<p>Each permission has three digits. The first is for the file's owner, the second for its group and the third for everyone else. Each digit adds up three rights: read is 4, write is 2 and execute is 1.</p>
 <table>
-  <thead><tr><th>Item</th><th>Typical permission</th></tr></thead>
+  <thead><tr><th>Digit</th><th>Rights</th><th>Shown in File Manager or FileZilla as</th></tr></thead>
   <tbody>
-    <tr><td>Folders</td><td>755</td></tr>
-    <tr><td>Files</td><td>644</td></tr>
-    <tr><td>wp-config.php</td><td>Stricter, such as 640, 600 or 440, depending on your server</td></tr>
-    <tr><td>.htaccess</td><td>644</td></tr>
+    <tr><td>7</td><td>Read, write and execute</td><td>rwx</td></tr>
+    <tr><td>6</td><td>Read and write</td><td>rw-</td></tr>
+    <tr><td>5</td><td>Read and execute</td><td>r-x</td></tr>
+    <tr><td>4</td><td>Read only</td><td>r--</td></tr>
+    <tr><td>0</td><td>No access</td><td>---</td></tr>
   </tbody>
 </table>
-<p>The right values depend on how your server runs PHP and who owns the files, so check your host's recommendations.</p>
+<p>So 644 (rw-r--r--) means the owner can read and write while everyone else can only read. 755 (rwxr-xr-x) adds execute, which on a folder means permission to open it and list what's inside. 600 (rw-------) and 440 (r--r-----) shut out everyone except the owner, or the owner and the group.</p>
 
-<h2>Never use 777</h2>
-<p>777 lets anyone on the server write to the file or folder. It's sometimes suggested as a quick fix for upload errors, but it's a serious security risk. Fix ownership or use the correct permission instead.</p>
+<h2>Ownership matters as much as the numbers</h2>
+<p>Permissions only make sense alongside ownership. WordPress writes files as whatever user PHP runs as. On most cPanel and similar shared hosts, PHP runs as your own account user, so 644 and 755 already give WordPress all the access it needs.</p>
+<p>Problems start when files belong to a different user, which often happens after a migration, a manual upload as the root user, or a VPS where the web server runs as www-data. WordPress then can't write to its own folders, so updates fail, uploads fail, or WordPress asks for FTP connection details every time you install a plugin. Changing permissions to 777 hides the symptom and creates a security hole. The real fix is to give the files back to the right user:</p>
+<pre><code>chown -R youruser:youruser /home/youruser/public_html</code></pre>
+<p>That needs root access, so on shared hosting ask your host to do it. Some hosting panels include a one-click "fix permissions" or "fix file ownership" tool for exactly this.</p>
 
-<h2>Ownership matters too</h2>
-<p>Files should be owned by your hosting account's user. Wrong ownership, often after a migration or manual upload, can cause update failures that tempt people into using unsafe permissions.</p>
+<h2>How to check and change file permissions</h2>
+<h3>In cPanel File Manager or your host's panel</h3>
+<p>File Manager shows a Permissions column next to each file. Select a file or folder, choose Change Permissions, tick the boxes or type the number, and save. This is fine for a single file such as wp-config.php, but slow for a whole site.</p>
+<h3>With FileZilla or another SFTP client</h3>
+<p>Right-click a file or folder and choose File permissions. For a folder, you can tick "Recurse into subdirectories" and then choose "Apply to directories only" to set 755, and run it again with "Apply to files only" to set 644. Use SFTP rather than plain FTP, so your password isn't sent unencrypted.</p>
+<h3>Over SSH</h3>
+<p>If you or your developer have SSH access, these commands, run from the site's root folder, reset everything to the standard values and then tighten wp-config.php:</p>
+<pre><code>find . -type d -exec chmod 755 {} +
+find . -type f -exec chmod 644 {} +
+chmod 600 wp-config.php
+stat -c "%a %U %n" wp-config.php</code></pre>
+<p>The last line shows the permission number and the owner, so you can confirm the change. If the site shows an error after you tighten wp-config.php, your server needs the web server's group to read it: set it to 640 and ask your host which value they support. To find files and folders that anyone can write to, which should usually return nothing:</p>
+<pre><code>find . -perm -o+w -not -type l</code></pre>
 
-<h2>How to check and change permissions</h2>
+<h2>Why you should never use 777</h2>
+<p>777 means read, write and execute for everyone. On shared hosting, "everyone" can include other accounts on the same server and any compromised script running on it. A world-writable folder is an open invitation for malware to drop files into your site, and it is one of the first things attackers look for.</p>
+<p>It often doesn't even work. Many servers refuse to run PHP files that anyone can write to, so setting 777 can turn an upload error into a 500 Internal Server Error. If something only works at 777, the real problem is ownership or a server setting, and that's what needs fixing.</p>
+
+<h2>Common permission errors and what they mean</h2>
+<table>
+  <thead><tr><th>Error or symptom</th><th>Likely cause</th><th>Where to look</th></tr></thead>
+  <tbody>
+    <tr><td>"Installation failed: Could not create directory"</td><td>wp-content/upgrade or the plugins folder isn't writable by PHP</td><td>Ownership first, then permissions; see <a href="/blog/wordpress-update-failed-fix/">WordPress update failed</a></td></tr>
+    <tr><td>WordPress asks for FTP details to install or update</td><td>Files owned by a different user from the one PHP runs as</td><td>Fix ownership; don't loosen permissions</td></tr>
+    <tr><td>"Unable to create directory wp-content/uploads/..." or "HTTP error" on upload</td><td>The uploads folder or its parent isn't writable, or the disk is full</td><td>See <a href="/blog/wordpress-http-error-image-upload-fix/">HTTP error when uploading images</a></td></tr>
+    <tr><td>403 Forbidden on pages or wp-admin</td><td>Permissions too strict for the web server to read, or a bad .htaccess rule</td><td>See <a href="/blog/wordpress-403-forbidden-error-fix/">403 Forbidden on WordPress</a></td></tr>
+    <tr><td>500 error straight after changing permissions</td><td>Files or folders set to 777, or .htaccess unreadable</td><td>Set them back to 644 and 755</td></tr>
+  </tbody>
+</table>
+
+<h2>Extra hardening for wp-config.php and core files</h2>
 <ul>
-  <li><strong>Hosting file manager:</strong> most show a permissions column and let you change it</li>
-  <li><strong>SFTP client:</strong> right-click a file and choose permissions</li>
-  <li><strong>Command line:</strong> for developers with SSH access</li>
-</ul>
-<p>Some hosts have a tool to reset permissions across the whole site.</p>
-
-<h2>Other hardening steps</h2>
-<ul>
-  <li>Block PHP execution in the uploads folder</li>
-  <li>Disable file editing in the WordPress dashboard</li>
-  <li>Protect wp-config.php; see <a href="/blog/harden-wp-config-php/">hardening wp-config.php</a></li>
+  <li><strong>Lock wp-config.php down</strong> to 600, 440 or 400 if your host allows it. WordPress also looks for wp-config.php one folder above the site's root, so on some hosts you can move it out of the public folder.</li>
+  <li><strong>Turn off the theme and plugin file editors</strong> with DISALLOW_FILE_EDIT, so a stolen admin login can't be used to edit PHP files; see <a href="/blog/harden-wp-config-php/">hardening wp-config.php</a>.</li>
+  <li><strong>Block PHP from running in the uploads folder,</strong> where only images and documents belong.</li>
+  <li><strong>Don't make all core files read-only.</strong> Setting everything to 444 sounds secure, but it breaks WordPress's own updates, and an unpatched site is a bigger risk than writable files.</li>
 </ul>
 
-<h2>After a hack, check permissions</h2>
-<p>Attackers sometimes change permissions to make their files harder to remove, or to keep write access. Resetting permissions is part of a proper <a href="/blog/remove-malware-wordpress-step-by-step/">malware clean-up</a>.</p>
+<h2>Check permissions after a hack or a migration</h2>
+<p>Attackers sometimes set their own files to read-only so they're harder to delete, or open folders up to 777 so they can keep writing to them. Resetting permissions and ownership is part of a proper <a href="/blog/remove-malware-wordpress-step-by-step/">malware clean-up</a>, after the malicious files themselves are gone.</p>
+<p>Migrations are the other common cause. Copying files as the wrong user, or unpacking an archive with its old permissions, leaves a site that loads but can't update or upload. Checking ownership and permissions is a standard step after moving a site; see <a href="/wordpress-migration/">WordPress migration</a> if you'd like the move handled for you.</p>
+
+<h2>FAQs</h2>
+<h3>What are the correct file permissions for WordPress?</h3>
+<p>755 for folders, 644 for files and 600 or 440 for wp-config.php, with all files owned by your hosting account's user. Some servers need wp-config.php at 640, so follow your host's advice if a stricter value causes an error.</p>
+<h3>What permission should wp-config.php have?</h3>
+<p>As strict as your server allows: 600 or 440 on many hosts, 400 on some, and 640 where the web server needs group read access. Never leave it writable by everyone, because it contains your database password.</p>
+<h3>Should WordPress folders be 755 or 775?</h3>
+<p>755 by default. 775 lets the group write as well, which a few server setups need when the web server and your account share a group. Use it only if your host recommends it.</p>
+<h3>Why does WordPress ask for FTP details to install plugins?</h3>
+<p>Because it can't write to its own files as the user PHP runs as, usually because the files are owned by someone else. Fixing ownership makes the prompt go away. Don't solve it by setting folders to 777.</p>
+<h3>What permissions does the wp-content/uploads folder need?</h3>
+<p>755 for the folder and its subfolders, and 644 for the files inside, with the right owner so WordPress can create the year and month folders. If uploads fail at 755, check ownership and disk space rather than opening the folder up.</p>
+<h3>Is chmod 777 ever okay?</h3>
+<p>Not on a live website. It lets anyone on the server change the file and is a common way malware spreads. Some servers also refuse to run PHP from world-writable folders, which causes 500 errors.</p>
+
+<p>Permission errors after an update, upload problems or a recent hack? I can check permissions, ownership and the security settings around them, and fix them without loosening anything; see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
   {
@@ -21769,60 +22130,116 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'update-premium-theme-safely',
-    seoTitle: 'How to Update a Premium WordPress Theme Safely',
-    title: 'How to Update a Premium WordPress Theme (and Its Bundled Plugins) Safely',
-    description: 'Update a premium WordPress theme without losing customisations: licence activation, child themes, backups, staging, bundled plugins and abandoned themes.',
+    seoTitle: 'How to Update a Premium WordPress Theme Safely: Step by Step',
+    title: 'How to Update a Premium WordPress Theme Safely: Licences, ZIP Uploads, Bundled Plugins and Keeping Your Customisations',
+    description: 'How to update a premium WordPress theme safely: licence updates or ZIP upload, backup, staging, child themes, bundled plugins and fixing a broken update.',
     date: '2026-09-28',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'website-redesign'],
     body: `
-<p>Premium themes often don't update as simply as free ones from WordPress.org. Many sites I look after were running themes years out of date, with bundled plugins full of known vulnerabilities, because nobody knew how to update them safely. Here's how.</p>
+<p>To update a premium WordPress theme safely, take a full backup, check that nobody has edited the theme's own files, then update it through the vendor's licence (activate your licence or purchase code and the update appears in Dashboard &gt; Updates) or by downloading the latest ZIP from your account and uploading it under Appearance &gt; Themes &gt; Add New Theme &gt; Upload Theme. For a big version jump, test it on a staging copy first, and update the theme's bundled plugins straight afterwards.</p>
+<p>Theme and plugin updates are part of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, and I can include premium themes and their bundled plugins, with a backup taken first and the site tested afterwards. If you'd rather do it yourself, the steps are below.</p>
+<p>This guide is specific to premium themes. For updating WordPress core and ordinary plugins, see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>.</p>
 
-<h2>Why theme updates matter</h2>
-<ul>
-  <li>Security fixes, for the theme and its bundled plugins</li>
-  <li>Compatibility with new WordPress, PHP and WooCommerce versions</li>
-  <li>Bug fixes</li>
-</ul>
-<p>See <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a>.</p>
+<h2>Why premium themes don't update like free ones</h2>
+<p>Free themes from the WordPress.org directory update straight from the dashboard. Premium themes are sold by their developers or through marketplaces such as ThemeForest, and WordPress only learns about a new version once the theme can check with the vendor, which normally needs a licence key, purchase code or account token. If that was never set up, or the licence has lapsed, the site can sit on an old version for years without anyone noticing.</p>
+<table>
+  <thead><tr><th>Where the theme came from</th><th>How updates usually arrive</th><th>What you need</th></tr></thead>
+  <tbody>
+    <tr><td>Free theme plus a premium add-on (such as Astra Pro or GeneratePress Premium)</td><td>The theme updates from WordPress.org; the add-on is a plugin that updates with its licence key</td><td>An active licence for the add-on plugin</td></tr>
+    <tr><td>Bought from the developer's own site</td><td>Through the theme's settings once you enter your account details or licence key</td><td>An active licence; many are yearly</td></tr>
+    <tr><td>Bought on ThemeForest</td><td>Through the theme's own registration screen or the Envato Market plugin</td><td>Your purchase code or an Envato token</td></tr>
+    <tr><td>Licence missing or expired</td><td>No automatic updates; you download the ZIP manually, if your licence still allows it</td><td>Access to the account that bought it</td></tr>
+    <tr><td>Custom theme built for you</td><td>No vendor updates; changes come from the developer who built it</td><td>The original developer or a new one</td></tr>
+  </tbody>
+</table>
+<p>The exact menus differ between vendors and change over time, so check your theme's documentation. If the licence is in a former developer's account rather than your business's, ask for it to be transferred or buy your own, so updates don't stop when they move on.</p>
 
-<h2>Step 1: Check how your theme updates</h2>
-<ul>
-  <li>Activate the licence or purchase code in the theme's settings to enable automatic updates</li>
-  <li>Marketplace themes may need the marketplace's updater plugin</li>
-  <li>Otherwise, download the latest version from your account and upload it manually</li>
-</ul>
-
-<h2>Step 2: Protect your customisations</h2>
-<p>If anyone edited the theme's files directly, an update will overwrite those changes. Customisations belong in a <strong>child theme</strong>. If there isn't one, have a developer move the custom code into a child theme before updating.</p>
-
-<p>New to child themes? See <a href="/blog/wordpress-child-theme-explained/">child themes explained</a>.</p>
-
-<h2>Step 3: Back up and use staging</h2>
-<p>Take a full backup, then test the update on a staging copy, especially for big version jumps; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
-
-<h2>Step 4: Update the theme, then bundled plugins</h2>
+<h2>Before you update: four checks</h2>
 <ol>
-  <li>Update the theme</li>
-  <li>Follow the theme's prompts to update its bundled plugins (sliders, page builders, theme core plugins)</li>
-  <li>Update other plugins</li>
-  <li>Clear caches and regenerate any page builder CSS</li>
+  <li><strong>Is a child theme active?</strong> Appearance &gt; Themes shows which theme is active. If it's a child theme, your customisations are probably safe in it, and the parent can be updated.</li>
+  <li><strong>Has anyone edited the parent theme's files?</strong> Edits made directly in the parent theme, through the Theme File Editor or over FTP, are overwritten by an update. If you're not sure, download the same version you're running from the vendor and compare the folders.</li>
+  <li><strong>How big is the jump?</strong> Read the changelog. Major versions, minimum PHP and WordPress requirements and any notes about bundled plugins tell you how careful to be.</li>
+  <li><strong>Do you have a backup you can restore?</strong> Back up files and database, store a copy off the server, and know how to restore it; see the <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a>.</li>
+</ol>
+<p>With SSH access, a quick way to spot direct edits is to compare the live theme with a fresh copy of the same version. Any file listed as different has been changed:</p>
+<pre><code>wp theme list
+diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
+
+<h2>Step by step: updating a premium theme</h2>
+<h3>Option 1: one-click update with the licence</h3>
+<p>Activate your licence or purchase code in the theme's dashboard screen. Within a short while, the update appears under Dashboard &gt; Updates and on the Themes screen, and you update it like any other theme.</p>
+<h3>Option 2: upload the new ZIP</h3>
+<ol>
+  <li>Log in to your account with the vendor or marketplace and download the latest version. On ThemeForest, choose the installable WordPress file only, not the full package with documentation.</li>
+  <li>Go to Appearance &gt; Themes &gt; Add New Theme &gt; Upload Theme, choose the ZIP and click Install Now.</li>
+  <li>WordPress notices the theme is already installed and shows the current and uploaded versions side by side. Click "Replace current with uploaded".</li>
+</ol>
+<p>If the upload fails because the file is too large, ask your host to raise the upload limit or use the next option.</p>
+<h3>Option 3: replace the folder over SFTP or WP-CLI</h3>
+<p>Rename the current theme folder (for example yourtheme to yourtheme-old), upload the new folder in its place, and check the site. If something goes badly wrong, renaming the folders back restores the old version in seconds. Delete the old folder once you're happy. With WP-CLI, the same replacement is one command:</p>
+<pre><code>wp theme install ~/downloads/yourtheme.zip --force</code></pre>
+<h3>After the theme: the right order</h3>
+<ol>
+  <li>Update the theme's bundled plugins when the theme prompts you, usually from its own plugins screen</li>
+  <li>Update your other plugins</li>
+  <li>Regenerate your page builder's CSS if it has that option, and clear every cache: plugin, server and CDN</li>
+  <li>Test the site, as below</li>
 </ol>
 
-<h2>Step 5: Test</h2>
+<h2>Test on staging first for big version jumps</h2>
+<p>A minor update on a simple site can usually go straight to live after a backup. Use a staging copy first when the theme is a major version or more behind, the site is a WooCommerce store, or the theme overrides templates that you or a developer customised. Many hosts offer one-click staging; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+<table>
+  <thead><tr><th>Area</th><th>What to check after the update</th></tr></thead>
+  <tbody>
+    <tr><td>Header, menus and footer</td><td>Logo, menu items, mobile menu and footer widgets are all still there</td></tr>
+    <tr><td>Key pages</td><td>Homepage, service pages and landing pages built with the theme's builder look as before</td></tr>
+    <tr><td>Theme options</td><td>Colours, fonts and layout settings in the Customizer or theme panel have carried over</td></tr>
+    <tr><td>Forms</td><td>Contact and quote forms submit and the emails arrive</td></tr>
+    <tr><td>WooCommerce</td><td>Product, cart and checkout pages work, and a test order goes through. WooCommerce &gt; Status lists any outdated template overrides in the theme</td></tr>
+    <tr><td>Mobile and speed</td><td>Pages look right on a phone and haven't slowed down noticeably</td></tr>
+  </tbody>
+</table>
+
+<h2>Bundled plugins: the part people forget</h2>
+<p>Many premium themes ship with premium plugins included, typically a slider, a page builder and a "theme core" plugin that adds the theme's features. You usually can't update these with their own licence, because you never bought one. They arrive through theme updates instead, which means an outdated theme often leaves outdated plugins behind it, and bundled sliders and builders have had serious security holes in the past.</p>
 <ul>
-  <li>Homepage, key pages, header and footer</li>
-  <li>Forms, WooCommerce and any special features</li>
-  <li>Mobile layout</li>
+  <li>After updating the theme, install the bundled plugin updates it offers straight away</li>
+  <li>Delete bundled plugins the site doesn't actually use</li>
+  <li>If a bundled plugin has a known vulnerability and the theme hasn't shipped a fix, buy your own licence for that plugin so you can update it directly, or replace it</li>
 </ul>
+<p>Bundled plugins are one of the trade-offs covered in <a href="/blog/premium-wordpress-themes-guide/">what to know before buying a premium theme</a>.</p>
 
-<h2>Bundled plugins out of date?</h2>
-<p>If the theme hasn't shipped updates for a bundled plugin with a known vulnerability, consider buying your own licence for that plugin so you can update it directly, or replacing it.</p>
+<h2>If you find edits in the parent theme</h2>
+<p>Don't update until they're moved. Create a child theme, then move each change to the right place: CSS into the child theme's style.css or the Customizer's Additional CSS, PHP functions into the child theme's functions.php or a small custom plugin, and edited template files into the child theme at the same path. Then update the parent.</p>
+<p>Switching an existing site to a child theme can reset some Customizer settings and menu locations, so note or export them first and do the switch on staging. <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> has the setup code.</p>
 
-<h2>If the theme is abandoned</h2>
-<p>A theme with no updates for a long time is a growing risk. Options include moving to a well-maintained lightweight theme while keeping your design, or a planned redesign; see <a href="/blog/redesign-website-tight-budget/">redesigning on a budget</a> and <a href="/blog/premium-wordpress-themes-guide/">choosing a premium theme</a>.</p>
+<h2>If something breaks after the update</h2>
+<ul>
+  <li><strong>Roll back first, investigate second.</strong> Restore the backup, or swap the old theme folder back if you used Option 3, so the live site works while you find the cause.</li>
+  <li><strong>Check the usual suspects:</strong> page builder CSS that needs regenerating, a cache that wasn't cleared, a bundled plugin that wasn't updated, or a PHP version the new theme doesn't support.</li>
+  <li><strong>Read the error.</strong> A "critical error" screen comes with a recovery-mode email to the admin address that usually names the file at fault.</li>
+  <li><strong>Contact the theme's support</strong> with your licence, the old and new version numbers and what broke. Support usually needs a valid licence.</li>
+</ul>
+<p>General rollback plugins work with themes from the WordPress.org directory, not with most premium themes. A few vendors build a rollback option into the theme itself, but usually your backup is the rollback.</p>
 
-<p>Want it handled for you? Theme updates are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+<h2>When the theme is abandoned or the licence has expired</h2>
+<p>If the theme hasn't been updated in a long time, doesn't support current PHP versions, or the vendor has disappeared, updating isn't an option and the risk grows every month. Renew the licence if the theme is still maintained. If not, the choice is between moving to a well-maintained, lightweight theme while keeping your design, or a planned <a href="/website-redesign/">website redesign</a>. Whatever you do, don't download "free" copies of the theme from unofficial sites: those nulled copies are a common source of malware; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a>.</p>
+
+<h2>FAQs</h2>
+<h3>How do I update a premium WordPress theme without losing customisations?</h3>
+<p>Make sure your customisations live in a child theme, the Customizer or the theme's own settings, not in the parent theme's files. Settings stored in the database survive updates; direct edits to theme files don't. Back up, then update.</p>
+<h3>How do I update a ThemeForest theme?</h3>
+<p>Either register the theme with your purchase code or an Envato token, using the theme's own registration screen or the Envato Market plugin, so updates appear in the dashboard, or download the installable WordPress file from your ThemeForest downloads and upload it with "Replace current with uploaded".</p>
+<h3>Will updating my theme delete my pages or content?</h3>
+<p>No. Pages, posts, products and images are stored in the database and the uploads folder, which a theme update doesn't touch. What you can lose is direct edits to the theme's files, and occasionally layouts can look different until builder CSS is regenerated.</p>
+<h3>Can I update a premium theme without a licence?</h3>
+<p>Without an active licence you won't get automatic updates, and some vendors also stop downloads. If you still have access to the account that bought it, you may be able to download the latest version manually. Never use a nulled copy from an unofficial site.</p>
+<h3>Do I need to update the bundled plugins separately?</h3>
+<p>Usually yes. Bundled plugins update through the theme, typically from a plugins screen the theme adds, after the theme itself is updated. Check them every time you update the theme.</p>
+
+<p>Theme years out of date and worried an update will break the site? I can move any direct edits into a child theme, update the theme and its bundled plugins on staging, and test everything before it goes live; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
@@ -22034,54 +22451,138 @@ function acme_dealer_price( $price, $product ) {
   },
   {
     slug: 'wordpress-child-theme-explained',
-    seoTitle: 'WordPress Child Themes Explained (and How to Create One)',
-    title: 'WordPress Child Themes Explained: What They Are and How to Create One',
-    description: 'WordPress child themes explained: why customisations belong in one, how to create one with style.css, functions.php and overrides, and when to skip it.',
+    seoTitle: 'WordPress Child Theme: What It Is and How to Create One',
+    title: 'WordPress Child Themes Explained: What They Are, When You Need One and How to Create One (With Code)',
+    description: 'WordPress child theme explained: when you need one, how to create it with style.css and functions.php enqueue code, template overrides and common fixes.',
     date: '2026-09-28',
+    updated: '2026-10-12',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'elementor-developer'],
     body: `
-<p>If anyone has ever edited your theme's files directly, the next theme update will wipe those changes out. A child theme solves this: it holds your customisations separately, so the parent theme can be updated safely.</p>
+<p>A WordPress child theme is a small theme that inherits its design and features from a parent theme and contains only your changes. Because your custom CSS, PHP and template edits live in the child theme, the parent can be updated safely without wiping them out. To create one, add a folder in wp-content/themes with a style.css file whose Template line names the parent theme's folder and a functions.php file that loads the stylesheets, then activate it. You need one if you edit theme templates or add theme-specific code, not for a few lines of CSS.</p>
+<p>If you'd rather have it set up properly, I can create a child theme, move any direct edits out of the parent and test the switch on staging as part of <a href="/wordpress-website-development/">WordPress website development</a> work.</p>
+<p>Child themes matter most when it's time to update. If you're about to update a premium theme that someone has edited, read <a href="/blog/update-premium-theme-safely/">how to update a premium theme safely</a> as well.</p>
 
-<h2>What a child theme is</h2>
-<p>A child theme is a small theme that inherits everything from a parent theme and only overrides what you change. WordPress loads the child theme's files first, falling back to the parent for everything else.</p>
+<h2>How a child theme works</h2>
+<p>When a child theme is active, WordPress uses the child's files where they exist and falls back to the parent for everything else.</p>
+<table>
+  <thead><tr><th>File in the child theme</th><th>What happens</th></tr></thead>
+  <tbody>
+    <tr><td>style.css</td><td>Required. Its header names the child theme and, through the Template line, its parent</td></tr>
+    <tr><td>functions.php</td><td>Loaded in addition to the parent's functions.php, just before it. It doesn't replace the parent's file</td></tr>
+    <tr><td>Template files such as header.php or single.php</td><td>Replace the parent's file at the same path</td></tr>
+    <tr><td>woocommerce/ folder</td><td>Overrides WooCommerce templates for this theme</td></tr>
+    <tr><td>theme.json (block themes)</td><td>Merged with the parent's settings, with the child's values taking priority</td></tr>
+    <tr><td>screenshot.png</td><td>Optional thumbnail shown in Appearance &gt; Themes</td></tr>
+  </tbody>
+</table>
 
-<h2>When you need one</h2>
-<ul>
-  <li>Adding custom PHP functions to the theme</li>
-  <li>Overriding theme template files</li>
-  <li>Adding significant custom CSS</li>
-</ul>
+<h2>When you need a child theme, and when you don't</h2>
+<table>
+  <thead><tr><th>The change you want</th><th>Best place for it</th></tr></thead>
+  <tbody>
+    <tr><td>Edit a theme template, such as the header or single post layout</td><td>Child theme</td></tr>
+    <tr><td>PHP that hooks into your theme's own functions</td><td>Child theme's functions.php</td></tr>
+    <tr><td>Override WooCommerce templates</td><td>Child theme</td></tr>
+    <tr><td>A large amount of custom CSS that belongs with the design</td><td>Child theme's style.css</td></tr>
+    <tr><td>A few lines of CSS</td><td>Appearance &gt; Customize &gt; Additional CSS, or your page builder's custom CSS</td></tr>
+    <tr><td>Features you'd want to keep if you changed theme, such as custom post types, tracking or integrations</td><td>A small custom plugin</td></tr>
+    <tr><td>A site built entirely in Elementor with no code changes</td><td>None needed yet</td></tr>
+  </tbody>
+</table>
+<p>The rule of thumb: design and presentation belong in the child theme; functionality belongs in a plugin, so it survives a change of theme. See <a href="/blog/plugin-vs-custom-code-wordpress/">plugin or custom code</a> for more on that choice.</p>
 
-<h2>When you don't</h2>
-<ul>
-  <li>Small CSS tweaks can go in the Customizer's Additional CSS or your page builder's custom CSS</li>
-  <li>Site-wide functionality (not design) is better in a small custom plugin; see <a href="/blog/plugin-vs-custom-code-wordpress/">plugin vs custom code</a></li>
-  <li>Sites built entirely in a page builder with no code changes</li>
-</ul>
-
-<h2>How to create one</h2>
-<ol>
-  <li>Create a new folder in wp-content/themes, for example <code>astra-child</code></li>
-  <li>Add a <code>style.css</code> file with a header naming the parent theme's folder in the Template line:
+<h2>How to create a child theme step by step</h2>
+<p>This example creates a child theme for Astra. Swap in your own parent theme's details.</p>
+<h3>Step 1: Create the folder</h3>
+<p>Find the parent theme's folder name in wp-content/themes, for example astra, and create a new folder next to it, such as astra-child. The Template line in the next step must match the parent's folder name exactly, including capital letters.</p>
+<h3>Step 2: Add style.css</h3>
+<p>Create a style.css file in the new folder with this header. Theme Name and Template are required; the version number is used in the next step:</p>
 <pre><code>/*
-Theme Name: Astra Child
-Template: astra
+Theme Name:  Astra Child
+Template:    astra
+Version:     1.0.0
+Description: Child theme for Astra
+Text Domain: astra-child
 */</code></pre>
-  </li>
-  <li>Add a <code>functions.php</code> file. For many classic themes, use it to load the parent theme's stylesheet with WordPress's enqueue functions (check your parent theme's documentation, as some load it automatically)</li>
-  <li>Activate the child theme in Appearance → Themes</li>
+<h3>Step 3: Add functions.php and enqueue the stylesheets</h3>
+<p>Create a functions.php file that loads the child theme's stylesheet after the parent's. Many modern themes, Astra included, already load their own stylesheet, so you only need to enqueue the child's, with the parent's stylesheet handle as a dependency. Astra's handle is astra-theme-css at the time of writing; check your theme's documentation for its own.</p>
+<pre><code>&lt;?php
+add_action( 'wp_enqueue_scripts', 'astra_child_enqueue_styles', 15 );
+function astra_child_enqueue_styles() {
+    wp_enqueue_style(
+        'astra-child-style',
+        get_stylesheet_uri(),
+        array( 'astra-theme-css' ),
+        wp_get_theme()-&gt;get( 'Version' )
+    );
+}</code></pre>
+<p>Some older themes load style.css with a function that, once a child theme is active, picks up the child's file instead of the parent's. In that case, load the parent's stylesheet explicitly first, as the WordPress theme handbook shows:</p>
+<pre><code>&lt;?php
+add_action( 'wp_enqueue_scripts', 'my_child_enqueue_styles' );
+function my_child_enqueue_styles() {
+    $theme = wp_get_theme();
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), $theme-&gt;parent()-&gt;get( 'Version' ) );
+    wp_enqueue_style( 'child-style', get_stylesheet_uri(), array( 'parent-style' ), $theme-&gt;get( 'Version' ) );
+}</code></pre>
+<h3>Step 4: Upload and activate</h3>
+<p>Zip the folder and upload it under Appearance &gt; Themes &gt; Add New Theme &gt; Upload Theme, or copy the folder over SFTP. Then activate the child theme and check the site.</p>
+<h3>The quicker way: WP-CLI or a generator</h3>
+<p>With WP-CLI, one command creates the folder, style.css and functions.php, and can activate it:</p>
+<pre><code>wp scaffold child-theme astra-child --parent_theme=astra --theme_name="Astra Child" --activate</code></pre>
+<p>Many theme vendors also offer a ready-made child theme or a generator, and for block themes the Create Block Theme plugin can make a child theme from the Site Editor.</p>
+
+<h2>Before you switch a live site to a child theme</h2>
+<p>WordPress stores many Customizer settings per theme, so a newly activated child theme can start without your parent theme's header, colours, menu locations or widgets. Some themes keep their settings in a way that carries over; others don't. Note or export your settings first, using the theme's own export option or a Customizer export plugin, and make the switch on a staging copy before doing it live; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+
+<h2>Moving existing edits out of the parent theme</h2>
+<p>If someone has already edited the parent theme directly, move those changes into the child before the next update overwrites them:</p>
+<ol>
+  <li><strong>Find what changed.</strong> Download a fresh copy of the same parent version from the vendor and compare the folders, for example with diff -rq over SSH or a desktop comparison tool.</li>
+  <li><strong>Copy each edited template</strong> into the child theme at the same path.</li>
+  <li><strong>Move added CSS</strong> into the child's style.css, and added PHP functions into the child's functions.php. Because the child's functions.php loads first, a parent function wrapped in a function_exists check can be replaced by defining a function with the same name in the child; any other duplicate name causes a fatal error.</li>
+  <li><strong>Activate the child on staging,</strong> restore Customizer settings and menus, and test key pages, forms and checkout.</li>
+  <li><strong>Replace the parent</strong> with a clean copy of the latest version, then test again before going live.</li>
 </ol>
-<p>Many popular themes also offer a ready-made child theme or a generator tool.</p>
 
-<h2>Overriding templates</h2>
-<p>To change a template, copy the file from the parent theme into the same path in the child theme and edit the copy. After parent updates, check whether the original template changed significantly.</p>
+<h2>Overriding template files</h2>
+<p>To change a template, copy it from the parent theme into the same path in the child theme and edit the copy. For WooCommerce, copy templates from wp-content/plugins/woocommerce/templates/ into a woocommerce folder in the child theme. WooCommerce &gt; Status later warns you when a copied template is out of date.</p>
+<p>Copied templates don't receive the parent's fixes, so keep them to a minimum. Where your theme or WordPress offers a hook or filter, use that in functions.php instead. For example, this changes the length of post excerpts without touching a single template:</p>
+<pre><code>add_filter( 'excerpt_length', function () {
+    return 30;
+} );</code></pre>
 
-<h2>Block themes</h2>
-<p>Block themes can have child themes too, with their own theme.json for style changes and HTML templates; see <a href="/blog/block-themes-full-site-editing/">block themes explained</a>.</p>
+<h2>Child themes for block themes</h2>
+<p>Block themes can have child themes too. A child's theme.json changes colours, fonts and spacing, and HTML files in its templates and parts folders override the parent's. Changes you make in the Site Editor are saved in the database rather than in theme files, so they survive parent updates anyway; a child theme is mainly useful when you want those changes stored as files you control. See <a href="/blog/block-themes-full-site-editing/">block themes explained</a>.</p>
 
-<h2>Switching an existing site to a child theme</h2>
-<p>Activating a child theme can reset some theme customiser settings and menu locations. Test on staging, note your settings first and move any direct edits from the parent into the child; see <a href="/blog/update-premium-theme-safely/">updating premium themes safely</a>.</p>
+<h2>Common child theme problems and fixes</h2>
+<table>
+  <thead><tr><th>Problem</th><th>Likely cause</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>"The parent theme is missing"</td><td>The Template line doesn't match the parent's folder name, or the parent isn't installed</td><td>Correct the Template line or install the parent</td></tr>
+    <tr><td>Site looks unstyled or styles load twice</td><td>The stylesheets are enqueued the wrong way for this parent</td><td>Use the right example above and the correct handle</td></tr>
+    <tr><td>CSS changes don't show</td><td>Browser, plugin or CDN cache, or the version number hasn't changed</td><td>Clear caches and bump the Version; see <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a></td></tr>
+    <tr><td>White screen or critical error after editing functions.php</td><td>A PHP syntax error</td><td>Fix the file over SFTP, or rename the child theme folder so WordPress falls back; see <a href="/blog/fix-wordpress-critical-error/">fixing a critical error</a></td></tr>
+    <tr><td>Header, colours or menus reset after activating</td><td>Customizer settings are stored per theme</td><td>Re-import or reassign them</td></tr>
+    <tr><td>Template edits are ignored</td><td>Wrong path, or the page is built with a page builder template instead</td><td>Check the path matches the parent exactly</td></tr>
+  </tbody>
+</table>
+
+<h2>FAQs</h2>
+<h3>What is a child theme in WordPress?</h3>
+<p>A theme that inherits everything from another theme, its parent, and contains only your changes. It lets you customise the theme's code and templates while still updating the parent safely.</p>
+<h3>Do I need a child theme with Elementor?</h3>
+<p>Not if you only build pages and templates in Elementor, because those are stored in the database and survive theme updates. Add a child theme when you start adding custom PHP or template changes; see <a href="/blog/best-theme-for-elementor/">choosing a theme for Elementor</a>.</p>
+<h3>Will a child theme slow down my site?</h3>
+<p>Not noticeably. It usually adds one small stylesheet. A child theme full of heavy custom code is a different matter, but that's the code, not the child theme.</p>
+<h3>What happens to my child theme when the parent updates?</h3>
+<p>The child theme itself is untouched. After a major parent update, check any templates you copied into the child, because the parent's versions may have changed.</p>
+<h3>Can I create a child theme without a plugin?</h3>
+<p>Yes. You only need a folder with style.css and functions.php, as shown above. WP-CLI and theme vendors' generators are simply quicker.</p>
+<h3>Can a child theme have its own child theme?</h3>
+<p>No. WordPress supports one level only: a parent and a child. If you need more separation, move functionality into a custom plugin or consider a <a href="/blog/custom-wordpress-theme-development/">custom theme</a>.</p>
+
+<p>Need edits moved out of a parent theme, a child theme set up or a theme customised properly? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -24006,92 +24507,133 @@ Template: astra
   },
   {
     slug: 'woocommerce-security-checklist',
-    seoTitle: 'WooCommerce Security Checklist: Protect Your Store',
-    title: 'WooCommerce Security Checklist: How to Protect Your Online Store',
-    description: 'A WooCommerce security checklist: staff accounts, payment gateways, updates, firewalls, card-testing bots, fraud and COD orders, and protecting customer data.',
+    seoTitle: 'WooCommerce Security Checklist: Protect Your WordPress Store',
+    title: 'WooCommerce Security Checklist: Payments, Checkout, Card-Testing Bots, Staff Accounts and Customer Data',
+    description: 'A WooCommerce security checklist: admin roles, payment gateways, PCI basics, card skimmers, card-testing bots, fake orders and protecting customer data.',
     date: '2026-09-28',
+    updated: '2026-10-12',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-malware-removal'],
     body: `
-<p>An online store is a more attractive target than a normal business website. It holds customers' names, phone numbers, addresses and order histories, and it sits in the path of their payments. The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers the basics every site needs; this checklist adds the store-specific steps for WooCommerce.</p>
+<p>To secure a WooCommerce store, first apply the general WordPress hardening every site needs, then add the store-specific layer: let your payment gateway handle card details so they never touch your server, give staff their own Shop Manager accounts with two-factor login, keep WooCommerce and every payment-related plugin updated, protect the checkout from card-testing bots, and check payments in the gateway dashboard before you ship. A store holds customers' names, phone numbers, addresses and order histories, and sits in the path of their payments, so it is a bigger target than an ordinary business site.</p>
+<p>I build and look after stores as a <a href="/woocommerce-developer/">WooCommerce developer</a>, including payment gateways such as Razorpay, PayU and Cashfree. If you think your store is already compromised, see <a href="/wordpress-malware-removal/">hacked site repair</a>: stores get extra checks on the checkout page, payment settings, admin users and order emails, followed by a test order.</p>
+<p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers updates, logins, file permissions, backups and firewalls for any site. This checklist only covers what's different about a store.</p>
 
-<h2>Admin and staff accounts</h2>
-<p>Many store break-ins start with a login. Treat every account that can see orders as sensitive.</p>
+<h2>Which steps to do first</h2>
+<table>
+  <thead><tr><th>Priority</th><th>What to do</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Today</td><td>Two-factor login for admins and shop managers, remove old accounts, confirm the gateway is in live mode with current keys</td><td>Closes the most common ways into the order data and money</td></tr>
+    <tr><td>This week</td><td>Bot protection on checkout and registration, update WooCommerce and payment plugins, delete unused gateways</td><td>Stops card testing and known vulnerabilities</td></tr>
+    <tr><td>This month</td><td>Review checkout plugins, data retention settings and order exports, set up a monitoring routine</td><td>Reduces what an attacker could reach or steal</td></tr>
+  </tbody>
+</table>
+
+<h2>Admin, Shop Manager and customer accounts</h2>
 <ul>
-  <li>Give every person their own account; never share one login among staff</li>
-  <li>Use the Shop Manager role for staff who process orders and edit products, and keep Administrator for the one or two people who truly need it; see <a href="/blog/wordpress-user-roles-explained/">user roles explained</a></li>
-  <li>Turn on two-factor authentication for all administrators and shop managers</li>
-  <li>Remove accounts for staff, freelancers and agencies as soon as their work ends</li>
-  <li>Use strong, unique passwords and limit login attempts</li>
+  <li><strong>One account per person.</strong> Never share a login among staff; you lose any record of who did what.</li>
+  <li><strong>Use the Shop Manager role</strong> for staff who process orders and edit products. It can't install plugins or switch the theme. Keep Administrator for the one or two people who really need it; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>.</li>
+  <li><strong>Turn on two-factor authentication</strong> for every administrator and shop manager.</li>
+  <li><strong>Remove accounts</strong> for former staff, freelancers and agencies as soon as their work ends.</li>
+  <li><strong>Let customers check out as guests</strong> if accounts don't add much for your shoppers. Fewer accounts means fewer passwords to attack. The options are under WooCommerce &gt; Settings &gt; Accounts &amp; Privacy.</li>
+  <li><strong>Protect registration</strong> with bot protection if customers can create accounts; see <a href="/blog/stop-spam-user-registrations-wordpress/">stopping spam registrations</a>.</li>
 </ul>
-<p>Protect the accounts around the store too: your hosting panel, domain registrar, payment gateway dashboard and business email. If any of these is taken over, the store is at risk.</p>
+<p>Protect the accounts around the store too: hosting, domain registrar, the payment gateway dashboard and the email inbox that receives password resets. If any of those is taken over, so is the store.</p>
 
-<h2>Let the payment gateway handle card details</h2>
-<p>The safest store never lets card numbers touch its own server. Use a reputable payment gateway and prefer a checkout where the customer enters card details on the gateway's own page, or in fields served by the gateway. UPI payments also avoid card numbers being typed on your site.</p>
+<h2>Payments: keep card details off your server</h2>
+<p>The safest store never lets a card number reach its own server. Most Indian gateways' WooCommerce plugins either send the customer to the gateway's own payment page or open the gateway's payment window on your checkout, so card details are entered with the gateway. Check how yours works, and avoid any plugin that posts raw card fields to your site. UPI, net banking and wallets avoid card numbers entirely.</p>
 <ul>
   <li>Never store card numbers, CVVs or UPI PINs, and never ask customers to send them by WhatsApp, email or phone</li>
   <li>Keep gateway API keys and webhook secrets private, and regenerate them if a developer leaves or you suspect a leak</li>
-  <li>Check that the gateway is in live mode, not test mode, and remove old or unused gateway plugins</li>
-  <li>Confirm payments in the gateway dashboard before shipping, never from a customer's screenshot</li>
+  <li>Set up the gateway's webhook with its secret, so order statuses are updated by verified messages from the gateway</li>
+  <li>Make sure the live site uses live keys and test mode is off, and delete gateway plugins you no longer use</li>
+  <li>Confirm payment in the gateway dashboard before shipping, never from a customer's screenshot</li>
 </ul>
-<p>Even with a hosted checkout, attackers can inject fake payment forms into a hacked store. Learn the warning signs in <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce card skimming malware</a>.</p>
+<p>Choosing or switching gateway? See <a href="/blog/payment-gateways-india-compared/">how to compare payment gateways in India</a>.</p>
 
-<h2>Updates and extensions</h2>
-<p>WooCommerce, payment gateways and popular extensions regularly release security fixes, and a store running months-old versions is an easy target.</p>
-<ul>
-  <li>Update WooCommerce, extensions, themes and WordPress promptly, testing the checkout on staging first</li>
-  <li>Buy premium extensions only from the official marketplace or the developer, and keep licences active so updates keep arriving</li>
-  <li>Never install nulled (pirated) plugins or themes; they often contain hidden malware</li>
-  <li>Delete extensions you don't use rather than leaving them deactivated</li>
-  <li>Keep PHP on a supported version</li>
-</ul>
-
-<h2>Firewall and bot protection</h2>
-<p>Stores attract automated attacks: password guessing, fake account registrations and card testing, where criminals use your checkout to check whether stolen card numbers work. Signs of card testing include a burst of small failed orders in a short time, often from guest customers with random-looking details.</p>
-<ul>
-  <li>Use a web application firewall (WAF) at the cloud, server or plugin level; see <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a></li>
-  <li>Add rate limiting or bot protection to the login, registration and checkout forms, then check that genuine customers can still buy easily</li>
-  <li>Turn on any fraud and card-testing protection your payment gateway offers</li>
-  <li>Disable account registration if you don't need it, or protect it from spam sign-ups</li>
-</ul>
-
-<h2>Fraud orders and COD abuse</h2>
-<p>Not every threat is technical. Fake and fraudulent orders cost Indian stores money in shipping, return-to-origin charges and tied-up stock.</p>
-<ul>
-  <li>Watch for red flags: mismatched names and addresses, unusually large quantities, several orders from one phone number to different addresses, or urgent requests to change the delivery address</li>
-  <li>For Cash on Delivery, confirm higher-value or first-time orders by phone or WhatsApp before dispatch; some stores also use OTP verification at checkout</li>
-  <li>Set sensible limits, such as a maximum COD order value, and consider prepaid-only for products that are often abused</li>
-  <li>Be wary of "payment done" screenshots and requests to refund to a different account; check the gateway dashboard every time</li>
-</ul>
-
-<h2>Protect customer data</h2>
-<p>Customer details are your responsibility. India's Digital Personal Data Protection Act, 2023 sets out duties for businesses that collect personal data, and its rules are being phased in, so check current requirements with a lawyer. Good habits help either way:</p>
-<ul>
-  <li>Collect only the details you need to fulfil orders</li>
-  <li>Limit who can view and export orders and customer lists</li>
-  <li>Don't leave order exports in public server folders, open shared drives or WhatsApp groups</li>
-  <li>Store backups securely, since they contain customer data too</li>
-  <li>Run the whole site on HTTPS and keep your privacy policy accurate</li>
-</ul>
-
-<h2>Monitoring and a response plan</h2>
-<p>Store security is a routine, not a one-time setup. A simple schedule:</p>
+<h2>PCI DSS basics for small stores</h2>
+<p>PCI DSS is the card industry's security standard, and it applies to anyone who accepts card payments. How much of it you have to deal with depends on where card details are entered. In India, RBI rules at the time of writing also stop merchants from storing customers' card details; saved cards work through tokens handled by the card networks and gateways. Your gateway's onboarding documents explain what is expected of you, so ask them if you're unsure.</p>
 <table>
-  <thead>
-    <tr><th>Check</th><th>How often</th></tr>
-  </thead>
+  <thead><tr><th>Checkout type</th><th>Do card details touch your server?</th><th>What you still have to protect</th></tr></thead>
   <tbody>
-    <tr><td>Look for unusual failed or pending orders</td><td>Weekly</td></tr>
-    <tr><td>Review new administrator and shop manager accounts</td><td>Weekly</td></tr>
-    <tr><td>Apply updates after testing on staging</td><td>Weekly or monthly</td></tr>
-    <tr><td>Malware scans and file-change alerts</td><td>Automatic, with alerts reviewed promptly</td></tr>
-    <tr><td>Review who can access hosting, the gateway and email</td><td>Quarterly</td></tr>
-    <tr><td>Test restoring a backup</td><td>Quarterly</td></tr>
+    <tr><td>Redirect to the gateway's payment page</td><td>No</td><td>Your checkout page, so nobody can change where it sends customers</td></tr>
+    <tr><td>Gateway's payment window or card fields on your checkout</td><td>No, the fields are served by the gateway</td><td>Every script on the checkout page, because a skimmer can add a fake form</td></tr>
+    <tr><td>Card fields posted to your own server</td><td>Yes</td><td>Far more; not a sensible choice for a small store</td></tr>
+    <tr><td>UPI, net banking, wallets</td><td>No card data</td><td>Payment verification and order status updates</td></tr>
   </tbody>
 </table>
-<p>If you suspect a hack, act quickly: turn off online payments or put the checkout into maintenance, inform your payment gateway, keep a backup and logs as evidence, and have the store cleaned before reopening. Indian rules may require reporting certain cyber incidents within a short time, so take advice promptly.</p>
+<p>With a hosted or embedded checkout, your compliance work is usually much lighter, but not zero. At the time of writing, recent versions of PCI DSS also expect merchants to keep control of the scripts on payment pages, because of skimming.</p>
 
-<p>Worried your store isn't secure, or think it may already be compromised? See <a href="/wordpress-malware-removal/">malware removal and security</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> for ongoing store care.</p>
+<h2>Card-testing attacks</h2>
+<p>Card testing is when criminals use your checkout to find out which stolen card numbers still work. You'll see a burst of small failed orders in a short time, often guest orders with random names and email addresses, many of them within minutes. Even failed attempts can cost you gateway fees, chargebacks and, in bad cases, a suspended merchant account.</p>
+<ul>
+  <li>Add bot protection such as Cloudflare Turnstile or reCAPTCHA to the checkout, and test that real customers can still pay easily</li>
+  <li>Rate-limit checkout requests at your firewall. The classic checkout submits to <code>/?wc-ajax=checkout</code> and the block checkout to <code>/wp-json/wc/store/v1/checkout</code>, which is where a rule needs to go; see <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a></li>
+  <li>Turn on any fraud and card-testing protection your gateway offers</li>
+  <li>If an attack is happening now, temporarily turn off card payments or guest checkout, block the worst IP ranges and tell your gateway</li>
+</ul>
+
+<h2>Fake orders, COD abuse and order spam</h2>
+<p>Not every threat is technical. Fake and fraudulent orders cost Indian stores money in shipping, return-to-origin charges and stock held for nothing.</p>
+<ul>
+  <li>Watch for mismatched names and addresses, unusually large quantities, several orders from one phone number to different addresses, and urgent requests to change the delivery address</li>
+  <li>Confirm higher-value or first-time cash on delivery orders by phone or WhatsApp before dispatch, and consider a maximum COD order value</li>
+  <li>Be wary of "payment done" screenshots and refund requests to a different account; check the gateway dashboard every time</li>
+</ul>
+<p>The COD side is covered in detail in <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery without losing money</a>.</p>
+
+<h2>Plugins that touch payments, checkout and orders</h2>
+<p>Every plugin that adds checkout fields, upsells, abandoned-cart emails, GST invoices, order exports or SMS and WhatsApp notifications runs on your most sensitive pages or handles customer data. Treat them more strictly than ordinary plugins.</p>
+<ul>
+  <li>Keep the list short; each one is more code on the payment page</li>
+  <li>Choose actively maintained plugins with recent updates, and buy premium ones only from the official marketplace or the developer, with the licence active so updates keep arriving</li>
+  <li>Never install nulled (pirated) plugins or themes on a store</li>
+  <li>Check what each plugin sends to outside services, and which API keys or tokens it stores</li>
+  <li>Don't leave order or customer export files in the uploads folder, where anyone with the address could download them</li>
+  <li>Update them on staging first, then place a test order on the live site</li>
+</ul>
+
+<h2>Watch the checkout for skimmers</h2>
+<p>Card skimmers are scripts injected into a hacked store's checkout that copy what customers type, sometimes by showing a fake card form even when your real gateway is hosted. Signs include an extra payment form, customers reporting card fraud after buying from you, and unfamiliar external scripts in the checkout page's source. Place a test order every month, look at the checkout as a logged-out customer, and turn on file-change alerts. If you suspect one, read <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce card skimming malware</a> straight away.</p>
+
+<h2>Protect customer data</h2>
+<p>India's Digital Personal Data Protection Act, 2023 sets duties for businesses that collect personal data, and its rules are being phased in, so check current requirements with a lawyer. Good habits help either way:</p>
+<ul>
+  <li>Collect only the details you need to fulfil orders</li>
+  <li>Set personal data retention for inactive accounts and old orders under WooCommerce &gt; Settings &gt; Accounts &amp; Privacy</li>
+  <li>Limit who can view and export orders and customer lists, and don't share exports in WhatsApp groups or open drives</li>
+  <li>Store backups securely, since they contain customer data too</li>
+</ul>
+
+<h2>A store security routine</h2>
+<table>
+  <thead><tr><th>Check</th><th>How often</th></tr></thead>
+  <tbody>
+    <tr><td>Unusual failed or pending orders</td><td>Weekly</td></tr>
+    <tr><td>New administrator and shop manager accounts</td><td>Weekly</td></tr>
+    <tr><td>Updates, tested on staging, with a live test order afterwards</td><td>Weekly or monthly</td></tr>
+    <tr><td>Malware scans and file-change alerts</td><td>Automatic, with alerts read promptly</td></tr>
+    <tr><td>Who can access hosting, the gateway and email</td><td>Quarterly</td></tr>
+    <tr><td>Test restore of a backup</td><td>Quarterly</td></tr>
+  </tbody>
+</table>
+<p>This fits into the wider <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>. If you suspect a hack, turn off online payments or put the checkout into maintenance, inform your gateway, keep a backup and logs as evidence, and have the store cleaned before reopening. Indian rules may require certain cyber incidents to be reported quickly, so take advice promptly.</p>
+
+<h2>FAQs</h2>
+<h3>Is WooCommerce secure?</h3>
+<p>Yes, when it's maintained. WooCommerce is actively developed and security fixes are released regularly. Most store compromises come from outdated plugins, weak or shared logins, nulled software and poor hosting.</p>
+<h3>Does a WooCommerce store need to be PCI compliant?</h3>
+<p>Any business that accepts card payments falls under PCI DSS, but with a checkout where the gateway handles card details, your part is usually much smaller. Your gateway will tell you what it needs from you.</p>
+<h3>How do I stop card-testing attacks on WooCommerce?</h3>
+<p>Add bot protection to the checkout, rate-limit checkout requests at your firewall, and turn on your gateway's fraud tools. During an active attack, pause card payments or guest checkout and contact your gateway.</p>
+<h3>Can I store customers' card details for faster checkout?</h3>
+<p>Not on your own site. Saved cards should work through your gateway's tokenisation, so the card number never sits in your database.</p>
+<h3>Which security plugin is best for a WooCommerce store?</h3>
+<p>Use one reputable security plugin, such as Wordfence or Solid Security, ideally alongside a cloud firewall. Running two security plugins often causes conflicts and slows the checkout.</p>
+<h3>How do I know if my checkout has been skimmed?</h3>
+<p>Customers reporting card fraud after buying from you is the most common sign. Also look for unexpected payment forms and unfamiliar external scripts on the checkout page. Act immediately: take card payments offline, tell your gateway and have the store cleaned.</p>
+
+<p>Building a new store or moving to WooCommerce? Payment gateways, COD rules and the checkout are set up and tested as part of <a href="/woocommerce-developer/">WooCommerce development</a>. If your store has already been hit, <a href="/wordpress-malware-removal/">malware removal and hardening</a> covers the cleanup, extra checks on the checkout and payment settings, and a test order.</p>
 `,
   },
   {
