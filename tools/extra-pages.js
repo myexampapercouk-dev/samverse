@@ -1,6 +1,7 @@
 // Standalone pages built by tools/build-pages.js: calculator, about, glossary.
 // Each entry: slug, title, description, crumb, eyebrow, h1 (HTML), lead, main (HTML), optional script (plain JS), schema(url).
 const SITE = 'https://samverse.space';
+const WORK = require('./work-data');
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // ---------------------------------------------------------------------------
@@ -200,6 +201,39 @@ module.exports = [
           <h2>What I focus on</h2>
           <p>I care about the things that actually bring business: a site that looks professional on every phone, loads quickly, shows up on Google, and makes it easy for visitors to get in touch. And I build sites you can update yourself, so you're never stuck waiting for a developer.</p>
 
+          <h2>Projects I've built</h2>
+          <p>Every project below has a case study showing what the client needed, what I built and why. They are real, live websites, and the case studies describe only what is on them.</p>
+          <ul>
+${(Array.isArray(WORK) ? WORK : Object.values(WORK)[0]).map(w => `            <li><a href="/work/${w.slug}/">${esc(w.name)}</a>: ${esc(w.industry || '')}</li>`).join('\n')}
+          </ul>
+
+          <h2>What I can help with</h2>
+          <ul>
+            <li><a href="/wordpress-website-development/">WordPress website development</a>, from small business sites to directories and portals</li>
+            <li><a href="/woocommerce-developer/">WooCommerce stores</a>, with Indian payment gateways, GST and shipping set up</li>
+            <li><a href="/website-redesign/">Website redesigns</a> and <a href="/figma-to-wordpress/">Figma to WordPress</a> builds</li>
+            <li><a href="/landing-page-design/">Landing pages</a> for Google and Meta ad campaigns</li>
+            <li><a href="/wordpress-speed-optimization/">Speed optimization</a> and Core Web Vitals fixes</li>
+            <li><a href="/wordpress-malware-removal/">Malware removal</a> and hacked site recovery</li>
+            <li><a href="/wordpress-maintenance/">Maintenance</a>, updates, backups and <a href="/wordpress-migration/">migrations</a></li>
+            <li><a href="/wordpress-seo-services/">Technical and on-page SEO</a> for WordPress sites</li>
+            <li><a href="/wordpress-developer-for-agencies/">White-label development</a> for agencies</li>
+          </ul>
+
+          <h2>What I write about</h2>
+          <p>The <a href="/blog/">blog</a> is where I explain the problems I see on WordPress sites and how to fix them, in plain English. A few of the most-read guides:</p>
+          <ul>
+            <li><a href="/blog/why-is-my-wordpress-site-slow/">Why is my WordPress site slow?</a></li>
+            <li><a href="/blog/signs-wordpress-site-hacked/">How to tell if your WordPress site has been hacked</a></li>
+            <li><a href="/blog/wordpress-website-cost-india/">How much a WordPress website costs in India</a></li>
+            <li><a href="/blog/technical-seo-audit-wordpress/">How to run a technical SEO audit on WordPress</a></li>
+            <li><a href="/blog/woocommerce-speed-optimization/">How to speed up a WooCommerce store</a></li>
+            <li><a href="/blog/outsource-wordpress-development-india/">Outsourcing WordPress development to India</a></li>
+          </ul>
+
+          <h2>Where I work</h2>
+          <p>I'm based in <a href="/wordpress-developer-pune/">Pune</a> and work with businesses in Pune, Pimpri-Chinchwad and Mumbai, and with clients across India and abroad online, including a restaurant in the UK. Most projects run over WhatsApp, email, calls and video, so location rarely matters.</p>
+
           <h2>Who I work with</h2>
           <ul>
             <li><strong>Business owners</strong> who need a new website, a redesign or an online store</li>
@@ -244,7 +278,7 @@ module.exports = [
         '@type': 'Person', '@id': `${SITE}/#sameer`, name: 'Sameer Gupta', jobTitle: 'Freelance WordPress Developer',
         url: `${SITE}/`, email: 'mailto:sameergpt9719@gmail.com', telephone: '+91-7417049145',
         address: { '@type': 'PostalAddress', addressLocality: 'Pune', addressRegion: 'Maharashtra', addressCountry: 'IN' },
-        knowsAbout: ['WordPress', 'Elementor', 'WooCommerce', 'Website Speed Optimization', 'Search Engine Optimization', 'Responsive Web Design'],
+        knowsAbout: ['WordPress', 'Elementor', 'WooCommerce', 'Website Speed Optimization', 'Search Engine Optimization', 'Responsive Web Design', 'WordPress Security', 'Malware Removal', 'WordPress Maintenance', 'Landing Page Design'],
       },
     }),
   },
