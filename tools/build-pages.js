@@ -963,7 +963,7 @@ ${JSON.stringify(schema, null, 2)}
         <div class="lp-hero-copy">
           <span class="eyebrow">Portfolio</span>
           <h1>Websites I've <span class="grad">designed &amp; built</span></h1>
-          <p class="lead">Live WordPress websites for agencies, manufacturers, healthcare, media and directory businesses. Open a case study to see what each site needed and how it was built.</p>
+          <p class="lead">Live websites, mostly built on WordPress, for agencies, manufacturers, healthcare, media and directory businesses. Open a case study to see what each site needed and how it was built.</p>
         </div>
       </div>
     </section>
@@ -971,6 +971,25 @@ ${JSON.stringify(schema, null, 2)}
       <div class="container">
         <div class="work-grid" id="workGrid">
 ${projectCards()}
+        </div>
+      </div>
+    </section>
+    <section class="section lp-guide">
+      <div class="container">
+        <div class="post-body lp-guide-body">
+          <h2>Case studies by industry</h2>
+          <p>Each case study covers the client's goals, the pages and features I built, and the decisions behind them, written only from what is on the live site. If your business is in one of these fields, the related service page explains how I would approach your project.</p>
+          <h3>Doctors and clinics</h3>
+          <p><a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a>, <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a> and <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta</a> show credentials, services and easy appointment booking. See <a href="/wordpress-website-for-doctors/">website design for doctors and clinics</a>.</p>
+          <h3>Manufacturers, B2B and industrial</h3>
+          <p><a href="/work/vansh-group/">Vansh Group</a>, an electronics OEM, <a href="/work/india-automation-hub/">India Automation Hub</a>, an industrial automation media portal, and <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a generator rental company. See <a href="/website-for-manufacturers/">websites for manufacturers</a> and <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a>.</p>
+          <h3>Agencies</h3>
+          <p><a href="/work/third-eye-social/">Third Eye Social</a>, an AI automation agency, and <a href="/work/streak-creative/">Streak Creative</a>, a growth marketing agency. See <a href="/wordpress-developer-for-agencies/">white-label WordPress development for agencies</a>.</p>
+          <h3>Directories, temples and local businesses</h3>
+          <p><a href="/work/our-temples/">Our Temples</a>, a large temple directory and travel guide, <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, an interior design studio, and <a href="/work/southern-flavours/">Southern Flavours</a>, an Indian restaurant in the UK. See <a href="/website-for-temples-and-ngos/">websites for temples and NGOs</a> and <a href="/website-for-restaurants/">restaurant websites</a>.</p>
+          <h3>This website</h3>
+          <p><a href="/work/samverse/">Samverse</a> is my own custom-coded portfolio and lead generation site, with service pages, a blog and a <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+          <p>Want something similar? Read <a href="/blog/wordpress-website-cost-india/">what a WordPress website costs in India</a>, or see how I handle <a href="/wordpress-website-development/">WordPress website development</a> from brief to launch.</p>
         </div>
       </div>
     </section>
