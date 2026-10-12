@@ -158,65 +158,99 @@ module.exports = [
   },
   {
     slug: 'wordpress-vs-wix-vs-shopify',
-    title: 'WordPress vs Wix vs Shopify: Which Is Best for Your Business?',
-    description: 'WordPress vs Wix vs Shopify for small businesses: an honest comparison of cost, flexibility, SEO, ownership and ease of use, and which one suits your needs.',
+    seoTitle: 'WordPress vs Wix vs Shopify: Which Is Best in India?',
+    title: 'WordPress vs Wix vs Shopify: Which Is Best for Your Business in India? Cost, UPI Payments, GST and Ownership Compared',
+    description: 'WordPress vs Wix vs Shopify for Indian businesses: running costs, UPI and Indian payment gateways, GST invoices, SEO, ownership and finding developers.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Guides',
     related: ['website-redesign', 'woocommerce-developer', 'wordpress-migration'],
     body: `
-<p>WordPress, Wix and Shopify are the three most popular ways to build a business website. Each is good at different things. Here's an honest comparison to help you pick the right one, not just the one with the biggest advertising budget.</p>
+<p>WordPress vs Wix vs Shopify, in short: choose WordPress for a service business, clinic, manufacturer or any site with lots of content, and for online stores that want low running costs and Indian gateways such as Razorpay through WooCommerce. Choose Shopify if you sell products and want a hosted store where hosting and security are handled, and you accept a monthly plan plus app costs. Choose Wix only for a small, simple site you want to build yourself and don't expect to grow much.</p>
+<p>I build on WordPress, so read this with that in mind, but Shopify in particular is a good platform and the right choice for some Indian brands. Here's how the three compare on the things that matter to a business in India: cost, UPI payments, GST, SEO, ownership and help. If WordPress fits, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<p>This is the three-way overview. For a deeper look at stores only, see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for Indian stores</a>, and if you're also considering other builders, <a href="/blog/wordpress-vs-squarespace/">WordPress vs Squarespace</a> and <a href="/blog/wordpress-vs-webflow/">WordPress vs Webflow</a>.</p>
 
-<h2>Quick comparison</h2>
+<h2>WordPress vs Wix vs Shopify at a glance</h2>
 <table>
   <thead><tr><th></th><th>WordPress</th><th>Wix</th><th>Shopify</th></tr></thead>
   <tbody>
-    <tr><td><strong>Best for</strong></td><td>Business sites, blogs, stores, anything custom</td><td>Very simple DIY sites</td><td>Online stores</td></tr>
-    <tr><td><strong>Ownership</strong></td><td>You own everything</td><td>Locked to Wix</td><td>Locked to Shopify</td></tr>
-    <tr><td><strong>Monthly platform fee</strong></td><td>None (just hosting)</td><td>Yes</td><td>Yes, plus app fees</td></tr>
-    <tr><td><strong>Flexibility</strong></td><td>Very high</td><td>Limited</td><td>High for e-commerce</td></tr>
-    <tr><td><strong>SEO control</strong></td><td>Full control</td><td>Good basics</td><td>Good</td></tr>
-    <tr><td><strong>Ease for beginners</strong></td><td>Easy with Elementor</td><td>Very easy</td><td>Easy</td></tr>
+    <tr><td>What it is</td><td>Free, open-source software on hosting you choose</td><td>Hosted drag-and-drop website builder</td><td>Hosted e-commerce platform</td></tr>
+    <tr><td>Best for</td><td>Business sites, blogs, catalogues and stores</td><td>Small DIY sites</td><td>Online stores selling products</td></tr>
+    <tr><td>How you pay</td><td>Hosting, domain, optional licences, usually yearly</td><td>A premium plan, monthly or yearly</td><td>A monthly plan plus paid apps</td></tr>
+    <tr><td>UPI and Indian gateways</td><td>Razorpay, PayU, Cashfree, PhonePe and more through WooCommerce</td><td>Limited to the providers Wix supports in India</td><td>Supported through third-party gateways</td></tr>
+    <tr><td>GST invoices</td><td>Tax classes plus an invoice plugin</td><td>Basic tax settings; check invoice options</td><td>Tax settings plus invoice apps</td></tr>
+    <tr><td>Content and blogging</td><td>Excellent</td><td>Fine for small blogs</td><td>Basic</td></tr>
+    <tr><td>SEO control</td><td>Full, with Yoast or Rank Math</td><td>Good basics</td><td>Good for stores; less flexible URLs</td></tr>
+    <tr><td>Ownership and moving</td><td>Move to any host</td><td>Can't export and run the site elsewhere</td><td>Data exports; design must be rebuilt elsewhere</td></tr>
+    <tr><td>Maintenance</td><td>Updates and backups are your job or your developer's</td><td>Handled by Wix</td><td>Handled by Shopify</td></tr>
+    <tr><td>Developers in India</td><td>A very large pool at every budget</td><td>Few specialists; mostly DIY</td><td>A growing pool, mostly e-commerce focused</td></tr>
   </tbody>
 </table>
 
-<h2>WordPress: the flexible, owned option</h2>
-<p>WordPress powers a huge share of all websites on the internet, from small blogs to large company sites. It's open-source, so you own your website and can move it to any host at any time.</p>
-<p><strong>Pros:</strong></p>
+<h2>Cost in India: what each one really costs</h2>
+<p>The three charge in different ways, so compare the total over three years rather than the first month's offer.</p>
 <ul>
-  <li>No platform lock-in. Your site, your content, your data.</li>
-  <li>Thousands of themes and plugins for almost any feature.</li>
-  <li>Full SEO control: URLs, schema, speed, sitemaps.</li>
-  <li>With Elementor, pages are easy to edit visually.</li>
-  <li>WooCommerce turns it into a full online store with no per-sale platform fee.</li>
+  <li><strong>WordPress:</strong> the software is free. You pay for hosting, roughly ₹2,500 to ₹15,000 a year, a domain at about ₹500 to ₹1,200 a year, and any premium theme or Elementor Pro licence at up to about ₹6,000 a year. A professionally built small business site typically costs ₹15,000 to ₹40,000, and a WooCommerce store ₹30,000 to ₹90,000 or more; see <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a>. Maintenance is optional, or you do it yourself.</li>
+  <li><strong>Wix:</strong> a free plan exists, but it shows Wix branding and uses a Wix address. Connecting your own domain and removing ads needs a premium plan, and accepting payments needs a higher business plan. The subscription continues for as long as the site exists.</li>
+  <li><strong>Shopify:</strong> a monthly plan for the store, plus paid apps for features such as reviews, filters, WhatsApp or GST invoices, which can add a noticeable amount each month. Premium themes are a one-off cost.</li>
 </ul>
-<p><strong>Cons:</strong> it needs regular updates and good hosting. Most businesses have a developer set it up and maintain it.</p>
+<p>Wix and Shopify prices, plans and currency billing change, so check their pricing pages for current figures in rupees. For a simple brochure site the totals can be close; with a store, a lot of content or several years, WordPress usually costs less to run.</p>
 
-<h2>Wix: easiest for a simple DIY site</h2>
-<p>Wix is a drag-and-drop builder that's easy to start with. It's fine for a basic personal site or a very small business that wants to build it themselves.</p>
-<p><strong>Pros:</strong> very easy to start, hosting included, lots of templates.</p>
-<p><strong>Cons:</strong> you can't move your site off Wix; monthly fees continue forever; fewer options as your business grows; and less control over speed and advanced SEO.</p>
+<h2>Payments: UPI, Indian gateways and cash on delivery</h2>
+<p>This is often the deciding factor for Indian businesses.</p>
+<ul>
+  <li><strong>WordPress with WooCommerce</strong> works with Razorpay, PayU, Cashfree, PhonePe and other gateways that accept UPI, cards, net banking and wallets, plus cash on delivery with rules by order value or pin code. You pay only the gateway's fee. See <a href="/blog/payment-gateways-india-compared/">Indian payment gateways compared</a>.</li>
+  <li><strong>Shopify</strong> supports Indian gateways such as Razorpay, PayU and Cashfree, and cash on delivery. Shopify's own payment service isn't offered in India at the time of writing, and Shopify has charged an extra transaction fee on orders paid through third-party gateways, varying by plan. Check its current pricing for India.</li>
+  <li><strong>Wix</strong> connects to a limited set of payment providers, and the list depends on your country. Check exactly which providers your Wix account can use in India, and whether they support UPI, before you build a store on it.</li>
+</ul>
 
-<p>Also considering Webflow? See <a href="/blog/wordpress-vs-webflow/">WordPress vs Webflow</a>.</p>
+<h2>GST and Indian business needs</h2>
+<p>All three let you set tax rates. The difference is invoices and flexibility. WooCommerce can split tax into CGST and SGST or charge IGST based on the shipping state, and an invoice plugin adds your GSTIN, HSN codes and invoice numbering. Shopify handles GST settings and relies on invoice apps for GST-format invoices. On Wix, check whether its invoices meet your CA's requirements before you start selling. Whichever you choose, ask your CA to confirm rates and the invoice format.</p>
+<p>The same pattern applies to other Indian needs: pin code delivery checks, shipping through Shiprocket or Delhivery, WhatsApp order updates and Hindi or regional language pages. WordPress usually has a plugin for each, Shopify has apps, and Wix has fewer options.</p>
 
-<h2>Shopify: built for selling online</h2>
-<p>Shopify is a strong, hosted e-commerce platform. It's quick to set up a store and handles hosting and security for you.</p>
-<p><strong>Pros:</strong> excellent for stores, reliable checkout, large app ecosystem.</p>
-<p><strong>Cons:</strong> monthly plans plus paid apps add up; transaction fees can apply unless you use Shopify Payments; content pages and blogs are less flexible than WordPress; and you're tied to the platform.</p>
+<h2>Design and ease of use</h2>
+<p>Wix is the easiest to start with: pick a template and drag things around. Shopify is easy for setting up products and orders, with themes that look good out of the box. WordPress has a steeper start, but with Elementor or the block editor, staff can edit text, images and pages easily once the site is built, and design freedom is the highest of the three.</p>
 
-<p>Already on Wix and thinking of switching? Here's <a href="/blog/migrate-wix-to-wordpress/">how to move from Wix to WordPress without losing traffic</a>.</p>
+<h2>SEO and content</h2>
+<p>All three can rank. Wix and Shopify cover the basics: titles, descriptions, sitemaps and redirects. Shopify's URL structure is fixed, with /products/ and /collections/ in every address, and its blog is basic. WordPress with Yoast or Rank Math gives full control over URLs, schema, internal linking and large amounts of content, which matters for service businesses that win customers through helpful pages and blog posts. In practice, content, structure and speed matter more than the platform.</p>
+
+<h2>Ownership, lock-in and moving later</h2>
+<p>This is the difference people regret most. A WordPress site is yours: files and database can move to any host, and any WordPress developer can take over. A Wix site can't be exported and run elsewhere, so leaving means rebuilding. Shopify lets you export products, customers and orders as CSV files, but the theme and apps stay behind, so leaving also means rebuilding the design.</p>
+
+<h2>Maintenance and security</h2>
+<p>Wix and Shopify handle hosting, updates and security for you, which is a real advantage if nobody in the business is technical. WordPress needs regular updates, backups and security checks, done by you or a developer. In return you choose the host and the setup, and a well-maintained WordPress site is both fast and secure.</p>
+
+<h2>Finding help in India</h2>
+<p>WordPress developers are easy to find in every Indian city and at every budget, so you're never dependent on one person or agency. Shopify developers are fewer but growing, mainly around D2C brands. Wix specialists are rare, because most Wix sites are built by their owners.</p>
 
 <h2>Which should you choose?</h2>
 <ul>
-  <li><strong>Service business, clinic, manufacturer, consultant:</strong> WordPress. You get flexibility, full SEO control and no monthly platform fees.</li>
-  <li><strong>Online store in India on a budget:</strong> WordPress + WooCommerce works well with Indian gateways like Razorpay and has no platform commission. Shopify is a good choice if you prefer a fully hosted platform and don't mind monthly fees.</li>
-  <li><strong>Tiny personal site you'll build yourself:</strong> Wix is fine to start with.</li>
-  <li><strong>Content-heavy site or blog:</strong> WordPress, without question.</li>
+  <li><strong>Service business, clinic, consultant, school or manufacturer:</strong> WordPress, for content, local SEO, enquiry forms and no platform fees.</li>
+  <li><strong>B2B catalogue with enquiries rather than checkout:</strong> WordPress, which handles large catalogues and quote forms well.</li>
+  <li><strong>Product brand that wants low running costs and Indian gateways:</strong> WordPress with WooCommerce; see <a href="/woocommerce-developer/">WooCommerce store development</a>.</li>
+  <li><strong>Product brand that wants a fully hosted store and no technical upkeep:</strong> Shopify, if you accept the monthly plan and app costs.</li>
+  <li><strong>Content-heavy site or blog:</strong> WordPress.</li>
+  <li><strong>Very small site you'll build and run yourself:</strong> Wix is fine to start with, as long as you accept that moving later means a rebuild.</li>
 </ul>
 
-<p>Also weighing up Squarespace? See <a href="/blog/wordpress-vs-squarespace/">WordPress vs Squarespace</a> for ownership, long-term costs and Indian payments.</p>
+<h2>Already on Wix or Shopify?</h2>
+<p>You can move to WordPress. Pages and content are rebuilt, products and customers are imported, and every old URL is redirected to protect your rankings. See <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a> or <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</p>
 
-<h2>Already on Wix or another platform?</h2>
-<p>You can move to WordPress. Your pages and content are rebuilt on WordPress, and redirects protect any Google rankings you already have. It's a common upgrade once a business outgrows a DIY builder.</p>
+<h2>FAQs</h2>
+<h3>Which is better: Wix, WordPress or Shopify?</h3>
+<p>It depends on what you're building. WordPress is the most flexible and usually the cheapest to run, Shopify is the simplest way to run a hosted online store, and Wix is the easiest for a small DIY site. For most Indian service businesses, WordPress is the better long-term choice.</p>
+<h3>Is Shopify or WordPress better for an online store in India?</h3>
+<p>WordPress with WooCommerce suits stores that want low running costs, full control and Indian gateways with only the gateway's fee. Shopify suits stores that want hosting and security fully handled and accept the plan, app costs and any third-party transaction fee.</p>
+<h3>Can I accept UPI payments on Wix?</h3>
+<p>Only through the payment providers Wix supports for India, and that list is limited and changes. Check it in your Wix dashboard first. On WordPress, WooCommerce works directly with Indian gateways that support UPI.</p>
+<h3>Is Wix good for SEO?</h3>
+<p>Wix covers the basics well enough for a small local site. For larger sites, lots of content or detailed control over URLs, schema and speed, WordPress gives you more room.</p>
+<h3>Which is cheapest: WordPress, Wix or Shopify?</h3>
+<p>Over several years, WordPress is usually the cheapest to run, because you pay only for hosting, a domain and optional licences. Wix and Shopify subscriptions continue for as long as the site exists, and Shopify apps add monthly costs.</p>
+<h3>Can I move my site from Wix or Shopify to WordPress later?</h3>
+<p>Yes, but it's a rebuild rather than an export. Content and products are carried over, the design is recreated, and old URLs are redirected so you keep your Google visibility.</p>
+
+<p>Choosing a platform for a new site or a rebuild? See <a href="/wordpress-website-development/">WordPress website development</a> for how I plan, build and hand over business websites.</p>
 `,
   },
   {
@@ -691,78 +725,126 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'freelancer-vs-agency-web-developer',
-    seoTitle: "Freelancer vs Agency: How to Hire a Web Developer",
-    title: 'Hiring a Web Developer: Freelancer vs Agency (and 10 Questions to Ask)',
-    description: 'Freelancer or agency for your website? Compare cost, communication and risk, then use 10 questions to hire the right web developer for your business.',
+    seoTitle: 'Freelance Web Developer vs Agency: Which Should You Hire?',
+    title: 'Freelance Web Developer vs Agency: Cost, Risk and Who to Hire for Your Website (Plus 12 Questions to Ask)',
+    description: 'Freelance web developer or agency? Compare cost, communication, risk and support, see how to hire a freelance WordPress developer in India and what to ask.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
     body: `
-<p>Choosing who builds your website matters as much as the website itself. The right developer delivers on time, communicates clearly and supports you after launch. The wrong one can leave you with a half-finished site and no way to reach them.</p>
+<p>For most small and medium business websites, such as a 5 to 30 page business site, a WooCommerce store or a redesign, an experienced freelance web developer is usually the better choice: you talk directly to the person doing the work and you don't pay for agency overheads. An agency is the better choice when you need branding, copywriting, ads and development managed together, a large team working in parallel, or a formal process with several people covering your account. Whichever you choose, live work, a written scope and clear terms for after launch matter more than the label.</p>
+<p>I'm a freelance WordPress developer, so I have an obvious bias. I work on my own, which means the person who replies to your messages is the person building your site; if a project needs a large team working in parallel, I'll say an agency is the better fit. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for how I work.</p>
+<p>Here's an honest comparison, how to hire a freelance WordPress developer in India, the questions to ask either type, and the red flags to walk away from.</p>
 
 <h2>Freelancer vs agency at a glance</h2>
 <table>
   <thead><tr><th></th><th>Freelancer</th><th>Agency</th></tr></thead>
   <tbody>
-    <tr><td><strong>Cost</strong></td><td>Usually lower. No agency overheads.</td><td>Higher. You pay for a team and management.</td></tr>
-    <tr><td><strong>Communication</strong></td><td>Direct with the person building your site</td><td>Through an account manager</td></tr>
-    <tr><td><strong>Skills</strong></td><td>Deep in their specialty</td><td>Wider range: design, content, ads</td></tr>
-    <tr><td><strong>Capacity</strong></td><td>Best for small to mid-size projects</td><td>Better for very large, multi-discipline projects</td></tr>
-    <tr><td><strong>Flexibility</strong></td><td>High</td><td>More process, less flexibility</td></tr>
+    <tr><td>Cost</td><td>Usually lower; no office, sales team or account managers to pay for</td><td>Higher; you pay for a team, management and overheads</td></tr>
+    <tr><td>Who you talk to</td><td>The person building the site</td><td>Usually an account or project manager</td></tr>
+    <tr><td>Who does the work</td><td>The freelancer, sometimes with trusted specialists</td><td>Staff, juniors or outsourced developers</td></tr>
+    <tr><td>Skills</td><td>Deep in a specialty, such as WordPress or WooCommerce</td><td>Broader: strategy, design, content, ads and development</td></tr>
+    <tr><td>Capacity</td><td>Best for small to mid-size projects</td><td>Better for large, multi-discipline projects with tight deadlines</td></tr>
+    <tr><td>Process</td><td>Lighter and more flexible</td><td>More formal, with more documentation and sign-offs</td></tr>
+    <tr><td>Continuity</td><td>Depends on one person</td><td>A team can cover holidays and staff changes</td></tr>
+    <tr><td>After launch</td><td>Often maintained by the same person who built it</td><td>Support plans, sometimes handled by a different team</td></tr>
   </tbody>
 </table>
+
+<h2>What each costs in India</h2>
+<p>Prices vary widely for both, so compare like with like. My <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts most professionally built small business sites in India at ₹15,000 to ₹40,000, larger business or B2B sites at ₹35,000 to ₹80,000, and WooCommerce stores from ₹30,000 to ₹90,000 or more. Agency quotes for the same scope are usually higher, because they cover project management, several specialists and running a business with staff and an office.</p>
+<p>After launch, freelance WordPress maintenance plans for small and medium sites typically cost about ₹1,500 to ₹6,000 a month; agencies and large or business-critical sites cost more.</p>
+<p>The cheapest quote is rarely the cheapest outcome. A very low price often means a pirated theme, no testing, no handover or a developer who won't be around in six months. Read <a href="/blog/compare-website-quotes/">how to compare website quotes</a> before deciding on price alone.</p>
 
 <p>Considering building it yourself? See <a href="/blog/hire-developer-vs-diy-website/">hire a developer vs DIY</a>.</p>
 
 <h2>When a freelancer is the better choice</h2>
 <ul>
-  <li>You need a business website, landing page, store or redesign</li>
-  <li>You want to talk directly to the person doing the work</li>
-  <li>You want good quality without agency pricing</li>
-  <li>You need ongoing maintenance from someone who knows your site</li>
+  <li>You need a business website, landing page, online store or redesign of normal size.</li>
+  <li>You want to talk directly to the person doing the work, on WhatsApp, email or calls.</li>
+  <li>You already have your branding and content, or can provide them with some help.</li>
+  <li>You want good quality without paying for an agency's overheads.</li>
+  <li>You want ongoing maintenance from someone who knows your site inside out.</li>
 </ul>
 
 <h2>When an agency is the better choice</h2>
 <ul>
-  <li>You need branding, copywriting, ads and development all managed together</li>
-  <li>The project is very large, with many stakeholders</li>
-  <li>You need a big team working in parallel</li>
+  <li>You need branding, copywriting, photography, ads and development managed together.</li>
+  <li>The project is large, with many stakeholders, integrations and a fixed launch date.</li>
+  <li>You need several people working in parallel, or cover across time zones and holidays.</li>
+  <li>Your organisation needs formal contracts, procurement processes or service-level agreements.</li>
 </ul>
-<p>Interestingly, many agencies outsource development to trusted freelancers, so hiring the freelancer directly can get you the same quality for less.</p>
+
+<h3>The middle ground</h3>
+<p>The line is blurrier than it looks. Small studios of two or three people sit between the two. Many freelancers work with a trusted designer or copywriter when a project needs one. And it's common for agencies to outsource development to freelancers, often white-label, which I do for agencies myself; see <a href="/blog/white-label-wordpress-development-agencies/">how white-label WordPress development works</a>. Hiring the freelancer directly can get you the same developer with fewer layers in between, but you take on the project management yourself.</p>
+
+<h2>The real risks, and how to protect yourself</h2>
+<p>Most website projects that go wrong don't fail because the client chose a freelancer or an agency. They fail on basics you can control either way.</p>
+<ul>
+  <li><strong>The developer disappears.</strong> With a freelancer it's one person; with an agency it's staff turnover. Protect yourself by keeping the domain, hosting and licences in your own name, holding your own admin login and keeping off-site backups. The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists everything you should control.</li>
+  <li><strong>Scope creep and delays.</strong> Agree a written list of pages, features, revisions and what's excluded, and tie payments to milestones; see <a href="/blog/website-payment-terms-milestones/">website payment terms and milestones</a>.</li>
+  <li><strong>Lock-in.</strong> Proprietary page builders, custom frameworks only one person understands, or hosting in the developer's account make it hard to leave. Ask what the site is built with and whether another developer could take it over.</li>
+  <li><strong>No support after launch.</strong> Agree what happens in the first weeks after launch and what ongoing changes and maintenance cost.</li>
+</ul>
+<p>A short written agreement covers most of this; the <a href="/blog/website-design-contract-checklist/">website design contract checklist</a> shows what to include.</p>
+
+<h2>How to hire a freelance WordPress developer in India</h2>
+<ol>
+  <li><strong>Write a short brief:</strong> what the site is for, the pages you need, features such as booking or payments, two or three sites you like, and your budget range.</li>
+  <li><strong>Find candidates</strong> through referrals from other business owners, Google search and Google Business Profile reviews, LinkedIn, or freelance platforms such as Upwork and Fiverr. Platforms add fees but hold payment until work is delivered.</li>
+  <li><strong>Open their live sites on your phone.</strong> Are they fast, easy to use and clear about what the business does? Screenshots and mock-ups prove much less than live sites.</li>
+  <li><strong>Read their case studies</strong> for specifics: what they built, why, and with which tools. Vague claims are a warning sign.</li>
+  <li><strong>Notice how they communicate</strong> before you pay. Clear questions, a written quote and a realistic timeline are good signs.</li>
+  <li><strong>Start small if unsure.</strong> A paid small job, such as fixing a few issues on your current site, shows how someone works.</li>
+</ol>
+<p>Hiring from outside India? <a href="/blog/outsource-wordpress-development-india/">Outsourcing WordPress development to India</a> covers time zones, payments and communication. In Pune? See <a href="/blog/choose-wordpress-developer-pune/">choosing a WordPress developer in Pune</a>.</p>
+
+<h2>12 questions to ask any web developer or agency</h2>
+<ol>
+  <li>Can I see live websites you've built, and what exactly did you do on each?</li>
+  <li>Who will actually build my site?</li>
+  <li>What's included in the quote, and what's excluded?</li>
+  <li>How many rounds of revisions are included?</li>
+  <li>What's the timeline, and what do you need from me to meet it?</li>
+  <li>Will the domain, hosting and licences be in my name, with my own admin login?</li>
+  <li>Which theme or builder will you use, and can I edit pages myself?</li>
+  <li>Can I see progress on a staging site while it's being built?</li>
+  <li>How do you test for mobile, speed and forms before launch?</li>
+  <li>Do you set up basic SEO: titles, descriptions, sitemap and Search Console?</li>
+  <li>What happens after launch, and what do changes and maintenance cost?</li>
+  <li>What are the payment terms? An advance to start and the balance before launch is common.</li>
+</ol>
+
+<h2>Red flags, whoever you hire</h2>
+<ul>
+  <li>No live portfolio, or only screenshots and templates</li>
+  <li>A price far below every other quote</li>
+  <li>Refusing to put the domain and hosting in your name or give you admin access</li>
+  <li>A vague quote with no list of pages or features</li>
+  <li>Guaranteed first-page Google rankings; see <a href="/blog/seo-red-flags-scams/">SEO red flags and scams</a></li>
+  <li>Slow or unclear replies before you've even started</li>
+</ul>
 
 <p>Some developers will suggest a custom-coded site instead of WordPress; see <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs custom-coded websites</a> to judge which you need.</p>
 
-<h2>10 questions to ask before hiring any web developer</h2>
-<ol>
-  <li><strong>Can I see live websites you've built?</strong> Visit them on your phone. Are they fast and easy to use?</li>
-  <li><strong>What exactly is included in the quote?</strong> Pages, revisions, forms, SEO basics, training.</li>
-  <li><strong>What's the timeline, and what do you need from me?</strong></li>
-  <li><strong>Will I own the website and have admin access?</strong> The answer should be yes.</li>
-  <li><strong>Which theme or builder will you use, and can I edit it myself?</strong></li>
-  <li><strong>Will the site be mobile-friendly and fast?</strong> Ask how they test it.</li>
-  <li><strong>Do you handle basic SEO?</strong> Titles, descriptions, sitemap, Search Console.</li>
-  <li><strong>What happens after launch?</strong> Support period, maintenance options and costs.</li>
-  <li><strong>What are the payment terms?</strong> A common structure is 50% upfront and 50% before launch.</li>
-  <li><strong>How will we communicate?</strong> WhatsApp, email, calls, and how quickly they respond.</li>
-</ol>
-
 <p>Already stuck with a developer who won't hand over access? See <a href="/blog/regain-website-access-old-developer/">how to regain control of your website</a>.</p>
 
-<h2>Red flags</h2>
-<ul>
-  <li>No portfolio of live sites</li>
-  <li>Prices that seem too good to be true</li>
-  <li>Refusing to give you admin access or hosting details</li>
-  <li>Vague quotes with no list of what's included</li>
-  <li>Slow or unclear communication before you've even started</li>
-</ul>
+<h2>FAQs</h2>
+<h3>Is it better to hire a freelancer or an agency to build a website?</h3>
+<p>For most small and medium business websites, an experienced freelancer offers the best balance of cost, quality and direct communication. Choose an agency if you need branding, content, ads and development managed together, or a large team for a complex project.</p>
+<h3>Are freelance web developers cheaper than agencies?</h3>
+<p>Usually, because freelancers don't carry the overheads of account managers, offices and sales teams. But compare what's included: a cheap quote without testing, handover or support can cost more in the end.</p>
+<h3>How do I find a good freelance WordPress developer in India?</h3>
+<p>Ask for referrals, check Google reviews and LinkedIn, and look at live sites the developer has built, on your phone. Ask who will do the work, what's included and what happens after launch, and get a written quote before paying anything.</p>
+<h3>What happens if my freelancer disappears?</h3>
+<p>If the domain, hosting and licences are in your name and you have your own admin login and backups, another developer can take over quickly. That's why ownership matters more than whether you hire a freelancer or an agency.</p>
+<h3>Do web design agencies outsource work to freelancers?</h3>
+<p>Many do, especially for development, often on a white-label basis where the freelancer works under the agency's brand. It isn't a bad thing in itself, but it's fair to ask who will actually build your site.</p>
+<h3>Should I pay a web developer upfront?</h3>
+<p>An advance is normal for both freelancers and agencies, with the rest tied to milestones or paid before launch. Be wary of anyone asking for the full amount upfront on a new project.</p>
 
-<p>Hiring for SEO too? Learn the <a href="/blog/seo-red-flags-scams/">SEO red flags to avoid</a>.</p>
-
-<p>Hiring from outside India? See <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a>.</p>
-
-<h2>The bottom line</h2>
-<p>For most small and medium businesses, an experienced <a href="/hire-wordpress-developer/">freelance WordPress developer</a> offers the best balance of quality, cost and direct communication. Check their live work, ask the questions above, and get the scope in writing before you start.</p>
+<p>Looking for a freelance WordPress developer who'll give you a straight answer? See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
   },
   {
@@ -2401,59 +2483,110 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'website-design-mistakes',
-    title: '15 Website Design Mistakes That Cost Small Businesses Customers',
-    description: 'Avoid 15 website design mistakes that cost small businesses customers, from cluttered layouts and tiny text to hidden contact details and slow pages.',
+    seoTitle: '15 Website Design Mistakes That Cost You Customers',
+    title: '15 Website Design Mistakes That Cost Small Businesses Customers (and How to Fix Each One)',
+    description: '15 website design mistakes that cost small businesses customers, from unclear headlines and slow mobile pages to hidden contact details, with fixes.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Growth',
     related: ['website-redesign', 'wordpress-website-development', 'landing-page-design'],
     body: `
-<p>Most visitors decide within seconds whether to stay on a website. Small design mistakes, the kind business owners stop noticing on their own site, can quietly send customers to competitors. Here are 15 to check for.</p>
+<p>The website design mistakes that cost small businesses the most customers are the basic ones: a headline that doesn't say what you do, pages that are awkward on a phone, slow loading, contact details that are hard to find, weak calls to action, and no proof that you're trustworthy. Visitors rarely complain about these; they just leave and contact a competitor. The good news is that most of them can be fixed without rebuilding the site.</p>
+<p>When several of these stack up, it's usually quicker to fix them together. A focused <a href="/website-redesign/">website redesign</a> tackles the layout, mobile experience, speed and calls to action in one go, built on staging and launched with redirects so you keep your Google rankings.</p>
+<p>Open your own site on your phone as you read. Each mistake below comes with why it costs you and how to fix it.</p>
+
+<h2>The 15 mistakes at a glance</h2>
+<table>
+  <thead><tr><th>Mistake</th><th>What it costs you</th><th>Quick fix</th></tr></thead>
+  <tbody>
+    <tr><td>1. Unclear headline</td><td>Visitors leave before scrolling</td><td>Say what you do, for whom and where</td></tr>
+    <tr><td>2. Auto-rotating sliders</td><td>Slower pages, missed messages</td><td>One strong image and headline</td></tr>
+    <tr><td>3. Stock photos everywhere</td><td>Feels generic and impersonal</td><td>Real photos of your work, team and premises</td></tr>
+    <tr><td>4. Cluttered layout</td><td>Nothing stands out</td><td>Fewer colours, fonts and elements</td></tr>
+    <tr><td>5. Not built for phones</td><td>Frustrated mobile visitors</td><td>Mobile-first layout, bigger text and buttons</td></tr>
+    <tr><td>6. Slow loading</td><td>Visitors leave before the page appears</td><td>Smaller images, fewer scripts, better hosting</td></tr>
+    <tr><td>7. Pop-ups on arrival</td><td>Annoyed visitors, poor mobile experience</td><td>Delay them or remove them</td></tr>
+    <tr><td>8. Confusing menus</td><td>Visitors can't find services</td><td>Fewer, plainly named menu items</td></tr>
+    <tr><td>9. Walls of text</td><td>Nobody reads it</td><td>Headings, short paragraphs, bullets</td></tr>
+    <tr><td>10. Everything on one page</td><td>Weak rankings for each service</td><td>A page per main service</td></tr>
+    <tr><td>11. Outdated information</td><td>Looks like the business has closed</td><td>A quarterly content check</td></tr>
+    <tr><td>12. Hidden contact details</td><td>Lost calls and messages</td><td>Phone and WhatsApp on every page</td></tr>
+    <tr><td>13. Weak calls to action</td><td>Visitors don't know what to do next</td><td>One clear, specific action per page</td></tr>
+    <tr><td>14. Long, demanding forms</td><td>Abandoned enquiries</td><td>Ask only what you need</td></tr>
+    <tr><td>15. No proof</td><td>No reason to trust you</td><td>Genuine reviews and examples of work</td></tr>
+  </tbody>
+</table>
 
 <h2>First impressions</h2>
-<ol>
-  <li><strong>Unclear headline.</strong> If visitors can't tell what you do in five seconds, they leave.</li>
-  <li><strong>Auto-playing sliders.</strong> Rotating banners distract, slow the page, and most visitors never see slide two.</li>
-  <li><strong>Stock photos everywhere.</strong> Generic images feel impersonal. Real photos of your work and team build trust.</li>
-  <li><strong>Cluttered layouts.</strong> Too many colours, fonts and elements competing for attention.</li>
-</ol>
+<h3>1. A headline that doesn't say what you do</h3>
+<p>"Welcome to our website" or "Excellence in every detail" tells a visitor nothing. If someone can't tell what you do, who it's for and where within a few seconds, they go back to Google. Write the headline a customer would search: the service and the place. On the dental clinic site I built, it reads "Expert Dental Care with a Personal Touch in Agra"; on a pulmonologist's site, "Pulmonologist in Agra (Lungs, Chest, Allergy)". More in <a href="/blog/write-homepage-that-converts/">how to write a homepage that converts</a>.</p>
+<h3>2. Auto-rotating sliders</h3>
+<p>Rotating banners load several large images and extra scripts at the top of the page, which slows it down, and most visitors never see the second slide. A single strong image with one clear headline and a button does the job better.</p>
+<h3>3. Stock photos everywhere</h3>
+<p>Smiling models in suits feel generic, and visitors recognise them. Real photos of your work, your team and your premises build trust faster, even if they're taken on a good phone. Caption project photos so visitors can match them to their needs; an interior design site I built labels each one by style and room.</p>
+<h3>4. Cluttered layouts</h3>
+<p>Too many colours, fonts, boxes and animations compete for attention, so nothing stands out. Stick to two fonts, a small colour palette with one accent colour for buttons, and plenty of white space around the things that matter.</p>
 
 <h2>Mobile and speed</h2>
-<ol start="5">
-  <li><strong>Not mobile-friendly.</strong> Tiny text, overlapping elements and buttons too small to tap.</li>
-  <li><strong>Slow loading.</strong> Heavy images and too many scripts. See <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</li>
-  <li><strong>Pop-ups that block everything</strong> as soon as the page opens, especially on mobile.</li>
-</ol>
-
-<p>The fix for most of these: <a href="/blog/mobile-first-design-explained/">mobile-first design</a>.</p>
+<h3>5. Not designed for phones</h3>
+<p>Many of your visitors are on a phone, often on mobile data. Tiny text, buttons too close together, sideways scrolling and sticky bars that cover half the screen send them away. Design for the phone first and then scale up; see <a href="/blog/mobile-first-design-explained/">mobile-first design explained</a>.</p>
+<h3>6. Slow loading</h3>
+<p>Heavy uncompressed images, sliders, video backgrounds, page builder add-ons and cheap hosting add up to pages that take too long to appear, especially on mobile networks. Run your homepage through PageSpeed Insights on mobile, then work through <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</p>
+<h3>7. Pop-ups that block everything on arrival</h3>
+<p>A full-screen newsletter or offer pop-up the moment the page opens, especially on mobile, is one of the fastest ways to lose a visitor. Google also discourages intrusive pop-ups that cover content on mobile. If you use one, delay it, show it on exit or after scrolling, and make it easy to close.</p>
 
 <h2>Navigation and content</h2>
-<ol start="8">
-  <li><strong>Confusing menus.</strong> Too many items or vague labels like "Solutions" with no context.</li>
-  <li><strong>Walls of text.</strong> No headings, bullet points or white space.</li>
-  <li><strong>Everything on one page.</strong> Without separate service pages, you can't speak to each customer's needs or rank for each service.</li>
-  <li><strong>Outdated information.</strong> Old prices, past events or a copyright year from years ago signal a neglected business.</li>
-</ol>
-
-<p>Menus causing confusion? See <a href="/blog/website-navigation-structure/">how to structure your website navigation</a>.</p>
+<h3>8. Confusing menus</h3>
+<p>Ten menu items, vague labels such as "Solutions" or "Offerings", and services hidden three levels deep make visitors work too hard. Use five to seven plainly named items, name services the way customers do, and put the main action as a button in the header. See <a href="/blog/website-navigation-structure/">how to structure website navigation</a>.</p>
+<h3>9. Walls of text</h3>
+<p>Long paragraphs with no headings don't get read, especially on a phone. Break content into short sections with descriptive headings, bullet points and one idea per paragraph, and put the most important information first.</p>
+<h3>10. Everything on one page</h3>
+<p>A single "Services" page listing everything can't speak to each customer's needs or rank for each service. Give each main service its own page with what's included, who it's for, an FAQ and a call to action. It helps visitors and gives Google a clear page to show for each search.</p>
+<h3>11. Outdated information</h3>
+<p>Old prices, last year's events, staff who left, an outdated festival offer or a copyright year from years ago all suggest a neglected business, or one that has closed. Check every page each quarter, and remove anything with a date that you won't keep updated.</p>
 
 <h2>Contact and conversion</h2>
-<ol start="12">
-  <li><strong>Hidden contact details.</strong> Phone and WhatsApp should be easy to find on every page.</li>
-  <li><strong>Weak or missing calls to action.</strong> Tell visitors exactly what to do next.</li>
-  <li><strong>Long, demanding forms.</strong> Ask only what you need.</li>
-  <li><strong>No proof.</strong> No testimonials, reviews, client logos or examples of work.</li>
+<h3>12. Hidden contact details</h3>
+<p>If a visitor has to hunt for your phone number, many won't bother. Put tap-to-call and WhatsApp in the header or as a floating button, repeat your contact details in the footer of every page, and write your address with landmarks people recognise. On the dental clinic site I built, every inner page ends with a contact form and the clinic's contact details, so wherever a patient lands, a way to get in touch is close by.</p>
+<h3>13. Weak or missing calls to action</h3>
+<p>"Submit" and "Learn more" don't tell anyone what happens next. Give each page one main action, phrased as the visitor's outcome: "Book an appointment", "Get a free quote", "Chat on WhatsApp". Place it near the top and repeat it after key sections. <a href="/blog/conversion-rate-optimization-basics/">Conversion rate optimisation basics</a> goes further.</p>
+<h3>14. Long, demanding forms</h3>
+<p>Every extra field loses some people. For most enquiries, name, phone and a message are enough; the dental clinic's backup form asks for just three things. Longer forms make sense only when they help you qualify a big job: an interior design studio I built for asks for project type, stage, budget and timeframe, because it needs those before the first call.</p>
+<h3>15. No proof</h3>
+<p>Visitors want evidence that real people have used you and been happy. Show genuine reviews with names, photos of real work, client logos you're allowed to use and case studies with specifics. Connecting each testimonial to the service the person had makes it far more useful, and a Google reviews widget lets visitors check the source. The <a href="/blog/website-trust-signals-checklist/">website trust signals checklist</a> lists the rest. Never invent testimonials or numbers; visitors and Google can both tell.</p>
+
+<h2>How to audit your own website in 30 minutes</h2>
+<ol>
+  <li>On your phone, try to contact your business from the homepage. It should take under 30 seconds.</li>
+  <li>Show the homepage to someone who doesn't know your business for five seconds, then ask what you do and where.</li>
+  <li>Run the homepage and your main service page through PageSpeed Insights on mobile.</li>
+  <li>Click every menu item, button and form, and check that enquiries actually arrive.</li>
+  <li>Look for anything outdated: prices, team, offers, dates.</li>
+  <li>In Google Analytics, find the pages people land on most and check that each has a clear next step.</li>
 </ol>
+
+<h2>Fix, refresh or redesign?</h2>
+<ul>
+  <li><strong>Quick fixes:</strong> headline, calls to action, contact buttons, form fields, photos and outdated content can often be fixed in a few days.</li>
+  <li><strong>A refresh:</strong> if the site works on phones, updates safely and still matches what you sell, new content, photos, buttons and speed work may be enough; see <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a>.</li>
+  <li><strong>A redesign:</strong> if it isn't built for phones, runs on an abandoned theme, or you can't update it yourself, a redesign usually costs less over time than patching. The <a href="/blog/signs-you-need-a-new-website/">signs you need a new website</a> help you decide, and <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a> covers keeping your Google traffic.</li>
+</ul>
 
 <p>Two related guides: the <a href="/blog/website-accessibility-basics/">accessibility basics</a> that make a site usable for everyone, and the <a href="/blog/signs-you-need-a-new-website/">signs it's time for a new website</a>.</p>
 
-<h2>How to audit your own site</h2>
-<ol>
-  <li>Open your site on your phone and try to contact yourself in under 30 seconds.</li>
-  <li>Ask someone unfamiliar with your business what you do after five seconds on the homepage.</li>
-  <li>Test speed on PageSpeed Insights.</li>
-  <li>Check every page for outdated information.</li>
-</ol>
-<p>If you find several of these problems, a focused <a href="/website-redesign/">redesign</a> can usually fix them quickly and turn more visitors into enquiries.</p>
+<h2>FAQs</h2>
+<h3>What are the most common website design mistakes?</h3>
+<p>An unclear headline, a layout that's hard to use on phones, slow loading, hidden contact details, weak calls to action, long forms and no proof such as reviews or examples of work. They're common because owners stop noticing them on their own site.</p>
+<h3>What makes a website look unprofessional?</h3>
+<p>Generic stock photos, clashing fonts and colours, cluttered layouts, broken links or forms, outdated information and a site that doesn't work well on a phone. Consistent design, real photos and up-to-date content fix most of it.</p>
+<h3>How do I know if my website design is costing me customers?</h3>
+<p>Look at enquiries compared with visits, and at which pages people leave from in Google Analytics. Then ask a few customers how they found the site. If visitors arrive but few get in touch, design and calls to action are the usual suspects.</p>
+<h3>Should I fix my website or redesign it?</h3>
+<p>Fix it if the problems are content, buttons, forms and photos on a site that works well on phones. Redesign if it isn't mobile-friendly, is very slow at its core, runs on an abandoned theme or can't be updated without a developer.</p>
+<h3>Do website design mistakes affect SEO?</h3>
+<p>Some do directly, such as slow pages, poor mobile layouts and having no separate page for each service. Others affect it indirectly: visitors who can't find what they need go back to Google, and a site that doesn't convert wastes the traffic you earn.</p>
+
+<p>Found several of these on your site? See <a href="/website-redesign/">website redesign</a> for how I rebuild sites on staging and launch them without losing rankings.</p>
 `,
   },
   {
@@ -3623,63 +3756,115 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'landing-page-vs-website',
-    title: 'Landing Page vs Website: Which Do You Need for Your Ads?',
-    description: 'Landing page vs website for your ads: the difference, when each works best, and how businesses use both together to get more leads from the same budget.',
+    seoTitle: 'Landing Page vs Website: Key Differences and Which You Need',
+    title: 'Landing Page vs Website: The Key Differences, Where Squeeze Pages Fit, and Which You Need for Your Ads',
+    description: 'Landing page vs website: the key differences, landing page vs homepage, squeeze pages explained, and when to send ad clicks to each to get more leads.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development', 'real-estate-website-design'],
     body: `
-<p>If you're running Google or Facebook ads, one of the most important decisions is where the click goes. Sending ad traffic to your homepage is common, and often wasteful. Here's how landing pages and websites differ, and when to use each.</p>
+<p>A website is your business's full presence online: many pages for many kinds of visitors, built to inform, build trust and rank in search. A landing page is a single page built for one audience, one offer and one action, usually the destination of a Google or Meta ad. For paid campaigns, send clicks to a landing page (or a very focused service page) that matches the ad; for credibility, search traffic and returning visitors, you need the website. Most businesses that advertise need both.</p>
+<p>I build both. A focused <a href="/landing-page-design/">landing page for Google and Meta ads</a> comes with GA4, Meta Pixel and Google Ads conversion tracking set up, and my <a href="/blog/wordpress-website-cost-india/">website cost guide</a> puts a single landing page at about ₹5,000 to ₹15,000, against ₹15,000 to ₹40,000 for a small business website.</p>
+<p>Below: the differences side by side, landing page vs homepage, the types of landing page including squeeze pages, and how to decide where your ad clicks should go.</p>
 
-<p>Deciding between paid and organic first? See <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a>.</p>
-
-<h2>The difference</h2>
+<h2>Landing page vs website: the key differences</h2>
 <table>
   <thead><tr><th></th><th>Website</th><th>Landing page</th></tr></thead>
   <tbody>
-    <tr><td><strong>Purpose</strong></td><td>Inform and serve many visitor types</td><td>Convert one audience for one offer</td></tr>
-    <tr><td><strong>Navigation</strong></td><td>Full menu and many pages</td><td>Usually none, to avoid distractions</td></tr>
-    <tr><td><strong>Content</strong></td><td>All services, about, blog, contact</td><td>One offer, benefits, proof, one form</td></tr>
-    <tr><td><strong>Best for</strong></td><td>SEO, brand credibility, returning visitors</td><td>Paid ads, campaigns, lead generation</td></tr>
+    <tr><td>Purpose</td><td>Inform, build trust and serve many visitor types</td><td>Convert one audience for one offer</td></tr>
+    <tr><td>Pages</td><td>Many: home, services, about, blog, contact</td><td>One, plus a thank-you page</td></tr>
+    <tr><td>Navigation</td><td>Full menu and internal links</td><td>Usually none, to avoid distractions</td></tr>
+    <tr><td>Call to action</td><td>Several, depending on the page</td><td>One, such as a form, WhatsApp or a call</td></tr>
+    <tr><td>Main traffic source</td><td>Google search, referrals, direct visits</td><td>Paid ads, email and social campaigns</td></tr>
+    <tr><td>In Google search?</td><td>Yes, that's much of the point</td><td>Often kept out, if built only for ads</td></tr>
+    <tr><td>Lifespan</td><td>Years, updated over time</td><td>Weeks or months, per campaign</td></tr>
+    <tr><td>Measured by</td><td>Traffic, enquiries, rankings</td><td>Conversion rate and cost per lead</td></tr>
   </tbody>
 </table>
 
-<p>Deciding how big your main site should be? See <a href="/blog/one-page-vs-multi-page-website/">one-page vs multi-page websites</a>.</p>
+<h2>Landing page vs homepage: why ad clicks shouldn't go to your homepage</h2>
+<p>Your homepage has to serve everyone: new and returning customers, job seekers, suppliers, people checking your address. It links to every section of the site and talks about all your services at once. Someone who clicked an ad for "AC repair in Kothrud" lands on a page about everything, has to find the right service, and often leaves.</p>
+<p>A landing page fixes that with message match. The headline repeats what the ad promised, the content answers that visitor's questions, and there's one obvious next step. Fewer choices usually means more enquiries from the same budget, which is why homepages make poor ad destinations. If you're about to start campaigns, run through <a href="/blog/website-ready-for-google-ads/">whether your website is ready for Google Ads</a> first.</p>
 
-<h2>Why landing pages usually convert ad traffic better</h2>
+<h2>Types of landing page, and where a squeeze page fits</h2>
+<p>"Landing page" covers several kinds of single-purpose page. A squeeze page is one of them.</p>
+<table>
+  <thead><tr><th>Type</th><th>Goal</th><th>Typical length</th><th>Example</th></tr></thead>
+  <tbody>
+    <tr><td>Lead generation page</td><td>Enquiry, quote or callback request</td><td>Medium, with benefits, proof and FAQs</td><td>"Get a free site visit" for an interior designer</td></tr>
+    <tr><td>Squeeze page</td><td>Capture an email or phone number, usually for a free resource</td><td>Very short: headline, a few bullets, one field or two</td><td>"Download our home loan checklist"</td></tr>
+    <tr><td>Click-through page</td><td>Warm visitors up, then send them to checkout or booking</td><td>Short to medium</td><td>A festive offer page that leads to the product</td></tr>
+    <tr><td>Sales page</td><td>Sell one product or course directly</td><td>Long, answering every objection</td><td>An online course enrolment page</td></tr>
+    <tr><td>Event or registration page</td><td>Sign-ups for a date</td><td>Short</td><td>A webinar or open day</td></tr>
+  </tbody>
+</table>
+<h3>Squeeze page vs landing page</h3>
+<p>Every squeeze page is a landing page, but not every landing page is a squeeze page. A squeeze page strips everything back to a single field and a reason to fill it in, usually a lead magnet such as a checklist or guide. It suits building an email or WhatsApp list cheaply. A lead generation landing page asks for more and gives more: details of the service, proof and answers, because the visitor is closer to buying. See <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets for small businesses</a> if you're planning one.</p>
+<h3>Microsites</h3>
+<p>Between the two sits the microsite: a few pages for one project or campaign, such as a new housing project with its own floor plans, amenities and location pages. See <a href="/blog/real-estate-project-microsite/">real estate project microsites</a>.</p>
+
+<h2>When a landing page is the right choice</h2>
 <ul>
-  <li><strong>Message match:</strong> the page repeats exactly what the ad promised</li>
-  <li><strong>Fewer distractions:</strong> no menus or unrelated pages</li>
-  <li><strong>One clear action:</strong> a form, WhatsApp or call</li>
-  <li><strong>Easy to test:</strong> headlines and offers can be tweaked per campaign</li>
+  <li>Google Ads or Meta ads for a specific service, offer or location</li>
+  <li>Seasonal and festival campaigns, such as a Diwali offer</li>
+  <li>Launching a single product or service, or testing demand before building full pages</li>
+  <li>Events, webinars and admissions periods</li>
+  <li>Testing headlines and offers against each other; see <a href="/blog/landing-page-ab-testing/">A/B testing landing pages</a></li>
 </ul>
 
-<p>To find out which headline or offer really works better, rather than guessing, see <a href="/blog/landing-page-ab-testing/">A/B testing landing pages</a>.</p>
-
-<h2>When sending ads to your website makes sense</h2>
+<h2>When to send traffic to your website instead</h2>
 <ul>
-  <li>Brand campaigns where people search your business name</li>
-  <li>Retargeting visitors who already know you, sent to a specific service page</li>
-  <li>When the relevant service page is already focused and has a strong call to action</li>
+  <li><strong>Brand searches:</strong> people searching your business name already know you; your homepage or contact page is fine.</li>
+  <li><strong>Retargeting:</strong> people who've visited before can go to a specific service page.</li>
+  <li><strong>Strong service pages:</strong> if a service page is focused on one service and has a clear call to action, it can work as a landing page.</li>
+  <li><strong>Click-to-WhatsApp ads:</strong> these skip the page entirely; see <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs your website</a> for when that works.</li>
 </ul>
+
+<h2>Do you need a website if you have a landing page?</h2>
+<p>A landing page on its own can work for a single offer or an early test. But many people who see an ad and land on a page will look you up before they call: your Google Business Profile, your website, your reviews. If there's nothing to find, trust drops. Ad platforms also expect the page to say who you are, how to contact you and how you use the data you collect.</p>
+<p>The reverse is also true. A website without landing pages is fine if your service pages are focused enough to act as landing pages. A business site with good service pages, plus a landing page per major campaign, covers both jobs. If you need the website side, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+
+<h2>What makes a landing page convert</h2>
+<ol>
+  <li>A headline that matches the ad's wording and offer</li>
+  <li>A call to action on the first screen, with WhatsApp and tap-to-call alongside the form</li>
+  <li>Three to five clear benefits, written for that one audience</li>
+  <li>Real proof: genuine reviews, photos of your work, client logos you're allowed to use</li>
+  <li>A short form asking only what you need to call back</li>
+  <li>An FAQ that answers price, timing and trust objections</li>
+  <li>Fast loading on mobile data, where most ad clicks happen</li>
+  <li>Conversion tracking and a thank-you page, so you know which ads bring leads; see <a href="/blog/thank-you-pages-forms/">thank-you pages for forms</a></li>
+</ol>
+<p>The most common reasons campaigns underperform are covered in <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste Google Ads budget</a>.</p>
+
+<h2>Should landing pages be in Google search?</h2>
+<p>Usually not, if they're built only for ads. Campaign pages often repeat what your service pages already say, and keeping them out of Google (with a noindex setting) stops them competing with the pages you want to rank. Ads can still send visitors to a page that isn't indexed. Landing pages built to rank, such as location pages with genuinely useful content, are a different thing and should be indexed.</p>
+
+<h2>Building landing pages on WordPress</h2>
+<p>You can build a landing page on your existing WordPress site, using a blank template such as Elementor Canvas so the menu and footer don't appear, or on a separate subdomain set up for campaigns. Your own site is simpler to manage and shares your domain's trust; a separate setup keeps campaign pages and tracking scripts away from the main site. Either way, keep the page light so it loads fast on mobile. Most of my landing pages are ready in three to five working days once the content and offer are clear.</p>
 
 <p>Property marketing is a classic example: each project needs its own campaign page alongside the main site. See the <a href="/blog/real-estate-website-must-have-features/">real estate website must-haves</a>.</p>
 
-<h2>You need both</h2>
-<p>A website builds credibility and long-term search traffic; landing pages turn paid clicks into leads. Many prospects will visit your main site to check you out after seeing a landing page, so keep both consistent in branding and messaging.</p>
+<p>Deciding between paid and organic first? See <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a>.</p>
 
-<p>Before launching ads, run through the <a href="/blog/website-ready-for-google-ads/">Google Ads readiness checklist</a>.</p>
+<p>Deciding how big your main site should be? See <a href="/blog/one-page-vs-multi-page-website/">one-page vs multi-page websites</a>.</p>
 
-<h2>What makes a landing page work</h2>
-<ol>
-  <li>Headline that matches the ad</li>
-  <li>Call to action above the fold, plus WhatsApp</li>
-  <li>3–5 clear benefits</li>
-  <li>Proof: testimonials, logos, photos</li>
-  <li>Short form and a FAQ for objections</li>
-  <li>Fast loading on mobile and conversion tracking</li>
-</ol>
-<p>Avoid the common <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a>, and see what goes into a professional <a href="/landing-page-design/">landing page design</a>.</p>
+<h2>FAQs</h2>
+<h3>What is the difference between a landing page and a website?</h3>
+<p>A website has many pages serving many visitors and purposes, with full navigation. A landing page is a single page for one audience and one action, usually with no menu, built for a specific ad or campaign.</p>
+<h3>What is the difference between a squeeze page and a landing page?</h3>
+<p>A squeeze page is a type of landing page with one narrow goal: capturing an email address or phone number, usually in exchange for a free resource. Other landing pages, such as lead generation or sales pages, carry more detail because they ask for a bigger commitment.</p>
+<h3>Is a landing page better than a website for Google Ads?</h3>
+<p>Usually, yes. A landing page that repeats the ad's promise and offers one clear action tends to convert better than a homepage. A focused service page with a strong call to action can also work well.</p>
+<h3>Can a landing page replace a website?</h3>
+<p>For a single offer or an early test, it can for a while. For most businesses, a website is still needed for search traffic and credibility, because people check you out before they get in touch.</p>
+<h3>Is a landing page the same as a homepage?</h3>
+<p>No. A homepage introduces your whole business and links to everything. A landing page focuses on one offer and removes distractions, so visitors from an ad take one action.</p>
+<h3>Do I need a separate landing page for each ad?</h3>
+<p>Only when the ads promise different things, such as a different service, offer or location. Ad groups with the same promise can share one page. What matters is that every visitor sees the words their ad used, so they know they're in the right place.</p>
+
+<p>Running ads and need a page that turns clicks into enquiries? See <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -7036,56 +7221,120 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'staging-sites-explained',
-    seoTitle: 'Staging Sites Explained: Test Website Changes Safely',
-    title: 'Staging Sites Explained: How to Test Website Changes Safely',
-    description: 'Staging sites explained: how a WordPress staging site prevents broken live pages, how to push changes live safely and how to keep staging out of Google.',
+    seoTitle: 'Staging Sites Explained: Test WordPress Changes Safely',
+    title: 'Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely',
+    description: 'Staging sites explained: set up WordPress staging on Hostinger, SiteGround or WP Staging, keep it out of Google and go live without losing orders.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'website-redesign', 'wordpress-migration'],
     body: `
-<p>A staging site is a private copy of your website where changes can be built and tested before anyone else sees them. It's the difference between "let's see what happens" and knowing a change works before it goes live.</p>
+<p>A staging site is a private copy of your website where you can test updates, redesigns and new features before anyone else sees them. On WordPress, the easiest way to get one is your host's one-click staging tool (Hostinger, SiteGround and many cPanel hosts through Softaculous offer it), or the WP Staging plugin. Keep the copy password-protected and out of Google, and be careful when pushing it back to a live WooCommerce store, because the staging database doesn't contain orders placed since you made the copy.</p>
+<p>Redesigns and bigger changes I work on are built on staging, so the live site stays untouched until the new version is approved. For routine updates, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup first and then test key pages, forms and, on stores, a test order, so problems are caught and rolled back quickly.</p>
+<p>Here's how staging works, how to set it up on popular Indian hosts, how to keep it private, and how to push changes live without overwriting anything.</p>
+
+<h2>What a staging site is, and what it isn't</h2>
+<ul>
+  <li><strong>Not a backup.</strong> A backup is a snapshot you restore from. A staging site is a working copy you change and test. You need both.</li>
+  <li><strong>Not maintenance mode.</strong> Maintenance mode hides the live site while you work on it. Staging lets the live site carry on normally.</li>
+  <li><strong>Not local development.</strong> A developer may also build on their own computer with a tool such as Local, but staging runs on a real server, usually your own hosting, so it behaves like the live site.</li>
+</ul>
 
 <h2>When to use staging</h2>
 <ul>
-  <li>Major WordPress, theme, page builder or WooCommerce updates</li>
-  <li>Redesigns and new page templates</li>
-  <li>Installing new plugins or features</li>
-  <li>Changing checkout, payment or form settings</li>
-  <li>Testing speed optimizations</li>
+  <li>Major updates to WordPress, your theme, Elementor or WooCommerce</li>
+  <li>Updating a site that hasn't been updated for months</li>
+  <li>Changing PHP version</li>
+  <li>Redesigns, new page templates and new sections</li>
+  <li>Installing a new plugin that changes how the site works</li>
+  <li>Changes to checkout, payment, shipping or forms</li>
+  <li>Speed optimisation, which can break layouts and scripts</li>
 </ul>
+<p>Small text and image changes don't need staging. Updates that have broken layouts before, such as page builder releases, do; see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a> for what can go wrong.</p>
 
-<h2>How to create a WordPress staging site</h2>
-<ol>
-  <li><strong>Hosting staging tools:</strong> many hosts offer one-click staging from the control panel. This is the easiest option.</li>
-  <li><strong>Staging plugins:</strong> create a copy in a subfolder or subdomain.</li>
-  <li><strong>Manual copy:</strong> a developer copies files and database to a separate subdomain.</li>
-</ol>
+<h2>Ways to create a WordPress staging site</h2>
+<table>
+  <thead><tr><th>Method</th><th>Where it lives</th><th>Pushing changes live</th><th>Best for</th></tr></thead>
+  <tbody>
+    <tr><td>Host one-click staging (Hostinger, SiteGround, Cloudways and others)</td><td>A subdomain or separate copy on your hosting</td><td>Built in, sometimes with a choice of files or database</td><td>Most sites, if your plan includes it</td></tr>
+    <tr><td>Softaculous on cPanel hosts</td><td>A subdomain or folder on your hosting</td><td>Built in "push to live"</td><td>Shared cPanel hosting</td></tr>
+    <tr><td>WP Staging plugin</td><td>A subfolder of your site with its own database tables</td><td>Paid version</td><td>Hosts without staging</td></tr>
+    <tr><td>Manual copy by a developer</td><td>A subdomain with its own database</td><td>Manual, file by file or table by table</td><td>Complex sites and stores</td></tr>
+  </tbody>
+</table>
+<p>Plans and menus change, so check your host's current documentation. If your plan doesn't include staging, that's worth knowing before you need it.</p>
+<h3>Hostinger</h3>
+<p>On plans that include it, Hostinger's staging tool is in hPanel under your website's WordPress settings. It creates a copy on a subdomain and has an option to publish the staging copy over the live site. Check what the publish step overwrites before using it on a store. New to Hostinger? See <a href="/blog/hostinger-wordpress-setup-guide/">setting up WordPress on Hostinger</a>.</p>
+<h3>SiteGround</h3>
+<p>SiteGround's staging lives in Site Tools under WordPress, Staging, on plans that include it. It can push everything live or, with a custom deploy, only the files or database tables you choose, which is what you want on a store.</p>
+<h3>cPanel hosts with Softaculous</h3>
+<p>Many Indian shared hosts use cPanel with the Softaculous installer. If WordPress was installed through Softaculous, its WordPress manager can usually create a staging copy and push it back to live.</p>
+<h3>WP Staging plugin</h3>
+<p>WP Staging creates a copy inside a subfolder of your site with its own database tables, and the free version is enough for testing. Pushing changes back to the live site needs WP Staging Pro at the time of writing. Copies of large sites can be slow on cheap shared hosting, so exclude big backup folders when you create one.</p>
+<h3>A manual copy</h3>
+<p>Developers often copy the files and database to a staging subdomain and then replace the live URL with the staging one. With SSH access, WP-CLI does the replacement and switches off search engine indexing in two commands:</p>
+<pre><code>wp search-replace 'https://example.com' 'https://staging.example.com' --skip-columns=guid
+wp option update blog_public 0</code></pre>
 
 <h2>Keep staging private and out of Google</h2>
+<p>A public staging site is a duplicate of your whole website, and if Google finds it, it can compete with the real one. Visitors and customers can also stumble on it.</p>
 <ul>
-  <li>Password-protect the staging site</li>
-  <li>Turn on "Discourage search engines" on staging only</li>
-  <li>Never forget to turn it <em>off</em> on the live site after pushing changes. It's a classic cause of sites disappearing from Google.</li>
+  <li><strong>Password-protect it.</strong> Use your host's staging protection if it has one, cPanel's Directory Privacy, or a protection plugin. A password stops people and search engines alike.</li>
+  <li><strong>Tick "Discourage search engines"</strong> under Settings, Reading on the staging copy only. It asks search engines not to index the site, but it's a request, not a lock, which is why the password matters.</li>
+  <li><strong>Check the live site after every push.</strong> Pushing a staging database can carry the "discourage" setting over to the live site, quietly telling Google to drop your pages. It's a classic cause of sites disappearing from search.</li>
 </ul>
-<p>See <a href="/blog/get-website-indexed-google-faster/">getting indexed faster</a> for other common indexing blockers.</p>
+<p>If pages have already dropped out after a launch or push, see <a href="/blog/robots-txt-explained/">robots.txt explained</a> and <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn't showing on Google</a>.</p>
 
-<h2>Pushing changes live</h2>
+<h2>Stop staging from emailing customers or taking payments</h2>
+<p>A staging copy has your real customer list and settings, so it can do real things.</p>
 <ul>
-  <li><strong>Brochure sites:</strong> pushing the whole staging site live is usually fine</li>
-  <li><strong>Stores and sites with new data:</strong> be careful. Live orders, customers and form entries may have arrived since staging was copied. Push only files, or apply changes manually, so you don't overwrite live data.</li>
-  <li>Always take a backup of the live site first</li>
-</ul>
-
-<h2>Test before pushing</h2>
-<ul>
-  <li>Key pages on desktop and mobile</li>
-  <li>Forms (staging emails may need special handling)</li>
-  <li>Checkout in test mode</li>
-  <li>Speed on important templates</li>
+  <li><strong>Emails:</strong> disable outgoing email on staging, or use a mail-catching plugin, so customers don't receive test order emails, newsletters or password resets.</li>
+  <li><strong>Payments:</strong> switch payment gateways such as Razorpay to test mode on staging.</li>
+  <li><strong>Scheduled tasks:</strong> subscriptions, membership renewals and automated emails can run on a copy. WooCommerce Subscriptions detects a duplicate site and pauses automatic payments, but other plugins may not, so check.</li>
+  <li><strong>Analytics and pixels:</strong> remove or disable tracking on staging so test visits don't pollute your data.</li>
 </ul>
 
-<h2>Is staging worth it for small sites?</h2>
-<p>For small, simple sites, a backup before each update may be enough. For stores, busy sites and redesigns, staging saves you from expensive downtime. It's standard practice for <a href="/website-redesign/">redesigns</a> and careful <a href="/blog/update-wordpress-safely/">WordPress updates</a>.</p>
+<h2>Pushing changes from staging to live</h2>
+<p>Always take a fresh backup of the live site first; see <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>
+<h3>Brochure and business sites</h3>
+<p>If nobody has changed content on the live site since you created staging, and it doesn't store form entries or comments you care about, pushing the whole staging site live is usually fine. If someone has published posts or edited pages on live in the meantime, those changes will be overwritten, so pause editing during staging work or copy them across first.</p>
+<h3>WooCommerce stores and sites with live data</h3>
+<p>This is where staging goes wrong. A store's database keeps changing: new orders, customers, stock levels, coupon usage and reviews. A staging copy made on Monday knows nothing about Tuesday's orders, so pushing its database live on Wednesday deletes them. The same applies to booking, membership and course sites.</p>
+<ul>
+  <li><strong>Push files only</strong> when the changes are to the theme, plugins or code, then repeat any settings changes by hand on live.</li>
+  <li><strong>Push selected tables</strong> only if you know exactly which tables changed, and never the tables holding orders, customers and stock.</li>
+  <li><strong>For big changes</strong>, such as a redesign, plan the switch for a quiet hour, keep a short list of settings to apply, and test a real order afterwards.</li>
+</ul>
+<p>Stores have more to check than other sites; the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the routine.</p>
+
+<h2>A safe staging workflow</h2>
+<ol>
+  <li>Back up the live site.</li>
+  <li>Create or refresh the staging copy, so it matches live.</li>
+  <li>Check that staging is password-protected, set to discourage search engines, and not sending emails.</li>
+  <li>Make and test your changes: key pages on desktop and mobile, forms, and checkout in test mode.</li>
+  <li>Write down every settings change you make, in case it needs repeating on live.</li>
+  <li>Back up live again, then push files, selected tables or the whole site, depending on the type of site.</li>
+  <li>On live: clear caches, check search engine visibility is on, submit a form, and place a test order on a store.</li>
+  <li>Delete or refresh the old staging copy, so an outdated copy isn't left lying around.</li>
+</ol>
+<p>For updates specifically, <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a> covers the order to update things in and what to check.</p>
+
+<h2>FAQs</h2>
+<h3>What is a staging site in WordPress?</h3>
+<p>A private copy of your WordPress site, usually on your own hosting, where you test updates, design changes and new plugins before applying them to the live site. Visitors keep using the live site while you work.</p>
+<h3>Does my hosting include a staging site?</h3>
+<p>Many hosts include staging on some plans, including Hostinger and SiteGround, and many cPanel hosts offer it through Softaculous. Check your plan's features or ask support. If it doesn't, the WP Staging plugin is the usual alternative.</p>
+<h3>How do I push a staging site to live in WordPress?</h3>
+<p>Use your host's push or publish option, Softaculous's push to live, or WP Staging Pro. Back up the live site first, and on a store push only files or selected tables, so orders placed since the copy aren't overwritten.</p>
+<h3>Can a staging site hurt my SEO?</h3>
+<p>Only if Google can find it, because it duplicates your whole site. Password-protect it and discourage search engines on staging. The bigger risk is pushing that "discourage" setting to the live site, so check it after every push.</p>
+<h3>Can I use staging with WooCommerce without losing orders?</h3>
+<p>Yes, if you don't push the staging database over the live one. Push files only, or only tables you know are safe, and repeat settings changes by hand. For big changes, switch over during a quiet period and test an order straight away.</p>
+<h3>Is WP Staging free?</h3>
+<p>The free version creates and tests staging copies. Pushing changes from staging back to the live site needs the paid Pro version at the time of writing.</p>
+
+<p>Want updates and changes handled carefully, with a backup first and testing afterwards? See <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
   {
@@ -16582,57 +16831,120 @@ define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
   },
   {
     slug: 'woocommerce-inventory-management',
-    seoTitle: 'WooCommerce Inventory Management: Stock Settings Guide',
-    title: 'WooCommerce Inventory Management: Avoid Overselling and Stockouts',
-    description: 'WooCommerce inventory management: stock settings, SKUs, low-stock alerts, backorders, out-of-stock display and syncing with a shop or marketplaces.',
+    seoTitle: 'WooCommerce Inventory and Stock Management: Setup and Sync',
+    title: 'WooCommerce Inventory and Stock Management: Settings, Variations, Alerts and Syncing With Tally or a Shop',
+    description: 'WooCommerce stock management explained: inventory settings, variation stock, low-stock alerts, backorders, ATUM and syncing with Tally or marketplaces.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-manufacturers', 'wordpress-maintenance'],
     body: `
-<p>Selling something you don't have in stock means cancellations, refunds and unhappy customers. WooCommerce has solid built-in inventory features; you just need to set them up and keep your data accurate.</p>
+<p>WooCommerce has inventory management built in. Turn on stock management under WooCommerce, Settings, Products, Inventory, then give each product or variation a SKU and a stock quantity, and set your low-stock and out-of-stock thresholds, backorder rules and notification emails. For a store that sells only on its website, that's usually all you need. If you also sell from a shop, on marketplaces or keep stock in Tally, you need a sync routine or tool so the website never sells something you don't have.</p>
+<p>Order and stock management is part of every store I set up as a <a href="/woocommerce-developer/">WooCommerce developer</a>, along with importing your existing product list from a spreadsheet. This guide shows you how to set it up yourself and how to fix the problems that cause overselling.</p>
+<p>Menu names below match recent WooCommerce versions; WooCommerce is moving to a new product editor, so some screens may look different on your store.</p>
 
-<h2>Turn on stock management</h2>
-<p>In WooCommerce → Settings → Products → Inventory, enable stock management. Then, for each product (or variation), tick "Manage stock" and enter the quantity.</p>
+<h2>Step 1: Turn on stock management for the store</h2>
+<p>Go to WooCommerce, Settings, Products, Inventory. These settings apply store-wide:</p>
+<table>
+  <thead><tr><th>Setting</th><th>What it does</th><th>Sensible starting point</th></tr></thead>
+  <tbody>
+    <tr><td>Manage stock</td><td>Turns stock tracking on for the store</td><td>On</td></tr>
+    <tr><td>Hold stock (minutes)</td><td>Reserves stock for unpaid orders, then cancels them</td><td>Long enough for a customer to finish a UPI or card payment</td></tr>
+    <tr><td>Notifications and recipient</td><td>Emails when stock is low or runs out</td><td>On, sent to whoever reorders stock</td></tr>
+    <tr><td>Low stock threshold</td><td>The level that triggers the low-stock email</td><td>Your reorder point, overridden per product where needed</td></tr>
+    <tr><td>Out of stock threshold</td><td>The level at which a product is marked out of stock</td><td>0, or a small buffer if you also sell elsewhere</td></tr>
+    <tr><td>Out of stock visibility</td><td>Hides out-of-stock products from shop and category pages</td><td>Off if items come back; on if they clutter browsing</td></tr>
+    <tr><td>Stock display format</td><td>Shows "12 in stock", "Only 2 left" or nothing</td><td>Only show when low</td></tr>
+  </tbody>
+</table>
+<p>The out-of-stock threshold is underused. If you keep a few units for the shop counter or to cover damaged items, set it to 2 or 3, and the website stops selling before you actually run out.</p>
 
-<h2>Key inventory settings</h2>
+<h2>Step 2: Set stock on each product</h2>
+<p>Open a product and go to Product data, Inventory:</p>
 <ul>
-  <li><strong>Hold stock:</strong> how long to reserve stock for unpaid orders before cancelling them</li>
-  <li><strong>Low stock threshold:</strong> get an email when stock falls below this level</li>
-  <li><strong>Out of stock threshold:</strong> when a product is marked out of stock</li>
-  <li><strong>Out of stock visibility:</strong> hide out-of-stock products from the catalogue, or show them as unavailable</li>
-  <li><strong>Stock display:</strong> show "Only 3 left" or just "In stock"</li>
+  <li><strong>SKU:</strong> a unique code for every product and variation, such as KURTA-BLU-M. Use the same SKU in Tally, on marketplaces and in your shop, because imports and sync tools match products by SKU.</li>
+  <li><strong>Manage stock:</strong> tick it to track a quantity. Leave it unticked for made-to-order items and set the stock status by hand instead.</li>
+  <li><strong>Stock quantity:</strong> what you physically have available to sell online.</li>
+  <li><strong>Allow backorders:</strong> no, allow but notify the customer, or allow.</li>
+  <li><strong>Low stock threshold:</strong> overrides the store-wide level for fast or slow sellers.</li>
+</ul>
+<p>For quick changes, use Quick Edit or Bulk Edit on the Products list, which shows a stock column. For hundreds of products, export a CSV, update the quantities in a spreadsheet and import it back with the "Update existing products" option ticked.</p>
+
+<h2>Managing stock for variations (sizes and colours)</h2>
+<p>Variable products can track stock in two ways:</p>
+<ul>
+  <li><strong>Per variation:</strong> tick Manage stock inside each variation and enter its own quantity. This is right for clothing, shoes and anything where size M can sell out while size L doesn't.</li>
+  <li><strong>Shared at product level:</strong> tick Manage stock on the parent product's Inventory tab and leave it unticked on the variations, and they all draw from one pool. This suits options that don't use separate stock, such as a gift wrap choice.</li>
+</ul>
+<p>The variations screen has bulk actions for setting stock and toggling stock management across all variations at once, which saves a lot of clicking. A common mistake is a variable product where stock is managed on a few variations but not the rest, so some sizes never run out. More on setting variations up in <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>
+
+<h2>How orders change stock</h2>
+<p>Knowing when WooCommerce reduces and restores stock explains most "my stock is wrong" problems. In current versions, it typically works like this, though some payment gateway plugins behave differently:</p>
+<table>
+  <thead><tr><th>Order status</th><th>Effect on stock</th></tr></thead>
+  <tbody>
+    <tr><td>Pending payment</td><td>Held for the hold-stock time, then the order is cancelled and stock released</td></tr>
+    <tr><td>On hold (for example, bank transfer awaiting payment)</td><td>Reduced</td></tr>
+    <tr><td>Processing (paid, or cash on delivery)</td><td>Reduced</td></tr>
+    <tr><td>Completed</td><td>Already reduced, no further change</td></tr>
+    <tr><td>Cancelled</td><td>Restored</td></tr>
+    <tr><td>Refunded</td><td>Restored only if you tick the option to restock refunded items</td></tr>
+  </tbody>
+</table>
+<p>If paid orders stay in Pending payment, stock is released when the hold time runs out, and you can oversell. That usually means the payment gateway's webhook isn't reaching your site; see <a href="/blog/woocommerce-payment-gateway-not-working-india/">fixing WooCommerce payment gateway problems in India</a>.</p>
+
+<h2>Low-stock alerts and the stock report</h2>
+<ul>
+  <li>Low-stock and out-of-stock emails go to the notification recipient in the inventory settings. Use an address someone actually reads, not the developer's.</li>
+  <li>WooCommerce, Analytics, Stock lists every product with filters for low stock, out of stock and on backorder. A weekly look at it is a simple reorder routine.</li>
+  <li>The WooCommerce mobile app shows orders and product stock on your phone.</li>
+  <li>Once a month, count what's on the shelf and compare it with the website. Small differences from damaged items, returns and shop sales add up.</li>
 </ul>
 
-<h2>Use SKUs</h2>
-<p>Give every product and variation a unique SKU (stock keeping unit). SKUs make stock counts, imports and syncing with other systems much easier.</p>
+<h2>Backorders and pre-orders</h2>
+<p>Allowing backorders lets customers order when stock is at zero, and the quantity goes negative. It suits made-to-order products and items you can restock quickly. Choose "Allow, but notify customer" so the product page and cart say the item is on backorder, and state a realistic dispatch time. If you're taking orders before stock arrives, see <a href="/blog/woocommerce-pre-orders-backorders/">pre-orders and backorders in WooCommerce</a> for payment timing and honest dates.</p>
 
-<h2>Backorders</h2>
-<p>You can allow orders for out-of-stock items, useful for made-to-order products or items you can restock quickly. Tell customers the expected dispatch time clearly.</p>
-
-<p>Taking orders before stock arrives? See <a href="/blog/woocommerce-pre-orders-backorders/">pre-orders and backorders in WooCommerce</a> for payment timing, honest dates and Google Merchant Center.</p>
-
-<h2>Out of stock: hide or show?</h2>
+<h2>Out of stock: hide, show or redirect?</h2>
 <ul>
-  <li><strong>Show</strong> if the item will return, especially with a "notify me when available" option, and to keep the page's search rankings</li>
-  <li><strong>Hide</strong> from category pages if it clutters browsing</li>
-  <li>For permanently discontinued products, redirect to a similar product or category</li>
+  <li><strong>Show it</strong> if it's coming back, with a "notify me when back in stock" form from a back-in-stock plugin. The page keeps its search rankings and captures demand.</li>
+  <li><strong>Hide it from category pages</strong> if out-of-stock items clutter browsing, but keep the product page live.</li>
+  <li><strong>Redirect it</strong> with a 301 to the closest replacement or its category if it's discontinued for good.</li>
 </ul>
 
-<h2>Selling in a shop and online?</h2>
-<p>If you also sell from a physical store, stock must stay in sync. Options include:</p>
+<h2>Keeping stock in sync with a shop, Tally or marketplaces</h2>
+<p>WooCommerce can only stop overselling if its numbers are right. When stock also sells elsewhere, decide which system is the master, use identical SKUs everywhere and keep a buffer with the out-of-stock threshold to absorb sync delays.</p>
+<h3>A physical shop</h3>
+<p>A POS system that connects to WooCommerce updates stock as you sell at the counter. For low volumes, a daily routine works: note counter sales and update WooCommerce each evening with Bulk Edit or a CSV import.</p>
+<h3>Tally</h3>
+<p>Many Indian businesses keep stock and GST billing in Tally. Connector tools from several vendors sync Tally and WooCommerce, typically pushing stock to the website and pulling orders back for invoicing. Without one, export stock from Tally to a spreadsheet, match it to WooCommerce by SKU and import it with "Update existing products". Agree how often this happens, and who does it. For tax and invoices on the WooCommerce side, see <a href="/blog/woocommerce-gst-invoices-india/">GST invoices in WooCommerce</a>.</p>
+<h3>Amazon, Flipkart and other marketplaces</h3>
+<p>Multi-channel tools such as Unicommerce, EasyEcom or Browntape, or a marketplace's own connector, sync one stock figure across your website and marketplaces. Check features and pricing with each vendor. The trade-offs of selling in both places are in <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a>.</p>
+
+<h2>When an inventory plugin like ATUM helps</h2>
+<p>The built-in tools track quantities, not purchasing. ATUM Inventory Management for WooCommerce adds a Stock Central screen to view and edit stock for all products in one table, plus suppliers, purchase orders, inbound stock and stock logs in its free version at the time of writing. Paid add-ons cover things like multiple warehouses and products made from components. It's worth it if you reorder from suppliers regularly or stock several locations; a store with a few dozen products rarely needs it.</p>
+
+<h2>Common stock problems and fixes</h2>
 <ul>
-  <li>A POS system that integrates with WooCommerce</li>
-  <li>Inventory or ERP software that syncs with WooCommerce</li>
-  <li>For low volumes, a disciplined manual update routine</li>
+  <li><strong>Stock doesn't reduce after orders:</strong> Manage stock isn't ticked on the product or variation, or orders are stuck in Pending payment.</li>
+  <li><strong>Stock went negative:</strong> backorders were allowed, often through a bulk edit or import.</li>
+  <li><strong>Overselling during a sale:</strong> sync delays with other channels, or a hold-stock time shorter than slow payments. Raise the out-of-stock threshold for the sale.</li>
+  <li><strong>Refunded items not back in stock:</strong> the restock option wasn't ticked; adjust the quantity by hand.</li>
 </ul>
+<p>A clear daily routine for orders helps keep stock right too; see <a href="/blog/woocommerce-order-management-workflow/">a WooCommerce order management workflow</a>.</p>
 
-<h2>Selling on marketplaces too?</h2>
-<p>Multi-channel inventory tools can sync stock between your website and marketplaces, preventing overselling. See <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a>.</p>
+<h2>FAQs</h2>
+<h3>How do I manage stock in WooCommerce?</h3>
+<p>Turn on Manage stock under WooCommerce, Settings, Products, Inventory, then open each product, tick Manage stock on its Inventory tab and enter the quantity and a SKU. Set the low-stock threshold and notification email so you know when to reorder.</p>
+<h3>How do I set stock for each variation in WooCommerce?</h3>
+<p>Open the product's Variations tab, expand each variation, tick Manage stock and enter its quantity. Use the bulk actions menu to set stock for all variations at once. Leave the parent product's Manage stock unticked unless the variations should share one pool.</p>
+<h3>Why is my WooCommerce stock not reducing?</h3>
+<p>Usually Manage stock isn't ticked on that product or variation, or orders are stuck in Pending payment because the payment gateway isn't confirming them. Check the order status of recent orders first.</p>
+<h3>Can WooCommerce sync stock with Tally?</h3>
+<p>Not out of the box. Third-party connectors can sync stock and orders between Tally and WooCommerce, or you can export stock from Tally and import it into WooCommerce by SKU on a regular schedule.</p>
+<h3>Do I need an inventory plugin like ATUM?</h3>
+<p>Only if you manage suppliers, purchase orders or several warehouses. For most small stores, WooCommerce's built-in stock management, the Stock report and low-stock emails are enough.</p>
 
-<h2>Regular stock checks</h2>
-<p>Compare physical stock with WooCommerce counts regularly and correct differences. Stock reports help identify slow movers and bestsellers.</p>
-
-<p>Setting up a store? See the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a>.</p>
+<p>Need a store with stock, payments and shipping set up properly? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -17021,60 +17333,105 @@ define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
   },
   {
     slug: 'domain-expired-what-to-do',
-    seoTitle: 'Domain Expired? How to Recover It and Prevent It',
-    title: 'Domain Name Expired? How to Get It Back and Stop It Happening Again',
-    description: 'Domain expired? How grace and redemption periods work, how to renew or recover it, what to do if someone else registers it, and how to prevent it.',
+    seoTitle: 'Domain Name Expired? How to Get It Back Before It\'s Gone',
+    title: 'Domain Name Expired? How to Get It Back, What Breaks in the Meantime and How to Stop It Happening Again',
+    description: 'Domain name expired? How grace and redemption periods work, how to get it back, what happens to your website and email, and how to stop it happening.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Guides',
     related: ['wordpress-maintenance', 'wordpress-migration', 'hire-wordpress-developer'],
     body: `
-<p>A missed renewal can take your website and business email offline overnight. The good news is that domains don't disappear immediately after expiry. There's usually a window to get them back, but you need to act quickly.</p>
+<p>If your domain name has expired, you can usually still get it back. Most registrars give a grace period after the expiry date when you can renew at the normal price, followed by a redemption period when the original owner can restore it for an extra fee. Only after that is the domain deleted and released for anyone to register. Log in to your registrar today, renew it, and then check that your website and email come back.</p>
+<p>An expired domain is one of the most avoidable outages a business website can have. The uptime monitoring in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> flags a site that stops loading quickly, but renewing is down to whoever controls the registrar account, so it's worth knowing exactly where your domain sits and who can log in.</p>
+<p>Exact periods and fees depend on the domain extension (.com, .in, .co.in and so on) and on your registrar, so treat the timings below as typical, and check your registrar's own policy for your domain.</p>
 
-<h2>What happens when a domain expires</h2>
+<h2>The expired domain timeline</h2>
+<table>
+  <thead><tr><th>Stage</th><th>Typical timing</th><th>What happens</th><th>Can you get it back?</th></tr></thead>
+  <tbody>
+    <tr><td>Before expiry</td><td>Reminders in the weeks before</td><td>Registrar emails reminders and tries auto-renew if it's on</td><td>Yes, renew normally</td></tr>
+    <tr><td>Expiry day</td><td>Day 0</td><td>The site may stop loading or show a parking page; email may stop</td><td>Yes, renew normally</td></tr>
+    <tr><td>Grace period</td><td>From a few days to over a month, often around 30 days for .com</td><td>Domain still belongs to you but may not resolve</td><td>Yes, usually at the normal renewal price</td></tr>
+    <tr><td>Redemption period</td><td>Often around 30 days for .com</td><td>Domain removed from your account's normal renewal</td><td>Usually, with a restoration fee on top of renewal</td></tr>
+    <tr><td>Pending delete</td><td>A few days</td><td>Domain is queued for deletion</td><td>No</td></tr>
+    <tr><td>Released</td><td>After pending delete</td><td>Anyone can register it, including drop-catching services</td><td>Only by registering or buying it like anyone else</td></tr>
+  </tbody>
+</table>
+<p>Some registrars also put valuable expired domains up for auction during the grace or redemption period, so don't assume you have the full time shown.</p>
+
+<h2>What breaks when a domain expires</h2>
 <ul>
-  <li>Your website stops loading, or shows a registrar's parking page</li>
-  <li>Email on that domain stops working</li>
-  <li>Customers and Google see an unavailable site</li>
+  <li><strong>The website</strong> stops loading, or shows the registrar's parking page with ads.</li>
+  <li><strong>Email on the domain</strong> stops arriving, even if your Google Workspace, Zoho Mail or hosting email subscription is paid up, because the domain's DNS records no longer point to it. Senders get bounces.</li>
+  <li><strong>SSL certificates</strong> can fail to renew, because renewal checks the domain.</li>
+  <li><strong>Online payments and integrations:</strong> payment gateway callbacks, WooCommerce order emails, forms and anything that calls your site can fail.</li>
+  <li><strong>Ads and listings:</strong> Google Ads may disapprove ads with a broken landing page, and your Google Business Profile links to a dead site.</li>
+  <li><strong>Google rankings:</strong> a short outage usually recovers once the site is back, but a site that stays down for long can start dropping out of results.</li>
+  <li><strong>Account security:</strong> if someone else registers the domain, they can receive email sent to it, including password-reset emails for any account that used your old business address.</li>
 </ul>
 
-<h2>The typical expiry timeline</h2>
-<p>The exact periods and fees depend on the domain extension and your registrar, but the usual pattern is:</p>
+<h2>How to get an expired domain name back, step by step</h2>
 <ol>
-  <li><strong>Grace period:</strong> for some days or weeks after expiry, you can usually renew at the normal price</li>
-  <li><strong>Redemption period:</strong> the domain can often still be recovered by the original owner, but with an extra restoration fee</li>
-  <li><strong>Deletion:</strong> the domain is released and anyone can register it</li>
+  <li><strong>Find out where it's registered and its status.</strong> Search for the domain on a WHOIS or RDAP lookup, such as ICANN's lookup tool. It shows the registrar, the expiry date and status codes.</li>
+  <li><strong>Log in to the registrar</strong> (GoDaddy, Hostinger, BigRock, Namecheap or whoever it is) and renew. If it's in redemption, look for a restore option and expect a restoration fee.</li>
+  <li><strong>Can't log in?</strong> Use the account recovery process. If the recovery email is on the expired domain itself, you won't receive the reset email, so contact the registrar's support and be ready to prove ownership with invoices, business documents or ID.</li>
+  <li><strong>Registered by a developer or agency?</strong> Contact them urgently and ask them to renew, then move the domain into an account in your business name. See <a href="/blog/regain-website-access-old-developer/">regaining access from an old developer</a> if they don't respond.</li>
+  <li><strong>Check the DNS after renewing.</strong> Some registrars switch an expired domain's nameservers to a parking page. If the site doesn't return within a few hours, compare the nameservers with what your hosting or email provider expects and set them back.</li>
+  <li><strong>Test everything:</strong> the website over HTTPS, sending and receiving email, contact forms, and a test payment if you sell online.</li>
+  <li><strong>Turn on auto-renew</strong> before you close the tab.</li>
 </ol>
-<p>Check your registrar's policy for your specific domain.</p>
+<p>Thinking of moving the domain to a better registrar once it's back? Renew first, and note that registrars may lock transfers for a period after some changes; see <a href="/blog/transfer-domain-to-another-registrar/">how to transfer a domain to another registrar</a>.</p>
 
-<h2>How to recover it</h2>
-<ol>
-  <li><strong>Log in to your registrar</strong> and renew immediately</li>
-  <li><strong>Can't log in?</strong> Recover the account using the registered email or contact the registrar's support with proof of ownership</li>
-  <li><strong>Registered by a developer?</strong> Contact them urgently; see <a href="/blog/regain-website-access-old-developer/">regaining access from an old developer</a></li>
-  <li><strong>After renewing,</strong> the site and email usually return within hours as DNS updates</li>
-</ol>
-
-<h2>If someone else registers it</h2>
-<p>Once a domain is released, anyone can register it, including people who try to sell it back at a high price. Options include:</p>
+<h3>What the status codes in a WHOIS lookup mean</h3>
 <ul>
-  <li>Contacting the new owner to negotiate</li>
-  <li>If it's clearly used in bad faith against your trademark, a dispute process may be possible; take legal advice</li>
-  <li>As a last resort, moving to a new domain and redirecting what you can</li>
+  <li><strong>autoRenewPeriod:</strong> just expired and in the grace period. Renew now.</li>
+  <li><strong>redemptionPeriod:</strong> past the grace period but restorable by the owner for a fee.</li>
+  <li><strong>pendingDelete:</strong> too late to restore. It will be released in a few days.</li>
+  <li><strong>clientHold or serverHold:</strong> the domain is registered but switched off, which can happen at expiry, for unverified contact details or for abuse.</li>
 </ul>
-<p>Moving domains affects SEO, so plan it carefully; see <a href="/blog/redesign-website-without-losing-rankings/">protecting rankings during changes</a>.</p>
 
-<h2>Beware of scam renewal notices</h2>
-<p>Many "domain expiry" emails come from unrelated companies trying to get you to transfer or pay them. Only renew through your actual registrar; see <a href="/blog/domain-seo-scam-emails/">domain and SEO scam emails</a>.</p>
-
-<h2>Make sure it never happens again</h2>
+<h2>If someone else has registered your domain</h2>
+<p>Once a domain is released, anyone can register it. Valuable or older domains are often picked up within seconds by drop-catching services, sometimes to sell back to the previous owner.</p>
 <ul>
-  <li>Turn on <strong>auto-renew</strong></li>
-  <li>Keep a <strong>valid payment method</strong> on the account</li>
-  <li>Use an <strong>email you check</strong> as the registrant contact</li>
-  <li>Renew for <strong>several years</strong> at a time</li>
-  <li>Add the expiry date to your calendar</li>
-  <li>Keep the domain in your business's name; see the <a href="/blog/website-ownership-checklist/">website ownership checklist</a></li>
+  <li><strong>Check auctions first.</strong> If the domain hasn't been released yet, it may be listed in your registrar's expired-domain auction, and a backorder service may be able to catch it when it drops.</li>
+  <li><strong>Contact the new owner</strong> through the WHOIS contact or the parking page. If you agree a price, use an escrow service rather than paying directly.</li>
+  <li><strong>Trademark disputes:</strong> if you hold a trademark and the new owner is using the domain in bad faith, a dispute may be possible under the UDRP for .com and similar domains or the INDRP for .in domains. Take legal advice first; these processes cost money and need evidence.</li>
+  <li><strong>Move to a new domain</strong> as a last resort. You can't redirect a domain you don't control, so update your Google Business Profile, social profiles, directories, printed material and every account that used the old email address.</li>
 </ul>
+<p>Moving to a new domain needs careful SEO work; <a href="/blog/change-domain-name-without-losing-seo/">changing your domain without losing SEO</a> covers the steps you can control.</p>
+
+<h2>Beware of fake renewal and expiry notices</h2>
+<p>Many "your domain is expiring" emails and letters come from unrelated companies hoping you'll pay them or transfer the domain. Some offer "SEO submissions" or directory listings dressed up as renewals. Only ever renew by logging in to your actual registrar directly. <a href="/blog/domain-seo-scam-emails/">Domain and SEO scam emails</a> shows the common versions.</p>
+
+<h2>How to make sure it never happens again</h2>
+<ul>
+  <li><strong>Turn on auto-renew</strong> and keep a valid payment method on the account.</li>
+  <li><strong>Check that renewals actually go through.</strong> In India, saved cards for recurring payments may need fresh authorisation, and auto-renewals can fail quietly. Look for the renewal invoice each year.</li>
+  <li><strong>Use a recovery email on a different domain,</strong> such as a Gmail address, so an expired domain can't lock you out of the account that renews it.</li>
+  <li><strong>Register the domain in your business name and your own account,</strong> not your developer's. See the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</li>
+  <li><strong>Renew for several years</strong> at a time for your main domain. A .com or .in typically costs roughly ₹500 to ₹1,200 a year, so it's a small cost against the risk.</li>
+  <li><strong>Turn on two-factor authentication</strong> for the registrar account.</li>
+  <li><strong>Keep a renewals list</strong> of domain, hosting, email and licences with dates and owners; the <a href="/blog/domain-hosting-renewal-checklist/">renewals checklist</a> has a template.</li>
+</ul>
+
+<h2>Expired domain or something else?</h2>
+<p>Not every "site down" is an expired domain. If WHOIS shows the domain is active and paid up, the problem is more likely hosting, DNS or the site itself; see <a href="/blog/website-down-what-to-do/">what to do when your website is down</a>.</p>
+
+<h2>FAQs</h2>
+<h3>How can I get my expired domain name back?</h3>
+<p>Log in to your registrar and renew it. During the grace period this is usually at the normal price; during the redemption period you pay a restoration fee as well. If you can't access the account, contact the registrar's support with proof of ownership.</p>
+<h3>How long after a domain expires can I still renew it?</h3>
+<p>It depends on the extension and registrar. For .com domains, the grace period is often around 30 days and the redemption period roughly another 30, but some registrars offer less. Check your registrar's renewal policy and act as soon as you notice.</p>
+<h3>Can someone else buy my domain after it expires?</h3>
+<p>Not during the grace and redemption periods, when it's still reserved for you, although some registrars auction expired domains during that time. Once it's deleted and released, anyone can register it.</p>
+<h3>Will my business email stop working if my domain expires?</h3>
+<p>Usually, yes. Email depends on the domain's DNS records, so it stops arriving even if your email subscription is paid. It comes back once the domain is renewed and DNS resolves again, though emails sent during the outage may have bounced.</p>
+<h3>Will an expired domain hurt my Google rankings?</h3>
+<p>A short outage of a day or two usually recovers once the site is back. Longer outages can cause pages to drop from results, and losing the domain to someone else means losing the rankings and links it built.</p>
+<h3>What is a domain redemption period?</h3>
+<p>It's a window after the grace period when the domain has been removed from normal renewal but the original owner can still restore it, usually for a restoration fee on top of the renewal price. After it ends, the domain is deleted and released.</p>
+
+<p>Want someone keeping an eye on the site so problems like this are spotted early? See <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
   {
@@ -18894,71 +19251,121 @@ LIMIT 20;</code></pre>
   },
   {
     slug: 'online-appointment-booking-website',
-    seoTitle: 'Online Appointment Booking for Your Website: A Guide',
-    title: 'Online Appointment Booking on Your Website: Setup, Reminders and Fewer No-Shows',
-    description: 'Add online appointment booking to your website: tools and WordPress plugins, calendar sync, reminders, deposits, cancellations and fewer no-shows.',
+    seoTitle: 'Online Appointment Booking for Websites: Tools and Setup',
+    title: 'Online Appointment Booking on Your Website: Which Tool to Use, How to Set It Up and How to Cut No-Shows',
+    description: 'How to add online appointment booking to your website: WhatsApp requests, Calendly, Amelia, Bookly, reminders, Razorpay deposits and fewer no-shows.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Growth',
     related: ['wordpress-website-for-doctors', 'landing-page-design', 'wordpress-website-development'],
     body: `
-<p>For clinics, salons, consultants, tutors and many service businesses, letting customers book online saves hours of phone calls and captures bookings at any time of day. Here's how to set it up well.</p>
+<p>To add online appointment booking to your website, choose one of four routes: a booking request form or WhatsApp button that your staff confirm, an embedded scheduling service such as Calendly, a WordPress booking plugin such as Amelia, Bookly or Simply Schedule Appointments, or the booking widget from the clinic, salon or gym software you already use. The right one depends on whether you need real-time slots, several staff, payments and records. Whichever you choose, the setup and the reminders matter more than the tool.</p>
+<p>For clinics, I can start with an appointment enquiry form that emails the clinic and opens WhatsApp, or connect the booking system the clinic already uses; see <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>. For salons, consultants, tutors and other service businesses, booking is part of a normal <a href="/wordpress-website-development/">WordPress website build</a>.</p>
+<p>Below: how the options compare, what I've built for real clinics and a restaurant, how to set booking up so it doesn't double-book, and how to cut no-shows with reminders and deposits.</p>
 
-<h2>Options</h2>
+<h2>Four ways to take appointments online</h2>
+<table>
+  <thead><tr><th>Option</th><th>How it works</th><th>Best for</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Booking request (form or WhatsApp)</td><td>The visitor asks for a date or session; your staff confirm</td><td>Single doctors, small clinics, practices with a receptionist</td><td>Someone must reply quickly; no automatic slot control</td></tr>
+    <tr><td>Embedded scheduler (Calendly or similar)</td><td>Visitors pick a free slot from your calendar on an embedded page</td><td>Consultants, coaches, online consultations</td><td>Subscription for advanced features; check Indian payment options</td></tr>
+    <tr><td>WordPress booking plugin (Amelia, Bookly, Simply Schedule Appointments)</td><td>Services, staff, slots and payments run inside your own site</td><td>Salons, multi-staff clinics, tutors, studios</td><td>Paid add-ons for some features; needs updates like any plugin</td></tr>
+    <tr><td>Industry software widget</td><td>Your clinic, salon or gym system provides a booking page or widget</td><td>Businesses that need records, billing and staff rotas</td><td>Less design control; your data lives in that system</td></tr>
+  </tbody>
+</table>
+
+<h2>What I've built: booking requests that suit small practices</h2>
+<p>Real-time booking isn't always the best answer. Many doctors run sessions rather than fixed slots, emergencies change the day, and reception already keeps a diary. For those practices, a well-built booking request works better than a calendar that pretends the schedule is fixed.</p>
 <ul>
-  <li><strong>Scheduling services</strong> embedded in your website, such as Calendly-style tools</li>
-  <li><strong>WordPress booking plugins</strong> such as Amelia, Bookly or Simply Schedule Appointments</li>
-  <li><strong>Industry software:</strong> clinic, salon or fitness management systems with online booking</li>
+  <li><strong>Dr. Nitish Gupta, pulmonologist in Agra:</strong> a "Book an Appointment" button in the top bar on every page leads to a form that asks for name, email, phone, a preferred date and a time slot, with the dropdown listing the clinic's morning and evening sessions. The clinic receives a requested date and session, not a bare "please call me". See the <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta case study</a>.</li>
+  <li><strong>Dr. Sunaina Dental Care, Agra:</strong> the "Book Now" and "Book Appointment" buttons open a WhatsApp chat with the clinic, because that's how its patients already message. A three-field form is the backup. See the <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care case study</a>.</li>
+  <li><strong>Dr. Sudhir Arora:</strong> the online consultation page has one instruction, to send a WhatsApp message to book, and the link opens WhatsApp with the message already written.</li>
+  <li><strong>Southern Flavours, a restaurant in Solihull:</strong> a short table reservation form asks for party size and date, and shows "Reservation received! We'll confirm shortly." on screen as soon as it's sent.</li>
 </ul>
-<p>Industry software is often best if you need records, billing and staff management; simpler tools suit consultants and small teams.</p>
+<p>If you outgrow requests, because staff spend too long confirming or you want deposits, move to a scheduler or a plugin. More on WhatsApp buttons and pre-filled messages in <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
 
-<h2>Set up services properly</h2>
+<h2>Choosing a booking tool</h2>
+<h3>Calendly and other embedded schedulers</h3>
+<p>Calendly, Zoho Bookings and Google Calendar's appointment schedules let visitors pick a free slot from your calendar and add a video link for online sessions. They're quick to set up and embed on a WordPress page. Free plans are limited, and features such as several event types, team scheduling, reminders or payments may need a paid plan at the time of writing. Check which payment gateways each supports for Indian customers before you rely on it for deposits.</p>
+<h3>Amelia</h3>
+<p>Amelia is a WordPress booking plugin built around services, staff and locations, with a customer and employee panel, calendar sync and payments. There is a limited free version and paid licences for the full feature set. It can take payments directly or through WooCommerce, which opens up Indian gateways such as Razorpay; check its current gateway list.</p>
+<h3>Bookly</h3>
+<p>Bookly has a free core plugin on WordPress.org with many features, such as extra staff, SMS notifications, payment gateways and recurring appointments, sold as paid add-ons. It suits businesses that want to start small and add pieces as they need them. Add up the add-ons you'll need before comparing it with Amelia.</p>
+<h3>Simply Schedule Appointments</h3>
+<p>Simply Schedule Appointments has a free version for basic bookings and paid tiers that add things like Google Calendar sync, payments, SMS reminders and team booking at the time of writing. It's straightforward to set up for consultants and small teams.</p>
+<p>Plugin features and pricing change often, so check each vendor's site and try the free or demo version with your real services before you buy.</p>
+
+<h2>Set it up so it doesn't double-book</h2>
+<p>Most booking problems come from setup, not the tool. Before going live, configure:</p>
 <ul>
-  <li>Service names, durations and prices</li>
-  <li>Staff members and which services each provides</li>
-  <li>Working hours, breaks and holidays</li>
-  <li>Buffer time between appointments</li>
-  <li>How far in advance people can book</li>
+  <li><strong>Services:</strong> names, durations and prices, written the way customers describe them.</li>
+  <li><strong>Staff:</strong> who provides which services, and each person's working hours.</li>
+  <li><strong>Breaks and holidays:</strong> lunch, weekly offs and festival closures such as Diwali, added in advance.</li>
+  <li><strong>Buffer time</strong> between appointments for cleaning, notes or travel.</li>
+  <li><strong>Minimum notice:</strong> how close to the time someone can book, so nobody books a slot that starts in ten minutes.</li>
+  <li><strong>Booking window:</strong> how far ahead people can book, often a few weeks.</li>
+  <li><strong>Time zone:</strong> essential if you offer online consultations to people abroad.</li>
+  <li><strong>Calendar sync:</strong> two-way sync with Google Calendar or Outlook, so personal commitments block slots too.</li>
 </ul>
+<p>The most common cause of double bookings is phone and walk-in appointments that never reach the online calendar. If reception takes bookings by phone, they must enter them in the same system, or online booking should only offer slots reception has released.</p>
+<h3>Collect only what you need</h3>
+<p>Name, phone number and the service are usually enough. Avoid asking for medical history or reports in an open booking form: that's sensitive personal data that needs careful storage and access control. <a href="/blog/dpdp-act-website-basics/">DPDP Act basics for websites</a> covers consent and privacy notices.</p>
 
-<h2>Calendar sync</h2>
-<p>Sync bookings with Google Calendar or Outlook so you don't get double-booked with other commitments.</p>
-
-<h2>Reminders</h2>
-<p>Automatic reminders by email, SMS or WhatsApp a day before and a few hours before greatly reduce missed appointments. WhatsApp reminders usually need a WhatsApp Business API provider with approved message templates.</p>
-
-<h2>Deposits and payments</h2>
+<h2>Reminders: email, SMS and WhatsApp</h2>
+<p>Automatic reminders are one of the most effective ways to reduce missed appointments. A common pattern is a confirmation when the booking is made, a reminder the day before and another a couple of hours before, each with a link to reschedule or cancel.</p>
 <ul>
-  <li>Take a deposit or full payment for longer or high-value appointments</li>
-  <li>Offer UPI and cards</li>
-  <li>State your cancellation and refund policy clearly</li>
+  <li><strong>Email</strong> is built into every booking tool, but easy to miss. Make sure your site sends email through SMTP so reminders don't land in spam.</li>
+  <li><strong>SMS</strong> in India needs your sender ID and message templates registered on the DLT system, which SMS providers help you through. Booking plugins usually connect to SMS through an add-on or provider.</li>
+  <li><strong>WhatsApp</strong> reminders sent automatically need the WhatsApp Business Platform (API) through a provider, with message templates approved in advance and per-message charges. The free WhatsApp Business app is fine for sending reminders by hand.</li>
 </ul>
+
+<h2>Deposits and online payments with Razorpay</h2>
+<p>Asking for payment up front changes behaviour: people who've paid are more likely to turn up. You don't need it for every appointment, but consider a deposit or full payment for first-time customers, long appointments, packages and high-demand slots.</p>
+<ul>
+  <li>Booking plugins can take payments through gateways such as Razorpay, Cashfree or PayU, usually via an add-on or WooCommerce, so customers can pay by UPI, card or net banking.</li>
+  <li>If you take bookings by WhatsApp, a Razorpay payment link sent with the confirmation is a simple way to collect a deposit without changing the website.</li>
+  <li>State the cancellation and refund policy next to the payment, in plain words: how much notice, and what's refunded.</li>
+</ul>
+<p>Many clinics prefer payment at the visit, and that's fine. See <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a> for gateway setup.</p>
+
+<h2>Cutting no-shows at clinics and salons</h2>
+<ol>
+  <li>Send reminders with a one-tap reschedule link. People who can't easily reschedule tend not to come and not to tell you.</li>
+  <li>Take deposits from first-time customers and for long or high-value appointments.</li>
+  <li>Set a clear cancellation window and show it at booking.</li>
+  <li>Confirm next-day appointments by WhatsApp the evening before, and release unconfirmed slots to a waiting list.</li>
+  <li>Keep a simple record of no-shows by service and booking channel, so you know where to tighten the rules.</li>
+</ol>
+<p>Salons have the extra puzzle of staff and service combinations; <a href="/blog/website-for-salons-spas/">websites for salons and spas</a> covers that side.</p>
+
+<h2>Make the booking button easy to find</h2>
+<ul>
+  <li>Put a "Book Appointment" button in the header and the first screen of every page, alongside tap-to-call and WhatsApp.</li>
+  <li>Keep the booking page fast and simple on a phone, where many people will book.</li>
+  <li>Add your booking link to your Google Business Profile, so people can book straight from Google; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</li>
+  <li>Track completed bookings as a conversion in Google Analytics so you know which pages and campaigns bring appointments.</li>
+</ul>
+<p>Clinics have extra trust and content needs on top of booking; the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> covers them.</p>
 
 <p>Businesses that need a consultation before a booking, such as tattoo studios, can pair an enquiry form with a deposit; see <a href="/blog/website-for-tattoo-studios/">websites for tattoo studios</a>.</p>
 
-<h2>Reduce no-shows</h2>
-<ul>
-  <li>Reminders with easy reschedule links</li>
-  <li>Deposits for first-time customers</li>
-  <li>A clear cancellation window</li>
-  <li>Confirmation messages that feel personal</li>
-</ul>
-
 <p>Venues that rent space by the hour, such as box cricket and football turfs, apply the same ideas to slots, advances and rain policies; see <a href="/blog/website-for-sports-turfs/">websites for box cricket and football turfs</a>.</p>
 
-<h2>Make booking visible</h2>
-<ul>
-  <li>A "Book appointment" button in the header and on every service page</li>
-  <li>A "Book" button on your Google Business Profile, where supported</li>
-  <li>WhatsApp as an alternative for people who prefer chat</li>
-</ul>
+<h2>FAQs</h2>
+<h3>How do I add an appointment booking system to my website?</h3>
+<p>Decide whether you need booking requests or real-time slots. For requests, add a form with preferred date and session plus a WhatsApp button. For real-time slots, embed a scheduler such as Calendly or install a WordPress plugin such as Amelia, Bookly or Simply Schedule Appointments, then set up services, hours, buffers and reminders.</p>
+<h3>What is the best appointment booking plugin for WordPress?</h3>
+<p>It depends on your needs. Amelia suits multi-staff businesses that want a polished all-in-one plugin, Bookly suits those who want a free core and paid add-ons, and Simply Schedule Appointments suits consultants and small teams. Try each with your real services before buying.</p>
+<h3>Can I take online appointment bookings for free?</h3>
+<p>Yes, with limits. A booking request form with WhatsApp costs nothing beyond the website, and Bookly, Simply Schedule Appointments and several schedulers have free versions. Reminders by SMS or automated WhatsApp, payments and multiple staff usually need paid plans or add-ons.</p>
+<h3>Can customers pay a deposit when they book online?</h3>
+<p>Yes. Most booking plugins can take payments through Indian gateways such as Razorpay, directly or via WooCommerce, with UPI and cards. If you book over WhatsApp, a payment link sent with the confirmation does the same job.</p>
+<h3>How do I send WhatsApp appointment reminders automatically?</h3>
+<p>Automatic reminders need the WhatsApp Business Platform through a provider, with approved message templates, connected to your booking tool. Providers charge per message. For a small practice, sending reminders by hand from the WhatsApp Business app can be enough.</p>
+<h3>Is it safe to collect patient details in a booking form?</h3>
+<p>Collect only what you need to book: name, phone and the reason for the visit in general terms. Don't collect reports or detailed medical history through an open form, and explain in your privacy notice what you collect and why.</p>
 
-<h2>Keep forms short and private</h2>
-<p>Ask only for what you need. For health or sensitive services, avoid collecting detailed information in booking forms, and have a privacy policy; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy basics</a>.</p>
-
-<h2>Track bookings</h2>
-<p>Track completed bookings as key events; see <a href="/blog/ga4-events-explained/">GA4 events</a>.</p>
-
-<p>Industry guides: <a href="/blog/clinic-website-checklist-for-doctors/">clinics</a>, <a href="/blog/website-for-salons-spas/">salons and spas</a> and <a href="/blog/website-for-coaches-consultants/">coaches</a>.</p>
+<p>Planning a clinic website with booking built in? See <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
 `,
   },
   {
@@ -19777,59 +20184,126 @@ find wp-content/uploads -name "*.php"</code></pre>
   },
   {
     slug: 'hosting-suspended-malware',
-    seoTitle: 'Hosting Account Suspended for Malware? What to Do',
-    title: 'Hosting Account Suspended for Malware? How to Get Your Site Back Online',
-    description: 'Hosting suspended for malware? Why hosts suspend accounts, what to ask yours, how to clean every site in the account, get reactivated and avoid a repeat.',
+    seoTitle: 'Hosting Account Suspended for Malware? How to Get It Back',
+    title: 'Hosting Account Suspended for Malware? What the Notice Means and How to Get Your Site Back Online',
+    description: 'Hosting account suspended for malware? What the notice means, how to get access, clean every site, get reinstated by your host and stop it happening again.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-migration', 'wordpress-maintenance'],
     body: `
-<p>You open your website and see "Account Suspended", or your host emails to say your account has been disabled because of malware. It's stressful, but hosts suspend accounts to protect other customers and the server, and they will usually reactivate once the problem is fixed.</p>
+<p>If your host has suspended your account for malware, its scanner (or an abuse report) found malicious files, spam scripts or phishing pages somewhere in your hosting account, and it switched the account off to protect the server and other customers. You can usually get it back: ask the host for the scan report and temporary access, clean every site in the account, close the hole the attacker used, and then ask the host to re-scan and reinstate it.</p>
+<p>The process is much the same whether your host is a large shared host or a small reseller. If you would rather hand it over, my <a href="/wordpress-malware-removal/">WordPress malware removal service</a> covers suspended accounts: I clean the site, and then you or I ask the host to review and reactivate it.</p>
+<p>This guide covers the suspension itself: the notice, getting access, the reinstatement request and preventing a repeat. For the cleanup in depth, see <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>, and if you are not yet sure what the attacker did, start with the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a>.</p>
 
-<h2>Common reasons for suspension</h2>
+<h2>What your host's suspension email means</h2>
+<p>Hosts word these notices differently, but most fall into one of a few types. The wording tells you where to look first.</p>
+<table>
+  <thead><tr><th>What the notice says</th><th>What it usually means</th><th>Where to look first</th></tr></thead>
+  <tbody>
+    <tr><td>Malicious content or malware detected</td><td>The host's scanner found infected or known-bad files</td><td>The file list in the notice or scan report</td></tr>
+    <tr><td>Outgoing spam or mail abuse</td><td>A script in the account is sending bulk email</td><td>Mailer scripts, compromised email passwords, contact forms</td></tr>
+    <tr><td>Phishing content reported</td><td>Someone reported a fake login or payment page hosted on your site</td><td>Unfamiliar folders, often with bank or webmail names</td></tr>
+    <tr><td>Resource abuse or CPU limit exceeded</td><td>Heavy load, sometimes from malware, a crypto miner or a bot attack</td><td>Process and access logs, cron jobs, recently changed files</td></tr>
+    <tr><td>Files quarantined or permissions changed</td><td>A partial suspension: specific files disabled, account otherwise open</td><td>The quarantined files, then everything around them</td></tr>
+    <tr><td>Account terminated for repeated abuse</td><td>Earlier warnings were missed or the problem came back</td><td>Ask urgently for a copy of your data and the deadline</td></tr>
+  </tbody>
+</table>
+<p>Before anything else, rule out the boring causes. Log in to your hosting dashboard directly, not through a link in the email, and check that the invoice is paid. Fake "your account has been suspended" emails are a common phishing trick, and an unpaid renewal shows the same "Account Suspended" page as a malware block.</p>
+
+<h3>Full and partial suspensions</h3>
+<p>A full suspension usually takes the website offline, locks you out of the control panel and may stop email on the domain. A partial suspension leaves the account open but disables the site or quarantines infected files, so you can often start cleaning through File Manager or SFTP straight away.</p>
+
+<h2>What to do in the first hour</h2>
+<ol>
+  <li><strong>Save the notice and the ticket number.</strong> Note any file paths, deadlines and what the host says it needs from you.</li>
+  <li><strong>Don't delete the account or start deleting files.</strong> The infected copy still holds your real content, and the file list is evidence of how the attacker got in.</li>
+  <li><strong>Don't restore an old backup and ask for reinstatement.</strong> Backdoors are often planted weeks before the visible symptoms, so the backup may be infected too.</li>
+  <li><strong>List everything in the account:</strong> the main site, add-on domains, subdomains, old test sites, staging copies and email accounts. All of them are in scope.</li>
+  <li><strong>Tell your team</strong> if email is affected, and give customers another way to reach you.</li>
+</ol>
+
+<h2>How to get temporary access to clean the site</h2>
+<p>You can't clean what you can't reach. Most hosts will give some form of access for cleanup, but you usually have to ask. Open a ticket and ask:</p>
 <ul>
-  <li>Malware or malicious files detected by the host's scanner</li>
-  <li>The account sending spam email; see <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam</a></li>
-  <li>Phishing pages hosted on your site, often reported by third parties</li>
-  <li>Excessive server resource use, sometimes caused by malware or bot attacks</li>
-  <li>Unpaid invoices (check this first)</li>
+  <li>Which files or activity triggered the suspension, and can they share the full scan report?</li>
+  <li>Can they unlock the control panel, File Manager or SFTP while the website itself stays offline?</li>
+  <li>If not, can they restrict access to your IP address, or provide a downloadable copy of the files and database?</li>
+  <li>Do they keep their own backups, and from which dates?</li>
+  <li>Is there a deadline before the account or its data is removed?</li>
+  <li>What exactly do they need to see before they lift the suspension?</li>
+</ul>
+<p>A short, specific ticket gets a faster answer than an angry one. Something like this works:</p>
+<blockquote><p>Hello, my account was suspended for malware (ticket number here). Please could you share the full scan report and enable File Manager and SFTP access, restricted to my IP address if needed, so I can clean the account? The website can stay offline until you have re-scanned it. Please also confirm whether you hold backups and whether there is a deadline before the data is removed.</p></blockquote>
+<p>Some hosts offer a paid cleanup or security add-on at this point. Ask what it covers: deleting the flagged files without finding the backdoor or the entry point often leads to a second suspension.</p>
+
+<h2>Clean the whole account, not just one website</h2>
+<p>This is where most repeat suspensions come from. The host scans the whole account, and an attacker who gets into one forgotten install can write to every other folder the same hosting user owns. An old WordPress copy in a /old/ or /test/ folder is a classic way back in.</p>
+<ol>
+  <li><strong>Back up the infected account first.</strong> Download the files and export each database, label the copy "infected" and keep it away from anything you might restore later.</li>
+  <li><strong>Delete what you don't need.</strong> Old test sites, abandoned installs and copies you forgot about should go, after you've saved anything worth keeping.</li>
+  <li><strong>Replace WordPress core files</strong> with fresh copies, and reinstall every plugin and theme from its official source rather than trusting the existing files.</li>
+  <li><strong>Check the places malware hides:</strong> PHP files in wp-content/uploads, the mu-plugins folder, .htaccess files in every directory, wp-config.php, and files in the account's home directory outside public_html.</li>
+  <li><strong>Check the database</strong> for injected scripts in posts and options, and for administrator accounts you don't recognise.</li>
+  <li><strong>Check the hosting account itself:</strong> cron jobs, FTP accounts, email forwarders and SSH keys you didn't create.</li>
+</ol>
+<p>If you or your developer have SSH access, these commands show modified core and plugin files, PHP files hiding in uploads, and every administrator:</p>
+<pre><code>wp core verify-checksums
+wp plugin verify-checksums --all
+find wp-content/uploads -name "*.php"
+wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
+<p>Backdoors are the part people miss, because they are small and look like normal code. <a href="/blog/find-remove-wordpress-backdoors/">Finding and removing backdoors</a> covers where they hide and how to spot them. If the notice was about spam, also work through <a href="/blog/wordpress-site-sending-spam-emails/">a hosting account sending spam emails</a>, because compromised mailbox passwords cause the same suspension without any infected files.</p>
+
+<h2>Close the way in before you ask for reinstatement</h2>
+<p>Cleaning without fixing the cause is how the same account gets suspended twice. Before you contact the host:</p>
+<ul>
+  <li>Update WordPress core, every plugin and every theme, and delete those you don't use.</li>
+  <li>Remove nulled or pirated themes and plugins completely; they are a common source of hidden malware. See <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a>.</li>
+  <li>Change every password: hosting, control panel, SFTP, database, email accounts and every WordPress administrator. Update the database password in wp-config.php when you change it.</li>
+  <li>Replace the security keys and salts in wp-config.php so every existing login session is ended.</li>
+  <li>Turn on two-factor authentication for WordPress admins and the hosting account.</li>
+  <li>Install one security plugin, such as Wordfence or Solid Security, and run a full scan.</li>
 </ul>
 
-<h2>Step 1: Read the notice carefully</h2>
-<p>The email or support ticket usually says why the account was suspended and sometimes lists infected files. Keep it for reference.</p>
-
-<h2>Step 2: Ask your host the right questions</h2>
+<h2>Asking your host to reinstate the account</h2>
+<p>When the account is clean, reply on the same ticket. Hosts deal with many of these, so make it easy for them to say yes. Include:</p>
 <ul>
-  <li>Which files or activities triggered the suspension?</li>
-  <li>Can they provide a full scan report?</li>
-  <li>Can they give temporary access (for example, file access only, or access limited to your IP address) so you can clean the site?</li>
-  <li>What do they need from you to reactivate the account?</li>
+  <li>What you found: the infected files, backdoors, rogue users or spam scripts.</li>
+  <li>What you removed, replaced and deleted, including unused sites.</li>
+  <li>What you changed: updates, passwords, removed plugins, the security plugin added.</li>
+  <li>A request for a fresh scan and reactivation.</li>
 </ul>
+<p>Most hosts re-scan before lifting the suspension. If the scan finds something you missed, they will usually tell you which file, and you go round again. How long this takes depends on the host's support queue, so ask what to expect. If the host refuses to reactivate or terminates the account, ask for a full copy of your data, clean it on your own computer or a new host, and only then put it live.</p>
 
-<h2>Step 3: Back up before cleaning</h2>
-<p>Download the files and database. Even infected, this backup contains your real content.</p>
+<h2>After reinstatement: Google, email and blacklists</h2>
+<ol>
+  <li><strong>Search Console:</strong> open Security issues. If Google flagged the site, request a review once it's clean; <a href="/blog/this-site-may-be-hacked-google/">"This site may be hacked" in Google</a> explains the process.</li>
+  <li><strong>Email reputation:</strong> if the account sent spam, check your domain and server IP on a blacklist lookup tool such as MXToolbox, and make sure SPF, DKIM and DMARC records are in place.</li>
+  <li><strong>Spam pages:</strong> search Google for site:yourdomain.com and look for pages you didn't create. Make sure they now return a 404 or 410.</li>
+  <li><strong>Watch for a few weeks:</strong> rescan the site weekly and check for new admin users and modified files. Reinfection usually shows up within days if something was missed.</li>
+</ol>
 
-<h2>Step 4: Clean the whole account, not just one site</h2>
-<p>If your account has several websites, old test sites or unused installs, all of them need checking. One neglected site can reinfect the others. Delete anything you don't need. Then follow the full <a href="/blog/remove-malware-wordpress-step-by-step/">malware clean-up process</a> for each remaining site.</p>
+<h2>How to avoid another suspension</h2>
+<p>The same habits that stop hacks stop suspensions: regular updates with a backup first, off-site backups you've tested, as few plugins as the site needs, no nulled software, strong passwords with two-factor authentication, and no forgotten installs sitting in the account. If nobody in your business has time for that every month, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> cover updates, off-site backups, security scans and uptime monitoring.</p>
 
-<h2>Step 5: Fix the cause</h2>
-<ul>
-  <li>Update WordPress, plugins and themes</li>
-  <li>Remove nulled or abandoned plugins</li>
-  <li>Change every password: hosting, SFTP, database, email and WordPress</li>
-  <li>Remove backdoors; see <a href="/blog/find-remove-wordpress-backdoors/">finding backdoors</a></li>
-</ul>
+<h3>Should you change hosts?</h3>
+<p>Not straight away. Moving an infected site just moves the problem, and the new host's scanner may suspend it too. Clean first. If suspensions keep happening, support was slow or unhelpful, or your plan puts many sites under one hosting user with no isolation, a better host may be worth it; see <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>.</p>
 
-<h2>Step 6: Request a re-scan and reactivation</h2>
-<p>Tell the host what you found and fixed. Most hosts re-scan the account before lifting the suspension.</p>
+<h2>FAQs</h2>
+<h3>Why did my hosting provider suspend my account for malware?</h3>
+<p>Because its scanner found malicious files, or someone reported spam or a phishing page coming from your account. Hosts suspend first to protect the server, its IP addresses and other customers, then work with you to clean it. It doesn't mean they think you did it deliberately.</p>
+<h3>How long does it take to get a suspended hosting account back?</h3>
+<p>It depends on how quickly the account is cleaned and how fast the host re-scans. A single site with clear scan results can be cleaned in a day or two, while an account with several neglected sites takes longer. The host's own review time varies, so ask on the ticket.</p>
+<h3>Can I download my files if my hosting account is suspended?</h3>
+<p>Usually, yes. Most hosts will unlock File Manager or SFTP for cleanup, restrict access to your IP address, or provide a backup copy on request. Ask before any termination deadline passes.</p>
+<h3>Will my business email work while the account is suspended?</h3>
+<p>If your email is hosted in the same account, it may stop working during a full suspension. Email hosted separately, such as Google Workspace or Zoho Mail, usually keeps working as long as the domain's DNS is managed elsewhere. Check where your MX records point.</p>
+<h3>Can I just restore a backup to get the account reactivated?</h3>
+<p>Only if you know the backup was taken before the infection began, and you also close the hole the attacker used. Otherwise the restored site still contains the backdoor, and the next scan or the next attack brings the suspension back.</p>
+<h3>Will a hosting suspension hurt my Google rankings?</h3>
+<p>A short suspension usually has little lasting effect, but a site that stays down for days, or that Google flags as hacked, can lose visibility. Clean it quickly, remove spam pages, and request a review in Search Console if there is a security warning.</p>
 
-<h2>Step 7: Check Google and email reputation</h2>
-<p>After reactivation, check Search Console for security issues and check your domain on email blacklists. See <a href="/blog/deceptive-site-ahead-warning-fix/">fixing browser warnings</a>.</p>
-
-<h2>Should you change hosts?</h2>
-<p>If suspensions keep happening, or your host offers little help, moving to better hosting with isolation between sites, malware scanning and backups may be worth it. But clean the site first; moving an infected site just moves the problem. See <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting</a>.</p>
-
-<p>Need your site back online quickly? See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+<p>Account suspended and need it sorted? Send me the host's notice and I'll tell you what's involved; see <a href="/wordpress-malware-removal/">WordPress malware removal and hardening</a>.</p>
 `,
   },
   {
@@ -21059,52 +21533,127 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'elementor-layout-broken-after-update',
-    seoTitle: 'Elementor Layout Broken After Update? How to Fix It',
-    title: 'Elementor Layout Broken After an Update? How to Fix It and Prevent It',
-    description: 'Elementor layout broken after an update? Regenerate CSS, clear caches, check add-on compatibility, roll back, fix container changes and update safely.',
+    seoTitle: 'Elementor Layout Broken After Update? 8 Fixes, in Order',
+    title: 'Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again',
+    description: 'Elementor layout broken after an update? Regenerate CSS, clear caches, match Elementor and Pro versions, use Safe Mode, check containers and roll back.',
     date: '2026-09-28',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'website-redesign'],
     body: `
-<p>You updated Elementor, Elementor Pro or an add-on, and now sections overlap, fonts changed, spacing is off or widgets have disappeared. Most of these problems can be fixed quickly. Here's the order I work in.</p>
+<p>When an Elementor layout breaks after an update, the cause is usually one of three things: Elementor's generated CSS files are out of date, a cache is still serving old files, or Elementor and Elementor Pro (or an add-on) are on versions that don't work together. Regenerate Elementor's files and data, clear every cache, and check the versions match. If the layout is still broken, use Safe Mode and staging to find the conflict, and roll back only as a temporary measure.</p>
+<p>All the client sites in my case studies are built with Elementor, so this is the toolset I spend my time building with and fixing. If you would rather hand it over, see <a href="/elementor-developer/">Elementor development and fixes</a>. Otherwise, work through the fixes below in order, because the first two solve most cases.</p>
+<p>This guide is about pages that look wrong after an update. If the Elementor editor won't open at all, or spins on the loading screen, that's a different problem; see <a href="/blog/elementor-not-loading-fix/">Elementor stuck on loading</a>.</p>
 
-<h2>1. Regenerate CSS and clear caches</h2>
-<p>Elementor stores styles in generated CSS files. After updates, old files can cause broken layouts.</p>
-<ol>
-  <li>Go to Elementor → Tools and regenerate files and data</li>
-  <li>Clear your caching plugin, server cache and CDN</li>
-  <li>Hard refresh the browser</li>
-</ol>
-<p>This alone fixes many "broken after update" issues; see <a href="/blog/wordpress-changes-not-showing/">changes not showing</a>.</p>
+<h2>What broke? Match the symptom to the cause</h2>
+<table>
+  <thead><tr><th>What you see</th><th>Likely cause</th><th>Start with</th></tr></thead>
+  <tbody>
+    <tr><td>Pages look unstyled, or spacing and colours are wrong everywhere</td><td>Stale Elementor CSS files or cached CSS</td><td>Fix 1</td></tr>
+    <tr><td>Fine when logged in, broken for visitors</td><td>Page cache or CDN serving old files</td><td>Fix 1</td></tr>
+    <tr><td>Pro widgets missing, header or footer templates gone</td><td>Elementor and Elementor Pro versions don't match, or the Pro licence lapsed</td><td>Fix 2</td></tr>
+    <tr><td>Only widgets from an add-on pack are blank or broken</td><td>The add-on hasn't caught up with the new Elementor version</td><td>Fix 4</td></tr>
+    <tr><td>Section widths, gaps or alignment changed</td><td>Container conversion, a feature switched on, or custom CSS targeting old markup</td><td>Fix 5</td></tr>
+    <tr><td>Fonts, colours or mobile layout changed across the site</td><td>Site Settings, breakpoints or a theme update</td><td>Fix 6</td></tr>
+    <tr><td>White screen or "critical error" on the whole site</td><td>A PHP fatal error, not a layout issue</td><td>Your error log</td></tr>
+  </tbody>
+</table>
+<p>For the last row, see <a href="/blog/fix-wordpress-critical-error/">fixing the WordPress critical error</a> first, because none of the layout fixes below will help until the site loads.</p>
 
-<h2>2. Check add-on compatibility</h2>
-<p>Third-party Elementor add-ons may lag behind Elementor updates. Check for updates to each add-on, and look at their changelogs or support forums for known issues.</p>
-
-<h2>3. Make sure Elementor and Elementor Pro match</h2>
-<p>Updating one without the other can cause problems. Keep both on compatible versions.</p>
-
-<h2>4. Roll back if needed</h2>
-<p>Elementor includes a version rollback tool (in Elementor → Tools) to return to a previous version while you investigate. For other plugins, restore from a backup or install the previous version. Treat rollback as temporary, since old versions miss security fixes.</p>
-
-<h2>5. Look for feature changes</h2>
-<p>Major updates sometimes change how things work, such as layout structures, default spacing or global styles and fonts. Check the release notes and adjust global settings or specific widgets.</p>
-
-<h2>6. Check the theme</h2>
-<p>A theme update at the same time can also change layouts. Compare by switching to Hello Elementor on a staging site.</p>
-
-<h2>7. Restore a backup</h2>
-<p>If the site is badly broken and important, restore the pre-update backup and fix things on staging instead; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore</a>.</p>
-
-<h2>Prevent it next time</h2>
+<h2>Before you change anything</h2>
 <ul>
-  <li>Back up before updating</li>
-  <li>Test major Elementor updates on a staging site first; see <a href="/blog/staging-sites-explained/">staging sites</a></li>
-  <li>Wait a few days after a major release for bug-fix updates</li>
-  <li>Keep add-ons to a minimum</li>
-  <li>Use global colours, fonts and templates so fixes apply everywhere</li>
+  <li><strong>Take a backup</strong> of files and database, even of the broken site.</li>
+  <li><strong>Note the versions</strong> of Elementor, Elementor Pro, your theme and any Elementor add-ons. Elementor's System Info screen lists them in one place.</li>
+  <li><strong>Work on staging if you can,</strong> especially for fixes 3 to 8. Most hosts offer a one-click staging copy.</li>
+</ul>
+<p>Elementor renames and moves its menus between versions. If a setting isn't exactly where I describe it, check Elementor's current documentation.</p>
+
+<h2>Fix 1: Regenerate CSS and data, then clear every cache</h2>
+<p>Elementor saves each page's styles into generated CSS files. After an update, those files can be out of date or missing, and the page renders without its styles or with old ones.</p>
+<ol>
+  <li>Go to Elementor, Tools, and click <strong>Regenerate Files &amp; Data</strong> (called Regenerate CSS &amp; Data in older versions). It's safe; it rebuilds the files from your saved designs.</li>
+  <li>Clear your caching plugin, such as WP Rocket, LiteSpeed Cache or W3 Total Cache.</li>
+  <li>Clear the server cache in your hosting panel. Hostinger, SiteGround and many other hosts have their own cache that a plugin purge doesn't always reach.</li>
+  <li>Purge the CDN if you use one. In Cloudflare, that's Caching, Configuration, Purge Everything.</li>
+  <li>Check the page in a private browser window, or hard refresh with Ctrl+Shift+R.</li>
+</ol>
+<p>Still broken for visitors but fine for you? Look for CSS or JavaScript optimisation in your caching plugin, such as combining, minifying or delaying files. Turn those off one at a time and retest. Elementor also has a CSS print method setting (external file or internal embedding); switching to internal embedding briefly tells you whether the generated CSS files are the problem. More on stubborn caches in <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>.</p>
+
+<h2>Fix 2: Make sure Elementor and Elementor Pro match</h2>
+<p>Elementor Pro is an add-on to the free Elementor plugin, and each Pro release expects a recent version of Elementor. Update one without the other and Pro widgets, Theme Builder headers and footers, popups or Pro styling can break or disappear.</p>
+<ul>
+  <li>On the Plugins page, check both are on current versions, and look for a compatibility notice from Elementor.</li>
+  <li>Pro only updates while its licence is active and connected under Elementor, License. If the licence lapsed, Pro stays on an old version while the free plugin keeps updating, and the gap widens with every release.</li>
+  <li>Update them together, one straight after the other, then repeat fix 1.</li>
+</ul>
+<p>If the licence sits in a former developer's account, get one in your own business name.</p>
+
+<h2>Fix 3: Use Safe Mode to check for a conflict</h2>
+<p>Elementor's Safe Mode (Elementor, Tools, General) loads the editor without your other plugins or theme. It affects only the editor, not what visitors see, so it's safe on a live site.</p>
+<ul>
+  <li>If the page looks right in the Safe Mode editor, another plugin or the theme is at fault.</li>
+  <li>To find out which, deactivate plugins one at a time on staging and check the page after each. On a live site, the Health Check &amp; Troubleshooting plugin can disable plugins for your login only while visitors see the normal site.</li>
+  <li>Turn Safe Mode off again when you're done.</li>
+</ul>
+<p>A step-by-step method is in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find and fix plugin conflicts</a>.</p>
+
+<h2>Fix 4: Update or remove Elementor add-on packs</h2>
+<p>Add-on packs such as Essential Addons, Happy Addons, Ultimate Addons or PowerPack hook deep into Elementor, and after a major Elementor release they sometimes need an update of their own. Check each add-on for an update and read its changelog or support forum for reports matching your problem. If an add-on is abandoned, replace its widgets with Elementor or Pro widgets and remove it. One well-maintained add-on is plenty for most sites.</p>
+
+<h2>Fix 5: Check containers, features and custom CSS</h2>
+<p>Elementor has moved from sections and columns to Flexbox containers, and many changes are switched on through the Features screen (Elementor, Settings, Features; called Experiments in older versions). When a feature becomes the default, the HTML Elementor outputs can change.</p>
+<ul>
+  <li><strong>Container conversion:</strong> if someone used the Convert option to turn old sections into containers, widths, gaps and alignment often shift. Open the page's History panel in the editor and restore a revision from before the conversion, or tidy the spacing by hand.</li>
+  <li><strong>Feature changes:</strong> options that slim down Elementor's markup or change how CSS loads are good for speed, but can break layouts that relied on the old structure. Check which features changed state recently and test switching one back on staging.</li>
+  <li><strong>Custom CSS:</strong> rules targeting old wrapper classes, such as .elementor-column-wrap, stop matching when the markup changes. Check Custom CSS in Site Settings, the theme's Additional CSS and any child theme.</li>
+</ul>
+<p>Converting old sections to containers is worth doing for speed, but plan it as a job on staging, not something that happens during an update; <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> explains why.</p>
+
+<h2>Fix 6: Check Site Settings, fonts, breakpoints and the theme</h2>
+<ul>
+  <li><strong>Global colours and fonts:</strong> open Site Settings and check nothing has been reset. Pages that use globals change everywhere when a global changes.</li>
+  <li><strong>Layout and breakpoints:</strong> content width, default gaps and custom breakpoints live under Site Settings, Layout. If only the mobile or tablet layout broke, start here.</li>
+  <li><strong>Fonts loading differently:</strong> if text falls back to a system font, check whether Google Fonts are loaded locally or turned off in your settings or optimisation plugin.</li>
+  <li><strong>The theme:</strong> if Hello Elementor, Astra, OceanWP or another theme updated at the same time, switch to a default theme on staging to see whether the layout comes back.</li>
 </ul>
 
-<p>Need your layout fixed? See <a href="/elementor-developer/">Elementor development and fixes</a>.</p>
+<h2>Fix 7: Roll back Elementor temporarily</h2>
+<p>If the live site is broken and you need it working while you investigate, Elementor has a rollback tool under Elementor, Tools, Version Control. Choose the previous version, confirm, then repeat fix 1. Elementor Pro has its own rollback option there while the licence is active.</p>
+<ul>
+  <li>Turn off auto-updates for Elementor and Pro until you've found the cause.</li>
+  <li>Some major releases run a database update after installing. Rolling back across one of those is less reliable than restoring a backup taken before the update.</li>
+  <li>Treat rollback as days, not months. Old versions miss security fixes.</li>
+</ul>
+
+<h2>Fix 8: Restore the pre-update backup</h2>
+<p>If the site is badly broken and important, restore the backup taken just before the update, then repeat the update on staging. On a WooCommerce store, restoring the database also removes orders placed since the backup, so restore files only or ask your host about restoring specific tables. See <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>
+
+<h2>How to update Elementor without breaking the layout</h2>
+<ol>
+  <li>Take a full backup.</li>
+  <li>Read the release notes. Big version jumps deserve more care than small fixes.</li>
+  <li>For major releases, wait a few days for the first bug-fix update.</li>
+  <li>Update on a staging copy first; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</li>
+  <li>Update Elementor and Pro together, then any add-ons.</li>
+  <li>Regenerate files and data, and clear caches.</li>
+  <li>Check one page of every type on desktop and mobile: home, a service page, a blog post, an archive, the header and footer, popups and forms, and shop, product and checkout pages on a store.</li>
+  <li>Repeat on the live site.</li>
+</ol>
+<p>The core of that routine, a backup before updates, testing afterwards and a rollback if something breaks, is what my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> do every month.</p>
+
+<h2>FAQs</h2>
+<h3>Why did my Elementor layout break after updating?</h3>
+<p>Usually because Elementor's generated CSS is out of date, a cache is serving old files, or Elementor Pro or an add-on doesn't match the new Elementor version. Less often, the update changed default settings or markup that custom CSS relied on.</p>
+<h3>How do I regenerate CSS in Elementor?</h3>
+<p>Go to Elementor, Tools and click Regenerate Files &amp; Data (Regenerate CSS &amp; Data in older versions). Then clear your caching plugin, server cache and CDN, and check the page in a private window.</p>
+<h3>How do I roll back Elementor to a previous version?</h3>
+<p>Use Elementor, Tools, Version Control, choose the version and confirm. Regenerate files afterwards and turn off auto-updates for Elementor until the cause is fixed. If a database update ran with the new version, restoring a backup is safer.</p>
+<h3>Does Elementor Safe Mode affect my live site?</h3>
+<p>No. Safe Mode only changes how the editor loads for you, so visitors keep seeing the normal site. Turn it off when you've finished testing.</p>
+<h3>Why does my Elementor page look different logged in and logged out?</h3>
+<p>Logged-in users usually bypass the page cache, so you see fresh CSS while visitors get a cached copy. Purge every cache layer: plugin, server and CDN.</p>
+
+<p>Layout still broken? Send me the page link and the versions you updated, and I'll tell you what it needs; see <a href="/elementor-developer/">Elementor development</a>.</p>
 `,
   },
   {
