@@ -2012,70 +2012,108 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'core-web-vitals-explained',
-    title: 'Core Web Vitals Explained for Business Owners (LCP, INP, CLS)',
-    description: 'Core Web Vitals in plain English: what LCP, INP and CLS mean, why they matter for Google and your customers, and how to improve them on a WordPress website.',
+    seoTitle: 'Core Web Vitals Explained: LCP, INP and CLS in Plain English',
+    title: 'Core Web Vitals Explained for Business Owners: LCP, INP and CLS, What Counts as Good and How to Improve Them',
+    description: 'Core Web Vitals explained: LCP, INP and CLS thresholds, field vs lab data, the 28-day window, the Search Console report and what to fix first on WordPress.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'website-redesign', 'wordpress-seo-services'],
     body: `
-<p>Google measures how fast and smooth your website feels to real visitors using three metrics called <strong>Core Web Vitals</strong>. They're part of Google's page experience signals, but more importantly, they reflect whether people enjoy using your site or give up. Here's what they mean in plain English.</p>
+<p>Core Web Vitals are three measurements Google uses to judge how a page feels to real visitors: <strong>Largest Contentful Paint (LCP)</strong> for loading, good at 2.5 seconds or less; <strong>Interaction to Next Paint (INP)</strong> for responsiveness, good at 200 milliseconds or less; and <strong>Cumulative Layout Shift (CLS)</strong> for visual stability, good at 0.1 or less. They're measured on real Chrome users over the previous 28 days, and a page passes when all three are good for at least 75% of visits.</p>
+<p>You can see your results in PageSpeed Insights and in Search Console's Core Web Vitals report. Below is what each metric means, how the measurement works, how to read the report and what usually causes problems on WordPress sites. Core Web Vitals fixes for LCP, INP and CLS are part of my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> service, with a before-and-after report.</p>
 
-<h2>The three Core Web Vitals</h2>
+<h2>The three Core Web Vitals and their thresholds</h2>
 <table>
-  <thead><tr><th>Metric</th><th>What it measures</th><th>Good score</th></tr></thead>
+  <thead><tr><th>Metric</th><th>What it measures</th><th>Good</th><th>Needs improvement</th><th>Poor</th></tr></thead>
   <tbody>
-    <tr><td><strong>LCP</strong>: Largest Contentful Paint</td><td>How quickly the main content (usually the big heading or hero image) appears</td><td>2.5 seconds or less</td></tr>
-    <tr><td><strong>INP</strong>: Interaction to Next Paint</td><td>How quickly the page responds when someone taps or clicks</td><td>200 milliseconds or less</td></tr>
-    <tr><td><strong>CLS</strong>: Cumulative Layout Shift</td><td>Whether content jumps around while loading</td><td>0.1 or less</td></tr>
+    <tr><td><strong>LCP</strong>: Largest Contentful Paint</td><td>How long the main content, usually the hero image or main heading, takes to appear</td><td>2.5 s or less</td><td>2.5 to 4 s</td><td>Over 4 s</td></tr>
+    <tr><td><strong>INP</strong>: Interaction to Next Paint</td><td>How quickly the page visibly responds to taps, clicks and key presses</td><td>200 ms or less</td><td>200 to 500 ms</td><td>Over 500 ms</td></tr>
+    <tr><td><strong>CLS</strong>: Cumulative Layout Shift</td><td>How much content unexpectedly jumps around while the page is used</td><td>0.1 or less</td><td>0.1 to 0.25</td><td>Over 0.25</td></tr>
   </tbody>
 </table>
+<p>Mobile and desktop are assessed separately. Most sites do worse on mobile, which is also where most of their visitors are.</p>
 
-<h2>Why they matter for your business</h2>
-<ul>
-  <li><strong>Visitors leave slow sites.</strong> If the main content takes too long, many people hit "back" before seeing your offer.</li>
-  <li><strong>Frustration costs enquiries.</strong> Buttons that don't respond or layouts that jump make people tap the wrong thing, or give up.</li>
-  <li><strong>Google uses them.</strong> Page experience is one of many ranking signals. When competing pages are similar, a better experience can help.</li>
-</ul>
+<h2>What each metric means in practice</h2>
+<h3>LCP: does the main content appear quickly?</h3>
+<p>LCP is the moment the largest image or block of text in the visible part of the screen finishes rendering. On most business sites that's the hero image, a slider, or the main heading. A slow LCP usually comes from one of four places: the server taking too long to respond, the browser discovering the image late, the image itself being too heavy, or CSS and JavaScript blocking the page from drawing. <a href="/blog/fix-lcp-largest-contentful-paint/">How to fix slow LCP</a> shows how to find your LCP element and which of the four is to blame.</p>
+<h3>INP: does the page respond when someone taps?</h3>
+<p>INP replaced First Input Delay as a Core Web Vital in March 2024. Where First Input Delay only looked at the first tap, INP looks at interactions throughout the visit, such as opening a menu, choosing a product option or submitting a form, and reports one of the slowest. Poor INP almost always means the browser is busy running JavaScript: chat widgets, trackers, sliders, heavy page builder layouts or plugins doing work on every page. See <a href="/blog/fix-inp-interaction-to-next-paint/">how to improve INP</a>.</p>
+<h3>CLS: does the layout stay still?</h3>
+<p>CLS adds up unexpected movements of content, such as text pushed down by an image without dimensions, a late-loading banner or a font swap. Movement that happens straight after someone taps, such as an accordion opening, doesn't count. Bad CLS is why people tap the wrong button. See <a href="/blog/fix-cls-layout-shift/">how to fix CLS on WordPress</a>.</p>
 
-<p>Confused by different scores? See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</p>
+<h2>Field data vs lab data</h2>
+<p>This is the part that confuses most people, because two tools can show completely different numbers for the same page.</p>
+<table>
+  <thead><tr><th></th><th>Field data</th><th>Lab data</th></tr></thead>
+  <tbody>
+    <tr><td>Source</td><td>Real Chrome users, through the Chrome UX Report (CrUX)</td><td>A single simulated visit, using Lighthouse</td></tr>
+    <tr><td>Where you see it</td><td>Top of PageSpeed Insights, Search Console</td><td>Lower part of PageSpeed Insights, Lighthouse, GTmetrix</td></tr>
+    <tr><td>Time period</td><td>The previous 28 days</td><td>The moment you run the test</td></tr>
+    <tr><td>Includes INP?</td><td>Yes</td><td>No; Total Blocking Time is used as a stand-in</td></tr>
+    <tr><td>What Google uses</td><td>This one</td><td>Not directly; it's a diagnostic tool</td></tr>
+  </tbody>
+</table>
+<p>The lab performance score from 0 to 100 isn't a Core Web Vital. It's useful for finding problems and checking fixes, but a page can pass Core Web Vitals with an orange score, or fail them with a green one. <a href="/blog/website-speed-test-tools-explained/">Website speed test tools explained</a> covers PageSpeed Insights, Lighthouse, GTmetrix and WebPageTest in detail.</p>
 
-<h2>How to check your scores</h2>
+<h2>How the 75th percentile and 28-day window work</h2>
+<p>Google doesn't use your average visitor. It takes the value that 75% of page visits meet or beat, so a page passes LCP only if at least three-quarters of visits saw the main content within 2.5 seconds. That's deliberate: it means people on slower phones and networks count.</p>
+<p>The data covers a rolling 28 days. When you fix something today, each new day of good visits replaces an old day of bad ones, so field data improves gradually and fully reflects a fix only after about four weeks. That's normal, and it's why the lab test is the place to confirm a fix straight away.</p>
+<p>Field data also needs enough traffic. If a page doesn't have enough Chrome visits, PageSpeed Insights shows data for your whole domain instead, or no field data at all. Many small business sites only have domain-level data, which is still useful.</p>
+
+<h2>Reading the Core Web Vitals report in Search Console</h2>
 <ol>
-  <li>Go to <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and enter your URL.</li>
-  <li>Look at the <strong>"Discover what your real users are experiencing"</strong> section. That's field data from real Chrome users, if your site has enough traffic.</li>
-  <li>Check <strong>Google Search Console → Core Web Vitals</strong> to see which groups of pages need work.</li>
+  <li>Open Search Console and go to Core Web Vitals, in the Experience section at the time of writing.</li>
+  <li>Choose the mobile or desktop report. Start with mobile.</li>
+  <li>Look at the counts of URLs rated Poor, Need improvement and Good. A URL's rating comes from its worst metric.</li>
+  <li>Open an issue such as "LCP issue: longer than 2.5s (mobile)". Search Console groups similar pages together, such as all blog posts or all product pages, and shows example URLs.</li>
+  <li>Test an example URL in PageSpeed Insights to find the cause. Fixing the template usually fixes the whole group.</li>
+  <li>After fixing, click Validate fix. Search Console then monitors the group over the next 28 days.</li>
 </ol>
+<p>If the report says there isn't enough data, your site doesn't yet have enough Chrome traffic. Use PageSpeed Insights' lab results in the meantime. For the rest of Search Console, see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
 
-<h2>How to improve LCP (loading)</h2>
-<ul>
-  <li>Compress and resize the hero image, and use modern formats like WebP</li>
-  <li>Don't lazy-load the main image at the top of the page</li>
-  <li>Use caching and good hosting to reduce server response time</li>
-  <li>Reduce render-blocking CSS, JavaScript and font loading</li>
-  <li>Avoid large sliders and videos above the fold</li>
-</ul>
+<h2>Do Core Web Vitals affect Google rankings?</h2>
+<p>They're part of Google's page experience signals, but relevance and content quality matter far more. Google has said good Core Web Vitals align with what its ranking systems reward, but a fast page with weak content won't outrank a slower page that answers the search better. Where Core Web Vitals clearly matter is with visitors: slow, jumpy, unresponsive pages lose enquiries and sales, whatever their ranking.</p>
 
-<p>For a step-by-step walkthrough, including how to find your LCP element and which part of it is slow, see <a href="/blog/fix-lcp-largest-contentful-paint/">how to fix slow Largest Contentful Paint</a>.</p>
+<h2>Common WordPress causes, and where to fix them</h2>
+<table>
+  <thead><tr><th>Symptom on WordPress</th><th>Metric affected</th><th>Typical fix</th></tr></thead>
+  <tbody>
+    <tr><td>Long pause before anything appears</td><td>LCP</td><td>Page caching, better hosting, fewer slow plugins</td></tr>
+    <tr><td>Large hero image or slider</td><td>LCP</td><td>Resize, compress and serve WebP; don't lazy-load the top image; replace sliders with one image</td></tr>
+    <tr><td>Many CSS and JavaScript files in the page head</td><td>LCP</td><td>Defer non-critical scripts, remove unused CSS</td></tr>
+    <tr><td>Chat widgets, trackers, ad scripts</td><td>INP</td><td>Remove what isn't used, delay the rest until interaction</td></tr>
+    <tr><td>Heavy page builder layouts, mega menus</td><td>INP</td><td>Simpler layouts, fewer widgets and add-ons</td></tr>
+    <tr><td>Images without width and height</td><td>CLS</td><td>Set dimensions so space is reserved</td></tr>
+    <tr><td>Cookie banners, offer bars, late-loading embeds</td><td>CLS</td><td>Reserve space, or overlay rather than push content down</td></tr>
+    <tr><td>Web fonts swapping late</td><td>CLS, LCP</td><td>Fewer font files, preload the main font</td></tr>
+  </tbody>
+</table>
+<p>If the slow part is server response, <a href="/blog/reduce-server-response-time-ttfb/">how to reduce TTFB</a> explains caching, PHP and hosting. For the full list of causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why is my WordPress site slow?</a></p>
 
-<h2>How to improve INP (responsiveness)</h2>
-<ul>
-  <li>Remove unnecessary plugins and third-party scripts (chat widgets, trackers)</li>
-  <li>Delay non-essential JavaScript until after the page loads</li>
-  <li>Keep pages lean, as heavy page-builder layouts can slow interactions</li>
-</ul>
+<h2>A sensible order of work</h2>
+<ol>
+  <li>Check the field data in PageSpeed Insights and Search Console, mobile first.</li>
+  <li>Pick the worst metric on your most important page type, such as service pages or product pages.</li>
+  <li>Fix server response and caching first, because they affect every metric and every page.</li>
+  <li>Then fix the LCP element, scripts, and layout shifts, in order of impact.</li>
+  <li>Confirm each fix with a lab test, check the pages still work, then let field data catch up over 28 days.</li>
+</ol>
+<p>Test on a real mid-range Android phone on mobile data as well. Many Indian visitors browse on budget phones and variable connections, and that's exactly the audience the 75th percentile captures; see <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
 
-<h2>How to improve CLS (visual stability)</h2>
-<ul>
-  <li>Set width and height on images and videos so space is reserved</li>
-  <li>Reserve space for ads, embeds and banners</li>
-  <li>Load web fonts in a way that avoids big text jumps</li>
-  <li>Don't insert content above existing content after the page has loaded</li>
-</ul>
+<h2>FAQs</h2>
+<h3>What are good Core Web Vitals scores?</h3>
+<p>LCP of 2.5 seconds or less, INP of 200 milliseconds or less, and CLS of 0.1 or less, each met by at least 75% of page visits. A page passes the assessment when all three are good.</p>
+<h3>Why does PageSpeed Insights say there's no field data for my page?</h3>
+<p>The page doesn't have enough visits from Chrome users in the last 28 days. PageSpeed Insights then shows data for your whole domain, or nothing. The lab test below still helps you find and fix problems.</p>
+<h3>How long does it take for Core Web Vitals to update after a fix?</h3>
+<p>Up to about four weeks, because field data covers a rolling 28 days. Lab tests show the improvement immediately; Search Console follows as new visits replace old ones.</p>
+<h3>Do I need a PageSpeed score of 100?</h3>
+<p>No. The lab score isn't a Core Web Vital, and chasing 100 can mean removing useful features. Aim to pass Core Web Vitals for real visitors, especially on mobile.</p>
+<h3>What happened to First Input Delay?</h3>
+<p>Interaction to Next Paint replaced First Input Delay as a Core Web Vital in March 2024. INP measures responsiveness across the whole visit, not just the first tap, so it's harder to pass.</p>
 
-<p>Remember your real audience: see <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
-
-<h2>Where to start</h2>
-<p>For most WordPress sites, the biggest wins come from image optimization, caching and removing unnecessary scripts. Our article on <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> covers the common causes. If you'd rather hand it over, a <a href="/wordpress-speed-optimization/">speed optimization service</a> can target your specific Core Web Vitals issues and show before-and-after results.</p>
+<p>If your Search Console report shows pages as Poor or Needs improvement and you'd rather have the causes found and fixed safely, my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> service includes a full audit, Core Web Vitals fixes for LCP, INP and CLS, testing after every change, and a before-and-after report.</p>
 `,
   },
   {
@@ -5812,74 +5850,134 @@ Additional headers: Reply-To: [your-email]</code></pre>
   },
   {
     slug: 'wordpress-backup-restore-guide',
-    seoTitle: 'WordPress Backup & Restore Guide for Business Owners',
-    title: 'WordPress Backup and Restore: A Simple Guide for Business Owners',
-    description: 'How WordPress backups work, what to back up, how often, where to store copies, and how to restore your site safely when something goes wrong, explained simply.',
+    seoTitle: 'WordPress Backup and Restore Guide: How to Do It Safely',
+    title: 'WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks',
+    description: 'How to back up and restore WordPress: what to include, how often, the 3-2-1 rule, UpdraftPlus and host backups, and restoring by plugin or by hand.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
-<p>Backups are like insurance: easy to ignore until the day you need them. A failed update, a hack, a hosting problem or an accidental deletion can take your website down. With a good backup, you're back online quickly. Without one, you may be rebuilding from scratch.</p>
+<p>To back up WordPress properly, save both parts of the site, the files and the database, on an automatic schedule, and keep at least one copy somewhere other than your hosting server. In practice that means your host's backups plus a plugin or service such as UpdraftPlus, BlogVault or Jetpack VaultPress Backup sending copies off-site. To restore, use the same tool or your hosting panel, or restore the files and import the database by hand if the dashboard won't load. Then test a restore every few months, because an untested backup is only a hope.</p>
+<p>Below is what a backup needs to contain, how often to take one, the main options, and step-by-step restores by plugin, by hosting panel and manually. Regular off-site backups are the first thing my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> set up, but everything here works if you're doing it yourself.</p>
 
-<h2>What a WordPress backup includes</h2>
-<ul>
-  <li><strong>Files:</strong> WordPress core, your theme, plugins and the uploads folder (images, PDFs and other media)</li>
-  <li><strong>Database:</strong> your pages, posts, products, orders, settings and users</li>
-</ul>
-<p>You need both. A files-only backup loses your content; a database-only backup loses your images and design.</p>
-
-<h2>How often to back up</h2>
+<h2>What a WordPress backup must include</h2>
 <table>
-  <thead><tr><th>Type of site</th><th>Suggested frequency</th></tr></thead>
+  <thead><tr><th>Part</th><th>What it holds</th><th>Where it lives</th></tr></thead>
   <tbody>
-    <tr><td>Brochure site that rarely changes</td><td>Weekly, plus before every update</td></tr>
-    <tr><td>Business site with a regular blog</td><td>Daily</td></tr>
-    <tr><td>WooCommerce store taking orders</td><td>Daily or more often (orders change constantly)</td></tr>
+    <tr><td>Database</td><td>Pages, posts, products, orders, customers, users, menus, widget and plugin settings</td><td>MySQL or MariaDB on your host</td></tr>
+    <tr><td>wp-content folder</td><td>Your theme, plugins and the uploads folder (images, PDFs, other media)</td><td>public_html/wp-content, or wherever WordPress is installed</td></tr>
+    <tr><td>wp-config.php</td><td>Database details, security keys and custom settings</td><td>The main WordPress folder</td></tr>
+    <tr><td>.htaccess and other root files</td><td>Redirects, rewrite rules, server tweaks, verification files</td><td>The main WordPress folder</td></tr>
   </tbody>
 </table>
-<p>Always take a backup immediately before updates, redesigns or migrations.</p>
+<p>WordPress core files can be downloaded again at any time, so most backup plugins skip them. What you can't replace is the database and wp-content. A files-only backup loses your content and settings; a database-only backup loses your images, theme and plugins.</p>
 
-<p>If scheduled backups sometimes don't run on time, WordPress's built-in scheduler may be the reason; see <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</p>
+<h2>The 3-2-1 rule, applied to websites</h2>
+<p>The 3-2-1 rule comes from general IT practice: keep <strong>three</strong> copies of your data, on <strong>two</strong> different kinds of storage, with <strong>one</strong> copy off-site. For a WordPress site, that usually looks like this:</p>
+<ol>
+  <li><strong>The live site itself,</strong> plus your host's automatic backups.</li>
+  <li><strong>A plugin or service backup</strong> stored outside your hosting account: Google Drive, Dropbox, Amazon S3 or the service's own servers.</li>
+  <li><strong>An occasional downloaded copy</strong> kept in a separate account you control, especially before big changes.</li>
+</ol>
+<p>The off-site copy is the one that matters most. If your hosting account is suspended, hacked, deleted over an unpaid bill or lost to a server failure, backups stored in that same account can go with it.</p>
 
-<h2>Where to store backups</h2>
+<h2>How often to back up, and how long to keep copies</h2>
+<table>
+  <thead><tr><th>Type of site</th><th>Backup frequency</th><th>Keep copies for</th></tr></thead>
+  <tbody>
+    <tr><td>Brochure site that rarely changes</td><td>Weekly, plus before every update</td><td>At least a month</td></tr>
+    <tr><td>Business site with a regular blog</td><td>Daily</td><td>2 to 4 weeks</td></tr>
+    <tr><td>WooCommerce store or booking site</td><td>Daily at minimum; more often, or real-time, for busy stores</td><td>About a month</td></tr>
+    <tr><td>Any site, before updates, redesigns or migrations</td><td>A fresh manual backup</td><td>Until the change is confirmed working</td></tr>
+  </tbody>
+</table>
+<p>Retention matters as much as frequency. Hacks and broken content are often noticed days or weeks later, and if you only keep the last three nightly backups, all three may contain the problem. The backup before an update is the one you'll reach for most often; <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a> shows where it fits.</p>
+
+<h2>Your backup options</h2>
 <ul>
-  <li><strong>Off-site:</strong> cloud storage such as Google Drive, Dropbox or Amazon S3, not only on the same server. If the server fails or is hacked, backups stored there can be lost too.</li>
-  <li><strong>Multiple copies:</strong> keep several recent backups, not just the latest, in case a problem went unnoticed for a few days.</li>
-  <li><strong>Secure:</strong> backups contain your data, so protect access to them.</li>
+  <li><strong>Host backups.</strong> Most hosts take automatic backups; Hostinger shows them in hPanel and many Indian cPanel hosts use JetBackup. They're convenient for quick restores, but check how often they run and how long they're kept on your plan, and remember they live with the host.</li>
+  <li><strong>UpdraftPlus.</strong> The free version schedules file and database backups, sends them to Google Drive, Dropbox and other storage, and restores from the dashboard. Paid add-ons add things like incremental backups and migration.</li>
+  <li><strong>BlogVault.</strong> A paid service that stores backups on its own servers, backs up incrementally to reduce server load, and can restore a site even when it won't load.</li>
+  <li><strong>Jetpack VaultPress Backup.</strong> Automattic's paid backup service, with real-time backups on some plans and restores from your WordPress.com account.</li>
+  <li><strong>Duplicator or All-in-One WP Migration.</strong> Better suited to making a one-off archive or moving a site than to daily scheduled backups.</li>
 </ul>
+<p>Features and pricing change, so check the current plans at the time you choose. If you're weighing BlogVault against Jetpack, or either against UpdraftPlus, <a href="/blog/wordpress-backup-plugins-compared/">WordPress backup plugins compared</a> goes through the trade-offs in detail.</p>
 
-<h2>Ways to back up WordPress</h2>
+<h2>Setting up automatic backups with UpdraftPlus</h2>
 <ol>
-  <li><strong>Hosting backups:</strong> many hosts take automatic daily backups. Check how long they keep them and how to restore.</li>
-  <li><strong>Backup plugins:</strong> schedule automatic backups to cloud storage and restore with a few clicks.</li>
-  <li><strong>Managed maintenance:</strong> a developer handles backups, monitoring and restores for you.</li>
+  <li>Install and activate UpdraftPlus from Plugins &gt; Add New.</li>
+  <li>Go to Settings &gt; UpdraftPlus Backups and open the Settings tab.</li>
+  <li>Set a schedule for files and one for the database, and how many copies of each to keep. On a store, the database can run more often than the files.</li>
+  <li>Choose remote storage, such as Google Drive, and follow the steps to connect it. Use a Google account the business owns, not a personal one that might leave with an employee.</li>
+  <li>Exclude cache folders and other backup plugins' folders, so you're not backing up backups.</li>
+  <li>Save, then click "Backup Now" and confirm the files actually appear in your Google Drive.</li>
 </ol>
+<p>If scheduled backups don't run on time, the cause is often WordPress's built-in scheduler, which only fires when someone visits the site; see <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</p>
 
-<p>For a closer look at host backups versus tools such as UpdraftPlus, BlogVault and Duplicator, see <a href="/blog/wordpress-backup-plugins-compared/">WordPress backup plugins compared</a>.</p>
-
-<h2>How to restore safely</h2>
+<h2>How to restore a WordPress backup</h2>
+<h3>Before you restore</h3>
+<ul>
+  <li><strong>Pick the right backup:</strong> the latest one taken before the problem started, not simply the newest.</li>
+  <li><strong>Back up the broken site first.</strong> If the restore goes wrong, or you need something from the current version later, you still have it.</li>
+  <li><strong>On a store, note the time of the backup.</strong> Orders, customers and stock changes since then aren't in it (see below).</li>
+  <li><strong>After a hack, don't just restore.</strong> The backup still contains whatever weakness let the attacker in, and may contain the malware itself if it was taken after the infection; see <a href="/blog/remove-malware-wordpress-step-by-step/">removing WordPress malware step by step</a>.</li>
+</ul>
+<h3>Restore with your backup plugin</h3>
+<p>In UpdraftPlus, open the Existing Backups list, click Restore next to the backup you want, and choose which parts to restore: database, plugins, themes, uploads or others. Restoring only the part that broke, such as plugins after a bad update, is faster and leaves the rest of the site untouched. Services like BlogVault and Jetpack restore from their own dashboards, which helps when WordPress itself won't load.</p>
+<h3>Restore from your hosting panel</h3>
+<p>Host restores are often the quickest route when you can't get into WordPress. In hPanel or a cPanel tool such as JetBackup, pick the date and choose files, database or both. Some hosts restore the whole account, including email, so read the options before you click.</p>
+<h3>Restore manually</h3>
+<p>If neither of those works, you can restore by hand with File Manager or SFTP and phpMyAdmin:</p>
 <ol>
-  <li>Stay calm and don't make more changes to the broken site</li>
-  <li>Pick the most recent backup from before the problem started</li>
-  <li>If possible, restore to a staging site first to check it works</li>
-  <li>Restore files and database, then test key pages, forms and checkout</li>
-  <li>For hacked sites, clean and secure the site too. Restoring alone may bring the vulnerability back. See <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>.</li>
+  <li>Upload the backed-up wp-content folder and wp-config.php, replacing the broken versions.</li>
+  <li>In phpMyAdmin, select the site's database, drop or empty the existing tables, then use the Import tab to upload the .sql file from your backup.</li>
+  <li>Check that the database name, user, password and table prefix in wp-config.php match the database you imported into.</li>
+  <li>If the domain or folder has changed, update the site URLs with a proper search-replace tool rather than editing the database by hand.</li>
 </ol>
+<p>Large databases can exceed phpMyAdmin's upload limit. With SSH access, WP-CLI handles exports and imports of any size:</p>
+<pre><code>wp db export before-restore.sql
+wp db import backup-2026-10-01.sql
+wp cache flush</code></pre>
+<h3>After restoring</h3>
+<p>Re-save permalinks in Settings &gt; Permalinks, clear every cache, then check key pages on a phone, submit each form, log in and, on a store, place a test order. If the site was hacked, change all passwords as well.</p>
 
-<p>A <a href="/blog/staging-sites-explained/">staging site</a> is the ideal place to test restores.</p>
+<h2>Restoring a WooCommerce store without losing orders</h2>
+<p>A full restore puts the database back to the moment of the backup, so every order, customer account and stock change since then disappears. On a busy store, that's a real loss. Safer options, in order:</p>
+<ul>
+  <li>Roll back the single plugin or theme that caused the problem, or restore only the files.</li>
+  <li>If the database must be restored, put the shop into maintenance mode first, export recent orders, and re-enter them afterwards.</li>
+  <li>Restore to a staging copy, check it, and move only what's needed to the live store.</li>
+</ul>
+<p>This is why stores benefit from more frequent backups and from testing updates on <a href="/blog/staging-sites-explained/">a staging site</a> before they reach customers.</p>
 
 <h2>Test your backups</h2>
-<p>A backup you've never restored is a backup you can't fully trust. Every few months, restore a copy to a staging site and check it works.</p>
+<p>Backups fail quietly: storage fills up, a cloud connection expires, or a schedule stops running after a plugin update. Every quarter, restore a recent backup to a staging site or a spare subdomain and check that pages, images, forms and logins work. While you're there, confirm the backup files are a sensible size; a backup that's suddenly much smaller than usual is a warning sign.</p>
 
-<h2>Checklist</h2>
+<h2>Backup mistakes to avoid</h2>
 <ul>
-  <li>Automatic backups of files and database</li>
-  <li>Stored off-site, with several copies kept</li>
-  <li>Extra backup before every update</li>
-  <li>Restore tested every few months</li>
+  <li>Keeping every copy on the same server as the site</li>
+  <li>Backing up the database but not the uploads folder, or the other way round</li>
+  <li>Never testing a restore</li>
+  <li>Leaving backup archives in a public folder, where anyone who guesses the file name can download your database</li>
+  <li>Letting the Google Drive or Dropbox account fill up, so new backups silently fail</li>
+  <li>Storing backups in an account that belongs to a former developer or employee</li>
 </ul>
+<p>Backups are one part of being ready for a bad day; <a href="/blog/website-disaster-recovery-plan/">a simple website disaster recovery plan</a> covers logins, contacts and who does what.</p>
 
-<p>Backups are the first item in any good <a href="/wordpress-maintenance/">maintenance plan</a>. See also the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>.</p>
+<h2>FAQs</h2>
+<h3>Are my hosting company's backups enough?</h3>
+<p>They're a good first layer, but not enough on their own. They're stored with the host, so a suspended or compromised account can take them too, and retention on cheaper plans can be short. Add an off-site backup you control.</p>
+<h3>How often should I back up my WordPress site?</h3>
+<p>Weekly for a site that rarely changes, daily for an active business site, and daily or more often for a store, plus a fresh backup before every update. Keep copies for a few weeks, not just a few days.</p>
+<h3>Can I restore a backup if I can't log in to WordPress?</h3>
+<p>Yes. Restore from your hosting panel, from a service like BlogVault or Jetpack that works outside WordPress, or manually by uploading the files and importing the database in phpMyAdmin.</p>
+<h3>Should I restore a backup after my site is hacked?</h3>
+<p>Only as part of a cleanup. A backup from before the hack removes the malware, but not the outdated plugin or stolen password that let it in, so the site can be reinfected within days.</p>
+<h3>Does a backup include my emails?</h3>
+<p>Usually not. WordPress backups cover the website's files and database. Email hosted with your web host, Google Workspace or Zoho is stored separately and needs its own backup arrangement.</p>
+
+<p>If you'd rather know your backups are running, stored off-site and restorable without checking yourself, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include regular off-site backups kept separate from your hosting. You can ask for a copy at any time, and you take the latest one with you if you ever leave. For the full monthly routine, see the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>.</p>
 `,
   },
   {
@@ -8552,53 +8650,123 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'uptime-monitoring-explained',
-    seoTitle: 'Uptime Monitoring Explained for Business Websites',
-    title: 'Uptime Monitoring Explained: Know When Your Website Goes Down',
-    description: 'Uptime monitoring for business websites: what to monitor, from forms and checkout to SSL and domain expiry, how alerts work and what to do during an outage.',
+    seoTitle: 'Uptime Monitoring Explained: Tools, Intervals and Alerts',
+    title: 'Uptime Monitoring Explained: How to Know Your Website Is Down Before Your Customers Do',
+    description: 'Website uptime monitoring explained: UptimeRobot, Better Stack and Jetpack Monitor, check intervals, keyword checks, and SSL and domain expiry alerts.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration', 'wordpress-malware-removal'],
     body: `
-<p>If your website goes down at night or over a weekend, how long before you notice? Often it's a customer who tells you, after they've already gone to a competitor. Uptime monitoring alerts you within minutes.</p>
+<p>Uptime monitoring is a service that checks your website from outside every few minutes and alerts you, by email, SMS or an app notification, when it stops responding properly. For a business site, set up at least a status check on the homepage, a keyword check on a key page such as contact or checkout, and alerts for SSL certificate and domain expiry. Free tools such as UptimeRobot, Better Stack and Jetpack Monitor are enough for most small sites.</p>
+<p>Without monitoring, the usual alarm is a customer telling you, often after a night or a weekend of lost enquiries. With it, you know within minutes and can act before most people notice. Uptime monitoring is included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, alongside backups and updates, but it takes minutes to set up yourself.</p>
 
-<h2>What uptime monitoring does</h2>
-<p>A monitoring service checks your website at regular intervals from outside, and alerts you by email, SMS or app notification if it doesn't respond properly.</p>
+<h2>How uptime monitoring works</h2>
+<p>The monitoring service sends a request to your site at a set interval, just as a visitor's browser would, and looks at the answer. If the site doesn't respond, responds with an error code such as 500 or 503, or takes too long, the service usually re-checks from another location to rule out a network blip. If the failure is confirmed, it alerts you, and alerts you again when the site recovers. It also keeps a log of every outage and of response times, which is useful evidence if you need to raise a problem with your host.</p>
+<p>Because the checks come from outside your hosting, they catch problems that the server itself can't report, such as an expired domain, a DNS mistake or the whole server being offline.</p>
 
-<h2>What to monitor</h2>
+<h2>Types of checks, and what each one catches</h2>
+<table>
+  <thead><tr><th>Check</th><th>What it catches</th><th>What it misses</th></tr></thead>
+  <tbody>
+    <tr><td>HTTP(S) status</td><td>Site unreachable, server errors such as 500, 502 and 503, DNS failures</td><td>Error pages that return a normal "200 OK" response</td></tr>
+    <tr><td>Keyword</td><td>Blank pages, critical errors, database errors and hacked pages that still "load"</td><td>Problems on pages you don't monitor</td></tr>
+    <tr><td>Response time</td><td>Slowdowns that often come before outages</td><td>How fast the page feels to visitors in a browser</td></tr>
+    <tr><td>SSL certificate expiry</td><td>Certificates about to expire, or failing to renew</td><td>Mixed content warnings on individual pages</td></tr>
+    <tr><td>Domain expiry</td><td>A domain renewal date approaching</td><td>Registrar billing problems</td></tr>
+    <tr><td>Heartbeat (cron)</td><td>A scheduled job, such as a backup, that stopped running</td><td>Whether the backup itself is usable</td></tr>
+  </tbody>
+</table>
+<p>The keyword check matters more than people expect. When WordPress shows "There has been a critical error", the server can still return a normal response, so a basic status check reports the site as up. A keyword check that looks for text from your page notices that it's missing. If you do get that error, <a href="/blog/fix-wordpress-critical-error/">fixing the critical error</a> explains what to do.</p>
+
+<h2>Choosing a check interval</h2>
 <ul>
-  <li><strong>Homepage availability:</strong> the basic "is it up?" check</li>
-  <li><strong>Key pages:</strong> contact page, top service pages, checkout for stores</li>
-  <li><strong>Specific content:</strong> checks that a page contains expected text, which catches "white screen" errors that still return a page</li>
-  <li><strong>SSL certificate expiry:</strong> before visitors see security warnings</li>
-  <li><strong>Domain expiry:</strong> so your domain never lapses</li>
-  <li><strong>Response time:</strong> sudden slowdowns often come before outages</li>
+  <li><strong>Every 5 minutes</strong> is the usual free interval and is fine for most brochure and service sites.</li>
+  <li><strong>Every 1 to 3 minutes</strong> suits online stores, booking sites and any site running paid ads, where each minute down costs money.</li>
+  <li><strong>Confirmation from several locations</strong> before alerting reduces false alarms caused by one network's hiccup. Most services do this by default.</li>
 </ul>
+<p>Shorter intervals don't prevent downtime; they shorten the time before you know about it. For a small business, the bigger win is making sure the alert reaches someone who can act on it.</p>
 
-<h2>Common causes of downtime</h2>
-<ul>
-  <li>Hosting outages or resource limits</li>
-  <li>Plugin or theme updates causing errors</li>
-  <li>Expired domains or SSL certificates</li>
-  <li>DNS changes gone wrong</li>
-  <li>Malware or attacks</li>
-</ul>
+<h2>Uptime monitoring tools compared</h2>
+<p>Plans change often, so treat this as a starting point and check current limits before you sign up.</p>
+<table>
+  <thead><tr><th>Tool</th><th>At the time of writing</th><th>Good for</th></tr></thead>
+  <tbody>
+    <tr><td>UptimeRobot</td><td>Free plan with checks every 5 minutes, including keyword checks; paid plans add shorter intervals, SSL and domain alerts and SMS</td><td>Most small business sites, and anyone looking after several sites</td></tr>
+    <tr><td>Better Stack</td><td>Free tier with a small number of monitors and a status page; paid plans add phone and SMS alerts and on-call scheduling</td><td>Teams, and sites that want a public status page</td></tr>
+    <tr><td>Jetpack Monitor</td><td>Free with the Jetpack plugin, checking every 5 minutes; paid upgrades add faster checks and SMS</td><td>WordPress owners who already use Jetpack</td></tr>
+    <tr><td>Hosting dashboards</td><td>Some hosts show uptime and send alerts</td><td>A second opinion, not a replacement, since they monitor from inside</td></tr>
+    <tr><td>Paid services such as Pingdom or StatusCake</td><td>Paid plans with detailed reports and transaction checks</td><td>Larger stores and business-critical sites</td></tr>
+  </tbody>
+</table>
 
-<h2>What to do when your site goes down</h2>
+<h2>How to set up monitoring for a business website</h2>
 <ol>
-  <li>Check whether it's down for everyone or just you</li>
-  <li>Check your hosting status page and account (resource limits, suspension notices)</li>
-  <li>If it followed an update, roll back or restore; see <a href="/blog/update-wordpress-safely/">updating WordPress safely</a></li>
-  <li>Check domain and SSL expiry</li>
-  <li>Contact your host or developer with the time it started and any error messages</li>
+  <li><strong>Monitor the homepage</strong> with an HTTPS check, using the exact address visitors use, including or excluding www.</li>
+  <li><strong>Add a keyword check</strong> on your most important page: the contact page for a service business, a product or checkout page for a store.</li>
+  <li><strong>Turn on SSL certificate expiry alerts,</strong> so a failed auto-renewal is caught before browsers start showing warnings; see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a>.</li>
+  <li><strong>Turn on domain expiry alerts,</strong> or at least put the renewal date in a shared calendar. An expired domain takes down the website and email together; see <a href="/blog/domain-expired-what-to-do/">what to do when your domain expires</a>.</li>
+  <li><strong>Set up alert contacts.</strong> At least two people, with email plus an app notification or SMS for the person who can act fastest. Avoid sending alerts only to a shared inbox nobody watches at night.</li>
+  <li><strong>Add maintenance windows</strong> for planned work, so you don't get alerts during updates you're doing yourself.</li>
+  <li><strong>Test it.</strong> Temporarily point a monitor at a page that doesn't exist and confirm the alert arrives on every channel.</li>
+  <li><strong>Choose a location</strong> close to your visitors if the tool lets you. A site for Indian customers is best checked from India or nearby, as well as from elsewhere.</li>
 </ol>
 
-<p>Full checklist: <a href="/blog/website-down-what-to-do/">website down? what to check, step by step</a>.</p>
+<h2>Picking a good keyword</h2>
+<p>Choose text that only appears when the page has loaded properly, and that you won't change often:</p>
+<ul>
+  <li>Your business name or phone number in the footer, which loads last</li>
+  <li>"Add to cart" on a product page, or a label on the checkout form</li>
+  <li>The heading of your contact form</li>
+</ul>
+<p>Some tools can also alert when a keyword <em>appears</em>, which is handy for phrases such as "critical error" or "Error establishing a database connection". Avoid text that changes daily, such as prices or dates, or you'll get false alarms.</p>
 
-<h2>Uptime vs other monitoring</h2>
-<p>Uptime monitoring tells you the site is up; it doesn't confirm that forms deliver email or payments complete. Test those regularly too; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+<h2>What uptime percentages really mean</h2>
+<p>Hosts often advertise "99.9% uptime". Here's what different figures allow in a 30-day month:</p>
+<table>
+  <thead><tr><th>Uptime</th><th>Downtime allowed per month</th></tr></thead>
+  <tbody>
+    <tr><td>99%</td><td>About 7 hours 12 minutes</td></tr>
+    <tr><td>99.5%</td><td>About 3 hours 36 minutes</td></tr>
+    <tr><td>99.9%</td><td>About 43 minutes</td></tr>
+    <tr><td>99.95%</td><td>About 22 minutes</td></tr>
+    <tr><td>99.99%</td><td>About 4 minutes</td></tr>
+  </tbody>
+</table>
+<p>A host's guarantee usually means a partial refund or credit if they miss it, and often excludes planned maintenance and problems caused by your own site. Your monitoring log is how you'd know whether the promise was kept.</p>
 
-<h2>Is it worth it?</h2>
-<p>Basic monitoring is inexpensive or free and takes minutes to set up. For any business that relies on its website for leads or sales, it's essential. It's included in <a href="/wordpress-maintenance/">maintenance plans</a> alongside backups and updates.</p>
+<h2>When an alert arrives</h2>
+<ol>
+  <li>Open the site on your phone using mobile data, to confirm it's really down.</li>
+  <li>Read the error the monitor recorded: a timeout, a DNS failure, a 5xx error or a missing keyword each point somewhere different.</li>
+  <li>Check the host's status page and your email for suspension or resource warnings.</li>
+  <li>Think about what changed recently, such as updates or DNS changes.</li>
+  <li>Contact your host or developer with the time it started and the error.</li>
+</ol>
+<p>The full sequence, from DNS to restoring a backup, is in <a href="/blog/website-down-what-to-do/">website down? what to check, step by step</a>.</p>
+
+<h2>What uptime monitoring doesn't tell you</h2>
+<ul>
+  <li><strong>Whether forms deliver.</strong> A contact form can show its thank-you message while every email disappears. Send a test enquiry regularly; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop sending enquiries</a>.</li>
+  <li><strong>Whether checkout works.</strong> A store can be "up" while payments fail. Place test orders after updates.</li>
+  <li><strong>Whether the site is hacked.</strong> Spam pages and redirects shown only to Google or mobile visitors leave the homepage looking normal; see <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site has been hacked</a>.</li>
+  <li><strong>Whether backups are restorable.</strong> A heartbeat monitor can confirm a backup job ran, not that it can be restored.</li>
+</ul>
+<p>That's why monitoring is one line of a wider routine; the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> covers the rest.</p>
+
+<h2>FAQs</h2>
+<h3>Is free uptime monitoring good enough?</h3>
+<p>For most small business sites, yes. A free plan checking every five minutes, with a keyword check and email or app alerts, covers the basics. Stores and sites running ads benefit from shorter intervals and SMS alerts on a paid plan.</p>
+<h3>How often should uptime be checked?</h3>
+<p>Every five minutes is fine for brochure and service sites. Every one to three minutes makes sense for online stores, booking sites and sites running paid campaigns.</p>
+<h3>Why did I get a down alert when my site was working?</h3>
+<p>Usually a short network blip, a brief server overload, a firewall blocking the monitor's IP address, or a keyword that changed on the page. If false alarms repeat, check the monitor's log and whether your security plugin or host is blocking it.</p>
+<h3>Doesn't my hosting company monitor my site?</h3>
+<p>Hosts monitor their servers, not whether your particular site, domain and SSL certificate are working. A plugin error or an expired domain won't show up on their dashboard, so independent monitoring is still worth having.</p>
+<h3>Will uptime monitoring slow my website down?</h3>
+<p>No. A single request every few minutes is far less than normal visitor traffic. If your security plugin blocks the monitor, add its IP addresses to the allow list rather than switching the monitor off.</p>
+
+<p>If you'd rather have someone else watching, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include uptime monitoring, regular off-site backups, security scans and a monthly report, so problems are caught early and the site can be restored quickly if needed. For the renewals that cause many outages, see the <a href="/blog/domain-hosting-renewal-checklist/">domain and hosting renewal checklist</a>.</p>
 `,
   },
   {
@@ -9202,57 +9370,135 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'common-wordpress-errors-fixes',
-    seoTitle: 'Common WordPress Errors and How to Fix Them',
-    title: 'Common WordPress Errors Explained (and What to Do About Them)',
-    description: 'Common WordPress errors and safe first fixes: white screen, critical error, 500 and database connection errors, 404s and maintenance mode, in plain English.',
+    seoTitle: 'Common WordPress Errors and How to Fix Them: Full List',
+    title: 'Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start',
+    description: 'Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
-<p>Few things are more stressful than opening your website and seeing an error instead of your homepage. Most WordPress errors have common causes and safe fixes. Here's what they mean and what to do first. If you're not comfortable with technical steps, share this with your developer.</p>
+<p>Most WordPress errors come from a small set of causes: a plugin or theme with faulty code, a server limit such as memory or PHP version, a database problem, a broken configuration file such as .htaccess, or an SSL or DNS setting. For any error, the safe first steps are the same: stop changing things, note what changed just before it started, take a backup, then read the recovery mode email or the error log so you know the real cause before you fix it.</p>
+<p>This page is the map. The table below matches each common error to its usual cause and first fix, and each section links to a step-by-step guide for that error. If you'd rather not deal with errors at all, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update and test the site afterwards, so problems are caught and rolled back quickly.</p>
 
-<h2>"There has been a critical error on this website"</h2>
-<p><strong>Usually:</strong> a plugin or theme conflict, often right after an update.<br><strong>First steps:</strong> check the site admin's email for WordPress's recovery mode link, which lets you log in and deactivate the faulty plugin. Otherwise, a developer can disable plugins via hosting file access.</p>
+<h2>Quick reference: WordPress errors, causes and first fixes</h2>
+<table>
+  <thead><tr><th>Error or symptom</th><th>Usually caused by</th><th>First thing to try</th></tr></thead>
+  <tbody>
+    <tr><td>"There has been a critical error on this website"</td><td>A PHP fatal error in a plugin or theme</td><td>Use the recovery mode email sent to the admin address</td></tr>
+    <tr><td>White screen, blank page</td><td>A PHP error with error display switched off, or memory</td><td>Turn on WP_DEBUG_LOG and read the log</td></tr>
+    <tr><td>500 Internal Server Error</td><td>Corrupt .htaccess, a plugin fatal error or a server limit</td><td>Check the server error log; rename .htaccess</td></tr>
+    <tr><td>"Error establishing a database connection"</td><td>Database server down, wrong details in wp-config.php, corrupted tables</td><td>Check the host's status, then the database details</td></tr>
+    <tr><td>502 Bad Gateway, 504 Gateway Timeout</td><td>PHP too slow or overloaded, Cloudflare or proxy issues</td><td>Check resource usage; ask the host about PHP workers</td></tr>
+    <tr><td>"Briefly unavailable for scheduled maintenance"</td><td>An interrupted update</td><td>Delete the .maintenance file, then re-run the update</td></tr>
+    <tr><td>"Allowed memory size exhausted"</td><td>A plugin or task needing more memory than allowed</td><td>Raise WP_MEMORY_LIMIT, then find the heavy plugin</td></tr>
+    <tr><td>403 Forbidden</td><td>Security plugin or firewall rules, file permissions, .htaccess</td><td>Check whether a firewall blocked you; check permissions</td></tr>
+    <tr><td>404 on pages that exist</td><td>Broken permalinks or rewrite rules</td><td>Settings &gt; Permalinks &gt; Save Changes</td></tr>
+    <tr><td>ERR_TOO_MANY_REDIRECTS</td><td>Conflicting HTTPS or www redirects, Cloudflare SSL mode</td><td>Check the site URLs and the Cloudflare SSL setting</td></tr>
+    <tr><td>"Not secure" or certificate warnings</td><td>Expired SSL certificate or mixed content</td><td>Reissue the certificate; fix http links</td></tr>
+    <tr><td>HTTP error when uploading images</td><td>Image size, memory or upload limits, a security rule</td><td>Resize the image; check upload and memory limits</td></tr>
+    <tr><td>Can't log in, or the login page reloads</td><td>Cookies, a security plugin, wrong site URL, caching</td><td>Clear cookies; disable the security plugin via File Manager</td></tr>
+    <tr><td>Update failed</td><td>File permissions, disk space, timeouts, a missing licence</td><td>Check disk space and permissions; update manually</td></tr>
+  </tbody>
+</table>
 
-<p>Step-by-step guide: <a href="/blog/fix-wordpress-critical-error/">how to fix "There has been a critical error"</a>.</p>
+<h2>First steps for any WordPress error</h2>
+<ol>
+  <li><strong>Stop.</strong> Don't keep clicking update, reinstalling plugins or changing settings at random. Each change makes the cause harder to trace.</li>
+  <li><strong>Note what changed</strong> in the last day or two: updates, new plugins, code edits, a PHP switch, a hosting move, DNS changes.</li>
+  <li><strong>Take a backup</strong> from your hosting panel if the site is accessible enough to allow it.</li>
+  <li><strong>Check the admin inbox</strong> for WordPress's recovery mode email, which names the plugin or theme that failed.</li>
+  <li><strong>Read the error log.</strong> Your hosting panel's error log, or WordPress's own debug log, usually names the exact file and line.</li>
+  <li><strong>Isolate the cause.</strong> Disable plugins by renaming the plugins folder over File Manager or SFTP, then switch to a default theme if needed.</li>
+  <li><strong>Ask your host</strong> if the log points to the server, such as memory, disk space or timeouts.</li>
+</ol>
+<p>To make WordPress write errors to wp-content/debug.log without showing them to visitors, add this to wp-config.php, and remove it once you're done:</p>
+<pre><code>define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 
-<h2>White screen (blank page)</h2>
-<p><strong>Usually:</strong> a PHP error or exhausted memory.<br><strong>First steps:</strong> think about what changed recently (update, new plugin). Restore the last backup or disable the latest plugin. Your host can check error logs.</p>
+<h2>Errors that take the whole site down</h2>
+<h3>"There has been a critical error on this website"</h3>
+<p>WordPress caught a PHP fatal error, most often right after a plugin, theme or PHP update. The admin email contains a recovery mode link that lets you log in and deactivate the faulty plugin. Step by step: <a href="/blog/fix-wordpress-critical-error/">how to fix "There has been a critical error"</a>.</p>
+<h3>White screen of death</h3>
+<p>A completely blank page is the same kind of PHP failure, with error display switched off or memory exhausted before anything could load. See <a href="/blog/wordpress-white-screen-of-death/">the WordPress white screen of death</a>.</p>
+<h3>500 Internal Server Error</h3>
+<p>A generic server-side failure. The usual suspects are a corrupt .htaccess file, a plugin fatal error, the wrong PHP version or a server limit. The server error log usually says which; see <a href="/blog/wordpress-500-internal-server-error-fix/">how to fix a 500 Internal Server Error</a>.</p>
+<h3>Error establishing a database connection</h3>
+<p>WordPress can't reach its database. Check first whether the host's database server is down, then whether the database name, user, password and host in wp-config.php are right, which is the usual cause after a migration. Tables can also become corrupted. Full guide: <a href="/blog/error-establishing-database-connection-fix/">how to fix "Error establishing a database connection"</a>.</p>
+<h3>502 and 504 gateway errors</h3>
+<p>The web server waited for PHP and gave up, usually because PHP workers were busy with slow requests, a plugin called a slow outside service, or Cloudflare couldn't get a timely answer. See <a href="/blog/wordpress-502-504-gateway-timeout-fix/">fixing 502 and 504 errors</a>.</p>
+<h3>Stuck in maintenance mode</h3>
+<p>WordPress creates a temporary .maintenance file during updates and deletes it afterwards. If the update was interrupted, the file stays and every visitor sees "Briefly unavailable for scheduled maintenance". See <a href="/blog/wordpress-stuck-in-maintenance-mode/">WordPress stuck in maintenance mode</a>.</p>
 
-<p>Suspect a plugin but not sure which one? See <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find and fix WordPress plugin conflicts</a>.</p>
+<h2>Memory, upload and permission errors</h2>
+<h3>WordPress memory errors</h3>
+<p>"Allowed memory size of ... bytes exhausted" means a PHP process needed more memory than the limit allows. WordPress can request more with WP_MEMORY_LIMIT in wp-config.php, but not above the server's own memory_limit. If raising it only delays the error, a plugin or import is the real problem. See <a href="/blog/wordpress-memory-limit-errors/">fixing memory limit errors</a>.</p>
+<h3>HTTP error on image upload</h3>
+<p>The media uploader's vague "HTTP error" usually comes down to a very large image, memory, an upload limit or a security rule. See <a href="/blog/wordpress-http-error-image-upload-fix/">fixing the HTTP error when uploading images</a>, and <a href="/blog/increase-wordpress-upload-size-limit/">increasing the upload size limit</a> if the file is simply too big.</p>
+<h3>403 Forbidden</h3>
+<p>The server understood the request but refused it. Common reasons are a security plugin or host firewall blocking your IP, wrong file permissions, or a bad rule in .htaccess. See <a href="/blog/wordpress-403-forbidden-error-fix/">how to fix a 403 Forbidden error</a>.</p>
 
-<h2>500 Internal Server Error</h2>
-<p><strong>Usually:</strong> a server configuration issue, corrupted .htaccess file, plugin error or hosting resource limits.<br><strong>First steps:</strong> check your hosting account for resource warnings and ask your host for the error log, which tells you exactly what failed.</p>
+<h2>URL, redirect and SSL errors</h2>
+<ul>
+  <li><strong>404s on pages that exist:</strong> usually broken rewrite rules after a migration or a plugin change. Re-saving permalinks fixes most cases; see <a href="/blog/wordpress-pages-404-permalinks-fix/">pages returning 404</a>.</li>
+  <li><strong>Too many redirects:</strong> two systems disagree about https or www, often WordPress and Cloudflare's SSL mode, or a redirect plugin and the server; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a>.</li>
+  <li><strong>Certificate and "Not secure" warnings:</strong> an expired or mismatched certificate, or images and scripts still loading over http; see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a>.</li>
+</ul>
 
-<p>Step-by-step guide: <a href="/blog/wordpress-500-internal-server-error-fix/">how to fix a 500 Internal Server Error</a>, including how to read the error log and enable WP_DEBUG_LOG safely.</p>
+<h2>Dashboard and update errors</h2>
+<ul>
+  <li><strong>Login not working:</strong> the login page reloads, rejects a correct password or redirects in a loop. Cookies, caching, a security plugin or a wrong site URL are the usual causes; see <a href="/blog/wordpress-login-not-working-fix/">WordPress login not working</a>.</li>
+  <li><strong>Update failed:</strong> "Update failed", "Could not create directory" or "Download failed" usually means file permissions, low disk space, a timeout or an inactive premium licence; see <a href="/blog/wordpress-update-failed-fix/">fixing failed WordPress updates</a>.</li>
+</ul>
 
-<h2>"Error establishing a database connection"</h2>
-<p><strong>Usually:</strong> the database server is down, the database credentials changed, or the database is corrupted.<br><strong>First steps:</strong> check your host's status page. If the host is fine, the database details in the site's configuration may need correcting. This often appears after migrations.</p>
+<h2>Problems with no error message</h2>
+<p>Some of the most costly problems show no error at all:</p>
+<ul>
+  <li><strong>Forms that stop sending.</strong> The thank-you message appears, but no email arrives. This is usually email delivery, fixed with SMTP; see <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a>.</li>
+  <li><strong>Changes that don't show.</strong> Almost always a cache: your caching plugin, the host or a CDN; see <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>.</li>
+  <li><strong>Something broke after installing or updating a plugin,</strong> but only on certain pages. That's a conflict; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">finding and fixing plugin conflicts</a>.</li>
+  <li><strong>Checkout failing on a store.</strong> See <a href="/blog/woocommerce-checkout-not-working-fix/">WooCommerce checkout not working</a>.</li>
+</ul>
+<p>If the whole site has gone offline and you're not sure the problem is WordPress at all, start with <a href="/blog/website-down-what-to-do/">website down? what to check, step by step</a>, which covers the domain, DNS, hosting and SSL first.</p>
 
-<p>Step-by-step guide: <a href="/blog/error-establishing-database-connection-fix/">how to fix "Error establishing a database connection"</a>.</p>
+<h2>Fix it yourself, or call someone?</h2>
+<table>
+  <thead><tr><th>Usually fine to try yourself</th><th>Worth getting help</th></tr></thead>
+  <tbody>
+    <tr><td>Re-saving permalinks</td><td>Editing wp-config.php or .htaccess without a backup</td></tr>
+    <tr><td>Clearing caches</td><td>Database repairs and search-replace</td></tr>
+    <tr><td>Using the recovery mode link</td><td>Errors that return after you've disabled every plugin</td></tr>
+    <tr><td>Deactivating a plugin from the dashboard</td><td>A store where a restore would lose orders</td></tr>
+    <tr><td>Asking your host for the error log</td><td>Unfamiliar files, redirects to spam, or Google warnings</td></tr>
+  </tbody>
+</table>
 
-<h2>404 errors on pages that should exist</h2>
-<p><strong>Usually:</strong> permalink settings or redirects broke after a change or migration.<br><strong>First steps:</strong> re-save permalinks (Settings → Permalinks → Save). If URLs changed, set up 301 redirects; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
-
-<h2>"Briefly unavailable for scheduled maintenance"</h2>
-<p><strong>Usually:</strong> an update was interrupted.<br><strong>First steps:</strong> a leftover maintenance file needs removing via hosting file access, then the interrupted update should be re-run.</p>
-
-<p>Step-by-step guide: <a href="/blog/wordpress-stuck-in-maintenance-mode/">how to fix WordPress stuck in maintenance mode</a>.</p>
-
-<h2>Browser security warnings</h2>
-<p><strong>Usually:</strong> an SSL certificate problem, or Google has flagged malware.<br><strong>First steps:</strong> see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> and <a href="/blog/signs-wordpress-site-hacked/">signs your site is hacked</a>.</p>
+<h2>How to prevent most WordPress errors</h2>
+<ul>
+  <li>Take a backup before every update, and keep copies off the server; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a></li>
+  <li>Update one important plugin at a time and test big updates on staging; see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a></li>
+  <li>Keep PHP on a supported version, after checking compatibility</li>
+  <li>Delete plugins and themes you don't use, and replace abandoned ones</li>
+  <li>Use uptime monitoring, so you hear about errors before customers do</li>
+  <li>Keep the admin email current, so recovery mode emails reach someone</li>
+</ul>
 
 <p>Warnings caused by a hack? See <a href="/blog/remove-malware-wordpress-step-by-step/">removing WordPress malware step by step</a>.</p>
 
-<h2>Golden rules when something breaks</h2>
-<ol>
-  <li>Don't keep clicking update or changing settings at random</li>
-  <li>Note what changed just before the error</li>
-  <li>Check your backups; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a></li>
-  <li>Get error logs from your host, because they usually point to the cause</li>
-</ol>
+<h2>FAQs</h2>
+<h3>What is the most common WordPress error?</h3>
+<p>The critical error and its relatives, the white screen and the 500 error, are among the most common. All three usually come down to a plugin or theme failing after an update or a PHP version change.</p>
+<h3>How do I find out what's causing a WordPress error?</h3>
+<p>Check the recovery mode email first, then the error log in your hosting panel or WordPress's debug.log. The log names the file that failed, and the folder in its path tells you which plugin or theme it belongs to.</p>
+<h3>Will deactivating plugins delete my settings or content?</h3>
+<p>No. Deactivating a plugin, or renaming its folder, keeps its settings in the database. Deleting a plugin from the dashboard can remove its data, depending on the plugin, so deactivate while troubleshooting rather than delete.</p>
+<h3>Can WordPress errors hurt my Google rankings?</h3>
+<p>A short outage usually doesn't. If Google keeps getting server errors for days, it slows down crawling and can eventually drop affected pages from results. Fix errors quickly, then check the Pages report in Search Console.</p>
+<h3>Why do WordPress errors so often appear after updates?</h3>
+<p>Because an update changes code that other plugins, your theme or your PHP version depend on. Updating one thing at a time, after a backup, means you know exactly what to roll back.</p>
 
-<p>Most of these errors are prevented by careful updates, backups and monitoring; see <a href="/blog/update-wordpress-safely/">updating WordPress safely</a> and <a href="/wordpress-maintenance/">maintenance plans</a>.</p>
+<p>Most of these errors are preventable with careful updates, backups and monitoring, and quick to fix when someone knows the site. If you'd like that handled every month, see my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 `,
   },
   {
@@ -10871,54 +11117,134 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-maintenance-vs-management',
-    seoTitle: 'Website Maintenance vs Website Management',
-    title: 'Website Maintenance vs Website Management: What\'s the Difference?',
-    description: 'Website maintenance vs management: keeping your site safe and working versus updating content, SEO and improvements, and which one your business needs.',
+    seoTitle: 'Website Maintenance vs Website Management: The Difference',
+    title: 'Website Maintenance vs Website Management: What Each Covers and Which Your Business Needs',
+    description: 'Website maintenance vs management: keeping a site secure and working versus growing it with content, SEO and improvements, and which one you need.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-seo-services', 'website-redesign'],
     body: `
-<p>When businesses look for ongoing website help, they often see "maintenance" and "management" used interchangeably. They're different, and knowing which you need helps you choose the right plan and avoid paying for the wrong thing.</p>
+<p>Website maintenance keeps your site secure, backed up, updated and working: plugin and WordPress updates, backups, security scans, uptime monitoring and fixing what breaks. Website management goes further and uses the site to grow the business: regular new content, SEO improvements, campaign pages, conversion changes and reporting on results. Every business website needs maintenance; management is worth adding when the site is a main source of enquiries or sales and you want it to do more.</p>
+<p>The two words are used loosely, and many "website management" packages in India turn out to be maintenance with a few content edits. Knowing the difference helps you buy the right thing. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> sit on the maintenance side, with small content changes included each month.</p>
 
-<h2>Website maintenance: keeping it safe and working</h2>
+<h2>The difference at a glance</h2>
+<table>
+  <thead><tr><th></th><th>Website maintenance</th><th>Website management</th></tr></thead>
+  <tbody>
+    <tr><td>Goal</td><td>Keep the site safe, fast and working</td><td>Get more enquiries, sales or visibility from the site</td></tr>
+    <tr><td>Typical tasks</td><td>Updates, backups, security, uptime, speed and form checks, fixes</td><td>New pages and posts, SEO work, landing pages, conversion tests, analytics review</td></tr>
+    <tr><td>When it shows</td><td>Mostly invisible when done well</td><td>Visible changes to content and pages</td></tr>
+    <tr><td>Main skills</td><td>WordPress, hosting, security, troubleshooting</td><td>Content, SEO, design, marketing and analytics</td></tr>
+    <tr><td>How you judge it</td><td>Uptime, no security incidents, nothing broken, a clear report</td><td>Traffic, rankings, enquiries and sales against goals</td></tr>
+    <tr><td>Typical pricing</td><td>A fixed monthly fee for a defined task list</td><td>A retainer based on hours, or a scope agreed each month</td></tr>
+  </tbody>
+</table>
+<p>A simple way to remember it: maintenance is servicing the car so it runs reliably; management is deciding where to drive it and making each trip count.</p>
+
+<h2>What website maintenance covers</h2>
 <ul>
-  <li>WordPress, theme and plugin updates</li>
-  <li>Backups and restores</li>
-  <li>Security scans and hardening</li>
-  <li>Uptime and performance monitoring</li>
-  <li>Fixing things that break</li>
-  <li>Small content edits (usually limited)</li>
+  <li>WordPress core, theme and plugin updates, done after a backup and checked afterwards</li>
+  <li>Regular off-site backups, and restores when needed</li>
+  <li>Security scans, login protection and reviews of who has admin access</li>
+  <li>Uptime monitoring, with SSL and domain expiry checks</li>
+  <li>Speed checks to catch slowdowns after updates or new content</li>
+  <li>Contact form, checkout and broken link checks</li>
+  <li>Fixing things that break, and small content edits such as prices, text and images</li>
+  <li>A monthly report of what was done</li>
 </ul>
-<p>It's like servicing a car: essential, preventive, and mostly invisible when done well. See the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>.</p>
+<p>For the full breakdown of what a plan should include and how each task should be done, see <a href="/blog/monthly-website-maintenance-plan/">what a monthly maintenance plan should include</a>. If you're doing it yourself, the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> lists the tasks by week, month and year.</p>
 
-<h2>Website management: making it work harder</h2>
+<h2>What website management covers</h2>
 <ul>
-  <li>Adding and updating pages, products and content regularly</li>
-  <li>Publishing blog posts and news</li>
-  <li>SEO improvements based on Search Console data</li>
-  <li>Conversion improvements such as calls to action, forms and landing pages</li>
-  <li>Campaign pages for offers and festivals</li>
-  <li>Monthly reporting and recommendations</li>
+  <li><strong>Content:</strong> publishing blog posts, adding projects and case studies, refreshing service pages, keeping team, prices and offers current</li>
+  <li><strong>SEO:</strong> acting on Search Console data, improving titles and pages that sit just off page one, internal linking, fixing indexing problems</li>
+  <li><strong>Campaigns:</strong> landing pages for ads, festival and seasonal offers, event pages</li>
+  <li><strong>Conversion:</strong> testing calls to action, shortening forms, adding WhatsApp or call buttons, improving the pages people leave</li>
+  <li><strong>Analytics and reporting:</strong> tracking enquiries and sales, and recommending what to do next</li>
+  <li><strong>Coordination:</strong> working with whoever runs your ads, social media and photography</li>
 </ul>
-<p>It's like having someone drive the car somewhere useful.</p>
+<p>Management is broader and depends more on your business, so it's usually scoped by hours or by goals rather than a fixed task list. It may be handled by one person or split between a developer, an SEO specialist and a content writer.</p>
 
-<h2>Which do you need?</h2>
+<h2>The grey area: content updates</h2>
+<p>Content changes are where the two overlap and where most misunderstandings start. As a rule of thumb:</p>
+<table>
+  <thead><tr><th>Usually maintenance</th><th>Usually management, or quoted separately</th></tr></thead>
+  <tbody>
+    <tr><td>Changing a price, phone number or opening hours</td><td>Writing and publishing new blog posts every month</td></tr>
+    <tr><td>Swapping an image or banner</td><td>Designing a new landing page for a campaign</td></tr>
+    <tr><td>Adding a team member to an existing page</td><td>Adding a new services section or page template</td></tr>
+    <tr><td>Posting a short holiday notice</td><td>Uploading and writing a full product catalogue</td></tr>
+    <tr><td>Fixing a broken link or typo</td><td>Rewriting pages to rank for new keywords</td></tr>
+  </tbody>
+</table>
+<p>The same logic decides whether a request after launch is a fix or new work; see <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></p>
+
+<h2>Which one does your business need?</h2>
+<table>
+  <thead><tr><th>Your situation</th><th>What usually fits</th></tr></thead>
+  <tbody>
+    <tr><td>A brochure site that rarely changes, with most work coming from referrals</td><td>Maintenance only</td></tr>
+    <tr><td>Your team is happy updating content, but nobody wants to touch updates or security</td><td>Professional maintenance, with content managed in-house</td></tr>
+    <tr><td>The website is a main source of enquiries and you want more of them</td><td>Maintenance plus management, or maintenance plus SEO</td></tr>
+    <tr><td>An online store adding products and running offers every month</td><td>Store maintenance, plus regular content and campaign work</td></tr>
+    <tr><td>The site is outdated and enquiries have dropped</td><td>Neither on its own; fix or redesign first, then maintain</td></tr>
+  </tbody>
+</table>
+<p>Management can't make up for a site that's broken, slow or insecure, so maintenance comes first. And maintenance alone won't make a site grow; it keeps a good site good.</p>
+
+<h2>Signs it's time to add management</h2>
+<p>Maintenance-only is the right choice for many businesses, but these are signs the website could be doing more, and that someone should be working on it rather than just looking after it:</p>
 <ul>
-  <li><strong>Maintenance only:</strong> your site rarely changes and you just need it safe, fast and online</li>
-  <li><strong>Maintenance plus management:</strong> your website is a key lead or sales channel and you want it to grow</li>
-  <li><strong>DIY management with professional maintenance:</strong> your team updates content, and a developer handles the technical side</li>
+  <li>Search Console shows pages getting impressions on page two or three that never turn into clicks</li>
+  <li>Enquiries from the website have stayed flat or dropped while the business has grown</li>
+  <li>Service pages, prices or case studies are a year or more out of date</li>
+  <li>You run ads, but every campaign sends visitors to the homepage instead of a dedicated landing page</li>
+  <li>Nobody can say how many enquiries the site brought in last month</li>
+</ul>
+<p>If several of these apply, start with the quick wins in <a href="/blog/get-more-enquiries-from-your-website/">ways to get more enquiries from your website</a>, then decide whether to handle the ongoing work in-house or hand it to someone.</p>
+
+<h2>Common combinations</h2>
+<ul>
+  <li><strong>DIY management with professional maintenance.</strong> Often the best value for small businesses. Your team updates content and posts news; a developer handles the technical side.</li>
+  <li><strong>Maintenance plus SEO.</strong> A maintenance plan keeps the site healthy, while separate SEO work improves rankings. On my side, technical and on-page SEO is covered by <a href="/wordpress-seo-services/">WordPress SEO services</a>; content writing would come from you or a writer.</li>
+  <li><strong>Full management.</strong> One provider or agency handles everything, typically for larger businesses with an ongoing marketing budget.</li>
 </ul>
 
-<h2>Questions to ask a provider</h2>
+<h2>How to tell what a package really is</h2>
+<p>Names vary: AMC, care plan, support plan, website management, website support. Ignore the label and ask:</p>
 <ol>
-  <li>What exactly is included each month?</li>
-  <li>How many content changes or hours are included?</li>
-  <li>What's the response time for urgent issues?</li>
-  <li>Do you report what was done?</li>
-  <li>Can I cancel monthly?</li>
+  <li>What exactly is done each month? Ask for a task list.</li>
+  <li>How many content changes or hours are included, and what counts as "small"?</li>
+  <li>Are updates tested afterwards, and how are problems rolled back?</li>
+  <li>Where are backups stored, and can I have a copy?</li>
+  <li>Is any SEO, content writing or design included, and how much?</li>
+  <li>What does the monthly report contain?</li>
+  <li>Can I cancel monthly, and do all accounts stay in my name?</li>
 </ol>
+<p>If a "management" package can't name the content or SEO work it includes, it's a maintenance plan, which may be exactly what you need, at a maintenance price. <a href="/blog/choose-wordpress-maintenance-provider/">How to choose a WordPress maintenance provider</a> has more questions and red flags.</p>
 
-<p>For costs, see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>. For plans, see <a href="/wordpress-maintenance/">WordPress maintenance</a> and <a href="/wordpress-seo-services/">WordPress SEO</a>.</p>
+<h2>Mistakes to avoid</h2>
+<ul>
+  <li><strong>Paying for management and getting maintenance.</strong> If nothing visible changes for months, ask what the management time is spent on.</li>
+  <li><strong>Buying management without maintenance.</strong> New content on a site with outdated plugins and no backups is building on sand.</li>
+  <li><strong>No goals for management.</strong> Without a target, such as more enquiries from a service page, it's hard to tell whether it's working.</li>
+  <li><strong>Accounts in the provider's name.</strong> Whatever you buy, keep the domain, hosting, WordPress admin and Google accounts in the business's name.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What is the difference between website maintenance and website management?</h3>
+<p>Maintenance keeps the site secure, updated, backed up and working. Management uses the site to grow the business through new content, SEO, campaigns and conversion improvements. Maintenance is essential for every site; management is optional.</p>
+<h3>Does website maintenance include content updates?</h3>
+<p>Usually small ones, such as prices, text, images and notices, up to an agreed amount each month. New pages, regular blog posts and larger content projects are normally management work or quoted separately.</p>
+<h3>Is website management the same as SEO?</h3>
+<p>No, but SEO is often part of it. Management can also cover content, campaign pages, conversion improvements and reporting. Some businesses buy maintenance and SEO separately instead of a full management package.</p>
+<h3>Do small businesses need website management?</h3>
+<p>Not always. Many small businesses do well with professional maintenance and updating their own content. Management becomes worthwhile when the website brings a large share of enquiries and there's budget to improve it.</p>
+<h3>How much do maintenance and management cost?</h3>
+<p>Maintenance is usually a fixed monthly fee for a defined list of tasks; <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a> covers typical ranges. Management varies widely with the hours and skills involved, so it's quoted on scope.</p>
+
+<p>If you need the technical side handled reliably, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> cover updates done after a backup and tested afterwards, off-site backups, security and uptime monitoring, small content changes and a monthly report, month to month.</p>
 `,
   },
   {
@@ -15586,61 +15912,124 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   },
   {
     slug: 'update-php-version-wordpress',
-    seoTitle: 'How to Update the PHP Version of Your WordPress Site Safely',
-    title: 'How to Update Your WordPress Site\'s PHP Version Safely',
-    description: 'Update your WordPress PHP version safely: why it matters for speed and security, how to check it, switch versions in your hosting panel and fix breakages.',
+    seoTitle: 'How to Update Your PHP Version in WordPress Safely',
+    title: 'How to Update Your WordPress Site\'s PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes',
+    description: 'Update your WordPress PHP version safely: check compatibility on staging, switch in hPanel or cPanel, re-enable extensions and fix anything that breaks.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-speed-optimization', 'wordpress-malware-removal'],
     body: `
-<p>WordPress is written in PHP, and your hosting server runs a particular PHP version. Many older business websites still run on PHP versions that stopped receiving security fixes years ago. Updating is one of the simplest ways to make a site faster and safer, as long as you do it carefully.</p>
+<p>To update your WordPress site's PHP version safely, first check the current version in Tools &gt; Site Health &gt; Info &gt; Server, take a full backup, and update WordPress, your theme and plugins. Then test the new PHP version on a staging copy, switch it in your hosting panel (PHP Configuration in Hostinger's hPanel, or "Select PHP Version" or MultiPHP Manager in cPanel), make sure the PHP extensions your site needs are enabled, and test key pages, forms and checkout. If anything breaks, switch back; it usually takes effect immediately.</p>
+<p>The switch itself is one click. The care is in the checks before and after, because the most likely casualty is an old plugin or a piece of custom code. Checking the PHP version is part of the first health check on my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, and the steps below are the same ones to follow if you're doing it yourself.</p>
 
 <h2>Why the PHP version matters</h2>
 <ul>
-  <li><strong>Security:</strong> old PHP versions no longer get security patches</li>
-  <li><strong>Speed:</strong> newer PHP versions generally run WordPress noticeably faster</li>
-  <li><strong>Compatibility:</strong> new plugin and theme versions eventually drop support for old PHP</li>
+  <li><strong>Security.</strong> Each PHP version gets security fixes for a limited time. After that, newly found holes in PHP itself stay open on your server.</li>
+  <li><strong>Compatibility.</strong> Plugin and theme developers gradually drop support for old PHP versions. A site stuck on old PHP eventually can't install the updates that fix its own security problems.</li>
+  <li><strong>Speed.</strong> Newer PHP versions generally run WordPress faster, at no cost. It's not a substitute for proper optimisation, but it helps.</li>
+  <li><strong>Your host will move you eventually.</strong> Hosts retire old versions and sometimes switch accounts automatically, with only an email warning. It's better to upgrade on your schedule than theirs.</li>
 </ul>
 
-<h2>Check your current version</h2>
+<h2>Which PHP version should you use?</h2>
+<p>PHP versions get two years of active support followed by two years of security-only fixes. At the time of writing (October 2026), the picture looks like this; check the supported versions page on php.net for current dates.</p>
+<table>
+  <thead><tr><th>PHP version</th><th>Status at the time of writing</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>7.4 and older</td><td>No security fixes for years</td><td>Upgrade as soon as possible, carefully</td></tr>
+    <tr><td>8.0 and 8.1</td><td>End of life, no security fixes</td><td>Plan an upgrade now</td></tr>
+    <tr><td>8.2</td><td>Security fixes only, ending at the end of 2026</td><td>Move up in the next few months</td></tr>
+    <tr><td>8.3</td><td>Security fixes only, until the end of 2027</td><td>A safe, widely supported choice</td></tr>
+    <tr><td>8.4</td><td>Actively supported</td><td>A good target if your plugins support it</td></tr>
+    <tr><td>8.5</td><td>Newest release</td><td>Check plugin and theme compatibility first</td></tr>
+  </tbody>
+</table>
+<p>The right target is the newest version your plugins, theme and any custom code are tested with. WordPress.org's requirements page lists the version it currently recommends.</p>
+
+<h2>Check your current PHP version</h2>
 <ul>
-  <li>In WordPress: Tools → Site Health → Info → Server</li>
-  <li>Site Health's Status tab also warns if your PHP version is outdated</li>
-  <li>Or check your hosting control panel</li>
+  <li><strong>In WordPress:</strong> Tools &gt; Site Health &gt; Info &gt; Server shows the PHP version, memory limit and other server settings. The Status tab warns if your version is outdated.</li>
+  <li><strong>On a store:</strong> WooCommerce &gt; Status shows the PHP version and flags settings that are too low.</li>
+  <li><strong>In your hosting panel:</strong> the PHP settings page shows the version for each website.</li>
 </ul>
-<p>Compare it with the supported versions listed on php.net and the recommended version on WordPress.org's requirements page.</p>
+<p>If you use WP-CLI, note that the command line can run a different PHP version from the website itself, so trust Site Health for what visitors' requests use.</p>
 
-<h2>Before you switch</h2>
+<h2>Before you switch: a compatibility checklist</h2>
 <ol>
-  <li><strong>Take a full backup</strong> of files and database; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a></li>
-  <li><strong>Update WordPress, themes and plugins first.</strong> Old plugin versions are the usual cause of PHP problems</li>
-  <li><strong>Look for abandoned plugins</strong> that haven't been updated in years and replace them</li>
-  <li><strong>Test on a staging site</strong> if possible; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
+  <li><strong>Take a full backup</strong> of files and database; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</li>
+  <li><strong>Update WordPress, the theme and every plugin.</strong> Outdated versions are the usual cause of PHP upgrade problems, and most developers fixed PHP 8 issues long ago.</li>
+  <li><strong>Look for abandoned plugins.</strong> On each plugin's WordPress.org page, check "Last updated" and "Tested up to". A plugin untouched for years is the first suspect, so find a replacement before the switch.</li>
+  <li><strong>Check premium licences.</strong> An expired licence can leave a premium theme or plugin on an old version that doesn't support new PHP.</li>
+  <li><strong>List custom code:</strong> a child theme's functions.php, custom plugins, code snippets and anything a past developer wrote. Bespoke code is the most likely to break, because nobody else has updated it.</li>
+  <li><strong>Check for ionCube.</strong> Some premium plugins ship encoded files that need the ionCube Loader, which must be available for the new PHP version.</li>
+  <li><strong>Run a scan as a first pass.</strong> The PHP Compatibility Checker plugin scans plugin and theme code for known problems. It's useful, but it can miss issues and flag harmless code, and may not cover the very newest PHP version, so treat it as a hint, not a verdict.</li>
 </ol>
 
-<h2>How to switch PHP versions</h2>
-<p>Most hosts let you change the PHP version from the control panel, often under options like "Select PHP Version", "PHP Settings" or "MultiPHP Manager". Choose a newer supported version and save. If you can't find it, ask your host's support team.</p>
-<p>Moving one major step at a time can make it easier to spot which change causes a problem.</p>
+<h2>Test on staging first</h2>
+<p>The reliable test is to run the site on the new version. Create a staging copy, set the staging site to the new PHP version if your host lets you choose per site or subdomain, and switch on error logging there:</p>
+<pre><code>define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );</code></pre>
+<p>Click through the important pages and features, then read wp-content/debug.log. "PHP Deprecated" lines are warnings about code that will break in a future version; note them, but they won't take the site down. "PHP Fatal error" lines will, and they name the plugin or theme file responsible. See <a href="/blog/staging-sites-explained/">staging sites explained</a> for setting one up on popular hosts.</p>
+
+<h2>How to switch the PHP version in your hosting panel</h2>
+<h3>Hostinger (hPanel)</h3>
+<p>At the time of writing, open the website from Websites, then go to Advanced &gt; PHP Configuration. The PHP versions tab lets you pick a version, and separate tabs cover PHP extensions and PHP options such as memory_limit.</p>
+<h3>cPanel hosts</h3>
+<p>Many Indian shared hosts use cPanel, which offers one of two tools. "Select PHP Version" (on CloudLinux servers) sets the version for the account and has Extensions and Options tabs. "MultiPHP Manager" sets the version per domain, with "MultiPHP INI Editor" for settings. If you see both, ask your host which one actually applies.</p>
+<h3>Other hosts</h3>
+<p>Managed hosts usually have a PHP setting per site in their own dashboard, under a name like PHP Manager or PHP settings. If you can't find it, ask support to change it for you.</p>
+<p>If you're several versions behind, moving up in steps, for example from 7.4 to 8.2 and then to 8.3 or 8.4, makes it easier to see which jump caused a problem.</p>
+
+<h2>PHP extensions and settings to check</h2>
+<p>A common surprise: on cPanel's "Select PHP Version", extensions are chosen per PHP version, so the new version may not have the extensions you had switched on for the old one. After switching, check these are enabled:</p>
+<table>
+  <thead><tr><th>Extension</th><th>What uses it</th><th>Sign it's missing</th></tr></thead>
+  <tbody>
+    <tr><td>mysqli</td><td>WordPress's database connection</td><td>"Your PHP installation appears to be missing the MySQL extension"</td></tr>
+    <tr><td>curl and openssl</td><td>Updates, licence checks, payment gateways, APIs</td><td>Updates or payments fail, "cURL error" messages</td></tr>
+    <tr><td>mbstring and intl</td><td>Text handling, especially non-English text such as Hindi</td><td>Errors mentioning mb_ functions, garbled characters</td></tr>
+    <tr><td>zip</td><td>Installing updates, backup plugins</td><td>"Class ZipArchive not found", failed backups</td></tr>
+    <tr><td>gd or imagick</td><td>Resizing uploads and creating thumbnails</td><td>Images upload without thumbnails, upload errors</td></tr>
+    <tr><td>xml, dom and exif</td><td>Imports, feeds, image orientation</td><td>Import tools fail, rotated photos</td></tr>
+  </tbody>
+</table>
+<p>Also check settings, which can reset when you change version: memory_limit, max_execution_time, upload_max_filesize, post_max_size and max_input_vars. A low max_input_vars is a common reason large menus or page builder layouts stop saving. Memory problems are covered in <a href="/blog/wordpress-memory-limit-errors/">fixing memory limit errors</a>, and upload limits in <a href="/blog/increase-wordpress-upload-size-limit/">increasing the WordPress upload size limit</a>.</p>
 
 <h2>Test after switching</h2>
 <ul>
-  <li>Homepage and key pages</li>
-  <li>Contact forms (submit a test)</li>
-  <li>WooCommerce cart and checkout</li>
-  <li>Logging in to the dashboard</li>
-  <li>Any custom features, calculators or integrations</li>
+  <li>The homepage and key page templates, on a phone and a desktop, while logged out</li>
+  <li>Every contact form, and check the email actually arrives</li>
+  <li>Logging in, the editor or page builder, and saving a page</li>
+  <li>For stores: cart, checkout, a test payment and order emails</li>
+  <li>Image uploads, backups and anything that talks to an outside service</li>
+  <li>Tools &gt; Site Health for new warnings</li>
 </ul>
 
 <h2>If something breaks</h2>
-<ul>
-  <li>Switch back to the previous PHP version in the hosting panel. It's usually instant</li>
-  <li>Check the error message or the recovery-mode email WordPress sends to the admin</li>
-  <li>Identify the plugin or theme causing the error, update or replace it, then try again</li>
-</ul>
-<p>See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a>.</p>
+<ol>
+  <li><strong>Switch back</strong> to the previous PHP version in the hosting panel. The site should recover straight away.</li>
+  <li><strong>Read the error.</strong> The recovery mode email or the debug log names the failing file. Typical PHP 8 errors include "Call to undefined function create_function()", "Uncaught TypeError" and "Unsupported operand types", all signs of old code.</li>
+  <li><strong>Update, replace or fix</strong> the plugin, theme or snippet responsible, then try again on staging.</li>
+</ol>
+<p>If the site shows "There has been a critical error" and you can't get in, <a href="/blog/fix-wordpress-critical-error/">fixing the critical error</a> covers recovery mode and disabling plugins over File Manager.</p>
 
-<h2>Make it part of maintenance</h2>
-<p>Check the PHP version at least once a year, as part of your <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>. Or let a <a href="/wordpress-maintenance/">maintenance service</a> handle it.</p>
+<h2>Make it part of regular maintenance</h2>
+<p>PHP isn't a one-off job. Check the version every few months, alongside plugin audits and updates, so you're never more than one step behind. <a href="/blog/update-wordpress-safely/">How to update WordPress safely</a> covers the update routine that keeps a site ready for the next PHP version. If speed is the reason you're looking at PHP, the version is one of several server checks in <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Will updating PHP break my WordPress site?</h3>
+<p>Not if WordPress, your theme and plugins are current and there's no old custom code. Problems come from outdated or abandoned plugins and bespoke code. Test on staging first, and you can switch back in the hosting panel if something slips through.</p>
+<h3>Which PHP version is best for WordPress?</h3>
+<p>The newest version that is still supported and that your plugins and theme are tested with. At the time of writing, that's usually PHP 8.3 or 8.4. Check WordPress.org's requirements page and your plugins' details before choosing.</p>
+<h3>Can I go back to the old PHP version?</h3>
+<p>Yes. The hosting panel lets you switch back, and it usually takes effect immediately, unless your host has retired that version. Use it to get the site working again, then fix the cause rather than staying on old PHP.</p>
+<h3>Does changing PHP affect my content or database?</h3>
+<p>No. Your pages, posts, orders and settings stay in the database untouched. Only the code that runs the site is affected, which is why problems show up as errors rather than lost content.</p>
+<h3>Is the PHP Compatibility Checker plugin reliable?</h3>
+<p>It's a helpful first pass, but it reads code without running it, so it can miss real problems and flag harmless ones. A test on staging with error logging turned on is the more reliable check.</p>
+
+<p>Not sure what your site runs on, or nervous about the switch? My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> start with a health check that covers the PHP version, Site Health warnings and abandoned plugins, and updates are done after a backup and tested afterwards.</p>
 `,
   },
   {
@@ -17418,73 +17807,123 @@ define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
   },
   {
     slug: 'website-down-what-to-do',
-    seoTitle: 'Website Down? What to Check and Do, Step by Step',
-    title: 'Website Down or Not Opening? What to Check and Do, Step by Step',
-    description: 'Website down? Follow these steps: confirm the outage, read the error, check domain, hosting and recent changes, call your host and restore a backup.',
+    seoTitle: 'Website Down or Not Opening? What to Check, Step by Step',
+    title: 'Website Down or Not Opening? What to Check and Do, in the Right Order',
+    description: 'Website down or not opening? Check if it\'s down for everyone, read the error, then check domain and DNS, hosting limits, SSL and recent changes, in that order.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
-<p>Your website isn't opening, and customers are calling to say so. Don't panic. Most outages come from a handful of causes, and working through them in order usually finds the problem quickly.</p>
+<p>When your website is down, first check whether it's down for everyone or just you: open it on your phone using mobile data and run it through an online "is it down" checker. If it's down for everyone, read the error message, because it tells you which layer failed. Then check, in order, your domain and DNS, your hosting account (outages, suspension and resource limits), your SSL certificate, and finally recent changes to the site itself, such as plugin updates.</p>
+<p>Working through those checks in order usually finds the cause quickly, and it stops you restoring backups or reinstalling WordPress when the real problem is an unpaid renewal. Below is the full sequence, what each error means and who to contact. If you'd rather have someone watching the site and get told about outages before customers notice, uptime monitoring and off-site backups are part of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 
-<h2>Step 1: Is it really down?</h2>
+<h2>Step 1: Is it down for everyone, or just you?</h2>
+<p>A surprising number of "outages" are local. Before changing anything:</p>
 <ul>
-  <li>Try another device and network, such as your phone on mobile data instead of office Wi-Fi</li>
-  <li>Use an online "is it down" checker to test from outside your network</li>
-  <li>Try a private or incognito browser window to rule out cached problems</li>
+  <li><strong>Switch networks.</strong> Turn off Wi-Fi on your phone and load the site on mobile data. Then try a different browser or a private window.</li>
+  <li><strong>Use a down checker</strong> such as downforeveryoneorjustme.com, which tests the site from outside your network.</li>
+  <li><strong>Ask someone in another city</strong> to try it, if your customers are spread out.</li>
 </ul>
-<p>If it works elsewhere, the issue may be your local network, DNS cache or browser.</p>
+<p>If it works everywhere except your office or home, the problem is local. Restart the router, clear your computer's DNS cache (on Windows, run ipconfig /flushdns in Command Prompt), or try a public DNS service such as 1.1.1.1 or 8.8.8.8. One cause people miss: on shared hosting, the server's firewall can block your office IP address after repeated failed logins, often from someone with a saved old password. Everyone else sees the site, and you don't. Your host can check and unblock the IP.</p>
 
-<h2>Step 2: Read the error</h2>
+<h2>Step 2: Read the error message</h2>
+<p>The error page is the best clue you have. Take a screenshot, note the exact wording and the time, then match it here:</p>
 <table>
-  <thead><tr><th>What you see</th><th>Likely cause</th></tr></thead>
+  <thead><tr><th>What you see</th><th>Layer that failed</th><th>Where to look</th></tr></thead>
   <tbody>
-    <tr><td>"This site can't be reached" / DNS error</td><td>Domain expired, DNS changed or nameservers wrong</td></tr>
-    <tr><td>500 Internal Server Error</td><td>Plugin, theme or server configuration problem</td></tr>
-    <tr><td>503 Service Unavailable</td><td>Server overloaded, or maintenance mode stuck</td></tr>
-    <tr><td>"There has been a critical error"</td><td>A PHP error, often from a plugin or theme update</td></tr>
-    <tr><td>"Error establishing a database connection"</td><td>Database server down or wrong credentials</td></tr>
-    <tr><td>Security or certificate warning</td><td>SSL certificate expired or misconfigured</td></tr>
-    <tr><td>"Account suspended" page</td><td>Hosting unpaid or suspended for resource use or malware</td></tr>
-    <tr><td>"Deceptive site ahead" warning</td><td>Google flagged the site, often after a hack</td></tr>
+    <tr><td>"This site can't be reached", DNS_PROBE_FINISHED_NXDOMAIN</td><td>Domain or DNS</td><td>Registrar: expiry date and nameservers</td></tr>
+    <tr><td>A registrar parking page or "this domain has expired"</td><td>Domain renewal</td><td>Registrar account and billing</td></tr>
+    <tr><td>ERR_CONNECTION_TIMED_OUT or ERR_CONNECTION_REFUSED</td><td>Server unreachable or firewall</td><td>Host status page, firewall blocks</td></tr>
+    <tr><td>"Account suspended" or the host's default page</td><td>Hosting account</td><td>Billing and emails from your host</td></tr>
+    <tr><td>"Your connection is not private", NET::ERR_CERT_DATE_INVALID</td><td>SSL certificate</td><td>SSL section of the hosting panel</td></tr>
+    <tr><td>503, 508 "Resource Limit Is Reached"</td><td>Server overloaded or plan limits</td><td>Resource usage in the hosting panel</td></tr>
+    <tr><td>502 Bad Gateway or 504 Gateway Timeout</td><td>Server or PHP too slow to respond</td><td>Host, PHP workers, slow plugins</td></tr>
+    <tr><td>Cloudflare error page (520 to 526)</td><td>Cloudflare reached your server, but the server failed</td><td>Origin server and SSL mode</td></tr>
+    <tr><td>500 Internal Server Error, "There has been a critical error"</td><td>Site code</td><td>Error log, recent plugin or theme changes</td></tr>
+    <tr><td>"Error establishing a database connection"</td><td>Database</td><td>Database server, wp-config.php details</td></tr>
+    <tr><td>Red "Deceptive site ahead" warning</td><td>Google flagged the site, usually after a hack</td><td>Search Console security issues</td></tr>
   </tbody>
 </table>
-<p>See <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a> and <a href="/blog/ssl-certificate-errors-fix/">SSL errors</a>.</p>
+<p>The WordPress-specific errors in the last rows each have their own fix guide, linked from <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a>.</p>
 
-<h2>Step 3: Check the domain</h2>
-<p>Log in to your domain registrar and check the expiry date. An expired domain takes down both your website and email. See <a href="/blog/domain-expired-what-to-do/">what to do when your domain expires</a>.</p>
+<h2>Step 3: Check the domain and DNS</h2>
+<p>If the browser can't find the site at all, start with the domain. A quick test: if your business email on the same domain has also stopped, the domain or DNS is the likely culprit; if email still works, the domain is probably fine and the problem is the hosting or the site.</p>
+<ol>
+  <li><strong>Log in to your registrar</strong> (GoDaddy, Hostinger, BigRock, Namecheap or whoever you bought the domain from) and check the expiry date and status. An expired domain takes down both the website and email. <a href="/blog/domain-expired-what-to-do/">What to do when your domain expires</a> explains grace and redemption periods.</li>
+  <li><strong>Check the nameservers.</strong> They should point to your host or to Cloudflare, whichever manages your DNS. A changed nameserver, often after someone "helpfully" moved the domain, sends visitors nowhere.</li>
+  <li><strong>Check the A record</strong> points to your current server's IP address, especially after a hosting move.</li>
+  <li><strong>Allow for DNS caching.</strong> After a DNS change, some networks keep the old address until the record's cache time runs out, which is why a site can work on Wi-Fi and fail on mobile data for a few hours.</li>
+</ol>
+<p>A developer can confirm what the world sees with two commands, or use an online DNS propagation checker:</p>
+<pre><code>nslookup yourdomain.com
+dig yourdomain.com +short</code></pre>
 
 <h2>Step 4: Check the hosting account</h2>
 <ul>
-  <li>Are hosting bills paid?</li>
-  <li>Any emails from your host about suspension, resource limits or malware?</li>
-  <li>Does the host's status page report an outage?</li>
+  <li><strong>Status page and announcements.</strong> Most hosts publish server outages and maintenance. If there's a known outage, there's little to do but wait and keep customers informed.</li>
+  <li><strong>Billing.</strong> Unpaid renewals lead to suspension, sometimes with a shorter warning than people expect. Check the card on file hasn't expired.</li>
+  <li><strong>Emails from your host</strong> about suspension, malware or resource abuse. If the account was suspended for malware, the site has to be cleaned before it comes back; see <a href="/blog/hosting-suspended-malware/">hosting suspended for malware</a>.</li>
+  <li><strong>Resource limits.</strong> On shared hosting, CPU, memory, entry processes, disk space and inodes are all capped. A traffic spike, aggressive bots or a heavy plugin can hit the cap and the site starts returning 503 or 508 errors. A full disk can also stop the database from writing. The hosting panel's resource usage page shows which limit was hit.</li>
+</ul>
+<p>For 502 and 504 errors that come and go under load, <a href="/blog/wordpress-502-504-gateway-timeout-fix/">fixing 502 and 504 gateway errors</a> explains PHP workers and what to ask your host.</p>
+
+<h2>Step 5: Check the SSL certificate</h2>
+<p>If visitors see a privacy or certificate warning instead of the site, the certificate has usually expired or doesn't cover the address being used, such as www versus non-www. Free Let's Encrypt certificates last 90 days and renew automatically, but renewal can fail silently after a DNS change or when Cloudflare sits in front of the site. Reissuing the certificate in the hosting panel usually fixes it within minutes. <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> matches each warning to its fix.</p>
+
+<h2>Step 6: Check what changed on the site</h2>
+<p>If the domain, hosting and SSL are fine and the error comes from WordPress itself, think about the last day or two. Did anyone update plugins, install something new, edit code, change PHP version, move hosting or change DNS? The most recent change is the most likely cause, and undoing it is often the fix.</p>
+<ul>
+  <li>A critical error after an update: <a href="/blog/fix-wordpress-critical-error/">fixing "There has been a critical error"</a> covers the recovery mode email, the debug log and disabling plugins over File Manager.</li>
+  <li>"Briefly unavailable for scheduled maintenance": an update was interrupted and a leftover .maintenance file needs deleting.</li>
+  <li>Redirects to spam sites or a Google warning: treat it as a hack, not an outage.</li>
 </ul>
 
-<p>Suspended for malware? See <a href="/blog/hosting-suspended-malware/">what to do when your hosting is suspended</a>.</p>
+<h2>Step 7: Restore a backup, if it's the right fix</h2>
+<p>Restoring a recent backup is the right move when the site itself is broken and you can't find the cause quickly. It won't help with an expired domain, an unpaid hosting bill or a server outage, so rule those out first. On an online store, a full restore also removes orders placed since the backup, so roll back the single plugin or restore files only where possible. The <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a> covers both.</p>
 
-<h2>Step 5: Think about recent changes</h2>
-<p>Did anyone update plugins, change themes, edit code, move hosting or change DNS in the last day or two? The most recent change is the most likely cause, and undoing it is often the fix.</p>
+<h2>Who to contact, and what to tell them</h2>
+<table>
+  <thead><tr><th>Problem</th><th>Who can fix it</th></tr></thead>
+  <tbody>
+    <tr><td>Expired domain, wrong nameservers</td><td>You, through the registrar account, or the registrar's support</td></tr>
+    <tr><td>Server outage, suspension, resource limits, firewall blocks</td><td>Your hosting company</td></tr>
+    <tr><td>Cloudflare errors</td><td>Whoever manages your Cloudflare account, then the host</td></tr>
+    <tr><td>Plugin, theme, database or code errors</td><td>Your developer or maintenance provider</td></tr>
+    <tr><td>Hacked site or Google warning</td><td>A developer who handles malware cleanup</td></tr>
+  </tbody>
+</table>
+<p>Whoever you contact, send the exact URL, a screenshot of the error, when it started, what changed beforehand, whether email still works and whether it fails on every network. That saves a round of questions. If nobody has the registrar or hosting logins, that's a problem to fix as soon as the site is back.</p>
 
-<h2>Step 6: Contact your host</h2>
-<p>Hosting support can see server logs and tell you whether the server is up, what errors are occurring and whether your account hit limits. Give them the exact error, the time it started and any recent changes.</p>
-
-<h2>Step 7: Restore from backup if needed</h2>
-<p>If you can't find the cause quickly, restoring a recent working backup gets you back online while the problem is investigated; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</p>
-
-<h2>Keep customers informed</h2>
-<p>While fixing it, post an update on your Google Business Profile and social media, and make sure your phone and WhatsApp still work so enquiries aren't lost.</p>
-
-<p>An outage is far easier to handle when roles, contacts and backups are sorted out in advance; see <a href="/blog/website-disaster-recovery-plan/">how to write a simple website disaster recovery plan</a>.</p>
+<h2>While the site is down</h2>
+<ul>
+  <li>Make sure your phone number and WhatsApp still work, and mention the outage on your Google Business Profile and social channels if it lasts more than a few hours.</li>
+  <li>Pause Google or Meta ads pointing at the site, so you're not paying for clicks to an error page.</li>
+  <li>Tell staff what to say to customers who call.</li>
+</ul>
 
 <h2>Prevent the next outage</h2>
 <ul>
-  <li>Uptime monitoring so you know before customers do; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring</a></li>
-  <li>Auto-renewal for domain and hosting</li>
-  <li>Automatic off-site backups</li>
-  <li>Test updates on staging first</li>
+  <li><strong>Uptime monitoring</strong> with SSL and domain expiry alerts, so you hear about problems first; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a>.</li>
+  <li><strong>Auto-renew</strong> on the domain and hosting, with a card that won't expire, and renewal reminders going to an inbox someone reads.</li>
+  <li><strong>Automatic off-site backups,</strong> so a restore is possible even if the server is lost.</li>
+  <li><strong>Careful updates,</strong> with a backup first and big changes tested on staging.</li>
+  <li><strong>A written plan</strong> listing logins, contacts and who does what; see <a href="/blog/website-disaster-recovery-plan/">a simple website disaster recovery plan</a>.</li>
 </ul>
-<p>Or let a <a href="/wordpress-maintenance/">maintenance service</a> watch it for you.</p>
+
+<h2>FAQs</h2>
+<h3>How do I check if my website is down for everyone or just me?</h3>
+<p>Load it on your phone using mobile data instead of Wi-Fi, try a private browser window, and use an online down checker that tests from outside your network. If it works elsewhere, the problem is your network, DNS cache or a firewall block on your IP address.</p>
+<h3>Why does my website open on Wi-Fi but not on mobile data, or the other way round?</h3>
+<p>Usually DNS. After a DNS change, one network can keep the old address cached for a while. Less often, the host's firewall has blocked an IP range, or a particular network has a routing problem to your server. Your host can check both.</p>
+<h3>My website is down but my email works. What does that mean?</h3>
+<p>The domain is probably fine, because email on the same domain is still being delivered. The problem is more likely the hosting server or the website itself, so check the host's status, resource limits and recent changes to the site.</p>
+<h3>How long does it take for a site to come back after renewing an expired domain?</h3>
+<p>Often within a few hours of renewal, but cached DNS can take longer to clear on some networks. If the domain had moved into its redemption period, recovery costs more and takes longer, so renew as soon as you notice.</p>
+<h3>Should I restore a backup as soon as the site goes down?</h3>
+<p>Not until you've ruled out the domain, hosting and SSL. A backup only fixes problems inside the website, such as a bad update or broken code, and on a store it can wipe out recent orders.</p>
+
+<p>Outages are much easier to handle when someone is already watching. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include uptime monitoring, regular off-site backups, careful updates and a monthly report, so problems are caught early and the site can be restored quickly if needed.</p>
 `,
   },
   {
@@ -18290,61 +18729,125 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'website-bug-vs-change-request',
-    seoTitle: 'Bug or Change Request? Website Support After Launch',
-    title: 'Bug or Change Request? Understanding Website Support After Launch',
-    description: 'Bug or change request? How they differ, what post-launch website support usually covers, how to report issues well and when a maintenance plan makes sense.',
+    seoTitle: 'Website Bug vs Change Request: What Support Covers',
+    title: 'Bug or Change Request? How to Tell the Difference, Report Website Issues Well and What Post-Launch Support Covers',
+    description: 'Website bug vs change request: clear definitions, examples, grey areas, how to report a bug with steps and screenshots, and how post-launch support works.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-website-development'],
     body: `
-<p>After a website launches, you'll inevitably want things fixed or changed. Knowing the difference between a bug and a change request avoids misunderstandings with your developer and keeps the relationship positive.</p>
+<p>A bug is something that doesn't work as agreed, or as it reasonably should: a contact form that doesn't send, a layout that breaks on certain phones, or a feature in the agreed scope that fails. A change request is anything new or different from what was agreed: a new page, a redesigned section, a new feature or different behaviour. Bugs in the original work are normally fixed without charge during the post-launch support period in your agreement, while changes are quoted separately or covered by a maintenance plan's allowance.</p>
+<p>Most disagreements after launch come from the space between those two definitions, and a written scope settles most of them. Below are clear examples, the common grey areas, how support periods usually work and how to report an issue so it gets fixed quickly. Once a site is live, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> cover updates, fixes when an update breaks something, and small text, image and price changes each month.</p>
 
-<h2>What is a bug?</h2>
-<p>A bug is something that doesn't work as agreed or as it reasonably should:</p>
+<h2>Bug vs change request: the definitions</h2>
 <ul>
-  <li>The contact form doesn't send emails</li>
-  <li>A page layout breaks on certain phones</li>
-  <li>A link goes to the wrong page</li>
-  <li>A feature in the agreed scope doesn't work</li>
+  <li><strong>Bug (or defect):</strong> the site doesn't do what was agreed in the scope or approved design, or fails in a way any reasonable person would call broken, such as errors, missing emails or pages that don't load.</li>
+  <li><strong>Change request:</strong> you'd like the site to do something it was never agreed to do, or to look or work differently from what was approved. It may be a great idea, but it's new work.</li>
+  <li><strong>Content update:</strong> changing words, images, prices or details within the existing design. Usually small, and often covered by a maintenance plan, but not a bug.</li>
+  <li><strong>External issue:</strong> something outside the original work changed, such as a plugin update, a hosting change or a third-party service. Who fixes it, and on what terms, depends on your agreement.</li>
 </ul>
-<p>Bugs from the original work are normally fixed free, especially during the post-launch support period.</p>
 
-<h2>What is a change request?</h2>
-<p>A change is new or different from what was agreed:</p>
+<h2>Examples, side by side</h2>
+<table>
+  <thead><tr><th>Request</th><th>Usually</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>The contact form shows "thank you" but no email arrives</td><td>Bug</td><td>A form that doesn't deliver isn't working as agreed</td></tr>
+    <tr><td>The menu overlaps the logo on an iPhone</td><td>Bug</td><td>The site should work on common devices</td></tr>
+    <tr><td>A button links to the wrong page</td><td>Bug</td><td>A mistake in the delivered work</td></tr>
+    <tr><td>Checkout fails with a payment method that was in scope</td><td>Bug</td><td>An agreed feature doesn't work</td></tr>
+    <tr><td>Add a new service page</td><td>Change</td><td>New content and layout</td></tr>
+    <tr><td>Make the header blue instead of the approved green</td><td>Change</td><td>Differs from the approved design</td></tr>
+    <tr><td>Add online booking or a second language</td><td>Change</td><td>New functionality</td></tr>
+    <tr><td>Update prices and swap team photos</td><td>Content update</td><td>Existing layout, new information</td></tr>
+    <tr><td>A slider stopped working after a plugin update months later</td><td>Grey area</td><td>Depends on the support period and who manages updates</td></tr>
+    <tr><td>A page broke after someone else edited it</td><td>Usually change</td><td>The fault wasn't in the delivered work</td></tr>
+  </tbody>
+</table>
+
+<h2>The grey areas</h2>
 <ul>
-  <li>Adding a new page or section</li>
-  <li>Redesigning part of the site</li>
-  <li>New features like a booking system</li>
-  <li>Content updates such as new prices, photos or team members</li>
+  <li><strong>Plugin and WordPress updates.</strong> Software keeps changing after launch. A layout that worked at handover can break after an update six months later. That's not a defect in the original work, but it does need fixing, which is exactly what a maintenance plan is for. <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">Plugin conflicts</a> explains why updates can break things.</li>
+  <li><strong>Browser and phone updates.</strong> New versions of browsers occasionally change how something displays. Whether that's covered depends on the support terms and how long ago launch was.</li>
+  <li><strong>Changes made by someone else.</strong> If you, a staff member or another developer edited code, settings or plugins, problems that follow are usually treated as new work.</li>
+  <li><strong>Hosting changes.</strong> A host upgrading PHP or moving servers can break older code. Again, not a defect in the build, but something to fix.</li>
+  <li><strong>Unstated expectations.</strong> "I assumed it would send me a WhatsApp alert too" is a change if it was never in the scope, however obvious it felt.</li>
+  <li><strong>Third-party services.</strong> Payment gateways, map services and APIs change their rules or need billing set up. Often the fix is an account setting on your side.</li>
 </ul>
-<p>Changes usually cost extra or fall under a maintenance plan.</p>
+<p>When it's unclear, go back to the written scope, the approved designs and what was signed off on staging. A short, friendly conversation sorts out most of these.</p>
 
-<h2>Grey areas</h2>
-<p>Some issues aren't clear-cut: a plugin update breaking something months later, a browser update changing how a feature looks, or a problem caused by changes someone else made. A clear agreement, and a reasonable conversation, sorts most of these out.</p>
-
-<h2>What post-launch support typically covers</h2>
+<h2>How post-launch support and warranty periods usually work</h2>
+<p>Many developers and agencies include a period after launch during which bugs in the delivered work are fixed without charge. The length varies a lot between contracts, so check yours rather than assuming. Typically, that support:</p>
 <ul>
-  <li>A period (often a few weeks) of free bug fixes</li>
-  <li>Help with using the dashboard and editing content</li>
-  <li>Minor tweaks agreed at handover</li>
+  <li>Covers defects in what was built and agreed</li>
+  <li>Doesn't cover new features, design changes or new content</li>
+  <li>Doesn't cover problems caused by later edits, plugin installs, updates or hosting changes made by others</li>
+  <li>Often includes help with using the dashboard and editing content</li>
 </ul>
-<p>Check what your agreement says; see the <a href="/blog/website-design-contract-checklist/">contract checklist</a>.</p>
+<p>After that period, fixes are usually billed, or covered by a maintenance plan. The terms belong in the contract before work starts; the <a href="/blog/website-design-contract-checklist/">website design contract checklist</a> lists what to agree, and the <a href="/blog/website-handover-checklist/">website handover checklist</a> covers support terms at the end of the project.</p>
+<p>On my side, every website project includes a written scope and support after launch, and new pages or features get a fixed quote before I start, so the invoice never surprises you. <a href="/hire-wordpress-developer/">Hiring me as your WordPress developer</a> explains how projects run.</p>
 
-<h2>How to report an issue well</h2>
+<h2>How to report a bug so it gets fixed quickly</h2>
+<p>The most common delay in fixing a bug is not being able to see it. A good report lets the developer reproduce the problem on the first try:</p>
 <ol>
-  <li>Page URL</li>
-  <li>What you did, what you expected, and what happened</li>
-  <li>Device and browser</li>
-  <li>A screenshot or screen recording</li>
-  <li>How urgent it is: is it stopping sales or enquiries?</li>
+  <li><strong>One issue per report.</strong> A list of twelve problems in one email is easy to half-finish.</li>
+  <li><strong>The exact page URL,</strong> copied from the address bar.</li>
+  <li><strong>Steps to reproduce:</strong> what you clicked or typed, in order.</li>
+  <li><strong>What you expected</strong> to happen, and <strong>what actually happened,</strong> including any error message word for word.</li>
+  <li><strong>Device, operating system and browser,</strong> for example "Samsung phone, Android, Chrome" or "Windows laptop, Edge".</li>
+  <li><strong>A screenshot or screen recording.</strong> Phones have built-in screen recording, and a ten-second video often explains more than a paragraph.</li>
+  <li><strong>When it happened,</strong> and whether it happens every time or only sometimes.</li>
+  <li><strong>How urgent it is:</strong> is it stopping enquiries or sales?</li>
 </ol>
-<p>See <a href="/blog/give-website-feedback-developer/">giving clear feedback</a>.</p>
+<p>A simple template you can copy:</p>
+<pre><code>Page: https://yourdomain.com/contact/
+Steps: Filled in the form, chose "Service: Repairs", clicked Send
+Expected: Thank-you message and an email to the office
+Actual: Thank-you message shown, but no email arrived
+Device: Android phone, Chrome. Also tried on a Windows laptop, same result
+When: Every time since Monday
+Urgency: High, we may be missing enquiries
+Screenshot: attached</code></pre>
+<p>More tips, including how to give design feedback, are in <a href="/blog/give-website-feedback-developer/">how to give clear website feedback</a>.</p>
 
-<h2>After the support period: maintenance</h2>
-<p>Websites need ongoing updates, backups and security checks. A maintenance plan covers these and usually includes some time for small changes each month; see <a href="/blog/website-maintenance-cost-india/">maintenance costs</a> and <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+<h2>How to request a change so it's quoted accurately</h2>
+<ul>
+  <li>Explain the goal, not just the solution: "more people should call from the service page" leaves room for a better idea than "make the button bigger".</li>
+  <li>Say which pages are affected, and share examples you like from other sites.</li>
+  <li>Have the content ready, such as text, photos and prices, so the quote doesn't need to allow for chasing it.</li>
+  <li>Mention any deadline, such as a festival offer or a trade show.</li>
+  <li>Group small changes into one request where you can.</li>
+</ul>
+<p>Whether a change is quoted as a fixed price or by the hour depends on its size and how clear it is; see <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly website projects</a>.</p>
+
+<h2>Agree urgency levels</h2>
+<table>
+  <thead><tr><th>Level</th><th>Examples</th></tr></thead>
+  <tbody>
+    <tr><td>Critical</td><td>Site down, checkout failing, forms not sending, hacked site</td></tr>
+    <tr><td>High</td><td>A key page broken on some devices, a feature failing for some users</td></tr>
+    <tr><td>Normal</td><td>A visual glitch, a wrong link, a typo on a key page</td></tr>
+    <tr><td>Low</td><td>Nice-to-have improvements and ideas for later</td></tr>
+  </tbody>
+</table>
+<p>Labelling requests this way helps both sides. Response times for each level are something to agree in writing with whoever supports your site.</p>
 
 <h2>Keep a simple change log</h2>
-<p>Keep a list of requests, dates and outcomes. It helps with planning, budgeting and knowing what changed if something breaks.</p>
+<p>A shared spreadsheet with the date, the request, whether it was a bug, change or content update, its status and any notes is enough. It shows what was fixed and what was new work, helps with budgeting, and makes the next problem easier to trace, because the first question is always "what changed recently?"</p>
+
+<h2>FAQs</h2>
+<h3>Are website bugs fixed for free?</h3>
+<p>Bugs in the original work are normally fixed without charge during the post-launch support period in your agreement. After that, or for problems caused by later changes, updates or other people's edits, fixes are usually billed or covered by a maintenance plan.</p>
+<h3>How long is a website warranty or support period?</h3>
+<p>It varies by developer and contract, so there's no standard length. Check your agreement for how long bug fixes are covered and what's excluded, and agree it in writing before the project starts.</p>
+<h3>Is it a bug if a plugin update breaks my site?</h3>
+<p>Not a bug in the original build, because the software changed after launch. It still needs fixing, and handling updates safely, with a backup first and checks afterwards, is the core of a maintenance plan.</p>
+<h3>Is updating content a change request?</h3>
+<p>It's usually treated as a content update rather than a bug or a new feature. Small updates are often included in a maintenance plan's monthly allowance; larger content projects are quoted separately.</p>
+<h3>What should a good bug report include?</h3>
+<p>The page URL, the steps to reproduce the problem, what you expected and what happened, your device and browser, a screenshot or screen recording, and how urgent it is.</p>
+
+<p>After launch, a maintenance plan takes most of these questions off your plate. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> test updates after taking a backup, so anything that breaks can be fixed or rolled back quickly, and small text, image and price changes are included each month, with bigger work quoted separately. For what a plan should include, see <a href="/blog/monthly-website-maintenance-plan/">what a monthly maintenance plan includes</a>.</p>
 `,
   },
   {
@@ -22031,58 +22534,128 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'monthly-website-maintenance-plan',
-    seoTitle: 'What a Monthly Website Maintenance Plan Includes',
-    title: 'What a Monthly WordPress Maintenance Plan Should Include',
-    description: 'What a monthly website maintenance plan includes: updates, backups, security scans, uptime monitoring, speed and form checks, and a monthly report.',
+    seoTitle: 'What a Monthly Website Maintenance Plan Should Include',
+    title: 'Monthly Website Maintenance Plans: What a Good WordPress Plan Should Include, and What Is Usually Extra',
+    description: 'What a monthly website maintenance plan should include: tested updates, off-site backups, security, uptime and form checks, content time and a monthly report.',
     date: '2026-09-28',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
-<p>A website isn't "done" at launch. WordPress, plugins and themes need regular updates, backups need checking, and small problems need catching before they cost you enquiries. A monthly maintenance plan handles this for a predictable fee. Here's what a good one should include, so you can compare plans properly.</p>
+<p>A good monthly website maintenance plan includes WordPress, theme and plugin updates applied after a backup and tested afterwards; regular off-site backups; security scans and monitoring; uptime monitoring; speed checks; form, checkout and broken link checks; a set amount of small content changes; and a short monthly report. New features, redesigns, large content projects and hosting fees are usually extra.</p>
+<p>Most plans list similar items. What separates a useful plan from a box-ticking one is how each item is done, so this post explains what "done properly" looks like for each, from the buyer's side. If you'd rather do the work yourself, the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> is the hands-on version, and my own <a href="/wordpress-maintenance/">WordPress maintenance plans</a> are built around the same list.</p>
 
-<h2>Core tasks every month</h2>
+<h2>What a monthly maintenance plan includes, at a glance</h2>
 <table>
-  <thead><tr><th>Task</th><th>Why it matters</th></tr></thead>
+  <thead><tr><th>Inclusion</th><th>Done properly</th><th>Watch out for</th></tr></thead>
   <tbody>
-    <tr><td>WordPress, plugin and theme updates (tested)</td><td>Security fixes and compatibility</td></tr>
-    <tr><td>Automatic off-site backups, with restore tested</td><td>Recovery from hacks, mistakes or server failures</td></tr>
-    <tr><td>Security scans and firewall</td><td>Catch infections early</td></tr>
-    <tr><td>Uptime monitoring</td><td>Know about downtime before customers do</td></tr>
-    <tr><td>Contact form and checkout tests</td><td>Make sure enquiries and orders arrive</td></tr>
-    <tr><td>Speed check</td><td>Spot slowdowns after updates or new content</td></tr>
-    <tr><td>Broken link check</td><td>Keep visitors and Google happy</td></tr>
-    <tr><td>Search Console review</td><td>Catch indexing problems and security alerts</td></tr>
+    <tr><td>Core, theme and plugin updates</td><td>Backup first, one at a time for important plugins, key pages and forms checked afterwards</td><td>"Updates" that are just auto-updates with nobody checking</td></tr>
+    <tr><td>Backups</td><td>Automatic, stored off-site, kept for weeks, restores included</td><td>Backups only on the same server as the site</td></tr>
+    <tr><td>Security</td><td>Regular scans, login protection, admin user reviews</td><td>A security plugin installed once and never looked at</td></tr>
+    <tr><td>Uptime monitoring</td><td>Checks every few minutes, with alerts to someone who acts</td><td>Monitoring that only reports in the monthly summary</td></tr>
+    <tr><td>Speed checks</td><td>Key pages measured monthly against a baseline</td><td>A single score with no comparison</td></tr>
+    <tr><td>Form, checkout and link checks</td><td>Test enquiries, email arrival, test orders on stores</td><td>Checking only that the page loads</td></tr>
+    <tr><td>Small content changes</td><td>A clear allowance and a simple way to ask</td><td>Vague "minor changes" with no definition</td></tr>
+    <tr><td>Monthly report</td><td>What was done, what was found, what's recommended</td><td>No report, or a generic automated email</td></tr>
   </tbody>
 </table>
 
-<h2>Content changes</h2>
-<p>Many plans include a set amount of time each month for small changes like updating prices, adding photos, changing team details or publishing a blog post. Check how much time is included and what happens to unused time.</p>
+<h2>Updates, done properly</h2>
+<p>Updates are the centre of any plan, and the riskiest part. Done properly, a backup is taken first, important plugins such as WooCommerce, page builders and payment gateways are updated one at a time, and key pages, forms and, on stores, checkout are checked afterwards. When an update breaks something, the fix is to roll back that one update or resolve the conflict, not to restore the whole site and lose recent orders. <a href="/blog/update-wordpress-safely/">How to update WordPress safely</a> walks through the process in detail.</p>
+<p>Ask how often updates happen (weekly or fortnightly is typical, with urgent security fixes sooner) and what is tested afterwards. "We keep everything updated" without a word about testing usually means auto-updates.</p>
 
-<h2>Renewals tracking</h2>
-<p>Domain, hosting, SSL and premium licence renewals, tracked so nothing expires unexpectedly; see the <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a>.</p>
-
-<h2>A monthly report</h2>
-<p>A short report showing updates done, backups, uptime, security status, speed and any issues fixed. It shows the work is actually happening.</p>
-
-<p>Before signing up, see <a href="/blog/choose-wordpress-maintenance-provider/">how to choose a WordPress maintenance provider</a>, including what a useful monthly report looks like.</p>
-
-<h2>Emergency support</h2>
-<p>What happens if the site goes down or gets hacked? A good plan includes priority response and, ideally, malware clean-up; see <a href="/blog/remove-malware-wordpress-step-by-step/">malware removal</a>.</p>
-
-<h2>Usually extra</h2>
+<h2>Backups, and restores</h2>
 <ul>
-  <li>New pages, features or redesigns</li>
-  <li>Large content projects</li>
-  <li>Ongoing SEO campaigns</li>
-  <li>Hosting fees (unless the plan includes hosting)</li>
+  <li><strong>Off-site storage.</strong> At least one copy outside your hosting account, so a server failure or suspended account can't take out the site and its backups together.</li>
+  <li><strong>Frequency to match the site.</strong> Daily is common; stores may need more.</li>
+  <li><strong>Retention of several weeks,</strong> because problems are often noticed late.</li>
+  <li><strong>Restores included,</strong> not charged as an emergency extra.</li>
+  <li><strong>Your copy on request,</strong> and the latest backup handed over if you leave.</li>
 </ul>
-<p>See <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></p>
+<p>The <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a> explains the 3-2-1 rule and how restores work.</p>
+
+<h2>Security monitoring</h2>
+<p>Most hacked WordPress sites were running outdated plugins or themes, so regular updates are the biggest security measure in any plan. On top of that, expect regular malware scans, login protection against password-guessing, a monthly review of administrator accounts, and attention to anything the scans flag. Cleaning up a site that was already hacked before the plan started is usually a separate job.</p>
+
+<h2>Uptime and speed checks</h2>
+<p>Uptime monitoring checks the site every few minutes from outside and raises an alert when it fails. A useful plan also watches SSL certificate expiry and uses a keyword check, so an error page that still "loads" is noticed; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a>.</p>
+<p>Speed checks compare key pages with last month. A sudden drop usually follows a new plugin, a large image or a third-party script, and catching it early is far cheaper than fixing a site that has slowly become sluggish over a year.</p>
+
+<h2>Form, checkout and broken link checks</h2>
+<p>This is the check that protects enquiries, and the one most often skipped. A contact form can show its thank-you message while every email silently fails, and owners often find out from a customer weeks later. A proper check submits each form and confirms the email arrives. Where a form routes enquiries by type, such as the service-type dropdown on the <a href="/work/vansh-group/">Vansh Group</a> contact form I built, the enquiry should arrive with the right service attached. Interactive features, calculators and self-assessments need the same attention, because they break more quietly than a layout does.</p>
+<p>On a WooCommerce store, add a test order through the payment flow, using test mode or cash on delivery, and a check that order emails and invoices go out. Broken links and new 404 errors are picked up from Search Console or a crawl and fixed with the right link or a redirect.</p>
+
+<h2>Small content changes</h2>
+<p>Most plans include small changes each month: updating text, swapping images, changing prices, adding a team member or posting a notice. Before signing up, find out:</p>
+<ul>
+  <li>What counts as a small change, and whether it's measured by request or by time</li>
+  <li>What happens to an allowance you don't use</li>
+  <li>How to send requests, and how quickly they're usually handled</li>
+</ul>
+<p>Anything that adds new functionality or layout is normally a change request, quoted separately. <a href="/blog/website-bug-vs-change-request/">Bug or change request?</a> explains where that line usually sits.</p>
+
+<h2>The monthly report</h2>
+<p>A short report is how you know the work is happening. It should list:</p>
+<ul>
+  <li>Updates applied, and anything held back with the reason</li>
+  <li>Backup status, and where backups are stored</li>
+  <li>Uptime for the month, with any outages and their causes</li>
+  <li>Security scan results and anything fixed</li>
+  <li>Speed figures for key pages compared with last month</li>
+  <li>Content changes made</li>
+  <li>Recommendations, such as an abandoned plugin to replace or an upcoming renewal</li>
+</ul>
+
+<h2>What is usually not included</h2>
+<ul>
+  <li>New pages, new features and redesigns</li>
+  <li>Large content projects, such as uploading a product catalogue or rewriting service pages</li>
+  <li>A full speed overhaul for a site that's slow to begin with</li>
+  <li>Hosting, domain and premium licence fees, which are paid to the providers, ideally in your name</li>
+  <li>SEO campaigns, content writing and ad management</li>
+</ul>
+<p>Plans that include regular content publishing, SEO and conversion work are closer to website management; <a href="/blog/website-maintenance-vs-management/">website maintenance vs management</a> explains the difference.</p>
+
+<h2>How plans differ by type of site</h2>
+<table>
+  <thead><tr><th>Type of site</th><th>What the plan adds</th></tr></thead>
+  <tbody>
+    <tr><td>Brochure site that rarely changes</td><td>The core list; fortnightly updates are often enough</td></tr>
+    <tr><td>Service business with a blog and regular offers</td><td>More content time, form checks after every update, Search Console reviews</td></tr>
+    <tr><td>WooCommerce store</td><td>Test orders, order email and invoice checks, more frequent backups, attention to scheduled tasks and database growth</td></tr>
+    <tr><td>Membership, course or booking site</td><td>Login, sign-up, payment and booking tests after updates</td></tr>
+  </tbody>
+</table>
+
+<h2>What the first month should look like</h2>
+<p>A good plan doesn't start by clicking "update all". The first month is a health check: access and a full backup, an inventory of every plugin and theme with its version and licence status, a look at PHP version, Site Health, scheduled tasks, email delivery and admin access, agreed fixes for anything urgent, then uptime monitoring and baseline speed figures. A site that has gone years without updates is brought up to date in stages rather than all at once.</p>
+
+<h2>Signs your current plan isn't working</h2>
+<ul>
+  <li>No monthly report, or the same generic report every month</li>
+  <li>A growing list of pending updates in the dashboard</li>
+  <li>You learn about outages or broken forms from customers</li>
+  <li>Nobody can tell you where backups are stored, or send you a copy</li>
+  <li>The plan locks you into a long contract with no easy way out</li>
+</ul>
+<p><a href="/blog/choose-wordpress-maintenance-provider/">How to choose a WordPress maintenance provider</a> has the questions to ask before you switch.</p>
 
 <h2>What it costs</h2>
-<p>Costs depend on the site's size and complexity, and whether it's a store; see <a href="/blog/website-maintenance-cost-india/">website maintenance costs in India</a>.</p>
+<p>Freelance WordPress maintenance plans for small and medium sites in India typically cost about ₹1,500 to ₹6,000 a month, with stores and business-critical sites at the higher end. <a href="/blog/website-maintenance-cost-india/">Website maintenance cost in India</a> explains what moves the price. For my own plans, you get a fixed monthly quote after a free review of your site, month to month.</p>
 
-<h2>DIY or a plan?</h2>
-<p>You can do basic maintenance yourself with the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>. If the site brings business and your time is valuable, a plan is usually worth it. See my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+<h2>FAQs</h2>
+<h3>What does a website maintenance plan include?</h3>
+<p>Tested updates, off-site backups, security scans, uptime monitoring, speed checks, form and broken link checks, a set amount of small content changes and a monthly report. Stores add test orders and order email checks.</p>
+<h3>Is hosting included in a maintenance plan?</h3>
+<p>Usually not. Hosting is normally paid to the hosting company, ideally in your name, and the maintenance plan covers looking after the site. Some providers bundle both, so check which is which.</p>
+<h3>What happens if an update breaks my site?</h3>
+<p>On a properly run plan, a backup is taken before updates, so the faulty update can be rolled back or the conflict fixed quickly. Ask any provider how they handle this before you sign up.</p>
+<h3>Can I cancel a monthly maintenance plan?</h3>
+<p>Month-to-month plans can usually be cancelled with notice. Make sure your domain, hosting and WordPress accounts stay in your name, and that you can take the latest backup with you.</p>
+<h3>Do I need a plan if my website rarely changes?</h3>
+<p>Plugins and WordPress still need updating, backups still need checking and forms still need testing, even if your content never changes. A small site can be maintained by its owner with a checklist, or covered by a basic plan.</p>
+
+<p>If you'd like your site looked after every month, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> cover updates done after a backup and checked afterwards, regular off-site backups, security scans, uptime monitoring, speed checks, broken link and form checks, small content updates and a monthly report.</p>
 `,
   },
   {
@@ -22188,66 +22761,129 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'fix-wordpress-critical-error',
-    seoTitle: 'WordPress "There Has Been a Critical Error": How to Fix It',
-    title: '"There Has Been a Critical Error on This Website": How to Fix It Step by Step',
-    description: 'Fix the WordPress critical error: causes like plugin or theme updates, PHP version and memory limits, using recovery mode and finding the culprit via SFTP.',
+    seoTitle: 'There Has Been a Critical Error in WordPress: How to Fix It',
+    title: '"There Has Been a Critical Error on This Website": How to Fix It in WordPress, Step by Step',
+    description: 'Fix "There has been a critical error on this website": use the recovery mode email, read debug.log, disable plugins via File Manager and check PHP.',
     date: '2026-09-28',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
-<p>"There has been a critical error on this website" is one of the most common WordPress problems I fix. It looks alarming, but your content is almost always safe. It means PHP hit a fatal error, and WordPress stopped loading the page to avoid showing a broken one.</p>
+<p>"There has been a critical error on this website" means PHP hit a fatal error, so WordPress stopped loading the page rather than show a broken one. To fix it, open the email WordPress sends to the site's admin address and use its recovery mode link to log in and deactivate the plugin or theme it names. If no email arrives, turn on debug logging to read the exact error, or rename the plugins folder through your host's File Manager or SFTP to find the culprit.</p>
+<p>The message looks alarming, but your pages, posts, products and orders are stored in the database and are almost always untouched. Below is the order to work through, from the quickest fix to the last resort. If you'd rather have someone take a backup before every update and catch problems like this early, that's what my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> are for.</p>
 
-<h2>Common causes</h2>
+<h2>What the critical error actually means</h2>
+<p>Since version 5.2, WordPress has a feature called fatal error protection. When a plugin, theme or custom code triggers a PHP fatal error, WordPress catches it and shows a short message instead of a blank screen. Visitors see "There has been a critical error on this website", usually with a link to WordPress's troubleshooting guide. If you're logged in or on the admin side, it adds "Please check your site admin email inbox for instructions."</p>
+<p>At the same moment, WordPress tries to email the administration address set in Settings &gt; General. That email names the plugin or theme involved and contains a special recovery mode link. Older sites, or sites where the protection is switched off, may show a completely blank page instead; that's covered in <a href="/blog/wordpress-white-screen-of-death/">the WordPress white screen of death</a>, and the fixes overlap heavily.</p>
+
+<h2>Common causes, and the clue that points to each</h2>
+<table>
+  <thead><tr><th>Cause</th><th>Typical clue</th><th>First fix</th></tr></thead>
+  <tbody>
+    <tr><td>A plugin update</td><td>Error started right after updating; the email or log names a file in wp-content/plugins</td><td>Deactivate or roll back that plugin</td></tr>
+    <tr><td>A theme update or theme switch</td><td>Log names a file in wp-content/themes, often functions.php</td><td>Switch to a default theme, then fix or roll back</td></tr>
+    <tr><td>PHP version change by you or your host</td><td>Errors such as "Call to undefined function" across several plugins at once</td><td>Switch back to the previous PHP version, then update the old code</td></tr>
+    <tr><td>Memory limit exhausted</td><td>"Allowed memory size of ... bytes exhausted"</td><td>Raise the limit and find the heavy plugin</td></tr>
+    <tr><td>A code edit or snippet</td><td>"syntax error, unexpected ..." in functions.php or a snippets plugin</td><td>Undo the edit over File Manager or SFTP</td></tr>
+    <tr><td>An interrupted update</td><td>"Failed opening required" or "No such file or directory"</td><td>Reinstall the plugin, theme or core files</td></tr>
+    <tr><td>Missing PHP extension</td><td>"Class ... not found" for something like ZipArchive or an mb_ function</td><td>Enable the extension in the hosting panel</td></tr>
+    <tr><td>Malware or modified files</td><td>Unfamiliar file names in the log, odd code at the top of files</td><td>Treat it as a hack, not just an error</td></tr>
+  </tbody>
+</table>
+
+<h2>Before you change anything</h2>
 <ul>
-  <li><strong>A plugin or theme update</strong> that conflicts with another plugin or your PHP version</li>
-  <li><strong>A PHP version change</strong> by you or your host that old code doesn't support</li>
-  <li><strong>Memory limit exhausted</strong> by heavy plugins or large imports</li>
-  <li><strong>A code edit</strong> in functions.php or a snippets plugin with a mistake</li>
-  <li><strong>An incomplete update</strong> interrupted halfway</li>
-  <li>Occasionally, <strong>malware</strong> corrupting files</li>
+  <li><strong>Note what changed</strong> in the last day or two: updates, a new plugin, a code edit, a PHP switch or a hosting move. The most recent change is the most likely cause.</li>
+  <li><strong>Check whether wp-admin also fails.</strong> If yourdomain.com/wp-admin still loads, you can often fix it from the dashboard.</li>
+  <li><strong>Take a backup if you can</strong> from your hosting panel, and don't keep clicking update or reinstalling WordPress. Random changes make the real cause harder to find.</li>
 </ul>
 
-<h2>Step 1: Check your email for the recovery mode link</h2>
-<p>WordPress usually emails the site's admin address with details of the error, including which plugin or theme caused it, and a special recovery mode link. Open the link, log in and deactivate the plugin or switch the theme named in the email.</p>
-
-<h2>Step 2: No email? Find the culprit through the files</h2>
+<h2>Step 1: Use the recovery mode email</h2>
+<p>Look in the inbox of the site's administration email for a message with a subject like "Your Site is Experiencing a Technical Issue". It explains which plugin or theme caused the error, often with the file and line number, and includes a link to log in to recovery mode.</p>
 <ol>
-  <li>Open your hosting file manager or connect by SFTP</li>
-  <li>Go to wp-content and rename the <code>plugins</code> folder to something like <code>plugins-off</code>. This deactivates all plugins</li>
-  <li>If the site loads, rename it back, then deactivate plugins one at a time (by renaming each plugin's folder) until you find the one causing the error</li>
-  <li>If plugins aren't the cause, rename your active theme's folder so WordPress falls back to a default theme</li>
+  <li>Click the recovery mode link and log in as normal.</li>
+  <li>WordPress pauses the faulty plugin or theme for your session only, so you can reach the dashboard while visitors still see the error.</li>
+  <li>Go to Plugins (or Appearance &gt; Themes) and deactivate the extension named in the email.</li>
+  <li>Click "Exit Recovery Mode" in the admin bar and check the site in a private window.</li>
 </ol>
+<p>The link expires after a while, so use it promptly. If the email never arrives, the admin address may be old or a former developer's, the message may be in spam, or the site may not send email reliably; see <a href="/blog/wordpress-not-sending-emails-smtp/">fixing WordPress emails with SMTP</a>. A line in wp-config.php can send future recovery emails to a different address:</p>
+<pre><code>define( 'RECOVERY_MODE_EMAIL', 'you@yourdomain.com' );</code></pre>
 
-<h2>Step 3: Read the error details</h2>
+<h2>Step 2: Read the real error with WP_DEBUG_LOG</h2>
+<p>If there's no email, the error log tells you exactly what failed. Open wp-config.php in your host's File Manager or over SFTP, and add these lines above the one that says "That's all, stop editing!", replacing any existing WP_DEBUG line:</p>
+<pre><code>define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );</code></pre>
+<p>Reload the broken page, then open wp-content/debug.log. Look for the most recent line that starts with "PHP Fatal error". It will look something like this:</p>
+<pre><code>PHP Fatal error:  Uncaught Error: Call to undefined function create_function()
+in /home/u123456/public_html/wp-content/plugins/old-slider/slider.php:42</code></pre>
+<p>The path tells you where the problem is: here, a plugin folder called old-slider, using a PHP function that was removed in PHP 8. Many hosting panels also have their own error log, under a name like Errors or Logs.</p>
+<table>
+  <thead><tr><th>Message in the log</th><th>What it usually means</th></tr></thead>
+  <tbody>
+    <tr><td>Allowed memory size of 268435456 bytes exhausted</td><td>PHP ran out of memory; a heavy plugin, import or loop</td></tr>
+    <tr><td>Call to undefined function</td><td>Code written for an older PHP version, a missing extension, or a plugin that depends on another plugin you deactivated</td></tr>
+    <tr><td>syntax error, unexpected</td><td>A typo in code someone edited or pasted</td></tr>
+    <tr><td>Cannot redeclare</td><td>The same function loaded twice, often a snippet pasted twice or two plugins clashing</td></tr>
+    <tr><td>Failed opening required</td><td>A file is missing, usually after an interrupted update</td></tr>
+  </tbody>
+</table>
+<p>When you're done, set WP_DEBUG back to false and delete debug.log. By default that file sits in a public folder, and it can reveal file paths and other details about your site.</p>
+
+<h2>Step 3: Disable plugins through File Manager or SFTP</h2>
+<p>If you can't read the log, disable plugins at file level. This doesn't delete any plugin settings.</p>
+<ol>
+  <li>Open your hosting File Manager (hPanel and cPanel both have one) or connect with an SFTP app such as FileZilla.</li>
+  <li>Go to public_html/wp-content, or wherever WordPress is installed.</li>
+  <li>Rename the plugins folder to plugins-off. WordPress can no longer find any plugins, so none of them load.</li>
+  <li>Reload the site. If it works, a plugin is the cause.</li>
+  <li>Rename the folder back to plugins. WordPress may now show your plugins as deactivated.</li>
+  <li>Reactivate them one at a time, starting with the one updated most recently, and reload the site after each. When the error returns, you've found it.</li>
+</ol>
+<p>If the email or log already named a plugin, just rename that plugin's folder. Also check wp-content/mu-plugins, whose "must-use" plugins load automatically. With SSH access, WP-CLI does the same job without loading the broken code:</p>
+<pre><code>wp plugin list --skip-plugins --skip-themes
+wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
+<p>When the cause is two plugins that work alone but clash together, <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">finding and fixing plugin conflicts</a> walks through the narrowing-down process.</p>
+
+<h2>Step 4: Switch to a default theme</h2>
+<p>If plugins aren't the cause, test the theme. In wp-content/themes, rename your active theme's folder, for example to astra-off. WordPress then falls back to a default theme such as Twenty Twenty-Five, if one is installed; if none is, upload one from WordPress.org first. On a child theme, check the child's functions.php, where copied snippets usually end up. Then roll back the update, undo the edit or ask the theme's developer for a fix.</p>
+
+<h2>Step 5: Check the PHP version and memory limit</h2>
+<p>If the error appeared after a PHP upgrade, or affects several plugins at once, look at the server settings. Once you can reach the dashboard, Tools &gt; Site Health &gt; Info &gt; Server shows the PHP version and PHP memory limit.</p>
 <ul>
-  <li>Your hosting control panel's error log usually shows the exact file and line</li>
-  <li>Or enable WordPress debug logging temporarily to write errors to a private log file, and turn it off afterwards</li>
+  <li><strong>PHP version:</strong> in Hostinger's hPanel this is under the website's Advanced &gt; PHP Configuration at the time of writing; on cPanel hosts look for "Select PHP Version" or "MultiPHP Manager". Switching back to the previous version usually takes effect immediately and buys time to update or replace the old plugin. <a href="/blog/update-php-version-wordpress/">Updating your PHP version safely</a> explains how to move forward properly.</li>
+  <li><strong>Memory:</strong> WordPress can ask for more memory with a line in wp-config.php, but it can't go above the server's own memory_limit, which is set in the hosting panel's PHP options. If raising the limit only delays the error, a plugin is using far more than it should.</li>
 </ul>
-<p>An error mentioning "Allowed memory size exhausted" points to memory limits; one naming a plugin file points to that plugin.</p>
+<pre><code>define( 'WP_MEMORY_LIMIT', '256M' );</code></pre>
+<p>For the full set of memory fixes, see <a href="/blog/wordpress-memory-limit-errors/">how to fix "Allowed memory size exhausted" errors</a>.</p>
 
-<p>For memory errors in detail, see <a href="/blog/wordpress-memory-limit-errors/">how to fix "Allowed memory size exhausted" errors</a>.</p>
+<h2>Step 6: Restore a backup if you can't find the cause</h2>
+<p>If the site needs to be online and you can't pin down the cause quickly, restore the latest backup taken before the error started, then investigate on a staging copy. On a WooCommerce store, a full restore also removes orders placed since that backup, so restore the files only or roll back the single plugin where you can. The <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a> covers both methods.</p>
 
-<h2>Step 4: Fix the cause</h2>
+<h2>Once you're back in: use Site Health</h2>
+<p>Tools &gt; Site Health lists critical issues such as an outdated PHP version, missing PHP extensions or failed scheduled events. For conflicts that are hard to reproduce, the free Health Check &amp; Troubleshooting plugin can disable plugins and switch theme for your login only, while visitors see the normal site. If the log shows files you don't recognise, check the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a> before reactivating everything.</p>
+
+<h2>How to stop it happening again</h2>
 <ul>
-  <li><strong>Plugin or theme conflict:</strong> update it, roll back to the previous version, or replace it</li>
-  <li><strong>PHP version:</strong> switch back temporarily in the hosting panel, then update the incompatible code; see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a></li>
-  <li><strong>Memory:</strong> increase the PHP memory limit through your host, and look for the heavy plugin causing it</li>
-  <li><strong>Code edit:</strong> undo the change in the file you edited</li>
+  <li>Take a backup before every update, test big updates on staging and update important plugins one at a time; <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a> has the full routine</li>
+  <li>Keep PHP on a supported version, and replace plugins that haven't been updated in years</li>
+  <li>Don't edit theme files in the dashboard's file editor; one typo can take the site down</li>
+  <li>Make sure the admin email is one somebody actually reads</li>
 </ul>
 
-<h2>Step 5: Restore a backup if needed</h2>
-<p>If you can't find the cause quickly and the site needs to be online, restore the most recent working backup, then investigate on a staging copy; see <a href="/blog/wordpress-backup-restore-guide/">backup and restore</a>.</p>
+<h2>FAQs</h2>
+<h3>Is my content lost when WordPress shows a critical error?</h3>
+<p>Almost never. Pages, posts, products and orders are stored in the database, and the error comes from PHP code in a plugin, theme or custom file. Once the faulty code is disabled or fixed, the content reappears exactly as it was.</p>
+<h3>Why didn't I get the recovery mode email?</h3>
+<p>Usually because the administration email in Settings &gt; General is out of date, the email went to spam, or the site can't send email reliably. Setting up SMTP fixes the last one. In the meantime, read debug.log or disable plugins over File Manager instead.</p>
+<h3>Why does the critical error appear after updating WordPress or PHP?</h3>
+<p>Because an old plugin or theme uses code the new version no longer supports, or two updated plugins now clash. The fix is to identify that plugin from the email or log, then update, roll back or replace it.</p>
+<h3>The critical error only shows in wp-admin or on one page. Why?</h3>
+<p>The faulty code only runs there: a plugin's settings screen, the editor, or a shortcode, widget or form on that one page. The same steps apply. Check the log or the recovery email, then disable the plugin responsible.</p>
+<h3>Can a hack cause "There has been a critical error"?</h3>
+<p>Occasionally. Malware can corrupt files or inject broken code. If the log names files you don't recognise, or the error keeps returning after a clean reinstall of plugins, treat it as a possible hack and clean the site rather than just restoring it.</p>
 
-<h2>Prevent it next time</h2>
-<ul>
-  <li>Test updates on a staging site first; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
-  <li>Update in a sensible order and one at a time; see <a href="/blog/update-wordpress-safely/">updating WordPress safely</a></li>
-  <li>Keep automatic backups</li>
-  <li>Avoid editing theme files directly in the dashboard</li>
-</ul>
-
-<h2>Need it fixed now?</h2>
-<p>I fix critical errors and broken WordPress sites quickly, usually the same day. See <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or read about <a href="/blog/common-wordpress-errors-fixes/">other common WordPress errors</a>.</p>
+<p>The critical error is one of several errors that share the same causes; <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a> maps the rest. If your site is showing it now, or you'd rather not face it again, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages and forms afterwards, and fix or roll back anything that breaks.</p>
 `,
   },
   {

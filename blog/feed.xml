@@ -140,11 +140,11 @@
     <description>A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.</description>
   </item>
   <item>
-    <title>Core Web Vitals Explained for Business Owners (LCP, INP, CLS)</title>
+    <title>Core Web Vitals Explained for Business Owners: LCP, INP and CLS, What Counts as Good and How to Improve Them</title>
     <link>https://samverse.space/blog/core-web-vitals-explained/</link>
     <guid>https://samverse.space/blog/core-web-vitals-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Core Web Vitals in plain English: what LCP, INP and CLS mean, why they matter for Google and your customers, and how to improve them on a WordPress website.</description>
+    <description>Core Web Vitals explained: LCP, INP and CLS thresholds, field vs lab data, the 28-day window, the Search Console report and what to fix first on WordPress.</description>
   </item>
   <item>
     <title>How to Set Up Google Analytics 4 and Search Console for Your Business Website, and Link Them Together</title>
@@ -455,11 +455,11 @@
     <description>What event and wedding planners need on their website: galleries, service packages, vendor partners, testimonials, enquiry forms and local wedding SEO.</description>
   </item>
   <item>
-    <title>WordPress Backup and Restore: A Simple Guide for Business Owners</title>
+    <title>WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks</title>
     <link>https://samverse.space/blog/wordpress-backup-restore-guide/</link>
     <guid>https://samverse.space/blog/wordpress-backup-restore-guide/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How WordPress backups work, what to back up, how often, where to store copies, and how to restore your site safely when something goes wrong, explained simply.</description>
+    <description>How to back up and restore WordPress: what to include, how often, the 3-2-1 rule, UpdraftPlus and host backups, and restoring by plugin or by hand.</description>
   </item>
   <item>
     <title>WooCommerce Product Page Optimization: 12 Ways to Sell More</title>
@@ -721,11 +721,11 @@
     <description>WordPress user roles explained simply: administrator, editor, author, contributor, subscriber and shop manager, and safe access for staff and agencies.</description>
   </item>
   <item>
-    <title>Uptime Monitoring Explained: Know When Your Website Goes Down</title>
+    <title>Uptime Monitoring Explained: How to Know Your Website Is Down Before Your Customers Do</title>
     <link>https://samverse.space/blog/uptime-monitoring-explained/</link>
     <guid>https://samverse.space/blog/uptime-monitoring-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Uptime monitoring for business websites: what to monitor, from forms and checkout to SSL and domain expiry, how alerts work and what to do during an outage.</description>
+    <description>Website uptime monitoring explained: UptimeRobot, Better Stack and Jetpack Monitor, check intervals, keyword checks, and SSL and domain expiry alerts.</description>
   </item>
   <item>
     <title>Website Speed on Indian Mobile Networks: Building for Real-World Conditions</title>
@@ -791,11 +791,11 @@
     <description>How real estate agents and brokers win clients online: sale and rent listings, area expertise, owner listing forms, WhatsApp enquiries and local SEO.</description>
   </item>
   <item>
-    <title>Common WordPress Errors Explained (and What to Do About Them)</title>
+    <title>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</title>
     <link>https://samverse.space/blog/common-wordpress-errors-fixes/</link>
     <guid>https://samverse.space/blog/common-wordpress-errors-fixes/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Common WordPress errors and safe first fixes: white screen, critical error, 500 and database connection errors, 404s and maintenance mode, in plain English.</description>
+    <description>Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.</description>
   </item>
   <item>
     <title>SSL Certificate Errors Explained: &quot;Not Secure&quot;, &quot;Connection Not Private&quot; and How to Fix Them</title>
@@ -987,11 +987,11 @@
     <description>Use AI writing tools for website content without hurting trust or SEO: good uses, risks, fact-checking, adding real experience, editing and disclosure.</description>
   </item>
   <item>
-    <title>Website Maintenance vs Website Management: What's the Difference?</title>
+    <title>Website Maintenance vs Website Management: What Each Covers and Which Your Business Needs</title>
     <link>https://samverse.space/blog/website-maintenance-vs-management/</link>
     <guid>https://samverse.space/blog/website-maintenance-vs-management/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Website maintenance vs management: keeping your site safe and working versus updating content, SEO and improvements, and which one your business needs.</description>
+    <description>Website maintenance vs management: keeping a site secure and working versus growing it with content, SEO and improvements, and which one you need.</description>
   </item>
   <item>
     <title>WordPress Multisite: What It Is, When a Business Needs It, and What It Means for SEO</title>
@@ -1505,11 +1505,11 @@
     <description>Trustworthy websites for psychologists and counsellors: credentials, approaches, session formats, fees, first-session info, privacy and ethical marketing.</description>
   </item>
   <item>
-    <title>How to Update Your WordPress Site's PHP Version Safely</title>
+    <title>How to Update Your WordPress Site's PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes</title>
     <link>https://samverse.space/blog/update-php-version-wordpress/</link>
     <guid>https://samverse.space/blog/update-php-version-wordpress/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Update your WordPress PHP version safely: why it matters for speed and security, how to check it, switch versions in your hosting panel and fix breakages.</description>
+    <description>Update your WordPress PHP version safely: check compatibility on staging, switch in hPanel or cPanel, re-enable extensions and fix anything that breaks.</description>
   </item>
   <item>
     <title>WordPress Database Optimisation: How to Clean Up and Speed Up Your Database Safely</title>
@@ -1673,11 +1673,11 @@
     <description>Own website vs Amazon, Flipkart or Meesho: where should you sell? Compare traffic, fees, control, customer data, brand building and running both together.</description>
   </item>
   <item>
-    <title>Website Down or Not Opening? What to Check and Do, Step by Step</title>
+    <title>Website Down or Not Opening? What to Check and Do, in the Right Order</title>
     <link>https://samverse.space/blog/website-down-what-to-do/</link>
     <guid>https://samverse.space/blog/website-down-what-to-do/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Website down? Follow these steps: confirm the outage, read the error, check domain, hosting and recent changes, call your host and restore a backup.</description>
+    <description>Website down or not opening? Check if it's down for everyone, read the error, then check domain and DNS, hosting limits, SSL and recent changes, in that order.</description>
   </item>
   <item>
     <title>Domain Name Expired? How to Get It Back, What Breaks in the Meantime and How to Stop It Happening Again</title>
@@ -1736,11 +1736,11 @@
     <description>Give clear website feedback to your developer: consolidate comments, be specific, use screenshots, separate bugs from changes and focus on goals.</description>
   </item>
   <item>
-    <title>Bug or Change Request? Understanding Website Support After Launch</title>
+    <title>Bug or Change Request? How to Tell the Difference, Report Website Issues Well and What Post-Launch Support Covers</title>
     <link>https://samverse.space/blog/website-bug-vs-change-request/</link>
     <guid>https://samverse.space/blog/website-bug-vs-change-request/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Bug or change request? How they differ, what post-launch website support usually covers, how to report issues well and when a maintenance plan makes sense.</description>
+    <description>Website bug vs change request: clear definitions, examples, grey areas, how to report a bug with steps and screenshots, and how post-launch support works.</description>
   </item>
   <item>
     <title>Outsourcing WordPress Development to India: A Practical Guide for Agencies and Businesses</title>
@@ -1988,11 +1988,11 @@
     <description>Hosting renewal charges much higher than you paid? Why intro prices end, how add-ons and GST add up, and when to renew, negotiate, downgrade or move hosts.</description>
   </item>
   <item>
-    <title>What a Monthly WordPress Maintenance Plan Should Include</title>
+    <title>Monthly Website Maintenance Plans: What a Good WordPress Plan Should Include, and What Is Usually Extra</title>
     <link>https://samverse.space/blog/monthly-website-maintenance-plan/</link>
     <guid>https://samverse.space/blog/monthly-website-maintenance-plan/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What a monthly website maintenance plan includes: updates, backups, security scans, uptime monitoring, speed and form checks, and a monthly report.</description>
+    <description>What a monthly website maintenance plan should include: tested updates, off-site backups, security, uptime and form checks, content time and a monthly report.</description>
   </item>
   <item>
     <title>Domain, Hosting, Email and Licence Renewals: A Checklist for Business Owners</title>
@@ -2009,11 +2009,11 @@
     <description>Set up business email on Hostinger with your domain: Hostinger email vs Google Workspace or Zoho, MX, SPF, DKIM and DMARC records, phones and form emails.</description>
   </item>
   <item>
-    <title>&quot;There Has Been a Critical Error on This Website&quot;: How to Fix It Step by Step</title>
+    <title>&quot;There Has Been a Critical Error on This Website&quot;: How to Fix It in WordPress, Step by Step</title>
     <link>https://samverse.space/blog/fix-wordpress-critical-error/</link>
     <guid>https://samverse.space/blog/fix-wordpress-critical-error/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Fix the WordPress critical error: causes like plugin or theme updates, PHP version and memory limits, using recovery mode and finding the culprit via SFTP.</description>
+    <description>Fix &quot;There has been a critical error on this website&quot;: use the recovery mode email, read debug.log, disable plugins via File Manager and check PHP.</description>
   </item>
   <item>
     <title>WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template</title>
