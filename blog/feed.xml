@@ -1708,11 +1708,11 @@
     <description>How to remove the &quot;Deceptive site ahead&quot; warning: find the phishing pages, clean the site, request a review in Search Console and know how long it takes.</description>
   </item>
   <item>
-    <title>How to Secure Your WordPress Login: 2FA, Strong Passwords and More</title>
+    <title>How to Secure Your WordPress Login: Two-Factor Authentication, Passkeys, Login Limits, Turnstile and the Login URL Question</title>
     <link>https://samverse.space/blog/secure-wordpress-login/</link>
     <guid>https://samverse.space/blog/secure-wordpress-login/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Secure your WordPress login from brute-force attacks: strong unique passwords, two-factor authentication, login limits, user roles, XML-RPC and firewalls.</description>
+    <description>Secure your WordPress login: two-factor authentication, passkeys, strong passwords, login limits, Cloudflare Turnstile and whether to move wp-login.php.</description>
   </item>
   <item>
     <title>How to Compare Website Quotes: Why Prices Vary So Much</title>
@@ -1869,39 +1869,39 @@
     <description>WordPress site redirecting to spam? Why redirect malware hides, where it lives (.htaccess, wp-config, theme files, database) and how to remove it for good.</description>
   </item>
   <item>
-    <title>Japanese Keyword Hack and SEO Spam: How to Clean Your Site and Google Results</title>
+    <title>Japanese Keyword Hack and SEO Spam on WordPress: How to Find the Cloaked Pages, Clean Your Site and Clear Google Results</title>
     <link>https://samverse.space/blog/fix-japanese-keyword-seo-spam-hack/</link>
     <guid>https://samverse.space/blog/fix-japanese-keyword-seo-spam-hack/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Fix the Japanese keyword hack and pharma SEO spam on WordPress: spot cloaked pages, remove rogue Search Console owners, clean files and purge spam URLs.</description>
+    <description>Fix the Japanese keyword hack on WordPress: confirm cloaked spam in Search Console, remove hacker-added owners, delete the generator and clear spam URLs.</description>
   </item>
   <item>
-    <title>How to Find and Remove Backdoors in a Hacked WordPress Site</title>
+    <title>How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check</title>
     <link>https://samverse.space/blog/find-remove-wordpress-backdoors/</link>
     <guid>https://samverse.space/blog/find-remove-wordpress-backdoors/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Find and remove WordPress backdoors: where attackers hide them, from uploads and fake plugins to core files, database and cron, and how to stop reinfection.</description>
+    <description>Find and remove WordPress backdoors: where they hide, from uploads and mu-plugins to .user.ini, cron and rogue admins, and the WP-CLI checks to find them.</description>
   </item>
   <item>
-    <title>Website or Hosting Account Sending Spam Emails? How to Find and Stop It</title>
+    <title>Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists</title>
     <link>https://samverse.space/blog/wordpress-site-sending-spam-emails/</link>
     <guid>https://samverse.space/blog/wordpress-site-sending-spam-emails/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Website sending spam emails? Find the cause, from mailer scripts and hacked email accounts to abused forms, clean it up and get your domain off blacklists.</description>
+    <description>Website or hosting account sending spam? Find the source in mail logs, remove mailer scripts, secure leaked SMTP logins and get your IP off blacklists.</description>
   </item>
   <item>
-    <title>WooCommerce Card Skimming Malware: Signs, Response and Prevention</title>
+    <title>WooCommerce Card Skimming Malware: How to Spot a Checkout Skimmer, Respond and Protect Customers</title>
     <link>https://samverse.space/blog/woocommerce-checkout-skimmer-malware/</link>
     <guid>https://samverse.space/blog/woocommerce-checkout-skimmer-malware/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WooCommerce card skimmer malware: warning signs, what to do right away, cleaning the store, notification duties and payment setups that cut the risk.</description>
+    <description>WooCommerce checkout skimmer malware: how card skimmers hide, how to inspect your checkout scripts, what to tell customers and how a CSP helps prevent it.</description>
   </item>
   <item>
-    <title>Why WordPress Sites Get Hacked: The Real Causes and How to Prevent Them</title>
+    <title>Why WordPress Sites Get Hacked: The Real Causes, How Attacks Work and How to Prevent Each One</title>
     <link>https://samverse.space/blog/why-wordpress-sites-get-hacked/</link>
     <guid>https://samverse.space/blog/why-wordpress-sites-get-hacked/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Why WordPress sites get hacked: outdated plugins, nulled software, weak passwords, shared hosting and infected computers, plus how to fix each.</description>
+    <description>Why WordPress sites get hacked: vulnerable plugins, stolen passwords, nulled themes, neglected hosting and supply-chain attacks, and what prevents each.</description>
   </item>
   <item>
     <title>Nulled WordPress Themes and Plugins: Why Pirated Premium Software Is So Risky</title>
@@ -1911,11 +1911,11 @@
     <description>What nulled WordPress themes and plugins are, the malware, backdoors and SEO spam they often hide, how to check your site for pirated code and replace it.</description>
   </item>
   <item>
-    <title>WordPress Malware Scanners Compared: Plugin, Remote and Server-Side Scanning</title>
+    <title>WordPress Malware Scanners Compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera</title>
     <link>https://samverse.space/blog/wordpress-malware-scanners-compared/</link>
     <guid>https://samverse.space/blog/wordpress-malware-scanners-compared/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress malware scanners compared: plugin, remote and server-side scanning, what each can and cannot detect, and why a clean scan is no guarantee.</description>
+    <description>WordPress malware scanners compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera, remote vs server-side scanning and what each misses.</description>
   </item>
   <item>
     <title>Hosting Account Suspended for Malware? What the Notice Means and How to Get Your Site Back Online</title>
@@ -1939,25 +1939,25 @@
     <description>WordPress file permissions explained: 644 for files, 755 for folders, 600 or 440 for wp-config.php, why 777 is dangerous and how to fix permission errors.</description>
   </item>
   <item>
-    <title>WordPress Firewalls Explained: Cloud, Server and Plugin WAFs</title>
+    <title>WordPress Firewalls (WAF) Explained: Plugin vs Cloud Firewalls, Useful Rules, Rate Limiting and False Positives</title>
     <link>https://samverse.space/blog/wordpress-firewall-waf-explained/</link>
     <guid>https://samverse.space/blog/wordpress-firewall-waf-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress firewalls (WAF) explained: cloud, server-level and plugin firewalls, virtual patching, bot protection and which setup suits a business site.</description>
+    <description>WordPress firewall (WAF) explained: plugin firewalls vs DNS-level ones like Cloudflare and Sucuri, rules worth adding, rate limiting and false positives.</description>
   </item>
   <item>
-    <title>Hardening wp-config.php: Security Settings Every WordPress Site Should Use</title>
+    <title>Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip</title>
     <link>https://samverse.space/blog/harden-wp-config-php/</link>
     <guid>https://samverse.space/blog/harden-wp-config-php/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Harden wp-config.php: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file, with cautions.</description>
+    <description>Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.</description>
   </item>
   <item>
-    <title>How to Recover Google Rankings After Your Website Was Hacked</title>
+    <title>How to Recover Google Rankings After Your Website Was Hacked: Manual Actions, Spam URLs and a Realistic Timeline</title>
     <link>https://samverse.space/blog/recover-rankings-after-hack/</link>
     <guid>https://samverse.space/blog/recover-rankings-after-hack/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Recover Google rankings after a website hack: remove spam URLs, fix injected noindex, robots and canonical changes, and monitor Search Console.</description>
+    <description>Recover Google rankings after a hack: security issues vs manual actions, review requests, clearing spam URLs, when to disavow and a realistic timeline.</description>
   </item>
   <item>
     <title>How to Set Up a WordPress Website on Hostinger: A Step-by-Step Guide</title>

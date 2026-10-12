@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Secure Your WordPress Login (2FA &amp; More) | Samverse</title>
-  <meta name="description" content="Secure your WordPress login from brute-force attacks: strong unique passwords, two-factor authentication, login limits, user roles, XML-RPC and firewalls.">
+  <title>How to Secure Your WordPress Login: 2FA, Passkeys &amp; More</title>
+  <meta name="description" content="Secure your WordPress login: two-factor authentication, passkeys, strong passwords, login limits, Cloudflare Turnstile and whether to move wp-login.php.">
   <meta name="author" content="Sameer Gupta">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/secure-wordpress-login/">
-  <meta property="og:title" content="How to Secure Your WordPress Login (2FA &amp; More) | Samverse">
-  <meta property="og:description" content="Secure your WordPress login from brute-force attacks: strong unique passwords, two-factor authentication, login limits, user roles, XML-RPC and firewalls.">
+  <meta property="og:title" content="How to Secure Your WordPress Login: 2FA, Passkeys &amp; More">
+  <meta property="og:description" content="Secure your WordPress login: two-factor authentication, passkeys, strong passwords, login limits, Cloudflare Turnstile and whether to move wp-login.php.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-secure-wordpress-login.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/secure-wordpress-login/#article",
-      "headline": "How to Secure Your WordPress Login: 2FA, Strong Passwords and More",
-      "description": "Secure your WordPress login from brute-force attacks: strong unique passwords, two-factor authentication, login limits, user roles, XML-RPC and firewalls.",
+      "headline": "How to Secure Your WordPress Login: Two-Factor Authentication, Passkeys, Login Limits, Turnstile and the Login URL Question",
+      "description": "Secure your WordPress login: two-factor authentication, passkeys, strong passwords, login limits, Cloudflare Turnstile and whether to move wp-login.php.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
+      "dateModified": "2026-10-12",
       "mainEntityOfPage": "https://samverse.space/blog/secure-wordpress-login/",
       "image": "https://samverse.space/assets/og/blog-secure-wordpress-login.png",
       "articleSection": "Security",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "How to Secure Your WordPress Login: 2FA, Strong Passwords and More",
+          "name": "How to Secure Your WordPress Login: Two-Factor Authentication, Passkeys, Login Limits, Turnstile and the Login URL Question",
           "item": "https://samverse.space/blog/secure-wordpress-login/"
         }
       ]
@@ -129,22 +129,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
-          <h1>How to Secure Your WordPress Login: 2FA, Strong Passwords and More</h1>
-          <p class="post-dek">Secure your WordPress login from brute-force attacks: strong unique passwords, two-factor authentication, login limits, user roles, XML-RPC and firewalls.</p>
+          <h1>How to Secure Your WordPress Login: Two-Factor Authentication, Passkeys, Login Limits, Turnstile and the Login URL Question</h1>
+          <p class="post-dek">Secure your WordPress login: two-factor authentication, passkeys, strong passwords, login limits, Cloudflare Turnstile and whether to move wp-login.php.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Sameer Gupta</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · 3 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=How%20to%20Secure%20Your%20WordPress%20Login%3A%202FA%2C%20Strong%20Passwords%20and%20More%20https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=How%20to%20Secure%20Your%20WordPress%20Login%3A%20Two-Factor%20Authentication%2C%20Passkeys%2C%20Login%20Limits%2C%20Turnstile%20and%20the%20Login%20URL%20Question%20https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=How%20to%20Secure%20Your%20WordPress%20Login%3A%202FA%2C%20Strong%20Passwords%20and%20More&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=How%20to%20Secure%20Your%20WordPress%20Login%3A%20Two-Factor%20Authentication%2C%20Passkeys%2C%20Login%20Limits%2C%20Turnstile%20and%20the%20Login%20URL%20Question&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/secure-wordpress-login/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-secure-wordpress-login.webp" alt="How to Secure Your WordPress Login: 2FA, Strong Passwords and More" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-secure-wordpress-login.webp" alt="How to Secure Your WordPress Login: Two-Factor Authentication, Passkeys, Login Limits, Turnstile and the Login URL Question" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -153,91 +153,153 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#1-strong-unique-passwords">1. Strong, unique passwords</a></li>
-              <li><a href="#2-two-factor-authentication-2fa">2. Two-factor authentication (2FA)</a></li>
-              <li><a href="#3-limit-login-attempts">3. Limit login attempts</a></li>
-              <li><a href="#4-avoid-predictable-usernames">4. Avoid predictable usernames</a></li>
-              <li><a href="#5-use-the-right-roles">5. Use the right roles</a></li>
-              <li><a href="#6-disable-xml-rpc-if-you-don-t-need-it">6. Disable XML-RPC if you don't need it</a></li>
-              <li><a href="#7-add-a-firewall">7. Add a firewall</a></li>
-              <li><a href="#8-bot-protection-on-the-login-form">8. Bot protection on the login form</a></li>
-              <li><a href="#9-changing-the-login-url">9. Changing the login URL</a></li>
-              <li><a href="#10-watch-for-suspicious-activity">10. Watch for suspicious activity</a></li>
+              <li><a href="#login-protections-by-how-much-they-help">Login protections, by how much they help</a></li>
+              <li><a href="#strong-unique-passwords-and-application-passwords">Strong, unique passwords, and application passwords</a></li>
+              <li><a href="#two-factor-authentication">Two-factor authentication</a></li>
+              <li><a href="#passkeys">Passkeys</a></li>
+              <li><a href="#limit-login-attempts">Limit login attempts</a></li>
+              <li><a href="#cloudflare-turnstile-and-other-bot-checks">Cloudflare Turnstile and other bot checks</a></li>
+              <li><a href="#should-you-change-the-login-url">Should you change the login URL?</a></li>
+              <li><a href="#the-other-doors-into-your-site">The other doors into your site</a></li>
+              <li><a href="#login-alerts-sessions-and-roles">Login alerts, sessions and roles</a></li>
+              <li><a href="#signs-someone-has-already-logged-in">Signs someone has already logged in</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Use unique, manager-generated passwords and mandatory 2FA for admins.</li>
-              <li>Limit login attempts, avoid &quot;admin&quot; usernames and use least-privilege roles.</li>
-              <li>Disable unused XML-RPC, add a firewall and bot protection, and monitor activity.</li>
+              <li>Two-factor authentication for every administrator, editor and shop manager, plus unique passwords from a password manager, stops most login attacks even when a password leaks.</li>
+              <li>Limit login attempts and add Cloudflare Turnstile to every login form, including WooCommerce's account page, and make sure your security plugin sees real visitor IPs if you use a proxy such as Cloudflare.</li>
+              <li>Changing the login URL cuts bot noise but isn't real protection, and passkeys are the strongest option where your plugins support them.</li>
             </ul>
           </div>
-<p>Bots constantly try to guess passwords on WordPress sites, and stolen or reused passwords are a common way sites get hacked. Securing the login is one of the simplest, most effective security steps you can take.</p>
+<p>To secure your WordPress login, give every administrator, editor and shop manager their own account with a long, unique password from a password manager, turn on two-factor authentication (2FA) for anyone who can change the site, limit failed login attempts, and add a bot check such as Cloudflare Turnstile to the login form. Passkeys are the strongest option where your plugins support them. Changing the login URL cuts bot noise, but it isn't real protection on its own.</p>
+<p>If unknown admin accounts have already appeared, someone may already have got in, and this becomes a cleanup first. Resetting passwords and users is part of my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>, along with removing whatever the attacker left behind.</p>
+<p>Login security is one part of the wider <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. This guide goes into the login itself in more depth.</p>
 
-<h2 id="1-strong-unique-passwords">1. Strong, unique passwords</h2>
+<h2 id="login-protections-by-how-much-they-help">Login protections, by how much they help</h2>
+<table>
+  <thead><tr><th>Protection</th><th>What it stops</th><th>Effort</th></tr></thead>
+  <tbody>
+    <tr><td>Two-factor authentication</td><td>Logins with a stolen, guessed or reused password</td><td>Low: a plugin and an app on each phone</td></tr>
+    <tr><td>Unique passwords from a password manager</td><td>Credential stuffing with passwords leaked elsewhere</td><td>Low</td></tr>
+    <tr><td>Passkeys</td><td>Password theft and phishing</td><td>Low to medium; plugin support varies</td></tr>
+    <tr><td>Login attempt limits</td><td>Endless password guessing from one address</td><td>Low</td></tr>
+    <tr><td>Cloudflare Turnstile or another bot check</td><td>Automated login attempts</td><td>Low</td></tr>
+    <tr><td>Restricting XML-RPC</td><td>Password guessing through xmlrpc.php</td><td>Low, after checking nothing needs it</td></tr>
+    <tr><td>Firewall rate limiting</td><td>Large distributed attacks</td><td>Medium</td></tr>
+    <tr><td>Changing the login URL</td><td>Bot noise in your logs</td><td>Low, with some side effects</td></tr>
+  </tbody>
+</table>
+
+<h2 id="strong-unique-passwords-and-application-passwords">Strong, unique passwords, and application passwords</h2>
 <ul>
-  <li>Use long, random passwords generated by a password manager</li>
-  <li>Never reuse a password from another service</li>
-  <li>Don't share logins; give everyone their own account</li>
+  <li><strong>Use a password manager</strong> to generate and store long, random passwords, and never reuse one from another service. Passwords leaked in someone else's breach are what credential-stuffing bots try first.</li>
+  <li><strong>One account per person.</strong> A shared login can't be taken away from one person and leaves no record of who did what.</li>
+  <li><strong>Don't use "admin" as a username,</strong> and make sure your public display name isn't your login name. Usernames aren't secret, but there's no reason to hand them out.</li>
+  <li><strong>Check application passwords.</strong> Since WordPress 5.6, each profile has an Application Passwords section, used by apps and integrations to connect without your main password. Revoke any you don't recognise; an attacker with admin access can add one to keep a way back in. If nothing uses them, a security plugin setting or a small code snippet can turn the feature off.</li>
 </ul>
-
-<h2 id="2-two-factor-authentication-2fa">2. Two-factor authentication (2FA)</h2>
-<p>2FA asks for a second code, usually from an authenticator app, after the password. Even if a password is stolen, the attacker can't log in without the code. Add it with a security or 2FA plugin, and make it mandatory for administrators at least.</p>
 
 <aside class="inline-cta">
   <strong>Need help with malware removal &amp; security?</strong>
   <p>Hacked WordPress site? Fast malware removal, spam redirect and injected code cleanup, Google blacklist removal help and hardening to stop reinfection.</p>
-  <div><a href="/wordpress-malware-removal/" class="link-inline">See Malware Removal &amp; Security →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Secure%20Your%20WordPress%20Login%3A%202FA%2C%20Strong%20Passwords%20and%20More%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/wordpress-malware-removal/" class="link-inline">See Malware Removal &amp; Security →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Secure%20Your%20WordPress%20Login%3A%20Two-Factor%20Authentication%2C%20Passkeys%2C%20Login%20Limits%2C%20Turnstile%20and%20the%20Login%20URL%20Question%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="3-limit-login-attempts">3. Limit login attempts</h2>
-<p>Block or slow down IP addresses after repeated failed logins. Many security plugins and hosts include this.</p>
+<h2 id="two-factor-authentication">Two-factor authentication</h2>
+<p>2FA asks for a second proof, usually a six-digit code from an app on your phone, after the password, so a stolen password alone is no longer enough. Free options at the time of writing include Wordfence Login Security, Solid Security's free version and the Two Factor plugin maintained by WordPress.org contributors.</p>
+<table>
+  <thead><tr><th>Method</th><th>How strong</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Authenticator app (Google Authenticator, Microsoft Authenticator and similar)</td><td>Strong</td><td>The sensible default for most sites</td></tr>
+    <tr><td>Code by email</td><td>Moderate</td><td>Only as safe as the inbox; better than nothing for less technical editors</td></tr>
+    <tr><td>Code by SMS</td><td>Moderate</td><td>Can be lost to a SIM swap; needs an SMS service</td></tr>
+    <tr><td>Security key or passkey</td><td>Strongest</td><td>Resistant to phishing; needs plugin support</td></tr>
+  </tbody>
+</table>
+<p>Make it mandatory for administrators, editors and shop managers, not just available. Save the backup codes in your password manager, so a lost or reset phone doesn't lock you out.</p>
 
-<h2 id="4-avoid-predictable-usernames">4. Avoid predictable usernames</h2>
-<p>Don't use "admin" or your domain name as the administrator username. Create a new admin user with a unique name and remove the old one (reassigning its content).</p>
+<h2 id="passkeys">Passkeys</h2>
+<p>A passkey replaces the password with a cryptographic key stored on your phone, computer or password manager, unlocked with your fingerprint, face or device PIN. There is nothing to guess or reuse, and a fake login page can't capture it, because the passkey only works on the real domain. WordPress core doesn't include passkeys at the time of writing, but some security plugins, including Solid Security's paid version, and dedicated passkey plugins add them. If yours supports passkeys, they are a good choice for administrators; keep 2FA as a fallback.</p>
 
-<h2 id="5-use-the-right-roles">5. Use the right roles</h2>
-<p>Give people only the access they need: Editors for content, Shop Managers for orders, and very few Administrators. Remove accounts for staff or developers who no longer need access. See <a href="/blog/wordpress-user-roles-explained/">user roles explained</a>.</p>
+<h2 id="limit-login-attempts">Limit login attempts</h2>
+<p>Login limits lock out an IP address after a set number of failed attempts. Most security plugins include this, as do some hosts. Keep the lockout short at first, and make sure you have another way back in, such as your hosting account or a second admin.</p>
+<p>One common problem: if your site sits behind Cloudflare or another proxy, the plugin may see the proxy's IP address instead of the visitor's. It then either locks out many real people at once or never locks anyone out. Check the plugin's setting for how it detects IP addresses and point it at the header your proxy uses. Large attacks also come from thousands of addresses at once, which is why 2FA matters more than limits.</p>
 
-<h2 id="6-disable-xml-rpc-if-you-don-t-need-it">6. Disable XML-RPC if you don't need it</h2>
-<p>XML-RPC is an older remote access feature that attackers use for password-guessing. If you don't use apps or services that need it, disable it with a security plugin or server rule.</p>
-
-<p>Not sure whether anything on your site still needs it? See <a href="/blog/wordpress-xmlrpc-explained/">WordPress XML-RPC explained</a> for how to check and how to disable it safely.</p>
-
-<h2 id="7-add-a-firewall">7. Add a firewall</h2>
-<p>A web application firewall (from your host, Cloudflare or a security plugin) blocks known malicious traffic before it reaches your login page.</p>
-
-<h2 id="8-bot-protection-on-the-login-form">8. Bot protection on the login form</h2>
-<p>An invisible challenge like Cloudflare Turnstile or reCAPTCHA stops automated login attempts without annoying real users much.</p>
-
-<h2 id="9-changing-the-login-url">9. Changing the login URL</h2>
-<p>Moving wp-login.php to a custom address reduces bot noise, but it's not real security on its own. Use it alongside the steps above, not instead of them.</p>
-
-<h2 id="10-watch-for-suspicious-activity">10. Watch for suspicious activity</h2>
+<h2 id="cloudflare-turnstile-and-other-bot-checks">Cloudflare Turnstile and other bot checks</h2>
+<p>Turnstile is Cloudflare's free alternative to a CAPTCHA. Most visitors never see a puzzle: it runs a quick background check and lets real people through. You don't need to use Cloudflare's CDN to use it. Add it, with a dedicated plugin or your security plugin, to every form that logs people in or creates accounts:</p>
 <ul>
-  <li>Activity logs showing logins and changes</li>
-  <li>Alerts for new administrator accounts</li>
-  <li>Log out all sessions if you suspect a compromise, then change passwords</li>
+  <li>wp-login.php, including the lost password and registration forms</li>
+  <li>WooCommerce's My Account login and registration, and the checkout if bots hit it</li>
+  <li>Any custom login page your theme or membership plugin adds</li>
+</ul>
+<p>Test logging in afterwards in a private window, because caching and script-delay settings can stop the check from loading.</p>
+
+<h2 id="should-you-change-the-login-url">Should you change the login URL?</h2>
+<p>Moving wp-login.php to a custom address, an option in Solid Security and several small plugins, is popular advice. It has real benefits and real limits.</p>
+<ul>
+  <li><strong>For:</strong> far fewer automated attempts reach the login page, so logs are quieter and the server does less work during bot floods.</li>
+  <li><strong>Against:</strong> it is obscurity, not protection, and the address can leak through links, emails or plugins. Some plugins, themes and integrations assume the default address, and staff forget the new one. WooCommerce's My Account login and XML-RPC are separate ways in that stay open.</li>
+</ul>
+<p>It is fine as an extra on top of 2FA and login limits, not instead of them.</p>
+
+<h2 id="the-other-doors-into-your-site">The other doors into your site</h2>
+<ul>
+  <li><strong>XML-RPC:</strong> lets bots try many passwords in one request. Block or restrict it if nothing uses it; see <a href="/blog/wordpress-xmlrpc-explained/">WordPress XML-RPC explained</a>.</li>
+  <li><strong>WooCommerce account login:</strong> needs the same 2FA, limits and bot check as wp-login.php.</li>
+  <li><strong>Hosting, domain and email accounts:</strong> a stolen hosting password bypasses every WordPress protection, and whoever controls your email can reset your WordPress password. Turn on 2FA for all three.</li>
+  <li><strong>A firewall:</strong> can rate-limit login pages before requests reach WordPress; see <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a>.</li>
 </ul>
 
-<p>Login security is one part of the full <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
+<h2 id="login-alerts-sessions-and-roles">Login alerts, sessions and roles</h2>
+<ul>
+  <li><strong>Get alerts for admin logins.</strong> Most security plugins can email you when an administrator logs in, or when a new admin account is created. An activity log records the rest.</li>
+  <li><strong>Mind session length.</strong> By default WordPress keeps you logged in for two days, or two weeks if you tick Remember Me. On shared or office computers, don't tick it, and log out when you finish.</li>
+  <li><strong>Give fewer people admin rights.</strong> Writers need Author or Editor access, and staff who process orders need Shop Manager, not Administrator. Every account that can't install plugins is one less way to plant a backdoor.</li>
+  <li><strong>Remove accounts when people leave,</strong> including agencies and freelancers once a project ends.</li>
+</ul>
+
+<h2 id="signs-someone-has-already-logged-in">Signs someone has already logged in</h2>
+<ul>
+  <li>Administrator accounts nobody recognises, or a count in the Users screen that doesn't match the accounts you can see</li>
+  <li>Application passwords you didn't create</li>
+  <li>The admin email address changed under Settings &gt; General</li>
+  <li>Login alerts from places you've never been</li>
+</ul>
+<p>If you see any of these, use Log Out Everywhere Else in your profile, change your password from a clean device, remove the unknown accounts and treat the site as possibly compromised. The <a href="/blog/wordpress-user-accounts-audit/">user account audit</a> explains how to review every account properly. If you've simply locked yourself out, <a href="/blog/wordpress-login-not-working-fix/">fixing WordPress login problems</a> covers safe ways back in.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>What is the best way to secure a WordPress login?</h3>
+<p>Two-factor authentication for everyone who can change the site, unique passwords from a password manager, login limits and a bot check. Together those stop most login attacks.</p>
+<h3>Is 2FA really necessary on a small business site?</h3>
+<p>Yes. Login attacks are automated and don't care how big your site is, and 2FA is free and takes a few minutes per user to set up.</p>
+<h3>Does changing the wp-admin login URL make WordPress more secure?</h3>
+<p>Only slightly. It reduces bot traffic and log noise, but a determined attacker can still find a way to log in. Treat it as an extra, not a substitute for 2FA.</p>
+<h3>Can I use passkeys with WordPress?</h3>
+<p>Yes, through a plugin, since WordPress core doesn't include them at the time of writing. Check your security plugin first, and keep 2FA as a fallback.</p>
+<h3>What if I lose the phone with my 2FA app?</h3>
+<p>Use a backup code, or ask another administrator to reset your 2FA. If neither is possible, temporarily disabling the 2FA plugin by renaming its folder over SFTP gets you back in; set 2FA up again straight away.</p>
+<h3>Is Cloudflare Turnstile better than reCAPTCHA?</h3>
+<p>For most sites it is easier on visitors, rarely showing a puzzle, and it doesn't require the Cloudflare CDN. Both work; what matters is that the check is on every login form.</p>
+
+<p>For updates and security monitoring every month, see <a href="/wordpress-maintenance/">WordPress maintenance</a>. If unknown admins have already appeared or you think someone has logged in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Secure%20Your%20WordPress%20Login%3A%202FA%2C%20Strong%20Passwords%20and%20More%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Secure%20Your%20WordPress%20Login%3A%20Two-Factor%20Authentication%2C%20Passkeys%2C%20Login%20Limits%2C%20Turnstile%20and%20the%20Login%20URL%20Question%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=How%20to%20Secure%20Your%20WordPress%20Login%3A%202FA%2C%20Strong%20Passwords%20and%20More%20https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=How%20to%20Secure%20Your%20WordPress%20Login%3A%20Two-Factor%20Authentication%2C%20Passkeys%2C%20Login%20Limits%2C%20Turnstile%20and%20the%20Login%20URL%20Question%20https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=How%20to%20Secure%20Your%20WordPress%20Login%3A%202FA%2C%20Strong%20Passwords%20and%20More&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=How%20to%20Secure%20Your%20WordPress%20Login%3A%20Two-Factor%20Authentication%2C%20Passkeys%2C%20Login%20Limits%2C%20Turnstile%20and%20the%20Login%20URL%20Question&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/secure-wordpress-login/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -257,23 +319,24 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#1-strong-unique-passwords">1. Strong, unique passwords</a></li>
-              <li><a href="#2-two-factor-authentication-2fa">2. Two-factor authentication (2FA)</a></li>
-              <li><a href="#3-limit-login-attempts">3. Limit login attempts</a></li>
-              <li><a href="#4-avoid-predictable-usernames">4. Avoid predictable usernames</a></li>
-              <li><a href="#5-use-the-right-roles">5. Use the right roles</a></li>
-              <li><a href="#6-disable-xml-rpc-if-you-don-t-need-it">6. Disable XML-RPC if you don't need it</a></li>
-              <li><a href="#7-add-a-firewall">7. Add a firewall</a></li>
-              <li><a href="#8-bot-protection-on-the-login-form">8. Bot protection on the login form</a></li>
-              <li><a href="#9-changing-the-login-url">9. Changing the login URL</a></li>
-              <li><a href="#10-watch-for-suspicious-activity">10. Watch for suspicious activity</a></li>
+              <li><a href="#login-protections-by-how-much-they-help">Login protections, by how much they help</a></li>
+              <li><a href="#strong-unique-passwords-and-application-passwords">Strong, unique passwords, and application passwords</a></li>
+              <li><a href="#two-factor-authentication">Two-factor authentication</a></li>
+              <li><a href="#passkeys">Passkeys</a></li>
+              <li><a href="#limit-login-attempts">Limit login attempts</a></li>
+              <li><a href="#cloudflare-turnstile-and-other-bot-checks">Cloudflare Turnstile and other bot checks</a></li>
+              <li><a href="#should-you-change-the-login-url">Should you change the login URL?</a></li>
+              <li><a href="#the-other-doors-into-your-site">The other doors into your site</a></li>
+              <li><a href="#login-alerts-sessions-and-roles">Login alerts, sessions and roles</a></li>
+              <li><a href="#signs-someone-has-already-logged-in">Signs someone has already logged in</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Secure%20Your%20WordPress%20Login%3A%202FA%2C%20Strong%20Passwords%20and%20More%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Secure%20Your%20WordPress%20Login%3A%20Two-Factor%20Authentication%2C%20Passkeys%2C%20Login%20Limits%2C%20Turnstile%20and%20the%20Login%20URL%20Question%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>
@@ -294,9 +357,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/wordpress-user-roles-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-user-roles-explained.webp" alt="WordPress User Roles Explained: Who Should Have Which Access" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress User Roles Explained: Who Should Have Which Access</h3><p>WordPress user roles explained simply: administrator, editor, author, contributor, subscriber and shop manager, and safe access for staff and agencies.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
-          <a class="post-card" href="/blog/why-wordpress-sites-get-hacked/"><img class="post-card-img" src="/assets/og/blog-why-wordpress-sites-get-hacked.webp" alt="Why WordPress Sites Get Hacked: The Real Causes and How to Prevent Them" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>Why WordPress Sites Get Hacked: The Real Causes and How to Prevent Them</h3><p>Why WordPress sites get hacked: outdated plugins, nulled software, weak passwords, shared hosting and infected computers, plus how to fix each.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/why-wordpress-sites-get-hacked/"><img class="post-card-img" src="/assets/og/blog-why-wordpress-sites-get-hacked.webp" alt="Why WordPress Sites Get Hacked: The Real Causes, How Attacks Work and How to Prevent Each One" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>Why WordPress Sites Get Hacked: The Real Causes, How Attacks Work and How to Prevent Each One</h3><p>Why WordPress sites get hacked: vulnerable plugins, stolen passwords, nulled themes, neglected hosting and supply-chain attacks, and what prevents each.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First</h3><p>How to tell if your WordPress site has been hacked: a 10-minute check with Google tools, the clear warning signs, and what to do first if something is wrong.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="WordPress Security Checklist: 25 Steps to Harden a Business Website" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist: 25 Steps to Harden a Business Website</h3><p>A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
         </div>
       </div>
     </section>

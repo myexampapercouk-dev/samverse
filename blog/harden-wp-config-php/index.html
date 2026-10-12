@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harden wp-config.php: WordPress Security Settings | Samverse</title>
-  <meta name="description" content="Harden wp-config.php: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file, with cautions.">
+  <title>How to Harden wp-config.php: WordPress Security Settings</title>
+  <meta name="description" content="Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.">
   <meta name="author" content="Sameer Gupta">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/harden-wp-config-php/">
-  <meta property="og:title" content="Harden wp-config.php: WordPress Security Settings | Samverse">
-  <meta property="og:description" content="Harden wp-config.php: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file, with cautions.">
+  <meta property="og:title" content="How to Harden wp-config.php: WordPress Security Settings">
+  <meta property="og:description" content="Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-harden-wp-config-php.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/harden-wp-config-php/#article",
-      "headline": "Hardening wp-config.php: Security Settings Every WordPress Site Should Use",
-      "description": "Harden wp-config.php: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file, with cautions.",
+      "headline": "Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip",
+      "description": "Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
+      "dateModified": "2026-10-12",
       "mainEntityOfPage": "https://samverse.space/blog/harden-wp-config-php/",
       "image": "https://samverse.space/assets/og/blog-harden-wp-config-php.png",
       "articleSection": "Security",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Hardening wp-config.php: Security Settings Every WordPress Site Should Use",
+          "name": "Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip",
           "item": "https://samverse.space/blog/harden-wp-config-php/"
         }
       ]
@@ -129,22 +129,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
-          <h1>Hardening wp-config.php: Security Settings Every WordPress Site Should Use</h1>
-          <p class="post-dek">Harden wp-config.php: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file, with cautions.</p>
+          <h1>Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip</h1>
+          <p class="post-dek">Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Sameer Gupta</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · 3 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%20https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%2C%20and%20Which%20Ones%20to%20Skip%20https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%2C%20and%20Which%20Ones%20to%20Skip&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/harden-wp-config-php/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-harden-wp-config-php.webp" alt="Hardening wp-config.php: Security Settings Every WordPress Site Should Use" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-harden-wp-config-php.webp" alt="Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -153,80 +153,151 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#1-unique-security-keys-and-salts">1. Unique security keys and salts</a></li>
-              <li><a href="#2-disable-file-editing-in-the-dashboard">2. Disable file editing in the dashboard</a></li>
-              <li><a href="#3-turn-off-debug-display-on-live-sites">3. Turn off debug display on live sites</a></li>
-              <li><a href="#4-force-https-for-the-admin-area">4. Force HTTPS for the admin area</a></li>
-              <li><a href="#5-strong-database-credentials">5. Strong database credentials</a></li>
-              <li><a href="#6-protect-the-file-itself">6. Protect the file itself</a></li>
-              <li><a href="#7-automatic-updates">7. Automatic updates</a></li>
-              <li><a href="#check-it-after-a-hack">Check it after a hack</a></li>
-              <li><a href="#not-comfortable-editing-it">Not comfortable editing it?</a></li>
+              <li><a href="#before-you-edit-wp-config-php">Before you edit wp-config.php</a></li>
+              <li><a href="#a-recommended-security-block">A recommended security block</a></li>
+              <li><a href="#what-each-setting-does">What each setting does</a></li>
+              <li><a href="#protect-the-file-itself">Protect the file itself</a></li>
+              <li><a href="#myths-the-table-prefix-and-moving-the-file">Myths: the table prefix and moving the file</a></li>
+              <li><a href="#check-wp-config-php-after-a-hack">Check wp-config.php after a hack</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Use unique security keys, and change them after a hack to log everyone out.</li>
-              <li>Disable dashboard file editing, keep debug display off and force SSL for admin.</li>
-              <li>Protect the file with strict permissions and check it for injected code after a hack.</li>
+              <li>Add DISALLOW_FILE_EDIT, keep debugging off on the live site, force HTTPS for the admin area and refresh the salts after a hack or when someone with access leaves.</li>
+              <li>DISALLOW_FILE_MODS also blocks dashboard updates and automatic updates, so use it only when updates are handled by WP-CLI, deployments or a maintenance routine.</li>
+              <li>Changing the table prefix or moving wp-config.php up a folder adds little real protection; deleting leftover backup copies of the file and setting tight permissions matter more.</li>
             </ul>
           </div>
-<p>wp-config.php holds your WordPress database credentials and core settings, which makes it one of the most sensitive files on your site. A few settings in this file noticeably improve security. Always back up the file before editing, since a typo can take the site down.</p>
+<p>To harden wp-config.php, make sure it has fresh, unique security keys and salts, add <code>DISALLOW_FILE_EDIT</code> to remove the dashboard code editors, keep debugging switched off on the live site, force HTTPS for logins with <code>FORCE_SSL_ADMIN</code>, use a database user that can only reach this site's database, and protect the file itself with tight permissions and no leftover backup copies. <code>DISALLOW_FILE_MODS</code> goes further but stops dashboard updates, and changing the table prefix or moving the file up a folder add less protection than people think.</p>
+<p>wp-config.php is also a favourite hiding place for injected code. If your site may already be hacked, clean it before you harden it; checking wp-config.php and the other core files is part of my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>.</p>
 
-<h2 id="1-unique-security-keys-and-salts">1. Unique security keys and salts</h2>
-<p>These random strings secure login cookies. They should be unique and long. WordPress.org provides a generator for fresh keys. Changing them logs everyone out, which is useful after a hack.</p>
+<h2 id="before-you-edit-wp-config-php">Before you edit wp-config.php</h2>
+<ul>
+  <li><strong>Back up the file</strong> and keep a copy on your computer. One missing semicolon can take the whole site down, and the fix is putting the old file back.</li>
+  <li><strong>Edit it over SFTP or your host's File Manager,</strong> with a plain-text editor, not a word processor.</li>
+  <li><strong>Put new lines above the comment</strong> that says "That's all, stop editing! Happy publishing." Anything below the line that loads wp-settings.php comes too late to take effect.</li>
+  <li><strong>Check a setting isn't already defined.</strong> Defining the same constant twice produces a warning, and the first definition wins.</li>
+</ul>
 
-<h2 id="2-disable-file-editing-in-the-dashboard">2. Disable file editing in the dashboard</h2>
-<p>Setting <code>DISALLOW_FILE_EDIT</code> to true removes the theme and plugin code editors from the dashboard. If an attacker gets into an admin account, they can't easily edit PHP files from there.</p>
-<p>A stricter setting, <code>DISALLOW_FILE_MODS</code>, also blocks installing and updating plugins from the dashboard. Only use it if updates are handled another way.</p>
+<h2 id="a-recommended-security-block">A recommended security block</h2>
+<p>For a typical live business site, these lines are a good starting point:</p>
+<pre><code>define( 'DISALLOW_FILE_EDIT', true );
+define( 'FORCE_SSL_ADMIN', true );
+define( 'WP_DEBUG', false );
+define( 'WP_DEBUG_DISPLAY', false );</code></pre>
+<p>Each setting is explained below, along with the ones to think about before adding. The rest of the hardening, from logins to backups, is in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
 
 <aside class="inline-cta">
   <strong>Need help with malware removal &amp; security?</strong>
   <p>Hacked WordPress site? Fast malware removal, spam redirect and injected code cleanup, Google blacklist removal help and hardening to stop reinfection.</p>
-  <div><a href="/wordpress-malware-removal/" class="link-inline">See Malware Removal &amp; Security →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/wordpress-malware-removal/" class="link-inline">See Malware Removal &amp; Security →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%2C%20and%20Which%20Ones%20to%20Skip%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="3-turn-off-debug-display-on-live-sites">3. Turn off debug display on live sites</h2>
-<p>Debug output can reveal file paths and other details to visitors. On a live site, keep debug display off. If you need to troubleshoot, log errors to a private file instead of showing them.</p>
+<h2 id="what-each-setting-does">What each setting does</h2>
+<table>
+  <thead><tr><th>Setting</th><th>What it does</th><th>Recommended?</th></tr></thead>
+  <tbody>
+    <tr><td>Keys and salts</td><td>Secure login cookies</td><td>Always unique; refresh after a hack</td></tr>
+    <tr><td>DISALLOW_FILE_EDIT</td><td>Removes the theme and plugin file editors</td><td>Yes, on almost every site</td></tr>
+    <tr><td>DISALLOW_FILE_MODS</td><td>Blocks installing, updating and deleting plugins and themes from the dashboard, and automatic updates</td><td>Only with another update process</td></tr>
+    <tr><td>FORCE_SSL_ADMIN</td><td>Forces HTTPS for logins and the admin area</td><td>Yes, once SSL works</td></tr>
+    <tr><td>WP_DEBUG and WP_DEBUG_DISPLAY</td><td>Show or hide PHP errors</td><td>Off on live sites</td></tr>
+    <tr><td>DISALLOW_UNFILTERED_HTML</td><td>Stops admins and editors saving raw scripts in content</td><td>Worth considering if several people edit</td></tr>
+    <tr><td>Database name, user and password</td><td>Connect WordPress to its database</td><td>A unique user and strong password per site</td></tr>
+  </tbody>
+</table>
 
-<h2 id="4-force-https-for-the-admin-area">4. Force HTTPS for the admin area</h2>
-<p><code>FORCE_SSL_ADMIN</code> ensures logins and admin sessions always use HTTPS. Your whole site should be on HTTPS anyway; see <a href="/blog/ssl-certificate-errors-fix/">SSL errors</a>.</p>
+<h3>Security keys and salts</h3>
+<p>The eight keys and salts (AUTH_KEY, SECURE_AUTH_KEY, LOGGED_IN_KEY, NONCE_KEY and four matching salts) secure login cookies. They should be long and random. You can get a fresh set from WordPress.org's generator at api.wordpress.org/secret-key/1.1/salt/ and paste them over the old ones, or use WP-CLI:</p>
+<pre><code>wp config shuffle-salts</code></pre>
+<p>Changing them logs everyone out, which is what you want after a hack or when someone with access leaves. It doesn't change anyone's password, so do that separately.</p>
 
-<h2 id="5-strong-database-credentials">5. Strong database credentials</h2>
-<p>Use a unique database user with a strong password for each site, with only the permissions WordPress needs.</p>
+<h3>DISALLOW_FILE_EDIT</h3>
+<p>The Theme File Editor and Plugin File Editor let any administrator edit PHP from the dashboard. If an attacker gets into an admin account, that is the quickest way to plant a backdoor. Setting this to true removes both editors. You lose nothing important: code changes belong in a child theme or a small plugin, made over SFTP and tested first.</p>
 
-<h2 id="6-protect-the-file-itself">6. Protect the file itself</h2>
+<h3>DISALLOW_FILE_MODS: stronger, with a trade-off</h3>
+<p>This blocks installing, updating and deleting plugins and themes from the dashboard, and it also switches off automatic updates, including core security releases. It implies DISALLOW_FILE_EDIT too. That makes the dashboard far less useful to an attacker, but updates must then happen another way: WP-CLI, a deployment process or a developer who updates on a schedule. If nobody does that, the site falls behind on security fixes, which is worse than the risk you were trying to remove. Read <a href="/blog/wordpress-auto-updates/">WordPress auto-updates</a> before deciding.</p>
+
+<h3>FORCE_SSL_ADMIN, and the proxy problem</h3>
+<p>This makes logins and admin pages always use HTTPS. The whole site should already be on HTTPS, so on most sites nothing visible changes. The catch comes behind a proxy, CDN or load balancer, where WordPress may not realise the visitor is on HTTPS and keeps redirecting. If the admin area loops after you add it, the proxy is usually passing a header WordPress isn't reading. Adding this above the security block tells WordPress to trust it:</p>
+<pre><code>if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) &amp;&amp; 'https' === $_SERVER['HTTP_X_FORWARDED_PROTO'] ) {
+    $_SERVER['HTTPS'] = 'on';
+}</code></pre>
+<p>Use it only behind a proxy you control, and see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a> if the loop continues.</p>
+
+<h3>Debug settings on a live site</h3>
+<p>PHP errors shown to visitors reveal file paths, plugin names and sometimes more. On a live site, WP_DEBUG should be false. If you need to troubleshoot, log errors privately instead of showing them, and write the log outside the public folder, because the default wp-content/debug.log can be downloaded by anyone who knows where to look:</p>
+<pre><code>define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', '/home/account/logs/wp-debug.log' );
+define( 'WP_DEBUG_DISPLAY', false );</code></pre>
+<p>Switch it back off when you're done, and delete any debug.log left in wp-content.</p>
+
+<h3>Automatic updates and outgoing connections</h3>
+<p>WordPress installs minor core releases, which include security fixes, automatically by default. Leave that alone: don't add AUTOMATIC_UPDATER_DISABLED, and if WP_AUTO_UPDATE_CORE is set to false, someone has switched off those security releases, so find out why. For tightly controlled sites there is also WP_HTTP_BLOCK_EXTERNAL, which stops WordPress making outgoing requests to anywhere not listed in WP_ACCESSIBLE_HOSTS:</p>
+<pre><code>define( 'WP_HTTP_BLOCK_EXTERNAL', true );
+define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pre>
+<p>It can stop some malware fetching instructions, but it also breaks licence checks, payment gateways, email services and anything else that calls an outside API until you add each host. It suits sites a developer looks after closely, not a typical small business site.</p>
+
+<h3>DISALLOW_UNFILTERED_HTML and staging copies</h3>
+<p>On a normal single site, administrators and editors can save raw HTML, including scripts, in posts and widgets. Setting DISALLOW_UNFILTERED_HTML to true stops that, which limits the damage if an editor account is taken over. It can break legitimate embeds, so test after adding it. On staging copies, set WP_ENVIRONMENT_TYPE to staging, so plugins that check it can keep live-only features, such as sending emails or payments, switched off.</p>
+
+<h2 id="protect-the-file-itself">Protect the file itself</h2>
 <ul>
-  <li>Set stricter file permissions; see <a href="/blog/wordpress-file-permissions/">file permissions explained</a></li>
-  <li>Block web access to it with a server rule</li>
-  <li>WordPress also looks for wp-config.php one folder above the site root, which some setups use for extra protection</li>
+  <li><strong>Permissions:</strong> tighter than other files, often 600, 640 or 440 depending on how your host runs PHP; see <a href="/blog/wordpress-file-permissions/">WordPress file permissions explained</a>.</li>
+  <li><strong>Delete leftover copies.</strong> Files such as wp-config.php.bak, wp-config.old or wp-config.php.save aren't run as PHP, so the server may show them as plain text, database password included. List them with <code>ls -la | grep -i config</code> in the site root.</li>
+  <li><strong>Block web access</strong> on Apache or LiteSpeed with a rule in the root .htaccess file, shown below.</li>
+  <li><strong>Use a unique database user for each site,</strong> with access only to that site's database, so one leaked wp-config.php can't be used to read your other sites.</li>
 </ul>
+<pre><code>&lt;Files wp-config.php&gt;
+  Require all denied
+&lt;/Files&gt;</code></pre>
 
-<h2 id="7-automatic-updates">7. Automatic updates</h2>
-<p>WordPress applies minor core security releases automatically by default. Keep this enabled unless your update process covers it.</p>
+<h2 id="myths-the-table-prefix-and-moving-the-file">Myths: the table prefix and moving the file</h2>
+<table>
+  <thead><tr><th>Advice you'll see</th><th>Reality</th></tr></thead>
+  <tbody>
+    <tr><td>Change the table prefix from wp_</td><td>It doesn't stop SQL injection, because an attacker who can run queries can look up the table names. Fine to set on a new install; changing it on a live site means renaming tables and some option and user meta keys, and mistakes lock you out</td></tr>
+    <tr><td>Move wp-config.php one folder above the site</td><td>WordPress looks there automatically, as long as that folder isn't another WordPress install. It helps only in the rare case that PHP stops working and files are served as text, and does nothing against an attacker who already has file access. Optional, not essential</td></tr>
+    <tr><td>Rename wp-config.php to hide it</td><td>WordPress expects that exact name, so renaming it breaks the site</td></tr>
+  </tbody>
+</table>
 
-<h2 id="check-it-after-a-hack">Check it after a hack</h2>
-<p>Attackers often inject code at the very top or bottom of wp-config.php. Compare it with a clean copy during clean-up; see <a href="/blog/find-remove-wordpress-backdoors/">finding backdoors</a>.</p>
+<h2 id="check-wp-config-php-after-a-hack">Check wp-config.php after a hack</h2>
+<p>Attackers like this file because it loads on every request. Look for code before the opening <code>&lt;?php</code> line or after the final line, include or require lines pointing to unfamiliar files (often disguised with an image or icon extension), long encoded strings, and settings you don't recognise. Compare it with wp-config-sample.php from a fresh WordPress download, then change the database password and the salts. <a href="/blog/find-remove-wordpress-backdoors/">Finding and removing backdoors</a> covers the other places to check.</p>
 
-<h2 id="not-comfortable-editing-it">Not comfortable editing it?</h2>
-<p>A developer can apply these settings safely as part of hardening; see <a href="/wordpress-malware-removal/">malware removal and security hardening</a> or <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>Where is wp-config.php?</h3>
+<p>In the main folder of your WordPress install, usually public_html on cPanel hosting, next to wp-admin and wp-content. If it isn't there, check the folder above, where WordPress also looks.</p>
+<h3>Is it safe to edit wp-config.php?</h3>
+<p>Yes, if you back it up first and edit carefully. A typo can take the site down, but restoring the backup copy fixes it straight away.</p>
+<h3>What does DISALLOW_FILE_EDIT do?</h3>
+<p>It removes the theme and plugin file editors from the dashboard, so someone who gets into an admin account can't edit PHP files from there. It doesn't affect updates.</p>
+<h3>Should I change the WordPress table prefix?</h3>
+<p>Not on an existing site. It adds little protection and the change can break things. Setting a different prefix on a new install does no harm.</p>
+<h3>Should I move wp-config.php above public_html?</h3>
+<p>It's optional. WordPress supports it and it adds a small layer of protection, but some hosts and tools expect the file in the site root, and it does nothing against an attacker with file access.</p>
+<h3>What happens when I change the salts?</h3>
+<p>Everyone is logged out and has to log in again. Passwords stay the same, so change those separately if they may have leaked.</p>
+
+<p>Not comfortable editing wp-config.php, or worried yours has been tampered with? These settings are applied as part of the hardening after a cleanup; see <a href="/wordpress-malware-removal/">WordPress malware removal and hardening</a>. If you use DISALLOW_FILE_MODS and need updates handled safely another way, see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%2C%20and%20Which%20Ones%20to%20Skip%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%20https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%2C%20and%20Which%20Ones%20to%20Skip%20https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%2C%20and%20Which%20Ones%20to%20Skip&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/harden-wp-config-php/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -237,8 +308,8 @@
           </div>
 
           <nav class="post-nav" aria-label="More in Speed, security &amp; maintenance">
-            <a class="post-nav-prev" href="/blog/wordpress-firewall-waf-explained/"><span>← Previous in Speed, security &amp; maintenance</span><strong>WordPress Firewalls Explained: Cloud, Server and Plugin WAFs</strong></a>
-            <a class="post-nav-next" href="/blog/recover-rankings-after-hack/"><span>Next in Speed, security &amp; maintenance →</span><strong>How to Recover Google Rankings After Your Website Was Hacked</strong></a>
+            <a class="post-nav-prev" href="/blog/wordpress-firewall-waf-explained/"><span>← Previous in Speed, security &amp; maintenance</span><strong>WordPress Firewalls (WAF) Explained: Plugin vs Cloud Firewalls, Useful Rules, Rate Limiting and False Positives</strong></a>
+            <a class="post-nav-next" href="/blog/recover-rankings-after-hack/"><span>Next in Speed, security &amp; maintenance →</span><strong>How to Recover Google Rankings After Your Website Was Hacked: Manual Actions, Spam URLs and a Realistic Timeline</strong></a>
           </nav>
         </div>
 
@@ -246,22 +317,20 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#1-unique-security-keys-and-salts">1. Unique security keys and salts</a></li>
-              <li><a href="#2-disable-file-editing-in-the-dashboard">2. Disable file editing in the dashboard</a></li>
-              <li><a href="#3-turn-off-debug-display-on-live-sites">3. Turn off debug display on live sites</a></li>
-              <li><a href="#4-force-https-for-the-admin-area">4. Force HTTPS for the admin area</a></li>
-              <li><a href="#5-strong-database-credentials">5. Strong database credentials</a></li>
-              <li><a href="#6-protect-the-file-itself">6. Protect the file itself</a></li>
-              <li><a href="#7-automatic-updates">7. Automatic updates</a></li>
-              <li><a href="#check-it-after-a-hack">Check it after a hack</a></li>
-              <li><a href="#not-comfortable-editing-it">Not comfortable editing it?</a></li>
+              <li><a href="#before-you-edit-wp-config-php">Before you edit wp-config.php</a></li>
+              <li><a href="#a-recommended-security-block">A recommended security block</a></li>
+              <li><a href="#what-each-setting-does">What each setting does</a></li>
+              <li><a href="#protect-the-file-itself">Protect the file itself</a></li>
+              <li><a href="#myths-the-table-prefix-and-moving-the-file">Myths: the table prefix and moving the file</a></li>
+              <li><a href="#check-wp-config-php-after-a-hack">Check wp-config.php after a hack</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%2C%20and%20Which%20Ones%20to%20Skip%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>
@@ -282,9 +351,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/find-remove-wordpress-backdoors/"><img class="post-card-img" src="/assets/og/blog-find-remove-wordpress-backdoors.webp" alt="How to Find and Remove Backdoors in a Hacked WordPress Site" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Find and Remove Backdoors in a Hacked WordPress Site</h3><p>Find and remove WordPress backdoors: where attackers hide them, from uploads and fake plugins to core files, database and cron, and how to stop reinfection.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/find-remove-wordpress-backdoors/"><img class="post-card-img" src="/assets/og/blog-find-remove-wordpress-backdoors.webp" alt="How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check</h3><p>Find and remove WordPress backdoors: where they hide, from uploads and mu-plugins to .user.ini, cron and rogue admins, and the WP-CLI checks to find them.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="WordPress Security Checklist: 25 Steps to Harden a Business Website" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist: 25 Steps to Harden a Business Website</h3><p>A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/ssl-certificate-errors-fix/"><img class="post-card-img" src="/assets/og/blog-ssl-certificate-errors-fix.webp" alt="SSL Certificate Errors Explained: &quot;Not Secure&quot;, &quot;Connection Not Private&quot; and How to Fix Them" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>SSL Certificate Errors Explained: &quot;Not Secure&quot;, &quot;Connection Not Private&quot; and How to Fix Them</h3><p>SSL certificate errors explained: what Not Secure, connection not private and NET::ERR_CERT warnings mean, and how to fix each one on a WordPress site.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/remove-malware-wordpress-step-by-step/"><img class="post-card-img" src="/assets/og/blog-remove-malware-wordpress-step-by-step.webp" alt="How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide</h3><p>WordPress malware removal step by step: contain the hack, reset access, replace files, clean the database, remove backdoors and get Google warnings removed.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

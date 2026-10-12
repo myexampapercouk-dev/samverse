@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Find and Remove Backdoors in WordPress | Samverse</title>
-  <meta name="description" content="Find and remove WordPress backdoors: where attackers hide them, from uploads and fake plugins to core files, database and cron, and how to stop reinfection.">
+  <title>How to Find and Remove a WordPress Backdoor (Step by Step)</title>
+  <meta name="description" content="Find and remove WordPress backdoors: where they hide, from uploads and mu-plugins to .user.ini, cron and rogue admins, and the WP-CLI checks to find them.">
   <meta name="author" content="Sameer Gupta">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/find-remove-wordpress-backdoors/">
-  <meta property="og:title" content="How to Find and Remove Backdoors in WordPress | Samverse">
-  <meta property="og:description" content="Find and remove WordPress backdoors: where attackers hide them, from uploads and fake plugins to core files, database and cron, and how to stop reinfection.">
+  <meta property="og:title" content="How to Find and Remove a WordPress Backdoor (Step by Step)">
+  <meta property="og:description" content="Find and remove WordPress backdoors: where they hide, from uploads and mu-plugins to .user.ini, cron and rogue admins, and the WP-CLI checks to find them.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-find-remove-wordpress-backdoors.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/find-remove-wordpress-backdoors/#article",
-      "headline": "How to Find and Remove Backdoors in a Hacked WordPress Site",
-      "description": "Find and remove WordPress backdoors: where attackers hide them, from uploads and fake plugins to core files, database and cron, and how to stop reinfection.",
+      "headline": "How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check",
+      "description": "Find and remove WordPress backdoors: where they hide, from uploads and mu-plugins to .user.ini, cron and rogue admins, and the WP-CLI checks to find them.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
+      "dateModified": "2026-10-12",
       "mainEntityOfPage": "https://samverse.space/blog/find-remove-wordpress-backdoors/",
       "image": "https://samverse.space/assets/og/blog-find-remove-wordpress-backdoors.png",
       "articleSection": "Security",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "How to Find and Remove Backdoors in a Hacked WordPress Site",
+          "name": "How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check",
           "item": "https://samverse.space/blog/find-remove-wordpress-backdoors/"
         }
       ]
@@ -129,22 +129,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
-          <h1>How to Find and Remove Backdoors in a Hacked WordPress Site</h1>
-          <p class="post-dek">Find and remove WordPress backdoors: where attackers hide them, from uploads and fake plugins to core files, database and cron, and how to stop reinfection.</p>
+          <h1>How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check</h1>
+          <p class="post-dek">Find and remove WordPress backdoors: where they hide, from uploads and mu-plugins to .user.ini, cron and rogue admins, and the WP-CLI checks to find them.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Sameer Gupta</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · 3 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%20https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-remove-wordpress-backdoors%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%3A%20Where%20They%20Hide%20and%20How%20to%20Check%20https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-remove-wordpress-backdoors%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-remove-wordpress-backdoors%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-remove-wordpress-backdoors%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%3A%20Where%20They%20Hide%20and%20How%20to%20Check&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-remove-wordpress-backdoors%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/find-remove-wordpress-backdoors/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-find-remove-wordpress-backdoors.webp" alt="How to Find and Remove Backdoors in a Hacked WordPress Site" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-find-remove-wordpress-backdoors.webp" alt="How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -153,95 +153,158 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#what-a-backdoor-is">What a backdoor is</a></li>
-              <li><a href="#where-backdoors-hide">Where backdoors hide</a></li>
-              <li><a href="#warning-signs-in-code">Warning signs in code</a></li>
-              <li><a href="#verify-files-against-official-copies">Verify files against official copies</a></li>
-              <li><a href="#check-users-and-access">Check users and access</a></li>
-              <li><a href="#remove-then-harden">Remove, then harden</a></li>
-              <li><a href="#when-in-doubt-rebuild-clean">When in doubt, rebuild clean</a></li>
+              <li><a href="#what-a-wordpress-backdoor-looks-like">What a WordPress backdoor looks like</a></li>
+              <li><a href="#where-wordpress-backdoors-hide">Where WordPress backdoors hide</a></li>
+              <li><a href="#how-to-find-backdoors-step-by-step">How to find backdoors, step by step</a></li>
+              <li><a href="#no-ssh-checking-with-file-manager">No SSH? Checking with File Manager</a></li>
+              <li><a href="#files-that-look-suspicious-but-are-usually-fine">Files that look suspicious but are usually fine</a></li>
+              <li><a href="#how-to-remove-backdoors-safely">How to remove backdoors safely</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Missed backdoors are the main reason cleaned sites get reinfected.</li>
-              <li>Check uploads, fake plugins, mu-plugins, modified files, hidden admins and cron jobs.</li>
-              <li>Verify files against checksums, block PHP in uploads and disable dashboard file editing.</li>
+              <li>A backdoor is hidden code or access that lets an attacker back in after a cleanup, and a missed one is the usual reason malware returns days later.</li>
+              <li>Check core and plugin files against official checksums, then look where backdoors hide: PHP in uploads, mu-plugins, fake plugins, wp-config includes, .htaccess and .user.ini, cron jobs, rogue admins and the database.</li>
+              <li>Remove every backdoor in one session, replace files rather than editing them, then change all passwords and salts, or the attacker simply uses the one you missed.</li>
             </ul>
           </div>
-<p>The main reason cleaned WordPress sites get hacked again is a missed backdoor: hidden code that lets the attacker regain access even after passwords change and visible malware is removed. Finding backdoors is the most important part of a proper clean-up.</p>
+<p>A backdoor is anything an attacker leaves behind so they can get back in after you've cleaned up: a small PHP file that runs commands, a hidden admin account, a cron job that reinstalls malware, or a setting that loads their code before WordPress starts. To find them, compare core and plugin files with the official checksums, look for PHP files where they don't belong, check wp-config.php, .htaccess and .user.ini for files loaded automatically, list recently changed files, search for obfuscated code, and review users, scheduled tasks and the database. Then remove them all at once and change every password.</p>
+<p>A missed backdoor is the usual reason malware comes back days after a cleanup. Backdoor removal is part of my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>, along with closing the hole the attacker first used.</p>
+<p>This guide goes deep on backdoors only. For the full sequence, from backing up the infected site to getting Google warnings removed, see <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>.</p>
 
-<h2 id="what-a-backdoor-is">What a backdoor is</h2>
-<p>A backdoor is code that gives an attacker a way back in: uploading files, running commands or creating admin users on demand. It's often small, disguised and placed where site owners rarely look.</p>
+<h2 id="what-a-wordpress-backdoor-looks-like">What a WordPress backdoor looks like</h2>
+<p>Backdoors are usually small and designed to look boring. A few lines added to a genuine file are harder to spot than a big, obviously malicious script.</p>
+<table>
+  <thead><tr><th>Type</th><th>What it does</th><th>Where it usually sits</th></tr></thead>
+  <tbody>
+    <tr><td>Code runner</td><td>Runs whatever PHP the attacker sends in a request or cookie</td><td>A one-line addition to a theme, plugin or core file</td></tr>
+    <tr><td>Uploader or web shell</td><td>A hidden file manager for uploading, editing and deleting files</td><td>A PHP file in uploads, a fake plugin or a random folder</td></tr>
+    <tr><td>Admin creator</td><td>Creates an administrator when a secret address is visited</td><td>A mu-plugin, functions.php or a fake plugin</td></tr>
+    <tr><td>Auto-loader</td><td>Loads the attacker's file before every page</td><td>wp-config.php includes, .htaccess or .user.ini</td></tr>
+    <tr><td>Reinfector</td><td>Downloads the malware again on a schedule</td><td>Hosting cron jobs or WordPress scheduled events</td></tr>
+    <tr><td>Access left open</td><td>Lets them log straight back in</td><td>Hidden admin users, extra SFTP accounts, SSH keys, application passwords</td></tr>
+  </tbody>
+</table>
 
-<h2 id="where-backdoors-hide">Where backdoors hide</h2>
-<ul>
-  <li><strong>wp-content/uploads:</strong> PHP files disguised as images or with random names</li>
-  <li><strong>Fake plugins:</strong> folders with convincing names that don't appear in the plugin list, or that do but you never installed</li>
-  <li><strong>mu-plugins folder:</strong> loads automatically and doesn't show up in the normal plugins list</li>
-  <li><strong>Modified legitimate files:</strong> a few lines added to a real plugin, theme or core file</li>
-  <li><strong>Files mimicking WordPress names:</strong> like wp-configs.php or files in wp-includes that don't belong there</li>
-  <li><strong>Database:</strong> hidden admin users, malicious options or code stored in settings</li>
-  <li><strong>Scheduled tasks:</strong> server cron jobs or WordPress events that re-download malware</li>
-</ul>
+<h2 id="where-wordpress-backdoors-hide">Where WordPress backdoors hide</h2>
+<h3>PHP files in wp-content/uploads</h3>
+<p>Uploads should hold images, PDFs and other media. A PHP file here is almost always malicious, whatever its name. Watch for disguises such as image.jpg.php, an index.php inside a year folder, or a file with an icon or image extension that another file includes.</p>
+<h3>The mu-plugins folder</h3>
+<p>Must-use plugins in wp-content/mu-plugins load on every request, can't be deactivated from the dashboard and appear only under a separate Must-Use tab. Some managed hosts add their own files here, so check names against your host's documentation before deleting anything.</p>
+<h3>Fake and modified plugins</h3>
+<p>Look for plugin folders you didn't install, often with names that sound like caching, SEO or security tools. Some malware hides itself from the Plugins screen, so compare the folders in wp-content/plugins with the list in your dashboard. Genuine plugins and themes can also have a few malicious lines added to an existing file, typically the theme's functions.php.</p>
+<h3>wp-config.php and core files</h3>
+<p>Check the very top and bottom of wp-config.php for extra code or an include of an odd file, often with an image or icon extension. Core files in wp-admin and wp-includes should never change except during an update, so any modification there is serious.</p>
+<h3>.htaccess, .user.ini and auto_prepend_file</h3>
+<p>PHP has a setting called auto_prepend_file that loads a chosen file before every PHP request. Attackers set it in .htaccess on Apache servers, or in a .user.ini or php.ini file on servers running PHP-FPM, and point it at their own script. Because it runs before WordPress, nothing in the dashboard shows it. A malicious line looks like this:</p>
+<pre><code>auto_prepend_file = "/home/account/public_html/wp-content/uploads/2024/05/.cache.php"</code></pre>
+<p>One legitimate use is common: Wordfence's firewall, in its extended protection mode, sets auto_prepend_file to a file called wordfence-waf.php in your site's root. Anything pointing into uploads, a hidden file or a random folder is not legitimate. Check .htaccess files in subfolders too, not only the root.</p>
+<h3>Cron jobs and scheduled events</h3>
+<p>Check Cron Jobs in your hosting control panel for commands you didn't create, especially ones that download files with wget or curl. Then list WordPress scheduled events and look for hooks you can't connect to any plugin you use.</p>
+<h3>Users and other access</h3>
+<p>Hidden administrators are common. So are application passwords added to a genuine admin account, extra SFTP or FTP accounts, SSH keys and hosting sub-users. All of them survive a file cleanup.</p>
+<h3>The database</h3>
+<p>Some backdoors store their code in wp_options, widgets or post content, with a tiny file elsewhere that reads and runs it. Others grant admin rights by editing user metadata directly. Cleaning files alone won't remove these.</p>
 
 <aside class="inline-cta">
   <strong>Need help with malware removal &amp; security?</strong>
   <p>Hacked WordPress site? Fast malware removal, spam redirect and injected code cleanup, Google blacklist removal help and hardening to stop reinfection.</p>
-  <div><a href="/wordpress-malware-removal/" class="link-inline">See Malware Removal &amp; Security →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/wordpress-malware-removal/" class="link-inline">See Malware Removal &amp; Security →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%3A%20Where%20They%20Hide%20and%20How%20to%20Check%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="warning-signs-in-code">Warning signs in code</h2>
-<p>Legitimate code sometimes uses these too, so context matters, but they deserve a close look in unexpected places:</p>
+<h2 id="how-to-find-backdoors-step-by-step">How to find backdoors, step by step</h2>
+<p>These steps assume SSH access and WP-CLI, which many hosts offer. Run them from the site's root folder after taking a full backup of the infected site. The next section covers what to do with File Manager only.</p>
+<h3>1. Verify core and plugin files</h3>
+<pre><code>wp core verify-checksums
+wp plugin verify-checksums --all</code></pre>
+<p>Both compare your files with the official copies on WordPress.org and list anything modified or extra. The plugin check only works for plugins from WordPress.org, and WP-CLI has no equivalent for themes, so reinstall premium plugins and all themes from the vendor or the official directory.</p>
+<h3>2. Look for PHP where it shouldn't be, and for auto-loaded files</h3>
+<pre><code>find wp-content/uploads -type f -name "*.php"
+ls -la wp-content/mu-plugins
+find . -name ".user.ini" -o -name "php.ini"
+grep -rln "auto_prepend_file" --include=".htaccess" --include="*.ini" .</code></pre>
+<h3>3. List recently changed files</h3>
+<pre><code>find . -type f -name "*.php" -ctime -14 -not -path "./wp-content/cache/*"</code></pre>
+<p>Attackers can fake a file's modified date, which is what most file managers show. The ctime used here records when the file's details last changed and can't be backdated as easily. Widen the window until it covers the date the problem started.</p>
+<h3>4. Search for obfuscated code</h3>
+<pre><code>grep -rlE "base64_decode|gzinflate|str_rot13" --include="*.php" .
+grep -rlF "eval(" --include="*.php" .</code></pre>
+<p>Backdoors often hide their real code behind functions such as eval, base64_decode, gzinflate and str_rot13, usually next to a long random-looking string or data taken from the request. Genuine plugins use some of these too, so expect matches and judge each by context: a file in uploads, or a single line hundreds of characters long, is suspicious; a well-known plugin's library file usually isn't.</p>
+<h3>5. Check users, application passwords and scheduled events</h3>
+<pre><code>wp user list --role=administrator --fields=ID,user_login,user_email,user_registered
+wp cron event list</code></pre>
+<p>Compare the administrator count with the number shown in the dashboard; a hidden account makes them differ. Open each admin's profile and check the Application Passwords section for entries nobody recognises. The <a href="/blog/wordpress-user-accounts-audit/">WordPress user account audit</a> explains what each person should have.</p>
+<h3>6. Search the database</h3>
+<pre><code>wp db search "base64_decode" --all-tables
+wp db search "eval(" --all-tables</code></pre>
+<h3>7. Read the access logs</h3>
+<p>Requests that send data (POST requests) to odd PHP files, especially in uploads or plugin folders, often show a backdoor being used. The earliest of them can point to the request that planted it, and so to the entry point.</p>
+
+<h2 id="no-ssh-checking-with-file-manager">No SSH? Checking with File Manager</h2>
 <ul>
-  <li>Heavily obfuscated code: long strings of random characters</li>
-  <li>Functions that decode and run hidden code, such as combinations of <code>eval</code>, <code>base64_decode</code>, <code>gzinflate</code> or <code>str_rot13</code></li>
-  <li>Code that runs whatever is sent in a request</li>
-  <li>File upload handlers in odd places</li>
-  <li>Very long single lines of code at the start or end of files</li>
+  <li>Sort folders by last modified date and open anything changed around the time the problem began</li>
+  <li>Browse wp-content/uploads year by year for anything that isn't media</li>
+  <li>Open wp-config.php, .htaccess and mu-plugins and read them in full</li>
+  <li>Run a security plugin scan, which compares files with the repository copies; <a href="/blog/wordpress-malware-scanners-compared/">WordPress malware scanners compared</a> explains what scanners can and can't see</li>
+  <li>Ask your host for its malware scan report and access logs</li>
 </ul>
 
-<h2 id="verify-files-against-official-copies">Verify files against official copies</h2>
-<p>WP-CLI can compare WordPress core files, and plugins from WordPress.org, against official checksums, flagging modified or extra files. For premium plugins, reinstall fresh copies from the vendor.</p>
+<h2 id="files-that-look-suspicious-but-are-usually-fine">Files that look suspicious but are usually fine</h2>
+<p>Deleting a genuine file can take the site down, so check these before removing them:</p>
+<table>
+  <thead><tr><th>File</th><th>Usually legitimate when</th></tr></thead>
+  <tbody>
+    <tr><td>wordfence-waf.php and a matching auto_prepend_file line</td><td>You use Wordfence with extended protection</td></tr>
+    <tr><td>advanced-cache.php or object-cache.php in wp-content</td><td>Your caching plugin or host created them</td></tr>
+    <tr><td>Files in mu-plugins</td><td>Your host or a known tool documents them</td></tr>
+    <tr><td>A .user.ini file in the root</td><td>It only sets limits such as memory or upload size</td></tr>
+    <tr><td>base64_decode inside a known plugin</td><td>The plugin passes the checksum check against its official copy</td></tr>
+  </tbody>
+</table>
 
-<h2 id="check-users-and-access">Check users and access</h2>
-<ul>
-  <li>List all administrators, including any not visible in the dashboard, by checking the database</li>
-  <li>Review SFTP and hosting users, and remove unknown ones</li>
-  <li>Check Search Console owners</li>
-  <li>Regenerate WordPress security keys</li>
-</ul>
+<h2 id="how-to-remove-backdoors-safely">How to remove backdoors safely</h2>
+<ol>
+  <li><strong>Back up the infected site first</strong> and label it, so nothing real is lost and you can study how the attack worked.</li>
+  <li><strong>Remove everything in one session.</strong> Taking one backdoor out a day warns the attacker, who simply uses another.</li>
+  <li><strong>Replace rather than edit.</strong> Reinstall core, plugins and themes from clean sources instead of cutting lines out of infected files.</li>
+  <li><strong>Delete the access as well as the code:</strong> rogue users, application passwords, cron jobs, SFTP accounts and SSH keys.</li>
+  <li><strong>Then change every password and the salts</strong> in wp-config.php, from a device you trust. Doing this after the cleanup matters, because a working backdoor lets the attacker see new passwords.</li>
+  <li><strong>Close the way in:</strong> update everything, remove nulled software and turn off file editing; see <a href="/blog/harden-wp-config-php/">hardening wp-config.php</a>.</li>
+</ol>
+<p>If the account holds several neglected sites, or you can't tell what is genuine any more, a fresh WordPress install with only your content and media copied across (no PHP files) can be quicker and safer than cleaning file by file.</p>
+<p>Afterwards, block PHP in uploads, keep an <a href="/blog/wordpress-activity-logs/">activity log</a> and turn on file-change alerts, so a new backdoor gets noticed in days rather than months. The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers the rest of the hardening.</p>
 
-<h2 id="remove-then-harden">Remove, then harden</h2>
-<ul>
-  <li>Block PHP execution in the uploads folder</li>
-  <li>Disable file editing in the dashboard (the DISALLOW_FILE_EDIT setting in wp-config.php)</li>
-  <li>Correct file permissions</li>
-  <li>Add a firewall and file-change monitoring</li>
-  <li>Keep everything updated</li>
-</ul>
+<h2 id="faqs">FAQs</h2>
+<h3>What is a backdoor in WordPress?</h3>
+<p>Hidden code or access that lets an attacker get back into your site without your password, such as a small PHP file, a hidden admin user or a scheduled task that reinstalls malware.</p>
+<h3>Can a security plugin find backdoors?</h3>
+<p>Some, especially known ones and modified WordPress.org files. Scanners often miss backdoors in the database, in premium plugin files they can't compare, in .user.ini files or in custom code that doesn't match a known signature. Treat a scan as one check, not the only one.</p>
+<h3>Why does malware keep coming back after I clean it?</h3>
+<p>Usually because a backdoor, a rogue account or a cron job was missed, the original hole was never closed, or another site in the same hosting account reinfected yours.</p>
+<h3>Is base64_decode always malicious?</h3>
+<p>No. Plenty of genuine plugins use it to handle images, data or licence keys. It is suspicious when it sits in an unexpected file, decodes a long random string and passes the result straight to something that runs code.</p>
+<h3>Should I change passwords before or after removing backdoors?</h3>
+<p>Both. Change the hosting password straight away to slow the attacker down, then change every password and the salts again once the backdoors are gone, because a working backdoor can capture new ones.</p>
 
-<h2 id="when-in-doubt-rebuild-clean">When in doubt, rebuild clean</h2>
-<p>For heavily infected sites, it can be safer to build a fresh WordPress install with clean plugins and themes, then import only the verified content and uploads (images, not PHP files).</p>
-
-<p>Full process: <a href="/blog/remove-malware-wordpress-step-by-step/">removing WordPress malware step by step</a>. Or get <a href="/wordpress-malware-removal/">professional malware removal</a>.</p>
+<p>Malware back again after a cleanup? That usually means a backdoor was missed. I can trace and remove them, close the entry point and give you a plain-English report of what was found; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%3A%20Where%20They%20Hide%20and%20How%20to%20Check%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%20https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-remove-wordpress-backdoors%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%3A%20Where%20They%20Hide%20and%20How%20to%20Check%20https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-remove-wordpress-backdoors%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-remove-wordpress-backdoors%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-remove-wordpress-backdoors%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%3A%20Where%20They%20Hide%20and%20How%20to%20Check&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-remove-wordpress-backdoors%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/find-remove-wordpress-backdoors/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -252,8 +315,8 @@
           </div>
 
           <nav class="post-nav" aria-label="More in Speed, security &amp; maintenance">
-            <a class="post-nav-prev" href="/blog/fix-japanese-keyword-seo-spam-hack/"><span>← Previous in Speed, security &amp; maintenance</span><strong>Japanese Keyword Hack and SEO Spam: How to Clean Your Site and Google Results</strong></a>
-            <a class="post-nav-next" href="/blog/wordpress-site-sending-spam-emails/"><span>Next in Speed, security &amp; maintenance →</span><strong>Website or Hosting Account Sending Spam Emails? How to Find and Stop It</strong></a>
+            <a class="post-nav-prev" href="/blog/fix-japanese-keyword-seo-spam-hack/"><span>← Previous in Speed, security &amp; maintenance</span><strong>Japanese Keyword Hack and SEO Spam on WordPress: How to Find the Cloaked Pages, Clean Your Site and Clear Google Results</strong></a>
+            <a class="post-nav-next" href="/blog/wordpress-site-sending-spam-emails/"><span>Next in Speed, security &amp; maintenance →</span><strong>Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists</strong></a>
           </nav>
         </div>
 
@@ -261,20 +324,20 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#what-a-backdoor-is">What a backdoor is</a></li>
-              <li><a href="#where-backdoors-hide">Where backdoors hide</a></li>
-              <li><a href="#warning-signs-in-code">Warning signs in code</a></li>
-              <li><a href="#verify-files-against-official-copies">Verify files against official copies</a></li>
-              <li><a href="#check-users-and-access">Check users and access</a></li>
-              <li><a href="#remove-then-harden">Remove, then harden</a></li>
-              <li><a href="#when-in-doubt-rebuild-clean">When in doubt, rebuild clean</a></li>
+              <li><a href="#what-a-wordpress-backdoor-looks-like">What a WordPress backdoor looks like</a></li>
+              <li><a href="#where-wordpress-backdoors-hide">Where WordPress backdoors hide</a></li>
+              <li><a href="#how-to-find-backdoors-step-by-step">How to find backdoors, step by step</a></li>
+              <li><a href="#no-ssh-checking-with-file-manager">No SSH? Checking with File Manager</a></li>
+              <li><a href="#files-that-look-suspicious-but-are-usually-fine">Files that look suspicious but are usually fine</a></li>
+              <li><a href="#how-to-remove-backdoors-safely">How to remove backdoors safely</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Find%20and%20Remove%20Backdoors%20in%20a%20Hacked%20WordPress%20Site%3A%20Where%20They%20Hide%20and%20How%20to%20Check%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>
@@ -295,9 +358,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/harden-wp-config-php/"><img class="post-card-img" src="/assets/og/blog-harden-wp-config-php.webp" alt="Hardening wp-config.php: Security Settings Every WordPress Site Should Use" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>Hardening wp-config.php: Security Settings Every WordPress Site Should Use</h3><p>Harden wp-config.php: security keys, disabling file editing, debug settings, forcing SSL for admin, file permissions and protecting the file, with cautions.</p><span class="post-card-meta">27 September 2026 · 3 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-site-sending-spam-emails/"><img class="post-card-img" src="/assets/og/blog-wordpress-site-sending-spam-emails.webp" alt="Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists</h3><p>Website or hosting account sending spam? Find the source in mail logs, remove mailer scripts, secure leaked SMTP logins and get your IP off blacklists.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/harden-wp-config-php/"><img class="post-card-img" src="/assets/og/blog-harden-wp-config-php.webp" alt="Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip</h3><p>Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First</h3><p>How to tell if your WordPress site has been hacked: a 10-minute check with Google tools, the clear warning signs, and what to do first if something is wrong.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/deceptive-site-ahead-warning-fix/"><img class="post-card-img" src="/assets/og/blog-deceptive-site-ahead-warning-fix.webp" alt="&quot;Deceptive Site Ahead&quot; Warning on Your Website: How to Find the Phishing Pages, Clean Up and Get Google to Remove It" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>&quot;Deceptive Site Ahead&quot; Warning on Your Website: How to Find the Phishing Pages, Clean Up and Get Google to Remove It</h3><p>How to remove the &quot;Deceptive site ahead&quot; warning: find the phishing pages, clean the site, request a review in Search Console and know how long it takes.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>
