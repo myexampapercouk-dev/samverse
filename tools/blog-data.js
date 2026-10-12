@@ -833,76 +833,127 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'wordpress-maintenance-checklist',
-    seoTitle: "WordPress Maintenance Checklist (Weekly to Yearly)",
-    title: 'WordPress Maintenance Checklist: What to Do Weekly, Monthly and Yearly',
-    description: 'A practical WordPress maintenance checklist: the updates, backups, security, speed and SEO tasks to do weekly, monthly and yearly to keep your site healthy.',
+    seoTitle: 'WordPress Maintenance Checklist: Weekly to Yearly Schedule',
+    title: 'WordPress Maintenance Checklist: What to Do Weekly, Monthly, Quarterly and Yearly',
+    description: 'A WordPress maintenance checklist and schedule: the weekly, monthly, quarterly and yearly tasks for updates, backups, security, speed and SEO, in a table.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
-<p>A WordPress website isn't "done" when it launches. Like a car, it needs regular care to stay fast, secure and reliable. Most hacked or broken WordPress sites simply weren't maintained.</p>
-<p>Here's a practical checklist you can follow yourself, or hand to your developer.</p>
+<p>A practical WordPress maintenance schedule looks like this: every week, take a backup, apply updates and test your contact form; every month, run a security scan, review admin users, check Site Health, Search Console and page speed, and tidy the database; every quarter, test a backup restore and audit your plugins and PHP version; and every year, renew your domain, hosting and licences and review the site as a whole. The table below puts every task on one page.</p>
+<p>This post is the hands-on task list. If you'd rather know what a paid plan should cover, see <a href="/blog/monthly-website-maintenance-plan/">what a monthly maintenance plan includes</a>, and if you'd rather not do any of this yourself, it's what I do every month on my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 
-<p>Prefer to hand these jobs over? My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> cover updates, off-site backups, security monitoring, uptime checks and small content changes every month.</p>
+<h2>The WordPress maintenance schedule at a glance</h2>
+<table>
+  <thead><tr><th>Task</th><th>How often</th><th>Where to do it</th></tr></thead>
+  <tbody>
+    <tr><td>Confirm backups ran and are stored off-site</td><td>Weekly</td><td>Your backup plugin or hosting panel</td></tr>
+    <tr><td>Update core, plugins and themes, after a backup</td><td>Weekly or fortnightly</td><td>Dashboard &gt; Updates</td></tr>
+    <tr><td>Send a test enquiry through every form</td><td>Weekly</td><td>The live site and your inbox</td></tr>
+    <tr><td>Check uptime alerts and delete spam</td><td>Weekly</td><td>Uptime monitor, Comments</td></tr>
+    <tr><td>Security scan and admin user review</td><td>Monthly</td><td>Security plugin, Users &gt; All Users</td></tr>
+    <tr><td>Site Health warnings</td><td>Monthly</td><td>Tools &gt; Site Health</td></tr>
+    <tr><td>Indexing, security issues and Core Web Vitals</td><td>Monthly</td><td>Google Search Console</td></tr>
+    <tr><td>Speed check on key pages</td><td>Monthly</td><td>PageSpeed Insights</td></tr>
+    <tr><td>Broken links and 404s</td><td>Monthly</td><td>Search Console or a crawler</td></tr>
+    <tr><td>Database clean-up</td><td>Monthly or quarterly</td><td>A plugin such as WP-Optimize</td></tr>
+    <tr><td>Test restore a backup</td><td>Quarterly</td><td>Staging site</td></tr>
+    <tr><td>Plugin audit and PHP version check</td><td>Quarterly</td><td>Plugins screen, Site Health &gt; Info</td></tr>
+    <tr><td>Domain, hosting and licence renewals</td><td>Yearly</td><td>Registrar, host and licence accounts</td></tr>
+    <tr><td>Full SEO, content and access review</td><td>Yearly</td><td>Search Console, analytics, all accounts</td></tr>
+  </tbody>
+</table>
 
-<h2>Weekly</h2>
+<h2>One-time setup that makes the checklist quick</h2>
+<p>Maintenance is fast when the basics are in place. Do these once:</p>
 <ul>
-  <li><strong>Check updates.</strong> Update WordPress core, plugins and themes, after taking a backup.</li>
-  <li><strong>Confirm backups ran.</strong> Make sure automatic backups completed and are stored off-site (not only on the same server).</li>
-  <li><strong>Test your contact form.</strong> Send a test enquiry and make sure it arrives. Broken forms mean lost leads.</li>
-  <li><strong>Moderate comments</strong> and delete spam.</li>
+  <li><strong>Automatic off-site backups.</strong> Daily for sites that change often, stored away from your hosting, for example in Google Drive or cloud storage. A backup on the same server disappears with the server. The <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a> covers the options.</li>
+  <li><strong>An uptime monitor</strong> that emails or messages you when the site goes down; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a>.</li>
+  <li><strong>A staging site,</strong> if your host offers one, so big updates can be tried away from visitors.</li>
+  <li><strong>A record of every login:</strong> registrar, hosting, WordPress, email, premium licences and Google accounts, kept in a password manager.</li>
+  <li><strong>Search Console and analytics</strong> connected, so you have something to check each month.</li>
 </ul>
 
-<p>For a deeper look at backups and restores, see the <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a>.</p>
-
-<h2>Monthly</h2>
+<h2>Weekly WordPress maintenance tasks</h2>
 <ul>
-  <li><strong>Run a security scan</strong> with your security plugin or host's scanner.</li>
-  <li><strong>Review admin users.</strong> Remove anyone who no longer needs access.</li>
-  <li><strong>Test site speed</strong> on PageSpeed Insights and fix any new issues.</li>
-  <li><strong>Check for broken links</strong> and fix or redirect them.</li>
-  <li><strong>Check Google Search Console</strong> for indexing errors, security issues or mobile problems.</li>
-  <li><strong>Review analytics</strong> to see which pages bring visitors and enquiries.</li>
-  <li><strong>Clean the database</strong>: old revisions, spam and trashed items.</li>
+  <li><strong>Check the backup log.</strong> Make sure last night's backup actually finished and reached its off-site storage. Failed backups are often silent.</li>
+  <li><strong>Apply updates, backup first.</strong> In Dashboard &gt; Updates, update plugins one at a time on a busy site, then themes, then core. Read the changelog for big version jumps of your page builder or WooCommerce. <a href="/blog/update-wordpress-safely/">How to update WordPress safely</a> walks through the order and what to do if something breaks.</li>
+  <li><strong>Check the site afterwards.</strong> Open the home page, a service or product page and the contact page on your phone.</li>
+  <li><strong>Send a test enquiry</strong> through each form and confirm the email arrives, not just the on-screen thank-you message.</li>
+  <li><strong>Glance at uptime alerts and spam.</strong> Delete spam comments and look for odd new user registrations.</li>
+</ul>
+<p>Some updates can safely run on their own; <a href="/blog/wordpress-auto-updates/">WordPress auto-updates</a> explains which. Even then, someone should check the site afterwards.</p>
+
+<h2>Monthly WordPress maintenance checklist</h2>
+<p>This is the heart of maintenance, and the list I'd hand to anyone looking after a business site once a month:</p>
+<ol>
+  <li><strong>Take a full backup</strong> before you change anything.</li>
+  <li><strong>Run a security scan</strong> with your security plugin, such as Wordfence or Solid Security, or your host's scanner, and act on anything it flags.</li>
+  <li><strong>Review users.</strong> In Users &gt; All Users, filter by Administrator and remove former staff, agencies and freelancers. Nobody should have more access than their work needs.</li>
+  <li><strong>Check Site Health.</strong> Tools &gt; Site Health lists critical issues and recommendations, such as an outdated PHP version, failed scheduled events or inactive plugins you could delete.</li>
+  <li><strong>Open Search Console.</strong> Look at Indexing &gt; Pages for new errors, Security &amp; Manual Actions for warnings, and Core Web Vitals for pages that have slipped.</li>
+  <li><strong>Test speed</strong> on your home page and two key pages in PageSpeed Insights, and compare with last month. A sudden drop usually follows a new plugin or a large image.</li>
+  <li><strong>Find broken links and 404s.</strong> Search Console's not-found list or a free crawler will show them. Fix the link or add a redirect.</li>
+  <li><strong>Clean the database</strong> after the backup: old revisions, spam and trashed comments, and expired transients. WP-Optimize and similar plugins do this in a few clicks.</li>
+  <li><strong>Check renewals coming up</strong> in the next 60 days, so nothing expires by surprise.</li>
+  <li><strong>Look at analytics:</strong> enquiries, calls and WhatsApp clicks against last month.</li>
+  <li><strong>Write down what you did</strong> in a simple log: date, updates applied, issues found. It makes the next problem much faster to trace.</li>
+</ol>
+<p>If you or your developer have SSH access, WP-CLI can do several checks in seconds:</p>
+<pre><code>wp core check-update
+wp plugin list --update=available
+wp core verify-checksums
+wp plugin verify-checksums --all
+wp user list --role=administrator --fields=user_login,user_email</code></pre>
+<p>For the hardening side of the monthly routine, see the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
+
+<h2>Quarterly tasks (every 3 months)</h2>
+<ul>
+  <li><strong>Test a backup restore</strong> on a staging site or a spare subdomain. A backup you've never restored is a hope, not a plan.</li>
+  <li><strong>Audit plugins.</strong> Delete anything deactivated, replace plugins that haven't been updated in a long time, and look for two plugins doing the same job.</li>
+  <li><strong>Check your PHP version</strong> in Tools &gt; Site Health &gt; Info &gt; Server. Old versions stop getting security fixes; test on staging before switching.</li>
+  <li><strong>Check premium licences</strong> for themes, page builders and plugins. An expired licence quietly stops updates arriving.</li>
+  <li><strong>Refresh key content:</strong> prices, team, phone numbers, opening hours, offers and photos.</li>
+  <li><strong>Check form spam protection</strong> and the email settings that deliver your enquiries.</li>
 </ul>
 
-<p>Want alerts the moment your site goes down? See <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a>.</p>
-
-<h2>Every 3–6 months</h2>
+<h2>Yearly tasks</h2>
 <ul>
-  <li><strong>Test a backup restore</strong> on a staging site. A backup you've never tested might not work.</li>
-  <li><strong>Audit plugins.</strong> Delete unused ones and replace any that are abandoned or no longer updated.</li>
-  <li><strong>Update content.</strong> Refresh prices, team, services, photos and testimonials.</li>
-  <li><strong>Check your PHP version</strong> is current and supported by your host.</li>
+  <li><strong>Renew your domain and hosting</strong> early, with auto-renew on and a card that won't expire. Check the renewal price before it charges, because it's often higher than the first term; see <a href="/blog/hosting-renewal-price-increase/">why hosting renewals cost more</a>.</li>
+  <li><strong>Review your hosting.</strong> Is it still fast enough, are backups and support adequate, and are you paying for add-ons you don't use?</li>
+  <li><strong>Review access</strong> to the registrar, hosting, Google accounts and email. Make sure they're in the business's name, not a former employee's or developer's.</li>
+  <li><strong>Do a full SEO and content review:</strong> pages to improve, merge or remove, and outdated posts to refresh.</li>
+  <li><strong>Check the privacy policy and cookie notice</strong> still match the tools the site uses.</li>
+  <li><strong>Decide on a refresh or redesign</strong> if the site looks dated or enquiries have dropped.</li>
 </ul>
+
+<h2>Adjust the schedule for your type of site</h2>
+<ul>
+  <li><strong>Brochure site that rarely changes:</strong> fortnightly updates and the monthly list are usually enough.</li>
+  <li><strong>Busy blog or news site:</strong> daily backups, closer comment and spam checks, and a regular look at the database size.</li>
+  <li><strong>WooCommerce store:</strong> add test orders after updates, payment gateway and order email checks, and more frequent backups; see the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</li>
+  <li><strong>Membership or booking site:</strong> test logins, sign-ups and bookings after every update.</li>
+</ul>
+
+<h2>Doing it yourself or handing it over</h2>
+<p>A small brochure site with a handful of well-maintained plugins can be looked after by an owner who is comfortable in the dashboard and sticks to the routine. It gets harder with a store, custom code, a page builder with many add-ons, or a site nobody has updated for a year. If you hand it over, ask for a monthly report that lists updates, backups, uptime and issues found. Freelance plans in India typically cost about ₹1,500 to ₹6,000 a month; <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a> explains what moves the price.</p>
 
 <p>Detailed guides: <a href="/blog/wordpress-database-optimization/">database optimisation</a> and <a href="/blog/update-php-version-wordpress/">updating PHP</a>.</p>
 
-<h2>Yearly</h2>
-<ul>
-  <li><strong>Renew domain and hosting</strong> in advance, and turn on auto-renew to avoid your site going offline.</li>
-  <li><strong>Renew premium licences</strong> so you keep getting security updates.</li>
-  <li><strong>Review your hosting.</strong> Is it still fast enough for your traffic?</li>
-  <li><strong>Do a full SEO and content review</strong> to find pages to improve or merge.</li>
-  <li><strong>Consider a design refresh</strong> if the site looks dated or isn't converting well.</li>
-</ul>
+<h2>FAQs</h2>
+<h3>How often should a WordPress site be maintained?</h3>
+<p>Check backups and updates weekly or fortnightly, run the fuller checklist monthly, test a restore and audit plugins quarterly, and handle renewals and a full review yearly. Stores and busy sites need closer attention.</p>
+<h3>What should a monthly WordPress maintenance checklist include?</h3>
+<p>A full backup, a security scan, a review of admin users, Site Health, Search Console errors, a speed check on key pages, broken links, a database clean-up, upcoming renewals and a short log of what was done.</p>
+<h3>Is turning on auto-updates enough?</h3>
+<p>No. Auto-updates apply changes, but they don't take a backup first or check the site afterwards, and they don't cover users, renewals, restores or Search Console. They're useful for minor core and trusted plugin updates if someone still checks the site.</p>
+<h3>What is a WordPress maintenance schedule?</h3>
+<p>It's a list of maintenance tasks with how often each one is done, like the table above. Writing it down, with a log of when each task was last done, is what makes maintenance consistent.</p>
+<h3>Can I maintain my WordPress site myself?</h3>
+<p>Yes, if the site is simple and you follow the schedule. Always back up before updating, and get help if an update breaks the layout, forms stop sending or Search Console reports a security issue.</p>
 
-<p>For a safe step-by-step process, see <a href="/blog/update-wordpress-safely/">how to update WordPress without breaking your site</a>.</p>
-
-<p>Running an online store? Add store-specific tasks like test orders and payment checks from the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
-
-<h2>Golden rules</h2>
-<ol>
-  <li>Always back up before updating.</li>
-  <li>Never use pirated ("nulled") themes or plugins.</li>
-  <li>Use strong passwords and two-factor authentication.</li>
-  <li>Fewer, well-maintained plugins are better than many.</li>
-</ol>
-
-<p>Wondering what professional maintenance costs? See <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>. For the plugins worth keeping, see <a href="/blog/essential-wordpress-plugins-business/">essential WordPress plugins</a>.</p>
-
-<h2>Don't have time?</h2>
-<p>Maintenance only takes a little time each month, but it has to be done consistently. Many business owners hand it to a developer on a monthly plan, so updates, backups, security and small changes are handled by someone who knows the site, and problems are caught before customers notice.</p>
+<p>Prefer to have it done for you? My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> cover updates with a backup first and testing afterwards, off-site backups, security checks, uptime monitoring and a short monthly report.</p>
 `,
   },
   {
@@ -1947,76 +1998,128 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'setup-google-analytics-search-console',
-    seoTitle: 'Set Up Google Analytics 4 & Search Console (Guide)',
-    title: 'How to Set Up Google Analytics 4 and Search Console for Your Business Website',
-    description: 'Set up Google Analytics 4 and Search Console step by step: verify ownership, submit your sitemap and track enquiries, calls and WhatsApp clicks on your site.',
+    seoTitle: 'Set Up Google Analytics 4 & Search Console (and Link Them)',
+    title: 'How to Set Up Google Analytics 4 and Search Console for Your Business Website, and Link Them Together',
+    description: 'Set up Google Analytics 4 and Search Console step by step: verify your domain, add GA4 with Site Kit, link the two in Product links and track enquiries.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
     body: `
-<p>Two free Google tools tell you almost everything you need to know about your website's performance. <strong>Google Search Console</strong> shows how you appear in Google Search. <strong>Google Analytics 4 (GA4)</strong> shows what visitors do once they arrive. Here's how to set up both properly.</p>
+<p>To set up Google Analytics 4 and Search Console: create a Domain property in Search Console and verify it with a DNS TXT record, create a GA4 property with a web data stream, add the Google tag to your site (on WordPress, Site Kit by Google is the simplest way), then link the two in GA4 under Admin &gt; Product links &gt; Search Console links. Finally, mark form submissions, calls and WhatsApp clicks as key events so you can see which pages bring enquiries.</p>
+<p>The whole job takes an afternoon if you have access to your domain's DNS and your WordPress admin. Below is each step with the menu names, the checks that confirm it's working, and the mistakes I most often find when I take over a site. Tracking is set up properly as part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, but everything here can be done yourself.</p>
 
-<h2>Google Search Console vs Google Analytics</h2>
+<h2>Search Console vs Google Analytics: what each tells you</h2>
 <table>
-  <thead><tr><th>Search Console</th><th>Google Analytics 4</th></tr></thead>
+  <thead><tr><th></th><th>Google Search Console</th><th>Google Analytics 4</th></tr></thead>
   <tbody>
-    <tr><td>Which searches show your site</td><td>Where visitors come from (Google, social, ads, direct)</td></tr>
-    <tr><td>Clicks, impressions and average position</td><td>Which pages they view and for how long</td></tr>
-    <tr><td>Indexing problems and errors</td><td>Conversions: forms, calls, WhatsApp clicks</td></tr>
-    <tr><td>Core Web Vitals and security issues</td><td>Devices, locations and audiences</td></tr>
+    <tr><td>Main question</td><td>How does my site appear in Google Search?</td><td>What do visitors do once they arrive?</td></tr>
+    <tr><td>Key data</td><td>Search queries, impressions, clicks, average position</td><td>Traffic sources, pages viewed, engagement, key events</td></tr>
+    <tr><td>Technical health</td><td>Indexing errors, Core Web Vitals, security issues, manual actions</td><td>None directly</td></tr>
+    <tr><td>Traffic covered</td><td>Google Search only</td><td>All sources: Google, social, ads, email, direct</td></tr>
+    <tr><td>Needs code on the site</td><td>No, only verification</td><td>Yes, the Google tag</td></tr>
   </tbody>
 </table>
 
+<h2>Before you start</h2>
+<ul>
+  <li><strong>Use a Google account the business controls,</strong> ideally your business email, not a developer's or a former employee's personal Gmail. Add others as users later rather than sharing the login.</li>
+  <li><strong>Have DNS access:</strong> the login for wherever your domain's DNS is managed, which may be your registrar, your host or Cloudflare.</li>
+  <li><strong>Have WordPress admin access</strong> to install a plugin.</li>
+  <li><strong>Pick one way to add the tag.</strong> Adding GA4 through two plugins, or a plugin and the theme, double-counts every visit.</li>
+</ul>
+
 <h2>Step 1: Set up Google Search Console</h2>
 <ol>
-  <li>Go to <strong>search.google.com/search-console</strong> and sign in with your business Google account.</li>
-  <li>Choose <strong>Domain property</strong> (recommended) and enter your domain without https or www.</li>
-  <li>Google gives you a <strong>TXT record</strong>. Add it in your domain's DNS settings (at your registrar or wherever your DNS is managed).</li>
-  <li>Click <strong>Verify</strong>. DNS changes can take a little time to take effect.</li>
-  <li>Go to <strong>Sitemaps</strong> and submit your sitemap URL (often <code>/sitemap.xml</code> or <code>/sitemap_index.xml</code> on WordPress with an SEO plugin).</li>
+  <li>Go to search.google.com/search-console and sign in.</li>
+  <li>Choose <strong>Domain</strong> and enter your domain without https or www, for example yourbusiness.in.</li>
+  <li>Copy the TXT record Google gives you and add it to your DNS. Leave the host or name field as @ or blank, as your DNS provider expects.</li>
+  <li>Click <strong>Verify</strong>. If it fails, wait a while and try again; DNS changes can take time to spread.</li>
+  <li>Open <strong>Sitemaps</strong> and submit your sitemap. With Yoast or Rank Math it's usually sitemap_index.xml; without an SEO plugin, WordPress itself provides wp-sitemap.xml.</li>
+  <li>In <strong>Settings &gt; Users and permissions</strong>, add your developer or SEO provider as a Full user instead of giving them your password.</li>
 </ol>
+<p>A Domain property covers http and https, www and non-www and every subdomain in one place, which is why I recommend it. A URL-prefix property covers one exact version of the site and can be verified with an HTML tag or file instead of DNS, which helps if you can't reach your DNS. If the sitemap shows an error, see <a href="/blog/search-console-sitemap-couldnt-fetch/">sitemap "couldn't fetch" explained</a>.</p>
 
-<h2>Step 2: Set up Google Analytics 4</h2>
+<h2>Step 2: Create a GA4 property and data stream</h2>
 <ol>
-  <li>Go to <strong>analytics.google.com</strong>, open <strong>Admin</strong> and create an account and a property for your business.</li>
-  <li>Set your time zone and currency correctly (for example India, INR).</li>
-  <li>Add a <strong>Web data stream</strong> with your website URL.</li>
-  <li>Copy the <strong>Measurement ID</strong> (starts with <code>G-</code>).</li>
-  <li>Add it to your site. On WordPress this is usually done with Site Kit by Google or your SEO/analytics plugin, or by adding the Google tag to your theme.</li>
-  <li>Open <strong>Reports → Realtime</strong> and visit your site to confirm it's working.</li>
+  <li>Go to analytics.google.com, open <strong>Admin</strong> and choose <strong>Create &gt; Property</strong> (or create an account first if you don't have one).</li>
+  <li>Name the property after your site, set the time zone to India and the currency to Indian rupees, or whatever matches your business.</li>
+  <li>Answer the business details questions and choose <strong>Web</strong> as the platform.</li>
+  <li>Enter your website address and a stream name. Leave <strong>Enhanced measurement</strong> on; it records scrolls, outbound clicks, site search and file downloads without extra code.</li>
+  <li>Copy the <strong>Measurement ID</strong>, which starts with G-.</li>
+  <li>In <strong>Admin &gt; Data collection and modification &gt; Data retention</strong>, change event data retention from the default 2 months to 14 months, the longest option on the free version at the time of writing.</li>
 </ol>
 
-<p>Once it's running, here's <a href="/blog/google-search-console-reports-explained/">what each Search Console report means</a>.</p>
-
-<h2>Step 3: Track the actions that matter</h2>
-<p>Page views alone don't tell you if the site brings business. Track the actions that lead to enquiries:</p>
+<h2>Step 3: Add the tag to your WordPress site</h2>
+<p>There are three sensible ways. Use one of them, not several:</p>
 <ul>
-  <li>Contact form submissions (a thank-you page or a form event)</li>
-  <li>Clicks on phone numbers (<code>tel:</code> links)</li>
-  <li>WhatsApp button clicks</li>
-  <li>Email link clicks</li>
+  <li><strong>Site Kit by Google:</strong> Google's free plugin. It adds the tag, can verify Search Console for you, and shows summary figures in your dashboard. The best choice for most business owners.</li>
+  <li><strong>Your SEO or header plugin:</strong> some SEO plugins, or a simple header-and-footer plugin, let you paste the Measurement ID or the Google tag. Fine if you already use one.</li>
+  <li><strong>Google Tag Manager:</strong> better when you also run Meta or Google Ads tags or want detailed click tracking; see <a href="/blog/google-tag-manager-basics/">Google Tag Manager basics</a>.</li>
 </ul>
-<p>Then mark the most important ones as <strong>key events</strong> in GA4 so you can see which pages and traffic sources produce leads.</p>
+<h3>Setting up Site Kit</h3>
+<ol>
+  <li>In WordPress, go to <strong>Plugins &gt; Add New</strong>, search for Site Kit by Google, install and activate it.</li>
+  <li>Click <strong>Start setup</strong> and sign in with the same Google account that owns your Search Console and Analytics.</li>
+  <li>Approve the permissions. Site Kit verifies the site in Search Console and connects it.</li>
+  <li>Choose <strong>Set up Analytics</strong> and select the GA4 property and web stream you just created, or let Site Kit create one.</li>
+</ol>
+<p>To confirm it works, open your site in another browser or on your phone and check <strong>Reports &gt; Realtime</strong> in GA4. You should see yourself within a minute or so. If nothing appears after a day, work through <a href="/blog/google-analytics-not-tracking-wordpress/">GA4 not showing data on WordPress</a>.</p>
 
-<p>New site not showing up yet? See <a href="/blog/get-website-indexed-google-faster/">how to get your website indexed faster</a>.</p>
+<h2>Step 4: How to set up Search Console in Google Analytics</h2>
+<p>Linking the two puts your Google search queries and landing pages next to engagement and enquiry data in GA4. You need the Editor role on the GA4 property and must be a verified owner of the Search Console property.</p>
+<ol>
+  <li>In GA4, open <strong>Admin &gt; Product links &gt; Search Console links</strong>.</li>
+  <li>Click <strong>Link</strong>, then <strong>Choose accounts</strong>, and tick your Search Console property.</li>
+  <li>Click <strong>Next</strong>, select your web data stream, then <strong>Next</strong> and <strong>Submit</strong>.</li>
+  <li>Go to <strong>Reports &gt; Library</strong>. Find the Search Console collection, open its menu and choose <strong>Publish</strong>. Until you do, the reports don't appear in the left-hand menu.</li>
+</ol>
+<p>You then get two reports: Queries, showing the searches that brought clicks, and Google organic search traffic, showing landing pages with their clicks, impressions and engagement. Search Console data arrives a couple of days late, so don't expect today's figures. A GA4 web stream links to one Search Console property, so link the Domain property that covers the whole site.</p>
 
-<p>More on tracking the right actions: <a href="/blog/ga4-events-explained/">GA4 events explained</a> and <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</p>
-
-<h2>Step 4: Link the two tools</h2>
-<p>In GA4 Admin, link your Search Console property. You'll then see search queries alongside visitor behaviour in Analytics.</p>
-
-<p>Once tracking works, you can <a href="/blog/measure-website-roi/">measure your website's ROI</a> in simple rupee terms.</p>
-
-<h2>What to check every month</h2>
+<h2>Step 5: Track enquiries as key events</h2>
+<p>Page views don't tell you whether the site brings business. Track the actions that lead to enquiries and mark them as key events (what GA4 used to call conversions):</p>
 <ul>
-  <li><strong>Search Console → Performance:</strong> top queries and pages, and which are growing</li>
-  <li><strong>Search Console → Pages:</strong> pages not indexed and why</li>
-  <li><strong>GA4 → Traffic acquisition:</strong> which channels bring visitors</li>
-  <li><strong>GA4 → Key events:</strong> how many enquiries, and from where</li>
+  <li><strong>Contact form submissions:</strong> easiest with a thank-you page. Create an event in <strong>Admin &gt; Data display &gt; Events</strong> that fires when page_location contains your thank-you page address, then mark it as a key event. Recent versions of Site Kit can also detect submissions from some popular form plugins.</li>
+  <li><strong>Phone clicks:</strong> clicks on tel: links, usually tracked with Tag Manager.</li>
+  <li><strong>WhatsApp clicks:</strong> clicks on wa.me links, which enhanced measurement records as outbound clicks you can turn into an event.</li>
+  <li><strong>Email clicks:</strong> clicks on mailto: links.</li>
+</ul>
+<p><a href="/blog/ga4-events-explained/">GA4 events explained</a> covers event names and parameters in more detail. Once enquiries are tracked, you can <a href="/blog/measure-website-roi/">measure your website's ROI</a> in rupees.</p>
+
+<h2>Common setup mistakes</h2>
+<ul>
+  <li><strong>The property belongs to someone else,</strong> such as an old agency, so you can't see your own data. Ask them to add you as an administrator, or start a new property.</li>
+  <li><strong>The tag is installed twice,</strong> which doubles page views and halves the bounce rate overnight.</li>
+  <li><strong>Wrong time zone or currency,</strong> which shifts daily figures and revenue.</li>
+  <li><strong>Data retention left at 2 months,</strong> which limits how far back custom reports can go.</li>
+  <li><strong>Your own visits counted.</strong> Define internal traffic in the web stream's tag settings and activate the data filter in Admin.</li>
+  <li><strong>No mention in the privacy policy.</strong> Say that you use Google Analytics; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for India</a>.</li>
 </ul>
 
-<h2>Need help?</h2>
-<p>Getting tracking right, especially for forms and WhatsApp clicks, is fiddly the first time. It's usually included in a proper <a href="/wordpress-seo-services/">WordPress SEO setup</a>, so you can see from day one what's working.</p>
+<h2>What to check each month</h2>
+<ul>
+  <li><strong>Search Console &gt; Performance:</strong> top queries and pages, and which are rising or falling.</li>
+  <li><strong>Search Console &gt; Pages:</strong> pages not indexed and why.</li>
+  <li><strong>GA4 &gt; Traffic acquisition:</strong> which channels bring visitors.</li>
+  <li><strong>GA4 key events:</strong> how many enquiries, and from which pages and sources.</li>
+</ul>
+<p><a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a> goes through each report in plain English.</p>
+
+<h2>FAQs</h2>
+<h3>How do I set up Search Console in Google Analytics?</h3>
+<p>Verify your site in Search Console first, then in GA4 go to Admin &gt; Product links &gt; Search Console links, click Link, choose your Search Console property and web stream, and submit. Then publish the Search Console collection from Reports &gt; Library so the reports appear.</p>
+<h3>Do I need both Google Analytics and Search Console?</h3>
+<p>Yes, for a business site. Search Console shows searches, rankings and indexing problems that GA4 can't see, while GA4 shows what visitors do and which pages produce enquiries. Both are free.</p>
+<h3>Should I use Site Kit or add the code another way?</h3>
+<p>For most WordPress sites, Site Kit is the simplest and keeps everything under Google's own plugin. Use Tag Manager instead if you manage several tracking tags. Whichever you choose, add the tag only once.</p>
+<h3>Why don't GA4 and Search Console numbers match?</h3>
+<p>They measure different things. Search Console counts clicks from Google Search; GA4 counts sessions from visitors whose browsers load the tag, so ad blockers, declined cookies and people who leave before the page loads reduce GA4's figures.</p>
+<h3>Do I need the Google developer console to set up Analytics?</h3>
+<p>No. The Google Cloud developer console is only needed for custom API projects. Setting up GA4, Search Console and Site Kit happens entirely in their own dashboards.</p>
+<h3>How long until data appears?</h3>
+<p>Realtime data in GA4 appears within minutes and standard reports within a day or so. Search Console can take a few days to show performance data for a newly verified site; see <a href="/blog/get-website-indexed-google-faster/">getting a new site indexed faster</a>.</p>
+
+<p>Want tracking set up correctly from day one, with enquiries measured and a monthly look at what's working? See my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -2911,58 +3014,134 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'temple-ngo-website-online-donations',
-    seoTitle: 'Temple & NGO Websites: Online Donations Guide',
-    title: 'Temple, Trust and NGO Websites: A Guide to Online Donations and Engagement',
-    description: 'Temple and NGO websites: how trusts and nonprofits accept online donations, share events and timings, recruit volunteers and build trust with supporters.',
+    seoTitle: 'Online Donations for Temple & NGO Websites: Setup Guide',
+    title: 'How to Set Up Online Donations on a Temple, Trust or NGO Website: Gateways, UPI, Receipts and Monthly Giving',
+    description: 'Set up online donations for a temple, trust or NGO website in India: Razorpay, Cashfree, PayU or Instamojo onboarding, UPI QR, receipts and monthly giving.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Industries',
     related: ['website-for-temples-and-ngos', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
-<p>Devotees, donors and volunteers increasingly connect with temples, trusts and NGOs online. A good website helps people find you, stay informed and support your work, and online donations can make giving far easier for supporters anywhere in the world.</p>
+<p>To accept online donations on a temple, trust or NGO website: gather your registration documents and a bank account in the organisation's name, apply to a payment gateway such as Razorpay, Cashfree, PayU or Instamojo, add the policy pages gateways check, build a donation form with suggested amounts and purposes, and send an automatic acknowledgement after each payment. Add a UPI QR code for devotees at the temple, test everything in the gateway's test mode, then make a small real donation before you announce it.</p>
+<p>This is the hands-on setup, step by step. If you'd like it done for you as part of a complete site, with timings, events, donations and receipts, see my <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a>. For the tax side in more depth, <a href="/blog/ngo-website-donations-80g/">80G receipts, FCRA and payment setup</a> covers what your CA will ask about.</p>
 
-<h2>What visitors come for</h2>
+<h2>UPI QR, payment gateway or bank details?</h2>
+<p>Most organisations end up offering all three, with one as the main route:</p>
+<table>
+  <thead><tr><th></th><th>UPI QR code</th><th>Donation form with a gateway</th><th>Bank transfer details</th></tr></thead>
+  <tbody>
+    <tr><td>Setup effort</td><td>Low: generate a merchant QR from your bank or a gateway</td><td>Moderate: gateway approval and a form on the site</td><td>None</td></tr>
+    <tr><td>Fees</td><td>Usually low or none for UPI</td><td>A percentage per transaction, varying by gateway and method</td><td>None</td></tr>
+    <tr><td>Donor details</td><td>Only what the bank statement shows</td><td>Name, email, phone, purpose, and PAN when needed</td><td>Often only a name</td></tr>
+    <tr><td>Automatic receipt</td><td>No</td><td>Yes</td><td>No</td></tr>
+    <tr><td>Monthly giving</td><td>No</td><td>Yes, where the gateway supports mandates</td><td>Only if the donor sets up a standing instruction</td></tr>
+    <tr><td>Best use</td><td>Devotees at the temple, quick small offerings</td><td>The main online route</td><td>Large donors and CSR transfers</td></tr>
+  </tbody>
+</table>
+
+<h2>Step 1: Get your documents ready</h2>
+<p>Gateways verify the organisation before activating payments, and gathering papers often takes longer than building the page. Typically they ask for:</p>
 <ul>
-  <li><strong>Temples:</strong> darshan and aarti timings, festivals, directions, history, seva and puja booking, donations</li>
-  <li><strong>NGOs and trusts:</strong> your mission, projects, impact, how to donate, how to volunteer, and transparency</li>
+  <li>The registration certificate: trust deed, society registration or Section 8 company certificate</li>
+  <li>The organisation's PAN</li>
+  <li>A current account in the organisation's name, usually shown with a cancelled cheque</li>
+  <li>ID and address proof of the authorised signatory, such as a trustee or secretary</li>
+  <li>12A and 80G certificates, if you hold them</li>
+  <li>A board or trust resolution authorising the signatory, for some gateways</li>
 </ul>
 
-<h2>Setting up online donations</h2>
+<h2>Step 2: Choose a payment gateway</h2>
+<p>All four gateways below are widely used in India and support UPI, cards and net banking. Their policies for trusts, religious organisations and NGOs, their fees and their features change, so check the current details with each before applying:</p>
+<ul>
+  <li><strong>Razorpay:</strong> a common choice for NGOs, with no-code Payment Pages and Payment Buttons, subscriptions for recurring payments and WordPress integrations.</li>
+  <li><strong>Cashfree:</strong> payment forms, links and subscriptions, with integrations for common form and e-commerce plugins.</li>
+  <li><strong>PayU:</strong> a long-established gateway with payment links and WordPress plugins.</li>
+  <li><strong>Instamojo:</strong> quick to start with payment links and simple pages, popular with smaller organisations.</li>
+</ul>
+<p>When comparing, ask: do you onboard our type of organisation, what are the fees for UPI and cards, how soon do funds settle, do you support UPI AutoPay for monthly giving, and can international payments be switched off or settled separately? <a href="/blog/payment-gateways-india-compared/">How to choose a payment gateway in India</a> goes through these questions in detail.</p>
+
+<h2>Step 3: Add the pages gateways check</h2>
+<p>Gateway reviewers visit your website before approving it. Make sure it has:</p>
+<ul>
+  <li>An About page with the organisation's registered name, registration details and activities</li>
+  <li>A Contact page with a phone number, email and address</li>
+  <li>Terms and conditions, and a privacy policy explaining what donor data you collect and why; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy basics for Indian websites</a></li>
+  <li>A refund and cancellation policy, for example that donations are non-refundable except for duplicate or mistaken payments reported within a stated period</li>
+  <li>A donation page that explains clearly what donations support</li>
+</ul>
+
+<h2>Step 4: Build the donation form</h2>
+<p>A good form is short and asks for more only when needed:</p>
 <ol>
-  <li><strong>Choose a payment gateway</strong> such as Razorpay or another provider that supports UPI, cards and net banking. Gateways will check your organisation's registration and policy pages.</li>
-  <li><strong>Create a simple donation page</strong> with suggested amounts, a custom amount option, and optional purposes (annadanam, building fund, education program).</li>
-  <li><strong>Send automatic receipts</strong> by email after each donation.</li>
-  <li><strong>Tax details:</strong> if your organisation is eligible for tax exemption receipts, collect the donor details required and follow the applicable rules. Confirm current requirements with your accountant.</li>
-  <li><strong>International donations</strong> may have additional legal requirements for your organisation. Check what applies before enabling them.</li>
+  <li><strong>Amount:</strong> four or five suggested amounts plus a custom amount</li>
+  <li><strong>Purpose:</strong> general donation, annadanam, gaushala, renovation or a named programme</li>
+  <li><strong>Frequency:</strong> one-time or monthly, if you offer recurring giving</li>
+  <li><strong>Name, email and mobile number</strong></li>
+  <li><strong>"I want an 80G receipt"</strong> tick box, shown only if you hold 80G, which reveals PAN and address fields</li>
+  <li><strong>Optional dedication:</strong> in memory of, or on behalf of, someone</li>
+  <li><strong>Citizenship declaration,</strong> if you don't hold FCRA registration</li>
+  <li><strong>Consent line</strong> linking to your privacy policy</li>
 </ol>
-<p>Our guide to <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a> explains the technical setup.</p>
-
-<p>Handling tax receipts? See <a href="/blog/ngo-website-donations-80g/">online donations, 80G receipts and FCRA</a>.</p>
-
-<h2>Build trust and transparency</h2>
+<h3>Three ways to build it on WordPress</h3>
 <ul>
-  <li>Registration details and trustees or team</li>
-  <li>Clear explanation of how donations are used</li>
-  <li>Project updates with photos</li>
-  <li>Annual reports, where available</li>
+  <li><strong>The gateway's hosted page or button,</strong> such as a Razorpay Payment Page, linked or embedded from your donation page. Quickest, with receipts handled by the gateway, but less control over design and data.</li>
+  <li><strong>A form plugin with a gateway integration.</strong> Some form plugins connect to Razorpay or Cashfree directly; others need an add-on. This keeps the form on your site and stores entries in WordPress. <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a> covers the main options.</li>
+  <li><strong>WooCommerce with a donation product,</strong> useful if you also sell prasad, books or seva bookings, using the gateway's WooCommerce plugin.</li>
 </ul>
 
-<h2>Engagement features</h2>
+<h2>Step 5: Add a UPI QR code the right way</h2>
+<p>Use a merchant QR in the organisation's name from your bank's merchant app or your gateway, not a trustee's personal UPI ID. Show the UPI ID as text below it. On a phone, a donor can't scan their own screen, so add a "Pay with UPI app" button that opens their UPI app directly. The link looks like this, with your own UPI ID and name:</p>
+<pre><code>upi://pay?pa=yourtrust@bankname&amp;pn=Your%20Temple%20Trust&amp;cu=INR&amp;tn=Donation</code></pre>
+<p>Some UPI apps limit payments from links to personal UPI IDs, so a merchant ID works more reliably. Because a QR payment tells you almost nothing about the donor, add a short "Paid by UPI? Tell us for your receipt" form asking for the name, amount, date and transaction reference.</p>
+
+<h2>Step 6: Send receipts automatically</h2>
+<p>Every online donation should trigger an acknowledgement email straight away, with a PDF receipt if your setup supports it. Include:</p>
 <ul>
-  <li><strong>Events and festival calendar</strong> that your team can update easily</li>
-  <li><strong>Photo and video galleries</strong>, including live darshan or event recordings</li>
-  <li><strong>Volunteer sign-up form</strong></li>
-  <li><strong>Newsletter or WhatsApp channel</strong> sign-up for updates</li>
-  <li><strong>Multilingual content</strong>, such as Hindi, English or regional languages</li>
+  <li>The organisation's registered name, address and PAN</li>
+  <li>A receipt number, date, amount, payment method and transaction ID</li>
+  <li>The donor's name, and PAN and address if they asked for an 80G receipt</li>
+  <li>The purpose of the donation</li>
+  <li>Your 80G registration number and validity, only if you hold it</li>
+</ul>
+<p>For 80G, the website receipt is an acknowledgement. The certificate donors use for their deduction, Form 10BE, is generated after the organisation files its statement of donations, Form 10BD, so say this on the receipt and confirm the process and dates with your CA. Follow the receipt with a thank-you page and a personal note for larger gifts; see <a href="/blog/thank-you-pages-forms/">thank-you pages that do more</a>.</p>
+<p>Foreign donations need care. An organisation with FCRA registration must receive foreign contributions in its designated FCRA account at SBI's New Delhi Main Branch, which usually means a separate gateway setup for international payments. Without FCRA, switch off international cards and keep the citizenship declaration on the form. Take professional advice before accepting money from abroad.</p>
+
+<h2>Step 7: Offer monthly giving</h2>
+<p>Regular small donations are steadier than one-off appeals. Gateway subscription features can collect them by UPI AutoPay, card mandates or eNACH bank mandates. The donor approves the mandate once in their UPI or banking app, and later payments are taken automatically. Keep it donor-friendly: send a receipt for every payment, a reminder before the charge where the gateway supports it, and a simple way to cancel.</p>
+
+<h2>Step 8: Test before you go live</h2>
+<ol>
+  <li>Switch the gateway to test mode and enter its test keys on the site.</li>
+  <li>Try each suggested amount and a custom amount, with UPI, card and net banking test details from the gateway's documentation.</li>
+  <li>Try a failed payment and check the donor sees a clear message.</li>
+  <li>Check the receipt email arrives, isn't in spam and shows the right details, with and without the 80G option.</li>
+  <li>Check the entry appears in the gateway dashboard and in WordPress.</li>
+  <li>Test a monthly donation mandate, then cancel it.</li>
+  <li>Switch to live keys and make a small real donation, then refund it if you wish.</li>
+  <li>Test the whole flow on a basic Android phone over mobile data.</li>
+</ol>
+
+<h2>After launch</h2>
+<ul>
+  <li>Export donations every month and match them against gateway settlements in the bank account.</li>
+  <li>Keep donor data private and limited to the people who need it.</li>
+  <li>Plan appeals around festivals, publishing pages well ahead; see <a href="/blog/seasonal-festival-campaigns-website/">planning for festival peaks</a>.</li>
+  <li>Link the donation page from your Google Business Profile, WhatsApp channel and social pages.</li>
 </ul>
 
-<h2>Keep it respectful and simple</h2>
-<p>Design should be calm, respectful and easy to read, especially for older visitors. Large text, clear menus and fast loading on basic phones make a big difference.</p>
+<h2>FAQs</h2>
+<h3>How can a temple accept online donations?</h3>
+<p>Register with a payment gateway using the trust's documents and bank account, add a donation form to the website with suggested amounts and purposes, send automatic receipts, and display a merchant UPI QR code for devotees at the temple.</p>
+<h3>Can a trust or NGO use Razorpay for donations?</h3>
+<p>Many trusts and NGOs do. Razorpay, like Cashfree, PayU and Instamojo, reviews the organisation's registration, PAN, bank account and website before activating payments. Check its current requirements for your type of organisation before applying.</p>
+<h3>Is a UPI QR code enough for online donations?</h3>
+<p>It works for small offerings, but you don't get the donor's name, email or purpose, can't send automatic receipts and can't offer monthly giving. Use it alongside a gateway form, not instead of one.</p>
+<h3>Do we need 80G registration to accept online donations?</h3>
+<p>No. Any registered organisation can accept donations. 80G only decides whether donors can claim a tax deduction, so mention it, and collect PAN and address, only if you hold a valid 80G registration.</p>
+<h3>Can we accept donations from abroad?</h3>
+<p>Only with FCRA registration, and foreign contributions must be received in the designated FCRA account. Without it, block international payments and ask donors to confirm they're Indian citizens. Confirm with your CA.</p>
 
-<h2>Real example</h2>
-<p>For a large-scale example, see the <a href="/work/our-temples/">Our Temples case study</a>: a directory of hundreds of temples searchable by state and deity, with videos, slokas and a blog.</p>
-
-<h2>Next step</h2>
-<p>A website with reliable online donations and up-to-date information helps your community stay connected all year. See what's included in a <a href="/website-for-temples-and-ngos/">temple, trust or NGO website</a>.</p>
+<p>Want donations, receipts and monthly giving set up and tested end to end? See what's included in a <a href="/website-for-temples-and-ngos/">temple, trust or NGO website</a>.</p>
 `,
   },
   {
@@ -3119,69 +3298,126 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'industrial-website-product-catalogue',
-    seoTitle: 'Product Catalogue Websites for Industrial Companies',
-    title: 'How to Build a Product Catalogue Website for an Industrial Company',
-    description: 'How to structure a product catalogue website for industrial companies: categories, specs, datasheets, request-a-quote flows and SEO for product searches.',
+    seoTitle: 'Industrial Product Catalogue Website: How to Structure It',
+    title: 'How to Build a Product Catalogue Website for an Industrial Company: Categories, Spec Tables, Datasheets and RFQs',
+    description: 'Structure an industrial product catalogue website: categories, spec tables, datasheet PDFs, RFQ baskets, WooCommerce catalogue mode, filters and schema.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
     body: `
-<p>For industrial companies, the product catalogue is the heart of the website. Buyers and engineers want to find the right product quickly, check specifications and request a quote. A well-structured catalogue does exactly that, and ranks for the specific product searches buyers make.</p>
+<p>To build an industrial product catalogue website, plan the category structure first (product type, then family, then model), give every product family its own page with a text specification table, drawings, a downloadable datasheet and a Request a Quote button, and let buyers filter by the specifications they actually use, such as capacity, size or material. For most manufacturers, a catalogue without prices, where buyers add products to an enquiry list and send one RFQ, works better than a shop. On WordPress, WooCommerce in catalogue mode handles this well.</p>
+<p>This post is the practical how-to for the catalogue itself. If you'd like it planned and built for you, along with capability pages, certifications and RFQ routing, see my <a href="/website-for-manufacturers/">websites for manufacturers and industrial suppliers</a>. For the wider strategy of winning B2B and export enquiries, see the <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer website guide</a>.</p>
 
-<h2>Catalogue or online store?</h2>
-<p>Most industrial and B2B companies don't need a cart and checkout. Prices depend on quantity, specifications and delivery. A <strong>catalogue with "Request a Quote"</strong> is usually the right model. WooCommerce can still power it (for product management and filters), with the cart replaced by quote requests.</p>
+<h2>Catalogue, quote basket or online store?</h2>
+<table>
+  <thead><tr><th>Model</th><th>How buyers enquire</th><th>Best for</th><th>Typical WordPress setup</th></tr></thead>
+  <tbody>
+    <tr><td>Catalogue with Request a Quote</td><td>A quote button on each product, opening a form with the product filled in</td><td>Most manufacturers, where price depends on quantity and specification</td><td>Custom post types and fields, or WooCommerce without prices</td></tr>
+    <tr><td>Catalogue with enquiry basket</td><td>Buyers add several products to a list and send one RFQ</td><td>Distributors and suppliers of components, spares and accessories</td><td>WooCommerce with a request-a-quote plugin</td></tr>
+    <tr><td>Online store</td><td>Add to cart and pay online</td><td>Standard items at fixed prices, such as spares and consumables</td><td>WooCommerce with a payment gateway</td></tr>
+    <tr><td>Hybrid</td><td>Fixed-price items in the cart, the rest by quote</td><td>Companies selling both standard and engineered products</td><td>WooCommerce, with purchasing turned off per product</td></tr>
+  </tbody>
+</table>
 
-<p>Suppliers of restaurant and hotel kitchen equipment face the same choice, plus layout and service needs; see <a href="/blog/website-for-commercial-kitchen-equipment-suppliers/">websites for commercial kitchen equipment suppliers</a>.</p>
-
-<h2>Structure your categories like buyers think</h2>
+<h2>Plan the category structure first</h2>
+<p>The category tree decides how easily buyers find products and which searches you can rank for. Design it in a spreadsheet before anyone opens a design tool:</p>
 <ul>
-  <li>Group by product type first (for example Pumps → Centrifugal Pumps → End Suction Pumps)</li>
-  <li>Offer secondary browsing by industry or application ("Pumps for Water Treatment")</li>
-  <li>Keep category names in the terms buyers actually search</li>
+  <li><strong>Product type first,</strong> then family, then model: for example Pumps, then Centrifugal Pumps, then End Suction Pumps.</li>
+  <li><strong>Applications and industries as a second route,</strong> such as "Pumps for water treatment" or "Products for the pharma industry", linking to the same product pages rather than duplicating them.</li>
+  <li><strong>Names buyers search for,</strong> not internal codes. Check your enquiry emails and Search Console for the words buyers use, including common alternatives such as "SS" and "stainless steel".</li>
+  <li><strong>Two or three levels deep</strong> for most catalogues. Deeper trees make buyers click more and spread thin content across too many pages.</li>
 </ul>
+<p><a href="/work/india-automation-hub/">India Automation Hub</a>, an industrial automation news portal I built, shows the same principle on the content side: its subjects are grouped into six families, such as Control Systems and Automation with PLC, DCS, SCADA and HMI beneath it, and each category has its own archive page showing how many articles it holds. Grouping things the way engineers think about their work is exactly what a product catalogue needs.</p>
 
-<h2>What every product page needs</h2>
+<h2>Family pages or one page per model?</h2>
+<p>If models differ only by size, rating or capacity, one product family page with a full specification table usually works better than dozens of near-identical pages. Thin, repetitive pages are hard to rank and harder to keep updated. Give a model its own page when buyers search for it by model number, or when it has distinct applications, drawings and certifications.</p>
+
+<h2>What goes on each product page</h2>
 <ol>
-  <li><strong>Clear product name and model numbers</strong></li>
-  <li><strong>Photos and drawings</strong>, including dimension drawings where relevant</li>
-  <li><strong>Specification table</strong>: capacity, dimensions, materials, ratings and standards</li>
+  <li><strong>A clear name with model numbers</strong> and a one-line summary of what it's for</li>
+  <li><strong>Photos and dimension drawings,</strong> with descriptive alt text</li>
+  <li><strong>A specification table</strong> as real text: capacity, dimensions, materials, ratings, tolerances and standards</li>
   <li><strong>Applications and industries served</strong></li>
-  <li><strong>Downloadable datasheet / brochure (PDF)</strong></li>
-  <li><strong>Request a Quote button</strong>, pre-filled with the product name</li>
+  <li><strong>Downloads:</strong> datasheet, manual and, where buyers need them, CAD files</li>
+  <li><strong>Certifications that apply to this product,</strong> with validity dates</li>
+  <li><strong>Request a Quote</strong> or Add to Enquiry List, plus WhatsApp for quick questions</li>
   <li><strong>Related products and accessories</strong></li>
 </ol>
 
-<p>Datasheets and brochure PDFs can be found in Google too, if they are set up properly; see <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs, brochures and catalogues</a>.</p>
+<h2>Specification tables buyers and Google can read</h2>
+<p>Engineers want to compare and copy specifications, so never put them only in an image or a PDF. Use a proper table, keep units consistent across the catalogue (and give both metric and imperial if export buyers expect them), and name standards precisely. In WooCommerce, enter the specifications buyers filter by as global attributes under Products &gt; Attributes, such as material, capacity or voltage; the same data then powers both the spec table and the filters. Everything else can go in the description or a custom field.</p>
 
-<h2>Make quote requests effortless</h2>
+<h2>Datasheets, drawings and catalogue PDFs</h2>
+<p>Buyers still forward PDFs internally, because the person who finds your site often isn't the one who approves the supplier. <a href="/work/vansh-group/">Vansh Group</a>, an electronics OEM whose website I built, offers its company profile as a PDF download and links to two product catalogues, one for LED fixtures and one for complete LED lights made as an OEM. To make PDFs work for search too:</p>
 <ul>
-  <li>Ask for product, quantity, company name, location and contact details</li>
-  <li>Allow file uploads for drawings or specifications</li>
-  <li>Send enquiries to the right sales person instantly, and reply fast</li>
-  <li>Offer WhatsApp for quick questions</li>
+  <li>Use descriptive file names, such as model-x200-centrifugal-pump-datasheet.pdf</li>
+  <li>Export with real, selectable text, and set the document title</li>
+  <li>Link each PDF from its product page, and don't hide it behind a form</li>
+  <li>Put your phone number, WhatsApp and website inside the file</li>
+  <li>Compress files so they download on mobile data</li>
 </ul>
+<p><a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs, brochures and catalogues</a> explains how Google indexes them.</p>
+
+<h2>Enquiry baskets and RFQ forms</h2>
+<p>An RFQ form should give your sales team enough to quote without days of back-and-forth:</p>
+<ul>
+  <li>The product name and model filled in automatically from the page</li>
+  <li>An enquiry basket for buyers who need several products in one quote</li>
+  <li>Quantity with units, delivery city or country, and the requirement in the buyer's words</li>
+  <li>Uploads for drawings and specifications in the formats your team opens</li>
+  <li>Company name and contact details last</li>
+</ul>
+<p>On Vansh Group's site, the enquiry form has a service dropdown (product, PCB, part or tool development), so every enquiry arrives tagged with the kind of work needed and can go straight to the right person. <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a> covers routing and follow-up.</p>
+
+<h2>Setting up WooCommerce as a catalogue without prices</h2>
+<ol>
+  <li><strong>Leave the price empty</strong> on products you don't sell online. WooCommerce doesn't show an Add to cart button on a product without a price.</li>
+  <li><strong>Or turn off purchasing entirely</strong> with a small code snippet or a catalogue mode plugin, which also lets you hide prices you've entered for internal use.</li>
+  <li><strong>Add a request-a-quote plugin</strong> for the quote button and enquiry basket, and set where enquiries are emailed.</li>
+  <li><strong>Remove the cart and checkout</strong> pages from menus if nothing is sold online.</li>
+  <li><strong>Set up attributes</strong> for the specifications you filter by.</li>
+  <li><strong>Import products from a spreadsheet</strong> with the built-in CSV importer under Products &gt; Import, which is how large catalogues launch quickly.</li>
+  <li><strong>Choose short permalinks</strong> under Settings &gt; Permalinks, so product and category addresses stay readable.</li>
+</ol>
+<p>For developers, the snippet that makes every product non-purchasable is one line, added in a site-specific plugin or a code snippets plugin rather than the theme:</p>
+<pre><code>add_filter( 'woocommerce_is_purchasable', '__return_false' );</code></pre>
+<p>If you later want to sell spares online alongside the catalogue, the same setup grows into a store; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 
 <p>Packaging suppliers use the same approach; see <a href="/blog/website-for-printing-packaging-companies/">websites for printing and packaging companies</a>.</p>
 
 <h2>Filters and search</h2>
-<p>For large catalogues, filters by capacity, material, size or application save buyers time. A good site search that understands model numbers is essential.</p>
+<p>Once a category holds more than a page or two of products, filters by capacity, material, size or application save buyers time. Build them from attributes so they stay accurate as products change; <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a> compares the options. Site search matters just as much: engineers often type a model number, so use a search that includes SKUs and attributes and tolerates partial numbers.</p>
 
-<h2>SEO for product catalogues</h2>
+<h2>SEO for an industrial catalogue</h2>
 <ul>
-  <li>One page per product or product family, each with a unique title and description</li>
-  <li>Use specific keywords ("SS 304 storage tank 5000 litre manufacturer")</li>
-  <li>Add product and organization schema markup</li>
-  <li>Write descriptive alt text for product images</li>
-  <li>Link categories, products and related articles together</li>
+  <li><strong>A unique title and description</strong> for every category and product page, using specific terms such as "SS 304 storage tank 5000 litre manufacturer".</li>
+  <li><strong>A short introduction on category pages</strong> explaining the range, applications and how to choose, so they're more than a grid of thumbnails.</li>
+  <li><strong>Schema markup:</strong> Product markup with name, image, description, brand and model or SKU, BreadcrumbList for the category path, and Organization for the company. Without a price, review or rating, products won't qualify for Google's product rich results, but the markup still helps search engines understand the page; see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</li>
+  <li><strong>Internal links</strong> between categories, products, accessories and related articles.</li>
+  <li><strong>Redirects for discontinued products</strong> to the replacement or the category, rather than leaving 404 pages.</li>
 </ul>
+
+<h2>Keeping the catalogue up to date</h2>
+<p>A catalogue goes stale quickly when only the developer can edit it. Keep a master spreadsheet of products and specifications, decide who in your team updates the site, and train them to add products, change specs and upload datasheets themselves. Review certifications and datasheets at least yearly.</p>
 
 <p>Selling abroad too? See <a href="/blog/website-for-export-businesses/">how exporters win international buyers online</a>.</p>
 
-<h2>Keep it manageable</h2>
-<p>Your team should be able to add products, update specifications and upload datasheets themselves. Import product data from spreadsheets to launch large catalogues quickly.</p>
+<p>Suppliers of restaurant and hotel kitchen equipment face the same choice, plus layout and service needs; see <a href="/blog/website-for-commercial-kitchen-equipment-suppliers/">websites for commercial kitchen equipment suppliers</a>.</p>
 
-<h2>Real examples</h2>
-<p>See how an electronics OEM presents its service divisions, infrastructure and service-specific enquiry form in the <a href="/work/vansh-group/">Vansh Group case study</a>, and how the <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer website guide</a> covers the wider site. For your company, see what's included in a <a href="/website-for-manufacturers/">manufacturer website</a>.</p>
+<h2>FAQs</h2>
+<h3>How do I create a product catalogue website for my company?</h3>
+<p>Plan categories in a spreadsheet, gather specifications, photos and datasheets, and build templates for category and product pages with a quote form. On WordPress, WooCommerce without prices or custom post types with fields both work; import products from a spreadsheet if the range is large.</p>
+<h3>Can WooCommerce be used as a catalogue without prices?</h3>
+<p>Yes. Leave prices empty, or turn off purchasing with a snippet or catalogue mode plugin, and add a request-a-quote plugin. You keep WooCommerce's attributes, filters, CSV import and product management without a cart.</p>
+<h3>Should my catalogue be a PDF or web pages?</h3>
+<p>Both. Web pages for each product family are what buyers find on Google and can enquire from. The PDF is the printable companion buyers forward internally, linked from the relevant pages.</p>
+<h3>How should industrial product categories be organised?</h3>
+<p>By product type first, then family and model, using the names buyers search for. Add applications and industries as a second route that links to the same product pages, and keep the tree two or three levels deep.</p>
+<h3>Do product pages without prices get rich results in Google?</h3>
+<p>Generally not product rich results, which need a price, review or rating. Product, Breadcrumb and Organization markup are still worth adding, because they help search engines understand your pages.</p>
+
+<p>Have a product list or a PDF catalogue that needs to become a website buyers can search and enquire from? See <a href="/website-for-manufacturers/">websites for manufacturers</a> for how I plan and build them.</p>
 `,
   },
   {
@@ -4093,57 +4329,115 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'multilingual-wordpress-website-hindi-english',
-    seoTitle: 'Multilingual WordPress Websites (Hindi & English)',
-    title: 'Multilingual WordPress Websites: Hindi, English and Regional Languages',
-    description: 'Multilingual WordPress sites in Hindi, English or regional languages: when you need one, how they work, translation options and SEO practices like hreflang.',
+    seoTitle: 'Multilingual WordPress Websites (Hindi & English): Setup',
+    title: 'Multilingual WordPress Websites in Hindi, English and Regional Languages: Plugins, URLs and SEO',
+    description: 'How to build a multilingual WordPress website in Hindi and English: WPML vs Polylang vs TranslatePress, Hindi URLs, fonts, hreflang and what to translate.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Guides',
     related: ['website-for-temples-and-ngos', 'website-for-manufacturers', 'wordpress-seo-services'],
     body: `
-<p>India has hundreds of millions of internet users who prefer to browse in Hindi or a regional language, and many Indian businesses also sell abroad. A multilingual website can reach customers your competitors miss. Here's how to decide if you need one and how to do it properly.</p>
+<p>To build a WordPress website in Hindi and English, install a translation plugin such as Polylang, WPML or TranslatePress, add Hindi as a second language with its own URL folder (for example yoursite.in/hi/), translate each page, menu and form, and add a language switcher. The plugin adds hreflang tags so Google shows the right version to each searcher. Use a font that supports Devanagari, and have a fluent speaker write or check the Hindi rather than relying on raw machine translation.</p>
+<p>The same approach works for Marathi, Tamil, Telugu, Gujarati and other Indian languages, and for export sites that need French, Arabic or Spanish. Below is how I plan these sites: choosing a plugin, URL and slug decisions, setup steps, and the parts people forget to translate. Languages can be planned in from the start as part of <a href="/wordpress-website-development/">WordPress website development</a>, or added to a site you already have.</p>
 
-<h2>When a multilingual site makes sense</h2>
+<h2>Do you need a multilingual website?</h2>
+<p>It's worth it when your customers are more comfortable in Hindi or a regional language, which is common for temples and trusts, NGOs, local services, agriculture, education and healthcare, or when you sell to markets that search in other languages. If your customers search in English, or in Hinglish typed in English letters, a well-written English site may serve them better than a second language nobody visits. Look at your enquiries and calls: if people regularly ask questions in Hindi, that's your answer.</p>
+<p>A middle path is a few Hindi pages, such as the home page, main services and contact, rather than a full second copy of the site.</p>
+
+<h2>WPML vs Polylang vs TranslatePress vs Weglot</h2>
+<p>These are the main multilingual plugins for WordPress. Pricing and features change, so check each vendor's site before you buy.</p>
+<table>
+  <thead><tr><th></th><th>WPML</th><th>Polylang</th><th>TranslatePress</th><th>Weglot</th></tr></thead>
+  <tbody>
+    <tr><td>Cost model</td><td>Paid yearly licence</td><td>Free core, paid Pro and WooCommerce add-on</td><td>Free for one extra language, paid for more and for SEO features</td><td>Monthly or yearly subscription by word count</td></tr>
+    <tr><td>How you translate</td><td>A separate copy of each page, plus a translation editor</td><td>A separate copy of each page in the normal editor</td><td>Visually, on the front end of the live page</td><td>Automatic first, then edit in Weglot's dashboard</td></tr>
+    <tr><td>Where translations live</td><td>Your WordPress database</td><td>Your WordPress database</td><td>Your WordPress database</td><td>Weglot's servers</td></tr>
+    <tr><td>WooCommerce</td><td>Strong, with its own add-on</td><td>Through a paid add-on</td><td>Supported</td><td>Supported</td></tr>
+    <tr><td>Best for</td><td>Large sites, stores and complex setups</td><td>Brochure sites and blogs on a budget</td><td>Owners who want to translate what they see</td><td>Fast setup if you accept an ongoing fee</td></tr>
+  </tbody>
+</table>
+<p>For a typical Indian business or trust site with Hindi and English, I usually reach for Polylang or TranslatePress. WPML earns its licence on large WooCommerce catalogues. If you stop paying for Weglot, the translations stop being served, so weigh that before choosing it.</p>
+<p>One option to avoid: the free Google Translate dropdown widget. It translates in the visitor's browser, so there are no Hindi pages for Google to index, and the wording can be poor.</p>
+
+<h2>URL structure for Hindi pages</h2>
 <ul>
-  <li>Your customers are more comfortable in Hindi or a regional language (common for temples, NGOs, local services, agriculture and education)</li>
-  <li>You sell to international markets that search in other languages</li>
-  <li>Competitors in your area only offer English</li>
+  <li><strong>Subfolder, such as /hi/:</strong> the usual choice. One domain, one hosting account, and the Hindi pages benefit from the main site's authority.</li>
+  <li><strong>Subdomain, such as hi.yoursite.in:</strong> possible, but more setup and no real advantage for most businesses.</li>
+  <li><strong>Separate domain:</strong> only for a genuinely separate business or market. If you're considering several regional sites, read <a href="/blog/wordpress-multisite-when-needed/">when WordPress Multisite makes sense</a> first.</li>
 </ul>
-<p>If your customers mostly search in English, a well-written English site may be enough. Add languages when there's real demand.</p>
+<h3>Hindi URL slugs: Devanagari or English letters?</h3>
+<p>WordPress accepts Devanagari slugs, and Google handles them. They look fine in the address bar, but when copied into WhatsApp or email they turn into long strings of percent codes such as %E0%A4%B8, which look broken. My usual advice is short slugs in English letters inside the /hi/ folder, either the English word (/hi/services/) or a simple transliteration (/hi/sevayen/). Whatever you choose, be consistent and decide before publishing, because changing slugs later needs redirects; see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs in WordPress</a>.</p>
 
-<p>Running many separate regional sites instead? See <a href="/blog/wordpress-multisite-when-needed/">when WordPress Multisite makes sense</a>.</p>
+<h2>Setting up a Hindi and English WordPress site, step by step</h2>
+<p>Using Polylang as the example; the other plugins follow the same pattern:</p>
+<ol>
+  <li><strong>Back up the site,</strong> or work on a staging copy.</li>
+  <li><strong>Install the plugin</strong> and add your languages in <strong>Languages &gt; Languages</strong>: English and Hindi, with English as the default if most visitors use it.</li>
+  <li><strong>Choose the URL format</strong> in <strong>Languages &gt; Settings &gt; URL modifications</strong>, setting the language from the directory name so Hindi pages sit under /hi/.</li>
+  <li><strong>Assign existing content to English,</strong> which the plugin offers to do in bulk.</li>
+  <li><strong>Create the Hindi version of each page</strong> from the plus icon in the Pages list. It opens a linked copy in the normal editor.</li>
+  <li><strong>Build a menu for each language</strong> and assign it to the right location for that language.</li>
+  <li><strong>Translate theme and plugin text,</strong> such as buttons, footer text and widget titles, in <strong>Languages &gt; Translations</strong>.</li>
+  <li><strong>Create a form for each language,</strong> with Hindi labels, error messages, confirmation email and thank-you page.</li>
+  <li><strong>Add the language switcher</strong> to the header, labelled हिंदी and English rather than flags, since a flag represents a country, not a language.</li>
+  <li><strong>Test on a phone:</strong> every Hindi page, the switcher on each page, forms, and how the Devanagari text renders.</li>
+</ol>
 
-<h2>How multilingual WordPress sites work</h2>
-<p>A translation plugin (such as WPML, Polylang, TranslatePress or Weglot) lets you create a version of each page in every language, with a language switcher. Each language gets its own URLs, for example <code>/hi/</code> for Hindi, so search engines can index them separately.</p>
-
-<h2>Translation options</h2>
+<h2>What to translate, including the parts people forget</h2>
 <ul>
-  <li><strong>Professional or native-speaker translation:</strong> best quality, essential for key pages</li>
-  <li><strong>Machine translation with human review:</strong> faster and cheaper, fine for large volumes if someone fluent checks it</li>
-  <li><strong>Pure machine translation:</strong> risky. Awkward wording damages trust, especially in religious, legal or medical contexts.</li>
+  <li>Menus, header, footer and cookie notice</li>
+  <li>Forms, validation messages, confirmation emails and thank-you pages</li>
+  <li>SEO titles, meta descriptions and image alt text, not just the visible text</li>
+  <li>Buttons and pre-filled WhatsApp messages</li>
+  <li>For stores: product names and descriptions, categories, cart and checkout text, and order emails</li>
+  <li>Downloadable PDFs, or a note that they're in English only</li>
 </ul>
+<p>Keep phone numbers, prices and timings identical across languages, and update both versions when they change. Out-of-date Hindi pages are a common problem once the launch excitement fades.</p>
 
-<p>If you run a translation or interpretation agency yourself, see <a href="/blog/website-for-translation-services/">websites for translation and interpretation agencies</a>.</p>
-
-<h2>SEO best practices</h2>
+<h2>Translation quality</h2>
 <ul>
-  <li><strong>Separate URLs per language</strong>, not automatic switching based on location</li>
-  <li><strong>hreflang tags</strong> so Google shows the right language version to each user (most multilingual plugins add these)</li>
-  <li><strong>Translate titles, descriptions and image alt text</strong>, not just body content</li>
-  <li><strong>Research keywords in each language</strong>. People search differently in Hindi than in English, and often in Hinglish.</li>
-  <li><strong>Fonts that support Devanagari and regional scripts</strong> properly</li>
+  <li><strong>Written or translated by a fluent speaker:</strong> essential for the home page, services, donation and contact pages.</li>
+  <li><strong>Machine translation with human review:</strong> reasonable for large volumes, such as product descriptions, if someone fluent checks every page.</li>
+  <li><strong>Raw machine translation:</strong> risky. Literal Hindi reads awkwardly and damages trust, especially for religious, legal or medical content.</li>
 </ul>
+<p>Also decide on tone. Formal, Sanskrit-heavy Hindi suits a temple; everyday Hindi with common English words often suits a clinic or shop better, because that's how customers speak.</p>
 
-<p>For URL structures, hreflang codes and checking that Google shows the right version, see <a href="/blog/hreflang-multilingual-seo-india/">hreflang and multilingual SEO for Indian websites</a>.</p>
+<h2>Fonts and readability</h2>
+<p>Choose a font family that includes Devanagari glyphs, such as Noto Sans Devanagari, Mukta or Hind, so Hindi doesn't fall back to a mismatched system font. Devanagari usually needs a slightly larger size and more line height than English to stay readable. <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on your website</a> covers font choice, loading and testing.</p>
 
-<h2>Real examples</h2>
-<p>The <a href="/work/our-temples/">Our Temples</a> directory includes Telugu content for regional devotees. Manufacturers targeting export markets often add languages for their key buyer countries; see <a href="/blog/b2b-manufacturer-website-guide/">getting more export enquiries</a>.</p>
+<h2>SEO for a multilingual WordPress site</h2>
+<ul>
+  <li><strong>Separate URLs for each language,</strong> all crawlable and listed in your sitemap.</li>
+  <li><strong>hreflang tags</strong> linking each page to its translations, which the plugins above add. The code for Hindi is hi, and English for India is en-IN.</li>
+  <li><strong>No automatic redirects by location or browser language.</strong> Let visitors choose, and remember the choice.</li>
+  <li><strong>Keyword research in each language.</strong> People search differently in Hindi, and many type Hindi words in English letters, so check both.</li>
+  <li><strong>Check Search Console</strong> after launch to confirm the Hindi pages are indexed.</li>
+</ul>
+<p>For hreflang codes for every Indian language, URL structures and how to check Google shows the right version, see <a href="/blog/hreflang-multilingual-seo-india/">hreflang and multilingual SEO for Indian websites</a>.</p>
+
+<h2>A real example</h2>
+<p><a href="/work/our-temples/">Our Temples</a>, a temple directory I built, gives temple names and sections such as history, pooja details and festivals in Hindi and Telugu as well as English, presents slokas in Telugu script, and publishes some articles in Telugu. Devotees often read their own language more comfortably, so the languages sit in the listings themselves, not just the menu.</p>
 
 <p>Temples, trusts and NGOs often need Hindi or regional versions first; see the <a href="/blog/temple-ngo-website-online-donations/">guide to temple and NGO websites</a>.</p>
 
 <h2>Start small</h2>
-<p>You don't have to translate everything at once. Start with the homepage, key service or product pages and the contact page, then expand based on traffic and enquiries.</p>
+<p>You don't have to translate everything at once. Start with the home page, the pages that bring enquiries or donations, and the contact page, then add more based on traffic. Temples and NGOs usually translate timings and donation pages first; see <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a>. The cost depends on the number of pages and languages, the plugin licence, who provides the translation and whether there's a store.</p>
 
-<p>Need a site in more than one language? It can be planned in from the start as part of <a href="/website-for-temples-and-ngos/">community</a> and <a href="/website-for-manufacturers/">manufacturer</a> websites, or added to an existing site.</p>
+<p>If you run a translation or interpretation agency yourself, see <a href="/blog/website-for-translation-services/">websites for translation and interpretation agencies</a>.</p>
+
+<h2>FAQs</h2>
+<h3>How do I make my WordPress website in Hindi and English?</h3>
+<p>Install a multilingual plugin, add Hindi as a language with its own URL folder, create a Hindi version of each page, menu and form, and add a language switcher. Have a fluent speaker write or review the Hindi text.</p>
+<h3>Which is the best multilingual plugin for WordPress?</h3>
+<p>There's no single best. Polylang suits budget brochure sites, TranslatePress suits owners who like translating visually, WPML suits large sites and stores, and Weglot suits fast setup with an ongoing subscription.</p>
+<h3>Should Hindi page URLs be in Devanagari?</h3>
+<p>They can be, and Google indexes them, but they become long percent-encoded strings when shared. Short English or transliterated slugs inside a /hi/ folder are easier to share and maintain.</p>
+<h3>Is the Google Translate widget enough for a Hindi website?</h3>
+<p>Not for SEO or quality. It creates no Hindi pages for Google to index, and automatic translation often reads awkwardly. Use a translation plugin with properly translated pages.</p>
+<h3>Can I add Hindi to my existing WordPress site?</h3>
+<p>Yes. Install a translation plugin, assign existing content to English and add Hindi versions page by page. Test on staging first, especially if the site uses a page builder or WooCommerce.</p>
+
+<p>Planning a site in Hindi, English or a regional language? I can set up the languages, URLs, switcher, forms and hreflang as part of <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -7467,52 +7761,97 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'wordpress-vs-webflow',
-    title: 'WordPress vs Webflow: Which Is Better for Your Business Website?',
-    description: 'WordPress vs Webflow for business websites: an honest look at design freedom, editing, cost, e-commerce, plugins, SEO and ownership, and which to choose.',
+    seoTitle: 'WordPress vs Webflow: Cost, CMS Limits and Which to Choose',
+    title: 'WordPress vs Webflow: Which Is Better for Your Business Website? Cost, CMS Limits, Editing and Developers Compared',
+    description: 'WordPress vs Webflow for a business website: hosting costs, CMS limits, editing, plugins, Indian payment gateways, SEO and developer availability compared.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Guides',
     related: ['wordpress-website-development', 'figma-to-wordpress', 'wordpress-migration'],
     body: `
-<p>Webflow has become popular with designers for its visual control and clean output. WordPress remains the most widely used website platform. Both can produce excellent sites. Here's how they compare for a typical business.</p>
+<p>WordPress vs Webflow, in short: choose Webflow if your site is a design-led marketing site, your team is happy working in Webflow, and you want hosting, updates and security handled for you in exchange for a subscription and some limits on content and features. Choose WordPress if you want to own the site and choose your hosting, need Indian payment gateways, bookings, memberships or a large catalogue, publish a lot of content, or want the widest choice of developers. Both can produce fast sites that rank well.</p>
+<p>I build on WordPress, so read this with that in mind, but Webflow is a genuinely good tool and the right answer for some teams. Here's how the two compare on the points that matter to a business, especially in India. If WordPress turns out to be the better fit, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 
-<h2>Quick comparison</h2>
+<h2>WordPress vs Webflow at a glance</h2>
 <table>
   <thead><tr><th></th><th>WordPress</th><th>Webflow</th></tr></thead>
   <tbody>
-    <tr><td><strong>Hosting</strong></td><td>Any host you choose</td><td>Hosted by Webflow</td></tr>
-    <tr><td><strong>Ownership</strong></td><td>Full; move anytime</td><td>Tied to Webflow hosting</td></tr>
-    <tr><td><strong>Costs</strong></td><td>Hosting + optional licences</td><td>Site plan subscription, plus workspace plans for teams</td></tr>
-    <tr><td><strong>Design control</strong></td><td>High with Elementor or custom themes</td><td>Very high, designer-focused</td></tr>
-    <tr><td><strong>Editing for clients</strong></td><td>Easy with Elementor or blocks</td><td>Easy with the Editor for content</td></tr>
-    <tr><td><strong>Plugins / integrations</strong></td><td>Tens of thousands of plugins</td><td>Smaller app ecosystem</td></tr>
-    <tr><td><strong>E-commerce</strong></td><td>WooCommerce, very flexible</td><td>Built-in, simpler, with plan limits</td></tr>
-    <tr><td><strong>Developers available</strong></td><td>Very large pool</td><td>Smaller, specialised pool</td></tr>
+    <tr><td>What it is</td><td>Free, open-source software you install on hosting</td><td>A hosted visual website builder and CMS</td></tr>
+    <tr><td>Hosting</td><td>Any host you choose</td><td>Webflow's own hosting only, for dynamic sites</td></tr>
+    <tr><td>How you pay</td><td>Hosting, domain and optional licences, usually yearly</td><td>A site plan per website, plus workspace plans for team seats</td></tr>
+    <tr><td>Design control</td><td>High with Elementor, block themes or a custom theme</td><td>Very high, with a designer-friendly visual canvas</td></tr>
+    <tr><td>Content limits</td><td>Limited mainly by your hosting</td><td>CMS items, collections and form submissions capped by plan</td></tr>
+    <tr><td>Features</td><td>Tens of thousands of plugins</td><td>Built-in features, a smaller app marketplace and custom code</td></tr>
+    <tr><td>E-commerce</td><td>WooCommerce with Indian gateways such as Razorpay</td><td>Built-in, simpler, with plan limits and fewer gateway options</td></tr>
+    <tr><td>Maintenance</td><td>Updates, backups and security are your job or your developer's</td><td>Handled by Webflow</td></tr>
+    <tr><td>Developers in India</td><td>A very large pool</td><td>A smaller, mostly design-led pool</td></tr>
   </tbody>
 </table>
 
-<h2>Choose WordPress if...</h2>
+<h2>Cost: how each platform charges</h2>
+<p>The cost models are different, so compare the total over three to five years rather than the first month.</p>
 <ul>
-  <li>You want full ownership and freedom to choose hosting</li>
-  <li>You need specific features: bookings, memberships, multilingual, complex stores, Indian payment gateways</li>
-  <li>You publish a lot of content or run a blog</li>
-  <li>You want the widest choice of developers and lower long-term platform costs</li>
+  <li><strong>WordPress:</strong> the software is free. You pay for hosting, roughly ₹2,500 to ₹15,000 a year depending on the plan, a domain at about ₹500 to ₹1,200 a year, and any premium theme or plugin licences. Add maintenance if someone else keeps it updated. <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> explains what the hosting money buys.</li>
+  <li><strong>Webflow:</strong> you pay Webflow a site plan for each published website, with higher tiers for more CMS items, traffic and e-commerce, and workspace plans if several people design and build. Features such as translated versions of the site are paid add-ons at the time of writing. Webflow's plans and prices change, so check its pricing page for the current figures in your currency.</li>
 </ul>
+<p>For a small brochure site the two can come out similar. The gap usually widens with more content, more languages, a store, or several sites. Build costs are separate in both cases; see <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a>.</p>
 
-<h2>Choose Webflow if...</h2>
+<h2>CMS limits and content-heavy sites</h2>
+<p>Webflow's CMS is pleasant to use: you define collections, such as blog posts, team members or projects, with fields, and design a template for them. The catch is that each plan caps the number of CMS items and collections, and there are limits on how many collection lists and references a page can use. A large blog, a product catalogue with hundreds of items or a directory can push you onto a higher plan or into workarounds.</p>
+<p>WordPress has no built-in caps of that kind. Custom post types and custom fields can model almost anything, from a temple directory to an industrial product catalogue, and the practical limit is your hosting and how well the site is built.</p>
+
+<h2>Editing for your team</h2>
+<p>Webflow separates the Designer, where layouts are built, from editing mode, where clients change text and images and publish CMS items. That separation protects the design, but editors can't easily build new layouts without the Designer and some knowledge of how Webflow works.</p>
+<p>WordPress editing depends on how the site is built. With the block editor or Elementor, staff can edit text, add pages from templates and publish posts, and user roles control who can do what. <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a> compares the two editing experiences.</p>
+
+<h2>Plugins, integrations and Indian payments</h2>
+<p>This is where WordPress pulls ahead for many Indian businesses. WooCommerce works with Razorpay, Cashfree, PayU and other gateways that support UPI, cards and net banking, and plugins cover GST invoices, shipping, bookings, memberships, WhatsApp notifications and most Indian CRMs.</p>
+<p>Webflow's built-in checkout supports Stripe and PayPal at the time of writing, which doesn't suit most Indian businesses that want UPI payments through a local gateway. Other features come from its app marketplace, embedded code or tools such as Zapier and Make, which work but add subscriptions and moving parts.</p>
+
+<h2>Hosting, speed, security and maintenance</h2>
+<p>Webflow hosts every site on its own infrastructure with a CDN, handles platform updates and security, and has no plugins to keep updated. For a team with no technical help, that's a real advantage.</p>
+<p>A WordPress site needs regular updates, backups and security checks, done by you or a developer. In return you choose the host, the server location and the caching setup. A well-built WordPress site on decent hosting loads fast; slow WordPress sites usually come from heavy themes, too many plugins or cheap hosting. <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> covers what Google measures.</p>
+
+<h2>SEO</h2>
+<p>Both platforms can rank. Webflow produces clean code and has built-in fields for titles, descriptions, Open Graph images, redirects and a sitemap. WordPress needs an SEO plugin such as Yoast or Rank Math for the same controls, and then adds more flexibility for schema, multilingual hreflang and large sites. In practice, content, site structure, speed and links decide rankings far more than the platform. For multilingual sites in particular, WordPress plugins are a cheaper route; see <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</p>
+
+<h2>Ownership and moving later</h2>
+<p>WordPress sites are portable: you can move files and database to any host, and many developers can take over. Webflow lets you export a site's static code on some paid plans, but CMS content exports separately as CSV, and forms, CMS pages and e-commerce don't work in the exported code. Leaving Webflow therefore usually means rebuilding the site elsewhere.</p>
+
+<h2>Finding developers in India</h2>
+<p>WordPress developers are easy to find in India at every budget, which keeps support affordable and means you're never dependent on one person. Webflow specialists exist but are fewer, often designers or agencies, and their rates reflect that. If a Webflow site's builder moves on, finding a replacement can take longer.</p>
+
+<h2>Which should you choose?</h2>
+<h3>Choose WordPress if</h3>
 <ul>
-  <li>Your site is design-led and relatively simple in features</li>
-  <li>Your team is comfortable with Webflow and wants hosting fully managed</li>
-  <li>You're happy with its subscription model and app ecosystem</li>
+  <li>You want full ownership and a free choice of hosting</li>
+  <li>You need Indian payment gateways, bookings, memberships, multilingual pages or a large catalogue</li>
+  <li>You publish a lot of content</li>
+  <li>You want lower long-term platform costs and a large pool of developers</li>
 </ul>
+<h3>Choose Webflow if</h3>
+<ul>
+  <li>Your site is design-led and fairly simple in features</li>
+  <li>Your team already knows Webflow and wants hosting and security fully managed</li>
+  <li>You're comfortable with its subscriptions and plan limits</li>
+</ul>
+<p>Designers who love Webflow's visual control can get pixel-accurate results on WordPress too, by designing in Figma and having it built in WordPress; see <a href="/figma-to-wordpress/">Figma to WordPress</a>. Comparing more platforms? See <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a>.</p>
 
-<h2>SEO and performance</h2>
-<p>Both platforms can rank well. What matters is the content, structure, speed and technical setup. A well-built WordPress site with a lightweight theme and caching performs excellently; see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+<h2>FAQs</h2>
+<h3>Is Webflow better than WordPress?</h3>
+<p>For design-led marketing sites managed by a Webflow-savvy team, it can be. For most Indian businesses that need payments, integrations, lots of content or affordable long-term support, WordPress is the more flexible choice.</p>
+<h3>Is Webflow cheaper than WordPress?</h3>
+<p>Not usually over several years. Webflow charges a subscription per site plus team seats and add-ons, while WordPress costs hosting, a domain and optional licences. For a small simple site the difference may be small; with more content, languages or a store, WordPress is usually cheaper to run.</p>
+<h3>Is Webflow good for SEO?</h3>
+<p>Yes. It gives you control over titles, descriptions, redirects and sitemaps, and its code is clean. WordPress with an SEO plugin offers the same and more flexibility for large or multilingual sites. Content and structure matter more than the platform.</p>
+<h3>Can I move my site from Webflow to WordPress?</h3>
+<p>Yes, but it's a rebuild rather than a one-click move. The design is recreated in WordPress, CMS content is imported from Webflow's CSV export, and every old URL is redirected to keep rankings; see <a href="/wordpress-migration/">website migration</a>.</p>
+<h3>Which is easier to use, WordPress or Webflow?</h3>
+<p>For editing text and images on a finished site, both are easy. For building or changing layouts, Webflow's Designer has a steeper learning curve because it works like a visual version of HTML and CSS, while WordPress with a page builder is more forgiving for non-designers. Either way, a short handover session makes a big difference.</p>
+<h3>Can I accept UPI payments on Webflow?</h3>
+<p>Webflow's built-in e-commerce checkout uses Stripe and PayPal at the time of writing, not Indian gateways such as Razorpay. Some businesses link to an external payment page instead. On WordPress, WooCommerce works directly with Indian gateways that support UPI.</p>
 
-<h2>Designers: you can have both</h2>
-<p>If you love designing in Figma, you don't need Webflow to get pixel-accurate results. Figma designs can be built precisely in WordPress with Elementor; see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
-
-<h2>The practical answer</h2>
-<p>For most Indian businesses, especially those needing stores, integrations or lots of content, WordPress offers more flexibility and lower long-term costs. For simple, design-led sites with a Webflow-savvy team, Webflow is a good option. Compare with other platforms in <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a>.</p>
+<p>Weighing up a rebuild or a new site? See <a href="/wordpress-website-development/">WordPress website development</a> for how I plan, build and hand over business sites.</p>
 `,
   },
   {
@@ -11607,58 +11946,113 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   },
   {
     slug: 'seo-red-flags-scams',
-    seoTitle: 'SEO Scams & Red Flags: How to Avoid Bad SEO Services',
-    title: 'SEO Scams and Red Flags: How to Avoid Bad SEO Services',
-    description: 'SEO scams and red flags to watch for, from guaranteed rankings and cheap link packages to secret methods and locked contracts, plus questions to ask first.',
+    seoTitle: 'SEO Scams & Red Flags: How to Choose an SEO Provider',
+    title: 'SEO Scams and Red Flags: How to Avoid Bad SEO Services and Choose a Provider (Including What a Fair Monthly Retainer Covers)',
+    description: 'SEO scams and red flags: guaranteed rankings, cheap link packages, locked accounts. How to vet an SEO agency and what a fair monthly SEO retainer includes.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'SEO',
     related: ['wordpress-seo-services', 'hire-wordpress-developer', 'website-redesign'],
     body: `
-<p>Many small businesses get cold calls, emails and WhatsApp messages promising "page one on Google". Some SEO providers do excellent work; others waste money or even damage your site. Here's how to tell the difference.</p>
+<p>The clearest signs of a bad SEO service are guaranteed rankings, packages selling hundreds of backlinks, "secret" methods they won't explain, keeping your Google accounts in their name, reports full of vanity metrics, and long contracts with no clear deliverables. A good SEO provider explains what they'll do and why, starts with an audit of your site, measures results in Search Console clicks and real enquiries, and makes sure you own every account. If a pitch sounds too good to be true, it is.</p>
+<p>Below are the red flags in detail, the scams aimed at small businesses in India, what a fair monthly SEO retainer should include, and the questions to ask before you sign. I offer <a href="/wordpress-seo-services/">WordPress SEO services</a> myself, so use these questions on me too.</p>
 
-<h2>Red flags</h2>
+<h2>SEO red flags to watch for</h2>
 <ol>
-  <li><strong>Guaranteed #1 rankings.</strong> No one controls Google's results. Guarantees are a sales tactic.</li>
-  <li><strong>"Hundreds of backlinks" packages.</strong> Cheap, bulk links from low-quality sites can harm your site and waste money.</li>
-  <li><strong>Secret or proprietary methods</strong> they won't explain.</li>
-  <li><strong>No access to your own accounts.</strong> You should own your Google Business Profile, Search Console, Analytics and website logins.</li>
-  <li><strong>Reports full of vanity metrics:</strong> rankings for keywords nobody searches, "backlinks built", with no traffic or leads.</li>
-  <li><strong>Long lock-in contracts</strong> with no clear deliverables.</li>
-  <li><strong>Unsolicited emails</strong> claiming your site has "critical SEO errors".</li>
-  <li><strong>Fake reviews or review schemes</strong> for your Google profile.</li>
-  <li><strong>Mass-producing pages</strong>, such as hundreds of city pages with the same text; see <a href="/blog/local-landing-pages-without-doorway-pages/">doorway pages</a>.</li>
+  <li><strong>Guaranteed rankings.</strong> Nobody controls Google's results, and Google's own guidance on hiring an SEO warns that no one can guarantee a top ranking. Guarantees usually mean obscure keywords nobody searches, or a refund clause you'll never satisfy.</li>
+  <li><strong>"Hundreds of backlinks" packages.</strong> Cheap links in bulk come from spam directories, comment spam or networks of fake blogs. At best they're ignored; at worst they lead to a manual action against your site.</li>
+  <li><strong>Secret or proprietary methods.</strong> Real SEO isn't secret. A provider should be able to explain every task in plain language.</li>
+  <li><strong>They own your accounts.</strong> Search Console, Analytics, Google Business Profile and your website should be in your business's name, with the provider added as a user.</li>
+  <li><strong>Reports full of vanity metrics:</strong> rankings for phrases nobody searches, "backlinks built" and traffic graphs with no link to enquiries or sales.</li>
+  <li><strong>Long lock-in contracts</strong> with cancellation fees and no defined work.</li>
+  <li><strong>Cold emails and calls about "critical errors"</strong> or your site "not being on page one".</li>
+  <li><strong>Fake reviews or review schemes</strong> for your Google profile, which risk your listing.</li>
+  <li><strong>Mass-produced pages,</strong> such as hundreds of city pages with the same text and a different place name; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a>.</li>
+  <li><strong>Instant results promised.</strong> Real SEO takes weeks for technical fixes and months for competitive searches; see <a href="/blog/how-long-does-seo-take/">how long SEO takes</a>.</li>
 </ol>
 
-<p>Related: <a href="/blog/domain-seo-scam-emails/">how to spot domain renewal and SEO scam emails</a>.</p>
-
-<h2>Green flags</h2>
+<h2>Common SEO scams aimed at small businesses</h2>
 <ul>
-  <li>Clear explanation of what they'll do and why</li>
-  <li>Realistic timelines; see <a href="/blog/how-long-does-seo-take/">how long SEO takes</a></li>
-  <li>Focus on your business goals: enquiries, sales, qualified traffic</li>
-  <li>Technical fixes, useful content and ethical link building</li>
-  <li>Monthly reports tied to Search Console and Analytics data</li>
-  <li>You keep ownership of everything</li>
+  <li><strong>"We're a Google Partner, so we can get you ranked."</strong> The Google Partner badge relates to Google Ads. Google has no paid SEO partners and no way to buy organic rankings.</li>
+  <li><strong>"Your Google listing will be removed unless you verify with us."</strong> Calls like this push paid "verification" for a Business Profile, which is free to manage yourself.</li>
+  <li><strong>"Submission to thousands of search engines and directories."</strong> Google finds sites by crawling and through your sitemap; mass directory submissions do nothing useful.</li>
+  <li><strong>Fake traffic.</strong> Bot visits that make your Analytics graph rise while enquiries stay flat. Check engagement and key events, not just visitor numbers.</li>
+  <li><strong>Hostage accounts.</strong> The agency registers your domain, Business Profile or Analytics in its own name and won't hand them over when you leave.</li>
+  <li><strong>Hidden links.</strong> Links to the agency's other clients quietly added to your footer or pages, using your site to boost theirs.</li>
+</ul>
+<p>Scam emails about domain renewals and "SEO for your domain" invoices are a separate problem, covered in <a href="/blog/domain-seo-scam-emails/">how to spot domain renewal and SEO scam emails</a>.</p>
+
+<h2>What a fair SEO monthly retainer includes</h2>
+<p>A retainer isn't a red flag in itself. Sites that add pages often, online stores and businesses in competitive markets benefit from ongoing work. The question is what you get each month. Here's how a fair retainer compares with one to avoid:</p>
+<table>
+  <thead><tr><th></th><th>A fair SEO retainer</th><th>A retainer to avoid</th></tr></thead>
+  <tbody>
+    <tr><td>How it starts</td><td>An audit with prioritised findings, and a plan for the first three months</td><td>Straight into "link building" with no look at your site</td></tr>
+    <tr><td>Monthly work</td><td>Named tasks: technical fixes, on-page work on specific pages, content briefs, internal links, Business Profile updates, Search Console monitoring</td><td>Vague "SEO optimisation" or "promotion"</td></tr>
+    <tr><td>Links</td><td>Earned through useful content, partners, suppliers and local organisations</td><td>A fixed number of backlinks a month</td></tr>
+    <tr><td>Reporting</td><td>Search Console clicks and impressions for target pages, enquiries from GA4, and the work done</td><td>Ranking screenshots and "backlinks built"</td></tr>
+    <tr><td>Contract</td><td>Month to month or a short notice period</td><td>A 12-month lock-in with an exit fee</td></tr>
+    <tr><td>Ownership</td><td>Everything in your name, with the provider as a user</td><td>Accounts and content held by the agency</td></tr>
+  </tbody>
+</table>
+<p>Prices vary with the size of the site, the competition and how much work is included, so compare what each retainer delivers rather than the headline fee. <a href="/blog/seo-pricing-models-india/">How SEO services are priced in India</a> explains retainers, audits, project fees and "performance" deals side by side.</p>
+<h3>Do you need a retainer at all?</h3>
+<p>Not always. Many small business sites are best served by a one-time audit and fixes, followed by a check-up after a few months. A retainer makes more sense when the site changes often, competitors are active, or nobody in the business has time to monitor Search Console.</p>
+
+<h2>Green flags: signs of a good SEO provider</h2>
+<ul>
+  <li>They ask about your business, customers and the enquiries you want before quoting</li>
+  <li>They explain what they'll do, in what order, and why</li>
+  <li>They set realistic timelines and don't promise positions</li>
+  <li>They fix technical problems and improve real pages, not just "build links"</li>
+  <li>Monthly reports use Search Console and Analytics data and show the work done; see <a href="/blog/seo-reporting-what-to-track/">what to track in a monthly SEO report</a></li>
+  <li>You keep ownership of everything, and they say so in writing</li>
 </ul>
 
-<p>Not sure what a useful monthly report should include? See <a href="/blog/seo-reporting-what-to-track/">what to track in a monthly SEO report</a>.</p>
-
-<h2>Questions to ask before hiring</h2>
+<h2>Questions to ask before hiring an SEO provider</h2>
 <ol>
-  <li>What will you do in the first 90 days?</li>
-  <li>How do you build links?</li>
-  <li>How will you measure success?</li>
-  <li>Can I see examples of similar work?</li>
-  <li>Who owns the accounts and content?</li>
-  <li>What happens if I stop working with you?</li>
+  <li><strong>What will you do in the first 90 days?</strong> A good answer names an audit, specific fixes and the pages they'll work on.</li>
+  <li><strong>How do you get links?</strong> Listen for content, partnerships and outreach, not packages; see <a href="/blog/ethical-link-building-small-business/">ethical link building</a>.</li>
+  <li><strong>How will you measure success?</strong> Clicks, enquiries and sales, not just rankings.</li>
+  <li><strong>Can I see examples of similar work,</strong> with real Search Console data shared with the client's permission?</li>
+  <li><strong>Who owns the accounts, content and any links built?</strong> The answer should be you.</li>
+  <li><strong>What happens if I stop?</strong> You should keep everything, with a short notice period.</li>
+  <li><strong>Who will actually do the work?</strong> A named person, not an unnamed team you never speak to.</li>
 </ol>
 
-<p>Comparing prices as well as providers? See <a href="/blog/seo-pricing-models-india/">how SEO services are priced in India</a> and what each pricing model should include.</p>
+<h2>How to check a provider's work</h2>
+<ul>
+  <li>Look at their own website: is it fast, clear and found for what they do?</li>
+  <li>Read reviews on Google and elsewhere, and look for detail rather than one-line praise.</li>
+  <li>After they start, watch the Links report in Search Console for sudden batches of spammy links.</li>
+  <li>Check Security &amp; Manual Actions in Search Console every month.</li>
+  <li>Compare enquiries in GA4 with the months before they started, allowing for seasonality.</li>
+</ul>
 
-<h2>If you've been burned</h2>
-<p>Check Search Console for manual actions, review your backlinks, remove fake reviews, and regain control of your accounts; see <a href="/blog/regain-website-access-old-developer/">regaining website access</a>.</p>
+<h2>If you've already been burned</h2>
+<ol>
+  <li><strong>Check Search Console</strong> for manual actions and security issues.</li>
+  <li><strong>Review your backlinks.</strong> If there's a manual action for unnatural links, remove what you can and use the disavow tool for the rest; see <a href="/blog/backlink-audit-disavow/">backlink audits and disavow</a>. Without a manual action, Google usually ignores spammy links.</li>
+  <li><strong>Remove hidden links and doorway pages</strong> the provider added.</li>
+  <li><strong>Take back your accounts:</strong> domain, hosting, website, Search Console, Analytics and Business Profile; see <a href="/blog/regain-website-access-old-developer/">regaining control of your website</a>.</li>
+  <li><strong>Remove fake reviews</strong> they posted, and start collecting genuine ones.</li>
+</ol>
 
-<p>Honest, technical SEO for WordPress: <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<h2>FAQs</h2>
+<h3>How do I know if an SEO company is a scam?</h3>
+<p>Watch for guaranteed rankings, bulk backlink packages, secret methods, refusal to give you account ownership, reports without enquiry data and long lock-in contracts. Cold emails claiming your site has "critical errors" are another warning sign.</p>
+<h3>What should a monthly SEO retainer include?</h3>
+<p>Named monthly tasks such as technical fixes, on-page improvements to specific pages, content guidance, internal linking, Business Profile updates and Search Console monitoring, plus a report showing clicks, enquiries and the work done. It should start with an audit and be cancellable on reasonable notice.</p>
+<h3>What are SEO retainer services?</h3>
+<p>An SEO retainer is an ongoing arrangement where you pay a fixed monthly fee for a defined amount of SEO work, rather than paying per project. It suits sites that change often or compete hard for searches. The agreement should list the monthly tasks, the reporting and the notice period, so you can judge whether it's worth continuing.</p>
+<h3>Can an SEO company guarantee first page on Google?</h3>
+<p>No. Google decides rankings, and its own guidance warns against anyone promising a top position. A provider can commit to work and reporting, not to positions.</p>
+<h3>Is buying backlinks a scam?</h3>
+<p>Buying links to manipulate rankings is against Google's spam policies, and cheap bulk packages are mostly worthless. At best Google ignores them; at worst they lead to a manual action. Links earned through useful content and real relationships are what work.</p>
+<h3>Should I sign a 12-month SEO contract?</h3>
+<p>Be cautious. SEO takes months, so some commitment is reasonable, but a long lock-in with an exit fee and no defined work protects the agency, not you. Prefer month-to-month terms or a short notice period with clear monthly deliverables.</p>
+
+<p>Want honest, technical SEO for a WordPress site, with fixes made on the site, reports from your own Search Console and no link packages? See my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -11927,51 +12321,104 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   },
   {
     slug: 'business-email-options',
-    seoTitle: 'Business Email Options: Google Workspace, Zoho & More',
-    title: 'Business Email Options for Small Businesses: What to Choose',
-    description: 'Compare business email options: email from your web host, Google Workspace, Zoho Mail and Microsoft 365, plus domain setup and deliverability tips.',
+    seoTitle: 'Business Email Options: Google Workspace, Zoho, M365 & More',
+    title: 'Business Email Options for Small Businesses: Google Workspace vs Microsoft 365 vs Zoho Mail vs Hosting Email',
+    description: 'Compare business email options: Google Workspace, Microsoft 365, the Zoho Mail free plan and hosting email like Hostinger, plus how to choose and set up.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-website-development', 'wordpress-maintenance'],
     body: `
-<p>An email address at your own domain (you@yourbusiness.com) looks professional and builds trust. There are several ways to set it up, each with different costs, features and reliability.</p>
+<p>For most small businesses, the choice comes down to four business email options. Google Workspace is the best fit if your team already uses Gmail, Google Docs and Drive. Microsoft 365 suits businesses that rely on Outlook, Word and Excel. Zoho Mail is the budget option, popular in India, with a small free plan. Email included with your web hosting, such as Hostinger's, is the cheapest but the least independent. My general advice: keep email separate from website hosting, so a hosting problem or a move never takes your email down.</p>
+<p>Below I compare the options on cost model, features and the catches, then cover setup and switching. Email problems often surface when a website changes host, and checking that site emails actually arrive is part of every health check on my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 
-<h2>The main options</h2>
+<h2>Business email options compared</h2>
+<p>Plans, storage and prices change often, so treat this as a guide and check each provider's current pricing page.</p>
 <table>
-  <thead><tr><th>Option</th><th>Good for</th><th>Watch out for</th></tr></thead>
+  <thead><tr><th></th><th>Google Workspace</th><th>Microsoft 365</th><th>Zoho Mail</th><th>Hosting email (Hostinger, cPanel hosts)</th></tr></thead>
   <tbody>
-    <tr><td><strong>Email included with web hosting</strong></td><td>Very small budgets, basic needs</td><td>Deliverability and storage vary; tied to your hosting</td></tr>
-    <tr><td><strong>Google Workspace</strong></td><td>Teams who like Gmail, Docs and Drive</td><td>Per-user monthly pricing</td></tr>
-    <tr><td><strong>Zoho Mail / Workplace</strong></td><td>Cost-conscious businesses; popular in India</td><td>Features vary by plan</td></tr>
-    <tr><td><strong>Microsoft 365</strong></td><td>Businesses using Outlook and Office</td><td>Per-user monthly pricing</td></tr>
+    <tr><td>Price model</td><td>Per user per month, cheaper on a yearly plan</td><td>Per user per month, cheaper on a yearly plan</td><td>Free plan for a few users; low-cost paid plans per user</td><td>Included with some hosting plans or sold as a small add-on</td></tr>
+    <tr><td>Email app</td><td>Gmail on web and mobile</td><td>Outlook on web, mobile and desktop</td><td>Zoho Mail web and mobile apps</td><td>Webmail, or any email app by IMAP</td></tr>
+    <tr><td>Other tools</td><td>Docs, Sheets, Drive, Meet, Calendar</td><td>Word, Excel, Teams, OneDrive; desktop apps on higher plans</td><td>Calendar and docs; more in Zoho Workplace</td><td>Usually email only</td></tr>
+    <tr><td>Deliverability</td><td>Very good</td><td>Very good</td><td>Good</td><td>Varies with the host's servers</td></tr>
+    <tr><td>Independent of your hosting</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+    <tr><td>Best for</td><td>Teams who like Gmail and collaborate in Docs</td><td>Businesses using Outlook and Office files</td><td>Cost-conscious businesses and small teams</td><td>One or two basic mailboxes on a tight budget</td></tr>
   </tbody>
 </table>
-<p>Check each provider's current pricing and free tiers, which change over time.</p>
+
+<h2>Google Workspace</h2>
+<p>Workspace gives you Gmail at your own domain, with Google's spam filtering, Calendar, Meet, Drive and Docs. Its strengths are reliability, search and easy sharing; the downside is the per-user price, which adds up as the team grows. Each user can have up to 30 aliases at the time of writing, so one person can receive mail for info@ and sales@ without paying for extra mailboxes.</p>
+<h3>Business or Enterprise editions?</h3>
+<p>Google sells Workspace in Business editions (Starter, Standard and Plus) for organisations up to 300 users, and Enterprise editions for larger organisations or those that need advanced security and compliance, such as data loss prevention, data regions and advanced device management. Like all the options here, it's a SaaS (software as a service) product: you pay a subscription and Google runs the servers. Almost every small business is well served by a Business edition; Business Plus adds Vault for retaining and searching email for legal purposes.</p>
+
+<h2>Microsoft 365</h2>
+<p>Microsoft 365 provides Exchange email through Outlook, plus Teams, OneDrive and the Office apps. The basic business plan includes web and mobile versions of Word and Excel; desktop apps come with higher plans. Choose it if your team works in Excel and Word files all day, or your clients expect Teams meetings. Shared mailboxes for addresses like accounts@ don't need a paid licence within Microsoft's size limits at the time of writing, which keeps costs down.</p>
+
+<h2>Zoho Mail</h2>
+<p>Zoho is an Indian company with data centres in India, and Zoho Mail is the most affordable of the three big providers. At the time of writing, its Forever Free plan covers up to five users on one domain with a modest amount of storage each, but only through the web and Zoho's mobile apps, without IMAP or POP access for other email apps. The paid Mail Lite and Premium plans add storage, email app access and more admin features at a low price per user. It's a sensible choice for small teams that mostly need email, and Zoho Workplace adds documents and meetings if you need them.</p>
+
+<h2>Email from your web hosting</h2>
+<p>Many hosts, including Hostinger and most cPanel hosts, include mailboxes or sell them cheaply. That's fine for one or two basic addresses, but there are catches:</p>
+<ul>
+  <li><strong>Tied to hosting.</strong> If the hosting expires, is suspended or is migrated carelessly, email stops too.</li>
+  <li><strong>Shared reputation.</strong> On shared servers, another customer sending spam can hurt delivery for everyone.</li>
+  <li><strong>Weaker filtering and smaller mailboxes</strong> than the big providers, though this varies by host.</li>
+</ul>
+<p>If you're on Hostinger and want to use its email, <a href="/blog/hostinger-business-email-setup/">setting up business email on Hostinger</a> walks through it step by step.</p>
+<h3>Other options</h3>
+<p>Privacy-focused services such as Proton Mail suit teams that want encrypted email. Some domain registrars resell Microsoft 365 or their own branded email; before buying, check whose service it actually is and whether you can move it later.</p>
 
 <h2>How to choose</h2>
-<ul>
-  <li>How many mailboxes do you need?</li>
-  <li>Do you want shared documents, calendars and video calls?</li>
-  <li>How important is reliable delivery to customers' inboxes?</li>
-  <li>Do you want email independent of your web hosting? (Recommended: changing hosts won't affect email.)</li>
-</ul>
-
-<h2>Setting it up</h2>
 <ol>
-  <li>Sign up with the provider and verify your domain</li>
-  <li>Add MX records in your DNS to route email</li>
-  <li>Add SPF, DKIM and DMARC records for deliverability; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a></li>
-  <li>Migrate old emails if needed</li>
-  <li>Set up addresses like info@ and sales@ as aliases or groups</li>
+  <li><strong>Which tools does your team already use?</strong> Gmail and Docs point to Workspace; Outlook and Excel point to Microsoft 365.</li>
+  <li><strong>How many real mailboxes do you need?</strong> Use aliases, groups or shared mailboxes for role addresses instead of paying for each one.</li>
+  <li><strong>Do you need email apps such as Outlook or the iPhone Mail app?</strong> That rules out Zoho's free plan.</li>
+  <li><strong>How much does reliable delivery matter?</strong> If quotes and invoices go by email, avoid relying on cheap shared hosting mail.</li>
+  <li><strong>Who will manage it?</strong> Make sure the admin account is in the business's name, not a staff member's or developer's, and add the renewal to your <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a>.</li>
 </ol>
 
-<p>Hosting on Hostinger? See <a href="/blog/hostinger-business-email-setup/">setting up business email on Hostinger</a>.</p>
+<h2>Setting up business email on your domain</h2>
+<ol>
+  <li>Sign up with the provider and verify your domain, usually with a TXT record.</li>
+  <li>Create the mailboxes, aliases and groups.</li>
+  <li>Change the MX records in your DNS to the provider's, and remove the old ones.</li>
+  <li>Add SPF, DKIM and DMARC records so your mail isn't marked as spam.</li>
+  <li>Migrate old email with the provider's import tool, then set up phones and computers.</li>
+  <li>Send test emails to Gmail and Outlook addresses and check they land in the inbox.</li>
+</ol>
+<p>The SPF record names the services allowed to send as your domain. Each provider gives its own value, and you should have only one SPF record, combining services if needed. Typical examples at the time of writing:</p>
+<pre><code>Google Workspace:  v=spf1 include:_spf.google.com ~all
+Microsoft 365:     v=spf1 include:spf.protection.outlook.com -all
+Zoho Mail (India): v=spf1 include:zoho.in ~all</code></pre>
+<p><a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a> covers all three records and how to check them.</p>
 
-<h2>Website form emails</h2>
-<p>Your website's contact form should send through an authenticated service so enquiries land in the inbox; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+<h2>Switching email providers without losing mail</h2>
+<ul>
+  <li>Create every mailbox and alias at the new provider before touching DNS.</li>
+  <li>Lower the TTL on your MX records a day ahead, so the change spreads quickly.</li>
+  <li>Switch the MX records, update SPF and add the new DKIM record.</li>
+  <li>Migrate old mail, and keep the old account for a few weeks to catch stragglers.</li>
+</ul>
+<p>Moving website hosting at the same time? Copy every DNS record, not just the website ones; <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a> shows how the pieces connect, and my <a href="/wordpress-migration/">website migration</a> service handles email records as part of the move.</p>
 
-<h2>Changing hosting or domain later</h2>
-<p>Email DNS records must be copied carefully during migrations, or email stops; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+<h2>Don't forget your website's emails</h2>
+<p>Contact forms and WooCommerce order emails are sent by your website, not your mailbox. Send them through an authenticated SMTP service or your email provider, or they often land in spam; see <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Which business email is best for a small business in India?</h3>
+<p>Google Workspace if your team likes Gmail and Google Docs, Microsoft 365 if you work in Outlook and Office, and Zoho Mail if cost matters most. Hosting email works for one or two basic mailboxes but is the least independent.</p>
+<h3>Is Zoho Mail really free for business email?</h3>
+<p>Zoho offers a free plan for a small number of users on one domain at the time of writing, with web and mobile app access only. If you need Outlook or another email app, more storage or more users, you'll need a paid plan. Check Zoho's site for current limits.</p>
+<h3>Google Workspace or Microsoft 365?</h3>
+<p>Both are reliable with excellent deliverability. Choose Workspace for browser-based collaboration in Docs and Drive, and Microsoft 365 if your work depends on Excel, Word or Teams, or you need desktop Office apps.</p>
+<h3>Can I use Gmail with my own domain for free?</h3>
+<p>Not properly. Google Workspace is the paid way to use Gmail with your domain. Workarounds that connect a hosting mailbox to a free Gmail account are less reliable, and Google has been withdrawing Gmail's option to fetch mail from other accounts.</p>
+<h3>What is the difference between an alias, a group and a shared mailbox?</h3>
+<p>An alias is an extra address that delivers into one person's mailbox. A group, or distribution list, sends each message to several people. A shared mailbox is a separate inbox that several people can open and reply from. Aliases and groups are usually free; whether shared mailboxes cost extra depends on the provider.</p>
+<h3>Should my email be with my web host?</h3>
+<p>It can be for a very small business, but separating them is safer. With email at Google, Microsoft or Zoho, changing or fixing your hosting never affects your inbox.</p>
+
+<p>Website emails not arriving, or worried a hosting change will break your email? Checking site emails is part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> health check, and DNS and email records are moved carefully in every migration.</p>
 `,
   },
   {
@@ -12145,45 +12592,93 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'domain-seo-scam-emails',
-    seoTitle: 'Domain Renewal & SEO Scam Emails: How to Spot Them',
-    title: 'Domain Renewal and SEO Scam Emails: How to Spot and Avoid Them',
-    description: 'Spot domain renewal and SEO scam emails: fake renewals, fake SEO audits, site removal threats and phishing logins aimed at site owners, and what to do.',
+    seoTitle: 'Fake Domain Renewal & SEO Scam Emails: How to Spot Them',
+    title: 'Domain Renewal and SEO Scam Emails: How to Spot Fake Expiry Notices, "SEO for Your Domain" Invoices and Cold Audit Emails',
+    description: 'How to spot domain renewal and SEO scam emails: fake expiry notices, "domain registration authority" invoices, brand domain warnings and fake SEO audits.',
     date: '2026-09-27',
+    updated: '2026-10-12',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-seo-services'],
     body: `
-<p>Once you have a website, the scam emails start: urgent domain renewal notices, "critical SEO errors", threats that your site will be removed, and fake login pages. Most are easy to spot once you know the patterns.</p>
+<p>Most domain renewal and SEO scam emails follow a pattern: an official-sounding company you've never dealt with warns that your domain is expiring or your site has problems, and asks you to pay through a link. Your domain can only be renewed by the registrar you bought it from, so any invoice from another company is at best an overpriced sales pitch and at worst a scam. Check by logging into your registrar account directly, never through the email.</p>
+<p>Below are the most common types aimed at website owners, with the giveaways for each and what to do if you've already clicked or paid. Most of these work because owners aren't sure who their registrar and host are; on my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, domain, hosting and WordPress accounts stay in the client's name, which makes a fake notice much easier to recognise.</p>
 
-<h2>Common scams</h2>
-<h3>Fake domain renewal or "domain listing" notices</h3>
-<p>Emails that look like invoices for renewing your domain or "search engine registration", from a company you've never used. Your real registrar is the only one who can renew your domain; check directly in your registrar account.</p>
-<h3>Fake SEO audits and threats</h3>
-<p>"Your website has 57 critical SEO errors" or "your site is not showing on Google" from unknown senders, pushing paid services. See <a href="/blog/seo-red-flags-scams/">SEO red flags</a>.</p>
-<h3>"Your domain/website will be suspended"</h3>
-<p>Urgent threats with a payment link. Real suspension notices come from your actual host or registrar and can be verified by logging in directly.</p>
-<h3>Phishing login pages</h3>
-<p>Emails pretending to be your host, email provider or WordPress, asking you to "verify" or "update" your password via a link. The link leads to a fake page that steals your credentials.</p>
-<h3>Fake Google Business Profile calls or emails</h3>
-<p>Claims that your listing will be removed unless you pay. Managing your profile is free through Google.</p>
+<h2>Common domain and SEO scam emails at a glance</h2>
+<table>
+  <thead><tr><th>Scam</th><th>What it says</th><th>The giveaway</th></tr></thead>
+  <tbody>
+    <tr><td>Fake domain expiry notice</td><td>"Domain name expiration notice" or "final notice" with a payment link</td><td>Sent by a company that isn't your registrar; small print says it's not a bill</td></tr>
+    <tr><td>"SEO for your domain" invoice</td><td>Your domain's "search engine submission" or "SEO service" is about to lapse</td><td>You never bought it; it's a one-off listing service dressed as a renewal</td></tr>
+    <tr><td>Brand domain warning</td><td>Another company wants to register your name in Asian domain extensions</td><td>Urgency, and a request to buy many domains from them</td></tr>
+    <tr><td>Cold "your site has errors" email</td><td>"I found 47 critical SEO errors" or "you're not on page one"</td><td>Free email address, no specifics, a template sent to thousands</td></tr>
+    <tr><td>Suspension or verification phishing</td><td>Your hosting, domain or mailbox will be suspended unless you log in</td><td>The link goes to a look-alike domain, not your provider's</td></tr>
+    <tr><td>Fake copyright notice</td><td>An image on your site infringes copyright; "see the evidence" at a link</td><td>The link downloads a file or asks you to log in</td></tr>
+  </tbody>
+</table>
 
-<h2>How to protect yourself</h2>
+<h2>Fake domain expiry and renewal notices</h2>
+<p>These arrive by email and sometimes by post, from a name such as "Domain Registration Authority", "Domain Services" or "Domain Listing Service". They copy your domain name and registration details from public WHOIS records and look like an invoice, often with an expiry date that sounds alarming. Read the small print and you'll usually find it's for a search engine listing or "domain services", and that it isn't a bill. Some versions are worse: paying, or signing a form, transfers your domain to them at a higher renewal price.</p>
+<h3>How to check a renewal notice is real</h3>
+<ol>
+  <li>Look up your domain on lookup.icann.org, or any WHOIS lookup, to see which registrar it's with and when it expires.</li>
+  <li>Log into that registrar's dashboard by typing its address yourself, and check the expiry date and auto-renew setting.</li>
+  <li>Compare the sender's domain with your registrar's real domain. A notice from anyone else isn't a renewal.</li>
+</ol>
+<p>Registrars do send genuine reminders before a domain expires, and for .com and similar domains ICANN's rules require them, typically around a month and a week before expiry. They come from the company you pay and point you to your account. If a real reminder has passed and the domain has lapsed, see <a href="/blog/domain-expired-what-to-do/">domain name expired? what to do</a>.</p>
+<p>One genuine email that looks like spam: after you register or change a domain's contact details, your registrar may ask you to confirm your email address, and an unconfirmed address can lead to the domain being suspended. It comes from your registrar and doesn't ask for payment.</p>
+
+<h2>"SEO for your domain" invoices</h2>
+<p>A close cousin of the fake renewal: an email titled something like "Domain SEO service expiration" or "Search engine submission for yourbusiness.in", warning that your site will lose visibility unless you pay. There's no such thing as renewing SEO for a domain. Google finds sites by crawling links and sitemaps, and submitting your sitemap in Search Console is free. Paying gets you, at most, a listing on directories nobody visits. If you want to know how a real SEO provider works, and what a fair monthly retainer covers, see <a href="/blog/seo-red-flags-scams/">SEO red flags and how to choose an SEO provider</a>.</p>
+
+<h2>"Someone wants to register your brand" emails</h2>
+<p>You get an email from a self-styled registrar in Asia saying a company has applied to register your brand name in extensions such as .cn, .asia or .hk, and asking whether you've authorised it. If not, you're invited to register them all yourself, through them, quickly. There's no other applicant. Unless you genuinely trade in those markets, ignore it. If you do, register the domains you need through your usual registrar.</p>
+
+<h2>Cold "your website has errors" emails</h2>
+<p>"I was checking your website and found it's not ranking on page one", "your site has 63 SEO errors", or "your site isn't mobile friendly". These come from free Gmail or Outlook addresses, rarely name a specific page or problem, and end with an offer of a free audit or a cheap monthly package. Automated SEO tools always find "errors", most of them harmless. It isn't always a scam, but it's never a sign of a provider worth hiring. If you want to know whether your site has real problems, check Search Console yourself or ask someone you've chosen.</p>
+
+<h2>Phishing: suspension notices, verification and full mailboxes</h2>
+<p>Emails pretending to be your host, registrar, email provider or WordPress say your account will be suspended, your payment failed or your mailbox is full, and ask you to log in through a button. The page looks real but sits on a look-alike address and captures your password. With your hosting or registrar login, an attacker can redirect your domain, read your email or plant malware on your site.</p>
 <ul>
-  <li>Never click login links in unexpected emails. Type the provider's address yourself.</li>
-  <li>Know who your registrar, host and email provider are (keep a record)</li>
-  <li>Turn on two-factor authentication everywhere</li>
-  <li>Enable auto-renew with your real registrar</li>
-  <li>Check sender addresses carefully and be suspicious of urgency</li>
+  <li>Hover over the button to see the real address, but don't rely on that alone.</li>
+  <li>Never log in from an email link. Open your provider's site from a bookmark or by typing it.</li>
+  <li>Turn on two-factor authentication for your registrar, host, email and WordPress.</li>
+</ul>
+<p>Scammers can also send email that pretends to come from your own domain. A DMARC record makes that much harder; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
+
+<h2>Fake copyright and legal notices</h2>
+<p>A newer trick: an email, or a message through your contact form, claims an image on your site infringes someone's copyright and links to "the evidence". The link downloads malware or leads to a login page. Genuine copyright complaints name the specific image and page and don't require you to download anything. If you're unsure, check the page they mention yourself.</p>
+
+<h2>How to protect your business from these emails</h2>
+<ul>
+  <li>Keep a list of your registrar, host, email provider and renewal dates, with logins in a password manager; a <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a> helps.</li>
+  <li>Turn on auto-renew with your real registrar, and keep the payment card up to date.</li>
+  <li>Make sure the domain is registered to the business, with an email address you'll still have in five years; see <a href="/blog/regain-website-access-old-developer/">regaining control of your website</a> if a former developer holds it.</li>
+  <li>Use the registrar's transfer lock, so nobody can move the domain without the authorisation code.</li>
+  <li>Tell staff who handle accounts payable that domain and SEO "invoices" must be checked before payment.</li>
 </ul>
 
-<h2>If you clicked or paid</h2>
+<h2>If you clicked a link or paid</h2>
 <ol>
-  <li>Change passwords immediately and enable 2FA</li>
-  <li>Check your registrar and hosting accounts for changes</li>
-  <li>Contact your bank if you paid</li>
-  <li>Check your website for signs of compromise; see <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked site</a></li>
+  <li><strong>If you paid,</strong> call your bank or card issuer straight away. In India, report financial fraud on the 1930 helpline or at cybercrime.gov.in as soon as possible.</li>
+  <li><strong>If you entered a password,</strong> change it immediately from the real site, along with anywhere you reused it, and turn on two-factor authentication.</li>
+  <li><strong>Check your registrar account</strong> for changed contact details, nameservers or a pending transfer, and make sure the transfer lock is on.</li>
+  <li><strong>Check your hosting and website</strong> for new admin users, unfamiliar files or redirects; see <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a>.</li>
 </ol>
+<p>If the site has been compromised, it needs a proper clean-up rather than just a password change; see <a href="/wordpress-malware-removal/">hacked site repair</a>.</p>
 
-<p>Keeping records of your accounts is part of good website ownership; see <a href="/blog/regain-website-access-old-developer/">keeping control of your website</a>.</p>
+<h2>FAQs</h2>
+<h3>Is "Domain Registration Authority" a scam?</h3>
+<p>An invoice from a company with a name like that, which isn't the registrar you pay, is not a real renewal. At best it's a paid listing service presented as a bill; at worst it transfers your domain. Check your expiry date in your own registrar account and ignore the email.</p>
+<h3>How do I know if a domain renewal email is real?</h3>
+<p>A real one comes from the registrar you bought the domain from and points you to your account there. Look the domain up on lookup.icann.org to confirm the registrar, then log in directly by typing the address. Never pay from a link in the email.</p>
+<h3>Do I need to pay for search engine registration for my domain?</h3>
+<p>No. Google, Bing and other search engines find sites for free. Submitting your sitemap in Google Search Console and Bing Webmaster Tools costs nothing, and "SEO renewal" invoices are a sales trick.</p>
+<h3>Someone wants to register my company name as a .cn domain. What should I do?</h3>
+<p>Usually nothing. These emails invent a rival applicant to pressure you into buying many domains. If you genuinely trade in China or Asia, register the extensions you need through your usual registrar.</p>
+<h3>Should I reply to emails saying my website has SEO errors?</h3>
+<p>No need. They're mass-sent templates, and automated tools always find some "errors". If you're worried about your site, look at Search Console or ask a provider you've chosen yourself.</p>
+
+<p>Not sure who controls your domain and hosting, or whether a notice is genuine? Getting accounts into your name and keeping them updated is part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> work.</p>
 `,
   },
   {
@@ -19995,47 +20490,117 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'hosting-renewal-price-increase',
-    seoTitle: 'Hosting Renewal Price Shock? What to Know and Do',
-    title: 'Why Your Hosting Renewal Costs So Much More (and What to Do About It)',
-    description: 'Hosting renewal price shock? Why renewals cost more than the first term, how intro pricing and add-ons work, and when to renew, negotiate or move.',
+    seoTitle: 'Hosting Renewal Shock: Why Renewal Charges Jump & What to Do',
+    title: 'Hosting Renewal Price Shock: Why Your Hosting Renewal Costs So Much More, and What to Do About It',
+    description: 'Hosting renewal charges much higher than you paid? Why intro prices end, how add-ons and GST add up, and when to renew, negotiate, downgrade or move hosts.',
     date: '2026-09-28',
+    updated: '2026-10-12',
     category: 'Pricing',
     related: ['wordpress-maintenance', 'wordpress-migration', 'hire-wordpress-developer'],
     body: `
-<p>You bought hosting at an attractive price, and two or three years later the renewal invoice is much higher. This is common across popular hosting companies, including big names used by Indian businesses. It isn't usually a scam, but it catches many owners by surprise.</p>
+<p>Hosting renewals cost more because the price you first paid was an introductory discount. Most hosts advertise a low monthly figure that applies only to the first term, usually when you pay for two to four years upfront, and then renew at the regular price, which can be several times higher. Add-ons bundled free for the first year, the end of a "free" domain and 18% GST on top make the renewal invoice look even worse. It's normal industry practice rather than a scam, but you don't have to accept the first invoice.</p>
+<p>Before you click renew, check what you're paying for, ask for a better deal and compare the real cost of staying with the cost of moving. If moving is the answer, my <a href="/wordpress-migration/">WordPress migration</a> service moves the site, email and DNS without downtime. And if a renewal is the only time anyone looks at your site, it may be worth reading about <a href="/wordpress-maintenance/">WordPress maintenance</a> too.</p>
 
-<h2>How introductory pricing works</h2>
+<h2>Where the renewal charges come from</h2>
+<p>Here's how a typical hosting bill changes between the first term and renewal:</p>
+<table>
+  <thead><tr><th>Line item</th><th>First term</th><th>At renewal</th></tr></thead>
+  <tbody>
+    <tr><td>Hosting plan</td><td>Introductory price, lowest on the longest term</td><td>Regular price, often several times the intro rate</td></tr>
+    <tr><td>Domain</td><td>Often free for the first year</td><td>Paid every year, roughly ₹500 to ₹1,200 for a .com or .in</td></tr>
+    <tr><td>SSL certificate</td><td>Free certificate included</td><td>Usually still free; paid upgrades are rarely needed</td></tr>
+    <tr><td>Business email</td><td>Free mailboxes or a trial on some plans</td><td>Charged per mailbox once the offer ends</td></tr>
+    <tr><td>Backups, malware scanning, privacy</td><td>Sometimes added at checkout or bundled free</td><td>Renewed automatically, often at full price</td></tr>
+    <tr><td>GST</td><td>18%, sometimes left out of the advertised price</td><td>18% on the full renewal amount</td></tr>
+  </tbody>
+</table>
+<p>The advertised monthly price is often the total for a multi-year term divided by the number of months, so the "per month" figure you remember may never have been a monthly payment at all.</p>
+
+<h2>Why hosts price it this way</h2>
+<p>Shared hosting is a competitive market, and the introductory price is how hosts win new customers. They expect to earn the money back at renewal, because most customers don't move: migrating a website feels risky, and many owners don't know how. That's why the deepest discounts are on the longest terms, and why renewal prices are shown in smaller print. Some hosts, Hostinger among them, display the renewal price next to the offer at the time of writing; it's worth reading before you buy.</p>
+
+<h2>Step 1: Check what you're actually paying for</h2>
+<ol>
+  <li>Log into your hosting account and open the billing or services section.</li>
+  <li>List every service due for renewal: hosting, domains, email, backups, security add-ons, domain privacy, SEO tools.</li>
+  <li>Turn off auto-renew on anything you don't use. Paid malware scanners and backup add-ons are often unnecessary if your site has a security plugin and off-site backups.</li>
+  <li>Check your resource usage in the control panel. If the site uses a fraction of the plan, a smaller plan may do.</li>
+  <li>Note which domains are registered at the host. You can move domain renewals to a separate registrar; see <a href="/blog/transfer-domain-to-another-registrar/">transferring a domain</a>.</li>
+</ol>
+
+<h2>Step 2: Choose your option</h2>
 <ul>
-  <li>The advertised low monthly price usually applies only to the first term</li>
-  <li>The lowest price often requires paying for several years upfront</li>
-  <li>Renewal is at the regular price, which can be several times the introductory rate</li>
-  <li>A "free domain" is typically free for the first year only</li>
+  <li><strong>Renew for a longer term.</strong> If you're happy with speed and support, longer renewal terms usually cost less per month. Weigh that against being locked in.</li>
+  <li><strong>Ask for a retention offer.</strong> Contact support or sales before the renewal date, say you're considering moving, and ask what they can do. Some hosts offer a discount or a longer term at a better rate; some won't.</li>
+  <li><strong>Downgrade.</strong> If you're paying for capacity you don't use, move to a smaller plan before renewal.</li>
+  <li><strong>Move to another host.</strong> New-customer pricing elsewhere may be cheaper for the next term, but factor in the migration and the next host's renewal price.</li>
+  <li><strong>Move up instead.</strong> If the site is slow or keeps hitting limits, renewal is a good moment to move to better hosting rather than cheaper hosting; see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>.</li>
 </ul>
 
-<h2>Add-ons that increase the bill</h2>
+<h3>Asking for a retention offer</h3>
+<p>Be brief and specific. Give your account or domain name, say the renewal price is higher than you expected and that you're comparing other hosts, and ask whether they can offer a better rate, a longer term at a lower price or a cheaper plan that suits your usage. Ask a few days before the renewal date, not after it has been charged, and get any offer confirmed in writing in the ticket or chat.</p>
+
+<h2>Step 3: Compare the total cost over three to five years</h2>
+<p>Comparing first-term prices is how the renewal shock happens. For each option, add up:</p>
+<ol>
+  <li>The first term at the price you'll actually pay</li>
+  <li>The renewal price for the remaining years</li>
+  <li>Domain renewals, if they're at the host</li>
+  <li>Email, if it's billed separately</li>
+  <li>Add-ons you genuinely need</li>
+  <li>18% GST on all of it</li>
+  <li>For a move: the migration cost or your time, and the risk</li>
+</ol>
+<p>On this site, I put typical WordPress hosting at roughly ₹2,500 to ₹15,000 a year depending on the type of plan; <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> explains what moves a plan up or down that range.</p>
+
+<h2>Is switching hosts worth it?</h2>
+<p>Moving every few years to chase introductory pricing can work, but each move takes effort and carries some risk to email, DNS and SSL if it's done carelessly. For a business site, reliability, speed and helpful support usually matter more than saving a small amount a year.</p>
+<p>Moving makes sense when:</p>
 <ul>
-  <li>Domain privacy, backups, security scanners and SSL upgrades added at checkout</li>
-  <li>Email plans billed separately</li>
-  <li>Auto-renewal of add-ons you don't use</li>
+  <li>The site is slow, or goes down, and the host can't fix it</li>
+  <li>Support is slow or unhelpful when something breaks</li>
+  <li>The renewal price is well above what comparable hosts charge for similar plans, after counting their renewal prices too</li>
+  <li>You're paying for a bundle of services you don't need</li>
 </ul>
-<p>Review your account and remove what you don't need before renewal.</p>
+<p>Staying makes sense when the site is fast, support is good and the difference over several years is small. <a href="/blog/choose-wordpress-hosting-india/">How to choose WordPress hosting in India</a> lists what to check in a new host.</p>
 
-<h2>How to budget properly</h2>
-<p>Look up the renewal price before you buy, and compare the total cost over three to five years, not just the first term. Include domain, email and any premium plugins. See <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a>.</p>
+<h2>How to move hosting before the renewal date</h2>
+<ol>
+  <li><strong>Start two to four weeks before renewal,</strong> so there's time to test without pressure.</li>
+  <li><strong>Buy the new hosting</strong> and note its renewal price this time.</li>
+  <li><strong>Take a full backup</strong> of files and database, and copy every DNS record, including email records.</li>
+  <li><strong>Migrate the site</strong> and test it on the new server before changing DNS, using a temporary address or your computer's hosts file.</li>
+  <li><strong>Move email</strong> if it's hosted with the old host, or better, move it to a separate email provider.</li>
+  <li><strong>Switch DNS</strong> and check the site, SSL, forms and email.</li>
+  <li><strong>Keep the old plan running</strong> for a week or so, then cancel its auto-renew.</li>
+</ol>
+<p>The steps in detail, with three methods, are in <a href="/blog/migrate-website-to-hostinger/">migrating a WordPress site without downtime</a>; the process is the same whichever host you move to.</p>
 
-<h2>Your options at renewal</h2>
+<h2>Avoid the shock next time</h2>
 <ul>
-  <li><strong>Renew for a longer term</strong> if you're happy with the service; longer terms usually cost less per month</li>
-  <li><strong>Ask for a discount:</strong> some hosts offer retention deals if you contact them</li>
-  <li><strong>Move to another host:</strong> new-customer pricing elsewhere may be cheaper, but factor in migration effort and the next renewal</li>
-  <li><strong>Downgrade</strong> if you're paying for resources you don't use</li>
+  <li>Before you buy, write down the renewal price and the date the intro term ends.</li>
+  <li>Set a calendar reminder 30 days before every renewal.</li>
+  <li>Keep the domain at a separate registrar, so hosting decisions never put the domain at risk.</li>
+  <li>Keep the hosting account in the business's name, with a card that won't expire before the renewal.</li>
+  <li>Track all renewals in one place; see the <a href="/blog/domain-hosting-renewal-checklist/">domain, hosting and email renewal checklist</a>.</li>
 </ul>
+<p>Whatever you decide, don't let hosting expire while you think about it. Expired hosting takes your website, and any email on it, offline.</p>
 
-<h2>Is moving worth it?</h2>
-<p>Switching hosts every few years just for introductory pricing can work, but each migration carries some risk and effort. For a business site, reliability, speed and support often matter more than saving a small amount. See <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting</a> and <a href="/blog/migrate-website-to-hostinger/">migrating safely</a>.</p>
+<h2>FAQs</h2>
+<h3>Why is my hosting renewal so much more expensive?</h3>
+<p>Because the first term was an introductory discount, often requiring several years paid upfront. Renewal is at the regular price, and add-ons, a domain that was free for the first year and 18% GST all add to the invoice.</p>
+<h3>Are high hosting renewal charges a scam?</h3>
+<p>Usually not; it's standard industry pricing, and the renewal price is normally stated somewhere at purchase. It's worth checking the invoice comes from your real host, though, as fake renewal emails exist.</p>
+<h3>Can I negotiate my hosting renewal price?</h3>
+<p>Sometimes. Contact the host before the renewal date and ask for a retention offer or a better rate on a longer term. If they refuse, removing unused add-ons or downgrading may still cut the bill.</p>
+<h3>Is GST charged on web hosting in India?</h3>
+<p>Yes, hosting and domain services are charged with 18% GST. Some advertised prices exclude it, so check the final checkout amount when comparing hosts. A GST-registered business can usually claim it back as input tax credit; ask your accountant.</p>
+<h3>What happens if I don't renew my hosting?</h3>
+<p>Most hosts suspend the account shortly after the due date, which takes the website and any email hosted there offline. After a grace period, files, databases and mailboxes may be deleted for good. If you plan to move, finish the migration and download a full backup before the old plan ends.</p>
+<h3>Will moving hosts affect my SEO or email?</h3>
+<p>Not if it's done properly. Keep the same domain and URLs, test the site before switching DNS, copy every DNS record including MX, SPF and DKIM, and keep the old hosting live until everything is confirmed.</p>
 
-<h2>Don't let it lapse</h2>
-<p>Whatever you decide, don't let hosting or domain expire while you think about it. An expired account takes your site and email offline. Keep a <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a>.</p>
+<p>Decided to move? My <a href="/wordpress-migration/">WordPress migration</a> service covers the site, email and DNS records and a tested switch-over, so the renewal date passes without downtime.</p>
 `,
   },
   {
