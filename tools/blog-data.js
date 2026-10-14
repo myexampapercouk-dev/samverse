@@ -849,68 +849,125 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'woocommerce-vs-shopify-india',
-    seoTitle: "WooCommerce vs Shopify in India: Which Is Better?",
-    title: 'WooCommerce vs Shopify in India: Which Is Better for Your Online Store?',
-    description: 'WooCommerce vs Shopify for Indian online stores: compare costs, fees, Razorpay and other payment gateways, flexibility, SEO and ownership before you choose.',
+    seoTitle: 'WooCommerce vs Shopify in India: Costs, GST, COD and UPI',
+    title: 'WooCommerce vs Shopify in India: Costs, Payment Gateways, GST, COD and Shipping Compared for Online Stores',
+    description: 'WooCommerce vs Shopify for Indian stores: running costs, transaction fees, Razorpay and UPI, GST invoices, COD, Shiprocket, apps vs plugins and ownership.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-restaurants', 'wordpress-speed-optimization'],
     body: `
-<p>If you're starting an online store in India, WooCommerce and Shopify are the two platforms you'll hear about most. Both can run a successful store, but they work very differently, especially when it comes to cost and control.</p>
+<p>For most small and growing Indian online stores, WooCommerce is the better fit: there is no platform fee, you pay only your payment gateway's charges, cash on delivery, GST and shipping rules can be set exactly how you work, and the store, data and content are fully yours. Shopify is the better fit if you want a hosted store where hosting, security and updates are handled for you, and you accept a monthly plan, monthly app costs and any Shopify transaction fee that applies to third-party gateways.</p>
+<p>I build WooCommerce stores, so read this with that in mind; if Shopify genuinely suits a store better, I say so. If you want a <a href="/woocommerce-developer/">WooCommerce developer in India</a> to set up payments, COD, GST and shipping properly, that page explains how I work. This comparison is store-specific; for business websites in general, including Wix, see <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a>.</p>
 
-<h2>The key difference</h2>
-<p><strong>WooCommerce</strong> is a free e-commerce plugin for WordPress. You host it yourself and own everything.</p>
-<p><strong>Shopify</strong> is a hosted platform. You pay a monthly subscription, and Shopify handles hosting and security.</p>
-
-<h2>Comparison for Indian stores</h2>
+<h2>WooCommerce vs Shopify for Indian stores at a glance</h2>
 <table>
   <thead><tr><th></th><th>WooCommerce</th><th>Shopify</th></tr></thead>
   <tbody>
-    <tr><td><strong>Platform fee</strong></td><td>Free (pay for hosting)</td><td>Monthly subscription</td></tr>
-    <tr><td><strong>Transaction fees</strong></td><td>Only your payment gateway's fee</td><td>Extra fee may apply if not using Shopify's own payments</td></tr>
-    <tr><td><strong>Indian payment gateways</strong></td><td>Razorpay, PayU, Cashfree, PhonePe and more</td><td>Supported, often via apps</td></tr>
-    <tr><td><strong>Cash on Delivery</strong></td><td>Built in</td><td>Supported</td></tr>
-    <tr><td><strong>Customisation</strong></td><td>Almost unlimited</td><td>Good, within platform limits</td></tr>
-    <tr><td><strong>Content &amp; blog</strong></td><td>Excellent (it's WordPress)</td><td>Basic</td></tr>
-    <tr><td><strong>Maintenance</strong></td><td>You or your developer handle updates</td><td>Handled by Shopify</td></tr>
-    <tr><td><strong>Ownership</strong></td><td>Full ownership, move hosts anytime</td><td>Tied to Shopify</td></tr>
+    <tr><td>What it is</td><td>A free plugin that turns WordPress into a store, on hosting you choose</td><td>A hosted e-commerce platform</td></tr>
+    <tr><td>Platform fee</td><td>None; you pay for hosting, domain and any premium plugins</td><td>A monthly plan</td></tr>
+    <tr><td>Fees on each order</td><td>Only your gateway's charges</td><td>Gateway charges, plus a Shopify transaction fee on some plans when using third-party gateways</td></tr>
+    <tr><td>Indian gateways and UPI</td><td>Razorpay, Cashfree, PayU, PhonePe and others through their plugins</td><td>Supported through third-party payment providers</td></tr>
+    <tr><td>Cash on delivery</td><td>Built in; rules by order value, pin code or COD fee with plugins</td><td>Supported; extra rules and fees usually need apps</td></tr>
+    <tr><td>GST invoices</td><td>Tax classes plus an invoice plugin</td><td>Tax settings plus an invoice app</td></tr>
+    <tr><td>Couriers</td><td>Plugins from aggregators such as Shiprocket</td><td>Apps from the same aggregators</td></tr>
+    <tr><td>Adding features</td><td>Plugins, many free, some with yearly licences</td><td>Apps, often with monthly subscriptions</td></tr>
+    <tr><td>Customisation</td><td>Almost unlimited, including checkout</td><td>Good within the platform; deeper checkout changes are limited</td></tr>
+    <tr><td>Content and blog</td><td>Full WordPress</td><td>Basic</td></tr>
+    <tr><td>Upkeep</td><td>Updates, backups and security by you or a developer</td><td>Handled by Shopify</td></tr>
+    <tr><td>Leaving</td><td>Move to any host, keep everything</td><td>Export products, customers and orders; rebuild the design</td></tr>
   </tbody>
 </table>
 
-<p>Platform fees are only one part of the budget. For build costs by type of store, see <a href="/blog/ecommerce-website-cost-india/">how much an e-commerce website costs in India</a>.</p>
+<h2>What each costs to run in India</h2>
+<p>Compare the total over two or three years, not the first month's offer.</p>
+<table>
+  <thead><tr><th>Cost</th><th>WooCommerce</th><th>Shopify</th></tr></thead>
+  <tbody>
+    <tr><td>Platform</td><td>Free</td><td>Monthly plan; check current pricing for India</td></tr>
+    <tr><td>Hosting</td><td>About ₹2,500 to ₹15,000 a year; stores belong at the better end</td><td>Included in the plan</td></tr>
+    <tr><td>Domain</td><td>About ₹500 to ₹1,200 a year</td><td>Bought separately or through Shopify</td></tr>
+    <tr><td>Theme</td><td>Free or a one-off or yearly premium licence</td><td>Free or a one-off premium theme</td></tr>
+    <tr><td>Extra features</td><td>Free plugins or yearly licences</td><td>Monthly app subscriptions</td></tr>
+    <tr><td>Per-order fees</td><td>Gateway charges only</td><td>Gateway charges, plus any Shopify transaction fee</td></tr>
+    <tr><td>Maintenance</td><td>Optional; about ₹1,500 to ₹6,000 a month from a freelancer</td><td>Mostly handled; you still manage apps and settings</td></tr>
+    <tr><td>Build</td><td>About ₹30,000 to ₹90,000 or more for a professionally built store</td><td>Varies with theme and app setup</td></tr>
+  </tbody>
+</table>
+<p>For many small Indian stores, WooCommerce costs less to run over time, while Shopify saves time on technical upkeep. As order volume grows, percentage-based fees and monthly apps start to matter more than the platform fee. <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> breaks down the WooCommerce side in detail.</p>
 
-<h2>Choose WooCommerce if...</h2>
+<h2>Payment gateways, UPI and transaction fees</h2>
+<p>Both platforms can take UPI, cards, net banking and wallets through Indian gateways. The difference is in the fees and the setup:</p>
 <ul>
-  <li>You want to avoid monthly platform fees and keep costs predictable</li>
-  <li>You want full control over design, features and data</li>
-  <li>Content and SEO matter: blogs, guides and landing pages alongside your products</li>
-  <li>You already have a WordPress website</li>
-  <li>You need custom features like B2B pricing, bookings or product configurators</li>
+  <li><strong>WooCommerce:</strong> install the gateway's official plugin, such as Razorpay, Cashfree, PayU or PhonePe, add your API keys and set up webhooks so paid orders are marked paid even if the shopper closes the browser. WooCommerce adds no fee of its own.</li>
+  <li><strong>Shopify:</strong> Indian gateways connect as third-party payment providers. At the time of writing, Shopify's own payment service isn't offered in India, and Shopify has charged its own transaction fee on orders paid through third-party providers, varying by plan. Check Shopify's current pricing page for India before you compare totals.</li>
 </ul>
+<p>Gateway fees, settlement times and KYC requirements are separate from the platform; <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a> lists what to compare.</p>
 
-<p>Already on Shopify and thinking of switching? See <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</p>
+<h2>Cash on delivery</h2>
+<p>COD still matters to many Indian shoppers, and refused deliveries cost you shipping both ways. WooCommerce has COD built in, and plugins let you limit it by order value or pin code, add a COD fee and confirm COD orders before dispatch. Shopify supports COD as a manual payment method; COD fees, pin code restrictions and order confirmation usually need apps. <a href="/blog/woocommerce-cash-on-delivery-india/">Offering COD without losing money</a> covers the rules worth setting on either platform.</p>
 
-<h2>Choose Shopify if...</h2>
+<h2>GST and invoices</h2>
+<p>On WooCommerce, each GST rate gets its own tax class, tax is split into CGST and SGST or charged as IGST based on the shipping state, and an invoice plugin adds your GSTIN, HSN codes and invoice numbering. Shopify handles GST through its tax settings and relies on invoice apps for GST-format invoices. Either way, ask your CA to confirm the rates and invoice format; <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a> shows each step.</p>
+
+<h2>Shipping and couriers</h2>
+<p>Shipping aggregators such as Shiprocket offer both a WooCommerce plugin and a Shopify app, so you can generate labels, compare couriers and send tracking updates on either platform. Both support flat, weight-based and free-above-a-threshold rates. WooCommerce gives more control over unusual rules, such as different rates by pin code range or product type, and pin code delivery checkers on product pages. See <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+
+<h2>Apps vs plugins: how features are added</h2>
+<table>
+  <thead><tr><th>Feature an Indian store often needs</th><th>WooCommerce</th><th>Shopify</th></tr></thead>
+  <tbody>
+    <tr><td>GST invoices</td><td>Invoice plugin</td><td>Invoice app</td></tr>
+    <tr><td>COD rules and fees</td><td>Free or paid plugin</td><td>App</td></tr>
+    <tr><td>Pin code delivery checker</td><td>Plugin or custom code</td><td>App</td></tr>
+    <tr><td>WhatsApp order updates</td><td>Plugin plus a WhatsApp Business API provider</td><td>App plus a provider</td></tr>
+    <tr><td>Product reviews</td><td>Built in, extendable with plugins</td><td>App</td></tr>
+    <tr><td>Dealer or wholesale pricing</td><td>Plugin or custom development</td><td>App or a higher plan</td></tr>
+  </tbody>
+</table>
+<p>Shopify apps run on the app maker's side and are usually billed monthly. WooCommerce plugins run on your own hosting and are often free or billed yearly, but every plugin adds code to maintain, so a store with forty plugins becomes slow and fragile. Choose a few well-maintained ones.</p>
+
+<h2>Design, checkout and customisation</h2>
+<p>Shopify themes look good out of the box, and its checkout is fast and familiar, but deeper checkout changes are limited to its higher plans. WooCommerce lets a developer change almost anything: checkout fields, product configurators, B2B pricing, booking-style products or a shop that sits alongside other features. For <a href="/work/southern-flavours/">Southern Flavours</a>, a restaurant in the UK, I built a WooCommerce shop with more than 100 dishes in 13 categories alongside a table reservation form, all on one WordPress site.</p>
+
+<h2>Content, SEO and speed</h2>
+<p>Shopify's URLs always include /products/ and /collections/, and its blog is basic. WooCommerce gives full control over URLs, schema and as much content as you want, which helps stores that win customers through buying guides and recipes. Shopify's hosting is fast by default; WooCommerce can be just as fast on good hosting with caching and optimised images, and cheap hosting is the main reason WooCommerce stores feel slow.</p>
+
+<h2>Ownership and moving later</h2>
+<p>A WooCommerce store is yours: files and database can move to any host, and any WordPress developer can take over. Shopify lets you export products, customers and orders as CSV files, but the theme and apps stay behind, so leaving means rebuilding the design. If you're already on Shopify and the fees or limits are pinching, see <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</p>
+
+<h2>Which should you choose?</h2>
 <ul>
-  <li>You want a fully hosted, hands-off platform</li>
-  <li>You're comfortable with monthly subscription and app costs</li>
-  <li>You don't need much customisation beyond themes and apps</li>
+  <li><strong>Small or growing D2C brand watching costs:</strong> WooCommerce, with a good host, an Indian gateway and a fast theme.</li>
+  <li><strong>Store that relies on content, SEO or buying guides:</strong> WooCommerce.</li>
+  <li><strong>Store needing unusual rules:</strong> dealer pricing, configurators, pin code logic or bookings point to WooCommerce.</li>
+  <li><strong>Brand with nobody technical and no developer:</strong> Shopify, if you accept the plan, app and transaction costs.</li>
+  <li><strong>Already have a WordPress website:</strong> WooCommerce adds a store without a second platform.</li>
 </ul>
-
-<p>Still deciding whether to sell on your own site at all? Read <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a>.</p>
-
-<h2>Real costs over the first year</h2>
-<p>With WooCommerce, your running costs are mainly hosting, a domain and any premium plugins you choose, plus maintenance if you use a developer. With Shopify, you pay the monthly plan, and paid apps for features like reviews, filters or WhatsApp often add a noticeable amount each month. For many small Indian stores, WooCommerce works out cheaper over time, while Shopify saves time on maintenance.</p>
-
-<p>Organic search matters for stores too; see <a href="/blog/woocommerce-seo-guide/">how to rank WooCommerce product and category pages</a>.</p>
-
-<h2>Speed and performance</h2>
-<p>Shopify's hosting is fast by default. WooCommerce can be just as fast on good hosting with caching and optimized images. Cheap hosting is the main reason WooCommerce stores feel slow.</p>
 
 <p>Chosen WooCommerce? Work through the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a> before going live.</p>
 
-<h2>Our recommendation</h2>
-<p>For most small and growing Indian brands that want control and low running costs, <strong>WooCommerce</strong> is an excellent choice, especially when set up properly with a good host, Razorpay and a fast theme. If you want zero technical responsibility and don't mind the monthly fees, Shopify is a solid alternative.</p>
+<p>Organic search matters for stores too; see <a href="/blog/woocommerce-seo-guide/">how to rank WooCommerce product and category pages</a>.</p>
+
+<p>Still deciding whether to sell on your own site at all? Read <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a>.</p>
+
+<p>Platform fees are only one part of the budget. For build costs by type of store, see <a href="/blog/ecommerce-website-cost-india/">how much an e-commerce website costs in India</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Is WooCommerce cheaper than Shopify in India?</h3>
+<p>Usually, over time. WooCommerce has no platform fee or transaction fee, so you pay for hosting, a domain, any premium plugins and optional maintenance. Shopify has a monthly plan, monthly apps and possibly its own transaction fee. Shopify can be cheaper if you'd otherwise pay a developer for every small change.</p>
+<h3>Does Shopify charge transaction fees in India?</h3>
+<p>Shopify has charged its own transaction fee on orders paid through third-party gateways, at a rate that depends on the plan, and its own payment service isn't offered in India at the time of writing. Check Shopify's current India pricing page, as this changes.</p>
+<h3>Can I use Razorpay with both WooCommerce and Shopify?</h3>
+<p>Yes. Razorpay has an official WooCommerce plugin and connects to Shopify as a third-party payment provider. Cashfree, PayU and PhonePe can also be used on both, subject to each gateway's approval of your business.</p>
+<h3>Which is better for cash on delivery?</h3>
+<p>Both support COD. WooCommerce makes it easier to limit COD by order value or pin code, add a COD fee and confirm orders before dispatch, often with free plugins. On Shopify those rules usually need paid apps.</p>
+<h3>Which is better for SEO?</h3>
+<p>Both can rank. WooCommerce gives more control over URLs, schema and content, which suits stores that publish guides and category content. Shopify covers the basics with a fixed URL structure and a simpler blog.</p>
+<h3>Can I move from Shopify to WooCommerce later?</h3>
+<p>Yes. Products, categories and images move across, along with customers and past orders where exports allow, the design is rebuilt, and old URLs are redirected to protect search visibility.</p>
+
+<p>Decided WooCommerce suits your store? I set up the catalogue, an Indian payment gateway tested in test mode, COD rules, GST and shipping, then train you on orders and stock; most stores take 2 to 4 weeks once product details and photos are ready. See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -1758,70 +1815,132 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
   },
   {
     slug: 'accept-online-payments-wordpress-india',
-    seoTitle: "Accept Online Payments on WordPress in India",
-    title: 'How to Accept Online Payments on a WordPress Website in India (UPI, Cards, COD)',
-    description: 'Accept online payments on WordPress in India with Razorpay, PayU, Cashfree, PhonePe or UPI: WooCommerce setup, payment links, COD, fees and KYC explained.',
+    seoTitle: 'Accept Online Payments on WordPress in India: UPI and Cards',
+    title: 'How to Accept Online Payments on a WordPress Website in India: UPI, Cards, Gateways, KYC and Setup',
+    description: 'Accept online payments on WordPress in India: Razorpay, Cashfree, PayU, PhonePe or CCAvenue, UPI, KYC, settlements, WooCommerce setup and test mode.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-schools-and-coaching', 'website-for-temples-and-ngos'],
     body: `
-<p>Whether you're selling products, taking consultation fees, collecting course payments or accepting donations, your WordPress website can take payments by UPI, cards, net banking and wallets. Here's how it works in India and how to choose the right setup.</p>
-
-<h2>What you need</h2>
-<ul>
-  <li><strong>A payment gateway account</strong> such as Razorpay, PayU, Cashfree or PhonePe PG.</li>
-  <li><strong>Business KYC:</strong> typically PAN, bank account, business proof and GST details if applicable. Requirements vary by gateway and business type.</li>
-  <li><strong>A website with the required pages:</strong> gateways usually check for contact details, terms and conditions, privacy policy, and refund/cancellation and shipping policies before approving your account.</li>
-  <li><strong>HTTPS (SSL)</strong> on your website.</li>
-</ul>
-
-<h2>Popular payment gateways for Indian websites</h2>
-<table>
-  <thead><tr><th>Gateway</th><th>Good for</th></tr></thead>
-  <tbody>
-    <tr><td>Razorpay</td><td>Most businesses. Wide payment options, good WooCommerce plugin, payment links and pages</td></tr>
-    <tr><td>PayU</td><td>Established option with broad payment method support</td></tr>
-    <tr><td>Cashfree</td><td>Businesses that also need payouts and quick settlements</td></tr>
-    <tr><td>PhonePe PG</td><td>UPI-heavy audiences</td></tr>
-    <tr><td>PayPal / Stripe</td><td>International customers paying in foreign currency</td></tr>
-  </tbody>
-</table>
-<p>Compare current transaction fees, settlement times and supported methods on each provider's website before choosing, as these change over time.</p>
-
-<p>Still deciding between providers? See <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a> for what to compare, from settlement times to KYC and WooCommerce support.</p>
+<p>To accept online payments on a WordPress website in India, open an account with an Indian payment gateway such as Razorpay, Cashfree, PayU, PhonePe Payment Gateway or CCAvenue in your business name, complete its KYC checks and make sure your site shows contact details and policy pages. Then install the gateway's official plugin for WooCommerce, or use a payment form or payment links if you don't need a full store, add your test keys, set up webhooks and test every outcome before switching to live keys. Customers can then pay by UPI, cards, net banking and wallets in one checkout.</p>
+<p>Payment setup touches the website, the gateway dashboard and your business paperwork, which is why it is part of every store I build as a <a href="/woocommerce-developer/">WooCommerce developer</a>: the gateway is set up in test mode first, with successful, failed and cancelled payments, order emails and webhooks tested before going live. This guide explains each step so you know what is involved.</p>
+<p>Still choosing a provider? <a href="/blog/payment-gateways-india-compared/">How to choose a payment gateway in India</a> covers what to compare, from fees to international cards. This guide is about getting one working on WordPress.</p>
 
 <h2>Ways to take payments on WordPress</h2>
-<h3>1. WooCommerce (for online stores)</h3>
-<p>WooCommerce adds products, cart and checkout. Install your gateway's WooCommerce plugin, add your API keys, and customers can pay by UPI, card or net banking at checkout. You can also enable <strong>Cash on Delivery</strong>, which many Indian shoppers still prefer.</p>
-<h3>2. Payment forms (for fees, services and donations)</h3>
-<p>For consultation fees, course fees, event registrations or donations, a payment form is simpler than a full store. Form plugins can connect to gateways like Razorpay so people fill in details and pay in one step.</p>
-<p>Schools and coaching institutes often collect fees this way; see <a href="/blog/school-coaching-website-what-parents-look-for/">what parents and students look for</a>.</p>
-<h3>3. Payment links and buttons</h3>
-<p>Gateways let you create payment links or buttons you can place on any page, or send on WhatsApp. It's the quickest option for occasional payments.</p>
+<table>
+  <thead><tr><th>Method</th><th>Best for</th><th>What you need</th><th>Orders tracked automatically?</th></tr></thead>
+  <tbody>
+    <tr><td>WooCommerce checkout</td><td>Products, a menu, anything with a cart</td><td>WooCommerce plus the gateway's plugin</td><td>Yes</td></tr>
+    <tr><td>Payment form</td><td>Consultation fees, registrations, course fees, donations</td><td>A form plugin that supports your gateway</td><td>Yes, as form entries</td></tr>
+    <tr><td>Payment links, buttons or pages</td><td>Occasional payments, invoices, WhatsApp sales</td><td>The gateway's dashboard; a button embedded on a page</td><td>In the gateway dashboard</td></tr>
+    <tr><td>Static UPI QR code</td><td>Very small businesses, low volumes</td><td>A QR image from your bank or UPI app</td><td>No; you match payments by hand</td></tr>
+    <tr><td>Cash on delivery or bank transfer</td><td>Stores whose customers prefer to pay later</td><td>Built into WooCommerce</td><td>Yes, marked paid manually</td></tr>
+  </tbody>
+</table>
+<p>A static QR code needs no gateway, but nothing confirms the payment automatically, so it doesn't scale beyond a handful of orders. If you haven't chosen a store platform yet, see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
 
-<p>Registered under GST? See <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>.</p>
+<h2>Payment gateways available to Indian businesses</h2>
+<table>
+  <thead><tr><th>Gateway</th><th>WordPress support</th><th>Worth knowing</th></tr></thead>
+  <tbody>
+    <tr><td>Razorpay</td><td>Official WooCommerce plugin; payment links, buttons and pages</td><td>Widely used, with a large set of payment methods and good documentation</td></tr>
+    <tr><td>Cashfree</td><td>WooCommerce plugin</td><td>Also offers payouts, useful if you pay vendors or refunds in bulk</td></tr>
+    <tr><td>PayU</td><td>WooCommerce plugin</td><td>A long-established option with broad payment method coverage</td></tr>
+    <tr><td>PhonePe Payment Gateway</td><td>WooCommerce plugin</td><td>Worth considering for UPI-heavy audiences</td></tr>
+    <tr><td>CCAvenue</td><td>WooCommerce integration</td><td>One of the older Indian gateways, with many payment options</td></tr>
+    <tr><td>Stripe</td><td>WooCommerce plugin</td><td>Has limited sign-ups for new Indian businesses in recent times; check whether it accepts accounts like yours before planning around it</td></tr>
+    <tr><td>PayPal</td><td>WooCommerce plugin</td><td>In India it is for receiving international payments rather than domestic ones, at the time of writing</td></tr>
+  </tbody>
+</table>
+<p>Before installing any plugin, check it is the gateway's official one, recently updated and compatible with your WooCommerce version, including the block-based checkout if your store uses it.</p>
 
-<h2>Testing before you go live</h2>
+<h2>How UPI works on a website</h2>
+<p>UPI comes through the gateway, not as a separate integration. On a phone, the checkout can open the customer's UPI app directly; on a desktop, it usually shows a QR code to scan. Either way, the customer leaves your page to approve the payment and may never come back to it, especially on a weak connection. That is why webhooks matter: the gateway tells your site the payment succeeded, server to server, and the order is marked paid regardless of what the customer's browser does. For recurring payments such as memberships, gateways offer UPI AutoPay and card mandates, subject to RBI's e-mandate rules.</p>
+
+<h2>KYC and getting approved</h2>
+<p>Payment aggregators in India work under RBI rules, so onboarding includes proper verification. Requirements vary by gateway and business type, but expect:</p>
 <ul>
-  <li>Use the gateway's <strong>test mode</strong> first and run test payments.</li>
-  <li>Check order emails, receipts and thank-you pages.</li>
-  <li>Test failed and cancelled payments, not just successful ones.</li>
-  <li>Test on mobile, where most UPI payments happen.</li>
+  <li>PAN of the business or proprietor</li>
+  <li>A current account or bank account in the business name</li>
+  <li>Business proof, such as a GST certificate, Udyam registration or shop and establishment licence</li>
+  <li>Address and identity proof for directors, partners or the proprietor</li>
+  <li>A business category the gateway supports; some categories are restricted or need extra approval</li>
 </ul>
+<p>Gateways also review your website. Before applying, make sure it is live (not a "coming soon" page) and shows:</p>
+<ul>
+  <li>Your business name, address, phone number and email</li>
+  <li>Clear products or services with prices</li>
+  <li>Terms and conditions and a privacy policy</li>
+  <li>Refund and cancellation policies, and shipping or delivery terms if you ship goods</li>
+</ul>
+<p><a href="/blog/privacy-policy-cookie-basics-india/">Privacy policy basics for Indian websites</a> covers the privacy page. Missing policies are among the most common reasons applications are sent back.</p>
+
+<h2>Settlements: when the money reaches your bank</h2>
+<p>Settlement is when the gateway pays collected money, minus its fees and GST on those fees, into your bank account. Standard cycles are commonly around two working days after the payment (written T+2), though new accounts can start on a longer cycle and some gateways offer faster settlement for an extra charge. Check the cycle in your agreement, and in what situations the gateway can hold a settlement, such as unusual volumes or disputes.</p>
+<p>Use the gateway's settlement reports to match payouts against WooCommerce orders. Refunds are usually deducted from future settlements. If you are GST-registered, see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a> for the store side.</p>
+
+<h2>Setting up a gateway in WooCommerce, step by step</h2>
+<ol>
+  <li><strong>Apply early.</strong> Approval is in the gateway's hands, so start while the site is being built. Most gateways give you test-mode access straight away.</li>
+  <li><strong>Install the official plugin</strong> from the WordPress plugin directory or the gateway's documentation.</li>
+  <li><strong>Generate test API keys</strong> in the gateway dashboard and paste them into WooCommerce &gt; Settings &gt; Payments, under the gateway's settings.</li>
+  <li><strong>Set up the webhook.</strong> Copy the webhook URL the plugin shows into the gateway dashboard, add a webhook secret if asked, and select the payment events the plugin's documentation lists.</li>
+  <li><strong>Check store settings:</strong> currency set to Indian rupee, the checkout page working, order emails enabled.</li>
+  <li><strong>Test every outcome</strong> using the checklist below.</li>
+  <li><strong>Switch to live keys</strong> once your account is activated, update the webhook for live mode, place a real low-value order and refund it.</li>
+</ol>
+
+<h2>Test mode: what to check before going live</h2>
+<p>Gateways publish test card numbers and test UPI details in their documentation for this. Test on a phone as well as a desktop.</p>
+<table>
+  <thead><tr><th>Scenario</th><th>What should happen</th></tr></thead>
+  <tbody>
+    <tr><td>Successful payment</td><td>Order moves to Processing, stock reduces, customer and admin emails arrive</td></tr>
+    <tr><td>Failed payment</td><td>Order shows Failed or stays Pending payment; the customer can try again</td></tr>
+    <tr><td>Cancelled at the payment screen</td><td>The customer returns to the checkout, not a blank page</td></tr>
+    <tr><td>Browser closed after paying</td><td>The webhook still marks the order paid</td></tr>
+    <tr><td>Refund from the order screen</td><td>The refund reaches the gateway and the order notes record it</td></tr>
+    <tr><td>Cash on delivery, if offered</td><td>Order moves to Processing with COD shown on emails and invoices</td></tr>
+  </tbody>
+</table>
+<p>If you offer COD as well, set its rules at the same time; see <a href="/blog/woocommerce-cash-on-delivery-india/">Cash on Delivery in WooCommerce</a>.</p>
+
+<h2>Taking payments without a full store</h2>
+<p>Not every site needs a cart. Consultants, clinics, coaching institutes and event organisers can use a payment form that collects details and payment in one step, or a payment page or button from the gateway. Booking deposits work the same way; <a href="/blog/online-appointment-booking-website/">online appointment booking</a> covers taking deposits alongside bookings. NGOs and trusts have extra steps for 80G receipts and foreign donations; see <a href="/blog/ngo-website-donations-80g/">online donations for NGOs</a>.</p>
 
 <p>Launching a full store? Use the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> before going live.</p>
 
 <h2>Common problems and fixes</h2>
 <ul>
-  <li><strong>Gateway application rejected:</strong> usually missing policy pages or incomplete business details on the website.</li>
-  <li><strong>Orders stuck as "pending":</strong> often a webhook that isn't configured. Set up the gateway's webhook URL in its dashboard.</li>
-  <li><strong>Slow checkout:</strong> too many plugins or slow hosting. Optimize the checkout page.</li>
+  <li><strong>Application sent back:</strong> usually missing policy pages, prices or contact details on the site, or a business category that needs extra documents.</li>
+  <li><strong>Paid orders stuck at "Pending payment":</strong> almost always a missing or wrong webhook, or test keys in one place and live keys in another.</li>
+  <li><strong>Payment option missing at checkout:</strong> the gateway isn't enabled, the currency isn't INR, or the plugin doesn't support the block checkout.</li>
+  <li><strong>Checkout errors after an update:</strong> a plugin conflict or a security rule blocking the gateway's callback.</li>
 </ul>
+<p><a href="/blog/woocommerce-payment-gateway-not-working-india/">Fixing a payment gateway that isn't working in WooCommerce</a> goes through each of these in detail.</p>
 
+<h2>Keeping payments secure</h2>
+<p>With a gateway's hosted page or popup, card details are entered on the gateway's side rather than stored on your server, which keeps most of the card security burden with the gateway. Your side of the job is a secure site: HTTPS everywhere, WordPress and plugins kept updated, strong unique admin passwords with two-factor login, and regular checks that nobody has added unknown scripts to the checkout page.</p>
+
+<p>Schools and coaching institutes often collect fees this way; see <a href="/blog/school-coaching-website-what-parents-look-for/">what parents and students look for</a>.</p>
 <p>Protect your checkout from card skimmers: see <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce skimming malware</a>.</p>
 
-<h2>Getting it set up</h2>
-<p>Payment setup involves the website, the gateway dashboard and business paperwork. If you'd rather not deal with the technical side, a developer can prepare the required pages, integrate the gateway, set up webhooks and test everything end to end before launch.</p>
+<h2>FAQs</h2>
+<h3>Which payment gateway is best for a WordPress website in India?</h3>
+<p>There's no single best one. Razorpay, Cashfree, PayU, PhonePe and CCAvenue all support UPI, cards and net banking and work with WooCommerce. Choose on fees for your mix of payment methods, settlement cycle, KYC fit for your business type and the quality of the plugin.</p>
+<h3>Can I accept UPI payments on WordPress without a gateway?</h3>
+<p>You can show a static UPI QR code from your bank, but payments aren't linked to orders automatically, so you have to check each one by hand. A gateway confirms UPI payments and updates orders for you.</p>
+<h3>Do I need GST registration to get a payment gateway?</h3>
+<p>Not always. Many gateways onboard proprietors with PAN, a bank account and other business proof, but requirements depend on the gateway, your business type and category. Ask your CA whether you need GST registration for your business itself.</p>
+<h3>How long does payment gateway approval take?</h3>
+<p>It varies with the gateway, your documents and how complete your website is. Apply early, use test mode to build and test in the meantime, and make sure policies and contact details are live before you apply.</p>
+<h3>Can I use Stripe for a website in India?</h3>
+<p>Stripe has limited new sign-ups for Indian businesses in recent times. Check its current status for your business before planning around it; Indian gateways such as Razorpay or Cashfree are the usual choice for domestic payments.</p>
+<h3>Can I accept payments from customers outside India?</h3>
+<p>Yes, through international card acceptance on an Indian gateway, which is often a separate activation, or through PayPal for international payments. Ask about currency conversion, fees and export paperwork for your CA.</p>
+
+<p>Want UPI, cards and COD set up and tested properly? I connect your gateway to WooCommerce, configure webhooks, run test orders for every outcome and confirm the first live order with you; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -3391,80 +3510,146 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'figma-to-wordpress-designer-guide',
-    seoTitle: 'Figma to WordPress: What Designers Should Prepare',
-    title: 'Figma to WordPress: What Designers Should Prepare for a Smooth Handoff',
-    description: 'Figma to WordPress checklist for designers and agencies: styles, components, responsive frames, assets, content and interactions for pixel-accurate builds.',
+    seoTitle: 'Figma to WordPress Handoff: How Designers Should Prepare',
+    title: 'Figma to WordPress: How Designers Should Prepare a File for a Smooth Developer Handoff (With Checklist)',
+    description: 'Figma to WordPress handoff for designers: auto layout, styles and variables, components, breakpoints, assets, fonts and a checklist for an accurate build.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Agencies',
     related: ['figma-to-wordpress', 'elementor-developer', 'wordpress-developer-for-agencies'],
     body: `
-<p>A great Figma design can lose a lot in translation if the handoff is messy. A little preparation helps your WordPress developer build it faster and closer to your vision, with fewer revision rounds. Here's what to prepare.</p>
+<p>To prepare a Figma file for a WordPress build, name your colour, type and spacing styles (or variables) by role, use auto layout on every section, card and button, and turn repeated elements into components with all their states. Design desktop and mobile frames for the homepage and each unique template, note your content width and how layouts should stack, export icons as SVG with photos at full resolution, confirm the fonts have a web licence, use real content, and document interactions. Then share a page and template list so the developer quotes and builds exactly what you designed.</p>
+<p>A tidy file is the biggest factor in how close the live site gets to your design and how many revision rounds it takes. It is also what I review first when a designer or agency sends a file for <a href="/figma-to-wordpress/">Figma to WordPress conversion</a>: questions and gaps go back in one list before anything is quoted. This guide is the designer's side of that handover. For how the build itself can be done, see <a href="/blog/figma-to-wordpress-approaches/">Elementor, block theme or custom theme</a>.</p>
 
-<p>Handing your design to a developer in another country? The guide on how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a> explains how an outsourced project usually runs, from what to send to the final checks.</p>
+<h2>Why file preparation matters</h2>
+<p>A WordPress developer doesn't copy your frames pixel by pixel. They turn your design system into global styles and templates, then build pages from those. When the file has one-off hex values, nudged spacing, detached components or missing states, every gap becomes a guess, and guesses become revision rounds. When the system is clean, the site stays consistent and the client can add pages later without breaking the look.</p>
 
-<h2>1. Set up styles properly</h2>
+<h2>The handover at a glance</h2>
+<table>
+  <thead><tr><th>Area</th><th>What to prepare in Figma</th><th>What it becomes in WordPress</th></tr></thead>
+  <tbody>
+    <tr><td>Colours</td><td>Styles or variables named by role</td><td>Global colours (Elementor) or the theme.json palette</td></tr>
+    <tr><td>Typography</td><td>Text styles for each heading level, body, small text and buttons</td><td>Global fonts and theme typography settings</td></tr>
+    <tr><td>Spacing</td><td>A spacing scale used through auto layout</td><td>Consistent padding and gap values</td></tr>
+    <tr><td>Layout</td><td>Auto layout with fill, hug and fixed rules</td><td>Flexbox containers, rows and stacks</td></tr>
+    <tr><td>Components</td><td>Variants for every state</td><td>Reusable templates, global widgets or block patterns</td></tr>
+    <tr><td>Breakpoints</td><td>Desktop and mobile frames, tablet for complex layouts</td><td>Responsive settings at each breakpoint</td></tr>
+    <tr><td>Assets</td><td>SVG icons, full-size photos, licensed fonts</td><td>Optimised images and self-hosted or Google fonts</td></tr>
+  </tbody>
+</table>
+
+<h2>1. Colour, type and spacing: styles and variables</h2>
 <ul>
-  <li><strong>Colour styles:</strong> named colours (primary, secondary, text, backgrounds) instead of one-off hex values</li>
-  <li><strong>Text styles:</strong> H1–H6, body, small text and buttons with font, size, weight and line height</li>
-  <li><strong>Spacing system:</strong> a consistent scale (for example 8, 16, 24, 32, 48, 64 px)</li>
+  <li><strong>Name by role, not by look:</strong> primary, secondary, text, muted text, background, surface, border, success and error, rather than "blue 2" or a raw hex value.</li>
+  <li><strong>Text styles for every level:</strong> H1 to H4, body, body small, caption, button and navigation, each with font, size, weight, line height and letter spacing, plus their mobile sizes.</li>
+  <li><strong>A spacing scale:</strong> for example 4, 8, 16, 24, 32, 48, 64 and 96 px, used consistently for padding and gaps.</li>
+  <li><strong>Variables if you use them:</strong> Figma variables can hold colours and spacing values, and modes can hold light and dark versions or brand variants. Either styles or variables work; what matters is that every value in the design comes from one of them.</li>
 </ul>
-<p>These map directly to global styles in Elementor or the block editor, which keeps the site consistent and easy to edit.</p>
+<p>Before handover, search the file for colours and text that aren't linked to a style. Each unlinked value is a question the developer will have to ask or guess. If the build uses a block theme, these values map closely onto theme.json; <a href="/blog/block-themes-full-site-editing/">block themes and full site editing</a> explains how.</p>
 
-<h2>2. Use components</h2>
-<p>Buttons, cards, headers, footers, forms and testimonials should be components with variants (hover, active). Repeated elements become reusable templates in WordPress.</p>
-
-<h2>3. Design responsive frames</h2>
+<h2>2. Auto layout on everything</h2>
+<p>Auto layout is the single most useful thing a designer can do for a developer. Padding and gaps become real numbers instead of shapes nudged into place, and "fill container", "hug contents" and fixed widths tell the developer how each element should behave as the screen narrows. Auto layout maps neatly onto Flexbox containers in Elementor and onto Group, Row and Stack blocks in the block editor.</p>
 <ul>
-  <li>At minimum: desktop (around 1440 px) and mobile (around 375 px)</li>
-  <li>Tablet for complex layouts</li>
-  <li>If you only design desktop, note how key sections should stack on mobile</li>
-</ul>
-
-<h2>4. Prepare assets</h2>
-<ul>
-  <li>Logos and icons as SVG</li>
-  <li>Photos exportable at 2× for sharp screens (the developer will compress them)</li>
-  <li>Font files or Google Fonts names, and licences for premium fonts</li>
-</ul>
-
-<h2>5. Use real content where possible</h2>
-<p>Lorem ipsum hides problems. Long headings, real product names and actual testimonials show how layouts behave. If content isn't final, note the expected length.</p>
-
-<h2>6. Document interactions</h2>
-<ul>
-  <li>Hover states for buttons, cards and links</li>
-  <li>Animations: what moves, when and how (prototype or short notes)</li>
-  <li>Menus, dropdowns, tabs, accordions and popups</li>
-  <li>Form behaviour: fields, validation and success messages</li>
+  <li>Use auto layout for sections, columns, cards, buttons, form rows and navigation.</li>
+  <li>Set minimum and maximum widths where text shouldn't stretch too far.</li>
+  <li>Use wrap for rows of cards or logos that should flow onto the next line.</li>
+  <li>Avoid absolute positioning except for genuine overlaps, such as a badge on a card, and say why it's there.</li>
 </ul>
 
-<h2>7. Organise the file</h2>
+<h2>3. Components and variants</h2>
+<p>Buttons, cards, form fields, navigation items, testimonials, pricing tables and footers should be components, with variants for every state:</p>
 <ul>
-  <li>One page per website page, clearly named</li>
-  <li>Final designs separated from explorations</li>
-  <li>Dev Mode or inspect access for the developer</li>
+  <li>Default, hover, focus, active and disabled for buttons and links</li>
+  <li>Empty, filled, focused, error and success for form fields</li>
+  <li>Open and closed for menus, dropdowns, accordions and tabs</li>
+</ul>
+<p>Keep instances attached to their main component. A detached instance with a tweaked colour looks identical in a screenshot but tells the developer nothing, and it is how inconsistencies creep into builds.</p>
+
+<h2>4. Breakpoints and responsive frames</h2>
+<table>
+  <thead><tr><th>Frame</th><th>Common width</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Desktop</td><td>1440 px</td><td>State the content width, such as 1200 or 1280 px, and what happens on wider screens</td></tr>
+    <tr><td>Tablet</td><td>768 to 834 px</td><td>Needed for complex grids, navigation and tables</td></tr>
+    <tr><td>Mobile</td><td>375 to 390 px</td><td>Also check text and buttons still fit at 360 px, a common width on Android phones in India</td></tr>
+  </tbody>
+</table>
+<p>At minimum, design mobile frames for the homepage and each unique template. Elementor's default breakpoints switch to tablet at 1024 px and mobile at 767 px, and in-between widths need rules too: when a three-column grid drops to two, whether images crop or scale, and where the menu becomes a hamburger. If you only have desktop frames, say how key sections should stack. When I get a desktop-only file, I propose mobile and tablet layouts and share them for approval before building them.</p>
+
+<h2>5. Assets and fonts</h2>
+<ul>
+  <li><strong>Icons and logos as SVG,</strong> with strokes outlined and hidden layers removed, so they stay sharp and small.</li>
+  <li><strong>Photos at full resolution</strong> or supplied as originals. The developer handles resizing, WebP conversion and compression.</li>
+  <li><strong>Consistent crop ratios</strong> for cards, team photos and product images, noted in the file.</li>
+  <li><strong>No text baked into images,</strong> so it can be edited, translated and read by search engines and screen readers.</li>
+  <li><strong>Fonts:</strong> a Google Fonts name, or the font files with a licence that covers web use, which is often separate from a desktop licence. Limit families and weights; <a href="/blog/web-fonts-performance/">web fonts and website speed</a> explains why.</li>
 </ul>
 
-<p>How will it be built? Compare <a href="/blog/figma-to-wordpress-approaches/">page builder, block theme and custom theme approaches</a>.</p>
+<h2>6. Real content and edge cases</h2>
+<p>Placeholder text hides problems. Real headings, product names and testimonials show where layouts break. Where copy isn't final, note the expected length. Also design the screens that are easy to forget:</p>
+<ul>
+  <li>Blog post, blog archive and category pages, with long and short titles</li>
+  <li>Search results, the 404 page and empty states such as "no results"</li>
+  <li>Form error and success messages</li>
+  <li>Cookie notices, announcement bars and the mobile menu open</li>
+</ul>
 
-<h2>8. Agree on scope</h2>
-<p>List pages, templates (blog post, archive, product), integrations (CRM, newsletter, payments) and who handles content entry. Clear scope means an accurate quote and timeline.</p>
+<h2>7. Interactions and motion</h2>
+<p>Use a prototype or short notes to show what moves, when and how: hover effects, sticky headers, menu behaviour, accordions, sliders and entrance animations. Note durations and easing where they matter. Keep heavy motion away from the first screen, because animations that delay the main heading or image slow the page for visitors on phones.</p>
+
+<h2>8. Organise and share the file</h2>
+<ul>
+  <li>Separate pages for final designs, components and explorations, with the final page clearly marked.</li>
+  <li>Frame names that match the site's page names, so "About" in Figma is "About" in WordPress.</li>
+  <li>Inspect access for the developer. Depending on your Figma plan, that is a Dev Mode seat or view access; check they can see measurements and export assets before handover.</li>
+  <li>One source of truth. If the design changes after handover, note what changed and where, rather than silently editing approved frames.</li>
+</ul>
+
+<h2>Accessibility checks before handover</h2>
+<ul>
+  <li>Text contrast of at least 4.5:1 for body text and 3:1 for large text, the WCAG AA levels</li>
+  <li>Visible focus states for links, buttons and fields</li>
+  <li>Tap targets large enough for thumbs on mobile</li>
+  <li>Information never shown by colour alone, such as errors marked only in red</li>
+</ul>
+<p><a href="/blog/website-accessibility-basics/">Website accessibility basics</a> covers the rest.</p>
+
+<h2>The final handover checklist</h2>
+<ol>
+  <li>Colour, text and spacing styles or variables, named by role</li>
+  <li>Auto layout on sections, cards, buttons and forms</li>
+  <li>Components with variants for every state, no detached instances</li>
+  <li>Desktop and mobile frames for every unique template, tablet where needed</li>
+  <li>Content width and stacking rules noted</li>
+  <li>SVG icons and logos, full-resolution photos, crop ratios</li>
+  <li>Font names or files, with web licences</li>
+  <li>Real content, or expected lengths</li>
+  <li>Blog, archive, 404, search and form states designed</li>
+  <li>Interactions documented in a prototype or notes</li>
+  <li>Developer access checked</li>
+  <li>A page and template list, with integrations such as CRM, newsletter or payments</li>
+</ol>
+<p>Agencies sending work to an outside developer will find the commercial side, such as access, scope and sign-off, in the <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a>, and <a href="/blog/white-label-elementor-development/">white-label Elementor development</a> explains how builds under your brand usually work.</p>
 
 <p>Agencies outsourcing builds should also read <a href="/blog/white-label-wordpress-development-agencies/">how white-label WordPress development works</a>.</p>
 
 <p>Who does what in a project? See <a href="/blog/web-designer-vs-web-developer/">web designer vs web developer</a>.</p>
 
-<h2>Quick handoff checklist</h2>
-<ol>
-  <li>Colour and text styles defined</li>
-  <li>Components with variants</li>
-  <li>Desktop and mobile frames</li>
-  <li>SVG logos and icons, fonts and images</li>
-  <li>Interactions documented</li>
-  <li>Page list and scope agreed</li>
-</ol>
+<p>Handing your design to a developer in another country? The guide on how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a> explains how an outsourced project usually runs, from what to send to the final checks.</p>
 
-<p>With a clean handoff, a pixel-accurate build is fast and predictable. See how <a href="/figma-to-wordpress/">Figma to WordPress conversion</a> works, including white-label builds for agencies.</p>
+<h2>FAQs</h2>
+<h3>What should a designer send a WordPress developer?</h3>
+<p>Access to the Figma file with final frames clearly marked, the design system as styles or variables, components with states, desktop and mobile frames, exported or exportable assets, fonts with licences, real content and a list of pages, templates and integrations.</p>
+<h3>Do I need to design mobile and tablet versions?</h3>
+<p>Mobile frames for the homepage and each unique template are strongly recommended. Tablet frames help for complex layouts. Without them, the developer has to propose responsive layouts, which adds an approval step.</p>
+<h3>Can a Figma file be converted to WordPress automatically?</h3>
+<p>Export plugins exist, but they tend to produce deeply nested, fixed-size layouts that are heavy, hard to edit and awkward on mobile. A hand build from your styles and components is lighter and easier for the client to maintain.</p>
+<h3>Do I have to use Figma variables?</h3>
+<p>No. Well-named colour and text styles work just as well for a WordPress build. Variables help when you need modes, such as light and dark themes, or want spacing tokens in one place.</p>
+<h3>How close will the WordPress site be to my design?</h3>
+<p>Very close, if the file is well prepared and each page is compared side by side with the frames at every breakpoint. Small differences can come from how browsers render fonts and from real content being longer or shorter than the design.</p>
+
+<p>Got a Figma, XD or PSD file ready to build? Share the link for a free review: you'll get a list of any gaps, a fixed quote and a timeline, and white-label delivery is available for agencies through <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>. See <a href="/figma-to-wordpress/">Figma to WordPress conversion</a> for the full process.</p>
 `,
   },
   {
@@ -4787,63 +4972,153 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
   },
   {
     slug: 'image-optimization-wordpress',
-    seoTitle: 'Image Optimization for WordPress: Faster Pages',
-    title: 'Image Optimization for WordPress: Make Your Pages Load Faster',
-    description: 'Image optimization for WordPress: resize, compress and serve WebP images, use lazy loading correctly and write alt text that helps SEO, for faster pages.',
+    seoTitle: 'WordPress Image Optimization: Sizes, WebP and Lazy Loading',
+    title: 'Image Optimization for WordPress: Sizes, Formats, Compression and Lazy Loading, Step by Step',
+    description: 'WordPress image optimization step by step: resize, choose WebP or AVIF, compress, serve srcset sizes, prioritise the LCP image and lazy-load the rest.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'woocommerce-developer', 'website-redesign'],
     body: `
-<p>Images usually make up most of a web page's size. A single photo straight from a phone can be several megabytes, often more than the entire rest of the page. Optimizing images is the quickest, cheapest way to speed up most WordPress sites.</p>
+<p>To optimize images in WordPress, resize each image to the largest size it is actually displayed at, convert photos to WebP (or AVIF), compress them with one optimization plugin, and let WordPress serve smaller versions to phones through <code>srcset</code>. Then load the main image at the top of the page immediately with <code>fetchpriority="high"</code>, lazy-load everything below it, and give every image a width and height so the layout doesn't jump.</p>
+<p>Images are usually the heaviest part of a WordPress page, and a single photo straight from a phone can outweigh everything else on it. That is why image compression, resizing and WebP conversion are part of my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> service. This guide is the full workflow, in the order that makes the biggest difference.</p>
 
-<p>Taking your own photos? See <a href="/blog/prepare-photos-for-website/">how to prepare photos for your website</a>.</p>
-
-<h2>1. Resize before uploading</h2>
-<p>If an image displays at 1200 pixels wide, there's no need to upload a 4000-pixel original. Resize photos to roughly the largest size they'll be shown at (hero images around 1600–2000 px wide, content images around 1200 px).</p>
-
-<p>Resizing first also prevents a common upload problem: very large photos can make WordPress fail with a vague message, covered in <a href="/blog/wordpress-http-error-image-upload-fix/">fixing the HTTP error when uploading images</a>.</p>
-
-<h2>2. Compress</h2>
-<p>Compression reduces file size with little or no visible quality loss. Image optimization plugins can compress new uploads automatically and bulk-compress existing images. For photos, moderate compression is usually invisible to visitors.</p>
-
-<p>Not sure which compression tool to use? See <a href="/blog/image-compression-plugins-compared/">WordPress image compression plugins compared</a>.</p>
-
-<h2>3. Use modern formats</h2>
+<h2>Why images matter so much for speed</h2>
+<p>Image weight affects three things visitors and Google both notice:</p>
 <ul>
-  <li><strong>WebP</strong> (and AVIF) files are much smaller than JPEG or PNG at similar quality, and are supported by modern browsers</li>
-  <li><strong>SVG</strong> for logos and icons: tiny and sharp at any size</li>
-  <li><strong>PNG</strong> only when you need transparency and SVG isn't suitable</li>
+  <li><strong>Largest Contentful Paint (LCP):</strong> on most pages the largest element is a hero image or banner, so a heavy or late-loading image directly delays the moment the page looks ready.</li>
+  <li><strong>Mobile data and slower phones:</strong> a 3 MB homepage that feels fine on office Wi-Fi is a real wait on a congested 4G connection, and a real cost to anyone on a limited data pack. <a href="/blog/website-speed-indian-mobile-networks/">Website speed on Indian mobile networks</a> covers testing in those conditions.</li>
+  <li><strong>Layout shift (CLS):</strong> images without reserved space push text down as they arrive.</li>
 </ul>
 
-<h2>4. Lazy load, but not the hero image</h2>
-<p>Lazy loading delays images until they're about to scroll into view, which speeds up initial loading. But the main image at the top of the page should load immediately. Lazy-loading it delays your Largest Contentful Paint. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+<h2>Image optimization at a glance</h2>
+<table>
+  <thead><tr><th>Step</th><th>What to do</th><th>Tools</th></tr></thead>
+  <tbody>
+    <tr><td>Resize</td><td>Match the largest size the image is shown at</td><td>Any image editor, Squoosh, or your phone's export settings</td></tr>
+    <tr><td>Format</td><td>WebP or AVIF for photos, SVG for logos and icons</td><td>Converter for Media, ShortPixel, Imagify, EWWW</td></tr>
+    <tr><td>Compress</td><td>Lossy for photos, checked at full size</td><td>One optimization plugin, not two</td></tr>
+    <tr><td>Responsive sizes</td><td>Let browsers pick a smaller file on phones</td><td>WordPress <code>srcset</code>, theme and builder settings</td></tr>
+    <tr><td>LCP image</td><td>Load first, never lazy</td><td><code>fetchpriority="high"</code>, preload for CSS backgrounds</td></tr>
+    <tr><td>Below the fold</td><td>Lazy-load</td><td>Native <code>loading="lazy"</code></td></tr>
+    <tr><td>Dimensions</td><td>Width and height on every image</td><td>Theme templates, builder settings</td></tr>
+    <tr><td>Delivery</td><td>Optional image CDN for busy or image-heavy sites</td><td>CDN image services, caching plugin features</td></tr>
+  </tbody>
+</table>
 
-<p>Lazy loading applies to videos and embeds too; see <a href="/blog/lazy-loading-explained/">lazy loading explained</a> for what to lazy-load and what to leave alone.</p>
+<h2>Step 1: Resize before you upload</h2>
+<p>If an image never displays wider than 1200 pixels, uploading a 4000-pixel original wastes storage, slows backups and gives every later step more work. Resize to roughly the largest size the image will be shown at, allowing a little extra for sharp high-density screens:</p>
+<table>
+  <thead><tr><th>Image role</th><th>Sensible upload width</th></tr></thead>
+  <tbody>
+    <tr><td>Full-width hero or banner</td><td>About 1600 to 2000 px</td></tr>
+    <tr><td>Image inside the content column</td><td>About 1200 px</td></tr>
+    <tr><td>Cards, team photos, blog thumbnails</td><td>About 600 to 800 px</td></tr>
+    <tr><td>WooCommerce product images</td><td>Square, about 1000 to 1200 px, all the same ratio</td></tr>
+    <tr><td>Logos and icons</td><td>SVG where possible</td></tr>
+  </tbody>
+</table>
+<p>WordPress scales down very large uploads by default (anything over 2560 pixels) and keeps the original on the server, but it is better not to rely on that. Huge uploads can also fail on cheaper hosting with a vague "HTTP error".</p>
 
-<h2>5. Set image dimensions</h2>
-<p>Images should have width and height set so the browser reserves space for them. This prevents layout shifts (CLS) where text jumps as images load.</p>
+<h2>Step 2: Choose the right format</h2>
+<table>
+  <thead><tr><th>Format</th><th>Use it for</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>WebP</td><td>Photos and most graphics</td><td>Usually much smaller than JPEG or PNG at similar quality, supported by all current major browsers</td></tr>
+    <tr><td>AVIF</td><td>Photos where you want the smallest files</td><td>Often smaller than WebP but slower to create; check your plugin and host support it</td></tr>
+    <tr><td>JPEG</td><td>A fallback for photos</td><td>Fine if compressed; WebP or AVIF versions are better</td></tr>
+    <tr><td>PNG</td><td>Screenshots or graphics needing exact pixels or transparency</td><td>Often very large for photos; lossless WebP is usually smaller</td></tr>
+    <tr><td>SVG</td><td>Logos, icons, simple illustrations</td><td>Tiny and sharp at any size; upload only from trusted sources</td></tr>
+    <tr><td>GIF</td><td>Avoid for animation</td><td>A short MP4 or WebM video is far smaller</td></tr>
+  </tbody>
+</table>
+<p>Recent WordPress versions accept WebP uploads, and AVIF where the server supports it. To convert an existing library, a plugin such as Converter for Media, ShortPixel, Imagify or EWWW Image Optimizer creates WebP or AVIF copies and serves them to browsers that support them. Feature sets and free limits change, so check each plugin's current plans.</p>
 
-<p>Missing dimensions are only one cause of jumping pages; fonts, ads, banners and sticky headers can shift content too. See <a href="/blog/fix-cls-layout-shift/">how to fix Cumulative Layout Shift</a>.</p>
+<h2>Step 3: Compress, with one tool</h2>
+<p>Lossy compression removes detail most people never notice and gives much bigger savings than lossless, so it is usually the right choice for photos. Use lossless or a high quality setting for screenshots, images containing text, and product photos where fine detail sells the product. Before bulk-processing the whole library, compare a few faces, product shots and text-heavy images at full size.</p>
+<p>The most important rule is to run one image optimization tool. Two plugins compressing the same files, or a plugin and a CDN both converting formats, wastes credits and causes odd, hard-to-trace results. <a href="/blog/image-compression-plugins-compared/">WordPress image compression plugins compared</a> covers ShortPixel, Imagify, EWWW and Smush in detail, including how each delivers WebP.</p>
 
-<h2>6. Serve responsive sizes</h2>
-<p>WordPress automatically creates multiple sizes of each image and lets browsers choose the right one for the screen. Make sure your theme and builder use this properly, so phones don't download desktop-sized images.</p>
+<h2>Step 4: Serve responsive sizes with srcset</h2>
+<p>Every upload is saved in several sizes, and for images added through the editor WordPress outputs <code>srcset</code> and <code>sizes</code> attributes so a phone can download a 768-pixel version instead of the full 1600-pixel one. That only works when the theme or page builder uses those attributes. Common ways it breaks:</p>
+<ul>
+  <li>Images set as CSS backgrounds in a page builder, which load one size for every screen. Many builders let you set a smaller background image for mobile.</li>
+  <li>Theme templates that output the "full" size image directly.</li>
+  <li>Sliders and galleries that load every slide at full size straight away.</li>
+</ul>
+<p>To check, right-click an image on your phone-sized browser window, choose Inspect, and look for <code>srcset</code> in the image tag. In the Network panel, filter by "Img" and sort by size to see what actually downloads.</p>
 
-<h2>7. Write useful alt text</h2>
-<p>Alt text describes the image for screen readers and search engines. Describe what's shown, naturally: "Solar panels installed on a factory rooftop" beats "IMG_2041" or keyword stuffing. Decorative images can have empty alt text.</p>
+<h2>Step 5: Treat the LCP image differently</h2>
+<p>The main image at the top of the page should load as early as possible. That means no lazy loading, a hint that it matters most, and dimensions set. In HTML terms, a well-handled hero image looks like this:</p>
+<pre><code>&lt;img src="/wp-content/uploads/hero-1600.webp"
+     srcset="/wp-content/uploads/hero-800.webp 800w,
+             /wp-content/uploads/hero-1200.webp 1200w,
+             /wp-content/uploads/hero-1600.webp 1600w"
+     sizes="100vw"
+     width="1600" height="900"
+     fetchpriority="high"
+     alt="Rooftop solar panels on a factory in Pune"&gt;</code></pre>
+<p>Recent WordPress versions try to add <code>fetchpriority="high"</code> to the image they think is the LCP element and skip lazy loading for it, but page builders, sliders and optimization plugins can override that. If the hero is a CSS background, the browser discovers it late, so a preload hint in the page head helps:</p>
+<pre><code>&lt;link rel="preload" as="image" href="/wp-content/uploads/hero-1600.webp" fetchpriority="high"&gt;</code></pre>
+<p>Better still, use a real image element for the hero where your theme allows it. <a href="/blog/fix-lcp-largest-contentful-paint/">How to fix slow LCP on WordPress</a> shows how to identify the LCP element and which part of its loading is slow.</p>
 
-<h2>8. Use descriptive file names</h2>
-<p><code>stainless-steel-water-tank.webp</code> tells search engines more than <code>DSC00123.jpg</code>.</p>
+<h2>Step 6: Lazy-load everything below the fold</h2>
+<p>WordPress adds native <code>loading="lazy"</code> to content images by default, so images further down the page only load as the visitor scrolls towards them. You rarely need a separate lazy-loading plugin, and adding one on top of the native feature can lead to images that never appear or that load twice. Galleries, logo strips, embedded maps and YouTube videos lower on the page benefit most. <a href="/blog/lazy-loading-explained/">Lazy loading explained</a> covers videos, iframes and the common mistakes.</p>
 
-<p>Alt text and file names are only part of getting your photos found in search; see the <a href="/blog/image-seo-guide/">image SEO guide</a> for Google Images and Google Lens.</p>
+<h2>Step 7: Set width and height on every image</h2>
+<p>When an image has width and height attributes (or a CSS aspect ratio), the browser reserves the space before the file arrives, so text doesn't jump as images load. WordPress adds dimensions to images inserted through the editor; custom theme code, logos and builder widgets are where they go missing. <a href="/blog/fix-cls-layout-shift/">How to fix Cumulative Layout Shift</a> covers the other causes of jumping pages.</p>
+
+<h2>Step 8: Consider an image CDN</h2>
+<p>An image CDN resizes, compresses and converts images on the fly and serves them from servers near each visitor. It suits busy stores, image-heavy portfolios and sites with visitors in several countries, and it can replace a compression plugin rather than sit alongside one. For a small brochure site on decent hosting it is usually unnecessary. See <a href="/blog/what-is-a-cdn/">what a CDN is and when you need one</a>.</p>
+
+<h2>Cleaning up an existing media library</h2>
+<ol>
+  <li><strong>Take a full backup,</strong> including the uploads folder.</li>
+  <li><strong>Find the heaviest images.</strong> Run your key pages through PageSpeed Insights. Depending on the Lighthouse version, image issues appear as separate audits such as "Properly size images" and "Serve images in next-gen formats", or grouped under "Improve image delivery". The DevTools Network panel, sorted by size, shows the worst offenders.</li>
+  <li><strong>Fix the source of oversized uploads,</strong> such as a staff member uploading photos straight from a camera, before bulk-processing.</li>
+  <li><strong>Bulk-optimize with one plugin,</strong> keeping backups of the originals so you can re-compress later.</li>
+  <li><strong>Check what bulk tools miss:</strong> CSS background images, slider images, images inside theme folders and logos.</li>
+  <li><strong>Retest the same pages</strong> on mobile, logged out, with caches cleared.</li>
+</ol>
+
+<h2>A simple image weight budget</h2>
+<p>These are rules of thumb rather than standards, but they make it easy to spot a problem:</p>
+<table>
+  <thead><tr><th>Image</th><th>Aim for roughly</th></tr></thead>
+  <tbody>
+    <tr><td>Hero or banner image (mobile version)</td><td>Under 150 to 200 KB</td></tr>
+    <tr><td>Content images</td><td>Under 100 KB each</td></tr>
+    <tr><td>Thumbnails and cards</td><td>Under 30 to 50 KB each</td></tr>
+    <tr><td>All images on a typical service page</td><td>Well under 1 MB in total</td></tr>
+  </tbody>
+</table>
 
 <h2>Special cases</h2>
 <ul>
-  <li><strong>Online stores:</strong> hundreds of product photos add up. Consistent sizes and compression keep category pages fast.</li>
-  <li><strong>Galleries:</strong> use thumbnails in grids and load full-size images only when opened</li>
-  <li><strong>Sliders and background videos:</strong> heavy and often ignored. Consider a single strong image instead.</li>
+  <li><strong>WooCommerce stores:</strong> hundreds of product photos at one consistent ratio keep category pages tidy and light, and gallery zoom images should load only when opened. See <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</li>
+  <li><strong>Elementor and other builders:</strong> background images, hidden "desktop only" sections that still download on phones, and image carousels deserve their own check.</li>
+  <li><strong>Sliders:</strong> one strong static image is usually faster and works just as well. If you keep a slider, only the first slide should load straight away.</li>
+  <li><strong>Image SEO:</strong> descriptive file names and useful alt text help images appear in Google Images and Lens; see the <a href="/blog/image-seo-guide/">image SEO guide</a>.</li>
 </ul>
 
-<p>Images are usually the first thing tackled in a <a href="/wordpress-speed-optimization/">speed optimization</a> project, often with dramatic results. For other causes of slowness, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a>.</p>
+<p>Taking your own photos? See <a href="/blog/prepare-photos-for-website/">how to prepare photos for your website</a>.</p>
+
+<p>Resizing first also prevents a common upload problem: very large photos can make WordPress fail with a vague message, covered in <a href="/blog/wordpress-http-error-image-upload-fix/">fixing the HTTP error when uploading images</a>.</p>
+
+<h2>FAQs</h2>
+<h3>What is the best image size for WordPress?</h3>
+<p>Upload images at roughly the largest width they are displayed at: about 1600 to 2000 pixels for full-width banners, about 1200 pixels for images in the content, and smaller for cards and thumbnails. WordPress creates the smaller sizes for phones automatically.</p>
+<h3>Should I use WebP or AVIF?</h3>
+<p>WebP is the safe default: widely supported and much smaller than JPEG. AVIF can be smaller again but takes longer to create and depends on your host and plugin. Many optimization plugins create both and serve whichever the browser supports.</p>
+<h3>Does WordPress compress images automatically?</h3>
+<p>Partly. It creates resized copies with moderate compression and scales down very large uploads, but it doesn't compress aggressively, convert existing images to WebP or bulk-optimize an old media library. That is what an optimization plugin or image CDN is for.</p>
+<h3>Which is the best image optimization plugin for WordPress?</h3>
+<p>There isn't one best plugin for every site. ShortPixel and Imagify compress in the cloud, EWWW can compress on your own server, and Converter for Media focuses on WebP and AVIF conversion. Pick one that suits your host and library size, and don't run two at once.</p>
+<h3>Will image optimization reduce quality?</h3>
+<p>Lossy compression discards some detail, but at sensible settings most visitors can't see the difference. Check a few product photos, faces and images with text at full size before bulk-processing, and keep backups of the originals.</p>
+<h3>Does image optimisation help SEO?</h3>
+<p>Indirectly. Lighter images improve loading speed and Core Web Vitals, which are part of Google's page experience signals, and descriptive file names and alt text help images appear in image search.</p>
+
+<p>If your pages are still heavy after these steps, the cause may be the theme, plugins, scripts or hosting rather than images alone. I find the real bottleneck, fix it safely and share a before-and-after PageSpeed Insights report; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
   {
@@ -8771,64 +9046,123 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-speed-indian-mobile-networks',
-    seoTitle: 'Website Speed on Indian Mobile Networks',
-    title: 'Website Speed on Indian Mobile Networks: Building for Real-World Conditions',
-    description: 'Why website speed matters to Indian mobile users on budget phones and varying networks, and fixes for page weight, images, fonts, scripts and hosting.',
+    seoTitle: 'Website Speed on Indian Mobile Networks: Test on Real 4G',
+    title: 'Website Speed on Indian Mobile Networks: How to Test and Build for Real 4G, Budget Phones and Data Packs',
+    description: 'Website speed on Indian mobile networks: why sites crawl on 4G, how to test with throttling and budget Android phones, page weight budgets and what to fix.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'website-redesign', 'woocommerce-developer'],
     body: `
-<p>Many of your visitors browse on mobile phones, often mid-range devices, on connections that vary from fast 4G/5G in cities to patchy coverage while travelling or in smaller towns. A site that feels instant on office Wi-Fi can crawl in real conditions. Designing for those conditions wins customers.</p>
+<p>A website that feels instant on office Wi-Fi can take many seconds to become usable on a budget Android phone over a busy 4G connection, which is how a large share of Indian visitors arrive. To build for those conditions, test with network and CPU throttling and on a real mid-range phone, keep total page weight and JavaScript low, host the site close to your visitors, and make sure the actions that matter (calling, WhatsApp, forms and checkout) work even when the signal drops.</p>
+<p>This is the testing and budgeting side of speed work for Indian audiences. If your site is already slow and you want the causes found and fixed for you, see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>, which includes a before-and-after PageSpeed Insights report.</p>
 
-<h2>Why it matters</h2>
+<h2>What real conditions look like for Indian visitors</h2>
+<p>Jio, Airtel and Vi cover most cities with 4G, and 5G is spreading, but the experience on a given phone varies a lot more than a speed-test app suggests:</p>
 <ul>
-  <li>Visitors abandon slow pages, especially when they're comparing options</li>
-  <li>Heavy pages cost users mobile data</li>
-  <li>Budget phones take longer to process JavaScript</li>
-  <li>Google evaluates page experience using real-user data (Core Web Vitals)</li>
+  <li><strong>Speed changes through the day.</strong> The same connection can be quick at 7 am and congested in the evening, in crowded markets, at railway stations or inside large buildings.</li>
+  <li><strong>Coverage drops while moving.</strong> Customers browse in autos, trains and lifts, and in smaller towns between cities.</li>
+  <li><strong>Phones are often budget or mid-range.</strong> A slower processor and limited memory take far longer to run JavaScript than a flagship phone or a laptop, whatever the network.</li>
+  <li><strong>Data is metered.</strong> Many prepaid plans come with a daily data limit, so a heavy page has a cost to the visitor, not just a delay.</li>
+  <li><strong>Phones switch apps mid-task.</strong> UPI payments and WhatsApp hand-offs take people out of the browser and back again, so pages need to survive being interrupted.</li>
+</ul>
+<p>A faster network helps, but it doesn't make a budget phone's processor any quicker, which is why heavy JavaScript stays a problem even on 5G.</p>
+
+<h2>Why latency matters as much as bandwidth</h2>
+<p>Bandwidth is how much data arrives per second; latency is how long each round trip to the server takes. A page that needs dozens of files from several different servers pays the latency cost over and over, and on a congested mobile network those round trips are much slower than on fibre.</p>
+<table>
+  <thead><tr><th>What adds delay</th><th>Why it hurts on mobile</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>Server far from your visitors</td><td>Every request travels further</td><td>Hosting in or near India for Indian audiences, plus a CDN</td></tr>
+    <tr><td>Slow server response</td><td>Nothing can start until the HTML arrives</td><td>Page caching, a lighter theme, better hosting</td></tr>
+    <tr><td>Many third-party domains</td><td>Each new domain needs its own connection</td><td>Remove or delay scripts nobody uses</td></tr>
+    <tr><td>Large JavaScript bundles</td><td>Slow to download, slower to run on budget phones</td><td>Fewer plugins and add-ons, delay non-essential scripts</td></tr>
+    <tr><td>Heavy images and fonts</td><td>Compete for limited bandwidth with what matters</td><td>Resize, compress, use WebP, limit font files</td></tr>
+  </tbody>
+</table>
+<p>If there is a long pause before anything appears at all, start with the server; see <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time</a>.</p>
+
+<h2>How to test like your customers</h2>
+<ol>
+  <li><strong>Check field data first.</strong> In PageSpeed Insights, look at the mobile tab's real-user section, which shows how actual Chrome visitors experienced the page over the last 28 days, if your site has enough traffic. <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> covers what the numbers mean.</li>
+  <li><strong>Read the lab test with its settings in mind.</strong> The PageSpeed mobile lab test simulates a mid-range phone on a slow 4G connection. At the time of writing, Lighthouse's default mobile settings are roughly 1.6 Mbps download, 150 ms of latency and a 4x CPU slowdown.</li>
+  <li><strong>Throttle Chrome DevTools.</strong> Open DevTools, choose the Network panel and pick a preset such as "Slow 4G" (older versions call it "Fast 3G"). In the Performance panel, add CPU throttling as well, because network throttling alone hides how slowly a budget phone runs scripts. Disable the cache and reload.</li>
+  <li><strong>Use a real phone.</strong> An ordinary mid-range or older Android phone, on mobile data rather than Wi-Fi, in a private tab. Note when the main heading appears, when you can tap the menu, and whether anything jumps.</li>
+  <li><strong>Test from India.</strong> If you use WebPageTest or GTmetrix, choose a test location in or near India where your plan offers one, and keep it the same for every comparison.</li>
+  <li><strong>Watch Search Console.</strong> The Core Web Vitals report groups your pages by mobile and desktop over time.</li>
+</ol>
+<p>Developers can run a harsher test from the command line by raising the CPU slowdown:</p>
+<pre><code>npm install -g lighthouse
+lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</code></pre>
+<p><a href="/blog/website-speed-test-tools-explained/">Website speed test tools explained</a> covers how to read each report and why scores move between runs.</p>
+
+<h2>Set a page weight budget</h2>
+<p>A budget turns "make it faster" into something you can check. These are sensible starting points for a typical business site on mobile, not official standards:</p>
+<table>
+  <thead><tr><th>Resource</th><th>Starting budget per page</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Total page weight</td><td>Around 1 to 1.5 MB or less</td><td>Lower is better for service and landing pages</td></tr>
+    <tr><td>Images</td><td>Well under 1 MB in total</td><td>The hero image is the one to get right</td></tr>
+    <tr><td>JavaScript</td><td>As little as possible, a few hundred KB compressed at most</td><td>Page builders, sliders and chat widgets add up quickly</td></tr>
+    <tr><td>Fonts</td><td>Two to four font files</td><td>Hindi and Devanagari fonts are larger, so subset or limit weights</td></tr>
+    <tr><td>Third-party domains</td><td>A handful</td><td>Analytics, one chat tool, maps only where needed</td></tr>
+  </tbody>
+</table>
+<p>To see where a page stands, open DevTools, reload with the Network panel open and read the totals at the bottom: requests, data transferred and resources.</p>
+
+<h2>Where the weight usually comes from on WordPress sites</h2>
+<ul>
+  <li><strong>Images:</strong> photos uploaded straight from a camera, sliders loading every slide and CSS background images with no mobile version. <a href="/blog/image-optimization-wordpress/">Image optimization for WordPress</a> covers the full workflow.</li>
+  <li><strong>Page builder and plugin scripts:</strong> add-on packs, animation libraries and plugins that load their files on every page rather than only where they're used.</li>
+  <li><strong>Third-party tools:</strong> chat widgets, several analytics tags, heatmaps, social feeds and review widgets. <a href="/blog/third-party-scripts-slow-website/">How third-party scripts slow your website</a> shows how to measure and trim them.</li>
+  <li><strong>Fonts:</strong> several families and weights, or full Devanagari font files when only a few pages use Hindi; see <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on your website</a>.</li>
+  <li><strong>Video:</strong> autoplaying background videos and YouTube embeds that load the full player before anyone taps play.</li>
 </ul>
 
-<h2>Test like your customers</h2>
+<h2>Serve the site from close by</h2>
 <ul>
-  <li>Use PageSpeed Insights, which simulates mobile devices and slower networks</li>
-  <li>Try your site on an older phone with mobile data</li>
-  <li>Check Search Console's Core Web Vitals report for real-user data</li>
+  <li><strong>Hosting location:</strong> for mainly Indian visitors, choose a host with servers in India, such as a Mumbai data centre, or as close as possible.</li>
+  <li><strong>Page caching:</strong> visitors should receive a ready-made page rather than waiting for WordPress to build it each time.</li>
+  <li><strong>A CDN:</strong> useful when visitors are spread across regions or countries, as most large CDNs have edge locations in several Indian cities; see <a href="/blog/what-is-a-cdn/">what a CDN is and when you need one</a>.</li>
+  <li><strong>Modern protocols and compression:</strong> HTTP/2 or HTTP/3 and Brotli or gzip compression, which most decent hosts and CDNs enable by default.</li>
 </ul>
 
-<p>If your tests show a site that is quick on desktop but slow on phones, see <a href="/blog/wordpress-site-slow-on-mobile-fix/">why a WordPress site is slow on mobile and how to fix it</a>.</p>
-
-<h2>Reduce page weight</h2>
+<h2>Make key actions work on a weak connection</h2>
+<p>Speed isn't only about the first load. On a patchy connection, the things that bring you business need to work reliably:</p>
 <ul>
-  <li><strong>Images:</strong> the biggest win. Resize, compress and use WebP. See <a href="/blog/image-optimization-wordpress/">image optimization</a>.</li>
-  <li><strong>Video:</strong> avoid auto-playing background videos; use a poster image and load on tap</li>
-  <li><strong>Fonts:</strong> limit to one or two families and only needed weights</li>
-  <li><strong>Sliders and animations:</strong> remove or simplify</li>
+  <li><strong>Tap-to-call and WhatsApp links</strong> should be plain links that work even before every script has loaded.</li>
+  <li><strong>Forms</strong> should be short, show a clear success message on screen and not depend on several heavy scripts to submit.</li>
+  <li><strong>Popups</strong> shouldn't cover the content while the page is still loading.</li>
+  <li><strong>Checkout</strong> should stay light, and payment webhooks should be set up so an order paid by UPI is still marked as paid if the customer's connection drops on the way back from their UPI app.</li>
 </ul>
+<p>If the site is fast on desktop but still slow on phones after all this, <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress site slow on mobile</a> covers the mobile-only causes, such as hidden builder sections and mobile menus.</p>
 
-<h2>Reduce JavaScript</h2>
-<ul>
-  <li>Remove unused plugins and heavy widgets</li>
-  <li>Delay chat widgets, trackers and embeds until after the page loads</li>
-  <li>Keep page builder layouts lean. See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</li>
-</ul>
+<h2>A quick checklist</h2>
+<ol>
+  <li>Test key pages on mobile with Slow 4G and CPU throttling, and on a real budget phone.</li>
+  <li>Check total page weight and JavaScript against your budget.</li>
+  <li>Fix the hero image first, then remove or delay unused scripts.</li>
+  <li>Limit fonts and replace autoplaying video with a tap-to-play image.</li>
+  <li>Confirm hosting location, page caching and compression.</li>
+  <li>Test calls, WhatsApp, forms and checkout on mobile data.</li>
+  <li>Re-check after adding plugins, campaigns or new sections.</li>
+</ol>
 
 <p>Heavy JavaScript mostly shows up as slow taps and clicks, which Google measures as INP; see <a href="/blog/fix-inp-interaction-to-next-paint/">how to improve Interaction to Next Paint</a>.</p>
 
-<h2>Serve it fast</h2>
-<ul>
-  <li>Hosting with servers in or near India (for Indian audiences)</li>
-  <li>Page caching and a CDN for static files</li>
-  <li>Modern PHP and a lightweight theme</li>
-</ul>
+<h2>FAQs</h2>
+<h3>Why is my website slow on mobile data but fast on Wi-Fi?</h3>
+<p>Mobile connections usually have higher and more variable latency, so pages that need many files from several servers slow down sharply. Budget phones also run JavaScript more slowly than laptops. Throttled testing in Chrome shows the difference before your customers notice it.</p>
+<h3>How do I test my website on a slow 4G connection?</h3>
+<p>In Chrome DevTools, choose a network preset such as Slow 4G and add CPU throttling in the Performance panel, then reload with the cache disabled. Also try an ordinary Android phone on mobile data in a private tab.</p>
+<h3>Should my website's hosting be in India?</h3>
+<p>If most of your visitors are in India, hosting in India or nearby reduces the delay on every request. If your visitors are spread across countries, good hosting plus a CDN matters more than the server's exact location.</p>
+<h3>Does 5G mean page speed matters less?</h3>
+<p>No. Many visitors still connect over 4G, indoors or in areas without 5G, and a faster network doesn't speed up a budget phone's processor. Heavy JavaScript and slow server response hurt on any network.</p>
+<h3>What is a good page size for mobile visitors?</h3>
+<p>There's no official figure, but keeping a typical business page to around 1 to 1.5 MB or less, with as little JavaScript as possible, is a sensible starting budget. Landing pages for ads should be lighter still.</p>
 
-<h2>Design for mobile first</h2>
-<ul>
-  <li>Put the headline, key message and call to action at the top</li>
-  <li>Large tap targets and readable text</li>
-  <li>Tap-to-call and WhatsApp that work instantly</li>
-</ul>
-
-<p>Speed isn't a one-time project. Re-check after adding plugins, content or campaigns. For a full diagnosis, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> or get <a href="/wordpress-speed-optimization/">speed optimization</a>.</p>
+<p>Want your site checked on throttled 4G and a real phone, with the causes fixed rather than a score chased? I test key pages, find whether hosting, images, plugins or scripts are to blame, and report the before-and-after results; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
   {
@@ -11513,55 +11847,113 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   {
     slug: 'redesign-website-tight-budget',
     seoTitle: 'How to Redesign Your Website on a Tight Budget',
-    title: 'How to Redesign Your Website on a Tight Budget',
-    description: 'Redesign your website on a tight budget: prioritise high-impact pages, phase the redesign, reuse content, pick lean tools and know what not to cut.',
+    title: 'How to Redesign Your Website on a Tight Budget: What to Spend On, What to Phase and What Never to Cut',
+    description: 'Redesign your website on a tight budget: find the pages that bring enquiries, phase the work, adapt a quality theme, reuse content and protect your SEO.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Pricing',
     related: ['website-redesign', 'wordpress-website-development', 'wordpress-speed-optimization'],
     body: `
-<p>You don't always need a full, expensive rebuild. With a clear plan, a limited budget can deliver most of the benefit by focusing on what actually affects enquiries and sales.</p>
+<p>To redesign a website on a tight budget, spend the money on the few pages that bring enquiries, usually the homepage, your top two or three service or product pages and the contact page, and phase everything else. Keep your platform and URLs if they work, adapt a quality lightweight theme instead of a fully custom design, reuse and improve your existing content, and prepare text and photos yourself. Cut decoration, never foundations such as redirects, backups and mobile testing.</p>
+<p>A limited budget can still deliver most of the benefit of a full redesign if it is pointed at the right things. When you send me your site for a <a href="/website-redesign/">website redesign</a>, you get a free review and a fixed quote, and if a smaller refresh would do the job, I'll say so. This guide shows how to plan the work yourself first.</p>
 
-<h2>Start with what matters most</h2>
-<p>Look at analytics and Search Console: which pages get the most traffic and which lead to enquiries? Usually it's the homepage, a few service or product pages, and the contact page. Improve those first.</p>
+<h2>First, check what the budget has to fix</h2>
+<p>Before deciding what to spend, write down what is actually wrong. An hour with the <a href="/blog/diy-website-audit/">DIY website audit</a> is enough to sort problems into three groups:</p>
+<ul>
+  <li><strong>Specific fixes:</strong> slow pages, dated photos, weak buttons, an old phone number. These often need a refresh rather than a redesign; <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a> helps you decide which you need.</li>
+  <li><strong>Structural problems:</strong> the site doesn't work on phones, the menu no longer matches what you sell, or nobody can edit it. These need a redesign of at least the key pages.</li>
+  <li><strong>Wish-list items:</strong> animations, a new blog layout, a booking system. These can usually wait for a later phase.</li>
+</ul>
 
-<h2>High-impact, low-cost improvements</h2>
+<h2>Find the pages that earn their keep</h2>
+<p>Spend where the enquiries come from, not where the design looks most dated. Three quick sources:</p>
 <ol>
-  <li><strong>Mobile usability:</strong> fix layouts, tap targets and readability</li>
-  <li><strong>Speed:</strong> compress images, add caching, remove heavy plugins. See <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a>.</li>
-  <li><strong>Clear headline and calls to action</strong> on key pages</li>
-  <li><strong>WhatsApp and tap-to-call</strong> buttons</li>
-  <li><strong>Trust signals:</strong> testimonials, real photos, client logos</li>
-  <li><strong>Refreshed copy</strong> on your top pages</li>
+  <li><strong>Search Console &gt; Performance &gt; Pages:</strong> sort by clicks over the last twelve months. These pages bring visitors from Google and must survive the redesign.</li>
+  <li><strong>GA4 landing pages:</strong> look for the pages where form submissions, calls or WhatsApp clicks start, if those events are tracked.</li>
+  <li><strong>Your own enquiries:</strong> ask the last ten customers how they found you and which page they looked at.</li>
+</ol>
+<p>For most small business sites, the same handful of pages come up every time. They are your phase one.</p>
+
+<h2>Where a small budget goes furthest</h2>
+<table>
+  <thead><tr><th>Spend on</th><th>Why it matters</th><th>Can usually wait</th></tr></thead>
+  <tbody>
+    <tr><td>Homepage first screen</td><td>A clear headline, proof and call to action decide whether visitors stay</td><td>Animations and video backgrounds</td></tr>
+    <tr><td>Top service or product pages</td><td>Where people decide to enquire, and often where rankings sit</td><td>Pages for minor services</td></tr>
+    <tr><td>Contact paths</td><td>Tap-to-call, WhatsApp and a short form on every key page</td><td>Live chat tools</td></tr>
+    <tr><td>Mobile layout</td><td>Most visitors see the phone version first</td><td>Separate tablet fine-tuning</td></tr>
+    <tr><td>Speed basics</td><td>Compressed images, caching and fewer plugins</td><td>Chasing a perfect score</td></tr>
+    <tr><td>Trust signals</td><td>Real photos, reviews, clients and credentials</td><td>Custom illustrations</td></tr>
+  </tbody>
+</table>
+
+<h2>A phased redesign plan</h2>
+<p>Phasing spreads the cost and gets the most important improvements live sooner:</p>
+<table>
+  <thead><tr><th>Phase</th><th>Scope</th><th>What it achieves</th></tr></thead>
+  <tbody>
+    <tr><td>Phase 1</td><td>New design system (colours, fonts, header, footer), homepage, top service pages, contact page</td><td>The pages most visitors see look and work like a new site</td></tr>
+    <tr><td>Phase 2</td><td>Remaining service pages, about page, case studies or gallery</td><td>The whole site feels consistent</td></tr>
+    <tr><td>Phase 3</td><td>Blog templates, new features such as booking, a store or a calculator</td><td>New ways to win business, once the basics are paying off</td></tr>
+  </tbody>
+</table>
+<p>Because the header, footer and global styles change in phase one, older pages pick up the new look straight away, even before their own redesign. Each phase should still go through a staging site, your approval and redirect checks before it goes live.</p>
+
+<h2>Eight ways to cut cost without cutting quality</h2>
+<ol>
+  <li><strong>Keep the platform and URLs if they work.</strong> A WordPress-to-WordPress redesign that keeps its page addresses avoids most redirect work. Moving platform is sometimes necessary, but it is the most expensive kind of redesign.</li>
+  <li><strong>Adapt a quality lightweight theme.</strong> A well-built theme such as Astra, GeneratePress or Hello Elementor, styled with your brand, costs far less than a fully custom design and can still look distinct.</li>
+  <li><strong>Reduce the number of unique templates.</strong> Ten service pages built from one template cost much less than ten different layouts. The template count drives cost more than the page count.</li>
+  <li><strong>Merge thin pages.</strong> Five strong pages beat fifteen thin ones, and they are cheaper to design and maintain. Redirect each old URL to the page it was merged into.</li>
+  <li><strong>Reuse and edit your existing content.</strong> Most of what you wrote is still true. Update facts, tighten it and add what's missing, rather than starting from a blank page.</li>
+  <li><strong>Supply your own photos and first drafts.</strong> A developer's time is better spent building than waiting for content, and your knowledge of the business can't be bought in.</li>
+  <li><strong>Use what you already pay for.</strong> If you already have hosting, a domain and an Elementor Pro licence in your name, keep them. Avoid adding paid plugins for features you won't use.</li>
+  <li><strong>Brief clearly and give feedback in one go.</strong> A written brief gets an accurate fixed quote, and one decision-maker sending one consolidated list per round keeps rounds short. The <a href="/blog/website-brief-template/">website brief template</a> covers what to send.</li>
 </ol>
 
-<p>Sometimes these improvements are all your site needs; see <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a> to decide.</p>
+<h2>What you can do yourself, and what to pay for</h2>
+<table>
+  <thead><tr><th>Do it yourself</th><th>Pay a developer for</th></tr></thead>
+  <tbody>
+    <tr><td>List what works and what doesn't</td><td>The audit of rankings, links and enquiries</td></tr>
+    <tr><td>Draft or update page text</td><td>Page structure and layout</td></tr>
+    <tr><td>Take and choose photos</td><td>Image compression and responsive sizes</td></tr>
+    <tr><td>Collect reviews and client logos</td><td>Building templates and global styles</td></tr>
+    <tr><td>Test the staging site on your own phone</td><td>Redirects, launch checks and Search Console monitoring</td></tr>
+    <tr><td>Small text edits after launch</td><td>Speed, security and updates, or a maintenance plan</td></tr>
+  </tbody>
+</table>
 
-<h2>Phase the redesign</h2>
+<h2>What never to cut</h2>
 <ul>
-  <li><strong>Phase 1:</strong> new design for homepage, key service pages and contact</li>
-  <li><strong>Phase 2:</strong> remaining pages, blog and extras</li>
-  <li><strong>Phase 3:</strong> new features such as booking, store or calculators</li>
+  <li><strong>301 redirects for every URL that changes.</strong> Skipping them throws away rankings you already have; see <a href="/blog/redesign-website-without-losing-rankings/">how to redesign without losing rankings</a>.</li>
+  <li><strong>A full backup</strong> of the old site before launch, kept until the new one settles.</li>
+  <li><strong>Building on staging,</strong> so the live site keeps working until the new one is approved.</li>
+  <li><strong>Testing on real phones,</strong> including forms, to make sure enquiries actually arrive.</li>
+  <li><strong>Licensed themes and plugins.</strong> Pirated "nulled" copies often carry malware, and a clean-up costs more than the licence.</li>
+  <li><strong>Ownership.</strong> The domain, hosting and administrator login should stay in your name.</li>
 </ul>
-<p>This spreads cost and gets improvements live sooner.</p>
+<p>Low quotes that quietly drop these items are the main risk of shopping on price alone; <a href="/blog/cheap-website-risks/">the real risks of very cheap websites</a> explains what tends to go missing.</p>
 
-<h2>Save money without cutting quality</h2>
-<ul>
-  <li>Use a quality, lightweight theme rather than a fully custom design</li>
-  <li>Reuse and improve existing content instead of starting from scratch</li>
-  <li>Prepare content and photos yourself before the project starts</li>
-  <li>Avoid paid plugins you don't really need</li>
-  <li>Use a clear brief so quotes are accurate; see the <a href="/blog/website-brief-template/">website brief template</a></li>
-</ul>
+<h2>What a budget redesign costs</h2>
+<p>A redesign is priced much like a new build: by the number of unique templates, whether the design is custom or an adapted theme, the features, how much content work is needed and whether the platform changes. For reference, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts a professionally built small business site of five to eight pages at ₹15,000 to ₹40,000, and a larger business or B2B site at ₹35,000 to ₹80,000. A phased redesign spreads that cost over time, and the <a href="/website-cost-calculator/">website cost calculator</a> gives a quick estimate for your own scope.</p>
+<p>If you get several quotes, send everyone the same brief and compare the scope line by line; <a href="/blog/compare-website-quotes/">how to compare website quotes</a> shows what to check.</p>
 
-<h2>Don't cut these corners</h2>
-<ul>
-  <li>301 redirects if URLs change. See <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</li>
-  <li>Backups and security</li>
-  <li>Mobile testing</li>
-  <li>Legitimate, licensed themes and plugins, never pirated ones</li>
-</ul>
+<h2>FAQs</h2>
+<h3>How much does a website redesign cost in India?</h3>
+<p>It depends on the number of templates, custom design or adapted theme, features and content work. As a guide, a professionally built small business WordPress site costs about ₹15,000 to ₹40,000, and redesigns are priced on the same factors. Ask for a fixed quote based on a written brief.</p>
+<h3>Is it cheaper to redesign or build a new website?</h3>
+<p>Keeping the same platform, URLs and much of the content usually makes a redesign cheaper than starting from nothing, because content, structure and redirects are partly done. A redesign that moves platform and rewrites everything costs about the same as a new build.</p>
+<h3>Can a website redesign be done in phases?</h3>
+<p>Yes. Redesign the homepage, top service pages and contact page first, along with the header, footer and global styles, then the remaining pages and new features in later phases. Each phase still needs staging, approval and redirect checks.</p>
+<h3>Can I redesign my website myself to save money?</h3>
+<p>You can do a lot of it: content, photos, reviews and testing. The risky parts for rankings and enquiries are redirects, launch settings, forms and speed, which are worth paying for even on a small budget.</p>
+<h3>Will a budget redesign hurt my Google rankings?</h3>
+<p>Not because it is cheap. Rankings drop when pages that rank are removed or trimmed, URLs change without 301 redirects, or a staging "noindex" setting goes live. Keep those steps in the scope, whatever the budget, and watch Search Console closely for the first few weeks after launch.</p>
+<h3>How do I find an affordable website redesign service?</h3>
+<p>Look for a developer who asks about your goals, reviews your current site before quoting, offers a fixed price with a written scope and suggests phasing. Be wary of quotes with no mention of redirects, backups, ownership or testing.</p>
 
-<p>Get a ballpark with the <a href="/website-cost-calculator/">website cost calculator</a>, or see <a href="/website-redesign/">website redesign services</a>.</p>
+<p>Working with a fixed budget and want it spent where it counts? Send me your website address for a free review: you'll get an honest view on refresh or redesign, a suggested phase one and a fixed quote; see <a href="/website-redesign/">website redesign</a>.</p>
 `,
   },
   {
@@ -18504,70 +18896,133 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'compare-website-quotes',
-    seoTitle: 'How to Compare Website Quotes (Why Prices Vary So Much)',
-    title: 'How to Compare Website Quotes: Why Prices Vary So Much',
-    description: 'Why website quotes range from a few thousand to lakhs, what to check in each (scope, design, content, SEO, support, ownership) and how to compare fairly.',
+    seoTitle: 'How to Compare Website Quotes (and Why Prices Vary So Much)',
+    title: 'How to Compare Website Quotes: Why Prices Vary So Much and How to Choose Fairly',
+    description: 'How to compare website quotes in India: why prices vary, what a good quotation includes, a line-by-line comparison sheet, questions to ask and red flags.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Pricing',
     related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
     body: `
-<p>You ask three developers for a quote and get three wildly different numbers. It's confusing, but there's usually a reason: they're often quoting for very different things. Here's how to compare quotes properly and choose with confidence.</p>
+<p>Website quotes vary so much because each developer is usually pricing a different job: a lightly edited template or a custom design, your text or theirs, ten unique layouts or three, testing and SEO setup or none. To compare them fairly, send everyone the same written brief, put every quote into one comparison sheet line by line, ask the same follow-up questions, and compare the total cost over three years rather than the build price alone.</p>
+<p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, you get a written scope, a fixed price and a timeline, usually within 24 hours of sending your requirements, and the scope lists what is excluded as well as what is included. Whoever you choose, the method below makes any set of quotes comparable.</p>
 
-<h2>Why quotes differ so much</h2>
-<ul>
-  <li><strong>Custom design vs a lightly edited template</strong></li>
-  <li><strong>Who writes content</strong> and who adds it to the site</li>
-  <li><strong>Number of pages and features</strong> included</li>
-  <li><strong>SEO and speed work,</strong> done properly or not at all</li>
-  <li><strong>Experience and process:</strong> planning, testing and project management</li>
-  <li><strong>Support after launch</strong></li>
-  <li><strong>Hidden extras:</strong> hosting, premium plugins and changes charged later</li>
-</ul>
-
-<h2>Give everyone the same brief</h2>
-<p>You can only compare quotes that answer the same question. Send each developer the same written brief; see the <a href="/blog/website-brief-template/">website brief template</a>.</p>
-
-<h2>What to check in every quote</h2>
+<h2>Why website quotes vary so much</h2>
 <table>
-  <thead><tr><th>Item</th><th>Questions to ask</th></tr></thead>
+  <thead><tr><th>Factor</th><th>A lower quote often means</th><th>A higher quote often means</th></tr></thead>
   <tbody>
-    <tr><td>Pages</td><td>How many pages and templates are included?</td></tr>
-    <tr><td>Design</td><td>Custom design, or a theme? How many revision rounds?</td></tr>
-    <tr><td>Content</td><td>Who writes and uploads the text and images?</td></tr>
-    <tr><td>Features</td><td>Forms, WhatsApp, booking, payments, blog, multilingual?</td></tr>
-    <tr><td>Mobile and speed</td><td>Is speed optimisation included? Any target scores?</td></tr>
-    <tr><td>SEO setup</td><td>Titles, descriptions, schema, sitemap, Search Console?</td></tr>
-    <tr><td>Security and backups</td><td>What's set up at launch?</td></tr>
-    <tr><td>Domain, hosting, licences</td><td>Included or separate, and in whose name?</td></tr>
-    <tr><td>Support</td><td>Free fixes after launch? Maintenance options?</td></tr>
-    <tr><td>Timeline</td><td>Realistic launch date and milestones?</td></tr>
+    <tr><td>Design</td><td>A ready-made template with your logo and colours</td><td>Key pages designed for your business, or built from your Figma file</td></tr>
+    <tr><td>Pages and templates</td><td>A fixed small page count, one layout reused</td><td>More unique layouts, such as service, case study and product templates</td></tr>
+    <tr><td>Content</td><td>You supply and upload everything</td><td>Page structure, copy editing and content entry included</td></tr>
+    <tr><td>Features</td><td>A basic contact form</td><td>WhatsApp, booking, payments, a second language or integrations</td></tr>
+    <tr><td>Speed and SEO</td><td>Not mentioned</td><td>Image optimisation, caching, titles, schema, sitemap and Search Console</td></tr>
+    <tr><td>Testing</td><td>A quick look on one screen</td><td>Real phones, forms tested to the inbox, cross-browser checks</td></tr>
+    <tr><td>After launch</td><td>Nothing, or paid by the hour</td><td>Training, a support period and a maintenance option</td></tr>
+    <tr><td>Who does the work</td><td>A junior or a template reseller</td><td>An experienced developer, or an agency team with overheads</td></tr>
+  </tbody>
+</table>
+<p>Neither column is automatically right. A small consultancy may genuinely need only the left-hand column; a manufacturer with a catalogue needs most of the right. The point is to know which one each quote is.</p>
+
+<h2>Step 1: Send everyone the same brief</h2>
+<p>You can only compare quotes that answer the same question. A one-line WhatsApp message such as "need a website, how much?" gets you guesses. A short written brief with your goals, the pages you need, features, two or three sites you like, who will write the content and any deadline gets you prices you can line up. The <a href="/blog/website-brief-template/">website brief template</a> covers everything to include.</p>
+
+<h2>Step 2: Put every quote into one comparison sheet</h2>
+<p>Copy each quote into a spreadsheet with one column per developer and these rows. Anything a quote doesn't mention goes in as "not stated", which becomes a question for step 3.</p>
+<table>
+  <thead><tr><th>Line item</th><th>What to look for</th><th>Red flag</th></tr></thead>
+  <tbody>
+    <tr><td>Pages and templates</td><td>A named page list and the number of unique layouts</td><td>"Up to 10 pages" with nothing named</td></tr>
+    <tr><td>Design approach</td><td>Theme, custom design or your design file, and how many revision rounds</td><td>"Unlimited revisions" with no process</td></tr>
+    <tr><td>Content</td><td>Who writes, edits and uploads text and images</td><td>Silence, which usually means you</td></tr>
+    <tr><td>Features</td><td>Each form, integration and payment option listed</td><td>"All features included"</td></tr>
+    <tr><td>Mobile and speed</td><td>Testing on phones and basic speed work</td><td>Promised PageSpeed score of 100</td></tr>
+    <tr><td>SEO setup</td><td>Titles, descriptions, headings, sitemap, Search Console, redirects if replacing a site</td><td>Guaranteed first-page rankings</td></tr>
+    <tr><td>Security and backups</td><td>What is set up at launch</td><td>Not mentioned</td></tr>
+    <tr><td>Domain, hosting, licences</td><td>Included or separate, renewal prices and whose name</td><td>Registered in the developer's name</td></tr>
+    <tr><td>Timeline</td><td>Milestones tied to your content being ready</td><td>A fixed date with no dependencies</td></tr>
+    <tr><td>Payment terms</td><td>An advance, then milestones or balance before launch</td><td>Full payment upfront for a full build</td></tr>
+    <tr><td>Tax</td><td>Whether GST is included or added</td><td>Unclear totals</td></tr>
+    <tr><td>Handover and support</td><td>Training, logins, backup and a support period</td><td>No mention of what you receive</td></tr>
   </tbody>
 </table>
 
-<h2>Look beyond the price</h2>
+<h2>What a good website quotation includes</h2>
+<p>A professional quotation doesn't need to be long, but it should let you answer every row above without guessing. Look for:</p>
 <ul>
-  <li><strong>Portfolio:</strong> live websites you can test on your phone</li>
-  <li><strong>Reviews and references</strong> from real clients</li>
-  <li><strong>Communication:</strong> did they ask good questions about your business?</li>
-  <li><strong>Clarity:</strong> is the quote specific, or vague?</li>
+  <li>A short summary of your goals, which shows the developer understood the brief</li>
+  <li>The page list and the templates behind it</li>
+  <li>Features and integrations, one per line</li>
+  <li>An exclusions list, such as copywriting, photography, hosting fees and premium licences</li>
+  <li>The design approach and number of revision rounds</li>
+  <li>Who supplies content, and by when</li>
+  <li>A timeline with milestones</li>
+  <li>The price, GST status and payment schedule</li>
+  <li>What you receive at handover and what support after launch covers</li>
+  <li>How changes outside the scope are priced</li>
 </ul>
+<p>A quote sent within minutes with no questions about your business is a warning sign in itself, however attractive the number.</p>
+
+<h2>Step 3: Ask every developer the same follow-up questions</h2>
+<ol>
+  <li>What exactly is excluded from this price?</li>
+  <li>How many unique page layouts does it cover, and what does an extra page cost?</li>
+  <li>Which theme and plugins will you use, and will the licences be in my name?</li>
+  <li>Will the domain, hosting and administrator login be in my name from day one?</li>
+  <li>Who will actually build the site, and who do I talk to during the project?</li>
+  <li>How do you test before launch, and will you check forms reach my inbox?</li>
+  <li>If this replaces an existing site, how will you handle redirects and rankings?</li>
+  <li>What does support after launch include, and for how long?</li>
+  <li>Can I see two or three live sites you built that are similar to mine?</li>
+</ol>
+<p>Ask for the answers in writing, then update the sheet. Quotes often move once the scopes are aligned: the cheapest may rise and the most expensive may drop items you don't need.</p>
+
+<h2>Step 4: Compare the three-year cost, not the build price</h2>
+<p>The build is a one-time cost; the rest repeats. Add these up for each quote over three years:</p>
+<table>
+  <thead><tr><th>Cost</th><th>Typical range in India</th><th>How often</th></tr></thead>
+  <tbody>
+    <tr><td>Domain (.com or .in)</td><td>₹500 to ₹1,200</td><td>Yearly</td></tr>
+    <tr><td>Hosting</td><td>₹2,500 to ₹15,000</td><td>Yearly, often higher on renewal</td></tr>
+    <tr><td>Premium theme or Elementor Pro</td><td>₹0 to ₹6,000</td><td>Yearly, if used</td></tr>
+    <tr><td>Maintenance plan</td><td>₹1,500 to ₹6,000</td><td>Monthly, optional</td></tr>
+    <tr><td>Changes and new pages</td><td>Depends on how changes are priced</td><td>As needed</td></tr>
+  </tbody>
+</table>
+<p>To sanity-check the build prices themselves, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> gives typical freelance ranges in India: ₹5,000 to ₹15,000 for a landing page, ₹15,000 to ₹40,000 for a small business site of five to eight pages, ₹35,000 to ₹80,000 for a larger business or B2B site and ₹30,000 to ₹90,000 or more for a WooCommerce store. A quote far outside the range for your type of site deserves a closer look at its scope.</p>
+<p>A low build price paired with hosting locked in the developer's account at a high renewal rate, or a site you can't edit yourself, often costs more by year three. <a href="/blog/hidden-website-costs/">Hidden website costs</a> lists everything you pay after launch.</p>
+
+<h2>Step 5: Weigh what isn't on the price list</h2>
+<ul>
+  <li><strong>Live work:</strong> open their sites on your own phone on mobile data. Do they load quickly, and do the forms and buttons work?</li>
+  <li><strong>The questions they asked:</strong> good developers ask about your customers and goals before pricing.</li>
+  <li><strong>Clarity:</strong> a specific quote is a sign of a specific process.</li>
+  <li><strong>Who you deal with:</strong> a freelancer means one person to talk to; an agency means a team behind an account manager. <a href="/blog/freelancer-vs-agency-web-developer/">Freelancer vs agency</a> compares the two.</li>
+</ul>
+<p>If one quote is far below the rest, find out what it leaves out; <a href="/blog/cheap-website-risks/">the risks of very cheap websites</a> covers what usually goes missing. And if your budget is fixed, <a href="/blog/redesign-website-tight-budget/">redesigning on a tight budget</a> shows how to reduce scope rather than quality.</p>
+
+<h2>Fixed price, hourly or a monthly fee?</h2>
+<p>Most website builds suit a fixed price for a written scope, which also makes quotes easy to compare. Hourly quotes need an estimate and a cap before they can be compared at all. <a href="/blog/fixed-price-vs-hourly-website-projects/">Fixed price vs hourly</a> explains when each model fits.</p>
+
+<h2>Once you've chosen, put it in writing</h2>
+<p>Turn the winning quote into an agreement covering scope, revisions, timeline, payment milestones, ownership and licences, and support. The <a href="/blog/website-design-contract-checklist/">website contract checklist</a> lists each clause. Tell the developers you didn't choose, too; it keeps the door open if you need them later.</p>
 
 <p>Comparing developers in Pune? See <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>, from checking live sites to who owns the logins.</p>
 
-<h2>Warning signs</h2>
-<ul>
-  <li>Very low prices with vague scope, where extras appear later</li>
-  <li>No mention of ownership, or domain and hosting in their name</li>
-  <li>Guaranteed Google rankings; see <a href="/blog/seo-red-flags-scams/">SEO red flags</a></li>
-  <li>Full payment upfront</li>
-</ul>
+<h2>FAQs</h2>
+<h3>Why are website quotes so different?</h3>
+<p>Because they usually cover different work: template or custom design, who writes the content, how many unique layouts, which features, how much testing and SEO setup, and what support follows launch. Aligning the scope removes most of the gap.</p>
+<h3>How many website quotes should I get?</h3>
+<p>Three is usually enough to see the range without drowning in comparisons, provided each developer receives the same brief and answers the same follow-up questions.</p>
+<h3>Is the cheapest website quote a bad idea?</h3>
+<p>Not automatically. A freelancer with low overheads using a good theme can deliver a solid small site at a modest price. It's a bad idea when the low price comes from missing testing, unlicensed software, no redirects or accounts held in the developer's name.</p>
+<h3>Should a website quote include GST?</h3>
+<p>It should state clearly whether GST is included or added. If the developer is GST-registered, ask for a tax invoice; if you are registered, your CA can tell you whether you can claim the input credit.</p>
+<h3>What should a website quotation include?</h3>
+<p>A page list, the number of unique layouts, features, design approach and revision rounds, who supplies content, exclusions, a timeline with milestones, the price with GST status, payment terms, what you receive at handover and how out-of-scope changes are priced.</p>
+<h3>Can I negotiate a website quote?</h3>
+<p>Negotiate scope rather than rate. Dropping a feature, reducing unique templates, phasing the work or supplying your own content and photos lowers the price without asking anyone to do the same work for less.</p>
 
-<p>Tempted by the lowest quote? See <a href="/blog/cheap-website-risks/">what very cheap websites usually leave out</a> before you decide.</p>
-
-<h2>Think in total cost</h2>
-<p>A cheaper website that doesn't bring enquiries, or needs rebuilding in a year, costs more in the end. Compare the total cost over two or three years, including hosting, maintenance and likely changes. See <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> and try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
-
-<p>Once you choose, agree the details in writing; see the <a href="/blog/website-design-contract-checklist/">contract checklist</a>.</p>
+<p>Want a quote that is easy to compare? Send your requirements and you'll get a written scope with inclusions, exclusions, a fixed price and a timeline after a free review; see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
   },
   {
@@ -19394,68 +19849,117 @@ Screenshot: attached</code></pre>
   },
   {
     slug: 'figma-to-wordpress-approaches',
-    seoTitle: 'Figma to WordPress: Page Builder, Blocks or Custom Theme?',
-    title: 'Figma to WordPress: Page Builder, Block Theme or Custom Theme?',
-    description: 'Figma to WordPress: Elementor, block themes and custom blocks, custom PHP themes or headless, with pros, cons and which approach suits which project.',
+    seoTitle: 'Figma to WordPress: Elementor, Gutenberg, Bricks or Custom?',
+    title: 'Figma to WordPress: Elementor, Block Theme, Bricks or a Custom Theme? How to Choose the Build Approach',
+    description: 'Figma to WordPress build approaches compared: Elementor, block themes, custom themes, Bricks and headless, with the trade-offs and how to choose.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Agencies',
     related: ['figma-to-wordpress', 'elementor-developer', 'wordpress-developer-for-agencies'],
     body: `
-<p>You have a finished Figma design. Now it needs to become a working WordPress website that clients can edit. There are several ways to build it, and the right one depends on budget, who will edit the site and how custom the design is.</p>
+<p>There are four realistic ways to turn a Figma design into WordPress: Elementor (usually with Elementor Pro) for marketing sites that clients want to edit visually; a block theme with custom blocks and patterns for lighter, more structured sites; a custom-coded theme with custom fields for complex or locked-down builds; and developer-focused builders such as Bricks for agencies that want cleaner output. The right choice depends mostly on who will edit the site after launch, how strict your speed targets are, the budget, and who will maintain it later.</p>
+<p>For <a href="/figma-to-wordpress/">Figma to WordPress conversion</a> I build in Elementor Pro for easy editing, or with Gutenberg blocks when a lighter setup suits the project better. This guide compares all the main options honestly, including the ones I don't use, so you can choose for your own project. If you are the designer preparing the file, read <a href="/blog/figma-to-wordpress-designer-guide/">the Figma handoff guide</a> alongside this one.</p>
 
-<h2>Option 1: Page builder (Elementor)</h2>
-<ul>
-  <li><strong>Pros:</strong> fast to build, visual editing for clients, huge ecosystem, easy for other developers to pick up</li>
-  <li><strong>Cons:</strong> heavier pages if not built carefully, some pixel-perfect details take workarounds, editing freedom can let clients break layouts</li>
-  <li><strong>Best for:</strong> marketing sites where clients want to edit layouts themselves</li>
-</ul>
-
-<p>Agencies that design in-house and hand the build to a partner can see how <a href="/blog/white-label-elementor-development/">white-label Elementor development</a> works, from global styles to what clients are allowed to edit.</p>
-
-<h2>Option 2: Block theme and custom blocks (Gutenberg)</h2>
-<ul>
-  <li><strong>Pros:</strong> uses WordPress's native editor, lightweight output, custom blocks can match the design system exactly while limiting what clients can break</li>
-  <li><strong>Cons:</strong> custom blocks need more development time; editing is less free-form than a page builder</li>
-  <li><strong>Best for:</strong> performance-focused sites and long-term projects with a clear design system</li>
-</ul>
-
-<p>More on this approach: <a href="/blog/block-themes-full-site-editing/">block themes explained</a> and <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a>.</p>
-
-<h2>Option 3: Custom classic theme</h2>
-<ul>
-  <li><strong>Pros:</strong> full control, very lean code, precise implementation</li>
-  <li><strong>Cons:</strong> clients edit through fields rather than visually; changes to layouts need a developer</li>
-  <li><strong>Best for:</strong> highly custom designs, complex functionality and teams with developer support</li>
-</ul>
-
-<h2>Option 4: Headless WordPress</h2>
-<p>WordPress manages content while a separate front end (like Next.js) displays it. Powerful, but more complex and costly to build and host. Rarely needed for small business sites; see <a href="/blog/headless-wordpress-small-business/">headless WordPress for small businesses</a>.</p>
-
-<h2>Quick comparison</h2>
+<h2>The approaches at a glance</h2>
 <table>
-  <thead><tr><th></th><th>Page builder</th><th>Blocks</th><th>Custom theme</th></tr></thead>
+  <thead><tr><th></th><th>Elementor</th><th>Block theme</th><th>Custom theme</th><th>Bricks and similar</th></tr></thead>
   <tbody>
-    <tr><td>Build speed</td><td>Fast</td><td>Medium</td><td>Slower</td></tr>
-    <tr><td>Page speed</td><td>Good if careful</td><td>Very good</td><td>Very good</td></tr>
-    <tr><td>Client editing</td><td>Very flexible</td><td>Structured</td><td>Fields and forms</td></tr>
-    <tr><td>Design precision</td><td>High</td><td>Very high</td><td>Very high</td></tr>
+    <tr><td>Client editing</td><td>Visual drag and drop of layout and content</td><td>Block editor with locked patterns and custom blocks</td><td>Structured fields; layout changes need a developer</td><td>Visual, but aimed more at developers than clients</td></tr>
+    <tr><td>Design accuracy</td><td>Close, with global styles and custom CSS where needed</td><td>Close, through theme.json and custom blocks</td><td>Full control</td><td>Close, with class-based styling</td></tr>
+    <tr><td>Page weight</td><td>Heavier, kept lean by careful building</td><td>Light</td><td>Lightest</td><td>Generally light</td></tr>
+    <tr><td>Build time</td><td>Usually quickest</td><td>Moderate</td><td>Longest</td><td>Quick for developers who know it</td></tr>
+    <tr><td>Licences</td><td>Elementor Pro, yearly</td><td>None beyond WordPress</td><td>None beyond WordPress, plus any field plugin</td><td>A builder licence</td></tr>
+    <tr><td>Who can maintain it later</td><td>A very large pool of developers</td><td>Developers comfortable with blocks</td><td>Developers who can read the code</td><td>A smaller pool</td></tr>
+    <tr><td>Best for</td><td>Marketing sites edited often by non-technical teams</td><td>Content sites needing speed and consistent layouts</td><td>Complex sites with strict performance or editorial rules</td><td>Agencies that standardise on one developer-led builder</td></tr>
   </tbody>
 </table>
 
-<h2>Questions to decide</h2>
+<h2>Option 1: Elementor and Elementor Pro</h2>
+<p>Elementor maps well onto a modern Figma file. Auto layout frames become Flexbox containers, colour and text styles become global colours and fonts, and repeated components become saved templates or Theme Builder parts such as headers, footers and blog templates, which need Elementor Pro.</p>
 <ul>
-  <li>Who edits the site after launch, and how much freedom do they need?</li>
-  <li>How important are top Core Web Vitals scores?</li>
-  <li>What's the budget and timeline?</li>
-  <li>Will another developer maintain it later?</li>
+  <li><strong>Pros:</strong> the fastest route from design to working site, visual editing clients understand, and a huge pool of developers who can take over later.</li>
+  <li><strong>Cons:</strong> heavier pages if built carelessly with deep nesting or several add-on packs, and editing freedom lets clients break layouts if global styles aren't used.</li>
+  <li><strong>Best for:</strong> business and marketing sites where the client or agency wants to change pages without a developer.</li>
+</ul>
+<p>Two habits keep Elementor builds healthy: use global styles for every colour and font, and add at most one well-maintained add-on, only when Elementor itself lacks a widget. The Elementor Pro licence should sit in the client's name. <a href="/blog/white-label-elementor-development/">White-label Elementor development</a> covers how agencies hand these builds over.</p>
+
+<h2>Option 2: Block theme with custom blocks and patterns</h2>
+<p>A block theme uses WordPress's own editor. Your design tokens go into theme.json (colours, font sizes, spacing and layout widths), sections become block patterns, and anything the core blocks can't do becomes a custom block. Templates and patterns can be locked so clients edit text and images without moving the layout.</p>
+<ul>
+  <li><strong>Pros:</strong> light output, no page builder dependency or licence, and a layout system that's hard for clients to break.</li>
+  <li><strong>Cons:</strong> custom blocks take more development time, and editing is more structured than drag and drop.</li>
+  <li><strong>Best for:</strong> performance-focused sites, content-heavy sites and long-term projects with a stable design system.</li>
+</ul>
+<p>More on this approach: <a href="/blog/block-themes-full-site-editing/">block themes explained</a> and <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a>. <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a> compares the two editors from the client's side.</p>
+
+<h2>Option 3: Custom classic theme with custom fields</h2>
+<p>A developer writes PHP templates for each page type and gives editors structured fields, often with a custom fields plugin and flexible content layouts. The front end contains only the code your design needs.</p>
+<ul>
+  <li><strong>Pros:</strong> full control over markup and performance, precise implementation and tight editorial rules.</li>
+  <li><strong>Cons:</strong> clients fill in fields rather than see the page as they edit, new layouts need a developer, and an undocumented theme ties you to whoever wrote it.</li>
+  <li><strong>Best for:</strong> complex functionality, strict performance budgets and teams with ongoing developer support.</li>
+</ul>
+<p>See <a href="/blog/custom-wordpress-theme-development/">custom WordPress theme development</a> for when the extra build time pays off.</p>
+
+<h2>Option 4: Bricks and similar developer-focused builders</h2>
+<p>Bricks (a theme) and builder plugins such as Breakdance and Oxygen sit between a page builder and a custom theme. They favour class-based styling much like CSS, which suits designers who think in components, and they generally produce leaner markup than older page builders.</p>
+<ul>
+  <li><strong>Pros:</strong> clean output, a workflow that rewards a disciplined design system, and good performance when built well.</li>
+  <li><strong>Cons:</strong> smaller ecosystems and fewer developers to take a site over, an interface that's less forgiving for non-technical editors, and dependence on one vendor's roadmap.</li>
+  <li><strong>Best for:</strong> agencies with in-house developers who standardise on one builder across many client sites.</li>
+</ul>
+<p>Licence terms and features change, so check each builder's current plans before committing a client to it.</p>
+
+<h2>Option 5: Headless WordPress</h2>
+<p>WordPress manages content while a separate front end, such as a Next.js site, displays it. It gives complete design freedom and can be very fast, but it costs more to build and host, and many plugins for forms, SEO and previews need extra work. It is rarely needed for a small business site; see <a href="/blog/headless-wordpress-small-business/">headless WordPress for small businesses</a>.</p>
+
+<h2>What about automatic Figma-to-WordPress plugins?</h2>
+<p>Tools that export Figma frames straight into Elementor or HTML look like a shortcut. In practice they tend to produce deeply nested, fixed-size layouts that are heavy, hard to edit and awkward on mobile, because they copy positions rather than understanding the design system. Building by hand from your styles and components takes longer upfront but gives a lighter site that your client can actually maintain.</p>
+
+<h2>How to choose the right approach</h2>
+<table>
+  <thead><tr><th>If this is true</th><th>Lean towards</th></tr></thead>
+  <tbody>
+    <tr><td>The client's marketing team will change layouts often</td><td>Elementor</td></tr>
+    <tr><td>Speed targets are strict and layouts are consistent</td><td>Block theme with custom blocks</td></tr>
+    <tr><td>Editors must not be able to change layouts at all</td><td>Custom theme or locked block patterns</td></tr>
+    <tr><td>Your agency already builds everything in Bricks</td><td>Bricks, if you can maintain it in-house</td></tr>
+    <tr><td>Another developer may take over in a year</td><td>Elementor or a well-documented block theme</td></tr>
+    <tr><td>The budget and timeline are tight</td><td>Elementor or an adapted block theme</td></tr>
+  </tbody>
+</table>
+<p>Also consider dynamic content. Blogs, case studies, team members and product catalogues need templates and custom post types whichever way you build, and WooCommerce has its own template layer.</p>
+
+<h2>How the choice affects cost and timeline</h2>
+<p>The number of unique templates matters more than the number of pages, because ten pages built from one template go much faster than ten different layouts. For the same design, Elementor is usually quickest, a block theme with custom blocks takes longer, and a custom-coded theme takes longest. Licences add a running cost for Elementor Pro and commercial builders, while block themes and custom themes rely on WordPress alone. Missing mobile frames, complex interactions and late content add time on every approach.</p>
+
+<h2>What should stay the same whichever you choose</h2>
+<ul>
+  <li>A design review before quoting, with questions sent back as one list</li>
+  <li>Figma styles turned into global styles before any page is built</li>
+  <li>Headers, footers and repeating sections built as templates first</li>
+  <li>The build on a private staging site</li>
+  <li>Side-by-side comparison with the frames at every breakpoint, and testing on real phones</li>
+  <li>A walkthrough, a short editing note and every licence in your or your client's name</li>
 </ul>
 
 <p>Agencies handing a build to an outside developer should settle these answers before work starts; the <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a> covers everything else to send.</p>
 
-<h2>Prepare the design well</h2>
-<p>Whatever the approach, well-organised Figma files make the build faster and more accurate; see the <a href="/blog/figma-to-wordpress-designer-guide/">Figma handoff guide</a>.</p>
+<h2>FAQs</h2>
+<h3>What is the best way to convert Figma to WordPress?</h3>
+<p>For most business sites, a hand build in Elementor or a block theme, starting from the design system rather than individual frames. Elementor suits clients who want visual editing; a block theme suits sites where speed and consistent layouts matter most.</p>
+<h3>Is Elementor good for Figma to WordPress?</h3>
+<p>Yes, when built carefully. Auto layout maps onto Flexbox containers and styles onto global colours and fonts, so a well-prepared Figma file can be matched closely. The risks are deep nesting and too many add-ons, both avoidable.</p>
+<h3>Should I use Gutenberg or Elementor for a Figma build?</h3>
+<p>Choose Elementor if the client wants to rearrange layouts themselves. Choose Gutenberg with a block theme if you want lighter pages, no builder licence and layouts that clients can't easily break.</p>
+<h3>Is Bricks better than Elementor?</h3>
+<p>For developer-led builds, Bricks often produces cleaner markup. Elementor has the larger ecosystem, more developers who can take a site over, and an editor non-technical clients find easier. "Better" depends on who builds and who edits.</p>
+<h3>Which approach gives the fastest pages?</h3>
+<p>A custom theme or a block theme usually produces the lightest pages, because they load only what the design needs. A carefully built Elementor site can still pass Core Web Vitals; the difference is how much care it takes to keep it lean.</p>
+<h3>Can I switch approach later?</h3>
+<p>Only by rebuilding the affected pages, because each approach stores layouts differently. Content such as text, images and posts carries over; the layouts don't. It is worth choosing carefully at the start.</p>
 
-<p>Need a design built? See <a href="/figma-to-wordpress/">Figma to WordPress development</a>.</p>
+<p>Have a design and not sure which approach fits? Share your Figma link for a free review: I'll recommend Elementor or a block-based build for your project and send a fixed quote and timeline; see <a href="/figma-to-wordpress/">Figma to WordPress conversion</a>.</p>
 `,
   },
   {
@@ -31753,152 +32257,191 @@ function my_child_enqueue_styles() {
   {
     slug: 'cheap-website-risks',
     seoTitle: 'Cheap Website Risks: What You Get and What You Don\'t',
-    title: 'The Real Risks of Very Cheap Websites (and How to Get Good Value on a Small Budget)',
-    description: 'What very cheap websites usually include and leave out, the hidden costs that appear later, red flags to watch for, and how to get value on a small budget.',
+    title: 'The Real Risks of Very Cheap Websites: What\'s Usually Left Out, the Costs That Appear Later and How to Check an Offer',
+    description: 'Cheap website risks: what low-cost packages leave out, the hidden costs that appear later, five checks before you pay and how to get value on a budget.',
     date: '2026-09-28',
+    updated: '2026-10-14',
     category: 'Pricing',
     related: ['hire-wordpress-developer', 'website-redesign'],
     body: `
-<p>You've probably seen the offers: a complete business website, with hosting and a domain, for a price that seems too good to be true. Sometimes it's a genuinely good deal. More often, the low price is possible because important work is skipped, and you pay for it later in lost enquiries, extra charges or a rebuild.</p>
-<p>This guide explains what very cheap websites usually include, what they tend to leave out, and how to get real value when your budget is small.</p>
+<p>A very cheap website can be fine as a placeholder, but the low price is usually reached by skipping work you can't see on day one: planning, mobile testing, speed, SEO basics, security, licensed software and ownership of the domain and hosting. Those savings tend to come back later as high renewals, charges for every small change, malware clean-ups, a rebuild and enquiries that never arrive. Before you pay, check whose name the accounts will be in, whether the software is licensed and how the developer's past sites work on your own phone.</p>
+<p>This guide is about the risks behind very low-priced offers and how to check one. If you want a site that is planned, tested and owned by you from the start, see <a href="/wordpress-website-development/">WordPress website development</a> for what every site I build includes.</p>
 
-<h2>How some websites are made so cheap</h2>
-<p>A low price isn't automatically a bad sign. A freelancer with low overheads using a good theme can deliver a solid small website at a modest cost. But very low prices are often reached by cutting corners:</p>
+<h2>When a cheap website is perfectly fine</h2>
+<p>A low price isn't automatically a bad sign. A cheap or DIY site can be sensible when:</p>
 <ul>
-  <li>The same template reused for every client, with only the logo, colours and text changed</li>
-  <li>No planning of pages, content or calls to action</li>
-  <li>Little or no testing on phones, browsers or speed</li>
-  <li>Pirated ("nulled") themes and plugins instead of licensed ones</li>
-  <li>A low entry price, with most of the money made on renewals and paid changes later</li>
+  <li>You need a simple placeholder with your name, phone number and location while the business is new.</li>
+  <li>You are testing an idea and expect to rebuild properly once it works.</li>
+  <li>A freelancer with low overheads uses a good, licensed theme, sets the accounts up in your name and keeps the scope small.</li>
+</ul>
+<p>Even then, three things are non-negotiable at any price: the domain in your name, licensed software and a contact form that has been tested. The problems start when a cheap site is expected to do the job of a proper one: rank on Google, bring enquiries and represent the business for years.</p>
+
+<h2>How very cheap websites are made</h2>
+<ul>
+  <li><strong>One template for everyone:</strong> a theme demo imported as-is, with only the logo, colours and text swapped.</li>
+  <li><strong>No planning:</strong> no thought about which pages customers need, what each should say or where the call to action goes.</li>
+  <li><strong>Little or no testing:</strong> checked on one laptop, not on phones, browsers or slow connections.</li>
+  <li><strong>Pirated software:</strong> "nulled" premium themes and plugins, which cost nothing upfront and can carry hidden malware; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a>.</li>
+  <li><strong>Bundled hosting in the seller's account:</strong> a low first-year price, with the real money made on renewals you can't easily move away from.</li>
 </ul>
 
-<h2>What you typically get</h2>
-<p>A very cheap package usually includes:</p>
-<ul>
-  <li>A ready-made template with your logo and colours</li>
-  <li>A handful of pages: home, about, services, gallery and contact</li>
-  <li>A basic contact form</li>
-  <li>A layout that shrinks to fit phones, though it may not be designed for them</li>
-  <li>Sometimes a domain and hosting for the first year, often in the provider's account</li>
-</ul>
-<p>That can be enough to say "we have a website". Whether it brings enquiries is another matter.</p>
-
-<h2>What's often missing</h2>
+<h2>What you get, and what's often missing</h2>
 <table>
-  <thead><tr><th>Area</th><th>What's often skipped</th><th>Why it matters</th></tr></thead>
+  <thead><tr><th>Area</th><th>Typical very cheap package</th><th>What a properly built site includes</th><th>Why it matters</th></tr></thead>
   <tbody>
-    <tr><td>Content and structure</td><td>Clear service pages, headlines and calls to action</td><td>Visitors don't understand what you offer or how to contact you</td></tr>
-    <tr><td>Mobile experience</td><td>Real testing on phones</td><td>Many local customers will see your site on a phone first</td></tr>
-    <tr><td>Speed</td><td>Image compression, caching, lean plugins</td><td>Slow pages lose visitors and hurt rankings</td></tr>
-    <tr><td>SEO basics</td><td>Page titles, descriptions, headings, Search Console setup</td><td>Google struggles to understand and show your pages</td></tr>
-    <tr><td>Security and backups</td><td>Updates, login protection, off-site backups</td><td>A hack or crash can take the site down with nothing to restore</td></tr>
-    <tr><td>Form delivery</td><td>Checking enquiries actually reach your inbox</td><td>Leads can silently go to spam or nowhere at all</td></tr>
-    <tr><td>Ownership and access</td><td>Admin login, domain and hosting in your name</td><td>You may not be able to change developers or even your own site</td></tr>
+    <tr><td>Structure and content</td><td>Home, about, services, gallery, contact</td><td>A page per main service, clear headlines and calls to action</td><td>Visitors understand what you offer and how to contact you</td></tr>
+    <tr><td>Mobile</td><td>A layout that shrinks to fit</td><td>Layouts checked on real phones</td><td>Many local customers see the phone version first</td></tr>
+    <tr><td>Speed</td><td>Whatever the demo shipped with</td><td>Compressed images, caching, lean plugins</td><td>Slow pages lose visitors and can hold rankings back</td></tr>
+    <tr><td>SEO basics</td><td>Default titles, often the theme's</td><td>Titles, descriptions, headings, schema, sitemap, Search Console</td><td>Google can understand and show your pages</td></tr>
+    <tr><td>Forms</td><td>A form that looks fine</td><td>Forms tested so enquiries reach your inbox</td><td>Leads can silently go to spam or nowhere</td></tr>
+    <tr><td>Security and backups</td><td>Rarely mentioned</td><td>Login protection, updates, off-site backups</td><td>A hack or crash can't be undone without a backup</td></tr>
+    <tr><td>Ownership</td><td>Domain and hosting in the seller's account, editor access only</td><td>Accounts in your name, your own administrator login</td><td>You can change developer or host whenever you like</td></tr>
   </tbody>
 </table>
 
-<h2>Hidden costs that show up later</h2>
-<ul>
-  <li><strong>Renewals:</strong> bundled hosting or "maintenance" renewed at a much higher rate, sometimes with no choice because the provider controls the account</li>
-  <li><strong>Paying for every small change,</strong> because you can't edit the site yourself</li>
-  <li><strong>Malware clean-ups,</strong> especially where pirated themes or plugins were used; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a></li>
-  <li><strong>Licences you didn't know about,</strong> when a premium plugin stops updating after the first year</li>
-  <li><strong>A rebuild,</strong> when the site can't be fixed, sped up or extended</li>
-  <li><strong>Lost enquiries,</strong> the cost you never see on an invoice</li>
-</ul>
+<h2>The costs that appear later</h2>
+<table>
+  <thead><tr><th>Cost</th><th>When it appears</th><th>How to avoid it</th></tr></thead>
+  <tbody>
+    <tr><td>Renewals at a much higher rate</td><td>After the first year, often with no choice of host</td><td>Hosting and domain bought in your name, renewal price known upfront</td></tr>
+    <tr><td>Paying for every small change</td><td>Whenever a price, photo or phone number changes</td><td>A site you can edit, plus administrator access</td></tr>
+    <tr><td>Malware clean-up</td><td>Months later, often traced to pirated plugins</td><td>Licensed software, updates and backups</td></tr>
+    <tr><td>Licences you didn't know about</td><td>When a premium plugin stops updating</td><td>A list of every premium licence and its renewal date</td></tr>
+    <tr><td>A rebuild</td><td>When the site can't be fixed, sped up or extended</td><td>A sound build on a maintained theme</td></tr>
+    <tr><td>Lost enquiries</td><td>Every day, invisibly</td><td>Mobile testing, clear calls to action, tested forms</td></tr>
+  </tbody>
+</table>
+<p><a href="/blog/hidden-website-costs/">Hidden website costs</a> lists everything a website costs after launch, whoever builds it.</p>
+
+<h2>Five checks before you pay for a cheap website</h2>
+<ol>
+  <li><strong>Open three of their recent sites on your phone,</strong> on mobile data. Do they load quickly? Does the menu work? Does tapping the phone number start a call?</li>
+  <li><strong>Run one of those sites through PageSpeed Insights</strong> on mobile. You're not looking for a perfect score, just for obvious problems such as huge images.</li>
+  <li><strong>Ask to see a form working.</strong> Try the contact form on the developer's own website, or ask them to show a test enquiry from one of their builds arriving in an inbox. Forms that look fine but send nothing are common on rushed builds.</li>
+  <li><strong>Ask in writing whose name the domain and hosting will be registered in,</strong> what each costs to renew, and whether you'll get your own administrator login.</li>
+  <li><strong>Ask which theme and plugins will be used</strong> and whether the premium ones come with genuine licences. A vague answer is an answer.</li>
+</ol>
 
 <h2>Red flags in a very cheap offer</h2>
 <ul>
   <li>No written scope listing pages, features and what happens after launch</li>
-  <li>The domain registered in the developer's name, not yours</li>
+  <li>The domain registered in the developer's name, "for convenience"</li>
   <li>"Lifetime free hosting" or unlimited pages for a tiny one-time fee</li>
   <li>Guaranteed first-page Google rankings</li>
-  <li>No live websites you can open and test on your own phone</li>
-  <li>Vague answers about which theme and plugins will be used, and whether they're licensed</li>
+  <li>No live websites you can open and test yourself</li>
+  <li>Premium themes and plugins "included free" with no licence</li>
   <li>Pressure to pay the full amount upfront</li>
 </ul>
+<p>If you are weighing a cheap offer against more expensive ones, put them side by side on the same scope; <a href="/blog/compare-website-quotes/">how to compare website quotes</a> gives a line-by-line sheet.</p>
 
-<h2>How to get good value on a small budget</h2>
+<h2>Getting real value on a small budget</h2>
+<p>The alternative to a risky cheap site isn't necessarily an expensive one. As a guide, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts a professionally built landing page at ₹5,000 to ₹15,000 and a small business site of five to eight pages at ₹15,000 to ₹40,000. To get the most from a small budget:</p>
 <ol>
-  <li><strong>Reduce scope, not quality.</strong> Five well-written, fast pages will do more than fifteen thin ones. A single focused landing page can be a sensible start.</li>
+  <li><strong>Reduce scope, not quality.</strong> Five strong, fast pages do more than fifteen thin ones, and a single focused page can be a sensible start.</li>
   <li><strong>Use a quality, lightweight theme</strong> rather than paying for a fully custom design.</li>
-  <li><strong>Prepare your own content and photos,</strong> so you're paying for development time, not waiting time.</li>
+  <li><strong>Write your own first drafts and supply photos,</strong> so you pay for building, not waiting.</li>
   <li><strong>Launch the essentials first</strong> and add a blog, booking or store later.</li>
-  <li><strong>Keep your domain, hosting and admin login in your own name;</strong> the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> covers what to check.</li>
-  <li><strong>Get the scope in writing</strong> and compare like with like; see <a href="/blog/compare-website-quotes/">how to compare website quotes</a>.</li>
+  <li><strong>Keep every account in your own name;</strong> the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists each one.</li>
+</ol>
+<p>For a rough figure for your own project, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<h2>Already have a cheap website that isn't working?</h2>
+<ol>
+  <li><strong>Secure access first:</strong> the domain registrar, hosting and an administrator login. If the previous developer holds them, <a href="/blog/regain-website-access-old-developer/">regaining access from an old developer</a> explains how to get them back.</li>
+  <li><strong>Check what's worth keeping:</strong> pages that rank, content that is still accurate, the domain itself.</li>
+  <li><strong>Decide whether to fix or replace it.</strong> If the theme is sound and the problems are specific, a refresh may be enough; <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a> helps you decide.</li>
 </ol>
 
-<h2>Questions to ask before you pay</h2>
-<ul>
-  <li>Whose name will the domain and hosting be in, and what do they cost to renew?</li>
-  <li>Will I get full administrator access?</li>
-  <li>Which theme and plugins will you use, and are they licensed?</li>
-  <li>Will you test the site on phones and check its speed?</li>
-  <li>What is included after launch, and what does a small change cost?</li>
-  <li>Can I see two or three live sites you've built recently?</li>
-</ul>
-<p>Good answers to these questions matter more than the headline price. For a realistic ballpark before you talk to anyone, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+<h2>FAQs</h2>
+<h3>Is a cheap website worth it?</h3>
+<p>As a temporary placeholder, it can be. As the main way customers find and judge your business, a very cheap site often costs more over time in renewals, changes, fixes and lost enquiries than a properly built one.</p>
+<h3>Why are some websites so cheap?</h3>
+<p>Usually because the same template is reused with minimal changes, there's no planning or testing, pirated plugins replace licensed ones, or the seller expects to earn on hosting renewals and paid changes later.</p>
+<h3>What is the risk if the developer owns my domain?</h3>
+<p>You can't move host or developer without their cooperation, renewals are on their terms, and if they disappear or the domain lapses you can lose the address your customers and Google know. Register it in your own name from the start.</p>
+<h3>Can a cheap website be improved later instead of rebuilt?</h3>
+<p>Sometimes. If it runs on a maintained, licensed theme and you have full access, content, speed and design can be improved in stages. If it relies on pirated software or an abandoned theme, rebuilding is usually cheaper than patching.</p>
+<h3>How much should a small business website cost in India?</h3>
+<p>It depends on the pages, features and design work. As a guide, a professionally built small business WordPress site of five to eight pages typically costs ₹15,000 to ₹40,000, plus yearly domain and hosting. Offers far below that usually leave out testing, SEO basics, security or ownership.</p>
+<h3>Is a free website builder safer than a cheap developer?</h3>
+<p>A builder you set up yourself at least keeps the account in your name. The trade-offs are your own time, limited flexibility and, with some builders, no way to move the site elsewhere later without rebuilding it.</p>
 
-<p>Working with a small budget and want it spent well? See <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to discuss a scope that fits.</p>
+<p>Want a website that's planned around your customers, tested on real phones and fully in your name? You get a fixed quote after a free review, with the scope written down before anything starts; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
     slug: 'website-refresh-vs-redesign',
-    title: 'Website Refresh vs Redesign: Which Does Your Business Need?',
-    description: 'When updating content, tweaking the design and fixing speed is enough, when a full website redesign is the better investment, and a simple way to decide.',
+    seoTitle: 'Website Refresh vs Redesign: Which Does Your Business Need?',
+    title: 'Website Refresh vs Redesign: Which Does Your Business Need? A Simple Test, Signs and Examples',
+    description: 'Website refresh vs redesign: what each involves, the signs that point to one or the other, a 10-minute decision test, examples and how to protect your SEO.',
     date: '2026-09-28',
+    updated: '2026-10-14',
     category: 'Pricing',
     related: ['website-redesign', 'wordpress-speed-optimization'],
     body: `
-<p>When a website starts to feel tired, the instinct is often to start again. Sometimes that's right. But many sites only need a refresh: updated content, a few design improvements and some speed work. Choosing the right option saves money and avoids risking rankings you've already earned.</p>
-<p>Here's what each option involves, the signs that point one way or the other, and a simple way to decide.</p>
+<p>Choose a website refresh if your site works on phones, updates safely and still matches what you sell, and the problems are specific: dated photos, weak calls to action, old content or slow pages. Choose a redesign if the site isn't built for phones, runs on an abandoned theme or builder, keeps breaking, or no longer fits your business or customers. A refresh keeps the platform, structure and URLs; a redesign changes them, so it costs more and needs more care to protect your rankings.</p>
+<p>Many sites that "need a redesign" only need a refresh, and choosing correctly saves money and avoids risking rankings you've already earned. When you send me your site for a <a href="/website-redesign/">website redesign</a> review, I'll tell you if a refresh would do the job. Here's how to work it out yourself.</p>
 
-<h2>What a refresh involves</h2>
-<p>A refresh improves the website you already have. The platform, structure and page addresses (URLs) mostly stay the same. Typical work includes:</p>
+<h2>Refresh vs redesign at a glance</h2>
+<table>
+  <thead><tr><th></th><th>Refresh</th><th>Redesign</th><th>Redesign with a platform move</th></tr></thead>
+  <tbody>
+    <tr><td>What changes</td><td>Content, photos, buttons, some design details, speed</td><td>Design, structure, navigation and key page content</td><td>Everything, including the system the site runs on</td></tr>
+    <tr><td>Platform and theme</td><td>Stay the same</td><td>Theme usually changes; platform often stays</td><td>Change, for example Wix to WordPress</td></tr>
+    <tr><td>URLs</td><td>Stay the same</td><td>Mostly kept; changed ones redirected</td><td>Usually change; every one redirected</td></tr>
+    <tr><td>Risk to rankings</td><td>Low</td><td>Moderate without a redirect map</td><td>Highest without a redirect map</td></tr>
+    <tr><td>Your time</td><td>Some content updates and approvals</td><td>Content, feedback rounds and sign-off</td><td>As for a redesign, plus checking moved content</td></tr>
+    <tr><td>Cost and time</td><td>Lowest; depends on the list of fixes</td><td>Higher; priced like a build</td><td>Highest</td></tr>
+    <tr><td>Best when</td><td>Problems are specific</td><td>The site fails on phones or no longer fits</td><td>The platform blocks what you need</td></tr>
+  </tbody>
+</table>
+
+<h2>What a website refresh involves</h2>
+<p>A refresh improves the website you already have. Typical work, grouped by goal:</p>
 <ul>
-  <li><strong>Content updates:</strong> current services, prices or offers, new photos, recent testimonials and case studies</li>
-  <li><strong>Design tweaks:</strong> a cleaner hero section, updated colours and fonts, better spacing and clearer buttons</li>
-  <li><strong>Conversion fixes:</strong> stronger calls to action, WhatsApp and tap-to-call buttons, shorter forms</li>
-  <li><strong>Speed work:</strong> compressing images, adding caching and removing plugins you no longer use</li>
-  <li><strong>SEO touch-ups:</strong> page titles, descriptions and headings on your key pages</li>
+  <li><strong>Content:</strong> current services and prices, new photos of your team and work, recent reviews and case studies, removal of out-of-date offers.</li>
+  <li><strong>Look and feel:</strong> a cleaner hero section, updated fonts and colours within the existing theme, better spacing, consistent buttons.</li>
+  <li><strong>Conversions:</strong> clearer calls to action, WhatsApp and tap-to-call buttons, a shorter enquiry form, trust signals near the form.</li>
+  <li><strong>Speed:</strong> compressed images, caching, removing plugins nobody uses.</li>
+  <li><strong>SEO touch-ups:</strong> better titles, descriptions and headings on key pages, fixed broken links.</li>
+  <li><strong>Housekeeping:</strong> updates to WordPress, the theme and plugins, and a working backup.</li>
 </ul>
-<p>Because the foundations stay in place, a refresh is usually quicker, cheaper and lower risk.</p>
+<p>Because the foundations stay in place, a refresh is quicker, cheaper and lower risk, and it can often be done page by page.</p>
 
-<h2>What a redesign involves</h2>
-<p>A redesign changes the website more fundamentally. It often means:</p>
+<h2>What a website redesign involves</h2>
 <ul>
   <li>A new visual design, planned page by page</li>
-  <li>A new structure and navigation, based on how customers look for your services today</li>
-  <li>Rewritten content for key pages</li>
+  <li>A new structure and navigation, based on how customers choose today</li>
+  <li>Rewritten or restructured content for key pages</li>
   <li>A new theme or a rebuild, and sometimes a move to a new platform</li>
-  <li>Changed URLs, which need redirects so you don't lose rankings</li>
+  <li>A redirect map for every URL that changes, and monitoring after launch</li>
 </ul>
-<p>It's a bigger investment of money and time, including your own time for content and feedback, but it fixes problems that tweaks can't reach.</p>
+<p>It is a bigger investment of money and of your own time, but it fixes problems that tweaks can't reach.</p>
 
-<h2>When a refresh is enough</h2>
+<h2>Signs a refresh is enough</h2>
 <ul>
-  <li>The structure still makes sense and visitors can find what they need</li>
-  <li>The site runs on a reasonably current, maintained setup that updates safely</li>
-  <li>You or your team can edit it without difficulty</li>
+  <li>The menu still makes sense and visitors can find what they need</li>
+  <li>WordPress, the theme and the plugins update without breaking things</li>
+  <li>You or your team can edit pages without help</li>
   <li>It works on phones, even if it could look better</li>
-  <li>The problems are specific: slow pages, dated photos, weak calls to action or old content</li>
-  <li>It already ranks well and brings enquiries, and you don't want to disturb that</li>
+  <li>The problems are specific: slow pages, dated photos, weak calls to action, old content</li>
+  <li>It already ranks and brings enquiries, and you don't want to disturb that</li>
 </ul>
 
-<h2>When you need a full redesign</h2>
+<h2>Signs you need a full redesign</h2>
 <ul>
-  <li>The site was never built for phones, and fixing the layout means rebuilding it anyway</li>
-  <li>It uses an abandoned theme or builder that can't be updated safely</li>
+  <li>The site was never built for phones, so fixing the layout means rebuilding it anyway</li>
+  <li>It runs on an abandoned theme or builder that can't be updated safely</li>
   <li>It keeps getting hacked or breaking after updates</li>
-  <li>Your business has changed: new services, a rebrand or a different type of customer</li>
-  <li>Visitors get lost because the navigation and page structure no longer fit</li>
-  <li>Heavy code or plugins make it slow in ways that tuning can't fix</li>
-  <li>You need major features, such as online booking or a store, that the current setup can't support well</li>
+  <li>The business has changed: new services, a new type of customer or a rebrand</li>
+  <li>Visitors get lost because the structure no longer fits what you sell</li>
+  <li>Heavy code or plugins make it slow in ways tuning can't fix</li>
+  <li>You need features, such as bookings or a store, the current setup can't support</li>
 </ul>
 <p>For more warning signs, see <a href="/blog/signs-you-need-a-new-website/">signs your business needs a new website</a>.</p>
 
-<h2>A simple way to decide</h2>
-<p>Run a quick check first; the <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> works well. Then answer these questions:</p>
+<h2>The 10-minute decision test</h2>
+<p>Run a quick check first; the <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> works well. Then answer these:</p>
 <table>
   <thead><tr><th>Question</th><th>If yes</th><th>If no</th></tr></thead>
   <tbody>
@@ -31910,23 +32453,49 @@ function my_child_enqueue_styles() {
     <tr><td>Does the site already bring steady enquiries or rankings?</td><td>Refresh, carefully</td><td>Either</td></tr>
   </tbody>
 </table>
-<p>If most answers point to a refresh, start there. If two or more core questions point to a redesign, patching the old site is likely to cost more over time than replacing it.</p>
+<p>The first four questions are the core ones. If they all point to a refresh, start there. If two or more point to a redesign, patching the old site is likely to cost more over time than replacing it.</p>
+
+<h2>Three examples</h2>
+<p>These are typical situations rather than specific clients:</p>
+<ul>
+  <li><strong>A CA firm</strong> whose site works on phones and ranks for its city, but has stock photos, an old team list and a long form. A refresh: new photos, updated team and services, a shorter form and a WhatsApp button.</li>
+  <li><strong>A manufacturer</strong> whose site was built years ago on a theme that no longer updates, with a product list that is hard to use on a phone. A redesign, with a catalogue structure built around how buyers search and a redirect for every changed URL.</li>
+  <li><strong>A clinic</strong> that has added treatments and changed its name. A redesign combined with a rebrand, because the structure and the brand both change; <a href="/blog/rebranding-your-website/">rebranding your website</a> covers the extra steps.</li>
+</ul>
 
 <h2>The middle ground: refresh now, redesign in phases</h2>
-<p>You don't always have to choose one or the other. A common approach is to refresh the pages that matter most, such as the homepage, top services and contact page, and plan a fuller redesign in stages as budget allows. This gets improvements live sooner and spreads the cost. See <a href="/blog/redesign-website-tight-budget/">how to redesign on a tight budget</a> for how to phase the work.</p>
+<p>You don't always have to choose one. Refresh the pages that matter most, such as the homepage, top services and the contact page, and plan a fuller redesign in stages as budget allows. That gets improvements live sooner and spreads the cost; <a href="/blog/redesign-website-tight-budget/">redesigning on a tight budget</a> shows how to phase the work.</p>
+<p>If the platform itself is the problem, for example a Wix site you can't extend, a refresh won't solve it; see <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a>. And if the only real complaint is slow pages, speed work on its own may be the right job: see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
+
+<h2>How long each takes, and what drives the cost</h2>
+<p>A refresh is priced on its list of fixes, so the more specific the list, the more accurate the quote. It can often go live page by page, with no switchover day at all. A redesign is priced much like a new build: the number of unique templates, whether the design is custom or an adapted theme, the features, how much content needs restructuring and whether the platform changes. On my redesign projects, most take 1 to 3 weeks once content is ready; large sites, platform moves, heavy rewriting and slow feedback stretch that.</p>
+<p>In both cases your own time matters: gathering photos, checking facts and approving pages. If you collect quotes for both options, make sure each one states exactly what is included; <a href="/blog/compare-website-quotes/">how to compare website quotes</a> gives a line-by-line sheet.</p>
 
 <h2>Protect what already works</h2>
-<p>Whichever you choose, a few steps keep the change from backfiring:</p>
 <ol>
-  <li>Take a full backup and record current traffic, rankings and enquiries as a baseline</li>
-  <li>Make changes on a staging copy, not the live site</li>
-  <li>Keep URLs the same where possible, and redirect any that change</li>
-  <li>Keep the content that already ranks, and improve it rather than deleting it</li>
-  <li>Compare results against your baseline for a few weeks after launch</li>
+  <li>Take a full backup and record current traffic, rankings and enquiries from Search Console and GA4 as a baseline.</li>
+  <li>Make changes on a staging copy, not the live site.</li>
+  <li>Keep URLs the same where possible, and 301-redirect any that change to their closest new page.</li>
+  <li>Keep the content that already ranks, and improve it rather than trimming it for a cleaner look.</li>
+  <li>Check Search Console closely for the first few weeks after launch and compare against the baseline.</li>
 </ol>
-<p>For the details, see <a href="/blog/redesign-website-without-losing-rankings/">how to redesign without losing Google rankings</a>.</p>
+<p>The full checklist is in <a href="/blog/redesign-website-without-losing-rankings/">how to redesign without losing Google rankings</a>.</p>
 
-<p>Not sure which your site needs? See <a href="/website-redesign/">website redesign</a>, or <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> if slow pages are the main problem.</p>
+<h2>FAQs</h2>
+<h3>What is a website refresh?</h3>
+<p>A refresh updates an existing website without rebuilding it: new content and photos, design tweaks within the current theme, clearer calls to action and speed improvements. The platform, structure and page addresses stay the same.</p>
+<h3>How do I know if my website needs a redesign?</h3>
+<p>If it doesn't work properly on phones, can't be updated safely, no longer matches what you sell or can't be edited without a developer, a redesign is usually the better investment. If the problems are specific, a refresh is often enough.</p>
+<h3>Is a website refresh cheaper than a redesign?</h3>
+<p>Usually, because the structure, theme and URLs stay in place and the work is limited to a list of fixes. A redesign is priced more like a new build, by templates, design, features and content work.</p>
+<h3>Will a refresh or redesign affect my SEO?</h3>
+<p>A refresh carries little risk if URLs and ranking content stay. A redesign can affect rankings if pages are removed, URLs change without redirects or staging settings go live, which is why a baseline, a redirect map and monitoring matter.</p>
+<h3>How often should a website be redesigned?</h3>
+<p>There's no fixed cycle. Redesign when the signs appear, such as poor mobile use, an unmaintained theme or a changed business, and refresh content and photos regularly in between so the site doesn't date as quickly.</p>
+<h3>Can I refresh my website myself?</h3>
+<p>Much of it, yes: new photos, updated text, reviews and simple button changes in the editor. Theme changes, speed work and anything touching URLs are worth handing to a developer.</p>
+
+<p>Not sure which your site needs? Send me your website address for a free review: you'll get an honest answer on refresh or redesign and a fixed quote for whichever fits; see <a href="/website-redesign/">website redesign</a>.</p>
 `,
   },
   {
