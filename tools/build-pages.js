@@ -1138,6 +1138,31 @@ const urls = [{ loc: `${SITE}/`, pr: '1.0' }, { loc: `${SITE}/solutions/`, pr: '
   { loc: `${SITE}/blog/`, pr: '0.8' }, ...BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => ({ loc: `${SITE}${topicHref(t)}`, pr: '0.7' })),
   ...POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date })),
   { loc: `${SITE}/work/`, pr: '0.8' }, ...EXTRA.map(x => ({ loc: `${SITE}/${x.slug}/`, pr: x.priority || '0.8' })), ...WORK.map(w => ({ loc: `${SITE}/work/${w.slug}/`, pr: '0.7' }))];
+
+// Pages without a post date get a lastmod that only moves when their <main> content changes,
+// so Google can trust it. Fingerprints live in tools/lastmod.json; new entries start from the file's last git commit.
+const LASTMOD_FILE = path.join(__dirname, 'lastmod.json');
+const stamps = fs.existsSync(LASTMOD_FILE) ? JSON.parse(fs.readFileSync(LASTMOD_FILE, 'utf8')) : {};
+const crypto = require('crypto');
+const { execSync } = require('child_process');
+for (const u of urls) {
+  if (u.lastmod) continue;
+  const rel = u.loc.slice(SITE.length + 1);
+  const file = path.join(ROOT, rel, 'index.html');
+  if (!fs.existsSync(file)) continue;
+  const main = (fs.readFileSync(file, 'utf8').split('<main')[1] || '').split('</main>')[0];
+  const hash = crypto.createHash('sha1').update(main).digest('hex').slice(0, 16);
+  const prev = stamps[u.loc];
+  if (prev && prev.hash === hash) { u.lastmod = prev.date; continue; }
+  let date = today;
+  if (!prev) {
+    try { date = execSync(`git log -1 --format=%cs -- "${path.relative(ROOT, file)}"`, { cwd: ROOT }).toString().trim() || today; } catch (e) { /* not a git checkout */ }
+  }
+  stamps[u.loc] = { hash, date };
+  u.lastmod = date;
+}
+fs.writeFileSync(LASTMOD_FILE, JSON.stringify(stamps, null, 1) + '\n');
+
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod || today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>${u.pr}</priority>\n  </url>`).join('\n')}
