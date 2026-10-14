@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Increase the WordPress Upload Size Limit | Samverse</title>
-  <meta name="description" content="Fix &quot;exceeds the maximum upload size for this site&quot;: where the limit comes from, how to raise it in hosting settings, why some tricks fail and better options.">
+  <title>How to Increase the Maximum Upload File Size in WordPress</title>
+  <meta name="description" content="Fix &quot;exceeds the maximum upload size for this site&quot;: check your limit, raise it in hPanel or cPanel, use php.ini or .htaccess safely, and fix 413 errors.">
   <meta name="author" content="Sameer Gupta">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/increase-wordpress-upload-size-limit/">
-  <meta property="og:title" content="How to Increase the WordPress Upload Size Limit | Samverse">
-  <meta property="og:description" content="Fix &quot;exceeds the maximum upload size for this site&quot;: where the limit comes from, how to raise it in hosting settings, why some tricks fail and better options.">
+  <meta property="og:title" content="How to Increase the Maximum Upload File Size in WordPress">
+  <meta property="og:description" content="Fix &quot;exceeds the maximum upload size for this site&quot;: check your limit, raise it in hPanel or cPanel, use php.ini or .htaccess safely, and fix 413 errors.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-increase-wordpress-upload-size-limit.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/increase-wordpress-upload-size-limit/#article",
-      "headline": "How to Increase the WordPress Upload Size Limit (and Fix Upload Errors)",
-      "description": "Fix \"exceeds the maximum upload size for this site\": where the limit comes from, how to raise it in hosting settings, why some tricks fail and better options.",
+      "headline": "How to Increase the WordPress Upload Size Limit and Fix \"Exceeds the Maximum Upload Size\" Errors",
+      "description": "Fix \"exceeds the maximum upload size for this site\": check your limit, raise it in hPanel or cPanel, use php.ini or .htaccess safely, and fix 413 errors.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-01",
+      "dateModified": "2026-10-14",
       "mainEntityOfPage": "https://samverse.space/blog/increase-wordpress-upload-size-limit/",
       "image": "https://samverse.space/assets/og/blog-increase-wordpress-upload-size-limit.png",
       "articleSection": "Maintenance",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "How to Increase the WordPress Upload Size Limit (and Fix Upload Errors)",
+          "name": "How to Increase the WordPress Upload Size Limit and Fix \"Exceeds the Maximum Upload Size\" Errors",
           "item": "https://samverse.space/blog/increase-wordpress-upload-size-limit/"
         }
       ]
@@ -129,22 +129,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
-          <h1>How to Increase the WordPress Upload Size Limit (and Fix Upload Errors)</h1>
-          <p class="post-dek">Fix &quot;exceeds the maximum upload size for this site&quot;: where the limit comes from, how to raise it in hosting settings, why some tricks fail and better options.</p>
+          <h1>How to Increase the WordPress Upload Size Limit and Fix &quot;Exceeds the Maximum Upload Size&quot; Errors</h1>
+          <p class="post-dek">Fix &quot;exceeds the maximum upload size for this site&quot;: check your limit, raise it in hPanel or cPanel, use php.ini or .htaccess safely, and fix 413 errors.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Sameer Gupta</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · 4 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-14">14 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20(and%20Fix%20Upload%20Errors)%20https%3A%2F%2Fsamverse.space%2Fblog%2Fincrease-wordpress-upload-size-limit%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20and%20Fix%20%22Exceeds%20the%20Maximum%20Upload%20Size%22%20Errors%20https%3A%2F%2Fsamverse.space%2Fblog%2Fincrease-wordpress-upload-size-limit%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fincrease-wordpress-upload-size-limit%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20(and%20Fix%20Upload%20Errors)&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fincrease-wordpress-upload-size-limit%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20and%20Fix%20%22Exceeds%20the%20Maximum%20Upload%20Size%22%20Errors&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fincrease-wordpress-upload-size-limit%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/increase-wordpress-upload-size-limit/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-increase-wordpress-upload-size-limit.webp" alt="How to Increase the WordPress Upload Size Limit (and Fix Upload Errors)" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-increase-wordpress-upload-size-limit.webp" alt="How to Increase the WordPress Upload Size Limit and Fix &quot;Exceeds the Maximum Upload Size&quot; Errors" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -154,109 +154,158 @@
             <summary>On this page</summary>
             <ol>
               <li><a href="#where-the-upload-limit-comes-from">Where the upload limit comes from</a></li>
-              <li><a href="#check-your-current-limit">Check your current limit</a></li>
-              <li><a href="#raise-the-limit-in-your-hosting-control-panel">Raise the limit in your hosting control panel</a></li>
-              <li><a href="#htaccess-php-ini-and-wp-config-php-why-they-often-don-t-work">.htaccess, php.ini and wp-config.php: why they often don't work</a></li>
+              <li><a href="#check-your-current-limit-first">Check your current limit first</a></li>
+              <li><a href="#method-1-your-hosting-control-panel-most-reliable">Method 1: your hosting control panel (most reliable)</a></li>
+              <li><a href="#method-2-a-user-ini-or-php-ini-file">Method 2: a .user.ini or php.ini file</a></li>
+              <li><a href="#method-3-htaccess-on-some-servers-only">Method 3: .htaccess, on some servers only</a></li>
+              <li><a href="#why-wp-config-php-and-most-plugins-can-t-raise-it">Why wp-config.php and most plugins can't raise it</a></li>
+              <li><a href="#limits-outside-php-nginx-cloudflare-and-multisite">Limits outside PHP: Nginx, Cloudflare and multisite</a></li>
               <li><a href="#other-upload-errors-and-what-they-mean">Other upload errors and what they mean</a></li>
-              <li><a href="#better-options-for-big-files">Better options for big files</a></li>
+              <li><a href="#upload-big-files-without-raising-the-limit">Upload big files without raising the limit</a></li>
+              <li><a href="#do-you-actually-need-a-bigger-limit">Do you actually need a bigger limit?</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>WordPress takes its upload limit from PHP settings like upload_max_filesize and post_max_size, which your host controls.</li>
-              <li>Raising the limit in your hosting panel's PHP settings is more reliable than .htaccess, php.ini or wp-config.php tricks.</li>
-              <li>For big files, compressing images and hosting videos on YouTube or Vimeo is often better than a bigger limit.</li>
+              <li>WordPress takes its upload limit from PHP, using the smaller of upload_max_filesize and post_max_size, so raise both, ideally in your hosting control panel.</li>
+              <li>php.ini, .user.ini and .htaccess changes only work on some servers, wp-config.php cannot raise the limit, and Nginx, Cloudflare or multisite can add limits of their own.</li>
+              <li>Before raising the limit, check whether the file should be smaller: compressed images, embedded videos and SFTP uploads are often the better fix.</li>
             </ul>
           </div>
-<p>You try to upload a brochure PDF, a theme zip or a product video and WordPress refuses with "exceeds the maximum upload size for this site". Many guides suggest pasting code into one file or another, and some of those tricks quietly do nothing. Here's where the limit actually comes from, how to raise it properly, and when a bigger limit isn't the right answer at all.</p>
+<p>WordPress doesn't set its own upload limit. It reads two PHP settings controlled by your hosting, upload_max_filesize and post_max_size, and uses whichever is smaller. To increase it, raise both in your hosting control panel (PHP Configuration in Hostinger's hPanel, or the MultiPHP INI Editor in cPanel), then check the new figure under Media &gt; Add New. If your panel has no such option, a .user.ini, php.ini or .htaccess file works on some servers, while code in wp-config.php won't help at all.</p>
+<p>This guide covers where the limit comes from, each method and when it works, the other limits that cause "413" errors, and how to upload large files without raising anything. If you'd rather not touch server settings, sorting out errors like this is the kind of fix my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> handle.</p>
 
 <h2 id="where-the-upload-limit-comes-from">Where the upload limit comes from</h2>
-<p>WordPress doesn't set its own upload limit. It reads the limits from PHP, the language your site runs on, and those are controlled by your hosting. Two settings matter most:</p>
 <table>
-  <thead><tr><th>Setting</th><th>What it controls</th></tr></thead>
+  <thead><tr><th>PHP setting</th><th>What it controls</th><th>Example value</th></tr></thead>
   <tbody>
-    <tr><td><code>upload_max_filesize</code></td><td>The largest single file PHP will accept</td></tr>
-    <tr><td><code>post_max_size</code></td><td>The largest total amount of data in one request; it should be equal to or larger than upload_max_filesize</td></tr>
-    <tr><td><code>memory_limit</code></td><td>Memory available to process the upload, such as resizing a large photo</td></tr>
-    <tr><td><code>max_execution_time</code> and <code>max_input_time</code></td><td>How long PHP waits, which matters for big files on slow connections</td></tr>
+    <tr><td><code>upload_max_filesize</code></td><td>The largest single file PHP accepts</td><td>64M</td></tr>
+    <tr><td><code>post_max_size</code></td><td>The largest total request, including the file and form data; keep it a little above upload_max_filesize</td><td>72M</td></tr>
+    <tr><td><code>memory_limit</code></td><td>Memory available to process the upload, such as resizing a large photo</td><td>256M</td></tr>
+    <tr><td><code>max_execution_time</code> and <code>max_input_time</code></td><td>How long PHP waits, which matters for big files on slow connections</td><td>300 (seconds)</td></tr>
   </tbody>
 </table>
-<p>WordPress uses the smaller of the first two as your effective limit. On a WordPress multisite network, the network admin settings can set a lower limit on top of this.</p>
+<p>The example values are a reasonable ceiling for a business site, not a target. Choose a limit a little above the largest file you genuinely need. PHP's own defaults are only 2 MB for a single file and 8 MB for a request, which is why a fresh server set-up often rejects ordinary brochures and theme files.</p>
 
-<h2 id="check-your-current-limit">Check your current limit</h2>
+<h2 id="check-your-current-limit-first">Check your current limit first</h2>
 <ul>
-  <li><strong>Media → Add New:</strong> WordPress shows "Maximum upload file size" below the upload area</li>
-  <li><strong>Tools → Site Health → Info:</strong> the Media Handling and Server sections list the PHP upload and post size values</li>
+  <li><strong>Media &gt; Add New</strong> shows "Maximum upload file size" under the upload area. This is the effective limit WordPress will enforce.</li>
+  <li><strong>Tools &gt; Site Health &gt; Info</strong> lists the individual values in the Media Handling and Server sections, including the upload size, post data size and PHP memory limit.</li>
 </ul>
-<p>Note the numbers before you change anything, so you can confirm afterwards that your change worked.</p>
+<p>Note the numbers before changing anything, so you can tell afterwards whether your change actually took effect. Many "it didn't work" moments are a change made in a file the server never reads.</p>
 
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
   <p>Monthly WordPress maintenance: updates, backups, security monitoring, uptime checks and small content changes, so your website stays fast, secure and online.</p>
-  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20(and%20Fix%20Upload%20Errors)%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20and%20Fix%20%22Exceeds%20the%20Maximum%20Upload%20Size%22%20Errors%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="raise-the-limit-in-your-hosting-control-panel">Raise the limit in your hosting control panel</h2>
-<p>This is the most reliable method because it changes PHP's settings at the source.</p>
+<h2 id="method-1-your-hosting-control-panel-most-reliable">Method 1: your hosting control panel (most reliable)</h2>
+<p>This changes PHP's settings at the source, and your host's own tools won't break anything else. At the time of writing:</p>
 <ul>
-  <li><strong>Hostinger's hPanel:</strong> look in the advanced section for PHP configuration, where a PHP options tab lets you change values such as upload_max_filesize and post_max_size</li>
-  <li><strong>cPanel hosts:</strong> look for "MultiPHP INI Editor" or "Select PHP Version", which often has an options tab</li>
-  <li><strong>Other hosts and managed WordPress plans:</strong> look for PHP settings, or ask support to raise the limit for you</li>
+  <li><strong>Hostinger hPanel:</strong> open the website's dashboard, go to the Advanced section, choose PHP Configuration and use the PHP options tab to set upload_max_filesize and post_max_size.</li>
+  <li><strong>cPanel:</strong> use the MultiPHP INI Editor under Software, pick your domain and edit the values in Basic Mode. Hosts running CloudLinux may offer Select PHP Version instead, with an Options tab.</li>
+  <li><strong>Plesk:</strong> look for PHP Settings on the domain's page.</li>
+  <li><strong>Managed WordPress hosting:</strong> PHP settings are often locked. Ask support to raise the limit; many will.</li>
 </ul>
-<p>Increase upload_max_filesize to what you genuinely need, set post_max_size a little higher, save, then recheck Media → Add New. Menu names change over time, so check your host's help pages if you can't find the option. Some budget plans cap these values, and the only way past the cap is a different plan.</p>
+<p>Save, wait a minute, then reload Media &gt; Add New. Menu names change, so check your host's help pages if you can't find the option. If you later switch PHP version, check the values again, because on some panels each version keeps its own settings; <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a> covers the switch itself. Budget plans sometimes cap these values, and the only way past a cap is a different plan.</p>
 
-<h2 id="htaccess-php-ini-and-wp-config-php-why-they-often-don-t-work">.htaccess, php.ini and wp-config.php: why they often don't work</h2>
-<p>You'll find three popular do-it-yourself methods online. Each works only on certain server set-ups:</p>
+<h2 id="method-2-a-user-ini-or-php-ini-file">Method 2: a .user.ini or php.ini file</h2>
+<p>Where PHP runs as FastCGI or PHP-FPM, which is common on shared hosting, PHP reads a file called .user.ini in your site's main folder (the one containing wp-config.php). Some hosts read a file named php.ini there instead. Create the file with your file manager or SFTP and add:</p>
+<pre><code>upload_max_filesize = 64M
+post_max_size = 72M
+memory_limit = 256M
+max_execution_time = 300
+max_input_time = 300</code></pre>
+<p>PHP caches .user.ini files, so a change can take around five minutes to apply. If the numbers in Media &gt; Add New still haven't moved after that, your host ignores the file; delete it and use the control panel or ask support.</p>
+
+<h2 id="method-3-htaccess-on-some-servers-only">Method 3: .htaccess, on some servers only</h2>
+<p>On Apache servers that run PHP as a module, and on LiteSpeed servers that allow it, these lines in the .htaccess file in your site's main folder change the limits:</p>
+<pre><code>php_value upload_max_filesize 64M
+php_value post_max_size 72M
+php_value max_execution_time 300
+php_value max_input_time 300</code></pre>
+<p>On servers that don't support php_value, the same lines cause a 500 Internal Server Error and take the whole site down. Download a copy of .htaccess before editing it, check the site straight away, and restore the copy if anything breaks; see <a href="/blog/wordpress-500-internal-server-error-fix/">fixing a 500 internal server error</a>. A forgotten line here can also cause confusing problems months later, so remove it if it didn't help.</p>
+
+<h2 id="why-wp-config-php-and-most-plugins-can-t-raise-it">Why wp-config.php and most plugins can't raise it</h2>
 <ul>
-  <li><strong>.htaccess:</strong> lines starting with <code>php_value</code> work only where the server supports them. On many hosts they're ignored, and on some they cause a 500 Internal Server Error that takes the whole site down</li>
-  <li><strong>php.ini or .user.ini:</strong> a file in the site's main folder can override PHP settings on some hosts, and changes can take a few minutes to apply. Other hosts ignore these files entirely</li>
-  <li><strong>wp-config.php:</strong> adding an <code>ini_set()</code> line for the upload size generally has no effect, because PHP doesn't allow upload_max_filesize and post_max_size to be changed once WordPress is already running. The memory setting you may have seen, WP_MEMORY_LIMIT, controls memory, not upload size</li>
+  <li><strong>wp-config.php:</strong> adding ini_set lines for the upload size has no effect, because PHP doesn't allow upload_max_filesize and post_max_size to be changed once a script is already running. WP_MEMORY_LIMIT, which you may have seen suggested, controls memory, not upload size.</li>
+  <li><strong>Plugins:</strong> WordPress's upload_size_limit filter can lower the limit WordPress enforces, but it can't make PHP accept bigger files. Plugins that promise to increase the limit either write the same .htaccess or .ini lines described above, or change only the number WordPress displays.</li>
 </ul>
-<p>If you do try one of these, take a backup of the file first and remove your change if it doesn't help. A forgotten line in .htaccess can cause confusing problems months later. Prefer the control panel whenever it's available.</p>
+
+<h2 id="limits-outside-php-nginx-cloudflare-and-multisite">Limits outside PHP: Nginx, Cloudflare and multisite</h2>
+<p>If PHP's values are high enough and uploads still fail, something else is in the way:</p>
+<ul>
+  <li><strong>Nginx:</strong> its client_max_body_size setting defaults to just 1 MB and produces "413 Request Entity Too Large" when exceeded. Your host needs to raise it in the server configuration, for example to client_max_body_size 64M.</li>
+  <li><strong>Cloudflare:</strong> requests through Cloudflare have their own size cap, 100 MB on the free plan at the time of writing. Larger uploads have to bypass the proxy, for example over SFTP. See <a href="/blog/cloudflare-wordpress-setup-guide/">setting up Cloudflare on WordPress</a>.</li>
+  <li><strong>WordPress multisite:</strong> the network admin sets a "Max upload file size" in kilobytes under Network Admin &gt; Settings, on top of PHP's limit. Its default is low, so raise it there too.</li>
+  <li><strong>Security rules:</strong> server firewalls such as ModSecurity can block large or unusual uploads with a 403 or a vague error. Your host can check its logs.</li>
+</ul>
 
 <h2 id="other-upload-errors-and-what-they-mean">Other upload errors and what they mean</h2>
 <table>
   <thead><tr><th>What you see</th><th>Likely cause</th></tr></thead>
   <tbody>
-    <tr><td>"The link you followed has expired" when uploading a theme or plugin</td><td>The zip is larger than post_max_size or upload_max_filesize</td></tr>
-    <tr><td>"413 Request Entity Too Large"</td><td>A limit on the web server itself, separate from PHP, which your host needs to raise</td></tr>
-    <tr><td>"The server cannot process the image"</td><td>Not enough memory to resize a very large photo; see <a href="/blog/wordpress-memory-limit-errors/">memory limit errors</a></td></tr>
-    <tr><td>"Sorry, you are not allowed to upload this file type"</td><td>WordPress blocks some file types for security; it's not a size problem</td></tr>
-    <tr><td>"Unable to create directory" for the uploads folder</td><td>Folder permissions or a full disk on your hosting account</td></tr>
-    <tr><td>A vague "HTTP error"</td><td>Often a time-out, memory limit or security rule; try a smaller file and check the error log</td></tr>
+    <tr><td>"exceeds the maximum upload size for this site"</td><td>The file is bigger than the effective limit; raise both PHP values or shrink the file</td></tr>
+    <tr><td>"The uploaded file exceeds the upload_max_filesize directive in php.ini"</td><td>PHP rejected the file; raise upload_max_filesize</td></tr>
+    <tr><td>"The link you followed has expired" when uploading a theme or plugin</td><td>The zip is bigger than post_max_size, so the form data was dropped</td></tr>
+    <tr><td>"413 Request Entity Too Large"</td><td>A web server or Cloudflare limit, separate from PHP</td></tr>
+    <tr><td>"HTTP error" or "The server cannot process the image"</td><td>Usually memory, time-outs or the image library, not size; see <a href="/blog/wordpress-http-error-image-upload-fix/">fixing the HTTP error on image uploads</a></td></tr>
+    <tr><td>"Allowed memory size exhausted" during an upload</td><td>PHP ran out of memory; see <a href="/blog/wordpress-memory-limit-errors/">memory limit errors</a></td></tr>
+    <tr><td>"Sorry, you are not allowed to upload this file type"</td><td>WordPress blocks some file types for security; it isn't a size problem</td></tr>
   </tbody>
 </table>
-<p>For other error messages, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
+<p>For other messages, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
 
-<h2 id="better-options-for-big-files">Better options for big files</h2>
-<p>A higher limit fixes the error, but it isn't always the right fix. Large files slow your site and fill your hosting storage and backups.</p>
+<h2 id="upload-big-files-without-raising-the-limit">Upload big files without raising the limit</h2>
 <ul>
-  <li><strong>Photos:</strong> resize and compress before uploading. A phone photo several megabytes in size can usually be reduced to a small fraction of that with no visible difference on screen; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a></li>
-  <li><strong>Videos:</strong> upload to YouTube or Vimeo and embed them, rather than hosting video files on your server; see <a href="/blog/video-on-business-website/">video on your business website</a></li>
-  <li><strong>PDF brochures and catalogues:</strong> compress them before uploading, especially if they were exported at print quality</li>
-  <li><strong>Very large downloads:</strong> consider a cloud storage link for files only a few people need</li>
-  <li><strong>Themes and plugins:</strong> upload the unzipped folder to wp-content/themes or wp-content/plugins through FTP instead</li>
-  <li><strong>Migration backups:</strong> importing a whole-site backup through the browser often hits these limits; uploading via FTP or using your host's migration tool is usually simpler</li>
+  <li><strong>Themes and plugins:</strong> unzip them on your computer and upload the folder to wp-content/themes or wp-content/plugins over SFTP, then activate them in the dashboard.</li>
+  <li><strong>Media files:</strong> upload the file over SFTP, then add it to the Media Library with WP-CLI if your host provides SSH access, as in the example below.</li>
+  <li><strong>Whole-site backups and migrations:</strong> importing a large backup through a migration plugin in the browser often hits these limits. Uploading the archive over SFTP, or using your host's migration tool, is usually simpler.</li>
+</ul>
+<pre><code>wp media import /home/username/uploads/product-brochure.pdf --title="Product brochure"</code></pre>
+
+<h2 id="do-you-actually-need-a-bigger-limit">Do you actually need a bigger limit?</h2>
+<p>A higher limit fixes the error, but large files slow pages down and fill your hosting space and backups. Often the better fix is a smaller file:</p>
+<ul>
+  <li><strong>Photos:</strong> resize to the size they're shown at and compress them before uploading. A multi-megabyte phone photo usually shrinks dramatically with no visible difference on screen; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</li>
+  <li><strong>Videos:</strong> upload to YouTube or Vimeo and embed them instead of hosting video files on your server.</li>
+  <li><strong>PDF brochures and catalogues:</strong> files exported at print quality are often far larger than a screen needs. Export a web version for the site.</li>
 </ul>
 
-<p>Stuck on upload errors, or moving a large site to new hosting? I can sort out server settings and migrations for you; see <a href="/wordpress-maintenance/">WordPress maintenance</a> or <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>What is the default WordPress upload limit?</h3>
+<p>WordPress has no default of its own; it uses your server's PHP settings. PHP's built-in defaults allow only 2 MB per file, but most hosts set something higher. Media &gt; Add New shows the limit on your site.</p>
+<h3>Why didn't my php.ini change work?</h3>
+<p>Your server may not read that file, it may be in the wrong folder, or PHP may still be using a cached copy. Wait five minutes, check Site Health, and if nothing changed, use the hosting control panel or ask support.</p>
+<h3>Can I increase the upload size in wp-config.php?</h3>
+<p>No. PHP doesn't allow upload_max_filesize and post_max_size to be changed from inside WordPress, so lines added to wp-config.php have no effect. Change the values in your hosting panel or a server configuration file instead.</p>
+<h3>Is there a plugin that increases the upload size?</h3>
+<p>Plugins can't exceed what your server allows. Some write .htaccess or .ini lines for you, which works only where those files are supported. The hosting control panel is more reliable.</p>
+<h3>How do I upload a file larger than the limit?</h3>
+<p>Upload it over SFTP or your host's file manager instead of the browser. Themes and plugins can go straight into their folders, and media files can be added to the library with WP-CLI.</p>
+<h3>Is it safe to set a very high upload limit?</h3>
+<p>Set it to what you need rather than the maximum. Very high limits let anyone with upload access fill your hosting space, and big uploads tie up server resources on cheaper plans.</p>
+
+<p>Stuck on upload errors, or moving a large site that won't import through the browser? I can sort out server settings as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and move sites between hosts with <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20(and%20Fix%20Upload%20Errors)%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20and%20Fix%20%22Exceeds%20the%20Maximum%20Upload%20Size%22%20Errors%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20(and%20Fix%20Upload%20Errors)%20https%3A%2F%2Fsamverse.space%2Fblog%2Fincrease-wordpress-upload-size-limit%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20and%20Fix%20%22Exceeds%20the%20Maximum%20Upload%20Size%22%20Errors%20https%3A%2F%2Fsamverse.space%2Fblog%2Fincrease-wordpress-upload-size-limit%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fincrease-wordpress-upload-size-limit%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20(and%20Fix%20Upload%20Errors)&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fincrease-wordpress-upload-size-limit%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20and%20Fix%20%22Exceeds%20the%20Maximum%20Upload%20Size%22%20Errors&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fincrease-wordpress-upload-size-limit%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/increase-wordpress-upload-size-limit/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -277,18 +326,23 @@
             <strong>On this page</strong>
             <ol>
               <li><a href="#where-the-upload-limit-comes-from">Where the upload limit comes from</a></li>
-              <li><a href="#check-your-current-limit">Check your current limit</a></li>
-              <li><a href="#raise-the-limit-in-your-hosting-control-panel">Raise the limit in your hosting control panel</a></li>
-              <li><a href="#htaccess-php-ini-and-wp-config-php-why-they-often-don-t-work">.htaccess, php.ini and wp-config.php: why they often don't work</a></li>
+              <li><a href="#check-your-current-limit-first">Check your current limit first</a></li>
+              <li><a href="#method-1-your-hosting-control-panel-most-reliable">Method 1: your hosting control panel (most reliable)</a></li>
+              <li><a href="#method-2-a-user-ini-or-php-ini-file">Method 2: a .user.ini or php.ini file</a></li>
+              <li><a href="#method-3-htaccess-on-some-servers-only">Method 3: .htaccess, on some servers only</a></li>
+              <li><a href="#why-wp-config-php-and-most-plugins-can-t-raise-it">Why wp-config.php and most plugins can't raise it</a></li>
+              <li><a href="#limits-outside-php-nginx-cloudflare-and-multisite">Limits outside PHP: Nginx, Cloudflare and multisite</a></li>
               <li><a href="#other-upload-errors-and-what-they-mean">Other upload errors and what they mean</a></li>
-              <li><a href="#better-options-for-big-files">Better options for big files</a></li>
+              <li><a href="#upload-big-files-without-raising-the-limit">Upload big files without raising the limit</a></li>
+              <li><a href="#do-you-actually-need-a-bigger-limit">Do you actually need a bigger limit?</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20(and%20Fix%20Upload%20Errors)%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22How%20to%20Increase%20the%20WordPress%20Upload%20Size%20Limit%20and%20Fix%20%22Exceeds%20the%20Maximum%20Upload%20Size%22%20Errors%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>

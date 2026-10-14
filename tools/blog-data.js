@@ -4591,84 +4591,156 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'woocommerce-store-launch-checklist',
-    seoTitle: 'WooCommerce Store Launch Checklist (India)',
-    title: 'WooCommerce Store Launch Checklist: 30 Things to Check Before Going Live',
-    description: 'WooCommerce launch checklist for Indian stores: products, payments, shipping, taxes, policies, emails, speed, SEO and testing so first orders go smoothly.',
+    seoTitle: 'WooCommerce Store Launch Checklist (India): Go Live Safely',
+    title: 'WooCommerce Store Launch Checklist for Indian Stores: Settings, Test Orders and Launch-Day Steps',
+    description: 'A WooCommerce launch checklist for Indian stores: store settings, products, payments, shipping, GST, emails, policies, test orders and launch-day steps.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization', 'wordpress-seo-services'],
     body: `
-<p>Launching an online store is exciting, and a broken checkout on day one is the fastest way to lose that momentum. Run through this checklist before you go live so your first customers have a smooth experience.</p>
+<p>Before a WooCommerce store goes live, confirm the core store settings, check every product has a price, weight, tax class and stock level, run test orders through every payment method (including failed and cancelled payments), check shipping charges, GST and order emails, publish your policies and take a full backup. On launch day, switch the payment gateway to live keys, place one real low-value order and refund it, delete the test orders and open the store to search engines.</p>
+<p>The order matters as much as the list. This checklist follows the same test-and-launch stages as my <a href="/woocommerce-developer/">WooCommerce development</a> projects: test orders with the gateway in test mode, then live keys and a real low-value order to confirm the whole flow works. Payments, shipping, GST and security each have their own detailed guide, linked below, so this page stays a checklist.</p>
+
+<h2>Launch timeline</h2>
+<table>
+  <thead><tr><th>When</th><th>What to get done</th></tr></thead>
+  <tbody>
+    <tr><td>Two to three weeks before</td><td>Apply for the payment gateway, since KYC approval is in the provider's hands; open a courier or shipping aggregator account; get GST rates and HSN codes from your CA; draft your policies</td></tr>
+    <tr><td>One to two weeks before</td><td>Products complete, shipping and tax configured, emails branded, test orders run in test mode</td></tr>
+    <tr><td>Launch day</td><td>Live keys, one real order and refund, test data cleared, store opened to search engines</td></tr>
+    <tr><td>First two weeks</td><td>Orders, payments, emails and stock checked every day</td></tr>
+  </tbody>
+</table>
+
+<h2>1. Core store settings</h2>
+<ul>
+  <li><strong>WooCommerce &gt; Settings &gt; General:</strong> the store address should be the address you're GST-registered at, because WooCommerce treats it as your base for tax. Set selling and shipping locations to India unless you ship abroad, the currency to Indian rupee, and the number of decimals you want shown.</li>
+  <li><strong>Settings &gt; Products:</strong> set the weight unit to kg and dimensions to cm to match your courier. Under Inventory, switch on stock management, set the low-stock and out-of-stock notification email and threshold, and check the "Hold stock" time, after which unpaid pending orders are cancelled and stock released.</li>
+  <li><strong>Settings &gt; Accounts &amp; Privacy:</strong> allow guest checkout, decide whether customers can create accounts, and set the privacy text shown at checkout.</li>
+  <li><strong>Settings &gt; Advanced:</strong> check the cart, checkout and My Account pages are assigned, and choose your terms and conditions page.</li>
+  <li><strong>Site visibility:</strong> newer versions of WooCommerce have a "Coming soon" mode under Settings. Keep it on while you test, and note it for launch day.</li>
+</ul>
+
+<h2>2. Products and catalogue</h2>
+<ul>
+  <li>Every product has a price, SKU, weight, dimensions, tax class, stock quantity, category and photos</li>
+  <li>Every variation has its own price and stock; a variation without a price can't be bought</li>
+  <li>Sale prices and scheduled offers start and end when they should</li>
+  <li>Sample or demo products from the theme are deleted</li>
+  <li>Categories, search and filters return what a shopper expects</li>
+  <li>Product pages answer price, delivery and returns questions near the Add to cart button; see <a href="/blog/woocommerce-product-page-optimization/">product page optimisation</a></li>
+</ul>
+
+<h2>3. Payments</h2>
+<ul>
+  <li>Gateway account in your business name, KYC approved and settlement bank account verified</li>
+  <li>Successful test payments by UPI, card and net banking, each leaving the order as Processing</li>
+  <li>Failed and cancelled payments leave the order as Failed or Pending payment, never Processing</li>
+  <li>Webhooks configured, so a paid order is marked paid even if the shopper closes the browser before returning to your site</li>
+  <li>A refund from the WooCommerce order screen reaches the gateway</li>
+  <li>Cash on delivery switched on or off deliberately, with any limits you need</li>
+</ul>
+<p>Choosing and connecting the gateway is covered in <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a>.</p>
+
+<h2>4. Shipping and COD</h2>
+<ul>
+  <li>Shipping zones in the right order, with the charges you expect for your city, your state and the rest of India</li>
+  <li>Free-shipping threshold working, including when a coupon is applied</li>
+  <li>COD offered only where your courier accepts it, with any COD fee shown clearly</li>
+  <li>Unserviceable pin codes blocked at checkout</li>
+</ul>
+<p>Zones, weight-based rates and courier integrations are explained in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+
+<h2>5. GST and invoices</h2>
+<ul>
+  <li>Tax classes and rates match your CA's figures, and prices display the way you chose, usually inclusive of GST</li>
+  <li>An order to your own state shows CGST and SGST; an order to another state shows IGST</li>
+  <li>Invoices carry your GSTIN, HSN codes, the tax split and a consecutive invoice number</li>
+  <li>Business buyers can enter their GSTIN at checkout, if you sell to businesses</li>
+</ul>
+<p>Step-by-step settings are in <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup for Indian stores</a>.</p>
+
+<h2>6. Order emails</h2>
+<ul>
+  <li><strong>WooCommerce &gt; Settings &gt; Emails:</strong> the New order email goes to whoever packs and dispatches orders, and the From name and address use your business name and domain</li>
+  <li>Processing, Completed and Refunded emails branded and readable on a phone</li>
+  <li>Emails sent through SMTP or a transactional email service, so they reach inboxes rather than spam</li>
+  <li>WhatsApp or SMS order updates tested, if you use them</li>
+</ul>
+<p>Branding and delivery are covered in <a href="/blog/customize-woocommerce-emails/">customising WooCommerce order emails</a>.</p>
+
+<h2>7. Policies and legal pages</h2>
+<ul>
+  <li>Terms and conditions, privacy policy, refund and cancellation policy, and shipping and delivery policy, each linked from the footer and checkout</li>
+  <li>A contact page with your registered business name, address, phone and email</li>
+  <li>Any details India's consumer protection rules for e-commerce expect sellers to display; check the current rules with your CA or lawyer</li>
+</ul>
+<p>Payment gateways commonly check these pages before approving a website. Writing the returns policy is covered in <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce</a>. None of this is legal advice.</p>
+
+<h2>8. Security, speed and tracking</h2>
+<ul>
+  <li>Strong passwords and two-factor authentication for administrators, Shop Manager accounts for staff, and test users deleted; the full list is in the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a></li>
+  <li>Daily off-site backups scheduled, because a store's orders change every day</li>
+  <li>Cart, checkout and My Account pages excluded from page caching, including any server or CDN cache, so shoppers never see stale totals or someone else's cart</li>
+  <li>Product, category, cart and checkout pages tested for speed on a phone</li>
+  <li>Unique titles and descriptions for categories and key products, and the sitemap submitted to Search Console</li>
+  <li>Analytics recording purchases once each, with the right value, from a test order</li>
+</ul>
+
+<h2>The test orders to run</h2>
+<table>
+  <thead><tr><th>Scenario</th><th>What to check</th></tr></thead>
+  <tbody>
+    <tr><td>Prepaid order by UPI on a phone</td><td>UPI app opens, order becomes Processing, stock drops, customer and admin emails arrive, invoice attached</td></tr>
+    <tr><td>Card payment that fails</td><td>Order is Failed or Pending payment, no confirmation email, the shopper can retry</td></tr>
+    <tr><td>Shopper closes the payment window</td><td>Order stays Pending payment, then cancels after the hold-stock time and stock returns</td></tr>
+    <tr><td>COD order</td><td>COD appears only where allowed, any fee shows before the order is placed</td></tr>
+    <tr><td>Address in another state</td><td>IGST instead of CGST and SGST</td></tr>
+    <tr><td>Coupon applied</td><td>Discount, tax and free-shipping threshold all calculate correctly</td></tr>
+    <tr><td>Refund</td><td>Money returns through the gateway, stock is restored if you chose that, refund email sent</td></tr>
+    <tr><td>Guest checkout on mobile data</td><td>The whole flow works without an account on a slower connection</td></tr>
+  </tbody>
+</table>
+
+<h2>Launch day, in order</h2>
+<ol>
+  <li>Take a full backup.</li>
+  <li>Switch the gateway to live keys, and check the live webhook too; many gateways keep test and live webhook settings separately.</li>
+  <li>Place a real low-value order by UPI, check the money arrives in the gateway dashboard, then refund it from WooCommerce.</li>
+  <li>Delete test orders and test customers, and reset stock levels the tests changed.</li>
+  <li>Turn off Coming soon mode, and untick "Discourage search engines" under Settings &gt; Reading.</li>
+  <li>Clear every cache, then check the store as a logged-out visitor.</li>
+  <li>Submit the sitemap in Search Console and tell your existing customers.</li>
+</ol>
+
+<h2>The first two weeks</h2>
+<ul>
+  <li>Compare each day's orders with the gateway dashboard. A paid order stuck as Pending payment usually means a webhook problem.</li>
+  <li>Check <strong>WooCommerce &gt; Status &gt; Logs</strong> for payment gateway errors.</li>
+  <li>Make sure order emails are arriving, and ask early customers whether they received theirs.</li>
+  <li>Watch stock levels against what's actually on your shelves.</li>
+  <li>Turn repeated customer questions into answers on product pages or an FAQ.</li>
+</ul>
+<p>After that, settle into the routine in the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
 
 <p>Still deciding on a platform? See <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
 
-<h2>Products</h2>
-<ol>
-  <li>Every product has a clear title, description, price and good photos</li>
-  <li>Variations (size, colour, weight) set up and tested</li>
-  <li>Stock levels entered, with low-stock notifications on</li>
-  <li>Categories and tags organised the way customers browse</li>
-  <li>Sale prices and scheduled offers checked</li>
-  <li>Product images compressed so pages load quickly</li>
-</ol>
+<h2>FAQs</h2>
+<h3>How do I take a WooCommerce store live?</h3>
+<p>Switch the payment gateway from test to live keys, turn off Coming soon mode, untick "Discourage search engines", clear caches, then place and refund one real low-value order to confirm payments, emails and stock all work.</p>
+<h3>How do I test WooCommerce checkout before launch?</h3>
+<p>Put the gateway in test mode and run successful, failed and cancelled payments, a COD order, an out-of-state order, a coupon order and a refund. After going live, confirm the real flow with one small genuine order.</p>
+<h3>Should I delete test orders before launch?</h3>
+<p>Yes. Test orders distort sales reports and stock levels and can confuse your accounts. Delete them, along with test customer accounts, after your final checks, and reset any stock they changed.</p>
+<h3>How long does it take to launch a WooCommerce store?</h3>
+<p>Usually 2–4 weeks once product details and photos are ready, depending on the number of products and features. Payment gateway approval runs on the provider's timeline, so apply early.</p>
+<h3>Which pages does an Indian online store need before launch?</h3>
+<p>Terms and conditions, a privacy policy, a refund and cancellation policy, a shipping policy and a contact page with your business details. Gateways often check for them, and your CA or lawyer should review the wording.</p>
+<h3>Can I launch with only a few products?</h3>
+<p>Yes. A small catalogue with complete, well-photographed product pages sells better than a large one full of gaps. Add products in batches once orders are flowing.</p>
 
-<h2>Payments</h2>
-<ol start="7">
-  <li>Payment gateway (for example Razorpay, PayU or Cashfree) switched from test mode to live mode</li>
-  <li>Test payments completed with UPI, card and net banking</li>
-  <li>Failed and cancelled payments tested: orders shouldn't get stuck as "pending"</li>
-  <li>Gateway webhooks configured</li>
-  <li>Cash on Delivery enabled or disabled deliberately, with any limits you need</li>
-</ol>
-<p>More detail: <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a> and <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
-
-<h2>Shipping and taxes</h2>
-<ol start="12">
-  <li>Shipping zones and rates set (local, state, national, international)</li>
-  <li>Free-shipping thresholds working</li>
-  <li>GST settings configured correctly for your products (confirm with your accountant)</li>
-  <li>Invoices include the details your business needs</li>
-</ol>
-
-<h2>Policies and legal pages</h2>
-<ol start="16">
-  <li>Terms and conditions</li>
-  <li>Privacy policy</li>
-  <li>Refund, return and cancellation policy</li>
-  <li>Shipping policy</li>
-  <li>Contact page with business details</li>
-</ol>
-
-<p>Writing your returns policy? See <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce</a>.</p>
-
-<h2>Emails and notifications</h2>
-<ol start="21">
-  <li>Order confirmation, processing and completed emails branded and tested</li>
-  <li>New order alerts reaching the right person (email and ideally WhatsApp)</li>
-  <li>Emails landing in the inbox, not spam (use a proper sending setup)</li>
-</ol>
-
-<p>For branding, content and inbox delivery in detail, see <a href="/blog/customize-woocommerce-emails/">how to customise WooCommerce order emails</a>.</p>
-
-<h2>Speed, mobile and SEO</h2>
-<ol start="24">
-  <li>Checkout tested on real phones, start to finish</li>
-  <li>Homepage, category and product pages tested on PageSpeed Insights</li>
-  <li>Unique titles and descriptions for products and categories</li>
-  <li>Product schema markup enabled (via your SEO plugin)</li>
-  <li>Sitemap submitted in Google Search Console</li>
-</ol>
-
-<h2>Final checks</h2>
-<ol start="29">
-  <li>Full backup taken, and automatic backups scheduled</li>
-  <li>Analytics tracking purchases and key events</li>
-</ol>
-
-<p>Once live, keep improving: see <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a> and <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a>.</p>
-
-<h2>After launch</h2>
-<p>Watch the first orders closely, reply quickly to customer questions, and check reports weekly. Keep plugins updated and the store backed up; see the <a href="/blog/wordpress-maintenance-checklist/">maintenance checklist</a>. Need help setting it all up? See <a href="/woocommerce-developer/">WooCommerce store development</a>.</p>
+<p>Want your store set up and tested before the first real customer arrives? In my <a href="/woocommerce-developer/">WooCommerce development</a> process, prepaid and COD test orders, including failed and cancelled payments, come first; then live keys go in and a real low-value order confirms the whole flow. You get a full backup taken at launch, with the test orders cleared out.</p>
 `,
   },
   {
@@ -6257,62 +6329,134 @@ wp cache flush</code></pre>
   },
   {
     slug: 'woocommerce-product-page-optimization',
-    seoTitle: 'WooCommerce Product Page Optimization for More Sales',
-    title: 'WooCommerce Product Page Optimization: 12 Ways to Sell More',
-    description: 'Optimize WooCommerce product pages for more sales: photos, descriptions, clear pricing, trust signals, reviews, delivery info, mobile layout and speed.',
+    seoTitle: 'WooCommerce Product Page Optimization: What Makes It Sell',
+    title: 'WooCommerce Product Page Optimization: Photos, Pricing, Delivery Details and Layouts That Help Shoppers Buy',
+    description: 'Optimize WooCommerce product pages: mobile layout, photos, GST-inclusive pricing, delivery and COD details, variations, reviews, speed and product schema.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization', 'landing-page-design'],
     body: `
-<p>Your product page is where the buying decision happens. Small improvements there often lift sales more than extra traffic does. Here are 12 practical ways to make WooCommerce product pages sell better.</p>
+<p>A WooCommerce product page sells when a shopper can answer four questions on a phone without hunting: what is it, what will it cost in total, when will it arrive, and can I trust this store? Put sharp photos, a descriptive title, the GST-inclusive price, the variation picker, delivery and cash on delivery details and a clear Add to cart button near the top. Follow with a scannable description, specifications, reviews and a short returns summary, and keep the whole page fast.</p>
+<p>Most shoppers buy on their phones, so in my <a href="/woocommerce-developer/">WooCommerce development</a> work product pages, cart and checkout are kept light and simple. This guide covers what goes on the page and where; the checkout itself is covered in <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
 
-<h2>Show the product properly</h2>
-<ol>
-  <li><strong>High-quality photos from several angles</strong>, plus close-ups, scale and in-use shots. Compress them so the page stays fast.</li>
-  <li><strong>A short video</strong> where it helps, such as unboxing, how it works or texture.</li>
-  <li><strong>Clear variation selection</strong> (size, colour, weight) with swatches and the right photo shown for each option.</li>
-</ol>
+<h2>What shoppers need to see, and where</h2>
+<table>
+  <thead><tr><th>Shopper's question</th><th>Answer it with</th><th>Where on the page</th></tr></thead>
+  <tbody>
+    <tr><td>What is it, exactly?</td><td>Main photo, descriptive title, short summary</td><td>First screen</td></tr>
+    <tr><td>What will it cost in total?</td><td>GST-inclusive price, any discount, delivery charge or free-delivery threshold</td><td>Beside the title</td></tr>
+    <tr><td>Will it suit me?</td><td>Variation swatches, size guide, key specifications</td><td>Above Add to cart</td></tr>
+    <tr><td>When will it arrive, and can I pay cash?</td><td>Delivery estimate by pin code, COD availability</td><td>Just below Add to cart</td></tr>
+    <tr><td>Can I trust this store?</td><td>Ratings, a returns summary, WhatsApp or phone contact, payment options</td><td>Near Add to cart, and again lower down</td></tr>
+    <tr><td>What else should I know?</td><td>Full description, usage or care, product FAQs</td><td>Below the first screen</td></tr>
+  </tbody>
+</table>
 
-<h2>Write to sell, and to rank</h2>
-<ol start="4">
-  <li><strong>Descriptive titles</strong> that include what buyers search for (for example "Cold-pressed groundnut oil, 1 litre").</li>
-  <li><strong>Benefit-led descriptions:</strong> start with why it matters, then details, ingredients or specifications. Write your own. Copied manufacturer text is used by every competitor.</li>
-  <li><strong>Scannable specifications</strong> in a short list or table.</li>
-</ol>
+<h2>The first screen on a phone</h2>
+<p>Open one of your product pages on an ordinary Android phone and look at what appears before you scroll. Ideally that's the main image, title, price, star rating, variation picker and Add to cart button. Things that commonly push them out of view:</p>
+<ul>
+  <li>Stacked announcement bars, large headers and promotional banners</li>
+  <li>Pop-ups and chat bubbles covering the button</li>
+  <li>Oversized image galleries that fill the whole screen</li>
+</ul>
+<p>A sticky Add to cart bar that appears as the shopper scrolls helps on long pages; many themes include one. How you change the layout depends on your set-up: block themes edit the Single Product template under <strong>Appearance &gt; Editor &gt; Templates</strong>, Elementor Pro's Theme Builder has a single product template, and classic themes usually need a child theme and WooCommerce hooks.</p>
 
-<p>For the copy itself, see <a href="/blog/write-product-descriptions-that-sell/">how to write product descriptions that sell</a>.</p>
+<h2>Photos and video</h2>
+<ul>
+  <li><strong>A consistent main image</strong> on the same plain background across the catalogue, so category pages look tidy.</li>
+  <li><strong>Then the photos that answer questions:</strong> other angles, close-ups of texture or stitching, something that shows scale, the product in use, and what's in the box.</li>
+  <li><strong>One aspect ratio for every image,</strong> usually square, so the gallery doesn't jump as photos load.</li>
+  <li><strong>A photo for each variation.</strong> In Product data &gt; Variations, each variation can have its own image, which swaps in when the shopper picks that colour.</li>
+  <li><strong>Zoom and lightbox:</strong> WooCommerce includes gallery zoom, lightbox and slider features that most themes switch on; check yours does.</li>
+  <li><strong>Short videos</strong> for texture, fit or how something works, embedded from YouTube or as a small file, without autoplaying sound.</li>
+</ul>
+<p>Resize and compress every image before upload; <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> explains how without losing quality.</p>
 
-<h2>Remove doubts</h2>
-<ol start="7">
-  <li><strong>Clear pricing:</strong> show the price, any discount, taxes and whether shipping is extra, before checkout.</li>
-  <li><strong>Delivery information:</strong> estimated delivery time, shipping cost and Cash on Delivery availability near the "Add to cart" button.</li>
-  <li><strong>Returns and guarantees:</strong> a short summary with a link to the full policy.</li>
-  <li><strong>Genuine reviews and ratings.</strong> Encourage customers to review after delivery. Never fake reviews.</li>
-</ol>
+<h2>Title, price and short description</h2>
+<ul>
+  <li><strong>Titles that say what it is:</strong> product type, the key attribute and the size or quantity, such as "Cold-pressed groundnut oil, 1 litre glass bottle", rather than a brand-only name.</li>
+  <li><strong>Prices inclusive of GST,</strong> so the total doesn't jump at checkout. WooCommerce shows the regular price struck through beside a sale price automatically.</li>
+  <li><strong>Delivery cost upfront:</strong> a line such as "Free delivery on orders above" your threshold, or the flat charge, beside the price.</li>
+  <li><strong>The short description</strong> (the Product short description box) appears near the price on most themes. Use two to four lines or bullets with the facts that decide the purchase.</li>
+  <li><strong>Packaged goods:</strong> if you sell pre-packaged products, Indian packaging rules generally require details such as MRP, net quantity and country of origin to be shown on online listings too. Check the current requirements with your CA or a lawyer.</li>
+</ul>
+<p>For the words themselves, see <a href="/blog/write-product-descriptions-that-sell/">how to write product descriptions that sell</a>.</p>
 
-<p>Accurate stock status matters too; see <a href="/blog/woocommerce-inventory-management/">inventory management</a>.</p>
+<h2>Variations that don't confuse</h2>
+<ul>
+  <li>Use colour and size swatches instead of dropdowns where a plugin or your theme supports them.</li>
+  <li>Mark or hide combinations that are out of stock, so nobody picks one and hits an error.</li>
+  <li>Pre-select the most popular option with Default Form Values, so the exact price shows immediately instead of a range.</li>
+  <li>Put a size guide link right beside the size picker.</li>
+</ul>
+<p>Setting attributes and variations up cleanly is covered in <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>
 
-<h2>Make buying effortless</h2>
-<ol start="11">
-  <li><strong>Mobile-first layout:</strong> price, options and a sticky "Add to cart" button visible without hunting.</li>
-  <li><strong>Help when needed:</strong> a WhatsApp button for quick questions about size, usage or delivery. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</li>
-</ol>
+<h2>Delivery, COD and returns beside the button</h2>
+<p>Shoppers often message a store to ask these things, so answer them where the decision happens:</p>
+<ul>
+  <li><strong>A pin code checker</strong> showing whether you deliver there, an estimated delivery date and whether COD is available; see <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checkers</a>.</li>
+  <li><strong>Dispatch time,</strong> such as "Dispatched within two working days", if you can keep that promise.</li>
+  <li><strong>Payment options</strong> in plain words: UPI, cards, net banking and COD where offered.</li>
+  <li><strong>A one-line returns summary</strong> with a link to the full policy.</li>
+  <li><strong>A WhatsApp button</strong> that opens a chat with the product name already typed in.</li>
+</ul>
 
-<p>Losing buyers at checkout? See <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</p>
+<h2>Description, specifications and FAQs</h2>
+<ul>
+  <li><strong>Description:</strong> lead with why it matters, then the details, uses and care instructions, using short paragraphs and subheadings. Write your own; copied manufacturer text appears on every competitor's site.</li>
+  <li><strong>Specifications as attributes:</strong> add them in Product data &gt; Attributes with "Visible on the product page" ticked, and WooCommerce shows them as a tidy table. Consistent attributes also power product filters.</li>
+  <li><strong>Product FAQs:</strong> turn the questions customers ask on WhatsApp into short answers on the page.</li>
+  <li><strong>Tabs or one scrolling page:</strong> on phones, shoppers often miss content hidden in tabs. Accordions or a single scrolling page usually work better.</li>
+</ul>
 
-<h2>Don't forget speed</h2>
-<p>Slow product pages lose sales, especially on mobile data. Optimize images, limit heavy plugins and use good hosting; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
+<h2>Reviews and trust</h2>
+<ul>
+  <li>In <strong>WooCommerce &gt; Settings &gt; Products</strong>, enable reviews and star ratings, and show the "verified owner" label. You can also limit reviews to verified buyers.</li>
+  <li>Ask for a review after delivery, not after payment, and invite photos.</li>
+  <li>Show low-stock messages only when they're true; the stock display setting in Inventory can show quantities only when stock runs low.</li>
+  <li>Never write, buy or incentivise fake reviews. Collecting and moderating real ones is covered in <a href="/blog/woocommerce-product-reviews/">WooCommerce product reviews</a>.</li>
+</ul>
+
+<h2>Cross-sells without clutter</h2>
+<p>WooCommerce's Linked Products tab has upsells, shown on the product page, and cross-sells, shown in the cart, while related products are picked automatically from categories and tags. A few well-chosen suggestions help; a wall of them distracts from the product being sold. <a href="/blog/woocommerce-product-bundles-upsells/">Bundles, upsells and cross-sells</a> explains when each works.</p>
+
+<h2>Speed and search</h2>
+<ul>
+  <li><strong>Don't lazy-load the main product image.</strong> It's usually the largest element on the page, and delaying it makes the page feel slow. Lazy-load gallery images and everything further down instead.</li>
+  <li><strong>Watch the extras:</strong> sliders, review widgets, chat tools and tracking scripts add up quickly on product pages. <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> covers hosting, caching and scripts.</li>
+  <li><strong>Product schema:</strong> WooCommerce outputs basic product structured data, and SEO plugins extend it, so price, availability and ratings can appear in Google results. Test it in Google's Rich Results Test.</li>
+  <li><strong>Unique titles and descriptions</strong> for every product; <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a> covers product and category pages in depth.</li>
+</ul>
+
+<h2>Measure, then change one thing at a time</h2>
+<p>With GA4 e-commerce tracking in place, the e-commerce purchases report shows how often each product is viewed, added to cart and bought. Read it like this:</p>
+<ul>
+  <li><strong>Many views, few add-to-carts:</strong> the page isn't convincing. Look at photos, price clarity, delivery information and reviews.</li>
+  <li><strong>Many add-to-carts, few purchases:</strong> something at the cart or checkout puts people off, often an unexpected delivery charge.</li>
+  <li><strong>Few views:</strong> a traffic and search problem, not a page problem.</li>
+</ul>
+<p>Change one thing, give it a few weeks, and compare. Then watch someone who has never seen your store buy a product on their own phone; wherever they hesitate is the next thing to fix.</p>
 
 <p>High-value products need extra trust; see <a href="/blog/website-for-jewellers/">websites for jewellers</a> for a good example.</p>
 
-<h2>Measure and improve</h2>
-<ul>
-  <li>Track add-to-cart and purchase rates per product in analytics</li>
-  <li>Look for pages with traffic but few add-to-carts, and improve photos, price clarity or descriptions</li>
-  <li>Test one change at a time</li>
-</ul>
+<p>Losing buyers at checkout? See <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</p>
 
-<p>For search visibility, read <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO: ranking product and category pages</a>. Need a store built or improved? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<p>Accurate stock status matters too; see <a href="/blog/woocommerce-inventory-management/">inventory management</a>.</p>
+
+<h2>FAQs</h2>
+<h3>What should a WooCommerce product page include?</h3>
+<p>Clear photos, a descriptive title, the GST-inclusive price, variation options, delivery and COD details, an Add to cart button, a short summary, a full description with specifications, genuine reviews and a link to your returns policy.</p>
+<h3>How do I change the WooCommerce product page layout?</h3>
+<p>With a block theme, edit the Single Product template under Appearance &gt; Editor. With Elementor Pro, build a single product template in the Theme Builder. Classic themes usually need a child theme and WooCommerce hooks, which is developer work.</p>
+<h3>How many product photos should I use?</h3>
+<p>Enough to answer the questions a shopper would ask if the product were in their hands: the front, other angles, close-ups, scale, the product in use and what's included. Keep them consistent in size and background.</p>
+<h3>Should product descriptions be long or short?</h3>
+<p>Both, in the right places. Put a short summary of the deciding facts near the price, and a fuller description with specifications and FAQs lower down for shoppers who want detail.</p>
+<h3>Why do shoppers view my products but not add them to cart?</h3>
+<p>Usually because a question is left unanswered: the total price, delivery time, COD, sizing or trust. Check the first phone screen, add delivery and returns details beside the button, and improve photos and reviews.</p>
+
+<p>Want product pages that answer shoppers' questions and load quickly on a phone? In my <a href="/woocommerce-developer/">WooCommerce development</a> work, categories, attributes and variations are planned before products go in, and product pages, cart and checkout are kept light and simple for phones. If people add to cart and then leave, see <a href="/blog/woocommerce-checkout-optimization/">checkout optimisation</a> next.</p>
 `,
   },
   {
@@ -8586,119 +8730,247 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'woocommerce-abandoned-cart-recovery',
-    seoTitle: 'WooCommerce Abandoned Cart Recovery: What Works',
-    title: 'WooCommerce Abandoned Cart Recovery: Why Shoppers Leave and How to Win Them Back',
-    description: 'Why shoppers abandon WooCommerce carts, how to fix checkout friction and how to recover lost sales with reminder emails or WhatsApp messages, with consent.',
+    seoTitle: 'WooCommerce Abandoned Cart Recovery: Email and WhatsApp',
+    title: 'WooCommerce Abandoned Cart Recovery: How It Works, Plugins, Email and WhatsApp Reminders, and Consent',
+    description: 'How WooCommerce abandoned cart recovery works: plugins, pending payment orders, reminder timing for email and WhatsApp, discounts, consent and what to measure.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization', 'landing-page-design'],
     body: `
-<p>Many shoppers add products to their cart and leave without buying. Some were just browsing, but many leave because of fixable problems. Reducing abandonment, and recovering some of those carts, is one of the quickest ways to grow an online store's sales.</p>
+<p>WooCommerce doesn't recover abandoned carts on its own. A cart recovery plugin, or an e-commerce email platform connected to your store, captures the email address or phone number a shopper types at checkout, waits a short while, then sends reminders with a link that restores their cart, stopping as soon as they buy. Fix checkout friction first, handle failed payments separately, send two or three genuinely helpful reminders, use discounts sparingly and get consent right for email and WhatsApp.</p>
+<p>Recovery is the second half of the job; the first is a checkout people don't want to leave, covered in <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>. I can set up both, along with order emails and coupons, as part of <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 
-<h2>Why shoppers abandon carts</h2>
-<ul>
-  <li>Unexpected costs at checkout: shipping, taxes, COD charges</li>
-  <li>Having to create an account</li>
-  <li>Long or confusing checkout forms</li>
-  <li>Slow pages or errors on mobile</li>
-  <li>Preferred payment method not available</li>
-  <li>Concerns about delivery time, returns or trust</li>
-</ul>
+<h2>Abandoned carts, failed payments and pending orders are different problems</h2>
+<table>
+  <thead><tr><th>What happened</th><th>What WooCommerce records</th><th>How to recover it</th></tr></thead>
+  <tbody>
+    <tr><td>Shopper added to cart and left before checkout</td><td>A temporary session cart; you don't know who they are</td><td>Nothing to email. On-site prompts such as an <a href="/blog/exit-intent-popups/">exit-intent offer</a>, a wishlist, or retargeting with consent</td></tr>
+    <tr><td>Shopper typed their email or phone at checkout, then left</td><td>Nothing by default; a recovery plugin captures the details as they're typed</td><td>Reminder emails or WhatsApp messages with a link back to the cart</td></tr>
+    <tr><td>Order placed, but the UPI or card payment failed or was abandoned</td><td>An order marked Pending payment or Failed</td><td>Send the customer the order's payment link quickly</td></tr>
+    <tr><td>Pending order never paid</td><td>Cancelled automatically after the "Hold stock" time, with stock released</td><td>Follow up before or soon after the cancellation</td></tr>
+  </tbody>
+</table>
+<h3>Recovering pending and failed payments</h3>
+<p>Pending payment orders are the easiest sales to win back, because the shopper has already chosen products and entered an address. On a pending order's edit screen, WooCommerce shows a link to the customer payment page, and the Order actions box can email the order details to the customer with a link to pay. A sudden rise in failed or pending orders usually points to a gateway problem rather than hesitant shoppers; see <a href="/blog/woocommerce-payment-gateway-not-working-india/">fixing payment gateway problems in Indian stores</a>.</p>
 
-<h2>Fix the checkout first</h2>
+<h2>Fix the reasons people leave first</h2>
+<p>Reminders bring people back to the same checkout that lost them. If that checkout surprises them with a delivery or COD charge, forces account creation, asks for too many fields, lacks UPI or COD, or loads slowly on mobile data, they'll leave again. Work through the checkout before investing in recovery, and recheck it after every major update.</p>
+
+<h2>How cart recovery plugins work</h2>
 <ol>
-  <li><strong>Show total costs early:</strong> shipping and taxes on product and cart pages</li>
-  <li><strong>Allow guest checkout</strong></li>
-  <li><strong>Remove unnecessary fields</strong> from the checkout form</li>
-  <li><strong>Offer the payment methods your customers use:</strong> UPI, cards, net banking, wallets and COD where appropriate. See <a href="/blog/accept-online-payments-wordpress-india/">online payments on WordPress</a>.</li>
-  <li><strong>Make it fast and mobile-friendly.</strong> Test the whole checkout on a phone.</li>
-  <li><strong>Show trust signals:</strong> secure payment badges, return policy, delivery times and support contact</li>
+  <li><strong>Capture:</strong> as the shopper types an email or phone number at checkout, the plugin saves it with the cart contents, even if they never press Place order.</li>
+  <li><strong>Wait:</strong> after a period you set, the cart counts as abandoned.</li>
+  <li><strong>Remind:</strong> a sequence of messages goes out, each with a unique link that refills the cart, even on another device.</li>
+  <li><strong>Stop:</strong> the sequence ends when they buy or unsubscribe.</li>
+  <li><strong>Report:</strong> you see abandoned carts, recovered carts and recovered revenue.</li>
 </ol>
-
-<p>For a step-by-step walkthrough of these fixes, see <a href="/blog/woocommerce-checkout-optimization/">how to make WooCommerce checkout quick and easy</a>.</p>
-
-<h2>Recover abandoned carts</h2>
-<p>Abandoned cart plugins can capture email or phone numbers entered during checkout and send reminders:</p>
+<p>The main options, at the time of writing (check current features and pricing before choosing):</p>
 <ul>
-  <li><strong>First reminder</strong> within an hour or so: a friendly nudge with a link back to the cart</li>
-  <li><strong>Second reminder</strong> after a day: answer common doubts (delivery, returns)</li>
-  <li><strong>Optional incentive</strong> in a final reminder, used carefully so customers don't learn to wait for discounts</li>
+  <li><strong>Dedicated free or freemium plugins,</strong> such as CartFlows' Cart Abandonment Recovery and Abandoned Cart Lite for WooCommerce, which send reminder emails from your own site.</li>
+  <li><strong>AutomateWoo,</strong> WooCommerce's own paid automation extension, which includes abandoned cart workflows alongside follow-ups and review requests.</li>
+  <li><strong>E-commerce email platforms</strong> such as Klaviyo, Omnisend or Mailchimp, which connect to WooCommerce and run abandoned cart flows from their side.</li>
+  <li><strong>WhatsApp Business API providers,</strong> many of which offer a WooCommerce plugin with cart reminders.</li>
 </ul>
-<p><strong>Consent and privacy matter:</strong> tell customers how their details are used, follow the messaging platform's rules (especially for WhatsApp), and make opting out easy.</p>
+<p>Whichever you pick, check that it's actively maintained, works with your checkout (the newer block checkout and the classic one capture fields differently) and with WooCommerce's order storage, and doesn't slow the checkout page. Reminders sent from your own site need reliable email delivery; see <a href="/blog/wordpress-not-sending-emails-smtp/">fixing WordPress emails with SMTP</a>.</p>
 
-<p>Using discounts to recover carts? See <a href="/blog/woocommerce-coupons-discounts/">coupon strategies that protect margins</a>.</p>
+<h2>A reminder sequence that works</h2>
+<table>
+  <thead><tr><th>Reminder</th><th>When</th><th>Channel</th><th>What it says</th></tr></thead>
+  <tbody>
+    <tr><td>First</td><td>About an hour after they leave</td><td>Email, or WhatsApp if they opted in</td><td>A friendly nudge with the cart contents, photos and one button back to the cart</td></tr>
+    <tr><td>Second</td><td>About a day later</td><td>Email</td><td>Answers to common doubts: delivery time, COD, returns, sizing, and how to ask a question</td></tr>
+    <tr><td>Third (optional)</td><td>Two or three days later</td><td>Email</td><td>A last reminder, with a small incentive only if you've decided to use one</td></tr>
+  </tbody>
+</table>
+<p>These timings are starting points. Products bought on impulse suit a quicker first reminder; expensive or considered purchases such as furniture can wait longer between messages.</p>
 
-<h2>Measure it</h2>
+<h2>Writing reminders people don't mind getting</h2>
 <ul>
-  <li>Track checkout starts vs completed orders in analytics</li>
-  <li>Monitor recovered carts from reminders</li>
-  <li>Test one checkout change at a time</li>
+  <li><strong>Plain, specific subject lines:</strong> "You left something in your cart" or "Any questions about delivery?" work better than shouting.</li>
+  <li><strong>Show what they chose:</strong> product photo, name, size or colour, and price, with a single clear button back to the cart.</li>
+  <li><strong>Remove doubts:</strong> delivery estimate, COD availability, the returns policy in a line, and a WhatsApp or phone contact.</li>
+  <li><strong>Sound like your store:</strong> your store name as the sender, and a reply-to address someone actually reads.</li>
+  <li><strong>No fake urgency:</strong> mention low stock only when it's true.</li>
+  <li><strong>An unsubscribe link</strong> in every email, and test the whole thing on a phone first.</li>
 </ul>
 
-<h2>Related guides</h2>
-<p>See the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> and <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a>. For help with your store, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<h2>Discounts: use them carefully</h2>
+<p>A discount in the first reminder teaches regular customers to abandon carts on purpose and costs you margin on sales you'd have made anyway. If you use incentives at all:</p>
+<ul>
+  <li>Keep them for the final reminder.</li>
+  <li>Use unique, single-use codes with a short expiry; WooCommerce coupons support usage limits and expiry dates.</li>
+  <li>Exclude items already on sale.</li>
+  <li>Try free delivery before a percentage off; it often answers the real objection.</li>
+</ul>
+<p><a href="/blog/woocommerce-coupons-discounts/">Coupon strategies that protect margins</a> covers the settings in detail.</p>
+
+<h2>WhatsApp and SMS reminders in India</h2>
+<p>Many shoppers see WhatsApp long before email, which makes it tempting for cart reminders. A few rules apply:</p>
+<ul>
+  <li><strong>Use the WhatsApp Business Platform</strong> through a provider, not bulk messages from a phone, which risks getting the number banned.</li>
+  <li><strong>Cart reminders are generally treated as marketing messages,</strong> so they need the customer's opt-in, a template approved in advance, and they're charged at Meta's marketing rates, which have changed before.</li>
+  <li><strong>Ask clearly at checkout,</strong> with an option such as "Send me reminders and offers on WhatsApp", separate from order updates.</li>
+  <li><strong>SMS needs DLT registration</strong> of your business, sender ID and templates, and reminders are generally promotional rather than service messages.</li>
+</ul>
+<p>How order updates differ from marketing, and how DLT works, is explained in <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">WooCommerce order notifications by email, SMS and WhatsApp</a>.</p>
+
+<h2>Consent and privacy</h2>
+<p>Capturing an email address before the shopper presses Place order is collecting personal data. Add a short line near the email field saying you may send a reminder about their cart, mention cart recovery in your privacy policy, make opting out easy, and set the plugin to delete old abandoned cart data after a sensible period. Rules differ for Indian, EU and UK shoppers, so check your approach with a lawyer; <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and consent basics</a> covers the website side. This isn't legal advice.</p>
+
+<h2>Measure what's working</h2>
+<ul>
+  <li><strong>The plugin's report:</strong> abandoned carts, recovered carts and recovered revenue each month.</li>
+  <li><strong>GA4:</strong> compare checkouts started with purchases to see whether checkout changes help.</li>
+  <li><strong>Tag reminder links</strong> with UTM parameters, so Analytics credits recovered sales to the reminders; see <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</li>
+  <li><strong>Unsubscribes and complaints:</strong> if they climb, send fewer or friendlier reminders.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Does WooCommerce have abandoned cart recovery built in?</h3>
+<p>No. WooCommerce records orders, including unpaid ones, but doesn't capture or email shoppers who leave checkout. You need a cart recovery plugin, AutomateWoo, or an email platform connected to your store.</p>
+<h3>What is a pending payment order in WooCommerce?</h3>
+<p>An order that was placed but not paid, often because a UPI or card payment failed or the shopper closed the payment window. WooCommerce cancels it after the hold-stock time, so contact the customer quickly with the payment link.</p>
+<h3>When should I send the first abandoned cart email?</h3>
+<p>About an hour after the shopper leaves is a sensible starting point, while the purchase is still on their mind. Follow with a second reminder around a day later, then test different timings.</p>
+<h3>Should I offer a discount to recover abandoned carts?</h3>
+<p>Not in the first reminder. Answer doubts about delivery, COD and returns first. If you use incentives, keep them for the final reminder with unique, expiring codes, or offer free delivery instead.</p>
+<h3>Can I send abandoned cart reminders on WhatsApp?</h3>
+<p>Yes, through the WhatsApp Business Platform with an approved template and the customer's opt-in. Cart reminders are generally treated as marketing messages, so they need marketing consent and are charged accordingly.</p>
+<h3>Is it legal to email shoppers who didn't finish checkout?</h3>
+<p>It depends on where the shopper is and how you ask for consent. Tell shoppers at checkout, mention it in your privacy policy and make opting out easy, then check your approach with a lawyer.</p>
+
+<p>Want fewer abandoned carts and a reliable way to win some back? I can review your checkout, set up cart recovery and order emails, and test the whole flow on a phone as part of <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
     slug: 'woocommerce-shipping-setup-india',
-    seoTitle: 'WooCommerce Shipping Setup for India',
-    title: 'WooCommerce Shipping Setup for India: Zones, Rates and Couriers',
-    description: 'Set up WooCommerce shipping for Indian stores: zones, flat and weight-based rates, free shipping thresholds, COD, courier aggregators and tracking.',
+    seoTitle: 'WooCommerce Shipping Setup for India: Zones, Rates and COD',
+    title: 'WooCommerce Shipping Setup for India: Zones, Weight-Based Rates, Free Shipping, COD and Courier Integrations',
+    description: 'Set up WooCommerce shipping for India: zones by state and pin code, flat and weight-based rates, free-shipping thresholds, COD rules and courier integrations.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development', 'wordpress-maintenance'],
     body: `
-<p>Shipping is where many Indian online stores lose money or customers: either charging too little and absorbing costs, or charging too much and losing sales. Here's how to set up WooCommerce shipping sensibly.</p>
+<p>WooCommerce shipping lives under <strong>WooCommerce &gt; Settings &gt; Shipping</strong>. Create shipping zones from the most specific to the least (your local pin codes, your state, any remote regions, then the rest of India), add methods to each zone (flat rate, free shipping or local pickup), and enter accurate packed weights and box dimensions for every product. Add a plugin if you need weight-based rates, decide which zones allow cash on delivery, connect a courier or shipping aggregator for labels and tracking, and test with real pin codes before launch.</p>
+<p>Shipping is where many Indian stores quietly lose money, either by undercharging on heavy parcels or by putting buyers off with high charges. In my <a href="/woocommerce-developer/">WooCommerce development</a> work, COD options and shipping rules are set up and tested to match how you actually dispatch orders.</p>
 
-<h2>1. Plan your shipping zones</h2>
-<p>WooCommerce shipping zones let you set different rates by region, for example:</p>
+<h2>Choose how you'll charge</h2>
+<table>
+  <thead><tr><th>Approach</th><th>Built into WooCommerce?</th><th>Best for</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Flat rate per order</td><td>Yes</td><td>Light products of similar size</td><td>Losing money on heavy or bulky orders</td></tr>
+    <tr><td>Flat rate per item or shipping class</td><td>Yes</td><td>Catalogues with a few size groups, such as small, bulky and fragile</td><td>Every product needs the right class</td></tr>
+    <tr><td>Weight-based rates</td><td>Needs a plugin</td><td>Products that vary in weight, such as oils, flours or hardware</td><td>Products with no weight entered</td></tr>
+    <tr><td>Free shipping above a threshold</td><td>Yes</td><td>Encouraging larger orders</td><td>A threshold that eats your margin</td></tr>
+    <tr><td>Live courier rates at checkout</td><td>Via a courier or aggregator plugin</td><td>Varied parcels shipped across India</td><td>Checkout depends on the courier's service responding</td></tr>
+    <tr><td>Local pickup or your own delivery</td><td>Yes</td><td>Cakes, flowers, fresh food and local shops</td><td>Keeping the delivery area accurate</td></tr>
+  </tbody>
+</table>
+
+<h2>Step 1: weights, dimensions and shipping classes</h2>
+<p>Every rate calculation depends on product data. Set the units to kg and cm in <strong>WooCommerce &gt; Settings &gt; Products</strong>, then fill in the weight and dimensions on each product's Shipping tab, including each variation that differs.</p>
+<p>Use the packed weight and the box size, not the product's own. Couriers generally charge the higher of the actual weight and the volumetric weight, which is often length × width × height in centimetres divided by 5,000; check the divisor on your courier's rate card. A 40 × 30 × 20 cm box works out at 4.8 kg volumetric, so it's billed as 4.8 kg even if the contents weigh 2 kg. Many couriers also bill in 500 g slabs, so an extra 50 g can push a parcel into the next slab.</p>
+<p>If some products need different handling, create shipping classes such as "Bulky" or "Fragile" under <strong>Shipping &gt; Classes</strong> and assign them on each product.</p>
+
+<h2>Step 2: create shipping zones in the right order</h2>
+<p>Go to <strong>Shipping &gt; Shipping zones</strong> and click Add zone. Each zone has a name, the regions it covers (countries, states or pin codes) and its shipping methods. The rule that matters most: WooCommerce checks zones from top to bottom and uses the first one that matches the customer's address. Put the most specific zones first and drag them into order.</p>
+<p>To match pin codes, choose "Limit to specific ZIP/postcodes" and enter one per line. Wildcards and ranges both work, such as 411* for most Pune city pin codes or 411001...411062 for a range. A typical set-up for a store in Pune:</p>
+<table>
+  <thead><tr><th>Order</th><th>Zone</th><th>Regions</th><th>Methods</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Pune local</td><td>India, limited to the pin codes you deliver to yourself</td><td>Local pickup, own delivery at a flat rate</td></tr>
+    <tr><td>2</td><td>Maharashtra</td><td>Maharashtra</td><td>Flat rate, free shipping above your threshold</td></tr>
+    <tr><td>3</td><td>Remote regions</td><td>States and territories your courier charges more for</td><td>A higher flat rate or weight-based rate</td></tr>
+    <tr><td>4</td><td>Rest of India</td><td>India</td><td>Flat or weight-based rate, free shipping above your threshold</td></tr>
+  </tbody>
+</table>
+<p>Some couriers charge more for regions such as the north-eastern states, Jammu and Kashmir, Ladakh and the island territories; your rate card shows whether a separate zone is worth it. Shipping abroad needs its own zones and much more besides; see <a href="/blog/woocommerce-sell-internationally/">selling internationally from an Indian store</a>.</p>
+
+<h2>Step 3: add shipping methods</h2>
 <ul>
-  <li>Your city (local delivery or pickup)</li>
-  <li>Your state</li>
-  <li>Rest of India</li>
-  <li>Specific remote regions, if courier costs differ</li>
-  <li>International (if you ship abroad)</li>
+  <li><strong>Flat rate:</strong> the cost box accepts simple formulas. [qty] is the number of items, [cost] is the order total, and [fee] adds a percentage with optional minimum and maximum. Flat rate also has a "Shipping class costs" section, with a choice of charging per class or per order.</li>
+  <li><strong>Free shipping:</strong> choose what unlocks it: a minimum order amount, a free-shipping coupon, either or both. There's also a box to apply the minimum before coupon discounts, which decides whether a coupon can push an order below the threshold.</li>
+  <li><strong>Local pickup:</strong> lets nearby customers collect at no charge. Newer WooCommerce versions using the block checkout manage pickup locations on a separate Local pickup settings screen.</li>
 </ul>
+<p>A couple of flat rate formulas, with placeholder numbers to replace with your own courier costs:</p>
+<pre><code>50 + ( 10 * [qty] )
+[fee percent="5" min_fee="40" max_fee="200"]</code></pre>
+<p>The first charges a base amount plus an amount per item; the second charges 5% of the order total, never less than 40 or more than 200.</p>
 
-<p>Shipping abroad? See <a href="/blog/woocommerce-sell-internationally/">how to sell internationally from an Indian WooCommerce store</a> for currencies, payments and customs duties.</p>
+<h2>Weight-based rates</h2>
+<p>WooCommerce has no weight-based rate table out of the box. The usual options, at the time of writing, are WooCommerce's own paid Table Rate Shipping extension, a plugin such as Flexible Shipping (whose free version handles weight-based rules), or live rates from a courier integration. Mirror your courier's slabs per zone, such as up to 500 g, up to 1 kg, then each extra 500 g. Any product without a weight counts as zero and gets the cheapest rate, so check the product list for blanks before launch.</p>
 
-<h2>2. Choose a rate method</h2>
+<h2>Free-shipping thresholds that protect your margin</h2>
 <ul>
-  <li><strong>Flat rate:</strong> simple and predictable for similar-sized products</li>
-  <li><strong>Weight-based:</strong> better for products that vary widely in weight (oils, flours, heavy items)</li>
-  <li><strong>Free shipping above a threshold:</strong> encourages larger orders; set the threshold so margins still work</li>
-  <li><strong>Local pickup</strong> for nearby customers</li>
+  <li>Set the threshold a little above your typical order value, so it nudges shoppers to add one more item.</li>
+  <li>Check the margin at the threshold still covers your worst case, such as a heavy parcel to a remote region.</li>
+  <li>Leave bulky shipping classes or remote zones out of free shipping if they would make orders unprofitable.</li>
+  <li>Show how close the shopper is, such as "Add a little more for free delivery", in the cart.</li>
 </ul>
-<p>Always set accurate product weights and dimensions so calculations are correct.</p>
+<p>By default WooCommerce shows paid options alongside free shipping, which looks odd. A developer can hide the paid ones whenever free shipping applies; note that this snippet hides local pickup too, so adjust it if pickup should stay:</p>
+<pre><code>add_filter( 'woocommerce_package_rates', 'my_only_free_shipping', 100 );
 
-<h2>3. Cash on Delivery</h2>
-<p>COD is still popular in India but carries return-to-origin risk. Options include limiting COD to certain zones or order values, adding a COD fee (shown clearly), or confirming COD orders by phone or WhatsApp.</p>
+function my_only_free_shipping( $rates ) {
+  $free = array();
+  foreach ( $rates as $rate_id =&gt; $rate ) {
+    if ( 'free_shipping' === $rate-&gt;method_id ) {
+      $free[ $rate_id ] = $rate;
+    }
+  }
+  return ! empty( $free ) ? $free : $rates;
+}</code></pre>
 
-<p>More on reducing refused deliveries: <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery without losing money</a>.</p>
+<h2>Cash on delivery rules</h2>
+<p>In <strong>WooCommerce &gt; Settings &gt; Payments &gt; Cash on delivery</strong>, the "Enable for shipping methods" setting is more useful than it looks. Because each zone has its own methods, allowing COD only on certain methods effectively limits COD to certain zones, with no extra plugin. Order value limits, COD fees and pin code rules need a plugin or custom code, and your courier must accept COD for those pin codes too. Reducing refused deliveries is covered in <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery without losing money</a>.</p>
 
-<h2>4. Couriers and aggregators</h2>
-<p>Shipping aggregators integrate with WooCommerce to compare courier rates, generate labels, schedule pickups and push tracking. Direct courier accounts can suit higher volumes. Compare pricing, coverage, COD remittance timelines and support before choosing.</p>
+<h2>Pin code serviceability</h2>
+<p>Zones limited to specific pin codes stop orders to areas you can't serve, but WooCommerce's default "no shipping options" message at checkout is unfriendly and comes late. A checker on the product page tells shoppers about delivery and COD before they reach checkout, using your own pin code list or your courier's live serviceability data; see <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checkers for WooCommerce</a>.</p>
 
-<h2>5. Tracking and notifications</h2>
+<h2>Couriers and shipping aggregators</h2>
+<p>Aggregators let you ship with several couriers from one dashboard; a direct courier account can suit stores with steady volumes. At the time of writing, Shiprocket, Delhivery and iThink Logistics all offer ways to connect a WooCommerce store, through a plugin or a channel connection in their own dashboard. Depending on the provider, an integration can:</p>
 <ul>
-  <li>Add tracking numbers to orders and send them automatically</li>
-  <li>Send shipped and delivered updates by email and, with consent, WhatsApp</li>
-  <li>Show estimated delivery times on product and checkout pages</li>
+  <li>Pull new orders from WooCommerce automatically</li>
+  <li>Assign a courier, generate the airway bill and print labels</li>
+  <li>Schedule pickups</li>
+  <li>Send the tracking number back to the WooCommerce order and update its status</li>
+  <li>Show live rates or serviceability at checkout</li>
 </ul>
+<p>Before choosing, compare rates by slab and zone, the volumetric divisor, COD charges and how quickly COD money is remitted, return-to-origin charges, how weight disputes are handled and how reliable pickups are in your area. Photographing packed parcels on the scale with their dimensions helps when a courier disputes a weight. Many integrations connect using WooCommerce REST API keys, created under <strong>Settings &gt; Advanced &gt; REST API</strong>; revoke a key when you stop using that service. Shipping, packaging and RTO costs belong in your budget too; see <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a>.</p>
 
-<p>A <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checker</a> on product pages lets shoppers see delivery dates and COD availability before they reach checkout.</p>
-
-<h2>6. Packaging</h2>
-<p>Choose packaging that protects products and suits courier volumetric weight rules. Oversized boxes increase costs.</p>
-
-<h2>7. Be transparent</h2>
+<h2>Tracking, emails and your shipping policy</h2>
 <ul>
-  <li>Publish a clear shipping policy: zones, charges, timelines and COD rules</li>
-  <li>Show shipping costs before checkout to reduce abandoned carts. See <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</li>
+  <li>Add the tracking number and courier link to each order, through your integration or a tracking plugin, so the customer's email includes them; <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">order notifications by email, SMS and WhatsApp</a> covers which updates to send.</li>
+  <li>Publish a shipping policy covering zones, charges, dispatch times, delivery estimates, COD rules, failed deliveries and damaged parcels.</li>
+  <li>Ask your CA how delivery charges should be taxed, then set the shipping tax class to match; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a>.</li>
 </ul>
 
 <h2>Test before launch</h2>
-<p>Place test orders for different zones, weights and payment methods, and confirm the charges are right. It's part of the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a>. Need it set up for you? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<ol>
+  <li>Under <strong>Shipping &gt; Shipping settings</strong>, turn on debug mode temporarily; the cart then shows which zone matched. Turn it off afterwards.</li>
+  <li>Test pin codes from your city, your state, a metro elsewhere, a remote region and an invalid code.</li>
+  <li>Try a light cart, a heavy cart, a bulky item and a cart just under and just over the free-shipping threshold, with and without a coupon.</li>
+  <li>Check COD appears only where it should.</li>
+  <li>Place a test order and confirm the courier integration picks it up.</li>
+</ol>
+<p>These checks sit alongside the payment and email tests in the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a>.</p>
+
+<h2>FAQs</h2>
+<h3>How do I set up shipping zones in WooCommerce for India?</h3>
+<p>Go to WooCommerce &gt; Settings &gt; Shipping &gt; Shipping zones and add zones from most to least specific: local pin codes, your state, any remote regions, then India as a whole. WooCommerce uses the first zone that matches the address, so the order matters.</p>
+<h3>How do I charge shipping by weight in WooCommerce?</h3>
+<p>Enter packed weights for every product, then add a weight-based rates plugin such as Table Rate Shipping or Flexible Shipping, or use live rates from a courier integration. WooCommerce's built-in methods don't calculate by weight on their own.</p>
+<h3>How do I offer free shipping above a certain order value?</h3>
+<p>Add the Free shipping method to the zone and set it to require a minimum order amount. Decide whether coupons count towards the minimum, and consider hiding paid options when free shipping applies.</p>
+<h3>Can I connect Shiprocket or Delhivery to WooCommerce?</h3>
+<p>At the time of writing, both offer ways to connect a WooCommerce store, as do other aggregators such as iThink Logistics. Integrations typically sync orders, generate labels and send tracking back, but check each provider's current features.</p>
+<h3>How do I stop orders from pin codes I can't deliver to?</h3>
+<p>Limit your zones to the pin codes you serve so checkout offers no shipping elsewhere, and add a pin code checker on product pages so shoppers find out before they reach checkout.</p>
+<h3>Why is WooCommerce showing the wrong shipping charge?</h3>
+<p>Usually because a broader zone sits above a specific one, products are missing weights or shipping classes, or an old rate is cached. Turn on shipping debug mode to see which zone and method matched.</p>
+
+<p>Want shipping that charges correctly and doesn't scare buyers off? Zones, weight-based rates, COD rules and a courier connection can all be set up and tested with real pin codes as part of <a href="/woocommerce-developer/">WooCommerce development</a>. If shipping costs are still surprising shoppers at the last step, see <a href="/blog/woocommerce-checkout-optimization/">checkout optimisation</a>.</p>
 `,
   },
   {
@@ -8808,119 +9080,256 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'privacy-policy-cookie-basics-india',
-    seoTitle: 'Privacy Policy & Cookie Basics for Indian Websites',
-    title: 'Privacy Policy and Cookie Consent Basics for Indian Business Websites',
-    description: 'Privacy policy and cookie basics for Indian websites: what data you collect, what to disclose, consent, forms, analytics and when to get legal advice.',
+    seoTitle: 'Privacy Policy & Cookie Consent for Indian Websites (DPDP)',
+    title: 'Privacy Policy and Cookie Consent for Indian Business Websites: DPDP Basics, GA4, Meta Pixel and Consent Mode v2',
+    description: 'What an Indian business website privacy policy should cover under the DPDP Act, when GA4 and Meta Pixel need cookie consent, and Consent Mode v2 basics.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
-<p>Almost every business website collects personal data, even if it's just a name and phone number from a contact form. Customers increasingly care how that data is handled, and data protection laws apply to many businesses. This is a general overview to help you ask the right questions. It isn't legal advice; for your specific situation, consult a qualified lawyer.</p>
+<p>If your website collects names, phone numbers or emails through a form, takes orders, or runs Google Analytics or the Meta Pixel, it needs a privacy policy that explains what you collect, why, who you share it with, how long you keep it and how people can contact you about it. India's Digital Personal Data Protection Act points the same way. India has no cookie-specific law, but if you get visitors from the EU or UK, or advertise to them, you'll generally need a consent banner and Google's Consent Mode v2 for those visitors.</p>
+<p>This is a practical overview from a web developer, not legal advice; check your situation with a lawyer or CA. The technical side, from the privacy page and consent lines on forms to a cookie banner and Consent Mode, is something I can build into a new site as part of <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 
-<h2>What personal data does your website collect?</h2>
+<h2>Does an Indian business website need a privacy policy?</h2>
+<p>In practice, yes, if it collects any personal data. Several things point the same way:</p>
 <ul>
-  <li>Contact and enquiry forms (names, phone numbers, emails, messages)</li>
-  <li>Orders and accounts (addresses, order history)</li>
-  <li>Newsletter sign-ups</li>
-  <li>Analytics and advertising cookies (device and browsing information)</li>
-  <li>Chat widgets, WhatsApp links and embedded tools</li>
-</ul>
-<p>Start by listing everything your site collects and which third-party tools receive it.</p>
-
-<h2>What a privacy policy should explain</h2>
-<ul>
-  <li>Who you are and how to contact you about privacy</li>
-  <li>What data you collect and why</li>
-  <li>How long you keep it</li>
-  <li>Who you share it with (payment gateways, email tools, analytics, couriers)</li>
-  <li>How you protect it</li>
-  <li>How people can access, correct or delete their data, or withdraw consent</li>
-</ul>
-<p>Write it in plain language and keep it up to date as your tools change.</p>
-
-<h2>Consent and forms</h2>
-<ul>
-  <li>Collect only what you need for the purpose</li>
-  <li>Explain near the form how the data will be used</li>
-  <li>Don't pre-tick marketing consent boxes; ask separately for newsletters or promotional WhatsApp messages</li>
-  <li>Make it easy to unsubscribe</li>
+  <li><strong>The DPDP Act</strong> expects a clear notice whenever you ask people for their personal data, explaining what you collect and why.</li>
+  <li><strong>Older IT Act rules</strong> from 2011 already expected businesses handling certain sensitive personal data to publish a privacy policy. They're expected to give way to the DPDP framework, so check the current position with your lawyer.</li>
+  <li><strong>The tools you use require it.</strong> At the time of writing, Google Analytics' terms require you to disclose that you use it, and Meta's business tools terms expect a privacy notice too.</li>
+  <li><strong>Payment gateways ask for it.</strong> Gateways commonly check for privacy, terms, refund and contact pages before approving your website; see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</li>
 </ul>
 
-<h2>Cookies and analytics</h2>
-<p>Analytics and advertising tools set cookies and collect browsing data. Depending on your audience (especially if you serve visitors from regions with strict cookie rules), you may need a consent banner that lets people accept or decline non-essential cookies. Keep essential cookies separate from analytics and marketing cookies.</p>
-
-<h2>Security basics</h2>
+<h2>The DPDP Act in two minutes</h2>
+<p>The Act was passed in 2023, and its implementing rules were notified in November 2025, with most obligations for businesses phased in over a transition period rather than all at once. The ideas that matter for a website:</p>
 <ul>
-  <li>HTTPS across the site</li>
-  <li>Keep WordPress and plugins updated; see the <a href="/blog/wordpress-security-checklist/">security checklist</a></li>
-  <li>Limit who can access form entries and customer data</li>
-  <li>Delete data you no longer need</li>
+  <li><strong>Notice and consent:</strong> consent should be free, specific, informed and given through a clear action, such as ticking an unticked box, and people must be able to withdraw it as easily as they gave it.</li>
+  <li><strong>Purpose limits:</strong> data collected for one purpose shouldn't quietly be reused for another, such as adding enquiry numbers to WhatsApp promotions.</li>
+  <li><strong>Security and breaches:</strong> reasonable safeguards are expected, and breaches must be reported.</li>
+  <li><strong>Rights:</strong> people can ask to access, correct or erase their data, raise a grievance and nominate someone to act for them.</li>
+  <li><strong>Children:</strong> data about under-18s generally needs verifiable parental consent.</li>
+</ul>
+<p>There's no blanket exemption for small businesses. Dates and details can change, so treat this as orientation; <a href="/blog/dpdp-act-website-basics/">what the DPDP Act means for small business websites</a> goes deeper into terms, consent and security.</p>
+
+<h2>What a small-business privacy policy should cover</h2>
+<table>
+  <thead><tr><th>Section</th><th>What to write</th><th>Example for a clinic or shop</th></tr></thead>
+  <tbody>
+    <tr><td>Who you are</td><td>Business name, address and a contact for privacy questions</td><td>"Questions about your data: privacy@example.com"</td></tr>
+    <tr><td>What you collect</td><td>Each form and what it asks, orders and accounts, analytics and cookies, WhatsApp chats, job applications</td><td>Name, phone and preferred time from the appointment form</td></tr>
+    <tr><td>Why</td><td>The purpose of each type of data</td><td>To confirm the appointment and send a reminder</td></tr>
+    <tr><td>Who you share it with</td><td>Hosting, email and form tools, payment gateway, courier, analytics and advertising platforms, CRM</td><td>Payments are handled by our payment gateway; parcels by our courier</td></tr>
+    <tr><td>Where it's stored</td><td>Whether any tools store data outside India</td><td>Our email and analytics providers may store data abroad</td></tr>
+    <tr><td>How long you keep it</td><td>A retention period for each type, plus records other laws require, such as tax invoices</td><td>Unconverted enquiries deleted after a set period</td></tr>
+    <tr><td>How you protect it</td><td>HTTPS, limited staff access, updates and backups</td><td>Only the front desk and doctor can see appointment requests</td></tr>
+    <tr><td>Rights and complaints</td><td>How to access, correct or erase data or withdraw consent, your grievance contact, and the Data Protection Board</td><td>Email us and we'll reply within a stated time</td></tr>
+    <tr><td>Cookies and tracking</td><td>Which tools you use, what they do and how to change choices</td><td>Google Analytics to understand visits; Meta Pixel to measure ads</td></tr>
+    <tr><td>Changes</td><td>A "last updated" date</td><td>Last updated: the date you revised it</td></tr>
+  </tbody>
+</table>
+<p>Write it in plain language and make it match reality. A copied template that mentions tools you don't use, or misses the ones you do, is worse than a short honest page. You can see how this site's own <a href="/privacy-policy/">privacy policy</a> is laid out: short sections, each tied to something the site actually does. If you also need terms of use, <a href="/blog/website-terms-and-conditions/">what website terms and conditions cover</a> explains the difference.</p>
+<h3>WordPress and WooCommerce tools that help</h3>
+<ul>
+  <li><strong>Settings &gt; Privacy</strong> lets you choose your privacy policy page and shows a policy guide with suggested text from your plugins. The suggestions are a starting point, not a finished policy.</li>
+  <li><strong>Tools &gt; Export Personal Data</strong> and <strong>Tools &gt; Erase Personal Data</strong> handle requests from people who want a copy of their data or want it deleted.</li>
+  <li><strong>WooCommerce &gt; Settings &gt; Accounts &amp; Privacy</strong> sets the privacy text shown at checkout and how long to keep inactive accounts and old orders.</li>
 </ul>
 
-<h2>India's data protection law</h2>
-<p>India's Digital Personal Data Protection framework sets obligations for businesses that process personal data, and its detailed rules and timelines matter for compliance. Because requirements can change and depend on your business, get current legal advice rather than relying on templates.</p>
+<h2>Consent on forms: where most sites go wrong</h2>
+<ul>
+  <li>Put a short line next to the submit button explaining how the details will be used, with a link to the policy.</li>
+  <li>Ask separately, with an unticked checkbox, before adding anyone to newsletters or promotional WhatsApp or SMS messages.</li>
+  <li>Don't bundle marketing into an "I agree to the terms" box, and never pre-tick consent.</li>
+  <li>Remove fields you don't need. Every extra field is more data to protect.</li>
+</ul>
+<p>Wording along these lines works for most enquiry forms:</p>
+<blockquote>We'll use these details only to reply to your enquiry. See our privacy policy. [ ] Also send me occasional offers on WhatsApp (optional)</blockquote>
 
-<p>For a closer look at consent, notices and security under the Act, see <a href="/blog/dpdp-act-website-basics/">what the DPDP Act generally means for small business websites</a>.</p>
+<h2>Cookies: India versus the EU and UK</h2>
+<p><strong>India</strong> has no cookie-specific rules like Europe's. Where tracking tools collect data that can identify a person, though, that's likely to be personal data under the DPDP Act, so whether you need consent before analytics or advertising tags run for Indian visitors is a question for your lawyer.</p>
+<p><strong>The EU and UK</strong> are clearer: non-essential cookies such as analytics and advertising generally need opt-in consent before they're set, rejecting must be as easy as accepting, and boxes can't be pre-ticked. If you advertise abroad, export, or get noticeable traffic from Europe, plan for this.</p>
+<table>
+  <thead><tr><th>Type</th><th>Examples</th><th>Consent in the EU and UK?</th></tr></thead>
+  <tbody>
+    <tr><td>Essential</td><td>WordPress login cookies, WooCommerce cart and session cookies, security cookies</td><td>Generally not needed</td></tr>
+    <tr><td>Analytics</td><td>Google Analytics 4 (_ga cookies), Microsoft Clarity</td><td>Generally needed</td></tr>
+    <tr><td>Marketing</td><td>Meta Pixel (_fbp), Google Ads conversion tracking (_gcl_au)</td><td>Needed</td></tr>
+    <tr><td>Embedded content</td><td>YouTube videos, Google Maps, chat widgets</td><td>Often needed; YouTube's privacy-enhanced mode (youtube-nocookie.com) reduces cookies</td></tr>
+  </tbody>
+</table>
 
-<h2>Practical next steps</h2>
+<h2>Setting up a consent banner on WordPress</h2>
+<ul>
+  <li><strong>Use a consent plugin</strong> such as Complianz, CookieYes, Cookiebot or Real Cookie Banner, at the time of writing. If you show Google ads through AdSense to EU or UK visitors, Google requires a certified consent platform, so check the plugin's certification.</li>
+  <li><strong>Target by region if that fits your advice.</strong> Many plugins can show the banner only to visitors from regions that require it. Agree the default for Indian visitors with your lawyer.</li>
+  <li><strong>Make sure it really blocks scripts.</strong> Many banners look right but let Analytics run anyway. In your browser's developer tools, open Application, then Cookies, load the site in a private window and check that no _ga or _fbp cookies appear before you click Accept.</li>
+  <li><strong>Load each tag once.</strong> Analytics added by a theme setting, a plugin and Google Tag Manager at the same time defeats the banner and doubles your numbers; <a href="/blog/google-tag-manager-basics/">Google Tag Manager basics</a> explains how to keep tags in one place.</li>
+</ul>
+
+<h2>Google Consent Mode v2 for EU and UK visitors</h2>
+<p>Consent Mode passes each visitor's choice to Google's tags through four signals: ad_storage, analytics_storage, ad_user_data and ad_personalization. At the time of writing, Google requires these signals from advertisers who want to keep using its measurement, remarketing and personalisation features with visitors from the European Economic Area and the UK.</p>
+<ul>
+  <li><strong>Basic mode</strong> doesn't load Google's tags at all until the visitor accepts.</li>
+  <li><strong>Advanced mode</strong> loads the tags straight away, sending cookieless pings when consent is denied, and Google models the missing conversions. It recovers more data, but sends more to Google, so discuss which mode suits you with your lawyer.</li>
+</ul>
+<p>Most consent plugins set Consent Mode up for you, and Google Tag Manager has consent settings built in. Done by hand, the default has to load before your Google tag:</p>
+<pre><code>&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    region: ['GB', 'IE', 'FR', 'DE', 'NL']
+  });
+&lt;/script&gt;</code></pre>
+<p>The region list is shortened here; a real set-up lists every EEA country plus the UK. When a visitor accepts, the banner sends a consent update setting the relevant signals to granted. The Meta Pixel has an equivalent: it can be held back until consent and then granted, as explained in <a href="/blog/meta-pixel-conversions-api/">Meta Pixel and Conversions API explained</a>. Google's Tag Assistant shows which consent state your tags see, so test both accepting and rejecting.</p>
+
+<h2>A practical checklist</h2>
 <ol>
-  <li>List the data your site collects and the tools involved</li>
-  <li>Review your privacy policy with a lawyer</li>
-  <li>Update forms and consent wording</li>
-  <li>Decide on cookie consent based on your audience</li>
+  <li>List every form, plugin and third-party tool that collects or receives personal data.</li>
+  <li>Write or update the privacy policy to match, with a privacy contact and a "last updated" date.</li>
+  <li>Link it from the footer, every form and the checkout.</li>
+  <li>Add separate, unticked marketing consent and remove unneeded fields.</li>
+  <li>Decide on cookie consent for each audience, with advice, and set up the banner and Consent Mode where needed.</li>
+  <li>Confirm tracking scripts really wait for consent where they should.</li>
+  <li>Set retention periods and delete old enquiries and data you no longer need.</li>
+  <li>Have a lawyer or CA review the policy, and revisit it whenever you add a new tool.</li>
 </ol>
-<p>Technical changes like consent banners, form wording and security are part of a well-maintained site; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Is a privacy policy mandatory for websites in India?</h3>
+<p>If your site collects personal data, the DPDP Act expects you to give people a clear notice, and payment gateways and tools like Google Analytics expect a privacy policy too. A website with any form, order or analytics should have one. Check the specifics with a lawyer.</p>
+<h3>Do Indian websites need a cookie banner?</h3>
+<p>Indian law has no cookie-specific rule, but tracking data can be personal data under the DPDP Act, so get advice for your Indian visitors. Visitors from the EU and UK generally require opt-in consent before analytics and advertising cookies are set.</p>
+<h3>What is Google Consent Mode v2, and do I need it?</h3>
+<p>It's how your consent banner tells Google's tags whether a visitor has agreed to analytics and advertising. If you use Google Ads or Analytics with visitors from the EEA or UK, Google requires it at the time of writing to keep using features like remarketing and conversion measurement for those visitors.</p>
+<h3>Can I copy a privacy policy from another website?</h3>
+<p>It's a bad idea. It may be protected by copyright, and it describes someone else's tools and practices, not yours. Use a template only as a checklist and rewrite it to match what your site actually does.</p>
+<h3>Does WordPress create a privacy policy for me?</h3>
+<p>WordPress creates a draft privacy page and a guide with suggested text from your plugins under Settings &gt; Privacy. It's a useful start, but you still need to edit it to describe your own business, forms and tools.</p>
+<h3>Who should write my privacy policy?</h3>
+<p>You know what data you collect, your developer knows which tools and plugins handle it, and a lawyer or CA knows what the law requires. The best policies come from all three; this article isn't legal advice.</p>
+
+<p>Building a new site, or tidying up an existing one before launch? I can set up the privacy page, form consent wording, a cookie banner and Consent Mode as part of <a href="/wordpress-website-development/">WordPress website development</a>, with your lawyer's wording in place. The <a href="/blog/website-launch-checklist/">website launch checklist</a> covers the other pages to have ready.</p>
 `,
   },
   {
     slug: 'wordpress-user-roles-explained',
-    seoTitle: 'WordPress User Roles Explained for Business Owners',
-    title: 'WordPress User Roles Explained: Who Should Have Which Access',
-    description: 'WordPress user roles explained simply: administrator, editor, author, contributor, subscriber and shop manager, and safe access for staff and agencies.',
+    seoTitle: 'WordPress User Roles Explained: Who Gets Which Access',
+    title: 'WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which',
+    description: 'WordPress user roles explained: what Administrators, Editors, Authors, Contributors and Shop Managers can do, and which role to give staff and developers.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-website-development'],
     body: `
-<p>Giving everyone administrator access is one of the most common, and riskiest, habits on business WordPress sites. User roles let you give each person exactly the access they need, and no more.</p>
+<p>A standard WordPress site has five user roles: Administrator, Editor, Author, Contributor and Subscriber. Each role is a bundle of permissions, called capabilities, that decides what a person can do, from installing plugins and changing settings (Administrator) down to editing only their own profile (Subscriber). The safe rule is simple: give each person the lowest role that lets them do their job, keep administrators to a minimum, and never share one login between several people.</p>
+<p>This guide explains what each role can and can't do, the extra roles that WooCommerce and SEO plugins add, and which role suits staff, writers, agencies and developers. Checking who has administrator access is part of the first health check in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, because a forgotten admin account is one of the easiest ways into a site.</p>
 
-<h2>The default WordPress roles</h2>
+<h2>The five default WordPress roles at a glance</h2>
 <table>
-  <thead><tr><th>Role</th><th>What they can do</th><th>Typical user</th></tr></thead>
+  <thead><tr><th>Role</th><th>In plain terms</th><th>Typical person</th></tr></thead>
   <tbody>
-    <tr><td><strong>Administrator</strong></td><td>Everything: settings, plugins, themes, users</td><td>Business owner, trusted developer</td></tr>
-    <tr><td><strong>Editor</strong></td><td>Publish and edit all content, including others'</td><td>Marketing manager, content lead</td></tr>
-    <tr><td><strong>Author</strong></td><td>Write and publish their own posts</td><td>Regular in-house writer</td></tr>
-    <tr><td><strong>Contributor</strong></td><td>Write posts but can't publish</td><td>Guest writer, intern</td></tr>
-    <tr><td><strong>Subscriber</strong></td><td>Manage their own profile only</td><td>Registered site members</td></tr>
+    <tr><td><strong>Administrator</strong></td><td>Full control: settings, plugins, themes, users and all content</td><td>Business owner; the current developer, on their own account</td></tr>
+    <tr><td><strong>Editor</strong></td><td>Publishes and edits all posts and pages, including other people's, and moderates comments</td><td>Marketing manager, office staff who update service pages</td></tr>
+    <tr><td><strong>Author</strong></td><td>Writes, publishes and edits their own posts and uploads images, but can't touch pages</td><td>Regular in-house blogger</td></tr>
+    <tr><td><strong>Contributor</strong></td><td>Writes and edits their own drafts, but can't publish or upload files</td><td>Guest writer, intern</td></tr>
+    <tr><td><strong>Subscriber</strong></td><td>Reads the site and edits their own profile</td><td>Registered members</td></tr>
   </tbody>
 </table>
-<p>WooCommerce adds <strong>Shop Manager</strong> (manages products and orders without full site settings) and <strong>Customer</strong> roles.</p>
+<p>A WordPress multisite network adds a sixth role, Super Admin, who manages every site in the network and installs plugins and themes for all of them. On multisite, ordinary site Administrators can't install plugins or themes at all.</p>
 
-<p>If your own menus have vanished or WordPress says "Sorry, you are not allowed to access this page", your role may have changed; see <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">how to fix a missing admin bar or dashboard menus</a>.</p>
+<h2>What each role can actually do</h2>
+<p>Role names are only labels. What matters is the capabilities behind them. This is how the default roles compare on a standard single-site installation:</p>
+<table>
+  <thead><tr><th>Capability</th><th>Administrator</th><th>Editor</th><th>Author</th><th>Contributor</th><th>Subscriber</th></tr></thead>
+  <tbody>
+    <tr><td>Write posts</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Drafts only</td><td>No</td></tr>
+    <tr><td>Publish posts</td><td>Yes</td><td>Yes</td><td>Own posts</td><td>No</td><td>No</td></tr>
+    <tr><td>Edit or delete other people's posts</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr>
+    <tr><td>Create and edit pages</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr>
+    <tr><td>Upload images and files</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td></tr>
+    <tr><td>Moderate all comments and manage categories</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr>
+    <tr><td>Add unfiltered HTML, including scripts</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr>
+    <tr><td>Install plugins and themes, change settings</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+    <tr><td>Add, edit and delete users</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+  </tbody>
+</table>
+<h3>Two rows that catch people out</h3>
+<p><strong>Authors can't edit pages.</strong> If a receptionist needs to update clinic timings on the Contact page, or a manager changes prices on a service page, they need Editor. Author only covers blog posts.</p>
+<p><strong>Editors can add scripts.</strong> On a single site, Editors have the same "unfiltered HTML" capability as Administrators, so they can paste embed codes and JavaScript into content. That's handy for maps and booking widgets, but it also means a stolen Editor password can be used to inject malicious code into your pages. Treat Editor accounts as sensitive. A developer can remove the capability for everyone with one line in wp-config.php, though some page builder widgets expect it, so test on staging first:</p>
+<pre><code>define( 'DISALLOW_UNFILTERED_HTML', true );</code></pre>
 
-<h2>Best practices</h2>
+<h2>Roles added by WooCommerce, SEO and page builder plugins</h2>
+<h3>WooCommerce: Shop Manager and Customer</h3>
+<p>WooCommerce adds two roles. <strong>Shop Manager</strong> can manage products, orders, coupons, reports and WooCommerce settings, and edit customer accounts, without being able to install plugins, change the theme or manage other staff accounts. It also includes most Editor capabilities for posts and pages. <strong>Customer</strong> is given to shoppers who create an account: it's Subscriber plus their orders, addresses and account details on the My Account page.</p>
+<p>Staff who pack orders or answer customer queries should be Shop Managers, not Administrators. Shop Managers can still see every customer's name, address and phone number, so protect those accounts too; the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a> covers staff accounts and customer data.</p>
+<h3>SEO plugins</h3>
+<p>Yoast SEO adds two roles at the time of writing: SEO Manager, who can change the plugin's settings, and SEO Editor, who can edit the SEO fields on posts and pages. Both are built on the Editor role, so they can edit content as well. Rank Math takes a different approach, with a Role Manager that lets you choose which of its features each existing role can use.</p>
+<h3>Elementor</h3>
+<p>Elementor has its own Role Manager that can stop chosen roles opening the Elementor editor, and Elementor Pro adds an option to let a role edit content without changing the design, at the time of writing. That suits staff who should update text and images without moving sections around.</p>
+
+<h2>Which role to give staff, agencies and developers</h2>
 <ul>
-  <li><strong>Least privilege:</strong> give the lowest role that lets someone do their job</li>
-  <li><strong>Few administrators:</strong> usually the owner plus one trusted developer</li>
-  <li><strong>Individual accounts:</strong> never share one login between people</li>
-  <li><strong>Strong passwords and 2FA</strong> for every account with editing access</li>
-  <li><strong>Remove access promptly</strong> when staff, agencies or freelancers finish</li>
+  <li><strong>You, the business owner:</strong> Administrator, on a personal account with your own email address. Own at least one admin account even if you rarely log in, so a developer who disappears can't lock you out. If that has already happened, see <a href="/blog/regain-website-access-old-developer/">regaining access from an old developer</a>.</li>
+  <li><strong>Your developer or maintenance provider:</strong> Administrator, on their own named account, for as long as the work lasts. For a one-off fix, create the account for the job and remove it afterwards.</li>
+  <li><strong>A marketing or SEO agency:</strong> Editor usually covers content and SEO fields. Give Administrator only if they genuinely need to install a plugin or change settings, then downgrade them.</li>
+  <li><strong>Office staff who update timings, prices or team pages:</strong> Editor, limited through Elementor's Role Manager if the site uses it.</li>
+  <li><strong>An in-house blogger:</strong> Author. <strong>Guest writers and interns:</strong> Contributor, so someone reviews every post before it goes live. Contributors can't upload images, so the reviewing editor adds them.</li>
+  <li><strong>Store staff:</strong> Shop Manager.</li>
+  <li><strong>An accountant who needs sales figures:</strong> Shop Manager gives far more than they need. A monthly order export, or a reports-only custom role, is safer.</li>
+</ul>
+<p>Whatever the role, each person gets their own account. Shared logins make it impossible to remove one person without changing the password for everyone, and activity logs can't tell you who did what.</p>
+
+<h2>How to change a user's role</h2>
+<ol>
+  <li>Go to <strong>Users &gt; All Users</strong> and click the person's name.</li>
+  <li>Choose the new role from the <strong>Role</strong> dropdown.</li>
+  <li>Click <strong>Update User</strong>, then ask them to log out and back in.</li>
+</ol>
+<p>To change several people at once, tick them on the Users list, pick a role from <strong>Change role to</strong> and click Change. WordPress won't let you remove your own ability to manage users from this screen, which stops you locking yourself out by accident.</p>
+<p>Also check <strong>Settings &gt; General</strong>. "New User Default Role" should be Subscriber, or Customer on a store, and never Administrator. Untick "Anyone can register" unless members or customers genuinely need to sign up. Some attacks switch both settings so that anyone can register as an administrator, so an unexpected change here is a red flag. If bots are already creating accounts, see <a href="/blog/stop-spam-user-registrations-wordpress/">stopping spam user registrations</a>.</p>
+<p>Developers with SSH access can review and change roles with WP-CLI:</p>
+<pre><code>wp user list --fields=ID,user_login,user_email,roles
+wp user set-role 12 editor
+wp role list
+wp cap list editor</code></pre>
+
+<h2>Custom roles: when the defaults don't fit</h2>
+<p>Sometimes no default role fits: an Editor who shouldn't delete published pages, or someone who only needs WooCommerce reports. Plugins such as User Role Editor or Members let you create roles with exactly the capabilities you choose. A few cautions:</p>
+<ul>
+  <li><strong>Clone a role, don't edit the default.</strong> Copy Editor to a new "Content Manager" role and change the copy, so the standard roles still behave as everyone expects.</li>
+  <li><strong>Changes outlive the plugin.</strong> Roles and capabilities are stored in the database, so deactivating the plugin doesn't undo what you changed.</li>
+  <li><strong>Test as that user.</strong> A plugin such as User Switching lets an administrator view the dashboard as another user, so you can confirm they see what they need and nothing more.</li>
+  <li><strong>Keep a note</strong> of each custom role and why it exists, for whoever looks after the site next.</li>
 </ul>
 
-<h2>Working with developers and agencies</h2>
+<h2>Roles are only half of access control</h2>
+<p>A sensible role limits the damage a stolen password can do, but the account still needs protecting:</p>
 <ul>
-  <li>Create a separate account for them, never share yours</li>
-  <li>Give administrator access only for the work period if they need it</li>
-  <li>Keep ownership of hosting, domain and the main admin account yourself</li>
-  <li>Change or remove access when the project ends</li>
+  <li>Two-factor authentication on every Administrator, Editor and Shop Manager account; see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</li>
+  <li>Remove or downgrade accounts the same day someone leaves or a project ends. For a full clean-up of old accounts, follow the <a href="/blog/wordpress-user-accounts-audit/">WordPress user accounts audit</a>.</li>
+  <li>An activity log that records logins, role changes and new users; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs</a>.</li>
+  <li>Treat any administrator nobody recognises as a sign the site may be compromised. Note its details before deleting it, because the registration date can show when the break-in happened.</li>
 </ul>
 
-<p>To see what each account actually does once it has access, add an activity log; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs explained</a>.</p>
+<h2>FAQs</h2>
+<h3>What is the difference between an Editor and an Author in WordPress?</h3>
+<p>An Author can write, publish and edit only their own posts, and can't touch pages. An Editor can publish and edit every post and page on the site, including other people's, and moderate comments. Give Author to writers and Editor to whoever manages the site's content.</p>
+<h3>Which WordPress role should I give my web developer?</h3>
+<p>Administrator, on a separate account in their own name, for as long as the work lasts. Remove or downgrade it when the job ends, and never hand over your own login.</p>
+<h3>Can an Editor install plugins or change themes?</h3>
+<p>No. Plugins, themes, settings and user management are Administrator-only on a standard site. Editors can, however, add scripts and embed codes to content on a single site, so protect their accounts as carefully as admin accounts.</p>
+<h3>What can a Shop Manager do in WooCommerce?</h3>
+<p>Manage products, orders, coupons, reports and WooCommerce settings, and edit customer accounts. They can't install plugins, change the theme or manage other staff accounts, which makes the role right for store staff.</p>
+<h3>How many administrators should a WordPress site have?</h3>
+<p>As few as possible. For most small businesses that's the owner plus the developer or maintenance provider currently looking after the site. Every extra admin account is another password that could leak.</p>
+<h3>Why can't a user see a menu they need?</h3>
+<p>Their role probably lacks the capability for that screen, or a plugin has hidden the menu. Check the role first. If an Administrator is missing menus or sees "Sorry, you are not allowed to access this page", see <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">fixing missing dashboard menus</a>.</p>
 
-<h2>Review users regularly</h2>
-<p>Check <strong>Users</strong> in your dashboard every month or two. Unknown administrator accounts can be a sign of a hack; see <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site is hacked</a>.</p>
-
-<p>User reviews are part of the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> and every <a href="/wordpress-maintenance/">maintenance plan</a>.</p>
+<p>Want someone to keep an eye on who can get into your site? Reviewing administrator access is part of the health check that starts my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, followed by updates, off-site backups and security scans every month. If you've found an administrator account nobody can explain, treat it as a possible hack and see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -9343,57 +9752,119 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
   },
   {
     slug: 'stop-contact-form-spam',
-    seoTitle: 'How to Stop Contact Form Spam on WordPress',
-    title: 'How to Stop Contact Form Spam on Your WordPress Website',
-    description: 'Stop contact form spam on WordPress with honeypots, time checks, friendly CAPTCHAs, validation and email filtering, without blocking real customers.',
+    seoTitle: 'How to Stop Contact Form Spam on WordPress: What Works',
+    title: 'How to Stop Contact Form Spam on WordPress: Honeypots, Turnstile, Akismet and Filters That Work',
+    description: 'Stop contact form spam on WordPress with honeypots, Turnstile, Akismet and keyword filters, plus settings for Contact Form 7, WPForms and Elementor.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-website-development', 'wordpress-malware-removal'],
     body: `
-<p>Spam submissions waste time and can bury real enquiries. The goal is to block bots without making the form harder for genuine customers. Here are the methods that work, from least to most intrusive.</p>
+<p>To stop contact form spam on WordPress, layer a few light defences instead of relying on one: a honeypot field and a time check to catch simple bots, Cloudflare Turnstile or reCAPTCHA for persistent ones, and Akismet or keyword rules for spam that people type by hand. Make sure every check runs on the server, keep a spam folder you can review, and test the form yourself after each change so real enquiries still get through.</p>
+<p>Which layer you need depends on the kind of spam you're getting, so start there. Form checks are part of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> for a reason: a spam fix that quietly blocks genuine customers costs far more than the spam ever did.</p>
 
-<h2>1. Honeypot fields</h2>
-<p>A hidden field that people can't see but bots fill in automatically. Any submission with it filled is discarded. It's invisible to real users and stops a large share of simple bots.</p>
+<h2>First, work out what kind of spam you're getting</h2>
+<table>
+  <thead><tr><th>What you see</th><th>Likely source</th><th>What stops it</th></tr></thead>
+  <tbody>
+    <tr><td>Random names, gibberish and links to casinos or crypto, often at odd hours</td><td>Simple bots that fill in every field</td><td>Honeypot and time check</td></tr>
+    <tr><td>The same message dozens of times in a few minutes</td><td>A bot flood hitting the form directly</td><td>Turnstile or reCAPTCHA, plus rate limiting at the firewall</td></tr>
+    <tr><td>Polite pitches for SEO, web design or app development</td><td>People paid to fill in forms by hand, or advanced bots</td><td>Akismet and keyword filters; a CAPTCHA won't help</td></tr>
+    <tr><td>Messages in a language and script you never do business in</td><td>Bots or spam networks</td><td>Keyword or character filters</td></tr>
+    <tr><td>Spam in your inbox that never appears in form entries</td><td>Your email address was scraped from the site</td><td>Email filtering, and not publishing the address as plain text</td></tr>
+    <tr><td>Strangers say they got an auto-reply from you</td><td>Bots using your form's auto-reply to send spam to other people</td><td>Remove visitor text from auto-replies and add bot protection</td></tr>
+  </tbody>
+</table>
+<p>Getting fake user accounts rather than fake messages? That's a different door; see <a href="/blog/stop-spam-user-registrations-wordpress/">how to stop spam user registrations</a>.</p>
 
-<h2>2. Time checks</h2>
-<p>Bots often submit forms within a second of loading the page. Rejecting submissions sent unrealistically fast blocks many of them with no impact on people.</p>
-
-<h2>3. Simple questions or invisible challenges</h2>
-<p>A basic question (like a simple sum) or an invisible challenge service stops more determined bots. Prefer options that don't make people solve frustrating puzzles, especially on mobile.</p>
-
-<p>If you use Google reCAPTCHA and see "Invalid domain for site key", a missing badge or forms that won't send, work through <a href="/blog/recaptcha-not-working-wordpress/">how to fix reCAPTCHA on WordPress</a>.</p>
-
-<h2>4. Validation</h2>
+<h2>Layer 1: honeypot fields and time checks</h2>
+<p>A honeypot is a form field hidden from people but visible to bots in the page code. Real visitors leave it empty; simple bots fill in everything, so any submission with the honeypot filled is discarded. A time check works alongside it: a person takes at least a few seconds to type a name and message, while a bot often submits within a second of the page loading. Neither adds anything for genuine visitors to do.</p>
+<p>Most form plugins include a honeypot, though the setting is easy to miss. At the time of writing:</p>
 <ul>
-  <li>Require valid phone number and email formats</li>
-  <li>Limit message length</li>
-  <li>Block submissions containing lots of links, a common spam pattern</li>
+  <li><strong>WPForms:</strong> anti-spam protection is under each form's Settings, in the spam protection section, and is normally on by default.</li>
+  <li><strong>Gravity Forms:</strong> tick "Anti-spam honeypot" in the form's settings.</li>
+  <li><strong>Elementor Pro forms:</strong> add a Honeypot field from the field types list.</li>
+  <li><strong>Fluent Forms:</strong> the honeypot is in the global security settings.</li>
+  <li><strong>Contact Form 7:</strong> has no honeypot of its own, so add one with a maintained add-on such as Honeypot for Contact Form 7.</li>
+</ul>
+<p>Whatever the plugin, the honeypot and timer must be checked on the server that receives the form. Some bots post straight to the form's address without loading the page at all, so a check that only runs in the browser protects nothing.</p>
+<p>This website's own contact form uses a honeypot, a simple addition question and a check that drops anything sent within three seconds of the page loading, with no reCAPTCHA. It isn't built on WordPress, but the same layers apply; the <a href="/work/samverse/">Samverse case study</a> explains how it works.</p>
+
+<h2>Layer 2: Turnstile, reCAPTCHA or hCaptcha for persistent bots</h2>
+<p>When smarter bots get past the honeypot, add a challenge service:</p>
+<ul>
+  <li><strong>Cloudflare Turnstile</strong> is free at the time of writing, usually invisible or a single click, and never asks visitors to pick out traffic lights. It works even if your site doesn't run through Cloudflare, and many form plugins support it directly or through an add-on.</li>
+  <li><strong>Google reCAPTCHA v3</strong> scores each visit in the background, and your form plugin rejects low scores. Set the threshold too high and visitors on VPNs or office networks get blocked without anyone noticing.</li>
+  <li><strong>hCaptcha</strong> is another option that many plugins support.</li>
+</ul>
+<p>Pick one, add it to every public form (contact, quote, newsletter and booking), and load it only once per page. If reCAPTCHA shows "Invalid domain for site key", a missing badge or forms that won't send, work through <a href="/blog/recaptcha-not-working-wordpress/">fixing reCAPTCHA on WordPress</a> rather than switching it off. Avoid image puzzles on a lead form; they cost enquiries, especially on phones.</p>
+
+<h2>Layer 3: content filters for spam people type by hand</h2>
+<p>No CAPTCHA stops a person who is paid to fill in forms. For those messages you need filters that look at what was written:</p>
+<ul>
+  <li><strong>Akismet</strong> checks submissions against a large shared spam database and works with Contact Form 7, WPForms, Gravity Forms, Elementor Pro forms and others. At the time of writing, its free plan is for personal, non-commercial sites, so a business site generally needs a paid plan.</li>
+  <li><strong>Disallowed keywords.</strong> Contact Form 7 also checks messages against the "Disallowed Comment Keys" list in <strong>Settings &gt; Discussion</strong>, so a word or domain added there blocks matching form messages as well as comments. Other plugins, including WPForms, have their own keyword filters, some in paid plans.</li>
+  <li><strong>Link limits.</strong> Genuine enquiries rarely contain several links. Reject messages with more than one or two.</li>
+  <li><strong>Language filters, used carefully.</strong> If your customers write in Hindi or Marathi, don't block Devanagari. Filter only scripts you genuinely never receive enquiries in.</li>
+</ul>
+<p>A developer can add a link limit to Contact Form 7 with a small snippet in a site-specific plugin or child theme. Visitors who trip it see a friendly message instead of losing their enquiry silently:</p>
+<pre><code>add_filter( 'wpcf7_validate_textarea', 'my_limit_links', 20, 2 );
+add_filter( 'wpcf7_validate_textarea*', 'my_limit_links', 20, 2 );
+
+function my_limit_links( $result, $tag ) {
+  $message = isset( $_POST[ $tag-&gt;name ] ) ? wp_unslash( $_POST[ $tag-&gt;name ] ) : '';
+  if ( substr_count( strtolower( $message ), 'http' ) &gt; 2 ) {
+    $result-&gt;invalidate( $tag, 'Please remove some links and send your message again.' );
+  }
+  return $result;
+}</code></pre>
+
+<h2>Layer 4: firewall rules for floods</h2>
+<p>If a bot hammers the form hundreds of times an hour, stop it before it reaches WordPress. A cloud firewall such as Cloudflare can rate-limit requests to the address your form posts to: Contact Form 7 submits through the WordPress REST API, while many other plugins use admin-ajax.php. Be careful with admin-ajax.php, because other features on your site use it too, so set limits generously and test. <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers rate limiting and false positives.</p>
+<p>Blocking whole countries is tempting but risky. If you get enquiries from NRIs, export buyers or overseas clients, a country block turns them away without either of you knowing.</p>
+
+<h2>Close the other routes into your inbox</h2>
+<ul>
+  <li><strong>Hide your email address from scrapers.</strong> An address printed as plain text gets harvested and spammed directly, whatever your form does. Use the form as the main contact route, or have a developer encode the address with WordPress's antispambot function.</li>
+  <li><strong>Fix the auto-reply.</strong> If your form emails a confirmation to whatever address is typed in, and that email repeats the visitor's message, bots can use it to send spam to strangers from your domain. Leave the message out of auto-replies, or show a thank-you page instead.</li>
+  <li><strong>Send form emails properly.</strong> Mail sent through your web server is more likely to be filtered, and real enquiries can end up in spam alongside the junk. Use SMTP with a proper sending service; see <a href="/blog/wordpress-not-sending-emails-smtp/">fixing WordPress emails with SMTP</a>.</li>
 </ul>
 
-<h2>5. Server-side checks</h2>
-<p>Client-side checks can be bypassed, so important checks (like the honeypot) should also be verified on the server that processes the form.</p>
-
-<h2>6. Anti-spam services and filters</h2>
-<p>Spam-filtering plugins and services analyse submissions and flag likely spam. Keep a spam folder to review occasionally, so real enquiries aren't lost.</p>
-
-<p>Getting fake user accounts rather than fake messages? See <a href="/blog/stop-spam-user-registrations-wordpress/">how to stop spam user registrations</a>.</p>
-
-<h2>What to avoid</h2>
+<h2>Don't lose real enquiries in the process</h2>
 <ul>
-  <li>Hard CAPTCHAs that frustrate real customers and cut submissions</li>
-  <li>Blocking whole countries if you might get genuine international enquiries</li>
-  <li>Filters so strict that real messages vanish silently</li>
+  <li><strong>Store entries on the site.</strong> Contact Form 7 doesn't save submissions by default; its companion plugin Flamingo stores them, with Akismet-flagged messages in a separate spam folder. Check whether your form plugin stores entries, since some do so only in paid versions.</li>
+  <li><strong>Review the spam folder</strong> weekly for the first month after any change, then occasionally.</li>
+  <li><strong>Test after every change,</strong> on a desktop and on a phone using mobile data, and confirm the email arrives. If enquiries still seem to vanish, work through <a href="/blog/contact-form-not-getting-enquiries/">why a contact form stops getting enquiries</a>.</li>
+  <li><strong>Prefer rejections people can see.</strong> A visible error lets a real customer fix the problem; a silent discard loses them.</li>
 </ul>
 
-<p>Choosing a form plugin? See <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a>.</p>
-
-<h2>Test after changes</h2>
-<p>After adding spam protection, submit the form yourself on desktop and mobile and confirm the email arrives. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a>.</p>
+<h2>A quick setup for most business sites</h2>
+<ol>
+  <li>Switch on your form plugin's honeypot or anti-spam protection.</li>
+  <li>Add Turnstile, or reCAPTCHA v3, to every public form.</li>
+  <li>Add Akismet or keyword filters if hand-typed pitches keep coming.</li>
+  <li>Store entries, so anything filtered can be recovered.</li>
+  <li>Remove the visitor's message from auto-reply emails.</li>
+  <li>Send test enquiries from a desktop and a phone, and check they arrive.</li>
+</ol>
 
 <p>Blog comment spam is a similar problem; see <a href="/blog/wordpress-comments-enable-or-disable/">should a business site enable comments?</a></p>
 
-<h2>Real example</h2>
-<p>This website's contact form combines a hidden honeypot field, a time check and a simple maths question, with the honeypot also checked on the server, as described in the <a href="/work/samverse/">Samverse case study</a>.</p>
+<h2>FAQs</h2>
+<h3>Why am I suddenly getting so much contact form spam?</h3>
+<p>Bots find forms by crawling the web, and once your form is on a spam list the volume tends to grow. A plugin update or a change of form plugin can also switch off a protection that used to be on, so check the settings first.</p>
+<h3>How can I stop contact form spam without a CAPTCHA?</h3>
+<p>Combine a honeypot field, a time check and a link limit, all verified on the server, and add Akismet or keyword filters for hand-typed spam. For many small business sites that's enough. Add Turnstile only if bots still get through.</p>
+<h3>How do I stop spam in Contact Form 7?</h3>
+<p>Add a honeypot with a maintained add-on, connect Turnstile or reCAPTCHA v3, enable Akismet if you have a licence, and add problem words to the Disallowed Comment Keys list. Install Flamingo so submissions are stored and spam can be reviewed.</p>
+<h3>Does reCAPTCHA stop all form spam?</h3>
+<p>No. It stops many bots, but not people paid to fill in forms, and a badly set threshold can block real visitors. Use it as one layer alongside a honeypot and content filters.</p>
+<h3>Why do I keep getting SEO and web design offers through my form?</h3>
+<p>Those messages are usually typed by people or sent by advanced bots, so CAPTCHAs don't stop them. Akismet and keyword filters catch many of them. Don't reply or click their links; <a href="/blog/domain-seo-scam-emails/">domain and SEO scam emails</a> explains the common tricks.</p>
+<h3>Can contact form spam harm my website?</h3>
+<p>Mostly it wastes time, but an auto-reply that bots can abuse can damage your domain's email reputation, and stored spam fills your database over time. The bigger risk is a spam fix that blocks genuine customers without anyone noticing.</p>
+
+<p>Tired of sorting spam from real enquiries? I can set up and test form protection, entry storage and email delivery, and form checks after every update are part of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Still choosing a form plugin? See <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a>.</p>
 `,
   },
   {
@@ -11697,46 +12168,109 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   },
   {
     slug: 'website-security-headers-explained',
-    seoTitle: 'Website Security Headers Explained Simply',
-    title: 'Website Security Headers Explained Simply',
-    description: 'Website security headers explained simply: what HSTS, X-Frame-Options, Content-Security-Policy and Referrer-Policy do, and how to add them safely.',
+    seoTitle: 'Website Security Headers Explained: HSTS, CSP and More',
+    title: 'Website Security Headers Explained: HSTS, CSP, X-Frame-Options and How to Add Them to WordPress',
+    description: 'Security headers explained: what HSTS, CSP, X-Frame-Options, Referrer-Policy and Permissions-Policy do, and how to add them in .htaccess or Cloudflare.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
-<p>Security headers are instructions your server sends to browsers along with each page, telling them how to behave more safely: always use HTTPS, don't let other sites frame this page, don't guess file types, and so on. They're a quick, low-cost layer of protection.</p>
+<p>Security headers are instructions your server sends with every page, telling the browser to behave more safely: always use HTTPS (Strict-Transport-Security), don't let other sites load this page in a frame (X-Frame-Options or frame-ancestors), don't guess file types (X-Content-Type-Options), share less with other sites (Referrer-Policy), switch off browser features you don't use (Permissions-Policy) and load scripts only from approved places (Content-Security-Policy). Five of them can be added safely in a few minutes; Content-Security-Policy needs testing in report-only mode first.</p>
+<p>Headers harden a clean site; they don't fix a hacked one. If your site is already showing spam pages or redirects, clean it first: my <a href="/wordpress-malware-removal/">malware removal service</a> ends with security hardening once the site is clean, and my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> keep updates and security monitoring running every month.</p>
 
-<h2>The most useful headers</h2>
+<h2>The six headers worth knowing</h2>
 <table>
-  <thead><tr><th>Header</th><th>What it does</th></tr></thead>
+  <thead><tr><th>Header</th><th>What it does</th><th>Safe starting value</th><th>What it can break</th></tr></thead>
   <tbody>
-    <tr><td><strong>Strict-Transport-Security (HSTS)</strong></td><td>Tells browsers to always use HTTPS for your site</td></tr>
-    <tr><td><strong>X-Content-Type-Options: nosniff</strong></td><td>Stops browsers guessing file types, blocking some attacks</td></tr>
-    <tr><td><strong>X-Frame-Options / frame-ancestors</strong></td><td>Prevents other sites from embedding your pages (clickjacking)</td></tr>
-    <tr><td><strong>Referrer-Policy</strong></td><td>Controls how much of your URL is shared when visitors click links to other sites</td></tr>
-    <tr><td><strong>Permissions-Policy</strong></td><td>Disables browser features you don't use (camera, microphone, location)</td></tr>
-    <tr><td><strong>Content-Security-Policy (CSP)</strong></td><td>Restricts where scripts, styles and images can load from</td></tr>
+    <tr><td><strong>Strict-Transport-Security (HSTS)</strong></td><td>Tells browsers to use only HTTPS for your domain for a set period</td><td>A short max-age at first, then a year</td><td>Subdomains without a valid certificate, if you include them</td></tr>
+    <tr><td><strong>X-Content-Type-Options</strong></td><td>Stops browsers guessing a file's type, which blocks some attacks using disguised files</td><td>nosniff</td><td>Files served with the wrong type, such as a script sent as plain text</td></tr>
+    <tr><td><strong>X-Frame-Options</strong></td><td>Stops other sites showing your pages inside a frame (clickjacking)</td><td>SAMEORIGIN</td><td>Legitimate embeds of your pages on other domains</td></tr>
+    <tr><td><strong>Referrer-Policy</strong></td><td>Controls how much of your page address is passed on when visitors click through to other sites</td><td>strict-origin-when-cross-origin</td><td>Very little</td></tr>
+    <tr><td><strong>Permissions-Policy</strong></td><td>Switches off browser features you don't use, such as camera, microphone and location</td><td>camera=(), microphone=(), geolocation=()</td><td>Features you do use, such as a "use my location" store finder</td></tr>
+    <tr><td><strong>Content-Security-Policy (CSP)</strong></td><td>Lists where scripts, styles, images and frames may load from</td><td>Report-only mode first</td><td>Analytics, chat widgets, payment scripts, embeds and page builders</td></tr>
   </tbody>
 </table>
 
-<h2>How to add them</h2>
+<h2>HSTS: force HTTPS, but only when you're ready</h2>
+<p>Your site probably already redirects http:// to https://, but that redirect happens after the browser has made an insecure first request. HSTS tells the browser to skip plain HTTP entirely for your domain from then on. It also stops visitors clicking past certificate warnings, which is exactly why you need to be ready before switching it on.</p>
 <ul>
-  <li><strong>Hosting or server configuration:</strong> many hosts let you add headers in the control panel or configuration files</li>
-  <li><strong>Security plugins</strong> can add common headers on WordPress</li>
-  <li><strong>CDNs and static hosts</strong> often support header rules (this website sets its headers in its hosting configuration)</li>
+  <li><strong>Fix HTTPS first.</strong> Every page should load securely without mixed content warnings; see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content</a>. Your certificate should renew automatically.</li>
+  <li><strong>Be careful with includeSubDomains.</strong> It applies HSTS to every subdomain, including old staging sites and mail or shop subdomains. Any without a valid certificate become unreachable in browsers that have seen the header.</li>
+  <li><strong>Ramp up the max-age.</strong> Start with five minutes (max-age=300), move to a week (604800), then a year (31536000) once nothing has broken.</li>
+  <li><strong>Think twice about preload.</strong> Submitting your domain to the browser preload list at hstspreload.org builds HTTPS-only into browsers themselves. It requires a max-age of at least a year and includeSubDomains, and it takes a long time to undo.</li>
 </ul>
+<p>If visitors already see certificate errors, sort those out before adding HSTS; see <a href="/blog/ssl-certificate-errors-fix/">fixing SSL certificate errors</a>.</p>
 
-<h2>Be careful with CSP and HSTS</h2>
+<h2>X-Frame-Options and frame-ancestors: stop clickjacking</h2>
+<p>Clickjacking loads your page invisibly inside another site, so a visitor who thinks they're clicking one thing is actually clicking a button on your page. X-Frame-Options stops that. Use <strong>SAMEORIGIN</strong> on WordPress rather than DENY, because the Customizer and page builders such as Elementor load your own site in a frame to show previews. WordPress already sends SAMEORIGIN on the login page and dashboard; the header extends that protection to the rest of the site.</p>
+<p>The modern replacement is the frame-ancestors directive inside Content-Security-Policy. Modern browsers follow frame-ancestors when both are present, so send both for older browsers. If a partner genuinely needs to embed one of your pages, such as a booking form, frame-ancestors can list their domain; X-Frame-Options can't.</p>
+
+<h2>X-Content-Type-Options, Referrer-Policy and Permissions-Policy</h2>
 <ul>
-  <li><strong>CSP</strong> can break analytics, chat widgets, embeds and payment scripts if it's too strict. Start in report-only mode and add allowed sources gradually.</li>
-  <li><strong>HSTS</strong> should only be enabled once HTTPS works everywhere on your domain and subdomains, because browsers will refuse plain HTTP afterwards.</li>
+  <li><strong>X-Content-Type-Options: nosniff</strong> has only one value and rarely causes trouble. If something stops loading afterwards, the server is sending that file with the wrong type, which is worth fixing anyway.</li>
+  <li><strong>Referrer-Policy: strict-origin-when-cross-origin</strong> passes the full address within your own site but only your domain name to other sites. Modern browsers already default to it, so setting it simply makes the behaviour consistent. Stricter values such as no-referrer hide your site in other sites' analytics, which matters if partners send you referral reports.</li>
+  <li><strong>Permissions-Policy</strong> should list only features you're sure you don't use. Leave geolocation alone if a store finder asks for location, and don't switch off payment if your checkout shows Google Pay or Apple Pay buttons.</li>
 </ul>
+<p>Two headers you can skip: X-XSS-Protection, which modern browsers no longer use, and Expect-CT, which is obsolete. Some scanners still mention them.</p>
 
-<h2>How to check your headers</h2>
-<p>Free online security header scanners show which headers your site sends and suggest improvements. Browser developer tools (Network tab) also show response headers.</p>
+<h2>Content-Security-Policy: powerful, but test it first</h2>
+<p>A CSP tells the browser which domains may supply scripts, styles, images, fonts and frames. If an attacker injects a script tag that loads code from their own server, as some <a href="/blog/woocommerce-checkout-skimmer-malware/">checkout skimmers</a> do, a good CSP can stop the browser running it. That's the appeal.</p>
+<p>The difficulty on WordPress is that core, themes, Elementor and plugins all print inline scripts, and most business sites load third-party code too: Google Tag Manager and GA4, the Meta Pixel, YouTube and Google Maps embeds, reCAPTCHA, payment gateway scripts and WhatsApp or chat widgets. A strict policy written without testing breaks some of them, often a form or the checkout. If reCAPTCHA stops appearing after you add a policy, the Google domains it needs are missing; see <a href="/blog/recaptcha-not-working-wordpress/">fixing reCAPTCHA on WordPress</a>.</p>
+<ol>
+  <li><strong>Enforce the low-risk directives now.</strong> frame-ancestors 'self', object-src 'none', base-uri 'self' and upgrade-insecure-requests don't touch your scripts and are safe on most sites.</li>
+  <li><strong>Run everything else in report-only mode.</strong> The Content-Security-Policy-Report-Only header applies a policy without blocking anything, and the browser console lists what would have been blocked.</li>
+  <li><strong>Click through every important page</strong> over a week or two: the home page, contact and quote forms, the checkout with a test payment, pages with video and maps, and the Elementor editor. Add each legitimate domain to the policy.</li>
+  <li><strong>Enforce only when the console is quiet,</strong> and revisit the policy whenever you add a new tool.</li>
+</ol>
+<p>A report-only starting point for a site using Google Analytics, Google Fonts and YouTube embeds might look like this. Your list will differ:</p>
+<pre><code>Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.youtube-nocookie.com</code></pre>
+<p>Be honest with yourself about 'unsafe-inline'. Most WordPress sites need it, and it means injected inline scripts can still run. The policy still blocks scripts from domains you haven't approved, which is a real improvement, but it isn't the strict CSP security guides describe.</p>
+
+<h2>How to add security headers</h2>
+<h3>.htaccess on Apache or LiteSpeed hosting</h3>
+<p>Most shared hosting runs Apache or LiteSpeed, which read the .htaccess file in your site's main folder. Back the file up first, then add this outside the "BEGIN WordPress" block, because WordPress rewrites that section. A typing mistake in .htaccess can take the site down with a 500 error, so check the site straight away and restore the backup if anything goes wrong:</p>
+<pre><code>&lt;IfModule mod_headers.c&gt;
+  Header always set Strict-Transport-Security "max-age=300"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Content-Security-Policy "frame-ancestors 'self'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests"
+&lt;/IfModule&gt;</code></pre>
+<p>Raise the HSTS max-age in stages once you're confident.</p>
+<h3>Nginx</h3>
+<p>On Nginx servers the same headers go in the server block as add_header lines ending in "always". One trap: if a location block has any add_header lines of its own, it stops inheriting the server-level ones, so headers can quietly disappear on some URLs. On managed hosting, ask support to add them.</p>
+<h3>Cloudflare</h3>
+<p>If your site runs through Cloudflare, HSTS has its own setting under SSL/TLS, Edge Certificates, and the other headers can be added with a response header transform rule that applies to every request. Menu names change, so check Cloudflare's current documentation. Headers set this way apply to cached pages and static files too; see <a href="/blog/cloudflare-wordpress-setup-guide/">setting up Cloudflare on WordPress</a>.</p>
+<h3>A plugin or PHP code</h3>
+<p>Some security and SSL plugins can add headers from a settings screen. That's convenient, but headers added in PHP have two gaps: static files such as images and scripts never pass through WordPress, and some page caches serve stored pages without running PHP, so the headers can go missing exactly where you expect them. Whatever you choose, set headers in one place only. Duplicates confuse scanners, and two different CSPs both apply, so the stricter combination wins.</p>
+<p>For a real example, this website runs on Hostinger rather than WordPress and sets its headers in the server's .htaccess file: HSTS, X-Content-Type-Options, X-Frame-Options, Referrer-Policy and Permissions-Policy. The <a href="/work/samverse/">Samverse case study</a> explains how the site is built.</p>
+
+<h2>How to test your headers</h2>
+<ul>
+  <li><strong>securityheaders.com</strong> gives a letter grade and lists missing headers. Use it as a checklist, not a target worth breaking the site for.</li>
+  <li><strong>Your browser:</strong> open developer tools, go to the Network tab, reload, click the first request and read the Response Headers.</li>
+  <li><strong>The command line:</strong> curl -I https://example.com prints the headers for any address.</li>
+  <li><strong>Test several page types:</strong> the home page, a cached page, a page with a form and, on a store, the checkout. After Cloudflare changes, purge the cache before testing.</li>
+</ul>
 
 <h2>Headers are one layer, not the whole wall</h2>
-<p>Updates, strong passwords, backups and a firewall matter more. Use headers alongside the basics in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. For hacked sites, see <a href="/wordpress-malware-removal/">malware removal</a>.</p>
+<p>Updates, strong passwords with two-factor authentication, tested backups and a firewall do far more to keep a site safe than any header. Add headers alongside the basics in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>, not instead of them.</p>
+
+<h2>FAQs</h2>
+<h3>Which security headers should a WordPress site have?</h3>
+<p>Start with X-Content-Type-Options, X-Frame-Options set to SAMEORIGIN, Referrer-Policy and a simple Permissions-Policy, then add HSTS once HTTPS works everywhere. Add a Content-Security-Policy after testing it in report-only mode.</p>
+<h3>Do security headers help SEO?</h3>
+<p>Not directly. Google treats HTTPS as a ranking signal, but security headers themselves aren't a ranking factor. They protect visitors and your reputation, which matters more than any ranking boost.</p>
+<h3>Will a Content-Security-Policy break my WordPress site?</h3>
+<p>It can, if it's too strict or untested. Analytics, embeds, forms, payment scripts and page builders all need their domains allowed. Running it in report-only mode first shows what would break without breaking it.</p>
+<h3>Do I still need X-Frame-Options if I use frame-ancestors?</h3>
+<p>Modern browsers follow frame-ancestors when both are present, but sending X-Frame-Options as well covers older browsers. Use SAMEORIGIN, not DENY, so WordPress previews keep working.</p>
+<h3>Can security headers stop my site being hacked?</h3>
+<p>No. They make some browser-based attacks harder, but most WordPress hacks come through outdated plugins and stolen passwords, which headers do nothing about. Treat them as one layer of hardening.</p>
+
+<p>Want security headers added and tested without breaking your forms or checkout? I can set them up as part of hardening after a <a href="/wordpress-malware-removal/">malware cleanup</a>, and my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> keep updates, backups and security monitoring running every month.</p>
 `,
   },
   {
@@ -15249,94 +15783,150 @@ Description: Buy %title% online. %excerpt%</code></pre>
   },
   {
     slug: 'website-launch-checklist',
-    seoTitle: 'Website Launch Checklist for Small Businesses',
-    title: 'Website Launch Checklist for Small Businesses (40 Checks)',
-    description: 'Website launch checklist for small businesses: content, design, mobile, forms, speed, SEO, analytics, security, legal pages and post-launch steps.',
+    seoTitle: 'Website Launch Checklist: What to Check Before Going Live',
+    title: 'Website Launch Checklist for Small Businesses: What to Check Before, On and After Launch Day',
+    description: 'A website launch checklist for small businesses: content, mobile, forms, SEO settings, analytics, security, legal pages, launch-day steps and the first week.',
     date: '2026-09-27',
+    updated: '2026-10-14',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'wordpress-seo-services'],
     body: `
-<p>Launch day goes smoothly when problems are found beforehand. Work through this checklist before your new or redesigned website goes live.</p>
+<p>Before a website goes live, check that every page is proofread and accurate, the site works on real phones, every form and button actually reaches you, search engines are allowed to index it, analytics and Search Console are connected, it runs on HTTPS with a fresh backup, and the privacy policy and other legal pages are in place. On launch day, switch off any "discourage search engines" or coming-soon setting, test the forms again on the live address and submit your sitemap to Google.</p>
+<p>This is the business owner's version of the checklist, so you can check any developer's work before you sign it off, mine included. Before launch on my <a href="/wordpress-website-development/">WordPress website development</a> projects, every page is tested on real devices, speed-optimised and given SEO basics; this list shows what that means in practice.</p>
 
-<h2>Content</h2>
-<ol>
-  <li>All pages proofread; no placeholder text</li>
-  <li>Contact details correct everywhere</li>
-  <li>Prices, services and hours up to date</li>
-  <li>Images are real, relevant and properly licensed</li>
-  <li>Every page has a clear call to action</li>
-</ol>
+<h2>When to do each part</h2>
+<table>
+  <thead><tr><th>When</th><th>What</th><th>Who</th></tr></thead>
+  <tbody>
+    <tr><td>Two weeks before</td><td>Content sign-off, legal pages, domain and hosting in your name, analytics accounts ready</td><td>You, with your developer</td></tr>
+    <tr><td>The week before</td><td>Mobile and browser testing, forms, speed and SEO settings on the staging site</td><td>Your developer, with you testing on your own phone</td></tr>
+    <tr><td>Launch day</td><td>Go live, HTTPS, indexing settings, live form tests, sitemap</td><td>Your developer, with you on hand</td></tr>
+    <tr><td>The first week</td><td>Enquiries, Search Console, broken links, Google Business Profile</td><td>You and your developer</td></tr>
+  </tbody>
+</table>
 
-<h2>Design and mobile</h2>
-<ol start="6">
-  <li>Tested on several phones, tablets and desktop browsers</li>
-  <li>No sideways scrolling or overlapping elements</li>
-  <li>Buttons large enough to tap</li>
-  <li>Favicon and social share image set</li>
-</ol>
+<h2>Content and trust</h2>
+<ul>
+  <li>Every page proofread, ideally by someone who didn't write it</li>
+  <li>No placeholder text, demo testimonials, sample "Hello world" post or theme demo pages left behind</li>
+  <li>Phone number, address, email and opening hours identical on every page and matching your Google Business Profile</li>
+  <li>Prices, services, service areas and team members up to date</li>
+  <li>Photos that are real, sharp and properly licensed</li>
+  <li>One clear next step on every page: call, WhatsApp, enquire or book</li>
+  <li>Favicon, a social sharing image and the current year in the footer</li>
+</ul>
 
-<h2>Functionality</h2>
-<ol start="10">
-  <li>Every form submits and the email arrives</li>
-  <li>WhatsApp, phone and email links work</li>
-  <li>Payments or bookings tested end to end (if applicable)</li>
-  <li>Search, filters and menus work</li>
-  <li>No broken internal links</li>
-</ol>
+<h2>Mobile and browsers</h2>
+<ul>
+  <li>Tested on your own phone, plus at least one Android phone and one iPhone</li>
+  <li>Checked in Chrome, Safari and Edge on a laptop</li>
+  <li>No sideways scrolling, overlapping text or images cut off at the edges</li>
+  <li>Buttons large enough to tap, and menus that open and close cleanly</li>
+  <li>Pop-ups and chat widgets that can be closed and don't cover the main button</li>
+  <li>Pages tried on mobile data, not just the office Wi-Fi</li>
+</ul>
+
+<h2>Forms, calls and WhatsApp</h2>
+<p>This is the section that decides whether the website earns its keep, so test it properly:</p>
+<ul>
+  <li>Submit every form with real details and check the email arrives in the inbox of the person who will answer it, not in spam</li>
+  <li>Make sure replying to a form email goes to the customer, not back to your own website address</li>
+  <li>Confirm visitors see a clear thank-you message or page after sending</li>
+  <li>Tap every phone link on a phone; the number should include the country code, such as +91</li>
+  <li>Check WhatsApp links open a chat with the right number; wa.me links need the full number with the country code and no plus sign or spaces, in the form https://wa.me/91XXXXXXXXXX</li>
+  <li>Check spam protection is switched on, and that it doesn't block your own test from a phone</li>
+</ul>
+<p>If anything here fails, <a href="/blog/contact-form-not-getting-enquiries/">why a contact form stops getting enquiries</a> walks through the usual causes.</p>
+
+<h2>SEO settings that break launches</h2>
+<p>Most launch disasters are settings, not design. A site can look perfect and still be invisible to Google:</p>
+<ul>
+  <li><strong>Settings &gt; Reading:</strong> "Discourage search engines from indexing this site" must be unticked on the live site. Developers tick it on staging, and it's easy to forget.</li>
+  <li><strong>No leftover noindex:</strong> check your SEO plugin hasn't set pages, posts or whole content types to noindex.</li>
+  <li><strong>robots.txt</strong> doesn't block the whole site, and any staging password protection is removed.</li>
+  <li><strong>Titles and meta descriptions</strong> written for every important page, with one main heading per page.</li>
+  <li><strong>An XML sitemap</strong> loads, usually at /sitemap_index.xml with Yoast or Rank Math, or /wp-sitemap.xml with WordPress's built-in sitemap.</li>
+  <li><strong>No staging addresses</strong> left in links, images or canonical tags.</li>
+  <li><strong>Redirects from old URLs</strong> if this replaces an existing site, so visitors and Google land on the new pages. This is the step that protects your rankings; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</li>
+  <li><strong>Image alt text</strong> on meaningful images, and structured data where it fits, such as business details and FAQs.</li>
+</ul>
 
 <h2>Speed</h2>
-<ol start="15">
-  <li>Images compressed and sized</li>
-  <li>Caching enabled</li>
-  <li>Key pages tested on PageSpeed Insights</li>
-</ol>
-
-<h2>SEO</h2>
-<ol start="18">
-  <li>Unique titles and meta descriptions</li>
-  <li>One H1 per page, logical headings</li>
-  <li>Image alt text</li>
-  <li>"Discourage search engines" OFF; no leftover noindex</li>
-  <li>XML sitemap working; robots.txt correct</li>
-  <li>301 redirects from old URLs (for redesigns)</li>
-  <li>Canonical tags correct</li>
-  <li>Structured data where relevant</li>
-</ol>
-
-<h2>Analytics and tracking</h2>
-<ol start="26">
-  <li>GA4 installed and receiving data</li>
-  <li>Key events for forms, calls and WhatsApp</li>
-  <li>Search Console verified</li>
-</ol>
-
-<h2>Security and reliability</h2>
-<ol start="29">
-  <li>HTTPS on every page</li>
-  <li>Strong passwords and 2FA for admins</li>
-  <li>Automatic backups scheduled</li>
-  <li>Uptime monitoring on</li>
+<ul>
+  <li>Home page and one key service or product page tested on PageSpeed Insights in mobile mode; <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a> shows how to read the results</li>
+  <li>Images resized and compressed, with no multi-megabyte photos in sliders</li>
+  <li>Caching switched on and tested once the site is live</li>
   <li>Unused plugins and themes removed</li>
+</ul>
+
+<h2>Analytics, Search Console and tracking</h2>
+<ul>
+  <li>Google Analytics 4 installed once, with your own visit showing in the real-time report</li>
+  <li>Key events set up for form submissions, phone taps and WhatsApp clicks</li>
+  <li>Search Console verified for the live domain, ideally as a domain property, which covers every version of the address</li>
+  <li>Google Ads or Meta conversion tracking tested, if you run ads</li>
+  <li>Every account owned by your business's Google account, not a developer's</li>
+</ul>
+<p><a href="/blog/setup-google-analytics-search-console/">Setting up Google Analytics and Search Console</a> covers each step.</p>
+
+<h2>Security, backups and ownership</h2>
+<ul>
+  <li>Domain, hosting and the main WordPress administrator account in your name; the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists what you should hold</li>
+  <li>Separate logins for everyone, strong passwords and two-factor authentication for administrators, and test accounts deleted</li>
+  <li>HTTPS on every page, with http:// and the non-preferred www or non-www version redirecting to one address</li>
+  <li>A full backup taken at launch, and automatic off-site backups scheduled</li>
+  <li>Uptime monitoring, so you hear about downtime before customers do</li>
+  <li>Plugins and themes updated, with anything unused deleted</li>
+</ul>
+
+<h2>Legal pages and policies</h2>
+<ul>
+  <li>A privacy policy that matches what your site actually collects and which tools it uses; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie consent basics</a></li>
+  <li>Terms, and refund, cancellation and shipping policies if you take bookings or payments</li>
+  <li>A cookie consent banner if you use tracking tools and serve visitors from regions that require one</li>
+  <li>Business details and registrations shown where your profession or industry expects them</li>
+</ul>
+<p>These pages carry legal weight, so have a lawyer or CA check them; this checklist isn't legal advice.</p>
+
+<h2>Launch day, step by step</h2>
+<ol>
+  <li><strong>Pick a sensible time.</strong> Launch early in the week, when you and your developer are around for a few days afterwards. Avoid a Friday evening or the day before a campaign, festival sale or trade show.</li>
+  <li><strong>Prepare DNS.</strong> If the domain is moving to new hosting, lower the DNS TTL a day or two before so the switch spreads faster. If your email uses the same domain, make sure the mail records are kept, or email stops arriving.</li>
+  <li><strong>Back up</strong> the old site, if there is one, and the new one.</li>
+  <li><strong>Move the site live</strong> and replace every staging address with the live one.</li>
+  <li><strong>Check HTTPS:</strong> the certificate is active, http:// redirects to https:// and no browser warnings appear.</li>
+  <li><strong>Open the site to search engines:</strong> untick "Discourage search engines", and switch off maintenance or coming-soon mode and any password protection.</li>
+  <li><strong>Clear every cache:</strong> the caching plugin, the server and any CDN.</li>
+  <li><strong>Test again on the live address:</strong> every form, phone link and WhatsApp button, plus every menu and footer link.</li>
+  <li><strong>Tell Google:</strong> submit the sitemap in Search Console and request indexing for the home page and key pages with the URL Inspection tool.</li>
+  <li><strong>Update your links:</strong> Google Business Profile, social media profiles, email signatures and directory listings.</li>
 </ol>
 
-<h2>Legal and trust</h2>
-<ol start="34">
-  <li>Privacy policy (and terms, refund or shipping policies where relevant)</li>
-  <li>Cookie consent if needed for your audience</li>
-  <li>Business details and registrations shown where required</li>
-</ol>
+<h2>The first week after launch</h2>
+<ul>
+  <li>Check enquiries are arriving every day, and ask a friend to send one from their phone</li>
+  <li>Look at Search Console for indexing problems, 404 errors and security messages</li>
+  <li>Watch for old addresses that now show "page not found", and add redirects for them</li>
+  <li>Confirm Analytics is recording visits and key events</li>
+  <li>Fix the small issues real visitors find; there are always a few</li>
+</ul>
+<p>After that, the <a href="/blog/first-90-days-after-website-launch/">first 90 days after launch</a> plan covers getting found, building trust and improving the site.</p>
 
 <p>Not sure what your terms page should say? See <a href="/blog/website-terms-and-conditions/">what website terms and conditions usually cover</a>.</p>
 
-<h2>Launch and after</h2>
-<ol start="37">
-  <li>Submit sitemap and request indexing for key pages</li>
-  <li>Update Google Business Profile and social links</li>
-  <li>Monitor Search Console and forms closely for two weeks</li>
-  <li>Follow the <a href="/blog/first-90-days-after-website-launch/">90-day post-launch plan</a></li>
-</ol>
+<h2>FAQs</h2>
+<h3>How long before launch should I start testing my website?</h3>
+<p>Start checking content a couple of weeks before, and leave at least several days for testing on the staging site. Larger sites, booking systems and online stores need longer, because there are more paths to test.</p>
+<h3>What is the best day to launch a website?</h3>
+<p>Early in the week, at a time when you and your developer can fix problems over the following days. Avoid launching just before a weekend, a holiday or a campaign that will send lots of visitors.</p>
+<h3>Do I need to tell Google my new website is live?</h3>
+<p>Google can find it on its own, but submitting your sitemap in Search Console and requesting indexing for key pages speeds things up. Linking the site from your Google Business Profile helps too.</p>
+<h3>Should I take my old website down before launching the new one?</h3>
+<p>No. Replace it on the same domain at launch, with redirects from old page addresses to their new equivalents. Taking the old site down early leaves customers and Google with nothing to find.</p>
+<h3>Why isn't my new website showing on Google?</h3>
+<p>New pages can take days or weeks to appear. If nothing shows after that, check the "Discourage search engines" setting, noindex tags and robots.txt first; see <a href="/blog/wordpress-site-not-showing-on-google/">a WordPress site not showing on Google</a> for the full list.</p>
 
-<p>Redesigning? Also see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
+<p>Planning a new website? Before launch on my <a href="/wordpress-website-development/">WordPress website development</a> projects, every page is tested on real devices, speed-optimised and given SEO basics, and afterwards you get a walkthrough on editing the site yourself. Opening an online store? Use the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a> as well.</p>
 `,
   },
   {
@@ -46166,79 +46756,124 @@ Description: Custom code for this website.
   },
   {
     slug: 'increase-wordpress-upload-size-limit',
-    seoTitle: 'How to Increase the WordPress Upload Size Limit',
-    title: 'How to Increase the WordPress Upload Size Limit (and Fix Upload Errors)',
-    description: 'Fix "exceeds the maximum upload size for this site": where the limit comes from, how to raise it in hosting settings, why some tricks fail and better options.',
+    seoTitle: 'How to Increase the Maximum Upload File Size in WordPress',
+    title: 'How to Increase the WordPress Upload Size Limit and Fix "Exceeds the Maximum Upload Size" Errors',
+    description: 'Fix "exceeds the maximum upload size for this site": check your limit, raise it in hPanel or cPanel, use php.ini or .htaccess safely, and fix 413 errors.',
     date: '2026-10-01',
+    updated: '2026-10-14',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration'],
     body: `
-<p>You try to upload a brochure PDF, a theme zip or a product video and WordPress refuses with "exceeds the maximum upload size for this site". Many guides suggest pasting code into one file or another, and some of those tricks quietly do nothing. Here's where the limit actually comes from, how to raise it properly, and when a bigger limit isn't the right answer at all.</p>
+<p>WordPress doesn't set its own upload limit. It reads two PHP settings controlled by your hosting, upload_max_filesize and post_max_size, and uses whichever is smaller. To increase it, raise both in your hosting control panel (PHP Configuration in Hostinger's hPanel, or the MultiPHP INI Editor in cPanel), then check the new figure under Media &gt; Add New. If your panel has no such option, a .user.ini, php.ini or .htaccess file works on some servers, while code in wp-config.php won't help at all.</p>
+<p>This guide covers where the limit comes from, each method and when it works, the other limits that cause "413" errors, and how to upload large files without raising anything. If you'd rather not touch server settings, sorting out errors like this is the kind of fix my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> handle.</p>
 
 <h2>Where the upload limit comes from</h2>
-<p>WordPress doesn't set its own upload limit. It reads the limits from PHP, the language your site runs on, and those are controlled by your hosting. Two settings matter most:</p>
 <table>
-  <thead><tr><th>Setting</th><th>What it controls</th></tr></thead>
+  <thead><tr><th>PHP setting</th><th>What it controls</th><th>Example value</th></tr></thead>
   <tbody>
-    <tr><td><code>upload_max_filesize</code></td><td>The largest single file PHP will accept</td></tr>
-    <tr><td><code>post_max_size</code></td><td>The largest total amount of data in one request; it should be equal to or larger than upload_max_filesize</td></tr>
-    <tr><td><code>memory_limit</code></td><td>Memory available to process the upload, such as resizing a large photo</td></tr>
-    <tr><td><code>max_execution_time</code> and <code>max_input_time</code></td><td>How long PHP waits, which matters for big files on slow connections</td></tr>
+    <tr><td><code>upload_max_filesize</code></td><td>The largest single file PHP accepts</td><td>64M</td></tr>
+    <tr><td><code>post_max_size</code></td><td>The largest total request, including the file and form data; keep it a little above upload_max_filesize</td><td>72M</td></tr>
+    <tr><td><code>memory_limit</code></td><td>Memory available to process the upload, such as resizing a large photo</td><td>256M</td></tr>
+    <tr><td><code>max_execution_time</code> and <code>max_input_time</code></td><td>How long PHP waits, which matters for big files on slow connections</td><td>300 (seconds)</td></tr>
   </tbody>
 </table>
-<p>WordPress uses the smaller of the first two as your effective limit. On a WordPress multisite network, the network admin settings can set a lower limit on top of this.</p>
+<p>The example values are a reasonable ceiling for a business site, not a target. Choose a limit a little above the largest file you genuinely need. PHP's own defaults are only 2 MB for a single file and 8 MB for a request, which is why a fresh server set-up often rejects ordinary brochures and theme files.</p>
 
-<h2>Check your current limit</h2>
+<h2>Check your current limit first</h2>
 <ul>
-  <li><strong>Media → Add New:</strong> WordPress shows "Maximum upload file size" below the upload area</li>
-  <li><strong>Tools → Site Health → Info:</strong> the Media Handling and Server sections list the PHP upload and post size values</li>
+  <li><strong>Media &gt; Add New</strong> shows "Maximum upload file size" under the upload area. This is the effective limit WordPress will enforce.</li>
+  <li><strong>Tools &gt; Site Health &gt; Info</strong> lists the individual values in the Media Handling and Server sections, including the upload size, post data size and PHP memory limit.</li>
 </ul>
-<p>Note the numbers before you change anything, so you can confirm afterwards that your change worked.</p>
+<p>Note the numbers before changing anything, so you can tell afterwards whether your change actually took effect. Many "it didn't work" moments are a change made in a file the server never reads.</p>
 
-<h2>Raise the limit in your hosting control panel</h2>
-<p>This is the most reliable method because it changes PHP's settings at the source.</p>
+<h2>Method 1: your hosting control panel (most reliable)</h2>
+<p>This changes PHP's settings at the source, and your host's own tools won't break anything else. At the time of writing:</p>
 <ul>
-  <li><strong>Hostinger's hPanel:</strong> look in the advanced section for PHP configuration, where a PHP options tab lets you change values such as upload_max_filesize and post_max_size</li>
-  <li><strong>cPanel hosts:</strong> look for "MultiPHP INI Editor" or "Select PHP Version", which often has an options tab</li>
-  <li><strong>Other hosts and managed WordPress plans:</strong> look for PHP settings, or ask support to raise the limit for you</li>
+  <li><strong>Hostinger hPanel:</strong> open the website's dashboard, go to the Advanced section, choose PHP Configuration and use the PHP options tab to set upload_max_filesize and post_max_size.</li>
+  <li><strong>cPanel:</strong> use the MultiPHP INI Editor under Software, pick your domain and edit the values in Basic Mode. Hosts running CloudLinux may offer Select PHP Version instead, with an Options tab.</li>
+  <li><strong>Plesk:</strong> look for PHP Settings on the domain's page.</li>
+  <li><strong>Managed WordPress hosting:</strong> PHP settings are often locked. Ask support to raise the limit; many will.</li>
 </ul>
-<p>Increase upload_max_filesize to what you genuinely need, set post_max_size a little higher, save, then recheck Media → Add New. Menu names change over time, so check your host's help pages if you can't find the option. Some budget plans cap these values, and the only way past the cap is a different plan.</p>
+<p>Save, wait a minute, then reload Media &gt; Add New. Menu names change, so check your host's help pages if you can't find the option. If you later switch PHP version, check the values again, because on some panels each version keeps its own settings; <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a> covers the switch itself. Budget plans sometimes cap these values, and the only way past a cap is a different plan.</p>
 
-<h2>.htaccess, php.ini and wp-config.php: why they often don't work</h2>
-<p>You'll find three popular do-it-yourself methods online. Each works only on certain server set-ups:</p>
+<h2>Method 2: a .user.ini or php.ini file</h2>
+<p>Where PHP runs as FastCGI or PHP-FPM, which is common on shared hosting, PHP reads a file called .user.ini in your site's main folder (the one containing wp-config.php). Some hosts read a file named php.ini there instead. Create the file with your file manager or SFTP and add:</p>
+<pre><code>upload_max_filesize = 64M
+post_max_size = 72M
+memory_limit = 256M
+max_execution_time = 300
+max_input_time = 300</code></pre>
+<p>PHP caches .user.ini files, so a change can take around five minutes to apply. If the numbers in Media &gt; Add New still haven't moved after that, your host ignores the file; delete it and use the control panel or ask support.</p>
+
+<h2>Method 3: .htaccess, on some servers only</h2>
+<p>On Apache servers that run PHP as a module, and on LiteSpeed servers that allow it, these lines in the .htaccess file in your site's main folder change the limits:</p>
+<pre><code>php_value upload_max_filesize 64M
+php_value post_max_size 72M
+php_value max_execution_time 300
+php_value max_input_time 300</code></pre>
+<p>On servers that don't support php_value, the same lines cause a 500 Internal Server Error and take the whole site down. Download a copy of .htaccess before editing it, check the site straight away, and restore the copy if anything breaks; see <a href="/blog/wordpress-500-internal-server-error-fix/">fixing a 500 internal server error</a>. A forgotten line here can also cause confusing problems months later, so remove it if it didn't help.</p>
+
+<h2>Why wp-config.php and most plugins can't raise it</h2>
 <ul>
-  <li><strong>.htaccess:</strong> lines starting with <code>php_value</code> work only where the server supports them. On many hosts they're ignored, and on some they cause a 500 Internal Server Error that takes the whole site down</li>
-  <li><strong>php.ini or .user.ini:</strong> a file in the site's main folder can override PHP settings on some hosts, and changes can take a few minutes to apply. Other hosts ignore these files entirely</li>
-  <li><strong>wp-config.php:</strong> adding an <code>ini_set()</code> line for the upload size generally has no effect, because PHP doesn't allow upload_max_filesize and post_max_size to be changed once WordPress is already running. The memory setting you may have seen, WP_MEMORY_LIMIT, controls memory, not upload size</li>
+  <li><strong>wp-config.php:</strong> adding ini_set lines for the upload size has no effect, because PHP doesn't allow upload_max_filesize and post_max_size to be changed once a script is already running. WP_MEMORY_LIMIT, which you may have seen suggested, controls memory, not upload size.</li>
+  <li><strong>Plugins:</strong> WordPress's upload_size_limit filter can lower the limit WordPress enforces, but it can't make PHP accept bigger files. Plugins that promise to increase the limit either write the same .htaccess or .ini lines described above, or change only the number WordPress displays.</li>
 </ul>
-<p>If you do try one of these, take a backup of the file first and remove your change if it doesn't help. A forgotten line in .htaccess can cause confusing problems months later. Prefer the control panel whenever it's available.</p>
+
+<h2>Limits outside PHP: Nginx, Cloudflare and multisite</h2>
+<p>If PHP's values are high enough and uploads still fail, something else is in the way:</p>
+<ul>
+  <li><strong>Nginx:</strong> its client_max_body_size setting defaults to just 1 MB and produces "413 Request Entity Too Large" when exceeded. Your host needs to raise it in the server configuration, for example to client_max_body_size 64M.</li>
+  <li><strong>Cloudflare:</strong> requests through Cloudflare have their own size cap, 100 MB on the free plan at the time of writing. Larger uploads have to bypass the proxy, for example over SFTP. See <a href="/blog/cloudflare-wordpress-setup-guide/">setting up Cloudflare on WordPress</a>.</li>
+  <li><strong>WordPress multisite:</strong> the network admin sets a "Max upload file size" in kilobytes under Network Admin &gt; Settings, on top of PHP's limit. Its default is low, so raise it there too.</li>
+  <li><strong>Security rules:</strong> server firewalls such as ModSecurity can block large or unusual uploads with a 403 or a vague error. Your host can check its logs.</li>
+</ul>
 
 <h2>Other upload errors and what they mean</h2>
 <table>
   <thead><tr><th>What you see</th><th>Likely cause</th></tr></thead>
   <tbody>
-    <tr><td>"The link you followed has expired" when uploading a theme or plugin</td><td>The zip is larger than post_max_size or upload_max_filesize</td></tr>
-    <tr><td>"413 Request Entity Too Large"</td><td>A limit on the web server itself, separate from PHP, which your host needs to raise</td></tr>
-    <tr><td>"The server cannot process the image"</td><td>Not enough memory to resize a very large photo; see <a href="/blog/wordpress-memory-limit-errors/">memory limit errors</a></td></tr>
-    <tr><td>"Sorry, you are not allowed to upload this file type"</td><td>WordPress blocks some file types for security; it's not a size problem</td></tr>
-    <tr><td>"Unable to create directory" for the uploads folder</td><td>Folder permissions or a full disk on your hosting account</td></tr>
-    <tr><td>A vague "HTTP error"</td><td>Often a time-out, memory limit or security rule; try a smaller file and check the error log</td></tr>
+    <tr><td>"exceeds the maximum upload size for this site"</td><td>The file is bigger than the effective limit; raise both PHP values or shrink the file</td></tr>
+    <tr><td>"The uploaded file exceeds the upload_max_filesize directive in php.ini"</td><td>PHP rejected the file; raise upload_max_filesize</td></tr>
+    <tr><td>"The link you followed has expired" when uploading a theme or plugin</td><td>The zip is bigger than post_max_size, so the form data was dropped</td></tr>
+    <tr><td>"413 Request Entity Too Large"</td><td>A web server or Cloudflare limit, separate from PHP</td></tr>
+    <tr><td>"HTTP error" or "The server cannot process the image"</td><td>Usually memory, time-outs or the image library, not size; see <a href="/blog/wordpress-http-error-image-upload-fix/">fixing the HTTP error on image uploads</a></td></tr>
+    <tr><td>"Allowed memory size exhausted" during an upload</td><td>PHP ran out of memory; see <a href="/blog/wordpress-memory-limit-errors/">memory limit errors</a></td></tr>
+    <tr><td>"Sorry, you are not allowed to upload this file type"</td><td>WordPress blocks some file types for security; it isn't a size problem</td></tr>
   </tbody>
 </table>
-<p>For other error messages, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
+<p>For other messages, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
 
-<h2>Better options for big files</h2>
-<p>A higher limit fixes the error, but it isn't always the right fix. Large files slow your site and fill your hosting storage and backups.</p>
+<h2>Upload big files without raising the limit</h2>
 <ul>
-  <li><strong>Photos:</strong> resize and compress before uploading. A phone photo several megabytes in size can usually be reduced to a small fraction of that with no visible difference on screen; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a></li>
-  <li><strong>Videos:</strong> upload to YouTube or Vimeo and embed them, rather than hosting video files on your server; see <a href="/blog/video-on-business-website/">video on your business website</a></li>
-  <li><strong>PDF brochures and catalogues:</strong> compress them before uploading, especially if they were exported at print quality</li>
-  <li><strong>Very large downloads:</strong> consider a cloud storage link for files only a few people need</li>
-  <li><strong>Themes and plugins:</strong> upload the unzipped folder to wp-content/themes or wp-content/plugins through FTP instead</li>
-  <li><strong>Migration backups:</strong> importing a whole-site backup through the browser often hits these limits; uploading via FTP or using your host's migration tool is usually simpler</li>
+  <li><strong>Themes and plugins:</strong> unzip them on your computer and upload the folder to wp-content/themes or wp-content/plugins over SFTP, then activate them in the dashboard.</li>
+  <li><strong>Media files:</strong> upload the file over SFTP, then add it to the Media Library with WP-CLI if your host provides SSH access, as in the example below.</li>
+  <li><strong>Whole-site backups and migrations:</strong> importing a large backup through a migration plugin in the browser often hits these limits. Uploading the archive over SFTP, or using your host's migration tool, is usually simpler.</li>
+</ul>
+<pre><code>wp media import /home/username/uploads/product-brochure.pdf --title="Product brochure"</code></pre>
+
+<h2>Do you actually need a bigger limit?</h2>
+<p>A higher limit fixes the error, but large files slow pages down and fill your hosting space and backups. Often the better fix is a smaller file:</p>
+<ul>
+  <li><strong>Photos:</strong> resize to the size they're shown at and compress them before uploading. A multi-megabyte phone photo usually shrinks dramatically with no visible difference on screen; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</li>
+  <li><strong>Videos:</strong> upload to YouTube or Vimeo and embed them instead of hosting video files on your server.</li>
+  <li><strong>PDF brochures and catalogues:</strong> files exported at print quality are often far larger than a screen needs. Export a web version for the site.</li>
 </ul>
 
-<p>Stuck on upload errors, or moving a large site to new hosting? I can sort out server settings and migrations for you; see <a href="/wordpress-maintenance/">WordPress maintenance</a> or <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<h2>FAQs</h2>
+<h3>What is the default WordPress upload limit?</h3>
+<p>WordPress has no default of its own; it uses your server's PHP settings. PHP's built-in defaults allow only 2 MB per file, but most hosts set something higher. Media &gt; Add New shows the limit on your site.</p>
+<h3>Why didn't my php.ini change work?</h3>
+<p>Your server may not read that file, it may be in the wrong folder, or PHP may still be using a cached copy. Wait five minutes, check Site Health, and if nothing changed, use the hosting control panel or ask support.</p>
+<h3>Can I increase the upload size in wp-config.php?</h3>
+<p>No. PHP doesn't allow upload_max_filesize and post_max_size to be changed from inside WordPress, so lines added to wp-config.php have no effect. Change the values in your hosting panel or a server configuration file instead.</p>
+<h3>Is there a plugin that increases the upload size?</h3>
+<p>Plugins can't exceed what your server allows. Some write .htaccess or .ini lines for you, which works only where those files are supported. The hosting control panel is more reliable.</p>
+<h3>How do I upload a file larger than the limit?</h3>
+<p>Upload it over SFTP or your host's file manager instead of the browser. Themes and plugins can go straight into their folders, and media files can be added to the library with WP-CLI.</p>
+<h3>Is it safe to set a very high upload limit?</h3>
+<p>Set it to what you need rather than the maximum. Very high limits let anyone with upload access fill your hosting space, and big uploads tie up server resources on cheaper plans.</p>
+
+<p>Stuck on upload errors, or moving a large site that won't import through the browser? I can sort out server settings as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and move sites between hosts with <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
   },
   {

@@ -329,11 +329,11 @@
     <description>Lead magnets and newsletters for small business websites: capture visitors not ready to buy, build trust and win clients later, with ideas and setup tips.</description>
   </item>
   <item>
-    <title>WooCommerce Store Launch Checklist: 30 Things to Check Before Going Live</title>
+    <title>WooCommerce Store Launch Checklist for Indian Stores: Settings, Test Orders and Launch-Day Steps</title>
     <link>https://samverse.space/blog/woocommerce-store-launch-checklist/</link>
     <guid>https://samverse.space/blog/woocommerce-store-launch-checklist/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WooCommerce launch checklist for Indian stores: products, payments, shipping, taxes, policies, emails, speed, SEO and testing so first orders go smoothly.</description>
+    <description>A WooCommerce launch checklist for Indian stores: store settings, products, payments, shipping, GST, emails, policies, test orders and launch-day steps.</description>
   </item>
   <item>
     <title>Schema Markup Explained: How Structured Data Helps Your Website in Google</title>
@@ -462,11 +462,11 @@
     <description>How to back up and restore WordPress: what to include, how often, the 3-2-1 rule, UpdraftPlus and host backups, and restoring by plugin or by hand.</description>
   </item>
   <item>
-    <title>WooCommerce Product Page Optimization: 12 Ways to Sell More</title>
+    <title>WooCommerce Product Page Optimization: Photos, Pricing, Delivery Details and Layouts That Help Shoppers Buy</title>
     <link>https://samverse.space/blog/woocommerce-product-page-optimization/</link>
     <guid>https://samverse.space/blog/woocommerce-product-page-optimization/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Optimize WooCommerce product pages for more sales: photos, descriptions, clear pricing, trust signals, reviews, delivery info, mobile layout and speed.</description>
+    <description>Optimize WooCommerce product pages: mobile layout, photos, GST-inclusive pricing, delivery and COD details, variations, reviews, speed and product schema.</description>
   </item>
   <item>
     <title>WooCommerce SEO: A Practical Guide to Ranking Your Product and Category Pages</title>
@@ -686,18 +686,18 @@
     <description>Website copywriting mistakes that cost enquiries, from vague headlines and jargon to talking about yourself and weak CTAs, with before-and-after fixes.</description>
   </item>
   <item>
-    <title>WooCommerce Abandoned Cart Recovery: Why Shoppers Leave and How to Win Them Back</title>
+    <title>WooCommerce Abandoned Cart Recovery: How It Works, Plugins, Email and WhatsApp Reminders, and Consent</title>
     <link>https://samverse.space/blog/woocommerce-abandoned-cart-recovery/</link>
     <guid>https://samverse.space/blog/woocommerce-abandoned-cart-recovery/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Why shoppers abandon WooCommerce carts, how to fix checkout friction and how to recover lost sales with reminder emails or WhatsApp messages, with consent.</description>
+    <description>How WooCommerce abandoned cart recovery works: plugins, pending payment orders, reminder timing for email and WhatsApp, discounts, consent and what to measure.</description>
   </item>
   <item>
-    <title>WooCommerce Shipping Setup for India: Zones, Rates and Couriers</title>
+    <title>WooCommerce Shipping Setup for India: Zones, Weight-Based Rates, Free Shipping, COD and Courier Integrations</title>
     <link>https://samverse.space/blog/woocommerce-shipping-setup-india/</link>
     <guid>https://samverse.space/blog/woocommerce-shipping-setup-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Set up WooCommerce shipping for Indian stores: zones, flat and weight-based rates, free shipping thresholds, COD, courier aggregators and tracking.</description>
+    <description>Set up WooCommerce shipping for India: zones by state and pin code, flat and weight-based rates, free-shipping thresholds, COD rules and courier integrations.</description>
   </item>
   <item>
     <title>Local Landing Pages Done Right: City and Area Pages That Rank Without Becoming Doorway Pages</title>
@@ -707,18 +707,18 @@
     <description>Local landing pages done right: Google's doorway page policy, unique content for each city or area page, when not to build them and how to fix them.</description>
   </item>
   <item>
-    <title>Privacy Policy and Cookie Consent Basics for Indian Business Websites</title>
+    <title>Privacy Policy and Cookie Consent for Indian Business Websites: DPDP Basics, GA4, Meta Pixel and Consent Mode v2</title>
     <link>https://samverse.space/blog/privacy-policy-cookie-basics-india/</link>
     <guid>https://samverse.space/blog/privacy-policy-cookie-basics-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Privacy policy and cookie basics for Indian websites: what data you collect, what to disclose, consent, forms, analytics and when to get legal advice.</description>
+    <description>What an Indian business website privacy policy should cover under the DPDP Act, when GA4 and Meta Pixel need cookie consent, and Consent Mode v2 basics.</description>
   </item>
   <item>
-    <title>WordPress User Roles Explained: Who Should Have Which Access</title>
+    <title>WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which</title>
     <link>https://samverse.space/blog/wordpress-user-roles-explained/</link>
     <guid>https://samverse.space/blog/wordpress-user-roles-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress user roles explained simply: administrator, editor, author, contributor, subscriber and shop manager, and safe access for staff and agencies.</description>
+    <description>WordPress user roles explained: what Administrators, Editors, Authors, Contributors and Shop Managers can do, and which role to give staff and developers.</description>
   </item>
   <item>
     <title>Uptime Monitoring Explained: How to Know Your Website Is Down Before Your Customers Do</title>
@@ -756,11 +756,11 @@
     <description>Get your website back from an old developer: find out who controls your domain, hosting and WordPress admin, regain access safely and avoid a repeat.</description>
   </item>
   <item>
-    <title>How to Stop Contact Form Spam on Your WordPress Website</title>
+    <title>How to Stop Contact Form Spam on WordPress: Honeypots, Turnstile, Akismet and Filters That Work</title>
     <link>https://samverse.space/blog/stop-contact-form-spam/</link>
     <guid>https://samverse.space/blog/stop-contact-form-spam/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Stop contact form spam on WordPress with honeypots, time checks, friendly CAPTCHAs, validation and email filtering, without blocking real customers.</description>
+    <description>Stop contact form spam on WordPress with honeypots, Turnstile, Akismet and keyword filters, plus settings for Contact Form 7, WPForms and Elementor.</description>
   </item>
   <item>
     <title>Business Email Deliverability: SPF, DKIM and DMARC Explained Simply</title>
@@ -1001,11 +1001,11 @@
     <description>What WordPress Multisite is, when a business genuinely needs it, when separate sites work better, and how Multisite affects SEO, plugins and hosting.</description>
   </item>
   <item>
-    <title>Website Security Headers Explained Simply</title>
+    <title>Website Security Headers Explained: HSTS, CSP, X-Frame-Options and How to Add Them to WordPress</title>
     <link>https://samverse.space/blog/website-security-headers-explained/</link>
     <guid>https://samverse.space/blog/website-security-headers-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Website security headers explained simply: what HSTS, X-Frame-Options, Content-Security-Policy and Referrer-Policy do, and how to add them safely.</description>
+    <description>Security headers explained: what HSTS, CSP, X-Frame-Options, Referrer-Policy and Permissions-Policy do, and how to add them in .htaccess or Cloudflare.</description>
   </item>
   <item>
     <title>Conversion Rate Optimization (CRO) Basics for Small Business Websites: Measure, Find the Leaks, Fix and Test</title>
@@ -1400,11 +1400,11 @@
     <description>How to choose website colours and fonts: brand fit, a small palette, contrast and accessibility, readable type, performance and applying them consistently.</description>
   </item>
   <item>
-    <title>Website Launch Checklist for Small Businesses (40 Checks)</title>
+    <title>Website Launch Checklist for Small Businesses: What to Check Before, On and After Launch Day</title>
     <link>https://samverse.space/blog/website-launch-checklist/</link>
     <guid>https://samverse.space/blog/website-launch-checklist/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Website launch checklist for small businesses: content, design, mobile, forms, speed, SEO, analytics, security, legal pages and post-launch steps.</description>
+    <description>A website launch checklist for small businesses: content, mobile, forms, SEO settings, analytics, security, legal pages, launch-day steps and the first week.</description>
   </item>
   <item>
     <title>How to Prepare Photos for Your Business Website</title>
@@ -3752,11 +3752,11 @@
     <description>Seeing &quot;Briefly unavailable for scheduled maintenance&quot;? Why updates get stuck, how to delete the .maintenance file, finish the update safely and prevent it.</description>
   </item>
   <item>
-    <title>How to Increase the WordPress Upload Size Limit (and Fix Upload Errors)</title>
+    <title>How to Increase the WordPress Upload Size Limit and Fix &quot;Exceeds the Maximum Upload Size&quot; Errors</title>
     <link>https://samverse.space/blog/increase-wordpress-upload-size-limit/</link>
     <guid>https://samverse.space/blog/increase-wordpress-upload-size-limit/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Fix &quot;exceeds the maximum upload size for this site&quot;: where the limit comes from, how to raise it in hosting settings, why some tricks fail and better options.</description>
+    <description>Fix &quot;exceeds the maximum upload size for this site&quot;: check your limit, raise it in hPanel or cPanel, use php.ini or .htaccess safely, and fix 413 errors.</description>
   </item>
   <item>
     <title>WordPress Pages Showing 404 but the Homepage Works? How to Fix It</title>
