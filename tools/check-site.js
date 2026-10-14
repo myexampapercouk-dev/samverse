@@ -24,7 +24,8 @@ for (const f of files) {
   for (const m of h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     try { JSON.parse(m[1]); } catch (e) { problems.push(`invalid JSON-LD: ${rel}`); }
   }
-  for (const m of h.matchAll(/href="(\/[^"#?]*)/g)) {
+  // Code examples inside <pre> show escaped markup, not real links.
+  for (const m of h.replace(/<pre>[\s\S]*?<\/pre>/g, '').matchAll(/href="(\/[^"#?]*)/g)) {
     const u = m[1];
     const target = u.endsWith('/') ? path.join(ROOT, u, 'index.html') : path.join(ROOT, u);
     if (!fs.existsSync(target)) problems.push(`broken link ${u} in ${rel}`);
