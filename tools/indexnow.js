@@ -1,5 +1,6 @@
 // Tells Bing, Yandex and other IndexNow search engines about every URL in sitemap.xml.
 // Run AFTER deploying, once samverse.space is live:   node tools/indexnow.js
+// Only some pages changed? Pass their paths:           node tools/indexnow.js /blog/some-post/ /about/
 // The key file /d3b5a97e8c31d2a45b6f14873a8a9c52.txt must be reachable on the live site.
 const fs = require('fs');
 const path = require('path');
@@ -7,7 +8,10 @@ const path = require('path');
 const HOST = 'samverse.space';
 const KEY = 'd3b5a97e8c31d2a45b6f14873a8a9c52';
 const sitemap = fs.readFileSync(path.join(__dirname, '..', 'sitemap.xml'), 'utf8');
-const urlList = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
+const args = process.argv.slice(2);
+const urlList = args.length
+  ? args.map(p => `https://${HOST}${p.startsWith('/') ? p : '/' + p}`)
+  : [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
 
 (async () => {
   const res = await fetch('https://api.indexnow.org/indexnow', {
