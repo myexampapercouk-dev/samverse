@@ -316,7 +316,7 @@ ${GLOSSARY.map(([t, d]) => `          <div class="glossary-item" id="${termId(t)
     description: 'How samverse.space uses information: contact form enquiries, WhatsApp, Google Analytics, Microsoft Clarity and AdSense cookies, and your choices.',
     eyebrow: 'Legal',
     h1: 'Privacy <span class="grad">policy</span>',
-    lead: 'This page explains what information samverse.space collects, why, and the choices you have. Last updated: 28 September 2026.',
+    lead: 'This page explains what information samverse.space collects, why, and the choices you have. Last updated: 15 October 2026.',
     priority: '0.3',
     main: `
     <section class="section" style="padding-top:10px">
@@ -345,7 +345,7 @@ ${GLOSSARY.map(([t, d]) => `          <div class="glossary-item" id="${termId(t)
           <p>You can block or delete cookies in your browser settings. The site works without analytics and advertising cookies, although some measurements won't be recorded.</p>
 
           <h2>Hosting and security</h2>
-          <p>The site is hosted on Netlify and served over HTTPS. Form submissions are processed by a secure server function and delivered by email. No payment information is collected on this site.</p>
+          <p>The site is hosted on Hostinger and served over HTTPS. Form submissions are processed by a script on the server and delivered by email. No payment information is collected on this site.</p>
 
           <h2>How long information is kept</h2>
           <p>Enquiry emails are kept as long as needed to respond and for reasonable business records. Analytics data is kept according to the retention settings of the analytics tools.</p>

@@ -665,7 +665,7 @@ module.exports = [
       {
         "h": "Hundreds of pages from simple data files",
         "p": [
-          "The site has no CMS and no database. Service pages, articles and case studies are entries in plain JavaScript data files, and a Node.js build script turns them into static HTML that Netlify serves as ordinary files. I set it up this way so that adding a page takes one entry and one build, and the header, footer, contact form and styling stay identical everywhere.",
+          "The site has no CMS and no database. Service pages, articles and case studies are entries in plain JavaScript data files, and a Node.js build script turns them into static HTML that Hostinger serves as ordinary files. I set it up this way so that adding a page takes one entry and one build, and the header, footer, contact form and styling stay identical everywhere.",
           "The same build writes structured data for each type of page: Service, FAQPage and BreadcrumbList on the landing pages, BlogPosting on articles, CreativeWork on case studies, WebApplication on the cost calculator and DefinedTermSet on the glossary. It also regenerates the sitemap, the blog's RSS feed and an llms.txt file that describes the site for AI assistants. A separate script creates a 1200 by 630 pixel share image for every article, landing page and case study, and another submits every URL in the sitemap to IndexNow so that Bing and Yandex hear about new pages after a deploy.",
           "The blog holds more than 570 articles grouped into six topics: planning and costs, SEO and growth, speed, security and maintenance, e-commerce, industry guides, and guides for agencies. Each article shows its read time, three key takeaways, an \"On this page\" contents list, a FAQ, related articles and services, and previous and next links within its topic."
         ]
@@ -673,7 +673,7 @@ module.exports = [
       {
         "h": "Enquiries without spam or lost leads",
         "p": [
-          "Many business owners would rather talk on WhatsApp than wait for an email reply, so the contact form is built around it. It asks for a name, a phone or WhatsApp number, an optional email, a project type and a message. When it is sent, a Netlify Function emails the enquiry to Gmail through Nodemailer, and the browser then opens WhatsApp with the same details already typed in. If the email step fails, WhatsApp still opens, so a mail error never costs an enquiry.",
+          "Many business owners would rather talk on WhatsApp than wait for an email reply, so the contact form is built around it. It asks for a name, a phone or WhatsApp number, an optional email, a project type and a message. When it is sent, a small PHP script on the server emails the enquiry to me, and the browser then opens WhatsApp with the same details already typed in. If the email step fails, WhatsApp still opens, so a mail error never costs an enquiry.",
           "Spam protection works without reCAPTCHA. The form has a hidden honeypot field that only bots fill in, a simple addition question with a button for a new one, and a check that quietly drops anything submitted within three seconds of the page loading.",
           "The free website cost calculator is a second way in. A visitor picks a landing page, a business website, a large B2B site or a WooCommerce store, sets the number of pages (and products, for a store), ticks extras such as a booking system, online payments or multiple languages, and watches a price range in rupees update as they go. The \"Get an Exact Quote on WhatsApp\" button sends that selection as a message, so the conversation starts with a brief. Alongside it, a 40-term glossary explains words like DNS, caching and Core Web Vitals in plain English."
         ]
@@ -687,7 +687,7 @@ module.exports = [
       }
     ],
     reading: ["portfolio-website-freelancers-creatives","schema-markup-explained","website-calculators-lead-generation","stop-contact-form-spam","internal-linking-explained"],
-    stack: ['HTML, CSS & JavaScript', 'Node.js build scripts', 'Netlify & Netlify Functions', 'Nodemailer'],
+    stack: ['HTML, CSS & JavaScript', 'Node.js build scripts', 'Hostinger hosting', 'PHP form handler'],
     related: ['wordpress-seo-services', 'landing-page-design', 'hire-wordpress-developer'],
   },
 ];

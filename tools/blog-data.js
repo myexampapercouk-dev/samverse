@@ -2805,7 +2805,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>WordPress runs a large share of the web, so automated attacks target it constantly, mostly through outdated plugins and weak passwords. With updates, licensed plugins and good hosting it's secure; see the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. A custom site attracts fewer automated attacks, but its security depends entirely on its developer's code and on someone keeping its dependencies updated. A static site with no database or login has very little to attack at all.</p>
 
 <h2>Why my own site is custom-coded</h2>
-<p>samverse.space, the site you're reading, isn't WordPress. It's a static site: service pages, articles and case studies are entries in plain data files, and a Node.js build script turns them into HTML pages that Netlify serves as ordinary files, with a serverless function handling the contact form. The same build writes the structured data, sitemap and share images for every page. The <a href="/work/samverse/">Samverse case study</a> shows how it fits together.</p>
+<p>samverse.space, the site you're reading, isn't WordPress. It's a static site: service pages, articles and case studies are entries in plain data files, and a Node.js build script turns them into HTML pages that Hostinger serves as ordinary files, with a small PHP script handling the contact form. The same build writes the structured data, sitemap and share images for every page. The <a href="/work/samverse/">Samverse case study</a> shows how it fits together.</p>
 <p>That suits me because I'm a developer, I'm the only person who edits it, and it has hundreds of pages that must stay identical in layout. It would suit most of my clients badly: there's no dashboard, so every typo fix means editing a file and running a build. For a business whose staff need to update prices, add blog posts or change opening hours, that's the wrong trade-off, which is why every client site in my case studies is built on WordPress.</p>
 
 <h2>When WordPress is the better choice</h2>
@@ -4336,65 +4336,116 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'personal-brand-website-professionals',
-    seoTitle: 'Personal Brand Websites for Doctors, Coaches & Consultants',
-    title: 'Personal Brand Websites for Doctors, Coaches and Consultants',
-    description: 'Personal brand websites for doctors, coaches and consultants: positioning, key pages, lead magnets, content and booking that earn trust and bring clients.',
+    seoTitle: 'Personal Brand Website for Doctors, Coaches and Consultants',
+    title: 'Personal Brand Websites for Doctors, Lawyers, Coaches and Consultants: Pages, Credentials, Professional Rules and Bookings',
+    description: 'Plan a personal brand website as a doctor, lawyer, CA, coach or consultant: positioning, key pages, verifiable credentials, professional rules and booking.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Growth',
     related: ['wordpress-website-for-doctors', 'website-for-lawyers-and-consultants', 'landing-page-design'],
     body: `
-<p>When people choose a doctor, coach or consultant, they're choosing a person. A personal brand website puts your expertise, approach and personality front and centre, so the right clients trust you before they've even spoken to you.</p>
+<p>A personal brand website for a doctor, lawyer, chartered accountant, coach or consultant should answer three questions within seconds: who you help, what you help them with, and why they should trust you. Build it around a clear headline, an About page with credentials visitors can verify, one page for each service or problem you handle, articles that show your expertise, and one easy next step such as a consultation request. Keep every claim factual and within your professional body's current rules.</p>
+<p>People choosing a professional are choosing a person, so the site has to feel like you rather than a template. My <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a> and <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a> are built on this idea: qualifications and practice areas presented clearly, consultation requests on every page, and wording you review and approve before launch. Here is how to plan one, whatever your profession.</p>
 
-<h2>Start with positioning</h2>
-<p>Before any design, get clear on three things:</p>
+<h2>Start with positioning, not design</h2>
+<p>Before choosing colours or a theme, write down three things in your clients' words:</p>
 <ul>
-  <li><strong>Who you help:</strong> for example busy professionals with stress, first-time founders or families planning finances</li>
-  <li><strong>The problem you solve</strong>, in their words</li>
-  <li><strong>What makes your approach different:</strong> your method, experience or philosophy</li>
+  <li><strong>Who you help:</strong> for example, founders registering their first company, families dealing with property disputes, or adults struggling with anxiety.</li>
+  <li><strong>The problem you solve,</strong> phrased the way a client would search for it, not the way a textbook describes it.</li>
+  <li><strong>What's distinctive about your approach:</strong> your specialisation, method, languages or the way you work with clients.</li>
 </ul>
-<p>Your homepage headline should say this in one sentence.</p>
+<p>Your homepage headline should combine them in one plain sentence, with your profession and city where location matters. <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta's site</a>, for example, leads with "Pulmonologist in Agra (Lungs, Chest, Allergy)", which tells a patient and Google exactly what to expect.</p>
 
-<h2>Key pages</h2>
+<h2>Your name or a practice name?</h2>
+<p>A domain in your own name suits professionals whose reputation is personal and portable, such as consultants, coaches and doctors who practise in several places. A practice or firm name suits a clinic or firm that may add partners or be sold one day. If unsure, register both, build on the one you'll grow, and redirect the other. Either way, your name should appear in the page titles of your homepage and About page, so you rank for it; <a href="/blog/rank-for-your-business-name/">how to rank for your business name</a> covers the details, which apply equally to a personal name.</p>
+
+<h2>What clients check, and what the rules allow</h2>
+<p>Professional rules shape the copy more than the design. This is a starting point, not legal advice, so check the current version of your regulator's rules before launch:</p>
+<table>
+  <thead><tr><th>Profession</th><th>What clients look for</th><th>Rules to check</th><th>Typical next step</th></tr></thead>
+  <tbody>
+    <tr><td>Doctors</td><td>Degrees with university and year, registration number, specialty, hospital attachments</td><td>National Medical Commission and state medical council guidance on promotion, testimonials and claims</td><td>Appointment request, WhatsApp or call</td></tr>
+    <tr><td>Advocates</td><td>Enrolment, areas of practice, courts or tribunals, office details</td><td>Bar Council of India rules on advertising and solicitation, which allow factual information only</td><td>Consultation request, with a disclaimer</td></tr>
+    <tr><td>Chartered accountants</td><td>Membership, firm details, services, sectors served</td><td>ICAI's Code of Ethics and its guidance on members' websites</td><td>Consultation request or call</td></tr>
+    <tr><td>Coaches and consultants</td><td>Method, experience, case studies, testimonials, fees or packages</td><td>No single regulator, but rules against misleading claims still apply</td><td>Discovery call, assessment or lead magnet</td></tr>
+  </tbody>
+</table>
+<p>Advocates have the narrowest limits; <a href="/blog/website-for-advocates-bar-council-rules/">what the Bar Council rules allow</a> explains them in detail. For doctors, avoid "best doctor in the city", promised outcomes and before-and-after claims unless current guidance clearly permits them.</p>
+
+<h2>The pages a personal brand site needs</h2>
 <h3>Home</h3>
-<p>Headline, who you help, a short introduction with a real photo, your main offers and a clear call to action (book a consultation, take an assessment, join a program).</p>
+<p>Your headline, a real photo of you, a short introduction, your main services and one primary call to action, repeated further down the page.</p>
 <h3>About</h3>
-<p>Your story, qualifications, experience and why you do this work. Credentials build trust; your story builds connection.</p>
-<h3>Services or programs</h3>
-<p>One page per offer: consultations, courses, coaching programs or workshops. Explain who it's for, what's included, the format and how to start.</p>
-<h3>Problems you help with</h3>
-<p>Pages focused on specific problems (for example anxiety, stress or low confidence) help visitors recognise themselves, and help you appear in searches for those problems.</p>
-<h3>Content</h3>
-<p>Articles, videos or podcasts that share your expertise. This is how you're discovered and how trust grows over time.</p>
+<p>Your story and why you do this work, then the checkable facts: qualifications with institution and year, registration or membership numbers, positions held and professional memberships. "Experienced specialist" tells a reader nothing; a degree, a year and a registration number can be verified. The Dr. Sudhir Arora site, for instance, gives his medical college, graduation year and registration number. <a href="/blog/write-about-page-that-builds-trust/">How to write an About page that builds trust</a> has a structure to follow.</p>
+<h3>Services, programmes or practice areas</h3>
+<p>One page per offer, such as a consultation type, a coaching programme or a practice area, explaining who it's for, how it works, what's included, the format and how to start. Fees or a starting price help where your rules allow it.</p>
+<h3>Problems or conditions you help with</h3>
+<p>Pages built around specific problems let visitors recognise themselves, and match how they search. <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's site</a> has a page for each life challenge his programmes address, such as anxiety, stress and low confidence. A lawyer might have pages on cheque bounce cases or property disputes; a CA on GST registration or income tax notices.</p>
+<h3>Articles, talks and media</h3>
+<p>Articles that answer clients' real questions are how most professionals get discovered over time. Add your name, credentials and a date to each one, and revisit them when the law, guidelines or treatment advice changes.</p>
+<h3>Contact and booking</h3>
+<p>Phone, WhatsApp, a short form, your office address with a map if clients visit, and your hours.</p>
 
-<h2>Turn visitors into clients</h2>
+<h2>Turning visitors into clients</h2>
 <ul>
-  <li><strong>A free first step:</strong> a self-assessment, checklist or short guide in exchange for an email address</li>
-  <li><strong>Easy booking:</strong> consultation forms, calendar booking or WhatsApp</li>
-  <li><strong>Social proof:</strong> genuine testimonials, with permission and within professional guidelines</li>
-  <li><strong>Online payments</strong> for consultations or programs</li>
+  <li><strong>A free first step</strong> for people not ready to book: a self-assessment, a checklist or a short guide. The free anxiety self-assessment on <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's site</a> is one example of a tool that engages visitors before they book.</li>
+  <li><strong>Easy booking:</strong> a short consultation form, a WhatsApp button with the first message already written, or a calendar booking tool for paid consultations; see <a href="/blog/online-appointment-booking-website/">online appointment booking options</a>.</li>
+  <li><strong>Online payment</strong> for consultations or programmes, if you sell them directly.</li>
+  <li><strong>Clear expectations:</strong> how quickly you reply, what happens in the first session and what to bring.</li>
+  <li><strong>Privacy:</strong> ask only for contact details and a brief outline on public forms, never medical reports or legal documents.</li>
 </ul>
 
-<h2>Real example</h2>
-<p>The <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora case study</a> shows these ideas in practice: a clear doctor profile with credentials, pages for each life challenge, a free anxiety self-assessment, and pages for online consultations and structured coaching programs.</p>
+<h2>Proof that stays professional</h2>
+<p>Coaches and consultants can usually use genuine testimonials and case studies, with the client's permission and without exaggeration. Doctors and CAs should check current guidance before featuring patient or client testimonials, and advocates should generally leave them out. Other forms of proof work for everyone: publications, talks, media mentions, teaching roles and memberships. Stating limits builds trust too: the Dr. Sudhir Arora site says its programme is not a substitute for medical diagnosis or psychiatric care.</p>
+
+<h2>Help Google understand who you are</h2>
+<p>Google tries to connect your website with the person behind it. Use the same name, photo and description on your website, LinkedIn, directory profiles and Google Business Profile, and add Person structured data to your About page, linking your other profiles:</p>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Example Name",
+  "jobTitle": "Consultant Psychiatrist",
+  "url": "https://example.com/about/",
+  "image": "https://example.com/wp-content/uploads/dr-example-name.jpg",
+  "alumniOf": "Example Medical College",
+  "sameAs": [
+    "https://www.linkedin.com/in/example-name",
+    "https://www.youtube.com/@examplename"
+  ]
+}
+&lt;/script&gt;</code></pre>
+<p>SEO plugins can output similar markup from their settings. It won't make you rank on its own, but it removes doubt about who wrote what, which matters for health, legal and financial topics.</p>
+
+<h2>Design and photography</h2>
+<ul>
+  <li>Professional photos of you, your clinic or office and, where appropriate, you at work. Stock photos of smiling strangers undo the personal part of a personal brand.</li>
+  <li>A calm, readable layout with generous spacing and body text that's comfortable on a phone.</li>
+  <li>Fast loading on mobile data, since most visitors arrive from a phone.</li>
+  <li>One primary call to action, styled the same way everywhere.</li>
+</ul>
+
+<h2>A personal site alongside a hospital or firm</h2>
+<p>If you work within a hospital, firm or company, your profile on its website stays important. A personal site can complement it with your articles, talks and the services you offer independently. Check your employer's or firm's policy first, link the two, and keep details such as consultation timings consistent between them.</p>
+<p>More detail by profession: <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers, CAs and consultants</a>, <a href="/blog/website-for-coaches-consultants/">websites for coaches</a> and the doctors' page linked above.</p>
 
 <p>Fitness trainers and yoga teachers can apply the same ideas; see <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms and fitness trainers</a>.</p>
 
-<h2>Stay professional</h2>
-<p>Doctors, lawyers, financial advisers and other regulated professionals should keep claims factual, avoid guarantees of results, and check content against their professional body's guidelines.</p>
-
-<p>Lawyers, chartered accountants and consultants have specific needs around practice areas and guidelines; see <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers, CAs and consultants</a>.</p>
-
 <p>Consultants in traditional fields: see <a href="/blog/website-for-astrologers-vastu-consultants/">websites for astrologers and vastu consultants</a>.</p>
 
-<h2>Design tips</h2>
-<ul>
-  <li>Real, professional photos of you, not stock images</li>
-  <li>Calm, readable design with plenty of white space</li>
-  <li>Fast and mobile-friendly, since many clients find you on their phones</li>
-  <li>One primary call to action repeated throughout</li>
-</ul>
+<h2>FAQs</h2>
+<h3>Do I need a personal website if I'm on LinkedIn and Practo?</h3>
+<p>Profiles on other platforms help people who already use them, but they sit on someone else's page, often next to competitors, with little room to explain your work. Your own site can explain each service in depth, send enquiries straight to you and link to those profiles.</p>
+<h3>Can lawyers in India have a personal website?</h3>
+<p>Yes, within limits. Bar Council of India rules restrict advertising and solicitation but permit factual information such as name, contact details, enrolment, qualifications and areas of practice. Check the current rules before launch.</p>
+<h3>Should I show my fees on my website?</h3>
+<p>Where your professional rules allow it, a starting fee or package price filters out enquiries outside budget and answers a question every client has. If fees vary, explain what they depend on.</p>
+<h3>What should a doctor's personal website include?</h3>
+<p>Qualifications with university and year, registration number, the conditions you treat and procedures you offer, clinic timings and locations, and easy ways to book, all kept factual and within current medical council guidance.</p>
+<h3>How many pages does a personal brand website need?</h3>
+<p>Often fewer than people expect: home, about, one page per service or programme, a contact page and an articles section. Add pages for specific problems as you write about them.</p>
 
-<p>Ready to build yours? See what's included in a website for <a href="/wordpress-website-for-doctors/">doctors</a> or for <a href="/website-for-lawyers-and-consultants/">consultants and professionals</a>.</p>
+<p>Ready to build yours? See what's included in a website for <a href="/website-for-lawyers-and-consultants/">lawyers, CAs and consultants</a>, with practice area pages, consultation forms and articles your team can publish, or in a website for <a href="/wordpress-website-for-doctors/">doctors and clinics</a>.</p>
 `,
   },
   {
@@ -9681,55 +9732,120 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
   },
   {
     slug: 'logo-favicon-brand-basics-website',
-    seoTitle: 'Logo, Favicon & Brand Basics for Your Website',
-    title: 'Logo, Favicon and Brand Basics for Your Website',
-    description: 'Logo, favicon and brand basics for your website: logo files and formats, app icons, colours, fonts, social share images and keeping it all consistent.',
+    seoTitle: 'Logo and Favicon Sizes for Websites: Brand Basics Guide',
+    title: 'Logo, Favicon and Brand Basics for Your Website: File Formats, Sizes, Social Share Images and Consistency',
+    description: 'Logo, favicon and brand basics for your website: logo formats and sizes, favicon and app icons, social share images, logo schema and keeping it consistent.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'figma-to-wordpress'],
     body: `
-<p>A consistent brand makes a small business look established and trustworthy. Your website is often where people see your brand most, so it's worth getting the basics right before and during a website project.</p>
+<p>For a website, you need your logo as an SVG file plus transparent PNG versions, in a horizontal layout for the header, a stacked or square layout, an icon-only mark and a light version for dark backgrounds. From the icon you make a favicon and app icons, ideally from one square image of at least 512 pixels, and you add a social share image of 1200 by 630 pixels so links look right on WhatsApp and LinkedIn. Then use the same name, logo, colours and fonts everywhere customers see you.</p>
+<p>These basics are easy to skip when a business is new, and fiddly to fix later. Whether you're planning a <a href="/website-redesign/">website redesign</a>, a rebrand or your first site, collecting the files below first makes the project faster and keeps the result consistent. If your brand already lives in a Figma file, most of this can come straight from it.</p>
 
-<h2>Logo files you need</h2>
+<h2>The logo files your website needs</h2>
+<p>Most small businesses have their logo as a single JPEG from WhatsApp or a PDF letterhead. That isn't enough for a website, where the logo appears at different sizes, on light and dark backgrounds, and as a tiny icon in a browser tab.</p>
+<table>
+  <thead><tr><th>Asset</th><th>Format</th><th>Size to prepare</th><th>Where it's used</th></tr></thead>
+  <tbody>
+    <tr><td>Horizontal logo</td><td>SVG, plus PNG or WebP</td><td>PNG at twice the display size, so it's sharp on high-resolution screens</td><td>Site header</td></tr>
+    <tr><td>Stacked or square logo</td><td>SVG and PNG</td><td>Large square PNG, such as 1000 by 1000 pixels</td><td>Footer, social profiles, Google Business Profile</td></tr>
+    <tr><td>Icon-only mark</td><td>SVG and PNG</td><td>At least 512 by 512 pixels, square</td><td>Favicon, site icon, app icons</td></tr>
+    <tr><td>Reversed (light) version</td><td>SVG and PNG</td><td>Same as the main logo</td><td>Dark headers, footers and photos</td></tr>
+    <tr><td>Favicon</td><td>ICO or PNG, optionally SVG</td><td>Generated from the icon; 32 by 32 is the common browser size</td><td>Browser tabs and bookmarks</td></tr>
+    <tr><td>Apple touch icon</td><td>PNG</td><td>180 by 180 pixels</td><td>iPhone home screen</td></tr>
+    <tr><td>Android icons</td><td>PNG</td><td>192 by 192 and 512 by 512 pixels</td><td>Android home screen</td></tr>
+    <tr><td>Social share image</td><td>JPG or PNG</td><td>1200 by 630 pixels</td><td>WhatsApp, LinkedIn and Facebook link previews</td></tr>
+  </tbody>
+</table>
+<p>Ask your designer for the original source files too, whether Illustrator, Figma or EPS, along with the font names and licences. Keep them somewhere the business controls, not only in the designer's account; the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists brand assets alongside your domain and hosting.</p>
+
+<h2>Getting the logo right in the header</h2>
 <ul>
-  <li><strong>SVG version:</strong> sharp at any size and tiny in file size, ideal for websites</li>
-  <li><strong>Transparent PNG:</strong> for places that don't support SVG</li>
-  <li><strong>Horizontal and stacked versions:</strong> for headers vs square spaces</li>
-  <li><strong>Icon-only mark:</strong> for favicons and social profiles</li>
-  <li><strong>Light and dark versions:</strong> for different backgrounds</li>
+  <li><strong>Use SVG where you can.</strong> It stays sharp at any size and is usually tiny in file size. WordPress blocks SVG uploads by default for security reasons, so use a plugin that sanitises SVG files, such as Safe SVG, rather than switching the protection off.</li>
+  <li><strong>If you use PNG or WebP,</strong> export it at twice the size it displays, then let the theme scale it down, so it isn't blurry on modern phones.</li>
+  <li><strong>Size it for phones first.</strong> A wide logo with a tagline becomes unreadable at mobile header height. A version without the tagline, or the stacked logo, often works better on small screens.</li>
+  <li><strong>Give it a width and height,</strong> so the header doesn't jump as the logo loads; see <a href="/blog/fix-cls-layout-shift/">fixing layout shift</a>.</li>
+  <li><strong>Alt text should be your business name,</strong> such as "Sharma Dental Clinic", and the logo should link to the homepage.</li>
 </ul>
-<p>If you only have a logo as a JPEG or inside a document, ask your designer for the original files.</p>
+<p>In most themes the logo is set under <strong>Appearance &gt; Customize &gt; Site Identity</strong>. In a block theme, it's the Site Logo block in the header template, and in Elementor it's under <strong>Site Settings &gt; Site Identity</strong>.</p>
 
 <h2>Favicon and app icons</h2>
-<p>The favicon is the small icon in browser tabs and bookmarks. You'll also want icons for phones when people save your site to their home screen. Use a simple, recognisable mark, because detailed logos become unreadable at 16–32 pixels.</p>
-
-<h2>Colours and fonts</h2>
+<p>The favicon is the small icon in browser tabs, bookmarks and history. Google also shows it next to your site in mobile search results, so a blank or default icon looks unfinished. The same image becomes the icon when someone saves your site to their phone's home screen.</p>
+<h3>Designing a favicon that works at 16 pixels</h3>
 <ul>
-  <li>Define a small palette: primary, secondary, text, background and accent colours</li>
-  <li>Check text contrast for readability; see <a href="/blog/website-accessibility-basics/">accessibility basics</a></li>
-  <li>Choose one or two fonts, ideally web fonts that load quickly</li>
-  <li>Use them consistently as global styles on the website</li>
+  <li>Use the icon-only mark or a single letter, not the full logo with words.</li>
+  <li>Keep it bold and simple, with strong contrast and a solid or transparent background.</li>
+  <li>Preview it at actual size in a browser tab, in both light and dark browser themes.</li>
 </ul>
-
-<p>Choosing a palette and fonts? See <a href="/blog/choose-website-colours-fonts/">how to choose website colours and fonts</a>.</p>
+<h3>Setting it in WordPress</h3>
+<p>WordPress calls it the Site Icon. Upload one square image of at least 512 by 512 pixels under <strong>Appearance &gt; Customize &gt; Site Identity</strong>; recent WordPress versions also offer it under <strong>Settings &gt; General</strong>, and Elementor has it in Site Settings. WordPress then generates the smaller sizes and adds the right tags for browsers, iPhones and Android phones.</p>
+<p>On a custom-coded site, you add the tags yourself. A modern minimal set looks like this:</p>
+<pre><code>&lt;link rel="icon" href="https://example.com/favicon.ico" sizes="32x32"&gt;
+&lt;link rel="icon" href="https://example.com/icon.svg" type="image/svg+xml"&gt;
+&lt;link rel="apple-touch-icon" href="https://example.com/apple-touch-icon.png"&gt;
+&lt;link rel="manifest" href="https://example.com/site.webmanifest"&gt;</code></pre>
+<p>Browsers cache favicons heavily, so a new one can take a while to appear even after you've changed it. Google can also take time to pick it up in search results, and at the time of writing it recommends a square icon larger than 48 by 48 pixels at a stable, crawlable address.</p>
 
 <h2>Social share images</h2>
-<p>When someone shares your page on WhatsApp, LinkedIn or Facebook, a preview image appears. Set a branded default share image, and ideally unique images for key pages and articles, so links look professional when shared.</p>
-
-<h2>Consistency everywhere</h2>
-<p>Use the same name, logo, colours and description across your website, Google Business Profile, social profiles and printed materials. Consistency builds recognition and trust, and consistent business information also helps search engines.</p>
-
-<h2>Photography and imagery</h2>
-<p>Real photos of your team, work and premises reinforce your brand far better than generic stock images. Keep a consistent style for lighting, backgrounds and editing.</p>
-
-<h2>Before your website project</h2>
+<p>When someone pastes your link into WhatsApp, LinkedIn or Facebook, the preview shows a title, a description and an image taken from your page's Open Graph tags. Without one, the platform picks a random image or shows nothing.</p>
 <ol>
-  <li>Gather logo files (SVG, PNG, icon)</li>
-  <li>Note brand colours (hex codes) and fonts</li>
-  <li>Collect real photos</li>
-  <li>Share brand guidelines or examples you like</li>
+  <li>Create a branded default image at 1200 by 630 pixels, with your logo and a short line about what you do. Keep important text away from the edges, since some apps crop it.</li>
+  <li>Set it as the default in your SEO plugin: in Yoast SEO and Rank Math it's in the social or Open Graph settings.</li>
+  <li>Give key pages and blog posts their own share images where it helps, such as a service page or a popular article.</li>
+  <li>Test a link with Facebook's Sharing Debugger or LinkedIn's Post Inspector, which also clear old cached previews.</li>
 </ol>
-<p>Include these in your <a href="/blog/website-brief-template/">website brief</a>. If you have designs in Figma, see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+
+<h2>Help Google show the right logo</h2>
+<p>Google can use the logo you specify in Organization structured data, for example in a knowledge panel for your brand. SEO plugins add this for you when you fill in the organisation name and logo in their settings. The output looks something like this:</p>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Example Interiors",
+  "url": "https://example.com/",
+  "logo": "https://example.com/wp-content/uploads/example-logo-512.png"
+}
+&lt;/script&gt;</code></pre>
+<p>Use a square or near-square version on a plain background, at least 112 by 112 pixels per Google's guidelines at the time of writing. <a href="/blog/schema-markup-explained/">Schema markup explained</a> covers which other structured data is worth adding.</p>
+
+<h2>Colours, fonts and imagery: a one-page brand sheet</h2>
+<p>You don't need a 40-page brand book. A single page your designer, developer and printer can all use is enough:</p>
+<ul>
+  <li><strong>Logo versions</strong> and the minimum size each should be shown at.</li>
+  <li><strong>Colours</strong> as hex codes: a primary, an accent, text and background colours. <a href="/blog/choose-website-colours-fonts/">How to choose website colours and fonts</a> covers picking them and checking contrast.</li>
+  <li><strong>Fonts</strong> for headings and body text, with the weights you use.</li>
+  <li><strong>Photo style:</strong> real photos of your team, work and premises, with similar lighting and editing; see <a href="/blog/prepare-photos-for-website/">preparing photos for your website</a>.</li>
+  <li><strong>Tone of voice:</strong> a few words on how you write, such as plain, friendly and direct.</li>
+</ul>
+<p>On WordPress, the colours and fonts go into global styles, in the theme, the block editor's Styles panel or Elementor's Site Settings, so one change updates the whole site.</p>
+
+<h2>Consistency across every channel</h2>
+<p>Customers see your brand in many places before they contact you. Use the same business name, logo and colours on your website, Google Business Profile, social profiles, WhatsApp Business profile, email signature, invoices and signboard. Consistent business details also help Google match your website to your profile in local search. When the logo changes, update all of them together; <a href="/blog/rebranding-your-website/">rebranding your website</a> has a full checklist, including protecting your SEO if the name changes too.</p>
+
+<h2>Before your website project: a checklist</h2>
+<ol>
+  <li>Logo in SVG and PNG, in horizontal, stacked, icon-only and reversed versions.</li>
+  <li>A square icon of at least 512 pixels for the favicon.</li>
+  <li>Brand colours as hex codes and font names, with licences.</li>
+  <li>A default social share image, or the elements to make one.</li>
+  <li>Real photos, and two or three websites whose style you like.</li>
+</ol>
+<p>Put these in your <a href="/blog/website-brief-template/">website brief</a> so your developer can quote accurately.</p>
+
+<h2>FAQs</h2>
+<h3>What size should a website logo be?</h3>
+<p>There is no single size, because themes display logos differently. Use SVG if possible. For PNG, export at twice the size the logo appears in the header, so a logo shown 200 pixels wide is exported 400 pixels wide.</p>
+<h3>What size should a favicon be?</h3>
+<p>Start with a square image of at least 512 by 512 pixels. WordPress and favicon generators create the smaller sizes, including 32 by 32 for browser tabs and 180 by 180 for iPhones.</p>
+<h3>Why isn't my new favicon showing?</h3>
+<p>Browsers cache favicons for a long time. Clear your cache or try a private window. If Google still shows the old one in search, it updates when it recrawls your homepage, which can take a while.</p>
+<h3>Can I use a JPEG logo on my website?</h3>
+<p>You can, but JPEG has no transparency, so it shows a box on coloured backgrounds, and text edges blur. Ask your designer for SVG and transparent PNG versions.</p>
+<h3>Do I need a new logo before I redesign my website?</h3>
+<p>Not necessarily. If your current logo is clear and works small, a redesign can use it. If you're changing it, finalise the logo before the website design starts, so the colours and layout are built around it.</p>
+
+<p>If your website no longer matches your brand, or you're rebranding, a <a href="/website-redesign/">website redesign</a> brings the logo, colours and fonts into one consistent, mobile-first design without losing the rankings you have. If you already have a finished design, see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
 `,
   },
   {
@@ -9796,63 +9912,107 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
   },
   {
     slug: 'regain-website-access-old-developer',
-    seoTitle: 'Get Your Website Back From an Old Developer',
-    title: 'How to Regain Control of Your Website From a Previous Developer',
-    description: 'Get your website back from an old developer: find out who controls your domain, hosting and WordPress admin, regain access safely and avoid a repeat.',
+    seoTitle: 'Get Your Website Back From an Old Developer: Step by Step',
+    title: 'How to Regain Control of Your Website From a Previous Developer: Domain, Hosting, WordPress, Google Accounts and Email',
+    description: 'Developer gone silent? How to regain access to your domain, hosting, WordPress admin, DNS, Google accounts and email, plus a handover checklist.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
-<p>It happens more often than you'd think: the freelancer who built your site stops replying, or an agency relationship ends badly, and you realise you don't have the logins to your own website. Here's how to take back control, step by step.</p>
+<p>To get your website back from a developer who has stopped replying, work out who controls each piece the site depends on: the domain registrar, DNS, hosting, the WordPress administrator account, business email and your Google accounts. Anything registered in your name can usually be recovered from the provider with proof of ownership. Anything in the developer's name needs their cooperation, so start with a polite written request, and deal with the domain first, because whoever controls the domain controls everything that hangs off it.</p>
+<p>It happens more often than people expect: a freelancer changes careers, an agency closes, or a relationship ends over an unpaid invoice, and every login turns out to sit with someone else. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take on sites I didn't build, and the first step is a health check that includes who has administrator access and whose name the licences are in. Below is the order I'd work in, what providers typically ask for, and how to stop it happening again.</p>
 
-<h2>Step 1: Work out what you need</h2>
-<p>A website depends on four separate things. Find out who controls each:</p>
+<h2>First, map who controls what</h2>
+<p>A website is several accounts, not one. Fill in this table first; it shows which problems you can solve alone and which need the developer.</p>
+<table>
+  <thead><tr><th>Piece</th><th>How to find out who controls it</th><th>Whose name it should be in</th></tr></thead>
+  <tbody>
+    <tr><td>Domain registrar</td><td>A WHOIS or RDAP lookup shows the registrar and expiry date; search your inbox for renewal emails</td><td>Your business, with your email on the account</td></tr>
+    <tr><td>DNS</td><td>A nameserver lookup shows whether DNS sits with the registrar, the host or Cloudflare</td><td>Your registrar, your host or your own Cloudflare account</td></tr>
+    <tr><td>Hosting</td><td>Look up the domain's IP address, then which company owns that IP; check bank statements</td><td>An account you own and pay for</td></tr>
+    <tr><td>WordPress</td><td>The Users screen, once you can log in</td><td>Your own Administrator account, using your email</td></tr>
+    <tr><td>Business email</td><td>An MX lookup shows Google, Microsoft, Zoho, the host or another provider</td><td>An account you own</td></tr>
+    <tr><td>Google accounts</td><td>Ask the developer, or see what access each tool shows your Google account</td><td>Your business Google account as owner or administrator</td></tr>
+    <tr><td>Premium licences</td><td>The licence screen inside WordPress, or the vendor's account</td><td>Your business email</td></tr>
+  </tbody>
+</table>
+<p>The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> explains each piece in more depth. This guide is about getting them back when they are in the wrong hands.</p>
+
+<h2>Before you contact anyone</h2>
+<p>Gather the contract or quote, paid invoices, project emails or WhatsApp messages, and any logins you were ever sent. If there is an unpaid invoice or a disagreement about scope, settling it is often the quickest route to a full handover. Then send one calm, written request with a list and a date, because a list is easy to act on:</p>
+<blockquote>Hi [name], we are taking over the management of our website. Please could you send by [date]: transfer of the domain to our account, a full backup of the site (files and database) or a move to our hosting, an Administrator login in our name, and admin access to Search Console, Analytics and our Business Profile for [business email]. Thank you for your work on the site.</blockquote>
+<p>If there's no reply after a reminder, recover what you can directly, in this order.</p>
+
+<h2>Step 1: Get the domain back</h2>
+<p>For .com and most generic domains, ICANN's lookup tool at lookup.icann.org shows the registrar and expiry date; for .in domains, use the .IN registry's or a registrar's WHOIS search. Owner details are usually hidden for privacy, but the registrar is visible.</p>
+<h3>If the domain is registered in your name</h3>
+<p>Ask the registrar's support to recover the account. Expect them to want ID matching the registrant name, business documents such as a GST certificate or certificate of incorporation, and sometimes the original invoice; requirements vary, so ask first. Once verified, change the account email to your own and switch on two-factor authentication.</p>
+<h3>If it is in the developer's name or reseller account</h3>
+<p>Many developers buy domains through a reseller panel, so the registrar treats the developer as its customer. They need to move it to an account in your name or give you the authorisation code to transfer it; <a href="/blog/transfer-domain-to-another-registrar/">transferring a domain to another registrar</a> covers the codes, locks and timing.</p>
+<p>Check the expiry date straight away: a lapsed domain takes the website and email down with it, so a close date with a silent developer is urgent; see <a href="/blog/domain-expired-what-to-do/">what to do when a domain expires</a>. If a developer flatly refuses to hand over a domain that clearly belongs to your business, dispute routes such as the UDRP for generic domains and INDRP for .in exist, but they target bad-faith registrations, involve fees and take time. That is a conversation for a lawyer, with your contract in hand.</p>
+
+<h2>Step 2: Take control of DNS without breaking anything</h2>
+<p>Once the domain is yours, you choose its nameservers. The trap is switching them before copying the existing records: if DNS lives in the developer's Cloudflare or hosting account, that is where the website, email and verification records are.</p>
 <ol>
-  <li><strong>Domain name:</strong> where it's registered and in whose name</li>
-  <li><strong>DNS:</strong> where the domain's records are managed (registrar, host or a service like Cloudflare)</li>
-  <li><strong>Hosting:</strong> the server where the site's files and database live</li>
-  <li><strong>WordPress admin:</strong> the login to manage the site</li>
+  <li>Use a DNS lookup tool to note the public records: the A record for the root domain, www, MX, the SPF TXT record, DMARC at _dmarc, and any verification TXT records.</li>
+  <li>Get DKIM values from your email provider's admin panel, and ask about any subdomains in use, such as a shop or booking system.</li>
+  <li>Recreate every record at the new DNS provider: your registrar, your host or a Cloudflare account in your name.</li>
+  <li>Change the nameservers, then test the website, send and receive email, and submit a form.</li>
 </ol>
 
-<h2>Step 2: Find the domain registrar</h2>
-<p>Use a WHOIS lookup to see which registrar holds your domain. If it's registered in your name or company name, contact the registrar with proof of identity and ownership to recover the account. If it's in the developer's name, you'll need their cooperation or the registrar's dispute process. That's why domains should always be in your own name.</p>
-
-<h2>Step 3: Identify the hosting provider</h2>
-<p>Hosting lookup tools and DNS records usually reveal the host. If the hosting account is in your name, contact the host to recover it. If it's the developer's account, ask for the site to be transferred or for a full backup (files and database).</p>
-
-<h2>Step 4: Regain WordPress access</h2>
+<h2>Step 3: Recover the hosting, or get a full copy of the site</h2>
+<p>To find the host, check which company owns the domain's IP address, or search your inbox and bank statements for renewals; hPanel, cPanel or a host's name in an old email are good clues.</p>
 <ul>
-  <li>Try the "Lost your password?" link with any email you might have used</li>
-  <li>With hosting access, a developer can create a new administrator account safely</li>
-  <li>Then remove or downgrade old accounts you don't recognise</li>
+  <li><strong>Hosting in your name:</strong> the host can verify you through the registered email or phone, proof of payment such as an invoice or UPI transaction reference, and ID.</li>
+  <li><strong>Hosting in the developer's account,</strong> common with freelancers who host several clients on one plan: ask for a full backup, meaning the files (especially wp-content, which holds uploads, themes and plugins) plus a database export, or a move to hosting in your name.</li>
+  <li><strong>No reply, but you have a WordPress Administrator login:</strong> a backup or migration plugin such as UpdraftPlus, Duplicator or All-in-One WP Migration can export the whole site for restoring on new hosting. Free versions have size or feature limits at the time of writing, and some hosts block large exports.</li>
 </ul>
+<p>If the hosting is due to renew and nobody is paying for it, a full copy is the most urgent job of all. Moving a site onto hosting you own, without downtime, is what my <a href="/wordpress-migration/">WordPress migration</a> service covers.</p>
 
-<p>If the reset email never arrives, or the login page keeps refreshing or locking you out, work through <a href="/blog/wordpress-login-not-working-fix/">how to fix WordPress login problems</a>.</p>
-
-<h2>Step 5: Secure everything</h2>
+<h2>Step 4: Get back into WordPress</h2>
 <ol>
-  <li>Change passwords for registrar, hosting, WordPress, email and FTP/SFTP</li>
-  <li>Turn on two-factor authentication</li>
-  <li>Remove old users and API keys</li>
-  <li>Take a fresh backup and check for anything suspicious; see <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked site</a></li>
-  <li>Update plugins, themes and WordPress</li>
+  <li><strong>"Lost your password?"</strong> on the login page, with every email the account might use. The reset goes to the account's email, so it only helps if that address is yours.</li>
+  <li><strong>Your hosting panel.</strong> Some panels, such as Hostinger's hPanel or Softaculous in cPanel, can change the WordPress admin password or log you straight in. Options differ by host.</li>
+  <li><strong>phpMyAdmin.</strong> In the users table (wp_users by default; check $table_prefix in wp-config.php), change the admin's user_email to your address, then use "Lost your password?". <a href="/blog/wordpress-login-not-working-fix/">Fixing WordPress login problems</a> walks through this and other lockouts.</li>
+  <li><strong>WP-CLI over SSH,</strong> if your host offers it, to list administrators and create one for you:</li>
+</ol>
+<pre><code>wp user list --role=administrator --fields=ID,user_login,user_email
+wp user create newowner owner@example.com --role=administrator --send-email</code></pre>
+<p>Once you have your own Administrator account, demote or delete the developer's. When deleting, attribute their content to your account so no pages disappear, then review everyone else with the <a href="/blog/wordpress-user-accounts-audit/">WordPress user accounts audit</a>.</p>
+
+<h2>Step 5: Search Console, Analytics and Business Profile</h2>
+<p><strong>Search Console:</strong> with control of DNS, you don't need the developer. Add a domain property in your own Google account and verify it with the TXT record Google provides. To remove the old owner, delete their verification token (TXT record, HTML file or meta tag) first, then remove them under Settings, Users and permissions, or they stay verified.</p>
+<p><strong>Google Analytics 4:</strong> only an existing administrator can grant access; at the time of writing there is no DNS-based way to claim a property. Ask the developer to add your Google account as Administrator. If they never respond, create a new property in your own account and replace the tag, accepting that the old history stays behind; <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a> covers the setup.</p>
+<p><strong>Google Business Profile:</strong> if Google says someone else manages your business, it offers a way to request access. The current owner is notified, and if they don't respond within Google's set period, you may be able to verify it yourself; follow the steps Google currently shows. For Tag Manager, Google Ads and Meta business assets, ask for access added to your own account, never for the developer's login.</p>
+
+<h2>Step 6: Business email and premium licences</h2>
+<p>If your mailboxes sit on the developer's hosting or in their Google Workspace or Zoho account, ask for access or an export while you can. To move, create the new mailboxes with a provider in your name first, then change the MX, SPF and DKIM records, so no mail is lost in between; <a href="/blog/business-email-options/">business email options compared</a> helps you choose. Premium themes and plugins licensed to the developer stop updating when their licence lapses, and licences often can't be transferred, so buying a fresh one in your business name is usually simpler.</p>
+
+<h2>Secure everything once you're back in</h2>
+<ol>
+  <li>Change passwords for the registrar, hosting, WordPress, SFTP and the database user (updating wp-config.php for the database password).</li>
+  <li>Switch on two-factor authentication everywhere it is offered.</li>
+  <li>Remove old SSH keys, API keys and WordPress application passwords.</li>
+  <li>Take a full backup stored away from the server, check for administrators or plugins nobody recognises, then run updates.</li>
 </ol>
 
-<p>To go through every remaining account properly, follow this <a href="/blog/wordpress-user-accounts-audit/">WordPress user accounts audit</a>.</p>
+<h2>Make sure it can't happen again</h2>
+<p>Keep every account above in a password manager the business controls, with the login email, renewal date and who else has access. Developers should get their own user accounts, never your master logins, and every project should end with a written handover. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists what to receive.</p>
 
-<h2>Step 6: Consider moving</h2>
-<p>If the site is on the developer's hosting, migrating it to hosting in your own name is often the cleanest fix; see <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<h2>FAQs</h2>
+<h3>Can a developer legally keep my website or domain?</h3>
+<p>It depends on your contract and whose name the domain and hosting were bought in. If the developer registered the domain in their own name, they are the registrant on record, even if you paid. This isn't legal advice; if the stakes are high, speak to a lawyer with your contract and invoices.</p>
+<h3>How do I find out who hosts my website?</h3>
+<p>Look up the domain's IP address with a DNS lookup tool, then check who owns that IP with an IP WHOIS lookup.</p>
+<h3>How can I get into WordPress without the admin email?</h3>
+<p>You need hosting access. From there, the host's WordPress tools, phpMyAdmin or WP-CLI can change the admin email or create a new administrator, and you reset the password normally.</p>
+<h3>Will my website go down while I take back control?</h3>
+<p>It shouldn't. The risky moments are changing nameservers before copying every DNS record, and letting the domain or hosting lapse while you wait. Copy records first, check renewal dates early and keep a full backup.</p>
+<h3>Can I keep my Google Analytics history?</h3>
+<p>Only if an existing administrator adds you. Search Console is easier, because verifying the domain through DNS gives you the data the property already holds.</p>
 
-<p>Use this <a href="/blog/website-ownership-checklist/">website ownership checklist</a> once you have access back.</p>
-
-<h2>Prevent it happening again</h2>
-<ul>
-  <li>Register domains and hosting in your own name and email</li>
-  <li>Give developers their own user accounts, not your master login</li>
-  <li>Keep a secure record of all logins</li>
-  <li>Get a handover document at the end of every project</li>
-</ul>
-<p>See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> and <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+<p>Once your logins are back, the site needs a proper check. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> start with that health check, with every account staying in your name, and if the site still sits on the developer's server, a <a href="/wordpress-migration/">WordPress migration</a> moves it to hosting you own.</p>
 `,
   },
   {
@@ -10647,46 +10807,135 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'google-maps-on-website',
-    seoTitle: 'How to Add Google Maps to Your Website Properly',
-    title: 'How to Add Google Maps to Your Website (Without Slowing It Down)',
-    description: 'Add Google Maps to your business website properly: embed options, fast loading, directions links, multiple locations and matching your Business Profile.',
+    seoTitle: 'How to Add Google Maps to Your Website Without Slowing It',
+    title: 'How to Add Google Maps to Your Website Without Slowing It Down: Embeds, the API, Click-to-Load Maps and Local Details',
+    description: 'How to add Google Maps to your website: embed code vs the Maps JavaScript API, click-to-load maps for speed, directions links and LocalBusiness schema.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-speed-optimization', 'wordpress-seo-services'],
     body: `
-<p>A map on your contact page helps customers find you and confirms you're a real, local business. But a careless map embed can slow your site down. Here's how to do it well.</p>
+<p>The simplest way to add Google Maps to your website is to search for your business on Google Maps, choose Share, then Embed a map, and paste the iframe code into your contact page. It's free and needs no API key. Because embedded maps are heavy, put the map only where it helps, lazy-load it or show a click-to-load preview, and always write your address in text alongside a Get directions link and LocalBusiness schema that match your Google Business Profile exactly.</p>
+<p>Maps go in at the build stage on my <a href="/wordpress-website-development/">WordPress website development</a> projects, alongside forms and WhatsApp, and every site is speed-tested on mobile before launch, which is where careless map embeds show up. This guide covers the embed options, keeping the map from slowing your pages, the contact page details that matter more than the map itself, and the structured data that ties it together.</p>
 
-<h2>Embed options</h2>
+<h2>Your three options</h2>
+<table>
+  <thead><tr><th>Option</th><th>Cost and setup</th><th>Good for</th><th>Drawbacks</th></tr></thead>
+  <tbody>
+    <tr><td>Share and Embed iframe</td><td>Free, no API key; copy and paste</td><td>One location on a contact page</td><td>Heavy to load; limited styling</td></tr>
+    <tr><td>Maps JavaScript API</td><td>Needs a Google Cloud project, an API key and a billing account; usage-based pricing</td><td>Custom styling, several markers, store locators, maps tied to your own data</td><td>Developer time, key security and a bill if usage grows</td></tr>
+    <tr><td>Static image with a link</td><td>A map image linking to Google Maps; Google's Static Maps API also needs a key</td><td>The lightest option, for pages where an interactive map adds little</td><td>Not interactive until tapped</td></tr>
+  </tbody>
+</table>
+<p>For a single shop, clinic or office, the free embed is almost always enough. Reach for the API only when you need something the embed can't do.</p>
+
+<h2>Embedding a map with the Share button</h2>
+<ol>
+  <li>Search for your business on Google Maps. Use your Business Profile listing, not just the street address, so the map shows your business name.</li>
+  <li>Click <strong>Share</strong>, open the <strong>Embed a map</strong> tab, pick a size and copy the HTML.</li>
+  <li>In WordPress, paste it into a Custom HTML block. In Elementor, use the Google Maps widget with your business name, or an HTML widget with the copied code.</li>
+</ol>
+<p>The copied code looks roughly like this; the long embed address is unique to your listing:</p>
+<pre><code>&lt;iframe src="https://www.google.com/maps/embed?pb=YOUR-EMBED-CODE"
+  width="600" height="450" style="border:0;" allowfullscreen=""
+  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+  title="Map to Example Dental Clinic"&gt;&lt;/iframe&gt;</code></pre>
+<p>Add a title attribute, as above, so screen reader users know what the frame contains, and make the map responsive so it doesn't overflow on phones.</p>
+
+<h2>Using the Maps JavaScript API</h2>
+<p>The API lets you style the map to match your brand, plot many locations, add filters or build a store locator. It requires a Google Cloud project with billing enabled and an API key. Google has changed how its free monthly allowance works more than once, so check the current pricing page rather than relying on an old blog post, and protect yourself:</p>
 <ul>
-  <li><strong>Standard embed:</strong> search your business on Google Maps, choose "Share", then "Embed a map", and paste the code. It's free and simple.</li>
-  <li><strong>Maps via API:</strong> custom styling, multiple markers and advanced features. It requires an API key and billing setup with usage limits.</li>
-  <li><strong>Static image with a link:</strong> a map image linked to Google Maps. It's the lightest option.</li>
+  <li><strong>Restrict the API key</strong> to your website's domain and to only the APIs you use, so nobody can run up charges with it.</li>
+  <li><strong>Set budget alerts</strong> in Google Cloud billing.</li>
+  <li><strong>Keep the project and billing account in your business's name,</strong> not your developer's, like every other account behind your website.</li>
 </ul>
+<p>Store locator and map plugins for WordPress usually need your own API key too, so the same rules apply.</p>
 
-<h2>Keep it fast</h2>
-<p>Embedded maps load extra scripts and can be heavy, especially on mobile.</p>
+<h2>Keeping maps from slowing your site</h2>
+<p>A Google Maps embed pulls in many extra files from Google's servers, including a large amount of JavaScript, even if nobody touches the map. On a phone over mobile data, that can delay the page and hurt Core Web Vitals. In order of impact:</p>
 <ul>
-  <li>Place the map only where it's useful, usually the contact page, not every page</li>
-  <li>Lazy-load the map so it loads only when scrolled into view</li>
-  <li>Or show a static preview that loads the interactive map on tap</li>
+  <li><strong>Use a map only where it helps,</strong> usually the contact page, and never in a site-wide footer.</li>
+  <li><strong>Keep it below the first screen,</strong> after the address, phone and directions link.</li>
+  <li><strong>Lazy-load it.</strong> Google's current embed code includes loading="lazy", so the map loads only as visitors scroll near it. Check it's still there after pasting, as some builders strip attributes; see <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</li>
+  <li><strong>Better still, use a click-to-load preview,</strong> so the map loads only for visitors who want it.</li>
 </ul>
-<p>See <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
+<h3>A click-to-load map preview</h3>
+<p>Show a lightweight image and a button; the real map replaces it when tapped. The preview can be a static map image or a simple location graphic, and if you use an image from Google, follow Google's attribution rules:</p>
+<pre><code>&lt;div class="map-facade" data-src="https://www.google.com/maps/embed?pb=YOUR-EMBED-CODE"&gt;
+  &lt;img src="https://example.com/wp-content/uploads/map-preview.webp"
+    alt="Map showing Example Dental Clinic near Example Chowk"
+    width="800" height="450" loading="lazy"&gt;
+  &lt;button type="button"&gt;Show interactive map&lt;/button&gt;
+&lt;/div&gt;
+&lt;script&gt;
+document.querySelectorAll('.map-facade button').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var box = btn.parentElement;
+    var frame = document.createElement('iframe');
+    frame.src = box.dataset.src;
+    frame.width = '800';
+    frame.height = '450';
+    frame.title = 'Map to Example Dental Clinic';
+    frame.allowFullscreen = true;
+    frame.style.border = '0';
+    box.replaceWith(frame);
+  });
+});
+&lt;/script&gt;</code></pre>
+<p>Give the preview the same dimensions as the map, so nothing jumps when it swaps. Some caching and performance plugins offer iframe lazy loading or placeholders too; test whichever you use on a real phone. Maps are one of several embeds that quietly slow sites; <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a> covers chat widgets, trackers and the rest. A click-to-load map also avoids loading Google's resources before a visitor chooses to, which helps if your site asks for cookie consent; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics</a>.</p>
 
-<h2>Make directions easy</h2>
+<h2>The contact page details that matter more than the map</h2>
+<p>Most visitors on phones don't pan around an embedded map; they want the address, a way to get directions and a reason to trust they'll find you. Next to the map, include:</p>
 <ul>
-  <li>Add a clear "Get directions" button that opens Google Maps on phones</li>
-  <li>Write the address in text too, not just in the map, so it's readable, copyable and understood by search engines</li>
-  <li>Add landmarks, parking information and entry details</li>
+  <li><strong>The full address as text,</strong> so it can be read, copied and understood by search engines, with a landmark Indian visitors actually use, such as "opposite the metro station" or "above the State Bank branch".</li>
+  <li><strong>A Get directions button</strong> that opens Google Maps navigation on the visitor's phone.</li>
+  <li><strong>Opening hours,</strong> including Sunday or lunch closures, matching your Business Profile.</li>
+  <li><strong>Parking, floor and entrance details,</strong> and a photo of the entrance or signboard if it's hard to spot.</li>
+  <li><strong>Tap-to-call and WhatsApp</strong> buttons for people who would rather ask the way.</li>
 </ul>
+<p>A directions link can use Google's Maps URLs format, or the share link copied from your Business Profile:</p>
+<pre><code>&lt;a href="https://www.google.com/maps/dir/?api=1&amp;destination=Example+Dental+Clinic+Pune"&gt;Get directions&lt;/a&gt;</code></pre>
+<p><a href="/blog/contact-page-that-gets-enquiries/">How to design a contact page that gets enquiries</a> covers forms, reply times and trust signals around the map.</p>
 
-<h2>Multiple locations</h2>
-<p>For several branches, give each its own section or page with address, map, hours and phone, rather than one crowded map. Keep each branch's details matching its Google Business Profile.</p>
+<h2>LocalBusiness schema and NAP consistency</h2>
+<p>Embedding a map doesn't by itself improve your local rankings. What helps is Google seeing the same business name, address and phone (NAP) on your website, your Business Profile and directories, and structured data that states them clearly. A LocalBusiness block, using the most specific type available, such as Dentist or Restaurant, looks like this:</p>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Example Dental Clinic",
+  "url": "https://example.com/",
+  "telephone": "+91-20-0000-0000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12 Example Road, near Example Chowk",
+    "addressLocality": "Pune",
+    "postalCode": "411001",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 18.5204, "longitude": 73.8567 },
+  "hasMap": "https://maps.app.goo.gl/example"
+}
+&lt;/script&gt;</code></pre>
+<p>SEO plugins such as Rank Math and Yoast's local add-on can output this from a settings screen. Keep the details word for word the same as your profile, and link your Business Profile to the matching page of your site. The wider steps, from reviews to citations, are in the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian small businesses</a>, and if your business doesn't appear on Maps at all, see <a href="/blog/not-showing-on-google-maps/">business not showing on Google Maps</a>.</p>
 
-<h2>Consistency helps local SEO</h2>
-<p>Your business name, address and phone on the website should match your Google Business Profile exactly. Add LocalBusiness schema with the same details; see the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> and <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+<h2>Several branches, or no shopfront at all</h2>
+<p>For several branches, give each its own page with its own map, address, hours and phone, matching that branch's Business Profile, rather than one crowded map on the contact page; <a href="/blog/multi-location-business-website/">websites for multi-branch businesses</a> covers the structure. If customers never visit you, as with plumbers, AC repair or home tutors, you don't need to show an exact address. List the areas you serve in text and set a service area on your profile instead; see <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a>.</p>
 
-<h2>Service-area businesses</h2>
-<p>If customers don't visit you (for example home services), you may not want to show a precise address. List the areas you serve instead, and set a service area on your Google Business Profile.</p>
+<h2>FAQs</h2>
+<h3>Is it free to embed Google Maps on a website?</h3>
+<p>Yes, embedding a map through Google Maps' Share and Embed option is free and needs no API key. The Maps JavaScript API, used for custom maps and store locators, needs an API key and a billing account, with usage-based pricing.</p>
+<h3>Does Google Maps slow down a website?</h3>
+<p>It can, because the embed loads a lot of code from Google. Use it only on pages that need it, keep it below the first screen and lazy-load it, or show a click-to-load preview.</p>
+<h3>Does embedding Google Maps help local SEO?</h3>
+<p>Not directly. Consistent business details across your website and Business Profile, LocalBusiness schema and a well-managed profile matter far more than the map itself.</p>
+<h3>How do I add Google Maps in WordPress without a plugin?</h3>
+<p>Copy the embed code from Google Maps' Share menu and paste it into a Custom HTML block, or use Elementor's Google Maps widget. No plugin or API key is needed for a single location.</p>
+<h3>Why does my embedded map show the wrong place?</h3>
+<p>The embed was probably created from an address rather than your business listing, or the pin on your Business Profile is misplaced. Fix the pin on your profile, then generate a fresh embed from the listing.</p>
+
+<p>Want a contact page with a fast map, clear directions and details that match your Business Profile? On my <a href="/wordpress-website-development/">WordPress website development</a> projects, maps, forms and WhatsApp go in during the build, and every page is speed-tested on mobile before launch. If maps, chat widgets and other embeds are already slowing your site, <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> includes lazy loading and a third-party script clean-up.</p>
 `,
   },
   {
@@ -14109,50 +14358,112 @@ RewriteRule ^old-services/?$ https://example.com/services/ [R=301,L]</code></pre
   },
   {
     slug: 'handle-negative-reviews',
-    seoTitle: 'How to Handle Negative Reviews (With Examples)',
-    title: 'How to Handle Negative Online Reviews Professionally',
-    description: 'How to respond to negative Google reviews: stay calm, reply publicly and helpfully, take it private, spot fake reviews and learn from the feedback.',
+    seoTitle: 'How to Respond to Negative Google Reviews (With Templates)',
+    title: 'How to Handle Negative Google Reviews Professionally: Reply Templates, Fake Reviews and What Not to Do',
+    description: 'How to respond to negative Google reviews: reply templates, what not to say, flagging fake or abusive reviews and earning genuine ones ethically.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Growth',
     related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
     body: `
-<p>Every business eventually gets a negative review. Handled well, it can actually build trust: potential customers read your reply to judge how you treat people when things go wrong.</p>
+<p>To handle a negative Google review well, reply publicly within a day or two, keep it short and calm, thank the customer, acknowledge their experience, apologise for anything that genuinely went wrong, and offer to sort it out by phone or email. Don't argue, don't share private details and don't offer anything in exchange for removing the review. If a review breaks Google's policies, such as a fake review from someone who was never a customer, you can report it, but an honest bad experience will stay, so your reply is what future customers will judge.</p>
+<p>Reviews sit right next to your business name in Maps and local results, so they shape whether people call you. As part of my <a href="/wordpress-seo-services/">WordPress SEO services</a> I help businesses set up and improve their Google Business Profile, and the rule I follow there is simple: reviews come from real customers you ask, never bought or written for you. This guide covers the other half, what to do when a real customer is unhappy, with templates you can adapt.</p>
 
-<h2>Before replying</h2>
-<ul>
-  <li>Don't reply in anger. Wait until you can respond calmly.</li>
-  <li>Check your records: what actually happened?</li>
-  <li>Decide what you can offer to resolve it</li>
-</ul>
+<h2>Why your reply matters more than the review</h2>
+<p>One negative review among many good ones rarely puts people off. What they notice is how you respond. A defensive reply makes a small complaint look like a pattern; a calm, specific one shows how you treat customers when something goes wrong, which is exactly what a cautious buyer wants to know. Reply to every negative review, even the unfair ones, because you are writing for the next hundred readers as much as for the reviewer.</p>
 
-<h2>How to reply</h2>
+<h2>Before you reply: a quick checklist</h2>
 <ol>
-  <li><strong>Thank them</strong> for the feedback</li>
-  <li><strong>Acknowledge</strong> their experience without arguing</li>
-  <li><strong>Apologise</strong> for how they felt, and for any genuine mistake</li>
-  <li><strong>Offer to resolve it privately</strong> with a phone number or email</li>
-  <li><strong>Keep it short, professional and free of private details</strong></li>
+  <li><strong>Wait until you're calm.</strong> A reply written in anger is the one you'll regret. A few hours is fine; a few weeks is not.</li>
+  <li><strong>Check your records.</strong> Find the booking, order, invoice or WhatsApp chat. What actually happened, and when?</li>
+  <li><strong>Talk to the staff involved,</strong> privately and without blame, to get the full picture.</li>
+  <li><strong>Decide what you can offer:</strong> a redo, a refund, a call from the owner, or simply an explanation and an apology.</li>
+  <li><strong>If you know the customer, call them first.</strong> A direct conversation often resolves things faster than a public exchange.</li>
 </ol>
 
-<h2>Example reply</h2>
-<blockquote>Thank you for sharing this, {Name}. I'm sorry the installation took longer than we promised. That's not the experience we want anyone to have. Please call me on {number} so I can make this right.</blockquote>
+<h2>How to structure a reply</h2>
+<ol>
+  <li><strong>Thank them</strong> for taking the time to write.</li>
+  <li><strong>Acknowledge the specific problem</strong> in a sentence, without arguing about the details.</li>
+  <li><strong>Apologise</strong> for their experience, and clearly for any genuine mistake.</li>
+  <li><strong>Say what you have done or will do,</strong> if anything has changed.</li>
+  <li><strong>Move it offline</strong> with a named person, a phone number or an email address.</li>
+</ol>
+<p>Keep it to three to five sentences, sign it with your name or role, and reply in the language the customer used if you can, whether that's Hindi, Marathi or English. Never name the staff member involved.</p>
+
+<h2>Reply templates for common situations</h2>
+<p>Adapt these rather than pasting them unchanged; identical replies on every review look automated.</p>
+<h3>Late or delayed service</h3>
+<blockquote>Thank you for telling us, [Name]. You're right that we missed the time we promised, and I'm sorry for the trouble that caused. We've changed how we schedule [visits or deliveries] so it doesn't happen again. Please call me on [number] so I can put this right. [Your name], [role]</blockquote>
+<h3>Unhappy with the product or the work</h3>
+<blockquote>Thank you for your feedback, [Name], and I'm sorry the [product or work] didn't meet your expectations. We'd like to look at this properly and fix it. Could you call or WhatsApp us on [number], or email [address], with your order details? [Your name]</blockquote>
+<h3>A complaint about staff behaviour</h3>
+<blockquote>I'm sorry, [Name]. That isn't how we want anyone to be treated, and I've taken it up with the team. I'd value the chance to hear more about what happened; please reach me directly on [number]. [Your name], owner</blockquote>
+<h3>A complaint about price</h3>
+<blockquote>Thank you for your review, [Name]. I'm sorry our pricing wasn't clear before you [ordered or booked]. We've since added a clearer breakdown [on our website or quotes]. I'm happy to go through your bill with you on [number]. [Your name]</blockquote>
+<h3>Someone you can't find in your records</h3>
+<blockquote>Thank you for your feedback. We take every review seriously, but we can't find a record of your [visit or order]. Please contact us on [number] or [email] with your details so we can look into it. [Your name]</blockquote>
+<h3>Clinics, law firms and other confidential services</h3>
+<p>Never confirm that the reviewer was a patient or client, and never mention their treatment, case or file. A reply that says "we checked your treatment record" discloses health information in public. Keep it general:</p>
+<blockquote>Thank you for your feedback. We're unable to discuss anyone's care or case here, but we take every concern seriously. Please contact our clinic manager on [number] so we can talk privately. [Name], [role]</blockquote>
 
 <h2>What not to do</h2>
 <ul>
-  <li>Argue, blame the customer or get defensive</li>
-  <li>Share personal or confidential details (especially in healthcare, legal or finance)</li>
-  <li>Offer incentives to remove reviews</li>
-  <li>Post fake positive reviews to bury the negative one</li>
+  <li><strong>Argue or blame the customer</strong> in public, even when you are right.</li>
+  <li><strong>Share personal details,</strong> order contents, medical or legal information, or anything the customer told you privately.</li>
+  <li><strong>Threaten legal action</strong> in a reply. If a review may be defamatory, speak to a lawyer quietly.</li>
+  <li><strong>Offer discounts, refunds or gifts in exchange for deleting or changing a review.</strong></li>
+  <li><strong>Post fake positive reviews</strong> or ask staff, friends or family to bury the negative one. It breaks Google's policies and can get genuine reviews removed or your profile restricted.</li>
+  <li><strong>Copy and paste</strong> the same reply onto every review.</li>
 </ul>
 
-<h2>Fake or abusive reviews</h2>
-<p>If a review clearly violates the platform's policies (spam, a competitor, someone who was never a customer, hate speech), you can report it through the platform's process. Reply calmly anyway, stating you can't find a record of them as a customer and inviting them to get in touch.</p>
+<h2>Fake, abusive or policy-breaking reviews</h2>
+<p>Google removes reviews that break its policies for user-generated content, not reviews that are simply negative or unfair. At the time of writing, these are the situations that matter; check Google's current review policies, since they change:</p>
+<table>
+  <thead><tr><th>Situation</th><th>Can you report it?</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>A real customer with a harsh but genuine complaint</td><td>No</td><td>Reply well, fix the cause and move on</td></tr>
+    <tr><td>A competitor, ex-employee or someone with a conflict of interest</td><td>Yes</td><td>Report it, and reply calmly in case it stays up</td></tr>
+    <tr><td>Someone who was never a customer, or obvious spam</td><td>Yes</td><td>Report it, and use the "can't find a record" reply</td></tr>
+    <tr><td>Hate speech, harassment, obscenity or personal information</td><td>Yes</td><td>Report it; don't engage with the content</td></tr>
+    <tr><td>A review meant for a different business</td><td>Yes, as off-topic</td><td>Report it, and reply politely pointing out the likely mix-up</td></tr>
+    <tr><td>A sudden wave of one-star reviews after a news story or social post</td><td>Yes</td><td>Report each one and contact Business Profile support</td></tr>
+    <tr><td>False statements you believe are defamatory</td><td>Through Google's legal removal process</td><td>Take advice from a lawyer before acting</td></tr>
+  </tbody>
+</table>
+<h3>How to report a review</h3>
+<ol>
+  <li>Open your Business Profile from Google Search or Maps while signed in, and go to <strong>Reviews</strong>.</li>
+  <li>Find the review, open the three-dot menu and choose <strong>Report review</strong>, then pick the reason that fits.</li>
+  <li>Track the report in Google's review management tool, which at the time of writing also lets you appeal a decision once.</li>
+</ol>
+<p>There is no guarantee a reported review will come down, and no one can promise removal for you. Be wary of anyone selling "review removal".</p>
 
-<h2>Learn from patterns</h2>
-<p>If several reviews mention the same problem, such as slow responses, pricing confusion or delays, fix the underlying issue. Clearer information on your website, like pricing guidance and timelines, often prevents complaints.</p>
+<h2>After it's resolved</h2>
+<p>If you sort the problem out by phone, add a short follow-up reply under your first one, such as "We spoke on [date] and have [replaced the item]." Customers can edit their own reviews, and some do after a good resolution. You can mention that they're welcome to update it if they wish, but never push, and never tie it to a refund or offer.</p>
 
-<h2>Balance with more positive reviews</h2>
-<p>A steady flow of genuine reviews puts the occasional negative one in context; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews ethically</a>.</p>
+<h2>Ask happy customers too, the ethical way</h2>
+<p>The best protection against one bad review is a steady flow of genuine good ones. Ask every customer after a positive moment, such as a handover, a visit or a delivery, with your review link on WhatsApp or a QR code at the counter. Don't offer discounts or gifts for reviews, and don't "gate" requests by only sending the link to customers you think are happy; both go against Google's policies. <a href="/blog/get-more-google-reviews/">How to get more Google reviews ethically</a> has a message template and timing tips, and the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers the rest of the profile.</p>
+
+<h2>Showing reviews on your website</h2>
+<p>Featuring real Google reviews on your site builds trust with visitors who arrive from ads or social media. Copy them word for word, show your true overall rating and link to your profile so people can read everything, including the critical ones. Don't add review star schema to reviews copied from Google: Google doesn't show stars for reviews a business displays about itself, and markup that breaks its guidelines can be ignored or penalised. <a href="/blog/google-reviews-on-website/">How to show Google reviews on your website</a> covers widgets, speed and markup, and <a href="/blog/collect-display-customer-testimonials/">collecting customer testimonials</a> covers longer quotes gathered directly.</p>
+
+<h2>Learn from the pattern</h2>
+<p>Keep a simple sheet of every complaint: date, topic and what you did. If several mention the same thing, such as slow replies, surprise charges or wrong timings, the fix is in your process, not your replies. Often it's your website or profile: out-of-date opening hours, unclear delivery areas or no pricing guidance set the wrong expectations before a customer ever arrives. The <a href="/blog/website-trust-signals-checklist/">website trust signals checklist</a> helps you spot what's missing.</p>
+
+<h2>FAQs</h2>
+<h3>Can I delete a negative Google review?</h3>
+<p>No. Only the reviewer can delete or edit their review. You can report reviews that break Google's policies, and Google decides whether to remove them.</p>
+<h3>How long does Google take to review a reported review?</h3>
+<p>It varies, from a few days to longer. Check the status in Google's review management tool rather than reporting the same review repeatedly.</p>
+<h3>Should I reply to a one-star rating with no text?</h3>
+<p>Yes, briefly. Thank them and invite them to get in touch so you can understand what went wrong. Readers see that you care even when there's nothing specific to answer.</p>
+<h3>Can I ask a customer to change their review?</h3>
+<p>Once the problem is fixed, you can let them know they're welcome to update it. Offering a refund, discount or gift in return for changing or removing it is against Google's policies.</p>
+<h3>Do negative reviews hurt local SEO?</h3>
+<p>Reviews are one of the signals in local results, but a few negative ones among many genuine reviews rarely matter much. A steady flow of new reviews and consistent replies help more than a perfect rating.</p>
+
+<p>Want your Google Business Profile and website working together, with honest reviews, accurate details and pages that answer customers' questions before they become complaints? That's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review of your site, and the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> covers the steps you can take yourself.</p>
 `,
   },
   {
@@ -16083,48 +16394,130 @@ Description: Buy %title% online. %excerpt%</code></pre>
   },
   {
     slug: 'choose-website-colours-fonts',
-    seoTitle: 'How to Choose Website Colours and Fonts',
-    title: 'How to Choose Website Colours and Fonts for Your Brand',
-    description: 'How to choose website colours and fonts: brand fit, a small palette, contrast and accessibility, readable type, performance and applying them consistently.',
+    seoTitle: 'How to Choose Website Colours and Fonts for Your Brand',
+    title: 'How to Choose Website Colours and Fonts for Your Brand: Palettes, Contrast, Font Pairing and Global Styles',
+    description: 'How to choose website colours and fonts: build a palette from your logo, check contrast, pair readable fonts, support Hindi and set them as global styles.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-website-development', 'figma-to-wordpress'],
     body: `
-<p>Colours and fonts shape how your business feels to visitors: trustworthy, premium, friendly, modern. They also affect readability and speed. Here's a simple way to choose well.</p>
+<p>To choose website colours, start from your logo and build a small palette by role: one primary brand colour, one accent for buttons and highlights, and neutrals for text, backgrounds and borders. Check that every text and button colour has enough contrast to read easily. For fonts, use one or two families, a body size of at least 16 pixels and only the weights you need, make sure they support any Indian scripts you publish in, then set both as global styles so the whole site stays consistent.</p>
+<p>Colours and fonts are worth settling before a <a href="/website-redesign/">website redesign</a> starts, because every page inherits them, and changing them halfway through means rechecking every layout. If a designer has already set up colour and text styles in Figma, those map directly onto WordPress global styles, one of the first steps in my <a href="/figma-to-wordpress/">Figma to WordPress</a> builds. Below is a practical way to choose them yourself, or to judge what a designer proposes.</p>
 
-<h2>Colours</h2>
-<h3>Start with your brand</h3>
-<p>Use your logo colours as a starting point. Think about the feeling you want: calm and clinical for healthcare, warm for food, bold for creative agencies, dependable for B2B.</p>
-<h3>Keep the palette small</h3>
+<h2>Start from your brand, not colour psychology</h2>
+<p>You'll find plenty of charts claiming blue means trust and orange means energy. Colour associations are loose and cultural; in India, saffron, red and green carry religious, festive and political meanings that vary by region and audience. What matters more is that your website matches the brand customers already know, from your logo, signboard, packaging or vehicles, and suits your sector.</p>
 <ul>
-  <li><strong>Primary colour:</strong> buttons, links and highlights</li>
-  <li><strong>Secondary or accent colour:</strong> used sparingly</li>
-  <li><strong>Neutrals:</strong> text, backgrounds and borders</li>
+  <li><strong>Clinics and hospitals</strong> usually suit calm, clean palettes with plenty of white space, so information feels clear rather than clinical.</li>
+  <li><strong>Restaurants and food brands</strong> can use warmer, richer colours, but the food photos should be the most colourful thing on the page.</li>
+  <li><strong>Manufacturers and B2B firms</strong> benefit from restrained colours that let specifications and product photos lead.</li>
+  <li><strong>Law firms and consultants</strong> tend towards sober, high-contrast palettes that read as professional.</li>
 </ul>
-<h3>Prioritise contrast</h3>
-<p>Text must be easy to read. Check contrast with a contrast checker, since light grey text on white is a common problem; see <a href="/blog/website-accessibility-basics/">accessibility basics</a>.</p>
-<h3>Use colour consistently</h3>
-<p>If buttons are violet, keep all primary buttons violet, so visitors learn what's clickable.</p>
+<p>If you don't have a logo yet, sort that first; <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a> covers the files a website needs.</p>
 
-<h2>Fonts</h2>
+<h2>Build a small palette by role</h2>
+<p>A website needs fewer colours than most people think. Give each one a job:</p>
+<table>
+  <thead><tr><th>Role</th><th>Used for</th><th>Tips</th></tr></thead>
+  <tbody>
+    <tr><td>Primary</td><td>Your brand colour: heading accents, links, key shapes</td><td>Usually taken from the logo; you may need a darker shade for text</td></tr>
+    <tr><td>Accent</td><td>Buttons and calls to action</td><td>Must stand out from the primary and pass contrast with its button text</td></tr>
+    <tr><td>Text</td><td>Body copy and headings</td><td>Near-black or a very dark brand tint, not mid-grey</td></tr>
+    <tr><td>Backgrounds</td><td>Page and section backgrounds</td><td>White or off-white, plus one light tint for alternating sections</td></tr>
+    <tr><td>Borders and muted text</td><td>Dividers, form fields, captions</td><td>Light greys that still keep form fields visible</td></tr>
+    <tr><td>Status colours</td><td>Error, success and warning messages</td><td>Never rely on colour alone; add an icon or words</td></tr>
+  </tbody>
+</table>
+<p>A common rule of thumb is to keep neutrals dominant, the primary colour secondary and the accent rare, so the accent draws the eye to the button that matters. If every element is in your brand colour, nothing stands out.</p>
+<h3>Turning one brand colour into a usable palette</h3>
+<ol>
+  <li>Take the exact hex code from your logo file, not from a screenshot.</li>
+  <li>Create a darker shade for text and hover states, and a very light tint for backgrounds.</li>
+  <li>Pick an accent that contrasts with the primary, often from the opposite side of the colour wheel or a brighter neighbour.</li>
+  <li>Test each combination for contrast before anything is designed around it.</li>
+</ol>
+
+<h2>Check contrast before you fall in love with a palette</h2>
+<p>Low contrast is the most common colour mistake on small business sites: light grey text on white, white text on yellow or orange buttons, or text over busy photos. WCAG, the international accessibility guidelines, set minimum contrast ratios at level AA:</p>
 <ul>
-  <li><strong>One or two families:</strong> one for headings, one for body (or one for both)</li>
-  <li><strong>Readable body text:</strong> at least 16px, with comfortable line height</li>
-  <li><strong>Limited weights:</strong> each extra weight adds loading time</li>
-  <li><strong>Support for your languages</strong>, including Devanagari or regional scripts if needed</li>
+  <li><strong>4.5 to 1</strong> for normal body text.</li>
+  <li><strong>3 to 1</strong> for large text, roughly 24 pixels and above, or about 19 pixels if bold.</li>
+  <li><strong>3 to 1</strong> for button outlines, form field borders, icons and other parts people need to see to use the page.</li>
+</ul>
+<p>Use a free contrast checker such as WebAIM's, or the contrast reading in your browser's developer tools. A typical case: a bright orange that looks great in the logo might measure around 3 to 1 against white, so white button text fails for normal-sized text. Either darken the orange for buttons or use dark text on it. Then test on your own phone outdoors, at reduced screen brightness, because that's how many customers will see it. <a href="/blog/website-accessibility-basics/">Website accessibility basics</a> covers the other checks, and <a href="/blog/website-accessibility-older-users/">designing for older visitors</a> explains why contrast and size matter even more for them.</p>
+
+<h2>Choosing fonts that read well</h2>
+<h3>One family or two</h3>
+<p>One well-designed family with a few weights can carry a whole site. If you want more character, pair a distinctive heading font with a plain, readable body font. More than two families looks messy and slows the page.</p>
+<table>
+  <thead><tr><th>Approach</th><th>Feels</th><th>Examples on Google Fonts at the time of writing</th></tr></thead>
+  <tbody>
+    <tr><td>One sans-serif for everything</td><td>Clean, modern, safe</td><td>Inter, DM Sans, Lato, Open Sans</td></tr>
+    <tr><td>Serif headings, sans-serif body</td><td>Established, editorial, premium</td><td>Playfair Display or Merriweather with Source Sans 3</td></tr>
+    <tr><td>Geometric headings, plain body</td><td>Friendly, confident</td><td>Poppins or Montserrat with Inter or Lato</td></tr>
+    <tr><td>System fonts</td><td>Neutral, fastest to load</td><td>The phone or computer's built-in fonts, with no download</td></tr>
+  </tbody>
+</table>
+<h3>Readable sizes and spacing</h3>
+<ul>
+  <li><strong>Body text of at least 16 pixels</strong> on phones; many sites read better at 17 or 18.</li>
+  <li><strong>Line height around 1.5 to 1.7</strong> for paragraphs, tighter for large headings.</li>
+  <li><strong>Lines of roughly 60 to 75 characters</strong> on desktop, so the eye doesn't get lost.</li>
+  <li><strong>A clear size step</strong> between headings, subheadings and body text.</li>
+  <li><strong>Two or three weights,</strong> such as regular, semi-bold and bold. Every extra weight is another file to download.</li>
+</ul>
+<h3>Hindi, Marathi and other Indian scripts</h3>
+<p>If you publish in Hindi or Marathi, the font must include Devanagari, and its Latin and Devanagari letters should look balanced together. Families such as Mukta, Hind and Noto Sans Devanagari are designed for this; test real sentences, including conjuncts and matras, not just the alphabet. <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on your website</a> covers sizes, line height and loading.</p>
+<h3>Licences</h3>
+<p>Fonts on Google Fonts are free to use under open licences. A font bought for print may need a separate web licence, so check before your designer builds the site around it.</p>
+
+<h2>Keep fonts from slowing your site</h2>
+<p>Every font family and weight is a download. Load only the weights you use, prefer the WOFF2 format, host the files on your own server where possible, and make sure text shows in a fallback font while the web font loads, so nothing stays invisible. <a href="/blog/web-fonts-performance/">How to load web fonts without slowing your site</a> covers font-display, preloading and avoiding layout shift in detail.</p>
+
+<h2>Set them once as global styles</h2>
+<p>However you build, colours and fonts belong in one central place, so a change updates every page. In Elementor, that's <strong>Site Settings &gt; Global Colors</strong> and <strong>Global Fonts</strong>. In a block theme, it's the Styles panel in the Site Editor, backed by the theme's theme.json file:</p>
+<pre><code>{
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        { "slug": "primary", "color": "#1F4E79", "name": "Primary" },
+        { "slug": "accent", "color": "#E07A1F", "name": "Accent" },
+        { "slug": "text", "color": "#1A1A1A", "name": "Text" },
+        { "slug": "background", "color": "#FFFFFF", "name": "Background" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        { "slug": "body", "name": "Body", "fontFamily": "Inter, system-ui, sans-serif" }
+      ]
+    }
+  }
+}</code></pre>
+<p>In this example, the dark blue passes comfortably with white text, but the orange accent measures about 3 to 1 against white, so it suits large text and highlights, or buttons with dark text. Name colours by role, not by appearance, so "accent" still makes sense if it changes from orange to green. Designers preparing a Figma file can follow the same idea; see <a href="/blog/figma-to-wordpress-designer-guide/">preparing a Figma file for a WordPress build</a>.</p>
+
+<h2>Test before you commit</h2>
+<ul>
+  <li>View a real page, not a palette swatch, on a budget Android phone and an iPhone.</li>
+  <li>Check it in sunlight and at low brightness.</li>
+  <li>Switch your screen to greyscale; headings, buttons and links should still be obvious.</li>
+  <li>Make sure links are distinguishable without colour, for example by underlining them in body text.</li>
+  <li>Ask someone outside the business whether the main button is the first thing they notice.</li>
 </ul>
 
-<p>Building a Hindi or bilingual site? See <a href="/blog/hindi-devanagari-fonts-website/">choosing and loading Hindi and Devanagari fonts</a> for sizes, line height and testing tips.</p>
+<h2>FAQs</h2>
+<h3>How many colours should a website have?</h3>
+<p>Usually a primary brand colour, one accent for buttons, and a set of neutrals for text, backgrounds and borders, plus status colours for errors and success messages. More than that tends to look busy.</p>
+<h3>What font size should website body text be?</h3>
+<p>At least 16 pixels, with a line height of around 1.5. Many sites are more comfortable to read at 17 or 18 pixels, especially for older visitors and on small phones.</p>
+<h3>Should my website use the same colours as my logo?</h3>
+<p>Yes, as a starting point, but logo colours often need adjusting for screens. A light or bright logo colour may need a darker shade for text and buttons to pass contrast checks.</p>
+<h3>Are Google Fonts free for business websites?</h3>
+<p>Yes, Google Fonts are released under open licences that allow commercial use. Self-hosting them on your own server is usually faster than loading them from Google.</p>
+<h3>Can I change my website colours later?</h3>
+<p>If they're set as global styles, changing them is quick. If every heading and button was styled by hand, it means editing each one, which is a good reason to set up global styles from the start.</p>
 
-<h2>Performance</h2>
-<p>Web fonts should load efficiently (only needed weights, with a fallback shown while loading) so they don't slow pages or cause text to jump.</p>
-
-<p>For the practical side, including weights, self-hosting, font-display and preloading, see <a href="/blog/web-fonts-performance/">how to load web fonts without slowing your site</a>.</p>
-
-<h2>Apply them as global styles</h2>
-<p>Set colours and typography as global styles in your theme or builder, so the whole site stays consistent and changes happen in one place; see <a href="/blog/figma-to-wordpress-designer-guide/">design handoff tips</a>.</p>
-
-<p>For the bigger picture, see <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>.</p>
+<p>If your website's colours and fonts feel dated or inconsistent from page to page, a <a href="/website-redesign/">website redesign</a> rebuilds it on a consistent, mobile-first design system with global styles, while protecting the rankings you have. If you already have a finished design, <a href="/figma-to-wordpress/">Figma to WordPress</a> turns its colour and text styles into WordPress global styles.</p>
 `,
   },
   {
@@ -21034,54 +21427,98 @@ Screenshot: attached</code></pre>
   },
   {
     slug: 'best-theme-for-elementor',
-    seoTitle: 'Best Theme for Elementor: Hello, Astra, GeneratePress & More',
-    title: 'Choosing the Best Theme for Elementor: Hello, Astra, GeneratePress and Others',
-    description: 'Best theme for Elementor: why lightweight matters, how Hello Elementor, Astra, GeneratePress, Kadence and Blocksy compare, and which suits your project.',
+    seoTitle: 'Best Theme for Elementor: Hello vs Astra vs GeneratePress',
+    title: 'The Best Theme for Elementor: Hello Elementor, Astra, GeneratePress, Kadence and Blocksy Compared',
+    description: 'The best theme for Elementor depends on who builds your header, footer and shop pages. Hello Elementor, Astra, GeneratePress, Kadence and Blocksy compared.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Guides',
     related: ['elementor-developer', 'wordpress-speed-optimization', 'wordpress-website-development'],
     body: `
-<p>When you build with Elementor, the page builder handles most of the design. The theme still matters, though: it controls the basic framework, and a heavy theme can slow every page. The best theme for Elementor is usually a lightweight one that stays out of the way.</p>
+<p>The best theme for Elementor is a lightweight, well-maintained one that matches how your site is built. If you have Elementor Pro and design the header, footer, blog templates and shop pages in its Theme Builder, Hello Elementor is usually the simplest choice, because it adds almost nothing of its own. If you use free Elementor, a theme such as Astra, GeneratePress, Kadence or Blocksy is better, because it handles the header, footer and blog layouts that free Elementor can't design.</p>
+<p>When I review a site for <a href="/elementor-developer/">Elementor development</a> work, the theme is one of the first things I check, alongside the Elementor and Pro versions and the add-ons, because it decides where headers, footers and templates live and how much code loads on every page. The client sites in my case studies are all built with Elementor, on themes from Hello Elementor and Astra to OceanWP and specialised directory and magazine themes. Features move between free and paid versions, so treat the details as correct at the time of writing.</p>
 
-<h2>What to look for</h2>
+<h2>Why the theme still matters with Elementor</h2>
+<p>Elementor designs the content area of your pages. The theme still provides the frame around it: the base CSS loaded on every page, the header and footer unless Elementor Pro replaces them, blog and archive pages, the 404 page, WooCommerce styling and the default fonts and widths. A heavy theme adds weight to every page and can clash with Elementor's styles; a lean one stays out of the way. Most of an Elementor site's weight usually comes from how pages are built, add-on packs and images, so a light theme helps but won't rescue a slow build; see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</p>
+
+<h2>The key question: who builds the header, footer and templates?</h2>
+<p>Free Elementor designs pages. Elementor Pro's Theme Builder adds headers, footers, single post templates, archives, the 404 page and WooCommerce product, shop, cart and checkout layouts. That splits sites into two camps:</p>
 <ul>
-  <li><strong>Lightweight:</strong> minimal CSS and JavaScript</li>
-  <li><strong>Elementor compatibility:</strong> full-width layouts, no styling conflicts</li>
-  <li><strong>Header and footer options</strong> if you're not using Elementor Pro's Theme Builder</li>
-  <li><strong>WooCommerce support</strong> if you sell online</li>
-  <li><strong>Active development</strong> and a good security record</li>
+  <li><strong>Elementor Pro with Theme Builder:</strong> Elementor draws everything, so the theme's own header builder and layout options go unused. A minimal theme such as Hello Elementor avoids paying for features twice in page weight.</li>
+  <li><strong>Free Elementor:</strong> the theme draws the header, footer, blog and archive pages, so you want a theme with a good header builder and sensible blog layouts.</li>
 </ul>
+<p>If you're deciding whether Pro is needed at all, <a href="/blog/elementor-pro-worth-it/">is Elementor Pro worth it?</a> walks through it.</p>
 
-<h2>Popular choices</h2>
+<h2>The popular lightweight themes compared</h2>
 <table>
-  <thead><tr><th>Theme</th><th>Strengths</th><th>Good for</th></tr></thead>
+  <thead><tr><th>Theme</th><th>Header and footer without Pro</th><th>WooCommerce</th><th>Best fit</th></tr></thead>
   <tbody>
-    <tr><td>Hello Elementor</td><td>Official, extremely minimal, designed for Elementor</td><td>Sites built entirely with Elementor Pro's Theme Builder</td></tr>
-    <tr><td>Astra</td><td>Lightweight, header/footer builder, many starter templates, strong WooCommerce support</td><td>Business sites and stores, with or without Elementor Pro</td></tr>
-    <tr><td>GeneratePress</td><td>Very lightweight and stable, clean code</td><td>Performance-focused sites and developers</td></tr>
-    <tr><td>Kadence</td><td>Flexible header/footer builder, good free version</td><td>Sites mixing Elementor and blocks</td></tr>
-    <tr><td>Blocksy</td><td>Modern design options, lightweight</td><td>Design-focused sites</td></tr>
+    <tr><td>Hello Elementor</td><td>Basic header and footer settings in recent versions; custom designs need Pro's Theme Builder</td><td>Minimal styling; custom shop pages come from Elementor Pro's WooCommerce Builder</td><td>Sites designed entirely in Elementor Pro</td></tr>
+    <tr><td>Astra</td><td>Drag-and-drop header and footer builder in the free version</td><td>Good integration, with extra shop options in the paid add-on</td><td>Business sites and stores, with or without Pro; large starter template library</td></tr>
+    <tr><td>GeneratePress</td><td>Customizer header options; hook-based layouts in the premium plugin</td><td>Solid support, with more options in the premium plugin</td><td>Developers who want a minimal, stable base</td></tr>
+    <tr><td>Kadence</td><td>Drag-and-drop header and footer builder in the free version</td><td>Good shop and product options</td><td>Sites mixing Elementor pages with block editor pages</td></tr>
+    <tr><td>Blocksy</td><td>Header builder in the free version, more in Pro</td><td>Useful shop extras, many in the paid version</td><td>Design-led sites that want modern defaults</td></tr>
   </tbody>
 </table>
+<p>All five work with Elementor's own full-width and canvas page layouts, and the four with more options add per-page controls for titles, sidebars and containers. I'm deliberately not quoting speed scores: results depend far more on hosting, plugins and how pages are built than on the theme, and synthetic tests of empty themes say little about a real site.</p>
 
-<h2>How to decide</h2>
+<h2>Theme by theme</h2>
+<h3>Hello Elementor</h3>
+<p>Made by Elementor as a near-blank canvas. It loads very little and has almost no settings of its own, which is ideal when Elementor Pro's Theme Builder handles every template. On free Elementor it can feel bare, because anything beyond the basic header and footer settings needs Pro. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a> is an example I built with Elementor Pro on Hello Elementor.</p>
+<h3>Astra</h3>
+<p>A lightweight theme with a free header and footer builder, extensive Customizer options and a large library of Elementor starter templates. It works well with free Elementor and with Pro, and its WooCommerce integration is strong. <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a generator rental site, runs Elementor on Astra.</p>
+<h3>GeneratePress</h3>
+<p>Known for clean code and stability. The free theme is very minimal; the premium plugin adds modules such as hook-based Elements and a site library. It suits developers who want control and few surprises.</p>
+<h3>Kadence</h3>
+<p>Has a capable free header and footer builder and a strong block editor focus through its own blocks plugin. A good fit if some pages are built in Elementor and others, such as blog posts, in the block editor.</p>
+<h3>Blocksy</h3>
+<p>A modern theme with a free header builder and good-looking defaults. Many of its WooCommerce extras and advanced features sit in the paid version, so check what you need before building around it.</p>
+
+<h2>Which theme for your situation</h2>
+<ol>
+  <li><strong>Elementor Pro, designing every template yourself:</strong> Hello Elementor.</li>
+  <li><strong>Free Elementor, a business site with a blog:</strong> Astra, Kadence or Blocksy, for their free header builders and blog layouts.</li>
+  <li><strong>A WooCommerce store without Pro's WooCommerce Builder:</strong> Astra or Kadence, which style shop, product and cart pages well out of the box.</li>
+  <li><strong>A developer-led build with custom code:</strong> GeneratePress or Hello Elementor, with a child theme.</li>
+  <li><strong>Some pages in Elementor, some in the block editor:</strong> Kadence or Blocksy. If you're still choosing between builders, see <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>.</li>
+  <li><strong>A directory, magazine or other specialised site:</strong> a dedicated theme can be justified when it provides the listings, search or layouts you need. <a href="/blog/how-to-choose-wordpress-theme/">How to choose a WordPress theme</a> covers what to check.</li>
+</ol>
+
+<h2>Themes to avoid with Elementor</h2>
 <ul>
-  <li><strong>Have Elementor Pro and design everything in it?</strong> Hello Elementor keeps things minimal</li>
-  <li><strong>Using free Elementor?</strong> Astra, Kadence or GeneratePress handle headers, footers and blog layouts for you</li>
-  <li><strong>Running WooCommerce?</strong> Astra and Kadence have strong store features</li>
+  <li><strong>Multipurpose "mega themes"</strong> that bundle another page builder such as WPBakery, several sliders and a long list of required plugins. They add weight and can conflict with Elementor's styles.</li>
+  <li><strong>Themes with heavy demo imports</strong> that install dozens of pages, widgets and plugins you'll never use.</li>
+  <li><strong>Themes without recent updates,</strong> or with no stated compatibility with current Elementor and WordPress versions.</li>
+  <li><strong>Nulled copies of premium themes,</strong> a common source of malware; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a>.</li>
 </ul>
-<p>See <a href="/blog/elementor-pro-worth-it/">is Elementor Pro worth it?</a></p>
 
-<h2>Avoid multipurpose "mega themes"</h2>
-<p>Themes that bundle their own page builders, sliders and dozens of plugins often conflict with Elementor and slow sites down. See <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
+<h2>Do you need a child theme?</h2>
+<p>Elementor stores your designs in the database, not in theme files, so a theme update won't wipe your Elementor pages. You need a child theme only if you add custom PHP in functions.php, override template files or add custom CSS to theme files. Hello Elementor has an official child theme for exactly this. <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> shows how to create one, with code.</p>
 
-<h2>Use a child theme for code changes</h2>
-<p>If you add custom code to the theme, use a child theme so updates don't erase your changes.</p>
+<h2>Switching themes on an existing Elementor site</h2>
+<p>Your Elementor page content survives a theme switch, but anything the old theme controlled does not: its header and footer, Customizer settings, menu locations, sidebar widgets, blog layouts, container widths and default fonts. To switch safely:</p>
+<ol>
+  <li>Take a full backup and work on a staging copy; <a href="/blog/staging-sites-explained/">staging sites explained</a> covers the setup.</li>
+  <li>Note the old theme's settings: logo, colours, fonts, widths, menus and widgets.</li>
+  <li>Install and activate the new theme on staging, then set colours and fonts in Elementor's Site Settings so they no longer depend on the theme.</li>
+  <li>Rebuild the header and footer in the new theme's builder or Elementor Pro's Theme Builder.</li>
+  <li>Check every page type at desktop, tablet and mobile sizes: home, a service page, a blog post, the blog archive, the contact form and, for stores, product, cart and checkout.</li>
+  <li>Push it live, clear every cache and recheck forms and speed.</li>
+</ol>
 
-<h2>Switching themes on an existing site</h2>
-<p>Changing themes can affect headers, footers, blog layouts and styling. Test on a staging site first; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+<h2>FAQs</h2>
+<h3>What is the best free theme for Elementor?</h3>
+<p>With free Elementor, Astra, Kadence, GeneratePress and Blocksy are all solid, lightweight choices; pick the one whose free header builder and blog layouts suit your design. Hello Elementor is free too, but it's at its best with Elementor Pro.</p>
+<h3>Is Hello Elementor better than Astra?</h3>
+<p>Neither is better in general. Hello Elementor suits sites where Elementor Pro designs every template. Astra suits sites that use free Elementor, need a header builder or want stronger WooCommerce styling without Pro's WooCommerce Builder.</p>
+<h3>Does Elementor work with any theme?</h3>
+<p>It works with most well-coded themes, but some multipurpose themes clash with its styles or add a second builder. A theme that offers full-width page layouts and per-page title controls makes building much easier.</p>
+<h3>Will changing my theme break my Elementor pages?</h3>
+<p>The page content stays, but headers, footers, blog layouts and anything set in the old theme's Customizer will change. Test the switch on a staging copy before doing it on the live site.</p>
+<h3>Do I need a premium theme with Elementor?</h3>
+<p>Usually not. The free versions of the themes above cover most business sites. Paid add-ons are worth it only for specific features, and any licence should be bought in your business name.</p>
 
-<p>Need help setting up Elementor properly? See <a href="/elementor-developer/">Elementor development</a>.</p>
+<p>Not sure your current theme is the right base, or planning a new Elementor build? My <a href="/elementor-developer/">Elementor development</a> service starts with a free review that checks the Elementor and Pro versions, the theme and the add-ons, then sets up global styles and templates on a lightweight base, so the site stays fast and easy to edit.</p>
 `,
   },
   {
@@ -21393,55 +21830,102 @@ Screenshot: attached</code></pre>
   },
   {
     slug: 'real-estate-project-microsite',
-    seoTitle: 'Real Estate Project Microsite: What to Include for Leads',
-    title: 'Real Estate Project Microsites: What to Include to Generate Site Visits',
-    description: 'Real estate project microsites that generate leads: RERA details, floor plans, prices, amenities, construction updates, lead forms and fast loading.',
+    seoTitle: 'Real Estate Project Microsites: Structure, RERA and Leads',
+    title: 'Real Estate Project Microsites: What to Include, How to Capture Leads and When a Landing Page Is Enough',
+    description: 'What a real estate project microsite needs: floor plans, amenities, location, price on request, RERA details, brochure and site-visit forms, call tracking.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['real-estate-website-design', 'landing-page-design', 'wordpress-seo-services'],
     body: `
-<p>For a new residential or commercial project, a dedicated microsite (or project landing page) is often the centre of the marketing campaign. Ads, brochures and channel partners all send buyers there. It needs to answer buyers' questions quickly and turn interest into site visits.</p>
+<p>A real estate project microsite is a focused website, or section of one, for a single housing or commercial project, built to turn ad clicks and brochure requests into site visits. It should cover the project overview, configurations with carpet areas, floor plans, amenities, a location map with real distances, a starting price or a clear price-on-request option, the RERA registration details, a brochure download and site-visit booking. Every enquiry, call and WhatsApp click should be tracked back to the campaign that produced it.</p>
+<p>Project pages are the core of my <a href="/real-estate-website-design/">real estate website design</a> work: galleries, floor plans, amenities, location maps and RERA details on every project, with site-visit forms and brochure downloads that capture serious buyers. For most projects, I suggest project pages on the developer's main site plus focused <a href="/landing-page-design/">landing pages</a> for ad campaigns, and a separate microsite when a large launch has its own budget. This guide covers how to decide, what to include and how to measure what works.</p>
 
-<h2>Microsite or section of the main site?</h2>
+<h2>Microsite, landing page or project page on the main site?</h2>
+<p>These terms get used loosely, so it's worth being precise about what each one is for:</p>
+<table>
+  <thead><tr><th>Option</th><th>What it is</th><th>Best for</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Project page on the main site</td><td>A page or small section at an address like example.com/projects/project-name/</td><td>Most projects; builds the developer's brand and search visibility over time</td><td>Needs a main site that already looks credible</td></tr>
+    <tr><td>Ad landing page</td><td>A single focused page for one campaign, with one form and no menu leading elsewhere</td><td>Google and Meta ads, where every click costs money</td><td>Usually kept out of Google so it doesn't compete with the project page</td></tr>
+    <tr><td>Project microsite</td><td>A separate multi-page site, often on its own domain, branded around the project</td><td>Large launches, joint ventures or projects marketed under their own brand</td><td>Starts with no search history, and needs its own hosting, upkeep and renewals</td></tr>
+  </tbody>
+</table>
+<p>A common pattern is all three working together: the project page on the main site for buyers who search the developer or project name, landing pages for each ad campaign, and a microsite only when the project's brand and budget justify it. <a href="/blog/landing-page-vs-website/">Landing page vs website</a> explains the difference in more depth. When a project sells out, redirect its microsite to the project page on the main site and keep the domain renewed, so old brochures and links still work.</p>
+
+<h2>The structure of a project microsite</h2>
+<p>Buyers arrive with the same questions in roughly the same order. Lay the site out to answer them:</p>
+<table>
+  <thead><tr><th>Section</th><th>What to include</th><th>Tip</th></tr></thead>
+  <tbody>
+    <tr><td>Hero</td><td>Project name, locality, configurations, starting price or "price on request", RERA number, one main button</td><td>Book a site visit or download the brochure, not both competing</td></tr>
+    <tr><td>Overview</td><td>Land area, towers, units, possession timeline, approvals</td><td>Plain facts, not slogans</td></tr>
+    <tr><td>Configurations</td><td>1, 2 or 3 BHK, plots or shops, with carpet area as defined under RERA</td><td>Don't show only super built-up area</td></tr>
+    <tr><td>Floor plans</td><td>Unit plans and typical floor plans as images that zoom on a phone</td><td>Offer a printable PDF too</td></tr>
+    <tr><td>Amenities and specifications</td><td>Clubhouse, open spaces, parking, flooring, fittings, lifts, power backup</td><td>Photos where they exist; label renders clearly</td></tr>
+    <tr><td>Location and connectivity</td><td>A map, and distances to schools, hospitals, offices, stations and highways</td><td>Use distances you have checked, not "minutes away" guesses</td></tr>
+    <tr><td>Gallery and walkthrough</td><td>Renders, sample flat photos, site photos, a walkthrough video</td><td>Mark renders as artist's impressions</td></tr>
+    <tr><td>Construction updates</td><td>Dated site photos for under-construction projects</td><td>An old update suggests a stalled project</td></tr>
+    <tr><td>Developer credentials</td><td>Completed projects, with photos and handover status</td><td>Link to them on the main site</td></tr>
+    <tr><td>Brochure and site visit</td><td>Gated brochure download and a site-visit booking form</td><td>Repeat both after key sections</td></tr>
+    <tr><td>FAQs and disclaimer</td><td>Payment plans, loans, possession, legal disclaimer</td><td>Disclaimer wording from your legal advisers</td></tr>
+  </tbody>
+</table>
+<p>The same essentials apply to a project page on the main site; <a href="/blog/real-estate-website-must-have-features/">real estate website must-haves</a> covers the developer site as a whole.</p>
+
+<h2>RERA details and honest claims</h2>
+<p>Under the Real Estate (Regulation and Development) Act, advertisements for a registered project generally need to show its RERA registration number and the state RERA website address, and a project page or microsite is generally treated as advertising. Some state authorities add their own requirements, such as a QR code on advertisements in Maharashtra. Check current RERA advertising rules for your state before launch, and have your advisers confirm the wording.</p>
 <ul>
-  <li><strong>Separate microsite:</strong> focused campaign landing page, can have its own domain</li>
-  <li><strong>Project section on the main site:</strong> builds the developer's brand and SEO over time</li>
+  <li>Show the registration number and RERA website near the top of the page and in the footer of every page.</li>
+  <li>Don't market a project that needs registration before it is registered, so no "pre-launch" microsites for it.</li>
+  <li>Label renders and sample flat photos as artist's impressions.</li>
+  <li>State carpet area, and keep specifications and amenities consistent with the approved plans and the agreement.</li>
+  <li>Avoid claims you can't support, such as guaranteed returns or travel times.</li>
 </ul>
-<p>Many developers do both: a project page on the main site plus focused ad landing pages.</p>
 
-<h2>Essential content</h2>
+<h2>Showing prices or price on request</h2>
+<p>It's your decision. A starting price with the configuration and carpet area answers the first question most buyers have and filters out enquiries outside their budget. If you prefer to share prices on request, say so plainly and make the price sheet a quick download or WhatsApp request, rather than hiding it behind several steps. Whichever you choose, keep the prices on every page, ad and brochure consistent, and update them when they change.</p>
+
+<h2>Lead capture: forms, brochures and site visits</h2>
 <ul>
-  <li><strong>Project overview:</strong> location, type, configurations (2/3 BHK), sizes and possession timeline</li>
-  <li><strong>RERA details:</strong> the project's RERA registration number and the relevant RERA website</li>
-  <li><strong>Floor plans:</strong> clear, zoomable plans for each configuration</li>
-  <li><strong>Price information:</strong> starting prices or a price list request</li>
-  <li><strong>Amenities</strong> with images</li>
-  <li><strong>Location and connectivity:</strong> map, nearby schools, hospitals, offices, metro and highways</li>
-  <li><strong>Gallery:</strong> renders, sample flat photos and site photos</li>
-  <li><strong>Construction updates</strong> with dates, for under-construction projects</li>
-  <li><strong>Developer credentials:</strong> completed projects and years in business</li>
-  <li><strong>Brochure download</strong></li>
+  <li><strong>Short enquiry forms:</strong> name, phone, configuration and budget as dropdowns. Every extra field costs enquiries on a phone. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, an interior design studio I built a site for, asks for project stage, budget and time frame, so the team knows what each lead needs before calling; the same idea works for property buyers.</li>
+  <li><strong>A gated brochure:</strong> ask only for name, phone and email, then send the brochure to the email given, which also confirms the address is real. A brochure PDF should still be findable and well titled; see <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs and brochures</a>.</li>
+  <li><strong>Site-visit booking</strong> with a preferred date and time, so your sales team calls to confirm a slot rather than starting from scratch.</li>
+  <li><strong>Tap-to-call and WhatsApp</strong> on every screen, with the project name already in the WhatsApp message.</li>
+  <li><strong>Instant delivery:</strong> every enquiry emailed to sales straight away, and sent to a Google Sheet or your CRM, with a consent line and privacy notice under the form.</li>
 </ul>
+<p>Property leads cool quickly, so the first call should happen the same day; <a href="/blog/respond-to-website-enquiries-fast/">responding to enquiries fast</a> covers alerts and auto-replies.</p>
 
-<h2>Compliance</h2>
-<p>Under RERA, advertisements for registered projects generally need to show the registration number. Label artist's impressions as such, and avoid claims you can't support. Check your state RERA's current rules.</p>
+<h2>Tracking calls, WhatsApp and campaigns</h2>
+<p>A microsite that can't tell you which campaign brought a site visit wastes budget. Track form submissions, phone taps and WhatsApp clicks as conversions in GA4, Google Ads and Meta, and tag every ad link with UTM parameters. Pre-filled links make each source identifiable:</p>
+<pre><code>&lt;a href="tel:+919800000000"&gt;Call sales&lt;/a&gt;
+&lt;a href="https://wa.me/919800000000?text=Hi%2C%20I%20would%20like%20details%20of%20Example%20Heights%202%20BHK"&gt;WhatsApp us&lt;/a&gt;</code></pre>
+<p>Tracking a tap only tells you someone tried to call. To know which calls connected and which campaign they came from, a call tracking service with separate numbers per source helps; see <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a>. Give channel partners their own links or a code field, so their leads are credited correctly. <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a> walks through the setup.</p>
 
-<h2>Lead capture</h2>
+<h2>Speed for ad traffic</h2>
+<p>Most microsite visitors arrive from a mobile ad, often on mobile data. Heavy render galleries, autoplay videos and large sliders delay the page while the ad meter runs. Compress renders and serve them as WebP, load galleries below the first screen lazily, embed walkthrough videos so they load only when tapped, and test the page on a real phone over 4G before the campaign starts. <a href="/blog/landing-page-mistakes-google-ads/">Landing page mistakes that waste ad budget</a> lists the other common leaks.</p>
+
+<h2>After launch</h2>
 <ul>
-  <li>Short forms: name, phone, configuration of interest</li>
-  <li>"Book a site visit" with date preferences</li>
-  <li>Click-to-call and WhatsApp</li>
-  <li>Instant response: a callback within minutes greatly improves conversion</li>
-  <li>Leads flowing straight into your CRM</li>
+  <li>Post construction updates with dates on a regular schedule.</li>
+  <li>Update inventory and prices when they change, and mark sold-out configurations.</li>
+  <li>Review which campaigns bring site visits, not just form fills, and shift budget accordingly.</li>
+  <li>When the project completes, keep the page as a case study for the developer, or redirect the microsite to it.</li>
 </ul>
 
-<h2>Speed and ads</h2>
-<p>Most traffic comes from mobile ads. Heavy renders and videos can make pages slow, wasting ad spend. Optimise images, lazy-load galleries and test on mobile networks; see <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes with Google Ads</a>.</p>
+<h2>FAQs</h2>
+<h3>Does every real estate project need its own microsite?</h3>
+<p>No. Most projects work well as pages on the developer's main site, where buyers can also see completed projects, plus focused landing pages for ad campaigns. A separate microsite makes sense for a large launch with its own brand and budget.</p>
+<h3>Do I need to show the RERA number on a project microsite?</h3>
+<p>For a registered project, RERA generally requires advertisements to show the registration number and the state RERA website, and a website is generally treated as advertising. Check your state authority's current rules, as some add requirements such as a QR code.</p>
+<h3>Should a project microsite have its own domain?</h3>
+<p>Only if the project is marketed as a brand in its own right. A page or section on the main site benefits from the site's existing search history, while a new domain starts from nothing and needs its own renewals and upkeep.</p>
+<h3>What is the difference between a microsite and a landing page?</h3>
+<p>A landing page is a single page built for one campaign, with one goal and no distractions. A microsite is a small multi-page site for the whole project, covering plans, amenities, location, updates and more.</p>
+<h3>What should happen to the microsite after the project sells out?</h3>
+<p>Redirect it to the project's page on the main site, which becomes a completed-project showcase, and keep the domain renewed so old brochures, QR codes and links still lead somewhere useful.</p>
 
-<h2>Track campaigns</h2>
-<p>Track form submissions, calls and WhatsApp clicks by campaign; see <a href="/blog/ga4-events-explained/">GA4 events</a>.</p>
-
-<p>For the full developer website, see <a href="/blog/real-estate-website-must-have-features/">real estate website must-have features</a>.</p>
+<p>Launching a project? My <a href="/real-estate-website-design/">real estate website design</a> service builds project pages with floor plans, location maps, RERA details, gated brochures and site-visit forms that your team can update, and <a href="/landing-page-design/">landing page design</a> covers fast, focused pages for each ad campaign, with conversion tracking set up.</p>
 `,
   },
   {
@@ -24449,55 +24933,138 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'hostinger-business-email-setup',
-    seoTitle: 'Set Up Business Email on Hostinger (With Your Domain)',
-    title: 'How to Set Up Business Email on Hostinger with Your Own Domain',
-    description: 'Set up business email on Hostinger with your domain: Hostinger email vs Google Workspace or Zoho, MX, SPF, DKIM and DMARC records, phones and form emails.',
+    seoTitle: 'Hostinger Business Email Setup: Mailboxes, DNS and SMTP',
+    title: 'How to Set Up Business Email on Hostinger With Your Own Domain: Mailboxes, DNS Records, Phone Apps and WordPress Forms',
+    description: 'Set up Hostinger business email on your domain: create mailboxes in hPanel, add MX, SPF, DKIM and DMARC, connect phones and Outlook, and fix form emails.',
     date: '2026-09-28',
+    updated: '2026-10-15',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'website-for-startups'],
     body: `
-<p>An address like info@yourbusiness.com looks far more professional than a Gmail address, and it builds trust with customers. If your website is on Hostinger, you can set up business email in a few steps. Getting the DNS records right is what makes sure your emails actually arrive.</p>
+<p>To set up business email on Hostinger, create the mailbox in hPanel's Emails section, make sure your domain's MX, SPF, DKIM and DMARC records point at Hostinger, then sign in through webmail or add the account to your phone or Outlook using IMAP and SMTP. If your website runs on WordPress, send its form emails through that mailbox with an SMTP plugin, so enquiries reach your inbox rather than spam.</p>
+<p>An address like info@yourbusiness.in looks more trustworthy than a Gmail address, but only if mail actually arrives. On my <a href="/wordpress-website-development/">WordPress website development</a> projects, forms are tested before launch to make sure their emails arrive, and a mailbox with missing DNS records is one of the common reasons they don't. Hostinger changes its plans, limits and menu names from time to time, so treat the labels below as a guide at the time of writing and check hPanel for what your plan includes.</p>
 
-<h2>Choose your email provider</h2>
+<h2>Before you start</h2>
+<ul>
+  <li><strong>A domain</strong> you control, registered with Hostinger or elsewhere.</li>
+  <li><strong>An email plan.</strong> Some Hostinger hosting plans include mailboxes, sometimes for a limited period; others need a separate email plan. hPanel shows what you have.</li>
+  <li><strong>Where your DNS is managed.</strong> If the domain uses Hostinger's nameservers, hPanel can usually add the email records for you. If DNS sits with another registrar or Cloudflare, you add them there by hand.</li>
+  <li><strong>The addresses you need.</strong> Decide who needs a real mailbox and which addresses can simply forward to someone.</li>
+</ul>
+
+<h2>Hostinger email, Google Workspace or Zoho?</h2>
+<p>Hosting email is not the only option, and nothing stops your website being on Hostinger while your email runs elsewhere. A neutral comparison:</p>
 <table>
-  <thead><tr><th>Option</th><th>Good for</th></tr></thead>
+  <thead><tr><th>Option</th><th>Where you manage it</th><th>Suits</th><th>Worth knowing</th></tr></thead>
   <tbody>
-    <tr><td>Hostinger email</td><td>Budget-friendly, simple mailboxes managed in hPanel</td></tr>
-    <tr><td>Google Workspace</td><td>Teams that want the Gmail interface, Drive, Meet and strong spam filtering</td></tr>
-    <tr><td>Zoho Mail</td><td>Cost-effective business email with good features</td></tr>
+    <tr><td>Hostinger email</td><td>hPanel, with Hostinger's webmail</td><td>Small teams that want simple mailboxes next to their hosting</td><td>Check whether mailboxes are tied to your hosting plan, and what happens to them if you change host</td></tr>
+    <tr><td>Google Workspace</td><td>Google's admin console, with the Gmail interface</td><td>Teams that live in Gmail, Drive, Calendar and Meet</td><td>A subscription per user; your DNS still needs Google's MX, SPF and DKIM records</td></tr>
+    <tr><td>Zoho Mail</td><td>Zoho's admin console and apps</td><td>Businesses that want dedicated email, often alongside other Zoho tools</td><td>Plans and free tiers change, so compare current features</td></tr>
   </tbody>
 </table>
-<p>See <a href="/blog/business-email-options/">business email options compared</a>.</p>
+<p><a href="/blog/business-email-options/">Business email options compared</a> goes deeper, including Microsoft 365. The rest of this guide assumes you have chosen Hostinger.</p>
 
-<h2>Setting up Hostinger email</h2>
+<h2>Step 1: Create your mailboxes in hPanel</h2>
 <ol>
-  <li>In hPanel, open the Emails section and choose your domain</li>
-  <li>Create mailboxes such as info@, sales@ or your name</li>
-  <li>If your domain uses Hostinger's nameservers, the required DNS records are often added automatically; otherwise add them where your DNS is managed</li>
-  <li>Log in through webmail, or connect the mailbox to your phone and computer's mail apps</li>
+  <li>Log in to hPanel and open <strong>Emails</strong>, then choose your domain. If the domain isn't listed yet, hPanel prompts you to connect it.</li>
+  <li>Create the mailbox, such as name@yourbusiness.in, with a long, unique password.</li>
+  <li>Add more mailboxes for people who need their own inbox and sent folder.</li>
+  <li>For shared addresses such as info@ or sales@, consider a forwarder or alias that delivers to a real person's mailbox, rather than a shared login.</li>
+</ol>
+<p>Give each person their own mailbox. Shared passwords are hard to change when someone leaves, and you lose track of who sent what.</p>
+
+<h2>Step 2: Add the MX, SPF, DKIM and DMARC records</h2>
+<p>These DNS records decide whether your email is delivered, and whether other servers trust it:</p>
+<ul>
+  <li><strong>MX</strong> tells other mail servers where to deliver mail for your domain.</li>
+  <li><strong>SPF</strong> is a TXT record listing which services may send mail as your domain.</li>
+  <li><strong>DKIM</strong> publishes a key that lets receivers check your messages were signed by your provider and not altered.</li>
+  <li><strong>DMARC</strong> tells receivers what to do with mail that fails those checks, and where to send reports.</li>
+</ul>
+<p>If your domain uses Hostinger's nameservers, hPanel normally offers to set these up automatically. Otherwise, open hPanel's email DNS or configuration section, copy each record exactly, and add it where your DNS is managed. The values below are examples of the format only; use the exact values hPanel shows for your domain:</p>
+<pre><code>Type    Name                  Value (example only)                         Priority
+MX      @                     mx1.hostinger.com                            5
+MX      @                     mx2.hostinger.com                            10
+TXT     @                     v=spf1 include:_spf.mail.hostinger.com ~all
+CNAME   selector._domainkey   the DKIM target hPanel gives you
+TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</code></pre>
+<p>Three mistakes cause most problems:</p>
+<ul>
+  <li><strong>Two SPF records.</strong> A domain must have only one. If your website, a newsletter tool or Google Workspace also sends mail, merge their include entries into a single SPF record.</li>
+  <li><strong>Old MX records left behind</strong> from a previous provider, so some mail goes to the old server.</li>
+  <li><strong>Skipping DMARC.</strong> Start with p=none to collect reports, then tighten it once you are sure every legitimate sender passes.</li>
+</ul>
+<p>DNS changes can take from minutes to a few hours to spread, occasionally longer. <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a> covers what each record does in more detail.</p>
+
+<h2>Step 3: Check that mail flows both ways</h2>
+<ol>
+  <li>Send a message from your new address to a personal Gmail account, and reply to it.</li>
+  <li>In Gmail, open the message, choose <strong>Show original</strong> from the three-dot menu and check that SPF, DKIM and DMARC all say PASS.</li>
+  <li>Send to an Outlook or Yahoo address too, since each provider filters differently.</li>
+  <li>If anything fails or lands in spam, recheck the records in Step 2 before changing anything else.</li>
 </ol>
 
-<h2>The DNS records that matter</h2>
+<h2>Step 4: Webmail, phones and Outlook</h2>
+<p>You can read mail in Hostinger's webmail straight away; at the time of writing it opens from hPanel or at mail.hostinger.com. For phones and desktop apps, use IMAP, which keeps the mailbox on the server so your phone, laptop and webmail all show the same messages. POP downloads mail to one device and is best avoided.</p>
+<table>
+  <thead><tr><th>Setting</th><th>Typical Hostinger value (confirm in hPanel)</th></tr></thead>
+  <tbody>
+    <tr><td>Incoming server (IMAP)</td><td>imap.hostinger.com, port 993, SSL/TLS</td></tr>
+    <tr><td>Outgoing server (SMTP)</td><td>smtp.hostinger.com, port 465, SSL/TLS</td></tr>
+    <tr><td>Username</td><td>Your full email address</td></tr>
+    <tr><td>Password</td><td>The mailbox password</td></tr>
+  </tbody>
+</table>
 <ul>
-  <li><strong>MX:</strong> tells the internet where to deliver your email</li>
-  <li><strong>SPF:</strong> lists who is allowed to send email for your domain</li>
-  <li><strong>DKIM:</strong> adds a signature proving emails are genuine</li>
-  <li><strong>DMARC:</strong> tells receivers what to do with emails that fail checks</li>
+  <li><strong>Gmail app on Android or iPhone:</strong> add an account, choose <strong>Other</strong>, enter your address, pick IMAP, then enter the servers above.</li>
+  <li><strong>iPhone Mail:</strong> in Settings, add a mail account under <strong>Other</strong>, choose IMAP and enter the same details.</li>
+  <li><strong>Outlook on a computer:</strong> add an account, open the advanced options to set it up manually, choose IMAP and enter the servers and ports.</li>
 </ul>
-<p>Without SPF and DKIM, your emails are more likely to land in spam; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
+<p>Google has been phasing out Gmail on the web's option to fetch mail from other accounts, so don't build your setup around it. Use the Gmail app over IMAP, or forward mail if you only need to read it.</p>
 
-<h2>Website form emails</h2>
-<p>Configure WordPress to send form notifications through an authenticated mailbox (SMTP) instead of the server's default mail, so enquiries reliably reach your inbox; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+<h2>Step 5: Send WordPress form emails through your mailbox</h2>
+<p>By default WordPress sends mail through the server's PHP mail function, without proper authentication, and those messages often vanish or land in spam. Routing them through your Hostinger mailbox over SMTP fixes most of this:</p>
+<ol>
+  <li>Create a mailbox for the website, such as website@yourbusiness.in, or use an existing one.</li>
+  <li>Install one SMTP plugin, such as WP Mail SMTP, FluentSMTP or Post SMTP.</li>
+  <li>Enter smtp.hostinger.com, port 465 with SSL, authentication on, the full email address as the username and the mailbox password.</li>
+  <li>Set the <strong>From</strong> address to that same mailbox. Mail sent from one address but authenticated as another is a common reason for rejection.</li>
+  <li>In your form plugin, put the visitor's email in the <strong>Reply-To</strong> field, not the From field, so you can reply directly.</li>
+  <li>Send the plugin's test email, then submit your real contact form and check the inbox.</li>
+</ol>
+<p>Mailboxes have sending limits, so a busy store sending order emails may need a transactional email service instead. <a href="/blog/wordpress-not-sending-emails-smtp/">Fixing WordPress emails with SMTP</a> covers that choice, and <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a> covers the problems that aren't about email.</p>
 
-<h2>Careful when changing hosts or nameservers</h2>
-<p>Moving your website or DNS can break email if MX and other records aren't recreated. Always note your email records before making changes; see <a href="/blog/migrate-website-to-hostinger/">migrating to Hostinger</a>.</p>
-
-<h2>Good habits</h2>
+<h2>Switching providers or moving hosts</h2>
+<p>Email and website hosting are separate services, and most email disasters happen when one is changed without thinking about the other.</p>
 <ul>
-  <li>Strong, unique passwords for every mailbox</li>
-  <li>Shared addresses (info@, sales@) forwarded to the right people rather than shared logins</li>
-  <li>Remove mailboxes for people who leave</li>
+  <li><strong>Moving your email to Hostinger:</strong> create the mailboxes first, copy old mail across (with an import tool if hPanel offers one, or by adding both accounts to a desktop mail app and moving folders), then switch the MX and SPF records.</li>
+  <li><strong>Moving your website to Hostinger:</strong> note every existing DNS record before changing nameservers, or email hosted elsewhere stops arriving; see <a href="/blog/migrate-website-to-hostinger/">migrating a WordPress site to Hostinger</a>.</li>
+  <li><strong>Leaving Hostinger hosting but keeping the email:</strong> check whether your mailboxes are part of the hosting plan before cancelling it.</li>
 </ul>
+<p>Keeping email records intact during a move is part of my <a href="/wordpress-migration/">WordPress migration</a> service, and mailboxes are set up before the MX records change.</p>
+
+<h2>Good habits for business email</h2>
+<ul>
+  <li>A strong, unique password for every mailbox, stored in a password manager.</li>
+  <li>Forwarders for shared addresses, so nobody shares a login.</li>
+  <li>Delete or reset the mailboxes of people who leave, after forwarding or exporting what you need.</li>
+  <li>Track the email plan's renewal date, which may differ from the hosting and domain renewals.</li>
+  <li>If customers report receiving spam "from you", act quickly; see <a href="/blog/wordpress-site-sending-spam-emails/">hosting accounts sending spam emails</a>.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Is Hostinger business email free?</h3>
+<p>Some Hostinger hosting plans have included mailboxes, sometimes free for a limited period, while others need a paid email plan. Offers change often, so check what hPanel lists for your plan and when it renews.</p>
+<h3>What are Hostinger's IMAP and SMTP settings?</h3>
+<p>At the time of writing, IMAP is imap.hostinger.com on port 993 and SMTP is smtp.hostinger.com on port 465, both with SSL, using your full email address and mailbox password. Confirm them in hPanel's email configuration section.</p>
+<h3>Why are my Hostinger emails going to spam?</h3>
+<p>Usually a missing or duplicate SPF record, DKIM not set up, or no DMARC record. New domains also have little sending reputation, so avoid bulk mailing from a new mailbox. Check the Show original view in Gmail to see which test fails.</p>
+<h3>Can I use my Hostinger email in the Gmail app?</h3>
+<p>Yes. Add it as an "Other" account over IMAP in the Gmail app on Android or iPhone, and you can read and send as your business address alongside your personal Gmail.</p>
+<h3>Can my website be on Hostinger and my email on Google Workspace?</h3>
+<p>Yes. Point the MX records at Google, keep the website's A record pointing at Hostinger, and include both services in your single SPF record if the website sends mail too.</p>
+
+<p>Need a website whose forms reliably reach your inbox? Contact forms and WhatsApp buttons come with every site I build through <a href="/wordpress-website-development/">WordPress website development</a>, tested before launch so the emails arrive. If you are moving an existing site and its email to new hosting, see <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
   },
   {
@@ -25611,51 +26178,141 @@ function my_child_enqueue_styles() {
   },
   {
     slug: 'custom-gutenberg-blocks',
-    seoTitle: 'Custom Gutenberg Blocks: When and How to Build Them',
-    title: 'Custom Gutenberg Blocks: Give Editors On-Brand Components They Can\'t Break',
-    description: 'Custom Gutenberg blocks: when to build them over patterns or page builders, native React vs ACF blocks, editing experience, performance and maintenance.',
+    seoTitle: 'Custom Gutenberg Blocks: Patterns, ACF or Native Blocks?',
+    title: 'Custom Gutenberg Blocks for Agencies: Patterns, Synced Patterns, ACF Blocks or Native Blocks With block.json',
+    description: 'Custom Gutenberg blocks for agencies: when block patterns are enough, when to use ACF or native blocks with create-block, and how to lock the design.',
     date: '2026-09-28',
+    updated: '2026-10-15',
     category: 'Agencies',
     related: ['figma-to-wordpress', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
     body: `
-<p>The WordPress block editor comes with standard blocks like paragraphs, images and columns. Custom blocks add components designed for your site, such as a testimonial slider, pricing table or service card, that editors can drop in and fill with content while the design stays consistent.</p>
+<p>Custom Gutenberg blocks give your client's editors on-brand components, such as service cards, testimonials or call-to-action bands, that they fill with content while the design stays intact. There are four ways to build them, in rising order of effort: block patterns made from core blocks, synced patterns, ACF blocks rendered with PHP, and native blocks scaffolded with @wordpress/create-block and described in block.json. Start with patterns, and build custom blocks only when you need structured fields, dynamic data or markup that editors must not be able to change.</p>
+<p>For agencies, the right choice affects build time, quotes and how many "small change" requests come back after launch. When I build for agencies as a <a href="/wordpress-developer-for-agencies/">white-label WordPress developer</a>, sites are built with global styles and a clean structure in Elementor or the block editor, so clients can edit without breaking the layout. On a block theme build, the editing experience comes from locked patterns and custom blocks; it is one of the three build approaches compared on my <a href="/figma-to-wordpress/">Figma to WordPress</a> page. Here is how the options compare and when each makes sense.</p>
 
-<h2>Why custom blocks?</h2>
-<ul>
-  <li><strong>On-brand by default:</strong> editors fill in fields; the block handles the design</li>
-  <li><strong>Hard to break:</strong> no fiddling with spacing, fonts or columns</li>
-  <li><strong>Lean:</strong> only the code the component needs</li>
-  <li><strong>Reusable</strong> across pages</li>
-</ul>
-
-<h2>Patterns first, custom blocks second</h2>
-<p>Block patterns are pre-arranged groups of standard blocks, and they're quick to create. Use patterns when standard blocks can achieve the design. Build custom blocks when you need specific structure, behaviour or data that standard blocks can't provide.</p>
-
-<h2>Main approaches</h2>
+<h2>The four options at a glance</h2>
 <table>
-  <thead><tr><th>Approach</th><th>How it works</th><th>Good for</th></tr></thead>
+  <thead><tr><th>Option</th><th>Build effort</th><th>Editing experience</th><th>Best for</th><th>Watch out for</th></tr></thead>
   <tbody>
-    <tr><td>Native blocks</td><td>Built with WordPress's block API (block.json, JavaScript/React) and official build tools</td><td>Rich editing experiences and long-term projects</td></tr>
-    <tr><td>ACF blocks</td><td>Defined with Advanced Custom Fields (PRO), with fields in the sidebar and PHP templates for output</td><td>Faster development for PHP-focused teams</td></tr>
-    <tr><td>Block libraries</td><td>Third-party plugins with ready-made blocks</td><td>Common components without custom code</td></tr>
+    <tr><td>Block patterns</td><td>Low: arranged core blocks, saved as a file</td><td>Familiar core blocks; editors can change anything unless locked</td><td>Layouts that core blocks can achieve</td><td>Edits after insertion don't update other copies</td></tr>
+    <tr><td>Synced patterns</td><td>Low</td><td>Edit once, update everywhere; overrides allow some per-instance content</td><td>Repeated bands such as a site-wide call to action</td><td>Overrides support only some core blocks at the time of writing</td></tr>
+    <tr><td>ACF blocks</td><td>Medium: block.json plus a PHP template</td><td>Fields in the sidebar or inline, with a server-rendered preview</td><td>Structured components built by PHP-focused teams</td><td>Needs ACF PRO, so a licence dependency</td></tr>
+    <tr><td>Native blocks</td><td>Higher: JavaScript and React in the editor, PHP or saved HTML on the front end</td><td>The richest editing, with inline text and live previews</td><td>Long-lived products, complex interactions, no plugin dependency</td><td>Needs JavaScript build tooling and care when markup changes</td></tr>
   </tbody>
 </table>
+<p>Third-party block libraries are a fifth route for common components, but they add another vendor and rarely match a custom design exactly. <a href="/blog/wordpress-shortcodes-vs-blocks/">Shortcodes vs blocks vs page-builder widgets</a> covers why blocks are now the native format.</p>
 
-<h2>Designing a good block</h2>
+<h2>Block patterns: start here</h2>
+<p>A pattern is a saved arrangement of core blocks, such as a group with a heading, paragraph and buttons, that editors insert from the pattern library. In a theme, each pattern is a PHP file in the /patterns folder with a header comment, and WordPress registers it automatically:</p>
+<pre><code>&lt;?php
+/**
+ * Title: Call to action band
+ * Slug: agency-theme/cta-band
+ * Categories: call-to-action
+ */
+?&gt;
+&lt;!-- wp:group {"className":"cta-band","layout":{"type":"constrained"}} --&gt;
+&lt;div class="wp-block-group cta-band"&gt;
+  &lt;!-- wp:heading --&gt;
+  &lt;h2 class="wp-block-heading"&gt;Ready to start your project?&lt;/h2&gt;
+  &lt;!-- /wp:heading --&gt;
+  &lt;!-- wp:paragraph --&gt;
+  &lt;p&gt;Tell us what you need and get a fixed quote.&lt;/p&gt;
+  &lt;!-- /wp:paragraph --&gt;
+&lt;/div&gt;
+&lt;!-- /wp:group --&gt;</code></pre>
+<p>Patterns are quick to build and need no build step, and because they use core blocks, they survive a theme change as ordinary content. The trade-off is that once inserted, each copy is independent, and editors can restyle it freely unless you lock it.</p>
+
+<h2>Synced patterns and overrides</h2>
+<p>A synced pattern, called a reusable block in older WordPress versions, is one piece of content shown in many places: edit it once and every instance updates. That suits a site-wide call to action or a disclaimer. Pattern overrides, added in recent versions, let editors change specific content inside each instance, such as a heading or button text, while the layout stays synced. At the time of writing, overrides work only with certain core blocks, such as headings, paragraphs, images and buttons, so check the current support before designing around them.</p>
+
+<h2>ACF blocks: the quickest route for PHP teams</h2>
+<p>With Advanced Custom Fields PRO, a block is a block.json file, a field group and a PHP template. Editors fill in labelled fields, and the block renders on the server, so the front end is plain HTML. A minimal block.json looks like this:</p>
+<pre><code>{
+  "name": "acf/testimonial",
+  "title": "Testimonial",
+  "category": "text",
+  "acf": { "mode": "preview", "renderTemplate": "testimonial.php" },
+  "supports": { "anchor": true, "align": false }
+}</code></pre>
+<p>You register it with register_block_type pointing at the block's folder, then assign an ACF field group to that block. ACF blocks suit agencies whose developers are comfortable in PHP, components driven by structured fields, and sites already using ACF for <a href="/blog/custom-post-types-fields/">custom post types and fields</a>. The cost is a dependency on an ACF PRO licence, which should be held in the client's name, and an editing experience that is less fluid than a native block's.</p>
+
+<h2>Native blocks with @wordpress/create-block</h2>
+<p>Native blocks are built with WordPress's own block API. The official scaffolding tool sets up the folder, block.json and build scripts in one command:</p>
+<pre><code>npx @wordpress/create-block@latest service-card --variant dynamic
+cd service-card
+npm start</code></pre>
+<p>Everything WordPress needs to know about the block lives in block.json, which lets WordPress load the block's scripts and styles only on pages that use it:</p>
+<pre><code>{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "agency/service-card",
+  "title": "Service card",
+  "category": "design",
+  "attributes": {
+    "heading": { "type": "string" },
+    "summary": { "type": "string" }
+  },
+  "supports": { "html": false, "color": { "background": true, "text": false } },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}</code></pre>
+<p>The editor side is written in React. The front end is either saved as static HTML in the post content or, as here, rendered by PHP on each request. Dynamic rendering means you can change the markup later without "invalid block" warnings on existing content:</p>
+<pre><code>&lt;div &lt;?php echo get_block_wrapper_attributes(); ?&gt;&gt;
+  &lt;h3&gt;&lt;?php echo esc_html( $attributes['heading'] ?? '' ); ?&gt;&lt;/h3&gt;
+  &lt;p&gt;&lt;?php echo esc_html( $attributes['summary'] ?? '' ); ?&gt;&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+<p>Native blocks give the best editing experience, with text typed directly into the block, live previews and toolbar controls, and they depend on nothing but WordPress. For front-end behaviour such as tabs or filters, the Interactivity API, added in WordPress 6.5, is the recommended approach. The cost is JavaScript tooling, a steeper learning curve and more care when a block's structure changes.</p>
+
+<h2>Stopping editors from breaking the design</h2>
+<p>"Blocks they can't break" is usually the real requirement. WordPress gives you several levers, and most projects use a combination:</p>
 <ul>
-  <li>Start from the design system: components in Figma map to blocks</li>
-  <li>Keep editor options minimal and clearly labelled</li>
-  <li>Show a realistic preview in the editor</li>
-  <li>Make output accessible: headings, alt text, keyboard support</li>
+  <li><strong>theme.json settings</strong> that remove custom colours, gradients and font sizes, so editors choose only from the brand palette and type scale.</li>
+  <li><strong>Block supports</strong> in block.json, enabling only the controls a block needs.</li>
+  <li><strong>Locking</strong> so key blocks can't be moved or removed, and template locks on inner blocks so a card's structure stays fixed while its text is editable.</li>
+  <li><strong>Allowed blocks</strong> lists that hide blocks editors don't need.</li>
+  <li><strong>Sensible user roles,</strong> with Editors for content staff and Administrator access kept to a few people.</li>
+</ul>
+<pre><code>{
+  "version": 3,
+  "settings": {
+    "color": { "custom": false, "customGradient": false, "defaultPalette": false },
+    "typography": { "customFontSize": false }
+  }
+}</code></pre>
+
+<h2>Which should an agency choose?</h2>
+<ol>
+  <li><strong>Marketing site, layouts achievable with core blocks:</strong> patterns with theme.json restrictions. Quickest to build and hand over.</li>
+  <li><strong>A component repeated identically across the site:</strong> a synced pattern.</li>
+  <li><strong>Structured components, such as team members, specifications or pricing tables, built by a PHP team:</strong> ACF blocks.</li>
+  <li><strong>A design system used across many client sites, complex interactions or a product you'll maintain for years:</strong> native blocks, kept in a shared plugin.</li>
+  <li><strong>Content that is really data,</strong> such as listings or case studies shown in several places: a custom post type with fields and a template, not a block on each page.</li>
+</ol>
+<p>If the client wants to drag layouts around freely, a page builder may suit them better; <a href="/blog/figma-to-wordpress-approaches/">Elementor, block theme, Bricks or custom theme</a> compares the build approaches, and <a href="/blog/block-themes-full-site-editing/">block themes and full site editing</a> explains where custom blocks fit in a block theme.</p>
+
+<h2>Performance, maintenance and handover</h2>
+<ul>
+  <li><strong>Keep custom blocks in a plugin,</strong> not the theme, so content still renders if the theme changes; <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a> covers structuring one.</li>
+  <li><strong>Load assets per block</strong> through block.json, rather than one large stylesheet on every page.</li>
+  <li><strong>Plan for change:</strong> prefer dynamic rendering for blocks whose markup may evolve, and add deprecations when a static block's saved HTML changes.</li>
+  <li><strong>Use version control</strong> and a staging site, and test blocks against new WordPress releases before updating production.</li>
+  <li><strong>Document each block</strong> for the client: what it's for, its fields and where it's used. The <a href="/blog/agency-developer-handoff-checklist/">agency handoff checklist</a> covers what to agree with your developer.</li>
 </ul>
 
-<h2>Performance</h2>
-<p>Load each block's CSS and JavaScript only on pages that use it. WordPress supports this when blocks are registered properly.</p>
+<h2>FAQs</h2>
+<h3>Do I need React to build custom Gutenberg blocks?</h3>
+<p>For native blocks, the editor side is written in JavaScript, usually React. Patterns need no JavaScript, and ACF blocks let you build with PHP templates and ACF fields instead.</p>
+<h3>Are ACF blocks slower than native blocks?</h3>
+<p>On the front end, both can output clean HTML, so the difference is usually small when built well. ACF blocks render previews through the server in the editor, which can feel slightly less immediate for editors.</p>
+<h3>What happened to reusable blocks?</h3>
+<p>They were renamed synced patterns in WordPress 6.3. They work the same way, and pattern overrides now allow some content to differ per instance.</p>
+<h3>Should custom blocks live in the theme or a plugin?</h3>
+<p>A plugin, in most cases. Blocks hold content, and keeping them in a plugin means that content still displays properly if the client changes theme later.</p>
+<h3>Can custom blocks be built from a Figma design system?</h3>
+<p>Yes. Figma components usually map well to patterns or custom blocks, and Figma colour and text styles map to theme.json settings, so the build stays faithful to the design.</p>
 
-<h2>Maintenance</h2>
-<p>Keep blocks in a plugin (not only the theme) if content should survive a theme change, and use version control. Changing a block's structure later needs care so existing content still displays correctly.</p>
-
-<p>Custom blocks are a key part of <a href="/blog/block-themes-full-site-editing/">custom block themes</a>. Need them built from your designs? See <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+<p>Need block editor builds, patterns or custom blocks delivered under your agency's brand? As your <a href="/wordpress-developer-for-agencies/">white-label WordPress developer</a>, I work under NDA with a fixed quote per project, and sites are built with global styles and clean structure so your clients can edit them safely. For designs already in Figma, see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
 `,
   },
   {
