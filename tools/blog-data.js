@@ -5955,68 +5955,129 @@ Additional headers: Reply-To: [your-email]</code></pre>
   },
   {
     slug: 'website-for-travel-agencies',
-    seoTitle: 'Websites for Travel Agencies & Tour Operators',
-    title: 'Websites for Travel Agencies and Tour Operators: Turning Browsers Into Bookings',
-    description: 'Travel agency websites that sell: tour package pages, itineraries, enquiry and booking flows, trust signals, content marketing and SEO for tour operators.',
+    seoTitle: 'Travel Agency Website: Tour Packages and Trip Enquiries',
+    title: 'Websites for Travel Agencies and Tour Operators: Package Pages, Itineraries, Custom Trip Enquiries, WhatsApp and Trust',
+    description: 'Plan a travel agency website: package pages with day-by-day itineraries, a custom trip enquiry form, WhatsApp quotes, advance payments and trust signals.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['wordpress-website-development', 'hotel-website-design', 'landing-page-design'],
     body: `
-<p>Travellers dream and research online long before they book. A travel agency or tour operator website should inspire them, answer their practical questions and make enquiring or booking effortless.</p>
+<p>A travel agency website has to inspire people early in their planning and then make it easy to ask for a quote. Travellers want to see what a trip actually involves day by day, what is included, roughly what it costs and whether the agency is genuine. The sites that convert give every package a full page with a day-by-day itinerary, make a customised trip enquiry form the main action, follow up quickly on WhatsApp with a written quote, take advances through a proper payment link, and state registrations and memberships only where they are genuinely held.</p>
+<p>I build websites for hotels, resorts, homestays and travel businesses, with booking enquiry forms, WhatsApp booking buttons, photo and video galleries, guest reviews and travel SEO; see my <a href="/hotel-website-design/">hotel and travel website design</a>. This guide covers what is specific to travel agencies and tour operators selling holiday packages, group tours, pilgrimages and custom trips. Guides selling single walks and experiences have different needs; see <a href="/blog/website-for-tour-guides-heritage-walks/">websites for tour guides and heritage walks</a>.</p>
 
-<h2>Package pages that sell</h2>
-<p>Each tour or package deserves its own page with:</p>
+<h2>Packages, group tours or custom trips?</h2>
+<table>
+  <thead>
+    <tr><th>Type</th><th>How it sells</th><th>Booking flow</th><th>Watch out for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Ready packages</td><td>A set itinerary at a "starting from" price, adjusted for dates and hotels</td><td>Enquire, receive a quote, pay an advance</td><td>Prices that change by season and hotel availability</td></tr>
+    <tr><td>Fixed-departure group tours</td><td>Set dates, a set price and a limited number of seats</td><td>Can be booked online with an advance</td><td>Showing seats left accurately, and minimum group sizes</td></tr>
+    <tr><td>Customised trips</td><td>Built around the traveller's dates, budget and interests</td><td>Detailed enquiry, a draft itinerary, revisions, then an advance</td><td>Slow replies and long back-and-forth</td></tr>
+  </tbody>
+</table>
+<p>Most Indian agencies sell all three. Packages and group tours show what you can do and attract searches; custom trip enquiries are often where the bookings come from.</p>
+
+<h2>Package pages that answer everything</h2>
+<p>Every package needs its own page, written by you rather than copied from a supplier. A traveller comparing three agencies will choose the one that answers their questions without a phone call:</p>
 <ul>
-  <li>Beautiful, fast-loading photos</li>
-  <li>A day-by-day itinerary</li>
-  <li>What's included and excluded (hotels, meals, transfers, sightseeing)</li>
-  <li>Price per person or "starting from", and available dates</li>
-  <li>Cancellation and payment terms</li>
-  <li>A clear "Enquire" or "Book now" button, plus WhatsApp</li>
+  <li><strong>A clear title:</strong> destination, duration and departure city, such as "Kerala Backwaters and Munnar, from Pune"</li>
+  <li><strong>Day-by-day itinerary:</strong> where you go, what you see and realistic travel times between places</li>
+  <li><strong>Hotels:</strong> named hotels or a hotel category with "or similar", and the room type</li>
+  <li><strong>Meals and transfers:</strong> the meal plan, the vehicle type and whether transfers are private or shared</li>
+  <li><strong>Inclusions and exclusions:</strong> entry tickets, guides, permits, flights or trains, tips, insurance</li>
+  <li><strong>Price basis:</strong> per person on twin sharing or per couple, "starting from", which dates it applies to and whether taxes are included</li>
+  <li><strong>Payment and cancellation terms</strong> in plain language</li>
+  <li><strong>Important notes:</strong> weather, fitness or altitude, ID and permit requirements</li>
+  <li><strong>An "Enquire about this trip" button</strong> and WhatsApp with the package name pre-filled</li>
+</ul>
+<p>Organise packages the way people browse: by destination (domestic and international), by trip type (honeymoon, family, pilgrimage, adventure, corporate, school trips) and by duration. Adventure and trekking operators need extra detail on safety and fitness; see <a href="/blog/website-for-trekking-adventure-operators/">websites for trekking and adventure operators</a>.</p>
+
+<h2>Itinerary content that ranks and sells</h2>
+<p>Travellers research for weeks before they book, and they search with questions: "best time to visit Ladakh", "5 day Rajasthan itinerary", "how to reach Kedarnath", "Char Dham yatra package from Mumbai". Guides that answer these honestly bring people to your site long before they are ready to enquire:</p>
+<ul>
+  <li>Destination guides covering when to go, how to get there, how many days to allow and what to see</li>
+  <li>Sample itineraries for different trip lengths, each linked to the matching package</li>
+  <li>Permit and entry information for regions that need it, with a note to check the current rules and links to official sources</li>
+  <li>Festival and pilgrimage guides tied to dates in the calendar</li>
+  <li>Packing lists and practical tips from your own trips</li>
+</ul>
+<p>Pilgrimage travel is a strong niche. <a href="/work/our-temples/">Our Temples</a>, a temple directory and travel guide I built, gives every temple page a travel block covering the nearest airport, bus, train, taxi and parking, alongside opening hours and festivals, and publishes festival guides that gather temples for an occasion. A pilgrimage tour operator can use the same structure for its yatra pages.</p>
+
+<h2>A customised trip enquiry form</h2>
+<p>For most agencies, this form is the most important thing on the site. Ask what you need to send a first quote, and no more:</p>
+<ul>
+  <li>Destination or "help me choose", and the trip type</li>
+  <li>Travel dates or month, and whether they are flexible</li>
+  <li>Number of nights and the departure city</li>
+  <li>Travellers: adults, children with ages, and senior citizens</li>
+  <li>Hotel category and a budget range per person</li>
+  <li>Special requirements, such as mobility needs or food preferences</li>
+  <li>A phone number for WhatsApp</li>
+</ul>
+<p>A two or three step form keeps this manageable on a phone; see <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms for lead qualification</a>. Don't ask for passport or ID copies on a public form. Collect them later through a secure process, only when a booking needs them.</p>
+
+<h2>WhatsApp, quotes and advance payments</h2>
+<p>Many travellers would rather message than fill in a form, and almost every Indian travel booking passes through WhatsApp at some point. A button on every package page that opens WhatsApp with the package name already typed means your reply can start with dates and availability; <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your business website</a> covers buttons and tracking.</p>
+<p>Send quotes as a clear written itinerary with inclusions, exclusions, price and terms, not just a figure in a chat. To confirm, send a payment link for the advance through a payment gateway, so travellers can pay by UPI, card or net banking to your business account, and the confirmation repeats the trip, dates, amount paid, balance due and cancellation terms. <a href="/blog/accept-online-payments-wordpress-india/">Accepting online payments on WordPress in India</a> compares the options. Tax on tour packages, especially international ones, has its own rules, so ask your CA how taxes should appear on quotes and invoices.</p>
+
+<h2>Trust signals and registrations</h2>
+<p>Travel is paid for in advance, often in large amounts, and fake travel agents are a real problem. Travellers look for proof that you are genuine:</p>
+<ul>
+  <li><strong>Registrations and memberships only if genuinely held:</strong> such as Ministry of Tourism recognition, state tourism registration, IATA accreditation for ticketing, or membership of an association such as TAAI. Show the membership or registration number and link to the body's own directory so travellers can verify it. Don't use any body's logo unless you are entitled to</li>
+  <li><strong>A real office:</strong> address, photos and a map, plus GST details</li>
+  <li><strong>The people:</strong> founders and trip planners, with the destinations they know first-hand</li>
+  <li><strong>Reviews from real travellers,</strong> ideally your Google reviews, and traveller photos shared with permission</li>
+  <li><strong>Clear policies:</strong> cancellation, refunds, changes and what happens if a supplier cancels</li>
+  <li><strong>Payments only to your business account,</strong> with a note warning travellers never to pay personal accounts claiming to be you</li>
+  <li><strong>Support during the trip:</strong> an emergency contact number while travellers are away</li>
 </ul>
 
-<h2>Organise the way travellers browse</h2>
+<h2>Trip types that need their own pages</h2>
 <ul>
-  <li>By destination (domestic and international)</li>
-  <li>By type: honeymoon, family, adventure, pilgrimage, corporate, group tours</li>
-  <li>By duration and budget</li>
+  <li><strong>Pilgrimages:</strong> yatra routes, seasons, fitness, senior-friendly options and darshan arrangements described accurately</li>
+  <li><strong>Honeymoons:</strong> privacy, hotel choices and what makes the trip special</li>
+  <li><strong>Corporate and group travel:</strong> offsites, incentive trips and conferences, with a group enquiry form</li>
+  <li><strong>School and college trips:</strong> supervision, safety and itineraries suited to students</li>
+  <li><strong>International trips:</strong> visa guidance in general terms, with travellers directed to official sources for current requirements</li>
 </ul>
+<p>If you also run vehicles for group tours, <a href="/blog/website-for-tempo-traveller-bus-rental/">websites for tempo traveller and bus rental operators</a> covers fleet pages and route enquiries.</p>
 
-<p>Guides who sell single walks and local experiences rather than packages need a slightly different setup; see <a href="/blog/website-for-tour-guides-heritage-walks/">websites for tour guides and heritage walk operators</a>.</p>
-
-<h2>Enquiry vs online booking</h2>
+<h2>Local search, campaigns and speed</h2>
 <ul>
-  <li><strong>Enquiry-based:</strong> best for customised trips. A short form (destination, dates, travellers, budget) plus fast WhatsApp follow-up.</li>
-  <li><strong>Online booking and payment:</strong> suits fixed-departure group tours and activities, with deposits or full payment through a gateway.</li>
+  <li>Use searches people make in titles: "tour packages from Pune", "{destination} tour package from {city}", "travel agency in Kothrud"</li>
+  <li>Keep a complete Google Business Profile for your office, with real photos and accurate hours</li>
+  <li>Run seasonal and festival campaigns on dedicated <a href="/landing-page-design/">landing pages</a>, one per destination or package</li>
+  <li>Compress destination photos so package pages load quickly on mobile data, and credit any photos you did not take</li>
+</ul>
+<p>If you also run accommodation, <a href="/blog/hotel-website-direct-bookings/">how hotels and homestays get more direct bookings</a> covers the property side.</p>
+
+<h2>Common mistakes on travel agency websites</h2>
+<ul>
+  <li>Package descriptions copied from suppliers, identical to dozens of other sites</li>
+  <li>Prices with no basis, dates or note on taxes</li>
+  <li>Itineraries with impossible travel times between places</li>
+  <li>Association logos displayed without membership</li>
+  <li>An enquiry form that asks for passport copies before anyone has spoken to you</li>
+  <li>No cancellation policy until after the advance is paid</li>
 </ul>
 
 <p>Running cabs and transfers too? See <a href="/blog/website-for-taxi-car-rental/">websites for taxi and car rental services</a>.</p>
 
-<h2>Build trust</h2>
-<ul>
-  <li>Registration, affiliations and years of experience (only what you can back up)</li>
-  <li>Genuine reviews and traveller photos</li>
-  <li>Clear contact details and office address</li>
-  <li>Transparent policies for cancellations and refunds</li>
-</ul>
+<h2>FAQs</h2>
+<h3>Should a travel agency show package prices?</h3>
+<p>A "starting from" price with its basis, dates and tax note helps travellers judge fit. Final prices depend on dates and hotel availability, so say that a detailed quote follows the enquiry.</p>
+<h3>Can travellers book and pay online?</h3>
+<p>Yes. Fixed-departure tours can take an advance online, and custom trips can be confirmed with a payment link for the advance, sent once the itinerary is agreed.</p>
+<h3>What should a custom trip enquiry form ask?</h3>
+<p>Destination, dates or month, nights, departure city, travellers with children's ages, hotel category, budget range and a WhatsApp number. That is enough for a first quote.</p>
+<h3>Should we mention IATA or TAAI on our website?</h3>
+<p>Only if you genuinely hold the accreditation or membership. Show the number and link to the body's directory so travellers can verify it.</p>
+<h3>Do destination guides really bring bookings?</h3>
+<p>They bring travellers early in their research and build trust. Link each guide to the matching packages and an enquiry form, so readers have somewhere to go when they are ready.</p>
 
-<h2>Content marketing works well in travel</h2>
-<p>Destination guides, "best time to visit" articles, packing lists and itinerary ideas attract travellers early in their research and build trust. Link each guide to relevant packages. Pilgrimage and temple travel content is a strong niche; the <a href="/work/our-temples/">Our Temples</a> directory shows how much demand there is for detailed temple information.</p>
-
-<p>Adventure specialists: see <a href="/blog/website-for-trekking-adventure-operators/">websites for trekking and adventure operators</a>.</p>
-
-<h2>SEO tips</h2>
-<ul>
-  <li>Target specific searches: "{destination} tour package from {city}", "honeymoon packages {destination}"</li>
-  <li>Unique descriptions for every package, never copied from suppliers</li>
-  <li>Fast image-heavy pages; see <a href="/blog/image-optimization-wordpress/">image optimization</a></li>
-  <li>Google Business Profile with reviews</li>
-</ul>
-
-<p>If you also run accommodation, read <a href="/blog/hotel-website-direct-bookings/">how hotels and homestays get more direct bookings</a>.</p>
-
-<h2>Campaign landing pages</h2>
-<p>Seasonal offers and ads perform best with dedicated landing pages for each package or destination; see <a href="/landing-page-design/">landing page design</a>. For accommodation businesses, see <a href="/hotel-website-design/">hotel website design</a>.</p>
+<p>Planning a travel agency website with package pages that answer everything, custom trip enquiries that reach you on WhatsApp and trust signals travellers can check? See <a href="/hotel-website-design/">hotel and travel website design</a> for how I plan and build them, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -8241,53 +8302,127 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-jewellers',
-    seoTitle: 'Websites for Jewellers: Build Trust and Sell Online',
-    title: 'Websites for Jewellers: Building Trust and Selling Online',
-    description: 'Websites for jewellers that build trust and sell online: quality product photos, certification and purity details, clear pricing, secure payments and SEO.',
+    seoTitle: 'Jewellery Website: Gold Rate Pricing and Selling Online',
+    title: 'Websites for Jewellers: Product Photography, Gold Rate Pricing, Hallmark Details, Store Appointments and Selling Online',
+    description: 'Plan a jewellery website: honest product photos, price by weight with making charges, a gold rate you control, hallmark details, store visits and WooCommerce.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['woocommerce-developer', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
-<p>Jewellery is emotional and high-value, so trust is everything. Whether you sell online or use your website to bring customers into the store, it has to look premium and answer the practical questions buyers worry about.</p>
+<p>A jeweller's website has to earn trust before it can sell anything. Buyers want to see each piece clearly, understand exactly how the price is made up from weight, purity, making charges and stones, know that the purity is genuine, and be reassured about exchange, buyback and delivery. Most jewellers do best with a mix: an online store for lightweight and everyday pieces, and appointments, try-at-store reservations and WhatsApp video calls for bridal and high-value collections.</p>
+<p>WooCommerce suits jewellers well because it handles product attributes, variations, Indian payment gateways and GST invoices on a site you own. My <a href="/woocommerce-developer/">WooCommerce development</a> service covers the store foundations: product catalogue and categories, payment gateways such as Razorpay, PayU or Cashfree, cash on delivery and shipping rules, GST invoices and a fast mobile checkout. This guide covers what is specific to jewellery.</p>
 
-<h2>Show pieces beautifully</h2>
+<h2>Online store, catalogue or both?</h2>
+<table>
+  <thead>
+    <tr><th>Approach</th><th>Suits</th><th>How customers buy</th><th>Watch out for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Full online store</td><td>Silver, fashion jewellery, lightweight gold, studs and gifting pieces</td><td>Add to cart and pay online</td><td>Prices that change with the gold rate, insured shipping and returns</td></tr>
+    <tr><td>Catalogue with enquiry</td><td>Bridal sets, heavy gold, high-value diamond pieces</td><td>Enquire, reserve or book a visit, then buy in store</td><td>Slow replies lose interested buyers</td></tr>
+    <tr><td>Hybrid</td><td>Most family jewellers with a showroom</td><td>Smaller pieces online, larger pieces by appointment</td><td>Keeping stock in sync between store and website</td></tr>
+  </tbody>
+</table>
+<p>The hybrid approach lets the website take orders from people who are ready to buy, and bring the rest into your showroom, where most high-value jewellery is still sold.</p>
+
+<h2>Product photography that sells jewellery</h2>
+<p>Jewellery is small, reflective and detailed, so it is one of the hardest products to photograph, and one of the easiest to misrepresent.</p>
 <ul>
-  <li>Professional, well-lit photos from multiple angles, plus on-model shots for scale</li>
-  <li>Zoom to show detail and craftsmanship</li>
-  <li>Short videos showing sparkle and movement</li>
-  <li>Compressed images so pages stay fast; see <a href="/blog/image-optimization-wordpress/">image optimization</a></li>
+  <li><strong>Consistent setup:</strong> the same background and lighting for every piece, so the catalogue looks like one collection</li>
+  <li><strong>Several views:</strong> front, side, back, clasp and close-ups of stones and detailing</li>
+  <li><strong>Scale:</strong> on-model or on-hand shots, with dimensions and weight in the text, because a pendant can look far larger in a close-up</li>
+  <li><strong>True colour:</strong> yellow, rose and white gold should look as they do in the store; avoid editing that changes colour or hides flaws</li>
+  <li><strong>Short videos</strong> showing sparkle and movement for diamond and stone pieces</li>
+  <li><strong>Compressed images with zoom,</strong> so product pages stay fast on mobile data; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a></li>
+</ul>
+<p>Write a unique description for every piece: metal and purity, gross and net weight, stone details, size options, occasion and care. <a href="/blog/woocommerce-product-page-optimization/">WooCommerce product page optimisation</a> covers layouts that help buyers decide.</p>
+
+<h2>Pricing by weight: gold rate, making charges and transparency</h2>
+<h3>Show how the price is made up</h3>
+<p>Indian buyers are used to a price breakdown at the counter, and they trust a website more when it shows the same thing. On each gold or silver product page, list the metal weight, the purity, the rate per gram used, making charges (per gram or as a percentage, whichever you use), stone or diamond charges, and tax at the applicable rate. If you charge wastage separately, say so and explain it.</p>
+
+<h3>A gold rate from a source you control</h3>
+<p>Many jewellers want a "today's gold rate" box on the homepage. Take the rate from a source your store controls, such as a rate your staff enter in the dashboard each morning, or a rate feed you subscribe to with your own adjustment applied, rather than copying figures from another website. Show the purity it applies to and when it was last updated, and make the same rate drive product prices so the homepage and the cart never disagree.</p>
+<p>Decide what happens when the rate changes between adding to cart and paying. Common approaches are to recalculate at checkout, or to hold the price for a short window once payment starts. Whatever you choose, state it in your terms.</p>
+
+<h3>How this works in WooCommerce</h3>
+<p>Each product stores its net weight, purity and making charge as attributes or custom fields. A plugin or a small custom function then calculates the price from the current rate, so a rate update reprices the whole catalogue at once. Ring and bangle sizes can be set up as variations with their own weights. Pieces with a fixed price, such as silver or fashion jewellery, can sit alongside without any calculation. Dynamic pricing like this needs custom development, so ask for it to be quoted as a separate item, and test it carefully with the gateway in test mode before launch.</p>
+
+<h2>Purity, hallmarking and certificates</h2>
+<p>Purity is the question behind every jewellery purchase. Keep the wording accurate and checkable:</p>
+<ul>
+  <li>State purity in karats and fineness for every gold product, such as 22K or 18K, exactly as hallmarked</li>
+  <li>At the time of writing, BIS hallmarking with a unique HUID code applies to most gold jewellery sold in many districts of India, and buyers can verify a HUID through BIS's official app; check the current BIS rules for your district and products, and explain how buyers can verify what they buy</li>
+  <li>For diamonds and gemstones, mention a lab certificate only for pieces that have one, and name the lab on that product page</li>
+  <li>Describe lab-grown diamonds clearly as lab-grown, never in a way that could be mistaken for natural, and check the current rules on terminology</li>
+  <li>Don't use "certified", "pure" or "guaranteed" loosely; say what was certified, by whom</li>
 </ul>
 
-<h2>Answer the trust questions</h2>
+<h2>Appointments, reserve-to-try and video calls</h2>
+<p>For bridal and high-value pieces, the website's job is to start the conversation and bring the buyer into the store:</p>
 <ul>
-  <li><strong>Purity and certification:</strong> hallmarking, purity (for example 22K/18K), diamond and gemstone certifications where applicable</li>
-  <li><strong>Weight and price breakdown:</strong> metal weight, making charges, stone charges and taxes, if you sell online</li>
-  <li><strong>Exchange, buyback and return policies</strong>, clearly stated</li>
-  <li><strong>Secure delivery and insurance</strong> for online orders</li>
-  <li><strong>Store heritage</strong> and team, if you've been in business for years</li>
+  <li><strong>Book a store visit:</strong> date, time slot, occasion and the collection they want to see, so staff can prepare a tray. <a href="/blog/online-appointment-booking-website/">Online appointment booking</a> compares tools and reminders.</li>
+  <li><strong>Reserve to try in store:</strong> a button on product pages that holds a piece for a set period under your own policy</li>
+  <li><strong>WhatsApp video calls:</strong> many families shortlist bridal sets over a video call before travelling to the showroom</li>
+  <li><strong>Custom design enquiries:</strong> reference image upload, metal, budget range and the date they need it by</li>
+</ul>
+<p>Saree and ethnic wear stores serve the same wedding shoppers with similar video-call selling; see <a href="/blog/website-for-saree-ethnic-wear-stores/">websites for saree and ethnic wear stores</a>.</p>
+
+<h2>Policies that build trust: exchange, buyback, returns and delivery</h2>
+<ul>
+  <li><strong>Exchange and buyback:</strong> how old gold is valued, what is deducted and whether the policy differs for gold, diamonds and silver</li>
+  <li><strong>Returns for online orders:</strong> the window, the condition required and which items are not returnable, such as resized or engraved pieces</li>
+  <li><strong>Delivery:</strong> insured shipping, tamper-evident packaging, delivery against OTP or ID if your courier offers it, and what happens if a parcel is damaged</li>
+  <li><strong>Cash on delivery:</strong> usually limited for jewellery; set an order value cap or allow it only for low-value items; see <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery in WooCommerce</a></li>
+  <li><strong>Invoices and tax:</strong> a proper GST invoice for every order; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a></li>
+</ul>
+<p>Rules on PAN for high-value purchases and on cash payments also apply to jewellers, so ask your CA how your checkout and invoices should handle them. Payment gateways may set their own limits for high-value transactions, so check with yours before launch.</p>
+
+<h2>Collections and occasion pages</h2>
+<p>Organise the catalogue the way people shop and search:</p>
+<ul>
+  <li><strong>By category:</strong> rings, earrings, necklaces, bangles, chains, mangalsutras, pendants</li>
+  <li><strong>By metal and purity:</strong> 22K gold, 18K gold, diamond, platinum, silver</li>
+  <li><strong>By occasion:</strong> bridal, daily wear, festive, gifting, with seasonal pages for festivals such as Akshaya Tritiya and Dhanteras kept at a permanent address and updated each year</li>
+  <li><strong>Filters</strong> for weight range, price range and size once a category grows</li>
 </ul>
 
-<h2>Selling online vs driving store visits</h2>
+<h2>Security for a high-value store</h2>
+<p>A jewellery store is an attractive target for card skimmers and fake orders. Keep WordPress, the theme and plugins updated, use strong staff logins with limited roles, watch for unusual order patterns, and use a reputable payment gateway so card details never touch your server. The <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a> covers payments, card-testing bots and staff accounts.</p>
+
+<h2>Local SEO for jewellers</h2>
 <ul>
-  <li><strong>Online store:</strong> for everyday and lightweight pieces with clear pricing. WooCommerce can handle variable pricing and secure payment gateways; see <a href="/woocommerce-developer/">WooCommerce development</a>.</li>
-  <li><strong>Catalogue with appointments:</strong> for bridal and high-value collections, "book a store visit" or video consultation works well</li>
-  <li><strong>WhatsApp:</strong> many buyers want to ask about customisation or availability first</li>
+  <li>A complete Google Business Profile for each showroom, with real photos and accurate hours, including festival timings</li>
+  <li>Store pages for each branch, with directions, parking and the collections each one carries</li>
+  <li>Page titles using searches people make, such as "gold jewellery shop in Laxmi Road, Pune" or "bridal jewellery in {city}"</li>
+  <li>Product and JewelryStore structured data, and buying guides on purity, hallmarks and care written by your team</li>
+</ul>
+<p>If you also sell watches, <a href="/blog/website-for-watch-stores/">websites for watch stores</a> covers authorised dealer wording and warranties.</p>
+
+<h2>Common mistakes on jewellery websites</h2>
+<ul>
+  <li>Prices with no breakdown, or a homepage gold rate that does not match the cart</li>
+  <li>Photos edited so heavily that the piece looks different in store</li>
+  <li>Purity and certification claims with nothing to verify</li>
+  <li>No exchange or buyback policy, the first thing many buyers look for</li>
+  <li>Unlimited cash on delivery on high-value pieces</li>
+  <li>Huge image files that make product pages slow on mobile</li>
 </ul>
 
-<p>If you also sell watches, the same enquiry-led approach works, with extra care over dealer status and warranties; see <a href="/blog/website-for-watch-stores/">websites for watch stores</a>.</p>
+<h2>FAQs</h2>
+<h3>Can a jewellery website update prices with the daily gold rate?</h3>
+<p>Yes. Products store weight, purity and making charges, and prices are calculated from a rate your staff enter or a feed you control. Test the setup carefully and state what happens if the rate changes during checkout.</p>
+<h3>Should I sell gold jewellery online or only show a catalogue?</h3>
+<p>Many jewellers sell lightweight and everyday pieces online and keep bridal and heavy pieces by appointment. Start with the pieces that are easiest to ship and price, and expand from there.</p>
+<h3>What should I say about hallmarking on my website?</h3>
+<p>State purity exactly as hallmarked, explain how buyers can verify a HUID through official channels, and check the current BIS rules that apply to your products and district.</p>
+<h3>Is WooCommerce secure enough for a jewellery store?</h3>
+<p>It can be, with good hosting, regular updates, limited staff access and a reputable payment gateway that handles card details. Security is ongoing work, not a one-time setting.</p>
+<h3>Can customers book a showroom visit online?</h3>
+<p>Yes. A booking form with date, time, occasion and the collection they want to see helps your staff prepare, and a reserve-to-try button on product pages brings buyers in for a specific piece.</p>
 
-<h2>Collections and occasions</h2>
-<p>Organise by category (rings, necklaces, bangles), metal and occasion (bridal, festive, gifting, daily wear). Occasion pages match how people search and shop.</p>
-
-<h2>SEO for jewellers</h2>
-<ul>
-  <li>Target product and occasion searches: "gold bangles designs", "bridal jewellery in {city}"</li>
-  <li>Unique descriptions for each piece</li>
-  <li>A strong Google Business Profile with store photos and reviews</li>
-  <li>Buying guides on purity, certifications and care</li>
-</ul>
-
-<p>For store optimization, see <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a> and <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a>.</p>
+<p>Planning a jewellery website that shows the price breakdown buyers expect, sells everyday pieces online and books store visits for bridal collections? See <a href="/woocommerce-developer/">WooCommerce development</a> for how I build stores, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -8579,53 +8714,130 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-printing-packaging-companies',
-    seoTitle: 'Websites for Printing & Packaging Companies',
-    title: 'Websites for Printing and Packaging Companies: Getting More B2B Orders',
-    description: 'How printing and packaging companies win more B2B orders online: capability pages, samples, specifications, MOQs, quote calculators, file upload and SEO.',
+    seoTitle: 'Printing and Packaging Company Website: Catalogue and RFQs',
+    title: 'Websites for Printing and Packaging Companies: Product Catalogues, RFQs With Artwork Upload, MOQs and Samples',
+    description: 'Plan a printing or packaging company website: product and capability pages, RFQ forms with artwork upload, clear MOQs, dielines, sample requests and B2B trust.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
     body: `
-<p>Brands, startups and agencies searching for printing or packaging partners want to know quickly: can you make what I need, at my quantity, to my quality standard, and how fast? A clear website answers these and turns searches into quote requests.</p>
+<p>A printing or packaging company website should work like a catalogue and a quoting desk at the same time. Buyers, from a D2C startup ordering its first boxes to a procurement team re-sourcing labels, want to see quickly whether you make what they need, at their quantity and quality, and how to get a price. That means one page per product type with real samples, specifications, minimum order quantities and finishes, a request-for-quote form that accepts artwork files, clear artwork guidelines and a simple way to ask for samples.</p>
+<p>Packaging and print buyers behave like any B2B buyer: they shortlist suppliers online, then send RFQs to two or three. My <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a> are built for exactly that: product catalogues with specifications, quote request forms that accept drawings and files, brochure downloads and SEO for product keywords. This guide covers what is specific to printing and packaging.</p>
 
-<h2>Organise by product</h2>
-<p>Create a page for each product type, such as mono cartons, rigid boxes, corrugated boxes, labels, pouches, brochures and visiting cards. Each should include:</p>
+<h2>Who is buying, and what each buyer needs</h2>
+<table>
+  <thead>
+    <tr><th>Buyer</th><th>What matters most</th><th>Main action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>D2C brands and startups</td><td>Low MOQs, help with structure and artwork, samples, a look that sells on Instagram</td><td>Request samples or a quote for a small run</td></tr>
+    <tr><td>FMCG, food and pharma procurement</td><td>Capacity, consistency, quality systems, compliance and on-time supply</td><td>Send an RFQ with specifications, then audit the plant</td></tr>
+    <tr><td>Design and branding agencies</td><td>Finishes, colour accuracy, proofs and a printer who reads artwork carefully</td><td>Send files for a quote, ask about special finishes</td></tr>
+    <tr><td>E-commerce sellers</td><td>Shipping cartons and mailers that survive couriers, at a sensible cost</td><td>Quote for standard sizes in bulk</td></tr>
+    <tr><td>Local businesses</td><td>Commercial print such as brochures, menus, stationery and bags</td><td>Quick quote on WhatsApp</td></tr>
+  </tbody>
+</table>
+<p>The homepage can route these buyers with links to product types, industries served and a prominent "Request a quote" button.</p>
+
+<h2>A product catalogue organised the way buyers search</h2>
+<p>Buyers search for the product, not your company type: "rigid boxes manufacturer", "printed stand-up pouches", "mono carton printing", "custom labels for jars". Give each product type its own page, such as mono cartons, rigid and magnetic boxes, corrugated shipping cartons, mailer boxes, labels and stickers, flexible pouches and laminates, paper bags, sleeves and inserts, or brochures, catalogues and stationery for commercial print. On each page include:</p>
 <ul>
-  <li>Photos of real samples you've produced</li>
-  <li>Materials, sizes, finishes (matte, gloss, foil, embossing) and printing options</li>
-  <li>Minimum order quantities and typical lead times</li>
-  <li>Industries and uses (food, cosmetics, pharma, e-commerce)</li>
-  <li>A "Request a quote" button</li>
+  <li><strong>Real photos of work you produced,</strong> shown with the client's permission or with branding blurred</li>
+  <li><strong>Styles and constructions</strong> you make, such as tuck-end, crash-lock base, sleeve and tray or magnetic closure</li>
+  <li><strong>Materials</strong> you work with, such as board types, kraft, corrugated flutes, films or label stocks</li>
+  <li><strong>Print processes</strong> available in-house, such as offset, flexo, digital or gravure</li>
+  <li><strong>Finishes:</strong> matte or gloss lamination, spot UV, foil stamping, embossing, window patching</li>
+  <li><strong>MOQ and typical lead time,</strong> stated honestly, with what changes them</li>
+  <li><strong>Applications and industries:</strong> food, cosmetics, pharma, apparel, electronics or e-commerce</li>
+  <li><strong>A "Request a quote" button</strong> that carries the product name into the form</li>
+</ul>
+<p>Use family pages rather than a page per size: one rigid box page with all closures and sizes in a table beats dozens of near-identical pages. <a href="/blog/industrial-website-product-catalogue/">How to build a product catalogue website</a> covers category structure, spec tables and catalogue mode in WooCommerce in detail.</p>
+
+<h3>Capability pages that prove you make it yourself</h3>
+<p>Large buyers want to know what is in-house and what is outsourced. Name your machines and processes: printing presses with their colour count, die-cutting, lamination, foil stamping, pasting and folder-gluer lines, pre-press and plate-making, and quality checks. <a href="/work/vansh-group/">Vansh Group</a>, an electronics manufacturer whose website I built, names a tool room, power press machines, an SMT room and injection moulding machines instead of writing "state-of-the-art infrastructure". A printer listing its actual equipment and capacity earns the same trust.</p>
+
+<h2>RFQ forms with artwork upload</h2>
+<p>A print or packaging quote depends on many details, so a vague "Send enquiry" form produces days of back-and-forth. Ask for what your estimator needs:</p>
+<ul>
+  <li>Product type and style, filled in from the page the buyer was on</li>
+  <li>Dimensions with units, and whether they are internal or external</li>
+  <li>Quantity, ideally two or three quantity options so you can quote price breaks</li>
+  <li>Material or board preference, number of colours, and finishes</li>
+  <li>Inserts, windows or special features</li>
+  <li>Delivery city, required date and whether samples are needed first</li>
+  <li>An artwork or reference file upload, with the file types you accept, such as PDF, AI or CDR</li>
+  <li>Company name, contact details and an optional GSTIN last</li>
+</ul>
+<p>Artwork files are large. Set a sensible size limit, check file types, and send your team a secure link in the notification email rather than a huge attachment; if WordPress rejects big files, see <a href="/blog/increase-wordpress-upload-size-limit/">increasing the WordPress upload size limit</a>. A dropdown for the kind of job also helps: on Vansh Group's enquiry form, buyers choose the service they need, so each enquiry arrives tagged and goes straight to the right person. <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a> covers routing and follow-up.</p>
+
+<h2>MOQs and pricing, stated plainly</h2>
+<p>Minimum order quantities cause more lost enquiries than anything else, usually because they are hidden until the quote arrives. State the MOQ on each product page, explain briefly why it exists (plates, cutting dies and machine setup cost the same for small and large runs), and say if you offer digital short runs for startups. If prices depend on too many variables to publish, say so and list what drives the price: size, material, quantity, colours, finishes and inserts.</p>
+<p>Standard items are different. If you sell stock mailer boxes, labels in standard sizes or ready-made bags at fixed price tiers, a small online store can take those orders directly while everything custom goes through the RFQ; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+
+<h2>Artwork guidelines, dielines and proofs</h2>
+<p>Most production problems start with artwork. A downloadable guidelines page saves your pre-press team hours:</p>
+<ul>
+  <li>Accepted file formats and how to export them</li>
+  <li>CMYK or Pantone colours, and how you handle colour matching</li>
+  <li>Bleed, safe area and minimum line thickness, using the values your process needs</li>
+  <li>Fonts converted to outlines, images at print resolution, and barcodes at a scannable size</li>
+  <li>Space for mandatory label text, which the client is responsible for checking</li>
+</ul>
+<p>Offer dielines or templates for your standard box styles as downloads, so designers start with the right shape. Then explain your proof process: a digital proof, a hard proof or a pre-production sample, what approval means, who is responsible for spelling and regulatory text, and how much colour can vary between proof and press. Businesses printing T-shirts and merchandise face similar proof questions; see <a href="/blog/website-for-custom-tshirt-printing/">websites for custom T-shirt printing businesses</a>.</p>
+
+<h2>Sample requests</h2>
+<p>Packaging is tactile, and many buyers will not place a first order without holding something. Give samples their own page and form, and be clear about what you offer:</p>
+<ul>
+  <li><strong>Sample kits</strong> of past work showing materials and finishes</li>
+  <li><strong>Plain structural samples</strong> in the buyer's size, to test fit</li>
+  <li><strong>Printed prototypes</strong> before a bulk run</li>
+</ul>
+<p>Say whether samples are free or charged, whether charges are adjusted against the first order if that is your policy, and how long they take to dispatch.</p>
+
+<h2>Trust signals for B2B buyers</h2>
+<ul>
+  <li>Client logos and project examples only with written permission</li>
+  <li>Factory photos and short videos of real production, not stock images</li>
+  <li>Certifications you genuinely hold, such as ISO or FSC chain of custody, with certificate numbers and validity dates</li>
+  <li>For food and pharma packaging, compliance described accurately; check the current food-contact and packaging rules for your products rather than claiming "food grade" loosely</li>
+  <li>Sustainability claims only where specific and true: say which material is recyclable or recycled and how you know, and avoid vague "eco-friendly" labels</li>
+  <li>Your registered address, GST details and a company profile PDF buyers can forward internally</li>
 </ul>
 
-<p>If you print T-shirts, jerseys and merchandise rather than packaging, see <a href="/blog/website-for-custom-tshirt-printing/">websites for custom T-shirt printing businesses</a>.</p>
-
-<h2>Show your capability</h2>
+<h2>SEO for printing and packaging companies</h2>
 <ul>
-  <li>Machinery, capacity and in-house processes</li>
-  <li>Quality checks, certifications and food-grade or pharma compliance where applicable</li>
-  <li>Brands you've worked with, with permission</li>
-  <li>Sustainability options such as recycled materials and eco-friendly inks</li>
+  <li>Target product and use searches: "custom rigid boxes manufacturer in Pune", "printed pouches for spices", "corrugated boxes for e-commerce", "label printing in Bhosari"</li>
+  <li>Write a short introduction on each product page explaining options and how to choose, so it is more than a photo grid</li>
+  <li>Publish guides buyers search for: mono carton or rigid box, choosing a board, packaging for a new D2C brand, preparing print-ready artwork</li>
+  <li>Make catalogues and dieline PDFs findable with real text and descriptive file names; see <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs, brochures and catalogues</a></li>
+  <li>Keep your Google Business Profile accurate for walk-in commercial print customers</li>
+</ul>
+<p>Signage and LED board makers have a different buyer again; see <a href="/blog/website-for-signage-companies/">websites for signage companies</a>.</p>
+
+<h2>Common mistakes on printing and packaging websites</h2>
+<ul>
+  <li>One "Products" page with a gallery and no specifications</li>
+  <li>MOQs revealed only after the buyer has waited for a quote</li>
+  <li>A contact form that cannot accept artwork, so files arrive on scattered WhatsApp chats</li>
+  <li>Stock photos of packaging you did not make</li>
+  <li>"Food grade", "eco-friendly" or certification logos without anything to back them up</li>
+  <li>Large uncompressed images that make product pages crawl on mobile</li>
 </ul>
 
-<h2>Make quoting easy</h2>
-<ul>
-  <li>Quote forms asking for product, size, quantity, material, finish and delivery location</li>
-  <li>File upload for artwork and dielines</li>
-  <li>A sample request option</li>
-  <li>WhatsApp for quick questions</li>
-</ul>
-<p>For standard products, simple online ordering with fixed price tiers can work; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<h2>FAQs</h2>
+<h3>Should a packaging company show prices on its website?</h3>
+<p>For custom work, usually not, because price depends on size, material, quantity and finishes. Explain those factors and quote quickly. For standard items sold in fixed quantities, published price tiers or online ordering can work well.</p>
+<h3>Can customers upload artwork through the website?</h3>
+<p>Yes. A quote form can accept PDF, AI or CDR files with size limits and file-type checks, and send your team a secure link instead of a large attachment.</p>
+<h3>How do we handle small orders from startups?</h3>
+<p>State your MOQ clearly, and if you offer digital short runs or stock boxes with printed labels, give them their own page so small brands can find an option that fits.</p>
+<h3>Should we offer dielines and templates as downloads?</h3>
+<p>Yes, for your standard styles. Designers start with the correct shape, artwork arrives closer to print-ready, and the pages can be found by people searching for templates.</p>
+<h3>Can we sell some products online and quote the rest?</h3>
+<p>Yes. A WooCommerce catalogue can sell standard items at fixed prices and switch off purchasing for custom products, which show a quote button instead.</p>
 
-<p>If you make shop boards, LED letters and other signage rather than printed products and packaging, see <a href="/blog/website-for-signage-companies/">websites for signage and LED board companies</a>.</p>
-
-<h2>SEO for printing and packaging</h2>
-<ul>
-  <li>Target specific product searches: "custom rigid boxes manufacturer", "printed pouches for food"</li>
-  <li>Unique product pages with specifications and real photos</li>
-  <li>Guides on choosing materials, finishes and packaging for different products</li>
-</ul>
-<p>The approach mirrors other B2B sites; see <a href="/blog/industrial-website-product-catalogue/">building a product catalogue website</a> and <a href="/website-for-manufacturers/">manufacturer websites</a>.</p>
+<p>Planning a printing or packaging website with a proper product catalogue, RFQs that accept artwork and pages that prove your capability? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a> for how I plan and build them, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -15143,57 +15355,122 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-ev-dealers',
-    seoTitle: 'Websites for EV Dealers & Showrooms',
-    title: 'Websites for Electric Vehicle Dealers and Showrooms',
-    description: 'What EV dealers need online: model pages with range and charging info, test ride booking, cost-of-ownership explainers, subsidies and finance enquiries.',
+    seoTitle: 'EV Dealer Website: Model Pages, Test Rides and Charging Info',
+    title: 'Websites for Electric Vehicle Dealers and Showrooms: Model Pages, Test Rides, Charging, Subsidies and Service',
+    description: 'Plan an EV dealer website: model pages that explain range honestly, test ride booking, on-road price enquiries, charging and subsidy pages, and service booking.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design', 'website-for-solar-and-power-companies'],
     body: `
-<p>Electric vehicle buyers are often first-time EV owners with lots of questions: range, charging, battery life, running costs and service. A dealer website that answers those clearly wins test rides.</p>
+<p>An electric vehicle dealer's website has to do something a petrol showroom's site rarely does: teach. Many visitors are buying their first EV, so before they book a test ride they want to understand range, charging at home, battery life, warranty, running costs and subsidies. The sites that win those buyers give every model a page that explains these in plain words, take on-road price and test ride requests on WhatsApp, keep subsidy information linked to official sources, and make service and battery checks easy to book after the sale.</p>
+<p>This guide is for EV showrooms selling electric scooters, motorcycles, cars, three-wheelers or a mix, whether single-brand authorised dealers or multi-brand stores. If you want the site planned and built, see my <a href="/wordpress-website-development/">WordPress website development</a> service, which plans pages around what your buyers need to see and do, with enquiry forms, WhatsApp and on-page SEO and schema built in. Petrol bikes alongside EVs? <a href="/blog/website-for-two-wheeler-dealers/">Websites for two-wheeler dealers</a> covers model pages, finance and service for the whole showroom; this post covers what is different about selling electric.</p>
 
-<h2>Model pages</h2>
+<h2>What EV buyers want to know before they visit</h2>
+<table>
+  <thead>
+    <tr><th>Buyer question</th><th>Where to answer it</th><th>How to answer it honestly</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>How far will it go on a charge?</td><td>Each model page</td><td>The certified range as the manufacturer publishes it, labelled as such, plus what reduces it in daily riding</td></tr>
+    <tr><td>Can I charge it at home?</td><td>A charging guide page</td><td>What socket or charger is needed, typical home charging time from the manufacturer, and apartment parking questions</td></tr>
+    <tr><td>How long will the battery last?</td><td>Model pages and a warranty page</td><td>The battery warranty terms in the manufacturer's words, and how battery health is checked at service</td></tr>
+    <tr><td>Is it cheaper to run than petrol?</td><td>A running cost explainer or calculator</td><td>An estimate with every assumption shown, never a promised saving</td></tr>
+    <tr><td>Is there a subsidy?</td><td>A subsidies and incentives page</td><td>Links to current central and state sources, with a last-checked date</td></tr>
+    <tr><td>Who services it?</td><td>A service page</td><td>Your workshop, what is covered, booking and roadside help as the manufacturer provides it</td></tr>
+  </tbody>
+</table>
+<p>On the homepage, route people by need: "Electric scooters", "Electric cars", "Commercial EVs", "Book a test ride", "Charging guide" and "Book a service".</p>
+
+<h2>Model pages that explain, not just list</h2>
+<p>Pasting the brochure's specification list is not enough for a first-time EV buyer. For each model and variant, include:</p>
 <ul>
-  <li>Photos and colours</li>
-  <li>Range (with the testing basis noted), battery capacity, charging time, top speed</li>
-  <li>On-road price or starting price and variants</li>
-  <li>Key features and warranty</li>
-  <li>"Book a test ride" button</li>
+  <li><strong>Range, explained:</strong> the certified figure with its test basis noted, and a short line on what affects real range, such as speed, load, riding mode, terrain, traffic and temperature</li>
+  <li><strong>Battery:</strong> capacity, chemistry if the manufacturer states it, and whether the battery is fixed or removable</li>
+  <li><strong>Charging:</strong> home charging time and fast charging support, as published by the manufacturer, and whether a charger is included or sold separately</li>
+  <li><strong>Warranty:</strong> battery, motor and vehicle warranties listed separately, with conditions linked rather than paraphrased</li>
+  <li><strong>Variants and colours,</strong> with your own showroom photos alongside official images where you are allowed to use them</li>
+  <li><strong>Buttons:</strong> "Get on-road price", "Book a test ride" and WhatsApp</li>
+</ul>
+<p>Organise models by how people use them, not only by name: daily commuting, family riding, delivery work or cargo. <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a generator rental company I built a website for, groups its fleet into capacity bands, each with a page on typical uses and the questions that size raises. An EV range can be organised the same way, so a delivery rider and a college student each land on the models that suit them.</p>
+
+<h3>Low-speed scooters need precise wording</h3>
+<p>Some low-speed electric scooters are sold as not needing registration or a driving licence. If you sell them, describe each model's category exactly as the manufacturer's approval states, and check the current rules with your RTO, because buyers, and parents buying for teenagers, rely on what you write.</p>
+
+<h2>On-road prices and subsidies, handled carefully</h2>
+<p>EV prices move more than most: manufacturer revisions, changes to central and state incentives, registration and road tax rules that differ between states, insurance and accessories all affect what a buyer finally pays. Publishing a figure you cannot keep current leads to arguments at the counter.</p>
+<ul>
+  <li>Use a "Get on-road price" form asking for the model, variant, city or PIN code and when they plan to buy, and reply with an itemised quote on WhatsApp</li>
+  <li>If you show any price, label it clearly as ex-showroom, add a last-updated date and a note that it may change</li>
+  <li>On the subsidies page, explain in general terms that central and state schemes, and road tax or registration concessions in some states, may apply, then link to the official sources and say who to ask</li>
+</ul>
+<p>Subsidies change often, so tell buyers to check the current state and central schemes rather than relying on a figure from last year. For solar companies' subsidy pages, I link to the official portal and add a last-checked date to any figure shown; the same approach suits an EV showroom. My <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> cover subsidy information in more detail, and are relevant if you also sell rooftop solar or home chargers.</p>
+
+<h2>Test rides and test drives</h2>
+<p>For many first-time buyers, the test ride is where hesitation about range and power disappears. The booking form should ask for the model, a preferred date and time slot, and whether they want a showroom or home test ride, if you offer one. A home test ride has an extra advantage for EVs: your executive can look at where the vehicle would be parked and charged. Show which models are available to ride, ask riders to bring a valid licence where one is needed, and confirm on WhatsApp with a reminder on the day. <a href="/blog/online-appointment-booking-website/">Online appointment booking</a> compares tools for slot booking and reminders.</p>
+
+<h2>A charging guide page</h2>
+<p>"Where will I charge it?" is often the question that stops a sale. A dedicated charging page answers it once, properly:</p>
+<ul>
+  <li><strong>Home charging:</strong> what kind of socket or wall charger each model needs, and why an electrician should check the wiring first</li>
+  <li><strong>Apartments:</strong> charging in a basement or society parking usually needs the society's permission and a metered point; suggest buyers ask their society early</li>
+  <li><strong>Removable batteries:</strong> how charging indoors works for models that allow it</li>
+  <li><strong>Public charging:</strong> the manufacturer's charging network or app, if any, and how to find chargers nearby</li>
+  <li><strong>Charger installation:</strong> if you install home chargers, a short enquiry form for it</li>
+</ul>
+<p>If charging becomes a business of its own, <a href="/blog/website-for-ev-charging-stations/">websites for EV charging stations and charger installers</a> covers station pages and installation enquiries.</p>
+
+<h2>Running cost explainers and calculators</h2>
+<p>A running cost calculator comparing an EV with a petrol vehicle can help buyers, but only if it is honest. Show every assumption on the page: distance per day, electricity tariff, the vehicle's energy use and the petrol price used for comparison, and let visitors change them. Label every result as an estimate, and avoid headline claims such as a fixed saving per month. The calculator can pass the visitor's figures into the enquiry form, so your sales team sees them. <a href="/blog/website-calculators-lead-generation/">Website calculators for lead generation</a> explains how to build one.</p>
+
+<h2>Service, battery health and after-sales</h2>
+<p>EV buyers worry about service more than petrol buyers, because the technology is new to them. A service section should cover:</p>
+<ul>
+  <li>Online service booking with model, registration number, issue and preferred slot</li>
+  <li>Scheduled services as per the manufacturer's schedule, and what an EV service involves</li>
+  <li>Battery health checks and software updates, if your workshop provides them</li>
+  <li>Roadside assistance, as the manufacturer or your dealership provides it, with the number to call</li>
+  <li>Spares, accessories, helmets and chargers, even as an enquiry catalogue</li>
+</ul>
+<p>If you also service petrol vehicles or sell used ones, <a href="/blog/website-for-car-dealers-workshops/">websites for car dealers and workshops</a> covers used vehicle listings and workshop pages.</p>
+
+<h2>Commercial EVs and fleet buyers</h2>
+<p>E-rickshaw operators, delivery companies and businesses buying cargo three-wheelers or electric vans ask different questions: payload, daily range under load, charging during shifts, battery swapping where available, financing for several vehicles and service turnaround. Give them their own page and a fleet enquiry form asking for the use, number of vehicles, routes or daily distance and the city, rather than sending them through the retail test ride flow.</p>
+
+<h2>OEM brand guidelines and authorised status</h2>
+<p>If you are an authorised dealer, your agreement and the manufacturer's brand guidelines usually control the use of the brand name and logo, which official images and specifications you may use, and whether offers must be approved before publishing. Check them before the build. Don't publish a national offer that does not apply at your showroom, and if you are a multi-brand store, never imply you are authorised for a brand you simply stock.</p>
+
+<h2>Local search for EV showrooms</h2>
+<ul>
+  <li>Complete Google Business Profiles for the showroom and, if separate, the service centre</li>
+  <li>Use searches people actually type in page titles, such as "electric scooter showroom in Hadapsar" or "{brand} EV dealer in {city}"</li>
+  <li>Post new launches and test ride events on your profile, and ask real buyers for reviews after delivery</li>
+  <li>Run launch and festive campaigns on dedicated <a href="/landing-page-design/">landing pages</a>, and track calls and WhatsApp clicks</li>
 </ul>
 
-<h2>Answer EV questions</h2>
+<h2>Common mistakes on EV dealer websites</h2>
 <ul>
-  <li>Home charging vs public charging</li>
-  <li>Running cost compared with petrol, explained with clear assumptions</li>
-  <li>Battery warranty and replacement</li>
-  <li>Subsidies or incentives, with links to official sources, as these change</li>
-</ul>
-<p>Honest explainers build trust and attract searches.</p>
-
-<p>If you sell petrol motorcycles and scooters alongside electric models, see <a href="/blog/website-for-two-wheeler-dealers/">websites for two-wheeler dealers</a>.</p>
-
-<h2>Showroom and service</h2>
-<ul>
-  <li>Showroom location, hours and contact</li>
-  <li>Service centre details and booking</li>
-  <li>Spare parts and accessories</li>
+  <li>Range figures with no test basis, or "real range" claims nobody measured</li>
+  <li>Old subsidy amounts still on the site months after a scheme changed</li>
+  <li>Savings promised as fact rather than shown as an estimate</li>
+  <li>No charging information, so the biggest objection goes unanswered</li>
+  <li>Test rides offered on models that are not in the showroom</li>
+  <li>Brand logos and offers used outside the manufacturer's guidelines</li>
 </ul>
 
-<p>Buyers will also ask where they can charge, and some dealers install home chargers too; if charging is part of your business, see <a href="/blog/website-for-ev-charging-stations/">websites for EV charging stations and charger installers</a>.</p>
+<h2>FAQs</h2>
+<h3>Should an EV dealer show prices on the website?</h3>
+<p>Ex-showroom prices with a last-updated date can help, but on-road prices vary with state rules, incentives and insurance, so most dealers do better with a quick on-road price form answered on WhatsApp.</p>
+<h3>How should subsidy information be shown?</h3>
+<p>Explain in general terms which kinds of scheme may apply, link to the official central and state sources, and date any figure you show. Schemes change, so ask buyers to check the current position.</p>
+<h3>Can buyers book a test ride online?</h3>
+<p>Yes. A form with model, date, time slot and showroom or home test ride, confirmed on WhatsApp with a reminder, works well. Only list models you actually have available to ride.</p>
+<h3>Is a running cost calculator worth adding?</h3>
+<p>It can help hesitant buyers, as long as the assumptions are visible and editable and every result is labelled an estimate. Figures should come from you and the manufacturer, not guesses.</p>
+<h3>Can authorised dealers have their own website?</h3>
+<p>Usually, within the manufacturer's brand guidelines. Check your dealership agreement for rules on the domain name, logo use, official content and offers before you build.</p>
 
-<h2>Finance and exchange</h2>
-<p>EMI and exchange enquiry forms help buyers who are price-sensitive.</p>
-
-<h2>Campaigns</h2>
-<p>Launches and festive offers work best with dedicated landing pages and tracked enquiries; see <a href="/landing-page-design/">landing page design</a>.</p>
-
-<h2>Local SEO</h2>
-<ul>
-  <li>Target "{brand} electric scooter showroom in {city}" and "electric scooter dealer near me"</li>
-  <li>Google Business Profile with photos and reviews</li>
-</ul>
-
-<p>Related: <a href="/blog/website-for-car-dealers-workshops/">car dealers and workshops</a> and <a href="/blog/solar-company-website-guide/">solar company websites</a>.</p>
+<p>Planning a website for your EV showroom with model pages that explain range and charging, test ride booking and a subsidy page you can keep current? See <a href="/wordpress-website-development/">WordPress website development</a> for how I plan and build it, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -15501,49 +15778,125 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-recruitment-agencies',
-    seoTitle: 'Websites for Recruitment & Placement Agencies',
-    title: 'Websites for Recruitment and Placement Agencies',
-    description: 'Recruitment agency websites: separate paths for employers and candidates, industries and roles, job listings, CV upload, employer enquiries and SEO.',
+    seoTitle: 'Recruitment Agency Website: Jobs, CV Uploads and Employers',
+    title: 'Websites for Recruitment and Placement Agencies: Job Listings, CV Uploads, Employer Enquiries and Trust',
+    description: 'Plan a recruitment or placement agency website: job pages with JobPosting schema, safe CV uploads, employer hiring forms, ATS links and fraud warnings.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['wordpress-website-development', 'wordpress-seo-services', 'landing-page-design'],
     body: `
-<p>Recruitment agencies serve two audiences at once: employers who need hires and candidates who need jobs. A good website gives each a clear path and builds credibility with both.</p>
+<p>A recruitment or placement agency website has to do two jobs at once: convince employers that you can fill their roles, and give job seekers a trustworthy place to find openings and send a CV. The best agency sites split these into two clear journeys from the homepage, publish each live job as its own page that Google can read, handle CVs as the sensitive personal data they are, and make the employer enquiry form ask the questions your consultants need before the first call.</p>
+<p>This guide covers the pages, forms and integrations that matter for staffing firms, executive search consultants and placement agencies in India. If you would like it planned and built for you, my <a href="/wordpress-website-development/">WordPress website development</a> service covers exactly this kind of site: pages planned around what each visitor needs to do, contact forms and WhatsApp, on-page SEO and schema, and a site your team can update without a developer.</p>
 
-<h2>For employers</h2>
+<h2>Two audiences, two journeys</h2>
+<p>Most agency websites fail in the same way: one "Contact us" form that receives a hiring manager's urgent requirement and a fresher's CV in the same inbox, and a homepage that talks to neither. Start by writing down what each audience needs:</p>
+<table>
+  <thead>
+    <tr><th></th><th>Employers and HR teams</th><th>Candidates</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>What they want to know</td><td>Which roles and industries you hire for, how you work, how fast you shortlist and what it costs</td><td>Which jobs are open, whether they qualify, and whether you are genuine</td></tr>
+    <tr><td>Main action</td><td>Share a requirement or book a call</td><td>Apply for a job or register a CV</td></tr>
+    <tr><td>Key pages</td><td>Services, industries, process, client proof, hiring enquiry</td><td>Job listings, job pages, CV registration, fraud warning, career tips</td></tr>
+    <tr><td>What puts them off</td><td>Vague claims and no named specialisms</td><td>Expired jobs, requests for money and no physical address</td></tr>
+  </tbody>
+</table>
+<p>Put two clear buttons near the top of the homepage, such as "Hire talent" and "Find a job", and keep that split in the main menu. Separate forms send each enquiry to the right person. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, an interior design studio I built a site for, uses the same principle in a different field: design partners apply through their own page and form, so partner enquiries never get mixed up with homeowners asking for quotes.</p>
+
+<h2>Pages for the employer side</h2>
 <ul>
-  <li>Industries and roles you specialise in</li>
-  <li>Hiring services: permanent, contract, bulk, executive search</li>
-  <li>Your process and typical timelines</li>
-  <li>Clients served and testimonials (with permission)</li>
-  <li>Hiring enquiry form: role, number of positions, location, timeline</li>
+  <li><strong>Services:</strong> permanent hiring, contract and temporary staffing, bulk or volume hiring, executive search, campus hiring, payroll or compliance support. Give each one a page only if you genuinely offer it, and explain how it works and who it suits.</li>
+  <li><strong>Industries and functions:</strong> pages such as IT and software, manufacturing and engineering, BFSI, healthcare, retail or warehousing. Name the roles you fill in each, in the terms hiring managers use.</li>
+  <li><strong>How you work:</strong> from requirement to shortlist, interviews, offer and joining, with what the employer receives at each step. If you offer a replacement period, state the conditions plainly.</li>
+  <li><strong>Proof:</strong> client logos and testimonials only with written permission, and short descriptions of the kind of mandates you handle. Never invent placement numbers or turnaround claims.</li>
+  <li><strong>Hiring enquiry:</strong> a form built for employers, covered below.</li>
 </ul>
 
-<h2>For candidates</h2>
+<h3>An employer enquiry form that qualifies the lead</h3>
+<p>Ask what a consultant needs before calling: company name, role title, number of positions, location, experience range, employment type (permanent, contract or bulk), expected joining date and an optional job description upload. A dropdown for the hiring service tells you whether the enquiry is a single senior search or a volume drive. A budget or salary band field can be optional; many employers prefer to discuss it on the call.</p>
+
+<h2>Job listings that candidates and Google can read</h2>
+<h3>One page per job</h3>
+<p>Each live opening should have its own page with a specific title ("Accounts Executive, Wakad, Pune" rather than "Urgent opening"), location, experience required, key responsibilities, qualifications, employment type, a salary range if the client allows it, a job reference number, the closing date and a clear Apply button. A listings page with filters for function, location and experience helps once you have more than a handful of roles, and a job alert sign-up gives candidates a reason to return.</p>
+
+<h3>JobPosting structured data</h3>
+<p>Google can show job openings in its own job search experience, where available, using JobPosting structured data on each job page. The markup includes the title, description, date posted, the hiring organisation, the location, the employment type and, where you can share it, the salary. Google's guidelines expect the page to describe one real, current opening that people can apply for, and filled or expired jobs to be removed or given an end date with validThrough. Confidential mandates need care: check Google's current guidance on how to describe the hiring organisation when you cannot name the client. <a href="/blog/schema-markup-explained/">Schema markup explained</a> covers how structured data works, and none of it guarantees that a job will appear.</p>
+
+<h3>Keep the job board honest</h3>
 <ul>
-  <li>Current job listings with filters (role, location, experience)</li>
-  <li>CV upload and profile registration</li>
-  <li>Interview and career tips</li>
-  <li>Clear statement of whether you charge candidates (many reputable agencies don't)</li>
+  <li>Remove or close jobs the day they are filled, and redirect the page to a related listing</li>
+  <li>Don't post the same role many times with small changes to fill the page</li>
+  <li>Don't publish "evergreen" adverts for jobs that don't exist just to collect CVs; if you want a talent pool, call it that</li>
 </ul>
 
-<h2>Protect candidates from fraud</h2>
-<p>Fake job offers asking for payment are common. A clear warning page, stating your real contact details and fee policy, protects candidates and your reputation.</p>
-
-<h2>Privacy</h2>
-<p>CVs contain personal data. Use secure forms and storage, limit access, and publish a privacy policy; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy basics</a>.</p>
-
-<h2>Job listing SEO</h2>
+<h2>CV uploads and candidate data</h2>
+<p>A CV contains a name, phone number, address, employment history and sometimes much more, so treat every upload as sensitive personal data. India's Digital Personal Data Protection Act expects businesses to collect personal data for a clear purpose, with notice and consent, and to protect it; <a href="/blog/dpdp-act-website-basics/">India's DPDP Act and your website</a> explains the basics, and your lawyer can confirm what applies to your agency as the rules take effect.</p>
 <ul>
-  <li>Each job as its own page with a clear title, location and description</li>
-  <li>Job posting structured data can help listings appear in job search features</li>
-  <li>Remove or mark filled jobs promptly</li>
+  <li><strong>Collect only what you need:</strong> name, phone, email, current role, experience, location and the CV. Leave Aadhaar, PAN, bank details and certificates until a later stage, and never on a public form.</li>
+  <li><strong>Consent line:</strong> say why you are collecting the CV, that you may share it with prospective employers for suitable roles, how long you keep it and how to ask for deletion.</li>
+  <li><strong>File handling:</strong> accept PDF and Word files only, set a size limit, and store uploads where they cannot be opened by a direct public link.</li>
+  <li><strong>Access:</strong> limit who can see CVs, give each consultant their own login, and avoid forwarding CVs around a shared email inbox.</li>
+  <li><strong>Retention:</strong> decide how long you keep unsuccessful applications and delete them on a schedule.</li>
 </ul>
 
-<h2>Content</h2>
-<p>Salary guides, hiring trends and interview tips attract both employers and candidates, if accurate and regularly updated.</p>
+<h2>Connecting the site to an ATS or CRM</h2>
+<p>Most agencies track candidates in an applicant tracking system, a CRM or a spreadsheet. The website should feed that system, not become a second database someone has to copy from.</p>
+<table>
+  <thead>
+    <tr><th>Approach</th><th>Good for</th><th>Watch out for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ATS careers widget or job feed embedded in the site</td><td>Agencies already using an ATS that offers one</td><td>Jobs shown inside a widget may not be readable by Google; check whether each job gets its own crawlable page</td></tr>
+    <tr><td>Job pages managed in WordPress, applications sent to the ATS by email or API</td><td>Agencies wanting job pages that rank, with their ATS kept as the master record</td><td>Two places to update unless jobs are synced</td></tr>
+    <tr><td>WordPress job pages with forms sent to a CRM or Google Sheet</td><td>Smaller agencies without an ATS</td><td>Access control and deletion become your responsibility</td></tr>
+  </tbody>
+</table>
+<p>Whichever you choose, test that every application arrives with its CV attached or linked, tagged with the job reference. <a href="/blog/connect-website-forms-to-crm/">Connecting WordPress forms to a CRM or Google Sheets</a> walks through the options.</p>
 
-<p>For the full site, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2>Fraud warnings and fee transparency</h2>
+<p>Fake job offers that use a real agency's name, then ask candidates for "registration" or "training" fees, are common. They damage your reputation even though you had nothing to do with them. Protect candidates, and yourself, with a short page linked from the footer and every job page:</p>
+<ul>
+  <li>State plainly whether you ever charge candidates, and if so, for what</li>
+  <li>List your official website, email domain, phone numbers and WhatsApp number, and say you never recruit through personal email addresses</li>
+  <li>Explain how to verify an offer, and how to report a suspicious one</li>
+</ul>
+<p>If you recruit for jobs abroad, Indian law generally requires recruiting agents for overseas employment to hold a registration from the Ministry of External Affairs, and some states regulate placement agencies, especially for domestic workers. Show any registration number only if you hold it, and check the current rules. Agencies that place nannies, cooks and caretakers face their own questions; see <a href="/blog/website-for-domestic-help-agencies/">websites for domestic help and caretaker placement agencies</a>.</p>
+
+<h2>Local SEO and content for recruitment agencies</h2>
+<p>Employers search for "recruitment agency in Pune" or "staffing company for warehouse staff in Chakan", and candidates search for "jobs in Hinjewadi" or "placement consultants near me". To be found for both:</p>
+<ul>
+  <li>A complete Google Business Profile for each office candidates can visit, with the same name, address and phone as the website</li>
+  <li>Industry pages, and city pages only where you genuinely recruit, each with real local roles and clients rather than copies with the city name swapped; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a></li>
+  <li>Guides for hiring managers, such as how to write a job description or plan a bulk hiring drive</li>
+  <li>Interview and CV advice for candidates, written by your consultants</li>
+  <li>Salary guides only if they come from your own placement data, with the date and how you gathered it</li>
+</ul>
+<p>For campus drives or a large hiring campaign, a dedicated <a href="/landing-page-design/">landing page</a> with its own form keeps those applications separate and measurable.</p>
+
+<h2>Common mistakes on agency websites</h2>
+<ul>
+  <li>One contact form for everyone, so employer enquiries sit unanswered among CVs</li>
+  <li>Jobs that closed months ago still listed, or "urgent" roles that never change</li>
+  <li>CVs sent as email attachments to a shared inbox anyone can open</li>
+  <li>Big placement numbers or shortlisting promises that you cannot back up</li>
+  <li>Client logos used without permission</li>
+  <li>No fraud warning, no fee policy and no physical address</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Should a recruitment agency website have a job portal?</h3>
+<p>Yes, if you have a steady flow of live roles you are allowed to advertise. A simple job board with one page per opening, filters and an apply form is enough for most agencies. If most of your work is confidential executive search, a CV registration form and specialism pages may matter more than listings.</p>
+<h3>Can my jobs appear in Google's job search results?</h3>
+<p>They can, where Google offers that feature, if each job has its own page with valid JobPosting structured data and follows Google's guidelines. Expired jobs must be removed or marked with an end date. Nobody can guarantee that a listing will be shown.</p>
+<h3>Is it safe to accept CVs through the website?</h3>
+<p>It can be, if uploads are stored privately, access is limited, the form explains how the data is used and you delete old CVs on a schedule. Ask your lawyer to review the consent wording against the current DPDP rules.</p>
+<h3>Can the website connect to our applicant tracking system?</h3>
+<p>Often, yes. Many ATS products offer a job feed, an embeddable widget or an email or API route for applications. The right choice depends on whether you want job pages that rank in Google or are happy for the ATS to host them.</p>
+<h3>Should we show salaries on job pages?</h3>
+<p>Where the client allows it, a salary range helps candidates decide quickly and can be included in the job's structured data. If the client prefers not to disclose it, say that salary is discussed at shortlisting.</p>
+
+<p>Planning a recruitment or placement agency website with separate employer and candidate journeys, job pages Google can read and CV handling you can trust? See <a href="/wordpress-website-development/">WordPress website development</a> for how I plan and build sites like this, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -15653,56 +16006,137 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-preschools-daycare',
-    seoTitle: 'Websites for Preschools & Daycare Centres',
-    title: 'Websites for Preschools and Daycare Centres',
-    description: 'What preschools and daycare centres need online: curriculum, safety and hygiene, staff, facilities, fees and timings, admissions and parent communication.',
+    seoTitle: 'Preschool and Daycare Website: What Parents Check First',
+    title: 'Websites for Preschools, Playschools and Daycare Centres: Safety, Admissions, Visits and Photo Consent',
+    description: 'Plan a preschool or daycare website parents trust: safety and staff details, programmes by age, timings, fees, visit booking and photo consent for children.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['website-for-schools-and-coaching', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
-<p>Choosing a preschool or daycare is an emotional decision for parents. Safety, care and a warm environment matter as much as curriculum. Your website should reassure parents before their first visit.</p>
+<p>A preschool or daycare website has one main job: to reassure a parent enough to book a visit. Parents check safety, who looks after the children, the facilities, the daily routine and the timings before they look at anything else, and they notice quickly when a site makes claims it cannot back up. The strongest sites describe how the centre really runs, make booking a visit easy on a phone, and treat children's photos and data with more care than any other business website would.</p>
+<p>This guide covers playschools, nursery and kindergarten sections, daycare and after-school centres, whether independent or franchise outlets. If you want a site built around admission enquiries, notices and galleries, with photo consent planned in from the start, see my <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a>. For older children and school admissions, <a href="/blog/school-coaching-website-what-parents-look-for/">what parents look for in school websites</a> covers the wider picture.</p>
 
-<h2>Safety and care first</h2>
+<h2>What parents check first</h2>
+<p>Choosing a first school or a daycare is an anxious decision, often made by two working parents comparing centres on their phones late in the evening. Their questions are practical:</p>
 <ul>
-  <li>Security: CCTV, entry controls, pickup authorisation</li>
-  <li>Hygiene and cleaning practices</li>
-  <li>Teacher-to-child ratios</li>
-  <li>Staff background checks and training (including first aid)</li>
-  <li>Meals and nap routines for daycare</li>
+  <li><strong>Is it safe?</strong> Entry control, who can pick a child up, supervision, and what happens if a child is unwell or hurt</li>
+  <li><strong>Who will look after my child?</strong> The teachers and caregivers, their training, and how many adults there are per group</li>
+  <li><strong>What does a day look like?</strong> Activities, play, meals, naps and outdoor time</li>
+  <li><strong>Does it fit our timings?</strong> Session hours, extended daycare, holidays and late pickup</li>
+  <li><strong>What does it cost?</strong> Fees, or at least what the fee covers</li>
+  <li><strong>How far is it?</strong> Location, landmark, parking and drop-off arrangements</li>
+</ul>
+<p>Put the location, timings, a "Book a visit" button and one-tap WhatsApp at the top of the homepage. Everything else can follow in the order above.</p>
+
+<h2>The pages a preschool or daycare website needs</h2>
+<table>
+  <thead>
+    <tr><th>Page</th><th>What it must answer</th><th>Tip</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Home</td><td>Where you are, ages you take, timings and how to visit</td><td>Real photos of your rooms, not stock images</td></tr>
+    <tr><td>Programmes</td><td>Playgroup, nursery, kindergarten, daycare and after-school care, each with age, hours and routine</td><td>One section or page per programme</td></tr>
+    <tr><td>Safety and care</td><td>Entry, pickup, supervision, health, hygiene and emergencies</td><td>Describe what you do, not adjectives</td></tr>
+    <tr><td>Our team</td><td>Founder, teachers and caregivers, with training and experience</td><td>Each person approves their own profile</td></tr>
+    <tr><td>Facilities</td><td>Classrooms, play area, nap room, kitchen, washrooms, outdoor space</td><td>Photos taken when no children are present</td></tr>
+    <tr><td>Admissions</td><td>Age criteria, steps, documents, dates and fees or fee guidance</td><td>Dates editable in one place</td></tr>
+    <tr><td>Parent corner</td><td>Notices, holiday calendar, events and newsletters</td><td>Staff can post without a developer</td></tr>
+    <tr><td>Contact and visit</td><td>Address, map, landmark, hours and the visit booking form</td><td>Repeat the visit button on every page</td></tr>
+  </tbody>
+</table>
+
+<h2>Programmes by age group</h2>
+<p>Parents search by age and need: "playgroup for 2 year old", "nursery admission near me", "daycare for working parents". Give each programme its own section with the age band and the cut-off date you use, session timings, group size and the number of adults as you actually staff it, a typical day, and how you share progress with parents. Some states have set minimum ages for nursery and Class 1 admissions, so check your state's current rules and say clearly which date you use to calculate age.</p>
+<p>If you follow a particular approach, such as play-based learning or Montessori-inspired activities, explain what it means in your classrooms in plain words. Only use a named method or affiliation if your teachers are genuinely trained in it, and say where.</p>
+
+<h3>Daycare needs extra detail</h3>
+<ul>
+  <li>Full-day, half-day and flexible options, with the exact opening and closing times</li>
+  <li>Meals: whether you provide them or parents send food, a sample weekly menu, and how you handle allergies</li>
+  <li>Nap times, bedding and what parents need to send</li>
+  <li>Late pickup rules, holiday care and the days you close</li>
+  <li>After-school care: pickup from nearby schools, if you offer it, with the schools you cover</li>
 </ul>
 
-<h2>Curriculum and approach</h2>
-<p>Explain your learning approach, daily routine, activities and how you track development, in plain language parents understand.</p>
-
-<h2>Staff</h2>
-<p>Introduce the founder and teachers with qualifications and warm photos.</p>
-
-<h2>Facilities</h2>
-<p>Classrooms, play areas and outdoor spaces, shown in real photos (without identifiable children unless you have consent).</p>
-
-<p>For a site built around admissions enquiries, photo galleries and a notice board for parents, see my <a href="/website-for-schools-and-coaching/">website design for schools and coaching centres</a>.</p>
-
-<h2>Admissions</h2>
+<h2>Safety, staff and hygiene: show, don't claim</h2>
+<p>"Safe and secure environment" appears on almost every preschool website and tells a parent nothing. Describe the measures instead, and only the ones you actually have:</p>
 <ul>
-  <li>Age groups and programmes (playgroup, nursery, KG, daycare)</li>
-  <li>Timings and fees or fee guidance</li>
-  <li>Admission process and documents</li>
-  <li>"Book a visit" form and WhatsApp</li>
+  <li><strong>Entry and pickup:</strong> who can enter, how visitors are logged, and how authorised pickup works, such as a registered list of adults with photos</li>
+  <li><strong>Supervision:</strong> how many adults are with each group, and who accompanies children to the washroom</li>
+  <li><strong>Staff checks and training:</strong> background verification and first aid training, stated only if you do them</li>
+  <li><strong>CCTV:</strong> which areas are covered and who can view the footage</li>
+  <li><strong>Health:</strong> your sick-child policy, how medicines are given, and how parents are told about an injury</li>
+  <li><strong>Hygiene:</strong> cleaning routines for toys, washrooms and the kitchen</li>
+  <li><strong>Emergencies:</strong> fire safety, evacuation drills and the nearest hospital you would use</li>
+</ul>
+<p>Avoid claims nobody can verify, such as "100% safe", "best preschool in the city" or "internationally certified" without saying by whom. Registration and licensing rules for preschools and creches vary by state, so mention a registration only if you hold it, and check the current requirements with your adviser.</p>
+
+<h2>Admission enquiries and visit booking</h2>
+<p>Very few parents enrol without seeing the centre, so the visit is the real conversion. A short form works best:</p>
+<ul>
+  <li>Parent's name and phone number for WhatsApp</li>
+  <li>The child's age, or month and year of birth, and the programme</li>
+  <li>Preferred start month and, for chains, the centre</li>
+  <li>A preferred visit date and time slot</li>
+  <li>An optional "how did you hear about us?" question</li>
+</ul>
+<p>A preferred date and slot means your coordinator receives a specific request rather than a bare "please call me". <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta's</a> clinic website, which I built, asks patients for a preferred date and session in the same way. Confirm the visit on WhatsApp, say what will happen during it and how long it takes, and explain your settling-in period for new children. Leave birth certificates, address proofs and medical forms for the admission stage, collected in person or through a secure process, not a public web form.</p>
+
+<h3>Fees: show them or explain them</h3>
+<p>Whether you publish fee amounts is your decision. Either way, explain the structure: the admission or registration fee, term or monthly fees, meals, transport, activity charges, any refundable deposit, and whether instalments are possible. If figures are shared on enquiry, say so plainly. <a href="/blog/show-prices-on-website/">Should you show prices on your website?</a> covers the trade-offs.</p>
+
+<h2>Children's photos and parental consent</h2>
+<p>Photos of happy children sell a preschool better than anything else, which is exactly why they need care. India's data protection law expects verifiable parental consent before processing children's personal data; <a href="/blog/dpdp-act-website-basics/">India's DPDP Act and your website</a> explains the basics, and your lawyer can confirm what applies to you.</p>
+<ul>
+  <li>Add a photo consent section to the admission form, with a clear option to opt out of website and social media use</li>
+  <li>Keep a list of children who must not appear, and check it before anything is published</li>
+  <li>Never put a child's full name next to their photo</li>
+  <li>Prefer group activity shots, hands at work and photos from behind over close-up portraits</li>
+  <li>Remove a photo quickly when a parent asks</li>
+  <li>Share daily photos and any CCTV access through a private parent app or group, never on public pages</li>
+</ul>
+<p>Facility photos taken before the children arrive avoid most of the problem for the pages that matter most.</p>
+
+<h2>Parent communication after admission</h2>
+<p>Once a child joins, the website becomes a reference for current parents: the holiday calendar, event notices, newsletters, the term's theme and reminders about things to send. If you use a parent app for daily updates, mention it on the admissions page as a benefit, and link to it rather than duplicating it. A notices page staff can update in minutes keeps a permanent record that new parents can find, which WhatsApp groups do not. <a href="/blog/website-for-kids-activity-classes/">Websites for kids' activity classes and summer camps</a> covers camps and holiday programmes if you run them.</p>
+
+<h2>Franchise outlets and multiple centres</h2>
+<p>Many preschools are franchise outlets of a national or regional brand. The brand's guidelines usually control the name, logo, curriculum descriptions and sometimes the website itself, so check what you are allowed to build. Even within the brand's site, each centre needs its own details: address, timings, team, photos and its own enquiry routing. Owners of several centres should give each one a genuinely different page linked to its own Google Business Profile; see <a href="/blog/multi-location-business-website/">websites for businesses with multiple branches</a>. If you run the brand itself, <a href="/blog/website-for-franchise-brands/">websites for franchise brands</a> covers outlet locators and franchise enquiries.</p>
+
+<h2>Getting found by local parents</h2>
+<p>Parents search close to home: "preschool near me", "daycare in Baner" or "playschool in Kharadi". To appear:</p>
+<ul>
+  <li>Complete a Google Business Profile for each centre with the closest category, such as preschool or day care centre, real photos of the rooms and accurate hours</li>
+  <li>Keep the name, address, phone and timings identical on the website and the profile</li>
+  <li>Ask real parents for reviews once they have settled in, and never write them yourself</li>
+  <li>Use the area name naturally in page titles and headings, for example "Playschool and Daycare in Wakad"</li>
+  <li>Add structured data with schema.org's Preschool or ChildCare types where they fit</li>
 </ul>
 
-<h2>Parent communication</h2>
-<p>Updates on events, holidays and newsletters. Some centres share daily updates through apps; mention it if you do.</p>
-
-<h2>Privacy</h2>
-<p>Never publish children's photos or names without written parental consent.</p>
-
-<h2>Local SEO</h2>
+<h2>Common mistakes on preschool websites</h2>
 <ul>
-  <li>Target "preschool near me", "daycare in {area}" and "playschool {city}"</li>
-  <li>Google Business Profile with photos and parent reviews</li>
+  <li>Close-up photos of identifiable children with no record of consent</li>
+  <li>Safety described with adjectives instead of actual measures</li>
+  <li>No timings, so working parents cannot tell whether daycare covers their day</li>
+  <li>Last year's admission dates and fees still live</li>
+  <li>A long admission form asking for documents before the parent has even visited</li>
+  <li>A heavy video slider that takes ages to load on mobile data</li>
 </ul>
 
-<p>See also <a href="/blog/school-coaching-website-what-parents-look-for/">what parents look for in school websites</a>.</p>
+<h2>FAQs</h2>
+<h3>Should a preschool show its fees online?</h3>
+<p>It is your choice. Publishing fees filters out parents outside your range; sharing them on enquiry starts a conversation. Either way, explain what the fee includes, any one-time charges and your refund policy.</p>
+<h3>Can parents book a school visit on the website?</h3>
+<p>Yes. A short form with the child's age, programme and a preferred date and slot, confirmed on WhatsApp, works well. Larger chains can route each request to the right centre.</p>
+<h3>Can we post photos of children on our website?</h3>
+<p>Only with written parental consent, and with an easy way to withdraw it. Avoid naming children, prefer group or activity shots, and keep daily photos in private parent channels.</p>
+<h3>Do we need a website if we have a franchise brand page?</h3>
+<p>Often the franchise agreement decides this. Where you are allowed your own site or centre page, it lets you show your own team, facilities and timings and rank for searches in your area.</p>
+<h3>Can our staff update notices and holidays themselves?</h3>
+<p>They should be able to. Ask for a notices section and holiday calendar staff can edit from the dashboard, with a short training session at handover.</p>
+
+<p>Planning a website for your preschool or daycare that answers parents' safety questions, makes booking a visit easy and handles children's photos properly? See <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a> for how I plan and build education sites, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -18271,65 +18705,132 @@ define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
   },
   {
     slug: 'website-for-photographers',
-    seoTitle: 'Website for Photographers: Get More Bookings',
-    title: 'Website for Photographers: Show Your Work and Get More Bookings',
-    description: 'Websites for wedding, portrait and event photographers that win bookings: curated galleries, fast images, packages, enquiry forms and local SEO.',
+    seoTitle: 'Photographer Website: Fast Galleries, Proofing and Bookings',
+    title: 'Websites for Photographers: Fast Portfolio Galleries, Client Proofing, Enquiry Forms and Image SEO',
+    description: 'Plan a photography website that loads fast and wins bookings: portfolio galleries, image sizes and lazy loading, client proofing, enquiry forms and image SEO.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['wordpress-website-development', 'wordpress-speed-optimization', 'wordpress-seo-services'],
     body: `
-<p>Instagram is great for being discovered, but a website is where serious clients check your full work, packages and availability before booking. For photographers, the website itself is the portfolio, so it needs to look great and load fast.</p>
+<p>A photographer's website is judged twice: once on the photos, and once on how fast those photos appear on a phone. Clients want to see work in their style, complete stories rather than a few highlights, a sense of packages and price, and an easy way to check whether you are free on their date. The sites that win bookings organise galleries by specialism, keep huge images fast with the right sizes and lazy loading, deliver work through private proofing galleries, and use an enquiry form that asks for the date, city and venue up front.</p>
+<p>If you'd like this built properly, my <a href="/wordpress-website-development/">WordPress website development</a> service covers custom design, speed optimisation, on-page SEO and schema, contact forms and WhatsApp, and a site you can update yourself. If your current portfolio is already live but slow, <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> includes image compression, resizing and WebP, lazy loading and a before-and-after report. For the general principles of curating creative work, see <a href="/blog/portfolio-website-freelancers-creatives/">portfolio websites for freelancers and creatives</a>; this guide covers what is specific to photographers.</p>
 
-<h2>What clients look for</h2>
+<h2>What clients check before they enquire</h2>
+<table>
+  <thead>
+    <tr><th>Client</th><th>What they check</th><th>Main action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Couples planning a wedding</td><td>Style, full wedding stories, candid versus traditional coverage, team size, albums and films, travel</td><td>Check availability for the dates</td></tr>
+    <tr><td>Families</td><td>Maternity, newborn or kids' work, safety and comfort, studio or home sessions</td><td>Book a session</td></tr>
+    <tr><td>Brands and e-commerce sellers</td><td>Product shots on white and in lifestyle settings, consistency, turnaround, file formats</td><td>Request a quote for a number of products</td></tr>
+    <tr><td>Companies</td><td>Event coverage, headshots, reliability and fast delivery</td><td>Send event details</td></tr>
+    <tr><td>Architects and property firms</td><td>Interiors and exteriors, lighting, drone work where permitted</td><td>Share the project and location</td></tr>
+  </tbody>
+</table>
+<p>Lead the homepage with the work you want more of, a line such as "Candid wedding photographer in Pune", and buttons for "Check availability" and WhatsApp.</p>
+
+<h2>Portfolio structure: specialisms and complete stories</h2>
 <ul>
-  <li>Your style: does it match what they want?</li>
-  <li>Complete stories, not just highlights, especially for weddings</li>
-  <li>Packages and rough pricing</li>
-  <li>Availability for their date and location</li>
-  <li>Reviews from past clients</li>
+  <li><strong>A gallery per specialism:</strong> weddings, pre-wedding, maternity and newborn, product, corporate, so each client type finds relevant work quickly</li>
+  <li><strong>Complete stories:</strong> for weddings, publish full stories from individual weddings, from getting ready to the reception, with a short write-up of the venue, the events and how you worked; couples want to know you can cover a whole day, not just take one great portrait</li>
+  <li><strong>Captions that help people match your work to their plans:</strong> by venue type, city, season or style, such as "Haldi in a courtyard, Jodhpur" or "Studio product shots on white"</li>
+</ul>
+<p>Captioning is a small habit that helps visitors and search engines. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, an interior design studio I built a site for, captions its project images by style and room, such as "The Minimalist: Modern Interior", so a homeowner can see quickly whether the studio suits their taste. A photographer's galleries work the same way.</p>
+
+<h2>Portfolio performance: big images, fast pages</h2>
+<p>Photography sites are the heaviest small business websites there are, and a gallery that loads slowly on mobile data loses the couple before they see your best frame.</p>
+
+<h3>Export at the right size and format</h3>
+<p>Never upload straight from the camera or from a full-resolution export. Export each image at the largest size it is actually displayed at, allowing for sharp high-resolution screens, then compress it. WordPress creates several smaller copies of every upload and lets each phone or laptop download the size it needs, and an image optimisation plugin can serve WebP versions automatically. <a href="/blog/image-optimization-wordpress/">Image optimisation for WordPress</a> walks through sizes, formats and compression step by step.</p>
+
+<h3>Lazy loading, done right</h3>
+<p>Lazy loading delays images further down the page until the visitor scrolls towards them, which makes long galleries usable on a phone. Two rules matter: never lazy-load the first image visitors see, because it delays the main picture, and give every image its width and height so the layout does not jump as images arrive. <a href="/blog/lazy-loading-explained/">Lazy loading explained</a> covers the details and when not to use it.</p>
+
+<h3>Choose light galleries over heavy sliders</h3>
+<ul>
+  <li>A single strong hero image usually beats a full-screen slider of ten photos</li>
+  <li>Use a lightweight gallery or grid with a lightbox, rather than a plugin that loads its own scripts on every page</li>
+  <li>Masonry layouts look good but can shift as images load if sizes are not reserved</li>
+  <li>Embed films from YouTube or Vimeo with a thumbnail until someone clicks play, rather than uploading video files to your hosting</li>
+</ul>
+<p>Good hosting matters more for photographers than for most businesses, and a CDN can help if your clients are spread across cities or countries.</p>
+
+<h2>Client proofing and delivery galleries</h2>
+<p>Private galleries for proofing and delivery make a photographer look organised and save endless file transfers. A good setup lets clients view their photos behind a password, mark favourites for the album, leave comments, and download web-size or full-resolution files, with an expiry date after which the gallery is archived.</p>
+<table>
+  <thead>
+    <tr><th>Option</th><th>Good for</th><th>Watch out for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>A dedicated client gallery service</td><td>Busy photographers delivering many large shoots</td><td>A subscription, and galleries hosted outside your website</td></tr>
+    <tr><td>A gallery plugin on your WordPress site</td><td>Proofing and favourites under your own brand and domain</td><td>Full-resolution files fill shared hosting storage fast</td></tr>
+    <tr><td>Cloud storage links</td><td>Occasional delivery of final files</td><td>No favourites or proofing, and links that are easy to forward</td></tr>
+  </tbody>
+</table>
+<p>Whichever you use, keep private galleries out of search results, give each client their own access, and decide how long you keep their photos. Client photos are personal data, so explain in your contract and privacy notice how you store, share and delete them.</p>
+
+<h2>An enquiry form that checks availability</h2>
+<p>Couples often contact several photographers in the same evening, and the one who replies first with a clear answer usually gets the call. A form that collects the right details lets you reply in one message:</p>
+<ul>
+  <li>Event type, and for weddings the events to cover, such as haldi, mehendi, sangeet, wedding and reception</li>
+  <li>Dates, city and venue, or "venue not booked yet"</li>
+  <li>Approximate guest count and the coverage needed: photos, films, drone, albums</li>
+  <li>A budget range and how they heard about you</li>
+  <li>A phone number for WhatsApp</li>
+</ul>
+<p>For product photographers, ask instead for the number of products, the type of shots (white background, lifestyle, on-model), where the images will be used and the deadline. Show packages, or at least what a typical package includes and a "starting from" note, so clients with very different budgets filter themselves. Wedding planners and filmmakers receive the same kind of enquiries; see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a> and <a href="/blog/website-for-video-production-companies/">websites for video production companies</a>.</p>
+
+<h2>Image SEO for photographers</h2>
+<p>Search engines understand an image mostly from the words around it. For every gallery and story:</p>
+<ul>
+  <li><strong>Descriptive file names,</strong> such as candid-haldi-ceremony-jodhpur.webp rather than DSC_4821.jpg</li>
+  <li><strong>Alt text</strong> that describes what is in the photo for people who cannot see it, without stuffing keywords</li>
+  <li><strong>Captions and story text</strong> that name the venue, city and type of shoot</li>
+  <li><strong>Page titles</strong> that match searches, such as "Pre-wedding photographer in Lonavala" or "Product photographer in Mumbai"</li>
+  <li><strong>Images included in your sitemap,</strong> which most WordPress SEO plugins handle</li>
+  <li><strong>Location data removed</strong> from photos taken at clients' homes, for their privacy</li>
+</ul>
+<p><a href="/blog/image-seo-guide/">Image SEO for Google Images, Lens and Discover</a> covers this in more depth.</p>
+
+<h2>Consent, copyright and watermarks</h2>
+<ul>
+  <li>Add a clause to your contract about whether you may publish the client's photos, and respect clients who say no</li>
+  <li>Take extra care with newborn, maternity and children's photos: get written consent from parents and avoid naming children</li>
+  <li>For commercial work, check what your client agreement allows you to show, and when</li>
+  <li>Say who owns copyright and what the client may do with the images</li>
+  <li>Upload web-size images and use a subtle watermark if your field expects one; disabling right-click mostly annoys genuine visitors</li>
 </ul>
 
-<h2>Essential pages</h2>
+<h2>Local SEO and referrals</h2>
+<p>Most photography searches include a place: "wedding photographer in Pune", "maternity photoshoot near me", "product photographer in Bhiwandi". Complete your Google Business Profile with your best work and the areas you serve, and ask happy clients for reviews soon after delivery; see <a href="/blog/get-more-google-reviews/">getting more Google reviews</a>. If you shoot destination weddings, create pages for places where you have genuinely worked, each with real stories from there, rather than copies with the city name swapped. Planners, decorators, makeup artists and venues you work with often link to each other's sites, which helps all of you.</p>
+
+<h2>Common mistakes on photography websites</h2>
 <ul>
-  <li><strong>Portfolio by type:</strong> weddings, pre-wedding, maternity, products, corporate events</li>
-  <li><strong>Stories:</strong> full galleries or blog posts for individual weddings and shoots, with the couple's or client's permission</li>
-  <li><strong>Packages:</strong> what's included, hours, deliverables and starting prices</li>
-  <li><strong>About:</strong> you, your team and your approach</li>
-  <li><strong>Reviews</strong></li>
-  <li><strong>Enquiry:</strong> a form with event date, location and type</li>
+  <li>Full-resolution images uploaded straight from the camera</li>
+  <li>A homepage slider of a dozen large photos that delays everything</li>
+  <li>Hundreds of images in one gallery instead of a curated selection and full stories</li>
+  <li>An enquiry form that asks only for name and message, so every reply starts with questions</li>
+  <li>Private client galleries that appear in Google</li>
+  <li>File names like IMG_0001.jpg and no text on gallery pages</li>
 </ul>
-
-<h2>Curate, don't dump</h2>
-<p>Show your best 20–40 images per category rather than hundreds. Visitors judge you by your weakest image; see <a href="/blog/portfolio-website-freelancers-creatives/">portfolio websites for creatives</a>.</p>
-
-<h2>Speed with large images</h2>
-<ul>
-  <li>Resize images to display size and compress them</li>
-  <li>Use modern formats like WebP</li>
-  <li>Lazy-load galleries so below-the-fold images load later</li>
-  <li>Avoid heavy slider plugins</li>
-</ul>
-<p>See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
-
-<h2>Client galleries</h2>
-<p>Password-protected galleries for delivering and proofing photos make you look professional. You can use dedicated gallery services or WordPress plugins.</p>
-
-<h2>Protecting your images</h2>
-<p>Right-click blocking annoys visitors and doesn't stop determined copying. Subtle watermarks, sensible image sizes and copyright notices are more practical.</p>
 
 <p>Offering aerial shoots, surveys or inspections with a drone as a separate service? See <a href="/blog/website-for-drone-services/">websites for drone service companies</a>.</p>
 
-<h2>Get found locally</h2>
-<ul>
-  <li>Pages targeting searches like "wedding photographer in {city}"</li>
-  <li>Descriptive file names and alt text on images</li>
-  <li>A Google Business Profile with your best work</li>
-  <li>Reviews from clients; see <a href="/blog/get-more-google-reviews/">getting more Google reviews</a></li>
-  <li>Partnerships with venues and planners who can link to you; see <a href="/blog/website-for-event-wedding-planners/">websites for wedding planners</a></li>
-</ul>
+<h2>FAQs</h2>
+<h3>How do I keep a photography website fast with so many images?</h3>
+<p>Export images at display size, compress them, serve WebP, lazy-load everything except the first image, avoid heavy sliders and use decent hosting. A speed audit can show which images and scripts are slowing your pages.</p>
+<h3>Should I put client galleries on my own website?</h3>
+<p>You can, with a gallery plugin for proofing and favourites, as long as your hosting has room for the files. Many busy photographers use a dedicated gallery service for delivery and keep the website for the portfolio.</p>
+<h3>Should photographers show prices?</h3>
+<p>Showing packages or a "starting from" figure filters out poor-fit enquiries. If every shoot is quoted individually, explain what affects the price, such as days, events, team and deliverables.</p>
+<h3>Does Instagram replace a photography website?</h3>
+<p>Instagram is good for discovery, but a website lets you show full stories, explain packages, rank for local searches and collect enquiries with the details you need.</p>
+<h3>How do I get my photos found on Google?</h3>
+<p>Use descriptive file names, honest alt text, captions and story text naming the place and type of shoot, page titles that match searches and a sitemap that includes images.</p>
 
-<h2>Make enquiring easy</h2>
-<p>WhatsApp and a short enquiry form on every page, with a quick reply. Couples often contact several photographers at once, so response speed matters.</p>
+<p>Planning a photography website with galleries that load fast and an enquiry form that books shoots? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> if your current portfolio is slow, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -18397,129 +18898,261 @@ define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
   },
   {
     slug: 'website-for-wholesalers-distributors',
-    seoTitle: 'Website for Wholesalers & Distributors: B2B Guide',
-    title: 'Website for Wholesalers and Distributors: Win More Dealers and Bulk Orders',
-    description: 'B2B websites for wholesalers and distributors: product range, brands, dealer registration, price lists, bulk enquiries and ordering for retailers.',
+    seoTitle: 'Wholesaler and Distributor Website: Catalogue and Dealers',
+    title: 'Websites for Wholesalers and Distributors: Trade Catalogues, Price on Request, Dealer Logins, Bulk RFQs and B2B Ordering',
+    description: 'Plan a wholesaler or distributor website: a trade catalogue, price on request or dealer login, bulk RFQs, dealer registration and WooCommerce B2B ordering.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['website-for-manufacturers', 'woocommerce-developer', 'wordpress-website-development'],
     body: `
-<p>Retailers, contractors and businesses increasingly search online for suppliers before they pick up the phone. A clear website helps wholesalers and distributors get found by new dealers, answer routine questions and even take repeat orders online.</p>
+<p>A wholesaler or distributor website has three jobs: show retailers and businesses exactly what you supply, give approved dealers a quick way to get prices and place repeat orders, and convince brands that you are a distributor worth appointing. That usually means a trade catalogue organised by category and brand, prices on request or behind a dealer login, an enquiry basket or bulk RFQ form that works as well as WhatsApp, a separate dealer registration page, and online B2B ordering once your regular customers are ready for it.</p>
+<p>Distributors sell to businesses, so the website works like a manufacturer's: catalogue first, enquiries second. My <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a> cover product catalogues with specifications, request-a-quote forms, brochure downloads and SEO for product keywords, with products imported from a spreadsheet. When you are ready to take orders online, <a href="/woocommerce-developer/">WooCommerce development</a> covers the store side, with dealer pricing scoped as an advanced feature.</p>
 
-<h2>What B2B buyers want to know</h2>
+<h2>Who visits a distributor's website</h2>
+<table>
+  <thead>
+    <tr><th>Visitor</th><th>What they want</th><th>Main action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Retailers and shop owners</td><td>Products, brands, pack sizes, trade terms, delivery to their area</td><td>Ask for prices or register as a dealer</td></tr>
+    <tr><td>Contractors, institutions and businesses</td><td>Bulk quantities, GST invoices, reliable supply</td><td>Send a bulk enquiry</td></tr>
+    <tr><td>Brands and manufacturers</td><td>Your reach, warehouse, fleet, sales team and territories</td><td>Discuss appointing you as distributor</td></tr>
+    <tr><td>Existing dealers</td><td>Current price list, new products, reordering</td><td>Log in or reorder on WhatsApp</td></tr>
+    <tr><td>Consumers</td><td>Where to buy a single item</td><td>Find a nearby retailer</td></tr>
+  </tbody>
+</table>
+<p>That last row matters: many distributors get calls from consumers wanting one item. A short "Where to buy" note or retailer list on the site saves your team those calls.</p>
+
+<h2>A catalogue built for trade buyers</h2>
+<p>Trade buyers know what they want and search for it precisely, often by brand, part number or pack size. Build the catalogue around that:</p>
 <ul>
-  <li>What products and brands do you supply?</li>
-  <li>Which areas do you serve and deliver to?</li>
-  <li>Minimum order quantities and terms</li>
-  <li>How to become a dealer or open an account</li>
-  <li>How quickly you deliver</li>
+  <li><strong>Categories first, then brands:</strong> for example Electrical, then Wires and Cables, then each brand's range, with brand pages as a second route into the same products</li>
+  <li><strong>Trade details on every product:</strong> SKU or part number, pack size, case or carton quantity, minimum order, key specifications and an image</li>
+  <li><strong>Search that understands SKUs</strong> and partial part numbers, and filters by brand, size and type once categories grow; see <a href="/blog/improve-wordpress-site-search/">improving site search on WordPress and WooCommerce</a></li>
+  <li><strong>Spreadsheet import,</strong> so a range of thousands of SKUs can be loaded and updated in one go rather than typed by hand</li>
+  <li><strong>Stock wording you can keep true:</strong> "usually in stock" or "made to order" is safer than a live count that is wrong by afternoon</li>
+</ul>
+<p>Only call yourself an "authorised distributor" for a brand if you hold that status, and use brand logos and official product images only with permission. <a href="/blog/industrial-website-product-catalogue/">How to build a product catalogue website</a> covers category trees, spec tables and WooCommerce in catalogue mode in detail.</p>
+
+<h2>Showing prices: public, on request or behind a dealer login</h2>
+<table>
+  <thead>
+    <tr><th>Option</th><th>How it works</th><th>Suits</th><th>Watch out for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Price on request</td><td>No prices shown; buyers send an enquiry or WhatsApp</td><td>Most distributors, where price depends on volume, customer and terms</td><td>Slow replies lose buyers to whoever answers first</td></tr>
+    <tr><td>MRP shown, trade price hidden</td><td>The public sees MRP; dealers get trade rates on request or after login</td><td>Consumer goods with printed MRPs</td><td>Keeping MRPs updated when brands revise them</td></tr>
+    <tr><td>Dealer login with price tiers</td><td>Approved accounts log in and see their own prices</td><td>Distributors with many repeat retail customers</td><td>Approving accounts and maintaining tiers takes ongoing effort</td></tr>
+    <tr><td>Price list PDF for approved dealers</td><td>A downloadable list shared after approval</td><td>A small range that changes rarely</td><td>Old PDFs keep circulating after prices change</td></tr>
+  </tbody>
+</table>
+<p>The technical setup of dealer roles, price tiers, minimum quantities and hidden trade prices is covered step by step in <a href="/blog/woocommerce-wholesale-dealer-pricing/">WooCommerce wholesale and dealer pricing</a>.</p>
+
+<h2>Bulk enquiries and RFQs</h2>
+<p>Many B2B buyers would rather send a photo of a handwritten list on WhatsApp than fill in a form, and your website should welcome both:</p>
+<ul>
+  <li><strong>An enquiry basket:</strong> buyers add several products with quantities and send one RFQ, instead of one enquiry per item</li>
+  <li><strong>A quick bulk form:</strong> business name, city or area, products and quantities, and an upload for a requirement list or photo</li>
+  <li><strong>An optional GSTIN field,</strong> so quotes and invoices can be prepared correctly</li>
+  <li><strong>A WhatsApp button</strong> on every product and category page, with the product name pre-filled</li>
+  <li><strong>Routing</strong> by territory or product line, so each enquiry reaches the right salesperson</li>
+</ul>
+<p><a href="/work/vansh-group/">Vansh Group</a>, an electronics manufacturer whose website I built, uses a service dropdown on its enquiry form so every enquiry arrives tagged and goes to the right person; a product-line dropdown does the same for a distributor. <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a> covers what to ask and how to follow up.</p>
+
+<h2>Dealer and retailer registration</h2>
+<p>Recruiting new retailers is often a distributor's main growth route, so give it its own page rather than a line on the contact page:</p>
+<ul>
+  <li>Who you supply and what a dealer gets: range, delivery schedule, credit terms if you offer them, marketing support</li>
+  <li>Eligibility, such as a registered shop or business and GST registration, and the territories you cover</li>
+  <li>A registration form asking for business name, owner, city, type of business, brands currently stocked and an approximate monthly requirement</li>
+  <li>What happens next, and which documents you will ask for later, rather than collecting them on a public form</li>
+</ul>
+<p>Keep this separate from customer enquiries. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, a studio I built a website for, has a "Become a Design Partner" page with its own form, so partner applications never get mixed up with customer quote requests. If brands approach you about distribution, a short "For brands" page explaining your reach, warehouse and sales team, with its own enquiry form, does the same job.</p>
+
+<h2>Online B2B ordering with WooCommerce</h2>
+<p>Once regular customers reorder the same products every week, an ordering portal saves both sides time. WooCommerce can work as a B2B store for approved accounts:</p>
+<ul>
+  <li>Role-based or customer-specific prices, visible only after login</li>
+  <li>Minimum order quantities and pack multiples, so cases are not split</li>
+  <li>A quick order form listing products in a table, and one-click reordering from past orders</li>
+  <li>Payment online, or on credit or invoice for approved accounts</li>
+  <li>GST invoices with the buyer's GSTIN; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup for Indian stores</a></li>
+  <li>A mobile-friendly layout, because many shop owners order from their phones between customers</li>
+</ul>
+<p>Start with your most regular customers and a limited range, and keep WhatsApp ordering open alongside it; few retailers switch overnight.</p>
+
+<h2>Proof and trust for B2B buyers</h2>
+<ul>
+  <li>Warehouse and fleet photos, the areas you deliver to and your delivery schedule</li>
+  <li>The brands you distribute, with your status for each stated accurately</li>
+  <li>Your registered address, GST details and the people who run the business</li>
+  <li>Testimonials from retailers and business customers, used with permission</li>
+  <li>A company profile PDF buyers and brands can forward internally, as Vansh Group offers alongside its product catalogues</li>
 </ul>
 
-<h2>Essential pages</h2>
+<h2>Service areas and local search</h2>
+<p>Buyers search for "{product} wholesaler in {city}", "{brand} distributor in Maharashtra" or "electrical wholesaler near me". To appear:</p>
 <ul>
-  <li><strong>Product categories:</strong> organised the way buyers think, with product specs and pack sizes</li>
-  <li><strong>Brands:</strong> brands you distribute. Only claim "authorised distributor" if you are one, and use brand logos only with permission</li>
-  <li><strong>Service areas:</strong> cities, districts and states you cover</li>
-  <li><strong>About:</strong> years in business, warehouse, fleet and team</li>
-  <li><strong>Become a dealer:</strong> benefits, requirements and a registration form</li>
-  <li><strong>Contact:</strong> phone, WhatsApp, address and a bulk enquiry form</li>
+  <li>A Google Business Profile for your warehouse or trade counter, with accurate hours</li>
+  <li>A service area page listing the districts or cities you deliver to, and city pages only where you genuinely supply, each with real local detail</li>
+  <li>Category and brand pages with a short introduction, so they are more than product grids</li>
+  <li>Listings on B2B marketplaces and directories that link back to your own catalogue</li>
+</ul>
+<p>Suppliers of building materials have their own mix of contractors and homeowners; see <a href="/blog/website-for-hardware-building-materials/">websites for hardware and building material suppliers</a>.</p>
+
+<h2>Common mistakes on distributor websites</h2>
+<ul>
+  <li>A list of brand logos and nothing else, with no products or pack sizes</li>
+  <li>"Authorised distributor" claims or logos used without permission</li>
+  <li>Trade prices visible to everyone, or an old price list PDF still online</li>
+  <li>One contact form for retailers, brands, job seekers and consumers</li>
+  <li>No mention of the areas you deliver to</li>
+  <li>A dealer portal launched before anyone has agreed to use it</li>
 </ul>
 
-<h2>Price lists and catalogues</h2>
-<ul>
-  <li>Downloadable PDF catalogues, kept up to date</li>
-  <li>Trade price lists behind a login for approved dealers, so public visitors don't see dealer rates</li>
-</ul>
+<h2>FAQs</h2>
+<h3>Should a wholesaler show prices on the website?</h3>
+<p>Usually not publicly, because trade prices depend on volume, customer and terms. Price on request with fast replies, or a dealer login showing each account its own prices, works better for most distributors.</p>
+<h3>Can retailers register as dealers online?</h3>
+<p>Yes. A registration form can collect business details and send them for approval, and approved accounts can then be given access to trade prices or online ordering.</p>
+<h3>Can WooCommerce handle B2B orders?</h3>
+<p>Yes, with role-based pricing, minimum quantities, quick order forms, credit terms for approved accounts and GST invoices. It is usually scoped separately from a standard store because the rules are specific to each distributor.</p>
+<h3>How do I add thousands of products?</h3>
+<p>Prepare them in a spreadsheet with SKUs, categories, pack sizes and specifications, and import them in one go. Updating the spreadsheet and re-importing is the easiest way to keep a large range current.</p>
+<h3>Should we list brands we distribute?</h3>
+<p>Yes, accurately. Say which brands you are authorised for and which you simply stock, and use logos and official images only with the brand's permission.</p>
 
-<h2>Bulk enquiry forms</h2>
-<p>Ask for product, quantity, location and business name. Keep it short, and offer WhatsApp as an alternative. Many B2B buyers prefer sending a photo or list on WhatsApp.</p>
-
-<p>For more detail on fields, file uploads and routing, see <a href="/blog/rfq-forms-b2b-websites/">request-for-quote forms for B2B websites</a>.</p>
-
-<h2>Online B2B ordering</h2>
-<p>For repeat customers, WooCommerce can work as a B2B ordering portal:</p>
-<ul>
-  <li>Customer-specific or role-based pricing for dealers</li>
-  <li>Minimum order quantities and pack sizes</li>
-  <li>Quick order forms for reordering</li>
-  <li>Credit terms or payment on invoice for approved accounts</li>
-  <li>GST invoices; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a></li>
-</ul>
-
-<p>For the technical setup of dealer roles, price tiers and hidden trade prices, see <a href="/blog/woocommerce-wholesale-dealer-pricing/">WooCommerce wholesale and dealer pricing</a>.</p>
-
-<h2>Get found</h2>
-<ul>
-  <li>Pages targeting searches like "{product} wholesaler in {city}" or "{brand} distributor in {state}"</li>
-  <li>A Google Business Profile for your warehouse or office</li>
-  <li>Listings on B2B marketplaces and directories, linking back to your site</li>
-</ul>
-
-<p>Many of the same principles apply to manufacturers; see the <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer website guide</a> and <a href="/blog/industrial-website-product-catalogue/">product catalogue guide</a>.</p>
+<p>Planning a distributor or wholesale website with a trade catalogue, dealer registration and bulk enquiries that reach the right salesperson? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> for B2B ordering, starting with a free review and a fixed quote.</p>
 `,
   },
   {
     slug: 'website-for-colleges-universities',
-    seoTitle: 'Website for Colleges & Universities: Admissions-Focused Guide',
-    title: 'Website for Colleges and Universities: Built Around Admissions',
-    description: 'College and university websites that support admissions: course pages, fees, approvals, placements, campus life, enquiry forms, disclosures and SEO.',
+    seoTitle: 'College and University Website: Programmes and Admissions',
+    title: 'Websites for Colleges and Universities: Programme Pages, Admission Funnels, Approvals, Placements and Many Audiences',
+    description: 'Plan a college or university website: programme pages, an admissions funnel, approvals stated accurately, verifiable placement data and pages for each audience.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['website-for-schools-and-coaching', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
-<p>Students and parents compare several colleges online before applying. A college website that makes courses, fees, approvals and admissions easy to find, especially on a phone, directly affects enquiries and applications.</p>
+<p>A college or university website serves more audiences than almost any other: prospective students and their parents, current students, faculty and job applicants, alumni, recruiters and the regulators and accreditation teams who check what you publish. Admissions should still drive the structure. That means a page for every programme, an admissions funnel that moves enquiries quickly to a counsellor, approvals and accreditations stated exactly as held, placement data only where you can verify it, and a content system that lets each department keep its own pages current.</p>
+<p>My <a href="/website-for-schools-and-coaching/">websites for schools, colleges and coaching institutes</a> cover the pieces that matter at admission time: course pages, admission enquiry forms with WhatsApp follow-up, results, faculty profiles, a notice board staff can update, galleries, a downloadable prospectus, optional online fee payment and local SEO. This guide covers what changes for degree colleges, autonomous institutions and universities. For schools and junior colleges, see <a href="/blog/school-coaching-website-what-parents-look-for/">what parents and students look for in school websites</a>.</p>
 
-<h2>What students and parents look for</h2>
+<h2>Many audiences, one clear structure</h2>
+<table>
+  <thead>
+    <tr><th>Audience</th><th>What they need</th><th>Key pages</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Prospective students and parents</td><td>Programmes, eligibility, fees, admissions, placements, hostel, location</td><td>Programme pages, admissions, fees, campus life</td></tr>
+    <tr><td>Current students</td><td>Notices, timetables, exam schedules, results, forms, fee payment</td><td>Student corner, notices, downloads</td></tr>
+    <tr><td>Faculty and job applicants</td><td>Departments, research, vacancies and how to apply</td><td>Department pages, careers</td></tr>
+    <tr><td>Recruiters</td><td>Programmes, student profiles, placement process and contact</td><td>Placement cell page</td></tr>
+    <tr><td>Alumni</td><td>Events, giving back, staying in touch, verification requests</td><td>Alumni page</td></tr>
+    <tr><td>Regulators and accreditation teams</td><td>Mandatory disclosures, committees, policies, reports</td><td>Disclosure and governance pages</td></tr>
+  </tbody>
+</table>
+<p>Put admissions and programmes first in the main menu, and give the other audiences a clear secondary menu or quick links, so a prospective student never has to dig past circulars to find the BBA page.</p>
+
+<h2>Programme pages: the most important pages on the site</h2>
+<p>Students search for programmes, not institutions: "BBA college in Pune", "BSc data science colleges in Nashik", "MBA with hostel near me". Each programme, and each specialisation that has its own intake, deserves its own page:</p>
 <ul>
-  <li>Courses offered, eligibility and duration</li>
-  <li>Fees and scholarships</li>
-  <li>Approvals, affiliations and accreditations</li>
-  <li>Placements and outcomes</li>
-  <li>Faculty, infrastructure and campus life</li>
-  <li>Admission process and important dates</li>
-  <li>Hostel, transport and location</li>
+  <li>A plain summary of who the programme is for and what it leads to</li>
+  <li>Eligibility, duration, intake and mode (full-time, part-time, online)</li>
+  <li>The affiliating university or awarding body, stated exactly</li>
+  <li>Curriculum by semester or year, with electives, projects and internships</li>
+  <li>Fees, or a fee structure that explains what is included, scholarships and instalments</li>
+  <li>Careers and further study routes, without promising outcomes</li>
+  <li>Faculty who teach it, labs and facilities used</li>
+  <li>Admission steps, key dates and an enquiry or "Download brochure" button</li>
+  <li>A short FAQ answering the questions counsellors hear every day</li>
+</ul>
+<p>Keep programme pages at stable addresses, such as /programmes/bba/, and update them each year rather than creating new pages, so they keep their search history.</p>
+
+<h2>An admissions funnel, not just a form</h2>
+<p>Admissions is a sequence, and the website should support every step:</p>
+<ol>
+  <li><strong>Discovery:</strong> a programme page found on Google, social media or an ad</li>
+  <li><strong>Enquiry:</strong> a short form or WhatsApp message, or a brochure download</li>
+  <li><strong>Counselling:</strong> a call or chat from a counsellor, ideally the same day</li>
+  <li><strong>Campus visit:</strong> a visit booking form, or a virtual tour for families further away</li>
+  <li><strong>Application:</strong> an online form or a link to your admission portal</li>
+  <li><strong>Payment and documents:</strong> application or admission fees through a payment gateway, with receipts emailed automatically</li>
+</ol>
+<p>The enquiry form should ask only what the counsellor needs: name, phone, programme of interest, current qualification or year of passing, city and a "how did you hear about us?" question. A two-step form can collect more detail without putting people off; see <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms for lead qualification</a>. Send enquiries to the admissions team and a CRM or Google Sheet, so nothing is lost in one person's inbox. Keep important dates, such as application deadlines, entrance tests and counselling rounds, in one place staff can update, and show them on every relevant page. Admission season campaigns deserve their own <a href="/landing-page-design/">landing pages</a> so ad spend can be tracked by programme.</p>
+
+<h2>Approvals, affiliations and accreditations: state them exactly</h2>
+<p>Students and parents check approvals carefully, and regulators take misleading claims seriously. Keep the wording precise:</p>
+<ul>
+  <li>Name the affiliating university, and whether you are an affiliated, autonomous or other type of institution, exactly as your status stands</li>
+  <li>Mention a UGC recognition, AICTE approval, NAAC grade, NBA accreditation or any other status only if your institution or that specific programme genuinely holds it, with the validity period</li>
+  <li>Never imply an approval through wording such as "recognised" or through a regulator's logo when the status is different or has lapsed; check whether you are allowed to use a regulator's logo at all</li>
+  <li>Link to the regulator's or university's own website or listing, so visitors can verify the status themselves</li>
+  <li>Quote rankings only with the ranking body, the year and the category</li>
+</ul>
+<p>Regulators and affiliating universities may also require certain information on your website, such as mandatory disclosures, committee details, grievance redressal, anti-ragging measures and an internal complaints committee. Requirements differ by regulator and type of institution and change over time, so check the current rules and keep these pages updated with dates.</p>
+
+<h2>Placements and outcomes: only what you can verify</h2>
+<p>Placement claims are where college websites most often overreach. Publish only what you can support with records:</p>
+<ul>
+  <li>Placement data by programme and batch year, with how the figures were calculated</li>
+  <li>Recruiter names and logos only with permission, and only companies that actually recruited your students</li>
+  <li>Student placement stories with written consent, naming the programme and year</li>
+  <li>No "100% placement" or "highest package" headlines without the full context behind them</li>
+</ul>
+<p>Software training institutes face the same temptation; <a href="/blog/website-for-software-training-institutes/">websites for software training institutes</a> covers honest placement wording in more detail.</p>
+
+<h2>Faculty, departments and research</h2>
+<p>Each department needs its own page with its programmes, faculty, labs, research areas and achievements. Faculty profiles should list qualifications, specialisations, publications and responsibilities, with each person approving their own profile. Research centres, journals and conferences give the site depth that search engines and serious applicants both value.</p>
+
+<h2>Campus life, hostel and location</h2>
+<ul>
+  <li>Real photos and short videos of classrooms, labs, library, hostels, sports and events, compressed so they load on mobile data</li>
+  <li>Hostel details: room types, facilities, mess, rules, safety and how to apply</li>
+  <li>Transport routes, the nearest railway station and bus stand, and directions</li>
+  <li>Clubs, festivals, NSS or NCC units and student committees</li>
+  <li>Student photos only with consent, and a quick way to remove any on request</li>
 </ul>
 
-<p>If you'd like help putting this together, I build <a href="/website-for-schools-and-coaching/">websites for schools, colleges and coaching institutes</a> with course pages, admissions enquiries, results and notice boards.</p>
+<h2>Notices and content that stays current</h2>
+<p>An outdated website does real damage: last year's fees, a deadline that has passed, a circular nobody removed. Large institutions solve this with clear ownership. Give each department or office its own editor login with access only to its pages, and an administrator who approves major changes; <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> shows how. Notices get categories, such as examinations, admissions and events, with old notices moving to an archive automatically. When notices are PDFs, type the key points on the page too, and use real text in prospectus PDFs so they can be read and found; see <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs and brochures</a>.</p>
 
-<h2>Course pages: the most important pages</h2>
-<p>Give every programme its own page with eligibility, duration, curriculum highlights, fees, career options, faculty and an enquiry form. These pages match what students search for, like "BBA college in {city}".</p>
+<h3>Regional languages</h3>
+<p>Many parents read Marathi, Hindi or another regional language more comfortably than English. Admissions, fees, contact and key notices are usually enough to translate first, each on its own pages. <a href="/work/our-temples/">Our Temples</a>, a directory I built, shows temple names and sections such as history and festivals in Hindi and Telugu as well as English, which is the same approach a college can use.</p>
 
-<h2>Admissions section</h2>
+<h2>Speed, accessibility and search</h2>
 <ul>
-  <li>Step-by-step admission process</li>
-  <li>Important dates and deadlines</li>
-  <li>Online application or enquiry form</li>
-  <li>Documents required</li>
-  <li>A counsellor's phone and WhatsApp number</li>
+  <li>Avoid full-screen homepage sliders and autoplay videos that slow the site on budget phones</li>
+  <li>Make forms, menus and PDFs usable with screen readers and keyboards; see <a href="/blog/website-accessibility-basics/">website accessibility basics</a></li>
+  <li>Use programme and city names naturally in page titles and headings</li>
+  <li>Complete a Google Business Profile for each campus, with real photos and accurate hours</li>
+  <li>Add CollegeOrUniversity structured data for the institution, and FAQ sections on programme and admission pages</li>
 </ul>
 
-<h2>Proof and credibility</h2>
+<h2>Common mistakes on college websites</h2>
 <ul>
-  <li>Approvals and accreditations, as applicable to your institution</li>
-  <li>Placement records you can support with data, and recruiter names with permission</li>
-  <li>Alumni stories</li>
-  <li>Faculty profiles with qualifications</li>
+  <li>One "Courses" page listing programme names with no detail</li>
+  <li>Approval logos and wording that overstate the institution's actual status</li>
+  <li>Placement headlines with no batch, programme or basis</li>
+  <li>Admission dates and fees from last year still live</li>
+  <li>Enquiries going to an inbox nobody checks during the admission rush</li>
+  <li>Important information only in scanned PDFs</li>
 </ul>
 
-<h2>Mandatory information</h2>
-<p>Regulators may require certain information to be published on your website, such as mandatory disclosures for some approved institutions, grievance redressal details and anti-ragging information. Check your regulator's current requirements and keep these pages updated.</p>
+<h2>FAQs</h2>
+<h3>What pages should a college website have?</h3>
+<p>At minimum: programme pages, admissions, fees or fee structure, approvals and affiliation, faculty and departments, placements, campus life and hostel, notices, mandatory disclosures and contact. Larger institutions add research, alumni and careers pages.</p>
+<h3>How should we show approvals and accreditations?</h3>
+<p>State each one exactly as held, with the body's name, the scope and the validity period, and link to the body's own listing so visitors can check it. Never imply a status you do not have.</p>
+<h3>Can students apply and pay fees on the website?</h3>
+<p>Yes. Enquiry and application forms can feed your admissions team, and a payment gateway such as Razorpay can collect application or admission fees with automatic receipts.</p>
+<h3>Can each department update its own pages?</h3>
+<p>Yes. WordPress user roles can give each department an editor login limited to its own pages and notices, with an administrator overseeing the rest.</p>
+<h3>Should we publish placement statistics?</h3>
+<p>Only if you can support them with records. Show them by programme and batch, explain how they were calculated, and use recruiter names only with permission.</p>
 
-<h2>Campus life</h2>
-<p>Real photos and short videos of classrooms, labs, library, hostel, events and clubs help students picture themselves there. Optimise them so pages stay fast; see <a href="/blog/video-on-business-website/">video on your website</a>.</p>
-
-<h2>Keep it current</h2>
-<p>Outdated notices and last year's fees damage trust. Assign someone to update news, events, results and admissions information regularly. WordPress makes this easy for non-technical staff with the right user roles; see <a href="/blog/wordpress-user-roles-explained/">user roles explained</a>.</p>
-
-<h2>SEO and speed</h2>
-<ul>
-  <li>Course and location keywords in page titles</li>
-  <li>A Google Business Profile for the campus</li>
-  <li>FAQ sections on admissions pages; see <a href="/blog/faq-page-seo/">FAQ pages and SEO</a></li>
-  <li>Fast pages on mobile networks</li>
-</ul>
-
-<p>For schools and coaching institutes, see <a href="/blog/school-coaching-website-what-parents-look-for/">what parents look for</a>.</p>
+<p>Planning a college or university website with programme pages that rank, an admissions funnel that reaches counsellors fast and accurate approval details? See <a href="/website-for-schools-and-coaching/">websites for schools, colleges and coaching institutes</a> for how I plan and build them, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -21764,68 +22397,113 @@ Screenshot: attached</code></pre>
   },
   {
     slug: 'website-for-cloud-kitchens',
-    seoTitle: 'Website for Cloud Kitchens: Direct Orders Beyond Aggregators',
-    title: 'Website for Cloud Kitchens: Get Direct Orders Beyond the Aggregators',
-    description: 'Cloud kitchen websites for direct orders beyond aggregators: multiple brands, delivery zones, WhatsApp orders, loyalty, FSSAI details and local SEO.',
+    seoTitle: 'Cloud Kitchen Website: Direct Orders Beyond Delivery Apps',
+    title: 'Websites for Cloud Kitchens: Direct Ordering, WhatsApp Orders, Multiple Brands, Delivery Areas and FSSAI Details',
+    description: 'Plan a cloud kitchen website: your own ordering versus delivery apps, a WhatsApp order flow, menus that rank, delivery areas, multiple brands and FSSAI details.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Industries',
     related: ['website-for-restaurants', 'woocommerce-developer', 'landing-page-design'],
     body: `
-<p>Cloud kitchens depend heavily on food delivery apps for orders, and app commissions take a big share of every order. A website with direct ordering won't replace the apps overnight, but it can turn repeat customers into higher-margin direct orders and build a brand you own.</p>
+<p>A cloud kitchen website is not there to replace the delivery apps. It is there to win the orders you should not be paying commission on: repeat customers, office and party orders, and people who find your brand on Google or Instagram. The sites that work show each brand's menu on proper web pages, make ordering direct easy through WhatsApp or online checkout, are clear about delivery areas and timings, display FSSAI details, and give customers a real reason to order direct next time.</p>
+<p>My <a href="/website-for-restaurants/">websites for restaurants, cafes and food brands</a> cover exactly these pieces: a mobile-friendly menu you update yourself, WhatsApp ordering for simple setups or full WooCommerce ordering with online payments and delivery areas, ordering that pauses outside kitchen hours, and your FSSAI number on ordering pages. This guide is about the delivery-only model, where there is no dining room to fill and every order arrives by phone.</p>
 
-<h2>What a cloud kitchen website should do</h2>
+<h2>Delivery apps or your own ordering site?</h2>
+<p>For most cloud kitchens the honest answer is both, with different jobs:</p>
+<table>
+  <thead>
+    <tr><th></th><th>Delivery apps</th><th>Your own website and WhatsApp</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Who finds you</td><td>People browsing the app, next to every competing kitchen nearby</td><td>People searching your brand, dish or area on Google, and your existing customers</td></tr>
+    <tr><td>Cost per order</td><td>Commission and fees set by the platform</td><td>Payment gateway charges on online payments, plus your own delivery cost</td></tr>
+    <tr><td>Customer details</td><td>Mostly stay with the platform</td><td>Come to you, with permission to contact them</td></tr>
+    <tr><td>Delivery</td><td>The platform's riders</td><td>Your riders, a delivery partner you book, or pickup</td></tr>
+    <tr><td>Menu and pricing control</td><td>Within the app's formats and rules</td><td>Full control: combos, party packs, subscriptions</td></tr>
+  </tbody>
+</table>
+<p>Read your platform agreements before you plan direct-order offers, since some terms cover pricing and in-bag promotion. <a href="/blog/restaurant-website-online-ordering/">Restaurant online ordering options compared</a> walks through the main routes in brief.</p>
+
+<h2>One brand or several virtual brands?</h2>
+<p>Many cloud kitchens run several brands from one kitchen: a biryani brand, a pizza brand and a healthy bowls brand, for example. There are three sensible structures:</p>
 <ul>
-  <li>Show your brands, menus and prices clearly</li>
-  <li>Take orders directly, or via WhatsApp</li>
-  <li>Explain delivery areas and timings</li>
-  <li>Give customers a reason to order direct</li>
+  <li><strong>A separate website per brand:</strong> the strongest identity and search presence for each, but more domains, hosting and updates to manage</li>
+  <li><strong>One website with a section per brand:</strong> simpler to run, and customers can order from more than one brand in a single order if your kitchen and packing can handle it</li>
+  <li><strong>A parent brand site with brand pages:</strong> useful if you also want franchise or investor enquiries, with each brand still getting its own menu pages</li>
+</ul>
+<p>Whichever you choose, each brand needs its own menu, photos and story, not one combined list. Be careful with Google Business Profiles: several virtual brands at one kitchen address can run into Google's guidelines, and profiles that break them can be suspended. Check the current rules before creating a profile for each brand.</p>
+
+<h2>Direct ordering flows that suit your team</h2>
+<h3>WhatsApp ordering</h3>
+<p>The simplest start: the menu lives on your website, and an "Order on WhatsApp" button opens a chat with a pre-filled message. A small cart that sends the chosen dishes, quantities and delivery address to WhatsApp saves typing for both sides. You confirm the order and delivery time, send a UPI payment link or QR code, and dispatch. It costs nothing extra to run, but every order is handled by hand, so it suits smaller menus and lower volumes. <a href="/blog/whatsapp-on-business-website/">Adding WhatsApp to your business website</a> covers buttons, pre-filled messages and tracking.</p>
+
+<h3>Online ordering with payment</h3>
+<p>Once WhatsApp orders become hard to keep up with, a proper ordering system pays for itself in staff time. A WooCommerce menu can handle add-ons and portion sizes, combos, UPI and card payments, delivery areas, minimum order values, delivery fees and time slots, and it can stop taking orders outside kitchen hours or when you switch it off on a busy evening. New orders can reach the kitchen by email, WhatsApp or SMS notification. For <a href="/work/southern-flavours/">Southern Flavours</a>, an Indian restaurant in the UK, I built a WooCommerce shop listing more than 100 dishes in 13 categories, each with a price, a quantity control and an Add to Cart button, alongside a newsletter sign-up that lets the restaurant reach regulars directly.</p>
+
+<h3>Pickup and takeaway</h3>
+<p>If customers can collect from your kitchen, offer it at checkout with clear pickup instructions, especially if the kitchen is hard to find in a commercial building. Pickup orders cost you nothing in delivery.</p>
+
+<h2>Delivery areas, timings and logistics</h2>
+<ul>
+  <li><strong>Define the area:</strong> a list of PIN codes or localities, or a radius, shown on the site so customers know before they choose dishes; a <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checker</a> stops orders you cannot fulfil</li>
+  <li><strong>Fees and minimums:</strong> delivery fees by distance or zone, and a minimum order value, shown before checkout</li>
+  <li><strong>Who delivers:</strong> your own riders, a hyperlocal delivery partner booked per order, or pickup; plan what happens when riders are busy</li>
+  <li><strong>Honest times:</strong> estimated delivery windows you can actually meet at peak hours</li>
+  <li><strong>Packaging:</strong> containers that keep food hot and leak-free over the distance you cover</li>
 </ul>
 
-<h2>One brand or many?</h2>
-<p>Many cloud kitchens run several brands from one kitchen. Options:</p>
+<h2>Menu pages that can be found on Google</h2>
+<p>A menu uploaded as an image or PDF can't be read well by Google and is awkward on a phone. Build each brand's menu as a web page, with sections, dish names, short descriptions, prices, veg or non-veg markers, spice level, portion size or "serves", and allergen notes supplied by your kitchen. <a href="/blog/restaurant-menu-on-website/">Putting your menu online</a> explains why a web page beats a PDF.</p>
+<p>People search for dishes and areas, such as "biryani delivery in Kharadi", "healthy lunch box near me" or "late night food delivery Baner". Use those words naturally in page titles and headings, give your signature dishes a section or page of their own, and add Restaurant structured data with a link to the menu page where it fits.</p>
+
+<h2>Giving customers a reason to order direct</h2>
+<p>Customers will not leave an app they are used to without a reason. Options that work, as long as they fit your platform agreements:</p>
 <ul>
-  <li><strong>One website per brand:</strong> clear branding, separate SEO, more to manage</li>
-  <li><strong>One website with brand sections:</strong> simpler, lets customers order from several brands in one order if your operations allow</li>
+  <li>A free add-on, dessert or drink on direct orders</li>
+  <li>Combos, family packs or dishes only available direct</li>
+  <li>Loyalty rewards for repeat orders, kept simple</li>
+  <li>Faster help on WhatsApp if something goes wrong</li>
+  <li>Party and office orders, which apps handle poorly</li>
+  <li>A QR code on your own packaging or menu cards linking to the direct ordering page, where your agreements allow it; see <a href="/blog/qr-codes-for-business-website/">QR codes for your business website</a></li>
+</ul>
+<p>Ask direct customers for permission to send offers on WhatsApp or email, and keep messages occasional. Subscription meal plans are a natural extension if you cook daily meals; see <a href="/blog/website-for-tiffin-meal-subscriptions/">websites for tiffin and meal subscription services</a>.</p>
+
+<h2>FSSAI, hygiene and kitchen trust</h2>
+<p>Delivery-only kitchens have no dining room for customers to judge, so the website has to show the kitchen instead.</p>
+<ul>
+  <li><strong>FSSAI details:</strong> food businesses in India need FSSAI registration or a licence, and FSSAI expects the number to be shown to customers, including when food is sold online; put it in the footer and on ordering pages, and check the current rules for your licence type with your FSSAI consultant</li>
+  <li><strong>Kitchen photos or a short video</strong> of the real kitchen, staff in hygiene gear and your packing area</li>
+  <li><strong>Hygiene practices</strong> you actually follow, described plainly</li>
+  <li><strong>Veg and non-veg handling:</strong> if you prepare both, say how you separate them, only if it is true</li>
+  <li><strong>Clear totals</strong> with taxes, packing and delivery charges shown before payment, and invoices in the format your CA advises</li>
 </ul>
 
-<h2>Direct ordering options</h2>
-<ul>
-  <li><strong>WooCommerce with food ordering features:</strong> menus, add-ons, delivery slots and pin code restrictions</li>
-  <li><strong>Restaurant ordering platforms</strong> that integrate with your website</li>
-  <li><strong>WhatsApp ordering:</strong> menu on the website, order on WhatsApp; simple to start</li>
-</ul>
-<p>See <a href="/blog/restaurant-website-online-ordering/">online ordering options compared</a>.</p>
+<h2>Measuring whether direct ordering is working</h2>
+<p>Track direct orders per week, repeat customers, average order value and what each direct order costs you compared with an app order. Tag the links on your packaging, Instagram bio and WhatsApp broadcasts so you can see which brings orders. A direct channel that grows slowly but steadily is doing its job.</p>
 
-<h2>Reasons to order direct</h2>
+<h2>Common mistakes on cloud kitchen websites</h2>
 <ul>
-  <li>Slightly lower prices or free add-ons for direct orders</li>
-  <li>Loyalty points or repeat-order discounts</li>
-  <li>Exclusive combos or dishes</li>
-  <li>Faster support through WhatsApp</li>
-</ul>
-<p>Use inserts in delivery bags (where allowed) to invite app customers to order direct next time.</p>
-
-<h2>Delivery setup</h2>
-<ul>
-  <li>Delivery radius or pin codes</li>
-  <li>Minimum order values and delivery fees</li>
-  <li>Your own riders or a delivery partner</li>
-  <li>Accurate delivery time estimates</li>
+  <li>Menus as photos of a printed card, or prices that differ from the app with no explanation</li>
+  <li>No delivery area shown, so customers order and then get cancelled</li>
+  <li>Ordering left open when the kitchen is closed</li>
+  <li>All brands mashed into one list with no identity for any of them</li>
+  <li>No FSSAI number, kitchen photos or allergen information</li>
+  <li>Direct-order offers that break the terms of a platform agreement</li>
 </ul>
 
-<h2>Trust and food safety</h2>
-<ul>
-  <li>Show your FSSAI licence number and hygiene practices</li>
-  <li>Kitchen photos or videos</li>
-  <li>Ingredient and allergen information</li>
-  <li>Reviews from customers</li>
-</ul>
+<h2>FAQs</h2>
+<h3>Should a cloud kitchen stay on delivery apps after launching its own website?</h3>
+<p>Usually yes. The apps bring new customers who have never heard of you; your website and WhatsApp suit repeat customers, bulk orders and people searching your brand.</p>
+<h3>Is WhatsApp ordering enough to start with?</h3>
+<p>For a small menu and modest volumes, yes. Move to online ordering with payment when manual replies start to delay orders or cause mistakes.</p>
+<h3>Can one website handle several virtual brands?</h3>
+<p>Yes. Each brand can have its own section, menu and identity, and a shared cart is possible if your kitchen can pack mixed orders reliably.</p>
+<h3>Do I need to show my FSSAI number on my website?</h3>
+<p>If you take orders online, it is expected and it reassures customers. Put it in the footer and on ordering pages, and confirm the current requirements for your licence type.</p>
+<h3>Can the website stop orders when the kitchen is closed?</h3>
+<p>Yes. Online ordering can follow your kitchen hours, pause on holidays, and be switched off for a busy evening from the dashboard.</p>
 
-<h2>Menu pages that rank</h2>
-<p>Put menus on proper web pages, not images; see <a href="/blog/restaurant-menu-on-website/">putting your menu online</a>. Target searches like "{cuisine} delivery in {area}".</p>
-
-<h2>Measure</h2>
-<p>Track direct orders, repeat rate and margins versus app orders to see whether your direct channel is growing.</p>
+<p>Planning a cloud kitchen website with brand menus that can be found on Google and direct ordering that suits your team? See <a href="/website-for-restaurants/">websites for restaurants and food brands</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> if online ordering is the main job, starting with a free review and a fixed quote.</p>
 `,
   },
   {
