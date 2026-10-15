@@ -4092,61 +4092,111 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'get-website-indexed-google-faster',
-    seoTitle: 'How to Get Your Website Indexed on Google Faster',
-    title: 'How to Get Your New Website Indexed on Google Faster',
-    description: 'New site not showing on Google? How indexing works and steps to get pages indexed faster: Search Console, sitemaps, internal links, content and blockers.',
+    seoTitle: 'How to Get a New Website Indexed on Google Faster',
+    title: 'How to Get Your New Website Indexed on Google Faster: What Actually Works',
+    description: 'What actually gets a new website indexed on Google faster: internal links, honest sitemaps, URL Inspection, page quality, crawl budget and IndexNow.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
-<p>You've launched a new website, but searching for it on Google shows nothing. Don't panic. Google needs to discover, crawl and index your pages first. Here's how that works and what you can do to speed it up.</p>
+<p>The fastest reliable way to get a new page indexed is to link to it from pages Google already crawls often, such as your homepage, main menu and existing posts, to list it in your XML sitemap with an accurate last-modified date, and to request indexing for your most important URLs in Search Console. Beyond that, speed depends on whether Google thinks the page is worth indexing: substantial, unique pages on a fast site are indexed sooner than thin or near-duplicate ones. No button or plugin forces Google to index anything.</p>
+<p>Sites whose pages sit in "Discovered" or "Crawled, currently not indexed" are exactly who my <a href="/wordpress-seo-services/">WordPress SEO services</a> are for. Common causes are weak internal links, too many low-value URLs competing for Google's attention and a new domain Google doesn't trust yet, often all three at once.</p>
+<p>This guide is about speeding up a site Google can already reach. If your site doesn't appear on Google at all, rule out blocks first with <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn't showing on Google</a>. For what each status means, see <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a>, and if your sitemap shows an error, <a href="/blog/search-console-sitemap-couldnt-fetch/">sitemap "couldn't fetch" explained</a>.</p>
 
-<h2>How Google indexing works</h2>
-<ol>
-  <li><strong>Discovery:</strong> Google finds your URLs through links, sitemaps or Search Console.</li>
-  <li><strong>Crawling:</strong> Googlebot visits the pages and reads the content.</li>
-  <li><strong>Indexing:</strong> Google decides whether to store the page in its index.</li>
-  <li><strong>Ranking:</strong> indexed pages can then appear for relevant searches.</li>
-</ol>
-<p>Indexing isn't guaranteed. Google chooses which pages to index based on quality and usefulness.</p>
+<h2>From unknown to indexed: the stages</h2>
+<table>
+  <thead><tr><th>Stage</th><th>What is happening</th><th>What URL Inspection shows</th><th>What moves it along</th></tr></thead>
+  <tbody>
+    <tr><td>Unknown</td><td>Google has never seen the URL</td><td>URL is unknown to Google</td><td>Internal links and the sitemap</td></tr>
+    <tr><td>Discovered</td><td>Google knows the URL but hasn't crawled it yet</td><td>Discovered, currently not indexed</td><td>Stronger internal links, a faster server, fewer junk URLs competing for crawls</td></tr>
+    <tr><td>Crawled</td><td>Google fetched the page and decided not to index it, for now</td><td>Crawled, currently not indexed</td><td>A better, more distinct page</td></tr>
+    <tr><td>Indexed</td><td>The page can appear in results</td><td>URL is on Google</td><td>Ranking is a separate question from here</td></tr>
+  </tbody>
+</table>
+<p>Most "slow indexing" is really one of the middle two stages, and the fixes for each are different.</p>
 
-<h2>Check whether you're indexed</h2>
+<h2>1. Link new pages from pages Google already crawls</h2>
+<p>Google recrawls your homepage and main navigation far more often than a post published last month. A new page linked from those is found on the next visit; a page linked from nowhere waits until Google gets round to your sitemap.</p>
 <ul>
-  <li>Search <code>site:yourdomain.com</code> on Google for a rough view</li>
-  <li>Use the <strong>URL Inspection</strong> tool in Google Search Console for an exact status</li>
+  <li><strong>New service or location page:</strong> add it to the main menu or services menu, and link to it from the homepage and the closest related service pages.</li>
+  <li><strong>New blog post:</strong> show recent posts on the homepage or blog page, and add a link from two or three older posts on the same topic that are already indexed (check them in URL Inspection first).</li>
+  <li><strong>New products:</strong> make sure the category page lists them on its first page, not only on page six of the pagination.</li>
+  <li><strong>Use real links.</strong> Google follows normal a href links. Buttons that navigate with JavaScript, or links that only appear after a click, may not be followed.</li>
+</ul>
+<p>Links from other sites help too, such as your Google Business Profile website link, business directories you're genuinely listed in, and partners or clients who mention you. But internal links are the part you control completely, and the part most new sites neglect; <a href="/blog/internal-linking-explained/">internal linking explained</a> covers how to plan them.</p>
+
+<h2>2. Keep the sitemap clean, with an honest lastmod</h2>
+<p>Your sitemap tells Google which URLs exist; on WordPress, Yoast or Rank Math add new posts to it automatically. Two things make it more useful for speed:</p>
+<ul>
+  <li><strong>Only indexable URLs.</strong> A sitemap padded with redirects, noindexed pages and thin archives teaches Google that the list isn't a reliable guide to what matters.</li>
+  <li><strong>Accurate lastmod dates.</strong> Google uses lastmod to decide what to recrawl, but only when the dates prove trustworthy. If every URL shows today's date after every small change, the field gets ignored.</li>
+</ul>
+<p>This site is custom-coded rather than built on WordPress, and its sitemap now changes a page's lastmod only when that page's content changes, so the dates stay meaningful. Google retired its sitemap "ping" address in 2023, so plugins or settings that "ping Google" no longer do anything; Google finds sitemap changes by rereading the sitemap. <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a> covers what to include.</p>
+
+<h2>3. Use "Request indexing" for your most important URLs</h2>
+<ol>
+  <li>Paste the full URL into the inspection bar at the top of Search Console. If you haven't verified your site yet, see <a href="/blog/setup-google-analytics-search-console/">setting up Search Console</a>.</li>
+  <li>If it says the URL is not on Google, click <strong>Test live URL</strong> to confirm Google can fetch the page and that indexing is allowed.</li>
+  <li>Click <strong>Request indexing</strong>. Google runs a quick check and adds the URL to a priority crawl queue.</li>
+</ol>
+<p>There is a daily limit per property. Google doesn't publish the exact number, and it has changed over time, but it is small: think a handful to around ten URLs a day, not hundreds. When you hit it, Search Console says the quota has been exceeded. Spend requests on your homepage, key service pages, important new posts and pages you have substantially updated. Requesting the same URL again doesn't move it up the queue, and a request is not a promise of indexing; it only gets the page looked at sooner.</p>
+<p>Avoid plugins or services that push ordinary pages through Google's Indexing API. Google limits that API to job postings and livestream pages, and has warned that attempts to abuse it can get access revoked.</p>
+
+<h2>4. Make every page worth indexing</h2>
+<p>Google doesn't index everything it crawls, and it is choosier with new sites that have no track record. Pages that tend to sit in the not-indexed statuses:</p>
+<ul>
+  <li><strong>Thin pages</strong> with a few lines of text, such as a service page that is a heading, two sentences and a form.</li>
+  <li><strong>Near-duplicates,</strong> such as city pages with only the place name swapped, or product descriptions copied from the manufacturer; see <a href="/blog/duplicate-content-explained/">duplicate content explained</a>.</li>
+  <li><strong>Low-value archives:</strong> tag pages with one post, attachment pages and internal search results.</li>
+</ul>
+<p>The fix is fewer, fuller pages: merge thin ones into one strong page, add information only you can give (prices or what affects them, process, real examples, local detail), and noindex archives nobody needs to find in Google. I'm doing exactly this on this site: short early posts that Search Console listed as "Discovered, currently not indexed", this one included, are being rewritten into complete guides rather than left thin.</p>
+
+<h2>5. Crawl budget on a new site</h2>
+<p>Crawl budget is how many URLs Google is willing and able to crawl on your site in a given period. Google says most sites with fewer than a few thousand URLs don't need to worry about it, and that is true for established sites. A new domain is different: with no links and no history, Google's interest is low, so the URLs it does crawl should count.</p>
+<ul>
+  <li><strong>Launch with your core pages,</strong> then add more steadily, rather than publishing hundreds of near-identical pages on day one.</li>
+  <li><strong>Cut junk URLs:</strong> tag and attachment archives, sorting and filter parameters on stores, and http or www duplicates that should redirect.</li>
+  <li><strong>Keep the server fast and stable.</strong> In Search Console, <strong>Settings &gt; Crawl stats</strong> shows Google's average response time and any host problems. Slow responses and server errors make Google crawl less.</li>
+  <li><strong>Fix redirect chains and internal links to 404s,</strong> which spend crawls on URLs that lead nowhere.</li>
+</ul>
+<p>For the wider first-months plan, see <a href="/blog/seo-for-new-websites/">SEO for a new website</a>.</p>
+
+<h2>6. Tell Bing directly with IndexNow</h2>
+<p>IndexNow is a protocol that lets your site notify search engines the moment a URL is added, updated or deleted. At the time of writing, Bing, Yandex, Seznam and Naver support it; Google does not use it. Bing still matters: it powers its own results and is used by other search and AI tools.</p>
+<ul>
+  <li><strong>On WordPress,</strong> Rank Math's Instant Indexing module, Microsoft's IndexNow plugin and Cloudflare's Crawler Hints setting can all send IndexNow notifications. Use one, not several.</li>
+  <li><strong>In Bing Webmaster Tools,</strong> import your site from Search Console, submit your sitemap and use URL Submission for important pages.</li>
+</ul>
+<p>This site uses a small script that submits the URLs in its sitemap to IndexNow after each update, so Bing hears about new pages without waiting for a crawl.</p>
+
+<h2>What doesn't speed up indexing</h2>
+<ul>
+  <li>Resubmitting the sitemap every day, or requesting indexing for the same URL repeatedly.</li>
+  <li>"Instant indexing" services, link blasts and ping lists.</li>
+  <li>Changing published dates without changing the page.</li>
+  <li>Running Google Ads, which has no effect on organic indexing.</li>
+  <li>Social media shares on their own; they can help people find you, but they are a weak route for Google discovery.</li>
 </ul>
 
-<h2>Steps to get indexed faster</h2>
-<h3>1. Set up Google Search Console</h3>
-<p>Verify your domain and submit your XML sitemap. See <a href="/blog/setup-google-analytics-search-console/">how to set up Search Console</a>.</p>
-<h3>2. Request indexing for key pages</h3>
-<p>Use URL Inspection → "Request indexing" for your homepage and most important pages. Don't spam requests for every page; sitemaps handle the rest.</p>
-<h3>3. Link your pages together</h3>
-<p>Google discovers pages by following links. Make sure every important page is linked from your navigation, homepage or related pages. Orphan pages with no internal links are often ignored.</p>
-<h3>4. Get a few links from other sites</h3>
-<p>Links from your Google Business Profile, social profiles, directories and partner or client websites help Google discover and trust your site.</p>
-<h3>5. Publish genuinely useful content</h3>
-<p>Thin or duplicate pages are often crawled but not indexed. Pages that answer questions thoroughly are indexed more readily.</p>
-<h3>6. Make sure the site is fast and mobile-friendly</h3>
-<p>Google crawls with a mobile browser. Slow, broken or hard-to-render pages can delay indexing.</p>
+<h2>How long does indexing take?</h2>
+<p>Google's own answer is anywhere from a few days to a few weeks, and new domains sit at the slower end. Track progress with URL Inspection for your key pages and the Pages report over several weeks; a site: search on Google gives only a rough picture. If important pages are still not indexed after several weeks despite good internal links and a clean sitemap, look again for a technical block, then at whether the pages are distinct and substantial enough.</p>
 
 <p>For a full health check, work through the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit checklist</a>.</p>
 
-<h2>Common blockers</h2>
-<ul>
-  <li>WordPress "Discourage search engines from indexing this site" left on after launch</li>
-  <li><code>noindex</code> tags left over from a staging site</li>
-  <li>robots.txt blocking important folders</li>
-  <li>Canonical tags pointing to the wrong URL or domain</li>
-  <li>Duplicate versions of the site (http/https, www/non-www) without redirects</li>
-</ul>
+<h2>FAQs</h2>
+<h3>How do I get Google to index my website quickly?</h3>
+<p>Verify the site in Search Console, submit your sitemap, link new pages from your homepage and menu, request indexing for the key URLs and make sure each page is substantial and unique. That gives Google every reason to crawl and index promptly.</p>
+<h3>How many URLs can I request indexing for per day?</h3>
+<p>Google doesn't publish the limit and it has changed over time, but it is a small number per property each day. Use requests for your most important new or updated pages and let internal links and the sitemap handle the rest.</p>
+<h3>Why does Search Console say "Discovered, currently not indexed"?</h3>
+<p>Google knows the URL exists but hasn't crawled it yet. Google's own explanation is that it postponed the crawl, typically so as not to overload the site; on a small new site it more often reflects low priority, or many low-value URLs competing for attention. Stronger internal links, fewer junk URLs and fuller pages are the usual fixes.</p>
+<h3>Does submitting a sitemap make indexing faster?</h3>
+<p>It helps Google discover URLs, which matters most on new sites, but it doesn't make Google index them. Internal links, page quality and site speed decide how quickly discovered pages are crawled and indexed.</p>
+<h3>Does Google use IndexNow?</h3>
+<p>Not at the time of writing. IndexNow notifies Bing and other participating search engines. For Google, rely on internal links, your sitemap and URL Inspection.</p>
 
-<p>If your site still doesn't appear on Google at all, go through <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn't showing on Google</a> and check each cause in Search Console.</p>
-
-<h2>How long does it take?</h2>
-<p>Some pages are indexed within days; others take weeks, especially on brand-new domains with few links. Keep publishing useful content, building internal links and earning mentions, and indexing speeds up over time.</p>
-
-<p>If pages stay unindexed, a technical <a href="/wordpress-seo-services/">WordPress SEO</a> review usually finds the cause quickly.</p>
+<p>If key pages are still stuck in "Discovered" or "Crawled, currently not indexed", the audit in my <a href="/wordpress-seo-services/">WordPress SEO services</a> checks crawling, sitemaps, internal links and thin or duplicate pages, then fixes what is holding them back.</p>
 `,
   },
   {
@@ -7427,57 +7477,112 @@ https://example.com/solar-quote/?utm_source=brochure&amp;utm_medium=qr&amp;utm_c
   },
   {
     slug: 'write-service-pages-that-convert',
-    seoTitle: 'How to Write Service Pages That Convert',
-    title: 'How to Write Service Pages That Rank and Convert',
-    description: 'Write service pages that rank on Google and convert, step by step: search intent, headline, problem, solution, process, proof, FAQs and calls to action.',
+    seoTitle: 'How to Write Service Pages That Rank and Convert (Template)',
+    title: 'How to Write Service Pages That Rank and Convert: Structure, Copy, Proof and a Section-by-Section Template',
+    description: 'How to write service pages that rank on Google and turn visitors into enquiries: one page per service, a section-by-section template, proof and FAQs.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Growth',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
-<p>Service pages are the money pages of a business website. They're the pages that rank for searches like "commercial interior design in Pune" and the pages that persuade visitors to get in touch. Here's a structure that works for both.</p>
+<p>A service page that ranks and converts focuses on one service, names it the way customers search for it, and answers their questions in the order they ask them: what it is and who it's for, what's included, how it works, what affects the price, proof that you've done it before, the remaining doubts in a short FAQ, and a clear way to get in touch, repeated down the page. Google ranks it because it fully answers a "hire" or "buy" search; visitors enquire because it removes their doubts.</p>
+<p>In my <a href="/wordpress-website-development/">WordPress website development</a> projects, the page plan comes before any design: I map out the pages and what each one has to answer, and every main service gets its own page because each one is a separate search. I suggest what each page should say and polish your text, and this guide shows you how to draft it yourself.</p>
+<p>For the rest of the site, such as the homepage and about page, see <a href="/blog/how-to-write-website-content/">how to write content for your business website</a>.</p>
 
-<h2>One service, one page</h2>
-<p>Give every main service its own page. A single "Services" page listing everything can't rank for each service or speak to each customer's specific needs.</p>
+<h2>Why each service needs its own page</h2>
+<p>A single "Services" page with a bullet list rarely ranks for anything. A physiotherapy clinic offering sports injury rehab, back pain treatment and home visits is answering three different searches from three different people, with different questions about each. A CA firm's GST registration, income tax filing and company incorporation services are the same. Separate pages let each one match its search, answer its own questions and carry its own proof.</p>
+<p>Combine services only when customers always buy them together and search for them as one thing. And if you serve several cities, put the areas on the service page first; separate city pages are worth it only when each has something genuinely local to say, as <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages done right</a> explains.</p>
 
-<h2>The structure</h2>
-<h3>1. A headline that names the service</h3>
-<p>Say exactly what it is, and where if you're local: "WordPress Maintenance Plans" or "Solar Rooftop Installation in Jaipur". Add a short supporting line with the main benefit.</p>
-<h3>2. A clear call to action near the top</h3>
-<p>"Get a free quote", "Book a consultation" or "WhatsApp us", visible without scrolling.</p>
-<h3>3. The problem, in the customer's words</h3>
-<p>Show you understand why they're here: the frustration, risk or goal behind the search.</p>
-<h3>4. Your solution and what's included</h3>
-<p>Explain how you solve it and list what's included. Specifics beat vague promises.</p>
-<h3>5. The process</h3>
-<p>Three to five steps from first contact to finished result. It reduces uncertainty.</p>
-<h3>6. Proof</h3>
-<p>Case studies, examples, testimonials and credentials related to <em>this</em> service.</p>
-<h3>7. FAQs</h3>
-<p>Answer questions about cost, timelines, what you need from the client, and guarantees. FAQs also help your page answer more searches.</p>
-<h3>8. A final call to action</h3>
-<p>Repeat the next step at the end, with a short form or WhatsApp.</p>
+<h2>Before you write: five pieces of research</h2>
+<ol>
+  <li><strong>The search phrase.</strong> How do customers describe the service? "AC servicing" or "AC maintenance"? "Website maintenance" or "website AMC"? Check Search Console's queries if your site already has some visibility.</li>
+  <li><strong>The intent.</strong> Search the phrase on your phone. If the results are service pages and Business Profiles, a service page can rank; if they are all guides, you need a different phrase or an article as well. See <a href="/blog/search-intent-explained/">search intent explained</a>.</li>
+  <li><strong>The questions.</strong> Go through recent enquiries, WhatsApp chats and sales calls and list what people asked before they bought. Add the People Also Ask questions from Google.</li>
+  <li><strong>The objections.</strong> Price, trust, timing, quality and "will this work for my situation?" are the usual ones. Each needs an answer somewhere on the page.</li>
+  <li><strong>The proof.</strong> Projects, photos, testimonials you have permission to use, and qualifications or registrations you genuinely hold.</li>
+</ol>
 
-<p>Tips for writing them: <a href="/blog/faq-page-seo/">FAQ sections that help customers and SEO</a>.</p>
+<h2>A service page template, section by section</h2>
+<table>
+  <thead><tr><th>Section</th><th>The visitor's question</th><th>What to include</th></tr></thead>
+  <tbody>
+    <tr><td>Headline and opening</td><td>Is this what I need, and is it for me?</td><td>The service named plainly, a one-line promise and the main call to action</td></tr>
+    <tr><td>Who it's for and the problem</td><td>Do they understand my situation?</td><td>The situations that bring customers to you, in their words</td></tr>
+    <tr><td>What's included, and what isn't</td><td>What exactly do I get?</td><td>A specific list, plus clear exclusions</td></tr>
+    <tr><td>How it works</td><td>What happens after I get in touch?</td><td>Three to six steps from first message to finished job</td></tr>
+    <tr><td>Price or what affects it</td><td>Can I afford this?</td><td>Prices, ranges or the factors that move the price</td></tr>
+    <tr><td>Proof</td><td>Can they actually do it?</td><td>Case studies, real photos, named testimonials, credentials</td></tr>
+    <tr><td>FAQs</td><td>What else is worrying me?</td><td>Short, direct answers to the questions you collected</td></tr>
+    <tr><td>Final call to action</td><td>How do I start?</td><td>A short form, WhatsApp and phone, with what happens next</td></tr>
+  </tbody>
+</table>
+<h3>The headline and opening</h3>
+<p>Name the service the way customers say it, with the area if you're local: "AC repair and servicing in Kothrud" or "GST registration for small businesses". Follow it with one line on the outcome, and put the main action, such as "Get a quote", "WhatsApp us" or "Book a site visit", where it is visible without scrolling on a phone. Avoid openings like "Welcome to our company" that make visitors work out whether they're in the right place.</p>
+<h3>What's included, and what isn't</h3>
+<p>Specifics persuade where adjectives don't. "Gas top-up, filter cleaning, coil cleaning and a cooling check" beats "complete AC care". Stating what isn't included, such as parts, hosting or travel beyond a certain area, prevents enquiries you can't serve and arguments later. The service pages on this site, which is custom-coded rather than built on WordPress, include a "what is included, and what is not" section for that reason.</p>
+<h3>Price, or what affects it</h3>
+<p>Buyers want some idea of cost before they contact you. Show prices or ranges if your work allows it; if every job is different, explain what moves the price. On <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a generator rental site I built, each capacity page explains what affects the rental price: hire duration, the fuel arrangement, whether an operator is included and the distance from the yard. <a href="/blog/show-prices-on-website/">Should you show prices on your website?</a> covers the options.</p>
+<h3>Proof</h3>
+<p>Use proof that relates to this service, not generic praise: a case study of a similar job, before-and-after photos, a testimonial with the customer's name and context, or a registration number. Never invent reviews, numbers or client logos. If you're new, explain your process and qualifications in detail instead; specific detail is itself a form of proof.</p>
+<h3>FAQs</h3>
+<p>Answer the questions from your research in two to four sentences each. FAQ rich results in Google have been limited to a small group of authoritative sites since 2023, but the answers still help visitors decide, and they help the page match longer searches. <a href="/blog/faq-page-seo/">FAQs for SEO</a> covers how to choose and write them.</p>
 
-<h2>SEO essentials</h2>
+<h2>Writing copy that converts</h2>
 <ul>
-  <li>Unique title and meta description with the service (and location)</li>
-  <li>Enough depth to fully answer what searchers want to know</li>
-  <li>Internal links from your homepage and related articles</li>
-  <li>Service schema and FAQ content</li>
+  <li><strong>Use the customer's words.</strong> Lift phrases from enquiries: "my site keeps going down" beats "uptime assurance".</li>
+  <li><strong>Tie each feature to its benefit:</strong> "monthly backups, so a broken update can be rolled back".</li>
+  <li><strong>Be specific about where and for whom:</strong> "Baner, Wakad and Hinjewadi" says more than "all areas".</li>
+  <li><strong>One main action, repeated</strong> after the key sections. A form, a WhatsApp button and a phone number are fine together because they lead to the same enquiry; a second, unrelated offer is not.</li>
+  <li><strong>Pre-fill WhatsApp messages</strong> with the service name, so a tap starts the conversation and you know which page it came from.</li>
+  <li><strong>Keep forms short, and let them sort enquiries.</strong> On <a href="/work/vansh-group/">Vansh Group's</a> site, the contact form has a service-type dropdown so enquiries arrive already sorted by service.</li>
+  <li><strong>Explain jargon</strong> the first time you use it, or leave it out.</li>
+  <li><strong>Write as long as the questions need,</strong> and no longer. Padding to hit a word count makes the page worse.</li>
+</ul>
+
+<h2>SEO essentials for service pages</h2>
+<ul>
+  <li>A title tag of about 60 characters or fewer with the service (and area), and a meta description that gives a reason to enquire.</li>
+  <li>One H1 naming the service, and H2s that say something, such as "What AC servicing includes" rather than "Our offering".</li>
+  <li>A short, readable URL that you won't need to change.</li>
+  <li>Links to the page from the main menu, the homepage, related services and relevant blog posts, and links from the page to guides for visitors still researching.</li>
+  <li>Structured data describing the business and the service. Rank Math includes a Service schema type at the time of writing; other plugins may need an add-on or custom code.</li>
+  <li>Unique text on every service page. A shared layout is fine; copying paragraphs and swapping the service or city name is not.</li>
+  <li>Real photos, compressed and with descriptive alt text, and a page that loads quickly on mobile data.</li>
 </ul>
 <p>Run through the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a> before publishing.</p>
 
-<h2>Common mistakes</h2>
+<h2>Building service pages in WordPress</h2>
 <ul>
-  <li>Thin pages with a paragraph and a contact form</li>
-  <li>Jargon instead of the customer's language</li>
-  <li>No proof or examples</li>
-  <li>The same text copied across several service pages</li>
+  <li><strong>Use Pages, with a parent "Services" page</strong> that introduces and links to each one, so the structure is clear to visitors and Google.</li>
+  <li><strong>Share the layout, not the words.</strong> Save the section layout as an Elementor template or a block pattern so every page has the same structure, then write each page's content from scratch.</li>
+  <li><strong>Make the call-to-action block reusable,</strong> as an Elementor global widget or a synced pattern, so a new phone number or WhatsApp link is changed once, everywhere.</li>
+  <li><strong>Track enquiries by page.</strong> With form submissions and WhatsApp clicks set up as key events in GA4, the landing page report shows which service pages bring enquiries and which need work.</li>
 </ul>
 
-<h2>See it in practice</h2>
-<p>Every service page on this site follows this pattern, for example <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> and <a href="/wordpress-maintenance/">WordPress maintenance</a>: headline, benefits, what's included, an "in depth" section, related work, process, FAQs and contact.</p>
+<h2>Common service page mistakes</h2>
+<ul>
+  <li>A heading, two sentences and a contact form.</li>
+  <li>The same text on every service page or city page with one word swapped.</li>
+  <li>Describing the company instead of the customer's problem.</li>
+  <li>No hint of price and no explanation of the process.</li>
+  <li>Generic or invented testimonials, or only stock photos.</li>
+  <li>The only call to action at the very bottom, or five competing ones.</li>
+  <li>Trying to rank a blog post for a "hire" or "near me" search that needs a service page.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What should a service page include?</h3>
+<p>The service named clearly, who it's for, what's included and excluded, how the process works, price or the factors behind it, proof such as case studies and testimonials, FAQs, and a call to action repeated through the page with a form, WhatsApp and phone.</p>
+<h3>How long should a service page be?</h3>
+<p>Long enough to answer what buyers ask before they enquire, and no longer. A simple local service may need a few hundred words; a complex B2B service with a detailed process and FAQs needs much more. Let your list of customer questions decide.</p>
+<h3>Should I put prices on my service pages?</h3>
+<p>If your pricing is standard, showing it filters enquiries and builds trust. If every job differs, give ranges, a starting point or the factors that affect the price, so visitors can judge whether you fit their budget.</p>
+<h3>Should I create a separate page for each city I serve?</h3>
+<p>Only when you have genuinely local content for each city, such as local projects, team, address or area-specific details. Otherwise list your areas on the main service page and keep a strong Google Business Profile.</p>
+<h3>Do service pages need FAQs?</h3>
+<p>They help. FAQs answer the last doubts that stop people enquiring, and they let the page match longer, question-style searches. Keep them to real questions with short, direct answers.</p>
+
+<p>This site's own service pages follow the same pattern: headline, benefits, what's included, an in-depth section, related work, process, FAQs and contact. If you'd like service pages planned and built this way for your business, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -12970,95 +13075,269 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   },
   {
     slug: 'xml-sitemaps-explained',
-    seoTitle: 'XML Sitemaps Explained for Business Websites',
-    title: 'XML Sitemaps Explained: What They Are and How to Use Them',
-    description: 'XML sitemaps explained: how they help Google find your pages, what to include or leave out, how WordPress builds one and how to submit it in Search Console.',
+    seoTitle: 'XML Sitemaps Explained: What to Include and How to Submit',
+    title: 'XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress',
+    description: 'XML sitemaps explained: what a sitemap does, what to include or leave out, how WordPress, Yoast and Rank Math build one, and how to submit it to Google.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-migration', 'website-redesign'],
     body: `
-<p>An XML sitemap is a file that lists the important pages on your website so search engines can find them efficiently. It doesn't guarantee rankings, but it helps Google discover and understand your site, especially new pages.</p>
+<p>An XML sitemap is a file that lists the URLs on your website you want search engines to crawl and index, usually with the date each page last changed. It helps Google discover pages, especially on a new site, a large site or pages with few internal links, but it does not force Google to index or rank anything. On WordPress the sitemap is generated for you, by WordPress itself or by an SEO plugin such as Yoast or Rank Math; your job is to keep it clean, submit it in Search Console and check what Google does with the URLs in it.</p>
+<p>In the audit that starts my <a href="/wordpress-seo-services/">WordPress SEO services</a>, the sitemap is one of three lists I compare, alongside what a crawler finds by following links and what Search Console reports as indexed, because a sitemap full of redirects, noindexed pages or staging URLs sends Google mixed signals about which pages matter. Below: what goes in a sitemap, how WordPress builds one, how to submit it and how to read the reports afterwards.</p>
+<p>If Search Console already shows an error for your sitemap, start with <a href="/blog/search-console-sitemap-couldnt-fetch/">sitemap "couldn't fetch" explained</a>, then come back here to clean up what the sitemap lists.</p>
 
-<h2>What a sitemap contains</h2>
+<h2>What an XML sitemap is, and what it isn't</h2>
+<p>A sitemap is a plain list written in a standard format that Google, Bing and other search engines read. A minimal one looks like this:</p>
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://example.com/services/wordpress-maintenance/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-10-01&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://example.com/blog/website-launch-checklist/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-09-18&lt;/lastmod&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;</code></pre>
 <ul>
-  <li>URLs of the pages you want indexed</li>
-  <li>Optionally, when each page was last modified</li>
-  <li>Sometimes separate sitemaps for posts, pages, products and images, combined in a sitemap index</li>
+  <li><strong>loc</strong> is the full URL of the page, exactly as you want it indexed: https, the right www or non-www version, and the trailing slash your site uses.</li>
+  <li><strong>lastmod</strong> is when the page's content last changed meaningfully. Google uses it when it proves accurate over time.</li>
+  <li><strong>changefreq and priority</strong> still appear in many sitemaps, but Google has said it ignores both, so don't spend time tuning them.</li>
+</ul>
+<p>Larger sites split their URLs into several sitemaps, such as one for posts, one for pages and one for products, and list those in a <strong>sitemap index</strong>. Each sitemap file can hold up to 50,000 URLs or 50 MB uncompressed, so the split is normally about organisation rather than size.</p>
+<p>What a sitemap doesn't do: it doesn't override a noindex tag or a robots.txt block, it doesn't replace internal links, and it doesn't tell Google a page is good enough to index. It is a discovery aid, nothing more.</p>
+
+<h2>Do you need a sitemap?</h2>
+<p>Google's own guidance says a small site of a few hundred pages that is well linked internally may not need one. In practice, every WordPress business site should still have one, because it costs nothing and is generated automatically. It matters most for:</p>
+<ul>
+  <li><strong>New websites</strong> with few links from other sites, where Google has few other ways to find pages.</li>
+  <li><strong>Large sites and stores,</strong> where some products or posts sit many clicks from the homepage.</li>
+  <li><strong>Sites that change often,</strong> such as blogs and WooCommerce stores adding products every week.</li>
+  <li><strong>Pages with few internal links.</strong> A sitemap helps Google find them, but the real fix is linking to them; see <a href="/blog/orphan-pages-fix/">orphan pages and how to fix them</a>.</li>
 </ul>
 
-<h2>What should be in it</h2>
-<ul>
-  <li>Important, indexable pages: homepage, services, products, articles, case studies</li>
-  <li>The canonical (preferred) version of each URL</li>
-</ul>
-
-<h2>What should not be in it</h2>
-<ul>
-  <li>Pages blocked by noindex</li>
-  <li>Redirected or broken URLs</li>
-  <li>Duplicate versions, filtered URLs, cart and account pages</li>
-  <li>Thank-you pages and low-value archives</li>
-</ul>
+<h2>What to include and what to leave out</h2>
+<p>The rule is simple: list only pages you want to appear in Google, at the exact URL you want indexed, that load normally.</p>
+<table>
+  <thead><tr><th>Include</th><th>Leave out</th><th>Why leave it out</th></tr></thead>
+  <tbody>
+    <tr><td>Homepage, service and industry pages</td><td>Pages set to noindex</td><td>You'd be asking Google to crawl a page and telling it not to index it</td></tr>
+    <tr><td>Blog posts and case studies</td><td>Redirected URLs</td><td>The sitemap should list the final address, not the old one</td></tr>
+    <tr><td>Products and useful product categories</td><td>404 and deleted pages</td><td>Errors in a sitemap suggest it isn't maintained</td></tr>
+    <tr><td>Location pages with real content</td><td>Duplicate or parameter URLs, such as filtered or sorted shop pages</td><td>Only the canonical version belongs; see <a href="/blog/canonical-tags-explained/">canonical tags explained</a></td></tr>
+    <tr><td>Category archives that help visitors</td><td>Thin tag archives, attachment pages, author archives on a one-author site</td><td>Low-value pages dilute the list</td></tr>
+    <tr><td>Downloadable PDFs you want found</td><td>Cart, checkout, my-account and thank-you pages</td><td>They are useless as search results</td></tr>
+  </tbody>
+</table>
+<p>Whether category and tag archives belong depends on whether they are useful pages in their own right; <a href="/blog/category-tag-pages-seo/">SEO for category and tag pages</a> helps you decide.</p>
 
 <h2>How WordPress creates sitemaps</h2>
-<p>WordPress includes a basic sitemap, and SEO plugins such as Rank Math or Yoast generate more configurable ones (often at <code>/sitemap_index.xml</code>). Use one sitemap system to avoid confusion.</p>
-
-<h2>Submit and monitor</h2>
+<p>Since WordPress 5.5, WordPress has generated a basic sitemap of its own. SEO plugins replace it with a more configurable one. Use one system only: when you turn on a plugin's sitemap, it normally switches off the WordPress one.</p>
+<table>
+  <thead><tr><th>Generated by</th><th>Usual address</th><th>Where to control it</th></tr></thead>
+  <tbody>
+    <tr><td>WordPress core</td><td>https://example.com/wp-sitemap.xml</td><td>No settings screen; changes need code or a plugin</td></tr>
+    <tr><td>Yoast SEO</td><td>https://example.com/sitemap_index.xml</td><td>Yoast SEO &gt; Settings: the XML sitemaps switch under Site features, plus the "show in search results" switches for each content type and taxonomy</td></tr>
+    <tr><td>Rank Math</td><td>https://example.com/sitemap_index.xml</td><td>Rank Math SEO &gt; Sitemap Settings, with an "Include in Sitemap" switch for each post type and taxonomy</td></tr>
+    <tr><td>All in One SEO</td><td>https://example.com/sitemap.xml</td><td>All in One SEO &gt; Sitemaps</td></tr>
+  </tbody>
+</table>
+<p>Menu names move around between plugin versions, so treat these as a guide at the time of writing. In Yoast and Rank Math, setting a single post or page to noindex (in the Advanced tab of the plugin's panel in the editor) also removes it from the sitemap, which is the cleanest way to drop one URL.</p>
+<h3>Tidying a WordPress sitemap</h3>
 <ol>
-  <li>Open Google Search Console, go to Sitemaps</li>
-  <li>Submit your sitemap URL</li>
-  <li>Check its status and number of discovered URLs</li>
-  <li>Review the Pages report for indexing issues</li>
+  <li>Open your sitemap index in a browser and click into each child sitemap. Note anything you wouldn't want as a search result.</li>
+  <li>Switch off post types and taxonomies that produce thin pages, typically tags, media attachment pages and, on a site with one author, author archives.</li>
+  <li>Noindex individual pages that shouldn't be found, such as thank-you pages and internal landing pages built only for ads.</li>
+  <li>Check one URL from each child sitemap: it should load with a 200 status, not redirect, and its canonical tag should point to itself.</li>
 </ol>
-<p>Add the sitemap location to your robots.txt too; see <a href="/blog/robots-txt-explained/">robots.txt explained</a>.</p>
+<p>Without an SEO plugin, the core sitemap can be trimmed with a filter in a small custom plugin or your child theme's functions.php. This one removes the users (author) sitemap:</p>
+<pre><code>add_filter( 'wp_sitemaps_add_provider', function( $provider, $name ) {
+  return ( 'users' === $name ) ? false : $provider;
+}, 10, 2 );</code></pre>
+<p>One thing worth knowing: if https://example.com/wp-sitemap.xml shows a 404 and you have no SEO plugin, check <strong>Settings &gt; Reading</strong>. WordPress turns its sitemap off while "Discourage search engines from indexing this site" is ticked.</p>
 
-<h2>Keep it clean</h2>
-<p>A sitemap full of redirects, errors or noindexed pages sends mixed signals. Check it after redesigns and migrations. See the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit checklist</a>.</p>
+<h2>Keep lastmod honest</h2>
+<p>Google has said it uses lastmod only when it is consistently and verifiably accurate. If every URL shows today's date after every small change, or after a bulk edit re-saves every post, Google learns to ignore the field. Then it has no hint about which pages genuinely changed.</p>
+<ul>
+  <li>Let lastmod change when the content changes: new sections, corrected information, updated prices or products.</li>
+  <li>Avoid tools or habits that re-save every post at once without real edits.</li>
+  <li>Don't fake freshness by changing dates without changing the page.</li>
+</ul>
+<p>This site is custom-coded rather than built on WordPress, and its build script now changes a page's lastmod only when that page's content actually changes, for exactly this reason. Google also retired its old sitemap "ping" address in 2023, so an accurate lastmod in a sitemap Google already knows is now the main way to signal an update.</p>
 
-<p>For new sites, read <a href="/blog/get-website-indexed-google-faster/">how to get indexed faster</a>.</p>
+<h2>Submit your sitemap to Google and Bing</h2>
+<ol>
+  <li>In Google Search Console, open <strong>Indexing &gt; Sitemaps</strong>.</li>
+  <li>Under "Add a new sitemap", enter the sitemap index address, such as sitemap_index.xml, and click <strong>Submit</strong>. Submit the index only; Google reads the child sitemaps from it.</li>
+  <li>Add a Sitemap line with the full sitemap URL to your robots.txt, so any crawler can find it; see <a href="/blog/robots-txt-explained/">robots.txt explained</a>.</li>
+  <li>In Bing Webmaster Tools, submit the same sitemap, or import your site from Search Console, which brings the sitemap with it.</li>
+</ol>
+<p>You don't need to resubmit after every new post. Google rechecks known sitemaps on its own schedule. Resubmitting after a migration or a big restructure does no harm.</p>
+
+<h2>Reading the Sitemaps and Pages reports</h2>
+<p>The Sitemaps report shows a status for each sitemap (Success, Has errors or Couldn't fetch), when Google last read it and how many URLs it discovered. Success only means Google could read the file. It says nothing about indexing.</p>
+<p>For that, open <strong>Indexing &gt; Pages</strong> and change the filter at the top from "All known pages" to "All submitted pages", or to one specific sitemap. You now see which listed URLs are indexed and, for the rest, the reason. Patterns to look for:</p>
+<ul>
+  <li><strong>Excluded by noindex, Page with redirect or Not found (404):</strong> the sitemap lists URLs it shouldn't. Fix the sitemap settings.</li>
+  <li><strong>Alternate page with proper canonical tag:</strong> the sitemap lists duplicates instead of the canonical version.</li>
+  <li><strong>Discovered or Crawled, currently not indexed:</strong> the URLs are fine to list, but Google hasn't chosen to index them yet. That is a quality, linking or patience problem, not a sitemap problem; <a href="/blog/search-console-page-indexing-errors/">page indexing errors explained</a> covers what each status means.</li>
+</ul>
+
+<h2>Image, video and news sitemaps</h2>
+<p>Yoast and Rank Math add the images on each page to the sitemap entry for that page, which is enough for most sites. Google trimmed the image sitemap format in 2022 and now uses only the image location. Video sitemaps matter mainly for self-hosted videos, since YouTube embeds are found through YouTube, and news sitemaps are only for publishers whose content appears in Google News. A typical business site needs nothing beyond what its SEO plugin already produces.</p>
+
+<h2>Common sitemap mistakes</h2>
+<ul>
+  <li><strong>Two sitemaps from two plugins,</strong> such as an SEO plugin and a separate sitemap plugin, listing slightly different URLs.</li>
+  <li><strong>Old URLs after a move:</strong> http addresses, a staging domain or the previous domain still listed after a migration or redesign.</li>
+  <li><strong>The sitemap blocked</strong> by a robots.txt rule, a security plugin or a firewall setting that challenges bots.</li>
+  <li><strong>A stale cached copy</strong> served by a caching plugin or CDN, so new pages never appear in it.</li>
+  <li><strong>Treating submission as indexing.</strong> A sitemap gets URLs discovered; internal links, quality and time get them indexed. <a href="/blog/get-website-indexed-google-faster/">How to get a new site indexed faster</a> covers what actually speeds that up.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What is an XML sitemap in SEO?</h3>
+<p>It is a file listing the URLs you want search engines to crawl, with optional last-modified dates. It helps Google and Bing discover your pages efficiently, but it doesn't guarantee indexing or improve rankings by itself.</p>
+<h3>Where is my WordPress sitemap?</h3>
+<p>With Yoast or Rank Math it is usually at /sitemap_index.xml on your domain, with All in One SEO usually /sitemap.xml, and without an SEO plugin WordPress provides /wp-sitemap.xml. Your SEO plugin's sitemap settings also show a link to it.</p>
+<h3>Does submitting a sitemap get my pages indexed?</h3>
+<p>No. It makes sure Google knows the URLs exist. Google then decides whether to crawl and index each one based on quality, duplication, internal links and how much it trusts the site.</p>
+<h3>How often should I resubmit my sitemap?</h3>
+<p>Once is enough. Google rechecks submitted sitemaps by itself, and new posts appear automatically because WordPress plugins update the sitemap as you publish. Resubmit only after a migration or a major restructure if you want to prompt a fresh read.</p>
+<h3>Do I also need an HTML sitemap?</h3>
+<p>It is optional. An HTML sitemap is a normal page of links for visitors, and it can help on large sites, but good navigation and internal links do the same job. It doesn't replace the XML sitemap.</p>
+
+<p>Not sure whether your sitemap is helping or confusing Google? A sitemap and indexing check, with the fixes made on your site, is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
     slug: 'robots-txt-explained',
-    seoTitle: 'Robots.txt Explained Simply (and Common Mistakes)',
-    title: 'Robots.txt Explained Simply, With Common Mistakes to Avoid',
-    description: 'Robots.txt explained simply: how search engines use it, safe WordPress settings, blocking crawling vs indexing, and mistakes that hide sites from Google.',
+    seoTitle: 'Robots.txt Explained: WordPress Examples and Common Mistakes',
+    title: 'Robots.txt Explained Simply: How It Works, Safe WordPress Examples and Mistakes to Avoid',
+    description: 'Robots.txt explained simply: how crawlers read it, safe WordPress and WooCommerce examples, AI crawler rules, Search Console testing and common mistakes.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
-<p>Robots.txt is a small text file at the root of your website that tells search engine crawlers which areas they may or may not crawl. Used correctly it's harmless and useful; used wrongly it can hide your whole site from Google.</p>
+<p>Robots.txt is a small plain-text file at the root of your website that tells search engine crawlers which URLs they may and may not crawl. It controls crawling, not indexing: to keep a page out of Google you need a noindex tag on a page Google can crawl, not a robots.txt block. For most WordPress sites the right robots.txt is short, blocking only the admin area and pointing to your sitemap, and the biggest risks are rules that block too much, such as a leftover "Disallow: /" from a staging site.</p>
+<p>Robots.txt and the XML sitemap are both part of the setup in my <a href="/wordpress-seo-services/">WordPress SEO services</a>, because a single wrong line in this file can stop Google crawling a whole site. This guide explains how the file works, gives safe examples for WordPress and WooCommerce, covers AI crawlers and shows how to test it.</p>
+<p>If Search Console is already showing "Indexed, though blocked by robots.txt" or "Blocked by robots.txt", see <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">what those robots.txt statuses mean and how to fix them</a>.</p>
 
-<h2>What it looks like</h2>
-<p>A typical robots.txt contains rules such as allowing all crawlers, disallowing an admin or private folder, and pointing to your sitemap. On WordPress, a common safe setup allows everything except the admin area (while allowing the file WordPress uses for front-end features), plus a sitemap line.</p>
-
-<h2>Crawling vs indexing</h2>
-<p>This is the most misunderstood point:</p>
+<h2>How robots.txt works</h2>
 <ul>
-  <li><strong>robots.txt controls crawling:</strong> whether bots visit a URL</li>
-  <li><strong>noindex controls indexing:</strong> whether a page appears in search results</li>
-</ul>
-<p>If you block a page in robots.txt, Google can't see its noindex tag, and the URL might still appear in results if other sites link to it. To keep a page out of search results, use noindex and let it be crawled.</p>
-
-<h2>Common mistakes</h2>
-<ul>
-  <li><strong>Blocking the whole site</strong> with a leftover staging rule after launch</li>
-  <li><strong>Blocking CSS and JavaScript files</strong>, which stops Google rendering pages properly</li>
-  <li><strong>Using robots.txt to hide private content.</strong> It's public, and it doesn't secure anything. Use passwords for private areas.</li>
-  <li><strong>Blocking pages you want removed from search</strong> instead of using noindex</li>
+  <li><strong>It lives at one address:</strong> https://example.com/robots.txt. Each host has its own, so a subdomain such as shop.example.com needs its own file, and http and https versions are treated separately (another reason to redirect everything to one version).</li>
+  <li><strong>Crawlers read it before crawling.</strong> Google generally caches it for up to a day, so changes aren't picked up instantly.</li>
+  <li><strong>It is a request, not a lock.</strong> Googlebot, Bingbot and other reputable crawlers follow it. Scrapers and malicious bots ignore it.</li>
+  <li><strong>It is public.</strong> Anyone can read it, so listing a "secret" folder in it advertises that folder.</li>
+  <li><strong>No file is fine.</strong> If robots.txt returns a 404, crawlers assume they may crawl everything. A server error is worse: Google may pause crawling until the file loads properly again.</li>
 </ul>
 
-<h2>How to check yours</h2>
+<h2>The syntax, line by line</h2>
+<table>
+  <thead><tr><th>Line</th><th>What it does</th><th>Example</th></tr></thead>
+  <tbody>
+    <tr><td>User-agent</td><td>Names the crawler the following rules apply to; * means all crawlers</td><td>User-agent: Googlebot</td></tr>
+    <tr><td>Disallow</td><td>A path the crawler should not request</td><td>Disallow: /wp-admin/</td></tr>
+    <tr><td>Allow</td><td>An exception inside a disallowed path</td><td>Allow: /wp-admin/admin-ajax.php</td></tr>
+    <tr><td>Sitemap</td><td>The full URL of your XML sitemap; can appear anywhere in the file</td><td>Sitemap: https://example.com/sitemap_index.xml</td></tr>
+    <tr><td>#</td><td>A comment, ignored by crawlers</td><td># Added at launch</td></tr>
+  </tbody>
+</table>
+<p>A few rules that trip people up:</p>
 <ul>
-  <li>Visit yourdomain.com/robots.txt</li>
-  <li>Use the robots.txt report and URL Inspection tool in Google Search Console</li>
-  <li>After launches and migrations, confirm nothing important is disallowed</li>
+  <li><strong>Rules match from the start of the path.</strong> "Disallow: /blog" blocks /blog/, but also /blog-tips/ and /blogging-guide/. Add the trailing slash if you mean the folder.</li>
+  <li><strong>Paths are case-sensitive.</strong> /Images/ and /images/ are different.</li>
+  <li><strong>Wildcards:</strong> Google and Bing support * for "any characters" and $ for "end of URL", so "Disallow: /*.pdf$" blocks URLs ending in .pdf.</li>
+  <li><strong>The most specific rule wins.</strong> When an Allow and a Disallow both match, Google follows the longer rule; if they are equal, it follows the Allow.</li>
+  <li><strong>Google ignores crawl-delay</strong> (Bing respects it), and Google stopped supporting noindex lines in robots.txt in 2019.</li>
 </ul>
 
-<h2>AI crawlers</h2>
-<p>Some businesses choose whether to allow AI crawlers in robots.txt. Decide deliberately based on whether you want your content used and cited by AI tools; see <a href="/blog/ai-search-optimization-website/">AI search and your website</a>.</p>
+<h2>A safe robots.txt for WordPress</h2>
+<p>For a typical business site, this is all you need:</p>
+<pre><code>User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
 
-<p>See also <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a> and the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit</a>.</p>
+Sitemap: https://example.com/sitemap_index.xml</code></pre>
+<p>It keeps crawlers out of the dashboard while allowing admin-ajax.php, which some themes and plugins use to load content on the front end. Use your own sitemap address: sitemap_index.xml with Yoast or Rank Math, or wp-sitemap.xml with no SEO plugin; see <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
+<p>Resist adding more. Old advice to block /wp-includes/, /wp-content/plugins/ or /wp-content/themes/ now does harm, because Google renders pages like a browser and needs the CSS and JavaScript in those folders to see your layout. Blocking /wp-content/uploads/ hides your images from Google Images.</p>
+<h3>Virtual file or real file?</h3>
+<p>If there is no robots.txt file in your site's root folder, WordPress generates one on the fly, and SEO plugins often add their sitemap line to it. If a real robots.txt file exists, it replaces the generated one completely. To edit it, at the time of writing:</p>
+<ul>
+  <li><strong>Yoast SEO:</strong> Yoast SEO &gt; Tools &gt; File editor, which can create the file if none exists.</li>
+  <li><strong>Rank Math:</strong> Rank Math SEO &gt; General Settings &gt; Edit robots.txt. This only works when no physical file exists; if your edits don't appear on the live file, an old physical file is usually the reason.</li>
+  <li><strong>Hosting file manager or FTP:</strong> upload or edit robots.txt in the same folder as wp-config.php.</li>
+</ul>
+
+<h2>Robots.txt for WooCommerce stores</h2>
+<p>Stores create endless URL variations: add-to-cart links, sorting options and every combination of filters. They are all crawlable by default, and on a new store with limited crawling attention they can soak up visits Google could spend on products. A common addition:</p>
+<pre><code>User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /*?add-to-cart=
+Disallow: /*?*orderby=
+Disallow: /*?*filter_
+
+Sitemap: https://example.com/sitemap_index.xml</code></pre>
+<p>Two cautions. First, adjust the filter rule to the parameters your filter plugin actually uses, and never block filtered pages you have deliberately built to rank, such as a "red sarees" category view; <a href="/blog/woocommerce-product-filters/">WooCommerce product filters and SEO</a> explains that choice. Second, if filter URLs are already indexed, a robots.txt block stops Google seeing their canonical or noindex tags, so they can linger in results. Sort out canonicals first, then block. WooCommerce already asks search engines not to index the cart, checkout and account pages, so they don't need rules here.</p>
+
+<h2>Robots.txt blocks crawling, not indexing</h2>
+<p>This is the most misunderstood point. If other pages link to a URL you've blocked, Google can still index the bare URL without ever reading the page, and it can't see a noindex tag on a page it isn't allowed to crawl. Pick the tool that matches the goal:</p>
+<table>
+  <thead><tr><th>Your goal</th><th>Use</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Keep a page out of Google's results</td><td>A noindex tag, with crawling allowed</td><td>Google must crawl the page to see the noindex</td></tr>
+    <tr><td>Stop crawlers wasting time on endless URL variations</td><td>Robots.txt</td><td>This is what it is designed for</td></tr>
+    <tr><td>Keep private files or areas private</td><td>A login or password protection</td><td>Robots.txt is public and only a request</td></tr>
+    <tr><td>Keep a staging site out of Google</td><td>Password protection</td><td>A blocked staging site can still be indexed from links; see <a href="/blog/staging-sites-explained/">staging sites explained</a></td></tr>
+    <tr><td>Remove a page already in Google</td><td>Delete it (404 or 410) or noindex it, and leave it crawlable</td><td>Blocking it freezes the old version in the index</td></tr>
+  </tbody>
+</table>
+
+<h2>AI crawlers and robots.txt</h2>
+<p>AI companies run their own crawlers, and robots.txt is how you opt out of the ones that respect it. User-agent names at the time of writing include GPTBot (OpenAI's training crawler), OAI-SearchBot (ChatGPT search), ClaudeBot (Anthropic), PerplexityBot, CCBot (Common Crawl) and Google-Extended, which controls whether Google may use your content for its Gemini models. Blocking Google-Extended does not remove you from Google Search, and Google treats AI Overviews as part of Search.</p>
+<pre><code>User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /</code></pre>
+<p>Whether to block them is a business decision, not a technical one. A training crawler takes content without sending visitors; an AI search crawler is what lets assistants find and cite your pages. Many service businesses want to be cited, so they leave the search crawlers alone. <a href="/blog/ai-search-optimization-website/">AI search and your website</a> covers the trade-off. If you use Cloudflare, check whether its AI crawler settings are adding lines to your robots.txt on your behalf, then look at the live file to see exactly what crawlers receive.</p>
+
+<h2>Common robots.txt mistakes</h2>
+<ul>
+  <li><strong>"Disallow: /" left over from development.</strong> The classic launch mistake, and one of the first causes to rule out in <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn't showing on Google</a>.</li>
+  <li><strong>Blocking theme, plugin or upload folders,</strong> which breaks how Google renders your pages and hides your images.</li>
+  <li><strong>Blocking pages you want removed</strong> instead of noindexing them, which keeps them in results with no description.</li>
+  <li><strong>Listing private paths,</strong> which tells everyone where they are.</li>
+  <li><strong>A missing trailing slash,</strong> so a rule blocks far more URLs than intended.</li>
+  <li><strong>Editing in a plugin while a physical file overrides it,</strong> so your changes never go live.</li>
+  <li><strong>A wrong or old sitemap URL,</strong> such as the previous domain after a migration.</li>
+</ul>
+
+<h2>How to test your robots.txt</h2>
+<ol>
+  <li><strong>Open the live file</strong> at https://example.com/robots.txt, and also try the www or non-www and http versions to confirm they redirect to the same place.</li>
+  <li><strong>Open the robots.txt report in Search Console,</strong> under Settings &gt; Crawling. It shows the versions Google has fetched, when it last checked, any errors or warnings, and lets you request a recrawl after a fix. It replaced the old robots.txt Tester, which Google retired in 2023.</li>
+  <li><strong>Inspect your key URLs</strong> with the URL Inspection tool. Under the crawl details, "Crawl allowed?" should say Yes for every page you want in Google.</li>
+  <li><strong>Use Bing Webmaster Tools' robots.txt tester</strong> if you also care about Bing.</li>
+  <li><strong>Repeat after every launch, redesign or migration,</strong> as part of a wider check such as the <a href="/blog/technical-seo-audit-wordpress/">WordPress technical SEO audit</a>.</li>
+</ol>
+
+<h2>FAQs</h2>
+<h3>What is robots.txt used for?</h3>
+<p>It tells search engine crawlers which parts of a site they shouldn't request, which helps them avoid admin areas and endless URL variations, and it tells them where your sitemap is. It isn't a security tool and it doesn't remove pages from search results.</p>
+<h3>Where is robots.txt in WordPress?</h3>
+<p>Usually nowhere on disk: WordPress generates a virtual one at /robots.txt on your domain. You can edit it through Yoast's file editor or Rank Math's robots.txt setting, or create a real file in the site's root folder, which then takes over completely.</p>
+<h3>Does robots.txt stop a page from appearing in Google?</h3>
+<p>Not reliably. A blocked page can still be indexed if other pages link to it, just without a description. Use a noindex tag on a crawlable page, or delete the page, if you want it gone from results.</p>
+<h3>Should I block AI crawlers like GPTBot?</h3>
+<p>It depends on whether you mind your content being used to train AI models, and whether you want AI assistants to cite you. Blocking training crawlers while allowing AI search crawlers is a common middle ground. Google-Extended affects only Google's AI models, not your Google Search rankings.</p>
+<h3>Do I need a robots.txt file at all?</h3>
+<p>No. Without one, crawlers assume everything is allowed, which is fine for many small sites. WordPress provides one anyway, and a short file with your sitemap line is useful.</p>
+
+<p>Worried that a robots.txt rule, a stray noindex or a sitemap problem is holding your site back? Crawling and indexing checks, with fixes made on your site, are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -13326,53 +13605,120 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   },
   {
     slug: '301-vs-302-redirects',
-    seoTitle: '301 vs 302 Redirects Explained Simply',
-    title: '301 vs 302 Redirects: Which to Use and When',
-    description: '301 vs 302 redirects explained: permanent vs temporary, when to use each, how they affect SEO, avoiding chains and loops, and setting them up on WordPress.',
+    seoTitle: '301 vs 302 Redirects: Which to Use and How to Set Them Up',
+    title: '301 vs 302 Redirects: Which to Use, How They Affect SEO and How to Set Them Up in WordPress',
+    description: '301 vs 302 redirects explained: permanent vs temporary, 307 and 308, the SEO effect, chains and loops, and setting up redirects in WordPress and .htaccess.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'SEO',
     related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
     body: `
-<p>Redirects send visitors and search engines from one URL to another. Choosing the right type, and setting them up carefully, protects your rankings when pages move.</p>
+<p>A 301 redirect tells browsers and search engines that a page has moved permanently, so Google transfers indexing and ranking signals to the new URL. A 302 says the move is temporary, so Google keeps the original URL in its results and expects it back. Use a 301 for almost every real change, such as a new slug, a merged page, a new domain or the switch to https, and keep 302s for situations where the old URL genuinely returns. Whichever you use, send each old URL straight to its closest equivalent in a single hop.</p>
+<p>Redirects are where most redesigns and migrations quietly lose rankings. In my <a href="/wordpress-migration/">WordPress migration</a> work, every old URL that changes is 301-redirected to its new equivalent and Search Console is monitored after the move. This guide covers which redirect to use, what each does to SEO, and how to set them up on WordPress.</p>
+<p>If a redirect has gone wrong and your site now shows "too many redirects", go straight to <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS in WordPress</a>.</p>
 
-<h2>301: permanent</h2>
-<p>Use a 301 when a page has moved for good: a new URL, a merged page, a new domain, or http to https. Search engines transfer the old page's ranking signals to the new URL over time.</p>
+<h2>Redirect types at a glance</h2>
+<table>
+  <thead><tr><th>Type</th><th>Meaning</th><th>How Google treats it</th><th>Use it for</th></tr></thead>
+  <tbody>
+    <tr><td>301 Moved Permanently</td><td>The page has a new permanent address</td><td>A strong signal that the new URL should be indexed instead</td><td>Changed URLs, merged pages, domain and https moves</td></tr>
+    <tr><td>308 Permanent Redirect</td><td>Permanent, and the browser must repeat the same request method</td><td>The same as a 301</td><td>Mainly forms and APIs; a 301 is fine for normal pages</td></tr>
+    <tr><td>302 Found</td><td>The page is temporarily somewhere else</td><td>A weak signal; the original URL usually stays indexed</td><td>Short-term swaps and A/B tests between URLs</td></tr>
+    <tr><td>307 Temporary Redirect</td><td>Temporary, keeping the request method</td><td>The same as a 302</td><td>The same cases as a 302</td></tr>
+    <tr><td>Meta refresh</td><td>A redirect inside the page's HTML</td><td>An instant one is treated like a 301, a delayed one like a 302</td><td>Only when you can't set a server redirect</td></tr>
+    <tr><td>JavaScript redirect</td><td>A script sends the browser elsewhere</td><td>Followed only after Google renders the page</td><td>A last resort</td></tr>
+  </tbody>
+</table>
 
-<h2>302: temporary</h2>
-<p>Use a 302 (or 307) when the move is genuinely temporary: a short promotion, maintenance or A/B testing. Search engines keep the original URL indexed.</p>
-
-<h2>When redirects matter most</h2>
+<h2>When to use a 301</h2>
 <ul>
-  <li>Redesigns that change URLs; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a></li>
-  <li>Domain changes and platform migrations (Wix, Blogger, Shopify to WordPress)</li>
-  <li>Deleting or merging pages</li>
-  <li>Moving to HTTPS and one preferred www/non-www version</li>
+  <li><strong>You changed a page or post URL,</strong> including a permalink structure change; see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs in WordPress</a> before changing any.</li>
+  <li><strong>You merged pages,</strong> such as two thin posts on the same topic combined into one stronger article.</li>
+  <li><strong>You removed a page that has a close replacement,</strong> such as a discontinued product with a direct successor.</li>
+  <li><strong>You moved to https,</strong> or settled on one version of the domain (www or non-www).</li>
+  <li><strong>You changed domain or platform,</strong> such as a rebrand or a move from Wix to WordPress, where every old URL needs mapping; <a href="/blog/change-domain-name-without-losing-seo/">changing your domain without losing SEO</a> walks through the domain case.</li>
 </ul>
 
-<p>Changing a page slug or your WordPress permalink settings also needs redirects; see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs in WordPress</a>.</p>
-
-<h2>Common mistakes</h2>
+<h2>When a 302 or 307 is the right choice</h2>
 <ul>
-  <li><strong>Redirecting everything to the homepage.</strong> Redirect each old page to its closest equivalent.</li>
-  <li><strong>Redirect chains:</strong> A → B → C slows pages and loses signals. Point A straight to C.</li>
-  <li><strong>Redirect loops:</strong> A → B → A breaks the page entirely</li>
-  <li><strong>Using 302 for permanent moves</strong></li>
-  <li><strong>Forgetting internal links:</strong> update links to point directly to new URLs</li>
+  <li><strong>The original URL will come back.</strong> For example, a menu link to an offers page temporarily sending visitors to a festival sale page for a fortnight.</li>
+  <li><strong>Split-testing two page URLs.</strong> Google's own advice for A/B tests that redirect visitors is to use a temporary redirect, so the original stays indexed.</li>
 </ul>
-
-<p>If a loop has taken your whole site offline with a "too many redirects" error, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS in WordPress</a>.</p>
-
-<h2>Setting up redirects on WordPress</h2>
+<p>And when neither is right:</p>
 <ul>
-  <li>SEO or redirection plugins manage redirects from the dashboard and log 404s</li>
-  <li>Server or hosting rules handle domain-wide redirects efficiently</li>
-  <li>Keep a spreadsheet of old URL → new URL for big changes</li>
+  <li><strong>Maintenance or downtime:</strong> return a 503 status, which tells Google to come back later. Good maintenance-mode plugins do this, and so does WordPress during core updates. Redirecting every page to a "back soon" page looks like a permanent change.</li>
+  <li><strong>Temporarily out-of-stock products:</strong> keep the page live with a back-in-stock note rather than redirecting it.</li>
+  <li><strong>Language or country detection:</strong> automatic redirects based on location can stop Google seeing your other versions. Offer a visible choice instead.</li>
 </ul>
+<p>If a permanent move was set up as a 302 by mistake, Google may eventually treat a long-standing 302 as permanent, but there's no reason to wait and see. Change it to a 301.</p>
 
-<p>For pages that truly no longer exist, make sure visitors land on a <a href="/blog/helpful-404-pages/">helpful 404 page</a>.</p>
+<h2>How redirects affect SEO</h2>
+<p>Google has said for years that a 301 or 302 doesn't lose ranking value just by being a redirect. When rankings drop after URLs change, it is almost always because of how the redirects were done:</p>
+<ul>
+  <li><strong>Redirecting to an unrelated page.</strong> Sending many old URLs to the homepage or a loosely related category looks like a deleted page to Google, which may treat it as a soft 404 and pass nothing on.</li>
+  <li><strong>Missing redirects.</strong> Old URLs that 404 lose the links pointing to them and the history Google had built up.</li>
+  <li><strong>Chains,</strong> where Google and visitors pass through several hops.</li>
+  <li><strong>Removing redirects too soon.</strong> Google's own site-move guidance is to keep them for as long as possible, generally at least a year. External links and bookmarks keep using old URLs for much longer, so I'd leave them in place indefinitely.</li>
+</ul>
+<p>Expect some movement in rankings for a few weeks after a large set of redirects while Google recrawls. A redirect is also not the only way to consolidate duplicates: when both URLs must stay usable, a canonical tag is the softer option; see <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</p>
 
-<h2>After setting redirects</h2>
-<p>Test old URLs, check Search Console for 404s, and keep redirects in place long term. See also <a href="/blog/canonical-tags-explained/">canonical tags explained</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<h2>Redirect chains, loops and "Avoid multiple page redirects"</h2>
+<p>A chain is a redirect that leads to another redirect. A common one on WordPress sites looks like this:</p>
+<pre><code>http://example.com/old-page/
+  -&gt; https://example.com/old-page/
+  -&gt; https://www.example.com/old-page/
+  -&gt; https://www.example.com/new-page/</code></pre>
+<p>Googlebot follows a limited number of hops, and every hop adds a delay on a slow mobile connection. The fix is for every rule to point at the final URL, so the first request lands on https://www.example.com/new-page/ directly.</p>
+<p>PageSpeed Insights flags redirects on the page you test, for years under the name "Avoid multiple page redirects" (newer versions group it with other server response checks). On WordPress the usual causes are internal links or ads still using http or the wrong www version, https being forced in two places (a plugin and the server, or the server and Cloudflare), and an old redirect pointing to a URL that was itself redirected later. Update the old redirect's target, force https in one place only, and replace old URLs in your content and menus. A loop, where A points to B and B back to A, breaks the page entirely and needs the step-by-step checks in the too-many-redirects guide linked above.</p>
+
+<h2>How to set up redirects on WordPress</h2>
+<table>
+  <thead><tr><th>Method</th><th>Best for</th><th>Things to know</th></tr></thead>
+  <tbody>
+    <tr><td>WordPress itself</td><td>Changed post slugs</td><td>WordPress remembers a post's old slug and 301-redirects it, but not reliably for pages or a permalink structure change</td></tr>
+    <tr><td>Redirection plugin (free)</td><td>Individual page redirects on any site</td><td>Under Tools &gt; Redirection; logs 404s, can add redirects when a slug changes, imports and exports CSV</td></tr>
+    <tr><td>Rank Math Redirections (free module)</td><td>Sites already using Rank Math</td><td>301, 302, 307 and 410 options, with a 404 monitor</td></tr>
+    <tr><td>Yoast SEO Premium</td><td>Sites already paying for Yoast Premium</td><td>Its redirect manager offers to create a redirect when you change a URL or delete a page; the free version has no redirect manager</td></tr>
+    <tr><td>.htaccess on the server</td><td>Site-wide rules such as https or a domain change</td><td>Works on Apache and LiteSpeed servers, which many shared hosts use, including Hostinger; not on Nginx</td></tr>
+    <tr><td>Cloudflare or your hosting panel</td><td>Domain-level redirects</td><td>Runs before WordPress, so check it doesn't duplicate a plugin rule</td></tr>
+  </tbody>
+</table>
+<p>Menu names are correct at the time of writing. Pick one home for page-level redirects and one for site-wide rules, and write down which is which. If you ever uninstall a redirect plugin, export its redirects first, because they stop working the moment it is deactivated.</p>
+<h3>.htaccess examples</h3>
+<p>Take a backup of the file first, and place your rules above the "# BEGIN WordPress" line, since WordPress rewrites everything between its own markers:</p>
+<pre><code># Send http to https on one hostname, in one hop
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
+
+# Send one old page to its new address
+RewriteRule ^old-services/?$ https://example.com/services/ [R=301,L]</code></pre>
+<p>If your site sits behind Cloudflare or a host's proxy, the https check above can cause a loop, because the server may see every request as plain http. In that case, force https with your host's or Cloudflare's own setting instead.</p>
+
+<h2>A redirect checklist for changed URLs</h2>
+<ol>
+  <li>List every old URL: a crawl of the site, your XML sitemap, Search Console's top pages and GA4 landing pages.</li>
+  <li>Map each one to its closest new equivalent in a spreadsheet. Only URLs with no equivalent and no traffic or links should be left to return a 404 or 410, with a <a href="/blog/helpful-404-pages/">helpful 404 page</a> to catch visitors.</li>
+  <li>Create 301s that go to the final URL in one hop.</li>
+  <li>Update internal links, menus, buttons and your sitemap to the new URLs, so you aren't relying on redirects for your own links.</li>
+  <li>Test old URLs in a private window, because browsers cache 301s and can show you an old result, or use a redirect checker that lists every hop.</li>
+  <li>Watch Search Console's Pages report for new 404s over the following weeks. Old URLs showing as "Page with redirect" are expected.</li>
+</ol>
+<p>For a full site, the <a href="/blog/redesign-website-without-losing-rankings/">redesign SEO checklist</a> covers benchmarking and the URL map in more depth.</p>
+
+<h2>FAQs</h2>
+<h3>What is the difference between a 301 and a 302 redirect?</h3>
+<p>A 301 means the page has moved permanently, so Google indexes the new URL and moves its signals there. A 302 means the move is temporary, so Google usually keeps the original URL indexed. Visitors see the same thing with both.</p>
+<h3>Does a 301 redirect hurt SEO?</h3>
+<p>Not by itself. Problems come from redirecting to unrelated pages, chains of several hops, missing redirects for pages that had links, and removing redirects too early.</p>
+<h3>How long should I keep a 301 redirect?</h3>
+<p>Google recommends keeping redirects from a site move for as long as possible, generally at least a year. Since old links and bookmarks keep working only while the redirect exists, leaving them in place permanently is the safer choice.</p>
+<h3>How do I fix "Avoid multiple page redirects" in WordPress?</h3>
+<p>Find the chain with a redirect checker, then make every rule point to the final URL, force https in only one place, and update internal links and ads that use old, http or wrong-www addresses.</p>
+<h3>Can I redirect a deleted page to my homepage?</h3>
+<p>Only if the homepage genuinely replaces it. Otherwise Google tends to treat it as a soft 404. Redirect to the closest related page, or let the URL return a 404 or 410 if nothing related exists.</p>
+
+<p>Moving hosts, changing domain or restructuring your URLs? A <a href="/wordpress-migration/">WordPress migration</a> includes a redirect map for changed URLs and post-move checks, and if redirect chains or old URLs are already holding your site back, <a href="/wordpress-seo-services/">WordPress SEO services</a> cover the clean-up.</p>
 `,
   },
   {
@@ -16272,100 +16618,233 @@ Description: Buy %title% online. %excerpt%</code></pre>
   },
   {
     slug: 'utm-tags-explained',
-    seoTitle: 'UTM Tags Explained: Track Where Visitors Come From',
-    title: 'UTM Tags Explained: Know Which Campaigns Bring Visitors',
-    description: 'UTM tags explained: how to add them to social posts, WhatsApp, emails and ads, tidy naming conventions and how to read UTM data in Google Analytics.',
+    seoTitle: 'UTM Tags Explained: How to Build and Track Campaign Links',
+    title: 'UTM Tags Explained: How to Tag Campaign Links and See Which Ones Bring Enquiries in GA4',
+    description: 'UTM tags explained: the five parameters, naming GA4 understands, examples for WhatsApp, Instagram, email, QR codes and Meta ads, and reading them in GA4.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-seo-services', 'website-for-startups'],
     body: `
-<p>When someone clicks a link in a WhatsApp message, Instagram bio or email, Google Analytics often can't tell where they came from. UTM tags fix that by adding a few labels to the link.</p>
+<p>UTM tags are short labels added to the end of a link, such as utm_source, utm_medium and utm_campaign, that tell Google Analytics exactly where a visitor came from. Use them on links you share outside your website, such as WhatsApp messages, your Instagram bio, email newsletters, QR codes, partner sites and Meta ads, and never on links between your own pages. Keep the names lowercase and consistent, and Google Analytics 4 will show you which campaigns bring visitors and, with key events set up, which ones bring enquiries.</p>
+<p>Tags tell you which campaign sent a visitor; the page they land on decides whether they enquire. In my <a href="/landing-page-design/">landing page design</a> work, form submissions, WhatsApp clicks and phone taps are tracked as conversions in GA4, Google Ads and Meta Pixel and confirmed with test enquiries, so campaigns can be compared by leads, not clicks.</p>
+<p>Without tags, a lot of campaign traffic is invisible. Links tapped inside WhatsApp, email apps, PDFs and many social apps often arrive with no referrer at all, so GA4 files them under Direct, as if the visitor had typed your address.</p>
 
-<h2>What UTM tags look like</h2>
-<p>A tagged link adds parameters after a question mark, for example: <code>?utm_source=linkedin&amp;utm_medium=social&amp;utm_campaign=diwali-offer</code></p>
+<h2>What a UTM-tagged link looks like</h2>
+<pre><code>https://example.com/diwali-offer/?utm_source=whatsapp&amp;utm_medium=social&amp;utm_campaign=diwali-2026&amp;utm_content=broadcast</code></pre>
+<p>Everything after the question mark is a parameter, and each one is separated by an ampersand. The page itself doesn't change, and if your link already contains a question mark, add the UTMs with an ampersand instead. Tagged links don't create duplicate pages in Google either, because a properly set canonical tag points to the clean address.</p>
 
-<h2>The main parameters</h2>
+<h2>The UTM parameters</h2>
 <table>
-  <thead><tr><th>Parameter</th><th>Meaning</th><th>Example</th></tr></thead>
+  <thead><tr><th>Parameter</th><th>Needed?</th><th>What it records</th><th>Shown in GA4 as</th><th>Example</th></tr></thead>
   <tbody>
-    <tr><td>utm_source</td><td>Where the traffic comes from</td><td>linkedin, whatsapp, newsletter</td></tr>
-    <tr><td>utm_medium</td><td>The type of channel</td><td>social, email, cpc, qr</td></tr>
-    <tr><td>utm_campaign</td><td>The specific campaign</td><td>diwali-offer, spring-webinar</td></tr>
-    <tr><td>utm_content</td><td>(Optional) which link or creative</td><td>banner-a, bio-link</td></tr>
+    <tr><td>utm_source</td><td>Yes</td><td>The specific place the click came from</td><td>Session source</td><td>whatsapp, instagram, newsletter</td></tr>
+    <tr><td>utm_medium</td><td>Yes</td><td>The type of channel</td><td>Session medium</td><td>social, email, referral, paid_social</td></tr>
+    <tr><td>utm_campaign</td><td>Yes</td><td>The campaign or offer</td><td>Session campaign</td><td>diwali-2026, monsoon-ac-service</td></tr>
+    <tr><td>utm_content</td><td>Optional</td><td>Which link, post or creative</td><td>Session manual ad content</td><td>bio-link, story, banner-a</td></tr>
+    <tr><td>utm_term</td><td>Optional</td><td>A paid keyword</td><td>Session manual term</td><td>wordpress-developer</td></tr>
   </tbody>
 </table>
+<p>At the time of writing, GA4 also reads utm_id and a few newer parameters for advertising platforms, which most small businesses can ignore.</p>
 
-<h2>Where to use them</h2>
+<h2>Use medium names GA4 recognises</h2>
+<p>GA4 sorts visits into channels, such as Organic Social, Paid Social, Email and Referral, using rules based on the source and medium. A medium it doesn't recognise lands in a channel called Unassigned. The values below work with GA4's default rules at the time of writing; you can see the full rules under <strong>Admin &gt; Data display &gt; Channel groups</strong>.</p>
+<table>
+  <thead><tr><th>GA4 channel</th><th>Medium to use</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Email</td><td>email</td><td>For newsletters and email campaigns</td></tr>
+    <tr><td>Organic Social</td><td>social</td><td>With a social source such as instagram, facebook or linkedin</td></tr>
+    <tr><td>Paid Social</td><td>paid_social</td><td>With a social source, for Meta or LinkedIn ads</td></tr>
+    <tr><td>Referral</td><td>referral</td><td>Links you place on partner or directory sites</td></tr>
+    <tr><td>SMS</td><td>sms</td><td>Text message campaigns</td></tr>
+    <tr><td>Display</td><td>display</td><td>Banner ads bought outside Google Ads</td></tr>
+  </tbody>
+</table>
+<p>Two common Indian cases have no channel of their own. For WhatsApp broadcasts and Status links, pick one convention, such as source whatsapp with medium social, and stick to it. For QR codes on flyers, standees and visiting cards, a medium such as qr is clearer, and GA4 lets you create a custom channel group in the same Admin screen to report it as "Offline" rather than Unassigned.</p>
+
+<h2>Where to use UTM tags</h2>
+<table>
+  <thead><tr><th>Where the link appears</th><th>Source</th><th>Medium</th><th>Campaign and content</th></tr></thead>
+  <tbody>
+    <tr><td>WhatsApp broadcast or Status</td><td>whatsapp</td><td>social</td><td>diwali-2026, broadcast</td></tr>
+    <tr><td>Instagram bio link</td><td>instagram</td><td>social</td><td>profile, bio-link</td></tr>
+    <tr><td>Instagram story link sticker</td><td>instagram</td><td>social</td><td>diwali-2026, story</td></tr>
+    <tr><td>Email newsletter</td><td>newsletter</td><td>email</td><td>october-2026, header-button</td></tr>
+    <tr><td>QR code at an exhibition stall</td><td>expo-standee</td><td>qr</td><td>trade-expo-2026</td></tr>
+    <tr><td>Google Business Profile website button</td><td>google</td><td>organic</td><td>gbp-listing</td></tr>
+    <tr><td>Guest article or partner site</td><td>the partner's name</td><td>referral</td><td>guest-article</td></tr>
+  </tbody>
+</table>
+<p>Tagging your Business Profile's website link keeps it inside Organic Search in GA4 while letting you separate profile visits from ordinary search clicks by the campaign name. For printed QR codes, the tag is what tells you whether the flyer worked; <a href="/blog/qr-codes-for-business-website/">QR codes for your business</a> covers where to point them and static versus dynamic codes.</p>
+<h3>Meta ads</h3>
+<p>In Meta Ads Manager, add your tags in the ad's URL parameters field rather than typing them into the website URL. Meta's dynamic parameters, at the time of writing, fill in names automatically:</p>
+<pre><code>utm_source=facebook&amp;utm_medium=paid_social&amp;utm_campaign={{campaign.name}}&amp;utm_content={{ad.name}}</code></pre>
+<p>Keep campaign and ad names in Meta tidy, without spaces or capitals, if you use this, because those names become your GA4 values.</p>
+
+<h2>Where not to use UTM tags</h2>
 <ul>
-  <li>Social media posts and profile links</li>
-  <li>WhatsApp broadcasts and status links</li>
-  <li>Email newsletters</li>
-  <li>QR codes on flyers, cards and banners</li>
-  <li>Partner and guest article links you control</li>
+  <li><strong>Links between pages of your own site.</strong> A tagged banner or menu link overwrites the real source of the visit, so an enquiry that started from a Google search gets credited to your own banner. Track internal clicks with GA4 events instead; see <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</li>
+  <li><strong>Google Ads, when auto-tagging is on.</strong> Auto-tagging passes richer data to GA4 than manual tags, so leave it on and don't add UTMs to your Google Ads URLs unless you have a specific reason. <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a> covers the rest of that setup.</li>
+  <li><strong>Anything personal.</strong> Never put names, phone numbers or email addresses in a UTM. Google's policies don't allow personal information to be sent to Analytics.</li>
 </ul>
 
-<h2>Where not to use them</h2>
-<p>Don't add UTM tags to internal links on your own website. That overwrites the original source of the visit and messes up your data.</p>
-
-<h2>Keep naming consistent</h2>
+<h2>A naming convention that stays clean</h2>
 <ul>
-  <li>Use lowercase</li>
-  <li>Use hyphens instead of spaces</li>
-  <li>Keep a simple spreadsheet of sources, mediums and campaign names</li>
+  <li><strong>Lowercase only.</strong> GA4 treats Instagram and instagram as two different sources.</li>
+  <li><strong>Hyphens instead of spaces,</strong> which otherwise turn into %20 or plus signs.</li>
+  <li><strong>One spelling per source.</strong> Decide on whatsapp, not wa one week and WhatsApp the next.</li>
+  <li><strong>Campaign names with a theme and a period,</strong> such as diwali-2026 or summer-camp-2026.</li>
+  <li><strong>One shared spreadsheet</strong> with the date, destination page, each parameter, the finished link and who created it.</li>
+</ul>
+<p>Google's free Campaign URL Builder creates links one at a time. A spreadsheet is faster for many links: put the page in column A and the source, medium and campaign in columns B to D, then build the link with a formula like this:</p>
+<pre><code>=A2&amp;"?utm_source="&amp;B2&amp;"&amp;utm_medium="&amp;C2&amp;"&amp;utm_campaign="&amp;D2</code></pre>
+<p>Long tagged links look messy in WhatsApp and make dense QR codes, so a link shortener you control is useful. Test the short link once to make sure the parameters survive, and check that any redirect on your own site keeps them too.</p>
+
+<h2>Reading UTM data in GA4</h2>
+<ol>
+  <li>Open <strong>Reports &gt; Acquisition &gt; Traffic acquisition</strong>.</li>
+  <li>Use the dropdown above the table to change the dimension to <strong>Session source / medium</strong> or <strong>Session campaign</strong>.</li>
+  <li>Make sure the key events column shows your enquiry events, so each campaign shows enquiries, not only sessions and engagement.</li>
+  <li>For more detail, such as campaign by landing page, build a free-form report under <strong>Explore</strong>.</li>
+</ol>
+<p>Before a campaign goes out, tap your own tagged link on your phone and check that the visit appears in the Realtime report or DebugView; standard reports can take a day or so to fill in. Then use the numbers to decide where effort goes; <a href="/blog/measure-website-roi/">measuring website ROI</a> shows how to put a rupee value on the enquiries each campaign brings.</p>
+<p>UTMs only cover clicks. Enquiries that arrive by phone or WhatsApp after someone saw a poster won't carry a tag, so two simple back-ups help. A pre-filled WhatsApp message that names the campaign shows where a chat started; <a href="/blog/call-tracking-small-business/">call and WhatsApp tracking</a> explains how. And a "how did you hear about us" question on the enquiry form, like the dropdown on <a href="/work/studio-agama-interiors/">Studio Agama Interiors'</a> form with options such as Google, Facebook ads, Instagram and word of mouth, catches what tags miss.</p>
+
+<h2>Common UTM mistakes</h2>
+<ul>
+  <li>Tagging internal links, which corrupts your source data.</li>
+  <li>Mixing capitals and spellings, which splits one source into several rows.</li>
+  <li>Leaving out the medium, so visits show as (not set) or Unassigned.</li>
+  <li>Adding a second question mark to a link that already has one.</li>
+  <li>Pointing tags at a URL that redirects and drops the parameters.</li>
+  <li>Building links from memory instead of the spreadsheet, so naming drifts over a few months.</li>
 </ul>
 
-<p>Tags show where visitors came from, but the page they land on decides whether they enquire. For paid campaigns, a <a href="/landing-page-design/">dedicated landing page for your ads</a>, with its form and tracking already set up, gives each campaign a fair test.</p>
+<h2>FAQs</h2>
+<h3>What are UTM parameters used for?</h3>
+<p>They tell Google Analytics where a visitor came from when it can't work that out itself, such as clicks from WhatsApp, email, QR codes and social posts. Combined with key events, they show which campaigns bring enquiries.</p>
+<h3>Do UTM tags affect SEO?</h3>
+<p>No. They only affect analytics. Tagged versions of a page don't compete with the original in Google as long as your pages have correct canonical tags, which WordPress SEO plugins set by default.</p>
+<h3>Which UTM parameters are required?</h3>
+<p>Use source, medium and campaign on every tagged link. Content is optional but useful when one campaign has several links, and term is mainly for paid keywords.</p>
+<h3>Why does my UTM traffic show as Unassigned in GA4?</h3>
+<p>Usually because the medium isn't one GA4's channel rules recognise, such as qr or whatsapp. Switch to a recognised medium where one fits, or create a custom channel group that names your own values.</p>
+<h3>How do I track WhatsApp traffic in GA4?</h3>
+<p>Add UTM tags to every link you send on WhatsApp, with a consistent source such as whatsapp, so those visits stop appearing as Direct. To track chats started from your website, use a click event on wa.me links and a pre-filled message naming the page or campaign.</p>
 
-<h2>Reading the results</h2>
-<p>In GA4, traffic acquisition reports show sessions and key events by source, medium and campaign. Combine with event tracking to see which campaigns actually bring enquiries; see <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</p>
-
-<p>For planning campaigns, see <a href="/blog/seasonal-festival-campaigns-website/">seasonal campaigns</a> and <a href="/blog/repurpose-website-content-social-media/">repurposing content for social media</a>.</p>
+<p>Running campaigns and want to see which ones actually produce enquiries? A <a href="/landing-page-design/">landing page</a> built for one campaign, with conversion tracking confirmed before the ads start, makes your UTM data worth reading.</p>
 `,
   },
   {
     slug: 'thank-you-pages-forms',
-    seoTitle: 'Thank-You Pages: Why Every Website Form Needs One',
-    title: 'Thank-You Pages: Why Every Website Form Needs One',
-    description: 'Why every website form needs a thank-you page or confirmation message: reassurance, conversion tracking, next steps, cross-selling and what to include.',
+    seoTitle: 'Thank-You Pages for Website Forms: What to Include and Track',
+    title: 'Thank-You Pages: Why Every Website Form Needs One, What to Put on It and How to Track It',
+    description: 'Why every website form needs a thank-you page: what to include, how to redirect in WPForms, Elementor or CF7, and how to track it in GA4 and Google Ads.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
-<p>What happens after someone submits your contact form? On many sites, a tiny line of text appears, or nothing obvious at all. A good confirmation, ideally a dedicated thank-you page, reassures the visitor and helps you measure results.</p>
+<p>A thank-you page is the page a visitor sees after submitting a form on your website. A good one confirms the enquiry arrived, says honestly what happens next, offers a faster route such as WhatsApp or a call, and points to something useful to read while they wait. It also gives you a reliable conversion to track in Google Analytics 4, Google Ads and Meta. Set your form to redirect there only after a successful submission, keep the page out of Google, and make sure each enquiry is counted once.</p>
+<p>Every landing page in my <a href="/landing-page-design/">landing page design</a> service comes with a thank-you page, and conversions are counted on successful submissions, through the thank-you page or the form's success event, never on clicks of the submit button, which also count failed attempts.</p>
+<p>A thank-you page can't help if submissions fail or the emails never arrive. If enquiries have dried up, check that first with <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a>.</p>
 
-<h2>Why it matters</h2>
-<ul>
-  <li><strong>Reassurance:</strong> visitors know their message arrived</li>
-  <li><strong>Expectations:</strong> they know when and how you'll respond</li>
-  <li><strong>Tracking:</strong> a thank-you page view is an easy, reliable conversion to track</li>
-  <li><strong>Next steps:</strong> keep interested visitors engaged</li>
-</ul>
+<h2>Thank-you page or inline message?</h2>
+<table>
+  <thead><tr><th>Option</th><th>Strengths</th><th>Weaknesses</th><th>Best for</th></tr></thead>
+  <tbody>
+    <tr><td>Redirect to a thank-you page</td><td>Room for next steps, easy to track, a separate page for each form or campaign</td><td>People can reach it without submitting, so counts need care</td><td>Enquiry and quote forms, ad landing pages, downloads</td></tr>
+    <tr><td>Inline confirmation message</td><td>No extra page load, the visitor stays where they were</td><td>Easy to miss on a phone if it appears off screen; tracking needs a success event</td><td>Pop-ups, multi-step forms, newsletter sign-ups, forms that hand over to WhatsApp</td></tr>
+  </tbody>
+</table>
+<p>This site, which is custom-coded rather than built on WordPress, uses the inline approach because its form hands over to WhatsApp. Once an enquiry passes the form's spam checks, it is emailed, the form shows "Thanks! Your enquiry has been sent. Opening WhatsApp...", a GA4 generate_lead event records the lead along with whether the email went through, and WhatsApp opens with the details already typed in. Either approach works if the confirmation is obvious and tracking fires only on success.</p>
 
-<h2>What to include</h2>
+<h2>What to put on a thank-you page</h2>
 <ol>
-  <li><strong>A clear confirmation:</strong> "Thanks, {name}! We've received your enquiry."</li>
-  <li><strong>What happens next:</strong> "We'll reply within 24 hours by phone or WhatsApp."</li>
-  <li><strong>An immediate option:</strong> "Need it sooner? Chat on WhatsApp."</li>
-  <li><strong>Something useful:</strong> a relevant guide, case study or FAQ</li>
-  <li><strong>Social proof:</strong> a testimonial reinforcing their decision</li>
+  <li><strong>A clear confirmation in the heading,</strong> such as "Thanks, we've received your enquiry".</li>
+  <li><strong>What happens next, honestly:</strong> who will reply, how (phone, WhatsApp or email) and roughly when. Only promise a response time you keep; <a href="/blog/respond-to-website-enquiries-fast/">responding to enquiries fast</a> has a simple routine.</li>
+  <li><strong>A faster route</strong> for people in a hurry: a WhatsApp button with a pre-filled message and a tap-to-call number.</li>
+  <li><strong>What to have ready,</strong> such as a floor plan for an interior project or recent reports for a clinic, so the first conversation is useful.</li>
+  <li><strong>Something worth reading:</strong> a relevant case study, a guide to the process or answers to common questions.</li>
+  <li><strong>Genuine proof,</strong> such as a real testimonial or a link to your Google reviews, which reassures people they made a good choice.</li>
+  <li><strong>A spam-folder note</strong> if you send an automatic email reply, since first emails from a new address sometimes land there.</li>
 </ol>
+<p>Leave off another form asking for the same details, pop-ups, pushy offers and anything that makes the page a dead end; keep your normal header and footer so visitors can carry on browsing. Different forms need slightly different pages:</p>
+<table>
+  <thead><tr><th>Form</th><th>What its thank-you page should add</th></tr></thead>
+  <tbody>
+    <tr><td>Quote request</td><td>What you'll need from them and when they can expect the quote</td></tr>
+    <tr><td>Call-back request</td><td>When to expect the call and the number you'll call from, so they pick up</td></tr>
+    <tr><td>Appointment request</td><td>The details they sent, your address with a map link and how to reschedule</td></tr>
+    <tr><td>Brochure or price list</td><td>The download link itself, plus related products or services</td></tr>
+    <tr><td>Newsletter sign-up</td><td>A reminder to confirm their email if you use double opt-in</td></tr>
+  </tbody>
+</table>
 
-<p>A promise like "within 24 hours" only helps if you keep it; see <a href="/blog/respond-to-website-enquiries-fast/">how to respond to website enquiries fast</a> for a simple routine.</p>
+<h2>Setting the redirect in WordPress form plugins</h2>
+<p>Create the thank-you page as a normal WordPress page first, then point the form at it. At the time of writing, the settings are here:</p>
+<table>
+  <thead><tr><th>Plugin</th><th>Where to set it</th></tr></thead>
+  <tbody>
+    <tr><td>WPForms</td><td>In the form builder, Settings &gt; Confirmations, then choose "Show Page" or "Go to URL (Redirect)"</td></tr>
+    <tr><td>Gravity Forms</td><td>Form Settings &gt; Confirmations, with the type set to Page or Redirect</td></tr>
+    <tr><td>Fluent Forms</td><td>Settings &amp; Integrations &gt; Confirmation Settings, then "To a Page" or a custom URL</td></tr>
+    <tr><td>Elementor Pro form widget</td><td>Actions After Submit &gt; add Redirect, then enter the URL in the Redirect section</td></tr>
+    <tr><td>Forminator</td><td>The Behaviour tab, with the after-submission action set to redirect</td></tr>
+    <tr><td>Contact Form 7</td><td>No built-in setting; use a short script or an add-on plugin</td></tr>
+  </tbody>
+</table>
+<p>For Contact Form 7, this script, added to the page's footer or through a code snippets plugin, redirects only after the email has been sent successfully. Replace 123 with your form's ID, shown in its shortcode:</p>
+<pre><code>&lt;script&gt;
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  if ( '123' == event.detail.contactFormId ) {
+    location = 'https://example.com/thank-you/';
+  }
+}, false );
+&lt;/script&gt;</code></pre>
+<p>Give each important form its own page, such as one for quote requests and one for brochure downloads, so your reports show which form produced each lead. <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a> helps if you're choosing a plugin.</p>
 
-<h2>Tracking conversions</h2>
+<h2>Keep thank-you pages out of Google</h2>
 <ul>
-  <li>Track the thank-you page view (or form success event) as a key event in GA4; see <a href="/blog/ga4-events-explained/">GA4 events explained</a></li>
-  <li>For ads, use it as the conversion action</li>
-  <li>Keep thank-you pages out of search results (noindex)</li>
+  <li><strong>Set the page to noindex.</strong> In Yoast, open the Advanced tab in the editor and answer No to showing the page in search results; in Rank Math, tick No Index under Advanced &gt; Robots Meta. Both then leave it out of the sitemap.</li>
+  <li><strong>Don't block it in robots.txt.</strong> Google needs to crawl the page to see the noindex.</li>
+  <li><strong>Don't link to it</strong> from menus, footers or other pages.</li>
+  <li><strong>Gated downloads:</strong> a brochure link on a thank-you page can be shared, which is fine for most brochures. For anything you want to control, email the file instead.</li>
 </ul>
 
-<h2>Inline confirmations</h2>
-<p>If your form shows a confirmation message instead of a separate page (as this site's form does before opening WhatsApp), make it clear and visible, and fire a tracking event on success.</p>
+<h2>Track it, and count each enquiry once</h2>
+<h3>In GA4</h3>
+<ol>
+  <li>Go to <strong>Admin &gt; Data display &gt; Events</strong> and click <strong>Create event</strong>.</li>
+  <li>Name it generate_lead, Google's recommended name for a lead, and set two conditions: event_name equals page_view, and page_location contains thank-you (or the slug of your page).</li>
+  <li>Mark generate_lead as a key event under <strong>Admin &gt; Data display &gt; Key events</strong>.</li>
+  <li>Set its counting method to once per session, available at the time of writing, so a refresh or a second visit to the page in the same session isn't counted twice.</li>
+</ol>
+<p>If your form uses an inline message instead, fire the event from the form's success event, usually through Google Tag Manager; <a href="/blog/ga4-events-explained/">GA4 events explained</a> covers the options.</p>
+<h3>In Google Ads and Meta</h3>
+<p>Use the same thank-you page or success event for your Google Ads conversion action and set it to count one conversion per click, which is Google's recommended setting for leads. Fire the Meta Pixel's Lead event on the same trigger. Use either the Google Ads tag or a GA4 import as the primary conversion for each action, not both. <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a> walks through the setup.</p>
+<h3>Test before you rely on it</h3>
+<p>Send a real test enquiry from your phone. Check that the thank-you page loads, the event appears in GA4's Realtime report or DebugView, the conversion shows in Google Ads' and Meta's testing tools, and the notification email reaches the right inbox. Then refresh the thank-you page and confirm nothing is counted twice.</p>
 
-<h2>Don't forget the email side</h2>
-<p>Make sure the enquiry actually reaches your inbox, and consider an automatic acknowledgement email to the visitor; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+<h2>The WooCommerce version: the order received page</h2>
+<p>In a WooCommerce store, the thank-you page is the order received page at the end of checkout. It is where purchase tracking fires, so use a tracking plugin or integration that records each order once even if the shopper refreshes. It is also worth customising: confirm delivery expectations, explain what happens next for cash on delivery orders, and give a WhatsApp link for questions. Block themes let you edit it as the Order Confirmation template under Appearance &gt; Editor; classic themes need a developer or a plugin. A smooth path to that page matters too; see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
 
-<p>Thank-you pages are part of every good <a href="/landing-page-design/">landing page</a> setup.</p>
+<h2>The thank-you page is only the first reply</h2>
+<p>The page reassures the visitor, but the enquiry still needs a person. Make sure the notification reaches someone who acts on it, send a short automatic email that repeats what the page promised, and follow up if the first attempt doesn't connect. <a href="/blog/follow-up-website-leads-fast/">Following up website leads</a> sets out a simple sequence.</p>
+
+<h2>FAQs</h2>
+<h3>What is a thank-you page on a website?</h3>
+<p>It is the page visitors see after submitting a form or completing an order. It confirms the submission, explains what happens next and gives you a clean way to count conversions.</p>
+<h3>Should a thank-you page be noindexed?</h3>
+<p>Yes. It is useless as a search result and visits from search would inflate your conversion counts. Set it to noindex in your SEO plugin, keep it crawlable and don't link to it from menus.</p>
+<h3>How do I redirect Contact Form 7 to a thank-you page?</h3>
+<p>Contact Form 7 has no redirect setting. Add a short script that listens for its wpcf7mailsent event and sends the browser to your thank-you page, or use an add-on plugin that adds a redirect option to each form.</p>
+<h3>How do I track a thank-you page as a conversion in GA4?</h3>
+<p>Create a generate_lead event that fires when page_view happens on your thank-you page's URL, mark it as a key event and set it to count once per session. Then test it with a real submission in DebugView.</p>
+<h3>Is a thank-you page better than a confirmation message?</h3>
+<p>A page gives you more room for next steps and simpler tracking; an inline message suits pop-ups, multi-step forms and forms that continue into WhatsApp. Either works if it is obvious and tracking fires only after a successful submission.</p>
+
+<p>Running ads to a form? A focused <a href="/landing-page-design/">landing page</a> comes with its thank-you page, GA4, Google Ads and Meta conversion tracking set up and checked with test enquiries before any ad money is spent.</p>
 `,
   },
   {
@@ -16636,64 +17115,130 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   },
   {
     slug: 'woocommerce-cash-on-delivery-india',
-    seoTitle: 'Cash on Delivery in WooCommerce: Reduce RTO & Fake Orders',
-    title: 'Cash on Delivery in WooCommerce: How to Offer COD Without Losing Money',
-    description: 'Set up Cash on Delivery in WooCommerce for India: cut RTO and fake orders, confirm COD orders, add COD limits and nudge buyers towards prepaid payment.',
+    seoTitle: 'WooCommerce Cash on Delivery: Setup, Limits and Cutting RTO',
+    title: 'Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders',
+    description: 'Set up cash on delivery in WooCommerce for India: enable COD, limit it by amount, pin code or product, add a COD fee, confirm orders, cut RTO and fake orders.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-startups', 'landing-page-design'],
     body: `
-<p>Many Indian shoppers prefer Cash on Delivery, especially first-time buyers who don't yet trust a new store. Offering COD can increase orders, but it also brings refused deliveries, fake orders and return-to-origin (RTO) shipping costs. Here's how to offer it sensibly.</p>
+<p>To offer cash on delivery in WooCommerce, enable it under <strong>WooCommerce &gt; Settings &gt; Payments &gt; Cash on delivery</strong> and choose which shipping methods allow it. Then protect your margin: limit COD by order value, pin code or product, show any COD fee before the order is placed, confirm COD orders by WhatsApp, SMS or a call before you dispatch, and nudge buyers towards paying online with a small incentive or a part payment. Finally, track refused deliveries (return to origin, or RTO) by product and pin code, and tighten the rules where losses concentrate.</p>
+<p>Many Indian shoppers still want COD, especially from a store they haven't bought from before, but every refused parcel costs you shipping both ways. In my <a href="/woocommerce-developer/">WooCommerce development</a> work, COD rules are set up to match how you actually operate: limited by order value or pin code, with any fee shown clearly at checkout and COD orders confirmed by phone or WhatsApp before dispatch.</p>
+<p>This guide covers COD only. Shipping zones, rates and courier integrations are in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 
-<h2>Turning on COD in WooCommerce</h2>
+<h2>What COD really costs</h2>
+<table>
+  <thead><tr><th>Cost</th><th>When it hits</th><th>How to reduce it</th></tr></thead>
+  <tbody>
+    <tr><td>The courier's COD charge, often a fixed fee or a percentage of the amount, whichever is higher</td><td>Every delivered COD order</td><td>A COD fee, or incentives to pay online</td></tr>
+    <tr><td>Return-to-origin freight: forward and return shipping on parcels that aren't delivered</td><td>Every refused or failed COD delivery</td><td>Confirmation, limits and fast action on failed attempts</td></tr>
+    <tr><td>Damaged or unsellable returns</td><td>Returned parcels, especially fragile, perishable or custom items</td><td>No COD on those products</td></tr>
+    <tr><td>Slower cash flow</td><td>Always: the courier pays you some days after delivery</td><td>Prepaid nudges and a clear remittance cycle</td></tr>
+    <tr><td>Staff time</td><td>Confirming orders and chasing failed deliveries</td><td>Automated confirmations once volumes grow</td></tr>
+  </tbody>
+</table>
+<p>Check your courier or aggregator's rate card for its COD charge and RTO terms, and put both in your budget; <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> shows where they fit.</p>
+
+<h2>Step 1: Enable COD in WooCommerce</h2>
+<p>Go to <strong>WooCommerce &gt; Settings &gt; Payments</strong>. In recent versions, cash on delivery sits in a section for offline payment methods; the menu layout has changed between versions, so look for it there at the time of writing. The settings:</p>
 <ul>
-  <li>WooCommerce → Settings → Payments → Cash on delivery</li>
-  <li>Set the title and instructions customers will see</li>
-  <li>Choose which shipping methods COD is available for</li>
+  <li><strong>Title:</strong> what shoppers see at checkout. If your courier's agents accept UPI at the door, "Pay on delivery (cash or UPI)" is clearer than "Cash on delivery".</li>
+  <li><strong>Description:</strong> shown when COD is selected. Mention any COD fee and that you'll confirm the order by WhatsApp or phone.</li>
+  <li><strong>Instructions:</strong> added to the thank-you page and order emails.</li>
+  <li><strong>Enable for shipping methods:</strong> leave empty for all methods, or pick specific ones. Because each shipping zone has its own methods, this is also the built-in way to allow COD only in certain zones.</li>
+  <li><strong>Accept for virtual orders:</strong> leave off unless you genuinely collect cash for services.</li>
 </ul>
-<p>Also check that your courier or shipping aggregator supports COD for your customers' pin codes; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup</a>.</p>
+<p>WooCommerce marks new COD orders as Processing, since payment is due on delivery. It never knows whether the cash was collected, so mark orders Completed only once the courier confirms delivery. If you want to confirm every COD order before it is packed, a developer can make new COD orders start On hold instead, with a small snippet in a custom plugin or code snippets plugin:</p>
+<pre><code>add_filter( 'woocommerce_cod_process_payment_order_status', function( $status, $order ) {
+  return 'on-hold';
+}, 10, 2 );</code></pre>
+<p>Customers then receive the "order on-hold" email instead of the processing one, so rewrite its wording under <strong>WooCommerce &gt; Settings &gt; Emails</strong> to say you'll confirm shortly. A courier integration that picks up Processing orders automatically won't take these until you move them to Processing, which is the point.</p>
 
-<h2>Why COD orders fail</h2>
+<h2>Step 2: Limit where COD is offered</h2>
+<table>
+  <thead><tr><th>Rule</th><th>Built into WooCommerce?</th><th>How to do it</th></tr></thead>
+  <tbody>
+    <tr><td>Only in certain zones</td><td>Yes</td><td>"Enable for shipping methods", using the methods in those zones</td></tr>
+    <tr><td>Only for certain pin codes</td><td>Partly</td><td>A zone limited to those pin codes with its own COD-enabled method, or a pin code checker plugin</td></tr>
+    <tr><td>Above or below an order value</td><td>No</td><td>A conditional payments plugin or a code snippet</td></tr>
+    <tr><td>Not for certain products or categories</td><td>No</td><td>A plugin or a code snippet</td></tr>
+    <tr><td>Not for customers who refused before</td><td>No</td><td>A blocklist plugin, or a manual check during confirmation</td></tr>
+  </tbody>
+</table>
+<p>Pin code rules work best when shoppers learn about them on the product page, not at the last step; <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checkers</a> covers showing delivery and COD availability early. Your courier must also accept COD for those pin codes.</p>
+<p>For an order value limit, this snippet hides COD when the cart total is above a limit you set. The number is a placeholder, not a recommendation:</p>
+<pre><code>add_filter( 'woocommerce_available_payment_gateways', function( $gateways ) {
+  if ( is_admin() || ! WC()-&gt;cart ) {
+    return $gateways;
+  }
+  $limit = 5000; // placeholder: use your own limit
+  if ( WC()-&gt;cart-&gt;get_total( 'edit' ) &gt; $limit ) {
+    unset( $gateways['cod'] );
+  }
+  return $gateways;
+} );</code></pre>
+<p>It suits the classic checkout. The newer block checkout handles payment methods differently, so test it there, or use a plugin that states block checkout support. At the time of writing, WooCommerce's own Conditional Shipping and Payments extension and several free conditional payment plugins handle value, product, category and pin code rules from a settings screen.</p>
+<p>Products worth excluding from COD include custom-made or personalised items, perishables, and high-value items that are expensive to ship back.</p>
+
+<h2>Step 3: Add a COD fee, or reward prepaid instead</h2>
+<p>WooCommerce has no COD fee setting, so a fee needs a payment-based fees plugin or custom code. Whichever you use, the fee must appear in the checkout totals as soon as COD is selected, and be mentioned in the COD description, so nobody is surprised at the door. Ask your CA how the fee should be taxed and shown on your GST invoice; <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a> covers the invoice side.</p>
+<p>Many stores frame it the other way round: a small discount or free shipping for prepaid orders. The economics are similar, but a reward feels better than a penalty. WooCommerce coupons can't be limited to a payment method on their own, so this also needs a gateway-based discount plugin. Make paying online genuinely easy too, with UPI offered first on mobile; <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a> covers gateways and UPI.</p>
+
+<h2>Step 4: Confirm COD orders before you ship</h2>
+<table>
+  <thead><tr><th>Method</th><th>How it works</th><th>Suits</th></tr></thead>
+  <tbody>
+    <tr><td>A call or WhatsApp message from your team</td><td>Confirm name, full address with a landmark, the product, the amount and a good delivery time</td><td>Small and new stores</td></tr>
+    <tr><td>Automated WhatsApp confirmation</td><td>An approved WhatsApp Business API template with Confirm and Cancel buttons, sent through a provider that updates the order</td><td>Growing order volumes</td></tr>
+    <tr><td>Phone verification at checkout</td><td>A one-time code by SMS before the order is placed</td><td>Stores with many fake or wrong numbers</td></tr>
+    <tr><td>A checkout platform with COD risk checks</td><td>Scores each COD order and can switch off COD for risky ones</td><td>Higher-volume D2C stores</td></tr>
+  </tbody>
+</table>
+<p>SMS in India needs DLT registration of your sender ID and message templates first, and WhatsApp templates need Meta's approval; <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">order notifications by email, SMS and WhatsApp</a> explains both. At the time of writing, Indian checkout and logistics platforms such as GoKwik, Razorpay's Magic Checkout and Shiprocket offer some form of COD risk scoring or confirmation, but most replace or sit over the WooCommerce checkout, so compare what you'd give up as well as what you'd gain.</p>
+<p>Decide what happens to orders that never confirm: for example, two attempts, then cancel. Cancelling an order in WooCommerce restores the stock it had reduced.</p>
+
+<h2>Step 5: Spot fake and risky orders</h2>
 <ul>
-  <li>Impulse orders the customer no longer wants</li>
-  <li>Fake or prank orders with wrong details</li>
-  <li>Customer not available or unreachable at delivery</li>
-  <li>Long delivery times giving buyers time to change their minds</li>
+  <li>Vague or incomplete addresses, or a pin code that doesn't match the city.</li>
+  <li>Numbers that never answer, or that refused a delivery before.</li>
+  <li>Several COD orders from the same number or address in a short time.</li>
+  <li>Unusually large quantities, or a first order of high value on COD.</li>
+  <li>Obvious test names and junk in the fields.</li>
 </ul>
+<p>Make phone and pin code required fields, add a landmark field, since Indian addresses often depend on one, and check the format of 10-digit mobile numbers and 6-digit pin codes. Keep a list of numbers with repeated refusals and ask those customers to pay in advance.</p>
 
-<h2>Ways to reduce COD losses</h2>
-<h3>1. Confirm COD orders</h3>
-<p>Send an order confirmation by WhatsApp or SMS, or call, asking the customer to confirm before you ship. Unconfirmed orders can be held or cancelled.</p>
+<h2>Step 6: Partial prepaid, or advance plus COD</h2>
+<p>Asking for part of the amount online, such as the shipping charge, with the balance collected on delivery filters out most non-serious orders while keeping COD's reassurance. WooCommerce doesn't do this natively; deposit or partial-payment plugins, including WooCommerce's own Deposits extension at the time of writing, or a checkout platform can. Two details matter: explain clearly at checkout what is paid now and what on delivery, and make sure the COD amount on the courier shipment is the balance, not the full order total.</p>
 
-<h3>2. Set limits</h3>
+<h2>Step 7: Act fast on failed deliveries</h2>
 <ul>
-  <li>Disable COD above a certain order value</li>
-  <li>Disable COD for pin codes with high failure rates</li>
-  <li>Disable COD for certain products (custom or perishable items)</li>
+  <li><strong>Dispatch quickly.</strong> The longer the wait, the more likely the buyer has changed their mind or bought elsewhere.</li>
+  <li><strong>Send tracking updates</strong> by WhatsApp or SMS, including an out-for-delivery message, so the buyer keeps cash ready and answers the courier's call.</li>
+  <li><strong>Work the NDR list daily.</strong> Couriers and aggregators raise a non-delivery report after a failed attempt. Call the customer, correct the address or reschedule within the courier's window, before the parcel heads back as RTO.</li>
+  <li><strong>Compare couriers by pin code.</strong> If one courier keeps failing in an area, route those orders through another.</li>
 </ul>
-<p>Plugins can add these rules if WooCommerce's built-in options aren't enough.</p>
+<p>A clear routine for who handles confirmations, NDRs and status changes each day is in <a href="/blog/woocommerce-order-management-workflow/">WooCommerce order management</a>.</p>
 
-<h3>3. Consider a small COD fee</h3>
-<p>A clearly shown COD handling fee covers some costs and nudges buyers to pay online. Make sure it's visible before checkout.</p>
+<h2>COD remittance and reconciliation</h2>
+<p>The courier or aggregator collects the cash and pays it to you after delivery, on a cycle set in your agreement. Some offer faster remittance for an extra fee at the time of writing, and aggregators often deduct shipping and RTO charges from what they pay you. Before choosing one, check the remittance cycle, the COD charge, what gets deducted and the reports you receive.</p>
+<p>Reconcile every week: match the remittance report against your WooCommerce orders, mark matched orders Completed, and chase anything delivered but not paid. Over time, track the share of orders on COD and the RTO rate by product, pin code, traffic source and courier. Those figures show exactly where to tighten rules and where COD is working well.</p>
 
-<h3>4. Encourage prepaid orders</h3>
-<ul>
-  <li>Offer a small discount or free shipping for prepaid orders</li>
-  <li>Make UPI payment quick and prominent</li>
-  <li>Explain your refund policy clearly to build trust</li>
-</ul>
+<h2>FAQs</h2>
+<h3>How do I enable cash on delivery in WooCommerce?</h3>
+<p>Go to WooCommerce &gt; Settings &gt; Payments, open Cash on delivery, enable it, and set the title, description and the shipping methods it applies to. Check that your courier supports COD for the areas you allow.</p>
+<h3>How do I disable COD above a certain order amount?</h3>
+<p>WooCommerce has no built-in setting for this. Use a conditional payments plugin, or a short code snippet that removes COD from the available payment methods when the cart total is above your limit, and test it on your checkout.</p>
+<h3>Can I charge an extra fee for cash on delivery?</h3>
+<p>Yes, with a payment-based fees plugin or custom code. Show the fee in the checkout totals as soon as COD is selected and mention it in the COD description, and ask your CA how it should appear on your GST invoice.</p>
+<h3>How do I reduce RTO on COD orders?</h3>
+<p>Confirm orders before dispatch, limit COD for risky products, values and pin codes, ship quickly with tracking updates, act on failed delivery reports the same day, and offer a reason to pay online or a partial advance.</p>
+<h3>How do I offer COD only for certain pin codes?</h3>
+<p>Create a shipping zone limited to those pin codes with its own shipping method, then allow COD only for that method. For many pin codes, or for live courier serviceability, use a pin code or conditional payments plugin.</p>
+<h3>When does the courier pay me the COD money?</h3>
+<p>After delivery, on the remittance cycle in your courier or aggregator agreement, usually with charges deducted. Check the cycle and deductions before you sign up, and reconcile each payment against your orders.</p>
 
-<h3>5. Partial advance</h3>
-<p>For high-value items, some stores ask for a small advance online with the rest on delivery. This filters out non-serious orders.</p>
-
-<h3>6. Ship fast and keep customers informed</h3>
-<p>Faster dispatch and tracking updates by WhatsApp or SMS reduce the chance of refusal at the door.</p>
-
-<h2>Track your COD performance</h2>
-<p>Keep a simple record of COD orders, delivered, refused and RTO costs by product and region. It shows where to tighten rules.</p>
-
-<h2>Build trust so buyers pay online</h2>
-<p>Strong product pages, reviews and clear policies make prepaid payments feel safe; see <a href="/blog/woocommerce-product-page-optimization/">product page optimisation</a> and <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments</a>.</p>
+<p>Want COD that brings orders without draining your margin? Payment gateways, COD rules, shipping and order emails are set up and tested with real orders as part of <a href="/woocommerce-developer/">WooCommerce development</a>. If shoppers are dropping out before they even choose a payment method, see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
 `,
   },
   {
@@ -17834,54 +18379,109 @@ define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
   },
   {
     slug: 'search-intent-explained',
-    seoTitle: 'Search Intent Explained: Match Pages to What People Want',
-    title: 'Search Intent Explained: Why the Right Page Type Matters for Rankings',
-    description: 'Search intent explained: informational, navigational, commercial, transactional and local intent, how to read it from Google results and match your pages.',
+    seoTitle: 'Search Intent Explained: Types, Examples and How to Match It',
+    title: 'Search Intent Explained: The Types of Intent, How to Read Them From Google and How to Match Your Pages',
+    description: 'Search intent explained with examples: informational, navigational, commercial, transactional and local, how to read it from Google and match your pages.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
-<p>Two people can type similar words into Google but want very different things. Search intent is the goal behind a search. If your page doesn't match that goal, it's unlikely to rank well, however well written it is.</p>
+<p>Search intent is the goal behind a search: to learn something, reach a particular website, compare options, buy or hire, or find somewhere nearby. Google ranks the type of page that best satisfies that goal, so a page that doesn't match it rarely ranks well, however good the writing. The quickest way to judge intent is to search the phrase yourself and look at what kind of pages Google already shows.</p>
+<p>Matching each search to the right page is where on-page work starts in my <a href="/wordpress-seo-services/">WordPress SEO services</a>: each target search is mapped to one page, so the right page type answers it and no two pages compete for the same phrase. This guide shows how to do that yourself.</p>
+<p>Intent is the step after finding the words people use; for that part, see <a href="/blog/keyword-research-small-business/">keyword research for small businesses</a>.</p>
 
-<h2>The main types of intent</h2>
+<h2>The main types of search intent</h2>
 <table>
-  <thead><tr><th>Intent</th><th>What they want</th><th>Example</th><th>Best page type</th></tr></thead>
+  <thead><tr><th>Intent</th><th>What the searcher wants</th><th>Example searches</th><th>Page that usually ranks</th></tr></thead>
   <tbody>
-    <tr><td>Informational</td><td>To learn or solve a problem</td><td>"why is my website slow"</td><td>Guide or article</td></tr>
-    <tr><td>Navigational</td><td>A specific website or brand</td><td>"samverse contact"</td><td>Homepage or contact page</td></tr>
-    <tr><td>Commercial</td><td>To compare options before buying</td><td>"wordpress vs wix"</td><td>Comparison or review</td></tr>
-    <tr><td>Transactional</td><td>To buy or hire now</td><td>"hire wordpress developer"</td><td>Service or product page</td></tr>
+    <tr><td>Informational</td><td>To learn something or fix a problem</td><td>"how to add a whatsapp button to wordpress", "what is a cdn"</td><td>A guide, how-to article or explainer</td></tr>
+    <tr><td>Navigational</td><td>A specific website or page</td><td>"razorpay login", "samverse contact"</td><td>That brand's own page</td></tr>
+    <tr><td>Commercial investigation</td><td>To compare options before deciding</td><td>"wordpress vs wix", "best payment gateway for small business india"</td><td>Comparisons, buying guides, reviews</td></tr>
+    <tr><td>Transactional</td><td>To buy, book or hire now</td><td>"hire wordpress developer", "generator on rent in bangalore"</td><td>Service pages, product and category pages</td></tr>
+    <tr><td>Local</td><td>A business nearby</td><td>"dentist near me", "website developer in pune"</td><td>A map pack of Business Profiles, plus local service pages</td></tr>
   </tbody>
 </table>
+<p>Local intent overlaps with the others: "AC repair in Kothrud" is both local and transactional. Google's own guidelines for its search quality raters use different labels (Know, Do, Website and Visit-in-person), which shows that the names matter less than the question underneath: what kind of page would satisfy this person?</p>
 
-<h2>Local intent</h2>
-<p>Searches like "dentist near me" or "CA in Noida" show local intent. Google usually shows a map with Business Profiles, plus local service pages. You need both a strong <a href="/blog/google-business-profile-checklist/">Google Business Profile</a> and relevant local pages.</p>
+<h2>How to read intent from Google's results</h2>
+<p>Google has already tested what satisfies people for most searches, so its results are the best evidence you have. Search the phrase in a private window, ideally on your phone and in the city your customers are in, since results for local searches change with location. Then look at:</p>
+<table>
+  <thead><tr><th>What you see</th><th>What it suggests</th><th>What to build</th></tr></thead>
+  <tbody>
+    <tr><td>Mostly guides and articles</td><td>Informational intent</td><td>A thorough guide that answers the question early</td></tr>
+    <tr><td>Company service pages and homepages</td><td>Transactional intent</td><td>A dedicated service page with a clear way to enquire</td></tr>
+    <tr><td>"Best", "vs" and "top" titles</td><td>Commercial investigation</td><td>An honest comparison or buying guide</td></tr>
+    <tr><td>A map with three businesses</td><td>Local intent</td><td>A strong Google Business Profile and a local service page</td></tr>
+    <tr><td>Product listings, shopping results or category pages</td><td>Shopping intent</td><td>A category or product page, not a blog post</td></tr>
+    <tr><td>People Also Ask, a featured snippet or an AI Overview</td><td>People want quick, direct answers</td><td>Short, clear answers under question-style headings</td></tr>
+    <tr><td>Videos near the top</td><td>Seeing it done helps</td><td>A page with an embedded video or clear screenshots</td></tr>
+  </tbody>
+</table>
+<p>Look at who ranks, too. If the first page is all large marketplaces and national directories, a small business may do better with a more specific version of the search; <a href="/blog/long-tail-keywords-explained/">long-tail keywords explained</a> covers how to find those.</p>
 
-<h2>How to identify intent</h2>
-<p>The simplest way is to search the keyword yourself and look at what ranks:</p>
+<h2>Words that signal intent</h2>
 <ul>
-  <li>Mostly articles and guides? Informational</li>
-  <li>Service pages and company homepages? Transactional</li>
-  <li>"Best" lists and comparisons? Commercial</li>
-  <li>A map pack at the top? Local intent</li>
-  <li>Videos, images or shopping results? Google thinks those formats help</li>
+  <li><strong>how, what, why, guide, ideas, checklist:</strong> usually informational.</li>
+  <li><strong>best, vs, review, top, alternatives, comparison:</strong> commercial investigation.</li>
+  <li><strong>price, cost, charges, quote, packages:</strong> somewhere between comparing and buying. In India, "charges" is a common wording, as in "website maintenance charges".</li>
+  <li><strong>hire, buy, book, on rent, near me, in plus a city or area:</strong> transactional or local.</li>
+  <li><strong>a brand name plus login, contact or address:</strong> navigational.</li>
 </ul>
-<p>Google has already tested what satisfies searchers, so the results show you what works.</p>
+<p>These are clues, not rules. Always confirm by checking the results.</p>
+
+<h2>Mixed and shifting intent</h2>
+<p>Some searches serve more than one goal, and Google shows a mix of page types. "wordpress malware removal" is a good example: some searchers want to clean the site themselves, others want someone to do it now. This site, which is custom-coded rather than built on WordPress, answers it with two separate pages, a step-by-step cleanup guide for the do-it-yourself reader and a service page for people who want it fixed, each titled clearly for its own audience, so Google can choose the right one for each searcher instead of one page trying to be both.</p>
+<p>Intent also changes. Festival and seasonal searches swing towards offers and buying in the weeks before the event, new tools turn "what is" searches into "how to" searches, and Google sometimes changes which page types it prefers for a phrase. Re-check the results before you update an older page, not only before you write a new one.</p>
+
+<h2>How to match a page to intent</h2>
+<p>Matching intent comes down to five decisions:</p>
+<ol>
+  <li><strong>Page type.</strong> On WordPress, services are usually Pages, guides are Posts, and "buy" searches are best served by WooCommerce category or product pages.</li>
+  <li><strong>Format.</strong> Steps for a how-to, a table for a comparison, the factors that affect price for a cost search, address, hours and a map for a local search.</li>
+  <li><strong>Angle.</strong> Beginner or expert, and whether the searcher expects Indian specifics such as UPI, GST or prices in rupees.</li>
+  <li><strong>The opening.</strong> The title, heading and first paragraph should confirm in seconds that the searcher is in the right place, and answer the main question early.</li>
+  <li><strong>The next step.</strong> Readers of a guide get a soft link to a related service; visitors on a service page get a prominent form, call and WhatsApp button.</li>
+</ol>
+<p>On this site, Search Console shows the split working as intended. For "wordpress speed optimisation service", Google shows the <a href="/wordpress-speed-optimization/">WordPress speed optimisation service page</a>; for "wordpress site slow how to fix", it shows the guide <a href="/blog/why-is-my-wordpress-site-slow/">why is my WordPress site slow</a>. Same topic, two intents, two pages. For transactional searches, <a href="/blog/write-service-pages-that-convert/">how to write service pages that rank and convert</a> covers what the service page itself needs.</p>
 
 <h2>Common intent mistakes</h2>
 <ul>
-  <li>Trying to rank a sales page for a "how to" search</li>
-  <li>Writing a long blog post for a "hire {service} in {city}" search, when a service page is needed</li>
-  <li>One page trying to serve every intent at once</li>
+  <li><strong>A sales page for a "how to" search.</strong> People who want to learn bounce off a page that only sells.</li>
+  <li><strong>A blog post for a "hire" or "near me" search.</strong> These searchers want a service page or a Business Profile, not an essay.</li>
+  <li><strong>One page trying to serve every intent,</strong> part guide, part sales pitch and part comparison, which ends up satisfying nobody.</li>
+  <li><strong>Two pages chasing the same intent,</strong> such as a service page and a blog post both targeting "website maintenance charges", so they compete with each other. <a href="/blog/topic-clusters-pillar-pages/">Topic clusters and pillar pages</a> explains how to avoid this keyword cannibalisation.</li>
+  <li><strong>Ignoring the format Google prefers,</strong> such as writing a long essay when the results show quick answers, calculators or product grids.</li>
+  <li><strong>Local pages with nothing local on them,</strong> just a city name swapped into the same text.</li>
 </ul>
 
-<h2>Match intent, then exceed it</h2>
-<p>Once your page type matches, make it the most helpful result: answer the question fully, add examples, real experience and clear next steps.</p>
-
 <h2>Connect intents with internal links</h2>
-<p>Informational articles can link to related service pages for readers ready to take the next step, and service pages can link to guides for people still researching. See <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
+<p>People rarely move from first question to enquiry in one visit. Someone who reads a guide on why their site is slow may be ready to hire help a week later. Link informational articles to the related service page for readers who are ready, link service pages to guides for visitors still researching, and let comparison pages link to both. That path also shows Google how your pages relate; see <a href="/blog/internal-linking-explained/">internal linking explained</a>. For local businesses, the Business Profile and the local service page work as a pair; <a href="/blog/local-seo-guide-small-business-india/">local SEO for small businesses in India</a> covers that side.</p>
 
-<p>Use intent when you do <a href="/blog/keyword-research-small-business/">keyword research</a> to decide which page each keyword belongs to.</p>
+<h2>A quick intent check before you write any page</h2>
+<ol>
+  <li>Write down the main search phrase the page is for.</li>
+  <li>Search it on your phone, in a private window, from the area your customers are in.</li>
+  <li>Note the page types and features in the top results.</li>
+  <li>Choose the page type and format that match, or a more specific phrase if big sites own the results.</li>
+  <li>Check you don't already have a page answering the same intent.</li>
+  <li>Write the title, heading and first paragraph to confirm the match.</li>
+  <li>A few weeks after publishing, check which searches the page actually appears for in Search Console. If they differ from what you intended, adjust the page or create a separate one.</li>
+</ol>
+
+<h2>FAQs</h2>
+<h3>What is search intent in SEO?</h3>
+<p>It is the goal behind a search: learning, finding a specific site, comparing, buying or hiring, or finding something nearby. Google ranks pages that satisfy that goal, so matching intent comes before keywords, length or any other optimisation.</p>
+<h3>What are the four types of search intent?</h3>
+<p>Informational, navigational, commercial investigation and transactional. Many guides add local intent as a fifth, since searches like "near me" or "in Pune" trigger a map and local results.</p>
+<h3>How do I find the search intent of a keyword?</h3>
+<p>Search it and study the results: the kinds of pages that rank, the features Google shows such as a map, shopping results or People Also Ask, and the words in the ranking titles. Keyword tools sometimes label intent too, but the live results are more reliable.</p>
+<h3>Can one page target more than one intent?</h3>
+<p>Closely related intents can share a page, such as a cost guide that also explains what's included. Very different intents, such as learning to do a job yourself and hiring someone to do it, are better served by separate pages linked to each other.</p>
+<h3>Does search intent matter for local businesses?</h3>
+<p>Very much. Most local searches are transactional, so they need a clear service page with your area, contact options and proof, plus a well-kept Google Business Profile, rather than blog posts.</p>
+
+<p>Not sure which page should rank for which search, or whether two of your pages are competing? Mapping searches to pages and fixing titles, headings and internal links is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -17990,59 +18590,106 @@ define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
   },
   {
     slug: 'update-old-blog-posts',
-    seoTitle: 'How to Update Old Blog Posts to Regain Rankings',
-    title: 'How to Update Old Blog Posts to Win Back Traffic',
-    description: 'Update old blog posts to regain rankings, step by step: find candidates in Search Console, refresh facts, improve titles and add internal links.',
+    seoTitle: 'How to Update Old Blog Posts: A Content Refresh Checklist',
+    title: 'How to Update Old Blog Posts to Win Back Traffic: Find, Refresh, Merge and Measure',
+    description: 'How to update old blog posts to win back traffic: find slipping posts in Search Console, refresh or merge them, handle dates and redirects, and measure.',
     date: '2026-09-27',
+    updated: '2026-10-15',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-maintenance', 'website-redesign'],
     body: `
-<p>Old articles often lose rankings slowly as information goes out of date and competitors publish better pages. Updating an existing post is often faster and more effective than writing a new one, because it already has history, links and some visibility.</p>
+<p>To update an old blog post, find posts that are losing clicks or sitting just off page one in Google Search Console, check what the search results reward today, then improve the post in place: correct outdated facts, answer the questions it now appears for, tighten the opening, sharpen the title and description, and add internal links. Keep the same URL, show an honest "updated" date and ask Google to recrawl it. Posts that are too thin or overlap with others are better merged into one, with redirects, and posts that no longer fit your business can go.</p>
+<p>Updating often beats writing something new, because the old URL already has history, some visibility and perhaps links. In my <a href="/wordpress-seo-services/">WordPress SEO services</a>, I don't write your blog posts, but I can find which posts are slipping, show which searches each one should answer and what is missing, and handle the technical side: merges, redirects and internal links. Everything below can also be done yourself.</p>
+<p>A slow decline is different from a sudden drop. If traffic fell sharply over a few days, work through <a href="/blog/website-traffic-dropped/">why website traffic suddenly drops</a> first.</p>
+
+<h2>Why old posts lose traffic</h2>
+<ul>
+  <li><strong>Outdated information.</strong> Steps, menu names, prices or screenshots no longer match reality. A guide still describing Universal Analytics, which Google switched off in 2023, is a typical example.</li>
+  <li><strong>Better competition.</strong> Other sites published fuller, clearer or more recent answers.</li>
+  <li><strong>A change in intent.</strong> Google now prefers a different kind of page for the search, such as a comparison instead of a definition.</li>
+  <li><strong>New features in the results,</strong> such as People Also Ask boxes or AI Overviews, answering simple questions before anyone clicks.</li>
+  <li><strong>Your own posts competing,</strong> when several articles cover the same topic and none is clearly the main one.</li>
+  <li><strong>Technical wear:</strong> broken links, missing images, slow pages and outdated internal links.</li>
+</ul>
 
 <h2>Step 1: Find posts worth updating</h2>
-<p>In Google Search Console's Performance report, look for:</p>
+<p>In Search Console, open <strong>Performance &gt; Search results</strong>, click the date filter, choose <strong>Compare</strong> and pick "last 3 months vs previous period" (or the same months last year, for seasonal businesses). Switch to the <strong>Pages</strong> tab and sort by the clicks difference to see which posts are slipping. Then look for these signals:</p>
+<table>
+  <thead><tr><th>Signal</th><th>Where to find it</th><th>Likely fix</th></tr></thead>
+  <tbody>
+    <tr><td>Clicks falling compared with the previous period</td><td>Performance, compare mode, Pages tab</td><td>A full refresh</td></tr>
+    <tr><td>Average position roughly 5 to 20 with steady impressions</td><td>Pages tab, with Average position switched on</td><td>Deeper content and more internal links; it is close to page one</td></tr>
+    <tr><td>Many impressions, few clicks</td><td>Pages tab, sorted by impressions, with CTR switched on</td><td>A better title and meta description</td></tr>
+    <tr><td>Searches the post appears for but doesn't answer</td><td>Click the page, then the Queries tab</td><td>New sections or FAQ answers</td></tr>
+    <tr><td>Posts that bring enquiries</td><td>GA4: Reports &gt; Engagement &gt; Landing page, with key events</td><td>Protect and improve these first</td></tr>
+  </tbody>
+</table>
+<p>Also make a note of posts with an old year in the title, outdated screenshots or prices, and posts you know are wrong. <a href="/blog/search-console-content-ideas/">Finding content ideas and pages to improve in Search Console</a> goes deeper into these reports.</p>
+
+<h2>Step 2: Decide what each post needs</h2>
+<table>
+  <thead><tr><th>Decision</th><th>When it fits</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>Update</td><td>The topic still matters to your customers and the post has some impressions, traffic or links</td><td>Refresh it in place, at the same URL</td></tr>
+    <tr><td>Merge</td><td>Several thin or overlapping posts cover the same question</td><td>Combine the best of each into the strongest URL and 301-redirect the others to it</td></tr>
+    <tr><td>Redirect</td><td>A newer, better page now covers the topic fully</td><td>301-redirect the old post to it</td></tr>
+    <tr><td>Remove</td><td>Irrelevant to your business, with no traffic and no links</td><td>Delete it and let it return a 404 or 410</td></tr>
+    <tr><td>Leave alone</td><td>Accurate and performing well</td><td>Check it again next review</td></tr>
+  </tbody>
+</table>
+<p>Merging is often the biggest win on older blogs, where the same subject was written about three times over the years. It also removes the competition between your own posts; <a href="/blog/topic-clusters-pillar-pages/">topic clusters and pillar pages</a> explains how to organise what's left. Don't delete posts in bulk just because they are short: check each for traffic, links and enquiries first.</p>
+
+<h2>Step 3: Check what searchers want now</h2>
+<p>Search the post's main query on your phone, in a private window, and compare your post with what ranks today. Which subtopics do the top results cover that you don't? Are they guides, comparisons, checklists or videos? Which questions appear under People Also Ask? If the type of page Google shows has changed, a light edit won't be enough; see <a href="/blog/search-intent-explained/">search intent explained</a>.</p>
+
+<h2>Step 4: Refresh the content</h2>
 <ul>
-  <li>Pages whose clicks have declined compared with last year</li>
-  <li>Pages ranking around positions 5–20 for valuable queries, close to page one but not there yet</li>
-  <li>Pages with many impressions but a low click-through rate</li>
-</ul>
-<p>Also review posts with outdated years, prices or screenshots.</p>
-
-<h2>Step 2: See what searchers want now</h2>
-<p>Search the main query and compare your post with what ranks today. Are they covering subtopics you're missing? Has the intent shifted? See <a href="/blog/search-intent-explained/">search intent explained</a>.</p>
-
-<h2>Step 3: Update the content</h2>
-<ul>
-  <li>Correct outdated facts, prices, steps and screenshots</li>
-  <li>Add sections answering questions from Search Console queries</li>
-  <li>Add your own experience and examples</li>
-  <li>Remove padding and repetition</li>
-  <li>Improve structure with clear headings, lists and tables</li>
-</ul>
-
-<h2>Step 4: Improve title and description</h2>
-<p>If impressions are high but clicks are low, rewrite the title and meta description to be more specific and compelling; see <a href="/blog/write-meta-titles-descriptions/">writing meta titles and descriptions</a>.</p>
-
-<h2>Step 5: Strengthen internal links</h2>
-<p>Link from the updated post to relevant service pages and newer articles, and link to it from other related posts.</p>
-
-<h2>Step 6: Keep the URL</h2>
-<p>Don't change the URL of a post that already has rankings. If you must, set up a 301 redirect; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
-
-<h2>Step 7: Show the update honestly</h2>
-<p>Show an "Updated" date when you've made meaningful changes. Don't change dates without real updates; that misleads readers.</p>
-
-<h2>Step 8: Ask Google to recrawl</h2>
-<p>Use the URL Inspection tool in Search Console to request indexing of the updated page.</p>
-
-<h2>Merge, redirect or delete?</h2>
-<ul>
-  <li><strong>Merge</strong> several thin posts on the same topic into one strong article, redirecting the old URLs</li>
-  <li><strong>Delete</strong> posts that are irrelevant to your business and get no traffic or links</li>
-  <li><strong>Keep and update</strong> anything useful and relevant</li>
+  <li><strong>Answer first.</strong> Open with a direct two- or three-sentence answer to the main question, then the detail.</li>
+  <li><strong>Correct everything that changed:</strong> facts, steps, plugin menus, prices, laws and screenshots. Mark third-party details that change often with "at the time of writing".</li>
+  <li><strong>Cover the questions you found</strong> in the Queries tab and People Also Ask, as new sections or FAQ answers.</li>
+  <li><strong>Add what only you know:</strong> examples from your own work, photos, the mistakes you see customers make, how you handle the problem.</li>
+  <li><strong>Cut as well as add.</strong> Remove padding, repeated points and sections that no longer apply. A tighter post often performs better than a longer one.</li>
+  <li><strong>Improve the structure:</strong> clear headings, short paragraphs, tables and numbered steps where they help.</li>
+  <li><strong>Fix links and images:</strong> replace broken links, link to newer posts, compress images and write useful alt text. <a href="/blog/find-fix-broken-links-wordpress/">Finding and fixing broken links</a> shows how to catch them without a heavy plugin.</li>
 </ul>
 
-<p>Build a refresh step into your <a href="/blog/website-content-calendar/">content calendar</a>.</p>
+<h2>Step 5: Rewrite the title and meta description</h2>
+<p>If the post gets impressions but few clicks, the title and description are the first thing to change. Put the main search phrase near the start of the title, make the promise specific, and keep it within about 60 characters so it isn't cut off. In Yoast or Rank Math, edit the SEO title and meta description in the plugin's panel below or beside the editor. <a href="/blog/write-meta-titles-descriptions/">How to write meta titles and descriptions</a> has examples.</p>
+
+<h2>Step 6: Strengthen internal links both ways</h2>
+<p>Link from the refreshed post to the service page it relates to and to newer articles on the same subject. Then add links to it from two or three related posts that already rank, using descriptive anchor text such as "updating your WordPress plugins safely" rather than "click here". Those incoming links are a strong signal that the post matters.</p>
+
+<h2>Step 7: Keep the URL and handle dates honestly</h2>
+<ul>
+  <li><strong>Don't change the URL</strong> of a post that has rankings or links. If the slug contains a year that makes it look stale and you must change it, set up a 301 redirect from the old address; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
+  <li><strong>Show an updated date</strong> when the changes are meaningful. WordPress records the modified date whenever you save, and Yoast and Rank Math include it in the page's structured data and sitemap automatically. Many themes, and the post date options in Elementor Pro, can display an "Updated on" date for readers.</li>
+  <li><strong>Don't fake freshness.</strong> Changing the published date or the year in the title without real changes misleads readers, and Google has said that changing dates alone doesn't help.</li>
+</ul>
+
+<h2>Step 8: Ask Google to recrawl, then measure</h2>
+<ol>
+  <li>Inspect the URL in Search Console and click <strong>Request indexing</strong>. The daily quota is small, so use it on your most important updates; <a href="/blog/get-website-indexed-google-faster/">getting pages indexed faster</a> explains the limits.</li>
+  <li>Record the date and what you changed in a simple spreadsheet.</li>
+  <li>After several weeks, filter the Performance report to that page and compare the same number of days before and after the update. Allow for seasons: a festival month or exam period can distort the comparison.</li>
+  <li>If nothing has moved after a couple of months, look again at intent, depth and links, or consider merging it into a stronger page.</li>
+</ol>
+
+<h2>How often to review old posts</h2>
+<p>A workable rhythm for a small business blog: check your top posts and biggest decliners every quarter, review every post once a year, and update straight away when something important changes, such as a tool's menus, a price, a regulation or a Google feature your post describes. Put the review in your content calendar alongside new posts, so refreshing doesn't depend on remembering.</p>
+
+<h2>FAQs</h2>
+<h3>How often should I update old blog posts?</h3>
+<p>Update when there is a reason: the information has changed, clicks are falling or the post sits just off page one. For most small business blogs, a quarterly check of top and declining posts and a yearly review of everything is enough.</p>
+<h3>Does updating old content help SEO?</h3>
+<p>It can, when the update makes the page genuinely more accurate and useful for the searches it targets. Cosmetic changes, such as a new date with the same content, don't help.</p>
+<h3>Should I change the published date when I update a post?</h3>
+<p>Keep the original published date and show a separate "updated" date when you've made real changes. WordPress tracks the modified date automatically, and SEO plugins pass it to Google.</p>
+<h3>Should I delete old blog posts with no traffic?</h3>
+<p>Not automatically. If a post is relevant, improve it or merge it into a related post with a redirect. Delete only posts that are irrelevant to your business and have no traffic or links.</p>
+<h3>Do I need to request indexing after updating a post?</h3>
+<p>It isn't required, because Google recrawls pages and reads your sitemap's updated dates, but requesting indexing in URL Inspection can get an important refresh seen sooner.</p>
+
+<p>Want to know which posts are worth refreshing and what each one is missing? A Search Console review, with merges, redirects and internal links handled on your site, is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {

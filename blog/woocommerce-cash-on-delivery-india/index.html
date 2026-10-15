@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cash on Delivery in WooCommerce: Reduce RTO &amp; Fake Orders</title>
-  <meta name="description" content="Set up Cash on Delivery in WooCommerce for India: cut RTO and fake orders, confirm COD orders, add COD limits and nudge buyers towards prepaid payment.">
+  <title>WooCommerce Cash on Delivery: Setup, Limits and Cutting RTO</title>
+  <meta name="description" content="Set up cash on delivery in WooCommerce for India: enable COD, limit it by amount, pin code or product, add a COD fee, confirm orders, cut RTO and fake orders.">
   <meta name="author" content="Sameer Gupta">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/woocommerce-cash-on-delivery-india/">
-  <meta property="og:title" content="Cash on Delivery in WooCommerce: Reduce RTO &amp; Fake Orders">
-  <meta property="og:description" content="Set up Cash on Delivery in WooCommerce for India: cut RTO and fake orders, confirm COD orders, add COD limits and nudge buyers towards prepaid payment.">
+  <meta property="og:title" content="WooCommerce Cash on Delivery: Setup, Limits and Cutting RTO">
+  <meta property="og:description" content="Set up cash on delivery in WooCommerce for India: enable COD, limit it by amount, pin code or product, add a COD fee, confirm orders, cut RTO and fake orders.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-woocommerce-cash-on-delivery-india.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/woocommerce-cash-on-delivery-india/#article",
-      "headline": "Cash on Delivery in WooCommerce: How to Offer COD Without Losing Money",
-      "description": "Set up Cash on Delivery in WooCommerce for India: cut RTO and fake orders, confirm COD orders, add COD limits and nudge buyers towards prepaid payment.",
+      "headline": "Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders",
+      "description": "Set up cash on delivery in WooCommerce for India: enable COD, limit it by amount, pin code or product, add a COD fee, confirm orders, cut RTO and fake orders.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
+      "dateModified": "2026-10-15",
       "mainEntityOfPage": "https://samverse.space/blog/woocommerce-cash-on-delivery-india/",
       "image": "https://samverse.space/assets/og/blog-woocommerce-cash-on-delivery-india.png",
       "articleSection": "E-commerce",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Cash on Delivery in WooCommerce: How to Offer COD Without Losing Money",
+          "name": "Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders",
           "item": "https://samverse.space/blog/woocommerce-cash-on-delivery-india/"
         }
       ]
@@ -129,22 +129,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/ecommerce/">E-commerce</a></nav>
           <a class="post-cat" href="/blog/topic/ecommerce/">E-commerce</a>
-          <h1>Cash on Delivery in WooCommerce: How to Offer COD Without Losing Money</h1>
-          <p class="post-dek">Set up Cash on Delivery in WooCommerce for India: cut RTO and fake orders, confirm COD orders, add COD limits and nudge buyers towards prepaid payment.</p>
+          <h1>Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders</h1>
+          <p class="post-dek">Set up cash on delivery in WooCommerce for India: enable COD, limit it by amount, pin code or product, add a COD fee, confirm orders, cut RTO and fake orders.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Sameer Gupta</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · 3 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-15">15 October 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20Without%20Losing%20Money%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-cash-on-delivery-india%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20in%20India%20Without%20Losing%20Money%20to%20RTO%20and%20Fake%20Orders%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-cash-on-delivery-india%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-cash-on-delivery-india%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20Without%20Losing%20Money&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-cash-on-delivery-india%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20in%20India%20Without%20Losing%20Money%20to%20RTO%20and%20Fake%20Orders&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-cash-on-delivery-india%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/woocommerce-cash-on-delivery-india/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-woocommerce-cash-on-delivery-india.webp" alt="Cash on Delivery in WooCommerce: How to Offer COD Without Losing Money" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-woocommerce-cash-on-delivery-india.webp" alt="Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -153,94 +153,164 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#turning-on-cod-in-woocommerce">Turning on COD in WooCommerce</a></li>
-              <li><a href="#why-cod-orders-fail">Why COD orders fail</a></li>
-              <li><a href="#ways-to-reduce-cod-losses">Ways to reduce COD losses</a></li>
-              <li><a href="#track-your-cod-performance">Track your COD performance</a></li>
-              <li><a href="#build-trust-so-buyers-pay-online">Build trust so buyers pay online</a></li>
+              <li><a href="#what-cod-really-costs">What COD really costs</a></li>
+              <li><a href="#step-1-enable-cod-in-woocommerce">Step 1: Enable COD in WooCommerce</a></li>
+              <li><a href="#step-2-limit-where-cod-is-offered">Step 2: Limit where COD is offered</a></li>
+              <li><a href="#step-3-add-a-cod-fee-or-reward-prepaid-instead">Step 3: Add a COD fee, or reward prepaid instead</a></li>
+              <li><a href="#step-4-confirm-cod-orders-before-you-ship">Step 4: Confirm COD orders before you ship</a></li>
+              <li><a href="#step-5-spot-fake-and-risky-orders">Step 5: Spot fake and risky orders</a></li>
+              <li><a href="#step-6-partial-prepaid-or-advance-plus-cod">Step 6: Partial prepaid, or advance plus COD</a></li>
+              <li><a href="#step-7-act-fast-on-failed-deliveries">Step 7: Act fast on failed deliveries</a></li>
+              <li><a href="#cod-remittance-and-reconciliation">COD remittance and reconciliation</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>COD increases orders but brings refusals, fake orders and RTO costs.</li>
-              <li>Confirm COD orders by WhatsApp, set value and pin code limits, consider a COD fee.</li>
-              <li>Nudge buyers to prepaid with small incentives, fast UPI and clear refund policies.</li>
+              <li>Enable COD under WooCommerce payments, limit it to the shipping methods your courier supports, and add rules for order value, pin code or product with a plugin or a little code.</li>
+              <li>Confirm COD orders by WhatsApp, SMS or a call before dispatch, hold unconfirmed ones, and use a COD fee, a prepaid incentive or a partial advance to filter non-serious buyers.</li>
+              <li>Act quickly on failed delivery reports, reconcile courier COD remittances against your orders every week, and tighten rules where refusals keep happening.</li>
             </ul>
           </div>
-<p>Many Indian shoppers prefer Cash on Delivery, especially first-time buyers who don't yet trust a new store. Offering COD can increase orders, but it also brings refused deliveries, fake orders and return-to-origin (RTO) shipping costs. Here's how to offer it sensibly.</p>
+<p>To offer cash on delivery in WooCommerce, enable it under <strong>WooCommerce &gt; Settings &gt; Payments &gt; Cash on delivery</strong> and choose which shipping methods allow it. Then protect your margin: limit COD by order value, pin code or product, show any COD fee before the order is placed, confirm COD orders by WhatsApp, SMS or a call before you dispatch, and nudge buyers towards paying online with a small incentive or a part payment. Finally, track refused deliveries (return to origin, or RTO) by product and pin code, and tighten the rules where losses concentrate.</p>
+<p>Many Indian shoppers still want COD, especially from a store they haven't bought from before, but every refused parcel costs you shipping both ways. In my <a href="/woocommerce-developer/">WooCommerce development</a> work, COD rules are set up to match how you actually operate: limited by order value or pin code, with any fee shown clearly at checkout and COD orders confirmed by phone or WhatsApp before dispatch.</p>
+<p>This guide covers COD only. Shipping zones, rates and courier integrations are in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 
-<h2 id="turning-on-cod-in-woocommerce">Turning on COD in WooCommerce</h2>
-<ul>
-  <li>WooCommerce → Settings → Payments → Cash on delivery</li>
-  <li>Set the title and instructions customers will see</li>
-  <li>Choose which shipping methods COD is available for</li>
-</ul>
-<p>Also check that your courier or shipping aggregator supports COD for your customers' pin codes; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup</a>.</p>
+<h2 id="what-cod-really-costs">What COD really costs</h2>
+<table>
+  <thead><tr><th>Cost</th><th>When it hits</th><th>How to reduce it</th></tr></thead>
+  <tbody>
+    <tr><td>The courier's COD charge, often a fixed fee or a percentage of the amount, whichever is higher</td><td>Every delivered COD order</td><td>A COD fee, or incentives to pay online</td></tr>
+    <tr><td>Return-to-origin freight: forward and return shipping on parcels that aren't delivered</td><td>Every refused or failed COD delivery</td><td>Confirmation, limits and fast action on failed attempts</td></tr>
+    <tr><td>Damaged or unsellable returns</td><td>Returned parcels, especially fragile, perishable or custom items</td><td>No COD on those products</td></tr>
+    <tr><td>Slower cash flow</td><td>Always: the courier pays you some days after delivery</td><td>Prepaid nudges and a clear remittance cycle</td></tr>
+    <tr><td>Staff time</td><td>Confirming orders and chasing failed deliveries</td><td>Automated confirmations once volumes grow</td></tr>
+  </tbody>
+</table>
+<p>Check your courier or aggregator's rate card for its COD charge and RTO terms, and put both in your budget; <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> shows where they fit.</p>
 
-<h2 id="why-cod-orders-fail">Why COD orders fail</h2>
+<h2 id="step-1-enable-cod-in-woocommerce">Step 1: Enable COD in WooCommerce</h2>
+<p>Go to <strong>WooCommerce &gt; Settings &gt; Payments</strong>. In recent versions, cash on delivery sits in a section for offline payment methods; the menu layout has changed between versions, so look for it there at the time of writing. The settings:</p>
 <ul>
-  <li>Impulse orders the customer no longer wants</li>
-  <li>Fake or prank orders with wrong details</li>
-  <li>Customer not available or unreachable at delivery</li>
-  <li>Long delivery times giving buyers time to change their minds</li>
+  <li><strong>Title:</strong> what shoppers see at checkout. If your courier's agents accept UPI at the door, "Pay on delivery (cash or UPI)" is clearer than "Cash on delivery".</li>
+  <li><strong>Description:</strong> shown when COD is selected. Mention any COD fee and that you'll confirm the order by WhatsApp or phone.</li>
+  <li><strong>Instructions:</strong> added to the thank-you page and order emails.</li>
+  <li><strong>Enable for shipping methods:</strong> leave empty for all methods, or pick specific ones. Because each shipping zone has its own methods, this is also the built-in way to allow COD only in certain zones.</li>
+  <li><strong>Accept for virtual orders:</strong> leave off unless you genuinely collect cash for services.</li>
 </ul>
+<p>WooCommerce marks new COD orders as Processing, since payment is due on delivery. It never knows whether the cash was collected, so mark orders Completed only once the courier confirms delivery. If you want to confirm every COD order before it is packed, a developer can make new COD orders start On hold instead, with a small snippet in a custom plugin or code snippets plugin:</p>
+<pre><code>add_filter( 'woocommerce_cod_process_payment_order_status', function( $status, $order ) {
+  return 'on-hold';
+}, 10, 2 );</code></pre>
+<p>Customers then receive the "order on-hold" email instead of the processing one, so rewrite its wording under <strong>WooCommerce &gt; Settings &gt; Emails</strong> to say you'll confirm shortly. A courier integration that picks up Processing orders automatically won't take these until you move them to Processing, which is the point.</p>
 
 <aside class="inline-cta">
   <strong>Need help with online stores?</strong>
   <p>Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout.</p>
-  <div><a href="/woocommerce-developer/" class="link-inline">See Online Stores →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20Without%20Losing%20Money%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/woocommerce-developer/" class="link-inline">See Online Stores →</a><a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20in%20India%20Without%20Losing%20Money%20to%20RTO%20and%20Fake%20Orders%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="ways-to-reduce-cod-losses">Ways to reduce COD losses</h2>
-<h3>1. Confirm COD orders</h3>
-<p>Send an order confirmation by WhatsApp or SMS, or call, asking the customer to confirm before you ship. Unconfirmed orders can be held or cancelled.</p>
+<h2 id="step-2-limit-where-cod-is-offered">Step 2: Limit where COD is offered</h2>
+<table>
+  <thead><tr><th>Rule</th><th>Built into WooCommerce?</th><th>How to do it</th></tr></thead>
+  <tbody>
+    <tr><td>Only in certain zones</td><td>Yes</td><td>"Enable for shipping methods", using the methods in those zones</td></tr>
+    <tr><td>Only for certain pin codes</td><td>Partly</td><td>A zone limited to those pin codes with its own COD-enabled method, or a pin code checker plugin</td></tr>
+    <tr><td>Above or below an order value</td><td>No</td><td>A conditional payments plugin or a code snippet</td></tr>
+    <tr><td>Not for certain products or categories</td><td>No</td><td>A plugin or a code snippet</td></tr>
+    <tr><td>Not for customers who refused before</td><td>No</td><td>A blocklist plugin, or a manual check during confirmation</td></tr>
+  </tbody>
+</table>
+<p>Pin code rules work best when shoppers learn about them on the product page, not at the last step; <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checkers</a> covers showing delivery and COD availability early. Your courier must also accept COD for those pin codes.</p>
+<p>For an order value limit, this snippet hides COD when the cart total is above a limit you set. The number is a placeholder, not a recommendation:</p>
+<pre><code>add_filter( 'woocommerce_available_payment_gateways', function( $gateways ) {
+  if ( is_admin() || ! WC()-&gt;cart ) {
+    return $gateways;
+  }
+  $limit = 5000; // placeholder: use your own limit
+  if ( WC()-&gt;cart-&gt;get_total( 'edit' ) &gt; $limit ) {
+    unset( $gateways['cod'] );
+  }
+  return $gateways;
+} );</code></pre>
+<p>It suits the classic checkout. The newer block checkout handles payment methods differently, so test it there, or use a plugin that states block checkout support. At the time of writing, WooCommerce's own Conditional Shipping and Payments extension and several free conditional payment plugins handle value, product, category and pin code rules from a settings screen.</p>
+<p>Products worth excluding from COD include custom-made or personalised items, perishables, and high-value items that are expensive to ship back.</p>
 
-<h3>2. Set limits</h3>
+<h2 id="step-3-add-a-cod-fee-or-reward-prepaid-instead">Step 3: Add a COD fee, or reward prepaid instead</h2>
+<p>WooCommerce has no COD fee setting, so a fee needs a payment-based fees plugin or custom code. Whichever you use, the fee must appear in the checkout totals as soon as COD is selected, and be mentioned in the COD description, so nobody is surprised at the door. Ask your CA how the fee should be taxed and shown on your GST invoice; <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a> covers the invoice side.</p>
+<p>Many stores frame it the other way round: a small discount or free shipping for prepaid orders. The economics are similar, but a reward feels better than a penalty. WooCommerce coupons can't be limited to a payment method on their own, so this also needs a gateway-based discount plugin. Make paying online genuinely easy too, with UPI offered first on mobile; <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a> covers gateways and UPI.</p>
+
+<h2 id="step-4-confirm-cod-orders-before-you-ship">Step 4: Confirm COD orders before you ship</h2>
+<table>
+  <thead><tr><th>Method</th><th>How it works</th><th>Suits</th></tr></thead>
+  <tbody>
+    <tr><td>A call or WhatsApp message from your team</td><td>Confirm name, full address with a landmark, the product, the amount and a good delivery time</td><td>Small and new stores</td></tr>
+    <tr><td>Automated WhatsApp confirmation</td><td>An approved WhatsApp Business API template with Confirm and Cancel buttons, sent through a provider that updates the order</td><td>Growing order volumes</td></tr>
+    <tr><td>Phone verification at checkout</td><td>A one-time code by SMS before the order is placed</td><td>Stores with many fake or wrong numbers</td></tr>
+    <tr><td>A checkout platform with COD risk checks</td><td>Scores each COD order and can switch off COD for risky ones</td><td>Higher-volume D2C stores</td></tr>
+  </tbody>
+</table>
+<p>SMS in India needs DLT registration of your sender ID and message templates first, and WhatsApp templates need Meta's approval; <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">order notifications by email, SMS and WhatsApp</a> explains both. At the time of writing, Indian checkout and logistics platforms such as GoKwik, Razorpay's Magic Checkout and Shiprocket offer some form of COD risk scoring or confirmation, but most replace or sit over the WooCommerce checkout, so compare what you'd give up as well as what you'd gain.</p>
+<p>Decide what happens to orders that never confirm: for example, two attempts, then cancel. Cancelling an order in WooCommerce restores the stock it had reduced.</p>
+
+<h2 id="step-5-spot-fake-and-risky-orders">Step 5: Spot fake and risky orders</h2>
 <ul>
-  <li>Disable COD above a certain order value</li>
-  <li>Disable COD for pin codes with high failure rates</li>
-  <li>Disable COD for certain products (custom or perishable items)</li>
+  <li>Vague or incomplete addresses, or a pin code that doesn't match the city.</li>
+  <li>Numbers that never answer, or that refused a delivery before.</li>
+  <li>Several COD orders from the same number or address in a short time.</li>
+  <li>Unusually large quantities, or a first order of high value on COD.</li>
+  <li>Obvious test names and junk in the fields.</li>
 </ul>
-<p>Plugins can add these rules if WooCommerce's built-in options aren't enough.</p>
+<p>Make phone and pin code required fields, add a landmark field, since Indian addresses often depend on one, and check the format of 10-digit mobile numbers and 6-digit pin codes. Keep a list of numbers with repeated refusals and ask those customers to pay in advance.</p>
 
-<h3>3. Consider a small COD fee</h3>
-<p>A clearly shown COD handling fee covers some costs and nudges buyers to pay online. Make sure it's visible before checkout.</p>
+<h2 id="step-6-partial-prepaid-or-advance-plus-cod">Step 6: Partial prepaid, or advance plus COD</h2>
+<p>Asking for part of the amount online, such as the shipping charge, with the balance collected on delivery filters out most non-serious orders while keeping COD's reassurance. WooCommerce doesn't do this natively; deposit or partial-payment plugins, including WooCommerce's own Deposits extension at the time of writing, or a checkout platform can. Two details matter: explain clearly at checkout what is paid now and what on delivery, and make sure the COD amount on the courier shipment is the balance, not the full order total.</p>
 
-<h3>4. Encourage prepaid orders</h3>
+<h2 id="step-7-act-fast-on-failed-deliveries">Step 7: Act fast on failed deliveries</h2>
 <ul>
-  <li>Offer a small discount or free shipping for prepaid orders</li>
-  <li>Make UPI payment quick and prominent</li>
-  <li>Explain your refund policy clearly to build trust</li>
+  <li><strong>Dispatch quickly.</strong> The longer the wait, the more likely the buyer has changed their mind or bought elsewhere.</li>
+  <li><strong>Send tracking updates</strong> by WhatsApp or SMS, including an out-for-delivery message, so the buyer keeps cash ready and answers the courier's call.</li>
+  <li><strong>Work the NDR list daily.</strong> Couriers and aggregators raise a non-delivery report after a failed attempt. Call the customer, correct the address or reschedule within the courier's window, before the parcel heads back as RTO.</li>
+  <li><strong>Compare couriers by pin code.</strong> If one courier keeps failing in an area, route those orders through another.</li>
 </ul>
+<p>A clear routine for who handles confirmations, NDRs and status changes each day is in <a href="/blog/woocommerce-order-management-workflow/">WooCommerce order management</a>.</p>
 
-<h3>5. Partial advance</h3>
-<p>For high-value items, some stores ask for a small advance online with the rest on delivery. This filters out non-serious orders.</p>
+<h2 id="cod-remittance-and-reconciliation">COD remittance and reconciliation</h2>
+<p>The courier or aggregator collects the cash and pays it to you after delivery, on a cycle set in your agreement. Some offer faster remittance for an extra fee at the time of writing, and aggregators often deduct shipping and RTO charges from what they pay you. Before choosing one, check the remittance cycle, the COD charge, what gets deducted and the reports you receive.</p>
+<p>Reconcile every week: match the remittance report against your WooCommerce orders, mark matched orders Completed, and chase anything delivered but not paid. Over time, track the share of orders on COD and the RTO rate by product, pin code, traffic source and courier. Those figures show exactly where to tighten rules and where COD is working well.</p>
 
-<h3>6. Ship fast and keep customers informed</h3>
-<p>Faster dispatch and tracking updates by WhatsApp or SMS reduce the chance of refusal at the door.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>How do I enable cash on delivery in WooCommerce?</h3>
+<p>Go to WooCommerce &gt; Settings &gt; Payments, open Cash on delivery, enable it, and set the title, description and the shipping methods it applies to. Check that your courier supports COD for the areas you allow.</p>
+<h3>How do I disable COD above a certain order amount?</h3>
+<p>WooCommerce has no built-in setting for this. Use a conditional payments plugin, or a short code snippet that removes COD from the available payment methods when the cart total is above your limit, and test it on your checkout.</p>
+<h3>Can I charge an extra fee for cash on delivery?</h3>
+<p>Yes, with a payment-based fees plugin or custom code. Show the fee in the checkout totals as soon as COD is selected and mention it in the COD description, and ask your CA how it should appear on your GST invoice.</p>
+<h3>How do I reduce RTO on COD orders?</h3>
+<p>Confirm orders before dispatch, limit COD for risky products, values and pin codes, ship quickly with tracking updates, act on failed delivery reports the same day, and offer a reason to pay online or a partial advance.</p>
+<h3>How do I offer COD only for certain pin codes?</h3>
+<p>Create a shipping zone limited to those pin codes with its own shipping method, then allow COD only for that method. For many pin codes, or for live courier serviceability, use a pin code or conditional payments plugin.</p>
+<h3>When does the courier pay me the COD money?</h3>
+<p>After delivery, on the remittance cycle in your courier or aggregator agreement, usually with charges deducted. Check the cycle and deductions before you sign up, and reconcile each payment against your orders.</p>
 
-<h2 id="track-your-cod-performance">Track your COD performance</h2>
-<p>Keep a simple record of COD orders, delivered, refused and RTO costs by product and region. It shows where to tighten rules.</p>
-
-<h2 id="build-trust-so-buyers-pay-online">Build trust so buyers pay online</h2>
-<p>Strong product pages, reviews and clear policies make prepaid payments feel safe; see <a href="/blog/woocommerce-product-page-optimization/">product page optimisation</a> and <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments</a>.</p>
+<p>Want COD that brings orders without draining your margin? Payment gateways, COD rules, shipping and order emails are set up and tested with real orders as part of <a href="/woocommerce-developer/">WooCommerce development</a>. If shoppers are dropping out before they even choose a payment method, see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20Without%20Losing%20Money%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20in%20India%20Without%20Losing%20Money%20to%20RTO%20and%20Fake%20Orders%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20Without%20Losing%20Money%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-cash-on-delivery-india%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20in%20India%20Without%20Losing%20Money%20to%20RTO%20and%20Fake%20Orders%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-cash-on-delivery-india%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-cash-on-delivery-india%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20Without%20Losing%20Money&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-cash-on-delivery-india%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20in%20India%20Without%20Losing%20Money%20to%20RTO%20and%20Fake%20Orders&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-cash-on-delivery-india%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/woocommerce-cash-on-delivery-india/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -260,18 +330,23 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#turning-on-cod-in-woocommerce">Turning on COD in WooCommerce</a></li>
-              <li><a href="#why-cod-orders-fail">Why COD orders fail</a></li>
-              <li><a href="#ways-to-reduce-cod-losses">Ways to reduce COD losses</a></li>
-              <li><a href="#track-your-cod-performance">Track your COD performance</a></li>
-              <li><a href="#build-trust-so-buyers-pay-online">Build trust so buyers pay online</a></li>
+              <li><a href="#what-cod-really-costs">What COD really costs</a></li>
+              <li><a href="#step-1-enable-cod-in-woocommerce">Step 1: Enable COD in WooCommerce</a></li>
+              <li><a href="#step-2-limit-where-cod-is-offered">Step 2: Limit where COD is offered</a></li>
+              <li><a href="#step-3-add-a-cod-fee-or-reward-prepaid-instead">Step 3: Add a COD fee, or reward prepaid instead</a></li>
+              <li><a href="#step-4-confirm-cod-orders-before-you-ship">Step 4: Confirm COD orders before you ship</a></li>
+              <li><a href="#step-5-spot-fake-and-risky-orders">Step 5: Spot fake and risky orders</a></li>
+              <li><a href="#step-6-partial-prepaid-or-advance-plus-cod">Step 6: Partial prepaid, or advance plus COD</a></li>
+              <li><a href="#step-7-act-fast-on-failed-deliveries">Step 7: Act fast on failed deliveries</a></li>
+              <li><a href="#cod-remittance-and-reconciliation">COD remittance and reconciliation</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20Without%20Losing%20Money%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%20Sameer%2C%20I%20read%20your%20article%20%22Cash%20on%20Delivery%20in%20WooCommerce%3A%20How%20to%20Offer%20COD%20in%20India%20Without%20Losing%20Money%20to%20RTO%20and%20Fake%20Orders%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>

@@ -280,11 +280,11 @@
     <description>Landing page vs website: the key differences, landing page vs homepage, squeeze pages explained, and when to send ad clicks to each to get more leads.</description>
   </item>
   <item>
-    <title>How to Get Your New Website Indexed on Google Faster</title>
+    <title>How to Get Your New Website Indexed on Google Faster: What Actually Works</title>
     <link>https://samverse.space/blog/get-website-indexed-google-faster/</link>
     <guid>https://samverse.space/blog/get-website-indexed-google-faster/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>New site not showing on Google? How indexing works and steps to get pages indexed faster: Search Console, sitemaps, internal links, content and blockers.</description>
+    <description>What actually gets a new website indexed on Google faster: internal links, honest sitemaps, URL Inspection, page quality, crawl budget and IndexNow.</description>
   </item>
   <item>
     <title>How to Choose a WordPress Theme for Your Business Website</title>
@@ -546,11 +546,11 @@
     <description>Write an About page that builds trust and brings enquiries: your story, who you help, credentials, team, values, proof and a clear call to action.</description>
   </item>
   <item>
-    <title>How to Write Service Pages That Rank and Convert</title>
+    <title>How to Write Service Pages That Rank and Convert: Structure, Copy, Proof and a Section-by-Section Template</title>
     <link>https://samverse.space/blog/write-service-pages-that-convert/</link>
     <guid>https://samverse.space/blog/write-service-pages-that-convert/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Write service pages that rank on Google and convert, step by step: search intent, headline, problem, solution, process, proof, FAQs and calls to action.</description>
+    <description>How to write service pages that rank on Google and turn visitors into enquiries: one page per service, a section-by-section template, proof and FAQs.</description>
   </item>
   <item>
     <title>How to Collect and Display Customer Testimonials on Your Website</title>
@@ -1085,18 +1085,18 @@
     <description>Migrate your store from Shopify to WooCommerce: why stores switch, moving products, customers and orders, payments, shipping, redirects and launch checks.</description>
   </item>
   <item>
-    <title>XML Sitemaps Explained: What They Are and How to Use Them</title>
+    <title>XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress</title>
     <link>https://samverse.space/blog/xml-sitemaps-explained/</link>
     <guid>https://samverse.space/blog/xml-sitemaps-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>XML sitemaps explained: how they help Google find your pages, what to include or leave out, how WordPress builds one and how to submit it in Search Console.</description>
+    <description>XML sitemaps explained: what a sitemap does, what to include or leave out, how WordPress, Yoast and Rank Math build one, and how to submit it to Google.</description>
   </item>
   <item>
-    <title>Robots.txt Explained Simply, With Common Mistakes to Avoid</title>
+    <title>Robots.txt Explained Simply: How It Works, Safe WordPress Examples and Mistakes to Avoid</title>
     <link>https://samverse.space/blog/robots-txt-explained/</link>
     <guid>https://samverse.space/blog/robots-txt-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Robots.txt explained simply: how search engines use it, safe WordPress settings, blocking crawling vs indexing, and mistakes that hide sites from Google.</description>
+    <description>Robots.txt explained simply: how crawlers read it, safe WordPress and WooCommerce examples, AI crawler rules, Search Console testing and common mistakes.</description>
   </item>
   <item>
     <title>Canonical Tags Explained: What rel=canonical Does and How to Get It Right</title>
@@ -1113,11 +1113,11 @@
     <description>What duplicate content is, whether Google really penalises it, the common WordPress causes and how to fix them with canonicals, redirects, noindex or merging.</description>
   </item>
   <item>
-    <title>301 vs 302 Redirects: Which to Use and When</title>
+    <title>301 vs 302 Redirects: Which to Use, How They Affect SEO and How to Set Them Up in WordPress</title>
     <link>https://samverse.space/blog/301-vs-302-redirects/</link>
     <guid>https://samverse.space/blog/301-vs-302-redirects/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>301 vs 302 redirects explained: permanent vs temporary, when to use each, how they affect SEO, avoiding chains and loops, and setting them up on WordPress.</description>
+    <description>301 vs 302 redirects explained: permanent vs temporary, 307 and 308, the SEO effect, chains and loops, and setting up redirects in WordPress and .htaccess.</description>
   </item>
   <item>
     <title>How to Keep Visitors Engaged on Your Website (and Reduce Bounces)</title>
@@ -1449,18 +1449,18 @@
     <description>GA4 events and key events explained: which actions to track, from forms, calls and WhatsApp to downloads and purchases, and how to set up and read them.</description>
   </item>
   <item>
-    <title>UTM Tags Explained: Know Which Campaigns Bring Visitors</title>
+    <title>UTM Tags Explained: How to Tag Campaign Links and See Which Ones Bring Enquiries in GA4</title>
     <link>https://samverse.space/blog/utm-tags-explained/</link>
     <guid>https://samverse.space/blog/utm-tags-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>UTM tags explained: how to add them to social posts, WhatsApp, emails and ads, tidy naming conventions and how to read UTM data in Google Analytics.</description>
+    <description>UTM tags explained: the five parameters, naming GA4 understands, examples for WhatsApp, Instagram, email, QR codes and Meta ads, and reading them in GA4.</description>
   </item>
   <item>
-    <title>Thank-You Pages: Why Every Website Form Needs One</title>
+    <title>Thank-You Pages: Why Every Website Form Needs One, What to Put on It and How to Track It</title>
     <link>https://samverse.space/blog/thank-you-pages-forms/</link>
     <guid>https://samverse.space/blog/thank-you-pages-forms/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Why every website form needs a thank-you page or confirmation message: reassurance, conversion tracking, next steps, cross-selling and what to include.</description>
+    <description>Why every website form needs a thank-you page: what to include, how to redirect in WPForms, Elementor or CF7, and how to track it in GA4 and Google Ads.</description>
   </item>
   <item>
     <title>WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)</title>
@@ -1477,11 +1477,11 @@
     <description>WooCommerce GST setup for Indian stores: tax classes, CGST/SGST vs IGST rates, place of supply, HSN codes, GSTIN at checkout and GST invoice plugins.</description>
   </item>
   <item>
-    <title>Cash on Delivery in WooCommerce: How to Offer COD Without Losing Money</title>
+    <title>Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders</title>
     <link>https://samverse.space/blog/woocommerce-cash-on-delivery-india/</link>
     <guid>https://samverse.space/blog/woocommerce-cash-on-delivery-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Set up Cash on Delivery in WooCommerce for India: cut RTO and fake orders, confirm COD orders, add COD limits and nudge buyers towards prepaid payment.</description>
+    <description>Set up cash on delivery in WooCommerce for India: enable COD, limit it by amount, pin code or product, add a COD fee, confirm orders, cut RTO and fake orders.</description>
   </item>
   <item>
     <title>Website Ownership Checklist: Make Sure You Truly Own Your Website</title>
@@ -1596,11 +1596,11 @@
     <description>Keyword research for small businesses with free tools: Google autocomplete, People Also Ask, Search Console, Keyword Planner, competitors and page mapping.</description>
   </item>
   <item>
-    <title>Search Intent Explained: Why the Right Page Type Matters for Rankings</title>
+    <title>Search Intent Explained: The Types of Intent, How to Read Them From Google and How to Match Your Pages</title>
     <link>https://samverse.space/blog/search-intent-explained/</link>
     <guid>https://samverse.space/blog/search-intent-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Search intent explained: informational, navigational, commercial, transactional and local intent, how to read it from Google results and match your pages.</description>
+    <description>Search intent explained with examples: informational, navigational, commercial, transactional and local, how to read it from Google and match your pages.</description>
   </item>
   <item>
     <title>Topic Clusters and Pillar Pages Explained: How to Plan Them and Build Them in WordPress</title>
@@ -1610,11 +1610,11 @@
     <description>Topic clusters and pillar pages explained: what a pillar page is, how to plan a cluster and how to build one in WordPress with links and categories.</description>
   </item>
   <item>
-    <title>How to Update Old Blog Posts to Win Back Traffic</title>
+    <title>How to Update Old Blog Posts to Win Back Traffic: Find, Refresh, Merge and Measure</title>
     <link>https://samverse.space/blog/update-old-blog-posts/</link>
     <guid>https://samverse.space/blog/update-old-blog-posts/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Update old blog posts to regain rankings, step by step: find candidates in Search Console, refresh facts, improve titles and add internal links.</description>
+    <description>How to update old blog posts to win back traffic: find slipping posts in Search Console, refresh or merge them, handle dates and redirects, and measure.</description>
   </item>
   <item>
     <title>Google Algorithm Updates: What Small Businesses Should Know and Do</title>
