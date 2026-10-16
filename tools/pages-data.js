@@ -11,7 +11,7 @@ const PAGES = [
     eyebrow: 'For digital & design agencies',
     h1: 'Your <span class="grad">white-label</span> WordPress developer',
     lead: 'You win the client, I build the website. I turn your agency\'s designs and briefs into fast, responsive WordPress sites under your brand, so you can take on more projects without hiring.',
-    wa: 'Hi Sameer, I run an agency and want to discuss white-label WordPress work.',
+    wa: 'Hi, I run an agency and want to discuss white-label WordPress work.',
     painTitle: 'Why agencies outsource to me',
     pains: [
       ['Your name, not mine', 'I work behind the scenes under NDA. No contact with your clients unless you want it, and no credits on the site.'],
@@ -42,7 +42,7 @@ const PAGES = [
     eyebrow: 'For doctors, clinics & hospitals',
     h1: 'Websites that help <span class="grad">patients find you</span> and book',
     lead: 'Patients search on Google before they choose a doctor. I build professional, mobile-friendly clinic websites that build trust, rank for local searches and turn visitors into appointment enquiries.',
-    wa: 'Hi Sameer, I need a website for my clinic / practice.',
+    wa: 'Hi, I need a website for my clinic / practice.',
     painTitle: 'What a good clinic website does for you',
     pains: [
       ['Builds trust before the visit', 'Your qualifications, experience, treatments and clinic photos presented professionally, so patients choose you with confidence.'],
@@ -73,7 +73,7 @@ const PAGES = [
     eyebrow: 'For manufacturers, industrial & B2B',
     h1: 'B2B websites that <span class="grad">bring in enquiries</span>',
     lead: 'Buyers and procurement teams check your website before they call. I build clear, professional websites for manufacturers and industrial suppliers that show your products and capability, and turn visits into RFQs.',
-    wa: 'Hi Sameer, I need a website for my manufacturing / B2B company.',
+    wa: 'Hi, I need a website for my manufacturing / B2B company.',
     painTitle: 'What your B2B website should do',
     pains: [
       ['Show your capability', 'Products, certifications, facilities and clients presented so buyers take you seriously from the first visit.'],
@@ -104,7 +104,7 @@ const PAGES = [
     eyebrow: 'For brands & online stores',
     h1: 'Start selling online with a <span class="grad">WooCommerce</span> store',
     lead: 'Own your online store instead of paying marketplace commissions. I build fast, mobile-friendly WooCommerce stores with payments, shipping and everything set up so you can start taking orders.',
-    wa: 'Hi Sameer, I want to build an online store with WooCommerce.',
+    wa: 'Hi, I want to build an online store with WooCommerce.',
     painTitle: 'Why brands choose WooCommerce with me',
     pains: [
       ['No marketplace commission', 'Sell directly to customers on your own website and keep more of every order.'],
@@ -135,7 +135,7 @@ const PAGES = [
     eyebrow: 'For restaurants, cafes & food brands',
     h1: 'Restaurant websites that <span class="grad">fill tables</span>',
     lead: 'Hungry customers check your menu, photos and timings online before they visit or order. I build fast, beautiful restaurant websites that make them want to come in, book a table or order directly.',
-    wa: 'Hi Sameer, I need a website for my restaurant / cafe.',
+    wa: 'Hi, I need a website for my restaurant / cafe.',
     painTitle: 'What your restaurant website should do',
     pains: [
       ['Show off your food', 'Big, fast-loading photo galleries and a menu that looks great on phones, not a blurry PDF.'],
@@ -166,7 +166,7 @@ const PAGES = [
     eyebrow: 'For builders, developers & property agents',
     h1: 'Real estate websites that <span class="grad">generate site visits</span>',
     lead: 'Property buyers research online long before they call. I build professional real estate websites that showcase your projects, build credibility and capture enquiries from serious buyers.',
-    wa: 'Hi Sameer, I need a real estate website.',
+    wa: 'Hi, I need a real estate website.',
     painTitle: 'What a real estate website needs to do',
     pains: [
       ['Showcase every project', 'Dedicated project pages with galleries, floor plans, amenities, location maps and RERA details.'],
@@ -197,7 +197,7 @@ const PAGES = [
     eyebrow: 'For schools, colleges & coaching institutes',
     h1: 'Education websites that <span class="grad">boost admissions</span>',
     lead: 'Parents and students compare institutes online before they enquire. I build clear, trustworthy education websites that highlight your results, faculty and courses, and make admission enquiries easy.',
-    wa: 'Hi Sameer, I need a website for my school / coaching institute.',
+    wa: 'Hi, I need a website for my school / coaching institute.',
     painTitle: 'What your institute website should do',
     pains: [
       ['Win parents\' trust', 'Results, toppers, faculty profiles, facilities and achievements presented professionally.'],
@@ -228,7 +228,7 @@ const PAGES = [
     eyebrow: 'For temples, trusts & NGOs',
     h1: 'Websites that <span class="grad">connect your community</span>',
     lead: 'Devotees, volunteers and donors look for you online. I build respectful, easy-to-use websites for temples, trusts and NGOs that share your story, events and causes, and make donating simple.',
-    wa: 'Hi Sameer, I need a website for our temple / trust / NGO.',
+    wa: 'Hi, I need a website for our temple / trust / NGO.',
     painTitle: 'What your website can do for you',
     pains: [
       ['Accept donations online', 'Secure donation pages with payment gateways, and donation receipts sent by email.'],
@@ -259,7 +259,7 @@ const PAGES = [
     eyebrow: 'For hotels, resorts, homestays & travel',
     h1: 'Hotel websites that <span class="grad">win direct bookings</span>',
     lead: 'Every booking through an OTA costs you commission. A great website of your own helps guests book directly. I build stunning, fast hotel and homestay websites that showcase your property and bring in bookings.',
-    wa: 'Hi Sameer, I need a website for my hotel / homestay.',
+    wa: 'Hi, I need a website for my hotel / homestay.',
     painTitle: 'What your hotel website should do',
     pains: [
       ['Earn more direct bookings', 'Booking enquiry forms, WhatsApp booking or a booking engine, so guests book with you and not an OTA.'],
@@ -290,7 +290,7 @@ const PAGES = [
     eyebrow: 'For lawyers, CAs & consultants',
     h1: 'Professional websites that <span class="grad">earn client trust</span>',
     lead: 'Clients choose professionals they trust. I build clean, credible websites for lawyers, chartered accountants and consultants that present your expertise clearly and turn visitors into consultation requests.',
-    wa: 'Hi Sameer, I need a website for my practice / firm.',
+    wa: 'Hi, I need a website for my practice / firm.',
     painTitle: 'What your professional website should do',
     pains: [
       ['Establish credibility', 'Your qualifications, experience, practice areas and team presented with a polished, professional look.'],
@@ -321,7 +321,7 @@ const PAGES = [
     eyebrow: 'For startups & new businesses',
     h1: 'Launch your startup with a <span class="grad">website that converts</span>',
     lead: 'You need a sharp, credible website quickly without burning your runway. I build modern startup websites on WordPress that your team can edit, that load fast and that turn visitors into sign-ups and demo requests.',
-    wa: 'Hi Sameer, I need a website for my startup.',
+    wa: 'Hi, I need a website for my startup.',
     painTitle: 'Why startups build with me',
     pains: [
       ['Launch fast', 'Go from brief to live website quickly, so you can start marketing and fundraising.'],
@@ -352,7 +352,7 @@ const PAGES = [
     eyebrow: 'For solar, power & electrical businesses',
     h1: 'Websites that bring <span class="grad">solar & power enquiries</span>',
     lead: 'Homeowners and businesses compare solar and power companies online before asking for a quote. I build professional websites that explain your solutions, show completed projects and turn visitors into quote requests.',
-    wa: 'Hi Sameer, I need a website for my solar / power company.',
+    wa: 'Hi, I need a website for my solar / power company.',
     painTitle: 'What your website should do',
     pains: [
       ['Explain your solutions simply', 'Clear pages for solar, inverters, batteries, gensets or electrical services, written for customers, not engineers.'],
@@ -385,7 +385,7 @@ const PAGES = [
     eyebrow: 'WordPress website development',
     h1: 'WordPress websites, <span class="grad">built properly</span>',
     lead: 'Your website should look professional, load fast, show up on Google and make it easy for customers to contact you. I build WordPress websites that do all four, and that you can update yourself after launch.',
-    wa: 'Hi Sameer, I need a new WordPress website.',
+    wa: 'Hi, I need a new WordPress website.',
     painTitle: 'What you get with a Samverse website',
     pains: [
       ['Designed around your customers', 'Pages planned around what your visitors need to see and do, with clear calls to action on every page.'],
@@ -416,7 +416,7 @@ const PAGES = [
     eyebrow: 'Hire a WordPress developer',
     h1: 'Hire a WordPress developer <span class="grad">you can rely on</span>',
     lead: 'Need a new site, a fix, or an extra pair of hands for your agency? Work directly with me, an experienced freelance WordPress developer, with clear quotes, quick communication and work delivered on time.',
-    wa: 'Hi Sameer, I want to hire you for WordPress work.',
+    wa: 'Hi, I want to hire you for WordPress work.',
     painTitle: 'Why clients hire me',
     pains: [
       ['Direct communication', 'You talk to the person doing the work on WhatsApp, email or calls, with no account managers in between.'],
@@ -439,7 +439,7 @@ const PAGES = [
     ],
   },
   {
-    // Location page: Sameer is based in Pune (matches the Google Business Profile service area). Keep claims factual.
+    // Location page: the business is based in Pune (matches the Google Business Profile service area). Keep claims factual.
     type: 'service',
     slug: 'wordpress-developer-pune',
     nav: 'WordPress Developer in Pune',
@@ -447,8 +447,8 @@ const PAGES = [
     description: 'Freelance WordPress developer based in Pune: fast, SEO-ready business websites, WooCommerce stores, redesigns and maintenance for Pune and PCMC businesses.',
     eyebrow: 'Based in Pune',
     h1: 'WordPress developer in <span class="grad">Pune</span>',
-    lead: 'I\'m Sameer Gupta, a freelance WordPress developer based in Pune. Since 2020 I\'ve built fast, mobile-friendly websites for businesses, clinics, manufacturers, restaurants and agencies, and I work directly with every client, from the first call to launch and beyond.',
-    wa: 'Hi Sameer, I found your Pune page. I need help with a website.',
+    lead: 'I\'m a freelance WordPress developer based in Pune. Since 2020 I\'ve built fast, mobile-friendly websites for businesses, clinics, manufacturers, restaurants and agencies, and I work directly with every client, from the first call to launch and beyond.',
+    wa: 'Hi, I found your Pune page. I need help with a website.',
     painTitle: 'Why Pune businesses work with me',
     pains: [
       ['One developer, direct contact', 'You work with one experienced developer based in Pune, on WhatsApp, calls or video, not a sales team or a chain of freelancers.'],
@@ -482,7 +482,7 @@ const PAGES = [
     eyebrow: 'Website redesign',
     h1: 'Give your old website a <span class="grad">modern makeover</span>',
     lead: 'An outdated website quietly costs you customers. I redesign websites on WordPress with a fresh, modern look, faster loading and a mobile-first layout, while protecting the Google rankings you already have.',
-    wa: 'Hi Sameer, I want to redesign my website.',
+    wa: 'Hi, I want to redesign my website.',
     painTitle: 'Signs it\'s time for a redesign',
     pains: [
       ['It looks outdated', 'Visitors judge your business by your website. A dated design makes a great business look small.'],
@@ -513,7 +513,7 @@ const PAGES = [
     eyebrow: 'WordPress & WooCommerce speed optimization',
     h1: 'WordPress speed optimization that <span class="grad">fixes the real cause</span>',
     lead: 'Slow pages lose visitors, enquiries and sales. I find out exactly what\'s slowing your WordPress site or WooCommerce store, whether it\'s hosting, plugins, the theme or page builder, images, scripts or the database, then fix it safely and show you the before-and-after results.',
-    wa: 'Hi Sameer, my WordPress website is slow. Can you help?',
+    wa: 'Hi, my WordPress website is slow. Can you help?',
     painTitle: 'Why speed matters',
     pains: [
       ['Visitors don\'t wait', 'People on mobile data give up on slow pages quickly, and every delay before your content appears is a reason to go back to Google.'],
@@ -548,7 +548,7 @@ const PAGES = [
     eyebrow: 'WordPress maintenance & support',
     h1: 'Your website, <span class="grad">looked after every month</span>',
     lead: 'Outdated plugins, missed backups and security holes are how websites break or get hacked. My maintenance plans keep your WordPress site updated, backed up, secure and running smoothly, so you can focus on your business.',
-    wa: 'Hi Sameer, I\'m interested in a WordPress maintenance plan.',
+    wa: 'Hi, I\'m interested in a WordPress maintenance plan.',
     painTitle: 'Why maintenance matters',
     pains: [
       ['Prevent hacks', 'Most hacked WordPress sites were running outdated plugins or themes. Regular updates close those holes.'],
@@ -579,7 +579,7 @@ const PAGES = [
     eyebrow: 'Elementor development',
     h1: 'Hire an <span class="grad">Elementor expert</span>',
     lead: 'Elementor makes WordPress easy to edit, but building it right takes experience. I build pixel-accurate, responsive Elementor layouts and theme templates that stay fast and easy for you to update.',
-    wa: 'Hi Sameer, I need help with an Elementor website.',
+    wa: 'Hi, I need help with an Elementor website.',
     painTitle: 'What I do with Elementor',
     pains: [
       ['Custom page designs', 'Unique, on-brand pages built from your design or references, not generic templates.'],
@@ -610,7 +610,7 @@ const PAGES = [
     eyebrow: 'Figma / XD / PSD to WordPress',
     h1: 'Your design, built <span class="grad">pixel-perfect</span> in WordPress',
     lead: 'You have the design, and you need it live, exactly as designed. I convert Figma, Adobe XD and PSD designs into responsive WordPress websites that match every detail and stay easy to edit.',
-    wa: 'Hi Sameer, I have a Figma design to convert to WordPress.',
+    wa: 'Hi, I have a Figma design to convert to WordPress.',
     painTitle: 'Why designers and agencies use me',
     pains: [
       ['Pixel-accurate builds', 'Spacing, typography, colours and interactions matched closely to your design.'],
@@ -640,7 +640,7 @@ const PAGES = [
     eyebrow: 'Landing page design',
     h1: 'Landing pages that <span class="grad">turn clicks into leads</span>',
     lead: 'Sending ad traffic to a general homepage wastes money. I build fast, focused landing pages for your campaigns, with one clear message, one goal and tracking set up, so more clicks become leads.',
-    wa: 'Hi Sameer, I need a landing page for my ads / campaign.',
+    wa: 'Hi, I need a landing page for my ads / campaign.',
     painTitle: 'What makes a landing page convert',
     pains: [
       ['One clear goal', 'No distractions, just a strong headline, benefits, proof and one call to action.'],
@@ -671,7 +671,7 @@ const PAGES = [
     eyebrow: 'WordPress SEO',
     h1: 'Get your WordPress site <span class="grad">ready to rank</span>',
     lead: 'Great content won\'t rank if Google can\'t understand your site. I fix the technical and on-page SEO of WordPress websites, from structure and meta tags to schema, speed and Search Console.',
-    wa: 'Hi Sameer, I need SEO help for my WordPress site.',
+    wa: 'Hi, I need SEO help for my WordPress site.',
     painTitle: 'What WordPress SEO fixes',
     pains: [
       ['Pages not indexed', 'Sitemaps, robots and Search Console issues fixed so Google can find your pages.'],
@@ -702,7 +702,7 @@ const PAGES = [
     eyebrow: 'Hacked site repair & security',
     h1: 'Hacked WordPress site? <span class="grad">Let\'s fix it fast.</span>',
     lead: 'Spam redirects, strange pages, Google warnings or a site that won\'t load? I clean malware from hacked WordPress sites, remove injected code, and harden security so it doesn\'t happen again.',
-    wa: 'Hi Sameer, my WordPress site has been hacked. I need help urgently.',
+    wa: 'Hi, my WordPress site has been hacked. I need help urgently.',
     painTitle: 'Signs your site is hacked',
     pains: [
       ['Redirects to spam sites', 'Visitors, especially from Google or mobile, get sent to unrelated or harmful websites.'],
@@ -733,7 +733,7 @@ const PAGES = [
     eyebrow: 'Website migration & hosting',
     h1: 'Move your website <span class="grad">without the headache</span>',
     lead: 'Changing hosts, domains or platforms can break websites and lose rankings. I migrate WordPress sites safely, and move sites from Wix, HTML and other platforms onto WordPress, with zero downtime and SEO preserved.',
-    wa: 'Hi Sameer, I need to migrate my website.',
+    wa: 'Hi, I need to migrate my website.',
     painTitle: 'Migrations I handle',
     pains: [
       ['Hosting to hosting', 'Move to faster, better hosting with files, database and email settings transferred correctly.'],

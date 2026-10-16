@@ -154,7 +154,7 @@ const calculatorScript = `
     mo.hidden = !m; mo.textContent = '+ ' + inr(2000) + ' \\u2013 ' + inr(6000) + ' per month for maintenance';
     if (m) items.push('Monthly maintenance');
     document.getElementById('summary').innerHTML = items.map(function (i) { return '<li>' + i + '</li>'; }).join('');
-    var msg = 'Hi Sameer, I used your website cost calculator.\\n\\nProject: ' + items.join(', ') + '\\nEstimate shown: ' + inr(lo) + ' - ' + inr(hi) + '\\n\\nCan you give me an exact quote?';
+    var msg = 'Hi, I used your website cost calculator.\\n\\nProject: ' + items.join(', ') + '\\nEstimate shown: ' + inr(lo) + ' - ' + inr(hi) + '\\n\\nCan you give me an exact quote?';
     document.getElementById('calcWa').href = 'https://wa.me/917417049145?text=' + encodeURIComponent(msg);
     if (typeof gtag === 'function') gtag('event', 'calculator_used', { type: type });
   }
@@ -178,24 +178,24 @@ module.exports = [
     schema: url => ({
       '@type': 'WebApplication', name: 'Website Cost Calculator (India)', url, applicationCategory: 'BusinessApplication',
       operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
-      creator: { '@type': 'Person', '@id': `${SITE}/#sameer`, name: 'Sameer Gupta' },
+      creator: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/` },
     }),
   },
   {
     slug: 'about',
     crumb: 'About',
-    title: 'About Sameer Gupta: Freelance WordPress Developer | Samverse',
-    description: 'Meet Sameer Gupta, the freelance WordPress developer behind Samverse. Building fast, responsive, SEO-friendly websites for businesses and agencies since 2020.',
+    title: 'About Samverse: Freelance WordPress Developer in Pune',
+    description: 'About Samverse, freelance WordPress development from Pune: fast, responsive, SEO-friendly websites for businesses and agencies since 2020.',
     eyebrow: 'About',
-    h1: 'Hi, I\'m <span class="grad">Sameer Gupta</span>',
-    lead: 'I\'m a freelance WordPress developer in India. I build fast, responsive, SEO-friendly websites for businesses, professionals and agencies, and I\'ve been doing it full time since 2020.',
+    h1: 'About <span class="grad">Samverse</span>',
+    lead: 'I\'m a freelance WordPress developer in India. I build fast, responsive, SEO-friendly websites for businesses, professionals and agencies, and I\'ve been doing it since 2020.',
     priority: '0.7',
     main: `
     <section class="section" style="padding-top:10px">
       <div class="container about-page">
         <div class="about-page-body">
           <h2>How Samverse started</h2>
-          <p>When COVID pushed businesses online in 2020, many owners suddenly needed a proper website, fast. I started building WordPress websites to help them get there, and it quickly became my full-time work.</p>
+          <p>When COVID pushed businesses online in 2020, many owners suddenly needed a proper website, fast. I started building WordPress websites to help them get there, and it has kept me busy ever since.</p>
           <p>Since then I've built websites for an electronics manufacturer, an AI automation agency, a growth marketing agency, an industrial automation media portal, a large temple directory, a doctor's wellness practice and a generator rental company, among others. You can see them in my <a href="/work/">portfolio</a>.</p>
 
           <h2>What I focus on</h2>
@@ -254,8 +254,8 @@ ${(Array.isArray(WORK) ? WORK : Object.values(WORK)[0]).map(w => `            <l
 
         <aside class="about-page-side">
           <div class="about-card">
-            <div class="avatar">SG</div>
-            <p class="about-name">Sameer Gupta</p>
+            <div class="avatar">S</div>
+            <p class="about-name">Samverse</p>
             <p class="muted">WordPress &amp; Web Developer</p>
             <ul class="about-meta">
               <li><span>Based in</span> <a href="/wordpress-developer-pune/">Pune</a>, India</li>
@@ -273,10 +273,10 @@ ${(Array.isArray(WORK) ? WORK : Object.values(WORK)[0]).map(w => `            <l
       </div>
     </section>`,
     schema: url => ({
-      '@type': 'ProfilePage', url, name: 'About Sameer Gupta',
+      '@type': 'ProfilePage', url, name: 'About Samverse',
       mainEntity: {
-        '@type': 'Person', '@id': `${SITE}/#sameer`, name: 'Sameer Gupta', jobTitle: 'Freelance WordPress Developer',
-        url: `${SITE}/`, email: 'mailto:sameergpt9719@gmail.com', telephone: '+91-7417049145',
+        '@type': 'ProfessionalService', '@id': `${SITE}/#service`, name: 'Samverse', description: 'Freelance WordPress development',
+        url: `${SITE}/`, email: 'mailto:samverse9719@gmail.com', telephone: '+91-7417049145',
         address: { '@type': 'PostalAddress', addressLocality: 'Pune', addressRegion: 'Maharashtra', addressCountry: 'IN' },
         knowsAbout: ['WordPress', 'Elementor', 'WooCommerce', 'Website Speed Optimization', 'Search Engine Optimization', 'Responsive Web Design', 'WordPress Security', 'Malware Removal', 'WordPress Maintenance', 'Landing Page Design'],
       },
@@ -323,7 +323,7 @@ ${GLOSSARY.map(([t, d]) => `          <div class="glossary-item" id="${termId(t)
       <div class="container about-page">
         <div class="about-page-body">
           <h2>Who we are</h2>
-          <p>samverse.space is the website of Sameer Gupta, a freelance WordPress developer based in Pune, India ("I", "me"). For any privacy question, email <a href="mailto:sameergpt9719@gmail.com">sameergpt9719@gmail.com</a>.</p>
+          <p>samverse.space is the website of Samverse, run by a freelance WordPress developer based in Pune, India ("I", "me"). For any privacy question, email <a href="mailto:samverse9719@gmail.com">samverse9719@gmail.com</a>.</p>
 
           <h2>Information you give me</h2>
           <p>When you use the contact form, you share your name, phone or WhatsApp number, email address (optional), project type and message. This is emailed to me so I can reply to your enquiry. After you submit the form, WhatsApp may open so we can continue the conversation there; WhatsApp's own privacy policy applies to chats on WhatsApp.</p>
@@ -351,7 +351,7 @@ ${GLOSSARY.map(([t, d]) => `          <div class="glossary-item" id="${termId(t)
           <p>Enquiry emails are kept as long as needed to respond and for reasonable business records. Analytics data is kept according to the retention settings of the analytics tools.</p>
 
           <h2>Your rights</h2>
-          <p>You can ask me to access, correct or delete the personal information you've shared by emailing <a href="mailto:sameergpt9719@gmail.com">sameergpt9719@gmail.com</a>. I'll respond within a reasonable time.</p>
+          <p>You can ask me to access, correct or delete the personal information you've shared by emailing <a href="mailto:samverse9719@gmail.com">samverse9719@gmail.com</a>. I'll respond within a reasonable time.</p>
 
           <h2>Links to other websites</h2>
           <p>This site links to client websites and other services. Their privacy practices are their own, so please review their policies.</p>

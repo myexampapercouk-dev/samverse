@@ -1,6 +1,6 @@
 # samverse
 
-Portfolio website of **Sameer Gupta**, freelance WordPress developer: https://samverse.space
+Portfolio website of **Samverse**, freelance WordPress development: https://samverse.space
 
 Static HTML/CSS/JS site deployed on Netlify, with a Netlify Function (`netlify/functions/send-quote.js`)
 that emails contact-form submissions to Gmail via nodemailer.

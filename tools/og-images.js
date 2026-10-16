@@ -93,7 +93,7 @@ const svgFor = (theme, label, title) => {
   <text x="170" y="112" font-size="30" font-weight="700" fill="#14142B">sam<tspan fill="#6D4AFF">verse</tspan></text>
   <text x="80" y="${labelY}" font-size="22" font-weight="700" fill="${accent}" letter-spacing="3">${xml(label.toUpperCase())}</text>
   ${lines.map((l, i) => `<text x="80" y="${top + i * lineH}" font-size="${size}" font-weight="700" fill="#14142B" letter-spacing="-1">${xml(l)}</text>`).join('\n  ')}
-  <text x="80" y="585" font-size="24" fill="#5B5B7A">Sameer Gupta · samverse.space</text>
+  <text x="80" y="585" font-size="24" fill="#5B5B7A">Samverse · samverse.space</text>
 </svg>`;
 };
 

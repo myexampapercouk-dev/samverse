@@ -137,7 +137,7 @@ const render = p => {
       {
         '@type': 'Service', '@id': `${url}#service`, name: plainH1, serviceType: p.nav, description: p.description, url,
         areaServed: p.areaServed ? p.areaServed.map(name => ({ '@type': 'City', name })) : 'Worldwide',
-        provider: { '@type': 'Person', '@id': `${SITE}/#sameer`, name: 'Sameer Gupta', url: `${SITE}/`, telephone: '+91-7417049145' },
+        provider: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/`, telephone: '+91-7417049145' },
       },
       {
         '@type': 'BreadcrumbList', itemListElement: [
@@ -158,7 +158,7 @@ const render = p => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(p.title)}</title>
   <meta name="description" content="${esc(p.description)}">
-  <meta name="author" content="Sameer Gupta">
+  <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="${url}">
@@ -337,8 +337,8 @@ ${PAGES.filter(x => x.type === type).map(x => '          ' + card(x)).join('\n')
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Services &amp; Industries | Samverse by Sameer Gupta</title>
-  <meta name="description" content="All WordPress services by Sameer Gupta: websites for doctors, manufacturers, restaurants and more, plus redesign, speed, SEO, maintenance and security.">
+  <title>WordPress Services &amp; Industries | Samverse</title>
+  <meta name="description" content="All WordPress services from Samverse: websites for doctors, manufacturers, restaurants and more, plus redesign, speed, SEO, maintenance and security.">
   <meta name="robots" content="index, follow">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <link rel="canonical" href="${url}">
@@ -409,7 +409,7 @@ const headCommon = (title, description, url, extra = '') => `<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
-  <meta name="author" content="Sameer Gupta">
+  <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="${url}">
@@ -471,7 +471,7 @@ const renderPost = (post, i) => {
         '@type': 'BlogPosting', '@id': `${url}#article`, headline: post.title, description: post.description,
         datePublished: post.date, dateModified: post.updated || post.date, mainEntityOfPage: url,
         image: ogImage(`blog-${post.slug}`), articleSection: post.category, inLanguage: 'en-IN',
-        author: { '@type': 'Person', '@id': `${SITE}/#sameer`, name: 'Sameer Gupta', url: `${SITE}/` },
+        author: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/` },
         publisher: { '@type': 'Organization', name: 'Samverse', logo: { '@type': 'ImageObject', url: `${SITE}/assets/icon-512.png` } },
       },
       {
@@ -488,7 +488,7 @@ const renderPost = (post, i) => {
   const base = post.seoTitle || post.title;
   const pageTitle = (base + ' | Samverse').length <= 60 ? base + ' | Samverse' : base;
 
-  const waLink = `https://wa.me/${WA}?text=${encodeURIComponent('Hi Sameer, I read your article "' + post.title + '" and need help.')}`;
+  const waLink = `https://wa.me/${WA}?text=${encodeURIComponent('Hi, I read your article "' + post.title + '" and need help.')}`;
   const icon = d => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
   const shareLinks = cls => `<div class="share ${cls}">
               <a href="https://wa.me/?text=${encodeURIComponent(post.title + ' ' + url)}" target="_blank" rel="noopener" aria-label="Share on WhatsApp">${icon('M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z')}</a>
@@ -538,7 +538,7 @@ ${JSON.stringify(schema, null, 2)}
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
-              <a href="/about/">Sameer Gupta</a>
+              <a href="/about/">Samverse</a>
               <span><time datetime="${post.date}">${fmtDate(post.date)}</time>${post.updated ? ` · Updated <time datetime="${post.updated}">${fmtDate(post.updated)}</time>` : ''} · ${readMins(post.body)} min read</span>
             </div>
             ${shareLinks('share-top')}
@@ -564,7 +564,7 @@ ${SUMMARIES[post.slug].map(t => `              <li>${esc(t)}</li>`).join('\n')}
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
-            <p>I'm Sameer, a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
+            <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
               <a href="${waLink}" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
@@ -578,7 +578,7 @@ ${SUMMARIES[post.slug].map(t => `              <li>${esc(t)}</li>`).join('\n')}
 
           <div class="post-author">
             <img src="/assets/logo-mark.svg" alt="" width="56" height="56">
-            <div><strong><a href="/about/">Sameer Gupta</a></strong><p>Freelance WordPress developer and founder of Samverse, building websites for clinics, manufacturers, agencies and online stores since 2020.</p><a href="/about/" class="link-inline">More about me</a></div>
+            <div><strong><a href="/about/">Samverse</a></strong><p>Freelance WordPress development, building websites for clinics, manufacturers, agencies and online stores since 2020.</p><a href="/about/" class="link-inline">More about me</a></div>
           </div>
 ${prev && next ? `
           <nav class="post-nav" aria-label="More in ${esc(topic.name)}">
@@ -666,10 +666,10 @@ const renderBlogIndex = () => {
   const url = `${SITE}/blog/`;
   const schema = {
     '@context': 'https://schema.org', '@type': 'Blog', name: 'Samverse Blog', url,
-    author: { '@type': 'Person', '@id': `${SITE}/#sameer`, name: 'Sameer Gupta' },
+    author: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/` },
     blogPost: POSTS.map(p => ({ '@type': 'BlogPosting', headline: p.title, url: `${SITE}/blog/${p.slug}/`, datePublished: p.date })),
   };
-  return `${headCommon('WordPress & Website Tips for Business Owners | Samverse Blog', 'Practical guides on WordPress websites, costs, speed, security, SEO and online stores, written for business owners by freelance developer Sameer Gupta.', url, `  <meta property="og:type" content="website">
+  return `${headCommon('WordPress & Website Tips for Business Owners | Samverse Blog', 'Practical guides on WordPress websites, costs, speed, security, SEO and online stores, written for business owners by a freelance WordPress developer.', url, `  <meta property="og:type" content="website">
   <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
   </script>
@@ -826,7 +826,7 @@ fs.writeFileSync(path.join(ROOT, 'blog', 'feed.xml'), `<?xml version="1.0" encod
   <title>Samverse Blog</title>
   <link>${SITE}/blog/</link>
   <atom:link href="${SITE}/blog/feed.xml" rel="self" type="application/rss+xml"/>
-  <description>WordPress and website tips for business owners by Sameer Gupta.</description>
+  <description>WordPress and website tips for business owners from Samverse.</description>
   <language>en-in</language>
 ${POSTS.map(p => `  <item>\n    <title>${esc(p.title)}</title>\n    <link>${SITE}/blog/${p.slug}/</link>\n    <guid>${SITE}/blog/${p.slug}/</guid>\n    <pubDate>${new Date(p.date + 'T09:00:00+05:30').toUTCString()}</pubDate>\n    <description>${esc(p.description)}</description>\n  </item>`).join('\n')}
 </channel>
@@ -848,7 +848,7 @@ const renderWork = (w, i) => {
       {
         '@type': 'CreativeWork', '@id': `${url}#work`, name: `${w.name} website`, description: w.summary, url,
         image: w.thumb ? `${SITE}${w.thumb}` : shotFor(w), genre: w.industry, inLanguage: 'en-IN',
-        creator: { '@type': 'Person', '@id': `${SITE}/#sameer`, name: 'Sameer Gupta', url: `${SITE}/` },
+        creator: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/` },
         about: { '@type': 'Organization', name: w.name, url: w.url },
       },
       {
@@ -943,10 +943,10 @@ ${w.related.map(s => bySlug[s]).filter(Boolean).map(x => '          ' + card(x))
 const renderWorkIndex = () => {
   const url = `${SITE}/work/`;
   const schema = {
-    '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'WordPress Portfolio: Sameer Gupta', url,
+    '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'WordPress Portfolio: Samverse', url,
     hasPart: WORK.map(w => ({ '@type': 'CreativeWork', name: `${w.name} website`, url: `${SITE}/work/${w.slug}/` })),
   };
-  return `${headCommon('WordPress Portfolio & Case Studies | Sameer Gupta | Samverse', 'WordPress portfolio of Sameer Gupta: real case studies for agencies, manufacturers, doctors, directories and local businesses, with what was built and why.', url, `  <meta property="og:type" content="website">
+  return `${headCommon('WordPress Portfolio & Case Studies | Samverse', 'WordPress portfolio from Samverse: real case studies for agencies, manufacturers, doctors, directories and local businesses, with what was built and why.', url, `  <meta property="og:type" content="website">
   <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
   </script>
@@ -1096,13 +1096,13 @@ EXTRA.forEach(x => {
 
 // llms.txt: a plain-text guide to the site for AI assistants and answer engines (llmstxt.org)
 const md = (x, u, d) => `- [${x}](${u}): ${d}`;
-fs.writeFileSync(path.join(ROOT, 'llms.txt'), `# Samverse: Sameer Gupta, Freelance WordPress Developer
+fs.writeFileSync(path.join(ROOT, 'llms.txt'), `# Samverse: Freelance WordPress Developer
 
-> Samverse (samverse.space) is the portfolio and service site of Sameer Gupta, a freelance WordPress developer in India working with businesses and agencies since 2020. Services: WordPress website development, Elementor, WooCommerce stores, redesigns, speed optimization, SEO setup, maintenance, malware removal and migrations. Contact: sameergpt9719@gmail.com, WhatsApp +91 74170 49145.
+> Samverse (samverse.space) is the portfolio and service site of a freelance WordPress developer in India working with businesses and agencies since 2020. Services: WordPress website development, Elementor, WooCommerce stores, redesigns, speed optimization, SEO setup, maintenance, malware removal and migrations. Contact: samverse9719@gmail.com, WhatsApp +91 74170 49145.
 
 ## Key pages
 ${md('Home', `${SITE}/`, 'Services, portfolio, process, FAQ and contact')}
-${md('About Sameer Gupta', `${SITE}/about/`, 'Background, approach and tools')}
+${md('About Samverse', `${SITE}/about/`, 'Background, approach and tools')}
 ${md('Portfolio', `${SITE}/work/`, 'Case studies of live client websites')}
 ${md('All services & industries', `${SITE}/solutions/`, 'Index of every service and industry page')}
 ${EXTRA.filter(x => x.slug !== 'about').map(x => md(x.crumb, `${SITE}/${x.slug}/`, x.description)).join('\n')}

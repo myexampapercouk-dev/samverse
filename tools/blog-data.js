@@ -22328,7 +22328,7 @@ Screenshot: attached</code></pre>
 <p>A good one will. Most are used to working in their clients' project boards, Slack channels, Git repositories and staging setups. Mention your tools in the brief.</p>
 
 <h2>Working with me</h2>
-<p>I'm Sameer, a freelance WordPress developer based in Pune, India. I work white-label for agencies under NDA: Figma, XD and PDF designs built in Elementor or the block editor, WooCommerce stores, speed fixes and ongoing maintenance, with fixed quotes and direct communication. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> for how it works, or send me your next brief for a quote.</p>
+<p>I'm a freelance WordPress developer based in Pune, India. I work white-label for agencies under NDA: Figma, XD and PDF designs built in Elementor or the block editor, WooCommerce stores, speed fixes and ongoing maintenance, with fixed quotes and direct communication. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> for how it works, or send me your next brief for a quote.</p>
 `,
   },
   {

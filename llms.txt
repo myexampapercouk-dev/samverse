@@ -1,10 +1,10 @@
-# Samverse: Sameer Gupta, Freelance WordPress Developer
+# Samverse: Freelance WordPress Developer
 
-> Samverse (samverse.space) is the portfolio and service site of Sameer Gupta, a freelance WordPress developer in India working with businesses and agencies since 2020. Services: WordPress website development, Elementor, WooCommerce stores, redesigns, speed optimization, SEO setup, maintenance, malware removal and migrations. Contact: sameergpt9719@gmail.com, WhatsApp +91 74170 49145.
+> Samverse (samverse.space) is the portfolio and service site of a freelance WordPress developer in India working with businesses and agencies since 2020. Services: WordPress website development, Elementor, WooCommerce stores, redesigns, speed optimization, SEO setup, maintenance, malware removal and migrations. Contact: samverse9719@gmail.com, WhatsApp +91 74170 49145.
 
 ## Key pages
 - [Home](https://samverse.space/): Services, portfolio, process, FAQ and contact
-- [About Sameer Gupta](https://samverse.space/about/): Background, approach and tools
+- [About Samverse](https://samverse.space/about/): Background, approach and tools
 - [Portfolio](https://samverse.space/work/): Case studies of live client websites
 - [All services & industries](https://samverse.space/solutions/): Index of every service and industry page
 - [Website Cost Calculator](https://samverse.space/website-cost-calculator/): Free website cost calculator for India. Choose your website type, pages and features to get an instant estimate for a WordPress site or WooCommerce store.

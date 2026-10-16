@@ -16,6 +16,8 @@ const files = [];
   }
 })(ROOT);
 
+// Built from reversed letters so the name itself isn't written in the source.
+const NAME = new RegExp('reemas'.split('').reverse().join(''), 'i');
 const problems = [];
 const titles = {}, descs = {};
 for (const f of files) {
@@ -30,6 +32,8 @@ for (const f of files) {
     const target = u.endsWith('/') ? path.join(ROOT, u, 'index.html') : path.join(ROOT, u);
     if (!fs.existsSync(target)) problems.push(`broken link ${u} in ${rel}`);
   }
+  // The owner's personal name must never appear on the site; the brand is Samverse.
+  if (NAME.test(h)) problems.push(`personal name in ${rel}`);
   if (rel === '404.html') continue;
   const t = (h.match(/<title>(.*?)<\/title>/) || [])[1];
   const d = (h.match(/<meta name="description" content="(.*?)"/) || [])[1];
@@ -37,6 +41,10 @@ for (const f of files) {
   if (d) (descs[d] = descs[d] || []).push(rel);
   const h1 = (h.match(/<h1[\s>]/g) || []).length;
   if (h1 !== 1) problems.push(`${h1} h1 tags: ${rel}`);
+}
+for (const f of ['llms.txt', 'blog/feed.xml', 'sitemap.xml', 'site.webmanifest', 'assets/logo.svg']) {
+  const p = path.join(ROOT, f);
+  if (fs.existsSync(p) && NAME.test(fs.readFileSync(p, 'utf8'))) problems.push(`personal name in ${f}`);
 }
 for (const [t, list] of Object.entries(titles)) if (list.length > 1) problems.push(`duplicate title "${t}": ${list.join(', ')}`);
 for (const [d, list] of Object.entries(descs)) if (list.length > 1) problems.push(`duplicate description: ${list.join(', ')}`);

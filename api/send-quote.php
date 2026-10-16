@@ -1,6 +1,6 @@
 <?php
 /**
- * Emails website form submissions to Sameer (Hostinger version of netlify/functions/send-quote.js).
+ * Emails website form submissions to the site owner (Hostinger version of netlify/functions/send-quote.js).
  *
  * Credentials are NEVER in this file or the repo. They live in a private file OUTSIDE public_html:
  *   /home/<hostinger-user>/samverse-private/mail-config.php
@@ -74,7 +74,7 @@ if (!is_array($cfg)) {
 	$cfg = [];
 }
 if (empty($cfg['mail_to'])) {
-	$cfg['mail_to'] = 'sameergpt9719@gmail.com';
+	$cfg['mail_to'] = 'samverse9719@gmail.com';
 }
 
 $oneLine = function ($s) { return trim(preg_replace('/[\r\n]+/', ' ', $s)); };

@@ -1,5 +1,5 @@
 // ==========================================================
-// Samverse — Sameer Gupta Portfolio
+// Samverse — Portfolio
 // Portfolio cards are written into the HTML by tools/build-pages.js
 // (data in tools/projects.js) so their links are crawlable.
 // This script only manages their screenshots.
@@ -133,7 +133,7 @@ form.addEventListener("submit", async e => {
 
   // Note: an input named "name" shadows form.name, so f.name.value reads the Name field
   const text =
-    `Hi Sameer, I found you on samverse.space.\n\n` +
+    `Hi, I found you on samverse.space.\n\n` +
     `Name: ${f.name.value}\n` +
     `Phone: ${f.phone.value}\n` +
     (f.email.value ? `Email: ${f.email.value}\n` : "") +

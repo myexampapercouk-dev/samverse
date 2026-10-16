@@ -658,7 +658,7 @@ module.exports = [
       {
         "h": "How the site is organised",
         "p": [
-          "The homepage works as a summary of the whole business. Under the headline \"Hi, I'm Sameer Gupta. I build WordPress websites that work.\" it moves through an About section, seven skills, four featured industries, nine selected projects, a short description of how a project runs, recent articles, six FAQs and the contact form, with each block linking to a deeper page.",
+          "The homepage works as a summary of the whole business. Under the headline \"Hi, I'm the developer behind Samverse. I build WordPress websites that work.\" it moves through an About section, seven skills, four featured industries, nine selected projects, a short description of how a project runs, recent articles, six FAQs and the contact form, with each block linking to a deeper page.",
           "Behind the homepage sit more than 20 service and industry pages, each written for one kind of buyer: an agency that needs white-label help, a clinic, a manufacturer, a restaurant, or a business owner whose site has been hacked. They share one layout, from benefits and inclusions to related case studies, a FAQ and blog guides, and all end at the same contact form. A /solutions/ page lists every one of them, and a dozen case studies, including this one, live under /work/."
         ]
       },
