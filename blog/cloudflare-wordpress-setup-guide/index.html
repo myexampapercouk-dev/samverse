@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cloudflare Free Plan for WordPress: A Safe Setup Guide</title>
-  <meta name="description" content="Set up Cloudflare's free plan on WordPress safely: nameservers, the right SSL mode, cache exclusions, APO, security settings and fixes for 52x errors.">
+  <title>Cloudflare Free Plan WordPress Setup: Step-by-Step Guide</title>
+  <meta name="description" content="Set up Cloudflare's free plan on WordPress step by step: DNS and email records, nameservers, Full (strict) SSL, cache rules, real visitor IPs and fixes.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/cloudflare-wordpress-setup-guide/">
-  <meta property="og:title" content="Cloudflare Free Plan for WordPress: A Safe Setup Guide">
-  <meta property="og:description" content="Set up Cloudflare's free plan on WordPress safely: nameservers, the right SSL mode, cache exclusions, APO, security settings and fixes for 52x errors.">
+  <meta property="og:title" content="Cloudflare Free Plan WordPress Setup: Step-by-Step Guide">
+  <meta property="og:description" content="Set up Cloudflare's free plan on WordPress step by step: DNS and email records, nameservers, Full (strict) SSL, cache rules, real visitor IPs and fixes.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-cloudflare-wordpress-setup-guide.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/cloudflare-wordpress-setup-guide/#article",
-      "headline": "Setting Up Cloudflare's Free Plan on WordPress: SSL, Caching and Common Problems",
-      "description": "Set up Cloudflare's free plan on WordPress safely: nameservers, the right SSL mode, cache exclusions, APO, security settings and fixes for 52x errors.",
+      "headline": "How to Set Up Cloudflare's Free Plan on WordPress, Step by Step: DNS, Nameservers, Full (Strict) SSL, Cache Rules and Troubleshooting",
+      "description": "Set up Cloudflare's free plan on WordPress step by step: DNS and email records, nameservers, Full (strict) SSL, cache rules, real visitor IPs and fixes.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-16",
       "mainEntityOfPage": "https://samverse.space/blog/cloudflare-wordpress-setup-guide/",
       "image": "https://samverse.space/assets/og/blog-cloudflare-wordpress-setup-guide.png",
       "articleSection": "Speed",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Setting Up Cloudflare's Free Plan on WordPress: SSL, Caching and Common Problems",
+          "name": "How to Set Up Cloudflare's Free Plan on WordPress, Step by Step: DNS, Nameservers, Full (Strict) SSL, Cache Rules and Troubleshooting",
           "item": "https://samverse.space/blog/cloudflare-wordpress-setup-guide/"
         }
       ]
@@ -129,22 +129,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Speed</a>
-          <h1>Setting Up Cloudflare's Free Plan on WordPress: SSL, Caching and Common Problems</h1>
-          <p class="post-dek">Set up Cloudflare's free plan on WordPress safely: nameservers, the right SSL mode, cache exclusions, APO, security settings and fixes for 52x errors.</p>
+          <h1>How to Set Up Cloudflare's Free Plan on WordPress, Step by Step: DNS, Nameservers, Full (Strict) SSL, Cache Rules and Troubleshooting</h1>
+          <p class="post-dek">Set up Cloudflare's free plan on WordPress step by step: DNS and email records, nameservers, Full (strict) SSL, cache rules, real visitor IPs and fixes.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-16">16 October 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=Setting%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%3A%20SSL%2C%20Caching%20and%20Common%20Problems%20https%3A%2F%2Fsamverse.space%2Fblog%2Fcloudflare-wordpress-setup-guide%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=How%20to%20Set%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%2C%20Step%20by%20Step%3A%20DNS%2C%20Nameservers%2C%20Full%20(Strict)%20SSL%2C%20Cache%20Rules%20and%20Troubleshooting%20https%3A%2F%2Fsamverse.space%2Fblog%2Fcloudflare-wordpress-setup-guide%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fcloudflare-wordpress-setup-guide%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=Setting%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%3A%20SSL%2C%20Caching%20and%20Common%20Problems&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fcloudflare-wordpress-setup-guide%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=How%20to%20Set%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%2C%20Step%20by%20Step%3A%20DNS%2C%20Nameservers%2C%20Full%20(Strict)%20SSL%2C%20Cache%20Rules%20and%20Troubleshooting&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fcloudflare-wordpress-setup-guide%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/cloudflare-wordpress-setup-guide/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-cloudflare-wordpress-setup-guide.webp" alt="Setting Up Cloudflare's Free Plan on WordPress: SSL, Caching and Common Problems" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-cloudflare-wordpress-setup-guide.webp" alt="How to Set Up Cloudflare's Free Plan on WordPress, Step by Step: DNS, Nameservers, Full (Strict) SSL, Cache Rules and Troubleshooting" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -153,121 +153,180 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#full-setup-or-partial-setup">Full setup or partial setup?</a></li>
-              <li><a href="#moving-your-dns-without-breaking-email">Moving your DNS without breaking email</a></li>
-              <li><a href="#ssl-tls-modes-and-why-flexible-causes-loops">SSL/TLS modes, and why Flexible causes loops</a></li>
-              <li><a href="#caching-what-to-cache-and-what-to-bypass">Caching: what to cache and what to bypass</a></li>
-              <li><a href="#apo-for-wordpress">APO for WordPress</a></li>
-              <li><a href="#security-settings-worth-knowing">Security settings worth knowing</a></li>
-              <li><a href="#common-problems-after-switching">Common problems after switching</a></li>
+              <li><a href="#before-you-start">Before you start</a></li>
+              <li><a href="#step-1-add-your-site-and-choose-the-free-plan">Step 1: Add your site and choose the free plan</a></li>
+              <li><a href="#step-2-check-dns-records-and-proxy-status">Step 2: Check DNS records and proxy status</a></li>
+              <li><a href="#step-3-change-nameservers-at-your-registrar">Step 3: Change nameservers at your registrar</a></li>
+              <li><a href="#step-4-set-ssl-tls-to-full-strict">Step 4: Set SSL/TLS to Full (strict)</a></li>
+              <li><a href="#step-5-cache-rules-and-what-never-to-cache">Step 5: Cache rules, and what never to cache</a></li>
+              <li><a href="#step-6-apo-cache-plugins-and-who-does-what">Step 6: APO, cache plugins and who does what</a></li>
+              <li><a href="#step-7-restore-real-visitor-ip-addresses">Step 7: Restore real visitor IP addresses</a></li>
+              <li><a href="#step-8-firewall-and-bot-basics-on-the-free-plan">Step 8: Firewall and bot basics on the free plan</a></li>
+              <li><a href="#step-9-test-everything">Step 9: Test everything</a></li>
+              <li><a href="#troubleshooting-after-the-switch">Troubleshooting after the switch</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>On the free plan you normally change nameservers, so copy every DNS record first, keep MX and mail hostnames DNS only, and turn off DNSSEC at the registrar before switching.</li>
-              <li>Use Full (strict) SSL with a valid certificate on your server; Flexible makes Cloudflare talk to your server over HTTP, which causes redirect loops and mixed content.</li>
-              <li>Leave HTML caching off unless you can bypass wp-admin, cart, checkout and logged-in users, test Bot Fight Mode against payment callbacks, and read 52x errors as problems reaching your server.</li>
+              <li>Copy and check every DNS record before changing nameservers, keep mail records on DNS only, and set SSL/TLS to Full (strict), because Flexible causes redirect loops on WordPress.</li>
+              <li>Let Cloudflare cache static files by default; if you cache HTML, bypass wp-admin, wp-login.php, cart, checkout, my-account and logged-in visitors, and let one tool control each cache layer.</li>
+              <li>After switching, restore real visitor IPs, add light firewall rules, and test logins, forms, a test order, payment callbacks and email before calling the job done.</li>
             </ul>
           </div>
-<p>Cloudflare's free plan puts a global network between your visitors and your hosting. Set up well, it takes load off your server, serves files from nearby locations and filters junk traffic. Set up in a hurry, it causes redirect loops and lost email. Cloudflare changes its dashboard and plan features from time to time, so treat menu names here as a guide and check its current documentation as you go.</p>
+<p>To set up Cloudflare's free plan on a WordPress site, add your domain to Cloudflare, check that every DNS record was imported (especially email), change the nameservers at your registrar, set SSL/TLS to Full (strict), and keep logged-in users, wp-admin, cart, checkout and account pages out of any cache. Then restore real visitor IP addresses, add a few firewall rules and test logins, forms and checkout. Done in that order, Cloudflare adds a CDN and basic protection without breaking anything.</p>
+<p>When it makes sense for a site, Cloudflare is set up and tested as part of my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> work, because wrong settings can break logins, checkout or forms. This guide walks through the same steps for a site owner doing it themselves.</p>
+<p>If you are still deciding whether you need a CDN at all, read <a href="/blog/what-is-a-cdn/">what is a CDN</a> first. Cloudflare renames menus and changes plan features from time to time, so treat the menu names here as correct at the time of writing and check its current documentation as you go.</p>
 
-<h2 id="full-setup-or-partial-setup">Full setup or partial setup?</h2>
+<h2 id="before-you-start">Before you start</h2>
 <ul>
-<li><strong>Full setup (changing nameservers):</strong> Cloudflare becomes your DNS provider. You copy your DNS records into Cloudflare, then change the nameservers at your registrar to the two Cloudflare gives you. This is the normal route on the free plan.</li>
-<li><strong>Partial (CNAME) setup:</strong> your DNS stays where it is and only chosen hostnames point to Cloudflare. At the time of writing this is limited to higher paid plans, so check before planning around it.</li>
+  <li><strong>Export or screenshot your current DNS zone</strong> from your host or registrar: every A, CNAME, MX and TXT record.</li>
+  <li><strong>Know where your email is hosted:</strong> your host, Google Workspace, Microsoft 365 or Zoho. Their MX and TXT records must survive the move.</li>
+  <li><strong>Confirm your hosting has a valid SSL certificate</strong>, because Full (strict) needs one.</li>
+  <li><strong>Check DNSSEC</strong> at your registrar. If it is on, turn it off before changing nameservers and re-enable it through Cloudflare afterwards.</li>
+  <li><strong>Check your host's own CDN or Cloudflare integration</strong>, so you don't end up with two setups fighting each other.</li>
+  <li><strong>Take a backup</strong> and pick a quiet time of day.</li>
 </ul>
-<p>If your host offers its own Cloudflare integration, read its guide first to avoid two conflicting setups. Each DNS record in Cloudflare is either <strong>proxied</strong> (orange cloud: traffic passes through Cloudflare) or <strong>DNS only</strong> (grey cloud). Website records are normally proxied. Mail records must not be.</p>
 
-<h2 id="moving-your-dns-without-breaking-email">Moving your DNS without breaking email</h2>
-<p>Cloudflare scans your existing DNS records when you add a site, but it can miss some. Compare its list line by line with your current zone before changing nameservers, especially:</p>
-<ul>
-<li><strong>MX records</strong> for Google Workspace, Microsoft 365, Zoho or your host's mail</li>
-<li><strong>TXT records</strong> for SPF, DKIM, DMARC and site verifications</li>
-<li><strong>Mail hostnames</strong> such as mail, webmail or smtp, which should be DNS only</li>
-<li><strong>Subdomains</strong> for a shop, booking system, staging site or app</li>
-</ul>
-<p>If DNSSEC is on at your registrar, turn it off before changing nameservers and re-enable it through Cloudflare once the zone is active; old DNSSEC settings can stop the domain resolving. Nameserver changes take a while to spread, so switch at a quiet time and leave the old zone untouched until everything works.</p>
+<h2 id="step-1-add-your-site-and-choose-the-free-plan">Step 1: Add your site and choose the free plan</h2>
+<p>Create a Cloudflare account, choose the option to add or onboard a domain, and enter the root domain, such as example.com, not www.example.com. Select the Free plan. Cloudflare scans your existing DNS and shows the records it found. Don't continue past this screen until you have checked them.</p>
 
 <aside class="inline-cta">
   <strong>Need help with speed optimization?</strong>
   <p>WordPress &amp; WooCommerce speed optimization service: a full audit, caching, image, plugin, script and database fixes, and a before-and-after report.</p>
-  <div><a href="/wordpress-speed-optimization/" class="link-inline">See Speed Optimization →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Setting%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%3A%20SSL%2C%20Caching%20and%20Common%20Problems%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/wordpress-speed-optimization/" class="link-inline">See Speed Optimization →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Set%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%2C%20Step%20by%20Step%3A%20DNS%2C%20Nameservers%2C%20Full%20(Strict)%20SSL%2C%20Cache%20Rules%20and%20Troubleshooting%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="ssl-tls-modes-and-why-flexible-causes-loops">SSL/TLS modes, and why Flexible causes loops</h2>
-<p>Cloudflare encrypts the connection between the visitor and Cloudflare. The SSL/TLS mode decides what happens on the second leg, between Cloudflare and your hosting:</p>
+<h2 id="step-2-check-dns-records-and-proxy-status">Step 2: Check DNS records and proxy status</h2>
+<p>Compare Cloudflare's list line by line with your export. Scans miss records, especially TXT records and less common subdomains. Each record is either proxied (orange cloud, traffic passes through Cloudflare) or DNS only (grey cloud):</p>
 <table>
-<thead><tr><th>Mode</th><th>Cloudflare to your server</th><th>Use it?</th></tr></thead>
-<tbody>
-<tr><td>Flexible</td><td>Plain HTTP, unencrypted</td><td>Avoid for WordPress</td></tr>
-<tr><td>Full</td><td>HTTPS, but the certificate isn't checked</td><td>Only as a short stopgap</td></tr>
-<tr><td>Full (strict)</td><td>HTTPS with a valid certificate</td><td>Yes, the target for every site</td></tr>
-</tbody>
+  <thead><tr><th>Record</th><th>Example</th><th>Proxy status</th></tr></thead>
+  <tbody>
+    <tr><td>A for the root domain</td><td>example.com pointing to 203.0.113.10</td><td>Proxied</td></tr>
+    <tr><td>CNAME for www</td><td>www pointing to example.com</td><td>Proxied</td></tr>
+    <tr><td>MX</td><td>Your mail provider's servers</td><td>Always DNS only</td></tr>
+    <tr><td>Mail hostnames</td><td>mail, webmail, smtp, imap</td><td>DNS only</td></tr>
+    <tr><td>FTP and panel hostnames</td><td>ftp, cpanel</td><td>DNS only</td></tr>
+    <tr><td>TXT</td><td>SPF, DKIM, DMARC, site verifications</td><td>No proxy option</td></tr>
+    <tr><td>Other subdomains</td><td>shop, booking, staging</td><td>Proxied if it is a website you control; DNS only for third-party services that ask for it</td></tr>
+  </tbody>
 </table>
-<p>Flexible causes the classic loop. Your site redirects HTTP to HTTPS, but Cloudflare always asks your server over HTTP, so the server keeps replying "go to HTTPS" until the browser shows ERR_TOO_MANY_REDIRECTS. Flexible can also make WordPress think visitors are on HTTP, causing mixed content. If you're stuck, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS</a>.</p>
-<p>Full (strict) needs a valid certificate on your server: the free Let's Encrypt certificate most hosts provide, or a free Cloudflare Origin CA certificate. Origin certificates are trusted only by Cloudflare, so if you later switch the record to DNS only, visitors will see warnings. Cloudflare has also been introducing an automatic mode, so check which mode your site actually uses.</p>
+<p>Missing SPF, DKIM or DMARC records won't stop the website, but they will send your email to spam; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
 
-<h2 id="caching-what-to-cache-and-what-to-bypass">Caching: what to cache and what to bypass</h2>
-<p>By default, Cloudflare caches static files such as images, CSS and JavaScript and passes HTML pages through to your server. That's safe for WordPress and a good start, alongside a caching plugin or your host's cache; see <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
-<p>If you add a rule to cache HTML too, exclude anything personal or changing:</p>
-<ul>
-<li>/wp-admin/ and wp-login.php</li>
-<li>WooCommerce cart, checkout and My Account pages</li>
-<li>Logged-in users and shoppers with items in their cart, usually detected by cookies</li>
-<li>Search results, previews and form submissions</li>
-</ul>
-<p>Matching on cookies may not be available on every plan, which is one reason many owners leave HTML caching off on the free plan or use APO. Purge the cache after design changes, use Development Mode while editing, and test switches such as Rocket Loader on key pages, because they can break some scripts.</p>
+<h2 id="step-3-change-nameservers-at-your-registrar">Step 3: Change nameservers at your registrar</h2>
+<p>Cloudflare gives you two nameservers. Whether your domain is with an Indian registrar, a global one or was bought through your hosting company, the process is similar: log in, open the domain's management page, find the nameserver setting, choose custom nameservers, replace the existing ones with Cloudflare's two exactly as shown, and save. .in and .com domains work the same way.</p>
+<p>The change can take anything from minutes to a day or two to spread. Cloudflare emails you when the site is active. Leave the old DNS zone at your host untouched until everything works, so you can switch back quickly if needed.</p>
 
-<h2 id="apo-for-wordpress">APO for WordPress</h2>
-<p>Automatic Platform Optimization (APO) is Cloudflare's WordPress option for caching whole pages on its network. It works with the official Cloudflare WordPress plugin, which tells Cloudflare when content changes, and is designed to skip the cache for logged-in users and common WooCommerce pages. For free-plan sites it's a paid add-on (included with some paid plans at the time of writing), so check current pricing and compatibility notes. It helps most when visitors are spread across regions, but it won't fix a slow server: the admin, checkout and uncached pages still depend on it.</p>
-
-<h2 id="security-settings-worth-knowing">Security settings worth knowing</h2>
-<ul>
-<li><strong>Always Use HTTPS:</strong> redirects HTTP to HTTPS at Cloudflare. Keep one HTTPS redirect in charge rather than stacking rules in Cloudflare, your host and a plugin.</li>
-<li><strong>Bot Fight Mode:</strong> challenges traffic that looks automated, but can also block payment gateway callbacks, uptime monitors or integrations, and on the free plan you may not be able to make exceptions. If something breaks, test with it off.</li>
-<li><strong>WAF and custom rules:</strong> the free plan includes some managed protection and a small number of custom rules, useful for challenging visits to wp-login.php or blocking xmlrpc.php if nothing needs it.</li>
-<li><strong>Under Attack mode:</strong> challenges every visitor during an attack. Turn it off afterwards.</li>
-</ul>
-<p>With all traffic arriving via Cloudflare, check that your host or security plugin reads the real visitor IP, or a login limiter can block everyone at once.</p>
-
-<h2 id="common-problems-after-switching">Common problems after switching</h2>
-<ul>
-<li><strong>Too many redirects:</strong> usually Flexible SSL or duplicate HTTPS and www redirects. Move to Full (strict) and keep one redirect.</li>
-<li><strong>Mixed content:</strong> old http:// addresses in content, theme settings or the database. Automatic HTTPS Rewrites can cover some, but fix the source; see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content warnings</a>.</li>
-<li><strong>Email stopped:</strong> MX, SPF or DKIM records weren't copied, or mail hostnames were proxied.</li>
-</ul>
-<p>Cloudflare's 52x errors mean it couldn't get a proper answer from your server:</p>
+<h2 id="step-4-set-ssl-tls-to-full-strict">Step 4: Set SSL/TLS to Full (strict)</h2>
+<p>Cloudflare always encrypts the visitor's connection to Cloudflare. The SSL/TLS mode controls the second leg, from Cloudflare to your hosting:</p>
 <table>
-<thead><tr><th>Error</th><th>Usual meaning</th><th>First check</th></tr></thead>
-<tbody>
-<tr><td>520</td><td>Empty or unexpected response</td><td>Server error logs, crashing PHP, a security module</td></tr>
-<tr><td>521</td><td>Connection refused</td><td>Is the web server running? Is the host's firewall blocking Cloudflare?</td></tr>
-<tr><td>522</td><td>Connection timed out</td><td>Wrong IP in DNS, an overloaded server or a firewall dropping requests</td></tr>
-<tr><td>523</td><td>Origin unreachable</td><td>The A record points to an old or wrong IP</td></tr>
-<tr><td>524</td><td>Server took too long to respond</td><td>Slow pages, long imports or exports, heavy reports</td></tr>
-<tr><td>525 / 526</td><td>SSL handshake failed / invalid certificate</td><td>Install or renew the certificate on your server</td></tr>
-</tbody>
+  <thead><tr><th>Mode</th><th>Cloudflare to your server</th><th>Use it?</th></tr></thead>
+  <tbody>
+    <tr><td>Flexible</td><td>Plain HTTP</td><td>No, it causes redirect loops on WordPress</td></tr>
+    <tr><td>Full</td><td>HTTPS, certificate not checked</td><td>Only briefly, while fixing a certificate</td></tr>
+    <tr><td>Full (strict)</td><td>HTTPS with a valid certificate</td><td>Yes</td></tr>
+  </tbody>
+</table>
+<p>Why Flexible loops: WordPress, your host or an SSL plugin redirects HTTP to HTTPS, but Cloudflare keeps requesting the page over HTTP, so the server keeps answering "go to HTTPS" until the browser gives up with ERR_TOO_MANY_REDIRECTS. If you are already stuck, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS</a>.</p>
+<p>Full (strict) works with the free certificate most hosts provide, or with a free Cloudflare Origin CA certificate installed on the server. Origin certificates are trusted only by Cloudflare, so if you later switch the record to DNS only, visitors will see warnings; <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> covers those messages. Cloudflare has also introduced an automatic mode on some accounts, so check which mode is actually active.</p>
+<p>Under Edge Certificates, turn on Always Use HTTPS and keep just one HTTPS redirect in charge rather than stacking it with your host and a plugin. Leave HSTS off unless you are sure: once browsers have seen it, they refuse plain HTTP for months, which turns a later certificate mistake into a full outage.</p>
+
+<h2 id="step-5-cache-rules-and-what-never-to-cache">Step 5: Cache rules, and what never to cache</h2>
+<p>By default Cloudflare caches static files such as images, CSS and JavaScript and passes HTML pages through to your server; a curl check shows DYNAMIC for those pages. That default is safe for WordPress, and with a caching plugin or host cache at the origin it is enough for many sites. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> shows how the layers fit together.</p>
+<p>If you add a Cache Rule to make HTML eligible for caching, add bypass rules first. These must never be cached:</p>
+<pre><code>Bypass cache when the URL path:
+  contains  /wp-admin/
+  equals    /wp-login.php
+  starts with /cart/
+  starts with /checkout/
+  starts with /my-account/
+  contains  /wp-json/
+or the query string contains  s=  or  preview=
+or a cookie name starts with:
+  wordpress_logged_in_
+  woocommerce_items_in_cart
+  wp_woocommerce_session_
+  comment_author_</code></pre>
+<p>Adjust the paths if your store uses different page slugs. Matching on cookies may not be available on every plan, which is why many free-plan sites leave HTML caching off or use APO instead. Use Development Mode while editing the design, and purge the cache after changes. For store-specific caching, see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</p>
+
+<h2 id="step-6-apo-cache-plugins-and-who-does-what">Step 6: APO, cache plugins and who does what</h2>
+<p>Automatic Platform Optimization (APO) is Cloudflare's option for caching whole WordPress pages on its network. It works with the official Cloudflare WordPress plugin, which purges pages when content changes, and is designed to skip logged-in users and common WooCommerce pages. For free-plan sites it is a paid add-on at the time of writing, so check current pricing. It helps visitors far from your server; it won't fix a slow server, because wp-admin, checkout and uncached pages still depend on it.</p>
+<table>
+  <thead><tr><th>Your setup</th><th>Sensible split</th></tr></thead>
+  <tbody>
+    <tr><td>LiteSpeed server with LiteSpeed Cache</td><td>LiteSpeed caches pages at the origin; Cloudflare caches static files. Connect Cloudflare in the plugin's CDN settings with an API token so purges reach both</td></tr>
+    <tr><td>WP Rocket or another cache plugin</td><td>The plugin caches pages at the origin; use its Cloudflare add-on or the official plugin for purging</td></tr>
+    <tr><td>APO</td><td>APO caches HTML at the edge; keep a page cache at the origin for cache misses</td></tr>
+  </tbody>
+</table>
+<p>Let one WordPress plugin handle minification and file optimisation. Test Cloudflare's Rocket Loader on key pages before keeping it, because it can break sliders, menus and some payment scripts.</p>
+
+<h2 id="step-7-restore-real-visitor-ip-addresses">Step 7: Restore real visitor IP addresses</h2>
+<p>With traffic arriving through Cloudflare, your server may see Cloudflare's IP addresses instead of your visitors'. Cloudflare sends the real address in a header called CF-Connecting-IP. If WordPress ignores it, a login limiter can block everyone at once, and order and comment logs become useless.</p>
+<p>To check, log in and look at the IP your security plugin logged for you, or the IP on a recent order or comment. If it isn't your own, ask your host whether it restores real IPs at server level, which is the safest option, or set your security plugin to read the Cloudflare header. Trusting that header from anywhere other than Cloudflare's network lets attackers fake their IP, so server-level handling is better.</p>
+
+<h2 id="step-8-firewall-and-bot-basics-on-the-free-plan">Step 8: Firewall and bot basics on the free plan</h2>
+<ul>
+  <li><strong>Custom rules:</strong> the free plan includes a small number, at the time of writing. Useful ones are a managed challenge on wp-login.php and blocking xmlrpc.php if nothing on the site needs it; see <a href="/blog/wordpress-xmlrpc-explained/">WordPress xmlrpc.php explained</a>.</li>
+  <li><strong>Bot Fight Mode:</strong> challenges traffic that looks automated, but can also block payment gateway callbacks, uptime monitors and integrations, and on the free plan you may not be able to make exceptions. If orders stop updating after payment, test with it off.</li>
+  <li><strong>Under Attack mode:</strong> challenges every visitor. Use it during an attack, then turn it off.</li>
+  <li><strong>Don't challenge Googlebot:</strong> after adding rules, run a page through URL Inspection's live test in Search Console.</li>
+</ul>
+
+<h2 id="step-9-test-everything">Step 9: Test everything</h2>
+<ol>
+  <li>Browse key pages logged out, in a private window and on mobile data.</li>
+  <li>Check headers: run curl -I on an image and on the cart page. The image should show cf-cache-status: HIT after a second request; the cart should show DYNAMIC or BYPASS.</li>
+  <li>Log in and out, submit every form, and place a test order through to the payment return page.</li>
+  <li>Send and receive email at the domain.</li>
+  <li>Confirm your real IP appears in logs.</li>
+</ol>
+
+<h2 id="troubleshooting-after-the-switch">Troubleshooting after the switch</h2>
+<table>
+  <thead><tr><th>Symptom</th><th>Likely cause</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Too many redirects</td><td>Flexible SSL, or duplicate HTTPS and www redirects</td><td>Full (strict) and one redirect</td></tr>
+    <tr><td>Email stopped</td><td>MX or TXT records missing, or mail hostnames proxied</td><td>Restore records, set them to DNS only</td></tr>
+    <tr><td>Empty cart or checkout errors</td><td>A cache rule catching dynamic pages</td><td>Add bypass rules, purge</td></tr>
+    <tr><td>Everyone locked out of wp-admin</td><td>Login limiter sees one Cloudflare IP for all visitors</td><td>Restore real IPs, clear the lockout</td></tr>
+    <tr><td>Payments not marking orders paid</td><td>Bot Fight Mode or a rule blocking gateway callbacks</td><td>Turn it off or adjust the rule</td></tr>
+    <tr><td>Error 521, 522 or 523</td><td>Server down, firewall blocking Cloudflare, or a wrong IP in DNS</td><td>Check the A record and ask your host</td></tr>
+    <tr><td>Error 525 or 526</td><td>Missing or invalid certificate on the server</td><td>Install or renew it</td></tr>
+  </tbody>
 </table>
 <p>Send your host the Ray ID from the error page, the time and the URL. For timeouts that start on the server, see <a href="/blog/wordpress-502-504-gateway-timeout-fix/">502 and 504 errors on WordPress</a>.</p>
 
-<p>Want Cloudflare set up properly, with the right SSL mode, cache exclusions and email records checked, as part of making your site faster? See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>Is Cloudflare's free plan enough for a WordPress site?</h3>
+<p>For most small business sites, yes: it gives you DNS, a CDN for static files, SSL at the edge and basic protection. Paid options such as APO matter more for sites with visitors spread across regions or very busy stores.</p>
+<h3>Should I use Flexible SSL on Cloudflare?</h3>
+<p>No. Flexible sends traffic to your server unencrypted and causes redirect loops with WordPress. Install a certificate on your hosting and use Full (strict).</p>
+<h3>Do I need the Cloudflare WordPress plugin?</h3>
+<p>It is required for APO. Without APO, it is optional; your cache plugin's Cloudflare integration can handle purging instead. Don't run two tools that both try to manage Cloudflare.</p>
+<h3>Will moving to Cloudflare break my email?</h3>
+<p>Only if MX, SPF, DKIM or mail hostname records are missing or proxied. Check them against your old zone before changing nameservers.</p>
+<h3>Does Cloudflare help SEO?</h3>
+<p>Indirectly, through faster static files and better uptime under load. It won't lift rankings by itself, and an aggressive bot rule that challenges Googlebot can hurt, so test after adding rules.</p>
+
+<p>Want Cloudflare set up with the right SSL mode, safe cache rules, email records checked and checkout tested, alongside fixes for whatever is actually slowing your site? See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>, starting with a free review and a fixed quote.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Setting%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%3A%20SSL%2C%20Caching%20and%20Common%20Problems%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Set%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%2C%20Step%20by%20Step%3A%20DNS%2C%20Nameservers%2C%20Full%20(Strict)%20SSL%2C%20Cache%20Rules%20and%20Troubleshooting%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=Setting%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%3A%20SSL%2C%20Caching%20and%20Common%20Problems%20https%3A%2F%2Fsamverse.space%2Fblog%2Fcloudflare-wordpress-setup-guide%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=How%20to%20Set%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%2C%20Step%20by%20Step%3A%20DNS%2C%20Nameservers%2C%20Full%20(Strict)%20SSL%2C%20Cache%20Rules%20and%20Troubleshooting%20https%3A%2F%2Fsamverse.space%2Fblog%2Fcloudflare-wordpress-setup-guide%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fcloudflare-wordpress-setup-guide%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=Setting%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%3A%20SSL%2C%20Caching%20and%20Common%20Problems&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fcloudflare-wordpress-setup-guide%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=How%20to%20Set%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%2C%20Step%20by%20Step%3A%20DNS%2C%20Nameservers%2C%20Full%20(Strict)%20SSL%2C%20Cache%20Rules%20and%20Troubleshooting&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fcloudflare-wordpress-setup-guide%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/cloudflare-wordpress-setup-guide/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -287,20 +346,25 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#full-setup-or-partial-setup">Full setup or partial setup?</a></li>
-              <li><a href="#moving-your-dns-without-breaking-email">Moving your DNS without breaking email</a></li>
-              <li><a href="#ssl-tls-modes-and-why-flexible-causes-loops">SSL/TLS modes, and why Flexible causes loops</a></li>
-              <li><a href="#caching-what-to-cache-and-what-to-bypass">Caching: what to cache and what to bypass</a></li>
-              <li><a href="#apo-for-wordpress">APO for WordPress</a></li>
-              <li><a href="#security-settings-worth-knowing">Security settings worth knowing</a></li>
-              <li><a href="#common-problems-after-switching">Common problems after switching</a></li>
+              <li><a href="#before-you-start">Before you start</a></li>
+              <li><a href="#step-1-add-your-site-and-choose-the-free-plan">Step 1: Add your site and choose the free plan</a></li>
+              <li><a href="#step-2-check-dns-records-and-proxy-status">Step 2: Check DNS records and proxy status</a></li>
+              <li><a href="#step-3-change-nameservers-at-your-registrar">Step 3: Change nameservers at your registrar</a></li>
+              <li><a href="#step-4-set-ssl-tls-to-full-strict">Step 4: Set SSL/TLS to Full (strict)</a></li>
+              <li><a href="#step-5-cache-rules-and-what-never-to-cache">Step 5: Cache rules, and what never to cache</a></li>
+              <li><a href="#step-6-apo-cache-plugins-and-who-does-what">Step 6: APO, cache plugins and who does what</a></li>
+              <li><a href="#step-7-restore-real-visitor-ip-addresses">Step 7: Restore real visitor IP addresses</a></li>
+              <li><a href="#step-8-firewall-and-bot-basics-on-the-free-plan">Step 8: Firewall and bot basics on the free plan</a></li>
+              <li><a href="#step-9-test-everything">Step 9: Test everything</a></li>
+              <li><a href="#troubleshooting-after-the-switch">Troubleshooting after the switch</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Setting%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%3A%20SSL%2C%20Caching%20and%20Common%20Problems%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Set%20Up%20Cloudflare's%20Free%20Plan%20on%20WordPress%2C%20Step%20by%20Step%3A%20DNS%2C%20Nameservers%2C%20Full%20(Strict)%20SSL%2C%20Cache%20Rules%20and%20Troubleshooting%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>
