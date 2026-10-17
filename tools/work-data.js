@@ -648,7 +648,7 @@ module.exports = [
     ],
     built: [
       'Dozens of service, industry, case study and article pages generated from simple data files, so adding content is quick and consistent',
-      'Contact form that emails enquiries to Gmail through a serverless function, then opens WhatsApp, with honeypot and math-question spam protection',
+      'Contact form that emails enquiries through a small PHP script on the server, then opens WhatsApp, with honeypot and math-question spam protection',
       'Structured data on every page: business, services, FAQs, articles, breadcrumbs and case studies',
       'Internal linking between services, articles and case studies, plus sitemap, RSS feed and llms.txt',
       'Free website cost calculator, glossary and key takeaways on every article',
