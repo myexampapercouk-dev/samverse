@@ -1323,11 +1323,11 @@
     <description>What tailoring, stitching and alteration services need online: price lists, measurement process, turnaround times, doorstep pickup, galleries and local SEO.</description>
   </item>
   <item>
-    <title>Building News and Magazine Websites on WordPress</title>
+    <title>Building News and Magazine Websites on WordPress: Themes, Categories, Authors, Speed at Scale, Ads, Google News and Schema</title>
     <link>https://samverse.space/blog/news-magazine-websites-wordpress/</link>
     <guid>https://samverse.space/blog/news-magazine-websites-wordpress/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>News and magazine websites on WordPress: category structure, fast publishing, author pages, performance at scale, ads, newsletters and news SEO.</description>
+    <description>How to build a news or magazine website on WordPress: themes, categories, authors, speed at scale, ads and Core Web Vitals, Google News basics and schema.</description>
   </item>
   <item>
     <title>One-Page vs Multi-Page Website: When a Single Page Works, When You Need More, and What Each Means for SEO, Cost and Growth</title>
@@ -1960,11 +1960,11 @@
     <description>Recover Google rankings after a hack: security issues vs manual actions, review requests, clearing spam URLs, when to disavow and a realistic timeline.</description>
   </item>
   <item>
-    <title>How to Set Up a WordPress Website on Hostinger: A Step-by-Step Guide</title>
+    <title>How to Set Up a WordPress Website on Hostinger, Step by Step: Plan, Domain, hPanel Install, SSL, PHP, LiteSpeed Cache, Backups, Email and Staging</title>
     <link>https://samverse.space/blog/hostinger-wordpress-setup-guide/</link>
     <guid>https://samverse.space/blog/hostinger-wordpress-setup-guide/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Set up WordPress on Hostinger step by step: pick the right plan, connect your domain, install in hPanel, then add SSL, email, caching, backups and security.</description>
+    <description>Set up WordPress on Hostinger step by step: choose a plan, connect your domain, install in hPanel, then SSL, PHP, LiteSpeed Cache, backups, email and staging.</description>
   </item>
   <item>
     <title>Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger</title>
@@ -1995,11 +1995,11 @@
     <description>What a monthly website maintenance plan should include: tested updates, off-site backups, security, uptime and form checks, content time and a monthly report.</description>
   </item>
   <item>
-    <title>Domain, Hosting, Email and Licence Renewals: A Checklist for Business Owners</title>
+    <title>Domain, Hosting, SSL, Email and Licence Renewals: A Checklist That Keeps Your Website Online</title>
     <link>https://samverse.space/blog/domain-hosting-renewal-checklist/</link>
     <guid>https://samverse.space/blog/domain-hosting-renewal-checklist/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>A yearly renewal checklist for domain, hosting, SSL, email, premium themes and plugins, Google Workspace and backups, with auto-renewal and ownership tips.</description>
+    <description>A renewal checklist for your domain, hosting, SSL, email and premium licences: auto-renew, card expiry, renewal price rises, a reminder calendar and who pays.</description>
   </item>
   <item>
     <title>How to Set Up Business Email on Hostinger With Your Own Domain: Mailboxes, DNS Records, Phone Apps and WordPress Forms</title>
@@ -2037,18 +2037,18 @@
     <description>Elementor layout broken after an update? Regenerate CSS, clear caches, match Elementor and Pro versions, use Safe Mode, check containers and roll back.</description>
   </item>
   <item>
-    <title>How to Edit Your WordPress Website Content Yourself (Text, Images, Menus)</title>
+    <title>How to Edit Your WordPress Website Content Yourself: Text, Images, Menus and Pages in the Block Editor or Elementor</title>
     <link>https://samverse.space/blog/edit-website-content-wordpress/</link>
     <guid>https://samverse.space/blog/edit-website-content-wordpress/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Edit your WordPress content yourself: update pages in the block editor or Elementor, replace images, change menus, headers and footers, and do it safely.</description>
+    <description>Edit your WordPress website yourself: text, images, menus and pages in the block editor or Elementor, plus revisions, staff roles and what not to touch.</description>
   </item>
   <item>
-    <title>Premium WordPress Themes: What to Know Before You Buy</title>
+    <title>Premium WordPress Themes: What to Know Before You Buy, From Licences and Bundled Plugins to Support, Demo Bloat and When a Custom Build Is Better</title>
     <link>https://samverse.space/blog/premium-wordpress-themes-guide/</link>
     <guid>https://samverse.space/blog/premium-wordpress-themes-guide/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Premium WordPress themes: what to know before buying, from licences, updates and support to bundled plugins, speed trade-offs and choosing well.</description>
+    <description>Premium WordPress themes explained: where to buy, licences and updates, bundled plugins, demo bloat, support, nulled copies and when to go custom.</description>
   </item>
   <item>
     <title>How to Update a Premium WordPress Theme Safely: Licences, ZIP Uploads, Bundled Plugins and Keeping Your Customisations</title>
@@ -2058,11 +2058,11 @@
     <description>How to update a premium WordPress theme safely: licence updates or ZIP upload, backup, staging, child themes, bundled plugins and fixing a broken update.</description>
   </item>
   <item>
-    <title>Custom WordPress Theme Development: When You Need It and How It Works</title>
+    <title>Custom WordPress Theme Development: What It Is, Block vs Classic vs Builder Builds, the Process, Cost Drivers and When It Is Worth It</title>
     <link>https://samverse.space/blog/custom-wordpress-theme-development/</link>
     <guid>https://samverse.space/blog/custom-wordpress-theme-development/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Custom WordPress theme development: when it beats premium themes and page builders, the process from design to handover, cost factors and avoiding lock-in.</description>
+    <description>Custom WordPress theme development: block vs classic vs page builder builds, the process from design to theme, cost drivers and when it is worth it.</description>
   </item>
   <item>
     <title>Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built</title>
@@ -2093,18 +2093,18 @@
     <description>Custom Gutenberg blocks for agencies: when block patterns are enough, when to use ACF or native blocks with create-block, and how to lock the design.</description>
   </item>
   <item>
-    <title>Custom Post Types and Custom Fields: Structuring Content in WordPress</title>
+    <title>Custom Post Types and Custom Fields in WordPress: Examples, ACF and Similar Tools, Registering Them in Code, Templates and SEO</title>
     <link>https://samverse.space/blog/custom-post-types-fields/</link>
     <guid>https://samverse.space/blog/custom-post-types-fields/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Custom post types and custom fields in WordPress: manage projects, properties, courses and jobs as structured content, with ACF and best practices.</description>
+    <description>Custom post types and custom fields in WordPress explained with examples, ACF and similar tools, code to register a post type, templates and SEO.</description>
   </item>
   <item>
-    <title>Plugin or Custom Code? How to Decide What to Use in WordPress</title>
+    <title>Plugin or Custom Code in WordPress? When to Use a Plugin, a Code Snippet or a Custom Plugin, With a Decision Table</title>
     <link>https://samverse.space/blog/plugin-vs-custom-code-wordpress/</link>
     <guid>https://samverse.space/blog/plugin-vs-custom-code-wordpress/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Plugin or custom code in WordPress? Choose between a plugin, snippet or custom plugin by weighing maintenance, security, performance and cost.</description>
+    <description>Plugin or custom code in WordPress? When to use a plugin, a snippet or a custom plugin, weighing security, speed, upkeep and cost, with a decision table.</description>
   </item>
   <item>
     <title>Websites for Farm Stays and Agritourism: Selling Experiences</title>
@@ -2639,11 +2639,11 @@
     <description>WordPress vs Squarespace for an Indian business: ownership, flexibility, cost over time, UPI and Indian payment gateways, SEO control, and when each one fits.</description>
   </item>
   <item>
-    <title>WordPress vs Google Sites: Is a Free Website Good Enough for Your Business?</title>
+    <title>WordPress vs Google Sites: Is a Free Website Good Enough for Your Business? Features, SEO, Custom Domains, Forms and Cost Compared</title>
     <link>https://samverse.space/blog/wordpress-vs-google-sites/</link>
     <guid>https://samverse.space/blog/wordpress-vs-google-sites/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Google Sites and other free builders vs a WordPress website: the limits of free, professionalism, SEO, when a free site is genuinely enough and when to upgrade.</description>
+    <description>WordPress vs Google Sites for a business: features, SEO, custom domains, forms, design control and cost, when free is enough and how to move later.</description>
   </item>
   <item>
     <title>.in vs .com (and .co.in): Which Domain Should an Indian Business Choose?</title>
@@ -2709,11 +2709,11 @@
     <description>What website terms and conditions usually cover for business sites and online stores, how they differ from policies, and why copied templates need care.</description>
   </item>
   <item>
-    <title>Website Handover Checklist: What You Should Receive When Your Project Ends</title>
+    <title>Website Handover Checklist: What You Should Receive When Your Website Project Ends, From Logins and Backups to Documentation, Licences and Training</title>
     <link>https://samverse.space/blog/website-handover-checklist/</link>
     <guid>https://samverse.space/blog/website-handover-checklist/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What to receive when your website project is handed over: logins, documentation, training, licences, backups, source files and clear support terms.</description>
+    <description>Website handover checklist: the logins, admin users, backups, documentation, licences, training, source files and analytics to receive at launch.</description>
   </item>
   <item>
     <title>Stock Photos vs Real Photos: Which Should Your Business Website Use?</title>

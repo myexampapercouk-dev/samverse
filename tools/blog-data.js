@@ -19042,54 +19042,130 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'news-magazine-websites-wordpress',
-    seoTitle: 'News & Magazine Websites on WordPress',
-    title: 'Building News and Magazine Websites on WordPress',
-    description: 'News and magazine websites on WordPress: category structure, fast publishing, author pages, performance at scale, ads, newsletters and news SEO.',
+    seoTitle: 'News and Magazine Websites on WordPress: How to Build One',
+    title: 'Building News and Magazine Websites on WordPress: Themes, Categories, Authors, Speed at Scale, Ads, Google News and Schema',
+    description: 'How to build a news or magazine website on WordPress: themes, categories, authors, speed at scale, ads and Core Web Vitals, Google News basics and schema.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-speed-optimization', 'wordpress-seo-services', 'wordpress-website-development'],
     body: `
-<p>WordPress powers many news and magazine websites, from local news portals to industry publications. These sites have particular needs: frequent publishing, lots of content, speed at scale and search visibility.</p>
+<p>WordPress is a strong platform for news and magazine websites, from local news portals to industry publications. A good one needs a category structure that matches how readers browse, author pages and clear dates on every article, an editorial workflow with the right user roles, hosting and caching that stay fast as the archive grows into thousands of posts, ads that don't wreck Core Web Vitals, and article structured data. Inclusion in Google News is decided by Google, not applied for, so the basics of trustworthy publishing matter most.</p>
+<p>Speed is where content-heavy sites often struggle. Thousands of images, ad scripts, related-post queries and busy homepages add up, and <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> finds out whether the bottleneck is hosting, plugins, the theme, images, scripts or the database, then fixes it and shows you the before-and-after results.</p>
+<p>A real example runs through this guide: <a href="/work/india-automation-hub/">India Automation Hub</a>, a news and resource portal for India's industrial automation community, built with WordPress, Elementor, the Newsfy theme and Yoast SEO.</p>
 
-<h2>Structure</h2>
+<h2>Choosing how to build it</h2>
+<table>
+  <thead><tr><th>Approach</th><th>Suits</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>A dedicated news or magazine theme</td><td>Most publishers: ready-made homepage blocks, post layouts, author boxes and ad positions</td><td>Bundled plugins, heavy demos and features you won't use, all loading on every page</td></tr>
+    <tr><td>A magazine theme with Elementor</td><td>Publishers who want to design sections and landing pages visually</td><td>Extra page weight; keep templates lean</td></tr>
+    <tr><td>A custom block theme</td><td>Large publications with strict speed targets and their own design</td><td>Longer build, and a developer for ongoing changes</td></tr>
+  </tbody>
+</table>
+<p>Whichever you choose, keep articles as ordinary WordPress posts shown through templates. Hand-built article layouts don't scale past a few dozen stories, and they make every future redesign harder.</p>
+
+<h2>Categories: design the structure before the homepage</h2>
+<p>On a news site, categories are the navigation, the archive and a large part of the SEO. Plan them around how readers think about the subject:</p>
 <ul>
-  <li>Clear categories and sub-categories matching how readers browse</li>
-  <li>Tags used sparingly and consistently</li>
-  <li>Section pages with featured and latest stories</li>
-  <li>Author pages with bios and credentials</li>
+  <li><strong>A short main menu</strong> of top-level sections, with subcategories underneath.</li>
+  <li><strong>One primary category per article,</strong> shown on the post card and the article, so readers can move sideways to related stories.</li>
+  <li><strong>An archive page for every section</strong> that deserves one, with a short introduction rather than only a list of headlines.</li>
+  <li><strong>Tags used sparingly</strong> and consistently, for recurring topics, companies or events, not as a second set of categories.</li>
+</ul>
+<p>India Automation Hub shows how this works on a technical subject. Its main menu stays short, while the Automation &amp; Tech section groups the field into six families, from control systems and robotics to industrial software, IIoT and OT cybersecurity, each with its own subcategories. Every category has its own archive page showing how many articles it holds, and every post card carries a thumbnail, a category tag and the author's name. A control engineer can go straight to the archive they care about without wading through robotics news.</p>
+<p>Whether those archives should be indexed is a separate decision; <a href="/blog/category-tag-pages-seo/">SEO for category and tag pages</a> explains when to index, noindex or improve them.</p>
+
+<h2>Homepage and section pages</h2>
+<p>A magazine homepage works like the front page of a newspaper: a featured block of the most important stories, then sections readers can scan. India Automation Hub leads with three featured stories, followed by sections such as the Industrial Automation Roundup, Industry News, Editor's Picks, Recent Articles and Popular, each with thumbnails, headlines and bylines.</p>
+<p>Every homepage section is a database query. A dozen sections, each pulling posts in a different way, can make the homepage the slowest page on the site, so keep the number of sections sensible and make sure the page is cached.</p>
+
+<h2>Authors and the editorial workflow</h2>
+<ul>
+  <li><strong>Author pages</strong> with a real name, photo, short bio and relevant experience, linked from every byline.</li>
+  <li><strong>Roles that match the workflow:</strong> Contributors write drafts, Authors publish their own work, Editors review and publish everything. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> covers who gets which.</li>
+  <li><strong>Editorial review</strong> before publishing, with scheduled posts for planned stories.</li>
+  <li><strong>Visible dates:</strong> the published date, plus an updated date and a short note when a story changes.</li>
+  <li><strong>Standards pages:</strong> about, contact, editorial and corrections policies, and who owns the publication.</li>
+</ul>
+<p>These help readers trust the site, and Google's own guidance on reliable, people-first content points to the same things.</p>
+
+<h2>Speed at scale</h2>
+<p>A news site that was quick with fifty posts can slow down badly at five thousand. The common problems and fixes:</p>
+<table>
+  <thead><tr><th>Problem</th><th>What helps</th></tr></thead>
+  <tbody>
+    <tr><td>Slow server response under traffic spikes</td><td>Hosting with enough resources, full-page caching and a CDN</td></tr>
+    <tr><td>Heavy homepage and section queries</td><td>Fewer sections, cached pages and object caching where the host supports it</td></tr>
+    <tr><td>Thousands of large images</td><td>Correctly sized images, WebP, and lazy loading below the fold</td></tr>
+    <tr><td>Related-post and popular-post plugins</td><td>Lightweight options, or results cached rather than calculated on every visit</td></tr>
+    <tr><td>Ad, analytics and social scripts</td><td>Fewer scripts, loaded after the content; see the ads section below</td></tr>
+    <tr><td>A bloated database</td><td>Limiting revisions, cleaning expired data and checking autoloaded options</td></tr>
+    <tr><td>Slow site search</td><td>A better search setup once the archive is large</td></tr>
+  </tbody>
+</table>
+<p><a href="/blog/why-is-my-wordpress-site-slow/">Why is my WordPress site slow?</a> helps you diagnose the cause, and <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers page, object and CDN caching, including what not to cache.</p>
+
+<h2>Ads without ruining Core Web Vitals</h2>
+<p>Ads fund many publications, and they're a common reason news pages feel slow and jumpy. Core Web Vitals measure exactly what ads disturb: how quickly the main content appears (LCP), how quickly the page responds to taps (INP) and how much the layout shifts (CLS).</p>
+<ul>
+  <li><strong>Reserve space for every ad slot,</strong> so content doesn't jump when an ad loads. Unfilled slots should keep their space or collapse predictably. <a href="/blog/fix-cls-layout-shift/">Fixing layout shift</a> covers the details.</li>
+  <li><strong>Keep ads out of the first screen of content,</strong> or at least away from the headline and lead image.</li>
+  <li><strong>Lazy-load ads further down</strong> the article rather than loading them all at once.</li>
+  <li><strong>Limit ad density.</strong> Too many ads hurt reading, and ad networks have their own placement policies.</li>
+  <li><strong>Publish an ads.txt file</strong> at the root of your domain if you sell ads programmatically, listing your authorised sellers.</li>
+  <li><strong>Respect consent rules</strong> for personalised ads; check the current requirements for your audience.</li>
 </ul>
 
-<h2>Publishing workflow</h2>
+<h2>Google News basics</h2>
+<p>At the time of writing, Google decides automatically which sites appear in Google News and in Top Stories; there's no application that guarantees inclusion. What helps:</p>
 <ul>
-  <li>User roles for writers, editors and admins; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles</a></li>
-  <li>Editorial review before publishing</li>
-  <li>Scheduled posts and update notes on developing stories</li>
-</ul>
-
-<h2>Performance at scale</h2>
-<p>Thousands of articles and images put pressure on hosting. Use good hosting, page caching, image optimization and a CDN; see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
-
-<h2>Ads without ruining the experience</h2>
-<p>Ads fund many publications but can slow pages and frustrate readers. Reserve ad space to avoid layout shifts, limit ad density and monitor Core Web Vitals.</p>
-
-<h2>News SEO</h2>
-<ul>
-  <li>Descriptive headlines and accurate dates (published and updated)</li>
-  <li>Article structured data with author and dates</li>
-  <li>Clear author expertise and editorial standards pages</li>
-  <li>XML sitemaps that update quickly with new articles</li>
   <li>Original reporting and analysis, not rewritten press releases</li>
+  <li>Clear bylines, author information and accurate published and updated dates</li>
+  <li>Contact details and information about who runs the publication</li>
+  <li>Descriptive headlines that match the story</li>
+  <li>Following Google's news content policies, which cover areas such as transparency and misleading content</li>
 </ul>
+<p>A news sitemap, which lists recently published articles, can help Google find new stories quickly. Some SEO plugins generate one, in some cases as a paid add-on; check Google's current guidelines for what it should contain.</p>
 
-<h2>Audience</h2>
+<h2>Article schema and archives</h2>
+<p>Structured data tells Google what each page is. SEO plugins such as Yoast SEO and Rank Math output article schema automatically, so the job is mostly checking it's correct: the right type, the headline, images, both dates and the author with a link to their profile page. The core of it looks like this:</p>
+<pre><code>{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "Example headline for the story",
+  "image": ["https://example.com/images/story-photo.jpg"],
+  "datePublished": "2026-10-19T09:00:00+05:30",
+  "dateModified": "2026-10-19T14:30:00+05:30",
+  "author": [{
+    "@type": "Person",
+    "name": "Author Name",
+    "url": "https://example.com/author/author-name/"
+  }]
+}</code></pre>
+<p>Breadcrumbs and organisation details are worth adding too; <a href="/blog/schema-markup-explained/">schema markup explained</a> covers the types. For archives, keep category pages crawlable with plain pagination links, consider noindexing date archives and thin tag pages, and make sure old articles stay linked from somewhere, so the archive keeps earning traffic.</p>
+
+<h2>Building an audience beyond Google</h2>
 <ul>
-  <li>Newsletter sign-ups; see <a href="/blog/lead-magnets-newsletter-small-business/">newsletters</a></li>
-  <li>Social sharing and WhatsApp channels</li>
-  <li>Search on the site</li>
+  <li><strong>A newsletter,</strong> offered in more than one place, saying exactly what subscribers will receive. India Automation Hub asks in homepage blocks, sidebars and the contact page, and its About page explains what readers get. See <a href="/blog/email-newsletter-small-business/">how to start an email newsletter</a>.</li>
+  <li><strong>Formats beyond daily news,</strong> such as reports, webinars and podcasts.</li>
+  <li><strong>A clear route for vendors and PR,</strong> separate from reader enquiries, so press releases and advertising requests reach the right person.</li>
+  <li><strong>Site search and "read next" links,</strong> so a reader who finishes one article always has another in view.</li>
 </ul>
 
-<h2>Real example</h2>
-<p>The <a href="/work/india-automation-hub/">India Automation Hub</a> case study shows a content-rich industry portal with deep categories, special reports, webinars and newsletter sign-ups.</p>
+<h2>FAQs</h2>
+<h3>Is WordPress good for a news website?</h3>
+<p>Yes. It handles frequent publishing, multiple authors, categories, scheduling and large archives well. The work is in choosing a lean theme, structuring categories and keeping it fast as content grows.</p>
+<h3>Which theme should I use for a magazine website?</h3>
+<p>A dedicated news or magazine theme suits most publishers, as long as it's updated regularly, loads only what it needs and doesn't lock your content into its own features. Test it with your real content, not just the demo.</p>
+<h3>How do I get my WordPress site into Google News?</h3>
+<p>There's no application that guarantees it. Publish original reporting with clear bylines, dates and contact information, follow Google's news content policies, and use correct article schema. Google decides inclusion automatically.</p>
+<h3>Can WordPress handle thousands of articles?</h3>
+<p>Yes, with suitable hosting, page and object caching, sized images and a tidy database. Slowdowns at scale usually come from hosting, heavy queries and scripts rather than WordPress itself.</p>
+<h3>Do ads slow down a WordPress news site?</h3>
+<p>They can. Ad scripts add weight and can cause layout shifts. Reserving space for each slot, lazy-loading lower ads and limiting their number keeps the impact down.</p>
+
+<p>Running a news or magazine site that has slowed down as it has grown? <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> covers hosting checks, caching, images, scripts and the database, with a before-and-after report. For indexing, archives and article schema, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -29582,58 +29658,127 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   },
   {
     slug: 'hostinger-wordpress-setup-guide',
-    seoTitle: 'How to Set Up WordPress on Hostinger (Step by Step)',
-    title: 'How to Set Up a WordPress Website on Hostinger: A Step-by-Step Guide',
-    description: 'Set up WordPress on Hostinger step by step: pick the right plan, connect your domain, install in hPanel, then add SSL, email, caching, backups and security.',
+    seoTitle: 'How to Set Up WordPress on Hostinger: Step-by-Step Guide',
+    title: 'How to Set Up a WordPress Website on Hostinger, Step by Step: Plan, Domain, hPanel Install, SSL, PHP, LiteSpeed Cache, Backups, Email and Staging',
+    description: 'Set up WordPress on Hostinger step by step: choose a plan, connect your domain, install in hPanel, then SSL, PHP, LiteSpeed Cache, backups, email and staging.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
-<p>Hostinger is one of the most popular hosting providers for small business websites in India, thanks to affordable plans and a beginner-friendly control panel called hPanel. Here's how to set up a WordPress site on it properly, not just quickly. (This guide isn't sponsored; plan features change, so always check Hostinger's current plans.)</p>
+<p>To set up WordPress on Hostinger, choose a web, WordPress or cloud hosting plan (not the Website Builder), add your website in hPanel, connect your domain and install WordPress with the installer or onboarding wizard. Then switch on the free SSL certificate, set a current PHP version, configure the LiteSpeed Cache plugin, check your backups, set up business email and, if your plan includes it, use staging for changes. Done in that order, the site is secure, fast and recoverable before you add a single page.</p>
+<p>Setting up hosting properly is the first step of a <a href="/wordpress-website-development/">WordPress website development</a> project, and I can do it for you on Hostinger or another host, with every account in your name. If you already have a WordPress site elsewhere, <a href="/wordpress-migration/">WordPress migration</a> moves it across without downtime, or you can follow <a href="/blog/migrate-website-to-hostinger/">migrating a WordPress site to Hostinger</a> yourself.</p>
+<p>This guide isn't sponsored. Hostinger renames plans and moves things around in hPanel from time to time, so menu names are correct at the time of writing; follow the current screens if the wording differs. For transparency, this website is hosted on Hostinger too, but it's custom-coded rather than built on WordPress. If you haven't chosen a host yet, start with <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>.</p>
+<p>Before you begin, have a business email address you'll keep for the Hostinger and WordPress logins, a password manager, and a note of any mailboxes already running on your domain, because a careless DNS change is the usual way email breaks during setup.</p>
 
-<h2>Step 1: Choose the right product and plan</h2>
-<ul>
-  <li><strong>WordPress or web hosting,</strong> not the Website Builder, if you want a WordPress site you can grow and move later</li>
-  <li><strong>Entry plans</strong> suit a simple brochure site; business sites with more traffic, WooCommerce or several sites benefit from higher plans with more resources, better backups and extra features</li>
-  <li><strong>Check renewal prices,</strong> not just the introductory price; see <a href="/blog/hosting-renewal-price-increase/">hosting renewal price increases</a></li>
-</ul>
+<h2>Step 1: Choose the right Hostinger product and plan</h2>
+<table>
+  <thead><tr><th>Product</th><th>What it is</th><th>Choose it when</th></tr></thead>
+  <tbody>
+    <tr><td>Web or WordPress hosting</td><td>Shared hosting managed through hPanel, with a WordPress installer</td><td>Most brochure sites, blogs and small stores</td></tr>
+    <tr><td>Cloud hosting</td><td>More dedicated resources, still managed through hPanel</td><td>Busier sites, larger WooCommerce stores, agencies with several sites</td></tr>
+    <tr><td>VPS</td><td>Your own virtual server, which you or a developer manage</td><td>Someone will look after the server and you need full control</td></tr>
+    <tr><td>Website Builder</td><td>Hostinger's own drag-and-drop builder</td><td>Not for WordPress: no WordPress plugins, and moving later means a rebuild</td></tr>
+  </tbody>
+</table>
+<p>Entry plans suit a single simple site. Higher plans add resources and, at the time of writing, features such as more frequent backups and a staging tool; check the plan comparison. Look at the renewal price for the same plan, not just the first term, and work out the cost over three years. If you can choose a data centre, pick the one nearest your visitors: an Indian location if offered, or the nearest one in Asia.</p>
 
-<h2>Step 2: Connect your domain</h2>
-<ul>
-  <li><strong>New domain:</strong> some annual plans include a free domain for the first year, so check the renewal cost</li>
-  <li><strong>Existing domain elsewhere:</strong> either point its nameservers to Hostinger, or keep DNS where it is and update the A record</li>
-</ul>
-<p>If you already have business email on the domain, be careful: changing nameservers can break email unless the MX records are recreated. See <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+<h2>Step 2: Add your website and connect the domain</h2>
+<p>In hPanel, sites are managed under <strong>Websites</strong>, where you add a site and say whether the domain is new or one you own. A new domain is registered in your Hostinger account with DNS set up automatically. Some yearly plans include a domain free for the first year; check what it renews at. For a domain registered elsewhere, you have two options:</p>
+<table>
+  <thead><tr><th>Method</th><th>What you change</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Change the nameservers</td><td>The nameservers at your registrar, to the ones hPanel shows</td><td>All DNS moves to Hostinger, so every email and verification record must be recreated there first</td></tr>
+    <tr><td>Change the A record</td><td>Only the root domain's A record and the www record, at your current DNS provider</td><td>Email records stay where they are, so this is safer when mail already works</td></tr>
+  </tbody>
+</table>
+<p>If your DNS is on Cloudflare, keep it there and update the records in Cloudflare. Changes can take a few hours to spread.</p>
 
 <h2>Step 3: Install WordPress in hPanel</h2>
+<p>Hostinger offers WordPress during onboarding, or later through the auto installer on the website's dashboard. Either way:</p>
+<ol>
+  <li><strong>Install in the root of the domain,</strong> not a subfolder, unless you have a reason to.</li>
+  <li><strong>Create the administrator account</strong> with a unique username (not "admin"), a long password from your password manager and your business email.</li>
+  <li><strong>Skip extras you don't need.</strong> The wizard may offer a theme, AI-generated content and a set of plugins. Every plugin is one more thing to update.</li>
+  <li><strong>Check what was installed.</strong> Hostinger may add its own plugins, for example for onboarding or hPanel tools. Review Plugins, Installed Plugins and remove anything you won't use.</li>
+</ol>
+
+<h2>Step 4: Switch on SSL and force HTTPS</h2>
+<p>Hostinger includes free SSL certificates that install and renew automatically once the domain points to its servers. The website's <strong>Security</strong> section in hPanel shows the status; if it's pending, wait for DNS to spread and install it again.</p>
+<p>In WordPress, open <strong>Settings, General</strong> and check that the WordPress Address and Site Address start with https://. A "Not secure" warning on a site with a valid certificate usually means mixed content: an image, script or font still loading over http://. Fix it at the source, then use hPanel's force HTTPS option if your plan shows one. <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> covers the other warnings.</p>
+
+<h2>Step 5: Set a current PHP version</h2>
+<p>Newer PHP versions are faster and still receive security fixes. In hPanel, the PHP configuration settings, under Advanced at the time of writing, show the version your site uses and let you change it. On a fresh install, choose a current version that WordPress supports. On an existing site, check the theme and plugins first and take a backup; <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a> walks through the checks. The same area controls memory and upload limits, which you only need to raise when a plugin or large import asks.</p>
+
+<h2>Step 6: Configure LiteSpeed Cache</h2>
+<p>Hostinger's web hosting has generally run on LiteSpeed servers, so the free LiteSpeed Cache plugin controls the server's own page cache. It may already be installed. A sensible start:</p>
 <ul>
-  <li>Use hPanel's WordPress installer or onboarding wizard</li>
-  <li>Choose a unique admin username (not "admin") and a strong password</li>
-  <li>Pick the server location closest to your visitors, if your plan offers a choice</li>
+  <li><strong>Turn page caching on,</strong> leaving logged-in user settings at their defaults.</li>
+  <li><strong>On WooCommerce,</strong> confirm cart, checkout and My Account are excluded from the cache. It's usually automatic, but check.</li>
+  <li><strong>Minify CSS and JavaScript,</strong> which is usually safe. Combining files, critical CSS and delayed JavaScript break layouts more often, so enable them one at a time and test menus, forms and the cart after each.</li>
+  <li><strong>Use one CDN and one cache.</strong> The plugin offers a CDN through QUIC.cloud and Hostinger has its own on some plans; pick one, and never add a second caching plugin.</li>
+</ul>
+<p>Test in a private window afterwards. If the site is slow even with caching on, <a href="/blog/hostinger-website-slow-fix/">why a site on Hostinger is slow and how to fix it</a> covers resource limits, the database and heavy plugins.</p>
+
+<h2>Step 7: Check backups and keep your own copy</h2>
+<p>Hostinger takes automatic backups, but how often and how many it keeps depends on the plan; at the time of writing, entry plans back up less often than higher ones. The backups area under Files in hPanel lets you restore files, the database or the whole site. Host backups live with the host, so also:</p>
+<ul>
+  <li>Run a backup plugin that sends copies to cloud storage you own; <a href="/blog/wordpress-backup-plugins-compared/">WordPress backup plugins compared</a> covers the options.</li>
+  <li>Take a manual full backup before any big change, such as a theme switch.</li>
+  <li>Do one test restore onto staging, so you know the backups work.</li>
 </ul>
 
-<h2>Step 4: Turn on SSL</h2>
-<p>Hostinger provides free SSL certificates. Make sure it's active and that your site loads on https:// with no warnings; see <a href="/blog/ssl-certificate-errors-fix/">fixing SSL errors</a>.</p>
+<h2>Step 8: Set up business email</h2>
+<p>Hostinger offers email on your domain, included with some plans and as an add-on with others at the time of writing, from the <strong>Emails</strong> section of hPanel. Google Workspace, Microsoft 365 or Zoho Mail also work with a site hosted here; only the DNS records change. Whichever you use, add the MX, SPF, DKIM and DMARC records for that provider, remove leftovers from any old one, and send WordPress form emails through a real mailbox with an SMTP plugin. <a href="/blog/hostinger-business-email-setup/">Setting up business email on Hostinger</a> goes step by step.</p>
 
-<h2>Step 5: Set up caching</h2>
-<p>Hostinger runs LiteSpeed servers, so the LiteSpeed Cache plugin works with the server's built-in cache. Configure it carefully and test forms and checkout afterwards; see <a href="/blog/wordpress-caching-explained/">caching explained</a>.</p>
+<h2>Step 9: Use staging for changes</h2>
+<p>A staging site is a private copy for testing updates, plugins and design changes. On plans that include it, Hostinger's WordPress tools in hPanel can create a staging copy and publish it back to the live site, at the time of writing; otherwise a staging plugin does the job. Keep staging out of Google, stop it emailing customers, and be careful pushing it over a live site that takes orders or enquiries, because a full push can overwrite anything added since the copy was made. <a href="/blog/staging-sites-explained/">Staging sites explained</a> covers a safe workflow.</p>
 
-<h2>Step 6: Set up business email</h2>
-<p>Create mailboxes like info@yourdomain in hPanel, or use Google Workspace or Zoho; see <a href="/blog/hostinger-business-email-setup/">business email on Hostinger</a>.</p>
+<h2>Step 10: WordPress settings to change on day one</h2>
+<table>
+  <thead><tr><th>Where</th><th>What to set</th></tr></thead>
+  <tbody>
+    <tr><td>Settings, General</td><td>Site title, tagline, admin email and timezone (Kolkata, for India), so scheduled posts and form timestamps are right</td></tr>
+    <tr><td>Settings, Permalinks</td><td>Post name, for clean addresses such as example.com/services; set it before publishing</td></tr>
+    <tr><td>Settings, Reading</td><td>Tick "Discourage search engines" while you build, and untick it at launch</td></tr>
+    <tr><td>Settings, Discussion</td><td>Turn comments off, or hold them for approval</td></tr>
+    <tr><td>Posts, Pages, Plugins</td><td>Delete the sample post, sample page and unused plugins</td></tr>
+    <tr><td>Users</td><td>One account per person with the lowest role they need; no shared logins</td></tr>
+  </tbody>
+</table>
 
-<h2>Step 7: Backups and security</h2>
+<h2>Security basics</h2>
 <ul>
-  <li>Check how often your plan backs up automatically, and keep your own off-site backups too</li>
-  <li>Keep PHP on a current supported version</li>
-  <li>Install only the plugins you need; see <a href="/blog/essential-wordpress-plugins-business/">essential plugins</a></li>
-  <li>Enable two-factor authentication for hPanel and WordPress</li>
+  <li>Two-factor authentication on the Hostinger account and every WordPress administrator.</li>
+  <li>Plugin and theme updates only after a backup exists.</li>
+  <li>hPanel's malware scanner, available in its security section at the time of writing, plus a security plugin if you want login protection.</li>
+  <li>Developers get their own WordPress user and Hostinger's account sharing, never your password, and lose access when the work ends.</li>
+  <li>Hosting and domain in your business name, with auto-renew on a card that won't expire.</li>
 </ul>
 
-<h2>Step 8: Connect Google tools</h2>
-<p>Set up Search Console and Analytics; see <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a>.</p>
+<h2>Launch checklist</h2>
+<ol>
+  <li>The site loads on https:// with a padlock, with and without www.</li>
+  <li>"Discourage search engines" is unticked.</li>
+  <li>Every form sends, and the emails arrive.</li>
+  <li>Caching is on, and cart and checkout work if you sell online.</li>
+  <li>A backup exists in hPanel and in your own storage.</li>
+  <li>Search Console and Google Analytics are connected to your own Google account.</li>
+</ol>
 
-<h2>Want it set up for you?</h2>
-<p>I set up and build WordPress sites on Hostinger and other hosts regularly, configured for speed, security and SEO from day one. See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2>FAQs</h2>
+<h3>Is Hostinger good for WordPress?</h3>
+<p>It can run WordPress well, particularly small business sites, because its LiteSpeed servers work with the LiteSpeed Cache plugin. Whether it suits you depends on your traffic, whether you sell online and the plan's resources. I'm not ranking hosts; the checks in the hosting guide apply to any provider.</p>
+<h3>Should I use Hostinger's Website Builder or WordPress?</h3>
+<p>For a business site you want to grow, WordPress. The builder is quicker to start, but it can't use WordPress plugins and moving away later means a rebuild.</p>
+<h3>Which Hostinger plan do I need for WordPress?</h3>
+<p>An entry plan suits one small site. For a business site, a store or several sites, look for more resources, more frequent backups and staging, which at the time of writing come with higher plans.</p>
+<h3>Do I need a separate caching plugin on Hostinger?</h3>
+<p>Usually not. LiteSpeed Cache works with the server's own cache, and a second page caching plugin tends to cause conflicts rather than extra speed.</p>
+<h3>Can you set up my WordPress site on Hostinger for me?</h3>
+<p>Yes. I can set up the hosting in your name, configure WordPress, SSL, caching, backups and email, then build the site.</p>
+
+<p>If you'd rather spend the time on your business than in hPanel, <a href="/wordpress-website-development/">WordPress website development</a> covers the setup above and the site itself: hosting in your name, your own administrator login, Search Console and Analytics connected, and a full backup at launch. Already on another host? <a href="/wordpress-migration/">WordPress migration</a> moves the site with a full backup first, DNS and SSL set up and your email records preserved.</p>
 `,
   },
   {
@@ -30127,50 +30272,123 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'domain-hosting-renewal-checklist',
-    seoTitle: 'Domain, Hosting & SSL Renewal Checklist for Businesses',
-    title: 'Domain, Hosting, Email and Licence Renewals: A Checklist for Business Owners',
-    description: 'A yearly renewal checklist for domain, hosting, SSL, email, premium themes and plugins, Google Workspace and backups, with auto-renewal and ownership tips.',
+    seoTitle: 'Domain, Hosting and SSL Renewal Checklist for Businesses',
+    title: 'Domain, Hosting, SSL, Email and Licence Renewals: A Checklist That Keeps Your Website Online',
+    description: 'A renewal checklist for your domain, hosting, SSL, email and premium licences: auto-renew, card expiry, renewal price rises, a reminder calendar and who pays.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-migration'],
     body: `
-<p>A website depends on several things you pay for separately, each renewing on its own date. Miss one and your site, email or updates can stop working. This checklist keeps everything in one place.</p>
+<p>Five kinds of renewal can take a website offline or quietly stop it being maintained: the domain name, the hosting, the SSL certificate, business email, and premium theme and plugin licences. Keep them safe by listing each one with its renewal date, switching on auto-renew with a payment method that won't expire, sending renewal emails to an address the business monitors, and setting reminders a month or two ahead so price rises and card problems surface in time.</p>
+<p>When I take on a site for <a href="/wordpress-maintenance/">WordPress maintenance</a>, the first health check includes SSL renewal and whether premium licences are active and in your name, because an expired licence is one of the most common reasons updates quietly stop arriving. The renewals themselves are paid to the providers, ideally in your name, and this checklist helps you keep track of them.</p>
+<p>Renewals are only part of what a site costs to run; <a href="/blog/hidden-website-costs/">hidden website costs</a> covers the rest, from email to content and marketing.</p>
 
 <h2>What renews, and what happens if it lapses</h2>
 <table>
-  <thead><tr><th>Item</th><th>If it lapses</th></tr></thead>
+  <thead><tr><th>Item</th><th>Usual billing</th><th>If it lapses</th><th>Auto-renew?</th></tr></thead>
   <tbody>
-    <tr><td>Domain name</td><td>Website and email go offline; eventually someone else can register it</td></tr>
-    <tr><td>Hosting</td><td>Website goes offline; files may be deleted after a grace period</td></tr>
-    <tr><td>SSL certificate</td><td>Browser security warnings (free certificates usually auto-renew)</td></tr>
-    <tr><td>Business email</td><td>Email stops, and messages may be lost</td></tr>
-    <tr><td>Premium theme and plugin licences</td><td>No updates or support, a security risk over time</td></tr>
-    <tr><td>CDN, backup or security services</td><td>Protection or backups stop quietly</td></tr>
+    <tr><td>Domain name</td><td>Yearly, or several years at once</td><td>Website and email stop; after the grace and redemption periods, anyone can register it</td><td>Yes, always</td></tr>
+    <tr><td>Hosting</td><td>Monthly to multi-year terms</td><td>Site suspended; files and backups may be deleted after a grace period</td><td>Yes, unless you're moving</td></tr>
+    <tr><td>SSL certificate</td><td>Free certificates renew automatically every few months; paid ones yearly</td><td>Browsers show a full-page security warning</td><td>Free ones renew themselves; paid ones, yes</td></tr>
+    <tr><td>Business email</td><td>Monthly or yearly, per mailbox</td><td>Mail stops arriving; mailboxes may be deleted later</td><td>Yes</td></tr>
+    <tr><td>Premium theme and plugin licences</td><td>Usually yearly</td><td>Updates and support stop; some features may stop being editable</td><td>Yes, for licences you still use</td></tr>
+    <tr><td>CDN, backup storage, uptime and security services</td><td>Monthly or yearly</td><td>Protection or backups stop, often without anyone noticing</td><td>Yes, if you still need them</td></tr>
+    <tr><td>Usage-billed services, such as a maps API, SMS or WhatsApp messaging</td><td>Monthly, by usage or prepaid credits</td><td>Maps, OTPs or order notifications stop working</td><td>Check the billing account and credit balance</td></tr>
   </tbody>
 </table>
 
-<p>Renewals are only part of the picture; see <a href="/blog/hidden-website-costs/">the hidden costs of running a website</a>, from licences and email to maintenance and marketing.</p>
+<h2>Why renewals fail</h2>
+<p>Most lapses aren't a decision to stop paying. They usually come from one of these:</p>
+<ul>
+  <li><strong>An expired or replaced card.</strong> The card on file expired, was reissued after a fraud alert, or belonged to someone who has left.</li>
+  <li><strong>Recurring payment rules.</strong> Indian banks apply extra authentication to recurring card payments, so an automatic renewal can be declined unless the card or mandate is set up for it. Check with your bank and the provider, and act on any "payment failed" email.</li>
+  <li><strong>Auto-renew switched off,</strong> sometimes by default on promotional plans.</li>
+  <li><strong>Renewal emails going to the wrong person:</strong> a former employee, a developer, or a personal inbox nobody checks.</li>
+  <li><strong>Accounts in someone else's name.</strong> If a developer or reseller holds the domain or hosting, your renewal depends on them remembering and paying; the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> shows how to check.</li>
+  <li><strong>Different dates and providers,</strong> so nobody has the full picture.</li>
+</ul>
 
-<h2>The checklist</h2>
+<h2>Renewal prices: why the second year costs more</h2>
+<p>Hosting and domains are often sold at an introductory price for the first term, then renew at the standard rate, which can be much higher. A "free" domain with hosting is usually free for the first year only, and Indian prices are often shown before GST. None of this is hidden, but it's easy to miss when you buy.</p>
+<p>A month or two before each renewal, check the price for the same plan, whether a longer term costs less per year, and whether you still need every add-on. If a hosting invoice has already surprised you, <a href="/blog/hosting-renewal-price-increase/">hosting renewal price shock</a> sets out your options, including moving before the renewal date.</p>
+
+<h2>The renewal checklist</h2>
 <ol>
-  <li>List every service, its provider, login email, renewal date and cost</li>
-  <li>Turn on auto-renew for the domain and hosting</li>
-  <li>Make sure the payment method on file won't expire before renewal</li>
-  <li>Use an email you check as the account and domain contact</li>
-  <li>Add renewal dates to your calendar with a reminder a month before</li>
-  <li>Check renewal prices ahead of time; see <a href="/blog/hosting-renewal-price-increase/">hosting renewal price increases</a></li>
-  <li>Remove add-ons you don't use</li>
-  <li>Confirm everything is in your business's name; see the <a href="/blog/website-ownership-checklist/">ownership checklist</a></li>
+  <li><strong>List every paid service</strong> the website depends on, with the provider, what it covers, the login email, renewal date, term and amount.</li>
+  <li><strong>Confirm each account is in the business name,</strong> and that you, not only a developer, can log in.</li>
+  <li><strong>Switch on auto-renew</strong> for the domain, hosting and email, and for licences you still use.</li>
+  <li><strong>Check every payment method's expiry date,</strong> and replace any card belonging to someone who has left.</li>
+  <li><strong>Set billing contacts to an address the business monitors,</strong> such as accounts@ on your domain, plus a backup address.</li>
+  <li><strong>Keep the domain's contact details accurate</strong> and its transfer lock on. Registrars can suspend domains whose contact details fail verification.</li>
+  <li><strong>Consider renewing the domain for several years at once,</strong> so one failed payment can't take it offline.</li>
+  <li><strong>Remove add-ons you don't use,</strong> such as spare mailboxes, old domains or licences for sites that no longer exist.</li>
+  <li><strong>Put every date in a shared calendar</strong> with reminders, as below.</li>
+  <li><strong>Keep the invoices together</strong> for your accountant, particularly if you claim GST input credit.</li>
 </ol>
 
+<h2>A renewal calendar you can copy</h2>
+<p>Add each renewal to a calendar the business shares, with reminders at 60, 30 and 7 days. Use the first to check prices and decide whether to stay, the second to confirm auto-renew and the card, and the last to check the renewal actually went through.</p>
+<pre><code>RENEWAL RECORD
+Service:              (e.g. domain example.com)
+Provider:
+Account login email:
+Account owner:        (business name)
+What it covers:
+Renewal date:
+Term and amount:
+Auto-renew:           (on / off)
+Payment method:       (card ending, expiry month)
+Reminders set:        (60 / 30 / 7 days)
+Who checks it:
+Notes:                (price changes, plans to move)</code></pre>
+<p>Once a year, review the whole list in one sitting, ideally in the month with the most renewals.</p>
+
+<h2>Who should own the billing</h2>
+<table>
+  <thead><tr><th>Item</th><th>Account and billing should be with</th><th>Your developer's role</th></tr></thead>
+  <tbody>
+    <tr><td>Domain</td><td>The business, in a registrar account under your email</td><td>Help with DNS changes, not hold the account</td></tr>
+    <tr><td>Hosting</td><td>The business</td><td>Shared or collaborator access while working on the site</td></tr>
+    <tr><td>Business email</td><td>The business</td><td>Help with DNS records and setup</td></tr>
+    <tr><td>Premium licences</td><td>The business, bought with your email</td><td>Add the licence key to the site and run the updates</td></tr>
+    <tr><td>Maintenance plan</td><td>Invoiced to the business</td><td>Flag expiring licences and SSL problems</td></tr>
+  </tbody>
+</table>
+<p>Some developers and agencies bundle hosting, domains and licences into one bill. It can be convenient, but agree in writing that the accounts are in your name, or that they'll be moved to you whenever you ask. Licences bought on a developer's account usually can't be transferred, and when that licence lapses, updates stop for your site too; <a href="/blog/update-premium-theme-safely/">updating a premium theme safely</a> explains what that means for bundled plugins.</p>
+
+<h2>Renewals when you move host or change developer</h2>
+<ul>
+  <li><strong>Moving host:</strong> don't cancel the old hosting until the site has been live and checked on the new host for a week or two, so you have a fallback. Do check its renewal date, so you aren't charged for another year while you wait, and switch its auto-renew off once the move is confirmed.</li>
+  <li><strong>Changing developer:</strong> update the billing contact and payment method on every account they managed, and check that no renewal still goes to their card or inbox.</li>
+  <li><strong>A staff member leaving:</strong> move renewal emails, cards and calendar reminders from their name to a role address before their last day.</li>
+</ul>
+
 <h2>Watch out for fake renewal notices</h2>
-<p>Scam emails and letters imitate domain renewal notices. Only renew through your actual provider's dashboard; see <a href="/blog/domain-seo-scam-emails/">domain and SEO scams</a>.</p>
+<p>Scam emails and letters copy the look of real domain renewal notices, expiry warnings and "SEO for your domain" invoices. Never pay from a link in an email. Log in to your registrar or host directly and check the date there. <a href="/blog/domain-seo-scam-emails/">Domain renewal and SEO scam emails</a> shows how to spot them.</p>
 
-<h2>If something has already expired</h2>
-<p>Act immediately. There's usually a grace period; see <a href="/blog/domain-expired-what-to-do/">what to do when a domain expires</a> and <a href="/blog/website-down-what-to-do/">website down checklist</a>.</p>
+<h2>If something has already lapsed</h2>
+<ul>
+  <li><strong>Domain:</strong> log in to the registrar now. Most offer a grace period after expiry when you can renew at the normal price, then a redemption period that costs more; the timings vary by registrar and extension. <a href="/blog/domain-expired-what-to-do/">Domain name expired?</a> walks through each stage.</li>
+  <li><strong>Hosting:</strong> pay the invoice and ask support to restore the account. If files were deleted, restore from your own off-site backup.</li>
+  <li><strong>SSL:</strong> a free certificate that failed to renew can usually be reissued from the hosting panel once the cause, often a DNS change, is fixed; <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> helps with the warnings.</li>
+  <li><strong>Email:</strong> renew, then check mail flows both ways; messages sent during the gap may have bounced.</li>
+  <li><strong>Licences:</strong> renew, then run the updates you missed, after a backup.</li>
+</ul>
 
-<h2>Let someone track it for you</h2>
-<p>Renewals tracking is part of a good <a href="/blog/monthly-website-maintenance-plan/">monthly maintenance plan</a>.</p>
+<h2>FAQs</h2>
+<h3>Should I turn on auto-renew for my domain?</h3>
+<p>Yes. It's the simplest protection against losing the domain. Pair it with a payment method that won't expire soon and a renewal email you check, because auto-renew still fails if the payment is declined.</p>
+<h3>Do SSL certificates need to be renewed manually?</h3>
+<p>Not usually. Free certificates from most hosts renew automatically every few months, as long as the domain still points to the host. Certificate lifetimes are being shortened across the industry, which makes automatic renewal more important. Paid certificates are renewed with the provider and then installed.</p>
+<h3>What happens if a premium plugin licence expires?</h3>
+<p>The plugin usually keeps working, but updates and support stop, which becomes a security risk over time, and some plugins restrict features. Renew the licences you depend on and remove plugins you no longer use.</p>
+<h3>Is it cheaper to renew hosting for several years at once?</h3>
+<p>The price per year is often lower on a longer term, but you're committed for longer. Compare the total for the term with the cost of moving to another host, and read the refund policy.</p>
+<h3>Can my developer pay the renewals for me?</h3>
+<p>Yes, if they invoice you and the accounts stay in your name. The risk is accounts held only by them: if they stop paying or stop working with you, the site goes with them.</p>
+
+<p>Want someone keeping an eye on all this? A <a href="/wordpress-maintenance/">WordPress maintenance</a> plan keeps your site updated, backed up and monitored every month, with your domain, hosting and WordPress accounts in your name throughout. If your accounts are tangled up with a previous developer, I can help you move them into your name when you <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for the job.</p>
 `,
   },
   {
@@ -30797,112 +31015,271 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   {
     slug: 'edit-website-content-wordpress',
     seoTitle: 'How to Edit Your WordPress Website Content Yourself',
-    title: 'How to Edit Your WordPress Website Content Yourself (Text, Images, Menus)',
-    description: 'Edit your WordPress content yourself: update pages in the block editor or Elementor, replace images, change menus, headers and footers, and do it safely.',
+    title: 'How to Edit Your WordPress Website Content Yourself: Text, Images, Menus and Pages in the Block Editor or Elementor',
+    description: 'Edit your WordPress website yourself: text, images, menus and pages in the block editor or Elementor, plus revisions, staff roles and what not to touch.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'elementor-developer', 'wordpress-maintenance'],
     body: `
-<p>One of WordPress's biggest advantages is that you can update your own website without calling a developer for every small change. Here's how to handle the most common updates safely.</p>
+<p>You can edit most of your WordPress website yourself: log in, open the page under Pages &gt; All Pages, and change text and images in the block editor or, if the page was built with Elementor, by clicking Edit with Elementor. Menus live under Appearance, headers and footers usually sit in a theme or Elementor template, and every saved change can be undone from the page's revisions. The skill is knowing which editor a page uses, and which settings to leave alone.</p>
+<p>That's how I hand sites over. In <a href="/wordpress-website-development/">WordPress website development</a> projects, I build with Elementor or the block editor and show you how to edit pages on a video call, so everyday changes don't need a developer. This guide is the written version of that walkthrough, and it works on most WordPress sites, whoever built them.</p>
+<p>If your site was built with Elementor and the job is a new layout, a Theme Builder template or a page that falls apart on mobile, that's better handled by an <a href="/elementor-developer/">Elementor developer</a>. Everything below is safe for a careful business owner or a member of staff.</p>
 
-<h2>First: know how your pages were built</h2>
-<p>Open a page in the dashboard (Pages → All Pages → Edit). If you see an "Edit with Elementor" button, the page uses Elementor. Otherwise it probably uses the WordPress block editor. Your developer can tell you which tools were used.</p>
+<h2>First, find out how your pages were built</h2>
+<p>WordPress sites are edited in one of a few ways, and many use more than one. Go to Pages &gt; All Pages and hover over a page title. What you see tells you which editor to use.</p>
+<table>
+  <thead><tr><th>What you see</th><th>The page uses</th><th>Where you edit</th></tr></thead>
+  <tbody>
+    <tr><td>An "Edit with Elementor" link under the title, or a button at the top of the editor</td><td>Elementor</td><td>The Elementor editor, a live preview with a panel of settings</td></tr>
+    <tr><td>Only "Edit", which opens a screen of blocks with a + button</td><td>The block editor (Gutenberg)</td><td>The block editor</td></tr>
+    <tr><td>A single box with a Visual and Text tab, like an old word processor</td><td>The Classic Editor plugin</td><td>That box</td></tr>
+    <tr><td>Boxes labelled Price, Timings or Qualifications rather than a page layout</td><td>Custom fields</td><td>The fields, which fill a fixed template</td></tr>
+  </tbody>
+</table>
+<p>If a page was built in Elementor, keep editing it in Elementor. Switching it back to the WordPress editor can leave you with a jumble of content, or replace the layout. The last row is common on sites with listings, team members or projects, where each item fills the same template.</p>
 
-<p>Text and image changes like the ones below are easy to make yourself. On an Elementor site, a new layout, a Theme Builder template or a page that looks wrong on mobile is a better job for an <a href="/elementor-developer/">Elementor developer</a>.</p>
-
-<h2>Editing text</h2>
-<ul>
-  <li><strong>Block editor:</strong> click on the text and type, then click Update</li>
-  <li><strong>Elementor:</strong> click "Edit with Elementor", click the text widget, edit in the left panel or directly on the page, then click Update</li>
-</ul>
-
-<h2>Replacing images</h2>
+<h2>Before you edit: a two-minute routine</h2>
 <ol>
-  <li>Prepare the image: right size, compressed, sensible file name; see <a href="/blog/prepare-photos-for-website/">preparing photos for your website</a></li>
-  <li>Click the image block or widget and choose to replace it</li>
-  <li>Upload the new image and add descriptive alt text</li>
-  <li>Update the page</li>
+  <li><strong>Log in with your own account,</strong> not a shared developer login. For content work, an Editor account is enough.</li>
+  <li><strong>Check there's a recent backup,</strong> especially before a big change. Your host's panel or backup plugin shows the last one.</li>
+  <li><strong>Make one change at a time,</strong> and preview it before saving.</li>
+  <li><strong>Check the result on your phone,</strong> because most visitors will see it there first.</li>
 </ol>
 
-<h2>Updating menus</h2>
-<p>Go to Appearance → Menus (or the Site Editor's navigation on block themes). Add pages, drag to reorder and save.</p>
-
-<h2>Headers and footers</h2>
-<p>Headers and footers are usually shared across the whole site. They may be edited in Elementor → Templates → Theme Builder, the theme customiser (Appearance → Customize) or the Site Editor. Changes apply to every page.</p>
-
-<h2>Adding a blog post</h2>
-<p>Posts → Add New. Add a title, write the content with headings, add a featured image and category, then publish. See <a href="/blog/write-blog-posts-that-rank/">writing blog posts that rank</a>.</p>
-
-<h2>SEO titles and descriptions</h2>
-<p>If the site uses an SEO plugin, scroll below the editor to set the page title and description; see <a href="/blog/write-meta-titles-descriptions/">meta titles and descriptions</a>.</p>
-
-<h2>Do it safely</h2>
+<h2>Editing text and headings</h2>
+<h3>In the block editor</h3>
+<ol>
+  <li>Open the page from Pages &gt; All Pages and click Edit.</li>
+  <li>Click into any paragraph or heading and type, just as in a document.</li>
+  <li>Use the List View (the icon with three lines in the top toolbar) to find a block quickly on a long page.</li>
+  <li>Click Preview to see the page as visitors will, then click Save. Older versions of WordPress label this button Update.</li>
+</ol>
+<h3>In Elementor</h3>
+<ol>
+  <li>Open the page and click Edit with Elementor.</li>
+  <li>Click the text on the page. You can type directly, or edit it in the panel on the left.</li>
+  <li>Switch between desktop, tablet and mobile views with the device icons. Some settings, such as font size and spacing, can differ by device, so check all three.</li>
+  <li>Click Publish or Update, depending on your Elementor version.</li>
+</ol>
+<h3>Text habits that keep pages tidy</h3>
 <ul>
-  <li>Use an <strong>Editor</strong> account for content work instead of an Administrator account; see <a href="/blog/wordpress-user-roles-explained/">user roles</a></li>
-  <li>Use revisions to go back if you make a mistake</li>
-  <li>Avoid changing layouts and global styles unless you're confident</li>
-  <li>Don't install plugins or edit code to make content changes</li>
+  <li><strong>Paste without formatting.</strong> Text copied from Word or an email brings hidden styles with it. Ctrl+Shift+V (Cmd+Shift+V on a Mac) pastes plain text in most browsers.</li>
+  <li><strong>Keep heading levels in order.</strong> Headings give the page its structure for visitors and Google. Change the words, not the level, unless you know why.</li>
 </ul>
 
-<h2>Change not showing?</h2>
-<p>Clear the cache; see <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>.</p>
+<h2>Replacing images and adding new ones</h2>
+<ol>
+  <li>Prepare the image first: a sensible width, compressed and with a descriptive file name. <a href="/blog/prepare-photos-for-website/">Preparing photos for your website</a> covers sizes and formats.</li>
+  <li>In the block editor, click the image and choose Replace in the toolbar. In Elementor, click the image widget and choose a new image in the panel.</li>
+  <li>Upload the new file, or pick one already in the Media Library.</li>
+  <li>Add alt text that says what the image shows, such as "Generator installed at a factory site". Skip it only for purely decorative images.</li>
+  <li>Preview on mobile, because a different shape of photo can crop or push content around.</li>
+</ol>
+<p>Don't delete images from Media &gt; Library just to tidy up. An image can be used on several pages, in a template or by a plugin, and deleting it leaves gaps you may not notice for weeks.</p>
 
-<h2>When to ask for help</h2>
-<p>New page layouts, design changes, features and anything involving code are better done by a developer. A <a href="/blog/monthly-website-maintenance-plan/">maintenance plan</a> often includes time for these.</p>
+<h2>Adding a new page</h2>
+<p>The safest way to add a page that matches the rest of the site is to start from an existing one:</p>
+<ul>
+  <li><strong>Block editor:</strong> copy all blocks from a similar page (the three-dot menu has a Copy all blocks option), paste them into a new page and change the content. If the site has patterns set up, insert those instead.</li>
+  <li><strong>Elementor:</strong> save a section or page as a template, then insert it into the new page from the template library.</li>
+</ul>
+<p>Then set three things before you publish: a short, readable URL slug in the page settings, a page title and description in your SEO plugin's box below the editor, and a link to the page from your menu or a related page so visitors and Google can find it.</p>
+
+<h2>Updating menus</h2>
+<ul>
+  <li><strong>Classic themes, including most Elementor sites:</strong> Appearance &gt; Menus. Tick a page in the left column, click Add to Menu, drag it into position (drag slightly right to make it a dropdown item) and click Save Menu.</li>
+  <li><strong>Block themes:</strong> Appearance &gt; Editor &gt; Navigation, where you edit the menu as a block.</li>
+  <li><strong>Elementor headers:</strong> the Nav Menu widget usually displays a menu you manage under Appearance &gt; Menus, so edit it there.</li>
+</ul>
+<p>Keep the main menu short and named in your customers' words, and check it on a phone after saving.</p>
+
+<h2>Headers, footers and site-wide sections</h2>
+<p>Anything that appears on every page is edited once, in one place, and the change applies everywhere. Where that place is depends on the setup:</p>
+<table>
+  <thead><tr><th>Setup</th><th>Where the header and footer live</th></tr></thead>
+  <tbody>
+    <tr><td>Elementor Pro</td><td>Templates &gt; Theme Builder, as header and footer templates</td></tr>
+    <tr><td>A classic theme such as Astra or OceanWP</td><td>Appearance &gt; Customize, often with a header and footer builder, plus Appearance &gt; Widgets for footer columns</td></tr>
+    <tr><td>A block theme</td><td>Appearance &gt; Editor, under template parts or patterns</td></tr>
+    <tr><td>A synced pattern or global template</td><td>Editing it in one place changes every page that uses it</td></tr>
+  </tbody>
+</table>
+<p>Phone numbers, addresses and opening hours often sit here, so update them carefully and check a few pages afterwards.</p>
+
+<h2>Revisions, undo and getting a page back</h2>
+<ul>
+  <li><strong>Undo while editing:</strong> Ctrl+Z (Cmd+Z) works in both editors. The block editor also has undo and redo arrows in the toolbar.</li>
+  <li><strong>Block editor revisions:</strong> once a page has been saved more than once, the page settings sidebar shows Revisions. It opens a screen comparing versions, with a Restore This Revision button.</li>
+  <li><strong>Elementor History:</strong> the History panel (Ctrl+Shift+H) has an Actions tab for undoing this session's changes and a Revisions tab for earlier saved versions.</li>
+  <li><strong>Deleted pages:</strong> Pages &gt; Trash keeps them for 30 days by default, with a Restore link.</li>
+  <li><strong>Anything bigger:</strong> restore from a backup; <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a> explains how, and why restoring a whole site is a last resort.</li>
+</ul>
+<p>Some hosts limit how many revisions are kept, so don't rely on them as your only safety net.</p>
+
+<h2>Giving staff access: which role to use</h2>
+<p>Everyone who edits the site should have their own login, so you can see who changed what and remove access when someone leaves.</p>
+<table>
+  <thead><tr><th>Person</th><th>Suggested role</th><th>What they can do</th></tr></thead>
+  <tbody>
+    <tr><td>Office staff updating pages and posts</td><td>Editor</td><td>Edit and publish all pages and posts, but not install plugins or change settings</td></tr>
+    <tr><td>A writer adding blog posts</td><td>Author</td><td>Write and publish their own posts only</td></tr>
+    <tr><td>A guest writer or intern</td><td>Contributor</td><td>Write drafts that someone else reviews and publishes</td></tr>
+    <tr><td>Staff managing orders in WooCommerce</td><td>Shop Manager</td><td>Products, orders and coupons, without site-wide settings</td></tr>
+    <tr><td>You, the owner</td><td>Administrator</td><td>Everything; keep this account for owner-level tasks</td></tr>
+  </tbody>
+</table>
+<p>On Elementor Pro sites, the Role Manager can limit a role to editing content only, so text and images can change while the layout stays put. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> goes through each role in detail.</p>
+
+<h2>What not to touch</h2>
+<ul>
+  <li><strong>Global colours, fonts and theme styles</strong> in Elementor's Site Settings or the Site Editor's Styles. One change restyles every page.</li>
+  <li><strong>Page URLs (slugs) of pages that already rank.</strong> Changing one breaks old links unless a redirect is added; see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs and changing them safely</a>.</li>
+  <li><strong>Settings &gt; Permalinks and the WordPress and Site Address fields</strong> under Settings &gt; General. A wrong value here can take the whole site offline.</li>
+  <li><strong>The Theme File Editor and Plugin File Editor,</strong> found under Appearance, Plugins or Tools depending on your theme. One typo can cause a critical error.</li>
+  <li><strong>Plugin and theme updates, or switching themes,</strong> unless you have a backup and know what to test afterwards.</li>
+  <li><strong>New plugins installed to make a content change.</strong> If something seems to need a plugin, ask first.</li>
+</ul>
+
+<h2>Bigger changes belong on staging</h2>
+<p>A new page layout, a redesigned homepage or a change to the header is safer on a staging copy: a private duplicate of your site where you can try changes and push them live once they look right. Many hosts offer one-click staging on some plans. <a href="/blog/staging-sites-explained/">Staging sites explained</a> shows how to set one up and what to check before pushing changes live.</p>
+<p>If a layout breaks after an update rather than after your own edit, the cause is usually a version mismatch or a cache; <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a> walks through the fixes.</p>
+
+<h2>Saved, but the change isn't showing?</h2>
+<p>Almost always a cache: your caching plugin, your host's cache, a CDN or your browser is still serving the old page. Clear the plugin's cache, then check in a private browser window. If it still isn't showing, <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a> goes through every cause, including editing the wrong template.</p>
+
+<h2>FAQs</h2>
+<h3>Can I edit my WordPress website without a developer?</h3>
+<p>Yes, for text, images, menus, blog posts and new pages based on existing ones. New layouts, design changes, new features and anything involving code are better done by a developer, or tried on staging first.</p>
+<h3>Why does my page look different in the editor and on the live site?</h3>
+<p>The editor can't always show everything the live page loads, such as some theme styles or scripts, and caching may be serving an older version. Preview the page, then check it in a private window after saving.</p>
+<h3>Should I use Elementor or the block editor for a new page?</h3>
+<p>Use whichever the rest of the site uses, so the new page matches and editing stays consistent. Mixing both is possible, but it makes the site harder to manage.</p>
+<h3>How do I undo a change after I've saved it?</h3>
+<p>Open the page's revisions in the block editor, or the Revisions tab of Elementor's History panel, and restore an earlier version. If revisions aren't available, restore the page from a backup.</p>
+<h3>Can I stop staff from breaking the design?</h3>
+<p>Give them the Editor role rather than Administrator, and on Elementor Pro sites use the Role Manager to limit them to editing content. Locked patterns, templates and custom fields also help, because staff fill in content rather than build layouts.</p>
+
+<p>Want a site that's easy to update from day one? My <a href="/wordpress-website-development/">WordPress website development</a> service builds pages with global styles and clean structure, and ends with a walkthrough on editing your own site. If you'd rather hand over changes altogether, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> includes small text, image and price updates each month.</p>
 `,
   },
   {
     slug: 'premium-wordpress-themes-guide',
-    seoTitle: 'Premium WordPress Themes: What to Know Before Buying',
-    title: 'Premium WordPress Themes: What to Know Before You Buy',
-    description: 'Premium WordPress themes: what to know before buying, from licences, updates and support to bundled plugins, speed trade-offs and choosing well.',
+    seoTitle: 'Premium WordPress Themes: What to Know Before You Buy',
+    title: 'Premium WordPress Themes: What to Know Before You Buy, From Licences and Bundled Plugins to Support, Demo Bloat and When a Custom Build Is Better',
+    description: 'Premium WordPress themes explained: where to buy, licences and updates, bundled plugins, demo bloat, support, nulled copies and when to go custom.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'elementor-developer', 'wordpress-maintenance'],
     body: `
-<p>Premium themes promise beautiful designs and hundreds of features for a one-time price. Some are excellent; others become slow, hard-to-maintain headaches. Knowing what you're buying saves money and trouble later.</p>
+<p>A premium WordPress theme is worth buying when it gives you features you genuinely need, from a developer who updates it regularly, under a licence that covers your site. Before you pay, check where you're buying from, how updates are delivered, which plugins come bundled, what the demo installs, how long support lasts and how hard it would be to move away later. Buy it in your business name, never as a "nulled" copy.</p>
+<p>The theme is one of the first decisions in any <a href="/wordpress-website-development/">WordPress website development</a> project. I can adapt a quality theme for speed and budget, or build a custom design from Figma or your references, and the right choice depends on the points below rather than on how good a demo looks.</p>
+<p>This guide is about the buying decision. If you're still comparing themes in general, start with <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>, which covers speed, builder compatibility and block versus classic themes.</p>
 
-<h2>What you pay for</h2>
-<ul>
-  <li><strong>A licence:</strong> usually for one website (check the terms if you build for clients or multiple sites)</li>
-  <li><strong>Updates:</strong> security and compatibility fixes, delivered through a licence key or updater plugin</li>
-  <li><strong>Support:</strong> often for a limited period, renewable for a fee</li>
-  <li><strong>Demos and features:</strong> ready-made designs and built-in options</li>
-</ul>
-
-<h2>Marketplace vs developer-sold themes</h2>
+<h2>What you actually pay for</h2>
+<p>The theme files are the smallest part of what a premium licence buys. The rest is a service that runs for as long as the licence or support period does:</p>
 <table>
-  <thead><tr><th></th><th>Marketplace themes (e.g. ThemeForest)</th><th>Developer-sold (e.g. Astra Pro, GeneratePress Premium, Kadence Pro)</th></tr></thead>
+  <thead><tr><th>Part of the purchase</th><th>What it means in practice</th><th>What to check</th></tr></thead>
   <tbody>
-    <tr><td>Pricing</td><td>One-time purchase, with support renewals</td><td>Usually yearly or lifetime licences</td></tr>
-    <tr><td>Approach</td><td>Often feature-packed "do everything" themes</td><td>Lightweight core with optional features</td></tr>
-    <tr><td>Updates</td><td>Via theme updater or marketplace plugin</td><td>Via the developer's licence system</td></tr>
+    <tr><td>Licence</td><td>Permission to use the theme on a set number of sites</td><td>One site or several, and whether client sites need their own licence</td></tr>
+    <tr><td>Updates</td><td>Security and compatibility fixes delivered to your dashboard</td><td>How updates arrive, and whether they stop when the licence lapses</td></tr>
+    <tr><td>Support</td><td>Help from the developer with bugs and setup questions</td><td>How long it lasts, what it covers and how quickly questions are answered</td></tr>
+    <tr><td>Demos and templates</td><td>Ready-made designs you can import</td><td>What each demo installs alongside the pages</td></tr>
+    <tr><td>Bundled plugins</td><td>Sliders, builders or add-ons included with the theme</td><td>Whether they update on their own or only through the theme</td></tr>
   </tbody>
 </table>
 
-<h2>Watch out for bundled plugins</h2>
-<p>Many premium themes bundle paid plugins like sliders or page builders. You usually can't register those bundled copies separately, so their updates depend on the theme author including them in theme updates. If the author is slow, you may run outdated, vulnerable plugins. See <a href="/blog/update-premium-theme-safely/">updating premium themes safely</a>.</p>
+<h2>Marketplace or the theme developer's own shop?</h2>
+<p>Premium themes are sold in two main ways. Both can be fine; they just work differently.</p>
+<table>
+  <thead><tr><th></th><th>Marketplaces, such as ThemeForest</th><th>The developer's own site, such as Astra Pro, GeneratePress Premium or Kadence Pro</th></tr></thead>
+  <tbody>
+    <tr><td>Typical model</td><td>A one-off purchase per site, with support for a limited period that can be extended</td><td>Usually a yearly licence, sometimes a lifetime option</td></tr>
+    <tr><td>Kind of theme</td><td>Often feature-packed themes with many demos, built for a niche or "do everything"</td><td>Often a lightweight free theme on WordPress.org plus a premium add-on plugin</td></tr>
+    <tr><td>Updates</td><td>Through the theme's registration screen or the marketplace's own plugin, using your purchase code</td><td>Through a licence key entered in the dashboard</td></tr>
+    <tr><td>Before you buy</td><td>Read the item's comments, changelog and support policy</td><td>Try the free version first and pay only for the add-on features you need</td></tr>
+  </tbody>
+</table>
+<p>Licence terms, support periods and plan names change, so read the current terms on the product page before buying. On a marketplace, check the author's other items and how they answer questions in the comments: that's the support you'll get.</p>
 
-<h2>Demo imports and bloat</h2>
-<p>Importing a full demo often installs many plugins, sample content and heavy features you'll never use. Import only the pages you need, and remove unused plugins and content afterwards.</p>
-
-<h2>Speed trade-offs</h2>
-<p>Feature-packed themes load more code on every page. Check a theme's demo on PageSpeed Insights (mobile) before buying, and prefer lightweight options for business sites; see <a href="/blog/how-to-choose-wordpress-theme/">choosing a WordPress theme</a>.</p>
-
-<h2>Lock-in</h2>
-<p>Some themes use their own page builders and shortcodes. If you switch themes later, content can break. Themes that work with standard tools like the block editor or Elementor are easier to move away from.</p>
-
-<h2>Checklist before buying</h2>
+<h2>Licences: the details that matter later</h2>
 <ul>
-  <li>Recent updates and an active changelog</li>
-  <li>Good reviews that mention support quality</li>
-  <li>Compatibility with the latest WordPress and your page builder</li>
-  <li>Speed of the demo on mobile</li>
-  <li>Clear licence terms</li>
+  <li><strong>Buy it in your business name, with a business email.</strong> A licence in a developer's account stops updating when they move on. The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists premium licences alongside your domain and hosting for this reason.</li>
+  <li><strong>Check how many sites it covers.</strong> A licence for one site doesn't cover a second brand or a client's site. Agencies should read the terms carefully before reusing a theme.</li>
+  <li><strong>Know what happens when it lapses.</strong> With most themes the site keeps working, but updates and support stop, and some premium features or the bundled plugins may stop updating with them.</li>
+  <li><strong>Keep the purchase record.</strong> Note the account, licence key or purchase code and the renewal date with your other website records.</li>
 </ul>
+<p>Much of the PHP code in WordPress themes is licensed under the GPL, which is why some sites resell copies. Those copies don't come with the developer's updates or support, and you're trusting someone else's version of the files. This is general information, not legal advice.</p>
 
-<h2>Never use nulled themes</h2>
-<p>Pirated copies often contain malware; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes</a>. Buy the licence in your business name; see the <a href="/blog/website-ownership-checklist/">ownership checklist</a>.</p>
+<h2>Bundled plugins: the hidden part of the price</h2>
+<p>Many marketplace themes include premium plugins, such as a slider, a page builder or a portfolio add-on, "free" with the theme. The catch is that the bundled copy usually can't be registered on its own, so it only updates when the theme author ships a new version with it inside. If the author is slow, your site runs an outdated plugin, and outdated plugins are a common way into WordPress sites.</p>
+<p>Before buying, look at the list of required and recommended plugins. Ask whether the theme still works if you don't install them, and whether you'd need a separate licence to keep any of them updated. <a href="/blog/update-premium-theme-safely/">How to update a premium theme safely</a> covers keeping bundled plugins current once the site is live.</p>
+
+<h2>Demo import: take only what you need</h2>
+<p>The one-click demo is the reason many people buy a theme, and a common reason premium-theme sites end up slow. A full import can install several plugins, dozens of pages and posts, sample images, widgets and menus, most of which you'll never use. A cleaner way:</p>
+<ol>
+  <li><strong>Import on a staging copy or a fresh install,</strong> never over a live site with real content.</li>
+  <li><strong>Choose a partial import</strong> if the theme offers one: just the pages and templates you need, without sample posts and products.</li>
+  <li><strong>Read the plugin list before you click Import,</strong> and untick anything you don't want.</li>
+  <li><strong>Delete what you don't use</strong> afterwards: sample pages, posts, images, menus and plugins that came with the demo.</li>
+  <li><strong>Replace demo images with your own,</strong> because stock demo photos may be licensed only for the preview, not your site.</li>
+</ol>
+<p><a href="/blog/staging-sites-explained/">Staging sites explained</a> shows how to set up a safe copy to experiment on.</p>
+
+<h2>Support: what to expect</h2>
+<p>Theme support usually covers bugs in the theme and questions about its own settings. It rarely covers customisation, problems caused by other plugins, or making the theme look like a different design. Before buying, check:</p>
+<ul>
+  <li>Where support happens: a ticket system, a forum or the marketplace comments.</li>
+  <li>Whether recent questions were answered, and by the developer rather than other users.</li>
+  <li>Whether the documentation is current, with screenshots that match the latest version.</li>
+  <li>How long support lasts, and whether renewing it is optional.</li>
+</ul>
+<p>A theme with an active, helpful support channel is a safer purchase than a slightly better-looking one whose author has gone quiet.</p>
+
+<h2>Questions to answer before you pay</h2>
+<ol>
+  <li>Am I buying from the developer or an established marketplace, not a download site?</li>
+  <li>Does the licence cover this site, and is it in my business's name?</li>
+  <li>When was the theme last updated, and is it tested with the current WordPress version?</li>
+  <li>Which plugins does it require, and how do the bundled ones get updated?</li>
+  <li>Does it work with the builder I'll use, whether Elementor or the block editor?</li>
+  <li>Will my content survive a theme change, or is it stored in the theme's own shortcodes, builder or post types?</li>
+  <li>How long does support last, and are recent questions being answered?</li>
+  <li>Is there a refund policy if it turns out not to fit?</li>
+</ol>
+<p>If you'll build with Elementor, <a href="/blog/best-theme-for-elementor/">choosing a theme for Elementor</a> compares the lightweight options that stay out of the builder's way.</p>
+
+<h2>Never use a nulled theme</h2>
+<p>A nulled theme is a premium theme with its licence check removed, shared free or cheaply on unofficial sites. They're a well-known route for malware, backdoors and SEO spam onto WordPress sites, and even a clean copy never receives security updates. If a previous developer installed one, replace it with a genuine licence. <a href="/blog/nulled-themes-plugins-risks/">The risks of nulled themes and plugins</a> explains how to check and clean up.</p>
+
+<h2>Premium theme, free theme or custom build?</h2>
+<table>
+  <thead><tr><th>Option</th><th>Suits</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Free theme from WordPress.org, plus a premium add-on if needed</td><td>Most business sites built with Elementor or the block editor</td><td>Paying for add-on features you won't use</td></tr>
+    <tr><td>Specialist premium theme</td><td>Directories, magazines or booking sites where the theme provides features you'd otherwise have to build</td><td>Bundled plugins, heavy demos and content locked to the theme</td></tr>
+    <tr><td>Multipurpose premium theme</td><td>Rarely a good fit for a typical business site</td><td>Loading code for features you never use, on every page</td></tr>
+    <tr><td>Custom design built in Elementor on a light theme</td><td>A distinct look that stays easy for you to edit</td><td>Too many add-ons and nested sections</td></tr>
+    <tr><td>Custom-coded theme</td><td>Unusual functionality, locked-down editing or strict performance targets</td><td>Lock-in if the code is undocumented</td></tr>
+  </tbody>
+</table>
+<p>A custom build tends to be the better choice when you'd spend weeks bending a theme to match a design, override most of its templates, or switch off most of its features. <a href="/blog/custom-wordpress-theme-development/">Custom WordPress theme development</a> explains when that extra build time pays off.</p>
+<p>Whichever you choose, put any code changes in a child theme rather than the theme's own files, so updates don't wipe them out; <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> shows how.</p>
+
+<h2>FAQs</h2>
+<h3>Are premium WordPress themes worth it?</h3>
+<p>Sometimes. A premium theme is worth paying for when it provides features you need, such as directory listings or a magazine layout, and comes with regular updates and responsive support. For a typical business site, a free lightweight theme with a page builder often does the job just as well.</p>
+<h3>Do I need to renew a premium theme licence?</h3>
+<p>Not to keep the site working, in most cases. Renewing keeps updates and support coming, and updates matter for security and compatibility with new WordPress and PHP versions. If you let it lapse, check regularly whether the developer has released security fixes.</p>
+<h3>Can I use one premium theme licence on several websites?</h3>
+<p>Only if the licence says so. Many licences cover a single site, while some plans cover several. Read the current terms, and buy a separate licence for each client site if you build for others.</p>
+<h3>What happens if the theme developer stops updating it?</h3>
+<p>The site keeps working at first, but over time it may clash with newer WordPress or PHP versions, and any security holes stay open. Plan a move to a maintained theme before that happens, testing it on a staging copy first.</p>
+<h3>Can I switch away from a premium theme later?</h3>
+<p>Yes, and your posts and pages stay. Anything the theme controlled, such as its own shortcodes, page layouts, sliders or portfolio items, may break or disappear. The less of your content depends on the theme, the easier the switch.</p>
+
+<p>Not sure whether a premium theme, a lightweight theme or a custom build suits your site? My <a href="/wordpress-website-development/">WordPress website development</a> service includes choosing the right base, with every licence bought in your name. If you're building with Elementor, my <a href="/elementor-developer/">Elementor development</a> service sets up the theme, global styles and templates properly.</p>
 `,
   },
   {
@@ -31022,71 +31399,130 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
   {
     slug: 'custom-wordpress-theme-development',
     seoTitle: 'Custom WordPress Theme Development: When and How',
-    title: 'Custom WordPress Theme Development: When You Need It and How It Works',
-    description: 'Custom WordPress theme development: when it beats premium themes and page builders, the process from design to handover, cost factors and avoiding lock-in.',
+    title: 'Custom WordPress Theme Development: What It Is, Block vs Classic vs Builder Builds, the Process, Cost Drivers and When It Is Worth It',
+    description: 'Custom WordPress theme development: block vs classic vs page builder builds, the process from design to theme, cost drivers and when it is worth it.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'figma-to-wordpress', 'wordpress-developer-for-agencies'],
     body: `
-<p>Most business websites are built with a ready-made theme plus a page builder, and that's often the right choice. But sometimes a custom theme, built specifically for your site and design, is the better investment. Here's how to tell, and what the process looks like when I build one.</p>
+<p>Custom WordPress theme development means writing a theme for one website, from its own design, instead of adapting a ready-made theme. It's worth it when the design is unusual, speed targets are strict, editors need structured fields they can't break, or the site has content types no theme handles well. For most small business sites, a lightweight theme with Elementor or the block editor is quicker, cheaper and easier for you to edit.</p>
+<p>In my <a href="/wordpress-website-development/">WordPress website development</a> work there are three ways to build a site: a quality theme adapted to your brand, a custom design built in Elementor, or a custom-coded theme. Every client site in my case studies is built with Elementor on a ready-made theme, which lets owners change layouts themselves. A custom theme is the right tool for a narrower set of projects, and this guide explains which.</p>
+<p>If you already have a design and are weighing up how to build it, <a href="/blog/figma-to-wordpress-approaches/">Figma to WordPress: choosing the build approach</a> compares the options side by side.</p>
 
-<h2>What a custom theme is</h2>
-<p>A theme controls how WordPress displays your content: layouts, templates, styles and editing options. A custom theme is written for one website, containing only what that site needs, instead of a general-purpose theme with hundreds of options you'll never use.</p>
-
-<h2>When a custom theme makes sense</h2>
+<h2>What a custom theme is, and what it isn't</h2>
+<p>A WordPress theme controls how content is displayed: templates for each type of page, the header and footer, styles, and the editing options for whoever updates the site. A custom theme does this for one site only. It has no demo library, no options panel with hundreds of settings and no code for features the site doesn't use.</p>
+<p>It's worth separating it from things that sound similar:</p>
 <ul>
-  <li>You have a unique design (often from a designer in Figma) that must be implemented precisely</li>
-  <li>Performance and Core Web Vitals are a top priority</li>
-  <li>Editors need a structured, hard-to-break editing experience</li>
-  <li>The site has custom content types like properties, courses, doctors or projects</li>
-  <li>It's a long-term site where maintainability matters more than build speed</li>
+  <li><strong>A child theme</strong> is a small layer of changes on top of an existing theme. It customises; it doesn't replace.</li>
+  <li><strong>A customised premium theme</strong> is a ready-made theme with your branding and settings. Quicker, but you inherit its code and limits; <a href="/blog/premium-wordpress-themes-guide/">what to know before buying a premium theme</a> covers the trade-offs.</li>
+  <li><strong>A custom design in a page builder</strong> looks bespoke, but the layout lives in Elementor and the theme underneath is a general one.</li>
+  <li><strong>A custom-coded website without WordPress</strong> is a different thing again; <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs a custom-coded website</a> explains the difference.</li>
 </ul>
 
-<h2>When it doesn't</h2>
-<ul>
-  <li>Tight budget or timeline</li>
-  <li>A simple brochure site a good lightweight theme handles well</li>
-  <li>You want to redesign layouts yourself often, where a page builder gives more freedom</li>
-</ul>
-<p>See <a href="/blog/figma-to-wordpress-approaches/">page builder vs block theme vs custom theme</a>.</p>
+<h2>Block theme, classic theme or builder-based build?</h2>
+<table>
+  <thead><tr><th></th><th>Custom block theme</th><th>Custom classic theme</th><th>Elementor on a light theme</th></tr></thead>
+  <tbody>
+    <tr><td>How it's built</td><td>HTML templates made of blocks, a theme.json file for styles, custom blocks and patterns</td><td>PHP templates, usually with custom fields for structured content</td><td>Layouts built visually, with global styles and Theme Builder templates</td></tr>
+    <tr><td>How editors work</td><td>The block editor and Site Editor, with locked patterns where needed</td><td>Filling in fields; they don't see the layout while editing</td><td>Drag and drop on a live preview</td></tr>
+    <tr><td>New layouts later</td><td>Often possible from patterns, without code</td><td>Usually need a developer</td><td>Easy to do yourself</td></tr>
+    <tr><td>Page weight</td><td>Light</td><td>Lightest, if written well</td><td>Heavier, kept lean by careful building</td></tr>
+    <tr><td>Plugin dependency</td><td>WordPress core</td><td>WordPress core, often plus a custom fields plugin</td><td>Elementor, usually Elementor Pro</td></tr>
+    <tr><td>Build time</td><td>Longer</td><td>Longest</td><td>Usually quickest</td></tr>
+  </tbody>
+</table>
+<p>Block themes are the direction WordPress itself is going, and for many custom builds they're now the natural starting point; <a href="/blog/block-themes-full-site-editing/">block themes and full site editing explained</a> covers theme.json, templates and patterns. Classic themes remain a solid choice for complex, data-heavy sites built around custom fields.</p>
 
-<h2>Classic theme or block theme?</h2>
-<ul>
-  <li><strong>Block themes</strong> use WordPress's Site Editor, theme.json and custom blocks, and are the modern direction; see <a href="/blog/block-themes-full-site-editing/">block themes explained</a></li>
-  <li><strong>Classic themes</strong> use PHP templates, often with custom fields for structured editing, and remain a solid choice for many custom builds</li>
-</ul>
+<h2>What's inside a custom block theme</h2>
+<p>A block theme is a small, readable set of files. A simplified example:</p>
+<pre><code>example-theme/
+  style.css          theme name, version and any extra CSS
+  theme.json         colours, fonts, spacing and block settings
+  functions.php      registers block styles, patterns and assets
+  templates/
+    index.html
+    page.html
+    single.html
+    archive.html
+    404.html
+  parts/
+    header.html
+    footer.html
+  patterns/
+    hero.php
+    service-card.php
+    call-to-action.php</code></pre>
+<p>The theme.json file is where a designer's colour and type styles become site-wide settings, so editors can be limited to on-brand colours and sizes. Patterns are the ready-made sections editors insert, and custom blocks cover anything the core blocks can't do; <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a> compares the ways to build them.</p>
 
-<h2>The development process</h2>
+<h2>The process, from design to live theme</h2>
 <ol>
-  <li><strong>Discovery:</strong> goals, content, pages, features and who will edit the site</li>
-  <li><strong>Design:</strong> a design system in Figma: colours, typography, components and page layouts</li>
-  <li><strong>Content modelling:</strong> custom post types, fields and templates; see <a href="/blog/custom-post-types-fields/">custom post types and fields</a></li>
-  <li><strong>Build:</strong> templates, reusable blocks or components, responsive styles and accessibility</li>
-  <li><strong>Editing experience:</strong> custom blocks or fields so editors can update content without breaking the design; see <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a></li>
-  <li><strong>Performance and SEO:</strong> lean code, optimised assets, schema and clean markup</li>
-  <li><strong>Testing:</strong> browsers, devices, accessibility and speed</li>
-  <li><strong>Handover:</strong> documentation and training</li>
+  <li><strong>Discovery.</strong> Goals, pages, features, integrations, and who will edit the site and how often.</li>
+  <li><strong>Content model.</strong> What kinds of content exist, such as services, projects, doctors or properties, and which details each needs. These become custom post types, taxonomies and fields; see <a href="/blog/custom-post-types-fields/">custom post types and custom fields</a>.</li>
+  <li><strong>Design.</strong> Usually in Figma: colour and text styles, components and a frame for each unique template, with mobile versions.</li>
+  <li><strong>Design system into code.</strong> Styles go into theme.json or a stylesheet, components become patterns, blocks or template parts.</li>
+  <li><strong>Templates.</strong> One per type of page: home, service, single post, archive, search, 404 and any custom content types.</li>
+  <li><strong>Editing experience.</strong> Locked patterns, custom blocks or field groups, so editors change content without breaking the layout.</li>
+  <li><strong>Performance and accessibility.</strong> Only the CSS and JavaScript each page needs, sized images, keyboard-friendly menus and readable contrast.</li>
+  <li><strong>Testing on staging.</strong> Real devices, current browsers, forms, speed and every template with real content.</li>
+  <li><strong>Handover.</strong> Documentation, a walkthrough for editors, access to the code repository and a full backup.</li>
 </ol>
 
-<h2>What affects the cost</h2>
+<h2>What drives the cost</h2>
+<p>For context, the typical freelance ranges in India in my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> are ₹15,000 to ₹40,000 for a small business site of five to eight pages and ₹35,000 to ₹80,000 for a larger business or B2B site. For the same pages and features, a custom-coded theme takes longer to build than an adapted theme or an Elementor build, so for the same scope it costs more than either. What moves the price:</p>
+<table>
+  <thead><tr><th>Cost driver</th><th>Why it matters</th></tr></thead>
+  <tbody>
+    <tr><td>Unique templates</td><td>Each one is designed, coded and tested separately; ten pages from one template cost far less than ten different layouts</td></tr>
+    <tr><td>Custom content types and fields</td><td>Each needs fields, templates, archives and often filters</td></tr>
+    <tr><td>Custom blocks and editing rules</td><td>A locked-down, hard-to-break editing experience takes deliberate work</td></tr>
+    <tr><td>Integrations</td><td>CRM, booking, payments or an external API each add build and testing time</td></tr>
+    <tr><td>Languages</td><td>A second language affects templates, menus and URLs</td></tr>
+    <tr><td>Content migration</td><td>Moving and restructuring content from an old site, with redirects</td></tr>
+    <tr><td>Design readiness</td><td>A complete Figma file with mobile frames costs less to build than gaps filled in during development</td></tr>
+  </tbody>
+</table>
+
+<h2>When a custom theme is worth it</h2>
 <ul>
-  <li>Number of unique templates and components</li>
-  <li>Custom content types and functionality</li>
-  <li>Integrations (CRM, booking, payments)</li>
-  <li>Multilingual requirements</li>
-  <li>Content migration</li>
+  <li>The design is distinctive and has to be implemented precisely, without fighting a theme's own styles.</li>
+  <li>Speed and Core Web Vitals are a hard requirement, for example on a content-heavy or ad-supported site.</li>
+  <li>Several people edit the site and it must stay consistent, so editing should be structured rather than free-form.</li>
+  <li>The site is built around structured content, such as listings, courses or projects, with filters and archives.</li>
+  <li>It's a long-term site where maintainability matters more than launch speed, and there's a developer for ongoing care.</li>
+</ul>
+<h3>When it isn't</h3>
+<ul>
+  <li>A brochure site of a few pages that a good lightweight theme handles well.</li>
+  <li>A tight budget or a fixed launch date that leaves no room for a longer build.</li>
+  <li>You want to redesign layouts yourself often; a page builder gives you more freedom.</li>
+  <li>Nobody will maintain the code after launch.</li>
 </ul>
 
-<h2>Avoiding lock-in</h2>
+<h2>Maintenance and avoiding lock-in</h2>
+<p>A custom theme has no vendor sending updates. That's an advantage, because there's no bundled plugin or theme update to break the site, and a responsibility, because someone has to keep the code working with new WordPress and PHP versions. Protect yourself with these rules:</p>
 <ul>
-  <li>Follow WordPress coding standards so any competent developer can maintain it</li>
-  <li>Keep content structures (post types, fields) in a plugin, not the theme, so content survives a future redesign</li>
-  <li>Use version control and document how things work</li>
-  <li>Make sure you own the code; see the <a href="/blog/website-ownership-checklist/">ownership checklist</a></li>
+  <li><strong>Keep functionality out of the theme.</strong> Custom post types, taxonomies and business logic belong in a plugin, so a future redesign doesn't take your content with it.</li>
+  <li><strong>Follow WordPress coding standards,</strong> so any competent developer can read and maintain the code.</li>
+  <li><strong>Use version control,</strong> with the repository in your account or handed over to you.</li>
+  <li><strong>Get documentation:</strong> what each template, pattern and field does, and how to deploy changes.</li>
+  <li><strong>Own the code.</strong> Your agreement should say who owns it once it's paid for.</li>
+  <li><strong>Review it once a year</strong> against the current WordPress and PHP versions, on a staging copy.</li>
 </ul>
 
-<h2>Need a custom theme?</h2>
-<p>I build custom WordPress themes from Figma designs for businesses and agencies. See <a href="/figma-to-wordpress/">Figma to WordPress</a> and <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>.</p>
+<h2>FAQs</h2>
+<h3>What is the difference between a custom theme and a child theme?</h3>
+<p>A child theme sits on top of an existing theme and changes parts of it. A custom theme is written from scratch for one site and doesn't depend on another theme.</p>
+<h3>Can I edit a website with a custom theme myself?</h3>
+<p>Yes, if it's built for that. Text, images and items such as projects or team members are edited through blocks, patterns or fields. Brand-new layouts usually need a developer, unless the theme provides patterns for them.</p>
+<h3>Is a custom WordPress theme faster than a premium theme?</h3>
+<p>It can be, because it loads only what the site needs. Speed still depends on hosting, images, plugins and third-party scripts, so a custom theme is a good start rather than a guarantee.</p>
+<h3>Should a new custom theme be a block theme or a classic theme?</h3>
+<p>A block theme suits sites edited mainly in the block editor and is where WordPress is heading. A classic theme with custom fields still suits complex, data-heavy sites. The editing needs and the content model decide.</p>
+<h3>Can another developer take over a custom theme?</h3>
+<p>Yes, if it follows WordPress standards, is documented and sits in version control. An undocumented theme with business logic mixed into templates is much harder to hand over.</p>
+
+<p>Have a design that needs to be built precisely, or a site that has outgrown its theme? My <a href="/wordpress-website-development/">WordPress website development</a> service covers all three approaches, and the aim is always the simplest one that does the job. Designers can send a file for <a href="/figma-to-wordpress/">Figma to WordPress</a>, and agencies can use my <a href="/wordpress-developer-for-agencies/">white-label WordPress development</a>.</p>
 `,
   },
   {
@@ -31635,122 +32071,274 @@ npm start</code></pre>
   },
   {
     slug: 'custom-post-types-fields',
-    seoTitle: 'Custom Post Types & Custom Fields in WordPress Explained',
-    title: 'Custom Post Types and Custom Fields: Structuring Content in WordPress',
-    description: 'Custom post types and custom fields in WordPress: manage projects, properties, courses and jobs as structured content, with ACF and best practices.',
+    seoTitle: 'Custom Post Types and Custom Fields in WordPress Explained',
+    title: 'Custom Post Types and Custom Fields in WordPress: Examples, ACF and Similar Tools, Registering Them in Code, Templates and SEO',
+    description: 'Custom post types and custom fields in WordPress explained with examples, ACF and similar tools, code to register a post type, templates and SEO.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'real-estate-website-design', 'website-for-schools-and-coaching'],
     body: `
-<p>Out of the box, WordPress has posts and pages. But many businesses need to manage other kinds of content, such as projects, doctors, properties, courses or job openings, each with specific details. Custom post types and custom fields make this clean and easy to manage.</p>
+<p>Custom post types and custom fields let WordPress manage content that isn't a blog post or a plain page. A custom post type adds a new kind of content, such as Properties, Courses, Doctors or Projects, with its own menu in the dashboard. Custom fields store the details every item needs, such as price, duration or qualifications, so staff fill in a form and the site displays each item the same way, while taxonomies group them by location, category or status.</p>
+<p>Structured content like this is part of <a href="/wordpress-website-development/">WordPress website development</a> whenever a business has more than a handful of similar items to show. On a <a href="/real-estate-website-design/">real estate website</a>, for example, projects and listings are managed from the dashboard, and you can add photos, prices and status (available, sold) at any time without touching a layout.</p>
+<p>This guide explains the building blocks for business owners, then shows developers how to register a post type in code. For large listing sites with search, maps and owner submissions, <a href="/blog/directory-website-wordpress/">directory websites on WordPress</a> goes further.</p>
 
 <h2>The three building blocks</h2>
-<ul>
-  <li><strong>Custom post types:</strong> new content types, like "Projects" or "Properties", with their own menu in the dashboard</li>
-  <li><strong>Custom taxonomies:</strong> ways to group them, like property type or course category</li>
-  <li><strong>Custom fields:</strong> structured details, like price, location, duration or qualifications</li>
-</ul>
-
-<h2>Examples</h2>
 <table>
-  <thead><tr><th>Business</th><th>Post type</th><th>Fields</th></tr></thead>
+  <thead><tr><th>Building block</th><th>What it is</th><th>Example</th></tr></thead>
   <tbody>
-    <tr><td>Real estate</td><td>Properties</td><td>Price, BHK, area, location, RERA number, floor plans</td></tr>
-    <tr><td>Clinic</td><td>Doctors</td><td>Qualifications, specialities, timings, photo</td></tr>
-    <tr><td>Coaching institute</td><td>Courses</td><td>Duration, fees, batch dates, eligibility</td></tr>
-    <tr><td>Agency or builder</td><td>Projects</td><td>Client, location, services, gallery</td></tr>
-    <tr><td>Any business</td><td>Jobs</td><td>Location, type, experience, deadline</td></tr>
+    <tr><td>Custom post type</td><td>A new kind of content with its own menu, URL and templates</td><td>Properties, at example.com/properties/sunrise-heights/</td></tr>
+    <tr><td>Taxonomy</td><td>A way to group items, which gets its own archive pages</td><td>Location (Pune, then Baner), status (ongoing, completed)</td></tr>
+    <tr><td>Custom field</td><td>A specific detail stored for each item</td><td>RERA number, carpet area, possession date, brochure PDF</td></tr>
   </tbody>
 </table>
+<p>WordPress already uses these internally. Posts and pages are post types, categories and tags are taxonomies, and WooCommerce products are a custom post type with their own fields for price, stock and SKU.</p>
 
-<h2>Why structure beats free-form pages</h2>
+<h2>Examples by type of business</h2>
+<table>
+  <thead><tr><th>Business</th><th>Post type</th><th>Taxonomies</th><th>Fields</th></tr></thead>
+  <tbody>
+    <tr><td>Builder or property agent</td><td>Properties or Projects</td><td>Location, status, configuration</td><td>RERA number, carpet area, price from, possession date, floor plans, brochure</td></tr>
+    <tr><td>Coaching institute or school</td><td>Courses</td><td>Subject, level, mode (online, classroom)</td><td>Duration, fees, next batch date, eligibility, syllabus PDF</td></tr>
+    <tr><td>Clinic or hospital</td><td>Doctors</td><td>Speciality, branch</td><td>Qualifications, registration details, OPD timings, languages spoken, photo</td></tr>
+    <tr><td>Interior studio, manufacturer or builder</td><td>Projects</td><td>Service, sector, city</td><td>Client, year, scope, gallery</td></tr>
+    <tr><td>Any growing business</td><td>Jobs</td><td>Department, location, type</td><td>Experience, closing date, how to apply</td></tr>
+  </tbody>
+</table>
+<p>A temple directory works the same way: on <a href="/work/our-temples/">Our Temples</a>, every temple listing follows one template, and visitors browse by state and by deity. Legal details such as RERA numbers or a doctor's registration are worth storing as fields, so they appear consistently on every page; check the current rules for your sector on what must be shown.</p>
+
+<h2>Why structured content beats free-form pages</h2>
 <ul>
-  <li><strong>Consistent design:</strong> every item uses the same template</li>
-  <li><strong>Easy editing:</strong> staff fill in clear fields instead of designing pages</li>
-  <li><strong>Filtering and search:</strong> by location, price, category</li>
-  <li><strong>SEO:</strong> clean URLs, archive pages and structured data from fields</li>
+  <li><strong>Consistent pages.</strong> Every item uses the same template, so nobody has to design a page to add a new course.</li>
+  <li><strong>Easier, safer editing.</strong> Staff fill in labelled fields; they can't accidentally break the layout.</li>
+  <li><strong>Filtering and search.</strong> Visitors can narrow by location, price or speciality because the data is structured.</li>
+  <li><strong>Lists that update themselves.</strong> The homepage can show the latest three projects, or every course with an upcoming batch, without manual edits.</li>
+  <li><strong>Better SEO.</strong> Clean URLs, archive pages for each group and structured data drawn from fields.</li>
 </ul>
 
-<h2>Tools</h2>
+<h2>Plan the content model before building</h2>
+<p>Most problems come from deciding fields on the fly. Before anything is built, write down for each content type:</p>
+<ol>
+  <li><strong>The URL pattern,</strong> such as /courses/course-name/.</li>
+  <li><strong>The groupings visitors will browse by,</strong> such as city or course level. These usually become taxonomies.</li>
+  <li><strong>The details every item needs,</strong> with a type for each: text, number, date, image, gallery, file or a choice from a list. Mark which are required. Anything visitors will filter by must be a taxonomy or a field, never a sentence buried in the description.</li>
+  <li><strong>Where items appear:</strong> their own page, an archive, the homepage, a related-items block.</li>
+  <li><strong>Who adds them,</strong> and which role they need.</li>
+</ol>
+<p>Taxonomy or field? A simple rule: use a taxonomy for values shared by many items that deserve their own listing page, such as a city, and a field for values unique to each item, such as a price or a phone number.</p>
+
+<h2>Tools for custom fields and post types</h2>
+<table>
+  <thead><tr><th>Approach</th><th>Good for</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>A custom fields plugin, such as Advanced Custom Fields (ACF), Meta Box or Pods</td><td>Building field groups through a visual interface; recent versions of some can also register post types and taxonomies</td><td>Some features sit in paid versions; the site then depends on the plugin</td></tr>
+    <tr><td>Code in a small site plugin</td><td>Post types and taxonomies that should never disappear, under version control</td><td>Needs a developer to change</td></tr>
+    <tr><td>The theme's own post types</td><td>Nothing long term</td><td>Content vanishes from the dashboard if you change theme</td></tr>
+  </tbody>
+</table>
+<p>A common, sensible combination is post types and taxonomies registered in code, with field groups built in a custom fields plugin. Elementor Pro's dynamic tags and the block editor can both display field values in templates; recent WordPress versions can also connect some core blocks to custom fields directly.</p>
+
+<h2>Registering a custom post type in code</h2>
+<p>For developers: this small plugin registers a Property post type and a Location taxonomy. It goes in its own folder under wp-content/plugins, not in the theme's functions.php, so the content survives a redesign.</p>
+<pre><code>&lt;?php
+/**
+ * Plugin Name: Example Site Content Types
+ * Description: Registers the Property post type and Location taxonomy for example.com.
+ */
+
+add_action( 'init', function () {
+    register_post_type( 'property', array(
+        'labels'       =&gt; array(
+            'name'          =&gt; 'Properties',
+            'singular_name' =&gt; 'Property',
+            'add_new_item'  =&gt; 'Add New Property',
+        ),
+        'public'       =&gt; true,
+        'has_archive'  =&gt; true,
+        'rewrite'      =&gt; array( 'slug' =&gt; 'properties' ),
+        'menu_icon'    =&gt; 'dashicons-building',
+        'supports'     =&gt; array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
+        'show_in_rest' =&gt; true,
+    ) );
+
+    register_taxonomy( 'property_location', 'property', array(
+        'labels'            =&gt; array(
+            'name'          =&gt; 'Locations',
+            'singular_name' =&gt; 'Location',
+        ),
+        'hierarchical'      =&gt; true,
+        'public'            =&gt; true,
+        'rewrite'           =&gt; array( 'slug' =&gt; 'location' ),
+        'show_in_rest'      =&gt; true,
+        'show_admin_column' =&gt; true,
+    ) );
+} );</code></pre>
+<p>A few notes. The show_in_rest setting makes the post type work in the block editor. Hierarchical taxonomies behave like categories, with parents and children; non-hierarchical ones behave like tags. After activating the plugin, go to Settings &gt; Permalinks and click Save Changes once, so WordPress picks up the new URLs. Choose post type and taxonomy names carefully at the start, because renaming them later means migrating content.</p>
+
+<h2>Templates: how items are displayed</h2>
 <ul>
-  <li><strong>Advanced Custom Fields (ACF)</strong> and Meta Box for fields</li>
-  <li><strong>Custom code</strong> registering post types in a small plugin</li>
-  <li><strong>Plugins with UIs</strong> for creating post types without code</li>
+  <li><strong>Classic themes:</strong> a single-property.php template for each item and archive-property.php for the listing, usually in a child theme or custom theme.</li>
+  <li><strong>Block themes:</strong> single and archive templates for the post type, created in the Site Editor or shipped with the theme, using the Query Loop block for lists.</li>
+  <li><strong>Elementor Pro:</strong> Theme Builder single and archive templates with display conditions for the post type, and dynamic tags pulling in each field.</li>
+</ul>
+<p>Design the template around the questions visitors ask, with the key facts near the top, and give editors a sensible fallback when an optional field is empty. Where editors also need flexible sections inside items, <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a> can give them on-brand components they can't break.</p>
+
+<h2>SEO for custom post types</h2>
+<ul>
+  <li><strong>Clean URLs.</strong> Use a readable rewrite slug, such as /courses/, and keep it stable.</li>
+  <li><strong>Sitemaps.</strong> Public post types are usually included in your SEO plugin's sitemap automatically; check that only the ones you want are listed.</li>
+  <li><strong>Indexing rules.</strong> SEO plugins let you set titles and index or noindex per post type and taxonomy. Thin taxonomy archives with one or two items are often better left out of Google; see <a href="/blog/category-tag-pages-seo/">SEO for category and tag pages</a>.</li>
+  <li><strong>Unique content.</strong> An item with only a few fields filled in can look thin. Add a genuine description, photos and answers to common questions.</li>
+  <li><strong>Structured data from fields.</strong> Where a suitable schema type exists, such as Course, JobPosting or Physician, fields can feed it automatically; see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</li>
 </ul>
 
-<h2>Best practices</h2>
+<h2>Common mistakes</h2>
 <ul>
-  <li>Register post types in a <strong>plugin, not the theme</strong>, so content doesn't disappear if you change themes</li>
-  <li>Plan fields before building: what information does every item need?</li>
-  <li>Create templates for single items and archives</li>
-  <li>Add schema markup using field data; see <a href="/blog/schema-markup-explained/">schema markup</a></li>
+  <li>Registering post types in the theme, so a theme change hides every item.</li>
+  <li>Using a post type when a category of ordinary posts would do. A handful of items rarely needs one.</li>
+  <li>Typing filterable details into the description instead of fields.</li>
+  <li>Installing several plugins that each register their own post types for similar content.</li>
+  <li>Forgetting archive pages, so items have no listing page to link from.</li>
 </ul>
+<p>If you're weighing up whether a feature needs a plugin or custom code, <a href="/blog/custom-wordpress-plugin-development/">custom WordPress plugin development</a> explains when a bespoke plugin is worth building.</p>
 
-<h2>Directory-style sites</h2>
-<p>For large listing sites, see <a href="/blog/directory-website-wordpress/">building a directory website on WordPress</a>.</p>
+<h2>FAQs</h2>
+<h3>What is the difference between a custom post type and a page?</h3>
+<p>A page is a single piece of content with a free layout. A custom post type is a group of similar items, each with the same fields and template, plus an archive that lists them.</p>
+<h3>Do I need a plugin to create custom post types?</h3>
+<p>No. They can be registered with a few lines of code in a site plugin, as shown above. Plugins such as ACF, Meta Box or Pods make it possible without code, which suits sites without a developer on hand.</p>
+<h3>What happens to custom post types if I change my theme?</h3>
+<p>If they're registered in a plugin, nothing: the content stays, though the new theme needs templates for them. If they're registered in the old theme, the items disappear from the dashboard until the code is moved into a plugin.</p>
+<h3>Are custom post types good for SEO?</h3>
+<p>They help when they create useful, distinct pages with clean URLs, archives and structured data. They don't help when they create many near-empty pages, so plan which archives Google should index.</p>
+<h3>Can I add custom fields to WooCommerce products?</h3>
+<p>Yes. Products are a custom post type, so extra details such as fabric, warranty or compatible models can be added as fields and shown on the product page.</p>
 
-<p>Need structured content set up properly? It's part of <a href="/blog/custom-wordpress-theme-development/">custom theme development</a> and <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a>.</p>
+<p>Planning a site with properties, courses, doctors or projects? My <a href="/wordpress-website-development/">WordPress website development</a> service can set up the content model, templates and editing screens so your team adds items without touching a layout. For property businesses, see <a href="/real-estate-website-design/">real estate website design</a>, or <a href="/blog/custom-wordpress-theme-development/">custom WordPress theme development</a> if the whole site is built around structured content.</p>
 `,
   },
   {
     slug: 'plugin-vs-custom-code-wordpress',
     seoTitle: 'Plugin or Custom Code in WordPress? How to Decide',
-    title: 'Plugin or Custom Code? How to Decide What to Use in WordPress',
-    description: 'Plugin or custom code in WordPress? Choose between a plugin, snippet or custom plugin by weighing maintenance, security, performance and cost.',
+    title: 'Plugin or Custom Code in WordPress? When to Use a Plugin, a Code Snippet or a Custom Plugin, With a Decision Table',
+    description: 'Plugin or custom code in WordPress? When to use a plugin, a snippet or a custom plugin, weighing security, speed, upkeep and cost, with a decision table.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
-<p>Every new feature on a WordPress site raises the same question: install a plugin, or write some code? Too many plugins slow a site and increase security risk; too much hastily written custom code creates a maintenance headache. Here's how I decide.</p>
+<p>Use an existing plugin when the need is common, such as forms, SEO, backups, caching or e-commerce, and a reputable, actively maintained plugin does it well; use a small code snippet when the change is a few lines and a plugin would load far more than you need. Build a custom plugin when the feature is specific to your business, connects to your own systems, or would otherwise need several plugins glued together. The deciding questions are who will maintain it, what it loads, and what happens if you remove it.</p>
+<p>It's a question that comes up on every <a href="/wordpress-website-development/">WordPress website development</a> project, and getting it right keeps a site lighter, safer and cheaper to look after. Too many plugins add weight and more code to keep updated; too much hasty custom code leaves a site only one person understands.</p>
+<p>This guide covers the decision. If you already know you need something bespoke, <a href="/blog/custom-wordpress-plugin-development/">custom WordPress plugin development</a> explains how one is planned and built.</p>
 
-<h2>Use an existing plugin when</h2>
-<ul>
-  <li>The need is common: SEO, forms, backups, caching, security, e-commerce</li>
-  <li>A reputable, well-maintained plugin does it well</li>
-  <li>The plugin's features match your needs without heavy extras</li>
-</ul>
-<p>See <a href="/blog/essential-wordpress-plugins-business/">essential plugins</a> and how to choose them safely.</p>
-
-<h2>Use a small code snippet when</h2>
-<ul>
-  <li>It's a tiny tweak: changing a label, disabling a feature, adding a tracking tag</li>
-  <li>A plugin would add a lot of code for one small job</li>
-</ul>
-
-<h2>Build a custom plugin when</h2>
-<ul>
-  <li>The feature is specific to your business</li>
-  <li>You'd otherwise need several plugins glued together</li>
-  <li>You need integration with your own systems</li>
-</ul>
-<p>See <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a>.</p>
-
-<h2>Where custom code should live</h2>
+<h2>The three options at a glance</h2>
 <table>
-  <thead><tr><th>Location</th><th>Use for</th></tr></thead>
+  <thead><tr><th>Option</th><th>Good for</th><th>Who maintains it</th><th>Main risk</th></tr></thead>
   <tbody>
-    <tr><td>A site-specific custom plugin</td><td>Functionality that should keep working if the theme changes</td></tr>
-    <tr><td>A child theme</td><td>Design-related code and template changes; see <a href="/blog/wordpress-child-theme-explained/">child themes</a></td></tr>
-    <tr><td>A code snippets plugin</td><td>Small snippets managed from the dashboard, if you're careful</td></tr>
-    <tr><td>The parent theme's files</td><td>Never; updates overwrite them</td></tr>
+    <tr><td>Existing plugin</td><td>Common needs: forms, SEO, backups, caching, security, payments, bookings</td><td>The plugin's developer, through updates</td><td>Bloat, abandoned plugins, yearly licences, features you don't need</td></tr>
+    <tr><td>Code snippet</td><td>Small tweaks: changing a label, switching off a feature, one filter or action</td><td>Whoever added it, which is often nobody</td><td>Snippets scattered around and forgotten, or pasted from untrusted tutorials</td></tr>
+    <tr><td>Custom plugin</td><td>Business-specific features, integrations, custom rules and data</td><td>The developer who built it, or another competent one</td><td>Poorly written or undocumented code that ties you to one person</td></tr>
   </tbody>
 </table>
 
-<p>Whichever home you choose, most custom code plugs into WordPress through hooks; see <a href="/blog/wordpress-hooks-actions-filters/">WordPress hooks, actions and filters explained</a>.</p>
+<h2>When an existing plugin is the right answer</h2>
+<ul>
+  <li>The need is common and well solved, such as a contact form, an XML sitemap, backups or a payment gateway.</li>
+  <li>The plugin is actively maintained: recent updates, tested with the current WordPress version and answered support questions.</li>
+  <li>Its features match your needs without dragging in a lot you won't use.</li>
+  <li>It handles something risky, such as payments or security, where a widely used, well-tested plugin is safer than new code.</li>
+</ul>
+<p>Choose carefully, though. A plugin from an established developer with a track record is a very different thing from one with a few hundred installs and no updates for a long time. <a href="/blog/essential-wordpress-plugins-business/">Essential WordPress plugins for a business website</a> covers how to vet one, and which categories most sites need.</p>
 
-<h2>Questions to ask</h2>
-<ol>
-  <li><strong>Maintenance:</strong> who will update this when WordPress or PHP changes?</li>
-  <li><strong>Security:</strong> is the plugin actively maintained, and is custom code written to standard?</li>
-  <li><strong>Performance:</strong> what does it load, and on which pages?</li>
-  <li><strong>Cost over time:</strong> licence fees versus development and upkeep</li>
-  <li><strong>Exit:</strong> what happens to content and settings if you remove it?</li>
-</ol>
+<h2>When a small snippet is better</h2>
+<p>Some jobs need a few lines, not a plugin. WordPress is built to be changed through hooks, small connection points where code can add or alter behaviour; <a href="/blog/wordpress-hooks-actions-filters/">WordPress hooks explained</a> covers how they work. Two typical examples:</p>
+<pre><code>// Show a shorter excerpt on blog listing pages
+add_filter( 'excerpt_length', function () {
+    return 30;
+} );
 
-<h2>Plugin count isn't the whole story</h2>
-<p>Ten lightweight, well-coded plugins can be faster and safer than three bloated ones. Quality matters more than the number; see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</p>
+// Hide the admin toolbar on the front end for users who can't edit posts
+add_action( 'after_setup_theme', function () {
+    if ( ! current_user_can( 'edit_posts' ) ) {
+        show_admin_bar( false );
+    }
+} );</code></pre>
+<p>Other good snippet jobs: changing a button label, adding a field to an email, switching off comments site-wide, or adjusting what a plugin outputs through a filter it provides. If a plugin would load scripts on every page to do what five lines can, the snippet usually wins.</p>
+<p>Snippets go wrong when they're copied from old tutorials without understanding them, pasted into the theme editor on a live site, or never written down. One typo in PHP can take the whole site down with a critical error; <a href="/blog/fix-wordpress-critical-error/">fixing the WordPress critical error</a> shows how to recover if it happens.</p>
 
-<p>Not sure which way to go? Ask me; it's the kind of decision I make every day in <a href="/wordpress-website-development/">WordPress development</a>.</p>
+<h2>Where custom code should live</h2>
+<table>
+  <thead><tr><th>Location</th><th>Use it for</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>A site-specific plugin</td><td>Functionality that must keep working if the theme changes</td><td>The safest home; easy to keep in version control</td></tr>
+    <tr><td>A code snippets plugin</td><td>A few small snippets managed from the dashboard</td><td>Convenient; some check code before activating it. Label every snippet and limit who has Administrator access</td></tr>
+    <tr><td>A child theme's functions.php</td><td>Code that only makes sense with this design</td><td>Lost if you change themes; see <a href="/blog/wordpress-child-theme-explained/">child themes explained</a></td></tr>
+    <tr><td>wp-config.php</td><td>Configuration constants only</td><td>Not for features</td></tr>
+    <tr><td>The parent theme or a plugin's own files</td><td>Never</td><td>The next update overwrites the change</td></tr>
+  </tbody>
+</table>
+<p>A useful rule: functionality belongs in a plugin, design belongs in the theme. Booking logic or custom fields built into a theme's functions.php mean a redesign has to rebuild the feature.</p>
+
+<h2>When a custom plugin makes sense</h2>
+<ul>
+  <li><strong>The feature is specific to your business,</strong> such as a quote calculator built on your own pricing rules, or a dealer locator with your own data.</li>
+  <li><strong>You need an integration</strong> with your CRM, ERP, courier or an internal system, and no maintained plugin covers it properly.</li>
+  <li><strong>You'd otherwise combine several plugins</strong> and still not get quite what you need.</li>
+  <li><strong>An existing plugin is heavy</strong> and you use one small part of it on every page load.</li>
+  <li><strong>The data must outlive the theme,</strong> such as custom post types and their fields.</li>
+</ul>
+<p>Often the cheapest custom plugin is an add-on to a plugin you already use, such as extending a form plugin or WooCommerce through their own hooks, rather than a standalone build.</p>
+
+<h2>Weighing it up: five questions</h2>
+<h3>1. Who will maintain it?</h3>
+<p>A plugin is maintained by its developer for as long as they choose to. Custom code is maintained by you, or whoever you pay, through every WordPress and PHP update. Neither is free of upkeep.</p>
+<h3>2. Is it secure?</h3>
+<p>For a plugin, look at its update history and whether the developer fixes reported problems. For custom code, ask whether it checks user permissions, validates what users submit and escapes what it outputs. Never use nulled premium plugins; <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a> explains why.</p>
+<h3>3. What does it load, and where?</h3>
+<p>The number of plugins matters less than what each one does. Ten well-coded plugins can be lighter than three bloated ones that load scripts on every page. <a href="/blog/why-is-my-wordpress-site-slow/">Why WordPress sites get slow</a> shows how to find the heavy ones.</p>
+<h3>4. What does it cost over time?</h3>
+<p>Compare yearly licence renewals for a premium plugin with the one-off cost of development plus occasional upkeep for custom code. The cheaper option on day one isn't always cheaper over several years.</p>
+<h3>5. What happens if you remove it?</h3>
+<p>Some plugins leave shortcodes in your content, data in their own database tables, or settings that only they understand. Custom code with your data stored in standard WordPress structures is easier to move away from.</p>
+
+<h2>A decision table</h2>
+<table>
+  <thead><tr><th>You need to</th><th>Usually the right choice</th></tr></thead>
+  <tbody>
+    <tr><td>Add a contact or quote form</td><td>A well-maintained form plugin</td></tr>
+    <tr><td>Change the text on a WooCommerce button</td><td>A snippet using the filter WooCommerce provides</td></tr>
+    <tr><td>Send form enquiries to your CRM</td><td>The form plugin's own integration if it has one; otherwise a small custom plugin</td></tr>
+    <tr><td>Take appointment bookings</td><td>An established booking plugin</td></tr>
+    <tr><td>Calculate prices from your own rules</td><td>A custom plugin, or an add-on to WooCommerce</td></tr>
+    <tr><td>Switch off comments site-wide</td><td>A snippet, or a small, single-purpose plugin</td></tr>
+    <tr><td>Redirect old URLs after a redesign</td><td>Your SEO plugin's redirect feature or a redirect plugin</td></tr>
+    <tr><td>Add properties, courses or team members as their own content type</td><td>Post types registered in a site plugin, with a custom fields plugin for the fields</td></tr>
+    <tr><td>Connect to a courier or ERP system</td><td>A maintained integration plugin if one exists; otherwise a custom plugin</td></tr>
+  </tbody>
+</table>
+
+<h2>Red flags on an existing site</h2>
+<ul>
+  <li>Dozens of plugins, several doing the same job, and nobody sure which are still needed.</li>
+  <li>Plugins with no updates for a long time, or premium plugins with expired licences.</li>
+  <li>Code added directly to the parent theme or to a plugin's files.</li>
+  <li>A snippets plugin full of unlabelled snippets nobody can explain.</li>
+  <li>Problems that appear after every update, a sign of conflicts; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">finding and fixing plugin conflicts</a>.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>How many plugins is too many for WordPress?</h3>
+<p>There's no fixed number. What matters is quality: whether each plugin is maintained, needed, and light on the pages where it loads. Remove any you don't use rather than just deactivating them.</p>
+<h3>Is custom code more secure than a plugin?</h3>
+<p>Not automatically. Well-written custom code has a small attack surface, but badly written code can be worse than a popular, well-tested plugin. Security depends on who wrote it and how it's maintained.</p>
+<h3>Where should I add code snippets in WordPress?</h3>
+<p>In a site-specific plugin or a code snippets plugin, not the parent theme. Use a child theme only for code tied to the design, and test any snippet on a staging copy first.</p>
+<h3>Will a custom plugin break when WordPress updates?</h3>
+<p>Well-built plugins that use WordPress's own functions and hooks rarely do, but they still need checking after major WordPress and PHP updates, just like any plugin.</p>
+<h3>Should I replace plugins with custom code to speed up my site?</h3>
+<p>Only where a plugin is genuinely heavy for what it does. Usually the bigger speed wins are hosting, caching, images and third-party scripts. Measure first, then replace the plugins that actually cost time.</p>
+
+<p>Not sure whether a feature needs a plugin, a snippet or something custom? I can help you choose as part of <a href="/wordpress-website-development/">WordPress website development</a>. For an existing site, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> starts with an inventory of every plugin and whether its developer still maintains it, then keeps them updated and tested.</p>
 `,
   },
   {
@@ -39012,89 +39600,121 @@ npm start</code></pre>
   {
     slug: 'wordpress-vs-google-sites',
     seoTitle: 'WordPress vs Google Sites: Is a Free Website Enough?',
-    title: 'WordPress vs Google Sites: Is a Free Website Good Enough for Your Business?',
-    description: 'Google Sites and other free builders vs a WordPress website: the limits of free, professionalism, SEO, when a free site is genuinely enough and when to upgrade.',
+    title: 'WordPress vs Google Sites: Is a Free Website Good Enough for Your Business? Features, SEO, Custom Domains, Forms and Cost Compared',
+    description: 'WordPress vs Google Sites for a business: features, SEO, custom domains, forms, design control and cost, when free is enough and how to move later.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-for-startups'],
     body: `
-<p>Google Sites costs nothing, takes an afternoon to learn and is hosted by Google. Free plans on other website builders make similar promises. So it's fair to ask why any small business should pay for a WordPress website. The honest answer: sometimes free is enough, and sometimes it quietly costs you customers. Here's how to tell which situation you're in.</p>
+<p>Google Sites is good enough when you need a simple, free page quickly: an event, an internal team site, a test of a business idea or a stopgap while a proper website is built. It isn't built to be a business website that wins enquiries from Google, because it has no blog, no payments or bookings, basic forms and very little SEO control. WordPress costs money to build and run, but gives you full control over design, content, SEO and features, and it grows with the business.</p>
+<p>If your website needs to bring in customers rather than just confirm you exist, that's what <a href="/wordpress-website-development/">WordPress website development</a> is for: service pages, forms, WhatsApp, SEO foundations and a site you can edit yourself after launch. If you're just getting going, <a href="/website-for-startups/">websites for startups</a> covers launching the essentials first.</p>
+<p>Comparing other platforms too? <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a> covers the paid website builders, including payments and GST for Indian businesses.</p>
+
+<h2>WordPress vs Google Sites at a glance</h2>
+<table>
+  <thead><tr><th></th><th>Google Sites</th><th>WordPress</th></tr></thead>
+  <tbody>
+    <tr><td>Cost</td><td>Free with a Google account; a custom domain is extra</td><td>Domain, hosting and usually a developer's time</td></tr>
+    <tr><td>Address</td><td>sites.google.com/view/yourbusiness unless you connect a domain</td><td>Your own domain</td></tr>
+    <tr><td>Design</td><td>A handful of themes and layouts</td><td>Fully flexible, from a theme or a custom design</td></tr>
+    <tr><td>Blog</td><td>None</td><td>Built in, with categories, authors and feeds</td></tr>
+    <tr><td>Forms</td><td>Embedded Google Forms</td><td>Forms that match your design and send leads to email, WhatsApp, a CRM or a Google Sheet</td></tr>
+    <tr><td>Payments and bookings</td><td>Only through links or embeds from other tools</td><td>Plugins for UPI and card gateways, bookings and online stores</td></tr>
+    <tr><td>SEO control</td><td>Minimal</td><td>Full: titles, descriptions, URLs, schema, sitemaps</td></tr>
+    <tr><td>Editing</td><td>Very easy, with several people at once</td><td>Easy once set up, with a builder or the block editor</td></tr>
+    <tr><td>Maintenance</td><td>None; Google handles hosting and security</td><td>Updates, backups and security, by you or a maintenance plan</td></tr>
+  </tbody>
+</table>
 
 <h2>What Google Sites does well</h2>
 <p>Google Sites is a simple drag-and-drop page builder that comes free with a Google account. Its strengths are real:</p>
 <ul>
   <li><strong>No cost</strong> for the builder or hosting, and no servers to manage</li>
-  <li><strong>Easy editing</strong>, with several people able to work on the same site</li>
+  <li><strong>Easy editing,</strong> with several people able to work on the same site, much like a Google Doc</li>
   <li><strong>Google integrations:</strong> embed Docs, Sheets, Slides, Forms, Maps, Calendar and YouTube videos</li>
+  <li><strong>Mobile layouts</strong> handled automatically</li>
   <li><strong>Security and uptime</strong> handled by Google</li>
 </ul>
-<p>That makes it good for internal team sites, event pages, project pages, class information and quick one-page summaries. It was never designed to be a full business website platform, and that's where the gaps appear.</p>
+<p>That makes it good for internal team sites, event and workshop pages, project pages, school or class information and quick one-page summaries. It was never designed to be a full business website platform, and that's where the gaps appear.</p>
 
-<h2>Where free builders fall short</h2>
-<p>Google Sites and the free plans of other builders share similar limits:</p>
+<h2>Where Google Sites falls short for a business</h2>
 <ul>
-  <li><strong>Design:</strong> a handful of themes and layouts, so your site looks like many others</li>
-  <li><strong>No proper blog:</strong> Google Sites has no posts, categories or feeds, which makes regular content hard</li>
-  <li><strong>No payments or bookings:</strong> you can link out or embed other tools, but nothing is built in</li>
-  <li><strong>Basic forms:</strong> usually an embedded Google Form rather than a form that fits your design and feeds your CRM</li>
-  <li><strong>Limited tracking:</strong> a basic analytics connection, with little room for tracking calls, WhatsApp clicks or form submissions properly</li>
-  <li><strong>Free plans elsewhere</strong> typically put you on the platform's subdomain, show their branding or ads, and cap features to encourage an upgrade</li>
+  <li><strong>Design:</strong> a handful of themes and layouts, so your site looks like many others, with little control over fonts, spacing or the header.</li>
+  <li><strong>No blog:</strong> there are no posts, categories or feeds, which makes regular content hard.</li>
+  <li><strong>No payments or bookings:</strong> you can link to a payment page from your gateway or show a UPI QR code, but there's no cart, checkout or booking calendar.</li>
+  <li><strong>Basic forms:</strong> usually an embedded Google Form, which looks different from your site and can't easily feed your CRM or send a WhatsApp alert.</li>
+  <li><strong>Limited tracking:</strong> you can connect Google Analytics, but tracking calls, WhatsApp clicks and form submissions properly is hard.</li>
+  <li><strong>No plugins:</strong> anything Google hasn't built in has to be embedded from another service.</li>
 </ul>
+<p>Free plans on other website builders share similar limits, and usually add the platform's branding or a subdomain on top.</p>
 
-<h2>Professionalism and trust</h2>
-<p>A new Google Sites site lives at an address like sites.google.com/view/yourbusiness, and free plans on other builders use similar subdomains. On a visiting card or a quotation, that looks temporary. Customers comparing you with two or three competitors notice these details, and so do B2B buyers, investors and job applicants.</p>
-<p>At a minimum, connect your own domain (Google Sites supports custom domains; follow Google's current help pages for the steps) and use business email rather than a free address. See <a href="/blog/business-email-options/">business email options</a>.</p>
-<p>There's also platform risk. Free products change or disappear. Google itself switched off the free websites it used to offer through Business Profiles in 2024, and businesses relying on them had to find another home quickly.</p>
+<h2>Custom domain, email and looking professional</h2>
+<p>A new Google Sites site lives at an address like sites.google.com/view/yourbusiness. On a visiting card or a quotation, that looks temporary, and customers comparing you with two or three competitors notice. B2B buyers, investors and job applicants do too.</p>
+<p>Google Sites does support custom domains. At the time of writing, Google's instructions map an address such as www.yourbusiness.com to the site after you verify the domain, with the bare domain forwarded at your registrar; follow Google's current help pages, as the steps change. Use business email on the same domain rather than a free address; <a href="/blog/business-email-options/">business email options</a> compares the choices.</p>
+<p>There's also platform risk. Free products change or disappear. Google switched off the free websites it used to offer through Business Profiles in 2024, and businesses relying on them had to find another home quickly. Owning your domain is what lets you move without starting from zero.</p>
 
 <h2>SEO: can a Google Sites page rank?</h2>
 <p>Yes, Google can index a Google Sites page, and it may show up when someone searches your exact business name. Being a Google product gives it no ranking advantage, though.</p>
-<p>Ranking for searches like "physiotherapist in Indore" or "packaging supplier in Ahmedabad" usually needs more than a free builder offers:</p>
+<p>Ranking for searches like "physiotherapist in Indore" or "packaging supplier in Ahmedabad" usually needs more than Google Sites offers:</p>
 <ul>
-  <li>Separate, detailed pages for each service and area</li>
-  <li>Control over page titles, meta descriptions and heading structure</li>
-  <li>Structured data (schema) that tells Google your address, hours and services</li>
+  <li>Separate, detailed pages for each service and area, with control over each page's title and description</li>
+  <li>Clean, readable URLs you choose, and redirects when they change</li>
+  <li>Structured data (schema) telling Google your address, hours and services</li>
   <li>A blog or resources section that answers customer questions</li>
-  <li>Fast, mobile-friendly pages you can tune</li>
+  <li>Fast, mobile-friendly pages you can tune, and an XML sitemap you control</li>
 </ul>
-<p>For local businesses, your Google Business Profile often matters more than your website for "near me" searches, and it's free. Start with the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+<p>For local businesses, your Google Business Profile often matters more than your website for "near me" searches, and it's free whichever platform you choose. Start with the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
 
-<h2>Side-by-side</h2>
-<table>
-  <thead><tr><th></th><th>Google Sites / free builders</th><th>WordPress</th></tr></thead>
-  <tbody>
-    <tr><td><strong>Cost</strong></td><td>Free (custom domain extra)</td><td>Hosting, domain and usually a developer</td></tr>
-    <tr><td><strong>Address</strong></td><td>Platform subdomain unless you connect a domain</td><td>Your own domain</td></tr>
-    <tr><td><strong>Design</strong></td><td>Limited themes</td><td>Fully flexible</td></tr>
-    <tr><td><strong>Blog</strong></td><td>None or basic</td><td>Built in</td></tr>
-    <tr><td><strong>Payments and bookings</strong></td><td>Only via outside links or embeds</td><td>Plugins for UPI, gateways and bookings</td></tr>
-    <tr><td><strong>SEO control</strong></td><td>Minimal</td><td>Full</td></tr>
-    <tr><td><strong>Maintenance</strong></td><td>None needed</td><td>Updates, backups and security</td></tr>
-  </tbody>
-</table>
+<h2>What drives the cost of each</h2>
+<p>Google Sites costs nothing beyond the domain if you connect one. The real cost is your time, and what the limits cost you in missed enquiries.</p>
+<p>With WordPress, you pay for a domain and hosting every year, the build, any premium plugin licences, and maintenance, whether you do it yourself or pay someone. The build is the biggest part, and it moves with the number of pages, the design, features such as payments or bookings, and how much content help you need. For a sense of scale, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> gives typical freelance ranges in India, such as ₹15,000 to ₹40,000 for a small business site of five to eight pages, and the <a href="/website-cost-calculator/">website cost calculator</a> gives a quick estimate for your own list of pages.</p>
 
-<h2>When free is genuinely enough</h2>
+<h2>When Google Sites is genuinely enough</h2>
 <ul>
   <li>You're testing a business idea and need something live this week</li>
-  <li>You need a simple page for an event, a workshop or an internal team</li>
+  <li>You need a simple page for an event, a workshop, a class or an internal team</li>
   <li>You're a small local shop that gets customers through walk-ins, Google Maps and WhatsApp</li>
   <li>You need a stopgap while a proper website is being built</li>
 </ul>
-<p>If you go free, connect your own domain from day one, register that domain in your own account, and put your phone number and WhatsApp link on every page. For shops, see <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website?</a></p>
+<p>If you go with Google Sites, connect your own domain from day one, register that domain in your own account, and put your phone number and WhatsApp link on every page. For shops, see <a href="/blog/does-a-local-shop-need-a-website/">does a local shop need a website?</a></p>
 
 <h2>When it's time for WordPress</h2>
 <ul>
   <li>Your website should bring in enquiries, not just confirm you exist</li>
   <li>You need service pages, location pages or a blog to rank on Google</li>
-  <li>You want online payments, appointment booking or product catalogues</li>
-  <li>Forms should go to your CRM, a Google Sheet or WhatsApp automatically</li>
+  <li>You want online payments, appointment booking or a product catalogue</li>
+  <li>Forms should reach your CRM, a Google Sheet or WhatsApp automatically, with tracking</li>
   <li>You sell to businesses, or need to look credible to investors and partners</li>
+  <li>You want the design to look like your brand, not a template</li>
 </ul>
-<p>A small, well-built WordPress site doesn't have to be expensive. You can start with five or six pages and add more as the business grows. Get a ballpark with the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+<p>A WordPress site doesn't have to start big. Five or six well-written pages can launch first, with more added as the business grows.</p>
 
-<h2>Moving from Google Sites to WordPress</h2>
-<p>There's no direct export from Google Sites to WordPress, so content is copied across and pages are rebuilt, usually with better structure along the way. If your site used your own domain, you simply point it to the new hosting. If it only lived on a sites.google.com address, you can't redirect those old URLs, which is one more reason to use your own domain from the start.</p>
+<h2>Moving from Google Sites to WordPress later</h2>
+<p>There's no direct export from Google Sites to WordPress, so content is copied across and pages are rebuilt, usually with better structure along the way. The steps:</p>
+<ol>
+  <li><strong>List every page</strong> and its current address.</li>
+  <li><strong>Collect the content:</strong> copy the text, and gather the original image files rather than saving the resized versions from the pages.</li>
+  <li><strong>Build and test the new site</strong> on a staging link, with improved page titles, descriptions and service pages.</li>
+  <li><strong>Point your domain</strong> to the new hosting, removing the Google Sites mapping. If the domain stays the same, visitors and Google arrive at the new site.</li>
+  <li><strong>Redirect old page addresses</strong> that change to their new equivalents, so links and rankings carry across; <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a> covers the details.</li>
+  <li><strong>Update everywhere the site is linked,</strong> starting with your Google Business Profile, then submit the new sitemap in Search Console.</li>
+</ol>
+<p>If the old site only lived on a sites.google.com address, you can't redirect those URLs. Instead, add a clear "we've moved" link to the new site and keep it up for a while. That's one more reason to use your own domain from the start.</p>
 
-<p>Ready for a website that grows with your business? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/website-for-startups/">websites for startups</a> if you're just getting going.</p>
+<h2>FAQs</h2>
+<h3>Is Google Sites free for businesses?</h3>
+<p>Yes, it's free with a Google account, and also included in Google Workspace. A custom domain is a separate cost, paid to your domain registrar.</p>
+<h3>Can I use my own domain with Google Sites?</h3>
+<p>Yes. You verify that you own the domain and map it to the site, following Google's current instructions. It's worth doing from the start, because it makes a later move much easier.</p>
+<h3>Is Google Sites good for SEO?</h3>
+<p>It can be indexed and may rank for your business name, but it offers very little control over titles, descriptions, URLs and structured data, and has no blog. For competitive local or service searches, it's usually at a disadvantage.</p>
+<h3>Can I sell products or take payments on Google Sites?</h3>
+<p>Not directly. You can link to a payment page from your gateway, embed a form or show a UPI QR code, but there's no cart, checkout or order management.</p>
+<h3>Can I move my Google Sites website to WordPress?</h3>
+<p>Yes, by rebuilding it. Content is copied across, your domain is pointed to the new hosting, and old addresses are redirected where they change.</p>
+
+<p>Ready for a website that grows with your business? <a href="/wordpress-website-development/">WordPress website development</a> gives you a fast, SEO-ready site on hosting in your name, which you can edit yourself. Starting from scratch? See <a href="/website-for-startups/">websites for startups</a>.</p>
 `,
   },
   {
@@ -40069,60 +40689,84 @@ npm start</code></pre>
   {
     slug: 'website-handover-checklist',
     seoTitle: 'Website Handover Checklist: What to Get at Project End',
-    title: 'Website Handover Checklist: What You Should Receive When Your Project Ends',
-    description: 'What to receive when your website project is handed over: logins, documentation, training, licences, backups, source files and clear support terms.',
+    title: 'Website Handover Checklist: What You Should Receive When Your Website Project Ends, From Logins and Backups to Documentation, Licences and Training',
+    description: 'Website handover checklist: the logins, admin users, backups, documentation, licences, training, source files and analytics to receive at launch.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-maintenance'],
     body: `
-<p>The last day of a website project is easy to rush. The site is live, everyone is relieved and the final invoice goes out. But what you receive at handover decides how easily you can run, update and, if needed, move your website for years to come. Here's what a proper handover should include, whoever builds your site.</p>
-<p>This is different from making sure accounts are registered in your name in the first place; for that, see the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>. Handover is the moment you confirm you've actually received everything.</p>
+<p>At the end of a website project you should receive working access to every account the site depends on, your own WordPress Administrator login, a full backup stored somewhere you control, a short handover document, training on everyday edits, every licence in your business name, the design and source files, and analytics connected to your own Google account. Check each item yourself before you sign off. What you receive now decides how easily you can run, update and, if needed, move your website for years.</p>
+<p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, the handover is part of the job: a walkthrough on a video call, your logins confirmed, a full backup taken at launch, and any temporary access I used removed unless you keep me on for maintenance. This checklist is written for any project, though, whoever builds your site.</p>
+<p>Handover is different from making sure accounts are registered in your name in the first place; for that, see the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>. Handover is the moment you confirm you've actually received everything.</p>
 
 <h2>Agree the handover before work starts</h2>
 <p>The easiest time to agree what you'll receive is before the project begins. Add a short handover list to your quote or contract, alongside payment terms and ownership; the <a href="/blog/website-design-contract-checklist/">website design contract checklist</a> covers what else to agree. Then, on handover day, you're ticking off a list rather than negotiating.</p>
 
-<h2>Logins and access</h2>
+<h2>The handover checklist at a glance</h2>
+<table>
+  <thead><tr><th>Item</th><th>What you should receive</th><th>How to check</th></tr></thead>
+  <tbody>
+    <tr><td>Accounts</td><td>Access to the domain, DNS, hosting, email and connected services, in your name</td><td>Log in to each one yourself</td></tr>
+    <tr><td>WordPress admin</td><td>Your own Administrator account with your email</td><td>Users &gt; All Users, filtered by Administrator</td></tr>
+    <tr><td>Backups</td><td>A launch backup in your storage, plus a schedule</td><td>Find the file and the schedule; ask when a restore was last tested</td></tr>
+    <tr><td>Documentation</td><td>A short note on how the site is built and run</td><td>Read it: would a new developer understand the site from it?</td></tr>
+    <tr><td>Licences</td><td>Premium themes and plugins licensed to you, with renewal dates</td><td>The licence screens in WordPress, or the vendor accounts</td></tr>
+    <tr><td>Training</td><td>A walkthrough, ideally recorded, and short written notes</td><td>Make a small change yourself while the developer watches</td></tr>
+    <tr><td>Source files</td><td>Design files, logos, original media and any custom code</td><td>Open them; check the code repository if one was used</td></tr>
+    <tr><td>Analytics</td><td>Search Console, GA4 and Business Profile under your Google account</td><td>Check your role in each: Owner or Administrator</td></tr>
+    <tr><td>Support terms</td><td>What's covered after launch, for how long and how to ask</td><td>It's written down, not just agreed on a call</td></tr>
+  </tbody>
+</table>
+
+<h2>Accounts and logins</h2>
 <p>You should receive, or already hold, working access to everything the site depends on:</p>
 <ul>
-  <li>Your own WordPress Administrator account, not a shared developer login</li>
-  <li>Domain registrar and DNS, including Cloudflare or similar if used</li>
+  <li>Domain registrar and DNS, including Cloudflare or a similar service if used</li>
   <li>The hosting control panel, which gives SFTP and database access</li>
   <li>Business email admin</li>
-  <li>Google Analytics, Search Console, Tag Manager and Google Business Profile, with you as owner</li>
   <li>Payment gateway, courier, CRM, booking and email marketing accounts connected to the site</li>
-  <li>Any service used to send website emails (SMTP) or block spam</li>
+  <li>Any service used to send website emails (SMTP) or to block spam on forms</li>
 </ul>
-<p>Credentials should be shared securely, ideally through a password manager, not pasted into a WhatsApp chat or email. Log in to each one yourself before you sign off, then change the passwords. If your developer will keep maintaining the site, they should have their own separate account that you can remove later.</p>
+<p>Credentials should be shared securely, ideally through a password manager, not pasted into a WhatsApp chat or email. Log in to each one yourself before you sign off, then change any password that was shared.</p>
+
+<h2>WordPress admin users</h2>
+<ul>
+  <li><strong>Your own Administrator account,</strong> with your business email, not a shared "admin" login.</li>
+  <li><strong>The developer's own account,</strong> separate from yours. If they're maintaining the site, it stays; if not, change it to a lower role or delete it, attributing their content to your account.</li>
+  <li><strong>Staff accounts with the right roles,</strong> usually Editor for people who update content.</li>
+  <li><strong>No unknown users.</strong> Remove test accounts and anyone you don't recognise.</li>
+  <li><strong>Two-factor authentication</strong> on every Administrator account, where the site supports it.</li>
+</ul>
+
+<h2>Backups</h2>
+<ul>
+  <li>A full backup, files and database, taken at launch and stored somewhere you control, not only on the same server</li>
+  <li>Automatic backups scheduled, with the frequency and retention written down</li>
+  <li>At least one test restore done, so you know the backups work</li>
+  <li>Instructions for restoring, or the name of whoever will do it</li>
+</ul>
+<p>The <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> explains how to check each of these.</p>
 
 <h2>Documentation</h2>
-<p>A short handover document saves hours for you and for any developer who works on the site later. It doesn't need to be long, but it should cover:</p>
-<ul>
-  <li>How the site is built: theme, child theme, page builder or block editor</li>
-  <li>A list of plugins and what each one does</li>
-  <li>Where any custom code lives and what it does</li>
-  <li>How forms work: where entries are stored and who receives the emails</li>
-  <li>Integrations such as payments, WhatsApp, CRM or booking, and which account each is connected to</li>
-  <li>Caching, security and scheduled tasks worth knowing about</li>
-  <li>Known limitations and settings not to change</li>
-</ul>
+<p>A short handover document saves hours for you and for any developer who works on the site later. It doesn't need to be long. Something like this is enough:</p>
+<pre><code>WEBSITE HANDOVER NOTE: example.com
+Built with:        WordPress, theme, child theme (yes/no), Elementor or block editor
+Plugins:           name, what it does, free or licensed, whose licence
+Custom code:       where it lives and what it does
+Forms:             each form, who receives the emails, where entries are stored
+Integrations:      payments, WhatsApp, CRM, booking, and the account each uses
+Backups:           tool, schedule, where copies are stored, how to restore
+Caching and CDN:   what is used, how to clear it
+Scheduled tasks:   reminders, imports, feeds
+Do not change:     settings that would break something
+Known limitations: anything left for later
+Support:           who to contact, and on what terms</code></pre>
 <p>Passwords and API keys don't belong in this document. Keep them in your password manager instead.</p>
-
-<h2>Training</h2>
-<p>You should be able to handle everyday updates without calling your developer. A good handover includes a live walkthrough, ideally recorded, showing how to:</p>
-<ul>
-  <li>Edit text and images on pages</li>
-  <li>Add blog posts, team members, projects or products</li>
-  <li>Manage orders, bookings or enquiries, if your site takes them</li>
-  <li>Update menus and the footer</li>
-  <li>Check form entries and where they go</li>
-</ul>
-<p>Short written notes or screen recordings are worth asking for too. They're useful when a new staff member takes over the website.</p>
 
 <h2>Licences and renewals</h2>
 <table>
-  <thead>
-    <tr><th>Item</th><th>What to confirm</th></tr>
-  </thead>
+  <thead><tr><th>Item</th><th>What to confirm</th></tr></thead>
   <tbody>
     <tr><td>Premium theme and page builder</td><td>Whose account holds the licence, the licence key and the renewal date</td></tr>
     <tr><td>Premium plugins</td><td>The same; a lapsed licence usually means no more updates</td></tr>
@@ -40131,25 +40775,45 @@ npm start</code></pre>
     <tr><td>Other paid tools</td><td>Plans and who is billed for forms, booking, email or chat services</td></tr>
   </tbody>
 </table>
-<p>If a licence stays in your developer's name, get that in writing, along with what happens if you part ways.</p>
+<p>If a licence stays in your developer's name, get that in writing, along with what happens if you part ways. Put every renewal date in a shared calendar; the <a href="/blog/domain-hosting-renewal-checklist/">domain, hosting, email and licence renewals checklist</a> helps you track them.</p>
 
-<h2>Backups and source files</h2>
+<h2>Training and a guide for your team</h2>
+<p>You should be able to handle everyday updates without calling your developer. A good handover includes a live walkthrough, ideally recorded, showing how to:</p>
 <ul>
-  <li>A full backup (files and database) taken at launch and stored somewhere you control</li>
-  <li>Automatic backups scheduled, with at least one test restore done; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a></li>
+  <li>Edit text and images on pages</li>
+  <li>Add blog posts, team members, projects or products</li>
+  <li>Update menus and the footer</li>
+  <li>Manage orders, bookings or enquiries, if your site takes them</li>
+  <li>Check form entries and where they go</li>
+  <li>Get a page back from its revisions after a mistake</li>
+</ul>
+<p>Short written notes or screen recordings are useful when a new staff member takes over the website. <a href="/blog/edit-website-content-wordpress/">How to edit your WordPress website content yourself</a> makes a good written companion to the walkthrough.</p>
+
+<h2>Source files and design assets</h2>
+<ul>
   <li>Design files, such as Figma files, if a designer was involved</li>
   <li>Logo files in vector formats, plus brand colours and fonts</li>
   <li>Original photos and videos, not only the compressed versions on the site</li>
   <li>Custom theme or plugin code, and access to the code repository if one was used</li>
-  <li>Details of any staging site and how to use it</li>
+  <li>Details of any staging site, how to use it, and confirmation that it's hidden from Google</li>
 </ul>
+
+<h2>Analytics, Search Console and tracking</h2>
+<ul>
+  <li><strong>Search Console</strong> verified, with your business Google account as Owner and the sitemap submitted.</li>
+  <li><strong>Google Analytics 4</strong> under your account, with you as Administrator, and form submissions, calls and WhatsApp clicks tracked as key events where they matter.</li>
+  <li><strong>Google Tag Manager,</strong> if used, with your account as Administrator.</li>
+  <li><strong>Google Business Profile</strong> linked to the new site, with you as primary owner.</li>
+  <li><strong>Search engine visibility switched on.</strong> Under Settings &gt; Reading, the option that discourages search engines should be unticked on the live site. It's often left on after a build.</li>
+</ul>
+<p><a href="/blog/setup-google-analytics-search-console/">Setting up GA4 and Search Console</a> explains each step if anything is missing.</p>
 
 <h2>Support terms after launch</h2>
 <p>Launch is rarely the end of small fixes. Before you sign off, be clear about:</p>
 <ul>
   <li>How long the free bug-fix period lasts and what it covers</li>
   <li>What counts as a bug and what counts as a new request; see <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></li>
-  <li>How to report problems and typical response times</li>
+  <li>How to report problems and the expected response</li>
   <li>Who is responsible for WordPress, theme and plugin updates from now on</li>
   <li>Maintenance plan options, if you want ongoing help</li>
   <li>What happens in an emergency, such as the site going down or being hacked</li>
@@ -40158,16 +40822,33 @@ npm start</code></pre>
 <h2>Handover sign-off checklist</h2>
 <ol>
   <li>I've logged in to WordPress, hosting, domain, email and Google accounts myself</li>
-  <li>Passwords are changed and stored in our password manager</li>
+  <li>Shared passwords are changed and stored in our password manager</li>
+  <li>The developer's access is removed or set to the role we agreed</li>
   <li>I have the handover document and the training recording</li>
   <li>Licences and renewal dates are listed, with the account each one is under</li>
-  <li>A launch backup is stored in our own storage</li>
-  <li>Design files, brand assets and original media have been delivered</li>
+  <li>A launch backup is stored in our own storage, and scheduled backups are running</li>
+  <li>Design files, brand assets, original media and any custom code have been delivered</li>
+  <li>Search Console and GA4 are under our account, and search engines aren't blocked</li>
   <li>Support terms are agreed in writing</li>
 </ol>
 <p>Only when every item is ticked is the project truly finished.</p>
 
-<p>Want a developer who hands everything over properly, or ongoing help after launch? See <a href="/hire-wordpress-developer/">hire a WordPress developer</a> or <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+<h2>If your developer won't hand things over</h2>
+<p>Most handover gaps are oversights, and a polite list of what's missing usually fixes them. If a previous developer has gone quiet or refuses, start with the domain, because whoever controls it controls the website and email. <a href="/blog/regain-website-access-old-developer/">Regaining control from a previous developer</a> walks through the recovery, step by step.</p>
+
+<h2>FAQs</h2>
+<h3>What should a website handover include?</h3>
+<p>Access to every account, your own Administrator login, a launch backup you control, documentation, training, licences in your name, design and source files, analytics under your Google account and written support terms.</p>
+<h3>Should my developer keep admin access after launch?</h3>
+<p>Only if they're maintaining the site. Otherwise, change their account to a lower role or remove it, and invite them back when you need them.</p>
+<h3>Do I get the source code of my WordPress website?</h3>
+<p>You should. A full backup contains the WordPress files, theme, plugins and database, and any custom theme or plugin code should be handed over, with repository access if one was used. Who owns the code should be set out in your agreement.</p>
+<h3>What if my developer bought the theme or plugin licences?</h3>
+<p>Ask for them to be transferred to your account if the vendor allows it, or buy your own licence and add it to the site. Otherwise updates can stop when the developer's licence lapses.</p>
+<h3>How should passwords be shared at handover?</h3>
+<p>Through a password manager's sharing feature, not email or WhatsApp. Once you've logged in yourself, change any password that was shared.</p>
+
+<p>Want a developer who hands everything over properly? When you <a href="/hire-wordpress-developer/">hire a WordPress developer</a> through Samverse, you get your own administrator login, a walkthrough, a launch backup and every account in your name. For ongoing help after launch, see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
