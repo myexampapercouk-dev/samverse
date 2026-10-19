@@ -17543,54 +17543,117 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'does-a-local-shop-need-a-website',
-    seoTitle: 'Does a Local Shop Need a Website?',
-    title: 'Does a Local Shop Need a Website? An Honest Answer',
-    description: 'Does a local shop need a website, or are Google Business Profile and WhatsApp enough? When a simple site helps, what to include and how to keep costs low.',
+    seoTitle: 'Does a Local Shop Need a Website? An Honest Answer for India',
+    title: 'Does a Local Shop Need a Website? Google Business Profile vs a Website vs Social Pages, What a Simple Shop Site Needs, and What It Costs',
+    description: 'Does a local shop need a website, or are Google Business Profile and WhatsApp enough? When a site helps, what it needs and what it costs in India.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Growth',
     related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
     body: `
-<p>Many local shops, such as stationery, electronics, sweets, hardware and clothing stores, run well on walk-ins, WhatsApp and word of mouth. So do they need a website? Honestly: not always first, but often it's worth it.</p>
+<p>Not always, and not first. For most local shops in India, a complete Google Business Profile, a WhatsApp Business account and genuine Google reviews come first, because that's where people searching "near me" and on Maps find you. A website becomes worth it when you want to be found for specific products or brands, take orders for delivery or pickup, sell to offices, schools or contractors, or look more established than the shop down the road. When you do add one, a simple site of one to a few pages is usually enough to start.</p>
+<p>When a shop is ready for a site, <a href="/wordpress-website-development/">WordPress website development</a> covers exactly what this needs: a fast, mobile-friendly site with contact forms and a WhatsApp button, on-page SEO and schema, and Search Console and Analytics set up, which you can update yourself. If you only need one page for a festival offer or an ad campaign, <a href="/landing-page-design/">landing page design</a> is the smaller job.</p>
+<p>The steps below assume a shop with a physical address. For the full local search picture, see <a href="/blog/local-seo-guide-small-business-india/">local SEO for small businesses in India</a>.</p>
+
+<h2>Google Business Profile vs a website vs social pages</h2>
+<table>
+  <thead><tr><th></th><th>Good for</th><th>Can't do well</th><th>Who controls it</th></tr></thead>
+  <tbody>
+    <tr><td>Google Business Profile</td><td>Appearing on Maps and in "near me" searches, hours, directions, reviews and photos</td><td>Detail on products and brands, bulk enquiries, anything beyond the basics</td><td>You, within Google's rules</td></tr>
+    <tr><td>WhatsApp Business</td><td>Conversations, a product catalogue, quick replies and order updates with existing customers</td><td>Being found by people who don't know you yet</td><td>You, within WhatsApp's rules</td></tr>
+    <tr><td>Instagram or Facebook page</td><td>Showing new stock, offers and the feel of the shop to followers</td><td>Showing up in Google searches for products; older posts get buried</td><td>The platform</td></tr>
+    <tr><td>Directory and marketplace listings</td><td>Extra visibility and citations</td><td>Standing out from competitors listed on the same page</td><td>The platform</td></tr>
+    <tr><td>Your own website</td><td>Products, brands, services, bulk enquiries, trust, and searches beyond "near me"</td><td>Bringing visitors on its own without local SEO or a Business Profile</td><td>You, fully</td></tr>
+  </tbody>
+</table>
+<p>They aren't alternatives. The profile gets you found nearby, WhatsApp handles the conversation, social pages keep regulars interested, and a website is the one place you fully control that ties them together.</p>
 
 <h2>Start with the free essentials</h2>
 <ol>
-  <li><strong>Google Business Profile:</strong> the most important step for local shops. Accurate hours, photos, products and reviews help people find you on Maps. See the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</li>
-  <li><strong>WhatsApp Business:</strong> catalogue, quick replies and a business profile</li>
-  <li><strong>Reviews:</strong> ask happy customers; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a></li>
+  <li><strong>Google Business Profile.</strong> Claim and verify it in your business's own Google account, choose the most specific category, and keep the hours, phone number, photos and products accurate. The <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers every setting.</li>
+  <li><strong>WhatsApp Business.</strong> Set up the business profile, a catalogue of your main products, quick replies for common questions, and greeting and away messages for when the shop is closed.</li>
+  <li><strong>Reviews.</strong> Ask happy customers at the counter or in a WhatsApp follow-up, and reply to every review. <a href="/blog/get-more-google-reviews/">How to get more Google reviews</a> shows how to ask without breaking Google's rules.</li>
+  <li><strong>The same details everywhere.</strong> Your shop name, address and phone number should match exactly on your profile, signboard, bills and social pages.</li>
 </ol>
+<p>Google used to offer free simple websites built from a Business Profile, but it shut them down in 2024. If your shop relied on one, the profile still works, but that site no longer exists.</p>
 
 <h2>When a website makes a real difference</h2>
 <ul>
-  <li>You want to appear for searches beyond "near me", such as specific products or brands</li>
-  <li>You take orders for delivery or pickup</li>
-  <li>You sell to businesses, schools or offices (bulk or repeat orders)</li>
-  <li>You have many products or brands to show</li>
-  <li>You want to look more established than competitors</li>
-  <li>You plan to open more branches or sell online later</li>
+  <li><strong>People search for products and brands, not just shops.</strong> Someone searching for a specific brand of school shoes, a model of inverter battery or a type of sweet box won't find that detail on a Business Profile. A website with a page for each product range or brand can appear for those searches.</li>
+  <li><strong>You take orders for delivery or pickup.</strong> A clear list of what you sell, delivery areas and how to order cuts down the back-and-forth on WhatsApp.</li>
+  <li><strong>You sell to businesses and institutions.</strong> Offices, schools, hospitals and contractors often check a supplier's website before placing a bulk order or adding you as a vendor.</li>
+  <li><strong>You stock a wide range.</strong> Hundreds of products or many brands are hard to show on a profile or Instagram grid.</li>
+  <li><strong>Customers check before they visit or pay an advance.</strong> A proper site with real photos, an address and reviews reassures people who don't know you.</li>
+  <li><strong>You don't want to depend on platforms.</strong> Social reach changes, and accounts can be restricted. A website on your own domain stays yours.</li>
+  <li><strong>You plan to grow:</strong> a second branch, a delivery service or selling online later.</li>
 </ul>
 
-<p>Grocery and organic stores that deliver usually need more than a simple site; see <a href="/blog/website-for-grocery-delivery-stores/">websites for grocery delivery stores</a>.</p>
+<h2>When you can wait</h2>
+<ul>
+  <li>Almost all your customers walk in from the neighbourhood and already know you.</li>
+  <li>Your Business Profile is still incomplete, or has few reviews. Fix that first.</li>
+  <li>Nobody would keep the website's hours, products and prices up to date.</li>
+  <li>You'd be paying for a site with no plan to link it from your profile, bills, bags or WhatsApp.</li>
+</ul>
 
 <h2>What a simple shop website needs</h2>
-<ul>
-  <li>What you sell, brands you stock and photos</li>
-  <li>Location, hours and a map</li>
-  <li>WhatsApp and click-to-call buttons</li>
-  <li>An enquiry or order form for bulk or special orders</li>
-  <li>Your Google reviews</li>
-</ul>
-<p>A one-page site or a small few-page site is often enough; see <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</p>
+<table>
+  <thead><tr><th>Section or page</th><th>What goes on it</th></tr></thead>
+  <tbody>
+    <tr><td>Home</td><td>What you sell, in one clear line, the area you serve, real photos of the shop, and WhatsApp and call buttons</td></tr>
+    <tr><td>Products or brands</td><td>Your main ranges and the brands you stock, with photos; one page each if people search for them separately</td></tr>
+    <tr><td>Bulk and business orders</td><td>Who you supply, minimum quantities if any, and a short enquiry form</td></tr>
+    <tr><td>Delivery and pickup</td><td>Areas covered, how to order and the payment methods you accept, such as UPI, cards and cash</td></tr>
+    <tr><td>About</td><td>How long you've been in the area, who runs the shop, and why customers come back</td></tr>
+    <tr><td>Contact and location</td><td>Address, a map, hours, landmarks and parking, with the same details as your Google profile</td></tr>
+  </tbody>
+</table>
+<p>Add your Google reviews, a short FAQ answering what customers ask on the phone, and LocalBusiness schema so search engines can read your name, address and hours. On a small budget, all of this can sit on a single well-structured page; <a href="/blog/one-page-vs-multi-page-website/">one-page vs multi-page websites</a> explains when separate pages are worth it.</p>
+<p>WhatsApp should be one tap away on every screen, with a pre-filled message so you know the chat came from the website. <a href="/blog/whatsapp-on-business-website/">Adding WhatsApp to your website</a> covers click-to-chat links and tracking.</p>
 
-<h2>Keep costs sensible</h2>
-<ul>
-  <li>Start small and expand later</li>
-  <li>Provide your own photos and product list</li>
-  <li>Use a simple, fast design on reliable hosting</li>
-</ul>
-<p>Check a ballpark with the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+<h2>Should a local shop sell online?</h2>
+<p>Not necessarily. Many shops do well with a catalogue on the website and orders taken on WhatsApp or by phone, paid by UPI or on delivery. A full online store with a cart, payment gateway, stock and shipping rules is a bigger project and needs someone to keep products and prices up to date. It makes sense when you already get regular delivery orders or want to sell beyond your area. Grocery and organic stores that deliver have their own needs; see <a href="/blog/website-for-grocery-delivery-stores/">websites for grocery delivery stores</a>.</p>
 
-<h2>The bottom line</h2>
-<p>Get your Google Business Profile and WhatsApp right first. Add a simple website when you want to reach beyond walk-ins, take orders or look more professional. It's usually a small investment compared with the business it can bring.</p>
+<h2>What it costs</h2>
+<p>As a guide, the <a href="/blog/wordpress-website-cost-india/">WordPress cost guide</a> on this site gives typical freelance ranges in India:</p>
+<ul>
+  <li><strong>A single landing page:</strong> ₹5,000 to ₹15,000.</li>
+  <li><strong>A small business site of five to eight pages:</strong> ₹15,000 to ₹40,000.</li>
+  <li><strong>A WooCommerce store:</strong> ₹30,000 to ₹90,000 or more.</li>
+  <li><strong>Every year:</strong> a domain at about ₹500 to ₹1,200 and hosting at roughly ₹2,500 to ₹15,000, depending on the plan.</li>
+  <li><strong>Optional:</strong> a maintenance plan, typically ₹1,500 to ₹6,000 a month from a freelancer, or nothing if you handle updates yourself.</li>
+</ul>
+<p>To keep costs down, start small, supply your own photos and product list, and choose a simple design on reliable hosting. The <a href="/website-cost-calculator/">website cost calculator</a> gives a rough range for your own mix of pages and features.</p>
+
+<h2>Decision table: what should your shop do first?</h2>
+<table>
+  <thead><tr><th>Your shop</th><th>Start with</th><th>Add a website when</th></tr></thead>
+  <tbody>
+    <tr><td>Neighbourhood shop, mostly walk-ins</td><td>Business Profile, reviews and WhatsApp</td><td>You want to reach beyond regulars, or start delivery</td></tr>
+    <tr><td>Wide range or well-known brands</td><td>Business Profile, then a website</td><td>Now: product and brand pages bring searches the profile can't</td></tr>
+    <tr><td>Supplies offices, schools or contractors</td><td>A website with a bulk order form</td><td>Now: business buyers check before ordering</td></tr>
+    <tr><td>Takes delivery orders on WhatsApp</td><td>A catalogue website with WhatsApp ordering</td><td>A full store once delivery orders are regular</td></tr>
+    <tr><td>Running festival or ad campaigns</td><td>A landing page for the offer</td><td>A full site once campaigns become regular</td></tr>
+    <tr><td>Several branches</td><td>One profile per branch and a website with a page for each</td><td>Now, so each branch has its own page to link</td></tr>
+  </tbody>
+</table>
+
+<h2>How the website and your Google profile work together</h2>
+<p>Link your Business Profile to the website, and make sure the name, address, phone and hours match exactly. Embed a map on the contact page, show a few genuine reviews, and give each branch its own page if you have more than one. Listing your shop in the main local directories with exactly the same details helps too, while paid "SEO listing" offers from unknown directories are rarely worth paying for.</p>
+
+<h2>FAQs</h2>
+<h3>Is a Google Business Profile enough for a local shop?</h3>
+<p>For some neighbourhood shops, yes, at least to start. It's not enough if you want to appear for specific products or brands, take bulk or delivery orders, or give customers more detail than a profile can hold.</p>
+<h3>Do I need a website if I have an Instagram page?</h3>
+<p>Instagram is good for showing new stock to followers, but its posts rarely appear in Google searches and older ones get buried. A website gives you pages that can be found in search and a place you fully control.</p>
+<h3>How much does a simple shop website cost in India?</h3>
+<p>Typical freelance ranges are ₹5,000 to ₹15,000 for a single page and ₹15,000 to ₹40,000 for a small site of five to eight pages, plus a domain and hosting every year. A full online store costs more.</p>
+<h3>Can a one-page shop website rank on Google?</h3>
+<p>It can appear for your shop's name and a few closely related searches, especially alongside a strong Business Profile. To rank for many products or brands, you'll usually need separate pages for them.</p>
+<h3>Who should update the website?</h3>
+<p>Ideally someone in the shop, for hours, offers and new stock. Ask for a site you can edit yourself, and keep it short enough that updating it takes minutes.</p>
+
+<p>Ready to give your shop a proper online home? <a href="/wordpress-website-development/">WordPress website development</a> builds a fast, simple site with WhatsApp, a map and details that match your Google profile, that you can update yourself. For a single festival offer or campaign, see <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -18776,113 +18839,249 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   {
     slug: 'one-page-vs-multi-page-website',
     seoTitle: 'One-Page vs Multi-Page Website: Which Do You Need?',
-    title: 'One-Page vs Multi-Page Website: Which Does Your Business Need?',
-    description: 'One-page vs multi-page website for small businesses: cost, speed, SEO, user experience and growth, when each makes sense and how to upgrade later.',
+    title: 'One-Page vs Multi-Page Website: When a Single Page Works, When You Need More, and What Each Means for SEO, Cost and Growth',
+    description: 'One-page vs multi-page website: when a single page works for events, one service or campaigns, when you need more pages for SEO, and a decision table.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
     body: `
-<p>A one-page website puts everything on a single scrolling page. A multi-page website has separate pages for services, about, contact and more. Both have their place.</p>
+<p>A one-page website works when you have one offer, one audience and one action: an event, a single service, a product launch, an ad campaign, or a new business that needs something credible online quickly on a small budget. A multi-page website is the better choice when you offer several services, serve several areas or types of customer, or want to be found on Google for more than your business name, because each page can target its own search. Many businesses start with one page and grow into more, and that works well if the site is planned for it.</p>
+<p>When I plan a site through <a href="/wordpress-website-development/">WordPress website development</a>, every main service gets its own page, because each service is a separate search. A single page still has its place, though. For a campaign that needs one message and one goal, with conversion tracking set up, <a href="/landing-page-design/">landing page design</a> is the right tool.</p>
+<p>A one-page website isn't quite the same as a landing page. A one-page site is your whole website on one scrolling page, usually with a menu that jumps to each section. A landing page is built for one campaign, usually with no menu at all. <a href="/blog/landing-page-vs-website/">Landing page vs website</a> covers that difference in depth.</p>
 
-<h2>One-page websites</h2>
-<p><strong>Pros:</strong></p>
+<h2>One-page, multi-page or landing page?</h2>
+<table>
+  <thead><tr><th></th><th>One-page website</th><th>Multi-page website</th><th>Landing page</th></tr></thead>
+  <tbody>
+    <tr><td>Purpose</td><td>Your whole presence, kept short</td><td>Your full presence, with room for detail</td><td>One campaign, one offer, one action</td></tr>
+    <tr><td>Navigation</td><td>A menu that jumps to sections</td><td>A full menu and many internal links</td><td>Usually none</td></tr>
+    <tr><td>Main traffic</td><td>Your name, referrals, social profiles</td><td>Google search, referrals, returning visitors</td><td>Paid ads and campaigns</td></tr>
+    <tr><td>Role in SEO</td><td>Limited: one page, one main topic</td><td>Central: each page can rank for its own searches</td><td>Small; ad-only versions are often kept out of Google</td></tr>
+    <tr><td>Content to prepare</td><td>The least</td><td>The most</td><td>One focused page</td></tr>
+    <tr><td>Grows with you</td><td>Only by adding pages</td><td>Yes</td><td>One page per campaign or offer</td></tr>
+  </tbody>
+</table>
+
+<h2>When a one-page website works well</h2>
 <ul>
-  <li>Lower cost and faster to build</li>
-  <li>Simple, focused story, good for mobile scrolling</li>
-  <li>Great for a single product, event, campaign or new business</li>
+  <li><strong>Events:</strong> a conference, exhibition, wedding, workshop or festival, where visitors need the date, place, programme and a way to register.</li>
+  <li><strong>A single service or product:</strong> one clear offer to one type of customer, such as a home tutor in one subject or a single product brand.</li>
+  <li><strong>A launch or campaign:</strong> a new product, a pre-launch sign-up or a seasonal offer with a fixed end date.</li>
+  <li><strong>A new business:</strong> something credible online while the full site is planned, with your services, proof and contact details.</li>
+  <li><strong>A personal profile:</strong> a consultant, speaker or freelancer who mainly needs people who already know their name to find them.</li>
+  <li><strong>A very small budget,</strong> where one well-made page beats five thin ones.</li>
 </ul>
-<p><strong>Cons:</strong></p>
+<p>A one-page site works well when visitors arrive already knowing your name or your offer, from a referral, a visiting card, social media or an ad, rather than from a Google search for something specific.</p>
+
+<h2>When you need a multi-page website</h2>
 <ul>
-  <li>Hard to rank for many different searches (one page can target only so much)</li>
-  <li>Limited room for detail on each service</li>
-  <li>Can become long and heavy as content grows</li>
+  <li><strong>Several services.</strong> A clinic with five treatments, an installer offering sales, repairs and maintenance contracts, or a manufacturer with several product families.</li>
+  <li><strong>Several areas or branches,</strong> where each branch or service area deserves its own genuinely useful page.</li>
+  <li><strong>Search beyond your name.</strong> If you want to appear when people search for a service plus your city, each service needs a page built around that search.</li>
+  <li><strong>Detail buyers need:</strong> specifications, menus, fee structures, treatment explanations, case studies or downloadable brochures.</li>
+  <li><strong>Different audiences,</strong> such as retail customers and trade buyers, or patients and referring doctors, who need different information.</li>
+  <li><strong>Trust and content:</strong> an About page, team profiles, case studies and a blog all need room.</li>
 </ul>
+<p><a href="/blog/write-service-pages-that-convert/">How to write service pages that rank and convert</a> shows what each of those service pages should contain.</p>
 
-<h2>Multi-page websites</h2>
-<p><strong>Pros:</strong></p>
+<h2>SEO: why one page struggles to rank for many searches</h2>
+<p>Google ranks pages, not whole websites. A page has one title, one main heading and one main topic, so it can match a handful of closely related searches well. A one-page site for an AC company that covers repair, installation, annual maintenance contracts and fridge repair has to squeeze four different searches into one title and one page, and usually ranks for none of them as well as a competitor with a page for each.</p>
 <ul>
-  <li>A page per service lets you rank for each service and location</li>
-  <li>Room for detail, case studies, FAQs and a blog</li>
-  <li>Scales as your business grows</li>
+  <li><strong>Sections aren't separate pages.</strong> Links such as yourdomain.com/#services jump to a section of the same page; Google generally treats them as one URL.</li>
+  <li><strong>Depth is limited.</strong> Each service gets a paragraph or two on a one-page site, while a dedicated page can answer the questions people actually ask, with FAQs and examples.</li>
+  <li><strong>Fewer ways in.</strong> Every extra useful page is another page that can appear in search results and another page other sites can link to.</li>
 </ul>
-<p><strong>Cons:</strong></p>
+<p>A one-page site can still rank for your business name and one core service, especially for a local business with a strong Google Business Profile. Area pages need care: pages that only swap the city name are thin, and <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages done right</a> explains how to make them genuinely useful.</p>
+
+<h2>User experience and speed</h2>
+<p>Scrolling feels natural on a phone, which is one reason one-page sites can work well on mobile. The risk is length: as more sections, photos and videos are added, the page grows heavy and slow, and visitors lose their place. Keep a one-page site focused, use a sticky call or WhatsApp button, and give the jump menu clear labels.</p>
+<p>Multi-page sites avoid the length problem, because each page loads only what it needs, but they depend on clear navigation. <a href="/blog/website-navigation-structure/">How to structure your website navigation</a> covers menus that help visitors and search engines.</p>
+
+<h2>Tracking: what each tells you</h2>
+<p>On a one-page site, every visit is to the same URL, so page reports in Google Analytics say very little about what interested people. Track clicks on the jump menu, scroll depth, and form submissions, calls and WhatsApp clicks as key events, so you can see which sections lead to enquiries. On a multi-page site, page-level data shows which services people look at and which pages lead to enquiries. <a href="/blog/ga4-events-explained/">GA4 events explained</a> shows how to set up both.</p>
+
+<h2>Cost and upkeep</h2>
+<p>A one-page site is usually cheaper because there's one layout to design and less content to write. As a guide, the <a href="/blog/wordpress-website-cost-india/">WordPress cost guide</a> puts a professionally built landing page at ₹5,000 to ₹15,000, a small business site of five to eight pages at ₹15,000 to ₹40,000, and a larger business or B2B site at ₹35,000 to ₹80,000. Domain, hosting and upkeep are much the same either way. The bigger difference is your time: every extra page needs content, photos and someone to keep it current. The <a href="/website-cost-calculator/">website cost calculator</a> gives a rough range for your own plan.</p>
+
+<h2>Decision table</h2>
+<table>
+  <thead><tr><th>Your situation</th><th>Usually the better fit</th></tr></thead>
+  <tbody>
+    <tr><td>An event with a date, venue and registration</td><td>One-page website</td></tr>
+    <tr><td>One service, one type of customer, mostly referrals</td><td>One-page website</td></tr>
+    <tr><td>A new business that needs to be online this month</td><td>One-page website, planned to grow</td></tr>
+    <tr><td>Ads for one offer</td><td>Landing page, whatever your main site looks like</td></tr>
+    <tr><td>Several services, or several product families</td><td>Multi-page website</td></tr>
+    <tr><td>You want to rank for "service plus city" searches</td><td>Multi-page website, one page per service</td></tr>
+    <tr><td>Several branches or service areas</td><td>Multi-page website, with a useful page per branch</td></tr>
+    <tr><td>You plan to publish articles or case studies</td><td>Multi-page website</td></tr>
+  </tbody>
+</table>
+
+<h2>Start with one page, grow later</h2>
+<p>A one-page site doesn't have to be a dead end. If you plan for growth:</p>
+<ol>
+  <li><strong>Build on a platform you can grow on,</strong> such as WordPress, rather than a tool that only makes single pages.</li>
+  <li><strong>Write each section as a future page:</strong> one section per service, each with its own heading, so it can later become a page of its own.</li>
+  <li><strong>When you add pages,</strong> move each service's content to its own page and expand it, then keep a short summary on the homepage that links to it.</li>
+  <li><strong>Keep the homepage address unchanged,</strong> and keep the old section anchors, so links people saved or shared still land in the right place.</li>
+  <li><strong>Add the new pages to the menu and sitemap,</strong> and link to them from the homepage summary.</li>
+</ol>
+
+<h2>What a good one-page website includes</h2>
 <ul>
-  <li>Higher cost and more content to prepare</li>
-  <li>Needs good navigation and structure</li>
+  <li>A clear headline saying what you do and for whom, with a call to action visible without scrolling.</li>
+  <li>Services or the offer, in short sections with their own headings.</li>
+  <li>Proof: real photos, testimonials used with permission, client logos or project examples.</li>
+  <li>A short About section and a FAQ answering common questions.</li>
+  <li>Contact details, a form, a map if you have a location, and hours.</li>
+  <li>A sticky WhatsApp or call button on mobile, designed with <a href="/blog/mobile-first-design-explained/">mobile-first design</a> in mind.</li>
+  <li>A separate privacy policy page, which even a one-page site usually needs if it collects enquiries.</li>
 </ul>
 
-<h2>Which should you choose?</h2>
-<ul>
-  <li><strong>One-page:</strong> a single service or product, a launch, an event, a personal profile, or a very small budget</li>
-  <li><strong>Multi-page:</strong> several services, SEO goals, industries or locations to target, or plans to publish content</li>
-</ul>
+<h2>FAQs</h2>
+<h3>Is a one-page website bad for SEO?</h3>
+<p>Not bad, but limited. It can rank for your business name and one main topic. If you want to be found for several services or areas, separate pages give each one a much better chance.</p>
+<h3>How many pages should a small business website have?</h3>
+<p>Enough for one page per main service plus Home, About and Contact. For many small businesses that means five to eight pages, but it depends on what you sell, not on a target number.</p>
+<h3>Can I turn a one-page website into a multi-page one later?</h3>
+<p>Yes. Move each section's content to its own page, expand it, keep a summary on the homepage that links to each new page, and keep the homepage address the same.</p>
+<h3>Is a one-page website the same as a landing page?</h3>
+<p>No. A one-page website is your whole site on one page, with a menu to its sections. A landing page is built for one campaign, usually without a menu, and is often kept out of Google if it exists only for ads.</p>
+<h3>Is a one-page website cheaper?</h3>
+<p>Usually, because there's one layout to design and less content to prepare. The savings shrink if the page has to do a lot, and a single page built to a high standard can cost more than a quick multi-page site built from a template.</p>
 
-<h2>Start small, grow later</h2>
-<p>Many businesses start with a strong one-page site and add service pages and a blog as they grow. Build on a platform like WordPress so expanding is easy. Plan URLs so the homepage content can later link out to dedicated pages.</p>
-
-<h2>For ads</h2>
-<p>Campaigns often perform best on dedicated landing pages regardless of your main site's structure; see <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</p>
-
-<p>Estimate costs with the <a href="/website-cost-calculator/">website cost calculator</a>, or see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<p>Not sure how many pages you need? Send me your services and the customers you want to reach through <a href="/wordpress-website-development/">WordPress website development</a>, and you'll get a suggested page plan with a fixed quote. For a single campaign page with tracking, see <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
     slug: 'first-90-days-after-website-launch',
-    seoTitle: 'The First 90 Days After Your Website Launches',
-    title: 'The First 90 Days After Your Website Launches: A Practical Plan',
-    description: 'Your first 90 days after a website launch: week-one checks, indexing, tracking, reviews, first content, fixes and a plan to turn the launch into enquiries.',
+    seoTitle: 'First 90 Days After a Website Launch: A Week-by-Week Plan',
+    title: 'The First 90 Days After Your Website Launches: A Week-by-Week Plan for Indexing, Search Console, Tracking, Reviews, Content and Upkeep',
+    description: 'What to do in the first 90 days after your website launches: week-by-week checks, indexing, Search Console, analytics, reviews, first content and upkeep.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Growth',
     related: ['wordpress-seo-services', 'wordpress-maintenance', 'landing-page-design'],
     body: `
-<p>Launching a website is the start, not the finish. What you do in the first three months decides whether it quietly sits there or starts bringing in business.</p>
+<p>In the first 90 days after a website launches, work in three stages. In week one, prove that everything works and is being measured. Over the first month, get your key pages found and indexed, and fix whatever Search Console reports. In months two and three, build trust and content: your Google Business Profile, genuine reviews, a few genuinely useful posts, and improvements to key pages based on the data you now have. Keep backups and updates running throughout, and expect impressions in Google to grow well before clicks and enquiries do.</p>
+<p>Much of this is what <a href="/wordpress-seo-services/">WordPress SEO services</a> cover after a launch or redesign: Search Console set up as a domain property in your Google account, the sitemap submitted, indexing requested for key pages, and the Pages report watched as Google recrawls the site. The upkeep side, from updates and off-site backups to uptime monitoring and form checks, is what <a href="/wordpress-maintenance/">WordPress maintenance plans</a> handle.</p>
+<p>This plan picks up where launch day ends. If you haven't launched yet, run through the <a href="/blog/website-launch-checklist/">website launch checklist</a> first.</p>
 
-<p>Before launch day, run through the full <a href="/blog/website-launch-checklist/">website launch checklist</a>.</p>
+<h2>The 90-day plan at a glance</h2>
+<table>
+  <thead><tr><th>When</th><th>Focus</th><th>Key tasks</th></tr></thead>
+  <tbody>
+    <tr><td>Days 1 to 7</td><td>Everything works</td><td>Test forms, calls and WhatsApp; confirm tracking, backups and monitoring; remove staging settings</td></tr>
+    <tr><td>Weeks 1 to 2</td><td>Get found</td><td>Search Console, sitemap, indexing requests for key pages, links from your existing profiles</td></tr>
+    <tr><td>Weeks 2 to 4</td><td>Fix what Google reports</td><td>Pages report, 404s and redirects, first impressions and queries</td></tr>
+    <tr><td>Weeks 3 to 6</td><td>Local trust</td><td>Business Profile updated, reviews requested, directories and partner links updated</td></tr>
+    <tr><td>Month 2</td><td>Content and key pages</td><td>A few helpful posts, stronger service pages, internal links</td></tr>
+    <tr><td>Month 3</td><td>Review and improve</td><td>Titles, content and calls to action changed based on real data; plan the next quarter</td></tr>
+    <tr><td>Throughout</td><td>Upkeep</td><td>Updates with a backup first, uptime alerts, renewals, access reviews</td></tr>
+  </tbody>
+</table>
 
-<h2>Week 1: check everything works</h2>
+<h2>Days 1 to 7: make sure everything works</h2>
 <ul>
-  <li>Test every form, WhatsApp button and phone link, on mobile too</li>
-  <li>Check key pages on different phones and browsers</li>
-  <li>Confirm HTTPS works everywhere and old URLs redirect</li>
-  <li>Make sure "discourage search engines" is off and no noindex tags remain</li>
-  <li>Set up backups and uptime monitoring; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring</a></li>
+  <li><strong>Send real test enquiries</strong> from your own phone and a friend's: the contact form, WhatsApp button and click-to-call on every key page. Check the emails arrive, and not in spam.</li>
+  <li><strong>Check the thank-you page or success message</strong> shows, and that GA4 records the submission as a key event. <a href="/blog/ga4-events-explained/">GA4 events explained</a> shows how to track forms, calls and WhatsApp clicks.</li>
+  <li><strong>Remove staging leftovers.</strong> In WordPress, Settings, Reading, "Discourage search engines from indexing this site" must be unticked, and no page should carry a stray noindex tag.</li>
+  <li><strong>Check HTTPS and redirects.</strong> Every page should load on one version of the domain, and if this replaced an old site, old URLs should redirect to their new equivalents.</li>
+  <li><strong>Run a speed test on a phone</strong> for the homepage and one key service page, and note the results as your baseline.</li>
+  <li><strong>Confirm backups</strong> are running automatically and stored away from the hosting server, and set up uptime monitoring so you hear about downtime before customers do.</li>
 </ul>
 
-<h2>Weeks 1–2: get found and measured</h2>
+<h2>Weeks 1 to 2: help Google find the site</h2>
+<ol>
+  <li><strong>Set up Google Search Console</strong> as a domain property, verified through DNS, in your own Google account, and add Bing Webmaster Tools if you like.</li>
+  <li><strong>Submit your XML sitemap.</strong> Most SEO plugins create one automatically.</li>
+  <li><strong>Request indexing for your most important pages</strong> using URL Inspection: the homepage and main service pages. There's no need to submit every URL or to repeat requests daily.</li>
+  <li><strong>Link to the site from places Google already crawls:</strong> your Business Profile, social profiles, directory listings and your email signature.</li>
+</ol>
+<p><a href="/blog/get-website-indexed-google-faster/">Getting a new website indexed faster</a> explains what actually helps, including what doesn't.</p>
+
+<h2>Weeks 2 to 4: read Search Console and fix what it shows</h2>
+<p>Search Console usually starts showing data within a few days of verification, and the picture fills in over the following weeks.</p>
 <ul>
-  <li>Verify Google Search Console and submit your sitemap; see <a href="/blog/xml-sitemaps-explained/">XML sitemaps</a></li>
-  <li>Request indexing for your homepage and key service pages</li>
-  <li>Set up GA4 with key events for forms, calls and WhatsApp</li>
-  <li>Update your Google Business Profile, social profiles and email signature with the new site</li>
+  <li><strong>Pages report.</strong> On a new site, many pages sit as "Discovered, currently not indexed" or "Crawled, currently not indexed" for a while. Not every status is a problem, but key service pages that stay unindexed are worth investigating; <a href="/blog/search-console-page-indexing-errors/">page indexing errors explained</a> shows which statuses matter.</li>
+  <li><strong>404 errors.</strong> Old addresses still linked from elsewhere, or shared on WhatsApp, should redirect to the closest new page.</li>
+  <li><strong>Performance report.</strong> The first impressions and queries appear here. They're often your business name and a few specific searches, which is normal.</li>
+  <li><strong>Core Web Vitals.</strong> A new site with little traffic may show "not enough data" for a while; use PageSpeed Insights on key pages in the meantime.</li>
+  <li><strong>Security issues and manual actions,</strong> which should both be clear. If not, deal with them before anything else.</li>
+</ul>
+<p>Also fix the small problems real visitors find: a broken link, a typo in a phone number, a button hidden on one phone model. There are always a few.</p>
+
+<h2>Weeks 3 to 6: local trust and links</h2>
+<ul>
+  <li><strong>Update your Google Business Profile:</strong> the website link pointing to the most relevant page, accurate hours, services and recent photos. The <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers each setting.</li>
+  <li><strong>Ask recent happy customers for reviews,</strong> with a direct link, and reply to every review you get. <a href="/blog/get-more-google-reviews/">How to get more Google reviews</a> covers asking within Google's rules.</li>
+  <li><strong>Update the website address everywhere it appears:</strong> social profiles, directory listings, WhatsApp Business, quotation templates and invoices.</li>
+  <li><strong>Ask partners, suppliers and associations</strong> you genuinely work with to link to the new site, or to update an old link. These are the honest links that help a new site most.</li>
 </ul>
 
-<h2>Weeks 2–4: build trust</h2>
+<h2>Month 2: first content and stronger key pages</h2>
+<p>With the foundations working, put effort into the pages that bring enquiries:</p>
 <ul>
-  <li>Ask recent happy customers for Google reviews and testimonials</li>
-  <li>Add testimonials and case studies to the site</li>
-  <li>Ask partners, suppliers and associations to link to your new site</li>
+  <li><strong>Strengthen each main service page</strong> with the questions customers actually ask, real photos, proof such as testimonials or project examples, and a clear call to action.</li>
+  <li><strong>Publish a few genuinely useful posts</strong> answering common questions before people buy, such as what affects the price or how to choose, each linking to its service page.</li>
+  <li><strong>Add internal links</strong> from the homepage and posts to the service pages you most want to rank.</li>
+  <li><strong>Share new content</strong> on LinkedIn, WhatsApp status or wherever your customers already are.</li>
+</ul>
+<p>A few strong pages beat many thin ones. On a new site, Google is cautious about crawling and indexing pages that say little, so depth matters more than volume.</p>
+
+<h2>Month 3: review the data and improve</h2>
+<p>By now you have real data. Use it:</p>
+<table>
+  <thead><tr><th>What you see</th><th>Where</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>A page gets impressions but few clicks</td><td>Search Console, Performance</td><td>Rewrite its title and description to match the searches it appears for</td></tr>
+    <tr><td>A page sits just below the first page of results</td><td>Search Console, Performance</td><td>Expand it with the answers those searches expect, and link to it from related pages</td></tr>
+    <tr><td>A key page still isn't indexed</td><td>Search Console, Pages</td><td>Check it's in the sitemap and linked internally; make it more useful and distinct</td></tr>
+    <tr><td>Visitors arrive but don't enquire</td><td>GA4, landing pages and key events</td><td>Improve the headline, proof and call to action; check the form on a phone</td></tr>
+    <tr><td>Enquiries mention where they found you</td><td>Your enquiry log</td><td>Add "How did you hear about us?" to the form and track the answers</td></tr>
+  </tbody>
+</table>
+<p>Then write a short plan for the next 90 days: which pages to improve, which posts to write, and which local profiles to keep active.</p>
+
+<h2>Throughout: backups, updates and security</h2>
+<ul>
+  <li>Update WordPress, the theme and plugins regularly, taking a backup first and testing forms afterwards.</li>
+  <li>Check that backups are still running, and that a restore would actually work.</li>
+  <li>Watch uptime alerts, and act on any hosting warnings about PHP versions, disk space or resource limits.</li>
+  <li>Remove any temporary access the developer used, unless they're maintaining the site.</li>
+  <li>Put domain, hosting and licence renewal dates in a calendar, remembering that first-year discounts often renew higher.</li>
 </ul>
 
-<h2>Month 2: start content</h2>
+<h2>What to expect by day 90</h2>
+<p>Every site is different, so treat these as common patterns rather than promises. Impressions usually grow before clicks. The first clicks often come from your business name and very specific searches, while broader and more competitive searches take longer, especially on a new domain with few links. Technical fixes take effect as Google recrawls the site, usually over a few weeks, and competitive rankings can take many months. <a href="/blog/how-long-does-seo-take/">How long SEO takes</a> explains why, including what this site's own Search Console showed after launch.</p>
+<p>If you need enquiries sooner, run a focused ad campaign alongside SEO rather than waiting; <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a> covers how the two work together.</p>
+
+<h2>Common mistakes in the first 90 days</h2>
 <ul>
-  <li>Publish 2–4 genuinely helpful articles answering customer questions</li>
-  <li>Link each to the relevant service page</li>
-  <li>Share them on LinkedIn and WhatsApp</li>
-</ul>
-<p>Plan with a <a href="/blog/website-content-calendar/">content calendar</a>.</p>
-
-<h2>Month 3: review and improve</h2>
-<ul>
-  <li>Search Console: which queries and pages are getting impressions?</li>
-  <li>Analytics: which pages bring enquiries, and which lose visitors?</li>
-  <li>Improve titles, calls to action and content on key pages</li>
-  <li>Fix any errors, slow pages or broken links</li>
+  <li>Leaving "discourage search engines" ticked or a noindex tag in place after launch.</li>
+  <li>Requesting indexing for the same URLs every day.</li>
+  <li>Changing URLs again soon after launch without redirects.</li>
+  <li>Buying links, reviews or "SEO packages" that promise quick rankings.</li>
+  <li>Judging the website by its traffic in week two.</li>
+  <li>Not noticing that the contact form stopped sending.</li>
+  <li>Assuming the host's backups are enough without checking where they're stored.</li>
 </ul>
 
-<h2>Set expectations</h2>
-<p>Traffic and rankings build gradually; see <a href="/blog/how-long-does-seo-take/">how long SEO takes</a>. If you need leads faster, run focused ads in parallel.</p>
+<h2>FAQs</h2>
+<h3>How long does it take for a new website to show up on Google?</h3>
+<p>There's no fixed timeline. The homepage is usually the first page to appear, typically for your business name, once Search Console and a sitemap are set up and a few links point to the site. Other pages are indexed gradually, and ranking for competitive searches takes much longer.</p>
+<h3>Do I need to submit my website to Google?</h3>
+<p>Google can find a site through links alone, but setting up Search Console and submitting a sitemap helps it discover your pages and lets you see what's happening. It doesn't speed up rankings by itself.</p>
+<h3>How often should I check Search Console after launch?</h3>
+<p>Every few days in the first two weeks, to catch errors and redirects that were missed, then weekly for the first three months. After that, monthly is usually enough, plus whenever you make big changes.</p>
+<h3>What if my pages still aren't indexed after a month?</h3>
+<p>Check that they aren't blocked by noindex or robots.txt, that they're in the sitemap and linked from other pages, and that each one is useful and distinct. On new sites with few links, Google can simply be slow, so improve the pages rather than repeatedly requesting indexing.</p>
+<h3>Should I keep making changes during the first 90 days?</h3>
+<p>Yes, to content, titles and calls to action, based on what the data shows. Avoid changing URLs or the site structure again, and make changes after a backup so you can roll back if needed.</p>
 
-<p>Ongoing care keeps it all working; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+<p>Want someone to watch this for you? <a href="/wordpress-seo-services/">WordPress SEO services</a> cover Search Console setup, indexing checks and on-page improvements after launch, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates, backups and monitoring running every month.</p>
 `,
   },
   {
@@ -19503,49 +19702,116 @@ add_filter( 'comments_array', function( $comments, $post_id ) {
   },
   {
     slug: 'add-blog-to-existing-website',
-    seoTitle: 'How to Add a Blog to Your Existing Website',
-    title: 'How to Add a Blog to Your Existing Business Website',
-    description: 'Add a blog to your existing website the right way: subfolder vs subdomain, WordPress setup, design, categories, links to services and a publishing plan.',
+    seoTitle: 'How to Add a Blog to Your Existing Website (the Right Way)',
+    title: 'How to Add a Blog to Your Existing Business Website: Subfolder or Subdomain, WordPress Setup, Design, Categories and Your First Posts',
+    description: 'How to add a blog to your existing website: subfolder vs subdomain, WordPress or not, matching the design, categories, first posts and links to services.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-seo-services', 'website-redesign'],
     body: `
-<p>A blog helps your website answer customer questions, attract search traffic and show expertise. If your site doesn't have one yet, it's usually easy to add, as long as it's set up the right way.</p>
+<p>To add a blog to an existing website, put it in a subfolder such as yourdomain.com/blog/ rather than on a subdomain, and build it on the same platform as the rest of the site if that platform has a decent blog. Match its design to your site, set up a few categories that mirror your services, and launch with a handful of posts that answer the questions customers ask before they buy, each linking to the service page it relates to. On WordPress, most of this is configuration; on other platforms, you choose between the built-in blog, WordPress alongside your site, or moving the whole site.</p>
+<p>If your site already runs on WordPress, adding a blog is mostly settings, templates and a menu link. If it doesn't and the platform is holding you back, rebuilding on WordPress with redirects for every URL that changes is part of <a href="/wordpress-website-development/">WordPress website development</a>. For the search side, such as which post should target which search and how posts link to services, see <a href="/wordpress-seo-services/">WordPress SEO services</a>; I don't write blog articles, but I can tell you which answers are missing and what each should cover.</p>
+<p>Not sure a blog is worth it yet? Many service businesses can rank well without one; <a href="/blog/seo-for-service-pages-without-blog/">ranking without a blog</a> explains when a blog becomes worth the effort.</p>
 
-<p>Not sure a blog is worth it yet? See <a href="/blog/seo-for-service-pages-without-blog/">how to rank a service business website without a blog</a>.</p>
+<h2>Subfolder or subdomain?</h2>
+<table>
+  <thead><tr><th></th><th>Subfolder</th><th>Subdomain</th><th>Separate domain</th></tr></thead>
+  <tbody>
+    <tr><td>Example</td><td>yourdomain.com/blog/</td><td>blog.yourdomain.com</td><td>yourbrandblog.com</td></tr>
+    <tr><td>How it relates to your site</td><td>Part of the same site</td><td>Often treated more like a separate site</td><td>A separate site</td></tr>
+    <tr><td>Setup</td><td>Same platform and hosting, or WordPress installed in the folder</td><td>Easy to host anywhere, separate from the main site</td><td>Separate everything</td></tr>
+    <tr><td>Internal links to services</td><td>Natural, within one site</td><td>Work, but cross between two sites</td><td>Links to another site</td></tr>
+    <tr><td>Usually suits</td><td>Most small and medium businesses</td><td>When the main site can't host a blog in a folder</td><td>Rarely a good idea for a business blog</td></tr>
+  </tbody>
+</table>
+<p>Google has said it can work with either a subfolder or a subdomain, so this isn't about a penalty. The practical case for a subfolder is that everything stays one site: one navigation, one analytics setup, and links between posts and service pages that sit naturally together. A subdomain is a reasonable fallback when the main site's platform can't host a blog in a folder.</p>
 
-<h2>Subfolder vs subdomain</h2>
-<p>A blog at <code>yourdomain.com/blog/</code> (subfolder) keeps everything under one site and is generally the simplest, most effective choice for small businesses. A subdomain (<code>blog.yourdomain.com</code>) is treated more like a separate site and needs its own authority built up.</p>
-
-<h2>If your site is on WordPress</h2>
-<ul>
-  <li>Create a Blog page and set it as the posts page</li>
-  <li>Design post and archive templates that match your site</li>
-  <li>Set up categories aligned with your services</li>
-  <li>Configure your SEO plugin for posts (titles, schema, sitemap)</li>
-</ul>
+<h2>If your site is already on WordPress</h2>
+<ol>
+  <li><strong>Create a page called Blog</strong> under Pages, Add New, and leave it empty.</li>
+  <li><strong>Set it as the posts page</strong> in Settings, Reading: choose "A static page", keep your homepage as it is, and select Blog as the posts page.</li>
+  <li><strong>Decide the post URL format</strong> in Settings, Permalinks. If posts should sit under /blog/, a custom structure does it. On an established site, change this only before you publish posts, because it changes post URLs.</li>
+  <li><strong>Create your categories</strong> under Posts, Categories, and delete or rename "Uncategorized".</li>
+  <li><strong>Design the post and archive templates</strong> in your theme or page builder, so posts match the rest of the site.</li>
+  <li><strong>Check your SEO plugin settings</strong> for posts: title format, schema type, whether category and tag archives are indexed, and that posts appear in the sitemap.</li>
+  <li><strong>Add Blog to the menu,</strong> and a "Latest articles" block to the homepage if it suits the design.</li>
+</ol>
+<pre><code>Settings, Permalinks, Custom structure:  /blog/%postname%/
+Result for a post:     yourdomain.com/blog/how-to-choose-a-physiotherapist/
+Pages are unaffected:  yourdomain.com/contact/</code></pre>
+<p>With a custom structure that starts with /blog/, WordPress also puts category archives under /blog/ by default, which keeps everything tidy.</p>
 
 <h2>If your site isn't on WordPress</h2>
-<p>You can use your platform's built-in blog, install WordPress in a <code>/blog/</code> subfolder on the same hosting, or migrate the whole site. Choose what's easiest to maintain long term.</p>
+<table>
+  <thead><tr><th>Option</th><th>Works well when</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>The platform's built-in blog</td><td>Your site is on Wix, Squarespace or Shopify and its blog does what you need</td><td>Fewer SEO and layout controls than WordPress; the blog stays tied to that platform</td></tr>
+    <tr><td>WordPress in a /blog/ folder on the same hosting</td><td>Your site is custom-coded or plain HTML on hosting you control, with PHP and a database available</td><td>The header and footer must be rebuilt in WordPress and kept in sync with the main site</td></tr>
+    <tr><td>WordPress on a subdomain</td><td>The main site is on a hosted builder and you want WordPress's blogging tools</td><td>Two systems to maintain, and a split between the blog and the site</td></tr>
+    <tr><td>Move the whole site to WordPress</td><td>The current platform also limits your pages, speed or SEO</td><td>A bigger project, which needs redirects for every URL that changes</td></tr>
+  </tbody>
+</table>
+<p>One limitation catches people out: on hosted builders such as Wix or Shopify, you don't control the server, so you can't install WordPress in a folder of that site. Serving a separately hosted blog at /blog/ through a reverse proxy is possible, but it's an advanced setup with its own maintenance. If you're weighing a full move, <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a> covers the process.</p>
 
-<h2>Design it for reading and enquiries</h2>
+<h2>Make the blog look like part of your site</h2>
 <ul>
-  <li>Readable typography and clear headings</li>
-  <li>Author information and dates</li>
-  <li>Related services and calls to action within and after articles</li>
-  <li>Related articles to keep readers exploring</li>
+  <li>The same header, menu, footer, logo, colours and fonts, so readers never feel they've left.</li>
+  <li>A readable layout: a comfortable line length, clear headings and body text large enough on a phone.</li>
+  <li>The author's name and a short bio linking to your About page, plus the publish or last-updated date.</li>
+  <li>A call to action inside and after each post, pointing to the related service rather than a generic contact page.</li>
+  <li>Related posts at the end, so readers keep exploring.</li>
+  <li>Fast pages: compressed images, no heavy sliders, and only the scripts the blog needs.</li>
 </ul>
-<p>This site's article pages show one approach: key takeaways, a contents sidebar, a help box and related services.</p>
+<p>On this website, samverse.space, each article shows three key takeaways, an "On this page" contents list, a FAQ, and related articles and services. It's one approach; what matters is that every post leads somewhere useful.</p>
 
-<h2>Connect posts to services</h2>
-<p>Every article should link to the relevant service page, and service pages should link to helpful articles; see <a href="/blog/internal-linking-explained/">internal linking</a>.</p>
+<h2>Set up categories that mirror your services</h2>
+<p>Categories organise the blog for readers and show Google how topics relate. Keep to a few broad ones, usually three to six, that line up with what you sell. A physiotherapy clinic might use Back and Neck Pain, Sports Injuries, Post-Surgery Rehab and Clinic News. Avoid one category per post, and don't create dozens of tags that each hold a single article, because those archives become thin pages. <a href="/blog/category-tag-pages-seo/">SEO for category and tag pages</a> explains when to index, noindex or improve them.</p>
 
-<p>Step-by-step: <a href="/blog/write-blog-posts-that-rank/">how to write blog posts that rank</a>.</p>
+<h2>Your first posts: what to write</h2>
+<p>Good first posts answer questions you already hear from customers on the phone, on WhatsApp and at the counter. Five to ten genuinely useful posts make a better start than thirty thin ones.</p>
+<table>
+  <thead><tr><th>Type of post</th><th>Example (fictional physiotherapy clinic)</th><th>Links to</th></tr></thead>
+  <tbody>
+    <tr><td>Cost and what affects it</td><td>What affects the cost of a physiotherapy treatment plan</td><td>Fees page</td></tr>
+    <tr><td>Comparison</td><td>Physiotherapy or chiropractic for lower back pain?</td><td>Back pain treatment page</td></tr>
+    <tr><td>Preparation</td><td>What to bring to your first physiotherapy appointment</td><td>Booking page</td></tr>
+    <tr><td>Problem and signs</td><td>Signs your sports injury needs more than rest</td><td>Sports injury page</td></tr>
+    <tr><td>Local guide</td><td>Where to find physiotherapy near your area, and what to check</td><td>Contact and location page</td></tr>
+    <tr><td>Case study</td><td>A real treatment journey, shared with the patient's permission</td><td>The relevant service page</td></tr>
+  </tbody>
+</table>
+<p>For location-focused articles in practice, <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, an interior design studio I built a site for, has a blog with articles for Hyderabad, Vizag and Vijayawada. <a href="/blog/write-blog-posts-that-rank/">How to write blog posts that rank</a> covers choosing topics, checking search intent and structuring each post.</p>
 
-<h2>Plan content you can sustain</h2>
-<p>Start with 5–10 articles answering the most common customer questions, then publish consistently; see <a href="/blog/website-content-calendar/">content calendars</a>.</p>
+<h2>Link every post to a service page</h2>
+<p>A business blog earns its keep by sending readers to the pages that bring enquiries. Every post should link to its related service page early, in context, and again at the end. Service pages should link back to the most helpful posts. Over time, a group of posts around one service, all linking to it and to each other, forms a topic cluster; <a href="/blog/topic-clusters-pillar-pages/">topic clusters and pillar pages</a> shows how to plan one, and <a href="/blog/internal-linking-explained/">internal linking explained</a> covers anchor text and how many links to add.</p>
 
-<p>For help setting it up, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2>Before the first post goes live</h2>
+<ul>
+  <li>Posts appear in the XML sitemap, and the sitemap is submitted in Google Search Console.</li>
+  <li>Each post has its own title and meta description, one H1 and a clean URL.</li>
+  <li>Article schema is added, usually by your SEO plugin.</li>
+  <li>Comments are switched off, or moderated, so the blog doesn't fill with spam.</li>
+  <li>The author bio and About page explain who is writing and why they know the subject.</li>
+  <li>Analytics records visits to posts and any enquiries that start from them.</li>
+</ul>
+
+<h2>A publishing rhythm you can keep</h2>
+<p>Consistency matters more than volume. Pick a pace you can sustain alongside running the business, whether that's one post a month or more, and plan topics a few months ahead in a <a href="/blog/website-content-calendar/">content calendar</a>. After a few months, Search Console shows which posts get impressions and for which searches, which tells you what to write next and which older posts to improve. Updating a post that already gets impressions is often worth more than writing a new one.</p>
+
+<h2>FAQs</h2>
+<h3>Should my blog be on a subdomain or a subfolder?</h3>
+<p>A subfolder such as yourdomain.com/blog/ is usually the practical choice for a business, because the blog and your service pages stay one site. A subdomain is a reasonable fallback when your main platform can't host a blog in a folder.</p>
+<h3>Can I add a WordPress blog to a Wix or Shopify site?</h3>
+<p>Not in a folder of that site, because you don't control their servers. You can use the platform's built-in blog, put WordPress on a subdomain, or move the whole site to WordPress if the platform limits you in other ways too.</p>
+<h3>How many posts do I need before launching a blog?</h3>
+<p>There's no fixed number. A handful of genuinely useful posts that answer common customer questions is a better start than many short ones, because each post should be worth reading on its own.</p>
+<h3>Does a blog help SEO for a service business?</h3>
+<p>It can, when posts answer real questions and link to your service pages. It's not a requirement: strong service pages, local SEO and reviews often matter more at first, and a blog adds most once those are in place.</p>
+<h3>Will adding a blog slow down my website?</h3>
+<p>It shouldn't, if images are compressed and the blog uses the same lightweight theme as the rest of the site. Heavy related-post plugins, sliders and social widgets are the usual culprits.</p>
+
+<p>Ready to add a blog that fits your site? If your current platform is holding you back, <a href="/wordpress-website-development/">WordPress website development</a> covers rebuilding on WordPress with the blog, categories and templates in place, and <a href="/wordpress-seo-services/">WordPress SEO services</a> covers the structure and internal links that help posts and service pages rank together.</p>
 `,
   },
   {
@@ -19936,58 +20202,150 @@ add_filter( 'comments_array', function( $comments, $post_id ) {
   {
     slug: 'hire-developer-vs-diy-website',
     seoTitle: 'Hire a Developer or Build Your Website Yourself?',
-    title: 'When to Hire a Developer vs Build Your Website Yourself',
-    description: 'Build your own website or hire a developer? Compare cost, time, quality, SEO and risk, which tasks suit DIY and when professional help pays off.',
+    title: 'Hire a Developer or Build Your Website Yourself? DIY Builders vs a Freelancer vs an Agency, Compared on Time, Skills, Cost and Risk',
+    description: 'Build your website yourself or hire a developer? DIY builders, freelancers and agencies compared on time, skills, cost and risk, with a decision table.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
     body: `
-<p>Website builders and page builders make DIY websites possible for almost anyone. So when does it make sense to do it yourself, and when does hiring a developer pay off?</p>
+<p>Build your website yourself when it's simple, the budget is very small and you have time to learn: a website builder or a WordPress theme can handle a basic information site or a test of a new idea. Hire a developer when the website is a real source of enquiries or sales, needs features such as payments, bookings or a store, or already has Google rankings you can't afford to lose. Many businesses end up in between, with a developer building the foundation and the owner editing content afterwards.</p>
+<p>That middle path is how I work when you <a href="/hire-wordpress-developer/">hire me as a WordPress developer</a>: you get a written scope and a fixed price before work starts, and a site you can edit yourself in Elementor or the block editor, with a video-call walkthrough at the end. For a complete new site, see <a href="/wordpress-website-development/">WordPress website development</a>. This guide is for the decision before that, whoever you end up choosing.</p>
+<p>If you've already decided to hire and are choosing who, <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> goes deeper on that choice. If the question is which platform to use, see <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a>.</p>
 
-<h2>DIY makes sense when...</h2>
+<h2>The three routes at a glance</h2>
+<table>
+  <thead><tr><th></th><th>Do it yourself</th><th>Freelance developer</th><th>Agency</th></tr></thead>
+  <tbody>
+    <tr><td>Who does the work</td><td>You, on a website builder or WordPress</td><td>One person, who you talk to directly</td><td>A team, usually through an account manager</td></tr>
+    <tr><td>Your time</td><td>The most: learning, building, testing and fixing</td><td>Brief, content, feedback and approvals</td><td>Similar to a freelancer, plus more meetings</td></tr>
+    <tr><td>Skills you need</td><td>Comfort with technology, design sense, writing, patience</td><td>Knowing what you want and giving clear feedback</td><td>The same</td></tr>
+    <tr><td>What you pay for</td><td>A builder subscription, or hosting and a domain, plus any premium theme</td><td>A fixed quote for the build, plus hosting and domain</td><td>A higher quote covering project management and several specialists</td></tr>
+    <tr><td>Best for</td><td>Simple sites, testing an idea, very tight budgets</td><td>Business sites, stores, redesigns and ongoing care</td><td>Projects that need branding, copywriting and ads handled together</td></tr>
+    <tr><td>Main risk</td><td>Problems you can't see, and the time it takes</td><td>One person's capacity, so ask about availability</td><td>Work handed to junior staff, and higher cost</td></tr>
+  </tbody>
+</table>
+
+<h2>What DIY really involves</h2>
+<p>Website builders make the first page look easy. The work that decides whether a site brings in business comes after it, and it's the part most DIY sites skip.</p>
+<h3>Setting up</h3>
 <ul>
-  <li>You need a simple site quickly with a very small budget</li>
-  <li>You enjoy learning and have time to spend</li>
-  <li>The site is mainly informational, with few features</li>
-  <li>You're testing an idea before investing more</li>
+  <li>Choosing a platform you won't outgrow, because moving later usually means rebuilding the design.</li>
+  <li>Buying a domain in your own name and connecting it, with SSL working on every page.</li>
+  <li>On WordPress, choosing hosting and a lightweight theme rather than a heavy multipurpose one.</li>
+</ul>
+<h3>Building</h3>
+<ul>
+  <li>Writing the content for every page, which is often the slowest part whoever builds the site.</li>
+  <li>Taking or sourcing photos you have the right to use, and compressing them.</li>
+  <li>Building layouts that work on phones, where most visitors arrive, not just on a laptop.</li>
+  <li>Setting up forms, a WhatsApp button and click-to-call, and making sure form emails actually arrive.</li>
+</ul>
+<h3>Before and after launch</h3>
+<ul>
+  <li>SEO basics: page titles, descriptions, headings, a sitemap and Google Search Console.</li>
+  <li>Analytics that count enquiries, not just visits.</li>
+  <li>Backups, security and updates, which on WordPress are your responsibility every month.</li>
+  <li>Privacy and terms pages that match how your site actually collects data.</li>
+</ul>
+<p>None of this is beyond a determined owner. The question is whether it's the best use of your time, and whether you'll know when something has quietly gone wrong.</p>
+
+<h2>When building it yourself makes sense</h2>
+<ul>
+  <li>You're testing an idea before investing in it, and a simple page is enough to start.</li>
+  <li>The site is purely informational: what you do, where you are, how to contact you.</li>
+  <li>Your budget genuinely can't stretch to a professional build yet.</li>
+  <li>You enjoy learning tools like this, and have evenings or weekends to spare.</li>
+  <li>Most of your customers come from referrals, walk-ins or WhatsApp, and the site is a back-up rather than the main way they find you.</li>
+</ul>
+<p>For the very simplest cases, a free builder can be enough for a while; <a href="/blog/wordpress-vs-google-sites/">WordPress vs Google Sites</a> explains where free tools stop being good enough.</p>
+
+<h2>When hiring a developer pays off</h2>
+<ul>
+  <li><strong>The website is a main source of enquiries or sales.</strong> A form that fails silently or a slow page costs real money every day it goes unnoticed.</li>
+  <li><strong>You need features:</strong> UPI and card payments, GST-ready invoices, bookings, a product catalogue, a store, member logins or a second language.</li>
+  <li><strong>You have rankings to protect.</strong> Redesigning a site that already gets search traffic without a redirect plan is one of the easiest ways to lose it.</li>
+  <li><strong>You have a deadline,</strong> such as a launch, an exhibition or an ad campaign.</li>
+  <li><strong>Your time is worth more running the business.</strong> If learning a builder takes you away from paying work, DIY isn't really free.</li>
+  <li><strong>A DIY site already exists and isn't working.</strong> Visitors arrive but don't enquire, it looks wrong on phones, or you can't work out why Google ignores it.</li>
 </ul>
 
-<p>Thinking of a free builder like Google Sites? Here's <a href="/blog/wordpress-vs-google-sites/">when a free website is enough, and when it isn't</a>.</p>
-
-<h2>Hiring a developer makes sense when...</h2>
+<h2>What hiring costs, and what drives the price</h2>
+<p>DIY costs are mostly running costs: a builder subscription, whose price you should check on the provider's own pricing page because plans change, or for WordPress, hosting at roughly ₹2,500 to ₹15,000 a year and a domain at about ₹500 to ₹1,200 a year, plus any premium theme or plugin licences.</p>
+<p>For a professional build, my <a href="/blog/wordpress-website-cost-india/">WordPress cost guide</a> gives typical freelance ranges in India: ₹5,000 to ₹15,000 for a landing page, ₹15,000 to ₹40,000 for a small business site of five to eight pages, ₹35,000 to ₹80,000 for a larger business or B2B site, and ₹30,000 to ₹90,000 or more for a WooCommerce store. Agencies usually charge more for the same scope. Hosting and domain are paid on top either way.</p>
+<p>What moves a quote within those ranges:</p>
 <ul>
-  <li>Your website is a key source of leads or sales</li>
-  <li>You need features: online payments, bookings, stores, integrations, multiple languages</li>
-  <li>SEO and speed matter for your growth</li>
-  <li>You're redesigning a site with existing rankings (to avoid losing them)</li>
-  <li>Your time is better spent running the business</li>
+  <li>The number of unique page layouts, more than the total number of pages.</li>
+  <li>An adapted quality theme versus a fully custom design.</li>
+  <li>Features and integrations: payments, bookings, a CRM, calculators, languages.</li>
+  <li>How much help you need with content.</li>
+  <li>Whether an old site has to be migrated, with redirects for its URLs.</li>
 </ul>
+<p>The <a href="/website-cost-calculator/">website cost calculator</a> gives a rough range for your own mix of pages and features.</p>
 
-<h2>The hidden costs of DIY</h2>
+<h2>The risks on each side, and how to reduce them</h2>
+<table>
+  <thead><tr><th>Risk</th><th>DIY</th><th>Hiring</th><th>How to reduce it</th></tr></thead>
+  <tbody>
+    <tr><td>Hidden technical problems</td><td>High: slow pages, broken forms and missing SEO basics often go unnoticed</td><td>Lower, if the developer tests properly</td><td>Test forms from a phone, run a speed test, connect Search Console</td></tr>
+    <tr><td>Losing control of accounts</td><td>Low, if you register everything yourself</td><td>Real, if the domain or hosting is bought in the developer's name</td><td>Keep every account in your name; see the <a href="/blog/website-ownership-checklist/">website ownership checklist</a></td></tr>
+    <tr><td>Platform lock-in</td><td>Real on hosted builders, whose designs can't be moved to another platform</td><td>Lower on WordPress, which you can move between hosts</td><td>Choose the platform for where the business is going, not just for today</td></tr>
+    <tr><td>Scope and cost creep</td><td>Your time grows instead of the invoice</td><td>Extra charges for features nobody mentioned</td><td>A written brief and a written scope before any payment</td></tr>
+    <tr><td>Poor quality</td><td>Depends on your skills</td><td>Pirated themes, no testing, a developer who disappears</td><td>Check live work, ask what they personally built, insist on genuine licences</td></tr>
+  </tbody>
+</table>
+
+<h2>The middle path most small businesses take</h2>
+<p>You don't have to choose between doing everything and doing nothing:</p>
+<ol>
+  <li>A developer plans the pages and builds a fast, mobile-first foundation with forms, tracking and SEO basics in place.</li>
+  <li>You write or approve the content, and edit text, photos, prices and blog posts yourself afterwards; <a href="/blog/edit-website-content-wordpress/">editing your WordPress content yourself</a> shows how.</li>
+  <li>You bring in help only for technical work: speed, security, new features, or a fix after an update.</li>
+  <li>If you'd rather not think about updates and backups at all, a maintenance plan covers them.</li>
+</ol>
+<p>This keeps the build cost reasonable and the day-to-day control with you.</p>
+
+<h2>Decision table: which route fits your situation?</h2>
+<table>
+  <thead><tr><th>Your situation</th><th>Usually the better route</th></tr></thead>
+  <tbody>
+    <tr><td>Testing an idea with almost no budget</td><td>DIY on a builder, or a single page</td></tr>
+    <tr><td>A simple information site, and you're comfortable with technology</td><td>DIY on WordPress with a lightweight theme, perhaps with a developer review before launch</td></tr>
+    <tr><td>The website should bring regular enquiries</td><td>A developer, with you editing content afterwards</td></tr>
+    <tr><td>An online store with UPI, cards and cash on delivery</td><td>A developer who has built stores before</td></tr>
+    <tr><td>Redesigning a site that already ranks</td><td>A developer, with a redirect plan</td></tr>
+    <tr><td>You need branding, copywriting and ads alongside the site</td><td>An agency, or a freelancer working with your other suppliers</td></tr>
+    <tr><td>A landing page for an ad campaign</td><td>A developer who sets up conversion tracking</td></tr>
+    <tr><td>A DIY site that looks fine but brings nothing</td><td>A review first; it may need fixes rather than a rebuild</td></tr>
+  </tbody>
+</table>
+
+<h2>If you do build it yourself</h2>
 <ul>
-  <li>Time learning, building and troubleshooting</li>
-  <li>Slow or insecure setups that cost visitors later</li>
-  <li>Missing SEO basics: structure, redirects, schema, indexing</li>
-  <li>Design that doesn't convert as well as it could</li>
+  <li>Register the domain in your own name, with auto-renew on.</li>
+  <li>Choose a platform you can grow on, and a lightweight theme if it's WordPress.</li>
+  <li>Keep the first version small: home, services, about and contact, done well.</li>
+  <li>Send yourself a test enquiry from your phone, and check it arrives.</li>
+  <li>Connect Google Search Console and submit a sitemap.</li>
+  <li>Set up backups and updates before you forget.</li>
 </ul>
-
-<p>Want to handle updates yourself? See <a href="/blog/edit-website-content-wordpress/">how to edit your WordPress content</a>.</p>
-
-<h2>A middle path</h2>
-<ul>
-  <li>Have a developer set up a solid, fast foundation you can edit yourself</li>
-  <li>Update content, blog posts and photos yourself</li>
-  <li>Hire help for technical tasks: speed, security, SEO setup, new features</li>
-  <li>Use a maintenance plan for updates and backups</li>
-</ul>
-<p>This gives you control without the risks; see <a href="/blog/website-maintenance-vs-management/">maintenance vs management</a>.</p>
+<p>The <a href="/blog/website-launch-checklist/">website launch checklist</a> has the full list to run through before you tell anyone the site is live.</p>
 
 <p>Not sure what you'd be paying for? See <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer does</a> and <a href="/blog/web-designer-vs-web-developer/">designer vs developer</a>.</p>
 
-<h2>If you hire, choose well</h2>
-<p>Check live work, get a clear quote and keep ownership of your accounts; see <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> and the <a href="/blog/website-brief-template/">website brief template</a>.</p>
+<h2>FAQs</h2>
+<h3>Can I build a WordPress website myself without coding?</h3>
+<p>Yes. Themes and page builders such as Elementor let you build pages visually. What takes longer to learn is the rest: hosting, email delivery, speed, security and SEO settings, which no builder fully handles for you.</p>
+<h3>Is a DIY website bad for SEO?</h3>
+<p>Not automatically. Google ranks pages on their content, structure, speed and links, not on who built them. DIY sites tend to struggle because the basics get missed: one page for every service, sensible titles, a sitemap and fast mobile pages.</p>
+<h3>How much does it cost to hire a website developer in India?</h3>
+<p>Typical freelance ranges run from ₹5,000 to ₹15,000 for a landing page to ₹15,000 to ₹40,000 for a small business site, with larger sites and stores higher. Agencies usually charge more. Get a fixed quote against a written brief rather than relying on ranges.</p>
+<h3>Can I start with DIY and hire a developer later?</h3>
+<p>Yes, and many businesses do. Keep the domain in your name, keep your content and photos organised, and if you're on a hosted builder, expect the design to be rebuilt rather than moved when you switch platforms.</p>
+<h3>Will I be able to edit a website a developer builds?</h3>
+<p>You should be. Ask before you hire how the site will be built and whether you'll be shown how to edit it. A site you can't change without paying someone each time is a warning sign.</p>
 
-<p>Want an estimate first? Try the <a href="/website-cost-calculator/">website cost calculator</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
+<p>If your website needs to bring in enquiries and you'd rather spend your time on the business, <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for a fixed quote after a free review, with every account in your name. For a full new site you can edit yourself, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -20223,70 +20581,165 @@ add_filter( 'comments_array', function( $comments, $post_id ) {
   },
   {
     slug: 'diy-website-audit',
-    seoTitle: 'How to Audit Your Own Website (No Tech Skills Needed)',
-    title: 'How to Audit Your Own Website in an Hour (No Technical Skills Needed)',
-    description: 'Audit your own website in an hour, no tech skills needed: first impressions, mobile, speed, contact paths, content, trust, Google visibility and security.',
+    seoTitle: 'How to Audit Your Own Website in an Hour (Free Scorecard)',
+    title: 'How to Audit Your Own Website in 30 to 60 Minutes: A Step-by-Step Self-Audit With Free Tools and a Scorecard (No Technical Skills Needed)',
+    description: 'Audit your own website in under an hour with free tools: mobile, speed, forms, SEO basics, security, content, trust and analytics, plus a simple scorecard.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-seo-services', 'wordpress-maintenance'],
     body: `
-<p>You don't need to be technical to spot the problems that cost your website enquiries. Set aside an hour, open your site on your phone and computer, and work through this audit.</p>
+<p>You can audit your own website in 30 to 60 minutes with a phone, a laptop and free tools. Check nine things: the first impression, how the site works on a phone, speed, whether forms, calls and WhatsApp actually reach you, how you appear in Google, basic security, whether the content is accurate, the trust signals visitors look for, and whether analytics records enquiries. Score each area as you go, fix anything that stops enquiries first, and use the total to decide whether you need a few fixes, a refresh or a redesign.</p>
+<p>A professional <a href="/website-redesign/">website redesign</a> starts with a more detailed version of this: an audit of which pages bring visitors, rankings and enquiries today, so nothing that works is lost. If your score shows only a few weak areas, fixes or a refresh may be enough, and if the problem is Google rather than the design, the technical audit in <a href="/wordpress-seo-services/">WordPress SEO services</a> covers crawling, indexing, speed, schema and internal links.</p>
+<p>This self-audit doesn't need technical skills. For a deeper technical check, use the <a href="/blog/technical-seo-audit-wordpress/">WordPress technical SEO audit</a> checklist afterwards.</p>
 
-<h2>1. First impression (5 minutes)</h2>
+<h2>Before you start: what you need</h2>
 <ul>
-  <li>Can someone tell what you do within five seconds of landing on the homepage?</li>
-  <li>Is there a clear next step (call, WhatsApp, quote)?</li>
-  <li>Does it look current and professional?</li>
+  <li>Your own phone, and if possible a second phone from a friend or family member.</li>
+  <li>A laptop with a private or incognito browser window, so you see the site as a stranger does.</li>
+  <li>Your three most important services or products, and the searches you'd expect customers to use.</li>
+  <li>Access to Google Search Console and Google Analytics, if you have them. The audit still works without.</li>
+</ul>
+<table>
+  <thead><tr><th>Free tool</th><th>What it checks</th></tr></thead>
+  <tbody>
+    <tr><td>PageSpeed Insights</td><td>Speed and Core Web Vitals, from real visitors and a lab test</td></tr>
+    <tr><td>Google Search Console</td><td>Which pages are indexed, which searches show your site, and any errors</td></tr>
+    <tr><td>Google search itself</td><td>How your business appears for its name and its services</td></tr>
+    <tr><td>Lighthouse in Chrome</td><td>Performance, accessibility and SEO basics for any page</td></tr>
+    <tr><td>WordPress Site Health</td><td>Under Tools, Site Health: outdated software and configuration warnings</td></tr>
+    <tr><td>Rich Results Test</td><td>Whether Google can read your structured data</td></tr>
+  </tbody>
+</table>
+
+<h2>The scorecard</h2>
+<p>Score each area as you work through the steps below: 0 if it's broken or missing, 1 if it works but is weak, 2 if it's good.</p>
+<table>
+  <thead><tr><th>Area</th><th>Time</th><th>Score 2 if</th><th>Score (0 to 2)</th></tr></thead>
+  <tbody>
+    <tr><td>1. First impression</td><td>5 min</td><td>A stranger knows what you do and what to do next within seconds</td><td></td></tr>
+    <tr><td>2. Mobile</td><td>10 min</td><td>Everything is readable and tappable on a phone, with contact one tap away</td><td></td></tr>
+    <tr><td>3. Speed</td><td>5 min</td><td>Key pages load quickly on a phone and pass Core Web Vitals where data exists</td><td></td></tr>
+    <tr><td>4. Contact paths</td><td>10 min</td><td>Form, WhatsApp and phone all reach you, and details match everywhere</td><td></td></tr>
+    <tr><td>5. Google visibility</td><td>10 min</td><td>You rank for your name, key pages are indexed, results look right</td><td></td></tr>
+    <tr><td>6. Security and upkeep</td><td>5 min</td><td>HTTPS everywhere, software up to date, backups you can find</td><td></td></tr>
+    <tr><td>7. Content accuracy</td><td>5 min</td><td>Services, prices, hours and contact details are current, with a page per main service</td><td></td></tr>
+    <tr><td>8. Trust</td><td>5 min</td><td>Real photos, reviews or testimonials, an About page and policies</td><td></td></tr>
+    <tr><td>9. Analytics</td><td>5 min</td><td>Enquiries are tracked, and the accounts are in your name</td><td></td></tr>
+  </tbody>
+</table>
+<p>Short of time? Do steps 1, 2, 4 and 5 in about 30 minutes; they catch most of the problems that cost enquiries.</p>
+
+<h2>Step 1: First impression (5 minutes)</h2>
+<ul>
+  <li>Open the homepage in a private window. Can a stranger tell what you do, and where, within a few seconds?</li>
+  <li>Is there one obvious next step, such as call, WhatsApp or get a quote, without scrolling?</li>
+  <li>Does it look current, with real photos rather than dated stock images?</li>
 </ul>
 
-<h2>2. Mobile check (10 minutes)</h2>
+<h2>Step 2: Mobile (10 minutes)</h2>
 <ul>
-  <li>Is text readable without zooming?</li>
-  <li>Are buttons easy to tap?</li>
-  <li>Any sideways scrolling or overlapping content?</li>
-  <li>Can you call or WhatsApp in one tap?</li>
+  <li>Use your own phone, not a desktop browser squeezed narrow.</li>
+  <li>Is text readable without zooming, and are buttons easy to tap with a thumb?</li>
+  <li>Does anything scroll sideways, overlap or get cut off?</li>
+  <li>Does the menu open and close properly, and does every link in it work?</li>
+  <li>Can you call or WhatsApp in one tap from any page?</li>
+  <li>Do popups or cookie banners cover the content and refuse to close?</li>
+</ul>
+<p>Repeat the quick checks on a second phone if you can; problems often appear on only one screen size.</p>
+
+<h2>Step 3: Speed (5 minutes)</h2>
+<p>Run your homepage and one main service page through PageSpeed Insights, on the mobile tab. The top section shows field data from real visitors, if the site has enough traffic; the lower section is a lab test with suggestions. Note whether the page passes the Core Web Vitals assessment, and the first few suggestions. Don't chase a perfect score: focus on how the page feels on a real phone and on what real visitors experience. <a href="/blog/website-speed-test-tools-explained/">Speed test tools explained</a> shows how to read the results.</p>
+
+<h2>Step 4: Contact paths (10 minutes)</h2>
+<ul>
+  <li>Submit your own contact form from your phone. Did a thank-you message appear, and did the email arrive, and not in spam?</li>
+  <li>Tap the WhatsApp button: does it open a chat with the right number and a sensible message?</li>
+  <li>Tap the phone number: does it dial the right line, and does someone answer during your listed hours?</li>
+  <li>Are the phone number, email and address the same on every page, in the footer and on your Google profile?</li>
+</ul>
+<p>Score this area 0 if any of these fails, whatever else is right; a broken form costs enquiries every day it goes unnoticed. If the form is the problem, <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a> walks through the fixes.</p>
+
+<h2>Step 5: Google visibility and SEO basics (10 minutes)</h2>
+<ul>
+  <li><strong>Search your business name.</strong> Does your website appear first, and does your Business Profile show alongside it?</li>
+  <li><strong>Search your main service plus your city.</strong> Where do you appear, and which of your pages shows up?</li>
+  <li><strong>Search site:yourdomain.com</strong> to see a rough sample of the pages Google has indexed. Any missing key pages, or junk such as test pages?</li>
+  <li><strong>Read your results:</strong> do the titles and descriptions describe each page clearly?</li>
+  <li><strong>In Search Console, if you have it,</strong> check the Pages report for important pages that aren't indexed, and the Performance report for the searches you appear for.</li>
+  <li><strong>In WordPress,</strong> confirm Settings, Reading doesn't have "Discourage search engines from indexing this site" ticked.</li>
+</ul>
+<p>For each key page, the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a> covers titles, headings, content and links in more depth.</p>
+
+<h2>Step 6: Security and upkeep (5 minutes)</h2>
+<ul>
+  <li>Does every page load on https, with no browser warning?</li>
+  <li>In WordPress, does Dashboard, Updates show a long list of pending updates? Does Tools, Site Health flag critical issues?</li>
+  <li>Under Users, filtered by Administrator, do you recognise every account?</li>
+  <li>Do you know when the last backup was taken, and is a copy stored away from your hosting?</li>
+  <li>Has your host sent warnings about PHP versions, malware or resource limits?</li>
+</ul>
+<p>If several of these worry you, the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> lists what to do first.</p>
+
+<h2>Step 7: Content accuracy (5 minutes)</h2>
+<ul>
+  <li>Are your services, prices, hours, team and offers all current?</li>
+  <li>Does each main service have its own page, or are they squeezed into one list?</li>
+  <li>Any old offers, past event dates or an outdated copyright year in the footer?</li>
+  <li>Click a few internal links at random: any "page not found" errors?</li>
 </ul>
 
-<h2>3. Speed (5 minutes)</h2>
-<p>Test your homepage on PageSpeed Insights (mobile). Note the Core Web Vitals and top suggestions; see <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</p>
-
-<h2>4. Contact paths (10 minutes)</h2>
+<h2>Step 8: Trust (5 minutes)</h2>
 <ul>
-  <li>Submit your own contact form: did the email arrive?</li>
-  <li>Are phone number, WhatsApp and address correct everywhere?</li>
-  <li>Is contact information visible on every page?</li>
+  <li>Are there real photos of you, your team, your premises or your work?</li>
+  <li>Are there genuine reviews, testimonials or case studies, used with permission?</li>
+  <li>Does the About page say who is behind the business and why customers can trust you?</li>
+  <li>Are registration details, certifications or memberships shown, where they apply to your field?</li>
+  <li>Is there a privacy policy, and does it match what the site actually collects?</li>
+</ul>
+<p>The <a href="/blog/website-trust-signals-checklist/">website trust signals checklist</a> goes through each signal in more detail.</p>
+
+<h2>Step 9: Analytics (5 minutes)</h2>
+<ul>
+  <li>Is Google Analytics recording visits today? Check the realtime report while you browse the site.</li>
+  <li>Are form submissions, WhatsApp clicks and phone taps tracked as key events, or only page views?</li>
+  <li>Is Search Console connected, and are both accounts owned by your business rather than a former developer or agency?</li>
 </ul>
 
-<h2>5. Content (10 minutes)</h2>
-<ul>
-  <li>Does each main service have its own page?</li>
-  <li>Are prices, hours, team and services up to date?</li>
-  <li>Are there testimonials, case studies or real photos?</li>
-</ul>
+<h2>What your score means</h2>
+<table>
+  <thead><tr><th>Total (out of 18)</th><th>What it usually means</th><th>Likely next step</th></tr></thead>
+  <tbody>
+    <tr><td>15 to 18</td><td>The basics are in place</td><td>Small fixes, then content and SEO improvements</td></tr>
+    <tr><td>9 to 14</td><td>Specific weak areas</td><td>Targeted fixes or a refresh of content, photos, buttons and speed</td></tr>
+    <tr><td>Below 9, or 0 in mobile, contact or security</td><td>Problems that cost enquiries now</td><td>Urgent fixes first, then consider a redesign</td></tr>
+  </tbody>
+</table>
+<p>This is a rough guide rather than a precise measure. The pattern matters more than the total: low scores in mobile, speed, trust and Google visibility together usually mean the site's foundations need rebuilding, while one or two low scores can often be fixed on their own. <a href="/blog/website-refresh-vs-redesign/">Website refresh vs redesign</a> has a short decision test, and <a href="/blog/signs-you-need-a-new-website/">signs you need a new website</a> describes each warning sign in more depth.</p>
 
-<h2>6. Google visibility (10 minutes)</h2>
-<ul>
-  <li>Search your business name: do you appear, with a Google Business Profile?</li>
-  <li>Search your main service plus city: where do you appear?</li>
-  <li>Search <code>site:yourdomain.com</code> to see roughly how many pages are indexed</li>
-</ul>
-
-<h2>7. Security basics (5 minutes)</h2>
-<ul>
-  <li>Does every page show the padlock (HTTPS)?</li>
-  <li>When were WordPress and plugins last updated?</li>
-  <li>Do you have recent backups?</li>
-</ul>
-
-<h2>8. Prioritise (5 minutes)</h2>
+<h2>Fix in this order</h2>
 <ol>
-  <li>Broken forms or contact details: fix today</li>
-  <li>Mobile and speed problems</li>
-  <li>Missing service pages and proof</li>
-  <li>SEO and content improvements</li>
+  <li><strong>Anything that stops enquiries:</strong> broken forms, wrong phone numbers, dead WhatsApp buttons. Fix today.</li>
+  <li><strong>Security:</strong> pending updates, unknown administrators, missing backups.</li>
+  <li><strong>Mobile problems</strong> that make the site hard to use on a phone.</li>
+  <li><strong>Speed</strong> on your key pages.</li>
+  <li><strong>Missing service pages and proof,</strong> such as photos, reviews and case studies.</li>
+  <li><strong>SEO and content improvements:</strong> titles, descriptions, internal links and new content.</li>
 </ol>
 
-<p>For a deeper look, see the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit</a>. If the list is long, consider a <a href="/website-redesign/">redesign</a>.</p>
+<h2>FAQs</h2>
+<h3>How often should I audit my own website?</h3>
+<p>Every few months is a sensible rhythm, and always after a redesign, a hosting move, a big plugin update or a change of developer. Test the contact form more often, ideally every month.</p>
+<h3>Can I audit my website without Search Console?</h3>
+<p>Yes. Google searches, PageSpeed Insights and your own phone cover most of the checks. Search Console adds the indexing and search data, so set it up when you can; it's free.</p>
+<h3>What PageSpeed score should I aim for?</h3>
+<p>Focus less on the headline score and more on whether real visitors get a fast page, which is what the Core Web Vitals assessment in the field data shows. A page that feels quick on a mid-range phone matters more than a perfect lab number.</p>
+<h3>Are free online SEO audit reports worth using?</h3>
+<p>They can point you to issues, but they often list dozens of minor items with alarming labels. Treat them as a starting list, and be wary of cold emails offering "audits" that are really sales pitches.</p>
+<h3>Do low scores mean I need a new website?</h3>
+<p>Not necessarily. Broken forms, slow images and outdated content can be fixed on the current site. A redesign makes sense when the problems are structural: the site isn't built for phones, can't be updated safely or no longer fits your business.</p>
+
+<p>Scored low across the board, or not sure what to fix first? A <a href="/website-redesign/">website redesign</a> starts with a full audit of what already works, so the rankings and enquiries you have are protected. If the design is fine but Google isn't finding you, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -21062,66 +21515,133 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   },
   {
     slug: 'website-ownership-checklist',
-    seoTitle: 'Website Ownership Checklist: What You Must Own and Control',
-    title: 'Website Ownership Checklist: Make Sure You Truly Own Your Website',
-    description: 'Website ownership checklist: domain, hosting, admin access, DNS, email, licences, analytics accounts, design files and backups your business must control.',
+    seoTitle: 'Website Ownership Checklist: Every Account You Must Own',
+    title: 'Website Ownership Checklist: Every Account Your Business Should Own, How to Check Who Controls It, and What to Give Your Developer',
+    description: 'Website ownership checklist: domain, DNS, hosting, WordPress, email, Google accounts, licences and payment gateways, and how to check who owns each.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-migration', 'wordpress-maintenance'],
     body: `
-<p>Many business owners discover too late that their domain, hosting or website admin is registered in a developer's or agency's name. If that relationship ends badly, getting control back can take weeks. Use this checklist to make sure you own what you've paid for.</p>
+<p>Your business should own every account its website depends on: the domain registrar, DNS, hosting, the WordPress administrator account, business email, Google Search Console, Analytics and Business Profile, any premium theme or plugin licences, and the payment gateway if you take payments. Each should be registered in your business name, use an email address you control, and let you add or remove other people. Developers and agencies should work through their own user accounts, never as the owner.</p>
+<p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, the domain and hosting should be registered in your name, you get your own administrator login, and any temporary access I used can be removed at the end. If the accounts currently sit in someone else's name, I can help you move them into yours, and a site on a previous developer's server can be moved to hosting you own through <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<p>This checklist is for confirming ownership before there's a problem. If you're already locked out, <a href="/blog/regain-website-access-old-developer/">regaining control from a previous developer</a> covers recovery, step by step.</p>
 
-<h2>1. Domain name</h2>
+<h2>Ownership vs access: the difference that matters</h2>
+<p>Many business owners believe they own their website because they have a password. A password is access. Ownership means three things:</p>
 <ul>
-  <li>Registered in your business name, with your email as the owner contact</li>
-  <li>You have the registrar login</li>
-  <li>Auto-renew on, with a payment method you control</li>
+  <li><strong>The account is registered to your business,</strong> with your business email as the login and recovery address.</li>
+  <li><strong>You pay the bill,</strong> or at least the invoices are addressed to you and renewals don't depend on someone else's card.</li>
+  <li><strong>You control who else gets in.</strong> You can add a developer, change their role and remove them without asking anyone.</li>
+</ul>
+<p>If a developer holds the owner account and gave you a login, you have access only while that relationship lasts, which is fine until the day it ends.</p>
+
+<h2>The website ownership checklist</h2>
+<p>Work down this table and tick each row only when all three conditions above are true.</p>
+<table>
+  <thead><tr><th>Account</th><th>What it controls</th><th>You own it when</th><th>How to check</th></tr></thead>
+  <tbody>
+    <tr><td>Domain registrar</td><td>Your domain name, its renewal and where it points</td><td>The domain sits in a registrar account under your business email, with auto-renew on your payment method</td><td>A WHOIS or RDAP lookup shows the registrar and expiry date; then log in and confirm the domain is listed in your account</td></tr>
+    <tr><td>DNS</td><td>Where the website, email and verification records point</td><td>The DNS zone is in your registrar, your host or a Cloudflare account in your name</td><td>A nameserver lookup shows where DNS is managed; log in there and find the records</td></tr>
+    <tr><td>Hosting</td><td>The site's files, database, backups and server settings</td><td>The hosting account is yours and the site appears in your panel</td><td>Log in to the hosting panel; check invoices are addressed to you</td></tr>
+    <tr><td>WordPress</td><td>Everything on the site</td><td>You have your own Administrator account with your email</td><td>Users, All Users, filtered by Administrator</td></tr>
+    <tr><td>Business email</td><td>Your mailboxes and the addresses your customers use</td><td>The email admin account (Google Workspace, Microsoft 365, Zoho or hosting email) is yours</td><td>An MX lookup shows the provider; log in to its admin console</td></tr>
+    <tr><td>Google Search Console</td><td>Search data and the site's verification with Google</td><td>Your business Google account is an Owner of the property</td><td>Settings, Users and permissions</td></tr>
+    <tr><td>Google Analytics 4</td><td>Your visitor and enquiry data</td><td>Your account has the Administrator role at account level</td><td>Admin, Account access management</td></tr>
+    <tr><td>Google Business Profile</td><td>Your Maps listing, reviews and photos</td><td>You are the primary owner</td><td>The profile's people and access settings</td></tr>
+    <tr><td>Premium licences</td><td>Updates and support for paid themes and plugins, such as Elementor Pro</td><td>Each licence was bought with your business email</td><td>The licence screen in WordPress, or the vendor's account page</td></tr>
+    <tr><td>Payment gateway</td><td>Online payments and settlements</td><td>The merchant account and KYC are in your business name, settling to your bank account</td><td>Log in to the gateway dashboard and check the business details and API keys</td></tr>
+  </tbody>
+</table>
+<p>ICANN's lookup tool at lookup.icann.org covers .com and most generic domains; for .in, use a registrar's WHOIS search.</p>
+
+<h2>The accounts people forget</h2>
+<p>These smaller services cause just as much trouble in the wrong hands:</p>
+<ul>
+  <li><strong>Google Tag Manager,</strong> if your tracking runs through it. You should be an Administrator of the account, not only a user of the container.</li>
+  <li><strong>Meta business tools,</strong> called a business portfolio at the time of writing: your Facebook page, Instagram account, ad account and Pixel should belong to your portfolio, with your agency added as a partner.</li>
+  <li><strong>Google Ads,</strong> with your own account and billing, linked to your agency's manager account if they run campaigns.</li>
+  <li><strong>The email sending service</strong> behind your contact forms, if the site uses one.</li>
+  <li><strong>Google Cloud,</strong> if the site uses a Maps or other Google API key, since the key and its billing sit in someone's account.</li>
+  <li><strong>Backup storage,</strong> such as a cloud drive that a backup plugin sends copies to.</li>
+  <li><strong>Uptime monitoring, CDN and security services,</strong> plus any WhatsApp Business API, CRM or booking tool connected to the site.</li>
+  <li><strong>Brand and design files:</strong> logo files in vector format, the Figma or design files, fonts and the licences for any stock photos used.</li>
 </ul>
 
-<p>Domain stuck in someone else's account? See <a href="/blog/transfer-domain-to-another-registrar/">how to transfer a domain safely</a>.</p>
+<h2>How to check who owns each account, in about an hour</h2>
+<ol>
+  <li><strong>Search your inbox</strong> for "renewal", "invoice" and "receipt" with the names of your registrar and host. Whoever receives those emails is usually the account holder.</li>
+  <li><strong>Look up the domain</strong> to find the registrar, then log in there with your business email. If the domain isn't in your account, it's in someone else's.</li>
+  <li><strong>Find where DNS lives</strong> with a nameserver lookup. If the nameservers point to Cloudflare or a host you don't have a login for, someone else controls your DNS.</li>
+  <li><strong>Check WordPress users.</strong> Under Users, filter by Administrator. You should see your own account, and you should recognise every other one. Old developers who still have Administrator access are a security risk as well as an ownership one; <a href="/blog/wordpress-user-accounts-audit/">auditing your WordPress user accounts</a> walks through the clean-up.</li>
+  <li><strong>Open each Google tool with your business Google account</strong> and note your role. "Full user" in Search Console or "Viewer" in Analytics means someone else is in charge.</li>
+  <li><strong>Check licences and payment accounts.</strong> In WordPress, open each premium plugin's licence screen and note the account email. In the payment gateway, check the business name and settlement bank account.</li>
+</ol>
+<p>Write the results down as you go. A row you can't complete is your to-do list.</p>
 
-<h2>2. DNS</h2>
-<p>You know where DNS is managed (registrar, host or a service like Cloudflare) and have access. DNS controls your website and email routing; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+<h2>What to give a developer instead of your logins</h2>
+<p>A developer needs to get in to do the work. They don't need to own anything, and they shouldn't need your personal passwords.</p>
+<table>
+  <thead><tr><th>Account</th><th>Give your developer</th><th>Keep for yourself</th></tr></thead>
+  <tbody>
+    <tr><td>WordPress</td><td>Their own user: Administrator while building, Editor or nothing afterwards unless they maintain the site</td><td>Your own Administrator account</td></tr>
+    <tr><td>Hosting</td><td>Shared or collaborator access if your host offers it, or SFTP and database details for the project</td><td>The main account login and billing</td></tr>
+    <tr><td>Search Console</td><td>Full user</td><td>Owner</td></tr>
+    <tr><td>Google Analytics 4</td><td>Editor or Administrator on the property</td><td>Administrator on the account</td></tr>
+    <tr><td>Business Profile</td><td>Manager</td><td>Primary owner</td></tr>
+    <tr><td>Meta business tools</td><td>Partner access to the assets they need</td><td>The business portfolio itself</td></tr>
+    <tr><td>Registrar and DNS</td><td>A temporary change made together on a call, or a DNS record you add yourself</td><td>Everything</td></tr>
+  </tbody>
+</table>
+<p>Some hosts let you share access to an account without sharing the password; Hostinger, for example, has an account sharing option in hPanel at the time of writing. If you do share a password to save time, change it once the work is done. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> covers which role suits which person.</p>
 
-<h2>3. Hosting account</h2>
+<h2>Where ownership usually goes wrong</h2>
 <ul>
-  <li>The account is in your name, or you have full access if a developer manages it</li>
-  <li>You know the renewal date and cost</li>
+  <li><strong>The domain was bought in the developer's reseller account.</strong> The registrar then treats the developer as its customer. Ask for it to be moved into an account in your name; <a href="/blog/transfer-domain-to-another-registrar/">transferring a domain</a> explains the codes and locks.</li>
+  <li><strong>The site sits on the developer's shared hosting</strong> alongside their other clients. If they stop paying, or fall out with you, the site goes with it.</li>
+  <li><strong>Premium licences are on the developer's account.</strong> When their licence lapses, updates stop, and security fixes stop with them. Licences often can't be transferred, so buying one in your name is usually simpler.</li>
+  <li><strong>Analytics was set up in an agency's Google account.</strong> Your history stays with them unless they add you as an Administrator.</li>
+  <li><strong>An SEO agency created your Business Profile</strong> and is the primary owner of your Maps listing and its reviews.</li>
+  <li><strong>The payment gateway keys belong to a test account</strong> the developer created, or the gateway was opened under their details. Payments must settle to your business, under your own KYC.</li>
+  <li><strong>Mailboxes sit inside the developer's Google Workspace or Zoho account,</strong> so your business email depends on their subscription.</li>
+</ul>
+<p>Most of these began as shortcuts, not bad intent, and they're far easier to fix while the relationship is good.</p>
+
+<h2>Make ownership part of the project from day one</h2>
+<p>Ownership is easiest to get right before work starts. Ask for these in writing:</p>
+<ul>
+  <li>The domain, hosting and premium licences are bought in your business name, with your email, even if the developer sets them up.</li>
+  <li>You own the website, its content and the design once it's paid for, in whatever form your agreement sets out. The <a href="/blog/website-design-contract-checklist/">website contract checklist</a> covers how to word this, and a lawyer can review anything important.</li>
+  <li>At the end you receive every login, a full backup and documentation, using the <a href="/blog/website-handover-checklist/">website handover checklist</a>.</li>
 </ul>
 
-<h2>4. WordPress administrator access</h2>
-<p>You have your own Administrator account, not just an Editor account. Developers should have their own separate logins that you can remove.</p>
+<h2>Keep an ownership record</h2>
+<p>Once every account is in your name, write it down in one place. A password manager the business controls is ideal; a simple record like this one, stored safely, is the minimum:</p>
+<pre><code>WEBSITE ACCOUNTS RECORD
+Account:            (e.g. domain registrar)
+Provider:
+Login email:
+Owner (business):
+Others with access, and their role:
+Two-factor authentication on? (yes / no)
+Renewal date and amount:
+Paid by (card or account):
+Last checked:</code></pre>
+<p>Switch on two-factor authentication wherever it's offered, make sure recovery emails and phone numbers belong to the business rather than a former employee, and put every renewal date in a shared calendar. The <a href="/blog/domain-hosting-renewal-checklist/">domain, hosting, email and licence renewals checklist</a> helps you track them. Review the record once a year, and whenever a developer, agency or staff member leaves.</p>
 
-<h2>5. Technical access</h2>
-<p>You know how to get SFTP and database access, or at least have the hosting login that provides it.</p>
+<h2>FAQs</h2>
+<h3>Is it normal for a developer to register my domain for me?</h3>
+<p>It's common, and it's fine if they register it in your name, with your email, in an account you can log in to. The problem is a domain registered in the developer's own name or reseller account, because the registrar then treats them as the owner.</p>
+<h3>Can I let my developer keep the hosting if it's part of their package?</h3>
+<p>It can work, especially with a maintenance plan, but agree in writing that you can have a full backup or a move to your own hosting at any time. Owning the hosting yourself is simpler.</p>
+<h3>Should my developer still have Administrator access after launch?</h3>
+<p>Only if they're maintaining the site. Otherwise, change their account to Editor or delete it, attributing any content to your account, and invite them back when you need them.</p>
+<h3>What is the difference between an Owner and a Full user in Search Console?</h3>
+<p>An Owner can add and remove users and manage the property's settings. A Full user can see all the data and take most actions, but can't manage other users. Your business should be an Owner; developers and agencies only need Full access.</p>
+<h3>Who owns the design and content of my website?</h3>
+<p>It depends on your agreement, which is why it should be written down before work starts. Many agreements transfer ownership once the final payment is made, while the developer may keep the right to show the work in a portfolio. This isn't legal advice; ask a lawyer to check anything important.</p>
 
-<h2>6. Business email</h2>
-<p>Email accounts are under your control, with the admin login in your name.</p>
-
-<h2>7. Premium themes and plugin licences</h2>
-<p>Paid licences should ideally be bought in your name. Otherwise, you may lose updates if the developer's licence lapses.</p>
-
-<h2>8. Analytics and Google accounts</h2>
-<ul>
-  <li>You're the owner of Google Analytics, Search Console and Google Business Profile, and add developers as users</li>
-  <li>Same for Meta Business, ad accounts and tag managers</li>
-</ul>
-
-<h2>9. Design files and brand assets</h2>
-<p>You have your logo files (including vector formats), brand colours and fonts, and any design files for the website.</p>
-
-<h2>10. Backups</h2>
-<p>Backups are stored somewhere you can access, not only inside a developer's account.</p>
-
-<h2>11. Put it in writing</h2>
-<p>Your contract or agreement should state that you own the website, content and accounts once paid. See the <a href="/blog/website-brief-template/">website brief template</a> for planning the project.</p>
-
-<p>When a project finishes, use the <a href="/blog/website-handover-checklist/">website handover checklist</a> to confirm you have received everything.</p>
-
-<h2>Keep a secure record</h2>
-<p>Store all logins in a password manager, and update it whenever access changes.</p>
-
-<p>Already locked out? See <a href="/blog/regain-website-access-old-developer/">how to regain access from an old developer</a>.</p>
+<p>Planning a new site or taking over an existing one? When you <a href="/hire-wordpress-developer/">hire a WordPress developer</a> through Samverse, every account stays in your name and you get a written handover at the end. If your site is still on a previous developer's server, <a href="/wordpress-migration/">WordPress migration</a> moves it to hosting you own without downtime.</p>
 `,
   },
   {
@@ -21507,130 +22027,252 @@ define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
   },
   {
     slug: 'website-design-contract-checklist',
-    seoTitle: 'Website Design Contract: What to Include (Checklist)',
-    title: 'Website Design Contract Checklist: What to Agree Before You Start',
-    description: 'Website design contract checklist: scope, pages, content, revisions, timelines, payments, ownership, hosting, maintenance, support and ending the project.',
+    seoTitle: 'Website Design Contract Checklist: What to Include',
+    title: 'Website Design Contract Checklist: Scope, Revisions, Payments, Ownership, Support and Everything Else to Agree Before Work Starts',
+    description: 'A website design contract checklist: scope, content, revisions, timeline, payment milestones, ownership, hosting, support, NDAs and ending the project.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-website-development', 'wordpress-developer-for-agencies'],
     body: `
-<p>Most website project disputes come from different expectations: "I thought that was included." A clear written agreement protects both you and your developer. It doesn't need to be a long legal document, but it should cover the points below. For legal advice specific to your situation, speak to a lawyer.</p>
+<p>A website design contract should set out exactly what is being built (named pages, features, integrations and what's excluded), who supplies the content, how many rounds of revisions are included, the timeline and what pauses it, the payment milestones, who owns the finished site and its accounts, what's tested before launch, what support follows, and how either side can end the project. It doesn't have to be a long legal document. A clear proposal that both sides accept in writing covers most small projects, and anything high-value or unusual is worth a lawyer's review.</p>
+<p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, every project starts this way: a written scope listing the pages or tasks, the features, the revision rounds and anything excluded, with a fixed price and a timeline, before any advance is paid. Agencies outsourcing white-label work need a few extra clauses, covered below and on the <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a> page.</p>
+<p>This checklist works for any developer or agency, and the points are practical rather than legal advice. A good starting point is a clear <a href="/blog/website-brief-template/">website brief</a>, and if you're still choosing who to hire, <a href="/blog/compare-website-quotes/">how to compare website quotes</a> helps first.</p>
 
-<h2>1. Scope of work</h2>
+<h2>Proposal, contract or statement of work?</h2>
+<p>The names vary, but the jobs are the same:</p>
 <ul>
-  <li>List of pages and features</li>
-  <li>Integrations: payments, WhatsApp, CRM, booking</li>
-  <li>What is <strong>not</strong> included</li>
+  <li><strong>Proposal or quotation:</strong> what will be built and what it costs.</li>
+  <li><strong>Scope or statement of work:</strong> the detailed list of pages, features and deliverables.</li>
+  <li><strong>Terms or agreement:</strong> payments, ownership, changes, support and cancellation.</li>
 </ul>
-<p>A good brief makes this easy; see the <a href="/blog/website-brief-template/">website brief template</a>.</p>
+<p>For a small business site, a single document that covers all three, accepted by both sides by signature or in writing, is common. Larger projects often split them. What matters is that every point below is written down somewhere both sides have agreed to.</p>
 
-<h2>2. Content responsibilities</h2>
-<p>Who writes the text, supplies photos and adds products? Content delays are the most common reason projects run late.</p>
+<h2>The checklist at a glance</h2>
+<table>
+  <thead><tr><th>Clause</th><th>What it should say</th><th>The dispute it prevents</th></tr></thead>
+  <tbody>
+    <tr><td>Scope</td><td>Named pages, templates, features, integrations and exclusions</td><td>"I thought that was included"</td></tr>
+    <tr><td>Content</td><td>Who writes text, supplies photos and adds products, and by when</td><td>Delays blamed on the other side</td></tr>
+    <tr><td>Revisions</td><td>How many rounds, on what, and how extra rounds are charged</td><td>Endless "small changes"</td></tr>
+    <tr><td>Timeline</td><td>Milestones, dependencies and what happens when feedback is late</td><td>Missed launch dates</td></tr>
+    <tr><td>Payments</td><td>Total, taxes, milestones and third-party costs</td><td>Surprise invoices, unpaid balances</td></tr>
+    <tr><td>Change requests</td><td>How new requests are quoted and approved</td><td>Scope creep</td></tr>
+    <tr><td>Ownership</td><td>Who owns the site, design and content, and when</td><td>A site held back over a disagreement</td></tr>
+    <tr><td>Accounts and licences</td><td>Domain, hosting and premium licences in the client's name</td><td>Losing control when the relationship ends</td></tr>
+    <tr><td>Testing and acceptance</td><td>What's tested and what counts as finished</td><td>Arguments about whether the job is done</td></tr>
+    <tr><td>Support</td><td>The bug-fix period, training and maintenance options</td><td>"It broke a month later, who pays?"</td></tr>
+    <tr><td>Confidentiality</td><td>NDA and white-label terms where needed</td><td>Client details or work shared without permission</td></tr>
+    <tr><td>Ending early</td><td>Notice, payment for work done and handover</td><td>A stalled project with no way out</td></tr>
+  </tbody>
+</table>
 
-<h2>3. Design and revisions</h2>
+<h2>Scope: what is and isn't being built</h2>
+<p>Most website disputes come from scope. Name every page instead of giving a number, list each feature by what it does, and write down what's excluded, because exclusions are where expectations differ most. A plain-language scope can look like this:</p>
+<pre><code>SCOPE OF WORK (example)
+Pages: Home, About, one page for each of 4 services, Contact, Privacy policy
+Templates: blog post and blog archive
+Features: enquiry form emailing two addresses, WhatsApp button, Google Map
+Content: client supplies all text and photos; developer formats and polishes
+Revisions: two rounds on the homepage design, one round on inner pages
+Launch: on hosting registered in the client's name
+Not included: copywriting from scratch, photography, logo design,
+hosting and domain fees, premium licences, ongoing SEO</code></pre>
+<p>For a store, add the number of products the developer will upload, variations, payment methods such as UPI, cards and cash on delivery, shipping rules and invoice needs. For a redesign, add the redirect plan for old URLs.</p>
+
+<h2>Content, revisions and approvals</h2>
+<p>Content readiness is often the biggest factor in how long a project takes, so the contract should say who writes each page, who supplies photos and product data, and the date they're due.</p>
+<p>Define a revision round: one consolidated list of feedback, from one decision-maker, on a specific stage such as the homepage design. Say how many rounds are included and how extra rounds or late changes of direction are charged. Agree how approvals are given, such as a written reply by email or WhatsApp, so there's a record of each sign-off.</p>
+
+<h2>Timeline and what pauses it</h2>
+<p>Tie the timeline to milestones (design approved, build ready for review, launch) rather than fixed calendar dates, and state the dependencies: content, feedback, access to hosting and accounts, and any third-party approvals such as a payment gateway. Agree what happens if the project stalls on either side, for example that the schedule moves by the length of the delay, or that a project paused for a long time is rescheduled. <a href="/blog/how-long-to-build-wordpress-website/">How long a WordPress website takes</a> gives realistic ranges.</p>
+
+<h2>Payment terms</h2>
 <ul>
-  <li>How many design concepts or revision rounds are included</li>
-  <li>How extra changes are charged</li>
+  <li><strong>The total and what it includes,</strong> matched line by line to the scope.</li>
+  <li><strong>Taxes,</strong> such as whether GST is added, if the developer is registered; ask your CA if you're unsure how it applies.</li>
+  <li><strong>The schedule,</strong> such as an advance to start, a milestone payment and the balance before launch, tied to deliverables rather than dates.</li>
+  <li><strong>Third-party costs</strong> paid separately: domain, hosting, premium themes and plugins, stock photos, paid integrations.</li>
+  <li><strong>Late payment,</strong> and whether launch waits for the final payment.</li>
 </ul>
+<p><a href="/blog/website-payment-terms-milestones/">Fair payment terms for a website project</a> covers advances, milestones and refunds in detail.</p>
 
-<h2>4. Timeline</h2>
-<p>Key milestones and what happens to the timeline if feedback or content is delayed. See <a href="/blog/how-long-to-build-wordpress-website/">how long a WordPress website takes</a>.</p>
+<h2>Change requests</h2>
+<p>New ideas during a project are normal. The contract should say how they're handled: the request is made in writing, the developer replies with a price and any effect on the timeline, and work starts only once you approve it. It should also distinguish a change from a defect, because fixing something that doesn't work as agreed is part of the job, while adding something new isn't. <a href="/blog/website-bug-vs-change-request/">Bug or change request?</a> explains where the line usually sits.</p>
 
-<h2>5. Payment terms</h2>
+<h2>Ownership, intellectual property and accounts</h2>
+<p>This is the clause that matters most if the relationship ends badly.</p>
 <ul>
-  <li>Total cost and what it includes</li>
-  <li>Payment schedule, such as an advance, a milestone payment and final payment at launch</li>
-  <li>Taxes, and costs paid separately like domain, hosting and premium plugins</li>
+  <li><strong>Who owns what, and when.</strong> Many agreements transfer ownership of the design, content and custom work to the client once the final payment is made.</li>
+  <li><strong>Third-party software.</strong> WordPress and most themes and plugins come under their own licences, often the GPL, so you own your content, design and custom code rather than the software underneath.</li>
+  <li><strong>What the developer keeps,</strong> such as their own reusable code, tools and the right to show the work in a portfolio, unless you agree otherwise.</li>
+  <li><strong>Accounts in your name:</strong> the domain, hosting, Google accounts and premium licences, bought with your business email. The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists each one.</li>
 </ul>
+<p>How intellectual property passes from one party to another depends on the wording and the law that applies to your agreement, so this is the clause most worth a lawyer's eye.</p>
 
-<p>For more on advances, milestone payments, scope changes and refunds, see <a href="/blog/website-payment-terms-milestones/">fair payment terms for a website project</a>.</p>
+<h2>Testing, launch and acceptance</h2>
+<p>Write down what will be tested before launch: pages on phones and desktops, the browsers that matter, every form with emails confirmed as arriving, test orders for a store, and speed. Then define "complete": for example, the site is live on your hosting, the agreed scope is delivered and you've approved it in writing. A short acceptance period, during which you report anything that doesn't match the scope, avoids arguments later.</p>
 
-<h2>6. Ownership</h2>
-<p>State that you own the website, content and design once fully paid, and that domain, hosting and accounts are in your name. See the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
-
-<h2>7. Licences</h2>
-<p>Who buys premium themes, plugins, fonts and stock images, and in whose name.</p>
-
-<h2>8. Testing and launch</h2>
-<p>What will be tested (devices, browsers, forms, speed), and what counts as "complete".</p>
-
-<h2>9. Post-launch support</h2>
+<h2>After launch: bug fixes, support and maintenance</h2>
 <ul>
-  <li>A free bug-fix period after launch</li>
-  <li>Training or handover documentation</li>
-  <li>Maintenance options and cost; see <a href="/blog/website-maintenance-cost-india/">maintenance costs</a></li>
+  <li><strong>A bug-fix period:</strong> how long it lasts, and that it covers defects in the agreed work, not new features or problems caused by later changes made by someone else.</li>
+  <li><strong>Training and handover:</strong> a walkthrough, documentation, every login and a full backup; the <a href="/blog/website-handover-checklist/">website handover checklist</a> lists what to receive.</li>
+  <li><strong>Maintenance:</strong> optional and usually separate, with what's included and how it's billed.</li>
 </ul>
 
-<p>More on this: <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></p>
+<h2>Confidentiality, NDAs and white-label work</h2>
+<p>If you're sharing business plans, customer data or unreleased products, a confidentiality clause or a separate NDA is sensible. For agencies outsourcing to a developer, add the white-label terms: the developer doesn't contact your client unless you ask, adds no credits to the site, and the agency owns the client relationship. <a href="/blog/white-label-wordpress-development-agencies/">White-label WordPress development</a> explains how those projects usually run.</p>
 
-<h2>10. Confidentiality</h2>
-<p>Especially relevant for agencies outsourcing work and businesses sharing sensitive information.</p>
+<h2>Ending the project early</h2>
+<p>Agree in advance how either side can stop: the notice required, payment for work completed so far, what happens to any advance for work not yet started, and the handover of files, backups and access. A clean exit clause protects both sides, and it's far easier to agree at the start than in the middle of a disagreement.</p>
 
-<h2>11. Ending the project</h2>
-<p>What happens if either side wants to stop: payment for work done and handover of files and access.</p>
+<h2>The small print</h2>
+<p>Larger agreements usually also cover which law applies, how disputes are handled (often by talking first, then mediation or arbitration), any limit on liability, and who is responsible for the legal content of the site, such as the privacy policy. These are legal questions, so have a lawyer review them for anything high-value.</p>
 
-<h2>Keep it simple and in writing</h2>
-<p>Even an email summarising these points and confirmed by both sides is far better than nothing.</p>
+<h2>Red flags in a website proposal</h2>
+<ul>
+  <li>A price with no list of pages or features.</li>
+  <li>No mention of whose name the domain and hosting will be in.</li>
+  <li>"Unlimited revisions", which usually means no clear end point.</li>
+  <li>Full payment up front for a new project.</li>
+  <li>Premium themes or plugins included free, which can mean pirated copies.</li>
+  <li>No mention of what happens after launch.</li>
+</ul>
 
-<p>Choosing who to work with? See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a>.</p>
+<h2>FAQs</h2>
+<h3>Do I need a formal contract for a small website?</h3>
+<p>You need the points agreed in writing, but not necessarily a long legal document. A detailed proposal that covers scope, payments, ownership and support, accepted by both sides, is often enough for a small project.</p>
+<h3>Is an agreement over email or WhatsApp good enough?</h3>
+<p>Written agreements by email are widely used for small projects, and they're far better than a verbal understanding. Whether a particular exchange would hold up in a dispute depends on the law that applies, so for larger projects use a signed agreement and ask a lawyer.</p>
+<h3>Who should write the contract, me or the developer?</h3>
+<p>Usually the developer sends a proposal or standard terms. Read them against this checklist, ask for anything missing to be added, and don't sign until the scope matches your brief.</p>
+<h3>Should hosting and maintenance be in the same contract?</h3>
+<p>They can be, but they're usually separate: the build is a one-off project, while hosting and maintenance run month to month or year to year. Keep the hosting account in your name either way.</p>
+<h3>Is it normal for the developer to keep ownership until the final payment?</h3>
+<p>Yes, many agreements work that way. What matters is that the domain and hosting are in your name from the start, and that ownership of the site passes to you once you've paid in full.</p>
+
+<p>Want a project with all of this agreed up front? When you <a href="/hire-wordpress-developer/">hire a WordPress developer</a> through Samverse, you get a written scope, a fixed price and a timeline before work starts, with every account in your name. Agencies can see how white-label projects and NDAs work on the <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a> page.</p>
 `,
   },
   {
     slug: 'wordpress-form-plugins-compared',
-    seoTitle: 'Best WordPress Form Plugins Compared (CF7, WPForms & More)',
-    title: 'WordPress Form Plugins Compared: Which One Should You Use?',
-    description: 'WordPress form plugins compared: Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Forminator, plus why delivery and spam protection matter more.',
+    seoTitle: 'WordPress Form Plugins Compared: CF7, WPForms and More',
+    title: 'WordPress Form Plugins Compared: Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Elementor Forms Side by Side',
+    description: 'WordPress form plugins compared: Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Elementor Forms on entries, spam, SMTP, uploads and logic.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'landing-page-design', 'elementor-developer'],
     body: `
-<p>Contact and quote forms are where your website turns visitors into leads, so the form plugin matters. There are many options, and each suits different needs. Here's a practical comparison of popular choices.</p>
+<p>Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Elementor Pro's form widget all handle a standard contact or quote form well. The real differences are whether entries are stored in the dashboard, which spam protection is built in, and whether conditional logic, file uploads, multi-step forms and integrations come free or in a paid plan. Choose by the forms your site actually needs, and whatever you pick, pair it with SMTP and spam protection, because those decide whether enquiries reach you.</p>
+<p>Every site I build through <a href="/wordpress-website-development/">WordPress website development</a> includes contact forms and a WhatsApp button, tested before launch to make sure the emails arrive, and the form plugin is chosen to fit the site rather than out of habit. For forms on ad campaign pages, with conversion tracking on every submission, see <a href="/landing-page-design/">landing page design</a>.</p>
+<p>The plugins below are listed alphabetically, not ranked. Features and pricing change, so treat the details as correct at the time of writing and check each plugin's current plans before you decide.</p>
 
-<h2>What to look for</h2>
+<h2>What a business form plugin needs to do</h2>
 <ul>
-  <li>Easy form building and editing</li>
-  <li>Reliable email notifications</li>
-  <li>Saving entries in the dashboard (so nothing is lost if an email fails)</li>
-  <li>Spam protection</li>
-  <li>Conditional logic, file uploads and multi-step forms if needed</li>
-  <li>Integrations: CRM, Google Sheets, payments</li>
-  <li>Impact on page speed</li>
+  <li><strong>Send notifications reliably,</strong> to more than one address if needed, with a reply-to set to the visitor's email.</li>
+  <li><strong>Store every entry</strong> in the dashboard, so nothing is lost if an email fails.</li>
+  <li><strong>Block spam</strong> without puzzles that put real visitors off.</li>
+  <li><strong>Handle the fields you need:</strong> phone numbers, dropdowns for the service, file uploads for drawings or documents.</li>
+  <li><strong>Show or hide fields</strong> based on earlier answers, if your forms need it.</li>
+  <li><strong>Connect to your tools:</strong> a CRM, Google Sheets, an email list or a payment gateway.</li>
+  <li><strong>Stay light,</strong> loading its scripts only where it's needed, and accessible, with proper labels and clear error messages.</li>
 </ul>
 
-<h2>Popular options</h2>
+<h2>The basics compared</h2>
 <table>
-  <thead><tr><th>Plugin</th><th>Pricing model</th><th>Good for</th></tr></thead>
+  <thead><tr><th>Plugin</th><th>Pricing model</th><th>How forms are built</th><th>Stored entries</th><th>Typical fit</th></tr></thead>
   <tbody>
-    <tr><td>Contact Form 7</td><td>Free</td><td>Simple forms; developers comfortable with its code-like editor. Entries aren't saved by default (an add-on like Flamingo does this)</td></tr>
-    <tr><td>WPForms</td><td>Free (Lite) and paid</td><td>Beginner-friendly drag-and-drop; many features in paid plans</td></tr>
-    <tr><td>Gravity Forms</td><td>Paid</td><td>Complex forms, calculations, workflows and integrations</td></tr>
-    <tr><td>Fluent Forms</td><td>Free and paid</td><td>Feature-rich free version, lightweight</td></tr>
-    <tr><td>Forminator</td><td>Free, with extras</td><td>Forms, quizzes and polls with a generous free version</td></tr>
-    <tr><td>Page builder forms</td><td>Included with builders like Elementor Pro</td><td>Simple forms styled with the rest of the page</td></tr>
+    <tr><td>Contact Form 7</td><td>Free</td><td>Text-based form tags, closer to code than drag and drop</td><td>Not by default; the free Flamingo add-on stores them</td><td>Simple forms on sites a developer manages</td></tr>
+    <tr><td>Elementor Forms</td><td>Part of Elementor Pro, not sold separately</td><td>Elementor's form widget, styled with the rest of the page</td><td>Yes, as submissions in the dashboard</td><td>Sites already built with Elementor Pro</td></tr>
+    <tr><td>Fluent Forms</td><td>Free and Pro</td><td>Drag and drop</td><td>Yes, in the free version</td><td>Sites wanting stored entries and conditional logic without a paid plan</td></tr>
+    <tr><td>Gravity Forms</td><td>Paid only</td><td>Drag and drop, with detailed settings</td><td>Yes</td><td>Complex forms, calculations and approval workflows</td></tr>
+    <tr><td>WPForms</td><td>Free (Lite) and paid</td><td>Drag and drop, with templates</td><td>Entry management in paid plans</td><td>Owners who want a guided builder</td></tr>
   </tbody>
 </table>
-<p>Features and pricing change over time, so check each plugin's current plans before deciding.</p>
 
-<p>To send every entry on to a CRM, Google Sheet or email tool automatically, see <a href="/blog/connect-website-forms-to-crm/">connecting WordPress forms to a CRM or Google Sheets</a>.</p>
+<h2>Features compared</h2>
+<table>
+  <thead><tr><th>Plugin</th><th>Spam protection</th><th>Conditional logic</th><th>File uploads</th><th>Multi-step</th><th>Integrations</th></tr></thead>
+  <tbody>
+    <tr><td>Contact Form 7</td><td>Akismet, reCAPTCHA v3 and Turnstile; a honeypot needs an add-on</td><td>Through a third-party add-on</td><td>Yes</td><td>Through a third-party add-on</td><td>A few built in, more through add-ons</td></tr>
+    <tr><td>Elementor Forms</td><td>Honeypot field, reCAPTCHA, Akismet</td><td>Not for individual fields at the time of writing; add-ons exist</td><td>Yes</td><td>Yes, with step fields</td><td>Email marketing tools and webhooks as form actions</td></tr>
+    <tr><td>Fluent Forms</td><td>Honeypot, reCAPTCHA, hCaptcha, Turnstile</td><td>Yes, in the free version</td><td>Pro</td><td>Pro</td><td>Many, some in Pro</td></tr>
+    <tr><td>Gravity Forms</td><td>Honeypot, reCAPTCHA, Akismet; Turnstile through an add-on</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Official add-ons, some on higher licences</td></tr>
+    <tr><td>WPForms</td><td>Built-in anti-spam, reCAPTCHA, hCaptcha, Turnstile</td><td>Paid plans</td><td>Paid plans</td><td>Paid plans</td><td>Mostly in paid plans</td></tr>
+  </tbody>
+</table>
 
-<h2>Email delivery matters more than the plugin</h2>
-<p>Many "form not working" problems are really email problems. WordPress's default mail often lands in spam or never arrives. Use an SMTP plugin with a proper email service, and set up SPF, DKIM and DMARC; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">email deliverability</a>.</p>
+<h2>Each plugin in brief</h2>
+<h3>Contact Form 7</h3>
+<p>Free and long-established. Forms are written with tags such as [text* your-name] rather than dragged into place, which developers often like and owners can find awkward. It doesn't store entries unless you add Flamingo, and by default it loads its scripts on every page, which a developer can limit. A sensible choice for simple contact forms on a site someone technical looks after.</p>
+<h3>Elementor Forms</h3>
+<p>Not a separate plugin, but the form widget in Elementor Pro. Its strength is design: the form matches the page without extra styling. It stores submissions, supports file uploads and step-by-step forms, and connects to common email tools. If your site already runs Elementor Pro, it avoids another plugin; if it doesn't, it isn't a reason on its own to buy Pro. <a href="/blog/elementor-pro-worth-it/">Is Elementor Pro worth it?</a> covers that decision.</p>
+<h3>Fluent Forms</h3>
+<p>A drag-and-drop builder whose free version includes stored entries, conditional logic and several spam options, with file uploads, multi-step forms and more integrations in Pro at the time of writing. Worth a look if you want more than a basic form without paying.</p>
+<h3>Gravity Forms</h3>
+<p>Paid only, and built for forms that do more than send an email: calculations, multi-page applications, approvals and data passed to other systems. Its add-ons cover many CRMs, email tools and payment gateways, though some sit on higher licence tiers. Often more than a five-page business site needs, and well suited to forms that are central to how the business runs.</p>
+<h3>WPForms</h3>
+<p>Beginner-friendly, with form templates and a guided builder. The free Lite version handles basic contact forms with spam protection; entry management, conditional logic, file uploads and multi-page forms are in paid plans at the time of writing.</p>
 
-<p>For a step-by-step fix, see <a href="/blog/wordpress-not-sending-emails-smtp/">why WordPress doesn't send emails and how to set up SMTP</a>.</p>
+<h2>Spam protection: layers, not puzzles</h2>
+<p>Whichever plugin you choose, the approach is the same: a honeypot field first, then an invisible challenge such as Cloudflare Turnstile or reCAPTCHA v3 for persistent bots, then a content filter such as Akismet for spam typed by hand. Avoid image puzzles on a lead form, because they cost real enquiries, especially on phones. <a href="/blog/stop-contact-form-spam/">How to stop contact form spam</a> shows where each setting lives in each plugin.</p>
 
-<h2>Spam protection</h2>
-<p>Use honeypots, time checks or invisible challenges rather than annoying puzzles; see <a href="/blog/stop-contact-form-spam/">stopping contact form spam</a>.</p>
+<h2>Email delivery: the part no form plugin fixes</h2>
+<p>Every plugin above sends its notifications through WordPress's own mail function, which by default sends from your hosting server. Those emails often land in spam or never arrive, and the form still shows "Thank you" to the visitor, so nobody notices until enquiries seem to dry up. Three habits fix most of it:</p>
+<ol>
+  <li><strong>Send through SMTP</strong> or a transactional email service, using an SMTP plugin, with SPF, DKIM and DMARC records set up for your domain. Some form plugin makers also publish SMTP plugins, but any SMTP plugin works with any form plugin.</li>
+  <li><strong>Store entries,</strong> so a failed email never means a lost lead.</li>
+  <li><strong>Send a test enquiry from your phone</strong> after every plugin, hosting or email change.</li>
+</ol>
+<p><a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails?</a> walks through the SMTP setup step by step.</p>
 
-<h2>Keep forms short</h2>
-<p>Whatever plugin you use, ask only for what you need: name, phone or email, and a message or service. Every extra field reduces submissions.</p>
+<h2>Integrations: CRM, Google Sheets and WhatsApp</h2>
+<p>An email notification is a doorbell, not a record of your leads. Most of these plugins can also send each entry to a CRM, a Google Sheet or an email list, either through their own add-ons or a webhook to an automation tool, and these connections are often a paid feature. If your team replies on WhatsApp, a thank-you message with a WhatsApp link, or a form that opens WhatsApp with the details already typed, keeps the conversation where your customers prefer it. <a href="/blog/connect-website-forms-to-crm/">Connecting WordPress forms to a CRM or Google Sheets</a> covers the options.</p>
+<p>If you want to take a payment through a form, such as a booking fee, check which gateways the plugin supports in India before you commit. Payment support differs a lot between plugins and plans.</p>
 
-<h2>Track submissions</h2>
-<p>Send visitors to a thank-you page or fire an analytics event on success; see <a href="/blog/thank-you-pages-forms/">thank-you pages</a>.</p>
+<h2>Conditional logic and multi-step forms</h2>
+<p>Conditional logic shows or hides fields based on earlier answers: choose "Generator rental" and a capacity field appears; choose "Maintenance" and it doesn't. Multi-step forms split a long form into short screens. Both help when you need several qualifying questions, and both are overkill for a name, phone and message. <a href="/blog/multi-step-forms-lead-qualification/">Multi-step forms for lead qualification</a> explains when they earn their place.</p>
 
-<h2>Not using WordPress forms at all?</h2>
-<p>Some sites (like this one) use a lightweight custom form with a serverless function that emails enquiries, which keeps pages fast. It's a good option for static or custom sites.</p>
+<h2>How to choose</h2>
+<table>
+  <thead><tr><th>Your situation</th><th>What to look for</th></tr></thead>
+  <tbody>
+    <tr><td>One simple contact form, developer-maintained</td><td>Any of them; a free option with Flamingo or stored entries is enough</td></tr>
+    <tr><td>You'll build and edit forms yourself</td><td>A drag-and-drop builder with templates</td></tr>
+    <tr><td>Site already built with Elementor Pro</td><td>Elementor Forms, unless you need per-field conditional logic</td></tr>
+    <tr><td>Quote forms with qualifying questions</td><td>Conditional logic, and multi-step if there are several questions</td></tr>
+    <tr><td>Drawings, CVs or documents attached</td><td>File uploads, with sensible size and file type limits</td></tr>
+    <tr><td>Calculations, applications or approval steps</td><td>A plugin built for complex forms and workflows</td></tr>
+    <tr><td>Leads going into a CRM or Google Sheet</td><td>Native integrations or webhooks on the plan you'll buy</td></tr>
+  </tbody>
+</table>
 
-<p>Forms still not bringing enquiries? See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+<h2>Switching form plugins</h2>
+<ol>
+  <li>Export existing entries, if the old plugin stores them.</li>
+  <li>Rebuild each form in the new plugin, with the same fields, notifications and confirmation messages.</li>
+  <li>Update conversion tracking, since a thank-you page or success event may change.</li>
+  <li>Replace the forms on each page, then test every one from a phone and a desktop.</li>
+  <li>Deactivate and delete the old plugin once you're sure nothing still uses it.</li>
+</ol>
+
+<h2>A note on custom forms</h2>
+<p>Not every site needs a plugin. This website, samverse.space, isn't built on WordPress: it's custom-coded and hosted on Hostinger, and its contact form uses a small PHP script on the server to email each enquiry, then opens WhatsApp with the same details typed in. Spam is handled by a hidden honeypot field, a simple addition question and a check that drops anything sent within seconds of the page loading. The <a href="/work/samverse/">Samverse case study</a> explains the setup. On a WordPress site, a well-configured plugin is usually the simpler choice.</p>
+
+<h2>FAQs</h2>
+<h3>Which WordPress form plugin is free?</h3>
+<p>Contact Form 7 is entirely free, and Fluent Forms and WPForms have free versions with paid upgrades. Gravity Forms is paid only, and Elementor Forms comes with Elementor Pro. What each free version includes changes, so check the current feature lists.</p>
+<h3>Do I need a paid form plugin for a business website?</h3>
+<p>Not for a simple contact or quote form. Paid plans earn their cost when you need something a free version leaves out, such as entry management, conditional logic, file uploads, multi-step forms, payments or CRM integrations.</p>
+<h3>Why are my form emails going to spam or not arriving?</h3>
+<p>Usually because WordPress is sending them from the hosting server without proper authentication. Set up SMTP with SPF, DKIM and DMARC for your domain, and store entries so nothing is lost while you fix it.</p>
+<h3>Can I use Elementor's form widget without Elementor Pro?</h3>
+<p>No. The form widget is a Pro feature. On free Elementor, add a form plugin and place its form on the page with a shortcode or the plugin's own widget.</p>
+<h3>Will a form plugin slow my website down?</h3>
+<p>A single form plugin rarely makes a noticeable difference if it loads its scripts only on pages with forms. Check this after installing, and don't keep two form plugins active for the same job.</p>
+
+<p>Want forms that reach you every time? Every site built through <a href="/wordpress-website-development/">WordPress website development</a> launches with tested forms, email delivery, spam protection and a WhatsApp button. For campaign forms with conversion tracking, see <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -25280,59 +25922,104 @@ Screenshot: attached</code></pre>
   },
   {
     slug: 'elementor-pro-worth-it',
-    seoTitle: 'Is Elementor Pro Worth It? Features vs Free Alternatives',
-    title: 'Is Elementor Pro Worth It for a Business Website?',
-    description: 'Is Elementor Pro worth it? What it adds over free, from Theme Builder, forms and popups to the WooCommerce builder, when to pay and free alternatives.',
+    seoTitle: 'Is Elementor Pro Worth It? Free vs Pro for Business Sites',
+    title: 'Is Elementor Pro Worth It? Elementor Free vs Pro Compared: Theme Builder, Forms, Popups, WooCommerce, Licences and Alternatives',
+    description: 'Is Elementor Pro worth it? Elementor free vs Pro compared: Theme Builder, forms, popups, WooCommerce Builder, licences, renewals and when free is enough.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['elementor-developer', 'wordpress-website-development', 'landing-page-design'],
     body: `
-<p>Elementor's free version is enough to build attractive pages. Elementor Pro is a yearly paid upgrade that adds features many business sites use. Whether it's worth it depends on what your site needs and what else is already on it.</p>
+<p>Elementor Pro is worth it when your site needs things the free version can't do: custom headers, footers and blog templates through the Theme Builder, custom WooCommerce product and checkout layouts, listings built from dynamic content, or forms and popups handled inside Elementor. For a simple brochure site on a theme with good header and footer controls, free Elementor plus a separate form plugin is often enough. Either way, Pro is a yearly licence, so treat it as a running cost and buy it in your business name.</p>
+<p>As an <a href="/elementor-developer/">Elementor developer</a>, I use Pro where it earns its place rather than on every site: a brochure site on a theme with good header and footer settings can do without it, while a site with custom templates, a store or listings usually can't. This guide explains the difference so you can decide before anyone buys a licence.</p>
+<p>If you haven't chosen a builder yet, start with <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>. If you have, the theme underneath matters too; see <a href="/blog/best-theme-for-elementor/">choosing a theme for Elementor</a>.</p>
 
-<h2>What Elementor Pro adds</h2>
+<h2>Elementor free vs Pro at a glance</h2>
 <table>
-  <thead><tr><th>Feature</th><th>What it does</th></tr></thead>
+  <thead><tr><th>Feature</th><th>Elementor (free)</th><th>Elementor Pro</th></tr></thead>
   <tbody>
-    <tr><td>Theme Builder</td><td>Design headers, footers, blog post templates, archives and 404 pages visually</td></tr>
-    <tr><td>Form widget</td><td>Contact and lead forms with email notifications and integrations</td></tr>
-    <tr><td>Popup Builder</td><td>Popups for offers, lead magnets and announcements, with triggers and rules</td></tr>
-    <tr><td>WooCommerce Builder</td><td>Custom product, shop, cart and checkout layouts</td></tr>
-    <tr><td>Dynamic content</td><td>Pull in post data and custom fields, which is useful for listings and directories</td></tr>
-    <tr><td>Extra widgets</td><td>Posts grids, sliders, pricing tables, testimonials and more</td></tr>
-    <tr><td>Custom code and fonts</td><td>Custom CSS per element, custom fonts and icons</td></tr>
+    <tr><td>Drag-and-drop editor, Flexbox containers and responsive controls</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Global colours, global fonts and theme styles</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Performance settings</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Theme Builder: headers, footers, post templates, archives, the 404 page</td><td>No; the theme handles these</td><td>Yes</td></tr>
+    <tr><td>Form widget with email notifications and integrations</td><td>No; use a form plugin</td><td>Yes</td></tr>
+    <tr><td>Popup Builder with triggers and display rules</td><td>No</td><td>Yes</td></tr>
+    <tr><td>WooCommerce Builder: product, shop, cart and checkout layouts</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Dynamic content from post data and custom fields</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Custom CSS per element, custom fonts and icons</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Role Manager to limit what staff accounts can edit</td><td>Limited</td><td>Yes</td></tr>
   </tbody>
 </table>
-<p>Features and plans change, so check Elementor's current plan details.</p>
+<p>Elementor's plans and feature lists change, and at the time of writing its paid plans differ by the number of sites and in some of the features they include. Check that the plan you're considering includes the specific features you need before buying.</p>
 
-<h2>When Pro is worth it</h2>
+<h2>The Pro features that matter for business sites</h2>
+<h3>Theme Builder</h3>
+<p>This is the main reason most sites buy Pro. It lets you design the header, footer, single blog post template, archive pages and 404 page visually, and apply each one across the site by rules, such as one header for the whole site and another for landing pages. Without it, those parts come from your theme's own settings. With Pro, a minimal theme such as Hello Elementor makes sense, because Elementor draws everything.</p>
+<h3>Form widget</h3>
+<p>Pro's form widget handles contact, quote and booking request forms, with email notifications, a redirect to a thank-you page and connections to email marketing and CRM tools. It's convenient because forms are styled like the rest of the page. The free alternative is a dedicated form plugin; <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a> covers what to look for, including stored entries and spam protection.</p>
+<h3>Popup Builder</h3>
+<p>Popups for offers, announcements and lead magnets, with triggers such as scroll depth, time on page or exit intent, and rules for which pages and visitors see them. Used carefully, a popup can collect enquiries; used everywhere, it annoys visitors and can hurt the mobile experience. <a href="/blog/exit-intent-popups/">Exit-intent pop-ups</a> covers when they help and when they hurt.</p>
+<h3>WooCommerce Builder</h3>
+<p>Custom layouts for product pages, the shop and category pages, the cart, checkout and account pages. If your store needs a product page that looks different from the theme's default, such as size charts, delivery details or trust badges in specific places, this is where Pro pays for itself. A store that's happy with a good theme's shop layouts may not need it.</p>
+<h3>Dynamic content and listing templates</h3>
+<p>Pro can pull post data and custom fields into a design, so one template displays every listing, project or product consistently. That's what makes directories, property listings, team pages and case study archives manageable: you add the content in the dashboard, and the template does the layout.</p>
+<h3>Custom code, fonts and the Role Manager</h3>
+<p>Smaller features that add up: custom CSS on a single element, uploading brand fonts and icons, and the Role Manager, which can restrict a staff account to editing content so text and images change while the layout stays put.</p>
+
+<h2>Licences and renewals: what to know before you buy</h2>
 <ul>
-  <li>You want to design headers, footers and templates visually without a separate theme builder</li>
-  <li>You need custom WooCommerce page layouts</li>
-  <li>You'll use popups and forms and would rather not add separate plugins</li>
-  <li>You're building listing-style sites with dynamic content</li>
-  <li>Your team edits the site and benefits from one consistent tool</li>
+  <li><strong>It's a yearly licence,</strong> priced by the number of sites. Check the renewal price as well as the first-year price, and count it as a running cost alongside hosting for as long as the site uses Pro.</li>
+  <li><strong>If the licence lapses,</strong> pages built with Pro generally keep working, but updates and support stop, and Pro features can stop being editable. Without updates, security fixes stop arriving too. Check Elementor's current licence terms for the details.</li>
+  <li><strong>Buy it in your business name.</strong> If the licence sits in a developer's or agency's account, your site depends on them renewing it. The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> covers licences alongside your other accounts.</li>
+  <li><strong>Agency and multi-site licences</strong> are fine while the agency maintains the site. If you part ways, you'll need a licence of your own.</li>
+  <li><strong>Never use a nulled copy.</strong> "Free" pirated versions of Elementor Pro are a common source of malware and get no updates; <a href="/blog/nulled-themes-plugins-risks/">why nulled plugins are so risky</a> explains what can be hidden inside them.</li>
 </ul>
 
-<h2>When you can skip it</h2>
+<h2>The cost of leaving Pro later</h2>
+<p>Deciding on Pro is partly deciding whether you'll keep it. If you deactivate Pro, anything built with its features stops displaying properly: Theme Builder headers and footers no longer apply, Pro widgets such as forms and post grids disappear from pages, and popups stop. You'd fall back to your theme's header and footer and rebuild the rest.</p>
+<p>That's manageable on a small site and a real project on a large one. It's also why I'd rather decide on Pro at the start than add it halfway through a build: either Elementor draws the whole site, or the theme handles headers, footers and templates and Elementor designs the pages.</p>
+
+<h2>The alternative: free Elementor plus a few plugins</h2>
+<p>Many business sites run well without Pro. The usual combination:</p>
 <ul>
-  <li>A simple brochure site where the theme handles header and footer</li>
-  <li>You already use a good form plugin; see <a href="/blog/wordpress-form-plugins-compared/">form plugins compared</a></li>
-  <li>Your theme (like Astra, Kadence or GeneratePress) already offers header, footer and layout controls</li>
-  <li>You're open to the block editor instead; see <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a></li>
+  <li><strong>A theme with a header and footer builder.</strong> Astra and Kadence, for example, include one in their free versions at the time of writing, and Hello Elementor has basic header and footer settings in recent versions.</li>
+  <li><strong>A form plugin</strong> such as Contact Form 7, Fluent Forms or WPForms, with spam protection and an SMTP plugin so emails arrive.</li>
+  <li><strong>No popups,</strong> or a single popup plugin if you genuinely need one.</li>
+  <li><strong>The block editor for blog posts,</strong> styled by the theme, while Elementor handles the main pages.</li>
 </ul>
+<p>Be wary of filling the gap with several add-on packs. Some offer header, footer or popup features, but every pack adds code to load and maintain, and stacking them is one of the most common reasons Elementor sites slow down. One well-maintained add-on at most is a sensible rule.</p>
 
-<h2>Performance considerations</h2>
-<p>Pro doesn't have to slow a site, but adding many widgets, popups and animations does. Use features deliberately, enable Elementor's performance settings and test speed; see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</p>
+<h2>Decision table: do you need Elementor Pro?</h2>
+<table>
+  <thead><tr><th>Your site</th><th>Free Elementor is usually enough</th><th>Pro is usually worth it</th></tr></thead>
+  <tbody>
+    <tr><td>Five to eight page brochure site</td><td>Yes, with a theme header builder and a form plugin</td><td>Only if you want a fully custom header and footer</td></tr>
+    <tr><td>Blog or news section</td><td>If the theme's post and archive layouts suit you</td><td>For custom post and archive templates</td></tr>
+    <tr><td>WooCommerce store</td><td>If the theme's shop layouts are good enough</td><td>For custom product, cart or checkout pages</td></tr>
+    <tr><td>Directory, listings or portfolio</td><td>Rarely</td><td>Yes, for dynamic templates</td></tr>
+    <tr><td>Lead generation with popups</td><td>With a single popup plugin</td><td>If forms and popups should live in one tool</td></tr>
+    <tr><td>Landing pages for ads</td><td>Often, with a canvas layout and a form plugin</td><td>If you build many and want shared templates</td></tr>
+    <tr><td>Staff editing content</td><td>With careful user roles</td><td>For the Role Manager's editing limits</td></tr>
+  </tbody>
+</table>
+<p>For a real example, <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a> is built with Elementor Pro on the Hello Elementor theme.</p>
 
-<p>For a real Elementor Pro build, see the <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a>.</p>
+<h2>Does Elementor Pro slow a site down?</h2>
+<p>Not by itself. Pro adds features, and recent versions of Elementor can load scripts and styles only for the widgets a page actually uses. What slows sites is how those features are used: deeply nested sections, animations everywhere, popups on every page, sliders above the fold and add-on packs loaded "just in case". Build with flat Flexbox containers, switch on Elementor's performance settings one at a time, and test on a phone. <a href="/blog/why-elementor-sites-slow/">Why Elementor sites get slow</a> covers the causes and fixes in detail.</p>
 
-<h2>Licences: buy in your name</h2>
-<p>If your developer buys the licence, make sure you know whose account it's in. If it lapses, you lose updates and support, and Pro features may stop being editable. Ideally buy it in your business name; see the <a href="/blog/website-ownership-checklist/">ownership checklist</a>.</p>
+<h2>FAQs</h2>
+<h3>Is free Elementor enough for a business website?</h3>
+<p>Often, yes. A small business site on a theme with a good header and footer builder, with a form plugin for enquiries, can look professional and work well without Pro. You need Pro mainly for custom templates, WooCommerce layouts, dynamic listings or built-in popups.</p>
+<h3>What happens when an Elementor Pro licence expires?</h3>
+<p>Pages built with Pro generally keep displaying, but updates and support stop, so security fixes stop too, and Pro features can stop being editable. Elementor's own licence terms set out the current details, so check them before letting a licence lapse.</p>
+<h3>Can I use one Elementor Pro licence on several websites?</h3>
+<p>Only if your plan covers that number of sites. Plans are priced by how many sites they include, so a single-site licence can't be reused on a second website.</p>
+<h3>Can I switch from Elementor Pro back to the free version?</h3>
+<p>Yes, but anything built with Pro features, such as Theme Builder headers and footers, forms, popups and post grids, will need replacing with free alternatives or theme settings. Plan it on a staging copy, not the live site.</p>
+<h3>Should my developer use their own Pro licence on my site?</h3>
+<p>Not long term. A developer's licence is fine during a build, but the site should run on a licence bought in your business name, so updates never depend on someone else renewing it.</p>
 
-<h2>Avoid nulled copies</h2>
-<p>"Free" pirated versions of Elementor Pro are a common source of malware. Always use a genuine licence.</p>
-
-<p>Building with Elementor? See <a href="/elementor-developer/">Elementor development</a> and <a href="/blog/best-theme-for-elementor/">choosing a theme for Elementor</a>.</p>
+<p>Not sure whether your site needs Pro? As an <a href="/elementor-developer/">Elementor developer</a>, I can review what your site needs and tell you honestly, then build it with global styles and clean templates you can edit yourself, with every licence in your name.</p>
 `,
   },
   {
