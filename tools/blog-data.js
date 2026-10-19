@@ -15245,118 +15245,284 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   },
   {
     slug: 'website-content-calendar',
-    seoTitle: 'How to Plan a Website Content Calendar',
-    title: 'How to Plan a Website Content Calendar for a Small Business',
-    description: 'How to plan a website content calendar: pick topics from customer questions, map them to services, set a realistic schedule and refresh old posts.',
+    seoTitle: 'How to Plan a Website Content Calendar (With a Template)',
+    title: 'How to Plan a Website Content Calendar for a Small Business: Themes, Festival and Seasonal Dates, a Realistic Cadence, Repurposing and a Template',
+    description: 'Plan a website content calendar: themes tied to your services, Indian festival and seasonal dates, a cadence you can keep, repurposing and a free template.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Growth',
     related: ['wordpress-seo-services', 'website-for-startups', 'landing-page-design'],
     body: `
-<p>Consistent, useful content helps your website rank and gives customers reasons to trust you. A content calendar turns "we should post something" into a simple, realistic plan.</p>
+<p>A website content calendar is a simple plan of what you'll publish, when and why. Pick three to five themes tied to the services you sell, place topics in the months when customers search for them (including festivals and seasons), choose a pace you can keep for a whole year, and track every piece in one spreadsheet with its topic, target page, owner and dates. Review it monthly against Search Console, and update old posts as well as adding new ones.</p>
+<p>A calendar works best on a site Google can already crawl and understand. <a href="/wordpress-seo-services/">WordPress SEO services</a> cover the technical and on-page side; I don't write your blog, but I tell you which pages or answers are missing and what each should cover, which is a ready-made list for your calendar. If you're launching a new business, <a href="/website-for-startups/">websites for startups</a> launch with a blog template your team can publish to, because two or three genuinely useful articles beat an empty blog.</p>
+<p>This guide is the planning stage. For a ready-made monthly routine to copy, see the <a href="/blog/website-content-calendar-small-business/">sample content calendar for small businesses</a>, and for writing each piece, <a href="/blog/write-blog-posts-that-rank/">how to write blog posts that rank</a>.</p>
+
+<h2>What a content calendar is for</h2>
+<p>Without a plan, small business blogs tend to start with a burst of posts and then go quiet, or fill up with topics nobody searches for. A calendar fixes three things:</p>
+<ul>
+  <li><strong>Relevance:</strong> every piece connects to something you sell.</li>
+  <li><strong>Timing:</strong> seasonal topics go live before customers start searching, not during the rush.</li>
+  <li><strong>Consistency:</strong> a pace you can keep, with owners and dates, so it actually happens.</li>
+</ul>
+<p>It doesn't need special software or a marketing team. A spreadsheet and an hour a month to plan is enough for most businesses.</p>
+
+<h2>Step 1: Choose three to five themes</h2>
+<p>Themes are the broad subjects you want to be known for, each linked to a service or product page. Every article in a theme links to that page, which builds a cluster of related content around what you sell. For an AC service company, for example:</p>
+<table>
+  <thead><tr><th>Theme</th><th>Linked page</th><th>Example topics</th></tr></thead>
+  <tbody>
+    <tr><td>Servicing and maintenance</td><td>AC servicing</td><td>How often to service a split AC; what a service includes; cleaning filters yourself</td></tr>
+    <tr><td>Repairs and problems</td><td>AC repair</td><td>AC not cooling; water leaking from the indoor unit; strange noises</td></tr>
+    <tr><td>Buying and installing</td><td>Installation</td><td>Choosing the right tonnage; inverter vs non-inverter; installation checklist</td></tr>
+    <tr><td>Running costs</td><td>Annual maintenance contracts</td><td>Lowering electricity bills; when an AMC makes sense</td></tr>
+  </tbody>
+</table>
+<p>Keep themes narrow enough that each article clearly belongs to one service. If a topic doesn't lead naturally to anything you offer, it probably doesn't belong in the calendar.</p>
+
+<h2>Step 2: Collect topics from real questions</h2>
+<ul>
+  <li>Questions customers ask on calls, WhatsApp, email and at the counter, in their own words.</li>
+  <li>Objections before they buy: price, timing, trust, alternatives.</li>
+  <li>Search Console queries that already bring impressions to your site; <a href="/blog/search-console-content-ideas/">finding content ideas in Search Console</a> shows where to look.</li>
+  <li>Questions your sales or front-desk staff answer every week.</li>
+  <li>Recent projects that could become case studies.</li>
+</ul>
+<p>Put every idea into one list, tagged with its theme, and you'll have more topics than you can write.</p>
+
+<h2>Step 3: Map the year, including Indian seasons and festivals</h2>
+<p>Many Indian festivals follow the lunar calendar and move by a few weeks each year, so check the dates for the year you're planning. A rough calendar to adapt:</p>
+<table>
+  <thead><tr><th>Month (approximate)</th><th>What's happening</th><th>Content to have live</th></tr></thead>
+  <tbody>
+    <tr><td>January</td><td>New year plans, Republic Day, Makar Sankranti, Pongal and Lohri, wedding season</td><td>Planning guides, annual checklists</td></tr>
+    <tr><td>February to March</td><td>Board exams, Holi, financial year end</td><td>Exam-season services, year-end and budget guides for B2B buyers</td></tr>
+    <tr><td>April to June</td><td>Summer, admissions, school holidays</td><td>Summer services, admissions guides, holiday activities</td></tr>
+    <tr><td>June to September</td><td>Monsoon</td><td>Waterproofing, pest control, home repairs, travel safety</td></tr>
+    <tr><td>July to August</td><td>Income tax return filing season, Independence Day, Raksha Bandhan</td><td>Tax and finance guides, gifting guides</td></tr>
+    <tr><td>August to September</td><td>Ganesh Chaturthi, Onam</td><td>Decor, events, sweets, regional guides</td></tr>
+    <tr><td>September to November</td><td>Navratri, Durga Puja, Dussehra, Dhanteras and Diwali</td><td>Gifting, home improvement, buying guides, corporate gifts</td></tr>
+    <tr><td>November to February</td><td>Wedding season</td><td>Venues, decor, jewellery, photography, catering</td></tr>
+    <tr><td>December</td><td>Christmas, year-end, new year</td><td>Year-end offers, round-ups, next year's plans</td></tr>
+  </tbody>
+</table>
+<p>New articles take time to be found, so plan seasonal pieces about two months ahead and publish them at least four to six weeks before the season. Reuse one permanent page per festival rather than a new one each year; <a href="/blog/seasonal-festival-campaigns-website/">seasonal and festival campaigns</a> explains why. Only cover festivals and seasons that genuinely relate to what you sell.</p>
+
+<h2>Step 4: Choose a pace you can keep</h2>
+<p>Consistency beats bursts. Work out how many hours a month someone can realistically give to writing and checking content, then choose a pace that fits, such as one article a month, two a month, or a case study every couple of months alongside articles. Two good articles a month kept up for a year beat twenty in one week followed by silence.</p>
+<p>Many small businesses find it easier to batch the work: plan a quarter at a time, write two or three pieces in one afternoon, and schedule them in WordPress using the Publish panel's schedule option, so posts go live on their dates without anyone remembering.</p>
+
+<h2>Step 5: Mix content types</h2>
+<ul>
+  <li><strong>How-to guides and checklists</strong> for common questions.</li>
+  <li><strong>Comparisons,</strong> such as one option against another.</li>
+  <li><strong>Cost and timeline guides</strong> that explain what drives the price.</li>
+  <li><strong>Case studies</strong> from real projects, with the client's permission.</li>
+  <li><strong>FAQs added to service pages,</strong> which count as content too.</li>
+  <li><strong>Refreshes</strong> of older articles that are slipping or out of date.</li>
+</ul>
+<p>Give refreshes a regular slot, such as one each month. Updating a post that already ranks often helps more than publishing a new one; <a href="/blog/update-old-blog-posts/">how to update old blog posts</a> covers the process.</p>
+
+<h2>A content calendar template</h2>
+<p>Set up a spreadsheet with one row per piece and these columns:</p>
+<table>
+  <thead><tr><th>Publish date</th><th>Theme</th><th>Working title</th><th>Question it answers</th><th>Target page</th><th>Format</th><th>Owner</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>3 March</td><td>Servicing</td><td>How often should you service a split AC?</td><td>"How often should I get my AC serviced?"</td><td>AC servicing</td><td>How-to</td><td>Owner</td><td>Draft</td></tr>
+    <tr><td>17 March</td><td>Repairs</td><td>AC not cooling? Checks before you call a technician</td><td>"Why is my AC not cooling?"</td><td>AC repair</td><td>Checklist</td><td>Technician lead</td><td>Idea</td></tr>
+    <tr><td>7 April</td><td>Running costs</td><td>Is an AC maintenance contract worth it?</td><td>"Should I take an AMC?"</td><td>AMCs</td><td>Comparison</td><td>Owner</td><td>Idea</td></tr>
+    <tr><td>21 April</td><td>Servicing</td><td>Update: pre-summer servicing checklist</td><td>"What is included in AC service?"</td><td>AC servicing</td><td>Refresh</td><td>Owner</td><td>Scheduled</td></tr>
+  </tbody>
+</table>
+<p>Add columns for the published link, where it was shared, and a review date three months later. A simple status flow keeps everyone clear on where each piece stands:</p>
+<pre><code>Idea &gt; Outline &gt; Draft &gt; Review &gt; Scheduled &gt; Published &gt; Shared &gt; Reviewed</code></pre>
+
+<h2>Repurpose every piece</h2>
+<p>Writing is the slow part, so plan reuse into the calendar. One article can become a Google Business Profile post, a WhatsApp status or message to opted-in customers, an Instagram carousel, a LinkedIn post and a section of your newsletter, each linking back to the full article. <a href="/blog/repurpose-website-content-social-media/">Repurposing website content for social media</a> has more ideas.</p>
+
+<h2>Tools to run it</h2>
+<ul>
+  <li><strong>A spreadsheet</strong> in Google Sheets or Excel is enough for most businesses and easy to share.</li>
+  <li><strong>Task boards</strong> such as Trello or Notion suit teams that like moving cards through stages.</li>
+  <li><strong>Editorial calendar plugins for WordPress,</strong> such as PublishPress Planner, add a calendar view of scheduled and draft posts inside the dashboard.</li>
+  <li><strong>WordPress scheduling,</strong> built in, publishes posts at a set date and time.</li>
+  <li><strong>Google Trends</strong> shows when searches for seasonal topics start rising in your state.</li>
+</ul>
+<p>Pick whichever your team will actually open; the tool matters far less than the habit.</p>
+
+<h2>Review it every month</h2>
+<ol>
+  <li>Check which pages gained impressions and clicks in Search Console, and plan more on those themes.</li>
+  <li>Look for queries with impressions but no matching article, and add them to the topic list.</li>
+  <li>Check which articles lead to enquiries, calls and WhatsApp messages, not just visits.</li>
+  <li>Move slipping or outdated posts into next month's refresh slot.</li>
+  <li>Once a quarter, look at the next three months of seasons and festivals and fill those dates first.</li>
+</ol>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>Planning a pace you can't keep, then stopping altogether.</li>
+  <li>Writing about festivals or trends unrelated to what you sell.</li>
+  <li>Publishing seasonal content after the season has started.</li>
+  <li>Articles that never link to the service they relate to.</li>
+  <li>Only adding new posts, never updating old ones.</li>
+</ul>
 
 <p>No blog yet? See <a href="/blog/add-blog-to-existing-website/">how to add a blog to your existing website</a>.</p>
 
-<h2>Step 1: Collect topics</h2>
-<ul>
-  <li>Questions customers ask on calls, WhatsApp and email</li>
-  <li>Objections before they buy: price, timing, process, alternatives</li>
-  <li>Search Console queries that already bring impressions</li>
-  <li>Seasonal topics; see <a href="/blog/seasonal-festival-campaigns-website/">seasonal campaigns</a></li>
-  <li>Case studies of recent projects</li>
-</ul>
+<h2>FAQs</h2>
+<h3>How often should a small business publish on its website?</h3>
+<p>As often as you can keep up for a year with good quality. For many small businesses that's one or two articles a month, plus regular updates to existing pages.</p>
+<h3>How far ahead should I plan content?</h3>
+<p>A quarter at a time works well: detailed plans for the next three months and rough themes for the rest of the year, with seasonal pieces placed first.</p>
+<h3>When should festival content go live?</h3>
+<p>At least four to six weeks before the festival, so it has time to be found, and earlier for B2B buyers, corporate gifting and weddings, which are planned well in advance.</p>
+<h3>Should I write about every festival?</h3>
+<p>No. Only the ones that connect to what you sell or how your customers buy. A generic greeting post rarely brings visitors or enquiries.</p>
+<h3>What should a content calendar include?</h3>
+<p>For each piece: the publish date, theme, working title, the customer question it answers, the page it links to, the format, the owner and its status.</p>
 
-<h2>Step 2: Map topics to services</h2>
-<p>Every article should connect to something you sell. Group topics into clusters around each main service, and link each article to that service page. See <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
-
-<h2>Step 3: Choose content types</h2>
-<ul>
-  <li>How-to guides and checklists</li>
-  <li>Comparisons (X vs Y)</li>
-  <li>Cost and timeline guides</li>
-  <li>Case studies and project stories</li>
-  <li>FAQs and myth-busting articles</li>
-</ul>
-
-<h2>Step 4: Set a realistic schedule</h2>
-<p>Consistency beats bursts. Two good articles a month that you keep up for a year beat twenty in one week followed by silence. Put dates, topics, target service page and owner in a simple spreadsheet.</p>
-
-<p>Want a ready-made routine to copy? See this <a href="/blog/website-content-calendar-small-business/">sample monthly content calendar</a> mixing blog posts, case studies and Google Business Profile posts.</p>
-
-<h2>Step 5: Write, publish, promote</h2>
-<ol>
-  <li>Write from real knowledge and examples</li>
-  <li>Run through the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a></li>
-  <li>Share on LinkedIn, WhatsApp and your newsletter</li>
-  <li>Link to it from related older pages</li>
-</ol>
-
-<p>Get more mileage from each post by <a href="/blog/repurpose-website-content-social-media/">repurposing it for social media</a>.</p>
-
-<h2>Step 6: Refresh old content</h2>
-<p>Every quarter, update your best-performing and outdated articles: new information, better examples, fresh internal links and updated dates. Refreshing often delivers more than publishing new posts.</p>
-
-<p>Detailed process: <a href="/blog/update-old-blog-posts/">how to update old blog posts</a>.</p>
-
-<h2>Measure</h2>
-<p>Track which articles bring traffic, enquiries and links, and write more like them. See <a href="/blog/website-analytics-metrics-that-matter/">analytics metrics that matter</a>.</p>
+<p>Want a site that's ready to publish on, with the technical and on-page SEO in place and a clear list of the content that's missing? See <a href="/wordpress-seo-services/">WordPress SEO services</a>. Launching something new? <a href="/website-for-startups/">Websites for startups</a> launch with a blog template your team can publish to from day one.</p>
 `,
   },
   {
     slug: 'video-on-business-website',
-    seoTitle: 'Video on Your Website: When It Helps and Hurts',
-    title: 'Video on Your Business Website: When It Helps and When It Hurts',
-    description: 'Video on your website: when demos, testimonials, tours and how-tos help, when autoplay backgrounds and slow pages hurt, plus hosting and SEO tips.',
+    seoTitle: 'Video on Your Website: Where It Helps, Hosting and Speed',
+    title: 'Video on Your Business Website: Where It Helps, YouTube vs Self-Hosting, Fast Embeds, Captions, Video Schema and Production on a Budget',
+    description: 'Video on your business website: where it helps, YouTube vs self-hosting, facade embeds for speed, captions, video schema and how to film on a budget.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Growth',
     related: ['wordpress-speed-optimization', 'landing-page-design', 'website-redesign'],
     body: `
-<p>Video can explain, reassure and persuade faster than text. But poorly used video slows websites down and distracts visitors. Here's how to use it well.</p>
+<p>Video helps a business website most where seeing beats reading: a short explainer on the homepage or a service page, customer testimonials, product demos and tours of your premises. Host videos on YouTube or Vimeo rather than your web hosting, embed them with a click-to-play preview image so the heavy player loads only when someone taps it, add captions and a short written summary, and keep autoplaying background videos off important pages, especially for visitors on phones.</p>
+<p>Video embeds are a common reason pages feel heavy. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> finds what's slowing each key page, including embeds and third-party scripts, fixes it with lazy loading and script clean-up, and shows the before-and-after results. On campaign pages built through <a href="/landing-page-design/">landing page design</a>, I keep the top of the page light, with no video backgrounds, and offer video as a play button instead.</p>
+<p>For collecting customer videos, see <a href="/blog/video-testimonials-website/">video testimonials for your website</a>, and for the technical detail of deferred loading, <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</p>
 
 <h2>Where video helps</h2>
-<ul>
-  <li><strong>Customer testimonials:</strong> real people are highly persuasive</li>
-  <li><strong>Product demos:</strong> show how something works or looks in use</li>
-  <li><strong>Facility or space tours:</strong> factories, clinics, venues, hotels, co-working spaces</li>
-  <li><strong>How-to and explainer videos:</strong> answer common questions</li>
-  <li><strong>Founder introductions:</strong> build personal trust</li>
-</ul>
+<table>
+  <thead><tr><th>Video</th><th>Where it goes</th><th>What it should show</th></tr></thead>
+  <tbody>
+    <tr><td>Explainer</td><td>Homepage or a key service page</td><td>What you do, who for, and what happens when someone gets in touch</td></tr>
+    <tr><td>Customer testimonial</td><td>Service pages, near the enquiry form</td><td>A real customer describing the problem and the result in their own words</td></tr>
+    <tr><td>Product demo</td><td>Product pages, in the gallery</td><td>The product in use, its size and the details photos miss</td></tr>
+    <tr><td>Tour</td><td>About or contact page</td><td>Your clinic, factory, showroom, venue or hotel, as a visitor would see it</td></tr>
+    <tr><td>Founder or team introduction</td><td>About page</td><td>The people customers will deal with</td></tr>
+    <tr><td>How-to or FAQ answer</td><td>Blog posts and FAQs</td><td>One common question answered clearly</td></tr>
+  </tbody>
+</table>
+<p>Keep most website videos short, under two minutes, with the main point in the first few seconds.</p>
 
 <h2>Where video hurts</h2>
 <ul>
-  <li><strong>Auto-playing background videos</strong> on the homepage: heavy, distracting and often ignored on mobile</li>
-  <li><strong>Several embedded videos loading at once</strong>, each adding heavy scripts</li>
-  <li><strong>Videos replacing essential text</strong> that people and search engines need</li>
+  <li><strong>Autoplaying background videos</strong> on the homepage: heavy, distracting, and often blocked or ignored on mobile.</li>
+  <li><strong>Several embedded players on one page,</strong> each loading its own scripts before anyone presses play.</li>
+  <li><strong>Video instead of text,</strong> when visitors and search engines still need the key information in writing.</li>
+  <li><strong>Sound that plays automatically,</strong> which makes many visitors leave straight away.</li>
+  <li><strong>Long, unedited recordings</strong> that bury the useful part.</li>
 </ul>
 
-<h2>Performance tips</h2>
+<h2>YouTube, Vimeo or self-hosting?</h2>
+<table>
+  <thead><tr><th>Option</th><th>Strengths</th><th>Drawbacks</th><th>Suits</th></tr></thead>
+  <tbody>
+    <tr><td>YouTube</td><td>Free, handles streaming quality for slow connections, and videos can be found in YouTube and Google search</td><td>Its branding and suggested videos, and a heavy player if embedded normally</td><td>Most business videos</td></tr>
+    <tr><td>Vimeo</td><td>A cleaner player, with privacy and embedding controls on some plans</td><td>No real discovery, and features depend on the plan</td><td>Brand films, client-only or course videos</td></tr>
+    <tr><td>Uploading to WordPress</td><td>Full control and no third-party branding</td><td>Uses hosting storage and bandwidth, with no adaptive streaming, so it can stutter on mobile data</td><td>Very short, small, muted clips only</td></tr>
+  </tbody>
+</table>
+<p>For most businesses, YouTube is the practical default: upload once, embed on the relevant pages, and the same video can bring viewers from YouTube itself. <a href="/blog/youtube-video-seo-small-business/">YouTube and video SEO for small businesses</a> covers titles, descriptions and chapters.</p>
+
+<h2>Embedding video without slowing your site</h2>
+<p>A standard YouTube embed loads the full player as soon as the page opens. The fix is a facade: the page shows only a preview image with a play button, and the real player loads when someone taps it. In WordPress:</p>
 <ul>
-  <li>Host on a video platform (for example YouTube or Vimeo) rather than uploading large files to your web hosting</li>
-  <li>Use a lightweight "click to play" preview image that loads the player only when tapped</li>
-  <li>Lazy-load videos below the fold</li>
-  <li>Keep hero sections image-based; offer the video as a play button</li>
+  <li>Several caching and performance plugins, WP Rocket among them, have an option to replace YouTube embeds with a preview image.</li>
+  <li>Lightweight embed plugins and blocks do the same job, or a developer can build it into the theme.</li>
+  <li>WordPress adds lazy loading to embedded iframes by default, which helps videos further down the page but doesn't stop a video near the top from loading straight away.</li>
+  <li>Give the video area a fixed aspect ratio, such as 16:9, so the page doesn't jump while it loads.</li>
 </ul>
-<p>See <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
+<p>If you embed by hand, a lazy-loaded iframe using YouTube's privacy-enhanced domain looks like this:</p>
+<pre><code>&lt;iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+  title="Factory tour of Example Industries"
+  width="560" height="315" loading="lazy" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+<p>For a short clip uploaded to your own site, stop it downloading until it's played and show a poster image:</p>
+<pre><code>&lt;video controls preload="none" poster="https://example.com/wp-content/uploads/demo-poster.webp"&gt;
+  &lt;source src="https://example.com/wp-content/uploads/demo.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+<p>Test the page in PageSpeed Insights before and after adding video. Indian mobile connections vary widely, as <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> explains, so check on a real phone too.</p>
+
+<h2>If you want a background or hero video</h2>
+<p>Sometimes a short moving clip genuinely sells, such as a resort, a restaurant or a factory line. If so:</p>
+<ul>
+  <li>Keep it a few seconds long, muted, compressed and looping, with no important text inside the video.</li>
+  <li>Show a poster image first, and consider showing only the image on phones.</li>
+  <li>Add a visible pause button; accessibility guidelines expect a way to stop moving content.</li>
+  <li>Keep the headline and call to action as real text over or beside it.</li>
+</ul>
+
+<h2>Captions, transcripts and accessibility</h2>
+<p>Many people watch without sound, on public transport or at work, and some can't hear the audio at all. Add captions to every video. YouTube's automatic captions are a start, but check them, especially names, places, technical terms and Hindi or Hinglish words, or upload your own caption file. Put a short summary or the key points as text beside each video, which helps visitors who won't press play and gives search engines something to read.</p>
+
+<h2>Video SEO basics</h2>
+<ul>
+  <li>Embed each video on the most relevant page, not only on a separate "videos" page.</li>
+  <li>Write a descriptive title and a written summary on the page.</li>
+  <li>Use a clear, relevant thumbnail.</li>
+  <li>Consider VideoObject structured data, which some SEO and video plugins add for you.</li>
+</ul>
+<p>A minimal VideoObject example looks like this; check Google's current documentation for required fields:</p>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Factory tour of Example Industries",
+  "description": "A two-minute tour of our machining and assembly lines.",
+  "thumbnailUrl": "https://example.com/wp-content/uploads/factory-tour.jpg",
+  "uploadDate": "2026-09-15",
+  "duration": "PT1M58S",
+  "embedUrl": "https://www.youtube.com/embed/VIDEO_ID"
+}
+&lt;/script&gt;</code></pre>
+<p>Schema helps Google understand a video but doesn't guarantee a video result; at the time of writing, Google focuses video features on pages where the video is the main content. Test it with Google's Rich Results Test, and see <a href="/blog/schema-markup-explained/">schema markup explained</a> for the wider picture.</p>
+
+<h2>Production on a budget</h2>
+<ul>
+  <li><strong>Use your phone,</strong> filmed horizontally for the website; film a vertical version separately if you also want Reels or Shorts.</li>
+  <li><strong>Sound matters more than picture.</strong> A clip-on microphone and a quiet room make a bigger difference than a better camera.</li>
+  <li><strong>Light the face</strong> with a window in front of the speaker, not behind.</li>
+  <li><strong>Steady the shot</strong> with a small tripod or by resting the phone on something.</li>
+  <li><strong>Plan in bullet points,</strong> not a full script, so people sound natural.</li>
+  <li><strong>Film in short sections,</strong> one point per take, which makes editing easier.</li>
+  <li><strong>Edit simply:</strong> trim the start and end, add captions and your logo, and finish with one clear next step.</li>
+</ul>
+
+<h2>Where to place videos on the page</h2>
+<ul>
+  <li><strong>Below the headline, not instead of it.</strong> The heading and first lines of text should explain the page even if nobody plays the video.</li>
+  <li><strong>Next to the decision.</strong> A testimonial works best near the enquiry form or the price, where a visitor is weighing up whether to get in touch.</li>
+  <li><strong>In the product gallery</strong> for stores, so shoppers find the demo where they already look at photos.</li>
+  <li><strong>One main video per page</strong> where video is the focus, rather than a grid of players that all compete for attention.</li>
+  <li><strong>With a clear next step</strong> straight after it, such as a WhatsApp button, a form or a link to book.</li>
+</ul>
+<p>If you have many videos, a short gallery page can list them, but each one should also sit on the service, product or blog page it belongs to.</p>
+
+<h2>Measuring whether video works</h2>
+<p>YouTube Studio shows how many plays come from embeds on your site and how long people watch. GA4's enhanced measurement can record engagement with embedded YouTube videos, and you can compare enquiries from pages before and after adding a video. If people stop watching early, shorten the video or move the key point earlier.</p>
 
 <p>If video is your product rather than a marketing extra, see <a href="/blog/website-for-video-production-companies/">websites for video production companies</a>.</p>
 
-<h2>Make videos effective</h2>
-<ul>
-  <li>Keep them short: under two minutes for most website videos</li>
-  <li>Hook viewers in the first few seconds</li>
-  <li>Add captions, since many people watch without sound</li>
-  <li>End with a clear call to action</li>
-</ul>
+<h2>FAQs</h2>
+<h3>Should I upload videos to WordPress or YouTube?</h3>
+<p>For most videos, YouTube or Vimeo. They stream efficiently to slow connections and save your hosting. Upload to WordPress only very short, small clips.</p>
+<h3>Does video slow down a website?</h3>
+<p>A standard embed can, because the player loads even if nobody presses play. A click-to-play preview image and lazy loading keep the page fast.</p>
+<h3>Does video help SEO?</h3>
+<p>Indirectly. It can keep visitors engaged and appear in video results, but the written content around it still does most of the work. Add a summary, captions and a clear title.</p>
+<h3>How long should a website video be?</h3>
+<p>Short. Under two minutes suits most explainers and testimonials, with the main point in the first few seconds. Longer how-to videos are fine if they're well structured.</p>
+<h3>Should my homepage have a background video?</h3>
+<p>Usually not. If you use one, keep it short, muted and compressed, show a poster image first, add a pause button, and keep the headline as real text.</p>
 
-<p>Publishing these videos on YouTube as well? See <a href="/blog/youtube-video-seo-small-business/">YouTube and video SEO for small businesses</a> for titles, chapters and video schema.</p>
-
-<h2>SEO</h2>
-<ul>
-  <li>Add a short text summary or transcript next to the video</li>
-  <li>Use descriptive titles and descriptions on the video platform</li>
-  <li>Embed videos on relevant pages, not just a separate "videos" page</li>
-</ul>
-
-<p>Videos work especially well on <a href="/landing-page-design/">landing pages</a> and in <a href="/blog/collect-display-customer-testimonials/">testimonials</a>. If video is slowing your site, see <a href="/wordpress-speed-optimization/">speed optimization</a>.</p>
+<p>Added videos and now the site feels slow? <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> replaces heavy embeds with fast previews, lazy-loads the rest and reports the before-and-after results. Planning a campaign page with video? See <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -15579,46 +15745,136 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   },
   {
     slug: 'migrate-blogger-to-wordpress',
-    seoTitle: 'How to Move From Blogger to WordPress',
-    title: 'How to Move From Blogger to WordPress Without Losing Traffic',
-    description: 'Move from Blogger to WordPress step by step: export and import posts and images, move your custom domain and add redirects that keep your Google rankings.',
+    seoTitle: 'How to Move From Blogger to WordPress Without Losing Traffic',
+    title: 'How to Move From Blogger to WordPress Step by Step: Export, Import, Images, Permalinks, Redirects, Custom Domain and SEO Checks',
+    description: 'Move from Blogger to WordPress step by step: export and import posts, move images, keep or redirect Blogger URLs, switch your domain and check SEO.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-seo-services', 'website-redesign'],
     body: `
-<p>Blogger is a simple, free way to start a blog, but many bloggers eventually want more control over design, SEO, monetisation and features. Moving to WordPress gives you that, as long as the migration protects your existing traffic.</p>
+<p>To move from Blogger to WordPress, download a backup of your Blogger content, import it into a new WordPress site on staging, and copy every image into the WordPress media library. Then either match Blogger's post URLs in your WordPress permalink settings or redirect each old address with a 301, point your custom domain to the new host, and check Search Console for errors in the weeks after. If your blog lives on a blogspot.com address rather than your own domain, the move needs extra planning, because Blogger can't send server redirects to another site.</p>
+<p>Moving blogs from Blogger, Wix, Squarespace and other platforms onto WordPress is part of my <a href="/wordpress-migration/">website migration</a> service: content is imported and checked on staging, old URLs are kept or redirected, and the domain switches only once everything works. This guide walks through the same process for anyone doing it themselves.</p>
+<p>Coming from Wix instead? See <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a>. For how redirects affect rankings, <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> explains the difference.</p>
 
-<h2>Why bloggers move to WordPress</h2>
-<ul>
-  <li>Full control over design and functionality</li>
-  <li>Better SEO control: URLs, schema, speed and site structure</li>
-  <li>More monetisation options: ads, affiliate links, products, memberships</li>
-  <li>Thousands of plugins and themes</li>
-</ul>
+<h2>First: custom domain or blogspot.com?</h2>
+<p>This one detail decides how smooth the move will be:</p>
+<table>
+  <thead><tr><th>Your blog's address</th><th>What happens to it</th><th>Rankings risk</th></tr></thead>
+  <tbody>
+    <tr><td>Your own domain, such as www.example.com</td><td>You point the domain to your new host, so every link and ranking stays on the same domain</td><td>Low, if URLs are matched or redirected</td></tr>
+    <tr><td>A blogspot.com address</td><td>Your new site lives on a new domain, and Blogger can't send permanent server redirects to it</td><td>Higher, and the handover is slower</td></tr>
+  </tbody>
+</table>
+<p>If you're on blogspot.com, read the section on it below before you start.</p>
 
-<h2>Step-by-step migration</h2>
+<h2>What moves, and how</h2>
+<table>
+  <thead><tr><th>Item</th><th>How it moves</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>Posts and pages</td><td>Through the Blogger export file and an importer</td><td>Formatting from the Blogger editor, and pages that may need recreating by hand</td></tr>
+    <tr><td>Comments</td><td>Usually imported with the posts</td><td>Spam comments coming across too</td></tr>
+    <tr><td>Labels</td><td>Usually imported as categories</td><td>Too many labels make messy categories, so tidy them</td></tr>
+    <tr><td>Images</td><td>Downloaded into the media library, by plugin or by hand</td><td>Images still loading from Blogger's servers after the import</td></tr>
+    <tr><td>Theme, gadgets and sidebar widgets</td><td>Rebuilt in WordPress</td><td>Blogger templates don't run on WordPress</td></tr>
+    <tr><td>Search descriptions</td><td>Copied into your SEO plugin</td><td>They may not carry over automatically</td></tr>
+    <tr><td>Ads, analytics and email sign-ups</td><td>Added back to the new site</td><td>AdSense site settings and ads.txt for the new setup</td></tr>
+  </tbody>
+</table>
+
+<h2>Step 1: Export and audit your Blogger blog</h2>
 <ol>
-  <li><strong>Back up Blogger:</strong> export your blog content from Blogger settings.</li>
-  <li><strong>Set up WordPress</strong> on good hosting, ideally on a staging site first.</li>
-  <li><strong>Import posts and comments</strong> using a Blogger importer tool.</li>
-  <li><strong>Move images:</strong> import images hosted on Blogger into your WordPress media library so they don't depend on Blogger.</li>
-  <li><strong>Recreate pages and menus</strong>, and choose a lightweight theme.</li>
-  <li><strong>Match URLs where possible</strong>, or plan redirects from old Blogger URLs to new WordPress URLs.</li>
-  <li><strong>Custom domain:</strong> if your blog used a custom domain, point it to your new hosting. If it was on blogspot.com, set up redirection from the old blog to the new site.</li>
-  <li><strong>Submit your new sitemap</strong> in Google Search Console and monitor for errors.</li>
+  <li>In Blogger, go to Settings, find the Manage blog section, choose Back up content and download the file. Keep it safe; it's your full backup.</li>
+  <li>Save a list of every URL. Blogger's sitemap, usually at https://www.example.com/sitemap.xml, and Search Console's Pages report are good sources.</li>
+  <li>Export your top pages and queries from Search Console as a baseline, so you can compare traffic after the move.</li>
+  <li>Note anything the export won't carry: gadgets, a custom template, ad placements, a contact form or email subscription widgets.</li>
+  <li>If you use a custom domain, copy every DNS record for it, especially email records.</li>
 </ol>
 
-<h2>Protect your rankings</h2>
-<p>Redirects are the key. Every old post URL should lead to its new equivalent. Keep titles and content of well-performing posts, and check Search Console for 404s after launch. See <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
+<h2>Step 2: Set up WordPress on staging</h2>
+<p>Buy hosting in your own name, install WordPress on a staging address and block search engines from it; <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a> covers what to check. Choose a lightweight theme, and decide your permalink structure before importing anything (see Step 5), because changing it later means another round of redirects.</p>
 
-<h2>After the move</h2>
+<h2>Step 3: Import posts, pages and comments</h2>
+<p>WordPress lists a Blogger importer under Tools &gt; Import. Install it, run it and upload your Blogger backup file. It brings in posts, comments and labels, and lets you assign the posts to a WordPress user. Importers change over time, so if it struggles with a large blog, a migration plugin or a converter that turns the Blogger file into a standard WordPress import file are alternatives.</p>
+<p>After the import, compare the number of posts with Blogger's dashboard, then open a sample of old and new posts side by side. Check headings, line breaks, tables, embedded videos and code. Then:</p>
 <ul>
-  <li>Check posts for formatting issues and broken embeds</li>
-  <li>Set up SEO basics, caching and backups</li>
-  <li>Update links on your social profiles</li>
+  <li>Recreate static pages such as About and Contact if they didn't come across.</li>
+  <li>Merge or rename categories created from labels, and set a default category.</li>
+  <li>Delete spam comments, and decide whether comments stay open; <a href="/blog/wordpress-comments-enable-or-disable/">should you enable comments on WordPress?</a> helps you decide.</li>
+  <li>Add a contact form, and remove leftover Blogger-specific shortcodes or scripts from posts.</li>
 </ul>
 
-<p>Coming from Wix instead? See <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a>. For a hands-off move, see <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<h2>Step 4: Bring images into WordPress</h2>
+<p>Images in Blogger posts are hosted on Google's servers, at addresses such as blogger.googleusercontent.com or bp.blogspot.com. After the import, posts may still load them from there, which leaves your site depending on Blogger. Use a plugin that imports external images into the media library and rewrites the image addresses in each post, then check a sample of posts. Large photos are a good moment to resize and compress; <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a> shows how.</p>
+
+<h2>Step 5: Keep or redirect your Blogger URLs</h2>
+<p>This is the step that protects your rankings and backlinks. Commonly seen Blogger patterns, which can vary by blog, are:</p>
+<table>
+  <thead><tr><th>Typical Blogger URL</th><th>WordPress equivalent</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>/2024/05/post-name.html</td><td>A post</td><td>Match it with a custom permalink, or redirect each post</td></tr>
+    <tr><td>/p/about.html</td><td>A page such as /about/</td><td>Redirect each page</td></tr>
+    <tr><td>/search/label/Recipes</td><td>A category such as /category/recipes/</td><td>Redirect your main labels one by one</td></tr>
+    <tr><td>/feeds/posts/default</td><td>/feed/</td><td>Redirect, so feed readers keep working</td></tr>
+    <tr><td>Any URL ending in ?m=1</td><td>The same post</td><td>Make sure redirects ignore the mobile parameter</td></tr>
+  </tbody>
+</table>
+<p>The easiest option for posts is to keep the same addresses. Under Settings &gt; Permalinks, choose Custom Structure and enter:</p>
+<pre><code>/%year%/%monthnum%/%postname%.html</code></pre>
+<p>That works when each imported post keeps its original date and its slug matches the last part of the Blogger URL, so check a sample before relying on it. Blogger often shortens long titles in URLs, and an importer may create a different slug. If you prefer cleaner URLs, use pattern redirects instead. In the Redirection plugin, for example, tick the regex option, set the query parameter handling to ignore parameters, and use rules like these:</p>
+<pre><code>Source:  ^/([0-9]{4})/([0-9]{2})/([^/]+)[.]html$
+Target:  https://example.com/$3/
+
+Source:  ^/p/([^/]+)[.]html$
+Target:  https://example.com/$1/</code></pre>
+<p>A pattern rule only works when the new slug matches the old one. For posts whose slugs differ, add individual redirects. Test every rule against your full URL list, never redirect everything to the homepage, and avoid redirect chains.</p>
+
+<h2>Step 6: Point your custom domain to the new host</h2>
+<p>Blogger custom domains are usually connected with a CNAME record pointing to ghs.google.com, plus records for the bare domain. To switch:</p>
+<ol>
+  <li>Lower the DNS TTL a day ahead.</li>
+  <li>Move WordPress from staging to the live hosting.</li>
+  <li>Change the domain's records, or nameservers, to point to the new host, keeping your email records exactly as they were.</li>
+  <li>Issue SSL, force https and turn on the redirects.</li>
+  <li>Test a sample of old URLs straight away, including the ?m=1 versions.</li>
+  <li>Remove the custom domain from Blogger's settings once the new site is live, but keep the blog itself.</li>
+</ol>
+
+<h2>If your blog is on blogspot.com</h2>
+<p>You can't add server redirects to a blogspot.com address, and Blogger's own redirect settings only work within the same blog. The usual approach is:</p>
+<ul>
+  <li>Keep the Blogger blog published, never deleted or made private.</li>
+  <li>Edit the Blogger theme so each post points readers to its new address, with a canonical link or a redirect script that maps old posts to new ones.</li>
+  <li>Update links you control: social profiles, YouTube descriptions, email signatures and guest posts.</li>
+  <li>Ask sites that link to your best posts to update the link.</li>
+</ul>
+<p>Google can follow script and meta refresh redirects in many cases, but they're weaker signals than a server 301, and Search Console's Change of Address tool expects proper redirects. Expect the handover to take longer and some traffic to dip. <a href="/blog/change-domain-name-without-losing-seo/">Changing your domain without losing SEO</a> covers the wider process.</p>
+
+<h2>Step 7: SEO checks before and after launch</h2>
+<ul>
+  <li>Install an SEO plugin and add titles and meta descriptions to your top posts, carrying over Blogger search descriptions.</li>
+  <li>Search posts for links to your old blogspot.com address, and update them with a search-and-replace plugin.</li>
+  <li>Check images have alt text and load from your own domain.</li>
+  <li>Switch off the staging "discourage search engines" setting, submit the new sitemap in Search Console and request indexing for key posts.</li>
+  <li>Watch the Pages report for 404s in the first weeks and add redirects for anything missed.</li>
+</ul>
+
+<h2>After the move</h2>
+<p>Add back analytics, ads and email sign-up forms, set up caching, backups and security, and keep your Blogger backup file. Rankings can move for a few weeks while Google recrawls; a steady fall on particular posts usually points to a missing redirect or changed content on those posts.</p>
+
+<h2>FAQs</h2>
+<h3>Will I lose my Google rankings moving from Blogger to WordPress?</h3>
+<p>Not if you keep your custom domain and match or redirect every old URL. Short-term movement is normal. Blogs on blogspot.com face more risk, because they can't use server redirects.</p>
+<h3>Can I keep the same URLs as Blogger?</h3>
+<p>Often, yes. A custom permalink of /%year%/%monthnum%/%postname%.html matches Blogger's post pattern, provided dates and slugs match. Pages and labels still need redirects.</p>
+<h3>Do comments move to WordPress?</h3>
+<p>Blogger comments are usually imported along with the posts. If you used a third-party comment system, check how it exports, and remove spam before reopening comments.</p>
+<h3>Should I delete my Blogger blog after moving?</h3>
+<p>No. Keep the backup file and, for a blogspot.com address, keep the blog published so its redirects and links keep working.</p>
+<h3>What happens to AdSense when I move to WordPress?</h3>
+<p>You add the ad code to the new site, check the site is listed correctly in your AdSense account, and add an ads.txt file if needed. Check AdSense's current requirements for the new setup.</p>
+
+<p>Want your Blogger blog moved without losing posts, images or rankings? My <a href="/wordpress-migration/">website migration</a> service imports and checks your content on staging, keeps or redirects every old URL, moves your domain with email records intact, and keeps your Blogger blog live until the new site is proven. Send me your blog address for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -19532,54 +19788,137 @@ Description: Buy %title% online. %excerpt%</code></pre>
   },
   {
     slug: 'helpful-404-pages',
-    seoTitle: '404 Pages That Help Instead of Frustrate',
-    title: '404 Pages That Help Instead of Frustrate',
-    description: 'What a 404 error is, why visitors hit them, how to design a helpful 404 page (search, links, contact), and how to find and fix broken links that cause 404s.',
+    seoTitle: 'Helpful 404 Pages: What to Include and How to Fix 404s',
+    title: 'How to Make a Helpful 404 Page: What to Include, Soft 404s vs Real 404s, Finding 404 Errors and Fixing Them With Redirects',
+    description: 'What a helpful 404 page includes, soft 404s vs a real 404 status, how to find 404 errors in Search Console and logs, and when to redirect a page.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-maintenance', 'wordpress-seo-services'],
     body: `
-<p>A 404 page appears when someone visits a URL that doesn't exist. Every site gets some 404s. What matters is whether the page helps visitors continue, and whether you fix the causes.</p>
+<p>A helpful 404 page tells visitors plainly that the page they wanted isn't there, keeps your normal header and menu, and gives them a way forward: a search box, links to your most visited pages and an easy way to contact you, written in your usual tone. Technically, it must return a real 404 status code rather than a 200. Then fix the causes: redirect pages that moved, correct broken links, and leave genuinely dead URLs as 404s.</p>
+<p>404s spike most after a <a href="/website-redesign/">website redesign</a> or platform move, when URLs change. On my redesigns, important URLs are kept where possible, changed ones get 301 redirects, and Search Console is checked daily for 404 errors for the first two weeks after launch. For sites that are already live, broken link and form checks are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+<p>This guide covers the page itself and the errors behind it. For tracking down the broken links themselves, see <a href="/blog/find-fix-broken-links-wordpress/">how to find and fix broken links on WordPress</a>, and for choosing the right redirect, <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
+
+<h2>What a 404 is, and the status codes around it</h2>
+<p>Every page a server sends comes with a status code that tells browsers and search engines what happened. These are the ones that matter here:</p>
+<table>
+  <thead><tr><th>Status</th><th>Meaning</th><th>When it's right</th></tr></thead>
+  <tbody>
+    <tr><td>200 OK</td><td>The page exists</td><td>Every real page on your site</td></tr>
+    <tr><td>301 Moved Permanently</td><td>The page has a new address</td><td>Moved, renamed or merged pages</td></tr>
+    <tr><td>404 Not Found</td><td>Nothing exists at this address</td><td>Mistyped URLs and pages with no replacement</td></tr>
+    <tr><td>410 Gone</td><td>The page existed and was removed on purpose</td><td>Content deliberately deleted for good</td></tr>
+    <tr><td>Soft 404</td><td>An error or empty page sent with a 200 status</td><td>Never; it's a mistake to fix</td></tr>
+  </tbody>
+</table>
+<p>Every site gets some 404s, and Google treats them as normal. They become a problem when real pages people still look for have disappeared, or when your own links point to them.</p>
 
 <h2>Why visitors hit 404s</h2>
 <ul>
-  <li>Pages deleted or URLs changed without redirects</li>
-  <li>Typos in links, on your site or elsewhere</li>
-  <li>Old links in emails, ads or printed material</li>
-  <li>Mistyped URLs</li>
+  <li>Pages deleted, or URLs changed during a redesign, without redirects.</li>
+  <li>Typos in links on your own site, or on other sites linking to you.</li>
+  <li>Old links in emails, ads, QR codes, brochures and social posts.</li>
+  <li>Visitors mistyping or half-copying a URL.</li>
+  <li>Products removed from a store, or services you no longer offer.</li>
 </ul>
 
 <h2>What a helpful 404 page includes</h2>
+<h3>A plain message in your tone</h3>
+<p>Say clearly that the page couldn't be found, in a sentence or two. A little personality is fine, as long as the visitor understands what happened and what to do next. Avoid technical wording like "HTTP error".</p>
+<h3>Your normal header, menu and footer</h3>
+<p>Visitors should recognise they're still on your site, with the usual menu, phone number and footer links available.</p>
+<h3>Search, if your search works</h3>
+<p>A search box helps on sites with a blog, a catalogue or many service pages, but only if it returns good results; see <a href="/blog/improve-wordpress-site-search/">how to improve WordPress site search</a>. On a small brochure site, clear links do the same job.</p>
+<h3>Links to the pages people want</h3>
+<p>Three to six links to your most visited or most useful pages, such as your main services, product categories, the blog and the contact page. Your analytics show which pages these should be.</p>
+<h3>A way to contact you</h3>
+<p>A WhatsApp button, phone number or short form catches visitors who came from an old brochure or ad and still want to enquire.</p>
+<h3>What to leave out</h3>
 <ul>
-  <li>A friendly message that the page wasn't found</li>
-  <li>Your normal header and navigation</li>
-  <li>Links to popular pages: services, blog, contact</li>
-  <li>A search box, if your site has search</li>
-  <li>A clear way to contact you</li>
+  <li>Automatic redirects to the homepage after a few seconds.</li>
+  <li>Heavy animations, videos or pop-ups.</li>
+  <li>Jokes that make it unclear whether the site is broken.</li>
+  <li>Blaming the visitor for the mistake.</li>
 </ul>
-<p>A touch of brand personality helps, as long as it stays helpful.</p>
 
-<p>A search box only helps if it returns good results; see <a href="/blog/improve-wordpress-site-search/">how to improve WordPress site search</a>.</p>
+<h2>A simple 404 page layout</h2>
+<table>
+  <thead><tr><th>Section</th><th>What goes in it</th></tr></thead>
+  <tbody>
+    <tr><td>Heading</td><td>"Sorry, we couldn't find that page" or similar</td></tr>
+    <tr><td>One line of help</td><td>"It may have moved. Try one of these, or search below."</td></tr>
+    <tr><td>Search box</td><td>If your site search returns useful results</td></tr>
+    <tr><td>Popular links</td><td>Main services or categories, the blog, about and contact</td></tr>
+    <tr><td>Contact</td><td>WhatsApp, phone or a short enquiry form</td></tr>
+  </tbody>
+</table>
 
-<h2>Technical must-haves</h2>
+<h2>An example: this site's 404 page</h2>
+<p>This website, which is custom-coded and hosted on Hostinger rather than built on WordPress, has a short 404 page: the number 404, a line saying the page may have moved or the link may be mistyped, a button back to the homepage, and links to the services hub, case studies, blog, cost calculator and contact section. The server is set to show that page for any missing address with a real 404 status, and the page itself is marked noindex so it never appears in search results.</p>
+<p>That covers the technical basics, the tone and the main ways onward. A larger site with many services or products can go further with a search box and links to its most popular pages, because a visitor arriving from an old link usually wants something specific.</p>
+
+<h2>Soft 404s vs real 404s</h2>
+<p>A soft 404 is a page that looks like an error, or has almost nothing on it, but tells search engines it's a normal page with a 200 status. Google reports these as "Soft 404" in Search Console's Pages report, and they waste crawling on pages that shouldn't exist. Common causes:</p>
 <ul>
-  <li>The page must return a real 404 status code, not a 200 "soft 404"</li>
-  <li>Don't redirect all 404s to the homepage, which confuses visitors and search engines</li>
-  <li>Exclude 404 pages from search indexing</li>
+  <li>Redirecting every missing URL to the homepage.</li>
+  <li>A "page not found" message built as a normal WordPress page that missing URLs redirect to.</li>
+  <li>Empty category, tag or search results pages.</li>
+  <li>Removed products left as blank pages.</li>
 </ul>
+<p>To check what status a URL returns, open your browser's developer tools, go to the Network tab and reload the page, or use an online header checker. From a terminal:</p>
+<pre><code>curl -I https://example.com/this-page-does-not-exist/
+HTTP/2 404</code></pre>
+<p>A missing page should show 404 or 410. If it shows 200, the error page is being served as a normal page.</p>
 
-<h2>Find and fix the causes</h2>
+<h2>Building a custom 404 page in WordPress</h2>
+<ul>
+  <li><strong>Block themes:</strong> go to Appearance &gt; Editor &gt; Templates and edit the 404 template.</li>
+  <li><strong>Classic themes:</strong> the theme's 404.php template controls it; edit a child theme's copy so updates don't overwrite your changes.</li>
+  <li><strong>Elementor Pro:</strong> the Theme Builder has a 404 page template you can design and apply site-wide.</li>
+  <li><strong>Plugins</strong> that let you choose a normal page as your 404 page should keep the 404 status; test a missing URL afterwards to confirm.</li>
+</ul>
+<p>If every page except the homepage suddenly shows a 404, the cause is usually permalinks or server rules rather than missing pages; see <a href="/blog/wordpress-pages-404-permalinks-fix/">how to fix WordPress pages showing 404</a>.</p>
+
+<h2>Finding the 404s that matter</h2>
 <ol>
-  <li>Check Google Search Console for "Not found (404)" pages</li>
-  <li>Use a crawler or plugin to find broken internal links</li>
-  <li>Fix internal links to point to the right pages</li>
-  <li>Set up 301 redirects for removed or moved pages that still get visits or have links; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a></li>
+  <li><strong>Search Console:</strong> the Pages report lists URLs under "Not found (404)" and "Soft 404". Click a URL and inspect it to see where Google found the link; <a href="/blog/search-console-page-indexing-errors/">page indexing errors explained</a> covers each status.</li>
+  <li><strong>A redirect plugin's 404 log:</strong> some redirect plugins record every missing URL visitors request, with how often it happens.</li>
+  <li><strong>Server access logs:</strong> your host's logs, if your plan provides them, show requests that returned 404, including from bots.</li>
+  <li><strong>Analytics:</strong> filter GA4 by your 404 page's title to see which missing URLs real visitors reach, and from where.</li>
+  <li><strong>A crawl of your own site:</strong> finds internal links that point to missing pages.</li>
 </ol>
 
-<p>If every page or post on your site suddenly shows a 404 while the homepage still works, the cause is usually technical rather than missing pages; see <a href="/blog/wordpress-pages-404-permalinks-fix/">how to fix WordPress pages showing 404</a>.</p>
+<h2>Fix, redirect or leave it?</h2>
+<table>
+  <thead><tr><th>Situation</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>Page moved or renamed</td><td>301 redirect to the new URL</td></tr>
+    <tr><td>Page removed, with a close replacement</td><td>301 redirect to the closest equivalent</td></tr>
+    <tr><td>Page removed, nothing similar</td><td>Leave it as a 404, or a 410 if removed deliberately</td></tr>
+    <tr><td>Your own link has a typo</td><td>Fix the link; add a redirect too if the wrong URL gets visits</td></tr>
+    <tr><td>Another site links with a typo</td><td>Redirect it if it brings visitors, and ask them to fix it</td></tr>
+    <tr><td>Junk or spam URLs you never had</td><td>Leave them as 404s</td></tr>
+  </tbody>
+</table>
+<p>Redirect to the closest relevant page, never everything to the homepage, and avoid chains of redirects.</p>
 
 <h2>After redesigns and migrations</h2>
-<p>404s often spike after URL changes. Monitor closely in the first weeks; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
+<p>404s rise after URL changes, so build a redirect map from your old sitemap and top pages before launch, then check Search Console every few days for the first weeks. <a href="/blog/redesign-website-without-losing-rankings/">Redesigning without losing rankings</a> has the full checklist.</p>
+
+<h2>FAQs</h2>
+<h3>Do 404 errors hurt SEO?</h3>
+<p>A few 404s for pages that never existed don't harm the rest of your site. What costs you is real pages that disappear without a redirect, because their links and traffic are lost.</p>
+<h3>Should I redirect all 404s to the homepage?</h3>
+<p>No. It confuses visitors who wanted something specific, and Google often treats those redirects as soft 404s. Redirect only to a genuinely matching page.</p>
+<h3>What is a soft 404?</h3>
+<p>A page that looks like an error or is nearly empty, but returns a 200 status as if it were a normal page. Fix it by returning a real 404 or redirecting to a matching page.</p>
+<h3>Should I use a 404 or a 410?</h3>
+<p>Both tell Google the page is gone. A 410 says it was removed on purpose and may be dropped a little sooner; a 404 is fine for most cases.</p>
+<h3>Should my 404 page be indexed?</h3>
+<p>No. With a real 404 status it won't be, and many sites also mark it noindex.</p>
+
+<p>Planning a redesign and want old URLs redirected and 404s caught before visitors notice? A <a href="/website-redesign/">website redesign</a> with me includes the redirect map and Search Console checks after launch, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps an eye on broken links and forms every month.</p>
 `,
   },
   {
@@ -20145,58 +20484,146 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   },
   {
     slug: 'prepare-photos-for-website',
-    seoTitle: 'How to Prepare Photos for Your Website',
-    title: 'How to Prepare Photos for Your Business Website',
-    description: 'Prepare photos for your website: what to shoot, phone photography tips, sizing, compression, file names, alt text and when to hire a photographer.',
+    seoTitle: 'How to Prepare Photos for Your Website: Sizes and Formats',
+    title: 'How to Prepare Photos for Your Business Website: What to Shoot, Phone Tips, Sizes, Aspect Ratios, Formats, File Names, Alt Text and Consent',
+    description: 'Prepare photos for your website: what to shoot, phone tips, sizes and aspect ratios, WebP vs JPEG, compression, file names, alt text and consent.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-speed-optimization', 'website-redesign'],
     body: `
-<p>Real photos of your business build far more trust than stock images, and preparing them properly keeps your website fast. Here's how to get photos ready for your site.</p>
+<p>To prepare photos for your website, shoot real photos in soft natural light at the shape they'll be used (landscape for banners, square for products), then resize each one to roughly the largest size it's shown at: about 1600 to 2000 pixels wide for full-width banners and about 1200 pixels for images within the page. Save them as WebP or a well-compressed JPEG, name each file descriptively, write alt text, get consent from anyone recognisable, and send them to your developer organised by page.</p>
+<p>Every site I build through <a href="/wordpress-website-development/">WordPress website development</a> includes optimized images: resized, compressed and served in modern formats, tested on real phones before launch. Photography itself isn't included, so this guide helps you take and organise photos that work. If your current site is already slow because of heavy images, image compression, resizing and WebP conversion are part of <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
+<p>Not sure whether to use your own photos at all? <a href="/blog/stock-photos-vs-real-photos/">Stock photos vs real photos</a> explains where each belongs. For the technical side once photos are on the site, see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
 
-<h2>What to photograph</h2>
-<ul>
-  <li>You and your team (friendly, natural shots)</li>
-  <li>Your premises: exterior, reception, workspace, facilities</li>
-  <li>Your work: products, projects, before-and-after results</li>
-  <li>Your process: people at work, equipment, behind the scenes</li>
-  <li>Happy customers (with permission)</li>
-</ul>
-
-<p>Tempted to use stock images instead? See <a href="/blog/stock-photos-vs-real-photos/">stock photos vs real photos</a> for where each one belongs.</p>
+<h2>A shot list by page</h2>
+<p>Plan photos around the pages they're for, so nothing is missing when the build starts:</p>
+<table>
+  <thead><tr><th>Page</th><th>Photos to take</th><th>Shape</th></tr></thead>
+  <tbody>
+    <tr><td>Homepage banner</td><td>Your team at work, your premises or your best work, with space around the subject</td><td>Wide landscape</td></tr>
+    <tr><td>About</td><td>The owner or founder, the team, the workspace</td><td>Landscape for groups, portrait or square for people</td></tr>
+    <tr><td>Services</td><td>The job being done, equipment, finished results, before and after</td><td>Landscape</td></tr>
+    <tr><td>Products</td><td>Each product on a plain background, plus details and in-use shots</td><td>Square, all the same</td></tr>
+    <tr><td>Contact</td><td>The building, the signboard and the entrance, so people recognise it on arrival</td><td>Landscape</td></tr>
+    <tr><td>Case studies</td><td>Real projects from start to finish</td><td>Landscape</td></tr>
+  </tbody>
+</table>
+<p>The same photos are useful on your Google Business Profile too; <a href="/blog/google-business-profile-photos/">Google Business Profile photos</a> covers what that needs.</p>
 
 <h2>Phone photography tips</h2>
+<p>A recent phone is enough for most business websites if you follow a few habits:</p>
 <ul>
-  <li>Use natural light; face windows, avoid harsh overhead light</li>
-  <li>Clean the lens and hold the phone steady</li>
-  <li>Keep backgrounds tidy</li>
-  <li>Shoot landscape for banners and wide sections</li>
-  <li>Take several shots and pick the best</li>
+  <li><strong>Use soft natural light.</strong> Face a window or shoot outdoors in shade or on an overcast day. Avoid harsh midday sun and mixed coloured lights indoors.</li>
+  <li><strong>Clean the lens.</strong> A smudged lens is the most common cause of hazy phone photos.</li>
+  <li><strong>Hold it steady,</strong> with both hands or leaning on something, or use a small tripod.</li>
+  <li><strong>Turn on the grid</strong> in your camera settings to keep lines straight and horizons level.</li>
+  <li><strong>Tap to focus</strong> on the subject, then slide the exposure down slightly if bright areas look washed out.</li>
+  <li><strong>Walk closer instead of zooming,</strong> unless your phone has a dedicated zoom lens.</li>
+  <li><strong>Clear the clutter:</strong> cables, boxes, paperwork and anything with customer details on it.</li>
+  <li><strong>Leave space around the subject,</strong> so the image can be cropped for phones and desktops, and text can sit beside it.</li>
+  <li><strong>Take several shots</strong> of each scene, in landscape and portrait, and pick the best later.</li>
+</ul>
+<h3>Product photos at home or in the shop</h3>
+<p>Use a plain white or neutral background, such as a sheet of card curving up behind the product, with window light from one side and a white card on the other to soften shadows. Keep the same distance, angle and background for every product so category pages look tidy, and add a detail shot and an in-use or scale shot for each.</p>
+<h3>People and team photos</h3>
+<p>Natural shots of people at work feel more trustworthy than stiff poses. For team portraits, use the same background and framing for everyone, so the page looks consistent and new staff can be added later in the same style.</p>
+
+<h2>Sizes and aspect ratios</h2>
+<p>Upload photos at roughly the largest size they'll be displayed, allowing a little extra for sharp high-density screens:</p>
+<table>
+  <thead><tr><th>Use</th><th>Typical shape</th><th>Upload width</th></tr></thead>
+  <tbody>
+    <tr><td>Full-width banner</td><td>Wide landscape, such as 16:9 or wider</td><td>About 1600 to 2000 px</td></tr>
+    <tr><td>Image within the page</td><td>Landscape, such as 3:2 or 4:3</td><td>About 1200 px</td></tr>
+    <tr><td>Cards, team photos, thumbnails</td><td>Square or 4:5</td><td>About 600 to 800 px</td></tr>
+    <tr><td>Product images</td><td>Square, all the same ratio</td><td>About 1000 to 1200 px</td></tr>
+    <tr><td>Blog featured and social sharing image</td><td>Landscape, roughly 1.91:1</td><td>At least 1200 px</td></tr>
+  </tbody>
+</table>
+<p>Banners are usually cropped differently on phones, often to a taller shape, so keep the important part of the photo near the centre. Your developer can tell you the exact sizes your theme uses.</p>
+
+<h2>Formats: WebP, JPEG, PNG and others</h2>
+<table>
+  <thead><tr><th>Format</th><th>Use it for</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>WebP</td><td>Most photos and graphics on the site</td><td>Usually much smaller than JPEG at similar quality</td></tr>
+    <tr><td>JPEG</td><td>Photos, and the files you send your developer</td><td>Fine when compressed; a plugin can create WebP copies</td></tr>
+    <tr><td>PNG</td><td>Screenshots and graphics that need transparency</td><td>Very large for photos, so avoid it for them</td></tr>
+    <tr><td>SVG</td><td>Logos and icons</td><td>Sharp at any size; ask your designer for it</td></tr>
+    <tr><td>HEIC</td><td>iPhone originals</td><td>Convert to JPEG before sending, or set the camera to Most Compatible</td></tr>
+  </tbody>
+</table>
+<p>On an iPhone, the Most Compatible option is under Settings &gt; Camera &gt; Formats, and it saves new photos as JPEG.</p>
+
+<h2>Compression without losing quality</h2>
+<p>Compression shrinks the file by removing detail the eye barely notices. Photos straight from a phone are often several megabytes each, far more than a web page needs. A few rules:</p>
+<ul>
+  <li>Resize first, then compress; a smaller image needs less compression to look good.</li>
+  <li>Check the result at full size on a phone and a laptop, looking at faces, text and edges.</li>
+  <li>Use one tool, such as a free online compressor before upload, or one optimization plugin on the site, not several stacked together.</li>
+  <li>Strip location data from photos taken at home or at a client's premises; many compression tools do this automatically.</li>
+</ul>
+<p>The image optimization guide linked above includes a simple weight budget for banners, content images and thumbnails.</p>
+
+<h2>Light editing, honestly</h2>
+<p>Straighten, crop, and adjust brightness and colour so photos look like the real thing on a good day. Keep a consistent look across the site, with similar warmth, brightness and framing. Avoid heavy filters, and never edit product colours or before-and-after results in a way that misleads; customers notice, and with products it leads to returns.</p>
+
+<h2>File names and alt text</h2>
+<p>Rename each file before uploading, in lowercase with hyphens, describing what it shows: teak-dining-table-front.webp rather than IMG_2045.jpg. Add a location only when it's true and relevant, such as clinic-reception-pune.webp.</p>
+<p>Alt text describes the image for people using screen readers and for search engines:</p>
+<table>
+  <thead><tr><th>Weak alt text</th><th>Better alt text</th></tr></thead>
+  <tbody>
+    <tr><td>image1</td><td>Technician servicing a split AC unit on a balcony</td></tr>
+    <tr><td>dining table furniture best price buy</td><td>Six-seater teak dining table in a bright dining room</td></tr>
+    <tr><td>team</td><td>The clinic's three doctors at the reception desk</td></tr>
+  </tbody>
+</table>
+<p>Purely decorative images can have empty alt text. <a href="/blog/image-seo-guide/">Image SEO</a> goes further into file names, captions and Google Images.</p>
+
+<h2>Consent and rights</h2>
+<ul>
+  <li><strong>People:</strong> get consent from anyone recognisable, in writing where you can, and especially from customers, patients and parents of children. Data protection rules may treat identifiable photos as personal data, so ask a lawyer if you're unsure.</li>
+  <li><strong>Staff:</strong> agree what happens to photos of employees who later leave.</li>
+  <li><strong>Client premises and projects:</strong> ask before showing a client's home, office or work.</li>
+  <li><strong>Photographers:</strong> confirm in writing that you can use their photos on your website and social media, and whether a credit is required.</li>
+  <li><strong>Photos found online:</strong> images from Google, Instagram or another website aren't yours to use without permission, and stock images need a licence that covers your use.</li>
 </ul>
 
-<h2>Preparing files for the web</h2>
-<ol>
-  <li><strong>Resize:</strong> around 1600–2000 px wide for banners, 1200 px for content images</li>
-  <li><strong>Compress:</strong> reduce file size without visible quality loss</li>
-  <li><strong>Use modern formats:</strong> WebP where possible</li>
-  <li><strong>Name files descriptively:</strong> "clinic-reception-pune.webp", not "IMG_2045.jpg"</li>
-  <li><strong>Write alt text</strong> describing each image</li>
-</ol>
-<p>See <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
-
-<h2>Consistency</h2>
-<p>A consistent style (similar lighting, colour tone and framing) makes your site look professional. Light editing for brightness and straightening helps; avoid heavy filters.</p>
-
-<h2>Permissions</h2>
-<ul>
-  <li>Get consent from people in photos, especially customers and children</li>
-  <li>Use only images you own or have licensed</li>
-</ul>
+<h2>Organising files to send to your developer</h2>
+<p>Send full-quality files through a shared folder rather than WhatsApp, which compresses photos unless you send them as documents. A simple structure makes the build faster:</p>
+<pre><code>website-photos/
+  01-home/
+    hero-team-at-work.jpg
+  02-about/
+    owner-portrait.jpg
+    team-group.jpg
+  03-services/
+    ac-repair/
+      technician-servicing-split-ac.jpg
+  04-products/
+    teak-dining-table-front.jpg
+    teak-dining-table-detail.jpg
+  photo-notes (spreadsheet)</code></pre>
+<p>In the notes, list each file's page, a caption if it needs one, who is in it, whether consent is confirmed and any photographer credit. Include photos in your <a href="/blog/website-brief-template/">website brief</a> from the start, so layouts are planned around what you actually have.</p>
 
 <h2>When to hire a photographer</h2>
-<p>For premium brands, hospitality, real estate, food, interiors and product catalogues, professional photos are often worth the investment because visuals drive decisions.</p>
+<p>For hotels, restaurants, interiors, real estate, fashion, jewellery and large product catalogues, visuals often decide the sale, so professional photos are usually worth it. A half-day shoot planned around your shot list can cover the whole site, your Google profile and social media.</p>
 
-<p>Include your photos in your <a href="/blog/website-brief-template/">website brief</a> so your developer can plan layouts around them.</p>
+<h2>FAQs</h2>
+<h3>What size should photos be for a website?</h3>
+<p>About 1600 to 2000 pixels wide for full-width banners, about 1200 pixels for images within the page, and smaller for cards and thumbnails. Product photos work well square, at about 1000 to 1200 pixels.</p>
+<h3>Should I use WebP or JPEG?</h3>
+<p>WebP for the website, because files are usually much smaller. Sending JPEGs to your developer is fine; a plugin can convert them to WebP on upload.</p>
+<h3>Are phone photos good enough for a business website?</h3>
+<p>For most businesses, yes, if they're well lit, steady, uncluttered and consistent. Real phone photos usually build more trust than polished stock images.</p>
+<h3>Can I send website photos on WhatsApp?</h3>
+<p>Only as documents, because normal WhatsApp photos are compressed. A shared folder is easier for more than a few files.</p>
+<h3>Do I need permission to show customers or staff?</h3>
+<p>Yes. Get consent from anyone recognisable before publishing, and keep a record of it, especially for customers, patients and children.</p>
+
+<p>Planning a new website and want your photos turned into fast, sharp pages? <a href="/wordpress-website-development/">WordPress website development</a> includes resizing, compression and modern formats for every image, tested on real phones. If your current site is weighed down by heavy images, see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
   {
@@ -22911,61 +23338,135 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'website-chatbot-worth-it',
-    seoTitle: 'Do You Need a Chatbot on Your Website? Pros & Cons',
-    title: 'Do You Need a Chatbot on Your Business Website?',
-    description: 'Do you need a chatbot on your website? Types, benefits, risks like wrong AI answers and slower pages, WhatsApp as an alternative and how to decide.',
+    seoTitle: 'Do You Need a Chatbot on Your Website? Chatbot vs WhatsApp',
+    title: 'Do You Need a Chatbot on Your Business Website? Chatbots vs Live Chat vs WhatsApp, AI Accuracy, Speed, Privacy and Cost',
+    description: 'Is a website chatbot worth it? Chatbots vs live chat vs WhatsApp for Indian businesses, AI accuracy risks, speed, privacy, costs and a decision table.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-speed-optimization', 'wordpress-website-development'],
     body: `
-<p>Chat widgets are everywhere, and AI has made chatbots easier to set up than ever. But is a chatbot right for a small business website? Sometimes it helps. Sometimes it just slows the page and annoys visitors.</p>
+<p>For most small businesses in India, a WhatsApp button plus clear pages and FAQs does more than a chatbot, at lower cost and with less upkeep. A chatbot earns its place when you get many repetitive questions, a lot of visitors arrive outside working hours, or an online store gets constant questions about orders and delivery, and only if someone keeps its answers accurate. Whatever you choose, load it so it doesn't slow your pages, and always give visitors a route to a real person.</p>
+<p>On the landing pages I build through <a href="/landing-page-design/">landing page design</a>, the page asks for one thing, and the form, WhatsApp button and phone number are three routes to that same enquiry, with WhatsApp opening a pre-filled message that names the campaign. Every site built through <a href="/wordpress-website-development/">WordPress website development</a> includes contact forms and a WhatsApp button. A chatbot can sit alongside them, but it should earn its place.</p>
+<p>If you're leaning towards WhatsApp, <a href="/blog/whatsapp-on-business-website/">how to add WhatsApp to your business website</a> covers links, buttons and tracking. For AI tools more broadly, see <a href="/blog/ai-tools-website-content-responsibly/">using AI tools responsibly</a>.</p>
 
-<h2>Types of website chat</h2>
+<h2>The options compared</h2>
+<table>
+  <thead><tr><th>Option</th><th>What it is</th><th>Good for</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>WhatsApp button</td><td>Opens a chat in the visitor's own WhatsApp</td><td>Most local and service businesses</td><td>Someone must reply quickly</td></tr>
+    <tr><td>Live chat</td><td>A person replies through a widget on the site</td><td>Teams that can staff it during set hours</td><td>Unanswered chats look worse than no chat</td></tr>
+    <tr><td>Rule-based chatbot</td><td>Buttons and scripted answers for common questions</td><td>Predictable questions, simple routing</td><td>Feels rigid when questions don't fit the script</td></tr>
+    <tr><td>AI chatbot</td><td>Answers in natural language, often from your site's content</td><td>High volumes of varied questions</td><td>Confident wrong answers, cost and privacy</td></tr>
+    <tr><td>Enquiry form</td><td>A short form that emails your team</td><td>Detailed requests, quotes, B2B enquiries</td><td>Slow replies lose leads</td></tr>
+  </tbody>
+</table>
+
+<h2>When a chatbot helps</h2>
 <ul>
-  <li><strong>Live chat:</strong> a real person replies through a chat widget</li>
-  <li><strong>Rule-based chatbots:</strong> buttons and scripted answers for common questions</li>
-  <li><strong>AI chatbots:</strong> answer questions in natural language, often trained on your website content</li>
-  <li><strong>WhatsApp button:</strong> opens a chat in the visitor's WhatsApp</li>
+  <li>You answer the same questions many times a day: timings, fees, delivery areas, order status, documents needed.</li>
+  <li>Many visitors arrive outside working hours and need a basic answer or a way to leave details.</li>
+  <li>An online store gets frequent questions about shipping, returns, sizes and where an order is.</li>
+  <li>Your traffic is high enough that a chatbot would save real staff time.</li>
+  <li>Someone on your team can review conversations and keep answers up to date.</li>
 </ul>
 
-<h2>When a chatbot can help</h2>
+<h2>When it doesn't</h2>
 <ul>
-  <li>You get lots of repetitive questions (hours, pricing, order status)</li>
-  <li>Visitors arrive outside business hours and need basic answers</li>
-  <li>An online store gets questions about shipping, returns and sizes</li>
-  <li>You have enough traffic to justify setting it up and maintaining it</li>
+  <li>You get a few enquiries a day, and customers prefer to call or WhatsApp.</li>
+  <li>Your services need a conversation, a site visit or a custom quote.</li>
+  <li>Nobody has time to check what the bot is telling people.</li>
+  <li>The page's job is a single action, such as an ad landing page.</li>
+  <li>Your site is already slow on phones.</li>
 </ul>
 
-<h2>The downsides</h2>
+<h2>AI chatbots and accuracy</h2>
+<p>AI chatbots can sound helpful while being wrong. They may invent a price, a discount, a delivery date, a policy or an opening time, or give medical, legal or financial advice they shouldn't. Treat anything your chatbot says as if a member of staff said it, because customers will.</p>
 <ul>
-  <li><strong>Wrong answers:</strong> AI chatbots can confidently give incorrect information about prices, policies or availability</li>
-  <li><strong>Slower pages:</strong> chat widgets often load heavy scripts on every page</li>
-  <li><strong>Annoying pop-ups:</strong> chat bubbles that open automatically can drive people away</li>
-  <li><strong>Cost and upkeep:</strong> subscriptions, training and reviewing conversations</li>
-  <li><strong>Privacy:</strong> visitors may share personal details in chat, so handle them responsibly</li>
+  <li><strong>Limit what it draws on</strong> to your own approved content, and tell it to hand over to a person for anything else.</li>
+  <li><strong>Keep sensitive topics out:</strong> prices that change, medical or legal questions, refunds and complaints.</li>
+  <li><strong>Test it with awkward questions</strong> before launch: discounts, competitors, emergencies, complaints and questions in Hindi or Hinglish.</li>
+  <li><strong>Review conversations every week</strong> at first, and correct the source content when answers are wrong.</li>
+  <li><strong>Say it's automated,</strong> so visitors know when they're talking to a bot.</li>
+</ul>
+<p>Doctors, lawyers, financial advisers and other regulated professions should be especially careful, because a chatbot answer can look like professional advice.</p>
+
+<h2>Speed: the hidden cost</h2>
+<p>Many chat widgets load scripts, fonts and images on every page, often before the visitor has done anything, which can slow your pages on mobile data and hurt Core Web Vitals. To limit the damage:</p>
+<ul>
+  <li>Show a lightweight chat button and load the real widget only when someone taps it.</li>
+  <li>Load it only on pages where people actually ask questions, such as pricing, product and contact pages.</li>
+  <li>Don't let it open automatically; pop-up chat windows annoy visitors and cover content on phones.</li>
+  <li>Test speed before and after adding it with PageSpeed Insights.</li>
+</ul>
+<p>Chat is only one kind of external code; <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a> shows how to audit trackers, embeds and widgets together.</p>
+
+<h2>Privacy and data</h2>
+<p>Visitors type phone numbers, addresses, order details and sometimes health or financial information into chat windows. Before adding one:</p>
+<ul>
+  <li>Find out where conversations are stored, for how long, and whether the provider uses them to train its AI.</li>
+  <li>Mention the chat tool in your privacy policy, and in any cookie notice if it sets cookies; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for Indian websites</a>.</li>
+  <li>Don't add chat contacts to marketing lists without their consent.</li>
+  <li>Limit who on your team can see chat transcripts.</li>
+</ul>
+<p>India's DPDP Act and its rules are being phased in and can apply to personal data collected through chat, so ask a lawyer if you handle sensitive information.</p>
+
+<h2>A middle ground: WhatsApp Business automation</h2>
+<p>If out-of-hours enquiries are the main worry, the WhatsApp Business app may be enough. It can send a greeting message to new contacts and an away message outside your hours, and it has quick replies for common answers, a catalogue and labels for sorting chats. For larger volumes, the WhatsApp Business Platform, used through an approved provider, can run a chatbot inside WhatsApp itself, so customers stay in the app they already use.</p>
+
+<h2>What drives the cost</h2>
+<p>Chatbot and live chat pricing varies widely, so compare current plans. The main cost drivers are:</p>
+<ul>
+  <li><strong>The plan:</strong> often priced by the number of conversations, agents, websites or features.</li>
+  <li><strong>AI usage:</strong> some tools charge by the number of AI answers or messages.</li>
+  <li><strong>Setup:</strong> writing and organising the content the bot answers from, and designing handover rules.</li>
+  <li><strong>Integrations:</strong> connecting to WooCommerce orders, a booking system or your CRM.</li>
+  <li><strong>WhatsApp Business API:</strong> if the bot runs on WhatsApp through a provider, Meta and the provider may charge for messages, depending on the type of conversation.</li>
+  <li><strong>Staff time:</strong> answering live chats, reviewing transcripts and updating answers, which is easy to underestimate.</li>
 </ul>
 
-<h2>For many Indian businesses, WhatsApp is enough</h2>
-<p>Customers already use WhatsApp daily, conversations continue after they leave your site, and you can reply from your phone. WhatsApp Business adds quick replies, greeting and away messages, and catalogues. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a>.</p>
+<h2>Which should you use?</h2>
+<table>
+  <thead><tr><th>Your situation</th><th>Start with</th></tr></thead>
+  <tbody>
+    <tr><td>Local service business, a handful of enquiries a day</td><td>WhatsApp button, click-to-call and clear FAQs</td></tr>
+    <tr><td>Clinic, salon or class with appointments</td><td>A booking link and WhatsApp; a chatbot only for common questions</td></tr>
+    <tr><td>Online store with many order and delivery questions</td><td>An order tracking page, clear policies and WhatsApp; a chatbot that reads order status if volumes are high</td></tr>
+    <tr><td>B2B supplier with detailed enquiries</td><td>An enquiry form and WhatsApp; live chat in office hours if someone can staff it</td></tr>
+    <tr><td>High traffic and repetitive questions around the clock</td><td>A rule-based or AI chatbot with a clear handover to a person</td></tr>
+    <tr><td>Landing page for ads</td><td>No chatbot; one action, such as a form or WhatsApp</td></tr>
+  </tbody>
+</table>
 
 <h2>If you do add a chatbot</h2>
-<ul>
-  <li>Limit it to questions your website already answers accurately</li>
-  <li>Always offer a path to a human: WhatsApp, phone or a form</li>
-  <li>Review conversations regularly and correct wrong answers</li>
-  <li>Load the widget only when the visitor interacts, not on page load</li>
-  <li>Don't auto-open it on every page</li>
-</ul>
-
-<p>Chat widgets are only one kind of external code; see <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a> to audit trackers, embeds and the rest.</p>
+<ol>
+  <li>Write down the ten or twenty questions it should answer, with approved answers.</li>
+  <li>Set a handover: WhatsApp, phone or a form whenever the bot can't help.</li>
+  <li>Load it on interaction and only on the pages that need it.</li>
+  <li>Test it on a phone, in English and in the other languages your customers use.</li>
+  <li>Track chats started and enquiries from chat as events in analytics; <a href="/blog/ga4-events-explained/">GA4 events explained</a> shows how.</li>
+  <li>Review conversations regularly, and fix the source content when answers are wrong.</li>
+</ol>
 
 <h2>Answer questions on the page first</h2>
-<p>Often the best "chatbot" is a clear page. Good FAQs, pricing guidance and service details answer most questions without any widget; see <a href="/blog/faq-page-seo/">FAQ pages</a>.</p>
+<p>Often the best "chatbot" is a clear page. Good FAQs, pricing guidance, delivery areas and service details answer most questions without any widget, and they also help your pages appear in search; see <a href="/blog/faq-page-seo/">how to write a good FAQ section</a>. The questions people type into a chat window are a ready-made list of what your pages are missing.</p>
 
 <h2>Measure the result</h2>
-<p>Track chats started and enquiries from chat, and check your page speed before and after adding it; see <a href="/blog/why-is-my-wordpress-site-slow/">why your site is slow</a>. Keep it only if it brings more business than it costs.</p>
+<p>After a month or two, compare enquiries, chats started, how many chats turned into enquiries, and page speed with the period before. Keep the chatbot if it brings more business or saves more staff time than it costs; otherwise remove it and put the questions it received onto your pages.</p>
 
-<p>For using AI responsibly on your website, see <a href="/blog/ai-tools-website-content-responsibly/">using AI tools responsibly</a>.</p>
+<h2>FAQs</h2>
+<h3>Is a chatbot better than WhatsApp for a small business?</h3>
+<p>Not usually. Customers already use WhatsApp, conversations continue after they leave your site, and you can reply from your phone. A chatbot helps mainly when question volumes are high.</p>
+<h3>Will a chatbot slow down my website?</h3>
+<p>Many do, because they load scripts on every page. Loading the widget only when a visitor taps the chat button, and only on relevant pages, limits the impact.</p>
+<h3>Can an AI chatbot give customers wrong information?</h3>
+<p>Yes. Limit it to your approved content, keep prices and sensitive topics out, hand over to a person when unsure, and review conversations regularly.</p>
+<h3>Does a chatbot help SEO?</h3>
+<p>Not directly. Chat conversations aren't page content. Putting the answers people ask for onto your pages is what helps search.</p>
+<h3>Can a chatbot take bookings or orders?</h3>
+<p>Some can, by connecting to a booking system or your store. Test the full flow carefully, and keep the normal booking page or checkout as the main route.</p>
+
+<p>Want visitors to reach you in one tap instead of waiting on a bot? <a href="/landing-page-design/">Landing page design</a> builds campaign pages around one clear action, with WhatsApp, forms and tracking set up, and <a href="/wordpress-website-development/">WordPress website development</a> includes contact forms and a WhatsApp button on every site.</p>
 `,
   },
   {
@@ -25316,52 +25817,151 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'give-website-feedback-developer',
-    seoTitle: 'How to Give Website Feedback to Your Developer (Clearly)',
-    title: 'How to Give Clear Website Feedback to Your Designer or Developer',
-    description: 'Give clear website feedback to your developer: consolidate comments, be specific, use screenshots, separate bugs from changes and focus on goals.',
+    seoTitle: 'How to Give Website Feedback to Your Developer (Template)',
+    title: 'How to Give Clear Website Feedback to Your Designer or Developer: Screenshots, One List, Priorities, Bugs vs Changes and a Feedback Template',
+    description: 'Give clear website feedback: one consolidated list, screenshots with page and device, priorities, bugs vs changes, revision rounds and a template.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'figma-to-wordpress'],
     body: `
-<p>Unclear feedback is one of the biggest reasons website projects run late and budgets stretch. "Make it pop" or "I don't like it" leaves designers guessing. Clear, organised feedback gets you a better website, faster.</p>
+<p>Clear website feedback is one consolidated list from one decision-maker, where each point names the page, the device and browser, what you see, what you expected and how important it is, with a screenshot. Separate bugs from new requests, explain the problem rather than only the fix you have in mind, and send everything for a round together by the agreed date. Vague notes like "make it pop" or a stream of separate messages lead to guesswork, rework and delays.</p>
+<p>In my <a href="/wordpress-website-development/">WordPress website development</a> projects, key page designs are shared for your feedback before the full build, and the site is then built on a staging link you can check on your own phone. The written scope says how many revision rounds are included. On a <a href="/website-redesign/">website redesign</a>, you review real pages on staging rather than mock-ups, and one consolidated list from one decision-maker keeps rounds short.</p>
+<p>The same approach works with any designer or developer. For what counts as a fix and what counts as new work, see <a href="/blog/website-bug-vs-change-request/">bug or change request?</a>, and for how revision rounds are agreed up front, the <a href="/blog/website-design-contract-checklist/">website design contract checklist</a>.</p>
 
-<h2>1. Collect feedback in one place</h2>
-<p>If several people are reviewing, gather everyone's comments first and send one consolidated list. Contradictory feedback from different team members, sent separately, causes rework. Decide who has the final say.</p>
-
-<h2>2. Be specific</h2>
+<h2>What good feedback looks like</h2>
 <table>
-  <thead><tr><th>Vague</th><th>Specific</th></tr></thead>
+  <thead><tr><th>Vague</th><th>Clear</th></tr></thead>
   <tbody>
-    <tr><td>"The homepage doesn't feel right"</td><td>"The hero image feels corporate; we'd prefer a photo of our team at work"</td></tr>
-    <tr><td>"Make the text bigger"</td><td>"Body text on mobile is hard to read; can it be larger?"</td></tr>
-    <tr><td>"The form is broken"</td><td>"Submitting the contact form on iPhone Safari shows an error after clicking Send"</td></tr>
+    <tr><td>"The homepage doesn't feel right"</td><td>"The banner photo feels corporate; a photo of our team at work would suit our customers better"</td></tr>
+    <tr><td>"Make the text bigger"</td><td>"Body text on the Services page is hard to read on my phone; can it be larger?"</td></tr>
+    <tr><td>"The form is broken"</td><td>"On iPhone Safari, the contact form shows an error after tapping Send"</td></tr>
+    <tr><td>"Make it pop"</td><td>"Visitors may miss the enquiry button; it blends into the background"</td></tr>
+    <tr><td>"Change the colours"</td><td>"The grey headings look faded next to our logo's dark blue"</td></tr>
   </tbody>
 </table>
+<p>Each clear version says where the problem is, what's wrong and why it matters, so the designer can find it and suggest the right fix.</p>
 
-<h2>3. Use screenshots</h2>
-<p>A screenshot with an arrow or circle is worth a paragraph of text. Include the page URL and the device and browser you used. Some teams use visual feedback tools that let you comment directly on the page.</p>
+<h2>What to review at each stage</h2>
+<p>Feedback is most useful when it matches the stage the project is at:</p>
+<table>
+  <thead><tr><th>Stage</th><th>Focus on</th><th>Leave for later</th></tr></thead>
+  <tbody>
+    <tr><td>Page plan</td><td>Missing pages, the menu, what each page must answer</td><td>Colours and fonts</td></tr>
+    <tr><td>Key page designs</td><td>Layout, look and feel, what stands out first, calls to action</td><td>Typos in placeholder text</td></tr>
+    <tr><td>Content</td><td>Facts, prices, names, phone numbers, spelling</td><td>Small spacing details</td></tr>
+    <tr><td>Build on staging</td><td>How it works on phones, forms, buttons, links, speed</td><td>A new direction for the design</td></tr>
+    <tr><td>Before launch</td><td>A final check of every page and form</td><td>New features, which can follow after launch</td></tr>
+  </tbody>
+</table>
+<p>Changing the overall design once pages are built costs far more time than changing it at the design stage, so speak up early if the look isn't right.</p>
 
-<h2>4. Explain the problem, not just the solution</h2>
-<p>"Make the button red" is a solution. "People might not notice the enquiry button" is the problem. Sharing the problem lets your designer suggest the best fix.</p>
+<h2>Step 1: Agree who decides</h2>
+<p>If several people review the site, gather everyone's comments first, resolve disagreements internally, and send one list. Contradictory feedback sent separately by different team members is one of the most common causes of rework. Name one person who gives final approval, and let the developer know who that is.</p>
 
-<h2>5. Focus on goals and customers</h2>
-<p>Ask "will this help customers understand us and enquire?" rather than "do I personally like this colour?". Your customers' needs matter more than personal taste.</p>
-
-<h2>6. Separate bugs from changes</h2>
+<h2>Step 2: Review on the devices your customers use</h2>
+<p>Most visitors to a small business website arrive on a phone, so review on yours first, then on a computer. Where you can, check:</p>
 <ul>
-  <li><strong>Bugs:</strong> things not working as agreed, usually fixed free</li>
-  <li><strong>Changes:</strong> new ideas or different requirements, which may affect cost and timeline</li>
+  <li>An Android phone in Chrome and an iPhone in Safari.</li>
+  <li>A laptop or desktop in Chrome or Edge.</li>
+  <li>Your phone on mobile data, not only office Wi-Fi.</li>
 </ul>
-<p>See <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></p>
+<p>Write down the device and browser for every issue, because a problem on one often doesn't appear on another. A staging site is a private copy for exactly this kind of testing; <a href="/blog/staging-sites-explained/">staging sites explained</a> covers how it works.</p>
 
-<h2>7. Test on your phone</h2>
-<p>Most of your visitors use mobile, so review the site on your phone, not just a desktop screen.</p>
+<h2>Step 3: Take screenshots that explain themselves</h2>
+<p>A screenshot with an arrow or a circle is worth a paragraph of text.</p>
+<ul>
+  <li><strong>Phones:</strong> most use the power and volume-down buttons together; your phone's markup tool can then add arrows and notes.</li>
+  <li><strong>Windows:</strong> press Windows key + Shift + S to capture part of the screen.</li>
+  <li><strong>Mac:</strong> press Command + Shift + 4 and drag to select an area.</li>
+  <li><strong>Screen recordings</strong> help when something goes wrong during a sequence, such as a menu that won't close or a form that fails after submitting.</li>
+</ul>
+<p>Always include the page address with the screenshot, or a clear page name, so the developer knows exactly where to look.</p>
 
-<h2>8. Respect deadlines</h2>
-<p>Agree feedback dates in the project plan and stick to them. Delayed feedback is a common reason projects slip; see <a href="/blog/how-long-to-build-wordpress-website/">how long a website takes</a>.</p>
+<h2>Step 4: Write each point so it can be acted on</h2>
+<p>For every item, give:</p>
+<ol>
+  <li><strong>Where:</strong> the page and the section, using its heading, such as "Services page, the Pricing section".</li>
+  <li><strong>Device and browser.</strong></li>
+  <li><strong>What you see.</strong></li>
+  <li><strong>What you expected, or what you'd like instead.</strong></li>
+  <li><strong>Why it matters,</strong> if it isn't obvious.</li>
+</ol>
+<p>Explain the problem, not just the solution. "Make the button red" is a solution; "people might not notice the enquiry button" is the problem, and sharing it lets your designer suggest a fix that suits the rest of the design. Judge changes by whether they help customers understand you and get in touch, not only by personal taste.</p>
 
-<h2>9. Use rounds wisely</h2>
-<p>If your agreement includes a set number of revision rounds, make each one count by sending complete feedback rather than a few comments at a time.</p>
+<h2>Step 5: Prioritise</h2>
+<table>
+  <thead><tr><th>Priority</th><th>Meaning</th><th>Examples</th></tr></thead>
+  <tbody>
+    <tr><td>Must fix before launch</td><td>Broken, wrong or blocking enquiries</td><td>A form that doesn't send, a wrong phone number, a missing page</td></tr>
+    <tr><td>Should fix</td><td>Noticeably affects how the site looks or reads</td><td>An unclear heading, a photo that's cropped badly on phones</td></tr>
+    <tr><td>Later</td><td>Nice to have, or a new idea</td><td>An extra page, an animation, a new feature</td></tr>
+  </tbody>
+</table>
+<p>Priorities help the developer fix what matters first, and make it easier to agree what goes live now and what follows.</p>
+
+<h2>Step 6: Keep bugs and change requests apart</h2>
+<ul>
+  <li><strong>Bugs</strong> are things that don't work as agreed: a broken link, a form error, a layout that breaks on phones. Fixing them is part of the original job.</li>
+  <li><strong>Change requests</strong> are new ideas or different requirements: an extra page, a new section, a different layout. They may affect the price and timeline, so they're usually quoted before work starts.</li>
+  <li><strong>Content corrections</strong> are your own text, prices or details that need updating.</li>
+</ul>
+<p>Labelling each item avoids awkward conversations about what's included.</p>
+
+<h2>A feedback template you can copy</h2>
+<p>Keep feedback in a shared spreadsheet or document with these columns:</p>
+<table>
+  <thead><tr><th>No.</th><th>Page and section</th><th>Device and browser</th><th>What I see</th><th>What I expected</th><th>Type</th><th>Priority</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Contact, enquiry form</td><td>iPhone, Safari</td><td>Error after tapping Send</td><td>A thank-you message</td><td>Bug</td><td>Must fix</td></tr>
+    <tr><td>2</td><td>Home, banner</td><td>All</td><td>Stock photo of an office</td><td>Our team photo from the shared folder</td><td>Content</td><td>Should fix</td></tr>
+    <tr><td>3</td><td>About, team section</td><td>Android, Chrome</td><td>Photos stack unevenly</td><td>Two photos per row, same size</td><td>Bug</td><td>Should fix</td></tr>
+    <tr><td>4</td><td>Services</td><td>All</td><td>No pricing guidance</td><td>A starting-price note for each service</td><td>Change</td><td>Later</td></tr>
+  </tbody>
+</table>
+<p>Add a screenshot or link in each row, and a column where the developer can mark items as done.</p>
+
+<h2>Make each revision round count</h2>
+<p>If your agreement includes a set number of revision rounds, a round usually means one complete list of feedback on one stage. To get the most from each:</p>
+<ul>
+  <li>Review everything in that stage before sending anything.</li>
+  <li>Send the list by the agreed date; late feedback is a common reason projects slip, as <a href="/blog/how-long-to-build-wordpress-website/">how long a WordPress website takes</a> explains.</li>
+  <li>Answer the developer's questions quickly, since one unanswered question can hold up several fixes.</li>
+  <li>Don't reopen points you've already approved unless something has genuinely changed.</li>
+  <li>Approve each stage in writing, by email or WhatsApp, so there's a clear record.</li>
+</ul>
+
+<h2>Tools for collecting feedback</h2>
+<ul>
+  <li><strong>A shared spreadsheet or document:</strong> simple, and everyone can see the status of each item.</li>
+  <li><strong>Email:</strong> fine for one consolidated list with screenshots attached.</li>
+  <li><strong>Visual feedback tools:</strong> some let you click on a staging page and leave a comment that records the page, browser and screen size automatically, which suits larger projects.</li>
+  <li><strong>WhatsApp:</strong> good for quick questions and approvals, but long lists get lost in chat, so move them to a document.</li>
+</ul>
+
+<h2>Common feedback mistakes</h2>
+<ul>
+  <li>Sending comments one at a time over several days.</li>
+  <li>Reviewing only on a desktop screen.</li>
+  <li>Changing the design direction after pages are built.</li>
+  <li>Screenshots without a page address or device.</li>
+  <li>Feedback from people who aren't involved, sent directly to the developer.</li>
+  <li>Rewriting content after layouts were built around the first version.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>How many revision rounds are normal?</h3>
+<p>Whatever your proposal says, which is why it should say a number. For example, two rounds on the key page designs and one on inner pages. Extra rounds are usually charged, so make each one complete.</p>
+<h3>Can I send feedback on WhatsApp?</h3>
+<p>For a quick question or an approval, yes. For a list of changes, a single document or email with screenshots is far easier to track and less likely to be missed.</p>
+<h3>What if I don't like the design at all?</h3>
+<p>Say so early, at the design stage, and explain what feels wrong and which reference sites feel right. A change of direction then is much easier than after the build.</p>
+<h3>Are bug fixes counted as revision rounds?</h3>
+<p>Usually not. Fixing something that doesn't work as agreed is part of the job, while revision rounds cover changes to agreed designs and content.</p>
+<h3>How quickly should I send feedback?</h3>
+<p>By the date agreed in the project plan. If you need more time, tell the developer, because the timeline moves with every delay.</p>
+
+<p>Want a project where feedback, revision rounds and approvals are agreed from the start? <a href="/wordpress-website-development/">WordPress website development</a> with me includes a written scope, design feedback before the build and a staging link to review on your phone. Updating an existing site? See <a href="/website-redesign/">website redesign</a>.</p>
 `,
   },
   {
@@ -36366,180 +36966,284 @@ npm start</code></pre>
   },
   {
     slug: 'woocommerce-subscriptions',
-    seoTitle: 'Selling Subscriptions With WooCommerce in India',
-    title: 'Selling Subscriptions With WooCommerce: Recurring Products, Payments and Retention',
-    description: 'How to sell subscriptions and recurring products with WooCommerce in India: use cases, recurring payment options, renewals, operations and retention tips.',
+    seoTitle: 'WooCommerce Subscriptions in India: Plugins and Payments',
+    title: 'Selling Subscriptions With WooCommerce in India: Plugins, Recurring Payments, Billing Cycles, Trials, Pausing and Retention',
+    description: 'How to sell subscriptions with WooCommerce in India: plugin options, recurring payments and e-mandates, billing cycles, trials, pausing and cancelling.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-startups'],
     body: `
-<p>Subscriptions turn one-time buyers into regular customers: a monthly pack of coffee, a meal plan, a membership or an annual service plan. Recurring revenue is also easier to plan around than chasing new orders every month. WooCommerce can handle subscriptions well, but in India the payment side needs extra thought. Here's how it works and what to plan for.</p>
+<p>WooCommerce doesn't sell subscriptions on its own. You add a subscription plugin, set up each product's billing cycle, trial and renewal rules, and connect a payment gateway whose WooCommerce integration supports automatic renewals with that plugin. In India, automatic charges generally run on an e-mandate the customer approves once, so many stores combine automatic billing with prepaid plans or emailed renewal links.</p>
+<p>Subscriptions are one of the features I scope and quote separately as part of <a href="/woocommerce-developer/">WooCommerce development</a>: the plugin and gateway are checked together before the build, and renewals, failed payments and emails are tested in the gateway's test mode before the store takes real orders. If you're launching a new subscription brand rather than adding plans to an existing store, see <a href="/website-for-startups/">websites for startups</a>.</p>
+<p>Selling access to content or a community rather than products? <a href="/blog/membership-website-wordpress/">How to build a membership website on WordPress</a> covers that side. For choosing the gateway itself, see <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway for an Indian website</a>.</p>
 
 <h2>What you can sell on subscription</h2>
 <ul>
-  <li><strong>Repeat consumables:</strong> tea, coffee, oils, flours, pet food or skincare refills, often with subscribe-and-save pricing</li>
-  <li><strong>Meal and tiffin plans:</strong> weekly or monthly plans; see <a href="/blog/website-for-tiffin-meal-subscriptions/">websites for tiffin and meal subscriptions</a></li>
-  <li><strong>Curated boxes:</strong> snacks, books, stationery or hobby kits</li>
-  <li><strong>Memberships:</strong> clubs, communities, gyms or members-only content</li>
-  <li><strong>Services:</strong> maintenance plans (AMCs), retainers or monthly coaching</li>
-  <li><strong>Digital access:</strong> software licences, template libraries or course access</li>
+  <li><strong>Repeat consumables:</strong> tea, coffee, oils, flours, pet food or skincare refills, often with a lower subscribe-and-save price.</li>
+  <li><strong>Meal and tiffin plans:</strong> weekly or monthly plans; see <a href="/blog/website-for-tiffin-meal-subscriptions/">websites for tiffin and meal subscriptions</a>.</li>
+  <li><strong>Curated boxes:</strong> snacks, books, stationery or hobby kits.</li>
+  <li><strong>Memberships:</strong> clubs, gyms, communities or members-only content.</li>
+  <li><strong>Services:</strong> annual maintenance contracts, retainers or monthly coaching.</li>
+  <li><strong>Digital access:</strong> software licences, template libraries or course access.</li>
 </ul>
 
-<h2>Do you need full subscriptions?</h2>
-<p>Automatic recurring billing is powerful, but it adds complexity. Sometimes a simpler setup does the job:</p>
+<h2>Prepaid plans, manual renewals or automatic billing?</h2>
+<p>Automatic recurring billing is powerful, but it adds moving parts. Sometimes a simpler setup does the job:</p>
 <table>
-  <thead><tr><th>Setup</th><th>Best when</th></tr></thead>
+  <thead><tr><th>Setup</th><th>How it works</th><th>Best when</th><th>Main risk</th></tr></thead>
   <tbody>
-    <tr><td>Prepaid plans, such as a three-month pack</td><td>Customers are happy to pay upfront, and you have no renewals to manage</td></tr>
-    <tr><td>Manual renewals with reminders</td><td>You have a small customer base and can send a payment link each cycle</td></tr>
-    <tr><td>Automatic recurring billing</td><td>You have many subscribers, predictable cycles and a gateway that supports it</td></tr>
+    <tr><td>Prepaid plan</td><td>A three-month or yearly pack sold as a normal product</td><td>Customers are happy to pay up front</td><td>Forgetting to remind them before it runs out</td></tr>
+    <tr><td>Manual renewal</td><td>The plugin emails a renewal invoice with a payment link each cycle</td><td>A small customer base, or no gateway support for automatic renewals</td><td>Customers who don't get round to paying</td></tr>
+    <tr><td>Automatic billing</td><td>The customer approves a mandate once, and renewals are charged automatically</td><td>Many subscribers and predictable cycles</td><td>Failed charges, cancelled mandates and plugin compatibility</td></tr>
   </tbody>
 </table>
-<p>Many businesses start with prepaid plans or manual renewals and move to automatic billing once demand is proven.</p>
+<p>Many businesses start with prepaid plans or manual renewals and move to automatic billing once demand is proven. A prepaid pack doesn't even need a subscription plugin; a simple product or a variation for each plan length is enough.</p>
 
-<h2>How subscriptions work in WooCommerce</h2>
-<p>WooCommerce doesn't include subscriptions out of the box. The official WooCommerce Subscriptions extension is the most established option, and other subscription plugins exist too, so compare features and current pricing before choosing. Typical features include:</p>
+<h2>Choosing a subscription plugin</h2>
+<p>The official WooCommerce Subscriptions extension is the most established option. Others include YITH WooCommerce Subscription and several plugins in the WordPress.org directory, with free and paid tiers. Features and pricing change, so compare them on the points that matter to your store:</p>
+<table>
+  <thead><tr><th>What to compare</th><th>Questions to ask</th></tr></thead>
+  <tbody>
+    <tr><td>Gateway support</td><td>Does your Indian gateway's WooCommerce plugin support automatic renewals with this subscription plugin, or only manual ones?</td></tr>
+    <tr><td>Billing options</td><td>Weekly, monthly, yearly or custom intervals? Fixed-length plans? Trials and sign-up fees? Renewals on one date for everyone?</td></tr>
+    <tr><td>Customer controls</td><td>Can customers pause, cancel, switch plans and update their payment method from My Account?</td></tr>
+    <tr><td>Failed payments</td><td>Are failed renewals retried, and is the customer told?</td></tr>
+    <tr><td>Emails</td><td>Which renewal, reminder and cancellation emails are built in?</td></tr>
+    <tr><td>Compatibility</td><td>Does it work with your invoice, shipping and checkout plugins?</td></tr>
+    <tr><td>Reports</td><td>Can you see active subscribers, upcoming renewals and cancellations?</td></tr>
+  </tbody>
+</table>
+<p>With WooCommerce Subscriptions, for example, you choose a simple or variable subscription product type when adding a product, set the price, billing interval, length, trial and sign-up fee on the product, and manage store-wide options under WooCommerce &gt; Settings &gt; Subscriptions. Other plugins follow a similar pattern with different menus.</p>
+
+<h2>Recurring payments in India: mandates, UPI AutoPay and gateways</h2>
+<p>This is where Indian stores need the most care. Under RBI rules for recurring payments, an automatic charge generally needs a mandate the customer registers once with extra authentication, a notification a set period before each charge, and authentication again for charges above a certain limit. Customers can also cancel a mandate from their bank, card or UPI app. The details are updated from time to time, so check the current position with your gateway.</p>
 <ul>
-  <li>Billing every week, month, quarter or year</li>
-  <li>Free trials and sign-up fees</li>
-  <li>Different plan levels or pack sizes under one product</li>
-  <li>Renewal orders created automatically, with emails to the customer</li>
-  <li>A My Account area where customers can view their subscription and, depending on your settings, pause, cancel or switch plans</li>
-  <li>Reports on active subscriptions, renewals and cancellations</li>
+  <li><strong>Mandate types:</strong> gateways may offer card mandates, UPI AutoPay and eNACH (bank account debits), each with its own limits, sign-up flow and suitability for different plan values.</li>
+  <li><strong>Plugin support is the real test:</strong> a gateway offering recurring payments doesn't mean its WooCommerce plugin handles renewals for your subscription plugin. Ask the gateway in writing which subscription plugins it supports, and test it.</li>
+  <li><strong>International gateways:</strong> some have limited availability for Indian businesses or for recurring charges on Indian cards, so confirm the current position before planning around one.</li>
+  <li><strong>A manual fallback:</strong> keep renewal invoices with a payment link switched on for customers whose mandate fails or who prefer to pay each time.</li>
+</ul>
+<h3>Test it before launch</h3>
+<ol>
+  <li>Put the gateway in test mode and buy a subscription as a customer would, on a phone.</li>
+  <li>Trigger a renewal from the subscription's admin screen, which most plugins allow for testing, and check that the order, payment and emails all appear.</li>
+  <li>Simulate a failed renewal and check what the customer and you receive.</li>
+  <li>Cancel, pause and switch plans from the customer's My Account page.</li>
+  <li>Check that a GST invoice is created for the renewal order, not only the first one.</li>
+</ol>
+
+<h2>Billing cycles, trials and sign-up fees</h2>
+<ul>
+  <li><strong>Billing interval:</strong> match it to how the product is used. A monthly coffee plan and a quarterly skincare refill have different rhythms.</li>
+  <li><strong>Plan length:</strong> a plan can renew until cancelled or end after a fixed number of cycles, such as a six-month course of supplements.</li>
+  <li><strong>Synchronised renewals:</strong> charging everyone on the same date makes packing and dispatch easier; the first payment can be adjusted for the shorter first period.</li>
+  <li><strong>Free trials:</strong> useful for services and digital access, less so for physical goods. How a trial works with a mandate depends on the gateway, so test it.</li>
+  <li><strong>Sign-up fees:</strong> suit a starter kit or a one-off setup, and should be shown clearly at checkout.</li>
+  <li><strong>Switching plans:</strong> decide whether upgrades and downgrades apply immediately with a price adjustment, or from the next renewal.</li>
 </ul>
 
-<p>Selling access to members-only content or a community rather than products? See <a href="/blog/membership-website-wordpress/">how to build a membership website on WordPress</a>.</p>
+<h2>Pausing, skipping and cancelling</h2>
+<p>Flexibility keeps subscribers who would otherwise leave. Someone travelling for a month may pause rather than cancel, and someone overstocked may skip one delivery. Depending on the plugin and settings, customers can suspend a subscription themselves from My Account, with limits you choose.</p>
+<p>Make cancelling easy to find and explain what happens next: whether access or deliveries continue until the end of the paid period, and that cancelling on your site stops renewals but a mandate may also be visible in the customer's bank or UPI app. Hidden cancel options lead to chargebacks and complaints. Consumer protection rules on auto-renewals also apply, so check the current requirements with your lawyer or CA.</p>
 
-<h2>Recurring payments in India</h2>
-<p>This is where Indian stores need care. Under RBI rules, automatic debits generally need a mandate the customer approves upfront, with a notification before each charge and extra authentication for payments above certain limits. The details change from time to time, so check the current rules with your gateway.</p>
-<p>In practice:</p>
+<h2>Renewal emails and reminders</h2>
 <ul>
-  <li><strong>Mandate options:</strong> gateways may support card mandates, UPI AutoPay and eNACH (bank account debits), each with its own limits and sign-up flow</li>
-  <li><strong>Plugin support:</strong> a gateway offering recurring payments doesn't automatically mean its WooCommerce plugin supports automatic renewals with your subscription plugin. Confirm this specifically before you build.</li>
-  <li><strong>Manual renewals as a fallback:</strong> subscription plugins can usually email the customer a renewal invoice with a link to pay each cycle when automatic billing isn't available</li>
-  <li><strong>Failed payments:</strong> cards expire and mandates get cancelled, so plan retry rules and reminders by email or WhatsApp</li>
+  <li><strong>Before a renewal:</strong> a friendly reminder with the date and amount builds trust and reduces disputes, even when the bank or gateway also sends a pre-debit notification. Check whether your plugin sends one; if not, an add-on or your email tool can.</li>
+  <li><strong>After a renewal:</strong> the order confirmation and invoice, plus delivery details for physical products.</li>
+  <li><strong>Manual renewals:</strong> the renewal invoice with a payment link, followed by a gentle reminder.</li>
+  <li><strong>Failed payments:</strong> what happened and a one-click way to pay or update the payment method.</li>
+  <li><strong>Cancellations and expiry:</strong> confirmation, and an easy way back.</li>
 </ul>
-<p>For the basics of connecting a gateway, see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>.</p>
+<p>Brand these emails like the rest of your store and check they reach the inbox; <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a> covers both, including WhatsApp and SMS alongside email.</p>
 
 <h2>Running physical product subscriptions</h2>
 <ul>
-  <li><strong>Renewal dates:</strong> decide whether all renewals fall on the same day of the month, which makes packing and dispatch easier, or run from each customer's sign-up date</li>
-  <li><strong>Stock planning:</strong> active subscriptions tell you roughly what you'll need next cycle</li>
-  <li><strong>Shipping:</strong> make sure shipping charges and delivery areas apply correctly to renewal orders</li>
-  <li><strong>Invoices:</strong> each renewal is a new order, so a GST invoice should be generated every time; see <a href="/blog/woocommerce-gst-invoices-india/">GST invoices in WooCommerce</a></li>
-  <li><strong>Price changes:</strong> decide how you'll handle price increases for existing subscribers, and tell them well in advance</li>
+  <li><strong>Stock planning:</strong> active subscriptions tell you roughly what you'll need next cycle.</li>
+  <li><strong>Shipping:</strong> check that shipping charges and delivery areas apply correctly to renewal orders, not only the first one.</li>
+  <li><strong>Invoices:</strong> each renewal is a new order, so it needs its own GST invoice; see <a href="/blog/woocommerce-gst-invoices-india/">GST invoices in WooCommerce</a>.</li>
+  <li><strong>Price changes:</strong> decide how existing subscribers are treated when prices rise, and tell them well in advance.</li>
 </ul>
+
+<h2>Use cases and what to plan for each</h2>
+<table>
+  <thead><tr><th>Use case</th><th>Typical cycle</th><th>What to plan</th></tr></thead>
+  <tbody>
+    <tr><td>Tiffin and meal plans</td><td>Weekly or monthly</td><td>Delivery areas, cut-off times, skipping holidays and changing meals</td></tr>
+    <tr><td>Subscription boxes</td><td>Monthly</td><td>Synchronised renewals, stock, packaging and courier costs</td></tr>
+    <tr><td>Consumable refills</td><td>Monthly or every few months</td><td>Customer-chosen intervals and a subscribe-and-save price</td></tr>
+    <tr><td>Memberships and content</td><td>Monthly or yearly</td><td>What members get, access rules and what happens on cancellation</td></tr>
+    <tr><td>Service plans and AMCs</td><td>Yearly</td><td>Manual renewals with invoices often suit business buyers better than mandates</td></tr>
+  </tbody>
+</table>
 
 <p>Daily deliveries such as milk bring their own needs, like morning slots, cut-off times and pause and resume; see <a href="/blog/website-for-dairy-milk-delivery/">websites for dairy brands and milk delivery services</a>.</p>
 
 <h2>Retention: keeping subscribers longer</h2>
-<p>Getting subscribers is only half the job. Keeping them is where recurring revenue really comes from.</p>
 <ul>
-  <li><strong>Make the first cycle great:</strong> the first delivery or first month largely decides whether people stay</li>
-  <li><strong>Offer pause and skip:</strong> someone travelling for a month may pause rather than cancel</li>
-  <li><strong>Send renewal reminders:</strong> a friendly note before a charge builds trust and reduces disputes</li>
-  <li><strong>Let people switch plans:</strong> moving to a smaller plan is better than a cancellation</li>
-  <li><strong>Ask why people cancel:</strong> a one-question survey shows you what to fix</li>
-  <li><strong>Reward loyalty:</strong> small perks for long-term subscribers, such as a free add-on</li>
-</ul>
-<p>Don't hide the cancel option. Making cancellation difficult frustrates customers, leads to payment disputes and damages your reputation.</p>
-
-<h2>Be clear in your terms and checkout</h2>
-<ul>
-  <li>Show the recurring price, billing frequency and any sign-up fee on the product page and at checkout</li>
-  <li>State when the first and later payments will be taken</li>
-  <li>Explain how to pause, cancel or change a plan, and your refund rules for renewals; see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce stores</a></li>
-  <li>Check current consumer protection rules for auto-renewals with your lawyer or CA</li>
+  <li><strong>Make the first cycle great,</strong> because the first delivery or month largely decides whether people stay.</li>
+  <li><strong>Offer pause, skip and a smaller plan</strong> before a cancellation goes through.</li>
+  <li><strong>Ask why people cancel</strong> with a one-question survey, and fix the common answers.</li>
+  <li><strong>Reward loyalty</strong> with small perks for long-term subscribers.</li>
 </ul>
 
-<p>Planning a subscription store, or adding recurring plans to an existing one? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/website-for-startups/">websites for startups</a> if you're launching a new subscription brand.</p>
+<h2>Be clear at checkout and in your terms</h2>
+<ul>
+  <li>Show the recurring price, billing frequency and any sign-up fee on the product page and at checkout.</li>
+  <li>State when the first and later payments will be taken.</li>
+  <li>Explain how to pause, cancel or switch, and your refund rules for renewals; see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce stores</a>.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Does WooCommerce support subscriptions without a plugin?</h3>
+<p>No. WooCommerce sells one-off products out of the box. Recurring billing needs a subscription plugin, although a prepaid pack can be sold as a normal product.</p>
+<h3>Can I use UPI AutoPay with WooCommerce subscriptions?</h3>
+<p>It depends on your gateway and on whether its WooCommerce plugin supports automatic renewals with your subscription plugin. Several Indian gateways offer recurring payments, so ask specifically about your plugin and test it in test mode.</p>
+<h3>What happens when a renewal payment fails?</h3>
+<p>Typically the renewal order stays unpaid and the subscription goes on hold until the customer pays. Many plugins can retry the charge and email the customer a link to pay or update their payment method.</p>
+<h3>Can customers pause their subscription?</h3>
+<p>With most subscription plugins, yes, either from My Account or by asking you. You can usually limit how often or how long they pause.</p>
+<h3>Do I need a GST invoice for every renewal?</h3>
+<p>Each renewal is a new order, so set your invoice plugin to create one for renewals too. Ask your CA to confirm the rates and format for your products.</p>
+
+<p>Planning a subscription store, or adding recurring plans to an existing one? My <a href="/woocommerce-developer/">WooCommerce development</a> service covers the plugin, gateway, renewal emails and test orders, set up and tested before launch. Launching a new subscription brand? See <a href="/website-for-startups/">websites for startups</a>.</p>
 `,
   },
   {
     slug: 'sell-digital-products-wordpress',
-    seoTitle: 'How to Sell Digital Products on WordPress',
-    title: 'How to Sell Digital Products on WordPress: E-books, Courses and Templates',
-    description: 'How to sell e-books, courses and templates on WordPress: choosing a platform, delivering files securely, handling piracy, GST caution and sales pages.',
+    seoTitle: 'How to Sell Digital Products on WordPress: Setup Guide',
+    title: 'How to Sell Digital Products on WordPress: E-books, Courses, Templates and Software, With File Protection, Licence Keys, GST and Refunds',
+    description: 'Sell e-books, courses, templates and software on WordPress: WooCommerce downloads vs dedicated plugins, file protection, licence keys, GST and refunds.',
     date: '2026-09-28',
+    updated: '2026-10-19',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'landing-page-design'],
     body: `
-<p>E-books, online courses, templates and printables can be sold again and again without packing or shipping anything. WordPress is a good home for them because you keep control of your customers, pricing and brand, instead of depending entirely on a marketplace. Here's how to choose a setup, deliver files safely and avoid the common mistakes.</p>
+<p>To sell digital products on WordPress, use WooCommerce's virtual and downloadable products if you sell a handful of files or mix digital and physical products, a dedicated downloads plugin if you mainly sell software with licence keys, or an LMS plugin if you sell courses. Then protect the files, deliver them by email and in the customer's account, connect an Indian payment gateway, check GST treatment with your CA and publish a clear refund policy.</p>
+<p>As part of <a href="/woocommerce-developer/">WooCommerce development</a>, I can set up downloadable products, secure file delivery, the payment gateway and branded order emails, tested with test orders before launch. Each product also needs a page that persuades people to buy, which is where <a href="/landing-page-design/">landing page design</a> comes in.</p>
+<p>Selling ongoing access rather than one-off files? See <a href="/blog/membership-website-wordpress/">membership websites on WordPress</a>, or <a href="/blog/woocommerce-subscriptions/">selling subscriptions with WooCommerce</a> for monthly or yearly billing.</p>
 
 <h2>What you can sell</h2>
 <ul>
-  <li><strong>E-books and guides:</strong> PDFs, workbooks and recipe books</li>
-  <li><strong>Online courses:</strong> recorded video lessons, test series and cohort programmes</li>
-  <li><strong>Templates:</strong> design templates, spreadsheets, résumé and business document templates</li>
-  <li><strong>Printables:</strong> planners, worksheets and colouring pages</li>
-  <li><strong>Creative assets:</strong> photo presets, stock photos and music</li>
-  <li><strong>Software:</strong> plugins, themes or tools with licence keys</li>
+  <li><strong>E-books and guides:</strong> PDFs, workbooks and recipe books.</li>
+  <li><strong>Online courses:</strong> recorded lessons, test series and cohort programmes.</li>
+  <li><strong>Templates and printables:</strong> design templates, spreadsheets, planners and worksheets.</li>
+  <li><strong>Creative assets:</strong> photo presets, stock photos, fonts and music.</li>
+  <li><strong>Software:</strong> plugins, themes, desktop tools or scripts with licence keys.</li>
 </ul>
 
-<h2>Choosing the right setup</h2>
+<h2>Choosing a setup</h2>
 <table>
   <thead><tr><th>Option</th><th>Good for</th><th>Keep in mind</th></tr></thead>
   <tbody>
-    <tr><td>WooCommerce (virtual and downloadable products)</td><td>Stores selling digital and physical products together, or many products</td><td>Keep the checkout lean for digital-only orders</td></tr>
-    <tr><td>Easy Digital Downloads</td><td>Sites selling only digital files or software</td><td>Check which features, such as licensing, need paid add-ons</td></tr>
-    <tr><td>An LMS plugin such as LearnDash, Tutor LMS or LifterLMS</td><td>Courses with lessons, quizzes and progress tracking</td><td>Video hosting and student support need planning</td></tr>
-    <tr><td>A payment form or link with delivery by email</td><td>One or two products, or testing demand</td><td>Delivery must be reliable; automate it once sales grow</td></tr>
+    <tr><td>WooCommerce virtual and downloadable products</td><td>A few files, or digital and physical products in one store</td><td>Keep the checkout short for digital-only orders</td></tr>
+    <tr><td>Easy Digital Downloads</td><td>Sites selling only files or software</td><td>Licensing and recurring billing come as paid add-ons, so check which you need</td></tr>
+    <tr><td>An LMS plugin such as LearnDash, Tutor LMS or LifterLMS</td><td>Courses with lessons, quizzes and progress tracking</td><td>Plan video hosting and student support; see <a href="/blog/online-course-website-wordpress/">building an online course website</a></td></tr>
+    <tr><td>A membership plugin</td><td>A library of downloads or content behind one login</td><td>Recurring payments in India need extra care</td></tr>
+    <tr><td>A payment link with emailed delivery</td><td>One product, or testing demand</td><td>Manual delivery doesn't scale; automate once sales grow</td></tr>
   </tbody>
 </table>
-<p>If you already run WooCommerce, adding digital products is usually the simplest path: mark a product as virtual and downloadable, and WooCommerce skips shipping. Compare current plans and features of any premium plugin before you commit.</p>
+<p>Features and plans change, so compare the current versions of any premium plugin before you commit.</p>
 
-<h2>Delivering files securely</h2>
+<h2>Setting up a downloadable product in WooCommerce</h2>
+<ol>
+  <li>Go to Products &gt; Add New and enter the name, description and images.</li>
+  <li>In the Product data box, keep Simple product and tick both Virtual and Downloadable. Virtual removes shipping; Downloadable adds the file fields.</li>
+  <li>Under Downloadable files, click Add File, give the file a clear name and choose or upload the file.</li>
+  <li>Set a Download limit and Download expiry, or leave them blank for unlimited.</li>
+  <li>Set the price and publish, then place a test order.</li>
+</ol>
+<p>When a digital-only order is paid, WooCommerce normally marks it complete and the customer gets their download links straight away. Many stores also trim checkout fields for digital-only orders, but keep the details your invoices need, such as the billing state, which decides the GST place of supply.</p>
+
+<h2>Protecting your files</h2>
+<p>WooCommerce's file settings live under WooCommerce &gt; Settings &gt; Products &gt; Downloadable products:</p>
 <ul>
-  <li><strong>Protect file links:</strong> serve downloads through your store rather than sharing a public file URL. WooCommerce, for example, has settings for how files are served, so choose one that doesn't expose the file's real location.</li>
-  <li><strong>Set download limits and expiry:</strong> allow a sensible number of downloads and an expiry period, with an easy way for genuine buyers to ask for a fresh link.</li>
-  <li><strong>Deliver in two places:</strong> buyers should find their downloads in their account as well as in the order email.</li>
-  <li><strong>Check email deliverability:</strong> if order emails land in spam, buyers assume they've been cheated; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</li>
-  <li><strong>Host large files sensibly:</strong> course videos don't belong on basic shared hosting. Use a video hosting service with privacy and domain restrictions.</li>
-  <li><strong>Test on a phone:</strong> many buyers download on mobile, so offer PDFs directly where you can, and explain how to open ZIP files when you can't.</li>
+  <li><strong>File download method:</strong> choose a method that serves the file through your store, such as Force downloads or X-Accel-Redirect/X-Sendfile if your host supports it. Avoid redirect-only mode, which exposes the file's real address.</li>
+  <li><strong>Access restriction:</strong> require login for downloads if buyers create accounts, and grant access only after payment.</li>
+  <li><strong>Unique file names:</strong> the option to append a unique string to file names makes the real file harder to guess.</li>
+  <li><strong>Approved download directories:</strong> files should come only from the folders listed there.</li>
+</ul>
+<p>Uploaded product files go into a protected folder. On some server setups, such as Nginx, that protection needs a server rule, so ask your host or developer to confirm a direct file address doesn't open. Large files and course videos don't belong on basic shared hosting; use cloud storage or a video host with privacy and domain restrictions.</p>
+
+<h2>Licence keys for software, plugins and themes</h2>
+<p>If you sell software, a licence key controls who gets updates and support. A typical setup:</p>
+<ul>
+  <li>A unique key is generated for each order and shown in the order email and the customer's account.</li>
+  <li>Each key activates on an agreed number of sites or devices.</li>
+  <li>Keys can expire after a set period, often a year, and renewing restores updates and support.</li>
+  <li>Your software checks the key with your site before it updates.</li>
+</ul>
+<p>Easy Digital Downloads offers licensing as an add-on, and licence manager plugins exist for WooCommerce. Yearly renewals work best with recurring billing or renewal reminders, which the subscriptions guide linked above covers, including how recurring payments work in India.</p>
+
+<h2>Delivery emails and the customer account</h2>
+<ul>
+  <li><strong>Deliver in two places:</strong> the completed order email carries the download links, and buyers with accounts also find them under My Account &gt; Downloads.</li>
+  <li><strong>Say what happens next</strong> on the thank-you page: where the file is, the format, and how to open it on a phone.</li>
+  <li><strong>Check deliverability:</strong> if order emails land in spam, buyers assume they've been cheated. Set up SMTP and your domain's email records; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</li>
+  <li><strong>Handle lost links quickly:</strong> from the order screen you can resend the order email to the customer, or regenerate download permissions after replacing a file.</li>
+  <li><strong>Test on a phone:</strong> offer PDFs directly where you can, and explain how to open ZIP files when you can't.</li>
 </ul>
 
-<h2>Selling courses and memberships</h2>
-<p>Courses are different from downloads: people need ongoing access, not just a file.</p>
+<h2>Payments, GST and invoices</h2>
 <ul>
-  <li>Organise lessons into modules, with progress tracking and optional quizzes</li>
-  <li>Decide on access: lifetime, a fixed period such as one year, or while a subscription stays active</li>
-  <li>Offer a free preview lesson so buyers know what they're getting</li>
-  <li>Plan for support: a way for students to ask questions, and clear response times</li>
-  <li>Keep login simple, because forgotten passwords are a common support request</li>
+  <li><strong>Payments:</strong> an Indian gateway gives local buyers UPI, cards and net banking, and international cards or PayPal can be added if you sell abroad.</li>
+  <li><strong>GST caution:</strong> digital products can be taxed differently from physical goods. Some may count as what GST calls online information and database access or retrieval (OIDAR) services, sales to overseas buyers follow their own rules, and registration requirements can differ. Agree the treatment with your CA before launch, not after.</li>
+  <li><strong>Invoices:</strong> business buyers often need a proper invoice with their GSTIN, so set up an invoice plugin from day one; <a href="/blog/woocommerce-gst-invoices-india/">GST invoices in WooCommerce</a> shows the setup.</li>
 </ul>
 
-<p>For a fuller walkthrough of LMS plugins, video hosting, quizzes and certificates, see <a href="/blog/online-course-website-wordpress/">how to build an online course website on WordPress</a>.</p>
+<h2>Refund policy for digital products</h2>
+<p>A downloaded file can't be returned, so many sellers don't offer refunds once a file is downloaded, with sensible exceptions:</p>
+<ul>
+  <li>A duplicate purchase.</li>
+  <li>A faulty or wrong file that can't be fixed quickly.</li>
+  <li>For courses, a short refund window before much of the content has been accessed.</li>
+  <li>For software, a product that doesn't work as described after support has tried to help.</li>
+</ul>
+<p>State the policy on the product page and at checkout. Payment gateways generally expect a visible refund policy too, and consumer protection rules still apply. <a href="/blog/woocommerce-returns-refunds-policy/">Returns and refunds for WooCommerce stores</a> covers how to issue a refund in WooCommerce.</p>
+
+<h2>Sales pages that sell digital products</h2>
+<ul>
+  <li><strong>One page per product:</strong> who it's for, what's inside, the format, file size or course length, and what buyers get straight after paying.</li>
+  <li><strong>Samples:</strong> a free chapter, preview lesson or template screenshots.</li>
+  <li><strong>Honest reviews</strong> from real buyers, added as they arrive.</li>
+  <li><strong>An FAQ</strong> covering access, devices, updates and refunds.</li>
+  <li><strong>A free lead magnet</strong> to build an email list for launches and new products.</li>
+  <li><strong>Fast loading on mobile,</strong> with the price and buy button easy to find.</li>
+</ul>
+<p>For paid ads, a focused page with one product and one action usually works better than sending people to the shop page.</p>
 
 <h2>Piracy: what you can and can't control</h2>
-<p>Any file a buyer can download can be shared. You can't stop piracy completely, but you can make sharing less convenient and buying more attractive.</p>
+<p>Any file a buyer can download can be shared. You can make sharing less convenient and buying more attractive:</p>
 <ul>
-  <li><strong>Stamp PDFs</strong> with the buyer's name or email so people think twice before sharing; plugins can do this automatically</li>
-  <li><strong>Keep courses behind a login</strong> rather than offering video downloads, and consider limiting simultaneous logins</li>
-  <li><strong>Use licence keys</strong> for software, plugins and themes, tied to updates and support</li>
-  <li><strong>Add value beyond the file:</strong> updates, community access, support or certificates that pirated copies don't include</li>
-  <li><strong>Act on serious copies:</strong> platforms and hosting companies generally have a process for reporting copyright infringement</li>
+  <li>Stamp PDFs with the buyer's name or email; plugins can do this automatically.</li>
+  <li>Keep courses behind a login rather than offering video downloads.</li>
+  <li>Use licence keys for software, tied to updates and support.</li>
+  <li>Add value pirated copies lack: updates, support, community access or certificates.</li>
 </ul>
-<p>Don't let anti-piracy measures annoy paying customers. Overly strict limits can end up hurting genuine buyers more than pirates.</p>
+<p>Don't let anti-piracy measures annoy paying customers; overly strict limits hurt genuine buyers more than pirates.</p>
 
-<h2>Payments, GST and refunds</h2>
-<ul>
-  <li><strong>Payments:</strong> UPI and cards through an Indian gateway for local buyers, and international card support if you sell overseas; see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>.</li>
-  <li><strong>GST caution:</strong> the GST treatment of digital products and online courses, and of sales to overseas buyers, can differ from physical goods, and registration rules may apply differently. Speak to your CA before you launch, not after.</li>
-  <li><strong>Invoices:</strong> buyers, especially businesses, may need proper invoices, so set this up from day one.</li>
-  <li><strong>Refund policy:</strong> digital products can't be returned, so state clearly when refunds are and aren't given, for example for a duplicate purchase or a faulty file. Payment gateways usually expect a visible refund policy too.</li>
-</ul>
+<h2>Launch checklist</h2>
+<ol>
+  <li>Test orders in the gateway's test mode, then one real low-value order.</li>
+  <li>Download links work from the email and from My Account, on a phone and a computer.</li>
+  <li>A direct file address doesn't open without going through the store.</li>
+  <li>Invoices, the refund policy and contact details are in place.</li>
+  <li>Analytics records purchases, so you know which pages and campaigns sell.</li>
+</ol>
 
-<h2>Pages that sell digital products</h2>
-<ul>
-  <li><strong>A dedicated sales page</strong> for each product: who it's for, what's inside, format, file size or course length, and what buyers get straight after paying</li>
-  <li><strong>Samples:</strong> a free chapter, preview lesson or template screenshots</li>
-  <li><strong>Honest reviews</strong> from real buyers</li>
-  <li><strong>An FAQ</strong> covering access, devices, updates and refunds</li>
-  <li><strong>A free lead magnet</strong> to build an email list you can sell to later; see <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets and newsletters</a></li>
-</ul>
-<p>Authors and creators can build this into a wider personal site; see <a href="/blog/website-for-authors-content-creators/">websites for authors and content creators</a>.</p>
+<h2>FAQs</h2>
+<h3>Can I sell digital products with WooCommerce for free?</h3>
+<p>WooCommerce itself is free, and downloadable products are built in. You still pay for hosting, the gateway's transaction charges and any premium plugins you add, such as licensing or PDF stamping.</p>
+<h3>Should I use WooCommerce or Easy Digital Downloads?</h3>
+<p>WooCommerce suits stores that sell physical products too, or want its wider range of extensions. Easy Digital Downloads suits sites that only sell files or software. Both work; choose by the features you need.</p>
+<h3>How do I stop people sharing download links?</h3>
+<p>Require login for downloads, set download limits and an expiry, and serve files through the store rather than a public address. You can't stop sharing entirely, but you can make it inconvenient.</p>
+<h3>Do I need GST registration to sell e-books or courses?</h3>
+<p>It depends on your turnover, who you sell to and how your products are classified, and the rules for digital products can differ from physical goods. Ask your CA before you launch.</p>
+<h3>Can I sell online courses through WooCommerce?</h3>
+<p>Yes. Several LMS plugins integrate with WooCommerce, so the course is sold as a product and access is granted after payment.</p>
 
-<p>Ready to sell your e-books, courses or templates from your own site? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/landing-page-design/">landing page design</a> for a sales page that converts.</p>
+<p>Ready to sell your e-books, templates, courses or software from your own site? My <a href="/woocommerce-developer/">WooCommerce development</a> service sets up the products, secure delivery, payments and emails, and <a href="/landing-page-design/">landing page design</a> gives each product a sales page built to convert.</p>
 `,
   },
   {
@@ -49484,89 +50188,143 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-payment-terms-milestones',
-    seoTitle: 'Website Payment Terms: Advances and Milestones',
-    title: 'Fair Payment Terms for a Website Project: Advances, Milestones and Refunds',
-    description: 'How to set fair payment terms for a website project: a sensible advance, milestones tied to deliverables, scope changes, final payment, refunds and handover.',
+    seoTitle: 'Website Payment Terms: Advances, Milestones and Refunds',
+    title: 'Fair Payment Terms for a Website Project: Advances, Milestones, GST Invoices, Late Payments, Refunds and Red Flags',
+    description: 'Fair website payment terms: the advance, milestones tied to deliverables, GST invoices, late payments, refunds, cancellations and red flags to avoid.',
     date: '2026-10-01',
+    updated: '2026-10-19',
     category: 'Pricing',
     related: ['wordpress-website-development', 'hire-wordpress-developer'],
     body: `
-<p>Many disagreements in website projects come down to money: when it's due, what it covers and what happens when plans change. Fair payment terms protect both sides. You don't pay for work you haven't seen, and your developer isn't left unpaid for work they've done. Here's how to structure payments for a website project, whoever you hire.</p>
+<p>Fair payment terms for a website project start with a modest advance to reserve the developer's time, then tie every later payment to something you can see and check, such as an approved design, a working site on a staging link or the launch itself. They also say how changes are priced, what happens when either side is late, how GST and invoices are handled, and what is refunded if the project stops early. Agree all of this in writing before any money changes hands.</p>
+<p>For <a href="/wordpress-website-development/">WordPress website development</a> with me, the terms are part of the written scope: a fixed price, the pages and features, the revision rounds and what's excluded, agreed before work starts. Projects begin with an advance, with the balance due before launch, and monthly plans are billed monthly. You can see how that works in practice on the <a href="/hire-wordpress-developer/">hire a WordPress developer</a> page.</p>
+<p>This guide applies whoever you hire. Payment terms are one part of a wider agreement, which the <a href="/blog/website-design-contract-checklist/">website design contract checklist</a> covers, and they depend on how the project is priced; <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly billing</a> explains the alternatives. It's practical guidance, not legal or tax advice.</p>
 
-<h2>Why the payment structure matters</h2>
-<p>How you pay matters as much as how much. A good payment structure:</p>
-<ul>
-  <li>Links each payment to something you can see and check</li>
-  <li>Keeps both sides committed until the project is finished</li>
-  <li>Makes it clear what happens when scope, timelines or plans change</li>
-</ul>
-<p>It also depends on how the project is priced. The terms below assume a fixed price for a defined scope, the most common arrangement for new websites; see <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly billing</a> for the alternatives.</p>
-
-<h2>The advance: what it's for</h2>
-<p>Most developers ask for an advance before starting. That's reasonable: it confirms your commitment, reserves time in their schedule and covers early work such as planning and design. In general terms:</p>
-<ul>
-  <li>The advance should be a portion of the total, not most of it</li>
-  <li>For small projects, splitting the fee into two parts, at the start and at launch, is common</li>
-  <li>Larger projects usually spread payments across several milestones</li>
-  <li>Being asked for the full amount upfront, before anything is designed, is a warning sign</li>
-</ul>
-<p>Ask for an invoice or receipt for every payment, whether you pay by bank transfer or UPI.</p>
-
-<h2>Tie milestones to deliverables, not dates</h2>
-<p>Milestone payments work best when each one falls due after something specific is delivered and approved, rather than on a calendar date. A typical structure looks like this:</p>
+<h2>Common payment structures for website projects</h2>
+<p>How you pay matters as much as how much. These are the structures you're most likely to be offered in India:</p>
 <table>
-  <thead>
-    <tr><th>Stage</th><th>What you should be able to check</th><th>Payment</th></tr>
-  </thead>
+  <thead><tr><th>Structure</th><th>How it works</th><th>Suits</th><th>Watch out for</th></tr></thead>
   <tbody>
-    <tr><td>Agreement</td><td>Written scope, timeline and price</td><td>Advance</td></tr>
-    <tr><td>Design approved</td><td>Homepage and key page designs, revised as agreed</td><td>Milestone payment</td></tr>
-    <tr><td>Development complete</td><td>A working site on a staging link you can test on your phone</td><td>Milestone payment</td></tr>
-    <tr><td>Launch and handover</td><td>Live site, logins and files received</td><td>Final payment</td></tr>
+    <tr><td>Full payment up front</td><td>Everything paid before work starts</td><td>Small, clearly defined fixes, or a fixed batch of tasks</td><td>A warning sign for a new website, because you've paid before seeing anything</td></tr>
+    <tr><td>Advance and balance</td><td>An advance to start, the rest before or at launch</td><td>Small business sites and landing pages</td><td>A long gap with no check-in between the two payments</td></tr>
+    <tr><td>Advance and milestones</td><td>An advance, then a payment as each stage is approved</td><td>Larger sites, stores, redesigns and migrations</td><td>Milestones defined by dates instead of deliverables</td></tr>
+    <tr><td>Hourly or time billed</td><td>Invoiced weekly or monthly for hours worked</td><td>Open-ended work, ongoing changes and investigations</td><td>No estimate or cap, which leads to surprise bills</td></tr>
+    <tr><td>Monthly plan or retainer</td><td>A fixed amount each month for agreed services</td><td>Maintenance, support and regular content updates</td><td>Unclear limits on what the plan includes</td></tr>
   </tbody>
 </table>
-<p>The number of stages depends on the size of the project. What matters is that each milestone has a clear definition of "done" that both sides agree before work starts.</p>
+<p>For a fixed-price website, an advance followed by milestone payments is the most common pattern, and the rest of this guide assumes it.</p>
 
-<h2>Scope changes: agree the process upfront</h2>
-<p>Ideas change once you see your website taking shape. That's normal, but changes to scope should affect the price or timeline in a way you've both agreed. A fair process is:</p>
+<h2>The advance: what it's for</h2>
+<p>Asking for an advance is reasonable. It confirms you're committed, reserves time in the developer's schedule and covers early work such as planning the pages and designing the first layouts. In general terms:</p>
+<ul>
+  <li><strong>It should be a portion of the total, not most of it.</strong> The bigger the project, the more sense it makes to spread payments across stages rather than front-load them.</li>
+  <li><strong>Work should start when it's received,</strong> with the start date or first milestone stated in the proposal.</li>
+  <li><strong>It should be acknowledged</strong> with an invoice or receipt, whether you pay by bank transfer or UPI.</li>
+  <li><strong>The proposal should say what happens to it</strong> if the project is cancelled before much work is done (see the refunds section below).</li>
+</ul>
+<p>Being asked for the full amount before anything is designed, on a new website, is a warning sign. So is a developer who starts work with no advance and no written scope, because that usually means nobody has agreed what "finished" looks like.</p>
+
+<h2>Tie milestones to deliverables, not dates</h2>
+<p>Each milestone payment should fall due when something specific is delivered and approved, not on a calendar date. Dates slip on both sides; a deliverable is something you can check:</p>
+<table>
+  <thead><tr><th>Stage</th><th>What you should be able to check</th><th>Payment</th></tr></thead>
+  <tbody>
+    <tr><td>Agreement</td><td>A written scope, timeline and fixed price</td><td>Advance</td></tr>
+    <tr><td>Design approved</td><td>Homepage and key page designs, revised within the agreed rounds</td><td>Milestone payment</td></tr>
+    <tr><td>Build ready for review</td><td>A working site on a staging link you can test on your own phone</td><td>Milestone payment</td></tr>
+    <tr><td>Approved for launch</td><td>The agreed scope complete on staging, with forms and key features tested</td><td>Balance</td></tr>
+    <tr><td>Launch and handover</td><td>The live site, your logins, a backup and a walkthrough</td><td>Nothing further, other than agreed extras</td></tr>
+  </tbody>
+</table>
+<p>Smaller projects can merge stages; a five-page site may have just an advance and a balance. What matters is that each milestone has a definition of "done" that both sides agree before work starts.</p>
+<h3>Write a definition of done</h3>
+<p>"Design stage complete" can mean very different things. Something like "homepage and service page designs approved in writing after up to two rounds of revisions" leaves no room for argument. Approvals by email or WhatsApp are fine for most small projects, as long as they're written down.</p>
+<h3>Online stores, redesigns and migrations</h3>
+<p>For a WooCommerce store, a sensible milestone is the store working on staging with test orders through the gateway in test mode. Don't tie a payment to the gateway's approval itself, because KYC checks are in the provider's hands. For a redesign or migration, the redirect map for old URLs can be its own deliverable, checked before launch.</p>
+
+<h2>Balance before launch or after?</h2>
+<p>Both are common. Paying the balance before launch, once you've approved the finished site on staging, protects the developer from a site going live and the last invoice going unpaid. Paying on launch protects the client from paying for something that isn't live yet. Either can be fair if:</p>
+<ul>
+  <li>You've reviewed and approved the complete site on staging before the final payment is due.</li>
+  <li>The domain and hosting are registered in your name from the start, so the site can never be held back over a dispute.</li>
+  <li>A short bug-fix period after launch covers anything that doesn't work as agreed, without a new invoice.</li>
+  <li>Handover follows promptly: administrator access, licences, a backup and documentation. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists what to expect.</li>
+</ul>
+
+<h2>Scope changes and extra work</h2>
+<p>New ideas once you see the site taking shape are normal; friction comes from changes added without an agreed price. A fair process:</p>
 <ol>
-  <li>You request the change in writing</li>
-  <li>The developer confirms whether it's in scope and, if not, quotes the cost and any effect on the timeline</li>
-  <li>You approve before the work begins</li>
-  <li>The extra amount is added to the next milestone or invoiced separately</li>
+  <li>You request the change in writing.</li>
+  <li>The developer confirms whether it's within the agreed scope and, if not, quotes the price and any effect on the timeline.</li>
+  <li>You approve the quote before the work starts.</li>
+  <li>The extra amount is added to the next milestone or invoiced separately.</li>
 </ol>
-<p>Small tweaks within the agreed revision rounds shouldn't cost extra. New pages, new features or a change of direction usually do.</p>
+<p>Tweaks within the agreed revision rounds shouldn't cost extra. New pages, new features or a change of direction usually do, while fixing something that doesn't work as agreed is part of the original job. <a href="/blog/website-bug-vs-change-request/">Bug or change request?</a> explains where the line usually sits.</p>
 
-<h2>Delays and paused projects</h2>
-<p>Projects often stall while waiting for content, photos or feedback from the client. Agree in advance what happens if that occurs: for example, that a milestone becomes payable once the developer's part is complete, or that the project can be paused and rescheduled after an agreed period without a response. Equally, if the developer repeatedly misses agreed dates without good reason, you should be able to raise it and, in serious cases, end the project under the terms below.</p>
+<h2>Delays, paused projects and late payments</h2>
+<p>Projects most often stall while waiting for content, feedback or access to hosting. Agree in advance what happens then, for example that a milestone becomes payable once the developer's part is complete, or that a project paused without a response for an agreed period is rescheduled.</p>
+<p>The same applies to late payments. Common terms include a reminder after the due date, work pausing while a payment is overdue, and the schedule moving by the length of the delay. Interest or late fees only apply if the agreement says so, and the rules on them depend on the law that applies, so ask a lawyer before relying on them. Equally, if the developer keeps missing agreed dates without good reason, you should be able to raise it in writing and, in serious cases, end the project under the cancellation terms.</p>
 
-<h2>Final payment and handover</h2>
-<p>The final payment is usually due when the website is live and working as agreed. In return, you should receive everything you need to own and run it: administrator access, domain and hosting access, licences, backups and short documentation. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists what to expect.</p>
-<p>Many developers hand over remaining files and access once the final payment clears, which is fair, provided the domain and hosting were registered in your name from the start. Also agree a short bug-fix period after launch, so genuine defects are fixed without a new invoice.</p>
-
-<h2>If the project stops: refunds and work done</h2>
-<p>Sometimes a project ends early. Budgets change, priorities shift or the working relationship breaks down. Fair terms usually say:</p>
+<h2>GST, invoices and paying from abroad</h2>
 <ul>
-  <li>You pay for work completed up to that point, measured against the milestones</li>
-  <li>If the advance covered work that hasn't been done, an agreed part is refunded</li>
-  <li>You receive the work you've paid for, such as designs and files</li>
-  <li>Either side gives written notice before ending the agreement</li>
+  <li><strong>GST:</strong> ask whether the quote includes GST or whether it will be added, which depends on whether the developer is registered. Your CA can tell you whether you can claim it back.</li>
+  <li><strong>Invoices:</strong> get one for every payment, with the business names, the amount, the tax if any and what the payment covers.</li>
+  <li><strong>TDS:</strong> if your business deducts tax at source on payments to contractors, tell the developer before the first invoice, and check with your CA whether it applies.</li>
+  <li><strong>Third-party costs:</strong> domain, hosting, premium themes and plugins are best paid directly to the providers, in your name, rather than bundled into the developer's invoice.</li>
+  <li><strong>Overseas clients:</strong> agree the currency, who pays bank or transfer charges, and how the invoice will be issued. Tax treatment of services billed abroad differs, so that's a question for the developer's CA.</li>
 </ul>
-<p>Without written terms, these situations quickly become arguments. If the amounts involved are significant, ask a lawyer to review the agreement; this article isn't legal advice.</p>
 
-<h2>Put it in writing</h2>
-<p>A formal contract is ideal, but even an email confirmed by both sides is far better than a verbal agreement. It should record:</p>
+<h2>Refunds and cancellations</h2>
+<p>Sometimes a project ends early, because budgets or priorities change or the working relationship breaks down. Fair terms usually say:</p>
 <ul>
-  <li>The total price, what it includes and whether GST applies (check with your CA if unsure)</li>
-  <li>Each milestone, its deliverable and the amount due</li>
-  <li>How scope changes and delays are handled</li>
-  <li>Refund and cancellation terms</li>
-  <li>When ownership and access are handed over</li>
-  <li>For overseas clients, the currency and who pays bank or transfer charges</li>
+  <li>Either side gives written notice before ending the agreement.</li>
+  <li>You pay for work completed up to that point, measured against the milestones.</li>
+  <li>If the advance covered work that hasn't been done, an agreed part of it is refunded.</li>
+  <li>You receive the work you've paid for, such as approved designs, files and access to anything already built.</li>
 </ul>
-<p>Payment terms are one part of a wider agreement; the <a href="/blog/website-design-contract-checklist/">website design contract checklist</a> covers the rest.</p>
+<p>Without written terms, these situations quickly turn into arguments. If the amounts are significant, ask a lawyer to review the agreement.</p>
 
-<p>Planning a new website and want a clear scope with milestone-based payments from day one? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2>Retainers and monthly plans</h2>
+<p>Ongoing work, such as maintenance, support and regular content changes, is usually billed monthly rather than by milestone. Check what the fee includes, how bigger jobs are quoted and how much notice you need to give to stop. My <a href="/wordpress-maintenance/">WordPress maintenance</a> plans, for example, are month to month, with small text, image and price updates included and bigger work quoted separately.</p>
+
+<h2>A payment schedule you can adapt</h2>
+<p>A short, plain schedule in the proposal prevents most disputes. For a small business site:</p>
+<pre><code>PAYMENT SCHEDULE (example)
+Total: fixed price as quoted, plus GST if applicable
+1. Advance: due on accepting the proposal; work starts on receipt
+2. Design milestone: due when the key page designs are approved in writing
+3. Balance: due when the complete site is approved on staging, before launch
+Third-party costs: domain, hosting and premium licences paid by the
+client directly, in the client's name
+Changes outside scope: quoted in writing, approved before work starts,
+billed with the next payment
+Invoices: issued for every payment
+Cancellation: written notice; client pays for work completed to date;
+any unused part of the advance refunded as agreed</code></pre>
+
+<h2>Red flags in payment terms</h2>
+<ul>
+  <li>Full payment demanded up front for a new website.</li>
+  <li>A price with no list of pages, features or revision rounds to measure it against.</li>
+  <li>Milestones tied to dates, with no deliverable to check.</li>
+  <li>No mention of whose name the domain, hosting and licences will be in; the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists each account.</li>
+  <li>Payments to a personal account with no invoice or receipt.</li>
+  <li>No cancellation terms at all.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>How much advance should I pay for a website?</h3>
+<p>A portion of the total, enough to reserve the developer's time and cover the early planning and design, not most of the price. Larger projects should spread the rest across milestones you can check.</p>
+<h3>Is it normal to pay the balance before the website goes live?</h3>
+<p>Yes, it's common, as long as you've reviewed and approved the finished site on staging first and the domain and hosting are already in your name. A bug-fix period after launch covers anything that doesn't work as agreed.</p>
+<h3>Do I have to pay GST on website development?</h3>
+<p>It depends on whether the developer is GST-registered, so ask whether it's included in the quote or added on top. Your CA can tell you whether your business can claim it back.</p>
+<h3>What if I don't like the design after paying the advance?</h3>
+<p>That's what revision rounds are for, so use them with clear, consolidated feedback. If you decide to stop altogether, the cancellation terms decide what you pay for work done and what, if anything, is refunded.</p>
+<h3>Should hosting and the domain be part of the developer's invoice?</h3>
+<p>It's better to pay for them directly, in your own name. The developer can set them up, but you keep control whatever happens.</p>
+
+<p>Planning a new website and want the scope, price and payment schedule agreed before any work starts? See <a href="/wordpress-website-development/">WordPress website development</a> for how a project runs, or <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for fixes, redesigns and ongoing work. You'll get a fixed quote after a free review.</p>
 `,
   },
   {
