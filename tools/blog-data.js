@@ -5143,63 +5143,119 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'directory-website-wordpress',
-    seoTitle: 'How to Build a Directory Website on WordPress',
-    title: 'Directory and Listing Websites on WordPress: How They Work',
-    description: 'Build a directory website on WordPress: listing structure, categories, search and filters, user submissions, monetisation and SEO for hundreds of listings.',
+    seoTitle: 'How to Build a Directory Website on WordPress: Full Guide',
+    title: 'How to Build a Directory Website on WordPress: Listings, Search and Filters, SEO for Thousands of Pages, Speed and Monetisation',
+    description: 'How to build a directory or listing website on WordPress: data model, theme vs plugin vs custom, search and filters, SEO at scale, speed and monetisation.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['website-for-temples-and-ngos', 'wordpress-seo-services', 'wordpress-speed-optimization'],
     body: `
-<p>Directory websites list many businesses, places or professionals in one searchable place: local business directories, temple and travel guides, doctor finders, property listings. WordPress is a strong platform for them. Here's how they work and what to plan for.</p>
+<p>To build a directory website on WordPress, model your listings as a custom post type, organise them with taxonomies for the ways people browse (such as category and location), store details like phone, timings and address in custom fields, then add search, filters and a map through a directory theme, a directory plugin or a custom build. The harder part is not the software but the content: a directory only ranks and gets used when each listing answers a visitor's real questions.</p>
+<p>The largest directory I've built is <a href="/work/our-temples/">Our Temples</a>, a guide to temples across India and abroad that visitors can browse by deity and by state. Directories like it are common among temples, trusts and community organisations, and they're part of what I build in <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a>. The same approach works for business directories, doctor finders, school and coaching listings, venue guides and member directories.</p>
 
 <h2>What a directory website needs</h2>
 <ul>
-  <li><strong>Listings:</strong> each business or place with its own page (details, photos, location, contact, hours)</li>
-  <li><strong>Categories and locations:</strong> ways to browse (by type, city, state or feature)</li>
-  <li><strong>Search and filters:</strong> keyword search plus filters for location, category and attributes</li>
-  <li><strong>Maps:</strong> listings shown on a map for location-based browsing</li>
-  <li><strong>User accounts:</strong> so owners can claim and update their listings</li>
+  <li><strong>Listings,</strong> each with its own page: name, photos, address, map, contact details, hours and the details specific to your niche.</li>
+  <li><strong>Ways to browse,</strong> such as by category, city, state or feature, each with its own archive page.</li>
+  <li><strong>Search and filters</strong> that narrow results by keyword, location and attributes, plus sorting.</li>
+  <li><strong>A map view</strong> where location matters, so visitors can plan a route or find something nearby.</li>
+  <li><strong>Accounts,</strong> if listing owners should be able to claim and update their entries, or visitors should be able to review them.</li>
+  <li><strong>Supporting content,</strong> such as guides and articles that send readers into the listings.</li>
 </ul>
 
-<h2>How it's built on WordPress</h2>
+<h2>The data model: post types, taxonomies and fields</h2>
+<p>Everything else depends on getting this right before the first listing is added. In WordPress terms:</p>
+<table>
+  <thead><tr><th>Part of the directory</th><th>WordPress building block</th><th>Example</th></tr></thead>
+  <tbody>
+    <tr><td>The listing itself</td><td>A custom post type</td><td>Temple, Clinic, Venue, Supplier</td></tr>
+    <tr><td>What it is</td><td>A taxonomy (category)</td><td>Deity, specialty, cuisine, product type</td></tr>
+    <tr><td>Where it is</td><td>A taxonomy, often hierarchical</td><td>Country, state, city, area</td></tr>
+    <tr><td>Yes or no features</td><td>A taxonomy or checkbox fields</td><td>Parking, wheelchair access, home visits</td></tr>
+    <tr><td>Details on every listing</td><td>Custom fields</td><td>Phone, timings, address, latitude and longitude, website</td></tr>
+    <tr><td>Owners and reviewers</td><td>User accounts with a suitable role</td><td>Listing owner, registered guest</td></tr>
+  </tbody>
+</table>
+<p>A useful test: anything visitors will filter by should be a taxonomy or a structured field, never a sentence buried in the description. "Open on Sundays" typed into a paragraph can't be filtered; a field can. <a href="/blog/custom-post-types-fields/">Custom post types and fields</a> explains the building blocks in more depth.</p>
+
+<h2>Directory theme, directory plugin or custom build?</h2>
+<table>
+  <thead><tr><th>Approach</th><th>What it gives you</th><th>Trade-offs</th></tr></thead>
+  <tbody>
+    <tr><td>Directory theme</td><td>Listing types, search, maps, submission forms and layouts in one package; Our Temples uses the Golo directory theme</td><td>You are tied to that theme's design and update schedule, and switching later is a rebuild</td></tr>
+    <tr><td>Directory plugin, such as GeoDirectory, Directorist, HivePress or Business Directory Plugin</td><td>Directory features that work with most themes, often with paid add-ons for maps, payments and claims</td><td>Add-on costs, and styling the plugin's templates to match your theme</td></tr>
+    <tr><td>Custom build</td><td>A post type, a fields plugin such as ACF or Meta Box, and a filtering plugin such as FacetWP or Search and Filter, shaped exactly to your data</td><td>More development time up front, and features like front-end submission must be built or added</td></tr>
+  </tbody>
+</table>
+<p>For a directory with a few hundred listings, standard features and a modest budget, a well-supported theme or plugin is usually the sensible start. A custom build earns its cost when your data doesn't fit the usual "business listing" shape, such as a directory of courses, machinery or properties with unusual attributes. Whichever you choose, check how the listings can be exported, so you're never locked in.</p>
+
+<h2>Search, filters and maps</h2>
+<p>Decide how people will look for things before choosing any tool. Our Temples offers three routes from its homepage: by deity, by state in India and by country abroad, each with a visible count of listings. Inside each archive, visitors can narrow by neighbourhood or state, use a "Near Me" option, sort by newest, rating or featured, or switch to a map view, which helps pilgrims plan several temples into one trip.</p>
 <ul>
-  <li><strong>Directory themes or plugins</strong> provide listing types, fields, search, maps and front-end submission</li>
-  <li><strong>Custom fields</strong> store structured data (phone, timings, amenities, ratings)</li>
-  <li><strong>Taxonomies</strong> organise listings into categories and locations</li>
-  <li><strong>A page builder</strong> designs the homepage, landing pages and templates</li>
+  <li><strong>Keyword search</strong> should search listing fields and taxonomies, not just titles. Default WordPress search does neither well; see <a href="/blog/improve-wordpress-site-search/">improving WordPress site search</a>.</li>
+  <li><strong>Filters</strong> work best as a short list of the attributes people actually choose by, with counts, so nobody filters their way into zero results.</li>
+  <li><strong>Near me</strong> uses the browser's location, which needs HTTPS and the visitor's permission, and should always have a typed location as a fallback.</li>
+  <li><strong>Maps</strong> are heavy. Load them when a visitor taps "Map view" rather than on every page. Google Maps Platform needs an API key and a billing account and charges by usage beyond any free allowance, so check its current pricing; maps based on OpenStreetMap are an alternative with their own usage policies.</li>
+  <li><strong>Language and spelling:</strong> people type place names and Hinglish spellings in different ways, so add synonyms for common variations.</li>
 </ul>
 
-<p>The foundations: <a href="/blog/custom-post-types-fields/">custom post types and fields</a>.</p>
+<h2>Listing pages that answer real questions</h2>
+<p>Use one template for every listing, so each entry answers the same questions in the same order. On Our Temples, a temple page opens with a photo gallery and address, then a map with directions, contact details, travel information such as the nearest airport, railway station and bus stand, opening hours with an "Open now" status, and a block covering history, dress code, pooja details and festivals. A short FAQ and similar places close the page.</p>
+<p>For your niche, list the questions people ask before they visit, call or book, and make each one a field. A field left empty on most listings is a sign either the question doesn't matter or you need a better way to collect the answer.</p>
 
-<h2>Real example</h2>
-<p>The <a href="/work/our-temples/">Our Temples case study</a> is a large directory built on WordPress: hundreds of temples organised by state and by deity, with search, recently added listings, videos, slokas, a blog, and registration for guests and temple owners.</p>
+<h2>SEO for hundreds or thousands of pages</h2>
+<p>A directory can publish pages faster than Google is willing to index them. On a new site with few links, Google crawls cautiously and often leaves thin pages in "Crawled, currently not indexed". What helps:</p>
+<ul>
+  <li><strong>Launch with fewer, complete listings</strong> rather than thousands of name-and-address stubs. Add more as you can fill them properly.</li>
+  <li><strong>Write original descriptions.</strong> Text copied from Google Maps, other directories or the business's own site adds nothing Google hasn't seen.</li>
+  <li><strong>Keep thin listings out of the index</strong> until they're complete, with a noindex setting your SEO plugin can apply.</li>
+  <li><strong>Treat category and location archives as landing pages,</strong> with a helpful introduction rather than a bare grid; see <a href="/blog/category-tag-pages-seo/">SEO for category and tag pages</a>.</li>
+  <li><strong>Don't auto-generate every combination,</strong> such as each category in each city, when most would be empty. Google's spam policies warn against pages produced at scale with little value.</li>
+  <li><strong>Keep filter and sort URLs out of the index</strong> with noindex or canonical tags, so Google spends its time on real pages.</li>
+  <li><strong>Add structured data</strong> for listings, such as LocalBusiness, Place or a more specific type where schema.org has one; it lists HinduTemple and other places of worship, for example.</li>
+  <li><strong>Link listings together:</strong> each one to its category, location and nearby or similar listings, and guides into the listings they mention.</li>
+</ul>
+<p>Our Temples publishes occasion-based guides, such as Shiva temples for Maha Shivaratri, that link into the directory and give people a reason to return between trips. Indexing and structure problems at this scale are a large part of the work in my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+
+<h2>Speed at scale</h2>
+<ul>
+  <li><strong>Hosting with room to grow.</strong> Thousands of listings, filters and logged-in users put far more load on the database than a brochure site.</li>
+  <li><strong>Caching for visitors, with care for accounts.</strong> Archives and listings can be cached; dashboards and submission forms can't.</li>
+  <li><strong>Efficient filtering.</strong> Filtering on many custom fields at once can be slow, which is why some filter plugins build their own index.</li>
+  <li><strong>Image discipline.</strong> Owner-uploaded photos are often huge; resize and compress them on upload.</li>
+  <li><strong>Maps and embeds on demand,</strong> not loaded on every page.</li>
+</ul>
+<p><a href="/blog/why-is-my-wordpress-site-slow/">Why WordPress sites get slow</a> covers the common causes in more detail.</p>
+
+<h2>Submissions, owners and moderation</h2>
+<p>If owners can add or claim listings, plan the workflow: a front-end form, a moderation queue, an email when a listing is approved, and a way to verify that someone claiming a listing really represents it. Expect spam submissions and protect forms accordingly. Collect only the personal details you need, and say in your privacy policy how listing information is used.</p>
+
+<h2>Ways a directory can earn money</h2>
+<ul>
+  <li>Featured or highlighted listings at the top of categories</li>
+  <li>Paid listing plans with more photos, fields or categories</li>
+  <li>Charges for claiming and managing a listing</li>
+  <li>Advertising and sponsorship of categories or guides</li>
+  <li>Lead or booking fees, where the directory sends enquiries to listed businesses</li>
+</ul>
+<p>Most directory plugins sell payment add-ons for paid listings, or you can use WooCommerce. Indian payment gateways support UPI and cards; confirm GST treatment of listing fees with your CA. Paid placements should be clearly labelled as featured or sponsored, so visitors still trust the results.</p>
 
 <p>Running a content-heavy publication instead? See <a href="/blog/news-magazine-websites-wordpress/">news and magazine websites on WordPress</a>.</p>
 
-<h2>Content quality matters most</h2>
-<p>Google doesn't reward thin pages. A listing with just a name and address rarely ranks. Listings with original descriptions, photos, useful details (timings, history, how to reach) and reviews give visitors real value and are far more likely to be indexed and ranked.</p>
+<h2>FAQs</h2>
+<h3>Can WordPress handle a large directory website?</h3>
+<p>Yes, with suitable hosting, caching and an efficient search and filter setup. Our Temples catalogues hundreds of temples on WordPress. Very large or fast-changing data may need more development and stronger hosting.</p>
+<h3>Should I use a directory theme or a directory plugin?</h3>
+<p>A theme is quickest when its design and features fit. A plugin keeps the directory separate from the design, so you can change themes later. Compare how each exports listings before you commit.</p>
+<h3>How many listings should a directory launch with?</h3>
+<p>Enough to make each main category and location useful to a visitor, with every listing complete. A smaller set of good listings serves visitors and Google better than thousands of empty ones.</p>
+<h3>Can listing owners update their own listings?</h3>
+<p>Yes. Most directory themes and plugins offer front-end dashboards where owners register, claim and edit listings, usually with approval by you before changes go live.</p>
+<h3>How much does a directory website cost?</h3>
+<p>It depends on the number of listing types and fields, search and map features, accounts, payments and languages. The <a href="/website-cost-calculator/">website cost calculator</a> gives a rough range, and a fixed quote follows a review of your plan.</p>
 
-<h2>SEO for directories</h2>
-<ul>
-  <li>Unique, descriptive titles and descriptions for every listing</li>
-  <li>Category and location pages with helpful introductory content, not just lists</li>
-  <li>Structured data (LocalBusiness, Place or relevant types) for listings</li>
-  <li>Internal links between related listings, categories and blog content</li>
-  <li>Controlling low-value filter URLs so search engines focus on important pages</li>
-</ul>
-
-<h2>Performance at scale</h2>
-<p>Hundreds or thousands of listings put pressure on hosting and databases. Good hosting, caching, image optimization and efficient search are essential. See <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</p>
-
-<h2>Ways directories earn money</h2>
-<ul>
-  <li>Featured or premium listings</li>
-  <li>Paid listing plans for businesses</li>
-  <li>Advertising and sponsorships</li>
-  <li>Lead generation or booking fees</li>
-</ul>
-
-<p>Planning a directory for temples, communities or a niche industry? See what's involved in a <a href="/website-for-temples-and-ngos/">community website</a>, or get <a href="/wordpress-seo-services/">SEO help</a> for an existing directory.</p>
+<p>Planning a directory of temples, members, projects or local services? I can plan the data model and search routes with you and build it on WordPress, as I did for Our Temples; see <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a>. For an existing directory that Google isn't indexing, start with <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -6005,154 +6061,225 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
   },
   {
     slug: 'website-accessibility-basics',
-    seoTitle: 'Website Accessibility Basics for Small Businesses',
-    title: 'Website Accessibility Basics: Making Your Site Usable for Everyone',
-    description: 'Website accessibility basics for small businesses: contrast, text size, headings, alt text, keyboard navigation, forms and links, and how it helps SEO too.',
+    seoTitle: 'Website Accessibility Basics: WCAG in Plain English',
+    title: 'Website Accessibility Basics for Small Businesses: WCAG in Plain English, a 15-Minute Check and WordPress Fixes',
+    description: 'Website accessibility basics in plain English: what WCAG asks for, contrast, alt text, keyboard use, headings, forms and captions, plus WordPress fixes.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
-<p>Website accessibility means making your site usable for everyone, including people with visual, hearing, motor or cognitive impairments, older visitors, and anyone using a small screen in bright sunlight. It's the right thing to do, and it usually improves SEO and conversions too.</p>
+<p>Website accessibility means people can use your site whatever their eyesight, hearing, movement or the device they're on: text they can read, images described for screen readers, menus that work without a mouse, forms with clear labels and videos with captions. The international standard is WCAG, the Web Content Accessibility Guidelines, and level AA is the usual target. For a small business, most of the work is a handful of basics done properly, and nearly all of them make the site easier for everyone.</p>
+<p>The cheapest time to fix accessibility is when templates are being rebuilt anyway, so if you're planning a <a href="/website-redesign/">website redesign</a>, put the checks in this guide into the brief. If you're starting from scratch, the same applies to a new site through <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<p>This guide covers the basics for every visitor. If many of your customers are older, also read <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>
 
-<h2>Why accessibility matters for business</h2>
+<h2>Who accessibility is for</h2>
+<p>It's easy to picture accessibility as something for a small group of blind users. In practice it covers far more people:</p>
 <ul>
-  <li><strong>More customers:</strong> a significant share of people have some form of disability, and many more have age-related vision or dexterity changes</li>
-  <li><strong>Better usability for everyone:</strong> clear text, good contrast and simple navigation help all visitors</li>
-  <li><strong>SEO overlap:</strong> proper headings, alt text and descriptive links help search engines understand your pages too</li>
+  <li><strong>Vision:</strong> people who are blind and use screen readers, people with low vision who zoom in, and people with colour blindness.</li>
+  <li><strong>Hearing:</strong> people who are deaf or hard of hearing and rely on captions and text alternatives to phone calls.</li>
+  <li><strong>Movement:</strong> people with tremors, arthritis or injuries who use a keyboard, switch device or voice control instead of a mouse.</li>
+  <li><strong>Thinking and attention:</strong> people with dyslexia, memory difficulties or anxiety, who benefit from plain language and predictable layouts.</li>
+  <li><strong>Situations:</strong> anyone on a cracked phone screen, in bright sunlight, holding a child in one arm, or reading in their second language.</li>
 </ul>
+<p>Older visitors often have several of these at once, which is why sites for clinics, temples, insurers and pharmacies feel the effect most.</p>
 
-<h2>10 accessibility basics</h2>
+<h2>WCAG in plain English</h2>
+<p>WCAG is published by the W3C, the body that sets web standards. At the time of writing, version 2.2 is the current one, with a future version still in development. It is built on four principles, often remembered as POUR:</p>
+<table>
+  <thead><tr><th>Principle</th><th>What it means</th><th>Typical examples</th></tr></thead>
+  <tbody>
+    <tr><td>Perceivable</td><td>People can see or hear the content in some form</td><td>Alt text for images, captions for video, enough colour contrast</td></tr>
+    <tr><td>Operable</td><td>People can use every control, however they browse</td><td>Keyboard access, visible focus, large enough tap targets, no flashing content</td></tr>
+    <tr><td>Understandable</td><td>Content and behaviour make sense</td><td>Clear labels, helpful error messages, consistent navigation, the page language set</td></tr>
+    <tr><td>Robust</td><td>Assistive technology can read the code</td><td>Proper HTML elements, buttons that are real buttons, named form fields</td></tr>
+  </tbody>
+</table>
+<p>Each guideline has success criteria at three levels: A (the minimum), AA (the level most organisations and laws refer to) and AAA (the strictest, not expected across a whole site). Aim for AA.</p>
+
+<h2>The basics that matter most</h2>
+<h3>1. Colour contrast</h3>
+<p>WCAG AA asks for a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text, and 3:1 for buttons, form borders and icons people need to see. Pale grey text on white is the most common failure. A free contrast checker tells you the ratio of any two colours in seconds; <a href="/blog/choose-website-colours-fonts/">choosing website colours and fonts</a> covers picking a palette that passes.</p>
+<h3>2. Alt text for images</h3>
+<p>Every meaningful image needs a short description of what it shows or does, such as "Dental chair in the treatment room at the Baner clinic". Decorative images should have empty alt text so screen readers skip them, and an image used as a link should describe where it goes. <a href="/blog/image-seo-guide/">The image SEO guide</a> has more examples.</p>
+<h3>3. Keyboard access and visible focus</h3>
+<p>Everything you can click must work with the Tab, Enter, Space and arrow keys, in a sensible order, with a visible outline showing where you are. Dropdown menus, pop-ups and sliders are the usual failures. A "Skip to content" link at the top saves keyboard users tabbing through the whole menu on every page.</p>
+<h3>4. Headings in order</h3>
+<p>One H1 that says what the page is about, then H2s for sections and H3s within them, chosen for structure, not size. Screen reader users jump between headings the way sighted visitors scan.</p>
+<h3>5. Links and buttons that make sense</h3>
+<p>"Read the clinic timings" tells people where a link goes; "click here" doesn't. Links in paragraphs should look like links, usually underlined, not only a different colour. Tap targets should be large enough to hit: WCAG 2.2 sets a minimum of 24 by 24 CSS pixels at level AA, and larger is kinder.</p>
+<h3>6. Forms with labels and clear errors</h3>
+<p>Every field needs a visible label that stays visible while typing, not just placeholder text that vanishes. Errors should say what went wrong and how to fix it, next to the field, not only in red. Avoid puzzle CAPTCHAs that many people can't solve.</p>
+<h3>7. Captions and text alternatives</h3>
+<p>Videos that explain your service need captions; auto-generated ones are a start but need correcting. Never auto-play sound. If an audio or video clip holds key information, give a text version too; see <a href="/blog/video-on-business-website/">using video on a business website</a>.</p>
+<h3>8. Zoom, reflow and motion</h3>
+<p>The page should still work when zoomed to 200%, and on a narrow screen without sideways scrolling. Carousels that move on their own need a pause control, and animations should respect the "reduce motion" setting on phones and computers.</p>
+<h3>9. Language and scripts</h3>
+<p>Set the page language so screen readers pronounce text correctly, and mark sections in another language, such as a Hindi paragraph on an English page. Use real Unicode text, never images of text; <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on websites</a> covers readable Indian-language type.</p>
+
+<h2>A 15-minute accessibility check</h2>
 <ol>
-  <li><strong>Good colour contrast.</strong> Text must stand out clearly from its background, especially light grey text on white.</li>
-  <li><strong>Readable text size.</strong> Body text around 16px or larger, with comfortable line spacing.</li>
-  <li><strong>Proper headings.</strong> One H1 per page, then H2s and H3s in order, never chosen just for their size.</li>
-  <li><strong>Alt text for meaningful images</strong>, describing what they show.</li>
-  <li><strong>Descriptive links.</strong> "Read the WordPress cost guide" instead of "click here".</li>
-  <li><strong>Links distinguishable from text</strong>, not only by colour: underline links in paragraphs.</li>
-  <li><strong>Keyboard navigation.</strong> Menus, buttons and forms should work with the Tab key, with a visible focus outline.</li>
-  <li><strong>Labelled forms.</strong> Every field has a visible label, and error messages explain how to fix the problem.</li>
-  <li><strong>No information by colour alone.</strong> Pair colours with text or icons.</li>
-  <li><strong>Captions or transcripts</strong> for important videos, and no auto-playing audio.</li>
+  <li><strong>Automated scan.</strong> Run the accessibility audit in Lighthouse (in Chrome's developer tools or PageSpeed Insights) or a browser extension such as WAVE on your homepage, a service page and the contact page. These tools find only part of the problems, but they find them fast.</li>
+  <li><strong>Keyboard test.</strong> Put the mouse aside and press Tab from the top of the page. Can you see where you are, open the menu, reach every link and submit the form?</li>
+  <li><strong>Zoom test.</strong> Zoom the browser to 200%. Does text overlap, disappear or need sideways scrolling?</li>
+  <li><strong>Contrast spot check.</strong> Check body text, grey captions, text on photos and button text.</li>
+  <li><strong>Form test.</strong> Submit the form empty and with a wrong email address. Do the errors explain what to fix?</li>
+  <li><strong>Screen reader taste test.</strong> Turn on TalkBack on Android or VoiceOver on an iPhone, or the free NVDA on Windows, and listen to your homepage for a minute. Unlabelled buttons and images stand out quickly.</li>
 </ol>
+<p>For a thorough, page-by-page version, use the <a href="/blog/website-accessibility-audit-checklist/">website accessibility audit checklist</a>.</p>
 
-<h2>Quick ways to check your site</h2>
+<h2>WordPress-specific fixes</h2>
 <ul>
-  <li><strong>Lighthouse</strong> (in Chrome DevTools or PageSpeed Insights) includes an accessibility score and a list of issues</li>
-  <li><strong>Try navigating with only the keyboard</strong>: can you reach and use everything?</li>
-  <li><strong>Zoom to 200%</strong>: does the layout still work?</li>
-  <li><strong>Check contrast</strong> with a contrast checker tool</li>
+  <li><strong>Theme choice.</strong> The WordPress.org theme directory has an "Accessibility Ready" tag for themes that passed a set of checks. It's a good starting point, though customisation can undo it.</li>
+  <li><strong>Headings in page builders.</strong> In Elementor and similar builders, a heading's HTML tag is set separately from its size. Pick the tag for structure, then style the size.</li>
+  <li><strong>Alt text.</strong> Add it in the Media Library when uploading, but check images already on pages, because the block editor stores alt text in each image block when it's inserted.</li>
+  <li><strong>Menus.</strong> Test dropdowns and the mobile menu button with a keyboard. Icon-only buttons need a text label for screen readers.</li>
+  <li><strong>Forms.</strong> Form plugins vary in how they output labels and errors; test yours rather than assuming.</li>
+  <li><strong>Sliders and pop-ups.</strong> Turn off auto-rotation, or add a pause button, and make sure pop-ups can be closed with the Escape key.</li>
+  <li><strong>Overlay widgets.</strong> Plugins that add an accessibility toolbar or promise one-click compliance don't fix the underlying code, and many accessibility specialists advise against relying on them. Fix the theme and content instead.</li>
 </ul>
 
-<p>Serving many older customers? See <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>
+<h2>Accessibility rules in India and abroad</h2>
+<p>India's disability rights law and the government's guidelines for websites set accessibility expectations, mainly for government bodies and services they regulate, and the rules continue to develop. Several other countries apply accessibility requirements to some private businesses, especially those selling online. Whether any of this applies to your business, and what it requires, is a question for a lawyer; this guide is about doing the basics well, which is worth it either way.</p>
 
-<h2>Common WordPress issues</h2>
-<ul>
-  <li>Themes with low-contrast grey text</li>
-  <li>Headings used for styling instead of structure</li>
-  <li>Sliders and pop-ups that trap keyboard users</li>
-  <li>Icon-only buttons with no text label</li>
-  <li>Page builder sections that are visually fine but badly structured</li>
-</ul>
+<h2>Accessibility also helps SEO and enquiries</h2>
+<p>Many fixes overlap with search optimisation: clear headings, descriptive links, alt text and fast, readable pages help Google understand your content too. Labelled forms and readable buttons also mean fewer abandoned enquiries. Accessibility isn't a ranking shortcut, but an accessible site is usually a clearer, better-converting one.</p>
 
-<p>To check your own pages step by step, work through the <a href="/blog/website-accessibility-audit-checklist/">website accessibility audit checklist</a>.</p>
+<h2>FAQs</h2>
+<h3>What WCAG level should a small business website aim for?</h3>
+<p>Level AA. It is the level most guidance and laws refer to, and it covers contrast, keyboard access, labels, captions and the other basics in this guide. Level AAA is not expected across a whole site.</p>
+<h3>Is website accessibility a legal requirement in India?</h3>
+<p>Requirements in India mainly apply to government websites and some regulated services, and they continue to develop. If you're unsure whether they apply to your business, or you sell abroad where rules differ, ask a lawyer.</p>
+<h3>Will an accessibility plugin make my website compliant?</h3>
+<p>No plugin can do that on its own. Toolbar and overlay widgets don't fix missing labels, poor structure or keyboard traps in the underlying code. Fixing the theme, templates and content is what makes the difference.</p>
+<h3>How do I write good alt text?</h3>
+<p>Describe what the image shows and why it's there, in one short sentence, without starting with "image of". Leave alt text empty for purely decorative images, and describe the destination for images that are links.</p>
+<h3>Does website accessibility help SEO?</h3>
+<p>Indirectly, yes. Headings, alt text, descriptive links and readable pages help search engines understand your content, and a site that's easier to use tends to keep visitors longer and convert better.</p>
 
-<h2>Accessibility is ongoing</h2>
-<p>Every new page, image and form is a chance to keep things accessible. Build good habits into your content process: alt text on every upload, clear headings, and descriptive links. See also <a href="/blog/website-design-mistakes/">design mistakes that cost customers</a>.</p>
-
-<p>Accessibility improvements are included when I <a href="/website-redesign/">redesign websites</a>, alongside speed and SEO.</p>
+<p>Accessibility is easiest to get right when templates are built with it from the start. If your current site fails the 15-minute check in several places, a <a href="/website-redesign/">website redesign</a> is the moment to fix contrast, headings, menus and forms at the root rather than page by page.</p>
 `,
   },
   {
     slug: 'website-brief-template',
-    seoTitle: 'Website Brief Template: What to Send Your Developer',
-    title: 'Website Brief Template: What to Send Your Developer for an Accurate Quote',
-    description: 'A website brief template to send your developer: goals, audience, pages, features, content, budget and timeline for accurate quotes and fewer surprises.',
+    seoTitle: 'Website Brief Template: What to Send Your Web Developer',
+    title: 'Website Brief Template: What to Send Your Web Developer for an Accurate Quote, With a Copy-and-Fill Version',
+    description: 'A free website brief template: goals, audience, pages, features, content, examples, budget, timeline and access, plus how to use it to compare quotes.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
     body: `
-<p>"How much for a website?" is impossible to answer accurately without details, which is why quotes for the same project can vary so much. A short brief fixes that. It helps developers quote accurately, avoids misunderstandings and gets your project started faster. Copy the template below and fill it in.</p>
+<p>A website brief is a short document, usually one or two pages, that tells a developer what your website must achieve and what it needs to include: your goals, audience, pages, features, content, example sites you like, a budget range, your timeline and who controls the domain and hosting. Send the same brief to every developer you approach, and the quotes you get back can be compared line by line instead of being guesses.</p>
+<p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, a WhatsApp message is enough to start a conversation, but a brief like this answers most of the questions I would otherwise ask, so the fixed quote and timeline are accurate from the first reply. The template works for any developer or agency, and for any kind of site, from a five-page business site to a store built through <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<p>Once you have quotes back, <a href="/blog/compare-website-quotes/">how to compare website quotes</a> shows how to line them up.</p>
 
-<h2>1. About your business</h2>
+<h2>What a good brief does for you</h2>
 <ul>
-  <li>Business name and what you do, in two or three sentences</li>
-  <li>Your location and the areas or countries you serve</li>
-  <li>Your current website (if any) and what you don't like about it</li>
+  <li><strong>Accurate quotes.</strong> Developers price what they can see. Vague requests get padded prices or low quotes that grow later.</li>
+  <li><strong>Comparable quotes.</strong> Everyone prices the same scope, so differences in price reflect differences in approach.</li>
+  <li><strong>Fewer surprises.</strong> Features you forgot to mention are the most common source of extra charges mid-project.</li>
+  <li><strong>A faster start.</strong> Less back-and-forth before work begins.</li>
+  <li><strong>A record of what you asked for,</strong> which becomes the basis of the written scope in your contract.</li>
 </ul>
 
-<h2>2. Goals</h2>
-<p>What should the website achieve? Be specific:</p>
+<h2>The website brief template, section by section</h2>
+<table>
+  <thead><tr><th>Section</th><th>What to include</th><th>Example (fictional physiotherapy clinic)</th></tr></thead>
+  <tbody>
+    <tr><td>1. About the business</td><td>What you do in two or three sentences, where you are, areas served, current website</td><td>Two-physiotherapist clinic in Pune treating back pain and sports injuries; patients from nearby areas</td></tr>
+    <tr><td>2. Goals</td><td>What the site must achieve, in order of priority, and how you'll judge it</td><td>More appointment enquiries by phone and WhatsApp; look credible to doctors who refer patients</td></tr>
+    <tr><td>3. Audience</td><td>Who your customers are, what they worry about, what they check before contacting you</td><td>Office workers and older patients; they want to know conditions treated, fees and timings</td></tr>
+    <tr><td>4. Pages</td><td>A named page list, noting any page that needs a special layout</td><td>Home, About, one page per treatment, Fees, FAQs, Contact</td></tr>
+    <tr><td>5. Features</td><td>Each form, integration, payment, booking or language needed</td><td>Appointment enquiry form to email and WhatsApp, Google Map, reviews shown from Google</td></tr>
+    <tr><td>6. Content</td><td>Who writes text, what photos exist, what is ready now</td><td>Owner writes treatment notes; clinic photos needed</td></tr>
+    <tr><td>7. Design and examples</td><td>Two or three sites you like and what you like about each, logo, colours, things to avoid</td><td>Calm colours like an example clinic site; no stock photos of models</td></tr>
+    <tr><td>8. Technical and access</td><td>Domain, hosting, email, current site logins, and whose name each is in</td><td>Domain in the owner's name; no hosting yet; email on Gmail</td></tr>
+    <tr><td>9. Budget range</td><td>A realistic range, and whether it includes domain, hosting and maintenance</td><td>A range, with hosting and domain separate</td></tr>
+    <tr><td>10. Timeline</td><td>An ideal launch date, any hard deadline and why</td><td>Before a new branch opens; no fixed date otherwise</td></tr>
+    <tr><td>11. After launch</td><td>Who updates the site, training, maintenance, SEO</td><td>Receptionist updates timings; owner wants monthly maintenance</td></tr>
+    <tr><td>12. Decision-maker</td><td>Who approves designs and content, and the best way to reach them</td><td>Both physiotherapists approve; WhatsApp group for feedback</td></tr>
+  </tbody>
+</table>
+
+<h2>Copy-and-fill version</h2>
+<p>Paste this into a document or a WhatsApp message and fill it in. Leave a line blank rather than guessing; a developer can help with the gaps.</p>
+<pre><code>WEBSITE BRIEF
+Business: what we do, where, areas served:
+Current website (if any) and what is wrong with it:
+Main goal (enquiries, sales, bookings, credibility, hiring):
+Other goals, in order:
+Our customers and what they check before contacting us:
+Pages needed:
+Features (forms, WhatsApp, booking, payments, store, languages, integrations):
+Who writes the content, and what is ready now:
+Photos and videos we have:
+Websites we like, and what we like about each:
+Logo, colours, fonts; anything we do not want:
+Domain, hosting and email: who has them, in whose name:
+Budget range, and what it should include:
+Ideal launch date; any hard deadline:
+After launch: who updates the site; maintenance, SEO or training wanted:
+Who approves the work, and how to reach them:</code></pre>
+
+<h2>How to fill in the sections that drive cost</h2>
+<h3>Goals</h3>
+<p>Write goals you could check later, such as "more WhatsApp enquiries for knee treatment" rather than "a modern website". If there are several, put them in order, because the first goal shapes the homepage and the calls to action.</p>
+<h3>Pages</h3>
+<p>Name every page rather than giving a number. "Up to ten pages" means different things to different people; "Home, About, six service pages, Contact" doesn't. If you're unsure, list what customers ask you most and let the developer suggest a structure.</p>
+<h3>Features</h3>
+<p>Describe what should happen, not just the feature's name. "An enquiry form that emails reception and opens WhatsApp" is quotable; "a contact form" could be five minutes of work or a day. For stores, give the number of products, whether they have sizes or colours, and how you ship and take payment.</p>
+<h3>Content</h3>
+<p>Content readiness is often the biggest factor in how long a project takes. Say honestly who will write each page, what photos exist, and whether product data is in a spreadsheet. <a href="/blog/how-long-to-build-wordpress-website/">How long a WordPress website takes</a> explains why.</p>
+<h3>Design and examples</h3>
+<p>Two or three example sites are worth more than words like "modern" or "clean", but only if you say what you like about each: the layout of one, the photography of another, the way a third explains its prices. Sites from other industries are fine. Add anything you definitely don't want, and share your logo files and brand colours; if your logo only exists as a blurry image, see <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>.</p>
+<h3>Budget range</h3>
+<p>A range lets a developer suggest an approach that fits, such as a quality theme instead of a fully custom design. As a guide, my <a href="/blog/wordpress-website-cost-india/">WordPress cost guide</a> puts most professionally built small business sites in India at ₹15,000 to ₹40,000, larger business or B2B sites at ₹35,000 to ₹80,000, and WooCommerce stores from ₹30,000 to ₹90,000 or more. The <a href="/website-cost-calculator/">website cost calculator</a> gives a rough range for your own mix of pages and features.</p>
+<h3>Technical details and access</h3>
+<p>Say where the domain and hosting are and whose name they're in. If a previous developer registered them, sort that out early; the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists what you should control.</p>
+
+<h2>Extra sections for redesigns, stores and agencies</h2>
 <ul>
-  <li>More enquiries, calls or WhatsApp messages</li>
-  <li>Online sales</li>
-  <li>Bookings or appointments</li>
-  <li>Credibility for investors, partners or tenders</li>
-  <li>Recruitment</li>
+  <li><strong>Redesigns:</strong> list the pages that bring traffic or enquiries today, note any URLs that must not change, and offer Search Console and Analytics access, so nothing that ranks is lost; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</li>
+  <li><strong>Online stores:</strong> product count, variations, payment methods including UPI and cash on delivery, shipping zones, GST invoice needs and any marketplace or stock system to connect.</li>
+  <li><strong>Agencies briefing a developer:</strong> the design files with mobile layouts, the content or who supplies it, staging or hosting access, the launch date your client expects and whether the work is white-label.</li>
 </ul>
 
-<h2>3. Target audience</h2>
+<h2>Using the brief to compare quotes</h2>
+<ol>
+  <li>Send the same brief to each developer or agency.</li>
+  <li>Ask each to quote against it line by line, saying what's included, what's excluded and what they'd change.</li>
+  <li>Put the answers side by side, with anything not mentioned marked as a question.</li>
+  <li>Ask the same follow-up questions to everyone, such as who owns the accounts and what happens after launch.</li>
+  <li>Compare the total cost over a few years, including hosting, licences and maintenance, not just the build price.</li>
+</ol>
+<p>A developer who asks good questions about your brief before quoting is usually a better sign than one who replies with a price in minutes. Once you choose, turn the brief and the quote into a written scope; the <a href="/blog/website-design-contract-checklist/">website contract checklist</a> covers what to agree.</p>
+
+<h2>Common brief mistakes</h2>
 <ul>
-  <li>Who are your ideal customers?</li>
-  <li>What problems do they have, and what do they worry about before hiring or buying?</li>
-  <li>Do they mostly browse on mobile?</li>
-</ul>
-
-<h2>4. Pages you need</h2>
-<p>A simple list is enough, for example: Home, About, Services (one page per service), Portfolio, Blog, FAQ, Contact. Note any pages that need special layouts.</p>
-
-<h2>5. Features</h2>
-<ul>
-  <li>Contact forms, WhatsApp, click-to-call</li>
-  <li>Online store (how many products?)</li>
-  <li>Online payments, bookings, memberships</li>
-  <li>Multiple languages</li>
-  <li>Blog, newsletter sign-up, downloads</li>
-  <li>Integrations: CRM, email marketing, Google Sheets</li>
-</ul>
-
-<h2>6. Design direction</h2>
-<ul>
-  <li>2–3 websites you like, and <em>what</em> you like about each</li>
-  <li>Your logo, brand colours and fonts (if you have them)</li>
-  <li>Anything you definitely don't want</li>
-  <li>Existing designs in Figma or XD, if any</li>
-</ul>
-
-<p>Brand assets checklist: <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>.</p>
-
-<h2>7. Content</h2>
-<ul>
-  <li>Who will write the text? Is it ready?</li>
-  <li>Do you have good photos of your work, team and premises?</li>
-  <li>For stores: is product data in a spreadsheet?</li>
-</ul>
-<p>Content readiness is the biggest factor in timelines; see <a href="/blog/how-long-to-build-wordpress-website/">how long a WordPress website takes</a>. For help writing it, see <a href="/blog/how-to-write-website-content/">how to write website content</a>.</p>
-
-<h2>8. Technical details</h2>
-<ul>
-  <li>Do you own your domain? Who manages hosting?</li>
-  <li>Business email needs</li>
-  <li>For redesigns: pages that currently bring traffic and must be kept</li>
-</ul>
-
-<h2>9. Budget and timeline</h2>
-<ul>
-  <li>A budget range, which helps developers suggest the right approach. The <a href="/website-cost-calculator/">website cost calculator</a> gives a ballpark.</li>
-  <li>Your ideal launch date, and any hard deadlines</li>
-</ul>
-
-<h2>10. After launch</h2>
-<ul>
-  <li>Who will update the site?</li>
-  <li>Do you want training, maintenance or ongoing SEO?</li>
+  <li><strong>Design only:</strong> describing colours and style but not goals, pages or features.</li>
+  <li><strong>A wish list without priorities:</strong> mark each item as must have, nice to have or later.</li>
+  <li><strong>No content plan:</strong> assuming the developer will write everything without saying so.</li>
+  <li><strong>Hiding the budget:</strong> it doesn't get you a lower price, only less relevant suggestions.</li>
+  <li><strong>Copying a big brand's site:</strong> "like Amazon" describes years of engineering, not a brief.</li>
+  <li><strong>No named decision-maker,</strong> so feedback arrives late and contradicts itself.</li>
 </ul>
 
 <p>Deciding who to send it to? See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> and the questions to ask before hiring.</p>
 
-<p>Once you choose a developer, agree the details in writing; see the <a href="/blog/website-design-contract-checklist/">website contract checklist</a>.</p>
+<h2>FAQs</h2>
+<h3>How long should a website brief be?</h3>
+<p>One or two pages is enough for most business websites. A store or a site with custom features may need a little more detail on products and workflows, but clarity matters more than length.</p>
+<h3>Should I tell developers my budget?</h3>
+<p>Yes, as a range. It helps them suggest an approach that fits, and it saves everyone time if the scope and budget are far apart. A good developer will tell you what's realistic rather than simply quoting the top of your range.</p>
+<h3>What if I don't know which pages or features I need?</h3>
+<p>Fill in the goals, audience and examples, and leave the rest blank. A developer can suggest a page structure and features based on those, and you can confirm them before the quote.</p>
+<h3>Do I need a brief for a small website?</h3>
+<p>A short one, yes. Even a five-page site benefits from a named page list, who writes the content and any deadline, because those are what change the price and the timeline.</p>
+<h3>Is the brief the same as the project scope?</h3>
+<p>No. The brief is what you ask for; the scope is what the developer agrees to deliver, at a price, after clarifying the brief. Check that the scope matches your brief before paying an advance.</p>
 
-<h2>Send it and compare</h2>
-<p>With a brief like this, you'll get quotes you can actually compare, and a developer can often reply within a day. When you're ready, send your brief on WhatsApp or through the form to <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
+<p>Ready to send yours? Share the brief on WhatsApp or through the form when you <a href="/hire-wordpress-developer/">hire a WordPress developer</a>, and you'll get questions where something is unclear, then a fixed quote and timeline. For a new business site or store, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -8111,49 +8238,112 @@ site:example.com/blog/ "net metering"</code></pre>
   },
   {
     slug: 'choose-domain-name-business',
-    seoTitle: 'How to Choose a Domain Name for Your Business',
-    title: 'How to Choose a Domain Name for Your Business (10 Practical Tips)',
-    description: 'How to choose a domain name for your business: .com vs .in, length, spelling, keywords, trademarks, social handles and registering it in your own name.',
+    seoTitle: 'How to Choose a Domain Name for Your Business: 10 Checks',
+    title: 'How to Choose a Domain Name for Your Business: Brand vs Keyword, .in vs .com, Trademark Checks, Buying, Renewing and Mistakes to Avoid',
+    description: 'How to choose a domain name for your business: brand vs keyword, length, .in vs .com, trademark and history checks, buying, renewing and common mistakes.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-migration', 'website-for-startups'],
     body: `
-<p>Your domain name is your address online. It appears on your visiting cards, emails, vehicles and ads, so it's worth a little thought. Here are 10 practical tips for choosing one that works for years.</p>
+<p>A good business domain name is short, easy to say and spell, matches your business name and still makes sense as an email address, such as hello@yourbrand.in. Choose .in or .com based on where your customers are, check the name against trademarks, existing businesses and social handles before buying, and register it in your own business's account with auto-renew switched on. Keywords in the domain help far less than most people expect, so a clean brand name usually beats a long keyword string.</p>
+<p>The domain is one of the first things settled when I build a site through <a href="/wordpress-website-development/">WordPress website development</a>: it stays registered in your business's name and account, and if you don't have one yet, I can help you choose and set it up. If you're launching something new, <a href="/website-for-startups/">websites for startups</a> covers the rest of the first site.</p>
+<p>This guide is about choosing the name itself. For the extension in detail, including registration rules and SEO, see <a href="/blog/in-vs-com-domain/">.in vs .com for Indian businesses</a>.</p>
 
-<h2>10 tips for a good domain</h2>
+<h2>Brand name or keyword domain?</h2>
+<p>There are three common patterns. The examples are fictional:</p>
+<table>
+  <thead><tr><th>Type</th><th>Example</th><th>Strengths</th><th>Weaknesses</th></tr></thead>
+  <tbody>
+    <tr><td>Brand name</td><td>kavericlinic.in</td><td>Memorable, matches your signboard and visiting card, room to grow</td><td>Says nothing about what you do until people know you</td></tr>
+    <tr><td>Brand plus a word</td><td>kaveriphysio.in</td><td>Adds context while staying short; useful when the plain brand is taken</td><td>Can box you in if you add other services later</td></tr>
+    <tr><td>Keyword or location</td><td>bestphysiotherapypune.in</td><td>Describes the service at a glance</td><td>Long, generic, hard to trust, and tied to one city and one service</td></tr>
+  </tbody>
+</table>
+<p>Years ago, keyword-stuffed domains could give a ranking boost. Google has long since reduced that effect, and today the words in your domain carry little weight compared with your content, your Google Business Profile and links from other sites. A keyword domain can also look like a generic lead-generation site rather than a real business. If customers already know your business name, use it.</p>
+
+<h2>10 checks for a good domain name</h2>
 <ol>
-  <li><strong>Keep it short.</strong> Shorter names are easier to remember, type and fit on printed material.</li>
-  <li><strong>Make it easy to spell and say.</strong> Imagine telling it to someone over the phone. Avoid unusual spellings, numbers and hyphens that need explaining.</li>
-  <li><strong>Match your business name</strong> where possible, so customers can guess it.</li>
-  <li><strong>Choose the right extension.</strong> .com is widely trusted; .in signals an Indian business and is often a good choice for local businesses. Newer extensions can work for strong brands.</li>
-  <li><strong>Don't over-stuff keywords.</strong> A brandable name is better than a long keyword string. Keywords in domains carry little ranking weight today.</li>
-  <li><strong>Think long term.</strong> Avoid names tied to one city or one product if you plan to expand.</li>
-  <li><strong>Check trademarks</strong> to avoid legal trouble with an existing brand.</li>
-  <li><strong>Check social handles</strong> so your name is consistent across platforms.</li>
-  <li><strong>Consider buying common variations</strong> (.com and .in, or a common misspelling) and redirecting them to your main domain.</li>
-  <li><strong>Register it in your own name and account</strong>, never your developer's or agency's.</li>
+  <li><strong>Short.</strong> Fewer characters mean fewer typing mistakes and a cleaner look on signboards, vehicles and visiting cards.</li>
+  <li><strong>The phone test.</strong> Say it to someone over the phone. If you have to spell it out or explain it, keep looking.</li>
+  <li><strong>No hyphens or numbers.</strong> "Is that the number 4 or the word?" and "with or without the dash?" both lose visitors.</li>
+  <li><strong>No awkward letter runs.</strong> Read it as one word. Joined-up words can accidentally spell something else, and double letters, such as where one word ends and the next begins with the same letter, get mistyped.</li>
+  <li><strong>Matches your business name,</strong> so people can guess it and find you after seeing your shop, van or WhatsApp message.</li>
+  <li><strong>Works as an email address.</strong> Write out name@domain and read it aloud. Customers will type it more often than the website address.</li>
+  <li><strong>Room to grow.</strong> Avoid tying it to one product or one area if you plan to expand.</li>
+  <li><strong>Easy in your customers' languages.</strong> Transliterated words should have one obvious English spelling, or you'll need the variants too.</li>
+  <li><strong>The right extension</strong> for your audience: usually .in or .com for Indian businesses.</li>
+  <li><strong>Available everywhere that matters,</strong> including the main social platforms, so your name is consistent.</li>
 </ol>
 
-<p>Still undecided on the extension? See <a href="/blog/in-vs-com-domain/">.in vs .com for Indian businesses</a>.</p>
+<h2>.in, .com or something else?</h2>
+<p>For a business whose customers are mostly in India, .in is a natural choice and often still available when the .com isn't. For exporters, software and businesses selling abroad, .com is the safer default because it carries no country signal. If both are free, many businesses register both, use one and redirect the other.</p>
+<p>Newer extensions such as .co, .shop or .online can work for a strong brand, but people instinctively type .com or .in, and some will send email to the wrong address. Avoid twisting your name into a hyphenated or misspelt .com just to get the extension; a clean .in is better than an awkward .com.</p>
 
-<h2>Check its history</h2>
-<p>If a domain was used before, check what was on it using web archive tools. A domain previously used for spam can carry baggage.</p>
-
-<h2>Registering and renewing</h2>
+<h2>Check trademarks and existing businesses</h2>
+<p>A name that's free as a domain can still belong to someone else as a brand. Before you print anything:</p>
 <ul>
-  <li>Use a reputable registrar and turn on <strong>auto-renew</strong></li>
-  <li>Keep your registrar account secure with a strong password and two-factor authentication</li>
-  <li>Check renewal prices, not just first-year offers</li>
-  <li>Keep your contact email on the registrar account current, so renewal notices reach you</li>
+  <li><strong>Search the trademark registry.</strong> At the time of writing, India's trademark registry offers a free public search on the IP India website. Look for the same or similar names in your line of business.</li>
+  <li><strong>Search Google and Google Maps</strong> for the name, especially in your city and industry.</li>
+  <li><strong>Check company and LLP names</strong> if you plan to register one, so the domain and the legal name can match.</li>
+  <li><strong>Check social handles</strong> on the platforms your customers use.</li>
+</ul>
+<p>If an established business in your field already uses the name, choose another. Trademark disputes can cost you the domain and the brand you've built on it. For anything unclear, or if you want to register your own trademark, ask a trademark lawyer; this guide can't tell you what's legally safe.</p>
+
+<h2>Check the domain's history</h2>
+<p>A domain someone else has used before can carry baggage. Look up the name on the Internet Archive's Wayback Machine to see what was on it, and search Google for the domain in quotes. A past life as a spam site, a casino or a hacked pharmacy shop can mean bad links pointing at it and a shaky start with Google. This matters most when buying a name that's for sale, or one that expired and was released.</p>
+
+<h2>Buying the domain</h2>
+<ul>
+  <li><strong>Use an accredited registrar,</strong> or a well-known host that registers domains, and buy in an account that belongs to your business, with an email address you control.</li>
+  <li><strong>Register it in the business's name,</strong> not your developer's, a marketing agency's or an employee's. The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> covers the other accounts you should control.</li>
+  <li><strong>Compare renewal prices.</strong> A standard .in or .com usually costs roughly ₹500 to ₹1,200 a year, but first-year discounts and "free domain with hosting" offers often renew higher. Check the second-year price and whether GST is included.</li>
+  <li><strong>Premium names</strong> listed by the registry or a seller can cost far more, and some renew at premium prices every year.</li>
+  <li><strong>Privacy:</strong> many registrars hide personal contact details from public lookups, but the rules differ between extensions, so ask yours what's shown.</li>
+  <li><strong>Security:</strong> turn on two-factor login and keep the registrar lock on, which blocks unauthorised transfers.</li>
+</ul>
+<p>If the name you want is registered but unused, you can approach the owner or use a marketplace with escrow, but only pay what the name is genuinely worth to you. A slightly different available name is often the better deal.</p>
+
+<h2>Renewing and protecting it</h2>
+<p>A lapsed domain takes your website and email down at the same time, and in the worst case someone else registers it. To avoid that:</p>
+<ul>
+  <li>Switch on auto-renew, and keep the saved card or payment method current.</li>
+  <li>Consider registering for several years at once.</li>
+  <li>Make sure renewal reminders go to an inbox someone reads, not a former employee's address.</li>
+  <li>Keep a note of the registrar, the login owner and the renewal date alongside your hosting and email renewals.</li>
+</ul>
+<p>If a renewal is ever missed, act quickly; <a href="/blog/domain-expired-what-to-do/">what to do when a domain expires</a> explains the grace periods. Expect official-looking letters and emails offering renewals, "SEO registration" or rival versions of your name in other countries; most are sales tactics or scams, as <a href="/blog/domain-seo-scam-emails/">domain and SEO scam emails</a> explains.</p>
+
+<h2>Should you buy extra domains?</h2>
+<p>A few extra registrations can protect your brand and catch typing mistakes: the other main extension, a common misspelling, or the version with and without a word such as "the". Point them all to your main site with permanent redirects. Don't build separate copies of your site on them, and don't buy dozens of variations you'll forget to renew.</p>
+
+<h2>Common domain name mistakes</h2>
+<ul>
+  <li>Registering the domain in a developer's or agency's account</li>
+  <li>Choosing a long keyword string instead of the business name</li>
+  <li>Hyphens, numbers or unusual spellings that need explaining</li>
+  <li>Skipping the trademark and existing-business checks</li>
+  <li>Picking a name tied to one city or service when you plan to expand</li>
+  <li>Looking only at the first-year price</li>
+  <li>Letting the renewal email go to an address nobody checks</li>
 </ul>
 
-<p>If a renewal is ever missed, see <a href="/blog/domain-expired-what-to-do/">what to do when a domain expires</a>.</p>
+<h2>After you register</h2>
+<p>Point the domain at your hosting, switch on SSL so the site loads over HTTPS, and set up business email so your address matches the website. <a href="/blog/domain-hosting-ssl-explained/">Domain, hosting and SSL explained</a> shows how these fit together, and <a href="/blog/business-email-options/">business email options</a> compares the email providers.</p>
 
-<h2>After registering</h2>
-<p>Point the domain to your hosting (through DNS or nameservers), set up SSL and business email. See <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+<h2>FAQs</h2>
+<h3>How long should a business domain name be?</h3>
+<p>As short as your business name allows while staying clear. There's no fixed limit that matters in practice, but a name you can say once over the phone without spelling it out is a good test.</p>
+<h3>Does a keyword in the domain help SEO?</h3>
+<p>Very little today. Google relies on your content, links and business details far more than the words in your domain. A keyword can help people understand what you do, but it isn't worth a long or awkward name.</p>
+<h3>Should I buy both .in and .com?</h3>
+<p>If both are available at a normal price, it's sensible for many businesses: use one as your main address and redirect the other. It also stops someone else using the version people may type by mistake.</p>
+<h3>Can I change my domain name later?</h3>
+<p>Yes, but it takes care: every old URL needs a permanent redirect to its new equivalent, and you'll update email, print and profiles. <a href="/blog/change-domain-name-without-losing-seo/">Changing your domain without losing SEO</a> explains the steps. It's far easier to choose well at the start.</p>
+<h3>What if the domain I want is already taken?</h3>
+<p>Try the other main extension, add a short word that fits your business, or ask whether the owner will sell. Avoid hyphens and misspellings, and avoid names close to an active business in your field.</p>
 
-<h2>Changing domains later</h2>
-<p>It's possible to move to a new domain, but you'll need 301 redirects from every old URL to keep your rankings and links. See <a href="/wordpress-migration/">WordPress migration</a>. It's much easier to choose well at the start.</p>
+<p>Need a website on your new domain, set up in your own name from day one? I can help you choose and register the domain, then build the site through <a href="/wordpress-website-development/">WordPress website development</a>. Launching a new venture? See <a href="/website-for-startups/">websites for startups</a>.</p>
 `,
   },
   {
@@ -8341,55 +8531,132 @@ site:example.com/blog/ "net metering"</code></pre>
   {
     slug: 'headless-wordpress-small-business',
     seoTitle: 'Headless WordPress: Does a Small Business Need It?',
-    title: 'Headless WordPress: Does a Small Business Need It?',
-    description: 'Headless WordPress explained: the real benefits and trade-offs in cost, complexity, editing and plugins, and when a small business should consider it.',
+    title: 'Headless WordPress Explained: How It Works, Pros and Cons, Costs, and Whether a Small Business Needs It',
+    description: 'Headless WordPress explained for business owners: how it works, pros and cons, what drives the cost, when a small business needs it, and the alternatives.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-for-startups', 'hire-wordpress-developer'],
     body: `
-<p>"Headless WordPress" comes up more and more in developer conversations. It can be powerful, but it isn't the right choice for most small businesses. Here's what it is and how to decide.</p>
+<p>Headless WordPress means using WordPress only to store and manage content, while a separate front end, often built with a JavaScript framework such as Next.js, fetches that content through an API and displays the website. It can be very fast and flexible, but you build, host and maintain two systems, most WordPress plugins stop working on the public site, and editors lose visual page building. For most small businesses, a well-built traditional WordPress site with good hosting and caching gives the speed they want at a fraction of the complexity.</p>
+<p>The sites I build through <a href="/wordpress-website-development/">WordPress website development</a> are traditional WordPress: one system, edited with Elementor or the block editor, with forms, SEO plugins and WooCommerce working as intended. If someone has told you that you need headless, this guide will help you test that advice, and you can also <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to review the proposal before you commit.</p>
 
-<h2>What is headless WordPress?</h2>
-<p>In a normal WordPress site, WordPress manages content <em>and</em> displays the website using a theme. In a headless setup, WordPress only manages content; a separate front end (often built with a JavaScript framework such as Next.js) fetches that content and displays the site.</p>
+<h2>How headless WordPress works</h2>
+<p>In a normal, or "coupled", WordPress site, one system does everything: you edit content in the dashboard, and WordPress's theme turns it into the pages visitors see. In a headless setup, the "head", meaning the part visitors see, is cut off and replaced:</p>
+<ol>
+  <li>Editors still write and publish in the WordPress dashboard.</li>
+  <li>WordPress exposes the content as data, through its built-in REST API or a GraphQL plugin such as WPGraphQL.</li>
+  <li>A separate front end application, built in a framework such as Next.js, Astro or Nuxt, requests that data and renders the pages.</li>
+  <li>That front end is hosted separately, often on a platform built for JavaScript sites, while WordPress sits on its own hosting, sometimes hidden from the public.</li>
+  <li>Pages are either generated ahead of time and rebuilt when content changes, or rendered on request, or a mix of both.</li>
+</ol>
+<p><a href="/blog/wordpress-rest-api-explained/">The WordPress REST API explained</a> covers the data side, including what's public by default.</p>
 
-<p>That separate front end usually fetches its content through the WordPress REST API; see <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a> for what it is and what it makes public.</p>
+<h2>Traditional, headless and static compared</h2>
+<table>
+  <thead><tr><th></th><th>Traditional WordPress</th><th>Headless WordPress</th><th>Static or custom-coded site</th></tr></thead>
+  <tbody>
+    <tr><td>Systems to run</td><td>One</td><td>Two: WordPress plus a front end app</td><td>One, often with a build step</td></tr>
+    <tr><td>Editing</td><td>Visual, with live preview</td><td>Content forms; previews need extra work</td><td>Usually a developer, or a simple content file</td></tr>
+    <tr><td>Plugins on the public site</td><td>Work as designed</td><td>Most front-end plugins don't carry across</td><td>None; features are built in</td></tr>
+    <tr><td>Speed</td><td>Fast with good hosting and caching</td><td>Can be very fast</td><td>Very fast for simple sites</td></tr>
+    <tr><td>Layout changes</td><td>Often by you</td><td>A developer</td><td>A developer</td></tr>
+    <tr><td>Suits</td><td>Most business sites and stores</td><td>Multi-channel content, teams with developers</td><td>Small sites that rarely change, or run by a developer</td></tr>
+  </tbody>
+</table>
 
-<h2>Potential benefits</h2>
+<h2>The real benefits</h2>
 <ul>
-  <li><strong>Performance:</strong> the front end can be very fast, often served as static pages</li>
-  <li><strong>Flexibility:</strong> the same content can feed a website, an app and other channels</li>
-  <li><strong>Security:</strong> the WordPress admin can be hidden away from the public site</li>
-  <li><strong>Custom experiences</strong> that go beyond what themes allow</li>
+  <li><strong>Performance potential.</strong> Pages generated ahead of time and served from a global network can load very quickly. The catch is "potential": a heavy JavaScript front end can be slower than a lean WordPress theme.</li>
+  <li><strong>One content source, many outputs.</strong> The same content can feed a website, a mobile app, a kiosk or a partner portal.</li>
+  <li><strong>Separation.</strong> The WordPress dashboard can sit away from the public site, which reduces what attackers can reach directly. WordPress still needs updating and securing.</li>
+  <li><strong>Freedom for developers.</strong> A team that already works in a JavaScript framework can build app-like interfaces without fighting a theme.</li>
 </ul>
 
 <h2>The trade-offs</h2>
 <ul>
-  <li><strong>Higher cost:</strong> you're building and maintaining two systems</li>
-  <li><strong>Developer dependence:</strong> changes to layouts usually need a developer</li>
-  <li><strong>Fewer plug-and-play features:</strong> many WordPress plugins (forms, SEO previews, page builders, some WooCommerce features) don't work out of the box on a headless front end</li>
-  <li><strong>Editing experience:</strong> editors may lose live previews and visual building</li>
-  <li><strong>More moving parts</strong> to host, secure and update</li>
+  <li><strong>Two systems to build, host, update and secure,</strong> each with its own hosting and its own things that can break.</li>
+  <li><strong>Plugins that output to the public site stop working</strong> or need rebuilding: contact forms, page builders, sliders, popups, related posts, many WooCommerce extensions and search plugins.</li>
+  <li><strong>No visual page building.</strong> Page builders such as Elementor are designed to render through WordPress's own front end, so their layouts don't carry across to a headless site in any practical way.</li>
+  <li><strong>SEO plumbing becomes your job.</strong> Titles, descriptions, canonical tags, schema, sitemaps and redirects that an SEO plugin normally handles must be fetched and output by the front end. Some SEO plugins expose this data through the API, but it needs building and testing.</li>
+  <li><strong>Previews and menus</strong> that "just work" in WordPress need extra development.</li>
+  <li><strong>Developer dependence.</strong> A new section layout or landing page is a development task, not something marketing can do on a Friday afternoon.</li>
+  <li><strong>Online stores are harder.</strong> Product pages can be headless, but cart, checkout, payment gateways and account pages are where most of the complexity, and risk, sits.</li>
 </ul>
+
+<h2>What drives the cost</h2>
+<p>There's no fixed price for a headless build, but the cost drivers are easy to list, and every one is on top of the WordPress side:</p>
+<ul>
+  <li>Designing and building the front end application from scratch</li>
+  <li>Connecting it to WordPress, including content types, menus and custom fields</li>
+  <li>Rebuilding features that plugins would otherwise provide: forms, search, SEO output, previews</li>
+  <li>Two hosting bills and two sets of updates</li>
+  <li>Developer time for most future changes, for as long as the site lives</li>
+</ul>
+<p><a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs custom-coded websites</a> covers the same trade-off between easy editing and custom code from another angle.</p>
 
 <h2>When headless makes sense</h2>
 <ul>
-  <li>Large content sites with a dedicated development team</li>
-  <li>Products where content is shared across a website and mobile apps</li>
-  <li>Highly custom, app-like experiences</li>
+  <li>Content must feed a website and a mobile app, or several sites, from one place.</li>
+  <li>A large publisher or brand has an in-house development team that will maintain the front end.</li>
+  <li>The public site is really an application, with dashboards, interactive tools or heavy personalisation.</li>
+  <li>The team already builds in a JavaScript framework and wants WordPress only as a familiar editing tool.</li>
 </ul>
 
 <h2>When it doesn't</h2>
 <ul>
-  <li>Small business sites, service sites and most online stores</li>
-  <li>Teams that want to edit pages visually without a developer</li>
-  <li>Tight budgets and timelines</li>
+  <li>Service businesses, clinics, consultants, manufacturers and local shops whose site is a set of pages and forms.</li>
+  <li>Teams that want to edit pages, add landing pages or change layouts without a developer.</li>
+  <li>Most WooCommerce stores.</li>
+  <li>Projects with a tight budget or no plan for long-term development support.</li>
+  <li>Sites that are slow today because of hosting, images or plugins, which headless doesn't fix on its own.</li>
 </ul>
 
-<h2>A middle ground</h2>
-<p>A well-built traditional WordPress site with a lightweight theme, caching, optimized images and good hosting already delivers excellent speed for most businesses. If you want static-site speed without complexity, simpler static setups can also work for sites that rarely change; this website, for example, is a static site (see the <a href="/work/samverse/">Samverse case study</a>).</p>
+<h2>Common reasons given for headless, and what to try first</h2>
+<table>
+  <thead><tr><th>Reason you were given</th><th>What usually solves it</th></tr></thead>
+  <tbody>
+    <tr><td>"The site is slow"</td><td>Better hosting, page caching, image optimisation and removing heavy plugins and scripts; see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a></td></tr>
+    <tr><td>"WordPress isn't secure"</td><td>Regular updates, strong logins, a firewall and off-site backups; see the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a></td></tr>
+    <tr><td>"We want app-like interactions"</td><td>A few custom blocks or scripts on specific pages of a traditional site</td></tr>
+    <tr><td>"It's the modern way to build"</td><td>That's a developer preference, not a business need; ask what it will do for your enquiries or sales</td></tr>
+    <tr><td>"We're launching a mobile app"</td><td>A genuine reason to consider it, or to share content through the REST API while keeping a normal website</td></tr>
+  </tbody>
+</table>
 
-<h2>The bottom line</h2>
-<p>For most small businesses, headless adds cost and complexity without enough benefit. Start with a fast, well-built traditional WordPress site; see <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs custom-coded websites</a> and <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2>Alternatives that get most of the benefit</h2>
+<h3>A well-built traditional WordPress site</h3>
+<p>Good hosting, a lightweight theme, page caching, optimised images and a careful plugin list make WordPress fast enough for nearly every small business, and pass Core Web Vitals on real devices. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> and <a href="/blog/what-is-a-cdn/">what a CDN does</a> cover the two biggest levers.</p>
+<h3>Static export</h3>
+<p>For a site that rarely changes, plugins such as Simply Static can export WordPress to plain HTML files. You keep WordPress for editing, but forms, search and comments need outside services, and every change needs a fresh export.</p>
+<h3>A static or custom-coded site</h3>
+<p>This website, samverse.space, is custom-coded rather than built on WordPress. Its pages are generated from plain data files by Node.js build scripts and served as static HTML from Hostinger, with a small PHP script for the contact form. That suits a content-heavy site run by one developer; it would not suit a team that wants to edit pages visually. The <a href="/work/samverse/">Samverse case study</a> explains the setup.</p>
+<h3>Keep the website and the app separate</h3>
+<p>If you have a software product, a common pattern is a normal WordPress marketing site on your main domain and the app on a subdomain such as app.example.com. Marketing can edit the website freely, and website changes never affect the product.</p>
+
+<h2>Five questions before going headless</h2>
+<ol>
+  <li>What problem will headless solve that better hosting, caching or a lighter theme won't?</li>
+  <li>Does the content really need to feed more than one front end?</li>
+  <li>Who will maintain the front end in two years, and at what cost?</li>
+  <li>Which of today's plugins, forms and integrations need rebuilding?</li>
+  <li>How will editors preview pages, change layouts and add landing pages?</li>
+</ol>
+<p>If the answers are vague, a traditional build is the safer choice.</p>
+
+<h2>FAQs</h2>
+<h3>Is headless WordPress faster?</h3>
+<p>It can be, especially with pages generated ahead of time. But a heavy front end can also be slower, and a well-optimised traditional WordPress site is fast enough for most businesses. Speed depends on how either is built.</p>
+<h3>Is headless WordPress more secure?</h3>
+<p>It reduces what's exposed on the public site, which helps. WordPress itself still needs updates, strong logins and backups, and the front end adds its own code and hosting to secure.</p>
+<h3>Does Elementor work with headless WordPress?</h3>
+<p>Not in any practical way. Elementor builds pages through WordPress's own front end, so a headless site has to recreate layouts in the front end code instead.</p>
+<h3>Is headless WordPress bad for SEO?</h3>
+<p>Not if it's built properly, with titles, descriptions, canonical tags, schema, sitemaps and redirects output correctly and pages rendered as HTML that search engines can read. The risk is that these are easy to miss.</p>
+<h3>Can I move to headless later?</h3>
+<p>Yes. Your content stays in WordPress, so a headless front end can be added later if a real need appears, such as a mobile app. Starting traditional doesn't lock you out.</p>
+
+<p>For most businesses, the better investment is a fast, well-built WordPress site you can edit yourself. That's what I build through <a href="/wordpress-website-development/">WordPress website development</a>. For a second opinion on a headless proposal you've received, send it over through <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
   },
   {
@@ -8568,55 +8835,120 @@ https://example.com/solar-quote/?utm_source=brochure&amp;utm_medium=qr&amp;utm_c
   },
   {
     slug: 'write-about-page-that-builds-trust',
-    seoTitle: 'How to Write an About Page That Builds Trust',
-    title: 'How to Write an About Page That Builds Trust (With a Simple Structure)',
-    description: 'Write an About page that builds trust and brings enquiries: your story, who you help, credentials, team, values, proof and a clear call to action.',
+    seoTitle: 'How to Write an About Page That Builds Trust (With Examples)',
+    title: 'How to Write an About Page That Builds Trust: Structure, Story, People, Honest Credentials, Proof and Examples by Business Type',
+    description: 'How to write an About page that builds trust: a section-by-section structure, your story, people and photos, honest credentials, proof and examples.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'website-for-lawyers-and-consultants'],
     body: `
-<p>The About page is often one of the most visited pages on a business website, and one of the most neglected. Visitors go there to decide whether they can trust you. A good About page answers that question quickly.</p>
+<p>An About page builds trust when it quickly answers the questions a cautious visitor has: who is behind this business, who it helps, why it's qualified, how it works and what to do next. Open with the customer rather than your founding date, keep your story short and genuine, show real people and places, state only credentials you can back up, add proof such as case studies and reviews, and end with a clear call to action.</p>
+<p>The About page is often read just before someone decides whether to contact you, yet it's one of the most neglected pages on business websites. When content isn't ready on a <a href="/wordpress-website-development/">WordPress website development</a> project, I suggest a structure and what to write for each page, and the About page is often where that help matters most. For professionals whose credibility decides the enquiry, see <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a>.</p>
 
 <h2>What visitors want from an About page</h2>
+<p>People rarely read an About page for entertainment. They're checking you out, usually with one of these questions in mind:</p>
 <ul>
-  <li>Who is behind this business?</li>
-  <li>Do they understand people like me?</li>
-  <li>Are they experienced and qualified?</li>
-  <li>Can I trust them with my money, project or health?</li>
+  <li>Is this a real business, and who exactly is behind it?</li>
+  <li>Do they work with people like me, on problems like mine?</li>
+  <li>Are they qualified, registered or experienced enough to trust?</li>
+  <li>What will it be like to work with them?</li>
+  <li>Where are they, and how do I get in touch?</li>
 </ul>
+<p>Every section of the page should answer at least one of these. Anything that doesn't, such as a mission statement nobody could disagree with, can go.</p>
 
-<h2>A simple structure</h2>
-<h3>1. Start with who you help</h3>
-<p>Open with the customer, not your founding date: "We help manufacturers win export orders with websites buyers trust." Then introduce yourself.</p>
+<h2>About page structure, section by section</h2>
+<table>
+  <thead><tr><th>Section</th><th>What to include</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>1. Opening</td><td>Who you help and what you do for them, in one or two sentences</td><td>Starting with "Established in..." or a slogan</td></tr>
+    <tr><td>2. Story</td><td>Why the business exists and what shaped how you work</td><td>A life history that runs for pages</td></tr>
+    <tr><td>3. People</td><td>The founder or team, with real photos and short bios</td><td>Stock photos of models in suits</td></tr>
+    <tr><td>4. Credentials</td><td>Qualifications, registrations, memberships and real projects</td><td>Claims you can't prove, or vague superlatives</td></tr>
+    <tr><td>5. How you work</td><td>Process, communication, what clients can expect</td><td>Promises you can't keep every time</td></tr>
+    <tr><td>6. Proof</td><td>Case studies, reviews, client names you may share</td><td>Invented or unattributed testimonials</td></tr>
+    <tr><td>7. Where and how to reach you</td><td>Address or area served, phone, WhatsApp, email</td><td>A contact form as the only option</td></tr>
+    <tr><td>8. Next step</td><td>One clear call to action</td><td>Ending with a quote or a photo and nothing else</td></tr>
+  </tbody>
+</table>
+
+<h3>1. Open with who you help</h3>
+<p>Your first lines should tell a visitor they're in the right place. A fictional example: "We design and install modular kitchens for apartments in Pune, from measurement to the last handle." Then introduce yourselves. Visitors care about themselves first, and about you once they know you're relevant.</p>
 <h3>2. Your story, briefly</h3>
-<p>Why you started, what you've learned, and what drives you. Keep it short and genuine. Two or three paragraphs are enough.</p>
-<h3>3. Credentials and experience</h3>
-<p>Qualifications, certifications, years in business, notable clients or projects, only what you can back up.</p>
-<h3>4. The team</h3>
-<p>Real photos and short bios. People trust faces far more than logos.</p>
+<p>Two or three short paragraphs are enough: why you started, what you've learned, and how that shapes the way you work today. Specific moments persuade more than general passion. "We started after our own home renovation went badly" says more than "we are passionate about quality".</p>
+<h3>3. People and photos</h3>
+<p>People trust faces more than logos. Show the founder, the team, the workshop, the clinic or the office, photographed properly in good light. <a href="/blog/stock-photos-vs-real-photos/">Stock photos vs real photos</a> explains why real ones matter. If you have more than a few people, give them their own page; see <a href="/blog/meet-the-team-page/">how to create a meet the team page</a>.</p>
+<h3>4. Credentials, stated honestly</h3>
+<p>Covered in detail below. The short version: be specific, be accurate, and leave out anything you'd be uncomfortable being asked to prove.</p>
 <h3>5. How you work</h3>
-<p>Your process, values and what clients can expect: response times, communication, guarantees.</p>
+<p>A short description of your process, how you communicate and what's included reassures people who've never hired a business like yours. Describe what you actually do, not what you hope to do on a good week.</p>
 <h3>6. Proof</h3>
-<p>A few testimonials, case studies or client logos. See <a href="/blog/collect-display-customer-testimonials/">how to collect and display testimonials</a>.</p>
-<h3>7. A clear next step</h3>
-<p>End with a call to action: book a consultation, get a quote or chat on WhatsApp.</p>
+<p>Link to case studies, show a few genuine reviews with permission, and name clients only if they've agreed. <a href="/blog/write-case-studies-business-website/">How to write case studies</a> and <a href="/blog/collect-display-customer-testimonials/">collecting and displaying testimonials</a> cover both.</p>
+<h3>7 and 8. Contact details and the next step</h3>
+<p>Repeat your phone number, WhatsApp and area served, then finish with one clear action: book a consultation, get a quote or visit the showroom.</p>
 
-<p>If you have more than a couple of people, a dedicated team page can carry the detail; see <a href="/blog/meet-the-team-page/">how to create a meet the team page</a>.</p>
+<h2>Credentials: what to state and how</h2>
+<ul>
+  <li><strong>Qualifications and registrations:</strong> degree, institution and year; professional registration numbers where your profession expects them, such as for doctors or advocates.</li>
+  <li><strong>Memberships and certifications:</strong> only ones you currently hold, named exactly as the issuing body names them.</li>
+  <li><strong>Experience:</strong> the year you started, if it's true, or the kinds of projects you've done. Avoid inflated totals that you can't count.</li>
+  <li><strong>Awards and media:</strong> name the award, the organiser and the year, and link to the source where possible.</li>
+  <li><strong>Superlatives:</strong> "leading", "number one" and "best in Pune" invite doubt unless an independent source says so.</li>
+</ul>
+<p>Some professions have rules about what they may say publicly, including restrictions on testimonials or advertising. If you're a doctor, advocate or other regulated professional, check your professional body's current guidance; <a href="/blog/personal-brand-website-professionals/">personal brand websites for professionals</a> covers this in more depth.</p>
+
+<h2>Examples by business type</h2>
+<p>All of the following are fictional, to show how the opening and the proof change with the business:</p>
+<table>
+  <thead><tr><th>Business</th><th>Opening line</th><th>Proof that fits</th><th>Call to action</th></tr></thead>
+  <tbody>
+    <tr><td>Physiotherapy clinic</td><td>"We help people in Kothrud recover from back pain and sports injuries without unnecessary scans."</td><td>Physiotherapists' qualifications and registration, clinic photos, patient reviews where permitted</td><td>Book an assessment</td></tr>
+    <tr><td>CA firm</td><td>"We handle GST, income tax and compliance for small manufacturers and traders."</td><td>Partners' qualifications and memberships, the kinds of clients served</td><td>Request a consultation</td></tr>
+    <tr><td>Manufacturer</td><td>"We machine precision components for automotive and pump companies."</td><td>Factory photos, machinery list, certifications held, industries served</td><td>Send drawings for a quote</td></tr>
+    <tr><td>Interior studio</td><td>"We design homes that are easy to live in, for families in Pune and Mumbai."</td><td>Project photos, designer profiles, process</td><td>Book a site visit</td></tr>
+    <tr><td>NGO</td><td>"We run evening classes for children in three Pune neighbourhoods."</td><td>Trustees, registration details, photos of the work, reports</td><td>Donate or volunteer</td></tr>
+  </tbody>
+</table>
+
+<h2>A business About page without a personal biography</h2>
+<p>Not every About page has to centre on one person's life story. Some businesses prefer to describe the business itself: how it started, what it focuses on, the work it has done, where it works, who it works with and how projects run. This site's <a href="/about/">About page</a> takes that approach, describing how Samverse started, the projects in the portfolio with a case study for each, the areas it serves, the kinds of clients it works with and how a project runs. Whichever approach you choose, visitors still need specifics: real work, a real location and a real way to get in touch.</p>
 
 <h2>Writing tips</h2>
 <ul>
-  <li>Write the way you speak: warm, clear and confident</li>
-  <li>Focus on what it means for the customer, not just facts about you</li>
-  <li>Avoid clichés like "passionate", "one-stop solution" and "customer-centric" unless you back them up</li>
-  <li>Use real photos, not stock images</li>
-  <li>Keep it scannable with short paragraphs and headings</li>
+  <li>Write the way you'd explain your business to a new customer in person: warm, clear and confident.</li>
+  <li>Choose "I" or "we" to match reality. A sole practitioner writing "we" can feel evasive; a team writing "I" leaves people out.</li>
+  <li>Swap clichés such as "passionate", "one-stop solution" and "customer-centric" for specific facts.</li>
+  <li>Use short paragraphs and headings, so visitors can scan to the part they care about.</li>
+  <li>Keep it current: update team changes, new registrations and recent projects.</li>
+</ul>
+<p><a href="/blog/how-to-write-website-content/">How to write website content</a> covers the homepage and service pages in the same style.</p>
+
+<h2>About pages and SEO</h2>
+<p>An About page rarely ranks for much on its own, but it supports the rest of the site. It helps Google and visitors understand who is responsible for the business, which feeds into the trust signals described in <a href="/blog/eeat-explained-small-business/">E-E-A-T explained</a>. Keep your business name, address and phone identical to your Google Business Profile, add Organization or LocalBusiness structured data, link to your genuine profiles elsewhere, and link from the About page to your main services.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>A wall of text about the company's history with nothing about customers</li>
+  <li>No photos, or only stock photos</li>
+  <li>Claims such as "award-winning" with no award named</li>
+  <li>Mission and vision statements that could belong to any company</li>
+  <li>Outdated team members or registrations</li>
+  <li>No contact details or call to action</li>
 </ul>
 
-<h2>SEO benefits</h2>
-<p>A detailed About page helps search engines understand who is behind the site, supporting trust signals. Add Person or Organization schema, link to your professional profiles, and keep details consistent with your Google Business Profile.</p>
+<h2>FAQs</h2>
+<h3>How long should an About page be?</h3>
+<p>Long enough to answer who you are, who you help, why you're qualified and how you work, which for most small businesses is a few hundred words plus photos. Clarity matters more than length.</p>
+<h3>Should my About page include my photo?</h3>
+<p>For personal services such as healthcare, law, consulting or coaching, yes, because people are choosing a person. Businesses that prefer not to feature individuals can show the team at work, the premises and the projects instead.</p>
+<h3>What if my business is new and has no reviews?</h3>
+<p>Lead with your qualifications, relevant experience from previous roles, your process and photos of your work or premises. Add reviews and case studies as they come in, rather than borrowing or inventing them.</p>
+<h3>Should I write in first person or third person?</h3>
+<p>First person, "I" or "we", reads more naturally for most small businesses. Third person suits formal firms and team bios. Whichever you choose, keep it consistent.</p>
+<h3>Do I need a separate team page?</h3>
+<p>If you have more than three or four people clients deal with, a separate team page keeps the About page short while still introducing everyone properly.</p>
 
-<h2>An example</h2>
-<p>This site's <a href="/about/">About page</a> follows this structure: how Samverse started, what it focuses on, who it works with, how projects run, and the tools used. For the rest of your site, see <a href="/blog/how-to-write-website-content/">how to write website content</a>.</p>
+<p>Need an About page, and a whole website, that tells visitors clearly who you are and why to trust you? I can plan the structure and help shape your content through <a href="/wordpress-website-development/">WordPress website development</a>. For professional practices, see <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a>.</p>
 `,
   },
   {
@@ -11394,64 +11726,125 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
   },
   {
     slug: 'website-accessibility-older-users',
-    seoTitle: 'Making Your Website Easy for Older Visitors',
-    title: 'Making Your Website Easy to Use for Older Visitors',
-    description: 'Make your website easier for older visitors: larger text, good contrast, simple navigation, clear buttons, readable forms, and phone and WhatsApp options.',
+    seoTitle: 'Website Accessibility for Older Users: A Practical Guide',
+    title: 'Making Your Website Easy for Older Visitors: Text Size, Contrast, Tap Targets, Plain Language and Phone or WhatsApp Options',
+    description: 'Make your website easy for older visitors: larger text, strong contrast, big tap targets, plain words, short forms, calm pages, and phone or WhatsApp.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-website-for-doctors', 'website-for-temples-and-ngos'],
     body: `
-<p>Older adults are a large and growing group of internet users, and often key customers for healthcare, pharmacies, temples, travel, insurance and financial services. Many websites are unintentionally hard for them to use. Small design choices make a big difference.</p>
+<p>To make a website easy for older visitors, use larger body text with strong contrast, big buttons with space between them, plain familiar words, a short menu, and short forms with clear labels, and always offer a tap-to-call number and WhatsApp next to the form. Remove auto-playing videos, rotating sliders and pop-ups, and make sure the site respects the larger text size many older people set on their phones. Then watch an older relative use it, because that one test shows more than any checklist.</p>
+<p>These changes matter most where older people are the main visitors or decision-makers: clinics and hospitals, temples and trusts, pharmacies, insurance and elder care. If your current site fails them, a <a href="/website-redesign/">website redesign</a> lets you fix text, layout and forms at the template level instead of page by page. For clinics specifically, see <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
+<p>This guide builds on <a href="/blog/website-accessibility-basics/">website accessibility basics</a>, which covers the standards and a quick audit. Here the focus is on what older visitors find hard, and what to do about it.</p>
 
-<h2>Common difficulties</h2>
+<h2>Why older visitors struggle with websites</h2>
+<p>Ageing brings gradual changes that many websites ignore:</p>
 <ul>
-  <li>Small or low-contrast text</li>
-  <li>Tiny buttons and links that are hard to tap</li>
-  <li>Complicated menus and too many choices</li>
-  <li>Pop-ups, auto-playing media and moving content</li>
-  <li>Long or confusing forms with unclear errors</li>
+  <li><strong>Eyesight:</strong> small print becomes harder to read, low contrast becomes harder to see, and glare on a phone screen makes both worse.</li>
+  <li><strong>Hands:</strong> tremors and stiffness make small links, tiny close buttons and precise swipes difficult.</li>
+  <li><strong>Hearing:</strong> phone calls and videos without captions can be hard to follow.</li>
+  <li><strong>Unfamiliar patterns:</strong> icons without labels, hidden menus and swipe-only galleries assume habits not everyone has.</li>
+  <li><strong>Caution:</strong> many older people are, rightly, wary of scams, so an unclear page or a pushy pop-up makes them leave.</li>
+</ul>
+<p>None of this means older visitors aren't capable online. It means a site that makes them work harder than necessary will lose them, and often lose the family members who help them decide.</p>
+
+<h2>Quick reference: what to change</h2>
+<table>
+  <thead><tr><th>Area</th><th>Common problem</th><th>What to do instead</th></tr></thead>
+  <tbody>
+    <tr><td>Text size</td><td>Body text of 14px or smaller, thin fonts</td><td>Body text of around 18px, a regular or medium weight, generous line spacing</td></tr>
+    <tr><td>Contrast</td><td>Grey text on white, text over photos</td><td>Near-black text on a light background; text over photos only with a solid backing</td></tr>
+    <tr><td>Tap targets</td><td>Small links packed together</td><td>Buttons at least the height of a fingertip, with space between them</td></tr>
+    <tr><td>Navigation</td><td>Long menus, icon-only menu button</td><td>A short menu with familiar words, and a button labelled "Menu"</td></tr>
+    <tr><td>Forms</td><td>Many fields, placeholder-only labels</td><td>Few fields, labels above each, clear errors</td></tr>
+    <tr><td>Contact</td><td>Form is the only option</td><td>Tap-to-call, WhatsApp and the number written out in full</td></tr>
+    <tr><td>Motion</td><td>Auto-playing video, sliders, pop-ups</td><td>Still pages; video only when tapped</td></tr>
+  </tbody>
+</table>
+
+<h2>Text that's easy to read</h2>
+<ul>
+  <li><strong>Size:</strong> around 18px for body text on phones and computers is a comfortable default; 16px is the minimum. Headings should be clearly larger.</li>
+  <li><strong>Spacing:</strong> line height of about one and a half times the text size, and short paragraphs.</li>
+  <li><strong>Weight and style:</strong> avoid thin and light font weights, long passages in italics, and whole sentences in capital letters.</li>
+  <li><strong>Line length:</strong> on a computer, keep lines from stretching right across a wide screen.</li>
+  <li><strong>Respect the phone's text size.</strong> Many older people increase the text size in their phone settings. Build with flexible text sizes so the site follows that setting, never disable pinch-to-zoom, and check that larger text doesn't overlap buttons or cut off menu items.</li>
+  <li><strong>Regional languages:</strong> Hindi, Marathi, Telugu and other scripts usually need a slightly larger size than English text to read comfortably.</li>
 </ul>
 
-<h2>Practical improvements</h2>
-<h3>Readable text</h3>
+<h2>Contrast and colour</h2>
+<p>Use dark text on a light background for anything people need to read: timings, fees, addresses and instructions. WCAG's minimum contrast ratio for normal text is 4.5:1; for an older audience, aim comfortably above it rather than just passing. Avoid placing text directly on photographs, avoid pale grey for "less important" text, and never rely on colour alone, such as red for "closed", without a word to go with it.</p>
+
+<h2>Buttons, links and tap targets</h2>
 <ul>
-  <li>Body text of at least 16–18px, with comfortable line spacing</li>
-  <li>Strong contrast: dark text on a light background</li>
-  <li>Clear, simple fonts, and avoid long paragraphs in all caps or italics</li>
+  <li>Make buttons look like buttons: a solid shape with a clear text label, such as "Book appointment" or "Call the clinic".</li>
+  <li>Give them room. A large target with space around it is easier for shaky hands; WCAG 2.2 sets a minimum of 24 by 24 CSS pixels, and 44 to 48 pixels is far more comfortable.</li>
+  <li>Underline links in paragraphs so they don't depend on colour.</li>
+  <li>Avoid actions that only appear on hover, swipe-only galleries and tiny "x" buttons for closing things.</li>
+  <li>Label icons with words. A phone icon alone is less clear than a phone icon with "Call us".</li>
 </ul>
-<h3>Simple navigation</h3>
+
+<h2>Plain language and simple navigation</h2>
+<p>Use the words visitors would use themselves: "Timings", "Doctors", "How to reach", "Donate", "Book appointment", not "Solutions", "Engage" or "Connect". Keep the main menu short, keep it in the same place on every page, and use a visible "Menu" label next to the icon on phones. Breadcrumbs and a clear Home link help people who land on an inner page from Google or a WhatsApp forward find their way.</p>
+<p>In the content itself, put the most-asked information near the top of each page, use one idea per paragraph, explain any medical, legal or technical term in plain words, and turn steps such as "how to book a puja" into a numbered list.</p>
+
+<h2>Phone and WhatsApp alongside forms</h2>
+<p>Many older visitors would rather talk than type, and many family members enquire on a parent's behalf. Give them every route:</p>
 <ul>
-  <li>A short, clearly labelled menu using familiar words ("Timings", "Contact", "Book appointment")</li>
-  <li>Consistent layout from page to page</li>
-  <li>Visible "Home" link and breadcrumbs</li>
+  <li><strong>Tap-to-call</strong> buttons that open the dialler, with the number also written out in full so people can dial it from a landline.</li>
+  <li><strong>WhatsApp</strong> with a pre-filled first message, which also helps visitors with hearing loss who find calls difficult; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a>.</li>
+  <li><strong>The hours someone answers,</strong> so people don't call at lunch and give up.</li>
+  <li><strong>A form for those who prefer it,</strong> with an option such as "I am booking for a family member".</li>
 </ul>
-<h3>Easy buttons and links</h3>
+
+<h2>Forms older visitors can finish</h2>
+<ol>
+  <li>Ask only for what you need to respond: name, phone number and a short message is often enough.</li>
+  <li>Put labels above fields, and make fields large.</li>
+  <li>Use the right keyboard, such as the number pad for phone numbers.</li>
+  <li>Accept phone numbers with or without spaces and country codes, instead of rejecting them.</li>
+  <li>Show errors next to the field in plain words, and keep everything already typed.</li>
+  <li>Avoid puzzle CAPTCHAs and short time limits.</li>
+  <li>Finish on a thank-you page that says what happens next and when.</li>
+</ol>
+<p>For appointment booking, a short request form with a call back often suits older patients better than a full calendar; <a href="/blog/online-appointment-booking-website/">online appointment booking</a> compares the options.</p>
+
+<h2>Calm pages with fewer surprises</h2>
 <ul>
-  <li>Large tap targets with space between them</li>
-  <li>Buttons that look like buttons, with clear text</li>
-  <li>Underlined links in text</li>
-</ul>
-<h3>Friendly forms</h3>
-<ul>
-  <li>Few fields, with visible labels above each</li>
-  <li>Clear error messages that explain how to fix the problem</li>
-  <li>Alternatives: phone and WhatsApp for people who prefer to talk</li>
-</ul>
-<h3>Calm pages</h3>
-<ul>
-  <li>No auto-playing videos, flashing banners or aggressive pop-ups</li>
-  <li>Plenty of white space</li>
+  <li>No auto-playing video or sound; play video only when tapped.</li>
+  <li>No sliders that change while someone is reading. One clear image and message is easier to follow.</li>
+  <li>No pop-ups on arrival, and nothing that covers the page on a phone.</li>
+  <li>Keep chat bubbles and sticky bars small, so they don't cover buttons or text.</li>
+  <li>Respect the "reduce motion" setting on phones and computers for any animation.</li>
 </ul>
 
 <p>For visitors with hearing loss, a phone call can be the hardest way to reach you, so always offer WhatsApp, email or a form as well; see <a href="/blog/website-for-hearing-aid-centres/">websites for hearing aid centres</a>.</p>
 
 <h2>Trust and reassurance</h2>
-<p>Older visitors may be more cautious about scams. Show clear contact details, a physical address, real photos and straightforward policies. Avoid pressure tactics.</p>
+<p>Show the details a cautious visitor checks before calling: a full address with a map, real photos of the place and people, names and qualifications where relevant, fees or a clear note on what affects them, and plain policies. Avoid countdown timers, "only two slots left" banners and anything that feels like pressure. <a href="/blog/website-trust-signals-checklist/">The website trust signals checklist</a> covers the rest.</p>
+
+<h2>Clinics, temples and NGOs: what to put first</h2>
+<ul>
+  <li><strong>Clinics and hospitals:</strong> doctor names and specialties, timings, how to book, how to reach, parking and lift or wheelchair access. The <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> lists the essentials.</li>
+  <li><strong>Temples and trusts:</strong> darshan and aarti timings, festival dates, how to reach, and simple donation steps, ideally in the languages devotees read. Large readable text, clear menus and fast loading on basic phones are part of how I approach <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a>.</li>
+  <li><strong>Elder care and home nursing:</strong> written as much for the adult children researching on a parent's behalf as for the parents themselves.</li>
+</ul>
 
 <h2>Test with real people</h2>
-<p>Ask an older relative or customer to complete a common task on your site, such as finding timings or booking an appointment, and watch where they struggle. It's the most valuable test you can run.</p>
+<p>Ask an older relative, customer or patient to do three real tasks on their own phone, with their usual text size: find your timings, find how to reach you, and send an enquiry. Watch without helping, and note every pause, wrong tap and question. Fix those first, then repeat with someone else.</p>
 
-<p>These improvements overlap with general <a href="/blog/website-accessibility-basics/">accessibility basics</a> and help every visitor. They're especially important for <a href="/wordpress-website-for-doctors/">healthcare</a> and <a href="/website-for-temples-and-ngos/">temple and community</a> websites.</p>
+<h2>FAQs</h2>
+<h3>What font size should a website use for older visitors?</h3>
+<p>Around 18px for body text is a comfortable default, with 16px as the minimum, and headings clearly larger. Just as important, the site should grow with the text size people set on their phones without breaking the layout.</p>
+<h3>Should I add buttons to make the text bigger?</h3>
+<p>They rarely get used, and phones and browsers already have text-size and zoom settings. A comfortable default size and a layout that respects those settings help more than a resize button.</p>
+<h3>Is designing for older visitors the same as accessibility?</h3>
+<p>It overlaps heavily. Accessibility standards cover contrast, tap targets, labels and motion, which all help older visitors. Designing for older people adds plain language, phone and WhatsApp options, and extra attention to trust.</p>
+<h3>How can I test my website with older users?</h3>
+<p>Ask two or three older people to complete real tasks on their own phones while you watch without helping. Note where they hesitate or tap the wrong thing, fix those points, and test again.</p>
+
+<p>Want a website that older patients, devotees or customers find easy? I can rebuild your templates with readable text, clear buttons, short forms and tap-to-call and WhatsApp on every page through a <a href="/website-redesign/">website redesign</a>, or build a new clinic site through <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
 `,
   },
   {
@@ -11678,53 +12071,129 @@ function my_limit_links( $result, $tag ) {
   },
   {
     slug: 'business-email-deliverability-spf-dkim-dmarc',
-    seoTitle: 'Business Email Deliverability: SPF, DKIM & DMARC',
-    title: 'Business Email Deliverability: SPF, DKIM and DMARC Explained Simply',
-    description: 'Why emails from your domain and website land in spam, and how SPF, DKIM and DMARC records fix it, explained simply for business owners, with a setup checklist.',
+    seoTitle: 'SPF, DKIM and DMARC Explained: Stop Emails Going to Spam',
+    title: 'Business Email Deliverability: SPF, DKIM and DMARC Explained, With Example Records and a Fix for Website Form Emails',
+    description: 'Why business and website form emails land in spam, and how SPF, DKIM and DMARC fix it: example records, SMTP for WordPress forms and a step-by-step fix.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['wordpress-maintenance', 'wordpress-migration', 'woocommerce-developer'],
     body: `
-<p>If customers say your emails went to spam, or your website's order and enquiry emails never arrive, the problem is often missing email authentication. Three DNS records, SPF, DKIM and DMARC, tell receiving mail servers that your emails are genuine.</p>
+<p>Emails from your domain land in spam, or never arrive, when receiving servers cannot confirm they really came from you. Three DNS records fix most of it: SPF lists the services allowed to send for your domain, DKIM adds a signature that proves a message wasn't forged or altered, and DMARC tells receivers what to do with mail that fails those checks. Website form emails need one more step, because they should be sent through an authenticated SMTP login rather than the web server's basic mail function.</p>
+<p>Contact forms that silently stop sending are one of the quieter problems on business websites, which is why form checks are part of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Email records are also the easiest thing to lose when a site changes host, so they are copied and tested before anything is switched during a <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<p>This guide covers authentication and delivery. If you are still choosing a provider, start with <a href="/blog/business-email-options/">business email options compared</a>, and for a step-by-step mailbox setup on one host, see <a href="/blog/hostinger-business-email-setup/">Hostinger business email setup</a>.</p>
 
-<h2>Why emails go to spam</h2>
+<h2>Why business emails land in spam</h2>
+<p>Every receiving mail server asks whether the sender is who it claims to be. When the answer is unclear, the message is filtered. The usual reasons:</p>
 <ul>
-  <li>The sending server isn't authorised to send for your domain</li>
-  <li>Emails aren't signed, so they can't be verified</li>
-  <li>Your domain has no policy telling receivers what to do with unverified mail</li>
-  <li>Website emails are sent from the web server without proper authentication</li>
+  <li><strong>No SPF record, or the wrong one,</strong> so the server that sent the message isn't on your domain's approved list.</li>
+  <li><strong>No DKIM signature,</strong> so receivers can't check the message is genuine and unchanged.</li>
+  <li><strong>No DMARC record,</strong> so receivers have no instruction from you and treat unverified mail with suspicion.</li>
+  <li><strong>Website emails sent by the server itself,</strong> through PHP's mail function, from a shared hosting server that isn't part of your SPF or DKIM setup.</li>
+  <li><strong>A From address that doesn't match the sender,</strong> such as a form that sends "from" the visitor's Gmail address through your web server.</li>
+  <li><strong>A new domain with no history, or a blocklisted server,</strong> often after a hacked site sent spam; see <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam emails</a>.</li>
+</ul>
+<p>A common small business setup in India shows how these combine: the domain at one registrar, the website on shared hosting, email on Google Workspace or Zoho, and a contact form sending through the host's mail function. Each piece works alone, but the domain's DNS doesn't say that all of them may send.</p>
+
+<h2>SPF, DKIM and DMARC at a glance</h2>
+<table>
+  <thead><tr><th>Record</th><th>What it does</th><th>Where it lives</th><th>Most common mistake</th></tr></thead>
+  <tbody>
+    <tr><td>SPF</td><td>Lists the servers and services allowed to send mail for your domain</td><td>One TXT record on the domain itself (the @ or root name)</td><td>Two SPF records, or a service missing from the list</td></tr>
+    <tr><td>DKIM</td><td>Publishes a public key so receivers can verify each message's signature</td><td>A TXT or CNAME record at a name like selector._domainkey</td><td>Record added but signing never switched on in the provider's admin panel</td></tr>
+    <tr><td>DMARC</td><td>Sets your policy for mail that fails, and asks for reports</td><td>One TXT record at _dmarc</td><td>Jumping straight to reject before every sender passes</td></tr>
+    <tr><td>MX</td><td>Says where incoming mail for your domain is delivered</td><td>MX records on the domain</td><td>Old MX records left behind after switching provider</td></tr>
+  </tbody>
+</table>
+<p>MX records handle receiving rather than proof of sender, but belong in the same check. <a href="/blog/domain-hosting-ssl-explained/">Domain, hosting and SSL explained</a> covers DNS in general.</p>
+
+<h2>SPF: who may send for your domain</h2>
+<p>SPF (Sender Policy Framework) is a single line of text in your DNS. Each <strong>include</strong> names a service allowed to send as your domain, and the ending says how strictly to treat everything else. The record below is an example of the format only; copy the exact include values from your email provider, newsletter tool and any transactional email service:</p>
+<pre><code>Type   Name   Value (example only)
+TXT    @      v=spf1 include:_spf.mailbox-provider.example.com include:spf.newsletter-tool.example.com ~all</code></pre>
+<ul>
+  <li><strong>One SPF record per domain.</strong> If you add a second TXT record starting with v=spf1, SPF fails for everything. Merge the includes into one record instead.</li>
+  <li><strong>List every real sender:</strong> your mailbox provider, your newsletter or CRM tool, and whichever service sends your website's emails.</li>
+  <li><strong>Stay under the lookup limit.</strong> The SPF standard allows at most ten DNS lookups when a receiver checks the record, and each include can use several. Remove services you no longer use rather than adding more.</li>
+  <li><strong>The ending:</strong> ~all (soft fail) is a common, forgiving choice; -all (fail) is stricter. Once DMARC is in place, its policy matters more than this ending.</li>
+</ul>
+<p>SPF alone checks a hidden sender address, not the From address people see, and it often breaks when mail is forwarded. That's why DKIM and DMARC exist.</p>
+
+<h2>DKIM: a signature on every message</h2>
+<p>DKIM (DomainKeys Identified Mail) signs each outgoing message with a private key held by your provider. The matching public key sits in your DNS, under a name that includes a <strong>selector</strong>, so receivers can look it up and check the signature. If anything in the signed parts of the message changed on the way, the check fails.</p>
+<pre><code>Type    Name                    Value (example only)
+TXT     mail._domainkey         v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0B...(long key from your provider)
+CNAME   s1._domainkey           s1.domainkey.newsletter-tool.example.com</code></pre>
+<ul>
+  <li>Each sending service has its own selector, so several DKIM records can sit side by side.</li>
+  <li>Some providers give a TXT record with the key; others give a CNAME pointing to a key they manage.</li>
+  <li>With Google Workspace and some others, adding the record is not enough: you also turn on signing in the admin console after the record is live.</li>
 </ul>
 
-<p>Still choosing a provider? See <a href="/blog/business-email-options/">business email options for small businesses</a>.</p>
-
-<h2>SPF: who may send</h2>
-<p>SPF (Sender Policy Framework) is a DNS record listing the servers allowed to send email for your domain, for example your email provider and any service your website uses. Keep a single SPF record that includes all legitimate senders.</p>
-
-<h2>DKIM: a digital signature</h2>
-<p>DKIM (DomainKeys Identified Mail) adds a cryptographic signature to your emails. Your email provider gives you a DKIM record to add to DNS, and receiving servers use it to verify the message wasn't altered and really came from your domain.</p>
-
-<h2>DMARC: the policy</h2>
-<p>DMARC tells receivers what to do if an email fails SPF or DKIM checks (monitor, quarantine or reject) and can send you reports. Start with a monitoring policy, review the reports, then tighten it once all legitimate senders pass.</p>
-
-<h2>Website emails</h2>
-<p>WordPress forms and WooCommerce order emails often fail because they're sent using the server's basic mail function. Send them through an authenticated service (SMTP or a transactional email provider) that's included in your SPF and DKIM setup. This site sends form emails through an authenticated Gmail connection for the same reason.</p>
-
-<h2>Setup checklist</h2>
+<h2>DMARC: the policy and the reports</h2>
+<p>DMARC (Domain-based Message Authentication, Reporting and Conformance) ties the other two to the address people actually see. A message passes DMARC when SPF or DKIM passes <em>and</em> the domain it passed for matches the domain in the From address. This matching is called alignment, and it is why a form that sends "from" your domain through an unlisted server still fails.</p>
+<pre><code>Type   Name     Value (example only)
+TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></pre>
+<p>Roll the policy out in stages:</p>
 <ol>
-  <li>List every service that sends email as your domain (mailbox provider, website, newsletter tool, CRM)</li>
-  <li>Create or update one SPF record including them</li>
-  <li>Enable DKIM for each sending service</li>
-  <li>Add a DMARC record in monitoring mode</li>
-  <li>Test by sending emails to different providers and checking headers</li>
-  <li>Tighten DMARC once everything passes</li>
+  <li><strong>p=none</strong> asks receivers to report but take no action. Leave it for a few weeks and read the reports to find every service sending as your domain.</li>
+  <li><strong>p=quarantine</strong> asks receivers to send failing mail to spam. Move here only when every legitimate sender passes.</li>
+  <li><strong>p=reject</strong> asks receivers to refuse failing mail outright. It gives the strongest protection against people forging your domain, and it is worth it once you are confident.</li>
 </ol>
+<p>Reports arrive as XML attachments that are hard to read by hand. Free and paid DMARC report services turn them into a list of who sends as your domain and whether each source passes. Send them to a separate address, not your main inbox.</p>
 
-<p>Getting bounces for emails you never sent? See <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam emails</a>.</p>
+<h2>What Gmail and Yahoo now expect</h2>
+<p>At the time of writing, Gmail and Yahoo require everyone sending to their users to authenticate mail, with stricter rules for bulk senders: SPF, DKIM, a DMARC record, aligned From addresses, easy unsubscribing and low complaint rates. Microsoft has announced similar requirements for high-volume senders. Details change, so check each provider's current sender guidelines, but unauthenticated mail is increasingly filtered even at low volumes.</p>
 
-<h2>Be careful when changing DNS</h2>
-<p>Mistakes in DNS can stop email entirely. When moving hosting or domains, copy all email records first; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<h2>Website form emails: PHP mail() vs authenticated SMTP</h2>
+<p>By default, WordPress and many form plugins hand email to the web server's PHP mail function. The server sends it without logging in to any mailbox, often from a shared IP address that isn't in your SPF record, with no DKIM signature for your domain, and some hosts limit or block it. Enquiries vanish or sit in spam.</p>
+<p>The fix is to send through a real, authenticated account using SMTP, the standard way mail programs log in to send:</p>
+<table>
+  <thead><tr><th>Option</th><th>Suits</th><th>Watch out for</th></tr></thead>
+  <tbody>
+    <tr><td>A mailbox on your domain over SMTP, such as website@ your domain on Google Workspace, Zoho Mail, Microsoft 365 or host email</td><td>Brochure sites with a handful of form emails a day</td><td>Mailbox sending limits, and the connection breaking when the password or security settings change</td></tr>
+    <tr><td>A Gmail account with an app password</td><td>Very small sites where enquiries only go to the owner's own Gmail</td><td>App passwords need 2-Step Verification, the From address must be that Gmail address, and Google can change what it allows</td></tr>
+    <tr><td>A transactional email service</td><td>Online stores, booking and membership sites, busy forms</td><td>Domain verification with its own SPF and DKIM records before you can send</td></tr>
+  </tbody>
+</table>
+<p>Either way, set the <strong>From</strong> address to the account you authenticate with and put the visitor's email in <strong>Reply-To</strong>, so you can reply directly. On WordPress, one SMTP plugin, such as WP Mail SMTP, FluentSMTP or Post SMTP, handles every email the site sends. <a href="/blog/wordpress-not-sending-emails-smtp/">Fixing WordPress emails with SMTP</a> walks through the setup, and <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a> covers the problems that aren't about email at all.</p>
 
-<p>If enquiries aren't arriving, also read <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a>.</p>
+<h2>How to test your setup</h2>
+<ul>
+  <li><strong>Gmail's Show original:</strong> send a message to a Gmail account, choose Show original from the three-dot menu, and check that SPF, DKIM and DMARC each say PASS. Repeat with an Outlook.com address, since providers filter differently.</li>
+  <li><strong>DNS lookup tools:</strong> online checkers such as MXToolbox show your SPF, DKIM and DMARC records as the world sees them, and flag duplicate SPF records or too many lookups.</li>
+  <li><strong>Spam-score testers:</strong> services such as mail-tester.com give you a temporary address to send to, then score the message and list problems.</li>
+  <li><strong>Google Postmaster Tools:</strong> shows spam rates and authentication results once you send a meaningful volume to Gmail users.</li>
+  <li><strong>The website itself:</strong> submit your real form, or place a test order, and check the headers of the email that arrives.</li>
+</ul>
+
+<h2>A step-by-step fix</h2>
+<ol>
+  <li><strong>List every sender:</strong> mailbox provider, website, and any newsletter, CRM, invoicing or booking tool that emails as your domain.</li>
+  <li><strong>Find where your DNS is managed:</strong> your registrar, your host or a service such as Cloudflare. Changes made anywhere else do nothing.</li>
+  <li><strong>Check MX records</strong> point only at your current email provider.</li>
+  <li><strong>Build one SPF record</strong> containing an include for each sender, and delete any duplicates.</li>
+  <li><strong>Turn on DKIM</strong> for each service, add its record, then switch signing on in that service's settings.</li>
+  <li><strong>Add DMARC at p=none,</strong> with reports going to a dedicated address.</li>
+  <li><strong>Move website emails to SMTP,</strong> with a matching From address and the visitor in Reply-To.</li>
+  <li><strong>Test</strong> with Show original and a spam-score tester, and fix failures before changing anything else.</li>
+  <li><strong>Read the DMARC reports</strong> for a few weeks, fix any sender you missed, then move to quarantine. Recheck whenever you add a tool or change host.</li>
+</ol>
+<p>DNS changes can take a few hours to spread, occasionally longer, so test again the next day before deciding something hasn't worked.</p>
+
+<h2>FAQs</h2>
+<h3>Do I need SPF, DKIM and DMARC for a small business?</h3>
+<p>Yes. Even a business sending a few emails a day benefits, because major mailbox providers now expect authenticated mail, and DMARC also makes it harder for scammers to send fake emails using your domain.</p>
+<h3>Can I have two SPF records?</h3>
+<p>No. A domain must have only one SPF record. If you add Google Workspace, a newsletter tool and a transactional service, merge all their include values into one record that starts with v=spf1.</p>
+<h3>What DMARC policy should I start with?</h3>
+<p>Start with p=none and a reporting address, read the reports for a few weeks, then move to p=quarantine once every legitimate sender passes. Move to p=reject when you are confident nothing genuine is failing.</p>
+<h3>Why do my website form emails go to spam when my normal email is fine?</h3>
+<p>Usually because the form sends through the web server's PHP mail function instead of your email provider. Send it through an authenticated SMTP account, with the From address matching that account.</p>
+<h3>Can I send WordPress form emails through Gmail?</h3>
+<p>Yes, with an SMTP plugin and a Gmail app password, which needs 2-Step Verification turned on. The email will come from that Gmail address, which is fine when enquiries only go to you. For mail from your own domain, use a domain mailbox or a transactional service.</p>
+
+<p>If your enquiries or order emails are going missing, I can trace where they fail, fix the SPF, DKIM, DMARC and SMTP setup, and keep checking your forms every month as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>. Moving host or domain? Email records are preserved and tested as part of <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
   },
   {
@@ -12605,54 +13074,137 @@ document.querySelectorAll('.map-facade button').forEach(function (btn) {
   },
   {
     slug: 'mobile-first-design-explained',
-    seoTitle: 'Mobile-First Design Explained for Business Owners',
-    title: 'Mobile-First Design Explained: Why Your Website Should Start With the Phone',
-    description: 'Mobile-first design for business owners: why it matters to customers and Google, and principles for layout, navigation, buttons, forms and speed.',
+    seoTitle: 'Mobile-First Design Explained: Principles, Indexing, Testing',
+    title: 'Mobile-First Design Explained for Business Owners: Mobile-First Indexing, Design Principles, Forms, Call and WhatsApp Buttons, Speed and Testing',
+    description: 'Mobile-first design explained: what mobile-first indexing means, design principles, tap targets, forms, call and WhatsApp buttons, speed and testing.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-website-development', 'wordpress-speed-optimization'],
     body: `
-<p>Most people now visit business websites on their phones. Mobile-first design means designing for the small screen first, then enhancing for larger screens, instead of squeezing a desktop design onto a phone as an afterthought.</p>
+<p>Mobile-first design means planning and building your website for a phone screen first, then enhancing the layout for tablets and computers, instead of designing for a large monitor and squeezing it down. It matters because many visitors find and judge a business on their phones, and because Google mainly uses the mobile version of your pages to index and rank them. In practice, it comes down to clear content priorities, readable text, big tap targets, short forms, easy call and WhatsApp buttons, and pages light enough to load quickly on a mid-range phone over mobile data.</p>
+<p>A mobile-first responsive layout is part of every <a href="/website-redesign/">website redesign</a> I take on, built and checked on real phones before launch. If your layout is fine but pages crawl on mobile data, <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> deals with images, scripts, caching and hosting instead.</p>
 
-<h2>Why mobile-first matters</h2>
+<h2>Mobile-first design, responsive design and mobile-first indexing</h2>
+<p>Three terms get mixed up, and they mean different things:</p>
+<table>
+  <thead><tr><th>Term</th><th>What it means</th><th>Who it's about</th></tr></thead>
+  <tbody>
+    <tr><td>Responsive design</td><td>One website whose layout adapts to the screen size</td><td>How the site is built</td></tr>
+    <tr><td>Mobile-first design</td><td>Designing the phone layout first, then adding to it for larger screens</td><td>How the site is planned</td></tr>
+    <tr><td>Mobile-first indexing</td><td>Google crawling and indexing the mobile version of your pages</td><td>How Google sees the site</td></tr>
+  </tbody>
+</table>
+<p>A site can be responsive without being mobile-first: everything shrinks to fit, but the phone version is an afterthought, with tiny text, endless scrolling past desktop-sized images, and the phone number hidden in the footer.</p>
+
+<h2>What mobile-first indexing means for your site</h2>
+<p>Google has said it now crawls and indexes sites predominantly with its smartphone crawler. In plain terms, what Google sees on the mobile version of a page is what it uses. That has practical consequences:</p>
 <ul>
-  <li><strong>Customers:</strong> mobile visitors decide quickly and leave if things are hard to use</li>
-  <li><strong>Google:</strong> indexes and ranks sites based mainly on their mobile version</li>
-  <li><strong>Conversions:</strong> calls, WhatsApp and bookings mostly happen on phones</li>
+  <li><strong>Content parity:</strong> text, headings, images and internal links that appear only on desktop may as well not exist for Google. Google has said content inside tabs or accordions on mobile is fine, as long as it's in the page.</li>
+  <li><strong>Structured data and meta tags</strong> must be present on the mobile version.</li>
+  <li><strong>Images</strong> on mobile need the same alt text and should not be swapped for lower-quality versions that lose meaning.</li>
+  <li><strong>Pop-ups</strong> that cover the content on phones make pages harder to use, and Google's page experience guidance discourages intrusive interstitials.</li>
 </ul>
+<p>Being mobile-friendly doesn't make a weak page rank, but a page that's hard to use on a phone loses the visitors it does get.</p>
 
-<h2>Mobile-first principles</h2>
-<h3>Prioritise content</h3>
-<p>On a small screen, only the essentials fit at the top: what you do, the main benefit and the primary action. Move secondary content lower.</p>
+<h2>Principles of mobile-first design</h2>
+<h3>Decide what comes first</h3>
+<p>On a phone, the first screen fits a headline, one line of explanation and one or two buttons. Decide what those are: usually what you do, where, and the main action, such as Call, WhatsApp or Book. Everything else moves down the page in the order visitors need it.</p>
+<h3>One column, short sections</h3>
+<p>Design the narrow layout first, around 360 pixels wide, as one column of short sections with clear headings. Larger screens then get extra columns. In CSS, that means base styles for phones and min-width media queries that add to them:</p>
+<pre><code>.services { display: grid; gap: 16px; }
+
+@media (min-width: 768px) {
+  .services { grid-template-columns: repeat(3, 1fr); }
+}</code></pre>
+<h3>Readable text without zooming</h3>
+<p>Body text of at least 16px, comfortable line spacing and strong contrast. Never stop people zooming: the viewport tag should allow it, and many sites quietly break this. <a href="/blog/website-accessibility-basics/">Website accessibility basics</a> covers contrast and text in more detail.</p>
+<pre><code>&lt;!-- Good --&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+&lt;!-- Avoid: blocks pinch-to-zoom --&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"&gt;</code></pre>
+<h3>Thumb-friendly tap targets</h3>
+<p>Buttons and links need to be big enough to hit and far enough apart. WCAG 2.2 sets a minimum of 24 by 24 CSS pixels, and Apple's and Google's design guidelines suggest around 44 to 48 pixels for comfortable tapping. Put the main actions where a thumb reaches easily, and avoid links packed into a single line of tiny text.</p>
 <h3>Simple navigation</h3>
-<p>A clear menu with few items, a visible call-to-action button, and a sticky header or bottom bar with call and WhatsApp buttons.</p>
-<h3>Thumb-friendly buttons</h3>
-<p>Large tap targets with space between them. Important actions should be reachable with one thumb.</p>
-<h3>Readable text</h3>
-<p>At least 16px body text, short paragraphs and good contrast. No pinching or zooming needed.</p>
-<h3>Short, smart forms</h3>
-<p>Few fields, the right keyboard types (numeric for phone numbers), autofill support and clear errors.</p>
-<h3>Light pages</h3>
-<p>Compressed images, no heavy sliders or auto-playing video, and minimal scripts. See <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
-<h3>No intrusive pop-ups</h3>
-<p>Pop-ups that cover the whole mobile screen frustrate visitors and can hurt how search engines view the page.</p>
+<p>A short menu, a visible "Menu" label next to the icon, and the main call to action outside the menu so nobody has to open it to find your phone number. Long dropdowns become long scrolls on a phone.</p>
+<h3>Images and media that earn their place</h3>
+<p>Use real photos, sized for phones, rather than wide desktop banners that shrink into strips. Replace auto-playing sliders and background videos with one strong image; they cost data and attention on mobile.</p>
 
-<h2>Test on real devices</h2>
+<h2>Forms that work on phones</h2>
+<p>Typing on a phone is slow, so every field costs enquiries. Ask only for what you need, put labels above fields, and give each field the right type, so phones show the number pad for phone numbers and autofill can help:</p>
+<pre><code>&lt;label for="phone"&gt;Phone or WhatsApp number&lt;/label&gt;
+&lt;input id="phone" name="phone" type="tel" autocomplete="tel"&gt;
+
+&lt;label for="email"&gt;Email (optional)&lt;/label&gt;
+&lt;input id="email" name="email" type="email" autocomplete="email"&gt;</code></pre>
 <ul>
-  <li>Check key pages on an actual mid-range phone, not just a resized desktop browser</li>
-  <li>Try completing your main task (enquire, book, buy) with one hand</li>
-  <li>Check PageSpeed Insights mobile results</li>
+  <li>Accept phone numbers with spaces, dashes or +91, rather than rejecting them.</li>
+  <li>Make the submit button full width and clearly labelled, such as "Send enquiry".</li>
+  <li>Show errors next to the field and keep what was typed.</li>
+  <li>Avoid puzzle CAPTCHAs that are hard to solve on a small screen.</li>
 </ul>
+
+<h2>Sticky call and WhatsApp buttons</h2>
+<p>For many Indian businesses, the phone call or WhatsApp message is the real conversion, and visitors on phones expect one tap to start it. A slim bar fixed to the bottom of the screen with Call and WhatsApp buttons keeps both in reach on every page.</p>
+<ul>
+  <li>Use tap-to-call links, such as a tel: link with your full number including +91.</li>
+  <li>Open WhatsApp with a pre-filled first message that names the page, so you know what they're asking about; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a>.</li>
+  <li>Keep the bar slim, so it doesn't cover content or the cookie and form buttons.</li>
+  <li>Don't stack a floating chat bubble, a WhatsApp icon and a back-to-top arrow on top of the bar.</li>
+  <li>Track taps as events, so you can see which pages produce calls; see <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</li>
+</ul>
+
+<h2>Performance on Indian mobile networks</h2>
+<p>Many visitors browse on mid-range Android phones over 4G connections that vary through the day, inside buildings and while travelling. Latency, not just bandwidth, slows every request, and slower processors take longer to run JavaScript. What helps most:</p>
+<ul>
+  <li>Compressed, correctly sized images in modern formats, lazy-loaded below the first screen</li>
+  <li>Fewer fonts and font weights</li>
+  <li>Fewer third-party scripts, such as chat widgets, trackers and embedded social feeds</li>
+  <li>Page caching and hosting close to your visitors, with a CDN where it helps</li>
+</ul>
+<p><a href="/blog/website-speed-indian-mobile-networks/">Website speed on Indian mobile networks</a> explains how to test the way your customers browse, and <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress slow on mobile but fast on desktop</a> covers the usual culprits.</p>
+
+<h2>Mobile-first in WordPress and Elementor</h2>
+<ul>
+  <li><strong>Check every breakpoint:</strong> Elementor and the block editor let you set different sizes and spacing for mobile, tablet and desktop. Many sites only ever set the desktop values.</li>
+  <li><strong>Hiding isn't removing:</strong> elements hidden on mobile with a responsive setting are usually still loaded, so a hidden desktop slider still costs mobile visitors.</li>
+  <li><strong>Mobile menus:</strong> test the menu toggle, submenus and closing the menu with a real thumb.</li>
+  <li><strong>Theme choice:</strong> a lightweight theme makes mobile speed far easier to achieve than a heavy multipurpose one.</li>
+</ul>
+
+<h2>How to test</h2>
+<ol>
+  <li><strong>Use a real, mid-range phone,</strong> not just a narrow desktop browser, on mobile data rather than office Wi-Fi.</li>
+  <li><strong>Complete the main task one-handed:</strong> find a service, then call, WhatsApp or send the form.</li>
+  <li><strong>Turn up the phone's text size</strong> and check nothing overlaps or gets cut off.</li>
+  <li><strong>Run PageSpeed Insights</strong> on mobile for key pages, and check Search Console's Core Web Vitals report, which is based on real visits; see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> and <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</li>
+  <li><strong>Use Chrome's device mode</strong> to check different screen widths quickly. Google retired its standalone Mobile-Friendly Test in late 2023, so Lighthouse and real devices now do that job.</li>
+</ol>
 
 <h2>Signs your site isn't mobile-first</h2>
 <ul>
-  <li>Sideways scrolling or cut-off content</li>
-  <li>Tiny text and links</li>
-  <li>Phone numbers that can't be tapped</li>
-  <li>Slow loading on mobile data</li>
+  <li>Sideways scrolling or content cut off at the edge</li>
+  <li>Text you have to zoom to read</li>
+  <li>A phone number that isn't tappable, or isn't visible without opening the menu</li>
+  <li>Buttons so close together you tap the wrong one</li>
+  <li>A pop-up covering the screen before the page loads</li>
+  <li>Several seconds of white screen on mobile data</li>
 </ul>
 
-<p>If your site shows these signs, a <a href="/website-redesign/">mobile-first redesign</a> is usually one of the highest-impact improvements you can make. See also <a href="/blog/signs-you-need-a-new-website/">signs you need a new website</a>.</p>
+<h2>FAQs</h2>
+<h3>What's the difference between responsive and mobile-first design?</h3>
+<p>Responsive design means the layout adapts to any screen. Mobile-first is the approach of designing the phone layout first and adding to it for larger screens. A mobile-first site is responsive, but not every responsive site was planned for phones.</p>
+<h3>Does Google rank mobile-friendly sites higher?</h3>
+<p>Google mainly uses the mobile version of your pages for indexing and ranking, and page experience is part of its systems, but relevance and content quality matter far more. A poor mobile experience mostly costs you the visitors you already get.</p>
+<h3>Should the mobile version have less content than desktop?</h3>
+<p>No. Keep the same content, reorganised for a small screen with accordions or tabs where needed. Content missing from mobile may not be indexed.</p>
+<h3>Do I need a separate mobile site or an app?</h3>
+<p>Almost never for a business website. One responsive site is easier to maintain and avoids the SEO problems separate mobile sites used to cause. An app only makes sense if customers use it repeatedly, such as for orders or bookings.</p>
+<h3>How do I check if my site works on mobile?</h3>
+<p>Open it on a mid-range phone over mobile data and complete your main task. Then run PageSpeed Insights on mobile and Lighthouse in Chrome for specific issues.</p>
+
+<p>If your site fails the one-handed test, a <a href="/website-redesign/">website redesign</a> rebuilds it around the phone, with a sticky call and WhatsApp bar, short forms and readable text. If it looks fine but loads slowly on mobile data, start with <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
   {
@@ -18494,57 +19046,131 @@ Description: Buy %title% online. %excerpt%</code></pre>
   },
   {
     slug: 'website-navigation-structure',
-    seoTitle: 'How to Structure Your Website Navigation',
-    title: 'How to Structure Your Website Navigation (Menus That Help Visitors and SEO)',
-    description: 'Structure your website navigation: menu items, page hierarchy, labels customers understand, mobile menus, footer links and how structure supports SEO.',
+    seoTitle: 'Website Navigation Structure: Menus, Labels and SEO',
+    title: 'How to Structure Your Website Navigation: Menus, Labels, Depth, Mega Menus, Footer, Breadcrumbs, Mobile Menus, URLs and Internal Links',
+    description: 'How to structure website navigation: menu items and labels, depth, mega menus, footer links, breadcrumbs, mobile menus, URL structure and internal links.',
     date: '2026-09-27',
+    updated: '2026-10-19',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
-<p>Navigation is how visitors find their way around your site, and how search engines understand which pages matter. A clear structure helps both.</p>
+<p>Good website navigation starts with a simple structure: a short main menu of about five to seven items with plain labels, important pages no more than two or three clicks from the homepage, a visible call-to-action button, a footer for secondary links, breadcrumbs on deeper pages and a mobile menu that works with one thumb. Underneath, your URLs should follow the same structure, and pages should link to each other in the content, not just through the menu. That helps visitors find what they came for and helps Google understand which pages matter.</p>
+<p>Navigation is one of the first things rebuilt in a <a href="/website-redesign/">website redesign</a>: the menu is organised around how customers choose, usually one page per service or product family, and every old URL is mapped so nothing that ranks is lost. Site structure and internal linking are also part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, because the way pages link together shapes what Google sees as important.</p>
 
-<h2>Start with what visitors want</h2>
-<p>List the top reasons people visit: see services, check prices, view work, learn about you, contact you. Your main menu should serve those tasks directly.</p>
-
-<h2>Keep the main menu short</h2>
+<h2>Start with what visitors come to do</h2>
+<p>Before touching the menu, list the handful of tasks most visitors arrive with. For most businesses they look like this: see what you offer, check whether you serve their area, look at prices or what affects them, see your work, check who you are, and contact you. Sources that show you the real list:</p>
 <ul>
-  <li>Around 5–7 top-level items</li>
-  <li>Clear, familiar labels: "Services", "Work", "About", "Blog", "Contact", not clever or vague ones</li>
-  <li>A prominent call-to-action button ("Get a Quote")</li>
+  <li><strong>Your phone and WhatsApp:</strong> what do people ask about before they buy?</li>
+  <li><strong>Search Console:</strong> the searches that bring people to your site and the pages they land on.</li>
+  <li><strong>Analytics:</strong> your most-visited pages, and the pages people visit just before contacting you.</li>
+  <li><strong>Staff:</strong> whoever answers enquiries knows what confuses customers.</li>
+</ul>
+<p>The main menu should serve those tasks directly. Anything that doesn't can live in the footer or inside other pages.</p>
+
+<h2>Plan the structure before the menu</h2>
+<p>Navigation is a view of your site's structure, so sketch that first. A fictional example for an air-conditioning service company:</p>
+<pre><code>Home
+  Services
+    AC repair
+    AC installation
+    Annual maintenance contracts
+    Commercial HVAC
+  Areas we serve
+    Kothrud, Baner, Hinjewadi ...
+  Work (case studies)
+  About
+  Blog
+  Contact</code></pre>
+<ul>
+  <li><strong>One page per main service,</strong> so each can answer its own questions and rank for its own searches; see <a href="/blog/write-service-pages-that-convert/">writing service pages that convert</a>.</li>
+  <li><strong>A hub page for each group,</strong> such as Services, that introduces and links to every page beneath it.</li>
+  <li><strong>Area pages only where you have something specific to say</strong> about each area, not copies with the place name swapped; <a href="/blog/multi-location-business-website/">multi-location websites</a> covers this.</li>
 </ul>
 
-<h2>Organise a simple hierarchy</h2>
-<ul>
-  <li>Home → Services → individual service pages</li>
-  <li>Home → Industries → industry pages (if relevant)</li>
-  <li>Home → Blog → articles grouped by topic</li>
-</ul>
-<p>Important pages should be reachable within two or three clicks from the homepage.</p>
+<h2>The main menu: items, order and labels</h2>
+<p>Five to seven top-level items is a comfortable range for most business sites. More than that and nothing stands out. Put the items visitors need most at the start, keep Contact at the end where people look for it, and show your main call to action as a distinct button, such as "Get a quote" or "Book appointment".</p>
+<p>Labels should use the words customers use, not internal jargon or clever wording:</p>
+<table>
+  <thead><tr><th>Vague or clever label</th><th>Clearer label</th></tr></thead>
+  <tbody>
+    <tr><td>Solutions</td><td>Services, or the service names themselves</td></tr>
+    <tr><td>What we do</td><td>Services</td></tr>
+    <tr><td>Our journey</td><td>About</td></tr>
+    <tr><td>Portfolio showcase</td><td>Work, or Projects</td></tr>
+    <tr><td>Resources</td><td>Blog, or Guides</td></tr>
+    <tr><td>Connect with us</td><td>Contact</td></tr>
+  </tbody>
+</table>
+<p>If you have only three or four services, list them directly in the menu instead of hiding them under "Services". Whether you include "Home" is a matter of taste; the logo should link to the homepage either way.</p>
+
+<h2>Depth: how many clicks is too many?</h2>
+<p>Important pages should be reachable within two or three clicks of the homepage. A page buried five levels deep is hard for visitors to find and tends to get less attention from Google. For most business sites, two levels are enough: a group page and the pages within it. Deep structures make sense only for large catalogues or directories, and even then hub pages and filters should keep the click path short.</p>
 
 <h2>Dropdowns and mega menus</h2>
-<p>Use dropdowns for groups like services, but keep them scannable. Very large menus overwhelm visitors, especially on mobile.</p>
-
-<h2>Mobile navigation</h2>
+<p>Dropdowns suit a group of five to ten related pages, such as services. Mega menus, large panels showing several columns of links, suit sites with many products or services in clear groups, such as an industrial supplier or a store. Either way:</p>
 <ul>
-  <li>A clear menu button and easy-to-tap links</li>
-  <li>Call and WhatsApp buttons visible without opening the menu</li>
-  <li>Test on real phones</li>
+  <li>Make the top-level item a real page, not just a label that opens a menu, so it can be tapped, linked and ranked.</li>
+  <li>Give mega menu columns short headings that match your categories.</li>
+  <li>Don't rely on hover alone; it doesn't exist on touchscreens, and keyboard users need to open menus too.</li>
+  <li>Keep it scannable. A mega menu with eighty links helps nobody choose.</li>
 </ul>
 
-<h2>Use the footer well</h2>
-<p>Footers are great for secondary links: all services, industries, resources, contact details and policies.</p>
+<h2>Footer navigation</h2>
+<p>The footer is where people look for things they expect on every site: contact details, address, timings, a full list of services, policies, and links to social profiles. It's also a fair place for secondary pages such as careers or a glossary. Don't turn it into a block of keyword links to every area and service combination; it helps neither visitors nor rankings.</p>
 
-<h2>Supporting SEO</h2>
+<h2>Breadcrumbs</h2>
+<p>On deeper pages, a breadcrumb trail such as <em>Home / Services / AC repair</em> shows where the visitor is and lets them move up a level in one tap. It also adds consistent internal links to your hub pages. <a href="/blog/breadcrumbs-explained/">Breadcrumbs explained</a> covers types, schema and setup in WordPress.</p>
+
+<h2>Mobile menus</h2>
 <ul>
-  <li>Link to key service pages from the main menu and homepage</li>
-  <li>Use breadcrumbs on deeper pages; see <a href="/blog/breadcrumbs-explained/">breadcrumbs explained</a></li>
-  <li>Add contextual internal links in content; see <a href="/blog/internal-linking-explained/">internal linking</a></li>
+  <li>Label the menu icon with the word "Menu"; not everyone recognises three lines.</li>
+  <li>Keep the call, WhatsApp or quote button outside the menu, visible without opening anything.</li>
+  <li>Open submenus with a tap, as an accordion, with tap targets large enough for a thumb.</li>
+  <li>Make it easy to close, and make sure the page behind doesn't scroll while it's open.</li>
+  <li>Test it on a real phone with the text size turned up.</li>
 </ul>
 
-<p>Pages that no menu or other page links to become orphans; see <a href="/blog/orphan-pages-fix/">how to find and fix orphan pages</a>.</p>
+<h2>URL structure</h2>
+<p>URLs should be short, readable and broadly follow your structure, such as /services/ac-repair/ or simply /ac-repair/. Both work; consistency matters more than depth. Use lowercase words with hyphens, avoid dates and IDs in page URLs, and never change URLs that already rank without a 301 redirect from the old address. <a href="/blog/seo-friendly-urls/">SEO-friendly URLs in WordPress</a> covers permalinks and changing them safely.</p>
 
-<h2>Test it</h2>
-<p>Ask someone unfamiliar with your business to find a specific service and your contact details. Watch where they hesitate, then simplify.</p>
+<h2>Internal linking beyond the menu</h2>
+<p>Menus carry visitors to your main sections, but contextual links, written into the text of your pages, carry them to the specific page they need next: a blog post linking to the service it discusses, a service page linking to a relevant case study. These links also help Google understand how pages relate and which are most important. Pages that no menu and no other page links to become orphans that visitors and Google rarely find. See <a href="/blog/internal-linking-explained/">internal linking explained</a> and <a href="/blog/orphan-pages-fix/">how to find and fix orphan pages</a>.</p>
+
+<h2>Setting up menus in WordPress</h2>
+<ul>
+  <li><strong>Classic themes:</strong> build menus under Appearance, then Menus, and assign them to the theme's locations, such as primary, mobile and footer. The navigation label can be shorter than the page title.</li>
+  <li><strong>Block themes:</strong> edit the Navigation block in the header template part through the Site Editor.</li>
+  <li><strong>Elementor:</strong> with Elementor Pro, the header is built in the Theme Builder with a menu widget that uses your WordPress menus.</li>
+  <li><strong>Mega menus:</strong> some themes include them; otherwise a mega menu plugin can add them. Check the result on mobile and with a keyboard.</li>
+  <li><strong>Keep one source of truth:</strong> update menus when pages are added, renamed or removed, so nothing points to a deleted page.</li>
+</ul>
+
+<h2>Test your navigation with real tasks</h2>
+<p>You know your site too well to judge its menu. Ask three or four people who don't, ideally customers, to find specific things on a phone without searching: "How much does an annual maintenance contract cost?", "Do they come to Wakad?", "Show me a project like mine". Watch where they tap first and where they hesitate. If two people look in the wrong place, the label or the grouping is wrong, not the people. After launch, your analytics show the same thing at scale: pages people reach by an unexpected route, and searches typed into your site search for pages that already exist but can't be found.</p>
+
+<h2>Common navigation mistakes</h2>
+<ul>
+  <li>Too many top-level items, or labels nobody searches for</li>
+  <li>Services hidden two levels deep under vague groups</li>
+  <li>Dropdown parents that aren't real pages</li>
+  <li>A mobile menu with no visible phone or WhatsApp option</li>
+  <li>Different menus on different pages, so visitors lose their bearings</li>
+  <li>Changing menu labels and URLs during a redesign without redirects</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>How many items should a website menu have?</h3>
+<p>Around five to seven top-level items suits most business websites. Fewer is fine for a small site; if you need more, group related pages under a clear heading rather than adding to the top level.</p>
+<h3>Does website navigation affect SEO?</h3>
+<p>Yes. Menus, breadcrumbs and internal links show Google which pages matter and how they relate, and pages close to the homepage tend to be crawled more often. Clear labels also help visitors stay and find what they need.</p>
+<h3>Should I use a mega menu?</h3>
+<p>Only if you have many pages in clear groups, such as a product catalogue. For a typical service business with a handful of services, a simple menu or dropdown is easier to use, especially on phones.</p>
+<h3>Should the menu labels match the page titles?</h3>
+<p>Not exactly. Menu labels should be short, such as "AC repair", while the page title can be fuller and more descriptive. The label and the page should clearly be about the same thing.</p>
+<h3>What's the difference between navigation and site structure?</h3>
+<p>Site structure is how your pages are organised and linked overall. Navigation is the set of menus, breadcrumbs and links visitors use to move through that structure. Plan the structure first, then design the navigation around it.</p>
+
+<p>If visitors can't find your services or Google seems to ignore key pages, a <a href="/website-redesign/">website redesign</a> can rebuild the structure and menus around how your customers choose, with every old URL redirected. For structure and internal linking on an existing site, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
