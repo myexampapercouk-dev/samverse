@@ -1332,80 +1332,113 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'b2b-manufacturer-website-guide',
-    seoTitle: "How Manufacturers Get More B2B Enquiries Online",
-    title: 'How Manufacturers Can Get More B2B and Export Enquiries From Their Website',
-    description: 'How Indian manufacturers and industrial suppliers get more B2B enquiries online: what buyers look for, how to structure catalogues and convert visitors.',
+    seoTitle: 'B2B Manufacturer Website Guide: Pages That Win Enquiries',
+    title: 'How Manufacturers Can Get More B2B and Export Enquiries From Their Website: A Complete Guide',
+    description: 'A B2B manufacturer website guide: pages for every buyer, applications pages, RFQs, technical downloads, dealers, export buyers and SEO for B2B searches.',
     date: '2026-09-27',
+    updated: '2026-10-21',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'website-redesign'],
     body: `
-<p>For many Indian manufacturers, the website is still a digital brochure that nobody updates. Meanwhile, procurement teams and importers research suppliers online before they ever send an RFQ. A well-built website can quietly bring in enquiries every week, from India and abroad.</p>
+<p>A manufacturer's website wins B2B enquiries when each person in the buying process can check what they need without phoning you. The engineer finds specifications and drawings, the purchase team finds a quick way to request a quote, the quality team finds certificates it can verify, and the person who approves a new supplier finds evidence that you can deliver. Add pages for the applications you serve, a downloads library, a route for dealers and export buyers, and product pages written in the terms buyers search, and the site starts bringing in RFQs instead of sitting behind your visiting card.</p>
+<p>That is what I build as part of <a href="/website-for-manufacturers/">websites for manufacturers</a>: a product catalogue with specifications, request-a-quote forms, brochure and datasheet downloads, certifications and client logos, industries served pages and SEO for product keywords. This guide is the overview. Where a topic has its own detailed article, I link to it rather than repeat it.</p>
 
-<p>If you want this built for you, I make <a href="/website-for-manufacturers/">websites for manufacturers and industrial companies</a>, with product catalogues, enquiry forms and SEO aimed at bulk and export buyers.</p>
+<h2>Who visits a manufacturer's website, and what each person checks</h2>
+<p>B2B purchases are rarely made by one person. The engineer who finds you on Google is often not the person who approves a new supplier, so the site has to work for several readers:</p>
+<table>
+  <thead><tr><th>Visitor</th><th>What they are checking</th><th>The page that should answer it</th></tr></thead>
+  <tbody>
+    <tr><td>Design or maintenance engineer</td><td>Does the product meet the specification? Dimensions, ratings, materials, tolerances</td><td>Product family pages with specification tables, drawings and datasheets</td></tr>
+    <tr><td>Purchase or procurement team</td><td>Can I get a price quickly? Minimum order, lead time, delivery</td><td>An RFQ form on every product page, plus phone, email and WhatsApp</td></tr>
+    <tr><td>Quality or vendor development team</td><td>Are the certifications real and current? What checks do they run?</td><td>A quality page with certificate numbers, scope, validity and copies</td></tr>
+    <tr><td>Owner or senior management</td><td>Is this company stable? Who runs it? Who else buys from them?</td><td>About, infrastructure, leadership and clients pages, and a company profile PDF</td></tr>
+    <tr><td>Importer or overseas buyer</td><td>Do they export? To which countries, on what terms?</td><td>An export page, international contact details and familiar units</td></tr>
+    <tr><td>Dealer or distributor</td><td>Is my territory open? What support do dealers get?</td><td>A dealer page with its own form, separate from the RFQ</td></tr>
+  </tbody>
+</table>
+<p>Many manufacturer websites serve only the first one or two rows, and then only partly. Planning a page for every row is often the biggest single improvement available.</p>
 
-<h2>What B2B buyers look for</h2>
-<p>A buyer comparing suppliers wants to answer a few questions quickly:</p>
-<ul>
-  <li><strong>Do they make exactly what I need?</strong> Clear product categories and specifications.</li>
-  <li><strong>Can they deliver at my scale?</strong> Capacity, infrastructure and machinery.</li>
-  <li><strong>Are they reliable?</strong> Certifications (ISO, CE, BIS), years in business, client logos.</li>
-  <li><strong>How do I get a quote?</strong> A simple, visible way to enquire.</li>
-</ul>
-<p>If your website answers these in minutes, you're ahead of most competitors.</p>
-
-<h2>Structure your product catalogue properly</h2>
+<h2>A site structure that works for most manufacturers</h2>
 <ol>
-  <li><strong>Organise by category</strong>, the way buyers search (for example "Control Panels", then "PLC Panels" and "MCC Panels").</li>
-  <li><strong>One page per product or product family</strong>, with photos, specifications, applications and available sizes.</li>
-  <li><strong>Downloadable datasheets and brochures</strong> in PDF.</li>
-  <li><strong>A "Request a Quote" button on every product page</strong>, pre-filled with the product name.</li>
+  <li><strong>Products:</strong> categories, then product family pages, using the names buyers search with. <a href="/blog/industrial-website-product-catalogue/">How to build a product catalogue website</a> covers family pages, specification tables and filters in detail.</li>
+  <li><strong>Applications or industries:</strong> one page for each use or sector you genuinely serve.</li>
+  <li><strong>Capabilities and infrastructure:</strong> named machinery, processes, capacity and in-house facilities.</li>
+  <li><strong>Quality and certifications:</strong> your quality process and only the certificates you currently hold.</li>
+  <li><strong>Downloads:</strong> datasheets, drawings, manuals, the company profile and catalogues in one library.</li>
+  <li><strong>Dealers or where to buy,</strong> if you sell through a network.</li>
+  <li><strong>About, leadership and clients.</strong></li>
+  <li><strong>Insights:</strong> articles that answer the questions buyers ask early in a search.</li>
+  <li><strong>Contact and RFQ,</strong> with routing by product line or region.</li>
 </ol>
-<p>Separate product pages also help you rank for specific searches like "stainless steel storage tank manufacturer in Gujarat".</p>
+<p><a href="/work/vansh-group/">Vansh Group</a>, an electronics OEM I built a site for, keeps all five of its services on the homepage as cards (PCB and circuit development, electrical appliance development, sheet metal, injection moulded parts, and tool and die development), so a procurement team sees the whole range on one screen before deciding which conversation to start.</p>
 
-<p>For a detailed walkthrough of product pages, filters and quote flows, see <a href="/blog/industrial-website-product-catalogue/">how to build a product catalogue website</a>.</p>
+<h2>Applications pages: the pages most manufacturers miss</h2>
+<p>Engineers often search by the job rather than the product: what to use for a particular process, plant or environment. An applications page meets that search. For each industry or use you genuinely serve, explain the conditions the product faces, which of your products fit and why, the specifications that matter for that use, photos of real installations (with the client's permission if they can be identified) and the standards relevant to that sector.</p>
+<p>Two rules keep these pages useful. Write one only where you have real experience and something specific to say, because ten pages with the industry name swapped are thin content that helps nobody. And link both ways: from each applications page to the product families, and from each product page back to the applications it suits.</p>
 
-<h2>Show your capability</h2>
+<h2>RFQs and enquiry routing</h2>
+<p>A request for quote should carry the product name from the page it was sent from, ask for quantity, delivery location and requirement details, accept drawings and reach the right person immediately. Keep dealer applications, job applications and supplier offers on separate forms or addresses, so RFQs are not buried among them. <a href="/blog/rfq-forms-b2b-websites/">Request-for-quote forms for B2B websites</a> covers what to ask, file uploads, routing and follow-up.</p>
+
+<h2>A technical downloads library</h2>
+<p>B2B buyers need documents to forward internally and keep on file. Put them in one downloads section, and link each file from its product page too:</p>
 <ul>
-  <li>Factory and machinery photos and videos</li>
-  <li>Production capacity and quality control process</li>
-  <li>Certifications and test reports</li>
-  <li>Industries served and notable clients (with permission)</li>
-  <li>Case studies of projects delivered</li>
+  <li><strong>Datasheets</strong> for each product family, with a revision number or date on the document and beside the download link</li>
+  <li><strong>Drawings and CAD files</strong> in the formats engineers use, if you are willing to share them</li>
+  <li><strong>Installation and operating manuals,</strong> which help after the sale and bring maintenance engineers back to your site</li>
+  <li><strong>Certificates</strong> with their validity dates</li>
+  <li><strong>The company profile and catalogues</strong> for the approver who will never read your product pages</li>
 </ul>
+<p>Vansh Group offers its company profile as a PDF, alongside two catalogues covering LED fixtures and the complete LED lights it makes as an OEM, because the person who finds a supplier's website is often not the person who signs off on it. Keep most files open so they can be found and shared, and replace old versions rather than piling up duplicates; <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs and brochures</a> explains file names, document titles and when gating makes sense.</p>
 
-<p>Run a fabrication shop that works to customers' drawings? See <a href="/blog/website-for-steel-fabrication-companies/">websites for steel and metal fabrication companies</a>.</p>
+<h2>Certifications: only what you hold</h2>
+<p>A certificate logo is a claim that a quality team will check. Show only certifications your company currently holds, with the certificate number, the certifying body, the scope (which site and which products it covers) and the validity date, and remove lapsed ones promptly. Don't let a product certification that covers some models appear to cover your whole range. Product-level approvals belong on the product pages they apply to.</p>
 
-<h2>Make enquiring effortless</h2>
+<h2>Dealers, distributors and export buyers</h2>
+<p>If you sell through a network, the website has two jobs. For customers, a "where to buy" page or dealer locator by state or city sends local buyers to the right dealer instead of your head office. For prospective dealers, a "become a dealer" page explains territories, support and what you expect, with its own form. Dealer price lists and order forms can sit behind a login once the network is large enough to justify it; <a href="/blog/website-for-wholesalers-distributors/">websites for wholesalers and distributors</a> covers dealer portals and bulk orders.</p>
+<p>Export buyers want the same proof as domestic buyers plus a few specifics: countries you already ship to, minimum order quantities, lead times, shipping terms such as FOB or CIF, and the units they use, all stated only where accurate. Showing your time zone and response hours beside the contact form helps. <a href="/blog/website-for-export-businesses/">Websites for export businesses</a> goes into language, localisation and speed for overseas visitors.</p>
+
+<h2>SEO for B2B search queries</h2>
+<p>B2B searches are lower in volume than consumer searches but far more specific, and a single enquiry can be valuable. Match each type of query with the right page:</p>
+<table>
+  <thead><tr><th>Type of search</th><th>Example</th><th>Page that should rank</th></tr></thead>
+  <tbody>
+    <tr><td>Product plus specification</td><td>"2 inch SS 316 flanged ball valve"</td><td>Product family page with a full specification table</td></tr>
+    <tr><td>Product plus supplier and place</td><td>"control panel manufacturer in Pune"</td><td>Category page, with your location in the title and on the contact page</td></tr>
+    <tr><td>Application</td><td>"pumps for effluent treatment plants"</td><td>Applications page</td></tr>
+    <tr><td>Selection or comparison</td><td>"PLC vs DCS for a chemical plant"</td><td>An insights article linking to the right products</td></tr>
+    <tr><td>Company or model name</td><td>Your brand or a model number</td><td>Homepage and product pages, consistent with your marketplace listings</td></tr>
+  </tbody>
+</table>
+<p>Articles work for manufacturers when they answer questions engineers and buyers actually ask. <a href="/work/india-automation-hub/">India Automation Hub</a>, a news and resource portal for the automation industry that I built, groups its archive into families such as control systems, robotics and industrial software, and publishes pieces like a comparison of DCS and PLC for refinery, pharma and chemical plants: the depth technical readers expect. Vansh Group's Insights articles take a buyer's angle instead, covering how companies are diversifying supply chains and what to check on a factory visit before signing with an OEM, and end by inviting readers to arrange a consultation and a facility tour.</p>
+<p>Trade publications are another route to buyers. India Automation Hub, for example, has a separate address for vendors' product releases, and coverage in publications your buyers read brings visitors who already trust the source.</p>
+
+<h2>Mistakes that cost manufacturers enquiries</h2>
 <ul>
-  <li>Quote forms that ask for product, quantity and delivery location</li>
-  <li>WhatsApp and email on every page, with a clearly visible phone number</li>
-  <li>Fast replies. Enquiries go cold quickly, so make sure form emails reach the right person.</li>
-</ul>
-
-<p>Selling through dealers? See <a href="/blog/website-for-wholesalers-distributors/">websites for wholesalers and distributors</a>.</p>
-
-<h2>Get found by international buyers</h2>
-<ul>
-  <li>Write content in clear English with correct technical terms.</li>
-  <li>Mention export experience, countries served and shipping terms (FOB, CIF).</li>
-  <li>Consider additional languages for key markets.</li>
-  <li>Make sure the site loads fast internationally with good hosting or a CDN.</li>
+  <li>One "Products" page of photos with no specifications</li>
+  <li>Specifications only inside images or PDFs, which buyers can't copy and Google reads poorly</li>
+  <li>Certification logos that have lapsed, or client logos used without permission</li>
+  <li>A contact form with no product, quantity or location fields, sent to an inbox nobody checks daily</li>
+  <li>Stock photos of factories instead of your own shop floor</li>
+  <li>Catalogue PDFs several versions old, still linked from product pages</li>
 </ul>
 
 <p>Selling to buyers in other countries? See <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</p>
 
-<h2>SEO basics for manufacturers</h2>
-<ul>
-  <li>Target specific product and "manufacturer/supplier in {location}" keywords.</li>
-  <li>Use descriptive page titles and meta descriptions for every product page.</li>
-  <li>Add product and organization schema markup.</li>
-  <li>Keep a consistent presence on IndiaMART, TradeIndia and your Google Business Profile, all linking to your website.</li>
-</ul>
+<p>Run a fabrication shop that works to customers' drawings? See <a href="/blog/website-for-steel-fabrication-companies/">websites for steel and metal fabrication companies</a>.</p>
 
-<p>Exporting? Read <a href="/blog/website-for-export-businesses/">websites for export businesses</a> for what international buyers look for.</p>
+<h2>FAQs</h2>
+<h3>What pages should a manufacturing company website have?</h3>
+<p>Product categories and family pages, applications or industries served, capabilities and infrastructure, quality and certifications, a downloads library, about and leadership, insights articles, and a contact page with an RFQ form. Add dealer pages if you sell through a network.</p>
+<h3>Should a manufacturer show prices on its website?</h3>
+<p>Usually not for made-to-order or volume-priced products, where a catalogue with quote requests suits better. Standard items and spares with fixed prices can be sold online alongside the catalogue.</p>
+<h3>Is a marketplace listing enough, or do we need our own website?</h3>
+<p>Marketplaces such as IndiaMART bring enquiries, but your listing sits beside competitors and you control little of the presentation. Your own website is where buyers who search your name, or check you after finding you elsewhere, see the full picture. Many manufacturers use both and keep them consistent.</p>
+<h3>Do manufacturers need a blog?</h3>
+<p>Not a blog for its own sake. A few well-researched articles that answer the selection, comparison and application questions your sales team hears can bring the right engineers to your product pages.</p>
+<h3>Which certifications should we show?</h3>
+<p>Only the ones you currently hold, with the number, certifying body, scope and validity date, and a copy buyers can check. Product certifications belong on the products they cover.</p>
 
-<h2>The bottom line</h2>
-<p>You don't need a flashy website. You need a clear, fast, well-organised one that proves you can deliver and makes it easy to ask for a quote. For most manufacturers, that single change turns the website from a cost into a steady source of enquiries.</p>
+<p>If your website is still a brochure that nobody updates, I can rebuild it around the people who actually buy from you. See <a href="/website-for-manufacturers/">websites for manufacturers</a>, and share your product spreadsheet or catalogue for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -3235,184 +3268,330 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'hotel-website-direct-bookings',
-    seoTitle: 'Hotel & Homestay Websites: How to Get Direct Bookings',
-    title: 'Hotel and Homestay Websites: How to Get More Direct Bookings',
-    description: 'How hotels, resorts and homestays win more direct bookings from their own website: photos, room pages, booking engines, WhatsApp, reviews and local SEO.',
+    seoTitle: 'Hotel Website Direct Bookings: How to Rely Less on OTAs',
+    title: 'Hotel and Homestay Websites: How to Get More Direct Bookings and Rely Less on OTAs',
+    description: 'How hotels and homestays win direct bookings from OTAs: booking engine choices, rate parity, direct perks, room pages, Google listings, WhatsApp and speed.',
     date: '2026-09-27',
+    updated: '2026-10-21',
     category: 'Industries',
     related: ['hotel-website-design', 'wordpress-seo-services', 'website-redesign'],
     body: `
-<p>Online travel agencies bring bookings, but they also take a commission on every one. A strong website of your own lets guests book directly, so you keep more of each booking and build a relationship with them. Here's what makes a hotel or homestay website win direct bookings.</p>
+<p>Direct bookings come from guests who already like your property and are deciding where to pay. Many of them found you on an OTA or Google Maps, then searched your name to check you out, so your website has to beat the OTA listing on the things that matter at that moment: real photos, clear room details, trustworthy policies, a quick way to check availability and a reason to book with you. The aim is not to leave the OTAs, which still bring guests who have never heard of you, but to win more of the guests who are already looking for you.</p>
+<p>That is the job of a <a href="/hotel-website-design/">hotel website</a>: room pages, a booking enquiry form, WhatsApp booking or a booking engine, galleries, policies, a nearby attractions guide, guest reviews and travel SEO. This guide covers the direct booking side: where guests drift back to the OTA, and what to change so they don't.</p>
 
-<h2>Why guests book on OTAs instead of your website</h2>
+<h2>Why guests go back to the OTA, and what to fix</h2>
+<p>When a guest leaves your website and books the same room on an OTA, there is usually a specific reason. Most of them can be fixed:</p>
+<table>
+  <thead><tr><th>Why the guest goes back to the OTA</th><th>What to fix on your website</th></tr></thead>
+  <tbody>
+    <tr><td>They couldn't see availability without sending a message</td><td>A booking engine, or a quick availability form that replies fast on WhatsApp</td></tr>
+    <tr><td>The OTA had better photos and more room detail</td><td>A page per room type with real photos, bed type, occupancy and inclusions</td></tr>
+    <tr><td>Your rate looked higher, or taxes appeared late</td><td>Rates shown with taxes stated, and perks that make the direct option better value</td></tr>
+    <tr><td>Paying a property directly felt riskier</td><td>A recognised payment gateway, written cancellation terms, reviews and a real address</td></tr>
+    <tr><td>The OTA offered loyalty points or cashback</td><td>A direct perk the guest can use during the stay</td></tr>
+    <tr><td>Your site was slow or awkward on a phone</td><td>Compressed photos, a light booking widget and buttons that are easy to tap</td></tr>
+    <tr><td>Searching your name showed OTA pages first</td><td>A website that ranks for your name, linked from your Google Business Profile</td></tr>
+  </tbody>
+</table>
+
+<h2>Work out what a direct booking is worth to you</h2>
+<p>Before spending on any of this, do the sums for your own property. Direct bookings are not free; they swap OTA commission for other costs:</p>
+<ol>
+  <li>Note the commission rate in each of your OTA agreements, and how many room nights each OTA brings in a typical month.</li>
+  <li>List what direct bookings cost you: booking engine or channel manager fees, payment gateway charges, website hosting and upkeep, and any perks you give away.</li>
+  <li>Compare the cost per booking for each channel, using your own figures.</li>
+  <li>Decide how many extra direct bookings a month would justify the work, and track whether you reach it.</li>
+</ol>
+<p>This keeps the decision grounded. A homestay with a few rooms may find WhatsApp plus payment links does the job, while a hotel selling on several OTAs can justify a proper booking engine.</p>
+
+<h2>Choosing how guests book</h2>
+<p>There are four common set-ups: an enquiry form with WhatsApp and payment links, a booking plugin on the website, a standalone booking engine, or the booking engine that comes with your channel manager. <a href="/blog/hotel-booking-engine-channel-manager/">Booking engines and channel managers explained</a> follows a booking through each system and covers the right mix of direct and OTA bookings. Whichever you consider, ask the provider these questions:</p>
 <ul>
-  <li>Your website doesn't show up when they search your property's name, or it looks less trustworthy than the OTA listing</li>
-  <li>There's no clear way to check availability or book</li>
-  <li>Photos and room information are better on the OTA</li>
-  <li>The site is slow or awkward on mobile</li>
+  <li>Does the booking page sit on your own domain or a subdomain, with your branding?</li>
+  <li>How many steps does a guest take on a phone, from choosing dates to paying?</li>
+  <li>Which payment methods does it support, including UPI, and can guests pay an advance rather than the full amount?</li>
+  <li>Does it connect to your channel manager or PMS, so a direct booking reduces availability everywhere?</li>
+  <li>Can it connect to Google's hotel listings through a partner?</li>
+  <li>How is it priced: subscription, per booking or both?</li>
+  <li>Can you export your guest data if you switch providers later?</li>
 </ul>
-<p>Fix these, and many guests who find you on an OTA will happily book directly.</p>
 
-<h2>What your hotel website needs</h2>
-<h3>1. Stunning, fast-loading photos</h3>
-<p>Photos sell rooms. Use large, professional images of rooms, bathrooms, views, dining and common areas, compressed properly so pages still load fast on mobile.</p>
-<h3>2. A page for each room type</h3>
-<p>Include photos, bed type, occupancy, size, amenities, view and policies. Guests should never have to message you just to find basic information.</p>
-<h3>3. An easy way to book</h3>
+<h2>Rate parity: check your agreements first</h2>
+<p>Many OTA contracts have included rate parity clauses, which limit how far you can publicly undercut the rate you give the OTA. Competition authorities in several countries, including India, have examined these clauses, and the terms in force differ between OTAs and change over time. At the time of writing, the safe approach is to read your current agreements, or ask your OTA account manager, before you advertise a lower price on your website. If you are unsure, compete on value rather than on the headline rate.</p>
+
+<h2>Direct-booking perks that persuade</h2>
+<p>A specific perk shown beside the booking button persuades more than a vague "best rate" banner. Options that cost little and are easy to deliver:</p>
 <ul>
-  <li><strong>Booking engine:</strong> real-time availability and online payment, ideally connected to your channel manager to avoid double bookings.</li>
-  <li><strong>Enquiry form:</strong> a simpler option for small properties.</li>
-  <li><strong>WhatsApp booking:</strong> many Indian travellers prefer to confirm details over WhatsApp.</li>
+  <li>Breakfast included, or a welcome meal on arrival</li>
+  <li>Early check-in or late check-out when available</li>
+  <li>An airport, station or bus stand pickup</li>
+  <li>A free room upgrade on arrival, subject to availability</li>
+  <li>Flexible cancellation terms for direct bookings</li>
+  <li>A returning-guest offer sent to past guests who agreed to hear from you</li>
 </ul>
-<h3>4. A reason to book direct</h3>
-<p>Offer something OTAs don't: a small discount, free breakfast, early check-in or a welcome drink for direct bookings. Say it clearly near the booking button.</p>
-<h3>5. Trust signals</h3>
-<p>Guest reviews, ratings, awards and clear cancellation and payment policies reassure guests that booking direct is safe.</p>
-<h3>6. Local information</h3>
-<p>Directions, distance from the airport or station, and a guide to nearby attractions help guests plan, and help you rank for searches about your area.</p>
+<p>Show the perk on the room page, in the booking widget and in the confirmation, and honour it every time. A perk staff forget at check-in does more harm than no perk.</p>
 
-<p>Long-stay accommodation is different; see <a href="/blog/website-for-hostels-pg-accommodation/">websites for hostels and PGs</a>.</p>
+<h2>Room pages that match or beat the OTA listing</h2>
+<p>Open your OTA listing next to your own room page. Your website should show at least as much: every photo of that room, including the bathroom and view, how many guests it sleeps and in what beds, your rules on extra beds and children, inclusions such as breakfast, and the rate with taxes stated. Write the cancellation and payment terms in plain words beside the booking button, because guests compare those as closely as the price. Small properties have a few extras to consider, such as the hosts' story and house rules; <a href="/blog/website-for-homestays-bnbs/">websites for homestays and B&amp;Bs</a> covers them.</p>
 
-<p>More detail: <a href="/blog/hotel-booking-engine-channel-manager/">booking engines and channel managers explained</a> and <a href="/blog/website-for-homestays-bnbs/">websites for homestays</a>.</p>
-
-<h2>SEO for hotels and homestays</h2>
+<h2>Google: your name, your listing and reviews</h2>
 <ul>
-  <li>Make sure your website ranks first for your property's name</li>
-  <li>Target searches like "homestay in {place}" and "resort near {attraction}" in titles and content</li>
-  <li>Add hotel schema markup so Google understands your property</li>
-  <li>Keep your Google Business Profile complete with photos and reviews, and link it to your website. See the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</li>
+  <li><strong>Your name:</strong> search your property's name on a phone. If OTA pages appear above your website, check that the site's title, Business Profile link and contact details all use the same name.</li>
+  <li><strong>Google's hotel listings:</strong> at the time of writing, Google can show free booking links next to OTA prices on a hotel's listing when the property's booking engine or channel manager connects to Google as a partner. Ask your provider whether they do; the website alone can't add these links.</li>
+  <li><strong>Your Business Profile:</strong> the right category, real photos, check-in times and a link to your booking page; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</li>
+  <li><strong>Reviews:</strong> ask every guest after checkout, reply to every review, and show genuine reviews near the booking button.</li>
 </ul>
 
-<h2>Common mistakes</h2>
+<h2>WhatsApp: the direct channel many guests prefer</h2>
+<p>Many Indian travellers would rather message than use a booking widget. Make that route as quick as the OTA:</p>
 <ul>
-  <li>Sending website visitors to an OTA to book</li>
-  <li>Outdated rates, photos or policies</li>
-  <li>Heavy sliders and videos that make the site slow on mobile</li>
-  <li>No phone or WhatsApp visible on mobile</li>
+  <li>A WhatsApp button on every room page that opens a message with the room name and a space for dates</li>
+  <li>Saved replies for availability, rates and directions, so answers go out in minutes</li>
+  <li>A payment link for the advance through your gateway, then a written confirmation with dates, room, amount paid, balance and cancellation terms</li>
+  <li>Every WhatsApp booking entered in your channel manager or calendar straight away, because unrecorded phone and chat bookings are a common cause of overbooking</li>
 </ul>
+<p><a href="/blog/whatsapp-on-business-website/">Adding WhatsApp to your website</a> covers click-to-chat links and how to track them.</p>
+
+<h2>Speed on mobile data</h2>
+<p>Guests often browse while travelling, on patchy 4G. Large gallery images, autoplay videos and heavy booking widgets can make the website slower than the OTA app, which is reason enough to go back to it. Compress every photo, load galleries and videos only when needed, and test the whole booking path on a mid-range phone; <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> explains how.</p>
+
+<h2>Turning OTA guests into direct repeat guests</h2>
+<p>A guest who booked through an OTA and enjoyed the stay is your best prospect for a direct booking next time. A card in the room or at the desk with your website, WhatsApp number and returning-guest perk, or a <a href="/blog/qr-codes-for-business-website/">QR code</a> that opens your booking page, puts the direct route in front of them. Ask for consent before adding anyone to a mailing list, and check what your OTA agreements say about contacting guests whose details came through the OTA.</p>
+<p>Finally, measure it. Track bookings, WhatsApp clicks and calls from the website, and note each month how many room nights came direct and how many through each OTA. That share, not website visits, tells you whether the work is paying off.</p>
 
 <p>Tour operators and travel agencies can use many of the same ideas; see <a href="/blog/website-for-travel-agencies/">websites for travel agencies</a>.</p>
 
-<h2>Getting started</h2>
-<p>Even a small homestay benefits from a simple, beautiful website with good photos, room details and WhatsApp booking. Larger properties should add a booking engine connected to their channel manager. See what's included in a <a href="/hotel-website-design/">hotel website</a>.</p>
+<p>Long-stay accommodation is different; see <a href="/blog/website-for-hostels-pg-accommodation/">websites for hostels and PGs</a>.</p>
+
+<h2>FAQs</h2>
+<h3>How can a hotel get more direct bookings instead of OTA bookings?</h3>
+<p>Make sure your website ranks for your name, matches or beats your OTA listing on photos and room detail, shows availability or replies quickly on WhatsApp, takes payment securely, and offers a direct perk that fits your OTA agreements.</p>
+<h3>Can I offer a lower rate on my website than on OTAs?</h3>
+<p>It depends on your OTA agreements, which may contain rate parity terms, and those terms change. Read your current contracts before advertising a lower rate; perks and packages are a safer way to add value.</p>
+<h3>Do I need a booking engine to get direct bookings?</h3>
+<p>Not always. Small homestays often do well with an enquiry form, WhatsApp and payment links. Once you sell the same rooms on several OTAs, a booking engine connected to a channel manager reduces the risk of double bookings.</p>
+<h3>How do I appear with a booking link on Google's hotel results?</h3>
+<p>At the time of writing, free booking links depend on your booking engine or channel manager being connected to Google as a partner. Ask your provider whether they connect to Google and what it involves.</p>
+<h3>Should I stop listing on OTAs once my website is live?</h3>
+<p>Usually not. OTAs bring guests who would never have found you otherwise. The website's job is to win the guests who search for you and the ones who return.</p>
+
+<p>If your website sends guests back to the OTA, I can rebuild it around the direct booking: room pages, the right booking set-up, WhatsApp and a Google listing that points to it. See <a href="/hotel-website-design/">hotel website design</a> and share your current site or OTA listing for a free review and a fixed quote.</p>
 `,
   },
   {
     slug: 'website-for-lawyers-and-chartered-accountants',
-    seoTitle: 'Websites for Lawyers & CAs: What Clients Look For',
-    title: 'Websites for Lawyers, CAs and Consultants: What Clients Look For',
-    description: 'Websites for lawyers, CAs and consultants: how profiles, practice areas, articles, consultation booking and local SEO build credibility and win you clients.',
+    seoTitle: 'Websites for Lawyers and CAs: What Clients Look For',
+    title: 'Websites for Lawyers, CAs and Consultants: What Clients Look For, What the Rules Allow and How to Handle Enquiries Confidentially',
+    description: 'Websites for law firms and CA practices: practice area pages, verifiable credentials, Bar Council and ICAI limits, confidential enquiries and DPDP basics.',
     date: '2026-09-27',
+    updated: '2026-10-21',
     category: 'Industries',
     related: ['website-for-lawyers-and-consultants', 'wordpress-seo-services', 'wordpress-website-development'],
     body: `
-<p>People looking for a lawyer, chartered accountant or consultant are usually worried about a problem such as a dispute, a tax notice or a business decision. They want someone credible, experienced and easy to talk to. Your website is often where they decide whether that's you.</p>
+<p>People who visit a lawyer's or chartered accountant's website are usually worried about something specific: a tax notice, a property dispute, a family matter, a company to set up or an audit deadline. They want to know within a minute whether you handle their kind of problem, whether you are properly qualified, how a first consultation works and whether it is safe to describe their situation to you. A website that answers those questions factually, within your professional rules, wins the consultation request.</p>
+<p>I build <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a> with profile and qualification pages, practice area or service pages, a consultation request form, team profiles, an articles section, office location and local SEO. Here I look at it from the client's side, and at how professional rules and confidentiality shape what it can say.</p>
 
-<h2>What potential clients look for</h2>
+<h2>Start from the client's situation</h2>
+<p>Clients rarely search for "legal services" or "CA firm". They search for their situation, and the site should be organised the same way:</p>
+<table>
+  <thead><tr><th>Client's situation</th><th>What they need to find quickly</th><th>Page that answers it</th></tr></thead>
+  <tbody>
+    <tr><td>Received a GST or income tax notice</td><td>Whether you handle notices and appeals, and what to bring</td><td>A notices and assessments service page</td></tr>
+    <tr><td>Property dispute or title check</td><td>Whether you handle property matters, and in which courts</td><td>A property law practice area page</td></tr>
+    <tr><td>Starting a company or LLP</td><td>The process, documents and what happens after registration</td><td>An incorporation and compliance page</td></tr>
+    <tr><td>Divorce, custody or a family matter</td><td>Discretion, how a first meeting works</td><td>A family law page written with care</td></tr>
+    <tr><td>Living abroad with property or income in India</td><td>Whether you advise NRIs, and how remote meetings work</td><td>An NRI services page</td></tr>
+    <tr><td>A business needing ongoing accounts and audit</td><td>Scope of services and who will handle the work</td><td>Accounting, audit and retainer services pages</td></tr>
+  </tbody>
+</table>
+<p>The homepage then becomes a set of clear routes into those pages, rather than a paragraph about the firm's philosophy.</p>
+
+<h2>What the rules allow you to say</h2>
+<p>What you may say is governed by your professional body far more than by design choices. For advocates, the Bar Council of India's rules prohibit soliciting work and advertising, but factual details on a website, such as who you are, how to reach you, your enrolment, your qualifications and the areas you practise in, are permitted; <a href="/blog/website-for-advocates-bar-council-rules/">what the Bar Council rules allow</a> covers this in detail. Chartered accountants follow the ICAI Code of Ethics, along with the institute's guidelines on what members' and firms' websites may carry, which also limit promotional content. Read the latest version before you go live, as these rules are revised from time to time. In practice, that usually means:</p>
 <ul>
-  <li><strong>Expertise in their specific problem.</strong> Not just "legal services", but "property disputes" or "GST registration and returns".</li>
-  <li><strong>Credibility:</strong> qualifications, experience, memberships and the team behind the firm.</li>
-  <li><strong>Clarity:</strong> how the process works and what to expect.</li>
-  <li><strong>Easy contact:</strong> a simple way to request a consultation.</li>
+  <li>No "best", "top", "leading" or "expert" used to promote yourself</li>
+  <li>No success rates, case wins or promised outcomes</li>
+  <li>For advocates, no client testimonials or review widgets; for CAs, check current ICAI guidance before adding any</li>
+  <li>No discounts, offers or comparisons with other professionals</li>
+  <li>A disclaimer on law firm sites, often shown before visitors enter, and an "information only, not advice" note on articles</li>
+</ul>
+<p>Independent consultants who don't belong to a regulated profession have more freedom, but claims must still be genuine and verifiable.</p>
+
+<h2>Practice area pages that clients actually read</h2>
+<p>Each practice area or service page should help a client recognise their situation and understand what happens next. A structure that works for both advocates and CAs:</p>
+<ol>
+  <li><strong>Who this is for,</strong> in the client's words: "You have received a notice under GST" rather than "Indirect tax litigation".</li>
+  <li><strong>Common situations you handle,</strong> described generally, never as client stories without consent.</li>
+  <li><strong>Your scope:</strong> the courts, tribunals or authorities you appear before, the taxes or filings you cover, and what you don't take on.</li>
+  <li><strong>How the process usually runs,</strong> step by step, without promising timelines or outcomes.</li>
+  <li><strong>Documents to keep ready</strong> for a first consultation.</li>
+  <li><strong>Related articles,</strong> and the consultation request button.</li>
+</ol>
+<p>Being clear about scope saves everyone time. A client with a criminal matter who lands on a civil litigation practice's site should be able to tell within seconds that they need someone else.</p>
+
+<h2>Credentials clients can verify</h2>
+<p>Clients and their families often check before they call. Make that easy:</p>
+<ul>
+  <li><strong>Advocates:</strong> the State Bar Council you are enrolled with, your enrolment number and year, the courts you regularly appear in, qualifications and the chambers or firm you practise from.</li>
+  <li><strong>Chartered accountants:</strong> each partner's membership number, the firm registration number and qualifications such as CA, CS or CMA, plus any certification you genuinely hold, such as an ICAI peer review certificate.</li>
+  <li><strong>Everyone:</strong> real photos, the team behind the work, languages spoken, publications or talks stated factually, and years of practice only as they really are.</li>
+</ul>
+<p>Specific, checkable details build more confidence than adjectives, and they help search engines understand who is behind the advice; <a href="/blog/eeat-explained-small-business/">E-E-A-T explained</a> covers why that matters.</p>
+
+<h2>Consultation requests that respect confidentiality</h2>
+<p>An enquiry form for a legal or tax matter is different from a sales form, because the visitor may be about to share something sensitive. Design it to protect both sides:</p>
+<ul>
+  <li><strong>Ask for an outline only:</strong> name, phone, city, the type of matter and two or three lines on what it concerns, plus a line asking them to hold back confidential details and documents for now.</li>
+  <li><strong>Mention conflict checks.</strong> Law firms check whether they already act for the other side before discussing details, so say that you will confirm you can help before asking for more.</li>
+  <li><strong>No file uploads</strong> on public forms. Documents come later, through a channel your office controls.</li>
+  <li><strong>Clarity on the first consultation:</strong> whether it is in person, by phone or by video, how long it usually lasts, and whether it is charged, stated factually if your rules permit.</li>
+  <li><strong>Booking tools</strong> for consultations, if you use one, embedded with slots that match your real availability; <a href="/blog/online-appointment-booking-website/">online appointment booking</a> compares the options.</li>
 </ul>
 
-<h2>Essential pages</h2>
-<h3>Profile / About</h3>
-<p>Your qualifications, enrolment or membership details, years of practice, areas of focus and a professional photo. For firms, add team profiles.</p>
-<h3>Practice area or service pages</h3>
-<p>One page per area (for example company incorporation, income tax, GST, audit, trademark registration, family law). Explain who it's for, common situations you handle, the process, and documents clients typically need. These pages are also how you get found on Google.</p>
-<h3>Articles and insights</h3>
-<p>Short, practical articles on common questions (like "What to do after receiving a GST notice") demonstrate expertise, build trust and bring in search traffic over time.</p>
-<h3>Consultation page</h3>
-<p>A clear consultation request form, phone and WhatsApp, office address with a map, and working hours.</p>
+<h2>Client data and the DPDP Act</h2>
+<p>India's Digital Personal Data Protection Act sets out duties for anyone collecting personal data, and its rules are being phased in, so check the current position with your adviser. For a professional practice's website, the sensible basics are:</p>
+<ul>
+  <li>Collect only what you need to respond, and add a consent line plus a privacy notice explaining what you collect and why; see <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a>.</li>
+  <li>Send form enquiries to an inbox only the right people can read, not a shared address half the office uses.</li>
+  <li>Keep analytics, chat widgets and session recording tools away from form fields, and choose tools that don't store enquiry text with third parties you haven't vetted.</li>
+  <li>Use HTTPS throughout, keep the site updated, and delete enquiry data you no longer need.</li>
+  <li>Use the practice's WhatsApp Business number for client chats, not a partner's personal number.</li>
+</ul>
 
-<h2>Professional guidelines and tone</h2>
-<p>Professions such as law and chartered accountancy have their own rules on how services may be publicised. Keep your website factual and informative: describe your areas of practice and qualifications, avoid exaggerated claims or guarantees of outcomes, and review content against your professional body's current guidelines before publishing.</p>
+<h2>Knowledge articles that build trust</h2>
+<p>Articles are one of the few ways professionals can show their knowledge within the rules, as long as they stay educational. Useful formats include process explainers ("what happens after a GST show cause notice"), annual deadline guides, "what to do if" articles and short notes on changes in the law. Each one should carry a date, the author's name and an "information only" line.</p>
+<p>Articles age quickly in law and tax. When the Income-tax Act, 2025 replaced the 1961 Act from April 2026, for example, articles citing the old section numbers needed reviewing, and due dates and rates change every year. Set a reminder to review your most-read articles annually; <a href="/blog/update-old-blog-posts/">updating old blog posts</a> explains how to refresh them without losing traffic.</p>
+
+<h2>Getting found by the right clients</h2>
+<p>Searches usually combine the problem with a place, such as "lawyer for cheque bounce case in Pune" or "CA for ITR filing near me", so practice area pages should use those words naturally in titles and headings. Keep your Google Business Profile consistent with the site, give each office its own page, and remember that for advocates, actively soliciting reviews may conflict with the rules. Professionals who want a site built around their own name rather than a firm should read <a href="/blog/personal-brand-website-professionals/">personal brand websites for professionals</a>.</p>
 
 <p>Insurance and financial advisors face similar rules; see <a href="/blog/website-for-insurance-financial-advisors/">websites for insurance agents and financial advisors</a>.</p>
 
-<p>Advocates: see <a href="/blog/website-for-advocates-bar-council-rules/">what the Bar Council rules allow</a>.</p>
-
-<h2>Local SEO for professionals</h2>
-<ul>
-  <li>Mention your city and the areas you serve naturally in titles and content</li>
-  <li>Complete your Google Business Profile and encourage genuine client reviews where appropriate</li>
-  <li>Keep your name, address and phone consistent across directories</li>
-  <li>Answer common local questions in articles</li>
-</ul>
-
 <p>Coaches and independent consultants: see <a href="/blog/website-for-coaches-consultants/">websites for coaches</a>.</p>
 
-<h2>Design tips</h2>
-<ul>
-  <li>Clean, calm design with plenty of white space, conveying professionalism, not flashiness</li>
-  <li>Readable typography and a clear menu</li>
-  <li>Fast and mobile-friendly, since many clients search on their phones</li>
-  <li>A privacy policy, and forms that don't ask for sensitive details upfront</li>
-</ul>
+<h2>FAQs</h2>
+<h3>What should a lawyer's or CA's website include?</h3>
+<p>Profiles with verifiable credentials, a page for each practice area or service, a consultation request form that asks only for an outline, office details with a map, articles, a privacy notice and, for law firms, a disclaimer.</p>
+<h3>Can a CA firm show client testimonials on its website?</h3>
+<p>Check the current ICAI guidance first, because it limits promotional content on members' websites. Advocates should leave testimonials out under the Bar Council rules.</p>
+<h3>How should we handle an enquiry from someone on the other side of a matter?</h3>
+<p>Keep the form to a brief outline, run your conflict check before discussing details, and say on the form that you will confirm you can act before asking for more information.</p>
+<h3>Should the website say whether the first consultation is charged?</h3>
+<p>Clarity helps clients, so state how the first consultation works and whether it is charged, in factual terms, if your professional rules permit it.</p>
+<h3>How often should we update our articles?</h3>
+<p>Review the most-read articles at least once a year and whenever the law, rates or deadlines they mention change, and show the date each was last reviewed.</p>
 
-<h2>Next step</h2>
-<p>A focused, professional website with clear practice area pages is one of the most effective ways for lawyers, CAs and consultants to win new clients consistently. See what's included in a <a href="/website-for-lawyers-and-consultants/">website for lawyers and consultants</a>.</p>
+<p>If your practice is only on directories, or your website hasn't changed in years, I can build one that explains your practice areas clearly and handles enquiries carefully. See <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a> and share your current site or directory profile and I will review it free and send a fixed quote.</p>
 `,
   },
   {
     slug: 'solar-company-website-guide',
-    seoTitle: 'Solar Company Website: Turn Visitors Into Quote Requests',
-    title: 'Solar Company Website Guide: Turning Visitors Into Quote Requests',
-    description: 'Solar company website guide: turn visitors into quote requests with savings information, subsidy pages, project galleries, quote forms and local SEO.',
+    seoTitle: 'Solar Company Website Guide: Pages That Win Quote Requests',
+    title: 'Solar Company Website Guide: The Pages, Subsidy Information, Proof and Survey Booking That Turn Visitors Into Quote Requests',
+    description: 'Solar company website guide: separate home and business pages, accurate subsidy pages, honest savings calculators, project galleries and survey booking.',
     date: '2026-09-27',
+    updated: '2026-10-21',
     category: 'Industries',
     related: ['website-for-solar-and-power-companies', 'landing-page-design', 'wordpress-seo-services'],
     body: `
-<p>Homeowners and businesses considering solar do a lot of research before contacting an installer. They want to understand savings, subsidies, costs and whether they can trust you. A website that answers these questions clearly turns that research into quote requests.</p>
+<p>A solar company's website has to do what your best salesperson does in a first meeting: show whether solar suits this property, explain the subsidy and net metering process, give an honest idea of system size and savings, and prove that you are the installer to trust with a system that will sit on the roof for many years. When it does that, the natural next step for the visitor is to book a site survey or ask for a quote.</p>
+<p>I build <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> with solutions pages, quote request forms, savings and subsidy information, a completed projects gallery, certifications and partners, service area pages, WhatsApp and local SEO. This guide covers what each part of the site should contain. For bringing in traffic and following up enquiries, see <a href="/blog/solar-company-lead-generation/">solar lead generation</a>.</p>
 
-<h2>What solar buyers want to know</h2>
+<h2>The pages a solar website needs</h2>
+<table>
+  <thead><tr><th>Page</th><th>Main reader</th><th>What it must answer</th></tr></thead>
+  <tbody>
+    <tr><td>Home</td><td>Everyone</td><td>What you install, where, proof of work and a survey button</td></tr>
+    <tr><td>Rooftop solar for homes</td><td>Homeowners</td><td>Suitability, roof space, subsidy, net metering, the process and after-sales care</td></tr>
+    <tr><td>Housing societies</td><td>Secretaries and committees</td><td>Common-area loads, committee approval and how the project runs</td></tr>
+    <tr><td>Commercial and industrial</td><td>Owners, finance and facility heads</td><td>Capacity, payback assumptions, monitoring, AMC and installation downtime</td></tr>
+    <tr><td>Subsidy and net metering</td><td>Homeowners</td><td>The process as you handle it, with links to official sources</td></tr>
+    <tr><td>Projects</td><td>Everyone</td><td>Capacity, property type, area and photos of real installations</td></tr>
+    <tr><td>Book a site survey</td><td>Ready buyers</td><td>A short form, what the survey involves and whether it is charged</td></tr>
+    <tr><td>Service and AMC</td><td>Existing customers</td><td>Service requests, cleaning, monitoring help and AMC renewal</td></tr>
+    <tr><td>About and FAQ</td><td>Everyone</td><td>Who you are, credentials you hold and plain answers to common questions</td></tr>
+  </tbody>
+</table>
+<p>If you also sell inverters and batteries for backup, give them their own section organised by backup need; <a href="/blog/website-for-inverter-battery-dealers/">websites for inverter, UPS and battery dealers</a> explains how.</p>
+
+<h2>Homes and businesses need different pages</h2>
+<p>One "Solar Solutions" page written for everybody ends up speaking to nobody. The questions, the people involved and the proof they want are different:</p>
 <ul>
-  <li>How much will I save on my electricity bill?</li>
-  <li>What does it cost, and are there subsidies?</li>
-  <li>What system size do I need?</li>
-  <li>How long does installation take, and what about maintenance?</li>
-  <li>Is this company experienced and reliable?</li>
+  <li><strong>Homeowners</strong> want lower bills and a clear process. They ask about the subsidy, whether the roof is big enough, what happens in the monsoon and who to call if something stops working. The decision is usually made by the family, often after seeing an installation at a neighbour's or relative's house, so photos of similar homes nearby help.</li>
+  <li><strong>Housing societies</strong> need material a committee can discuss: which common loads solar can cover, such as lifts, pumps and lighting, how approval and payment work, and how disruption to residents is kept down.</li>
+  <li><strong>Businesses</strong> look at operating costs and, often, sustainability reporting. Several people sign off, from the owner to finance and the facility team, so the page should cover capacity, the assumptions behind any payback estimate, monitoring, AMC terms and how installation fits around production. If you offer capex and opex (RESCO) models, explain each plainly.</li>
+</ul>
+<p>Each page should end with the next step that suits that reader: a survey booking for homes, a meeting request for a society committee and a site assessment for a factory.</p>
+
+<h2>Subsidy pages that stay accurate</h2>
+<p>Homeowners ask about the subsidy before almost anything else, and scheme details change. A subsidy page that stays useful:</p>
+<ul>
+  <li>Explains the process as your team actually runs it, step by step, and says which steps you handle and which the customer does</li>
+  <li>Names the scheme, such as PM Surya Ghar: Muft Bijli Yojana at the time of writing, and sends readers to its official national portal for current amounts and eligibility</li>
+  <li>Carries a "last checked" date, and dates any figure it shows, so someone on your team knows when to review it</li>
+  <li>Claims vendor registration or DISCOM empanelment only where your company actually has it</li>
+  <li>Names the DISCOMs you work with, because net metering rules and procedures vary by state</li>
+</ul>
+<p>Leave out promises such as "zero electricity bill" or "free solar". Bills depend on consumption, generation, tariffs and fixed charges, and a buyer who feels misled after installation will say so in a review.</p>
+
+<h2>A savings calculator without promised numbers</h2>
+<p>A calculator helps visitors judge whether solar is worth a conversation, provided it is honest about what it can't know:</p>
+<ul>
+  <li><strong>Inputs the visitor knows:</strong> average monthly bill or units, city or PIN code, property type, roof type and approximate shadow-free area.</li>
+  <li><strong>Outputs as ranges:</strong> a suggested system size and an estimated generation range, with an indicative cost range only if your team supplies and maintains the figures.</li>
+  <li><strong>Visible assumptions:</strong> the generation per kilowatt you use for your region and the tariff, shown next to the result and supplied by you.</li>
+  <li><strong>A clear label:</strong> every result marked as an estimate, with the final design and price depending on the site survey.</li>
+</ul>
+<p>Show the result before asking for a phone number, then offer to send a detailed estimate or book a survey, with the visitor's figures passed into the form. <a href="/blog/website-calculators-lead-generation/">Website calculators for lead generation</a> walks through inputs, assumptions and tracking.</p>
+
+<h2>Project galleries that prove the work</h2>
+<p>Real installations are the strongest proof a solar company has. Give each project a short entry built from the same template:</p>
+<ul>
+  <li>System capacity, property type and the area or locality, not the full address</li>
+  <li>The month and year it was completed</li>
+  <li>The roof type and any challenge solved, such as a tin shed roof, shading or an elevated structure</li>
+  <li>Photos before, during and after installation, without house numbers or faces unless the customer agrees</li>
+  <li>The components used, only if the details are accurate, and a customer quote only with written permission</li>
+</ul>
+<p>Generation figures or monitoring screenshots can be persuasive, but use only real data, with the customer's consent. Filters for homes, societies and commercial sites help once the gallery grows. A site I built in another part of the power sector shows the same principle: <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a> rents out diesel generators rather than installing solar, and it backs its claims with counters for projects completed and running, the fact that it started out as Sahni Traders in 1992, and photos of its generators installed on site.</p>
+
+<h2>Make the site survey the main goal</h2>
+<p>For most solar buyers the real commitment is letting someone onto the roof. Make that step feel easy and clear:</p>
+<ol>
+  <li>Explain what the surveyor checks, such as roof condition and orientation, shading, the structure, the meter and connection, and roughly how long the visit takes.</li>
+  <li>Say whether the survey is free or charged, and whether a charge is adjusted against the order.</li>
+  <li>Keep the booking form short: name, phone, PIN code, property type, a preferred day and time slot, and a note on roof access.</li>
+  <li>Confirm on screen, then on WhatsApp with the date and, once assigned, the surveyor's name.</li>
+  <li>Ask for roof photos and a recent bill on WhatsApp after the conversation has started, not on the public form, since an electricity bill shows the consumer number and home address.</li>
+</ol>
+
+<h2>Trust: warranties, brands and credentials</h2>
+<ul>
+  <li><strong>Warranties explained plainly:</strong> the panel maker's product and performance warranties, the inverter warranty and your own installation or workmanship warranty are different things, with different people to contact. Use the terms in your actual documents, and say who handles each claim.</li>
+  <li><strong>Brands:</strong> name panel and inverter brands only where you are an authorised dealer or installer, or say you install other brands to order.</li>
+  <li><strong>Certifications and empanelment:</strong> only those you hold, with numbers buyers can check.</li>
+  <li><strong>Your team:</strong> say whether installation is done by your own team or by partners, and introduce the people who will visit.</li>
+  <li><strong>Reviews:</strong> genuine Google reviews, linked to your profile rather than retyped; see <a href="/blog/google-reviews-on-website/">showing Google reviews on your website</a>.</li>
 </ul>
 
-<h2>Pages every solar website needs</h2>
-<h3>1. Clear solution pages</h3>
-<p>Separate pages for residential rooftop, commercial and industrial solar, and related products like batteries or inverters, written in plain language for customers.</p>
-<h3>2. Savings and subsidy information</h3>
-<p>Explain how savings work and the current subsidy schemes and process in your area. Keep this information accurate and updated, as schemes change; link to official sources where possible.</p>
-<h3>3. Completed projects</h3>
-<p>A gallery of real installations with system size, location type and photos is one of the strongest trust signals you can offer.</p>
-<h3>4. A smart quote request form</h3>
-<p>Ask for the details you need to prepare a proposal: name, phone, location, property type, roof type and monthly electricity bill. Keep it short enough that people complete it.</p>
-<h3>5. FAQ</h3>
-<p>Answer questions about installation time, maintenance, warranties, net metering and monsoon performance.</p>
-
-<p>If your business mainly sells inverters, UPS systems and batteries for power backup, the website needs are a little different; see <a href="/blog/website-for-inverter-battery-dealers/">websites for inverter, UPS and battery dealers</a>.</p>
-
-<h2>Build trust quickly</h2>
-<ul>
-  <li>Certifications, partnerships and brands you install</li>
-  <li>Genuine customer testimonials and Google reviews</li>
-  <li>Your team and service process</li>
-  <li>Warranty and after-sales support details</li>
-</ul>
-
-<p>More tactics: <a href="/blog/solar-company-lead-generation/">solar lead generation</a>.</p>
-
-<h2>Get found locally</h2>
-<ul>
-  <li>Target searches like "solar panel installation in {city}" with service area pages that have genuinely local content (projects and information for that area)</li>
-  <li>Keep a complete Google Business Profile with project photos</li>
-  <li>Publish helpful articles on savings, subsidies and system sizing</li>
-</ul>
+<h2>After installation: the website as a service desk</h2>
+<p>A solar system needs cleaning, occasional service and, for many customers, help with the monitoring app. A service page with a request form, simple cleaning guidance, monitoring app help and AMC details keeps existing customers coming back to your site instead of searching for someone else. Happy customers are also the best source of new leads, and a simple <a href="/blog/referral-program-website/">referral programme</a> gives them an easy way to recommend you.</p>
 
 <p>Rental and hire businesses in the power sector have their own needs; see <a href="/blog/equipment-rental-website-guide/">equipment and generator rental websites</a>.</p>
 
-<h2>Running ads?</h2>
-<p>Solar campaigns on Google and Meta work best with dedicated landing pages: one offer, a short quote form, trust signals and WhatsApp. Avoid the common <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes</a> that waste ad budget.</p>
+<h2>FAQs</h2>
+<h3>What pages should a solar company website have?</h3>
+<p>Separate pages for homes, housing societies and commercial or industrial buyers, a subsidy and net metering page, a projects gallery, a site survey booking page, a service and AMC page, and about and FAQ pages.</p>
+<h3>Should a solar website show subsidy amounts?</h3>
+<p>Only if someone on your team keeps them up to date. Explain the process as you run it, link to the scheme's official portal for current amounts and eligibility, and date any figure you show.</p>
+<h3>Is a solar savings calculator a good idea?</h3>
+<p>Yes, if every result is labelled as an estimate, the assumptions are shown and supplied by you, and the visitor sees the result before being asked for contact details.</p>
+<h3>Can we list panel brands on our website?</h3>
+<p>Name brands where you are authorised to sell or install them. If you install other brands to order, say so rather than showing their logos.</p>
+<h3>Should we publish prices per kilowatt?</h3>
+<p>It is your choice. An indicative range with what it includes, and a note that the final price depends on the survey, answers a common first question. If prices move often, a quick quote with a fast callback works too.</p>
 
-<h2>Related example</h2>
-<p>For a power-sector example, see how a generator rental company's site presents its full fleet with enquiry calls to action in the <a href="/work/sahni-power-solutions/">Sahni Power Solutions case study</a>. For your own site, see what's included in a <a href="/website-for-solar-and-power-companies/">solar and power company website</a>.</p>
+<p>If your current site is a single page of panel photos and a phone number, I can rebuild it around the questions your buyers ask and the survey that follows. See <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> and share your current site or listing for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -3548,134 +3727,233 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'real-estate-website-must-have-features',
-    seoTitle: 'Real Estate Website: 14 Must-Have Features',
-    title: 'Real Estate Website Must-Haves: 14 Features That Generate Site Visits',
-    description: '14 must-have real estate website features for builders and agents: project pages, floor plans, brochures, RERA details and fast lead forms for site visits.',
+    seoTitle: 'Real Estate Website Features: 14 Must-Haves for Builders',
+    title: 'Real Estate Website Must-Haves: 14 Features Builders, Developers and Brokers Need to Generate Site Visits',
+    description: 'The 14 features a real estate website needs: project pages, floor plans, price on request, site visits, brochures, RERA details, CRM and call tracking.',
     date: '2026-09-27',
+    updated: '2026-10-21',
     category: 'Industries',
     related: ['real-estate-website-design', 'landing-page-design', 'wordpress-seo-services'],
     body: `
-<p>Property is one of the biggest purchases people make, and they research heavily online before visiting a site. A real estate website that answers their questions and makes enquiring effortless can generate a steady flow of qualified leads. Here are the features that matter most.</p>
+<p>A real estate website needs fewer features than most builders are sold, but the ones it has must answer a buyer's shortlist questions quickly: which configurations are on offer and at what carpet area, what the plans look like, roughly what it costs, where exactly the site is, whether the project is RERA registered and how to book a visit. Everything else exists to make that visit more likely, and to tell you which ad or channel produced it.</p>
+<p>These are the features I build into a <a href="/real-estate-website-design/">real estate website design</a> project: project and property pages, floor plans and price lists, galleries, site-visit booking, gated brochure downloads, location maps, a RERA and approvals section and landing pages for ads. Below I go through 14 features in the order a buyer meets them, then show which matter most for a builder, a portfolio developer, a plotted-land developer and a broker.</p>
+<p>For the page structure of a single launch, see <a href="/blog/real-estate-project-microsite/">real estate project microsites</a>. This guide covers the website as a whole.</p>
 
-<h2>Project and property information</h2>
-<ol>
-  <li><strong>A dedicated page per project.</strong> Each project needs its own URL with full details. It's better for buyers and for Google.</li>
-  <li><strong>High-quality galleries.</strong> Renders, actual site photos, sample flats and construction progress.</li>
-  <li><strong>Floor plans and unit configurations.</strong> 2BHK, 3BHK and so on, with carpet area clearly stated.</li>
-  <li><strong>Amenities.</strong> Clearly listed, with icons or photos.</li>
-  <li><strong>Location advantages.</strong> A map plus distances to schools, hospitals, metro, highways and offices.</li>
-  <li><strong>RERA and approvals.</strong> Registration numbers and approvals displayed clearly, as required, to build trust.</li>
-  <li><strong>Construction status.</strong> Ongoing, ready-to-move or completed, with updates.</li>
-</ol>
+<h2>Features that help buyers shortlist</h2>
+<p>Buyers usually compare several projects, often on a phone, before visiting any of them. These six features decide whether yours stays on the list.</p>
 
-<h2>Lead capture</h2>
-<ol start="8">
-  <li><strong>Short enquiry forms</strong> on every project page: name, phone and preferred configuration are usually enough.</li>
-  <li><strong>"Book a site visit" call to action</strong> with preferred date and time.</li>
-  <li><strong>Gated brochure download.</strong> Capture contact details in exchange for the brochure and price sheet.</li>
-  <li><strong>WhatsApp and click-to-call</strong> visible on mobile at all times.</li>
-</ol>
+<h3>1. One page per project, built from one template</h3>
+<p>Every project gets its own address, such as /projects/project-name/, and every project page shows the same facts in the same order: status, configurations, plans, price, amenities, location, RERA details and the booking button. A fixed template lets a buyer comparing two of your projects find the possession date in the same place on both, and stops your team leaving sections out. Put a status label (under construction, ready to move, completed) at the top.</p>
 
-<h2>Trust and credibility</h2>
-<ol start="12">
-  <li><strong>Track record.</strong> Completed projects, years in business and delivered units, where you can back them up.</li>
-  <li><strong>Testimonials and walkthrough videos</strong> from real buyers.</li>
-</ol>
+<h3>2. Configurations with carpet area</h3>
+<p>List each unit type in a small table: configuration, carpet area, any balcony or terrace area shown separately,. State carpet area as defined under RERA rather than only super built-up area, and use one unit of measurement across the site and the brochure.</p>
 
-<p>Launching a new project? See <a href="/blog/real-estate-project-microsite/">real estate project microsites</a>.</p>
+<h3>3. Floor plans that work on a phone</h3>
+<p>Plans locked inside a PDF are hard to read on a phone. Put the unit plans, a typical floor plan and the site layout on the page as images that open full screen and zoom with two fingers, with the dimensions legible, and offer the PDF as well for printing. For plotted developments, a layout plan showing plot numbers, sizes and road widths does the same job. If you mark sold plots on it, decide who keeps it updated.</p>
 
-<h2>Performance and marketing</h2>
-<ol start="14">
-  <li><strong>Fast, mobile-first pages and campaign landing pages.</strong> Most property ads are clicked on phones. Dedicated landing pages for each project campaign, with conversion tracking, make ad spend far more efficient. Read about the <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a>.</li>
-</ol>
+<h3>4. A price, a starting price or price on request</h3>
+<p>There are three workable choices, and each needs a little design:</p>
+<ul>
+  <li><strong>Full price list:</strong> suits ready-to-move units and plotted land with fixed rates. Say what the price includes and what is extra, such as parking, registration and stamp duty.</li>
+  <li><strong>Starting price:</strong> a "from" price for each configuration, next to its carpet area, tells buyers at once whether the project is within reach, so fewer enquiries come from people outside your range.</li>
+  <li><strong>Price on request:</strong> state it openly, and let buyers get the price sheet with one tap on WhatsApp or by email, rather than filling in a form and waiting for a call.</li>
+</ul>
+<p>Whichever you choose, the price on the website, the brochure and the ads must match, and one person should own updating all three.</p>
+
+<h3>5. Location facts you have checked</h3>
+<p>Show a map, the site office address and distances to the schools, hospitals, stations, highways and business districts buyers ask about, measured rather than guessed. Load the embedded map only when tapped so it doesn't slow the page, and add a directions link that opens Google Maps on the visitor's phone.</p>
+
+<h3>6. Walkthroughs and virtual tours</h3>
+<p>A walkthrough video, a sample flat video or a 360-degree tour lets a buyer in another city, or abroad, judge layout and light before travelling. Embed videos from YouTube so they load only when tapped. Label renders and animated walkthroughs as artist's impressions, and add real site and sample flat footage as soon as it exists.</p>
+
+<h2>Features that turn interest into site visits</h2>
+
+<h3>7. Site-visit booking with slots</h3>
+<p>A "book a site visit" form should ask for a preferred date, a time slot (morning, afternoon or evening works better than exact times), the number of people and, if you offer it, whether they need a pickup. A confirmation on screen, followed by one on WhatsApp or email, reduces no-shows.</p>
+
+<h3>8. A brochure gated only where it earns a lead</h3>
+<p>Gating everything behind a form annoys buyers who are still comparing, and a gated PDF cannot be found on Google. A balance that works for many builders:</p>
+<ul>
+  <li>Floor plans, amenities and location on the page, open to everyone</li>
+  <li>The full brochure and price sheet behind a short form asking for name, phone and email, sent to the email address given</li>
+  <li>A plain project overview PDF left ungated, with a proper title, so it can appear in search; see <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs and brochures</a></li>
+</ul>
+<p>Some developers add OTP verification on the phone number to cut fake leads. It also costs some genuine ones, so add it only if junk enquiries are a real problem.</p>
+
+<h3>9. WhatsApp and tap-to-call on every screen</h3>
+<p>Many buyers would rather message than fill in a form. A WhatsApp button with the project name already in the message, and a phone number that dials on tap, should stay visible on mobile without covering the content.</p>
+
+<h3>10. Leads that land in one place, tagged by source</h3>
+<p>Every form, brochure request and site-visit booking should reach your sales team instantly and also go into one list: a Google Sheet for a small team, or the CRM you already use. Each lead should carry its project, the page it came from and the campaign's UTM tags, and each channel partner needs a tagged link or a partner code field, so the leads they send are attributed to them; <a href="/blog/connect-website-forms-to-crm/">connecting forms to a CRM</a> explains the options. A tap on the call button only shows that someone tried to ring; <a href="/blog/call-tracking-small-business/">call tracking</a>, which gives each source its own number, shows which calls connected and which campaign produced them.</p>
+
+<h2>Features that build trust before the first call</h2>
+
+<h3>11. RERA details on every project page</h3>
+<p>RERA generally treats a project page as an advertisement, and advertisements for a registered project generally have to carry its registration number and the address of the state RERA website. Put both near the top of each project page, add a broker's own agent registration number to their pages, and keep a project off the site until it is registered if it needs registration. Some states add requirements such as a QR code, so check your state authority's current rules with your advisers.</p>
+
+<h3>12. Completed projects with honest status</h3>
+<p>Buyers trust a builder who shows what has already been delivered. Give each completed project a page with real photos, the location and its handover status, and keep it after the project sells out, because it becomes your strongest proof for the next launch. Only state possession dates, unit counts or years in business that you can support.</p>
+
+<h3>13. Dated construction updates</h3>
+<p>For an under-construction project, dated site photos every month or quarter answer the question every buyer has: is work actually progressing? A year-old update suggests the opposite, so add this only if someone will keep it going.</p>
+
+<h3>14. A dashboard your team can update</h3>
+<p>Projects, prices, statuses, plans and updates should be editable by your team without a developer. In WordPress this usually means storing projects as a custom post type with a field for each fact, so the template stays consistent; <a href="/blog/custom-post-types-fields/">custom post types and fields</a> explains how that works. Marking a configuration as sold out should take a minute, not a support request.</p>
+
+<h2>Which features matter for your type of business</h2>
+<p>Not every business needs all 14 on day one. This is how I would prioritise:</p>
+<table>
+  <thead><tr><th>Feature</th><th>Builder with one or two projects</th><th>Developer with a portfolio</th><th>Plotted or land developer</th><th>Broker or channel partner</th></tr></thead>
+  <tbody>
+    <tr><td>Project or listing pages</td><td>Essential</td><td>Essential, with status filters</td><td>Essential, with a layout plan</td><td>Essential, with buy and rent filters</td></tr>
+    <tr><td>Configurations and carpet area</td><td>Essential</td><td>Essential</td><td>Plot sizes instead</td><td>On every listing</td></tr>
+    <tr><td>Floor plans or layout</td><td>Essential</td><td>Essential</td><td>Layout plan essential</td><td>Where the owner provides them</td></tr>
+    <tr><td>Price approach</td><td>Starting price or on request</td><td>Decided per project</td><td>A rate per unit area often works</td><td>Price or rent on every listing</td></tr>
+    <tr><td>Walkthroughs and tours</td><td>Useful for launches</td><td>Useful</td><td>Site or aerial video useful</td><td>Short phone videos are enough</td></tr>
+    <tr><td>Site-visit booking</td><td>Essential</td><td>Essential</td><td>Essential, often with pickup</td><td>Viewing requests per listing</td></tr>
+    <tr><td>Gated brochure</td><td>Useful</td><td>Useful</td><td>Useful</td><td>Rarely needed</td></tr>
+    <tr><td>CRM and call tracking</td><td>Useful if running ads</td><td>Essential</td><td>Useful if running ads</td><td>Useful once lead volume grows</td></tr>
+    <tr><td>RERA details</td><td>Essential</td><td>Essential</td><td>Essential where registration applies</td><td>Agent registration plus each project's number</td></tr>
+    <tr><td>Construction updates</td><td>Essential while building</td><td>Per project</td><td>Development work updates</td><td>Not needed</td></tr>
+    <tr><td>Owner "list your property" form</td><td>Not needed</td><td>Not needed</td><td>Not needed</td><td>Essential</td></tr>
+  </tbody>
+</table>
+<p>Brokers have a second audience, property owners, and a content strategy built on area guides; <a href="/blog/website-for-real-estate-agents-brokers/">websites for real estate agents and brokers</a> covers both.</p>
+
+<h2>Features that can wait, and ones to skip</h2>
+<ul>
+  <li><strong>EMI calculators:</strong> useful on project pages if the interest rate, tenure and loan amount are editable and the result is labelled as an estimate. Name partner banks only if you genuinely have tie-ups. <a href="/blog/website-calculators-lead-generation/">Lead generation calculators</a> shows how to keep the assumptions honest.</li>
+  <li><strong>A buyer login:</strong> a portal showing payment schedules, documents and construction updates for booked customers can be valuable for larger developers, but it is a custom build with its own security and data protection responsibilities. Add it after the public site is working.</li>
+  <li><strong>Pages for NRI buyers:</strong> worth it if you genuinely sell abroad, with video-call site visits and callbacks arranged around time zones.</li>
+  <li><strong>Regional languages:</strong> a Marathi, Hindi or other language version helps in some markets, but only if your sales team can answer enquiries in that language.</li>
+  <li><strong>Skip:</strong> autoplay video headers, heavy sliders, pop-ups that appear before the page has loaded and chatbots that cannot answer price or availability questions. They slow the page and bury the booking button.</li>
+</ul>
+<p>Visitors from property ads mostly arrive on phones, so every feature on this list has to load quickly over mobile data. When a campaign needs a page of its own, <a href="/landing-page-design/">landing page design</a> covers fast single-project pages built for ads.</p>
 
 <p>Contractors and builders working on projects should also read <a href="/blog/website-for-construction-companies/">websites for construction companies</a>.</p>
 
-<h2>SEO for real estate websites</h2>
-<ul>
-  <li>Target project names, locality and configuration searches ("3BHK flats in {locality}")</li>
-  <li>Write useful locality guides that cover connectivity, schools, prices and upcoming infrastructure</li>
-  <li>Use descriptive titles and alt text for images</li>
-  <li>Keep your Google Business Profile updated with project photos</li>
-</ul>
+<h2>FAQs</h2>
+<h3>What is the most important feature on a real estate website?</h3>
+<p>A complete page for each project, with configurations, carpet areas, floor plans, location, RERA details and a site-visit button. Every other feature supports that page.</p>
+<h3>Should a builder show prices on the website?</h3>
+<p>That is your call. A starting price for each configuration filters enquiries by budget, while price on request works well enough if buyers can get the price sheet quickly on WhatsApp or by email. Keep the website, brochure and ads consistent either way.</p>
+<h3>Is a virtual tour worth it for a project website?</h3>
+<p>For launches, and for buyers in other cities or abroad, a walkthrough video or 360-degree tour often is, as long as it loads only when tapped and renders are labelled as artist's impressions. For a resale listing, a short phone video is usually enough.</p>
+<h3>Do I need a CRM for my real estate website?</h3>
+<p>Not at the start. A Google Sheet that receives every lead with its project and source is enough for a small team. Once several people handle leads across projects and campaigns, a CRM makes follow-up and reporting easier, and website forms can feed it directly.</p>
 
-<p>Agents and brokers have different needs from builders; see <a href="/blog/website-for-real-estate-agents-brokers/">websites for real estate agents and brokers</a>.</p>
-
-<h2>Common mistakes</h2>
-<ul>
-  <li>One long page for all projects</li>
-  <li>Heavy, slow galleries and auto-playing videos</li>
-  <li>Hiding RERA details or prices entirely</li>
-  <li>Enquiry forms that ask for too much information</li>
-</ul>
-
-<p>A real estate website built around these features works as a 24/7 sales office. See what's included in a <a href="/real-estate-website-design/">real estate website</a>.</p>
+<p>If you want a site with these features, built around how your sales team actually works, see <a href="/real-estate-website-design/">real estate website design</a>. Share your current site or a project brochure and I will review it free, suggest which features to start with and send a fixed quote.</p>
 `,
   },
   {
     slug: 'school-coaching-website-what-parents-look-for',
-    seoTitle: 'School & Coaching Websites: What Parents Look For',
-    title: 'School and Coaching Institute Websites: What Parents and Students Look For',
-    description: 'What parents and students look for on school, college and coaching institute websites, and the pages and features that turn visitors into admission enquiries.',
+    seoTitle: 'School and Coaching Websites: What Parents Look For',
+    title: 'School and Coaching Institute Websites: What Parents and Students Look For, and How to Turn It Into Admission Enquiries',
+    description: 'What parents and students check on school and coaching websites: verifiable results, faculty, fees, safety, timings, demo classes and admission enquiries.',
     date: '2026-09-27',
+    updated: '2026-10-21',
     category: 'Industries',
     related: ['website-for-schools-and-coaching', 'wordpress-seo-services', 'website-redesign'],
     body: `
-<p>Choosing a school or coaching institute is a big decision for families, and it almost always starts with online research. Parents compare several institutes' websites before calling any of them. Here's what they look for, and how to make sure your website makes the shortlist.</p>
+<p>Parents looking at a school or coaching institute website want quick, checkable answers to a short list of questions: what results do students really get, who will teach my child, what does it cost in total, is it safe, do the timings and location work for us, and can we see a class or the campus before deciding? Students, especially for coaching, add their own: batch size, doubt sessions, tests and study material. A website that answers all of these clearly, and makes the next step easy, gets the enquiry while others are still being compared.</p>
+<p>That is how I approach <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a>: course and batch pages, an admission enquiry form, results and toppers, faculty profiles, a notice board and events, galleries, a downloadable prospectus and local SEO. This guide looks at the site from the family's side: what they check, what reassures them and what makes them close the tab.</p>
 
-<h2>What parents and students want to see</h2>
+<h2>How families compare institutes</h2>
+<p>Admission research often happens in one evening on a phone, with several institutes open side by side. Each page gets a few seconds to show it is worth a call:</p>
+<table>
+  <thead><tr><th>What they check</th><th>What reassures them</th><th>What makes them close the tab</th></tr></thead>
+  <tbody>
+    <tr><td>Results</td><td>Named exams and years, the course each student took, consent-backed photos</td><td>Vague "100 percent results" banners and toppers also claimed by other institutes</td></tr>
+    <tr><td>Faculty</td><td>Named teachers, subjects, qualifications and experience stated plainly</td><td>"Highly qualified faculty" with no names or photos</td></tr>
+    <tr><td>Fees</td><td>What the fee covers, instalments and the refund policy</td><td>No mention of fees at all, or surprise extras discovered later</td></tr>
+    <tr><td>Safety and care</td><td>Specific arrangements: transport, supervision, visitor rules, CCTV where used</td><td>Generic claims with nothing behind them</td></tr>
+    <tr><td>Timings and batches</td><td>A batch or school timing table that is clearly current</td><td>Last year's dates or "contact for timings"</td></tr>
+    <tr><td>Location</td><td>A map, directions, transport routes and parking</td><td>An address with no map, or a branch they can't find</td></tr>
+    <tr><td>Next step</td><td>A demo class, campus visit or counselling session they can book</td><td>Only a phone number that rings unanswered after hours</td></tr>
+  </tbody>
+</table>
+
+<h2>Results parents will believe</h2>
+<p>Parents are understandably sceptical of results claims, because they have seen the same topper on several hoardings. What builds trust is detail they could verify:</p>
 <ul>
-  <li><strong>Results and achievements:</strong> board results, competitive exam selections and toppers, presented honestly</li>
-  <li><strong>Faculty:</strong> who will teach, their qualifications and experience</li>
-  <li><strong>Courses and batches:</strong> subjects, timings, duration and batch sizes</li>
-  <li><strong>Fees and admission process:</strong> clear steps, key dates and required documents</li>
-  <li><strong>Facilities and safety:</strong> classrooms, labs, library, transport and security</li>
-  <li><strong>Location and timings:</strong> map, directions and contact details</li>
+  <li>The exam, the year and the score or rank, exactly as published</li>
+  <li>Which of your courses each student was enrolled in, for example a two-year classroom programme rather than a crash course or test series, because parents notice the difference</li>
+  <li>Names and photos only with written consent from the student, and from a parent for minors</li>
+  <li>Year-wise results kept on the page, including years that were less impressive, rather than a single highlight reel</li>
+</ul>
+<p>Percentages or "selections" totals should appear only if you can show how they were worked out. The Central Consumer Protection Authority has published guidelines on misleading advertising by coaching centres, which cover points such as student consent and saying which course a successful student took; ask your adviser about the current version before you publish.</p>
+
+<h2>Faculty: who will actually teach</h2>
+<p>For many parents the teacher matters more than the building. A faculty page that helps them decide gives each teacher a photo, the subjects and classes they teach, qualifications and teaching experience stated factually, and a line on their approach. Say which batches each teacher takes, and whether a course is taught by the same teachers throughout. Keep the page current: a teacher who left last term but is still listed undermines everything else on the site. Each teacher should approve their own profile before it goes live.</p>
+
+<h2>Fees: answer the money question honestly</h2>
+<p>Whether to publish fee amounts is your decision, but the fee structure should never be a mystery. Parents want to know:</p>
+<ul>
+  <li>What the fee includes: books, study material, tests, uniforms, transport, activities</li>
+  <li>What is charged separately, and when</li>
+  <li>Whether instalments are possible, and the dates they fall due</li>
+  <li>The registration or admission fee, and whether it is refundable</li>
+  <li>The withdrawal and refund policy, in plain words</li>
+</ul>
+<p>If figures are shared on enquiry, say so, and make getting them quick. If you take a registration fee online, a payment gateway can collect it with a receipt emailed automatically; see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
+
+<h2>Safety and care: show, don't claim</h2>
+<p>For schools, and for coaching institutes with younger students or late batches, safety is often the deciding question. Describe only arrangements that genuinely exist:</p>
+<ul>
+  <li>Transport routes, whether buses have a staff member on board, and how pickup and drop work</li>
+  <li>Who supervises students before and after classes, and the visitor and pickup authorisation rules</li>
+  <li>CCTV in common areas, if installed, and the first-aid arrangements on site</li>
+  <li>For evening coaching batches, finishing times and whether parents are notified of absences</li>
+</ul>
+<p>Photos of real classrooms, labs and transport help more than icons. Children's photos need written consent, and an option to opt out in your admission form; <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a> covers what verifiable parental consent means for a school or institute.</p>
+
+<h2>Timings, batches and location</h2>
+<p>Put school timings, or a batch table for coaching, on the relevant page in a form staff can edit: course, days, time, whether it runs in a classroom, online or both, the teaching language and start date. Mark full batches as full rather than deleting them, so parents see demand and ask about the next one. Each branch needs its own page with its address, a map, directions from landmarks, the batches it runs and parking for parents. Online classes need the same clarity. A site I built in another field, for <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's</a> wellness course, gives each online group its language and slot, Hindi on Saturday mornings and English on Sunday afternoons, so nobody has to ask.</p>
+
+<h2>Demo classes, visits and free tests</h2>
+<p>Most families want to see before they commit. Offer the step that suits your institute:</p>
+<ul>
+  <li><strong>Campus visits</strong> for schools, with a form asking the class sought and a preferred day and time</li>
+  <li><strong>Demo classes</strong> for coaching, booked into a specific upcoming session rather than "we will call you"; <a href="/blog/online-appointment-booking-website/">online appointment booking</a> compares tools and reminders</li>
+  <li><strong>Counselling sessions</strong> for students unsure which course or stream to choose</li>
+  <li><strong>A short diagnostic test or level check</strong> that shows the result straight away. Dr. Sudhir Arora's site does this with a ten-question self-assessment that shows a result band and suggested next steps without asking for contact details first, and a level check for students can work the same way.</li>
 </ul>
 
-<h2>Essential pages</h2>
-<ol>
-  <li><strong>Home:</strong> who you are, key achievements, courses overview and an admission enquiry button</li>
-  <li><strong>About:</strong> history, vision, management and accreditation</li>
-  <li><strong>Courses / Academics:</strong> a page per course or class group</li>
-  <li><strong>Admissions:</strong> process, eligibility, dates, fees (if shared) and an enquiry form</li>
-  <li><strong>Results:</strong> year-wise results and toppers</li>
-  <li><strong>Faculty:</strong> profiles with photos</li>
-  <li><strong>Gallery and events:</strong> real photos of campus life</li>
-  <li><strong>Notice board:</strong> announcements, holidays and circulars</li>
-  <li><strong>Contact:</strong> phone, WhatsApp, map and timings</li>
-</ol>
+<h2>The admission enquiry flow, step by step</h2>
+<p>Enquiries are lost between steps more often than at the form. Plan the whole sequence:</p>
+<table>
+  <thead><tr><th>Stage</th><th>What the family does</th><th>What your website and office do</th></tr></thead>
+  <tbody>
+    <tr><td>Enquiry</td><td>Fills a short form: student name, class or course, branch, parent's phone</td><td>Send it instantly to the right branch, and to a sheet or CRM</td></tr>
+    <tr><td>Acknowledgement</td><td>Sees a thank-you page and gets a WhatsApp or email reply</td><td>Say who will call and when, within real office hours</td></tr>
+    <tr><td>First call</td><td>Asks their questions</td><td>A counsellor calls with the form answers in hand</td></tr>
+    <tr><td>Visit or demo</td><td>Books a slot</td><td>Confirm and remind; note who attended</td></tr>
+    <tr><td>Registration</td><td>Submits the application and any fee</td><td>Online form and payment, with a receipt</td></tr>
+    <tr><td>Confirmation</td><td>Receives the admission letter and joining details</td><td>Documents list, start date and first-day information</td></tr>
+  </tbody>
+</table>
+<p>Track each enquiry's stage, and follow up families who attended a demo but haven't registered. During admission season, give paid campaigns their own pages rather than sending ad clicks to the homepage.</p>
 
-<h2>Features that increase enquiries</h2>
-<ul>
-  <li>A short admission enquiry form on every page</li>
-  <li>WhatsApp button for quick questions</li>
-  <li>Downloadable prospectus</li>
-  <li>Online fee payment (via a gateway like Razorpay). See <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress</a>.</li>
-  <li>Demo class or counselling session booking for coaching institutes</li>
-</ul>
+<h2>What students check that parents don't</h2>
+<p>Coaching students often make the first shortlist themselves, and they look for different things: batch size, how doubts are cleared, the test schedule, study material, whether recorded classes are available if they miss one, and what current students say. Many also check the institute's Instagram or YouTube before visiting the website, so short videos of real classes and teachers explaining a topic help both. For older students choosing courses and placements, <a href="/blog/website-for-colleges-universities/">websites for colleges and universities</a> covers programme pages and admission funnels, and for the youngest learners, <a href="/blog/website-for-preschools-daycare/">websites for preschools and daycare</a> covers what parents of small children ask.</p>
 
 <p>Other learning businesses: <a href="/blog/website-for-music-dance-academies/">music and dance academies</a>, <a href="/blog/website-for-driving-schools/">driving schools</a> and <a href="/blog/website-for-home-tutors-online-teachers/">home tutors</a>.</p>
 
 <p>Teaching coding, data or other IT skills to college students and working professionals? See <a href="/blog/website-for-software-training-institutes/">websites for software training institutes</a>.</p>
 
-<h2>Keep it updated</h2>
-<p>Nothing damages trust faster than last year's admission dates or an old notice board. Build the site so staff can post notices, events and results themselves in minutes.</p>
+<h2>FAQs</h2>
+<h3>What do parents look for on a school website?</h3>
+<p>Admissions information and dates, fees or the fee structure, safety and transport arrangements, facilities, teachers, results where relevant, school timings, location, and a way to book a visit or enquire.</p>
+<h3>Should a coaching institute publish toppers' photos?</h3>
+<p>Only with written consent from the student, and from a parent for minors, and only for your own students, with the exam, year and course they took stated clearly.</p>
+<h3>Should we show fees on our website?</h3>
+<p>That is up to you. Either way, set out what the fee covers, any instalment option and how refunds work, and if amounts are only shared on enquiry, say so.</p>
+<h3>How can we get more admission enquiries from our website?</h3>
+<p>Answer the questions in the table above on the pages where families look for them, keep dates and batches current, offer a demo, visit or free test, and make sure every enquiry reaches the right branch and gets a quick reply.</p>
+<h3>Can our staff update results, notices and batches themselves?</h3>
+<p>Yes. Results, notices, events and batch tables can be managed from the dashboard, so the site never shows last year's information.</p>
 
-<p>For early years, see <a href="/blog/website-for-preschools-daycare/">websites for preschools and daycare centres</a>.</p>
-
-<h2>Get found by local families</h2>
-<ul>
-  <li>Target searches like "best CBSE school in {area}" or "NEET coaching in {city}" in titles and content</li>
-  <li>Create course pages with genuinely useful detail</li>
-  <li>Complete your Google Business Profile and encourage parent reviews</li>
-  <li>Publish helpful articles on exam preparation and admissions</li>
-</ul>
-
-<p>Running a college? See <a href="/blog/website-for-colleges-universities/">websites for colleges and universities</a>.</p>
-
-<h2>Next step</h2>
-<p>A clear, trustworthy website with easy admission enquiries can make a real difference to each admission season. See what's included in a <a href="/website-for-schools-and-coaching/">school and coaching institute website</a>.</p>
+<p>If your website still shows last year's dates, or families keep phoning to ask what it should already say, I can rebuild it so the answers are where families look for them. See <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a> and share your prospectus or current site and I will review it free and send a fixed quote.</p>
 `,
   },
   {
@@ -6889,72 +7167,120 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
   },
   {
     slug: 'website-for-interior-designers-architects',
-    seoTitle: 'Websites for Interior Designers & Architects',
-    title: 'Websites for Interior Designers and Architects: What to Include',
-    description: 'Websites for interior designers and architects that win better projects: portfolio structure, case studies, process, services, enquiry forms and local SEO.',
+    seoTitle: 'Websites for Interior Designers and Architects That Win Work',
+    title: 'Websites for Interior Designers and Architects: Portfolio-First Design, Project Pages, Fast Images and Enquiries That Qualify Clients',
+    description: 'Portfolio-first websites for interior designers and architects: project pages, fast galleries, your process, qualifying enquiry forms and design partners.',
     date: '2026-09-27',
+    updated: '2026-10-21',
     category: 'Industries',
     related: ['wordpress-website-development', 'website-redesign', 'wordpress-seo-services'],
     body: `
-<p>For interior designers and architects, the website is the portfolio. Clients judge your taste, attention to detail and professionalism from it before they ever meet you. A well-structured site attracts the projects you actually want.</p>
+<p>An interior designer's or architect's website should be portfolio-first: a small number of strong projects, each with its own page that tells the story from brief to finished space, organised so visitors can find work like the project they have in mind. Around that portfolio, the site needs to explain your process and how fees work, load large images quickly, and ask enough in the enquiry form to show whether a lead fits your budget, scope and timeline before you spend an evening on a site visit.</p>
+<p>I build this kind of site as part of <a href="/wordpress-website-development/">WordPress website development</a>: a custom design for your brand, mobile-first and fast, with forms and WhatsApp, SEO basics, and projects you can add yourself after launch. This guide covers what a design practice's site needs, using a real example from an interior studio.</p>
 
-<h2>Lead with your best work</h2>
+<h2>A structure built around the portfolio</h2>
 <ul>
-  <li><strong>Curate, don't dump.</strong> Show your strongest 8–15 projects rather than everything you've done.</li>
-  <li><strong>Professional photography</strong> is worth the investment. Your work is visual, and weak photos undersell it.</li>
-  <li><strong>Organise by type:</strong> residential, commercial, hospitality, retail or by style, so visitors find relevant examples quickly.</li>
+  <li><strong>Projects:</strong> a grid of your best work, with categories and, once you have enough, filters.</li>
+  <li><strong>Project pages:</strong> one per project, telling its story.</li>
+  <li><strong>Services:</strong> what you offer, from design-only consultations to turnkey execution.</li>
+  <li><strong>Process and fees:</strong> how a project runs and how you charge.</li>
+  <li><strong>Studio:</strong> the people, their training and how you work.</li>
+  <li><strong>Partners and careers:</strong> separate routes for collaborators and job seekers.</li>
+  <li><strong>Journal:</strong> articles on questions clients ask.</li>
+  <li><strong>Enquiry:</strong> a form that qualifies the project.</li>
 </ul>
+<p>Curate hard. Eight to fifteen projects that show your range and standard say more than fifty thumbnails, and a weak project pulls down the strong ones next to it.</p>
 
-<p>Studios that produce renders and walkthroughs for other firms have a different brief; see <a href="/blog/website-for-3d-visualisation-studios/">websites for 3D visualisation studios</a>.</p>
+<h2>The project page, section by section</h2>
+<p>Clients hiring a designer want to see how you think, not only what the finished room looks like. A project page that does that:</p>
+<table>
+  <thead><tr><th>Section</th><th>What to show</th><th>Why it matters</th></tr></thead>
+  <tbody>
+    <tr><td>Opening image and summary</td><td>Project type, area or city, approximate size and your scope in one line</td><td>Tells the visitor at a glance whether it is relevant to them</td></tr>
+    <tr><td>The brief</td><td>Who it was for, how they live or work, and the constraints</td><td>Clients recognise their own situation in it</td></tr>
+    <tr><td>The site as found</td><td>Before photos or a short description of the starting point</td><td>Shows what you changed, not just the result</td></tr>
+    <tr><td>Drawings and renders</td><td>Plans, sketches or 3D views, labelled as such</td><td>Shows your process and how you communicate ideas</td></tr>
+    <tr><td>Key decisions</td><td>Layout changes, storage, light, materials and why you chose them</td><td>The part that shows your judgement</td></tr>
+    <tr><td>Materials and finishes</td><td>Main materials and finishes, with brands named only where accurate</td><td>Answers the questions clients ask in meetings</td></tr>
+    <tr><td>Scope and credits</td><td>What you did (design, execution or both), plus the photographer and any partner firms</td><td>Honest about your role, and fair to collaborators</td></tr>
+    <tr><td>Client's words</td><td>A short quote, only with the client's permission</td><td>Another voice besides your own</td></tr>
+  </tbody>
+</table>
+<p>Get written permission before showing a private home, and leave out house numbers, family photos and anything that identifies the address. For architects, label unbuilt, concept and competition work clearly so it isn't mistaken for completed buildings. <a href="/blog/website-for-3d-visualisation-studios/">Websites for 3D visualisation studios</a> covers presenting renders in more depth.</p>
 
-<h2>Turn projects into case studies</h2>
-<p>Each project page should tell a short story:</p>
+<h2>Captions, categories and filters</h2>
+<p>Visitors browse portfolios by taste and by room as much as by project type. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, a Hyderabad interior design and turnkey execution studio I built a site for, captions its homepage project images by style and by room, such as "The Minimalist: Modern Interior", "Boho Styles: Sleeping Space" and "New Kitchen: Dinner Space", so a homeowner can see quickly whether the studio's work suits their own home. Useful ways to organise:</p>
+<ul>
+  <li><strong>By type:</strong> apartments, villas, offices, retail, hospitality, institutional</li>
+  <li><strong>By room or space:</strong> kitchens, bedrooms, living rooms, workspaces</li>
+  <li><strong>By style:</strong> minimal, contemporary, traditional, eclectic, in words your clients use</li>
+  <li><strong>By status,</strong> for architects: completed, under construction, concept</li>
+</ul>
+<p>Filters earn their place once you have more projects than fit comfortably on one screen; before that, clear captions do the job.</p>
+
+<h2>Large images that still load fast</h2>
+<p>Design portfolios are image-heavy by nature, and a slow gallery undersells the work it shows. The fixes are mostly in how images are prepared and served:</p>
 <ol>
-  <li>The client's brief and challenges (space, budget, style)</li>
-  <li>Your approach and key design decisions</li>
-  <li>Before and after photos, plans or renders</li>
-  <li>Materials, scope and timeline</li>
-  <li>A client quote, if you have permission</li>
+  <li>Never upload camera originals. Export images at the size they will actually be displayed, with a larger version only for full-screen viewing.</li>
+  <li>Serve modern formats such as WebP, with WordPress providing smaller sizes automatically for phones.</li>
+  <li>Load the first image on each page straight away, and lazy-load the rest of the gallery as visitors scroll.</li>
+  <li>Open full-resolution images in a lightbox only when someone taps them.</li>
+  <li>Embed walkthrough videos from YouTube or Vimeo so they load only when played, rather than as autoplay backgrounds.</li>
 </ol>
-<p>Case studies show how you think, which matters more to serious clients than pretty pictures alone. See how case studies are structured on this site's <a href="/work/">portfolio</a>.</p>
+<p>Done this way, images stay sharp on a large monitor and fast on a phone over mobile data; <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> goes through sizes, formats and compression step by step.</p>
 
-<p><strong>Real example:</strong> the <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a> shows a Hyderabad interior studio site with a filterable project gallery, detailed services, a design partner page and free quote calls to action throughout.</p>
-
-<p>Civil and structural engineering consultants can present projects the same way; see <a href="/blog/website-for-civil-engineering-consultants/">websites for civil and structural engineering consultants</a>.</p>
-
-<h2>Explain your services and process</h2>
+<h2>Explain your process and how fees work</h2>
+<p>Clients worry about what happens after they say yes, and about cost surprises. A process page answers both:</p>
 <ul>
-  <li>Services: full design, turnkey execution, consultation, 3D visualisation, space planning</li>
-  <li>A clear step-by-step process from first meeting to handover</li>
-  <li>What clients need to provide, and typical timelines</li>
-  <li>How fees work, even if you don't publish exact prices</li>
+  <li>The stages, such as first consultation, site measurement, concept and mood boards, 3D views, approval, estimate, execution and handover</li>
+  <li>How many design revisions are included, and what happens after that</li>
+  <li>What the client sees before work starts; Studio Agama explains that clients see product samples and detailed 3D renderings first</li>
+  <li>How you charge, whether a design fee, a percentage of project cost, a rate per area or turnkey pricing, without needing to publish figures</li>
+  <li>How payments are staged, and whether they can be spread out</li>
+  <li>What support continues after handover</li>
 </ul>
+<p>Studio Agama's FAQ also answers the comparison questions buyers ask: the difference between modular and full home interiors, whether one room can be designed without redoing the whole home, and how a studio differs from contractors and individual designers. Architects registered with the Council of Architecture should check its current professional conduct rules, which restrict how architects promote their services, and keep the site factual.</p>
 
-<p>If you design outdoor spaces such as terraces, lawns and society gardens, see <a href="/blog/website-for-landscaping-gardening-services/">websites for landscaping and gardening services</a>.</p>
-
-<h2>Make enquiring easy</h2>
+<h2>Enquiry forms that qualify the project</h2>
+<p>A designer's time is the product, so a lead that turns out to be the wrong size, stage or budget is expensive. Studio Agama's "Your Design Enquiry" form asks, beyond name, email, phone and locality, for the type of enquiry (a turnkey home, luxury interiors, commercial or multi-functional spaces, or renovation and space planning), how the person heard about the studio, the project stage, and the budget and time frame. The team can see the type, scale and budget of a job before the first call. A form for your practice might ask:</p>
 <ul>
-  <li>A project enquiry form asking for property type, location, size, scope and timeline</li>
-  <li>WhatsApp and phone for quick questions</li>
-  <li>Studio address and a map if clients visit</li>
+  <li><strong>Project type and scope:</strong> full home, a single room, office, retail</li>
+  <li><strong>Property and location:</strong> apartment or villa, approximate size, locality</li>
+  <li><strong>Stage:</strong> just bought, under construction, ready to move in, or renovating</li>
+  <li><strong>Budget:</strong> ranges you choose, plus "not sure yet"</li>
+  <li><strong>Timeline:</strong> a target move-in or opening date</li>
+  <li><strong>Source:</strong> how they found you, so you know which channels work</li>
 </ul>
+<p>That is a lot of questions for one screen, so on a phone a form in short stages, starting with the easy choices, keeps more people going; <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a> explains how to qualify leads without losing them.</p>
+
+<h2>Design partner, trade and careers enquiries</h2>
+<p>A practice receives more than client enquiries: designers who want to collaborate, contractors and vendors offering their services, and job seekers. Mixing them into the client form clutters your inbox and slows replies to the people who might hire you. Studio Agama has a separate "Become a Design Partner" page with its own form, asking for name, mobile number, email, project stage and a message, and its contact page lists a separate email address for careers. Give each audience its own route, and ask job seekers to send a portfolio link rather than large files.</p>
+
+<h2>Local search, social media and the journal</h2>
+<p>Clients search by service and city, such as "interior designer in Gachibowli" or "office interior design in Pune", so service pages and project captions should use those words naturally. A journal adds depth: Studio Agama publishes articles on residential design trends in Hyderabad, Vijayawada and Vizag and on common interior design mistakes in Hyderabad. Many clients first see your work on Instagram or Pinterest, so link posts back to the full project pages, where the enquiry form is; <a href="/blog/instagram-to-website-enquiries/">turning Instagram followers into website enquiries</a> shows how.</p>
+<p>If your current site shows projects from years ago, loads slowly or can't be updated without a developer, a <a href="/website-redesign/">website redesign</a> can rebuild the portfolio while keeping the pages that already bring in enquiries.</p>
 
 <p>Many of the same principles apply to any creative portfolio; see <a href="/blog/portfolio-website-freelancers-creatives/">portfolio websites for freelancers and creatives</a>.</p>
 
-<h2>Design and performance</h2>
-<p>Your site should reflect your aesthetic, with generous white space, elegant typography and large imagery, without being slow. Large project photos must be properly compressed and served in modern formats; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
-
 <p>Selling furniture as well? See <a href="/blog/website-for-furniture-businesses/">websites for furniture showrooms and manufacturers</a>.</p>
 
-<h2>Get found locally</h2>
-<ul>
-  <li>Target searches like "interior designer in {city}" and "office interior design {city}"</li>
-  <li>Complete your Google Business Profile with project photos and reviews</li>
-  <li>Write articles answering client questions: costs, timelines, materials, trends</li>
-  <li>Share projects on Instagram, Pinterest and Houzz, linking back to your case studies</li>
-</ul>
+<p>If you design outdoor spaces such as terraces, lawns and society gardens, see <a href="/blog/website-for-landscaping-gardening-services/">websites for landscaping and gardening services</a>.</p>
 
-<p>A portfolio-led website with clear case studies helps you attract better-fit clients and justify premium fees. See what's included in a professional <a href="/wordpress-website-development/">WordPress website</a>.</p>
+<p>Civil and structural engineering consultants can present projects the same way; see <a href="/blog/website-for-civil-engineering-consultants/">websites for civil and structural engineering consultants</a>.</p>
+
+<h2>FAQs</h2>
+<h3>How many projects should an interior designer show on their website?</h3>
+<p>Usually eight to fifteen of your strongest projects, chosen to show your range. Add new ones and retire weaker ones over time rather than showing everything.</p>
+<h3>Should we show prices or budgets on our website?</h3>
+<p>Many practices explain how they charge without publishing figures. Asking for a budget range in the enquiry form, with a "not sure yet" option, helps you see which leads fit.</p>
+<h3>Can I add new projects myself after launch?</h3>
+<p>Yes. Projects can be added from the dashboard with a template for the story, images and captions, so every project page stays consistent.</p>
+<h3>Can we show renders as well as completed photos?</h3>
+<p>Yes, as long as they are labelled as renders or concepts, so visitors know which projects are built and which are designs.</p>
+<h3>How do we stop large images slowing the site?</h3>
+<p>Export images at the size they are displayed, serve modern formats, lazy-load galleries and open full-resolution versions only on request.</p>
+
+<p>If you want a portfolio site that shows how you think and brings enquiries that fit your practice, see <a href="/wordpress-website-development/">WordPress website development</a>. Share your current site or a few project photos and I will review them free and send a fixed quote.</p>
 `,
   },
   {
@@ -27631,58 +27957,111 @@ Screenshot: attached</code></pre>
   {
     slug: 'restaurant-menu-on-website',
     seoTitle: 'Restaurant Menu on Your Website: PDF vs Web Page',
-    title: 'Putting Your Restaurant Menu Online: PDF vs Web Page (and How to Do It Right)',
-    description: 'Restaurant menu on your website: why web pages beat PDFs, prices, veg markers and allergens, QR menus, updates, Google Business Profile menus and schema.',
+    title: 'Putting Your Restaurant Menu Online: PDF vs Web Page, Prices, Dietary Labels, QR Codes and Menu SEO',
+    description: 'How to put your restaurant menu on your website: web page vs PDF, prices, veg and allergen labels, photos, menu SEO, QR menus and multiple outlets.',
     date: '2026-09-27',
+    updated: '2026-10-21',
     category: 'Industries',
     related: ['website-for-restaurants', 'wordpress-seo-services', 'landing-page-design'],
     body: `
-<p>The menu is the most visited page on almost every restaurant website. Yet many restaurants upload a scanned PDF or a photo that's hard to read on a phone. A proper menu page brings more customers and is easier to keep updated.</p>
+<p>Your restaurant menu should be a proper web page: dish names, descriptions, prices and veg or non-veg markers written as text, organised into sections with jump links, quick to read on a phone and easy for your staff to update. A PDF or a photo of the printed card is slow to open, hard to read on a small screen and largely invisible to Google. Keep a PDF only as a printable extra, and point your QR codes and Google listing at the web page.</p>
+<p>The menu is the first thing I plan on <a href="/website-for-restaurants/">restaurant websites</a>: a mobile-friendly digital menu your team can change from the dashboard, linked to table reservations, WhatsApp or online ordering, Google Maps and opening hours. This guide covers the menu page in detail, from how each dish is written to schema, QR codes and menus for more than one outlet. For taking orders from the menu, see <a href="/blog/restaurant-website-online-ordering/">online ordering on your restaurant website</a>.</p>
 
-<h2>Why a web page beats a PDF</h2>
+<h2>Web page, PDF or a photo of the menu card?</h2>
+<table>
+  <thead><tr><th></th><th>Menu as a web page</th><th>PDF menu</th><th>Photo of the printed card</th></tr></thead>
+  <tbody>
+    <tr><td>On a phone</td><td>Text fits the screen, with jump links to sections</td><td>Opens a download or viewer, then needs zooming</td><td>Needs zooming, often blurry</td></tr>
+    <tr><td>Google</td><td>Dish names can be read and searched</td><td>Can be indexed, but rarely shows for dish searches</td><td>Text is not reliably read</td></tr>
+    <tr><td>Changing a price</td><td>Edit one dish in the dashboard</td><td>Edit the design file, export and re-upload</td><td>Reprint and re-photograph</td></tr>
+    <tr><td>Screen readers</td><td>Read it properly</td><td>Depends on how the file was made</td><td>Can't read it</td></tr>
+    <tr><td>Printing</td><td>Possible, but not designed for it</td><td>Best</td><td>Poor</td></tr>
+  </tbody>
+</table>
+<p>The web page is the menu; the PDF, if you keep one, is for people who want to print it for an office lunch order or a party.</p>
+
+<h2>Anatomy of a menu item</h2>
+<p>Write every dish the same way, so diners can scan quickly and nothing important is missing:</p>
+<table>
+  <thead><tr><th>Field</th><th>Example</th><th>Tip</th></tr></thead>
+  <tbody>
+    <tr><td>Name</td><td>Chettinad chicken</td><td>Use the name on your printed menu, so staff and diners mean the same dish</td></tr>
+    <tr><td>Description</td><td>Chicken cooked in a peppery roasted-spice gravy</td><td>One line on how it is cooked and what is in it, especially for regional dishes newcomers may not know</td></tr>
+    <tr><td>Portion</td><td>Half or full; serves two</td><td>Say what a portion is if prices differ by size</td></tr>
+    <tr><td>Price</td><td>Shown beside the name</td><td>State once, at the top, whether prices include taxes</td></tr>
+    <tr><td>Veg or non-veg marker</td><td>The familiar green or brown symbol</td><td>Use it on every dish, not only some</td></tr>
+    <tr><td>Dietary labels</td><td>Jain, eggless, vegan</td><td>Only where your kitchen can genuinely make it that way</td></tr>
+    <tr><td>Spice level</td><td>Mild, medium, hot</td><td>A word reads better than a row of icons</td></tr>
+    <tr><td>Availability</td><td>Weekends only; seasonal</td><td>Mark sold-out or seasonal dishes rather than deleting and re-adding them</td></tr>
+  </tbody>
+</table>
+
+<h2>Prices: show them, and keep them true</h2>
+<p>Diners use the menu to decide whether you fit their budget, so a menu without prices sends them to a delivery app to find out. Show the price on every dish, and say clearly whether taxes are included and whether a service charge applies, following current consumer guidelines on service charges. If your delivery-app prices differ from dine-in prices, say which menu the website shows. For restaurants abroad, show the local currency: on <a href="/work/southern-flavours/">Southern Flavours</a>, an Indian restaurant in Solihull, UK that I built a site for, every dish in the online shop shows its price in pounds.</p>
+
+<h2>Dietary labels and allergens</h2>
+<p>Indian diners rely on veg and non-veg markers, and many look for Jain, no onion and garlic, eggless or vegan options. Allergies are more serious still: nuts, dairy, gluten, egg and sesame can make someone ill. A few rules:</p>
 <ul>
-  <li><strong>Mobile-friendly:</strong> no pinching and zooming or waiting for a large file to download</li>
-  <li><strong>Searchable:</strong> Google can read dish names, helping you appear for searches like "best biryani near me"</li>
-  <li><strong>Easy to update:</strong> change a price in seconds</li>
-  <li><strong>Accessible:</strong> screen readers can read it</li>
-  <li><strong>Linkable:</strong> share links to specific sections</li>
+  <li>Put a short key at the top of the menu explaining every symbol and label you use.</li>
+  <li>Take allergen and dietary information from your kitchen, dish by dish, and update it when a recipe changes.</li>
+  <li>Avoid absolute claims such as "gluten-free" or "nut-free" if the kitchen can't prevent cross-contact; "made without wheat, prepared in a kitchen that uses wheat" is honest.</li>
+  <li>Add a line inviting guests with allergies to tell staff before ordering.</li>
+  <li>For longer menus, a "veg only" toggle saves vegetarian diners a lot of scrolling.</li>
 </ul>
-<p>You can still offer a PDF for printing, but make the web page the main menu.</p>
+<p>FSSAI's labelling and display rules include menu requirements for some food businesses, particularly larger chains, so ask your FSSAI consultant what applies to your licence and number of outlets. Cafes have a few labels of their own, such as plant milks and eggless bakes; see <a href="/blog/website-for-cafes-coffee-shops/">websites for cafes and coffee shops</a>.</p>
 
-<h2>What to include</h2>
+<h2>Photos: the dishes that sell the restaurant</h2>
+<p>You don't need a photo of every dish. A photo beside each signature dish, and a small gallery of the rest, keeps the menu fast and makes the best dishes stand out. Southern Flavours does this with a "Signature Creations" section of eight dishes that mixes South and North Indian cooking, from idli and dosa to dal tarka and saag paneer, which tells a first-time visitor the restaurant is not only for South Indian food. Shoot in daylight, on the plates you actually serve, and compress every image so the menu still loads quickly on mobile data.</p>
+
+<h2>Easy to use on a phone</h2>
 <ul>
-  <li>Categories: starters, mains, breads, desserts, drinks</li>
-  <li>Dish names with short, appetising descriptions</li>
-  <li>Prices, kept up to date</li>
-  <li>Veg and non-veg markers customers expect</li>
-  <li>Spice levels and allergen information</li>
-  <li>Photos of signature dishes (not every item)</li>
-  <li>Notes on taxes and service charges, if applicable</li>
+  <li>Section jump links that stay at the top of the screen as diners scroll</li>
+  <li>Sections in the order people eat: starters, mains, breads and rice, desserts, drinks</li>
+  <li>Text large enough to read without zooming, with the price aligned so it is easy to compare</li>
+  <li>A search box once the menu runs to more than a few screens</li>
+  <li>A "Book a table" or "Order" button near the menu, so the decision leads straight to action; Southern Flavours puts a "Menu &amp; Ordering" button in the hero, next to "Table Reservations"</li>
 </ul>
 
-<p>Cafes have a few menu details of their own, such as milk options, seasonal drinks and eggless bakes; see <a href="/blog/website-for-cafes-coffee-shops/">websites for cafes and coffee shops</a>.</p>
-
-<h2>Make it easy to scan</h2>
+<h2>Menu SEO and schema</h2>
+<p>People search for dishes as well as restaurants: "best Chettinad chicken in Koregaon Park" or "South Indian breakfast near me". A text menu lets Google see that you serve them. To help it further:</p>
 <ul>
-  <li>Sticky category navigation on mobile</li>
-  <li>Clear typography and spacing</li>
-  <li>Highlight bestsellers and chef's specials</li>
+  <li>Give the menu page a clear title with your name and area, such as "Menu | Restaurant name, Area".</li>
+  <li>Write fuller descriptions for the dishes you are known for, rather than one-word entries.</li>
+  <li>Give a distinct menu its own page when people search for it, such as a weekend breakfast buffet, a thali lunch or a party menu.</li>
+  <li>Link your Google Business Profile's menu link to the menu page, and keep the two consistent.</li>
+  <li>Add Restaurant schema with a link to your menu page, so search engines connect the menu with the restaurant.</li>
 </ul>
+<p>Schema.org also has markup for menus, sections and individual dishes. At the time of writing, Google doesn't show a special search feature for it, so treat it as a help to understanding rather than a way to rank; <a href="/blog/schema-markup-explained/">schema markup explained</a> covers what structured data can and can't do.</p>
 
-<h2>QR code menus</h2>
-<p>Link table QR codes to your menu web page, not a PDF. It loads faster and you can update it without reprinting codes. Add UTM tags to measure scans; see <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</p>
+<h2>Keeping the menu current</h2>
+<p>An out-of-date menu causes awkward moments at the table and bad reviews online. Decide who updates it and when:</p>
+<ol>
+  <li>Change prices on the website the same day the printed menu changes.</li>
+  <li>Mark dishes unavailable for the day from the dashboard instead of leaving them on the page.</li>
+  <li>Add seasonal and festival dishes with an "available until" note, then switch them off.</li>
+  <li>Check the website menu against your Google Business Profile and delivery apps once a month.</li>
+</ol>
+<p>If you also take orders online, building the ordering menu from the same dish data saves keeping two lists in step.</p>
 
-<h2>Connect to ordering</h2>
-<p>Add "Order online" buttons linking to your direct ordering system or delivery partners; see <a href="/blog/restaurant-website-online-ordering/">online ordering for restaurants</a>.</p>
+<h2>QR code menus that never need reprinting</h2>
+<p>A table QR code should open your menu web page, not a PDF. Point it at a stable address such as yourrestaurant.com/menu/, so changing dishes or prices never means reprinting the codes, and add <a href="/blog/utm-tags-explained/">UTM tags</a> so you can see how many scans you get in analytics; <a href="/blog/qr-codes-for-business-website/">QR codes for your business</a> explains how. Keep printed menus available for guests who prefer them, including older diners.</p>
 
-<h2>Google Business Profile menu</h2>
-<p>Add your menu (or a link to it) to your Google Business Profile, and keep it consistent with your website; see <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
+<h2>Menus for more than one outlet</h2>
+<p>If all outlets serve the same dishes at the same prices, one menu page with a note on any outlet-only items is enough. If dishes or prices differ, give each outlet its own menu page linked from its own location page and its own Google Business Profile, so a diner in one area doesn't order a dish only served in another. Each outlet's hours, phone and booking link belong on the same page; <a href="/blog/multi-location-business-website/">websites for businesses with several branches</a> covers location pages in more depth.</p>
 
-<h2>Menu structured data</h2>
-<p>Restaurant schema can include a link to your menu, helping search engines connect your menu page with your restaurant; see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+<h2>FAQs</h2>
+<h3>Is a PDF menu bad for my restaurant website?</h3>
+<p>As the only menu, yes: it is slow and awkward on phones and does little for search. As a printable extra beside a web page menu, it is fine.</p>
+<h3>Should I show prices on my online menu?</h3>
+<p>Yes. Diners use prices to decide where to eat, and a menu without them often sends people elsewhere to check. State whether taxes are included.</p>
+<h3>Can I update the menu myself?</h3>
+<p>Yes. On the sites I build, the menu is managed from the WordPress dashboard, so staff can add dishes, change prices or mark items unavailable without a developer.</p>
+<h3>Does menu schema help my restaurant rank?</h3>
+<p>Restaurant schema with a link to your menu helps search engines understand your site. At the time of writing, Google doesn't display a special feature for menu markup, so a clear, text-based menu page matters more.</p>
+<h3>Where should my table QR codes point?</h3>
+<p>To your menu web page at a fixed address, so you can change the menu without reprinting the codes.</p>
 
-<h2>Keep it current</h2>
-<p>An outdated price or a dish you no longer serve causes awkward moments at the table. Update the menu whenever the physical menu changes.</p>
+<p>If diners currently have to zoom into a photographed menu card, I can turn it into a fast, searchable menu page your staff can update. See <a href="/website-for-restaurants/">websites for restaurants and cafes</a>, and share your current menu and Google Maps listing for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -28092,115 +28471,196 @@ Screenshot: attached</code></pre>
   },
   {
     slug: 'ngo-website-donations-80g',
-    seoTitle: 'NGO Website Donations: 80G Receipts, FCRA & Payments',
-    title: 'Online Donations for NGOs and Trusts: 80G Receipts, FCRA and Payment Setup',
-    description: 'Online donations for Indian NGOs and trusts: donation forms, payment gateways, 80G receipts, PAN collection, FCRA for foreign funds and transparency.',
+    seoTitle: 'NGO Website Donations: 80G Receipts, FCRA and Payments',
+    title: 'Online Donations for NGOs and Trusts: Donation Pages, 80G Receipts, FCRA, Transparency and Volunteers',
+    description: 'NGO donation websites explained: cause pages, payment gateways, 80G receipts and FCRA with your CA, transparency pages, volunteer forms and impact stories.',
     date: '2026-09-27',
+    updated: '2026-10-21',
     category: 'Industries',
     related: ['website-for-temples-and-ngos', 'wordpress-website-development', 'landing-page-design'],
     body: `
-<p>A donation page can bring steady support for an NGO, trust or temple, but only if giving is easy, donors trust you, and the paperwork is handled correctly. This guide covers the website side. For tax and legal requirements, always confirm with your chartered accountant.</p>
+<p>An NGO website raises money when it answers a donor's doubts before they reach the payment button: is this organisation real and properly registered, what exactly will my money do, do I get a tax benefit, is paying online safe, and will I hear what happened? Get those answers right, add a short donation form backed by a payment gateway, and handle 80G and foreign donations exactly as your chartered accountant advises, and online giving becomes a steady source of support rather than an occasional bank transfer.</p>
+<p>I build <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a> with online donation pages, receipts sent by email, events, history and impact pages, galleries and volunteer sign-up forms, in Hindi or other languages where needed. This guide is about the donor's side of an NGO website and the rules that shape it.</p>
+<p>For the hands-on setup, from gateway documents to UPI QR codes and receipt contents, see <a href="/blog/temple-ngo-website-online-donations/">how to set up online donations on a temple, trust or NGO website</a>. Nothing here is tax or legal advice: confirm the details with your CA.</p>
 
-<h2>A donation form that works</h2>
-<ul>
-  <li>Suggested amounts with a custom amount option</li>
-  <li>One-time and monthly giving</li>
-  <li>Name, email and phone</li>
-  <li>PAN and address, needed for donors who want an 80G tax receipt</li>
-  <li>An option to dedicate the donation (in memory of, on behalf of)</li>
-  <li>A clear note on how the money will be used</li>
-</ul>
-<p>Keep the form short; ask for PAN and address only from donors who want the tax benefit.</p>
+<h2>What donors check before they give</h2>
+<table>
+  <thead><tr><th>Donor's question</th><th>Page that answers it</th><th>What to include</th></tr></thead>
+  <tbody>
+    <tr><td>Is this organisation real?</td><td>About and registration</td><td>Legal name, registration type (trust, society or Section 8 company), registration numbers held, address, trustees</td></tr>
+    <tr><td>What will my money do?</td><td>A page for each programme or appeal</td><td>The need, what you do about it, real photos and costs taken from your own records</td></tr>
+    <tr><td>Do I get a tax benefit?</td><td>The donation page itself</td><td>80G status stated plainly, and what the donor receives and when</td></tr>
+    <tr><td>Where does the money go overall?</td><td>Transparency or financials</td><td>Annual reports and audited accounts</td></tr>
+    <tr><td>Is paying online safe?</td><td>Donation page and footer</td><td>A recognised payment gateway, privacy policy, refund policy and contact details</td></tr>
+    <tr><td>Can I help without money?</td><td>Volunteer and in-kind pages</td><td>What help you need, when and where</td></tr>
+    <tr><td>What happened after I gave?</td><td>Updates, stories and emails</td><td>Progress on the programme, shared with consent</td></tr>
+  </tbody>
+</table>
 
-<h2>Payment options</h2>
+<h2>Donation pages that explain the cause</h2>
+<p>A bare form titled "Donate" asks for trust it hasn't earned. Give each programme or appeal its own page, with the form on it:</p>
 <ul>
-  <li>UPI, cards, net banking and wallets through a payment gateway that supports non-profits</li>
-  <li>Recurring donations through card mandates or UPI AutoPay</li>
-  <li>Bank transfer details for large donors</li>
+  <li><strong>The need, in a paragraph:</strong> who you help, where, and why it matters now.</li>
+  <li><strong>What you actually do,</strong> with photos from your own work.</li>
+  <li><strong>Suggested amounts tied to real things,</strong> such as a month of school supplies or a medical camp, using costs your accounts support. If you can't stand behind a figure, leave it out.</li>
+  <li><strong>A "where it's needed most" option,</strong> so donors can give without restricting the money to one programme.</li>
+  <li><strong>Progress towards a goal,</strong> only with real figures that someone updates.</li>
+  <li><strong>A short FAQ:</strong> receipts, 80G, monthly giving and who to contact.</li>
 </ul>
-<p>See <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
+<p>If donors choose a purpose, your accounts need to honour it, so agree with your CA how restricted donations are recorded before you offer a long list of purposes.</p>
 
-<h2>80G receipts</h2>
-<p>If your organisation has 80G registration, donors can claim a tax deduction. Your website should:</p>
+<h2>Payment options and gateways</h2>
+<p>Most NGOs offer three routes: a donation form connected to a payment gateway as the main route, a UPI QR code for people at events or your office, and bank details for large donors and companies. Gateways check your registration documents, a current account held by the organisation and your website's policy pages before activating, and their fees, settlement times and support for monthly giving differ. Compare them on what matters to you rather than on brand; <a href="/blog/payment-gateways-india-compared/">choosing a payment gateway in India</a> lists the questions to ask.</p>
+<p>Monthly giving is worth offering once one-time donations work. Where your gateway supports card mandates or UPI AutoPay, a monthly option on the form, with an easy way to cancel, gives you predictable support.</p>
+
+<h2>80G: what the website should say and do</h2>
+<p>Section 80G lets eligible donors claim a tax deduction for donations to organisations that hold a valid 80G registration. The website's job is to state your status accurately and collect what is needed, not to promise a tax outcome. The Income-tax Act, 2025, which replaced the 1961 Act from April 2026, renumbers many provisions and forms, so the section and form names your CA uses may differ from the familiar ones:</p>
 <ul>
-  <li>Clearly state your 80G status and registration details</li>
-  <li>Collect the donor details your CA says are required, typically name, address and PAN</li>
-  <li>Send an automatic acknowledgement email with transaction details</li>
+  <li><strong>Only if you hold it.</strong> Show the 80G registration number and its validity period. Under the current rules, approvals are generally granted for a limited period and must be renewed, so update the page when yours is renewed. Without 80G, tell donors plainly that their gift won't qualify for the deduction.</li>
+  <li><strong>PAN only when needed.</strong> A tick box such as "I want an 80G receipt" reveals PAN and address fields, so other donors are not asked for them.</li>
+  <li><strong>Acknowledgement, then certificate.</strong> The email sent straight after payment is an acknowledgement. At the time of writing, donors claim the deduction with a certificate, Form 10BE, that is generated only after the organisation has filed its annual statement of donations with the tax department, so explain this in the acknowledgement along with the timing your CA confirms.</li>
+  <li><strong>Cash.</strong> Cash donations above a limit set in the Income Tax Act are not eligible for the deduction, which is one more reason to encourage online payment.</li>
+  <li><strong>The rate of deduction</strong> depends on how the organisation is registered, so don't state a figure your CA hasn't confirmed.</li>
 </ul>
-<p>Organisations are also required to report donations to the Income Tax Department, after which donors receive their official certificate. Your CA will guide the exact process and timelines. Note that large cash donations aren't eligible for the deduction, which is another reason to encourage online payment.</p>
+<p>Your 12A registration, which concerns the organisation's own tax exemption, can sit alongside 80G on the registration page.</p>
 
 <h2>Foreign donations and FCRA</h2>
-<p>Indian NGOs generally need FCRA registration to accept donations from foreign sources, and foreign contributions must be received in the designated FCRA bank account. If you don't have FCRA registration, make it clear that you can only accept donations from Indian citizens and residents, and add a nationality check to the form. Take professional advice on FCRA compliance.</p>
-
-<h2>Build trust and transparency</h2>
+<p>Under the Foreign Contribution (Regulation) Act, an NGO generally needs FCRA registration or prior permission to accept contributions from foreign sources, and those contributions must be received in its designated FCRA bank account. What counts as a foreign source, including how donations from Indian citizens living abroad are treated, has specific rules, so take professional advice. For the website, that means:</p>
 <ul>
-  <li>Registration details: trust or society registration, 12A, 80G and FCRA (if applicable)</li>
-  <li>Annual reports and audited financials</li>
-  <li>Impact stories with photos, with consent</li>
-  <li>How donations are used, such as "₹500 provides…" only if accurate</li>
-  <li>Trustees and team</li>
+  <li><strong>Without FCRA:</strong> switch off international cards, and add a declaration on the form that the donor is an Indian citizen.</li>
+  <li><strong>With FCRA:</strong> route foreign donations separately so they reach the designated account, and show your FCRA registration number.</li>
+  <li><strong>Disclosure:</strong> FCRA-registered organisations have reporting and disclosure duties for foreign contributions, which can include publishing details on their website. Confirm the current requirements and who will keep that page updated.</li>
 </ul>
 
-<h2>Thank donors properly</h2>
-<p>A thank-you page, an immediate email receipt and regular updates on impact encourage repeat giving; see <a href="/blog/thank-you-pages-forms/">thank-you pages</a>.</p>
+<h2>Transparency pages for the sceptical donor</h2>
+<p>Many donors, and most companies considering CSR funding, look for a page that sets out:</p>
+<ul>
+  <li>The legal identity: registration certificate details, PAN, and 12A, 80G, FCRA and CSR-1 numbers, each only where held</li>
+  <li>Governance: the names of trustees or board members, and key staff</li>
+  <li>Annual reports and audited financial statements as downloadable files, year by year</li>
+  <li>How funds are split between programmes and administration, only as your accounts show it</li>
+  <li>Your privacy policy (see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policies for Indian websites</a>), a refund policy for mistaken donations and, if you work with children, your safeguarding approach</li>
+</ul>
 
-<p>For the wider website, see <a href="/blog/temple-ngo-website-online-donations/">temple and NGO websites</a>.</p>
+<h2>Volunteer and in-kind forms</h2>
+<p>Many supporters can give time or goods rather than money. A volunteer form should ask only what you need: name, phone, city, availability, skills and areas of interest, with a consent line and a link to your privacy notice, in line with India's DPDP Act; <a href="/blog/dpdp-act-website-basics/">DPDP basics for small business websites</a> covers what notice and consent involve. Say who will get in touch, and if volunteers will work with children, explain your screening process. For in-kind donations, list what you accept and what you can't use, with drop-off times, so you don't receive goods you have to turn away.</p>
+
+<h2>Impact stories, with consent and dignity</h2>
+<p>Stories persuade more than statistics, but they involve real people who often have little power to object. Before publishing:</p>
+<ul>
+  <li>Get written consent from the person, and a parent or guardian for children, explaining where the story and photos will appear, and remove them promptly if consent is withdrawn</li>
+  <li>Avoid full names with exact locations for vulnerable people; change names where needed and say so</li>
+  <li>Choose photos that show people with dignity, not images designed to provoke pity</li>
+  <li>Use impact figures only from your own records</li>
+</ul>
+<p>After a donation, a <a href="/blog/thank-you-pages-forms/">thank-you page</a> and an immediate acknowledgement start the relationship, and an occasional <a href="/blog/email-newsletter-small-business/">email newsletter</a> with programme updates, sent only to donors who agreed to receive it, is what turns first-time donors into regular ones.</p>
+
+<h2>FAQs</h2>
+<h3>Can our NGO website issue 80G certificates automatically?</h3>
+<p>The website can send an instant acknowledgement with the transaction details. The deduction certificate itself (Form 10BE at the time of writing) comes later, once the organisation has filed its statement of donations, and only an organisation with valid 80G registration can issue it. Your CA will confirm the process and timing.</p>
+<h3>Can we accept donations from abroad on our website?</h3>
+<p>Generally only with FCRA registration or prior permission, and into the designated FCRA bank account. Without it, switch off international cards and add an Indian-citizenship declaration to the form. Get professional advice before accepting any money from abroad.</p>
+<h3>Which payment gateway is best for an NGO?</h3>
+<p>The one that will onboard your type of organisation, supports UPI and the payment methods your donors use, offers monthly giving if you want it, settles funds on terms that suit you and has fees you are comfortable with. Check current terms with each provider.</p>
+<h3>Do we need to publish our accounts on the website?</h3>
+<p>It is strongly advisable. Annual reports and audited statements are what serious donors and CSR teams look for, and some registrations bring their own disclosure duties, so confirm those with your CA.</p>
+<h3>Can donors set up monthly donations?</h3>
+<p>Yes, where your gateway supports recurring payments through card mandates or UPI AutoPay. Make cancelling easy and send an acknowledgement for every payment.</p>
+
+<p>If your NGO still collects most donations by sharing bank details on WhatsApp, I can build a donation website that donors trust and your team can update. See <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a> and share your current site or social page and I will review it free and send a fixed quote.</p>
 `,
   },
   {
     slug: 'solar-company-lead-generation',
-    seoTitle: 'Lead Generation for Solar Companies: Website Tactics',
-    title: 'Solar Lead Generation: How Rooftop Solar Companies Can Get More Enquiries Online',
-    description: 'Lead generation for solar companies: savings calculators, subsidy and net metering explainers, project proof, qualifying forms, follow-up and local SEO.',
+    seoTitle: 'Solar Lead Generation: How Installers Get Quality Leads',
+    title: 'Solar Lead Generation: How Rooftop Solar Companies Can Get More Enquiries Online, Qualify Them and Turn Them Into Site Surveys',
+    description: 'Solar lead generation for installers: ad landing pages, forms asking roof type and bill range, WhatsApp follow-up, call tracking and local SEO.',
     date: '2026-09-27',
+    updated: '2026-10-21',
     category: 'Industries',
     related: ['website-for-solar-and-power-companies', 'landing-page-design', 'wordpress-seo-services'],
     body: `
-<p>Rooftop solar is a considered purchase. Homeowners and businesses research savings, subsidies and installers before they call. A website that answers those questions honestly and captures the right details generates better leads than one that just says "Go solar!"</p>
+<p>Solar lead generation works when three things line up: the right channels bring people who are actually considering solar, a focused page and a short qualifying form turn them into enquiries your team can price, and fast follow-up turns those enquiries into site surveys before a competitor gets there. Most installers who complain about lead quality have a problem in one of those three places, not a shortage of traffic.</p>
+<p>I build <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> and <a href="/landing-page-design/">landing pages for ad campaigns</a>, with quote forms, WhatsApp and conversion tracking set up. The <a href="/blog/solar-company-website-guide/">solar company website guide</a> covers the pages on the main site. This guide covers the pipeline around it: where leads come from, how to qualify them and what to do in the hours after one arrives.</p>
 
-<h2>1. A savings calculator</h2>
-<p>Ask for the monthly electricity bill and location, and estimate system size, cost range and payback period. Make assumptions clear (tariff, sunlight hours, costs) and present results as estimates. Calculators are engaging and qualify leads at the same time.</p>
+<h2>Where solar leads come from</h2>
+<p>Each channel brings a different kind of buyer, and each needs a different landing point:</p>
+<table>
+  <thead><tr><th>Channel</th><th>Buyer's state of mind</th><th>Where to send them</th><th>What to watch</th></tr></thead>
+  <tbody>
+    <tr><td>Google search ads</td><td>Actively comparing installers or prices</td><td>A landing page for that audience: homes, societies or businesses</td><td>Search terms from job seekers, students and people wanting only scheme information</td></tr>
+    <tr><td>Google Maps and your Business Profile</td><td>Looking for someone nearby they can trust</td><td>Calls, WhatsApp and your website from the profile</td><td>Reviews, photos and service areas kept current</td></tr>
+    <tr><td>Facebook and Instagram ads</td><td>Interested, but often not yet researching</td><td>A landing page or an instant form with qualifying questions</td><td>A high share of casual or unreachable leads</td></tr>
+    <tr><td>Click-to-WhatsApp ads</td><td>Happy to chat, rarely ready for a form</td><td>A WhatsApp conversation with quick qualifying questions</td><td>Chats that go nowhere without a fast first reply</td></tr>
+    <tr><td>Articles and city pages</td><td>Researching subsidy, savings or suitability</td><td>The article, then the calculator or survey booking</td><td>Slow to build, but leads arrive without ad spend</td></tr>
+    <tr><td>Referrals and neighbours</td><td>Already trusts you through someone they know</td><td>A referral page or a direct call</td><td>Asking at handover, when customers are happiest</td></tr>
+    <tr><td>Listing sites</td><td>Mixed; often sent to several suppliers</td><td>Your own site when they check you</td><td>Shared leads that need very quick follow-up</td></tr>
+  </tbody>
+</table>
+<p>If you are choosing between a WhatsApp-only campaign and a landing page, <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs a landing page</a> compares the trade-offs.</p>
 
-<h2>2. Explain subsidies and net metering</h2>
+<h2>Landing pages built for solar campaigns</h2>
+<p>Sending ad clicks to the homepage asks a homeowner to find their own way through commercial projects and battery products. Give each campaign a page about one audience and one offer:</p>
 <ul>
-  <li>Explain government schemes for residential rooftop solar, such as PM Surya Ghar: Muft Bijli Yojana, in plain language</li>
-  <li>Link to the official portal for current subsidy amounts and eligibility, which can change</li>
-  <li>Explain how net metering works with your state's electricity distribution company</li>
-  <li>Describe the paperwork you handle for customers</li>
+  <li><strong>Homes:</strong> the subsidy process as you handle it, what a survey involves, photos of installations on similar homes in that city, and a survey booking form.</li>
+  <li><strong>Housing societies:</strong> what solar can power in common areas, how committee approval works and a request for a presentation to the committee.</li>
+  <li><strong>Businesses:</strong> capacity examples from your own projects, the assumptions behind any payback estimate, monitoring and AMC, and a site assessment request.</li>
 </ul>
+<p>Keep claims checkable. "Free electricity", "zero bill" or a fixed savings figure in an ad sets up a disappointed customer, and ad platforms review misleading claims too. Show the process, real projects and an honest estimate instead, and keep the page light enough to load quickly on mobile data, because every visitor who leaves while it loads has already cost you the click.</p>
 
-<h2>3. Show real projects</h2>
+<h2>Qualifying forms: what to ask</h2>
+<p>A solar lead your team can't price is just a phone number. A few well-chosen questions let sales prepare before the first call and spot enquiries you can't serve:</p>
+<table>
+  <thead><tr><th>Question</th><th>Why it matters</th><th>How to ask it</th></tr></thead>
+  <tbody>
+    <tr><td>Property type</td><td>Decides the proposal and who signs off</td><td>Buttons: independent house, flat in a society, shop or office, factory</td></tr>
+    <tr><td>PIN code</td><td>Confirms you serve the area and which DISCOM applies</td><td>A short text field</td></tr>
+    <tr><td>Monthly bill range</td><td>A first guide to system size</td><td>A dropdown of ranges your team chooses, with "not sure"</td></tr>
+    <tr><td>Roof type</td><td>Affects the mounting structure and the survey</td><td>RCC, metal sheet, tiled, or "no roof access"</td></tr>
+    <tr><td>Do you own the roof?</td><td>Tenants and flat owners usually need permission</td><td>Yes, no, or society-owned</td></tr>
+    <tr><td>Subsidy interest</td><td>Tells sales which process to explain</td><td>Yes, no or not sure</td></tr>
+    <tr><td>Best time to call</td><td>Raises the chance of reaching them</td><td>Morning, afternoon or evening</td></tr>
+  </tbody>
+</table>
+<p>On a phone, split these into two or three short steps, with property type and PIN code first and contact details last; <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a> explains why that order helps. Ask for an electricity bill or roof photos later, on WhatsApp, rather than on a public form. For Meta instant forms, keep to two or three qualifying questions, because every extra field there costs completions.</p>
+
+<h2>A follow-up playbook for the first days</h2>
+<p>Solar buyers often contact several installers, and the first company to have a useful conversation is at an advantage. A simple sequence:</p>
+<ol>
+  <li><strong>Instantly:</strong> an automatic WhatsApp or email reply confirming the request, naming who will call and when, within your real working hours.</li>
+  <li><strong>As soon as possible:</strong> the first call, with the form answers in front of the caller, so the conversation starts with their roof and bill rather than "how can I help?".</li>
+  <li><strong>If they don't answer:</strong> a WhatsApp message with your name, a link to projects in their area and a request for a convenient time.</li>
+  <li><strong>Before the survey:</strong> ask for a recent bill and roof photos on WhatsApp, and confirm the date and surveyor.</li>
+  <li><strong>After the survey:</strong> send the proposal with its assumptions stated, then follow up on agreed dates rather than every day.</li>
+</ol>
+<p>Give every lead one owner and a status (new, contacted, survey booked, proposal sent, won, lost with a reason), in a shared sheet or CRM. If you message customers through the WhatsApp Business Platform, follow-ups sent long after the customer's last message generally need pre-approved templates under Meta's current rules, so prepare them in advance. <a href="/blog/follow-up-website-leads-fast/">How to follow up website leads</a> covers alerts and auto-replies. On a busy day, call first the leads whose answers fit your best customers: own roof, a bill range worth a system, and a PIN code you serve.</p>
+
+<h2>Tracking calls, chats and real outcomes</h2>
+<p>Form submissions, WhatsApp clicks and calls should all be counted as conversions in GA4 and your ad accounts, and every ad link should carry UTM tags. Calls need extra care, because a tap on the call button doesn't tell you whether the call connected; <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a> explains tracking numbers per source and how to use them without upsetting your Google listing.</p>
+<p>The figure that matters is not cost per lead but cost per survey booked and per order. Record which source each surveyed and signed customer came from, review it monthly, and move budget toward the campaigns that produce surveys. Google Ads can also accept offline conversions, so the platform learns from sales rather than form fills once you have enough of them.</p>
+
+<h2>Local SEO for steady leads without ads</h2>
 <ul>
-  <li>Project gallery with system size, location type and photos</li>
-  <li>Before-and-after electricity bills, with customer consent</li>
-  <li>Video testimonials from homeowners and businesses</li>
+  <li><strong>Google Business Profile:</strong> the closest category Google offers, your service areas, photos of real installations and a link to your survey booking page.</li>
+  <li><strong>Reviews:</strong> ask every customer after handover and reply to each one; genuine reviews mentioning the work done carry weight with the next buyer.</li>
+  <li><strong>City or district pages:</strong> only where you have genuinely installed, each with local projects, the DISCOM and anything specific to that area; <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> covers how to do this without thin copies.</li>
+  <li><strong>Articles:</strong> the subsidy process in your state, net metering with your DISCOM, monsoon performance and cleaning, each linking to the calculator or survey booking.</li>
 </ul>
+<p>Write FAQs in the words customers use, including the localities and districts you cover, and answer the questions your sales team hears on every call: how long installation takes, what happens on cloudy days, who handles the subsidy paperwork and what maintenance involves.</p>
 
-<h2>4. Separate residential and commercial</h2>
-<p>Homeowners care about subsidies, EMI options and bill savings. Businesses care about ROI, capex vs opex models and downtime during installation. Give each audience its own page.</p>
+<h2>FAQs</h2>
+<h3>What is the best way to get solar leads?</h3>
+<p>For most installers, a mix: Google search ads and a strong Google Business Profile for buyers who are ready now, articles and city pages that keep bringing researchers, and referrals from happy customers. Whatever the channel, a focused landing page and fast follow-up decide how many become surveys.</p>
+<h3>Are bought or shared solar leads worth it?</h3>
+<p>They can be, but shared leads are often sold to several installers at once, so the fastest caller usually wins. Test a small batch, track how many become surveys and orders, and compare that with your own campaigns.</p>
+<h3>What should a solar lead form ask?</h3>
+<p>Property type, PIN code, a monthly bill range, roof type, whether they own the roof and a good time to call. Ask for bills and photos later on WhatsApp.</p>
+<h3>How quickly should we contact a solar lead?</h3>
+<p>As soon as you reasonably can during working hours, with an instant automatic reply in the meantime. Buyers comparing installers tend to go with the first one who gives them useful answers.</p>
+<h3>Google Ads or Facebook ads for solar?</h3>
+<p>Google search ads reach people already looking for an installer, so leads tend to be closer to buying. Facebook and Instagram can reach more people at a lower cost per lead, but they need stronger qualification. Many installers test both and judge them by surveys booked.</p>
 
-<h2>5. Qualifying lead forms</h2>
-<p>Ask for name, phone, pin code, monthly bill and property type (house, apartment, commercial). This lets your team prioritise and prepare for the call. Offer WhatsApp for people who prefer chat.</p>
-
-<h2>6. Respond fast</h2>
-<p>Solar buyers often contact several installers. A quick callback, ideally within an hour, makes a big difference. Route leads instantly by email and WhatsApp to your sales team.</p>
-
-<h2>7. Build trust</h2>
-<ul>
-  <li>Panel and inverter brands you use</li>
-  <li>Warranty and maintenance terms</li>
-  <li>Empanelment or certifications you actually hold</li>
-  <li>Years in business and number of installations, if you can support them</li>
-</ul>
-
-<h2>8. Local SEO</h2>
-<ul>
-  <li>Pages for cities and districts you serve, with local projects</li>
-  <li>A complete Google Business Profile with project photos and reviews</li>
-  <li>Articles answering common questions like payback period, maintenance and monsoon performance</li>
-</ul>
-
-<p>See the <a href="/blog/solar-company-website-guide/">solar company website guide</a> and <a href="/website-for-solar-and-power-companies/">websites for solar companies</a>.</p>
+<p>If your leads are plentiful but rarely turn into surveys, the fix is usually the page, the form and the follow-up. See <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> for the full site, or <a href="/landing-page-design/">landing page design</a> for campaign pages with tracking, and share your current site or ads for a free review and a fixed quote.</p>
 `,
   },
   {
