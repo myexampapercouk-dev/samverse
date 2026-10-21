@@ -463,7 +463,7 @@ const PAGES = [
     readingFrom: 'hire-wordpress-developer',
     faqs: [
       ['Are you based in Pune?', 'Yes. I\'m a freelance WordPress developer based in Pune, working with businesses in Pune, Pimpri-Chinchwad and Mumbai, and with clients across India and abroad online.'],
-      ['How much does a website cost?', 'It depends on the number of pages, the features and whether you need an online store. The website cost calculator gives a quick estimate, or message me for a fixed quote within 24 hours.'],
+      ['How much does a website cost?', 'It depends on the number of pages, the features and whether you need an online store. The website cost calculator gives a quick estimate, or message me for a fixed quote, usually within 24 hours.'],
       ['How long does a website take?', 'Most business websites take a few weeks, depending on the number of pages and how quickly content is ready. You get a clear timeline with the quote.'],
       ['Can you help my business show up on Google in Pune?', 'Yes. I build websites with local SEO foundations, service pages and structured data, and can help your Google Business Profile and website work together. Nobody can honestly guarantee rankings, but these foundations give you the best chance.'],
       ['Do you work with businesses outside Pune?', 'Yes. Most of my work happens over WhatsApp, calls and video, so I work with clients across India and abroad, including a restaurant in the UK.'],

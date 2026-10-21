@@ -564,7 +564,7 @@ ${SUMMARIES[post.slug].map(t => `              <li>${esc(t)}</li>`).join('\n')}
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
-            <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote within 24 hours.</p>
+            <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
               <a href="${waLink}" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
@@ -596,7 +596,7 @@ ${toc.map(([id, t]) => `              <li><a href="#${id}">${t}</a></li>`).join(
           </nav>
           <div class="side-cta">
             <strong>Need help with this?</strong>
-            <p>Get a clear plan and a fixed quote within 24 hours.</p>
+            <p>Get a clear plan and a fixed quote, usually within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
             <a href="${waLink}" class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
