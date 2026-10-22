@@ -120,6 +120,7 @@ module.exports = [
   },
   {
     slug: 'india-automation-hub',
+    noindex: true, // kept out of Google at the owner's request (21 Oct 2026)
     name: 'India Automation Hub',
     url: 'https://indiaautomationhub.com/',
     industry: 'Industrial Automation Media',

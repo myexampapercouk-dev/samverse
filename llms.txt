@@ -42,7 +42,6 @@
 ## Case studies
 - [Third Eye Social](https://samverse.space/work/third-eye-social/): A bold, dark-themed website for an AI automation agency that helps businesses deploy AI agents across sales, support, finance, HR and operations.
 - [Vansh Group](https://samverse.space/work/vansh-group/): A professional B2B website for an electronics OEM with decades of experience, presenting its product development services, infrastructure and brand partnerships.
-- [India Automation Hub](https://samverse.space/work/india-automation-hub/): A content-rich news and resource portal for India's industrial automation community, covering robotics, control systems and Industry 4.0.
 - [Streak Creative](https://samverse.space/work/streak-creative/): A modern, editorial website for a growth marketing agency, built around its proprietary LOOP methodology and industry-specific offers.
 - [Our Temples](https://samverse.space/work/our-temples/): A large directory and travel guide of Hindu temples across India and abroad, searchable by state and by deity, with videos, slokas and a blog.
 - [Dr. Sudhir Arora](https://samverse.space/work/dr-sudhir-arora/): A personal-brand website for an experienced doctor offering mind-body wellness education, online consultations and structured coaching programs.

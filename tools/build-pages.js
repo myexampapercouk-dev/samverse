@@ -1013,7 +1013,10 @@ console.log('built /work/');
 WORK.forEach((w, i) => {
   const dir = path.join(ROOT, 'work', w.slug);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'index.html'), renderWork(w, i));
+  let html = renderWork(w, i);
+  // Case studies marked noindex stay on the site but are kept out of Google (and the sitemap below).
+  if (w.noindex) html = html.replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex, nofollow">');
+  fs.writeFileSync(path.join(dir, 'index.html'), html);
   console.log('built', `/work/${w.slug}/`);
 });
 
@@ -1114,7 +1117,7 @@ ${PAGES.filter(p => p.type === 'service').map(p => md(p.nav, `${SITE}/${p.slug}/
 ${PAGES.filter(p => p.type === 'industry').map(p => md(p.nav, `${SITE}/${p.slug}/`, p.description)).join('\n')}
 
 ## Case studies
-${WORK.map(w => md(w.name, `${SITE}/work/${w.slug}/`, w.summary)).join('\n')}
+${WORK.filter(w => !w.noindex).map(w => md(w.name, `${SITE}/work/${w.slug}/`, w.summary)).join('\n')}
 
 ## Blog topics
 ${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => md(t.name, `${SITE}${topicHref(t)}`, t.seoDesc)).join('\n')}
@@ -1137,7 +1140,7 @@ const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0'
 const urls = [{ loc: `${SITE}/`, pr: '1.0' }, { loc: `${SITE}/solutions/`, pr: '0.9' }, ...PAGES.map(p => ({ loc: `${SITE}/${p.slug}/`, pr: '0.8' })),
   { loc: `${SITE}/blog/`, pr: '0.8' }, ...BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => ({ loc: `${SITE}${topicHref(t)}`, pr: '0.7' })),
   ...POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date })),
-  { loc: `${SITE}/work/`, pr: '0.8' }, ...EXTRA.map(x => ({ loc: `${SITE}/${x.slug}/`, pr: x.priority || '0.8' })), ...WORK.map(w => ({ loc: `${SITE}/work/${w.slug}/`, pr: '0.7' }))];
+  { loc: `${SITE}/work/`, pr: '0.8' }, ...EXTRA.map(x => ({ loc: `${SITE}/${x.slug}/`, pr: x.priority || '0.8' })), ...WORK.filter(w => !w.noindex).map(w => ({ loc: `${SITE}/work/${w.slug}/`, pr: '0.7' }))];
 
 // Pages without a post date get a lastmod that only moves when their <main> content changes,
 // so Google can trust it. Fingerprints live in tools/lastmod.json; new entries start from the file's last git commit.

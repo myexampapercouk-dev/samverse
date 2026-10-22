@@ -20037,6 +20037,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>Galleries of real setups sell scale better than any description: the empty lawn in the afternoon and the finished hangar at night, the stage before the band arrives, the LED wall in daylight. Caption each with the type of event, the venue type and the items used, and get permission from the venue and family before publishing.</p>
 <p>Equipment rental sites share a pattern. <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a diesel generator rental company I built a site for, lists events among the customers it serves, splits its fleet into capacity bands with a page for each, and uses those pages to answer each band's own questions; one of them lists what affects the rental price, such as hire duration, fuel arrangement, whether an operator is included and distance from the yard. Tents by size and sound sets by crowd size can work the same way. <a href="/blog/equipment-rental-website-guide/">Equipment and generator rental websites</a> goes into that structure in detail.</p>
 
+<p>Performers face the same date and package questions; see <a href="/blog/website-for-djs-live-bands/">websites for wedding DJs and live bands</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Can customers check availability on my rental website?</h3>
 <p>Yes. Start with a date-and-items enquiry that you confirm on WhatsApp, and add a live calendar for big-ticket items once every booking goes into the same system.</p>
