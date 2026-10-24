@@ -27809,7 +27809,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Website quotes vary so much because each developer is usually pricing a different job: a lightly edited template or a custom design, your text or theirs, ten unique layouts or three, testing and SEO setup or none. To compare them fairly, send everyone the same written brief, put every quote into one comparison sheet line by line, ask the same follow-up questions, and compare the total cost over three years rather than the build price alone.</p>
 <p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, you get a written scope, a fixed price and a timeline, usually within 24 hours of sending your requirements, and the scope lists what is excluded as well as what is included. Whoever you choose, the method below makes any set of quotes comparable.</p>
 
-<h2>Why website quotes vary so much</h2>
+<h2>Why are website quotes so different?</h2>
 <table>
   <thead><tr><th>Factor</th><th>A lower quote often means</th><th>A higher quote often means</th></tr></thead>
   <tbody>

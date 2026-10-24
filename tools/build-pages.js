@@ -1093,6 +1093,17 @@ EXTRA.forEach(x => {
   const re = /(<!-- home-posts:start -->)[\s\S]*?(<!-- home-posts:end -->)/;
   if (!re.test(home)) throw new Error('index.html is missing the home-posts markers');
   home = home.replace(re, (m, start, end) => `${start}\n${cards}\n          ${end}`);
+  // "Popular guides": text links to the articles Search Console shows closest to page 1
+  // (positions ~6–25 with impressions). Revisit this list after each GSC analysis.
+  const POPULAR = ['outsource-wordpress-development-india', 'woocommerce-gst-invoices-india', 'hostinger-website-slow-fix',
+    'logo-favicon-brand-basics-website', 'compare-website-quotes', 'how-long-to-build-wordpress-website',
+    'elementor-layout-broken-after-update', 'rebranding-your-website', 'hreflang-multilingual-seo-india',
+    'hindi-devanagari-fonts-website', 'woocommerce-multi-vendor-marketplace', 'wordpress-activity-logs'];
+  const guides = POPULAR.map(s => POSTS.find(p => p.slug === s)).filter(Boolean)
+    .map(p => `            <li><a href="/blog/${p.slug}/">${esc(p.seoTitle || p.title)}</a></li>`).join('\n');
+  const reG = /(<!-- home-guides:start -->)[\s\S]*?(<!-- home-guides:end -->)/;
+  if (!reG.test(home)) throw new Error('index.html is missing the home-guides markers');
+  home = home.replace(reG, (m, start, end) => `${start}\n        <div class="home-guides reveal">\n          <h3>Popular guides</h3>\n          <ul>\n${guides}\n          </ul>\n        </div>\n        ${end}`);
   fs.writeFileSync(indexPath, home);
   console.log('homepage posts:', picks.map(p => p.slug).join(', '));
 }
