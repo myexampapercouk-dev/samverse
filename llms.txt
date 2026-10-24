@@ -13,6 +13,7 @@
 
 ## Services
 - [Online Stores](https://samverse.space/woocommerce-developer/): Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout.
+- [Shopify Stores](https://samverse.space/shopify-developer/): Hire a Shopify developer for store setup, theme customisation in Liquid, speed and SEO fixes, and migrations to or from WooCommerce, with Indian payments.
 - [WordPress Website Development](https://samverse.space/wordpress-website-development/): WordPress website development in India: business sites, portfolios, catalogues and portals that are fast, mobile-friendly, SEO-ready and easy to update.
 - [Hire a WordPress Developer](https://samverse.space/hire-wordpress-developer/): Hire an experienced freelance WordPress developer for projects, monthly support or white-label agency work. Fixed quotes, direct communication, fast turnaround.
 - [WordPress Developer in Pune](https://samverse.space/wordpress-developer-pune/): Freelance WordPress developer based in Pune: fast, SEO-ready business websites, WooCommerce stores, redesigns and maintenance for Pune and PCMC businesses.

@@ -211,6 +211,7 @@ ${(Array.isArray(WORK) ? WORK : Object.values(WORK)[0]).map(w => `            <l
           <ul>
             <li><a href="/wordpress-website-development/">WordPress website development</a>, from small business sites to directories and portals</li>
             <li><a href="/woocommerce-developer/">WooCommerce stores</a>, with Indian payment gateways, GST and shipping set up</li>
+            <li><a href="/shopify-developer/">Shopify stores</a>: setup, theme customisation in Liquid, speed fixes and migrations</li>
             <li><a href="/website-redesign/">Website redesigns</a> and <a href="/figma-to-wordpress/">Figma to WordPress</a> builds</li>
             <li><a href="/landing-page-design/">Landing pages</a> for Google and Meta ad campaigns</li>
             <li><a href="/wordpress-speed-optimization/">Speed optimization</a> and Core Web Vitals fixes</li>
@@ -278,7 +279,7 @@ ${(Array.isArray(WORK) ? WORK : Object.values(WORK)[0]).map(w => `            <l
         '@type': 'ProfessionalService', '@id': `${SITE}/#service`, name: 'Samverse', description: 'Freelance WordPress development',
         url: `${SITE}/`, email: 'mailto:samverse9719@gmail.com', telephone: '+91-7417049145',
         address: { '@type': 'PostalAddress', addressLocality: 'Pune', addressRegion: 'Maharashtra', addressCountry: 'IN' },
-        knowsAbout: ['WordPress', 'Elementor', 'WooCommerce', 'Website Speed Optimization', 'Search Engine Optimization', 'Responsive Web Design', 'WordPress Security', 'Malware Removal', 'WordPress Maintenance', 'Landing Page Design'],
+        knowsAbout: ['WordPress', 'Elementor', 'WooCommerce', 'Shopify', 'Website Speed Optimization', 'Search Engine Optimization', 'Responsive Web Design', 'WordPress Security', 'Malware Removal', 'WordPress Maintenance', 'Landing Page Design'],
       },
     }),
   },
