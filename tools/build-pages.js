@@ -206,8 +206,8 @@ ${JSON.stringify(schema, null, 2)}
             <a href="${waLink}" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
           </div>
           <ul class="lp-trust">
-            <li>${tick} Building WordPress sites since 2020</li>
-            <li>${tick} Fixed quote in 24 hours</li>
+            <li>${tick} ${p.slug === 'shopify-developer' ? 'WordPress and Shopify, one developer' : 'Building WordPress sites since 2020'}</li>
+            <li>${tick} Fixed quote, usually in 24 hours</li>
             <li>${tick} Support after launch</li>
           </ul>
         </div>
