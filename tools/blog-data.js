@@ -9862,117 +9862,205 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-logistics-transport-companies',
-    seoTitle: 'Websites for Logistics & Transport Companies',
-    title: 'Websites for Logistics and Transport Companies: Winning Business Clients',
-    description: 'What logistics, freight and transport companies need on their websites: services by mode, coverage, fleet, quote forms, tracking links and trust signals.',
+    seoTitle: 'Website for Logistics and Transport Companies: B2B Guide',
+    title: 'Websites for Logistics and Transport Companies: FTL, Part Load, Warehousing and Last Mile, Fleet and Coverage, Shipment Tracking, Quote Requests and Driver Recruitment',
+    description: 'Plan a logistics or transport company website: FTL, part load, warehousing and last mile pages, lanes, fleet, tracking, quote forms and driver jobs.',
     date: '2026-09-27',
+    updated: '2026-10-25',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
-<p>Businesses choosing a logistics partner want reliability above all. Before they call, they check your website for the services, coverage and capacity they need, and for signs you can be trusted with their goods.</p>
+<p>A logistics or transport company website has two jobs: convince business shippers that you can move their goods reliably on the lanes they need, and collect enough detail in a quote request for your team to price the load. A third, often neglected, is hiring drivers. The sites that work show services, coverage and fleet in specific terms rather than in general claims about being "pan-India".</p>
+<p>A transport company sells to procurement and supply chain teams in much the same way a manufacturer does, so the planning resembles the <a href="/website-for-manufacturers/">B2B websites I build for manufacturers</a>: a company profile, service pages that read like a specification, request-a-quote forms, downloadable profiles and industries-served pages. The build itself is a standard business site on WordPress, of the kind covered under <a href="/wordpress-website-development/">WordPress website development</a>, with forms and integrations added where your operations need them.</p>
 
-<h2>What business clients look for</h2>
+<h2>Services: a page for each way you move goods</h2>
+<p>"Transport solutions" on a homepage tells a shipper nothing. Separate the services, because each one has a different buyer:</p>
+<table>
+  <thead>
+    <tr><th>Service</th><th>Typical buyer</th><th>What they need to see</th><th>Extra quote fields</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Full truck load (FTL)</td><td>Manufacturers, distributors, project cargo</td><td>Vehicle types and payloads, lanes, transit times as ranges, loading and unloading terms</td><td>Vehicle type, number of trucks, dates, loading point</td></tr>
+    <tr><td>Part load (PTL or LTL)</td><td>Smaller manufacturers, traders, e-commerce sellers</td><td>Minimum load, how consolidation works, pick-up and delivery options, transit ranges</td><td>Weight, volume, number of packages, packaging type</td></tr>
+    <tr><td>Warehousing</td><td>Brands and distributors needing storage near markets</td><td>Location, area, racking, handling, inventory reporting, security</td><td>Space required, duration, goods type, monthly throughput</td></tr>
+    <tr><td>Last mile delivery</td><td>D2C brands, retailers, B2B suppliers within a city</td><td>Areas covered, delivery windows, proof of delivery, cash collection if offered</td><td>Daily volumes, areas, parcel sizes</td></tr>
+    <tr><td>Specialised transport</td><td>Pharma, chemicals, ODC or temperature-controlled loads</td><td>Equipment, handling procedures and any approvals you actually hold</td><td>Cargo type, temperature range, hazard class</td></tr>
+  </tbody>
+</table>
+<p>If cold storage or warehousing is the larger part of your business, <a href="/blog/website-for-cold-storage-warehousing/">websites for cold storage and warehousing</a> deals with storage-specific pages. Household relocations are a different market with different questions; <a href="/blog/website-for-packers-movers/">websites for packers and movers</a> covers that.</p>
+
+<h2>Coverage: lanes and regions, not a map with pins everywhere</h2>
+<p>A map of India covered in dots invites scepticism. Shippers want to know whether you regularly run their lane. Be specific:</p>
 <ul>
-  <li>The services you offer: FTL/PTL trucking, warehousing, freight forwarding, express delivery, last-mile, cold chain</li>
-  <li>Routes and coverage: cities, states and international lanes</li>
-  <li>Fleet and infrastructure: vehicle types, capacity, warehouses</li>
-  <li>Industries served and handling capabilities</li>
-  <li>How to get a quote and track shipments</li>
+  <li>List your main lanes, such as Pune to Delhi NCR or Chennai to Bengaluru, with typical transit ranges and service frequency</li>
+  <li>Name the branches and hubs you operate yourselves, with addresses</li>
+  <li>Separate regions you serve directly from those you serve through partners</li>
+  <li>For export and import cargo, say which ports and inland container depots you work with</li>
 </ul>
+<p>A page for each major lane can work well if each has genuine content: road route, typical transit, vehicle types used and the industries that ship on it. Avoid generating hundreds of near-identical city pages; they rarely help and can count against the site.</p>
 
-<p>If storage space is your main business rather than transport, see <a href="/blog/website-for-cold-storage-warehousing/">websites for cold storage and warehousing companies</a>.</p>
+<h2>Fleet: what you own and what you arrange</h2>
+<p>Many transporters run a mix of owned and attached vehicles. There is nothing wrong with that, and saying so plainly builds trust; claiming a large owned fleet that turns out to be brokered loses a client at the first problem. On a fleet page, show:</p>
+<ul>
+  <li>Vehicle types by payload and body, such as small commercial vehicles, 19 ft and 32 ft containers, open trailers and reefers</li>
+  <li>Which types you own and which you arrange through partners</li>
+  <li>GPS tracking and any other equipment fitted, described as it is</li>
+  <li>Real photographs of your vehicles, depots and warehouses</li>
+</ul>
+<p>Organising the fleet by capacity mirrors how buyers specify a load. The <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a> website does the same for generator hire, with a page for each capacity band that lists typical uses and what affects the price. A transporter can apply the idea to vehicle types: what each carries, which goods suit it, and what changes the rate.</p>
 
-<h2>Essential pages</h2>
+<h2>Shipment tracking: connect it the way your system allows</h2>
+<p>Clients expect to check a consignment without calling. How this works on the website depends on the transport management system or tracking provider you use:</p>
 <ol>
-  <li><strong>Service pages:</strong> one per mode or service, with who it's for and how it works</li>
-  <li><strong>Coverage:</strong> a clear map or list of locations and lanes</li>
-  <li><strong>Fleet and facilities:</strong> real photos, vehicle types and warehouse details</li>
-  <li><strong>Industries:</strong> manufacturing, e-commerce, FMCG, pharma, and the specific needs you handle</li>
-  <li><strong>Quote request:</strong> origin, destination, cargo type, weight or volume, dates</li>
-  <li><strong>Tracking:</strong> a clear link to your tracking system if you have one</li>
+  <li><strong>A link to your tracking portal</strong>, prominently placed in the header, which is simple and works with almost any system.</li>
+  <li><strong>A lookup box on the website</strong> that sends the docket or LR number to the system and shows the status, where the provider offers a way to do that.</li>
+  <li><strong>Automatic updates by email, SMS or WhatsApp</strong> at key milestones, sent by the operations system rather than the website.</li>
 </ol>
+<p>Ask your software provider what it supports before planning the page; I can build the website side once that is known. Whatever the method, explain what each status means, and give a phone or WhatsApp number for exceptions.</p>
 
-<h2>Build trust</h2>
+<h2>The quote request your team can price</h2>
+<p>A quote form that asks only for name and phone generates calls that start with "What do you want to send?". Ask for what the pricing team needs, in a few short steps:</p>
+<ol>
+  <li>Service: FTL, part load, warehousing, last mile or other</li>
+  <li>Origin and destination, with pin codes</li>
+  <li>Goods description, weight, volume and packaging</li>
+  <li>Vehicle type for FTL, if known</li>
+  <li>Dates, and whether this is one-off or regular</li>
+  <li>Special needs: fragile, hazardous, temperature-controlled, loading help</li>
+  <li>Company name, contact person, phone, email and GSTIN for regular business</li>
+</ol>
+<p>Breaking the form into steps keeps it from feeling long on a phone. <a href="/blog/multi-step-forms-lead-qualification/">Multi-step forms for lead qualification</a> shows how, and <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a> covers routing enquiries to the right person.</p>
+
+<h2>Corporate clients and proof you can show</h2>
+<p>Business buyers want to know who else trusts you. Show client logos and named references only with permission, because many shippers do not allow it. Where you cannot name clients, describe the work instead: the industry, the lanes, the kind of loads and how you handled a specific challenge, such as a seasonal peak or a plant shutdown. Industry pages for manufacturing, FMCG, e-commerce and pharma help buyers see their own needs reflected.</p>
+<p>Business details in the footer, such as registered name, CIN, GST number and branch addresses, are part of the proof. So is insurance: explain the cover available for goods in transit and how claims work, in general terms, and refer to the contract for specifics.</p>
+<h3>Paperwork, in general terms</h3>
+<p>Shippers often ask about e-way bills, GST on freight, documentation for interstate movement and liability for damage. A short guide page helps, as long as it stays general and points to the current official rules, because tax and transport regulations change. Do not promise compliance outcomes; describe what your team does and what the shipper must provide.</p>
+
+<h2>Careers for drivers: a second audience</h2>
+<p>Driver shortages are a recurring problem in Indian trucking, and the website can help with hiring if it is built for the people you want to reach. Drivers usually browse on phones, often in Hindi or a regional language, and are more likely to send a WhatsApp message than fill in a long form. A good careers page:</p>
 <ul>
-  <li>Years of operation and clients served (only what you can support)</li>
-  <li>Certifications, registrations and insurance coverage</li>
-  <li>Client logos and testimonials, with permission</li>
-  <li>Safety and compliance practices</li>
+  <li>Is available in the languages your drivers speak</li>
+  <li>Lists the roles: long-haul drivers, local drivers, helpers, loaders, warehouse staff and office roles</li>
+  <li>States the licence type and experience needed for each</li>
+  <li>Describes what you offer factually: routes, rest arrangements, payment schedule, insurance or allowances, as they actually are</li>
+  <li>Offers a WhatsApp button and a short form with name, phone, location, licence type and experience</li>
 </ul>
+<p>Keep office and management roles on the same page but separate, perhaps with a link to LinkedIn. <a href="/blog/linkedin-b2b-website-traffic/">LinkedIn and B2B website traffic</a> also explains how a company page can bring shippers to the site.</p>
 
 <p>Similar B2B service providers: <a href="/blog/website-for-security-facility-management/">security and facility management companies</a>.</p>
 
-<h2>Make it fast to enquire</h2>
-<p>Logistics enquiries are often urgent. Put phone, WhatsApp and a short quote form on every page, and route enquiries to someone who replies quickly. See <a href="/blog/contact-form-not-getting-enquiries/">why contact forms fail</a>.</p>
+<h2>FAQs</h2>
+<h3>Should a transport company list its rates on the website?</h3>
+<p>Most do not, because rates depend on lane, load, vehicle and fuel. Explain what affects the price and use a quote form that captures those details instead.</p>
+<h3>Can the website show live shipment tracking?</h3>
+<p>Often, yes, depending on your tracking system. At minimum, link to your tracking portal from every page; where the system allows, a lookup box can show status on your own site.</p>
+<h3>Do we need a page for every city we serve?</h3>
+<p>No. Create pages for your main lanes and hubs, each with specific information, and handle other routes through the quote form.</p>
+<h3>Should we say which vehicles are owned and which are attached?</h3>
+<p>Being open about it builds trust. Show the vehicle types you can provide and which you own, and describe how you manage partner vehicles.</p>
+<h3>Can drivers apply through the website?</h3>
+<p>Yes. A short mobile form and a WhatsApp button work best, with the page available in the languages your drivers use.</p>
 
-<p>Household moves are different; see <a href="/blog/website-for-packers-movers/">websites for packers and movers</a>.</p>
-
-<h2>SEO for logistics companies</h2>
-<ul>
-  <li>Target service and lane searches: "transport services from {city} to {city}", "warehousing in {city}"</li>
-  <li>Create location pages only where you genuinely operate, with real local details</li>
-  <li>Keep a strong Google Business Profile for each branch</li>
-  <li>Publish helpful guides on packaging, documentation and shipping times</li>
-</ul>
-
-<p>Logistics buyers think like B2B purchasers; see <a href="/blog/b2b-manufacturer-website-guide/">how B2B websites generate enquiries</a> and <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<p>A logistics website earns its place when shippers can see their lane, their load and their kind of business on it, and when drivers can apply from a phone in a minute. To see how I plan B2B sites around catalogues, quote requests and capability pages, visit the <a href="/website-for-manufacturers/">websites for manufacturers</a> page.</p>
 `,
   },
   {
     slug: 'website-for-salons-spas',
-    seoTitle: 'Websites for Salons & Spas: Get More Bookings',
-    title: 'Websites for Salons and Spas: Getting More Bookings Online',
-    description: 'Salon and spa websites that get more bookings: service menus with prices, online booking, stylist profiles, gallery, offers, reviews and local SEO.',
+    seoTitle: 'Website for Salons and Spas: Service Menus and Bookings',
+    title: 'Websites for Salons and Spas: Service Menus With Durations, Booking by Stylist, Bridal Packages, Memberships, Real Galleries, Hygiene and Google Reviews',
+    description: 'Plan a salon or spa website that gets bookings: service menus with durations, stylist choice, bridal packages, memberships, hygiene and Google reviews.',
     date: '2026-09-27',
+    updated: '2026-10-25',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
     body: `
-<p>People choose a salon or spa based on looks, trust and convenience. They want to see your work, check prices and book without phone tag. A good website makes all three easy.</p>
+<p>A salon or spa website wins bookings when it lets someone answer three questions on their phone: what do you offer, how long will it take, and can I book with the person I want? Get the service menu, booking and gallery right, add honest pages for bridal work, memberships and hygiene, and the site does what your receptionist does on a busy day.</p>
+<p>Most salon sites gain more from a few focused pages than from a big design. The core pages are a standard business build, covered under <a href="/wordpress-website-development/">WordPress website development</a>, but the pages that bring new clients are often campaign pages: a festive offer, a bridal season page, a first-visit package for a new branch. Those work best as <a href="/landing-page-design/">landing pages built for one offer</a>, with a booking form and WhatsApp, and tracking that shows which ads actually brought clients in.</p>
 
-<h2>Must-haves</h2>
-<ol>
-  <li><strong>Service menu with prices</strong> (or "starting from"), grouped by hair, skin, nails, spa and bridal</li>
-  <li><strong>Online booking</strong> through a booking plugin or your salon software, or at least WhatsApp booking</li>
-  <li><strong>Gallery of your work:</strong> real photos of cuts, colours, makeup and nails, with client consent</li>
-  <li><strong>Team profiles:</strong> stylists and therapists with specialties</li>
-  <li><strong>Location, hours and parking</strong>, with a map</li>
-  <li><strong>Reviews</strong> and a link to your Google reviews</li>
-</ol>
+<h2>Write the service menu before anything else</h2>
+<p>The menu is the page clients visit most, and it is also the data your booking system runs on. Each service needs a name clients recognise, a duration, a starting price or a note on what decides the price, and the level of staff who performs it. A section of a well-planned menu looks like this:</p>
+<table>
+  <thead>
+    <tr><th>Service</th><th>Duration</th><th>Price shown as</th><th>Booked with</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Haircut and blow-dry, women</td><td>45 to 60 minutes</td><td>Starting price, varies by stylist level and hair length</td><td>Any stylist, or a chosen one</td></tr>
+    <tr><td>Global hair colour</td><td>2 to 3 hours</td><td>Starting price, final after consultation and patch test</td><td>Colour specialist</td></tr>
+    <tr><td>Keratin or smoothening</td><td>3 to 4 hours</td><td>Range by hair length</td><td>Senior stylist</td></tr>
+    <tr><td>Classic facial</td><td>60 minutes</td><td>Fixed price</td><td>Any therapist</td></tr>
+    <tr><td>Swedish massage</td><td>60 or 90 minutes</td><td>Fixed price per duration</td><td>Therapist, with a choice of male or female where offered</td></tr>
+  </tbody>
+</table>
+<p>Durations help clients plan a lunch break or a Saturday morning, and they stop the booking system from double-booking a chair. Group services the way clients look for them: hair, skin, nails, makeup, spa and massage, men's grooming, bridal. If a service needs a patch test or consultation first, say so on the menu, not at the chair.</p>
+<h3>Price display that does not backfire</h3>
+<p>"Starting from" prices are honest only if a typical client can actually pay that. If length, density or product choice changes the price a lot, give a range or explain the factors, and say whether prices include GST. Keep the menu on a web page, not a PDF or an Instagram image, so it can be searched, read on a phone and updated in minutes.</p>
 
-<h2>Drive bookings</h2>
+<h2>Booking with stylist or therapist choice</h2>
+<p>Regular clients book a person, not a salon. Let them choose a named stylist or "any available", and show only the services that person performs. Good salon booking also handles:</p>
 <ul>
-  <li>First-visit offers and seasonal packages (festive, wedding season)</li>
-  <li>Bridal and group packages with an enquiry form</li>
-  <li>Gift vouchers sold online</li>
-  <li>A WhatsApp button for quick questions; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a></li>
-  <li>Landing pages for campaigns; see <a href="/landing-page-design/">landing page design</a></li>
+  <li><strong>Buffer time</strong> between services for cleaning and setup</li>
+  <li><strong>Combined bookings</strong>, such as a cut and colour with the same stylist, or a pedicure while hair colour develops</li>
+  <li><strong>Deposits</strong> for long services and bridal bookings, by UPI or card, with the cancellation terms on the same screen</li>
+  <li><strong>Reminders</strong> by WhatsApp or SMS the day before, with a link to reschedule</li>
+  <li><strong>Walk-in information</strong>, so people know whether to come without booking</li>
 </ul>
+<p>If you already use salon management software for billing and appointments, the site should link to or embed its booking page rather than run a second calendar. If you do not, a WordPress booking plugin can do the job for a single location. <a href="/blog/online-appointment-booking-website/">Online appointment booking for small businesses</a> compares the routes.</p>
+
+<h3>Late arrivals and no-shows</h3>
+<p>A missed three-hour colour appointment costs a salon a large part of a stylist's day. Publish your policy where clients book: how late a client can be before the service is shortened or moved, how much notice you need for a cancellation, and when a deposit is kept. Clients rarely object to rules they saw before booking; they object to rules they hear about for the first time at the counter.</p>
+
+<h2>Bridal packages deserve a page of their own</h2>
+<p>Bridal work is high value and booked months ahead, often by the bride and her mother together. A bridal page should set out:</p>
+<ol>
+  <li>Packages by stage: pre-bridal skin and hair sessions, the trial, the wedding day look, and family or bridesmaid makeup</li>
+  <li>What each package includes, such as number of sessions, products used and draping</li>
+  <li>Whether the artist travels to the venue, and how travel is charged</li>
+  <li>The trial: when to book it, how long it takes, and whether its cost is adjusted against the package</li>
+  <li>How far ahead to book in wedding season, and the deposit needed to hold a date</li>
+  <li>A gallery of real brides, shared with permission</li>
+</ol>
+<p>A form asking for the wedding date, the events, the number of people needing makeup and the venue city lets you reply with a proper quote. If your senior artist also works independently, <a href="/blog/website-for-makeup-artists/">websites for makeup artists</a> covers personal portfolio sites.</p>
+
+<h2>Memberships, packages and gift vouchers</h2>
+<p>Memberships and prepaid packages bring steady revenue, but clients are wary of them after hearing about expired balances. Write the terms plainly: what the membership costs and gives, how long it is valid, whether it can be shared with family, whether unused value carries over, and what happens if a branch closes. Prepaid service packages, such as six facials, need the same clarity. Gift vouchers can be sold online with a code the client redeems at the counter; <a href="/blog/woocommerce-gift-cards/">gift cards in WooCommerce</a> explains how that can be set up.</p>
+
+<h2>A gallery of your own work, with consent</h2>
+<p>Clients choose salons by looking at results. Use your own photos: haircuts, colour work, nail art, bridal looks and the salon itself. A few rules keep the gallery trustworthy:</p>
+<ul>
+  <li>Ask clients before photographing them and record their permission for website and social use</li>
+  <li>Avoid heavy filters on hair colour and skin results, because clients will expect what they see</li>
+  <li>Label photos by service and stylist, so a client can find the person whose work they like</li>
+  <li>Never use stock or competitor images as your own work</li>
+  <li>Compress images so the gallery loads quickly on mobile</li>
+</ul>
+<p><a href="/blog/google-business-profile-photos/">Google Business Profile photos</a> covers which of these images also belong on your profile.</p>
+
+<h2>Hygiene, products and safety</h2>
+<p>Since the pandemic, many clients look for a few words on cleanliness before they book, especially for spa treatments, waxing and nail services. Describe what you actually do: how tools are sterilised or disposed of, whether single-use files and buffers are used, how often towels and linen are changed, and how rooms are cleaned between clients. Name the product brands you use if clients ask for them, and say how you handle allergies and patch tests for colour and chemical treatments. Keep these claims accurate; one review that contradicts them does more harm than not mentioning them.</p>
+
+<h2>Unisex, women only, or separate sections</h2>
+<p>Many clients want to know this before they visit, and some will not book without knowing it. State on the homepage and the booking page whether the salon is unisex, women only or men only, whether there are separate sections or floors, and whether clients can request a therapist of the same gender for massage and waxing. For spas, say clearly what kind of massage you offer and that the spa offers professional therapeutic and relaxation treatments only.</p>
+
+<h2>Reviews, and the Google Business Profile</h2>
+<p>For a salon, the Google Business Profile often brings more bookings than the website, and the two should support each other. Keep hours, services and photos matching on both, add a booking link to the profile, and ask happy clients for a review at the end of a visit, using a short link or a printed code near the billing desk. Respond to each review, including the critical ones, calmly and without arguing. <a href="/blog/get-more-google-reviews/">Getting more Google reviews</a> explains how to ask without breaking Google's rules, and <a href="/blog/handle-negative-reviews/">handling negative reviews</a> covers replies.</p>
+<p>On the website itself, show reviews only from real clients, with their permission, and add a link through to the full set on Google.</p>
 
 <p>Other booking-driven local services: <a href="/blog/website-for-home-services/">home services</a> and <a href="/blog/website-for-cleaning-services/">cleaning services</a>.</p>
 
-<p>Setting up bookings? See <a href="/blog/online-appointment-booking-website/">online appointment booking</a>.</p>
+<h2>FAQs</h2>
+<h3>Should a salon website show prices?</h3>
+<p>Yes, at least starting prices or ranges for common services, with durations. Explain what changes the final price, such as hair length or product choice.</p>
+<h3>Can clients choose their stylist when booking online?</h3>
+<p>Yes. Booking systems can show each stylist's calendar and the services they perform, with an "any available" option for clients who do not mind.</p>
+<h3>Should we take a deposit for bridal bookings?</h3>
+<p>Many salons do, to hold the date. Take it online by UPI or card and show the cancellation and refund terms on the same page.</p>
+<h3>Can we use client photos on our website?</h3>
+<p>Only with the client's permission, ideally recorded in writing. Label each photo with the service and avoid filters that change the result.</p>
+<h3>Do we need separate pages for each branch?</h3>
+<p>Yes. Each branch needs its own address, hours, services, stylists and booking link, matching its own Google Business Profile.</p>
 
-<h2>Design tips</h2>
-<p>Your website should feel like your salon: clean, stylish and welcoming. Use large, high-quality photos, compressed so pages stay fast, and make the booking button impossible to miss on mobile.</p>
-
-<h2>Local SEO</h2>
-<ul>
-  <li>Target "salon near me", "bridal makeup in {area}" and "spa in {city}"</li>
-  <li>Complete your Google Business Profile with photos, services and prices</li>
-  <li>Encourage reviews after appointments; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a></li>
-  <li>Post new work regularly on Instagram and link back to your site</li>
-</ul>
-
-<p>Work as a freelance or bridal makeup artist who travels to clients? See <a href="/blog/website-for-makeup-artists/">websites for makeup artists</a> for portfolios, packages and date bookings.</p>
-
-<h2>Common mistakes</h2>
-<ul>
-  <li>No prices at all, which leads to endless enquiry calls</li>
-  <li>Instagram-only presence with no bookable website</li>
-  <li>Slow galleries with huge images</li>
-</ul>
-
-<p>Ready to fill your appointment book? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<p>When the menu, booking and gallery are right, the receptionist answers fewer calls and the chairs fill more evenly through the week. For campaign pages and seasonal offers, see the <a href="/landing-page-design/">landing page design</a> service, which includes lead forms, WhatsApp and conversion tracking.</p>
 `,
   },
   {
@@ -10033,60 +10121,109 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-furniture-businesses',
-    seoTitle: 'Websites for Furniture Showrooms & Manufacturers',
-    title: 'Websites for Furniture Showrooms and Manufacturers',
-    description: 'What furniture showrooms and manufacturers need online: catalogues, room inspiration, materials and customisation info, showroom visits and B2B enquiries.',
+    seoTitle: 'Website for Furniture Businesses: Catalogue, Quotes, Speed',
+    title: 'Websites for Furniture Showrooms and Manufacturers: Made-to-Order and Ready Stock, Dimensions and Materials, Measuring Guides, Delivery and Assembly, Showroom Visits and Custom Quotes',
+    description: 'Plan a furniture website: ready stock and made-to-order products, dimensions and materials, measuring guides, delivery, showroom visits and fast images.',
     date: '2026-09-27',
+    updated: '2026-10-25',
     category: 'Industries',
     related: ['woocommerce-developer', 'website-for-manufacturers', 'wordpress-speed-optimization'],
     body: `
-<p>Furniture is a considered purchase. Buyers want to see it in real rooms, understand materials and sizes, and trust delivery and quality. Whether you sell to homeowners, interior designers or bulk buyers, your website should answer those questions.</p>
+<p>Someone buying a sofa, bed or dining table online is asking four questions: will it fit, will it last, how will it reach my home, and what will it really cost? A furniture website that answers those on every product page, sells ready-stock pieces directly and turns custom work into well-qualified quote requests will do better than a pretty gallery with a phone number.</p>
+<p>For most furniture businesses that means a <a href="/woocommerce-developer/">WooCommerce store</a> for products with fixed prices, Indian payment gateways, COD rules where you allow them, shipping rules and order management, combined with enquiry forms for made-to-order work. Because furniture sites carry so many large photos, speed needs attention from the start; the <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> work I do often begins with exactly this kind of image-heavy store.</p>
 
-<h2>Choose your model</h2>
+<h2>Ready stock, made to order, or both</h2>
+<p>How you make and sell furniture decides how the site works. Most businesses fit one of three patterns:</p>
+<table>
+  <thead>
+    <tr><th></th><th>Ready stock</th><th>Made to order</th><th>Hybrid</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Product pages</td><td>Fixed price, stock status, add to cart</td><td>Starting price or "price on request", options listed</td><td>Standard sizes in the cart, custom sizes by quote</td></tr>
+    <tr><td>Main action</td><td>Buy online or reserve for pick-up</td><td>Request a quote or book a showroom visit</td><td>Both, clearly separated on each page</td></tr>
+    <tr><td>Delivery promise</td><td>A dispatch window from stock</td><td>A making time quoted per order</td><td>Different windows for each, stated on the page</td></tr>
+    <tr><td>Payment</td><td>Full payment or COD rules at checkout</td><td>Advance on order confirmation, balance before delivery</td><td>Both, depending on the item</td></tr>
+  </tbody>
+</table>
+<p>Whichever you choose, say it clearly near the price. A customer who adds a made-to-order bed to the cart expecting delivery next week will be a cancelled order and an unhappy review.</p>
+
+<h2>"Will it fit?" Dimensions, materials and a measuring guide</h2>
+<p>Most furniture returns and disputes start with size. Every product page should carry a full specification:</p>
 <ul>
-  <li><strong>Online store (WooCommerce):</strong> for standard products with fixed prices and delivery. See <a href="/woocommerce-developer/">WooCommerce development</a>.</li>
-  <li><strong>Catalogue with enquiries:</strong> for custom, made-to-order or high-value pieces</li>
-  <li><strong>Hybrid:</strong> buy standard items online, enquire for custom work</li>
+  <li>Overall width, depth and height, and seat height for chairs and sofas, in both centimetres and inches</li>
+  <li>For beds, the mattress size it takes and the overall footprint, which is larger than the mattress</li>
+  <li>For storage, internal dimensions of drawers and shelves</li>
+  <li>The smallest dimension when packed or dismantled, which decides whether it goes through a door or up a staircase</li>
+  <li>Weight, and whether the piece arrives assembled or flat-packed</li>
 </ul>
+<p>A measuring guide on its own page, linked from every product, helps buyers check their space before ordering: measure the room and the walls, the doors and lift, the turn of the staircase, and allow walking space around the piece. A downloadable sheet or a simple diagram is more useful than a fancy room planner, which takes real work to build and maintain. If you want something interactive, start with a few room templates showing standard furniture sizes, and see how buyers use them.</p>
+<h3>Materials and finishes, described honestly</h3>
+<p>"Solid wood" means different things to different sellers. Name the actual material of each part: sheesham, teak, mango wood, engineered wood with veneer, MDF with laminate, metal frames. Say what the finish is and how it should be cared for. Show close-up photos of the wood grain, fabric weave and joinery. Fabric and finish swatches should be photographed in daylight, with a note that screens show colours differently. Precise wording here prevents more disputes than any returns policy.</p>
 
-<p>Selling cushions, curtains, rugs and lighting rather than furniture? See <a href="/blog/website-for-home-decor-stores/">websites for home decor and furnishing stores</a>.</p>
+<h2>Product options without a hundred duplicate pages</h2>
+<p>A sofa in three sizes and twelve fabrics is one product, not thirty-six. Use product variations for size, fabric and finish, with each variation able to carry its own price and photos. Customers then pick their options on one page and see the price change. <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a> explains how to set this up, including how to stop the option list becoming overwhelming.</p>
 
-<h2>Product pages that sell furniture</h2>
+<h2>"How will it reach me?" Delivery and assembly</h2>
+<p>Delivery is where furniture differs most from other online shopping. Publish:</p>
 <ul>
-  <li>Multiple photos, including styled room shots and close-ups of materials and finishes</li>
-  <li>Exact dimensions, materials, finishes and care instructions</li>
-  <li>Customisation options such as size, fabric and colour</li>
-  <li>Delivery time, assembly and warranty information</li>
-  <li>Clear pricing, or a quote button for custom pieces</li>
+  <li>The cities or pin codes you deliver to, and whether delivery outside them is possible through a freight partner</li>
+  <li>Delivery charges, or whether delivery is included, by zone</li>
+  <li>Dispatch times for ready stock and making times for custom orders, as ranges</li>
+  <li>Whether assembly is included, and whether the team carries items up stairs where there is no lift</li>
+  <li>How damage on arrival is handled: inspect before signing, photographs, and the replacement or repair process</li>
+  <li>Return and cancellation terms, especially for custom pieces, which usually cannot be returned</li>
 </ul>
-<p>See <a href="/blog/woocommerce-product-page-optimization/">product page optimization</a> for more.</p>
+<p>A pin code checker on product pages lets buyers see delivery availability before they fall in love with a piece; <a href="/blog/pincode-delivery-checker-woocommerce/">a WooCommerce pin code checker</a> shows how.</p>
 
-<p>Selling mattresses, pillows or bedding? See <a href="/blog/website-for-mattress-sleep-brands/">websites for mattress and sleep brands</a> for comparison pages, trial periods and careful comfort claims.</p>
+<h2>Showroom visits</h2>
+<p>For higher-value furniture, many buyers want to sit on the sofa before paying. Treat the showroom visit as a conversion in its own right. A showroom page should give the address, hours, parking and photographs of the floor, and a short form to book a visit with a preferred date and the pieces the customer wants to see. Mark on product pages which items are on display at which showroom. If you have several showrooms, give each its own page with a map and its own Google Business Profile.</p>
 
-<h2>Inspire and reassure</h2>
+<h2>The custom quote flow</h2>
+<p>Made-to-order enquiries are valuable but slow to qualify by phone. A quote form that asks the right questions lets your team reply with a sensible estimate:</p>
+<ol>
+  <li>What the customer wants made: the type of piece, or a link to a product to adapt</li>
+  <li>Approximate dimensions, or a note that they need a site visit to measure</li>
+  <li>Preferred material and finish, with "not sure" as an option</li>
+  <li>Room photos and any reference images</li>
+  <li>City, timeline and approximate budget</li>
+  <li>Name, phone and preferred contact method</li>
+</ol>
+<p>The <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a> website, built for an interior design studio that also offers custom furniture, uses a similar approach: its enquiry form asks for the type of project, its stage, the budget and the time frame, so each request arrives with enough context for a proper first call. If most of your custom work is carpentry on site rather than factory-made pieces, <a href="/blog/website-for-carpenters/">websites for carpenters</a> is the closer guide.</p>
+
+<h2>Photos that sell without slowing the site</h2>
+<p>Furniture is sold by photographs, and furniture sites are often slow for the same reason. Every product may have eight to fifteen images, plus room settings and close-ups. To keep pages quick on mobile data:</p>
 <ul>
-  <li>Room-by-room inspiration galleries and collections</li>
-  <li>Showroom details with a "book a visit" option</li>
-  <li>Workshop and craftsmanship photos for manufacturers</li>
-  <li>Genuine reviews and project photos from customers</li>
+  <li>Resize images to the largest size they are displayed at before uploading, not the camera's full resolution</li>
+  <li>Compress every file, and let the site deliver WebP versions to browsers that support them</li>
+  <li>Lazy-load gallery images below the first one, so the page appears quickly</li>
+  <li>Avoid autoplay sliders and heavy 360-degree viewers on category pages</li>
+  <li>Keep category pages to a sensible number of products per page</li>
 </ul>
+<p><a href="/blog/image-optimization-wordpress/">Image optimisation for WordPress</a> explains the process in detail. Use styled room photos to inspire, but always include plain shots on a neutral background so the buyer can see the piece itself.</p>
+
+<h2>Trade and bulk buyers</h2>
+<p>Interior designers, architects, hotels, offices and builders buy differently from homeowners. They want specification sheets, trade pricing, bulk lead times and someone who understands a project schedule. A short trade page with its own enquiry form, asking for the company, the project, quantities and the delivery date, keeps these enquiries away from the retail cart. Downloadable catalogues with dimensions and material options help them present your pieces to their own clients.</p>
+
+<h2>Related products and categories</h2>
+<p>Buyers furnishing a room often want matching pieces. Link sets together, such as a bed with its side tables and dresser, and organise categories by room as well as by type. If you also sell mattresses, soft furnishings or rent furniture, those deserve their own sections; <a href="/blog/website-for-mattress-sleep-brands/">websites for mattress and sleep brands</a> and <a href="/blog/website-for-home-decor-stores/">websites for home decor stores</a> cover those ranges.</p>
 
 <p>Selling fitted kitchens and wardrobes rather than loose furniture? See <a href="/blog/website-for-modular-kitchen-companies/">websites for modular kitchen and wardrobe companies</a>.</p>
 
-<h2>B2B buyers</h2>
-<p>Hotels, offices, architects and interior designers buy in bulk. A dedicated section for trade and project enquiries, with capacity, past projects and a quote form, can bring high-value orders; see the <a href="/blog/industrial-website-product-catalogue/">product catalogue guide</a>.</p>
-
 <p>Cafés, hotels and offices also need existing seating re-covered between refits; if that is your trade, see <a href="/blog/website-for-upholstery-services/">websites for upholstery and sofa repair services</a>.</p>
 
-<h2>Speed matters</h2>
-<p>Furniture sites are image-heavy. Optimized images and good hosting keep category pages fast; see <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
+<h2>FAQs</h2>
+<h3>Should a furniture business sell online or just show a catalogue?</h3>
+<p>Sell ready-stock pieces with fixed prices online, and use quote requests for custom work. Many businesses do both on the same site, with each product clearly marked.</p>
+<h3>How do we stop buyers ordering furniture that does not fit?</h3>
+<p>Give full dimensions and packed sizes on every product, link to a measuring guide, and mention door, lift and staircase checks on the product page.</p>
+<h3>Can customers choose fabric and size on one product page?</h3>
+<p>Yes. Product variations let buyers choose size, fabric and finish on a single page, with the price and photos updating to match.</p>
+<h3>Why is our furniture website slow?</h3>
+<p>Usually oversized images, heavy sliders and too many plugins. Resizing and compressing photos, lazy-loading galleries and removing unused scripts often make a large difference.</p>
+<h3>Can we take an advance online for custom furniture?</h3>
+<p>Yes. A quote can be sent with a payment link for the advance, with the balance taken before delivery, and the terms stated on the quote and the website.</p>
 
-<h2>SEO</h2>
-<ul>
-  <li>Target product-type and location searches: "solid wood dining table", "furniture showroom in {city}"</li>
-  <li>Unique descriptions, never copied from suppliers</li>
-  <li>Category pages with helpful buying advice</li>
-</ul>
+<p>If your furniture site looks good on a laptop but loads slowly on a phone, or brings enquiries that take three calls to qualify, both can be fixed. The <a href="/woocommerce-developer/">WooCommerce developer</a> page describes how I set up stores, and the speed page covers what an optimisation includes.</p>
 `,
   },
   {
@@ -10565,100 +10702,208 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-pharmacies',
-    seoTitle: 'Websites for Pharmacies & Medical Stores',
-    title: 'Websites for Pharmacies and Medical Stores: What to Include',
-    description: 'Pharmacy and medical store websites: store info, services, prescription enquiries, home delivery, health products, compliance cautions and local SEO.',
+    seoTitle: 'Website for Pharmacies and Medical Stores: What to Include',
+    title: 'Websites for Pharmacies and Medical Stores: What You Can Sell Online, Prescription Requests, OTC and Wellness Products, Home Delivery, Store Locator and Pharmacist Contact',
+    description: 'Plan a pharmacy or medical store website: online medicine sale rules to check, prescription requests, OTC products, home delivery and a store locator.',
     date: '2026-09-27',
+    updated: '2026-10-25',
     category: 'Industries',
     related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'woocommerce-developer'],
     body: `
-<p>For a neighbourhood pharmacy or chain of medical stores, a website mainly helps people find you, trust you and contact you quickly, especially for home delivery. Online sale of medicines is regulated, so it's important to plan features carefully.</p>
+<p>A pharmacy website should first help people find your store, check whether you deliver to them and reach a pharmacist quickly. Selling medicines online is a separate decision, because the rules for e-pharmacies in India are still unsettled at the time of writing. Many medical stores do well with an enquiry-led site, plus an online shop for over-the-counter and wellness products only after checking what is permitted.</p>
+<p>The online shop side is a <a href="/woocommerce-developer/">WooCommerce store</a>: a catalogue in categories, payment gateways such as Razorpay, COD and delivery rules, stock management and order alerts. The information side has more in common with the <a href="/wordpress-website-for-doctors/">clinic websites I build for doctors</a>, where accuracy, clear contact details and trust carry most of the weight. A pharmacy needs both, and the boundary between them should be drawn carefully.</p>
 
-<h2>Core information</h2>
+<h2>Three ways a pharmacy website can work</h2>
+<p>Decide which level you are building before planning pages. Each one carries different legal and operational demands:</p>
+<table>
+  <thead>
+    <tr><th>Level</th><th>What it does</th><th>What it needs</th><th>Main caution</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Information site</td><td>Store details, hours, services, delivery area, call and WhatsApp</td><td>Accurate details and a phone that gets answered</td><td>Keep hours and contact details current</td></tr>
+    <tr><td>Enquiry-led ordering</td><td>Customers request medicines or share a prescription; the pharmacist reviews it and confirms by phone or WhatsApp</td><td>A secure way to receive prescriptions, and staff to review them promptly</td><td>Handling of health data, and dispensing only against a valid prescription where one is required</td></tr>
+    <tr><td>Online store</td><td>A cart for OTC, wellness and device products, possibly medicines if the law allows</td><td>Product data, payments, delivery and order management</td><td>What may be sold online, and how; take legal advice first</td></tr>
+  </tbody>
+</table>
+<p>Many neighbourhood pharmacies combine the first two and add a small online shop for non-medicine products. Chains with a central warehouse sometimes go further, but they usually have legal teams reviewing each step.</p>
+
+<h2>Selling medicines online: what to check before you build</h2>
+<p>This is the part to get right before any design work. At the time of writing, the sale of medicines in India is governed by the Drugs and Cosmetics Act and its rules, which were written for physical shops. Draft rules for e-pharmacies have been published in the past but, as far as I am aware, not finalised, and the question of online medicine sales has been before the courts. The position may have changed by the time you read this.</p>
+<p>That leaves several questions only a lawyer or regulatory adviser can answer for your business:</p>
 <ul>
-  <li>Store locations, opening hours (including late-night or 24-hour stores) and maps</li>
-  <li>Phone and WhatsApp for orders and availability questions</li>
-  <li>Services such as home delivery areas, health check-ups, blood pressure or sugar testing, and equipment rental</li>
-  <li>Pharmacist details and licence information displayed as required</li>
+  <li>Whether your existing retail drug licence allows you to take orders through a website and deliver them, and within what area</li>
+  <li>Which categories of medicines, if any, you can accept online orders for, and under what conditions</li>
+  <li>How prescriptions must be checked, recorded and retained when the order arrives digitally</li>
+  <li>Which medicines should never be supplied through a website order at all, such as those under the strictest schedules</li>
+  <li>What your licence details, pharmacist details and other information must show on the site</li>
 </ul>
+<p>I can build the features once you know the answers. What I would not do is build a full medicine cart on the assumption that it is allowed. Please confirm the current rules first; they are the single biggest risk on a pharmacy website.</p>
 
-<h2>Prescription and delivery enquiries</h2>
-<p>A simple, secure way for customers to request medicines and share prescriptions for the pharmacist to review, followed by confirmation over phone or WhatsApp, is often the most practical approach for local pharmacies.</p>
+<h2>Prescription requests, handled with care</h2>
+<p>Customers like being able to send a photo of a prescription and have the medicines ready or delivered. A careful process looks like this:</p>
+<ol>
+  <li>The customer opens a "Request medicines" page and enters name, phone, delivery address or preferred store, and whether a prescription is involved.</li>
+  <li>The prescription is shared through a channel that does not leave it sitting in an ordinary email inbox, such as a secure upload with restricted access, or a WhatsApp business number the pharmacy controls.</li>
+  <li>A registered pharmacist reviews the prescription and the request, and calls or messages to confirm availability, substitutes if any, and price.</li>
+  <li>The order is dispensed and delivered or kept for pick-up, with the original prescription checked on delivery where the rules require it.</li>
+  <li>Uploaded files are deleted or archived according to a retention policy you have agreed with your adviser.</li>
+</ol>
+<p>Prescriptions show a person's name, conditions and medicines, which makes them sensitive personal data. Collect only what you need, explain how it is used and stored in your privacy policy, and restrict who can see it. For what India's data protection law expects, see <a href="/blog/dpdp-act-website-basics/">DPDP Act basics for website owners</a>.</p>
+<p>Do not let the website suggest that a pharmacist can replace a doctor. If a customer describes symptoms rather than sharing a prescription, the response should guide them to a doctor where appropriate.</p>
 
-<h2>Compliance first</h2>
-<p>Selling medicines online, especially prescription drugs, is subject to law and regulation, which can change. Before adding online ordering or payment for medicines, confirm the current requirements with a legal adviser. Over-the-counter health and wellness products may be simpler to sell online. Keep health information general and accurate, and avoid treatment claims.</p>
+<h2>OTC, wellness and devices: the simpler online range</h2>
+<p>Many products in a pharmacy are not prescription medicines: personal care, baby care, nutrition, first aid, supports and braces, and devices such as glucometers, blood pressure monitors and thermometers. These are often easier to sell online, though some still have their own rules, and Ayurvedic products, cosmetics and supplements each fall under separate regulation. Check the category before listing it.</p>
+<p>For each product, show the brand, pack size, MRP and your price, the manufacturer, and the expiry policy, such as a minimum shelf life on delivery. Copy any claims from the pack, not from advertising, and avoid adding health claims of your own. Products that need a demonstration, such as a nebuliser, can link to a short how-to video. If you also hire out wheelchairs, oxygen concentrators or hospital beds, give that service its own page; <a href="/blog/website-for-medical-equipment-suppliers/">websites for medical equipment suppliers</a> covers rental and sales of equipment.</p>
 
-<h2>Health and wellness products</h2>
-<p>Many pharmacies sell supplements, personal care, baby care, and medical devices. These can be presented as a catalogue or an online store where permitted. See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
-
-<h2>Privacy</h2>
-<p>Prescriptions and health details are sensitive. Use HTTPS, collect only what's needed, restrict access to uploaded prescriptions, and publish a clear privacy policy.</p>
-
-<h2>Local SEO</h2>
+<h2>Home delivery: say exactly where and when</h2>
+<p>A delivery promise is only useful if it is specific. State:</p>
 <ul>
-  <li>Target "medical store near me", "24 hour pharmacy in {area}" and "medicine home delivery {city}"</li>
-  <li>A complete Google Business Profile for each store, with accurate hours</li>
-  <li>Consistent name, address and phone everywhere; see the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a></li>
+  <li>The areas or pin codes you deliver to, with a pin code checker on the site</li>
+  <li>Delivery hours, the order cut-off for same-day delivery, and any minimum order value</li>
+  <li>Delivery charges, and whether payment can be made on delivery by UPI or cash</li>
+  <li>What happens out of hours: whether night delivery is possible for urgent needs, or the nearest store open late</li>
 </ul>
+<p>Customers can test their address before ordering with <a href="/blog/pincode-delivery-checker-woocommerce/">a pin code checker on the store</a>, and a WhatsApp button for delivery questions saves calls; <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to a business website</a> covers the options.</p>
 
-<h2>Mobile first</h2>
-<p>People often search for pharmacies urgently on their phones. Fast pages, tap-to-call, WhatsApp and clear hours matter most. For related healthcare websites, see <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
+<h2>A store locator for more than one shop</h2>
+<p>For chains, the most visited page is often "find a store". Give each store its own page with:</p>
+<ul>
+  <li>Address, landmark and a map</li>
+  <li>Hours, highlighted if the store is open 24 hours or late at night</li>
+  <li>Phone and WhatsApp numbers for that store</li>
+  <li>Services at that location, such as blood pressure checks, diagnostic sample collection or vaccination where offered and permitted</li>
+  <li>Its own Google Business Profile, with the same name, address and hours</li>
+</ul>
+<p>A list sorted by area, with a "near me" option on mobile, helps people find the closest store quickly, and consistent store details support <a href="/blog/local-seo-guide-small-business-india/">local SEO</a> too. <a href="/blog/multi-location-business-website/">Websites for multi-location businesses</a> covers the structure in more detail.</p>
+
+<h2>Pharmacist contact and licence details</h2>
+<p>People trust a pharmacy when they can see who is responsible. Name the registered pharmacist in charge at each store, with their registration details as your adviser recommends, and show the drug licence numbers for each store in the footer or on its page. Give customers a clear way to ask a pharmacist a question by phone or WhatsApp during working hours, and say how quickly they can expect a reply.</p>
+
+<h2>Health information without overstepping</h2>
+<p>Short, accurate articles can help: how to store insulin in summer, how to use an inhaler properly, how to read the expiry date on a strip, how to dispose of old medicines. Keep them general, date them, and avoid advice that belongs with a doctor, such as dosages or switching medicines. Never promote a prescription medicine by name to the public.</p>
+
+<h2>FAQs</h2>
+<h3>Can a medical store sell medicines through its website?</h3>
+<p>The rules on online medicine sales in India are unsettled at the time of writing. Take advice from a lawyer or regulatory adviser on what your licence allows before adding any online ordering for medicines.</p>
+<h3>Can customers upload prescriptions on the website?</h3>
+<p>It can be done, but prescriptions are sensitive health data. Use a restricted, secure channel, let a pharmacist review every request, and delete files according to an agreed retention policy.</p>
+<h3>What can a pharmacy sell online more easily?</h3>
+<p>Personal care, baby care, first aid and many devices are generally simpler than medicines, though categories such as supplements, Ayurvedic products and cosmetics have their own rules to check.</p>
+<h3>Should the website show our drug licence number?</h3>
+<p>Showing the licence numbers and the pharmacist in charge for each store builds trust, and may be required. Ask your adviser what must be displayed for your licence.</p>
+<h3>Do we need a page for each store?</h3>
+<p>Yes, if you have several. Each store page should carry its own address, hours, phone, services and map, matching its Google Business Profile.</p>
+
+<p>If you are planning a pharmacy website, the safest first step is a site that is accurate, fast and easy to contact, then adding online ordering only as far as your advisers confirm. When you are ready for the store side, my <a href="/woocommerce-developer/">WooCommerce development</a> page lists what a store build covers.</p>
 `,
   },
   {
     slug: 'website-for-car-dealers-workshops',
-    seoTitle: 'Websites for Car Dealers & Auto Workshops',
-    title: 'Websites for Car Dealers and Auto Workshops',
-    description: 'What car dealers, bike dealers and auto workshops need online: inventory listings, service menus, booking, trust signals, finance enquiries and local SEO.',
+    seoTitle: 'Website for Car Dealers and Workshops: Listings to Bookings',
+    title: 'Websites for Car Dealers and Auto Workshops: Used and New Car Dealers, Independent Garages, Inventory Listings, Service Booking, Test Drives and Honest Brand Wording',
+    description: 'Plan a website for a used car dealer, new car showroom or auto workshop: inventory listings, service booking, test drives, brand wording and local SEO.',
     date: '2026-09-27',
+    updated: '2026-10-25',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
     body: `
-<p>Car and bike buyers research heavily online, and people looking for a workshop want someone nearby they can trust. A good website helps dealers sell inventory faster and helps workshops fill service slots.</p>
+<p>A car business website should be planned around what you sell: specific cars, new models from one manufacturer, or service hours in a workshop. A used car dealer needs a stock listing that stays current, an authorised dealer needs test drive and service booking that sit within the manufacturer's rules, and an independent garage needs a service menu, a booking form and careful wording about the brands it works on.</p>
+<p>Each of the three is a standard business build, the sort I describe under <a href="/wordpress-website-development/">WordPress website development</a>: pages your staff can update, contact forms and WhatsApp, speed optimisation and on-page SEO set up from the start. What changes is the centre of gravity. For seasonal offers, such as a monsoon check-up camp or an exchange event, a separate <a href="/landing-page-design/">landing page for that campaign</a> keeps ad visitors focused on one action.</p>
 
-<h2>For used car and bike dealers</h2>
-<h3>Inventory listings</h3>
-<ul>
-  <li>A page for each vehicle with multiple photos from all angles</li>
-  <li>Make, model, year, kilometres, fuel, transmission, ownership and price</li>
-  <li>Inspection or condition reports where available</li>
-  <li>Filters by budget, brand, body type and fuel</li>
-  <li>"Enquire", "Book a test drive" and WhatsApp buttons on every listing</li>
-</ul>
-<h3>Trust and finance</h3>
-<ul>
-  <li>Documentation, transfer and warranty information</li>
-  <li>Finance and exchange enquiry forms</li>
-  <li>Genuine customer reviews and delivery photos</li>
-</ul>
+<h2>Which kind of car business are you?</h2>
+<table>
+  <thead>
+    <tr><th></th><th>Used car dealer</th><th>Authorised new car dealer</th><th>Independent workshop</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Main page type</td><td>One page per car in stock</td><td>Model pages, offers and service</td><td>Service menu and booking</td></tr>
+    <tr><td>Main action</td><td>Enquire or book an inspection visit</td><td>Book a test drive or a service</td><td>Book a service slot or ask for an estimate</td></tr>
+    <tr><td>What changes often</td><td>Stock, every few days</td><td>Offers, by month or festival</td><td>Prices and seasonal checks</td></tr>
+    <tr><td>Biggest wording risk</td><td>Condition and history claims</td><td>Prices and offers outside the manufacturer's rules</td><td>Implying authorisation by a brand</td></tr>
+  </tbody>
+</table>
+<p>Many businesses combine two of these, such as a used car lot with a workshop behind it. That is fine, but give each side its own section and menu item, because buyers and service customers are different people with different questions. Bike showrooms follow a similar pattern; <a href="/blog/website-for-two-wheeler-dealers/">websites for two-wheeler dealers</a> covers them.</p>
 
-<h2>For service workshops</h2>
+<h2>Used car dealers: the listing is the shop window</h2>
+<p>Buyers browse used car stock the way they browse property: they filter, open a few listings, compare and shortlist. A listing that answers their questions brings a visit; a listing with three photos and "call for price" brings a call that goes nowhere.</p>
+<h3>What each car's page needs</h3>
 <ul>
-  <li><strong>Service menu:</strong> periodic service, repairs, denting and painting, AC, tyres, detailing</li>
-  <li><strong>Transparent pricing</strong> or "starting from" ranges</li>
-  <li><strong>Online booking</strong> with pickup and drop options</li>
-  <li><strong>Brands serviced</strong> and technician experience</li>
-  <li><strong>Before and after photos</strong> for body work and detailing</li>
+  <li>Twenty or more photos taken in good light: all four sides, interior, dashboard with the odometer, boot, tyres, and any marks or dents</li>
+  <li>Make, model, variant, year of manufacture and registration, fuel, transmission, kilometres and number of owners</li>
+  <li>Registration state and the city where the car is, because transfer between states involves more paperwork</li>
+  <li>Insurance status and validity, and service history if available</li>
+  <li>An inspection summary, if you inspect cars, with what was checked and what was found</li>
+  <li>The price, or a clear reason it is shown only on request</li>
+  <li>Enquire, WhatsApp and book-a-visit buttons</li>
 </ul>
+<h3>Keeping stock current</h3>
+<p>Nothing loses trust faster than a buyer driving across the city for a car that sold last week. Mark cars as "booked" or "sold" the day it happens, and either remove them after a few days or keep them in a separate sold archive. The stock should be managed from the dashboard by whoever handles sales, with fields for each detail so every listing looks the same. Filters by budget, body type, fuel, transmission and brand help buyers when you carry more than a couple of dozen cars.</p>
+<h3>Condition claims</h3>
+<p>Words like "accident-free", "first owner" and "genuine kilometres" are exactly what buyers check later. Use them only when you can back them up, describe how you verified them, and put the detailed condition report on the page. If you offer a warranty or return window, explain its terms plainly, including what is excluded.</p>
 
-<p>Selling electric vehicles? See <a href="/blog/website-for-ev-dealers/">websites for EV dealers</a>.</p>
+<h2>Authorised new car dealers: work within the manufacturer's rules</h2>
+<p>If you hold a dealership, the manufacturer usually controls a great deal: logo use, model imagery, price display and sometimes the website itself. Read your dealer agreement and brand guidelines before planning anything. Within those limits, a dealer's own site, or its section of the manufacturer's dealer platform, can still do useful local work:</p>
+<ul>
+  <li>Test drive booking that records the model, the day and slot the customer would like, and whether a home test drive suits them if you offer it</li>
+  <li>Showroom and workshop pages for each location, with timings and maps</li>
+  <li>Local offers and events, dated and with clear terms</li>
+  <li>Service booking that captures registration number, kilometres and the type of service due</li>
+  <li>Team pages for sales and service advisers</li>
+</ul>
+<p>Show prices only as the manufacturer allows, and be precise about whether a figure is ex-showroom or on-road, and for which city. On-road prices include registration and insurance, which vary by state.</p>
+
+<h2>Independent workshops: service menu, estimate and booking</h2>
+<p>An independent garage competes on trust, convenience and price. The site should make all three visible.</p>
+<h3>The service menu</h3>
+<p>List services the way owners think of them: periodic service, brakes, clutch, suspension, AC repair and gas top-up, battery, tyres and alignment, denting and painting, electrical faults, and pre-purchase inspection. For each, say what is included and give a starting price or explain what decides the price, such as the car segment and parts used. Say whether you use original, OEM-equivalent or aftermarket parts, and that the customer can choose where that applies.</p>
+<h3>The booking form</h3>
+<ol>
+  <li>Car make, model, fuel and year</li>
+  <li>Registration number, so you can look up previous visits</li>
+  <li>What is needed: a service, a specific problem, or an estimate</li>
+  <li>A short description of the problem, with an optional photo</li>
+  <li>Preferred date, and whether pick-up and drop is needed, with the address</li>
+  <li>Name, mobile number and consent for WhatsApp updates</li>
+</ol>
+<p>Confirm on WhatsApp, then send an estimate before work starts and ask for approval of any additional work. Saying this process on the site is itself a trust signal. <a href="/blog/website-for-car-service-garages/">Websites for car service garages</a> goes further into workshop-specific pages, and <a href="/blog/online-appointment-booking-website/">online appointment booking</a> compares booking tools.</p>
+
+<h2>Brand names: say what is true, and nothing more</h2>
+<p>Independent workshops and used car dealers naturally mention car brands, because owners search for "Maruti service centre near me" or "used Honda City". You can describe the brands you work on, but the wording must not suggest an authorisation or partnership you do not have. Trade mark law and the manufacturers themselves take this seriously.</p>
+<table>
+  <thead>
+    <tr><th>Avoid</th><th>Write instead</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Authorised Hyundai service centre (when you are not)</td><td>Independent workshop servicing Hyundai, Maruti Suzuki and Tata cars</td></tr>
+    <tr><td>Manufacturer logos in your header or as your main image</td><td>Brand names in plain text in a list of makes you service</td></tr>
+    <tr><td>Genuine company service at half the price</td><td>What your service includes, which parts you use, and your price</td></tr>
+    <tr><td>Certified used cars (without a manufacturer programme)</td><td>Inspected used cars, with a description of your own inspection</td></tr>
+  </tbody>
+</table>
+<p>If your technicians have trained with a manufacturer or worked at an authorised workshop, you can say so factually on their profiles. If you deal in electric vehicles, the same care applies to battery and warranty claims; <a href="/blog/website-for-ev-dealers/">websites for EV dealers</a> covers that.</p>
+
+<h2>Finance, insurance and exchange enquiries</h2>
+<p>Buyers often want to know whether they can get a loan or trade in their current car before they visit. An enquiry form for each is useful, but be careful with wording. Unless you are a lender, say that you help arrange finance through banks or finance companies, that approval and interest rates are decided by the lender, and that figures shown are examples. Do not show a "guaranteed approval" message or an EMI that assumes a rate nobody has offered. For insurance, describe whether you assist with renewal or transfer, and through whom.</p>
+<p>An exchange form should ask for make, model, year, kilometres, ownership and a few photos, and should make clear that the final value is given after inspection.</p>
+
+<h2>Local search for showrooms and workshops</h2>
+<p>Most car business customers search near where they live or work. A Google Business Profile for each location, with the right primary category, accurate hours and photos of your actual premises and team, matters as much as the website. On the site, give every branch its own page with its address, map, services and phone number, and keep the name, address and phone number identical across the site and profiles. <a href="/blog/google-business-profile-checklist/">The Google Business Profile checklist</a> goes through the settings. If you also sell spares, <a href="/blog/website-for-auto-parts-dealers/">websites for auto parts dealers</a> covers part lookups and catalogues.</p>
 
 <p>Run a dedicated wash, detailing or coating studio rather than a full workshop? See <a href="/blog/website-for-car-wash-detailing/">websites for car wash, detailing and ceramic coating studios</a>.</p>
 
-<h2>Make it easy on mobile</h2>
-<p>Most searches happen on phones, often urgently for breakdowns. Tap-to-call, WhatsApp, location and hours should be visible immediately. See <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a>.</p>
+<h2>FAQs</h2>
+<h3>Can a used car dealer manage stock listings without a developer?</h3>
+<p>Yes. Each car is added from the dashboard with fixed fields and a photo gallery, and marked booked or sold when it goes. Staff can learn it in a short session.</p>
+<h3>Can an independent garage use car brand names on its website?</h3>
+<p>You can say which makes you service, in plain text. Avoid logos, the word "authorised" and anything else that suggests a link with the manufacturer you do not have.</p>
+<h3>Should a workshop show service prices?</h3>
+<p>Starting prices for common jobs help customers decide, as long as you explain what changes the final figure and promise an estimate before work begins.</p>
+<h3>Can customers book a test drive online?</h3>
+<p>Yes. A form can capture the model, date and time, and whether a home test drive is wanted, then confirm on WhatsApp. Authorised dealers should check what their manufacturer allows.</p>
+<h3>Should we show loan EMIs on car listings?</h3>
+<p>Only as clearly labelled examples, with the assumptions shown, and a note that the lender decides approval and rates. Many dealers simply offer a finance enquiry form instead.</p>
 
-<h2>Local SEO</h2>
-<ul>
-  <li>Target "used cars in {city}", "car service near me" and "{brand} service centre {area}"</li>
-  <li>A complete Google Business Profile with photos and reviews</li>
-  <li>Unique descriptions for each vehicle listing, not copied spec sheets</li>
-</ul>
-
-<p>Selling spare parts and accessories as well? Parts catalogues need fitment search by make and model; see <a href="/blog/website-for-auto-parts-dealers/">websites for auto parts and accessories dealers</a>.</p>
-
-<h2>Campaigns</h2>
-<p>Service offers and festive deals work well with dedicated <a href="/landing-page-design/">landing pages</a> and tracked calls and WhatsApp clicks.</p>
+<p>Whether you run a used car lot, a showroom or a workshop, the site should do what a good salesperson or service adviser does: answer the obvious questions honestly and make the next step easy. My <a href="/wordpress-website-development/">WordPress website development</a> page describes how I plan and build business sites like these.</p>
 `,
   },
   {
@@ -15142,61 +15387,106 @@ document.querySelectorAll('.map-facade button').forEach(function (btn) {
   },
   {
     slug: 'website-for-music-dance-academies',
-    seoTitle: 'Websites for Music & Dance Academies',
-    title: 'Websites for Music and Dance Academies',
-    description: 'What music and dance academies need online: courses by age and level, teacher profiles, schedules and fees, trial classes, online classes and local SEO.',
+    seoTitle: 'Website for Music and Dance Academies: Courses and Trials',
+    title: 'Websites for Music and Dance Academies: Courses by Instrument and Style, Age Groups, Batch Timings, Trial Classes, Grade Exams, Recitals and Teacher Profiles',
+    description: 'Plan a music or dance academy website: courses by instrument or style, age groups, batch timings, trial class booking, teachers, recitals and fees.',
     date: '2026-09-27',
+    updated: '2026-10-25',
     category: 'Industries',
     related: ['wordpress-website-development', 'website-for-schools-and-coaching', 'landing-page-design'],
     body: `
-<p>Parents choosing classes for their children, and adults picking up a new art form, want to know what's taught, by whom, when, and what it costs. They also want to feel the energy of your academy.</p>
+<p>A music or dance academy website has one main job: get a parent or adult learner to book a trial class. To do that it needs a page for each course, honest information on age groups and batch timings, teachers worth meeting, and a short trial booking form. <a href="/blog/school-coaching-website-what-parents-look-for/">What parents look for on a school or coaching website</a> applies here too. Grade exams, recitals and fees all support that decision, so present them carefully.</p>
+<p>The structure follows the <a href="/website-for-schools-and-coaching/">education websites I build for schools and coaching institutes</a>: courses and batches pages, an enquiry form, faculty profiles, a notice board for holidays and events, and a photo and video gallery. An academy is more personal than a coaching centre, though. Parents are choosing the person who will sit beside their child every week, and adults are often nervous about starting late, so warmth and clarity matter more than a list of achievements.</p>
+<p>For admission season or a summer workshop, a <a href="/landing-page-design/">dedicated campaign landing page</a> about that one offer, with the trial form on it, will usually outperform sending ad clicks to the homepage.</p>
 
-<h2>Courses</h2>
+<h2>Decide what the site is organised by</h2>
+<p>Academies teach very different combinations, and the menu should reflect how your students choose. Three patterns work:</p>
 <ul>
-  <li>Instruments, vocal styles or dance forms offered</li>
-  <li>Age groups and levels (beginner to advanced)</li>
-  <li>Grade exam preparation, if offered</li>
-  <li>Online and offline classes</li>
+  <li><strong>By art form</strong>, when you teach several: Music (keyboard, guitar, Hindustani vocal, tabla) and Dance (Bharatanatyam, Kathak, contemporary, Bollywood). This is the most common and the easiest to search.</li>
+  <li><strong>By learner</strong>, when your audience is split: Kids, Teens, Adults. Useful if adult beginners are a big part of your business and need reassurance of their own.</li>
+  <li><strong>By goal</strong>, when you run distinct tracks: hobby classes, exam preparation, performance training and wedding choreography.</li>
 </ul>
+<p>Whichever you choose, every course still needs its own page. Someone searching for "Kathak classes for kids" in your area should land on a page about exactly that, not a combined page that mentions Kathak once.</p>
 
-<p>If your teachers also prepare couples and families for wedding performances, that work deserves its own pages; see <a href="/blog/website-for-wedding-choreographers/">websites for wedding and sangeet choreographers</a>.</p>
+<h2>The course page, section by section</h2>
+<p>A course page answers the questions that otherwise arrive one by one on WhatsApp. Plan each one with these sections:</p>
+<table>
+  <thead>
+    <tr><th>Section</th><th>What to include</th><th>Why it matters</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>What students learn</td><td>The first few months in plain words: posture, basic rhythms, first songs or first adavus, reading notation if taught</td><td>Parents want to picture progress; adults want to know the start is manageable</td></tr>
+    <tr><td>Age groups and levels</td><td>Minimum age, how levels are decided, whether a placement chat happens first</td><td>Stops a parent of a four-year-old enquiring for a class that starts at seven</td></tr>
+    <tr><td>Batches</td><td>Days, times, class length and batch size, by branch if you have more than one</td><td>Timing is often the deciding factor for working parents</td></tr>
+    <tr><td>What to bring</td><td>Instrument needs, practice attire, ghungroo or practice saree when required</td><td>Avoids a surprise purchase in week one</td></tr>
+    <tr><td>Online option</td><td>Whether the course runs online, and which parts work better in person</td><td>Opens the course to students in other cities</td></tr>
+    <tr><td>Next step</td><td>A trial class button and a WhatsApp link</td><td>One clear action at the end of every page</td></tr>
+  </tbody>
+</table>
+<p>Many students need to buy or rent an instrument before the second class. If you recommend a shop, link to it; <a href="/blog/website-for-musical-instrument-stores/">websites for musical instrument stores</a> covers the other side of that relationship.</p>
 
-<h2>Teachers</h2>
-<p>Teacher profiles with training, experience, performances and teaching style, with photos. Teachers are often the main reason families choose an academy.</p>
+<h2>Batch timings that stay current</h2>
+<p>An outdated timetable costs enquiries. A parent who sees a Saturday 10 am Kathak batch, enquires, and is told it closed last term may not ask again. Keep timings in one place that staff can edit, show "batch full" or "waitlist open" honestly, and add a line under each timetable saying when it was last updated. Holidays, exam weeks and festival breaks belong on a notice page parents can check without calling.</p>
+<p>If you have branches, give each one its own page with its batches, address and map, and connect each to its own Google Business Profile.</p>
 
-<h2>Schedules and fees</h2>
+<h2>The trial class is the conversion that matters</h2>
+<p>Very few families enrol straight from a website. They book a trial, meet the teacher and decide. Make that step as easy as possible:</p>
+<ol>
+  <li>Say what the trial is: its length, whether it is free or paid, whether parents can watch, and whether it is a real batch or a separate demo.</li>
+  <li>Keep the form short: student name, age, course of interest, any previous training, preferred days, parent name and mobile number.</li>
+  <li>After submission, tell the family who will get in touch and roughly how soon.</li>
+  <li>Confirm the slot on WhatsApp with the address, a map link and what to wear or bring.</li>
+  <li>After the trial, send a short message with batch options and the enrolment link.</li>
+</ol>
+<p>Online fee payment after the trial saves an awkward conversation at the front desk. <a href="/blog/accept-online-payments-wordpress-india/">Taking online payments on WordPress</a> explains gateways, UPI and fees.</p>
+
+<h2>Grade exams: describe what you prepare for, not an affiliation you lack</h2>
+<p>Many families look for exam-based progress, whether a graded music exam from an international board or a certificate from an Indian music or dance institution. If your academy prepares students for such exams, say which exams and which levels, and explain how preparation fits into normal classes.</p>
+<p>Be careful with wording. Preparing students for an exam is not the same as being an approved centre or an affiliated institute. Use a board's name and logo only as its rules allow, mention a centre registration only if you hold one, and do not publish pass rates or distinctions as percentages. A short line such as "Students may sit graded exams when their teacher feels they are ready" is honest and reassuring. If you do not offer exams at all, there is no need to mention them; many students learn purely for enjoyment, and you can say so.</p>
+
+<h2>Teachers are often the reason families choose you</h2>
+<p>A teacher profile does more than a paragraph of brand copy. For each teacher include:</p>
 <ul>
-  <li>Batch timings and days</li>
-  <li>Monthly or term fees, or "starting from"</li>
-  <li>Registration and material costs</li>
+  <li>A real photo, ideally while teaching</li>
+  <li>Training: their guru or gharana for classical forms, institution or diploma for others, stated as it actually is</li>
+  <li>Performance experience, described factually</li>
+  <li>The ages and levels they teach, and the languages they teach in</li>
+  <li>A short note in their own voice on how they teach beginners</li>
 </ul>
+<p>Avoid "world-renowned" or "best in the city". Parents notice the difference between a description and a boast, and a clear, specific profile reads as more confident.</p>
 
-<p>If students need to buy or rent an instrument, a partner shop can help; see <a href="/blog/website-for-musical-instrument-stores/">websites for musical instrument stores</a>.</p>
-
-<h2>Trial class and enrolment</h2>
+<h2>Recitals, video and children on camera</h2>
+<p>Nothing sells a dance academy like a clip from the annual showcase, and nothing sells a music school like a student playing a piece they have just learned. Video belongs on the site, but it needs care:</p>
 <ul>
-  <li>A free or paid trial class booking form</li>
-  <li>WhatsApp for questions</li>
-  <li>Online fee payment; see <a href="/blog/accept-online-payments-wordpress-india/">online payments on WordPress</a></li>
+  <li>Get written consent from a parent before filming or publishing a minor, and record what the consent covers: the website, social media, ads</li>
+  <li>Avoid publishing children's full names, schools or anything that identifies where they can be found</li>
+  <li>Host videos on YouTube or Vimeo and embed them, so the page stays fast; <a href="/blog/video-on-business-website/">using video on a business website</a> explains why</li>
+  <li>Keep clips short on the course pages and put full recitals on a separate gallery page</li>
+  <li>Remove a video promptly if a family asks</li>
 </ul>
+<p>A page for upcoming events, with the date, venue and how families can attend, also tells prospective parents that students actually perform.</p>
 
-<p>Running abacus, robotics, coding or art classes, or a summer camp? See <a href="/blog/website-for-kids-activity-classes/">websites for kids' activity classes and summer camps</a>.</p>
+<h2>Fees on request, without being evasive</h2>
+<p>Some academies publish fees, others prefer to discuss them after the trial because they vary by level, teacher and batch type. Either can work. If you keep figures off the site, still explain the structure: monthly or term fees, any registration or annual charge, costume and exam fees, and what happens to missed classes. Parents who know the shape of the cost are far more likely to book a trial than those who suspect a hidden bill. The same applies to refund and break policies during summer holidays.</p>
 
-<h2>Show your academy in action</h2>
-<p>Photos and short videos of classes, recitals and student performances (with parental consent for minors) are your strongest content.</p>
+<h2>Content that brings students in</h2>
+<p>Short articles answer the questions behind local searches: the right age to start a classical dance form, keyboard or guitar for a first instrument, how much daily practice a beginner needs, what to expect from a first year of vocal training. They are also easy for your teachers to help write. If your teachers also choreograph for weddings and sangeets, that work deserves separate pages; <a href="/blog/website-for-wedding-choreographers/">websites for wedding choreographers</a> covers how it is usually presented. For academies that also run art, abacus or holiday camps, <a href="/blog/website-for-kids-activity-classes/">websites for kids' activity classes</a> is the closer guide.</p>
 
 <p>Sports coaching has similar needs; see <a href="/blog/website-for-sports-academies/">websites for sports academies</a>.</p>
 
-<h2>Keep it updated</h2>
-<p>Events, recitals, holidays and new batches should be easy for staff to update. An outdated site suggests an inactive academy.</p>
+<h2>FAQs</h2>
+<h3>Should a music academy website show batch timings?</h3>
+<p>Yes, and keep them current. Timing is one of the first things parents check, and showing which batches are full or open saves both sides a phone call.</p>
+<h3>Can we mention exam boards on our website?</h3>
+<p>Mention an exam only if you genuinely prepare students for it, and use the board's name and logo only as its rules allow. Do not suggest an affiliation or centre status you do not hold.</p>
+<h3>Is it safe to post videos of child students?</h3>
+<p>Only with written parental consent covering where the video will appear. Avoid full names and identifying details, and remove a video quickly if a family asks.</p>
+<h3>Should we offer online classes on the same website?</h3>
+<p>Yes, if you teach online. Mark which courses run online, explain the setup a student needs, and give online batches their own timings and trial booking.</p>
+<h3>Do we need a separate page for each dance form or instrument?</h3>
+<p>Yes. Each one has different students, ages and questions, and a separate page is far more likely to appear when someone searches for that class in your area.</p>
 
-<h2>Local SEO</h2>
-<ul>
-  <li>Target "guitar classes near me", "Bharatanatyam classes in {area}" and "kids dance classes {city}"</li>
-  <li>A Google Business Profile with photos, videos and reviews</li>
-</ul>
-
-<p>See also <a href="/website-for-schools-and-coaching/">websites for schools and coaching</a>.</p>
+<p>An academy site built this way spends less time listing everything you teach and more time getting families through the door for a trial. I can plan the course pages, timetable and trial booking flow with you, and the <a href="/website-for-schools-and-coaching/">websites for schools and coaching</a> page explains how education projects usually run.</p>
 `,
   },
   {
@@ -15544,63 +15834,116 @@ document.querySelectorAll('.map-facade button').forEach(function (btn) {
   },
   {
     slug: 'website-for-chemical-pharma-manufacturers',
-    seoTitle: 'Websites for Chemical & Pharma Manufacturers (B2B)',
-    title: 'Websites for Chemical and Pharma Manufacturers (B2B)',
-    description: 'B2B websites for chemical and pharma manufacturers: product lists with CAS numbers and specs, regulatory approvals, quality systems and export enquiries.',
+    seoTitle: 'Website for Chemical and Pharma Manufacturers: B2B Guide',
+    title: 'Websites for Chemical and Pharma Manufacturers: Catalogues by CAS Number and Grade, TDS and SDS Downloads, Certifications You Hold, Export Enquiries and RFQ Forms',
+    description: 'Plan a B2B chemical or pharma manufacturer website: CAS and grade catalogues, TDS and SDS downloads, real certifications, export and RFQ forms.',
     date: '2026-09-27',
+    updated: '2026-10-25',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'website-redesign'],
     body: `
-<p>Procurement teams at pharma, chemical and industrial companies evaluate suppliers on technical fit, quality systems and regulatory standing. Your website should let them verify all three quickly, and request documents or quotes easily.</p>
+<p>Buyers of chemicals, APIs, intermediates and excipients use a supplier's website to run a first round of due diligence before anyone picks up the phone. They check whether you make the exact grade they need, whether the documents exist, whether your quality systems will pass their audit, and whether you can ship to them. A good site lets them answer all four in a few minutes and then send a quote request your team can act on.</p>
+<p>The core of the build is the same as the <a href="/website-for-manufacturers/">websites I build for manufacturers and B2B suppliers</a>: a company profile, specification-led product listings, a quote button on each product, brochure and datasheet downloads, certifications and industries-served pages. Chemical and pharma sites add a layer of technical detail and regulatory caution that general industrial sites do not need, and the way buyers search, often by CAS number, shapes the whole structure. Getting that structure right is also the foundation of <a href="/wordpress-seo-services/">technical SEO for WordPress</a>, because each product and grade needs a page Google can find.</p>
+<p>The sections below follow the order in which a procurement or regulatory team usually evaluates a new supplier.</p>
 
-<h2>Product information buyers need</h2>
+<h2>Step one for the buyer: do you make it, in the grade we need?</h2>
+<p>A buyer arrives with a product name, a synonym or a CAS registry number, and often a pharmacopoeia grade. The product page has to confirm the match immediately. Plan each page with these fields:</p>
+<table>
+  <thead>
+    <tr><th>Field</th><th>Example of what to show</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Product name and synonyms</td><td>The name you sell under, plus common alternative names and abbreviations</td><td>Buyers and their systems use different names for the same molecule</td></tr>
+    <tr><td>CAS number</td><td>Shown near the top, as text rather than in an image</td><td>So it can be searched on your site and found by Google</td></tr>
+    <tr><td>Molecular formula and weight</td><td>As plain text</td><td>Helps a technical buyer confirm the match</td></tr>
+    <tr><td>Grades offered</td><td>Technical, industrial, food, or pharmacopoeia grades such as IP, BP, USP or EP, only where you manufacture to them</td><td>Each grade can carry its own specification table</td></tr>
+    <tr><td>Key specifications</td><td>Assay, appearance, moisture, impurity limits, particle size where relevant</td><td>Typical values, with a note that the COA for each batch governs</td></tr>
+    <tr><td>Packing</td><td>Bags, fibre drums, HDPE drums, IBCs, with sizes</td><td>Buyers often need to know this before they can quote internally</td></tr>
+    <tr><td>Applications</td><td>Industries and uses, described factually</td><td>Avoid therapeutic or performance claims you cannot support</td></tr>
+    <tr><td>Documents</td><td>TDS, SDS, COA, and any others you provide</td><td>Mark which are downloads and which are on request</td></tr>
+  </tbody>
+</table>
+<p>Products that differ only by grade or particle size usually sit best on one page with a table per grade. Products with different uses or buyers deserve separate pages. <a href="/blog/industrial-website-product-catalogue/">Planning an industrial product catalogue</a> covers that decision in more detail.</p>
+<h3>Search by CAS number, name or synonym</h3>
+<p>A catalogue of a few hundred products needs a search box that matches CAS numbers exactly, ignores hyphen and spacing differences, and also finds synonyms. A filter by product category, such as solvents, intermediates or APIs, and by industry served helps buyers who are browsing rather than searching. Keep the product data in a spreadsheet you maintain, so it can be imported and updated in bulk.</p>
+
+<h2>Step two: does the paperwork exist?</h2>
+<p>Technical and safety documents are often the real reason a buyer visits. Decide document by document how each is handled:</p>
 <ul>
-  <li>Product names with CAS numbers and synonyms (buyers often search by CAS)</li>
-  <li>Grades, purity and key specifications</li>
-  <li>Packaging sizes and forms</li>
-  <li>Applications and industries served</li>
-  <li>Documentation available on request: COA, MSDS/SDS, technical data sheets</li>
+  <li><strong>Technical data sheet (TDS):</strong> usually a free download. It answers a buyer's first technical question, and it can be found through search.</li>
+  <li><strong>Safety data sheet (SDS or MSDS):</strong> many manufacturers offer it freely, because it is needed for safe handling and transport. Keep the revision date visible and replace old versions rather than adding new files beside them.</li>
+  <li><strong>Certificate of analysis (COA):</strong> batch-specific, so a sample COA can be shown, with real ones supplied with each shipment or on request.</li>
+  <li><strong>Regulatory and quality documents:</strong> such as declarations, stability data or drug master file details, normally shared only after a confidentiality agreement, through a request form.</li>
 </ul>
-<p>A searchable product list, by name or CAS number, saves buyers time.</p>
+<p>Give PDFs descriptive file names and titles that include the product name and CAS number, so they are useful when someone finds them out of context. <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs and brochures</a> explains how to make document downloads work for search without losing the lead.</p>
 
-<h2>Quality and regulatory</h2>
+<h2>Step three: will your quality systems pass our audit?</h2>
+<p>For pharma buyers in particular, certifications and site approvals are a filter. The rule is simple: list only what you hold, and state it precisely.</p>
+<table>
+  <thead>
+    <tr><th>If you hold it</th><th>How to show it</th><th>What to avoid</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ISO certification, such as ISO 9001 or ISO 14001</td><td>The standard, the certifying body, the scope and the validity date, with the certificate available</td><td>Showing a logo without a scope, or a certificate that has lapsed</td></tr>
+    <tr><td>GMP compliance under Indian rules</td><td>Which site and which products the licence or certificate covers, as issued by the licensing authority</td><td>Applying one site's approval to every product you sell</td></tr>
+    <tr><td>WHO-GMP certification</td><td>The site and product scope as stated on the certificate, and its date</td><td>Calling the company "WHO approved", which suggests something different</td></tr>
+    <tr><td>Overseas inspections or registrations</td><td>Only what is on public record or in documents you can share, worded as the regulator words it</td><td>Implying approval for a market or product the inspection did not cover</td></tr>
+  </tbody>
+</table>
+<p>Certificates expire and scopes change, so put a review date beside each one and assign someone to check them. A quality page that describes your QC laboratory, the instruments you use, your documentation practices and how you handle audits gives an auditor a reason to visit rather than a reason to rule you out.</p>
+
+<h2>Step four: can you supply us, and ship to us?</h2>
+<p>Export buyers want different details from domestic ones. A section for international enquiries should cover:</p>
 <ul>
-  <li>Certifications and approvals you hold (for example ISO, GMP-related certifications, and relevant regulatory registrations)</li>
-  <li>Quality control and testing facilities</li>
-  <li>Audit readiness and documentation practices</li>
+  <li>The countries and regions you already export to, stated generally if client names are confidential</li>
+  <li>Incoterms you usually work with and the ports you ship from</li>
+  <li>Packing and labelling suitable for export, and how dangerous goods are handled where relevant</li>
+  <li>Sample policy: whether samples are free, what quantity, and who pays freight</li>
+  <li>Documentation you supply with exports</li>
+  <li>Time zones and the languages your team works in</li>
 </ul>
-<p>Only list approvals you actually hold, and keep them current.</p>
+<p>If a large share of enquiries comes from abroad, the site may need content in more than one language; WordPress can handle that with each language on its own pages. <a href="/blog/website-for-export-businesses/">Websites for export businesses</a> covers international buyers more broadly.</p>
 
-<h2>Manufacturing capability</h2>
+<h2>Step five: the request for quotation</h2>
+<p>A general contact form produces vague enquiries that take three emails to qualify. An RFQ form on every product page, pre-filled with the product name, should ask for:</p>
+<ol>
+  <li>Company name, country and the buyer's role</li>
+  <li>Product and grade, with CAS number</li>
+  <li>Quantity, and whether this is a trial order or a regular requirement</li>
+  <li>Packing preference</li>
+  <li>Delivery destination and Incoterm if known</li>
+  <li>Documents required with the quote, such as COA, SDS or regulatory documents</li>
+  <li>Any specification file they want to attach</li>
+</ol>
+<p>The <a href="/work/vansh-group/">Vansh Group website</a>, built for an electronics manufacturer, uses a similar idea in a simpler form: its enquiry form has a service dropdown so every request arrives already tagged with the type of work, and its company profile is a download a buyer can share internally. For a chemical business, the same thinking means routing pharma enquiries, industrial enquiries and export enquiries to the right person automatically. <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a> goes through form design and file uploads.</p>
+
+<h2>Regulatory content: useful, careful and dated</h2>
+<p>Pages that explain regulatory topics, such as the documents a buyer typically needs to register a new source, or how a change in a pharmacopoeia monograph affects a grade, can attract exactly the right visitors. They also carry risk if they go out of date or overstate your position. Keep them factual, date them, link to the official source, and have your regulatory team review them. Drug and chemical rules in India and abroad change, and enforcement differs by product and market, so describe them in general terms and suggest buyers confirm the current position with the relevant authority.</p>
+<p>Avoid health or therapeutic claims about products on a B2B site, especially APIs. Describe what a product is and what it is used for in manufacturing, not what it does for patients.</p>
+
+<h2>Trust signals that a B2B buyer recognises</h2>
 <ul>
-  <li>Plant locations, capacity and key equipment</li>
-  <li>R&amp;D and custom synthesis or contract manufacturing capabilities</li>
-  <li>Safety and environmental practices</li>
+  <li>Plant addresses, the products made at each site and photographs of the actual facility</li>
+  <li>Registered company name, CIN and GST number in the footer</li>
+  <li>Named contacts for sales, export and quality, with business email addresses on your domain</li>
+  <li>Industries served, with client names only where you have permission to use them</li>
+  <li>Safety and environmental practices described concretely, such as effluent treatment and handling procedures</li>
 </ul>
+<p><a href="/blog/website-trust-signals-checklist/">The website trust signals checklist</a> covers the general items. If your business sells finished formulations through distributors rather than raw materials, <a href="/blog/website-for-pharma-franchise-companies/">websites for pharma franchise companies</a> deals with that model.</p>
 
-<p>Need the catalogue, enquiry forms and SEO set up for you? See my <a href="/website-for-manufacturers/">website design service for manufacturers</a>, built to bring in bulk and export enquiries.</p>
+<h2>FAQs</h2>
+<h3>Should every chemical have its own page?</h3>
+<p>Every distinct product should, with grades and sizes in a table on that page. Separate pages for each product and CAS number make them findable by search and easier for buyers to share.</p>
+<h3>Should we put SDS and TDS behind a form?</h3>
+<p>Many manufacturers keep TDS and SDS freely downloadable because they help buyers decide and can be found by search. Keep the form for documents that need a confidentiality agreement or a qualified request.</p>
+<h3>Can we show WHO-GMP or other certification logos?</h3>
+<p>Only if you hold the certification, and only for the site and products it covers. Show the scope and validity, and follow the certifying body's rules on use of its name or mark.</p>
+<h3>Can the website show stock or live prices?</h3>
+<p>It can, but most chemical and pharma manufacturers quote on request because prices depend on grade, quantity, packing and destination. A catalogue with an RFQ form suits most of them better than a cart.</p>
+<h3>Can we update product specifications ourselves?</h3>
+<p>Yes. Products and specification tables can be edited from the WordPress dashboard, and a large catalogue can be updated in bulk from a spreadsheet.</p>
 
-<h2>Enquiries and documents</h2>
-<ul>
-  <li>Quote request form with product, grade, quantity and destination</li>
-  <li>Document request form (COA, SDS, specifications)</li>
-  <li>Sample request process</li>
-  <li>Fast responses from technical sales</li>
-</ul>
-
-<h2>Compliance cautions</h2>
-<p>Pharmaceutical products and certain chemicals are regulated. Avoid therapeutic claims, keep safety information accurate, and check what information is appropriate to publish for your products and markets.</p>
-
-<p>Marketing finished formulations through distributors and franchise partners instead? See <a href="/blog/website-for-pharma-franchise-companies/">websites for PCD pharma franchise companies</a>.</p>
-
-<h2>SEO</h2>
-<ul>
-  <li>Unique pages for key products, including CAS numbers and specifications</li>
-  <li>Target "{product} manufacturer in India" and "{product} supplier"</li>
-  <li>Consistent presence on B2B platforms linking back to your site</li>
-</ul>
-
-<p>For the wider B2B approach, see <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer websites</a> and <a href="/blog/website-for-export-businesses/">websites for exporters</a>.</p>
+<p>If buyers currently email you for basic specifications and documents before they will quote, a structured catalogue can answer those questions on the page and send you better RFQs. The <a href="/website-for-manufacturers/">manufacturer websites</a> page sets out what these B2B projects include.</p>
 `,
   },
   {
@@ -24903,64 +25246,123 @@ Last checked:</code></pre>
   },
   {
     slug: 'website-for-nutritionists-dietitians',
-    seoTitle: 'Website for Nutritionists & Dietitians: What to Include',
-    title: 'Website for Nutritionists and Dietitians: Attract Clients Online',
-    description: 'Websites for nutritionists and dietitians that bring consultations: credentials, programmes, booking, pricing, responsible results, recipes and local SEO.',
+    seoTitle: 'Website for Nutritionists and Dietitians: What to Include',
+    title: 'Websites for Nutritionists and Dietitians: Consultation Formats, Programmes, Credentials Stated Precisely, Booking and Payments, and Content Clients Trust',
+    description: 'What a nutritionist or dietitian website needs: online and clinic consultations, programmes, precise credentials, booking, payments and careful claims.',
     date: '2026-09-27',
+    updated: '2026-10-25',
     category: 'Industries',
     related: ['wordpress-website-for-doctors', 'landing-page-design', 'wordpress-seo-services'],
     body: `
-<p>People looking for a nutritionist or dietitian want someone qualified, relatable and practical. Many will also be comparing online consultants from other cities. A good website shows your expertise and makes booking easy.</p>
+<p>A nutritionist or dietitian website should do three things well: explain how a consultation works, show exactly what you are qualified to do, and let a client book and pay without a phone call. Everything else, from recipes to programme pages, supports those three, and none of it should promise a result you cannot control.</p>
+<p>Much of the build overlaps with the <a href="/wordpress-website-for-doctors/">clinic websites I design for doctors</a>: a profile with qualifications, a page for each service, a form for appointment requests, buttons to call or message you, and local SEO for the city where your clinic sits. The difference is that many of your clients will never visit the clinic. Some find you through Instagram, some through a referral from a gynaecologist or physician, and a growing share book an online consultation from another city, so the site has to work as your front desk for both.</p>
+<p>When you run ads for one programme, such as a PCOS plan or a diabetes plan, send that traffic to a <a href="/landing-page-design/">landing page built for that programme alone</a> instead of the homepage.</p>
 
-<h2>What potential clients look for</h2>
+<h2>Start with the consultation, because that is what people buy first</h2>
+<p>Most visitors are not ready to sign up for a three-month plan. They want to know what the first conversation involves. A page titled "How consultations work" answers that, and it should cover each format you offer separately:</p>
+<table>
+  <thead>
+    <tr><th>Format</th><th>Suits</th><th>What the page should say</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>In-clinic consultation</td><td>Local clients, older clients, anyone who wants body measurements taken in person</td><td>Address, parking, clinic days, length of the session, whether a family member can join, and what to bring, such as recent blood reports</td></tr>
+    <tr><td>Online video consultation</td><td>Clients in other cities or abroad, working professionals, new mothers</td><td>Which video tool you use, how the link arrives, time zones you can accommodate, and how reports are shared before the call</td></tr>
+    <tr><td>Phone or chat follow-up</td><td>Existing clients between full sessions</td><td>How often check-ins happen, response times you can realistically keep, and what counts as a follow-up rather than a new consultation</td></tr>
+    <tr><td>Corporate or group sessions</td><td>Employers, gyms, housing societies</td><td>Session formats, group sizes and a separate enquiry form</td></tr>
+  </tbody>
+</table>
+<p>For each format, describe what the client receives afterwards. A written diet plan, a food diary template, a shopping list, a follow-up schedule: whatever you actually provide, name it. That single detail answers the question many people are too polite to ask, which is what they are paying for.</p>
+
+<h2>Programmes: one page for each, written around the client's situation</h2>
+<p>A list of "weight management, diabetes, PCOS, thyroid, sports nutrition" tells visitors you cover a lot without telling them how. Give each programme its own page, and build it from the client's side:</p>
 <ul>
-  <li>Your qualifications and registrations</li>
-  <li>Whether you help with their specific goal or condition</li>
-  <li>How consultations work: online, in person, follow-ups</li>
-  <li>Programme costs</li>
-  <li>Your approach: practical food, not extreme diets</li>
+  <li><strong>Who it is for:</strong> for example, women recently diagnosed with PCOS who want to understand food choices alongside their doctor's treatment</li>
+  <li><strong>What you work on together:</strong> meal timing, portion habits, cooking at home with Indian staples, eating out, festival weeks</li>
+  <li><strong>How it runs:</strong> number of consultations, check-in frequency, plan revisions and how long the programme lasts</li>
+  <li><strong>What you need from them:</strong> recent reports, current medicines, a few days of food records</li>
+  <li><strong>Where your role ends:</strong> that you work alongside their doctor, and do not adjust medicines</li>
+</ul>
+<p>Clients with medical conditions often arrive through a doctor's referral, so say plainly that you are happy to coordinate with their treating doctor if they wish. Doctors who refer patients will read that line too.</p>
+<p>If you also teach group classes or sell a recorded course, those belong in their own section. <a href="/blog/online-course-website-wordpress/">Building an online course website on WordPress</a> covers enrolment and access for paid recorded content.</p>
+
+<h2>Qualifications: write them exactly as awarded</h2>
+<p>Nutrition is a field where titles are used loosely, and clients who have been burned before look carefully. Precision is the best trust signal you have. On your profile page:</p>
+<ol>
+  <li>List each degree or diploma with its full name, the institution and the year, for example a BSc in Home Science with a nutrition specialisation, or an MSc in Food Science and Nutrition.</li>
+  <li>If you hold a credential such as Registered Dietitian, name the body that awarded it. At the time of writing, the RD credential in India is awarded by the Indian Dietetic Association after its own examination; check the current position and show your registration number if you have one.</li>
+  <li>Keep certificates from short online courses separate from degrees, under a heading such as "Further training".</li>
+  <li>Describe hospital or clinical experience factually: the department and the kind of patients, without naming patients.</li>
+</ol>
+<p>The rules on who may call themselves a dietitian or nutritionist in India are less settled than in some countries, and a national framework for allied and healthcare professions is still being put in place. Use only the titles you are entitled to, avoid "Dr." unless you hold a doctorate and make clear what it is in, and check the current guidance from your professional body before launch.</p>
+<p>The <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora website</a> is a useful reference here, though it is a wellness education site rather than a nutrition one. It gives the degree, the college, the year and the registration number, and it states just as clearly what the programme is not: not psychiatric care and not a substitute for medical treatment. Saying where your work stops reassures people more than a long list of conditions.</p>
+
+<h2>Booking, payment and the intake form</h2>
+<p>For a solo practitioner, the booking flow is often the difference between a busy week and a quiet one. A workable setup has four parts:</p>
+<ul>
+  <li><strong>A calendar with real slots,</strong> clinic and online shown separately, so nobody books an in-person session on a day you are not there. <a href="/blog/online-appointment-booking-website/">Online appointment booking for small businesses</a> compares the options.</li>
+  <li><strong>Payment at the time of booking</strong> for online consultations, by UPI, card or net banking through a gateway such as Razorpay. <a href="/blog/accept-online-payments-wordpress-india/">Accepting online payments on WordPress</a> explains the setup and fees.</li>
+  <li><strong>A short intake form</strong> sent after booking, not before: age, goals, current medicines, food preferences such as Jain, vegetarian or eggetarian, and any allergies.</li>
+  <li><strong>A clear cancellation and rescheduling policy</strong> on the booking page itself.</li>
+</ul>
+<p>The intake form collects health information, which is sensitive personal data. Ask only what you need for the first session, explain why you ask, keep blood reports out of open web forms, and have them shared through a channel you control. <a href="/blog/dpdp-act-website-basics/">The DPDP Act and your website</a> sets out the basics of consent and storage.</p>
+<h3>Should you publish fees?</h3>
+<p>Many clients will not enquire without some idea of cost. A complete price list is optional, but showing what a first consultation costs, or what a programme includes and how payment is split, filters out people who were never going to book. If prices differ for online and clinic sessions, say so.</p>
+
+<h2>Recipes and articles that show how you think</h2>
+<p>Content is where a nutrition practice can stand out, because it shows your approach before the first call. Useful topics tend to come straight from your consultations:</p>
+<ul>
+  <li>Swaps clients actually make, such as a lighter version of a regional breakfast, with the recipe and the reason</li>
+  <li>How to eat at a wedding or during Navratri without abandoning the plan</li>
+  <li>Reading the label on a packaged snack, with a real example you photographed</li>
+  <li>Tiffin ideas for office days and school lunchboxes</li>
+  <li>What the numbers on a common blood report mean in plain language, and why the doctor still interprets them</li>
+</ul>
+<p>Format recipes properly, with ingredients, quantities, steps and servings, so they are easy to follow on a phone in the kitchen. Avoid calorie counts or nutrient values you have not worked out properly, and do not present any food as a cure. A recipe that ends with "book a consultation to adapt this to your needs" converts better than one that ends with a hard sell.</p>
+
+<h2>Results, testimonials and before and after photos</h2>
+<p>This is where nutrition websites most often go wrong. A few rules keep you on safe ground:</p>
+<table>
+  <thead>
+    <tr><th>Avoid</th><th>Write instead</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Lose 10 kg in 30 days, guaranteed</td><td>A description of how the programme works and what clients commit to</td></tr>
+    <tr><td>Reverse diabetes, cure PCOS, fix thyroid</td><td>Food habits that can support the treatment your doctor prescribes</td></tr>
+    <tr><td>A wall of before and after photos</td><td>A few stories shared with written consent, each with a note that results vary</td></tr>
+    <tr><td>Detox, flush, burn fat fast</td><td>Plain descriptions of meals, timing and habits</td></tr>
+  </tbody>
+</table>
+<p>Before and after photos need the client's signed permission, stating the pages and channels where each image may be used, and clients should be able to withdraw it later. Crop out faces if the client prefers, never use stock images presented as clients, and do not edit photos to exaggerate a change. Health and weight-loss claims are an area where advertising standards and consumer protection rules apply, so check current guidance if you plan to advertise. <a href="/blog/collect-display-customer-testimonials/">Collecting and displaying testimonials</a> covers consent forms and presentation.</p>
+
+<h2>Local search, referrals and the rest of the site</h2>
+<p>For in-clinic work, a properly categorised Google Business Profile, with correct opening times and photos of your actual consultation room does much of the local work. On the website, a dedicated page for each clinic location, with its own address, days and map, helps people searching for a dietitian in their area find the right one. If you consult at a hospital or a gym on certain days, list those days and places too.</p>
+<p>For online work, your city matters less and your specialisation matters more. Pages about specific situations, such as nutrition during pregnancy or for young athletes, bring in people searching for exactly that. If you work closely with fitness professionals, <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms and fitness studios</a> shows how they present their programmes, which can help you plan joint offers.</p>
+
+<h2>A launch checklist for your practice website</h2>
+<ul>
+  <li>Profile with degrees, institutions, years and any registration number</li>
+  <li>A "How consultations work" page covering every format you offer</li>
+  <li>One page for each programme, written around who it is for</li>
+  <li>Booking calendar, payment at booking for online sessions, and a cancellation policy</li>
+  <li>An intake form that asks only what you need, sent after booking</li>
+  <li>Recipes and articles drawn from real consultations</li>
+  <li>Testimonials and photos backed by written consent, with "results vary" stated</li>
+  <li>WhatsApp and call buttons on every page, and a privacy policy that mentions health data</li>
 </ul>
 
-<h2>Essential pages</h2>
-<ul>
-  <li><strong>About:</strong> qualifications, experience and your philosophy</li>
-  <li><strong>Programmes:</strong> weight management, diabetes, PCOS, sports nutrition, pregnancy, kids, whatever you offer, each with its own page</li>
-  <li><strong>How it works:</strong> first consultation, plan, follow-ups, support between sessions</li>
-  <li><strong>Pricing or packages</strong></li>
-  <li><strong>Blog or recipes</strong></li>
-  <li><strong>Contact and booking</strong></li>
-</ul>
+<h2>FAQs</h2>
+<h3>Can I offer online diet consultations through my website?</h3>
+<p>Yes. A booking calendar with online slots, payment at the time of booking and an automatic email with the video link covers most of it. Make the time zone clear if you see clients abroad.</p>
+<h3>Can I say I help with diabetes or PCOS?</h3>
+<p>You can describe how you support clients with those conditions through food and habits, alongside their doctor's care. Avoid any wording that suggests you cure or reverse a condition.</p>
+<h3>Should my website show my RD number?</h3>
+<p>If you hold a registration, show the number and the body that issued it, because it lets clients check. If you do not, describe your qualifications precisely instead and leave the title out.</p>
+<h3>Can clients upload blood reports on the booking form?</h3>
+<p>I advise against collecting reports through an open form. Ask for them after booking, through email or the secure channel you already use with clients, and store them carefully.</p>
+<h3>Are before and after photos allowed?</h3>
+<p>Only with the client's written consent, without editing that exaggerates the change, and with a clear note that individual results vary. Check current advertising guidance if you use them in ads.</p>
 
-<h2>Make booking easy</h2>
-<ul>
-  <li>An online booking calendar for consultations</li>
-  <li>Online payment for packages</li>
-  <li>WhatsApp for quick questions; see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your website</a></li>
-  <li>A short intake form before the first session</li>
-</ul>
-
-<h2>Share results responsibly</h2>
-<ul>
-  <li>Use testimonials only with written consent</li>
-  <li>Avoid guaranteed weight-loss promises</li>
-  <li>Note that individual results vary</li>
-  <li>Be careful with before/after photos and follow your professional body's guidelines</li>
-</ul>
-
-<h2>Content that builds trust</h2>
-<p>Practical articles and recipes, such as healthy Indian breakfasts, managing festival eating and reading food labels, show your expertise and attract search traffic. A free meal planning guide can build an email or WhatsApp list; see <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets</a>.</p>
-
-<h2>Privacy</h2>
-<p>Health information is sensitive. Keep intake forms secure, collect only what you need and have a clear privacy policy; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy basics</a>.</p>
-
-<h2>Local and online SEO</h2>
-<ul>
-  <li>A Google Business Profile if you see clients in person</li>
-  <li>Pages for each programme targeting specific searches</li>
-  <li>Reviews from happy clients; see <a href="/blog/get-more-google-reviews/">getting more Google reviews</a></li>
-</ul>
-
-<p>Much of the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> applies to nutrition practices too.</p>
+<p>If your practice currently runs on Instagram and WhatsApp alone, a website gives clients one place to understand your approach, check your qualifications and book. The <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a> page explains what I build for health practitioners and what I need from you to start.</p>
 `,
   },
   {
@@ -26108,62 +26510,108 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'website-for-sweet-shops-mithai',
-    seoTitle: 'Website for Sweet Shops: Festival Orders & Gift Boxes',
-    title: 'Website for Sweet Shops and Mithai Brands: Festival Orders, Gifting and Delivery',
-    description: 'Sweet shop and mithai websites: festival gift boxes, corporate Diwali orders, online ordering and delivery, menus with prices, FSSAI details and local SEO.',
+    seoTitle: 'Website for Sweet Shops: Festival Orders and Gift Boxes',
+    title: 'Websites for Sweet Shops and Mithai Brands: Festival Seasons, Gift Boxes, Corporate Diwali Orders, Delivery Radius and Shelf Life, and Online or WhatsApp Ordering',
+    description: 'Plan a sweet shop or mithai website: festival gift boxes, corporate Diwali orders, delivery radius by shelf life, online or WhatsApp ordering and FSSAI.',
     date: '2026-09-27',
+    updated: '2026-10-25',
     category: 'Industries',
     related: ['website-for-restaurants', 'woocommerce-developer', 'wordpress-seo-services'],
     body: `
-<p>For sweet shops, a handful of festivals can make up a big share of the year's sales. A website helps you capture those orders, especially gift boxes and corporate orders, and lets people abroad or in other cities send sweets to family.</p>
+<p>A sweet shop's website earns most of its keep in a few busy weeks: Diwali, Raksha Bandhan, Holi, Eid, Ganesh Chaturthi and the wedding season. Built well, it takes gift box orders and corporate enquiries before the rush, shows clearly what can be delivered where, and lets regular customers order without queuing. Built badly, it is a menu photo nobody updates.</p>
+<p>Online ordering for a mithai shop usually runs on a <a href="/woocommerce-developer/">WooCommerce store</a>: a product range in categories, payments through gateways such as Razorpay, COD where you allow it, delivery rules, order alerts and festive coupons. The shop side, with your menu, branches and timings, has a lot in common with the <a href="/website-for-restaurants/">websites I build for restaurants and cafes</a>. A sweet shop sits between the two, and the decisions below are the ones that make it work.</p>
 
-<h2>What customers look for</h2>
+<h2>The festival year, and what the site should be doing in each part of it</h2>
+<p>Festival dates move with the calendar each year, so plan from the actual dates, but the pattern is predictable:</p>
+<table>
+  <thead>
+    <tr><th>Season</th><th>What customers want</th><th>What the site should have ready</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Raksha Bandhan</td><td>Small gift boxes, often sent to siblings in other cities</td><td>Courier-friendly boxes with dry fruit sweets, a cut-off date for delivery before the day</td></tr>
+    <tr><td>Ganesh Chaturthi</td><td>Modak and prasad orders in quantity</td><td>Pre-order by date and pick-up slot, with quantity options</td></tr>
+    <tr><td>Navratri and Dussehra</td><td>Fasting-friendly sweets and namkeen, event orders</td><td>A clearly labelled fasting range, with ingredients listed</td></tr>
+    <tr><td>Diwali</td><td>Gift boxes for family, corporate gifting in bulk</td><td>Gift box range, corporate order page, early pre-orders and delivery slot limits</td></tr>
+    <tr><td>Wedding season</td><td>Large orders, custom boxes, return gifts</td><td>An event and wedding enquiry form with date, quantity and box options</td></tr>
+    <tr><td>Holi and Eid</td><td>Gujiya, sevaiyan and festive specials</td><td>Seasonal product pages that can be switched on and off</td></tr>
+  </tbody>
+</table>
+<p>Keep a permanent page for each festival and bring it back each year with updated products, rather than creating a new page every time. The address builds up search history, and customers who bookmarked it find it again. <a href="/blog/seasonal-festival-campaigns-website/">Planning seasonal and festival campaigns</a> explains the timing in more detail.</p>
+
+<h2>Shelf life decides how far you can deliver</h2>
+<p>A fresh rasmalai and a box of kaju katli cannot be sold the same way. Group your products by how long they stay good, and let that drive delivery options:</p>
 <ul>
-  <li>Your menu with prices (per kg or per box)</li>
-  <li>Gift boxes and hampers for festivals</li>
-  <li>Delivery areas and timings</li>
-  <li>Shelf life and storage information</li>
-  <li>Bulk and corporate order options</li>
+  <li><strong>Fresh milk-based sweets</strong> such as rasgulla, rasmalai, kalakand and fresh peda: same-day or next-day delivery within your own delivery radius, or pick-up only.</li>
+  <li><strong>Sweets that keep for several days</strong>, such as many ladoos, burfis and kaju katli: local delivery and, for some, courier to nearby cities.</li>
+  <li><strong>Dry fruit sweets, namkeen and packaged items</strong> with a longer shelf life: suitable for courier across India, and for gifting to other cities.</li>
 </ul>
+<p>Show the shelf life and storage instructions on every product page, based on your own testing and what your labels state. The "best before" information on packaged food is subject to labelling rules, so take advice on what you print and keep the website consistent with the label.</p>
+<p>Delivery radius is easiest to manage by pin code: customers enter theirs and see what can reach them and when. <a href="/blog/pincode-delivery-checker-woocommerce/">A pin code delivery checker in WooCommerce</a> shows how that works, and <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a> covers rates for local delivery and courier.</p>
 
-<h2>Essential pages</h2>
+<h2>Online checkout or WhatsApp ordering?</h2>
+<p>Both work, and many shops use both. The choice depends on how your counter and kitchen run:</p>
+<table>
+  <thead>
+    <tr><th></th><th>Full online checkout</th><th>WhatsApp ordering from the website</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Best for</td><td>Gift boxes, packaged sweets, courier orders, customers in other cities</td><td>Fresh sweets by weight, mixed boxes, regular local customers</td></tr>
+    <tr><td>Payment</td><td>Taken at checkout by UPI, card or net banking</td><td>Payment link or cash on delivery after confirmation</td></tr>
+    <tr><td>Staff effort</td><td>Low per order, once products are set up properly</td><td>Someone must answer and confirm each order</td></tr>
+    <tr><td>Risk at festival time</td><td>Too many orders for one slot unless limits are set</td><td>Messages pile up faster than staff can answer</td></tr>
+  </tbody>
+</table>
+<p>A common arrangement is a proper checkout for gift boxes and packaged products, with a WhatsApp button for loose sweets by weight. During peak days, limit orders per delivery slot so you never accept more than the kitchen and riders can handle, and set a clear cut-off for same-day orders.</p>
+
+<h2>Gift boxes that sell without a phone call</h2>
+<p>Gift boxes are the easiest products to sell online because they are fixed. Each one needs:</p>
 <ul>
-  <li><strong>Menu:</strong> categories like milk sweets, dry fruit sweets, namkeen and sugar-free, with photos and prices</li>
-  <li><strong>Gift boxes:</strong> ready-made boxes with contents, weight and price</li>
-  <li><strong>Corporate orders:</strong> custom branding, bulk pricing and an enquiry form</li>
-  <li><strong>Wedding and event orders</strong></li>
-  <li><strong>Our story:</strong> heritage, ingredients and hygiene</li>
-  <li><strong>Stores:</strong> locations, hours and maps</li>
+  <li>A photo of the box closed and open, with the actual sweets inside</li>
+  <li>The contents by name and the total net weight</li>
+  <li>Whether it is vegetarian, and whether it contains nuts, khoya, ghee or sugar-free options</li>
+  <li>The shelf life and how it is packed for courier</li>
+  <li>A gift message field, and separate sender and recipient details</li>
+  <li>Delivery options available for the chosen pin code</li>
 </ul>
+<p>Offer a few sizes rather than dozens of near-identical boxes. Product bundles and add-ons, such as a card or a diya set, can raise the order value; <a href="/blog/woocommerce-product-bundles-upsells/">WooCommerce bundles and upsells</a> covers the options.</p>
 
-<h2>Online ordering and delivery</h2>
-<ul>
-  <li>WooCommerce with delivery date and time slot selection</li>
-  <li>Delivery zones by pin code, with local delivery for fresh sweets and courier for longer-lasting items</li>
-  <li>Gift messages and sender/recipient details</li>
-  <li>UPI and card payments</li>
-</ul>
-<p>See <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup</a>.</p>
+<h2>Corporate Diwali orders need their own route</h2>
+<p>A company ordering three hundred boxes does not want to use a shopping cart. Give corporate buyers a page that explains what you offer, such as branded sleeves, custom box contents, delivery to multiple addresses and GST invoices in the company's name, and a form that asks:</p>
+<ol>
+  <li>Company name, contact person and GSTIN</li>
+  <li>Approximate number of boxes and budget per box</li>
+  <li>Preferred contents or box type</li>
+  <li>Branding needed: logo on the box or sleeve, a printed card</li>
+  <li>Delivery: one office, several offices, or individual employee addresses</li>
+  <li>The date by which delivery must be complete</li>
+</ol>
+<p>State your last date for accepting corporate orders each season, because custom printing takes time. If corporate gifting is a large part of your business, <a href="/blog/website-for-corporate-gifting-companies/">websites for corporate gifting companies</a> covers bulk ordering in more depth.</p>
 
-<h2>Festival campaigns</h2>
-<p>Plan festival pages weeks in advance: Diwali, Raksha Bandhan, Holi, Eid and wedding season. Open pre-orders early, especially for corporate buyers who order in bulk. See <a href="/blog/seasonal-festival-campaigns-website/">seasonal and festival campaigns</a>.</p>
+<h2>FSSAI details and food information</h2>
+<p>Food businesses are generally expected to display their FSSAI licence or registration number to customers, and that includes sales made online. Show the number on every page and again at checkout, and keep it in step with your current licence. List ingredients and common allergens on each product, mark sugar-free or jaggery sweets accurately, and avoid health claims such as "guilt-free" or "good for diabetics" unless you have taken advice. The requirements depend on your licence type and change over time, so confirm them with your FSSAI consultant before launch.</p>
 
-<h2>Food safety and trust</h2>
-<ul>
-  <li>Show your FSSAI licence number; food businesses selling online are generally expected to display it, so check current FSSAI requirements</li>
-  <li>Ingredient and allergen information, especially nuts and dairy</li>
-  <li>Shelf life and storage advice for each product</li>
-  <li>Photos of your kitchen and packaging process</li>
-</ul>
+<h2>Photography: the counter, not a stock photo</h2>
+<p>Mithai is bought on looks. Photograph your own sweets in daylight or soft, even light, on plain plates or in your own boxes, and show the texture close up. A few photos of the counter, the kitchen at work and the branch exterior help regular customers recognise you and new ones trust you. Compress every image before upload so pages stay fast on mobile data. <a href="/blog/prepare-photos-for-website/">Preparing photos for your website</a> walks through sizes and formats.</p>
 
-<h2>Local SEO</h2>
-<ul>
-  <li>A Google Business Profile for each outlet, with photos and your menu</li>
-  <li>Pages targeting searches like "sweet shop in {area}" and "Diwali sweet boxes {city}"</li>
-  <li>Reviews from happy customers</li>
-</ul>
+<h2>Your story, ingredients and kitchen</h2>
+<p>Many mithai shops have been run by the same family for decades, and customers like knowing that. A short "about" page can say when and where the shop started, which sweets it is known for, where you source milk, khoya and dry fruits, and whether you cook in pure ghee or vanaspati for each range. Be specific and accurate here: if only some sweets use desi ghee, say which. A note on hygiene in the kitchen, with real photos, answers a question many customers have but rarely ask.</p>
 
-<p>For bakeries, see <a href="/blog/website-for-bakeries-cake-shops/">websites for bakeries and cake shops</a>.</p>
+<h2>More than one branch</h2>
+<p>Shops with several branches should give each one its own page with address, hours, map, phone and any branch-only items, and connect it to its own Google Business Profile. If orders are fulfilled from the nearest branch, the pin code check can route them. Keep prices consistent across branches online, or explain clearly if they differ.</p>
+
+<h2>FAQs</h2>
+<h3>Can a sweet shop sell mithai online across India?</h3>
+<p>Longer-lasting sweets, dry fruit sweets and namkeen can be couriered, with proper packing. Fresh milk sweets are usually best kept to local delivery or pick-up.</p>
+<h3>How do we stop too many orders arriving for Diwali day?</h3>
+<p>Set a limit on orders per delivery slot, open pre-orders early, and show a cut-off date after which only pick-up is available. The store can close slots automatically when they fill.</p>
+<h3>Do we need to show the FSSAI number on our website?</h3>
+<p>If you sell food online, generally yes. Display it sitewide and beside the checkout, and confirm current requirements for your licence type with your FSSAI consultant.</p>
+<h3>Should we take orders on WhatsApp or through the website?</h3>
+<p>Many shops do both: online checkout for gift boxes and packaged items, and WhatsApp for loose sweets by weight. Choose based on how many staff can answer messages at peak time.</p>
+<h3>Can corporate customers get GST invoices?</h3>
+<p>Yes. The store can generate GST invoices with the company's details, and bulk orders can be invoiced from a quote. Ask your CA to confirm rates and invoice format.</p>
+
+<p>A sweet shop that plans its site around the festival calendar, shelf life and delivery capacity can take more of its seasonal orders before the rush starts. The <a href="/woocommerce-developer/">WooCommerce developer</a> page explains how I set up stores with payments, delivery rules and order notifications.</p>
 `,
   },
   {
@@ -30444,57 +30892,92 @@ Screenshot: attached</code></pre>
   {
     slug: 'website-for-advocates-bar-council-rules',
     seoTitle: 'Website for Advocates in India: Bar Council Rules Guide',
-    title: 'Website for Advocates in India: What the Bar Council Rules Allow',
-    description: 'Websites for advocates and law firms in India within Bar Council rules: what is usually permitted, what to avoid, disclaimers and helpful legal content.',
+    title: 'Website for Advocates in India: What the Bar Council Rules Allow, What a Compliant Site Contains, the Entry Disclaimer and Practice Areas Described Factually',
+    description: 'How advocates in India can have a website within Bar Council rules: permitted information, the entry disclaimer, factual practice areas and what to avoid.',
     date: '2026-09-27',
+    updated: '2026-10-25',
     category: 'Industries',
     related: ['website-for-lawyers-and-consultants', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
-<p>Advocates in India face stricter rules about promoting themselves than most professionals. The Bar Council of India's rules prohibit advocates from soliciting work or advertising, but websites sharing limited factual information are permitted. A well-built, compliant website helps clients find accurate information about you. Always check the current Bar Council rules and take guidance if unsure.</p>
+<p>Yes, an advocate in India can have a website, but it must inform rather than advertise. Under the Bar Council of India rules, as I understand them at the time of writing, advocates may not solicit work or advertise, though a website may set out a limited set of facts about you: who you are, how to reach you, when you enrolled, what you studied and which areas of law you practise in. A well-built site stays within those limits and is still genuinely useful to someone looking for an advocate.</p>
+<p>Technically, the build matches the <a href="/website-for-lawyers-and-consultants/">law firm and consultant websites I build</a>: a profile with qualifications, practice area pages, a contact form, office location and an articles section. For advocates, though, the content rules shape every page, and several features that work for consultants, such as testimonials and client logos, are left out entirely. This guide explains what I understand the rules to allow and how that turns into pages. It is not legal advice, and the rules and their interpretation can change, so check the current position with your State Bar Council or a senior colleague before launch.</p>
 
-<h2>What is typically permitted</h2>
-<p>Following an amendment to the rules, advocates may share factual information on their websites, such as:</p>
+<h2>The rule, in plain terms</h2>
+<p>The relevant provision sits in the Bar Council of India Rules on standards of professional conduct, commonly referred to as Rule 36. In its original form it prohibited advocates from soliciting work or advertising directly or indirectly, including through circulars, advertisements, touts, personal communications and interviews, and from producing or encouraging newspaper comments or photographs about their cases. It also restricted sign boards and name plates to a reasonable size.</p>
+<p>A later amendment added a proviso allowing advocates to furnish certain information on their websites: name, address, telephone numbers and email, enrolment number and date, professional and academic qualifications, and areas of practice. Many advocates also add a declaration that the information is accurate and provided by them. Everything else on the site should be judged against the general ban on solicitation and advertising.</p>
+<p>Two practical points follow. First, the site should read like a professional record, not a sales page. Second, the same discipline applies wherever the information appears, including social media and directory listings.</p>
+
+<h2>What a compliant site contains, page by page</h2>
+<table>
+  <thead>
+    <tr><th>Page</th><th>What it can contain</th><th>What to leave out</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Entry disclaimer</td><td>A notice that the site is for information only, is not solicitation or advertising, and that the visitor is accessing it at their own request</td><td>Anything that reads as an offer or invitation</td></tr>
+    <tr><td>Profile</td><td>Name, enrolment number and date, State Bar Council, degrees with institutions and years, courts where you practise, languages</td><td>Words like "top", "leading", "renowned" or "expert"; awards presented as promotion</td></tr>
+    <tr><td>Areas of practice</td><td>A factual description of each area of law you handle</td><td>Promises, outcomes, case wins, "guaranteed" or "fast" results</td></tr>
+    <tr><td>Team</td><td>Each advocate's name, enrolment and qualifications, and associates' roles</td><td>Comparisons with other advocates or firms</td></tr>
+    <tr><td>Articles</td><td>General explanations of legal topics and updates, clearly dated</td><td>Commentary on your own cases, or articles that end with a sales pitch</td></tr>
+    <tr><td>Contact</td><td>Office address, map, phone, email and hours</td><td>Fee offers, discounts, "free consultation" banners</td></tr>
+  </tbody>
+</table>
+<p>Leave out client testimonials, ratings, client names and logos, success rates, case counts and media mentions about your cases. Even where these are common on law firm sites abroad, they sit uncomfortably with the Indian rules.</p>
+
+<h2>The entry disclaimer, and how to implement it</h2>
+<p>Most advocates' and law firms' websites in India show a disclaimer before the visitor enters, with an "I agree" button. The wording usually states that the Bar Council of India does not permit advertisement or solicitation, that the visitor is seeking information on their own initiative, that nothing on the site is legal advice or creates an advocate and client relationship, and that the firm is not liable for action taken on the basis of the content. The wording should come from you or your firm; I can format and place it.</p>
+<p>How it is built matters for usability and search:</p>
 <ul>
-  <li>Name and address</li>
-  <li>Telephone number and email</li>
-  <li>Enrolment details</li>
-  <li>Professional and academic qualifications</li>
-  <li>Areas of practice</li>
+  <li>Show it as an overlay on first visit, remembered for that browser, so returning visitors are not asked every time</li>
+  <li>Keep the actual page content in the HTML underneath, so search engines can still read and index it</li>
+  <li>Make it readable on a phone, with a clear button and no tiny print</li>
+  <li>Repeat a short version of the disclaimer in the footer of every page</li>
+  <li>If the overlay uses a cookie or local storage to remember consent, mention it in the privacy policy</li>
 </ul>
 
-<h2>What to avoid</h2>
+<h2>Practice areas: describe the work, do not sell it</h2>
+<p>Practice area pages are where most compliant sites go wrong, because the habit of marketing copy creeps in. The test is simple: would the sentence still make sense in a law school handout? Compare:</p>
+<blockquote>
+<p>Avoid: "Facing a bounced cheque case? Our expert team wins cheque bounce matters quickly. Call now for a free consultation."</p>
+<p>Write instead: "Cheque dishonour matters under Section 138 of the Negotiable Instruments Act: the notice period, the complaint process before the magistrate, and the options available to the drawer and the payee. The practice handles matters for both complainants and accused."</p>
+</blockquote>
+<p>Each page can explain the area of law, the kinds of matters the practice handles, the forums involved, and general stages of the process. It should not describe outcomes, fees as an incentive, or anything that urges the reader to act. Linking to statutes and official sources adds value without adding promotion.</p>
+
+<h2>Things that quietly cross the line</h2>
+<p>The website is rarely the only channel, and several common marketing habits sit poorly with the rules. Check each with your Bar Council or senior colleagues before using it:</p>
 <ul>
-  <li>Claims of success rates or "winning" cases</li>
-  <li>Client testimonials and reviews used as promotion</li>
-  <li>Comparisons with other advocates</li>
-  <li>Offers, discounts or fee-based promotions</li>
-  <li>Paid advertisements soliciting clients</li>
-  <li>Words like "best", "top" or "expert" used promotionally</li>
+  <li><strong>Paid search and social ads</strong> that target people looking for a lawyer</li>
+  <li><strong>Search phrases such as "best divorce lawyer in Pune"</strong> placed in titles and headings to rank, since the wording itself is promotional</li>
+  <li><strong>Google reviews</strong>, especially asking clients for them or displaying ratings on the site</li>
+  <li><strong>Paid directory listings</strong> that rank lawyers or present them as recommended</li>
+  <li><strong>WhatsApp broadcasts and bulk messages</strong> to people who have not asked for information</li>
+  <li><strong>Posts about specific cases</strong> or client wins on social media</li>
 </ul>
+<p>A Google Business Profile with the office address, hours and phone number can help clients find you, but whether and how to use reviews on it is a decision to take with advice, not by default.</p>
 
-<h2>Add a disclaimer</h2>
-<p>Many law firm websites show a disclaimer stating that the site is for information only, is not solicitation or advertising, and that visitors access it at their own will. Some show it as a pop-up visitors must accept. Ask your advisers what's appropriate for you.</p>
+<h2>Articles that inform</h2>
+<p>An articles section is one of the most useful parts of an advocate's site, and one of the safest when written carefully. General explanations, such as how to register a will, what a legal notice is, or what changed in a recent amendment, help readers and show your understanding of an area of law. Keep each article factual and dated, cite the statute or judgment, avoid giving advice on individual situations, and add a short line saying it is general information and not legal advice.</p>
+<p>Plain writing, short sections and clear headings make articles easier to read on a phone, which is where most readers will find them.</p>
 
-<h2>A sensible structure</h2>
-<ul>
-  <li><strong>Home:</strong> name, practice areas and contact information</li>
-  <li><strong>About:</strong> qualifications, enrolment and professional background</li>
-  <li><strong>Practice areas:</strong> factual descriptions of the areas you practise in</li>
-  <li><strong>Team:</strong> advocates and their qualifications</li>
-  <li><strong>Contact:</strong> address, map, phone and email</li>
-</ul>
+<h2>Enquiries without collecting case papers</h2>
+<p>A contact form should collect only a name, phone number, email and a short outline of the matter. Ask visitors not to send documents or confidential details through the form, because nothing is agreed until you accept the brief, and conflict checks come first. Explain in the privacy policy how enquiry details are stored and who sees them; <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for Indian websites</a> covers what to include, and <a href="/blog/dpdp-act-website-basics/">a plain guide to the DPDP Act</a> explains consent.</p>
 
-<h2>Informational content</h2>
-<p>Many firms publish articles explaining legal topics in general terms. Keep them educational and factual, avoid promises, and note that articles aren't legal advice.</p>
+<h2>Firm details, accessibility and the rest</h2>
+<p>Show the firm's name, office addresses, and each advocate's enrolment details consistently on every page where they appear. An about page written in a measured, factual voice also helps; <a href="/blog/write-about-page-that-builds-trust/">writing an about page that builds trust</a> has pointers, though leave out its testimonial suggestions. Use real photographs of the advocates and the office rather than stock images of gavels and scales, which add nothing. Make text large enough and contrast strong enough for older visitors; <a href="/blog/website-accessibility-basics/">website accessibility basics</a> lists the essentials. A modest, clean design suits the professional tone the rules require, and it loads quickly on any phone.</p>
+<p>Chartered accountants and other professionals have different rules from advocates, so if your practice works alongside them, see <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers and chartered accountants</a> for how a combined or referral relationship can be presented.</p>
 
-<h2>Design and tone</h2>
-<p>A calm, professional design with clear typography suits legal practice. Make sure it's fast, secure (HTTPS) and accessible.</p>
+<h2>FAQs</h2>
+<h3>Are advocates in India allowed to have a website?</h3>
+<p>Yes, within limits. The Bar Council of India rules, as amended, allow a site that lists your identity, contact details, enrolment, degrees and practice areas, while still prohibiting solicitation and advertising.</p>
+<h3>Can an advocate's website show client testimonials?</h3>
+<p>Testimonials and ratings are generally treated as promotional, so most compliant sites leave them out. Check the current position with your Bar Council before adding any.</p>
+<h3>Is the disclaimer pop-up compulsory?</h3>
+<p>It is widely used rather than a specific requirement I can point to, and it makes clear the visitor is seeking information on their own initiative. Take advice on wording.</p>
+<h3>Can I publish articles on legal topics?</h3>
+<p>Yes, as general information. Keep them factual and dated, cite your sources, avoid advice on individual cases and do not use them to promote your services.</p>
+<h3>Can I use SEO to bring visitors to my website?</h3>
+<p>Basic technical SEO, accurate titles and useful articles are generally fine. Avoid promotional phrases such as "best" or "top" and take advice before running paid ads.</p>
 
-<h2>Privacy and confidentiality</h2>
-<p>Contact forms should warn visitors not to send confidential details before an advocate-client relationship is established, and forms should be secure.</p>
-
-<h2>Other legal and financial professionals</h2>
-<p>Chartered accountants, company secretaries and other professionals have their own professional bodies' rules. See <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers and CAs</a> and <a href="/website-for-lawyers-and-consultants/">websites for lawyers and consultants</a>.</p>
+<p>If your current website reads like an advertisement, it can be rewritten into a factual, well-organised record of your practice that is easier to defend and easier to read. I build these on WordPress, as described on the <a href="/wordpress-website-development/">WordPress website development</a> page, and my page on <a href="/website-for-lawyers-and-consultants/">websites for legal and advisory practices</a> covers the process for law firms.</p>
 `,
   },
   {
