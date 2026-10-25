@@ -196,4 +196,12 @@ module.exports = {
       ['Protect rankings', 'If URLs or the domain change, every old URL is 301-redirected to its new equivalent, and Search Console is monitored after the move.'],
     ],
   },
+  'shopify-developer': {
+    title: 'How I work on a Shopify store',
+    items: [
+      ['The live store stays untouched', 'Changes are made on an unpublished duplicate of your theme and shared through a preview link. You check it on your own phone, and only then is it published. The previous version stays in the theme library, so going back takes a few clicks if something needs another look.'],
+      ['Every app has to earn its place', 'Before anything new is installed, each existing app is listed with what it does, what it costs each month and which pages it loads on. Apps that repeat a theme feature or that nobody uses are removed, along with any code they left behind in the theme files.'],
+      ['Checkout tested before customers see it', 'Prepaid, failed and cash on delivery orders are placed on a phone using the test gateway or the provider test mode, then one real low-value order is placed and refunded. Order emails, invoice numbering, stock changes and shipping rates are checked against what you expect.'],
+    ],
+  },
 };
