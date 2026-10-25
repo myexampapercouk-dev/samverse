@@ -930,6 +930,8 @@ wp plugin verify-checksums --all</code></pre>
 <h2>Design, checkout and customisation</h2>
 <p>Shopify themes look good out of the box, and its checkout is fast and familiar, but deeper checkout changes are limited to its higher plans. WooCommerce lets a developer change almost anything: checkout fields, product configurators, B2B pricing, booking-style products or a shop that sits alongside other features. For <a href="/work/southern-flavours/">Southern Flavours</a>, a restaurant in the UK, I built a WooCommerce shop with more than 100 dishes in 13 categories alongside a table reservation form, all on one WordPress site.</p>
 
+<p>If you choose Shopify and want more than the theme settings offer, see how <a href="/blog/shopify-theme-customisation/">Shopify theme customisation</a> works, from sections and metafields to safe code changes on a duplicate theme.</p>
+
 <h2>Content, SEO and speed</h2>
 <p>Shopify's URLs always include /products/ and /collections/, and its blog is basic. WooCommerce gives full control over URLs, schema and as much content as you want, which helps stores that win customers through buying guides and recipes. Shopify's hosting is fast by default; WooCommerce can be just as fast on good hosting with caching and optimised images, and cheap hosting is the main reason WooCommerce stores feel slow.</p>
 
@@ -17651,6 +17653,8 @@ Target:  https://example.com/$1/</code></pre>
   <li><strong>Every URL:</strong> save the sitemap at https://your-store.com/sitemap.xml and export your top pages from Search Console. This list becomes your redirect map.</li>
 </ul>
 <p>Also list the apps you rely on, such as reviews, WhatsApp, filters, pin code checks or invoices, and find the WooCommerce plugin or setting that replaces each one.</p>
+
+<p>Moving the other way? The guide to <a href="/blog/migrate-woocommerce-to-shopify/">moving from WooCommerce to Shopify</a> covers exports, imports, URL redirects and customer sign-in for that direction.</p>
 
 <h2>What transfers, and how</h2>
 <table>
@@ -40403,6 +40407,8 @@ add_action( 'after_setup_theme', function () {
 </ul>
 <p>Some businesses use one gateway for Indian customers and a second for overseas buyers. That's fine, as long as the checkout stays simple and each customer sees only the options that suit them.</p>
 
+<p>Selling on Shopify instead? At the time of writing Shopify Payments is not offered in India, so these providers connect as third-party gateways; the guide to <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> covers payments, COD and GST invoices step by step.</p>
+
 <h2>WooCommerce and WordPress support</h2>
 <p>If your website runs on WordPress, the quality of the gateway's plugin matters as much as the gateway itself. Check:</p>
 <ul>
@@ -41542,6 +41548,8 @@ add_action( 'after_setup_theme', function () {
   <li><strong>Chrome DevTools:</strong> the Network tab shows every request and which domain it came from. Its request blocking feature lets you block one script's domain, reload, and see how the page behaves without it.</li>
   <li><strong>Test before and after:</strong> whenever you add a new tool, run the same page through PageSpeed Insights before and after, so you know what it costs.</li>
 </ul>
+
+<p>On a Shopify store, most of these scripts arrive through apps, and some stay behind after the app is removed; the guide to <a href="/blog/shopify-store-slow-fix/">fixing a slow Shopify store</a> shows how to find them and what to remove first.</p>
 
 <h2>Step 3: Remove, restrict or delay</h2>
 <table>
@@ -60956,6 +60964,426 @@ done</code></pre>
 <p>Moving a site out means exporting its content, media and users, re-creating its settings on a new install and redirecting any URLs that change. Some migration tools can extract a single subsite; check their current features and test on staging first.</p>
 
 <p>If your network is slow and you're not sure whether the database, plugins, caching or hosting is to blame, I can profile it, fix the bottlenecks and tell you honestly whether splitting the network makes sense. See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
+`,
+  },
+  {
+    slug: 'shopify-store-setup-india',
+    seoTitle: 'How to Set Up a Shopify Store in India, Step by Step',
+    title: 'How to Set Up a Shopify Store in India, Step by Step: Plan, Domain, Payments, GST, Shipping and Launch',
+    description: 'Set up a Shopify store in India step by step: plan costs, domain and email DNS, Razorpay or PayU and COD, GST invoices, pin code shipping, policies and launch.',
+    date: '2026-10-25',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'woocommerce-developer'],
+    body: `
+<p>Opening a Shopify account takes a few minutes. Getting a store ready to take orders in India takes longer, because the decisions that matter are local ones: which payment provider you use, how cash on delivery works, how GST appears on the invoice, which pin codes your courier reaches and what your returns policy promises. Settle those before launch and the first few weeks are about selling rather than firefighting.</p>
+
+<p>This guide walks through the setup in the order I follow it, from choosing a plan to launch day. If you would rather hand the whole job over, my <a href="/shopify-developer/">Shopify store setup and customisation service</a> covers every step below, with every account staying in your name. Still deciding on a platform? Read <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> first; both have their place, and the right one depends on how your store sells.</p>
+
+<p>Before you begin, gather your GSTIN if registered, a product sheet with prices, SKUs, variants, weights and stock, consistent photos, a domain you control, and rough shipping and returns rules. A missing item here is the usual reason a launch slips.</p>
+
+<h2>Step 1: Choose a plan by what drives the cost</h2>
+<p>Shopify's plans and prices change, and the pricing page you see depends on your country, so I won't quote figures here. What helps more is knowing what each part of the monthly bill depends on, so you can compare plans honestly:</p>
+<ul>
+<li><strong>The plan itself.</strong> Higher plans add staff accounts, reporting and sometimes lower fees. A new store rarely needs the top tier on day one.</li>
+<li><strong>Transaction fees.</strong> At the time of writing, Shopify may charge its own fee on orders paid through a third-party payment provider, depending on your country and plan. That sits on top of what the gateway charges. Check Shopify's current pricing for India before choosing, because at higher order volumes this fee can matter more than the plan price.</li>
+<li><strong>Apps.</strong> Many are billed monthly. Invoice, COD-control, reviews and courier apps add up, so budget for the ones you know you need rather than everything shown in a theme demo.</li>
+<li><strong>Theme.</strong> Shopify's free themes are a sound start. A paid theme is a one-off purchase, worth it only for features you will actually use.</li>
+</ul>
+<p>A quick test: take your expected monthly orders and average order value, and total the plan, fees, gateway charges and apps on two plans. The cheaper plan on paper is not always cheaper in practice.</p>
+
+<h2>Step 2: Connect your domain without breaking email</h2>
+<p>Most Indian businesses already own a domain, often with email running on it. The safest way to connect it to Shopify is to leave the domain with its current registrar and change only the records Shopify asks for, rather than moving the nameservers.</p>
+<ol>
+<li>Open your DNS panel, list every existing record and take a screenshot. MX, SPF and DKIM (TXT) records and any verification entries keep your email and other services working, so leave them alone.</li>
+<li>In Shopify, add the domain in the domains settings. At the time of writing, Shopify asks for an A record on the root domain and a CNAME record on www pointing to Shopify. Use the exact values shown in your admin or in Shopify's current help pages, as they can change.</li>
+<li>Delete old A or CNAME records for those names that still point to your previous host.</li>
+<li>Choose whether the main address is the www or the bare version, and let Shopify redirect the other one to it.</li>
+<li>Wait for the SSL certificate, then send yourself a test email to confirm mail still arrives.</li>
+</ol>
+<p>Connecting the domain to Shopify does not move your mailboxes; they stay with your current email provider. Setting email up for the first time? <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a> covers the records that keep order emails and replies out of spam folders.</p>
+
+<h2>Step 3: Payment providers and cash on delivery</h2>
+<p>At the time of writing, Shopify's own payment processing, Shopify Payments, is unavailable to Indian businesses, which leaves Indian stores relying on a third-party provider. Razorpay, PayU, Cashfree and PhonePe are common choices, covering UPI, cards, net banking and wallets. Each provider runs its own KYC, which usually asks for business documents, bank details and a working website with policy pages, so apply early. It is often the slowest part of a launch.</p>
+<p>Compare more than the headline fee: settlement time, refunds, international cards, the quality of the Shopify integration and support. <a href="/blog/payment-gateways-india-compared/">How to choose a payment gateway in India</a> has a fuller checklist.</p>
+<p>In Shopify, COD is set up as a manual payment method: each COD order is recorded as unpaid until you mark it paid after the courier remits the cash. Two consequences follow:</p>
+<ul>
+<li>Your orders list and reports show unpaid COD orders until someone updates them, so decide who does this and how often.</li>
+<li>Out of the box, COD is simply on or off. Restricting it to certain pin codes or order values, charging a COD fee or confirming orders over WhatsApp before dispatch usually needs an app or a checkout tool from a logistics or payments company. Check what your plan allows before relying on one, and test it as carefully as the gateway.</li>
+</ul>
+<p>Refused COD parcels cost you shipping both ways, so many stores start by offering COD only below a certain order value. The guide to <a href="/blog/woocommerce-cash-on-delivery-india/">offering COD without losing money to RTO</a> is written for WooCommerce, but the reasoning applies just as well on Shopify.</p>
+
+<h2>Step 4: Taxes and GST invoices</h2>
+<p>Shopify can calculate GST at checkout, but treat its default Indian tax settings as a starting point rather than an answer. Rates depend on what you sell, and some categories move between rates depending on price. Set overrides for products or collections where the rate differs, and decide whether your displayed prices include tax, which is what most Indian shoppers expect to see.</p>
+<p>Shopify on its own doesn't generate GST-compliant invoices at the time of writing, so stores add an invoice app. A good one adds your GSTIN, HSN or SAC codes, sequential invoice numbers, the place of supply and the CGST and SGST or IGST split, and attaches the invoice to the order email or the customer's account. When choosing one, check:</p>
+<ul>
+<li>how invoice numbers are generated and whether the series can restart with your financial year;</li>
+<li>whether credit notes are created automatically for returns and refunds;</li>
+<li>that HSN codes can be stored on each product, ideally in a metafield, so nobody has to type them per order;</li>
+<li>how COD orders are handled, since payment arrives after dispatch.</li>
+</ul>
+<p>Ask your CA to confirm the rates, the invoice format and how in-state and inter-state sales are shown before you take real orders. The <a href="/blog/woocommerce-gst-invoices-india/">GST setup guide for WooCommerce stores</a> explains CGST, SGST, IGST and HSN codes in plain terms; the tax ideas are the same on either platform.</p>
+
+<h2>Step 5: Shipping zones, pin codes and couriers</h2>
+<p>Shopify organises shipping into zones, each with its own rates. For a store selling only within India, the cleanest setup is usually one domestic zone with a small number of rates:</p>
+<table>
+<thead><tr><th>Approach</th><th>Suits</th><th>Watch out for</th></tr></thead>
+<tbody>
+<tr><td>Flat rate, free above a threshold</td><td>Light products of similar size</td><td>The threshold has to cover your average shipping cost</td></tr>
+<tr><td>Weight-based rates</td><td>Mixed catalogues and heavier items</td><td>Every product needs an accurate weight, packaging included</td></tr>
+<tr><td>Price-based rates</td><td>Stores where order value matters more than weight</td><td>Bulky, low-priced items can lose money</td></tr>
+<tr><td>Separate rate for remote areas</td><td>Stores shipping to hill areas, islands or the North East</td><td>Standard zones work by country and state at the time of writing, so pin code rules usually come from an app</td></tr>
+</tbody>
+</table>
+<p>In India, pin codes matter more than zones. Couriers don't reach every pin code, and COD is available on fewer of them. Most shipping aggregators and couriers offer a Shopify app that pulls in orders, prints labels, books pickups and sends tracking, and many add a pin code checker to the product page so shoppers know before ordering whether you deliver to them and roughly when. Test that checker with a few real pin codes, including one that should fail.</p>
+
+<h2>Step 6: Policies customers and gateways look for</h2>
+<p>Payment providers usually check for policy pages during KYC, and shoppers read them before a first order from a brand they don't know. Shopify can generate policy templates, but a template is not your policy. Write four pages in plain language:</p>
+<ul>
+<li><strong>Returns:</strong> the window, the condition items must be in, what can't be returned (innerwear, customised items, sale stock, perishables), and who pays for return shipping.</li>
+<li><strong>Refunds:</strong> how long refunds take, whether money goes back to the original payment method, and how COD orders are refunded, since there is no card or UPI ID to reverse.</li>
+<li><strong>Shipping:</strong> where you deliver, dispatch and delivery times, charges, and what happens if a parcel is refused or the address is wrong.</li>
+<li><strong>Privacy:</strong> what you collect, why, which services receive it (payment provider, courier, analytics, ad platforms) and how a customer can ask for their data to be deleted.</li>
+</ul>
+<p>Add a contact page with a phone or WhatsApp number, email and address. For the privacy page, read <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for Indian websites</a>, and ask a lawyer to review it if you collect anything sensitive.</p>
+
+<h2>The launch checklist</h2>
+<p>Work through this on a phone, because that is how most of your shoppers will see the store.</p>
+<ol>
+<li>Every product has a title, your own description, real photos, the right variants, price, weight, SKU and stock. If supplier text is still in place, see <a href="/blog/write-product-descriptions-that-sell/">writing product descriptions that sell</a>.</li>
+<li>Collections have a short introduction and are linked from the main menu.</li>
+<li>A test order goes through Shopify's test gateway or the provider's test mode, then one real low-value prepaid order is placed and refunded.</li>
+<li>A COD order arrives as unpaid, and a failed payment lets the shopper retry.</li>
+<li>The order confirmation email, the GST invoice and the shipping notification all look right.</li>
+<li>A pickup is booked for the test order through the courier app, then cancelled.</li>
+<li>Each product, collection and page has its search engine listing edited: title, description and handle.</li>
+<li>The storefront password is removed, and the store is opened on mobile data rather than office Wi-Fi.</li>
+</ol>
+<p>In the first fortnight, watch failed payments, COD orders still unmarked and pin codes that keep failing; they show where the setup needs adjusting. When you want the store's look to go beyond the theme's settings, <a href="/blog/shopify-theme-customisation/">customising a Shopify theme safely</a> is the natural next step.</p>
+
+<h2>FAQs</h2>
+<h3>How long does it take to set up a Shopify store in India?</h3>
+<p>For a small catalogue, the setup inside Shopify can be done in days. The usual delays sit outside it: payment provider KYC, gathering product photos and details, and confirming GST settings with your CA. Start those first.</p>
+<h3>Do I need a GST number to sell on Shopify?</h3>
+<p>That depends on your turnover, what you sell and how you sell it, and payment providers often ask for one during KYC. Your CA can tell you what applies to your business before you launch.</p>
+<h3>Can customers pay by UPI on a Shopify store in India?</h3>
+<p>Yes, through an Indian payment provider. Razorpay, PayU, Cashfree and PhonePe support UPI at the time of writing; check each provider's current Shopify integration and fees before choosing.</p>
+<h3>Can you set the store up for me?</h3>
+<p>Yes. My most recent Shopify project, a store for a fashion brand that is launching soon, covered the theme, products and collections, payments, shipping and checkout, and the apps, speed and SEO basics. The client's details stay private until launch.</p>
+
+<p>If you want the store set up properly from the start, with payments, COD, GST invoicing and shipping tested before the first customer arrives, see my <a href="/shopify-developer/">Shopify developer service</a>. Send a short note on your products and catalogue size, and I will reply with a free review and a fixed quote.</p>
+`,
+  },
+  {
+    slug: 'shopify-theme-customisation',
+    seoTitle: 'Shopify Theme Customisation: Sections, Metafields and Liquid',
+    title: 'Shopify Theme Customisation: Sections, Metafields, Liquid and Making Changes Without Breaking the Live Store',
+    description: 'How Shopify theme customisation works: Online Store 2.0 sections and blocks, editor vs code, metafields, a Liquid example, duplicate themes and theme updates.',
+    date: '2026-10-25',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'website-redesign'],
+    body: `
+<p>Most Shopify stores start on a theme that looks close to what the brand wants, then need it changed: a different product page layout, a size chart, care notes on every product, a banner that only appears on one collection. Some of those take two minutes in the theme editor. Others need code, and code changed carelessly on a live theme is how a store ends up with a broken cart on a sale weekend.</p>
+
+<p>This guide explains how modern Shopify themes are put together, which changes you can safely make yourself and which need Liquid, and how to make code changes without touching what shoppers see. It is the same process I follow for <a href="/shopify-developer/">Shopify theme customisation</a> work. If the store isn't live yet, start with <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> and come back once the basics are in place.</p>
+
+<h2>How Online Store 2.0 themes are built</h2>
+<p>At the time of writing, current Shopify themes use the Online Store 2.0 structure. Four ideas cover most of it:</p>
+<ul>
+<li><strong>Templates</strong> decide what a type of page contains: the product template, the collection template, the page template. You can create extra templates, such as a product template for gift hampers, and assign them to particular products.</li>
+<li><strong>Sections</strong> are the building blocks a template is made from: a hero image, a featured collection, the main product area, an FAQ. On 2.0 themes they can be added, removed and reordered on almost every page, not only the home page.</li>
+<li><strong>Blocks</strong> sit inside sections: a heading, a button, the price, the variant picker, a collapsible tab. Most sections let you add, hide and reorder their blocks.</li>
+<li><strong>Theme settings</strong> apply store-wide: colours, fonts, logo, button styles and spacing. If you are choosing these from scratch, <a href="/blog/choose-website-colours-fonts/">choosing website colours and fonts</a> helps keep the palette and type sensible.</li>
+</ul>
+<p>Apps can plug into this structure with app blocks and app embeds, which is why adding a reviews or WhatsApp app rarely means pasting code into theme files any more. Underneath, each template is a JSON file listing its sections and their settings, and each section is a Liquid file with a schema at the end that defines the settings and blocks the editor shows. Older vintage themes don't work this way, and much of what follows is harder on them.</p>
+
+<h2>Theme editor or code: who changes what</h2>
+<p>A useful rule: if the theme already has a setting for it, use the editor. If it doesn't, the change needs code, and that code should add a new setting so the next change of the same kind doesn't.</p>
+<table>
+<thead><tr><th>Change</th><th>Where it is made</th><th>Who usually does it</th></tr></thead>
+<tbody>
+<tr><td>Swap a banner image or headline</td><td>Theme editor</td><td>Your team</td></tr>
+<tr><td>Reorder or hide sections on the home page</td><td>Theme editor</td><td>Your team</td></tr>
+<tr><td>A different layout for one product range</td><td>A new template, built in the editor</td><td>Your team, with a little guidance</td></tr>
+<tr><td>Size chart or care notes on every product</td><td>Metafields, plus a block if the theme lacks one</td><td>A developer sets it up, then your team fills it in</td></tr>
+<tr><td>A section the theme doesn't have</td><td>A new section file in Liquid, CSS and JavaScript</td><td>Developer</td></tr>
+<tr><td>How the variant picker or cart drawer behaves</td><td>Theme code</td><td>Developer</td></tr>
+<tr><td>Checkout appearance</td><td>Checkout settings; deeper changes depend on your plan</td><td>Check what your plan allows first</td></tr>
+</tbody>
+</table>
+<p>Avoid the middle ground of pasting snippets from forums into theme files. They often work at first, but they sit outside the editor, nobody remembers they are there, and they are among the first things to break when the theme is updated.</p>
+
+<h2>Metafields: same layout, different details</h2>
+<p>Metafields are extra fields attached to products, variants, collections, pages, customers or the shop itself. They solve a common problem: every product needs some detail the standard product form lacks, such as fabric, fit, care instructions, dispatch time, an HSN code or a downloadable size guide.</p>
+<p>The workflow has three parts:</p>
+<ol>
+<li>Create a metafield definition in the admin settings, choosing a type such as single-line text, rich text, file, number or a reference to another product.</li>
+<li>Fill it in on each product, or in bulk through a CSV import or the bulk editor.</li>
+<li>Connect it in the theme editor. Many 2.0 blocks let you choose a metafield as the source for their text or image through the dynamic source option.</li>
+</ol>
+<p>Where no block fits, a few lines of Liquid display it, as in the example below. The point is that content lives in fields and layout lives in the theme, so a merchandiser can add care notes to fifty products without anyone opening the code editor. This also keeps descriptions focused on selling while specifications sit in a consistent place; <a href="/blog/write-product-descriptions-that-sell/">writing product descriptions that sell</a> covers how to split the two. Metaobjects extend the same idea to reusable entries, such as a set of size charts or designer profiles, each linked from many products.</p>
+
+<h2>A small Liquid example</h2>
+<p>Liquid is Shopify's template language. It reads store data, such as a product's title, price or metafields, and turns it into HTML. This short snippet shows a sale label when the compare-at price is higher than the current price, and a care-notes box only when that metafield has been filled in:</p>
+<pre><code>{% if product.compare_at_price &gt; product.price %}
+  &lt;span class="badge-sale"&gt;On sale&lt;/span&gt;
+{% endif %}
+
+{% if product.metafields.custom.care_notes != blank %}
+  &lt;div class="care-notes"&gt;
+    &lt;h3&gt;Wash &amp; care&lt;/h3&gt;
+    {{ product.metafields.custom.care_notes | metafield_tag }}
+  &lt;/div&gt;
+{% endif %}</code></pre>
+<p>Three things are worth noticing. The if checks mean nothing appears on products without care notes, so there are no empty boxes. The custom.care_notes part is the metafield's namespace and key, which come from its definition in the admin. And the metafield_tag filter outputs the value as HTML suited to its type. In a real theme this code would live in a custom block or section with its own schema, so your team can position it in the editor instead of it being fixed in one spot.</p>
+
+<h2>The duplicate-theme workflow</h2>
+<p>The published theme is what shoppers see, so editing its code directly makes every mistake public the moment you save. The safer routine:</p>
+<ol>
+<li><strong>Duplicate the live theme</strong> from the themes page in the admin. The copy is unpublished and can be previewed through a share link.</li>
+<li><strong>Rename the copy</strong> with the date and purpose, such as "Size chart work, October", so nobody publishes the wrong one.</li>
+<li><strong>Make every change on the copy</strong>, either in the code editor or through a developer's local tools connected to that theme.</li>
+<li><strong>Test on a phone</strong>: products with and without variants, the cart, a filtered collection, and every page using a template you changed.</li>
+<li><strong>Carry over editor changes</strong> made to the live theme in the meantime. Section content and settings are saved per theme, so a banner your team swapped on the live theme last week won't be on the copy.</li>
+<li><strong>Publish the copy</strong> at a quiet time, and keep the previous theme in the library as an instant fallback.</li>
+</ol>
+<p>Step five is the one people forget. Agree a short pause on editor changes while the work is underway, or keep a list of everything changed on the live theme.</p>
+
+<h2>Theme updates and custom code</h2>
+<p>Themes from the Theme Store receive updates with fixes and new features. At the time of writing, a theme whose code hasn't been edited can usually be updated with little effort, while a theme with code changes needs more care: the update arrives as a fresh version, and your changes have to be carried into it. Check Shopify's current help pages for how updates work on your theme.</p>
+<p>That is no reason to avoid custom code, but it should shape how the code is written:</p>
+<ul>
+<li>Put new features in <strong>new section, block and snippet files</strong> rather than rewriting the theme's own files. New files carry across to an updated theme far more easily than edits scattered through existing ones.</li>
+<li>Keep custom styles in <strong>one clearly named stylesheet</strong> or the theme's custom CSS setting, not spread across many files.</li>
+<li>Keep a <strong>change log</strong> of which files were added or edited, and why. A few lines in a shared document save hours at update time.</li>
+<li>Use <strong>version control</strong> where the project justifies it. Shopify's GitHub integration, at the time of writing, can connect a theme to a repository so every change is tracked and reversible.</li>
+</ul>
+<p>When a theme carries years of undocumented edits and every update feels risky, it can work out cheaper to start from a clean copy of the current version and rebuild the customisations properly. That is a judgement made after reading the code, not before.</p>
+
+<h2>When to hire a developer</h2>
+<p>You don't need a developer to change images, text, colours or the order of sections; the editor exists for that. It's worth bringing one in when:</p>
+<ul>
+<li>you need a section, block or template the theme doesn't offer, and want it editable afterwards;</li>
+<li>a Figma design has to become a working theme rather than an approximation;</li>
+<li>product data across a large catalogue needs structuring with metafields and metaobjects;</li>
+<li>something behaves wrongly, such as the wrong price on a variant, a cart drawer that won't update or a layout that jumps on mobile;</li>
+<li>product structured data is missing a price, availability or brand (see <a href="/blog/schema-markup-explained/">schema markup explained</a>);</li>
+<li>leftover app code is slowing the store down, as covered in <a href="/blog/shopify-store-slow-fix/">why Shopify stores get slow</a>;</li>
+<li>the theme needs updating and has been customised in code.</li>
+</ul>
+<p>Whoever you hire, ask three questions: will they work on a duplicate theme, how will they document what they change, and will their sections be editable in the theme editor? Clear answers tell you most of what you need to know. If you are still weighing up platforms, <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a> compares how much design control each one gives you.</p>
+
+<h2>FAQs</h2>
+<h3>Can I customise a Shopify theme without coding?</h3>
+<p>Largely, yes. On an Online Store 2.0 theme you can add, remove and reorder sections and blocks, create templates for different products and change colours and fonts in the editor. Code is only needed for things the theme has no setting for.</p>
+<h3>Will customising my theme stop it from updating?</h3>
+<p>Editor changes don't. Code changes mean updates need extra care, because your edits have to be carried into the new version. Keeping custom work in separate files with a change log keeps that manageable.</p>
+<h3>Should I buy a new theme or customise the one I have?</h3>
+<p>Customising is usually cheaper and less risky if your current theme is a 2.0 theme that still receives updates. A new theme makes sense when it is an older vintage theme or its code has been patched so often that changes keep breaking things.</p>
+<h3>What is a metafield in Shopify?</h3>
+<p>An extra field attached to a product, collection or other item, used for details like fabric, care notes or dispatch time. The theme displays it, so the content can change without anyone touching the layout.</p>
+<h3>Have you customised Shopify themes before?</h3>
+<p>Yes. A recent Shopify build for a fashion brand that is launching soon included theme setup and customisation, alongside products, payments, shipping and checkout. The client stays private until launch.</p>
+
+<p>If your theme needs a section it doesn't have, a cleaner product page or code that has become hard to change, see my <a href="/shopify-developer/">Shopify development service</a>. I work on a duplicate theme and document every change, and nothing starts until you have had a free review and a fixed quote.</p>
+`,
+  },
+  {
+    slug: 'shopify-store-slow-fix',
+    seoTitle: 'Why Is My Shopify Store Slow? Causes and Fixes',
+    title: 'Why Is My Shopify Store Slow? How to Find the Cause and Fix It, in Priority Order',
+    description: 'Why Shopify stores slow down, from app scripts and leftover code to images, fonts and sliders, how to diagnose it with free tools and which fixes come first.',
+    date: '2026-10-25',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-speed-optimization'],
+    body: `
+<p>Shopify runs your store on fast infrastructure with a global CDN, so a slow Shopify store is rarely a server problem. It is almost always something added on top: apps, theme features, images, fonts and widgets that each seemed harmless when they went in. The good news is that this makes the cause findable, and most of the fixes are removals rather than rebuilds.</p>
+
+<p>This guide covers where the slowness comes from, how to diagnose it with free tools and what to fix first. It is the same audit I run as part of my <a href="/shopify-developer/">Shopify speed and clean-up work</a>. For the general picture of how outside code slows pages, <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a> is a useful companion read.</p>
+
+<h2>Why Shopify stores get slow</h2>
+<ul>
+<li><strong>App scripts.</strong> Many apps add JavaScript to every page, whether or not that page uses the feature. A pop-up app loads everywhere; a reviews app may load on the cart where no reviews appear. Each one is a download and, more importantly, work the phone's processor has to finish before the page responds to a tap.</li>
+<li><strong>Leftover app code.</strong> On Online Store 2.0 themes, removing an app also removes its app blocks and embeds. Older apps, though, and a few current ones, wrote code straight into theme files: a script tag in the main layout file, a snippet included from the product template. That code stays after the app has gone, sometimes still requesting files from a server that no longer answers.</li>
+<li><strong>Heavy themes.</strong> A theme with mega menus, quick view, animations, swatches, video backgrounds and built-in pop-ups ships code for all of them, and some of it loads even when the feature is switched off.</li>
+<li><strong>Image sizes.</strong> Shopify's CDN can resize images and serve modern formats, but a theme or custom section that requests a huge original for a small slot still sends far too much. A main image that is lazy loaded arrives late as well.</li>
+<li><strong>Fonts.</strong> Three font families in several weights each means a dozen files before the text looks right.</li>
+<li><strong>Sliders and carousels.</strong> A hero slider loads several large images plus a script to rotate them, while most visitors only ever see the first slide.</li>
+<li><strong>Third-party widgets.</strong> Chat, WhatsApp buttons, Instagram feeds, embedded videos, heatmaps and a handful of ad pixels each bring their own scripts, often from several domains.</li>
+</ul>
+
+<h2>Step 1: Measure before you change anything</h2>
+<p>Write down where you start so you can tell which changes actually helped. Three tools cover it.</p>
+<p><strong>The web performance report in the Shopify admin.</strong> At the time of writing, the admin includes a web performance report in the analytics area, built from real visits to your store and showing Core Web Vitals: loading (LCP), responsiveness (INP) and layout shift (CLS). Because it uses real-user data, it moves slowly and needs a reasonable amount of traffic. Check Shopify's current help pages for where it sits and what it shows. Keep a dated note of app installs and theme changes so you can line them up against the trend.</p>
+<p><strong>PageSpeed Insights.</strong> Test your home page, a collection page and your best-selling product page, not only the home page, and read the mobile results. The top part shows real-user data from Chrome where the store has enough visits; the lab section below is a single simulated load, with diagnostics listing which scripts took the most time and how much third-party code ran. Run each page two or three times, as lab results vary between runs. <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> covers what each metric means for shoppers.</p>
+<p><strong>Chrome DevTools.</strong> Open the store on a desktop and open DevTools. The Network panel, filtered to JS and sorted by size or domain, lists every script and where it comes from; unfamiliar domains usually belong to apps. The Coverage panel, opened from the command menu, reloads the page and shows how much of each JavaScript and CSS file was actually used. A large file that is mostly unused on a product page is a strong candidate for removal, or for loading only where it is needed.</p>
+<p>DevTools can also block requests from a single domain. Block one app's domain, reload, and you can see how the page looks and how quickly it loads without that app, before you uninstall anything.</p>
+
+<h2>Step 2: Work out what each app is loading</h2>
+<p>Make a simple list of every installed app with four columns: its purpose, who relies on it, its monthly cost and the pages where it loads. Then:</p>
+<ol>
+<li>Match the unfamiliar domains from DevTools to apps on the list.</li>
+<li>Open the app embeds panel in the theme editor. Embeds switched on there load across the whole store.</li>
+<li>Search the theme code for script tags and snippet includes that don't belong to the theme itself. Search for the names of apps you have already uninstalled; leftovers often carry the app's name.</li>
+<li>Ask the people who run the store which apps they use each week. An app nobody can explain is usually an app nobody needs.</li>
+</ol>
+<p>Before removing an app, check whether the theme or Shopify now does the same job. Filters, announcement bars and size charts built with metafields are often possible without a separate app on current themes, and a small custom section can replace an app that loads everywhere for one small job.</p>
+
+<h2>Step 3: Fix in priority order</h2>
+<p>Start with whatever removes the most work for the least risk, make the changes on a duplicate theme rather than the live one, and measure after each step.</p>
+<table>
+<thead><tr><th>Priority</th><th>Fix</th><th>Why it comes here</th><th>Risk</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Uninstall apps nobody uses and switch off unused app embeds</td><td>Takes scripts off every page in minutes</td><td>Low, once you know what each app did</td></tr>
+<tr><td>2</td><td>Remove leftover code from uninstalled apps</td><td>Stops requests that do nothing, including failing ones</td><td>Low to medium; work on a duplicate theme</td></tr>
+<tr><td>3</td><td>Size the main image on key pages properly and stop lazy loading it</td><td>Often the biggest single change to loading time</td><td>Low</td></tr>
+<tr><td>4</td><td>Replace the hero slider with one strong image</td><td>Cuts several images and a script from the busiest page</td><td>Low; more a design decision than a technical one</td></tr>
+<tr><td>5</td><td>Load chat and WhatsApp widgets only when tapped</td><td>Keeps heavy widget code out of the first load</td><td>Low to medium</td></tr>
+<tr><td>6</td><td>Cut fonts to one or two families and fewer weights</td><td>Fewer files before text renders properly</td><td>Low</td></tr>
+<tr><td>7</td><td>Limit remaining app scripts to the pages that need them</td><td>A reviews script has no reason to load on the cart</td><td>Medium; needs code changes and testing</td></tr>
+<tr><td>8</td><td>Review pixels and tracking tags</td><td>Overlapping pixels often duplicate work</td><td>Medium; conversion tracking must keep working</td></tr>
+<tr><td>9</td><td>Move to a lighter theme</td><td>Only when measurements show the theme itself is the main cost</td><td>High; a project rather than a fix</td></tr>
+</tbody>
+</table>
+<p>The first four rows are usually where the clearest gains are, because they remove the most work from the pages people visit most. Rows seven to nine are worth tackling only once the simpler fixes have been measured.</p>
+
+<h2>Images and fonts, done properly</h2>
+<p>Images are where a theme's build quality shows. Upload images large enough for the biggest slot they will fill, not straight from a camera, then make sure the theme asks Shopify's CDN for a suitable width on each screen. Well-built themes request several widths and let the browser pick, so a phone receives a much smaller file than a large monitor. Custom sections written in a hurry often skip this and send one large image to every device.</p>
+<p>The main image near the top of a page, usually the product photo or the home page banner, should load straight away: no lazy loading, and ideally a higher fetch priority. Images further down the page should be lazy loaded. Set a width and height on each image so nothing shifts while they load. The <a href="/blog/image-optimization-wordpress/">image optimisation guide</a> is written for WordPress, but its advice on sizes, formats and lazy loading carries straight across.</p>
+<p>For fonts, a system font stack costs nothing to load. If the brand needs its own typeface, use one family for headings and one for body text at most, limit the weights to the ones the design really uses, and check that text stays visible while the font loads. <a href="/blog/web-fonts-performance/">Web fonts and website speed</a> explains the trade-offs in more detail.</p>
+
+<h2>Keep it fast after the clean-up</h2>
+<p>Speed tends to slip back as apps are added for each campaign. A few habits stop that:</p>
+<ul>
+<li>Test the same three pages in PageSpeed Insights before and after installing any app, and record the results on your app list.</li>
+<li>Give every new app an owner and a trial period. If nobody is using it at the end of the month, it goes.</li>
+<li>Check the theme for leftover code on the same day you uninstall an app.</li>
+<li>Review the app list and the web performance report every quarter.</li>
+<li>Prefer features built into the theme, or a small custom section, over an app that loads site-wide for one small job.</li>
+</ul>
+<p>If you are still choosing which apps a new store needs, <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> covers the essentials, and <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> compares how each platform adds features and what that means for speed.</p>
+
+<h2>FAQs</h2>
+<h3>Is Shopify's hosting the reason my store is slow?</h3>
+<p>Rarely. Shopify's servers and CDN are quick; the slowness usually comes from what runs in the shopper's browser, which means apps, theme code, images and widgets.</p>
+<h3>Does uninstalling an app remove all its code?</h3>
+<p>App blocks and embeds on Online Store 2.0 themes are switched off when the app is removed. Code an app wrote directly into theme files can remain, so check the theme after uninstalling.</p>
+<h3>What PageSpeed score should a Shopify store aim for?</h3>
+<p>Treat the score as a guide rather than a target. What matters more is whether real visitors' Core Web Vitals are in the good range, which the field data in PageSpeed Insights and the admin report both show, and whether the store feels quick on a mid-range phone on mobile data.</p>
+<h3>Do I need a new theme to make the store faster?</h3>
+<p>Usually not. Removing unused apps and leftover code, fixing images and trimming fonts and widgets come first. A new theme is worth considering only if measurements show the theme itself is the main cost.</p>
+<h3>Are speed optimisation apps worth installing?</h3>
+<p>Be cautious. An app that promises speed still adds its own code, and some mainly change how test tools score a page rather than how fast it feels to shoppers. Removing what you don't need is the more reliable route.</p>
+
+<p>If your store has slowed down and you want the apps, theme code and images audited properly, see my <a href="/shopify-developer/">Shopify developer service</a>. I list what each app loads, remove what isn't earning its place on a duplicate theme, and measure before and after. Share the store's address, and the first step is a free review followed by a fixed quote.</p>
+`,
+  },
+  {
+    slug: 'migrate-woocommerce-to-shopify',
+    seoTitle: 'How to Move From WooCommerce to Shopify, Step by Step',
+    title: 'How to Move From WooCommerce to Shopify, Step by Step: Products, Customers, Orders, Redirects and Cutover',
+    description: 'Move a WooCommerce store to Shopify step by step: export and import products and customers, bring orders across, map URLs to 301 redirects and plan the cutover.',
+    date: '2026-10-25',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-migration'],
+    body: `
+<p>Stores move from WooCommerce to Shopify for sensible reasons. Nobody on the team wants to manage hosting, plugin updates and security any more, or the store has outgrown a setup patched together over several years. Shopify takes hosting and upkeep off your hands in return for monthly plan and app costs. If that trade suits you, the move itself is manageable, as long as you protect three things: your data, your URLs and your customers' ability to sign in.</p>
+
+<p>This guide is the reverse of my <a href="/blog/migrate-shopify-to-woocommerce/">Shopify to WooCommerce migration guide</a>, and follows the order I work in when moving a store as part of my <a href="/shopify-developer/">Shopify development service</a>. If you are not yet sure the move is right for you, <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> weighs the two platforms on cost, payments and control.</p>
+
+<h2>What comes across, and what doesn't</h2>
+<table>
+<thead><tr><th>Data</th><th>Moves?</th><th>How</th></tr></thead>
+<tbody>
+<tr><td>Products, prices, SKUs, stock and images</td><td>Yes</td><td>Shopify's product CSV or a migration app</td></tr>
+<tr><td>Variations</td><td>Yes, within limits</td><td>They become Shopify variants; check the current option and variant limits in Shopify's help pages</td></tr>
+<tr><td>Categories</td><td>Yes, rebuilt</td><td>They become manual or automated collections</td></tr>
+<tr><td>Tags and attributes</td><td>Partly</td><td>Tags carry over; extra attributes go into metafields</td></tr>
+<tr><td>Customers</td><td>Yes</td><td>Customer CSV or a migration app, with marketing consent mapped carefully</td></tr>
+<tr><td>Customer passwords</td><td>No</td><td>Passwords are stored in a scrambled form that can't be transferred</td></tr>
+<tr><td>Past orders</td><td>Usually, with an app</td><td>Shopify's CSV import covers products and customers but not orders at the time of writing</td></tr>
+<tr><td>Blog posts and pages</td><td>Yes</td><td>A migration app, or copied by hand for small sites</td></tr>
+<tr><td>Reviews</td><td>Often</td><td>Exported and imported into a reviews app</td></tr>
+<tr><td>Plugin features</td><td>No</td><td>Replaced by Shopify settings, apps or theme code</td></tr>
+</tbody>
+</table>
+<p>Customer passwords need a decision up front. At the time of writing, Shopify's newer customer accounts sign people in with a one-time code sent to their email, with no password at all, which removes the problem for most stores. With classic accounts, customers accept an account invitation or reset their password. Check Shopify's current help pages for which account types your store can use, and plan a short email that explains the change before launch.</p>
+<p>Also list every plugin on the WooCommerce site and what it does: GST invoices, COD rules, shipping, reviews, wishlists, subscriptions, wholesale pricing. Each needs a Shopify equivalent, a theme feature or a decision to drop it. This list is where a migration shows its real size, because some WooCommerce customisations have no simple app equivalent.</p>
+
+<h2>Step 1: Export and clean your WooCommerce data</h2>
+<ol>
+<li>Take a full backup of the WordPress files and database, and keep it somewhere safe.</li>
+<li>Export products with WooCommerce's built-in product CSV exporter, including variations and custom meta. Export customers and orders through WooCommerce's export tools or an export plugin.</li>
+<li>Export a list of every URL: products, categories, tags, pages and posts. The XML sitemap is a quick source and a crawler gives a fuller one. Add the pages with the most clicks and backlinks from Search Console, so you know which redirects matter most.</li>
+<li>Clean before importing: drop discontinued and draft products you don't want to carry, fill in missing SKUs and weights, standardise variation names so S, Small and small become one option, and remove test customers.</li>
+<li>Keep the old site online during the import. Migration apps usually fetch images from the old site's URLs.</li>
+</ol>
+<p>The move is also a natural moment to improve product content. If descriptions are still supplier copy, rewrite your best sellers before or during the import; <a href="/blog/write-product-descriptions-that-sell/">writing product descriptions that sell</a> has a framework you can follow.</p>
+
+<h2>Step 2: Import products, collections and customers</h2>
+<p>There are two routes, and the right one depends on the size and shape of the catalogue:</p>
+<ul>
+<li><strong>Shopify's product CSV.</strong> You map WooCommerce columns onto Shopify's template. It is free and gives full control, but variable products need care: Shopify expects one row per variant with the product handle repeated, and option names in fixed columns. It suits catalogues of straightforward products.</li>
+<li><strong>A migration app.</strong> Shopify's own store importer or a third-party service connects to WooCommerce and moves products, customers and, depending on the tool, orders, reviews and blog posts. It is quicker for large catalogues and the practical way to bring orders across. Check what each tool supports at the time you use it, and do a trial run first.</li>
+</ul>
+<p>Whichever route you take, import a small batch first and check it in the admin and on the storefront: variants, prices, compare-at prices, image order, stock, weights and tax settings. Then import the rest.</p>
+<p>Categories become collections. Shopify doesn't nest collections the way WooCommerce nests categories; a hierarchy is built in the navigation menu instead. Manual collections behave like WooCommerce categories, while automated collections fill themselves from rules such as tag, type or vendor, which is often tidier for a large catalogue. Extra product attributes such as fabric or material become metafields so the theme can display them consistently.</p>
+<p>For customers, check how email marketing consent maps across. Anyone who didn't opt in on WooCommerce should not arrive in Shopify marked as subscribed.</p>
+
+<h2>Step 3: Map URLs and add 301 redirects</h2>
+<p>This is where rankings are protected or lost. At the time of writing, Shopify uses fixed URL paths that can't be changed: products under /products/, collections under /collections/, pages under /pages/ and blog posts under /blogs/ followed by the blog's name. WooCommerce URLs usually look different:</p>
+<table>
+<thead><tr><th>WooCommerce URL</th><th>Shopify URL</th></tr></thead>
+<tbody>
+<tr><td>/product/blue-cotton-kurta/</td><td>/products/blue-cotton-kurta</td></tr>
+<tr><td>/product-category/kurtas/</td><td>/collections/kurtas</td></tr>
+<tr><td>/about-us/</td><td>/pages/about-us</td></tr>
+<tr><td>/how-to-choose-a-kurta/</td><td>/blogs/news/how-to-choose-a-kurta</td></tr>
+<tr><td>/my-account/</td><td>/account</td></tr>
+</tbody>
+</table>
+<p>Keep each slug, which Shopify calls the handle, the same wherever you can, so the mapping is only a change of path. Then add a 301 redirect for every old URL in Shopify's URL redirects, which sit with the navigation settings in the admin at the time of writing. Redirects can be imported in bulk from a CSV with two columns, the old path and the new one. Point each old URL to its closest new page; sending everything to the home page throws away relevance. <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> covers why the redirect type matters too.</p>
+<p>One quirk worth knowing: at the time of writing, a Shopify URL redirect only works when no live page exists at the old address. That rarely matters in a migration, because WooCommerce paths don't exist on Shopify, but it explains why a redirect can occasionally seem to do nothing.</p>
+
+<h2>Step 4: Blog posts, pages and SEO checks</h2>
+<p>Blog posts move into a Shopify blog, through a migration app or by hand if there are only a few. Check each one: images uploaded to Shopify rather than still pointing at the old WordPress media library, internal links updated to the new URLs, headings intact, and leftover shortcodes from WordPress plugins removed, since they will show up as plain text. Pages built with a WordPress page builder usually need rebuilding with theme sections rather than copying.</p>
+<p>Then run the SEO checks:</p>
+<ul>
+<li><strong>Titles and meta descriptions.</strong> Some migration tools carry these across from WordPress SEO plugins and some don't. Check a sample, and fill in the search engine listing by hand on your key pages.</li>
+<li><strong>Canonical URLs.</strong> A product can open at a collection-based address such as /collections/kurtas/products/blue-cotton-kurta and also at /products/blue-cotton-kurta, with a canonical tag naming the shorter one. Make sure menus and internal links use the short address; <a href="/blog/canonical-tags-explained/">canonical tags explained</a> covers why.</li>
+<li><strong>Structured data.</strong> Test product pages for price, availability and reviews with Google's Rich Results Test. <a href="/blog/schema-markup-explained/">Schema markup explained</a> shows what to look for.</li>
+<li><strong>Image alt text.</strong> It often doesn't survive the move, so add it back on key products.</li>
+<li><strong>Sitemap.</strong> Shopify generates one at /sitemap.xml; submit it in Search Console once the store is live.</li>
+</ul>
+
+<h2>Step 5: The cutover checklist</h2>
+<p>Plan the switch for a quiet sales period, and never for the week before a sale.</p>
+<ol>
+<li>Payments connected and tested. For Indian stores, Shopify Payments isn't available in India at the time of writing, so a provider such as Razorpay, PayU, Cashfree or PhonePe is used, and Shopify may add its own transaction fee depending on your plan. COD is set up as a manual payment method.</li>
+<li>A GST invoice app configured and checked by your CA, since Shopify doesn't create GST-compliant invoices by itself at the time of writing.</li>
+<li>Shipping rates, the courier app and pin code checks tested.</li>
+<li>Test orders placed: prepaid, COD, a failed payment and a refund.</li>
+<li>All redirects imported, and a sample of old URLs, including your top pages, opened to confirm they land correctly.</li>
+<li>WooCommerce put into maintenance or catalogue mode, so no orders are placed during the switch.</li>
+<li>A final import of orders and customers created on WooCommerce since the main import.</li>
+<li>DNS changed to point the domain at Shopify, with email records left untouched.</li>
+<li>Customers emailed about the new store and how to sign in.</li>
+<li>The old WordPress site and its backup kept available, away from the public domain, for a few months.</li>
+</ol>
+<p>In the weeks after, watch Search Console for 404 errors and add redirects for anything missed, and compare organic traffic to key pages with the period before. Some movement while Google recrawls is common; a sustained drop on particular pages usually points to a missing redirect or content that didn't come across. For the setup work every new Shopify store needs anyway, from domain to policies, see <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Will I lose Google rankings when moving to Shopify?</h3>
+<p>Not if every old URL redirects to its closest new page and the content is at least as good. Ranking losses after a migration usually trace back to missing redirects, thinner product pages or titles and descriptions that didn't come across.</p>
+<h3>Can I move my orders from WooCommerce to Shopify?</h3>
+<p>Usually, with a migration app. At the time of writing, Shopify's own CSV import handles products and customers but not orders, so check what your chosen tool supports before you rely on it.</p>
+<h3>Will customers have to create new accounts?</h3>
+<p>Their details and order history can move, but passwords can't. With Shopify's newer customer accounts they sign in with a one-time email code; with classic accounts they set a new password.</p>
+<h3>How long does a WooCommerce to Shopify migration take?</h3>
+<p>It depends on the size of the catalogue, how clean the data is, how many plugin features need replacing and how much content there is. The import itself is quick; testing, redirects and replacing features take most of the time.</p>
+<h3>Should I redesign the store at the same time?</h3>
+<p>It is tempting, but doing both at once makes problems harder to trace. Where possible, move first with a theme close to your current look, then redesign once traffic has settled.</p>
+
+<p>If you want the move planned and carried out for you, with every product, customer and URL accounted for, see my <a href="/shopify-developer/">Shopify developer service</a>. I will review your WooCommerce store, list what moves and what needs replacing, and send a free review and a fixed quote.</p>
 `,
   },
 ];

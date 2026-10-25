@@ -4059,5 +4059,33 @@
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
     <description>Why a WordPress Multisite network gets slow, from the shared database and network plugins to cron and domain mapping, and how Redis, caching and hosting help.</description>
   </item>
+  <item>
+    <title>How to Set Up a Shopify Store in India, Step by Step: Plan, Domain, Payments, GST, Shipping and Launch</title>
+    <link>https://samverse.space/blog/shopify-store-setup-india/</link>
+    <guid>https://samverse.space/blog/shopify-store-setup-india/</guid>
+    <pubDate>Sun, 25 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Set up a Shopify store in India step by step: plan costs, domain and email DNS, Razorpay or PayU and COD, GST invoices, pin code shipping, policies and launch.</description>
+  </item>
+  <item>
+    <title>Shopify Theme Customisation: Sections, Metafields, Liquid and Making Changes Without Breaking the Live Store</title>
+    <link>https://samverse.space/blog/shopify-theme-customisation/</link>
+    <guid>https://samverse.space/blog/shopify-theme-customisation/</guid>
+    <pubDate>Sun, 25 Oct 2026 03:30:00 GMT</pubDate>
+    <description>How Shopify theme customisation works: Online Store 2.0 sections and blocks, editor vs code, metafields, a Liquid example, duplicate themes and theme updates.</description>
+  </item>
+  <item>
+    <title>Why Is My Shopify Store Slow? How to Find the Cause and Fix It, in Priority Order</title>
+    <link>https://samverse.space/blog/shopify-store-slow-fix/</link>
+    <guid>https://samverse.space/blog/shopify-store-slow-fix/</guid>
+    <pubDate>Sun, 25 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Why Shopify stores slow down, from app scripts and leftover code to images, fonts and sliders, how to diagnose it with free tools and which fixes come first.</description>
+  </item>
+  <item>
+    <title>How to Move From WooCommerce to Shopify, Step by Step: Products, Customers, Orders, Redirects and Cutover</title>
+    <link>https://samverse.space/blog/migrate-woocommerce-to-shopify/</link>
+    <guid>https://samverse.space/blog/migrate-woocommerce-to-shopify/</guid>
+    <pubDate>Sun, 25 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Move a WooCommerce store to Shopify step by step: export and import products and customers, bring orders across, map URLs to 301 redirects and plan the cutover.</description>
+  </item>
 </channel>
 </rss>

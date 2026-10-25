@@ -736,6 +736,11 @@ const LINKS = [
   ['wordpress-multisite-when-needed', '<h2>The practical answer</h2>', '<p>If you already run a network, see <a href="/blog/wordpress-multisite-seo/">WordPress Multisite SEO</a> for setting up sitemaps, Search Console and canonicals on each site.</p>\n\n'],
   ['shared-vs-vps-vs-managed-wordpress-hosting', '<h2>Who manages what</h2>', '<p>Price is the other big difference between these types; see <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> for what drives the cost and how to compare plans fairly.</p>\n\n'],
   ['wordpress-caching-explained', '<h2>OPcache</h2>', '<p>On a WordPress Multisite network, object caching often matters even more because so much data is shared; see <a href="/blog/wordpress-multisite-slow/">why WordPress Multisite gets slow</a>.</p>\n\n'],
+  // Agent 95
+  ['payment-gateways-india-compared', '<h2>WooCommerce and WordPress support</h2>', '<p>Selling on Shopify instead? At the time of writing Shopify Payments is not offered in India, so these providers connect as third-party gateways; the guide to <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> covers payments, COD and GST invoices step by step.</p>\n\n'],
+  ['woocommerce-vs-shopify-india', '<h2>Content, SEO and speed</h2>', '<p>If you choose Shopify and want more than the theme settings offer, see how <a href="/blog/shopify-theme-customisation/">Shopify theme customisation</a> works, from sections and metafields to safe code changes on a duplicate theme.</p>\n\n'],
+  ['third-party-scripts-slow-website', '<h2>Step 3: Remove, restrict or delay</h2>', '<p>On a Shopify store, most of these scripts arrive through apps, and some stay behind after the app is removed; the guide to <a href="/blog/shopify-store-slow-fix/">fixing a slow Shopify store</a> shows how to find them and what to remove first.</p>\n\n'],
+  ['migrate-shopify-to-woocommerce', '<h2>What transfers, and how</h2>', '<p>Moving the other way? The guide to <a href="/blog/migrate-woocommerce-to-shopify/">moving from WooCommerce to Shopify</a> covers exports, imports, URL redirects and customer sign-in for that direction.</p>\n\n'],
 ];
 
 let src = fs.readFileSync(FILE, 'utf8');
