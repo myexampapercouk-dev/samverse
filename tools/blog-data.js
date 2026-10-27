@@ -64609,7 +64609,7 @@ done</code></pre>
     slug: 'shopify-cash-on-delivery-india',
     seoTitle: 'Cash on Delivery on Shopify in India: Setup and RTO Control',
     title: 'Cash on Delivery on Shopify in India: Setting It Up, COD Fees, Order Confirmation, RTO and Partial Prepaid',
-    description: 'How to offer cash on delivery on Shopify in India: enabling COD, fees and limits via apps, confirming orders, and cutting RTO with pin code checks and part prepaid.',
+    description: 'Offer cash on delivery on Shopify in India: enabling COD, fees and limits via apps, confirming orders, and cutting RTO with pin code checks and part prepaid.',
     date: '2026-10-27',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
