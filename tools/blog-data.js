@@ -4847,15 +4847,15 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'get-website-indexed-google-faster',
-    seoTitle: 'How to Get a New Website Indexed on Google Faster',
-    title: 'How to Get Your New Website Indexed on Google Faster: What Actually Works',
-    description: 'What actually gets a new website indexed on Google faster: internal links, honest sitemaps, URL Inspection, page quality, crawl budget and IndexNow.',
+    seoTitle: 'How to Get Your Website Indexed by Google Faster',
+    title: 'How to Get Your Website Indexed by Google Faster: What Actually Works',
+    description: 'How to get your website indexed by Google faster: internal links, honest sitemaps, URL Inspection, page quality, crawl budget and IndexNow.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-27',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
-<p>The fastest reliable way to get a new page indexed is to link to it from pages Google already crawls often, such as your homepage, main menu and existing posts, to list it in your XML sitemap with an accurate last-modified date, and to request indexing for your most important URLs in Search Console. Beyond that, speed depends on whether Google thinks the page is worth indexing: substantial, unique pages on a fast site are indexed sooner than thin or near-duplicate ones. No button or plugin forces Google to index anything.</p>
+<p>To get your website indexed by Google faster, link to it from pages Google already crawls often, such as your homepage, main menu and existing posts, list it in your XML sitemap with an accurate last-modified date, and request indexing for your most important URLs in Search Console. Beyond that, speed depends on whether Google thinks the page is worth indexing: substantial, unique pages on a fast site are indexed sooner than thin or near-duplicate ones. No button or plugin forces Google to index anything.</p>
 <p>Sites whose pages sit in "Discovered" or "Crawled, currently not indexed" are exactly who my <a href="/wordpress-seo-services/">WordPress SEO services</a> are for. Common causes are weak internal links, too many low-value URLs competing for Google's attention and a new domain Google doesn't trust yet, often all three at once.</p>
 <p>This guide is about speeding up a site Google can already reach. If your site doesn't appear on Google at all, rule out blocks first with <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn't showing on Google</a>. For what each status means, see <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a>, and if your sitemap shows an error, <a href="/blog/search-console-sitemap-couldnt-fetch/">sitemap "couldn't fetch" explained</a>.</p>
 
@@ -4942,6 +4942,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <h2>FAQs</h2>
 <h3>How do I get Google to index my website quickly?</h3>
 <p>Verify the site in Search Console, submit your sitemap, link new pages from your homepage and menu, request indexing for the key URLs and make sure each page is substantial and unique. That gives Google every reason to crawl and index promptly.</p>
+<h3>Can I get my website indexed instantly?</h3>
+<p>No, not for normal pages. Requesting indexing in Search Console only adds a URL to Google's crawl queue; it doesn't guarantee when, or whether, the page is indexed. Google's Indexing API is documented only for job posting and livestream pages at the time of writing, so tools promising instant indexing for ordinary pages are best avoided. A few days is a good result for a new page, and on a new domain it can take weeks.</p>
 <h3>How many URLs can I request indexing for per day?</h3>
 <p>Google doesn't publish the limit and it has changed over time, but it is a small number per property each day. Use requests for your most important new or updated pages and let internal links and the sitemap handle the rest.</p>
 <h3>Why does Search Console say "Discovered, currently not indexed"?</h3>
@@ -12799,11 +12801,11 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
   },
   {
     slug: 'logo-favicon-brand-basics-website',
-    seoTitle: 'Logo and Favicon Sizes for Websites: Brand Basics Guide',
+    seoTitle: 'Favicon Sizes and Logo Sizes for Websites: Brand Basics',
     title: 'Logo, Favicon and Brand Basics for Your Website: File Formats, Sizes, Social Share Images and Consistency',
-    description: 'Logo, favicon and brand basics for your website: logo formats and sizes, favicon and app icons, social share images, logo schema and keeping it consistent.',
+    description: 'Favicon sizes, logo formats and brand basics for your website: favicon and app icon sizes, social share images, logo schema and consistency.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-27',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'figma-to-wordpress'],
     body: `
@@ -12837,8 +12839,21 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 </ul>
 <p>In most themes the logo is set under <strong>Appearance &gt; Customize &gt; Site Identity</strong>. In a block theme, it's the Site Logo block in the header template, and in Elementor it's under <strong>Site Settings &gt; Site Identity</strong>.</p>
 
-<h2>Favicon and app icons</h2>
+<h2>Favicon sizes and app icons</h2>
 <p>The favicon is the small icon in browser tabs, bookmarks and history. Google also shows it next to your site in mobile search results, so a blank or default icon looks unfinished. The same image becomes the icon when someone saves your site to their phone's home screen.</p>
+<h3>Favicon size chart</h3>
+<table>
+  <thead><tr><th>Size (pixels)</th><th>File and tag</th><th>Where it's used</th></tr></thead>
+  <tbody>
+    <tr><td>16 by 16</td><td>Inside favicon.ico, or a PNG with rel="icon"</td><td>Browser tabs and bookmarks on standard screens</td></tr>
+    <tr><td>32 by 32</td><td>Inside favicon.ico, or a PNG with rel="icon"</td><td>Browser tabs on high-density screens, taskbars and shortcuts</td></tr>
+    <tr><td>180 by 180</td><td>apple-touch-icon.png, rel="apple-touch-icon"</td><td>iPhone and iPad home screen</td></tr>
+    <tr><td>192 by 192</td><td>PNG listed in the web app manifest</td><td>Android home screen</td></tr>
+    <tr><td>512 by 512</td><td>PNG listed in the web app manifest</td><td>Android splash screens and app installs; also a good master size</td></tr>
+    <tr><td>Any size</td><td>SVG with rel="icon" and type="image/svg+xml"</td><td>Modern browsers that support SVG favicons; keep the ICO as a fallback</td></tr>
+  </tbody>
+</table>
+<p>A single favicon.ico file can hold both the 16 and 32 pixel versions. Browser support for SVG favicons varies, so treat it as an extra, not a replacement.</p>
 <h3>Designing a favicon that works at 16 pixels</h3>
 <ul>
   <li>Use the icon-only mark or a single letter, not the full logo with words.</li>
@@ -12904,7 +12919,7 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 <h3>What size should a website logo be?</h3>
 <p>There is no single size, because themes display logos differently. Use SVG if possible. For PNG, export at twice the size the logo appears in the header, so a logo shown 200 pixels wide is exported 400 pixels wide.</p>
 <h3>What size should a favicon be?</h3>
-<p>Start with a square image of at least 512 by 512 pixels. WordPress and favicon generators create the smaller sizes, including 32 by 32 for browser tabs and 180 by 180 for iPhones.</p>
+<p>Start with a square image of at least 512 by 512 pixels. WordPress and favicon generators create the smaller sizes from it: 16 and 32 pixels for browser tabs, 180 by 180 for iPhones, and 192 and 512 pixels for Android and the web app manifest.</p>
 <h3>Why isn't my new favicon showing?</h3>
 <p>Browsers cache favicons for a long time. Clear your cache or try a private window. If Google still shows the old one in search, it updates when it recrawls your homepage, which can take a while.</p>
 <h3>Can I use a JPEG logo on my website?</h3>
@@ -13389,19 +13404,19 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
   },
   {
     slug: 'faq-page-seo',
-    seoTitle: 'FAQ Pages for SEO: How to Write Good FAQs (With Examples)',
-    title: 'FAQs for SEO: How to Write a Good FAQ Section for Service, Sales and Local Pages',
-    description: 'How to write FAQs that help SEO and sales: finding real questions, writing answers, FAQs for service, sales and local pages, FAQ schema facts, with examples.',
+    seoTitle: 'FAQ Page SEO: How to Write FAQs for SEO (With Examples)',
+    title: 'FAQ Page SEO: How to Write FAQs for SEO on Service, Sales and Local Pages',
+    description: 'FAQ page SEO: are FAQs good for SEO, a separate FAQ page or FAQs on each page, and how to write an FAQ for a sales page, with examples.',
     date: '2026-09-27',
-    updated: '2026-10-10',
+    updated: '2026-10-27',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
 <p>Good FAQs do two jobs at once. They answer the questions that stop visitors from contacting you or buying, and they help search engines and AI assistants understand exactly what you offer. Bad FAQs do neither: they repeat the sales pitch as questions nobody asked.</p>
 <p>This guide covers how to choose the right questions, how to write a good FAQ answer, how FAQs work on service, sales and local business pages, and what FAQ schema does and doesn't do today, with examples.</p>
 
-<h2>Do FAQs help SEO?</h2>
-<p>They can, indirectly. FAQs don't give a page a ranking boost on their own, but well-chosen ones help in a few practical ways:</p>
+<h2>Are FAQs good for SEO?</h2>
+<p>Yes, when they answer questions people really search for, but the benefit is indirect. FAQs don't give a page a ranking boost on their own, but well-chosen ones help in a few practical ways:</p>
 <ul>
   <li><strong>They cover more of what people search.</strong> Specific questions match specific, longer searches; see <a href="/blog/long-tail-keywords-explained/">long-tail keywords explained</a>.</li>
   <li><strong>Clear question-and-answer formatting is easy to quote.</strong> It can help a page get picked for featured snippets and People Also Ask, though there's no guarantee; see <a href="/blog/featured-snippets-how-to-win/">how to win featured snippets</a>.</li>
@@ -13410,10 +13425,10 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 </ul>
 <p>FAQs written only for search engines, stuffed with keywords and padded with obvious questions, add clutter and help nobody.</p>
 
-<h2>A separate FAQ page or FAQs on every page?</h2>
-<p>Both have a place, but FAQs on the page they relate to are usually more useful:</p>
+<h2>Should you create a separate FAQ page or put FAQs on each page?</h2>
+<p>Both have a place, but FAQs on the page they relate to are usually more useful for SEO, because each answer sits next to the content it supports and matches the searches that page already targets. A standalone FAQ page works best as a hub for general questions:</p>
 <ul>
-  <li><strong>Service and product pages:</strong> questions about that specific service or product. This is the most valuable placement.</li>
+  <li><strong>Service and product pages:</strong> questions about that specific service or product, such as sizing, compatibility, delivery time or what's in the box. This is the most valuable placement.</li>
   <li><strong>Sales and landing pages:</strong> the objections that stop people buying, placed near the price or call to action.</li>
   <li><strong>Location pages:</strong> questions about that area, timings and access.</li>
   <li><strong>A main FAQ page:</strong> general questions about payments, delivery, cancellations and how you work, with links to the relevant service pages.</li>
@@ -13450,11 +13465,20 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 
 <h3>Example: weak vs better</h3>
 <p>For a plumbing business:</p>
-<blockquote><p><strong>Q: Do you charge for a visit?</strong><br>Weak: "Please contact us for details."<br>Better: "Yes, there's a fixed visit charge. If you go ahead with the repair, we adjust it against the final bill, and we always tell you the price before starting work."</p></blockquote>
+<blockquote><p><strong>Q: Do you charge for a visit?</strong></p><p>Weak: "Please contact us for details."</p><p>Better: "Yes, there's a fixed visit charge. If you go ahead with the repair, we adjust it against the final bill, and we always tell you the price before starting work."</p></blockquote>
 <p>The better answer removes a real worry and sets expectations. Use your own policy, of course; the point is the shape of the answer.</p>
 
 <h2>How to write an FAQ for a sales page</h2>
-<p>On a sales or landing page, the FAQ is where you handle the last objections before someone pays or enquires. Place it near the price or the main button, and order questions the way doubts arise:</p>
+<p>On a sales or landing page, the FAQ is where you handle the last objections before someone pays or enquires. A practical way to write one:</p>
+<ol>
+  <li><strong>List every objection you hear.</strong> Go through recent enquiries, chats and calls where the buyer hesitated or dropped off, and write each doubt down in their words.</li>
+  <li><strong>Keep the ones that block a decision.</strong> Price, fit, timing, risk and support usually matter most. Curiosity questions can go elsewhere.</li>
+  <li><strong>Turn each doubt into a question</strong> the buyer would type or say, not a heading in your own jargon.</li>
+  <li><strong>Write the answer in one to three sentences</strong>, starting with yes, no or the plain fact, then add the condition or detail.</li>
+  <li><strong>Place the block near the price or the main button</strong>, so doubts are answered where they arise.</li>
+  <li><strong>Revisit it monthly.</strong> If the same question keeps arriving by WhatsApp, the page hasn't answered it clearly enough yet.</li>
+</ol>
+<p>Order the questions the way doubts usually arise:</p>
 <ol>
   <li><strong>Fit:</strong> Who is this for, and who isn't it for?</li>
   <li><strong>What's included:</strong> What exactly do I get, and what costs extra?</li>
@@ -13465,7 +13489,7 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 </ol>
 <p>Five to eight questions is usually enough. Answer honestly: don't promise results or guarantees you can't keep, and never use the FAQ to bury important terms. Where it's natural, end an answer with the next step, such as "You can start with a free consultation." For the rest of the page, see <a href="/blog/write-service-pages-that-convert/">writing service pages that convert</a> and <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes</a>; whether to show prices is covered in <a href="/blog/show-prices-on-website/">should you show prices</a>.</p>
 <p>An example for an online course sales page:</p>
-<blockquote><p><strong>Q: What if I fall behind?</strong><br>"You keep access to the recordings for [your access period], so you can catch up at your own pace. Live doubt sessions are held every [day], and you can ask questions in the course group between sessions."</p></blockquote>
+<blockquote><p><strong>Q: What if I fall behind?</strong></p><p>"You keep access to the recordings for [your access period], so you can catch up at your own pace. Live doubt sessions are held every [day], and you can ask questions in the course group between sessions."</p></blockquote>
 
 <h2>FAQs for service pages</h2>
 <p>Service-page FAQs answer questions about that one service: what's included, what affects the price, how long it takes, what the customer needs to provide and what happens afterwards. Four to eight questions is plenty. Every service page on this site has its own, for example <a href="/wordpress-maintenance/">WordPress maintenance</a> and <a href="/woocommerce-developer/">WooCommerce development</a>. If you rely on service pages rather than a blog, see <a href="/blog/seo-for-service-pages-without-blog/">ranking without a blog</a>.</p>
@@ -13483,7 +13507,7 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 </ul>
 <p>Keep answers consistent with your Google Business Profile, especially timings and service areas. Name the real localities you serve, but don't stuff city names into every answer. If you have several location pages, write FAQs for each location rather than copying one set and swapping the city name; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a>. More in the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> and <a href="/blog/voice-search-local-seo/">voice search for local businesses</a>.</p>
 <p>An example for a dental clinic:</p>
-<blockquote><p><strong>Q: Do you see patients on Sundays?</strong><br>"Yes, we're open on Sunday mornings for appointments only. For dental emergencies outside clinic hours, call the number on this page and we'll advise you on what to do next."</p></blockquote>
+<blockquote><p><strong>Q: Do you see patients on Sundays?</strong></p><p>"Yes, we're open on Sunday mornings for appointments only. For dental emergencies outside clinic hours, call the number on this page and we'll advise you on what to do next."</p></blockquote>
 
 <h2>FAQPage schema: what it does now</h2>
 <p>FAQPage schema is structured data that labels questions and answers on a page. It used to make expandable FAQ dropdowns appear under many sites' search results. That changed in August 2023, when Google limited FAQ rich results to well-known, authoritative government and health websites. For almost every business site, adding FAQ schema will not produce those dropdowns.</p>
@@ -13510,8 +13534,8 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 
 <h2>FAQs</h2>
 
-<h3>Are FAQs good for SEO?</h3>
-<p>They help when they answer real questions people search for, because the page then covers more of what searchers want and is easier to quote in snippets and AI answers. They don't add rankings on their own, and padded FAQs can make a page worse.</p>
+<h3>Should I add FAQs to product pages for SEO?</h3>
+<p>Yes, if they answer questions shoppers actually have about that product, such as size, fit, compatibility or delivery. Write them for each product or product type rather than repeating one store-wide block, and keep shipping and returns details on a single policy page that the answers link to.</p>
 
 <h3>How many FAQs should a page have?</h3>
 <p>Usually four to eight on a service or sales page. A main FAQ page can have more if it's grouped into clear sections. Include as many as there are genuine, useful questions, and no more.</p>
@@ -25264,7 +25288,7 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
     title: 'Thank-You Pages: Why Every Website Form Needs One, What to Put on It and How to Track It',
     description: 'Why every website form needs a thank-you page: what to include, how to redirect in WPForms, Elementor or CF7, and how to track it in GA4 and Google Ads.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-27',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
@@ -25303,6 +25327,17 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
     <tr><td>Newsletter sign-up</td><td>A reminder to confirm their email if you use double opt-in</td></tr>
   </tbody>
 </table>
+
+<h2>How to redirect a lead form to a thank-you page</h2>
+<p>Whichever form plugin you use, a lead form redirect follows the same pattern:</p>
+<ol>
+  <li><strong>Publish the thank-you page first</strong>, with a clear URL such as /thank-you-quote/, and set it to noindex.</li>
+  <li><strong>Open the form's confirmation or after-submit settings</strong> and swap the on-screen message for a redirect to that page. Most WordPress form plugins offer this as a choice between showing a message, showing a page or going to a URL.</li>
+  <li><strong>Make sure the redirect fires only on success.</strong> Built-in confirmation settings do this already; a custom script should listen for the plugin's success event, not the button click.</li>
+  <li><strong>Use one thank-you URL per lead form</strong>, so each page view maps to exactly one type of lead.</li>
+  <li><strong>Set up the conversion</strong> on that page view in GA4, Google Ads or Meta, as explained below, and send a real test enquiry to confirm the lead, the email and the conversion all arrive.</li>
+</ol>
+<p>The tracking angle is the main reason to redirect at all: a dedicated URL that only successful submitters reach is the simplest conversion signal there is, and it works even when an ad platform's own form tracking doesn't.</p>
 
 <h2>Setting the redirect in WordPress form plugins</h2>
 <p>Create the thank-you page as a normal WordPress page first, then point the form at it. At the time of writing, the settings are here:</p>
@@ -25360,6 +25395,8 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <p>It is the page visitors see after submitting a form or completing an order. It confirms the submission, explains what happens next and gives you a clean way to count conversions.</p>
 <h3>Should a thank-you page be noindexed?</h3>
 <p>Yes. It is useless as a search result and visits from search would inflate your conversion counts. Set it to noindex in your SEO plugin, keep it crawlable and don't link to it from menus.</p>
+<h3>How do I set up a lead form thank-you page redirect?</h3>
+<p>Create and noindex the thank-you page, then change the form's confirmation setting from a message to a redirect to that page. Submit a test lead and check that you land on the page, the enquiry email arrives and your analytics records one conversion.</p>
 <h3>How do I redirect Contact Form 7 to a thank-you page?</h3>
 <p>Contact Form 7 has no redirect setting. Add a short script that listens for its wpcf7mailsent event and sends the browser to your thank-you page, or use an add-on plugin that adds a redirect option to each form.</p>
 <h3>How do I track a thank-you page as a conversion in GA4?</h3>
@@ -29705,15 +29742,15 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'compare-website-quotes',
-    seoTitle: 'How to Compare Website Quotes (and Why Prices Vary So Much)',
-    title: 'How to Compare Website Quotes: Why Prices Vary So Much and How to Choose Fairly',
-    description: 'How to compare website quotes in India: why prices vary, what a good quotation includes, a line-by-line comparison sheet, questions to ask and red flags.',
+    seoTitle: 'Why Are Website Quotes So Different? How to Compare Them',
+    title: 'Why Are Website Quotes So Different? How to Compare Website Quotes Fairly',
+    description: 'Why are website quotes so different? Each one prices a different job. How to compare quotes in India line by line, what to include and red flags.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-10-27',
     category: 'Pricing',
     related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
     body: `
-<p>Website quotes vary so much because each developer is usually pricing a different job: a lightly edited template or a custom design, your text or theirs, ten unique layouts or three, testing and SEO setup or none. To compare them fairly, send everyone the same written brief, put every quote into one comparison sheet line by line, ask the same follow-up questions, and compare the total cost over three years rather than the build price alone.</p>
+<p>Website quotes are so different because each developer is usually pricing a different job: a lightly edited template or a custom design, your text or theirs, ten unique layouts or three, testing and SEO setup or none. To compare them fairly, send everyone the same written brief, put every quote into one comparison sheet line by line, ask the same follow-up questions, and compare the total cost over three years rather than the build price alone.</p>
 <p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, you get a written scope, a fixed price and a timeline, usually within 24 hours of sending your requirements, and the scope lists what is excluded as well as what is included. Whoever you choose, the method below makes any set of quotes comparable.</p>
 
 <h2>Why are website quotes so different?</h2>
@@ -30215,14 +30252,15 @@ Screenshot: attached</code></pre>
   },
   {
     slug: 'outsource-wordpress-development-india',
-    seoTitle: 'Outsource WordPress Development to India: Costs & Process',
-    title: 'Outsourcing WordPress Development to India: A Practical Guide for Agencies and Businesses',
-    description: 'How agencies and businesses outsource WordPress development to India: the process, white-label and NDAs, time zones, pricing models, QA checks and red flags.',
+    seoTitle: 'Outsource WordPress Development to India: Process & Costs',
+    title: 'Outsource WordPress Development to India: A Practical Guide for Agencies and Businesses',
+    description: 'Outsource WordPress development to India safely: how the process runs, white-label and NDAs, time zones, pricing models, QA checks and red flags.',
     date: '2026-09-27',
-    updated: '2026-10-10',
+    updated: '2026-10-27',
     category: 'Agencies',
     related: ['wordpress-developer-for-agencies', 'hire-wordpress-developer', 'figma-to-wordpress'],
     body: `
+<p>To outsource WordPress development to India successfully, pick a developer or small team by their live work and communication, start with one paid test task, agree scope, milestones, ownership and an NDA in writing, and check every delivery against a fixed QA list before it reaches your client. The rest of this guide covers each of those steps in detail.</p>
 <p>Agencies and businesses in the UK, US, Europe, Australia and the Middle East regularly outsource WordPress development to India, and so do Indian agencies that need extra hands in busy months. Done well, it gives you an experienced developer at competitive rates and frees your team to focus on clients. Done carelessly, it leads to missed deadlines, messy builds and awkward conversations with your client.</p>
 <p>This guide explains how a typical outsourced project runs, how white-label work and NDAs protect your client relationships, how to handle time zones, what to send your developer, how pricing is usually structured and which red flags to watch for.</p>
 
@@ -31399,16 +31437,15 @@ Screenshot: attached</code></pre>
   {
     slug: 'hotel-booking-engine-channel-manager',
     seoTitle: 'Booking Engine vs Channel Manager: How They Work Together',
-    title: 'Hotel Booking Engine and Channel Manager Explained: How They Work With Your PMS, Website and OTAs',
-    description: 'What a hotel booking engine, channel manager and PMS do, how they connect your website and OTAs, what to check before choosing, and how to avoid overbooking.',
+    title: 'Booking Engine vs Channel Manager: How a Hotel Booking Engine, Channel Manager and PMS Work Together',
+    description: 'Booking engine vs channel manager: what each does, how they work with your PMS, website and OTAs, what to check and how to avoid overbooking.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-27',
     category: 'Industries',
     related: ['hotel-website-design', 'wordpress-website-development', 'landing-page-design'],
     body: `
-<p>Hotels, resorts and homestays that want direct bookings need more than a good-looking website. They need a way to take reservations online and keep room availability in sync with Booking.com, MakeMyTrip, Agoda, Airbnb and the other sites they sell on. That's the job of a booking engine and a channel manager, usually working alongside a property management system (PMS).</p>
-<p>The three are often confused, and many providers sell them together. This guide explains what each one does, how they connect, what to check before choosing, and the mistakes that lead to overbookings.</p>
 <p><strong>Booking engine vs channel manager, in short:</strong> a booking engine is the booking system on your own website, so guests can book and pay you directly without OTA commission. A channel manager sits between you and the OTAs, keeping rates and availability in sync everywhere so the same room isn't sold twice. They do different jobs and work best together: the booking engine sells direct, and the channel manager keeps every channel, including your booking engine, up to date.</p>
+<p>Hotels, resorts and homestays usually run both alongside a property management system (PMS), selling on their own website as well as Booking.com, MakeMyTrip, Agoda and Airbnb. Many providers sell the three together, which is why they get confused. This guide explains each one, how they connect, what to check before choosing and the mistakes behind overbookings.</p>
 
 <h2>Booking engine vs channel manager vs PMS</h2>
 <table>
@@ -31419,7 +31456,6 @@ Screenshot: attached</code></pre>
     <tr><td>PMS (property management system)</td><td>Runs day-to-day operations: reservations, check-in and check-out, room status, housekeeping, billing and invoices</td><td>At the front desk</td></tr>
   </tbody>
 </table>
-<p>In short: the booking engine sells rooms on your website, the channel manager keeps every sales channel up to date, and the PMS runs the property.</p>
 
 <h3>Booking engine vs channel manager: side by side</h3>
 <table>
@@ -31429,7 +31465,6 @@ Screenshot: attached</code></pre>
     <tr><td>Where it lives</td><td>On your website, as a search widget and booking pages, ideally on your own domain or a subdomain</td><td>Behind the scenes, between your PMS or inventory calendar and each OTA; guests never see it</td></tr>
     <tr><td>Who pays commission</td><td>No OTA commission on direct bookings; you pay the provider's subscription or per-booking fee, plus payment gateway charges</td><td>The OTAs still charge you their commission on bookings made through them; the channel manager itself usually has its own subscription fee</td></tr>
     <tr><td>What it syncs</td><td>Reads availability and rates from your PMS or channel manager, and sends direct bookings back to them</td><td>Pushes availability, rates and restrictions out to every connected OTA, and pulls in bookings, modifications and cancellations</td></tr>
-    <tr><td>Why you need it</td><td>To earn commission-free direct bookings and keep the guest relationship with your property</td><td>To sell on several OTAs without overbooking or updating each extranet by hand</td></tr>
   </tbody>
 </table>
 <p>Pricing models for both vary between providers, and many sell them as one package, so compare what is included and the total cost at your expected booking volume.</p>
@@ -31444,7 +31479,6 @@ Screenshot: attached</code></pre>
   <li>Pay in full, pay a deposit or pay at the hotel, depending on your policy</li>
   <li>Receive an instant confirmation by email, and often WhatsApp or SMS</li>
 </ul>
-<p>Direct bookings don't carry OTA commission, but booking engines aren't free. Pricing models vary: monthly subscriptions, a fee per booking, or a mix, so compare total cost at your expected volume.</p>
 
 <h2>What a channel manager does</h2>
 <p>A channel manager connects to each OTA and does two things:</p>
@@ -31457,7 +31491,8 @@ Screenshot: attached</code></pre>
 <h2>What a PMS does</h2>
 <p>The PMS is the hotel's operational system: the reservations calendar, guest records, check-in and check-out, room status, housekeeping, folios, payments, GST invoices and reports. Most are cloud-based now. Smaller properties sometimes manage without one, using the channel manager's calendar instead, but that becomes harder as rooms and staff grow.</p>
 
-<h2>How they connect: following a booking</h2>
+<h2>How a PMS, channel manager and booking engine fit together</h2>
+<p>Think of the PMS as the master record of rooms and reservations, the channel manager as the link from that record to every OTA, and the booking engine as your own sales channel that reads from and writes back to the same record. In a combined PMS, channel manager and booking engine suite, one provider runs all three links; with separate tools, each connection needs to be live and supported. Following a single booking shows how it works.</p>
 
 <h3>A guest books on your website</h3>
 <ol>
@@ -31477,7 +31512,7 @@ Screenshot: attached</code></pre>
 <p>Staff enter the booking in the PMS, which updates the channel manager, which updates every channel. This step is where many overbookings start: if phone or walk-in bookings aren't entered straight away, the room is still on sale online.</p>
 
 <h3>Pooled inventory vs allocations</h3>
-<p>Most modern setups use <strong>pooled inventory</strong>: all channels sell from the same pool of rooms, so the last room can sell anywhere. Some properties still give each OTA a fixed <strong>allocation</strong>, which is simpler but can leave rooms unsold on one channel while another is full. Ask which model a system uses and whether it suits you.</p>
+<p>Most modern setups use <strong>pooled inventory</strong>: all channels sell from the same pool of rooms, so the last room can sell anywhere. Some properties still give each OTA a fixed <strong>allocation</strong>, which can leave rooms unsold on one channel while another is full.</p>
 
 <h2>Do you need all three?</h2>
 <ul>
@@ -31523,7 +31558,7 @@ Screenshot: attached</code></pre>
 <p>Google can show your direct booking link alongside OTAs in hotel search results. This works through a connectivity partner, usually your booking engine or channel manager, so ask whether they connect to Google's hotel listings.</p>
 
 <h3>Data, contracts and support</h3>
-<p>Can you export bookings and guest data if you leave? Is there a lock-in period or setup fee? Who handles room mapping and training, and is support available when you need it, including weekends? Guest data also brings privacy responsibilities; see <a href="/blog/dpdp-act-website-basics/">DPDP Act basics</a>.</p>
+<p>Can you export bookings and guest data if you leave? Is there a lock-in period or setup fee? Who handles room mapping, and is support available at weekends? Guest data also brings privacy responsibilities; see <a href="/blog/dpdp-act-website-basics/">DPDP Act basics</a>.</p>
 
 <h2>Common mistakes that cause overbookings</h2>
 <ul>
@@ -31536,7 +31571,7 @@ Screenshot: attached</code></pre>
   <li><strong>Cancellation policies that differ</strong> between your website and OTAs, causing disputes</li>
   <li><strong>Never testing</strong> with a real booking and cancellation after setup or changes</li>
 </ul>
-<p>If an overbooking does happen, contact the guest early, arrange a comparable room nearby and cover the difference. Handling it early and generously protects your reviews.</p>
+<p>If an overbooking does happen, contact the guest early, arrange a comparable room nearby and cover the difference.</p>
 
 <h2>Adding a booking engine to your WordPress website</h2>
 <ul>
@@ -31549,22 +31584,12 @@ Screenshot: attached</code></pre>
 
 <h2>Getting the mix of direct and OTA bookings right</h2>
 <p>OTAs and direct bookings are two channels with different jobs rather than rivals. OTAs bring visibility, especially with first-time and out-of-town guests who start their search there, but every booking carries commission. Direct bookings cost less per booking and give you the guest relationship, but you have to earn that traffic through your website, Google and repeat guests.</p>
-<p>There's no ideal ratio that suits every property; it depends on your location, season, type of guest and how much effort goes into your own marketing. A practical approach:</p>
+<p>There's no ideal ratio for every property; it depends on location, season and guest type. A practical approach:</p>
 <ul>
   <li><strong>Track bookings by channel every month</strong>, looking at net revenue after commission, payment fees and booking engine charges, not just the number of bookings</li>
   <li><strong>Use OTAs to fill gaps</strong>, such as weekdays, the off-season or last-minute dates, while keeping your own website competitive on rate and perks</li>
   <li><strong>Win the next booking direct</strong> by giving OTA guests a great stay and making it easy to rebook on your website, within what your OTA agreements allow</li>
   <li><strong>Keep the channel manager in charge of inventory</strong>, so you can open or close channels for particular dates without risking overbookings</li>
-  <li><strong>Check your OTA contracts</strong> before changing rates or restrictions by channel, since parity and promotion terms vary by platform</li>
-</ul>
-<p>The booking engine and channel manager are what make this balance manageable: one gives guests a reliable way to book direct, and the other lets you sell everywhere else from a single set of rooms and rates.</p>
-
-<h2>Give guests a reason to book direct</h2>
-<ul>
-  <li>Your best available rate on your own website</li>
-  <li>Direct-booking perks: breakfast, late checkout or an upgrade when available</li>
-  <li>Clear, flexible cancellation terms</li>
-  <li>Quick answers on WhatsApp</li>
 </ul>
 
 <h2>FAQs</h2>
@@ -31583,9 +31608,6 @@ Screenshot: attached</code></pre>
 
 <h3>Can guests pay by UPI through a hotel booking engine?</h3>
 <p>Many booking engines used in India support UPI through an integrated payment gateway. Confirm which gateways are supported and where the money settles before you sign.</p>
-
-<h3>Can I use a WordPress booking plugin instead?</h3>
-<p>For a small property selling mainly direct, a plugin can work. For several OTAs you need reliable two-way channel connections, which dedicated booking engines and channel managers usually handle better.</p>
 
 <p>Planning a new hotel or homestay website, or want your booking engine to sit properly inside the one you have? I build fast, mobile-friendly hotel websites designed around direct bookings. See <a href="/hotel-website-design/">hotel website design</a>.</p>
 `,
@@ -34209,14 +34231,14 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   {
     slug: 'migrate-website-to-hostinger',
     seoTitle: 'Hostinger Site Migration: Move WordPress Without Downtime',
-    title: 'How to Migrate a WordPress Website to Hostinger Without Downtime: 3 Methods',
+    title: 'Website Migration to Hostinger: How to Move a WordPress Site Without Downtime (3 Methods)',
     description: 'Hostinger site migration step by step: hPanel\'s migration tool, plugins or a manual move, testing before DNS changes, keeping email working and SSL.',
     date: '2026-09-28',
-    updated: '2026-10-11',
+    updated: '2026-10-27',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-maintenance', 'website-redesign'],
     body: `
-<p>To migrate a WordPress website to Hostinger without downtime, copy the site to your Hostinger account first, using hPanel's website migration tool, a plugin such as All-in-One WP Migration, or a manual files-and-database move. Test it on Hostinger before your domain points there, recreate your email DNS records, then switch the nameservers or A record. Once the domain resolves to Hostinger, let the free SSL certificate issue, run final checks and keep the old hosting for a week or two as a fallback.</p>
+<p>For a website migration to Hostinger without downtime, copy the site to your Hostinger account first, using hPanel's website migration tool, a plugin such as All-in-One WP Migration, or a manual files-and-database move. Test it on Hostinger before your domain points there, recreate your email DNS records, then switch the nameservers or A record. Once the domain resolves to Hostinger, let the free SSL certificate issue, run final checks and keep the old hosting for a week or two as a fallback.</p>
 <p>Done in that order, visitors never see a broken site and email keeps flowing. This guide covers each method, testing, DNS, email, the checks I run afterwards and moving from SiteGround specifically. If you'd rather hand it over, see my <a href="/wordpress-migration/">WordPress migration service</a>.</p>
 
 <h2>Before you start: pre-migration checklist</h2>
@@ -34248,6 +34270,7 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   <li>Enter the domain name you're moving, and submit the request.</li>
   <li>Wait for the migration status to show as complete, then test the copy before touching DNS.</li>
 </ol>
+<p>At the time of writing, Hostinger includes this migration with many of its hosting plans at no extra charge, but plans and terms change, so check Hostinger's current offer for your plan before relying on it.</p>
 <p>Rather than handing over your own admin password, create a temporary administrator account on the old site for the migration, and delete it once the move is done.</p>
 
 <h2>Method 2: Using a migration plugin</h2>
@@ -34328,7 +34351,7 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 
 <h2>FAQs</h2>
 <h3>Does Hostinger migrate websites for free?</h3>
-<p>Hostinger has offered free website migration with many of its hosting plans, through the migration tool in hPanel. Check the current terms for your plan, and test the result yourself before switching DNS, because a copied site still needs checking.</p>
+<p>At the time of writing, Hostinger offers free website migration with many of its hosting plans, through the migration tool in hPanel. Check Hostinger's current offer and the terms for your plan, and test the result yourself before switching DNS, because a copied site still needs checking.</p>
 <h3>How long does a Hostinger site migration take?</h3>
 <p>Copying a small WordPress site with a plugin can take under an hour; larger sites and queued migration requests take longer. DNS changes then take minutes to a few hours with a low TTL, and up to a day or two in some cases.</p>
 <h3>Will my website go down during the migration?</h3>
@@ -42827,9 +42850,9 @@ add_action( 'after_setup_theme', function () {
     slug: 'woocommerce-multi-vendor-marketplace',
     seoTitle: 'WooCommerce Multi-Vendor Marketplace: How to Build One',
     title: 'How to Build a WooCommerce Multi-Vendor Marketplace: Plugins, Payouts, GST and Scale',
-    description: 'How to build a WooCommerce multi-vendor marketplace: choosing a plugin, commission and payout models, vendor KYC, GST and TCS basics, and hosting at scale.',
+    description: 'How to build a WooCommerce multi-vendor marketplace: choosing a plugin, commissions and payouts, the vendor onboarding process, GST and TCS, and hosting.',
     date: '2026-09-28',
-    updated: '2026-10-11',
+    updated: '2026-10-27',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-startups'],
     body: `
@@ -42852,7 +42875,7 @@ add_action( 'after_setup_theme', function () {
     <tr><td>Multi-vendor marketplace</td><td>Many vendors, on your site</td><td>Usually you, paying vendors after deducting commission</td></tr>
   </tbody>
 </table>
-<p>If you only sell your own products, a single-vendor store is far simpler. If sellers just need to be found, a listing site may be enough; see <a href="/blog/directory-website-wordpress/">directory websites on WordPress</a>.</p>
+<p>If sellers just need to be found, a listing site may be enough; see <a href="/blog/directory-website-wordpress/">directory websites on WordPress</a>.</p>
 
 <h2>How to build a WooCommerce marketplace, step by step</h2>
 <ol>
@@ -42867,7 +42890,7 @@ add_action( 'after_setup_theme', function () {
 </ol>
 
 <h2>Choosing a multi-vendor plugin</h2>
-<p>WooCommerce on its own sells one store's products. Well-known multi-vendor plugins include Dokan, WCFM Marketplace, MultiVendorX and WC Vendors, plus WooCommerce's own Product Vendors extension. Typical features include vendor registration and front-end dashboards, vendor store pages with ratings, commission and withdrawal settings, splitting a mixed cart into per-vendor orders, per-vendor shipping and product approval. Several offer a free core with paid upgrades, and features differ by plan, so check each one's current feature list and pricing rather than relying on old reviews.</p>
+<p>WooCommerce on its own sells one store's products. Well-known multi-vendor plugins include Dokan, WCFM Marketplace, MultiVendorX and WC Vendors, plus WooCommerce's own Product Vendors extension. Typical features include vendor registration and dashboards, store pages, commission and withdrawal settings, per-vendor orders and shipping, and product approval. Features differ by plan and change, so check each one's current feature list and pricing.</p>
 <p>Rather than asking which plugin is "best", test your shortlist against your own requirements on a staging site:</p>
 <table>
   <thead><tr><th>Question to ask</th><th>Why it matters</th></tr></thead>
@@ -42889,7 +42912,6 @@ add_action( 'after_setup_theme', function () {
     <tr><td>Fixed fee per sale or item</td><td>A flat amount per order or item</td><td>Products or services with similar prices</td></tr>
     <tr><td>Category-based rates</td><td>Different percentages for different categories</td><td>Catalogues where margins vary by category</td></tr>
     <tr><td>Vendor subscription</td><td>A monthly or yearly fee, with low or no commission</td><td>Niches with steady, regular sellers</td></tr>
-    <tr><td>Hybrid</td><td>A smaller subscription plus a lower commission</td><td>Marketplaces offering extra services to vendors</td></tr>
   </tbody>
 </table>
 <p>Then settle the details that cause arguments later:</p>
@@ -42902,25 +42924,25 @@ add_action( 'after_setup_theme', function () {
 <h2>Payment flow and vendor payouts</h2>
 <p>In most WooCommerce marketplaces the buyer pays you, and you pay vendors later after deducting commission. Three common ways to handle payouts:</p>
 <ul>
-  <li><strong>Manual payouts on a schedule:</strong> you review vendor earnings weekly or fortnightly and pay by bank transfer. Simplest to start with and easy to control</li>
+  <li><strong>Manual payouts on a schedule:</strong> you review vendor earnings weekly or fortnightly and pay by bank transfer. Simplest to start with</li>
   <li><strong>Withdrawal requests:</strong> vendors request their available balance from their dashboard, and you approve and pay it, often above a minimum amount</li>
-  <li><strong>Automated split settlement:</strong> some Indian payment gateways offer marketplace products that route each vendor's share to their bank account. These usually need separate approval, KYC for each vendor and a plugin integration that supports them</li>
+  <li><strong>Automated split settlement:</strong> some Indian payment gateways offer marketplace products that route each vendor's share to their bank account. These usually need separate approval, per-vendor KYC and a supporting plugin integration</li>
 </ul>
-<p>Whichever you choose, hold each vendor's earnings until the return window closes, so you aren't chasing money for refunded orders, and give vendors a clear statement of sales, commission, fees and payouts. How you hold and move sellers' money can have regulatory implications too, so check your setup with your CA and your gateway. For the basics, see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a> and <a href="/blog/payment-gateways-india-compared/">how to compare payment gateways</a>.</p>
+<p>Whichever you choose, hold each vendor's earnings until the return window closes and give vendors a clear statement of sales, commission, fees and payouts. How you hold and move sellers' money can have regulatory implications too, so check your setup with your CA and your gateway. For the basics, see <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a> and <a href="/blog/payment-gateways-india-compared/">how to compare payment gateways</a>.</p>
 
-<h2>WooCommerce vendor onboarding: a step-by-step checklist</h2>
-<p>A marketplace is judged by its weakest seller. Build a simple, firm process, and make each step something your multi-vendor plugin or your team can tick off before a seller goes live:</p>
+<h2>The WooCommerce vendor onboarding process, step by step</h2>
+<p>A marketplace is judged by its weakest seller, so every new vendor should pass the same seven steps before their store goes live. Each one is something your multi-vendor plugin or your team can tick off:</p>
 <ol>
-  <li><strong>Application:</strong> business details, what they sell and sample photos. Most multi-vendor plugins include a vendor registration form you can extend with your own fields, such as category, location and expected catalogue size</li>
-  <li><strong>KYC:</strong> PAN, GSTIN where applicable, business address and bank details, verified before the first payout. Some categories need specific licences, such as food safety registration for food sellers, so check what applies in your niche. Which documents to collect, and whether a seller must be GST-registered, depends on your model and on rules that change, so agree the list with your CA</li>
-  <li><strong>Approval:</strong> review each application yourself, at least in the early months, rather than auto-approving every sign-up. Check that the documents match the business name and bank account, and tell rejected applicants why</li>
-  <li><strong>Store profile setup:</strong> store name, logo, banner, pickup address, shipping zones and rates, dispatch time and return policy. A complete profile builds buyer trust and gives you the seller details that e-commerce rules generally expect marketplaces to show</li>
-  <li><strong>First product review:</strong> hold the vendor's first listings for approval against your photo and description standards, and check category, price, stock, weight and tax settings. Keep new products on approval until the vendor has shown they list well</li>
-  <li><strong>Commission and payout terms acceptance:</strong> before the store goes live, the vendor accepts (or reconfirms, if they ticked a box at registration) the vendor agreement: commission, gateway fees, payout schedule and holding period, dispatch times, returns, prohibited items and what happens if standards slip. Keep a record of which version they accepted and when</li>
+  <li><strong>Application:</strong> business details, what they sell and sample photos. Most multi-vendor plugins include a registration form you can extend with fields such as category and location</li>
+  <li><strong>KYC:</strong> PAN, GSTIN where applicable, business address and bank details, verified before the first payout. Some categories need licences, such as food safety registration for food sellers. Which documents to collect, and whether a seller must be GST-registered, depends on your model and on rules that change, so agree the list with your CA</li>
+  <li><strong>Approval:</strong> review each application yourself in the early months rather than auto-approving sign-ups, check that the documents match the business name and bank account, and tell rejected applicants why</li>
+  <li><strong>Store profile setup:</strong> store name, logo, banner, pickup address, shipping zones and rates, dispatch time and return policy. A complete profile builds buyer trust and covers the seller details marketplaces are generally expected to show</li>
+  <li><strong>First product review:</strong> hold the vendor's first listings for approval against your photo and description standards, and check category, price, stock, weight and tax settings. </li>
+  <li><strong>Commission and payout terms acceptance:</strong> before going live, the vendor accepts or reconfirms the vendor agreement: commission, gateway fees, payout schedule and holding period, dispatch times, returns, prohibited items and what happens if standards slip. Record which version they accepted and when</li>
   <li><strong>Test order:</strong> place a real order for one of their products and check that the vendor gets the notification, ships on time, the invoice details are correct and their dashboard shows the right earnings after commission. Run a test refund too</li>
 </ol>
-<p>Give vendors a role with only the access they need, never admin rights; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>. Store KYC documents securely and explain how you use them in your privacy policy. Many small vendors struggle with product photos and descriptions, so offering help lifts quality across the whole site.</p>
-<p>Turn the checklist into a short seller guide or welcome email, so vendors know what to prepare before they apply and onboarding doesn't stall waiting for documents.</p>
+<p>Give vendors a role with only the access they need, never admin rights; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>. Store KYC documents securely and explain their use in your privacy policy. Offering help with product photos and descriptions lifts quality across the site.</p>
+<p>Turn these steps into a short seller guide or welcome email, so vendors know what to prepare before they apply and onboarding doesn't stall waiting for documents.</p>
 
 <h2>GST, TCS and legal basics for Indian marketplaces</h2>
 <p>A marketplace in India carries obligations that a normal online store doesn't. In broad terms, and subject to current rules, which do change:</p>
@@ -42937,12 +42959,12 @@ add_action( 'after_setup_theme', function () {
 <p>Vendors can ship their own orders, or stock can be collected centrally; vendor shipping is easier to start but harder to control, and a mixed cart may arrive as several parcels. Buyers will contact you rather than the vendor, so set response times for vendors, a clear process for damaged or wrong items, and track dispatch times, cancellations and complaints per vendor. For courier and rate options, see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 
 <h2>Hosting and performance at scale</h2>
-<p>A marketplace has many people logging in, uploading images and editing products at once. Logged-in vendors and shoppers with items in their cart usually bypass page caching, so the server does more work per visitor than on a simple store.</p>
+<p>Logged-in vendors and shoppers with items in their cart usually bypass page caching, so a marketplace server does more work per visitor than a simple store.</p>
 <ul>
   <li><strong>Hosting:</strong> start on a plan with guaranteed resources rather than the cheapest shared plan; see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a></li>
   <li><strong>Object caching:</strong> Redis or Memcached, if your host supports it, speeds up pages that can't be page-cached</li>
   <li><strong>Images:</strong> resize and compress vendor uploads automatically, cap upload sizes and use a CDN</li>
-  <li><strong>Lean plugins and reliable cron:</strong> every add-on runs on dashboards and checkout, and order emails and payout tasks run more reliably on a real server cron</li>
+  <li><strong>Lean plugins and reliable cron:</strong> keep add-ons few, and run scheduled tasks on a real server cron</li>
   <li><strong>Safety:</strong> test updates on staging, keep daily backups including the database, and use two-factor login for admins</li>
 </ul>
 <p>The <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a> covers caching around cart and checkout, object caching and database tidy-up in more detail.</p>
@@ -42955,7 +42977,7 @@ add_action( 'after_setup_theme', function () {
   <li>Leaving GST and TCS questions until the first filing is due</li>
   <li>Having no plan to bring buyers; vendors leave quickly if they get no orders</li>
 </ul>
-<p>Launch with one category, one region or a small group of trusted vendors, prove that buyers come and vendors deliver, then expand. Cost depends on the plugin and plan, custom features, design, integrations and ongoing maintenance; the <a href="/website-cost-calculator/">website cost calculator</a> gives a starting point.</p>
+<p>Launch small, prove that buyers come and vendors deliver, then expand. Cost depends on the plugin and plan, custom features, design, integrations and ongoing maintenance; the <a href="/website-cost-calculator/">website cost calculator</a> gives a starting point.</p>
 
 <h2>FAQs</h2>
 <h3>Can WooCommerce handle a multi-vendor marketplace?</h3>
@@ -42967,7 +42989,9 @@ add_action( 'after_setup_theme', function () {
 <h3>Can vendors be paid automatically?</h3>
 <p>Yes, through gateway marketplace products that split payments, if your plugin supports them and the gateway approves your account. Many marketplaces start with manual scheduled payouts and automate once volumes justify it.</p>
 <h3>What do sellers need to join a WooCommerce marketplace?</h3>
-<p>Each marketplace sets its own requirements, but sellers are commonly asked for business details, PAN, a GSTIN where applicable, a business address, bank details for payouts and any licence their category needs, plus product photos and descriptions that meet the listing guidelines. They also accept the vendor agreement covering commission and payouts. GST and document requirements depend on the model and change over time, so marketplace owners should confirm the list with a CA.</p>
+<p>Commonly business details, PAN, a GSTIN where applicable, an address, bank details for payouts, any licence their category needs and listings that meet your guidelines, plus acceptance of the vendor agreement. Requirements depend on the model and change, so confirm the list with a CA.</p>
+<h3>What does a WooCommerce seller onboarding process include?</h3>
+<p>Application, KYC checks, manual approval, store profile setup, review of the first products, acceptance of commission and payout terms, and a test order with a refund. Most multi-vendor plugins handle registration and product approval; the checks and the agreement are up to you.</p>
 
 <p>Planning a marketplace and want it built on a setup that can grow? I set up and customise WooCommerce marketplaces, test multi-vendor orders, refunds and payouts on staging before launch, and explain each choice in plain language. See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/website-for-startups/">websites for startups</a> if you're launching a new venture.</p>
 `,
@@ -47052,11 +47076,11 @@ Right:
   },
   {
     slug: 'hreflang-multilingual-seo-india',
-    seoTitle: 'Hreflang and Multilingual SEO in India: Hindi and x-default',
-    title: 'Hreflang and Multilingual SEO for Indian Websites: Hindi and Regional Versions',
-    description: 'Set up hreflang for Hindi and regional versions of an Indian website: en-IN and hi-IN codes, return tags, x-default, HTML vs sitemap, plugins and common errors.',
+    seoTitle: 'Hreflang Tags for India: Hindi, Regional Codes, x-default',
+    title: 'Hreflang Tags for India: Multilingual SEO for Hindi and Regional-Language Versions',
+    description: 'Hreflang tags for India: codes for Hindi, Marathi, Tamil and other Indian languages, return tags, x-default, HTML vs sitemap, plugins and errors.',
     date: '2026-09-30',
-    updated: '2026-10-11',
+    updated: '2026-10-27',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
@@ -47090,6 +47114,30 @@ Right:
   </tbody>
 </table>
 <p>Do you need the region at all? If your pages are for Hindi or English speakers anywhere, <code>hi</code> and <code>en</code> are enough. Add a region when you have versions for different countries, such as en-IN with rupee pricing and en-GB or en-US for overseas buyers; see <a href="/blog/woocommerce-sell-internationally/">selling internationally from an Indian WooCommerce store</a>. Hreflang can't target a state or city, so a Marathi page is matched by language, not by Maharashtra.</p>
+
+<h2>Hreflang codes for Indian languages</h2>
+<p>Use this table as a quick reference, or to check what a plugin or hreflang generator outputs. Each language works on its own or with the India region code added:</p>
+<table>
+  <thead><tr><th>Language</th><th>Script</th><th>Language only</th><th>For users in India</th></tr></thead>
+  <tbody>
+    <tr><td>English</td><td>Latin</td><td>en</td><td>en-IN</td></tr>
+    <tr><td>Hindi</td><td>Devanagari</td><td>hi</td><td>hi-IN</td></tr>
+    <tr><td>Marathi</td><td>Devanagari</td><td>mr</td><td>mr-IN</td></tr>
+    <tr><td>Tamil</td><td>Tamil</td><td>ta</td><td>ta-IN</td></tr>
+    <tr><td>Telugu</td><td>Telugu</td><td>te</td><td>te-IN</td></tr>
+    <tr><td>Bengali</td><td>Bengali</td><td>bn</td><td>bn-IN</td></tr>
+    <tr><td>Gujarati</td><td>Gujarati</td><td>gu</td><td>gu-IN</td></tr>
+    <tr><td>Kannada</td><td>Kannada</td><td>kn</td><td>kn-IN</td></tr>
+    <tr><td>Malayalam</td><td>Malayalam</td><td>ml</td><td>ml-IN</td></tr>
+    <tr><td>Punjabi</td><td>Gurmukhi</td><td>pa</td><td>pa-IN</td></tr>
+  </tbody>
+</table>
+<p>For a page available in English, Hindi and Marathi, the head of every version would carry the same set of tags:</p>
+<pre><code>&lt;link rel="alternate" hreflang="en-IN" href="https://www.example.in/contact/" /&gt;
+&lt;link rel="alternate" hreflang="hi-IN" href="https://www.example.in/hi/contact/" /&gt;
+&lt;link rel="alternate" hreflang="mr-IN" href="https://www.example.in/mr/contact/" /&gt;
+&lt;link rel="alternate" hreflang="x-default" href="https://www.example.in/contact/" /&gt;</code></pre>
+<p>Codes are not case-sensitive, but writing the language in lower case and the region in capitals, as above, is the usual convention and easier to scan for mistakes.</p>
 
 <h2>Return tags: every version lists every version</h2>
 <p>Hreflang works in sets. If the English page lists the Hindi page, the Hindi page must list the English page back. These are called return tags, and without them Google may ignore the pair. Each page should also list itself. For a page in two languages, both versions carry the same three lines:</p>
