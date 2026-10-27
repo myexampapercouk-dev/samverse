@@ -1184,4 +1184,20 @@ ${urls.map(u => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod || t
 `);
 console.log('updated sitemap.xml');
 
+// Cache-bust the stylesheet: browsers keep style.min.css for a week, so every page links it with a content hash
+const cssVer = crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, 'style.min.css'))).digest('hex').slice(0, 8);
+const SKIP = new Set(['.git', 'node_modules', 'docs', 'tools']);
+let cssPages = 0;
+(function walk(dir) {
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (e.isDirectory()) { if (!SKIP.has(e.name)) walk(path.join(dir, e.name)); continue; }
+    if (!e.name.endsWith('.html')) continue;
+    const f = path.join(dir, e.name);
+    const s = fs.readFileSync(f, 'utf8');
+    const out = s.replace(/\/style\.min\.css(\?v=[0-9a-f]+)?"/g, `/style.min.css?v=${cssVer}"`);
+    if (out !== s) { fs.writeFileSync(f, out); cssPages++; }
+  }
+})(ROOT);
+console.log('style.min.css?v=' + cssVer, 'linked on', cssPages, 'pages');
+
 module.exports = { PAGES };
