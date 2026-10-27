@@ -879,6 +879,8 @@ wp plugin verify-checksums --all</code></pre>
   </tbody>
 </table>
 
+<p>For a line-by-line look at the Shopify side, from the plan and apps to gateway fees and setup work, see <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a>.</p>
+
 <h2>What each costs to run in India</h2>
 <p>Compare the total over two or three years, not the first month's offer.</p>
 <table>
@@ -1943,6 +1945,8 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   <li><strong>Merge:</strong> its content joins another page, and it redirects there</li>
   <li><strong>Remove:</strong> no equivalent exists; only acceptable for pages with no meaningful traffic or links</li>
 </ul>
+
+<p>On Shopify the URLs usually survive a redesign, but titles, templates and app embeds do not always; see <a href="/blog/shopify-theme-change-without-losing-seo/">changing a Shopify theme without losing SEO</a>.</p>
 
 <h2>Phase 3: Build the URL map and redirects</h2>
 <p>The safest URL is the one that doesn't change. A WordPress-to-WordPress redesign can usually keep every important slug. Moving from Wix, Blogger or a hand-coded site often forces changes, which is when the map matters most; see <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a> for a platform-change example.</p>
@@ -8348,6 +8352,8 @@ wp cache flush</code></pre>
   <li><strong>Testing.</strong> Run key products through the Rich Results Test and the Schema Markup Validator, then watch the Product snippets and Merchant listings reports in Search Console.</li>
 </ul>
 
+<p>Running a Shopify store instead? The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> covers the same ground there, including duplicate collection paths for products and tag pages.</p>
+
 <h2>Step 7: Control filter, sort and variation URLs</h2>
 <p>Every combination of colour, size, price and sort order can become a new URL, and thousands of near-identical pages waste Google's crawling. A sensible default:</p>
 <pre><code>/product-category/wallets/                       index: the main category
@@ -12152,6 +12158,8 @@ function my_only_free_shipping( $rates ) {
 
 <h2>Pin code serviceability</h2>
 <p>Zones limited to specific pin codes stop orders to areas you can't serve, but WooCommerce's default "no shipping options" message at checkout is unfriendly and comes late. A checker on the product page tells shoppers about delivery and COD before they reach checkout, using your own pin code list or your courier's live serviceability data; see <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checkers for WooCommerce</a>.</p>
+
+<p>Setting up a Shopify store instead? <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> covers profiles, zones, pin code checks, courier apps, NDR and RTO there.</p>
 
 <h2>Couriers and shipping aggregators</h2>
 <p>Aggregators let you ship with several couriers from one dashboard; a direct courier account can suit stores with steady volumes. At the time of writing, Shiprocket, Delhivery and iThink Logistics all offer ways to connect a WooCommerce store, through a plugin or a channel connection in their own dashboard. Depending on the provider, an integration can:</p>
@@ -25619,6 +25627,8 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   <li>Show the GSTIN on the invoice, the admin order screen and the order emails; see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce order emails</a>.</li>
 </ul>
 
+<p>On Shopify the tax ideas are the same but the tools differ; see <a href="/blog/shopify-gst-invoices-india/">GST on Shopify for Indian sellers</a> for tax settings, HSN codes and invoice apps.</p>
+
 <h2>Step 6: Generate GST invoices</h2>
 <p>WooCommerce doesn't create tax invoices on its own. PDF Invoices &amp; Packing Slips for WooCommerce is a widely used free plugin that attaches a PDF invoice to order emails and handles numbering, and there are India-specific plugins that add HSN fields and CGST, SGST and IGST columns. Whichever you choose, check that it's actively maintained and compatible with WooCommerce's newer order storage (HPOS).</p>
 <p>A GST invoice typically needs, subject to your CA's confirmation:</p>
@@ -25686,6 +25696,8 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <p>To offer cash on delivery in WooCommerce, enable it under <strong>WooCommerce &gt; Settings &gt; Payments &gt; Cash on delivery</strong> and choose which shipping methods allow it. Then protect your margin: limit COD by order value, pin code or product, show any COD fee before the order is placed, confirm COD orders by WhatsApp, SMS or a call before you dispatch, and nudge buyers towards paying online with a small incentive or a part payment. Finally, track refused deliveries (return to origin, or RTO) by product and pin code, and tighten the rules where losses concentrate.</p>
 <p>Many Indian shoppers still want COD, especially from a store they haven't bought from before, but every refused parcel costs you shipping both ways. In my <a href="/woocommerce-developer/">WooCommerce development</a> work, COD rules are set up to match how you actually operate: limited by order value or pin code, with any fee shown clearly at checkout and COD orders confirmed by phone or WhatsApp before dispatch.</p>
 <p>This guide covers COD only. Shipping zones, rates and courier integrations are in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+
+<p>The costs below are the same on any platform; if you sell on Shopify, <a href="/blog/shopify-cash-on-delivery-india/">cash on delivery on Shopify</a> shows how to set up COD, fees and order confirmation there.</p>
 
 <h2>What COD really costs</h2>
 <table>
@@ -42000,6 +42012,8 @@ add_action( 'after_setup_theme', function () {
   <li><strong>Recurring payments,</strong> if you sell subscriptions or memberships</li>
 </ul>
 <p>Also look at the payment screen itself. Is it a popup on your site or a redirect to the gateway's page? Is it clean and quick on a small phone? A clumsy payment step loses orders you had otherwise already won.</p>
+
+<p>On Shopify, a separate Shopify fee may apply on top of the provider fee when you use an outside gateway; <a href="/blog/shopify-payment-gateways-india/">payment gateways on Shopify in India</a> explains how the two add up.</p>
 
 <h2>Fees and pricing structure</h2>
 <p>Fees change, and published rates are not always what you'll be offered, so I won't quote numbers here. Instead, ask each provider these questions and compare the answers side by side:</p>
@@ -63701,6 +63715,8 @@ done</code></pre>
 </ul>
 <p>When a theme carries years of undocumented edits and every update feels risky, it can work out cheaper to start from a clean copy of the current version and rebuild the customisations properly. That is a judgement made after reading the code, not before.</p>
 
+<p>Before choosing someone, read <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a> for the questions to ask, how access should work and the red flags to avoid.</p>
+
 <h2>When to hire a developer</h2>
 <p>You don't need a developer to change images, text, colours or the order of sections; the editor exists for that. It's worth bringing one in when:</p>
 <ul>
@@ -63926,6 +63942,842 @@ done</code></pre>
 <p>It is tempting, but doing both at once makes problems harder to trace. Where possible, move first with a theme close to your current look, then redesign once traffic has settled.</p>
 
 <p>If you want the move planned and carried out for you, with every product, customer and URL accounted for, see my <a href="/shopify-developer/">Shopify developer service</a>. I will review your WooCommerce store, list what moves and what needs replacing, and send a free review and a fixed quote.</p>
+`,
+  },
+  {
+    slug: 'shopify-store-cost-india',
+    seoTitle: 'What a Shopify Store Costs in India: The Cost Drivers',
+    title: 'What a Shopify Store Costs in India: Plan, Apps, Payment Fees, Theme, Setup and Running Costs Explained',
+    description: 'What a Shopify store in India really costs: the plan, apps, gateway and Shopify fees, theme, setup, content and running costs, compared honestly with WooCommerce.',
+    date: '2026-10-27',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'woocommerce-developer'],
+    body: `
+<p>A Shopify store in India costs a monthly plan fee, whatever paid apps you add, a payment provider charge on every online order, possibly a Shopify fee on top when you use an outside gateway, and one-off spending on a theme, setup work and content. There is no single price, because your plan, your apps and your order volume move the total much more than the design does. The useful question is which of these costs apply to your store, and which of them grow as you sell more.</p>
+
+<p>This guide goes through each cost driver so you can build a budget before you sign up. I don't quote Shopify's prices because they change and vary by country, so keep Shopify's current pricing page for India open alongside this. If you would like someone to look at your plans and put a fixed figure on the setup work, my <a href="/shopify-developer/">Shopify store setup and customisation service</a> opens every job with a free review, then a fixed quote.</p>
+
+<p>Still choosing a platform? <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> compares the two on payments, GST and shipping. This article looks only at money.</p>
+
+<h2>Shopify costs at a glance</h2>
+<p>Every Shopify budget is made of the same handful of parts. Some are paid once, some every month, and some on every order.</p>
+<table>
+<thead><tr><th>Cost</th><th>How it is charged</th><th>What pushes it up</th></tr></thead>
+<tbody>
+<tr><td>Shopify plan</td><td>Monthly or yearly</td><td>Needing more staff accounts, deeper reports or lower fees from a higher tier</td></tr>
+<tr><td>Apps</td><td>Mostly monthly; some per order</td><td>Every feature the theme and Shopify do not already cover</td></tr>
+<tr><td>Payment provider charges</td><td>Per prepaid order</td><td>Order volume, the mix of UPI, cards and international cards</td></tr>
+<tr><td>Shopify fee on outside gateways</td><td>Per order, at the time of writing</td><td>Your plan tier and order value; check the current rules</td></tr>
+<tr><td>Theme</td><td>Free, or a one-off purchase</td><td>Choosing a paid theme for features you may not use</td></tr>
+<tr><td>Domain and business email</td><td>Yearly or monthly</td><td>Number of mailboxes and the email provider you pick</td></tr>
+<tr><td>Setup and development</td><td>One-off, then occasional</td><td>Catalogue size, custom sections, migrations, integrations</td></tr>
+<tr><td>Photos and product content</td><td>One-off, then with each new product</td><td>Number of products and whether you shoot them yourself</td></tr>
+<tr><td>Shipping, packaging and returns</td><td>Per order</td><td>Weight, remote pin codes and parcels refused on delivery</td></tr>
+</tbody>
+</table>
+<p>The plan, apps and payment charges recur for as long as the store is open. The theme, setup and first round of content are paid once. The last row is not a Shopify cost at all, but for a store sending out many parcels it can outweigh the platform bill, so it belongs in the same budget.</p>
+
+<h2>The monthly bill: plan, apps and payment charges</h2>
+<h3>The plan</h3>
+<p>Shopify sells its plans in tiers. At the time of writing, even the entry-level plans run a complete online store, and higher tiers add staff accounts, more detailed reports and, in some cases, lower fees. Check whether yearly billing is offered at a lower rate than monthly, and whether the plan names and features shown to you match what you read elsewhere, since Shopify adjusts both from time to time.</p>
+<p>Most new stores do not need a higher tier on day one. Upgrade when a feature you actually need sits on that tier, or when the fee arithmetic shows the bigger plan has become cheaper at your order volume.</p>
+<h3>Apps</h3>
+<p>Apps are where Shopify budgets most often drift. A typical Indian store looks at apps for GST invoices, cash on delivery controls, reviews, extra product filters, WhatsApp order updates, courier bookings and back-in-stock alerts. Pricing comes in three shapes: free with limits, a flat monthly charge, or a charge that rises with the number of orders. The third kind gets dearer exactly as the store succeeds, so read the pricing tiers before installing.</p>
+<p>Apps also cost speed, because many load scripts on every page. To audit what each one loads, see <a href="/blog/shopify-store-slow-fix/">why a Shopify store is slow and how to fix it</a>.</p>
+<h3>Payment provider charges and the Shopify fee</h3>
+<p>Shopify Payments is, at the time of writing, unavailable to businesses based in India, so stores here connect an outside payment provider. That provider charges a fee per transaction, which usually differs between UPI, domestic cards, net banking, wallets and international cards. Its fees typically attract GST as well; your CA can tell you how to account for that.</p>
+<p>Depending on your plan, Shopify may also charge its own transaction fee on orders paid through an outside provider. This is the cost most often missed when comparing plans, because it scales with sales. Check Shopify's current terms for India, and read <a href="/blog/shopify-payment-gateways-india/">payment gateways on Shopify in India</a> for how the two fees stack up.</p>
+
+<h2>One-off costs: theme, setup and content</h2>
+<h3>The theme</h3>
+<p>Shopify's own free themes are maintained, quick and perfectly good for a small catalogue. A paid theme from the Theme Store is a one-off purchase, and theme licences are normally for a single store, so check the seller's terms. The hidden cost of a feature-heavy paid theme is not the price; it is the code for features you never switch on.</p>
+<h3>Setup and development work</h3>
+<p>Developer time depends on the job rather than on Shopify. The smallest setup is a free theme, a clean product spreadsheet and standard payments and shipping. Work grows with:</p>
+<ul>
+<li>a large catalogue, many variants, or product data that needs cleaning before import;</li>
+<li>custom sections or a design that the theme editor cannot produce, covered in <a href="/blog/shopify-theme-customisation/">Shopify theme customisation</a>;</li>
+<li>moving from another platform, with customers, orders and redirects, as in <a href="/blog/migrate-woocommerce-to-shopify/">moving from WooCommerce to Shopify</a>;</li>
+<li>connecting accounting software, an ERP, marketplaces or a warehouse;</li>
+<li>configuring and testing COD controls, invoice apps and courier apps.</li>
+</ul>
+<h3>Photos and product content</h3>
+<p>Consistent photos, your own product descriptions, collection introductions and plain-language policy pages take time or money, and they are usually underestimated. They also do more for sales and search visibility than most apps do.</p>
+
+<h2>Domain, email and other running costs</h2>
+<ul>
+<li><strong>Domain.</strong> A yearly renewal. You can buy one through Shopify, but keeping an existing domain with its current registrar works fine.</li>
+<li><strong>Business email.</strong> At the time of writing, Shopify offers email forwarding rather than full mailboxes, so proper inboxes come from a separate email provider with its own charge.</li>
+<li><strong>Marketing email.</strong> Shopify's own email marketing tool has had a free allowance with charges above it; dedicated email apps price by contacts or sends.</li>
+<li><strong>Ongoing changes.</strong> New sections for a campaign, a seasonal banner, a new app to configure, or a theme update that needs custom code carried across.</li>
+<li><strong>Shipping and returns.</strong> Courier charges, packaging, and the two-way cost of refused cash on delivery parcels.</li>
+</ul>
+<p>The guide to <a href="/blog/hidden-website-costs/">hidden website costs</a> lists more of the items that appear only after launch.</p>
+
+<h2>How the cost structure differs from WooCommerce</h2>
+<p>Neither platform is cheaper for every store. They spend your money in different places.</p>
+<table>
+<thead><tr><th>Cost area</th><th>Shopify</th><th>WooCommerce</th></tr></thead>
+<tbody>
+<tr><td>Hosting and security</td><td>Included in the plan</td><td>Paid separately, with updates and security your job or a maintenance plan&#39;s</td></tr>
+<tr><td>Platform fee</td><td>A monthly or yearly plan</td><td>None for the core plugin; hosting takes its place</td></tr>
+<tr><td>Per-order fees</td><td>Gateway charges, plus a possible Shopify fee on outside gateways</td><td>Gateway charges only</td></tr>
+<tr><td>Extra features</td><td>Apps, often billed monthly</td><td>Plugins; many free, premium ones usually on yearly licences</td></tr>
+<tr><td>Upkeep</td><td>Shopify updates the platform; you look after apps and theme</td><td>WordPress, plugin and theme updates, backups and monitoring</td></tr>
+<tr><td>Custom work</td><td>Limited in places, such as checkout, by what your plan allows</td><td>Almost anything, at development cost</td></tr>
+</tbody>
+</table>
+<p>In short, Shopify's costs are predictable and rise with sales and app count, while WooCommerce has lower platform costs but asks you to pay for hosting and upkeep in time or money. <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> covers the other side in detail, and <a href="/blog/ecommerce-website-cost-india/">e-commerce website costs in India</a> looks at what changes the build cost on either platform.</p>
+
+<h2>A checklist for budgeting your Shopify store</h2>
+<ol>
+<li>Estimate monthly orders and average order value for the first year, and the share you expect to be prepaid rather than COD.</li>
+<li>Pick a plan for the features you need now, and note the fee on outside gateways at that tier from Shopify's current pricing.</li>
+<li>Get the payment provider's current rates for UPI, cards and international cards, and ask about settlement time and GST on fees.</li>
+<li>List only the apps you know you need, with each one's pricing model: free tier, flat fee or per order.</li>
+<li>Decide on a free or paid theme from a written list of features, not from the demo.</li>
+<li>Get a fixed quote for setup with a written scope, so extras are visible before they are billed.</li>
+<li>Budget for photos, descriptions and policy pages.</li>
+<li>Add the domain, mailboxes and any marketing email tool.</li>
+<li>Add courier charges, packaging and an allowance for refused COD parcels.</li>
+<li>Put a reminder in the calendar to review apps and the plan every quarter.</li>
+</ol>
+
+<h2>FAQs</h2>
+<h3>Is Shopify cheaper than WooCommerce in India?</h3>
+<p>Not automatically. Shopify bundles hosting and security into the plan but adds apps and possibly its own fee on outside gateways. WooCommerce has no platform fee but needs hosting, upkeep and sometimes paid plugins. Work out both from your expected orders rather than from headline prices.</p>
+<h3>Do I pay Shopify a fee if I use an Indian payment gateway?</h3>
+<p>At the time of writing, Shopify may charge a transaction fee on orders paid through a third-party provider, at a rate that depends on your plan. It sits on top of the gateway's own fee. Check Shopify's current pricing for India, as this has changed before.</p>
+<h3>Can I start on a lower plan and upgrade later?</h3>
+<p>Yes. Products, orders and customers stay where they are when you change plan. Start with what you need and upgrade when a feature or the fee arithmetic justifies it.</p>
+<h3>Do I need paid apps to launch?</h3>
+<p>Usually only a few. A GST invoice app is common for registered sellers, and a courier app saves manual work. Reviews, upsells and loyalty apps can wait until you have orders to judge them by.</p>
+<h3>What does it cost to have a developer set up the store?</h3>
+<p>It depends on the catalogue, the theme work and the integrations, so I don't publish a figure. Send your requirements; you get a free review back, then a fixed quote with the scope in writing.</p>
+
+<p>If you want a clear budget before you commit, send me a short note on what you sell, roughly how many products you have and how customers will pay. Through my <a href="/shopify-developer/">Shopify development service</a> you get a free review of your plans and a fixed quote for the setup, with the store, domain and every subscription in your own name.</p>
+`,
+  },
+  {
+    slug: 'shopify-seo-checklist',
+    seoTitle: 'Shopify SEO Checklist: A Practical Guide for Store Owners',
+    title: 'Shopify SEO Checklist: Titles, Product URLs, Canonicals, Filters, Structured Data, Sitemaps and Search Console',
+    description: 'A practical Shopify SEO checklist: titles and meta, product and collection URLs, canonicals, filters and tags, alt text, structured data, sitemaps, Search Console.',
+    date: '2026-10-27',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-seo-services'],
+    body: `
+<p>Shopify handles a lot of technical SEO for you: it creates a sitemap, adds canonical tags and serves pages over HTTPS. What it cannot do is write your titles, fix the way your theme links to products, stop thin tag and filter pages from piling up, or check that the structured data matches what is on the page. This checklist covers those jobs in the order I work through them on a store.</p>
+
+<p>Most of it you can do yourself from the Shopify admin. A few items involve the theme code, and those are the ones I usually handle through my <a href="/shopify-developer/">Shopify development service</a> on a duplicate theme, so nothing changes on the live store until it has been checked.</p>
+
+<h2>Titles, meta descriptions and handles</h2>
+<p>Every product, collection, page and blog post has a search engine listing section near the bottom of its edit screen. Shopify fills it automatically from the name and the first lines of the description, which is rarely what you want in a search result.</p>
+<ul>
+<li><strong>Title.</strong> Lead with what the shopper searches for, such as the product type and the detail that sets it apart, then the brand. Many themes add the store name to the end of every title automatically, so check the page source before adding it again by hand.</li>
+<li><strong>Meta description.</strong> One or two sentences on what makes this product or range worth clicking: material, use, delivery or returns. Google may rewrite it, but a good one is still used often.</li>
+<li><strong>Handle.</strong> The last part of the URL. Keep it short, lowercase and descriptive. When you change a handle, Shopify offers to create a redirect from the old address; leave that box ticked.</li>
+</ul>
+<p>Start with the pages that earn money: collections, then best-selling products, then the home page. The guide to <a href="/blog/write-meta-titles-descriptions/">writing meta titles and descriptions</a> has more examples.</p>
+
+<h2>Product URLs, collection paths and canonicals</h2>
+<p>Shopify uses fixed paths: /products/ for products, /collections/ for collections, /pages/ for pages, and /blogs/ plus the blog handle for posts. You cannot remove these prefixes, and you do not need to; they do not hold a store back in search.</p>
+<p>The part that does need attention is the second address a product can have. When a shopper reaches a product from a collection, many themes link to a path like /collections/sarees/products/blue-silk-saree instead of /products/blue-silk-saree. Both load the same page. Shopify adds a canonical tag pointing to the short /products/ address, which tells search engines which one to index, but internal links still send crawlers and link signals to the long version.</p>
+<p>The cleaner fix is in the theme: the product card snippet often builds its link with a filter that adds the collection path. Removing that so every grid links to the plain product URL is a small code change on a duplicate theme. Afterwards, view a collection page, hover over a few products and confirm the links no longer contain /collections/.</p>
+<table>
+<thead><tr><th>URL pattern</th><th>What it is</th><th>What to do</th></tr></thead>
+<tbody>
+<tr><td>/products/item</td><td>The main product address</td><td>Link to this everywhere</td></tr>
+<tr><td>/collections/name/products/item</td><td>The same product reached through a collection</td><td>Canonical points to /products/; change theme links to avoid it</td></tr>
+<tr><td>/collections/all</td><td>An automatic list of every product</td><td>Leave out of menus unless it is a real page you want ranked</td></tr>
+<tr><td>/collections/name?filter...&amp;sort_by=...</td><td>Filtered or sorted views</td><td>Do not link to them in menus; see the next section</td></tr>
+<tr><td>/collections/name/tag-name</td><td>A collection narrowed by a product tag</td><td>Useful only if it has its own purpose; otherwise avoid linking</td></tr>
+</tbody>
+</table>
+<p>For how canonicals work in general, read <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</p>
+
+<h2>Filters, tags and thin collection pages</h2>
+<p>Storefront filters for size, colour, price and availability create URLs with parameters. At the time of writing, Shopify's default robots.txt already asks crawlers to skip many sorted and filtered variations, and the canonical on a filtered page usually points back to the unfiltered collection. That is a sensible default, so most stores need to do very little here except avoid linking to filtered URLs from menus or banners.</p>
+<p>Tags are a different matter. Older themes and some apps turn tags into browsable pages such as /collections/kurtas/cotton. If you have hundreds of tags, that can mean hundreds of near-identical pages with no introduction. Two rules keep this under control:</p>
+<ul>
+<li>If a combination deserves to rank, such as cotton kurtas, make it a proper collection with its own title, description and introduction, and link to it from the menu.</li>
+<li>Use tags for internal organisation and filtering, not as a way to create landing pages.</li>
+</ul>
+<p>Every collection you do want found should open with a short paragraph about the range, written for shoppers. An empty grid with a heading gives a search engine very little to go on.</p>
+
+<h2>Images, structured data and the blog</h2>
+<h3>Image alt text</h3>
+<p>Alt text is set on each image in the product's media area. Describe what the photo shows, including the detail that differs between variants, such as the colour or the angle. It helps shoppers using screen readers and gives image search something to read. The <a href="/blog/image-seo-guide/">image SEO guide</a> covers file names and sizes too.</p>
+<h3>Structured data from the theme</h3>
+<p>Most current themes output product structured data: name, image, price, currency, availability and sometimes brand and SKU. Problems I see regularly are a missing brand, availability that does not change when a variant sells out, and two sets of product data on one page because a reviews or SEO app added its own on top of the theme's. Run a product page through Google's Rich Results Test and the Schema Markup Validator, and fix gaps in the theme or switch off the duplicate in the app. <a href="/blog/test-structured-data-rich-results/">How to test structured data</a> walks through both tools.</p>
+<h3>The blog</h3>
+<p>Every store gets a blog, usually at /blogs/news/. Shopify's blog is basic but sound: posts have their own search listing fields, and you can create a second blog with a better handle if news does not describe it. Write posts that answer the questions shoppers ask before buying, such as how to measure for a size, how to care for a fabric or how to choose between two ranges, and link each one to the collection it relates to.</p>
+
+<h2>Sitemaps, robots.txt and Search Console</h2>
+<h3>The sitemap</h3>
+<p>Shopify generates a sitemap automatically at /sitemap.xml, split into separate files for products, collections, pages and blog posts. You cannot edit it directly. Products that are not available on the online store sales channel are left out. To keep a particular page out of search and the sitemap, Shopify has supported a hidden SEO metafield for that purpose; check the current help pages for how to set it, as the method has changed over time.</p>
+<h3>robots.txt</h3>
+<p>Shopify serves a default robots.txt that suits most stores. At the time of writing, you can customise it by adding a robots.txt.liquid template to the theme, but Shopify treats that as an unsupported change and stops updating your file automatically. Only do it for a specific reason, keep the default rules in place, and test the result. <a href="/blog/robots-txt-explained/">Robots.txt explained</a> covers the syntax.</p>
+<h3>Google Search Console</h3>
+<ol>
+<li>In Search Console, add your domain as a Domain property and prove ownership with a TXT record at your domain's DNS. This survives theme changes, unlike a verification tag pasted into the theme.</li>
+<li>Submit /sitemap.xml under Sitemaps.</li>
+<li>Remove the storefront password before launch; while it is on, search engines cannot read the store.</li>
+<li>After a fortnight, check the page indexing report and the queries each collection appears for.</li>
+</ol>
+
+<h2>The Shopify SEO checklist</h2>
+<ol>
+<li>Search listing title, description and handle edited on every collection, top product and main page.</li>
+<li>Store name added to titles only once, by the theme or by you.</li>
+<li>Product grids link to /products/ addresses, not /collections/.../products/.</li>
+<li>Menus link to real collections, never to filtered, sorted or tag URLs.</li>
+<li>Each collection that should rank has an introduction written for shoppers.</li>
+<li>Your own product descriptions in place of supplier text, with sizes, materials and delivery details.</li>
+<li>Alt text on every product image, describing the variant shown.</li>
+<li>Product structured data tested, with no duplicate set from an app.</li>
+<li>A redirect created whenever a handle changes or a product is deleted.</li>
+<li>Search Console verified by DNS, sitemap submitted, indexing checked.</li>
+<li>robots.txt left at the default unless there is a clear reason to change it.</li>
+<li>Blog posts answer pre-purchase questions and link to collections.</li>
+</ol>
+
+<h2>FAQs</h2>
+<h3>Is Shopify good for SEO?</h3>
+<p>Yes, for most stores. It handles hosting, HTTPS, sitemaps and canonicals well. The fixed URL prefixes and limited robots.txt control matter less than people fear; titles, collection content, product descriptions and internal links matter far more.</p>
+<h3>Can I remove /products/ or /collections/ from Shopify URLs?</h3>
+<p>No. Those paths are fixed by Shopify. You control the handle that follows them, which is the part worth getting right.</p>
+<h3>Do I need an SEO app on Shopify?</h3>
+<p>Not necessarily. Titles, descriptions, handles, alt text and redirects can all be managed in the admin. An app can help with bulk editing, but check that it does not add a second set of structured data or extra scripts.</p>
+<h3>What happens to SEO when I delete a product?</h3>
+<p>The URL starts returning a not-found page. If the product had visitors or links, create a redirect to the closest replacement or its collection in the URL redirects area of the admin.</p>
+<h3>Will changing my theme affect SEO?</h3>
+<p>It can, through titles, structured data, headings and links that live in the theme. See <a href="/blog/shopify-theme-change-without-losing-seo/">changing your Shopify theme without losing SEO</a>.</p>
+
+<p>If you would rather have a specialist go through this list on your store, including the theme-level fixes for product links, structured data and titles, my <a href="/shopify-developer/">Shopify SEO and customisation work</a> includes a free review of your store first, then a fixed quote.</p>
+`,
+  },
+  {
+    slug: 'shopify-cash-on-delivery-india',
+    seoTitle: 'Cash on Delivery on Shopify in India: Setup and RTO Control',
+    title: 'Cash on Delivery on Shopify in India: Setting It Up, COD Fees, Order Confirmation, RTO and Partial Prepaid',
+    description: 'How to offer cash on delivery on Shopify in India: enabling COD, fees and limits via apps, confirming orders, and cutting RTO with pin code checks and part prepaid.',
+    date: '2026-10-27',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'woocommerce-developer'],
+    body: `
+<p>You switch on cash on delivery in Shopify by adding it as a manual payment method in the payments settings; each COD order then arrives unpaid and is marked as paid once the courier passes the cash on to you. Charging a COD fee, limiting COD by order value or pin code, or confirming orders over WhatsApp needs an app, because Shopify does not do those things by itself. The bigger job is keeping refused parcels, known as RTO, low enough that COD stays profitable.</p>
+
+<p>Many Indian shoppers still prefer to pay on delivery, especially for a first order from an unfamiliar brand, so most stores offer it in some form. This guide covers the setup and the controls around it. If you want it configured and tested for you, it is part of my <a href="/shopify-developer/">Shopify store setup service</a>, along with payments, shipping and invoices. For the wider launch steps, see <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a>.</p>
+
+<h2>How COD works in Shopify</h2>
+<p>Shopify treats cash on delivery as a manual payment method, in the same family as bank transfer. That has a few practical effects worth understanding before you switch it on:</p>
+<ul>
+<li>The order is created straight away with a payment status of pending, and stock is reduced as usual.</li>
+<li>No money moves at checkout, so there is nothing for a payment provider to approve or decline.</li>
+<li>Someone has to mark the order as paid after the courier or aggregator remits the cash, which often happens days after delivery.</li>
+<li>Your sales reports count the order as soon as it is placed, so refused parcels inflate the figures until they are cancelled or refunded.</li>
+</ul>
+<p>None of this is a problem once a routine is in place. It only causes trouble when nobody owns the job of reconciling COD remittances against orders.</p>
+
+<h2>Setting up COD step by step</h2>
+<ol>
+<li>In the admin, open the payments settings and find the manual payment methods section.</li>
+<li>Add Cash on Delivery. Shopify lets you write a short note shown to the customer after checkout; use it to say what happens next, for example that you may call or message to confirm the order.</li>
+<li>Check how the checkout lists COD alongside your online payment provider. Prepaid options should come first if you want to encourage them.</li>
+<li>Place a test COD order on a phone and confirm the order email, the invoice and the courier app all handle it as unpaid.</li>
+<li>Agree who marks COD orders as paid and how often, using the remittance report from your courier or aggregator.</li>
+</ol>
+<p>At the time of writing, this built-in COD is simply on or off for the whole store. Everything finer than that comes from apps or from a checkout tool provided by a logistics or payments company.</p>
+
+<h2>COD fees, limits and pin code rules</h2>
+<p>Three controls make most of the difference to COD costs. Shopify's checkout can be customised by apps through its extension system, but what is allowed depends on your plan and changes as Shopify updates checkout, so treat the app routes below as options to verify rather than guarantees.</p>
+<table>
+<thead><tr><th>Control</th><th>What it does</th><th>How it is usually done on Shopify</th></tr></thead>
+<tbody>
+<tr><td>COD fee</td><td>Adds a charge for paying on delivery</td><td>An app adds the fee as a line item or adjusts the order; check how it shows on the GST invoice</td></tr>
+<tr><td>Order value limit</td><td>Hides COD above or below a set amount</td><td>A payment customisation app that hides the COD option under conditions</td></tr>
+<tr><td>Pin code rules</td><td>Offers COD only where your courier collects cash</td><td>A pin code app or the courier&#39;s own app checking a serviceability list</td></tr>
+<tr><td>Customer rules</td><td>Withholds COD from addresses with past refusals</td><td>Some COD and checkout apps keep a history; check how the data is stored</td></tr>
+</tbody>
+</table>
+<p>A COD fee is the bluntest tool. It discourages casual orders but also puts off genuine first-time buyers, so many stores prefer to offer a small saving for prepaid orders instead. Either way, the fee or discount has to appear correctly on the invoice, which is covered in <a href="/blog/shopify-gst-invoices-india/">GST on Shopify</a>.</p>
+<p>Pin code rules matter because couriers collect cash in fewer places than they deliver. If a shopper can choose COD for an address your courier cannot collect from, the order fails before it starts. <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> explains how serviceability lists work.</p>
+
+<h2>RTO: why COD parcels come back</h2>
+<p>Return to origin happens when a parcel cannot be delivered and goes back to you. On a COD order you usually pay for the outward journey and the return, collect nothing, and may get the product back damaged. The common causes are:</p>
+<ul>
+<li>impulse orders the shopper has forgotten or regretted by the time the parcel arrives;</li>
+<li>wrong or incomplete addresses and phone numbers;</li>
+<li>the customer not having cash ready, or not being home;</li>
+<li>long delivery times that give the shopper time to buy elsewhere;</li>
+<li>fake or prank orders, sometimes several from the same number.</li>
+</ul>
+<p>Most of these are caught by checking the order before it ships, keeping delivery quick and making it easy to prepay. Your courier's non-delivery reports also give you a short window to fix an address or arrange a second attempt, which is covered in the shipping guide.</p>
+
+<h2>Confirming orders before you ship</h2>
+<p>A confirmation step costs a few minutes per order and saves the price of a parcel going both ways. Pick the lightest method that works for your volume:</p>
+<ul>
+<li><strong>A phone call.</strong> Fine for a handful of orders a day, and it catches wrong addresses quickly.</li>
+<li><strong>A WhatsApp message with confirm and cancel buttons.</strong> Usually sent by an app using the WhatsApp Business Platform. Orders left unanswered after a set time can be held or cancelled. Check the app's message charges and opt-in rules.</li>
+<li><strong>An OTP at checkout.</strong> Some checkout apps verify the phone number with a one-time code before a COD order is accepted, which stops most fake numbers.</li>
+<li><strong>An order tag.</strong> Whichever method you use, tag confirmed orders so staff only pack those.</li>
+</ul>
+<p>Keep the message plain: the items, the total payable in cash, the delivery address and two buttons. A message that looks like marketing is easy to ignore. For more on order messages, see <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">order notifications on SMS and WhatsApp</a>; it is written for WooCommerce, but the message design is the same.</p>
+
+<h2>Partial prepaid and nudging shoppers to prepay</h2>
+<p>Partial prepaid means the customer pays a small part of the order online at checkout and the rest in cash on delivery. Someone who has already paid something is far less likely to refuse the parcel. On Shopify this needs an app or a third-party checkout that can split the payment; check how the split shows in the order, in your gateway reports and on the invoice before you rely on it.</p>
+<p>Gentler nudges also help:</p>
+<ul>
+<li>show UPI as the first payment option, since it is quick on a phone;</li>
+<li>offer a small prepaid discount or free shipping on prepaid orders only;</li>
+<li>make the returns policy clear, because uncertainty about returns pushes people towards COD;</li>
+<li>for a COD order, send a payment link after confirmation as an optional way to pay now.</li>
+</ul>
+<p>The <a href="/blog/woocommerce-cash-on-delivery-india/">WooCommerce guide to COD and RTO</a> goes deeper on the cost side, and the reasoning applies equally to Shopify.</p>
+
+<h2>A COD checklist for Shopify stores</h2>
+<ol>
+<li>COD added as a manual payment method, with a customer note explaining confirmation.</li>
+<li>Prepaid options shown first, with any prepaid incentive visible before checkout.</li>
+<li>COD limited by order value and to pin codes where your courier collects cash.</li>
+<li>Any COD fee or prepaid discount shown correctly on the invoice.</li>
+<li>Every COD order confirmed by call, WhatsApp or OTP before packing.</li>
+<li>Unconfirmed orders held, then cancelled after a set time.</li>
+<li>Non-delivery reports checked daily and acted on within the courier's window.</li>
+<li>COD remittances matched to orders, and orders marked as paid, on a fixed day each week.</li>
+<li>Refused parcels cancelled in Shopify so stock and reports stay accurate.</li>
+<li>Your RTO rate reviewed monthly by pin code and product, and the rules adjusted.</li>
+</ol>
+
+<h2>FAQs</h2>
+<h3>Does Shopify support cash on delivery in India?</h3>
+<p>Yes. COD is added as a manual payment method in the payments settings. Orders arrive with payment pending and are marked as paid once the cash reaches you.</p>
+<h3>Can I charge a COD fee on Shopify?</h3>
+<p>Not with the built-in COD option at the time of writing. Apps can add a fee, usually as a line item. Check what your plan allows at checkout and how the fee appears on the GST invoice.</p>
+<h3>Can I restrict COD to certain pin codes?</h3>
+<p>Yes, through an app or a courier or checkout app that checks the address against a serviceability list. Shopify's own setting is simply on or off.</p>
+<h3>How do refunds work for COD orders?</h3>
+<p>There is no card or UPI payment to reverse, so you refund by bank transfer or UPI to the customer and record the refund in Shopify. Say how this works in your refund policy; <a href="/blog/woocommerce-returns-refunds-policy/">writing a returns and refunds policy</a> covers the wording.</p>
+<h3>Should I stop offering COD to cut RTO?</h3>
+<p>Usually not completely, because many shoppers will not buy without it. Limiting where and when it is offered, confirming orders and rewarding prepaid tends to work better than switching it off.</p>
+
+<p>If you would like COD set up with the right limits, a confirmation step and invoices that handle fees correctly, my <a href="/shopify-developer/">Shopify development service</a> covers configuration and testing on a phone before launch. Share the store address and I will come back with a free review and a fixed quote.</p>
+`,
+  },
+  {
+    slug: 'shopify-gst-invoices-india',
+    seoTitle: 'GST on Shopify in India: Tax Settings, HSN and Invoices',
+    title: 'GST on Shopify for Indian Sellers: Tax Settings, HSN Codes, GST Invoice Apps and B2B GSTIN Capture',
+    description: 'Set up GST on Shopify in India: tax settings, prices inclusive of tax, HSN codes, choosing a GST invoice app, capturing B2B GSTIN and what to confirm with your CA.',
+    date: '2026-10-27',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'woocommerce-developer'],
+    body: `
+<p>To handle GST on Shopify, you set India's tax options in the taxes and duties settings, decide whether prices include tax, add overrides where products carry different rates, store an HSN code on each product and install a GST invoice app, because Shopify does not issue a GST-compliant invoice by itself at the time of writing. Business buyers need a way to give their GSTIN at checkout. Your CA should confirm the rates and invoice format before you take real orders.</p>
+
+<p>This guide covers the Shopify side of that work: where the settings are, what to check in an invoice app and where the common mistakes happen. It is not tax advice, and the rules change, so treat every tax point here as something to confirm. If you want the settings and invoice app configured and tested, that is part of my <a href="/shopify-developer/">Shopify store setup service</a>. The same ideas on WooCommerce are explained in the <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup guide</a>, which goes further into CGST, SGST and IGST.</p>
+
+<h2>What to settle with your CA first</h2>
+<p>Shopify can only apply the rules you give it. Before touching the settings, get these answers in writing:</p>
+<ul>
+<li>the GST rate for each product type you sell, and whether any rate depends on the selling price;</li>
+<li>the HSN code for each product type, and how many digits your invoices need to show;</li>
+<li>whether prices on the store should include GST, which is what most Indian shoppers expect;</li>
+<li>how shipping charges, COD fees and discounts should be taxed;</li>
+<li>how in-state and out-of-state sales should appear on the invoice;</li>
+<li>the invoice number format, and whether it restarts each financial year;</li>
+<li>whether e-invoicing applies to your business-to-business sales, given your turnover.</li>
+</ul>
+<p>Bring the answers to whoever sets up the store; the <a href="/blog/shopify-store-setup-india/">Shopify setup guide for India</a> shows where tax fits among the other launch tasks. Most GST problems on new stores come from guessing these points rather than from Shopify itself.</p>
+
+<h2>Shopify tax settings for India</h2>
+<p>The tax options sit in the taxes and duties area of the settings, with India listed under the regions you sell to. The exact screens change as Shopify updates the admin, so use these as the things to look for rather than a click path:</p>
+<ol>
+<li><strong>Collect tax in India.</strong> Make sure tax collection is switched on for India and that your business details are correct.</li>
+<li><strong>Prices include tax.</strong> Turn on the option that treats your listed prices as tax-inclusive if that is what your CA advised, so a product listed at a round figure costs exactly that at checkout.</li>
+<li><strong>Default rate.</strong> Shopify may pre-fill a rate for India. Treat it as a placeholder and set it to the rate that applies to most of your catalogue.</li>
+<li><strong>Overrides.</strong> Where some products carry a different rate, create a collection for them and add a tax override for that collection.</li>
+<li><strong>Shipping.</strong> Decide, with your CA, whether tax is charged on shipping, and set the matching option. How the shipping rates themselves are built is covered in <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a>.</li>
+<li><strong>Per product.</strong> Each product has a setting for whether tax is charged on it. Check that exempt items are marked correctly and that nothing else is.</li>
+</ol>
+<p>Rate-by-price rules, where a product falls into one rate below a price and another above it, are awkward to express in Shopify's settings. Stores often handle them with separate collections and overrides, or with an app. Check the result at checkout with real prices on both sides of the boundary.</p>
+
+<h2>HSN codes on products</h2>
+<p>Shopify products have a field for a harmonised system code in the shipping and customs section. It was designed for international shipping, and the number of digits it expects may not match what your Indian invoices need. Many invoice apps let you enter HSN codes in their own settings or read them from a product metafield instead.</p>
+<p>A metafield is usually the tidiest choice: you create a field called HSN code once, it appears on every product's edit screen, and it can be filled in bulk through a product spreadsheet import. Whichever place you choose, use only one, and make sure the invoice app reads from it. The <a href="/blog/shopify-theme-customisation/">guide to Shopify theme customisation</a> explains metafields in more detail.</p>
+
+<h2>Choosing a GST invoice app</h2>
+<p>Several apps generate GST invoices for Shopify stores, and their features differ. I won't recommend one here because listings and features change; test two or three with real orders before committing. Check each against this table.</p>
+<table>
+<thead><tr><th>What to check</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Your GSTIN, legal name and address on every invoice</td><td>The basic seller details an invoice is expected to carry</td></tr>
+<tr><td>HSN code per line item</td><td>Read from your chosen field, not typed per order</td></tr>
+<tr><td>CGST and SGST, or IGST, chosen from the delivery state</td><td>The split has to follow the place of supply rules your CA confirms</td></tr>
+<tr><td>Sequential numbering and a financial year reset</td><td>Gaps or duplicates create work at filing time</td></tr>
+<tr><td>Credit notes for refunds and returns</td><td>A refund should not simply delete the original invoice</td></tr>
+<tr><td>Buyer GSTIN printed on B2B invoices</td><td>Business buyers need it to claim input tax credit</td></tr>
+<tr><td>Shipping, COD fees and discounts handled correctly</td><td>These change the taxable value of the order</td></tr>
+<tr><td>Delivery by order email, customer account or download</td><td>Customers and your accountant both need easy access</td></tr>
+<tr><td>Exports for your accountant</td><td>A sales register by rate and state saves hours each month</td></tr>
+</tbody>
+</table>
+<p>For cash on delivery, check when the invoice is created, since payment arrives after dispatch, and how a refused parcel is reversed. The <a href="/blog/shopify-cash-on-delivery-india/">guide to cash on delivery on Shopify</a> covers the COD side.</p>
+
+<h2>B2B buyers and GSTIN capture</h2>
+<p>A registered business buying from you will want its GSTIN and company name on the invoice. Shopify's standard checkout has an optional company name field, but at the time of writing there is no dedicated GSTIN field in it by default. Common ways to collect it are:</p>
+<ul>
+<li>a field on the cart page saved to the order as a note or attribute, which the invoice app then reads;</li>
+<li>a checkout field added by an app or extension, where your plan allows checkout changes;</li>
+<li>Shopify's own B2B features on higher plans, which store company details against the customer;</li>
+<li>for occasional buyers, a manual step where staff add the GSTIN to the order before the invoice is issued.</li>
+</ul>
+<p>Whichever route you choose, validate the format so typing mistakes are caught, and check that the GSTIN actually reaches the printed invoice.</p>
+
+<h2>In-state and inter-state sales</h2>
+<p>In broad terms, a sale within your own state usually carries CGST and SGST, and a sale to another state usually carries IGST. In practice the split depends on the place of supply, which for goods sent to a customer is generally where they are delivered, with exceptions. Shopify's checkout shows the tax amount, but the split printed on the invoice normally comes from the invoice app comparing the delivery state with your registered state.</p>
+<p>That makes three things worth testing: an order to your own state, one to another state, and one where the billing and shipping states differ. Show the results to your CA. If you sell to customers abroad, ask separately how exports should be invoiced; that is outside this guide.</p>
+
+<h2>A GST checklist before you go live</h2>
+<ol>
+<li>Rates, HSN codes, invoice format and treatment of shipping, COD fees and discounts confirmed by your CA.</li>
+<li>Tax collection for India switched on, with business details correct.</li>
+<li>Prices set as inclusive or exclusive of tax, as advised.</li>
+<li>Default rate and collection overrides set, and exempt products marked.</li>
+<li>HSN codes stored in one place that the invoice app reads.</li>
+<li>Invoice app tested with an in-state order, an inter-state order and a B2B order with a GSTIN.</li>
+<li>Credit note created correctly for a refund and a partial refund.</li>
+<li>COD order invoiced and reversed correctly when refused.</li>
+<li>Monthly export checked by your accountant for the first filing.</li>
+</ol>
+
+<h2>FAQs</h2>
+<h3>Does Shopify generate GST invoices in India?</h3>
+<p>Not by itself at the time of writing. Shopify calculates tax at checkout and sends order confirmations, but a GST-compliant invoice with your GSTIN, HSN codes and the tax split normally comes from an invoice app.</p>
+<h3>Should Shopify prices include GST?</h3>
+<p>Most Indian stores show tax-inclusive prices because shoppers expect the listed price to be the final price. Confirm the choice with your CA and set the matching option in Shopify.</p>
+<h3>Where do I put HSN codes in Shopify?</h3>
+<p>In a product metafield, the customs code field or the invoice app's own settings, depending on what your app reads. Use one place consistently.</p>
+<h3>Can customers enter their GSTIN at checkout?</h3>
+<p>Not in a dedicated field by default at the time of writing. It can be collected on the cart page, through a checkout extension where your plan allows it, or with Shopify's B2B features on plans that include them.</p>
+<h3>Do I still need a CA if the app calculates GST?</h3>
+<p>Yes. The app applies the rules you give it. Your CA confirms the rates, the invoice format and how filing will work, and should review the first month's invoices.</p>
+
+<p>If you want tax settings, HSN codes and the invoice app set up and tested with the orders your CA cares about, my <a href="/shopify-developer/">Shopify development service</a> covers it as part of setup or as a fix for an existing store. Tell me the store address to get a free review of the current setup, then a fixed quote.</p>
+`,
+  },
+  {
+    slug: 'shopify-payment-gateways-india',
+    seoTitle: 'Payment Gateways on Shopify in India: Setup, UPI and Fees',
+    title: 'Payment Gateways on Shopify in India: How They Connect, Fees, UPI, Failed Payments and Refunds',
+    description: 'How Indian payment gateways connect to Shopify: KYC, setup, the Shopify fee on outside providers, UPI at checkout, failed payments, refunds and settlements.',
+    date: '2026-10-27',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'woocommerce-developer'],
+    body: `
+<p>Indian Shopify stores take online payments through a third-party provider, because Shopify's own payment service is not offered in India at the time of writing. You open an account with a provider, pass its KYC checks, install or activate it in Shopify's payments settings and test it; UPI, cards, net banking and wallets then appear at checkout through that provider. Two sets of fees can apply, the provider's own and possibly a Shopify transaction fee, so compare both.</p>
+
+<p>This guide explains how the connection works and what to watch once orders start: failed payments, refunds and settlements. Choosing between providers is covered in <a href="/blog/payment-gateways-india-compared/">the guide to comparing Indian payment gateways</a>. If you want the provider connected and checkout tested on a phone before launch, that is part of my <a href="/shopify-developer/">Shopify store setup service</a>.</p>
+
+<h2>Why Indian stores use a third-party provider</h2>
+<p>In countries where Shopify Payments is available, it is the default way to accept cards, and Shopify has not charged its own transaction fee to stores using it. In India, at the time of writing, that option does not exist, so every store that wants online payments connects an outside provider. Razorpay, PayU, Cashfree and PhonePe are examples of providers Indian stores use with Shopify; which ones are listed for your store, and on what terms, can change, so check the payments settings in your own admin.</p>
+<p>The provider holds the merchant account, so the relationship, the KYC and the payouts are between your business and them. Shopify only passes the shopper to the provider and records the result.</p>
+
+<h2>How a third-party gateway connects to Shopify</h2>
+<ol>
+<li><strong>Open the provider account.</strong> Apply in your business name. KYC usually asks for business registration, PAN, bank details, GSTIN if you have one, and a working website with contact details and policy pages. Apply early; approval can take longer than the store build.</li>
+<li><strong>Find the provider in Shopify.</strong> In the payments settings, look for the option to add a payment provider and search for yours. Providers now connect mostly as payment apps that you install and authorise, though older connections may still ask for API keys.</li>
+<li><strong>Link the accounts.</strong> Sign in to the provider or paste the keys it gives you, then choose which payment methods to show.</li>
+<li><strong>Use test mode first.</strong> Place orders in the provider's test mode or with Shopify's test gateway, including a failed payment, before switching to live.</li>
+<li><strong>Place one real order.</strong> A small live order, then a refund, confirms that money moves and that the refund reaches the shopper.</li>
+</ol>
+<p>Some providers show their payment form inside Shopify's checkout; others send the shopper to their own hosted page and back. A redirect is not a problem in itself, but the return trip is where some payments go astray, as the section on failed payments explains.</p>
+<p>How many outside providers you can run at once depends on how Shopify classifies each one. Check in your admin before planning to offer two gateways side by side.</p>
+
+<h2>Fees: what you pay and to whom</h2>
+<table>
+<thead><tr><th>Fee</th><th>Charged by</th><th>What to check</th></tr></thead>
+<tbody>
+<tr><td>Transaction fee per payment</td><td>The payment provider</td><td>Rates by method: UPI, domestic cards, international cards, net banking, wallets</td></tr>
+<tr><td>GST on the provider&#39;s fee</td><td>Added by the provider</td><td>How it appears on their invoice; ask your CA about input credit</td></tr>
+<tr><td>Transaction fee on outside providers</td><td>Shopify, at the time of writing</td><td>The rate on your plan; it falls on higher plans and has changed before</td></tr>
+<tr><td>Setup or annual charges</td><td>Some providers</td><td>Whether the standard plan has any, and what triggers them</td></tr>
+<tr><td>Refund and chargeback handling</td><td>The provider</td><td>Whether the original fee is returned on a refund, and the charge on disputes</td></tr>
+</tbody>
+</table>
+<p>To compare, take a typical month of orders and work out the total from both rows that charge per order. The Shopify fee is easy to forget because it does not appear on the provider's statement. <a href="/blog/shopify-store-cost-india/">What a Shopify store costs in India</a> puts these alongside the plan and app costs.</p>
+
+<h2>UPI on Shopify checkout</h2>
+<p>UPI usually reaches Shopify checkout through your payment provider rather than as a separate Shopify option. How it appears depends on the provider's integration:</p>
+<ul>
+<li>on a phone, the shopper may pick a UPI app and be sent into it to approve the payment, then return to the browser;</li>
+<li>on a computer, the shopper may see a QR code to scan or be asked for a UPI ID and approve the request on the phone;</li>
+<li>some providers show UPI first on mobile, which suits Indian shoppers well.</li>
+</ul>
+<p>The weak point is the hand-off between the browser and the UPI app. If the shopper approves the payment but the browser tab has been closed or the phone switches apps badly, the provider receives the money but the shopper may not land on the thank-you page. Test UPI on both Android and iPhone, with a couple of common UPI apps, before you launch.</p>
+
+<h2>Failed payments and pending orders</h2>
+<p>Two different things get called a failed payment, and they need different responses.</p>
+<h3>The payment was declined or abandoned</h3>
+<p>The shopper's bank declined it, the UPI request timed out, or the shopper gave up. No money moved. In Shopify, a checkout that never completed appears as an abandoned checkout rather than an order, and Shopify can send a reminder email with a link back to the cart. Check that the reminder is switched on and that the wording suits your brand.</p>
+<h3>Money was taken but no order appeared</h3>
+<p>This is the one that causes angry messages. The provider captured the payment, but the confirmation did not reach Shopify, often because the shopper did not return from a redirect or a UPI app. Good integrations recover this automatically by notifying Shopify from the provider's side. When one does not:</p>
+<ul>
+<li>search the provider's dashboard for the payment by the shopper's phone number or email;</li>
+<li>check Shopify's abandoned checkouts for the same shopper;</li>
+<li>either create the order manually and record it as paid, or refund the payment and ask the shopper to order again;</li>
+<li>raise the case with the provider's support with the payment ID, so the root cause gets fixed.</li>
+</ul>
+<p>The <a href="/blog/woocommerce-payment-gateway-not-working-india/">guide to fixing failed payments on WooCommerce</a> is written for the other platform, but its section on reconciling the provider's records with the store's applies here too.</p>
+
+<h2>Refunds, partial refunds and settlements</h2>
+<p>When you refund an order from Shopify's order screen, a properly integrated provider receives the refund instruction and sends the money back to the original payment method. Check this with your provider during testing, because the behaviour differs and some refunds still need to be started from the provider's dashboard.</p>
+<ul>
+<li><strong>Partial refunds</strong> for a returned item from a larger order should be processed in Shopify, so stock and reports update, and then confirmed in the provider's dashboard.</li>
+<li><strong>COD orders</strong> have no online payment to reverse; refund by bank transfer or UPI and record it in Shopify. <a href="/blog/shopify-cash-on-delivery-india/">Cash on delivery on Shopify</a> covers this.</li>
+<li><strong>Settlements</strong> arrive in your bank account on the provider's cycle, net of their fees. Reconcile them weekly against Shopify orders so that a missing payment shows up quickly.</li>
+<li><strong>Chargebacks</strong> come through the provider. Keep proof of delivery from your courier, because it is the evidence you will be asked for.</li>
+</ul>
+
+<h2>A payment setup checklist</h2>
+<ol>
+<li>Provider account opened in your business name, KYC complete, settlement bank account confirmed.</li>
+<li>Policy pages, contact details and a working checkout live before the provider's review.</li>
+<li>Provider connected in Shopify's payments settings, with the methods you want enabled.</li>
+<li>Shopify's current transaction fee for outside providers on your plan noted in your budget.</li>
+<li>Test orders placed: a card, UPI on Android and iPhone, net banking and a deliberately failed payment.</li>
+<li>One real low-value order placed and refunded, with the refund confirmed in the provider's dashboard.</li>
+<li>Abandoned checkout emails switched on and the wording checked.</li>
+<li>A weekly routine to match settlements to orders and look for payments without orders.</li>
+<li>COD set up separately as a manual method, if you offer it.</li>
+</ol>
+
+<h2>FAQs</h2>
+<h3>Is Shopify Payments available in India?</h3>
+<p>Not at the time of writing. Indian stores connect a third-party provider instead. Check Shopify's current help pages, as availability by country changes.</p>
+<h3>Which payment gateways work with Shopify in India?</h3>
+<p>Providers such as Razorpay, PayU, Cashfree and PhonePe have offered Shopify integrations, among others. Your admin shows which ones are currently available to your store.</p>
+<h3>Does Shopify charge extra if I use Razorpay or another Indian gateway?</h3>
+<p>At the time of writing, Shopify may charge a transaction fee on orders paid through an outside provider, at a rate depending on your plan. It is separate from the provider's fee.</p>
+<h3>Can customers pay by UPI on Shopify?</h3>
+<p>Yes, through a payment provider that supports UPI. Test it on several phones and UPI apps, as the return from the UPI app to the browser is the most fragile step.</p>
+<h3>Why was a customer charged but no order created?</h3>
+<p>Usually the payment confirmation did not reach Shopify after a redirect or UPI hand-off. Find the payment in the provider's dashboard, then create the order manually or refund it, and report the case to the provider.</p>
+
+<p>If you want your payment provider connected, UPI and refunds tested on real phones, and the fees worked out for your plan before you commit, my <a href="/shopify-developer/">Shopify development service</a> gives you a free review up front, then a fixed quote. The provider account and every payout stay in your business name.</p>
+`,
+  },
+  {
+    slug: 'shopify-shipping-india',
+    seoTitle: 'Shopify Shipping in India: Zones, Rates and Couriers',
+    title: 'Shopify Shipping in India: Zones, Rates, Pin Code Serviceability, Couriers, NDR and RTO',
+    description: 'Set up Shopify shipping for India: profiles, zones and rates, free-shipping thresholds, pin code serviceability, courier and aggregator apps, NDR, RTO and packaging.',
+    date: '2026-10-27',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'woocommerce-developer'],
+    body: `
+<p>Shipping on a Shopify store in India is set up in the shipping and delivery settings: you create a zone for India, add rates based on weight, order value or a flat charge, and set a free-shipping threshold that your margin can carry. Shopify does not know which pin codes your courier reaches, so serviceability checks and label booking usually come from a courier or shipping aggregator app. After launch, the work moves to handling non-delivery reports quickly and keeping parcels that come back to a minimum.</p>
+
+<p>This guide walks through each part, from the settings to what happens when a delivery fails. If you would like shipping, courier integration and pin code checks set up and tested for you, they are part of my <a href="/shopify-developer/">Shopify store setup service</a>. The <a href="/blog/shopify-store-setup-india/">Shopify setup guide for India</a> shows where shipping fits among the other launch tasks.</p>
+
+<h2>How Shopify organises shipping</h2>
+<p>Three ideas cover almost every setup:</p>
+<ul>
+<li><strong>Shipping profiles</strong> group products that ship the same way. Most stores need only the general profile. A separate profile helps when some products need different rates, such as bulky furniture alongside small accessories.</li>
+<li><strong>Zones</strong> sit inside a profile and say where you ship. For a store selling only in India, one zone for the whole country is usually enough. Zones can be narrowed by state, but not by pin code at the time of writing.</li>
+<li><strong>Rates</strong> sit inside a zone and say what the shopper pays. A rate can be flat, or conditional on the order's weight or price.</li>
+</ul>
+<p>Shopify also offers local delivery, which can be limited by postal codes or a distance from your location, and local pickup from a shop or warehouse. These suit a store that delivers in its own city alongside national courier shipping. Check how they behave at checkout before relying on them.</p>
+<p>Live courier-calculated rates at checkout depend on your plan and the courier app, so check availability rather than assuming they are included.</p>
+
+<h2>Choosing rates for Indian shoppers</h2>
+<p>Indian shoppers are quick to abandon a cart over an unexpected shipping charge, so the aim is a rate that is simple to understand and still covers your average cost.</p>
+<table>
+<thead><tr><th>Situation</th><th>Rate setup in Shopify</th><th>Check before launch</th></tr></thead>
+<tbody>
+<tr><td>Small, light products</td><td>One flat rate, plus a free rate above an order value</td><td>The threshold sits above your typical basket, not below it</td></tr>
+<tr><td>Products of very different weights</td><td>Weight-based conditional rates</td><td>Every product has a weight that includes packaging</td></tr>
+<tr><td>A few bulky items</td><td>A separate shipping profile with its own rates</td><td>Bulky items are not getting the general free rate by accident</td></tr>
+<tr><td>Same-city delivery</td><td>Local delivery by postal code or distance</td><td>The postal code list matches where your rider actually goes</td></tr>
+<tr><td>Shop or warehouse pickup</td><td>Local pickup with instructions</td><td>Opening hours and the ready-for-pickup email</td></tr>
+</tbody>
+</table>
+<h3>Free-shipping thresholds</h3>
+<p>Set the threshold by looking at your margin and your average shipping cost, not at what other brands do. A threshold a little above your typical order value nudges shoppers to add one more item. One set too low gives away shipping on orders that already would have happened. Show the threshold near the cart total, ideally with how much more is needed to reach it, and revisit it once two or three months of real orders are in.</p>
+
+<h2>Pin code serviceability</h2>
+<p>Couriers in India publish lists of the pin codes they deliver to, and a shorter list for where they collect cash on delivery. A shopper who orders to an address your courier does not cover produces a parcel that sits in a hub or comes straight back. Shopify's zones work by country and state, so pin code checks come from elsewhere:</p>
+<ul>
+<li><strong>A pin code checker on the product page,</strong> usually from your courier or aggregator app, telling the shopper whether you deliver there and roughly when.</li>
+<li><strong>Checkout rules</strong> from an app that block or warn on unserviceable pin codes, or hide cash on delivery where it is not collected.</li>
+<li><strong>A manual check</strong> during order confirmation, for small stores without an app.</li>
+</ul>
+<p>Test the checker with a city pin code, a remote one and one that should fail. The <a href="/blog/pincode-delivery-checker-woocommerce/">guide to pin code delivery checkers</a> is written for WooCommerce, but its points about wording and delivery estimates apply on Shopify as well. For limiting cash on delivery by pin code, see <a href="/blog/shopify-cash-on-delivery-india/">cash on delivery on Shopify</a>.</p>
+
+<h2>Connecting a courier or shipping aggregator</h2>
+<p>Most Indian stores do not book parcels on Shopify itself. At the time of writing, Shopify's own label service is not offered for Indian stores, so they connect either a single courier or an aggregator, which is a service that lets you book with several couriers from one dashboard. Most of them provide a Shopify app. The usual flow is:</p>
+<ol>
+<li>Install the app and sign in to your courier or aggregator account.</li>
+<li>Set your pickup address, default package size and which orders sync, for example only paid or confirmed ones.</li>
+<li>Choose how the courier is picked: a fixed courier, or rules based on pin code, weight, cost or COD.</li>
+<li>Book shipments in bulk, print labels and schedule the pickup.</li>
+<li>Let the app write the tracking number back to the Shopify order, so Shopify's shipping confirmation email includes it.</li>
+</ol>
+<p>Compare apps on how reliably they sync orders and tracking, how they handle COD remittances, how they report non-delivery, and what they charge. Features and courier partners change often, so ask for a trial and run a week of real orders through it before committing.</p>
+
+<h2>NDR and RTO: when deliveries fail</h2>
+<p>A non-delivery report, or NDR, is the courier telling you a delivery attempt failed: the customer was out, refused, gave a wrong address or could not be reached. You then have a short window, set by the courier, to ask for another attempt, correct the address or let the parcel return. If nothing happens, it goes back to you as return to origin, or RTO, and you usually pay for both journeys.</p>
+<ul>
+<li>Check NDRs every working day in the aggregator or courier dashboard.</li>
+<li>Call or message the customer, confirm the address and a good time, and request a reattempt.</li>
+<li>Note the reason for every RTO, so patterns by pin code, product or courier become visible.</li>
+<li>When a parcel does return, inspect it, restock it if it is sellable, and cancel the order in Shopify so stock and reports stay correct.</li>
+</ul>
+<p>Shipping quickly and confirming COD orders before dispatch prevent many NDRs in the first place. The <a href="/blog/woocommerce-returns-refunds-policy/">guide to returns and refunds</a> covers how to word the policy for refused parcels.</p>
+
+<h2>Packaging, weight and volumetric weight</h2>
+<p>Couriers generally charge on whichever is higher, the actual weight or the volumetric weight, which is worked out from the box's length, width and height using a divisor that varies by courier. A light product in an oversized box can cost far more to ship than its weight suggests.</p>
+<ul>
+<li>Weigh each product packed, and enter that weight in Shopify, so weight-based rates and courier bookings are accurate.</li>
+<li>Use as few standard box sizes as possible, and set them as default packages in the courier app.</li>
+<li>Choose the smallest box that protects the product; fragile goods still need proper padding.</li>
+<li>Recheck weights when a supplier changes packaging, because a mismatch leads to extra charges after weight audits.</li>
+</ul>
+
+<h2>A shipping checklist</h2>
+<ol>
+<li>One domestic zone for India in the general profile, with extra profiles only where products truly ship differently.</li>
+<li>Rates set as flat, weight-based or price-based, with a free-shipping threshold checked against your margin.</li>
+<li>Every product has a packed weight.</li>
+<li>Courier or aggregator app connected, syncing only confirmed orders and writing tracking numbers back.</li>
+<li>Pin code checker on the product page, tested with a serviceable, remote and unserviceable pin code.</li>
+<li>COD limited to pin codes where cash is collected.</li>
+<li>Shipping confirmation email includes the tracking link.</li>
+<li>Daily NDR check with a named person responsible.</li>
+<li>Returned parcels inspected, restocked and cancelled in Shopify.</li>
+<li>A shipping policy stating delivery areas, times, charges and what happens to refused parcels.</li>
+</ol>
+
+<h2>FAQs</h2>
+<h3>Can I set Shopify shipping rates by pin code?</h3>
+<p>Not with standard zones at the time of writing; they work by country and state. Local delivery can use postal codes for your own area, and courier or pin code apps handle the rest.</p>
+<h3>Does Shopify ship orders for me in India?</h3>
+<p>No. You connect your own courier or a shipping aggregator, usually through its Shopify app, and book shipments from there.</p>
+<h3>Should I offer free shipping?</h3>
+<p>Usually above a threshold rather than on every order. Set it from your margin and average shipping cost, and review it once you have real orders.</p>
+<h3>What is the difference between NDR and RTO?</h3>
+<p>An NDR is a report of a failed delivery attempt, which you can still act on. RTO is the parcel going back to you after attempts end, at your cost.</p>
+<h3>Why am I charged more than the rate I expected?</h3>
+<p>Often volumetric weight, or a product weight in Shopify that leaves out packaging. Measure the packed parcel and compare it with the courier's charge.</p>
+
+<p>If you want zones, rates, a courier app and pin code checks set up and tested with real addresses, my <a href="/shopify-developer/">Shopify development service</a> covers shipping as part of setup or as a fix for a store already trading. Message me the store address; the reply is a free review plus a fixed quote.</p>
+`,
+  },
+  {
+    slug: 'hire-shopify-developer-india',
+    seoTitle: 'Hiring a Shopify Developer in India: What to Ask',
+    title: 'Hiring a Shopify Developer in India: What They Do, When You Need One, What to Ask and Red Flags',
+    description: 'What a Shopify developer does, how they differ from a listed Shopify partner or an agency, when you need one, what to ask, collaborator access and red flags.',
+    date: '2026-10-27',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'hire-wordpress-developer'],
+    body: `
+<p>A Shopify developer sets up and changes the parts of a store that the admin and theme editor cannot: custom sections and templates in Liquid, theme fixes, app clean-ups, speed and SEO work, migrations and integrations. You need one when the job goes beyond settings and content, or when getting it wrong would cost sales. Hire on how they work on your live store, who owns the accounts and what is written in the quote, not on a portfolio alone.</p>
+
+<p>I am a freelance developer in Pune working on Shopify, WordPress and WooCommerce, so this guide is written from the developer's side of the table, but the questions in it are the ones I would want a client to ask anyone. You can see how I run Shopify projects on the <a href="/shopify-developer/">Shopify developer service page</a>; the last section here summarises it.</p>
+
+<h2>What a Shopify developer actually does</h2>
+<p>Shopify looks after hosting, security and the core platform, so a Shopify developer's work sits on top of that. Typical jobs include:</p>
+<ul>
+<li><strong>Store setup:</strong> theme, products and collections, payments, cash on delivery, shipping, taxes, domain and launch checks.</li>
+<li><strong>Theme work:</strong> custom sections and blocks, product templates, metafields shown on the storefront, and turning a design file into a working theme. See <a href="/blog/shopify-theme-customisation/">Shopify theme customisation</a> for what that involves.</li>
+<li><strong>Fixes:</strong> a variant picker showing the wrong price, a cart drawer that misbehaves, layout bugs on phones.</li>
+<li><strong>Speed and SEO:</strong> removing app leftovers, trimming scripts, fixing product links, titles and structured data.</li>
+<li><strong>Migrations:</strong> moving products, customers and redirects from WooCommerce, WordPress or Wix, or from Shopify to WooCommerce.</li>
+<li><strong>Integrations:</strong> courier, invoice, accounting or marketplace connections, usually through apps and their settings.</li>
+</ul>
+<p>Day-to-day running, such as adding products, writing descriptions, running sales and handling orders, is normally the store owner's job once the developer has set things up and shown the team how.</p>
+
+<h2>Developer, listed Shopify partner or agency</h2>
+<p>Shopify runs a directory of service partners that store owners can browse, which has gone by names such as the Experts Marketplace and the Partner Directory; the name and the criteria for listing change from time to time. Being listed is one signal among several. Plenty of capable developers and agencies work outside it, and a listing does not tell you who will actually do the work on your store.</p>
+<table>
+<thead><tr><th></th><th>Freelance developer</th><th>Agency</th></tr></thead>
+<tbody>
+<tr><td>Who does the work</td><td>The person you speak to</td><td>A team; ask who specifically</td></tr>
+<tr><td>Suits</td><td>Setup, theme work, fixes, migrations for small and mid-sized stores</td><td>Large builds needing design, development, content and marketing together</td></tr>
+<tr><td>Communication</td><td>Direct, one point of contact</td><td>Through an account manager, with more process</td></tr>
+<tr><td>Cover when unavailable</td><td>Ask what happens during leave or illness</td><td>Usually built in</td></tr>
+<tr><td>Cost drivers</td><td>Scope and hours</td><td>Scope, hours and the agency&#39;s overheads</td></tr>
+</tbody>
+</table>
+<p>Neither is right for every store. The <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency guide</a> goes through the trade-offs in more depth; the reasoning is the same for Shopify.</p>
+
+<h2>When you need a developer, and when you don't</h2>
+<p>You can probably manage without one if you are using a free theme with its existing sections, have a small catalogue, need only standard payments and shipping, and are comfortable following the <a href="/blog/shopify-store-setup-india/">step-by-step setup guide</a>. Shopify's admin is built for owners to run themselves.</p>
+<p>A developer earns their fee when:</p>
+<ul>
+<li>the design needs sections or layouts the theme editor cannot produce;</li>
+<li>you are moving from another platform and need products, customers and redirects handled without losing search traffic;</li>
+<li>the store is slow, and nobody knows which app or script is responsible;</li>
+<li>payments, COD controls, GST invoices and courier apps need to work together and be tested;</li>
+<li>you have a launch date and cannot afford to learn by trial and error on a live store.</li>
+</ul>
+<p>The general version of this decision is covered in <a href="/blog/hire-developer-vs-diy-website/">hiring a developer vs doing it yourself</a>.</p>
+
+<h2>Questions to ask before you hire</h2>
+<ol>
+<li><strong>Which Shopify stores have you worked on, and what did you do on each?</strong> Ask for specifics: setup, theme code, migration. Some work is under confidentiality, so a developer may describe a project without naming it; that is reasonable, but the description should be concrete.</li>
+<li><strong>Will you work on a duplicate theme?</strong> The answer should be yes, with a preview link for you to check before anything is published.</li>
+<li><strong>How will you get access?</strong> A collaborator request or staff account, never your owner login.</li>
+<li><strong>What exactly is in the quote?</strong> A written scope listing pages, sections, apps, integrations, testing and handover.</li>
+<li><strong>Which apps will I need, and what will they cost me each month?</strong> A good developer reduces the app list rather than growing it.</li>
+<li><strong>How will checkout be tested?</strong> Prepaid, failed and COD orders on a phone, then a real low-value order and refund.</li>
+<li><strong>What happens after launch?</strong> Bug fixes within an agreed period, how later changes are charged, and how quickly they respond.</li>
+<li><strong>What will I be able to do myself afterwards?</strong> Sections built with settings let your team edit them without code.</li>
+</ol>
+<p>Put the answers in the agreement. The <a href="/blog/website-design-contract-checklist/">website contract checklist</a> lists the clauses worth having.</p>
+
+<h2>Access and ownership</h2>
+<p>Your store should be yours from the first day. That means:</p>
+<ul>
+<li>the Shopify account is opened in your business name, with the plan billed to you;</li>
+<li>the domain, payment provider account and every app subscription are in your name and paid by you;</li>
+<li>the developer works through a collaborator account, which you approve, or a staff account you create, with only the permissions the job needs;</li>
+<li>you can remove that access at any time from the users and permissions settings.</li>
+</ul>
+<p>At the time of writing, collaborator accounts do not use one of your plan's staff seats, and you can require a collaborator request code so that nobody can send a request without it. When the project ends, ask for any custom code to be documented and remove access you no longer need.</p>
+
+<h2>Red flags</h2>
+<ul>
+<li>Asking for your owner password instead of sending a collaborator request.</li>
+<li>Offering to open the Shopify account, domain or payment account in their own name.</li>
+<li>Editing the live theme directly, with no duplicate and no preview.</li>
+<li>No written scope, or a quote that is suspiciously low with extras to be agreed later.</li>
+<li>Recommending a long list of paid apps without explaining what each one does.</li>
+<li>Claims of guaranteed rankings or sales figures.</li>
+<li>Reluctance to say who will do the work, or to describe past projects in any detail.</li>
+<li>No plan for redirects when URLs change in a migration or redesign.</li>
+</ul>
+
+<h2>How a Shopify project runs with Samverse</h2>
+<p>The process is the same whether the store is new or already selling, and it is the one I followed on a recent Shopify build for a fashion brand.</p>
+<ol>
+<li><strong>Free review and fixed quote.</strong> You send the store address or a note on what you sell, how many products and how you want to be paid. I reply with a fixed price, a timeline and the scope in writing.</li>
+<li><strong>Access.</strong> You approve a collaborator request or add a staff account, choosing what I can open.</li>
+<li><strong>Duplicate theme.</strong> Layout and code changes happen on an unpublished copy, shared through a preview link.</li>
+<li><strong>Build.</strong> Products, collections and metafields, then sections and templates, then payments, shipping, tax and only the apps the store needs.</li>
+<li><strong>Checkout testing.</strong> Prepaid, failed and cash on delivery orders on a phone; order emails, invoices and stock checked; then one real low-value order placed and refunded.</li>
+<li><strong>Launch.</strong> Domain connected, password removed and the new theme published, with the previous one kept as a fallback.</li>
+<li><strong>Handover.</strong> A walkthrough of orders, refunds, products and the theme editor, and a note on which sections and apps control what.</li>
+</ol>
+<p>Everything stays in your name, and you pay Shopify and the app makers directly.</p>
+
+<h2>FAQs</h2>
+<h3>Do I need a Shopify developer to start a store?</h3>
+<p>Not always. A small store on a free theme can be set up by the owner. A developer helps when you need custom design, a migration, integrations or a tested launch by a fixed date.</p>
+<h3>Should I give a developer my Shopify password?</h3>
+<p>No. Approve a collaborator request or create a staff account with limited permissions, and remove it when the work is finished.</p>
+<h3>How much does it cost to hire a Shopify developer in India?</h3>
+<p>It depends on the scope: catalogue size, theme work, migrations and integrations. I don't publish prices for Shopify work; send your requirements for a free review and a fixed quote.</p>
+<h3>Is a freelancer or an agency better for Shopify?</h3>
+<p>A freelancer suits setup, theme work, fixes and migrations where you want one point of contact. An agency suits larger projects that bundle design, development, content and marketing.</p>
+<h3>Who owns the theme code a developer writes?</h3>
+<p>Agree it in writing. Custom sections built for your store should be yours to keep and edit, and they stay in your theme after the project ends.</p>
+
+<p>If you are weighing up who should work on your store, send the address or a short note on what you plan to sell. Through my <a href="/shopify-developer/">Shopify development service</a> you get a free review, a written scope and a fixed quote, with every account in your own name from the start.</p>
+`,
+  },
+  {
+    slug: 'shopify-theme-change-without-losing-seo',
+    seoTitle: 'Change Your Shopify Theme Without Losing SEO',
+    title: 'Changing Your Shopify Theme Without Losing SEO: Duplicate, Preview, App Embeds, Templates, Redirects and Launch Checks',
+    description: 'Switch or redesign a Shopify theme without losing search traffic: what changes, the duplicate theme, app embeds, metafields, custom templates, redirects and checks.',
+    date: '2026-10-27',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'website-redesign'],
+    body: `
+<p>Changing a Shopify theme does not move your products, collections, pages or blog posts, so their URLs stay the same. What can change is everything the theme controls: title tags, headings, structured data, internal links, the text and images placed in sections, custom templates and app embeds. Build the new theme as an unpublished copy, check those items against the current store, publish in a quiet period and watch Search Console for a few weeks, and rankings normally hold.</p>
+
+<p>This guide covers that process step by step. It applies to a move to a new theme and to a major redesign of the current one. If you would rather have the switch handled for you, it is a regular part of my <a href="/shopify-developer/">Shopify theme and customisation work</a>, done on an unpublished theme so the live store keeps selling throughout. For redesigns on any platform, <a href="/blog/redesign-website-without-losing-rankings/">redesigning a website without losing rankings</a> covers the wider method.</p>
+
+<h2>What a theme change touches, and what it leaves alone</h2>
+<table>
+<thead><tr><th>Item</th><th>Stored in</th><th>Effect of a theme change</th></tr></thead>
+<tbody>
+<tr><td>Product, collection, page and blog URLs</td><td>The admin</td><td>Unchanged</td></tr>
+<tr><td>Product descriptions, prices, images and alt text</td><td>The admin</td><td>Unchanged, though how they are displayed may differ</td></tr>
+<tr><td>Search listing titles and descriptions you entered</td><td>The admin</td><td>Kept, but the theme decides how the title tag is assembled</td></tr>
+<tr><td>Metafield values</td><td>The admin</td><td>Kept, but shown only if the new theme has blocks wired to them</td></tr>
+<tr><td>Homepage and section text, banners, featured collections</td><td>The theme</td><td>Must be rebuilt in the new theme</td></tr>
+<tr><td>Custom templates assigned to products or pages</td><td>The theme</td><td>Missing templates fall back to the default layout</td></tr>
+<tr><td>Structured data, heading tags and breadcrumbs</td><td>The theme</td><td>Can change completely</td></tr>
+<tr><td>App embeds and app blocks</td><td>The theme</td><td>Need switching on again in the new theme</td></tr>
+<tr><td>Code pasted into theme files by old apps or developers</td><td>The theme</td><td>Not carried over to a fresh theme</td></tr>
+</tbody>
+</table>
+<p>The fixed URLs are the reason a Shopify theme change is safer than most redesigns. The risk sits in the rows marked theme.</p>
+
+<h2>Before you start: benchmark and inventory</h2>
+<ol>
+<li><strong>Record the current numbers.</strong> Export the last three months of Search Console performance by page and by query, and note sales by landing page from your analytics.</li>
+<li><strong>List the pages that matter.</strong> Usually the home page, the top collections, best-selling products and any blog posts that bring traffic.</li>
+<li><strong>Save what the theme outputs.</strong> For each of those pages, note the title tag, the H1, the meta description, the main text above the product grid and the structured data from Google's Rich Results Test.</li>
+<li><strong>List custom templates.</strong> Check which products and pages use a template other than the default, such as a size-chart product layout or a wholesale page.</li>
+<li><strong>List apps and their embeds.</strong> Note which apps add something to the storefront, and which tracking codes sit in the theme files rather than in Shopify's customer events settings.</li>
+</ol>
+<p>If Search Console was verified with a meta tag in the theme, switch to DNS verification now; the tag will disappear with the old theme.</p>
+
+<h2>Build on an unpublished theme</h2>
+<p>Add the new theme to your theme library without publishing it, or duplicate the current one for a redesign. Shoppers continue to see the live theme while you work. The theme editor gives you a preview, and you can share a preview link with your team to check on their own phones.</p>
+<p>A free theme from Shopify can be tried before deciding; with paid themes, check the seller's terms on trying before buying. Either way, build the full set of pages, not just the home page, before judging it. The <a href="/blog/shopify-theme-customisation/">guide to theme customisation</a> explains sections, blocks and the duplicate-theme workflow in more detail.</p>
+<p>While the new theme is still unpublished, compare it with the live one on three practical points. First, how it builds the title tag: some themes add the store name, some do not, and some use the collection name on product pages. Second, which element carries the H1 on collection and product pages, since a theme that turns the logo into the H1 everywhere changes what each page says it is about. Third, speed on a mid-range phone, measured with PageSpeed Insights on the preview, because a heavier theme can undo the benefit of a fresher design.</p>
+
+<h2>App embeds, sections and metafields</h2>
+<h3>App embeds and app blocks</h3>
+<p>Current apps add their storefront features through app embeds, switched on per theme in the theme editor's app embeds panel, and through app blocks placed in sections. A new theme starts with these off. Go through your app list, switch on the embeds you still need and place the blocks, such as reviews on product pages, again. This is also a good time to leave out apps you no longer use.</p>
+<p>Older apps sometimes wrote code straight into theme files. That code does not come across to a fresh theme, which cleans things up, but check that nothing you rely on, such as an analytics tag, was among it. Leftover scripts are a common cause of slow stores; <a href="/blog/shopify-store-slow-fix/">fixing a slow Shopify store</a> explains how to find them.</p>
+<h3>Section content</h3>
+<p>Text and images in sections, such as the homepage introduction, collection descriptions shown in a section, FAQs and trust badges, belong to the theme. Rebuild them in the new theme, keeping the wording on pages that rank unless you have a reason to change it. Collection descriptions entered in the collection's own description field are stored in the admin and carry across, which is a good reason to keep important text there.</p>
+<h3>Metafields</h3>
+<p>Product details held in metafields, such as fabric, care instructions or dispatch time, keep their values. In an Online Store 2.0 theme you connect them to blocks as dynamic sources. Check a few products of each type to confirm every detail still appears.</p>
+
+<h2>Custom templates, URLs and redirects</h2>
+<p>Products and pages assigned to a custom template keep the assignment by name. If the new theme has no template with that name, they display with the default template instead, which can hide size charts, specifications or wholesale forms without any warning. Create matching templates in the new theme before publishing, and check one product or page of each kind.</p>
+<p>The URLs of products, collections, pages and posts do not change with the theme. Redirects are needed only if you take the opportunity to change handles, merge collections or remove pages. In that case:</p>
+<ul>
+<li>change handles with Shopify's option to create a redirect from the old URL left ticked;</li>
+<li>add redirects for removed or merged pages in the URL redirects area of the admin, each pointing to the closest replacement;</li>
+<li>update menus and links in sections to the new addresses, rather than relying on redirects.</li>
+</ul>
+<p><a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> explains why permanent redirects are the right choice here.</p>
+
+<h2>Launch day and the weeks after</h2>
+<ol>
+<li>Publish in a quiet sales period. The old theme stays in the library, so you can switch back if something goes wrong.</li>
+<li>Compare title tags, H1s and meta descriptions on your key pages with the notes you took.</li>
+<li>Run key product pages through the Rich Results Test and check for missing or duplicate product data.</li>
+<li>Check that product grids link to /products/ addresses, as described in the <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a>.</li>
+<li>Confirm app embeds, reviews, analytics and pixels are working, with a test purchase.</li>
+<li>Open products that use custom templates and confirm the right layout appears.</li>
+<li>Test on a phone over mobile data, including menus, filters, the cart and checkout.</li>
+<li>Check Search Console daily for the first week, then weekly, comparing clicks and positions for your key pages with the benchmark.</li>
+<li>Investigate any page that drops noticeably: compare its title, headings, text and links with the old version.</li>
+</ol>
+<p><a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a> shows which reports to watch.</p>
+
+<h2>FAQs</h2>
+<h3>Will changing my Shopify theme change my URLs?</h3>
+<p>No. Products, collections, pages and blog posts keep their URLs because they are stored in the admin, not the theme. URLs change only if you edit handles yourself.</p>
+<h3>Will I lose my product descriptions or images?</h3>
+<p>No. They are stored with the product. Text placed in theme sections, such as homepage banners, does have to be rebuilt.</p>
+<h3>Why did my rankings dip after a theme change?</h3>
+<p>Usually because the new theme changed title tags, headings, the text on collection pages, internal links or structured data. Compare the affected pages with your notes from before the switch.</p>
+<h3>Can I go back to my old theme?</h3>
+<p>Yes, as long as it is still in the theme library. Publishing it again restores the previous design, though apps switched on only in the new theme need checking.</p>
+<h3>Do I need to redo app settings after switching?</h3>
+<p>App settings are usually kept, but app embeds and blocks are set per theme, so switch them on and place them again in the new theme.</p>
+
+<p>If you are planning a new theme or a redesign and want the switch done on an unpublished copy with the SEO checks above, my <a href="/shopify-developer/">Shopify development service</a> starts with a free review of your current store and a fixed quote.</p>
 `,
   },
 ];
