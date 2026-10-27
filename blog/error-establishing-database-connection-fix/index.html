@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fix &quot;Error Establishing a Database Connection&quot; | Samverse</title>
-  <meta name="description" content="What &quot;Error establishing a database connection&quot; means in WordPress, its usual causes, checking wp-config.php safely, repairing tables and when to ask your host.">
+  <title>Error Establishing a Database Connection: How to Fix It</title>
+  <meta name="description" content="Fix the WordPress database connection error in order: wp-config.php details, DB host, server load, damaged tables, migrations, and what to ask your host.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/error-establishing-database-connection-fix/">
-  <meta property="og:title" content="Fix &quot;Error Establishing a Database Connection&quot; | Samverse">
-  <meta property="og:description" content="What &quot;Error establishing a database connection&quot; means in WordPress, its usual causes, checking wp-config.php safely, repairing tables and when to ask your host.">
+  <meta property="og:title" content="Error Establishing a Database Connection: How to Fix It">
+  <meta property="og:description" content="Fix the WordPress database connection error in order: wp-config.php details, DB host, server load, damaged tables, migrations, and what to ask your host.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-error-establishing-database-connection-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/error-establishing-database-connection-fix/#article",
-      "headline": "\"Error Establishing a Database Connection\" in WordPress: How to Fix It",
-      "description": "What \"Error establishing a database connection\" means in WordPress, its usual causes, checking wp-config.php safely, repairing tables and when to ask your host.",
+      "headline": "Error Establishing a Database Connection in WordPress: A Diagnosis Order That Finds the Cause, What to Tell Your Host, and How to Stop It Coming Back",
+      "description": "Fix the WordPress database connection error in order: wp-config.php details, DB host, server load, damaged tables, migrations, and what to ask your host.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-01",
+      "dateModified": "2026-10-27",
       "mainEntityOfPage": "https://samverse.space/blog/error-establishing-database-connection-fix/",
       "image": "https://samverse.space/assets/og/blog-error-establishing-database-connection-fix.png",
       "articleSection": "Maintenance",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "\"Error Establishing a Database Connection\" in WordPress: How to Fix It",
+          "name": "Error Establishing a Database Connection in WordPress: A Diagnosis Order That Finds the Cause, What to Tell Your Host, and How to Stop It Coming Back",
           "item": "https://samverse.space/blog/error-establishing-database-connection-fix/"
         }
       ]
@@ -129,22 +129,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
-          <h1>&quot;Error Establishing a Database Connection&quot; in WordPress: How to Fix It</h1>
-          <p class="post-dek">What &quot;Error establishing a database connection&quot; means in WordPress, its usual causes, checking wp-config.php safely, repairing tables and when to ask your host.</p>
+          <h1>Error Establishing a Database Connection in WordPress: A Diagnosis Order That Finds the Cause, What to Tell Your Host, and How to Stop It Coming Back</h1>
+          <p class="post-dek">Fix the WordPress database connection error in order: wp-config.php details, DB host, server load, damaged tables, migrations, and what to ask your host.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · 5 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-27">27 October 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=%22Error%20Establishing%20a%20Database%20Connection%22%20in%20WordPress%3A%20How%20to%20Fix%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=Error%20Establishing%20a%20Database%20Connection%20in%20WordPress%3A%20A%20Diagnosis%20Order%20That%20Finds%20the%20Cause%2C%20What%20to%20Tell%20Your%20Host%2C%20and%20How%20to%20Stop%20It%20Coming%20Back%20https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=%22Error%20Establishing%20a%20Database%20Connection%22%20in%20WordPress%3A%20How%20to%20Fix%20It&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=Error%20Establishing%20a%20Database%20Connection%20in%20WordPress%3A%20A%20Diagnosis%20Order%20That%20Finds%20the%20Cause%2C%20What%20to%20Tell%20Your%20Host%2C%20and%20How%20to%20Stop%20It%20Coming%20Back&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/error-establishing-database-connection-fix/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-error-establishing-database-connection-fix.webp" alt="&quot;Error Establishing a Database Connection&quot; in WordPress: How to Fix It" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-error-establishing-database-connection-fix.webp" alt="Error Establishing a Database Connection in WordPress: A Diagnosis Order That Finds the Cause, What to Tell Your Host, and How to Stop It Coming Back" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -153,120 +153,177 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#what-the-error-means">What the error means</a></li>
-              <li><a href="#the-usual-causes">The usual causes</a></li>
-              <li><a href="#step-1-rule-out-the-hosting-server">Step 1: Rule out the hosting server</a></li>
-              <li><a href="#step-2-check-the-database-details-in-wp-config-php">Step 2: Check the database details in wp-config.php</a></li>
-              <li><a href="#step-3-repair-corrupted-tables">Step 3: Repair corrupted tables</a></li>
-              <li><a href="#step-4-restore-the-database-from-a-backup">Step 4: Restore the database from a backup</a></li>
-              <li><a href="#after-a-migration-the-most-common-case">After a migration: the most common case</a></li>
-              <li><a href="#how-to-stop-it-happening-again">How to stop it happening again</a></li>
+              <li><a href="#two-minutes-of-triage-before-you-change-anything">Two minutes of triage before you change anything</a></li>
+              <li><a href="#step-1-is-the-database-server-running">Step 1: Is the database server running?</a></li>
+              <li><a href="#step-2-check-the-four-details-in-wp-config-php">Step 2: Check the four details in wp-config.php</a></li>
+              <li><a href="#step-3-test-the-details-outside-wordpress">Step 3: Test the details outside WordPress</a></li>
+              <li><a href="#step-4-hosting-limits-and-an-overloaded-server">Step 4: Hosting limits and an overloaded server</a></li>
+              <li><a href="#step-5-damaged-tables">Step 5: Damaged tables</a></li>
+              <li><a href="#step-6-restore-from-a-backup">Step 6: Restore from a backup</a></li>
+              <li><a href="#after-a-migration-the-separate-checklist">After a migration: the separate checklist</a></li>
+              <li><a href="#what-to-tell-your-host">What to tell your host</a></li>
+              <li><a href="#prevention-and-monitoring">Prevention and monitoring</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>The error means WordPress cannot reach its database, usually through wrong wp-config.php details or a struggling server.</li>
-              <li>Rule out the host first, then match the database name, user, password and host against your hosting panel.</li>
-              <li>Use WordPress's repair tool for damaged tables, remove it straight after, and restore the database only as a last step.</li>
+              <li>Check causes in a fixed order: is the database server up, are the four details in wp-config.php right, do they work outside WordPress, and is the hosting account hitting limits.</li>
+              <li>Damaged tables and backup restores come last, and both need a fresh backup first because they change data rather than settings.</li>
+              <li>A short, specific message to your host and uptime monitoring with a keyword check turn a long outage into a short one.</li>
             </ul>
           </div>
-<p>Instead of your homepage, a single line of text: "Error establishing a database connection". It usually appears without warning, often right after a migration or a hosting change, and it takes the whole site offline. The good news is that your content is normally still there. WordPress just can't reach it. Here's how to work out why, step by step.</p>
+<p>"Error establishing a database connection" means WordPress tried to log in to its MySQL or MariaDB database and failed, so it has nothing to build the page from. Your posts, pages and orders are usually still there. The quickest route to a fix is to check causes in a fixed order: is the database server running, are the four connection details in wp-config.php correct, do those details work when tested outside WordPress, is the hosting account hitting a limit, and only then, are tables damaged or does the database need restoring.</p>
+<p>If you would rather hand it to someone, this is exactly the kind of outage my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans are set up to catch, since uptime monitoring usually spots it before a customer rings you. If the error began straight after a move to new hosting, jump to the migration section further down, because that case has its own shorter list.</p>
+<p>A note before you touch anything: download a copy of wp-config.php and take a database export if phpMyAdmin will open. With those two, every step below can be undone.</p>
 
-<h2 id="what-the-error-means">What the error means</h2>
-<p>A WordPress site has two parts: the files (WordPress itself, your theme and plugins) and a database that stores your pages, posts, settings, users and, on a store, your orders. Every time a page loads, WordPress connects to the database using four details saved in a file called wp-config.php:</p>
-<ul>
-  <li><strong>DB_NAME:</strong> the database's name</li>
-  <li><strong>DB_USER:</strong> the database username</li>
-  <li><strong>DB_PASSWORD:</strong> that user's password</li>
-  <li><strong>DB_HOST:</strong> the server the database lives on</li>
-</ul>
-<p>If any of these is wrong, or the database server doesn't respond, WordPress stops and shows this error. A related message in the dashboard, "One or more database tables are unavailable", points to damaged tables rather than a failed connection.</p>
-
-<h2 id="the-usual-causes">The usual causes</h2>
+<h2 id="two-minutes-of-triage-before-you-change-anything">Two minutes of triage before you change anything</h2>
+<p>Answer four questions first.</p>
+<ol>
+  <li>Does /wp-admin/ show the same message, or does it say "One or more database tables are unavailable"? The second message means the connection works and the problem is inside the database.</li>
+  <li>Is the error constant, or does it appear and disappear when you reload?</li>
+  <li>What changed in the last day or two: a migration, a password reset, a hosting renewal or plan change, a plugin update, a sudden burst of traffic?</li>
+  <li>Are other websites on the same hosting account down as well?</li>
+</ol>
 <table>
   <thead>
-    <tr><th>Cause</th><th>Typical clue</th></tr>
+    <tr><th>What you see</th><th>Most likely cause</th><th>Start with</th></tr>
   </thead>
   <tbody>
-    <tr><td>Wrong details in wp-config.php</td><td>Right after a migration, a host change, or someone changing the database password</td></tr>
-    <tr><td>Database server down or overloaded</td><td>The error comes and goes, or other sites on the same hosting are down too</td></tr>
-    <tr><td>Hosting limits reached</td><td>Happens during traffic spikes on busy shared hosting</td></tr>
-    <tr><td>Database or user removed</td><td>After hosting changes, an expired plan or a suspended account</td></tr>
-    <tr><td>Corrupted tables</td><td>After a server crash or failed update; the dashboard mentions tables needing repair</td></tr>
-    <tr><td>Tampered wp-config.php</td><td>Rare, but possible after a hack; unfamiliar code in the file</td></tr>
+    <tr><td>Error on every page, started right after a host move</td><td>Old database details still in wp-config.php</td><td>The migration section</td></tr>
+    <tr><td>Error on every page, nothing changed, other sites also down</td><td>Database server down on the host's side</td><td>Step 1</td></tr>
+    <tr><td>Error appears at busy times, then clears</td><td>Connection or resource limits on the hosting plan</td><td>Step 4</td></tr>
+    <tr><td>Front end fails, wp-admin mentions unavailable tables</td><td>Damaged tables</td><td>Step 5</td></tr>
+    <tr><td>Someone recently reset the database password</td><td>Password in wp-config.php no longer matches</td><td>Step 2</td></tr>
+    <tr><td>Hosting panel shows a suspension or expired plan notice</td><td>Account suspended, database unavailable</td><td>Contact the host and settle the account</td></tr>
   </tbody>
 </table>
+
+<h2 id="step-1-is-the-database-server-running">Step 1: Is the database server running?</h2>
+<p>Log in to your hosting panel and try to open phpMyAdmin or the database manager. If it loads and you can see your WordPress tables, the server is up and you can move to Step 2. If phpMyAdmin also fails to connect, or the panel shows a maintenance banner, the problem is on the host's side. On shared hosting you cannot restart the database service yourself, so this is a support ticket, not a DIY fix. Check the host's status page too, and see the wider checks in <a href="/blog/website-down-what-to-do/">what to do when your website is down</a>.</p>
 
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
   <p>Monthly WordPress maintenance: updates, backups, security monitoring, uptime checks and small content changes, so your website stays fast, secure and online.</p>
-  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22%22Error%20Establishing%20a%20Database%20Connection%22%20in%20WordPress%3A%20How%20to%20Fix%20It%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Error%20Establishing%20a%20Database%20Connection%20in%20WordPress%3A%20A%20Diagnosis%20Order%20That%20Finds%20the%20Cause%2C%20What%20to%20Tell%20Your%20Host%2C%20and%20How%20to%20Stop%20It%20Coming%20Back%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="step-1-rule-out-the-hosting-server">Step 1: Rule out the hosting server</h2>
-<p>Many of these errors are on the host's side and fixed by them. Check your host's status page or support chat, and see whether other websites on the same hosting account are also failing. If the error appears on and off, especially at busy times, the database server is likely struggling or hitting connection limits.</p>
-<p>Look in your hosting panel for resource limit warnings or a suspension notice too. For a wider checklist of what to look at when a site won't open, see <a href="/blog/website-down-what-to-do/">website down: what to check, step by step</a>.</p>
-
-<h2 id="step-2-check-the-database-details-in-wp-config-php">Step 2: Check the database details in wp-config.php</h2>
-<p>If the host says everything is running, the connection details are the next suspect. Using your hosting file manager or SFTP, download a copy of wp-config.php before changing anything. Then compare it with the MySQL Databases section of your hosting panel:</p>
-<ol>
-  <li><strong>Database name:</strong> does a database with exactly that name exist? Many panels add your account name as a prefix, and the full name must match</li>
-  <li><strong>Username:</strong> does that user exist, and is it assigned to this database with all privileges?</li>
-  <li><strong>Host:</strong> often "localhost", but some hosts use a separate database server name. Your hosting panel or the host's documentation will tell you</li>
-  <li><strong>Password:</strong> panels rarely show existing passwords, so reset the database user's password in the panel and paste the new one into wp-config.php</li>
-</ol>
-<p>Watch for stray spaces and keep the quote marks around each value intact. Save the file and reload the site. Never paste the contents of wp-config.php into public forums or screenshots, because it contains working passwords.</p>
-
-<h2 id="step-3-repair-corrupted-tables">Step 3: Repair corrupted tables</h2>
-<p>If the site connects but the dashboard says tables are unavailable, WordPress has a built-in repair tool:</p>
-<ol>
-  <li>Take a database backup first, from your hosting panel or phpMyAdmin</li>
-  <li>Add this line to wp-config.php, above the line that says to stop editing: <code>define( 'WP_ALLOW_REPAIR', true );</code></li>
-  <li>Visit yoursite.com/wp-admin/maint/repair.php and choose Repair Database</li>
-  <li>Remove the line straight afterwards, because that repair page works without anyone logging in</li>
-</ol>
-<p>Your host can also check and repair tables from their side. If repair doesn't fix things, restoring the database is the next step.</p>
-
-<h2 id="step-4-restore-the-database-from-a-backup">Step 4: Restore the database from a backup</h2>
-<p>If the database was deleted or is badly damaged, restore the latest good copy from your host's backups or your backup plugin; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</p>
-<p>On a WooCommerce store or booking site, remember that anything received after the backup was taken, such as orders, bookings and enquiries, won't be in the restored copy. Note them from your emails and payment gateway dashboard before you restore.</p>
-
-<h2 id="after-a-migration-the-most-common-case">After a migration: the most common case</h2>
-<p>Moving to new hosting is the classic trigger. The new host gives you a new database name, user and password, and wp-config.php still has the old ones. Other migration-related issues:</p>
+<h2 id="step-2-check-the-four-details-in-wp-config-php">Step 2: Check the four details in wp-config.php</h2>
+<p>wp-config.php sits in the main folder of your WordPress install. Open it through the hosting file manager or SFTP and find these lines (the values here are placeholders):</p>
+<pre><code>define( 'DB_NAME', 'account_wpdb' );
+define( 'DB_USER', 'account_wpuser' );
+define( 'DB_PASSWORD', 'the-password-here' );
+define( 'DB_HOST', 'localhost' );</code></pre>
+<p>Now compare each one with the databases section of your hosting panel:</p>
 <ul>
-  <li>The database import failed partway, leaving tables missing</li>
-  <li>DNS is still pointing some visitors to the old server, where the hosting may already be cancelled</li>
-  <li>If you see the WordPress installation screen instead of the error, the table prefix in wp-config.php probably doesn't match the imported tables</li>
+  <li><strong>DB_NAME:</strong> the full name, including any account prefix the panel adds automatically. A missing prefix is a very common slip.</li>
+  <li><strong>DB_USER:</strong> the user must exist and must be assigned to this database with full privileges. A user that exists but was never linked to the database will fail.</li>
+  <li><strong>DB_PASSWORD:</strong> panels rarely display passwords, so reset the database user's password in the panel and paste the new one in. Keep the single quotes intact and check for a stray space at either end.</li>
+  <li><strong>DB_HOST:</strong> usually localhost, but not always. See the note below.</li>
 </ul>
-<p>Keep the old hosting active until the new site is fully tested and DNS has settled.</p>
+<h3>Getting DB_HOST right</h3>
+<p>Some hosts run the database on a separate server and give you a hostname or an IP address instead of localhost. Others need a port number added after a colon, or a socket path. The correct value is in your host's documentation or the database section of the panel, so copy it from there rather than guessing. A host moving you to a new server can change it.</p>
+<p>Never paste wp-config.php into a public forum, a group chat or a screenshot. It contains working passwords and, further down, your security keys.</p>
 
-<h2 id="how-to-stop-it-happening-again">How to stop it happening again</h2>
+<h2 id="step-3-test-the-details-outside-wordpress">Step 3: Test the details outside WordPress</h2>
+<p>If the details look right but the error stays, test them on their own. Create a file called dbtest.php in the same folder, with your own values in place of the placeholders:</p>
+<pre><code>&lt;?php
+$link = mysqli_connect( 'localhost', 'account_wpuser', 'the-password-here', 'account_wpdb' );
+if ( ! $link ) {
+  echo 'Failed: ' . mysqli_connect_error();
+} else {
+  echo 'Connected';
+}</code></pre>
+<p>Open yoursite.in/dbtest.php in a browser, read the result, and <strong>delete the file straight away</strong>, because it contains your password in plain text. The message tells you which detail is wrong. Exact wording varies between server versions, but the patterns are consistent:</p>
+<table>
+  <thead>
+    <tr><th>Result</th><th>What it usually means</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Connected</td><td>The details work. Look at the table prefix, damaged tables or a recent plugin change</td></tr>
+    <tr><td>Access denied for user</td><td>Wrong username or password, or the user is not assigned to the database</td></tr>
+    <tr><td>Unknown database</td><td>Wrong database name, or the database was deleted</td></tr>
+    <tr><td>Connection refused, timed out, or host not found</td><td>Wrong DB_HOST, or the database server is down</td></tr>
+    <tr><td>Too many connections</td><td>The server or your account has hit its connection limit; see Step 4</td></tr>
+  </tbody>
+</table>
+
+<h2 id="step-4-hosting-limits-and-an-overloaded-server">Step 4: Hosting limits and an overloaded server</h2>
+<p>An error that comes and goes is rarely a typo. More often the database server is refusing new connections because your account, or a noisy neighbour on the same shared server, is using too much. Typical triggers:</p>
 <ul>
-  <li>Store your database details securely, in a password manager, not in an email thread</li>
-  <li>Choose hosting with enough resources for your traffic; see <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting in India</a></li>
-  <li>Use caching, which reduces how often pages need the database</li>
-  <li>Keep automatic daily backups that include the database, stored off the server</li>
-  <li>Set up <a href="/blog/uptime-monitoring-explained/">uptime monitoring</a> so you hear about outages before your customers do</li>
+  <li>A traffic spike from a campaign, a news mention or a sale</li>
+  <li>Bots hammering the login page, XML-RPC or search, each request opening a database connection</li>
+  <li>A plugin running slow or repeated queries</li>
+  <li>Heavy scheduled tasks firing at the same time as real visitors</li>
 </ul>
+<p>Check the resource usage section of your panel for CPU, memory or entry process limits being hit. Page caching helps a great deal, because cached pages are served without touching the database at all. If the site simply needs more than its plan offers, the comparison in <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a> explains what you get by moving up a tier.</p>
 
-<p>Site down with a database error, or planning a move and want to avoid one? See <a href="/wordpress-maintenance/">WordPress maintenance and support</a> and <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<h2 id="step-5-damaged-tables">Step 5: Damaged tables</h2>
+<p>Tables can be damaged by a server crash, a full disk or an update interrupted halfway. Take a database export first if you can, then use WordPress's built-in repair page. Add this line to wp-config.php, just above the line that says to stop editing:</p>
+<pre><code>define( 'WP_ALLOW_REPAIR', true );</code></pre>
+<p>Visit yoursite.in/wp-admin/maint/repair.php, choose Repair Database, and <strong>remove the line as soon as it finishes</strong>, because that page works for anyone, without a login.</p>
+<p>A word on wp_options, the table that holds your site address and settings. When it is damaged, or swollen with old autoloaded data left behind by removed plugins, symptoms can include this error, a blank site or a very slow admin. Repair may help, but it is not guaranteed: the repair commands work best on older MyISAM tables, while InnoDB tables, which most current hosts use, usually recover through the server's own processes or a restore. If repair reports errors it cannot fix, stop there and ask your host before trying anything stronger. For keeping the table lean once the site is back, see <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a>.</p>
+
+<h2 id="step-6-restore-from-a-backup">Step 6: Restore from a backup</h2>
+<p>If the database has been deleted or repair fails, restore the most recent good copy from your host's backups or your backup plugin, following the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>. On a WooCommerce store or a booking site, anything that arrived after that backup was taken will be missing, so list recent orders, bookings and form enquiries from your emails and payment gateway dashboard before you restore, and re-enter or follow up on them afterwards.</p>
+
+<h2 id="after-a-migration-the-separate-checklist">After a migration: the separate checklist</h2>
+<p>A host move is the single most common trigger, and the causes are predictable. Work down this list:</p>
+<ol>
+  <li>The new host created a new database, user and password. wp-config.php must use those, not the old ones.</li>
+  <li>The import finished completely. Compare the number of tables with the old database; a timeout during import can leave some missing.</li>
+  <li>The table prefix matches. If wp-config.php says <code>$table_prefix = 'wp_';</code> but the imported tables start with something else, you will usually see the installation screen rather than this error.</li>
+  <li>DNS has fully switched. Some visitors may still reach the old server, and if that hosting has already been cancelled, they see an error the rest of the world does not.</li>
+  <li>DB_HOST is right for the new host, which may not use localhost.</li>
+</ol>
+<p>Leave the old hosting account active for a week or two after the switch, as a fallback. A planned <a href="/wordpress-migration/">WordPress migration</a> copies and tests everything on the new host before DNS is switched, which is how this error is avoided in the first place.</p>
+
+<h2 id="what-to-tell-your-host">What to tell your host</h2>
+<p>Support teams answer faster when the first message rules things out. Something like this works well:</p>
+<blockquote>My WordPress site at yoursite.in has shown "Error establishing a database connection" since about 10:30 today. I have confirmed the database name, user and host in wp-config.php match the panel, and reset the user's password. A direct connection test returns "Too many connections". Could you check that the database service is running for my account, whether I am hitting a connection or resource limit, and share any database errors in the server logs from that time?</blockquote>
+<p>Do not send your database password in a support chat; a good host will never need it from you.</p>
+
+<h2 id="prevention-and-monitoring">Prevention and monitoring</h2>
+<ul>
+  <li>Set up uptime monitoring with a keyword check, so you are alerted if the homepage stops showing a word it should always contain; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a></li>
+  <li>Keep database details in a password manager, and whenever anyone resets the database password, update wp-config.php in the same sitting</li>
+  <li>Use page caching so ordinary visits do not hit the database</li>
+  <li>Block abusive bots and limit login attempts</li>
+  <li>Keep daily backups that include the database, stored away from the server</li>
+  <li>Watch renewal dates, since an expired or suspended hosting account takes the database with it</li>
+</ul>
+<p>Other common messages, such as the critical error notice or a white screen, are covered in <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a>.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>Have I lost my website content?</h3>
+<p>Usually not. The error means WordPress cannot reach the database, not that the database is gone. Only if the database was deleted or badly damaged do you need a backup, which is why a database export is the first thing to take when phpMyAdmin will open.</p>
+<h3>Why does the error appear and disappear?</h3>
+<p>Intermittent errors point to the server or your hosting limits rather than wrong settings. Traffic spikes, bots and slow plugin queries can exhaust the connections available to your account. Caching, bot blocking and, if needed, a bigger hosting plan are the usual fixes.</p>
+<h3>Can a plugin cause this error?</h3>
+<p>Indirectly, yes. A plugin that runs heavy or repeated queries can overload the database until new connections are refused. If the error began after a plugin update, rename that plugin's folder over SFTP to switch it off and see whether the site recovers.</p>
+<h3>Is it safe to leave WP_ALLOW_REPAIR switched on?</h3>
+<p>No. The repair page does not ask for a login, so anyone who knows the address could run it. Add the line, run the repair, and remove it straight away.</p>
+<h3>How can I tell whether it is my host's problem or my site's?</h3>
+<p>If phpMyAdmin will not connect either, or other sites on the same account are down, it is on the host's side. If phpMyAdmin works and the test script connects, the problem is in your WordPress settings or tables.</p>
+
+<p>If your site is down with this error now, or you are planning a host move and want to avoid it, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a> or <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22%22Error%20Establishing%20a%20Database%20Connection%22%20in%20WordPress%3A%20How%20to%20Fix%20It%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Error%20Establishing%20a%20Database%20Connection%20in%20WordPress%3A%20A%20Diagnosis%20Order%20That%20Finds%20the%20Cause%2C%20What%20to%20Tell%20Your%20Host%2C%20and%20How%20to%20Stop%20It%20Coming%20Back%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=%22Error%20Establishing%20a%20Database%20Connection%22%20in%20WordPress%3A%20How%20to%20Fix%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=Error%20Establishing%20a%20Database%20Connection%20in%20WordPress%3A%20A%20Diagnosis%20Order%20That%20Finds%20the%20Cause%2C%20What%20to%20Tell%20Your%20Host%2C%20and%20How%20to%20Stop%20It%20Coming%20Back%20https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=%22Error%20Establishing%20a%20Database%20Connection%22%20in%20WordPress%3A%20How%20to%20Fix%20It&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=Error%20Establishing%20a%20Database%20Connection%20in%20WordPress%3A%20A%20Diagnosis%20Order%20That%20Finds%20the%20Cause%2C%20What%20to%20Tell%20Your%20Host%2C%20and%20How%20to%20Stop%20It%20Coming%20Back&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/error-establishing-database-connection-fix/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -286,21 +343,24 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#what-the-error-means">What the error means</a></li>
-              <li><a href="#the-usual-causes">The usual causes</a></li>
-              <li><a href="#step-1-rule-out-the-hosting-server">Step 1: Rule out the hosting server</a></li>
-              <li><a href="#step-2-check-the-database-details-in-wp-config-php">Step 2: Check the database details in wp-config.php</a></li>
-              <li><a href="#step-3-repair-corrupted-tables">Step 3: Repair corrupted tables</a></li>
-              <li><a href="#step-4-restore-the-database-from-a-backup">Step 4: Restore the database from a backup</a></li>
-              <li><a href="#after-a-migration-the-most-common-case">After a migration: the most common case</a></li>
-              <li><a href="#how-to-stop-it-happening-again">How to stop it happening again</a></li>
+              <li><a href="#two-minutes-of-triage-before-you-change-anything">Two minutes of triage before you change anything</a></li>
+              <li><a href="#step-1-is-the-database-server-running">Step 1: Is the database server running?</a></li>
+              <li><a href="#step-2-check-the-four-details-in-wp-config-php">Step 2: Check the four details in wp-config.php</a></li>
+              <li><a href="#step-3-test-the-details-outside-wordpress">Step 3: Test the details outside WordPress</a></li>
+              <li><a href="#step-4-hosting-limits-and-an-overloaded-server">Step 4: Hosting limits and an overloaded server</a></li>
+              <li><a href="#step-5-damaged-tables">Step 5: Damaged tables</a></li>
+              <li><a href="#step-6-restore-from-a-backup">Step 6: Restore from a backup</a></li>
+              <li><a href="#after-a-migration-the-separate-checklist">After a migration: the separate checklist</a></li>
+              <li><a href="#what-to-tell-your-host">What to tell your host</a></li>
+              <li><a href="#prevention-and-monitoring">Prevention and monitoring</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote, usually within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22%22Error%20Establishing%20a%20Database%20Connection%22%20in%20WordPress%3A%20How%20to%20Fix%20It%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Error%20Establishing%20a%20Database%20Connection%20in%20WordPress%3A%20A%20Diagnosis%20Order%20That%20Finds%20the%20Cause%2C%20What%20to%20Tell%20Your%20Host%2C%20and%20How%20to%20Stop%20It%20Coming%20Back%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>
