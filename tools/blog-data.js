@@ -64717,7 +64717,7 @@ done</code></pre>
     slug: 'shopify-gst-invoices-india',
     seoTitle: 'GST on Shopify in India: Tax Settings, HSN and Invoices',
     title: 'GST on Shopify for Indian Sellers: Tax Settings, HSN Codes, GST Invoice Apps and B2B GSTIN Capture',
-    description: 'Set up GST on Shopify in India: tax settings, prices inclusive of tax, HSN codes, choosing a GST invoice app, capturing B2B GSTIN and what to confirm with your CA.',
+    description: 'Set up GST on Shopify in India: tax settings, tax-inclusive prices, HSN codes, a GST invoice app, B2B GSTIN capture and what to confirm with your CA.',
     date: '2026-10-27',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
