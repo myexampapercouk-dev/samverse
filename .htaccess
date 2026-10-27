@@ -23,4 +23,8 @@ AddType application/manifest+json .webmanifest
 	Header always set Referrer-Policy "strict-origin-when-cross-origin"
 	Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
 	Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+	# Pages must always be revalidated so new content shows straight away (CSS/JS stay cached)
+	<FilesMatch "\.html?$">
+		Header set Cache-Control "no-cache"
+	</FilesMatch>
 </IfModule>
