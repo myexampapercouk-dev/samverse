@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Not Sending Emails? How to Fix It With SMTP</title>
-  <meta name="description" content="Password resets, WooCommerce order emails or form enquiries not arriving? Why WordPress emails fail and how to fix them with SMTP or a transactional service.">
+  <title>WordPress Not Sending Emails? Fix It With SMTP | Samverse</title>
+  <meta name="description" content="WordPress not sending emails? Why form, order and password reset emails go missing, and how to fix it with SMTP, SPF, DKIM and a proper sender address.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-not-sending-emails-smtp/">
-  <meta property="og:title" content="WordPress Not Sending Emails? How to Fix It With SMTP">
-  <meta property="og:description" content="Password resets, WooCommerce order emails or form enquiries not arriving? Why WordPress emails fail and how to fix them with SMTP or a transactional service.">
+  <meta property="og:title" content="WordPress Not Sending Emails? Fix It With SMTP | Samverse">
+  <meta property="og:description" content="WordPress not sending emails? Why form, order and password reset emails go missing, and how to fix it with SMTP, SPF, DKIM and a proper sender address.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-not-sending-emails-smtp.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-not-sending-emails-smtp/#article",
       "headline": "WordPress Not Sending Emails? How to Fix It With SMTP",
-      "description": "Password resets, WooCommerce order emails or form enquiries not arriving? Why WordPress emails fail and how to fix them with SMTP or a transactional service.",
+      "description": "WordPress not sending emails? Why form, order and password reset emails go missing, and how to fix it with SMTP, SPF, DKIM and a proper sender address.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-09-28",
+      "dateModified": "2026-10-28",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-not-sending-emails-smtp/",
       "image": "https://samverse.space/assets/og/blog-wordpress-not-sending-emails-smtp.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>WordPress Not Sending Emails? How to Fix It With SMTP</h1>
-          <p class="post-dek">Password resets, WooCommerce order emails or form enquiries not arriving? Why WordPress emails fail and how to fix them with SMTP or a transactional service.</p>
+          <p class="post-dek">WordPress not sending emails? Why form, order and password reset emails go missing, and how to fix it with SMTP, SPF, DKIM and a proper sender address.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · 5 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-28">28 October 2026</time> · 7 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Not%20Sending%20Emails%3F%20How%20to%20Fix%20It%20With%20SMTP%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-not-sending-emails-smtp%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -154,40 +154,48 @@
             <summary>On this page</summary>
             <ol>
               <li><a href="#why-wordpress-emails-go-missing">Why WordPress emails go missing</a></li>
-              <li><a href="#first-confirm-it-s-really-an-email-problem">First, confirm it's really an email problem</a></li>
-              <li><a href="#the-fix-smtp-or-a-transactional-email-service">The fix: SMTP or a transactional email service</a></li>
+              <li><a href="#first-confirm-it-39-s-really-an-email-problem">First, confirm it&#39;s really an email problem</a></li>
+              <li><a href="#how-to-fix-wordpress-not-sending-emails-with-smtp">How to fix WordPress not sending emails with SMTP</a></li>
               <li><a href="#how-to-set-it-up">How to set it up</a></li>
+              <li><a href="#a-test-checklist-after-the-fix">A test checklist after the fix</a></li>
               <li><a href="#password-resets-orders-and-forms-specific-checks">Password resets, orders and forms: specific checks</a></li>
+              <li><a href="#when-emails-stop-again-after-working">When emails stop again after working</a></li>
               <li><a href="#keep-website-email-working">Keep website email working</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>WordPress sends email through the server's basic mail function by default, so password resets, order emails and form alerts often land in spam or vanish.</li>
-              <li>Send through an authenticated SMTP mailbox or a transactional email service, with SPF, DKIM and DMARC set up for your domain.</li>
-              <li>Use a From address on your own domain, put visitors in Reply-To, keep an email log and test forms and orders regularly.</li>
+              <li>WordPress sends mail through your hosting server by default, which is often blocked or marked as spam, so form and order emails quietly go missing.</li>
+              <li>The reliable fix is to send through SMTP or a transactional email service, using an address on your own domain with SPF, DKIM and DMARC set up.</li>
+              <li>After the fix, test every email type, keep a mail log, and recheck after hosting, domain or plugin changes.</li>
             </ul>
           </div>
-<p>A customer places an order but never gets a confirmation. You click "Lost your password?" and the reset link never arrives. Your contact form says "Thank you", but no enquiry reaches your inbox. When WordPress emails go missing, the website itself is usually fine; the problem is how it sends email. Here's why it happens and how to fix it properly with SMTP or a transactional email service.</p>
+<p>If WordPress is not sending emails, the cause is almost always that it relies on your hosting server&#39;s basic mail function, which many hosts restrict and many inboxes distrust. The fix is to send through SMTP or a transactional email service with an address on your own domain, plus correct SPF and DKIM records.</p>
+<p>Missing emails are easy to miss. A contact form looks like it works, but enquiries never arrive. WooCommerce takes orders, but customers get no confirmation. Password reset links never turn up. This guide explains why it happens and how to fix it properly.</p>
 
 <h2 id="why-wordpress-emails-go-missing">Why WordPress emails go missing</h2>
-<p>By default, WordPress hands every email to your web server's built-in mail function. That's simple, but unreliable:</p>
+<p>By default, WordPress uses PHP mail on your web server to send messages. That causes several problems:</p>
 <ul>
-  <li><strong>No authentication.</strong> The server usually isn't listed in your domain's SPF record or signing with DKIM, so Gmail, Outlook and others treat the email as suspicious and send it to spam or reject it.</li>
-  <li><strong>Hosts restrict it.</strong> Many hosts limit or disable server mail to stop spam, sometimes with low hourly sending limits.</li>
-  <li><strong>Shared reputation.</strong> On shared hosting, your emails leave from a server that many other sites also use.</li>
-  <li><strong>The wrong "From" address.</strong> WordPress sends from wordpress@yourdomain by default, an address that often doesn't exist, and some form plugins send "from" the visitor's own email, which fails authentication checks.</li>
-  <li><strong>Email hosted elsewhere.</strong> If your mailbox is on Google Workspace, Zoho Mail or Microsoft 365 but your hosting thinks it handles mail locally, emails to your own domain may never leave the server. In cPanel, this is the Email Routing setting.</li>
+<li><strong>The host restricts sending:</strong> some hosts limit or disable PHP mail to prevent spam, especially on shared and cloud plans.</li>
+<li><strong>No authentication:</strong> the message is not properly signed for your domain, so Gmail, Outlook and Zoho treat it with suspicion.</li>
+<li><strong>Mismatched sender:</strong> a form may send &quot;from&quot; the visitor&#39;s Gmail address via your server, which looks like spoofing.</li>
+<li><strong>Shared server reputation:</strong> on shared hosting, other sites on the same server may have damaged its sending reputation.</li>
+<li><strong>Missing DNS records:</strong> without SPF, DKIM and DMARC for your domain, receiving servers have no way to confirm the email is genuine.</li>
 </ul>
+<p>The result is mail that is rejected, silently dropped or delivered to spam, and WordPress usually reports nothing.</p>
 
-<h2 id="first-confirm-it-s-really-an-email-problem">First, confirm it's really an email problem</h2>
+<h2 id="first-confirm-it-39-s-really-an-email-problem">First, confirm it&#39;s really an email problem</h2>
+<p>Before changing settings, check what is actually failing:</p>
 <ol>
-  <li><strong>Check the source.</strong> Does the order exist in WooCommerce? Is the enquiry saved in your form plugin's entries? If yes, the site works and only the email failed.</li>
-  <li><strong>Check spam folders and recipients.</strong> Confirm notifications go to an inbox someone actually reads: the administration email in Settings → General, the recipients in WooCommerce's email settings, and each form's notification settings.</li>
-  <li><strong>Send a test</strong> to a Gmail address and to your business address. If one arrives and the other doesn't, you've already narrowed down the cause.</li>
+<li>Check spam and promotions folders of the receiving inbox, including on the phone.</li>
+<li>Look at the form plugin&#39;s saved entries, if it stores them. If entries are saved but no email arrived, the form works and email is the problem.</li>
+<li>Check the admin email under Settings, General and the notification settings in your form or WooCommerce emails; a typo is common.</li>
+<li>Send a test from the site to a Gmail address and to an address on your own domain, and note which fails.</li>
+<li>Ask your host whether outgoing PHP mail is limited on your plan.</li>
 </ol>
-<p>If submissions arrive but genuine enquiries are still few, the problem may be the form itself; see <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a>.</p>
+<p>If forms are not saving entries at all, the issue may be the form itself, a caching plugin or a spam filter; see <a href="/blog/contact-form-not-getting-enquiries/">contact form not getting enquiries</a>.</p>
 
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
@@ -195,47 +203,87 @@
   <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20Not%20Sending%20Emails%3F%20How%20to%20Fix%20It%20With%20SMTP%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="the-fix-smtp-or-a-transactional-email-service">The fix: SMTP or a transactional email service</h2>
-<p>Instead of the server's mail function, WordPress should send through a proper email service that signs in with credentials and is authorised to send for your domain. An SMTP plugin makes this switch for every email the site sends, whichever plugin created it.</p>
+<h2 id="how-to-fix-wordpress-not-sending-emails-with-smtp">How to fix WordPress not sending emails with SMTP</h2>
+<p>SMTP sends email through a real, authenticated mail account or service instead of the web server. Your options:</p>
 <table>
-  <thead><tr><th>Option</th><th>Good for</th><th>Watch out for</th></tr></thead>
-  <tbody>
-    <tr><td>Your business mailbox over SMTP (Google Workspace, Zoho Mail, Microsoft 365 or host email)</td><td>Brochure sites with a few form emails a day</td><td>Mailbox sending limits, and the connection breaking when passwords or security settings change</td></tr>
-    <tr><td>A transactional email service (for example Amazon SES, Brevo, Mailgun, Postmark or ZeptoMail)</td><td>Online stores, membership sites and busy forms</td><td>Domain verification, DNS records and account approval before you can send</td></tr>
-    <tr><td>Your host's SMTP server</td><td>Simple sites on good hosting</td><td>Hourly limits and shared server reputation</td></tr>
-  </tbody>
+<thead><tr><th>Option</th><th>Suits</th><th>Things to note</th></tr></thead>
+<tbody>
+<tr><td>Your business email account (Google Workspace, Zoho Mail, Microsoft 365)</td><td>Low-volume sites: contact forms, a few orders</td><td>Sending limits apply; may need an app password or OAuth connection</td></tr>
+<tr><td>Hosting email account (for example Hostinger email)</td><td>Small sites already using host email</td><td>Reputation depends on the host&#39;s mail servers</td></tr>
+<tr><td>Transactional email service (for example Brevo, Mailgun, Amazon SES, SendGrid, Postmark)</td><td>WooCommerce stores, membership sites, higher volumes</td><td>Needs DNS verification; most offer logs and bounce tracking</td></tr>
+</tbody>
 </table>
-<p>Transactional services are built for automated emails like order confirmations and password resets, with delivery logs and bounce tracking. Plans and free allowances change, so check current pricing. Popular SMTP plugins include WP Mail SMTP, FluentSMTP and Post SMTP; use only one at a time.</p>
+<p>For most small Indian business sites, sending through the business email you already use is enough. For stores and sites that send order updates, a transactional service is usually more reliable and gives better logs. Check each provider&#39;s current plans and limits before choosing.</p>
+<p>If you are still choosing email for the business itself, see <a href="/blog/business-email-options/">business email options</a> and the <a href="/blog/hostinger-business-email-setup/">Hostinger business email setup guide</a>.</p>
 
 <h2 id="how-to-set-it-up">How to set it up</h2>
 <ol>
-  <li><strong>Pick a From address on your domain</strong>, such as orders@ or info@yourbusiness.com, and a clear From name.</li>
-  <li><strong>Verify your domain with the service</strong> by adding the SPF and DKIM records it gives you, plus a DMARC record if you don't have one; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>. Keep a single SPF record that includes every sender.</li>
-  <li><strong>Install one SMTP plugin</strong> and enter the service's details: server, port (usually 587 with TLS, or 465 with SSL), and a username and password or API key. Many plugins can also connect to popular services by API, which avoids blocked ports.</li>
-  <li><strong>Force the From address</strong> so every plugin sends from the same verified address.</li>
-  <li><strong>Send test emails</strong> to Gmail and Outlook addresses and check they land in the inbox. In Gmail, "Show original" shows whether SPF, DKIM and DMARC passed.</li>
-  <li><strong>Turn on email logging</strong>, either in the SMTP plugin or with a separate log plugin, so you can see what the site sent and whether anything failed.</li>
+<li><strong>Pick one SMTP plugin.</strong> Well-known options such as WP Mail SMTP, FluentSMTP or Post SMTP all work. Use only one, since two can conflict.</li>
+<li><strong>Choose a from address on your domain,</strong> such as hello@ or orders@yourdomain.in, not a Gmail address. Turn on &quot;force from email&quot; so every plugin uses it.</li>
+<li><strong>Connect the mailer:</strong> enter the SMTP host, port and credentials, or use the provider&#39;s API connection. Prefer OAuth or API keys over saving your main email password.</li>
+<li><strong>Add DNS records:</strong> add or update SPF to include the sending service, add the DKIM record the service gives you, and add a DMARC record. See <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</li>
+<li><strong>Send a test</strong> from the plugin to Gmail and Outlook addresses, and check that it lands in the inbox.</li>
+<li><strong>Turn on email logging</strong> so you can see what was sent and whether it failed.</li>
 </ol>
-<p>With Gmail or Google Workspace, Google no longer accepts a plain password from most apps, so use the plugin's Google sign-in option or an app password. If the connection times out, your host may block outgoing SMTP ports; ask them, or switch to an API connection.</p>
+<p>Keep only one SPF record for the domain. A common mistake is adding a second SPF record instead of merging the new service into the existing one, which breaks both.</p>
+
+<h2 id="a-test-checklist-after-the-fix">A test checklist after the fix</h2>
+<p>A single test email from the SMTP plugin proves the connection works, but not that every message on your site is set up correctly. Run through each email your site actually sends and note the result:</p>
+<table>
+<thead><tr><th>Email</th><th>How to trigger it</th><th>What to check</th></tr></thead>
+<tbody>
+<tr><td>Contact or enquiry form</td><td>Submit the form with a test message</td><td>Arrives in the inbox, Reply-To is the visitor</td></tr>
+<tr><td>New order (store owner)</td><td>Place a test order with a test payment method or COD</td><td>Correct recipient, order details complete</td></tr>
+<tr><td>Order confirmation (customer)</td><td>Same test order, using a Gmail address</td><td>Lands in inbox, logo and GST details correct</td></tr>
+<tr><td>Password reset</td><td>Request a reset for a test user</td><td>Link arrives and works</td></tr>
+<tr><td>New user or booking</td><td>Register or book as a test user</td><td>Both admin and user copies arrive</td></tr>
+</tbody>
+</table>
+<p>Check on both a phone and a computer, and look at the full email headers in Gmail (Show original) to confirm that SPF, DKIM and DMARC show as passed. If one of them fails, the DNS record usually needs correcting or more time to update.</p>
+<p>Keep a note of which plugin sends which email and which address it uses. When someone new manages the site, or you change a plugin, this short list saves a lot of guesswork. It is also worth agreeing who in the business watches the shared inbox, so that a working email system is not undone by enquiries sitting unread.</p>
 
 <h2 id="password-resets-orders-and-forms-specific-checks">Password resets, orders and forms: specific checks</h2>
-<h3>Password reset emails</h3>
-<p>If you're locked out because the reset email never comes, another administrator can reset your password from the Users screen, or a developer can set one through the hosting database. Fix sending before you change the administration email address, too: WordPress emails the new address to confirm the change, and that email needs to arrive.</p>
-<h3>WooCommerce order emails</h3>
-<p>In WooCommerce → Settings → Emails, check each email is enabled and the "New order" recipient is correct. WooCommerce sends the new order email when an order moves to processing, on-hold or completed, so an order stuck in "Pending payment", for example because the gateway never confirmed a UPI or card payment, won't trigger it. For branding and content, see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce order emails</a>.</p>
-<h3>Contact form notifications</h3>
-<p>Set the From address to your own domain and put the visitor's email in the Reply-To field, so you can still reply with one click. Make sure entries are saved in the dashboard too, and consider a second alert such as WhatsApp or a Google Sheet, so one failed email never means a lost lead.</p>
-
-<h2 id="keep-website-email-working">Keep website email working</h2>
 <ul>
-  <li>Check the email log and send a test form entry every month</li>
-  <li>Update the SMTP settings whenever the mailbox password, app password or API key changes</li>
-  <li>Copy all email DNS records (MX, SPF, DKIM and DMARC) when changing hosting or nameservers</li>
-  <li>Watch sending limits as your store grows, especially before festival sales</li>
-  <li>If you get bounces for emails you never sent, investigate straight away; see <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam emails</a></li>
+<li><strong>Contact forms:</strong> set the from address to your domain, and put the visitor&#39;s email in the Reply-To field so replying still reaches them.</li>
+<li><strong>WooCommerce:</strong> under WooCommerce, Settings, Emails, check each email is enabled, the recipient is correct and the from address matches your SMTP account. See <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a>.</li>
+<li><strong>Password resets:</strong> if a user never gets the link, check the mail log first, then the user&#39;s spam folder.</li>
+<li><strong>Membership and booking plugins:</strong> some have their own email settings that override the defaults; check each one.</li>
 </ul>
 
-<p>Need reliable website email without the trial and error? I can set up SMTP, DNS records and testing as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, or from the start on a new build through <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<h2 id="when-emails-stop-again-after-working">When emails stop again after working</h2>
+<p>Email that worked for months can stop after a change elsewhere. The usual triggers are:</p>
+<ul>
+<li>Moving to new hosting or a new server, which may reset mail settings or block a port</li>
+<li>Changing nameservers or DNS provider without copying SPF, DKIM and DMARC records</li>
+<li>Changing the business email password, which breaks a saved SMTP password</li>
+<li>An expired API key or a sending limit reached on the provider</li>
+<li>A plugin update that resets a from address or adds a second mailer</li>
+</ul>
+<p>The mail log usually shows the error. After any hosting or domain change, send a test email as part of your checklist. If you are planning a move, <a href="/wordpress-migration/">website migration</a> should include email and DNS checks.</p>
+
+<h2 id="keep-website-email-working">Keep website email working</h2>
+<p>Once fixed, a little monitoring prevents the problem from returning:</p>
+<ul>
+<li>Check the mail log for failures once a month</li>
+<li>Send yourself a test form entry after plugin updates</li>
+<li>Watch for sudden spikes in sent emails, which can mean a hacked site or a spam form; see <a href="/blog/wordpress-site-sending-spam-emails/">WordPress site sending spam emails</a></li>
+<li>Store form entries in the database as a backup, so a lost email never means a lost enquiry</li>
+</ul>
+<p>These checks fit naturally into a regular maintenance routine.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>Why is WordPress not sending emails?</h3>
+<p>Usually because it sends through the server&#39;s PHP mail, which the host may restrict and inboxes may distrust. Sending through SMTP with SPF and DKIM set up normally fixes it.</p>
+<h3>Is SMTP free for WordPress?</h3>
+<p>The common SMTP plugins have free versions, and many business email accounts and transactional services include some free sending. Check the current limits of the service you choose.</p>
+<h3>Why do my WordPress emails go to spam?</h3>
+<p>Missing or wrong SPF, DKIM or DMARC records, a from address on a free email domain, or poor server reputation. Fix the DNS records and send from an address on your domain.</p>
+<h3>Can I use Gmail SMTP for WordPress?</h3>
+<p>You can use a Google Workspace account on your domain for low volumes. A personal Gmail address as the sender is not recommended for a business site.</p>
+<h3>Why did WooCommerce stop sending order emails?</h3>
+<p>Check that each email is enabled in WooCommerce settings, then look at the SMTP mail log. Recent hosting, DNS or password changes are the most common causes.</p>
+
+<p>If your forms or order emails are not arriving and you want it fixed properly, I can set up SMTP, DNS records and logging. See <a href="/wordpress-maintenance/">WordPress maintenance and support</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>. Businesses in Maharashtra can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -272,11 +320,14 @@
             <strong>On this page</strong>
             <ol>
               <li><a href="#why-wordpress-emails-go-missing">Why WordPress emails go missing</a></li>
-              <li><a href="#first-confirm-it-s-really-an-email-problem">First, confirm it's really an email problem</a></li>
-              <li><a href="#the-fix-smtp-or-a-transactional-email-service">The fix: SMTP or a transactional email service</a></li>
+              <li><a href="#first-confirm-it-39-s-really-an-email-problem">First, confirm it&#39;s really an email problem</a></li>
+              <li><a href="#how-to-fix-wordpress-not-sending-emails-with-smtp">How to fix WordPress not sending emails with SMTP</a></li>
               <li><a href="#how-to-set-it-up">How to set it up</a></li>
+              <li><a href="#a-test-checklist-after-the-fix">A test checklist after the fix</a></li>
               <li><a href="#password-resets-orders-and-forms-specific-checks">Password resets, orders and forms: specific checks</a></li>
+              <li><a href="#when-emails-stop-again-after-working">When emails stop again after working</a></li>
               <li><a href="#keep-website-email-working">Keep website email working</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
