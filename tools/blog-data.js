@@ -38959,9 +38959,11 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-pet-shops-grooming',
-    title: 'Websites for Pet Shops, Pet Grooming and Boarding Services',
-    description: 'What a pet shop, grooming salon or boarding website needs: an online store for food and supplies, grooming slot booking, boarding enquiries and pet safety.',
+    seoTitle: 'Website for Pet Shops and Grooming in India',
+    title: 'Website for Pet Shops and Grooming Salons in India: Store, Bookings and Trust',
+    description: 'Plan a website for a pet shop or grooming salon in India: online store on WooCommerce or Shopify, grooming bookings, delivery, COD and local SEO basics.',
     date: '2026-09-28',
+    updated: '2026-10-28',
     category: 'Industries',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -39057,7 +39059,45 @@ add_action( 'after_setup_theme', function () {
 <h2>Speed and mobile</h2>
 <p>Most pet owners will visit on their phones. Compress product and gallery photos, keep the store fast even with hundreds of products, and keep call, WhatsApp and "Book grooming" buttons easy to reach.</p>
 
-<p>Ready to sell pet supplies online with grooming and boarding bookings on the same site? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for a services-first site.</p>
+<h2>Website for pet shops: WooCommerce or Shopify?</h2>
+<p>Both platforms can run a pet supplies store in India with UPI, cards and cash on delivery. The better choice depends on what else the site must do.</p>
+<table>
+<thead><tr><th>Need</th><th>WooCommerce</th><th>Shopify</th></tr></thead>
+<tbody>
+<tr><td>Grooming or boarding bookings on the same site</td><td>Booking plugins integrate with WordPress</td><td>Needs a booking app</td></tr>
+<tr><td>Simple supplies store with little upkeep</td><td>Needs hosting and updates</td><td>Hosting and updates handled for you</td></tr>
+<tr><td>Food variations by weight or flavour</td><td>Variable products</td><td>Variants and options</td></tr>
+<tr><td>Blog content on pet care</td><td>Strong, flexible blogging</td><td>Basic blog built in</td></tr>
+<tr><td>Cash on delivery and pin code checks</td><td>Plugins or custom setup</td><td>COD built in, rules via apps</td></tr>
+</tbody>
+</table>
+
+<h2>Delivery, repeat orders and subscriptions</h2>
+<p>Pet food is a repeat purchase. Make reordering easy: a customer account with order history, a &quot;buy again&quot; option and clear delivery areas. If you deliver locally from your shop, show the pin codes you serve before checkout so nobody orders from outside the area.</p>
+<p>Subscriptions for food or litter can be set up on both platforms with an extension or app, but start only once you know customers want them, and make pausing or cancelling simple.</p>
+<p>Heavy bags change shipping costs, so set weight-based rates and test them on real orders. Perishable treats or live fish need rules about where and how fast you ship.</p>
+
+<h2>Content that brings local searches</h2>
+<ul>
+<li>A grooming page per service, such as bath, haircut or tick treatment, listing breeds or coat types you handle.</li>
+<li>A page for each area you serve if you offer pick-up, with genuine details, not copied text.</li>
+<li>Short pet care guides that answer the questions you hear at the counter, reviewed by a vet where health is involved.</li>
+<li>Photos of your actual salon, staff and equipment.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What should a website for pet shops include?</h3>
+<p>Product categories, clear delivery areas, grooming services with booking, opening hours, your address, real photos and easy WhatsApp or phone contact.</p>
+<h3>Can I take grooming bookings online?</h3>
+<p>Yes. A booking system can show available slots, collect pet details and send reminders. Ask for breed, size and temperament so you can plan time.</p>
+<h3>Is Shopify good for a pet supplies store in India?</h3>
+<p>Yes, for a supply-led shop that wants a store with little upkeep. If bookings and content matter as much as the store, WooCommerce may fit better.</p>
+<h3>Should I show grooming prices online?</h3>
+<p>Showing starting prices or what affects the price, such as size and coat condition, reduces repeat questions and sets expectations.</p>
+<h3>How can a pet shop rank locally?</h3>
+<p>Keep your Google Business Profile complete, use consistent address details, build service pages for grooming and boarding, and ask happy customers for reviews.</p>
+
+<p>For the store, see <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/shopify-developer/">Shopify development</a>. To find a developer for your city, see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
@@ -39732,10 +39772,11 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-artists-art-galleries',
-    seoTitle: 'Websites for Artists and Art Galleries: Selling Art Online',
-    title: 'Websites for Artists and Art Galleries: Portfolios, Sales and Commissions',
-    description: 'How artists and art galleries can build a website that sells: portfolios, artwork pages, selling originals and prints online, commissions and exhibitions.',
+    seoTitle: 'Website for Artists and Art Galleries in India',
+    title: 'Website for Artists and Art Galleries in India: Portfolio, Sales and Commissions',
+    description: 'How to plan a website for artists and art galleries in India: a clear portfolio, selling originals and prints on WooCommerce or Shopify, and commissions.',
     date: '2026-09-28',
+    updated: '2026-10-28',
     category: 'Industries',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -39824,7 +39865,44 @@ add_action( 'after_setup_theme', function () {
 </ul>
 <p>Large, high-quality images can make an art website slow, especially on mobile. Resize and compress them, use modern formats and lazy-load galleries; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
 
-<p>Want a website that shows your art properly and sells it? See <a href="/woocommerce-developer/">WooCommerce development</a> for selling originals and prints online, or <a href="/wordpress-website-development/">WordPress website development</a> for a portfolio and enquiry site.</p>
+<h2>Website for artists: WooCommerce or Shopify for selling art?</h2>
+<p>Both can sell originals and prints in India with UPI, cards and international payments through a suitable gateway. The choice usually comes down to how much of the site is portfolio and how much is shop.</p>
+<table>
+<thead><tr><th>Situation</th><th>Better fit</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Portfolio first, a few originals for sale</td><td>WordPress with WooCommerce</td><td>Flexible galleries, exhibitions and writing alongside the shop</td></tr>
+<tr><td>Mostly prints in several sizes</td><td>Shopify</td><td>Simple variants and print-on-demand apps</td></tr>
+<tr><td>A gallery with many artists</td><td>WordPress with WooCommerce</td><td>Artist profiles, exhibitions and archives as linked content</td></tr>
+<tr><td>Little time for updates</td><td>Shopify</td><td>Hosting and core updates handled for you</td></tr>
+</tbody>
+</table>
+<p>For one-of-a-kind originals, set stock to one so a sold piece cannot be bought twice, and mark it sold rather than deleting it, because sold work still shows your range. The comparison of <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> goes deeper.</p>
+
+<h2>Shipping artwork safely</h2>
+<ul>
+<li>State how originals are packed, whether framed or rolled, and who handles framing.</li>
+<li>Explain delivery times for made-to-order prints separately from ready stock.</li>
+<li>Ask your courier about insurance for high-value pieces and say on the site what is covered.</li>
+<li>For buyers abroad, explain that customs duties may apply at their end; see <a href="/blog/woocommerce-sell-internationally/">selling internationally with WooCommerce</a>.</li>
+</ul>
+
+<h2>Prints, editions and certificates</h2>
+<p>If you sell limited editions, say how many exist and stick to it. A certificate of authenticity, signed and numbered, can be included with originals and editions; describe exactly what the buyer receives. For open-edition prints, describe the paper, printing method and sizes plainly so buyers know what they are getting.</p>
+<p>Keep a simple record of each sale with buyer, edition number and date. It helps with resale questions later and with GST records; ask your CA how sales of art should be invoiced.</p>
+
+<h2>FAQs</h2>
+<h3>What should a website for artists include?</h3>
+<p>A portfolio organised by series, an about page, exhibitions or press, a shop or enquiry option for available work, a commissions page and clear contact details.</p>
+<h3>Should I show prices on my art website?</h3>
+<p>Showing prices, or a price range, filters serious buyers and saves time. Some artists prefer &quot;price on request&quot; for originals; that works if you reply quickly.</p>
+<h3>Can I sell art internationally from India?</h3>
+<p>Yes, with a gateway that accepts international cards, a courier that ships artwork abroad and clear terms on duties and delivery times.</p>
+<h3>Is Shopify good for selling art prints?</h3>
+<p>Yes. Variants handle sizes and paper types, and apps can connect print-on-demand services if you do not want to hold stock.</p>
+<h3>How do I stop people copying my artwork online?</h3>
+<p>You cannot stop it completely. Upload web-sized images, add a subtle signature where it does not spoil the work, and state your copyright on the site.</p>
+
+<p>For a portfolio with a shop, see <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/shopify-developer/">Shopify development</a>. For working together from anywhere in the country, see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
@@ -49574,9 +49652,11 @@ Right:
   },
   {
     slug: 'google-ads-budget-small-business',
-    title: 'How to Set a Sensible Google Ads Budget for a Small Business',
-    description: 'How to set a Google Ads budget for a small business: work back from what an enquiry is worth, start small, understand cost per click and know when to stop.',
+    seoTitle: 'Google Ads Budget for Small Business in India',
+    title: 'Google Ads Budget for Small Business in India: How to Work It Out',
+    description: 'How to set a Google Ads budget for a small business in India: work back from what an enquiry is worth, start narrow, track leads and know when to scale.',
     date: '2026-09-30',
+    updated: '2026-10-28',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-seo-services'],
     body: `
@@ -49658,15 +49738,58 @@ Right:
 </table>
 <p>Stop, or step back and rethink, if after a fair test (with tracking working and the landing page improved) your cost per enquiry stays well above what an enquiry is worth. That isn't failure; it's a clear answer, and the money can go into SEO, your Google Business Profile or referrals instead.</p>
 
-<p>Want a landing page built to make every click count? See <a href="/landing-page-design/">landing page design</a>.</p>
+<h2>Google Ads budget for small business in India: a worked approach</h2>
+<p>Rather than guessing a figure, write down four things on one page before you open Google Ads:</p>
+<ol>
+<li><strong>Your limit per enquiry</strong>, from the formula above.</li>
+<li><strong>The expected cost per click</strong> for your main keywords in your city, from Keyword Planner.</li>
+<li><strong>The number of clicks you want each day</strong> so you learn something within a few weeks.</li>
+<li><strong>The test length</strong>, usually a few weeks, decided before you start so you do not stop on a bad day.</li>
+</ol>
+<p>Daily budget is then roughly expected cost per click multiplied by the clicks you want each day. If that number is more than you are comfortable spending for the whole test, narrow the targeting further rather than spreading the same money thinner.</p>
+
+<h2>Local factors that change the maths in India</h2>
+<ul>
+<li><strong>City and area targeting:</strong> a clinic in Pune or a showroom in Surat rarely needs the whole state. Target a radius or the pin codes you deliver to, and exclude areas you cannot serve.</li>
+<li><strong>Language:</strong> many searches mix English and Hindi or a regional language. Check the search terms report for Hinglish phrases and add the useful ones.</li>
+<li><strong>Calls and WhatsApp:</strong> a lot of Indian buyers prefer to call or message. Count these as conversions, or your cost per enquiry will look worse than it is.</li>
+</ul>
+
+<h2>Common budget mistakes</h2>
+<table>
+<thead><tr><th>Mistake</th><th>Why it wastes money</th><th>Better approach</th></tr></thead>
+<tbody>
+<tr><td>Sending all ads to the homepage</td><td>Visitors must hunt for the service they searched for</td><td>A matching landing page per service</td></tr>
+<tr><td>Broad match with no negatives</td><td>Spend goes on jobs, courses and free searches</td><td>Phrase or exact match plus a negative list</td></tr>
+<tr><td>Judging after a few days</td><td>Too little data to see a pattern</td><td>Agree a test length in advance</td></tr>
+<tr><td>No call or WhatsApp tracking</td><td>Real enquiries are invisible</td><td>Track every contact method</td></tr>
+<tr><td>Running ads on a slow mobile site</td><td>Paid clicks leave before the page loads</td><td>Fix speed before scaling</td></tr>
+</tbody>
+</table>
+<p>Before launching, run through <a href="/blog/website-ready-for-google-ads/">whether your website is ready for Google Ads</a>, and if pages load slowly on mobile, <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> is often a better first spend than more clicks.</p>
+
+<h2>FAQs</h2>
+<h3>What is a good Google Ads budget for a small business in India?</h3>
+<p>There is no single right figure. Work out what you can afford per enquiry, check typical cost per click for your keywords and city in Keyword Planner, and set a daily budget that buys enough clicks to learn from within a few weeks.</p>
+<h3>Can I run Google Ads with a small budget?</h3>
+<p>Yes, if you keep it narrow: one or two services, a tight location, phrase or exact match keywords, negative keywords and a focused landing page.</p>
+<h3>How long should I test before changing the budget?</h3>
+<p>Give a new campaign a few weeks with tracking working. Review search terms weekly, but avoid big budget changes until you have a pattern of conversions.</p>
+<h3>Should I hire someone to manage Google Ads?</h3>
+<p>It can help if you lack time to review campaigns weekly. Whoever runs them, insist on working conversion tracking and a regular report showing cost per enquiry and lead quality.</p>
+<h3>Is SEO cheaper than Google Ads?</h3>
+<p>SEO has no cost per click, but it takes longer and needs ongoing work. Many businesses use ads for quick enquiries while SEO builds; the comparison of <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a> explains the trade-offs.</p>
+
+<p>Ads only pay off when the page converts. See <a href="/landing-page-design/">landing page design</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to fix tracking and pages before you scale. Businesses nearby can see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
     slug: 'website-disaster-recovery-plan',
     seoTitle: 'Website Disaster Recovery Plan for Small Businesses',
-    title: 'Website Disaster Recovery Plan: A Simple Guide for Small Businesses',
-    description: 'A simple website disaster recovery plan: what can go wrong, backups and restore tests, who does what, a contact list, and how to keep customers informed.',
+    title: 'Website Disaster Recovery Plan for Small Businesses: A Practical Template',
+    description: 'Build a website disaster recovery plan for a small business: backups, restore tests, access lists, a first-hour checklist and who to call when it breaks.',
     date: '2026-09-30',
+    updated: '2026-10-28',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
@@ -49753,7 +49876,48 @@ Right:
 <h2>Review and practise the plan</h2>
 <p>Update the plan whenever you change host, developer or key staff, and after every incident. Once a year, run a short drill: can the right people log in to the registrar and host, find the latest backup and restore it to staging? <a href="/blog/uptime-monitoring-explained/">Uptime monitoring</a> helps too, so you hear about problems before your customers do.</p>
 
-<p>Want someone else to handle this? My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include regular off-site backups, security monitoring and uptime checks, and <a href="/wordpress-malware-removal/">malware removal</a> is there if a hack is the disaster.</p>
+<h2>A website disaster recovery plan template</h2>
+<p>Your plan can be a two-page document. Copy this outline and fill it in for your own site:</p>
+<table>
+<thead><tr><th>Section</th><th>What to write</th></tr></thead>
+<tbody>
+<tr><td>Site summary</td><td>Domain, platform (WordPress, WooCommerce or Shopify), host, plan and renewal dates</td></tr>
+<tr><td>Recovery goals</td><td>How long the site can be down and how much data you can lose</td></tr>
+<tr><td>Backups</td><td>What is backed up, how often, where copies live and who checks them</td></tr>
+<tr><td>Access list</td><td>Where logins for domain, hosting, DNS, email and payment gateway are stored</td></tr>
+<tr><td>Contacts</td><td>Developer, host support, domain registrar, payment gateway and the internal owner</td></tr>
+<tr><td>First-hour steps</td><td>The response order from the section above</td></tr>
+<tr><td>Customer message</td><td>A ready-made note for WhatsApp, social media and email</td></tr>
+<tr><td>Review date</td><td>When the plan and the last restore test were checked</td></tr>
+</tbody>
+</table>
+
+<h2>Scenarios to plan for</h2>
+<ul>
+<li><strong>Hacked site:</strong> take the site offline or into maintenance mode, change passwords, and restore from a backup taken before the infection, after finding how attackers got in; see <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site is hacked</a>.</li>
+<li><strong>Failed update:</strong> roll back the plugin or restore the pre-update backup, then test the update on staging.</li>
+<li><strong>Hosting suspended or expired:</strong> check billing, renewal and any malware notice from the host.</li>
+<li><strong>Domain expired:</strong> renew immediately with the registrar; keep auto-renew on and contact details current.</li>
+<li><strong>Lost access:</strong> recover through the registrar or host with ownership proof, which is why the access list matters.</li>
+</ul>
+
+<h2>Online stores need extra care</h2>
+<p>A WooCommerce store changes every time someone orders, so a daily backup can lose a day of orders if you restore it. Stores usually need more frequent database backups, and before restoring you should export recent orders so they can be re-entered or reconciled. Your payment gateway dashboard is a useful record of what was paid while the site was down.</p>
+<p>On Shopify, the platform runs the servers, but your theme edits, products and content are still your responsibility. Keep a copy of the theme before edits, export products regularly, and consider a backup app if many people edit the store.</p>
+
+<h2>FAQs</h2>
+<h3>What is a website disaster recovery plan?</h3>
+<p>A short document that says how your website is backed up, who does what when it breaks, where logins are kept and the steps to bring it back online.</p>
+<h3>How often should I back up my website?</h3>
+<p>It depends on how often it changes. A brochure site may need weekly backups; an active store usually needs daily or more frequent database backups.</p>
+<h3>Where should backups be stored?</h3>
+<p>Away from the hosting server, in at least one separate location such as cloud storage, so a server problem does not take the backups with it.</p>
+<h3>How often should I test my disaster recovery plan?</h3>
+<p>Test a restore on a staging copy every few months and after major changes, and review contacts and access details at the same time.</p>
+<h3>Does Shopify need a disaster recovery plan?</h3>
+<p>Yes, a smaller one. Shopify keeps the platform running, but you still need copies of your theme, product data and content, plus account access.</p>
+
+<p>Backups, restore tests and monitoring are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and hacked sites can be cleaned through <a href="/wordpress-malware-removal/">malware removal</a>. To work with someone across the country, see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
@@ -52021,10 +52185,11 @@ Right:
   },
   {
     slug: 'website-for-perfume-fragrance-brands',
-    seoTitle: 'Websites for Perfume, Attar and Fragrance Brands',
-    title: 'Websites for Perfume, Attar and Fragrance Brands: Selling Scent Online',
-    description: 'How perfume, attar and fragrance brands can sell online: describing scents in words, sample kits, gifting, honest claims, product pages and shipping rules.',
+    seoTitle: 'Website for Perfume Brands in India: What to Include',
+    title: 'Website for Perfume and Fragrance Brands in India: Store, Samples and Shipping',
+    description: 'Plan a website for a perfume brand in India: scent descriptions, sample kits, gifting, honest labelling and shipping rules on WooCommerce or Shopify.',
     date: '2026-10-01',
+    updated: '2026-10-28',
     category: 'Industries',
     related: ['woocommerce-developer', 'landing-page-design'],
     body: `
@@ -52111,7 +52276,46 @@ Right:
 <h2>SEO and speed</h2>
 <p>Fragrance searches are specific: "oud attar", "long-lasting perfume for men", "alcohol-free attar", "mogra perfume" or "perfume gift set for her". Build category and scent-family pages around these, plus helpful guides on topics like how to apply attar or the difference between EDP and EDT. Add product schema so price, availability and ratings can appear in search results. Keep pages fast, since most shoppers browse on their phones: compress product photos and avoid loading heavy videos and pop-ups on every page.</p>
 
-<p>Launching a fragrance brand online, or fixing a store that isn't converting? See <a href="/woocommerce-developer/">WooCommerce store development</a>, or <a href="/landing-page-design/">landing page design</a> for a new launch or festive collection.</p>
+<h2>Website for perfume brands: WooCommerce or Shopify?</h2>
+<p>Both platforms suit an Indian fragrance brand selling with UPI, cards and COD. The table shows where each tends to fit.</p>
+<table>
+<thead><tr><th>Need</th><th>WooCommerce</th><th>Shopify</th></tr></thead>
+<tbody>
+<tr><td>Rich scent stories, guides and blog</td><td>Strong, flexible content</td><td>Basic blog, fine for short posts</td></tr>
+<tr><td>Discovery sets and bundles</td><td>Bundle extensions</td><td>Bundle apps or built-in bundles</td></tr>
+<tr><td>Low maintenance</td><td>Needs hosting, updates and backups</td><td>Platform handles hosting and updates</td></tr>
+<tr><td>Custom gifting options</td><td>Very flexible with custom fields</td><td>Possible with apps or line item properties</td></tr>
+<tr><td>Selling on other marketplaces too</td><td>Plugins available</td><td>Many sales channel apps</td></tr>
+</tbody>
+</table>
+<p>Read <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> for a fuller comparison.</p>
+
+<h2>Photography and visuals for fragrance</h2>
+<ul>
+<li>Show the bottle from several angles, including the cap, spray and size against a hand or common object.</li>
+<li>Use mood images that suggest the scent, such as florals or wood, but keep at least one plain product photo.</li>
+<li>Show what arrives in the box, including any gift packaging, samples or cards.</li>
+<li>Keep images compressed so product pages stay quick on mobile data.</li>
+</ul>
+
+<h2>Repeat buyers and reviews</h2>
+<p>Fragrance buyers who like a scent often come back for it or try another from the same brand. Make that easy with customer accounts, &quot;you might also like&quot; suggestions based on scent family, and a note in the order email about the matching body mist or travel size if you sell one.</p>
+<p>Ask for reviews a few weeks after delivery, when the buyer has worn the scent. Ask what they liked about the scent and how long it lasted on them, and publish reviews as written rather than editing them. Never post reviews you did not receive.</p>
+<p>If you run attar, alcohol-free or natural ranges, explain the differences in a short guide rather than in marketing claims, and back up any ingredient statement with your product records.</p>
+
+<h2>FAQs</h2>
+<h3>What should a website for a perfume brand include?</h3>
+<p>Clear scent descriptions with notes, size and concentration, photos, discovery sets, gifting options, shipping and returns policies, and an about page telling the brand story.</p>
+<h3>Can perfume be shipped by courier in India?</h3>
+<p>Many couriers accept perfume, but rules vary for flammable liquids, especially by air. Check with your courier or aggregator before launch and pack carefully.</p>
+<h3>Is Shopify good for a perfume brand?</h3>
+<p>Yes, especially for brands wanting a polished store with little upkeep. WooCommerce gives more control if content and custom gifting matter a lot.</p>
+<h3>Should I sell perfume samples online?</h3>
+<p>Samples and discovery sets help buyers choose without smelling in person. Some brands offer credit toward a full bottle; decide your rules before launch.</p>
+<h3>Can I accept returns on perfume?</h3>
+<p>Many brands accept returns only for damaged or unopened items. Write the policy clearly and show it on product pages and at checkout.</p>
+
+<p>For the store, see <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/shopify-developer/">Shopify development</a>. Brands anywhere in the country can see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
@@ -56448,10 +56652,11 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'woocommerce-product-filters',
-    seoTitle: 'WooCommerce Product Filters and Faceted Search Guide',
-    title: 'WooCommerce Product Filters: Faceted Search That Helps Buyers (and SEO)',
-    description: 'Which WooCommerce filters help buyers, setting up attributes, built-in filters vs plugins, keeping filtered pages fast and handling filter URLs for SEO.',
+    seoTitle: 'WooCommerce Product Filters: Setup, Speed and SEO',
+    title: 'WooCommerce Product Filters: Setup, Speed and SEO (and Shopify Too)',
+    description: 'How to add WooCommerce product filters that help buyers: choosing attributes, plugin vs built-in, keeping pages fast, SEO-safe URLs and the Shopify way.',
     date: '2026-10-01',
+    updated: '2026-10-28',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services'],
     body: `
@@ -56527,7 +56732,46 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h2>When a filtered view deserves to rank</h2>
 <p>Some combinations match real searches, such as "cotton kurtis", "Bosch drill machines" or "sugar-free sweets". Rather than hoping a filter URL ranks, create a proper subcategory, brand page or landing page with a clean URL, a short helpful introduction, its own title and description, and links from your menus or category pages. That gives Google a stable page to rank and gives shoppers a page written for them. The <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a> covers category page structure in more detail.</p>
 
-<p>Need filters that help shoppers without slowing your store or cluttering Google's index? See <a href="/woocommerce-developer/">WooCommerce development</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<h2>How to add WooCommerce product filters: step by step</h2>
+<ol>
+<li><strong>List the decisions buyers make</strong> on your category pages. Ask your sales team or check WhatsApp chats for the questions people ask before buying.</li>
+<li><strong>Create global attributes</strong> under Products, then Attributes, such as Size, Colour, Fabric or Brand, and assign them to every relevant product.</li>
+<li><strong>Clean the data</strong> so one value is not spelt three ways, for example &quot;Off White&quot;, &quot;off-white&quot; and &quot;Offwhite&quot;.</li>
+<li><strong>Add the filter</strong> using the WooCommerce filter blocks in a block theme, or a filter plugin if you need more.</li>
+<li><strong>Test on mobile</strong>: filters should open in a drawer, show result counts and be easy to clear.</li>
+<li><strong>Check speed and URLs</strong> before launch, as covered above.</li>
+</ol>
+
+<h2>Product filters on Shopify</h2>
+<p>Shopify stores use the Search and Discovery app to set collection filters. You can filter by availability, price, product type, vendor, variant options such as size or colour, and metafields for details like fabric or material. Most current themes display these filters without extra code.</p>
+<p>The same rules apply as on WooCommerce. Filters only work if the product data is consistent, so plan your variant names and metafields before you import products. Shopify handles the filtered URLs with parameters, and the main collection page remains the one that should rank. For a wider comparison, see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> and the <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a>.</p>
+
+<h2>Filters that suit Indian stores</h2>
+<table>
+<thead><tr><th>Store type</th><th>Useful filters</th></tr></thead>
+<tbody>
+<tr><td>Sarees and ethnic wear</td><td>Fabric, occasion, colour, price, work type</td></tr>
+<tr><td>Auto parts</td><td>Vehicle make, model, year, part type</td></tr>
+<tr><td>Electronics</td><td>Brand, price, key specification, warranty</td></tr>
+<tr><td>Groceries and staples</td><td>Category, pack size, brand, dietary type</td></tr>
+<tr><td>Furniture</td><td>Room, material, size, assembly needed</td></tr>
+</tbody>
+</table>
+<p>A price filter is useful in most Indian stores, but show prices in rupees with GST included or clearly marked, and make sure &quot;In stock&quot; or a delivery pin code check sits close to the filters, so buyers do not filter down to products they cannot get.</p>
+
+<h2>FAQs</h2>
+<h3>How do I add product filters in WooCommerce?</h3>
+<p>Set up global attributes, assign them to products, then add the WooCommerce filter blocks to your shop and category templates. Use a plugin when you need features the blocks lack, such as instant updates or special layouts.</p>
+<h3>Do WooCommerce product filters slow down a store?</h3>
+<p>They can, especially with many products and attributes. Use a well-built plugin, cache what you can, and test filtered pages on mobile before launch.</p>
+<h3>Should filtered pages be indexed by Google?</h3>
+<p>Usually not. Keep most combinations out of the index and create a proper category or landing page for any filtered view people genuinely search for.</p>
+<h3>Does Shopify have product filters built in?</h3>
+<p>Yes. The Search and Discovery app lets you add filters for price, availability, variants, vendor and metafields, which most themes display automatically.</p>
+<h3>How many filters should a category page have?</h3>
+<p>Only as many as buyers use. A few well-chosen filters with clean data work better than a long list nobody touches.</p>
+
+<p>Filters can be set up as part of <a href="/woocommerce-developer/">WooCommerce development</a> or a <a href="/shopify-developer/">Shopify store build</a>. To work with someone across the country, see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
@@ -57685,10 +57929,11 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-loan-agents-dsa',
-    seoTitle: 'Websites for Loan Agents, DSAs and Loan Advisors',
-    title: 'Websites for Loan Agents and DSAs: Building Trust Without Overpromising',
-    description: 'What a loan agent or DSA website needs: the lenders you work with, loan types explained, document checklists, eligibility forms and careful, honest wording.',
+    seoTitle: 'Website for Loan Agents and DSAs in India: What to Include',
+    title: 'Website for Loan Agents and DSAs in India: Pages, Forms and Trust',
+    description: 'What a website for loan agents and DSAs in India needs: clear loan pages, document checklists, short enquiry forms, careful wording and safe data handling.',
     date: '2026-10-01',
+    updated: '2026-10-28',
     category: 'Industries',
     related: ['website-for-lawyers-and-consultants', 'landing-page-design'],
     body: `
@@ -57764,7 +58009,46 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ul>
 <p>Insurance agents and investment advisors face similar trust and compliance questions; see <a href="/blog/website-for-insurance-financial-advisors/">websites for insurance agents and financial advisors</a>.</p>
 
-<p>Want a careful, credible website for your loan advisory business? See <a href="/website-for-lawyers-and-consultants/">websites for consultants and professional advisors</a>, or <a href="/landing-page-design/">landing pages</a> for focused campaigns on a single loan type.</p>
+<h2>Website for loan agents: the pages to build first</h2>
+<p>A loan agent or DSA website does not need many pages to start. A focused structure works better than a long list of every product:</p>
+<table>
+<thead><tr><th>Page</th><th>What it should do</th></tr></thead>
+<tbody>
+<tr><td>Home</td><td>Say who you help, in which city, and how to start, in the first screen</td></tr>
+<tr><td>One page per loan type</td><td>Home, business, personal, LAP or vehicle loans, each with process and documents</td></tr>
+<tr><td>How it works</td><td>The steps from enquiry to disbursal, and what you do versus what the lender decides</td></tr>
+<tr><td>About</td><td>Your experience, office address, registration details you genuinely hold</td></tr>
+<tr><td>Contact</td><td>Phone, WhatsApp, office hours, map and a short form</td></tr>
+<tr><td>FAQs</td><td>Questions borrowers actually ask, answered without promises</td></tr>
+</tbody>
+</table>
+<p>If you run Google Ads for one loan type, build a separate landing page for it rather than sending traffic to the homepage.</p>
+
+<h2>Handling WhatsApp and phone enquiries properly</h2>
+<p>Many borrowers in India would rather message than fill a form. A WhatsApp button is useful, but set expectations: tell people not to send documents until you have explained what is needed and how they will be stored. Use a business number, not a personal one, so enquiries stay with the business if staff change.</p>
+<p>Track calls and WhatsApp clicks as well as form submissions, so you know which pages and campaigns bring real enquiries. The guide to <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking</a> covers how to set this up on WordPress.</p>
+
+<h2>Reviews and trust signals that stay honest</h2>
+<ul>
+<li>Ask happy clients to leave a Google review and link to your profile, rather than copying reviews onto the site.</li>
+<li>Never publish client names, loan amounts or sanction letters without clear written consent.</li>
+<li>Show your real office photo and address; a stock photo of a bank building does not build trust.</li>
+<li>Keep the site on HTTPS, with a privacy policy that says what you collect and why.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Does a loan agent need a website?</h3>
+<p>Not legally, but a clear website helps borrowers check you are genuine, understand the process and contact you. It also lets you appear in local searches for loan help in your city.</p>
+<h3>Can a DSA show bank logos on their website?</h3>
+<p>Only with permission from the lender and in the way they allow. Check your DSA agreement before using any logo or bank name.</p>
+<h3>What should a loan enquiry form ask?</h3>
+<p>Keep it short: name, phone, city, loan type and a rough amount. Collect documents later through a secure process, not the website form.</p>
+<h3>Can I advertise &quot;lowest interest rate&quot; on my site?</h3>
+<p>Avoid it. Rates are set by lenders and depend on the borrower, so check current lender and regulatory guidance before making any claim about rates.</p>
+<h3>How long does it take to build a loan agent website?</h3>
+<p>It depends on the number of loan pages and how quickly content is ready. A small site is mostly limited by writing clear, accurate copy.</p>
+
+<p>For a clear, quick site, see <a href="/landing-page-design/">landing page design</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>. Agents in Maharashtra can see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -63119,9 +63403,11 @@ Description: Custom code for this website.
   },
   {
     slug: 'woocommerce-sell-internationally',
-    title: 'How to Sell Internationally From an Indian WooCommerce Store',
-    description: 'Selling abroad from an Indian WooCommerce store: showing vs charging other currencies, international payments, shipping, customs duties and GST/LUT points.',
+    seoTitle: 'Sell Internationally with WooCommerce from India',
+    title: 'How to Sell Internationally with WooCommerce (and Shopify) from India',
+    description: 'How to sell internationally from India with WooCommerce or Shopify: choosing countries, currencies, payments, shipping, duties and export paperwork.',
     date: '2026-10-01',
+    updated: '2026-10-28',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -63194,15 +63480,56 @@ Description: Custom code for this website.
   <li><strong>Clear policies:</strong> international returns are expensive, so state plainly whether overseas orders get refunds, replacements or store credit</li>
 </ul>
 
-<p>Planning to take your store international? See <a href="/woocommerce-developer/">WooCommerce development</a> for help setting up currencies, payments, shipping zones and invoices properly.</p>
+<h2>Sell internationally with WooCommerce: a launch checklist</h2>
+<ol>
+<li>Pick two or three target countries and confirm a courier can deliver there at a cost buyers will accept.</li>
+<li>Enable international payments with your gateway and test a real overseas card payment.</li>
+<li>Set shipping zones for each country with weight-based or flat rates.</li>
+<li>Decide the currency approach and add a switcher only if your gateway supports it properly.</li>
+<li>Write clear shipping, duties and returns policies for overseas buyers.</li>
+<li>Check export GST treatment and LUT with your CA.</li>
+<li>Place a test order end to end, including the invoice and tracking email.</li>
+</ol>
+
+<h2>Selling internationally on Shopify from India</h2>
+<p>Shopify has international selling built into its Markets settings, where you group countries, set currencies, adjust prices per market and choose languages. Whether buyers can actually pay in their own currency depends on the payment provider your Indian store uses, so check the current options before promising multi-currency checkout. Many Indian Shopify stores use a gateway that accepts international cards while settling in rupees.</p>
+<p>Shipping rates are set per zone in Shopify's shipping settings, and courier apps can print labels and customs forms. The guides to <a href="/blog/shopify-payment-gateways-india/">Shopify payment gateways in India</a> and <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> cover the domestic setup that international selling builds on.</p>
+
+<h2>WooCommerce vs Shopify for cross-border selling</h2>
+<table>
+<thead><tr><th>Area</th><th>WooCommerce</th><th>Shopify</th></tr></thead>
+<tbody>
+<tr><td>Multi-currency display</td><td>Plugin needed</td><td>Built into Markets</td></tr>
+<tr><td>Translations</td><td>Translation plugin</td><td>Built-in language settings and apps</td></tr>
+<tr><td>Payments</td><td>Depends on gateway plugin</td><td>Depends on available providers for India</td></tr>
+<tr><td>Custom export invoices</td><td>Very flexible</td><td>Possible via apps</td></tr>
+<tr><td>Upkeep</td><td>You manage hosting and updates</td><td>Platform managed</td></tr>
+</tbody>
+</table>
+<p>If you are not yet sure which platform fits, <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> compares them more broadly.</p>
+
+<h2>FAQs</h2>
+<h3>How do I sell internationally with WooCommerce from India?</h3>
+<p>Choose target countries, enable international payments with your gateway, add shipping zones, write overseas policies and check export GST and LUT with your CA. Then place test orders.</p>
+<h3>Can Indian Shopify stores sell abroad?</h3>
+<p>Yes. Use Shopify Markets for countries and currencies, and confirm what your payment provider supports for international cards and settlement.</p>
+<h3>Who pays customs duty on international orders?</h3>
+<p>Usually the buyer, at delivery, unless you choose to collect duties at checkout. Say clearly on the site which approach you use.</p>
+<h3>Do I need an LUT to export from my online store?</h3>
+<p>Many exporters use an LUT to supply without paying IGST upfront, but rules change. Confirm with your CA before shipping abroad.</p>
+<h3>Should I translate my store for overseas buyers?</h3>
+<p>Not at first if your target countries read English. Translate once you see steady orders from a non-English market.</p>
+
+<p>International setup can be done as part of <a href="/woocommerce-developer/">WooCommerce development</a> or a <a href="/shopify-developer/">Shopify store build</a>. Sellers across the country can see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
     slug: 'woocommerce-pre-orders-backorders',
-    seoTitle: 'WooCommerce Pre-Orders and Backorders: A Practical Guide',
-    title: 'Pre-Orders and Backorders in WooCommerce: How to Sell Before Stock Arrives',
-    description: 'Run pre-orders and backorders in WooCommerce: the built-in backorder setting, pre-order plugins, when to charge, honest dates and Merchant Center availability.',
+    seoTitle: 'WooCommerce Pre-Orders and Backorders: How to Set Up',
+    title: 'WooCommerce Pre-Orders and Backorders: Setup, Payments and Shopify Options',
+    description: 'How to set up WooCommerce pre-orders and backorders: stock settings, plugins, charging upfront or later, honest dates, refunds and the Shopify equivalent.',
     date: '2026-10-01',
+    updated: '2026-10-28',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -63283,7 +63610,45 @@ Description: Custom code for this website.
 </ul>
 <p>For preorder and backorder, Google also asks for an availability date, so check the current product data specification. Your product schema should say the same thing, using the PreOrder or BackOrder availability values. Check what your feed plugin actually sends: WooCommerce's "On backorder" status may map across automatically, while products from a pre-order plugin may need their availability and date set in the feed plugin's settings. Mismatches between the feed and the page are a common cause of disapprovals; see <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a>.</p>
 
-<p>Planning a launch or restock and want pre-orders set up properly? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<h2>How to set up WooCommerce pre-orders and backorders: quick steps</h2>
+<ol>
+<li>Turn on stock management under WooCommerce, then Settings, then Products, then Inventory.</li>
+<li>On each product, set the stock quantity and choose whether backorders are not allowed, allowed, or allowed with a notice to the customer.</li>
+<li>For true pre-orders, install a pre-order plugin and set the release date and payment mode.</li>
+<li>Edit the button text and product notice so they say pre-order or backorder clearly.</li>
+<li>Add the expected dispatch date to order emails.</li>
+<li>Place a test order with UPI and with cash on delivery, if you allow COD, to see how each behaves.</li>
+</ol>
+
+<h2>Pre-orders and backorders on Shopify</h2>
+<p>On Shopify, each product variant has a setting to continue selling when out of stock, which works like a backorder. For proper pre-orders with release dates, separate buttons and partial payments, most stores use a pre-order app. Check that the app shows the expected date on the product page and in the order confirmation, and that it works with your theme and payment gateway.</p>
+<p>Whether you can charge later instead of upfront depends on the app and your payment provider in India, so test a real order before launch. See <a href="/blog/shopify-store-setup-india/">Shopify store setup in India</a> for the basics.</p>
+
+<h2>Pre-orders with COD and UPI in India</h2>
+<table>
+<thead><tr><th>Approach</th><th>Works well for</th><th>Watch out for</th></tr></thead>
+<tbody>
+<tr><td>Full prepaid pre-order</td><td>Limited launches with strong demand</td><td>Refund promptly if the date slips and buyers cancel</td></tr>
+<tr><td>Token amount now, balance later</td><td>Higher-priced products</td><td>Needs a plugin or app that handles split payments</td></tr>
+<tr><td>COD on backorders</td><td>Short restock times</td><td>Long waits can raise refused deliveries</td></tr>
+<tr><td>No COD on pre-orders</td><td>Long lead times</td><td>Say so clearly before checkout</td></tr>
+</tbody>
+</table>
+<p>Whatever you choose, follow your payment gateway's rules on how long a payment can be held or authorised, and keep a written record of the promised date for each order.</p>
+
+<h2>FAQs</h2>
+<h3>How do I set up pre-orders in WooCommerce?</h3>
+<p>WooCommerce handles backorders out of the box, but true pre-orders with release dates need a plugin. Set the date, payment mode and button text, then test the full order flow.</p>
+<h3>What is the difference between a backorder and a pre-order?</h3>
+<p>A backorder is for an existing product that is temporarily out of stock. A pre-order is for a product not yet released or made.</p>
+<h3>Can I take pre-orders on Shopify?</h3>
+<p>Yes. Allow selling when out of stock for simple backorders, or use a pre-order app for release dates and separate buttons.</p>
+<h3>Should I charge customers upfront for pre-orders?</h3>
+<p>Charging upfront secures demand but means refunds if things change. Charging on release is gentler for buyers but needs a gateway that supports it.</p>
+<h3>Do backorders affect Google Shopping listings?</h3>
+<p>They can. Set availability to backorder or preorder in your product feed and give an availability date where Google asks for one.</p>
+
+<p>Pre-order flows can be set up as part of <a href="/woocommerce-developer/">WooCommerce development</a> or on <a href="/shopify-developer/">Shopify</a>. Stores anywhere in the country can see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
@@ -67178,10 +67543,11 @@ or a cookie name starts with:
   },
   {
     slug: 'wordpress-media-library-not-loading-fix',
-    seoTitle: 'WordPress Media Library Not Loading? Causes and Fixes',
-    title: 'WordPress Media Library Not Loading? Fixing Spinners, Grey Boxes and Missing Images',
-    description: 'Fix a WordPress media library that spins forever, shows an empty grid, grey boxes or broken images after a move: conflicts, limits, URLs, permissions and CDNs.',
+    seoTitle: 'WordPress Media Library Not Loading? How to Fix It',
+    title: 'WordPress Media Library Not Loading? Causes and Step-by-Step Fixes',
+    description: 'WordPress media library not loading or stuck spinning? Match the symptom to the cause and fix plugin conflicts, PHP limits, permissions and CDN issues.',
     date: '2026-10-11',
+    updated: '2026-10-28',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -67244,7 +67610,49 @@ or a cookie name starts with:
 <p>WordPress creates resized copies of every upload: thumbnail, medium, large and any sizes your theme or plugins add. Grey boxes, or blurry or oddly cropped images, can mean those copies are missing or don't match the current theme, typically after a theme change, new sizes in Settings → Media, or a migration that copied only the originals.</p>
 <p>A thumbnail regeneration plugin, or WP-CLI's <code>wp media regenerate</code> (add <code>--only-missing</code> to skip existing sizes), rebuilds them. It's heavy work, so take a backup and run it at a quiet time, in batches for large libraries. If the originals are missing, restore them from a backup.</p>
 
-<p>Media library still stuck, or images broken after a move? I track down faults like these as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+<h2>WordPress media library not loading: a step-by-step checklist</h2>
+<p>Work through these in order, testing the library after each step. Take a backup before changing anything on a live site.</p>
+<ol>
+<li><strong>Hard refresh and try another browser</strong> to rule out a cached admin script or browser extension.</li>
+<li><strong>Open list view</strong> under Media, Library, to see whether only the grid is affected.</li>
+<li><strong>Check the browser console</strong> for red JavaScript errors and the Network tab for a failing admin-ajax.php request.</li>
+<li><strong>Disable plugins</strong> on a staging copy, or use a troubleshooting mode plugin, then re-enable them one at a time.</li>
+<li><strong>Switch to a default theme</strong> briefly, as themes can load scripts in the admin too.</li>
+<li><strong>Turn on debug logging</strong> and check the PHP error log for memory or timeout errors.</li>
+<li><strong>Check file permissions</strong> on the uploads folder and confirm the folder path in Settings, Media is correct.</li>
+<li><strong>Ask your host</strong> whether a security rule or firewall is blocking admin-ajax requests.</li>
+</ol>
+
+<h2>Hosting issues common on Indian shared plans</h2>
+<p>Many small Indian business sites run on entry-level shared hosting. That is fine for a brochure site, but a store with thousands of product images can push such plans hard. Signs that hosting is the cause include the library loading slowly at busy times, timeouts in the error log and the whole admin feeling sluggish, not just media.</p>
+<p>Ask your host about PHP memory and execution limits, the PHP version and any resource limits on your account. If the site has outgrown the plan, moving to better hosting can fix this and other slow admin problems; see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>.</p>
+
+<h2>Keep the library healthy</h2>
+<table>
+<thead><tr><th>Habit</th><th>Why it helps</th></tr></thead>
+<tbody>
+<tr><td>Resize images before upload</td><td>Smaller files upload faster and create lighter thumbnails</td></tr>
+<tr><td>Name files clearly</td><td>Easier search and better image SEO</td></tr>
+<tr><td>Remove unused image sizes added by old themes or plugins</td><td>Fewer files generated per upload</td></tr>
+<tr><td>Clean truly unused media carefully</td><td>Smaller backups and a faster library, but check usage first</td></tr>
+<tr><td>Keep plugins updated and few</td><td>Fewer script conflicts in the admin</td></tr>
+</tbody>
+</table>
+<p>The guide to <a href="/blog/image-optimization-wordpress/">image optimisation in WordPress</a> covers sizes and compression in more detail.</p>
+
+<h2>FAQs</h2>
+<h3>Why is my WordPress media library not loading?</h3>
+<p>The usual causes are a plugin or theme JavaScript conflict, a failing admin-ajax request, low PHP memory, file permission problems or a CDN or offload plugin misconfiguration.</p>
+<h3>Why does the media library keep spinning?</h3>
+<p>A spinning grid usually means the admin-ajax request failed or returned an error. Check the browser console and Network tab, then test with plugins disabled on staging.</p>
+<h3>Will reinstalling WordPress fix the media library?</h3>
+<p>Rarely. Reinstalling core files only helps if they are corrupted. Find the actual cause first, because the problem usually sits in a plugin, theme or server setting.</p>
+<h3>Why are images missing after migrating my site?</h3>
+<p>Often the database still points to the old URL, the uploads folder did not copy fully, or file permissions are wrong. Fix the URLs and permissions, then regenerate thumbnails.</p>
+<h3>Can a security plugin stop the media library loading?</h3>
+<p>Yes. Some firewall rules block admin-ajax requests. Check the plugin's logs and whitelist the request, rather than turning protection off entirely.</p>
+
+<p>If the library still will not load, it can be diagnosed and fixed as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix. Businesses in Maharashtra can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
