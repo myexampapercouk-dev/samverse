@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lazy Loading in WordPress: What to Lazy-Load and What Not To</title>
-  <meta name="description" content="How lazy loading works for images, iframes and videos in WordPress, what WordPress does by default, and why your hero or LCP image should never be lazy-loaded.">
+  <title>Lazy Loading in WordPress: Images, Videos and Iframes</title>
+  <meta name="description" content="Lazy loading in WordPress explained: how native lazy loading works, why the hero image should stay eager, and how to lazy-load videos and maps.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/lazy-loading-explained/">
-  <meta property="og:title" content="Lazy Loading in WordPress: What to Lazy-Load and What Not To">
-  <meta property="og:description" content="How lazy loading works for images, iframes and videos in WordPress, what WordPress does by default, and why your hero or LCP image should never be lazy-loaded.">
+  <meta property="og:title" content="Lazy Loading in WordPress: Images, Videos and Iframes">
+  <meta property="og:description" content="Lazy loading in WordPress explained: how native lazy loading works, why the hero image should stay eager, and how to lazy-load videos and maps.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-lazy-loading-explained.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/lazy-loading-explained/#article",
       "headline": "Lazy Loading Explained: Images, Videos and Iframes in WordPress (and When Not to Use It)",
-      "description": "How lazy loading works for images, iframes and videos in WordPress, what WordPress does by default, and why your hero or LCP image should never be lazy-loaded.",
+      "description": "Lazy loading in WordPress explained: how native lazy loading works, why the hero image should stay eager, and how to lazy-load videos and maps.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-09-28",
+      "dateModified": "2026-10-28",
       "mainEntityOfPage": "https://samverse.space/blog/lazy-loading-explained/",
       "image": "https://samverse.space/assets/og/blog-lazy-loading-explained.png",
       "articleSection": "Speed",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Speed</a>
           <h1>Lazy Loading Explained: Images, Videos and Iframes in WordPress (and When Not to Use It)</h1>
-          <p class="post-dek">How lazy loading works for images, iframes and videos in WordPress, what WordPress does by default, and why your hero or LCP image should never be lazy-loaded.</p>
+          <p class="post-dek">Lazy loading in WordPress explained: how native lazy loading works, why the hero image should stay eager, and how to lazy-load videos and maps.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · 5 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-28">28 October 2026</time> · 7 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Lazy%20Loading%20Explained%3A%20Images%2C%20Videos%20and%20Iframes%20in%20WordPress%20(and%20When%20Not%20to%20Use%20It)%20https%3A%2F%2Fsamverse.space%2Fblog%2Flazy-loading-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,38 +153,53 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#what-lazy-loading-actually-does">What lazy loading actually does</a></li>
-              <li><a href="#what-wordpress-already-does-for-you">What WordPress already does for you</a></li>
-              <li><a href="#what-to-lazy-load">What to lazy-load</a></li>
-              <li><a href="#when-not-to-lazy-load">When NOT to lazy-load</a></li>
-              <li><a href="#common-lazy-loading-mistakes">Common lazy-loading mistakes</a></li>
-              <li><a href="#how-to-check-your-site">How to check your site</a></li>
+              <li><a href="#what-is-lazy-loading-and-why-does-it-matter">What is lazy loading and why does it matter?</a></li>
+              <li><a href="#how-lazy-loading-works-in-wordpress">How lazy loading works in WordPress</a></li>
+              <li><a href="#when-not-to-use-lazy-loading">When not to use lazy loading</a></li>
+              <li><a href="#always-set-image-width-and-height">Always set image width and height</a></li>
+              <li><a href="#lazy-loading-youtube-videos-and-google-maps">Lazy loading YouTube videos and Google Maps</a></li>
+              <li><a href="#lazy-loading-on-woocommerce-and-shopify-stores">Lazy loading on WooCommerce and Shopify stores</a></li>
+              <li><a href="#lazy-loading-with-page-builders-and-speed-plugins">Lazy loading with page builders and speed plugins</a></li>
+              <li><a href="#lazy-loading-and-responsive-images-work-together">Lazy loading and responsive images work together</a></li>
+              <li><a href="#common-lazy-loading-problems-and-fixes">Common lazy loading problems and fixes</a></li>
               <li><a href="#does-lazy-loading-affect-seo">Does lazy loading affect SEO?</a></li>
+              <li><a href="#how-to-check-lazy-loading-on-your-site">How to check lazy loading on your site</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Lazy-load images, maps, video embeds and widgets further down the page so the browser can focus on what visitors see first.</li>
-              <li>Never lazy-load the hero image, first slide, logo or main product photo, because delaying your LCP image makes the page feel slower.</li>
-              <li>Use one lazy-loading method, set image dimensions to avoid layout jumps, and check your LCP element on mobile in PageSpeed Insights.</li>
+              <li>Lazy loading delays offscreen images, videos and iframes until the visitor scrolls near them, which saves data and speeds up the first view.</li>
+              <li>Never lazy-load the main image visible on first load, because it delays Largest Contentful Paint; load it eagerly and give it high priority.</li>
+              <li>Set width and height on every image, replace heavy YouTube and map embeds with click-to-load facades, and avoid stacking several lazy-load plugins.</li>
             </ul>
           </div>
-<p>Lazy loading is one of the simplest speed techniques there is: don't load things until the visitor is about to see them. Done well, it makes long pages feel much lighter, especially on phones and mobile data. Done badly, it makes the most important part of your page appear later. Here's how it works in WordPress, what to lazy-load, and the one mistake that undoes the benefit.</p>
+<p>Lazy loading in WordPress means images, videos and iframes below the visible screen are not downloaded until the visitor scrolls close to them. WordPress adds the browser's native loading="lazy" attribute to most images automatically, so many sites already have it. The real gains come from getting the details right: keeping the main above-the-fold image out of lazy loading, giving images dimensions, and replacing heavy video and map embeds with lightweight placeholders.</p>
+<p>For Indian visitors on mid-range phones and variable mobile data, these details make a visible difference to how fast a page feels.</p>
 
-<h2 id="what-lazy-loading-actually-does">What lazy loading actually does</h2>
-<p>Without lazy loading, the browser tries to download every image, map and video embed on a page as soon as it opens, even the ones at the very bottom that most visitors never scroll to. With lazy loading, those items wait. The browser loads what's on screen first and fetches the rest a little before the visitor scrolls to it.</p>
-<p>The result:</p>
+<h2 id="what-is-lazy-loading-and-why-does-it-matter">What is lazy loading and why does it matter?</h2>
+<p>A long page might contain dozens of images, a YouTube video and a Google Map. Without lazy loading, the browser fetches all of it at once, competing for bandwidth with the content the visitor actually sees first. With lazy loading, the browser fetches the visible content first and the rest only when needed. The benefits:</p>
 <ul>
-  <li>Less data downloaded up front, which matters on slower connections</li>
-  <li>The browser can focus on what the visitor sees first</li>
-  <li>Visitors who leave early never download the rest of the page</li>
+  <li>Faster first view, because fewer files compete at the start.</li>
+  <li>Less data used for visitors who never scroll to the bottom.</li>
+  <li>Lower server and CDN load.</li>
+  <li>Better Core Web Vitals when applied correctly. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</li>
 </ul>
-<p>Modern browsers support this natively. A single attribute, <code>loading="lazy"</code>, on an image or iframe tells the browser to wait. No extra JavaScript is needed.</p>
 
-<h2 id="what-wordpress-already-does-for-you">What WordPress already does for you</h2>
-<p>WordPress has added native lazy loading automatically for several years: images in your content get the <code>loading="lazy"</code> attribute, and so do iframes such as YouTube and Google Maps embeds. Newer versions also try to skip lazy loading on the first large image and mark it as high priority, so the browser fetches it early.</p>
-<p>That guesswork isn't perfect, though. Page builders, sliders, header images set by the theme and CSS background images can all confuse it. And performance plugins, themes and builders often add their own lazy-loading settings on top, so the actual behaviour on your site depends on your whole setup. It's worth checking rather than assuming.</p>
+<h2 id="how-lazy-loading-works-in-wordpress">How lazy loading works in WordPress</h2>
+<p>Since version 5.5, WordPress adds loading="lazy" to images in content, and later versions extended this to iframes. Since around version 6.3, WordPress also tries to skip lazy loading for the first large image and adds fetchpriority="high" to what it guesses is the main image. Themes and page builders can override this, so check what your site actually outputs by viewing the page source.</p>
+<table>
+  <thead><tr><th>Method</th><th>How it works</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Native browser lazy loading</td><td>loading="lazy" attribute on img and iframe</td><td>No JavaScript, supported by modern browsers, WordPress adds it by default</td></tr>
+    <tr><td>JavaScript lazy loading</td><td>Script swaps placeholder for real image on scroll</td><td>Used by older plugins and some builders; adds script weight</td></tr>
+    <tr><td>Facade for embeds</td><td>Show a thumbnail; load the real player on click</td><td>Biggest saving for YouTube, Vimeo and maps</td></tr>
+    <tr><td>CSS background images</td><td>Not covered by native lazy loading</td><td>Need a plugin, a class-based script, or a switch to real img elements</td></tr>
+  </tbody>
+</table>
+
+<p>In short, lazy loading is about order: visible content first, everything else when needed.</p>
 
 <aside class="inline-cta">
   <strong>Need help with speed optimization?</strong>
@@ -192,53 +207,84 @@
   <div><a href="/wordpress-speed-optimization/" class="link-inline">See Speed Optimization →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Lazy%20Loading%20Explained%3A%20Images%2C%20Videos%20and%20Iframes%20in%20WordPress%20(and%20When%20Not%20to%20Use%20It)%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="what-to-lazy-load">What to lazy-load</h2>
+<h2 id="when-not-to-use-lazy-loading">When not to use lazy loading</h2>
+<p>Lazy loading the wrong image is one of the most common causes of a poor Largest Contentful Paint. Do not lazy-load:</p>
+<ul>
+  <li><strong>The hero or banner image</strong> at the top of the page.</li>
+  <li><strong>The logo</strong> and anything else in the header.</li>
+  <li><strong>The main product image</strong> on WooCommerce or Shopify product pages.</li>
+  <li><strong>The featured image</strong> of a blog post when it sits at the top.</li>
+  <li><strong>The first slide</strong> of a slider, if you must use a slider at all.</li>
+</ul>
+<p>These should load eagerly, and the main one should carry fetchpriority="high" or be preloaded. Many speed plugins have an option to exclude the first few images from lazy loading; use it. <a href="/blog/fix-lcp-largest-contentful-paint/">How to fix Largest Contentful Paint</a> goes deeper.</p>
+
+<h2 id="always-set-image-width-and-height">Always set image width and height</h2>
+<p>A lazy-loaded image without dimensions reserves no space. When it arrives, everything below jumps down, which hurts Cumulative Layout Shift and annoys readers mid-sentence. WordPress adds width and height to images inserted through the editor, but custom theme code, page builders and some sliders skip them. Check that every image has dimensions or a CSS aspect-ratio. <a href="/blog/fix-cls-layout-shift/">Fixing layout shift</a> covers the other common causes.</p>
+
+<h2 id="lazy-loading-youtube-videos-and-google-maps">Lazy loading YouTube videos and Google Maps</h2>
+<p>A single YouTube embed can load a large amount of JavaScript before anyone presses play. A Google Maps iframe is similar. Native lazy loading helps only if the embed is below the fold. For embeds near the top, or many embeds on one page, use a facade:</p>
+<ol>
+  <li>Show a static thumbnail of the video, or a static image of the map with your address.</li>
+  <li>Add a play button or "View map" link.</li>
+  <li>Load the real embed only when the visitor clicks.</li>
+</ol>
+<p>Several WordPress performance plugins offer this for YouTube. For maps on a contact page, a simple static image linking to Google Maps is often enough and loads instantly. More in <a href="/blog/video-on-business-website/">using video on a business website</a>.</p>
+
+<h2 id="lazy-loading-on-woocommerce-and-shopify-stores">Lazy loading on WooCommerce and Shopify stores</h2>
+<p>Category pages with many product thumbnails benefit a lot, since visitors scroll through and only some images matter at first. Keep the first row of products eager and lazy-load the rest. On product pages, load the main image eagerly and lazy-load gallery thumbnails, related products and review photos. Shopify themes built on Online Store 2.0 generally include native lazy loading, but custom sections and apps may not follow the same rules, so check them. For store-wide speed work, see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a>.</p>
+
+<h2 id="lazy-loading-with-page-builders-and-speed-plugins">Lazy loading with page builders and speed plugins</h2>
+<p>Elementor, Divi and similar builders often add their own image handling, and caching plugins frequently include a lazy loading switch too. When two or three tools each try to lazy-load the same image, you can end up with placeholder images, delayed loading or scripts fighting each other. A sensible set-up:</p>
+<ul>
+  <li>Leave WordPress native lazy loading on for normal content images.</li>
+  <li>Use one performance plugin for extras: YouTube facades, background images and the "exclude first images" setting.</li>
+  <li>Turn off duplicate lazy loading options in the builder and theme.</li>
+  <li>Clear all caches, including any CDN cache, after changing settings, then test again.</li>
+</ul>
+<p>Builder sections that set images as CSS backgrounds are a common blind spot. For the hero section, consider switching to a real image element so it can be prioritised. If you are unsure which plugins do what, <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> clarifies how these tools overlap.</p>
+
+<h2 id="lazy-loading-and-responsive-images-work-together">Lazy loading and responsive images work together</h2>
+<p>Lazy loading decides when an image downloads; responsive images decide which size downloads. WordPress generates several sizes and adds srcset and sizes attributes so a phone gets a smaller file than a desktop. If your theme outputs only the full-size image, lazy loading still leaves each image heavier than it needs to be. Check that thumbnails and content images use appropriately sized versions, and compress them in a modern format.</p>
+
+<h2 id="common-lazy-loading-problems-and-fixes">Common lazy loading problems and fixes</h2>
 <table>
-  <thead><tr><th>Item</th><th>Lazy-load?</th><th>Notes</th></tr></thead>
+  <thead><tr><th>Problem</th><th>Likely cause</th><th>Fix</th></tr></thead>
   <tbody>
-    <tr><td>Images further down the page</td><td>Yes</td><td>Galleries, team photos, portfolio grids, blog images below the first screen</td></tr>
-    <tr><td>YouTube and Vimeo embeds</td><td>Yes</td><td>Even better: show a preview image and load the player only when tapped</td></tr>
-    <tr><td>Google Maps embeds</td><td>Yes</td><td>Maps are heavy; a static preview that loads on tap is lighter still</td></tr>
-    <tr><td>Social feeds, review widgets, embedded forms</td><td>Yes</td><td>Usually further down the page, and often among the heaviest items on it</td></tr>
-    <tr><td>Self-hosted videos</td><td>Load on demand</td><td>Use a poster image and avoid auto-playing background videos</td></tr>
-    <tr><td>Hero image, logo, first slide</td><td>No</td><td>These should load immediately</td></tr>
+    <tr><td>PageSpeed warns "Largest Contentful Paint image was lazily loaded"</td><td>Hero image has loading="lazy"</td><td>Exclude it, add fetchpriority="high"</td></tr>
+    <tr><td>Images appear blank then pop in late</td><td>JavaScript lazy loader with a large threshold, or slow script</td><td>Switch to native lazy loading</td></tr>
+    <tr><td>Images never load for some visitors</td><td>Script conflict or blocked JavaScript</td><td>Use native loading, check console errors</td></tr>
+    <tr><td>Content jumps while scrolling</td><td>Missing width and height</td><td>Add dimensions or aspect-ratio</td></tr>
+    <tr><td>Double lazy loading</td><td>Theme, builder and speed plugin all applying it</td><td>Enable it in one place only</td></tr>
+    <tr><td>Background images not lazy</td><td>Set in CSS</td><td>Use a plugin feature or convert to img elements</td></tr>
   </tbody>
 </table>
-<p>For videos in particular, the "click to play" approach saves far more than lazy loading alone, because the video player's scripts never load for visitors who don't press play. See <a href="/blog/video-on-business-website/">video on your business website</a> for when video is worth it at all.</p>
-
-<h2 id="when-not-to-lazy-load">When NOT to lazy-load</h2>
-<p>This is the part most sites get wrong. Anything visible on the first screen, before the visitor scrolls, should load straight away. That's called "above the fold" content.</p>
-<p>The most important case is your <strong>LCP image</strong>. Largest Contentful Paint measures how quickly the biggest element on the first screen appears, and on most business websites that's the hero image, a banner or the first product photo. If that image is lazy-loaded, the browser deliberately waits before fetching it, and your LCP gets worse. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> for why LCP matters.</p>
-<p>Don't lazy-load:</p>
-<ul>
-  <li>The hero or banner image at the top of the page</li>
-  <li>The first slide of a slider (later slides can wait)</li>
-  <li>The featured image at the top of a blog post</li>
-  <li>The main product photo on a product page</li>
-  <li>Your logo and anything in the header</li>
-</ul>
-<p>Remember that the fold is different on phones. An image below the first screen on a laptop may be the first thing a mobile visitor sees, and most of your visitors are probably on mobile. Check both.</p>
-
-<h2 id="common-lazy-loading-mistakes">Common lazy-loading mistakes</h2>
-<ul>
-  <li><strong>Lazy loading everything.</strong> A plugin set to lazy-load all images, with no exclusions, catches the hero image too. Most performance plugins let you exclude specific images by file name or CSS class.</li>
-  <li><strong>Hero images as CSS backgrounds.</strong> Browsers discover background images late, and some builders offer to lazy-load them as well. For the main hero, a normal image element that loads early is usually faster.</li>
-  <li><strong>Doubling up.</strong> WordPress, your theme, your page builder and a caching plugin may all try to lazy-load. Script-based lazy loading layered on top of the native version adds code and can delay images further. Pick one method.</li>
-  <li><strong>Missing image dimensions.</strong> If images don't have width and height set, content jumps as they appear, hurting your layout stability (CLS).</li>
-  <li><strong>Hiding real content.</strong> Lazy loading is for images and embeds. Text and links that only appear after a scroll or a click may be missed by visitors and search engines.</li>
-</ul>
-
-<h2 id="how-to-check-your-site">How to check your site</h2>
-<ol>
-  <li>Run your homepage and a key inner page through <strong>PageSpeed Insights</strong> on mobile. It identifies your LCP element and will usually warn you if that image was lazy-loaded. See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a> for reading the report.</li>
-  <li>On a computer, right-click your hero image, choose "Inspect" and look at the image tag. If you see <code>loading="lazy"</code>, it needs excluding.</li>
-  <li>Scroll a long page on your phone using mobile data. Images should appear as you reach them, not leave blank gaps for seconds.</li>
-</ol>
 
 <h2 id="does-lazy-loading-affect-seo">Does lazy loading affect SEO?</h2>
-<p>Used properly, no. Google's own guidance treats native browser lazy loading as fine. Problems come from older script-based methods that only load images when a scroll event fires, because Google's crawler doesn't scroll like a person does. If you rely on a plugin's lazy loading, check an important page with the URL Inspection tool in Search Console and confirm the images appear in the rendered page. And keep images properly optimised in the first place; lazy loading is no substitute for <a href="/blog/image-optimization-wordpress/">compressing and resizing images</a>.</p>
+<p>Native lazy loading is fine for SEO; Google's crawler renders pages and loads lazy images. Older JavaScript methods that keep the real image URL in a data attribute can, in some set-ups, hide images from search. If image search traffic matters to you, check URL Inspection in Search Console to see the rendered page, and keep important images as real img elements with good alt text. The image SEO guide covers alt text and file names.</p>
 
-<p>Not sure whether lazy loading is helping or hurting your site? A <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> audit checks your LCP element, lazy-loading settings and everything else that slows your pages down.</p>
+<h2 id="how-to-check-lazy-loading-on-your-site">How to check lazy loading on your site</h2>
+<ol>
+  <li>Open the page, right-click, view source and search for loading="lazy".</li>
+  <li>Confirm the hero image does not have it and does have fetchpriority="high".</li>
+  <li>Run PageSpeed Insights on mobile and read the LCP and image-related diagnostics.</li>
+  <li>In browser developer tools, open the Network tab, filter by images and scroll to watch them load.</li>
+  <li>Test on a real Android phone over mobile data, not just office Wi-Fi, and scroll at normal speed to spot late images.</li>
+</ol>
+<p>Website speed test tools explained helps you read the results.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>Does WordPress have lazy loading built in?</h3>
+<p>Yes. WordPress adds native lazy loading to images and iframes in content by default, and newer versions try to keep the first main image eager. Themes and builders can change this.</p>
+<h3>Should I lazy-load the hero image?</h3>
+<p>No. The hero image is usually your Largest Contentful Paint element. Load it eagerly and give it high fetch priority.</p>
+<h3>Do I need a lazy loading plugin?</h3>
+<p>Often not for images. A plugin is useful for YouTube facades, background images and excluding above-the-fold images, but enable lazy loading in only one tool.</p>
+<h3>Is lazy loading bad for SEO?</h3>
+<p>Native lazy loading is not. Some older JavaScript methods can hide images from crawlers, so prefer the native attribute.</p>
+<h3>Why does PageSpeed still say to defer offscreen images?</h3>
+<p>Some images may be outside WordPress content, such as theme templates or CSS backgrounds, or a builder may remove the attribute. Find those images in the report and handle them individually.</p>
+
+<p>If your site's images, embeds and Core Web Vitals need a proper review, see <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for theme-level fixes, with details for <a href="/wordpress-developer-pune/">Pune</a> and <a href="/wordpress-shopify-developer-india/">across India</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -274,13 +320,18 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#what-lazy-loading-actually-does">What lazy loading actually does</a></li>
-              <li><a href="#what-wordpress-already-does-for-you">What WordPress already does for you</a></li>
-              <li><a href="#what-to-lazy-load">What to lazy-load</a></li>
-              <li><a href="#when-not-to-lazy-load">When NOT to lazy-load</a></li>
-              <li><a href="#common-lazy-loading-mistakes">Common lazy-loading mistakes</a></li>
-              <li><a href="#how-to-check-your-site">How to check your site</a></li>
+              <li><a href="#what-is-lazy-loading-and-why-does-it-matter">What is lazy loading and why does it matter?</a></li>
+              <li><a href="#how-lazy-loading-works-in-wordpress">How lazy loading works in WordPress</a></li>
+              <li><a href="#when-not-to-use-lazy-loading">When not to use lazy loading</a></li>
+              <li><a href="#always-set-image-width-and-height">Always set image width and height</a></li>
+              <li><a href="#lazy-loading-youtube-videos-and-google-maps">Lazy loading YouTube videos and Google Maps</a></li>
+              <li><a href="#lazy-loading-on-woocommerce-and-shopify-stores">Lazy loading on WooCommerce and Shopify stores</a></li>
+              <li><a href="#lazy-loading-with-page-builders-and-speed-plugins">Lazy loading with page builders and speed plugins</a></li>
+              <li><a href="#lazy-loading-and-responsive-images-work-together">Lazy loading and responsive images work together</a></li>
+              <li><a href="#common-lazy-loading-problems-and-fixes">Common lazy loading problems and fixes</a></li>
               <li><a href="#does-lazy-loading-affect-seo">Does lazy loading affect SEO?</a></li>
+              <li><a href="#how-to-check-lazy-loading-on-your-site">How to check lazy loading on your site</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
