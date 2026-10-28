@@ -231,7 +231,7 @@ ${p.pains.map(([t, d]) => `          <article class="service reveal"><div class=
         <div>
           <span class="eyebrow">What you get</span>
           <h2>${esc(p.getsTitle)}</h2>
-          <p class="muted">Every project is built on WordPress, so you own your website and can update it yourself. Need something that isn't listed? Just ask.</p>
+          <p class="muted">${p.type === 'location' ? 'Every project is built on WordPress or Shopify, set up in your name, so you own' : 'Every project is built on WordPress, so you own'} your website and can update it yourself. Need something that isn't listed? Just ask.</p>
           <a href="#contact" class="btn" style="margin-top:22px">Discuss Your Project</a>
         </div>
         <ul class="checklist">
@@ -272,7 +272,7 @@ ${readingFor(p)}
     <section class="section related">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">${p.type === 'industry' ? 'Other industries' : 'Related services'}</span>
+          <span class="eyebrow">${p.type === 'industry' ? 'Other industries' : p.type === 'location' ? 'Other cities' : 'Related services'}</span>
           <h2>You might also need</h2>
         </div>
         <div class="industries related-grid reveal">
@@ -318,7 +318,7 @@ const hub = () => {
     <section class="section">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">${type === 'industry' ? 'Industries' : 'Services'}</span>
+          <span class="eyebrow">${type === 'industry' ? 'Industries' : type === 'location' ? 'Locations' : 'Services'}</span>
           <h2>${title}</h2>
           <p class="muted">${intro}</p>
         </div>
@@ -380,6 +380,7 @@ ${JSON.stringify(schema, null, 2)}
     </section>
 ${group('industry', 'Websites by industry', 'Websites planned around what your customers need to see and do.')}
 ${group('service', 'Services', 'Specialist WordPress services for new and existing websites.')}
+${group('location', 'WordPress & Shopify developer by city', 'Working with businesses across India: local notes and nearby projects for each city.')}
 
     ${contact}
   </main>
@@ -1123,6 +1124,9 @@ ${EXTRA.filter(x => x.slug !== 'about').map(x => md(x.crumb, `${SITE}/${x.slug}/
 
 ## Services
 ${PAGES.filter(p => p.type === 'service').map(p => md(p.nav, `${SITE}/${p.slug}/`, p.description)).join('\n')}
+
+## Locations
+${PAGES.filter(p => p.type === 'location').map(p => md(p.nav, `${SITE}/${p.slug}/`, p.description)).join('\n')}
 
 ## Industries
 ${PAGES.filter(p => p.type === 'industry').map(p => md(p.nav, `${SITE}/${p.slug}/`, p.description)).join('\n')}

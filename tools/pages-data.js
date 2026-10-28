@@ -788,4 +788,4 @@ const PAGES = [
   },
 ];
 
-module.exports = PAGES;
+module.exports = PAGES.concat(require("./pages-cities").pages);

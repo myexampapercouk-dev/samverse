@@ -1912,4 +1912,5 @@ module.exports = {
 </ul>
 <p>The store, the domain, the payment provider and every app subscription stay in your name, and you pay Shopify and the app makers directly. My access is a collaborator or staff account that you control. Send me your store address, or a short note on what you plan to sell, for a free review and a fixed quote.</p>
 `,
+  ...require('./pages-cities').guides,
 };
