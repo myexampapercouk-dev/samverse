@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Customise WooCommerce Order Emails | Samverse</title>
-  <meta name="description" content="Customise WooCommerce order emails: built-in settings, plugins, template overrides, what each email should say, inbox delivery, and WhatsApp or SMS updates.">
+  <title>How to Customize WooCommerce Emails (Order Emails)</title>
+  <meta name="description" content="How to customize WooCommerce emails: built-in settings, the email editor, template overrides, GST details, WhatsApp updates and SMTP so order emails arrive.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/customize-woocommerce-emails/">
-  <meta property="og:title" content="How to Customise WooCommerce Order Emails | Samverse">
-  <meta property="og:description" content="Customise WooCommerce order emails: built-in settings, plugins, template overrides, what each email should say, inbox delivery, and WhatsApp or SMS updates.">
+  <meta property="og:title" content="How to Customize WooCommerce Emails (Order Emails)">
+  <meta property="og:description" content="How to customize WooCommerce emails: built-in settings, the email editor, template overrides, GST details, WhatsApp updates and SMTP so order emails arrive.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-customize-woocommerce-emails.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/customize-woocommerce-emails/#article",
       "headline": "Customising WooCommerce Order Emails: Branding, Content and Deliverability",
-      "description": "Customise WooCommerce order emails: built-in settings, plugins, template overrides, what each email should say, inbox delivery, and WhatsApp or SMS updates.",
+      "description": "How to customize WooCommerce emails: built-in settings, the email editor, template overrides, GST details, WhatsApp updates and SMTP so order emails arrive.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-09-28",
+      "dateModified": "2026-10-28",
       "mainEntityOfPage": "https://samverse.space/blog/customize-woocommerce-emails/",
       "image": "https://samverse.space/assets/og/blog-customize-woocommerce-emails.png",
       "articleSection": "E-commerce",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/ecommerce/">E-commerce</a></nav>
           <a class="post-cat" href="/blog/topic/ecommerce/">E-commerce</a>
           <h1>Customising WooCommerce Order Emails: Branding, Content and Deliverability</h1>
-          <p class="post-dek">Customise WooCommerce order emails: built-in settings, plugins, template overrides, what each email should say, inbox delivery, and WhatsApp or SMS updates.</p>
+          <p class="post-dek">How to customize WooCommerce emails: built-in settings, the email editor, template overrides, GST details, WhatsApp updates and SMTP so order emails arrive.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · 5 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-28">28 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Customising%20WooCommerce%20Order%20Emails%3A%20Branding%2C%20Content%20and%20Deliverability%20https%3A%2F%2Fsamverse.space%2Fblog%2Fcustomize-woocommerce-emails%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,51 +153,56 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#the-emails-woocommerce-sends">The emails WooCommerce sends</a></li>
-              <li><a href="#quick-wins-in-the-built-in-settings">Quick wins in the built-in settings</a></li>
-              <li><a href="#going-further-plugins-or-template-overrides">Going further: plugins or template overrides</a></li>
-              <li><a href="#what-to-put-in-each-email">What to put in each email</a></li>
-              <li><a href="#make-sure-the-emails-arrive">Make sure the emails arrive</a></li>
+              <li><a href="#which-emails-woocommerce-sends">Which emails WooCommerce sends</a></li>
+              <li><a href="#how-to-customize-woocommerce-emails-built-in-settings">How to customize WooCommerce emails: built-in settings</a></li>
+              <li><a href="#what-to-put-in-indian-order-emails">What to put in Indian order emails</a></li>
+              <li><a href="#plugins-vs-template-overrides">Plugins vs template overrides</a></li>
+              <li><a href="#make-sure-order-emails-arrive">Make sure order emails arrive</a></li>
+              <li><a href="#writing-better-email-copy">Writing better email copy</a></li>
               <li><a href="#whatsapp-and-sms-alongside-email">WhatsApp and SMS alongside email</a></li>
-              <li><a href="#test-before-and-after-every-change">Test before and after every change</a></li>
+              <li><a href="#shopify-order-emails-for-comparison">Shopify order emails for comparison</a></li>
+              <li><a href="#test-every-status-before-going-live">Test every status before going live</a></li>
+              <li><a href="#common-mistakes">Common mistakes</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Start with the built-in email settings: your own-domain sender, logo, colours, specific subjects and a helpful footer.</li>
-              <li>Each email should answer the next question: dispatch time, COD amount, tracking link, GST invoice and how to get help.</li>
-              <li>Send through SMTP with SPF, DKIM and DMARC, and add opted-in WhatsApp or DLT-registered SMS updates for key moments.</li>
+              <li>Start with WooCommerce's built-in email settings: logo, colours, footer text and which emails go to customers and admins.</li>
+              <li>For deeper changes use the block email editor or a customiser plugin, or override templates in a child theme, never in the plugin folder.</li>
+              <li>A beautiful email is useless if it lands in spam; send through SMTP with SPF, DKIM and DMARC, and test every order status.</li>
             </ul>
           </div>
-<p>Every WooCommerce order triggers emails: a confirmation to the customer, an alert to you, and updates as the order moves along. Out of the box they're plain and generic. A little work makes them look like your brand, answer customers' next questions and, most importantly, actually reach the inbox. Here's what to customise and how.</p>
+<p>To customize WooCommerce emails, start in WooCommerce, Settings, Emails: add your logo, set brand colours, edit footer text and choose which emails are sent. For more control, use the newer block-based email editor where available or an email customiser plugin. Developers can override templates by copying them into a child theme. Then make sure emails arrive by sending them through SMTP with proper SPF, DKIM and DMARC records.</p>
+<p>Order emails are the most-read messages your store sends. For Indian shoppers paying by UPI or choosing cash on delivery, a clear confirmation with order details, delivery expectations and support contact reduces anxious calls and cancellations.</p>
 
-<h2 id="the-emails-woocommerce-sends">The emails WooCommerce sends</h2>
-<p>You'll find them under WooCommerce → Settings → Emails. Each one can be switched on or off, and its subject, heading and extra text edited.</p>
+<h2 id="which-emails-woocommerce-sends">Which emails WooCommerce sends</h2>
 <table>
-  <thead><tr><th>Email</th><th>Goes to</th><th>When</th></tr></thead>
+  <thead><tr><th>Email</th><th>Sent to</th><th>When</th></tr></thead>
   <tbody>
-    <tr><td>New order</td><td>You (admin)</td><td>An order is placed</td></tr>
-    <tr><td>Processing order</td><td>Customer</td><td>Payment is received, or a Cash on Delivery order is placed</td></tr>
-    <tr><td>On-hold order</td><td>Customer</td><td>Payment is awaited, for example a bank transfer</td></tr>
-    <tr><td>Completed order</td><td>Customer</td><td>You mark the order complete</td></tr>
-    <tr><td>Refunded order</td><td>Customer</td><td>A full or partial refund is issued</td></tr>
-    <tr><td>Cancelled and failed order</td><td>You (admin)</td><td>An order is cancelled or a payment fails</td></tr>
-    <tr><td>Customer note, order details, account and password emails</td><td>Customer</td><td>When you or the customer trigger them</td></tr>
+    <tr><td>New order</td><td>Admin</td><td>A new order is placed</td></tr>
+    <tr><td>Processing order</td><td>Customer</td><td>Payment received, or COD order placed</td></tr>
+    <tr><td>On-hold order</td><td>Customer</td><td>Awaiting payment, such as bank transfer</td></tr>
+    <tr><td>Completed order</td><td>Customer</td><td>Order marked complete, often when shipped or delivered</td></tr>
+    <tr><td>Cancelled and failed order</td><td>Admin (customer optional in recent versions)</td><td>Payment fails or order cancelled</td></tr>
+    <tr><td>Refunded order</td><td>Customer</td><td>Full or partial refund</td></tr>
+    <tr><td>Customer note</td><td>Customer</td><td>You add a note to the order for the customer</td></tr>
+    <tr><td>Reset password, new account</td><td>Customer</td><td>Account actions</td></tr>
   </tbody>
 </table>
-<p>Recent WooCommerce versions have added a few more emails and design options, so check the list in your own store.</p>
+<p>Many Indian stores use "Completed" to mean shipped. If so, rename that meaning clearly in the email text, or add a custom "Shipped" status with its own email, so customers are not told an order is complete before it arrives.</p>
 
-<h2 id="quick-wins-in-the-built-in-settings">Quick wins in the built-in settings</h2>
+<h2 id="how-to-customize-woocommerce-emails-built-in-settings">How to customize WooCommerce emails: built-in settings</h2>
+<p>Go to WooCommerce, Settings, Emails. Here you can:</p>
 <ul>
-  <li><strong>Sender name and address:</strong> use your brand name and an address on your own domain, such as orders@yourbrand.in, not a Gmail address</li>
-  <li><strong>Logo and colours:</strong> add a header image and set the base, background and text colours to match your brand</li>
-  <li><strong>Subjects and headings:</strong> make them specific, like "Your order #1234 is confirmed", rather than generic</li>
-  <li><strong>Additional content:</strong> a short, friendly line in each email, such as how long dispatch usually takes</li>
-  <li><strong>Footer:</strong> business name, support email, phone or WhatsApp number, and a link to your returns policy</li>
-  <li><strong>Admin recipients:</strong> send new order alerts to everyone who packs or approves orders; several addresses can be separated with commas</li>
+  <li>Enable or disable each email, and set recipients for admin emails (for example, the warehouse and accounts teams).</li>
+  <li>Edit the subject, heading and additional content for each email.</li>
+  <li>Use placeholders such as {site_title}, {order_number} and {order_date} in subjects and headings.</li>
+  <li>Set the header image (your logo), footer text, base colour, background and body text colours.</li>
+  <li>Set the "From" name and address. Use your store name and an address on your own domain.</li>
 </ul>
-<p>Newer versions of WooCommerce have been adding more styling options and a live preview, so check what yours offers before reaching for a plugin.</p>
+<p>Recent WooCommerce versions also include a block-based email editor and a live preview. If your version has it, it is the easiest way to adjust layout and wording without code.</p>
 
 <aside class="inline-cta">
   <strong>Need help with online stores?</strong>
@@ -205,57 +210,102 @@
   <div><a href="/woocommerce-developer/" class="link-inline">See Online Stores →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Customising%20WooCommerce%20Order%20Emails%3A%20Branding%2C%20Content%20and%20Deliverability%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="going-further-plugins-or-template-overrides">Going further: plugins or template overrides</h2>
-<p>For layouts the settings can't handle, there are two routes.</p>
+<h2 id="what-to-put-in-indian-order-emails">What to put in Indian order emails</h2>
 <ul>
-  <li><strong>Email customiser plugins</strong> give you a visual editor for layout, fonts, sections and per-email content. They're the easiest option for most stores. Pick one that is actively maintained and compatible with your WooCommerce version.</li>
-  <li><strong>Template overrides:</strong> a developer copies WooCommerce's email templates into your theme and edits them. This gives full control, but always use a <a href="/blog/wordpress-child-theme-explained/">child theme</a> so theme updates don't wipe the changes, and check WooCommerce → Status after updates, which flags outdated template overrides.</li>
+  <li><strong>Clear order summary:</strong> items, variants, quantities, prices and totals including tax and shipping.</li>
+  <li><strong>Payment method:</strong> "Paid via UPI", "Cash on delivery: please keep the exact amount ready", or bank transfer details for on-hold orders.</li>
+  <li><strong>GST details:</strong> your GSTIN and whether prices include GST, as your CA advises. Attach or link a GST invoice if you generate one. <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST invoices for India</a> covers invoice plugins.</li>
+  <li><strong>Delivery expectations:</strong> dispatch time and typical delivery window, honestly stated.</li>
+  <li><strong>Tracking:</strong> courier name and tracking link once shipped, often added by Shiprocket or courier plugins.</li>
+  <li><strong>Support:</strong> WhatsApp number, phone and email, with support hours.</li>
+  <li><strong>Policies:</strong> short links to returns, exchanges and cancellation policies.</li>
 </ul>
-<p>Keep the design simple either way. Most customers read order emails on a phone, so use a single column, readable text, a modest logo and no heavy images, which some email apps block by default.</p>
+<p>Avoid overloading the email with promotions. One small cross-sell or a link to follow on Instagram is plenty.</p>
 
-<h2 id="what-to-put-in-each-email">What to put in each email</h2>
-<p>Good order emails answer the customer's next question before they pick up the phone.</p>
+<h2 id="plugins-vs-template-overrides">Plugins vs template overrides</h2>
+<table>
+  <thead><tr><th>Approach</th><th>Best for</th><th>Trade-offs</th></tr></thead>
+  <tbody>
+    <tr><td>Built-in settings</td><td>Logo, colours, subject lines, short text</td><td>Limited layout control</td></tr>
+    <tr><td>Block email editor</td><td>Layout and content changes without code</td><td>Depends on WooCommerce version and compatibility with other plugins</td></tr>
+    <tr><td>Email customiser plugin</td><td>Drag-and-drop design, conditional content</td><td>Another plugin to maintain; check compatibility</td></tr>
+    <tr><td>Template overrides in a child theme</td><td>Exact control, custom fields, special layouts</td><td>Needs a developer; overrides must be updated when WooCommerce changes templates</td></tr>
+    <tr><td>Hooks in a small custom plugin</td><td>Adding information like delivery dates or GSTIN</td><td>Needs a developer, but survives theme changes</td></tr>
+  </tbody>
+</table>
+<h3>Template overrides done safely</h3>
+<p>WooCommerce email templates live in the plugin's templates/emails folder. To change one, copy it into your child theme at woocommerce/emails/ and edit the copy. Never edit the plugin's own files; updates will overwrite them. After WooCommerce updates, check WooCommerce, Status for outdated template warnings and update your copies. <a href="/blog/update-wordpress-safely/">Updating WordPress safely</a> explains why staging matters here.</p>
+
+<h2 id="make-sure-order-emails-arrive">Make sure order emails arrive</h2>
+<p>By default, WordPress sends email through the server's PHP mail function. On shared hosting, these emails often land in spam or never arrive, especially at Gmail and Outlook.</p>
+<ol>
+  <li><strong>Use an SMTP plugin</strong> connected to a proper sending service: your business email provider or a transactional service.</li>
+  <li><strong>Set SPF, DKIM and DMARC</strong> DNS records for your domain. <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">Business email deliverability</a> explains each one.</li>
+  <li><strong>Match the From address</strong> to the domain you authenticated.</li>
+  <li><strong>Turn on email logging</strong> so you can see what was sent and whether it failed.</li>
+  <li><strong>Test</strong> by placing real test orders with Gmail, Outlook and Yahoo addresses.</li>
+</ol>
+<p>If emails stopped altogether, <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a> walks through the fixes.</p>
+
+<h2 id="writing-better-email-copy">Writing better email copy</h2>
+<p>The default WooCommerce wording is polite but generic. A few small changes make order emails more useful and reduce support messages.</p>
+<table>
+  <thead><tr><th>Email</th><th>Default feel</th><th>Better approach</th></tr></thead>
+  <tbody>
+    <tr><td>Processing (prepaid)</td><td>"We have finished processing your order"</td><td>Confirm payment received, say when it will be packed and dispatched</td></tr>
+    <tr><td>Processing (COD)</td><td>Same as prepaid</td><td>Explain any confirmation call or message, and that payment is collected on delivery</td></tr>
+    <tr><td>On-hold (bank transfer)</td><td>Bank details in a block</td><td>Clear steps, the reference to use and how long you will hold the order</td></tr>
+    <tr><td>Completed or shipped</td><td>"Your order is complete"</td><td>Courier, tracking link, expected delivery and what to do if a parcel is damaged</td></tr>
+    <tr><td>Refunded</td><td>Amount refunded</td><td>Amount, method and the usual time banks or UPI take to show it</td></tr>
+  </tbody>
+</table>
+<h3>Subject lines that customers recognise</h3>
+<p>Put the store name and order number in every subject, for example "Your order #1045 from Store Name is on its way". Customers search their inbox by store name when they have a problem, and a clear subject also looks less like spam. Keep subjects short enough to read on a phone, and avoid capital letters and too many symbols.</p>
+<h3>Different languages</h3>
+<p>If you sell mainly in one region, a short line in the local language alongside English can feel welcoming. Multilingual plugins can translate email templates fully if your store runs in more than one language; test each version with a real order.</p>
+
+<h2 id="whatsapp-and-sms-alongside-email">WhatsApp and SMS alongside email</h2>
+<p>Many Indian shoppers check WhatsApp before email. Order updates over WhatsApp, through the official WhatsApp Business Platform via an approved provider, can complement email for confirmation, dispatch and delivery messages. Keep email as the record: it carries the invoice, full details and policies, and it is what customers forward to their bank or accounts team when they need proof of purchase. Always collect consent for WhatsApp messages, and avoid sending marketing to customers who only agreed to order updates.</p>
+
+<h2 id="shopify-order-emails-for-comparison">Shopify order emails for comparison</h2>
+<p>If you are comparing platforms, Shopify handles customer notifications under Settings, Notifications, using editable Liquid templates with a preview. Branding and wording are easy to change; deliverability is handled by Shopify, though you should still authenticate your sender domain. Many of the same content rules apply: clear payment method, GST information, tracking and support details. <a href="/shopify-developer/">Shopify development</a> can cover notification templates too.</p>
+
+<h2 id="test-every-status-before-going-live">Test every status before going live</h2>
 <ul>
-  <li><strong>Confirmation:</strong> what they ordered, the total, payment method, delivery address and when to expect dispatch</li>
-  <li><strong>Cash on Delivery orders:</strong> the amount to keep ready, and whether they can pay by UPI on delivery if your courier supports it</li>
-  <li><strong>Shipping updates:</strong> courier name and tracking link; shipment tracking plugins can add these to your emails</li>
-  <li><strong>Invoices:</strong> a GST invoice attached or linked if you're registered; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a></li>
-  <li><strong>Help:</strong> how to reach you, and a link to your returns and refunds policy</li>
+  <li>Place test orders with each payment method: UPI or gateway, COD and bank transfer.</li>
+  <li>Move each order through processing, completed, refunded and cancelled.</li>
+  <li>Check each email on a phone, in Gmail and Outlook, in light and dark mode.</li>
+  <li>Check the admin email goes to the right people.</li>
+  <li>Check that personal data shown in emails is limited to what the customer needs.</li>
 </ul>
-<p>Watch the wording of the "Completed" email. Many Indian stores mark orders complete at dispatch, so a message saying "your order is complete" can arrive days before the parcel. Either reword it or add a custom "Shipped" status with its own email. Keep promotions light: a small "you might also like" block is fine, but order emails should mainly be about the order.</p>
+
+<h2 id="common-mistakes">Common mistakes</h2>
+<ul>
+  <li>Editing templates inside the WooCommerce plugin folder</li>
+  <li>Using a Gmail address as the From address on a store domain</li>
+  <li>Huge header images that look broken on mobile</li>
+  <li>Leaving the default "Thanks for shopping with us" text when your process needs more explanation, such as COD verification calls</li>
+  <li>Not checking emails after a WooCommerce update</li>
+  <li>Sending the admin new-order email to one person who is often on leave, so orders sit unnoticed</li>
+  <li>Forgetting that payment gateway, shipping and invoice plugins can each add their own text or attachments, which may repeat or contradict your template</li>
+  <li>Showing a support number nobody answers during the hours customers usually call</li>
+</ul>
 
 <p>Custom statuses like "Shipped" work best as part of a clear <a href="/blog/woocommerce-order-management-workflow/">order management workflow</a> that the whole team follows.</p>
 
-<h2 id="make-sure-the-emails-arrive">Make sure the emails arrive</h2>
-<p>The best-designed email is useless in the spam folder. By default WordPress sends mail through your web server, which many email providers treat with suspicion.</p>
-<ol>
-  <li>Send through proper SMTP, using an SMTP plugin connected to your business email provider or a transactional email service</li>
-  <li>Set up SPF, DKIM and DMARC for your domain; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a></li>
-  <li>Make sure the "From" address uses the domain you authenticated</li>
-  <li>Turn on email logging, so when a customer says an email never came you can check whether it was sent</li>
-  <li>Send test orders to Gmail, Outlook and a phone email app, and check both the inbox and spam</li>
-</ol>
-<p>Busy stores should also check the sending limits on their hosting or email plan, since shared hosting often caps outgoing mail.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>How do I customize WooCommerce emails?</h3>
+<p>Use WooCommerce, Settings, Emails for logo, colours and text, the block email editor or a customiser plugin for layout, and child theme template overrides for exact control.</p>
+<h3>Can I add a GST invoice to WooCommerce order emails?</h3>
+<p>Yes. Invoice plugins can attach a PDF invoice to order emails. Check the format and details with your CA.</p>
+<h3>Why are WooCommerce emails going to spam?</h3>
+<p>Usually because they are sent through the server without authentication. Use SMTP and set SPF, DKIM and DMARC for your domain.</p>
+<h3>Can I add a custom "Shipped" email?</h3>
+<p>Yes, with a custom order status plugin or a small custom plugin that adds the status and its email.</p>
+<h3>Will template changes break after updates?</h3>
+<p>Overrides can become outdated. Check WooCommerce, Status after updates and refresh the copies on staging first.</p>
 
-<h2 id="whatsapp-and-sms-alongside-email">WhatsApp and SMS alongside email</h2>
-<p>Many Indian customers check WhatsApp long before email. Order updates on WhatsApp or SMS can cut down "where is my order?" calls and help confirm COD orders before you ship them.</p>
-<ul>
-  <li><strong>WhatsApp:</strong> automated order messages use the WhatsApp Business Platform, usually through a provider, with pre-approved message templates and the customer's opt-in</li>
-  <li><strong>SMS:</strong> business SMS in India generally needs DLT registration of your sender ID and message templates; your SMS provider can guide you through it</li>
-  <li><strong>Keep email as the record:</strong> invoices, full order details and policies still belong in email</li>
-  <li><strong>Don't duplicate everything:</strong> pick key moments like confirmation, dispatch and out for delivery, rather than sending every update on every channel</li>
-</ul>
-<p>For WhatsApp on the website itself, see <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
-
-<h2 id="test-before-and-after-every-change">Test before and after every change</h2>
-<ul>
-  <li>Place test orders with each payment method you offer (UPI or cards, COD, bank transfer), since each can trigger different emails</li>
-  <li>Check how emails look on small screens and in dark mode</li>
-  <li>Re-test after WooCommerce, theme or email plugin updates</li>
-  <li>Every few months, place a real order yourself and read every message you receive as a customer would</li>
-</ul>
-
-<p>Want your store's emails branded, reliable and backed up by WhatsApp updates? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for wider work on your site.</p>
+<p>Want branded order emails that arrive reliably? I customise WooCommerce emails, invoices and notifications as part of <a href="/woocommerce-developer/">WooCommerce development</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or see <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a> and <a href="/wordpress-developer-pune/">Pune</a> pages if you are nearby.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -291,13 +341,17 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#the-emails-woocommerce-sends">The emails WooCommerce sends</a></li>
-              <li><a href="#quick-wins-in-the-built-in-settings">Quick wins in the built-in settings</a></li>
-              <li><a href="#going-further-plugins-or-template-overrides">Going further: plugins or template overrides</a></li>
-              <li><a href="#what-to-put-in-each-email">What to put in each email</a></li>
-              <li><a href="#make-sure-the-emails-arrive">Make sure the emails arrive</a></li>
+              <li><a href="#which-emails-woocommerce-sends">Which emails WooCommerce sends</a></li>
+              <li><a href="#how-to-customize-woocommerce-emails-built-in-settings">How to customize WooCommerce emails: built-in settings</a></li>
+              <li><a href="#what-to-put-in-indian-order-emails">What to put in Indian order emails</a></li>
+              <li><a href="#plugins-vs-template-overrides">Plugins vs template overrides</a></li>
+              <li><a href="#make-sure-order-emails-arrive">Make sure order emails arrive</a></li>
+              <li><a href="#writing-better-email-copy">Writing better email copy</a></li>
               <li><a href="#whatsapp-and-sms-alongside-email">WhatsApp and SMS alongside email</a></li>
-              <li><a href="#test-before-and-after-every-change">Test before and after every change</a></li>
+              <li><a href="#shopify-order-emails-for-comparison">Shopify order emails for comparison</a></li>
+              <li><a href="#test-every-status-before-going-live">Test every status before going live</a></li>
+              <li><a href="#common-mistakes">Common mistakes</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">

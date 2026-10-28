@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stop Spam User Registrations in WordPress &amp; WooCommerce</title>
-  <meta name="description" content="Stop fake sign-ups on WordPress and WooCommerce: when to turn off registration, CAPTCHA and honeypots, email checks, and how to clean up spam accounts safely.">
+  <title>How to Stop Spam User Registrations in WordPress | Samverse</title>
+  <meta name="description" content="How to stop spam user registrations in WordPress and WooCommerce: check settings, add Turnstile or reCAPTCHA, honeypots, email checks and clean up fake users.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/stop-spam-user-registrations-wordpress/">
-  <meta property="og:title" content="Stop Spam User Registrations in WordPress &amp; WooCommerce">
-  <meta property="og:description" content="Stop fake sign-ups on WordPress and WooCommerce: when to turn off registration, CAPTCHA and honeypots, email checks, and how to clean up spam accounts safely.">
+  <meta property="og:title" content="How to Stop Spam User Registrations in WordPress | Samverse">
+  <meta property="og:description" content="How to stop spam user registrations in WordPress and WooCommerce: check settings, add Turnstile or reCAPTCHA, honeypots, email checks and clean up fake users.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-stop-spam-user-registrations-wordpress.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/stop-spam-user-registrations-wordpress/#article",
       "headline": "How to Stop Spam User Registrations in WordPress and WooCommerce",
-      "description": "Stop fake sign-ups on WordPress and WooCommerce: when to turn off registration, CAPTCHA and honeypots, email checks, and how to clean up spam accounts safely.",
+      "description": "How to stop spam user registrations in WordPress and WooCommerce: check settings, add Turnstile or reCAPTCHA, honeypots, email checks and clean up fake users.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-01",
+      "dateModified": "2026-10-28",
       "mainEntityOfPage": "https://samverse.space/blog/stop-spam-user-registrations-wordpress/",
       "image": "https://samverse.space/assets/og/blog-stop-spam-user-registrations-wordpress.png",
       "articleSection": "Security",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
           <h1>How to Stop Spam User Registrations in WordPress and WooCommerce</h1>
-          <p class="post-dek">Stop fake sign-ups on WordPress and WooCommerce: when to turn off registration, CAPTCHA and honeypots, email checks, and how to clean up spam accounts safely.</p>
+          <p class="post-dek">How to stop spam user registrations in WordPress and WooCommerce: check settings, add Turnstile or reCAPTCHA, honeypots, email checks and clean up fake users.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · 5 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-28">28 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Stop%20Spam%20User%20Registrations%20in%20WordPress%20and%20WooCommerce%20https%3A%2F%2Fsamverse.space%2Fblog%2Fstop-spam-user-registrations-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,40 +153,51 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#why-bots-register-on-your-site">Why bots register on your site</a></li>
-              <li><a href="#does-anyone-can-register-need-to-be-on">Does "Anyone can register" need to be on?</a></li>
-              <li><a href="#add-bot-protection-to-every-registration-form">Add bot protection to every registration form</a></li>
-              <li><a href="#verify-email-addresses">Verify email addresses</a></li>
-              <li><a href="#block-disposable-and-suspicious-email-domains">Block disposable and suspicious email domains</a></li>
-              <li><a href="#clean-up-existing-spam-accounts-safely">Clean up existing spam accounts safely</a></li>
-              <li><a href="#when-spam-registrations-signal-a-bigger-problem">When spam registrations signal a bigger problem</a></li>
+              <li><a href="#how-to-stop-spam-user-registrations-in-wordpress-why-bots-sign-up">How to stop spam user registrations in WordPress: why bots sign up</a></li>
+              <li><a href="#step-1-check-your-wordpress-settings">Step 1: check your WordPress settings</a></li>
+              <li><a href="#step-2-check-woocommerce-account-settings">Step 2: check WooCommerce account settings</a></li>
+              <li><a href="#step-3-add-a-captcha-or-challenge">Step 3: add a CAPTCHA or challenge</a></li>
+              <li><a href="#step-4-add-quieter-layers">Step 4: add quieter layers</a></li>
+              <li><a href="#step-5-clean-up-existing-spam-accounts">Step 5: clean up existing spam accounts</a></li>
+              <li><a href="#when-spam-registrations-mean-something-worse">When spam registrations mean something worse</a></li>
+              <li><a href="#what-about-shopify">What about Shopify?</a></li>
+              <li><a href="#protect-email-reputation-too">Protect email reputation too</a></li>
+              <li><a href="#plugins-that-add-their-own-registration-forms">Plugins that add their own registration forms</a></li>
+              <li><a href="#protect-the-login-and-lost-password-forms-too">Protect the login and lost password forms too</a></li>
+              <li><a href="#monitor-so-you-notice-early">Monitor so you notice early</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Most business sites can untick &quot;Anyone can register&quot;, and the default role should always be Subscriber or Customer.</li>
-              <li>Protect every registration form with honeypots, low-friction challenges, rate limiting and, where it fits, email verification.</li>
-              <li>Back up before deleting spam accounts, keep customers with orders, and investigate any spam account with a higher role.</li>
+              <li>First check whether open registration is even needed; many business sites can simply untick Anyone can register and set the default role to Subscriber.</li>
+              <li>For stores and membership sites, layer a CAPTCHA such as Cloudflare Turnstile, a honeypot, email confirmation and rate limiting rather than relying on one tool.</li>
+              <li>Clean out existing fake accounts carefully, after a backup, and watch for spam users with higher roles, which can signal a real compromise.</li>
             </ul>
           </div>
-<p>You open the Users screen and find hundreds of accounts with random names and strange email addresses, all created in the last few weeks. Fake sign-ups are one of the most common nuisances on WordPress and WooCommerce sites. Usually they're just bots, but they clutter your database, can trigger emails from your site to fake addresses, and occasionally point to a more serious problem. Here's how to stop them and clean up safely.</p>
+<p>To stop spam user registrations in WordPress, first decide whether visitors need to register at all. If not, turn off "Anyone can register" in Settings, General. If you run a WooCommerce store or membership site that needs accounts, add a CAPTCHA such as Cloudflare Turnstile to the registration form, a hidden honeypot field, email confirmation and rate limiting at the firewall. Then remove the fake accounts already created, after taking a backup.</p>
+<p>Spam sign-ups are common on Indian business sites and stores. They fill the database, trigger welcome emails to fake addresses that damage your email reputation, and sometimes hide a more serious problem.</p>
 
-<h2 id="why-bots-register-on-your-site">Why bots register on your site</h2>
+<h2 id="how-to-stop-spam-user-registrations-in-wordpress-why-bots-sign-up">How to stop spam user registrations in WordPress: why bots sign up</h2>
 <ul>
-  <li>To post spam comments, reviews or forum posts that need a logged-in account</li>
-  <li>To create profile pages with links, on sites running membership, forum or directory plugins</li>
-  <li>To probe for vulnerable plugins that might give a new account more access than it should have</li>
-  <li>Simply because an open registration form exists, and spam bots fill in every form they find</li>
+  <li><strong>Link spam:</strong> some bots create accounts so they can post comments or profile links.</li>
+  <li><strong>Testing stolen data:</strong> bots use registration and checkout forms to test email addresses and card details.</li>
+  <li><strong>Exploiting old plugins:</strong> known flaws in membership, form or LMS plugins can let a registered user do more than intended.</li>
+  <li><strong>Plain automation:</strong> many bots simply hit every /wp-login.php?action=register and my-account page they find.</li>
 </ul>
-<p>Most of these accounts never do anything. But they show that bots can reach a form you may not even know is open.</p>
+<p>Even if fake accounts look harmless, they cost you: a bigger database, wasted emails, confusing customer reports and a larger attack surface.</p>
 
-<h2 id="does-anyone-can-register-need-to-be-on">Does "Anyone can register" need to be on?</h2>
-<p>Go to <strong>Settings &gt; General</strong> and find <strong>Membership</strong>. If "Anyone can register" is ticked, anyone can create an account through the standard WordPress registration page.</p>
-<p>Most business websites, such as service businesses, clinics, B2B companies and brochure sites, don't need this. Staff accounts are created by an administrator, so you can untick it. Leave it on only if visitors genuinely need accounts, for example on a membership, course or community site.</p>
-<p>While you're there, check <strong>New User Default Role</strong>. It should be Subscriber (or Customer on a store). If it shows Administrator, Editor or another role with editing rights and nobody on your team set it, treat that as a likely sign of a hack, not a setting to quietly fix.</p>
-<h3>WooCommerce account settings</h3>
-<p>WooCommerce has its own account options under <strong>WooCommerce &gt; Settings &gt; Accounts &amp; Privacy</strong>, separate from the WordPress setting. You can choose whether customers can create an account on the My Account page, during checkout, or both, and whether guest checkout is allowed. Much store registration spam comes through the My Account form, so allowing accounts only at checkout, with guest checkout enabled, can cut fake sign-ups considerably without affecting real customers. Option names change between versions, so check what yours shows.</p>
+<h2 id="step-1-check-your-wordpress-settings">Step 1: check your WordPress settings</h2>
+<p>Go to Settings, General in wp-admin and look at two settings.</p>
+<table>
+  <thead><tr><th>Setting</th><th>Safe choice</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Membership: Anyone can register</td><td>Unticked unless you need public accounts</td><td>Most brochure and lead-generation sites do not need it</td></tr>
+    <tr><td>New User Default Role</td><td>Subscriber (or Customer on WooCommerce)</td><td>A spam account with Editor or Administrator role is dangerous</td></tr>
+  </tbody>
+</table>
+<p>If the default role is anything higher than Subscriber and you did not set it, treat that as a warning sign of a compromise. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> describes what each role can do.</p>
 
 <aside class="inline-cta">
   <strong>Need help with malware removal &amp; security?</strong>
@@ -194,49 +205,104 @@
   <div><a href="/wordpress-malware-removal/" class="link-inline">See Malware Removal &amp; Security →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Stop%20Spam%20User%20Registrations%20in%20WordPress%20and%20WooCommerce%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="add-bot-protection-to-every-registration-form">Add bot protection to every registration form</h2>
-<p>If registration has to stay open, protect it the same way you would a contact form. The methods in <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a> apply here too:</p>
+<h2 id="step-2-check-woocommerce-account-settings">Step 2: check WooCommerce account settings</h2>
+<p>In WooCommerce, Settings, Accounts and Privacy, review:</p>
 <ul>
-  <li><strong>Honeypot fields:</strong> hidden fields that bots fill in and people never see. They're invisible to customers and stop many simple bots.</li>
-  <li><strong>Invisible or low-friction challenges</strong> such as Cloudflare Turnstile, Google reCAPTCHA or hCaptcha, added through a plugin that supports both the WordPress and WooCommerce registration forms</li>
-  <li><strong>Rate limiting:</strong> a firewall or security plugin that limits how many registrations can come from one IP address in a short time</li>
-</ul>
-<p>Make sure the protection covers every registration form on the site. It's common to protect the standard WordPress registration page but miss the WooCommerce My Account form, or a membership plugin's own sign-up page. Avoid hard puzzles that frustrate real customers, especially on mobile.</p>
-
-<h2 id="verify-email-addresses">Verify email addresses</h2>
-<p>By default, WordPress creates the account straight away and emails a link to set a password. A bot using a fake address never sets one, but the account still sits in your database. Email verification goes further: the account isn't activated until the person clicks a confirmation link.</p>
-<p>Many membership, registration and security plugins offer email confirmation or manual approval of new accounts. Manual approval suits small communities and B2B dealer portals where you know who should be signing up. On a busy shop, extra verification steps add friction, so weigh them against how much spam you actually get.</p>
-
-<h2 id="block-disposable-and-suspicious-email-domains">Block disposable and suspicious email domains</h2>
-<p>Many fake sign-ups use throwaway email services that create temporary inboxes. Some plugins can block registrations from known disposable domains, or from domains and patterns you add yourself.</p>
-<ul>
-  <li>Disposable domain lists go out of date, so choose an actively maintained plugin</li>
-  <li>Don't block big free providers like Gmail; many genuine Indian customers and small businesses use them</li>
-  <li>Review what gets blocked now and then, so real customers aren't turned away silently</li>
+  <li><strong>Allow customers to create an account on the My Account page:</strong> switch off if guests can buy without an account and you do not need one.</li>
+  <li><strong>Allow customers to create an account during checkout:</strong> safer than an open My Account form, because the bot must go through checkout.</li>
+  <li><strong>Guest checkout:</strong> allowing it reduces fake accounts and often reduces friction for Indian shoppers paying by UPI or COD.</li>
+  <li><strong>Send password setup link:</strong> rather than letting users choose a password on the form, which also confirms the email exists.</li>
 </ul>
 
-<h2 id="clean-up-existing-spam-accounts-safely">Clean up existing spam accounts safely</h2>
+<h2 id="step-3-add-a-captcha-or-challenge">Step 3: add a CAPTCHA or challenge</h2>
+<p>A challenge on the registration form stops most automated sign-ups.</p>
+<table>
+  <thead><tr><th>Option</th><th>User experience</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Cloudflare Turnstile</td><td>Usually invisible or one click</td><td>Free, privacy-friendly, works on WordPress and WooCommerce forms via plugins</td></tr>
+    <tr><td>Google reCAPTCHA v3</td><td>Invisible, score-based</td><td>Needs tuning; loads Google scripts on every page if not limited</td></tr>
+    <tr><td>Google reCAPTCHA v2</td><td>Checkbox or image puzzles</td><td>Effective, but puzzles annoy real customers on mobile</td></tr>
+    <tr><td>hCaptcha</td><td>Checkbox or puzzle</td><td>Alternative to Google</td></tr>
+  </tbody>
+</table>
+<p>Whichever you choose, apply it to registration, login, lost password and checkout account creation. Test the full flow on a phone afterwards; a challenge that breaks checkout costs more than the spam.</p>
+
+<h2 id="step-4-add-quieter-layers">Step 4: add quieter layers</h2>
+<ul>
+  <li><strong>Honeypot field:</strong> a hidden field real users never see. Bots fill it and get rejected. Several anti-spam plugins add this without visible changes.</li>
+  <li><strong>Email confirmation:</strong> account only becomes active after the user clicks a link.</li>
+  <li><strong>Disposable email blocking:</strong> reject known throwaway email domains.</li>
+  <li><strong>Rate limiting:</strong> limit how many registrations one IP address can make in a short time, at the firewall or through a security plugin. <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers where this sits.</li>
+  <li><strong>Country rules, carefully:</strong> if you only sell within India, a firewall rule can challenge registrations from elsewhere. Do not block outright if you have customers abroad or travelling.</li>
+  <li><strong>Manual approval:</strong> for B2B or dealer portals, approve accounts by hand.</li>
+</ul>
+
+<h2 id="step-5-clean-up-existing-spam-accounts">Step 5: clean up existing spam accounts</h2>
 <ol>
-  <li><strong>Take a full backup</strong> of the database before deleting anything</li>
-  <li><strong>Close the door first:</strong> switch off or protect registration, or new spam keeps arriving while you clean</li>
-  <li><strong>Identify the spam:</strong> Subscriber or Customer role, no orders, no comments, random-looking usernames, unusual email domains and sign-ups in short bursts</li>
-  <li><strong>Don't delete accounts with orders</strong> without checking; real customers sometimes have odd-looking emails, and their order history is a business record</li>
-  <li><strong>Delete in small batches</strong> from the Users screen, or have a developer use WP-CLI for thousands of accounts, tested on a staging copy first</li>
-  <li><strong>Check for higher roles:</strong> a "spam" account with Editor, Shop Manager or Administrator rights is not ordinary spam</li>
+  <li><strong>Take a full backup</strong> of files and database first.</li>
+  <li>In Users, sort by registration date and look for patterns: random usernames, the same email domain, many sign-ups within minutes.</li>
+  <li>Check that no unknown user has Administrator, Editor or Shop Manager rights. If you find one, treat it as a security incident, not a spam problem.</li>
+  <li>On WooCommerce, never delete accounts with orders without checking; they are real customers or linked to order history you need for GST records.</li>
+  <li>Delete spam accounts in batches, choosing to delete their content too only if you are sure they posted nothing legitimate.</li>
+  <li>For large numbers, WP-CLI or a bulk-delete plugin is faster. Test on staging first if possible.</li>
 </ol>
+<p>The <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> covers taking a reliable backup before clean-up.</p>
 
-<h2 id="when-spam-registrations-signal-a-bigger-problem">When spam registrations signal a bigger problem</h2>
-<p>Usually fake sign-ups are just noise. Look more closely if you see any of these:</p>
+<h2 id="when-spam-registrations-mean-something-worse">When spam registrations mean something worse</h2>
+<p>Most spam accounts are just noise. But look further if you see:</p>
 <ul>
-  <li>New accounts with Administrator, Editor or Shop Manager roles that nobody created</li>
-  <li>The default role or "Anyone can register" changed without anyone on your team doing it</li>
-  <li>Accounts still appearing after you've switched registration off everywhere, which can point to a vulnerable plugin or another way in</li>
-  <li>Your host warning about outgoing email, or people receiving odd emails from your site; see <a href="/blog/wordpress-site-sending-spam-emails/">website sending spam emails</a></li>
-  <li>Strange pages, redirects or unfamiliar files appearing around the same time</li>
+  <li>New administrator accounts you did not create</li>
+  <li>The default role changed without your knowledge</li>
+  <li>Registrations even though registration is switched off</li>
+  <li>Unknown plugins, redirects or spam pages appearing</li>
 </ul>
-<p>Any of these deserves a proper security check, not just a bulk delete. If you run a store, the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a> is a good place to start.</p>
+<p>These point to a compromise. Read <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site is hacked</a>, and if you need help, <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers the clean-up.</p>
 
-<p>Need fake sign-ups stopped without blocking real customers? I set this up as part of <a href="/woocommerce-developer/">WooCommerce development</a>, and if something looks more serious, I can investigate through <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+<h2 id="what-about-shopify">What about Shopify?</h2>
+<p>Shopify handles customer account security and bot protection on its own platform, and you can turn on hCaptcha for contact and account forms in the store's preferences. Spam customer sign-ups still happen, often from newsletter forms. Use Shopify's built-in spam protection, check that the marketing consent setting is correct, and periodically clean customer lists of obvious fakes before sending campaigns. If you need help with store settings, see <a href="/shopify-developer/">Shopify development</a>.</p>
+
+<h2 id="protect-email-reputation-too">Protect email reputation too</h2>
+<p>Every spam registration usually triggers a welcome email to a fake or stolen address. Many bounces or spam complaints can push your domain's emails into spam folders, including order confirmations. Send site emails through a proper SMTP service, set up SPF, DKIM and DMARC, and watch the bounce rate. <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">Business email deliverability</a> explains the records.</p>
+
+<h2 id="plugins-that-add-their-own-registration-forms">Plugins that add their own registration forms</h2>
+<p>A common surprise is that spam continues after you switch off "Anyone can register". The reason is usually a plugin with its own sign-up form that ignores the core setting. Check these:</p>
+<table>
+  <thead><tr><th>Plugin type</th><th>Where the form lives</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>WooCommerce</td><td>My Account page and checkout</td><td>Review account settings; add a challenge to both forms</td></tr>
+    <tr><td>Membership and LMS plugins</td><td>Custom registration pages</td><td>Use the plugin's own spam settings, add Turnstile, require approval</td></tr>
+    <tr><td>Form builders with user registration add-ons</td><td>Any page with the form</td><td>Add honeypot and CAPTCHA fields, limit submissions</td></tr>
+    <tr><td>Forum or community plugins</td><td>Forum sign-up pages</td><td>Moderate first posts, require email confirmation</td></tr>
+    <tr><td>Old or abandoned plugins</td><td>Forgotten pages</td><td>Remove the plugin if you no longer use it</td></tr>
+  </tbody>
+</table>
+<p>Search your pages for shortcodes or blocks that output registration forms, and test each URL in a private browser window to confirm what a visitor sees.</p>
+
+<h2 id="protect-the-login-and-lost-password-forms-too">Protect the login and lost password forms too</h2>
+<p>Bots that register often also try to log in with guessed or leaked passwords, and abuse the lost password form to send floods of reset emails. Apply the same challenge to login and password reset, limit failed attempts, and use two-factor authentication for administrator and shop manager accounts. <a href="/blog/secure-wordpress-login/">How to secure your WordPress login</a> covers this in more detail, and a WooCommerce security checklist covers the store-specific checks.</p>
+
+<h2 id="monitor-so-you-notice-early">Monitor so you notice early</h2>
+<ul>
+  <li>Check the Users screen weekly for unusual spikes in sign-ups.</li>
+  <li>Use an activity log plugin to record new users, role changes and plugin installs.</li>
+  <li>Watch email bounce notices from your SMTP service.</li>
+  <li>Review firewall logs for repeated hits on registration URLs.</li>
+</ul>
+<p>If sign-ups suddenly jump after months of quiet, check what changed: a new plugin, a theme update that removed a challenge field, or a caching rule that serves an old form without its token. A quick test registration from your phone after every major update catches most of these problems before bots find them, and before real customers start complaining that they cannot create an account.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>How do I stop spam user registrations in WordPress?</h3>
+<p>Turn off open registration if you do not need it. If you do, add Cloudflare Turnstile or reCAPTCHA, a honeypot, email confirmation and firewall rate limiting, and set the default role to Subscriber.</p>
+<h3>Why am I getting fake users when registration is turned off?</h3>
+<p>A plugin may have its own registration form, WooCommerce may allow accounts at My Account, or the site may be compromised. Check plugin forms and look for unknown administrators.</p>
+<h3>Which CAPTCHA is best for WooCommerce in India?</h3>
+<p>Cloudflare Turnstile is a good default because it is usually invisible to shoppers. Test it on checkout and on mobile before relying on it.</p>
+<h3>Is it safe to delete spam users in bulk?</h3>
+<p>Yes, after a backup, and after making sure none of them have orders or real content. Never delete WooCommerce customers with order history.</p>
+<h3>Do spam registrations hurt SEO?</h3>
+<p>Not directly, but spam profile pages, comments or a compromise linked to them can. They also hurt email deliverability.</p>
+
+<p>Still getting fake sign-ups, or worried about unknown admin users? I can lock down registration and login as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off security check.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -272,13 +338,19 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#why-bots-register-on-your-site">Why bots register on your site</a></li>
-              <li><a href="#does-anyone-can-register-need-to-be-on">Does "Anyone can register" need to be on?</a></li>
-              <li><a href="#add-bot-protection-to-every-registration-form">Add bot protection to every registration form</a></li>
-              <li><a href="#verify-email-addresses">Verify email addresses</a></li>
-              <li><a href="#block-disposable-and-suspicious-email-domains">Block disposable and suspicious email domains</a></li>
-              <li><a href="#clean-up-existing-spam-accounts-safely">Clean up existing spam accounts safely</a></li>
-              <li><a href="#when-spam-registrations-signal-a-bigger-problem">When spam registrations signal a bigger problem</a></li>
+              <li><a href="#how-to-stop-spam-user-registrations-in-wordpress-why-bots-sign-up">How to stop spam user registrations in WordPress: why bots sign up</a></li>
+              <li><a href="#step-1-check-your-wordpress-settings">Step 1: check your WordPress settings</a></li>
+              <li><a href="#step-2-check-woocommerce-account-settings">Step 2: check WooCommerce account settings</a></li>
+              <li><a href="#step-3-add-a-captcha-or-challenge">Step 3: add a CAPTCHA or challenge</a></li>
+              <li><a href="#step-4-add-quieter-layers">Step 4: add quieter layers</a></li>
+              <li><a href="#step-5-clean-up-existing-spam-accounts">Step 5: clean up existing spam accounts</a></li>
+              <li><a href="#when-spam-registrations-mean-something-worse">When spam registrations mean something worse</a></li>
+              <li><a href="#what-about-shopify">What about Shopify?</a></li>
+              <li><a href="#protect-email-reputation-too">Protect email reputation too</a></li>
+              <li><a href="#plugins-that-add-their-own-registration-forms">Plugins that add their own registration forms</a></li>
+              <li><a href="#protect-the-login-and-lost-password-forms-too">Protect the login and lost password forms too</a></li>
+              <li><a href="#monitor-so-you-notice-early">Monitor so you notice early</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -305,9 +377,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First</h3><p>How to tell if your WordPress site has been hacked: a 10-minute check with Google tools, the clear warning signs, and what to do first if something is wrong.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/wordpress-user-roles-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-user-roles-explained.webp" alt="WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which</h3><p>WordPress user roles explained: what Administrators, Editors, Authors, Contributors and Shop Managers can do, and which role to give staff and developers.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/stop-contact-form-spam/"><img class="post-card-img" src="/assets/og/blog-stop-contact-form-spam.webp" alt="How to Stop Contact Form Spam on WordPress: Honeypots, Turnstile, Akismet and Filters That Work" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Stop Contact Form Spam on WordPress: Honeypots, Turnstile, Akismet and Filters That Work</h3><p>Stop contact form spam on WordPress with honeypots, Turnstile, Akismet and keyword filters, plus settings for Contact Form 7, WPForms and Elementor.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-site-sending-spam-emails/"><img class="post-card-img" src="/assets/og/blog-wordpress-site-sending-spam-emails.webp" alt="Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists</h3><p>Website or hosting account sending spam? Find the source in mail logs, remove mailer scripts, secure leaked SMTP logins and get your IP off blacklists.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
         </div>
       </div>
     </section>
