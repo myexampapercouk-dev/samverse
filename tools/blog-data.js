@@ -20,7 +20,7 @@ module.exports = [
 <p>For most small businesses in India, a professional WordPress website costs between ₹15,000 and ₹40,000, plus a few thousand rupees a year for domain and hosting. Online stores and larger sites cost more. Focus on value, not the lowest price: a fast, mobile-friendly website that brings in enquiries pays for itself quickly.</p>
 <p>The rest of this guide explains where that money goes, what moves a project up or down the range, and what you'll keep paying every year.</p>
 
-<h2>Is WordPress free?</h2>
+<h2>Is WordPress free? WordPress pricing and plans explained</h2>
 <p>The WordPress software itself (from WordPress.org) is free and open source: there's no licence fee to use it, however big your site gets. What you pay for is everything around it:</p>
 <ul>
   <li><strong>A domain name</strong> (your web address), renewed every year</li>
@@ -140,6 +140,10 @@ module.exports = [
 </ul>
 
 <h2>FAQs</h2>
+<h3>How much does a WordPress domain cost in India?</h3>
+<p>A .com or .in domain usually costs about ₹500 to ₹1,200 a year, depending on the registrar and any first-year offer. Check the renewal price, and register the domain in your business's name so you always control it.</p>
+<h3>What do WordPress plans and pricing pages refer to?</h3>
+<p>Plans and pricing pages usually belong to WordPress.com, the hosted service. A business site built on the free WordPress.org software does not need those plans: you pay for a domain, hosting and the build instead, as in the tables above.</p>
 <h3>How much does a WordPress website cost in India?</h3>
 <p>It depends on the type of site. Most small business websites fall in the small business range shown above; landing pages cost less, and larger business sites and WooCommerce stores cost more. A clear brief gets you an exact figure.</p>
 <h3>What is the yearly cost of a WordPress website?</h3>
@@ -4730,6 +4734,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>More questions and red flags are in <a href="/blog/choose-wordpress-maintenance-provider/">how to choose a WordPress maintenance provider</a>.</p>
 
 <h2>FAQs</h2>
+<h3>What are website maintenance charges in India?</h3>
+<p>Charges are usually a monthly fee for a maintenance package, a yearly AMC that covers the same work, or a per-job price for one-off fixes. For small and medium WordPress sites, freelance plans typically fall in the ₹1,500 to ₹6,000 a month range given above, with stores at the higher end.</p>
 <h3>How much does website maintenance cost in India?</h3>
 <p>Freelance WordPress maintenance plans for small and medium sites typically cost about ₹1,500 to ₹6,000 a month. Simple brochure sites sit at the lower end and WooCommerce stores at the higher end. Agencies, large sites and business-critical sites cost more.</p>
 <h3>What is the monthly cost of a WordPress website?</h3>
