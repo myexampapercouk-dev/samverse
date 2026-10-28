@@ -269,6 +269,193 @@ const CITIES = [
       ['Can you redesign an old website without losing Google rankings?', 'Yes. I map old pages to new ones with 301 redirects, keep the content that ranks, and check Search Console after launch.'],
     ],
   },
+  {
+    city: 'Indore',
+    slug: 'wordpress-shopify-developer-indore',
+    nav: 'WordPress & Shopify Developer in Indore',
+    title: 'WordPress & Shopify Developer in Indore | Samverse',
+    description: 'WordPress and Shopify developer for Indore traders, coaching institutes, food brands and clinics: enquiry websites and online stores with fixed quotes.',
+    eyebrow: 'Indore & Madhya Pradesh',
+    h1: 'WordPress & Shopify developer for <span class="grad">Indore</span>',
+    lead: 'Indore is central India\'s trading and education hub, with wholesale markets, coaching institutes, namkeen and food brands, and a growing startup scene. I build WordPress websites that bring enquiries and Shopify stores that sell across India.',
+    pains: [
+      ['Coaching institutes', 'Course pages, batch timings, results you can genuinely show and admission enquiry forms that reach you on WhatsApp.'],
+      ['Namkeen and food brands', 'Shopify or WooCommerce stores with weight variants, combo packs, shipping rules and GST invoices.'],
+      ['Wholesalers and distributors', 'Catalogue websites with dealer enquiry forms, separate from retail buyers.'],
+      ['Hindi and English', 'Separate Hindi pages where your customers search in Hindi.'],
+    ],
+    gets: ['Coaching institute websites', 'Shopify food stores', 'WooCommerce stores', 'Wholesale catalogue websites', 'Clinic websites', 'Hindi & English websites', 'Speed optimization', 'Monthly maintenance'],
+    projects: ['Dr. Sunaina Dental Care', 'Vansh Group', 'Southern Flavours', 'Streak Creative'],
+    areaServed: ['Indore', 'Bhopal'],
+    faqs: [
+      ['Can my coaching institute take admission enquiries online?', 'Yes. Each course page can carry an enquiry form and WhatsApp button that records the course name, so your team knows what the student asked about before calling back.'],
+      ['Can I sell namkeen or snacks across India online?', 'Yes. Packaged food with a good shelf life ships well. The store needs your FSSAI details shown, clear weights and ingredients, and shipping rates that cover the packaging.'],
+    ],
+  },
+  {
+    city: 'Nagpur',
+    slug: 'wordpress-shopify-developer-nagpur',
+    nav: 'WordPress & Shopify Developer in Nagpur',
+    title: 'WordPress & Shopify Developer in Nagpur | Samverse',
+    description: 'WordPress and Shopify developer for Nagpur and Vidarbha businesses: hospitals, logistics, manufacturers and orange and food brands. Fixed quotes.',
+    eyebrow: 'Nagpur & Vidarbha',
+    h1: 'WordPress & Shopify developer for <span class="grad">Nagpur</span>',
+    lead: 'Nagpur sits at the centre of India, with hospitals that draw patients from across Vidarbha, logistics and warehousing firms near MIHAN, manufacturers in Butibori and Hingna, and food brands. I build WordPress websites and Shopify stores for these businesses from Pune, within Maharashtra.',
+    pains: [
+      ['Hospitals and specialists', 'Department and doctor pages, timings and appointment requests that patients from nearby districts can use easily on their phones.'],
+      ['Logistics and warehousing', 'Clear service, location and capacity pages with quote request forms.'],
+      ['Manufacturers', 'Product catalogues with specifications and enquiry buttons for B2B buyers.'],
+      ['Marathi, Hindi and English', 'Separate language pages for the customers you serve.'],
+    ],
+    gets: ['Hospital & clinic websites', 'Logistics company websites', 'Manufacturer websites', 'Shopify stores', 'WooCommerce stores', 'Multilingual websites', 'Speed optimization', 'Monthly maintenance'],
+    projects: ['Dr. Nitish Gupta', 'Dr. Sunaina Dental Care', 'Vansh Group', 'Sahni Power Solutions'],
+    areaServed: ['Nagpur', 'Amravati', 'Wardha'],
+    faqs: [
+      ['Do you work with Nagpur businesses?', 'Yes. I\'m based in Pune and work with businesses across Maharashtra and India over WhatsApp, calls and video, with a staging link you can check at any time.'],
+      ['Can patients from nearby towns book appointments on our hospital website?', 'Yes. Each department or doctor page can have its own appointment form or WhatsApp button, and directions and contact details are shown clearly for patients travelling in.'],
+    ],
+  },
+  {
+    city: 'Lucknow',
+    slug: 'wordpress-shopify-developer-lucknow',
+    nav: 'WordPress & Shopify Developer in Lucknow',
+    title: 'WordPress & Shopify Developer in Lucknow | Samverse',
+    description: 'Shopify and WordPress developer for Lucknow chikankari, food and attar brands, clinics, schools and service businesses: stores and enquiry websites.',
+    eyebrow: 'Lucknow & Uttar Pradesh',
+    h1: 'WordPress & Shopify developer for <span class="grad">Lucknow</span>',
+    lead: 'Lucknow\'s chikankari, attar and food brands now sell to customers across India and abroad, while its clinics, schools and service businesses compete for local searches. I build Shopify stores and WordPress websites for both, and have already built for clinics elsewhere in Uttar Pradesh.',
+    pains: [
+      ['Chikankari and fashion', 'Image-led Shopify stores with size and colour variants, fabric details and WhatsApp enquiry on each product.'],
+      ['Food and attar brands', 'Stores with variants, gift packs and shipping rules suited to what you sell.'],
+      ['Clinics and hospitals', 'Doctor and treatment pages with appointment booking, as built for two clinics in Agra.'],
+      ['Hindi and English', 'Hindi pages where your local customers search in Hindi.'],
+    ],
+    gets: ['Shopify fashion stores', 'WooCommerce stores', 'Clinic & hospital websites', 'School & institute websites', 'Hindi & English websites', 'Local SEO setup', 'Speed optimization', 'Monthly maintenance'],
+    projects: ['Dr. Sunaina Dental Care', 'Dr. Nitish Gupta', 'Studio Agama Interiors', 'Southern Flavours'],
+    areaServed: ['Lucknow', 'Kanpur'],
+    readingFrom: 'shopify-developer',
+    faqs: [
+      ['Can I sell chikankari outside India from my store?', 'Yes. Shopify can show prices in local currencies with shipping rates per country. Clear sizing, fabric care and delivery times matter most for overseas buyers.'],
+      ['Have you worked with businesses in Uttar Pradesh?', 'Yes. Two Agra clinics, Dr. Sunaina Dental Care and an interventional pulmonologist at Niramaya Care Center, are in my portfolio.'],
+    ],
+  },
+  {
+    city: 'Chandigarh',
+    slug: 'wordpress-shopify-developer-chandigarh',
+    nav: 'WordPress & Shopify Developer in Chandigarh',
+    title: 'WordPress & Shopify Developer in Chandigarh | Samverse',
+    description: 'WordPress and Shopify developer for Chandigarh, Mohali and Panchkula: immigration consultants, clinics, real estate and D2C brands. Fixed quotes.',
+    eyebrow: 'Chandigarh, Mohali & Panchkula',
+    h1: 'WordPress & Shopify developer for <span class="grad">Chandigarh</span>',
+    lead: 'The Chandigarh tricity has a dense mix of immigration and study-abroad consultants, clinics, real estate developers and IT firms in Mohali. I build WordPress websites that win their enquiries and Shopify stores for local brands selling across India.',
+    pains: [
+      ['Immigration and study abroad', 'Country and visa pages that answer real questions, eligibility enquiry forms and clear trust signals, without exaggerated promises.'],
+      ['Real estate', 'Project pages with floor plans, location, approvals and brochure downloads that capture leads.'],
+      ['Clinics', 'Doctor credentials, treatments and appointment booking that work on mobile.'],
+      ['D2C brands', 'Shopify stores with UPI, COD, shipping and GST invoices.'],
+    ],
+    gets: ['Immigration consultant websites', 'Real estate websites', 'Clinic websites', 'Shopify stores', 'WooCommerce stores', 'Landing pages for ads', 'Speed optimization', 'Monthly maintenance'],
+    projects: ['Studio Agama Interiors', 'Dr. Sudhir Arora', 'Third Eye Social', 'Vansh Group'],
+    areaServed: ['Chandigarh', 'Mohali', 'Panchkula'],
+    faqs: [
+      ['Can you build landing pages for my Google or Meta ads?', 'Yes. A focused landing page for each campaign, with one clear offer, a short form and WhatsApp, usually converts better than sending ad traffic to the home page.'],
+      ['How should an immigration website build trust?', 'Real registrations and licences where they apply, a physical address, genuine client reviews and clear explanations of each process. Avoid guarantees about visa outcomes, which buyers and regulators distrust.'],
+    ],
+  },
+  {
+    city: 'Kochi',
+    slug: 'wordpress-shopify-developer-kochi',
+    nav: 'WordPress & Shopify Developer in Kochi',
+    title: 'WordPress & Shopify Developer in Kochi | Samverse',
+    description: 'WordPress and Shopify developer for Kochi and Kerala: homestays, Ayurveda centres, spice and seafood exporters and D2C brands. Fixed quotes.',
+    eyebrow: 'Kochi & Kerala',
+    h1: 'WordPress & Shopify developer for <span class="grad">Kochi</span>',
+    lead: 'Kerala businesses sell to travellers and buyers worldwide: homestays and resorts, Ayurveda centres, spice and seafood exporters, and brands shipping across India. I build WordPress websites and Shopify stores that work for both Indian and international visitors.',
+    pains: [
+      ['Homestays and resorts', 'Room pages, galleries and direct booking or enquiry, so you depend less on commission-based portals.'],
+      ['Ayurveda and wellness', 'Treatment and package pages that explain programmes clearly, with enquiries from India and abroad.'],
+      ['Spice and food exporters', 'Product and certification pages for overseas buyers, plus Shopify stores for retail customers.'],
+      ['NRI customers', 'International payments and clear shipping options for Malayali customers abroad.'],
+    ],
+    gets: ['Homestay & resort websites', 'Ayurveda centre websites', 'Export catalogue websites', 'Shopify stores', 'WooCommerce stores', 'Multilingual websites', 'Speed optimization', 'Monthly maintenance'],
+    projects: ['Southern Flavours', 'Our Temples', 'Studio Agama Interiors', 'Dr. Sunaina Dental Care'],
+    areaServed: ['Kochi', 'Thiruvananthapuram', 'Kozhikode'],
+    faqs: [
+      ['Can my resort website take bookings directly?', 'Yes. It can link to a booking engine or take enquiries directly, so guests can book with you and you keep the commission a portal would take.'],
+      ['Can my Shopify store sell spices to customers abroad?', 'Yes, where shipping and import rules allow. Shopify can show local currencies and set shipping per country; food items need clear labelling and you should check each destination\'s import requirements.'],
+    ],
+  },
+  {
+    city: 'Nashik',
+    slug: 'wordpress-shopify-developer-nashik',
+    nav: 'WordPress & Shopify Developer in Nashik',
+    title: 'WordPress & Shopify Developer in Nashik | Samverse',
+    description: 'WordPress and Shopify developer for Nashik wineries, farm produce brands, manufacturers and clinics: websites and online stores, a short drive from Pune.',
+    eyebrow: 'Nashik',
+    h1: 'WordPress & Shopify developer for <span class="grad">Nashik</span>',
+    lead: 'Nashik is known for its vineyards and wineries, grapes and onion trade, engineering units in Satpur and Ambad, and religious tourism. I\'m based in Pune, a few hours away, and build WordPress websites and Shopify stores for Nashik businesses.',
+    pains: [
+      ['Wineries and agri-tourism', 'Visit, tasting and stay pages with booking enquiries, and age-appropriate presentation of products.'],
+      ['Farm produce brands', 'Shopify or WooCommerce stores for packaged produce, with delivery zones and shipping rules.'],
+      ['Engineering manufacturers', 'Capability and product pages with RFQ forms for OEM buyers.'],
+      ['Close to Pune', 'Near enough to meet in person when a project really needs it.'],
+    ],
+    gets: ['Winery & agri-tourism websites', 'Shopify stores', 'WooCommerce stores', 'Manufacturer websites', 'Hotel & stay websites', 'Marathi & English websites', 'Speed optimization', 'Monthly maintenance'],
+    projects: ['Vansh Group', 'Southern Flavours', 'Our Temples', 'Dr. Sudhir Arora'],
+    areaServed: ['Nashik'],
+    faqs: [
+      ['Can a winery sell wine online through Shopify?', 'Selling alcohol online in India depends on state excise rules, so most wineries use the website for visits, tastings, events and enquiries rather than direct sales. Merchandise and non-alcoholic products can be sold online normally.'],
+      ['Can you meet us in Nashik?', 'Most projects run on WhatsApp, calls and video, and I\'m based in Pune, so a meeting in Nashik can be arranged when it is needed.'],
+    ],
+  },
+  {
+    city: 'Coimbatore',
+    slug: 'wordpress-shopify-developer-coimbatore',
+    nav: 'WordPress & Shopify Developer in Coimbatore',
+    title: 'WordPress & Shopify Developer in Coimbatore | Samverse',
+    description: 'WordPress and Shopify developer for Coimbatore and Tiruppur: pump and motor makers, textile and knitwear brands, hospitals and D2C stores.',
+    eyebrow: 'Coimbatore & Tiruppur',
+    h1: 'WordPress & Shopify developer for <span class="grad">Coimbatore</span>',
+    lead: 'Coimbatore is known for pumps, motors and engineering, and nearby Tiruppur for knitwear. Both have businesses moving from dealers and marketplaces to their own websites and stores. I build WordPress catalogue sites and Shopify stores for them.',
+    pains: [
+      ['Pumps, motors and engineering', 'Product pages with specifications, downloadable datasheets and dealer and RFQ enquiry forms.'],
+      ['Knitwear and textile brands', 'Shopify stores with size charts and variants, plus wholesale enquiry for retailers and exporters.'],
+      ['Dealer networks', 'Dealer locator and dealer enquiry pages, so customers find you and new dealers can apply.'],
+      ['Tamil and English', 'Separate language pages for local customers where it helps.'],
+    ],
+    gets: ['Engineering product websites', 'Dealer locator pages', 'Shopify apparel stores', 'WooCommerce stores', 'Export catalogue websites', 'Hospital websites', 'Speed optimization', 'Monthly maintenance'],
+    projects: ['Vansh Group', 'Sahni Power Solutions', 'Streak Creative', 'Dr. Sunaina Dental Care'],
+    areaServed: ['Coimbatore', 'Tiruppur'],
+    readingFrom: 'wordpress-website-development',
+    faqs: [
+      ['Can customers download product datasheets from my website?', 'Yes. Each product page can offer PDF datasheets and manuals, either freely or after a short form, so you know who downloaded them.'],
+      ['Can I show a dealer locator on my site?', 'Yes. Dealers can be listed by state and city with contact details and a map, and updated from the WordPress admin.'],
+    ],
+  },
+  {
+    city: 'Ludhiana',
+    slug: 'wordpress-shopify-developer-ludhiana',
+    nav: 'WordPress & Shopify Developer in Ludhiana',
+    title: 'WordPress & Shopify Developer in Ludhiana | Samverse',
+    description: 'WordPress and Shopify developer for Ludhiana hosiery, woollen, cycle parts and machinery businesses: wholesale catalogues and online stores.',
+    eyebrow: 'Ludhiana & Punjab',
+    h1: 'WordPress & Shopify developer for <span class="grad">Ludhiana</span>',
+    lead: 'Ludhiana makes hosiery, woollens, cycles and cycle parts, auto components and machinery for buyers across India and abroad. I build WordPress catalogue sites that bring B2B enquiries and Shopify stores for brands selling direct.',
+    pains: [
+      ['Hosiery and woollens', 'Shopify stores with seasonal collections, size variants and COD, plus wholesale enquiry for retailers.'],
+      ['Cycle parts and components', 'Large parts catalogues with part numbers, search and RFQ forms for distributors and OEMs.'],
+      ['Machinery', 'Machine pages with specifications, videos and enquiry forms for buyers.'],
+      ['Export buyers', 'Clear English product details, certifications and contact options for overseas importers.'],
+    ],
+    gets: ['Manufacturer catalogue websites', 'Parts catalogue with search', 'Shopify apparel stores', 'WooCommerce wholesale stores', 'Export-ready websites', 'Website redesigns', 'Speed optimization', 'Monthly maintenance'],
+    projects: ['Vansh Group', 'Sahni Power Solutions', 'Third Eye Social', 'Studio Agama Interiors'],
+    areaServed: ['Ludhiana', 'Jalandhar', 'Amritsar'],
+    readingFrom: 'woocommerce-developer',
+    faqs: [
+      ['Can buyers search my catalogue by part number?', 'Yes. Part numbers can be indexed so the site search finds them, and each part can have its own page with an enquiry button.'],
+      ['Have you built manufacturer websites in North India?', 'Yes. Vansh Group, an electronics manufacturer with three units in Northern India and a head office in Kundli, Haryana, is in my portfolio.'],
+    ],
+  },
 ];
 
 const india = {
@@ -328,7 +515,7 @@ const guides = {
 <h2>How a remote project runs</h2>
 <p>I have built sites for clients in Delhi NCR, Agra, Bengaluru, Hyderabad and the UK without needing to meet. We plan on a call, you share content on WhatsApp, and the site is built on a private staging link you can open on your phone. You approve it before it goes live, and I stay available for changes and support.</p>
 <h2>Find a page for your city</h2>
-<p>I have pages for <a href="/wordpress-developer-pune/">Pune</a>, <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a>, <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, <a href="/wordpress-shopify-developer-chennai/">Chennai</a>, <a href="/wordpress-shopify-developer-ahmedabad/">Ahmedabad</a>, <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-jaipur/">Jaipur</a>, <a href="/wordpress-shopify-developer-agra/">Agra</a> and <a href="/wordpress-shopify-developer-kolkata/">Kolkata</a>, each with notes on what businesses there usually need.</p>
+<p>I have pages for <a href="/wordpress-developer-pune/">Pune</a>, <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a>, <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, <a href="/wordpress-shopify-developer-chennai/">Chennai</a>, <a href="/wordpress-shopify-developer-ahmedabad/">Ahmedabad</a>, <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-jaipur/">Jaipur</a>, <a href="/wordpress-shopify-developer-agra/">Agra</a>, <a href="/wordpress-shopify-developer-kolkata/">Kolkata</a>, <a href="/wordpress-shopify-developer-indore/">Indore</a>, <a href="/wordpress-shopify-developer-nagpur/">Nagpur</a>, <a href="/wordpress-shopify-developer-lucknow/">Lucknow</a>, <a href="/wordpress-shopify-developer-chandigarh/">Chandigarh</a>, <a href="/wordpress-shopify-developer-kochi/">Kochi</a>, <a href="/wordpress-shopify-developer-nashik/">Nashik</a>, <a href="/wordpress-shopify-developer-coimbatore/">Coimbatore</a> and <a href="/wordpress-shopify-developer-ludhiana/">Ludhiana</a>, each with notes on what businesses there usually need.</p>
 `,
   'wordpress-shopify-developer-mumbai': `
 <h2>Websites for Mumbai businesses: what usually matters</h2>
@@ -452,6 +639,93 @@ const guides = {
 <p>Stores with weight variants, gift boxes and delivery zones. Perishable items can be limited to local delivery, while packaged products ship across India.</p>
 <h2>Handloom and sarees</h2>
 <p>Image-led catalogues with filters by fabric, colour and occasion, on Shopify or WooCommerce, with WhatsApp enquiry on each product.</p>
+<p>Send a note for a fixed quote, or see the <a href="/wordpress-shopify-developer-india/">India page</a>.</p>
+`,
+  'wordpress-shopify-developer-indore': `
+<h2>Websites for Indore businesses</h2>
+<p>Indore combines busy wholesale markets, a large coaching and education sector, famous namkeen and food brands, and a growing IT scene. Each needs a different kind of website.</p>
+<h2>Coaching institutes</h2>
+<p>Students and parents compare institutes online. Course pages with syllabus, batch timings, fees policy and faculty, plus an enquiry form on each course, turn those visits into admission calls. Only show results you can verify.</p>
+<h2>Food and namkeen brands</h2>
+<p>Shopify or WooCommerce stores with weight variants, combo packs, FSSAI details, shipping rules and GST invoices let you sell across India instead of only through distributors.</p>
+<h2>Wholesalers</h2>
+<p>A catalogue site with categories and a dealer enquiry form gives retailers an easy way to order, separate from consumer pricing. See the <a href="/woocommerce-developer/">WooCommerce developer</a> page for how wholesale rules work.</p>
+<p>Send a note for a fixed quote, or see the <a href="/wordpress-shopify-developer-india/">India page</a>.</p>
+`,
+  'wordpress-shopify-developer-nagpur': `
+<h2>Websites for Nagpur and Vidarbha businesses</h2>
+<p>Patients, buyers and partners come to Nagpur from across Vidarbha and central India. A clear website helps them choose you before they travel or call.</p>
+<h2>Hospitals and specialists</h2>
+<p>Department and doctor pages, timings, directions and appointment requests. The <a href="/work/dr-nitish-gupta-pulmonologist/">pulmonologist</a> and <a href="/work/dr-sunaina-dental-care/">dental clinic</a> case studies show how credentials and treatments can be presented so patients trust you.</p>
+<h2>Logistics and warehousing</h2>
+<p>Services, locations, fleet or capacity and a quote request form. B2B buyers want quick answers and a named contact.</p>
+<h2>Manufacturers</h2>
+<p>Product pages with specifications and enquiry buttons, like the <a href="/work/vansh-group/">Vansh Group</a> site.</p>
+<p>I'm based in Pune, within Maharashtra, and work with Nagpur businesses remotely. Send a note for a fixed quote, or see the <a href="/wordpress-shopify-developer-india/">India page</a>.</p>
+`,
+  'wordpress-shopify-developer-lucknow': `
+<h2>Websites and stores for Lucknow businesses</h2>
+<p>Lucknow brands carry a strong reputation: chikankari, attar, and food. Its clinics, schools and service businesses compete for local searches across the city.</p>
+<h2>Chikankari and fashion stores</h2>
+<p>Shoppers want close-up photos of the embroidery, fabric details, size charts and easy returns. A Shopify store with collections, variants and WhatsApp enquiry on each product covers all of this. Read <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for India</a> to compare platforms.</p>
+<h2>Clinics and hospitals</h2>
+<p>I have built two clinic websites in Agra, <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a> and a <a href="/work/dr-nitish-gupta-pulmonologist/">pulmonologist's practice</a>, with treatments, credentials and booking. The same approach works for Lucknow practices.</p>
+<h2>Hindi pages</h2>
+<p>Many local customers search in Hindi. Separate Hindi pages for key services let Google show the right language.</p>
+<p>Send a note for a fixed quote, or see the <a href="/wordpress-shopify-developer-india/">India page</a>.</p>
+`,
+  'wordpress-shopify-developer-chandigarh': `
+<h2>Websites for the Chandigarh tricity</h2>
+<p>Chandigarh, Mohali and Panchkula have many businesses that rely on online enquiries: immigration and study-abroad consultants, real estate developers, clinics and IT firms.</p>
+<h2>Immigration and study abroad</h2>
+<p>Visitors want clear, honest information: countries, visa types, the process, documents and timelines. Separate pages for each, an eligibility enquiry form and real proof (registrations, address, reviews) build more trust than big promises.</p>
+<h2>Real estate</h2>
+<p>Each project needs its own page with floor plans, location, amenities and approvals, plus a brochure download that captures the buyer's details.</p>
+<h2>Ad landing pages</h2>
+<p>Many tricity businesses run Google and Meta ads. A dedicated landing page per campaign, fast on mobile, with one offer and a short form, usually lowers the cost per lead.</p>
+<p>Send a note for a fixed quote, or see the <a href="/wordpress-shopify-developer-india/">India page</a>.</p>
+`,
+  'wordpress-shopify-developer-kochi': `
+<h2>Websites for Kochi and Kerala businesses</h2>
+<p>Kerala businesses often serve two audiences at once: local customers and visitors or buyers from abroad, including the large Malayali community overseas.</p>
+<h2>Homestays, resorts and Ayurveda</h2>
+<p>Room or package pages, galleries, location details and direct booking or enquiry. Clear explanations of treatments and programme lengths help international guests decide.</p>
+<h2>Exporters</h2>
+<p>Spice, seafood and coir exporters need product and certification pages written for overseas buyers, with a quick enquiry route.</p>
+<h2>D2C and NRI customers</h2>
+<p>Shopify can show prices in local currencies and set shipping per country, which helps when selling Kerala products to customers abroad.</p>
+<p>See how the <a href="/work/southern-flavours/">Southern Flavours</a> restaurant site in the UK presents South Indian food to an overseas audience. Send a note for a fixed quote, or see the <a href="/wordpress-shopify-developer-india/">India page</a>.</p>
+`,
+  'wordpress-shopify-developer-nashik': `
+<h2>Websites for Nashik businesses</h2>
+<p>Nashik is close to Pune, and its businesses range from wineries and farm produce brands to engineering units in the MIDC areas and hotels for pilgrims and tourists.</p>
+<h2>Wineries and agri-tourism</h2>
+<p>Visit and tasting pages, events, stays and booking enquiries. Alcohol sales online depend on state excise rules, so the website usually focuses on visits and enquiries.</p>
+<h2>Farm produce and food brands</h2>
+<p>Packaged produce, raisins and food products can sell through a Shopify or WooCommerce store with delivery zones and shipping rules.</p>
+<h2>Engineering units</h2>
+<p>Capability, machinery and product pages with RFQ forms for OEM buyers, like the <a href="/work/vansh-group/">Vansh Group</a> manufacturer site.</p>
+<p>See also the <a href="/wordpress-developer-pune/">Pune page</a>, or send a note for a fixed quote.</p>
+`,
+  'wordpress-shopify-developer-coimbatore': `
+<h2>Websites for Coimbatore and Tiruppur</h2>
+<p>Coimbatore's engineering firms and Tiruppur's knitwear makers often sell through dealers and exporters. Their own website helps them reach buyers directly and support the dealer network.</p>
+<h2>Pumps, motors and engineering products</h2>
+<p>Product pages with specifications, performance details and downloadable datasheets, plus RFQ and dealer enquiry forms. A dealer locator by state and city helps customers find the nearest seller.</p>
+<h2>Knitwear and apparel</h2>
+<p>Shopify stores with size charts, variants and COD for retail buyers, and a wholesale enquiry route for retailers and export buyers.</p>
+<h2>Working together</h2>
+<p>Projects run over WhatsApp, calls and video with a staging link to review progress. See the <a href="/wordpress-website-development/">WordPress website development</a> page, or send a note for a fixed quote.</p>
+`,
+  'wordpress-shopify-developer-ludhiana': `
+<h2>Websites for Ludhiana manufacturers and brands</h2>
+<p>Ludhiana's industries, from hosiery and woollens to cycle parts and machinery, sell mostly B2B. A good website brings new distributors and export buyers, and lets apparel brands sell direct.</p>
+<h2>Parts and component catalogues</h2>
+<p>Thousands of parts need categories, part-number search and an enquiry button on each item. WordPress handles large catalogues well when they are structured properly.</p>
+<h2>Hosiery and woollens</h2>
+<p>Seasonal Shopify stores with collections, size variants and COD for retail, and wholesale enquiry for shops and resellers.</p>
+<h2>North India manufacturing experience</h2>
+<p>The <a href="/work/vansh-group/">Vansh Group</a> website, for an electronics manufacturer with units in Northern India, shows the product and company presentation B2B buyers expect.</p>
 <p>Send a note for a fixed quote, or see the <a href="/wordpress-shopify-developer-india/">India page</a>.</p>
 `,
 };
