@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordPress Memory Limit Errors: Causes and Fixes | Samverse</title>
-  <meta name="description" content="What &quot;Allowed memory size exhausted&quot; and other WordPress memory errors mean, how to check PHP memory and WP_MEMORY_LIMIT, and how to fix the real cause.">
+  <meta name="description" content="Fix WordPress memory limit errors: what &quot;allowed memory size exhausted&quot; means, how to raise WP_MEMORY_LIMIT and the PHP limit, and how to find the cause.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-memory-limit-errors/">
   <meta property="og:title" content="WordPress Memory Limit Errors: Causes and Fixes | Samverse">
-  <meta property="og:description" content="What &quot;Allowed memory size exhausted&quot; and other WordPress memory errors mean, how to check PHP memory and WP_MEMORY_LIMIT, and how to fix the real cause.">
+  <meta property="og:description" content="Fix WordPress memory limit errors: what &quot;allowed memory size exhausted&quot; means, how to raise WP_MEMORY_LIMIT and the PHP limit, and how to find the cause.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-memory-limit-errors.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-memory-limit-errors/#article",
       "headline": "\"Allowed Memory Size Exhausted\" in WordPress: Causes and Fixes for Memory Limit Errors",
-      "description": "What \"Allowed memory size exhausted\" and other WordPress memory errors mean, how to check PHP memory and WP_MEMORY_LIMIT, and how to fix the real cause.",
+      "description": "Fix WordPress memory limit errors: what \"allowed memory size exhausted\" means, how to raise WP_MEMORY_LIMIT and the PHP limit, and how to find the cause.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-09-28",
+      "dateModified": "2026-10-28",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-memory-limit-errors/",
       "image": "https://samverse.space/assets/og/blog-wordpress-memory-limit-errors.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>&quot;Allowed Memory Size Exhausted&quot; in WordPress: Causes and Fixes for Memory Limit Errors</h1>
-          <p class="post-dek">What &quot;Allowed memory size exhausted&quot; and other WordPress memory errors mean, how to check PHP memory and WP_MEMORY_LIMIT, and how to fix the real cause.</p>
+          <p class="post-dek">Fix WordPress memory limit errors: what &quot;allowed memory size exhausted&quot; means, how to raise WP_MEMORY_LIMIT and the PHP limit, and how to find the cause.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · 5 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-28">28 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=%22Allowed%20Memory%20Size%20Exhausted%22%20in%20WordPress%3A%20Causes%20and%20Fixes%20for%20Memory%20Limit%20Errors%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-memory-limit-errors%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -157,20 +157,23 @@
               <li><a href="#other-memory-errors-you-might-see">Other memory errors you might see</a></li>
               <li><a href="#common-causes">Common causes</a></li>
               <li><a href="#check-your-current-limits">Check your current limits</a></li>
-              <li><a href="#how-to-fix-it">How to fix it</a></li>
+              <li><a href="#how-to-fix-wordpress-memory-limit-errors">How to fix WordPress memory limit errors</a></li>
+              <li><a href="#where-to-change-the-memory-limit-on-common-indian-hosting">Where to change the memory limit on common Indian hosting</a></li>
               <li><a href="#when-hosting-is-the-real-problem">When hosting is the real problem</a></li>
               <li><a href="#stop-it-happening-again">Stop it happening again</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>&quot;Allowed memory size exhausted&quot; means a page needed more PHP memory than allowed; the file named is a clue, not always the cause.</li>
-              <li>Check your PHP memory limit and WP_MEMORY_LIMIT in Site Health, then raise them in wp-config.php and your hosting panel.</li>
-              <li>If pages need far more than 256M, find the heavy plugin, import or oversized image instead of raising the limit again.</li>
+              <li>The &quot;allowed memory size exhausted&quot; error means one page request needed more PHP memory than allowed; the file named is a clue, not always the culprit.</li>
+              <li>Setting WP_MEMORY_LIMIT to 256M and raising the PHP limit in your hosting panel fixes many cases, but only up to the cap your host allows.</li>
+              <li>If normal pages need far more memory, find the heavy plugin, builder page or task on staging instead of raising the limit again and again.</li>
             </ul>
           </div>
-<p>If your site shows "There has been a critical error on this website" and the error log mentions "Allowed memory size of 134217728 bytes exhausted", WordPress ran out of the memory it's allowed to use for that page. Raising the limit often gets the site back quickly, but it isn't always the real fix. Here's what memory errors mean, how to check your limits and how to deal with the cause.</p>
+<p>WordPress memory limit errors happen when a page needs more PHP memory than your site is allowed. To fix them, get the site back online, set WP_MEMORY_LIMIT to 256M in wp-config.php, raise the PHP memory limit in your hosting panel if needed, and then find the plugin or task that is using so much memory.</p>
+<p>The usual sign is "There has been a critical error on this website", with an error log line such as "Allowed memory size of 134217728 bytes exhausted". Raising the limit often gets the site back quickly, but it isn't always the real fix. Here's what memory errors mean, how to check your limits and how to deal with the cause.</p>
 
 <h2 id="what-the-error-means">What the error means</h2>
 <p>Each time a page loads, PHP (the language WordPress runs on) gives that request a fixed amount of memory. If WordPress, your theme and your plugins need more than that, PHP stops with a fatal error. Visitors see a critical error message or a blank white page, while the full message appears in your error log or in the email WordPress sends to the admin address.</p>
@@ -180,7 +183,7 @@
   <li><strong>"Tried to allocate"</strong> is only the last small request that tipped it over</li>
   <li><strong>The file named</strong> is where memory ran out, not necessarily what used it up. Treat it as a clue, not a verdict</li>
 </ul>
-<p>For the full process of getting a site with a critical error back online, see <a href="/blog/fix-wordpress-critical-error/">how to fix "There has been a critical error"</a>.</p>
+<p>For the full process of getting a site with a critical error back online, see <a href="/blog/fix-wordpress-critical-error/">how to fix "There has been a critical error"</a>. If you see only a blank page with no message, the steps in <a href="/blog/wordpress-white-screen-of-death/">the WordPress white screen of death guide</a> also apply.</p>
 
 <h2 id="other-memory-errors-you-might-see">Other memory errors you might see</h2>
 <table>
@@ -203,7 +206,7 @@
 <h2 id="common-causes">Common causes</h2>
 <ul>
   <li><strong>A heavy or badly coded plugin</strong> that loads far more than it needs on every page</li>
-  <li><strong>A plugin conflict or loop:</strong> two plugins interacting badly can eat memory until the limit is hit, often straight after an update</li>
+  <li><strong>A plugin conflict or loop:</strong> two plugins interacting badly can eat memory until the limit is hit, often straight after an update; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find and fix plugin conflicts</a></li>
   <li><strong>Page builders on very long pages</strong> with many sections and widgets, especially in the editor</li>
   <li><strong>Imports, exports and reports:</strong> WooCommerce product imports, large order exports and analytics screens</li>
   <li><strong>Backup plugins</strong> compressing a large site from inside WordPress</li>
@@ -213,17 +216,17 @@
 </ul>
 
 <h2 id="check-your-current-limits">Check your current limits</h2>
-<p>In the dashboard, go to Tools → Site Health → Info:</p>
+<p>In the dashboard, go to Tools, then Site Health, then Info:</p>
 <ul>
-  <li><strong>Server → PHP memory limit:</strong> the limit set on your hosting</li>
-  <li><strong>WordPress Constants → WP_MEMORY_LIMIT:</strong> the memory WordPress asks for on normal pages</li>
-  <li><strong>WordPress Constants → WP_MAX_MEMORY_LIMIT:</strong> the memory WordPress asks for during heavier admin tasks</li>
+  <li><strong>Server, PHP memory limit:</strong> the limit set on your hosting</li>
+  <li><strong>WordPress Constants, WP_MEMORY_LIMIT:</strong> the memory WordPress asks for on normal pages</li>
+  <li><strong>WordPress Constants, WP_MAX_MEMORY_LIMIT:</strong> the memory WordPress asks for during heavier admin tasks</li>
 </ul>
 <p>WordPress tries to raise PHP's limit to match these settings, but many hosts set a cap it can't go past. If changing the WordPress setting makes no difference, the limit has to be raised on the hosting side.</p>
 
-<h2 id="how-to-fix-it">How to fix it</h2>
+<h2 id="how-to-fix-wordpress-memory-limit-errors">How to fix WordPress memory limit errors</h2>
 <h3>1. Get the site back online</h3>
-<p>If visitors can't see the site, use the recovery mode link in the admin email, or deactivate the plugin named in the error by renaming its folder. Take a backup before changing anything else.</p>
+<p>If visitors can't see the site, use the recovery mode link in the admin email, or deactivate the plugin named in the error by renaming its folder through your hosting file manager or SFTP. Take a backup before changing anything else.</p>
 <h3>2. Raise WordPress's memory setting</h3>
 <p>Add this line to wp-config.php, above the comment that begins "That's all, stop editing!":</p>
 <p><code>define( 'WP_MEMORY_LIMIT', '256M' );</code></p>
@@ -239,21 +242,46 @@
   <li>Replace heavy or abandoned plugins, split very long builder pages and run big imports in smaller batches</li>
   <li>Resize photos before uploading them</li>
 </ul>
-
 <p>If WordPress rejects a file before it even uploads, with a message that it exceeds the maximum upload size, that's a different PHP limit; see <a href="/blog/increase-wordpress-upload-size-limit/">how to increase the WordPress upload size limit</a>.</p>
 
+<h2 id="where-to-change-the-memory-limit-on-common-indian-hosting">Where to change the memory limit on common Indian hosting</h2>
+<p>Most business sites in India sit on shared or cloud hosting with a control panel. The exact menu names change between plans and panel versions, so treat this as a guide to where to look, not a precise path.</p>
+<table>
+  <thead><tr><th>Panel type</th><th>Where to look</th><th>If the option is missing</th></tr></thead>
+  <tbody>
+    <tr><td>cPanel</td><td>Select PHP Version, then Options, or MultiPHP INI Editor</td><td>Ask support; some plans lock the value</td></tr>
+    <tr><td>hPanel and similar custom panels</td><td>Advanced or PHP configuration, then PHP options</td><td>The plan may have a fixed cap; check its limits</td></tr>
+    <tr><td>Cloud or VPS with a server panel</td><td>PHP settings for the site or application</td><td>Your developer can change it in the server's PHP config</td></tr>
+    <tr><td>Managed WordPress hosting</td><td>Often set by the host and not editable</td><td>Ask support whether a higher limit is possible</td></tr>
+  </tbody>
+</table>
+<p>After any change, check Site Health again to confirm the new value is actually in effect.</p>
+
 <h2 id="when-hosting-is-the-real-problem">When hosting is the real problem</h2>
-<p>On budget shared plans, the PHP limit may be low and the account's total memory is shared by every visitor and background task. Signs you've outgrown your plan include memory errors that return during busy periods, a sluggish dashboard, backups that fail partway and resource warnings in your hosting panel. Sometimes a better plan or host is the right fix; see <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>.</p>
+<p>On budget shared plans, the PHP limit may be low and the account's total memory is shared by every visitor and background task. Signs you've outgrown your plan include memory errors that return during busy periods such as festival sales, a sluggish dashboard, backups that fail partway and resource warnings in your hosting panel. Sometimes a better plan or host is the right fix; see <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>.</p>
 
 <h2 id="stop-it-happening-again">Stop it happening again</h2>
 <ul>
   <li>Test plugin and theme updates on staging before applying them to the live site</li>
   <li>Keep your plugin list lean and remove anything you don't use</li>
-  <li>Keep PHP on a current, supported version</li>
+  <li>Keep PHP on a current, supported version; see <a href="/blog/update-php-version-wordpress/">how to update your PHP version safely</a></li>
   <li>Review error logs as part of monthly maintenance, so warnings are caught before visitors see errors</li>
 </ul>
+<p>A site that uses less memory per page is usually faster too, so this work often overlaps with <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
 
-<p>Seeing memory errors or a critical error right now? I fix broken WordPress sites and track down the plugin or setting behind the problem; see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>How do I fix WordPress memory limit errors?</h3>
+<p>Get the site back online, add WP_MEMORY_LIMIT set to 256M in wp-config.php, raise memory_limit in your hosting panel if WordPress can't, then find the plugin or task using the memory on a staging copy.</p>
+<h3>What is a good PHP memory limit for WordPress?</h3>
+<p>256M suits most business sites and many WooCommerce stores. Heavier stores and admin tasks such as imports may need more, but if normal pages need far more, look for the cause.</p>
+<h3>Why does increasing WP_MEMORY_LIMIT not work?</h3>
+<p>Your host's PHP limit is lower and WordPress can't go past it. Raise memory_limit in the hosting panel or ask support, then confirm the value in Site Health.</p>
+<h3>Can a plugin cause the allowed memory size exhausted error?</h3>
+<p>Yes, it is the most common cause, especially after an update or when two plugins conflict. The error log often points to the plugin, though the named file is only a clue.</p>
+<h3>Will raising the memory limit slow my site?</h3>
+<p>No, the limit is a ceiling, not an amount used on every page. But pages that genuinely need a lot of memory are usually slow, so finding the cause helps speed as well.</p>
+
+<p>Seeing memory errors or a critical error right now? I fix broken WordPress sites and track down the plugin or setting behind the problem; see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -293,9 +321,11 @@
               <li><a href="#other-memory-errors-you-might-see">Other memory errors you might see</a></li>
               <li><a href="#common-causes">Common causes</a></li>
               <li><a href="#check-your-current-limits">Check your current limits</a></li>
-              <li><a href="#how-to-fix-it">How to fix it</a></li>
+              <li><a href="#how-to-fix-wordpress-memory-limit-errors">How to fix WordPress memory limit errors</a></li>
+              <li><a href="#where-to-change-the-memory-limit-on-common-indian-hosting">Where to change the memory limit on common Indian hosting</a></li>
               <li><a href="#when-hosting-is-the-real-problem">When hosting is the real problem</a></li>
               <li><a href="#stop-it-happening-again">Stop it happening again</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">

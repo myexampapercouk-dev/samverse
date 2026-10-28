@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEO-Friendly URLs in WordPress: Set Up and Change Safely</title>
-  <meta name="description" content="How to structure clean, SEO-friendly URLs and permalinks in WordPress, write good slugs, and change existing URLs safely with 301 redirects to protect rankings.">
+  <title>SEO-Friendly URLs in WordPress: Permalinks and Slugs</title>
+  <meta name="description" content="How to create SEO-friendly URLs in WordPress: best permalink setting, writing short slugs, and changing URLs safely with 301 redirects to keep rankings.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/seo-friendly-urls/">
-  <meta property="og:title" content="SEO-Friendly URLs in WordPress: Set Up and Change Safely">
-  <meta property="og:description" content="How to structure clean, SEO-friendly URLs and permalinks in WordPress, write good slugs, and change existing URLs safely with 301 redirects to protect rankings.">
+  <meta property="og:title" content="SEO-Friendly URLs in WordPress: Permalinks and Slugs">
+  <meta property="og:description" content="How to create SEO-friendly URLs in WordPress: best permalink setting, writing short slugs, and changing URLs safely with 301 redirects to keep rankings.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-seo-friendly-urls.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/seo-friendly-urls/#article",
       "headline": "SEO-Friendly URLs in WordPress: Permalinks, Slugs and Changing Them Safely",
-      "description": "How to structure clean, SEO-friendly URLs and permalinks in WordPress, write good slugs, and change existing URLs safely with 301 redirects to protect rankings.",
+      "description": "How to create SEO-friendly URLs in WordPress: best permalink setting, writing short slugs, and changing URLs safely with 301 redirects to keep rankings.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-09-28",
+      "dateModified": "2026-10-28",
       "mainEntityOfPage": "https://samverse.space/blog/seo-friendly-urls/",
       "image": "https://samverse.space/assets/og/blog-seo-friendly-urls.png",
       "articleSection": "SEO",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/seo-growth/">SEO &amp; growth</a></nav>
           <a class="post-cat" href="/blog/topic/seo-growth/">SEO</a>
           <h1>SEO-Friendly URLs in WordPress: Permalinks, Slugs and Changing Them Safely</h1>
-          <p class="post-dek">How to structure clean, SEO-friendly URLs and permalinks in WordPress, write good slugs, and change existing URLs safely with 301 redirects to protect rankings.</p>
+          <p class="post-dek">How to create SEO-friendly URLs in WordPress: best permalink setting, writing short slugs, and changing URLs safely with 301 redirects to keep rankings.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · 5 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-28">28 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=SEO-Friendly%20URLs%20in%20WordPress%3A%20Permalinks%2C%20Slugs%20and%20Changing%20Them%20Safely%20https%3A%2F%2Fsamverse.space%2Fblog%2Fseo-friendly-urls%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -154,50 +154,48 @@
             <summary>On this page</summary>
             <ol>
               <li><a href="#what-makes-a-url-seo-friendly">What makes a URL SEO-friendly</a></li>
-              <li><a href="#do-urls-affect-rankings">Do URLs affect rankings?</a></li>
-              <li><a href="#choosing-a-permalink-structure-in-wordpress">Choosing a permalink structure in WordPress</a></li>
-              <li><a href="#writing-good-slugs-for-pages-and-posts">Writing good slugs for pages and posts</a></li>
-              <li><a href="#should-you-change-existing-urls">Should you change existing URLs?</a></li>
-              <li><a href="#how-to-change-urls-safely">How to change URLs safely</a></li>
-              <li><a href="#common-mistakes">Common mistakes</a></li>
+              <li><a href="#examples-poor-vs-better-urls">Examples: poor vs better URLs</a></li>
+              <li><a href="#how-to-create-seo-friendly-urls-in-wordpress">How to create SEO-friendly URLs in WordPress</a></li>
+              <li><a href="#categories-tags-and-woocommerce-urls">Categories, tags and WooCommerce URLs</a></li>
+              <li><a href="#planning-a-url-structure-for-a-business-site">Planning a URL structure for a business site</a></li>
+              <li><a href="#changing-urls-safely-without-losing-rankings">Changing URLs safely without losing rankings</a></li>
+              <li><a href="#common-url-mistakes-on-indian-business-sites">Common URL mistakes on Indian business sites</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Use the Post name permalink structure and short, readable, lowercase slugs with hyphens, and settle them before launch.</li>
-              <li>Words in URLs are only a minor ranking signal, so don't rewrite well-performing URLs without a clear reason.</li>
-              <li>When you do change URLs, map old to new, add 301 redirects, update internal and external links you control, and monitor 404 errors.</li>
+              <li>Use the Post name permalink setting and keep slugs short, lowercase and descriptive, ideally with the main phrase people search for.</li>
+              <li>Changing a URL that already ranks is risky: only do it for a clear reason, and always add a 301 redirect from the old address.</li>
+              <li>For WooCommerce and Shopify, keep product and category URLs stable, because they collect links, shares and ad history over time.</li>
             </ul>
           </div>
-<p>Every page on your website has a URL, and in WordPress you control most of it through the permalink settings and each page's slug. Clean, readable URLs help visitors understand where they are, look more trustworthy in search results and when shared on WhatsApp, and keep your site organised as it grows. Messy URLs are rarely a disaster, but changing them carelessly can be. Here's how to set them up well, and how to change them without losing traffic.</p>
+<p>An SEO-friendly URL is short, readable and describes the page, such as <code>/wordpress-developer-pune/</code> rather than <code>/?p=482</code>. In WordPress, you get there by choosing the &quot;Post name&quot; permalink setting and writing a clean slug for each page. If you change a URL that is already indexed, add a 301 redirect so visitors and Google land on the new address.</p>
+<p>This guide covers how to create SEO-friendly URLs in WordPress, how to write good slugs, when changing them is worth it, and how to avoid losing rankings in the process.</p>
 
 <h2 id="what-makes-a-url-seo-friendly">What makes a URL SEO-friendly</h2>
+<p>Google has said that URLs are a small ranking factor, but clean URLs still help in practical ways. People are more likely to click a link they can read, they can tell what the page is about before opening it, and shared links on WhatsApp or email look trustworthy rather than like random code.</p>
+<p>A good URL usually has these qualities:</p>
 <ul>
-  <li><strong>Readable:</strong> a person can guess what the page is about from the URL alone</li>
-  <li><strong>Short and descriptive:</strong> the main topic, without filler words</li>
-  <li><strong>Lowercase, with hyphens between words:</strong> not spaces, underscores or capital letters</li>
-  <li><strong>Stable:</strong> no dates, years or details that are likely to change</li>
-  <li><strong>Consistent:</strong> one pattern across the site, and one preferred version (https, with or without www)</li>
+<li><strong>Readable words</strong> separated by hyphens, not underscores or IDs.</li>
+<li><strong>Short</strong>, with filler words such as &quot;and&quot;, &quot;the&quot; or &quot;a&quot; removed where the meaning stays clear.</li>
+<li><strong>Lowercase</strong> only, so you never end up with two versions of one page.</li>
+<li><strong>Stable</strong>, without dates or years unless the content is genuinely tied to one.</li>
+<li><strong>Descriptive</strong>, including the main phrase the page targets, such as a service and city.</li>
 </ul>
-<table>
-  <thead><tr><th>Less helpful</th><th>Better</th><th>Why</th></tr></thead>
-  <tbody>
-    <tr><td>/?p=482</td><td>/ac-repair-pune/</td><td>Says what the page is about</td></tr>
-    <tr><td>/2024/03/our-best-offers-for-this-summer-season-2024/</td><td>/summer-ac-service-offers/</td><td>Shorter, and doesn't go out of date</td></tr>
-    <tr><td>/Services/Dental_Implants/</td><td>/services/dental-implants/</td><td>Lowercase with hyphens</td></tr>
-    <tr><td>/best-dentist-delhi-top-dentist-cheap-dentist/</td><td>/dentist-delhi/</td><td>No keyword repetition</td></tr>
-  </tbody>
-</table>
 
-<h2 id="do-urls-affect-rankings">Do URLs affect rankings?</h2>
-<p>A little, but less than many people think. Words in a URL are generally a minor signal, and a page with a messy URL can still rank well if its content is strong. The bigger benefits are practical:</p>
-<ul>
-  <li>Search results often show the URL path, so a clear one reassures people before they click</li>
-  <li>Links shared on WhatsApp, email and social media are easier to trust when they're readable</li>
-  <li>A logical structure, such as /services/ and /blog/, makes analytics reports and site management easier</li>
-</ul>
-<p>So get URLs right on new pages, but don't rush to rewrite old ones that already perform well.</p>
+<h2 id="examples-poor-vs-better-urls">Examples: poor vs better URLs</h2>
+<table>
+<thead><tr><th>Poor</th><th>Better</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>/?p=482</td><td>/website-design-pune/</td><td>Describes the page</td></tr>
+<tr><td>/2023/05/14/our-new-post/</td><td>/gst-invoice-guide/</td><td>No date, so it does not look stale</td></tr>
+<tr><td>/services/our-best-website-design-and-development-services-in-pune-maharashtra/</td><td>/services/website-design-pune/</td><td>Shorter and easier to share</td></tr>
+<tr><td>/Product_Category/Silk_Sarees/</td><td>/silk-sarees/</td><td>Lowercase and hyphens</td></tr>
+<tr><td>/page-2-copy/</td><td>/about/</td><td>No leftover draft names</td></tr>
+</tbody>
+</table>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress seo?</strong>
@@ -205,65 +203,81 @@
   <div><a href="/wordpress-seo-services/" class="link-inline">See WordPress SEO →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22SEO-Friendly%20URLs%20in%20WordPress%3A%20Permalinks%2C%20Slugs%20and%20Changing%20Them%20Safely%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="choosing-a-permalink-structure-in-wordpress">Choosing a permalink structure in WordPress</h2>
-<p>Go to <strong>Settings, then Permalinks</strong> in the dashboard. WordPress offers several structures:</p>
-<table>
-  <thead><tr><th>Option</th><th>Example</th><th>Good for most businesses?</th></tr></thead>
-  <tbody>
-    <tr><td>Plain</td><td>/?p=123</td><td>No, it tells visitors nothing</td></tr>
-    <tr><td>Day and name, Month and name</td><td>/2026/09/28/post-name/</td><td>Rarely, dates make lasting content look old</td></tr>
-    <tr><td>Numeric</td><td>/archives/123</td><td>No</td></tr>
-    <tr><td>Post name</td><td>/post-name/</td><td>Yes, short and clear</td></tr>
-    <tr><td>Custom structure</td><td>/blog/%postname%/</td><td>Sometimes, for example to group articles under /blog/</td></tr>
-  </tbody>
-</table>
-<p>Post name suits most business websites. Pages work slightly differently: they use their own slug plus any parent page, so a "Dental Implants" page placed under a "Services" parent becomes /services/dental-implants/. Avoid putting categories in post URLs unless you have a good reason, because recategorising a post later changes its URL.</p>
-<p>WooCommerce stores also get a "Product permalinks" section on the same screen. Decide on all of this before launch, when changing it costs nothing.</p>
-
-<h2 id="writing-good-slugs-for-pages-and-posts">Writing good slugs for pages and posts</h2>
-<p>The slug is the last part of the URL. WordPress creates it from the title, which is often too long, and you can edit it in the page or post settings (look for the URL or permalink field in the editor's sidebar).</p>
-<ul>
-  <li>Keep the main topic: "How Much Does a Modular Kitchen Cost in Bengaluru? A Complete Guide" can become /modular-kitchen-cost-bengaluru/</li>
-  <li>Leave out years and counts you'll update, like "2026" or "15 tips", so the URL still fits when the content changes</li>
-  <li>Include a city only if the page is genuinely about that location</li>
-  <li>Don't repeat keywords or cram in several phrases</li>
-  <li>On Hindi or regional-language pages, consider simple Latin-character slugs, because non-Latin characters often turn into long strings of % codes when a link is copied and shared</li>
-  <li>Watch for "-2" at the end: WordPress adds a number when a slug is already taken, for example by another page or an uploaded image</li>
-  <li>Set the slug before you publish and share the page</li>
-</ul>
-
-<h2 id="should-you-change-existing-urls">Should you change existing URLs?</h2>
-<p>Only when the benefit is clear. Good reasons include:</p>
-<ul>
-  <li>The site uses Plain or date-based permalinks and you're planning a wider clean-up or redesign</li>
-  <li>A URL is misleading, for example it names a service you no longer offer</li>
-  <li>You're merging several weak pages into one stronger page</li>
-  <li>You're moving platforms and the old URL pattern can't be kept</li>
-</ul>
-<p>If a page ranks well and brings enquiries, and its URL is merely imperfect, it's usually better left alone. Even with correct redirects, rankings can fluctuate for a while as Google processes the change.</p>
-
-<h2 id="how-to-change-urls-safely">How to change URLs safely</h2>
+<h2 id="how-to-create-seo-friendly-urls-in-wordpress">How to create SEO-friendly URLs in WordPress</h2>
+<p>Go to <strong>Settings, then Permalinks</strong> in the WordPress dashboard. For most business sites, choose <strong>Post name</strong>. This produces URLs like <code>/blog-post-title/</code> for posts and <code>/page-name/</code> for pages. If you prefer to keep posts under a blog folder, use a custom structure such as <code>/blog/%postname%/</code>.</p>
+<p>Then, for each page or post, edit the slug before publishing. In the block editor it sits in the URL or Permalink field of the sidebar; SEO plugins also show it in their snippet preview. WordPress builds the slug from the title by default, which often makes it too long, so shorten it by hand.</p>
+<p>Tips for writing slugs:</p>
 <ol>
-  <li><strong>List every current URL.</strong> Use your XML sitemap, the page indexing report in Search Console and your analytics, so pages with traffic or links aren't missed.</li>
-  <li><strong>Take a full backup,</strong> and for site-wide changes, test on a staging copy first; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</li>
-  <li><strong>Map old to new.</strong> Keep a spreadsheet with each old URL and its closest new equivalent.</li>
-  <li><strong>Make the change and add 301 redirects</strong> from every old URL to its new one. A redirect plugin or your SEO plugin can handle individual pages, and structure-wide changes (like removing dates) can use a pattern-based rule. WordPress sometimes redirects a changed post slug automatically, but don't rely on it. See <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
-  <li><strong>Update internal links and menus</strong> so they point straight to the new URLs instead of passing through redirects.</li>
-  <li><strong>Update links you control elsewhere:</strong> your Google Business Profile website and appointment links, social media profiles, Google Ads final URLs, email signatures, saved WhatsApp quick replies, and QR codes on brochures or visiting cards.</li>
-  <li><strong>Test and monitor.</strong> Open a sample of old URLs to confirm they land on the right page, resubmit your sitemap in Search Console, and watch for 404 errors over the following weeks.</li>
+<li>Start from the phrase people actually type, for example &quot;cake classes pune&quot; or &quot;wordpress maintenance cost&quot;.</li>
+<li>Remove words that add no meaning.</li>
+<li>Avoid numbers that will change, such as &quot;10-tips&quot; if you may later add more tips.</li>
+<li>Use English transliteration consistently if your audience searches in Hinglish, and keep one version.</li>
+<li>Never reuse a slug that belonged to a deleted page for something unrelated.</li>
 </ol>
-<p>Keep the redirects in place permanently. Old links on other websites, in bookmarks and on printed material will keep being used for years.</p>
+<p>If you set up the site fresh, decide the permalink structure before publishing any content. Changing it later affects every URL at once.</p>
 
-<h2 id="common-mistakes">Common mistakes</h2>
+<h2 id="categories-tags-and-woocommerce-urls">Categories, tags and WooCommerce URLs</h2>
+<p>WordPress adds <code>/category/</code> to category archive URLs and WooCommerce adds <code>/product/</code> and <code>/product-category/</code> to store URLs. These defaults are fine. Some plugins can remove the base, but doing so on a live site creates a lot of redirects and possible conflicts, so it is rarely worth it.</p>
+<p>For stores, the bigger question is whether a product sits in one category or many. WooCommerce keeps one URL per product regardless of category, which avoids duplicate pages. Keep product slugs simple, such as <code>/product/kanjivaram-silk-saree-red/</code>, and avoid adding SKUs or stock codes that mean nothing to buyers. The guide to <a href="/blog/category-tag-pages-seo/">category and tag pages for SEO</a> covers archive pages in more detail.</p>
+<p>On Shopify, URL prefixes like <code>/products/</code> and <code>/collections/</code> are fixed, but you can still edit the handle (Shopify's name for the slug) on each product and collection. The same rules apply: short, lowercase and descriptive. When you edit a handle, Shopify offers to create a redirect automatically, and you should leave that option ticked.</p>
+
+<h2 id="planning-a-url-structure-for-a-business-site">Planning a URL structure for a business site</h2>
+<p>Before a new site goes live, sketch the URL structure on paper alongside the menu. A clear structure makes the site easier to navigate, easier to extend and easier for Google to understand. A simple plan for a typical Indian service business might look like this:</p>
 <ul>
-  <li>Changing a slug or the permalink setting on a live site without redirects, creating broken links overnight</li>
-  <li>Redirecting all old URLs to the homepage instead of to matching pages</li>
-  <li>Changing URLs repeatedly, which builds redirect chains; point old URLs straight to the final address</li>
-  <li>Changing URLs, design and content all at once, which makes it hard to tell what caused any drop; see <a href="/blog/redesign-website-without-losing-rankings/">how to redesign without losing rankings</a></li>
-  <li>Stuffing keywords or lists of cities into slugs</li>
+<li><strong>Top-level service pages:</strong> <code>/website-design/</code>, <code>/seo-services/</code>, <code>/maintenance/</code>.</li>
+<li><strong>Location pages, only if each is genuinely different:</strong> <code>/website-design-pune/</code>, <code>/website-design-mumbai/</code>.</li>
+<li><strong>Blog posts under one folder:</strong> <code>/blog/how-much-does-a-website-cost/</code>.</li>
+<li><strong>Case studies under their own folder:</strong> <code>/work/project-name/</code>.</li>
+<li><strong>Utility pages kept short:</strong> <code>/about/</code>, <code>/contact/</code>, <code>/privacy-policy/</code>.</li>
 </ul>
+<p>Keep the depth shallow. A URL like <code>/services/digital/web/design/pune/</code> adds folders without adding meaning. Two levels are enough for almost every small business site, and flatter URLs are easier to read aloud on a phone call or print on a visiting card.</p>
+<p>Think about the future too. If you might add a second city or a new service line next year, pick names that will still make sense then. A slug like <code>/services/</code> ages better than <code>/our-2024-services/</code>. And if you plan a Hindi or Marathi version of the site, decide early whether it will live in a folder such as <code>/hi/</code>, so English URLs do not need to change later.</p>
+<p>Finally, write the plan down. A short list of agreed URLs, shared with whoever adds content, prevents duplicate pages like <code>/contact-us/</code> and <code>/contact/</code> appearing side by side months later.</p>
 
-<p>Planning a URL clean-up, redesign or platform move? See <a href="/wordpress-seo-services/">WordPress SEO services</a> or <a href="/wordpress-migration/">WordPress migration</a> for help making the change without losing traffic.</p>
+<h2 id="changing-urls-safely-without-losing-rankings">Changing URLs safely without losing rankings</h2>
+<p>Changing a URL that already ranks resets some of what it has built up, and a missing redirect can turn a good page into a 404. Before changing anything, ask whether the gain is real. A slightly long but working URL is usually better left alone.</p>
+<p>Good reasons to change a URL:</p>
+<ul>
+<li>It contains an ID or draft name such as <code>/?p=482</code> or <code>/new-page-3/</code>.</li>
+<li>It includes a year that makes updated content look old.</li>
+<li>The page has changed topic and the URL is now misleading.</li>
+<li>You are merging two thin pages into one stronger page.</li>
+</ul>
+<p>The safe process:</p>
+<ol>
+<li>Note the old URL and check it in Search Console for clicks and impressions.</li>
+<li>Change the slug and publish.</li>
+<li>Add a 301 redirect from the old URL to the new one. A redirect plugin or your SEO plugin can do this; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> for which to use.</li>
+<li>Update internal links, menus and buttons that point to the old address.</li>
+<li>Check the sitemap shows only the new URL, then request indexing in Search Console.</li>
+</ol>
+<p>Avoid redirect chains, where URL A redirects to B and B to C. Point every old URL straight to the final one. Chains slow pages down and can end in a <a href="/blog/too-many-redirects-error-fix/">too many redirects error</a>.</p>
+
+<h2 id="common-url-mistakes-on-indian-business-sites">Common URL mistakes on Indian business sites</h2>
+<ul>
+<li><strong>City names stuffed into every URL</strong>, such as dozens of near-identical &quot;service-in-area&quot; pages. Only create location URLs when each page has genuinely different content.</li>
+<li><strong>Changing the permalink setting on a live site</strong> without redirects, which breaks every shared link at once.</li>
+<li><strong>Both http and https, or www and non-www versions</strong> loading separately. Pick one and redirect the rest; a <a href="/blog/canonical-tags-explained/">canonical tag</a> helps confirm the preferred version.</li>
+<li><strong>Uppercase letters or spaces</strong> in slugs copied from file names, which create encoded URLs like <code>%20</code>.</li>
+<li><strong>Old campaign pages</strong> left live with outdated offers rather than redirected to a current page.</li>
+<li><strong>Image and PDF file names</strong> such as <code>IMG_20230514.jpg</code> or <code>final-final-v2.pdf</code>. Rename files before uploading, because WordPress builds the attachment URL from the file name and it is awkward to change afterwards.</li>
+<li><strong>Translated or regional slugs in mixed scripts</strong>, where some pages use Devanagari and others use English for the same section. Choose one approach per language and stick to it, so links stay predictable.</li>
+</ul>
+<p>Pages returning 404 after a change usually point to a permalink or redirect issue; the guide on <a href="/blog/wordpress-pages-404-permalinks-fix/">fixing WordPress 404 permalink errors</a> walks through the checks.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>How do I create SEO-friendly URLs in WordPress?</h3>
+<p>Set Settings, Permalinks to Post name, then edit each slug to a short, lowercase, hyphenated phrase that describes the page. Do this before publishing so you never need to change it later.</p>
+<h3>Should I put keywords in the URL?</h3>
+<p>Yes, naturally. Include the main phrase the page targets, such as the service and city, but do not stuff several keywords or repeat words.</p>
+<h3>Will changing my permalinks hurt SEO?</h3>
+<p>It can if you skip redirects. With a 301 redirect from every old URL to its new one and updated internal links, most pages recover, though rankings may fluctuate for a while.</p>
+<h3>Should I remove the date from WordPress blog URLs?</h3>
+<p>For evergreen content, a date-free structure is usually better. On an existing site, weigh the benefit against the redirects you would need, and plan the change carefully.</p>
+<h3>Are Shopify URLs SEO-friendly?</h3>
+<p>Mostly. The <code>/products/</code> and <code>/collections/</code> prefixes are fixed, but you can edit each handle, and Shopify can add redirects when you change one.</p>
+
+<p>If your site has messy URLs or broken links after a redesign, I can audit and fix them with proper redirects as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. Businesses in Maharashtra can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -300,12 +314,13 @@
             <strong>On this page</strong>
             <ol>
               <li><a href="#what-makes-a-url-seo-friendly">What makes a URL SEO-friendly</a></li>
-              <li><a href="#do-urls-affect-rankings">Do URLs affect rankings?</a></li>
-              <li><a href="#choosing-a-permalink-structure-in-wordpress">Choosing a permalink structure in WordPress</a></li>
-              <li><a href="#writing-good-slugs-for-pages-and-posts">Writing good slugs for pages and posts</a></li>
-              <li><a href="#should-you-change-existing-urls">Should you change existing URLs?</a></li>
-              <li><a href="#how-to-change-urls-safely">How to change URLs safely</a></li>
-              <li><a href="#common-mistakes">Common mistakes</a></li>
+              <li><a href="#examples-poor-vs-better-urls">Examples: poor vs better URLs</a></li>
+              <li><a href="#how-to-create-seo-friendly-urls-in-wordpress">How to create SEO-friendly URLs in WordPress</a></li>
+              <li><a href="#categories-tags-and-woocommerce-urls">Categories, tags and WooCommerce URLs</a></li>
+              <li><a href="#planning-a-url-structure-for-a-business-site">Planning a URL structure for a business site</a></li>
+              <li><a href="#changing-urls-safely-without-losing-rankings">Changing URLs safely without losing rankings</a></li>
+              <li><a href="#common-url-mistakes-on-indian-business-sites">Common URL mistakes on Indian business sites</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -332,8 +347,8 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/redesign-website-without-losing-rankings/"><img class="post-card-img" src="/assets/og/blog-redesign-website-without-losing-rankings.webp" alt="How to Redesign Your Website Without Losing Google Rankings: The SEO Migration Checklist" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>How to Redesign Your Website Without Losing Google Rankings: The SEO Migration Checklist</h3><p>Redesign your website and keep your rankings: benchmark, crawl, map every URL, set up 301s, keep content parity, block staging and monitor after launch.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/technical-seo-audit-wordpress/"><img class="post-card-img" src="/assets/og/blog-technical-seo-audit-wordpress.webp" alt="WordPress Technical SEO Audit: A Practical Checklist (With WooCommerce Checks)" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>WordPress Technical SEO Audit: A Practical Checklist (With WooCommerce Checks)</h3><p>A practical WordPress technical SEO audit checklist: indexing, sitemaps, robots.txt, canonicals, redirects, Core Web Vitals, schema and WooCommerce checks.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/canonical-tags-explained/"><img class="post-card-img" src="/assets/og/blog-canonical-tags-explained.webp" alt="Canonical Tags Explained: What rel=canonical Does and How to Get It Right" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>Canonical Tags Explained: What rel=canonical Does and How to Get It Right</h3><p>What a canonical tag does, why Google treats it as a hint, how WordPress sets it, and how to fix parameter, pagination, www and Search Console canonical issues.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/301-vs-302-redirects/"><img class="post-card-img" src="/assets/og/blog-301-vs-302-redirects.webp" alt="301 vs 302 Redirects: Which to Use, How They Affect SEO and How to Set Them Up in WordPress" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>301 vs 302 Redirects: Which to Use, How They Affect SEO and How to Set Them Up in WordPress</h3><p>301 vs 302 redirects explained: permanent vs temporary, 307 and 308, the SEO effect, chains and loops, and setting up redirects in WordPress and .htaccess.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
