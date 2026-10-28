@@ -37247,90 +37247,111 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-steel-fabrication-companies',
-    title: 'Websites for Steel and Metal Fabrication Companies',
-    description: 'What structural steel and metal fabrication companies need on their website: capability and machinery pages, project case studies, certifications and RFQ forms.',
+    seoTitle: 'Website for Steel Fabrication Company: Capability and RFQs',
+    title: 'Website for Steel Fabrication Companies: Capability Pages, Machinery, Certifications, Projects and RFQs',
+    description: 'How to plan a website for a steel fabrication company in India: capability and machinery pages, certifications, case studies and drawing RFQ forms.',
     date: '2026-09-28',
+    updated: '2026-10-28',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-website-development'],
     body: `
-<p>Fabrication buyers rarely browse for fun. An EPC contractor, a plant engineer or an OEM's purchase team usually has a drawing in hand and a deadline, and wants to know one thing: can this shop make it to specification and deliver on time? Unlike a manufacturer selling standard products, a fabrication company sells capability. Your website should prove that capability quickly and make it easy to send an RFQ. For general advice on B2B websites, see <a href="/blog/b2b-manufacturer-website-guide/">how manufacturers can get more B2B enquiries</a>; this guide focuses on job-shop and project fabrication.</p>
+<p>A website for a steel fabrication company should prove capability fast: one page per process with honest limits, a current machinery list, certifications stated precisely, short project case studies and an RFQ form that accepts drawings. Buyers usually arrive with a drawing and a deadline, and they leave if they cannot tell whether your shop can make the job.</p>
+<p>Fabrication buyers rarely browse for fun. An EPC contractor, a plant engineer or an OEM's purchase team wants to know one thing: can this shop make it to specification and deliver on time? For general B2B advice, see <a href="/blog/b2b-manufacturer-website-guide/">how manufacturers can get more B2B enquiries</a>; this guide focuses on job-shop and project fabrication.</p>
 
 <h2>What fabrication buyers check</h2>
 <ul>
-  <li><strong>Processes:</strong> the cutting, forming, welding, machining and finishing you do in-house</li>
-  <li><strong>Limits:</strong> the materials, thicknesses, sizes and weights you can handle</li>
-  <li><strong>Capacity:</strong> shop floor area, lifting capacity and how much work you can take on</li>
-  <li><strong>Quality:</strong> welding procedures, inspection, documentation and certifications</li>
-  <li><strong>Experience:</strong> similar jobs for similar industries</li>
-  <li><strong>Logistics:</strong> your location, delivery reach and whether you erect on site</li>
+<li><strong>Processes:</strong> the cutting, forming, welding, machining and finishing you do in-house.</li>
+<li><strong>Limits:</strong> the materials, thicknesses, sizes and weights you can handle.</li>
+<li><strong>Capacity:</strong> shop floor area, lifting capacity and how much work you can take on.</li>
+<li><strong>Quality:</strong> welding procedures, inspection, documentation and certifications.</li>
+<li><strong>Experience:</strong> similar jobs for similar industries.</li>
+<li><strong>Logistics:</strong> your location, delivery reach and whether you erect on site.</li>
 </ul>
-<p>If a buyer has to phone you just to learn your maximum plate thickness or bed size, they may simply move on to a shop that publishes it.</p>
+<p>If a buyer has to phone you just to learn your maximum plate thickness or bed size, they may move on to a shop that publishes it.</p>
 
-<h2>Build capability pages, one per process</h2>
+<h2>Website for steel fabrication company: capability pages</h2>
 <p>Capability pages are the heart of a fabrication website. Give each main process its own page, with clear and honest limits:</p>
 <table>
-  <thead>
-    <tr><th>Capability</th><th>What to state</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Cutting</td><td>Laser, plasma, oxy-fuel or waterjet; materials, maximum thickness and bed size</td></tr>
-    <tr><td>Forming</td><td>Press brake bending, plate rolling and section bending; tonnage, length and thickness limits</td></tr>
-    <tr><td>Welding</td><td>Processes (MIG/MAG, TIG, SAW, stick), materials such as mild steel, stainless steel and aluminium, and welder qualifications</td></tr>
-    <tr><td>Machining</td><td>Turning, milling, drilling and boring of fabricated parts</td></tr>
-    <tr><td>Finishing</td><td>Shot blasting, paint systems, powder coating or galvanising, and which you do in-house versus through partners</td></tr>
-    <tr><td>Erection</td><td>Site installation teams, cranes, safety practices and the regions you cover</td></tr>
-  </tbody>
+<thead><tr><th>Capability</th><th>What to state</th></tr></thead>
+<tbody>
+<tr><td>Cutting</td><td>Laser, plasma, oxy-fuel or waterjet; materials, maximum thickness and bed size</td></tr>
+<tr><td>Forming</td><td>Press brake bending, plate rolling and section bending; tonnage, length and thickness limits</td></tr>
+<tr><td>Welding</td><td>Processes (MIG/MAG, TIG, SAW, stick), materials such as mild steel, stainless steel and aluminium, and welder qualifications</td></tr>
+<tr><td>Machining</td><td>Turning, milling, drilling and boring of fabricated parts</td></tr>
+<tr><td>Finishing</td><td>Shot blasting, paint systems, powder coating or galvanising, and which you do in-house versus through partners</td></tr>
+<tr><td>Erection</td><td>Site installation teams, cranes, safety practices and the regions you cover</td></tr>
+</tbody>
 </table>
 <p>Only list what you can reliably deliver. If finishing or galvanising is outsourced, say so. Buyers find out eventually, and honesty up front saves arguments later.</p>
 
 <h2>Show what you make, and for whom</h2>
-<p>Alongside processes, many buyers search by the thing they need. Create pages for the main types of work you take on, for example:</p>
+<p>Many buyers search by the thing they need. Create pages for the main types of work you take on:</p>
 <ul>
-  <li><strong>Structural steel:</strong> industrial sheds, pre-engineered buildings, mezzanine floors, platforms, staircases and pipe racks</li>
-  <li><strong>Process equipment:</strong> tanks, hoppers, chutes, ducting, skids and frames</li>
-  <li><strong>Sheet metal:</strong> enclosures, panels, cabinets and machine guards</li>
-  <li><strong>Architectural metalwork:</strong> gates, railings, canopies and facade elements</li>
+<li><strong>Structural steel:</strong> industrial sheds, pre-engineered buildings, mezzanine floors, platforms, staircases and pipe racks.</li>
+<li><strong>Process equipment:</strong> tanks, hoppers, chutes, ducting, skids and frames.</li>
+<li><strong>Sheet metal:</strong> enclosures, panels, cabinets and machine guards.</li>
+<li><strong>Architectural metalwork:</strong> gates, railings, canopies and facade elements.</li>
 </ul>
-<p>Then add industry pages if you serve particular sectors, such as pharma, food processing, power, cement or warehousing, explaining the materials, finishes and documentation those clients usually expect.</p>
+<p>Then add industry pages if you serve particular sectors, such as pharma, food processing, power, cement or warehousing, explaining the materials, finishes and documentation those clients usually expect. If you also do glass and aluminium work, the guide to <a href="/blog/website-for-glass-aluminium-fabricators/">websites for glass and aluminium fabricators</a> covers that side.</p>
 
 <h2>A machinery and infrastructure page</h2>
-<p>A simple, up-to-date machinery list does a lot of selling. Present it as a table with the machine type, the make or model if you're happy to share it, and its key capacity. Add photos and short videos of the shop floor, overhead cranes, material storage and inspection area. Keep it current: a list that includes machines you've sold, or misses new ones, undermines trust the moment a buyer visits your shop.</p>
+<p>A simple, up-to-date machinery list does a lot of selling. Present it as a table with the machine type, the make or model if you are happy to share it, and its key capacity. Add photos and short videos of the shop floor, overhead cranes, material storage and inspection area.</p>
+<p>Keep it current: a list that includes machines you have sold, or misses new ones, undermines trust the moment a buyer visits your shop.</p>
 
 <h2>Certifications and quality, stated precisely</h2>
-<p>Certifications often decide whether you get onto a vendor list. List only those you currently hold, with the scope, the certifying body and the expiry date, and offer copies as downloads or on request. Depending on your work, buyers may ask about:</p>
+<p>Certifications often decide whether you get onto a vendor list. List only those you currently hold, with the scope, the certifying body and the expiry date, and offer copies on request. Depending on your work, buyers may ask about:</p>
 <ul>
-  <li>A quality management system such as ISO 9001</li>
-  <li>Welding quality standards such as ISO 3834, along with qualified welding procedures and welders</li>
-  <li>EN 1090, if you supply structural steel to European markets</li>
-  <li>Approvals under ASME codes or the Indian Boiler Regulations, if you make pressure vessels, boilers or their components</li>
-  <li>Vendor approvals with large companies, mentioned only where you're allowed to</li>
+<li>A quality management system such as ISO 9001.</li>
+<li>Welding quality standards such as ISO 3834, with qualified welding procedures and welders.</li>
+<li>EN 1090, if you supply structural steel to European markets.</li>
+<li>Approvals under ASME codes or the Indian Boiler Regulations, if you make pressure vessels, boilers or their components.</li>
+<li>Vendor approvals with large companies, mentioned only where you are allowed to.</li>
 </ul>
 <p>Requirements vary by product and market, so check current rules with the relevant certifying body rather than relying on a general article. Alongside certificates, describe your inspection process: incoming material checks, dimensional inspection, any NDT you arrange, and the documents you supply, such as mill test certificates and inspection reports.</p>
 
 <h2>Projects that prove it</h2>
-<p>For each notable job, write a short case study: the industry, the scope (fabrication only, or supply and erection), materials and grades, approximate size or tonnage, the timeline and any challenge you solved. Add photos from the shop floor, dispatch and site. Name clients only with written permission; otherwise describe them generally, such as "a food processing plant in western India". See <a href="/blog/write-case-studies-business-website/">how to write case studies</a> for a simple structure.</p>
+<p>For each notable job, write a short case study: the industry, the scope (fabrication only, or supply and erection), materials and grades, approximate size or tonnage, the timeline and any challenge you solved. Add photos from the shop floor, dispatch and site. Name clients only with written permission; otherwise describe them generally, such as &quot;a food processing plant in western India&quot;. See <a href="/blog/write-case-studies-business-website/">how to write case studies</a> for a simple structure.</p>
 
 <h2>An RFQ form built for drawings</h2>
-<p>Your RFQ form is where interest becomes work. Make it fit the way buyers actually send enquiries:</p>
+<p>Your RFQ form is where interest becomes work. Make it fit how buyers actually send enquiries:</p>
 <ol>
-  <li><strong>File upload</strong> for drawings and specifications (PDF, DWG, DXF or STEP), with a sensible size limit and an email alternative for very large files</li>
-  <li><strong>Material and grade</strong>, quantity, and the required finish or coating</li>
-  <li><strong>Scope:</strong> fabrication only, supply and erection, or repair and modification</li>
-  <li><strong>Inspection and documentation</strong> requirements, if any</li>
-  <li><strong>Delivery location</strong> and required date</li>
+<li><strong>File upload</strong> for drawings and specifications (PDF, DWG, DXF or STEP), with a sensible size limit and an email alternative for very large files.</li>
+<li><strong>Material and grade,</strong> quantity, and the required finish or coating.</li>
+<li><strong>Scope:</strong> fabrication only, supply and erection, or repair and modification.</li>
+<li><strong>Inspection and documentation</strong> requirements, if any.</li>
+<li><strong>Delivery location</strong> and required date.</li>
 </ol>
-<p>Drawings can be commercially sensitive, so restrict the file types your form accepts and keep uploads out of public folders. Say that drawings are treated confidentially, and that you'll sign an NDA if asked, but only if both are true. Route submissions to someone who can estimate, send an automatic acknowledgement so buyers know the RFQ arrived, and add a WhatsApp number for quick questions. If your form isn't bringing in RFQs, see <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a>.</p>
+<p>Drawings can be commercially sensitive, so restrict the file types your form accepts and keep uploads out of public folders. Say that drawings are treated confidentially, and that you will sign an NDA if asked, but only if both are true. Route submissions to someone who can estimate, send an automatic acknowledgement, and add a WhatsApp number for quick questions. The guide to <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a> goes deeper, and if your form is not bringing in RFQs, see <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a>.</p>
+
+<h2>Downloads: company profile and brochures</h2>
+<p>Purchase teams often need a company profile PDF for vendor registration. Offer one that matches the website: capabilities, machinery, certifications, key projects and contact details. Keep it reasonably small, name the file sensibly and update the date on the cover when anything changes. A short HTML page with the same content helps the profile get found in search too; see <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs and brochures</a>. Some fabricators also add a vendor registration page listing the documents they can provide, such as GST registration and company details, with bank details shared only on request and never posted publicly.</p>
+
+<h2>Responding to RFQs fast</h2>
+<p>A fabrication website brings enquiries of very different quality: a serious RFQ with drawings, a student asking for a project quote, a trader asking for rates on standard sections. Plan how each is handled. Tag RFQs with drawings as priority and route them to the estimating team, reply to vague enquiries with a short request for drawings, quantity and location, and keep a simple tracker of status from received to quoted, won or lost. Over a few months, the tracker shows which capabilities and industries bring real orders, which tells you which pages deserve more photos, case studies and detail.</p>
+<p>Update the website when the business changes: a new laser cutter, a larger crane, a new certification or a completed landmark project. Fresh, specific updates keep the site credible for repeat buyers who check it before each new order.</p>
 
 <h2>SEO for fabricators</h2>
-<p>Buyers search by process, product and place: "steel fabrication in {city}", "sheet metal fabrication {industrial area}", "laser cutting service near me", "MS structure fabricator {city}", "PEB shed manufacturer {state}". Your capability and product pages are what rank for these, so give each one a clear title, specific content and photos of real work.</p>
+<p>Buyers search by process, product and place: &quot;steel fabrication in [city]&quot;, &quot;sheet metal fabrication [industrial area]&quot;, &quot;laser cutting service near me&quot;, &quot;MS structure fabricator [city]&quot; or &quot;PEB shed manufacturer [state]&quot;. Your capability and product pages are what rank for these, so give each a clear title, specific content and photos of real work.</p>
 <ul>
-  <li>Keep your Google Business Profile complete, with shop and project photos</li>
-  <li>List your company on relevant B2B directories, each linking back to your website</li>
-  <li>Write practical articles, such as choosing between mild steel and stainless steel for a particular use</li>
-  <li>Host machinery videos on YouTube and compress photos and PDFs, so pages load quickly for buyers checking your site from a plant or site office</li>
+<li>Keep your Google Business Profile complete, with shop and project photos.</li>
+<li>List your company on relevant B2B directories, each linking back to your website.</li>
+<li>Write practical articles, such as choosing between mild steel and stainless steel for a particular use.</li>
+<li>Host machinery videos on YouTube and compress photos and PDFs, so pages load quickly for buyers checking your site from a plant or site office.</li>
 </ul>
 
-<p>Building or rebuilding your fabrication company's website? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for a site built around your capabilities and RFQs.</p>
+<h2>FAQs</h2>
+<h3>What should a website for a steel fabrication company include?</h3>
+<p>Capability pages per process with limits, product and industry pages, a machinery list, certifications with scope and expiry, project case studies, a company profile download and an RFQ form that accepts drawings.</p>
+<h3>Should a fabricator publish its machine capacities?</h3>
+<p>Yes. Maximum thickness, bed size, bending length and lifting capacity help buyers decide quickly and reduce unsuitable enquiries.</p>
+<h3>How do I accept drawings safely through a website form?</h3>
+<p>Limit file types and sizes, store uploads outside public folders, email them only to estimators and keep backups secure.</p>
+<h3>Can I name the companies I have fabricated for?</h3>
+<p>Only with written permission. Otherwise describe them by industry and region.</p>
+<h3>Is WordPress suitable for an industrial fabrication website?</h3>
+<p>Yes. It handles capability pages, case studies, downloads and RFQ forms well, and your team can update projects and machinery lists easily.</p>
+
+<p>Building or rebuilding your fabrication company's website? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for a site built around your capabilities and RFQs. For industrial businesses in Maharashtra and Punjab, see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> and <a href="/wordpress-shopify-developer-ludhiana/">Ludhiana</a>.</p>
 `,
   },
   {
@@ -43885,67 +43906,117 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'web-fonts-performance',
-    seoTitle: 'Web Fonts and Website Speed: How to Load Fonts Efficiently',
-    title: 'Web Fonts and Website Speed: How to Load Fonts Without Slowing Your Site',
-    description: 'How web fonts slow pages and cause layout shift, and how to load them efficiently: fewer weights, self-hosting, WOFF2, font-display and preloading key fonts.',
+    seoTitle: 'Web Fonts Slowing Your Website? How to Load Them Faster',
+    title: 'Web Fonts Slowing Your Website? How to Load Fonts Efficiently in WordPress and Shopify',
+    description: 'Web fonts slowing your website? Cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.',
     date: '2026-09-28',
+    updated: '2026-10-28',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
-<p>Good typography makes a website look professional. But every custom font is a file the visitor has to download before your text looks right, and a careless font setup can delay your headline, make text flash or jump, and quietly add weight to every page. The good news: you rarely have to give up your brand fonts. You just need to load them sensibly.</p>
+<p>If web fonts are slowing your website, the fix is usually to load fewer of them: keep one or two families and two or three weights, self-host the files in WOFF2 format, use font-display so text stays visible, and preload only the fonts used on the first screen. You rarely need to give up your brand fonts; you just need to load them sensibly.</p>
+<p>Good typography makes a site look professional, but a careless font setup can delay your headline, make text flash or jump, and add weight to every page, which matters for visitors on Indian mobile networks.</p>
 
 <h2>How web fonts slow a page down</h2>
-<p>Each font family, weight and style is usually a separate file. Regular, medium, semi-bold and bold, plus italics of each, can easily mean eight font files for a single family. Add a second family for headings and an icon font, and the count keeps climbing.</p>
-<p>Fonts are also discovered late. The browser only finds out it needs a font after it has downloaded and read your CSS and worked out which text uses it. If the fonts come from another domain, such as a font service, it also has to open a connection to that server first. All of that happens while your visitor is waiting for the headline to appear.</p>
+<p>Each font family, weight and style is usually a separate file. Regular, medium, semi-bold and bold, plus italics of each, can mean eight files for a single family. Add a second family for headings and an icon font, and the count keeps climbing.</p>
+<p>Fonts are also discovered late. The browser only learns it needs a font after it has downloaded and read your CSS and worked out which text uses it. If fonts come from another domain, it also has to open a connection to that server first. All of that happens while your visitor waits for the headline.</p>
 
 <h2>Invisible text, flashes and layout shift</h2>
-<p>While a font downloads, browsers do one of two things:</p>
-<ul>
-  <li><strong>Hide the text</strong> for a short time, leaving blank spaces where your headline should be</li>
-  <li><strong>Show a fallback font</strong> (such as Arial) and swap in your font when it arrives</li>
-</ul>
-<p>The swap can cause a visible jump. If the fallback font is wider or taller than your brand font, lines rewrap, buttons move and the whole page shifts. That movement counts against your Cumulative Layout Shift (CLS) score, and slow fonts can also delay Largest Contentful Paint when your main heading is the largest element on the screen. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+<p>While a font downloads, browsers either hide the text for a short time, leaving blank spaces where your headline should be, or show a fallback font such as Arial and swap in your font when it arrives.</p>
+<p>The swap can cause a visible jump. If the fallback is wider or taller than your brand font, lines rewrap, buttons move and the page shifts. That movement counts against your Cumulative Layout Shift score, and slow fonts can delay Largest Contentful Paint when the main heading is the largest element on screen. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> and the guide on <a href="/blog/fix-cls-layout-shift/">fixing layout shift</a>.</p>
+
+<h2>How to check what fonts your site loads</h2>
+<ol>
+<li>Open the page in Chrome, open DevTools, go to the Network tab, filter by &quot;Font&quot; and reload. Every file listed is something your visitors download.</li>
+<li>Note the domain each comes from: your own site, a font service or a plugin's folder.</li>
+<li>Look for duplicates: the same family loaded twice from different places.</li>
+<li>Run PageSpeed Insights and look for notes such as &quot;Ensure text remains visible during webfont load&quot;.</li>
+<li>Test on a real mid-range Android phone on mobile data, not only on office Wi-Fi.</li>
+</ol>
 
 <h2>Use fewer families, weights and styles</h2>
 <p>This is the biggest and easiest win. For most business websites:</p>
 <ul>
-  <li><strong>One or two families:</strong> one for headings and one for body text, or one for both</li>
-  <li><strong>Two or three weights:</strong> for example regular for body text and bold for headings and buttons</li>
-  <li><strong>No italics</strong> unless your design genuinely uses them</li>
+<li><strong>One or two families:</strong> one for headings and one for body text, or one for both.</li>
+<li><strong>Two or three weights:</strong> for example regular for body text and bold for headings and buttons.</li>
+<li><strong>No italics</strong> unless your design genuinely uses them.</li>
 </ul>
-<p>Check your theme or builder's typography settings. It's common to find a weight selected for one button on one page, loading on every page of the site. <strong>Variable fonts</strong>, where one file covers a range of weights, can help if you use several weights, but may be larger than you need if you only use one or two. For choosing fonts in the first place, see <a href="/blog/choose-website-colours-fonts/">how to choose website colours and fonts</a>.</p>
-<p>Also consider a <strong>system font stack</strong> for body text. It uses fonts already installed on the visitor's device, so there's nothing to download at all. Many well-designed sites pair one brand font for headings with system fonts for everything else.</p>
+<p>Check your theme or builder's typography settings. It is common to find a weight chosen for one button on one page loading on every page of the site. <strong>Variable fonts</strong>, where one file covers a range of weights, can help if you use several weights, but may be larger than you need if you use only one or two. For choosing fonts in the first place, see <a href="/blog/choose-website-colours-fonts/">how to choose website colours and fonts</a>.</p>
+<p>Also consider a <strong>system font stack</strong> for body text. It uses fonts already on the visitor's device, so there is nothing to download. Many well-designed sites pair one brand font for headings with system fonts for everything else.</p>
 
 <h2>Self-host your fonts and use WOFF2</h2>
-<p>Loading fonts from a third-party service is convenient, but it means extra connections to other servers before any text is styled. Hosting the font files on your own site (or your CDN) removes that step and gives you control over caching.</p>
+<p>Loading fonts from a third-party service is convenient, but it means extra connections before any text is styled. Hosting font files on your own site or CDN removes that step and gives you control over caching.</p>
 <ul>
-  <li><strong>WOFF2</strong> is the modern, compressed font format supported by current browsers. Use it rather than older formats.</li>
-  <li><strong>Subsets</strong> keep files small by including only the characters you need. If your site is in Hindi or another Indian language, you need the right script, and those fonts are often larger, so choose weights even more carefully. See <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</li>
-  <li><strong>In WordPress,</strong> Elementor has a setting to load Google Fonts locally, block themes include a Font Library that installs fonts into your own site, and there are plugins that download and host fonts for you. Option names change between versions, so check your current setup.</li>
+<li><strong>WOFF2</strong> is the modern, compressed format supported by current browsers. Use it rather than older formats.</li>
+<li><strong>Subsets</strong> keep files small by including only the characters you need, such as Latin for English pages.</li>
+<li><strong>Indian scripts:</strong> Hindi, Marathi, Gujarati and other scripts need fonts that include them, and these files are often larger, so choose weights even more carefully. See <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on websites</a>.</li>
 </ul>
-<p>Self-hosting has a privacy benefit too: visitors' browsers don't contact a third-party font server just to show your text, which matters if you have visitors from regions with strict privacy laws.</p>
+<p>In WordPress, Elementor has a setting to load Google Fonts locally, block themes include a Font Library that installs fonts into your own site, and plugins can download and host fonts for you. Option names change between versions, so check your current setup. Self-hosting also means visitors' browsers do not contact a third-party font server just to show your text.</p>
 
 <h2>Use font-display to keep text visible</h2>
-<p>The <code>font-display</code> setting tells the browser what to do while a font loads:</p>
-<ul>
-  <li><strong>swap</strong> shows the fallback immediately and swaps in your font when ready. Text is never invisible, which is why it's the most common choice.</li>
-  <li><strong>optional</strong> uses your font only if it arrives almost instantly, otherwise the fallback stays for that page view. It avoids layout shift, at the cost of some visitors seeing the fallback.</li>
-</ul>
-<p>To make the swap less jarring, choose a fallback font with similar proportions to your brand font. Modern CSS can also fine-tune the fallback's size so the swap barely moves anything, which a developer can set up for your main fonts.</p>
+<p>The font-display setting tells the browser what to do while a font loads:</p>
+<table>
+<thead><tr><th>Value</th><th>What happens</th><th>Good for</th></tr></thead>
+<tbody>
+<tr><td>swap</td><td>Fallback shows immediately, brand font swaps in when ready</td><td>Most sites; text is never invisible</td></tr>
+<tr><td>optional</td><td>Brand font used only if it arrives almost instantly</td><td>Sites where layout stability matters most</td></tr>
+<tr><td>fallback</td><td>Short invisible period, then fallback; swaps only if the font arrives soon</td><td>A middle ground</td></tr>
+<tr><td>block</td><td>Text hidden for longer while the font loads</td><td>Rarely a good idea for body text</td></tr>
+</tbody>
+</table>
+<p>To make the swap less jarring, choose a fallback font with similar proportions to your brand font. Modern CSS can also adjust the fallback's size and spacing so the swap barely moves anything, which a developer can set up for your main fonts.</p>
 
 <h2>Preload only the fonts that matter</h2>
-<p>A preload hint tells the browser to fetch a file early instead of waiting to discover it. For the one or two fonts used in your headline and body text on the first screen, this can make text appear sooner. A typical preload looks like <code>&lt;link rel=&quot;preload&quot; href=&quot;/fonts/heading.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</code>.</p>
-<p>Don't preload everything. Every preloaded file competes for bandwidth with your hero image and CSS, so preloading five fonts can make the page slower, not faster. Preload the fonts visible above the fold and let the rest load normally.</p>
+<p>A preload hint tells the browser to fetch a file early instead of waiting to discover it. For the one or two fonts used in your headline and body text on the first screen, this can make text appear sooner. A typical preload looks like this:</p>
+<pre><code>&lt;link rel=&quot;preload&quot; href=&quot;/fonts/heading.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</code></pre>
+<p>Do not preload everything. Every preloaded file competes for bandwidth with your hero image and CSS, so preloading five fonts can make the page slower. Preload the fonts visible above the fold and let the rest load normally.</p>
 
 <h2>Icon fonts and duplicate font loading</h2>
-<p>Two more hidden costs are common on WordPress sites:</p>
 <ul>
-  <li><strong>Icon fonts:</strong> loading an entire icon library to show a phone, email and WhatsApp icon is wasteful. Inline SVG icons are lighter, and some builders, including Elementor, offer an option to render icons as SVG.</li>
-  <li><strong>Duplicates:</strong> the theme loads fonts, the page builder loads them again, and a slider or form plugin adds its own. Set fonts in one place and turn off font loading everywhere else. See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> for other builder-specific fixes.</li>
+<li><strong>Icon fonts:</strong> loading an entire icon library to show a phone, email and WhatsApp icon is wasteful. Inline SVG icons are lighter, and some builders, including Elementor, offer an option to render icons as SVG.</li>
+<li><strong>Duplicates:</strong> the theme loads fonts, the page builder loads them again, and a slider or form plugin adds its own. Set fonts in one place and turn off font loading everywhere else.</li>
 </ul>
-<p>To see what your site actually loads, open Chrome DevTools, go to the Network tab, filter by "Font" and reload the page. Every file listed is something your visitors download. PageSpeed Insights will also flag font-related issues, such as text not staying visible while fonts load.</p>
+<p>See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> for other builder-specific fixes.</p>
 
-<p>Want your brand fonts to look right without slowing the site? I can audit and clean up font loading as part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or rebuild typography settings properly on an <a href="/elementor-developer/">Elementor website</a>.</p>
+<h2>Web fonts on Shopify stores</h2>
+<p>Shopify themes usually let you pick fonts from Shopify's own font library in the theme editor, and those are served from Shopify's CDN. The same principles apply: keep to one or two families, avoid selecting extra weights for single elements, and be careful with apps that inject their own fonts into product pages or pop-ups. If you upload a custom brand font, use WOFF2 and check how the theme loads it. The guide to a <a href="/blog/shopify-store-slow-fix/">slow Shopify store</a> covers app and theme weight more broadly.</p>
+
+<h2>Fonts in WordPress page builders and themes</h2>
+<p>Most WordPress font problems come from settings spread across several places. A typical Elementor site may set fonts in the theme customiser, in Elementor's global fonts, in individual widgets and in a header plugin, each loading its own files. A tidy setup looks like this:</p>
+<ol>
+<li>Decide the families and weights once, ideally in the design system or Figma file.</li>
+<li>Set them in one place, such as Elementor global fonts or the block theme's styles.</li>
+<li>Remove font choices from individual widgets, so everything inherits from the global setting.</li>
+<li>Turn off font loading in the theme or plugins that duplicate it, if they offer that option.</li>
+<li>Use the builder's option to load fonts locally rather than from an external service.</li>
+</ol>
+<p>After changes, clear every cache layer: the caching plugin, any server cache and the CDN. Old CSS can keep loading removed fonts for a while, which confuses testing. The guide on <a href="/blog/wordpress-caching-explained/">WordPress caching</a> explains the layers.</p>
+<p>Agencies handing over a design should list the exact font files and weights used, so the developer does not guess and load extra ones just in case.</p>
+
+<h2>A quick font clean-up checklist</h2>
+<ul>
+<li>List every font file the homepage loads.</li>
+<li>Remove unused weights, styles and families.</li>
+<li>Self-host the rest in WOFF2, with subsets.</li>
+<li>Set font-display to swap or optional.</li>
+<li>Preload only above-the-fold fonts.</li>
+<li>Replace icon fonts with SVG where you can.</li>
+<li>Retest in PageSpeed Insights and on a real phone.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Are web fonts slowing my website?</h3>
+<p>Check the Network tab filtered by Font. If you see many files, files from several domains or duplicate families, fonts are likely adding delay and layout shift.</p>
+<h3>Is it better to self-host Google Fonts?</h3>
+<p>Usually, yes. Self-hosting removes extra connections, lets you control caching and avoids sending visitors' requests to another server.</p>
+<h3>What font-display value should I use?</h3>
+<p>Swap suits most sites because text is always visible. Optional avoids layout shift but some visitors will see the fallback font.</p>
+<h3>Do Hindi fonts slow down a website more than English fonts?</h3>
+<p>Often, because they cover more characters. Load fewer weights, subset where possible and test on mobile.</p>
+<h3>Should I preload all my fonts?</h3>
+<p>No. Preload only the one or two fonts visible on the first screen; preloading too many slows the page.</p>
+
+<p>Want your brand fonts to look right without slowing the site? I can audit and clean up font loading as part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or rebuild typography settings properly on an <a href="/elementor-developer/">Elementor website</a>. Shopify stores can see <a href="/shopify-developer/">Shopify development</a>.</p>
 `,
   },
   {
@@ -44641,107 +44712,126 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'choose-wordpress-maintenance-provider',
-    seoTitle: 'How to Choose a WordPress Maintenance Provider',
-    title: 'How to Choose a WordPress Maintenance Provider: Questions, Reports and Red Flags',
-    description: 'How to compare WordPress maintenance providers: the questions to ask, what a monthly report should show, response times to agree in writing, and red flags.',
+    seoTitle: 'How to Choose a WordPress Maintenance Provider in India',
+    title: 'How to Choose a WordPress Maintenance Provider: Packages, Charges, Questions and Red Flags',
+    description: 'How to choose a WordPress maintenance provider in India: compare website maintenance packages and charges, questions to ask, reports and red flags.',
     date: '2026-09-28',
+    updated: '2026-10-28',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
-<p>Handing your website to a maintenance provider means trusting someone with your admin access, your backups and, when something breaks, your enquiries. Most providers promise the same things: updates, backups, security and support. The real difference shows up in how they do the work and how they behave when something goes wrong. Here's how to compare them before you sign.</p>
+<p>To choose a WordPress maintenance provider, first list what your site needs, then compare providers on how they test updates, where backups are stored, response times in writing, what reports they send and what happens if you leave. Price matters, but two website maintenance packages with the same name can contain very different work.</p>
+<p>Handing over your site means trusting someone with admin access, backups and, when something breaks, your enquiries or orders. Here is how Indian businesses can compare providers before signing.</p>
 
 <h2>Start with what your site actually needs</h2>
-<p>A five-page brochure site, a busy WooCommerce store and a membership site need very different levels of care. Before you speak to anyone, note down:</p>
+<p>A five-page brochure site, a busy WooCommerce store and a membership site need very different levels of care. Before speaking to anyone, note down:</p>
 <ul>
-  <li>What the site does for your business: enquiries, bookings, orders or just credibility</li>
-  <li>How often you need content changes such as prices, photos or new pages</li>
-  <li>What would hurt most if it stopped working, and for how long you could live with it</li>
-  <li>Who has access today: an old developer, a marketing agency, your own team</li>
+<li>What the site does for the business: enquiries, bookings, orders or simply credibility.</li>
+<li>How often you need content changes such as prices, photos or new pages.</li>
+<li>What would hurt most if it stopped working, and for how long you could live with it.</li>
+<li>Who has access today: an old developer, a marketing agency or your own team.</li>
+<li>Where the site is hosted and who controls the domain.</li>
 </ul>
-<p>For the tasks a plan should cover each month, see <a href="/blog/monthly-website-maintenance-plan/">what a monthly WordPress maintenance plan should include</a>. This guide is about choosing the person or company who does them.</p>
+<p>For the tasks a plan should cover each month, see <a href="/blog/monthly-website-maintenance-plan/">what a monthly website maintenance plan should include</a>. This guide is about choosing the person or company who does them.</p>
+
+<h2>Website maintenance packages: how to compare them</h2>
+<p>Most providers in India sell tiered website maintenance packages, often called basic, standard and premium or something similar. The labels mean nothing on their own. Put each package side by side against the same checklist:</p>
+<table>
+<thead><tr><th>Item</th><th>What to check</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Updates</td><td>How often, and whether they are tested before or after</td><td>Untested updates are the most common cause of broken layouts</td></tr>
+<tr><td>Backups</td><td>Frequency, off-site storage, how many copies kept</td><td>A backup on the same server can be lost with the server</td></tr>
+<tr><td>Security</td><td>Scanning, firewall, and whether hack clean-up is included</td><td>Clean-up is often excluded or charged separately</td></tr>
+<tr><td>Uptime monitoring</td><td>Who gets alerted and what happens next</td><td>An alert nobody acts on does not help</td></tr>
+<tr><td>Content changes</td><td>Hours or tasks per month, and whether unused time carries over</td><td>This is where package value differs most</td></tr>
+<tr><td>Speed checks</td><td>Which pages are tested and how often</td><td>Slowdowns creep in after plugin updates and new content</td></tr>
+<tr><td>Support hours</td><td>Working days, time zone, holidays</td><td>Sunday or festival outages need a plan</td></tr>
+<tr><td>Reports</td><td>Monthly, with specific details</td><td>Proves the work is happening</td></tr>
+</tbody>
+</table>
+<p>If one provider includes hack clean-up and another does not, the cheaper plan may cost more the first time something goes wrong.</p>
+
+<h2>What drives website maintenance charges</h2>
+<p>Website maintenance charges in India vary widely, and that is normal, because the work behind them varies. The main factors are:</p>
+<ul>
+<li><strong>Site type:</strong> a WooCommerce or membership site needs checkout and login testing after updates, which takes longer than a brochure site.</li>
+<li><strong>Number of plugins and custom code:</strong> more moving parts means more testing.</li>
+<li><strong>Content change time:</strong> a plan with a few tasks a month costs less than one with regular editing hours.</li>
+<li><strong>Response time:</strong> faster or out-of-hours emergency cover costs more.</li>
+<li><strong>Staging and testing:</strong> testing major updates on a copy first is safer and takes extra time.</li>
+<li><strong>Licences:</strong> whether premium plugin and theme renewals are included or billed to you.</li>
+</ul>
+<p>For typical ranges and what is usually included, read <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>. Ask every provider to quote the same written scope so you are comparing like with like.</p>
 
 <h2>Questions to ask before you sign</h2>
 <ol>
-  <li><strong>How do you test updates?</strong> Look for a backup before every update and a check of key pages afterwards, ideally on a staging copy for bigger updates. "We turn on auto-updates" is not a process.</li>
-  <li><strong>Where are backups stored, and how often are they taken?</strong> They should be off-site, with several copies kept. Ask when they last restored one.</li>
-  <li><strong>What happens if my site is hacked?</strong> Is clean-up included, charged separately or not offered at all?</li>
-  <li><strong>What are your response times?</strong> For emergencies and for routine changes, and whether that means working hours or any time.</li>
-  <li><strong>How many content changes are included?</strong> In hours or tasks, and what happens to unused time.</li>
-  <li><strong>How will you access my site?</strong> A provider should have its own user account, not share yours.</li>
-  <li><strong>Who pays for premium plugin licences, and in whose name are they?</strong></li>
-  <li><strong>Do you take on sites you didn't build?</strong> If yes, ask what the first health check involves.</li>
-  <li><strong>What happens if I leave?</strong> Access, backups and licence details should be handed over without drama.</li>
-  <li><strong>Can I cancel monthly,</strong> or is there a minimum term?</li>
+<li><strong>How do you test updates?</strong> Look for a backup before every update and a check of key pages afterwards, ideally on a staging copy for bigger updates. &quot;We turn on auto-updates&quot; is not a process.</li>
+<li><strong>Where are backups stored and when did you last restore one?</strong> They should be off-site with several copies kept.</li>
+<li><strong>What happens if my site is hacked?</strong> Included, charged separately or not offered?</li>
+<li><strong>What are your response times</strong> for emergencies and for routine changes, and do they mean working hours or any time?</li>
+<li><strong>How will you access my site?</strong> A provider should have its own user account, not share yours.</li>
+<li><strong>Who pays for premium plugin licences, and in whose name are they?</strong></li>
+<li><strong>Do you take on sites you did not build?</strong> If yes, what does the first health check involve?</li>
+<li><strong>What happens if I leave?</strong> Access, backups and licence details should be handed over without drama.</li>
+<li><strong>Can I cancel monthly, or is there a minimum term?</strong></li>
 </ol>
 <p>Vague answers to the first three questions tell you more than any sales page.</p>
 
 <h2>What a monthly report should show</h2>
-<p>A report is how you know the work is actually happening. It doesn't need to be long, but it should be specific.</p>
-<table>
-  <thead><tr><th>Section</th><th>A useful report shows</th><th>Warning sign</th></tr></thead>
-  <tbody>
-    <tr><td>Updates</td><td>Which plugins, themes and core versions were updated</td><td>"All updates done" with no detail</td></tr>
-    <tr><td>Backups</td><td>Dates, where they're stored and the last restore test</td><td>No mention of where backups live</td></tr>
-    <tr><td>Uptime</td><td>Any downtime, how long it lasted and the cause</td><td>A percentage with no explanation of incidents</td></tr>
-    <tr><td>Security</td><td>Scan results and anything that needed action</td><td>Scary numbers of "blocked attacks" with no context</td></tr>
-    <tr><td>Speed</td><td>Key pages tested and changes since last month</td><td>A single score with no pages named</td></tr>
-    <tr><td>Forms and checkout</td><td>Test enquiries or orders sent and received</td><td>Not tested at all</td></tr>
-    <tr><td>Work and next steps</td><td>Issues fixed, changes made and recommendations</td><td>No recommendations, month after month</td></tr>
-  </tbody>
-</table>
-<p>Ask to see a sample report before you sign. Anyone doing the work properly will have one ready.</p>
+<p>A report is how you know the work is happening. It does not need to be long, but it should be specific: which plugins, themes and core versions were updated; backup dates and where they are stored; any downtime with its cause; security scan results; speed tests on named pages; test enquiries or orders sent and received; and recommendations for next month. &quot;All updates done&quot; with no detail, or a report that never changes, is a warning sign. Ask to see a sample before you sign.</p>
 
 <h2>Response times: agree them in writing</h2>
-<p>"Quick support" means different things to different people. Agree severity levels like these, with a response time for each:</p>
+<p>&quot;Quick support&quot; means different things to different people. Agree severity levels with a response time for each:</p>
 <ul>
-  <li><strong>Critical:</strong> site down, hacked, or checkout and payments broken</li>
-  <li><strong>High:</strong> contact form not sending, a key page broken on mobile</li>
-  <li><strong>Routine:</strong> content changes, new photos, price updates</li>
+<li><strong>Critical:</strong> site down, hacked, or checkout and payments broken.</li>
+<li><strong>High:</strong> contact form not sending, a key page broken on mobile.</li>
+<li><strong>Routine:</strong> content changes, new photos, price updates.</li>
 </ul>
-<p>Then check the details:</p>
-<ul>
-  <li><strong>Response or resolution?</strong> "We'll reply within an hour" is not the same as "we'll fix it within an hour".</li>
-  <li><strong>Working hours and holidays.</strong> Does support pause on Sundays, during Diwali or over long weekends? For overseas businesses, which time zone applies?</li>
-  <li><strong>How to reach them.</strong> WhatsApp, email or a ticket system, and which one counts for emergencies.</li>
-</ul>
+<p>Then check whether the promise is a response or a fix, whether support pauses on Sundays, during Diwali or over long weekends, and which channel counts for emergencies: WhatsApp, email or a ticket system.</p>
+
+<h2>Freelancer, agency or hosting company?</h2>
+<p>Each option suits different sites. A freelancer usually offers direct contact and flexible changes; an agency may offer more cover across holidays; a hosting company's managed plan often handles server-level work but not your theme, plugins or content. Many businesses combine good managed hosting with a developer for the WordPress side. The comparison of <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency web developers</a> covers the trade-offs, and <a href="/blog/website-maintenance-vs-management/">website maintenance vs management</a> explains where care ends and growth work begins.</p>
+
+<h2>Onboarding and a trial month</h2>
+<p>A good provider starts with a short onboarding rather than jumping straight into updates. In the first few weeks, expect them to:</p>
+<ol>
+<li>Create their own admin account and confirm who else has access.</li>
+<li>Take a full backup and store it off-site before touching anything.</li>
+<li>List every plugin and theme, flag outdated or abandoned ones and note which licences have lapsed.</li>
+<li>Check PHP version, SSL, email delivery from forms and any existing malware.</li>
+<li>Test the key journeys: contact form, WhatsApp button, checkout or booking.</li>
+<li>Agree a contact person on your side and the channel for urgent issues.</li>
+</ol>
+<p>Treat the first month as a trial. Did the report arrive on time? Were small requests handled as promised? Did they warn you before a risky update? These signals tell you more than any proposal.</p>
+<p>Also check how they handle changes that sit outside maintenance, such as new pages, redesign work or SEO. A clear rate or quote process for extra work avoids surprise bills, and the guide on <a href="/blog/website-bug-vs-change-request/">bugs vs change requests</a> helps both sides agree what counts as a fix.</p>
 
 <h2>Red flags</h2>
 <ul>
-  <li>Asking for your personal admin login instead of creating their own account; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a></li>
-  <li>Backups kept only on the same server as the website</li>
-  <li>Using nulled (pirated) premium plugins to save on licences</li>
-  <li>Registering your domain or hosting in their own name</li>
-  <li>Long lock-in contracts, or a large annual payment upfront with no trial period</li>
-  <li>"Unlimited" everything at a price that can't cover real work</li>
-  <li>No reports, or reports that never change from month to month</li>
-  <li>Being unable to explain in plain language what they did and why</li>
+<li>Asking for your personal admin login instead of creating their own account; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>.</li>
+<li>Backups kept only on the same server as the website.</li>
+<li>Using nulled (pirated) premium plugins to save on licences.</li>
+<li>Registering your domain or hosting in their own name.</li>
+<li>Long lock-in contracts, or a large annual payment upfront with no trial period.</li>
+<li>&quot;Unlimited&quot; everything at a price that cannot cover real work.</li>
+<li>Being unable to explain in plain language what they did and why.</li>
 </ul>
 <p>Whoever you hire, run through the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> so your domain, hosting and key accounts stay in your name.</p>
 
-<h2>Freelancer, agency or your hosting company?</h2>
-<table>
-  <thead><tr><th>Option</th><th>Strengths</th><th>What to check</th></tr></thead>
-  <tbody>
-    <tr><td>Freelancer</td><td>Direct contact with the person doing the work, who gets to know your site</td><td>Who covers emergencies when they're unavailable</td></tr>
-    <tr><td>Agency</td><td>A bigger team and more formal processes</td><td>Who actually works on your site, and how requests are passed on</td></tr>
-    <tr><td>Hosting company's managed service</td><td>Server-level backups, security and sometimes automatic updates</td><td>Whether fixing plugin conflicts, broken layouts or forms is included; plans vary, so check current details</td></tr>
-  </tbody>
-</table>
-<p>Many businesses combine them: good hosting for the server, and a developer for everything inside WordPress.</p>
-
 <p>Agencies often deliver maintenance through a white-label partner working behind their brand; if you run an agency, see <a href="/blog/agency-wordpress-care-plans/">how to offer WordPress care plans to your clients</a>.</p>
 
-<h2>What a good first month looks like</h2>
-<ol>
-  <li>A full backup before anything is touched</li>
-  <li>A health check of plugins, themes, PHP version, user accounts and security</li>
-  <li>A list of problems found, sorted by urgency, with what's included and what would cost extra</li>
-  <li>Uptime monitoring and off-site backups set up and confirmed</li>
-  <li>A first report that gives you a baseline to compare future months against</li>
-</ol>
-<p>If a provider updates everything on day one without a backup or a health check, that's probably how they'll work every month.</p>
+<h2>FAQs</h2>
+<h3>How do I choose a WordPress maintenance provider?</h3>
+<p>List what your site needs, then compare providers on update testing, off-site backups, written response times, hack clean-up, monthly reports and exit terms. Ask for a sample report before signing.</p>
+<h3>What do website maintenance packages usually include?</h3>
+<p>Most include core, plugin and theme updates, backups, security scans and uptime monitoring. Packages differ on content change time, speed checks, hack clean-up, support hours and reporting, so compare the written scope.</p>
+<h3>Why do website maintenance charges differ so much between providers?</h3>
+<p>Charges depend on site type, the number of plugins, how much editing time is included, response times, testing on staging and whether licences are covered. A lower price often means less of that work.</p>
+<h3>Should I pay for maintenance monthly or yearly?</h3>
+<p>Monthly is safer while you test a new provider. A yearly plan can make sense once you trust them, as long as the scope and exit terms are written down.</p>
+<h3>Can a new provider maintain a site built by someone else?</h3>
+<p>Usually, yes. Expect an initial health check covering access, backups, outdated plugins, licences and security before regular maintenance starts.</p>
 
-<p>For budgeting, see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>. My own plans are month to month, include a monthly report, and start with a health check if I didn't build your site. I'm happy to answer every question above before you decide; see <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+<p>If you want this handled properly, see my <a href="/wordpress-maintenance/">WordPress maintenance and support</a> plans, or <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for one-off fixes. Pune businesses can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -46638,89 +46728,125 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'change-domain-name-without-losing-seo',
-    title: 'How to Change Your Domain Name Without Losing SEO',
-    description: 'Moving your website to a new domain? How to plan the move, set up page-by-page 301 redirects, use Search Console\'s Change of Address tool and update profiles.',
+    seoTitle: 'How to Change Domain Name Without Losing SEO (Step by Step)',
+    title: 'How to Change Your Domain Name Without Losing SEO: Redirects, Change of Address and Checks',
+    description: 'How to change your domain name without losing SEO: plan the move, map 301 redirects page by page, use Change of Address and update your profiles.',
     date: '2026-09-28',
+    updated: '2026-10-28',
     category: 'SEO',
     related: ['wordpress-migration', 'wordpress-seo-services'],
     body: `
-<p>Businesses change domains for good reasons: a rebrand, a shorter name, a .com for international buyers, or finally getting the name they always wanted. Done carefully, a domain change keeps most of your search visibility. Done carelessly, it can wipe out years of Google traffic almost overnight. Here's a step-by-step process.</p>
-<p>This guide is about moving your website to a different domain name. If you're keeping the same name and only changing where it's registered, see <a href="/blog/transfer-domain-to-another-registrar/">how to transfer a domain to another registrar</a> instead.</p>
+<p>To change your domain name without losing SEO, keep the old domain, set up page-by-page 301 redirects from every old URL to its matching new URL, update the new site's settings and canonicals, use Google Search Console's Change of Address tool, and update your profiles and best backlinks. Expect some ranking fluctuation for a while; a steep, lasting drop usually means redirects are missing or wrong.</p>
+<p>Businesses change domains for good reasons: a rebrand, a shorter name, a .com for international buyers, or finally getting the name they wanted. This guide is about moving your website to a different domain name. If you are keeping the same name and only changing where it is registered, see <a href="/blog/transfer-domain-to-another-registrar/">how to transfer a domain to another registrar</a>.</p>
 
 <h2>Is a domain change worth it?</h2>
 <p>Your domain carries history: links from other websites, brand searches, bookmarks, printed material and customers' memories. A move usually brings a period of ranking fluctuation while Google processes it, and it can take weeks or months to settle. Before committing, ask:</p>
 <ul>
-  <li>Is the new name clearly better for the business, not just slightly nicer?</li>
-  <li>Can you keep the old domain registered for years, ideally for good? If it expires, every redirect breaks and someone else can buy it.</li>
-  <li>Can you avoid a redesign or platform change at the same time? Changing one big thing at a time makes problems far easier to diagnose.</li>
+<li>Is the new name clearly better for the business, not just slightly nicer?</li>
+<li>Can you keep the old domain registered for years, ideally for good? If it expires, every redirect breaks and someone else can buy it.</li>
+<li>Can you avoid a redesign or platform change at the same time? Changing one big thing at a time makes problems far easier to diagnose.</li>
 </ul>
-<p>Pick a quieter season too. Moving a gifting store's domain just before Diwali is asking for trouble.</p>
+<p>Pick a quieter season too. Moving a gifting store's domain just before Diwali is asking for trouble. If you are weighing a .in against a .com, read <a href="/blog/in-vs-com-domain/">.in vs .com domains</a> first, and if the move is part of a wider rebrand, see <a href="/blog/rebranding-your-website/">what to update on your website after a rebrand</a>.</p>
 
-<p>If the new domain is part of a wider rebrand, with a new name, logo and messaging, see <a href="/blog/rebranding-your-website/">what to update on your website after a rebrand</a>.</p>
+<h2>Common domain change scenarios</h2>
+<table>
+<thead><tr><th>Scenario</th><th>Main risk</th><th>Key step</th></tr></thead>
+<tbody>
+<tr><td>Rebrand to a new name</td><td>Losing brand searches for the old name</td><td>Mention the old name on the About page for a while</td></tr>
+<tr><td>.in to .com (or the reverse)</td><td>Partial redirects, mixed links</td><td>Keep identical paths and redirect the whole domain</td></tr>
+<tr><td>Hyphenated or long name to a short one</td><td>Printed material still pointing to the old one</td><td>Keep the old domain permanently</td></tr>
+<tr><td>Merging two websites</td><td>Pages with no matching destination</td><td>Map each old page to the closest relevant page</td></tr>
+<tr><td>Domain change plus new platform</td><td>Too many changes at once</td><td>Do them in separate stages if possible</td></tr>
+</tbody>
+</table>
 
 <h2>Plan before you move</h2>
 <ol>
-  <li><strong>List every URL</strong> on the old site: pages, posts, products, categories and any PDFs that get traffic. Use your XML sitemap, a crawler and Search Console's Performance report.</li>
-  <li><strong>Record benchmarks:</strong> organic clicks, top pages, key search terms and monthly enquiries, so you have something to compare against after the move.</li>
-  <li><strong>Export your top backlinks</strong> from Search Console's Links report. You'll ask the most valuable sites to update them later.</li>
-  <li><strong>Prepare the new domain:</strong> hosting, an SSL certificate and a copy of the site, kept out of search results until launch.</li>
-  <li><strong>Plan your email:</strong> if your business email uses the old domain, decide whether to move it, forward it or run both for a while, and set up SPF, DKIM and DMARC records for the new domain.</li>
+<li><strong>List every URL</strong> on the old site: pages, posts, products, categories and any PDFs that get traffic. Use your XML sitemap, a crawler and Search Console's Performance report.</li>
+<li><strong>Record benchmarks:</strong> organic clicks, top pages, key search terms and monthly enquiries.</li>
+<li><strong>Export your top backlinks</strong> from Search Console's Links report; you will ask the most valuable sites to update them later.</li>
+<li><strong>Prepare the new domain:</strong> hosting, an SSL certificate and a copy of the site, kept out of search results until launch.</li>
+<li><strong>Plan your email:</strong> if business email uses the old domain, decide whether to move it, forward it or run both for a while, and set up SPF, DKIM and DMARC for the new domain.</li>
 </ol>
-
-<p>Redesigning the site at the same time as the move? Also follow the steps to <a href="/blog/redesign-website-without-losing-rankings/">redesign a website without losing rankings</a>, so titles, content and key pages carry over intact.</p>
+<p>Redesigning at the same time? Also follow the steps to <a href="/blog/redesign-website-without-losing-rankings/">redesign a website without losing rankings</a>, so titles, content and key pages carry over intact.</p>
 
 <h2>Set up page-by-page 301 redirects</h2>
-<p>Redirects are what carry your rankings and links across. Each old URL should permanently (301) redirect to its equivalent page on the new domain.</p>
+<p>Redirects carry your rankings and links across. Each old URL should permanently (301) redirect to its equivalent page on the new domain.</p>
 <ul>
-  <li><strong>Map one-to-one:</strong> the old /services/ac-repair/ page should go to the new /services/ac-repair/ page, not to the new homepage. Sending everything to the homepage loses much of the value.</li>
-  <li><strong>Keep the same paths if you can.</strong> Then a single server-level rule can redirect the whole domain while preserving each path.</li>
-  <li><strong>Avoid chains:</strong> the http, https, www and non-www versions of the old domain should each go straight to the final new URL in one hop.</li>
-  <li><strong>Keep the old domain pointing at a server</strong> that serves the redirects, and leave them in place for at least a year, ideally permanently.</li>
+<li><strong>Map one-to-one:</strong> the old /services/ac-repair/ page should go to the new /services/ac-repair/ page, not to the new homepage. Sending everything to the homepage loses much of the value.</li>
+<li><strong>Keep the same paths if you can.</strong> Then a single server-level rule can redirect the whole domain while preserving each path.</li>
+<li><strong>Avoid chains:</strong> the http, https, www and non-www versions of the old domain should each go straight to the final new URL in one hop.</li>
+<li><strong>Keep the old domain</strong> pointing at a server that serves the redirects, and leave them in place for at least a year, ideally permanently.</li>
 </ul>
 <p>For when to use permanent and temporary redirects, see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
 
 <h2>Update the new site itself</h2>
 <ul>
-  <li>Change WordPress's site address settings and run a search-and-replace on the database, using a tool that handles WordPress's serialised data safely, so internal links, images and settings use the new domain</li>
-  <li>Check canonical tags point to the new domain, not the old one</li>
-  <li>Remove any noindex setting or password protection left over from preparation</li>
-  <li>Generate a fresh XML sitemap on the new domain and make sure robots.txt isn't blocking anything important</li>
-  <li>Update structured data, such as your business name, URL and logo, if the brand has changed</li>
-  <li>Test forms, payments, email notifications and tracking on the new domain</li>
+<li>Change WordPress's site address settings and run a search-and-replace on the database with a tool that handles serialised data safely, so internal links, images and settings use the new domain.</li>
+<li>Check canonical tags point to the new domain, not the old one.</li>
+<li>Remove any noindex setting or password protection left over from preparation.</li>
+<li>Generate a fresh XML sitemap and make sure robots.txt is not blocking anything important.</li>
+<li>Update structured data, such as business name, URL and logo, if the brand has changed.</li>
+<li>Test forms, payments, email notifications and tracking on the new domain.</li>
 </ul>
 
-<h2>Tell Google with the Change of Address tool</h2>
+<h2>How to change domain name without losing SEO in Search Console</h2>
 <p>Google Search Console has a Change of Address tool built for this situation. The rough sequence:</p>
 <ol>
-  <li>Verify the new domain in Search Console using the same Google account that owns the old property.</li>
-  <li>Make sure the 301 redirects are live, as the tool checks that the old site redirects to the new one.</li>
-  <li>In the old property's settings, open Change of Address, choose the new property and submit.</li>
-  <li>Submit the new XML sitemap in the new property.</li>
+<li>Verify the new domain in Search Console using the same Google account that owns the old property.</li>
+<li>Make sure the 301 redirects are live, as the tool checks that the old site redirects to the new one.</li>
+<li>In the old property's settings, open Change of Address, choose the new property and submit.</li>
+<li>Submit the new XML sitemap in the new property.</li>
 </ol>
-<p>The tool is meant for moving a whole site from one domain to another, not for switching to HTTPS or moving individual pages. It supports your redirects; it doesn't replace them. Check Google's current documentation when you do it, as the steps can change.</p>
+<p>The tool is meant for moving a whole site from one domain to another, not for switching to HTTPS or moving individual pages. It supports your redirects; it does not replace them. Check Google's current documentation when you do it, as the steps can change. Keep the old property verified so you can watch it wind down.</p>
+
+<h2>Shopify and WooCommerce stores</h2>
+<p>On Shopify, you add the new domain in the admin, set it as primary, and Shopify redirects the other connected domains to it, keeping paths the same. Keep the old domain connected to the store rather than removing it, so those redirects continue. On WooCommerce, the steps above apply, plus extra checks: payment gateway webhooks and callback URLs, the domain approved in your Razorpay or other gateway account, shipping and invoice plugins, and Google Merchant Center product feeds. Place a test order end to end before announcing the change.</p>
+
+<h2>Telling customers about the new domain</h2>
+<p>Redirects handle search engines, but people notice a new address too, and some will wonder whether a new domain is a scam, especially if they receive emails from it. A short, clear announcement prevents confusion:</p>
+<ul>
+<li>A banner or notice on the new site for a few weeks: &quot;We have moved to [new domain]. Same team, same services.&quot;</li>
+<li>An email or WhatsApp broadcast to existing customers explaining the change, sent from a known number or address.</li>
+<li>A line on the About page mentioning the old name or domain, so people searching for it understand the link.</li>
+<li>An auto-reply or forwarding on the old email addresses for several months, so no enquiry gets lost.</li>
+<li>A note to your accountant, bank and payment gateway if invoices or receipts show the website address.</li>
+</ul>
+<p>For online stores, warn customers that order emails will now come from the new domain, so they are not marked as spam or ignored. Keep both domains' email authentication records in place while messages from the old domain are still being sent.</p>
 
 <h2>Update links and profiles everywhere</h2>
-<p>Redirects catch old links, but it's better when the important ones point straight to the new domain.</p>
 <ul>
-  <li>Your Google Business Profile website and appointment links</li>
-  <li>Facebook, Instagram, LinkedIn, YouTube and WhatsApp Business profiles</li>
-  <li>Business directories and listings such as Justdial, IndiaMART and industry associations</li>
-  <li>Your most valuable backlinks from partners, suppliers and press, with a polite request to update them</li>
-  <li>Final URLs in Google Ads and Meta ads, and the website set in GA4, Merchant Center and your payment gateway account (which may need to approve the new domain)</li>
-  <li>Email signatures, invoices, letterheads, visiting cards, vehicle branding and printed QR codes</li>
+<li>Your Google Business Profile website and appointment links.</li>
+<li>Facebook, Instagram, LinkedIn, YouTube and WhatsApp Business profiles.</li>
+<li>Directories and listings such as Justdial, IndiaMART and industry associations.</li>
+<li>Your most valuable backlinks from partners, suppliers and press, with a polite request to update them.</li>
+<li>Final URLs in Google Ads and Meta ads, the website set in GA4 and Merchant Center, and your payment gateway account.</li>
+<li>Email signatures, invoices, letterheads, visiting cards, vehicle branding and printed QR codes.</li>
 </ul>
-<p>Printed QR codes are easy to forget; they keep working only as long as the old domain keeps redirecting. For keeping listings consistent, see <a href="/blog/business-directories-citations-india/">business directories and citations in India</a>.</p>
+<p>Printed QR codes keep working only as long as the old domain keeps redirecting. For keeping listings consistent, see <a href="/blog/business-directories-citations-india/">business directories and citations in India</a>.</p>
 
 <h2>Monitor after the move</h2>
 <ul>
-  <li><strong>First week:</strong> crawl a list of old URLs and confirm each one redirects in a single hop to the right page. Check the new property's Pages report for errors.</li>
-  <li><strong>First few months:</strong> watch impressions and clicks rise on the new domain as they fall on the old one. Some dip is normal; a steep, lasting drop usually points to missing or incorrect redirects.</li>
-  <li><strong>Enquiries:</strong> compare form submissions, calls and WhatsApp clicks against your benchmark, not just traffic.</li>
-  <li><strong>404 errors:</strong> fix any old URLs that land on "page not found" by adding the missing redirects.</li>
+<li><strong>First week:</strong> crawl a list of old URLs and confirm each redirects in a single hop to the right page. Check the new property's Pages report for errors.</li>
+<li><strong>First few months:</strong> watch impressions and clicks rise on the new domain as they fall on the old one. Some dip is normal.</li>
+<li><strong>Enquiries:</strong> compare form submissions, calls and WhatsApp clicks against your benchmark, not just traffic.</li>
+<li><strong>404 errors:</strong> fix any old URLs that land on &quot;page not found&quot; by adding the missing redirects.</li>
 </ul>
 <p>If traffic falls sharply and stays down, work through this <a href="/blog/website-traffic-dropped/">traffic drop checklist</a>.</p>
 
-<p>Want the move handled for you, redirects and all? See <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<h2>FAQs</h2>
+<h3>How do I change my domain name without losing SEO?</h3>
+<p>Keep the old domain, add one-to-one 301 redirects, update the new site's settings and canonicals, use Search Console's Change of Address tool, and update profiles and important backlinks.</p>
+<h3>How long does it take for rankings to recover after a domain change?</h3>
+<p>It varies. Many sites settle within weeks to a few months if redirects are correct; there is no guaranteed timeline.</p>
+<h3>Can I let the old domain expire after moving?</h3>
+<p>No. If it expires, all redirects stop and someone else could buy it. Keep renewing it, ideally permanently.</p>
+<h3>Should I redirect all old pages to the new homepage?</h3>
+<p>No. Redirect each old page to its matching new page; homepage-only redirects lose much of the value.</p>
+<h3>Does changing from .in to .com affect Indian rankings?</h3>
+<p>The extension itself matters less than a clean move. With proper redirects and Search Console set up, an Indian business can rank on either.</p>
+
+<p>Want the move handled for you, redirects and all? See <a href="/wordpress-migration/">WordPress migration</a> or <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off domain change.</p>
 `,
   },
   {
@@ -49518,95 +49644,127 @@ Right:
   },
   {
     slug: 'website-accessibility-audit-checklist',
-    title: 'Website Accessibility Audit Checklist for Business Owners',
-    description: 'An accessibility audit you can run yourself: keyboard, colour contrast, alt text, forms, headings, zoom and screen reader checks, and what to fix first.',
+    seoTitle: 'Website Accessibility Audit Checklist (DIY, WCAG AA)',
+    title: 'Website Accessibility Audit Checklist: A DIY Check for Business Owners in India',
+    description: 'A website accessibility audit checklist to run yourself: keyboard, contrast, zoom, alt text, forms, headings and screen readers, and what to fix first.',
     date: '2026-09-30',
+    updated: '2026-10-28',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign'],
     body: `
-<p>If you've read the <a href="/blog/website-accessibility-basics/">website accessibility basics</a>, you know what an accessible site looks like. This guide is the next step: a hands-on audit you can run yourself in an afternoon, without technical skills, to find where your own website falls short and what to fix first.</p>
+<p>A website accessibility audit checklist lets you test your own site in an afternoon: run an automated scan, then check keyboard use, colour contrast, zoom, images, forms, headings and a quick screen reader pass on your key pages. Record each problem with who it affects, and fix anything that stops someone completing a task first.</p>
+<p>If you have read <a href="/blog/website-accessibility-basics/">website accessibility basics</a>, you know what an accessible site looks like. This guide is the hands-on next step, written for business owners rather than developers.</p>
+
+<h2>Why an accessibility audit is worth an afternoon</h2>
+<p>Accessible sites work better for everyone: people with low vision or colour blindness, people using only a keyboard, older customers, and anyone using a phone in bright sunlight or on a slow connection. Many of the same fixes also help SEO, because clear headings, descriptive links and alt text help search engines understand pages too.</p>
+<p>In India, accessibility requirements apply most clearly to government websites, while the Rights of Persons with Disabilities Act, 2016 covers accessibility more broadly. If you are unsure what applies to your business, check with a lawyer. Businesses that sell to overseas clients or large companies may also be asked about accessibility in vendor questionnaires.</p>
 
 <h2>Before you start</h2>
 <ul>
-  <li><strong>Pick five to eight key pages:</strong> the homepage, a main service or product page, the contact page, a blog post, and any page with a form, booking or checkout</li>
-  <li><strong>Make a simple record:</strong> a spreadsheet with columns for page, problem, who it affects and priority</li>
-  <li><strong>Know the benchmark:</strong> the Web Content Accessibility Guidelines (WCAG) at level AA are what most organisations aim for. You don't need to read them all; the checks below cover the most common problems</li>
-  <li><strong>Run an automated scan first</strong> with Lighthouse (in Chrome DevTools) or a browser extension such as WAVE or axe DevTools, and note what it flags. Automated tools catch only some issues, so the manual checks matter more</li>
+<li><strong>Pick five to eight key pages:</strong> the homepage, a main service or product page, the contact page, a blog post, and any page with a form, booking or checkout.</li>
+<li><strong>Make a simple record:</strong> a spreadsheet with columns for page, problem, who it affects and priority.</li>
+<li><strong>Know the benchmark:</strong> the Web Content Accessibility Guidelines (WCAG) at level AA are what most organisations aim for. The checks below cover the most common problems.</li>
+<li><strong>Run an automated scan first</strong> with Lighthouse in Chrome DevTools or a browser extension such as WAVE or axe DevTools. Automated tools catch only some issues, so the manual checks matter more.</li>
 </ul>
-<p>In India, accessibility requirements apply most clearly to government websites, while the Rights of Persons with Disabilities Act, 2016 covers accessibility more broadly. If you're unsure what applies to your business, check with a lawyer.</p>
 
 <h2>1. Keyboard check</h2>
-<p>Put the mouse aside and use only the keyboard: <strong>Tab</strong> to move forward, <strong>Shift+Tab</strong> to move back, <strong>Enter</strong> to follow links and <strong>Space</strong> to press buttons or tick boxes.</p>
+<p>Put the mouse aside and use only the keyboard: Tab to move forward, Shift+Tab to move back, Enter to follow links and Space to press buttons or tick boxes.</p>
 <ul>
-  <li>Can you always see where you are? Each link and button should show a clear focus outline</li>
-  <li>Does focus move in a logical order, top to bottom and left to right?</li>
-  <li>Can you open and use the menu, including dropdowns and the mobile menu?</li>
-  <li>Can you close pop-ups, cookie banners and chat widgets with <strong>Esc</strong> or a reachable close button, without getting trapped?</li>
-  <li>Can you complete the contact form, booking or checkout from start to finish?</li>
-  <li>Is there a "Skip to content" link at the first Tab stop, so keyboard users don't tab through the whole menu on every page?</li>
+<li>Can you always see where you are? Each link and button should show a clear focus outline.</li>
+<li>Does focus move in a logical order, top to bottom and left to right?</li>
+<li>Can you open and use the menu, including dropdowns and the mobile menu?</li>
+<li>Can you close pop-ups, cookie banners and chat widgets with Esc or a reachable close button, without getting trapped?</li>
+<li>Can you complete the contact form, booking or checkout from start to finish?</li>
+<li>Is there a &quot;Skip to content&quot; link at the first Tab stop?</li>
 </ul>
 
 <h2>2. Colour, contrast and zoom</h2>
 <ul>
-  <li>Check body text, buttons, links, placeholder text and text over images with a contrast checker. WCAG AA asks for a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text</li>
-  <li>Look out for light grey text, white text on pale brand colours, and text over busy photos or sliders</li>
-  <li>Make sure colour isn't the only signal: links in paragraphs should be underlined, and form errors should include text, not just a red border</li>
-  <li>Zoom your browser to 200%: does text grow without being cut off or overlapping?</li>
-  <li>Zoom to 400% on a desktop, which is roughly the width of a small phone: does content reflow into one column without sideways scrolling?</li>
-  <li>On your phone, can you pinch to zoom? Some themes disable it, which is a real problem for people with low vision</li>
+<li>Check body text, buttons, links, placeholder text and text over images with a contrast checker. WCAG AA asks for at least 4.5:1 for normal text and 3:1 for large text.</li>
+<li>Look out for light grey text, white text on pale brand colours, and text over busy photos or sliders.</li>
+<li>Make sure colour is not the only signal: links in paragraphs should be underlined, and form errors should include text, not just a red border.</li>
+<li>Zoom the browser to 200%: does text grow without being cut off or overlapping?</li>
+<li>Zoom to 400% on a desktop: does content reflow into one column without sideways scrolling?</li>
+<li>On your phone, can you pinch to zoom? Some themes disable it.</li>
 </ul>
+<p>Picking accessible brand colours early is easier than fixing them later; see <a href="/blog/choose-website-colours-fonts/">choosing website colours and fonts</a>.</p>
 
 <h2>3. Images and alt text</h2>
 <ul>
-  <li>Meaningful images, such as products, team photos, diagrams and before-and-after results, need alt text describing what they show</li>
-  <li>Purely decorative images should have empty alt text so screen readers skip them</li>
-  <li>Images containing text, like offer banners, need the same words in the alt text or, better, as real text on the page</li>
-  <li>Icon-only buttons, such as WhatsApp, search or menu icons, need an accessible label</li>
+<li>Meaningful images, such as products, team photos and diagrams, need alt text describing what they show.</li>
+<li>Purely decorative images should have empty alt text so screen readers skip them.</li>
+<li>Images containing text, like offer banners, need the same words in the alt text or, better, as real text on the page.</li>
+<li>Icon-only buttons, such as WhatsApp, search or menu icons, need an accessible label.</li>
 </ul>
-<p>In WordPress you can add or fix alt text in the Media Library, and Lighthouse and WAVE both flag images that have none.</p>
+<p>In WordPress you can fix alt text in the Media Library. The <a href="/blog/image-seo-guide/">image SEO guide</a> explains how to write alt text that helps both people and search.</p>
 
 <h2>4. Forms</h2>
 <ul>
-  <li>Every field has a visible label that stays in place, not just placeholder text that vanishes when you start typing</li>
-  <li>Required fields are marked in words or with a clear symbol explained on the form, not only with colour</li>
-  <li>Submit the form with mistakes: do error messages say what went wrong and how to fix it, next to the right field?</li>
-  <li>After a successful submission, is there a clear confirmation message or thank-you page?</li>
-  <li>If you use a CAPTCHA, is there an option that doesn't depend only on reading distorted images?</li>
+<li>Every field has a visible label that stays in place, not just placeholder text that vanishes when you type.</li>
+<li>Required fields are marked in words or with a clear symbol, not only with colour.</li>
+<li>Submit the form with mistakes: do error messages say what went wrong, next to the right field?</li>
+<li>After submitting, is there a clear confirmation message or thank-you page?</li>
+<li>If you use a CAPTCHA, is there an option that does not depend only on reading distorted images?</li>
 </ul>
 <p>Your contact form is often the most important part of the site; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms don't get enquiries</a> for more fixes.</p>
 
 <h2>5. Headings, links and page structure</h2>
 <ul>
-  <li>Each page has one main heading (H1) that says what the page is about</li>
-  <li>Sections use H2, sub-sections H3, in order, rather than headings picked for their size</li>
-  <li>Text that looks like a heading is marked up as one, and headings aren't used just to make text big</li>
-  <li>Link text makes sense on its own ("View AC service prices", not "click here")</li>
-  <li>The page language is set correctly, especially on Hindi or regional-language pages</li>
+<li>Each page has one main heading (H1) that says what the page is about.</li>
+<li>Sections use H2 and sub-sections H3, in order, rather than headings picked for their size.</li>
+<li>Link text makes sense on its own, such as &quot;View AC service prices&quot; rather than &quot;click here&quot;.</li>
+<li>The page language is set correctly, especially on Hindi or regional-language pages.</li>
 </ul>
-<p>The WAVE extension shows a page's heading structure at a glance, which makes skipped or misused headings easy to spot.</p>
+<p>The WAVE extension shows a page's heading structure at a glance, which makes skipped headings easy to spot.</p>
 
 <h2>6. Screen reader basics</h2>
-<p>You don't need to become an expert, but ten minutes with a screen reader is eye-opening. <strong>NVDA</strong> is a free download for Windows, <strong>VoiceOver</strong> is built into Macs and iPhones, and <strong>TalkBack</strong> comes with Android phones.</p>
+<p>Ten minutes with a screen reader is eye-opening. NVDA is a free download for Windows, VoiceOver is built into Macs and iPhones, and TalkBack comes with Android phones, which is what most Indian visitors use.</p>
 <ul>
-  <li>Listen to your homepage: does it start with something meaningful, or a string of unlabelled links and icons?</li>
-  <li>Jump between headings (screen readers have a shortcut for this): do they outline the page sensibly?</li>
-  <li>Do buttons announce what they do, such as "Book appointment", rather than just "button"?</li>
-  <li>Do images read out useful descriptions, while decorative ones stay silent?</li>
-  <li>Can you fill in and submit your contact form?</li>
+<li>Does the homepage start with something meaningful, or a string of unlabelled links and icons?</li>
+<li>Jump between headings: do they outline the page sensibly?</li>
+<li>Do buttons announce what they do, such as &quot;Book appointment&quot;, rather than just &quot;button&quot;?</li>
+<li>Can you fill in and submit your contact form?</li>
 </ul>
+
+<h2>7. Media, motion and time limits</h2>
+<ul>
+<li>Videos with speech have captions, and important videos have a short text summary.</li>
+<li>Sliders and animations can be paused, and nothing flashes rapidly.</li>
+<li>Audio does not autoplay.</li>
+<li>Time-limited steps, such as OTP screens or booking holds, give enough time or a way to extend it.</li>
+</ul>
+
+<h2>8. Mobile and touch checks</h2>
+<p>Most Indian visitors arrive on a phone, so repeat the key checks on one. Are tap targets such as buttons, menu links and form fields large enough and spaced apart, so a thumb does not hit the wrong one? Does the sticky header, WhatsApp button or cookie bar cover content or form fields when the keyboard opens? Can you rotate the phone to landscape without the layout breaking? Are phone numbers and emails tappable links? Is text readable without zooming at normal size, typically around 16px for body text? Test with your phone font size set larger in settings, because many older users do this, and check that text grows rather than overflowing its boxes.</p>
+<p>Also check pages in Hindi or regional scripts, if you have them. Some fonts render conjuncts poorly at small sizes, and fallback fonts can change line height and push buttons out of place. The guide to <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts</a> covers this.</p>
+
+<h2>Store and checkout checks for WooCommerce and Shopify</h2>
+<p>Online stores need a few extra checks: product variation selectors (size, colour) should work by keyboard and announce the chosen option; out-of-stock states should be shown in text, not just greyed out; quantity buttons need labels; and the checkout, including payment gateway pop-ups for UPI or cards, should be completed once by keyboard. On Shopify, many themes are built with accessibility in mind, but apps and custom sections can add problems, so test after installing them.</p>
 
 <h2>Record, prioritise and fix</h2>
 <table>
-  <thead><tr><th>Priority</th><th>Examples</th></tr></thead>
-  <tbody>
-    <tr><td>Fix first</td><td>Anything that blocks a task: forms you can't submit by keyboard, pop-ups that trap focus, unlabelled fields, unreadable buttons</td></tr>
-    <tr><td>Fix soon</td><td>Missing alt text, broken heading order, no visible focus outline, zoom disabled</td></tr>
-    <tr><td>Improve over time</td><td>Clearer link text, captions for older videos, simpler wording</td></tr>
-  </tbody>
+<thead><tr><th>Priority</th><th>Examples</th><th>Who usually fixes it</th></tr></thead>
+<tbody>
+<tr><td>Fix first</td><td>Forms you cannot submit by keyboard, pop-ups that trap focus, unlabelled fields, unreadable buttons</td><td>Developer</td></tr>
+<tr><td>Fix soon</td><td>Missing alt text, broken heading order, no visible focus outline, zoom disabled</td><td>Mix of you and a developer</td></tr>
+<tr><td>Improve over time</td><td>Clearer link text, captions for older videos, simpler wording</td><td>You or your content team</td></tr>
+</tbody>
 </table>
-<p>Many fixes are content edits you can make yourself, like alt text, headings and link wording. Others, such as focus styles, menus and theme colours, usually need a developer. Re-run the audit after major changes and every six months or so. If many of your customers are older, add the checks in <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>
+<p>Re-run the audit after major changes and every six months or so. Avoid one-click &quot;accessibility overlay&quot; widgets as a replacement for real fixes; they rarely solve the underlying problems. If many of your customers are older, add the checks in <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>
 
-<p>Need help fixing what your audit finds, or want accessibility built in from the start? See <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/website-redesign/">website redesign</a>.</p>
+<h2>FAQs</h2>
+<h3>What should a website accessibility audit checklist include?</h3>
+<p>An automated scan, then manual checks for keyboard use, contrast and zoom, images and alt text, forms, headings and links, a screen reader pass, media and time limits, and checkout if you sell online.</p>
+<h3>Can I do an accessibility audit without technical skills?</h3>
+<p>Yes. Most checks only need a keyboard, a browser extension and a phone. A developer helps with fixes to themes, menus and focus styles.</p>
+<h3>Which WCAG level should a business website aim for?</h3>
+<p>Most organisations aim for WCAG level AA, which covers the most common barriers without being impractical.</p>
+<h3>Do accessibility overlay plugins make a site compliant?</h3>
+<p>No. They may change how a site looks but rarely fix underlying problems like unlabelled forms or keyboard traps. Fix the site itself.</p>
+<h3>How often should I audit my website for accessibility?</h3>
+<p>After any redesign or major feature, and roughly every six months, plus a quick check whenever you add new forms or pop-ups.</p>
+
+<p>Need help fixing what your audit finds, or want accessibility built in from the start? See <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/website-redesign/">website redesign</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for specific fixes.</p>
 `,
   },
   {
@@ -52538,170 +52696,244 @@ Right:
   },
   {
     slug: 'website-for-franchise-brands',
-    seoTitle: 'Websites for Franchise Brands: Recruit the Right Partners',
-    title: 'Websites for Franchise Brands: Model Pages, Applications and Outlet Locators',
-    description: 'How franchise brands can attract serious partners online: clear model pages, honest investment details, qualifying forms, outlet locators and disclosures.',
+    seoTitle: 'Website for Franchise Brands in India: Recruit Partners',
+    title: 'Website for Franchise Brands: Model Pages, Applications, Outlet Locators and Disclosures',
+    description: 'How to plan a website for franchise brands in India: clear model pages, honest investment details, qualifying forms, outlet locators and disclosures.',
     date: '2026-10-01',
+    updated: '2026-10-28',
     category: 'Industries',
     related: ['landing-page-design', 'website-for-startups'],
     body: `
-<p>A franchise brand's website has two jobs. Customers want your products, offers and nearest outlet. Prospective franchise partners, often people investing their savings or adding a new business, want to understand exactly what they would be signing up for. If the franchise section is a single "Contact us for franchise" banner, serious investors move on, and your team spends its time on enquiries that were never a good fit.</p>
-
-<p>This guide covers consumer franchise brands: food and beverage, retail, education, salons, fitness and services. If you run a PCD pharma franchise company appointing distributors, see <a href="/blog/website-for-pharma-franchise-companies/">websites for PCD pharma franchise companies</a> instead.</p>
+<p>A website for franchise brands has to serve two audiences: customers looking for products and the nearest outlet, and prospective partners deciding whether to invest. The franchise section should explain each format, break down costs honestly, describe support, qualify applicants with a short form and show where you already operate. A single &quot;Contact us for franchise&quot; banner sends serious investors elsewhere.</p>
+<p>This guide covers consumer franchise brands in India: food and beverage, retail, education, salons, fitness and services. If you run a PCD pharma franchise company appointing distributors, see <a href="/blog/website-for-pharma-franchise-companies/">websites for PCD pharma franchise companies</a> instead.</p>
 
 <h2>Two audiences, one website</h2>
 <ul>
-  <li><strong>Customers</strong> need the brand story, products or services, offers and an outlet locator</li>
-  <li><strong>Prospective partners</strong> need the franchise model, investment, support, requirements and process</li>
-  <li><strong>Existing franchisees</strong> may need a private area for manuals, training material and marketing creatives</li>
+<li><strong>Customers</strong> need the brand story, products or services, offers and an outlet locator.</li>
+<li><strong>Prospective partners</strong> need the franchise model, investment, support, requirements and process.</li>
+<li><strong>Existing franchisees</strong> may need a private area for manuals, training material and marketing creatives.</li>
 </ul>
-<p>Put a clear "Franchise" or "Own a franchise" link in the main menu and footer, leading to its own section. Customer pages stay focused on customers, and the franchise section can speak directly to investors without cluttering the rest of the site.</p>
+<p>Put a clear &quot;Franchise&quot; or &quot;Own a franchise&quot; link in the main menu and footer, leading to its own section. Customer pages stay focused on customers, and the franchise section speaks directly to investors.</p>
+
+<h2>Website for franchise brands: the franchise section structure</h2>
+<table>
+<thead><tr><th>Page</th><th>What it answers</th></tr></thead>
+<tbody>
+<tr><td>Franchise overview</td><td>Why partner with the brand, formats available, cities open, the process</td></tr>
+<tr><td>Format pages</td><td>Space, partner role, staffing, territory, agreement basics for each format</td></tr>
+<tr><td>Investment and support</td><td>Cost breakdown, ongoing fees, training and support provided</td></tr>
+<tr><td>Process and timeline</td><td>Steps from application to launch</td></tr>
+<tr><td>Partner stories</td><td>Real franchisees, with permission and without income claims</td></tr>
+<tr><td>FAQs</td><td>Common questions from investors</td></tr>
+<tr><td>Apply</td><td>Qualifying application form</td></tr>
+<tr><td>Fake offers notice</td><td>Official channels and how payments are collected</td></tr>
+</tbody>
+</table>
 
 <h2>Franchise model pages that explain how it works</h2>
 <p>If you offer more than one format, such as a kiosk, a small outlet, a full store or a master franchise for a region, give each its own page. For each format, cover:</p>
-<table>
-  <thead>
-    <tr><th>Topic</th><th>What to explain</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Space and location</td><td>Area range, frontage, and suitable locations such as high streets, malls or residential markets</td></tr>
-    <tr><td>Partner's role</td><td>Whether the partner runs the outlet day to day or appoints a manager, and how much time it takes</td></tr>
-    <tr><td>Staffing</td><td>How many people a typical outlet needs, and who trains them</td></tr>
-    <tr><td>Territory</td><td>Whether any area exclusivity is offered, and on what basis</td></tr>
-    <tr><td>Agreement</td><td>Term, renewal and the main obligations on both sides, in plain language</td></tr>
-  </tbody>
-</table>
-<p>Real photos of existing outlets, shared with the franchisees' agreement, show what a partner is actually buying into far better than design renders.</p>
+<ul>
+<li><strong>Space and location:</strong> area range, frontage and suitable locations such as high streets, malls or residential markets.</li>
+<li><strong>Partner's role:</strong> whether the partner runs the outlet day to day or appoints a manager, and how much time it takes.</li>
+<li><strong>Staffing:</strong> how many people a typical outlet needs, and who trains them.</li>
+<li><strong>Territory:</strong> whether any area exclusivity is offered, and on what basis.</li>
+<li><strong>Agreement:</strong> term, renewal and the main obligations on both sides, in plain language.</li>
+</ul>
+<p>Real photos of existing outlets, shared with the franchisees' agreement, show what a partner is buying into far better than design renders.</p>
 
 <h2>Investment and support, explained without promising returns</h2>
-<p>Partners want to know the full cost before they apply. Break it down rather than quoting a single "starting from" figure that leaves out half the expenses:</p>
+<p>Partners want the full cost before they apply. Break it down rather than quoting one &quot;starting from&quot; figure that leaves out half the expenses:</p>
 <ul>
-  <li><strong>One-time costs:</strong> franchise fee, interiors and fit-out, equipment, initial stock, rent deposit and launch marketing</li>
-  <li><strong>Ongoing costs:</strong> royalty, marketing fund contribution, software or POS fees, and supply terms</li>
-  <li><strong>Working capital:</strong> money needed to run the outlet until it covers its own costs</li>
+<li><strong>One-time costs:</strong> franchise fee, interiors and fit-out, equipment, initial stock, rent deposit and launch marketing.</li>
+<li><strong>Ongoing costs:</strong> royalty, marketing fund contribution, software or POS fees, and supply terms.</li>
+<li><strong>Working capital:</strong> money needed to run the outlet until it covers its own costs.</li>
 </ul>
-<p>Keep figures current, label them as indicative and say that final terms are in the franchise agreement. Avoid phrases like "guaranteed returns", "payback in a few months" or "zero risk". Results depend on location, management and local demand, and promises like these mislead people and lead to disputes. If you share any performance information, make sure it is accurate, documented and explained in context, and have your lawyer review it first.</p>
-<p>Describe support specifically: initial and ongoing training, help with site selection, launch marketing, supply chain, operations audits and a named support contact or area manager. List only what you genuinely provide.</p>
+<p>Keep figures current, label them as indicative and say that final terms are in the franchise agreement. Avoid phrases like &quot;guaranteed returns&quot;, &quot;payback in a few months&quot; or &quot;zero risk&quot;. Results depend on location, management and local demand, and promises like these mislead people and lead to disputes. If you share any performance information, make sure it is accurate, documented and explained in context, and have your lawyer review it first.</p>
+<p>Describe support specifically: initial and ongoing training, help with site selection, launch marketing, supply chain, operations audits and a named area manager. List only what you genuinely provide.</p>
 
 <h2>Application forms that qualify serious partners</h2>
 <p>A good franchise form filters enquiries without scaring people off. A short <a href="/blog/multi-step-forms-lead-qualification/">multi-step form</a> can ask for:</p>
 <ol>
-  <li>Name, WhatsApp number and email</li>
-  <li>City or area of interest, and the preferred format</li>
-  <li>Whether they own, have shortlisted or are still looking for a property</li>
-  <li>The investment range they are comfortable with, in broad bands</li>
-  <li>Current occupation or business experience, and when they hope to start</li>
+<li>Name, WhatsApp number and email.</li>
+<li>City or area of interest, and the preferred format.</li>
+<li>Whether they own, have shortlisted or are still looking for a property.</li>
+<li>The investment range they are comfortable with, in broad bands.</li>
+<li>Current occupation or business experience, and when they hope to start.</li>
 </ol>
-<p>Don't ask for PAN, Aadhaar or bank statements on a public form. Collect only what you need at each stage, explain how you use the data, and link to your privacy policy; see <a href="/blog/dpdp-act-website-basics/">India's DPDP Act and your website</a>. After submission, show what happens next: an introductory call, a meeting, a visit to an existing outlet, location approval, the agreement, training and launch.</p>
+<p>Do not ask for PAN, Aadhaar or bank statements on a public form. Collect only what you need at each stage, explain how you use the data and link to your privacy policy; see <a href="/blog/dpdp-act-website-basics/">India's DPDP Act and your website</a>.</p>
+<p>After submission, show what happens next: an introductory call, a meeting, a visit to an existing outlet, location approval, the agreement, training and launch. Send applications to a CRM or shared sheet with the source recorded, and reply quickly; the guide on <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a> explains the setup.</p>
 
 <h2>An outlet locator that serves customers and prospects</h2>
 <p>A store locator lets customers search by city, area or pin code and find an outlet's address, hours, phone number and directions. Give each outlet its own page with photos, what is available there and a map that loads only when needed. The structure in <a href="/blog/multi-location-business-website/">websites for multi-location businesses</a> applies directly.</p>
 <ul>
-  <li>Make sure the brand keeps access to every outlet's Google Business Profile, even when a franchisee manages it day to day</li>
-  <li>Keep names, addresses and phone numbers consistent between the locator and each profile</li>
-  <li>Remove closed outlets promptly, because a customer who travels to a shut store blames the brand</li>
+<li>Make sure the brand keeps access to every outlet's Google Business Profile, even when a franchisee manages it day to day.</li>
+<li>Keep names, addresses and phone numbers consistent between the locator and each profile.</li>
+<li>Remove closed outlets promptly, because a customer who travels to a shut store blames the brand.</li>
 </ul>
-<p>The locator also reassures prospective partners by showing where you already operate. A separate "cities we're expanding into" page helps too, as long as you are genuinely appointing partners there.</p>
+<p>The locator also reassures prospective partners by showing where you already operate. A &quot;cities we are expanding into&quot; page helps too, as long as you are genuinely appointing partners there.</p>
 
 <h2>Disclosures and trust signals</h2>
 <ul>
-  <li>Your legal entity name, registered office, GST details and official contact channels</li>
-  <li>The number of outlets, kept up to date, ideally showing company-owned and franchised outlets separately</li>
-  <li>Founders and leadership team, with genuine backgrounds</li>
-  <li>Trademark status stated accurately, using the ® symbol only for marks that are actually registered</li>
-  <li>Franchisee stories only with permission, and without income claims</li>
-  <li>A notice about fake franchise offers, listing your official domain, email and phone number, and explaining how and when you collect payments</li>
+<li>Your legal entity name, registered office, GST details and official contact channels.</li>
+<li>The number of outlets, kept up to date, ideally showing company-owned and franchised outlets separately.</li>
+<li>Founders and leadership team, with genuine backgrounds.</li>
+<li>Trademark status stated accurately, using the registered symbol only for marks that are actually registered.</li>
+<li>Franchisee stories only with permission, and without income claims.</li>
+<li>A notice about fake franchise offers, listing your official domain, email and phone number, and explaining how and when you collect payments.</li>
 </ul>
-<p>Imitation websites offering franchises and dealerships of well-known brands do exist, so a clear warning protects both you and genuine applicants. India generally doesn't have a dedicated franchise disclosure law in the way some countries do, but contract and consumer protection rules still apply, and recruiting partners abroad may bring specific disclosure requirements. Have your lawyer review the franchise section; this is not legal advice.</p>
+<p>Imitation websites offering franchises and dealerships of well-known brands do exist, so a clear warning protects both you and genuine applicants. India generally does not have a dedicated franchise disclosure law in the way some countries do, but contract and consumer protection rules still apply. Have your lawyer review the franchise section; this is not legal advice.</p>
+
+<h2>A franchisee portal for existing partners</h2>
+<p>As the network grows, emailing manuals and creatives becomes messy. A simple password-protected area on the website can hold operations manuals, training videos, brand guidelines, festival campaign creatives and order forms for supplies. Use individual logins for each outlet rather than one shared password, so access can be removed when a partner leaves, and keep sensitive documents out of public search. A <a href="/blog/membership-website-wordpress/">membership setup in WordPress</a> can handle this without a separate system for smaller networks.</p>
+
+<h2>Handling franchise enquiries after they arrive</h2>
+<p>The website only starts the conversation. Many franchise brands lose good applicants simply because nobody called back for a week. Plan the follow-up before launching the section:</p>
+<ol>
+<li><strong>Instant acknowledgement:</strong> an automatic email and WhatsApp message confirming receipt and explaining the next step.</li>
+<li><strong>A named owner:</strong> one person or team responsible for franchise leads, with a target response time.</li>
+<li><strong>Simple stages:</strong> new, contacted, meeting fixed, outlet visit, location review, agreement, not a fit.</li>
+<li><strong>A downloadable brochure</strong> sent after the first call rather than on the public page, so you know who received it.</li>
+<li><strong>Polite closure</strong> for applicants who do not fit, such as a city you are not opening in yet, with an option to be contacted later.</li>
+</ol>
+<p>Review the sources of applications every month. If a campaign brings many enquiries but few outlet visits, the issue may be the ad message, the form questions or the follow-up speed rather than the website itself.</p>
 
 <h2>Landing pages, SEO and speed</h2>
 <ul>
-  <li>Make sure your official franchise page ranks for "{brand} franchise", ahead of portals and imitators</li>
-  <li>Create pages for searches like "{category} franchise in {city}" only where you are genuinely looking for partners</li>
-  <li>Use dedicated landing pages for franchise recruitment ads, with one format, one form and no distracting menus</li>
-  <li>Track applications as conversions, so you know which campaigns bring serious partners</li>
-  <li>Compress outlet photos and load maps on demand, so pages stay fast on mobile</li>
+<li>Make sure your official franchise page ranks for &quot;[brand] franchise&quot;, ahead of portals and imitators.</li>
+<li>Create pages for searches like &quot;[category] franchise in [city]&quot; only where you are genuinely looking for partners.</li>
+<li>Use dedicated landing pages for franchise recruitment ads, with one format, one form and no distracting menus.</li>
+<li>Track applications as conversions, so you know which campaigns bring serious partners; see <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking</a>.</li>
+<li>Compress outlet photos and load maps on demand, so pages stay fast on mobile.</li>
 </ul>
 
-<p>Planning a franchise section or a recruitment campaign? See <a href="/landing-page-design/">landing page design</a>, or <a href="/website-for-startups/">websites for startups</a> if you're building the brand's website from scratch.</p>
+<h2>FAQs</h2>
+<h3>What should a website for franchise brands include?</h3>
+<p>Customer pages and an outlet locator, plus a franchise section with format pages, an honest investment breakdown, support details, the process, a qualifying form and a fake-offers notice.</p>
+<h3>Should a franchise website show the investment amount?</h3>
+<p>Showing an indicative breakdown builds trust and filters enquiries. Keep it current and say final terms are in the agreement.</p>
+<h3>Can I show expected returns to prospective franchisees?</h3>
+<p>Avoid promised returns or payback periods. Any performance information should be accurate, documented, explained in context and reviewed by your lawyer.</p>
+<h3>How do I stop fake franchise websites using my brand?</h3>
+<p>Publish your official channels and payment process clearly, rank your own franchise page for your brand name, and take legal advice on imitators.</p>
+<h3>Should each franchise outlet have its own page?</h3>
+<p>Yes. Individual outlet pages with accurate details help customers, support local search and stay consistent with each Google Business Profile.</p>
+
+<p>Planning a franchise section or a recruitment campaign? See <a href="/landing-page-design/">landing page design</a>, or <a href="/website-for-startups/">websites for startups</a> if you are building the brand's website from scratch. I work with brands across the country; see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
     slug: 'website-for-tiles-sanitaryware-showrooms',
-    seoTitle: 'Websites for Tiles and Sanitaryware Showrooms',
-    title: 'Websites for Tiles, Sanitaryware and Bathroom Fittings Showrooms',
-    description: 'How tiles, sanitaryware and bathroom fittings showrooms can win more visits: catalogues by room and style, authorised brands, visualisers and builder enquiries.',
+    seoTitle: 'Website for Tiles Showroom: Catalogue, Visits, Trade Leads',
+    title: 'Website for Tiles and Sanitaryware Showrooms: Catalogues, Authorised Brands, Visits and Builder Enquiries',
+    description: 'How to plan a website for a tiles showroom in India: catalogues by room and size, authorised brands, visit bookings and builder or contractor enquiries.',
     date: '2026-10-01',
+    updated: '2026-10-28',
     category: 'Industries',
     related: ['wordpress-website-development', 'woocommerce-developer'],
     body: `
-<p>People buying tiles, sanitaryware and bathroom fittings rarely decide in one visit. They browse for weeks on their phones, share options with family, an architect or a contractor, and only then come to the showroom to see colours, finishes and sizes in person. A good showroom website supports that whole process: it helps people shortlist, makes the visit easy to plan, and gives builders a quick way to ask for quantities and rates.</p>
-<p>If you supply a wide mix of building materials such as cement, steel, plywood and paint, start with <a href="/blog/website-for-hardware-building-materials/">websites for hardware and building material suppliers</a>. This guide is for showrooms where display, selection and design advice are the business.</p>
+<p>A website for a tiles showroom should help buyers shortlist from home, plan a showroom visit and, for builders, send project quantities quickly. That means a catalogue organised by room, look and size, honest brand listings, real installation photos, a simple visit booking and a separate trade enquiry route, all on pages that stay fast despite hundreds of product images.</p>
+<p>People buying tiles, sanitaryware and bathroom fittings rarely decide in one visit. They browse on their phones for weeks, share options with family, an architect or a contractor, and only then come in to see colours and finishes in person. If you supply a wide mix of building materials, start with <a href="/blog/website-for-hardware-building-materials/">websites for hardware and building material suppliers</a>; this guide is for showrooms where display and selection are the business.</p>
 
 <h2>What showroom buyers are trying to work out</h2>
-<p>Your visitors usually fall into two groups. Homeowners renovating a bathroom or kitchen, or building a house, want ideas and reassurance. Builders, contractors, architects and interior designers want availability, rates and delivery. Both are asking similar questions:</p>
+<p>Visitors usually fall into two groups. Homeowners renovating a bathroom or kitchen, or building a house, want ideas and reassurance. Builders, contractors, architects and interior designers want availability, rates and delivery. Both ask similar questions:</p>
 <ul>
-  <li>Do you have the look I have in mind, in the size and finish I need?</li>
-  <li>Which brands do you stock, and are you an authorised dealer?</li>
-  <li>Roughly what price range am I looking at?</li>
-  <li>Can I see it displayed, and when are you open?</li>
-  <li>Can you supply enough for the whole project, from the same batch, and deliver to site?</li>
+<li>Do you have the look I have in mind, in the size and finish I need?</li>
+<li>Which brands do you stock, and are you an authorised dealer?</li>
+<li>How much will I need, and can you supply the whole project from the same batch?</li>
+<li>When can I visit, and is there parking?</li>
+<li>Do you deliver to site, and do you give GST invoices?</li>
 </ul>
-<p>Every section of your website should answer at least one of these.</p>
+
+<h2>Website for tiles showroom: the pages that matter</h2>
+<table>
+<thead><tr><th>Page</th><th>Main visitor</th><th>Job</th></tr></thead>
+<tbody>
+<tr><td>Catalogue by room and type</td><td>Homeowners</td><td>Shortlisting from home</td></tr>
+<tr><td>Product pages</td><td>Everyone</td><td>Size, finish, use, coverage per box</td></tr>
+<tr><td>Brands</td><td>Brand searchers</td><td>Show authorised brands with your own notes</td></tr>
+<tr><td>Inspiration gallery</td><td>Homeowners, designers</td><td>Real installations tagged with products</td></tr>
+<tr><td>Visit the showroom</td><td>Homeowners</td><td>Address, timings, parking, booking</td></tr>
+<tr><td>Project and bulk enquiries</td><td>Builders, contractors, architects</td><td>Quantities, BOQ upload, delivery</td></tr>
+<tr><td>Buying guides</td><td>Researchers</td><td>Answer common questions, bring in searches</td></tr>
+</tbody>
+</table>
 
 <h2>Organise the catalogue by room, style and size</h2>
-<p>Customers think in rooms and looks, not in your supplier's product codes. Let them browse in several ways:</p>
+<p>Customers think in rooms and looks, not supplier product codes. Let them browse in several ways:</p>
 <ul>
-  <li><strong>By room:</strong> bathroom, kitchen, living and bedroom floors, balcony and parking, outdoor and elevation walls</li>
-  <li><strong>By type and look:</strong> vitrified, ceramic, porcelain, GVT and PGVT, wood-look, marble-look, stone-look and anti-skid</li>
-  <li><strong>By size and finish:</strong> common sizes such as 600 x 600 mm or 600 x 1200 mm, and matt, satin or glossy finishes</li>
-  <li><strong>Sanitaryware and fittings:</strong> wall-hung and floor-mounted WCs, wash basins, faucets, showers, concealed cisterns and bath accessories</li>
+<li><strong>By room:</strong> bathroom, kitchen, living and bedroom floors, balcony and parking, outdoor and elevation walls.</li>
+<li><strong>By type and look:</strong> vitrified, ceramic, porcelain, GVT and PGVT, wood-look, marble-look, stone-look and anti-skid.</li>
+<li><strong>By size and finish:</strong> common sizes such as 600 x 600 mm or 600 x 1200 mm, and matt, satin or glossy finishes.</li>
+<li><strong>Sanitaryware and fittings:</strong> wall-hung and floor-mounted WCs, wash basins, faucets, showers, concealed cisterns and bath accessories.</li>
 </ul>
-<p>Each product page should show a close-up and, ideally, an installed photo, plus size, thickness, finish, where it can be used (floors, walls, wet areas, outdoors), pieces per box and the area each box covers. For WCs and fittings, add dimensions and practical details such as outlet type (S-trap or P-trap) or whether a concealed cistern is needed, with a note to confirm with their plumber.</p>
-<p>Be honest about colour. Screens vary and tile shades can differ between batches, so encourage visitors to check in the showroom before ordering large quantities.</p>
+<p>Each product page should show a close-up and, ideally, an installed photo, plus size, thickness, finish, where it can be used, pieces per box and the area each box covers. For WCs and fittings, add dimensions and practical details such as outlet type (S-trap or P-trap) or whether a concealed cistern is needed, with a note to confirm with their plumber.</p>
+<p>Be honest about colour. Screens vary and shades can differ between batches, so encourage visitors to check in the showroom before ordering large quantities.</p>
+
+<h2>Filters that work on a phone</h2>
+<p>A catalogue with hundreds of tiles is only useful if filtering is quick. Keep filters to what buyers actually choose by: room, type, size, finish, colour family and brand. Show the number of results, let people clear filters easily and keep the filter panel usable with one thumb. If the catalogue runs on WooCommerce, the guide to <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a> covers plugin choices and how to stop filter pages creating thousands of thin URLs in Google.</p>
+<p>A simple coverage calculator, where a visitor enters room dimensions and sees an approximate number of boxes with a wastage allowance, is popular and easy to add. Label results as estimates and suggest confirming with the contractor.</p>
 
 <h2>Show brands only where you are authorised</h2>
-<p>Brand names drive a lot of searches, so it's tempting to list every brand you can get hold of. Don't. List the brands you are actually authorised to sell, and if you can also source others on order, say so separately and plainly.</p>
+<p>Brand names drive many searches, so it is tempting to list every brand you can get. Don't. List the brands you are actually authorised to sell, and if you can source others on order, say so separately and plainly.</p>
 <ul>
-  <li>Ask your brand contacts about their rules for logo use, product photos and descriptions; many provide dealer assets</li>
-  <li>Never call yourself "official" or "exclusive" unless the brand has confirmed it in writing</li>
-  <li>Add your own notes to each range, such as what it suits and what customers like about it, rather than copying the brand catalogue word for word</li>
+<li>Ask your brand contacts about their rules for logo use, product photos and descriptions; many provide dealer assets.</li>
+<li>Never call yourself &quot;official&quot; or &quot;exclusive&quot; unless the brand has confirmed it in writing.</li>
+<li>Add your own notes to each range, such as what it suits and what customers like, rather than copying the brand catalogue word for word.</li>
 </ul>
-<p>Being exact here protects you, and it stops customers driving across town for a brand you don't carry.</p>
 
 <h2>Visualisers and inspiration, used sensibly</h2>
-<p>Room visualisers that let buyers try a tile on a sample room, or on a photo of their own room, can help some customers decide. Some tile brands offer their own and third-party tools also exist, so check what your brands allow and what any tool costs before committing. These tools are often heavy, so keep them on a dedicated page rather than the homepage.</p>
-<p>Simpler options often work just as well:</p>
+<p>Room visualisers that let buyers try a tile on a sample room, or on a photo of their own room, can help some customers decide. Some tile brands offer their own and third-party tools exist, so check what your brands allow and what any tool costs. These tools are often heavy, so keep them on a dedicated page rather than the homepage. Simpler options often work just as well:</p>
 <ul>
-  <li>Galleries of real installations, tagged with the products used</li>
-  <li>Curated collections such as "warm wood-look bathrooms" or "easy-clean kitchen walls"</li>
-  <li>A "send us a photo of your room" option, so your staff can suggest a few combinations</li>
+<li>Galleries of real installations, tagged with the products used.</li>
+<li>Curated collections such as &quot;warm wood-look bathrooms&quot; or &quot;easy-clean kitchen walls&quot;.</li>
+<li>A &quot;send us a photo of your room&quot; option, so your staff can suggest a few combinations.</li>
 </ul>
 
 <h2>Make the showroom visit the main call to action</h2>
-<p>For most showrooms, the website's real job is getting the right people through the door. Make that easy:</p>
 <ul>
-  <li>Address, timings, parking, a map and photos of your displays, including any working bathroom setups</li>
-  <li>A short "book a showroom visit" form asking for the rooms involved, rough area, preferred time and whether an architect or contractor will join</li>
-  <li>A shortlist feature, so visitors can save products and show the list to your staff when they arrive</li>
-  <li>A WhatsApp button that pre-fills the product name or code; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a></li>
+<li>Address, timings, parking, a map and photos of your displays, including any working bathroom setups.</li>
+<li>A short &quot;book a showroom visit&quot; form asking for the rooms involved, rough area, preferred time and whether an architect or contractor will join.</li>
+<li>A shortlist feature, so visitors can save products and show the list to your staff when they arrive.</li>
+<li>A WhatsApp button that pre-fills the product name or code; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a>.</li>
 </ul>
-<p>If you're comfortable showing price bands or "starting from" prices per square foot, they help filter out mismatched enquiries. Just keep them updated, because supplier prices change.</p>
+<p>If you are comfortable showing price bands per square foot, they help filter mismatched enquiries. Keep them updated, because supplier prices change; see <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
 
 <h2>A separate route for builders, contractors and architects</h2>
-<p>Trade buyers don't want inspiration galleries. Give them a clear "project and bulk enquiries" page with a form for project type, location, quantities per area, timeline and an option to upload a BOQ or drawing. Explain what you can offer, such as samples, site delivery, batch-matched supply for large orders, GST invoices and credit terms if you provide them.</p>
-<p>A short list of projects you've supplied, shared with permission, and details of any architect or designer programme you run will help you win repeat trade business.</p>
+<p>Trade buyers do not want inspiration galleries. Give them a clear &quot;project and bulk enquiries&quot; page with a form for project type, location, quantities per area, timeline and an option to upload a BOQ or drawing. Explain what you can offer, such as samples, site delivery, batch-matched supply for large orders, GST invoices and credit terms if you provide them. The structure in <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a> works well here.</p>
+<p>A short list of projects you have supplied, shared with permission, and details of any architect or designer programme you run will help you win repeat trade business.</p>
+
+<h2>Keeping the catalogue up to date</h2>
+<p>A tile catalogue goes stale quickly. Ranges are discontinued, new sizes arrive and seasonal designs come and go. An out-of-date site frustrates buyers who arrive asking for a product you no longer stock. Build simple routines:</p>
+<ul>
+<li>Mark discontinued products as unavailable, or redirect their pages to the closest current range, rather than deleting them and leaving broken links.</li>
+<li>Add new arrivals with a tag so they appear in a &quot;new this month&quot; section on the homepage.</li>
+<li>Let staff update stock status or &quot;available on order&quot; notes without touching the design.</li>
+<li>Import product data from a spreadsheet when a brand sends a new range, instead of entering hundreds of tiles by hand. This can be set up for WooCommerce or a custom post type catalogue.</li>
+</ul>
+<p>Assign one person in the showroom to own these updates, with a short monthly check of the top-visited product pages. A clean, current catalogue is what makes the website a tool your sales staff use every day, showing products on a tablet or sending links on WhatsApp, rather than a brochure nobody trusts.</p>
 
 <h2>Local SEO and speed for an image-heavy catalogue</h2>
-<p>Most showroom customers search locally: "tiles showroom in {area}", "sanitaryware shop near me", "bathroom fittings in {city}" or "{brand} dealer in {city}". To show up for these searches:</p>
+<p>Most showroom customers search locally: &quot;tiles showroom in [area]&quot;, &quot;sanitaryware shop near me&quot;, &quot;bathroom fittings in [city]&quot; or &quot;[brand] dealer in [city]&quot;.</p>
 <ul>
-  <li>Keep your Google Business Profile complete, with the right categories, timings and plenty of showroom photos; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
-  <li>Create brand pages only for brands you're authorised to sell, each with your own content</li>
-  <li>Publish buying guides that answer real questions: vitrified vs ceramic tiles, choosing anti-skid bathroom tiles, wall-hung vs floor-mounted WCs</li>
+<li>Keep your Google Business Profile complete, with the right categories, timings and plenty of showroom photos; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</li>
+<li>Create brand pages only for brands you are authorised to sell, each with your own content.</li>
+<li>Publish buying guides that answer real questions: vitrified vs ceramic tiles, choosing anti-skid bathroom tiles, wall-hung vs floor-mounted WCs.</li>
 </ul>
-<p>Hundreds of large product photos can make a catalogue painfully slow on mobile data. Resize and compress images, use modern formats and make sure filters respond quickly; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
+<p>Hundreds of large product photos can make a catalogue painfully slow on mobile data. Resize and compress images, use modern formats such as WebP and make sure filters respond quickly; see <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
 
-<p>Planning a showroom website with a filterable catalogue and visit bookings? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> if you also want to sell fittings and accessories online.</p>
+<h2>FAQs</h2>
+<h3>What should a website for a tiles showroom include?</h3>
+<p>A catalogue by room, look and size, product pages with coverage details, authorised brand pages, real installation photos, a showroom visit booking and a separate builder and contractor enquiry page.</p>
+<h3>Should a tiles showroom sell online?</h3>
+<p>Large tile orders usually need a visit and site measurements, so most showrooms focus on enquiries. Selling fittings and accessories online can work alongside that.</p>
+<h3>Can I list every tile brand I can source?</h3>
+<p>List only brands you are authorised to sell. Mention on-order sourcing separately, and never claim official or exclusive status without written confirmation.</p>
+<h3>How do I keep a large tile catalogue fast?</h3>
+<p>Compress and resize images, use WebP, keep heavy visualisers on their own page and use efficient filters.</p>
+<h3>Should I show tile prices on the website?</h3>
+<p>Price bands per square foot help filter enquiries if you can keep them current. Otherwise, explain what affects the price and invite a visit.</p>
+
+<p>Planning a showroom website with a filterable catalogue and visit bookings? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> if you also want to sell fittings online. For showrooms in Gujarat and Rajasthan, see <a href="/wordpress-shopify-developer-ahmedabad/">Ahmedabad</a> and <a href="/wordpress-shopify-developer-jaipur/">Jaipur</a>.</p>
 `,
   },
   {
@@ -54017,95 +54249,132 @@ Right:
   },
   {
     slug: 'website-for-wedding-choreographers',
-    title: 'Websites for Wedding and Sangeet Choreographers',
-    description: 'What a wedding and sangeet choreographer\'s website needs: fast-loading performance videos, clear packages, home and online sessions, availability and enquiries.',
+    seoTitle: 'Website for Wedding Choreographers: Sangeet Bookings Guide',
+    title: 'Website for Wedding and Sangeet Choreographers: Videos, Packages, Sessions and Enquiries',
+    description: 'How to plan a website for wedding choreographers in India: fast performance videos, clear sangeet packages, session formats and date-first enquiries.',
     date: '2026-10-01',
+    updated: '2026-10-28',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design'],
     body: `
-<p>Families planning a sangeet don't just want a good dancer. They want someone who can get a nervous groom, two shy aunties and a grandfather who hasn't danced in decades on stage, in step and smiling, within a few weeks. Instagram shows your energy, but a website is where a family checks your packages, sees how sessions work and sends a proper enquiry with their date.</p>
-<p>This guide is for choreographers who prepare couples and families for weddings. If you run regular weekly classes, see <a href="/blog/website-for-music-dance-academies/">websites for music and dance academies</a> instead, as the needs are quite different.</p>
+<p>A website for wedding choreographers should show real sangeet performances without slowing the page, explain packages clearly, describe home, studio and online sessions, and collect the wedding date and group size in the first enquiry. Families compare two or three choreographers at once, so clarity often decides who gets the booking.</p>
+<p>Families planning a sangeet want someone who can get a nervous groom, shy aunties and a grandfather who has not danced in decades on stage, in step and smiling, within a few weeks. Instagram shows your energy; a website is where a family checks how you work and sends a proper enquiry. If you run regular weekly classes instead, see <a href="/blog/website-for-music-dance-academies/">websites for music and dance academies</a>.</p>
 
 <h2>What families want to know before booking</h2>
-<p>Most enquiries come from the bride, the groom or a cousin who has been put in charge of the sangeet. Their questions are usually the same:</p>
+<p>Most enquiries come from the bride, the groom or a cousin put in charge of the sangeet. Their questions are usually the same:</p>
 <ul>
-  <li><strong>Can you teach non-dancers?</strong> Patience with beginners and older relatives matters more than your own skill</li>
-  <li><strong>Which styles do you choreograph?</strong> Bollywood, Punjabi and bhangra, garba and dandiya, regional styles, couple dances, contemporary</li>
-  <li><strong>How many sessions will we need,</strong> and how many weeks before the wedding should we start?</li>
-  <li><strong>Where do sessions happen?</strong> At our home, at your studio or online</li>
-  <li><strong>What else do you handle?</strong> Song edits and mixes, entries, stage blocking, props and coordinating with the DJ on the day</li>
-  <li><strong>Are you free on our dates?</strong> Especially in peak wedding season</li>
+<li><strong>Can you teach non-dancers?</strong> Patience with beginners and older relatives matters more than your own skill.</li>
+<li><strong>Which styles do you choreograph?</strong> Bollywood, Punjabi and bhangra, garba and dandiya, regional styles, couple dances, contemporary.</li>
+<li><strong>How many sessions will we need,</strong> and how many weeks before the wedding should we start?</li>
+<li><strong>Where do sessions happen?</strong> At home, at your studio or online.</li>
+<li><strong>What else do you handle?</strong> Song edits and mixes, entries, stage blocking, props and coordinating with the DJ on the day.</li>
+<li><strong>Are you free on our dates?</strong> Especially in peak wedding season.</li>
 </ul>
-<p>Answer these on your homepage and service pages, and you'll get fewer vague "rates?" messages and more enquiries from families ready to book.</p>
+<p>Answer these on your homepage and service pages, and you will get fewer vague &quot;rates?&quot; messages and more enquiries from families ready to book.</p>
+
+<h2>Website for wedding choreographers: the pages you need</h2>
+<table>
+<thead><tr><th>Page</th><th>Purpose</th><th>Key content</th></tr></thead>
+<tbody>
+<tr><td>Homepage</td><td>Quick trust and routing</td><td>Highlight reel, styles, cities served, WhatsApp button</td></tr>
+<tr><td>Packages</td><td>Help families compare</td><td>Couple dance, family acts, complete sangeet, online, destination</td></tr>
+<tr><td>Performances</td><td>Proof</td><td>Videos grouped by type, rehearsal and final clips</td></tr>
+<tr><td>How it works</td><td>Reduce anxiety</td><td>Timeline from first call to the stage, session formats</td></tr>
+<tr><td>About and team</td><td>Personal trust</td><td>Your training, assistant choreographers, approach with beginners</td></tr>
+<tr><td>Reviews</td><td>Social proof</td><td>Google reviews and short family stories, with permission</td></tr>
+<tr><td>Contact</td><td>Enquiries</td><td>Date-first form, WhatsApp, studio address and map</td></tr>
+</tbody>
+</table>
 
 <h2>Show performances without slowing the site</h2>
-<p>Video is your strongest proof, but it's also the quickest way to make a site painfully slow on mobile data. A few rules keep both:</p>
+<p>Video is your strongest proof, but it is also the quickest way to make a site painfully slow on mobile data.</p>
 <ul>
-  <li>Host videos on a platform such as YouTube or Vimeo, not as large files uploaded to WordPress</li>
-  <li>Use click-to-play previews (a thumbnail that loads the player only when tapped) rather than autoplaying embeds</li>
-  <li>Put one short highlight reel near the top of the homepage, then group the rest by type: couple dances, family performances, bridal entries, flash mobs</li>
-  <li>Embed only a few hand-picked Instagram reels; social media feed plugins load heavy scripts on every page</li>
-  <li>Add a line under each clip: the occasion, the city and who performed, such as "parents of the groom, first-time dancers"</li>
+<li>Host videos on YouTube or Vimeo, not as large files uploaded to WordPress.</li>
+<li>Use click-to-play previews, a thumbnail that loads the player only when tapped, rather than autoplaying embeds.</li>
+<li>Put one short highlight reel near the top of the homepage, then group the rest: couple dances, family performances, bridal entries, flash mobs.</li>
+<li>Embed only a few hand-picked Instagram reels; social feed plugins load heavy scripts on every page.</li>
+<li>Add a line under each clip: the occasion, the city and who performed, such as &quot;parents of the groom, first-time dancers&quot;.</li>
 </ul>
-<p>Rehearsal clips next to the final performance show your teaching ability better than a polished video alone. Always get the family's permission before publishing wedding footage, and take extra care with clips of children. Videos set to commercial songs can sometimes be muted or blocked by platforms, so check each platform's current rules. For more on using video well, see <a href="/blog/video-on-business-website/">video on your business website</a>.</p>
+<p>Rehearsal clips next to the final performance show your teaching ability better than a polished video alone. Always get the family's permission before publishing wedding footage, and take extra care with clips of children. Videos set to commercial songs can be muted or blocked by platforms, so check each platform's current rules. For more, see <a href="/blog/video-on-business-website/">video on your business website</a>.</p>
 
 <h2>Packages that are easy to compare</h2>
-<p>Families compare two or three choreographers at once, so make your packages easy to understand at a glance.</p>
-<table>
-  <thead>
-    <tr><th>Package</th><th>What to spell out</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Couple dance</td><td>Number of sessions, length of each, one song or a medley</td></tr>
-    <tr><td>Family performances</td><td>Number of acts, maximum dancers per act, age range you're comfortable with</td></tr>
-    <tr><td>Complete sangeet</td><td>All acts, running order, song edits, rehearsal at the venue and presence on the night</td></tr>
-    <tr><td>Online coaching</td><td>Live video sessions, practice videos and how relatives in other cities join in</td></tr>
-    <tr><td>Destination weddings</td><td>Travel, stay, how many days you'll be there and on-site rehearsals</td></tr>
-  </tbody>
-</table>
-<p>Also state what costs extra: additional sessions, travel beyond your usual area, props or costume coordination. Whether to publish prices is your decision; "starting from" figures filter out mismatched budgets without locking you in. See <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
+<ul>
+<li><strong>Couple dance:</strong> number of sessions, length of each, one song or a medley.</li>
+<li><strong>Family performances:</strong> number of acts, maximum dancers per act, age range you are comfortable with.</li>
+<li><strong>Complete sangeet:</strong> all acts, running order, song edits, rehearsal at the venue and presence on the night.</li>
+<li><strong>Online coaching:</strong> live video sessions, practice videos and how relatives in other cities join in.</li>
+<li><strong>Destination weddings:</strong> travel, stay, how many days you will be there and on-site rehearsals.</li>
+</ul>
+<p>Also state what costs extra: additional sessions, travel beyond your usual area, props or costume coordination. Whether to publish prices is your decision; &quot;starting from&quot; figures filter out mismatched budgets without locking you in. See <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
 
 <h2>Home, studio and online sessions</h2>
-<p>Explain each format on its own page or in a clear section, because families plan around them very differently.</p>
 <h3>Home sessions</h3>
 <p>List the areas you cover, any travel charge, and what the family needs to arrange: a cleared room, a speaker and a time when everyone can be present. Say if you can send a male or female choreographer on request, as some families have a preference.</p>
 <h3>Studio sessions</h3>
-<p>Share the address with a map, parking details and photos of the space, so families know it's large enough for a group.</p>
+<p>Share the address with a map, parking details and photos of the space, so families know it is large enough for a group.</p>
 <h3>Online sessions</h3>
 <p>Many families have relatives in other cities or abroad. Explain how live video sessions work, how you share private practice videos and how the whole group comes together for final rehearsals.</p>
 
+<h2>A simple timeline families can follow</h2>
+<p>Nervous families relax when they can see the whole journey. A short &quot;how it works&quot; section might cover:</p>
+<ol>
+<li>Enquiry and a call to understand the family, the songs and the venue.</li>
+<li>Booking confirmed with an advance by UPI or bank transfer.</li>
+<li>Song selection and edits, shared for approval.</li>
+<li>Sessions by act, with practice videos sent after each.</li>
+<li>A full run-through in order, ideally at or near the venue.</li>
+<li>On the day: cueing performers and coordinating with the DJ or anchor, if included.</li>
+</ol>
+<p>Explain what happens if the wedding is postponed or a session is missed, so there are no awkward conversations later.</p>
+
 <h2>Availability and enquiries</h2>
-<p>The wedding date is the first thing you need, so make the enquiry form ask for what you need to check availability and quote:</p>
+<p>The wedding date is the first thing you need, so make the enquiry form ask for:</p>
 <ul>
-  <li>Sangeet date, city and venue</li>
-  <li>Number of performances and approximate number of dancers</li>
-  <li>Age range of the dancers</li>
-  <li>Preferred format: home, studio or online</li>
-  <li>When they'd like to start</li>
-  <li>Budget range (optional)</li>
+<li>Sangeet date, city and venue.</li>
+<li>Number of performances and approximate number of dancers.</li>
+<li>Age range of the dancers.</li>
+<li>Preferred format: home, studio or online.</li>
+<li>When they would like to start.</li>
+<li>Budget range (optional).</li>
 </ul>
-<p>Add a WhatsApp button with a pre-filled message such as "Hi, we'd like choreography for a sangeet on...". If you show an availability calendar, keep it accurate; showing booked dates as free causes more problems than having no calendar at all. Explain how a booking is confirmed, the advance (by UPI or bank transfer) and what happens if the wedding is postponed.</p>
+<p>Add a WhatsApp button with a pre-filled message such as &quot;Hi, we would like choreography for a sangeet on...&quot;; the guide to <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a> explains tracking too. If you show an availability calendar, keep it accurate; showing booked dates as free causes more problems than having no calendar at all.</p>
 
 <h2>Trust signals families look for</h2>
 <ul>
-  <li>Google reviews from families, requested soon after the wedding while memories are fresh</li>
-  <li>Your training and experience, stated honestly, plus profiles of any assistant choreographers who'll take sessions</li>
-  <li>Photos from real practice sessions, not only stage shots</li>
-  <li>A note on how you adapt steps for older relatives or anyone with knee or back problems</li>
-  <li>Clear terms on rescheduling and missed sessions</li>
+<li>Google reviews from families, requested soon after the wedding while memories are fresh; see <a href="/blog/get-more-google-reviews/">getting more Google reviews</a>.</li>
+<li>Your training and experience, stated honestly, plus profiles of any assistant choreographers who will take sessions.</li>
+<li>Photos from real practice sessions, not only stage shots.</li>
+<li>A note on how you adapt steps for older relatives or anyone with knee or back problems.</li>
+<li>Clear terms on rescheduling and missed sessions.</li>
 </ul>
 
-<h2>Getting found</h2>
-<p>Families search with an occasion and a city: "sangeet choreographer in Delhi", "wedding choreographer near me", "couple dance choreographer in Mumbai", "bridal entry choreography". To appear for these:</p>
+<h2>Seasonal updates and keeping the site fresh</h2>
+<p>Wedding demand in India follows the muhurat calendar, so families often start searching months before the season. Plan small updates that keep the site current without much effort:</p>
 <ul>
-  <li>Create separate pages for the services you're genuinely known for, with real clips and details</li>
-  <li>Set up a Google Business Profile, as a service-area business if you mostly visit homes</li>
-  <li>Link your Instagram bio to the most relevant page, not just the homepage</li>
-  <li>Build relationships with planners and venues who can refer you; see what they need in <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a></li>
-  <li>Update your packages and dates before each wedding season</li>
+<li>Add two or three new performance clips after each busy month, with a line on the occasion and city.</li>
+<li>Update an &quot;now booking for&quot; line on the homepage with the months you are taking enquiries for.</li>
+<li>Write short posts that answer common questions, such as how many sessions a family act needs or easy songs for parents, which also bring in searches.</li>
+<li>Refresh your packages page when you change what is included, so old screenshots shared on WhatsApp do not cause confusion.</li>
 </ul>
+<p>WordPress makes these edits simple once the site is set up with clear blocks for videos, packages and reviews, so you do not need a developer for routine changes. A short seasonal landing page, linked from Instagram and WhatsApp status, can also collect enquiries for a specific offer, such as a destination wedding package.</p>
+<p>Keep a simple record of where each enquiry came from, such as Google, Instagram, a planner referral or a past family. Over a season it shows which sources bring bookings rather than just messages, and tells you where to spend time before the next one. A basic setup with UTM-tagged links and form tracking is enough for most choreographers.</p>
 
-<p>Planning a website for your choreography business? See <a href="/wordpress-website-development/">WordPress website development</a>, or for wedding-season ads, a focused <a href="/landing-page-design/">landing page</a> built around one package and a quick enquiry form.</p>
+<h2>Getting found in your city</h2>
+<p>Families search with an occasion and a city: &quot;sangeet choreographer in Delhi&quot;, &quot;wedding choreographer near me&quot;, &quot;couple dance choreographer in Mumbai&quot;. Keep your Google Business Profile complete with practice and performance photos, use the city and service in page titles, and create a page for another city only if you genuinely work there regularly, with real performances from that city. Working with wedding planners and venues also helps; the guides on <a href="/blog/website-for-event-wedding-planners/">websites for wedding planners</a> show what your partners look for when recommending vendors.</p>
+
+<h2>FAQs</h2>
+<h3>What should a website for wedding choreographers include?</h3>
+<p>A highlight reel, performances grouped by type, clear packages, session formats, a simple timeline, honest trust signals and a date-first enquiry form with WhatsApp.</p>
+<h3>Should a sangeet choreographer show prices online?</h3>
+<p>It is optional. &quot;Starting from&quot; figures with a list of what changes the price filter enquiries without fixing every quote.</p>
+<h3>How do I add dance videos without slowing my site?</h3>
+<p>Host them on YouTube or Vimeo, use click-to-play thumbnails and limit Instagram embeds to a few chosen reels.</p>
+<h3>Can I take bookings for online choreography from abroad?</h3>
+<p>Yes. Explain the session format and time zones, and accept advances through a payment gateway or bank transfer that suits overseas families.</p>
+<h3>Do I need a website if I already have Instagram?</h3>
+<p>Instagram builds reach; a website answers detailed questions, appears in Google searches by city and collects structured enquiries you own.</p>
+
+<p>Want a choreography website that turns families into bookings? See <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/landing-page-design/">landing page design</a> for wedding season campaigns. I work with choreographers across India, including <a href="/wordpress-shopify-developer-delhi/">Delhi</a> and <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>.</p>
 `,
   },
   {
@@ -54229,91 +54498,123 @@ Right:
   },
   {
     slug: 'woocommerce-gift-cards',
-    title: 'Selling Gift Cards and Store Credit in WooCommerce',
-    description: 'How to sell gift cards and store credit in WooCommerce: use cases, plugin options, careful expiry and terms wording, GST questions for your CA and fraud checks.',
+    seoTitle: 'WooCommerce Gift Cards: Setup, Store Credit and Shopify',
+    title: 'WooCommerce Gift Cards and Store Credit: Setup, Rules, GST Questions and How Shopify Compares',
+    description: 'How to sell WooCommerce gift cards and store credit in India: plugin options, terms, GST questions for your CA, fraud checks and Shopify gift cards.',
     date: '2026-10-01',
+    updated: '2026-10-28',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'landing-page-design'],
     body: `
-<p>Gift cards solve a common problem for shoppers: they want to give something from your store but don't know the recipient's size, taste or what they already own. Store credit solves a problem for you: it keeps value inside your business when an order is returned or a customer needs a goodwill gesture. WooCommerce doesn't include either out of the box, but both are straightforward to add if you plan the rules carefully.</p>
+<p>WooCommerce gift cards need a plugin: it creates a gift card product, generates a unique code after payment, emails it to the recipient and lets them redeem the balance at checkout. Shopify, by contrast, includes gift cards as a built-in feature. On either platform, the hard part is not the setup but the rules: validity, partial use, refunds, GST and fraud checks.</p>
+<p>This guide explains how to sell gift cards and offer store credit on an Indian online store, and how WooCommerce and Shopify compare.</p>
 
 <h2>Why sell gift cards and offer store credit</h2>
 <ul>
-  <li><strong>Festival and occasion gifting:</strong> Diwali, Rakhi, birthdays, weddings and anniversaries</li>
-  <li><strong>Last-minute gifts:</strong> an e-gift card delivered by email arrives instantly, when it's too late to ship a parcel</li>
-  <li><strong>Corporate orders:</strong> companies buying cards for employees or clients in bulk</li>
-  <li><strong>Returns and exchanges:</strong> offering store credit as an option alongside a refund</li>
-  <li><strong>Goodwill and rewards:</strong> credit for a delayed order, a loyalty reward or a referral</li>
+<li><strong>Gifting without guessing:</strong> shoppers can give something from your store without knowing the recipient's size or taste, which suits festivals such as Diwali and Raksha Bandhan, weddings and birthdays.</li>
+<li><strong>Corporate gifting:</strong> businesses buying for staff or clients often prefer gift cards to physical hampers.</li>
+<li><strong>Returns without refunds:</strong> store credit keeps the value inside your business when a customer returns an item, if your returns policy offers it as an option.</li>
+<li><strong>Goodwill:</strong> a small credit after a delayed order can be quicker and cheaper than a full complaint process.</li>
+<li><strong>New customers:</strong> recipients often discover your brand for the first time through a gift.</li>
 </ul>
-<p>Gift cards also bring new customers: the person receiving one often discovers your store for the first time.</p>
 
-<h2>Gift cards, store credit and coupons compared</h2>
-<table>
-  <thead>
-    <tr><th>Option</th><th>How it works</th><th>Best for</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Gift card</td><td>Bought and paid for by a customer, often for someone else, with a balance that can be used over several orders</td><td>Gifting and corporate orders</td></tr>
-    <tr><td>Store credit</td><td>A balance you issue to a customer's account or as a code</td><td>Returns, goodwill and rewards</td></tr>
-    <tr><td>Coupon</td><td>A discount on an order, usually not tied to money already paid</td><td>Promotions and offers</td></tr>
-  </tbody>
-</table>
-<p>Coupons are a different tool with their own rules; see <a href="/blog/woocommerce-coupons-discounts/">WooCommerce coupons and discounts</a>.</p>
-
-<h2>Plugin approaches</h2>
-<p>There are three common ways to add gift cards and credit:</p>
+<h2>How WooCommerce gift cards work</h2>
+<p>WooCommerce has no gift card feature in its core plugin. You add it with an extension, either the official gift cards extension or one of several third-party plugins. Most work in a similar way:</p>
 <ol>
-  <li><strong>A dedicated gift card plugin.</strong> Options include the official Gift Cards extension on WooCommerce.com and established third-party plugins. Typical features are fixed or custom amounts, card designs, a personal message, scheduled delivery to the recipient's email, partial redemption and balance tracking</li>
-  <li><strong>A coupon-based store credit plugin.</strong> Some plugins extend WooCommerce coupons so they carry a balance that reduces with each use, which suits returns and goodwill credit</li>
-  <li><strong>Custom development.</strong> Worth considering if you need physical cards that also work in a shop, or a link with your billing or POS software</li>
+<li>You create a gift card product with fixed amounts, a custom amount field or both.</li>
+<li>The buyer enters the recipient's name, email and a message, and can often choose a delivery date.</li>
+<li>After a successful payment, the plugin generates a unique code and emails it to the recipient.</li>
+<li>The recipient enters the code at checkout, or the plugin applies it to their account balance.</li>
+<li>Any unused balance stays on the card for the next order.</li>
 </ol>
-<p>Whichever you choose, check current features and pricing, and look for partial redemption, balance checks for customers, an admin screen to view and adjust balances, and clear logs of how each card was used. Before launch, test the full journey on a staging site: buying a card, delivery, scheduled sending, redeeming part of it, refunding an order paid with a card, and how the card appears on invoices.</p>
+<p>Choose a plugin that works with your theme, your payment gateway and your checkout, especially if you use a customised checkout page or block-based checkout. Test it on a <a href="/blog/staging-sites-explained/">staging site</a> before going live.</p>
 
-<h2>Expiry and terms: word them carefully</h2>
-<p>Most complaints about gift cards come from rules the buyer didn't notice. Decide your terms, then show them consistently on the product page, at checkout, in the delivery email and on your terms page:</p>
+<h2>Shopify gift cards: what is built in</h2>
+<p>Shopify includes gift cards as a standard feature on its plans. You create a gift card product with set denominations, customers buy it like any other product, and Shopify emails the code. Staff can also issue gift cards manually from the admin, which is handy for goodwill credit. Codes are redeemed at checkout, and balances carry over.</p>
+<p>For more control, such as scheduled delivery, custom designs or bulk corporate orders, Shopify stores typically add an app. If you are choosing a platform partly for gifting, see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for Indian stores</a>.</p>
+
+<h2>WooCommerce gift cards vs Shopify gift cards</h2>
+<table>
+<thead><tr><th>Feature</th><th>WooCommerce</th><th>Shopify</th></tr></thead>
+<tbody>
+<tr><td>Gift cards out of the box</td><td>No, needs a plugin</td><td>Yes, on its plans</td></tr>
+<tr><td>Custom amounts</td><td>Depends on the plugin</td><td>Usually via an app</td></tr>
+<tr><td>Scheduled delivery</td><td>Most gift card plugins</td><td>Usually via an app</td></tr>
+<tr><td>Manual issue for goodwill</td><td>Depends on the plugin</td><td>Yes, from the admin</td></tr>
+<tr><td>Store credit for returns</td><td>Plugin or a store credit extension</td><td>Built-in options vary by plan; check current features</td></tr>
+<tr><td>Design control of emails</td><td>Full, with template edits</td><td>Theme and notification settings, plus apps</td></tr>
+</tbody>
+</table>
+<p>Features on both platforms change over time, so check the current documentation before you decide.</p>
+
+<h2>Store credit vs gift cards</h2>
+<p>They look similar but serve different purposes. A gift card is bought with money and can be given to anyone. Store credit is issued by you, usually against a return or as a goodwill gesture, and is tied to a customer account. Keep them separate in reporting so you know how much value is outstanding from each. Spell out in your <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds policy</a> whether customers can choose a refund or store credit, and never force credit where a refund is due.</p>
+
+<h2>Terms to write before launch</h2>
 <ul>
-  <li>How long the card is valid, stated as a clear date or period, not buried in small print</li>
-  <li>Whether it can be used across several orders, with or without coupons, and on sale items</li>
-  <li>What happens to the balance if an order paid with a card is returned</li>
-  <li>What to do if a code is lost or sent to the wrong email address</li>
-  <li>Whether it can be exchanged for cash</li>
+<li><strong>Validity:</strong> how long the card can be used. Check current rules on prepaid instruments and gift voucher validity with your CA or lawyer, and state the period clearly.</li>
+<li><strong>Partial use:</strong> whether the balance carries over.</li>
+<li><strong>Combining:</strong> whether gift cards can be used with coupons or sale prices.</li>
+<li><strong>Refunds:</strong> what happens if an order paid by gift card is returned, usually a refund back to the card.</li>
+<li><strong>Lost codes:</strong> how customers can request a resend and what proof you need.</li>
+<li><strong>Exclusions:</strong> whether gift cards can buy other gift cards.</li>
+<li><strong>Cash:</strong> make clear the card cannot be exchanged for cash, unless you choose otherwise.</li>
 </ul>
-<p>Rules on expiry, refunds and unfair terms can apply to gift cards, and they change, so have a lawyer review your wording rather than copying another store's. Store credit given in place of a refund should generally be something the customer chooses, not something imposed; check your obligations and keep your <a href="/blog/website-terms-and-conditions/">website terms and conditions</a> in line with your refund policy.</p>
-<p>Keep your cards usable only in your own store. Cards that can be spent at other businesses can fall under RBI rules for prepaid payment instruments, which is a very different undertaking; check with your CA or lawyer if you're considering anything beyond your own store.</p>
+<p>Put these terms on the gift card product page, in the gift card email and in your <a href="/blog/website-terms-and-conditions/">website terms and conditions</a>.</p>
 
-<h2>GST and accounting: ask your CA first</h2>
-<p>The GST treatment of gift vouchers, including when tax applies and how it appears on invoices, has been the subject of rulings and clarifications over the years, and it can depend on how your voucher is designed. Before you launch, ask your CA:</p>
+<h2>GST and accounting questions for your CA</h2>
+<p>The GST treatment of vouchers and gift cards depends on whether they can be used for one type of goods or many, and on when tax applies, at sale or at redemption. The rules have been the subject of clarifications, so ask your CA how to treat them for your store, and set up invoices and reports to match. If you already generate invoices with a plugin, check how it handles a gift card product and orders part-paid by gift card; the guide on <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST invoices</a> covers the basics. Shopify stores can read <a href="/blog/shopify-gst-invoices-india/">Shopify GST invoices in India</a>.</p>
+<p>Also track outstanding balances: unredeemed gift cards are value you owe customers, and your accountant will want a report of it.</p>
+
+<h2>Fraud and misuse checks</h2>
+<p>Gift cards are attractive to fraudsters because they behave like cash. Sensible protections:</p>
 <ul>
-  <li>How GST applies when a card is sold and when it's redeemed</li>
-  <li>What your invoices and order emails should show at each stage</li>
-  <li>How to account for unused balances and expired cards</li>
+<li>Use long, random codes, never sequential numbers.</li>
+<li>Send codes only after payment is confirmed, never on cash on delivery orders.</li>
+<li>Review unusually large or repeated gift card purchases before releasing codes.</li>
+<li>Limit attempts at the code field to stop guessing.</li>
+<li>Keep a log of when each card was issued, emailed and redeemed.</li>
 </ul>
-<p>Then configure the plugin and your invoices to match their advice. For the wider setup, see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>.</p>
+<p>Disable cash on delivery for gift card products specifically; the guide to <a href="/blog/woocommerce-cash-on-delivery-india/">COD in WooCommerce</a> explains how to restrict payment methods by product.</p>
 
-<h2>Preventing gift card fraud</h2>
-<p>Gift cards are attractive to fraudsters because they work like cash and can be resold quickly. Sensible precautions:</p>
+<h2>Designing the gift card email and page</h2>
+<p>The gift card email is the recipient's first contact with your brand, so treat it like a product, not a system message. A good gift card email includes:</p>
 <ul>
-  <li>Use long, random codes, never sequential or guessable ones</li>
-  <li>Limit how many times someone can try codes or check balances, to stop guessing attempts</li>
-  <li>Set a maximum card value and a limit on cards per order</li>
-  <li>Hold high-value or unusual orders, such as many cards sent to different emails, for a manual check before delivery</li>
-  <li>Never allow cash on delivery for gift cards, and don't let gift cards be used to buy more gift cards</li>
-  <li>Turn on your payment gateway's risk checks and watch for chargebacks</li>
-  <li>Add a note that your store will never ask anyone to pay with gift card codes over a call or message</li>
+<li>The sender's name and personal message near the top.</li>
+<li>The amount and code, large and easy to copy on a phone.</li>
+<li>A clear button to start shopping, linking to a popular collection rather than the homepage.</li>
+<li>Validity and the short version of the terms, with a link to the full version.</li>
+<li>Your support WhatsApp or email for problems with the code.</li>
 </ul>
-<p>Gift card balances are only as safe as your store, so keep admin access tight; see the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a>.</p>
+<p>Check that the email lands in the inbox rather than spam, because a missing gift card turns a gift into a complaint. Sending store emails through proper SMTP with SPF and DKIM set up helps; see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a> for the template side.</p>
+<p>On the product page, show sample card designs, explain how delivery works and when the code arrives, and let buyers choose a delivery date for birthdays or anniversaries. Add a balance check page where recipients can enter a code and see what is left, which cuts down support messages.</p>
 
-<h2>Promoting your gift cards</h2>
-<ul>
-  <li>Give gift cards their own page in the main menu, with designs for festivals, birthdays and weddings</li>
-  <li>Promote e-gift cards as the last-minute answer in the days before festivals, when delivery cut-offs have passed</li>
-  <li>Suggest a gift card on product pages and in the cart: "Not sure what they'd like?"</li>
-  <li>Offer a simple bulk-order form for companies</li>
-  <li>Let buyers share the card on WhatsApp as well as by email</li>
-</ul>
-<p>If you add bonus credit as a promotion, keep it separate from the paid card, with its own clearly stated expiry, so the paid balance and the free bonus aren't confused.</p>
+<h2>Testing before you launch</h2>
+<ol>
+<li>Buy a card with each payment method you allow and confirm the code arrives only after payment.</li>
+<li>Redeem part of a card, then the rest, and check balances.</li>
+<li>Combine a card with a coupon and confirm your rule is applied.</li>
+<li>Return an order paid by gift card and check where the refund goes.</li>
+<li>Check the invoice for a gift card purchase and an order part-paid by card.</li>
+<li>Try an invalid code several times to confirm limits work.</li>
+</ol>
 
-<p>Want gift cards or store credit set up properly on your store? See <a href="/woocommerce-developer/">WooCommerce development</a>, or a focused <a href="/landing-page-design/">landing page</a> for a festival gift card campaign.</p>
+<h2>Promoting gift cards on your store</h2>
+<p>Gift cards sell when people see them at the right time. Add a gift card link in the header during festive seasons, a banner on product pages for last-minute gifting, a section on your corporate or bulk orders page, and a mention in your order confirmation emails. Because gift cards are delivered by email, they suit last-minute buyers: say so clearly in the run-up to festivals, when physical delivery may not arrive in time.</p>
+
+<h2>FAQs</h2>
+<h3>How do I add gift cards to WooCommerce?</h3>
+<p>Install a gift card plugin, create a gift card product with your amounts, set up the email template and terms, then test buying and redeeming a card on a staging copy before launch.</p>
+<h3>Does Shopify have built-in gift cards?</h3>
+<p>Yes. Shopify includes gift cards on its plans, and staff can issue cards manually. Apps add extras like scheduled delivery or bulk orders.</p>
+<h3>Can customers use a gift card and a coupon together?</h3>
+<p>It depends on your settings and plugin. Decide your rule, configure it and state it in the terms.</p>
+<h3>Is GST charged on gift cards in India?</h3>
+<p>It depends on the type of voucher and when it is redeemed. Ask your CA for the current treatment for your store.</p>
+<h3>Should gift card codes be sent for COD orders?</h3>
+<p>No. Send codes only after online payment is confirmed, and disable COD for gift card products.</p>
+
+<p>If you want gift cards or store credit set up properly, see <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/shopify-developer/">Shopify development</a>. I work with stores across the country through <a href="/wordpress-shopify-developer-india/">WordPress and Shopify development in India</a>.</p>
 `,
   },
   {
@@ -55074,97 +55375,114 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-drone-services',
-    seoTitle: 'Websites for Drone Services: Aerial, Survey and Inspection',
-    title: 'Websites for Drone Service Companies: Aerial Shoots, Surveys, Inspections and Spraying',
-    description: 'How drone service companies can show footage and deliverables, explain their process, state DGCA registration honestly and win aerial, survey and spraying work.',
+    seoTitle: 'Website for Drone Services in India: Pages, Proof, Enquiries',
+    title: 'Website for Drone Services: Aerial Shoots, Surveys, Inspections and Spraying in India',
+    description: 'How to plan a website for drone services in India: service pages, sample deliverables, honest DGCA wording, coverage areas and enquiry forms.',
     date: '2026-10-01',
+    updated: '2026-10-28',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design'],
     body: `
-<p>Drone companies sell very different things to very different buyers. A couple wants aerial shots of their wedding venue, a builder needs progress photos of a site, an engineering firm wants a topographic survey, a solar plant needs panel inspections, and a farmer group wants crops sprayed. Each of them is asking the same underlying question: can this operator do the job safely, legally and to the standard I need? Your website should answer that before they pick up the phone.</p>
+<p>A website for drone services should show each service separately, prove your work with real footage, maps or reports, explain what the client receives and when, and make it easy to send a job enquiry with the location and scope. Buyers range from wedding couples to engineering firms, so one generic &quot;drone services&quot; page rarely convinces any of them.</p>
+<p>This guide covers the pages, proof and forms that help an Indian drone operator win aerial photography, survey, inspection and agricultural spraying work.</p>
 
 <h2>What clients want to know before hiring a drone operator</h2>
+<p>Whatever the job, most buyers are asking the same question: can this operator do the work safely, legally and to the standard I need? Your site should answer these points before anyone picks up the phone:</p>
 <ul>
-  <li>Whether you offer their specific service, not just "drone services"</li>
-  <li>Real examples of footage, maps or reports similar to what they need</li>
-  <li>What they will actually receive, in what format and how soon</li>
-  <li>Whether you are registered and your pilots are certified under current rules</li>
-  <li>Which areas you cover, and whether you can fly at their location</li>
-  <li>How pricing works, even if you quote per project</li>
+<li>Whether you offer their specific service, not just &quot;drone services&quot;.</li>
+<li>Real examples of footage, maps or reports similar to what they need.</li>
+<li>What they will actually receive, in which format and how soon.</li>
+<li>Whether your registrations, pilot certificates and insurance are in order.</li>
+<li>Which cities and regions you cover, and whether you travel.</li>
+<li>How pricing is worked out, even if you do not publish fixed prices.</li>
 </ul>
 
-<h2>Give each service its own page</h2>
-<p>A single "Services" page listing everything makes it hard for buyers to see themselves in your work, and hard for Google to rank you for specific searches. Separate pages work better:</p>
+<h2>Website for drone services: the pages to build</h2>
+<p>Separate pages let each audience find its own answers and give Google a clear page to rank for each search, such as &quot;drone survey company in Pune&quot; or &quot;drone shoot for wedding&quot;.</p>
 <table>
-  <thead>
-    <tr><th>Service</th><th>Typical buyers</th><th>What to show</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Aerial photography and video</td><td>Weddings, events, hotels, real estate, brands</td><td>Showreel clips, stills, edited and raw delivery options</td></tr>
-    <tr><td>Surveying and mapping</td><td>Builders, engineers, planners, mining and infrastructure firms</td><td>Sample orthomosaics, contour maps, 3D models and the accuracy approach you use</td></tr>
-    <tr><td>Inspections</td><td>Solar plants, telecom towers, factories, bridges, building facades</td><td>Sample inspection reports with defects marked, thermal imagery if you offer it</td></tr>
-    <tr><td>Agricultural spraying</td><td>Farmers, FPOs, plantations, agri-input companies</td><td>Field videos, area covered per visit, how bookings and crop details work</td></tr>
-  </tbody>
+<thead><tr><th>Service page</th><th>Typical buyer</th><th>What to show</th></tr></thead>
+<tbody>
+<tr><td>Aerial photography and video</td><td>Weddings, events, hotels, real estate marketing</td><td>Short clips, stills, editing options, delivery time</td></tr>
+<tr><td>Survey and mapping</td><td>Builders, engineers, land developers, government contractors</td><td>Sample orthomosaic, contour or 3D model output, file formats, accuracy approach</td></tr>
+<tr><td>Inspection</td><td>Solar plants, telecom towers, industrial roofs, bridges</td><td>Sample report pages, thermal imagery if offered, how defects are marked</td></tr>
+<tr><td>Construction progress</td><td>Builders and project managers</td><td>Monthly comparison shots, shared folders, schedule options</td></tr>
+<tr><td>Agricultural spraying</td><td>Farmers, FPOs, plantations</td><td>Crops covered, area per day, who supplies the chemical, safety steps</td></tr>
+<tr><td>Training</td><td>Aspiring pilots</td><td>Course outline and the certification route, described carefully</td></tr>
+</tbody>
 </table>
-<p>On each page, explain who the service is for, the equipment and software you use in general terms, what the client receives and a few common questions. If aerial shoots are a small part of a larger photography business, the guide to <a href="/blog/website-for-photographers/">websites for photographers</a> covers portfolio pages in more depth.</p>
+<p>Alongside these, you need a homepage that routes visitors to the right service, an About page with your team and equipment, a portfolio or projects section, a coverage page and a contact page.</p>
 
-<h2>Show sample footage and deliverables</h2>
-<p>Drone work is visual, and buyers trust what they can see. But "deliverables" mean different things for each service:</p>
+<h2>Showing deliverables, not just pretty footage</h2>
+<p>Cinematic shots sell wedding and hospitality work. Survey and inspection clients care more about what lands in their inbox. For each technical service, show:</p>
 <ul>
-  <li><strong>Aerial video:</strong> a short showreel plus a few full clips by category. Host videos on YouTube or Vimeo and use click-to-play previews so pages stay fast on mobile data; see <a href="/blog/website-for-video-production-companies/">websites for video production companies</a> for hosting options.</li>
-  <li><strong>Surveys:</strong> screenshots of maps and models, plus a downloadable sample file or PDF with client details removed.</li>
-  <li><strong>Inspections:</strong> a redacted sample report showing how defects are located, photographed and prioritised.</li>
-  <li><strong>Spraying:</strong> short field videos and a simple explanation of how a visit runs.</li>
+<li>A screenshot or cropped sample of the actual output, such as a map tile, a point cloud view or a report page.</li>
+<li>The file formats you deliver, for example PDF reports, GeoTIFF, DWG or KML, if you provide them.</li>
+<li>The typical turnaround from flight day to delivery, stated as a range you can actually meet.</li>
+<li>How data is shared: a download link, a cloud folder or a viewer.</li>
 </ul>
-<p>Only publish client work you have permission to show, and blur sensitive sites, faces and number plates where needed. Label everything honestly: if a clip is from a demo flight rather than a paid project, say so.</p>
+<p>Get written permission before showing a client's site, and blur anything sensitive such as faces, vehicle numbers or plant layouts the client would not want public.</p>
 
-<h2>Explain your process and what clients receive</h2>
-<p>Many buyers have never hired a drone operator before, so a clear process page reduces nervous questions:</p>
+<h2>Video and images without a slow site</h2>
+<p>Drone portfolios are heavy. Do not upload raw 4K files to WordPress. Host longer videos on YouTube or Vimeo and embed them with a lightweight click-to-play placeholder, and compress stills before uploading. The guides on <a href="/blog/video-on-business-website/">using video on a business website</a> and <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a> explain the setup. A fast site matters because many buyers will open your link on a phone, often on site with a weak signal.</p>
+
+<h2>Registrations, permissions and safety: say it honestly</h2>
+<p>Drone operations in India are regulated, and the rules on registration, pilot certification, airspace zones and permissions are updated from time to time. On the website:</p>
+<ul>
+<li>List only the registrations, certificates and insurance cover you genuinely hold, and keep them current.</li>
+<li>Avoid absolute claims such as &quot;we can fly anywhere&quot;. Say that you check airspace and permissions for each location before confirming a job.</li>
+<li>Explain your safety process briefly: site survey, weather checks, crowd control at events and a backup plan if a flight cannot happen.</li>
+<li>Point clients to the official DGCA and Digital Sky information for the current rules rather than paraphrasing them in detail.</li>
+</ul>
+<p>Clear, modest wording builds more trust with corporate and government buyers than bold promises.</p>
+
+<h2>Enquiry forms that let you quote quickly</h2>
+<p>Drone jobs vary hugely in size, so a bare &quot;name, phone, message&quot; form leads to long back-and-forth calls. Ask for:</p>
 <ol>
-  <li><strong>Enquiry:</strong> location, service, date and purpose</li>
-  <li><strong>Feasibility check:</strong> airspace zone, permissions needed, site access and weather</li>
-  <li><strong>Quote and confirmation:</strong> scope, deliverables, timeline and any advance</li>
-  <li><strong>Flight day:</strong> what the client needs to arrange, such as site access, a contact person and safe take-off space</li>
-  <li><strong>Processing:</strong> editing, map processing or report writing</li>
-  <li><strong>Delivery:</strong> file formats, delivery method, revision rounds and how long you keep the data</li>
+<li>Service type (a dropdown matching your service pages).</li>
+<li>Location, with a map pin or city and nearest landmark.</li>
+<li>Area in acres or hectares, or event duration for shoots.</li>
+<li>Preferred date or deadline.</li>
+<li>Output needed, such as edited video, map files or a report.</li>
+<li>Phone and WhatsApp number.</li>
 </ol>
-<p>Be specific about formats. A builder wants to know whether they get a PDF, a CAD-friendly file or an online viewer link; a couple wants to know how many minutes of edited film and whether raw footage is included.</p>
+<p>A <a href="/blog/multi-step-forms-lead-qualification/">multi-step form</a> keeps this from feeling long. Add a WhatsApp button for quick questions, and send each enquiry to email and a shared sheet so nothing gets missed.</p>
 
-<h2>Permissions and compliance: state them honestly</h2>
-<p>In India, civil drone operations are regulated by the Directorate General of Civil Aviation (DGCA) under the Drone Rules, 2021, with registration and airspace permissions handled through the Digital Sky platform. Requirements depend on the drone's size and category, the type of operation and where you fly, and the rules have been amended since they were introduced, so check the current position rather than relying on old information.</p>
-<p>On your website:</p>
+<h2>Local and industry SEO for drone operators</h2>
+<p>Most drone work is searched by city and service. Create a coverage page listing the regions you serve, keep your Google Business Profile complete with real project photos, and write short case pages for notable jobs where clients agree. Industry articles also help: a solar inspection page can link to guidance like <a href="/blog/solar-company-website-guide/">what solar companies need on their websites</a>, and spraying pages can speak to the farm buyers covered in <a href="/blog/website-for-agriculture-businesses/">websites for agriculture businesses</a>.</p>
+<p>Avoid creating dozens of near-identical city pages. Build a page for a city only when you have real work, travel terms or local details to say about it.</p>
+
+<h2>Pricing: explain what drives the quote</h2>
+<p>Few drone operators publish fixed prices, and that is fine. Instead, explain the factors: location and travel, flying time, site size, permissions needed, the type of output, editing or processing time, and urgency. A short &quot;how we quote&quot; section reduces price-only enquiries and helps serious buyers send the details you need.</p>
+
+<h2>Project and case pages that win repeat work</h2>
+<p>Corporate and infrastructure buyers often shortlist two or three operators and then compare past jobs. A short project page answers their questions far better than a gallery. For each project where the client agrees, include:</p>
 <ul>
-  <li>State what you genuinely hold, such as drone registration and remote pilot certificates, in plain words</li>
-  <li>Don't use phrases like "DGCA approved" or "government certified" unless they accurately describe your status</li>
-  <li>Explain that you check airspace zones before every job and that some locations need extra permission or can't be flown at all</li>
-  <li>Mention insurance only if you have it, and describe what it covers accurately</li>
-  <li>For spraying, note that crop protection products and application are subject to separate agriculture guidelines, and that farmers should follow label and expert advice</li>
+<li><strong>The brief:</strong> what the client needed and why, in two or three sentences.</li>
+<li><strong>The site:</strong> type of location, approximate area and any challenges such as wind, crowds or restricted zones nearby.</li>
+<li><strong>The approach:</strong> equipment used, number of flights, ground control if relevant and how the data was processed.</li>
+<li><strong>The output:</strong> a sample image, map crop or report page, with sensitive details removed.</li>
+<li><strong>Timeline:</strong> from booking to delivery, stated honestly.</li>
 </ul>
-<p>Honest compliance information is a selling point. Corporate and government-linked clients often have to verify it before issuing a work order.</p>
+<p>If a client cannot be named, describe the job generically, such as &quot;a solar plant in western Maharashtra&quot;, and never imply an endorsement you do not have. Real, specific projects do more for trust than a long list of logos.</p>
 
-<h2>Enquiry forms that capture site details</h2>
-<p>A generic contact form leads to long back-and-forth. Ask for what you need to quote:</p>
-<ul>
-  <li>Service required and purpose of the footage or data</li>
-  <li>Site location, with a map pin or address</li>
-  <li>Approximate area (acres or hectares) for surveys and spraying</li>
-  <li>Preferred dates and any deadline</li>
-  <li>For spraying: crop, stage and what is to be applied</li>
-  <li>Phone and WhatsApp for quick follow-up</li>
-</ul>
-<p>Keep the first step short, then ask for details on a second step. For ad campaigns targeting one service, such as real estate aerial shoots, a focused landing page usually converts better than sending traffic to the homepage.</p>
+<h2>Equipment, team and insurance pages</h2>
+<p>Technical buyers like to know what will turn up on site. A simple equipment page listing the drone types you fly, cameras or sensors such as thermal or multispectral if you have them, and the processing software you use helps them judge whether you suit the job. Keep it factual and update it when you change kit.</p>
+<p>A team section with pilot photos, roles and genuine qualifications makes the business feel real, which matters because clients are letting strangers fly over their property or event. If you hold liability insurance, say so plainly and be ready to share the certificate on request rather than uploading it publicly.</p>
+<p>For seasonal work such as spraying or wedding shoots, add a booking calendar note or a &quot;current availability&quot; line you can edit from WordPress, so visitors know when to enquire early.</p>
 
-<h2>Getting found locally</h2>
-<p>People search for drone services by task and place: "drone shoot in {city}", "drone survey company {state}", "solar panel drone inspection" or "agriculture drone spraying near me".</p>
-<ul>
-  <li>Complete your Google Business Profile with services, service areas and real project photos</li>
-  <li>Create location pages only where you genuinely operate and can show local work; see <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a></li>
-  <li>Write project write-ups with the client's permission, describing the site type, challenge and deliverable</li>
-  <li>Ask satisfied clients for Google reviews that mention the service they used</li>
-</ul>
-<p>Keep the site fast despite heavy media: compress stills, avoid autoplaying background video on mobile and keep call and WhatsApp buttons easy to reach.</p>
+<h2>FAQs</h2>
+<h3>What should a website for drone services include?</h3>
+<p>Separate pages for each service, sample deliverables, your coverage area, an honest note on registrations and safety, a portfolio, and an enquiry form that asks for location, scope and deadline.</p>
+<h3>Should I mention DGCA registration on my website?</h3>
+<p>Mention only what you genuinely hold, keep it up to date and avoid overstating it. For the rules themselves, link to the official sources because they change.</p>
+<h3>How do I show drone videos without slowing the site?</h3>
+<p>Host videos on YouTube or Vimeo, load them only when a visitor clicks play, and compress still images before uploading.</p>
+<h3>Can one website cover both wedding shoots and industrial surveys?</h3>
+<p>Yes, if each has its own page and portfolio. Keep the homepage neutral and let visitors choose their service early.</p>
+<h3>Is WordPress suitable for a drone company website?</h3>
+<p>Yes. WordPress handles service pages, portfolios, forms and a blog well, and it can be set up so your team updates projects without a developer.</p>
 
-<p>Planning a website for your drone business, or a landing page for a specific service? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<p>If you run a drone business and want a site that wins the right jobs, see <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> for a single service campaign. I work with operators across the country; see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
   },
   {
