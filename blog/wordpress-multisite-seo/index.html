@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Multisite SEO: Sitemaps, Domains and Duplicates</title>
-  <meta name="description" content="WordPress Multisite SEO explained: subdomains vs subdirectories, SEO plugins, sitemaps per site, Search Console, duplicate risks and hreflang across sites.">
+  <title>WordPress Multisite SEO: Sitemaps, Canonicals and Hreflang</title>
+  <meta name="description" content="WordPress multisite SEO explained: subdomains vs subfolders, SEO plugins, sitemaps per site, Search Console, duplicate content, hreflang and when to split.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-multisite-seo/">
-  <meta property="og:title" content="WordPress Multisite SEO: Sitemaps, Domains and Duplicates">
-  <meta property="og:description" content="WordPress Multisite SEO explained: subdomains vs subdirectories, SEO plugins, sitemaps per site, Search Console, duplicate risks and hreflang across sites.">
+  <meta property="og:title" content="WordPress Multisite SEO: Sitemaps, Canonicals and Hreflang">
+  <meta property="og:description" content="WordPress multisite SEO explained: subdomains vs subfolders, SEO plugins, sitemaps per site, Search Console, duplicate content, hreflang and when to split.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-multisite-seo.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-multisite-seo/#article",
       "headline": "WordPress Multisite SEO: Sitemaps, Search Console, Canonicals and Hreflang",
-      "description": "WordPress Multisite SEO explained: subdomains vs subdirectories, SEO plugins, sitemaps per site, Search Console, duplicate risks and hreflang across sites.",
+      "description": "WordPress multisite SEO explained: subdomains vs subfolders, SEO plugins, sitemaps per site, Search Console, duplicate content, hreflang and when to split.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-multisite-seo/",
       "image": "https://samverse.space/assets/og/blog-wordpress-multisite-seo.png",
       "articleSection": "SEO",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/seo-growth/">SEO &amp; growth</a></nav>
           <a class="post-cat" href="/blog/topic/seo-growth/">SEO</a>
           <h1>WordPress Multisite SEO: Sitemaps, Search Console, Canonicals and Hreflang</h1>
-          <p class="post-dek">WordPress Multisite SEO explained: subdomains vs subdirectories, SEO plugins, sitemaps per site, Search Console, duplicate risks and hreflang across sites.</p>
+          <p class="post-dek">WordPress multisite SEO explained: subdomains vs subfolders, SEO plugins, sitemaps per site, Search Console, duplicate content, hreflang and when to split.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 7 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Multisite%20SEO%3A%20Sitemaps%2C%20Search%20Console%2C%20Canonicals%20and%20Hreflang%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-multisite-seo%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -154,47 +154,53 @@
             <summary>On this page</summary>
             <ol>
               <li><a href="#subdomain-vs-subdirectory-multisite-for-seo">Subdomain vs subdirectory multisite for SEO</a></li>
-              <li><a href="#seo-plugins-on-multisite">SEO plugins on multisite</a></li>
+              <li><a href="#wordpress-multisite-seo-plugin-settings">WordPress multisite SEO plugin settings</a></li>
               <li><a href="#sitemaps-per-site">Sitemaps per site</a></li>
               <li><a href="#search-console-properties">Search Console properties</a></li>
               <li><a href="#canonical-and-duplicate-risks-across-sites">Canonical and duplicate risks across sites</a></li>
               <li><a href="#hreflang-when-sites-are-language-versions">Hreflang when sites are language versions</a></li>
+              <li><a href="#common-multisite-setups-in-india-and-their-seo-needs">Common multisite setups in India and their SEO needs</a></li>
+              <li><a href="#performance-and-security-affect-every-site">Performance and security affect every site</a></li>
               <li><a href="#when-separate-installs-are-better">When separate installs are better</a></li>
+              <li><a href="#a-multisite-seo-checklist">A multisite SEO checklist</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Google treats each site in a network as a separate site, so every one needs its own SEO settings, sitemap and Search Console checks.</li>
-              <li>On a subdirectory network only the root robots.txt is read, so list or submit every site's sitemap and check each site's search engine visibility setting.</li>
-              <li>Avoid copied pages across sites, redirect old addresses after domain mapping, and use hreflang only when sites are true language versions of each other.</li>
+              <li>Google treats each site in a multisite network as its own site, so each one needs its own sitemap, Search Console property, titles and internal links.</li>
+              <li>Duplicate content across network sites is the biggest risk; give each site unique content or use canonicals, and use hreflang only for genuine language or country versions.</li>
+              <li>Multisite suits groups that share code and users; if sites have different owners, plugins or growth plans, separate installs are often simpler and safer.</li>
             </ul>
           </div>
-<p>WordPress Multisite runs a network of sites from one installation. That is convenient for the team managing it, but Google doesn't see a network: it sees separate sites, each needing its own titles, sitemaps, indexing checks and clear signals about which pages are the originals. Most multi-site WordPress SEO problems come from forgetting that. If you're still deciding whether you need a network at all, start with <a href="/blog/wordpress-multisite-when-needed/">when a business actually needs WordPress Multisite</a>.</p>
+<p>WordPress multisite SEO works much like SEO for separate sites, because Google treats each site in the network as its own website. Each one needs its own sitemap, Search Console property, titles, internal links and unique content. The main extra risks are duplicate content across sites, plugin settings that differ between sites, and shared performance problems.</p>
+<p>This guide covers the choices and settings that matter for multisite networks run by Indian businesses, such as franchise groups, school chains, multi-brand companies and sites with Hindi and English versions. If you are still deciding whether multisite is right at all, read <a href="/blog/wordpress-multisite-when-needed/">when you actually need WordPress multisite</a> first.</p>
 
 <h2 id="subdomain-vs-subdirectory-multisite-for-seo">Subdomain vs subdirectory multisite for SEO</h2>
-<p>When a network is set up, you choose how sites are addressed: subdomains (delhi.example.com) or subdirectories (example.com/delhi/). Any site can also be given its own domain later through domain mapping, which is built into WordPress.</p>
-<p>Google has said publicly that it can crawl and rank both structures, so neither is a ranking trick. The practical differences matter more:</p>
+<p>Multisite can run sites as subdomains (<code>pune.example.com</code>) or subdirectories (<code>example.com/pune/</code>), and the choice is made at setup. Both can rank well. The practical differences:</p>
 <table>
-  <thead><tr><th></th><th>Subdirectories</th><th>Subdomains</th></tr></thead>
-  <tbody>
-    <tr><td>How it looks</td><td>One site with sections</td><td>Separate sites under one brand</td></tr>
-    <tr><td>robots.txt</td><td>One shared file at the domain root</td><td>One per subdomain</td></tr>
-    <tr><td>Search Console</td><td>One property, plus optional per-folder properties</td><td>A Domain property, or one property per subdomain</td></tr>
-    <tr><td>Best suited to</td><td>Branches or departments of one organisation</td><td>Sites that are genuinely separate in content or audience</td></tr>
-  </tbody>
+<thead><tr><th>Factor</th><th>Subdirectories</th><th>Subdomains</th></tr></thead>
+<tbody>
+<tr><td>How users see it</td><td>Part of one site</td><td>Related but separate site</td></tr>
+<tr><td>Search Console</td><td>Can be covered by one domain property, or added separately as URL-prefix properties</td><td>Covered by a domain property, or added separately</td></tr>
+<tr><td>Best for</td><td>Language versions, branches of one brand</td><td>Distinct brands, departments or very different audiences</td></tr>
+<tr><td>Changing later</td><td>Hard: needs a migration and redirects</td><td>Hard: needs a migration and redirects</td></tr>
+<tr><td>Mapped custom domains</td><td>Possible with domain mapping</td><td>Possible with domain mapping</td></tr>
+</tbody>
 </table>
-<p>Choose before launch. Switching a live network from one structure to the other changes every URL, needs a full set of 301 redirects and is a project in itself. Subdirectory networks also usually add /blog/ to the main site's post URLs by default, to avoid clashes with site names, so check your permalinks before you publish.</p>
+<p>Google has said both structures are fine. Choose based on how closely related the sites are, and avoid switching later, because that changes every URL in the network.</p>
 
-<h2 id="seo-plugins-on-multisite">SEO plugins on multisite</h2>
-<p>Popular SEO plugins such as Yoast SEO and Rank Math state Multisite support, but the details differ and change between versions, so check the current documentation before you commit. Points to understand:</p>
+<h2 id="wordpress-multisite-seo-plugin-settings">WordPress multisite SEO plugin settings</h2>
+<p>Popular SEO plugins support multisite, but they behave differently. Some let you set network-wide defaults that each site can override; others are configured site by site. After activating an SEO plugin network-wide, check each site for:</p>
 <ul>
-  <li><strong>Network activation</strong> switches a plugin on for every site at once, and individual site admins can't turn it off. Activating per site gives more control but more to keep track of.</li>
-  <li><strong>Settings are mostly per site.</strong> Titles, meta descriptions, schema details, social images and the sitemap all need configuring on each site, even when the plugin is network-activated.</li>
-  <li><strong>Network-level options</strong> in some plugins let a super admin set defaults for new sites or lock certain settings.</li>
-  <li><strong>Use one SEO plugin across the network</strong> where you can. Two plugins outputting titles, canonicals or schema on the same site cause duplicate tags.</li>
+<li>Title and meta description templates.</li>
+<li>Whether the site is set to discourage search engines (often left on from staging).</li>
+<li>Noindex settings for archives, tags and attachment pages.</li>
+<li>Schema settings such as organisation name, logo and local business details.</li>
+<li>Breadcrumbs and social sharing images.</li>
 </ul>
-<p>Also check each site's <strong>Settings &rarr; Reading &rarr; Search engine visibility</strong> box. Every site in a network has its own, and a site created for testing and later launched with the box still ticked will keep asking search engines not to index it.</p>
+<p>A common problem is one site in the network being accidentally noindexed for months because its &quot;Search engine visibility&quot; setting was never changed after launch. Check each site individually. The <a href="/blog/wordpress-seo-plugins-compared/">SEO plugins comparison</a> covers plugin differences.</p>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress seo?</strong>
@@ -203,45 +209,71 @@
 </aside>
 
 <h2 id="sitemaps-per-site">Sitemaps per site</h2>
-<p>Each site in a network has its own sitemap, whether it comes from WordPress's built-in sitemap (/wp-sitemap.xml) or from your SEO plugin. On a subdirectory network that means addresses like example.com/sitemap_index.xml for the main site and example.com/delhi/sitemap_index.xml for a branch site. The exact file name depends on the plugin.</p>
-<p>Search engines only read robots.txt at the root of a host. On a subdirectory network, example.com/delhi/robots.txt is ignored, so list every site's sitemap in the root robots.txt or submit each one in Search Console, and repeat the check whenever a new site is added. Subdomain and mapped-domain sites each serve their own robots.txt and sitemap. See <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a> for what a healthy sitemap contains.</p>
+<p>Each site in the network generates its own XML sitemap through WordPress core or the SEO plugin. Submit each sitemap in Search Console separately, and reference each in that site&apos;s robots.txt. Check that sitemaps only include URLs from their own site and do not include noindexed pages, redirects or staging addresses. If you use mapped domains, make sure sitemap URLs use the final mapped domain, not the internal network address. The <a href="/blog/xml-sitemaps-explained/">XML sitemaps guide</a> explains what a clean sitemap should contain, and <a href="/blog/search-console-sitemap-couldnt-fetch/">fixing &quot;sitemap couldn&apos;t fetch&quot;</a> helps when submission fails.</p>
 
 <h2 id="search-console-properties">Search Console properties</h2>
-<p>A <strong>Domain property</strong>, verified with a DNS record, covers every subdomain and protocol of example.com, so it's the simplest starting point for a network. It shows the whole network's data together, though, which makes it hard to see how one branch site is doing.</p>
-<ul>
-  <li><strong>Subdirectory sites:</strong> add a URL-prefix property for each site, such as https://example.com/delhi/, to get its own performance and indexing reports.</li>
-  <li><strong>Subdomain sites:</strong> add a URL-prefix property per subdomain, or filter the Domain property's reports by page.</li>
-  <li><strong>Mapped domains:</strong> each separate domain needs its own property.</li>
-</ul>
-<p>Submit each sitemap in the property that covers it.</p>
+<p>A domain property in Search Console covers every subdomain and protocol, which suits subdomain networks if you want one overview. Still add each site as its own URL-prefix property too, so you can see indexing, performance and errors per site. For subdirectory networks, URL-prefix properties for each site (such as <code>https://example.com/hindi/</code>) give a separate view of each section. Give access only to the people who manage each site. The guide to <a href="/blog/google-search-console-reports-explained/">Search Console reports</a> explains what to watch.</p>
 
 <h2 id="canonical-and-duplicate-risks-across-sites">Canonical and duplicate risks across sites</h2>
-<p>Networks make copying easy, which is where most duplicate problems start:</p>
+<p>Networks often reuse content: the same service descriptions for each franchise branch, the same product pages on several brand sites, or blog posts copied across. Google will usually pick one version to show and ignore the others, which may not be the one you want.</p>
 <ul>
-  <li><strong>Shared service or product pages</strong> copied to every branch site with only the city name changed</li>
-  <li><strong>Content pushed to many sites</strong> by a syndication or duplication plugin</li>
-  <li><strong>Template sites</strong> cloned with sample content or placeholder pages still published</li>
-  <li><strong>Old addresses still live</strong> after domain mapping, so a site answers on both its subdomain and its new domain</li>
-  <li><strong>Test or staging sites</strong> inside the network that were never hidden from search engines</li>
+<li><strong>Write unique content for each site</strong> wherever possible, especially home pages and main service pages. For branch sites, include local details: address, team, local projects, timings and directions.</li>
+<li><strong>Use canonical tags</strong> when the same article must appear on two sites, pointing to the main version. Cross-domain canonicals are a hint, not a command, so unique content is still better.</li>
+<li><strong>Avoid duplicate location pages</strong> with only the city name changed; they rarely help and can look like doorway pages.</li>
+<li><strong>Check internal links</strong> so each site links to its own pages and links across the network only where it helps users.</li>
 </ul>
-<p>The best fix is unique, useful content on each site: local contact details, team, reviews, photos and the services that branch really offers. Where the same article genuinely must appear on two sites, add a cross-domain canonical tag on the copy pointing to the original, remembering that Google treats it as a hint rather than an order. Old addresses should 301 redirect to the current one. See <a href="/blog/canonical-tags-explained/">canonical tags explained</a> for how canonicals, redirects and noindex differ.</p>
 
 <h2 id="hreflang-when-sites-are-language-versions">Hreflang when sites are language versions</h2>
-<p>Some networks run one site per language, for example example.com/en/ and example.com/hi/. Google then needs hreflang tags that link each page to its translations, with return tags in both directions and an x-default where it fits.</p>
-<p>WordPress core doesn't know that a page on one site is a translation of a page on another, so a network needs a plugin built to connect them (MultilingualPress is one designed for Multisite; check its current features) or custom code. Make sure the setup outputs hreflang, keeps the links updated when pages are added or removed, and works with your SEO plugin's sitemaps. For most businesses starting fresh, a multilingual plugin on a single site is simpler. <a href="/blog/hreflang-multilingual-seo-india/">Hreflang and multilingual SEO for Indian websites</a> covers language codes and common errors.</p>
+<p>If your network has language versions, such as English and Hindi, or country versions, such as India and UAE, hreflang tags tell Google which page to show to which audience. Each page must list every version including itself, and the tags must be reciprocal. Multilingual plugins that support multisite can manage this, but test a few pages by viewing the source. The <a href="/blog/hreflang-multilingual-seo-india/">hreflang and multilingual SEO guide for India</a> covers the details, and <a href="/blog/multilingual-wordpress-website-hindi-english/">Hindi and English WordPress websites</a> compares multisite with single-site language plugins.</p>
+<p>Do not use hreflang for sites that are simply different branches in the same language; that is not what it is for.</p>
+
+<h2 id="common-multisite-setups-in-india-and-their-seo-needs">Common multisite setups in India and their SEO needs</h2>
+<p>Different kinds of networks have different priorities:</p>
+<ul>
+<li><strong>School or coaching chains:</strong> each campus site needs its own address, admissions contact, facilities, results notices and events. The main site should carry shared content such as the curriculum and link to each campus, so campus pages are not copies of each other.</li>
+<li><strong>Franchise and multi-branch service businesses:</strong> each branch site should target its own city or area with local details, its own Google Business Profile link and its own reviews. Head office pages should not compete with branch pages for the same local searches.</li>
+<li><strong>Multi-brand manufacturers:</strong> each brand site targets different products and buyers, so overlap is usually small. The main risk is shared product descriptions; rewrite them for each brand.</li>
+<li><strong>Hindi and English, or regional language sites:</strong> these need hreflang, translated (not machine-dumped) content and language-appropriate titles and descriptions.</li>
+</ul>
+<p>In each case, decide which site should rank for which searches before writing content. A simple sheet listing the main search phrases and the site and page meant to rank for each one prevents network sites from competing with each other, which is one of the quieter ways multisite networks lose traffic.</p>
+
+<h2 id="performance-and-security-affect-every-site">Performance and security affect every site</h2>
+<p>Every site in a multisite network shares the same WordPress installation, plugins and database. A slow plugin, a heavy theme or an overloaded server affects all of them, and a security problem on one site can put the whole network at risk. For SEO this matters because slow pages and hacked spam pages hurt rankings across the network. Keep plugins lean, use caching that supports multisite, choose hosting with enough resources for the whole network and run updates carefully on staging first. If the network has become slow, the guide on <a href="/blog/wordpress-multisite-slow/">fixing a slow WordPress multisite</a> walks through the usual causes.</p>
 
 <h2 id="when-separate-installs-are-better">When separate installs are better</h2>
-<p>Multisite doesn't help or hurt rankings by itself. It's an admin convenience, and it becomes a liability when the sites stop sharing much. Separate WordPress installs are usually better when:</p>
+<p>Multisite makes sense when sites share code, users and design, and when one team manages them all. Separate installs are often better when:</p>
 <ul>
-  <li>Sites need different plugins, themes or hosting</li>
-  <li>One site has far more traffic or content than the rest</li>
-  <li>Sites belong to different businesses or clients who may move away later</li>
-  <li>Different teams want their own SEO plugins, staging sites and release schedules</li>
-  <li>A plugin you rely on doesn't support Multisite</li>
+<li>Sites have different owners, such as franchisees who want control.</li>
+<li>Sites need very different plugins, for example one runs WooCommerce and another is a simple brochure.</li>
+<li>One site may be sold or moved separately later.</li>
+<li>One site gets far more traffic and needs its own hosting.</li>
 </ul>
-<p>Moving a site out of a network later is possible, but it means exporting content, users and media, re-creating settings, and redirecting URLs if they change.</p>
+<p>Splitting a site out of a network later is possible but needs careful migration and redirects, so think about this early.</p>
 
-<p>Running a WordPress network and not sure each site is set up properly for search? I can check plugins, sitemaps, Search Console, canonicals and hreflang across the network and fix what's missing. See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<h2 id="a-multisite-seo-checklist">A multisite SEO checklist</h2>
+<ol>
+<li>Each site indexable, with search engine visibility checked.</li>
+<li>Unique titles, descriptions and main content per site.</li>
+<li>One sitemap per site, submitted in Search Console.</li>
+<li>A Search Console property per site, plus a domain property if useful.</li>
+<li>Canonicals set correctly, with no cross-site duplicates by accident.</li>
+<li>Hreflang only where there are true language or country versions.</li>
+<li>Fast, secure, shared hosting and plugins tested on staging.</li>
+</ol>
+
+<h2 id="faqs">FAQs</h2>
+<h3>Is WordPress multisite bad for SEO?</h3>
+<p>No. Google treats each site in the network as its own site. SEO problems come from duplicate content, misconfigured plugins, accidental noindex settings or a slow shared setup, not from multisite itself.</p>
+<h3>Subdomain or subdirectory: which is better for WordPress multisite SEO?</h3>
+<p>Both can rank. Subdirectories suit language versions or branches of one brand; subdomains suit distinct brands or audiences. Pick at setup and avoid changing later.</p>
+<h3>Do I need a separate sitemap for each site in a multisite network?</h3>
+<p>Yes. Each site produces its own sitemap; submit each one in Search Console and check it only lists that site&apos;s indexable URLs.</p>
+<h3>How do I avoid duplicate content across multisite sites?</h3>
+<p>Write unique content for each site, add genuine local or brand details, and use canonical tags when the same content must appear on more than one site.</p>
+<h3>Should franchise branches use multisite?</h3>
+<p>It can work well when head office manages all branch sites centrally. If franchisees need control or different features, separate installs may be simpler.</p>
+
+<p>If you run a multisite network and want its SEO checked or cleaned up, I handle this through <a href="/wordpress-seo-services/">WordPress SEO services</a>, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for setup, migration or splitting sites out.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -278,12 +310,16 @@
             <strong>On this page</strong>
             <ol>
               <li><a href="#subdomain-vs-subdirectory-multisite-for-seo">Subdomain vs subdirectory multisite for SEO</a></li>
-              <li><a href="#seo-plugins-on-multisite">SEO plugins on multisite</a></li>
+              <li><a href="#wordpress-multisite-seo-plugin-settings">WordPress multisite SEO plugin settings</a></li>
               <li><a href="#sitemaps-per-site">Sitemaps per site</a></li>
               <li><a href="#search-console-properties">Search Console properties</a></li>
               <li><a href="#canonical-and-duplicate-risks-across-sites">Canonical and duplicate risks across sites</a></li>
               <li><a href="#hreflang-when-sites-are-language-versions">Hreflang when sites are language versions</a></li>
+              <li><a href="#common-multisite-setups-in-india-and-their-seo-needs">Common multisite setups in India and their SEO needs</a></li>
+              <li><a href="#performance-and-security-affect-every-site">Performance and security affect every site</a></li>
               <li><a href="#when-separate-installs-are-better">When separate installs are better</a></li>
+              <li><a href="#a-multisite-seo-checklist">A multisite SEO checklist</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -311,8 +347,8 @@
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/hreflang-multilingual-seo-india/"><img class="post-card-img" src="/assets/og/blog-hreflang-multilingual-seo-india.webp" alt="Hreflang Tags for India: Multilingual SEO for Hindi and Regional-Language Versions" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>Hreflang Tags for India: Multilingual SEO for Hindi and Regional-Language Versions</h3><p>Hreflang tags for India: codes for Hindi, Marathi, Tamil and other Indian languages, return tags, x-default, HTML vs sitemap, plugins and errors.</p><span class="post-card-meta">30 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/xml-sitemaps-explained/"><img class="post-card-img" src="/assets/og/blog-xml-sitemaps-explained.webp" alt="XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress</h3><p>XML sitemaps explained: what a sitemap does, what to include or leave out, how WordPress, Yoast and Rank Math build one, and how to submit it to Google.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/canonical-tags-explained/"><img class="post-card-img" src="/assets/og/blog-canonical-tags-explained.webp" alt="Canonical Tags Explained: What rel=canonical Does and How to Get It Right" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>Canonical Tags Explained: What rel=canonical Does and How to Get It Right</h3><p>What a canonical tag does, why Google treats it as a hint, how WordPress sets it, and how to fix parameter, pagination, www and Search Console canonical issues.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-seo-plugins-compared/"><img class="post-card-img" src="/assets/og/blog-wordpress-seo-plugins-compared.webp" alt="Yoast SEO vs Rank Math vs All in One SEO: Which WordPress SEO Plugin Should You Use?" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>Yoast SEO vs Rank Math vs All in One SEO: Which WordPress SEO Plugin Should You Use?</h3><p>Yoast vs Rank Math vs AIOSEO compared for Indian business sites: features, schema, sitemaps, WooCommerce support, switching safely and what matters more.</p><span class="post-card-meta">1 October 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/google-search-console-reports-explained/"><img class="post-card-img" src="/assets/og/blog-google-search-console-reports-explained.webp" alt="Google Search Console Reports Explained: A Tour of Every Report, What It Shows and What to Do About It" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>Google Search Console Reports Explained: A Tour of Every Report, What It Shows and What to Do About It</h3><p>Google Search Console reports explained: Performance, URL Inspection, Pages, Sitemaps, Core Web Vitals, Links and more, and what to do with each.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

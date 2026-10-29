@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google Ads Conversion Tracking on WordPress: Setup Guide</title>
-  <meta name="description" content="How to set up Google Ads conversion tracking on WordPress for forms, calls, WhatsApp clicks and WooCommerce sales: GA4 import vs Ads tag, testing and consent.">
+  <meta name="description" content="How to set up Google Ads conversion tracking on WordPress: decide conversions, track forms, calls, WhatsApp clicks and WooCommerce purchases, then test it.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/google-ads-conversion-tracking-setup/">
   <meta property="og:title" content="Google Ads Conversion Tracking on WordPress: Setup Guide">
-  <meta property="og:description" content="How to set up Google Ads conversion tracking on WordPress for forms, calls, WhatsApp clicks and WooCommerce sales: GA4 import vs Ads tag, testing and consent.">
+  <meta property="og:description" content="How to set up Google Ads conversion tracking on WordPress: decide conversions, track forms, calls, WhatsApp clicks and WooCommerce purchases, then test it.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-google-ads-conversion-tracking-setup.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/google-ads-conversion-tracking-setup/#article",
       "headline": "Google Ads Conversion Tracking on WordPress: Forms, Calls and Purchases",
-      "description": "How to set up Google Ads conversion tracking on WordPress for forms, calls, WhatsApp clicks and WooCommerce sales: GA4 import vs Ads tag, testing and consent.",
+      "description": "How to set up Google Ads conversion tracking on WordPress: decide conversions, track forms, calls, WhatsApp clicks and WooCommerce purchases, then test it.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-09-28",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/google-ads-conversion-tracking-setup/",
       "image": "https://samverse.space/assets/og/blog-google-ads-conversion-tracking-setup.png",
       "articleSection": "Growth",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/seo-growth/">SEO &amp; growth</a></nav>
           <a class="post-cat" href="/blog/topic/seo-growth/">Growth</a>
           <h1>Google Ads Conversion Tracking on WordPress: Forms, Calls and Purchases</h1>
-          <p class="post-dek">How to set up Google Ads conversion tracking on WordPress for forms, calls, WhatsApp clicks and WooCommerce sales: GA4 import vs Ads tag, testing and consent.</p>
+          <p class="post-dek">How to set up Google Ads conversion tracking on WordPress: decide conversions, track forms, calls, WhatsApp clicks and WooCommerce purchases, then test it.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · 6 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Google%20Ads%20Conversion%20Tracking%20on%20WordPress%3A%20Forms%2C%20Calls%20and%20Purchases%20https%3A%2F%2Fsamverse.space%2Fblog%2Fgoogle-ads-conversion-tracking-setup%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,46 +153,46 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
+              <li><a href="#why-conversion-tracking-matters-before-you-scale-ads">Why conversion tracking matters before you scale ads</a></li>
               <li><a href="#decide-what-counts-as-a-conversion">Decide what counts as a conversion</a></li>
-              <li><a href="#ga4-import-or-the-google-ads-tag">GA4 import or the Google Ads tag?</a></li>
+              <li><a href="#how-to-set-up-google-ads-conversion-tracking-on-wordpress">How to set up Google Ads conversion tracking on WordPress</a></li>
               <li><a href="#tracking-form-submissions">Tracking form submissions</a></li>
               <li><a href="#tracking-calls-and-whatsapp-clicks">Tracking calls and WhatsApp clicks</a></li>
               <li><a href="#tracking-woocommerce-purchases">Tracking WooCommerce purchases</a></li>
-              <li><a href="#consent-and-privacy">Consent and privacy</a></li>
+              <li><a href="#measuring-lead-quality-not-just-lead-count">Measuring lead quality, not just lead count</a></li>
+              <li><a href="#enhanced-conversions-and-consent">Enhanced conversions and consent</a></li>
               <li><a href="#test-before-you-spend">Test before you spend</a></li>
               <li><a href="#common-mistakes-to-avoid">Common mistakes to avoid</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Track only actions that mean business (forms, calls, WhatsApp clicks and purchases) and mark the most valuable as primary conversions.</li>
-              <li>Import GA4 key events for simplicity or use the Google Ads tag for precision, but never count the same action twice.</li>
-              <li>Test every conversion before spending, pass value and order ID for WooCommerce sales, and cover tracking and consent in your privacy policy.</li>
+              <li>Decide which actions really matter, such as enquiries, calls and purchases, and mark only those as primary conversions so Google Ads optimises for real leads.</li>
+              <li>Track form submissions on the thank-you step, calls and WhatsApp clicks as separate actions, and WooCommerce purchases with order value on the order-received page.</li>
+              <li>Test every conversion with Tag Assistant and a real test enquiry before spending, and check consent settings, duplicate counting and the conversion window.</li>
             </ul>
           </div>
-<p>If you run Google Ads without conversion tracking, you're paying for clicks without knowing which ones turn into enquiries or sales, and Google's automated bidding has nothing useful to learn from. Here's how to track forms, calls, WhatsApp clicks and online purchases on a WordPress site, and avoid the traps that catch many businesses.</p>
+<p>Google Ads conversion tracking on WordPress tells Google which clicks turned into enquiries, calls or sales, so you can see what your ad spend actually produces and let bidding optimise for real results. To set it up, decide which actions count, send them to Google Ads either through the Google tag or by importing GA4 key events, and test each one before you spend more.</p>
+<p>This guide walks through the choices and setup for forms, phone calls, WhatsApp clicks and WooCommerce purchases, with the common mistakes Indian small businesses run into.</p>
+
+<h2 id="why-conversion-tracking-matters-before-you-scale-ads">Why conversion tracking matters before you scale ads</h2>
+<p>Without tracking, Google Ads only knows about clicks. Smart bidding strategies such as Maximise Conversions need conversion data to work properly, and you cannot tell which keywords bring leads and which only bring traffic. Many small businesses run ads for months on clicks alone and then decide &quot;Google Ads doesn&apos;t work&quot;, when the real problem is that nobody could see what was working. If you are still planning a budget, read <a href="/blog/google-ads-budget-small-business/">how to set a Google Ads budget for a small business</a> first.</p>
 
 <h2 id="decide-what-counts-as-a-conversion">Decide what counts as a conversion</h2>
-<p>Start with a short list of actions that genuinely mean business, not every click on the site. For most businesses it looks like this:</p>
 <table>
-  <thead><tr><th>Action</th><th>How it's usually tracked</th><th>Count setting</th></tr></thead>
-  <tbody>
-    <tr><td>Enquiry or quote form submitted</td><td>Thank-you page or form success event</td><td>One</td></tr>
-    <tr><td>Phone number tapped on the site</td><td>Click on a tap-to-call link</td><td>One</td></tr>
-    <tr><td>WhatsApp button clicked</td><td>Click on the click-to-chat link</td><td>One</td></tr>
-    <tr><td>Call made from the ad itself</td><td>Call assets in Google Ads</td><td>One</td></tr>
-    <tr><td>Online purchase</td><td>WooCommerce order confirmation page</td><td>Every</td></tr>
-  </tbody>
+<thead><tr><th>Action</th><th>Type</th><th>Suggested status</th></tr></thead>
+<tbody>
+<tr><td>Enquiry or quote form submitted</td><td>Lead</td><td>Primary</td></tr>
+<tr><td>Call from ad (call extension or call asset)</td><td>Lead</td><td>Primary, with a minimum call length</td></tr>
+<tr><td>Click on phone number on website</td><td>Lead intent</td><td>Primary or secondary, depending on volume and quality</td></tr>
+<tr><td>WhatsApp button click</td><td>Lead intent</td><td>Often secondary at first</td></tr>
+<tr><td>WooCommerce purchase</td><td>Sale with value</td><td>Primary</td></tr>
+<tr><td>Add to cart, brochure download, page scroll</td><td>Micro action</td><td>Secondary only</td></tr>
+</tbody>
 </table>
-<p>"One" records a single conversion per ad click, which suits leads: someone who submits your form twice is still one lead. "Every" records each conversion, which suits purchases. Mark your most valuable actions as <strong>primary</strong> so Google uses them for bidding, and keep softer signals, such as brochure downloads, as <strong>secondary</strong> so they're reported without steering your budget.</p>
-
-<h2 id="ga4-import-or-the-google-ads-tag">GA4 import or the Google Ads tag?</h2>
-<h3>Importing GA4 key events</h3>
-<p>If Google Analytics 4 already tracks your forms and clicks as key events, you can link GA4 to Google Ads and import them. It's quick and you maintain one set of tracking. The trade-offs: imported conversions can take longer to appear, and the two tools attribute conversions differently, so the numbers rarely match exactly.</p>
-<h3>The Google Ads conversion tag</h3>
-<p>Here you create a conversion action in Google Ads and fire it on the matching action, using the Google tag or Google Tag Manager. It's generally the more precise option for bidding, but it's a second set of tags to maintain and test.</p>
-<p><strong>A sensible approach:</strong> smaller accounts usually do fine importing GA4 key events. If your ad spend is significant or you rely on automated bidding, use the Google Ads tag for your primary conversions. Whichever you choose, don't make both the GA4 import and the Ads tag primary for the same action, or every enquiry is counted twice.</p>
+<p>Primary conversions are what bidding optimises for. If you mark page views or add-to-carts as primary, Google will happily find you more of those rather than real leads.</p>
 
 <aside class="inline-cta">
   <strong>Need help with landing pages?</strong>
@@ -200,55 +200,75 @@
   <div><a href="/landing-page-design/" class="link-inline">See Landing Pages →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Google%20Ads%20Conversion%20Tracking%20on%20WordPress%3A%20Forms%2C%20Calls%20and%20Purchases%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
+<h2 id="how-to-set-up-google-ads-conversion-tracking-on-wordpress">How to set up Google Ads conversion tracking on WordPress</h2>
+<p>There are two main routes, and you should pick one per action to avoid counting twice.</p>
+<h3>Route 1: Import GA4 key events</h3>
+<p>If GA4 is already installed and tracking your forms and purchases, link GA4 to Google Ads, mark the events as key events in GA4, then import them into Google Ads as conversions. This is simpler to maintain and keeps one source of truth. The guide to <a href="/blog/ga4-events-explained/">GA4 events</a> explains how events and key events work, and <a href="/blog/setup-google-analytics-search-console/">setting up Google Analytics and Search Console</a> covers the basics.</p>
+<h3>Route 2: Google Ads conversion tag</h3>
+<p>Create a conversion action in Google Ads and fire its tag through Google Tag Manager or the Google tag on the thank-you step. This tends to report faster and supports features such as enhanced conversions directly. It needs a little more setup.</p>
+<p>Many sites use Tag Manager for both, which keeps tracking code out of the theme and makes testing easier.</p>
+
 <h2 id="tracking-form-submissions">Tracking form submissions</h2>
-<p>Count successful submissions, not clicks on the submit button, or you'll record failed attempts and spam bots too. Two reliable methods:</p>
-<ul>
-  <li><strong>Thank-you page:</strong> send visitors to a dedicated page after a successful submission and trigger the conversion when it loads. It's easy to test; see <a href="/blog/thank-you-pages-forms/">why every form needs a thank-you page</a>.</li>
-  <li><strong>Form success event:</strong> many forms submit without reloading the page. Most form plugins provide a success signal; Contact Form 7, for example, fires a wpcf7mailsent event when a message is sent, which Tag Manager or a small script can pick up.</li>
-</ul>
-<p>Keep the thank-you page out of your menus and out of search results (noindex), so casual visits don't inflate your numbers.</p>
+<p>The most reliable method is a thank-you page: after a successful submission, the form redirects to a page such as <code>/thank-you/</code>, and the conversion fires on that page only. Make sure the thank-you page cannot be reached in other ways, such as from the menu or Google search, by keeping it out of navigation and setting it to noindex.</p>
+<p>If your form shows a success message without changing page, you need an event that fires on successful submission. Popular WordPress form plugins expose such events or have integrations; avoid tracking the button click alone, because it also counts failed or empty submissions. Check your form plugin&apos;s documentation for the exact event name.</p>
 
 <h2 id="tracking-calls-and-whatsapp-clicks">Tracking calls and WhatsApp clicks</h2>
-<p>For many Indian businesses, calls and WhatsApp chats bring more enquiries than forms, so leaving them out makes your ads look worse.</p>
+<p>For many Indian service businesses, calls and WhatsApp bring more leads than forms. Track them separately so you can judge each:</p>
 <ul>
-  <li><strong>Calls from ads:</strong> with call assets, Google Ads can report calls made directly from the ad. Which call details are available, such as call length, depends on your country and account.</li>
-  <li><strong>Taps on your phone number:</strong> track clicks on tap-to-call links on your landing pages. This measures intent, not a completed call.</li>
-  <li><strong>WhatsApp clicks:</strong> track clicks on your click-to-chat button the same way, with a pre-filled message on ad landing pages so you can recognise those chats.</li>
+<li><strong>Calls from ads:</strong> use call assets with Google forwarding numbers where available, and set a minimum call length so short misdials do not count.</li>
+<li><strong>Clicks on phone numbers on the site:</strong> track clicks on <code>tel:</code> links as a conversion. This shows intent, not a completed call.</li>
+<li><strong>WhatsApp clicks:</strong> track clicks on <code>wa.me</code> or <code>api.whatsapp.com</code> links. Again, this is intent; the chat may never start.</li>
 </ul>
-<p>These are the same click events described in <a href="/blog/ga4-events-explained/">GA4 events explained</a>, so if you already track them in GA4, importing them is the quickest route.</p>
+<p>Because click-based conversions overcount, many businesses keep WhatsApp clicks as secondary at first and review actual chats before promoting them to primary. For deeper call measurement, see <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a>.</p>
 
 <h2 id="tracking-woocommerce-purchases">Tracking WooCommerce purchases</h2>
-<p>For online stores, fire the purchase conversion on the order confirmation page and pass three things with it:</p>
+<p>Purchases should fire once, on the order-received page, with the order value, currency (INR) and order ID. The order ID lets Google deduplicate if a customer reloads the page. Several WooCommerce integrations send purchase data to GA4 and Google Ads; check that yours includes value and transaction ID.</p>
+<p>Two Indian-specific issues to watch:</p>
 <ul>
-  <li><strong>Value:</strong> the order total, so you see revenue and return on ad spend, not just order counts</li>
-  <li><strong>Currency:</strong> INR, or whatever your store sells in</li>
-  <li><strong>Transaction ID:</strong> the WooCommerce order number, so a refreshed confirmation page isn't counted twice</li>
+<li><strong>Payment gateway redirects.</strong> With Razorpay, PayU or similar, the customer goes to the gateway and back. If they close the tab before returning, the purchase may not be tracked. Server-side or GA4 measurement protocol options can help, but at minimum compare tracked orders with WooCommerce orders weekly.</li>
+<li><strong>Cash on delivery.</strong> COD orders are placed but not yet paid, and some will be refused. Decide whether to count them at full value, and consider adjusting conversions later for returned or cancelled orders.</li>
 </ul>
-<p>Google's own Google for WooCommerce plugin can add the Google tag and purchase tracking, and Tag Manager plugins for WooCommerce are another route; check what each currently tracks. One practical catch: customers paying by UPI or through a payment gateway sometimes close the browser after paying and never reach the confirmation page. Compare tracked purchases with actual WooCommerce orders each month so you know the size of the gap.</p>
+<p>For ads that also run on Meta, the <a href="/blog/meta-pixel-conversions-api/">Meta Pixel and Conversions API guide</a> explains the equivalent setup there.</p>
 
-<h2 id="consent-and-privacy">Consent and privacy</h2>
-<p>Conversion tags use cookies and send visit data to Google, so mention Google Ads and analytics in your privacy policy. For visitors from the European Economic Area or the UK, Google generally requires consent collected through a banner and passed on via Consent Mode for some ad features. India's data protection rules are being phased in, so check current requirements or ask a lawyer. See <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie consent basics</a>.</p>
-<p><strong>Enhanced conversions</strong> can improve accuracy by sending a hashed (scrambled) version of the email address or phone number from your form to Google. It's useful, but it involves personal data, so switch it on only if your privacy policy covers it.</p>
+<h2 id="measuring-lead-quality-not-just-lead-count">Measuring lead quality, not just lead count</h2>
+<p>A form submission is not a customer. For service businesses, the next step is to check which conversions turned into real jobs. Keep a simple sheet or CRM that records the source of each lead, and note whether it was genuine, a wrong number, spam or a sale. Over a few weeks you will see which campaigns and keywords bring useful enquiries.</p>
+<p>When you have enough volume, Google Ads can also accept offline conversion imports, where you upload leads that became sales using the click ID captured on the form. This lets bidding favour searches that lead to real business rather than any enquiry. It needs a hidden field on the form to store the click ID and a routine for uploading results, so it suits businesses with a steady flow of leads. The guide to <a href="/blog/lead-scoring-small-business/">lead scoring for small businesses</a> explains how to grade enquiries consistently.</p>
+
+<h2 id="enhanced-conversions-and-consent">Enhanced conversions and consent</h2>
+<p>Enhanced conversions send hashed customer data, such as email or phone from the form, to improve matching when cookies are limited. It can improve measurement, but it involves personal data, so check your privacy policy explains it and that you have the right consent. India&apos;s data protection law and Google&apos;s own policies both apply; check the current rules. If you have visitors from regions that require consent mode, set it up properly with your consent banner.</p>
 
 <h2 id="test-before-you-spend">Test before you spend</h2>
 <ol>
-  <li>Use Google's Tag Assistant to preview your site and confirm each tag fires only on the right action.</li>
-  <li>Submit a real test enquiry, tap the phone and WhatsApp buttons on a mobile, and place a small test order if you run a store.</li>
-  <li>Check the events in GA4's Realtime or DebugView reports.</li>
-  <li>In Google Ads, check each conversion action's status; it can take several hours to update, and longer for GA4 imports.</li>
-  <li>After launch, compare the conversions Google Ads reports with the leads and orders you actually received.</li>
+<li>Use Google Tag Assistant to load your site and confirm the tag and conversion fire on the right step.</li>
+<li>Submit a real test enquiry and make a test purchase (a low-value product or a coupon), then check that each shows in Google Ads within a day.</li>
+<li>Check the conversion status in Google Ads changes from &quot;Unverified&quot; to recording conversions.</li>
+<li>Compare a week of conversions with actual leads in your inbox and orders in WooCommerce.</li>
 </ol>
+<p>Before launching ads, also check your landing page. The guide on <a href="/blog/website-ready-for-google-ads/">getting your website ready for Google Ads</a> covers what to fix first, such as slow loading, unclear offers and missing contact buttons.</p>
 
 <h2 id="common-mistakes-to-avoid">Common mistakes to avoid</h2>
 <ul>
-  <li><strong>Double counting:</strong> the same action tracked by a plugin, by Tag Manager and by a GA4 import</li>
-  <li><strong>Losing the click ID:</strong> Google Ads adds a click ID (gclid) to each ad click through auto-tagging; if auto-tagging is off, or a redirect strips URL parameters, conversions can't be matched to ads</li>
-  <li><strong>Tracking that silently breaks:</strong> a new form plugin, a redesign or a changed thank-you URL can stop conversions without warning; retest after every significant change</li>
-  <li><strong>Treating every action as equal:</strong> a brochure download isn't worth as much as a quote request, so use conversion values or keep minor actions secondary</li>
+<li>Counting the same conversion twice, once from GA4 import and once from the Ads tag.</li>
+<li>Firing the conversion on button clicks instead of successful submissions.</li>
+<li>Marking micro actions such as page views as primary conversions.</li>
+<li>Thank-you pages that are linked from the menu or indexed, so ordinary visits count as leads.</li>
+<li>Never comparing tracked conversions with real enquiries and orders.</li>
+<li>Changing the site or form plugin and forgetting that tracking depended on it.</li>
 </ul>
-<p>Before launching a campaign, also run through the <a href="/blog/website-ready-for-google-ads/">Google Ads readiness checklist</a>.</p>
 
-<p>Want landing pages with forms, calls and WhatsApp tracked correctly from day one? See <a href="/landing-page-design/">landing page design</a>, or for online stores, <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>How do I set up Google Ads conversion tracking on WordPress?</h3>
+<p>Decide your conversions, then either import GA4 key events into Google Ads or fire a Google Ads conversion tag through Tag Manager on the thank-you step. Test with Tag Assistant and a real test enquiry before relying on the data.</p>
+<h3>Should I use GA4 import or the Google Ads tag?</h3>
+<p>Either works. GA4 import is simpler to manage from one place; the Ads tag reports faster and supports some features directly. Use one route per action so nothing is counted twice.</p>
+<h3>Can I track WhatsApp clicks as conversions?</h3>
+<p>Yes, by tracking clicks on WhatsApp links. Treat them as intent rather than confirmed leads, and many businesses keep them as secondary until they check the quality of chats.</p>
+<h3>Why are my Google Ads conversions lower than my real orders?</h3>
+<p>Common causes are customers not returning from the payment gateway, ad blockers, consent settings, or tags missing on some pages. Compare reports with real orders and fix gaps step by step.</p>
+<h3>Do COD orders count as conversions?</h3>
+<p>They are tracked when the order is placed. Decide whether to count them at full value, and adjust later for cancelled or refused orders if your setup supports it.</p>
+
+<p>If you want conversion tracking set up and tested properly before you spend more on ads, I do this as part of <a href="/landing-page-design/">landing page design</a> and as part of <a href="/woocommerce-developer/">WooCommerce development</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off tracking setup.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -284,14 +304,17 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
+              <li><a href="#why-conversion-tracking-matters-before-you-scale-ads">Why conversion tracking matters before you scale ads</a></li>
               <li><a href="#decide-what-counts-as-a-conversion">Decide what counts as a conversion</a></li>
-              <li><a href="#ga4-import-or-the-google-ads-tag">GA4 import or the Google Ads tag?</a></li>
+              <li><a href="#how-to-set-up-google-ads-conversion-tracking-on-wordpress">How to set up Google Ads conversion tracking on WordPress</a></li>
               <li><a href="#tracking-form-submissions">Tracking form submissions</a></li>
               <li><a href="#tracking-calls-and-whatsapp-clicks">Tracking calls and WhatsApp clicks</a></li>
               <li><a href="#tracking-woocommerce-purchases">Tracking WooCommerce purchases</a></li>
-              <li><a href="#consent-and-privacy">Consent and privacy</a></li>
+              <li><a href="#measuring-lead-quality-not-just-lead-count">Measuring lead quality, not just lead count</a></li>
+              <li><a href="#enhanced-conversions-and-consent">Enhanced conversions and consent</a></li>
               <li><a href="#test-before-you-spend">Test before you spend</a></li>
               <li><a href="#common-mistakes-to-avoid">Common mistakes to avoid</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -320,7 +343,7 @@
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/seasonal-festival-campaigns-website/"><img class="post-card-img" src="/assets/og/blog-seasonal-festival-campaigns-website.webp" alt="Seasonal and Festival Campaigns on Your Website: Landing Pages, Offers, Gift Guides, Speed and Tracking for Diwali, Rakhi, Navratri and Wedding Season" width="1200" height="630" loading="lazy"><span class="work-tag">Growth</span><h3>Seasonal and Festival Campaigns on Your Website: Landing Pages, Offers, Gift Guides, Speed and Tracking for Diwali, Rakhi, Navratri and Wedding Season</h3><p>Plan festival and seasonal campaigns on your website: a permanent page per festival, coupons and scheduling, gift guides, speed under traffic and tracking.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/ga4-events-explained/"><img class="post-card-img" src="/assets/og/blog-ga4-events-explained.webp" alt="Google Analytics 4 Events Explained: Key Events, Enhanced Measurement, and Tracking Forms, WhatsApp and Calls on WordPress" width="1200" height="630" loading="lazy"><span class="work-tag">Growth</span><h3>Google Analytics 4 Events Explained: Key Events, Enhanced Measurement, and Tracking Forms, WhatsApp and Calls on WordPress</h3><p>GA4 events explained: key events, automatic and recommended events, tracking forms, WhatsApp and calls on WordPress with GTM, and DebugView testing.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/landing-page-mistakes-google-ads/"><img class="post-card-img" src="/assets/og/blog-landing-page-mistakes-google-ads.webp" alt="10 Landing Page Mistakes That Waste Your Google Ads Budget, and How to Fix Each One: Message Match, Speed, Forms, Tracking and Ad Policy" width="1200" height="630" loading="lazy"><span class="work-tag">Growth</span><h3>10 Landing Page Mistakes That Waste Your Google Ads Budget, and How to Fix Each One: Message Match, Speed, Forms, Tracking and Ad Policy</h3><p>Ten landing page mistakes that waste Google Ads budget, with fixes: message match, mobile speed, long forms, missing tracking, weak proof and ad policy issues.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/meta-pixel-conversions-api/"><img class="post-card-img" src="/assets/og/blog-meta-pixel-conversions-api.webp" alt="Meta Pixel and Conversions API Setup for WordPress and Shopify: A Practical Guide for Indian Businesses" width="1200" height="630" loading="lazy"><span class="work-tag">Growth</span><h3>Meta Pixel and Conversions API Setup for WordPress and Shopify: A Practical Guide for Indian Businesses</h3><p>How to set up the Meta Pixel and Conversions API on WordPress, WooCommerce or Shopify in India: events, deduplication, consent, testing and common errors.</p><span class="post-card-meta">28 September 2026 · 7 min read</span></a>
         </div>
       </div>
     </section>
