@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment Gateway Not Working in WooCommerce (India): Fixes</title>
-  <meta name="description" content="Razorpay, PayU, Cashfree, PhonePe or Paytm payments failing, or paid orders stuck in Pending payment? Check webhooks, keys, INR settings and firewall blocks.">
+  <title>WooCommerce Payment Gateway Not Working in India? Fixes</title>
+  <meta name="description" content="WooCommerce payment gateway not working in India? Fix failed UPI payments, orders stuck on pending, webhook errors and Razorpay or Cashfree issues.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/woocommerce-payment-gateway-not-working-india/">
-  <meta property="og:title" content="Payment Gateway Not Working in WooCommerce (India): Fixes">
-  <meta property="og:description" content="Razorpay, PayU, Cashfree, PhonePe or Paytm payments failing, or paid orders stuck in Pending payment? Check webhooks, keys, INR settings and firewall blocks.">
+  <meta property="og:title" content="WooCommerce Payment Gateway Not Working in India? Fixes">
+  <meta property="og:description" content="WooCommerce payment gateway not working in India? Fix failed UPI payments, orders stuck on pending, webhook errors and Razorpay or Cashfree issues.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-woocommerce-payment-gateway-not-working-india.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/woocommerce-payment-gateway-not-working-india/#article",
       "headline": "Payment Gateway Not Working in WooCommerce? Fixing Failed Payments and Pending Orders in India",
-      "description": "Razorpay, PayU, Cashfree, PhonePe or Paytm payments failing, or paid orders stuck in Pending payment? Check webhooks, keys, INR settings and firewall blocks.",
+      "description": "WooCommerce payment gateway not working in India? Fix failed UPI payments, orders stuck on pending, webhook errors and Razorpay or Cashfree issues.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/woocommerce-payment-gateway-not-working-india/",
       "image": "https://samverse.space/assets/og/blog-woocommerce-payment-gateway-not-working-india.png",
       "articleSection": "E-commerce",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/ecommerce/">E-commerce</a></nav>
           <a class="post-cat" href="/blog/topic/ecommerce/">E-commerce</a>
           <h1>Payment Gateway Not Working in WooCommerce? Fixing Failed Payments and Pending Orders in India</h1>
-          <p class="post-dek">Razorpay, PayU, Cashfree, PhonePe or Paytm payments failing, or paid orders stuck in Pending payment? Check webhooks, keys, INR settings and firewall blocks.</p>
+          <p class="post-dek">WooCommerce payment gateway not working in India? Fix failed UPI payments, orders stuck on pending, webhook errors and Razorpay or Cashfree issues.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Payment%20Gateway%20Not%20Working%20in%20WooCommerce%3F%20Fixing%20Failed%20Payments%20and%20Pending%20Orders%20in%20India%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-payment-gateway-not-working-india%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,53 +153,55 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#first-work-out-which-problem-you-have">First, work out which problem you have</a></li>
-              <li><a href="#webhooks-and-why-they-matter">Webhooks, and why they matter</a></li>
-              <li><a href="#api-keys-in-test-mode-and-live-mode">API keys in test mode and live mode</a></li>
-              <li><a href="#currency-payment-methods-and-settings">Currency, payment methods and settings</a></li>
-              <li><a href="#callback-urls-and-firewall-blocks">Callback URLs and firewall blocks</a></li>
-              <li><a href="#paid-but-not-marked-as-paid">Paid, but not marked as paid</a></li>
-              <li><a href="#reconcile-with-the-gateway-dashboard">Reconcile with the gateway dashboard</a></li>
-              <li><a href="#test-changes-safely">Test changes safely</a></li>
+              <li><a href="#common-symptoms-and-what-they-usually-mean">Common symptoms and what they usually mean</a></li>
+              <li><a href="#step-1-check-the-gateway-settings">Step 1: check the gateway settings</a></li>
+              <li><a href="#step-2-fix-orders-stuck-on-pending-payment">Step 2: fix orders stuck on pending payment</a></li>
+              <li><a href="#step-3-rule-out-caching-and-optimisation">Step 3: rule out caching and optimisation</a></li>
+              <li><a href="#step-4-look-for-plugin-and-theme-conflicts">Step 4: look for plugin and theme conflicts</a></li>
+              <li><a href="#step-5-check-versions-and-the-server">Step 5: check versions and the server</a></li>
+              <li><a href="#upi-specific-failures">UPI-specific failures</a></li>
+              <li><a href="#refunds-and-customer-communication">Refunds and customer communication</a></li>
+              <li><a href="#gateway-account-and-compliance-issues">Gateway account and compliance issues</a></li>
+              <li><a href="#testing-payments-properly">Testing payments properly</a></li>
+              <li><a href="#preventing-payment-problems">Preventing payment problems</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Paid orders stuck at Pending payment usually mean the return redirect failed and no working webhook was set up, so configure the webhook URL, events and secret your gateway's docs give.</li>
-              <li>Keep test and live keys and webhooks separate, set the store currency to Indian rupee, and check that firewalls, bot protection or staging passwords are not blocking the gateway.</li>
-              <li>Confirm a payment in the gateway dashboard before marking an order as Processing, and reconcile gateway exports against WooCommerce orders regularly.</li>
+              <li>Most WooCommerce payment failures in India come from gateway settings, webhooks, caching or plugin conflicts rather than the gateway itself being down.</li>
+              <li>Orders stuck on pending payment usually mean the gateway never told WooCommerce the payment succeeded, so check webhooks and logs first.</li>
+              <li>Test with the gateway's test mode on a staging copy, keep plugins updated and reconcile paid-but-pending orders against the gateway dashboard.</li>
             </ul>
           </div>
-<p>When online payments go wrong on an Indian WooCommerce store, it's usually one of two problems. Either customers can't pay at all, or they pay and the order stays at "Pending payment". Both can happen with Razorpay, PayU, Cashfree, PhonePe, Paytm or any other gateway, and the causes are mostly the same. Plugins and dashboards change often, so treat this as a checklist and follow your gateway's current documentation for exact settings.</p>
+<p>If your WooCommerce payment gateway is not working in India, start with three checks: is the gateway plugin active and in live mode with the right keys, is the gateway able to send webhooks back to your site, and is anything (cache, security plugin, firewall) blocking checkout or the callback. Most failed payments and orders stuck on "Pending payment" trace back to one of these, not to Razorpay, Cashfree, PayU or PhonePe being down.</p>
+<p>This guide walks through the common symptoms, what causes them and how to fix each one safely.</p>
 
-<h2 id="first-work-out-which-problem-you-have">First, work out which problem you have</h2>
+<h2 id="common-symptoms-and-what-they-usually-mean">Common symptoms and what they usually mean</h2>
 <table>
-<thead><tr><th>Symptom</th><th>Where to look first</th></tr></thead>
+<thead><tr><th>Symptom</th><th>Likely cause</th><th>First check</th></tr></thead>
 <tbody>
-<tr><td>The gateway doesn't appear at checkout</td><td>Whether it's enabled in WooCommerce → Settings → Payments, the store currency, block checkout support</td></tr>
-<tr><td>An error before the payment page opens</td><td>API keys, test or live mode, account activation, your server reaching the gateway</td></tr>
-<tr><td>Payment fails on the gateway's page</td><td>The failure reason in the gateway dashboard; whether that method is enabled on your account</td></tr>
-<tr><td>Customer paid, order stuck at Pending payment</td><td>Webhooks and the return (callback) URL</td></tr>
-<tr><td>Customer paid, order cancelled</td><td>A late confirmation plus WooCommerce's hold stock setting</td></tr>
+<tr><td>Payment option missing at checkout</td><td>Gateway disabled, currency not INR, or a conditional rule hiding it</td><td>WooCommerce, Settings, Payments</td></tr>
+<tr><td>Popup does not open or button does nothing</td><td>JavaScript error, script optimisation or plugin conflict</td><td>Browser console, disable JS minify/defer</td></tr>
+<tr><td>Customer paid, order stuck on Pending payment</td><td>Webhook or callback not reaching the site</td><td>Gateway webhook logs and WooCommerce logs</td></tr>
+<tr><td>Order marked Failed but money deducted</td><td>Bank delay, timeout or missed callback</td><td>Gateway dashboard payment status</td></tr>
+<tr><td>"Invalid key" or authentication error</td><td>Test keys in live mode or wrong account keys</td><td>Gateway plugin settings</td></tr>
+<tr><td>Worked before, broke after an update</td><td>Plugin, theme or PHP version incompatibility</td><td>Recent updates, error log</td></tr>
+<tr><td>Only UPI fails</td><td>UPI intent or collect flow issue, app or bank side</td><td>Gateway status page, test on another app</td></tr>
 </tbody>
 </table>
-<p>"Pending payment" means no payment has been confirmed yet; "Failed" means it was declined or didn't complete; "Processing" means it was received. If customers can't reach the payment step at all, the checkout itself may be at fault; see <a href="/blog/woocommerce-checkout-not-working-fix/">how to fix a WooCommerce checkout that isn't working</a>.</p>
 
-<h2 id="webhooks-and-why-they-matter">Webhooks, and why they matter</h2>
-<p>A gateway can tell your store about a payment in two ways:</p>
+<h2 id="step-1-check-the-gateway-settings">Step 1: check the gateway settings</h2>
 <ul>
-<li><strong>The return redirect:</strong> after paying, the customer's browser returns to your site, which checks the payment and updates the order.</li>
-<li><strong>The webhook:</strong> the gateway's server sends a message straight to your site, whatever happens in the customer's browser.</li>
+<li>Go to WooCommerce, Settings, Payments and confirm the gateway is enabled.</li>
+<li>Check the store currency is INR (or that the gateway supports your currency).</li>
+<li>Confirm you are using live keys in live mode and test keys in test mode. Mixing them is one of the most common causes after launch.</li>
+<li>Make sure the keys belong to the right merchant account, especially if an agency or developer set up a test account first.</li>
+<li>Check your gateway account is fully activated. New accounts can be limited until KYC and website review are complete.</li>
 </ul>
-<p>The redirect often fails: customers close the tab, switch to their UPI app and never return, or lose signal. Without a webhook, those paid orders stay pending. Set one up properly by:</p>
-<ul>
-<li>Using the exact webhook URL your plugin's settings or documentation gives</li>
-<li>Selecting the events the plugin's documentation lists</li>
-<li>Entering the same webhook secret in the gateway dashboard and the plugin, where a secret is used</li>
-<li>Creating live-mode webhooks separately from test-mode ones, if your gateway keeps them apart</li>
-</ul>
-<p>Some plugins create webhooks automatically, but confirm one exists in the dashboard. Many dashboards also log recent deliveries and your site's response, the quickest way to spot a problem.</p>
+<p>If you are still choosing a gateway, <a href="/blog/payment-gateways-india-compared/">payment gateways in India compared</a> and <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a> cover setup requirements.</p>
 
 <aside class="inline-cta">
   <strong>Need help with online stores?</strong>
@@ -207,53 +209,102 @@
   <div><a href="/woocommerce-developer/" class="link-inline">See Online Stores →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Payment%20Gateway%20Not%20Working%20in%20WooCommerce%3F%20Fixing%20Failed%20Payments%20and%20Pending%20Orders%20in%20India%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="api-keys-in-test-mode-and-live-mode">API keys in test mode and live mode</h2>
-<p>Gateways issue separate credentials for test (sandbox) and live use. Mixing them up causes errors, and "successful" payments that exist only in test mode. Some keys show their mode at a glance (Razorpay's key IDs include "test" or "live"); otherwise check the dashboard.</p>
-<ul>
-<li>Switch the plugin to live mode and paste live keys only once your account is activated</li>
-<li>Copy keys without stray spaces, and update the plugin if you regenerate them</li>
-<li>When you copy the live site to staging, switch the staging copy to test keys</li>
-<li>If you've changed domain or switched between www and non-www, check the website registered with your gateway, as some gateways check where payments come from</li>
-</ul>
-
-<h2 id="currency-payment-methods-and-settings">Currency, payment methods and settings</h2>
-<p>In WooCommerce → Settings → General, check the currency is set to Indian rupee. Some gateway plugins hide themselves at checkout if the store currency isn't one they support, and multi-currency plugins that show overseas visitors another currency can make the gateway disappear or send an unexpected amount. International card payments usually need a separate activation; see <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a>.</p>
-<p>Also confirm each method you advertise (UPI, cards, net banking, wallets, EMI) is enabled on your gateway account, and that the plugin is up to date and supports your checkout type.</p>
-
-<h2 id="callback-urls-and-firewall-blocks">Callback URLs and firewall blocks</h2>
-<p>For webhooks and return redirects to work, the gateway must be able to reach your site. Common blockers:</p>
-<ul>
-<li>Security plugin rules, your host's server firewall or a CDN's bot protection treating gateway requests as suspicious</li>
-<li>Country blocking that also catches the servers your gateway sends from</li>
-<li>A password-protected staging site, or a maintenance or "coming soon" mode</li>
-<li>An old http:// or pre-migration address as the webhook URL; redirects may not be followed</li>
-<li>The return page being served from a page cache</li>
-</ul>
-<p>The status codes in the gateway's webhook log help: 403 usually means blocked, 404 a wrong URL and 500 a PHP error. Match the time against your firewall log, WooCommerce → Status → Logs and the plugin's debug log. Your server also needs outgoing access to the gateway's API, which an outdated server SSL setup or a host blocking outbound connections can break; your host can check. <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> shows where these rules live.</p>
-
-<h2 id="paid-but-not-marked-as-paid">Paid, but not marked as paid</h2>
+<h2 id="step-2-fix-orders-stuck-on-pending-payment">Step 2: fix orders stuck on pending payment</h2>
+<p>This is the most frustrating problem: the customer's money has gone, but WooCommerce still shows "Pending payment", so no confirmation email goes out and stock is not reduced. It usually means the gateway never successfully told your site that the payment succeeded.</p>
 <ol>
-<li><strong>Find the payment in the gateway dashboard</strong> by order number, email or phone, and confirm it succeeded. Some gateways treat authorised and captured payments differently, so check your capture settings in their docs.</li>
-<li><strong>Check the order notes</strong> in WooCommerce for a payment or transaction ID.</li>
-<li><strong>If the payment succeeded,</strong> change the order to Processing and add a private note with the gateway's payment ID. This normally sends the customer's order email and reduces stock if it wasn't reduced already.</li>
-<li><strong>Don't ask the customer to pay again</strong> until you've checked. If they did pay twice, refund the duplicate.</li>
+<li><strong>Check webhook settings in the gateway dashboard.</strong> The webhook URL should match what the plugin expects, with the right events enabled and the correct secret.</li>
+<li><strong>Look at webhook delivery logs</strong> in the gateway dashboard. Failed deliveries with 403, 404 or 500 errors point to your site blocking or breaking the request.</li>
+<li><strong>Check WooCommerce logs</strong> under WooCommerce, Status, Logs. Most gateway plugins log callbacks and errors there when debug logging is enabled.</li>
+<li><strong>Check firewalls and security plugins.</strong> Cloudflare rules, hosting firewalls or WordPress security plugins sometimes block the gateway's server requests.</li>
+<li><strong>Check the site is on HTTPS</strong> with a valid certificate. SSL certificate errors can break callbacks.</li>
 </ol>
-<p>Watch the hold stock setting too, under WooCommerce → Settings → Products → Inventory. With stock management on, WooCommerce cancels unpaid pending orders after that many minutes, so a late confirmation can arrive for an order that's already cancelled. Working webhooks make this rare; a very short hold time makes it likelier.</p>
+<p>For orders already stuck, compare each one with the gateway dashboard. If the payment shows as captured, mark the order as Processing manually and add a note with the payment ID. Never mark an order paid without confirming in the dashboard.</p>
 
-<h2 id="reconcile-with-the-gateway-dashboard">Reconcile with the gateway dashboard</h2>
-<p>Daily for busy stores, weekly otherwise, export the gateway's payments for a date range and compare them with your orders. Look for:</p>
+<h2 id="step-3-rule-out-caching-and-optimisation">Step 3: rule out caching and optimisation</h2>
+<p>Checkout, cart and my-account pages must never be cached. Page caching on these pages can show stale nonces, break the payment popup or show one customer's details to another.</p>
 <ul>
-<li>Successful payments whose orders are still pending, failed or cancelled</li>
-<li>Processing orders with no matching payment, other than Cash on Delivery</li>
-<li>Refunds made in the gateway dashboard that don't show on the order, since they may not sync back</li>
-<li>Settlement reports that don't match the payouts in your bank account</li>
+<li>Exclude /cart/, /checkout/ and /my-account/ from page caching in your cache plugin and at the host or CDN level.</li>
+<li>Exclude the gateway's scripts from JavaScript minification, combining and delaying.</li>
+<li>Temporarily turn off optimisation plugins and test checkout again.</li>
 </ul>
-<p>Keeping the payment ID on every order makes this quick.</p>
+<p><a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers how the cache layers interact.</p>
 
-<h2 id="test-changes-safely">Test changes safely</h2>
-<p>Try updates and setting changes on a <a href="/blog/staging-sites-explained/">staging site</a> with test keys, remembering that staging passwords can block webhooks. Test successful, failed and cancelled payments, and close the tab straight after paying to check the webhook alone updates the order. Finish with a real low-value UPI payment on a phone on the live site. If it still fails, give the gateway's support the order number, payment ID, time and exact error.</p>
+<h2 id="step-4-look-for-plugin-and-theme-conflicts">Step 4: look for plugin and theme conflicts</h2>
+<p>Checkout customisation plugins, one-page checkout tools, COD fee plugins and some themes modify checkout in ways that clash with gateway scripts. On a <a href="/blog/staging-sites-explained/">staging copy</a> of the site:</p>
+<ol>
+<li>Switch to a default theme like Storefront and test.</li>
+<li>Disable plugins except WooCommerce and the gateway, then test.</li>
+<li>Re-enable plugins one by one until the problem returns.</li>
+</ol>
+<p>The process is covered in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">troubleshooting WordPress plugin conflicts</a>. Also check the browser console on the checkout page; a red JavaScript error often names the plugin responsible.</p>
 
-<p>Want your gateway, webhooks and order statuses set up and tested properly? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-maintenance/">WordPress maintenance</a> for checks after every update.</p>
+<h2 id="step-5-check-versions-and-the-server">Step 5: check versions and the server</h2>
+<ul>
+<li>Update the gateway plugin, WooCommerce and WordPress, after taking a backup.</li>
+<li>Confirm your PHP version is supported by the gateway plugin. Updating the PHP version explains how to do this safely.</li>
+<li>Make sure the server can make outgoing HTTPS requests. Some cheap hosting blocks outbound connections or uses outdated SSL libraries.</li>
+<li>Check that WP-Cron is running, because some plugins use scheduled tasks to check pending payments.</li>
+</ul>
+
+<h2 id="upi-specific-failures">UPI-specific failures</h2>
+<p>UPI failures often come from outside your site: the customer's bank, the UPI app or a timeout. Things you can control:</p>
+<ul>
+<li>Show clear instructions on the payment page about approving the request in the UPI app.</li>
+<li>Make sure the order is not cancelled too quickly. WooCommerce's hold stock setting can cancel unpaid orders before a slow UPI payment completes.</li>
+<li>Offer a fallback, such as cards, net banking or COD, so a failed UPI attempt does not lose the sale.</li>
+<li>Check the gateway's status page for known UPI issues before spending hours debugging.</li>
+</ul>
+
+<h2 id="refunds-and-customer-communication">Refunds and customer communication</h2>
+<p>When a customer says money was deducted but no order arrived, respond quickly and calmly. Check the gateway dashboard; if the payment failed, the bank usually reverses it automatically within the timeframe the gateway states. If it succeeded, update the order and send the confirmation. A clear note on your FAQ or checkout page about failed payments reduces panic and support load. Good <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">order notifications</a> help customers know where they stand.</p>
+
+<h2 id="gateway-account-and-compliance-issues">Gateway account and compliance issues</h2>
+<p>Sometimes the site is fine and the problem is on the account side. Indian payment gateways review the website and business before full activation and may limit or pause an account later. Check the gateway dashboard and emails for:</p>
+<ul>
+<li>Pending KYC or document requests.</li>
+<li>A website review asking for pages such as contact details, terms, privacy policy, refund and cancellation policy, and shipping policy.</li>
+<li>Restrictions on certain product categories.</li>
+<li>Settlement holds or risk reviews after unusual order patterns.</li>
+</ul>
+<p>Keep the policy pages accurate and visible in the footer, with a real business address and contact details. If the gateway asks for changes, make them and reply promptly; the support team can usually tell you exactly what is missing.</p>
+
+<h2 id="testing-payments-properly">Testing payments properly</h2>
+<p>Many stores only discover payment problems when customers complain. A simple testing routine catches most issues first:</p>
+<ol>
+<li>On staging, switch the gateway to test mode with test keys and place orders using the gateway's published test methods.</li>
+<li>Check that the order moves to Processing, stock reduces and emails go out.</li>
+<li>Test a failed payment and confirm the order shows as Failed or Pending as expected.</li>
+<li>Test a refund from the WooCommerce order screen if your plugin supports it.</li>
+<li>On the live site, place a small real payment after major updates and refund it.</li>
+</ol>
+<p>Keep notes of what you tested and when. If something breaks later, you know the last date everything worked, which makes it much easier to find what changed.</p>
+
+<h2 id="preventing-payment-problems">Preventing payment problems</h2>
+<ul>
+<li>Test a real low-value payment after every major update.</li>
+<li>Keep webhooks configured and monitor failed deliveries.</li>
+<li>Keep checkout pages out of caching and optimisation.</li>
+<li>Use a staging site for updates and new plugins.</li>
+<li>Reconcile orders against the gateway dashboard regularly.</li>
+<li>Keep at least two payment options active.</li>
+</ul>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>If payments are failing and you are losing orders, fixing it fast matters more than learning every detail. A <a href="/woocommerce-developer/">WooCommerce developer</a> can check gateway settings, webhooks, logs and conflicts and set up monitoring so it does not happen again. You can also <a href="/wordpress-shopify-developer-india/">hire a WordPress developer in India</a> for ongoing <a href="/wordpress-maintenance/">WooCommerce maintenance</a>.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>Why is my WooCommerce payment gateway not working in India?</h3>
+<p>The usual causes are wrong keys or mode, an inactive or under-review gateway account, webhooks not reaching the site, caching on checkout pages, or a plugin conflict. Check settings, webhook logs and WooCommerce logs first.</p>
+<h3>Why are my WooCommerce orders stuck on pending payment?</h3>
+<p>The gateway did not confirm the payment back to WooCommerce, usually because the webhook failed or was blocked. Check the webhook URL, secret and delivery logs, and confirm stuck orders against the gateway dashboard.</p>
+<h3>Customer paid but order shows failed. What should I do?</h3>
+<p>Check the payment status in the gateway dashboard. If captured, update the order manually with the payment ID and send confirmation. If failed, the bank normally reverses the amount.</p>
+<h3>Can caching break WooCommerce payments?</h3>
+<p>Yes. Cart, checkout and account pages should never be cached, and gateway scripts should be excluded from minification and delay settings.</p>
+<h3>Should I offer COD as a backup?</h3>
+<p>For many Indian stores, yes. Keeping COD or another payment method active means a gateway problem does not stop all orders.</p>
+
+<p>Losing orders to payment errors? A <a href="/woocommerce-developer/">WooCommerce developer</a> can find and fix the cause quickly.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -289,14 +340,19 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#first-work-out-which-problem-you-have">First, work out which problem you have</a></li>
-              <li><a href="#webhooks-and-why-they-matter">Webhooks, and why they matter</a></li>
-              <li><a href="#api-keys-in-test-mode-and-live-mode">API keys in test mode and live mode</a></li>
-              <li><a href="#currency-payment-methods-and-settings">Currency, payment methods and settings</a></li>
-              <li><a href="#callback-urls-and-firewall-blocks">Callback URLs and firewall blocks</a></li>
-              <li><a href="#paid-but-not-marked-as-paid">Paid, but not marked as paid</a></li>
-              <li><a href="#reconcile-with-the-gateway-dashboard">Reconcile with the gateway dashboard</a></li>
-              <li><a href="#test-changes-safely">Test changes safely</a></li>
+              <li><a href="#common-symptoms-and-what-they-usually-mean">Common symptoms and what they usually mean</a></li>
+              <li><a href="#step-1-check-the-gateway-settings">Step 1: check the gateway settings</a></li>
+              <li><a href="#step-2-fix-orders-stuck-on-pending-payment">Step 2: fix orders stuck on pending payment</a></li>
+              <li><a href="#step-3-rule-out-caching-and-optimisation">Step 3: rule out caching and optimisation</a></li>
+              <li><a href="#step-4-look-for-plugin-and-theme-conflicts">Step 4: look for plugin and theme conflicts</a></li>
+              <li><a href="#step-5-check-versions-and-the-server">Step 5: check versions and the server</a></li>
+              <li><a href="#upi-specific-failures">UPI-specific failures</a></li>
+              <li><a href="#refunds-and-customer-communication">Refunds and customer communication</a></li>
+              <li><a href="#gateway-account-and-compliance-issues">Gateway account and compliance issues</a></li>
+              <li><a href="#testing-payments-properly">Testing payments properly</a></li>
+              <li><a href="#preventing-payment-problems">Preventing payment problems</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -325,7 +381,7 @@
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/woocommerce-inventory-management/"><img class="post-card-img" src="/assets/og/blog-woocommerce-inventory-management.webp" alt="WooCommerce Inventory and Stock Management: Settings, Variations, Alerts and Syncing With Tally or a Shop" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Inventory and Stock Management: Settings, Variations, Alerts and Syncing With Tally or a Shop</h3><p>WooCommerce stock management explained: inventory settings, variation stock, low-stock alerts, backorders, ATUM and syncing with Tally or marketplaces.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/woocommerce-maintenance-checklist/"><img class="post-card-img" src="/assets/og/blog-woocommerce-maintenance-checklist.webp" alt="WooCommerce Maintenance Checklist: Daily, Weekly, Monthly and Quarterly Tasks for Indian Online Stores" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Maintenance Checklist: Daily, Weekly, Monthly and Quarterly Tasks for Indian Online Stores</h3><p>A WooCommerce maintenance checklist by frequency: orders, payment reconciliation, stock, staging updates, backups, checkout tests, GST invoices, cleanup.</p><span class="post-card-meta">28 September 2026 · 7 min read</span></a>
-          <a class="post-card" href="/blog/woocommerce-checkout-not-working-fix/"><img class="post-card-img" src="/assets/og/blog-woocommerce-checkout-not-working-fix.webp" alt="WooCommerce Checkout Not Working? Fixing Endless Spinners, Errors and a Dead &quot;Place Order&quot; Button" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Checkout Not Working? Fixing Endless Spinners, Errors and a Dead &quot;Place Order&quot; Button</h3><p>Fix a WooCommerce checkout that won't load, spins forever or ignores &quot;Place order&quot;: caching, script conflicts, block checkout, gateways, SSL and sessions.</p><span class="post-card-meta">11 October 2026 · 6 min read</span></a>
+          <a class="post-card" href="/blog/woocommerce-orders-not-showing-fix/"><img class="post-card-img" src="/assets/og/blog-woocommerce-orders-not-showing-fix.webp" alt="WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails</h3><p>WooCommerce orders not showing? Find missing orders, fix paid-but-no-order problems, HPOS sync issues, pending payment filters and missing order emails.</p><span class="post-card-meta">11 October 2026 · 7 min read</span></a>
         </div>
       </div>
     </section>

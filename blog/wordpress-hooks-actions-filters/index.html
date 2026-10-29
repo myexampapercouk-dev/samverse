@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Hooks Explained: Actions vs Filters | Samverse</title>
-  <meta name="description" content="A plain-English guide to WordPress hooks: what actions and filters do, a tiny example of each, where custom code should live and why random snippets are risky.">
+  <title>WordPress Hooks: Actions and Filters Explained Simply</title>
+  <meta name="description" content="WordPress hooks, actions and filters explained in plain English: what they do, simple examples, where to put the code safely and common mistakes to avoid.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-hooks-actions-filters/">
-  <meta property="og:title" content="WordPress Hooks Explained: Actions vs Filters | Samverse">
-  <meta property="og:description" content="A plain-English guide to WordPress hooks: what actions and filters do, a tiny example of each, where custom code should live and why random snippets are risky.">
+  <meta property="og:title" content="WordPress Hooks: Actions and Filters Explained Simply">
+  <meta property="og:description" content="WordPress hooks, actions and filters explained in plain English: what they do, simple examples, where to put the code safely and common mistakes to avoid.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-hooks-actions-filters.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-hooks-actions-filters/#article",
       "headline": "WordPress Hooks Explained: Actions and Filters in Plain English",
-      "description": "A plain-English guide to WordPress hooks: what actions and filters do, a tiny example of each, where custom code should live and why random snippets are risky.",
+      "description": "WordPress hooks, actions and filters explained in plain English: what they do, simple examples, where to put the code safely and common mistakes to avoid.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-01",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-hooks-actions-filters/",
       "image": "https://samverse.space/assets/og/blog-wordpress-hooks-actions-filters.png",
       "articleSection": "Guides",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/planning/">Planning &amp; costs</a></nav>
           <a class="post-cat" href="/blog/topic/planning/">Guides</a>
           <h1>WordPress Hooks Explained: Actions and Filters in Plain English</h1>
-          <p class="post-dek">A plain-English guide to WordPress hooks: what actions and filters do, a tiny example of each, where custom code should live and why random snippets are risky.</p>
+          <p class="post-dek">WordPress hooks, actions and filters explained in plain English: what they do, simple examples, where to put the code safely and common mistakes to avoid.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Hooks%20Explained%3A%20Actions%20and%20Filters%20in%20Plain%20English%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-hooks-actions-filters%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,40 +153,54 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#what-a-hook-is">What a hook is</a></li>
-              <li><a href="#actions-do-something-at-the-right-moment">Actions: do something at the right moment</a></li>
-              <li><a href="#filters-change-something-before-it-s-used">Filters: change something before it's used</a></li>
-              <li><a href="#why-hooks-beat-editing-core-or-plugin-files">Why hooks beat editing core or plugin files</a></li>
-              <li><a href="#where-custom-code-should-live">Where custom code should live</a></li>
-              <li><a href="#the-risks-of-pasting-random-snippets">The risks of pasting random snippets</a></li>
-              <li><a href="#what-business-owners-should-ask">What business owners should ask</a></li>
+              <li><a href="#wordpress-hooks-actions-and-filters-the-difference">WordPress hooks, actions and filters: the difference</a></li>
+              <li><a href="#a-simple-action-example">A simple action example</a></li>
+              <li><a href="#a-simple-filter-example">A simple filter example</a></li>
+              <li><a href="#priority-and-arguments">Priority and arguments</a></li>
+              <li><a href="#removing-a-hook">Removing a hook</a></li>
+              <li><a href="#where-to-put-hook-code-safely">Where to put hook code safely</a></li>
+              <li><a href="#hooks-in-woocommerce">Hooks in WooCommerce</a></li>
+              <li><a href="#common-mistakes-with-hooks">Common mistakes with hooks</a></li>
+              <li><a href="#how-to-find-the-right-hook">How to find the right hook</a></li>
+              <li><a href="#shortcodes-blocks-and-hooks">Shortcodes, blocks and hooks</a></li>
+              <li><a href="#creating-your-own-hooks">Creating your own hooks</a></li>
+              <li><a href="#debugging-hooks-safely">Debugging hooks safely</a></li>
+              <li><a href="#performance-and-security-considerations">Performance and security considerations</a></li>
+              <li><a href="#getting-help-with-custom-code">Getting help with custom code</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Actions run your code at a specific moment, while filters change a value and must always return it.</li>
-              <li>Hooks let you customise WordPress, themes and plugins without editing their files, so your changes survive updates.</li>
-              <li>Keep custom code in a child theme, a small site plugin or a snippets plugin, and test any copied snippet on staging first.</li>
+              <li>Hooks let you change WordPress without editing core, theme or plugin files: actions run your code at a moment, filters change a value before it is used.</li>
+              <li>Put hook code in a child theme, a small custom plugin or a snippets plugin, never in files that updates will overwrite.</li>
+              <li>Most hook problems come from wrong priority, the wrong number of arguments, forgetting to return the value in a filter or running code on every page.</li>
             </ul>
           </div>
-<p>Ask a WordPress developer how they changed something on your site and you may hear "I used a hook". Hooks are why WordPress can be customised so heavily without anyone editing its core files. Understanding them, even roughly, helps business owners judge whether work has been done properly, and helps junior developers avoid changes that break after updates. Here are actions and filters in plain language, with one tiny example of each.</p>
+<p>WordPress hooks are the points where WordPress, themes and plugins let you add or change behaviour without editing their files. There are two kinds: <strong>actions</strong>, which let you run your own code at a specific moment (for example when a post is published or the footer loads), and <strong>filters</strong>, which let you change a piece of data before WordPress uses it (for example a title, an email subject or the price shown in a shop). Almost every customisation a developer makes uses one of the two.</p>
+<p>This guide explains WordPress hooks, actions and filters in plain English, with short examples and the mistakes that cause most problems.</p>
 
-<h2 id="what-a-hook-is">What a hook is</h2>
-<p>As WordPress builds a page, it passes through hundreds of named checkpoints: loading plugins, preparing the page header, fetching a post, printing the content, building the footer. At each checkpoint it effectively asks, "Does anyone want to do something here, or change this?"</p>
-<p>Those checkpoints are hooks. WordPress core places them, and well-built themes and plugins add their own; WooCommerce, for example, has hooks throughout its product pages, cart, checkout and order emails. Your custom code "hooks in" by telling WordPress which checkpoint to listen for and which function to run when it gets there.</p>
-<p>There are two kinds, and the difference is simple:</p>
-<ul>
-  <li><strong>Actions</strong> let you <em>do</em> something at a particular moment</li>
-  <li><strong>Filters</strong> let you <em>change</em> a piece of data before WordPress uses it</li>
-</ul>
+<h2 id="wordpress-hooks-actions-and-filters-the-difference">WordPress hooks, actions and filters: the difference</h2>
+<table>
+<thead><tr><th></th><th>Action</th><th>Filter</th></tr></thead>
+<tbody>
+<tr><td>Purpose</td><td>Do something at a certain moment</td><td>Change a value and pass it on</td></tr>
+<tr><td>Function to attach</td><td>add_action()</td><td>add_filter()</td></tr>
+<tr><td>Must return a value?</td><td>No</td><td>Yes, always</td></tr>
+<tr><td>Typical uses</td><td>Add scripts, send a notification, add HTML to a page</td><td>Edit text, change prices, adjust queries, modify email content</td></tr>
+<tr><td>Example hook</td><td>wp_footer, save_post, woocommerce_thankyou</td><td>the_title, the_content, excerpt_length</td></tr>
+</tbody>
+</table>
+<p>A useful way to think of it: an action is a doorbell (when it rings, your code does something); a filter is a checkpoint (data passes through, your code can change it, and must hand it back).</p>
 
-<h2 id="actions-do-something-at-the-right-moment">Actions: do something at the right moment</h2>
-<p>An action runs your code when something happens: the page head is being printed, a post is saved, a user registers, an order is placed. This action adds a site verification tag to the head of every page:</p>
-<pre><code>add_action( 'wp_head', function () {
-    echo '&lt;meta name="example-verification" content="your-code-here"&gt;';
-} );</code></pre>
-<p><code>wp_head</code> is the name of the hook, and the function is what runs when WordPress reaches it. Nothing is handed back; the action simply does its job. Other common actions include <code>init</code> (WordPress has finished loading), <code>wp_enqueue_scripts</code> (the right place to load CSS and JavaScript files), <code>save_post</code> (a post was saved) and <code>woocommerce_thankyou</code> (a customer reached the order confirmation page).</p>
+<h2 id="a-simple-action-example">A simple action example</h2>
+<p>This adds a small note to the footer of every page using the wp_footer action:</p>
+<pre><code>function samverse_footer_note() {
+    echo '&lt;p class="footer-note"&gt;Prices include GST.&lt;/p&gt;';
+}
+add_action( 'wp_footer', 'samverse_footer_note' );</code></pre>
+<p>WordPress fires wp_footer while building the page; your function runs at that moment and prints the note. Nothing is returned.</p>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress website development?</strong>
@@ -194,72 +208,113 @@
   <div><a href="/wordpress-website-development/" class="link-inline">See WordPress Website Development →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20Hooks%20Explained%3A%20Actions%20and%20Filters%20in%20Plain%20English%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="filters-change-something-before-it-s-used">Filters: change something before it's used</h2>
-<p>A filter receives a value, lets you modify it and expects you to hand it back. This one shortens automatic post excerpts from WordPress's default of 55 words to 30:</p>
-<pre><code>add_filter( 'excerpt_length', function ( $length ) {
+<h2 id="a-simple-filter-example">A simple filter example</h2>
+<p>This changes the length of automatic excerpts using the excerpt_length filter:</p>
+<pre><code>function samverse_excerpt_length( $length ) {
     return 30;
-} );</code></pre>
-<p>Filters sit behind many everyday tweaks: changing a button label such as WooCommerce's "Add to cart", adjusting the wording of an email, adding a class to menu items or changing how page titles are built.</p>
-<p>The golden rule: <strong>a filter must always return a value</strong>. If a filter on post content forgets to return anything, posts across the site can appear blank. It's one of the most common mistakes in copied snippets.</p>
+}
+add_filter( 'excerpt_length', 'samverse_excerpt_length' );</code></pre>
+<p>WordPress passes the current length into your function; you return the new value. If you forget to return, the value becomes empty, which is one of the most common filter bugs.</p>
+
+<h2 id="priority-and-arguments">Priority and arguments</h2>
+<p>Both add_action and add_filter accept two optional numbers: priority and the number of arguments.</p>
+<ul>
+<li><strong>Priority</strong> (default 10) decides the order when several functions use the same hook. Lower numbers run earlier. If a plugin overrides your change, try a higher number like 20 so yours runs later.</li>
+<li><strong>Accepted arguments</strong> (default 1) tells WordPress how many values to pass. Some hooks pass several, such as save_post passing the post ID, the post object and whether it is an update.</li>
+</ul>
+<pre><code>add_action( 'save_post', 'samverse_on_save', 20, 3 );
+function samverse_on_save( $post_id, $post, $update ) {
+    // runs after most other save_post functions
+}</code></pre>
+
+<h2 id="removing-a-hook">Removing a hook</h2>
+<p>To stop a theme or plugin from doing something, you can remove its function from the hook with remove_action or remove_filter. You need the exact function name and the same priority it was added with, and your removal must run after the original was added. Removing hooks is powerful but fragile, because an update can rename the function. Comment the code so the next developer knows why it is there.</p>
+
+<h2 id="where-to-put-hook-code-safely">Where to put hook code safely</h2>
+<p>Never add code to WordPress core files, or directly to a parent theme or plugin's files. Updates overwrite them and your changes disappear. Safe places:</p>
 <table>
-  <thead><tr><th></th><th>Action</th><th>Filter</th></tr></thead>
-  <tbody>
-    <tr><td>Purpose</td><td>Do something at a moment</td><td>Change a value</td></tr>
-    <tr><td>Added with</td><td><code>add_action()</code></td><td><code>add_filter()</code></td></tr>
-    <tr><td>Must return a value?</td><td>No</td><td>Yes, always</td></tr>
-    <tr><td>Business example</td><td>Notify the sales team when an order is placed</td><td>Change the "Add to cart" button text</td></tr>
-  </tbody>
+<thead><tr><th>Location</th><th>Best for</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Child theme functions.php</td><td>Changes tied to the design</td><td>Lost if you change theme; see <a href="/blog/wordpress-child-theme-explained/">child themes explained</a></td></tr>
+<tr><td>Small custom plugin</td><td>Business logic that should survive theme changes</td><td>Cleanest long-term option</td></tr>
+<tr><td>Code snippets plugin</td><td>Small tweaks managed from the dashboard</td><td>Convenient; keep snippets labelled and few</td></tr>
+</tbody>
 </table>
-<p>Both accept an optional priority number, 10 by default. Lower numbers run earlier, which matters when several plugins hook into the same place.</p>
+<p><a href="/blog/plugin-vs-custom-code-wordpress/">Plugin vs custom code</a> helps decide when a small hook is better than installing another plugin. For larger features, <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a> keeps the code organised.</p>
 
-<h2 id="why-hooks-beat-editing-core-or-plugin-files">Why hooks beat editing core or plugin files</h2>
-<p>The tempting shortcut is to edit a plugin or theme file directly. It works until the next update replaces the file and silently wipes out the change. Editing WordPress core files is worse: updates overwrite them too, and a mistake can affect every page.</p>
-<p>Hooks keep your changes in your own file, separate from code you don't control. WordPress, the theme and plugins can all be updated, and your customisation keeps working as long as the hook still exists. Hooks can also undo things: <code>remove_action()</code> and <code>remove_filter()</code> switch off behaviour a theme or plugin adds, without touching its files.</p>
-<p>Theme templates follow the same principle: rather than editing the parent theme, a <a href="/blog/wordpress-child-theme-explained/">child theme</a> lets you override them safely.</p>
-
-<h2 id="where-custom-code-should-live">Where custom code should live</h2>
-<p>Hook code has to go somewhere. There are three sensible homes:</p>
+<h2 id="hooks-in-woocommerce">Hooks in WooCommerce</h2>
+<p>WooCommerce has hundreds of hooks for product pages, cart, checkout, emails and orders. Common uses for Indian stores:</p>
 <ul>
-  <li><strong>A child theme's functions.php:</strong> for design-related code that belongs to the current theme. It stops running if you switch themes, which is fine for styling tweaks but not for business features.</li>
-  <li><strong>A small site-specific plugin:</strong> for functionality that should survive a redesign, such as custom post types, WooCommerce rules or integrations. It can be as simple as one PHP file in wp-content/plugins with a short header:
-<pre><code>&lt;?php
-/*
-Plugin Name: Site Functions
-Description: Custom code for this website.
-*/</code></pre>
-  </li>
-  <li><strong>A code snippets plugin:</strong> tools such as Code Snippets or WPCode store small snippets in the database and let you switch each one on or off from the dashboard. Handy for a handful of tweaks, but anyone with admin access can edit them, and they're easy to forget about.</li>
+<li>Adding a delivery note or COD message on the checkout page.</li>
+<li>Adding a GSTIN field to checkout and showing it in order emails.</li>
+<li>Changing text such as "Add to cart" on specific products.</li>
+<li>Running code after an order is paid, such as sending order data to a CRM or WhatsApp tool.</li>
+<li>Adjusting the content of order emails; <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a> covers this.</li>
 </ul>
-<p>Never put custom code in a parent theme, a third-party plugin or WordPress core. For a fuller decision guide, see <a href="/blog/plugin-vs-custom-code-wordpress/">plugin or custom code</a>.</p>
+<p>WooCommerce hooks follow the same rules as WordPress hooks: actions to add things at a point in the page or process, filters to change values such as labels, fields or prices. The WooCommerce developer documentation lists the main hooks for each template, and many checkout and email changes need only a few lines. Prefer hooks over copying WooCommerce template files into your theme. Copied templates go out of date when WooCommerce updates, while hooks usually keep working.</p>
 
-<h2 id="the-risks-of-pasting-random-snippets">The risks of pasting random snippets</h2>
-<p>Search for almost any WordPress tweak and you'll find a snippet ready to copy. Many are fine. Some are years out of date, written for a different setup, or simply wrong. Common problems:</p>
+<h2 id="common-mistakes-with-hooks">Common mistakes with hooks</h2>
 <ul>
-  <li><strong>Site crashes:</strong> one missing bracket, or a function your PHP version no longer supports, can take the site down; see <a href="/blog/fix-wordpress-critical-error/">fixing the WordPress critical error</a></li>
-  <li><strong>Security holes:</strong> snippets that print data without escaping it, skip permission checks or switch off security features</li>
-  <li><strong>Hidden slowdowns:</strong> code that runs a heavy database query on every page load</li>
-  <li><strong>Conflicts:</strong> two snippets, or a snippet and a plugin, doing the same job in different ways</li>
-  <li><strong>Mystery code:</strong> six months later, nobody remembers what a snippet does or whether it's safe to remove</li>
+<li><strong>Forgetting to return in a filter,</strong> which blanks titles, content or prices.</li>
+<li><strong>Function name clashes:</strong> two functions with the same name cause a fatal error. Prefix your function names.</li>
+<li><strong>Wrong hook timing:</strong> using a hook that fires before the data you need exists, or after the page has already been output.</li>
+<li><strong>Running heavy code on every page,</strong> such as database queries or remote API calls on init, which slows the whole site. Check conditions first, such as is_admin() or the current page.</li>
+<li><strong>Typos in hook names:</strong> WordPress does not warn you; your code simply never runs.</li>
+<li><strong>Editing on the live site</strong> through the theme editor. One syntax error can take the site down; see <a href="/blog/fix-wordpress-critical-error/">fixing the WordPress critical error</a> if that happens.</li>
 </ul>
-<h3>A safer routine</h3>
+
+<h2 id="how-to-find-the-right-hook">How to find the right hook</h2>
+<ul>
+<li>Check the official WordPress and WooCommerce developer documentation for the area you are changing.</li>
+<li>Search the theme or plugin code for do_action and apply_filters to see the hooks it offers.</li>
+<li>Use a debugging plugin such as Query Monitor on a staging site to see which hooks run on a page.</li>
+<li>Ask the theme or plugin author; many document their own hooks.</li>
+</ul>
+
+<h2 id="shortcodes-blocks-and-hooks">Shortcodes, blocks and hooks</h2>
+<p>Hooks change behaviour behind the scenes; shortcodes and blocks place content where an editor chooses. They often work together, for example a block whose output can be adjusted by a filter. <a href="/blog/wordpress-shortcodes-vs-blocks/">Shortcodes vs blocks</a> explains that side.</p>
+
+<h2 id="creating-your-own-hooks">Creating your own hooks</h2>
+<p>Hooks are not only for using what WordPress provides. If you build a custom plugin or theme, you can add your own hooks so that you or another developer can extend it later without editing the original code. You do this with do_action for actions and apply_filters for filters:</p>
+<pre><code>// in your plugin, after sending an enquiry
+do_action( 'samverse_enquiry_sent', $enquiry_id );
+
+// a filter that lets others change the email subject
+$subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id );</code></pre>
+<p>Give custom hooks a unique prefix, document what values they pass and keep their names stable. This is how most well-built plugins let agencies and developers customise them safely.</p>
+
+<h2 id="debugging-hooks-safely">Debugging hooks safely</h2>
+<p>When a hook does not seem to work, check things in this order:</p>
 <ol>
-  <li>Understand what each line does before adding it, or ask a developer</li>
-  <li>Take a backup and test on a staging copy first; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
-  <li>Keep SFTP or hosting file manager access handy, so a broken snippet can be removed even if the dashboard won't load</li>
-  <li>Add a comment above each snippet: what it does, why, and when it was added</li>
-  <li>Avoid editing PHP through the dashboard's theme file editor, which has no proper version history</li>
+<li>Is the code actually loading? A quick error_log message inside the function, viewed in the debug log on staging, confirms it runs.</li>
+<li>Is the hook name spelled exactly right?</li>
+<li>Is the hook firing on this page at all? Some hooks only run in the admin, on single posts or during checkout.</li>
+<li>Is another function with a higher priority changing the value after yours?</li>
+<li>For filters, is the function returning the value in every code path?</li>
 </ol>
+<p>Turn on WP_DEBUG and WP_DEBUG_LOG only on staging or briefly on a live site, and turn them off afterwards. Never display errors to visitors on a live site, because they can reveal file paths and other details.</p>
 
-<h2 id="what-business-owners-should-ask">What business owners should ask</h2>
-<p>You don't need to write hooks to manage a developer who does. Ask:</p>
-<ul>
-  <li>Were any theme, plugin or core files edited directly? The answer should be no.</li>
-  <li>Where does our custom code live, and is it backed up or in version control?</li>
-  <li>Is each customisation documented, so another developer could take over?</li>
-  <li>Will this keep working after updates, and what should we check if it doesn't?</li>
-</ul>
+<h2 id="performance-and-security-considerations">Performance and security considerations</h2>
+<p>Every function attached to a hook runs each time that hook fires. A slow function on a hook like init or wp_head runs on every page load and slows the whole site. Keep hooked functions light, check conditions early and return quickly when the code is not needed. If your code handles form data or saves anything, sanitise input, escape output and check user capabilities and nonces. Hooks make changes easy, which also makes careless changes easy.</p>
 
-<p>Need a feature added, or a tangle of old snippets cleaned up? I write hook-based customisations that survive updates as part of <a href="/wordpress-website-development/">WordPress website development</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for ongoing work.</p>
+<h2 id="getting-help-with-custom-code">Getting help with custom code</h2>
+<p>If you need a WordPress or WooCommerce change that a plugin cannot do cleanly, a small hook-based customisation is usually the safest route. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> to write, test on staging and document it.</p>
+
+<p>Even small hook changes deserve a short note: what the code does, why it was added and which plugin or theme it depends on. That record makes future updates and handovers much safer, especially when several people work on the same site over the years.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>What are WordPress hooks, actions and filters?</h3>
+<p>Hooks are points where you can attach your own code. Actions run your code at a certain moment; filters let you change a value and must return it.</p>
+<h3>Where should I add WordPress hook code?</h3>
+<p>In a child theme's functions.php, a small custom plugin or a code snippets plugin. Never in core files or a parent theme or plugin that updates will overwrite.</p>
+<h3>Why is my filter making content disappear?</h3>
+<p>Most often the function does not return a value. Every filter function must return the (possibly changed) value it received.</p>
+<h3>What does hook priority mean?</h3>
+<p>It sets the order in which functions on the same hook run. Lower numbers run first; the default is 10.</p>
+<h3>Are hooks better than editing WooCommerce templates?</h3>
+<p>Usually yes. Hooks survive updates better, while copied templates can go out of date and break.</p>
+
+<p>Need a clean, update-safe customisation? <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> to build it properly.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -295,13 +350,21 @@ Description: Custom code for this website.
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#what-a-hook-is">What a hook is</a></li>
-              <li><a href="#actions-do-something-at-the-right-moment">Actions: do something at the right moment</a></li>
-              <li><a href="#filters-change-something-before-it-s-used">Filters: change something before it's used</a></li>
-              <li><a href="#why-hooks-beat-editing-core-or-plugin-files">Why hooks beat editing core or plugin files</a></li>
-              <li><a href="#where-custom-code-should-live">Where custom code should live</a></li>
-              <li><a href="#the-risks-of-pasting-random-snippets">The risks of pasting random snippets</a></li>
-              <li><a href="#what-business-owners-should-ask">What business owners should ask</a></li>
+              <li><a href="#wordpress-hooks-actions-and-filters-the-difference">WordPress hooks, actions and filters: the difference</a></li>
+              <li><a href="#a-simple-action-example">A simple action example</a></li>
+              <li><a href="#a-simple-filter-example">A simple filter example</a></li>
+              <li><a href="#priority-and-arguments">Priority and arguments</a></li>
+              <li><a href="#removing-a-hook">Removing a hook</a></li>
+              <li><a href="#where-to-put-hook-code-safely">Where to put hook code safely</a></li>
+              <li><a href="#hooks-in-woocommerce">Hooks in WooCommerce</a></li>
+              <li><a href="#common-mistakes-with-hooks">Common mistakes with hooks</a></li>
+              <li><a href="#how-to-find-the-right-hook">How to find the right hook</a></li>
+              <li><a href="#shortcodes-blocks-and-hooks">Shortcodes, blocks and hooks</a></li>
+              <li><a href="#creating-your-own-hooks">Creating your own hooks</a></li>
+              <li><a href="#debugging-hooks-safely">Debugging hooks safely</a></li>
+              <li><a href="#performance-and-security-considerations">Performance and security considerations</a></li>
+              <li><a href="#getting-help-with-custom-code">Getting help with custom code</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -329,8 +392,8 @@ Description: Custom code for this website.
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/what-does-wordpress-developer-do/"><img class="post-card-img" src="/assets/og/blog-what-does-wordpress-developer-do.webp" alt="What Does a WordPress Developer Actually Do? Roles, Skills and When to Hire One" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>What Does a WordPress Developer Actually Do? Roles, Skills and When to Hire One</h3><p>What a WordPress developer is and does: theme, plugin and site developers, daily tasks, key skills, how they differ from web designers, and when to hire one.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/custom-wordpress-plugin-development/"><img class="post-card-img" src="/assets/og/blog-custom-wordpress-plugin-development.webp" alt="Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built</h3><p>Custom WordPress plugin development explained: when a bespoke plugin beats off-the-shelf ones, real examples, the build process, cost factors and upkeep.</p><span class="post-card-meta">28 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/wordpress-child-theme-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-child-theme-explained.webp" alt="WordPress Child Themes Explained: What They Are, When You Need One and How to Create One (With Code)" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>WordPress Child Themes Explained: What They Are, When You Need One and How to Create One (With Code)</h3><p>WordPress child theme explained: when you need one, how to create it with style.css and functions.php enqueue code, template overrides and common fixes.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/plugin-vs-custom-code-wordpress/"><img class="post-card-img" src="/assets/og/blog-plugin-vs-custom-code-wordpress.webp" alt="Plugin or Custom Code in WordPress? When to Use a Plugin, a Code Snippet or a Custom Plugin, With a Decision Table" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Plugin or Custom Code in WordPress? When to Use a Plugin, a Code Snippet or a Custom Plugin, With a Decision Table</h3><p>Plugin or custom code in WordPress? When to use a plugin, a snippet or a custom plugin, weighing security, speed, upkeep and cost, with a decision table.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
         </div>
       </div>
     </section>
