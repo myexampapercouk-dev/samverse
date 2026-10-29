@@ -2426,7 +2426,7 @@
     <link>https://samverse.space/blog/search-console-page-indexing-errors/</link>
     <guid>https://samverse.space/blog/search-console-page-indexing-errors/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What Crawled or Discovered – currently not indexed, duplicate canonical and other Search Console statuses mean, which to ignore and how to fix the rest.</description>
+    <description>Search Console page indexing errors explained: what crawled or discovered not indexed, duplicate, noindex, 404 and 5xx mean, and which ones to fix.</description>
   </item>
   <item>
     <title>Orphan Pages: What They Are and How to Find and Fix Them</title>
@@ -2454,7 +2454,7 @@
     <link>https://samverse.space/blog/connect-website-forms-to-crm/</link>
     <guid>https://samverse.space/blog/connect-website-forms-to-crm/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to send WordPress form enquiries to a CRM, Google Sheets or email automation so no lead is lost, with setup options, field mapping and privacy tips.</description>
+    <description>How to connect website forms to a CRM or Google Sheets on WordPress: native add-ons, webhooks, automation tools, field mapping, backups and privacy.</description>
   </item>
   <item>
     <title>Multi-Step Forms in WordPress: How to Qualify Leads Without Losing Enquiries</title>
@@ -3861,14 +3861,14 @@
     <link>https://samverse.space/blog/wordpress-http-error-image-upload-fix/</link>
     <guid>https://samverse.space/blog/wordpress-http-error-image-upload-fix/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Getting &quot;HTTP error&quot; when uploading images to WordPress? Check file size, memory, Imagick vs GD, permissions, security rules and plugins, in the right order.</description>
+    <description>WordPress HTTP error when uploading images? Check file size, memory and time limits, Imagick or GD, permissions, mod_security and plugins, in a safe order.</description>
   </item>
   <item>
     <title>WordPress CSS Changes Not Showing? Caches, Elementor and Overrides Explained</title>
     <link>https://samverse.space/blog/wordpress-css-changes-not-showing/</link>
     <guid>https://samverse.space/blog/wordpress-css-changes-not-showing/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>CSS or design changes not showing in WordPress? Clear browser, page and CDN caches safely, regenerate Elementor CSS, and fix child theme order and specificity.</description>
+    <description>WordPress CSS changes not showing? Find out if it is browser, page, CDN or Elementor cache, a minify plugin, load order or specificity, and fix it.</description>
   </item>
   <item>
     <title>White-Label Elementor Development for Design Agencies: Builds Clients Can Edit</title>
@@ -3945,14 +3945,14 @@
     <link>https://samverse.space/blog/wordpress-500-internal-server-error-fix/</link>
     <guid>https://samverse.space/blog/wordpress-500-internal-server-error-fix/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>How to fix a 500 Internal Server Error in WordPress: read the error log, enable WP_DEBUG_LOG safely, then check .htaccess, plugins, memory, PHP and limits.</description>
+    <description>Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.</description>
   </item>
   <item>
     <title>502 Bad Gateway and 504 Gateway Timeout on WordPress: Causes and Fixes</title>
     <link>https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/</link>
     <guid>https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>What 502 Bad Gateway and 504 Gateway Timeout mean on WordPress, and how to fix them: PHP workers, heavy plugins, slow queries, Cloudflare and host limits.</description>
+    <description>Fix a 502 bad gateway or 504 gateway timeout on WordPress: read the error page, check PHP workers, slow plugins, Cloudflare and hosting limits.</description>
   </item>
   <item>
     <title>How to Set Up Cloudflare's Free Plan on WordPress, Step by Step: DNS, Nameservers, Full (Strict) SSL, Cache Rules and Troubleshooting</title>
@@ -4036,7 +4036,7 @@
     <link>https://samverse.space/blog/wordpress-admin-bar-dashboard-missing-fix/</link>
     <guid>https://samverse.space/blog/wordpress-admin-bar-dashboard-missing-fix/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Fix a missing WordPress admin bar, vanished dashboard menus or &quot;Sorry, you are not allowed to access this page&quot;: roles, profile setting, plugins, migrations.</description>
+    <description>WordPress admin bar or dashboard menus missing? Check your profile setting, user role, plugins, caching, table prefix and security plugin settings.</description>
   </item>
   <item>
     <title>WordPress Multisite SEO: Sitemaps, Search Console, Canonicals and Hreflang</title>

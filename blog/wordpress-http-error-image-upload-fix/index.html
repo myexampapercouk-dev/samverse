@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordPress HTTP Error When Uploading Images: How to Fix It</title>
-  <meta name="description" content="Getting &quot;HTTP error&quot; when uploading images to WordPress? Check file size, memory, Imagick vs GD, permissions, security rules and plugins, in the right order.">
+  <meta name="description" content="WordPress HTTP error when uploading images? Check file size, memory and time limits, Imagick or GD, permissions, mod_security and plugins, in a safe order.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-http-error-image-upload-fix/">
   <meta property="og:title" content="WordPress HTTP Error When Uploading Images: How to Fix It">
-  <meta property="og:description" content="Getting &quot;HTTP error&quot; when uploading images to WordPress? Check file size, memory, Imagick vs GD, permissions, security rules and plugins, in the right order.">
+  <meta property="og:description" content="WordPress HTTP error when uploading images? Check file size, memory and time limits, Imagick or GD, permissions, mod_security and plugins, in a safe order.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-http-error-image-upload-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-http-error-image-upload-fix/#article",
       "headline": "\"HTTP Error\" When Uploading Images to WordPress: Causes and Fixes",
-      "description": "Getting \"HTTP error\" when uploading images to WordPress? Check file size, memory, Imagick vs GD, permissions, security rules and plugins, in the right order.",
+      "description": "WordPress HTTP error when uploading images? Check file size, memory and time limits, Imagick or GD, permissions, mod_security and plugins, in a safe order.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-http-error-image-upload-fix/",
       "image": "https://samverse.space/assets/og/blog-wordpress-http-error-image-upload-fix.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>&quot;HTTP Error&quot; When Uploading Images to WordPress: Causes and Fixes</h1>
-          <p class="post-dek">Getting &quot;HTTP error&quot; when uploading images to WordPress? Check file size, memory, Imagick vs GD, permissions, security rules and plugins, in the right order.</p>
+          <p class="post-dek">WordPress HTTP error when uploading images? Check file size, memory and time limits, Imagick or GD, permissions, mod_security and plugins, in a safe order.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=%22HTTP%20Error%22%20When%20Uploading%20Images%20to%20WordPress%3A%20Causes%20and%20Fixes%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-http-error-image-upload-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -154,6 +154,7 @@
             <summary>On this page</summary>
             <ol>
               <li><a href="#what-the-http-error-actually-means">What the "HTTP error" actually means</a></li>
+              <li><a href="#wordpress-http-error-uploading-images-quick-diagnosis-table">WordPress HTTP error uploading images: quick diagnosis table</a></li>
               <li><a href="#check-1-retry-and-test-with-a-small-image">Check 1: Retry, and test with a small image</a></li>
               <li><a href="#check-2-file-size-dimensions-and-format">Check 2: File size, dimensions and format</a></li>
               <li><a href="#check-3-memory-and-time-limits">Check 3: Memory and time limits</a></li>
@@ -161,31 +162,38 @@
               <li><a href="#check-5-folder-permissions-and-disk-space">Check 5: Folder permissions and disk space</a></li>
               <li><a href="#check-6-security-rules-and-mod-security">Check 6: Security rules and mod_security</a></li>
               <li><a href="#check-7-plugins-and-themes">Check 7: Plugins and themes</a></li>
+              <li><a href="#a-safe-order-and-when-to-involve-your-host">A safe order, and when to involve your host</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>The &quot;HTTP error&quot; usually happens while WordPress resizes the image, so test with a small image first to tell size and memory problems apart from permission, security and plugin problems.</li>
-              <li>Resize large photos before uploading, check memory limits in Site Health, and test with GD instead of Imagick if the image library is struggling on shared hosting.</li>
-              <li>If every upload fails, check uploads folder permissions and disk space, then ask your host to adjust any ModSecurity rule blocking the upload rather than switching the firewall off.</li>
+              <li>The WordPress &quot;HTTP error&quot; is a generic message: the upload or the image resizing step failed on the server, and the real reason is in the server logs.</li>
+              <li>Most cases come down to a large photo, low memory or time limits, the image library (Imagick or GD), folder permissions or a security rule.</li>
+              <li>Work from the cheapest check to the deepest: retry, shrink the image, test another browser, then limits, image library, permissions, firewall and plugins.</li>
             </ul>
           </div>
-<p>You drag a photo into the media library, the progress bar fills up, and WordPress shows just two words: "HTTP error". The message is vague because WordPress itself doesn't know what went wrong; the server sent back something it didn't expect. The causes are well known, though, and checking them in the right order usually finds the problem quickly.</p>
+<p>The WordPress <strong>"HTTP error" when uploading images</strong> means the upload request failed on the server, either while receiving the file or while WordPress was resizing it into thumbnails. The message is generic, so you fix it by elimination: retry, try a smaller image, then check memory and time limits, the image library (Imagick or GD), folder permissions, security rules and plugins. In most cases one of the first four checks below solves it.</p>
+<p>Below is the order I use, from the quick checks anyone can do to the server-side ones you may need your host for.</p>
 
 <h2 id="what-the-http-error-actually-means">What the "HTTP error" actually means</h2>
-<p>Uploading an image is two jobs. First the file is sent to the server. Then WordPress processes it: it creates several resized copies (thumbnail, medium, large and any extra sizes your theme or plugins register) and scales very large photos down to a more sensible maximum. The second job is the heavy one. If the server runs out of memory or time, or a security rule interrupts the request, WordPress gets an error back and shows the generic message.</p>
-<p>Newer versions sometimes show a longer message saying post-processing failed and suggesting a smaller image; it's the same problem. The original file may have uploaded without its resized copies, so check the media library before trying again.</p>
-<p>If the message mentions the maximum upload size instead, that's a different limit; see <a href="/blog/increase-wordpress-upload-size-limit/">how to increase the WordPress upload size limit</a>.</p>
+<p>When you drop an image into the Media Library, two things happen. First the browser uploads the file to wp-admin/async-upload.php. Then WordPress generates several smaller copies (thumbnail, medium, large and any sizes your theme or plugins add) and, on recent versions, may create a scaled version of very large images. If the server returns anything other than a clean success during either step, the media uploader shows "HTTP error" without detail.</p>
+<p>That is why the same image can fail on one site and work on another: the limits and image libraries differ between hosting accounts.</p>
+<p>To see a more specific message, open your browser's developer tools before uploading, go to the Network tab and click the async-upload.php request after it fails. The status code (such as 500, 403 or 413) and the response text often name the real problem, which narrows the checks below.</p>
 
-<h2 id="check-1-retry-and-test-with-a-small-image">Check 1: Retry, and test with a small image</h2>
-<ul>
-  <li>Wait a minute and try again; a busy shared server can fail once and then succeed</li>
-  <li>Log out and back in, as an expired session can make uploads fail</li>
-  <li>Try a private window or another browser, with extensions off</li>
-  <li>Upload a small test image, such as a screenshot</li>
-</ul>
-<p>If small images work and large ones fail, look at size, memory and the image library (checks 2 to 4). If every upload fails, look at permissions, security rules and plugins (checks 5 to 7).</p>
+<h2 id="wordpress-http-error-uploading-images-quick-diagnosis-table">WordPress HTTP error uploading images: quick diagnosis table</h2>
+<table>
+  <thead><tr><th>What you notice</th><th>Likely cause</th><th>Where to look</th></tr></thead>
+  <tbody>
+    <tr><td>Only large phone or camera photos fail</td><td>Memory or time limit during resizing</td><td>Memory limit, max_execution_time, image dimensions</td></tr>
+    <tr><td>Every upload fails, even tiny images</td><td>Permissions, disk space, security rule or plugin</td><td>wp-content/uploads, hosting disk usage, firewall logs</td></tr>
+    <tr><td>Upload succeeds but thumbnails are missing</td><td>Image library failed after upload</td><td>Imagick or GD, PHP error log</td></tr>
+    <tr><td>Started after a plugin or theme update</td><td>Conflict</td><td>Recently updated plugins</td></tr>
+    <tr><td>Started after moving host</td><td>Different limits, missing PHP extensions, ownership</td><td>Site Health, hosting PHP settings</td></tr>
+    <tr><td>Only WebP, AVIF or HEIC fails</td><td>Server library does not support the format</td><td>Site Health media information</td></tr>
+  </tbody>
+</table>
 
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
@@ -193,59 +201,85 @@
   <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22%22HTTP%20Error%22%20When%20Uploading%20Images%20to%20WordPress%3A%20Causes%20and%20Fixes%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
+<h2 id="check-1-retry-and-test-with-a-small-image">Check 1: Retry, and test with a small image</h2>
+<p>A brief connection drop or a session timeout can cause a one-off failure. Before anything else:</p>
+<ul>
+  <li>Wait a minute and upload the same file again.</li>
+  <li>Log out and back in, in case your login session expired.</li>
+  <li>Try a small JPG of a few hundred kilobytes. If that works, the problem is the size of the original image.</li>
+  <li>Try another browser or a private window, to rule out an extension interfering.</li>
+</ul>
+
 <h2 id="check-2-file-size-dimensions-and-format">Check 2: File size, dimensions and format</h2>
-<p>Pixel dimensions matter more than file size. A camera photo may be only a few megabytes as a JPEG, but to resize it the server must unpack it to full size in memory. Resizing photos before uploading often fixes the error on its own.</p>
-<table>
-  <thead><tr><th>Issue</th><th>What to do</th></tr></thead>
-  <tbody>
-    <tr><td>Very large dimensions, such as a camera original</td><td>Resize to roughly the largest size it will be shown at</td></tr>
-    <tr><td>Unusual characters or a very long file name</td><td>Rename to simple lowercase words with hyphens, such as <code>office-reception.jpg</code></td></tr>
-    <tr><td>HEIC photos from an iPhone</td><td>Recent WordPress versions can convert them only if the server supports HEIC; otherwise export as JPEG first</td></tr>
-    <tr><td>WebP or AVIF files</td><td>These work only when the server's image library supports the format</td></tr>
-    <tr><td>Print files, such as CMYK JPEGs exported for a brochure</td><td>Re-export in RGB for screen use</td></tr>
-  </tbody>
-</table>
+<p>Phone photos are often several thousand pixels wide. Resizing them uses a lot of memory, because the image is decompressed in full before WordPress creates each smaller copy. A photo that is modest in megabytes can still need a lot of memory to process.</p>
+<ul>
+  <li>Resize photos to a sensible width before uploading. For most website use, a width around the largest size your theme displays is plenty.</li>
+  <li>Compress them; <a href="/blog/image-compression-plugins-compared/">image compression plugins compared</a> covers the options, and <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> explains sizes and formats.</li>
+  <li>Check the file name. Rename files with unusual characters, spaces or very long names to simple lowercase names with hyphens.</li>
+  <li>If HEIC photos from iPhones fail, convert them to JPG or set the phone to save in a more compatible format.</li>
+</ul>
+<p>Also check the maximum upload size shown on the Media &gt; Add New screen. If your file is larger, the host's upload_max_filesize and post_max_size settings need raising, though WordPress usually shows a clearer message for that.</p>
 
 <h2 id="check-3-memory-and-time-limits">Check 3: Memory and time limits</h2>
-<p>If large images fail and small ones work, memory is the usual suspect. Tools → Site Health → Info shows the PHP memory limit, WP_MEMORY_LIMIT and the maximum execution time. Low values on a site with a heavy theme and many plugins leave little room for image processing. How to raise them safely is covered in <a href="/blog/wordpress-memory-limit-errors/">memory limit errors in WordPress</a>.</p>
-<p>On shared hosting, uploading dozens of photos at once can also hit the account's overall resource limits even when the memory setting is fine. Upload in smaller batches and see whether the errors stop.</p>
+<p>If larger images fail and small ones work, the server is probably running out of memory or time while resizing. Open <strong>Tools &gt; Site Health &gt; Info &gt; Server</strong> to see the PHP memory limit and max execution time.</p>
+<p>You can raise WordPress's memory limit in wp-config.php, above the line that says to stop editing:</p>
+<pre><code>define( 'WP_MEMORY_LIMIT', '256M' );</code></pre>
+<p>This only works up to the limit your hosting plan allows. If the host's PHP memory_limit is lower, change it in the hosting panel's PHP settings or ask the host. <a href="/blog/wordpress-memory-limit-errors/">WordPress memory limit errors</a> explains the different limits and where each is set. A slightly longer max_execution_time can help on slow shared servers too.</p>
 
 <h2 id="check-4-the-image-library-imagick-or-gd">Check 4: The image library, Imagick or GD</h2>
-<p>WordPress uses a PHP image library to do the resizing. It prefers Imagick when the server has it and falls back to GD otherwise. You can see which one is active under Tools → Site Health → Info → Media Handling.</p>
-<p>Imagick usually produces good results, but on some shared servers it tries to use more processing threads or memory than the account allows. Two common fixes:</p>
-<ul>
-  <li><strong>Ask your host</strong> to check the Imagick set-up or limit its thread count for your account</li>
-  <li><strong>Test with GD instead</strong> by adding this snippet to a child theme's functions.php or a code snippets plugin</li>
-</ul>
+<p>WordPress uses Imagick if it is available and falls back to GD. On some servers Imagick runs with several threads and hits resource limits on shared hosting, which causes HTTP errors on larger images. Site Health &gt; Info &gt; Media Handling shows which library is active and which formats it supports.</p>
+<p>A common test is to make WordPress prefer GD, using a small snippet in a custom plugin or a child theme's functions.php:</p>
 <pre><code>add_filter( 'wp_image_editors', function( $editors ) {
-    return array( 'WP_Image_Editor_GD', 'WP_Image_Editor_Imagick' );
+  return array( 'WP_Image_Editor_GD', 'WP_Image_Editor_Imagick' );
 } );</code></pre>
-<p>If uploads start working, Imagick was the problem. GD doesn't support every format Imagick does, so treat this as a diagnosis and let your host fix the underlying set-up where possible. If Site Health shows neither library, the host needs to enable one.</p>
+<p>If uploads start working, keep the snippet or ask your host to adjust Imagick's resource settings. If neither library is installed, thumbnails will not be created at all, and the host needs to enable one. Updating to a supported PHP version often brings newer library builds too; see <a href="/blog/update-php-version-wordpress/">how to update PHP in WordPress safely</a>.</p>
 
 <h2 id="check-5-folder-permissions-and-disk-space">Check 5: Folder permissions and disk space</h2>
-<p>If every upload fails, including tiny ones, WordPress may not be able to write to wp-content/uploads and the year and month folders inside it.</p>
+<p>WordPress writes uploads to wp-content/uploads, in year and month folders. If the web server cannot write there, every upload fails.</p>
 <ul>
-  <li><strong>Permissions:</strong> folders are usually 755 and files 644, owned by the account the website runs as. Never set folders to 777 to "fix" uploads, because that lets anything on the server write there. If ownership looks wrong, ask your host to correct it</li>
-  <li><strong>Disk space:</strong> a full hosting account stops uploads. Check storage in your hosting panel; old backups saved on the server are a common space hog</li>
-  <li><strong>After a migration:</strong> an old server path left in the upload settings can send files to a folder that doesn't exist on the new host</li>
+  <li>Folders are normally 755 and files 644, owned by the hosting account user. After a migration, ownership can end up wrong even when the numbers look right.</li>
+  <li>Check Settings &gt; Media: the "Store uploads in" path, if shown, should not point to an old server path.</li>
+  <li>Check your hosting disk usage. A full disk or an inode limit stops new files being written, and backups stored on the same account are a common reason the disk fills.</li>
 </ul>
 
 <h2 id="check-6-security-rules-and-mod-security">Check 6: Security rules and mod_security</h2>
-<p>Many hosts run a server firewall, often ModSecurity, that inspects requests. Occasionally it mistakes an image upload for an attack, perhaps because of the file name or data hidden inside the photo. Security plugins and CDN firewalls can do the same.</p>
-<p>To confirm it, open your browser's developer tools (F12), go to the Network tab and upload again. Find the request to <code>async-upload.php</code>: a 403, 406 or 500 status points to a block or server error. Your hosting error or firewall log may show a rule ID; send it to your host and ask them to adjust that one rule for your site, rather than switching the firewall off. Ignore old forum advice to disable security filtering in .htaccess; on modern servers it usually does nothing or causes a 500 error.</p>
+<p>Server firewalls such as mod_security, and security plugins, sometimes block upload requests they consider suspicious, for example because of a pattern in the file name or metadata. The result can be an HTTP error, or a 403 in the browser's network tab.</p>
+<ul>
+  <li>Open the browser's developer tools, Network tab, and upload again. Look at the status code of the async-upload.php request.</li>
+  <li>A 403 points at a firewall or permission rule; <a href="/blog/wordpress-403-forbidden-error-fix/">the 403 forbidden error guide</a> covers how to find which one.</li>
+  <li>Ask your host to check the mod_security log for the time of your upload and whitelist the specific rule, rather than switching the firewall off.</li>
+</ul>
 
 <p>The same firewall and security rules can also block the media library's background requests, leaving the grid stuck on a spinner even when uploads work; see <a href="/blog/wordpress-media-library-not-loading-fix/">how to fix a WordPress media library that won't load</a>.</p>
 
 <h2 id="check-7-plugins-and-themes">Check 7: Plugins and themes</h2>
-<p>Some plugins do extra work on every upload:</p>
-<ul>
-  <li>Compression plugins that send each file to an outside service and can time out</li>
-  <li>Watermark, media offload or media folder plugins</li>
-  <li>Themes and plugins that register many extra image sizes, so each upload creates more copies</li>
-</ul>
-<p>Use the Health Check plugin's troubleshooting mode, or a staging copy, to switch plugins off for your session only and test again; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find plugin conflicts</a>. Media → Add New also offers a simpler "browser uploader" link, a useful test when you suspect a script problem. For other error messages, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
+<p>Image optimisation, watermark, security and media library plugins all hook into uploads. If the error started after an update, test on a staging copy: deactivate plugins in groups, switch to a default theme and upload again. <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">Troubleshooting plugin conflicts</a> explains a safe way to do this. Themes and page builders that register many extra image sizes also increase the work done on each upload, so remove sizes you never use.</p>
 
-<p>Still seeing "HTTP error", or are heavy images slowing your pages? I fix upload and server issues as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and set up fast image handling through <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+<h2 id="a-safe-order-and-when-to-involve-your-host">A safe order, and when to involve your host</h2>
+<ol>
+  <li>Retry, re-login and test a small JPG in another browser.</li>
+  <li>Resize and compress the original image and rename it simply.</li>
+  <li>Check memory and execution limits in Site Health.</li>
+  <li>Test GD instead of Imagick.</li>
+  <li>Check uploads folder permissions, ownership and disk space.</li>
+  <li>Check the status code in the Network tab and ask the host about firewall logs.</li>
+  <li>Test plugins and theme on staging.</li>
+</ol>
+<p>Once uploads work, keep images light so the issue does not come back and pages load fast; <a href="/blog/image-seo-guide/">the image SEO guide</a> covers file names and alt text while you are at it.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>How do I fix the WordPress HTTP error when uploading images?</h3>
+<p>Retry, then test a smaller image. If small images work, raise memory and time limits or switch the image library to GD. If nothing uploads, check uploads folder permissions, disk space, firewall rules and plugins.</p>
+<h3>Why do only some images fail to upload?</h3>
+<p>Usually because they are very large in pixel dimensions, which needs more memory to resize, or because the format, such as HEIC or some WebP files, is not supported by the server's image library.</p>
+<h3>Is the HTTP error caused by my internet connection?</h3>
+<p>Occasionally a dropped connection causes one failed upload. If it happens every time with the same image, the cause is on the server or in WordPress.</p>
+<h3>Does the HTTP error damage my site?</h3>
+<p>No. The failed image may leave a partial entry in the Media Library, which you can delete, but your pages and content are not affected.</p>
+<h3>Should I ask my hosting company to fix it?</h3>
+<p>Ask them if the cause is a server limit, a missing image library, file ownership or a firewall rule, because those are on their side. Size, plugin and theme causes are things you or your developer fix inside WordPress.</p>
+
+<p>If uploads still fail after these checks, it is usually a server setting or plugin conflict that takes a short investigation. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for the fix, find a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> for local help, or keep updates and form checks handled every month with <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -282,6 +316,7 @@
             <strong>On this page</strong>
             <ol>
               <li><a href="#what-the-http-error-actually-means">What the "HTTP error" actually means</a></li>
+              <li><a href="#wordpress-http-error-uploading-images-quick-diagnosis-table">WordPress HTTP error uploading images: quick diagnosis table</a></li>
               <li><a href="#check-1-retry-and-test-with-a-small-image">Check 1: Retry, and test with a small image</a></li>
               <li><a href="#check-2-file-size-dimensions-and-format">Check 2: File size, dimensions and format</a></li>
               <li><a href="#check-3-memory-and-time-limits">Check 3: Memory and time limits</a></li>
@@ -289,6 +324,8 @@
               <li><a href="#check-5-folder-permissions-and-disk-space">Check 5: Folder permissions and disk space</a></li>
               <li><a href="#check-6-security-rules-and-mod-security">Check 6: Security rules and mod_security</a></li>
               <li><a href="#check-7-plugins-and-themes">Check 7: Plugins and themes</a></li>
+              <li><a href="#a-safe-order-and-when-to-involve-your-host">A safe order, and when to involve your host</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -315,9 +352,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/update-php-version-wordpress/"><img class="post-card-img" src="/assets/og/blog-update-php-version-wordpress.webp" alt="How to Update Your WordPress Site's PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Update Your WordPress Site's PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes</h3><p>Update your WordPress PHP version safely: check compatibility on staging, switch in hPanel or cPanel, re-enable extensions and fix anything that breaks.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/wordpress-memory-limit-errors/"><img class="post-card-img" src="/assets/og/blog-wordpress-memory-limit-errors.webp" alt="&quot;Allowed Memory Size Exhausted&quot; in WordPress: Causes and Fixes for Memory Limit Errors" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>&quot;Allowed Memory Size Exhausted&quot; in WordPress: Causes and Fixes for Memory Limit Errors</h3><p>Fix WordPress memory limit errors: what &quot;allowed memory size exhausted&quot; means, how to raise WP_MEMORY_LIMIT and the PHP limit, and how to find the cause.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/common-wordpress-errors-fixes/"><img class="post-card-img" src="/assets/og/blog-common-wordpress-errors-fixes.webp" alt="Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</h3><p>Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-plugin-conflicts-troubleshooting/"><img class="post-card-img" src="/assets/og/blog-wordpress-plugin-conflicts-troubleshooting.webp" alt="How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention</h3><p>Fix WordPress plugin conflicts without risking your live site: test on staging, use Health Check mode, halve your plugins, read the debug log and console.</p><span class="post-card-meta">1 October 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

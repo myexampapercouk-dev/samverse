@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Search Console Page Indexing Errors Explained | Samverse</title>
-  <meta name="description" content="What Crawled or Discovered – currently not indexed, duplicate canonical and other Search Console statuses mean, which to ignore and how to fix the rest.">
+  <meta name="description" content="Search Console page indexing errors explained: what crawled or discovered not indexed, duplicate, noindex, 404 and 5xx mean, and which ones to fix.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/search-console-page-indexing-errors/">
   <meta property="og:title" content="Search Console Page Indexing Errors Explained | Samverse">
-  <meta property="og:description" content="What Crawled or Discovered – currently not indexed, duplicate canonical and other Search Console statuses mean, which to ignore and how to fix the rest.">
+  <meta property="og:description" content="Search Console page indexing errors explained: what crawled or discovered not indexed, duplicate, noindex, 404 and 5xx mean, and which ones to fix.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-search-console-page-indexing-errors.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/search-console-page-indexing-errors/#article",
       "headline": "Search Console Page Indexing Errors: What Each Status Means and What to Do",
-      "description": "What Crawled or Discovered – currently not indexed, duplicate canonical and other Search Console statuses mean, which to ignore and how to fix the rest.",
+      "description": "Search Console page indexing errors explained: what crawled or discovered not indexed, duplicate, noindex, 404 and 5xx mean, and which ones to fix.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-09-28",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/search-console-page-indexing-errors/",
       "image": "https://samverse.space/assets/og/blog-search-console-page-indexing-errors.png",
       "articleSection": "SEO",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/seo-growth/">SEO &amp; growth</a></nav>
           <a class="post-cat" href="/blog/topic/seo-growth/">SEO</a>
           <h1>Search Console Page Indexing Errors: What Each Status Means and What to Do</h1>
-          <p class="post-dek">What Crawled or Discovered – currently not indexed, duplicate canonical and other Search Console statuses mean, which to ignore and how to fix the rest.</p>
+          <p class="post-dek">Search Console page indexing errors explained: what crawled or discovered not indexed, duplicate, noindex, 404 and 5xx mean, and which ones to fix.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · 6 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Search%20Console%20Page%20Indexing%20Errors%3A%20What%20Each%20Status%20Means%20and%20What%20to%20Do%20https%3A%2F%2Fsamverse.space%2Fblog%2Fsearch-console-page-indexing-errors%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -154,42 +154,50 @@
             <summary>On this page</summary>
             <ol>
               <li><a href="#first-ask-should-this-page-be-indexed">First, ask: should this page be indexed?</a></li>
+              <li><a href="#search-console-page-indexing-errors-each-status-at-a-glance">Search Console page indexing errors: each status at a glance</a></li>
               <li><a href="#crawled-currently-not-indexed">Crawled – currently not indexed</a></li>
               <li><a href="#discovered-currently-not-indexed">Discovered – currently not indexed</a></li>
               <li><a href="#duplicate-and-canonical-statuses">Duplicate and canonical statuses</a></li>
               <li><a href="#excluded-on-purpose-or-by-accident">Excluded on purpose, or by accident</a></li>
               <li><a href="#errors-that-need-fixing-quickly">Errors that need fixing quickly</a></li>
+              <li><a href="#common-patterns-on-wordpress-and-shopify-sites">Common patterns on WordPress and Shopify sites</a></li>
               <li><a href="#fixing-validating-and-checking-monthly">Fixing, validating and checking monthly</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>The number of not-indexed pages is not a score; what matters is whether your service pages, products and key posts are indexed.</li>
-              <li>&quot;Crawled&quot; and &quot;Discovered – currently not indexed&quot; usually point to thin content, weak internal links or slow hosting, not a technical block.</li>
-              <li>Fix the cause first, test the live URL, then use Validate fix and give Google days to weeks to recheck.</li>
+              <li>Not every &quot;Why pages aren't indexed&quot; reason is a problem: first decide whether each URL should be in Google at all.</li>
+              <li>Crawled or discovered but not indexed are usually quality, duplication or internal linking issues, not technical errors you can switch off.</li>
+              <li>Fix real errors (5xx, 404s in the sitemap, accidental noindex or robots blocks) first, then validate the fix and check the report monthly.</li>
             </ul>
           </div>
-<p>Open the Pages report in Google Search Console and you'll usually see a grey bar of "Not indexed" pages, with a list of reasons that sound alarming. Some statuses are perfectly normal, a few need action, and one or two can quietly keep your most important pages out of Google. This guide explains the common statuses in plain English and what to do about each. For an overview of the other reports, see <a href="/blog/google-search-console-reports-explained/">Google Search Console reports explained</a>.</p>
+<p><strong>Search Console page indexing errors</strong> are the reasons Google lists under Indexing &gt; Pages for URLs it has not added to its index. Many are normal: redirects, pages you set to noindex, duplicates that point to a canonical version. The ones that need action are server errors (5xx), 404s on pages that should exist, accidental noindex or robots.txt blocks on important pages, and important pages stuck in "Crawled" or "Discovered – currently not indexed". Sort each reason by "should this page be indexed?" before fixing anything.</p>
+<p>Below, each status in plain words, with what to do about it on a typical WordPress or Shopify business site.</p>
 
 <h2 id="first-ask-should-this-page-be-indexed">First, ask: should this page be indexed?</h2>
-<p>First, click into a status and look at the example URLs. Sort them into two groups:</p>
-<ul>
-  <li><strong>Pages that should be in Google:</strong> your homepage, service pages, location pages, products, categories and blog posts</li>
-  <li><strong>Pages that don't need to be:</strong> thank-you pages, cart and checkout, login pages, internal search results (<code>?s=</code>), feed URLs ending in <code>/feed/</code>, tag and date archives, URLs with tracking parameters, and old URLs that now redirect</li>
-</ul>
-<p>If a status only contains the second group, it's usually fine. Leftover demo content from a theme import is better deleted. The number of not-indexed pages isn't a score. What matters is whether the pages you care about are indexed, so run your key pages through the URL Inspection tool to check each one directly.</p>
+<p>The Pages report shows every URL Google knows about, including ones you never meant to be found: tag archives, attachment pages, cart and account pages, filtered shop URLs, old URLs from a previous site. A high "not indexed" count is not a problem in itself.</p>
+<p>Change the filter at the top from "All known pages" to "All submitted pages". That shows only URLs from your sitemap, the ones you said matter. Problems in that view deserve attention first. If the sitemap itself lists junk, tidy it using <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
 
-<h2 id="crawled-currently-not-indexed">Crawled – currently not indexed</h2>
-<p>Google visited the page, read it, and decided not to add it to the index. Nothing is technically blocking it. It's usually a judgement about quality or value.</p>
-<p>Common causes:</p>
-<ul>
-  <li>Thin pages with little unique text, such as a service page with two lines and a contact form</li>
-  <li>Pages very similar to others on your site, like near-identical city pages</li>
-  <li>Low-value archives: tag pages, author pages or paginated blog archives</li>
-  <li>New pages on a young site that Google hasn't built trust in yet</li>
-</ul>
-<p><strong>What to do:</strong> make the pages that matter genuinely useful. Add real detail, answers to common questions, photos of your work, what affects pricing, and proof such as reviews or project examples. Link to them from relevant pages on your site, merge weak pages that overlap, then request indexing in URL Inspection. For low-value archives, it's fine to leave them out or set them to noindex.</p>
+<h2 id="search-console-page-indexing-errors-each-status-at-a-glance">Search Console page indexing errors: each status at a glance</h2>
+<table>
+  <thead><tr><th>Status</th><th>What it means</th><th>Action</th></tr></thead>
+  <tbody>
+    <tr><td>Server error (5xx)</td><td>Your server failed when Google crawled</td><td>Fix urgently if it repeats</td></tr>
+    <tr><td>Not found (404)</td><td>The URL does not exist</td><td>Fix only if the page should exist or has links; otherwise fine</td></tr>
+    <tr><td>Redirect error</td><td>Loop, chain too long or broken redirect</td><td>Fix</td></tr>
+    <tr><td>Page with redirect</td><td>The URL redirects elsewhere</td><td>Normal; remove from sitemap</td></tr>
+    <tr><td>Excluded by 'noindex' tag</td><td>The page asks not to be indexed</td><td>Fine if deliberate; fix if not</td></tr>
+    <tr><td>Blocked by robots.txt</td><td>Google is not allowed to crawl it</td><td>Fine if deliberate; fix if not</td></tr>
+    <tr><td>Alternate page with proper canonical tag</td><td>A duplicate pointing to the main version</td><td>Normal</td></tr>
+    <tr><td>Duplicate without user-selected canonical</td><td>Google found duplicates and picked one itself</td><td>Add canonicals or consolidate</td></tr>
+    <tr><td>Duplicate, Google chose different canonical than user</td><td>Google disagrees with your canonical</td><td>Check why the pages look the same</td></tr>
+    <tr><td>Crawled – currently not indexed</td><td>Google read it and chose not to index it yet</td><td>Improve the page and its links</td></tr>
+    <tr><td>Discovered – currently not indexed</td><td>Google knows it exists but has not crawled it</td><td>Improve internal links, site speed, wait</td></tr>
+    <tr><td>Soft 404</td><td>Page loads but looks empty or like an error</td><td>Add content or return a real 404</td></tr>
+  </tbody>
+</table>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress seo?</strong>
@@ -197,59 +205,89 @@
   <div><a href="/wordpress-seo-services/" class="link-inline">See WordPress SEO →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Search%20Console%20Page%20Indexing%20Errors%3A%20What%20Each%20Status%20Means%20and%20What%20to%20Do%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="discovered-currently-not-indexed">Discovered – currently not indexed</h2>
-<p>Google knows the URL exists, usually from your sitemap or a link, but hasn't crawled it yet. Google's own help notes that this often happens when crawling right then was expected to overload the site, so the crawl was rescheduled.</p>
-<p>Common causes:</p>
+<h2 id="crawled-currently-not-indexed">Crawled – currently not indexed</h2>
+<p>Google fetched the page and decided not to include it, at least for now. There is no switch for this; it is Google's judgement about value. Common causes on business sites:</p>
 <ul>
-  <li>A new site, or a large batch of pages published at once</li>
-  <li>Slow hosting or server errors that make Google crawl cautiously</li>
-  <li>Pages with few or no internal links, so Google treats them as unimportant</li>
-  <li>Thousands of low-value URLs (filters, parameters, archives) competing for Google's attention</li>
+  <li><strong>Thin pages:</strong> short location or service pages that repeat each other with the city name swapped.</li>
+  <li><strong>Near-duplicates:</strong> product variants, tag archives or blog posts that cover the same topic as another page.</li>
+  <li><strong>Weak internal links:</strong> pages only reachable from the sitemap or deep in pagination.</li>
+  <li><strong>New site, low trust:</strong> new domains often see this for many pages at first.</li>
 </ul>
-<p><strong>What to do:</strong> link to these pages from your navigation, homepage or related content, improve server response times, and stop low-value URLs being generated. On a new site, patience plus good internal links usually solves it; see <a href="/blog/get-website-indexed-google-faster/">how to get your website indexed faster</a>.</p>
+<p>What helps: make the page clearly more useful than similar ones, merge overlapping pages, link to it from relevant, already-indexed pages, and then request indexing once. <a href="/blog/duplicate-content-explained/">Duplicate content explained</a> helps decide what to merge.</p>
+
+<h2 id="discovered-currently-not-indexed">Discovered – currently not indexed</h2>
+<p>Google knows the URL, usually from the sitemap or a link, but has not crawled it yet. On small sites this often clears with time. If it persists:</p>
+<ul>
+  <li>Add internal links from pages Google already crawls often, such as the homepage, service pages and popular posts.</li>
+  <li>Check server speed. Google crawls less on slow or erroring sites.</li>
+  <li>Make sure the sitemap is not flooded with low-value URLs that compete for crawling.</li>
+</ul>
+<p><a href="/blog/get-website-indexed-google-faster/">Getting a website indexed faster</a> covers what genuinely speeds this up and what does not.</p>
 
 <h2 id="duplicate-and-canonical-statuses">Duplicate and canonical statuses</h2>
-<p>These three are about which version of a page Google treats as the original:</p>
-<table>
-  <thead><tr><th>Status</th><th>What it means</th><th>What to do</th></tr></thead>
-  <tbody>
-    <tr><td>Alternate page with proper canonical tag</td><td>The page points to another URL as the original, and Google agreed</td><td>Usually nothing. This is working as intended.</td></tr>
-    <tr><td>Duplicate without user-selected canonical</td><td>Google sees this page as a duplicate, no canonical is set, and Google picked another URL as the original</td><td>If Google's choice is right, leave it. If not, add a canonical tag pointing to your preferred URL.</td></tr>
-    <tr><td>Duplicate, Google chose different canonical than user</td><td>Your canonical tag says one thing, but Google chose another URL</td><td>Check the pages really are duplicates, make internal links and your sitemap match your canonical, or make the pages clearly different.</td></tr>
-  </tbody>
-</table>
-<p>On WordPress sites, typical culprits are http and https (or www and non-www) versions both loading, URLs with parameters such as <code>?replytocom=</code> or ad tracking tags, and near-identical product or location pages. URL Inspection shows which canonical Google selected for any page. More detail in <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</p>
+<p>A canonical tag tells Google which version of similar pages is the main one. "Alternate page with proper canonical tag" means it is working. The two duplicate statuses mean Google is choosing for you, or disagreeing with you.</p>
+<ul>
+  <li>Make sure every page has a self-referencing canonical, which SEO plugins such as Yoast and Rank Math add by default.</li>
+  <li>Use one URL format everywhere: https, www or not, trailing slash or not.</li>
+  <li>When Google picks a different canonical, compare the two pages. If they are nearly identical, Google sees them as one page; make them distinct or merge them.</li>
+</ul>
+<p><a href="/blog/canonical-tags-explained/">Canonical tags explained</a> goes into the details.</p>
 
 <h2 id="excluded-on-purpose-or-by-accident">Excluded on purpose, or by accident</h2>
+<p>Noindex and robots.txt blocks are correct for cart, checkout, account, thank-you and internal search pages. They are a serious problem on service pages or the whole site. Classic accidents:</p>
 <ul>
-  <li><strong>Excluded by 'noindex' tag:</strong> the page tells Google not to index it. Right for thank-you pages and private areas; a serious problem on a service page. Common causes are the WordPress "Discourage search engines" setting left on after launch, or an SEO plugin setting applied to a whole post type by mistake.</li>
-  <li><strong>Blocked by robots.txt:</strong> Google isn't allowed to crawl the URL. Fine for admin and cart URLs, but check no important folder is blocked. Robots.txt controls crawling, not indexing, so use noindex to keep a page out of results; see <a href="/blog/robots-txt-explained/">robots.txt explained</a>.</li>
-  <li><strong>Page with redirect:</strong> the URL redirects somewhere else. Normal after a redesign or URL change; make sure your sitemap and internal links point to the final URLs, not the old ones.</li>
+  <li>WordPress's "Discourage search engines from indexing this site" left ticked after launch (Settings &gt; Reading).</li>
+  <li>A staging robots.txt or noindex setting copied to the live site.</li>
+  <li>An SEO plugin set to noindex a whole post type or category.</li>
 </ul>
-
-<p>Seeing "Indexed, though blocked by robots.txt", or important pages listed under "Blocked by robots.txt"? See <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">how to fix both robots.txt statuses and when to use noindex instead</a>.</p>
+<p>Note that robots.txt blocks crawling, not indexing, and Google cannot see a noindex tag on a blocked page. To remove a page from Google, allow crawling and use noindex. See <a href="/blog/robots-txt-explained/">robots.txt explained</a> and <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">"Indexed, though blocked by robots.txt"</a>.</p>
 
 <h2 id="errors-that-need-fixing-quickly">Errors that need fixing quickly</h2>
 <ul>
-  <li><strong>Not found (404):</strong> the URL no longer exists. If it's an old page with links or traffic, 301 redirect it to the closest relevant page. If it was never important, a 404 is fine.</li>
-  <li><strong>Soft 404:</strong> the page loads normally but looks empty or like an error to Google, such as an empty category or a product page with no content left. Add proper content, redirect it, or let it return a real 404.</li>
-  <li><strong>Server error (5xx):</strong> your server failed when Google visited. The odd error happens; repeated ones point to hosting limits, a plugin conflict or a firewall blocking Googlebot.</li>
-  <li><strong>Redirect error:</strong> a redirect chain that's too long, a loop, or a redirect to a broken URL. Often caused by conflicting rules in a redirect plugin, .htaccess and a CDN.</li>
+  <li><strong>Server errors (5xx):</strong> if Google keeps hitting errors, it slows crawling and may drop pages. Check hosting resource limits and error logs for the dates shown.</li>
+  <li><strong>404s on real pages:</strong> often broken permalinks after a migration; <a href="/blog/wordpress-pages-404-permalinks-fix/">fixing WordPress 404 pages and permalinks</a> covers the usual fix. For pages that moved, add a 301 redirect; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
+  <li><strong>Redirect errors:</strong> loops and long chains, often from HTTPS or www rules fighting a plugin.</li>
+  <li><strong>Soft 404s:</strong> out-of-stock product pages with nothing on them, empty category pages, or search results pages.</li>
 </ul>
+<p>404s for URLs that never should have existed, such as spam URLs or old junk, can be left alone. Google drops them over time.</p>
+
+<h2 id="common-patterns-on-wordpress-and-shopify-sites">Common patterns on WordPress and Shopify sites</h2>
+<p>Some indexing reasons show up again and again on particular platforms. Knowing them saves time when you open the report:</p>
+<ul>
+  <li><strong>WordPress attachment pages:</strong> each uploaded image can get its own thin page. Yoast and Rank Math can redirect these to the file or parent post; once they do, they move to "Page with redirect", which is fine.</li>
+  <li><strong>WordPress tag and author archives:</strong> often thin or duplicated. Either make them useful or set them to noindex and remove them from the sitemap.</li>
+  <li><strong>WooCommerce filters and sorting:</strong> URLs with parameters such as orderby or filter values create many near-identical pages. They usually appear as duplicates or "Crawled – currently not indexed".</li>
+  <li><strong>Shopify collection product URLs:</strong> Shopify can link products through collection paths as well as the main product path. The canonical points to the main product URL, so "Alternate page with proper canonical tag" is expected.</li>
+  <li><strong>Shopify filter and search pages:</strong> often blocked by Shopify's default robots.txt, so "Blocked by robots.txt" for them is normal.</li>
+  <li><strong>Old URLs after a redesign or migration:</strong> 404s for pages that moved without a redirect. These are worth fixing if the old pages had links or traffic.</li>
+</ul>
+<p>When the numbers in one of these groups grow quickly, it is usually a settings change rather than a Google problem.</p>
 
 <p>To find which of your own pages still link to those missing URLs, and to decide between updating the link, a redirect or a 410, see <a href="/blog/find-fix-broken-links-wordpress/">how to find and fix broken links on WordPress</a>.</p>
 
 <h2 id="fixing-validating-and-checking-monthly">Fixing, validating and checking monthly</h2>
 <ol>
-  <li>Fix the cause on your site first</li>
-  <li>In URL Inspection, use Test live URL to confirm Google now sees the fixed version</li>
-  <li>Request indexing for a few important pages</li>
-  <li>Click Validate fix on that status in the Pages report, so Google rechecks the affected URLs</li>
-  <li>Be patient: recrawling and validation can take days to weeks</li>
+  <li>Click a reason in the report to see example URLs.</li>
+  <li>Use URL Inspection on one example to see Google's last crawl, the canonical it chose and whether the live page can be indexed.</li>
+  <li>Fix the cause across the site, not just the example.</li>
+  <li>Click <strong>Validate fix</strong>. Validation can take days or weeks, and it re-checks every URL in that group.</li>
+  <li>Request indexing only for a few important pages; it does not speed up whole groups.</li>
 </ol>
-<p>Once a month, check that your key pages are still indexed and look for new statuses that include important URLs. A sudden jump in not-indexed service pages usually means a technical change, such as a plugin update, a redesign or a noindex setting, rather than a Google penalty.</p>
+<p>Once a month, check the submitted-pages view and the trend of indexed pages. A sudden drop usually means an accidental noindex, a robots change or server errors after an update.</p>
 
-<p>Looking at a long list of not-indexed pages and unsure which ones matter? I review Search Console and fix the underlying WordPress issues as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>, and keep an eye on them through <a href="/wordpress-maintenance/">ongoing WordPress maintenance</a>.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>How do I fix Search Console page indexing errors?</h3>
+<p>Filter to submitted pages, decide which URLs should be indexed, fix real errors such as 5xx, 404s on live pages and accidental noindex, improve thin or duplicate pages, then click Validate fix.</p>
+<h3>Is "Crawled – currently not indexed" an error?</h3>
+<p>Not a technical error. It means Google chose not to index the page yet, usually for quality, duplication or weak internal links. Improving the page and linking to it is the fix.</p>
+<h3>Should I worry about a high number of not indexed pages?</h3>
+<p>Only if they are pages you want in Google. Redirects, noindexed pages, duplicates with canonicals and junk URLs are expected to be in the not indexed list.</p>
+<h3>How long does Validate fix take?</h3>
+<p>It varies with the number of URLs and how often Google crawls your site, from days to several weeks. You get an email when it finishes.</p>
+<h3>Does requesting indexing guarantee a page gets indexed?</h3>
+<p>No. It asks Google to crawl the page soon. Google still decides whether to index it.</p>
+
+<p>If important pages are stuck out of Google, an indexing audit with the fixes made on your site is part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. Need hands-on help with a WordPress or Shopify site? <a href="/wordpress-shopify-developer-india/">Hire a WordPress and Shopify developer in India</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -286,12 +324,15 @@
             <strong>On this page</strong>
             <ol>
               <li><a href="#first-ask-should-this-page-be-indexed">First, ask: should this page be indexed?</a></li>
+              <li><a href="#search-console-page-indexing-errors-each-status-at-a-glance">Search Console page indexing errors: each status at a glance</a></li>
               <li><a href="#crawled-currently-not-indexed">Crawled – currently not indexed</a></li>
               <li><a href="#discovered-currently-not-indexed">Discovered – currently not indexed</a></li>
               <li><a href="#duplicate-and-canonical-statuses">Duplicate and canonical statuses</a></li>
               <li><a href="#excluded-on-purpose-or-by-accident">Excluded on purpose, or by accident</a></li>
               <li><a href="#errors-that-need-fixing-quickly">Errors that need fixing quickly</a></li>
+              <li><a href="#common-patterns-on-wordpress-and-shopify-sites">Common patterns on WordPress and Shopify sites</a></li>
               <li><a href="#fixing-validating-and-checking-monthly">Fixing, validating and checking monthly</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordPress Admin Bar or Dashboard Menus Missing? Fixes</title>
-  <meta name="description" content="Fix a missing WordPress admin bar, vanished dashboard menus or &quot;Sorry, you are not allowed to access this page&quot;: roles, profile setting, plugins, migrations.">
+  <meta name="description" content="WordPress admin bar or dashboard menus missing? Check your profile setting, user role, plugins, caching, table prefix and security plugin settings.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-admin-bar-dashboard-missing-fix/">
   <meta property="og:title" content="WordPress Admin Bar or Dashboard Menus Missing? Fixes">
-  <meta property="og:description" content="Fix a missing WordPress admin bar, vanished dashboard menus or &quot;Sorry, you are not allowed to access this page&quot;: roles, profile setting, plugins, migrations.">
+  <meta property="og:description" content="WordPress admin bar or dashboard menus missing? Check your profile setting, user role, plugins, caching, table prefix and security plugin settings.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-admin-bar-dashboard-missing-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-admin-bar-dashboard-missing-fix/#article",
       "headline": "WordPress Admin Bar or Dashboard Menus Missing? Fixing \"Sorry, You Are Not Allowed to Access This Page\"",
-      "description": "Fix a missing WordPress admin bar, vanished dashboard menus or \"Sorry, you are not allowed to access this page\": roles, profile setting, plugins, migrations.",
+      "description": "WordPress admin bar or dashboard menus missing? Check your profile setting, user role, plugins, caching, table prefix and security plugin settings.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-admin-bar-dashboard-missing-fix/",
       "image": "https://samverse.space/assets/og/blog-wordpress-admin-bar-dashboard-missing-fix.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>WordPress Admin Bar or Dashboard Menus Missing? Fixing &quot;Sorry, You Are Not Allowed to Access This Page&quot;</h1>
-          <p class="post-dek">Fix a missing WordPress admin bar, vanished dashboard menus or &quot;Sorry, you are not allowed to access this page&quot;: roles, profile setting, plugins, migrations.</p>
+          <p class="post-dek">WordPress admin bar or dashboard menus missing? Check your profile setting, user role, plugins, caching, table prefix and security plugin settings.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Admin%20Bar%20or%20Dashboard%20Menus%20Missing%3F%20Fixing%20%22Sorry%2C%20You%20Are%20Not%20Allowed%20to%20Access%20This%20Page%22%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-admin-bar-dashboard-missing-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -155,44 +155,49 @@
             <ol>
               <li><a href="#which-symptom-do-you-have">Which symptom do you have?</a></li>
               <li><a href="#admin-bar-missing-on-the-front-end">Admin bar missing on the front end</a></li>
-              <li><a href="#dashboard-menus-missing-roles-and-capabilities">Dashboard menus missing: roles and capabilities</a></li>
+              <li><a href="#wordpress-dashboard-menus-missing-roles-and-capabilities">WordPress dashboard menus missing: roles and capabilities</a></li>
               <li><a href="#plugins-that-hide-menus-and-plugin-conflicts">Plugins that hide menus, and plugin conflicts</a></li>
               <li><a href="#sorry-you-are-not-allowed-to-access-this-page">"Sorry, you are not allowed to access this page"</a></li>
               <li><a href="#broken-table-prefix-after-a-migration">Broken table prefix after a migration</a></li>
               <li><a href="#a-security-plugin-hiding-or-blocking-wp-admin">A security plugin hiding or blocking wp-admin</a></li>
+              <li><a href="#when-missing-menus-are-a-security-warning">When missing menus are a security warning</a></li>
+              <li><a href="#preventing-lock-outs-in-future">Preventing lock-outs in future</a></li>
+              <li><a href="#a-safe-fix-order">A safe fix order</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>A missing front-end admin bar is often a profile setting, logging in on a different address, a cache serving the logged-out page, or a theme without wp_footer().</li>
-              <li>Missing menus and &quot;Sorry, you are not allowed to access this page&quot; usually mean your role or its capabilities changed, or a plugin is hiding menus.</li>
-              <li>After a migration that changed the table prefix, the role keys in user meta and options must match the new prefix; back up before editing the database.</li>
+              <li>A missing admin bar on the front end is usually a profile setting, a theme missing wp_footer, or a cached logged-out page, not a hack.</li>
+              <li>Missing dashboard menus or &quot;Sorry, you are not allowed to access this page&quot; mean your account lacks a capability: check the role, plugins that edit roles, and the table prefix.</li>
+              <li>Change one thing at a time, keep a backup, and treat an unknown administrator account or a role that changed by itself as a possible security incident.</li>
             </ul>
           </div>
-<p>You log in and something is wrong: the black admin bar has vanished from the top of your site, half the dashboard menu is missing, or WordPress says "Sorry, you are not allowed to access this page" on a screen you used yesterday. These problems look alarming but usually come down to a handful of causes. Work through them in order, and take a backup before changing anything in the database.</p>
+<p>If your <strong>WordPress admin bar or dashboard menus are missing</strong>, start with the simplest cause: on the front end, check "Show Toolbar when viewing site" in your profile and whether the page is served from cache. In wp-admin, missing menus or the message "Sorry, you are not allowed to access this page" mean your user account has lost a capability, usually because its role changed, a plugin restricts menus, or the database table prefix no longer matches after a migration.</p>
+<p>This guide sorts the symptoms, then works through each cause with safe checks. Most fixes take minutes once you know which one you are dealing with.</p>
 
 <h2 id="which-symptom-do-you-have">Which symptom do you have?</h2>
 <table>
-<thead><tr><th>Symptom</th><th>Start by checking</th></tr></thead>
-<tbody>
-<tr><td>Admin bar missing on the front end only</td><td>Your profile setting, caching, the theme and plugins that hide it</td></tr>
-<tr><td>Some dashboard menus missing</td><td>Your user role, menu-hiding plugins and hosting settings</td></tr>
-<tr><td>"Sorry, you are not allowed to access this page" everywhere</td><td>Your role and, after a migration, the database table prefix</td></tr>
-<tr><td>"Sorry, you are not allowed..." on one screen only</td><td>The plugin that owns that page, or a capability your role lacks</td></tr>
-<tr><td>wp-admin shows a 404, a redirect or a block page</td><td>A security plugin, firewall or changed login address</td></tr>
-</tbody>
+  <thead><tr><th>Symptom</th><th>Most likely cause</th><th>First check</th></tr></thead>
+  <tbody>
+    <tr><td>Black toolbar missing when viewing the site, wp-admin fine</td><td>Profile setting, theme, caching</td><td>Users &gt; Profile, Toolbar checkbox</td></tr>
+    <tr><td>Some menus missing (Plugins, Appearance, Settings)</td><td>Role changed, menu-hiding plugin, or file editing disabled</td><td>Users &gt; All Users, your role</td></tr>
+    <tr><td>Only Profile and Dashboard visible</td><td>Account is a Subscriber or a custom limited role</td><td>Role in the database</td></tr>
+    <tr><td>"Sorry, you are not allowed to access this page" on every admin screen</td><td>Capabilities missing, usually a table prefix mismatch after migration</td><td>wp-config.php prefix vs database</td></tr>
+    <tr><td>wp-admin redirects or shows a 404</td><td>Security plugin hiding the login URL</td><td>Security plugin settings or folder</td></tr>
+  </tbody>
 </table>
 
 <h2 id="admin-bar-missing-on-the-front-end">Admin bar missing on the front end</h2>
-<p>The admin bar (WordPress calls it the Toolbar) only appears for logged-in users. If it's missing while you browse the site:</p>
-<ul>
-<li><strong>Check your profile.</strong> Go to Users → Profile and make sure "Show Toolbar when viewing site" is ticked. It's set per user, so a colleague may see it while you don't.</li>
-<li><strong>Check you're logged in on the same address.</strong> If you logged in at www.example.com but are viewing example.com, or http instead of https, WordPress may treat you as logged out.</li>
-<li><strong>Check caching.</strong> Caching plugins normally skip logged-in users, but a CDN "cache everything" rule or a server cache can serve the logged-out copy of a page, without the bar.</li>
-<li><strong>Check the theme.</strong> The bar is added through the theme's footer hook. A custom or badly built theme that leaves out <code>wp_footer()</code> breaks it, along with many plugins. Switch to a default theme briefly to test.</li>
-<li><strong>Check plugins and custom code.</strong> Some plugins and snippets hide the bar deliberately using the <code>show_admin_bar</code> filter. WooCommerce also hides it, and redirects away from wp-admin, for users such as customers who lack editing or shop management capabilities.</li>
-</ul>
+<p>The toolbar only shows to logged-in users and only when the theme behaves properly. Check in this order:</p>
+<ol>
+  <li><strong>Profile setting:</strong> Users &gt; Profile &gt; "Show Toolbar when viewing site" must be ticked. Each user has their own setting.</li>
+  <li><strong>Caching:</strong> if a page cache or CDN serves the logged-out version of the page to you, the toolbar is missing because you are seeing a cached copy. Most caching plugins skip logged-in users by default, but a misconfigured server cache or Cloudflare rule can cache everything. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers which layers to look at.</li>
+  <li><strong>Theme:</strong> the toolbar is printed by the wp_footer hook. A custom theme whose footer template does not call wp_footer() will never show it. Switch to a default theme briefly on staging to test.</li>
+  <li><strong>Code or plugin:</strong> a snippet such as show_admin_bar(false) or a filter on show_admin_bar, often added to hide the bar for customers, can hide it for everyone. Search the child theme's functions.php and any code snippets plugin.</li>
+</ol>
+<p>On WooCommerce sites, WooCommerce hides the toolbar for customers on purpose. That is normal for customer accounts, not for administrators.</p>
 
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
@@ -200,35 +205,81 @@
   <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20Admin%20Bar%20or%20Dashboard%20Menus%20Missing%3F%20Fixing%20%22Sorry%2C%20You%20Are%20Not%20Allowed%20to%20Access%20This%20Page%22%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="dashboard-menus-missing-roles-and-capabilities">Dashboard menus missing: roles and capabilities</h2>
-<p>WordPress shows each menu only to users whose role includes the matching capability. An Editor sees posts and pages but not Plugins or Settings; a Shop Manager sees WooCommerce but not everything else. If menus are missing, first check what role your account actually has under Users → All Users. If you can't see the Users menu at all, you probably aren't an administrator any more.</p>
-<p>Roles can change because someone edited your account, a role editor plugin altered a role's capabilities, or a security clean-up downgraded accounts. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> covers what each role should be able to do. If you have server access, WP-CLI can check and repair this quickly:</p>
-<pre><code>wp user list --fields=ID,user_login,roles
-wp user set-role your-username administrator</code></pre>
-<p>Two other causes are easy to miss. On multisite, some menus, such as installing plugins and themes, are only available to the Super Admin. And some hosts disable plugin and theme installation or the file editor in wp-config.php (using constants such as <code>DISALLOW_FILE_MODS</code> or <code>DISALLOW_FILE_EDIT</code>), which removes those menus for everyone. Ask your host before assuming something is broken.</p>
+<h2 id="wordpress-dashboard-menus-missing-roles-and-capabilities">WordPress dashboard menus missing: roles and capabilities</h2>
+<p>Every menu in wp-admin is tied to a capability. Administrators have all of them; Editors cannot see Plugins, Appearance or Settings; Authors and Subscribers see even less. If menus vanished, first check your role under Users &gt; All Users, or ask another administrator to check it. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> lists what each role can do.</p>
+<p>Roles can change because:</p>
+<ul>
+  <li>Another user edited your account by mistake.</li>
+  <li>A membership, LMS or role editor plugin changed role definitions.</li>
+  <li>The site was migrated and the role data did not come across correctly.</li>
+  <li>Someone with access changed it deliberately, which is a security question.</li>
+</ul>
+<p>Some menus also disappear by design. If wp-config.php contains DISALLOW_FILE_EDIT, the theme and plugin file editors are hidden. If it contains DISALLOW_FILE_MODS, you cannot install or update plugins and themes from the dashboard at all. Those are hardening settings, not faults.</p>
 
 <h2 id="plugins-that-hide-menus-and-plugin-conflicts">Plugins that hide menus, and plugin conflicts</h2>
-<p>Admin menu editors, white-label tools, "client mode" features in page builders and some agency dashboards can hide menus for chosen roles or users. If a developer set the site up, they may have hidden menus to keep the dashboard simple and forgotten to tell you. Look for such a plugin and check its settings before deactivating anything.</p>
-<p>A plugin conflict or PHP error can also stop menus from loading after an update. Test on staging with a default theme, then reactivate plugins one at a time until the problem returns. <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">How to find and fix plugin conflicts</a> explains a safe routine, including how to deactivate plugins over SFTP when you can't reach the dashboard.</p>
+<p>Admin menu editors, white-label plugins, client dashboard plugins and some page builders let site owners hide menus from certain users. If someone set them up and forgot, menus can be hidden even from administrators. Check the settings of any such plugin, or rename its folder over FTP or the file manager to test.</p>
+<p>A plugin that throws a PHP error during admin loading can also stop menus registering. If menus vanished right after an update, test plugins one at a time on staging; <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">plugin conflict troubleshooting</a> shows the method.</p>
 
 <h2 id="sorry-you-are-not-allowed-to-access-this-page">"Sorry, you are not allowed to access this page"</h2>
-<p>This message means WordPress checked your account's capabilities and found the one it needed missing. If it appears on a single screen, the usual reasons are a bookmark to a page belonging to a deactivated or updated plugin, or a page that needs a capability your role doesn't have. Open the dashboard from its main menu rather than an old bookmark, and check whether the plugin is still active.</p>
-<p>If it appears on every admin screen, including the main dashboard, your account has effectively lost its role. Check the role as described above. If the role looks correct and the site was recently moved or restored, the table prefix is the next suspect.</p>
+<p>This message means WordPress checked your capabilities for that screen and found you do not have them. On a single plugin page, it usually means the plugin was deactivated or its page address changed, so an old bookmark points nowhere. On every admin screen, it means your account has lost its role entirely.</p>
+<p>To check your role directly, look in the database (through phpMyAdmin in your hosting panel) at the usermeta table. For your user ID there should be a row named with your table prefix followed by capabilities, for example wp_capabilities, containing "administrator". If that row is missing or empty, WordPress sees you as having no role.</p>
+<p>Before editing the database, take a backup. If you cannot log in at all rather than lacking access, start with <a href="/blog/wordpress-login-not-working-fix/">fixing WordPress login problems</a>.</p>
 
 <h2 id="broken-table-prefix-after-a-migration">Broken table prefix after a migration</h2>
-<p>Every WordPress database table starts with a prefix set in wp-config.php, often <code>wp_</code> or a random string. Some migration methods change it. The catch is that WordPress also stores the prefix inside a few database values: your role is saved in user meta under a key such as <code>wp_capabilities</code>, and the list of roles in an option such as <code>wp_user_roles</code>. If the tables were renamed to a new prefix but those keys weren't, WordPress may not be able to find your role, and you can log in yet be allowed to do nothing.</p>
+<p>This is the most common cause of a sudden loss of all admin access after moving host or restoring a backup. WordPress stores roles in option and usermeta keys that include the table prefix. If wp-config.php says the prefix is wp_ but the tables were imported as xyz_, or the tables were renamed for security without updating the keys inside them, your roles stop matching.</p>
 <ul>
-<li>Confirm the <code>$table_prefix</code> in wp-config.php matches the actual table names.</li>
-<li>In the usermeta table, look for keys starting with the old prefix (capabilities, user_level and similar) and rename them to the new prefix.</li>
-<li>In the options table, rename the old user_roles option to the new prefix.</li>
+  <li>Compare $table_prefix in wp-config.php with the actual table names in the database.</li>
+  <li>If the tables were renamed, the keys inside the options table (user_roles) and the usermeta table (capabilities and user_level) must be renamed to the new prefix too.</li>
+  <li>Migration plugins usually handle this. Manual SQL imports often do not.</li>
 </ul>
-<p>Take a full database backup first, and if you're not comfortable editing tables in phpMyAdmin, ask whoever did the migration to fix it. Good migration tools handle this automatically, so it's mainly a problem with manual moves.</p>
+<p>Make these database changes on a backup first, or ask a developer if you are not comfortable with phpMyAdmin.</p>
 
 <h2 id="a-security-plugin-hiding-or-blocking-wp-admin">A security plugin hiding or blocking wp-admin</h2>
-<p>Many security plugins can rename the login address, hide wp-admin from logged-out visitors, or allow the dashboard only from certain IP addresses or countries. If you visit /wp-admin/ and get a 404, a redirect to the home page or a block message, that's often the cause. Use the custom login address if you know it; otherwise, rename the security plugin's folder over SFTP to disable it, log in, and fix its settings. A firewall or server rule can also block admin pages outright; see <a href="/blog/wordpress-403-forbidden-error-fix/">how to fix 403 Forbidden on wp-admin</a>. If you can't log in at all, <a href="/blog/wordpress-login-not-working-fix/">how to fix WordPress login problems</a> covers loops, lockouts and lost passwords.</p>
-<p>Finally, if roles changed and nobody on your team made the change, treat it as a possible security issue: check the user list for unknown administrators and change passwords.</p>
+<p>Security plugins can change the login address, block wp-admin for certain IP addresses or countries, or lock out users after failed attempts. If wp-admin returns a 404 or a block message:</p>
+<ul>
+  <li>Check emails from the security plugin for the custom login URL or a lockout notice.</li>
+  <li>Try from a different network; an IP block may apply only to your office connection.</li>
+  <li>As a last resort, rename the security plugin's folder to disable it, log in, fix the setting and rename it back.</li>
+</ul>
+<p>Login hardening is worth keeping once it works; <a href="/blog/secure-wordpress-login/">securing the WordPress login</a> covers settings that protect you without locking you out.</p>
 
-<p>If you'd rather have someone untangle roles, plugins and access for you, I can help with this as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+<h2 id="when-missing-menus-are-a-security-warning">When missing menus are a security warning</h2>
+<p>Take it seriously if you find an administrator account you do not recognise, your own role downgraded without explanation, or new plugins you did not install. Attackers sometimes demote real admins and add their own. Change passwords, review users (see <a href="/blog/wordpress-user-accounts-audit/">auditing WordPress user accounts</a>), and look at <a href="/blog/signs-wordpress-site-hacked/">signs a WordPress site has been hacked</a>. If you confirm a compromise, <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers clean-up and hardening.</p>
+
+<h2 id="preventing-lock-outs-in-future">Preventing lock-outs in future</h2>
+<p>A few simple habits make this much less likely to happen again:</p>
+<ul>
+  <li>Keep at least two administrator accounts belonging to people you trust, each with its own login, so one can always fix the other.</li>
+  <li>Give staff and agencies the lowest role that lets them do their job, and remove accounts when the work ends.</li>
+  <li>Record the custom login address and any IP rules set in your security plugin somewhere safe.</li>
+  <li>Use a proper migration tool when moving host, and check admin access straight after the move.</li>
+  <li>Take regular off-site backups, so a bad role change or database edit can be reversed.</li>
+</ul>
+
+<h2 id="a-safe-fix-order">A safe fix order</h2>
+<ol>
+  <li>Take a full backup of files and database.</li>
+  <li>Check the profile toolbar setting and test logged in with caching bypassed.</li>
+  <li>Check your role in Users, or in the database if you cannot see Users.</li>
+  <li>Look for menu-hiding plugins and wp-config.php constants.</li>
+  <li>After a migration, compare the table prefix with the role keys.</li>
+  <li>Check security plugin settings and lockouts.</li>
+  <li>Review users and plugins for anything unexpected.</li>
+</ol>
+
+<h2 id="faqs">FAQs</h2>
+<h3>Why are my WordPress admin bar or dashboard menus missing?</h3>
+<p>For the front-end admin bar: the profile setting, caching or a theme missing wp_footer. For dashboard menus: your role or capabilities changed, a plugin hides menus, or the table prefix stopped matching after a migration.</p>
+<h3>How do I get my administrator role back?</h3>
+<p>Ask another administrator to change your role under Users. If there is none, set the capabilities row for your user in the database to administrator, after taking a backup, or ask your developer to do it.</p>
+<h3>Why does "Sorry, you are not allowed to access this page" appear after migration?</h3>
+<p>Usually because the database table prefix in wp-config.php does not match the prefix used in the role keys inside the database, so WordPress cannot read your role.</p>
+<h3>Is it normal that customers do not see the admin bar?</h3>
+<p>Yes. WooCommerce and many membership plugins hide it for customers and subscribers on purpose. Only staff roles normally need it.</p>
+<h3>Can a hack remove my admin access?</h3>
+<p>Yes. Attackers sometimes downgrade real administrators and create hidden accounts. If roles changed without explanation, treat it as a possible compromise and check users, plugins and files.</p>
+
+<p>If you are locked out of your own dashboard, a developer can often restore access quickly once the cause is known. <a href="/wordpress-shopify-developer-india/">Hire a WordPress developer in India</a> for the fix, or keep updates, backups and security monitoring handled with <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -266,11 +317,15 @@ wp user set-role your-username administrator</code></pre>
             <ol>
               <li><a href="#which-symptom-do-you-have">Which symptom do you have?</a></li>
               <li><a href="#admin-bar-missing-on-the-front-end">Admin bar missing on the front end</a></li>
-              <li><a href="#dashboard-menus-missing-roles-and-capabilities">Dashboard menus missing: roles and capabilities</a></li>
+              <li><a href="#wordpress-dashboard-menus-missing-roles-and-capabilities">WordPress dashboard menus missing: roles and capabilities</a></li>
               <li><a href="#plugins-that-hide-menus-and-plugin-conflicts">Plugins that hide menus, and plugin conflicts</a></li>
               <li><a href="#sorry-you-are-not-allowed-to-access-this-page">"Sorry, you are not allowed to access this page"</a></li>
               <li><a href="#broken-table-prefix-after-a-migration">Broken table prefix after a migration</a></li>
               <li><a href="#a-security-plugin-hiding-or-blocking-wp-admin">A security plugin hiding or blocking wp-admin</a></li>
+              <li><a href="#when-missing-menus-are-a-security-warning">When missing menus are a security warning</a></li>
+              <li><a href="#preventing-lock-outs-in-future">Preventing lock-outs in future</a></li>
+              <li><a href="#a-safe-fix-order">A safe fix order</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -299,7 +354,7 @@ wp user set-role your-username administrator</code></pre>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/wordpress-plugin-conflicts-troubleshooting/"><img class="post-card-img" src="/assets/og/blog-wordpress-plugin-conflicts-troubleshooting.webp" alt="How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention</h3><p>Fix WordPress plugin conflicts without risking your live site: test on staging, use Health Check mode, halve your plugins, read the debug log and console.</p><span class="post-card-meta">1 October 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/wordpress-login-not-working-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-login-not-working-fix.webp" alt="WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords</h3><p>WordPress login not working? Fix redirect loops, cookie errors, security lockouts and lost passwords step by step, from browser to wp-config.</p><span class="post-card-meta">11 October 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-403-forbidden-error-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-403-forbidden-error-fix.webp" alt="403 Forbidden on WordPress or wp-admin: Causes and a Safe Fix Order" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>403 Forbidden on WordPress or wp-admin: Causes and a Safe Fix Order</h3><p>Fix the WordPress 403 forbidden error on your site or wp-admin: check security plugins, .htaccess, file permissions, firewall rules and hosting blocks.</p><span class="post-card-meta">11 October 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First</h3><p>How to tell if your WordPress site has been hacked: a 10-minute check with Google tools, the clear warning signs, and what to do first if something is wrong.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

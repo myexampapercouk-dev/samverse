@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordPress CSS Changes Not Showing? How to Fix It | Samverse</title>
-  <meta name="description" content="CSS or design changes not showing in WordPress? Clear browser, page and CDN caches safely, regenerate Elementor CSS, and fix child theme order and specificity.">
+  <meta name="description" content="WordPress CSS changes not showing? Find out if it is browser, page, CDN or Elementor cache, a minify plugin, load order or specificity, and fix it.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-css-changes-not-showing/">
   <meta property="og:title" content="WordPress CSS Changes Not Showing? How to Fix It | Samverse">
-  <meta property="og:description" content="CSS or design changes not showing in WordPress? Clear browser, page and CDN caches safely, regenerate Elementor CSS, and fix child theme order and specificity.">
+  <meta property="og:description" content="WordPress CSS changes not showing? Find out if it is browser, page, CDN or Elementor cache, a minify plugin, load order or specificity, and fix it.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-css-changes-not-showing.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-css-changes-not-showing/#article",
       "headline": "WordPress CSS Changes Not Showing? Caches, Elementor and Overrides Explained",
-      "description": "CSS or design changes not showing in WordPress? Clear browser, page and CDN caches safely, regenerate Elementor CSS, and fix child theme order and specificity.",
+      "description": "WordPress CSS changes not showing? Find out if it is browser, page, CDN or Elementor cache, a minify plugin, load order or specificity, and fix it.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-css-changes-not-showing/",
       "image": "https://samverse.space/assets/og/blog-wordpress-css-changes-not-showing.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>WordPress CSS Changes Not Showing? Caches, Elementor and Overrides Explained</h1>
-          <p class="post-dek">CSS or design changes not showing in WordPress? Clear browser, page and CDN caches safely, regenerate Elementor CSS, and fix child theme order and specificity.</p>
+          <p class="post-dek">WordPress CSS changes not showing? Find out if it is browser, page, CDN or Elementor cache, a minify plugin, load order or specificity, and fix it.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20CSS%20Changes%20Not%20Showing%3F%20Caches%2C%20Elementor%20and%20Overrides%20Explained%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-css-changes-not-showing%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -160,36 +160,47 @@
               <li><a href="#elementor-s-generated-css">Elementor's generated CSS</a></li>
               <li><a href="#child-theme-and-loading-order">Child theme and loading order</a></li>
               <li><a href="#specificity-important-and-small-mistakes">Specificity, !important and small mistakes</a></li>
+              <li><a href="#habits-that-stop-the-problem-coming-back">Habits that stop the problem coming back</a></li>
               <li><a href="#a-safe-order-for-clearing-every-layer">A safe order for clearing every layer</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Use the browser's Inspect tool first: a missing rule means an old stylesheet is being served, while a crossed-out rule means another rule is overriding yours.</li>
-              <li>Clear layers in order: regenerate Elementor CSS, clear minified and combined files, then purge the page cache, hosting cache and CDN, and change the stylesheet version so visitors get the new file.</li>
-              <li>Overridden rules come down to loading order and specificity, so load child theme styles after the parent, target a class you added and keep !important for rare cases.</li>
+              <li>When CSS changes do not show, either an old copy of the file is being served by a cache, or the new rule is loading but another rule overrides it.</li>
+              <li>Use browser developer tools first: if your rule is missing, it is a cache or file problem; if it is crossed out, it is specificity or load order.</li>
+              <li>Clear caches from the inside out: plugin and Elementor CSS, then minify files, then server and CDN cache, then the browser.</li>
             </ul>
           </div>
-<p>You've added CSS in the Customizer, your child theme or Elementor, saved it, refreshed the page, and nothing has changed. Styling changes go missing more often than text changes for two reasons: stylesheets are separate files that every layer of caching likes to keep, and CSS rules compete, so a correct rule can still lose. For edits to text, images and menus, see <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>; this guide is about CSS.</p>
+<p>If your <strong>WordPress CSS changes are not showing</strong>, there are only two possibilities: an old copy of the stylesheet is still being served by a cache (browser, caching plugin, server, CDN or Elementor's generated CSS), or the new CSS is loading but another rule is overriding it. Open the page in a private window and inspect the element with your browser's developer tools; that tells you which of the two you have in under a minute, and saves clearing every cache blindly.</p>
+<p>Below: how to tell the difference, then each layer of caching and override in turn, and a safe order for clearing everything.</p>
 
 <h2 id="first-find-out-which-problem-you-have">First, find out which problem you have</h2>
-<p>There are only two possibilities: the browser never received your new CSS, or it received it and another rule won. Your browser's developer tools tell you which. Right-click the element you changed, choose Inspect and look at the Styles panel.</p>
+<ol>
+  <li>Open the page in a private or incognito window, which ignores most of your browser cache.</li>
+  <li>Right-click the element you changed and choose <strong>Inspect</strong>.</li>
+  <li>In the Styles panel, look for your new rule.</li>
+</ol>
 <table>
-  <thead><tr><th>What you see</th><th>What it means</th><th>Where to look</th></tr></thead>
+  <thead><tr><th>What you see in developer tools</th><th>What it means</th><th>Where to look</th></tr></thead>
   <tbody>
-    <tr><td>Your rule isn't listed at all</td><td>An old stylesheet is being served, or your CSS isn't loading</td><td>Caches, optimisation plugins, Elementor files</td></tr>
-    <tr><td>Your rule is listed but crossed out</td><td>Another rule is overriding it</td><td>Loading order and specificity</td></tr>
-    <tr><td>Your rule is active, but the page still looks wrong</td><td>The change is needed on a different element or screen size</td><td>Your selector and media queries</td></tr>
+    <tr><td>Your rule is not listed at all</td><td>The browser received an old file, or your CSS is in a file that is not loaded</td><td>Caches, minify plugins, where you saved the CSS</td></tr>
+    <tr><td>Your rule is listed but crossed out</td><td>Another rule wins</td><td>Specificity, !important, load order</td></tr>
+    <tr><td>Your rule is listed and active, but the page looks the same</td><td>You targeted a different element or breakpoint</td><td>Selector, media queries, device mode</td></tr>
+    <tr><td>Change shows logged in but not logged out</td><td>Page or server cache serving visitors an older page</td><td>Caching plugin, host cache, CDN</td></tr>
+    <tr><td>Change shows on desktop but not mobile</td><td>Responsive rule overrides, or the phone has a cached copy</td><td>Media queries, Elementor responsive settings</td></tr>
   </tbody>
 </table>
-<p>If the rule is missing, click the stylesheet name beside any rule to open the file and check whether your edit is in it.</p>
 
 <h2 id="browser-cache-and-version-numbers">Browser cache and version numbers</h2>
-<p>Browsers keep CSS files for a long time because servers tell them to. A hard refresh (Ctrl+F5 or Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac) fetches fresh copies, and ticking "Disable cache" in the developer tools Network tab keeps them fresh while the tools are open.</p>
-<p>Your visitors won't hard-refresh, though. WordPress adds a version number to stylesheet addresses, such as <code>style.css?ver=1.0.2</code>, and when it changes, browsers and CDNs fetch the new file. Edit a child theme stylesheet without changing its version, and returning visitors may keep the old one. Update the version the child theme uses when it loads the stylesheet (often the Version line in its header), or use the file's modification time:</p>
-<pre><code>wp_enqueue_style( 'child-style', get_stylesheet_uri(), array( 'parent-style' ), filemtime( get_stylesheet_directory() . '/style.css' ) );</code></pre>
-<p>Replace <code>parent-style</code> with the handle your parent theme actually uses.</p>
+<p>Browsers keep stylesheets for a while so pages load faster. WordPress adds a version number to each file URL, such as style.css?ver=1.2, and the browser fetches a fresh copy when that number changes. If you edit a theme file but the version stays the same, browsers may keep the old one.</p>
+<ul>
+  <li>Do a hard refresh: Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac.</li>
+  <li>In developer tools, Network tab, tick "Disable cache" while the tools are open.</li>
+  <li>For a child theme, bump the version in the stylesheet header or use the file's modified time as the version when enqueuing it.</li>
+</ul>
+<p>Clients on phones will not hard refresh, so a version change matters for anything visitors need to see straight away.</p>
 
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
@@ -198,59 +209,92 @@
 </aside>
 
 <h2 id="page-cache-server-cache-and-cdn-cache">Page cache, server cache and CDN cache</h2>
-<p>A cached page stores the HTML, including the link to the stylesheet. If it points to an old file or version number, visitors keep loading the old CSS. A CDN may also hold its own copy of the CSS file.</p>
+<p>A caching plugin stores the finished HTML of each page, including the links to the CSS files. If the HTML is cached, it may still point to an old combined CSS file even after you change the original. Then there may be a server-level cache from your host, such as LiteSpeed or Varnish, and a CDN like Cloudflare holding its own copies.</p>
 <ul>
-  <li><strong>Caching plugin:</strong> use its purge or clear all option</li>
-  <li><strong>Hosting cache:</strong> purge it from the hosting panel or the admin bar button many hosts add</li>
-  <li><strong>CDN:</strong> purge the changed file's address, or everything after a bigger redesign. Many CDNs also have a temporary development mode that bypasses the cache while you work</li>
+  <li>Purge the caching plugin's cache from its toolbar menu or settings.</li>
+  <li>Purge your host's cache from the hosting panel if they run one.</li>
+  <li>Purge Cloudflare or your CDN. In Cloudflare, "Purge Everything" or purge the specific CSS file URL; Development Mode bypasses the cache temporarily while you work. See <a href="/blog/cloudflare-wordpress-setup-guide/">the Cloudflare setup guide for WordPress</a>.</li>
 </ul>
-<p>Purge rather than delete: removing cache folders by hand over FTP can leave a caching plugin in a broken state. Switch development modes off when you're done.</p>
+<p><a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers how these layers stack and why one purge is not always enough.</p>
 
 <h2 id="minification-and-combination-plugins">Minification and combination plugins</h2>
-<p>Optimisation plugins often minify stylesheets or combine several into one, saved as new files. Your edit changes the original, but visitors get the optimised copy until it's rebuilt. These files usually have their own clear button, separate from the page cache, so clear both.</p>
-<p>Features that remove unused CSS or generate critical CSS are a special case. They build a trimmed stylesheet for each page and can strip out a new selector, especially one for a class added by JavaScript, such as an open mobile menu. If a style appears when you're logged in but not in a private window, turn CSS optimisation off briefly to confirm, then regenerate or add an exclusion for that selector.</p>
+<p>Speed plugins often minify and combine CSS files into new files with random names stored in wp-content/cache or uploads. When you change the original, the combined file needs rebuilding. Most plugins rebuild when you clear their cache, but some keep the old file until a separate "clear minified files" button is used.</p>
+<ul>
+  <li>Clear the minified or optimised CSS separately if your plugin offers it.</li>
+  <li>Temporarily switch off CSS minify, combine and "remove unused CSS" features to test. Unused CSS removal in particular can strip a new class it did not see when it generated the reduced file.</li>
+  <li>Turn optimisation back on afterwards and regenerate.</li>
+</ul>
 
 <h2 id="elementor-s-generated-css">Elementor's generated CSS</h2>
-<p>Elementor turns your design settings into CSS files in the uploads folder, which can go stale after updates, migrations or changes to global colours and fonts.</p>
-<ul>
-  <li>Use the option under Elementor → Tools to regenerate CSS files and data (the wording varies by version), then clear every cache</li>
-  <li>The CSS print method setting switches between external files and internal embedding. Trying internal embedding briefly is a quick way to rule out file caching</li>
-  <li>Check device views: a style set for tablet or mobile overrides the desktop value on those screens</li>
-  <li>Check the template: headers, footers and post layouts may come from the Theme Builder, not the page you edited</li>
-</ul>
-<p>If the layout broke after an Elementor update rather than after your own edit, that's a different fix; see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</p>
+<p>Elementor stores the styling you set in the editor as CSS files in wp-content/uploads/elementor/css, one per page plus global files. If these get out of sync, changes made in the editor do not appear on the live page.</p>
+<ol>
+  <li>Go to <strong>Elementor &gt; Tools</strong> and use the option to regenerate CSS and data (the button name has changed between versions).</li>
+  <li>Check the CSS print method under Elementor's performance or advanced settings. External file is normal; internal embedding can help test whether the files are the problem.</li>
+  <li>Clear all other caches afterwards, because they may hold the old Elementor file.</li>
+</ol>
+<p>If the layout broke after an Elementor update rather than after your edit, see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>. Too many plugin and Elementor CSS files also slow pages down; <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> explains the trade-offs.</p>
 
 <h2 id="child-theme-and-loading-order">Child theme and loading order</h2>
-<p>When two rules are equally specific, the one loaded last wins, so the order of stylesheets matters:</p>
+<p>Where you put your CSS decides when it loads, and later rules win when specificity is equal.</p>
 <ul>
-  <li><strong>Child stylesheet loading too early:</strong> it should load after the parent's. Listing the parent stylesheet as a dependency when enqueueing sets that order; see <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a></li>
-  <li><strong>Editing a file the theme doesn't load:</strong> many themes keep their real styles in a minified file in an assets folder, and style.css holds little more than the theme's details. Edits there do nothing, and edits to a parent theme are lost at the next update anyway</li>
-  <li><strong>Additional CSS:</strong> CSS added in Appearance → Customize → Additional CSS, or the Site Editor's Styles panel for block themes, prints late in the page, so it usually wins ties</li>
-  <li><strong>Block themes:</strong> styles saved in the Site Editor live in the database and can override the theme's files</li>
+  <li><strong>Additional CSS</strong> in the Customizer loads late, so it usually wins. It is tied to the active theme, so it disappears if you switch theme.</li>
+  <li><strong>A child theme stylesheet</strong> survives parent theme updates, but must be enqueued correctly and after the parent's stylesheet. <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> shows how.</li>
+  <li><strong>Editing the parent theme directly</strong> works until the next update wipes it, which is a common reason changes "disappear". <a href="/blog/update-premium-theme-safely/">Updating a premium theme safely</a> covers moving edits out first.</li>
+  <li><strong>Page builder custom CSS</strong> applies only where you added it, at page, section or widget level.</li>
 </ul>
+<p>Check in developer tools which file your rule comes from. If it is the wrong file, or not loaded at all, the problem is placement rather than caching.</p>
 
 <h2 id="specificity-important-and-small-mistakes">Specificity, !important and small mistakes</h2>
-<p>A more specific selector beats a less specific one, wherever it loads. Page builders often use long, very specific selectors, so a short rule can lose without any warning.</p>
-<pre><code>/* Too weak: the builder's own rule wins */
-.site-header a { color: #1a1a1a; }
+<p>If your rule appears crossed out, a more specific rule is winning. A selector with an ID beats one with classes; more classes beat fewer; inline styles beat stylesheet rules; and !important beats everything except a later or more specific !important.</p>
+<pre><code>/* Loses to the theme's #header .menu a */
+.menu a { color: #1a1a1a; }
 
-/* More specific: scoped to a class you added */
-.site-header .main-menu a { color: #1a1a1a; }</code></pre>
-<p>Adding your own class to an element (most builders have a CSS classes field in the advanced settings) gives you a clean hook to target. Use <code>!important</code> sparingly; once several rules rely on it, every later change gets harder.</p>
-<p>Also look for small mistakes. One missing closing brace can break every rule after it, a rule inside a mobile media query won't show on desktop, and a mistyped class name matches nothing.</p>
+/* Wins: equally specific, and loads later */
+#header .menu a { color: #1a1a1a; }</code></pre>
+<p>Prefer matching the theme's selector over adding !important everywhere, which makes future changes harder. Also check the small things:</p>
+<ul>
+  <li>A missing closing brace or semicolon earlier in the file breaks the rules after it.</li>
+  <li>The rule sits inside a media query for a different screen size.</li>
+  <li>A typo in the class name, or a class the builder renamed.</li>
+  <li>The style is set inline by the page builder, which beats your stylesheet.</li>
+</ul>
+
+<h2 id="habits-that-stop-the-problem-coming-back">Habits that stop the problem coming back</h2>
+<p>Once your change is showing, a few working habits make the next one painless:</p>
+<ul>
+  <li><strong>Keep custom CSS in one place.</strong> Pick the child theme stylesheet or the Additional CSS panel and stick to it, rather than spreading rules across theme options, page builder panels and plugins.</li>
+  <li><strong>Comment your rules</strong> with what they change and why, so you or a developer can find them later.</li>
+  <li><strong>Exclude the editor from caching.</strong> Make sure logged-in users and wp-admin are never cached, which most caching plugins do by default.</li>
+  <li><strong>Know your purge buttons.</strong> Note which caches your site has (plugin, host, CDN, Elementor) so you clear the right ones after each change.</li>
+  <li><strong>Check on a real phone.</strong> Mobile browsers and in-app browsers, such as the one inside WhatsApp or Instagram, can hold cached files longer than desktop ones.</li>
+  <li><strong>Avoid stacking optimisation plugins.</strong> Two plugins both minifying CSS make cache problems much harder to trace.</li>
+</ul>
 
 <h2 id="a-safe-order-for-clearing-every-layer">A safe order for clearing every layer</h2>
 <ol>
-  <li>Save or update the change, and confirm it's in the stylesheet or editor</li>
-  <li>Inspect the element: is your rule missing, or overridden?</li>
-  <li>Regenerate Elementor or other builder CSS</li>
-  <li>Clear the optimisation plugin's minified and combined files</li>
-  <li>Purge the page cache, then the hosting cache, then the CDN</li>
-  <li>Check in a private window and on your phone using mobile data</li>
+  <li>Confirm in developer tools whether the rule is missing or overridden.</li>
+  <li>If overridden, fix specificity or placement; no cache clearing needed.</li>
+  <li>If missing, regenerate Elementor CSS (if used).</li>
+  <li>Clear the optimisation plugin's minified CSS, then its page cache.</li>
+  <li>Purge the host's server cache.</li>
+  <li>Purge Cloudflare or your CDN.</li>
+  <li>Hard refresh, then check in a private window and on a phone using mobile data.</li>
 </ol>
-<p>Make bigger styling changes on a staging copy first, keep custom CSS in one place, and note where it lives. For error messages rather than styling problems, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a>.</p>
+<p>For larger CSS changes, work on a staging copy first so visitors never see a half-finished design; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
 
-<p>Want design changes made cleanly, without fighting caches and overrides? I build and fix Elementor sites as an <a href="/elementor-developer/">Elementor developer</a>, and handle ongoing tweaks through <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>Why are my WordPress CSS changes not showing?</h3>
+<p>Either a cache is serving an old copy of the stylesheet or page, or your new rule is loading but is overridden by a more specific or later rule. Developer tools show which.</p>
+<h3>Why do CSS changes show for me but not for visitors?</h3>
+<p>When you are logged in, most caching plugins show you a fresh page. Visitors get the cached version, which still links the old CSS. Purge the page cache, server cache and CDN.</p>
+<h3>How do I clear Elementor CSS cache?</h3>
+<p>Use the regenerate CSS and data option under Elementor &gt; Tools, then clear your caching plugin and CDN, because they may still hold the old file.</p>
+<h3>Should I use !important to force CSS changes?</h3>
+<p>Only as a last resort for a single stubborn rule. Matching or slightly beating the original selector is cleaner and easier to maintain.</p>
+<h3>Why did my CSS changes disappear after an update?</h3>
+<p>They were probably added directly to the parent theme or plugin files, which updates overwrite. Move custom CSS to a child theme or the Additional CSS panel.</p>
+
+<p>If styling is fighting you on an Elementor build, an <a href="/elementor-developer/">Elementor developer</a> can tidy the CSS and caching set-up. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for one-off fixes, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -293,7 +337,9 @@
               <li><a href="#elementor-s-generated-css">Elementor's generated CSS</a></li>
               <li><a href="#child-theme-and-loading-order">Child theme and loading order</a></li>
               <li><a href="#specificity-important-and-small-mistakes">Specificity, !important and small mistakes</a></li>
+              <li><a href="#habits-that-stop-the-problem-coming-back">Habits that stop the problem coming back</a></li>
               <li><a href="#a-safe-order-for-clearing-every-layer">A safe order for clearing every layer</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -322,7 +368,7 @@
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/wordpress-changes-not-showing/"><img class="post-card-img" src="/assets/og/blog-wordpress-changes-not-showing.webp" alt="WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template</h3><p>WordPress changes not showing after you update or publish? Find the cause fast: caches, CDN, page builder files, mobile settings, templates or the wrong site.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/elementor-layout-broken-after-update/"><img class="post-card-img" src="/assets/og/blog-elementor-layout-broken-after-update.webp" alt="Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again</h3><p>Elementor layout broken after an update? Regenerate CSS, clear caches, match Elementor and Pro versions, use Safe Mode, check containers and roll back.</p><span class="post-card-meta">28 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/common-wordpress-errors-fixes/"><img class="post-card-img" src="/assets/og/blog-common-wordpress-errors-fixes.webp" alt="Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</h3><p>Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/staging-sites-explained/"><img class="post-card-img" src="/assets/og/blog-staging-sites-explained.webp" alt="Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely</h3><p>Staging sites explained: set up WordPress staging on Hostinger, SiteGround or WP Staging, keep it out of Google and go live without losing orders.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
         </div>
       </div>
     </section>

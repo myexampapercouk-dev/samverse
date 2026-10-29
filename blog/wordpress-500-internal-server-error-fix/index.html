@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>500 Internal Server Error in WordPress: How to Fix It</title>
-  <meta name="description" content="How to fix a 500 Internal Server Error in WordPress: read the error log, enable WP_DEBUG_LOG safely, then check .htaccess, plugins, memory, PHP and limits.">
+  <meta name="description" content="Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-500-internal-server-error-fix/">
   <meta property="og:title" content="500 Internal Server Error in WordPress: How to Fix It">
-  <meta property="og:description" content="How to fix a 500 Internal Server Error in WordPress: read the error log, enable WP_DEBUG_LOG safely, then check .htaccess, plugins, memory, PHP and limits.">
+  <meta property="og:description" content="Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-500-internal-server-error-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-500-internal-server-error-fix/#article",
       "headline": "500 Internal Server Error in WordPress: How to Find the Cause and Fix It",
-      "description": "How to fix a 500 Internal Server Error in WordPress: read the error log, enable WP_DEBUG_LOG safely, then check .htaccess, plugins, memory, PHP and limits.",
+      "description": "Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-500-internal-server-error-fix/",
       "image": "https://samverse.space/assets/og/blog-wordpress-500-internal-server-error-fix.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>500 Internal Server Error in WordPress: How to Find the Cause and Fix It</h1>
-          <p class="post-dek">How to fix a 500 Internal Server Error in WordPress: read the error log, enable WP_DEBUG_LOG safely, then check .htaccess, plugins, memory, PHP and limits.</p>
+          <p class="post-dek">Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=500%20Internal%20Server%20Error%20in%20WordPress%3A%20How%20to%20Find%20the%20Cause%20and%20Fix%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-500-internal-server-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -154,54 +154,45 @@
             <summary>On this page</summary>
             <ol>
               <li><a href="#a-500-error-or-a-critical-error">A 500 error or a critical error?</a></li>
+              <li><a href="#before-you-change-anything-take-a-backup">Before you change anything: take a backup</a></li>
               <li><a href="#find-and-read-the-server-error-log">Find and read the server error log</a></li>
               <li><a href="#turn-on-wp-debug-log-safely">Turn on WP_DEBUG_LOG safely</a></li>
               <li><a href="#corrupt-or-invalid-htaccess">Corrupt or invalid .htaccess</a></li>
               <li><a href="#plugin-and-theme-fatal-errors">Plugin and theme fatal errors</a></li>
               <li><a href="#memory-php-version-and-server-limits">Memory, PHP version and server limits</a></li>
+              <li><a href="#preventing-the-next-500-error">Preventing the next 500 error</a></li>
               <li><a href="#a-safe-fix-order-and-when-to-call-your-host">A safe fix order, and when to call your host</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>A 500 error is deliberately vague, so read the server error log first: the time, severity, message and file path usually name the cause.</li>
-              <li>Turn on WP_DEBUG_LOG with WP_DEBUG_DISPLAY off, ideally writing to a path outside the public folder, then switch it off and delete the log once you have the error.</li>
-              <li>Common causes are a bad .htaccess line, a plugin or theme fatal error, PHP memory, a PHP version mismatch and hosting limits; work through them in order with a backup in hand.</li>
+              <li>A 500 internal server error is a generic failure; the real cause is almost always written in the server error log or the WordPress debug log.</li>
+              <li>The usual culprits are a plugin or theme fatal error, a corrupt .htaccess file, memory limits or a PHP version the code does not support.</li>
+              <li>Take a backup, read the log, then change one thing at a time; do not reinstall WordPress or restore old backups blindly.</li>
             </ul>
           </div>
-<p>A 500 Internal Server Error is the server's way of saying "something went wrong" without saying what. Guessing at fixes wastes time, because the real reason is almost always written in an error log within seconds of the failure. Here's how to find and read that log, switch on WordPress's debug log safely, and recognise each common cause.</p>
+<p>A <strong>500 internal server error in WordPress</strong> means the server hit a problem it could not describe, usually a PHP fatal error from a plugin or theme, a broken .htaccess file, a memory limit or a PHP version mismatch. The fastest fix is to read the error log: your hosting panel's error log or WordPress's debug.log names the file and line that failed. From there, you rename the faulty plugin, reset .htaccess or raise the limit, one change at a time.</p>
+<p>Below is the order to work in, with the safe way to turn on logging and what to tell your host if the cause is on their side.</p>
 
 <h2 id="a-500-error-or-a-critical-error">A 500 error or a critical error?</h2>
-<p>How the error appears is itself a clue:</p>
-<ul>
-<li><strong>"There has been a critical error on this website":</strong> WordPress caught a PHP fatal error itself. Start with <a href="/blog/fix-wordpress-critical-error/">the critical error guide</a></li>
-<li><strong>A plain "Internal Server Error" page from the server:</strong> the request failed before WordPress could respond, which points to .htaccess, server settings or a very early PHP failure</li>
-<li><strong>The browser's own "HTTP ERROR 500" page:</strong> the server sent an empty page with a 500 status, usually a PHP failure with error display switched off</li>
-</ul>
-<p>Note the scope too. A 500 on every page suggests .htaccess, a damaged core file or server limits; one only in wp-admin, or after clicking a particular button, points to the plugin that runs there. For 502 or 504 errors, see <a href="/blog/wordpress-502-504-gateway-timeout-fix/">fixing 502 and 504 gateway errors</a> instead.</p>
-
-<h2 id="find-and-read-the-server-error-log">Find and read the server error log</h2>
-<p>Before changing anything, check the "Errors" or "Logs" section of your hosting panel, or an error_log file in the main site folder or wp-admin, which many shared hosts create automatically. Reload the broken page once, then read the newest entries, which look like this:</p>
-<pre><code>[11-Oct-2026 10:42:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function old_helper() in /home/account/public_html/wp-content/plugins/example-plugin/includes/loader.php:88</code></pre>
-<p>Read it in four parts:</p>
-<ol>
-<li><strong>Time:</strong> match it to when you loaded the page; logs often use UTC or the server's time zone rather than IST</li>
-<li><strong>Severity:</strong> "Fatal error" and "Parse error" stop the page; warnings, notices and "Deprecated" lines are usually noise</li>
-<li><strong>Message:</strong> what went wrong; see the table below</li>
-<li><strong>File path:</strong> the folder after wp-content/plugins/ or wp-content/themes/ names the culprit, and the number at the end is the line a developer should check</li>
-</ol>
+<p>Since WordPress 5.2, many PHP fatal errors show "There has been a critical error on this website" instead of a bare 500 page, and WordPress may email the admin address a recovery mode link. The cause is the same family of problems; the critical error message is just friendlier. If you see that message or got that email, also read <a href="/blog/fix-wordpress-critical-error/">fixing the WordPress critical error</a>, which covers recovery mode. If the screen is completely blank, see <a href="/blog/wordpress-white-screen-of-death/">the white screen of death</a>.</p>
 <table>
-<thead><tr><th>Log message contains</th><th>Likely cause</th></tr></thead>
-<tbody>
-<tr><td>"Invalid command", "not allowed here" or a mention of .htaccess</td><td>A bad line in .htaccess</td></tr>
-<tr><td>"Allowed memory size ... exhausted"</td><td>PHP memory limit</td></tr>
-<tr><td>"Call to undefined function", or "Uncaught Error" in a plugin path</td><td>A plugin or theme that doesn't suit your PHP version or another plugin</td></tr>
-<tr><td>"syntax error, unexpected ..."</td><td>A broken code edit, or code that needs a newer PHP version</td></tr>
-<tr><td>"Maximum execution time ... exceeded"</td><td>A task running longer than the server allows</td></tr>
-<tr><td>"End of script output before headers" or "Premature end of script headers"</td><td>PHP crashed or was stopped, often by a server limit</td></tr>
-</tbody>
+  <thead><tr><th>What you see</th><th>Likely layer</th><th>Where to start</th></tr></thead>
+  <tbody>
+    <tr><td>"500 Internal Server Error" from Apache or LiteSpeed</td><td>.htaccess or server configuration, or PHP fatal error</td><td>Server error log, .htaccess</td></tr>
+    <tr><td>"There has been a critical error on this website"</td><td>PHP fatal error in WordPress code</td><td>Recovery mode email, debug.log</td></tr>
+    <tr><td>500 only in wp-admin</td><td>Admin-only plugin code or memory</td><td>debug.log, recently updated plugins</td></tr>
+    <tr><td>500 only on one page or action</td><td>Code that runs on that page, such as checkout or a form</td><td>debug.log at the time you load it</td></tr>
+    <tr><td>500 after changing PHP version</td><td>Old plugin or theme code</td><td>Switch PHP back, then update code</td></tr>
+    <tr><td>500 together with 502 or 504</td><td>Capacity or timeouts</td><td>See the gateway timeout guide</td></tr>
+  </tbody>
 </table>
+<p>For capacity problems, <a href="/blog/wordpress-502-504-gateway-timeout-fix/">502 and 504 gateway errors</a> is the better guide. And if the message is "Error establishing a database connection", that is a separate issue covered in <a href="/blog/error-establishing-database-connection-fix/">the database connection error fix</a>.</p>
+
+<h2 id="before-you-change-anything-take-a-backup">Before you change anything: take a backup</h2>
+<p>Even a broken site can be backed up. Use your hosting panel's backup tool, or download wp-content and export the database through phpMyAdmin. If a fix goes wrong, you can return to this point. <a href="/blog/wordpress-backup-restore-guide/">The WordPress backup and restore guide</a> explains how.</p>
 
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
@@ -209,51 +200,84 @@
   <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22500%20Internal%20Server%20Error%20in%20WordPress%3A%20How%20to%20Find%20the%20Cause%20and%20Fix%20It%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
+<h2 id="find-and-read-the-server-error-log">Find and read the server error log</h2>
+<p>Most Indian shared hosting panels, including cPanel and hPanel, have an error log view, or an error_log file in the site's root or wp-admin folder. Open it and look at entries with the time the error happened. A useful line looks something like:</p>
+<pre><code>PHP Fatal error:  Uncaught Error: Call to undefined function some_function()
+in /home/user/public_html/wp-content/plugins/example-plugin/includes/file.php:42</code></pre>
+<p>The path tells you which plugin or theme failed. "Allowed memory size exhausted" points at memory. Lines mentioning .htaccess, such as "Invalid command" or "RewriteRule", point at a bad rule. If there is no log access, ask your host to send the error log entries for the time of the error.</p>
+
 <h2 id="turn-on-wp-debug-log-safely">Turn on WP_DEBUG_LOG safely</h2>
-<p>If the server log is empty or hard to reach, WordPress can write PHP errors to its own file. A typo in wp-config.php itself causes a 500, so:</p>
-<ol>
-<li>Download a copy of wp-config.php first</li>
-<li>Edit it in the file manager or a plain text editor, never a word processor, which turns straight quotes curly</li>
-<li>Replace the existing WP_DEBUG line rather than adding a second one, keeping it above the comment that says to stop editing</li>
-</ol>
+<p>If the server log is empty or unclear, WordPress can write its own log. Edit wp-config.php through the file manager or FTP and set these lines above the line that says to stop editing:</p>
 <pre><code>define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_LOG', '/home/account/logs/wp-errors.log' );
+define( 'WP_DEBUG_LOG', true );
 define( 'WP_DEBUG_DISPLAY', false );</code></pre>
-<p>Giving WP_DEBUG_LOG a file path, supported since WordPress 5.1, keeps the log outside your public folder; ask your host for a suitable path in a folder that already exists. If you set it to true instead, it writes to wp-content/debug.log, which anyone can often open in a browser, so delete it as soon as you've read it. WP_DEBUG_DISPLAY set to false keeps errors off visitors' screens.</p>
-<p>Reproduce the error once, read the newest "Fatal error" line, then set WP_DEBUG back to false, remove the extra lines and delete the log. If the log stays empty, the failure happens before WordPress loads, usually in .htaccess or the server, and only the server log will show it.</p>
+<p>Reload the failing page, then open wp-content/debug.log. WP_DEBUG_DISPLAY set to false keeps errors off the screen so visitors do not see file paths. When you are done, set WP_DEBUG back to false and delete debug.log, because it can grow large and should not be left publicly readable.</p>
 
 <h2 id="corrupt-or-invalid-htaccess">Corrupt or invalid .htaccess</h2>
-<p>On Apache and LiteSpeed servers, one bad line in .htaccess takes down every page, including wp-admin. Typical culprits are typing mistakes, leftovers from removed plugins and php_value lines copied from tutorials, which cause an instant 500 on many servers that don't run PHP as an Apache module. PHP settings belong in your host's PHP options screen instead.</p>
-<p>To test, rename .htaccess to .htaccess-old. If the site comes back, re-save Settings → Permalinks to create a clean file, then add back custom rules one at a time, testing after each. Rules that refuse access cause a different error; see <a href="/blog/wordpress-403-forbidden-error-fix/">fixing a 403 Forbidden error</a>.</p>
+<p>On Apache and LiteSpeed servers, .htaccess holds rewrite rules for permalinks, plus rules added by caching, security and redirect plugins. A single bad line can cause a 500 on every page.</p>
+<ol>
+  <li>In the file manager, rename .htaccess to .htaccess-old.</li>
+  <li>Reload the site. If it works, the file was the problem.</li>
+  <li>Log in, go to Settings &gt; Permalinks and click Save without changes. WordPress writes a fresh default file.</li>
+  <li>Re-add any custom rules from the old file one block at a time, testing after each.</li>
+</ol>
+<p>Nginx servers do not use .htaccess, so on those hosts skip this step.</p>
 
 <h2 id="plugin-and-theme-fatal-errors">Plugin and theme fatal errors</h2>
-<p>When the log names a file inside wp-content/plugins or wp-content/themes, that code is the problem, often straight after an update:</p>
+<p>Most 500 errors after an update or a new install come from a plugin or theme. If the log names one, rename that plugin's folder in wp-content/plugins, for example from example-plugin to example-plugin-off. WordPress deactivates it, and the site usually comes back.</p>
+<p>If the log does not name one:</p>
 <ul>
-<li>Rename just that plugin's folder by file manager or SFTP, which deactivates it, and reload</li>
-<li>If the theme is named, rename its folder so WordPress falls back to a default theme, provided one is installed</li>
-<li>Then roll back, wait for a fixed release or replace the plugin</li>
+  <li>Rename the whole plugins folder to plugins-off to deactivate everything. If the site loads, rename it back and reactivate plugins one by one from the dashboard.</li>
+  <li>If plugins are not the cause, rename the active theme's folder; WordPress falls back to a default theme if one is installed.</li>
+  <li>Check custom code in functions.php or a snippets plugin, a common source of errors after a small edit.</li>
 </ul>
-<p>If the log doesn't point anywhere useful, <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">the plugin conflict guide</a> explains how to test plugins one by one on a staging copy. Errors in functions.php or a snippets plugin usually come from a recent manual edit, so undo it.</p>
+<p><a href="/blog/wordpress-plugin-conflicts-troubleshooting/">Plugin conflict troubleshooting</a> covers testing on staging so the live site is not affected. Once you find the culprit, update it, replace it or roll back to the previous version, and report the error to its developer.</p>
 
 <h2 id="memory-php-version-and-server-limits">Memory, PHP version and server limits</h2>
-<h3>PHP memory</h3>
-<p>"Allowed memory size exhausted" means a page needed more memory than PHP allows. Raising the limit helps, but finding what's using the memory matters more; see <a href="/blog/wordpress-memory-limit-errors/">fixing memory limit errors</a>.</p>
-<h3>PHP version mismatch</h3>
-<p>When a host retires an old PHP version, outdated plugins and themes that rely on removed functions can break. The reverse happens too, when a plugin update needs a newer PHP version than your server runs. Switching PHP back in the hosting panel is a quick temporary fix while the code is updated; see <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a>.</p>
-<h3>Server limits</h3>
-<p>Shared hosting caps CPU, memory, simultaneous processes and script run time. Large imports, backups or a traffic spike can hit those caps, so the 500 comes and goes. Your panel's resource usage page shows whether limits were reached; if so, move heavy jobs to quiet hours or ask whether a larger plan is needed.</p>
+<ul>
+  <li><strong>Memory:</strong> an "Allowed memory size exhausted" error means a script needed more memory than allowed. Raise WP_MEMORY_LIMIT in wp-config.php within your plan's limit, and look at what is using so much; <a href="/blog/wordpress-memory-limit-errors/">memory limit errors</a> explains both.</li>
+  <li><strong>PHP version:</strong> old plugins and themes can fail on newer PHP, and new plugins may require a recent version. If the 500 started after a PHP change, switch back in the hosting panel, update the code, then try again. See <a href="/blog/update-php-version-wordpress/">how to update PHP safely</a>.</li>
+  <li><strong>File permissions:</strong> some servers return a 500 when files or folders are writable by everyone. Folders are normally 755 and files 644.</li>
+  <li><strong>Server problems:</strong> a PHP service crash or misconfiguration is the host's job to fix.</li>
+</ul>
+
+<h2 id="preventing-the-next-500-error">Preventing the next 500 error</h2>
+<p>Most 500 errors are triggered by a change: an update, a new plugin, a code edit or a hosting change. A few habits make them rare, and quick to undo when they do happen:</p>
+<ul>
+  <li><strong>Update with a backup first.</strong> Take a fresh backup before updating plugins, themes or WordPress core, so a bad update can be rolled back in minutes.</li>
+  <li><strong>Test bigger updates on staging.</strong> Major plugin versions, WooCommerce updates and PHP changes are worth trying on a copy of the site before the live one.</li>
+  <li><strong>Update one thing at a time</strong> when something matters, such as a payment or booking plugin, so you know exactly which change caused a problem.</li>
+  <li><strong>Avoid editing functions.php in the dashboard editor.</strong> One missing bracket can take the site down with no way back in. Edit through the file manager or a snippets plugin that can disable a faulty snippet.</li>
+  <li><strong>Remove plugins you no longer use,</strong> and avoid abandoned ones that have not been updated for a long time.</li>
+  <li><strong>Watch uptime.</strong> An uptime monitor emails you when the site returns errors, so you hear about a 500 before customers do.</li>
+</ul>
 
 <h2 id="a-safe-fix-order-and-when-to-call-your-host">A safe fix order, and when to call your host</h2>
 <ol>
-<li>Note the time, the URL and recent changes, and back up the site even though it's broken</li>
-<li>Read the server error log</li>
-<li>Test .htaccess by renaming it</li>
-<li>Deal with the plugin or theme named in the log, then check memory, PHP version and limits</li>
-<li>If the site must be online now, restore a working backup and investigate on staging; on a store, restoring the database can wipe out recent orders</li>
+  <li>Back up files and database.</li>
+  <li>Read the server error log for the time of the error.</li>
+  <li>Enable WP_DEBUG_LOG if the server log is unclear.</li>
+  <li>Rename .htaccess and regenerate it.</li>
+  <li>Rename the plugin named in the log, or all plugins, then the theme.</li>
+  <li>Check memory, PHP version and permissions.</li>
+  <li>Turn debugging off and remove debug.log.</li>
 </ol>
-<p>Ask your host when you can't find the logs, when they mention script headers, resource limits or "Permission denied", when the error started after the host changed something, or when it only appears at busy times. Give them the exact time and URL.</p>
+<p>Call your host if there are no log entries at all, if even a plain test file in the site root gives a 500, or if the log shows server-level messages you do not recognise. Give them the exact time, URL and any log lines.</p>
+<p>Avoid reinstalling WordPress or restoring an old backup before finding the cause. A reinstall rarely fixes plugin errors, and an old backup can lose recent orders and enquiries.</p>
 
-<p>Want the error log read and the site fixed properly, not just patched? I diagnose and repair server errors as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>How do I fix a 500 internal server error in WordPress?</h3>
+<p>Take a backup, read the error log, then fix what it names: rename the faulty plugin or theme folder, reset .htaccess, raise the memory limit or switch PHP back. Change one thing at a time.</p>
+<h3>Can a plugin update cause a 500 error?</h3>
+<p>Yes, it is one of the most common causes, especially when a plugin needs a newer PHP version or clashes with another plugin. Renaming its folder disables it so you can log in.</p>
+<h3>Will I lose my content because of a 500 error?</h3>
+<p>No. Your posts, pages and orders are in the database and are not affected by the error itself. Take care not to overwrite them with an old backup while fixing it.</p>
+<h3>Why is there nothing in my error log?</h3>
+<p>Logging may be off, or the error is happening before PHP runs, for example in .htaccess or server configuration. Enable WP_DEBUG_LOG and ask your host for the server-level log.</p>
+<h3>Is a 500 error bad for SEO?</h3>
+<p>Briefly, no. If Google keeps getting 500 errors over days, it crawls less and can drop affected pages, so fix it promptly.</p>
+
+<p>If the log makes no sense or the site is down during business hours, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to find and fix the cause. To have updates tested with a backup first, look at <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -290,12 +314,15 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
             <strong>On this page</strong>
             <ol>
               <li><a href="#a-500-error-or-a-critical-error">A 500 error or a critical error?</a></li>
+              <li><a href="#before-you-change-anything-take-a-backup">Before you change anything: take a backup</a></li>
               <li><a href="#find-and-read-the-server-error-log">Find and read the server error log</a></li>
               <li><a href="#turn-on-wp-debug-log-safely">Turn on WP_DEBUG_LOG safely</a></li>
               <li><a href="#corrupt-or-invalid-htaccess">Corrupt or invalid .htaccess</a></li>
               <li><a href="#plugin-and-theme-fatal-errors">Plugin and theme fatal errors</a></li>
               <li><a href="#memory-php-version-and-server-limits">Memory, PHP version and server limits</a></li>
+              <li><a href="#preventing-the-next-500-error">Preventing the next 500 error</a></li>
               <li><a href="#a-safe-fix-order-and-when-to-call-your-host">A safe fix order, and when to call your host</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -322,9 +349,9 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/wordpress-backup-restore-guide/"><img class="post-card-img" src="/assets/og/blog-wordpress-backup-restore-guide.webp" alt="WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks</h3><p>How to back up and restore WordPress: what to include, how often, the 3-2-1 rule, UpdraftPlus and host backups, and restoring by plugin or by hand.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/common-wordpress-errors-fixes/"><img class="post-card-img" src="/assets/og/blog-common-wordpress-errors-fixes.webp" alt="Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</h3><p>Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/update-php-version-wordpress/"><img class="post-card-img" src="/assets/og/blog-update-php-version-wordpress.webp" alt="How to Update Your WordPress Site's PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Update Your WordPress Site's PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes</h3><p>Update your WordPress PHP version safely: check compatibility on staging, switch in hPanel or cPanel, re-enable extensions and fix anything that breaks.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/fix-wordpress-critical-error/"><img class="post-card-img" src="/assets/og/blog-fix-wordpress-critical-error.webp" alt="&quot;There Has Been a Critical Error on This Website&quot;: How to Fix It in WordPress, Step by Step" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>&quot;There Has Been a Critical Error on This Website&quot;: How to Fix It in WordPress, Step by Step</h3><p>Fix &quot;There has been a critical error on this website&quot;: use the recovery mode email, read debug.log, disable plugins via File Manager and check PHP.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>

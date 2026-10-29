@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>502 Bad Gateway and 504 Gateway Timeout Errors on WordPress</title>
-  <meta name="description" content="What 502 Bad Gateway and 504 Gateway Timeout mean on WordPress, and how to fix them: PHP workers, heavy plugins, slow queries, Cloudflare and host limits.">
+  <title>502 Bad Gateway and 504 Gateway Timeout WordPress: Fixes</title>
+  <meta name="description" content="Fix a 502 bad gateway or 504 gateway timeout on WordPress: read the error page, check PHP workers, slow plugins, Cloudflare and hosting limits.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/">
-  <meta property="og:title" content="502 Bad Gateway and 504 Gateway Timeout Errors on WordPress">
-  <meta property="og:description" content="What 502 Bad Gateway and 504 Gateway Timeout mean on WordPress, and how to fix them: PHP workers, heavy plugins, slow queries, Cloudflare and host limits.">
+  <meta property="og:title" content="502 Bad Gateway and 504 Gateway Timeout WordPress: Fixes">
+  <meta property="og:description" content="Fix a 502 bad gateway or 504 gateway timeout on WordPress: read the error page, check PHP workers, slow plugins, Cloudflare and hosting limits.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-502-504-gateway-timeout-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/#article",
       "headline": "502 Bad Gateway and 504 Gateway Timeout on WordPress: Causes and Fixes",
-      "description": "What 502 Bad Gateway and 504 Gateway Timeout mean on WordPress, and how to fix them: PHP workers, heavy plugins, slow queries, Cloudflare and host limits.",
+      "description": "Fix a 502 bad gateway or 504 gateway timeout on WordPress: read the error page, check PHP workers, slow plugins, Cloudflare and hosting limits.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/",
       "image": "https://samverse.space/assets/og/blog-wordpress-502-504-gateway-timeout-fix.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>502 Bad Gateway and 504 Gateway Timeout on WordPress: Causes and Fixes</h1>
-          <p class="post-dek">What 502 Bad Gateway and 504 Gateway Timeout mean on WordPress, and how to fix them: PHP workers, heavy plugins, slow queries, Cloudflare and host limits.</p>
+          <p class="post-dek">Fix a 502 bad gateway or 504 gateway timeout on WordPress: read the error page, check PHP workers, slow plugins, Cloudflare and hosting limits.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=502%20Bad%20Gateway%20and%20504%20Gateway%20Timeout%20on%20WordPress%3A%20Causes%20and%20Fixes%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-502-504-gateway-timeout-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -154,47 +154,50 @@
             <summary>On this page</summary>
             <ol>
               <li><a href="#proxy-php-and-upstream-in-plain-words">Proxy, PHP and upstream in plain words</a></li>
+              <li><a href="#502-bad-gateway-vs-504-gateway-timeout-on-wordpress">502 bad gateway vs 504 gateway timeout on WordPress</a></li>
               <li><a href="#read-the-error-page-first">Read the error page first</a></li>
               <li><a href="#php-workers-the-most-common-bottleneck">PHP workers: the most common bottleneck</a></li>
               <li><a href="#heavy-plugins-slow-queries-and-outside-services">Heavy plugins, slow queries and outside services</a></li>
               <li><a href="#cloudflare-and-cdn-problems">Cloudflare and CDN problems</a></li>
               <li><a href="#server-limits-on-shared-hosting">Server limits on shared hosting</a></li>
               <li><a href="#what-to-send-your-host">What to send your host</a></li>
+              <li><a href="#a-quick-fix-order">A quick fix order</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>A 502 means the front server got no valid reply from PHP and a 504 means it waited too long; either way the fix is usually behind the proxy, not in it.</li>
-              <li>Busy PHP workers are the most common cause, so get page caching working, block abusive bots and find heavy plugins, slow queries and slow outside services before upgrading.</li>
-              <li>Check the error page branding and your hosting resource graphs, then give your host exact times and URLs and ask about worker limits, PHP-FPM restarts and slow logs.</li>
+              <li>A 502 means the server in front got a bad reply from PHP or the origin; a 504 means it waited too long. Both point at the server side, not your browser.</li>
+              <li>The usual causes are too few PHP workers, a slow plugin or database query, an outside API that hangs, or a Cloudflare to origin problem.</li>
+              <li>Note who shows the error page, the time and the URL, check the error log, then send your host exact details instead of a vague complaint.</li>
             </ul>
           </div>
-<p>A 502 or 504 error often appears when the site is busy or a long task is running, then disappears minutes later, which makes it hard to pin down. Unlike a 500 error, the cause usually isn't a broken file but a failed or slow hand-off between two pieces of server software, so it helps to understand that hand-off first.</p>
+<p>A <strong>502 Bad Gateway</strong> on WordPress means the server that answered your browser, such as Nginx, LiteSpeed or Cloudflare, got an invalid reply from the server behind it, usually PHP. A <strong>504 Gateway Timeout</strong> means it waited for that reply and gave up. Both are server-side problems: PHP is overloaded, a plugin or database query is too slow, an outside service is hanging, or the hosting plan has hit a limit. Clearing your browser cache rarely fixes them.</p>
+<p>This guide explains how to tell which layer is failing, what to check in order, and what to send your hosting company so the problem gets fixed rather than bounced back to you. It suits WordPress and WooCommerce sites on Indian shared, cloud or VPS hosting.</p>
 
 <h2 id="proxy-php-and-upstream-in-plain-words">Proxy, PHP and upstream in plain words</h2>
-<p>Many WordPress sites are served by two layers working together:</p>
-<ul>
-<li><strong>The front server,</strong> often called a proxy, receives every request. It might be Nginx on your hosting server, a load balancer, or a CDN such as Cloudflare in front of your host</li>
-<li><strong>The back end,</strong> or "upstream", does the real work. For WordPress that's PHP, usually run by PHP-FPM as a pool of worker processes that run WordPress, query the database and build each page</li>
-</ul>
-<p>Think of a waiter taking orders to a kitchen:</p>
-<table>
-<thead><tr><th>Error</th><th>What happened</th><th>In the restaurant</th></tr></thead>
-<tbody>
-<tr><td>502 Bad Gateway</td><td>The front server got no valid reply: PHP crashed, was restarted, refused the connection or sent back something broken</td><td>The kitchen door is shut, or the dish comes back wrong</td></tr>
-<tr><td>504 Gateway Timeout</td><td>The front server waited for PHP and gave up when its time limit ran out</td><td>The waiter gives up waiting</td></tr>
-</tbody>
-</table>
-<p>The front server is only the messenger; the fix almost always lies behind it.</p>
+<p>When someone opens your site, the request usually passes through several layers before WordPress runs:</p>
+<ol>
+  <li><strong>CDN or proxy</strong> (often Cloudflare) receives the visit.</li>
+  <li><strong>Web server</strong> (Nginx, Apache or LiteSpeed) on your hosting account receives it next.</li>
+  <li><strong>PHP</strong> (PHP-FPM or LSAPI) runs WordPress, your theme and plugins.</li>
+  <li><strong>Database</strong> (MySQL or MariaDB) returns posts, settings and orders.</li>
+  <li><strong>Outside services</strong> such as payment gateways, shipping APIs or licence servers may be called during the page load.</li>
+</ol>
+<p>Each layer is the "upstream" of the one before it. A gateway error is one layer saying the next one let it down. That is why the first job is working out which layer produced the error page.</p>
 
-<h2 id="read-the-error-page-first">Read the error page first</h2>
-<ul>
-<li><strong>A plain page saying "502 Bad Gateway" or "504 Gateway Timeout", often with "nginx" underneath:</strong> the proxy on your own hosting server couldn't get an answer from PHP</li>
-<li><strong>A Cloudflare-branded page:</strong> it marks whether the problem is at your browser, Cloudflare or the host. "Host: Error" means your server didn't answer properly</li>
-<li><strong>Cloudflare codes in the 520s:</strong> 521 means your server refused the connection, 522 means the connection timed out, and 524 means your server connected but took too long to send the page. All of them point back to your server</li>
-</ul>
-<p>Also note when it happens. Errors on every page, all the time, suggest PHP is down or misconfigured; errors only at busy times or on certain actions suggest capacity or slow code. Write down the time of each one.</p>
+<h2 id="502-bad-gateway-vs-504-gateway-timeout-on-wordpress">502 bad gateway vs 504 gateway timeout on WordPress</h2>
+<table>
+  <thead><tr><th>Error</th><th>What it means</th><th>Typical WordPress causes</th></tr></thead>
+  <tbody>
+    <tr><td>502 Bad Gateway</td><td>The upstream replied with something invalid, or the connection was refused or dropped</td><td>PHP process crashed or was killed, PHP-FPM not running, all PHP workers busy, origin server down behind Cloudflare</td></tr>
+    <tr><td>504 Gateway Timeout</td><td>The upstream accepted the request but did not answer in time</td><td>Slow plugin, heavy database query, outside API that hangs, import or backup running, cron jobs piling up</td></tr>
+    <tr><td>503 Service Unavailable</td><td>The server is refusing work for now</td><td>Resource limits hit on shared hosting, maintenance mode, server overloaded</td></tr>
+    <tr><td>500 Internal Server Error</td><td>PHP or the web server failed while running the request</td><td>Fatal PHP error, broken .htaccess, memory limit</td></tr>
+  </tbody>
+</table>
+<p>If you are seeing a 500 instead, the cause is usually a code error rather than capacity; see <a href="/blog/wordpress-500-internal-server-error-fix/">how to fix a 500 internal server error in WordPress</a>.</p>
 
 <aside class="inline-cta">
   <strong>Need help with speed optimization?</strong>
@@ -202,54 +205,88 @@
   <div><a href="/wordpress-speed-optimization/" class="link-inline">See Speed Optimization →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22502%20Bad%20Gateway%20and%20504%20Gateway%20Timeout%20on%20WordPress%3A%20Causes%20and%20Fixes%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="php-workers-the-most-common-bottleneck">PHP workers: the most common bottleneck</h2>
-<p>Each PHP worker handles one uncached request at a time, and your hosting plan allows a fixed number of them. When all are busy, new requests queue. If the queue doesn't clear fast enough, visitors get 504s, or 502s once the server starts turning requests away. Common causes:</p>
+<h2 id="read-the-error-page-first">Read the error page first</h2>
+<p>The error page itself tells you which layer failed. Screenshot it first.</p>
 <ul>
-<li><strong>Uncached pages:</strong> cached pages are served without PHP, so a site without working page caching needs a worker for every visit</li>
-<li><strong>Logged-in users and stores:</strong> admins, members, carts and checkouts bypass the cache by design, so a sale or a busy team in the dashboard uses many workers at once</li>
-<li><strong>Bots:</strong> aggressive crawlers, fake searches and password-guessing on wp-login.php or xmlrpc.php tie up workers just as real visitors do</li>
-<li><strong>Background requests:</strong> admin-ajax calls, the Heartbeat feature in open dashboard tabs and WP-Cron jobs all run PHP too</li>
+  <li><strong>Cloudflare-branded page</strong> with "Browser, Cloudflare, Host" boxes: Cloudflare is working and is reporting that your host failed. Cloudflare error codes in the 520 to 524 range point to the origin server too; a 524 means the origin took too long.</li>
+  <li><strong>Plain "502 Bad Gateway nginx" or LiteSpeed page:</strong> the web server on your hosting account could not get a good reply from PHP.</li>
+  <li><strong>Hosting company branded page:</strong> often a resource limit or a server-level outage.</li>
+  <li><strong>Error only on some URLs</strong> such as checkout, search, wp-admin or a report page: that page is doing something slow, not the whole server.</li>
 </ul>
-<p>Working page caching, blocking abusive bots at a firewall or CDN, and spreading out scheduled tasks free up workers without spending more on hosting.</p>
+<p>Also note the time, the exact URL and whether you were logged in. Logged-in and wp-admin pages skip the page cache, so they hit PHP every time and fail first when PHP is struggling.</p>
+
+<h2 id="php-workers-the-most-common-bottleneck">PHP workers: the most common bottleneck</h2>
+<p>A PHP worker handles one uncached request at a time. If your plan allows a small number of workers and each request is slow, a handful of visitors, a bot crawl or an admin running a report can occupy all of them. New requests queue, and the web server returns a 502 or 504 when they wait too long.</p>
+<p>Signs this is your problem:</p>
+<ul>
+  <li>Errors come in bursts during busy periods, sales or after you send a newsletter.</li>
+  <li>The site recovers by itself after a few minutes.</li>
+  <li>wp-admin, cart and checkout fail more often than cached blog pages.</li>
+  <li>Your hosting panel shows "entry processes" or "processes" at the limit.</li>
+</ul>
+<p>The fix is usually two-sided: make each request faster so workers free up quickly, and make sure most visits are served from cache so they never reach PHP. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers which pages can be cached and which cannot. Moving to a recent PHP version also helps, as newer versions run WordPress faster; see <a href="/blog/update-php-version-wordpress/">how to update PHP safely</a>.</p>
 
 <h2 id="heavy-plugins-slow-queries-and-outside-services">Heavy plugins, slow queries and outside services</h2>
-<p>A worker that spends many seconds on one request is a worker nobody else can use. Look for:</p>
+<p>A 504 often traces back to one slow thing that happens on every request or on one particular page:</p>
 <ul>
-<li>Plugins that run heavy database queries on every page, such as some related-posts, statistics or broken-link plugins</li>
-<li>Large imports, exports, backups or bulk edits run from the browser, which can outlast the proxy's time limit</li>
-<li>A bloated database, especially huge autoloaded settings left by old plugins</li>
-<li>Plugins that contact outside services, such as shipping rates, social feeds or licence checks, while the page waits. If that service is slow or down, your page hangs with it</li>
+  <li><strong>Plugins that call outside APIs</strong> during page load: shipping rate lookups, currency converters, social feeds, licence checks. If that API is slow or down, your page waits for it.</li>
+  <li><strong>Heavy database queries:</strong> related-product widgets, filters on large WooCommerce catalogues, a bloated wp_options table with large autoloaded data, or years of post revisions.</li>
+  <li><strong>Background jobs</strong> that run on visitor requests: WP-Cron tasks, Action Scheduler queues in WooCommerce, backup plugins and imports.</li>
+  <li><strong>Security or analytics plugins</strong> that log every visit to the database.</li>
 </ul>
-<p>On a staging copy, a debugging plugin such as Query Monitor shows slow queries and outside calls for each page; the method is covered in <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time</a>. Run big jobs in smaller batches, at quiet hours, or through WP-CLI if your host offers it. If the database server itself is down, you'll usually see a different message; see <a href="/blog/error-establishing-database-connection-fix/">fixing "Error establishing a database connection"</a>.</p>
+<p>To find the culprit, use Query Monitor on a staging copy, or deactivate plugins one at a time and test the failing URL. <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">Troubleshooting plugin conflicts</a> walks through a safe way to do this without taking the live site down. If backups or imports cause the errors, schedule them for night hours and move WP-Cron to a real server cron job.</p>
+<h3>Raising timeouts: a short-term patch</h3>
+<p>Raising max_execution_time or the proxy timeout can stop a 504 on a long admin task, such as an import. It does not fix a slow site; it just lets requests hold a worker for longer.</p>
 
 <h2 id="cloudflare-and-cdn-problems">Cloudflare and CDN problems</h2>
-<p>A CDN adds a second hand-off, from the CDN to your server, and problems on either side can look similar. Check:</p>
-<ul>
-<li><strong>The CDN's status page,</strong> in case the problem really is on their side</li>
-<li><strong>Your host's firewall:</strong> with a CDN in front, visitor traffic arrives from the CDN's IP addresses. If the server firewall mistakes that for an attack and blocks them, you get 502, 521 or 522 errors. Ask the host to allowlist the CDN's published IP ranges</li>
-<li><strong>Timeouts:</strong> a CDN gives up after a set time, so long requests need to be made shorter or moved into the background</li>
-<li><strong>SSL settings:</strong> a mismatch between the CDN's SSL mode and your server's certificate causes its own errors, and often redirect loops; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a></li>
-</ul>
-<p>Your developer can also test the server directly, bypassing the CDN, to confirm whether your own server is failing.</p>
+<p>If the error page is Cloudflare's, check these in order:</p>
+<ol>
+  <li><strong>Is the origin up?</strong> Ask your host, or check if the site loads directly through the server's address with Cloudflare paused.</li>
+  <li><strong>Is the host blocking Cloudflare?</strong> A firewall or security plugin that rate-limits by IP can block Cloudflare's addresses, because all your visitors appear to come from them.</li>
+  <li><strong>SSL mode:</strong> "Full (strict)" needs a valid certificate on the origin. A mismatch tends to give 525 or 526 errors rather than 502, but it is worth checking after any SSL change.</li>
+  <li><strong>Long requests:</strong> Cloudflare has its own time limit for an origin response. A slow export or report through Cloudflare can hit it even when the host would have waited.</li>
+</ol>
+<p>Our <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare setup guide for WordPress</a> covers the settings that avoid most of these.</p>
 
 <h2 id="server-limits-on-shared-hosting">Server limits on shared hosting</h2>
-<p>Shared plans cap CPU, memory and simultaneous processes for each account. When you hit a cap, the host may slow your site, stop processes or return 502, 503 or 504 errors until usage drops. Signs that limits are the problem:</p>
-<ul>
-<li>Errors cluster at busy times: ad campaigns, festival sales, a newsletter going out</li>
-<li>Your hosting panel's resource graphs, or emails from your host, show limits reached at the same times</li>
-</ul>
-<p>Fix the waste first: caching, bots, heavy plugins and scheduled jobs. If the site still needs more than the plan gives, more PHP workers or dedicated resources is the honest answer; see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>. On a VPS, your developer should check the PHP-FPM log for warnings that the pool hit its maximum number of processes, and the slow log, which records scripts that ran too long. Simply raising every timeout tends to hide slow code and keeps workers tied up longer.</p>
+<p>Shared hosting plans cap CPU, memory, processes and sometimes I/O per account. When a site hits a cap, the host may throttle or kill PHP processes, which shows up as 502, 503 or 504 errors. Check your hosting panel's resource usage graphs for the time of the errors.</p>
+<p>If the limits are hit by real visitors after caching and plugin clean-up, the site has outgrown the plan. <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">Shared vs VPS vs managed WordPress hosting</a> explains the differences, and if your host is Hostinger, <a href="/blog/hostinger-website-slow-fix/">fixing a slow Hostinger website</a> covers the plan-specific checks. If the limits are hit by bots, blocking bad bots at Cloudflare or the firewall is cheaper than upgrading.</p>
 
 <h2 id="what-to-send-your-host">What to send your host</h2>
-<p>Send your host the exact times of the errors with the time zone, the URLs affected, whether it's every page or particular actions, and a screenshot of the error page including any Ray ID or reference from the CDN. Then ask directly:</p>
+<p>A message like "my site is down" gets a generic reply. A message with details gets a useful one:</p>
 <ul>
-<li>Were PHP workers or process limits reached at those times?</li>
-<li>Was PHP-FPM restarted, or stopped for using too much memory?</li>
-<li>Do the slow logs or access logs show particular scripts or bots?</li>
+  <li>The exact error code and a screenshot of the error page.</li>
+  <li>Date, time and timezone of each occurrence.</li>
+  <li>The URLs affected and whether you were logged in.</li>
+  <li>Whether Cloudflare or another CDN is in front of the site.</li>
+  <li>A request to check PHP-FPM or LSAPI logs, slow logs and resource limit hits for that time.</li>
 </ul>
-<p>Their answers usually show whether the fix belongs in the site or the hosting. If the error turns out to be a plain 500, <a href="/blog/wordpress-500-internal-server-error-fix/">the 500 error guide</a> explains how to read those logs.</p>
+<p>Ask specifically whether PHP processes were killed, whether a worker limit was reached, or whether a firewall blocked requests.</p>
 
-<p>If gateway errors keep coming back at the worst moments, I can find what's tying up your server and fix it. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+<h2 id="a-quick-fix-order">A quick fix order</h2>
+<ol>
+  <li>Screenshot the error page and note time and URL.</li>
+  <li>Check the hosting panel for resource limits and the error log for fatal errors or timeouts.</li>
+  <li>Pause Cloudflare briefly to see if the origin is the problem.</li>
+  <li>Check that page caching is working for logged-out visitors.</li>
+  <li>On staging, find slow plugins or queries with Query Monitor.</li>
+  <li>Move heavy cron, backup and import jobs to off-peak hours.</li>
+  <li>If real traffic still hits limits, upgrade the hosting plan.</li>
+</ol>
+
+<h2 id="faqs">FAQs</h2>
+<h3>How do I fix a 502 bad gateway or 504 gateway timeout on WordPress?</h3>
+<p>Find which layer is failing from the error page, check your host's error logs and resource limits, make sure page caching works, and look for a slow plugin, query or outside API. Most fixes are on the server or plugin side, not in your browser.</p>
+<h3>Is a 502 error my fault or my host's?</h3>
+<p>It can be either. A crashed PHP service or server outage is the host's to fix. Too few workers for the traffic, or a slow plugin tying them up, is about how the site is built and which plan it runs on.</p>
+<h3>Why do I only get 504 errors in wp-admin?</h3>
+<p>Admin pages are never served from the page cache, so every click runs PHP. A slow dashboard widget, a heavy plugin settings page or a big WooCommerce report can exceed the timeout while the public site still looks fine.</p>
+<h3>Will increasing max_execution_time fix a 504?</h3>
+<p>Sometimes, for a single long admin task. It will not fix a slow front end, because the proxy timeout is often separate and longer requests hold PHP workers for longer.</p>
+<h3>Can Cloudflare cause a 502 bad gateway?</h3>
+<p>Cloudflare usually reports a problem at your origin rather than causing it. It can be involved if your host's firewall blocks Cloudflare addresses or if a long request goes past Cloudflare's own time limit.</p>
+
+<p>If gateway errors keep coming back, a speed and server audit usually finds the slow plugin or the missing cache behind them; see <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>. For ongoing updates, uptime monitoring and speed checks, look at <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, or <a href="/wordpress-shopify-developer-india/">hire a WordPress developer in India</a> to look into it.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -286,12 +323,15 @@
             <strong>On this page</strong>
             <ol>
               <li><a href="#proxy-php-and-upstream-in-plain-words">Proxy, PHP and upstream in plain words</a></li>
+              <li><a href="#502-bad-gateway-vs-504-gateway-timeout-on-wordpress">502 bad gateway vs 504 gateway timeout on WordPress</a></li>
               <li><a href="#read-the-error-page-first">Read the error page first</a></li>
               <li><a href="#php-workers-the-most-common-bottleneck">PHP workers: the most common bottleneck</a></li>
               <li><a href="#heavy-plugins-slow-queries-and-outside-services">Heavy plugins, slow queries and outside services</a></li>
               <li><a href="#cloudflare-and-cdn-problems">Cloudflare and CDN problems</a></li>
               <li><a href="#server-limits-on-shared-hosting">Server limits on shared hosting</a></li>
               <li><a href="#what-to-send-your-host">What to send your host</a></li>
+              <li><a href="#a-quick-fix-order">A quick fix order</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -320,7 +360,7 @@
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/common-wordpress-errors-fixes/"><img class="post-card-img" src="/assets/og/blog-common-wordpress-errors-fixes.webp" alt="Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</h3><p>Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/website-down-what-to-do/"><img class="post-card-img" src="/assets/og/blog-website-down-what-to-do.webp" alt="Website Down or Not Opening? What to Check and Do, in the Right Order" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Website Down or Not Opening? What to Check and Do, in the Right Order</h3><p>Website down or not opening? Check if it's down for everyone, read the error, then check domain and DNS, hosting limits, SSL and recent changes, in that order.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/too-many-redirects-error-fix/"><img class="post-card-img" src="/assets/og/blog-too-many-redirects-error-fix.webp" alt="ERR_TOO_MANY_REDIRECTS on WordPress: Causes and How to Fix It" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>ERR_TOO_MANY_REDIRECTS on WordPress: Causes and How to Fix It</h3><p>Site redirected you too many times? Fix redirect loops in WordPress step by step: site URL settings, Cloudflare SSL mode, .htaccess, plugins and cookies.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/update-php-version-wordpress/"><img class="post-card-img" src="/assets/og/blog-update-php-version-wordpress.webp" alt="How to Update Your WordPress Site's PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Update Your WordPress Site's PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes</h3><p>Update your WordPress PHP version safely: check compatibility on staging, switch in hPanel or cPanel, re-enable extensions and fix anything that breaks.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
         </div>
       </div>
     </section>
