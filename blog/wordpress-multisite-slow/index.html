@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Multisite Slow? Causes and Fixes for Networks</title>
-  <meta name="description" content="Why a WordPress Multisite network gets slow, from the shared database and network plugins to cron and domain mapping, and how Redis, caching and hosting help.">
+  <title>WordPress Multisite Slow? Causes and How to Fix Networks</title>
+  <meta name="description" content="WordPress multisite slow? Find the cause: shared hosting limits, network-wide plugins, bloated tables, missing object cache or cron, and how to fix each.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-multisite-slow/">
-  <meta property="og:title" content="WordPress Multisite Slow? Causes and Fixes for Networks">
-  <meta property="og:description" content="Why a WordPress Multisite network gets slow, from the shared database and network plugins to cron and domain mapping, and how Redis, caching and hosting help.">
+  <meta property="og:title" content="WordPress Multisite Slow? Causes and How to Fix Networks">
+  <meta property="og:description" content="WordPress multisite slow? Find the cause: shared hosting limits, network-wide plugins, bloated tables, missing object cache or cron, and how to fix each.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-multisite-slow.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-multisite-slow/#article",
       "headline": "WordPress Multisite Slow? Why Networks Slow Down and How to Fix It",
-      "description": "Why a WordPress Multisite network gets slow, from the shared database and network plugins to cron and domain mapping, and how Redis, caching and hosting help.",
+      "description": "WordPress multisite slow? Find the cause: shared hosting limits, network-wide plugins, bloated tables, missing object cache or cron, and how to fix each.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-multisite-slow/",
       "image": "https://samverse.space/assets/og/blog-wordpress-multisite-slow.png",
       "articleSection": "Speed",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Speed</a>
           <h1>WordPress Multisite Slow? Why Networks Slow Down and How to Fix It</h1>
-          <p class="post-dek">Why a WordPress Multisite network gets slow, from the shared database and network plugins to cron and domain mapping, and how Redis, caching and hosting help.</p>
+          <p class="post-dek">WordPress multisite slow? Find the cause: shared hosting limits, network-wide plugins, bloated tables, missing object cache or cron, and how to fix each.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 7 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Multisite%20Slow%3F%20Why%20Networks%20Slow%20Down%20and%20How%20to%20Fix%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-multisite-slow%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,44 +153,54 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#why-wordpress-multisite-gets-slow">Why WordPress Multisite gets slow</a></li>
-              <li><a href="#database-tables-per-site">Database tables per site</a></li>
-              <li><a href="#object-caching-redis-on-multisite">Object caching (Redis) on multisite</a></li>
-              <li><a href="#page-caching-on-multisite">Page caching on multisite</a></li>
-              <li><a href="#cron-across-sites">Cron across sites</a></li>
-              <li><a href="#hosting-resources-for-a-network">Hosting resources for a network</a></li>
-              <li><a href="#when-to-split-the-network">When to split the network</a></li>
+              <li><a href="#why-wordpress-multisite-gets-slow">Why WordPress multisite gets slow</a></li>
+              <li><a href="#step-1-measure-before-you-change-anything">Step 1: measure before you change anything</a></li>
+              <li><a href="#step-2-review-network-activated-plugins">Step 2: review network-activated plugins</a></li>
+              <li><a href="#step-3-add-persistent-object-caching">Step 3: add persistent object caching</a></li>
+              <li><a href="#step-4-clean-the-database">Step 4: clean the database</a></li>
+              <li><a href="#step-5-replace-wp-cron-with-a-real-cron">Step 5: replace WP-Cron with a real cron</a></li>
+              <li><a href="#step-6-check-hosting-and-php">Step 6: check hosting and PHP</a></li>
+              <li><a href="#step-7-deal-with-the-slow-admin">Step 7: deal with the slow admin</a></li>
+              <li><a href="#a-safe-order-of-work">A safe order of work</a></li>
+              <li><a href="#when-multisite-is-the-wrong-structure">When multisite is the wrong structure</a></li>
+              <li><a href="#getting-a-network-fixed">Getting a network fixed</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Multisite networks slow down because every site shares one database, one set of network-activated plugins, per-site cron and one server.</li>
-              <li>A Redis object cache and page caching that properly supports Multisite usually make the biggest difference, followed by database clean-up on every site.</li>
-              <li>If one site dominates or sites need very different plugins and hosting, splitting the network can be the most effective speed fix.</li>
+              <li>A multisite network shares one database, one codebase and one server, so a single heavy plugin, cron job or busy subsite can slow every site in the network.</li>
+              <li>Measure before changing anything: check server response time per subsite, slow database queries and which plugins are network-activated.</li>
+              <li>Persistent object caching, proper hosting, lean network plugins, regular table clean-up and a real server cron fix most slow networks.</li>
             </ul>
           </div>
-<p>A WordPress Multisite network often starts fast and gets slower as sites, users and plugins are added. Pages take longer to load, the network admin drags and scheduled tasks run late. The causes differ from a single slow site, because everything in a network shares one database, one set of plugins and one server. Here's why WordPress Multisite gets slow and what to do about it. For causes that apply to any site, see <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a>.</p>
+<p>If your WordPress multisite is slow, the cause is usually something shared across the whole network: hosting that wasn't sized for many sites, plugins activated network-wide, a database with thousands of tables and bloated options, no persistent object cache, or scheduled tasks piling up on every subsite. Because all sites run on one codebase, one database and one server, a problem on one subsite often slows the others too. Start by measuring server response time on a few subsites and finding which plugins load everywhere.</p>
+<p>This guide explains why networks slow down, how to diagnose the bottleneck and the fixes that usually help most. If you are still deciding whether multisite is right at all, read <a href="/blog/wordpress-multisite-when-needed/">WordPress multisite: when a business needs it</a> first.</p>
 
-<h2 id="why-wordpress-multisite-gets-slow">Why WordPress Multisite gets slow</h2>
-<p>Most slow networks have a combination of these:</p>
-<ul>
-  <li><strong>The shared database.</strong> Every site's content lives in one database. Users are shared too: one users table and one user meta table for the whole network, with extra rows recording each user's role on each site. On networks with many sites and users these tables grow large, and queries that touch them slow down.</li>
-  <li><strong>Large options tables.</strong> Each site has its own options table, and plugins add autoloaded settings to every one of them. A plugin that stores heavy autoloaded data does it once per site.</li>
-  <li><strong>Network-activated plugins.</strong> A plugin activated across the network loads on every page of every site, including sites that never use it.</li>
-  <li><strong>Cron across sites.</strong> WP-Cron runs separately for each site and only when that site gets a visit, so busy sites run scheduled tasks during page loads while quiet sites fall behind.</li>
-  <li><strong>Domain mapping.</strong> WordPress first has to work out which site a request belongs to from its domain and path. That is normally quick, but misconfigured mapping can add redirect chains between old and new addresses, and older networks may still rely on a legacy domain-mapping plugin.</li>
-</ul>
+<h2 id="why-wordpress-multisite-gets-slow">Why WordPress multisite gets slow</h2>
+<p>A single WordPress site has one set of database tables. In multisite, each subsite gets its own set of around ten tables, while users and network settings are shared. A network with 50 subsites can have hundreds of tables in one database, and every network-activated plugin runs on every page load of every subsite.</p>
+<table>
+<thead><tr><th>Cause</th><th>Symptom</th><th>Typical fix</th></tr></thead>
+<tbody>
+<tr><td>Under-sized or shared hosting</td><td>All subsites slow, worse at busy times</td><td>Move to VPS or managed hosting sized for the network</td></tr>
+<tr><td>Heavy network-activated plugins</td><td>Slow on every subsite, including simple ones</td><td>Activate per site only where needed, replace heavy plugins</td></tr>
+<tr><td>No persistent object cache</td><td>High database load, slow admin</td><td>Redis or Memcached object cache</td></tr>
+<tr><td>Bloated autoloaded options</td><td>Slow time to first byte on certain subsites</td><td>Clean options tables per subsite</td></tr>
+<tr><td>WP-Cron firing on every subsite</td><td>Random slow page loads, CPU spikes</td><td>Disable WP-Cron and run a real server cron</td></tr>
+<tr><td>One busy or broken subsite</td><td>Whole network slows when that site gets traffic</td><td>Optimise or isolate that subsite</td></tr>
+<tr><td>Domain mapping or SSL redirects</td><td>Extra redirect delay on mapped domains</td><td>Correct domain and HTTPS settings</td></tr>
+</tbody>
+</table>
 
-<h2 id="database-tables-per-site">Database tables per site</h2>
-<p>Each new site gets its own set of tables named with the site's ID (wp_2_posts, wp_2_options and so on), plus any tables its plugins create. A network of a few dozen sites can easily have hundreds of tables, and very large networks thousands.</p>
+<h2 id="step-1-measure-before-you-change-anything">Step 1: measure before you change anything</h2>
+<p>Guessing wastes time on a network because changes affect every site. Collect a few numbers first:</p>
 <ul>
-  <li><strong>Autoloaded options on each site</strong>, not just the main one. Site Health can warn about large autoloaded data.</li>
-  <li><strong>Leftover tables</strong> from deleted sites or removed plugins; review these carefully before deleting anything</li>
-  <li><strong>Revisions, transients and logs</strong> across every site, not only the busiest</li>
-  <li><strong>Slow queries</strong>, found with a tool like Query Monitor on a staging copy</li>
+<li><strong>Server response time (TTFB)</strong> on the main site and three or four subsites, both cached and logged in. A slow TTFB points at PHP, the database or hosting rather than images or front-end code. <a href="/blog/reduce-server-response-time-ttfb/">Reducing server response time</a> explains how to test it.</li>
+<li><strong>Slow queries</strong> using the Query Monitor plugin on a staging copy or briefly on live while logged in. It shows which plugin or theme function causes slow database queries.</li>
+<li><strong>Server resources</strong> in your hosting panel: CPU, memory and PHP worker usage over the day.</li>
+<li><strong>Which subsites get the most traffic</strong>, since one popular site can starve the rest.</li>
 </ul>
-<p>The clean-up steps in <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a> apply to each site in the network; back up the whole database first. Very large networks sometimes spread tables across several databases with a database drop-in such as HyperDB or LudicrousDB, but that is specialist work.</p>
 
 <aside class="inline-cta">
   <strong>Need help with speed optimization?</strong>
@@ -198,53 +208,78 @@
   <div><a href="/wordpress-speed-optimization/" class="link-inline">See Speed Optimization →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20Multisite%20Slow%3F%20Why%20Networks%20Slow%20Down%20and%20How%20to%20Fix%20It%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="object-caching-redis-on-multisite">Object caching (Redis) on multisite</h2>
-<p>A persistent object cache keeps the results of database queries in memory between page loads. On a network it often makes the biggest difference, because so much is shared: site lookups, network options, users and each site's settings would otherwise be fetched from the database on every request.</p>
+<h2 id="step-2-review-network-activated-plugins">Step 2: review network-activated plugins</h2>
+<p>Network activation is convenient but expensive. A plugin activated for the network loads on every request across every subsite, even sites that never use it.</p>
 <ul>
-  <li>Your host needs to provide Redis (or Memcached), plus a connector plugin that supports Multisite; check the plugin's documentation for network setup</li>
-  <li>Cached data must be kept separate for each site, which good connector plugins handle using the site ID</li>
-  <li>If other WordPress installs share the same Redis server, give each install its own cache key prefix so they don't overwrite each other's data</li>
-  <li>It helps the admin and logged-in users most, since they bypass page caching</li>
+<li>List network-activated plugins under Network Admin, Plugins.</li>
+<li>For each one, ask whether every subsite needs it. If not, deactivate it network-wide and activate it only on the sites that use it.</li>
+<li>Look for overlapping plugins, such as two SEO or security plugins, and remove one.</li>
+<li>Be careful with page builders, related-post plugins, statistics plugins and anything that writes to the database on each page view.</li>
 </ul>
-<p>See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> for how object caching fits with the other layers.</p>
+<p>Test changes on a staging copy of the network first. Deactivating a plugin network-wide can change how subsites look or behave.</p>
 
-<h2 id="page-caching-on-multisite">Page caching on multisite</h2>
-<p>Page caching serves ready-made copies of pages instead of running WordPress for every visitor, which takes a lot of load off the shared database. Points to check on a network:</p>
+<h2 id="step-3-add-persistent-object-caching">Step 3: add persistent object caching</h2>
+<p>WordPress repeats many of the same database queries on each request. A persistent object cache (Redis or Memcached) stores those results in memory, which particularly helps the admin area and logged-in users, where page caching doesn't apply. On multisite, make sure the cache uses a key prefix so subsites don't share entries by mistake; the usual object cache plugins handle this when configured properly.</p>
+<p>Page caching still matters for visitors. Check that your caching plugin or server cache supports multisite and is set up for each subsite and mapped domain. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers the different layers.</p>
+
+<h2 id="step-4-clean-the-database">Step 4: clean the database</h2>
+<p>Large networks accumulate clutter quickly: post revisions, expired transients, orphaned tables from deleted subsites and plugins, and large autoloaded options that load on every page.</p>
 <ul>
-  <li><strong>Multisite support:</strong> not every caching plugin supports networks; some must be network-activated, and settings may be network-wide or per site</li>
-  <li><strong>Server-level caching</strong> (LiteSpeed, Nginx or Varnish, depending on the host) usually works across the network, but purge rules must clear the right site's pages when content changes</li>
-  <li><strong>Mapped domains</strong> need including in your cache, CDN and SSL setup, or they may miss out on caching</li>
-  <li><strong>Logged-in users</strong> skip the page cache, and on a subdirectory network someone logged in to one site is usually logged in across the domain, so editors see uncached pages everywhere</li>
-  <li><strong>Cache preloading</strong> across many sites can itself strain a small server; schedule it for quiet hours</li>
+<li>Check autoloaded options size per subsite and remove data left by uninstalled plugins.</li>
+<li>Limit post revisions in wp-config.php.</li>
+<li>Remove tables left behind by subsites that were deleted.</li>
+<li>Make sure the database uses the InnoDB engine and that tables have proper indexes.</li>
 </ul>
+<p>Always back up first. <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a> explains each step in more detail.</p>
 
-<h2 id="cron-across-sites">Cron across sites</h2>
-<p>Scheduled tasks such as publishing posts, sending emails and running backups use WP-Cron. On a network, a common fix is to stop visits triggering cron and have a real server cron job run due tasks for each site in turn, for example with WP-CLI:</p>
-<pre><code>for url in $(wp site list --field=url); do
-  wp cron event run --due-now --url="$url"
-done</code></pre>
-<p>Your developer can run this every few minutes from the server's scheduler after setting DISABLE_WP_CRON to true in wp-config.php. Stagger heavy jobs such as backups and imports so they don't run on every site at the same moment. <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a> covers the basics.</p>
+<h2 id="step-5-replace-wp-cron-with-a-real-cron">Step 5: replace WP-Cron with a real cron</h2>
+<p>By default, WordPress runs scheduled tasks when someone visits a page. On multisite, every subsite has its own schedule, so visitors on busy subsites can trigger heavy jobs, while quiet subsites miss them entirely. Disable WP-Cron in wp-config.php and set up a server cron job that runs due events for every subsite at regular intervals, usually with WP-CLI looping through the sites. Your host's support can often help set this up.</p>
 
-<h2 id="hosting-resources-for-a-network">Hosting resources for a network</h2>
-<p>All sites in a network share one server's CPU, memory, PHP workers and database. A traffic spike, an import or a bot attack on one site slows every other site. Signs the plan is too small:</p>
+<h2 id="step-6-check-hosting-and-php">Step 6: check hosting and PHP</h2>
+<p>Many networks start on shared hosting and outgrow it. Signs you need more resources include resource limit warnings, slow admin across all sites and slowdowns at the same times each day. Look at:</p>
 <ul>
-  <li>Resource limit warnings from your host, or 502 and 504 errors at busy times</li>
-  <li>Slow uncached pages and a slow admin, even after caching and database clean-up</li>
-  <li>A network admin that is sluggish for everyone, not just one user</li>
+<li>Enough PHP workers and memory for the number of subsites and simultaneous logged-in users.</li>
+<li>A current, supported PHP version; see <a href="/blog/update-php-version-wordpress/">updating your PHP version</a>.</li>
+<li>Server-level caching and a database on fast storage.</li>
+<li>Data centre location close to your main audience, for example India for Indian visitors.</li>
 </ul>
-<p>Shared hosting is rarely a good fit for a busy network. A managed host that explicitly supports Multisite, or a VPS or cloud server with enough memory for PHP, the database and Redis, is usually the next step. Check Multisite support before you buy, as some plans don't allow it.</p>
+<p><a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">Shared vs VPS vs managed WordPress hosting</a> compares options. A network of many active subsites usually belongs on a VPS or managed plan rather than basic shared hosting.</p>
 
-<h2 id="when-to-split-the-network">When to split the network</h2>
-<p>Sometimes the best speed fix is a smaller network. Consider moving sites out when:</p>
-<ul>
-  <li>One site has far more traffic, content or orders than the rest and keeps slowing them down</li>
-  <li>Sites need very different plugins, so every site carries code it doesn't use</li>
-  <li>Sites belong to different businesses or clients with different budgets and hosting needs</li>
-  <li>The network has outgrown one server and tuning hasn't helped</li>
-</ul>
-<p>Moving a site out means exporting its content, media and users, re-creating its settings on a new install and redirecting any URLs that change. Some migration tools can extract a single subsite; check their current features and test on staging first.</p>
+<h2 id="step-7-deal-with-the-slow-admin">Step 7: deal with the slow admin</h2>
+<p>Network admins often notice the dashboard is slow even when the front end is fine. Common causes are the "My Sites" menu loading many sites, dashboard widgets from plugins, the Heartbeat API and update checks for many plugins. Reducing dashboard widgets, slowing Heartbeat and using object caching help. <a href="/blog/wordpress-admin-slow/">Why WordPress admin is slow</a> covers the general fixes, which apply to each subsite.</p>
 
-<p>If your network is slow and you're not sure whether the database, plugins, caching or hosting is to blame, I can profile it, fix the bottlenecks and tell you honestly whether splitting the network makes sense. See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
+<h2 id="a-safe-order-of-work">A safe order of work</h2>
+<p>Because every change on a network reaches every subsite, the order matters. A sequence that keeps risk low:</p>
+<ol>
+<li>Take a full backup of files and the database, and confirm you can restore it.</li>
+<li>Create a staging copy of the network, including mapped domains if possible.</li>
+<li>Record baseline numbers: TTFB on several subsites, admin load time and server resource graphs.</li>
+<li>Make low-risk changes first: real cron, object caching, PHP version, revision limits.</li>
+<li>Then move network-activated plugins to per-site activation, one at a time, checking affected subsites after each.</li>
+<li>Clean the database last, once you know which plugins are staying.</li>
+<li>Repeat the measurements and compare with the baseline before applying changes to live.</li>
+</ol>
+<p>Tell subsite owners or editors when changes are planned, especially if a plugin they rely on is moving from network to per-site activation. Keep a short change log so that if something breaks a week later, you know what changed and when.</p>
+
+<h2 id="when-multisite-is-the-wrong-structure">When multisite is the wrong structure</h2>
+<p>Sometimes slowness is a sign that the network should be split. If subsites have very different traffic, plugins and owners, or one large shop shares a network with many small sites, separate installations may be faster and easier to maintain. Splitting a site out of multisite is a migration project, so plan it with backups and redirects. Before deciding, compare the effort of maintaining one network against several separate sites, including updates, security monitoring and who manages each site day to day.</p>
+
+<h2 id="getting-a-network-fixed">Getting a network fixed</h2>
+<p>Multisite speed work needs care, because each change touches every site in the network. A speed audit covering hosting, plugins, caching, database and cron, carried out on staging first, is part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>. Agencies running client networks can also use <a href="/wordpress-developer-for-agencies/">white-label WordPress development for agencies</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> directly.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>Why is my WordPress multisite slow?</h3>
+<p>Usually because of shared resources: hosting too small for the network, plugins activated network-wide, a large database without object caching, or scheduled tasks on many subsites. Measure TTFB and slow queries to find which applies.</p>
+<h3>Does multisite make WordPress slower than single sites?</h3>
+<p>Not by itself. A well-configured network can be fast. It becomes slow when many subsites share under-sized hosting or load plugins they don't need.</p>
+<h3>Should I use Redis object caching on multisite?</h3>
+<p>For most active networks, yes. A persistent object cache reduces repeated database queries, especially for logged-in users and the admin area. Configure it with proper key prefixes.</p>
+<h3>Can one subsite slow down the whole network?</h3>
+<p>Yes. All subsites share the server and database, so a busy, badly coded or attacked subsite can affect the others.</p>
+<h3>How do I find which plugin slows down multisite?</h3>
+<p>Use Query Monitor on a staging copy to see slow queries by plugin, and test by moving network-activated plugins to per-site activation one at a time.</p>
+
+<p>Running a slow network? A careful, staging-first speed audit is part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -280,13 +315,18 @@ done</code></pre>
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#why-wordpress-multisite-gets-slow">Why WordPress Multisite gets slow</a></li>
-              <li><a href="#database-tables-per-site">Database tables per site</a></li>
-              <li><a href="#object-caching-redis-on-multisite">Object caching (Redis) on multisite</a></li>
-              <li><a href="#page-caching-on-multisite">Page caching on multisite</a></li>
-              <li><a href="#cron-across-sites">Cron across sites</a></li>
-              <li><a href="#hosting-resources-for-a-network">Hosting resources for a network</a></li>
-              <li><a href="#when-to-split-the-network">When to split the network</a></li>
+              <li><a href="#why-wordpress-multisite-gets-slow">Why WordPress multisite gets slow</a></li>
+              <li><a href="#step-1-measure-before-you-change-anything">Step 1: measure before you change anything</a></li>
+              <li><a href="#step-2-review-network-activated-plugins">Step 2: review network-activated plugins</a></li>
+              <li><a href="#step-3-add-persistent-object-caching">Step 3: add persistent object caching</a></li>
+              <li><a href="#step-4-clean-the-database">Step 4: clean the database</a></li>
+              <li><a href="#step-5-replace-wp-cron-with-a-real-cron">Step 5: replace WP-Cron with a real cron</a></li>
+              <li><a href="#step-6-check-hosting-and-php">Step 6: check hosting and PHP</a></li>
+              <li><a href="#step-7-deal-with-the-slow-admin">Step 7: deal with the slow admin</a></li>
+              <li><a href="#a-safe-order-of-work">A safe order of work</a></li>
+              <li><a href="#when-multisite-is-the-wrong-structure">When multisite is the wrong structure</a></li>
+              <li><a href="#getting-a-network-fixed">Getting a network fixed</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -313,9 +353,9 @@ done</code></pre>
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><img class="post-card-img" src="/assets/og/blog-why-is-my-wordpress-site-slow.webp" alt="Why Is My WordPress Site Slow? 12 Common Causes and How to Fix Them" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? 12 Common Causes and How to Fix Them</h3><p>WordPress site slow? Diagnose it in 5 minutes with free tools, then fix the 12 most common causes, plus a slow admin, slow mobile pages and slow WooCommerce.</p><span class="post-card-meta">27 September 2026 · 11 min read</span></a>
           <a class="post-card" href="/blog/wordpress-caching-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-caching-explained.webp" alt="WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)</h3><p>WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/wordpress-database-optimization/"><img class="post-card-img" src="/assets/og/blog-wordpress-database-optimization.webp" alt="WordPress Database Optimisation: How to Clean Up and Speed Up Your Database Safely" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>WordPress Database Optimisation: How to Clean Up and Speed Up Your Database Safely</h3><p>Clean up your WordPress database safely: back up, remove revisions, transients, spam and leftovers with WP-Optimize, WP-CLI or SQL, and fix autoload.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-admin-slow/"><img class="post-card-img" src="/assets/og/blog-wordpress-admin-slow.webp" alt="Why Is My WordPress Admin Dashboard So Slow? How to Find the Cause and Fix It" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Admin Dashboard So Slow? How to Find the Cause and Fix It</h3><p>WordPress admin slow but the site is fast? Find the cause with Query Monitor, then fix heavy plugins, Heartbeat, autoloaded data, cron jobs and weak hosting.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

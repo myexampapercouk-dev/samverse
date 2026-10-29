@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Login Not Working? How to Fix It Step by Step</title>
-  <meta name="description" content="Can't log in to WordPress? Fix login pages that keep refreshing, cookie errors, wrong site URLs, security lockouts and forgotten passwords, step by step.">
+  <title>WordPress Login Not Working? Fix Loops, Lockouts, Resets</title>
+  <meta name="description" content="WordPress login not working? Fix redirect loops, cookie errors, security lockouts and lost passwords step by step, from browser to wp-config.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-login-not-working-fix/">
-  <meta property="og:title" content="WordPress Login Not Working? How to Fix It Step by Step">
-  <meta property="og:description" content="Can't log in to WordPress? Fix login pages that keep refreshing, cookie errors, wrong site URLs, security lockouts and forgotten passwords, step by step.">
+  <meta property="og:title" content="WordPress Login Not Working? Fix Loops, Lockouts, Resets">
+  <meta property="og:description" content="WordPress login not working? Fix redirect loops, cookie errors, security lockouts and lost passwords step by step, from browser to wp-config.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-login-not-working-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-login-not-working-fix/#article",
       "headline": "WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords",
-      "description": "Can't log in to WordPress? Fix login pages that keep refreshing, cookie errors, wrong site URLs, security lockouts and forgotten passwords, step by step.",
+      "description": "WordPress login not working? Fix redirect loops, cookie errors, security lockouts and lost passwords step by step, from browser to wp-config.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-login-not-working-fix/",
       "image": "https://samverse.space/assets/og/blog-wordpress-login-not-working-fix.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords</h1>
-          <p class="post-dek">Can't log in to WordPress? Fix login pages that keep refreshing, cookie errors, wrong site URLs, security lockouts and forgotten passwords, step by step.</p>
+          <p class="post-dek">WordPress login not working? Fix redirect loops, cookie errors, security lockouts and lost passwords step by step, from browser to wp-config.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Login%20Not%20Working%3F%20How%20to%20Fix%20Login%20Loops%2C%20Lockouts%20and%20Lost%20Passwords%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-login-not-working-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,48 +153,52 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#first-match-the-symptom-to-the-likely-cause">First, match the symptom to the likely cause</a></li>
-              <li><a href="#step-1-rule-out-your-browser-and-cookies">Step 1: Rule out your browser and cookies</a></li>
-              <li><a href="#step-2-check-the-site-url-settings">Step 2: Check the site URL settings</a></li>
-              <li><a href="#step-3-security-plugin-and-firewall-lockouts">Step 3: Security plugin and firewall lockouts</a></li>
-              <li><a href="#step-4-make-sure-the-login-page-isn-t-cached">Step 4: Make sure the login page isn't cached</a></li>
-              <li><a href="#step-5-reset-a-forgotten-password-safely">Step 5: Reset a forgotten password safely</a></li>
-              <li><a href="#when-it-could-be-something-more-serious">When it could be something more serious</a></li>
-              <li><a href="#how-to-avoid-getting-locked-out-again">How to avoid getting locked out again</a></li>
+              <li><a href="#wordpress-login-not-working-match-the-symptom-to-the-cause">WordPress login not working: match the symptom to the cause</a></li>
+              <li><a href="#step-1-rule-out-the-browser">Step 1: rule out the browser</a></li>
+              <li><a href="#step-2-fix-login-loops-caused-by-the-site-url">Step 2: fix login loops caused by the site URL</a></li>
+              <li><a href="#step-3-get-past-a-security-plugin-lockout">Step 3: get past a security plugin lockout</a></li>
+              <li><a href="#step-4-reset-a-lost-password-when-the-email-never-arrives">Step 4: reset a lost password when the email never arrives</a></li>
+              <li><a href="#step-5-blank-screens-and-errors-after-you-log-in">Step 5: blank screens and errors after you log in</a></li>
+              <li><a href="#when-a-lockout-is-really-a-security-problem">When a lockout is really a security problem</a></li>
+              <li><a href="#prevent-the-next-lockout">Prevent the next lockout</a></li>
+              <li><a href="#when-to-call-for-help">When to call for help</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Match the symptom first: a silently reloading login page usually means cookies, a cached login page or mismatched site URL settings, while lockouts and 404 login pages point to a security plugin.</li>
-              <li>Without dashboard access, a developer can correct the site URLs in wp-config.php or phpMyAdmin, or temporarily rename a security or caching plugin's folder, then re-enable it once you are in.</li>
-              <li>Reset forgotten passwords by email where possible, use phpMyAdmin or WP-CLI carefully with a backup, and treat unexplained password or admin changes as a sign of a hack.</li>
+              <li>Most WordPress login failures come from four causes: browser cookies or cache, a wrong site URL, a security plugin lockout, or a password reset email that never arrives.</li>
+              <li>Work from the outside in: try a private window, then check the site URL settings, then rename the plugins folder, and only then edit the database.</li>
+              <li>Once you are back in, add two-factor authentication, a working email setup and an extra admin account so one failure can never lock the business out again.</li>
             </ul>
           </div>
-<p>You type your username and password, press Log In, and the login page simply reloads. Or WordPress insists the password is wrong when you're sure it isn't, or tells you you've been locked out. Being shut out of your own website is stressful, but login problems rarely mean anything has been lost. Work through the checks below in order, and take a backup before changing any files or the database.</p>
+<p>If your WordPress login is not working, the cause is almost always one of four things: browser cookies or cache, a wrong WordPress or site address, a security plugin that has locked you out, or a password reset email that never arrives. Start with a private browser window, then check the site address, then disable plugins by renaming their folder in your hosting file manager. Those three steps fix most cases in a few minutes without touching the database.</p>
+<p>This guide walks through each symptom in order, from the simplest check to the deeper fixes, so you can get back into wp-admin safely. If you would rather not touch files at all, ongoing <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers exactly this kind of problem.</p>
 
-<h2 id="first-match-the-symptom-to-the-likely-cause">First, match the symptom to the likely cause</h2>
+<h2 id="wordpress-login-not-working-match-the-symptom-to-the-cause">WordPress login not working: match the symptom to the cause</h2>
+<p>Before changing anything, note exactly what happens when you try to log in. The symptom points to the cause much faster than guessing.</p>
 <table>
-  <thead><tr><th>What happens</th><th>Most likely cause</th></tr></thead>
-  <tbody>
-    <tr><td>The login page reloads with no error message</td><td>Cookies, a cached login page or mismatched site URL settings</td></tr>
-    <tr><td>"Cookies are blocked or not supported by your browser"</td><td>Browser settings or extensions, or a cache or CDN interfering with cookies</td></tr>
-    <tr><td>"The password you entered is incorrect" or an unknown username</td><td>Wrong details, or the account was changed by someone else</td></tr>
-    <tr><td>"Too many failed attempts", a 403 page or an access denied message</td><td>A security plugin, firewall or host has blocked your IP address</td></tr>
-    <tr><td>The login page shows a 404 error</td><td>A security plugin has moved the login address</td></tr>
-    <tr><td>The browser says the page redirected too many times</td><td>A redirect loop; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a></td></tr>
-    <tr><td>A blank screen or critical error after logging in</td><td>A plugin or theme error; see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors explained</a></td></tr>
-  </tbody>
+<thead><tr><th>What you see</th><th>Most likely cause</th><th>First thing to try</th></tr></thead>
+<tbody>
+<tr><td>Login page reloads with no error (login loop)</td><td>Cookies, cache or a wrong site URL</td><td>Private window, then check WordPress Address and Site Address</td></tr>
+<tr><td>"Cookies are blocked or not supported"</td><td>Browser settings, caching of the login page, or URL mismatch</td><td>Clear cookies for the site, exclude wp-login.php from caching</td></tr>
+<tr><td>"Too many failed attempts" or IP blocked</td><td>Security or limit-login plugin</td><td>Wait for the lockout to expire or rename that plugin folder</td></tr>
+<tr><td>Password reset email never arrives</td><td>Site email not set up properly (no SMTP)</td><td>Check spam, then reset the password via hosting or phpMyAdmin</td></tr>
+<tr><td>Blank white screen or critical error after login</td><td>Plugin or theme PHP error</td><td>Rename the plugins folder, read the error log</td></tr>
+<tr><td>wp-admin redirects to the homepage or a 404</td><td>Custom login URL plugin or broken rewrite rules</td><td>Disable the login-hiding plugin, reset permalinks</td></tr>
+</tbody>
 </table>
 
-<h2 id="step-1-rule-out-your-browser-and-cookies">Step 1: Rule out your browser and cookies</h2>
-<p>WordPress keeps you logged in with cookies. If the browser refuses them, or holds on to old ones, the login appears to work and then sends you straight back.</p>
+<h2 id="step-1-rule-out-the-browser">Step 1: rule out the browser</h2>
+<p>Open the login page in a private or incognito window and try again. If that works, the problem is stored cookies or cached files in your normal browser. Clear cookies and cache for your domain only (not your whole browser history) and log in again.</p>
+<p>Also check:</p>
 <ul>
-  <li>Try a private or incognito window, a different browser, or your phone on mobile data</li>
-  <li>If that works, clear cookies and cached data for your site only, rather than wiping everything</li>
-  <li>Temporarily switch off privacy, ad-blocking or script-blocking extensions</li>
-  <li>Type the address exactly as the site uses it. Cookies are tied to the domain, so logging in at the www version of a site set up without www (or the reverse) can fail</li>
+<li>You are using the same version of the address every time: https and the right www or non-www form. Cookies set for one version don't apply to the other.</li>
+<li>A password manager hasn't saved an old password or autofilled the wrong username.</li>
+<li>Browser extensions that block cookies or scripts are paused for your own site.</li>
 </ul>
+<p>If a private window fails in the same way, the problem is on the site, so move to the next step.</p>
 
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
@@ -202,53 +206,65 @@
   <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20Login%20Not%20Working%3F%20How%20to%20Fix%20Login%20Loops%2C%20Lockouts%20and%20Lost%20Passwords%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="step-2-check-the-site-url-settings">Step 2: Check the site URL settings</h2>
-<p>WordPress stores two addresses in Settings → General: the WordPress Address and the Site Address. If they don't match how the site is actually reached, for example after a move to https or a migration, WordPress sets its login cookie for the wrong address and you bounce back to the login page.</p>
-<p>Without dashboard access, a developer can set them by adding two lines to wp-config.php, above the comment that says to stop editing:</p>
+<h2 id="step-2-fix-login-loops-caused-by-the-site-url">Step 2: fix login loops caused by the site URL</h2>
+<p>A login page that simply reloads is very often a site address mismatch: WordPress thinks it lives at http://example.com while you are visiting https://www.example.com, so the login cookie is set for the wrong address. This typically happens after installing SSL, moving hosts or changing the domain.</p>
+<p>If you can't reach Settings, you can force the correct address in wp-config.php, the main configuration file in your site's root folder. Add these two lines above the line that says "That's all, stop editing", using your real address:</p>
 <pre><code>define( 'WP_HOME', 'https://www.example.com' );
 define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
-<p>Use your real address, with or without www exactly as your site uses it. The alternative is editing the <code>siteurl</code> and <code>home</code> rows in the options table through phpMyAdmin; the table name starts with your site's prefix, which isn't always <code>wp_</code>. Keep a copy of the original file or values so you can undo the change.</p>
+<p>Log in, check that both addresses are correct under Settings, General, and then you can remove the lines or leave them in place. If the site was recently moved to HTTPS, read <a href="/blog/too-many-redirects-error-fix/">how to fix too many redirects</a> as well, because the same mismatch often causes redirect loops on the front end.</p>
+<p>Caching can cause loops too. A server cache, a CDN or a caching plugin should never cache wp-login.php or wp-admin. Most hosts exclude these by default, but a custom CDN rule can catch them. If you use Cloudflare or a similar service, purge its cache and check that no page rule caches everything.</p>
 
-<h2 id="step-3-security-plugin-and-firewall-lockouts">Step 3: Security plugin and firewall lockouts</h2>
-<p>Security tools are meant to block repeated failed logins, and sometimes they block the owner too.</p>
+<h2 id="step-3-get-past-a-security-plugin-lockout">Step 3: get past a security plugin lockout</h2>
+<p>Security plugins limit failed login attempts, which is good, but they can also lock out the owner after a few wrong passwords, or block an office IP address shared by many people. Most lockouts expire after a set time. If you can't wait:</p>
+<ol>
+<li>Log in to your hosting control panel and open the file manager (or connect by SFTP).</li>
+<li>Go to wp-content/plugins and rename the security plugin's folder, for example by adding "-off" to the end.</li>
+<li>Log in to WordPress normally. The plugin is now inactive.</li>
+<li>Rename the folder back, reactivate the plugin and add your own IP address to its allow list if it offers one.</li>
+</ol>
+<p>The same rename trick works for login-hiding plugins that move wp-admin to a custom address you have forgotten. If you are not sure which plugin is responsible, rename the whole plugins folder, log in, rename it back and then reactivate plugins one at a time. The method is described in more detail in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">troubleshooting WordPress plugin conflicts</a>.</p>
+
+<h2 id="step-4-reset-a-lost-password-when-the-email-never-arrives">Step 4: reset a lost password when the email never arrives</h2>
+<p>"Lost your password?" only works if your site can send email. Many WordPress sites send mail through the hosting server's basic PHP mail function, which often lands in spam or is rejected outright. Check spam first. If nothing arrives, you have three other ways to reset the password:</p>
 <ul>
-  <li><strong>Lockout after failed attempts:</strong> most lockouts expire after a set time. Trying from a different network, such as your phone's mobile data, confirms whether your IP address is the problem</li>
-  <li><strong>Custom login address forgotten:</strong> check your handover notes or the plugin's set-up emails. Failing that, rename the security plugin's folder inside wp-content/plugins using your host's File Manager or SFTP. That deactivates it and restores the normal login page</li>
-  <li><strong>Lost two-factor phone:</strong> use the backup codes you saved when setting it up. Without them, deactivating the plugin the same way lets you in, and you should set up two-factor again straight away</li>
-  <li><strong>Host or CDN firewall:</strong> if the login page itself won't load, your host or CDN dashboard can show and lift the block</li>
+<li><strong>Your hosting panel.</strong> Many Indian and international hosts, including Hostinger, offer a WordPress manager with a "change admin password" option.</li>
+<li><strong>phpMyAdmin.</strong> Open the wp_users table (the prefix may differ), edit your user, choose MD5 in the function column for user_pass, type a new password and save. WordPress upgrades the hash to a stronger one the next time you log in.</li>
+<li><strong>WP-CLI.</strong> If your host provides SSH access, the command wp user update with your username and a new password does the same job in one line.</li>
 </ul>
-<p>Whatever you disable, rename it back and re-enable it once you're in. For setting these protections up sensibly, see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
+<p>After you are back in, fix the underlying email problem by sending site mail through a proper SMTP service. <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">Email deliverability with SPF, DKIM and DMARC</a> explains why mail goes missing and how to stop it.</p>
 
-<h2 id="step-4-make-sure-the-login-page-isn-t-cached">Step 4: Make sure the login page isn't cached</h2>
-<p>The login page and the dashboard should never be cached. If a caching plugin, server cache or CDN rule stores a copy of wp-login.php, people get an old page with expired security tokens, and logins fail or loop. A "cache everything" rule at the CDN is a common culprit.</p>
+<h2 id="step-5-blank-screens-and-errors-after-you-log-in">Step 5: blank screens and errors after you log in</h2>
+<p>If the password is accepted but you then see a white screen or "There has been a critical error on this website", a plugin or theme is crashing in the admin area. WordPress usually emails a recovery mode link to the admin address; if that email doesn't arrive, rename the plugins folder as above. To see the actual error, turn on debug logging in wp-config.php and read wp-content/debug.log. Our guide to <a href="/blog/fix-wordpress-critical-error/">the WordPress critical error</a> covers this in depth, including memory limits and PHP version problems.</p>
+
+<h2 id="when-a-lockout-is-really-a-security-problem">When a lockout is really a security problem</h2>
+<p>Sometimes the login fails because someone else has been in. Warning signs include an admin account you don't recognise, your own account demoted to a lower role, your email address changed, or the site redirecting visitors to spam. Don't just reset your password in that case. Change all admin passwords, remove unknown users, check the site files and update everything, then follow <a href="/blog/signs-wordpress-site-hacked/">how to know if your WordPress site has been hacked</a>. If the site has clearly been compromised, <a href="/wordpress-malware-removal/">hacked site repair</a> is the safer route than guessing.</p>
+
+<h2 id="prevent-the-next-lockout">Prevent the next lockout</h2>
+<p>Once you are back in, a few small changes stop this happening again:</p>
 <ul>
-  <li>Purge the caching plugin, the hosting cache and any CDN cache</li>
-  <li>Check that wp-login.php and the /wp-admin/ area are excluded from caching, and that logged-in users bypass the cache</li>
-  <li>If you can't reach the plugin settings, rename the caching plugin's folder temporarily, as above</li>
-</ul>
-
-<h2 id="step-5-reset-a-forgotten-password-safely">Step 5: Reset a forgotten password safely</h2>
-<p>The simplest route is the "Lost your password?" link on the login page, which emails a reset link. If the email never arrives, check spam, and check whether the account uses an old address, such as a former employee's or a previous developer's. Many sites can't send email reliably until SMTP is set up; see <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a>.</p>
-<h3>Through phpMyAdmin</h3>
-<p>In your hosting panel, open phpMyAdmin, export a backup of the database, then open the users table (again with your site's prefix). Edit your account's row, choose MD5 from the function dropdown beside <code>user_pass</code>, type a new password and save. WordPress accepts this older format for your next login and then replaces it with its own stronger hash. Don't touch any other fields.</p>
-<h3>Through WP-CLI</h3>
-<p>If your host offers SSH access with WP-CLI, these commands list administrator accounts and send a fresh reset email:</p>
-<pre><code>wp user list --role=administrator
-wp user reset-password &lt;username&gt;</code></pre>
-<p>Sending a reset email is safer than typing a new password on the command line, where it can stay in the server's history. If you're unsure about either method, ask your host or developer rather than guessing.</p>
-
-<h2 id="when-it-could-be-something-more-serious">When it could be something more serious</h2>
-<p>Be suspicious if your password or admin email changed without anyone on your team doing it, if there are administrator accounts you don't recognise, or if logging in sends you to an unfamiliar site. Those are signs of a compromised site. Change every password (hosting, WordPress, email and SFTP), and get a proper cleanup rather than just regaining access; see <a href="/wordpress-malware-removal/">hacked site repair</a>.</p>
-
-<h2 id="how-to-avoid-getting-locked-out-again">How to avoid getting locked out again</h2>
-<ul>
-  <li>Keep the admin email address current, using a mailbox someone checks</li>
-  <li>Use a password manager, and store two-factor backup codes and any custom login address with your site records</li>
-  <li>Give a trusted person a second administrator account of their own</li>
-  <li>Set up SMTP so reset emails arrive</li>
+<li>Create a second administrator account with a different email address, kept for emergencies.</li>
+<li>Store passwords in a password manager and turn on two-factor authentication. <a href="/blog/secure-wordpress-login/">How to secure your WordPress login</a> explains the options.</li>
+<li>Set up SMTP so password reset emails actually arrive.</li>
+<li>Keep the hosting control panel login safe and separate; it is your back door when WordPress fails.</li>
+<li>Take regular backups so you can restore a working version if an update breaks the admin area.</li>
 </ul>
 
-<p>Still locked out, or would you rather not touch wp-config.php and the database yourself? I sort out login problems, lockouts and access recovery as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+<h2 id="when-to-call-for-help">When to call for help</h2>
+<p>If you have tried a private window, checked the site URL and disabled plugins and still can't log in, the problem is likely in the database, server configuration or a deeper conflict. At that point an hour with someone who works on WordPress daily is usually faster and safer than trial and error on a live business site, especially if it is your main source of enquiries. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you prefer someone in the same city.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>Why is my WordPress login not working even with the right password?</h3>
+<p>The usual causes are cookies that the browser can't save, a site address mismatch after an SSL or domain change, cached login pages, or a security plugin that has blocked your IP. Try a private window first, then check the WordPress Address and Site Address settings.</p>
+<h3>How do I fix a WordPress login redirect loop?</h3>
+<p>Clear cookies for the site, make sure you always use the same https and www version of the address, set WP_HOME and WP_SITEURL in wp-config.php if needed, exclude the login page from any cache, and disable plugins by renaming their folder to find a conflict.</p>
+<h3>How can I reset my WordPress password without email?</h3>
+<p>Use your hosting panel's WordPress tools, edit the user in phpMyAdmin with an MD5 password, or use WP-CLI over SSH. Afterwards, set up SMTP so future reset emails are delivered.</p>
+<h3>I am locked out by a security plugin. What do I do?</h3>
+<p>Wait for the lockout period to pass, or rename that plugin's folder in wp-content/plugins using your hosting file manager. Log in, rename it back, reactivate it and add your IP to its allow list.</p>
+<h3>Can a hacked site stop me logging in?</h3>
+<p>Yes. Attackers sometimes change the admin email, delete or demote accounts, or add their own. If you see unknown users or strange redirects, treat it as a hack: change every password, clean the site and check how they got in.</p>
+
+<p>Still stuck outside your own dashboard? A quick login and access fix, along with the email and security settings that prevent it happening again, is part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -284,14 +300,16 @@ wp user reset-password &lt;username&gt;</code></pre>
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#first-match-the-symptom-to-the-likely-cause">First, match the symptom to the likely cause</a></li>
-              <li><a href="#step-1-rule-out-your-browser-and-cookies">Step 1: Rule out your browser and cookies</a></li>
-              <li><a href="#step-2-check-the-site-url-settings">Step 2: Check the site URL settings</a></li>
-              <li><a href="#step-3-security-plugin-and-firewall-lockouts">Step 3: Security plugin and firewall lockouts</a></li>
-              <li><a href="#step-4-make-sure-the-login-page-isn-t-cached">Step 4: Make sure the login page isn't cached</a></li>
-              <li><a href="#step-5-reset-a-forgotten-password-safely">Step 5: Reset a forgotten password safely</a></li>
-              <li><a href="#when-it-could-be-something-more-serious">When it could be something more serious</a></li>
-              <li><a href="#how-to-avoid-getting-locked-out-again">How to avoid getting locked out again</a></li>
+              <li><a href="#wordpress-login-not-working-match-the-symptom-to-the-cause">WordPress login not working: match the symptom to the cause</a></li>
+              <li><a href="#step-1-rule-out-the-browser">Step 1: rule out the browser</a></li>
+              <li><a href="#step-2-fix-login-loops-caused-by-the-site-url">Step 2: fix login loops caused by the site URL</a></li>
+              <li><a href="#step-3-get-past-a-security-plugin-lockout">Step 3: get past a security plugin lockout</a></li>
+              <li><a href="#step-4-reset-a-lost-password-when-the-email-never-arrives">Step 4: reset a lost password when the email never arrives</a></li>
+              <li><a href="#step-5-blank-screens-and-errors-after-you-log-in">Step 5: blank screens and errors after you log in</a></li>
+              <li><a href="#when-a-lockout-is-really-a-security-problem">When a lockout is really a security problem</a></li>
+              <li><a href="#prevent-the-next-lockout">Prevent the next lockout</a></li>
+              <li><a href="#when-to-call-for-help">When to call for help</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -319,8 +337,8 @@ wp user reset-password &lt;username&gt;</code></pre>
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/common-wordpress-errors-fixes/"><img class="post-card-img" src="/assets/og/blog-common-wordpress-errors-fixes.webp" alt="Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</h3><p>Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/fix-wordpress-critical-error/"><img class="post-card-img" src="/assets/og/blog-fix-wordpress-critical-error.webp" alt="&quot;There Has Been a Critical Error on This Website&quot;: How to Fix It in WordPress, Step by Step" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>&quot;There Has Been a Critical Error on This Website&quot;: How to Fix It in WordPress, Step by Step</h3><p>Fix &quot;There has been a critical error on this website&quot;: use the recovery mode email, read debug.log, disable plugins via File Manager and check PHP.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/wordpress-403-forbidden-error-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-403-forbidden-error-fix.webp" alt="403 Forbidden on WordPress or wp-admin: Causes and a Safe Fix Order" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>403 Forbidden on WordPress or wp-admin: Causes and a Safe Fix Order</h3><p>Seeing &quot;403 Forbidden&quot; on your WordPress site or wp-admin? Find out who is blocking you: permissions, .htaccess, a security plugin, firewall, your CDN or host.</p><span class="post-card-meta">11 October 2026 · 6 min read</span></a>
-          <a class="post-card" href="/blog/too-many-redirects-error-fix/"><img class="post-card-img" src="/assets/og/blog-too-many-redirects-error-fix.webp" alt="ERR_TOO_MANY_REDIRECTS on WordPress: Causes and How to Fix It" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>ERR_TOO_MANY_REDIRECTS on WordPress: Causes and How to Fix It</h3><p>Site redirected you too many times? Fix redirect loops in WordPress step by step: site URL settings, Cloudflare SSL mode, .htaccess, plugins and cookies.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
         </div>
       </div>
     </section>
