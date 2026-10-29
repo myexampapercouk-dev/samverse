@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>403 Forbidden Error on WordPress: Causes and How to Fix It</title>
-  <meta name="description" content="Seeing &quot;403 Forbidden&quot; on your WordPress site or wp-admin? Find out who is blocking you: permissions, .htaccess, a security plugin, firewall, your CDN or host.">
+  <title>WordPress 403 Forbidden Error: How to Fix It Safely</title>
+  <meta name="description" content="Fix the WordPress 403 forbidden error on your site or wp-admin: check security plugins, .htaccess, file permissions, firewall rules and hosting blocks.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-403-forbidden-error-fix/">
-  <meta property="og:title" content="403 Forbidden Error on WordPress: Causes and How to Fix It">
-  <meta property="og:description" content="Seeing &quot;403 Forbidden&quot; on your WordPress site or wp-admin? Find out who is blocking you: permissions, .htaccess, a security plugin, firewall, your CDN or host.">
+  <meta property="og:title" content="WordPress 403 Forbidden Error: How to Fix It Safely">
+  <meta property="og:description" content="Fix the WordPress 403 forbidden error on your site or wp-admin: check security plugins, .htaccess, file permissions, firewall rules and hosting blocks.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-403-forbidden-error-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-403-forbidden-error-fix/#article",
       "headline": "403 Forbidden on WordPress or wp-admin: Causes and a Safe Fix Order",
-      "description": "Seeing \"403 Forbidden\" on your WordPress site or wp-admin? Find out who is blocking you: permissions, .htaccess, a security plugin, firewall, your CDN or host.",
+      "description": "Fix the WordPress 403 forbidden error on your site or wp-admin: check security plugins, .htaccess, file permissions, firewall rules and hosting blocks.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-403-forbidden-error-fix/",
       "image": "https://samverse.space/assets/og/blog-wordpress-403-forbidden-error-fix.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>403 Forbidden on WordPress or wp-admin: Causes and a Safe Fix Order</h1>
-          <p class="post-dek">Seeing &quot;403 Forbidden&quot; on your WordPress site or wp-admin? Find out who is blocking you: permissions, .htaccess, a security plugin, firewall, your CDN or host.</p>
+          <p class="post-dek">Fix the WordPress 403 forbidden error on your site or wp-admin: check security plugins, .htaccess, file permissions, firewall rules and hosting blocks.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=403%20Forbidden%20on%20WordPress%20or%20wp-admin%3A%20Causes%20and%20a%20Safe%20Fix%20Order%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-403-forbidden-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,46 +153,47 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#what-the-403-page-tells-you">What the 403 page tells you</a></li>
-              <li><a href="#first-checks-is-it-you-or-everyone">First checks: is it you, or everyone?</a></li>
-              <li><a href="#security-plugins-and-ip-blocks">Security plugins and IP blocks</a></li>
-              <li><a href="#bad-or-overly-strict-htaccess-rules">Bad or overly strict .htaccess rules</a></li>
-              <li><a href="#file-and-folder-permissions">File and folder permissions</a></li>
-              <li><a href="#firewalls-modsecurity-and-saving-content">Firewalls, ModSecurity and saving content</a></li>
-              <li><a href="#cdn-rules-and-hotlink-protection">CDN rules and hotlink protection</a></li>
-              <li><a href="#when-to-ask-your-host">When to ask your host</a></li>
+              <li><a href="#where-the-403-appears-tells-you-a-lot">Where the 403 appears tells you a lot</a></li>
+              <li><a href="#step-1-confirm-it-is-really-a-403-and-for-whom">Step 1: confirm it is really a 403, and for whom</a></li>
+              <li><a href="#step-2-check-security-plugins-and-login-protection">Step 2: check security plugins and login protection</a></li>
+              <li><a href="#step-3-check-cloudflare-a-cdn-or-your-host-s-firewall">Step 3: check Cloudflare, a CDN or your host's firewall</a></li>
+              <li><a href="#step-4-regenerate-htaccess">Step 4: regenerate .htaccess</a></li>
+              <li><a href="#step-5-correct-file-and-folder-permissions">Step 5: correct file and folder permissions</a></li>
+              <li><a href="#step-6-check-for-a-missing-index-file-and-directory-browsing">Step 6: check for a missing index file and directory browsing</a></li>
+              <li><a href="#step-7-ask-the-host">Step 7: ask the host</a></li>
+              <li><a href="#403-errors-in-woocommerce-and-elementor">403 errors in WooCommerce and Elementor</a></li>
+              <li><a href="#what-not-to-do-while-fixing-a-403">What not to do while fixing a 403</a></li>
+              <li><a href="#how-long-does-a-fix-take">How long does a fix take?</a></li>
+              <li><a href="#preventing-403-errors">Preventing 403 errors</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Work out who is refusing before changing anything: the look of the error page, and whether it also happens on mobile data, point to the server, a security plugin, the host's firewall or a CDN.</li>
-              <li>Test .htaccess by renaming it and re-saving permalinks, keep folders at 755 and files at 644, make sure index.php exists and never use 777.</li>
-              <li>A 403 only when saving or submitting usually means a firewall rule such as ModSecurity; ask the host to allowlist that rule and send them the URL, time, your IP and a screenshot.</li>
+              <li>A 403 Forbidden error means the server understood the request but refuses it, usually because of a security rule, permissions or a blocked IP.</li>
+              <li>Work in a safe order: note where the 403 appears, check security plugins and firewalls, then .htaccess, then file permissions, then the host.</li>
+              <li>If only wp-admin or one action is blocked, a firewall or security rule is the most likely cause; if the whole site is blocked, check .htaccess and permissions first.</li>
             </ul>
           </div>
-<p>A "403 Forbidden" page means the server understood your request and refused it. Nothing is necessarily broken or deleted. Something between the visitor and WordPress has decided the request isn't allowed: a file permission, an .htaccess rule, a security plugin, the host's firewall or your CDN. So first work out who is refusing, rather than changing settings at random.</p>
+<p>A WordPress 403 forbidden error means the server received the request but refuses to serve it. On WordPress it is usually caused by a security plugin or firewall rule, a broken .htaccess file, wrong file permissions, or a block applied by your host or CDN to your IP address. The safe fix order is: note exactly where the 403 appears, check security plugins and firewalls, regenerate .htaccess, correct file permissions, and then ask the host to check their logs.</p>
+<p>Below is how to narrow down the cause quickly without making the site less secure. If you would rather hand it over, a fix like this can be handled through my <a href="/wordpress-maintenance/">WordPress maintenance and support</a> plans.</p>
 
-<h2 id="what-the-403-page-tells-you">What the 403 page tells you</h2>
-<p>The look of the error page is your first clue, so take a screenshot before changing anything.</p>
+<h2 id="where-the-403-appears-tells-you-a-lot">Where the 403 appears tells you a lot</h2>
 <table>
-<thead><tr><th>What you see</th><th>Who is probably blocking</th></tr></thead>
-<tbody>
-<tr><td>A plain white page: "Forbidden. You don't have permission to access this resource"</td><td>The web server itself: permissions, .htaccess rules, a missing index file or a server firewall</td></tr>
-<tr><td>A page branded by your security plugin, or a message such as "Access denied" or "Your IP has been blocked"</td><td>A WordPress security plugin</td></tr>
-<tr><td>A page branded by your CDN, such as "Sorry, you have been blocked" with a reference ID</td><td>A CDN or cloud firewall rule</td></tr>
-<tr><td>A host-branded page mentioning security, a firewall or ModSecurity</td><td>The host's web application firewall</td></tr>
-</tbody>
+  <thead><tr><th>Where you see 403</th><th>Most likely cause</th><th>Start with</th></tr></thead>
+  <tbody>
+    <tr><td>Whole site, all visitors</td><td>.htaccess rule, folder permissions, host suspension</td><td>.htaccess and permissions</td></tr>
+    <tr><td>Only wp-admin or wp-login.php</td><td>Security plugin, login protection, firewall</td><td>Security plugin and firewall</td></tr>
+    <tr><td>Only for you or your office</td><td>Your IP blocked by a plugin, host or CDN</td><td>Try mobile data; check block lists</td></tr>
+    <tr><td>When saving a post or using Elementor</td><td>ModSecurity or WAF rule triggered by the content</td><td>Host or firewall logs</td></tr>
+    <tr><td>When uploading files</td><td>Permissions on the uploads folder or upload rules</td><td>wp-content/uploads permissions</td></tr>
+    <tr><td>One plugin's page or action</td><td>That plugin's capability check or a firewall rule</td><td>User role and plugin settings</td></tr>
+  </tbody>
 </table>
-<p>Then note where it happens: the whole site, only wp-admin and the login page, only when saving or submitting, or only on images. Each points somewhere different.</p>
 
-<h2 id="first-checks-is-it-you-or-everyone">First checks: is it you, or everyone?</h2>
-<ol>
-<li>Open the address on your phone using mobile data, not office Wi-Fi. If it works there, your IP address has probably been blocked, not the site</li>
-<li>Try a private window to rule out old cookies and browser extensions</li>
-<li>Think about what changed: a new security plugin, a migration, an .htaccess edit, a CDN setting or a permissions "fix" from a tutorial</li>
-</ol>
-<p>Before editing anything, take a backup, including a copy of .htaccess.</p>
+<h2 id="step-1-confirm-it-is-really-a-403-and-for-whom">Step 1: confirm it is really a 403, and for whom</h2>
+<p>Open the page in a private window, then on mobile data with Wi-Fi switched off. If it loads on mobile data but not at the office, your IP is probably blocked. Note the exact URL and the time, since your host will need both to find the log entry. Also check whether the error page looks like your host's, Cloudflare's or a security plugin's; each one points to a different place to fix it.</p>
 
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
@@ -200,57 +201,77 @@
   <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22403%20Forbidden%20on%20WordPress%20or%20wp-admin%3A%20Causes%20and%20a%20Safe%20Fix%20Order%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="security-plugins-and-ip-blocks">Security plugins and IP blocks</h2>
-<p>Security plugins block IP addresses after repeated failed logins or patterns that look like attacks. Because many connections share or rotate IP addresses, you can inherit someone else's block, or one person's wrong passwords can lock out a whole office.</p>
+<h2 id="step-2-check-security-plugins-and-login-protection">Step 2: check security plugins and login protection</h2>
+<p>Security plugins block IPs after failed logins, limit access to wp-admin by country or IP, and add firewall rules. If wp-admin returns 403:</p>
+<ol>
+  <li>If you can get into the dashboard from another connection, check the plugin's block list and whitelist your IP.</li>
+  <li>If you cannot log in anywhere, rename the security plugin's folder in wp-content/plugins using SFTP or the file manager. This deactivates it.</li>
+  <li>Try logging in again. If it works, reactivate the plugin and fix its settings rather than leaving it off.</li>
+</ol>
+<p>Some plugins also write rules into .htaccess, which stay even after the plugin is deactivated. That is covered in the next step. If logging in fails for other reasons, <a href="/blog/wordpress-login-not-working-fix/">WordPress login not working</a> covers the other common causes, and <a href="/blog/secure-wordpress-login/">securing your WordPress login</a> shows how to protect it without locking yourself out.</p>
+
+<h2 id="step-3-check-cloudflare-a-cdn-or-your-host-s-firewall">Step 3: check Cloudflare, a CDN or your host's firewall</h2>
+<p>If your site uses Cloudflare or a hosting firewall, the 403 may come from there before WordPress even loads. Look at the security events or firewall log for your IP and the time of the error. Rules that block certain countries, bot-fight settings or a strict WAF rule set can catch real users, including you. Adjust or add an exception for the specific rule rather than switching protection off. <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare for WordPress</a> and <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> go into this.</p>
+<p>On many shared hosts, ModSecurity rules block requests that look like attacks. Saving a post that contains code samples, or using a page builder that sends large requests, can trigger them. Your host can see which rule fired and whitelist it for your site.</p>
+
+<h2 id="step-4-regenerate-htaccess">Step 4: regenerate .htaccess</h2>
+<p>A corrupted or overly strict .htaccess file is a common cause of a site-wide 403 on Apache and LiteSpeed servers.</p>
+<ol>
+  <li>Download a copy of .htaccess from the site root as a backup.</li>
+  <li>Rename it to .htaccess-old on the server.</li>
+  <li>Load the site. If the 403 is gone, the old file was the cause.</li>
+  <li>Log in, go to Settings, Permalinks and click Save to create a fresh default file.</li>
+  <li>Add back only the rules you need, such as caching or redirects, one at a time.</li>
+</ol>
+<p>Look out for "deny from all" lines or rules added by malware. If the file contains rules you do not recognise, or it keeps changing back, the site may be compromised; see <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site has been hacked</a>.</p>
+
+<h2 id="step-5-correct-file-and-folder-permissions">Step 5: correct file and folder permissions</h2>
+<p>The web server needs permission to read your files. Typical safe values are 755 for folders and 644 for files, with wp-config.php often stricter. A folder set to 700 or a file set to 600, or files owned by the wrong user after a migration, can produce 403s. Do not use 777: it creates a security risk without fixing ownership. <a href="/blog/wordpress-file-permissions/">WordPress file permissions explained</a> has the details, and your host can reset ownership if a migration left it wrong.</p>
+
+<h2 id="step-6-check-for-a-missing-index-file-and-directory-browsing">Step 6: check for a missing index file and directory browsing</h2>
+<p>If the 403 appears on a folder URL, the server may be refusing to list a directory that has no index file. That is normal and safe for folders like wp-content/uploads. If it happens on your home page, the index.php file in the root may be missing or renamed, sometimes after a failed update or a cleanup by a security scan.</p>
+
+<h2 id="step-7-ask-the-host">Step 7: ask the host</h2>
+<p>If none of the above helps, contact your host with the URL, the time, your IP address and what you have already tried. They can check the server error log and firewall logs, which show the exact rule or reason. Also ask whether the account has been suspended or restricted, for example for resource use or malware. <a href="/blog/hosting-suspended-malware/">Hosting suspended for malware</a> explains what to do if that is the reason.</p>
+
+<h2 id="403-errors-in-woocommerce-and-elementor">403 errors in WooCommerce and Elementor</h2>
+<p>Two situations come up often. In WooCommerce, 403s on checkout or the admin orders screen are often a firewall or caching rule blocking AJAX requests to admin-ajax.php or the REST API. In Elementor, a 403 when saving or loading the editor usually means ModSecurity has blocked the request. In both cases, the host's or CDN's logs show which rule to relax for that path. <a href="/blog/elementor-not-loading-fix/">Elementor stuck on loading</a> covers the editor side.</p>
+
+<h2 id="what-not-to-do-while-fixing-a-403">What not to do while fixing a 403</h2>
 <ul>
-<li>Most lockouts expire on their own after the time set in the plugin</li>
-<li>If you can log in from another network, allowlist your office IP and check the plugin's block log for the reason</li>
-<li>If you can't log in at all, renaming the plugin's folder in wp-content/plugins deactivates it; the <a href="/blog/wordpress-login-not-working-fix/">login troubleshooting guide</a> covers this step by step</li>
+  <li><strong>Do not delete the security plugin and forget it.</strong> Rename the folder to test, then reactivate and configure it properly.</li>
+  <li><strong>Do not switch off the firewall completely.</strong> Find the specific rule and add a narrow exception.</li>
+  <li><strong>Do not set everything to 777.</strong> It opens the site to tampering and usually does not fix an ownership problem anyway.</li>
+  <li><strong>Do not edit .htaccess without a backup.</strong> One wrong line can turn a 403 into a 500 error; see <a href="/blog/wordpress-500-internal-server-error-fix/">fixing the WordPress 500 internal server error</a> if that happens.</li>
+  <li><strong>Do not ignore a 403 that only visitors see.</strong> If customers in one region or on one network are blocked, you may be losing enquiries without knowing.</li>
 </ul>
-<p>Hosts also run server firewalls that can block an IP after repeated failed logins to email, FTP or the control panel, often triggered by an old email password saved on someone's phone. Only the host can lift that kind of block.</p>
 
-<h2 id="bad-or-overly-strict-htaccess-rules">Bad or overly strict .htaccess rules</h2>
-<p>On Apache and LiteSpeed servers, .htaccess files can allow or deny access by IP address, folder or file type. Common causes of a 403:</p>
+<h2 id="how-long-does-a-fix-take">How long does a fix take?</h2>
+<p>A blocked IP or a security plugin rule can often be cleared in minutes once you know where to look. A .htaccess or permissions issue is usually quick too. The slow cases are firewall rules on shared hosting, where you need the host to look up the log, and sites where the 403 is a side effect of malware. Keeping a record of the URL, time and IP from step 1 shortens every conversation with support.</p>
+
+<h2 id="preventing-403-errors">Preventing 403 errors</h2>
 <ul>
-<li>A rule limiting wp-admin to one IP address, which stops working when your provider gives you a new one</li>
-<li>"Deny from all" or "Require all denied" lines placed in the wrong folder by a plugin or tutorial</li>
-<li>Extra .htaccess files in wp-admin, wp-includes or wp-content/uploads. Blocking PHP in uploads is good; blocking every file there breaks your images</li>
-<li>Rules injected by malware</li>
+  <li>Whitelist your office IP in security plugins and your CDN.</li>
+  <li>Keep one security plugin, not two that write competing rules.</li>
+  <li>Back up .htaccess before installing plugins that change it.</li>
+  <li>After migrations, check ownership and permissions straight away.</li>
+  <li>Test logins and checkout after changing firewall settings.</li>
 </ul>
-<p>To test, rename the main .htaccess to .htaccess-old and reload. If the 403 disappears, re-save Settings → Permalinks to generate a fresh WordPress section, then copy back only the rules you still need. The standard rules are shown in <a href="/blog/wordpress-pages-404-permalinks-fix/">the guide to pages showing 404</a>. If an .htaccess edit produces a 500 error instead, see <a href="/blog/wordpress-500-internal-server-error-fix/">fixing a 500 Internal Server Error</a>. Nginx servers ignore .htaccess, so there your host needs to check the server configuration.</p>
+<p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> balances protection with access, so legitimate users are not blocked.</p>
 
-<h2 id="file-and-folder-permissions">File and folder permissions</h2>
-<p>The server won't serve files it isn't allowed to read. Wrong permissions or ownership are common after a migration, a manual upload or a malware clean-up.</p>
-<ul>
-<li>Folders are usually 755 and files 644, with wp-config.php stricter; follow your host's recommendations</li>
-<li>Check the main site folder itself. If it can't be read, the whole site returns 403</li>
-<li>Make sure index.php exists in the main folder. With no index file and directory listing switched off, which is the safe default, the homepage returns 403</li>
-<li>Never use 777. It's a security risk, and some servers refuse to run files with permissions that open</li>
-</ul>
-<p>Many hosting panels can reset permissions in one go, while ownership problems need the host. See <a href="/blog/wordpress-file-permissions/">WordPress file permissions explained</a>. Some hosts also lock files they've flagged as infected, which shows up as a 403; their notification email usually says so.</p>
+<h2 id="faqs">FAQs</h2>
+<h3>What causes a WordPress 403 forbidden error?</h3>
+<p>Most often a security plugin or firewall rule, a broken or strict .htaccess file, wrong file permissions or ownership, or your IP being blocked by the host or CDN.</p>
+<h3>How do I fix 403 forbidden on wp-admin?</h3>
+<p>Try another connection to check for an IP block, deactivate the security plugin by renaming its folder, check Cloudflare or host firewall logs, then regenerate .htaccess if needed.</p>
+<h3>Can a 403 error mean my site is hacked?</h3>
+<p>Sometimes. Malware can add rules to .htaccess or change permissions. If you find unfamiliar rules or the problem keeps returning, scan and clean the site.</p>
+<h3>Why do I get 403 only when saving in Elementor?</h3>
+<p>Usually ModSecurity or a firewall rule is blocking the save request. Ask your host to check which rule fired and whitelist it for your site.</p>
+<h3>Is it safe to set permissions to 777 to fix a 403?</h3>
+<p>No. It lets anyone on the server write to those files. Use 755 for folders and 644 for files, and fix ownership instead.</p>
 
-<h2 id="firewalls-modsecurity-and-saving-content">Firewalls, ModSecurity and saving content</h2>
-<p>If the site loads but you get a 403 when you click Update, save an Elementor page or submit a form, a web application firewall has probably mistaken your content for an attack. Host firewalls such as ModSecurity inspect each request, and code snippets, script tags or certain phrases in a post can match one of their rules.</p>
-<ul>
-<li>Note the exact time, page and action, and ask your host to check the firewall log for that request</li>
-<li>Ask them to allowlist that specific rule for that address, rather than switching ModSecurity off for the whole site</li>
-<li>If your panel lets you turn ModSecurity off, do so only as a brief test</li>
-</ul>
-<p>Security plugin firewalls can do the same, as can blocks on the WordPress REST API, which the block editor needs in order to save. For how the layers fit together, see <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a>.</p>
-
-<h2 id="cdn-rules-and-hotlink-protection">CDN rules and hotlink protection</h2>
-<p>If you use a CDN or cloud firewall, search its security events log for the reference ID shown on the block page. Look for:</p>
-<ul>
-<li>Country blocks or challenges that catch real customers, including travellers and VPN users</li>
-<li>Rules that only allow certain IP addresses into wp-admin or wp-login.php</li>
-<li>Bot protection or rate limiting tight enough to block payment gateway callbacks or your uptime monitor</li>
-</ul>
-<p>Hotlink protection stops other websites displaying your images, but set up badly it blocks your own. If images return a 403 after a domain change, a move to https or adding www, check that every version of your domain is on the allowed list.</p>
-
-<h2 id="when-to-ask-your-host">When to ask your host</h2>
-<p>Contact support if the 403 covers the whole site while .htaccess and permissions look right, if it only happens when saving or submitting, if your IP is blocked at server level, if the server runs Nginx or if file ownership needs fixing. Send the exact URL, the date and time, your public IP address (search "what is my IP"), a screenshot of the error page and what you've already tried, so they can find the matching log entry quickly.</p>
-
-<p>Rather not edit server files or dig through firewall logs yourself? I can track down what's blocking your site and fix it without weakening its security. See <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
+<p>Locked out or seeing 403 errors you cannot trace? You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -286,14 +307,19 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#what-the-403-page-tells-you">What the 403 page tells you</a></li>
-              <li><a href="#first-checks-is-it-you-or-everyone">First checks: is it you, or everyone?</a></li>
-              <li><a href="#security-plugins-and-ip-blocks">Security plugins and IP blocks</a></li>
-              <li><a href="#bad-or-overly-strict-htaccess-rules">Bad or overly strict .htaccess rules</a></li>
-              <li><a href="#file-and-folder-permissions">File and folder permissions</a></li>
-              <li><a href="#firewalls-modsecurity-and-saving-content">Firewalls, ModSecurity and saving content</a></li>
-              <li><a href="#cdn-rules-and-hotlink-protection">CDN rules and hotlink protection</a></li>
-              <li><a href="#when-to-ask-your-host">When to ask your host</a></li>
+              <li><a href="#where-the-403-appears-tells-you-a-lot">Where the 403 appears tells you a lot</a></li>
+              <li><a href="#step-1-confirm-it-is-really-a-403-and-for-whom">Step 1: confirm it is really a 403, and for whom</a></li>
+              <li><a href="#step-2-check-security-plugins-and-login-protection">Step 2: check security plugins and login protection</a></li>
+              <li><a href="#step-3-check-cloudflare-a-cdn-or-your-host-s-firewall">Step 3: check Cloudflare, a CDN or your host's firewall</a></li>
+              <li><a href="#step-4-regenerate-htaccess">Step 4: regenerate .htaccess</a></li>
+              <li><a href="#step-5-correct-file-and-folder-permissions">Step 5: correct file and folder permissions</a></li>
+              <li><a href="#step-6-check-for-a-missing-index-file-and-directory-browsing">Step 6: check for a missing index file and directory browsing</a></li>
+              <li><a href="#step-7-ask-the-host">Step 7: ask the host</a></li>
+              <li><a href="#403-errors-in-woocommerce-and-elementor">403 errors in WooCommerce and Elementor</a></li>
+              <li><a href="#what-not-to-do-while-fixing-a-403">What not to do while fixing a 403</a></li>
+              <li><a href="#how-long-does-a-fix-take">How long does a fix take?</a></li>
+              <li><a href="#preventing-403-errors">Preventing 403 errors</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">

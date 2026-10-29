@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shortcodes vs Blocks vs Page-Builder Widgets in WordPress</title>
-  <meta name="description" content="What WordPress shortcodes, Gutenberg blocks and page-builder widgets are, why stray [brackets] appear after removing a plugin, and how to migrate to blocks.">
+  <title>WordPress Shortcodes vs Blocks: Which Should You Use?</title>
+  <meta name="description" content="WordPress shortcodes vs blocks vs page-builder widgets: how each works, when each makes sense, and how to move a site off old shortcodes without breakage.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-shortcodes-vs-blocks/">
-  <meta property="og:title" content="Shortcodes vs Blocks vs Page-Builder Widgets in WordPress">
-  <meta property="og:description" content="What WordPress shortcodes, Gutenberg blocks and page-builder widgets are, why stray [brackets] appear after removing a plugin, and how to migrate to blocks.">
+  <meta property="og:title" content="WordPress Shortcodes vs Blocks: Which Should You Use?">
+  <meta property="og:description" content="WordPress shortcodes vs blocks vs page-builder widgets: how each works, when each makes sense, and how to move a site off old shortcodes without breakage.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-shortcodes-vs-blocks.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-shortcodes-vs-blocks/#article",
       "headline": "Shortcodes vs Blocks vs Page-Builder Widgets in WordPress",
-      "description": "What WordPress shortcodes, Gutenberg blocks and page-builder widgets are, why stray [brackets] appear after removing a plugin, and how to migrate to blocks.",
+      "description": "WordPress shortcodes vs blocks vs page-builder widgets: how each works, when each makes sense, and how to move a site off old shortcodes without breakage.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-01",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-shortcodes-vs-blocks/",
       "image": "https://samverse.space/assets/og/blog-wordpress-shortcodes-vs-blocks.png",
       "articleSection": "Guides",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/planning/">Planning &amp; costs</a></nav>
           <a class="post-cat" href="/blog/topic/planning/">Guides</a>
           <h1>Shortcodes vs Blocks vs Page-Builder Widgets in WordPress</h1>
-          <p class="post-dek">What WordPress shortcodes, Gutenberg blocks and page-builder widgets are, why stray [brackets] appear after removing a plugin, and how to migrate to blocks.</p>
+          <p class="post-dek">WordPress shortcodes vs blocks vs page-builder widgets: how each works, when each makes sense, and how to move a site off old shortcodes without breakage.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Shortcodes%20vs%20Blocks%20vs%20Page-Builder%20Widgets%20in%20WordPress%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-shortcodes-vs-blocks%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,44 +153,52 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#the-three-options-at-a-glance">The three options at a glance</a></li>
-              <li><a href="#shortcodes-small-tags-that-run-code">Shortcodes: small tags that run code</a></li>
-              <li><a href="#why-shortcodes-break-or-leave-brackets-behind">Why shortcodes break or leave [brackets] behind</a></li>
-              <li><a href="#blocks-the-native-wordpress-format">Blocks: the native WordPress format</a></li>
-              <li><a href="#page-builder-widgets">Page-builder widgets</a></li>
-              <li><a href="#migrating-shortcodes-to-blocks">Migrating shortcodes to blocks</a></li>
-              <li><a href="#what-to-choose-for-a-new-build">What to choose for a new build</a></li>
+              <li><a href="#shortcodes-vs-blocks-vs-widgets-at-a-glance">Shortcodes vs blocks vs widgets at a glance</a></li>
+              <li><a href="#how-shortcodes-work">How shortcodes work</a></li>
+              <li><a href="#how-blocks-work">How blocks work</a></li>
+              <li><a href="#how-page-builder-widgets-work">How page-builder widgets work</a></li>
+              <li><a href="#wordpress-shortcodes-vs-blocks-when-to-use-which">WordPress shortcodes vs blocks: when to use which</a></li>
+              <li><a href="#performance-does-one-load-faster">Performance: does one load faster?</a></li>
+              <li><a href="#cleaning-up-old-shortcodes-safely">Cleaning up old shortcodes safely</a></li>
+              <li><a href="#converting-classic-content-to-blocks">Converting classic content to blocks</a></li>
+              <li><a href="#custom-shortcodes-from-your-developer">Custom shortcodes from your developer</a></li>
+              <li><a href="#common-shortcodes-you-will-meet-and-their-block-equivalents">Common shortcodes you will meet, and their block equivalents</a></li>
+              <li><a href="#what-this-means-for-agencies-and-editors">What this means for agencies and editors</a></li>
+              <li><a href="#a-sensible-default-for-business-sites">A sensible default for business sites</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Shortcodes are plain text, so removing the plugin or theme behind one leaves raw [brackets] on your pages.</li>
-              <li>Blocks store standard HTML in your content, so they usually survive plugin changes far better than shortcodes or page-builder widgets.</li>
-              <li>Migrate by listing every shortcode, swapping in plugin or core blocks, building custom blocks where needed and testing on staging.</li>
+              <li>Shortcodes are text tags replaced by output at render time, blocks are visual editor components, and page-builder widgets live inside a builder like Elementor.</li>
+              <li>For new content, blocks are usually the best default; shortcodes still suit small dynamic snippets, and widgets make sense only on builder-built pages.</li>
+              <li>Before removing a plugin, search the database for its shortcodes, because leftover tags show up as raw text on live pages.</li>
             </ul>
           </div>
-<p>Open an old WordPress page in the editor and you might find text like [contact-form-7 id="123"] or [vc_row] in the content. Those are shortcodes, the original way of putting dynamic features into WordPress pages. Today there are three options: shortcodes, blocks in the built-in block editor (Gutenberg), and widgets inside page builders such as Elementor. Each stores your content differently, which decides what happens when a plugin is removed or the site is redesigned.</p>
+<p>In WordPress, shortcodes vs blocks comes down to this: a shortcode is a text tag in square brackets that a plugin replaces with output when the page loads, while a block is a visual component in the block editor that you can see and edit in place. Page-builder widgets, such as Elementor's, are similar to blocks but only work inside that builder. For most new content, blocks are the best default; shortcodes still have a place for small dynamic features, and widgets make sense when the page is already built with a page builder.</p>
+<p>Below is how each works, when to use which, and how to tidy up a site full of old shortcodes. If you need help restructuring a site, it is part of my <a href="/wordpress-website-development/">WordPress website development</a> work.</p>
 
-<h2 id="the-three-options-at-a-glance">The three options at a glance</h2>
+<h2 id="shortcodes-vs-blocks-vs-widgets-at-a-glance">Shortcodes vs blocks vs widgets at a glance</h2>
 <table>
-  <thead><tr><th></th><th>Shortcode</th><th>Block</th><th>Page-builder widget</th></tr></thead>
+  <thead><tr><th></th><th>Shortcodes</th><th>Blocks</th><th>Page-builder widgets</th></tr></thead>
   <tbody>
-    <tr><td>What editors see</td><td>A tag in square brackets</td><td>A visual preview in the editor</td><td>A visual element in the builder</td></tr>
-    <tr><td>How it's stored</td><td>Plain text in the page content</td><td>HTML in the page content, with labels marking each block</td><td>Usually in the builder's own data format</td></tr>
-    <tr><td>If its plugin is removed</td><td>Raw [brackets] appear on the page</td><td>Saved HTML usually remains; dynamic blocks can vanish</td><td>The element, and often its styling, disappears</td></tr>
-    <tr><td>Best for</td><td>Small dynamic bits and older plugins</td><td>Most content on modern sites</td><td>Visually designed pages edited without code</td></tr>
+    <tr><td>What you see while editing</td><td>A text tag such as [contact-form id="3"]</td><td>A visual preview of the output</td><td>A visual preview inside the builder</td></tr>
+    <tr><td>Where it works</td><td>Almost anywhere text is rendered: posts, widgets, some theme areas</td><td>Block editor and block themes</td><td>Only on pages built with that builder</td></tr>
+    <tr><td>Settings</td><td>Typed as attributes in the tag</td><td>Sidebar panel with controls</td><td>Builder panel with controls</td></tr>
+    <tr><td>If the plugin is removed</td><td>Raw [tag] text shows on the page</td><td>Block shows an error or fallback in the editor</td><td>Content may disappear or break</td></tr>
+    <tr><td>Best for</td><td>Small dynamic snippets, legacy plugins</td><td>Most new content and layouts</td><td>Sites already committed to a builder</td></tr>
   </tbody>
 </table>
 
-<h2 id="shortcodes-small-tags-that-run-code">Shortcodes: small tags that run code</h2>
-<p>A shortcode is a word in square brackets that WordPress swaps for something else when the page is displayed: a form, a gallery, a button, a pricing table. WordPress itself includes a few, such as [gallery] and [caption], and plugins and themes have added thousands more.</p>
-<p>For developers, registering one takes a few lines:</p>
-<pre><code>add_shortcode( 'current_year', function () {
-    return wp_date( 'Y' );
-} );</code></pre>
-<p>Typing [current_year] in a page now shows the current year, handy for a footer copyright line. Note that the function <em>returns</em> its output. Echoing it instead makes the output appear in the wrong place on the page, a classic beginner mistake.</p>
-<p>The weakness is the editing experience. Editors see a cryptic tag rather than what visitors will see, attributes like id="123" are easy to mistype, and nothing warns you when the code behind a tag has gone.</p>
+<h2 id="how-shortcodes-work">How shortcodes work</h2>
+<p>A shortcode is registered by a plugin or theme in PHP. When WordPress renders the page, it finds tags like [gallery] or [product id="12"] and swaps them for the HTML the plugin returns. That makes shortcodes flexible: they work in the classic editor, the block editor's Shortcode block, text widgets and many page builders.</p>
+<p>The downsides are real, though:</p>
+<ul>
+  <li>Editors see a tag, not the result, so it is easy to break the attributes with a typo.</li>
+  <li>Some themes registered lots of layout shortcodes (columns, buttons, tabs). If you change theme, those tags turn into raw text across the site.</li>
+  <li>Nested shortcodes become hard to read and maintain.</li>
+</ul>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress website development?</strong>
@@ -198,46 +206,76 @@
   <div><a href="/wordpress-website-development/" class="link-inline">See WordPress Website Development →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Shortcodes%20vs%20Blocks%20vs%20Page-Builder%20Widgets%20in%20WordPress%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="why-shortcodes-break-or-leave-brackets-behind">Why shortcodes break or leave [brackets] behind</h2>
-<p>A shortcode is only text stored in your page. WordPress replaces it at display time if, and only if, an active plugin or theme has registered that tag. Remove the plugin, or switch away from a theme that bundled its own shortcodes for buttons, columns or tabs, and WordPress no longer recognises the tag, so visitors see the raw text. This is why features like shortcodes are generally best kept in plugins rather than themes.</p>
-<p>It gets worse with some older page builders. WPBakery and classic versions of Divi, for example, store whole layouts as nested shortcodes. Deactivate the builder and pages turn into walls of [vc_row] and [vc_column] tags wrapped around your text.</p>
-<p>If brackets are already showing, the proper fix is to find every affected page (a developer can search the database for the tag name) and replace each shortcode with a block or fresh content. As a temporary stopgap, the old tag can be registered again so it outputs only the text inside it, hiding the brackets while pages are rebuilt:</p>
-<pre><code>add_shortcode( 'old_button', function ( $atts, $content = '' ) {
-    return do_shortcode( $content );
-} );</code></pre>
+<h2 id="how-blocks-work">How blocks work</h2>
+<p>Blocks are the building units of the block editor (Gutenberg). Each paragraph, image, button or contact form is a block with its own settings. Content is saved as HTML with small comments describing the block, so even if a block plugin is removed, much of the content often survives as plain HTML.</p>
+<p>Blocks are what WordPress itself is built around now: block themes, patterns, synced patterns and full site editing all use them. <a href="/blog/block-themes-full-site-editing/">Block themes and full site editing</a> explains where that is heading, and <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a> shows how agencies build their own for clients.</p>
 
-<h2 id="blocks-the-native-wordpress-format">Blocks: the native WordPress format</h2>
-<p>Since WordPress 5.0, the default editor has been the block editor. Every paragraph, image, button or form is a block that you edit visually. Behind the scenes, blocks are stored as ordinary HTML with comment labels telling the editor where each block starts and ends:</p>
-<pre><code>&lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Call or WhatsApp us for a free quote.&lt;/p&gt;
-&lt;!-- /wp:paragraph --&gt;</code></pre>
-<p>That format is why blocks age well. Most blocks save their finished HTML into the page, so if the plugin that provided a block is removed, the content usually still displays; the editor warns that the block isn't supported and offers to keep it as HTML. The exception is <strong>dynamic blocks</strong>, such as a plugin's product grid or events list, which are generated fresh on every page load. Without their plugin they show nothing, though at least they don't leave brackets behind.</p>
-<p>For components designed around your brand, such as service cards or testimonial sliders, developers can build blocks of their own; see <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a>.</p>
+<h2 id="how-page-builder-widgets-work">How page-builder widgets work</h2>
+<p>Elementor, Divi, Bricks and other builders have their own elements, often called widgets or modules. They are visual and powerful, but the layout is stored in the builder's own format. Deactivate the builder and those pages usually lose their design and sometimes their content. That lock-in is acceptable if you are happy to stay with the builder long term. <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a> compares the two approaches in more depth.</p>
 
-<h2 id="page-builder-widgets">Page-builder widgets</h2>
-<p>Page builders such as Elementor have their own building pieces, usually called widgets: headings, carousels, forms, pricing tables and more, often extended by third-party add-on packs. They give non-technical teams plenty of visual control, which is why they're popular for marketing pages.</p>
-<p>The trade-off is lock-in. Builders like Elementor keep layouts in their own data rather than as standard content, so if the builder is switched off, pages lose their layout and styling. Remove an add-on pack and every widget it supplied disappears from your pages. Moving from one builder to another, or to blocks, is effectively a rebuild. For the wider comparison, see <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>.</p>
-
-<h2 id="migrating-shortcodes-to-blocks">Migrating shortcodes to blocks</h2>
-<ol>
-  <li><strong>Make an inventory:</strong> list every shortcode in use, which plugin or theme provides it, and which pages contain it</li>
-  <li><strong>Check for a block version:</strong> many form, gallery, slider and booking plugins now offer their own blocks, so the swap may take minutes</li>
-  <li><strong>Rebuild simple ones with core blocks:</strong> Buttons, Columns, Table and Details (a simple accordion) replace many old theme shortcodes; save repeated layouts as patterns</li>
-  <li><strong>Build custom blocks</strong> for anything specific to your business that has no equivalent</li>
-  <li><strong>Convert classic content:</strong> older posts open inside a Classic block with a "Convert to blocks" option, and any remaining shortcodes can sit in the core Shortcode block until they're replaced</li>
-  <li><strong>Work on a staging copy and check every page</strong>, especially enquiry and high-traffic pages, before going live; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
-</ol>
-<p>Sites built entirely with a shortcode-based builder are a different job: the pages need rebuilding rather than converting, so treat it like a redesign and plan content, redirects and SEO checks accordingly; see <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</p>
-
-<h2 id="what-to-choose-for-a-new-build">What to choose for a new build</h2>
+<h2 id="wordpress-shortcodes-vs-blocks-when-to-use-which">WordPress shortcodes vs blocks: when to use which</h2>
 <ul>
-  <li><strong>Blocks by default:</strong> core blocks and patterns for normal content and blog posts, with custom blocks for branded components. This keeps content in standard WordPress format and is the most future-proof option.</li>
-  <li><strong>A page builder</strong> when a non-technical team needs to design and rearrange marketing pages themselves, accepting some lock-in. Keep add-on packs to a minimum.</li>
-  <li><strong>Shortcodes only where needed:</strong> for a plugin that offers nothing else, or a small dynamic snippet in a place blocks can't reach, registered in a plugin rather than the theme.</li>
+  <li><strong>Use blocks</strong> for normal content and new pages: text, images, buttons, columns, galleries, FAQs. Most good plugins now ship blocks as well as shortcodes.</li>
+  <li><strong>Use a shortcode</strong> for a small dynamic output where no block exists, for example a form from an older form plugin, a pricing table from a plugin, or a custom snippet a developer wrote for you. Place it in a Shortcode block.</li>
+  <li><strong>Use builder widgets</strong> only on pages already built with that builder, and avoid mixing builders across the same site.</li>
+  <li><strong>Avoid theme layout shortcodes</strong> for columns, buttons and boxes. Those belong in blocks or the builder, not in a theme you might replace.</li>
 </ul>
-<p>Whatever you choose, keep a simple list of which plugins provide which blocks, widgets or shortcodes, so nobody removes one without knowing which pages depend on it.</p>
 
-<p>Stuck with a site full of old shortcodes, or planning a rebuild in blocks or Elementor? See <a href="/elementor-developer/">Elementor development</a> or my <a href="/wordpress-website-development/">WordPress website development</a> service.</p>
+<h2 id="performance-does-one-load-faster">Performance: does one load faster?</h2>
+<p>None is automatically fast or slow. Speed depends on how much CSS and JavaScript each plugin loads and whether it loads them on every page. Block-based pages often load less code than builder pages because they avoid the builder's framework, but a heavy block plugin can be just as slow. Shortcodes themselves add very little; the plugin behind them is what matters. If speed is a concern, <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> covers the common causes, and <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> is available if you want it handled.</p>
+
+<h2 id="cleaning-up-old-shortcodes-safely">Cleaning up old shortcodes safely</h2>
+<p>Older sites often carry shortcodes from themes and plugins that were removed years ago. They show up as raw text such as [one_half] or [button link="..."] on live pages. To clean them up:</p>
+<ol>
+  <li>Take a full backup.</li>
+  <li>Crawl the site or search the database (the post_content column of the posts table) for an opening square bracket followed by known tag names.</li>
+  <li>List each shortcode, the plugin it came from and the pages that use it.</li>
+  <li>Decide for each: keep the plugin, replace the shortcode with a block, or convert it to plain HTML.</li>
+  <li>Convert a few pages by hand first to check the result, then use a careful search and replace for the simple cases.</li>
+  <li>Check the pages on mobile and desktop afterwards.</li>
+</ol>
+<p>A staging copy makes this much safer; see <a href="/blog/staging-sites-explained/">staging sites explained</a>. If a plugin removal also caused conflicts, <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">troubleshooting WordPress plugin conflicts</a> helps narrow it down.</p>
+
+<h2 id="converting-classic-content-to-blocks">Converting classic content to blocks</h2>
+<p>Posts written in the classic editor appear as a single Classic block. The "Convert to blocks" option splits it into paragraphs, headings and images. It works well on simple content; check posts with tables, embedded forms or shortcodes afterwards. You do not have to convert everything at once: old posts can stay classic until you next edit them.</p>
+
+<h2 id="custom-shortcodes-from-your-developer">Custom shortcodes from your developer</h2>
+<p>A small custom shortcode is still a neat solution for things like showing the current year, a list of recent case studies or a phone number used in many places. Keep such code in a small site-specific plugin rather than the theme's functions file, so it survives a theme change. <a href="/blog/plugin-vs-custom-code-wordpress/">Plugin vs custom code in WordPress</a> explains the trade-offs. For anything editors will use often, a custom block is usually friendlier.</p>
+
+<h2 id="common-shortcodes-you-will-meet-and-their-block-equivalents">Common shortcodes you will meet, and their block equivalents</h2>
+<table>
+  <thead><tr><th>Shortcode type</th><th>Typical source</th><th>Block-based alternative</th></tr></thead>
+  <tbody>
+    <tr><td>[contact-form-7 id="..."] and similar</td><td>Form plugins</td><td>The plugin's own form block, or a form plugin that ships blocks</td></tr>
+    <tr><td>[gallery ids="..."]</td><td>WordPress core (classic editor)</td><td>Gallery block</td></tr>
+    <tr><td>[products limit="4"]</td><td>WooCommerce</td><td>WooCommerce product collection blocks</td></tr>
+    <tr><td>[one_half], [button], [tabs]</td><td>Older multipurpose themes</td><td>Columns, Buttons and Details blocks, or patterns</td></tr>
+    <tr><td>[embed] or video shortcodes</td><td>Core and plugins</td><td>Embed and Video blocks</td></tr>
+  </tbody>
+</table>
+<p>Exact names vary by plugin and version, so check the plugin's documentation before you replace anything.</p>
+
+<h2 id="what-this-means-for-agencies-and-editors">What this means for agencies and editors</h2>
+<p>If you hand sites to clients, the editing experience matters as much as the design. Clients rarely remember shortcode attributes, and a mistyped quote mark can break a whole section. Blocks with locked patterns let editors change text and images without touching layout. For builder sites, restricting which widgets editors can use has a similar effect. Either way, document the few shortcodes that remain so the next developer knows why they exist.</p>
+
+<h2 id="a-sensible-default-for-business-sites">A sensible default for business sites</h2>
+<p>For most small and medium business sites, a lightweight block theme or a classic theme with the block editor, plus a few well-chosen plugins that provide blocks, gives editors a clear editing experience and avoids lock-in. If your site is already built with Elementor and works well, keep it, but avoid adding a second builder or theme shortcodes on top. <a href="/blog/edit-website-content-wordpress/">How to edit your WordPress content yourself</a> shows what day-to-day editing looks like with blocks.</p>
+
+<p>Whatever you choose, document it: which editor the site uses, which shortcodes remain and why, and which plugins provide blocks. That short note saves time for whoever edits the site next.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>What is the difference between WordPress shortcodes vs blocks?</h3>
+<p>A shortcode is a text tag that a plugin turns into output when the page loads. A block is a visual component you edit directly in the block editor. Blocks show you the result while editing; shortcodes do not.</p>
+<h3>Can I still use shortcodes in the block editor?</h3>
+<p>Yes. Add a Shortcode block and paste the tag. Many plugins also offer their own block, which is usually easier for editors.</p>
+<h3>Why do shortcodes show as text on my pages?</h3>
+<p>The plugin or theme that registered them has been deactivated or removed. Reinstall it, or replace the shortcode with a block or plain HTML.</p>
+<h3>Are blocks faster than Elementor widgets?</h3>
+<p>Often, because block pages avoid loading the builder's framework, but it depends on the plugins involved. Measure actual pages rather than assuming.</p>
+<h3>Should I convert all my old content to blocks?</h3>
+<p>Not all at once. Convert pages as you update them, and prioritise pages with broken theme shortcodes or layouts that editors struggle with.</p>
+
+<p>Want an editor-friendly site without shortcode clutter? You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -273,13 +311,19 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#the-three-options-at-a-glance">The three options at a glance</a></li>
-              <li><a href="#shortcodes-small-tags-that-run-code">Shortcodes: small tags that run code</a></li>
-              <li><a href="#why-shortcodes-break-or-leave-brackets-behind">Why shortcodes break or leave [brackets] behind</a></li>
-              <li><a href="#blocks-the-native-wordpress-format">Blocks: the native WordPress format</a></li>
-              <li><a href="#page-builder-widgets">Page-builder widgets</a></li>
-              <li><a href="#migrating-shortcodes-to-blocks">Migrating shortcodes to blocks</a></li>
-              <li><a href="#what-to-choose-for-a-new-build">What to choose for a new build</a></li>
+              <li><a href="#shortcodes-vs-blocks-vs-widgets-at-a-glance">Shortcodes vs blocks vs widgets at a glance</a></li>
+              <li><a href="#how-shortcodes-work">How shortcodes work</a></li>
+              <li><a href="#how-blocks-work">How blocks work</a></li>
+              <li><a href="#how-page-builder-widgets-work">How page-builder widgets work</a></li>
+              <li><a href="#wordpress-shortcodes-vs-blocks-when-to-use-which">WordPress shortcodes vs blocks: when to use which</a></li>
+              <li><a href="#performance-does-one-load-faster">Performance: does one load faster?</a></li>
+              <li><a href="#cleaning-up-old-shortcodes-safely">Cleaning up old shortcodes safely</a></li>
+              <li><a href="#converting-classic-content-to-blocks">Converting classic content to blocks</a></li>
+              <li><a href="#custom-shortcodes-from-your-developer">Custom shortcodes from your developer</a></li>
+              <li><a href="#common-shortcodes-you-will-meet-and-their-block-equivalents">Common shortcodes you will meet, and their block equivalents</a></li>
+              <li><a href="#what-this-means-for-agencies-and-editors">What this means for agencies and editors</a></li>
+              <li><a href="#a-sensible-default-for-business-sites">A sensible default for business sites</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -306,9 +350,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/edit-website-content-wordpress/"><img class="post-card-img" src="/assets/og/blog-edit-website-content-wordpress.webp" alt="How to Edit Your WordPress Website Content Yourself: Text, Images, Menus and Pages in the Block Editor or Elementor" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>How to Edit Your WordPress Website Content Yourself: Text, Images, Menus and Pages in the Block Editor or Elementor</h3><p>Edit your WordPress website yourself: text, images, menus and pages in the block editor or Elementor, plus revisions, staff roles and what not to touch.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/elementor-vs-gutenberg/"><img class="post-card-img" src="/assets/og/blog-elementor-vs-gutenberg.webp" alt="Elementor vs Gutenberg: Which WordPress Builder Should You Use?" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Elementor vs Gutenberg: Which WordPress Builder Should You Use?</h3><p>Elementor vs Gutenberg compared: editing experience, speed, design flexibility, cost, lock-in and client editing, with clear advice on when to choose each one.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-hooks-actions-filters/"><img class="post-card-img" src="/assets/og/blog-wordpress-hooks-actions-filters.webp" alt="WordPress Hooks Explained: Actions and Filters in Plain English" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>WordPress Hooks Explained: Actions and Filters in Plain English</h3><p>WordPress hooks, actions and filters explained in plain English: what they do, simple examples, where to put the code safely and common mistakes to avoid.</p><span class="post-card-meta">1 October 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/custom-gutenberg-blocks/"><img class="post-card-img" src="/assets/og/blog-custom-gutenberg-blocks.webp" alt="Custom Gutenberg Blocks for Agencies: Patterns, Synced Patterns, ACF Blocks or Native Blocks With block.json" width="1200" height="630" loading="lazy"><span class="work-tag">Agencies</span><h3>Custom Gutenberg Blocks for Agencies: Patterns, Synced Patterns, ACF Blocks or Native Blocks With block.json</h3><p>Custom Gutenberg blocks for agencies: when block patterns are enough, when to use ACF or native blocks with create-block, and how to lock the design.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/plugin-vs-custom-code-wordpress/"><img class="post-card-img" src="/assets/og/blog-plugin-vs-custom-code-wordpress.webp" alt="Plugin or Custom Code in WordPress? When to Use a Plugin, a Code Snippet or a Custom Plugin, With a Decision Table" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Plugin or Custom Code in WordPress? When to Use a Plugin, a Code Snippet or a Custom Plugin, With a Decision Table</h3><p>Plugin or custom code in WordPress? When to use a plugin, a snippet or a custom plugin, weighing security, speed, upkeep and cost, with a decision table.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How to Find and Fix Broken Links on WordPress | Samverse</title>
-  <meta name="description" content="Find broken internal links, dead outbound links and missing images on WordPress, then decide whether to update the link, add a 301 redirect or leave a 404.">
+  <meta name="description" content="How to find and fix broken links on WordPress: use Search Console and an external crawler, fix or redirect each one, and skip slow always-on link plugins.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/find-fix-broken-links-wordpress/">
   <meta property="og:title" content="How to Find and Fix Broken Links on WordPress | Samverse">
-  <meta property="og:description" content="Find broken internal links, dead outbound links and missing images on WordPress, then decide whether to update the link, add a 301 redirect or leave a 404.">
+  <meta property="og:description" content="How to find and fix broken links on WordPress: use Search Console and an external crawler, fix or redirect each one, and skip slow always-on link plugins.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-find-fix-broken-links-wordpress.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/find-fix-broken-links-wordpress/#article",
       "headline": "How to Find and Fix Broken Links on WordPress (Without Slowing Your Site)",
-      "description": "Find broken internal links, dead outbound links and missing images on WordPress, then decide whether to update the link, add a 301 redirect or leave a 404.",
+      "description": "How to find and fix broken links on WordPress: use Search Console and an external crawler, fix or redirect each one, and skip slow always-on link plugins.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/find-fix-broken-links-wordpress/",
       "image": "https://samverse.space/assets/og/blog-find-fix-broken-links-wordpress.png",
       "articleSection": "SEO",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/seo-growth/">SEO &amp; growth</a></nav>
           <a class="post-cat" href="/blog/topic/seo-growth/">SEO</a>
           <h1>How to Find and Fix Broken Links on WordPress (Without Slowing Your Site)</h1>
-          <p class="post-dek">Find broken internal links, dead outbound links and missing images on WordPress, then decide whether to update the link, add a 301 redirect or leave a 404.</p>
+          <p class="post-dek">How to find and fix broken links on WordPress: use Search Console and an external crawler, fix or redirect each one, and skip slow always-on link plugins.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Find%20and%20Fix%20Broken%20Links%20on%20WordPress%20(Without%20Slowing%20Your%20Site)%20https%3A%2F%2Fsamverse.space%2Fblog%2Ffind-fix-broken-links-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,36 +153,49 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#four-kinds-of-broken-link">Four kinds of broken link</a></li>
-              <li><a href="#start-with-search-console-s-not-found-404-report">Start with Search Console's "Not found (404)" report</a></li>
-              <li><a href="#crawl-your-site-to-find-the-links-themselves">Crawl your site to find the links themselves</a></li>
-              <li><a href="#why-heavy-broken-link-plugins-can-slow-your-site">Why heavy broken-link plugins can slow your site</a></li>
-              <li><a href="#update-the-link-redirect-or-leave-a-404">Update the link, redirect or leave a 404?</a></li>
-              <li><a href="#watch-out-for-redirect-chains">Watch out for redirect chains</a></li>
-              <li><a href="#a-simple-routine-for-checking">A simple routine for checking</a></li>
+              <li><a href="#types-of-broken-links">Types of broken links</a></li>
+              <li><a href="#how-to-find-broken-links-on-wordpress">How to find broken links on WordPress</a></li>
+              <li><a href="#why-not-just-install-a-broken-link-checker-plugin">Why not just install a broken link checker plugin?</a></li>
+              <li><a href="#how-to-fix-broken-links-on-wordpress">How to fix broken links on WordPress</a></li>
+              <li><a href="#broken-links-after-a-redesign-or-migration">Broken links after a redesign or migration</a></li>
+              <li><a href="#broken-links-and-seo">Broken links and SEO</a></li>
+              <li><a href="#prioritising-what-to-fix-first">Prioritising what to fix first</a></li>
+              <li><a href="#common-causes-on-wordpress-sites">Common causes on WordPress sites</a></li>
+              <li><a href="#a-simple-monthly-routine">A simple monthly routine</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Use Search Console's Not found (404) report to see missing URLs and a crawler to find the pages that link to them, focusing on URLs that had visits or links.</li>
-              <li>Fix your own links at the source, 301 redirect removed pages only to a genuine replacement, and let worthless or junk URLs return a 404 or 410 instead of sending everything to the homepage.</li>
-              <li>Avoid always-on link checkers that scan from your server; crawl monthly or quarterly, flatten redirect chains and decide on a redirect whenever you delete or rename a page.</li>
+              <li>Find broken links with Search Console and a periodic crawl from outside the site, rather than an always-on link checker plugin that slows WordPress.</li>
+              <li>Fix internal links at the source, use 301 redirects for moved pages, and update or remove dead external links depending on how useful they were.</li>
+              <li>Check links after every redesign, migration or permalink change, because that is when most broken links appear.</li>
             </ul>
           </div>
-<p>Every website collects broken links. A page gets deleted, a slug is tidied up, the site is redesigned, or another website you linked to quietly disappears. A few 404s are normal, and Google has said they don't harm a site in general. The real cost is practical: visitors hit dead ends, images go missing, and links other sites gave you point at nothing. Here's how to find them and decide what to do with each, without a heavy plugin.</p>
+<p>To find and fix broken links on WordPress, check Search Console's Pages report for 404s, run a crawler such as Screaming Frog or a free online checker from outside the site, then fix each broken link at the source, add a 301 redirect for pages that moved, and remove or replace dead external links. Avoid leaving a broken-link plugin running permanently; most slow the site by checking links in the background.</p>
+<p>Broken links frustrate visitors, waste crawl attention and can leave important pages without internal links. They pile up after redesigns, migrations and URL changes. Below is a practical routine. If your site needs a wider clean-up, it is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 
-<h2 id="four-kinds-of-broken-link">Four kinds of broken link</h2>
-<ul>
-<li><strong>Internal links</strong> from your own pages, menus or footer to pages that no longer exist. Fully in your control, and the first to fix.</li>
-<li><strong>Outbound links</strong> to other websites that have moved or closed. Common in older blog posts and resource pages.</li>
-<li><strong>Broken images</strong>, usually after a migration, a domain change, a media clean-up or removing an image or CDN plugin.</li>
-<li><strong>Inbound links</strong> from other sites to URLs you've removed or renamed. You can't edit their link, but you can redirect the old URL.</li>
-</ul>
+<h2 id="types-of-broken-links">Types of broken links</h2>
+<table>
+  <thead><tr><th>Type</th><th>Example</th><th>Usual fix</th></tr></thead>
+  <tbody>
+    <tr><td>Internal link to a deleted or renamed page</td><td>Menu or blog post links to /old-service/</td><td>Update the link; add a 301 redirect from the old URL</td></tr>
+    <tr><td>External link to a dead site</td><td>Resource link to a page that no longer exists</td><td>Replace with a working source or remove the link</td></tr>
+    <tr><td>Broken image or file</td><td>Image in a post returns 404 after a migration</td><td>Re-upload the file or fix the URL</td></tr>
+    <tr><td>Incoming link from another site</td><td>Partner site links to a URL you removed</td><td>301 redirect to the closest relevant page</td></tr>
+    <tr><td>Redirect chain</td><td>Link hits two or three redirects before loading</td><td>Point the link straight at the final URL</td></tr>
+  </tbody>
+</table>
 
-<h2 id="start-with-search-console-s-not-found-404-report">Start with Search Console's "Not found (404)" report</h2>
-<p>In Google Search Console, open <strong>Indexing &gt; Pages</strong> and look under "Why pages aren't indexed" for <strong>Not found (404)</strong>. It lists URLs Google tried to crawl that returned a 404. Click a URL and inspect it: the inspection details can show a referring page or sitemap where Google found it, which tells you what needs fixing.</p>
-<p>Don't treat the list as a to-do list. It includes pages you removed on purpose, typos on other sites and junk URLs invented by bots. Concentrate on URLs that were real pages, still get visits or have links. The report updates with a delay, so fixed URLs can stay listed for a while. Nearby statuses such as soft 404 are covered in <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a>.</p>
+<h2 id="how-to-find-broken-links-on-wordpress">How to find broken links on WordPress</h2>
+<h3>1. Google Search Console</h3>
+<p>Open Indexing, Pages, and look under "Not found (404)". This lists URLs Google tried to crawl that returned 404, including ones linked from other sites. Click a URL to see where Google found it, where that information is available. <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a> explains the other statuses you will see in the same report.</p>
+<p>Not every 404 there is a problem. Old spam URLs, test pages and typed-in mistakes can safely stay as 404.</p>
+<h3>2. A crawler run from outside the site</h3>
+<p>A desktop crawler such as Screaming Frog (free up to a set number of URLs) or an online checker follows every link on your site and reports the ones that fail. Because it runs from your computer or its own servers, it does not load your hosting the way a plugin does. Export the list of broken links with the page each one appears on.</p>
+<h3>3. Your analytics</h3>
+<p>If your 404 page has a recognisable title, filter page views in GA4 by that title to see which missing URLs visitors actually hit. Fix those first. <a href="/blog/helpful-404-pages/">How to make a helpful 404 page</a> covers setting that up.</p>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress seo?</strong>
@@ -190,57 +203,79 @@
   <div><a href="/wordpress-seo-services/" class="link-inline">See WordPress SEO →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Find%20and%20Fix%20Broken%20Links%20on%20WordPress%20(Without%20Slowing%20Your%20Site)%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
-<h2 id="crawl-your-site-to-find-the-links-themselves">Crawl your site to find the links themselves</h2>
-<p>Search Console tells you which URLs are missing. A crawler tells you which of your pages link to them. It visits your site the way a search engine does, follows every link and records the response for each one. Well-known options include:</p>
-<ul>
-<li><strong>Screaming Frog SEO Spider</strong>, a desktop crawler with a free version that limits how many URLs it crawls</li>
-<li><strong>Sitebulb</strong>, a paid desktop crawler</li>
-<li><strong>Ahrefs Webmaster Tools</strong> and similar online site audit tools, which can crawl a site once you verify you own it</li>
-<li><strong>The W3C Link Checker</strong>, a free online tool for checking the links on a page or a small group of pages</li>
-</ul>
-<p>Check each tool's current limits and pricing. Look for internal links returning 404 and the pages they sit on, outbound links returning errors, images that don't load, and redirects. Crawling from outside adds no load beyond the page visits themselves.</p>
+<h2 id="why-not-just-install-a-broken-link-checker-plugin">Why not just install a broken link checker plugin?</h2>
+<p>Plugins that scan links continuously store results in your database and check URLs on a schedule, which uses server resources on every run. On shared hosting this can noticeably slow the admin area and sometimes the front end. If you prefer a plugin, install it, run one scan, fix the issues, then deactivate and delete it. Some services now run the checks on their own servers instead, which avoids most of the load.</p>
 
-<h2 id="why-heavy-broken-link-plugins-can-slow-your-site">Why heavy broken-link plugins can slow your site</h2>
-<p>Checking links from inside WordPress sounds convenient, but the traditional design is expensive. The plugin scans your content, stores every link in the database, then checks them from your server in the background, again and again, through WP-Cron. On a site with hundreds of posts, that means a steady stream of outgoing requests and database writes, which can slow the admin and use up shared hosting limits. Some managed hosts discourage or block plugins that work this way.</p>
-<p>Some newer checkers do the work on an external service, which is far lighter, so check how a plugin works before installing it. Otherwise, crawl monthly or quarterly, or activate a checker, run one scan and deactivate it. Set 404 logs in redirect plugins to keep a limited history so the table doesn't grow forever.</p>
+<h2 id="how-to-fix-broken-links-on-wordpress">How to fix broken links on WordPress</h2>
+<h3>Fix internal links at the source</h3>
+<p>Edit the post, page, menu or widget that contains the link and point it to the correct URL. For many links to the same old URL, a search-and-replace tool can update them across the database, but take a backup first and do a dry run. A redirect alone is a patch; updating the link itself is cleaner and avoids an extra hop.</p>
+<h3>Add 301 redirects for moved pages</h3>
+<p>When a page has moved or been merged, add a permanent 301 redirect from the old URL to the most relevant new page, not to the home page. The Redirection plugin or your SEO plugin can manage this. <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> explains which to use and why.</p>
+<h3>Handle external links</h3>
+<p>For dead external links, find the same resource at its new address, link to another reliable source, or remove the link and adjust the sentence. Do not leave links to domains that have expired; they are sometimes bought and filled with spam.</p>
+<h3>Fix images and files</h3>
+<p>Broken images after a migration usually mean the media URLs still point to the old domain or http version. A careful search and replace of the old address, plus regenerating thumbnails, usually fixes them.</p>
 
-<h2 id="update-the-link-redirect-or-leave-a-404">Update the link, redirect or leave a 404?</h2>
-<p>For each broken URL, ask two questions: did this page have value, and is there a genuine replacement?</p>
-<table>
-<thead><tr><th>Situation</th><th>What to do</th></tr></thead>
-<tbody>
-<tr><td>Your own link points to a page that moved</td><td>Update the link to the new URL, and 301 redirect the old URL if it was ever public</td></tr>
-<tr><td>Removed page with a close replacement</td><td>301 redirect to that replacement, not the homepage</td></tr>
-<tr><td>Removed page with links or traffic but no replacement</td><td>Redirect to the closest relevant category or service page, or bring the content back</td></tr>
-<tr><td>Removed page with no value and no replacement</td><td>Leave it as a 404, or return 410 Gone if it's gone for good, and remove internal links to it</td></tr>
-<tr><td>Junk or mistyped URLs from elsewhere</td><td>Leave them as 404s</td></tr>
-<tr><td>Dead outbound link</td><td>Find the resource's new address, link a different reliable source, or remove the link</td></tr>
-<tr><td>Broken image</td><td>Re-upload it, fix the file path after a migration with a careful search and replace, or regenerate missing thumbnail sizes</td></tr>
-</tbody>
-</table>
-<p>Two rules keep this clean. First, fix your own links at the source instead of relying on redirects; redirects are for people and search engines arriving from outside. Second, don't send every 404 to the homepage. It confuses visitors, and Google may treat irrelevant redirects as soft 404s anyway. A good custom 404 page handles what's left; see <a href="/blog/helpful-404-pages/">404 pages that help</a>, and <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> for which type to use.</p>
-
-<h2 id="watch-out-for-redirect-chains">Watch out for redirect chains</h2>
-<p>A redirect chain is one URL redirecting to a second, which redirects to a third. Chains build up over several redesigns, and with HTTP-to-HTTPS and www redirects added, one click can bounce several times. Each hop slows the visitor, and search engines may stop following a long chain.</p>
-<ul>
-<li>Use your crawler's redirect report to find chains and loops</li>
-<li>Edit old redirects so each one points straight to the final URL</li>
-<li>Update internal links, menus and your sitemap to the final URL so they don't redirect at all</li>
-<li>Keep redirects in one place: a redirect plugin, your SEO plugin's redirect manager or the server, not all three</li>
-</ul>
-<p>If nearly every page suddenly returns a 404 while the homepage works, it's a settings problem rather than broken links; see <a href="/blog/wordpress-pages-404-permalinks-fix/">WordPress pages showing 404</a>.</p>
-
-<h2 id="a-simple-routine-for-checking">A simple routine for checking</h2>
+<h2 id="broken-links-after-a-redesign-or-migration">Broken links after a redesign or migration</h2>
+<p>Most broken-link problems arrive in one go, after a new site launches or the site moves host or domain. Before launch:</p>
 <ol>
-<li><strong>Monthly:</strong> check the Not found (404) report and your 404 log, if you keep one, and fix anything that was a real page</li>
-<li><strong>Quarterly:</strong> run a full crawl, fix broken internal links and images, and tidy redirect chains</li>
-<li><strong>Once or twice a year:</strong> check outbound links in older posts, guides and resource pages</li>
-<li><strong>Whenever you delete or rename a page:</strong> decide on the redirect then, not months later</li>
-<li><strong>After a redesign or migration:</strong> crawl a list of the old URLs and confirm each lands on the right new page</li>
+  <li>Export a list of all existing URLs from the old site's sitemap and a crawl.</li>
+  <li>Map each old URL to its new URL in a spreadsheet.</li>
+  <li>Set up 301 redirects for every URL that changes.</li>
+  <li>After launch, crawl the new site and check Search Console for new 404s over the following weeks.</li>
 </ol>
-<p>Keep a simple spreadsheet of the redirects you add and why, so the next person editing the site doesn't undo them.</p>
+<p>If pages show 404 straight after a permalink change, start with <a href="/blog/wordpress-pages-404-permalinks-fix/">fixing WordPress pages returning 404</a>. Redesigns are covered in more detail on the <a href="/website-redesign/">website redesign</a> page.</p>
 
-<p>If your site has years of moved pages and tangled redirects and you'd like it cleaned up properly, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<h2 id="broken-links-and-seo">Broken links and SEO</h2>
+<p>A few broken external links will not sink your rankings, but broken internal links do real harm: pages lose internal links and Google may stop crawling them as often. Pages left with no internal links at all become orphans; <a href="/blog/orphan-pages-fix/">orphan pages explained</a> shows how to find them. Redirecting removed pages that had backlinks also keeps that link value pointing somewhere useful. <a href="/blog/internal-linking-explained/">Internal linking explained</a> is a good next read if you are tidying your structure at the same time.</p>
+
+<h2 id="prioritising-what-to-fix-first">Prioritising what to fix first</h2>
+<p>A first crawl of an older site can list hundreds of broken links, which feels overwhelming. Work through them in order of impact rather than top to bottom:</p>
+<ol>
+  <li><strong>Site-wide links.</strong> A broken link in the header menu, footer or sidebar appears on every page, so one fix clears hundreds of rows in the report.</li>
+  <li><strong>Links on money pages.</strong> Service pages, product pages, the contact page and anything you advertise. A dead link there costs enquiries directly.</li>
+  <li><strong>Old URLs with backlinks or traffic.</strong> Search Console's Links report and your analytics show which removed pages still get visits or links from other sites. Redirect those to the best match.</li>
+  <li><strong>Internal links inside blog posts.</strong> Usually many, but each matters less. A search-and-replace often fixes them in bulk.</li>
+  <li><strong>External links in old posts.</strong> Replace the useful ones and remove the rest.</li>
+</ol>
+<p>Group the crawler export by the broken URL rather than by the page it appears on. Fifty rows often turn out to be the same three missing pages linked from many places.</p>
+
+<h2 id="common-causes-on-wordpress-sites">Common causes on WordPress sites</h2>
+<ul>
+  <li>Changing a page slug without adding a redirect.</li>
+  <li>Switching permalink structure, for example from dates in the URL to post names.</li>
+  <li>Deleting old products or services instead of redirecting them.</li>
+  <li>Moving from http to https or from a staging domain without updating stored links.</li>
+  <li>Page builders saving absolute URLs that still point to the old domain.</li>
+  <li>Deleting media files that are still used in older posts.</li>
+</ul>
+<p>Knowing the cause tells you whether to fix one link or run a careful search and replace across the database.</p>
+
+<h2 id="a-simple-monthly-routine">A simple monthly routine</h2>
+<ul>
+  <li>Check Search Console's 404 list and note anything new.</li>
+  <li>Run an external crawl every month or two, or after big content changes.</li>
+  <li>Fix internal links first, then add redirects, then review external links.</li>
+  <li>Keep a redirect list so you know why each redirect exists.</li>
+  <li>Avoid redirect chains: when you redirect a page that was already redirected, update the old redirect too.</li>
+</ul>
+<p>This takes under an hour a month on most small business sites, and it is part of ordinary <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+
+<p>If you work with a developer or agency, ask them to include a link check in every launch and every major content change, and to hand over the redirect list along with the site.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>How do I find broken links on WordPress?</h3>
+<p>Use Search Console's Pages report for 404 errors, run a crawler such as Screaming Frog or an online broken link checker, and check analytics for visits to your 404 page.</p>
+<h3>Do broken links hurt SEO?</h3>
+<p>Broken internal links can, because they stop Google and visitors reaching pages. A handful of dead external links is mainly a user experience issue, but it is still worth fixing them.</p>
+<h3>Is the Broken Link Checker plugin safe to use?</h3>
+<p>It works, but running it permanently can slow your site because it checks links in the background. Run a scan, fix the issues and deactivate it, or use an external crawler instead.</p>
+<h3>Should I redirect every 404 to the home page?</h3>
+<p>No. Redirect only to a genuinely relevant page. Sending everything to the home page confuses visitors, and Google often treats those as soft 404s anyway.</p>
+<h3>How often should I check for broken links?</h3>
+<p>Monthly for active sites, and always after a redesign, migration, domain change or bulk deletion of content.</p>
+
+<p>Need broken links, redirects and crawl issues cleaned up properly? You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse, or start with <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -276,13 +311,16 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#four-kinds-of-broken-link">Four kinds of broken link</a></li>
-              <li><a href="#start-with-search-console-s-not-found-404-report">Start with Search Console's "Not found (404)" report</a></li>
-              <li><a href="#crawl-your-site-to-find-the-links-themselves">Crawl your site to find the links themselves</a></li>
-              <li><a href="#why-heavy-broken-link-plugins-can-slow-your-site">Why heavy broken-link plugins can slow your site</a></li>
-              <li><a href="#update-the-link-redirect-or-leave-a-404">Update the link, redirect or leave a 404?</a></li>
-              <li><a href="#watch-out-for-redirect-chains">Watch out for redirect chains</a></li>
-              <li><a href="#a-simple-routine-for-checking">A simple routine for checking</a></li>
+              <li><a href="#types-of-broken-links">Types of broken links</a></li>
+              <li><a href="#how-to-find-broken-links-on-wordpress">How to find broken links on WordPress</a></li>
+              <li><a href="#why-not-just-install-a-broken-link-checker-plugin">Why not just install a broken link checker plugin?</a></li>
+              <li><a href="#how-to-fix-broken-links-on-wordpress">How to fix broken links on WordPress</a></li>
+              <li><a href="#broken-links-after-a-redesign-or-migration">Broken links after a redesign or migration</a></li>
+              <li><a href="#broken-links-and-seo">Broken links and SEO</a></li>
+              <li><a href="#prioritising-what-to-fix-first">Prioritising what to fix first</a></li>
+              <li><a href="#common-causes-on-wordpress-sites">Common causes on WordPress sites</a></li>
+              <li><a href="#a-simple-monthly-routine">A simple monthly routine</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
