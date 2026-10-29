@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Fix Slow Largest Contentful Paint (LCP) on WordPress</title>
-  <meta name="description" content="How to fix slow Largest Contentful Paint on WordPress: find your LCP element, speed up server response, prioritise the hero image and cut render-blocking CSS.">
+  <title>How to Fix Slow LCP (Largest Contentful Paint) in WordPress</title>
+  <meta name="description" content="Fix slow Largest Contentful Paint in WordPress: find your LCP element, split the delay into four parts and fix server, hero image, CSS and fonts in order.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/fix-lcp-largest-contentful-paint/">
-  <meta property="og:title" content="How to Fix Slow Largest Contentful Paint (LCP) on WordPress">
-  <meta property="og:description" content="How to fix slow Largest Contentful Paint on WordPress: find your LCP element, speed up server response, prioritise the hero image and cut render-blocking CSS.">
+  <meta property="og:title" content="How to Fix Slow LCP (Largest Contentful Paint) in WordPress">
+  <meta property="og:description" content="Fix slow Largest Contentful Paint in WordPress: find your LCP element, split the delay into four parts and fix server, hero image, CSS and fonts in order.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-fix-lcp-largest-contentful-paint.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/fix-lcp-largest-contentful-paint/#article",
       "headline": "How to Fix Slow Largest Contentful Paint (LCP) on WordPress",
-      "description": "How to fix slow Largest Contentful Paint on WordPress: find your LCP element, speed up server response, prioritise the hero image and cut render-blocking CSS.",
+      "description": "Fix slow Largest Contentful Paint in WordPress: find your LCP element, split the delay into four parts and fix server, hero image, CSS and fonts in order.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-09-28",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/fix-lcp-largest-contentful-paint/",
       "image": "https://samverse.space/assets/og/blog-fix-lcp-largest-contentful-paint.png",
       "articleSection": "Speed",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Speed</a>
           <h1>How to Fix Slow Largest Contentful Paint (LCP) on WordPress</h1>
-          <p class="post-dek">How to fix slow Largest Contentful Paint on WordPress: find your LCP element, speed up server response, prioritise the hero image and cut render-blocking CSS.</p>
+          <p class="post-dek">Fix slow Largest Contentful Paint in WordPress: find your LCP element, split the delay into four parts and fix server, hero image, CSS and fonts in order.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · 6 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Fix%20Slow%20Largest%20Contentful%20Paint%20(LCP)%20on%20WordPress%20https%3A%2F%2Fsamverse.space%2Fblog%2Ffix-lcp-largest-contentful-paint%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -159,39 +159,45 @@
               <li><a href="#fix-slow-server-response">Fix slow server response</a></li>
               <li><a href="#fix-the-hero-image">Fix the hero image</a></li>
               <li><a href="#remove-render-blocking-css-javascript-and-fonts">Remove render-blocking CSS, JavaScript and fonts</a></li>
+              <li><a href="#lcp-fixes-by-type-of-wordpress-page">LCP fixes by type of WordPress page</a></li>
               <li><a href="#confirm-the-fix-worked">Confirm the fix worked</a></li>
+              <li><a href="#when-to-get-help-with-lcp">When to get help with LCP</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Find your actual LCP element in PageSpeed Insights first; it differs between pages and between mobile and desktop.</li>
-              <li>Split LCP into server response, load delay, load duration and render delay, because each part points to a different fix.</li>
-              <li>Never lazy-load the hero image; give it high priority, avoid CSS background heroes and cut render-blocking CSS, fonts and animations.</li>
+              <li>LCP measures when the biggest visible element, usually a hero image or heading, finishes rendering, and good is 2.5 seconds or less for most real visitors.</li>
+              <li>Split LCP into server response, resource load delay, load time and render delay, then fix the largest part first instead of installing another speed plugin.</li>
+              <li>The most common WordPress fixes are page caching, a correctly sized and preloaded hero image that is never lazy-loaded, and less render-blocking CSS and font loading.</li>
             </ul>
           </div>
-<p>Largest Contentful Paint (LCP) measures how long the biggest piece of content in the first screen, usually a hero image, banner or main heading, takes to appear. When it's rated "poor", visitors stare at a mostly empty screen for too long, and some of them leave. Here's how to find what's slowing LCP on a WordPress site and how to fix each cause. If you're new to the three metrics, start with <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+<p>To fix slow LCP in WordPress, find which element is your Largest Contentful Paint, work out whether the delay comes from the server, the image download or render-blocking files, and fix that part first. On most business sites the answer is page caching, a properly sized hero image that loads early, and less CSS and JavaScript in the way.</p>
+<p>This guide walks through that process in order, with the checks I use on WordPress and WooCommerce sites for Indian businesses where most visitors arrive on mid-range phones over mobile data. If you would rather hand it over, <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> covers LCP, INP and CLS together.</p>
 
 <h2 id="what-counts-as-a-good-lcp">What counts as a good LCP</h2>
+<p>Largest Contentful Paint is one of the three <a href="/blog/core-web-vitals-explained/">Core Web Vitals</a>. It records the moment the largest image, video poster or text block in the visible part of the screen finishes rendering. Google groups the result like this:</p>
 <table>
-  <thead><tr><th>LCP time</th><th>Google's rating</th></tr></thead>
+  <thead><tr><th>LCP time</th><th>Rating</th><th>What it usually means</th></tr></thead>
   <tbody>
-    <tr><td>2.5 seconds or less</td><td>Good</td></tr>
-    <tr><td>Between 2.5 and 4 seconds</td><td>Needs improvement</td></tr>
-    <tr><td>More than 4 seconds</td><td>Poor</td></tr>
+    <tr><td>2.5 seconds or less</td><td>Good</td><td>The main content appears quickly for most visitors</td></tr>
+    <tr><td>2.5 to 4 seconds</td><td>Needs improvement</td><td>One or two bottlenecks, often the hero image or server</td></tr>
+    <tr><td>Over 4 seconds</td><td>Poor</td><td>Several problems stacked together, common on builder-heavy pages</td></tr>
   </tbody>
 </table>
-<p>Google judges this from real visits at the 75th percentile, so most of your visitors need a good experience, not just those on fast office Wi-Fi. Mobile and desktop are rated separately. For most Indian business sites, mobile matters most, because that's where most visitors are and where phones and networks are slowest.</p>
+<p>The rating that matters is the 75th percentile of real visits, shown as field data in PageSpeed Insights and the Core Web Vitals report in Search Console. Lab scores from a single test are useful for diagnosis but swing from run to run, so do not chase a perfect lab number.</p>
 
 <h2 id="step-1-identify-your-lcp-element">Step 1: Identify your LCP element</h2>
-<p>The measured element varies by page, and often between mobile and desktop.</p>
-<ol>
-  <li>Run the page through PageSpeed Insights and select the mobile results.</li>
-  <li>Check the field data at the top to confirm real visitors are affected, not just the lab test.</li>
-  <li>In the diagnostics, find the item that names the Largest Contentful Paint element: the exact image or block of text measured.</li>
-  <li>For more detail, record a page load in the Performance panel of Chrome DevTools and look for the LCP marker.</li>
-</ol>
-<p>Common LCP elements on WordPress sites are a hero image, a slider's first slide, an Elementor section background, a post's featured image or, on mobile, a large heading or opening paragraph.</p>
+<p>You cannot fix LCP until you know what it is. Run the page through PageSpeed Insights and open the diagnostic for the Largest Contentful Paint element; it names the exact image or text block. In Chrome DevTools, the Performance panel shows the same thing with a timing marker.</p>
+<p>Typical LCP elements on WordPress sites are:</p>
+<ul>
+  <li>A hero image or slider image at the top of the home page.</li>
+  <li>A background image set through a page builder section.</li>
+  <li>The main product image on a WooCommerce product page.</li>
+  <li>The H1 heading or first paragraph on blog posts with no featured image.</li>
+</ul>
+<p>Check mobile and desktop separately. The LCP element is often different on each, because a desktop layout may show a wide banner while the phone layout shows the heading first. The tools that report these numbers are compared in <a href="/blog/website-speed-test-tools-explained/">website speed test tools explained</a>.</p>
 
 <aside class="inline-cta">
   <strong>Need help with speed optimization?</strong>
@@ -200,59 +206,81 @@
 </aside>
 
 <h2 id="step-2-work-out-which-part-is-slow">Step 2: Work out which part is slow</h2>
-<p>LCP time breaks down into four parts, and each points to a different fix:</p>
+<p>LCP is not one delay but four in a row. PageSpeed Insights breaks it into these phases, and the biggest phase tells you where to work:</p>
 <table>
-  <thead><tr><th>Part</th><th>What it means</th><th>Usual fix</th></tr></thead>
+  <thead><tr><th>Phase</th><th>What it covers</th><th>Typical WordPress cause</th></tr></thead>
   <tbody>
-    <tr><td>Server response</td><td>Time before the first byte of HTML arrives (often called TTFB)</td><td>Caching, better hosting, fewer heavy plugins</td></tr>
-    <tr><td>Load delay</td><td>Time between the HTML arriving and the browser starting to download the LCP image</td><td>Make the image discoverable early; raise its priority</td></tr>
-    <tr><td>Load duration</td><td>Time spent downloading the image itself</td><td>Smaller, compressed, correctly sized images</td></tr>
-    <tr><td>Render delay</td><td>Time between the content being ready and it actually appearing</td><td>Remove render-blocking CSS, JavaScript, fonts and animations</td></tr>
+    <tr><td>Time to first byte</td><td>The server building and sending the HTML</td><td>No page cache, slow hosting, heavy plugins, far-away server</td></tr>
+    <tr><td>Resource load delay</td><td>Time before the browser starts fetching the LCP image</td><td>Image set in CSS, lazy-loaded hero, image discovered late by JavaScript</td></tr>
+    <tr><td>Resource load duration</td><td>Downloading the image itself</td><td>Oversized file, wrong format, no CDN</td></tr>
+    <tr><td>Element render delay</td><td>Time from download to the element appearing</td><td>Render-blocking CSS, JavaScript, web fonts, sliders waiting to initialise</td></tr>
   </tbody>
 </table>
-<p>If your LCP element is text, there's no image to download, so the time is usually split between server response and render delay.</p>
+<p>A text LCP element has no image phases, so for blog posts the work is almost always server response and render-blocking files.</p>
 
 <h2 id="fix-slow-server-response">Fix slow server response</h2>
-<p>If the HTML itself takes a long time to arrive, everything else waits. On WordPress, the usual causes are:</p>
+<p>If time to first byte takes a big share of LCP, nothing else will help much until it is fixed. Start with these:</p>
 <ul>
-  <li><strong>No page caching:</strong> without it, WordPress builds every page from scratch with PHP and database queries. A caching plugin or your host's built-in cache serves a ready-made copy instead. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</li>
-  <li><strong>Overloaded or distant hosting:</strong> cheap shared servers get busy, and a server on another continent adds delay for visitors in India.</li>
-  <li><strong>Heavy plugins:</strong> some run slow database queries or call external services on every page load.</li>
-  <li><strong>Outdated PHP:</strong> newer supported PHP versions are generally faster, after testing compatibility.</li>
+  <li><strong>Page caching.</strong> Serve ready-made HTML instead of rebuilding each page with PHP and database queries. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers page, object and browser caching.</li>
+  <li><strong>Server location.</strong> For an Indian audience, a data centre in or near India usually responds faster than one in the US or Europe.</li>
+  <li><strong>Plugin weight.</strong> Plugins that run on every page load, such as related-post engines, visitor counters and some security scanners, slow the first byte.</li>
+  <li><strong>PHP version and database.</strong> An old PHP version and a bloated options table both add time.</li>
 </ul>
-<p>A quick check: if even cached pages are slow to start arriving, the hosting or server location is the likely problem, not just your plugins.</p>
+<p>The full process is in <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time (TTFB)</a>. On a busy WooCommerce store, remember that cart, checkout and account pages cannot be fully cached, so hosting quality matters more there.</p>
 
 <h2 id="fix-the-hero-image">Fix the hero image</h2>
-<p>When the LCP element is an image, most gains come from getting it discovered early and making it small.</p>
-<h3>Don't lazy-load it</h3>
-<p>Lazy loading helps images further down the page but delays the first one. WordPress tries to skip lazy loading for the first large image, but page builders and optimisation plugins can override this. Most let you exclude above-the-fold images.</p>
-<h3>Give it high priority</h3>
-<p>Adding <code>fetchpriority="high"</code> to the hero image tells the browser to download it ahead of less important files. Recent WordPress versions add this automatically to the image they guess is the main one, so check the page source to confirm it's on the right image. Use it on one image only.</p>
-<h3>Avoid CSS background images for the hero</h3>
-<p>Background images set in CSS, which is how many Elementor sections and theme headers work, can't be found until the stylesheet has downloaded and been processed. That creates a long load delay. Where possible, use a normal image element for the hero. If it has to be a background, preload that one image.</p>
-<h3>Preload carefully</h3>
-<p>Preloading helps only for the resource that really is the LCP element. Preloading several images, fonts and scripts makes them compete for bandwidth and can slow LCP down. If the image uses responsive sizes, the preload must use the same sizes, or the browser may download two versions.</p>
-<h3>Make it small and replace sliders</h3>
-<p>Resize the image to its displayed size, compress it and serve WebP or AVIF, with a smaller version for phones; <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> covers this. If the hero is a slider, its first slide often can't appear until the slider's JavaScript has run. A single strong image with a clear headline loads faster and is often clearer anyway.</p>
+<p>When the LCP element is an image, most of the gain comes from making the browser find it early and download less.</p>
+<ol>
+  <li><strong>Never lazy-load the LCP image.</strong> Lazy loading is for images further down the page. WordPress skips lazy loading for the first content image in many cases, but themes, builders and optimisation plugins can add it back. See <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</li>
+  <li><strong>Use a real image tag, not a CSS background.</strong> Background images set in a builder section are only found after the CSS loads. A normal image element is discovered as soon as the HTML arrives.</li>
+  <li><strong>Add a high fetch priority.</strong> The fetchpriority attribute set to high on the hero image, or a preload hint in the page head, tells the browser to fetch it first.</li>
+  <li><strong>Size it for the screen.</strong> A 2,500 pixel wide photo shown at phone width wastes data. Use responsive image sizes so phones get a smaller file.</li>
+  <li><strong>Use a modern format.</strong> WebP or AVIF usually gives a much smaller file than JPEG or PNG at similar quality.</li>
+  <li><strong>Drop the slider.</strong> Sliders load several images and a script before the first slide appears. A single strong image almost always paints faster.</li>
+</ol>
+<p>The image steps are covered in detail in <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
 
 <h2 id="remove-render-blocking-css-javascript-and-fonts">Remove render-blocking CSS, JavaScript and fonts</h2>
-<p>If your LCP element is a heading, or the image has downloaded but still appears late, the problem is render delay. The browser won't paint the page until it has processed the stylesheets and scripts that block rendering.</p>
+<p>If the image arrives in time but still appears late, files in the page head are blocking rendering. Typical culprits on WordPress sites are a full page builder stylesheet, icon font libraries, several Google Font families and scripts loaded in the head without defer.</p>
 <ul>
-  <li><strong>CSS:</strong> reduce unused CSS and consider critical CSS, the small set of styles the first screen needs, so the rest can load later. Test carefully, as removing CSS wrongly breaks layouts.</li>
-  <li><strong>JavaScript:</strong> defer scripts the first screen doesn't need, and avoid scripts in the page head that hold up rendering.</li>
-  <li><strong>Fonts:</strong> use one or two families with only the weights you need, host them on your own domain where practical, use <code>font-display: swap</code> so text shows in a fallback font immediately, and preload the main font if the hero heading uses it.</li>
-  <li><strong>Entrance animations:</strong> a hero heading or image set to fade or slide in stays invisible until the animation runs, which pushes LCP back. Keep animations out of the first screen.</li>
+  <li>Defer non-essential JavaScript, and delay chat widgets, pixels and heatmaps until after the page has loaded.</li>
+  <li>Inline a small amount of critical CSS for the top of the page and load the rest without blocking.</li>
+  <li>Remove CSS and scripts for plugins that only one page uses.</li>
+  <li>Limit fonts to one or two families and the weights you actually use, host them locally and use a font-display setting that shows text immediately.</li>
 </ul>
+<p>Test after every change, because over-aggressive deferring can break menus, forms or checkout. The detail is in <a href="/blog/eliminate-render-blocking-resources/">how to eliminate render-blocking resources</a>.</p>
 
-<p>For a step-by-step guide to critical CSS, deferring scripts and checking that menus and forms still work, see <a href="/blog/eliminate-render-blocking-resources/">how to eliminate render-blocking resources in WordPress</a>.</p>
+<h2 id="lcp-fixes-by-type-of-wordpress-page">LCP fixes by type of WordPress page</h2>
+<table>
+  <thead><tr><th>Page type</th><th>Usual LCP element</th><th>First fixes to try</th></tr></thead>
+  <tbody>
+    <tr><td>Home page with hero</td><td>Hero image or slider</td><td>Replace slider, real image tag, high fetch priority, WebP</td></tr>
+    <tr><td>Service or landing page</td><td>Heading or banner</td><td>Page cache, fewer fonts, critical CSS</td></tr>
+    <tr><td>Blog post</td><td>Featured image or H1</td><td>Responsive sizes, no lazy loading on featured image</td></tr>
+    <tr><td>WooCommerce product page</td><td>Main product image</td><td>Smaller gallery images, delay zoom and gallery scripts</td></tr>
+  </tbody>
+</table>
 
 <h2 id="confirm-the-fix-worked">Confirm the fix worked</h2>
-<ul>
-  <li>Clear your caching plugin and any CDN cache, then re-test several times, as lab results vary between runs</li>
-  <li>Check mobile and desktop, and a few page types: home, service and blog pages</li>
-  <li>Field data covers a rolling 28-day period, so real-user LCP improves gradually; use "Validate fix" in Search Console's Core Web Vitals report to track it</li>
-</ul>
-<p>LCP usually has more than one cause, and fixes like critical CSS are easy to get wrong. My <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service targets your specific Core Web Vitals issues and shows before-and-after results. For Elementor hero sections that need rebuilding more efficiently, see <a href="/elementor-developer/">Elementor development</a>.</p>
+<p>Re-run lab tests after each change to see whether the slow phase has shrunk. Then wait for field data: PageSpeed Insights field data and the Search Console report use a rolling 28-day window, so improvements take a few weeks to show fully. In Search Console you can click Validate fix on the LCP issue once you have deployed the changes.</p>
+<p>Keep a short record of what you changed and when. If LCP gets worse again later, it is usually because someone added a new slider, a large uncompressed image or another tracking script.</p>
+
+<h2 id="when-to-get-help-with-lcp">When to get help with LCP</h2>
+<p>If the slow phase is server response on cheap shared hosting, or render delay caused by a heavy builder theme, the fix may involve hosting changes or rebuilding key templates rather than plugin settings. That is where it is worth bringing in someone who has done it before. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to diagnose and fix it without breaking the design.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>How do I fix slow LCP in WordPress?</h3>
+<p>Identify the LCP element in PageSpeed Insights, check which of the four phases is longest, then fix that part: page caching for server delay, a preloaded and correctly sized hero image for image delays, and deferred CSS, scripts and fonts for render delay.</p>
+<h3>What is a good LCP score?</h3>
+<p>Google treats 2.5 seconds or less as good, 2.5 to 4 seconds as needing improvement and over 4 seconds as poor, measured at the 75th percentile of real visits.</p>
+<h3>Why is my LCP worse on mobile than desktop?</h3>
+<p>Phones have slower processors and often slower connections, and the mobile layout may use a different LCP element. Large images, sliders and heavy scripts hurt phones far more than desktops.</p>
+<h3>Should the LCP image be lazy loaded?</h3>
+<p>No. Lazy loading delays the image until the browser decides it is needed, which slows LCP. Load the hero image eagerly and lazy-load only images below the fold.</p>
+<h3>Will a caching plugin alone fix LCP?</h3>
+<p>Caching fixes the server part, which often helps a lot, but it will not shrink an oversized hero image or remove render-blocking files. Most sites need caching plus image and CSS work.</p>
+
+<p>Want your LCP fixed properly on a live WordPress or WooCommerce site? Take a look at <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> from Samverse.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -294,7 +322,10 @@
               <li><a href="#fix-slow-server-response">Fix slow server response</a></li>
               <li><a href="#fix-the-hero-image">Fix the hero image</a></li>
               <li><a href="#remove-render-blocking-css-javascript-and-fonts">Remove render-blocking CSS, JavaScript and fonts</a></li>
+              <li><a href="#lcp-fixes-by-type-of-wordpress-page">LCP fixes by type of WordPress page</a></li>
               <li><a href="#confirm-the-fix-worked">Confirm the fix worked</a></li>
+              <li><a href="#when-to-get-help-with-lcp">When to get help with LCP</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">

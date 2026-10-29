@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress REST API Explained for Business Owners | Samverse</title>
-  <meta name="description" content="What the WordPress REST API is, what relies on it, what it shows publicly by default (like user lists), how application passwords work and when you need it.">
+  <title>WordPress REST API Explained: What It Is, When to Use It</title>
+  <meta name="description" content="The WordPress REST API explained in plain language: what it is, what already uses it, what is public, authentication, business uses and how to restrict it.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-rest-api-explained/">
-  <meta property="og:title" content="WordPress REST API Explained for Business Owners | Samverse">
-  <meta property="og:description" content="What the WordPress REST API is, what relies on it, what it shows publicly by default (like user lists), how application passwords work and when you need it.">
+  <meta property="og:title" content="WordPress REST API Explained: What It Is, When to Use It">
+  <meta property="og:description" content="The WordPress REST API explained in plain language: what it is, what already uses it, what is public, authentication, business uses and how to restrict it.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-rest-api-explained.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-rest-api-explained/#article",
       "headline": "The WordPress REST API Explained: What It Is and When You Need It",
-      "description": "What the WordPress REST API is, what relies on it, what it shows publicly by default (like user lists), how application passwords work and when you need it.",
+      "description": "The WordPress REST API explained in plain language: what it is, what already uses it, what is public, authentication, business uses and how to restrict it.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-01",
+      "dateModified": "2026-10-29",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-rest-api-explained/",
       "image": "https://samverse.space/assets/og/blog-wordpress-rest-api-explained.png",
       "articleSection": "Guides",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/planning/">Planning &amp; costs</a></nav>
           <a class="post-cat" href="/blog/topic/planning/">Guides</a>
           <h1>The WordPress REST API Explained: What It Is and When You Need It</h1>
-          <p class="post-dek">What the WordPress REST API is, what relies on it, what it shows publicly by default (like user lists), how application passwords work and when you need it.</p>
+          <p class="post-dek">The WordPress REST API explained in plain language: what it is, what already uses it, what is public, authentication, business uses and how to restrict it.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · 6 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=The%20WordPress%20REST%20API%20Explained%3A%20What%20It%20Is%20and%20When%20You%20Need%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-rest-api-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,41 +153,53 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#what-the-rest-api-is-in-plain-language">What the REST API is, in plain language</a></li>
+              <li><a href="#the-wordpress-rest-api-explained-in-plain-language">The WordPress REST API explained in plain language</a></li>
               <li><a href="#what-already-uses-it-on-your-site">What already uses it on your site</a></li>
               <li><a href="#what-s-public-by-default">What's public by default</a></li>
               <li><a href="#authentication-and-application-passwords">Authentication and application passwords</a></li>
               <li><a href="#when-a-business-actually-needs-the-rest-api">When a business actually needs the REST API</a></li>
               <li><a href="#don-t-switch-it-off-restrict-it">Don't switch it off; restrict it</a></li>
+              <li><a href="#common-rest-api-errors">Common REST API errors</a></li>
+              <li><a href="#performance-and-the-rest-api">Performance and the REST API</a></li>
+              <li><a href="#getting-help-with-integrations">Getting help with integrations</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>The REST API is built into WordPress and already powers the block editor, many plugins, WooCommerce features and app integrations.</li>
-              <li>Public content is readable through it by default, and the user listing can reveal login usernames, so restrict that endpoint rather than disabling the whole API.</li>
-              <li>Application passwords let apps connect without your main password; give each service its own, on a low-role user, and revoke ones you no longer use.</li>
+              <li>The WordPress REST API lets other software and the block editor read and change site content through URLs under /wp-json/, returning data as JSON.</li>
+              <li>Published content is public through it by default, while drafts, user details beyond public authors, orders and settings need authentication.</li>
+              <li>Do not switch the REST API off, because the editor and many plugins depend on it; restrict sensitive endpoints and use application passwords for integrations.</li>
             </ul>
           </div>
-<p>If a developer has mentioned "the REST API", or a security scan has flagged /wp-json/ on your site, you may have wondered what it is and whether to worry. In short: it's a built-in part of WordPress that lets software talk to your website, it's already working on your site, and it needs sensible limits rather than switching off. Here's what business owners and junior developers should know.</p>
+<p>The WordPress REST API is a built-in way for other software to read and change your site's content over the web. It works through URLs under /wp-json/ on your domain and sends data back as JSON instead of web pages. The block editor, many plugins, mobile apps and integrations with CRMs or other systems all use it. Most site owners never touch it directly, but it is worth knowing what it exposes and how to keep it secure.</p>
+<p>This guide explains the WordPress REST API in plain language: what already uses it on your site, what is public by default, how authentication works, when a business actually needs it and how to restrict it safely without breaking anything.</p>
 
-<h2 id="what-the-rest-api-is-in-plain-language">What the REST API is, in plain language</h2>
-<p>Your website normally answers visitors with web pages: HTML designed for people to read. The REST API is a second doorway that answers with plain data instead, in a format called JSON that other programs can read easily. Ask it for your latest blog posts and it returns titles, dates, content and links, without any design.</p>
-<p>Each type of data has its own address, called an endpoint, under /wp-json/ on your domain. For example:</p>
-<pre><code>https://yoursite.com/wp-json/wp/v2/posts
-https://yoursite.com/wp-json/wp/v2/pages
-https://yoursite.com/wp-json/wp/v2/categories</code></pre>
-<p>Programs can read data from these endpoints and, with permission, create, update or delete it. The REST API has been part of WordPress core since 2016, and plugins can add their own endpoints alongside the built-in ones.</p>
+<h2 id="the-wordpress-rest-api-explained-in-plain-language">The WordPress REST API explained in plain language</h2>
+<p>Think of your website as having two doors. The front door serves web pages to visitors' browsers. The REST API is a side door that serves the same content as structured data to programs. A program can ask for the latest ten posts, a product's price or a page's content, and get back clean data without any design around it.</p>
+<p>Each type of content has its own address, called an endpoint. For example, <code>/wp-json/wp/v2/posts</code> lists published posts, <code>/wp-json/wp/v2/pages</code> lists pages, and plugins such as WooCommerce add their own endpoints under their own namespace. A program reads data with a GET request and, if it has permission, creates or updates content with POST, PUT or DELETE requests.</p>
+<table>
+  <thead><tr><th>Term</th><th>Plain meaning</th></tr></thead>
+  <tbody>
+    <tr><td>Endpoint</td><td>A URL that returns or accepts one kind of data, such as posts</td></tr>
+    <tr><td>JSON</td><td>A simple text format for data that programs read easily</td></tr>
+    <tr><td>Namespace</td><td>The group an endpoint belongs to, such as wp/v2 for core or a plugin's own name</td></tr>
+    <tr><td>Authentication</td><td>Proving who is making the request, so private actions are allowed</td></tr>
+    <tr><td>Application password</td><td>A separate password for one integration, which can be revoked on its own</td></tr>
+  </tbody>
+</table>
 
 <h2 id="what-already-uses-it-on-your-site">What already uses it on your site</h2>
-<p>Even if nobody has ever "set up" an API for you, it's probably busy:</p>
+<p>Even if you have never heard of it, your site probably relies on the REST API every day:</p>
 <ul>
-  <li><strong>The block editor:</strong> when you edit a page in Gutenberg, the editor loads and saves content through the REST API in the background. This is why switching the API off completely can break editing.</li>
-  <li><strong>Plugins:</strong> many form, SEO, booking and analytics plugins use it to save settings, submit forms or load data without reloading the page.</li>
-  <li><strong>WooCommerce:</strong> parts of its admin screens and its newer block-based cart and checkout rely on API endpoints, and it has its own API for connecting a store to inventory, accounting or shipping software.</li>
-  <li><strong>Apps and integrations:</strong> mobile apps, automation tools and CRMs can read or write content through it.</li>
-  <li><strong>Headless websites:</strong> where a separate front end fetches all its content from WordPress; see <a href="/blog/headless-wordpress-small-business/">headless WordPress for small businesses</a> for whether that's worth it.</li>
+  <li><strong>The block editor.</strong> Gutenberg loads and saves posts, blocks, media and settings through the REST API.</li>
+  <li><strong>Plugins.</strong> Form builders, SEO plugins, page builders, caching tools and WooCommerce use it for admin screens and background tasks.</li>
+  <li><strong>The WordPress mobile app and Jetpack-style services</strong> connect through it.</li>
+  <li><strong>Integrations.</strong> Automation tools, CRMs, inventory systems and marketing tools often read or push data through it.</li>
+  <li><strong>Headless or app front ends</strong> that use WordPress only as a content store.</li>
 </ul>
+<p>The older XML-RPC system did some of these jobs before the REST API existed; <a href="/blog/wordpress-xmlrpc-explained/">WordPress XML-RPC explained</a> covers when that can be switched off.</p>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress website development?</strong>
@@ -196,64 +208,83 @@ https://yoursite.com/wp-json/wp/v2/categories</code></pre>
 </aside>
 
 <h2 id="what-s-public-by-default">What's public by default</h2>
-<p>Anyone can read the same content through the API that they could already see on your website: published posts and pages, categories, tags and media details. Drafts, private posts and site settings need a logged-in user with the right permissions. Custom post types only appear if they're registered to show in the API, which matters when you structure content such as properties or courses; see <a href="/blog/custom-post-types-fields/">custom post types and custom fields</a>.</p>
-<h3>The user listing</h3>
-<p>One endpoint surprises people: /wp-json/wp/v2/users. For visitors who aren't logged in, it lists users who have published posts, with each one's display name, profile details and a URL slug. By default that slug is based on the login username, so the list can hand bots the usernames they want for password-guessing attacks.</p>
-<p>That isn't a hack in itself (author archive pages often reveal the same slug), but there's no reason to advertise it. Many security plugins can restrict the users endpoint for logged-out visitors. A developer can do the same with a short snippet, while logged-in editors keep full access:</p>
-<pre><code>add_filter( 'rest_endpoints', function ( $endpoints ) {
-    if ( ! is_user_logged_in() ) {
-        foreach ( array_keys( $endpoints ) as $route ) {
-            if ( str_starts_with( $route, '/wp/v2/users' ) ) {
-                unset( $endpoints[ $route ] );
-            }
-        }
-    }
-    return $endpoints;
-} );</code></pre>
-<p>Code like this belongs in a small site-specific plugin, not a parent theme, and should be tested on a copy of the site first. Remember that the real protection is strong passwords and two-factor authentication, which make a known username useless to an attacker; see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
-
-<h2 id="authentication-and-application-passwords">Authentication and application passwords</h2>
-<p>Reading public content needs no login. Anything that changes or reads private data needs the request to prove who it's from. Common ways:</p>
-<ul>
-  <li><strong>Your normal login:</strong> when you're logged in to the dashboard, the editor and plugins send requests with your login cookie plus a security token (a nonce), so you never notice</li>
-  <li><strong>Application passwords:</strong> built into WordPress since version 5.6, for external apps and services</li>
-  <li><strong>Plugin-specific keys:</strong> WooCommerce, for example, issues its own API keys with read, write or read/write permission, and some plugins add other methods such as tokens</li>
-</ul>
-<p>An application password is a long, separate password generated for one app from your profile page under <strong>Users</strong>. It works only for API requests, not for logging in to the dashboard. It's shown once, and it can be revoked on its own without changing your main password. By default, WordPress only offers application passwords on sites running HTTPS.</p>
-<p>Good habits:</p>
-<ul>
-  <li>Create one application password per service, with a clear name such as "CRM sync"</li>
-  <li>Connect integrations through a dedicated user with the lowest role that works, because the app can do whatever that user can do</li>
-  <li>Revoke passwords for services you've stopped using, and any you don't recognise</li>
-  <li>Never give an integration, or the person setting it up, your main admin password</li>
-</ul>
-
-<h2 id="when-a-business-actually-needs-the-rest-api">When a business actually needs the REST API</h2>
-<p>Every WordPress site uses it. The real question is whether you need someone to build something with it. A rough guide:</p>
+<p>Anything already public on your site is also readable through the REST API without logging in: published posts, pages, categories, tags, media details and public custom post types. That is by design and generally not a risk, since the same content is visible on the website.</p>
 <table>
-  <thead><tr><th>Situation</th><th>Custom API work needed?</th></tr></thead>
+  <thead><tr><th>Data</th><th>Public without login?</th><th>Notes</th></tr></thead>
   <tbody>
-    <tr><td>Brochure site with a contact form and blog</td><td>No; it works quietly in the background</td></tr>
-    <tr><td>Sending website enquiries to a CRM or Google Sheet</td><td>Usually not; many form plugins and CRMs have ready-made connections (see <a href="/blog/connect-website-forms-to-crm/">connecting forms to a CRM</a>)</td></tr>
-    <tr><td>Syncing WooCommerce orders or stock with inventory, billing or ERP software</td><td>Often, if no reliable ready-made connector exists</td></tr>
-    <tr><td>A mobile app that shows your products, courses or listings</td><td>Yes; the app reads its content from the API</td></tr>
-    <tr><td>Live calculators, filters or dashboards that update without reloading</td><td>Often, through custom endpoints</td></tr>
-    <tr><td>A headless front end</td><td>Yes, for everything</td></tr>
+    <tr><td>Published posts and pages</td><td>Yes</td><td>Same as on the website</td></tr>
+    <tr><td>Drafts and private posts</td><td>No</td><td>Need an authenticated user with permission</td></tr>
+    <tr><td>Users list</td><td>Partly</td><td>Shows usernames of people who have published posts; often worth restricting</td></tr>
+    <tr><td>WooCommerce orders and customers</td><td>No</td><td>Need API keys with the right permissions</td></tr>
+    <tr><td>Site settings</td><td>No</td><td>Administrators only</td></tr>
   </tbody>
 </table>
-<p>If a developer proposes custom endpoints, ask three questions: who can call each one, what data does it return, and how are permissions checked?</p>
+<p>The users endpoint is the one most site owners want to tighten, because it can reveal login usernames. Combined with weak passwords, that helps attackers. Restricting it, and using strong passwords and two-factor login as covered in <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>, closes that gap.</p>
+
+<h2 id="authentication-and-application-passwords">Authentication and application passwords</h2>
+<p>To do anything beyond reading public content, a request must be authenticated. There are a few ways:</p>
+<ul>
+  <li><strong>Cookie authentication</strong> is used inside the WordPress admin. When you are logged in, the editor's requests carry your session and a security token automatically.</li>
+  <li><strong>Application passwords</strong> are built into WordPress. Under Users, Profile, you create a named password for one integration. It works only for API access, not for logging in to the dashboard, and you can revoke it without changing your main password.</li>
+  <li><strong>Plugin-specific keys</strong> such as WooCommerce REST API keys, which can be read-only or read-write.</li>
+  <li><strong>OAuth or token plugins</strong> for more complex setups.</li>
+</ul>
+<p>Give each integration its own user with the lowest role that works, and its own application password or key. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> helps choose the right role. Always use https, so credentials are not sent in plain text.</p>
+
+<h2 id="when-a-business-actually-needs-the-rest-api">When a business actually needs the REST API</h2>
+<p>Most small business websites never need custom REST API work. It becomes useful when:</p>
+<ul>
+  <li>You want website form entries or WooCommerce orders sent automatically to a CRM, ERP or accounting tool. See <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a>.</li>
+  <li>Stock, prices or products need to sync with an inventory or billing system.</li>
+  <li>A mobile app needs to show the same content or products as the website.</li>
+  <li>You want a headless front end built with a JavaScript framework; <a href="/blog/headless-wordpress-small-business/">headless WordPress explained</a> covers whether that is worth it.</li>
+  <li>Several sites need to share content, such as a group of branch or brand sites.</li>
+  <li>You need a custom endpoint that exposes only specific data for a partner or app.</li>
+</ul>
+<p>Custom endpoints are usually built as a small plugin so they survive theme changes; <a href="/blog/custom-wordpress-plugin-development/">custom WordPress plugin development</a> explains that approach.</p>
 
 <h2 id="don-t-switch-it-off-restrict-it">Don't switch it off; restrict it</h2>
-<p>Some older security advice says to disable the REST API entirely. On a modern site that tends to break the block editor, forms, WooCommerce features and plugin settings. A better approach:</p>
+<p>Some security guides suggest disabling the REST API completely. On a modern WordPress site that breaks the block editor, many plugins and integrations. A better approach is to restrict what is exposed:</p>
 <ul>
-  <li>Restrict specific endpoints that expose more than they should, such as the user listing</li>
-  <li>Keep plugins updated: custom endpoints that forget to check permissions are a common source of plugin vulnerabilities</li>
-  <li>Deactivate and delete plugins you no longer use, so their endpoints and code are gone</li>
-  <li>Use a firewall or security plugin to rate-limit abusive requests to /wp-json/</li>
-  <li>Test the editor, forms and checkout after changing any API-related setting</li>
+  <li>Restrict the users endpoint to logged-in users, through a security plugin setting or a small code snippet.</li>
+  <li>Remove or protect custom endpoints added by plugins you no longer use, by deactivating and deleting those plugins.</li>
+  <li>Use the lowest-permission keys for integrations, and revoke them when a tool is retired.</li>
+  <li>Rate-limit or block abusive API traffic at the firewall; <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers how.</li>
+  <li>Keep WordPress and plugins updated, since API vulnerabilities are usually fixed in updates.</li>
 </ul>
+<p>Treat the REST API as part of your general hardening, alongside the steps in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
 
-<p>Planning an integration, an app or a headless build, or want your site's API locked down sensibly? I build and maintain integrations as part of <a href="/wordpress-website-development/">WordPress website development</a>, or you can <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a> for a specific job.</p>
+<h2 id="common-rest-api-errors">Common REST API errors</h2>
+<table>
+  <thead><tr><th>Error or symptom</th><th>Likely cause</th><th>What to check</th></tr></thead>
+  <tbody>
+    <tr><td>Editor shows "Updating failed" or "The response is not a valid JSON response"</td><td>REST API blocked by a security plugin, firewall or wrong permalinks</td><td>Security settings, firewall logs, re-save permalinks</td></tr>
+    <tr><td>401 Unauthorized</td><td>Missing or wrong credentials</td><td>Application password, user role, https</td></tr>
+    <tr><td>403 Forbidden</td><td>User lacks permission, or a firewall rule blocks the request</td><td>Role capabilities, firewall rules</td></tr>
+    <tr><td>404 on /wp-json/</td><td>Permalinks or server rewrite rules not working</td><td>Permalink settings, server configuration</td></tr>
+  </tbody>
+</table>
+<p>Site Health under Tools also reports when the REST API is not reachable, which is a quick first check.</p>
+
+<h2 id="performance-and-the-rest-api">Performance and the REST API</h2>
+<p>REST API requests run WordPress and PHP just like page loads, but they are usually not served from the page cache. A badly built integration that polls the site every few seconds, or a front end that makes dozens of API calls per page, can slow the whole site down, particularly on shared hosting. Ask integrations to fetch only the fields they need, to sync changes in batches rather than one record at a time, and to use webhooks where possible so WordPress sends data when something changes instead of being asked constantly. Check your server logs if the site slows down after a new tool is connected.</p>
+
+<h2 id="getting-help-with-integrations">Getting help with integrations</h2>
+<p>Connecting WordPress to other systems through the REST API is straightforward for a developer who has done it before, and easy to get wrong in ways that leak data or create duplicate orders. Plan what data moves in which direction, how often, and what happens when one side is down. If you need an integration built or reviewed, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>What is the WordPress REST API?</h3>
+<p>It is a built-in interface that lets other programs read and change WordPress content through URLs under /wp-json/, receiving data as JSON. The block editor and many plugins depend on it.</p>
+<h3>Is the WordPress REST API a security risk?</h3>
+<p>Not by itself. Public endpoints show content that is already public. The main step is to restrict the users endpoint, use strong authentication for integrations and keep plugins updated.</p>
+<h3>Should I disable the WordPress REST API?</h3>
+<p>No. Disabling it breaks the block editor and many plugins. Restrict sensitive endpoints instead.</p>
+<h3>What are application passwords in WordPress?</h3>
+<p>They are separate passwords created per integration under your user profile. They work only for API access and can be revoked individually without changing your login password.</p>
+<h3>Do I need the REST API for a normal business website?</h3>
+<p>You use it already through the editor and plugins, but you only need custom REST API work for integrations, apps, headless front ends or syncing with other systems.</p>
+
+<p>Need WordPress connected to your CRM, inventory or app? You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> from Samverse to plan and build it safely.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -289,12 +320,16 @@ https://yoursite.com/wp-json/wp/v2/categories</code></pre>
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#what-the-rest-api-is-in-plain-language">What the REST API is, in plain language</a></li>
+              <li><a href="#the-wordpress-rest-api-explained-in-plain-language">The WordPress REST API explained in plain language</a></li>
               <li><a href="#what-already-uses-it-on-your-site">What already uses it on your site</a></li>
               <li><a href="#what-s-public-by-default">What's public by default</a></li>
               <li><a href="#authentication-and-application-passwords">Authentication and application passwords</a></li>
               <li><a href="#when-a-business-actually-needs-the-rest-api">When a business actually needs the REST API</a></li>
               <li><a href="#don-t-switch-it-off-restrict-it">Don't switch it off; restrict it</a></li>
+              <li><a href="#common-rest-api-errors">Common REST API errors</a></li>
+              <li><a href="#performance-and-the-rest-api">Performance and the REST API</a></li>
+              <li><a href="#getting-help-with-integrations">Getting help with integrations</a></li>
+              <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
           <div class="side-cta">
@@ -323,7 +358,7 @@ https://yoursite.com/wp-json/wp/v2/categories</code></pre>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/headless-wordpress-small-business/"><img class="post-card-img" src="/assets/og/blog-headless-wordpress-small-business.webp" alt="Headless WordPress Explained: How It Works, Pros and Cons, Costs, and Whether a Small Business Needs It" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Headless WordPress Explained: How It Works, Pros and Cons, Costs, and Whether a Small Business Needs It</h3><p>Headless WordPress explained for business owners: how it works, pros and cons, what drives the cost, when a small business needs it, and the alternatives.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/custom-wordpress-plugin-development/"><img class="post-card-img" src="/assets/og/blog-custom-wordpress-plugin-development.webp" alt="Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built</h3><p>Custom WordPress plugin development explained: when a bespoke plugin beats off-the-shelf ones, real examples, the build process, cost factors and upkeep.</p><span class="post-card-meta">28 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/custom-post-types-fields/"><img class="post-card-img" src="/assets/og/blog-custom-post-types-fields.webp" alt="Custom Post Types and Custom Fields in WordPress: Examples, ACF and Similar Tools, Registering Them in Code, Templates and SEO" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Custom Post Types and Custom Fields in WordPress: Examples, ACF and Similar Tools, Registering Them in Code, Templates and SEO</h3><p>Custom post types and custom fields in WordPress explained with examples, ACF and similar tools, code to register a post type, templates and SEO.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-user-roles-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-user-roles-explained.webp" alt="WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which</h3><p>WordPress user roles explained: what Administrators, Editors, Authors, Contributors and Shop Managers can do, and which role to give staff and developers.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

@@ -42136,95 +42136,113 @@ https://another-site.example/page-with-paid-link/</code></pre>
   },
   {
     slug: 'multi-location-business-website',
-    seoTitle: 'Multi-Location Business Website: How to Structure It',
+    seoTitle: 'Multi-Location Business Website: Branch Pages and Local SEO',
     title: 'Websites for Businesses With Multiple Branches: Location Pages, Profiles and Schema',
-    description: 'How to structure a website for a business with several branches or clinics: branch pages, a Google Business Profile per branch, schema and avoiding duplication.',
+    description: 'How to build a multi-location business website: one site or many, branch page URLs, what each page needs, Google profiles, schema and a WordPress template.',
     date: '2026-09-28',
+    updated: '2026-10-29',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
-<p>A group of clinics, a coaching institute with five centres, a restaurant chain, showrooms in three cities: once a business has more than one branch, its website has a new job. It has to help each customer find the right branch quickly, and help Google understand that each branch is a real place with its own address, hours and reviews. Most multi-location sites fall short in the same few ways: one contact page listing every address, branch pages copied from each other, and every Business Profile pointing at the homepage.</p>
+<p>A multi-location business website works best as one site with a dedicated page for each branch: its own address, phone number, hours, map, photos and local details, linked to that branch's Google Business Profile. Separate websites per branch are rarely worth the extra cost, and copy-paste branch pages with only the city name changed tend not to rank.</p>
+<p>This guide covers how to structure the site, what each branch page should contain, how Google Business Profiles and schema fit in, and how to build it in WordPress so it stays accurate. It suits clinics, coaching institutes, showrooms, salons, restaurants and service companies with two or more locations across Indian cities.</p>
 
-<h2>One website, separate websites or Multisite?</h2>
+<h2>Multi-location business website: one site, separate sites or Multisite?</h2>
+<p>The first decision is how many websites you need. For nearly all small and mid-sized businesses the answer is one.</p>
 <table>
-  <thead><tr><th>Option</th><th>Works well when</th><th>Watch out for</th></tr></thead>
+  <thead><tr><th>Option</th><th>Works well when</th><th>Drawbacks</th></tr></thead>
   <tbody>
-    <tr><td>One website with branch pages</td><td>Branches share a brand, services and booking process (most businesses)</td><td>Needs a good template so every branch page is complete and consistent</td></tr>
-    <tr><td>Separate website per branch</td><td>Franchisees or branches run almost as independent businesses</td><td>Each site builds its SEO from scratch, and designs and details drift apart</td></tr>
-    <tr><td>WordPress Multisite</td><td>Many branches need their own sections, managed by separate local teams</td><td>More complex hosting, plugins and maintenance; rarely needed for a handful of branches</td></tr>
+    <tr><td>One website, a page per branch</td><td>Same brand, same services, central marketing</td><td>Needs a clear template so pages are not thin</td></tr>
+    <tr><td>Separate websites per branch</td><td>Branches are different brands or franchises with their own owners</td><td>Each site builds authority alone; more hosting, updates and cost</td></tr>
+    <tr><td>WordPress Multisite</td><td>Many branches need their own sub-site and local editors</td><td>More complex updates, plugins and SEO; often overkill</td></tr>
   </tbody>
 </table>
-<p>For most businesses with a few branches, one website with a page per branch is the simplest and strongest option, because every review, link and article builds up one domain. If you're considering the third option, see <a href="/blog/wordpress-multisite-when-needed/">when a business needs WordPress Multisite</a>.</p>
+<p>One website pools all your links, reviews and content into a single domain, which helps every branch. Multisite makes sense only in specific cases such as franchise networks where local teams publish their own news; <a href="/blog/wordpress-multisite-when-needed/">when WordPress Multisite is needed</a> explains the trade-offs.</p>
 
 <h2>Plan the URLs and navigation</h2>
+<p>Keep branch URLs short, predictable and permanent:</p>
 <ul>
-  <li><strong>A locations hub</strong> at a short address like /locations/ or /branches/, listing every branch with its area, phone number and a link to its page</li>
-  <li><strong>One page per branch</strong>, such as /locations/saket/ or /clinics/pune-baner/. Add a city level (/locations/delhi/saket/) only if you have several branches in each city</li>
-  <li><strong>Services stay central.</strong> Keep one main page per service and link to it from branch pages, rather than copying every service page for every branch</li>
-  <li><strong>A "Find a branch" or "Locations" item</strong> in the main menu, plus the branch list in the footer</li>
+  <li><strong>/locations/</strong> as an index page listing every branch, ideally with a map and a city filter.</li>
+  <li><strong>/locations/pune-baner/</strong> style URLs for each branch, using city plus area when you have several branches in one city.</li>
+  <li><strong>/locations/mumbai/</strong> city hub pages only when you have three or more branches in that city and something useful to say at city level.</li>
 </ul>
-<p>If a service is only offered at some branches (MRI at one centre, say), mention it on the service page and link to those branches.</p>
+<p>Add a Locations link in the main menu and the footer. On service pages, show nearby branches so a visitor reading about a treatment or course can jump straight to the closest location. Avoid putting dates, staff names or temporary offers in URLs, because those change.</p>
 
 <h2>What every branch page needs</h2>
-<p>A branch page should answer everything a customer needs to get there and get served. Doing this well also makes each page naturally different from the others.</p>
+<p>A branch page should answer everything a person needs before visiting or calling that specific branch:</p>
 <ul>
-  <li>Full address, a landmark and a map (loaded only when needed, so the page stays fast)</li>
-  <li>Opening hours, including Sunday and festival changes</li>
-  <li>A phone number and WhatsApp that reach that branch, not a central number that transfers calls</li>
-  <li>Photos of the actual building, entrance and interior, so people recognise it when they arrive</li>
-  <li>Parking, nearest metro or bus stop, and lift or wheelchair access</li>
-  <li>Which services, doctors, trainers or teachers are available there, and on which days</li>
-  <li>The branch manager or team, and reviews from customers of that branch</li>
-  <li>A booking or enquiry form that pre-selects the branch and sends the enquiry to the right people</li>
+  <li>Full address with landmark, written exactly as on the Google Business Profile.</li>
+  <li>A local phone number and WhatsApp link that reach that branch, not only head office.</li>
+  <li>Opening hours, including holiday hours and any day the branch is closed.</li>
+  <li>An embedded map and directions from nearby areas, metro stations or main roads.</li>
+  <li>Real photos of the outside, entrance and inside, so people recognise it on arrival.</li>
+  <li>Services or products available at that branch, noting anything not offered there.</li>
+  <li>The branch manager or team, with names and roles if they are happy to be shown.</li>
+  <li>Parking, accessibility, payment options and other practical details.</li>
+  <li>Reviews from that branch, shown honestly and with permission.</li>
+  <li>A clear call to action: call, book, WhatsApp or get directions.</li>
 </ul>
 
 <h2>Avoid duplicate and thin branch pages</h2>
-<p>The quickest way to build ten branch pages is to write one and copy it nine times, changing only the address. Google may treat those pages as near-duplicates and show just one of them, so the others rarely rank.</p>
-<ul>
-  <li>Keep shared content (company history, general service descriptions) short on branch pages, and link to the main page instead</li>
-  <li>Write the parts that are genuinely local: what's nearby, who works there, what that branch is known for, and the questions local customers ask</li>
-  <li>Don't create pages for cities where you have no branch. If a nearby branch serves customers there, mention it on that branch's page</li>
-</ul>
+<p>The fastest way to waste branch pages is to copy one page and swap the city name. Google can treat near-identical pages as low value, and visitors learn nothing new. Make each page different with information only that branch has: its location details, the areas it serves, its team, its photos, its parking and its local questions.</p>
+<p>The same rule applies if you want pages for cities where you have no branch. Without a real presence or service there, those are doorway pages. <a href="/blog/local-landing-pages-without-doorway-pages/">Local landing pages without doorway pages</a> shows how to tell the difference, and <a href="/blog/service-area-business-seo/">SEO for service area businesses</a> covers companies that travel to customers rather than receiving them at an address.</p>
 
 <h2>One Google Business Profile per branch</h2>
-<p>For searches like "{service} near me", each branch competes on its own Business Profile. Generally, each staffed location that is open to customers can have its own profile.</p>
+<p>Each branch with staff and opening hours where customers visit can have its own Google Business Profile. Link each profile's website field to that branch's page, not the home page. This connects the profile and the page and sends map searchers to the most relevant information.</p>
 <ul>
-  <li><strong>Link each profile to its branch page</strong>, not the homepage. The branch page then confirms the same address, phone and hours Google sees on the profile</li>
-  <li><strong>Use your real business name</strong> as it appears on the signboard. Adding area names or keywords that aren't part of that name goes against Google's guidelines</li>
-  <li><strong>Keep ownership central.</strong> Manage all profiles from an account the company controls, adding branch managers as managers rather than owners, so nothing is lost when someone leaves</li>
-  <li><strong>Ask for reviews at every branch</strong>, so newer branches aren't left with a handful of old reviews</li>
+  <li>Use the same business name on every profile; add no keywords or city names that are not part of your real name.</li>
+  <li>Keep name, address and phone identical on the profile, branch page and directory listings.</li>
+  <li>Choose categories per branch if services differ between locations.</li>
+  <li>Ask for reviews per branch so each profile builds its own reputation.</li>
 </ul>
-<p>Google offers bulk management and verification options for businesses with many locations; check the current requirements. The <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers the details for each individual profile.</p>
+<p>The setup detail is in the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>, and the wider picture in <a href="/blog/local-seo-guide-small-business-india/">local SEO for small businesses in India</a>.</p>
 
 <h2>Schema markup for multiple locations</h2>
-<p>Structured data helps Google connect each branch to the brand. A common, sensible set-up:</p>
-<ul>
-  <li><strong>Organization</strong> markup once, usually on the homepage, with your brand name, logo and official social profiles</li>
-  <li><strong>LocalBusiness</strong> markup (or a more specific type, such as Dentist or MedicalClinic) on each branch page, with that branch's name, address, phone, opening hours, map coordinates and page URL</li>
-  <li>Each branch linked back to the main organisation, for example with the parentOrganization property</li>
-</ul>
-<p>Every value must match what's visible on that page and on the branch's Business Profile. See <a href="/blog/schema-markup-explained/">schema markup explained</a> for how to add and test it.</p>
+<p>Add LocalBusiness schema, or a more specific type such as MedicalClinic or Restaurant, on each branch page with that branch's name, address, phone, hours, geo coordinates and URL. Use an Organization entity on the home page for the brand as a whole, and link branches to it with the parentOrganization property.</p>
+<table>
+  <thead><tr><th>Page</th><th>Schema type</th><th>Key properties</th></tr></thead>
+  <tbody>
+    <tr><td>Home page</td><td>Organization</td><td>Name, logo, URL, social profiles</td></tr>
+    <tr><td>Each branch page</td><td>LocalBusiness or a specific subtype</td><td>Address, phone, opening hours, geo, URL, parentOrganization</td></tr>
+    <tr><td>Locations index</td><td>Usually none needed</td><td>Clear links to every branch page</td></tr>
+  </tbody>
+</table>
+<p>Do not put several branch addresses into one LocalBusiness block on the home page. <a href="/blog/schema-markup-explained/">Schema markup explained</a> covers how to add and test it.</p>
 
 <h2>Build branch pages from a template in WordPress</h2>
-<p>With more than a few branches, typing each page by hand gets messy. A cleaner approach is a "Location" content type with fields for address, hours, phone, WhatsApp, map, photos, services and team. One template then displays every branch the same way:</p>
-<ul>
-  <li>Staff update hours or a phone number in one field, and it changes everywhere that branch appears</li>
-  <li>No branch page is missing its map or timings because someone forgot a section</li>
-  <li>The locations hub, footer and schema can all be generated from the same data</li>
-</ul>
-<p><a href="/blog/custom-post-types-fields/">Custom post types and custom fields</a> explains how this works in WordPress.</p>
+<p>With more than a few branches, typing each page by hand in a page builder leads to inconsistent details. A better approach is a Locations custom post type with custom fields for address, phone, WhatsApp, hours, map coordinates, photos, services and team. One template then lays out every branch page the same way and outputs the schema from the same fields.</p>
+<p>This brings practical benefits: the locations index and maps update automatically, a changed phone number is edited in one field, and new branches go live faster. <a href="/blog/custom-post-types-fields/">Custom post types and fields</a> explains how this is structured.</p>
+
+<h2>Local content and reviews for each branch</h2>
+<p>Once the basic details are in place, branch pages get stronger with content that only that location can provide. Useful additions include answers to questions that branch's staff hear every week, notes on the neighbourhoods it serves, local events or camps it has run, and photos updated when the space changes. A clinic might list which doctors consult at which branch on which days; a coaching institute might show batch timings per centre.</p>
+<p>Reviews work the same way. Ask happy customers to review the branch they visited, using that branch's own review link, and show a few genuine reviews on the matching page with permission. Do not copy one branch's reviews onto every page. Reply to reviews on each profile, since prospective customers read replies as well as ratings. Track enquiries per branch with separate phone numbers or form fields so you can see which locations the website actually helps.</p>
 
 <h2>Keep everything in sync when branches change</h2>
-<p>Most multi-location problems come from changes that weren't updated everywhere.</p>
-<ul>
-  <li><strong>New branch:</strong> publish its page and link it from the hub, then create and verify its Business Profile pointing to that page</li>
-  <li><strong>Changed phone number or hours:</strong> update the website, Business Profile and main directory listings on the same day</li>
-  <li><strong>Moved branch:</strong> update the address everywhere, keep the same page if it serves the same area, and expect Google to ask you to verify the new address</li>
-  <li><strong>Closed branch:</strong> mark the profile as permanently closed, and redirect its page to the nearest branch or the locations hub</li>
-</ul>
-<p>A quarterly check of every branch page against its profile catches most mistakes before customers do.</p>
+<p>Branches open, move and close. When that happens, update in this order:</p>
+<ol>
+  <li>The branch page on the website.</li>
+  <li>The Google Business Profile, including marking it closed or moved where relevant.</li>
+  <li>Directory listings and social profiles.</li>
+  <li>Any ads, QR codes or printed material pointing to the old details.</li>
+</ol>
+<p>If a branch closes, redirect its page to the nearest branch or the locations index rather than leaving a broken page. Keep a simple list of every branch with its profile, page URL and listing logins so nothing is forgotten.</p>
 
-<p>Planning a site for several branches? <a href="/wordpress-website-development/">WordPress website development</a> can give you a branch template that stays consistent as you grow, and <a href="/wordpress-seo-services/">WordPress SEO</a> support can set up the profiles, schema and branch pages so each location can rank.</p>
+<h2>City pages and getting help</h2>
+<p>If you serve customers across several Indian cities, it helps to work with a developer who understands local SEO and can build the template once and reuse it. Samverse works with businesses across India, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a> and other cities, as listed on the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page.</p>
+
+<h2>FAQs</h2>
+<h3>How do I build a multi-location business website?</h3>
+<p>Use one website with a locations index and a separate page for each branch, built from a template with fields for address, phone, hours, map, photos and services. Link each page to that branch's Google Business Profile and add LocalBusiness schema.</p>
+<h3>Should each branch have its own website?</h3>
+<p>Usually not. One domain pools authority and is cheaper to maintain. Separate sites suit branches that are independently owned brands or franchises with different offerings.</p>
+<h3>Can I create pages for cities where I have no branch?</h3>
+<p>Only if you genuinely serve customers there and have useful, unique information for that city. Pages that only swap the city name are treated as doorway pages.</p>
+<h3>Which page should each Google Business Profile link to?</h3>
+<p>Link each profile to its own branch page, not the home page, so visitors land on the address, hours and contact details for that location.</p>
+<h3>How do I add schema for multiple locations?</h3>
+<p>Add LocalBusiness schema on each branch page with that branch's details, and Organization schema on the home page, linked with parentOrganization.</p>
+
+<p>Planning branch pages or a full multi-location site? <a href="/wordpress-seo-services/">WordPress SEO services</a> from Samverse can set up the structure, template and schema.</p>
 `,
   },
   {
@@ -43227,115 +43245,122 @@ https://another-site.example/page-with-paid-link/</code></pre>
   },
   {
     slug: 'payment-gateways-india-compared',
-    seoTitle: 'Choosing a Payment Gateway in India: What to Compare',
+    seoTitle: 'Payment Gateways in India Compared: How to Choose One',
     title: 'How to Choose a Payment Gateway for Your Indian Website: What to Compare',
-    description: 'How to choose a payment gateway for an Indian website: compare payment methods, fees, settlement times, KYC, international cards and WooCommerce support.',
+    description: 'Payment gateways in India compared on what matters: UPI and card methods, fee structure, settlements, KYC, international cards and WooCommerce support.',
     date: '2026-09-28',
+    updated: '2026-10-29',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
-<p>Choosing a payment gateway looks simple until you compare a few. They all promise UPI, cards and quick settlements, but the details that matter to your business are buried in pricing pages and onboarding emails. This guide covers what to compare before you sign up, so the gateway fits how your customers pay and how your business runs. If you're new to taking payments online, start with <a href="/blog/accept-online-payments-wordpress-india/">how to accept online payments on a WordPress website</a>, then come back here to choose a provider.</p>
+<p>To compare payment gateways in India, start with how your customers pay, then look at the methods each gateway supports, the full fee structure, how fast money settles, whether your business type passes their KYC, international card support, and how well their plugin works with WooCommerce or your platform. There is no single best gateway; the right one depends on your business, your customers and your site.</p>
+<p>This guide gives you the questions to ask and a checklist to compare providers side by side. It does not rank brands or quote fees, because pricing changes and depends on your business; always check the provider's current terms. If you want a gateway set up and tested on your store, <a href="/woocommerce-developer/">WooCommerce development</a> covers it.</p>
+
+<h2>Payment gateways in India compared: what to look at</h2>
+<table>
+  <thead><tr><th>Factor</th><th>Questions to ask</th><th>Why it matters</th></tr></thead>
+  <tbody>
+    <tr><td>Payment methods</td><td>UPI, cards, net banking, wallets, EMI, pay later?</td><td>Missing a method customers expect loses sales</td></tr>
+    <tr><td>Fees</td><td>Per-method rates, setup, annual, international, refunds?</td><td>Headline rates hide extra charges</td></tr>
+    <tr><td>Settlements</td><td>How many days, any instant option, reports?</td><td>Affects cash flow and reconciliation</td></tr>
+    <tr><td>KYC and onboarding</td><td>Is your business category accepted, what documents?</td><td>Some categories face extra checks or refusal</td></tr>
+    <tr><td>International payments</td><td>Foreign cards, currencies, extra approval?</td><td>Needed for export and overseas customers</td></tr>
+    <tr><td>Platform support</td><td>Official WooCommerce or Shopify plugin, maintained?</td><td>A weak plugin causes failed orders</td></tr>
+    <tr><td>Support</td><td>Dashboard, email, phone, dispute handling?</td><td>Problems always come up at busy times</td></tr>
+  </tbody>
+</table>
 
 <h2>Start with how your customers pay</h2>
-<p>Before comparing providers, write down a few facts about your own business:</p>
-<ul>
-  <li>What you sell: physical products, services, fees, courses or digital downloads</li>
-  <li>Your typical order value, and whether you take many small payments or a few large ones</li>
-  <li>Whether your customers are mostly in India, or also overseas</li>
-  <li>Whether customers pay once, in instalments or on a recurring basis</li>
-  <li>Roughly how many orders you expect each month</li>
-</ul>
-<p>A shop selling low-value items to UPI-first mobile shoppers needs something different from a consultant billing overseas clients or an institute collecting large fees. The "best" gateway is simply the one that fits these answers.</p>
+<p>Look at your own customers before reading comparison tables. A D2C brand selling to young buyers on phones will see most payments through UPI. A B2B supplier may need net banking and cards for larger amounts. A coaching institute may want EMI options. A temple or NGO may need recurring donations and receipts. An exporter needs international cards.</p>
+<p>Ask your team which methods customers request most, check past orders if you already sell online, and list your must-have methods before contacting any provider. <a href="/blog/accept-online-payments-wordpress-india/">How to accept online payments on a WordPress website in India</a> covers the basics of each method.</p>
 
 <h2>Payment methods</h2>
-<p>Most Indian gateways support the common methods, but check exactly what will be available on your account, since some methods are enabled only on request or after extra checks:</p>
+<p>Most established Indian gateways support UPI, debit and credit cards, net banking and some wallets. Differences show up in the details:</p>
 <ul>
-  <li><strong>UPI:</strong> how it works on mobile (opening the customer's UPI app directly) and on desktop (QR code or UPI ID)</li>
-  <li><strong>Debit and credit cards,</strong> including RuPay</li>
-  <li><strong>Net banking,</strong> and how many banks are covered</li>
-  <li><strong>Wallets</strong></li>
-  <li><strong>EMI and pay-later options,</strong> useful for higher-value products</li>
-  <li><strong>Recurring payments,</strong> if you sell subscriptions or memberships</li>
+  <li><strong>UPI experience:</strong> whether mobile users get an intent flow that opens their UPI app directly, a QR code on desktop, and how failed UPI payments are handled.</li>
+  <li><strong>EMI and pay later:</strong> availability, which banks are covered and who pays the interest.</li>
+  <li><strong>Recurring payments:</strong> support for subscriptions or UPI mandates, if you sell memberships or regular deliveries.</li>
+  <li><strong>Payment links and QR:</strong> useful for orders taken on WhatsApp or phone.</li>
 </ul>
-<p>Also look at the payment screen itself. Is it a popup on your site or a redirect to the gateway's page? Is it clean and quick on a small phone? A clumsy payment step loses orders you had otherwise already won.</p>
-
-<p>On Shopify, a separate Shopify fee may apply on top of the provider fee when you use an outside gateway; <a href="/blog/shopify-payment-gateways-india/">payment gateways on Shopify in India</a> explains how the two add up.</p>
+<p>Cash on delivery is not a gateway feature, but most stores still offer it alongside. <a href="/blog/woocommerce-cash-on-delivery-india/">Cash on delivery in WooCommerce</a> covers limits and fees.</p>
 
 <h2>Fees and pricing structure</h2>
-<p>Fees change, and published rates are not always what you'll be offered, so I won't quote numbers here. Instead, ask each provider these questions and compare the answers side by side:</p>
+<p>Do not compare only the headline rate. Ask each provider for a written breakdown covering:</p>
 <ul>
-  <li>Is there a setup fee, annual fee or minimum commitment?</li>
-  <li>What is the per-transaction fee, and does it differ by method (UPI, cards, net banking, international cards, EMI)?</li>
-  <li>Is GST charged on top of the fees?</li>
-  <li>Are there charges for refunds, faster settlement or extra features?</li>
-  <li>Can pricing be negotiated as your volume grows?</li>
+  <li>Rates per method, since UPI, domestic cards, credit cards, international cards and wallets are often priced differently.</li>
+  <li>GST on the fees, which is charged on top.</li>
+  <li>Setup, annual maintenance or minimum monthly charges, if any.</li>
+  <li>Charges for instant settlement, refunds, chargebacks or payment links.</li>
+  <li>Whether the rate can be negotiated as your volume grows.</li>
 </ul>
-<p>Work out the cost on a realistic month of your own orders, not on a single headline rate. Always check the provider's current pricing page and your agreement before signing up.</p>
+<p>Estimate a typical month using your expected mix of methods, rather than assuming every payment costs the same. RBI rules and provider pricing change, so check the current position with the provider and your CA.</p>
 
 <h2>Settlements and reconciliation</h2>
-<p>Settlement is when the money actually reaches your bank account. It matters for cash flow, especially if you buy stock or pay suppliers quickly.</p>
-<ul>
-  <li>What is the standard settlement cycle, and is it different for new accounts?</li>
-  <li>Is faster or instant settlement available, and what does it cost?</li>
-  <li>In what situations can the gateway hold or delay settlements?</li>
-  <li>Do settlement reports show fees, GST and refunds clearly for each transaction?</li>
-</ul>
-<p>Good reports make it easy for you or your accountant to match gateway payouts with website orders. If you're GST-registered, also see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a>.</p>
+<p>Settlement is when money reaches your bank account. Ask how many working days after payment, whether weekends and bank holidays delay it, and whether faster settlement is available and at what cost. For a small business, a few days' difference can matter.</p>
+<p>Reconciliation is matching payments to orders. Check whether the dashboard exports reports that show order ID, fees, GST and net amount for each payment, and whether these can be matched easily in your accounting software.</p>
 
 <h2>KYC and onboarding</h2>
-<p>Payment aggregators in India operate under RBI rules, so onboarding involves proper verification. Expect to provide documents such as PAN, bank account details and business proof, plus GST details if you're registered. Requirements differ for sole proprietors, partnerships, companies, trusts and NGOs.</p>
-<p>Check before you apply:</p>
-<ul>
-  <li>Does the gateway accept your business type and category? Some categories are restricted or need extra approval.</li>
-  <li>What does your website need to show? Gateways commonly review contact details, pricing, terms, privacy, refund and shipping policies.</li>
-  <li>How long does activation usually take, and can you build and test in sandbox mode meanwhile?</li>
-</ul>
-<p>Getting your website ready first avoids a lot of back-and-forth; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy basics for Indian websites</a>.</p>
+<p>Every gateway needs KYC documents, typically business registration proof, PAN, bank account details, address proof and website details. Some also check your website for terms, privacy, refund and contact pages before approving. Certain business categories may face extra review or may not be accepted. Ask early whether your category is supported, and keep your website's policy pages ready to avoid delays.</p>
 
 <h2>International cards and overseas customers</h2>
-<p>If you sell outside India, this can be the deciding factor. International card acceptance is often a separate activation with its own checks. Ask:</p>
-<ul>
-  <li>Are international cards supported on your account, and what extra documents are needed?</li>
-  <li>Can customers pay in their own currency, or only in rupees?</li>
-  <li>How are foreign payments converted and settled into your Indian bank account?</li>
-  <li>What paperwork do you receive for exports of goods or services, for your CA?</li>
-  <li>Are fees and settlement times different for international payments?</li>
-</ul>
-<p>Some businesses use one gateway for Indian customers and a second for overseas buyers. That's fine, as long as the checkout stays simple and each customer sees only the options that suit them.</p>
+<p>If you sell to customers outside India, check whether international cards are enabled by default or need separate approval, which currencies are supported, how conversion is shown to the customer and what extra fees apply. Exporters should also ask about documentation needed for foreign payments. <a href="/blog/woocommerce-sell-internationally/">Selling internationally with WooCommerce</a> covers the store side.</p>
 
 <p>Selling on Shopify instead? At the time of writing Shopify Payments is not offered in India, so these providers connect as third-party gateways; the guide to <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> covers payments, COD and GST invoices step by step.</p>
 
 <h2>WooCommerce and WordPress support</h2>
-<p>If your website runs on WordPress, the quality of the gateway's plugin matters as much as the gateway itself. Check:</p>
+<p>A gateway is only as good as its integration with your site. For WooCommerce, check:</p>
 <ul>
-  <li>Is there an official WooCommerce plugin maintained by the gateway, and is it updated regularly?</li>
-  <li>Does it work with the current WooCommerce version, including the block-based checkout?</li>
-  <li>Can you issue refunds from the WooCommerce order screen?</li>
-  <li>Does it use webhooks, so orders update correctly even if a customer closes the browser straight after paying?</li>
-  <li>Does it support what you need beyond one-time payments, such as subscriptions?</li>
-  <li>For sites without a store: does it work with your form plugin, or offer payment links and payment pages?</li>
+  <li>Is there an official plugin, updated recently and tested with the current WooCommerce version?</li>
+  <li>Does it support the block checkout as well as the classic checkout?</li>
+  <li>Does it handle webhooks, so orders update even if the customer closes the browser after paying?</li>
+  <li>Can refunds be issued from the WooCommerce admin?</li>
+  <li>Does it support subscriptions if you need them? See <a href="/blog/woocommerce-subscriptions/">WooCommerce subscriptions</a>.</li>
 </ul>
-<p>Test everything in the gateway's test mode, including failed and cancelled payments, before you go live.</p>
+<p>Shopify stores have a different set of options; <a href="/blog/shopify-payment-gateways-india/">Shopify payment gateways in India</a> covers them. For donations, <a href="/blog/temple-ngo-website-online-donations/">online donations for temples and NGOs</a> covers receipts and recurring giving.</p>
 
-<p>Already live and seeing failed payments, or paid orders stuck at "Pending payment"? See <a href="/blog/woocommerce-payment-gateway-not-working-india/">how to fix a payment gateway that isn't working in WooCommerce</a>, from webhooks to test and live keys.</p>
+<h2>Refunds, failed payments and disputes</h2>
+<p>How a gateway handles things going wrong matters as much as how it handles successful payments. Ask how refunds work for each method, how long they take to reach the customer and whether they can be issued in part. For UPI, ask what happens when money is debited but the payment shows as failed, and how quickly such amounts are reversed or reconciled to an order.</p>
+<p>Chargebacks and disputes are less common for small Indian stores than for international sellers, but they do happen, especially with cards. Ask how disputes are notified, what evidence you need to submit and how much time you get to respond. Keep delivery proof and order records for each order so you can answer quickly. Clear refund and cancellation policies on your website, written in plain language, also reduce disputes because customers know what to expect before they pay.</p>
+
+<h2>A UPI QR code or a full gateway?</h2>
+<p>Very small businesses sometimes start with a static UPI QR code or a payment link instead of a full gateway. That works for occasional orders taken over phone or WhatsApp, but it does not connect payments to website orders automatically, so someone has to check each payment by hand. Once you take regular orders on the website, a gateway integrated with your checkout saves time and avoids mistakes, because the order status updates as soon as payment succeeds.</p>
+
+<h2>Test before you go live</h2>
+<p>Once a gateway is approved, test it on your own site before telling customers:</p>
+<ol>
+  <li>Place test orders in the gateway's test mode with each method.</li>
+  <li>Switch to live keys and place a small real UPI payment and a card payment.</li>
+  <li>Try a failed payment and check the order status and customer message.</li>
+  <li>Issue a refund and check it in the gateway and WooCommerce.</li>
+  <li>Check order emails and that the settlement report shows the payment.</li>
+</ol>
+<p>If something fails, <a href="/blog/woocommerce-payment-gateway-not-working-india/">WooCommerce payment gateway not working in India</a> has a troubleshooting routine.</p>
 
 <h2>A quick comparison checklist</h2>
-<p>Use a simple table like this to compare two or three shortlisted gateways:</p>
-<table>
-  <thead><tr><th>What to compare</th><th>Questions to answer</th></tr></thead>
-  <tbody>
-    <tr><td>Payment methods</td><td>UPI, cards, net banking, wallets, EMI, recurring</td></tr>
-    <tr><td>Fees</td><td>Rates per method, setup or annual fees, GST, refund charges</td></tr>
-    <tr><td>Settlement</td><td>Standard cycle, faster options, clear reports</td></tr>
-    <tr><td>KYC</td><td>Documents, business category, activation time</td></tr>
-    <tr><td>International</td><td>Card support, currencies, export paperwork</td></tr>
-    <tr><td>WooCommerce</td><td>Official plugin, block checkout, refunds, webhooks</td></tr>
-    <tr><td>Support</td><td>How to reach them, and how disputes and chargebacks are handled</td></tr>
-  </tbody>
-</table>
-<p>Cash on Delivery isn't a gateway feature, but if you offer it, plan it alongside prepaid payments; see <a href="/blog/woocommerce-cash-on-delivery-india/">Cash on Delivery in WooCommerce</a>.</p>
+<ul>
+  <li>Supports every payment method on your must-have list.</li>
+  <li>Written fee breakdown received, with GST and extra charges.</li>
+  <li>Settlement timing fits your cash flow.</li>
+  <li>Your business category is accepted and documents are ready.</li>
+  <li>International cards available if you need them.</li>
+  <li>Maintained plugin for your platform and checkout type.</li>
+  <li>Support channel you can reach when payments fail.</li>
+</ul>
+<p>Once chosen, make the payment step itself easy to use; <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimization</a> covers that.</p>
 
-<p>Want your gateway set up, tested and connected to your store properly? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<h2>FAQs</h2>
+<h3>Which payment gateway is best in India?</h3>
+<p>It depends on your customers' payment methods, your business category, settlement needs, international sales and platform. Compare providers on those factors and test the integration on your site.</p>
+<h3>How do payment gateways in India compare on fees?</h3>
+<p>Fees vary by payment method, business type and volume, and GST is added. Ask each provider for a written breakdown and estimate a typical month based on your own mix of payments.</p>
+<h3>Can I use more than one payment gateway?</h3>
+<p>Yes. Some stores use one gateway for domestic payments and another for international cards, or keep a second as a backup. Each adds setup and testing work.</p>
+<h3>Do I need a registered business to use a payment gateway?</h3>
+<p>Requirements vary. Some providers accept individuals or sole proprietors with PAN and bank details, while others need business registration. Check the provider's current KYC list.</p>
+<h3>How long does gateway approval take?</h3>
+<p>It depends on the provider, your business category and how complete your documents and website policy pages are. Having everything ready speeds it up.</p>
+
+<p>Need a gateway connected and tested on your WooCommerce or Shopify store? Samverse works with businesses across India; see the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page.</p>
 `,
   },
   {
@@ -45101,89 +45126,116 @@ https://another-site.example/page-with-paid-link/</code></pre>
   },
   {
     slug: 'fix-lcp-largest-contentful-paint',
+    seoTitle: 'How to Fix Slow LCP (Largest Contentful Paint) in WordPress',
     title: 'How to Fix Slow Largest Contentful Paint (LCP) on WordPress',
-    description: 'How to fix slow Largest Contentful Paint on WordPress: find your LCP element, speed up server response, prioritise the hero image and cut render-blocking CSS.',
+    description: 'Fix slow Largest Contentful Paint in WordPress: find your LCP element, split the delay into four parts and fix server, hero image, CSS and fonts in order.',
     date: '2026-09-28',
+    updated: '2026-10-29',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
-<p>Largest Contentful Paint (LCP) measures how long the biggest piece of content in the first screen, usually a hero image, banner or main heading, takes to appear. When it's rated "poor", visitors stare at a mostly empty screen for too long, and some of them leave. Here's how to find what's slowing LCP on a WordPress site and how to fix each cause. If you're new to the three metrics, start with <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+<p>To fix slow LCP in WordPress, find which element is your Largest Contentful Paint, work out whether the delay comes from the server, the image download or render-blocking files, and fix that part first. On most business sites the answer is page caching, a properly sized hero image that loads early, and less CSS and JavaScript in the way.</p>
+<p>This guide walks through that process in order, with the checks I use on WordPress and WooCommerce sites for Indian businesses where most visitors arrive on mid-range phones over mobile data. If you would rather hand it over, <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> covers LCP, INP and CLS together.</p>
 
 <h2>What counts as a good LCP</h2>
+<p>Largest Contentful Paint is one of the three <a href="/blog/core-web-vitals-explained/">Core Web Vitals</a>. It records the moment the largest image, video poster or text block in the visible part of the screen finishes rendering. Google groups the result like this:</p>
 <table>
-  <thead><tr><th>LCP time</th><th>Google's rating</th></tr></thead>
+  <thead><tr><th>LCP time</th><th>Rating</th><th>What it usually means</th></tr></thead>
   <tbody>
-    <tr><td>2.5 seconds or less</td><td>Good</td></tr>
-    <tr><td>Between 2.5 and 4 seconds</td><td>Needs improvement</td></tr>
-    <tr><td>More than 4 seconds</td><td>Poor</td></tr>
+    <tr><td>2.5 seconds or less</td><td>Good</td><td>The main content appears quickly for most visitors</td></tr>
+    <tr><td>2.5 to 4 seconds</td><td>Needs improvement</td><td>One or two bottlenecks, often the hero image or server</td></tr>
+    <tr><td>Over 4 seconds</td><td>Poor</td><td>Several problems stacked together, common on builder-heavy pages</td></tr>
   </tbody>
 </table>
-<p>Google judges this from real visits at the 75th percentile, so most of your visitors need a good experience, not just those on fast office Wi-Fi. Mobile and desktop are rated separately. For most Indian business sites, mobile matters most, because that's where most visitors are and where phones and networks are slowest.</p>
+<p>The rating that matters is the 75th percentile of real visits, shown as field data in PageSpeed Insights and the Core Web Vitals report in Search Console. Lab scores from a single test are useful for diagnosis but swing from run to run, so do not chase a perfect lab number.</p>
 
 <h2>Step 1: Identify your LCP element</h2>
-<p>The measured element varies by page, and often between mobile and desktop.</p>
-<ol>
-  <li>Run the page through PageSpeed Insights and select the mobile results.</li>
-  <li>Check the field data at the top to confirm real visitors are affected, not just the lab test.</li>
-  <li>In the diagnostics, find the item that names the Largest Contentful Paint element: the exact image or block of text measured.</li>
-  <li>For more detail, record a page load in the Performance panel of Chrome DevTools and look for the LCP marker.</li>
-</ol>
-<p>Common LCP elements on WordPress sites are a hero image, a slider's first slide, an Elementor section background, a post's featured image or, on mobile, a large heading or opening paragraph.</p>
+<p>You cannot fix LCP until you know what it is. Run the page through PageSpeed Insights and open the diagnostic for the Largest Contentful Paint element; it names the exact image or text block. In Chrome DevTools, the Performance panel shows the same thing with a timing marker.</p>
+<p>Typical LCP elements on WordPress sites are:</p>
+<ul>
+  <li>A hero image or slider image at the top of the home page.</li>
+  <li>A background image set through a page builder section.</li>
+  <li>The main product image on a WooCommerce product page.</li>
+  <li>The H1 heading or first paragraph on blog posts with no featured image.</li>
+</ul>
+<p>Check mobile and desktop separately. The LCP element is often different on each, because a desktop layout may show a wide banner while the phone layout shows the heading first. The tools that report these numbers are compared in <a href="/blog/website-speed-test-tools-explained/">website speed test tools explained</a>.</p>
 
 <h2>Step 2: Work out which part is slow</h2>
-<p>LCP time breaks down into four parts, and each points to a different fix:</p>
+<p>LCP is not one delay but four in a row. PageSpeed Insights breaks it into these phases, and the biggest phase tells you where to work:</p>
 <table>
-  <thead><tr><th>Part</th><th>What it means</th><th>Usual fix</th></tr></thead>
+  <thead><tr><th>Phase</th><th>What it covers</th><th>Typical WordPress cause</th></tr></thead>
   <tbody>
-    <tr><td>Server response</td><td>Time before the first byte of HTML arrives (often called TTFB)</td><td>Caching, better hosting, fewer heavy plugins</td></tr>
-    <tr><td>Load delay</td><td>Time between the HTML arriving and the browser starting to download the LCP image</td><td>Make the image discoverable early; raise its priority</td></tr>
-    <tr><td>Load duration</td><td>Time spent downloading the image itself</td><td>Smaller, compressed, correctly sized images</td></tr>
-    <tr><td>Render delay</td><td>Time between the content being ready and it actually appearing</td><td>Remove render-blocking CSS, JavaScript, fonts and animations</td></tr>
+    <tr><td>Time to first byte</td><td>The server building and sending the HTML</td><td>No page cache, slow hosting, heavy plugins, far-away server</td></tr>
+    <tr><td>Resource load delay</td><td>Time before the browser starts fetching the LCP image</td><td>Image set in CSS, lazy-loaded hero, image discovered late by JavaScript</td></tr>
+    <tr><td>Resource load duration</td><td>Downloading the image itself</td><td>Oversized file, wrong format, no CDN</td></tr>
+    <tr><td>Element render delay</td><td>Time from download to the element appearing</td><td>Render-blocking CSS, JavaScript, web fonts, sliders waiting to initialise</td></tr>
   </tbody>
 </table>
-<p>If your LCP element is text, there's no image to download, so the time is usually split between server response and render delay.</p>
+<p>A text LCP element has no image phases, so for blog posts the work is almost always server response and render-blocking files.</p>
 
 <h2>Fix slow server response</h2>
-<p>If the HTML itself takes a long time to arrive, everything else waits. On WordPress, the usual causes are:</p>
+<p>If time to first byte takes a big share of LCP, nothing else will help much until it is fixed. Start with these:</p>
 <ul>
-  <li><strong>No page caching:</strong> without it, WordPress builds every page from scratch with PHP and database queries. A caching plugin or your host's built-in cache serves a ready-made copy instead. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</li>
-  <li><strong>Overloaded or distant hosting:</strong> cheap shared servers get busy, and a server on another continent adds delay for visitors in India.</li>
-  <li><strong>Heavy plugins:</strong> some run slow database queries or call external services on every page load.</li>
-  <li><strong>Outdated PHP:</strong> newer supported PHP versions are generally faster, after testing compatibility.</li>
+  <li><strong>Page caching.</strong> Serve ready-made HTML instead of rebuilding each page with PHP and database queries. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers page, object and browser caching.</li>
+  <li><strong>Server location.</strong> For an Indian audience, a data centre in or near India usually responds faster than one in the US or Europe.</li>
+  <li><strong>Plugin weight.</strong> Plugins that run on every page load, such as related-post engines, visitor counters and some security scanners, slow the first byte.</li>
+  <li><strong>PHP version and database.</strong> An old PHP version and a bloated options table both add time.</li>
 </ul>
-<p>A quick check: if even cached pages are slow to start arriving, the hosting or server location is the likely problem, not just your plugins.</p>
+<p>The full process is in <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time (TTFB)</a>. On a busy WooCommerce store, remember that cart, checkout and account pages cannot be fully cached, so hosting quality matters more there.</p>
 
 <h2>Fix the hero image</h2>
-<p>When the LCP element is an image, most gains come from getting it discovered early and making it small.</p>
-<h3>Don't lazy-load it</h3>
-<p>Lazy loading helps images further down the page but delays the first one. WordPress tries to skip lazy loading for the first large image, but page builders and optimisation plugins can override this. Most let you exclude above-the-fold images.</p>
-<h3>Give it high priority</h3>
-<p>Adding <code>fetchpriority="high"</code> to the hero image tells the browser to download it ahead of less important files. Recent WordPress versions add this automatically to the image they guess is the main one, so check the page source to confirm it's on the right image. Use it on one image only.</p>
-<h3>Avoid CSS background images for the hero</h3>
-<p>Background images set in CSS, which is how many Elementor sections and theme headers work, can't be found until the stylesheet has downloaded and been processed. That creates a long load delay. Where possible, use a normal image element for the hero. If it has to be a background, preload that one image.</p>
-<h3>Preload carefully</h3>
-<p>Preloading helps only for the resource that really is the LCP element. Preloading several images, fonts and scripts makes them compete for bandwidth and can slow LCP down. If the image uses responsive sizes, the preload must use the same sizes, or the browser may download two versions.</p>
-<h3>Make it small and replace sliders</h3>
-<p>Resize the image to its displayed size, compress it and serve WebP or AVIF, with a smaller version for phones; <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> covers this. If the hero is a slider, its first slide often can't appear until the slider's JavaScript has run. A single strong image with a clear headline loads faster and is often clearer anyway.</p>
+<p>When the LCP element is an image, most of the gain comes from making the browser find it early and download less.</p>
+<ol>
+  <li><strong>Never lazy-load the LCP image.</strong> Lazy loading is for images further down the page. WordPress skips lazy loading for the first content image in many cases, but themes, builders and optimisation plugins can add it back. See <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</li>
+  <li><strong>Use a real image tag, not a CSS background.</strong> Background images set in a builder section are only found after the CSS loads. A normal image element is discovered as soon as the HTML arrives.</li>
+  <li><strong>Add a high fetch priority.</strong> The fetchpriority attribute set to high on the hero image, or a preload hint in the page head, tells the browser to fetch it first.</li>
+  <li><strong>Size it for the screen.</strong> A 2,500 pixel wide photo shown at phone width wastes data. Use responsive image sizes so phones get a smaller file.</li>
+  <li><strong>Use a modern format.</strong> WebP or AVIF usually gives a much smaller file than JPEG or PNG at similar quality.</li>
+  <li><strong>Drop the slider.</strong> Sliders load several images and a script before the first slide appears. A single strong image almost always paints faster.</li>
+</ol>
+<p>The image steps are covered in detail in <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
 
 <h2>Remove render-blocking CSS, JavaScript and fonts</h2>
-<p>If your LCP element is a heading, or the image has downloaded but still appears late, the problem is render delay. The browser won't paint the page until it has processed the stylesheets and scripts that block rendering.</p>
+<p>If the image arrives in time but still appears late, files in the page head are blocking rendering. Typical culprits on WordPress sites are a full page builder stylesheet, icon font libraries, several Google Font families and scripts loaded in the head without defer.</p>
 <ul>
-  <li><strong>CSS:</strong> reduce unused CSS and consider critical CSS, the small set of styles the first screen needs, so the rest can load later. Test carefully, as removing CSS wrongly breaks layouts.</li>
-  <li><strong>JavaScript:</strong> defer scripts the first screen doesn't need, and avoid scripts in the page head that hold up rendering.</li>
-  <li><strong>Fonts:</strong> use one or two families with only the weights you need, host them on your own domain where practical, use <code>font-display: swap</code> so text shows in a fallback font immediately, and preload the main font if the hero heading uses it.</li>
-  <li><strong>Entrance animations:</strong> a hero heading or image set to fade or slide in stays invisible until the animation runs, which pushes LCP back. Keep animations out of the first screen.</li>
+  <li>Defer non-essential JavaScript, and delay chat widgets, pixels and heatmaps until after the page has loaded.</li>
+  <li>Inline a small amount of critical CSS for the top of the page and load the rest without blocking.</li>
+  <li>Remove CSS and scripts for plugins that only one page uses.</li>
+  <li>Limit fonts to one or two families and the weights you actually use, host them locally and use a font-display setting that shows text immediately.</li>
 </ul>
+<p>Test after every change, because over-aggressive deferring can break menus, forms or checkout. The detail is in <a href="/blog/eliminate-render-blocking-resources/">how to eliminate render-blocking resources</a>.</p>
 
-<p>For a step-by-step guide to critical CSS, deferring scripts and checking that menus and forms still work, see <a href="/blog/eliminate-render-blocking-resources/">how to eliminate render-blocking resources in WordPress</a>.</p>
+<h2>LCP fixes by type of WordPress page</h2>
+<table>
+  <thead><tr><th>Page type</th><th>Usual LCP element</th><th>First fixes to try</th></tr></thead>
+  <tbody>
+    <tr><td>Home page with hero</td><td>Hero image or slider</td><td>Replace slider, real image tag, high fetch priority, WebP</td></tr>
+    <tr><td>Service or landing page</td><td>Heading or banner</td><td>Page cache, fewer fonts, critical CSS</td></tr>
+    <tr><td>Blog post</td><td>Featured image or H1</td><td>Responsive sizes, no lazy loading on featured image</td></tr>
+    <tr><td>WooCommerce product page</td><td>Main product image</td><td>Smaller gallery images, delay zoom and gallery scripts</td></tr>
+  </tbody>
+</table>
 
 <h2>Confirm the fix worked</h2>
-<ul>
-  <li>Clear your caching plugin and any CDN cache, then re-test several times, as lab results vary between runs</li>
-  <li>Check mobile and desktop, and a few page types: home, service and blog pages</li>
-  <li>Field data covers a rolling 28-day period, so real-user LCP improves gradually; use "Validate fix" in Search Console's Core Web Vitals report to track it</li>
-</ul>
-<p>LCP usually has more than one cause, and fixes like critical CSS are easy to get wrong. My <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service targets your specific Core Web Vitals issues and shows before-and-after results. For Elementor hero sections that need rebuilding more efficiently, see <a href="/elementor-developer/">Elementor development</a>.</p>
+<p>Re-run lab tests after each change to see whether the slow phase has shrunk. Then wait for field data: PageSpeed Insights field data and the Search Console report use a rolling 28-day window, so improvements take a few weeks to show fully. In Search Console you can click Validate fix on the LCP issue once you have deployed the changes.</p>
+<p>Keep a short record of what you changed and when. If LCP gets worse again later, it is usually because someone added a new slider, a large uncompressed image or another tracking script.</p>
+
+<h2>When to get help with LCP</h2>
+<p>If the slow phase is server response on cheap shared hosting, or render delay caused by a heavy builder theme, the fix may involve hosting changes or rebuilding key templates rather than plugin settings. That is where it is worth bringing in someone who has done it before. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to diagnose and fix it without breaking the design.</p>
+
+<h2>FAQs</h2>
+<h3>How do I fix slow LCP in WordPress?</h3>
+<p>Identify the LCP element in PageSpeed Insights, check which of the four phases is longest, then fix that part: page caching for server delay, a preloaded and correctly sized hero image for image delays, and deferred CSS, scripts and fonts for render delay.</p>
+<h3>What is a good LCP score?</h3>
+<p>Google treats 2.5 seconds or less as good, 2.5 to 4 seconds as needing improvement and over 4 seconds as poor, measured at the 75th percentile of real visits.</p>
+<h3>Why is my LCP worse on mobile than desktop?</h3>
+<p>Phones have slower processors and often slower connections, and the mobile layout may use a different LCP element. Large images, sliders and heavy scripts hurt phones far more than desktops.</p>
+<h3>Should the LCP image be lazy loaded?</h3>
+<p>No. Lazy loading delays the image until the browser decides it is needed, which slows LCP. Load the hero image eagerly and lazy-load only images below the fold.</p>
+<h3>Will a caching plugin alone fix LCP?</h3>
+<p>Caching fixes the server part, which often helps a lot, but it will not shrink an oversized hero image or remove render-blocking files. Most sites need caching plus image and CSS work.</p>
+
+<p>Want your LCP fixed properly on a live WordPress or WooCommerce site? Take a look at <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> from Samverse.</p>
 `,
   },
   {
@@ -49607,103 +49659,110 @@ Right:
   },
   {
     slug: 'website-for-cafes-coffee-shops',
+    seoTitle: 'Website for Cafes and Coffee Shops: What to Include',
     title: 'Websites for Cafes and Coffee Shops: What Customers Look For',
-    description: 'What a cafe or coffee shop website needs: a cafe-friendly menu, real photos of the space, work-friendly details, events, ordering options and local SEO.',
+    description: 'What a website for cafes and coffee shops needs: a fast menu page, real photos, hours, map, work-friendly details, events, beans for sale and local SEO.',
     date: '2026-09-30',
+    updated: '2026-10-29',
     category: 'Industries',
     related: ['website-for-restaurants', 'wordpress-seo-services'],
     body: `
-<p>People rarely choose a cafe on coffee alone. They want to know what the place feels like, whether they can sit with a laptop for two hours, whether there's something eggless to eat, and whether it's open right now. A cafe website that answers those questions quickly turns a "cafe near me" search into a visit. If you run a full-service restaurant, our guide to <a href="/blog/restaurant-website-online-ordering/">restaurant websites and online ordering</a> covers that side; this one focuses on what is specific to cafes and coffee shops.</p>
+<p>A website for a cafe or coffee shop needs to answer a few questions fast: what is on the menu and at what price, when you are open, where you are, what the place looks like and whether it suits what the visitor has in mind, from a quick coffee to a work session or a birthday. Put those answers on the first screen of a phone, keep them current, and connect the site to your Google Business Profile and Instagram.</p>
+<p>This guide covers what to include, how to show the menu and space, extras such as events and coffee bean sales, and the local search basics that bring nearby customers in. It is written for independent cafes, roasteries and small chains in Indian cities.</p>
 
 <h2>What people check before visiting a cafe</h2>
-<p>Most cafe visits are decided on a phone within minutes, around the same few questions:</p>
+<p>Someone searching for a cafe nearby usually decides within seconds. They want to know:</p>
 <ul>
-  <li><strong>Is it open now?</strong> Opening hours, including early mornings, late evenings and holiday changes</li>
-  <li><strong>What's the vibe?</strong> Quiet and cosy, lively, family-friendly or good for a first date</li>
-  <li><strong>What will it cost?</strong> A rough idea of the price range, which the menu answers</li>
-  <li><strong>Can I work here?</strong> Wi-Fi, power sockets and whether laptops are welcome</li>
-  <li><strong>How do I get there?</strong> Location, landmarks, parking and whether there are stairs</li>
+  <li><strong>Is it open now?</strong> Today's hours, plus late-night or early-morning timings.</li>
+  <li><strong>Where is it, and can I park?</strong> Address, landmark, map and parking notes.</li>
+  <li><strong>What does it serve and cost?</strong> A readable menu with current prices.</li>
+  <li><strong>What is the vibe?</strong> Photos of the actual seating, lighting and crowd.</li>
+  <li><strong>Does it suit my plan?</strong> Wi-Fi and plugs for work, space for groups, pet-friendly, outdoor seating.</li>
 </ul>
-<p>Put the answers on the homepage, not three clicks deep: hours, address with a map link, a "View menu" button and a one-tap call or WhatsApp button.</p>
+<p>Put hours, address, a call button and a WhatsApp link at the top of the home page on mobile. Many visitors will not scroll further before they decide.</p>
 
-<h2>A menu page built for a cafe</h2>
-<p>A cafe menu has quirks a restaurant menu doesn't. Build it as a proper web page rather than a PDF or a photo of the chalkboard, and include:</p>
-<ul>
-  <li><strong>Drinks with their options:</strong> hot and iced versions, cup sizes, and milk alternatives such as oat or almond milk, with any extra charge</li>
-  <li><strong>Beans and brew methods:</strong> if you serve pour-over, cold brew or single-origin coffee, say where the beans come from</li>
-  <li><strong>Food by time of day:</strong> breakfast, all-day plates, sandwiches, bakes and desserts, with breakfast timings stated clearly</li>
-  <li><strong>Dietary markers:</strong> veg and non-veg symbols, plus "eggless" or "contains egg" on bakes, which many customers in India look for</li>
-  <li><strong>Seasonal specials:</strong> a small section you can update in minutes, instead of reprinting everything</li>
-</ul>
-<p>Link your table QR codes to this same page, so the menu customers see at the table is always the current one.</p>
-
-<h2>Show the space as it really is</h2>
-<p>For a cafe, the room is part of the product. Visitors want to picture where they will sit before they arrive, so use real photos rather than stock images:</p>
-<ul>
-  <li>Each seating area: window tables, sofas, communal tables, the counter and any outdoor seating</li>
-  <li>The space at different times of day, if the mood changes from bright mornings to warm evenings</li>
-  <li>Your signature drinks and dishes, photographed in natural light</li>
-  <li>The team behind the counter, if they are happy to be featured</li>
-</ul>
-<p>Also answer the questions people otherwise call about: whether pets are welcome, whether there's step-free access, and whether you take reservations or are walk-in only. Compress photos so the gallery stays fast on mobile data.</p>
-
-<h2>Information for people who want to work</h2>
-<p>Students, freelancers and remote workers are regular cafe customers, and they plan ahead. A short "Working from here" FAQ sets fair expectations:</p>
+<h2>Website for cafes and coffee shops: the essential pages</h2>
 <table>
-  <thead>
-    <tr><th>Question</th><th>What to tell them</th></tr>
-  </thead>
+  <thead><tr><th>Page</th><th>What it should include</th></tr></thead>
   <tbody>
-    <tr><td>Is there Wi-Fi?</td><td>Yes or no, and whether they should ask staff for the password</td></tr>
-    <tr><td>Are there power sockets?</td><td>Roughly where they are, and whether they are limited</td></tr>
-    <tr><td>Are laptops welcome all day?</td><td>Any laptop-free hours, such as weekend lunch</td></tr>
-    <tr><td>Is there a minimum order or time limit?</td><td>Your policy, stated politely</td></tr>
+    <tr><td>Home</td><td>Hours, location, a strong photo, menu link, call and WhatsApp buttons</td></tr>
+    <tr><td>Menu</td><td>Text menu with prices, sections, dietary notes and a few dish photos</td></tr>
+    <tr><td>About or story</td><td>Who runs it, where the coffee comes from, what makes it different</td></tr>
+    <tr><td>Visit or contact</td><td>Map, directions, parking, accessibility, contact details</td></tr>
+    <tr><td>Events and bookings</td><td>Workshops, live music, private hire, a booking enquiry form</td></tr>
+    <tr><td>Shop (optional)</td><td>Coffee beans, merchandise, gift cards</td></tr>
   </tbody>
 </table>
-<p>If you'd rather not attract all-day laptop users, say so kindly. Being clear avoids awkward conversations at the table and disappointed reviews later.</p>
+<p>A small cafe can fit most of this on a single well-organised page plus a menu page. Add more pages only when you have content for them.</p>
+
+<h2>A menu page built for a cafe</h2>
+<p>The menu is the most visited page on most cafe websites. A PDF or a photo of a printed menu is hard to read on a phone, does not show up in search and is usually out of date. A proper menu page is better:</p>
+<ul>
+  <li>Use text, grouped into sections such as hot coffee, cold coffee, tea, food, desserts.</li>
+  <li>Show prices, and update them on the same day you change the printed menu.</li>
+  <li>Mark vegetarian, vegan, Jain, egg-free and gluten-free options clearly, and avoid health claims you cannot support.</li>
+  <li>Mention plant-based milk options and any extra charge for them.</li>
+  <li>Add a few good photos of signature drinks and dishes, compressed for fast loading.</li>
+  <li>Note seasonal specials and remove them when they end.</li>
+</ul>
+<p>Build the menu so staff can update it from the WordPress dashboard without touching the design. <a href="/blog/restaurant-menu-on-website/">How to put a restaurant menu on your website</a> covers the options in more detail.</p>
+
+<h2>Show the space as it really is</h2>
+<p>People choose cafes for the atmosphere as much as the coffee. Use real photos of your seating, counter, outdoor area and any special corners, taken in good light at the time of day you are busiest. Avoid stock images of coffee cups or people who were never in your cafe; regulars notice.</p>
+<p>Show different areas for different uses: a quiet corner for laptops, a long table for groups, the outdoor seating for smokers or pet owners if you allow it. A short video walk-through can work well, but keep it light so the page still loads quickly on mobile data.</p>
+
+<h2>Information for people who want to work</h2>
+<p>Many cafe customers in Indian cities are freelancers, students and remote workers. If you welcome them, say so clearly, and be honest about limits:</p>
+<ul>
+  <li>Whether Wi-Fi is available and if there is a time limit.</li>
+  <li>How many seats have plug points.</li>
+  <li>Quiet hours, or times when laptops are not encouraged, such as weekend brunch.</li>
+  <li>Any minimum order per hour if you have one.</li>
+</ul>
+<p>If you offer a meeting table or a small room that can be booked by the hour, describe it with photos, seating capacity and how to reserve it. Clear rules on the website avoid awkward conversations at the counter and attract the customers who suit your space.</p>
 
 <h2>Events, workshops and private bookings</h2>
-<p>Many cafes host open mics, board game nights, book clubs, live music, coffee tastings or art workshops. An events page turns these into a reason to visit and a reason to come back:</p>
-<ul>
-  <li>Upcoming events with date, time, price and what's included</li>
-  <li>Online registration, with UPI or card payment for paid workshops so seats are confirmed</li>
-  <li>A short archive of past events with photos, which shows the cafe is lively</li>
-  <li>A private booking enquiry form for birthdays, small gatherings, team outings or shoots, asking for the date, group size and budget</li>
-</ul>
-<p>Remove events once they're over; an events page still promoting last season's open mic makes the site look abandoned.</p>
+<p>Events are where a website does better than Instagram. A post disappears from the feed in a day; an events page stays findable. List upcoming open mics, coffee tastings, brewing workshops, book clubs or board game nights with date, time, price and how to register.</p>
+<p>For private bookings such as birthdays, small office meetings or pop-ups, add a short enquiry form asking for date, time, number of guests and the occasion. Send enquiries to WhatsApp or email so they are answered quickly. A simple <a href="/blog/online-appointment-booking-website/">online booking system</a> can handle workshop seats if you run them often.</p>
 
 <h2>Takeaway, delivery and selling coffee beans</h2>
-<p>Ordering on a cafe website is usually lighter than for a restaurant, but a few options work well:</p>
-<ul>
-  <li><strong>Order ahead for pickup:</strong> office-goers can pay for their coffee in advance and collect it without queuing</li>
-  <li><strong>WhatsApp ordering</strong> for regulars and bulk orders, such as coffee and snacks for an office meeting</li>
-  <li><strong>Delivery app links</strong> for customers who prefer them, shown clearly but not ahead of your direct options</li>
-  <li><strong>Retail products:</strong> roasted beans, ground coffee, drip bags, mugs and gift boxes can be sold through a small online shop, including repeat orders for beans</li>
-</ul>
-<p>Selling beans online widens your reach beyond the neighbourhood, but it brings packaging, shipping and GST questions, so start with a few products and check the tax side with your CA.</p>
+<p>If you are on food delivery apps, link to them, but also give customers a way to order directly for pickup, which avoids commission on regular orders. A WhatsApp order button is the simplest approach; a WooCommerce menu with UPI payment suits cafes with steady takeaway volumes. <a href="/blog/restaurant-website-online-ordering/">Online ordering on your restaurant website</a> compares the options.</p>
+<p>Roasteries and speciality cafes can sell beans, drip bags, cold brew bottles, equipment and gift cards online. Show origin, roast level, tasting notes and grind options, and be clear about delivery areas and freshness. Cafes that also sell cakes can borrow ideas from <a href="/blog/website-for-bakeries-cake-shops/">websites for bakeries and cake shops</a>.</p>
 
 <p>Running an ice cream parlour or gelato counter, where flavours change weekly and party orders matter? See <a href="/blog/website-for-ice-cream-parlours/">websites for ice cream parlours and dessert shops</a>.</p>
 
 <h2>Instagram and your website</h2>
-<p>Instagram is where many people discover cafes, so it deserves a place on your website, but not at the cost of speed:</p>
-<ul>
-  <li>Link to your Instagram profile clearly in the header or footer</li>
-  <li>Instead of a heavy live feed widget, show a small, hand-picked gallery of your best posts as optimised images; live embeds load extra code, as explained in our guide to <a href="/blog/third-party-scripts-slow-website/">third-party scripts that slow websites</a></li>
-  <li>Point the link in your Instagram bio to your menu or events page, not just the homepage</li>
-  <li>Keep hours, prices and menu items consistent across Instagram, your website and Google</li>
-</ul>
-<h2>Local SEO for cafes</h2>
-<p>Most cafe searches are local and often made on the spot. To appear for them:</p>
-<ul>
-  <li>Complete your Google Business Profile with the right category, hours, menu link, photos and the attributes Google offers, such as Wi-Fi or outdoor seating; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a></li>
-  <li>Use your area naturally in page titles and text, for example "cafe in {area}" or "coffee shop near {landmark}"</li>
-  <li>Mention what makes you a good fit for common searches, such as "work-friendly cafe", "pet-friendly cafe" or "breakfast in {area}", but only if it's true</li>
-  <li>Add structured data (schema.org has a CafeOrCoffeeShop type) with your address, hours and menu link</li>
-  <li>Ask happy regulars for Google reviews, and reply to them, including the critical ones</li>
-</ul>
-<p>Finally, keep the site fast: people search for cafes on the move, and a slow page sends them to the cafe down the road.</p>
+<p>Instagram is often where cafes are discovered, but it is a poor place for hours, menus and booking details. Use Instagram for daily visuals and the website as the reliable source of information. Put the website link in your bio, and use a small Instagram feed or gallery on the site if it does not slow the page down.</p>
+<p>Track how many people come from Instagram to the site and what they do next. <a href="/blog/instagram-to-website-enquiries/">Turning Instagram followers into website enquiries</a> explains how.</p>
 
-<p>Planning a cafe website with a menu you can update yourself, an events page and optional online ordering? See <a href="/website-for-restaurants/">websites for restaurants and cafes</a>.</p>
+<h2>Local SEO for cafes</h2>
+<p>Most cafe searches are local: "cafe near me", "best coffee in Koregaon Park", "work-friendly cafe in Indiranagar". To show up:</p>
+<ul>
+  <li>Complete your Google Business Profile with categories, hours, photos, menu link and attributes such as Wi-Fi and outdoor seating. See the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</li>
+  <li>Keep name, address and phone identical on the website, profile and listings.</li>
+  <li>Embed a map on the visit page and mention nearby landmarks.</li>
+  <li>Ask happy customers for reviews with a QR code at the counter; <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a> has ethical ways to do it.</li>
+  <li>Update holiday hours before festivals so people do not arrive to a closed shutter.</li>
+</ul>
+<p>For cafes in Pune, <a href="/blog/local-seo-pune-businesses/">local SEO for Pune businesses</a> covers city-specific tips.</p>
+
+<h2>Keep it fast and easy to update</h2>
+<p>Cafe websites are mostly viewed on phones, often on the move. Compress photos, avoid autoplay video on the home page and keep plugins to a minimum. Make sure the owner or manager can update hours, menu prices and events in a few minutes, because an outdated site is worse than a simple one.</p>
+<p>A simple routine helps: check the hours and menu page every time prices or timings change, add new photos each season, remove past events within a day or two, and look at enquiries from the booking form every morning. If you run more than one outlet, give each its own section or page with its own hours, map and phone number, so customers never turn up at the wrong branch expecting a menu it does not serve.</p>
+
+<h2>FAQs</h2>
+<h3>What should a website for cafes and coffee shops include?</h3>
+<p>Hours, location with a map, a text menu with prices, real photos of the space, contact and WhatsApp buttons, and pages for events, private bookings or online sales if you offer them.</p>
+<h3>Should my cafe menu be a PDF?</h3>
+<p>A text menu page is better. It is easier to read on phones, can be found in search and is quicker to update than a PDF.</p>
+<h3>Do I need a website if I already have Instagram?</h3>
+<p>Instagram helps people discover you, but a website gives them reliable hours, menu, directions and booking details, and it is a page you own.</p>
+<h3>Can I take online orders on a cafe website?</h3>
+<p>Yes. A WhatsApp order button suits low volumes, while an online menu with UPI payment suits regular takeaway or bean sales.</p>
+<h3>How do I get my cafe to show in "cafe near me" searches?</h3>
+<p>Complete and update your Google Business Profile, keep details consistent with the website, collect genuine reviews and add photos regularly.</p>
+
+<p>Opening a cafe or refreshing an old site? <a href="/website-for-restaurants/">Websites for restaurants, cafes and food brands</a> from Samverse cover menus, ordering and local search. Cafes in Pune can also work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -57506,84 +57565,128 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'hindi-devanagari-fonts-website',
-    seoTitle: 'Hindi and Devanagari Fonts for Websites: A Practical Guide',
+    seoTitle: 'Hindi Fonts for a Website: Readable, Fast Devanagari',
     title: 'Hindi and Devanagari Fonts on Your Website: Readable, Fast and Tested',
-    description: 'How to choose readable Hindi and Devanagari fonts, pair them with English, set sizes and line height, load them efficiently and test on real phones.',
+    description: 'Choosing Hindi fonts for a website: use Unicode text, pick a readable Devanagari font, pair it with English, set sizes, load it fast and test it on phones.',
     date: '2026-10-01',
+    updated: '2026-10-29',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-speed-optimization'],
     body: `
-<p>A Hindi version of your website can win customers who prefer their own language, but only if the text is comfortable to read. Devanagari, the script used for Hindi, Marathi, Sanskrit and Nepali, behaves differently from English on screen. Pick the wrong font or copy your English line spacing, and matras get clipped, conjuncts break and the page looks cramped. Here's how to choose, load and test fonts for Hindi and other Indian scripts.</p>
-<p>If you're still deciding how to structure a Hindi and English site, start with <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</p>
+<p>The best Hindi fonts for a website are Unicode Devanagari fonts that stay readable at small sizes on phones, pair well with your English font and load quickly. Use real Unicode text, never images of Hindi or old non-Unicode fonts, give Hindi a slightly larger size and more line height than English, and load only the weights you need.</p>
+<p>This guide covers choosing, pairing, sizing and loading Devanagari fonts, setting them up in WordPress and testing them. It applies to Hindi, Marathi and other languages written in Devanagari, which many Indian business, education, government-facing and community websites need.</p>
 
 <h2>Start with Unicode text, not images or legacy fonts</h2>
-<p>Two habits from print still cause problems on Indian websites:</p>
+<p>Some older Hindi websites still use legacy fonts where Hindi characters are mapped onto English letter codes, or images of Hindi text. Both cause problems:</p>
 <ul>
-  <li><strong>Legacy fonts such as Kruti Dev or Chanakya:</strong> text typed in these fonts is stored as English letters that only look like Hindi when that exact font is installed. On a website it shows as gibberish, can't be searched and isn't read by screen readers. Convert it to Unicode first, and proofread the result, because converters often get matras and half letters wrong.</li>
-  <li><strong>Hindi text inside images:</strong> banners and pamphlets saved as JPGs can't be read by Google, can't be zoomed cleanly and often look blurry on phones. Keep headings, offers and contact details as real text.</li>
+  <li>Search engines cannot read the text properly, so pages do not rank for Hindi searches.</li>
+  <li>Visitors cannot copy, search or translate the text.</li>
+  <li>Screen readers cannot read it aloud, which excludes visually impaired users.</li>
+  <li>If the special font fails to load, visitors see meaningless English letters.</li>
 </ul>
-<p>New content typed on phones and computers is usually Unicode already; the risk is old files from a DTP operator or printer.</p>
+<p>Convert any legacy text to Unicode before it goes on the site. Typing tools on phones and computers already produce Unicode Devanagari, and conversion tools exist for older documents, though converted text should always be proofread by someone who reads the language.</p>
 
-<h2>Choosing a readable Devanagari font</h2>
-<p>For body text, readability matters more than personality. Look for:</p>
+<h2>Hindi fonts for a website: choosing a readable Devanagari font</h2>
+<p>Many free and commercial fonts support Devanagari. Open-licensed families such as Noto Sans Devanagari, Mukta, Hind and Tiro Devanagari are commonly used on the web, but test any font with your own text before committing. Check for:</p>
 <ul>
-  <li><strong>Correct conjuncts:</strong> combinations such as क्ष, त्र, ज्ञ, श्र, द्ध and र्क should appear as proper joined forms, not broken pieces with a visible halant</li>
-  <li><strong>Clear matras:</strong> ि, ी, ु, ू, the nukta and the nasal marks should stay distinct at small sizes</li>
-  <li><strong>Simple, open shapes:</strong> calligraphic and display fonts suit a festival banner headline but tire readers in paragraphs</li>
-  <li><strong>Real weights:</strong> at least regular and bold, designed for the script rather than faked by the browser</li>
+  <li><strong>Clear matras and conjuncts.</strong> Vowel signs and joined letters such as क्ष, त्र and श्र should render correctly and stay distinct at small sizes.</li>
+  <li><strong>A comfortable x-height and headline.</strong> The shirorekha, the top line, should be even, and letters should not feel cramped.</li>
+  <li><strong>Enough weights.</strong> At least regular and bold, ideally a medium too, so headings and body text can differ.</li>
+  <li><strong>Matching Latin characters</strong> if you want one family for both scripts.</li>
+  <li><strong>A licence</strong> that allows web use on a commercial site.</li>
 </ul>
-<p>Well-known free options on Google Fonts include Noto Sans Devanagari, Mukta, Hind, Poppins and Baloo 2 for clean sans-serif text, and Noto Serif Devanagari or Tiro Devanagari Hindi for a more traditional, bookish feel. Families such as Noto, Hind and Baloo also have versions for Bengali, Gujarati, Tamil, Telugu and other scripts, which helps if you add more languages later. Check each font's character coverage and licence before you commit.</p>
+<table>
+  <thead><tr><th>Style</th><th>Feels like</th><th>Good for</th></tr></thead>
+  <tbody>
+    <tr><td>Sans or low-contrast Devanagari</td><td>Modern, clean, neutral</td><td>Business sites, apps, body text on phones</td></tr>
+    <tr><td>Traditional high-contrast</td><td>Formal, print-like, literary</td><td>Headings, publishers, cultural and religious sites</td></tr>
+    <tr><td>Rounded or display styles</td><td>Friendly, informal</td><td>Short headings, kids' brands; avoid for long text</td></tr>
+  </tbody>
+</table>
 
 <h2>Pairing Hindi with English text</h2>
-<p>Hindi pages almost always contain English as well: brand names, product codes, email addresses. There are two approaches:</p>
-<ol>
-  <li><strong>One family that covers both scripts.</strong> Fonts like Poppins, Mukta, Hind and Baloo 2 include Latin and Devanagari designed to sit together, so mixed lines look consistent.</li>
-  <li><strong>Your brand's English font plus a matching Devanagari font.</strong> List both in the font stack, English first. The browser uses the first font for every character it contains and falls back to the next one for the rest, so English comes from your brand font and Hindi from the Devanagari font.</li>
-</ol>
-<p>With the second approach, match the overall feel and compare both fonts in a real mixed sentence, not a font preview.</p>
-<p>Also decide on numerals. Many Hindi websites use international digits (1, 2, 3) for prices and phone numbers, while Devanagari digits (१, २, ३) suit some religious or literary content. Whichever you choose, stay consistent.</p>
+<p>Most Indian websites mix Hindi and English on the same page, in menus, product names, brand names and numbers. If the two fonts differ too much in weight or size, the page looks patchy. Options that work:</p>
+<ul>
+  <li>Use one family that covers both scripts, so weight and style match automatically.</li>
+  <li>Pair a Devanagari font with a Latin font of similar stroke thickness and proportions.</li>
+  <li>Adjust the Devanagari size so its letters look visually similar in height to English capitals and lowercase.</li>
+</ul>
+<p>Decide whether numbers appear in Devanagari or international digits and stay consistent; for prices, phone numbers and dates, international digits are usually clearer. <a href="/blog/choose-website-colours-fonts/">Choosing website colours and fonts</a> covers pairing in general.</p>
 
 <h2>Sizes, line height and spacing</h2>
-<p>Devanagari hangs from a headline bar (the shirorekha), with matras rising above it and dropping below, so it needs more vertical room than English. Good starting points, to adjust by eye:</p>
-<ul>
-  <li><strong>Body size:</strong> often a pixel or two larger than your English body text, because Devanagari tends to look smaller at the same size</li>
-  <li><strong>Line height:</strong> more generous than English, roughly 1.6 to 1.8 for paragraphs, so marks on one line don't touch the next</li>
-  <li><strong>Headings:</strong> avoid very tight line height on headings that wrap, or upper and lower marks get clipped</li>
-  <li><strong>Letter-spacing:</strong> leave it at normal, as extra tracking can break the connected headline bar</li>
-  <li><strong>Emphasis:</strong> Devanagari has no capital letters and most fonts have no italic, so browsers slant it artificially. Use bold or colour instead.</li>
-</ul>
-<p>Watch fixed-height buttons, menu items and form fields. If they cut off overflowing content, Hindi labels can lose their top or bottom marks.</p>
+<p>Devanagari has marks above the headline and below the base, so it needs more vertical space than English.</p>
+<table>
+  <thead><tr><th>Setting</th><th>English body text</th><th>Hindi body text</th></tr></thead>
+  <tbody>
+    <tr><td>Font size</td><td>Your normal body size</td><td>Usually slightly larger than English</td></tr>
+    <tr><td>Line height</td><td>Around 1.5</td><td>Often around 1.6 to 1.8</td></tr>
+    <tr><td>Letter spacing</td><td>Normal</td><td>Never add extra spacing; it breaks joined letters</td></tr>
+    <tr><td>Bold</td><td>Fine for emphasis</td><td>Use a real bold weight, not a faked one</td></tr>
+  </tbody>
+</table>
+<p>Treat these as starting points and adjust by eye on real devices. Avoid all-caps styling, letter spacing and very light weights on Devanagari. Larger sizes and good contrast also help older readers; <a href="/blog/website-accessibility-older-users/">website accessibility for older users</a> has more on that.</p>
 
 <h2>Loading Devanagari fonts efficiently</h2>
-<p>Devanagari fonts contain far more glyphs than English ones, to cover conjuncts and vowel combinations, so the files are larger. The advice in <a href="/blog/web-fonts-performance/">web fonts and website speed</a> applies even more strongly here:</p>
+<p>Devanagari font files are larger than Latin-only fonts because they contain many more glyphs. On Indian mobile networks this matters. To keep pages fast:</p>
 <ul>
-  <li><strong>Load only the weights you use.</strong> Regular and bold are usually enough for Hindi text.</li>
-  <li><strong>Keep the Devanagari file separate from the Latin one,</strong> with a unicode-range in the @font-face rule, so browsers download it only on pages containing Hindi characters. Google Fonts already splits fonts this way; keep that structure if you self-host.</li>
-  <li><strong>Don't over-subset.</strong> Cutting a Devanagari font down to "the characters you use" can strip the shaping data that builds conjuncts. Stick to the standard Devanagari subset.</li>
-  <li><strong>Consider system fonts for body text.</strong> Devices usually ship with a Devanagari font, typically Noto on Android, Kohinoor Devanagari on Apple devices and Nirmala UI on Windows, so nothing needs downloading, at the cost of a slightly different look per device.</li>
-  <li><strong>Use font-display: swap,</strong> so readers on slow connections see text straight away in a fallback font.</li>
+  <li>Load only the weights you use, usually two or three.</li>
+  <li>Use the WOFF2 format.</li>
+  <li>Use the Devanagari and Latin subsets you need, not every script the family supports.</li>
+  <li>Host fonts on your own server rather than loading them from a third party, so there is no extra connection.</li>
+  <li>Set font-display to swap so text appears immediately in a fallback font.</li>
+  <li>Preload only the main body font, not every weight.</li>
 </ul>
+<p>A late-loading font can shift the layout when it swaps in. Choosing a fallback of similar size reduces this; <a href="/blog/fix-cls-layout-shift/">how to fix CLS layout shift</a> explains why. <a href="/blog/web-fonts-performance/">Web fonts and performance</a> and <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> go deeper on loading.</p>
 
 <h2>Setting it up in WordPress</h2>
-<ul>
-  <li>Make sure Hindi pages carry the correct language attribute (lang="hi") so browsers, screen readers and search engines know the language. Multilingual plugins usually set this; check your page source.</li>
-  <li>Use the :lang(hi) CSS selector to give Hindi pages their own font, size and line height without touching English pages.</li>
-  <li>In Elementor or a block theme, set typography as global styles, and make sure the theme, builder and plugins aren't each loading the same font.</li>
-  <li>Check WooCommerce order emails and PDF invoices too; some PDF generators need extra font setup before Devanagari renders correctly.</li>
-</ul>
+<p>Most themes let you choose fonts in the customiser or theme settings, and block themes manage them in the Site Editor under Typography. For a bilingual site:</p>
+<ol>
+  <li>Upload the chosen font files locally, through the theme's font settings, a font plugin or the Site Editor font library.</li>
+  <li>Set the font stack so Devanagari text uses your Hindi font and Latin text uses your English font, or one family for both.</li>
+  <li>Set the HTML lang attribute correctly, hi for Hindi pages and mr for Marathi, so browsers and screen readers handle the text properly.</li>
+  <li>Add any custom CSS for Hindi line height in a child theme or the Additional CSS panel, not in the parent theme; see <a href="/blog/wordpress-child-theme-explained/">the WordPress child theme explained</a>.</li>
+</ol>
+<p>If the site has separate Hindi and English versions, a multilingual plugin can apply different fonts per language. <a href="/blog/multilingual-wordpress-website-hindi-english/">Multilingual WordPress websites in Hindi and English</a> covers the plugin side, and <a href="/blog/hreflang-multilingual-seo-india/">hreflang for multilingual SEO in India</a> covers how Google finds each version.</p>
 
 <h2>Test on real phones</h2>
-<p>A font that looks perfect on your laptop can behave differently on a budget Android phone or an older iPhone. Before launch:</p>
-<ol>
-  <li>Write a test paragraph with difficult conjuncts, every matra, nukta letters such as क़ and ज़, numbers and a few English words</li>
-  <li>Check it on a budget Android phone, an iPhone, and Windows and Mac browsers</li>
-  <li>Look closely at wrapped headings, buttons, menus, forms and the footer</li>
-  <li>Type Hindi into your contact form and search box, and confirm it arrives correctly in the enquiry email</li>
-  <li>Throttle the connection in browser developer tools and watch how text appears while the font loads</li>
-  <li>Ask a native Hindi reader to read a full page; they'll spot awkward rendering faster than anyone</li>
-</ol>
+<p>Fonts that look fine on a large desktop monitor can struggle on a small Android screen. Test on at least one mid-range Android phone and one iPhone if possible:</p>
+<ul>
+  <li>Read a long paragraph of body text. Is it comfortable without zooming?</li>
+  <li>Check conjuncts, matras and the nukta in names and technical words.</li>
+  <li>Look at buttons, menus and form labels where text is small.</li>
+  <li>Check mixed Hindi and English lines for uneven sizes.</li>
+  <li>Load the page on mobile data and watch whether text appears quickly or jumps.</li>
+</ul>
+<p>Ask a native reader to check spelling and rendering too. Rendering problems, such as broken conjuncts or misplaced vowel signs, are usually caused by the font or unusual CSS, not by WordPress.</p>
 
-<p>Building a Hindi or bilingual website that reads well and loads fast? See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> if heavy fonts are already slowing your site down.</p>
+<h2>Fonts in forms, PDFs and emails</h2>
+<p>Fonts on the page are only part of the picture. Contact forms should accept Hindi input and store it correctly, which means the database and form plugin must use UTF-8, as modern WordPress installs do by default. Test a form by submitting a message in Hindi and checking that the email notification and the saved entry show the text properly rather than question marks.</p>
+<p>Order emails, invoices and downloadable PDFs often use different fonts from the website. If a WooCommerce invoice or a certificate PDF needs Hindi, the PDF generator must have a Devanagari font embedded, or the text will appear as boxes. Email clients may not load your web font at all, so set a sensible system fallback and check the email on a phone. Images with Hindi text, such as banners, should always have the same text available on the page or in alt text so it can be read and indexed.</p>
+
+<h2>Common problems and fixes</h2>
+<table>
+  <thead><tr><th>Problem</th><th>Likely cause</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Boxes or question marks instead of letters</td><td>Font has no Devanagari support, or text is not Unicode</td><td>Use a Devanagari font; convert legacy text</td></tr>
+    <tr><td>Broken conjuncts or vowel signs</td><td>Letter spacing in CSS, or a poorly made font</td><td>Remove letter spacing; switch font</td></tr>
+    <tr><td>Top marks cut off</td><td>Line height too tight</td><td>Increase line height</td></tr>
+    <tr><td>Text appears late</td><td>Large font files loaded from elsewhere</td><td>Host locally, subset, swap</td></tr>
+  </tbody>
+</table>
+
+<h2>FAQs</h2>
+<h3>Which Hindi fonts for a website are best?</h3>
+<p>Choose a Unicode Devanagari font with clear conjuncts, at least two weights and a web licence, then test it with your own text on phones. Open-licensed families such as Noto Sans Devanagari, Mukta and Hind are widely used starting points.</p>
+<h3>Can I use Kruti Dev or other legacy fonts on my website?</h3>
+<p>Avoid them. Legacy fonts are not Unicode, so search engines, screen readers and visitors without the font cannot read the text. Convert content to Unicode.</p>
+<h3>Do Hindi fonts slow down a website?</h3>
+<p>They can, because Devanagari files are larger. Load only the weights and subsets you need, host them locally and use font-display swap.</p>
+<h3>What line height should I use for Hindi text?</h3>
+<p>Devanagari usually needs more line height than English, often around 1.6 to 1.8 for body text. Adjust by eye on real devices.</p>
+<h3>Will Hindi pages rank in Google?</h3>
+<p>Unicode Hindi text can be indexed and ranked like any other language, provided the content is useful and the language is set correctly on the page.</p>
+
+<p>Building a Hindi, Marathi or bilingual site? <a href="/wordpress-website-development/">WordPress website development</a> from Samverse covers fonts, speed and multilingual setup, and businesses nearby can work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -64013,92 +64116,120 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'wordpress-rest-api-explained',
-    seoTitle: 'WordPress REST API Explained for Business Owners',
+    seoTitle: 'WordPress REST API Explained: What It Is, When to Use It',
     title: 'The WordPress REST API Explained: What It Is and When You Need It',
-    description: 'What the WordPress REST API is, what relies on it, what it shows publicly by default (like user lists), how application passwords work and when you need it.',
+    description: 'The WordPress REST API explained in plain language: what it is, what already uses it, what is public, authentication, business uses and how to restrict it.',
     date: '2026-10-01',
+    updated: '2026-10-29',
     category: 'Guides',
     related: ['wordpress-website-development', 'hire-wordpress-developer'],
     body: `
-<p>If a developer has mentioned "the REST API", or a security scan has flagged /wp-json/ on your site, you may have wondered what it is and whether to worry. In short: it's a built-in part of WordPress that lets software talk to your website, it's already working on your site, and it needs sensible limits rather than switching off. Here's what business owners and junior developers should know.</p>
+<p>The WordPress REST API is a built-in way for other software to read and change your site's content over the web. It works through URLs under /wp-json/ on your domain and sends data back as JSON instead of web pages. The block editor, many plugins, mobile apps and integrations with CRMs or other systems all use it. Most site owners never touch it directly, but it is worth knowing what it exposes and how to keep it secure.</p>
+<p>This guide explains the WordPress REST API in plain language: what already uses it on your site, what is public by default, how authentication works, when a business actually needs it and how to restrict it safely without breaking anything.</p>
 
-<h2>What the REST API is, in plain language</h2>
-<p>Your website normally answers visitors with web pages: HTML designed for people to read. The REST API is a second doorway that answers with plain data instead, in a format called JSON that other programs can read easily. Ask it for your latest blog posts and it returns titles, dates, content and links, without any design.</p>
-<p>Each type of data has its own address, called an endpoint, under /wp-json/ on your domain. For example:</p>
-<pre><code>https://yoursite.com/wp-json/wp/v2/posts
-https://yoursite.com/wp-json/wp/v2/pages
-https://yoursite.com/wp-json/wp/v2/categories</code></pre>
-<p>Programs can read data from these endpoints and, with permission, create, update or delete it. The REST API has been part of WordPress core since 2016, and plugins can add their own endpoints alongside the built-in ones.</p>
-
-<h2>What already uses it on your site</h2>
-<p>Even if nobody has ever "set up" an API for you, it's probably busy:</p>
-<ul>
-  <li><strong>The block editor:</strong> when you edit a page in Gutenberg, the editor loads and saves content through the REST API in the background. This is why switching the API off completely can break editing.</li>
-  <li><strong>Plugins:</strong> many form, SEO, booking and analytics plugins use it to save settings, submit forms or load data without reloading the page.</li>
-  <li><strong>WooCommerce:</strong> parts of its admin screens and its newer block-based cart and checkout rely on API endpoints, and it has its own API for connecting a store to inventory, accounting or shipping software.</li>
-  <li><strong>Apps and integrations:</strong> mobile apps, automation tools and CRMs can read or write content through it.</li>
-  <li><strong>Headless websites:</strong> where a separate front end fetches all its content from WordPress; see <a href="/blog/headless-wordpress-small-business/">headless WordPress for small businesses</a> for whether that's worth it.</li>
-</ul>
-
-<h2>What's public by default</h2>
-<p>Anyone can read the same content through the API that they could already see on your website: published posts and pages, categories, tags and media details. Drafts, private posts and site settings need a logged-in user with the right permissions. Custom post types only appear if they're registered to show in the API, which matters when you structure content such as properties or courses; see <a href="/blog/custom-post-types-fields/">custom post types and custom fields</a>.</p>
-<h3>The user listing</h3>
-<p>One endpoint surprises people: /wp-json/wp/v2/users. For visitors who aren't logged in, it lists users who have published posts, with each one's display name, profile details and a URL slug. By default that slug is based on the login username, so the list can hand bots the usernames they want for password-guessing attacks.</p>
-<p>That isn't a hack in itself (author archive pages often reveal the same slug), but there's no reason to advertise it. Many security plugins can restrict the users endpoint for logged-out visitors. A developer can do the same with a short snippet, while logged-in editors keep full access:</p>
-<pre><code>add_filter( 'rest_endpoints', function ( $endpoints ) {
-    if ( ! is_user_logged_in() ) {
-        foreach ( array_keys( $endpoints ) as $route ) {
-            if ( str_starts_with( $route, '/wp/v2/users' ) ) {
-                unset( $endpoints[ $route ] );
-            }
-        }
-    }
-    return $endpoints;
-} );</code></pre>
-<p>Code like this belongs in a small site-specific plugin, not a parent theme, and should be tested on a copy of the site first. Remember that the real protection is strong passwords and two-factor authentication, which make a known username useless to an attacker; see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
-
-<h2>Authentication and application passwords</h2>
-<p>Reading public content needs no login. Anything that changes or reads private data needs the request to prove who it's from. Common ways:</p>
-<ul>
-  <li><strong>Your normal login:</strong> when you're logged in to the dashboard, the editor and plugins send requests with your login cookie plus a security token (a nonce), so you never notice</li>
-  <li><strong>Application passwords:</strong> built into WordPress since version 5.6, for external apps and services</li>
-  <li><strong>Plugin-specific keys:</strong> WooCommerce, for example, issues its own API keys with read, write or read/write permission, and some plugins add other methods such as tokens</li>
-</ul>
-<p>An application password is a long, separate password generated for one app from your profile page under <strong>Users</strong>. It works only for API requests, not for logging in to the dashboard. It's shown once, and it can be revoked on its own without changing your main password. By default, WordPress only offers application passwords on sites running HTTPS.</p>
-<p>Good habits:</p>
-<ul>
-  <li>Create one application password per service, with a clear name such as "CRM sync"</li>
-  <li>Connect integrations through a dedicated user with the lowest role that works, because the app can do whatever that user can do</li>
-  <li>Revoke passwords for services you've stopped using, and any you don't recognise</li>
-  <li>Never give an integration, or the person setting it up, your main admin password</li>
-</ul>
-
-<h2>When a business actually needs the REST API</h2>
-<p>Every WordPress site uses it. The real question is whether you need someone to build something with it. A rough guide:</p>
+<h2>The WordPress REST API explained in plain language</h2>
+<p>Think of your website as having two doors. The front door serves web pages to visitors' browsers. The REST API is a side door that serves the same content as structured data to programs. A program can ask for the latest ten posts, a product's price or a page's content, and get back clean data without any design around it.</p>
+<p>Each type of content has its own address, called an endpoint. For example, <code>/wp-json/wp/v2/posts</code> lists published posts, <code>/wp-json/wp/v2/pages</code> lists pages, and plugins such as WooCommerce add their own endpoints under their own namespace. A program reads data with a GET request and, if it has permission, creates or updates content with POST, PUT or DELETE requests.</p>
 <table>
-  <thead><tr><th>Situation</th><th>Custom API work needed?</th></tr></thead>
+  <thead><tr><th>Term</th><th>Plain meaning</th></tr></thead>
   <tbody>
-    <tr><td>Brochure site with a contact form and blog</td><td>No; it works quietly in the background</td></tr>
-    <tr><td>Sending website enquiries to a CRM or Google Sheet</td><td>Usually not; many form plugins and CRMs have ready-made connections (see <a href="/blog/connect-website-forms-to-crm/">connecting forms to a CRM</a>)</td></tr>
-    <tr><td>Syncing WooCommerce orders or stock with inventory, billing or ERP software</td><td>Often, if no reliable ready-made connector exists</td></tr>
-    <tr><td>A mobile app that shows your products, courses or listings</td><td>Yes; the app reads its content from the API</td></tr>
-    <tr><td>Live calculators, filters or dashboards that update without reloading</td><td>Often, through custom endpoints</td></tr>
-    <tr><td>A headless front end</td><td>Yes, for everything</td></tr>
+    <tr><td>Endpoint</td><td>A URL that returns or accepts one kind of data, such as posts</td></tr>
+    <tr><td>JSON</td><td>A simple text format for data that programs read easily</td></tr>
+    <tr><td>Namespace</td><td>The group an endpoint belongs to, such as wp/v2 for core or a plugin's own name</td></tr>
+    <tr><td>Authentication</td><td>Proving who is making the request, so private actions are allowed</td></tr>
+    <tr><td>Application password</td><td>A separate password for one integration, which can be revoked on its own</td></tr>
   </tbody>
 </table>
-<p>If a developer proposes custom endpoints, ask three questions: who can call each one, what data does it return, and how are permissions checked?</p>
+
+<h2>What already uses it on your site</h2>
+<p>Even if you have never heard of it, your site probably relies on the REST API every day:</p>
+<ul>
+  <li><strong>The block editor.</strong> Gutenberg loads and saves posts, blocks, media and settings through the REST API.</li>
+  <li><strong>Plugins.</strong> Form builders, SEO plugins, page builders, caching tools and WooCommerce use it for admin screens and background tasks.</li>
+  <li><strong>The WordPress mobile app and Jetpack-style services</strong> connect through it.</li>
+  <li><strong>Integrations.</strong> Automation tools, CRMs, inventory systems and marketing tools often read or push data through it.</li>
+  <li><strong>Headless or app front ends</strong> that use WordPress only as a content store.</li>
+</ul>
+<p>The older XML-RPC system did some of these jobs before the REST API existed; <a href="/blog/wordpress-xmlrpc-explained/">WordPress XML-RPC explained</a> covers when that can be switched off.</p>
+
+<h2>What's public by default</h2>
+<p>Anything already public on your site is also readable through the REST API without logging in: published posts, pages, categories, tags, media details and public custom post types. That is by design and generally not a risk, since the same content is visible on the website.</p>
+<table>
+  <thead><tr><th>Data</th><th>Public without login?</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Published posts and pages</td><td>Yes</td><td>Same as on the website</td></tr>
+    <tr><td>Drafts and private posts</td><td>No</td><td>Need an authenticated user with permission</td></tr>
+    <tr><td>Users list</td><td>Partly</td><td>Shows usernames of people who have published posts; often worth restricting</td></tr>
+    <tr><td>WooCommerce orders and customers</td><td>No</td><td>Need API keys with the right permissions</td></tr>
+    <tr><td>Site settings</td><td>No</td><td>Administrators only</td></tr>
+  </tbody>
+</table>
+<p>The users endpoint is the one most site owners want to tighten, because it can reveal login usernames. Combined with weak passwords, that helps attackers. Restricting it, and using strong passwords and two-factor login as covered in <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>, closes that gap.</p>
+
+<h2>Authentication and application passwords</h2>
+<p>To do anything beyond reading public content, a request must be authenticated. There are a few ways:</p>
+<ul>
+  <li><strong>Cookie authentication</strong> is used inside the WordPress admin. When you are logged in, the editor's requests carry your session and a security token automatically.</li>
+  <li><strong>Application passwords</strong> are built into WordPress. Under Users, Profile, you create a named password for one integration. It works only for API access, not for logging in to the dashboard, and you can revoke it without changing your main password.</li>
+  <li><strong>Plugin-specific keys</strong> such as WooCommerce REST API keys, which can be read-only or read-write.</li>
+  <li><strong>OAuth or token plugins</strong> for more complex setups.</li>
+</ul>
+<p>Give each integration its own user with the lowest role that works, and its own application password or key. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> helps choose the right role. Always use https, so credentials are not sent in plain text.</p>
+
+<h2>When a business actually needs the REST API</h2>
+<p>Most small business websites never need custom REST API work. It becomes useful when:</p>
+<ul>
+  <li>You want website form entries or WooCommerce orders sent automatically to a CRM, ERP or accounting tool. See <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a>.</li>
+  <li>Stock, prices or products need to sync with an inventory or billing system.</li>
+  <li>A mobile app needs to show the same content or products as the website.</li>
+  <li>You want a headless front end built with a JavaScript framework; <a href="/blog/headless-wordpress-small-business/">headless WordPress explained</a> covers whether that is worth it.</li>
+  <li>Several sites need to share content, such as a group of branch or brand sites.</li>
+  <li>You need a custom endpoint that exposes only specific data for a partner or app.</li>
+</ul>
+<p>Custom endpoints are usually built as a small plugin so they survive theme changes; <a href="/blog/custom-wordpress-plugin-development/">custom WordPress plugin development</a> explains that approach.</p>
 
 <h2>Don't switch it off; restrict it</h2>
-<p>Some older security advice says to disable the REST API entirely. On a modern site that tends to break the block editor, forms, WooCommerce features and plugin settings. A better approach:</p>
+<p>Some security guides suggest disabling the REST API completely. On a modern WordPress site that breaks the block editor, many plugins and integrations. A better approach is to restrict what is exposed:</p>
 <ul>
-  <li>Restrict specific endpoints that expose more than they should, such as the user listing</li>
-  <li>Keep plugins updated: custom endpoints that forget to check permissions are a common source of plugin vulnerabilities</li>
-  <li>Deactivate and delete plugins you no longer use, so their endpoints and code are gone</li>
-  <li>Use a firewall or security plugin to rate-limit abusive requests to /wp-json/</li>
-  <li>Test the editor, forms and checkout after changing any API-related setting</li>
+  <li>Restrict the users endpoint to logged-in users, through a security plugin setting or a small code snippet.</li>
+  <li>Remove or protect custom endpoints added by plugins you no longer use, by deactivating and deleting those plugins.</li>
+  <li>Use the lowest-permission keys for integrations, and revoke them when a tool is retired.</li>
+  <li>Rate-limit or block abusive API traffic at the firewall; <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers how.</li>
+  <li>Keep WordPress and plugins updated, since API vulnerabilities are usually fixed in updates.</li>
 </ul>
+<p>Treat the REST API as part of your general hardening, alongside the steps in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
 
-<p>Planning an integration, an app or a headless build, or want your site's API locked down sensibly? I build and maintain integrations as part of <a href="/wordpress-website-development/">WordPress website development</a>, or you can <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a> for a specific job.</p>
+<h2>Common REST API errors</h2>
+<table>
+  <thead><tr><th>Error or symptom</th><th>Likely cause</th><th>What to check</th></tr></thead>
+  <tbody>
+    <tr><td>Editor shows "Updating failed" or "The response is not a valid JSON response"</td><td>REST API blocked by a security plugin, firewall or wrong permalinks</td><td>Security settings, firewall logs, re-save permalinks</td></tr>
+    <tr><td>401 Unauthorized</td><td>Missing or wrong credentials</td><td>Application password, user role, https</td></tr>
+    <tr><td>403 Forbidden</td><td>User lacks permission, or a firewall rule blocks the request</td><td>Role capabilities, firewall rules</td></tr>
+    <tr><td>404 on /wp-json/</td><td>Permalinks or server rewrite rules not working</td><td>Permalink settings, server configuration</td></tr>
+  </tbody>
+</table>
+<p>Site Health under Tools also reports when the REST API is not reachable, which is a quick first check.</p>
+
+<h2>Performance and the REST API</h2>
+<p>REST API requests run WordPress and PHP just like page loads, but they are usually not served from the page cache. A badly built integration that polls the site every few seconds, or a front end that makes dozens of API calls per page, can slow the whole site down, particularly on shared hosting. Ask integrations to fetch only the fields they need, to sync changes in batches rather than one record at a time, and to use webhooks where possible so WordPress sends data when something changes instead of being asked constantly. Check your server logs if the site slows down after a new tool is connected.</p>
+
+<h2>Getting help with integrations</h2>
+<p>Connecting WordPress to other systems through the REST API is straightforward for a developer who has done it before, and easy to get wrong in ways that leak data or create duplicate orders. Plan what data moves in which direction, how often, and what happens when one side is down. If you need an integration built or reviewed, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
+
+<h2>FAQs</h2>
+<h3>What is the WordPress REST API?</h3>
+<p>It is a built-in interface that lets other programs read and change WordPress content through URLs under /wp-json/, receiving data as JSON. The block editor and many plugins depend on it.</p>
+<h3>Is the WordPress REST API a security risk?</h3>
+<p>Not by itself. Public endpoints show content that is already public. The main step is to restrict the users endpoint, use strong authentication for integrations and keep plugins updated.</p>
+<h3>Should I disable the WordPress REST API?</h3>
+<p>No. Disabling it breaks the block editor and many plugins. Restrict sensitive endpoints instead.</p>
+<h3>What are application passwords in WordPress?</h3>
+<p>They are separate passwords created per integration under your user profile. They work only for API access and can be revoked individually without changing your login password.</p>
+<h3>Do I need the REST API for a normal business website?</h3>
+<p>You use it already through the editor and plugins, but you only need custom REST API work for integrations, apps, headless front ends or syncing with other systems.</p>
+
+<p>Need WordPress connected to your CRM, inventory or app? You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> from Samverse to plan and build it safely.</p>
 `,
   },
   {
@@ -64720,105 +64851,116 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   },
   {
     slug: 'woocommerce-checkout-optimization',
-    seoTitle: 'WooCommerce Checkout Optimization: Make Buying Easier',
+    seoTitle: 'WooCommerce Checkout Optimization: Make Buying Quick',
     title: 'WooCommerce Checkout Optimization: How to Make Buying Quick and Easy',
-    description: 'Make WooCommerce checkout easier: fewer fields, guest checkout, block vs classic checkout, early delivery charges, UPI and COD, trust cues and real order tests.',
+    description: 'WooCommerce checkout optimization for Indian stores: fewer fields, guest checkout, early delivery costs, UPI and COD, trust cues, mobile layout, testing.',
     date: '2026-10-01',
+    updated: '2026-10-29',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization'],
     body: `
-<p>By the time someone reaches your checkout, they have already decided to buy. Your job now is to stay out of their way: every unnecessary field, surprise charge or confusing payment step gives them a reason to stop. This guide covers the checkout page itself. For shoppers who do leave, see <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</p>
+<p>WooCommerce checkout optimization comes down to removing friction: ask only for the details you need, allow guest checkout, show delivery charges and dates early, offer the payment methods Indian shoppers use, and make the whole flow easy on a phone. Small changes here often matter more than anything else on the store, because these are people who have already decided to buy.</p>
+<p>This guide covers each area in order, with notes for stores selling in India. If you want it done for you, <a href="/woocommerce-developer/">WooCommerce development</a> includes checkout setup and testing.</p>
 
-<h2>Ask only for what you need</h2>
-<p>The default WooCommerce checkout asks for more than most Indian stores need. For a typical home delivery, you need:</p>
-<ul>
-  <li>Name and mobile number (couriers often call before delivering)</li>
-  <li>Pin code, address, city and state</li>
-  <li>Email, if you send order confirmations and invoices by email</li>
-</ul>
-<p>Common fields to hide or make optional:</p>
-<ul>
-  <li><strong>Company name:</strong> hide it unless you sell to businesses</li>
-  <li><strong>Address line 2:</strong> make it optional, or relabel it "Landmark", which Indian couriers find genuinely useful</li>
-  <li><strong>Order notes:</strong> remove them unless customers really need them, for example for gift messages</li>
-  <li><strong>GSTIN:</strong> if you sell to businesses, add it as an optional field rather than a required one</li>
-</ul>
-<p>Filling in city and state automatically from the pin code saves typing on a phone; some checkout plugins do this, or it can be added with a little custom code. Add a short line explaining why you need the phone number.</p>
-
-<h2>Let people buy without an account</h2>
-<p>Forcing shoppers to create an account before paying is one of the easiest ways to lose a first order. In WooCommerce → Settings → Accounts &amp; Privacy, allow customers to place orders without an account. You can still offer account creation for repeat buyers, but don't make it a hurdle.</p>
-<p>Guest orders still give you the customer's email and phone number, so you can send order updates and, with consent, offers later. Returning customers also benefit from browser autofill, which works best when fields use standard names and input types.</p>
-
-<h2>Block checkout or classic checkout?</h2>
-<p>WooCommerce now has two checkout systems. New stores generally get the block-based Checkout by default, while many older stores still run the classic shortcode checkout. Both work; the differences are mostly about flexibility and compatibility.</p>
+<h2>Where shoppers drop off at checkout</h2>
+<p>Before changing anything, look at where people leave. In GA4 with ecommerce events set up, compare begin_checkout, add_shipping_info, add_payment_info and purchase. A big drop at one step points to the problem.</p>
 <table>
-  <thead><tr><th>Aspect</th><th>Block checkout</th><th>Classic checkout</th></tr></thead>
+  <thead><tr><th>Drop-off point</th><th>Likely cause</th><th>What to try</th></tr></thead>
   <tbody>
-    <tr><td>Editing</td><td>Edited in the block editor, with simple options to show, hide or require some fields</td><td>Changed through settings, field editor plugins or code</td></tr>
-    <tr><td>Design</td><td>Modern, mobile-friendly layout out of the box</td><td>Depends largely on your theme</td></tr>
-    <tr><td>Plugin support</td><td>Growing, but some older plugins don't support it yet</td><td>Very wide, after many years in use</td></tr>
-    <tr><td>Custom logic</td><td>Needs block-compatible extensions or development</td><td>Easy for developers to extend with hooks</td></tr>
+    <tr><td>Before entering details</td><td>Forced account creation, unexpected delivery charge</td><td>Guest checkout, show delivery cost in cart</td></tr>
+    <tr><td>Address step</td><td>Too many fields, pincode problems</td><td>Remove optional fields, autofill city and state</td></tr>
+    <tr><td>Payment step</td><td>Missing UPI or COD, low trust</td><td>Add expected methods, trust cues near the button</td></tr>
+    <tr><td>After clicking pay</td><td>Gateway errors, slow redirects</td><td>Check gateway logs and test orders</td></tr>
   </tbody>
 </table>
-<p>Before switching either way, list every plugin that touches the checkout: payment gateway, COD rules, pin code checker, GST fields, abandoned cart tracking and analytics. Confirm each one supports the checkout you plan to use, and test the switch on a staging copy first.</p>
+<p>If tracking is not in place yet, <a href="/blog/ga4-events-explained/">GA4 events explained</a> shows what to set up. Follow up on people who leave with <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</p>
+
+<h2>Ask only for what you need</h2>
+<p>The default WooCommerce checkout includes fields many stores do not need. Go through each one and ask whether you need it to deliver the order, send an invoice or contact the customer.</p>
+<ul>
+  <li><strong>Company name</strong> is only needed for B2B stores or GST invoices; make it optional or hide it.</li>
+  <li><strong>Address line 2</strong> can stay optional; many Indian addresses still need it for landmarks.</li>
+  <li><strong>Order notes</strong> can be hidden unless customers often add delivery instructions.</li>
+  <li><strong>Separate shipping address</strong> should be a tick box, not a second form shown by default.</li>
+  <li><strong>GSTIN</strong> should be an optional field shown only to business buyers who want input tax credit.</li>
+</ul>
+<p>Put the pincode early and fill city and state from it where possible. Use the correct input types so phones show the number pad for phone and pincode fields. GST invoice handling is covered in <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST invoices in India</a>.</p>
+
+<h2>WooCommerce checkout optimization: guest checkout first</h2>
+<p>Forcing an account before purchase is one of the most common reasons people leave. In WooCommerce settings, under Accounts and Privacy, allow customers to place orders without an account. You can still offer an account after the order, or create one automatically and email a login link.</p>
+<p>Social login and one-tap login can help returning customers, but should never be the only route. Many shoppers are happy to type an email and phone number and nothing more.</p>
+
+<h2>Block checkout or classic checkout?</h2>
+<p>Newer WooCommerce installs use the block-based checkout by default. It is faster to set up and works well on phones, but some older payment, shipping and field-editing plugins only support the classic shortcode checkout.</p>
+<table>
+  <thead><tr><th>Point</th><th>Block checkout</th><th>Classic checkout</th></tr></thead>
+  <tbody>
+    <tr><td>Default on new stores</td><td>Yes</td><td>No, uses a shortcode</td></tr>
+    <tr><td>Plugin compatibility</td><td>Growing, but check each plugin</td><td>Very wide, including older plugins</td></tr>
+    <tr><td>Field customisation</td><td>Through supported extensions and settings</td><td>Through many field-editor plugins and code</td></tr>
+    <tr><td>Best for</td><td>New stores with modern plugins</td><td>Stores relying on older extensions</td></tr>
+  </tbody>
+</table>
+<p>Check that your payment gateway, COD rules, pincode checker and invoice plugins all support the checkout type you choose before switching.</p>
 
 <h2>Show delivery charges and dates early</h2>
-<p>Surprise costs at the last step are a common reason shoppers give up. Instead:</p>
-<ul>
-  <li>Show shipping charges, or your free-shipping threshold, on product and cart pages</li>
-  <li>Show an estimated delivery date or range, ideally based on the customer's pin code</li>
-  <li>Display prices inclusive of GST so the total doesn't jump at checkout</li>
-  <li>Show any COD fee clearly before the customer chooses how to pay</li>
-  <li>Keep a "free shipping above" message in the cart, showing how much more is needed</li>
-</ul>
-<p>Much of this belongs on the product page, where the buying decision starts; see <a href="/blog/woocommerce-product-page-optimization/">WooCommerce product page optimisation</a>.</p>
+<p>Surprise costs at the last step drive people away. Show delivery charges in the cart, show any free delivery threshold, and let people check delivery to their pincode on the product page. A <a href="/blog/pincode-delivery-checker-woocommerce/">pincode delivery checker</a> also helps when you cannot ship everywhere or COD is limited to certain areas.</p>
+<p>If you can give an estimated delivery window, show it. Shipping zones, courier integrations and rates are covered in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 
 <h2>Offer the payment options Indian shoppers expect</h2>
-<p>Indian shoppers expect to pay by UPI, cards (including RuPay), net banking or wallets, and many first-time buyers still want Cash on Delivery. A few details make a real difference:</p>
+<p>Most Indian shoppers look for UPI first, followed by cards, net banking and wallets. Cash on delivery remains important for many categories, especially first-time buyers. Choose a gateway that supports these methods cleanly inside WooCommerce, and show the accepted methods before the final step.</p>
 <ul>
-  <li><strong>Make UPI easy:</strong> on mobile, the payment step should open the customer's UPI app directly; on desktop, a QR code works well</li>
-  <li><strong>Use clear labels:</strong> "Pay online: UPI, cards, net banking" means more to a shopper than a gateway's brand name</li>
-  <li><strong>Keep the list short:</strong> two or three clear options beat a long list of near-duplicates</li>
-  <li><strong>Handle failures well:</strong> if a UPI payment fails or times out, the customer should be able to retry or pick another method without re-entering their address</li>
-  <li><strong>Configure webhooks</strong> so paid orders don't get stuck as "pending payment" when a customer closes the browser too soon</li>
+  <li>Label UPI clearly so mobile users know they can pay with their usual app.</li>
+  <li>If COD has a fee or a maximum order value, say so in the cart, not only at payment.</li>
+  <li>Consider limiting COD by pincode or order value if returns to origin are a problem.</li>
 </ul>
-<p>COD brings its own risk of refused deliveries; see <a href="/blog/woocommerce-cash-on-delivery-india/">how to offer COD without losing money</a> for limits, confirmations and prepaid incentives.</p>
+<p><a href="/blog/payment-gateways-india-compared/">How to choose a payment gateway for India</a> and <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery in WooCommerce</a> go deeper.</p>
 
 <h2>Add trust cues where people pay</h2>
-<p>The checkout is where doubts come back: is this store real, and what happens if something goes wrong? Answer those doubts on the page itself:</p>
-<ul>
-  <li>A clear order summary with product names, images, quantities and the full total</li>
-  <li>A short returns and refund summary near the "Place order" button, linking to the full policy</li>
-  <li>A phone number or WhatsApp link for quick questions</li>
-  <li>HTTPS across the whole site, with no browser security warnings</li>
-  <li>Only badges and claims that are true; made-up security seals do more harm than good</li>
-</ul>
-<p>Remove distractions too: pop-ups, newsletter prompts and chat widgets that cover the "Place order" button on a small screen.</p>
+<p>Near the payment button, show what reassures buyers: accepted payment logos, a short line on secure payment, your returns and refund policy, delivery time and a contact number or WhatsApp link. Keep the header simple on checkout so people are not tempted to wander off, but leave a way back to the cart.</p>
+<p>Do not add fake countdown timers, invented stock warnings or badges for certifications you do not hold. They damage trust once noticed.</p>
+<p>If you sell higher-value items, a short note on how refunds work for failed UPI payments helps too. Many shoppers have seen money leave their account without an order being placed, so explaining that failed payments are usually reversed by the bank, and giving a contact for help, removes a common worry at the moment of paying.</p>
 
 <h2>Design for the phone first</h2>
-<p>Many of your shoppers will check out on a phone, often on patchy mobile data. Check that:</p>
+<p>Most orders on Indian stores come from phones, so test the checkout on a mid-range Android phone over mobile data. Check that:</p>
 <ul>
-  <li>Phone and pin code fields open a number keypad</li>
-  <li>Buttons and payment options are large enough to tap easily</li>
-  <li>Error messages appear next to the field that needs fixing, in plain words</li>
-  <li>The page doesn't jump around as shipping costs and payment options load</li>
-  <li>The checkout loads quickly: checkout pages can't be fully cached, so hosting quality and the number of plugins matter here</li>
+  <li>Fields are large enough to tap and labels stay visible while typing.</li>
+  <li>The order summary is collapsible so it does not push the form down.</li>
+  <li>The place order button is easy to reach and does not jump around.</li>
+  <li>Error messages appear next to the field, not only at the top of the page.</li>
+  <li>The page loads quickly; heavy scripts and popups on checkout slow everyone down.</li>
 </ul>
-
-<p>If the checkout won't load at all, spins forever or ignores the "Place order" button, that's a fault rather than a design problem; see <a href="/blog/woocommerce-checkout-not-working-fix/">how to fix a WooCommerce checkout that isn't working</a>.</p>
+<p>Speed matters on checkout pages because they cannot be fully cached. See <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</p>
 
 <h2>Test with real orders</h2>
-<p>Test mode is useful, but only real orders show you what customers actually experience. Before launch, and after any major update:</p>
-<ol>
-  <li>Place real, low-value orders with each payment method: UPI on Android and iPhone, a card, net banking and COD</li>
-  <li>Check order emails, invoices, stock levels and shipping charges for a few different pin codes</li>
-  <li>Try a failed payment and a cancelled payment, and confirm the order status is correct</li>
-  <li>Apply a coupon and check the totals</li>
-  <li>Refund the test orders from the WooCommerce order screen</li>
-</ol>
-<p>Then watch someone who has never used your store buy something on their own phone, without helping them. Wherever they hesitate is what to fix next. In analytics, compare how many people start checkout with how many complete an order, and change one thing at a time so you know what helped.</p>
+<p>After any change to the checkout, payment gateway, theme or plugins, place a real test order with each payment method, including a small UPI payment and a COD order. Check that the order appears in the admin, emails reach the customer and you, stock reduces and any invoice is created. If something fails, <a href="/blog/woocommerce-checkout-not-working-fix/">fixing a WooCommerce checkout that is not working</a> has a step-by-step routine.</p>
 
-<p>Want your checkout reviewed, simplified or moved to the block checkout safely? See <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-speed-optimization/">speed optimisation</a> if the checkout itself is slow.</p>
+<h2>The order confirmation page and emails</h2>
+<p>Checkout optimization does not stop at the payment button. The thank-you page and order emails are where a buyer decides whether they trust you enough to order again. Make sure the confirmation page clearly shows the order number, what was bought, the payment method, the delivery address and when to expect dispatch. For COD orders, remind the customer to keep the amount ready and say how they will be contacted before delivery.</p>
+<p>Order emails should arrive within a minute or two and not land in spam. If they go missing, buyers often place a second order or raise a payment dispute. Set up proper email sending with SMTP and domain authentication, and consider SMS or WhatsApp order updates for customers who rarely check email. Keep the branding of these emails consistent with the store, and include a simple way to reach you if something is wrong with the order.</p>
+<h3>A short checkout review checklist</h3>
+<ul>
+  <li>Every field is needed for delivery, invoicing or contact.</li>
+  <li>Guest checkout is on and account creation is optional.</li>
+  <li>Delivery charges and any COD fee are visible in the cart.</li>
+  <li>UPI, cards and other expected methods are listed and tested.</li>
+  <li>Returns policy and contact details are visible on the checkout page.</li>
+  <li>The confirmation page and emails show complete order details.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>How do I optimize WooCommerce checkout?</h3>
+<p>Remove fields you do not need, allow guest checkout, show delivery costs in the cart, offer UPI, cards and COD where suitable, add trust cues near the payment button, and test the flow on a phone with real orders.</p>
+<h3>Should I use a one-page checkout?</h3>
+<p>The standard WooCommerce checkout is already a single page. What matters more is how many fields it shows and how quickly it loads, rather than the number of steps.</p>
+<h3>Does guest checkout increase sales?</h3>
+<p>Forcing an account is a common reason shoppers leave, so allowing guest checkout usually removes a barrier. You can still offer an account after the order.</p>
+<h3>Should I offer cash on delivery?</h3>
+<p>It depends on your products, margins and return rates. Many Indian stores offer COD with limits on pincode or order value rather than switching it off completely.</p>
+<h3>Can I change checkout fields without code?</h3>
+<p>Yes, with a checkout field editor plugin that supports your checkout type. Check block checkout compatibility before installing one.</p>
+
+<p>Want a quicker checkout set up and tested on your store? <a href="/woocommerce-developer/">WooCommerce development</a> from Samverse covers fields, payments, delivery and testing.</p>
 `,
   },
   {
@@ -66925,93 +67067,120 @@ RewriteRule . /index.php [L]
     slug: 'white-label-woocommerce-development',
     seoTitle: 'White-Label WooCommerce Development for Agencies',
     title: 'White-Label WooCommerce Development for Agencies: Who Does What',
-    description: 'How white-label WooCommerce builds work for agencies: what your partner sets up, what your agency keeps, how to test checkout and how to support the store.',
+    description: 'White-label WooCommerce development for agencies: what the partner builds, what you keep, payments, shipping and tax by market, testing and support.',
     date: '2026-10-10',
+    updated: '2026-10-29',
     category: 'Agencies',
     related: ['wordpress-developer-for-agencies', 'woocommerce-developer'],
     body: `
-<p>Selling an online store to a client is a bigger commitment than selling a brochure site. Someone has to set up payments, shipping, taxes, products and order emails, and make sure checkout works on day one. Many agencies hand that technical work to a white-label WooCommerce developer while keeping the client, the brand and the design in-house. For the model itself, see <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development</a>; this guide covers what changes when the project is a store.</p>
+<p>White-label WooCommerce development means an outside developer builds and configures your client's online store under your agency's name. The partner handles the technical work, store setup, templates, payments, shipping, product imports, custom features and testing, while your agency keeps the client relationship, the brand, the design and the final sign-off.</p>
+<p>Selling a store is a bigger commitment than selling a brochure site, because checkout has to work on day one. This guide covers who does what, the market-specific decisions, testing and support after launch. For the general model, see <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development</a>; for working with Samverse, see <a href="/wordpress-developer-for-agencies/">white-label WordPress development for agencies</a>.</p>
+
+<h2>White-label WooCommerce development: who does what</h2>
+<table>
+  <thead><tr><th>Area</th><th>Your agency</th><th>Development partner</th></tr></thead>
+  <tbody>
+    <tr><td>Client relationship</td><td>Sales, calls, approvals, invoicing</td><td>Stays in the background unless invited</td></tr>
+    <tr><td>Design</td><td>Store design and brand</td><td>Builds it faithfully, flags anything that will not work well</td></tr>
+    <tr><td>Store setup</td><td>Confirms business rules with the client</td><td>Configures WooCommerce, checkout, stock and statuses</td></tr>
+    <tr><td>Payments and shipping</td><td>Gets client decisions and account access</td><td>Connects gateways, builds zones and rates</td></tr>
+    <tr><td>Products</td><td>Collects product data from the client</td><td>Imports, maps variations and categories</td></tr>
+    <tr><td>Testing</td><td>Final review and client UAT</td><td>Technical and checkout testing before handover</td></tr>
+  </tbody>
+</table>
 
 <h2>What the development partner handles</h2>
 <p>The partner takes on the technical work that turns an approved design into a working shop:</p>
 <ul>
-  <li><strong>Store setup:</strong> WooCommerce installed and configured, with currency, store address, guest and account checkout, stock options and order statuses set the way the client trades</li>
-  <li><strong>Templates:</strong> shop, category, product, cart, checkout, account and order confirmation pages built to your design on desktop and mobile</li>
-  <li><strong>Payments and shipping</strong> configured for the client's market (covered below)</li>
-  <li><strong>Product imports</strong> from a spreadsheet, a supplier file or an old store</li>
-  <li><strong>Custom features</strong> beyond what standard extensions do well</li>
-  <li><strong>Order emails:</strong> branded for the client and sent through a reliable email service so they reach inboxes</li>
-  <li><strong>Technical checks:</strong> speed, mobile layout, security basics and checkout testing before your team reviews anything</li>
+  <li><strong>Store setup:</strong> currency, store address, guest and account checkout, stock options and order statuses set the way the client trades.</li>
+  <li><strong>Templates:</strong> shop, category, product, cart, checkout, account and order confirmation pages built to your design on desktop and mobile.</li>
+  <li><strong>Payments and shipping</strong> configured for the client's market.</li>
+  <li><strong>Product imports</strong> from a spreadsheet, a supplier file or an old store.</li>
+  <li><strong>Custom features</strong> beyond what standard extensions do well.</li>
+  <li><strong>Order emails</strong> branded for the client and sent through a reliable email service.</li>
+  <li><strong>Technical checks:</strong> speed, mobile layout, security basics and checkout testing before your team reviews anything.</li>
 </ul>
 
 <h2>Payments and shipping for the client's market</h2>
-<p>Agencies with clients in the UK, US, Australia and India soon find that each market expects something different at checkout. A good partner asks where the client sells, who its customers are and how it ships before suggesting any plugins.</p>
+<p>Agencies with clients in the UK, US, Australia and India soon find that each market expects something different at checkout. A good partner asks where the client sells, who its customers are and how it ships before suggesting plugins.</p>
 <table>
   <thead><tr><th>Decision</th><th>What varies by market</th><th>Who decides</th></tr></thead>
   <tbody>
-    <tr><td>Payment methods</td><td>Cards are standard everywhere and many stores add digital wallets; Indian stores usually need UPI and often cash on delivery</td><td>The client, with advice from the partner on what integrates cleanly</td></tr>
-    <tr><td>Payment gateway account</td><td>Availability, verification steps, payout times and supported currencies differ by country</td><td>The client opens the account in its own business name; the partner connects it</td></tr>
-    <tr><td>Shipping</td><td>Zones by postcode, pin code, state or country; flat, weight-based or free-over-a-threshold rates; couriers, local delivery and collection</td><td>The client sets the rules; the partner builds them</td></tr>
-    <tr><td>Tax</td><td>VAT, GST or sales tax, prices shown with or without tax, and invoice requirements</td><td>The client's accountant; the partner configures what they specify</td></tr>
+    <tr><td>Payment methods</td><td>Cards everywhere; Indian stores usually also need UPI and often cash on delivery</td><td>The client, with advice on what integrates cleanly</td></tr>
+    <tr><td>Gateway account</td><td>Availability, verification, payout times and currencies differ by country</td><td>The client opens it in its own business name</td></tr>
+    <tr><td>Shipping</td><td>Zones by postcode, pincode, state or country; flat, weight-based or free-over-threshold rates</td><td>The client sets rules; the partner builds them</td></tr>
+    <tr><td>Tax</td><td>VAT, GST or sales tax, inclusive or exclusive prices, invoice rules</td><td>The client's accountant</td></tr>
   </tbody>
 </table>
-<p>That last row matters. A developer can set up tax rates and invoices, but shouldn't decide what they are. Ask the client to confirm their tax treatment with an accountant before the build is signed off.</p>
+<p>The tax row matters. A developer can set up rates and invoice templates, but should not decide what tax applies. Ask the client to get that from their accountant in writing. For stores selling abroad, <a href="/blog/woocommerce-sell-internationally/">selling internationally with WooCommerce</a> covers currencies and shipping.</p>
 
 <h2>Product imports and custom features</h2>
-<p>Product data depends on the client, so it's where store projects often slip. Agree early:</p>
-<ul>
-  <li><strong>Source:</strong> a spreadsheet, a supplier file, an export from another platform, or manual entry</li>
-  <li><strong>Structure:</strong> categories, attributes such as size and colour, variations, and the fields each product needs</li>
-  <li><strong>Images:</strong> who supplies them, at what size, and how files are named so they match the right products</li>
-  <li><strong>A sample import first:</strong> a small batch on staging, checked by your team before the full catalogue goes in</li>
-  <li><strong>Data clean-up:</strong> fixing duplicate SKUs, missing prices and inconsistent names is real work, so decide whether it's in scope</li>
-</ul>
-<p>Custom features might include product configurators, wholesale pricing, booking slots, subscriptions or a link to the client's stock system. For each, the partner should say whether an established extension covers it or custom code is needed, since that affects cost, testing and future updates.</p>
+<p>Product data is often the slowest part of a store project. Agree early who prepares the spreadsheet, in what format, with which columns for variations, attributes, images and stock. A partner can map and import it, but cannot invent missing descriptions, weights or sizes. Build a sample of ten products first, have the client check them, then import the rest.</p>
+<p>Custom features need a clear written scope: what triggers them, what the customer sees, what the admin sees and how to test them. Typical requests include wholesale pricing, product configurators, booking or rental logic, custom order statuses and integrations with inventory or accounting software. Ask the partner to say whether an existing, well-supported extension does the job before writing custom code, since custom code needs maintaining.</p>
 
 <p>If you're comparing development partners in India, the practical guide to <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> explains how projects usually run, how pricing is structured and which red flags to watch for.</p>
 
 <h2>What your agency keeps</h2>
-<p>White-label works because the client's experience doesn't change. Your agency keeps:</p>
 <ul>
-  <li><strong>The client relationship:</strong> every call, email and approval goes through you, and the partner never contacts your client unless you arrange it</li>
-  <li><strong>Strategy and scope:</strong> what the store sells, to whom, and what goes into phase one</li>
-  <li><strong>Design and brand:</strong> layouts, product page structure and the tone of order emails</li>
-  <li><strong>Content and marketing:</strong> product copy, policies, launch campaigns and SEO, if you sell them</li>
-  <li><strong>Pricing and contracts:</strong> what you charge and how you package support</li>
+  <li>The client relationship and all client communication, unless you invite the partner onto a call under your agency's name.</li>
+  <li>Design decisions and brand standards.</li>
+  <li>Pricing and invoicing to the client.</li>
+  <li>Ownership of the work: the client's site, accounts and code should be handed over under your agreement with the client.</li>
 </ul>
-<p>Use the <a href="/blog/agency-developer-handoff-checklist/">agency handoff checklist</a> for the full package to send, and add the store items above: payment methods, shipping rules, tax instructions and the product data file.</p>
+<p>Make sure the partner signs a confidentiality agreement and does not list your client's store in their own portfolio without permission.</p>
+
+<h2>Working across time zones</h2>
+<p>Many agencies use a partner in another country. With a partner in India on IST, UK and Australian agencies get some overlap in the working day, while US agencies usually see progress overnight. Agree a regular call slot, how urgent issues are handled, and a written update with staging links at the end of each working session. <a href="/blog/offshore-wordpress-developer-time-zones/">Working with an offshore WordPress developer across time zones</a> covers the practical side.</p>
+
+<h2>Speed and security on client stores</h2>
+<p>Store pages are heavier than brochure pages, and cart, checkout and account pages cannot be fully cached. Ask the partner how they keep product and category pages fast: image sizes, the number of extensions, which scripts load on which pages, and how caching is set up so checkout is excluded. Agree a basic security setup too, covering strong admin passwords, two-factor login for admins, limited admin accounts, a firewall and off-site backups that include the order database.</p>
+<p>These are easy to skip under deadline pressure and expensive to fix after a client complains that the store is slow or has been compromised.</p>
+
+<h2>Questions to ask a white-label WooCommerce partner</h2>
+<ul>
+  <li>Which payment gateways and shipping integrations have you set up before, and for which markets?</li>
+  <li>How do you handle product imports and what format do you need the data in?</li>
+  <li>Do you build on block checkout or classic checkout, and how do you decide?</li>
+  <li>What does your checkout test plan include, and will you share the results?</li>
+  <li>How do you report progress, and how quickly do you respond to urgent store issues?</li>
+  <li>How do you handle code ownership, licences and confidentiality?</li>
+</ul>
+<p>Clear answers to these tell you more than a portfolio does, because they show how the partner will behave when something goes wrong on a live store.</p>
 
 <h2>Testing checkout before handover</h2>
-<p>A store can look finished and still fail at the one step that matters. Before the client sees it, the partner should test checkout end to end in the gateway's test or sandbox mode, and your team should repeat the key paths on your own devices:</p>
+<p>Do not let a store reach the client until checkout has been tested properly. A good test plan covers:</p>
 <ol>
-  <li>Place orders with every payment method, including a declined card and a cancelled payment</li>
-  <li>Check out as a guest and as a logged-in customer</li>
-  <li>Use addresses in each shipping zone and confirm the right rates and delivery options appear</li>
-  <li>Check tax and totals against what the client's accountant specified</li>
-  <li>Apply a valid coupon, and try one that should be rejected</li>
-  <li>Confirm customer and store emails arrive, look right and land in the inbox rather than spam</li>
-  <li>Check that stock reduces after an order and that out-of-stock products behave as agreed</li>
-  <li>Run the whole flow on a phone as well as a desktop</li>
-  <li>Confirm purchase tracking fires once per order, if analytics or ad pixels are set up</li>
+  <li>A real order with every payment method, including a small live payment and cash on delivery if offered.</li>
+  <li>Orders to addresses in each shipping zone, checking rates and free delivery thresholds.</li>
+  <li>Coupons, sale prices, out-of-stock and backorder behaviour.</li>
+  <li>Customer and admin emails, invoices and order statuses.</li>
+  <li>Refunds from the WooCommerce admin and in the gateway.</li>
+  <li>The full flow on a phone over mobile data.</li>
 </ol>
-<p>After launch, a real order for a low-value product, refunded afterwards, confirms that live payment keys and payouts work. The <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a> covers the go-live steps in detail.</p>
+<p>Combine this with your general QA; <a href="/blog/website-qa-checklist-before-launch-agencies/">the agency QA checklist before launch</a> and the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a> cover the rest.</p>
+
+<h2>Handover to the client</h2>
+<p>At handover the client should receive admin access, ownership of hosting, domain and gateway accounts, a short guide or video on adding products and handling orders, and a list of plugins and licences with renewal dates. The <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a> lists what to include so nothing is missed.</p>
 
 <h2>Ongoing store support</h2>
-<p>Stores need more care than brochure sites. WooCommerce, its extensions and payment plugins update often, and a bad update can quietly stop orders. A sensible support arrangement covers:</p>
-<ul>
-  <li>Updates tested on staging first, with checkout retested after each round</li>
-  <li>Frequent backups that include the order database, not just the files</li>
-  <li>Uptime monitoring, with alerts going to both your team and the partner</li>
-  <li>Licence renewals for paid extensions, so they keep receiving updates</li>
-  <li>Small changes such as new products, banners and sale settings, within an agreed allowance</li>
-  <li>An agreed emergency path for payment failures and outages</li>
-</ul>
-<p>You can package this as a commerce tier in your <a href="/blog/agency-wordpress-care-plans/">white-label care plans</a>, with requests still coming to your agency and the partner working behind your brand.</p>
+<p>Stores need more care than brochure sites: WooCommerce and extension updates, payment gateway changes, test orders after updates and order email checks. Decide before launch whether your agency offers a care plan and who does the work behind it. If you sell care plans, <a href="/blog/agency-wordpress-care-plans/">agency WordPress care plans</a> explains how to structure them. Agree response times for checkout problems, since a broken checkout costs the client sales every hour.</p>
 
 <h2>Starting a white-label store project</h2>
-<p>For a first store with a new partner, choose a client with a manageable catalogue and standard payment and shipping needs. Ask the partner to confirm the plugin list, payment and shipping setup and exclusions before you quote, so your price reflects the real work. Keep gateway, hosting and licence accounts in the client's name, and give the partner its own logins.</p>
+<p>Before the first project, share a sample brief, your design files, your preferred hosting and how you want updates reported. Start with a smaller store or one part of a project so both sides can test the workflow. Review how the first project went, what slowed it down and what the brief missed, and update your brief template before the next one. Agencies looking for a partner based in India can also see the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page.</p>
 
-<p>I build and support WooCommerce stores for agencies, white-label and under NDA, from your designs and for your clients' markets. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> to send a brief for your next store project.</p>
+<h2>FAQs</h2>
+<h3>What is white-label WooCommerce development?</h3>
+<p>It is when an outside developer builds and configures an online store for your client under your agency's brand. You keep the client and design; the partner does the technical work.</p>
+<h3>Will the developer contact my client directly?</h3>
+<p>Not unless you ask. A white-label partner works through your team, and joins client calls only as part of your agency if invited.</p>
+<h3>Who should own the payment gateway account?</h3>
+<p>The client, in its own business name. The partner connects the store to it but should not hold the account.</p>
+<h3>Can a white-label partner set up GST or VAT?</h3>
+<p>They can configure the rates and invoices the client's accountant specifies, but the decision on what tax applies belongs to the client and their accountant.</p>
+<h3>Who handles support after the store launches?</h3>
+<p>Agree this before launch. Many agencies offer a care plan to the client and have the partner do updates, test orders and fixes behind it.</p>
+
+<p>Need a partner for your next store project? See <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/wordpress-developer-for-agencies/">white-label work for agencies</a> from Samverse.</p>
 `,
   },
   {
@@ -69234,79 +69403,108 @@ or a cookie name starts with:
   },
   {
     slug: 'woocommerce-checkout-not-working-fix',
-    seoTitle: 'WooCommerce Checkout Not Working? How to Find and Fix It',
+    seoTitle: 'WooCommerce Checkout Not Working? Fix Spinners and Errors',
     title: 'WooCommerce Checkout Not Working? Fixing Endless Spinners, Errors and a Dead "Place Order" Button',
-    description: 'Fix a WooCommerce checkout that won\'t load, spins forever or ignores "Place order": caching, script conflicts, block checkout, gateways, SSL and sessions.',
+    description: 'WooCommerce checkout not working? Fix endless spinners, a dead Place Order button and payment errors: caching, conflicts, gateways, SSL and sessions.',
     date: '2026-10-11',
+    updated: '2026-10-29',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-maintenance'],
     body: `
-<p>A broken checkout is one of the costliest faults a store can have, because the shoppers who reach it have already decided to buy. The checkout page won't load, a spinner never stops, the "Place order" button does nothing, or the shopper sees "There was an error processing your order". Here are the usual causes in a sensible order. WooCommerce changes quickly, so menu names may differ slightly on your version.</p>
+<p>When WooCommerce checkout is not working, the cause is usually one of five things: cached checkout pages, a JavaScript conflict from a plugin or theme, a payment plugin problem, an SSL or mixed content issue, or broken sessions. Open the browser console and the WooCommerce logs first; the error message normally tells you which one it is.</p>
+<p>This guide covers the common symptoms, an endless spinner, a Place Order button that does nothing, a generic error or a payment that goes through without an order, with checks in a safe order. Every hour checkout is down costs sales, so if you need it fixed quickly, <a href="/woocommerce-developer/">WooCommerce development and support</a> can help.</p>
+
+<h2>WooCommerce checkout not working: match the symptom</h2>
+<table>
+  <thead><tr><th>Symptom</th><th>Most likely cause</th><th>Where to look first</th></tr></thead>
+  <tbody>
+    <tr><td>Spinner keeps turning after Place Order</td><td>JavaScript error or AJAX request failing</td><td>Browser console and Network tab</td></tr>
+    <tr><td>Place Order button does nothing</td><td>Script conflict or deferred JavaScript</td><td>Console errors, optimisation plugin settings</td></tr>
+    <tr><td>"Sorry, your session has expired"</td><td>Caching or cookies not set</td><td>Cache exclusions, Cloudflare rules</td></tr>
+    <tr><td>Payment taken but no order</td><td>Gateway callback or webhook failing</td><td>Gateway dashboard and WooCommerce logs</td></tr>
+    <tr><td>"There was an error processing your order"</td><td>Gateway, PHP error or validation hook</td><td>WooCommerce logs and PHP error log</td></tr>
+    <tr><td>Checkout page blank or layout broken</td><td>Theme template or fatal error</td><td>Default theme test, debug log</td></tr>
+  </tbody>
+</table>
 
 <h2>First, see what the browser is telling you</h2>
-<p>Open the checkout in a private window, add a product and press F12 to open the developer tools. Two tabs matter:</p>
-<ul>
-<li><strong>Console:</strong> red errors mean a script failed. One broken script anywhere on the page can stop the checkout's own scripts.</li>
-<li><strong>Network:</strong> click "Place order" and watch the requests. The classic checkout sends requests containing <code>wc-ajax</code>; the block checkout uses the Store API, with <code>wc/store</code> in the address. Click a failing request to see its status and response.</li>
-</ul>
-<table>
-<thead><tr><th>What you see</th><th>Likely cause</th></tr></thead>
-<tbody>
-<tr><td>403 on checkout requests</td><td>A firewall, security plugin or CDN rule blocking them</td></tr>
-<tr><td>500 error</td><td>A PHP error in a plugin or theme; check the logs</td></tr>
-<tr><td>502 or 504</td><td>The server timed out, often waiting on a gateway or shipping service</td></tr>
-<tr><td>A response full of HTML or PHP warnings</td><td>Something printed output where the checkout expected clean data</td></tr>
-<tr><td>No request at all</td><td>A JavaScript error, or the button is covered or blocked</td></tr>
-</tbody>
-</table>
-<p>"There was an error processing your order" is a general message. It often means the server sent back something the checkout couldn't read, such as a PHP warning or fatal error. Check WooCommerce → Status → Logs, where fatal errors can be recorded, and your hosting error log at the time of your test.</p>
+<p>Open the checkout page in Chrome, right-click and choose Inspect, then open the Console tab. Fill in the form and click Place Order. Red errors in the console usually name the file or plugin causing the problem. In the Network tab, look for the request to the checkout endpoint; if it returns an error code or a response that is not valid JSON, the server side is failing.</p>
+<p>Then check WooCommerce, Status, Logs. Payment plugins and WooCommerce itself write errors there, including fatal errors. If you can, switch on WordPress debug logging temporarily so PHP errors are saved to a log file, and switch it off again afterwards.</p>
 
 <h2>Cart and checkout pages must not be cached</h2>
-<p>Cart, checkout and My Account pages are personal to each shopper, so they must never come from a page cache. WooCommerce tells caching plugins to skip them, and most do, but server caches, CDN "cache everything" rules and some optimisation plugins can still serve a stored copy. The result: an empty cart, "Sorry, your session has expired", or a spinner that never finishes because the page carries an expired security token.</p>
-<p>Exclude these pages in every cache layer, including your host's cache and any CDN, and let shoppers with items in their cart bypass cached pages. Settings that combine, defer or delay JavaScript are just as common a cause: delaying jQuery, WooCommerce's scripts or the gateway's script often breaks checkout. Exclude the checkout from them, clear every cache and test again. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers each layer.</p>
+<p>Checkout depends on sessions and security tokens unique to each visitor. If a caching plugin, server cache or CDN serves a cached copy, buyers see someone else's empty session, expired tokens or a button that fails silently. Check that:</p>
+<ul>
+  <li>Cart, checkout and my-account pages are excluded in your caching plugin.</li>
+  <li>Host-level caching follows the same exclusions; some hosts need a setting changed in their panel.</li>
+  <li>Cloudflare is not caching HTML for those pages, especially with cache-everything rules.</li>
+  <li>Pages with WooCommerce cookies bypass the cache.</li>
+</ul>
+<p><a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers the layers, and the <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare WordPress setup guide</a> shows safe rules for stores.</p>
 
 <h2>JavaScript and plugin conflicts</h2>
-<p>The checkout relies on JavaScript, so it's often the first thing a conflict breaks. Usual suspects:</p>
-<ul>
-<li>Checkout field editors, pin code checkers and delivery date plugins</li>
-<li>Captcha or anti-spam plugins on the checkout form</li>
-<li>Pop-ups, chat widgets or cookie banners covering "Place order" on a phone</li>
-<li>Tracking scripts with errors of their own</li>
-<li>Outdated WooCommerce template copies in your theme; WooCommerce → Status flags these</li>
-<li>Dull ones: a required field hidden by CSS, or an error shown above where the shopper has scrolled</li>
-</ul>
-<p>To find the culprit, use a staging copy: switch to a default theme such as Storefront, deactivate everything except WooCommerce and your gateway, then reactivate plugins one at a time. The Health Check &amp; Troubleshooting plugin can do this for your login session only. See <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find and fix plugin conflicts</a>.</p>
+<p>Optimisation plugins that minify, combine, defer or delay JavaScript are a frequent cause. Checkout relies on WooCommerce scripts loading in the right order; delaying them until user interaction can leave the Place Order button dead. Exclude WooCommerce, jQuery and your payment gateway scripts from these features, or switch them off on checkout.</p>
+<p>If that does not solve it, test for a conflict on a staging copy:</p>
+<ol>
+  <li>Switch to a default theme such as Storefront or a current default WordPress theme.</li>
+  <li>Deactivate all plugins except WooCommerce and your payment gateway.</li>
+  <li>Place a test order. If it works, the problem is in something you switched off.</li>
+  <li>Re-enable the theme, then plugins one at a time, testing checkout after each.</li>
+</ol>
+<p>Do this on a staging site rather than the live store; <a href="/blog/staging-sites-explained/">staging sites explained</a> shows how. The full method is in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">troubleshooting WordPress plugin conflicts</a>.</p>
 
 <h2>Block checkout or classic shortcode checkout?</h2>
-<p>Recent WooCommerce versions set up new stores with the block-based Checkout, while many older stores still use the classic <code>[woocommerce_checkout]</code> shortcode. WooCommerce → Settings → Advanced shows which page is your checkout; edit it to see which one it contains. A missing checkout page setting, or two pages competing for the job, is a fault in itself.</p>
-<p>Block checkout problems to check:</p>
-<ul>
-<li><strong>Missing payment methods or fields:</strong> extensions built only for the classic checkout may not appear. Update them and check their block support.</li>
-<li><strong>Blocked REST API:</strong> the block checkout needs the WordPress REST API, so security settings that switch it off for visitors can stop orders.</li>
-</ul>
-<p>If an essential plugin doesn't support blocks yet, going back to the classic checkout is a valid fix; recent versions offer a switch in the Checkout block's settings. Try it on staging first. The trade-offs are covered in <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimization</a>.</p>
+<p>Newer stores use the block-based checkout, while older ones use the classic shortcode. Some payment, shipping, field-editor and COD plugins only support one of them. If checkout broke after a WooCommerce update or after switching checkout type, check each plugin's compatibility. You can switch the checkout page back to the classic shortcode while waiting for a plugin update, as long as you test it fully.</p>
+<p>Theme overrides matter too. If your theme has old copies of WooCommerce checkout templates, WooCommerce, Status shows them as outdated. Outdated templates can break fields or the payment section after an update.</p>
 
 <h2>Payment plugin issues</h2>
-<p>If the form submits but the payment step fails, suspect the gateway plugin: an outdated version, test keys on the live site, a store currency it doesn't support, or a payment popup blocked by the browser, an ad blocker or a strict content security policy. Turn on its debug log if it has one.</p>
-<p>A quick staging test: temporarily enable an offline method such as Cash on Delivery. If orders go through with that but not with the gateway, the checkout is fine and the gateway plugin, its settings or its support team are your next stop. If customers pay but orders stay at "Pending payment", the cause is usually a missing webhook.</p>
+<p>When the form submits but payment fails, or money is taken without an order appearing, focus on the gateway:</p>
+<ul>
+  <li>Check that API keys are live keys, not test keys, and belong to the right account.</li>
+  <li>Confirm the webhook or callback URL in the gateway dashboard matches your site and uses https.</li>
+  <li>Make sure security plugins or firewalls are not blocking the gateway's callbacks.</li>
+  <li>Update the gateway plugin, and check its log in WooCommerce, Status, Logs.</li>
+  <li>Check that your currency and the gateway account settings match.</li>
+</ul>
+<p>For Indian gateways such as UPI and card providers, <a href="/blog/woocommerce-payment-gateway-not-working-india/">WooCommerce payment gateway not working in India</a> covers gateway-specific checks. If payments succeed but orders do not appear in the admin, see <a href="/blog/woocommerce-orders-not-showing-fix/">WooCommerce orders not showing</a>.</p>
 
 <h2>SSL, mixed content, sessions and nonces</h2>
-<p>Checkout scripts and payment forms need a clean HTTPS page. If files still load over http://, browsers block them and parts of the checkout silently fail. In Settings → General, both addresses should start with https:// and match the www or non-www form your site redirects to. Fix leftover http:// links at the source; see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content warnings</a>.</p>
-<p>WooCommerce keeps each cart in a session linked to a browser cookie. Lose the cookie and the cart empties at checkout: typically a www mismatch, a cached page, a rule stripping cookies or a database problem.</p>
-<p>Checkout forms also carry nonces, short-lived security tokens. Send an expired one from a cached or long-open page and WooCommerce rejects the order with a message such as "We were unable to process your order, please try again". Firewalls and bot protection can block the order request too, which shows as a 403; the firewall's log will name the rule.</p>
+<p>Checkout must load fully over https. If some scripts or images load over http, browsers may block them, which can break the payment form. Check the console for mixed content warnings and fix the URLs; <a href="/blog/mixed-content-warnings-fix/">how to fix mixed content warnings</a> walks through it.</p>
+<p>Session problems show up as "session expired" or carts that empty themselves. Common causes are caching, cookies blocked by a security setting, a site URL mismatch between www and non-www, or a full database table for sessions. Make sure the WordPress Address and Site Address settings match the URL buyers use.</p>
+
+<h2>Shipping, pincode and validation errors</h2>
+<p>Some checkout failures are not technical faults but rules blocking the order. "No shipping options were found" usually means the buyer's pincode, state or country does not fall into any shipping zone, or a zone has no method enabled. Check your zones and make sure there is a sensible fallback. Pincode checker and COD restriction plugins can also block orders if their lists are outdated or the buyer enters the pincode with a space.</p>
+<p>Validation errors that do not make sense, such as a phone number rejected even when it is correct, often come from a field editor plugin or custom code adding strict rules. Test with a ten-digit Indian mobile number with and without the country code, and adjust the rule if genuine numbers fail. Minimum order amounts, coupon restrictions and stock limits can also stop checkout; read the notice WooCommerce shows above the form, because it usually names the rule.</p>
+
+<h2>Signs it might be something worse</h2>
+<p>If checkout suddenly shows an extra card form, redirects to an unfamiliar payment page or customers report card fraud after buying, take it seriously. Card skimming malware targets WooCommerce checkout pages. <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce checkout skimmer malware</a> explains how to check and what to do.</p>
 
 <h2>A safe test routine</h2>
-<ol>
-<li><strong>Work on staging</strong> for anything beyond clearing a cache, and stop it emailing real customers.</li>
-<li><strong>Use the gateway's test mode,</strong> logged out in a private window and on a phone over mobile data.</li>
-<li><strong>Place a test order with each payment method</strong> while watching the Console and Network tabs.</li>
-<li><strong>Check the result:</strong> order status, emails, stock and the gateway's order notes.</li>
-<li><strong>Change one thing at a time,</strong> and note what you changed.</li>
-<li><strong>Finish on the live site</strong> with a real low-value order, then refund it.</li>
-</ol>
-<p>If checkout broke straight after an update, roll that update back first and investigate on staging.</p>
+<p>Whenever you update WooCommerce, the theme, the payment gateway or caching settings, run through this checklist:</p>
+<ul>
+  <li>Add a product to the cart as a logged-out visitor in a private window.</li>
+  <li>Complete checkout with each payment method you offer, including a small real UPI payment and COD if used.</li>
+  <li>Confirm the order appears in the admin with the right status.</li>
+  <li>Check that the customer and admin emails arrive.</li>
+  <li>Repeat on a phone over mobile data.</li>
+</ul>
+<p>Update on staging first for major versions, and keep a recent backup so you can roll back if checkout breaks.</p>
 
-<p>Checkout still failing, or want the cause found without guesswork on your live store? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<h2>When to get help</h2>
+<p>If the cause is not clear from the logs, or checkout is broken during a sale or festival campaign, it is usually cheaper to get help than to keep experimenting on a live store. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to diagnose and fix it, and set up a test routine so it does not happen again.</p>
+
+<h2>FAQs</h2>
+<h3>Why is my WooCommerce checkout not working?</h3>
+<p>The most common causes are cached checkout pages, JavaScript conflicts from optimisation or other plugins, payment gateway settings, mixed content and session problems. The browser console and WooCommerce logs usually show which.</p>
+<h3>Why does the WooCommerce checkout keep spinning?</h3>
+<p>An endless spinner usually means the checkout request failed or returned an unexpected response, often because of a PHP error, a plugin conflict or a caching issue. Check the Network tab and the logs.</p>
+<h3>Why does the Place Order button do nothing?</h3>
+<p>It is usually a JavaScript error or scripts being delayed by an optimisation plugin. Exclude WooCommerce and gateway scripts from delay and defer settings and check the console.</p>
+<h3>Payment was taken but no order was created. What now?</h3>
+<p>Check the gateway dashboard and webhook settings, then the WooCommerce logs. Create the order manually for the customer and fix the callback so it does not happen again.</p>
+<h3>Can caching break WooCommerce checkout?</h3>
+<p>Yes. Cart, checkout and account pages must be excluded from page caching and CDN caching, or sessions and security tokens fail.</p>
+
+<p>Checkout down or unreliable? <a href="/woocommerce-developer/">WooCommerce development and support</a> from Samverse can find the cause and test the fix with real orders.</p>
 `,
   },
   {
@@ -69866,83 +70064,117 @@ or a cookie name starts with:
   },
   {
     slug: 'wordpress-site-slow-on-mobile-fix',
-    seoTitle: 'WordPress Site Slow on Mobile? How to Fix It',
+    seoTitle: 'WordPress Site Slow on Mobile but Fast on Desktop? Fixes',
     title: 'WordPress Site Slow on Mobile but Fast on Desktop? Causes and Fixes',
-    description: 'Why a WordPress site feels fast on desktop but slow on phones, and how to fix it: sliders, images, scripts, popups, fonts, layout shift and real-phone tests.',
+    description: 'WordPress site slow on mobile but fine on desktop? Find out why scores differ and fix sliders, oversized images, third-party scripts, popups and fonts.',
     date: '2026-10-11',
+    updated: '2026-10-29',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance'],
     body: `
-<p>A common complaint: the site opens instantly on the office computer, but customers say it crawls on their phones, and PageSpeed Insights shows a healthy desktop score next to a poor mobile one. Some gap is normal, but a large gap usually has a few specific causes. Here is how to find and fix them.</p>
+<p>If your WordPress site is slow on mobile but fast on desktop, the cause is usually not the server. Phones have slower processors and connections, so heavy sliders, oversized images, third-party scripts, popups and web fonts that a desktop handles easily become obvious on mobile. Fix those first, then test on a real mid-range phone.</p>
+<p>This guide explains why the two scores differ and walks through the fixes in the order that usually helps most. It is aimed at business sites and WooCommerce stores in India, where most visitors browse on Android phones over 4G. If you want it handled for you, see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 
 <h2>Why mobile and desktop scores differ</h2>
-<p>PageSpeed Insights runs two separate lab tests. The mobile test simulates a mid-range phone with a slower processor on a slower mobile connection, so every heavy image and script costs more. The desktop test assumes a faster machine and connection. A lower mobile score doesn't by itself mean something is broken; it means your page has less headroom.</p>
-<p>Two parts of the report matter more than the score:</p>
+<p>PageSpeed Insights tests mobile by simulating a mid-range phone on a slower network. The same page that loads instantly on a laptop on office broadband has to download, parse and run everything on a much weaker device.</p>
+<table>
+  <thead><tr><th>Factor</th><th>Desktop test</th><th>Mobile test</th></tr></thead>
+  <tbody>
+    <tr><td>Processor</td><td>Fast</td><td>Simulated slowdown, like a mid-range phone</td></tr>
+    <tr><td>Network</td><td>Fast connection</td><td>Throttled, closer to average mobile data</td></tr>
+    <tr><td>Screen</td><td>Wide layout</td><td>Narrow layout, often a different LCP element</td></tr>
+    <tr><td>JavaScript cost</td><td>Barely noticed</td><td>Major cause of slow interaction and blocking</td></tr>
+  </tbody>
+</table>
+<p>So a large gap between scores is normal. What matters is the field data from real visitors, shown in PageSpeed Insights and the Core Web Vitals report in Search Console. <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> covers what each metric means.</p>
+
+<h2>WordPress site slow on mobile: find the cause first</h2>
+<p>Run the mobile test in PageSpeed Insights and note three things: the LCP element, the total page weight and the list of third-party scripts. Then open the page in Chrome DevTools with mobile emulation and CPU throttling to see what loads first. Usually one or two of these stand out:</p>
 <ul>
-<li><strong>Field data</strong> ("Discover what your real users are experiencing"), shown when Google has enough visits from Chrome users. It is reported separately for mobile and desktop and reflects real visitors rather than a simulation.</li>
-<li><strong>The individual metrics</strong>: Largest Contentful Paint (LCP), Interaction to Next Paint (INP) and Cumulative Layout Shift (CLS). Note which one fails on mobile only, because that tells you where to look.</li>
+  <li>A slider, video or animation at the top of the page.</li>
+  <li>Images several times larger than the phone screen.</li>
+  <li>Chat widgets, pixels, heatmaps or ad scripts loading straight away.</li>
+  <li>A popup, cookie bar or sticky bar that loads its own scripts and styles.</li>
+  <li>Several font families and icon libraries.</li>
 </ul>
-<p>Google mainly uses the mobile version of your site for indexing, so the mobile experience is the one that counts. For a broader list of causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a>.</p>
+<p>Fix the biggest item on that list first and re-test before moving on. Changing many things at once makes it hard to tell which change helped and which one broke a menu or form.</p>
 
 <h2>Sliders, hero videos and background animations</h2>
-<p>The top of the page is where most mobile problems start. A homepage slider with five full-width images, a background video or an animated hero section may look fine on a fast laptop, but on a phone the browser has to download, decode and lay out all of it before the main content settles.</p>
-<ul>
-<li>Replace the slider with one strong static image and a clear heading. If you keep a slider, make sure only the first slide loads straight away.</li>
-<li>Don't autoplay a background video on mobile. Show a poster image instead and let people tap to play.</li>
-<li>Check whether your page builder hides desktop sections on mobile with CSS only. "Hidden" sections are often still downloaded, so the phone loads both the desktop and the mobile versions.</li>
-<li>Cut entrance animations on the first screen. Content that fades in late can delay LCP.</li>
-</ul>
-<p>If LCP is the metric failing, <a href="/blog/fix-lcp-largest-contentful-paint/">how to fix slow LCP on WordPress</a> walks through the hero element in detail.</p>
+<p>Sliders are one of the most common reasons a WordPress site is slow on mobile. They load several large images and a script library before the first slide can show, and phones pay for all of it. Replace the slider with a single strong image and a clear heading, which usually paints much faster and often converts better too.</p>
+<p>Hero background videos have the same problem. On mobile, either replace the video with a still image or load the video only after the page has rendered. Parallax and entrance animations from page builders also cost processor time; switch them off on mobile, or entirely.</p>
 
 <h2>Oversized images and responsive images</h2>
-<p>A phone screen doesn't need a 2,400-pixel-wide photo. WordPress creates several sizes of each uploaded image and, for images added through the editor, adds <code>srcset</code> and <code>sizes</code> attributes so the browser can pick a smaller file. That only helps when the theme or builder actually uses them. Common ways it breaks:</p>
+<p>A photo uploaded at full camera size may be shown at a fraction of that width on a phone, but if the theme or builder outputs the full file, the phone downloads all of it. Check that:</p>
 <ul>
-<li>Images set as CSS backgrounds in a page builder, which usually load one size for every screen.</li>
-<li>Theme templates that output the full-size image directly.</li>
-<li>Photos uploaded straight from a camera or phone at huge dimensions and never compressed.</li>
+  <li>Images are resized before upload to a sensible maximum width.</li>
+  <li>The theme uses WordPress responsive image sizes so phones get smaller versions.</li>
+  <li>Images are served as WebP or AVIF where possible.</li>
+  <li>Images below the first screen are lazy-loaded, but the hero image is not.</li>
+  <li>Background images set in builder sections have separate, smaller mobile versions.</li>
 </ul>
-<p>Resize before uploading, compress, use a modern format such as WebP where your setup supports it, and give background images a smaller mobile version if your builder allows it. Don't lazy-load the main image at the top of the page; recent WordPress versions try to avoid this, but plugins and builders can override it. <a href="/blog/image-optimization-wordpress/">Image optimisation for WordPress</a> covers the full workflow.</p>
+<p>The full process is in <a href="/blog/image-optimization-wordpress/">image optimization for WordPress</a>.</p>
 
 <h2>Third-party scripts hit phones hardest</h2>
-<p>Chat widgets, analytics and ad tags, heatmaps, social feeds, review widgets and embedded maps all run JavaScript. On a phone's slower processor that work competes with the page itself, which shows up as a poor INP score or a page that looks loaded but doesn't respond to taps.</p>
-<ol>
-<li>List every third-party tool on the site and ask whether anyone still uses it.</li>
-<li>Remove tags that duplicate each other, for example the same analytics added by a plugin and again through a tag manager.</li>
-<li>Load chat widgets only after the visitor interacts or after a delay, if the tool allows it.</li>
-<li>Replace live embeds (maps, videos, social feeds) with a static image or link that loads the real thing on tap.</li>
-</ol>
-<p>Test any "delay JavaScript" setting carefully. It can help, but it can also break menus, forms and checkout.</p>
+<p>Chat widgets, Facebook and Google tags, heatmaps, review widgets, embedded maps and YouTube players each add JavaScript that must run on the phone's processor. Together they can block the page for seconds and make taps feel slow.</p>
+<ul>
+  <li>Remove any script nobody uses any more; old pixels and trial tools pile up.</li>
+  <li>Load chat widgets only after a delay or when someone taps the chat button.</li>
+  <li>Replace embedded maps and videos with a preview image that loads the real embed on tap.</li>
+  <li>Manage tags through one container instead of several separate snippets.</li>
+</ul>
+<p><a href="/blog/third-party-scripts-slow-website/">How third-party scripts slow your website</a> covers auditing them.</p>
 
 <h2>Mobile menus, popups and sticky bars</h2>
-<p>Elements that only appear on mobile deserve their own check:</p>
-<ul>
-<li><strong>Mobile menus</strong> built with a heavy mega menu plugin can add a lot of script and markup. A simple menu is usually enough on a phone.</li>
-<li><strong>Popups</strong> that cover the content on load frustrate mobile visitors and add script. Google has long advised against intrusive interstitials on mobile, so show offers later, smaller or as a slim bar.</li>
-<li><strong>Sticky headers, cookie banners and WhatsApp buttons</strong> that appear after a short delay can push content around and add to layout shift.</li>
-</ul>
+<p>Mega menus built for desktop often load all their content on mobile too, even though it is hidden. Use a simpler mobile menu. Popups that appear immediately on page load cost speed and annoy visitors; if you use one, delay it and make sure it is easy to close. Sticky headers, WhatsApp bars and cookie banners should be light and should not cover the content or shift the layout.</p>
 
 <h2>Fonts and layout shift on small screens</h2>
-<p>Web fonts often cause problems that only show on mobile. Several families and weights mean several downloads before text looks right, and when the custom font arrives late the text reflows. On a narrow screen, a heading that wraps onto one more line pushes everything below it down.</p>
+<p>Each font family and weight is another download. Limit yourself to one or two families and only the weights you use, host them on your own server and set them to show fallback text immediately. Icon font libraries can often be replaced by a few inline SVG icons. <a href="/blog/web-fonts-performance/">Web fonts and performance</a> has the details.</p>
+<p>On narrow screens, late-loading fonts, images without set dimensions and ads or banners injected above content cause the page to jump. That hurts the CLS score and makes people tap the wrong thing. <a href="/blog/fix-cls-layout-shift/">How to fix CLS layout shift</a> walks through it.</p>
+
+<h2>Common causes and fixes at a glance</h2>
+<table>
+  <thead><tr><th>Cause</th><th>Symptom on mobile</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Slider or hero video</td><td>Slow LCP, blank top of page</td><td>Single optimised image</td></tr>
+    <tr><td>Oversized images</td><td>Heavy page weight, slow on 4G</td><td>Responsive sizes, WebP, lazy loading below fold</td></tr>
+    <tr><td>Third-party scripts</td><td>Slow taps, poor INP</td><td>Remove, delay or load on interaction</td></tr>
+    <tr><td>Heavy page builder</td><td>Large CSS and DOM</td><td>Simplify sections, remove unused widgets</td></tr>
+    <tr><td>Fonts</td><td>Invisible or jumping text</td><td>Fewer weights, local hosting, swap</td></tr>
+  </tbody>
+</table>
+<p>If the site is built with Elementor, <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> covers builder-specific fixes.</p>
+
+<h2>WooCommerce stores on mobile</h2>
+<p>Online stores have extra mobile weight. Product pages often load a zoom script, a lightbox, a gallery slider, review widgets, size charts and related product carousels all at once. Category pages may show dozens of full-size product images. On a phone, this adds up quickly.</p>
 <ul>
-<li>Stick to one or two font families and only the weights you use. Host them locally where possible.</li>
-<li>Use <code>font-display: swap</code> with a fallback font of similar proportions.</li>
-<li>Give images, videos, ad slots and embeds a width and height (or aspect ratio) so space is reserved.</li>
-<li>Reserve space for banners and notices instead of inserting them above the content after load.</li>
+  <li>Use properly sized product thumbnails on category pages, not full images scaled down.</li>
+  <li>Load zoom and lightbox scripts only on product pages, and consider switching zoom off on mobile.</li>
+  <li>Limit related and upsell carousels to a few products.</li>
+  <li>Check that cart fragments and live search scripts are not running on every page when they are not needed.</li>
+  <li>Keep cart and checkout pages free of popups and marketing scripts.</li>
 </ul>
-<p>If CLS fails on mobile only, <a href="/blog/fix-cls-layout-shift/">how to fix layout shift on WordPress</a> shows how to find the element that moves.</p>
+<p>Cart and checkout cannot be fully cached, so hosting quality and plugin weight show up there first. <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a> covers store-specific fixes in more depth.</p>
 
 <h2>Test on a real mid-range phone</h2>
-<p>Lab tests are useful, but they are a simulation. Before and after making changes, test the way your customers browse:</p>
-<ul>
-<li>Use an ordinary mid-range Android phone, not the latest flagship, on mobile data rather than office Wi-Fi.</li>
-<li>Open the page in a private tab so no cache or logged-in state helps it.</li>
-<li>Note when the main heading and image appear, whether anything jumps, and how quickly the menu opens when tapped.</li>
-<li>Try the pages that bring enquiries or sales: home, a service or product page, the contact form and, for shops, cart and checkout.</li>
-<li>Connect the phone to a computer and use Chrome's remote debugging if you need to see which files load on the device.</li>
-</ul>
-<p>Make one change at a time, clear every cache and re-test, so you know what actually helped. Field data in PageSpeed Insights and Search Console covers a rolling period of roughly four weeks, so real-user numbers improve gradually rather than overnight.</p>
+<p>Simulated tests are useful, but nothing replaces using the site on the kind of phone your customers carry. Borrow a mid-range Android phone, switch off Wi-Fi and use mobile data. Open the home page, a service or product page and the contact or checkout page. Note how long it takes before you can read and tap, whether anything jumps and whether menus and buttons respond quickly.</p>
+<p>Repeat after each fix. If the server itself is slow on first load, every device suffers, and <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> explains server location and caching for Indian visitors.</p>
 
-<p>If your site still drags on phones after these checks, I can test it on real devices and fix the causes rather than chase a score. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> for how I work.</p>
+<h2>Keep mobile speed from slipping again</h2>
+<p>Mobile speed tends to get worse gradually as new plugins, banners and tracking codes are added. Before adding anything new, ask whether it needs to load on every page and on phones at all. Check the mobile score and the Core Web Vitals report once a month, and compare it with the previous month so a sudden drop is noticed quickly and traced to the change that caused it.</p>
+
+<h2>FAQs</h2>
+<h3>Why is my WordPress site slow on mobile but fast on desktop?</h3>
+<p>Phones have slower processors and connections. Sliders, large images, third-party scripts and fonts that a desktop handles easily take much longer on a phone, and mobile tests simulate those conditions.</p>
+<h3>Is a low mobile PageSpeed score a problem if desktop is fine?</h3>
+<p>Yes, if most of your visitors use phones. Focus on the field data for mobile in PageSpeed Insights and Search Console rather than the lab score alone.</p>
+<h3>Will a caching plugin fix mobile speed?</h3>
+<p>Caching helps the server respond faster, but it does not reduce image sizes or the JavaScript a phone has to run. Most mobile problems need image and script work as well.</p>
+<h3>Should I use a separate mobile theme?</h3>
+<p>No. A responsive theme with lighter mobile sections is easier to maintain. Separate mobile sites cause duplicate content and extra work.</p>
+<h3>How do I test my site's mobile speed?</h3>
+<p>Use PageSpeed Insights for lab and field data, then test on a real mid-range Android phone over mobile data.</p>
+
+<p>Need your site fast on phones without losing the design? You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> from Samverse.</p>
 `,
   },
   {

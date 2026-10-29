@@ -2419,7 +2419,7 @@
     <link>https://samverse.space/blog/multi-location-business-website/</link>
     <guid>https://samverse.space/blog/multi-location-business-website/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to structure a website for a business with several branches or clinics: branch pages, a Google Business Profile per branch, schema and avoiding duplication.</description>
+    <description>How to build a multi-location business website: one site or many, branch page URLs, what each page needs, Google profiles, schema and a WordPress template.</description>
   </item>
   <item>
     <title>Search Console Page Indexing Errors: What Each Status Means and What to Do</title>
@@ -2489,7 +2489,7 @@
     <link>https://samverse.space/blog/payment-gateways-india-compared/</link>
     <guid>https://samverse.space/blog/payment-gateways-india-compared/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to choose a payment gateway for an Indian website: compare payment methods, fees, settlement times, KYC, international cards and WooCommerce support.</description>
+    <description>Payment gateways in India compared on what matters: UPI and card methods, fee structure, settlements, KYC, international cards and WooCommerce support.</description>
   </item>
   <item>
     <title>Selling Subscriptions With WooCommerce in India: Plugins, Recurring Payments, Billing Cycles, Trials, Pausing and Retention</title>
@@ -2594,7 +2594,7 @@
     <link>https://samverse.space/blog/fix-lcp-largest-contentful-paint/</link>
     <guid>https://samverse.space/blog/fix-lcp-largest-contentful-paint/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to fix slow Largest Contentful Paint on WordPress: find your LCP element, speed up server response, prioritise the hero image and cut render-blocking CSS.</description>
+    <description>Fix slow Largest Contentful Paint in WordPress: find your LCP element, split the delay into four parts and fix server, hero image, CSS and fonts in order.</description>
   </item>
   <item>
     <title>How to Fix Cumulative Layout Shift (CLS) on WordPress: Images, Fonts, Elementor and Banners</title>
@@ -2846,7 +2846,7 @@
     <link>https://samverse.space/blog/website-for-cafes-coffee-shops/</link>
     <guid>https://samverse.space/blog/website-for-cafes-coffee-shops/</guid>
     <pubDate>Wed, 30 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What a cafe or coffee shop website needs: a cafe-friendly menu, real photos of the space, work-friendly details, events, ordering options and local SEO.</description>
+    <description>What a website for cafes and coffee shops needs: a fast menu page, real photos, hours, map, work-friendly details, events, beans for sale and local SEO.</description>
   </item>
   <item>
     <title>Websites for Hearing Aid Centres and Audiologists: Tests, Trials and Trust</title>
@@ -3294,7 +3294,7 @@
     <link>https://samverse.space/blog/hindi-devanagari-fonts-website/</link>
     <guid>https://samverse.space/blog/hindi-devanagari-fonts-website/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>How to choose readable Hindi and Devanagari fonts, pair them with English, set sizes and line height, load them efficiently and test on real phones.</description>
+    <description>Choosing Hindi fonts for a website: use Unicode text, pick a readable Devanagari font, pair it with English, set sizes, load it fast and test it on phones.</description>
   </item>
   <item>
     <title>WooCommerce Product Filters: Setup, Speed and SEO (and Shopify Too)</title>
@@ -3665,7 +3665,7 @@
     <link>https://samverse.space/blog/wordpress-rest-api-explained/</link>
     <guid>https://samverse.space/blog/wordpress-rest-api-explained/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>What the WordPress REST API is, what relies on it, what it shows publicly by default (like user lists), how application passwords work and when you need it.</description>
+    <description>The WordPress REST API explained in plain language: what it is, what already uses it, what is public, authentication, business uses and how to restrict it.</description>
   </item>
   <item>
     <title>WordPress Hooks Explained: Actions and Filters in Plain English</title>
@@ -3707,7 +3707,7 @@
     <link>https://samverse.space/blog/woocommerce-checkout-optimization/</link>
     <guid>https://samverse.space/blog/woocommerce-checkout-optimization/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Make WooCommerce checkout easier: fewer fields, guest checkout, block vs classic checkout, early delivery charges, UPI and COD, trust cues and real order tests.</description>
+    <description>WooCommerce checkout optimization for Indian stores: fewer fields, guest checkout, early delivery costs, UPI and COD, trust cues, mobile layout, testing.</description>
   </item>
   <item>
     <title>How to Sell Internationally with WooCommerce (and Shopify) from India</title>
@@ -3833,7 +3833,7 @@
     <link>https://samverse.space/blog/white-label-woocommerce-development/</link>
     <guid>https://samverse.space/blog/white-label-woocommerce-development/</guid>
     <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
-    <description>How white-label WooCommerce builds work for agencies: what your partner sets up, what your agency keeps, how to test checkout and how to support the store.</description>
+    <description>White-label WooCommerce development for agencies: what the partner builds, what you keep, payments, shipping and tax by market, testing and support.</description>
   </item>
   <item>
     <title>Working With an Offshore WordPress Developer in India Across Time Zones</title>
@@ -3980,7 +3980,7 @@
     <link>https://samverse.space/blog/woocommerce-checkout-not-working-fix/</link>
     <guid>https://samverse.space/blog/woocommerce-checkout-not-working-fix/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Fix a WooCommerce checkout that won't load, spins forever or ignores &quot;Place order&quot;: caching, script conflicts, block checkout, gateways, SSL and sessions.</description>
+    <description>WooCommerce checkout not working? Fix endless spinners, a dead Place Order button and payment errors: caching, conflicts, gateways, SSL and sessions.</description>
   </item>
   <item>
     <title>Payment Gateway Not Working in WooCommerce? Fixing Failed Payments and Pending Orders in India</title>
@@ -4022,7 +4022,7 @@
     <link>https://samverse.space/blog/wordpress-site-slow-on-mobile-fix/</link>
     <guid>https://samverse.space/blog/wordpress-site-slow-on-mobile-fix/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Why a WordPress site feels fast on desktop but slow on phones, and how to fix it: sliders, images, scripts, popups, fonts, layout shift and real-phone tests.</description>
+    <description>WordPress site slow on mobile but fine on desktop? Find out why scores differ and fix sliders, oversized images, third-party scripts, popups and fonts.</description>
   </item>
   <item>
     <title>WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails</title>
