@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WooCommerce%20Orders%20Not%20Showing%3F%20Missing%20Orders%2C%20Paid-but-No-Order%20and%20Missing%20Emails%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-orders-not-showing-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -162,6 +162,7 @@
               <li><a href="#customers-cannot-see-orders-in-my-account">Customers cannot see orders in My Account</a></li>
               <li><a href="#orders-missing-from-apps-reports-and-integrations">Orders missing from apps, reports and integrations</a></li>
               <li><a href="#scheduled-tasks-and-stuck-statuses">Scheduled tasks and stuck statuses</a></li>
+              <li><a href="#woocommerce-orders-not-showing-after-a-migration-restore-or-update">WooCommerce orders not showing after a migration, restore or update</a></li>
               <li><a href="#preventing-missing-orders">Preventing missing orders</a></li>
               <li><a href="#getting-help">Getting help</a></li>
               <li><a href="#faqs">FAQs</a></li>
@@ -177,7 +178,6 @@
           </div>
 <p>If WooCommerce orders are not showing, first check the order list filters and the "Pending payment" and "Drafts" views, then check whether your store uses HPOS (High-Performance Order Storage) and whether sync is set correctly. If a customer has paid but no order exists, the payment gateway's callback probably failed. If orders exist but nobody received the email, that is an email delivery problem, not a missing order.</p>
 <p>This guide separates those three problems and walks through how to fix each.</p>
-
 <h2 id="three-different-problems-that-look-the-same">Three different problems that look the same</h2>
 <table>
 <thead><tr><th>What you see</th><th>Likely problem</th><th>Where to look</th></tr></thead>
@@ -189,7 +189,6 @@
 <tr><td>Order count wrong in reports or apps</td><td>Analytics cache or sync delay</td><td>WooCommerce Analytics settings</td></tr>
 </tbody>
 </table>
-
 <h2 id="woocommerce-orders-not-showing-in-admin-quick-checks">WooCommerce orders not showing in admin: quick checks</h2>
 <ol>
 <li><strong>Check "All" orders,</strong> not just Processing. Orders on Pending payment, On hold, Failed or Cancelled are easy to miss.</li>
@@ -199,7 +198,6 @@
 <li><strong>Clear the object cache</strong> if your host uses Redis or Memcached, and make sure admin pages are not page-cached.</li>
 <li><strong>Check user role:</strong> a shop manager account with restricted capabilities, or a plugin that limits order access, can hide orders.</li>
 </ol>
-
 <aside class="inline-cta">
   <strong>Need help with online stores?</strong>
   <p>Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout.</p>
@@ -215,7 +213,6 @@
 <li>Do not switch storage modes on a live store without a full backup and a test on staging.</li>
 </ul>
 <p>The WordPress backup and restore guide covers taking a safe backup first, and staging sites explains testing changes.</p>
-
 <h2 id="paid-but-no-order-the-gateway-callback">Paid but no order: the gateway callback</h2>
 <p>When a customer pays through Razorpay, Cashfree, PayU or another gateway, the gateway must tell WooCommerce the payment succeeded. If that message fails, you can get a payment with no order, or an order stuck on Pending payment.</p>
 <ol>
@@ -226,7 +223,6 @@
 <li>Check firewall, security plugin and Cloudflare rules that might block the gateway's requests.</li>
 </ol>
 <p>If the order exists as pending, confirm the payment in the gateway and update the status manually with a note. If there is no order at all, create it manually or refund, depending on what you and the customer agree. <a href="/blog/woocommerce-payment-gateway-not-working-india/">Fixing WooCommerce payment gateway problems in India</a> goes deeper into webhooks and gateway settings.</p>
-
 <h2 id="checkout-errors-that-stop-orders-being-created">Checkout errors that stop orders being created</h2>
 <p>Sometimes the checkout fails before an order is created, often after an update. Signs include a spinning checkout button, a blank error message or customers saying they could not complete purchase.</p>
 <ul>
@@ -235,7 +231,6 @@
 <li>Exclude cart, checkout and my-account pages from caching and script optimisation.</li>
 <li>Test for plugin conflicts on staging; <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">troubleshooting plugin conflicts</a> explains how.</li>
 </ul>
-
 <h2 id="order-emails-not-arriving">Order emails not arriving</h2>
 <p>If orders exist but you or the customer did not get the email:</p>
 <ul>
@@ -246,10 +241,8 @@
 <li>Use an email log plugin to see whether emails were sent and failed, or never sent.</li>
 </ul>
 <p>Many stores also add <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">SMS or WhatsApp order notifications</a> so the owner never misses a new order.</p>
-
 <h2 id="customers-cannot-see-orders-in-my-account">Customers cannot see orders in My Account</h2>
 <p>This usually happens when the order was placed as a guest, or with a different email from the account. Assign the order to the customer account from the order edit screen. Consider requiring account creation or linking guest orders by email, if it suits your store.</p>
-
 <h2 id="orders-missing-from-apps-reports-and-integrations">Orders missing from apps, reports and integrations</h2>
 <p>Sometimes orders are fine in WooCommerce but missing elsewhere: the mobile app, analytics reports, a shipping tool such as Shiprocket, an accounting sync or a CRM. Each has its own causes:</p>
 <ul>
@@ -259,11 +252,19 @@
 <li><strong>HPOS compatibility:</strong> older integrations may not read orders from the new tables.</li>
 </ul>
 <p>A quick test is to change a test order's status manually and see whether it appears in the integration. If it does, the integration only reads certain statuses; if it does not, the connection itself is broken. When a single integration is the problem, check its own logs and support documentation before changing WooCommerce settings.</p>
-
 <h2 id="scheduled-tasks-and-stuck-statuses">Scheduled tasks and stuck statuses</h2>
 <p>WooCommerce uses scheduled actions for tasks such as cancelling unpaid orders, sending some emails and syncing data. If WP-Cron is not running reliably, these tasks pile up and orders can sit in the wrong status. Check WooCommerce, Status, Scheduled Actions for many past-due or failed actions. WordPress cron explained covers how to set up a real server cron job so tasks run on time even on low-traffic stores.</p>
 <p>Also review the "Hold stock" setting under WooCommerce, Settings, Products, Inventory. If it is too short, unpaid orders may be cancelled before slower payments such as UPI or net banking complete, which looks to the customer like their order disappeared.</p>
-
+<h2 id="woocommerce-orders-not-showing-after-a-migration-restore-or-update">WooCommerce orders not showing after a migration, restore or update</h2>
+<p>A common time for orders to vanish is straight after a site move, a backup restore or a big WooCommerce update. The causes are different from a failed payment, so check these separately:</p>
+<ul>
+<li><strong>Restored an older backup:</strong> any orders placed after that backup was taken are not in the restored database. Export them from the gateway dashboard and recreate or record them before more orders arrive.</li>
+<li><strong>Migrated while the old site was still live:</strong> orders may have landed on the old server after the copy was made. Check the old database before cancelling the old hosting.</li>
+<li><strong>HPOS tables not copied:</strong> some migration tools miss the newer order tables. If the store uses HPOS and the order list is empty, confirm the order tables exist on the new server.</li>
+<li><strong>Webhooks still pointing at the old address:</strong> after a domain or URL change, update the webhook and callback URLs in your payment gateway so new payments reach the new site.</li>
+<li><strong>Cron not running on the new host:</strong> pending orders and emails may sit unprocessed until scheduled tasks work again.</li>
+</ul>
+<p>The safest pattern is to put the store into a short maintenance window during the final copy, so no orders arrive mid-move, and then place a real test order on the new server before switching DNS fully.</p>
 <h2 id="preventing-missing-orders">Preventing missing orders</h2>
 <ul>
 <li>Back up before every WooCommerce, plugin or storage change.</li>
@@ -272,12 +273,9 @@
 <li>Use SMTP and an email log.</li>
 <li>Review orders against gateway payments regularly, especially pending ones. <a href="/blog/woocommerce-order-management-workflow/">An order management workflow</a> helps make this routine.</li>
 </ul>
-
 <h2 id="getting-help">Getting help</h2>
 <p>Missing orders mean missed shipments and unhappy customers. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace the cause through logs, gateway records and settings and fix it properly. You can also <a href="/wordpress-shopify-developer-india/">hire a WooCommerce developer in India</a> for ongoing <a href="/wordpress-maintenance/">store maintenance</a>.</p>
-
 <p>Whatever the cause turns out to be, write down what happened, what you checked and what fixed it. A short incident note saves a lot of time if the same problem appears after a future update, and it gives a developer a useful starting point if you need outside help. Keep a list of orders you corrected manually so you can check they were shipped and invoiced properly.</p>
-
 <h2 id="faqs">FAQs</h2>
 <h3>Why are WooCommerce orders not showing in my dashboard?</h3>
 <p>Usually because of status filters, pending payment or draft views, HPOS sync settings, caching or user role limits. Check All orders and clear filters first.</p>
@@ -291,7 +289,6 @@
 <p>If the order exists in the database, yes, by fixing filters or sync. If it was never created, you can create it manually from the gateway payment details.</p>
 <h3>Why are WooCommerce orders showing as pending payment?</h3>
 <p>Pending payment means the order was created but WooCommerce never received the payment confirmation. The customer may have left the gateway page, or the gateway callback or webhook is failing. Check the payment in your gateway dashboard before marking it paid by hand.</p>
-
 <p>Orders going missing? A <a href="/woocommerce-developer/">WooCommerce developer</a> can find out why and stop it happening again.</p>
 
           <div class="post-cta">
@@ -337,6 +334,7 @@
               <li><a href="#customers-cannot-see-orders-in-my-account">Customers cannot see orders in My Account</a></li>
               <li><a href="#orders-missing-from-apps-reports-and-integrations">Orders missing from apps, reports and integrations</a></li>
               <li><a href="#scheduled-tasks-and-stuck-statuses">Scheduled tasks and stuck statuses</a></li>
+              <li><a href="#woocommerce-orders-not-showing-after-a-migration-restore-or-update">WooCommerce orders not showing after a migration, restore or update</a></li>
               <li><a href="#preventing-missing-orders">Preventing missing orders</a></li>
               <li><a href="#getting-help">Getting help</a></li>
               <li><a href="#faqs">FAQs</a></li>
@@ -367,7 +365,7 @@
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/woocommerce-order-management-workflow/"><img class="post-card-img" src="/assets/og/blog-woocommerce-order-management-workflow.webp" alt="WooCommerce Order Management: Statuses, COD Confirmation, Dispatch, Returns and Staff Roles for Small Teams" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Order Management: Statuses, COD Confirmation, Dispatch, Returns and Staff Roles for Small Teams</h3><p>A WooCommerce order workflow for small Indian teams: statuses explained, payment to dispatch, COD confirmation, labels, tracking, returns and staff roles.</p><span class="post-card-meta">30 September 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/woocommerce-checkout-not-working-fix/"><img class="post-card-img" src="/assets/og/blog-woocommerce-checkout-not-working-fix.webp" alt="WooCommerce Checkout Not Working? Fixing Endless Spinners, Errors and a Dead &quot;Place Order&quot; Button" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Checkout Not Working? Fixing Endless Spinners, Errors and a Dead &quot;Place Order&quot; Button</h3><p>WooCommerce checkout not working? Fix endless spinners, a dead Place Order button and payment errors: caching, conflicts, gateways, SSL and sessions.</p><span class="post-card-meta">11 October 2026 · 7 min read</span></a>
+          <a class="post-card" href="/blog/woocommerce-checkout-not-working-fix/"><img class="post-card-img" src="/assets/og/blog-woocommerce-checkout-not-working-fix.webp" alt="WooCommerce Checkout Not Working or Slow? Fixing Spinners, Errors and a Dead &quot;Place Order&quot; Button" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Checkout Not Working or Slow? Fixing Spinners, Errors and a Dead &quot;Place Order&quot; Button</h3><p>WooCommerce checkout not working, slow or showing an error? Fix endless spinners, a dead Place Order button, slow loading, payment errors and caching issues.</p><span class="post-card-meta">11 October 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/woocommerce-payment-gateway-not-working-india/"><img class="post-card-img" src="/assets/og/blog-woocommerce-payment-gateway-not-working-india.webp" alt="Payment Gateway Not Working in WooCommerce? Fixing Failed Payments and Pending Orders in India" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>Payment Gateway Not Working in WooCommerce? Fixing Failed Payments and Pending Orders in India</h3><p>WooCommerce payment gateway not working in India? Fix failed UPI payments, orders stuck on pending, webhook errors and Razorpay or Cashfree issues.</p><span class="post-card-meta">11 October 2026 · 8 min read</span></a>
         </div>
       </div>

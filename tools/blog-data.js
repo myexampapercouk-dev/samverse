@@ -29775,9 +29775,9 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'google-merchant-center-woocommerce',
-    seoTitle: 'Google Merchant Center for WooCommerce: Step-by-Step Setup',
-    title: 'Google Merchant Center for WooCommerce: Set Up Free Listings and Fix Disapprovals',
-    description: 'Set up Google Merchant Center for WooCommerce step by step: Google for WooCommerce vs feed plugins, free listings, GST prices, shipping and disapprovals.',
+    seoTitle: 'Google Merchant Center for WooCommerce and WordPress',
+    title: 'Google Merchant Center for WooCommerce and WordPress: Set Up Free Listings and Fix Disapprovals',
+    description: 'Set up Google Merchant Center for WooCommerce and WordPress: Google for WooCommerce vs feed plugins, free listings, GST prices, shipping and disapprovals.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'E-commerce',
@@ -29785,7 +29785,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     body: `
 <p>To show your WooCommerce products on Google for free, create a Google Merchant Center account, verify your website, and sync your products using the free Google for WooCommerce extension (previously called Google Listings &amp; Ads) or a feed plugin. Then set your shipping and return details, make sure prices (including GST) and stock match your product pages, and fix anything Merchant Center flags. Approved products can appear as free listings in the Shopping tab and other Google surfaces, and the same data powers Shopping ads later.</p>
 <p>Here's the full setup, which sync method to choose, the product data Google needs, and how to fix the disapprovals that trip up most Indian stores. If you'd rather have it set up and tested for you, that's part of my <a href="/woocommerce-developer/">WooCommerce development</a> work.</p>
-
 <h2>What Google Merchant Center for WooCommerce does</h2>
 <p>Merchant Center is where Google stores your product information. Once your products are approved, they can show with an image, price and store name when people search for what you sell.</p>
 <table>
@@ -29798,7 +29797,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   </tbody>
 </table>
 <p>Start with free listings. They cost nothing, and getting your product data clean is the hard part of Shopping ads anyway.</p>
-
 <h2>Before you start: get the store ready</h2>
 <p>Google checks your website as well as your products. New stores are often suspended for "misrepresentation" simply because basic trust information is missing. Before connecting anything, make sure you have:</p>
 <ul>
@@ -29810,7 +29808,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>No placeholder content:</strong> no "Lorem ipsum", sample products or "coming soon" pages</li>
   <li><strong>Honest claims:</strong> no fake discounts, invented reviews or "best in India" claims you can't back up</li>
 </ul>
-
 <h2>Step 1: Create your Merchant Center account</h2>
 <ol>
   <li>Sign in at Google Merchant Center with the Google account your business will keep long term, not a developer's personal account.</li>
@@ -29819,7 +29816,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>Fill in business information, customer service contact details and, later, link your Google Ads account.</li>
 </ol>
 <p>Google renames Merchant Center menus fairly often, so if a setting isn't where you expect, use the search or the settings (gear) menu.</p>
-
 <h2>Step 2: Choose how to sync your products</h2>
 <table>
   <thead><tr><th>Method</th><th>How it works</th><th>Best for</th></tr></thead>
@@ -29829,7 +29825,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     <tr><td>Manual file or Google Sheets</td><td>You upload product data yourself</td><td>Only a handful of products that rarely change</td></tr>
   </tbody>
 </table>
-
 <h3>Setting up Google for WooCommerce</h3>
 <ol>
   <li>Go to Plugins &gt; Add New, search for "Google for WooCommerce", then install and activate it.</li>
@@ -29839,10 +29834,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>Let the first sync run, then check the product feed screen for warnings.</li>
 </ol>
 <p>Each product's edit screen gets a Google for WooCommerce section for extra attributes such as brand, GTIN, MPN and condition, and a channel visibility setting to keep particular products out of the sync.</p>
-
 <h3>Using a feed plugin instead</h3>
 <p>Create the feed in the plugin, map WooCommerce fields to Google's attributes (brand, GTIN, Google product category), and copy the feed URL. In Merchant Center, add a new product data source from a file, choose to fetch it from a link, and schedule a daily fetch. Make sure the fetch runs after your stock and price changes usually happen.</p>
-
 <h2>Step 3: Product data that gets approved</h2>
 <table>
   <thead><tr><th>Attribute</th><th>What Google wants</th></tr></thead>
@@ -29858,10 +29851,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   </tbody>
 </table>
 <p>Titles matter most for which searches you show up for. Use the words shoppers search, not internal codes, and put the important attributes early.</p>
-
 <h2>Step 4: Set shipping and returns</h2>
 <p>In Merchant Center's shipping and returns settings, add a shipping service for India with your costs, any free-shipping threshold and realistic delivery times (handling time plus transit time). Add your return policy: the return window, whether returns are free, and the policy URL. If Google for WooCommerce syncs shipping from your WooCommerce zones, check the result, because complex rules don't always translate. Whatever you enter has to match what a shopper sees at checkout; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
-
 <h2>Common disapprovals and how to fix them</h2>
 <p>Check the products that need attention in Merchant Center, and the diagnostics in Google for WooCommerce, every week at first:</p>
 <table>
@@ -29877,27 +29868,32 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   </tbody>
 </table>
 <p>Caching is a frequent hidden cause of price and stock mismatches; see <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> for what to exclude.</p>
-
+<h2>Google Merchant Center on WordPress: with or without WooCommerce</h2>
+<p>Merchant Center is built for products that can be bought, so the easiest route on WordPress is almost always WooCommerce plus the official Google for WooCommerce extension (the plugin that used to be called Google Listings &amp; Ads), or a feed plugin. It creates and updates the product feed automatically as your prices and stock change.</p>
+<p>If your WordPress site sells products without WooCommerce, for example through another cart plugin or a product catalogue with enquiry buttons, you still have options:</p>
+<ul>
+<li><strong>Check your cart plugin:</strong> some other ecommerce plugins have their own Merchant Center feed add-ons.</li>
+<li><strong>Use a Google Sheets feed:</strong> Merchant Center accepts products from a spreadsheet. This works for a small catalogue but must be updated by hand whenever a price or stock level changes.</li>
+<li><strong>Make sure products can be bought:</strong> each product needs a landing page with a clear price and a way to purchase. Enquiry-only catalogues are likely to be disapproved.</li>
+</ul>
+<p>Services such as consultations or website projects are not products for Merchant Center. Promote those through your Google Business Profile, search ads and service pages instead.</p>
 <h2>Product structured data</h2>
 <p>WooCommerce adds basic Product structured data to product pages, and SEO plugins can extend it. Google uses it to cross-check your feed, and Merchant Center's automatic item updates can use it to correct price and availability when they drift. Test a few product pages after any theme or plugin change; see <a href="/blog/schema-markup-explained/">schema markup explained</a> and <a href="/blog/test-structured-data-rich-results/">how to test structured data</a>.</p>
-
 <h2>From free listings to Shopping ads</h2>
 <p>Once products are approved and stable, link Google Ads and the same data can run Shopping or Performance Max campaigns. Set up purchase tracking first, so you can see which products and campaigns actually make money; see <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a>. Start with your best sellers and products with healthy margins. The same product data can also feed Instagram and Facebook; see <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to Meta's catalog</a>.</p>
-
 <h2>FAQs</h2>
 <h3>How do I connect WooCommerce to Google Merchant Center?</h3>
 <p>Install the free Google for WooCommerce extension, open Marketing &gt; Google for WooCommerce, connect your Google account and Merchant Center, choose India as your selling country, set shipping, and let it sync your products. Alternatively, use a feed plugin to create a feed URL and add it to Merchant Center as a scheduled file.</p>
 <h3>Is Google Merchant Center for WooCommerce free?</h3>
 <p>Yes. Merchant Center, the Google for WooCommerce extension and free product listings cost nothing. You only pay if you run Shopping or Performance Max ads through Google Ads, or if you choose a paid feed plugin.</p>
-<h3>Is Google for WooCommerce the same as Google Listings &amp; Ads?</h3>
-<p>Yes. Google Listings &amp; Ads was renamed Google for WooCommerce. It's the official free extension for syncing WooCommerce products to Merchant Center and running Google ads from your dashboard.</p>
+<h3>Can I use Google Merchant Center on WordPress without WooCommerce?</h3>
+<p>Yes, but it is more work. You need a feed from another cart plugin or a Google Sheets feed kept up to date by hand, and each product needs a page where it can actually be bought. With WooCommerce, the free Google for WooCommerce extension, formerly Google Listings &amp; Ads, handles the feed for you.</p>
 <h3>Do I need GTINs (barcodes) for my products?</h3>
 <p>If a product has a manufacturer barcode, include it, because it helps Google match the product. For handmade, custom or own-brand products with no barcode, set identifier_exists to "no" rather than inventing a number. If you want barcodes for your own brand, they're issued in India through GS1 India.</p>
 <h3>Why are my WooCommerce products disapproved in Merchant Center?</h3>
 <p>The most common reasons are price or stock that don't match the product page, prices without GST, missing shipping details, images with text or watermarks, and incorrect identifiers. Account-level suspensions are usually misrepresentation: missing contact details, policies or business information. Merchant Center lists the exact issue for each product.</p>
 <h3>How long does it take for products to show on Google?</h3>
 <p>New products and accounts go through a review, which often takes a few days. After approval, free listings can start showing, but Google decides when and where, so impressions build gradually.</p>
-
 <p>Want your products on Google without fighting feeds and disapprovals? I can set up Merchant Center and Google for WooCommerce, fix the store's prices, shipping and policies so products get approved, and make sure stock stays in sync. See <a href="/woocommerce-developer/">WooCommerce development</a>, and for organic rankings, the <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a>.</p>
 `,
   },
@@ -45224,20 +45220,18 @@ https://another-site.example/page-with-paid-link/</code></pre>
   },
   {
     slug: 'google-ads-conversion-tracking-setup',
-    seoTitle: 'Google Ads Conversion Tracking on WordPress: Setup Guide',
-    title: 'Google Ads Conversion Tracking on WordPress: Forms, Calls and Purchases',
-    description: 'How to set up Google Ads conversion tracking on WordPress: decide conversions, track forms, calls, WhatsApp clicks and WooCommerce purchases, then test it.',
+    seoTitle: 'Google Ads Conversion Tracking for WordPress and WooCommerce',
+    title: 'Google Ads Conversion Tracking on WordPress and WooCommerce: Forms, Calls and Purchases',
+    description: 'Set up Google Ads conversion tracking on WordPress and WooCommerce: track forms, calls, WhatsApp clicks and purchases with order value, then test each one.',
     date: '2026-09-28',
-    updated: '2026-10-29',
+    updated: '2026-10-30',
     category: 'Growth',
     related: ['landing-page-design', 'woocommerce-developer'],
     body: `
-<p>Google Ads conversion tracking on WordPress tells Google which clicks turned into enquiries, calls or sales, so you can see what your ad spend actually produces and let bidding optimise for real results. To set it up, decide which actions count, send them to Google Ads either through the Google tag or by importing GA4 key events, and test each one before you spend more.</p>
+<p>Google Ads conversion tracking on WordPress and WooCommerce tells Google which clicks turned into enquiries, calls or sales, so you can see what your ad spend actually produces and let bidding optimise for real results. To set it up, decide which actions count, send them to Google Ads either through the Google tag or by importing GA4 key events, and test each one before you spend more.</p>
 <p>This guide walks through the choices and setup for forms, phone calls, WhatsApp clicks and WooCommerce purchases, with the common mistakes Indian small businesses run into.</p>
-
 <h2>Why conversion tracking matters before you scale ads</h2>
 <p>Without tracking, Google Ads only knows about clicks. Smart bidding strategies such as Maximise Conversions need conversion data to work properly, and you cannot tell which keywords bring leads and which only bring traffic. Many small businesses run ads for months on clicks alone and then decide &quot;Google Ads doesn&apos;t work&quot;, when the real problem is that nobody could see what was working. If you are still planning a budget, read <a href="/blog/google-ads-budget-small-business/">how to set a Google Ads budget for a small business</a> first.</p>
-
 <h2>Decide what counts as a conversion</h2>
 <table>
 <thead><tr><th>Action</th><th>Type</th><th>Suggested status</th></tr></thead>
@@ -45251,7 +45245,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </tbody>
 </table>
 <p>Primary conversions are what bidding optimises for. If you mark page views or add-to-carts as primary, Google will happily find you more of those rather than real leads.</p>
-
 <h2>How to set up Google Ads conversion tracking on WordPress</h2>
 <p>There are two main routes, and you should pick one per action to avoid counting twice.</p>
 <h3>Route 1: Import GA4 key events</h3>
@@ -45259,11 +45252,9 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <h3>Route 2: Google Ads conversion tag</h3>
 <p>Create a conversion action in Google Ads and fire its tag through Google Tag Manager or the Google tag on the thank-you step. This tends to report faster and supports features such as enhanced conversions directly. It needs a little more setup.</p>
 <p>Many sites use Tag Manager for both, which keeps tracking code out of the theme and makes testing easier.</p>
-
 <h2>Tracking form submissions</h2>
 <p>The most reliable method is a thank-you page: after a successful submission, the form redirects to a page such as <code>/thank-you/</code>, and the conversion fires on that page only. Make sure the thank-you page cannot be reached in other ways, such as from the menu or Google search, by keeping it out of navigation and setting it to noindex.</p>
 <p>If your form shows a success message without changing page, you need an event that fires on successful submission. Popular WordPress form plugins expose such events or have integrations; avoid tracking the button click alone, because it also counts failed or empty submissions. Check your form plugin&apos;s documentation for the exact event name.</p>
-
 <h2>Tracking calls and WhatsApp clicks</h2>
 <p>For many Indian service businesses, calls and WhatsApp bring more leads than forms. Track them separately so you can judge each:</p>
 <ul>
@@ -45272,7 +45263,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li><strong>WhatsApp clicks:</strong> track clicks on <code>wa.me</code> or <code>api.whatsapp.com</code> links. Again, this is intent; the chat may never start.</li>
 </ul>
 <p>Because click-based conversions overcount, many businesses keep WhatsApp clicks as secondary at first and review actual chats before promoting them to primary. For deeper call measurement, see <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a>.</p>
-
 <h2>Tracking WooCommerce purchases</h2>
 <p>Purchases should fire once, on the order-received page, with the order value, currency (INR) and order ID. The order ID lets Google deduplicate if a customer reloads the page. Several WooCommerce integrations send purchase data to GA4 and Google Ads; check that yours includes value and transaction ID.</p>
 <p>Two Indian-specific issues to watch:</p>
@@ -45281,14 +45271,21 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li><strong>Cash on delivery.</strong> COD orders are placed but not yet paid, and some will be refused. Decide whether to count them at full value, and consider adjusting conversions later for returned or cancelled orders.</li>
 </ul>
 <p>For ads that also run on Meta, the <a href="/blog/meta-pixel-conversions-api/">Meta Pixel and Conversions API guide</a> explains the equivalent setup there.</p>
-
+<h2>WooCommerce conversion tracking for Google Ads: getting the details right</h2>
+<p>For a store, a purchase conversion that simply fires is not enough. To let Google Ads judge which campaigns actually make money, the purchase event needs to carry the right details and fire only once per order:</p>
+<ul>
+<li><strong>Send the order value and currency:</strong> pass the real order total in INR so you can see revenue per campaign, not just a count of sales.</li>
+<li><strong>Send the order ID as the transaction ID:</strong> this lets Google Ads ignore duplicates when a customer refreshes or revisits the thank-you page.</li>
+<li><strong>Fire on the order received page only:</strong> not on checkout, not on clicks of the Place Order button, which also count failed payments.</li>
+<li><strong>Check gateway redirects:</strong> some Indian payment gateways return customers through extra pages. Make sure customers still land on the WooCommerce thank-you page after paying, or the conversion is lost.</li>
+<li><strong>Pick one source:</strong> use either the Google for WooCommerce extension, a tag manager setup or GA4 import for purchases, not all three, or sales get counted twice.</li>
+</ul>
+<p>Then compare a week of Google Ads purchase conversions with the orders in WooCommerce. They will never match exactly, but a large gap means something in the setup needs fixing.</p>
 <h2>Measuring lead quality, not just lead count</h2>
 <p>A form submission is not a customer. For service businesses, the next step is to check which conversions turned into real jobs. Keep a simple sheet or CRM that records the source of each lead, and note whether it was genuine, a wrong number, spam or a sale. Over a few weeks you will see which campaigns and keywords bring useful enquiries.</p>
 <p>When you have enough volume, Google Ads can also accept offline conversion imports, where you upload leads that became sales using the click ID captured on the form. This lets bidding favour searches that lead to real business rather than any enquiry. It needs a hidden field on the form to store the click ID and a routine for uploading results, so it suits businesses with a steady flow of leads. The guide to <a href="/blog/lead-scoring-small-business/">lead scoring for small businesses</a> explains how to grade enquiries consistently.</p>
-
 <h2>Enhanced conversions and consent</h2>
 <p>Enhanced conversions send hashed customer data, such as email or phone from the form, to improve matching when cookies are limited. It can improve measurement, but it involves personal data, so check your privacy policy explains it and that you have the right consent. India&apos;s data protection law and Google&apos;s own policies both apply; check the current rules. If you have visitors from regions that require consent mode, set it up properly with your consent banner.</p>
-
 <h2>Test before you spend</h2>
 <ol>
 <li>Use Google Tag Assistant to load your site and confirm the tag and conversion fire on the right step.</li>
@@ -45297,7 +45294,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li>Compare a week of conversions with actual leads in your inbox and orders in WooCommerce.</li>
 </ol>
 <p>Before launching ads, also check your landing page. The guide on <a href="/blog/website-ready-for-google-ads/">getting your website ready for Google Ads</a> covers what to fix first, such as slow loading, unclear offers and missing contact buttons.</p>
-
 <h2>Common mistakes to avoid</h2>
 <ul>
 <li>Counting the same conversion twice, once from GA4 import and once from the Ads tag.</li>
@@ -45307,7 +45303,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li>Never comparing tracked conversions with real enquiries and orders.</li>
 <li>Changing the site or form plugin and forgetting that tracking depended on it.</li>
 </ul>
-
 <h2>FAQs</h2>
 <h3>How do I set up Google Ads conversion tracking on WordPress?</h3>
 <p>Decide your conversions, then either import GA4 key events into Google Ads or fire a Google Ads conversion tag through Tag Manager on the thank-you step. Test with Tag Assistant and a real test enquiry before relying on the data.</p>
@@ -45319,7 +45314,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>Common causes are customers not returning from the payment gateway, ad blockers, consent settings, or tags missing on some pages. Compare reports with real orders and fix gaps step by step.</p>
 <h3>Do COD orders count as conversions?</h3>
 <p>They are tracked when the order is placed. Decide whether to count them at full value, and adjust later for cancelled or refused orders if your setup supports it.</p>
-
+<h3>How do I set up WooCommerce conversion tracking for Google Ads?</h3>
+<p>Use one method, such as the Google for WooCommerce extension or a Google tag through Tag Manager, to fire a purchase conversion on the order received page with the order value, currency and order ID. Then place a test order and confirm it appears in Google Ads.</p>
 <p>If you want conversion tracking set up and tested properly before you spend more on ads, I do this as part of <a href="/landing-page-design/">landing page design</a> and as part of <a href="/woocommerce-developer/">WooCommerce development</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off tracking setup.</p>
 `,
   },
@@ -45970,18 +45966,16 @@ https://another-site.example/page-with-paid-link/</code></pre>
   },
   {
     slug: 'web-fonts-performance',
-    seoTitle: 'Business Website Web Font Performance: How to Fix It',
-    title: 'Business Website Web Font Performance: How to Load Fonts Fast in WordPress and Shopify',
-    description: 'Improve your business website web font performance: fewer font files, WOFF2, self-hosting, font-display swap, preload and subsetting, in WordPress and Shopify.',
+    seoTitle: 'How to Reduce Font Load and Speed Up Web Fonts',
+    title: 'How to Reduce Font Load on Your Website: Faster Web Fonts in WordPress and Shopify',
+    description: 'How to reduce font load on a website: fewer font files, WOFF2, self-hosting, font-display swap, preloading fonts and subsetting in WordPress and Shopify.',
     date: '2026-09-28',
     updated: '2026-10-30',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
-<p>Web font performance on a business website comes down to how many font files the page has to download and how quickly the text can appear. To improve it, use one or two font families with only the weights you need, serve them as WOFF2 from your own domain, add font-display: swap so text shows immediately, preload the main font, and remove fonts your theme or plugins load but never use.</p>
-
+<p>To reduce font load on your website, cut how many font files the page downloads and let text appear before they arrive. Web font performance on a business website comes down to how many font files the page has to download and how quickly the text can appear. To improve it, use one or two font families with only the weights you need, serve them as WOFF2 from your own domain, add font-display: swap so text shows immediately, preload the main font, and remove fonts your theme or plugins load but never use.</p>
 <p><strong>Short answer:</strong> fewer files, smaller files, loaded earlier, never blocking text. On many WordPress sites, cutting unused font weights and self-hosting Google Fonts is the single quickest fix.</p>
-
 <h2>Why web fonts affect business website performance</h2>
 <p>Every custom font is a file the browser must download before it can draw text in that font. Each weight (regular, medium, bold) and style (italic) is usually a separate file. A theme with two families in four weights each can mean eight font files before the page looks right.</p>
 <p>Fonts affect performance in three ways:</p>
@@ -45991,7 +45985,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li><strong>Invisible text:</strong> some browsers hide text for a few seconds while fonts load, so visitors on slow mobile connections see a blank page.</li>
 </ul>
 <p>On slower Indian mobile networks the effect is bigger, because each extra request and each extra connection to another server takes longer. Our guide on <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> explains why.</p>
-
 <h2>How to check your web font performance</h2>
 <ol>
 <li><strong>Run PageSpeed Insights</strong> on your homepage and a key service page. Look for "Ensure text remains visible during webfont load", "Eliminate render-blocking resources" and the LCP element.</li>
@@ -45999,7 +45992,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li><strong>Check for unused fonts.</strong> Many sites load icon fonts, extra families from page builders or fonts for sliders that no longer exist.</li>
 <li><strong>Check the file formats.</strong> WOFF2 is the modern format; TTF or older formats are larger.</li>
 </ol>
-
 <h2>Practical fixes to speed up web fonts</h2>
 <h3>1. Use fewer families and weights</h3>
 <p>Most business websites need one family, or two at most (one for headings, one for body). Regular and bold are often enough; a semi-bold for headings is fine if you drop something else. Each weight you remove is one less file. Our guide on <a href="/blog/choose-website-colours-fonts/">choosing website colours and fonts</a> helps you pick a sensible pair.</p>
@@ -46020,7 +46012,19 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>Choose a fallback system font with similar width and height, and use size-adjust or similar font-face settings so the swap barely moves the text.</p>
 <h3>9. Replace icon fonts</h3>
 <p>Loading a whole icon font for a handful of icons is wasteful. Inline SVG icons are lighter and sharper.</p>
-
+<h2>How to preload fonts correctly</h2>
+<p>Preloading tells the browser to fetch a font file early, before it discovers the font inside your CSS. Used well, it makes the main heading or body text appear sooner. Used badly, it competes with the hero image and other important files and can make the page slower.</p>
+<p>A preload line goes in the head of the page and looks like this:</p>
+<pre><code>&lt;link rel="preload" href="/fonts/heading.woff2" as="font" type="font/woff2" crossorigin&gt;</code></pre>
+<p>Rules that keep preloading helpful:</p>
+<ul>
+<li><strong>Preload one or two files only:</strong> the font used for text above the fold, usually the main body or heading weight.</li>
+<li><strong>Always include crossorigin:</strong> without it the browser downloads the font twice, even on your own domain.</li>
+<li><strong>Match the exact file:</strong> the preloaded URL must be the same file your CSS uses, or it is wasted.</li>
+<li><strong>Do not preload Google Fonts from their servers:</strong> those file URLs can change. Self-host first, then preload the local file.</li>
+<li><strong>Check the result:</strong> run PageSpeed Insights before and after. If LCP does not improve, remove the preload.</li>
+</ul>
+<p>Many WordPress performance plugins and some themes have a setting to preload fonts, so check there before adding code by hand.</p>
 <h2>Web font performance in WordPress</h2>
 <ul>
 <li><strong>Theme settings:</strong> many themes let you choose fonts and weights in the Customizer. Remove anything you are not using.</li>
@@ -46030,7 +46034,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li><strong>Block themes:</strong> theme.json lets you register local fonts properly, which is cleaner than pasting links into the header.</li>
 </ul>
 <p>Fonts are often one of several render-blocking resources; our guide to <a href="/blog/eliminate-render-blocking-resources/">eliminating render-blocking resources</a> covers the rest.</p>
-
 <h2>Web font performance in Shopify</h2>
 <p>Shopify themes usually use the Shopify font library, served from Shopify's own CDN, and many themes already apply font-display: swap. The main improvements are:</p>
 <ul>
@@ -46038,10 +46041,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li>Avoid apps or custom code that inject extra Google Fonts.</li>
 <li>Limit headings and body to the weights the theme actually uses.</li>
 </ul>
-
 <h2>Are system fonts a good option for a business website?</h2>
 <p>System fonts are already on the visitor's device, so they need no download at all. A modern system font stack looks clean and professional, and many well-known sites use one. If your brand does not depend on a particular typeface, using system fonts for body text and one web font for headings is a strong balance between speed and personality.</p>
-
 <h2>Common web font mistakes on business websites</h2>
 <ul>
 <li><strong>Loading every weight "just in case":</strong> theme demos often import a full family from thin to black. Your site probably uses two or three of them.</li>
@@ -46052,7 +46053,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li><strong>Changing fonts during a redesign without re-testing:</strong> a new heading font can quietly become the slowest part of the page.</li>
 </ul>
 <p>After any font change, re-run PageSpeed Insights on mobile and look at the page on a real phone over mobile data. The difference between a font that appears instantly and one that flashes in late is easy to see.</p>
-
 <h2>Web font performance checklist</h2>
 <ol>
 <li>List every font file the page loads and remove unused ones.</li>
@@ -46064,10 +46064,9 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li>Match fallback fonts to reduce layout shift.</li>
 <li>Re-test with PageSpeed Insights and real devices.</li>
 </ol>
-
 <h2>FAQs</h2>
-<h3>Do web fonts slow down a website?</h3>
-<p>They can. Each font file is an extra download that can delay text and the main heading. A few well-optimised WOFF2 files have a small impact; many unused weights from third-party servers have a large one.</p>
+<h3>How do I reduce font load on my website?</h3>
+<p>Web fonts can slow a site because each file is an extra download that can delay text. Reduce font load by using one or two families, removing unused weights, serving WOFF2 from your own domain, adding font-display: swap and preloading only the main font.</p>
 <h3>Is it faster to self-host Google Fonts?</h3>
 <p>Usually yes, because the browser avoids extra connections to other servers, and you get control over caching and preloading. It also avoids sending visitor data to a third party.</p>
 <h3>What does font-display: swap do?</h3>
@@ -46078,7 +46077,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>No. Preload only the one or two fonts used above the fold. Preloading too many files competes with images and CSS and can make the page slower.</p>
 <h3>Are system fonts better for performance than web fonts?</h3>
 <p>Yes. System fonts need no download, so they are the fastest option. Many business sites use system fonts for body text and a single web font for headings.</p>
-
 <p>If fonts, themes or plugins are slowing your site, Samverse can fix it as part of <a href="/wordpress-speed-optimization/">WordPress and WooCommerce speed optimization</a>. For a wider check, see <a href="/website-redesign/">website redesign</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>.</p>
 `,
   },
@@ -50790,21 +50788,19 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'category-tag-pages-seo',
-    seoTitle: 'Category and Tag Pages SEO: Index, Noindex or Improve?',
-    title: 'Category and Tag Pages SEO in WordPress and WooCommerce: When to Index, Noindex or Improve Them',
-    description: 'Category and tag pages SEO for WordPress and WooCommerce: when to index or noindex archives, how to fix thin tag pages, and how to make categories rank.',
+    seoTitle: 'WordPress Categories and Tags for SEO: What to Index',
+    title: 'WordPress Categories and Tags for SEO: When to Index, Noindex or Improve Them',
+    description: 'WordPress categories and tags for SEO: how to use each, when to index or noindex archives, how to fix thin tag pages and make WooCommerce categories rank.',
     date: '2026-09-30',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
-<p>For category and tag pages SEO, the short answer is this: keep useful category pages indexed and improve them, and set most tag pages to noindex unless each tag has enough posts and a clear purpose. Category pages, especially on online stores, can be some of the best ranking pages on a site. Tag pages, on most small business blogs, end up as thin lists of one or two posts that add little and compete with your real articles.</p>
+<p>For WordPress categories and tags SEO, the short answer is this: keep useful category pages indexed and improve them, and set most tag pages to noindex unless each tag has enough posts and a clear purpose. Category pages, especially on online stores, can be some of the best ranking pages on a site. Tag pages, on most small business blogs, end up as thin lists of one or two posts that add little and compete with your real articles.</p>
 <p>This guide explains how WordPress and WooCommerce archives work, how to decide what to index, and how to improve the archives worth keeping.</p>
-
 <h2>How category and tag archives work in WordPress</h2>
 <p>WordPress creates an archive page for every category and every tag you use. If a post is filed under the category Speed and tagged images, caching and hosting, that single post appears on four archive pages. On a store, WooCommerce does the same for product categories and product tags.</p>
 <p>Categories are meant to be broad and hierarchical, like sections of a library. Tags are meant to be specific and flat, like index entries. The problem is that over time many sites add tags freely, end up with hundreds of them, and most are used once or twice. Each one becomes a thin page Google may crawl and judge.</p>
-
 <h2>Index or noindex: a simple decision table</h2>
 <table>
 <thead><tr><th>Archive type</th><th>Usual recommendation</th><th>Why</th></tr></thead>
@@ -50818,7 +50814,6 @@ Support:           who to contact, and on what terms</code></pre>
 </tbody>
 </table>
 <p>These are general guidelines. Check Search Console first: if a tag page is actually bringing clicks, keep it and improve it rather than removing it.</p>
-
 <h2>How to audit your categories and tags</h2>
 <ol>
 <li><strong>Export the list.</strong> In WordPress, the Categories and Tags screens show how many posts each one has.</li>
@@ -50829,7 +50824,6 @@ Support:           who to contact, and on what terms</code></pre>
 <li><strong>Set noindex</strong> for the remaining thin archive types using your SEO plugin.</li>
 </ol>
 <p>Rank Math, Yoast and similar plugins let you noindex tags, date archives and author archives in a few clicks. The guide to <a href="/blog/wordpress-seo-plugins-compared/">WordPress SEO plugins compared</a> covers where these settings live.</p>
-
 <h2>How to make category pages rank</h2>
 <p>A bare list of post titles rarely ranks well. Category pages that do well usually have:</p>
 <ul>
@@ -50840,7 +50834,6 @@ Support:           who to contact, and on what terms</code></pre>
 <li><strong>No duplicate content</strong> with another category or a landing page targeting the same phrase.</li>
 </ul>
 <p>Most WordPress themes can show the category description at the top of the archive. If yours does not, a developer can add it to the template.</p>
-
 <h2>WooCommerce product categories and Shopify collections</h2>
 <p>On online stores, product category pages often matter more than product pages for search. Someone searching for cotton kurtas for women or steel water bottles online is usually looking for a range, not a single product. The category or collection page is what should rank.</p>
 <p>For WooCommerce categories and Shopify collections in India:</p>
@@ -50851,7 +50844,6 @@ Support:           who to contact, and on what terms</code></pre>
 <li>Avoid creating both a tag and a category for the same idea.</li>
 </ul>
 <p>The <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a> and the <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> cover the rest of store SEO.</p>
-
 <h2>Category and tag pages SEO mistakes to avoid</h2>
 <ul>
 <li>Using categories and tags with the same names, which creates two near-identical archives.</li>
@@ -50861,7 +50853,15 @@ Support:           who to contact, and on what terms</code></pre>
 <li>Letting thin archives fill the sitemap, which wastes crawling on low-value pages.</li>
 </ul>
 <p>Thin archives are a common source of <a href="/blog/duplicate-content-explained/">duplicate content</a> warnings and low-quality signals during audits.</p>
-
+<h2>WordPress categories vs tags: how to use each for SEO</h2>
+<p>Categories and tags look similar in the WordPress editor, but they do different jobs. Getting the difference right prevents most archive problems before they start.</p>
+<ul>
+<li><strong>Categories are your main sections.</strong> Every post needs one. Keep them few, broad and planned, like the chapters of a book: services, guides, case studies or the main topics you want to be known for. Categories can be nested, so a parent with a few children works well on larger blogs.</li>
+<li><strong>Tags are optional cross-references.</strong> They link posts that share a specific detail across categories, such as a city, a product type or a tool. A tag is only worth having if several posts will use it.</li>
+<li><strong>Do not duplicate:</strong> a tag with the same name as a category creates two near-identical archives competing for the same search.</li>
+<li><strong>Agree a list:</strong> if several people write posts, keep a short approved list of categories and tags so new ones are not created on the fly.</li>
+</ul>
+<p>For WordPress tags SEO specifically, the practical rule is simple: if a tag archive would not make a useful page on its own, it should not be indexed. Many small business sites are better off using no tags at all and relying on categories and internal links.</p>
 <h2>Pagination, URLs and the category base</h2>
 <p>A few technical details affect how archives perform:</p>
 <ul>
@@ -50872,15 +50872,12 @@ Support:           who to contact, and on what terms</code></pre>
 <li><strong>Sitemaps:</strong> include indexable categories and exclude noindexed tags so the sitemap only lists pages you want found.</li>
 </ul>
 <p>The guide to <a href="/blog/seo-friendly-urls/">SEO-friendly URLs</a> covers slug choices in more detail.</p>
-
 <h2>Category pages vs landing pages</h2>
 <p>A common question for service businesses is whether a blog category should target a commercial search, such as website design in Pune. Usually it should not. Commercial searches are better served by a dedicated service or landing page that explains the offer and invites an enquiry. The category page can then target the informational side of the topic and link to that service page. Trying to make both rank for the same phrase splits signals and confuses search engines about which page to show. Decide one main page per search intent, and make the other support it with links.</p>
-
 <h2>A sensible structure for small business blogs</h2>
 <p>For most service businesses in India, five to ten categories are plenty. Name them after topics customers actually search, such as website costs, SEO, speed or maintenance. Use tags sparingly or not at all. Give each category a short intro and link to it from the main navigation or the blog page. This keeps the site easier to browse and helps search engines understand what you cover.</p>
 <p>Before writing a new post, decide which category it belongs in and whether it needs tags at all. A short written list of approved categories and their purpose, shared with anyone who publishes on the site, prevents the slow drift back into dozens of overlapping archives. Review the list once or twice a year, and merge or retire categories that stopped getting new posts, redirecting any that still receive visits.</p>
 <p>When you reorganise, do it in one planned pass rather than piecemeal changes, and recheck Search Console a few weeks later for errors or lost pages.</p>
-
 <h2>FAQs</h2>
 <h3>Should I noindex category and tag pages?</h3>
 <p>Usually keep useful category pages indexed and improve them, and noindex most tag pages. Check Search Console first so you do not remove archives that bring real traffic.</p>
@@ -50892,7 +50889,8 @@ Support:           who to contact, and on what terms</code></pre>
 <p>They are often the most important pages for commercial searches. Add unique content, manage filter URLs with canonicals, and give each category a clear title and description.</p>
 <h3>Do I need redirects when deleting tags?</h3>
 <p>If the tag page had links or clicks, redirect it to the closest relevant category or post. Tags with no traffic or links can simply be removed.</p>
-
+<h3>Do WordPress tags help SEO?</h3>
+<p>Rarely on their own. Tags help readers find related posts, but most tag archives on small sites are thin and are better set to noindex. Only a tag with many posts and a clear topic is worth indexing and improving.</p>
 <p>If your archives need a tidy-up as part of a wider audit, <a href="/wordpress-seo-services/">WordPress SEO services</a> include taxonomy clean-up, redirects and noindex settings. Stores can also see <a href="/woocommerce-developer/">WooCommerce development</a>, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for one-off fixes.</p>
 `,
   },
@@ -57852,13 +57850,12 @@ Support:           who to contact, and on what terms</code></pre>
     title: 'How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention',
     description: 'Fix WordPress plugin conflicts without risking your live site: test on staging, use Health Check mode, halve your plugins, read the debug log and console.',
     date: '2026-10-01',
-    updated: '2026-10-27',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-website-development'],
     body: `
 <p>To fix a WordPress plugin conflict, first protect the live site with a backup, then reproduce the problem on a staging copy or in Health Check troubleshooting mode. Switch to a default theme and deactivate plugins in halves until the problem disappears, re-enable them to find the exact pair that clashes, and confirm it in the PHP debug log or the browser console. Then update, replace or roll back one of the two plugins, and change how you update so it doesn't happen again.</p>
 <p>A conflict happens when two plugins, or a plugin and your theme, each work alone but break something together: a form stops sending, a layout falls apart, checkout hangs or the site shows a critical error. Finding and fixing these safely is a routine part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> work, and this guide is the same method written out so you can follow it yourself.</p>
-
 <h2>Is it really a plugin conflict?</h2>
 <p>Several problems look like conflicts but aren't. Rule these out early, because the fix is completely different.</p>
 <table>
@@ -57873,7 +57870,6 @@ Support:           who to contact, and on what terms</code></pre>
   </tbody>
 </table>
 <p>A blank page with no message at all is covered in <a href="/blog/wordpress-white-screen-of-death/">fixing the WordPress white screen of death</a>; "allowed memory size exhausted" messages are a hosting limit rather than a clash. If forms submit but no email arrives, the cause is usually delivery rather than a conflict.</p>
-
 <h2>Before you touch anything: a five-minute safety routine</h2>
 <ol>
   <li><strong>Take a fresh backup</strong> of files and database. The <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a> covers the options.</li>
@@ -57881,11 +57877,9 @@ Support:           who to contact, and on what terms</code></pre>
   <li><strong>Clear every cache</strong> (plugin, hosting and CDN), then check in a private browser window. A surprising number of "conflicts" are an old cached file.</li>
   <li><strong>If customers can't buy or book, restore service first.</strong> Roll back the last update or restore the backup, then investigate on a copy.</li>
 </ol>
-
 <h2>Reproduce it on a staging site</h2>
 <p>Switching plugins on and off on a live store or booking site breaks things for real visitors. A staging copy lets you test freely; many hosts create one in a few clicks, and <a href="/blog/staging-sites-explained/">staging sites explained</a> walks through the setup.</p>
 <p>Confirm the problem appears on staging. If it doesn't, suspect something that differs between the two: server-level caching, a CDN rule, PHP settings, or a licence tied to the live domain.</p>
-
 <h2>Or use Health Check troubleshooting mode</h2>
 <p>When staging isn't available, the free Health Check &amp; Troubleshooting plugin from the WordPress.org community is the next safest option. In troubleshooting mode it turns off every plugin and loads a default theme, but only for your own logged-in session; visitors keep seeing the normal site.</p>
 <ol>
@@ -57896,7 +57890,6 @@ Support:           who to contact, and on what terms</code></pre>
   <li>Disable troubleshooting mode when you finish.</li>
 </ol>
 <p>It has limits: server caching, scheduled tasks and anything that runs for logged-out visitors may behave differently. Treat it as a strong first step, not the final word.</p>
-
 <h2>Find the culprit quickly: the halving method</h2>
 <p>Turning plugins on one at a time works, but on a site with 30 plugins it is slow. Halving is faster:</p>
 <ol>
@@ -57912,7 +57905,6 @@ Support:           who to contact, and on what terms</code></pre>
 wp plugin deactivate --all
 wp plugin activate woocommerce contact-form-7</code></pre>
 <p>The <a href="/blog/fix-wordpress-critical-error/">critical error guide</a> covers recovery mode and the folder-rename method step by step.</p>
-
 <h2>Read the evidence: debug log, console and Query Monitor</h2>
 <h3>The PHP debug log</h3>
 <p>On staging, turn on logging in wp-config.php so errors are written to a file instead of shown to visitors:</p>
@@ -57924,10 +57916,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>For buttons, sliders, menus and checkouts that "do nothing", open the broken page, right-click, choose Inspect and open the Console tab. Red errors name the script that failed. A common pattern is one plugin loading its own copy of a library, or an optimisation plugin deferring a script another plugin needs early, so everything after the first error stops running.</p>
 <h3>Query Monitor</h3>
 <p>The free Query Monitor plugin shows PHP errors, slow database queries, hooks and the scripts loaded on each page. It is very useful on staging for seeing which plugin is responsible for what.</p>
-
 <h2>Theme conflicts</h2>
 <p>If the problem disappears with a default theme, look at what your theme adds: bundled plugins, custom WooCommerce template overrides, its own sliders or lazy loading, or code in functions.php. Older themes with outdated template files are a frequent cause after a WooCommerce or page builder update. <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a> covers the builder-specific version of this problem.</p>
-
 <h2>Caching and optimisation conflicts</h2>
 <p>Caching, minification and "combine JavaScript" options cause a large share of front-end breakage, because they change how other plugins' files load. Common signs and fixes:</p>
 <ul>
@@ -57937,7 +57927,15 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li><strong>Cart, checkout or account pages acting oddly:</strong> these pages must not be cached; most caching plugins exclude them, but check.</li>
 </ul>
 <p><a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> describes the layers involved.</p>
-
+<h2>WordPress plugin conflict fix when you cannot reach wp-admin</h2>
+<p>Sometimes a conflict takes the whole dashboard down, so you cannot deactivate anything in the normal way. You still have safe options:</p>
+<ul>
+<li><strong>Use the recovery mode email:</strong> when WordPress catches a fatal error it often emails the admin address a special link. That link logs you in with the faulty plugin paused, so you can deactivate it properly.</li>
+<li><strong>Rename one plugin folder:</strong> using your hosting file manager or FTP, open wp-content/plugins and rename the folder of the plugin you suspect, for example by adding -off to the end. WordPress deactivates it. Rename it back later to restore it with its settings.</li>
+<li><strong>Rename the whole plugins folder:</strong> if you have no suspect, rename the plugins folder itself to deactivate everything, log in, rename it back, then reactivate plugins one at a time from the dashboard.</li>
+<li><strong>Switch theme the same way:</strong> renaming the active theme folder makes WordPress fall back to an installed default theme.</li>
+</ul>
+<p>Take a backup through your host before renaming anything, and write down exactly what you changed so you can reverse it. On a store, do this during a quiet hour, because deactivated plugins can affect checkout while you test.</p>
 <h2>Fixing it once you know the pair</h2>
 <ol>
   <li><strong>Check for updates</strong> to both plugins on staging; the conflict may already be fixed.</li>
@@ -57946,7 +57944,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li><strong>Report it</strong> to both developers with your WordPress, PHP, theme and plugin versions (Tools, Site Health, Info lists these), exact steps to reproduce, and the log or console error.</li>
   <li><strong>Replace one plugin</strong> if it looks abandoned, or if a small piece of custom code would do the job more cleanly; see <a href="/blog/plugin-vs-custom-code-wordpress/">plugin or custom code</a>.</li>
 </ol>
-
 <h2>Preventing the next conflict</h2>
 <ul>
   <li>Update on staging first, one important plugin at a time, and test forms, checkout and key pages afterwards. <a href="/blog/update-wordpress-safely/">How to update WordPress safely</a> sets out the order.</li>
@@ -57956,7 +57953,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Never install nulled premium plugins: they skip official updates and often carry hidden code.</li>
   <li>Keep a short log of what was updated and when, so the next problem starts with "what changed?"</li>
 </ul>
-
 <h2>FAQs</h2>
 <h3>How do I know which plugin is causing the problem?</h3>
 <p>Switch to a default theme and deactivate plugins in halves on staging or in Health Check troubleshooting mode until the problem disappears, then narrow down to one. Confirm it in the debug log or browser console, which usually names the file or script.</p>
@@ -57968,7 +57964,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Usually caching or JavaScript optimisation, because logged-in users often bypass the page cache. Purge every cache and test the optimisation settings one by one.</p>
 <h3>What if the conflicting plugins are both essential?</h3>
 <p>Check for updates, report it to both developers, and try changing the overlapping setting or excluding a script from optimisation. If nothing works, replace the less important plugin or use a small piece of custom code.</p>
-
+<h3>What is the quickest WordPress plugin conflict fix?</h3>
+<p>Roll back or deactivate the plugin you updated or installed most recently, since that is the usual trigger. If that does not help, use troubleshooting mode or a staging copy and the halving method to find the exact pair.</p>
 <p>Rather not chase conflicts yourself? My <a href="/wordpress-maintenance/">WordPress maintenance</a> plans start every update with a fresh backup, then test the pages and forms that matter, so a clash is caught and dealt with before your customers find it. If the site has grown into a tangle of overlapping plugins, a cleaner rebuild through <a href="/wordpress-website-development/">WordPress website development</a> may cost less over time.</p>
 `,
   },
@@ -65722,17 +65719,16 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'wordpress-rest-api-explained',
-    seoTitle: 'WordPress REST API Explained: What It Is, When to Use It',
-    title: 'The WordPress REST API Explained: What It Is and When You Need It',
-    description: 'The WordPress REST API explained in plain language: what it is, what already uses it, what is public, authentication, business uses and how to restrict it.',
+    seoTitle: 'What Is the WordPress REST API? A Plain-English Guide',
+    title: 'What Is the WordPress REST API? A Plain-English Guide for Business Owners',
+    description: 'What is the WordPress REST API? A plain-English guide to what uses it, what it makes public, application passwords, business uses and how to restrict it.',
     date: '2026-10-01',
-    updated: '2026-10-29',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'hire-wordpress-developer'],
     body: `
-<p>The WordPress REST API is a built-in way for other software to read and change your site's content over the web. It works through URLs under /wp-json/ on your domain and sends data back as JSON instead of web pages. The block editor, many plugins, mobile apps and integrations with CRMs or other systems all use it. Most site owners never touch it directly, but it is worth knowing what it exposes and how to keep it secure.</p>
+<p>What is the WordPress REST API? It is a built-in way for other software to read and change your site's content over the web. It works through URLs under /wp-json/ on your domain and sends data back as JSON instead of web pages. The block editor, many plugins, mobile apps and integrations with CRMs or other systems all use it. Most site owners never touch it directly, but it is worth knowing what it exposes and how to keep it secure.</p>
 <p>This guide explains the WordPress REST API in plain language: what already uses it on your site, what is public by default, how authentication works, when a business actually needs it and how to restrict it safely without breaking anything.</p>
-
 <h2>The WordPress REST API explained in plain language</h2>
 <p>Think of your website as having two doors. The front door serves web pages to visitors' browsers. The REST API is a side door that serves the same content as structured data to programs. A program can ask for the latest ten posts, a product's price or a page's content, and get back clean data without any design around it.</p>
 <p>Each type of content has its own address, called an endpoint. For example, <code>/wp-json/wp/v2/posts</code> lists published posts, <code>/wp-json/wp/v2/pages</code> lists pages, and plugins such as WooCommerce add their own endpoints under their own namespace. A program reads data with a GET request and, if it has permission, creates or updates content with POST, PUT or DELETE requests.</p>
@@ -65746,7 +65742,6 @@ any unused part of the advance refunded as agreed</code></pre>
     <tr><td>Application password</td><td>A separate password for one integration, which can be revoked on its own</td></tr>
   </tbody>
 </table>
-
 <h2>What already uses it on your site</h2>
 <p>Even if you have never heard of it, your site probably relies on the REST API every day:</p>
 <ul>
@@ -65757,7 +65752,6 @@ any unused part of the advance refunded as agreed</code></pre>
   <li><strong>Headless or app front ends</strong> that use WordPress only as a content store.</li>
 </ul>
 <p>The older XML-RPC system did some of these jobs before the REST API existed; <a href="/blog/wordpress-xmlrpc-explained/">WordPress XML-RPC explained</a> covers when that can be switched off.</p>
-
 <h2>What's public by default</h2>
 <p>Anything already public on your site is also readable through the REST API without logging in: published posts, pages, categories, tags, media details and public custom post types. That is by design and generally not a risk, since the same content is visible on the website.</p>
 <table>
@@ -65771,7 +65765,6 @@ any unused part of the advance refunded as agreed</code></pre>
   </tbody>
 </table>
 <p>The users endpoint is the one most site owners want to tighten, because it can reveal login usernames. Combined with weak passwords, that helps attackers. Restricting it, and using strong passwords and two-factor login as covered in <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>, closes that gap.</p>
-
 <h2>Authentication and application passwords</h2>
 <p>To do anything beyond reading public content, a request must be authenticated. There are a few ways:</p>
 <ul>
@@ -65781,7 +65774,6 @@ any unused part of the advance refunded as agreed</code></pre>
   <li><strong>OAuth or token plugins</strong> for more complex setups.</li>
 </ul>
 <p>Give each integration its own user with the lowest role that works, and its own application password or key. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> helps choose the right role. Always use https, so credentials are not sent in plain text.</p>
-
 <h2>When a business actually needs the REST API</h2>
 <p>Most small business websites never need custom REST API work. It becomes useful when:</p>
 <ul>
@@ -65793,7 +65785,6 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>You need a custom endpoint that exposes only specific data for a partner or app.</li>
 </ul>
 <p>Custom endpoints are usually built as a small plugin so they survive theme changes; <a href="/blog/custom-wordpress-plugin-development/">custom WordPress plugin development</a> explains that approach.</p>
-
 <h2>Don't switch it off; restrict it</h2>
 <p>Some security guides suggest disabling the REST API completely. On a modern WordPress site that breaks the block editor, many plugins and integrations. A better approach is to restrict what is exposed:</p>
 <ul>
@@ -65804,7 +65795,6 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>Keep WordPress and plugins updated, since API vulnerabilities are usually fixed in updates.</li>
 </ul>
 <p>Treat the REST API as part of your general hardening, alongside the steps in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
-
 <h2>Common REST API errors</h2>
 <table>
   <thead><tr><th>Error or symptom</th><th>Likely cause</th><th>What to check</th></tr></thead>
@@ -65816,13 +65806,19 @@ any unused part of the advance refunded as agreed</code></pre>
   </tbody>
 </table>
 <p>Site Health under Tools also reports when the REST API is not reachable, which is a quick first check.</p>
-
 <h2>Performance and the REST API</h2>
 <p>REST API requests run WordPress and PHP just like page loads, but they are usually not served from the page cache. A badly built integration that polls the site every few seconds, or a front end that makes dozens of API calls per page, can slow the whole site down, particularly on shared hosting. Ask integrations to fetch only the fields they need, to sync changes in batches rather than one record at a time, and to use webhooks where possible so WordPress sends data when something changes instead of being asked constantly. Check your server logs if the site slows down after a new tool is connected.</p>
-
+<h2>How to see the WordPress REST API on your own site</h2>
+<p>You do not need any tools to look at it. Open your browser and visit your own domain followed by /wp-json/. You will see a long block of text listing the routes your site offers: WordPress core routes under wp/v2, and extra routes added by plugins such as WooCommerce, forms or SEO plugins. That list alone shows how many plugins rely on the REST API.</p>
+<p>A few addresses are worth checking:</p>
+<ul>
+<li><strong>/wp-json/wp/v2/posts</strong> shows your published posts as data. This is normal and matches what is already public on the site.</li>
+<li><strong>/wp-json/wp/v2/users</strong> lists authors who have published content. Check that it does not reveal admin usernames you would rather keep private; a security plugin or a small code change can limit it.</li>
+<li><strong>/wp-json/wc/v3/orders</strong> on a WooCommerce store should return an authentication error when you are logged out. If it ever returns order data publicly, treat it as urgent.</li>
+</ul>
+<p>If your permalinks are set to Plain, the same routes work through ?rest_route= instead of /wp-json/. If /wp-json/ shows an error page, something such as a security rule, a firewall or a broken permalink setting is blocking it, which can also stop the block editor from saving.</p>
 <h2>Getting help with integrations</h2>
 <p>Connecting WordPress to other systems through the REST API is straightforward for a developer who has done it before, and easy to get wrong in ways that leak data or create duplicate orders. Plan what data moves in which direction, how often, and what happens when one side is down. If you need an integration built or reviewed, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
-
 <h2>FAQs</h2>
 <h3>What is the WordPress REST API?</h3>
 <p>It is a built-in interface that lets other programs read and change WordPress content through URLs under /wp-json/, receiving data as JSON. The block editor and many plugins depend on it.</p>
@@ -65834,7 +65830,8 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>They are separate passwords created per integration under your user profile. They work only for API access and can be revoked individually without changing your login password.</p>
 <h3>Do I need the REST API for a normal business website?</h3>
 <p>You use it already through the editor and plugins, but you only need custom REST API work for integrations, apps, headless front ends or syncing with other systems.</p>
-
+<h3>Where do I find the WordPress REST API on my site?</h3>
+<p>Add /wp-json/ to the end of your domain in a browser. You will see the list of available routes. Core content lives under /wp-json/wp/v2/, and plugins add their own routes alongside it.</p>
 <p>Need WordPress connected to your CRM, inventory or app? You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> from Samverse to plan and build it safely.</p>
 `,
   },
@@ -71187,17 +71184,16 @@ or a cookie name starts with:
   },
   {
     slug: 'woocommerce-checkout-not-working-fix',
-    seoTitle: 'WooCommerce Checkout Not Working? Fix Spinners and Errors',
-    title: 'WooCommerce Checkout Not Working? Fixing Endless Spinners, Errors and a Dead "Place Order" Button',
-    description: 'WooCommerce checkout not working? Fix endless spinners, a dead Place Order button and payment errors: caching, conflicts, gateways, SSL and sessions.',
+    seoTitle: 'WooCommerce Checkout Not Working, Slow or Showing Errors?',
+    title: 'WooCommerce Checkout Not Working or Slow? Fixing Spinners, Errors and a Dead "Place Order" Button',
+    description: 'WooCommerce checkout not working, slow or showing an error? Fix endless spinners, a dead Place Order button, slow loading, payment errors and caching issues.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-maintenance'],
     body: `
 <p>When WooCommerce checkout is not working, the cause is usually one of five things: cached checkout pages, a JavaScript conflict from a plugin or theme, a payment plugin problem, an SSL or mixed content issue, or broken sessions. Open the browser console and the WooCommerce logs first; the error message normally tells you which one it is.</p>
 <p>This guide covers the common symptoms, an endless spinner, a Place Order button that does nothing, a generic error or a payment that goes through without an order, with checks in a safe order. Every hour checkout is down costs sales, so if you need it fixed quickly, <a href="/woocommerce-developer/">WooCommerce development and support</a> can help.</p>
-
 <h2>WooCommerce checkout not working: match the symptom</h2>
 <table>
   <thead><tr><th>Symptom</th><th>Most likely cause</th><th>Where to look first</th></tr></thead>
@@ -71210,11 +71206,9 @@ or a cookie name starts with:
     <tr><td>Checkout page blank or layout broken</td><td>Theme template or fatal error</td><td>Default theme test, debug log</td></tr>
   </tbody>
 </table>
-
 <h2>First, see what the browser is telling you</h2>
 <p>Open the checkout page in Chrome, right-click and choose Inspect, then open the Console tab. Fill in the form and click Place Order. Red errors in the console usually name the file or plugin causing the problem. In the Network tab, look for the request to the checkout endpoint; if it returns an error code or a response that is not valid JSON, the server side is failing.</p>
 <p>Then check WooCommerce, Status, Logs. Payment plugins and WooCommerce itself write errors there, including fatal errors. If you can, switch on WordPress debug logging temporarily so PHP errors are saved to a log file, and switch it off again afterwards.</p>
-
 <h2>Cart and checkout pages must not be cached</h2>
 <p>Checkout depends on sessions and security tokens unique to each visitor. If a caching plugin, server cache or CDN serves a cached copy, buyers see someone else's empty session, expired tokens or a button that fails silently. Check that:</p>
 <ul>
@@ -71224,7 +71218,6 @@ or a cookie name starts with:
   <li>Pages with WooCommerce cookies bypass the cache.</li>
 </ul>
 <p><a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers the layers, and the <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare WordPress setup guide</a> shows safe rules for stores.</p>
-
 <h2>JavaScript and plugin conflicts</h2>
 <p>Optimisation plugins that minify, combine, defer or delay JavaScript are a frequent cause. Checkout relies on WooCommerce scripts loading in the right order; delaying them until user interaction can leave the Place Order button dead. Exclude WooCommerce, jQuery and your payment gateway scripts from these features, or switch them off on checkout.</p>
 <p>If that does not solve it, test for a conflict on a staging copy:</p>
@@ -71235,11 +71228,9 @@ or a cookie name starts with:
   <li>Re-enable the theme, then plugins one at a time, testing checkout after each.</li>
 </ol>
 <p>Do this on a staging site rather than the live store; <a href="/blog/staging-sites-explained/">staging sites explained</a> shows how. The full method is in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">troubleshooting WordPress plugin conflicts</a>.</p>
-
 <h2>Block checkout or classic shortcode checkout?</h2>
 <p>Newer stores use the block-based checkout, while older ones use the classic shortcode. Some payment, shipping, field-editor and COD plugins only support one of them. If checkout broke after a WooCommerce update or after switching checkout type, check each plugin's compatibility. You can switch the checkout page back to the classic shortcode while waiting for a plugin update, as long as you test it fully.</p>
 <p>Theme overrides matter too. If your theme has old copies of WooCommerce checkout templates, WooCommerce, Status shows them as outdated. Outdated templates can break fields or the payment section after an update.</p>
-
 <h2>Payment plugin issues</h2>
 <p>When the form submits but payment fails, or money is taken without an order appearing, focus on the gateway:</p>
 <ul>
@@ -71250,18 +71241,24 @@ or a cookie name starts with:
   <li>Check that your currency and the gateway account settings match.</li>
 </ul>
 <p>For Indian gateways such as UPI and card providers, <a href="/blog/woocommerce-payment-gateway-not-working-india/">WooCommerce payment gateway not working in India</a> covers gateway-specific checks. If payments succeed but orders do not appear in the admin, see <a href="/blog/woocommerce-orders-not-showing-fix/">WooCommerce orders not showing</a>.</p>
-
 <h2>SSL, mixed content, sessions and nonces</h2>
 <p>Checkout must load fully over https. If some scripts or images load over http, browsers may block them, which can break the payment form. Check the console for mixed content warnings and fix the URLs; <a href="/blog/mixed-content-warnings-fix/">how to fix mixed content warnings</a> walks through it.</p>
 <p>Session problems show up as "session expired" or carts that empty themselves. Common causes are caching, cookies blocked by a security setting, a site URL mismatch between www and non-www, or a full database table for sessions. Make sure the WordPress Address and Site Address settings match the URL buyers use.</p>
-
 <h2>Shipping, pincode and validation errors</h2>
 <p>Some checkout failures are not technical faults but rules blocking the order. "No shipping options were found" usually means the buyer's pincode, state or country does not fall into any shipping zone, or a zone has no method enabled. Check your zones and make sure there is a sensible fallback. Pincode checker and COD restriction plugins can also block orders if their lists are outdated or the buyer enters the pincode with a space.</p>
 <p>Validation errors that do not make sense, such as a phone number rejected even when it is correct, often come from a field editor plugin or custom code adding strict rules. Test with a ten-digit Indian mobile number with and without the country code, and adjust the rule if genuine numbers fail. Minimum order amounts, coupon restrictions and stock limits can also stop checkout; read the notice WooCommerce shows above the form, because it usually names the rule.</p>
-
+<h2>WooCommerce checkout slow: why it lags and what to fix</h2>
+<p>A slow checkout is a different problem from a broken one, but it loses sales in the same way. Checkout pages cannot be cached, so every load and every update runs WordPress, WooCommerce and your plugins on the server. Common reasons a WooCommerce checkout is slow:</p>
+<ul>
+<li><strong>Heavy shipping or pincode lookups:</strong> plugins that call a courier API each time the address changes can add a noticeable wait to every checkout refresh.</li>
+<li><strong>Too many scripts on checkout:</strong> sliders, chat widgets, popups and marketing tags loaded on every page also load on checkout. Remove what is not needed there.</li>
+<li><strong>Slow hosting or no object cache:</strong> uncached pages depend on raw server speed, so cheap shared hosting shows its limits most at checkout.</li>
+<li><strong>A large database:</strong> years of expired sessions, transients and old orders can slow the queries checkout runs.</li>
+<li><strong>Extra checkout fields and validation:</strong> each custom field plugin adds work on every update.</li>
+</ul>
+<p>Use Query Monitor on a staging copy to see which plugin adds the most time to checkout requests, then fix or replace that one first. Speeding up the server side also reduces timeouts that show up as checkout errors.</p>
 <h2>Signs it might be something worse</h2>
 <p>If checkout suddenly shows an extra card form, redirects to an unfamiliar payment page or customers report card fraud after buying, take it seriously. Card skimming malware targets WooCommerce checkout pages. <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce checkout skimmer malware</a> explains how to check and what to do.</p>
-
 <h2>A safe test routine</h2>
 <p>Whenever you update WooCommerce, the theme, the payment gateway or caching settings, run through this checklist:</p>
 <ul>
@@ -71272,10 +71269,8 @@ or a cookie name starts with:
   <li>Repeat on a phone over mobile data.</li>
 </ul>
 <p>Update on staging first for major versions, and keep a recent backup so you can roll back if checkout breaks.</p>
-
 <h2>When to get help</h2>
 <p>If the cause is not clear from the logs, or checkout is broken during a sale or festival campaign, it is usually cheaper to get help than to keep experimenting on a live store. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to diagnose and fix it, and set up a test routine so it does not happen again.</p>
-
 <h2>FAQs</h2>
 <h3>Why is my WooCommerce checkout not working?</h3>
 <p>The most common causes are cached checkout pages, JavaScript conflicts from optimisation or other plugins, payment gateway settings, mixed content and session problems. The browser console and WooCommerce logs usually show which.</p>
@@ -71287,7 +71282,8 @@ or a cookie name starts with:
 <p>Check the gateway dashboard and webhook settings, then the WooCommerce logs. Create the order manually for the customer and fix the callback so it does not happen again.</p>
 <h3>Can caching break WooCommerce checkout?</h3>
 <p>Yes. Cart, checkout and account pages must be excluded from page caching and CDN caching, or sessions and security tokens fail.</p>
-
+<h3>How do I fix a WooCommerce checkout error message?</h3>
+<p>Read the exact message, then check the browser console and WooCommerce, then Status, then Logs at the same time. Most checkout errors point to a payment plugin, a validation rule, an expired session or a caching problem, and the log usually names which.</p>
 <p>Checkout down or unreliable? <a href="/woocommerce-developer/">WooCommerce development and support</a> from Samverse can find the cause and test the fix with real orders.</p>
 `,
   },
@@ -71973,7 +71969,6 @@ or a cookie name starts with:
     body: `
 <p>If WooCommerce orders are not showing, first check the order list filters and the "Pending payment" and "Drafts" views, then check whether your store uses HPOS (High-Performance Order Storage) and whether sync is set correctly. If a customer has paid but no order exists, the payment gateway's callback probably failed. If orders exist but nobody received the email, that is an email delivery problem, not a missing order.</p>
 <p>This guide separates those three problems and walks through how to fix each.</p>
-
 <h2>Three different problems that look the same</h2>
 <table>
 <thead><tr><th>What you see</th><th>Likely problem</th><th>Where to look</th></tr></thead>
@@ -71985,7 +71980,6 @@ or a cookie name starts with:
 <tr><td>Order count wrong in reports or apps</td><td>Analytics cache or sync delay</td><td>WooCommerce Analytics settings</td></tr>
 </tbody>
 </table>
-
 <h2>WooCommerce orders not showing in admin: quick checks</h2>
 <ol>
 <li><strong>Check "All" orders,</strong> not just Processing. Orders on Pending payment, On hold, Failed or Cancelled are easy to miss.</li>
@@ -71995,7 +71989,6 @@ or a cookie name starts with:
 <li><strong>Clear the object cache</strong> if your host uses Redis or Memcached, and make sure admin pages are not page-cached.</li>
 <li><strong>Check user role:</strong> a shop manager account with restricted capabilities, or a plugin that limits order access, can hide orders.</li>
 </ol>
-
 <h2>HPOS and order sync issues</h2>
 <p>Newer WooCommerce versions store orders in their own database tables (HPOS) instead of the old posts table. During or after migration, mismatches can make orders appear missing in one place:</p>
 <ul>
@@ -72005,7 +71998,6 @@ or a cookie name starts with:
 <li>Do not switch storage modes on a live store without a full backup and a test on staging.</li>
 </ul>
 <p>The WordPress backup and restore guide covers taking a safe backup first, and staging sites explains testing changes.</p>
-
 <h2>Paid but no order: the gateway callback</h2>
 <p>When a customer pays through Razorpay, Cashfree, PayU or another gateway, the gateway must tell WooCommerce the payment succeeded. If that message fails, you can get a payment with no order, or an order stuck on Pending payment.</p>
 <ol>
@@ -72016,7 +72008,6 @@ or a cookie name starts with:
 <li>Check firewall, security plugin and Cloudflare rules that might block the gateway's requests.</li>
 </ol>
 <p>If the order exists as pending, confirm the payment in the gateway and update the status manually with a note. If there is no order at all, create it manually or refund, depending on what you and the customer agree. <a href="/blog/woocommerce-payment-gateway-not-working-india/">Fixing WooCommerce payment gateway problems in India</a> goes deeper into webhooks and gateway settings.</p>
-
 <h2>Checkout errors that stop orders being created</h2>
 <p>Sometimes the checkout fails before an order is created, often after an update. Signs include a spinning checkout button, a blank error message or customers saying they could not complete purchase.</p>
 <ul>
@@ -72025,7 +72016,6 @@ or a cookie name starts with:
 <li>Exclude cart, checkout and my-account pages from caching and script optimisation.</li>
 <li>Test for plugin conflicts on staging; <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">troubleshooting plugin conflicts</a> explains how.</li>
 </ul>
-
 <h2>Order emails not arriving</h2>
 <p>If orders exist but you or the customer did not get the email:</p>
 <ul>
@@ -72036,10 +72026,8 @@ or a cookie name starts with:
 <li>Use an email log plugin to see whether emails were sent and failed, or never sent.</li>
 </ul>
 <p>Many stores also add <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">SMS or WhatsApp order notifications</a> so the owner never misses a new order.</p>
-
 <h2>Customers cannot see orders in My Account</h2>
 <p>This usually happens when the order was placed as a guest, or with a different email from the account. Assign the order to the customer account from the order edit screen. Consider requiring account creation or linking guest orders by email, if it suits your store.</p>
-
 <h2>Orders missing from apps, reports and integrations</h2>
 <p>Sometimes orders are fine in WooCommerce but missing elsewhere: the mobile app, analytics reports, a shipping tool such as Shiprocket, an accounting sync or a CRM. Each has its own causes:</p>
 <ul>
@@ -72049,11 +72037,19 @@ or a cookie name starts with:
 <li><strong>HPOS compatibility:</strong> older integrations may not read orders from the new tables.</li>
 </ul>
 <p>A quick test is to change a test order's status manually and see whether it appears in the integration. If it does, the integration only reads certain statuses; if it does not, the connection itself is broken. When a single integration is the problem, check its own logs and support documentation before changing WooCommerce settings.</p>
-
 <h2>Scheduled tasks and stuck statuses</h2>
 <p>WooCommerce uses scheduled actions for tasks such as cancelling unpaid orders, sending some emails and syncing data. If WP-Cron is not running reliably, these tasks pile up and orders can sit in the wrong status. Check WooCommerce, Status, Scheduled Actions for many past-due or failed actions. WordPress cron explained covers how to set up a real server cron job so tasks run on time even on low-traffic stores.</p>
 <p>Also review the "Hold stock" setting under WooCommerce, Settings, Products, Inventory. If it is too short, unpaid orders may be cancelled before slower payments such as UPI or net banking complete, which looks to the customer like their order disappeared.</p>
-
+<h2>WooCommerce orders not showing after a migration, restore or update</h2>
+<p>A common time for orders to vanish is straight after a site move, a backup restore or a big WooCommerce update. The causes are different from a failed payment, so check these separately:</p>
+<ul>
+<li><strong>Restored an older backup:</strong> any orders placed after that backup was taken are not in the restored database. Export them from the gateway dashboard and recreate or record them before more orders arrive.</li>
+<li><strong>Migrated while the old site was still live:</strong> orders may have landed on the old server after the copy was made. Check the old database before cancelling the old hosting.</li>
+<li><strong>HPOS tables not copied:</strong> some migration tools miss the newer order tables. If the store uses HPOS and the order list is empty, confirm the order tables exist on the new server.</li>
+<li><strong>Webhooks still pointing at the old address:</strong> after a domain or URL change, update the webhook and callback URLs in your payment gateway so new payments reach the new site.</li>
+<li><strong>Cron not running on the new host:</strong> pending orders and emails may sit unprocessed until scheduled tasks work again.</li>
+</ul>
+<p>The safest pattern is to put the store into a short maintenance window during the final copy, so no orders arrive mid-move, and then place a real test order on the new server before switching DNS fully.</p>
 <h2>Preventing missing orders</h2>
 <ul>
 <li>Back up before every WooCommerce, plugin or storage change.</li>
@@ -72062,12 +72058,9 @@ or a cookie name starts with:
 <li>Use SMTP and an email log.</li>
 <li>Review orders against gateway payments regularly, especially pending ones. <a href="/blog/woocommerce-order-management-workflow/">An order management workflow</a> helps make this routine.</li>
 </ul>
-
 <h2>Getting help</h2>
 <p>Missing orders mean missed shipments and unhappy customers. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace the cause through logs, gateway records and settings and fix it properly. You can also <a href="/wordpress-shopify-developer-india/">hire a WooCommerce developer in India</a> for ongoing <a href="/wordpress-maintenance/">store maintenance</a>.</p>
-
 <p>Whatever the cause turns out to be, write down what happened, what you checked and what fixed it. A short incident note saves a lot of time if the same problem appears after a future update, and it gives a developer a useful starting point if you need outside help. Keep a list of orders you corrected manually so you can check they were shipped and invoiced properly.</p>
-
 <h2>FAQs</h2>
 <h3>Why are WooCommerce orders not showing in my dashboard?</h3>
 <p>Usually because of status filters, pending payment or draft views, HPOS sync settings, caching or user role limits. Check All orders and clear filters first.</p>
@@ -72081,7 +72074,6 @@ or a cookie name starts with:
 <p>If the order exists in the database, yes, by fixing filters or sync. If it was never created, you can create it manually from the gateway payment details.</p>
 <h3>Why are WooCommerce orders showing as pending payment?</h3>
 <p>Pending payment means the order was created but WooCommerce never received the payment confirmation. The customer may have left the gateway page, or the gateway callback or webhook is failing. Check the payment in your gateway dashboard before marking it paid by hand.</p>
-
 <p>Orders going missing? A <a href="/woocommerce-developer/">WooCommerce developer</a> can find out why and stop it happening again.</p>
 `,
   },
