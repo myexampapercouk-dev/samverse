@@ -4042,15 +4042,15 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'temple-ngo-website-online-donations',
-    seoTitle: 'Online Donations for Temple & NGO Websites: Setup Guide',
-    title: 'How to Set Up Online Donations on a Temple, Trust or NGO Website: Gateways, UPI, Receipts and Monthly Giving',
-    description: 'Set up online donations for a temple, trust or NGO website in India: Razorpay, Cashfree, PayU or Instamojo onboarding, UPI QR, receipts and monthly giving.',
+    seoTitle: 'Online Donation to Temples: How to Set It Up on Your Site',
+    title: 'Online Donation to Temples, Trusts and NGOs: How to Set Up Online Donations on Your Website',
+    description: 'Set up online donation to temples, trusts or NGOs in India: Razorpay, Cashfree, PayU or Instamojo, UPI QR, seva and puja bookings, receipts and monthly giving.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['website-for-temples-and-ngos', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
-<p>To accept online donations on a temple, trust or NGO website: gather your registration documents and a bank account in the organisation's name, apply to a payment gateway such as Razorpay, Cashfree, PayU or Instamojo, add the policy pages gateways check, build a donation form with suggested amounts and purposes, and send an automatic acknowledgement after each payment. Add a UPI QR code for devotees at the temple, test everything in the gateway's test mode, then make a small real donation before you announce it.</p>
+<p>To accept online donation to temples, trusts or NGOs on your own website, gather your registration documents and a bank account in the organisation's name, apply to a payment gateway such as Razorpay, Cashfree, PayU or Instamojo, add the policy pages gateways check, and build a donation form with suggested amounts and purposes. Send an automatic acknowledgement after each payment, add a UPI QR code for devotees at the temple, test everything in the gateway's test mode, then make a small real donation before you announce it.</p>
 <p>This is the hands-on setup, step by step. If you'd like it done for you as part of a complete site, with timings, events, donations and receipts, see my <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a>. For the tax side in more depth, <a href="/blog/ngo-website-donations-80g/">80G receipts, FCRA and payment setup</a> covers what your CA will ask about.</p>
 
 <h2>UPI QR, payment gateway or bank details?</h2>
@@ -4157,6 +4157,15 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li>Link the donation page from your Google Business Profile, WhatsApp channel and social pages.</li>
 </ul>
 
+<h2>Temple-specific donations: seva, puja and annadanam</h2>
+<p>Devotees often want to give for a specific purpose rather than a general fund. List the main options as separate choices on the donation form, for example annadanam, a seva or puja on a chosen date, festival contributions, gau seva or building and renovation. For a dated seva, collect the devotee's name, gotra if your temple uses it, the date and whether prasad should be posted, and confirm the booking by email or WhatsApp. Keep the wording clear about what each amount covers and what happens if a date is unavailable. The <a href="/blog/website-for-pandit-puja-services/">guide to puja booking websites</a> covers booking by date in more detail.</p>
+
+<h2>Donations from devotees abroad</h2>
+<p>Many temples have devotees outside India who want to give online. Foreign contributions usually need FCRA registration and a designated bank account, so check the current rules with your CA before accepting them, and ask your gateway whether international cards can be limited to your FCRA account. Until then, say clearly on the donation page that only Indian payments are accepted.</p>
+
+<h2>Keeping devotees informed after they give</h2>
+<p>Trust grows when donors see what happened next. Post a short update after each festival or project, share photos of annadanam or renovation work, and publish an annual summary of how funds were used if the trust is comfortable doing so. A simple email or WhatsApp list of past donors also brings people back for the next festival.</p>
+
 <h2>FAQs</h2>
 <h3>How can a temple accept online donations?</h3>
 <p>Register with a payment gateway using the trust's documents and bank account, add a donation form to the website with suggested amounts and purposes, send automatic receipts, and display a merchant UPI QR code for devotees at the temple.</p>
@@ -4170,6 +4179,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>Only with FCRA registration, and foreign contributions must be received in the designated FCRA account. Without it, block international payments and ask donors to confirm they're Indian citizens. Confirm with your CA.</p>
 
 <p>Want donations, receipts and monthly giving set up and tested end to end? See what's included in a <a href="/website-for-temples-and-ngos/">temple, trust or NGO website</a>.</p>
+<h3>How can devotees donate online to a temple for a specific seva or puja?</h3>
+<p>Add each seva or puja as a separate option on the donation form, with the date, devotee details and any prasad delivery, and confirm the booking automatically after payment so the temple office can plan it.</p>
 `,
   },
   {
@@ -13778,15 +13789,15 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
   },
   {
     slug: 'faq-page-seo',
-    seoTitle: 'How to Write an FAQ Page: Good FAQs That Rank and Sell',
-    title: 'FAQ Page SEO: How to Write FAQs for SEO on Service, Sales and Local Pages',
-    description: 'How to write an FAQ page step by step: find real questions, write a good FAQ answer first, structure it for SEO and AI search, and keep FAQs useful.',
+    seoTitle: 'FAQ SEO: How to Write FAQs for SEO and Sales Pages',
+    title: 'FAQ SEO: How to Write FAQ Pages and FAQs for SEO on Service, Sales and Local Pages',
+    description: 'FAQ SEO step by step: are FAQs good for SEO, a separate FAQ page or FAQs on each page, how to write an FAQ for a sales page, and FAQ schema today.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
-<p>To write an FAQ page, collect the real questions customers ask you on calls, WhatsApp and email, answer each one directly in the first sentence, and group them under clear topics. A good FAQ removes a doubt that stops someone enquiring or buying; a bad one repeats the sales pitch as a question nobody asked.</p>
+<p>FAQ SEO means writing FAQs that answer the real questions customers ask, in the words they search, on the page where the doubt comes up. To write an FAQ page, collect the questions people ask you on calls, WhatsApp and email, answer each one directly in the first sentence, and group them under clear topics. A good FAQ removes a doubt that stops someone enquiring or buying; a bad one repeats the sales pitch as a question nobody asked.</p>
 <p>Done well, FAQs also help search engines and AI assistants understand exactly what you offer. This guide covers the steps, the wording and where to place them.</p>
 <p>This guide covers how to choose the right questions, how to write a good FAQ answer, how FAQs work on service, sales and local business pages, and what FAQ schema does and doesn't do today, with examples.</p>
 
@@ -13897,6 +13908,18 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 </ul>
 <p>On WordPress, many SEO plugins and FAQ blocks add the markup for you. Check the output with the Rich Results Test or Schema Markup Validator; see testing structured data and <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
 
+<p>Answer-first writing also suits people who ask their phones questions out loud; see voice search for local businesses.</p>
+
+<h2>FAQ pages for SEO: a quick checklist</h2>
+<ul>
+<li>Each question uses the searcher's own phrasing, ideally taken from Search Console or your enquiries.</li>
+<li>The first sentence of each answer answers it; detail follows.</li>
+<li>Every answer is visible on the page, not hidden behind scripts that load later.</li>
+<li>No question repeats across many pages with the same answer.</li>
+<li>Answers link to the service, pricing or policy page with the full detail.</li>
+<li>Questions are reviewed when prices, delivery times or policies change.</li>
+</ul>
+
 <p>Answer-first writing also suits people who ask their phones questions out loud; see <a href="/blog/voice-search-local-seo/">voice search for local businesses</a>.</p>
 
 <h2>FAQs</h2>
@@ -13913,12 +13936,12 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 <h3>How do you write a good FAQ?</h3>
 <p>Use a question your customers actually ask, written in their words, and answer it in the first sentence. Then add the detail, conditions or next step, and link to a fuller page if one exists. Keep it short enough to read on a phone.</p>
 
-<h3>How do I create awesome FAQs?</h3>
-<p>Start from real enquiries rather than guesses, answer honestly including the limits and conditions, and group them so people find their question quickly. AI tools can help tidy wording, but the questions and facts should come from your own business.</p>
 <h3>How do I write an FAQ page?</h3>
 <p>Collect real customer questions, group them by topic, answer each directly in the first sentence, link to deeper pages and add a contact option at the end. Review the page whenever your prices, policies or processes change.</p>
 
 <p>Want FAQs written and structured properly on your service pages? <a href="/wordpress-seo-services/">WordPress SEO services</a> cover question research, page structure and schema, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to build them into your site.</p>
+<h3>Are FAQs good for SEO?</h3>
+<p>Yes, when they answer genuine questions clearly. They help a page match more of the ways people search and give search engines and AI assistants direct answers to quote. Filler FAQs written only for keywords add nothing.</p>
 `,
   },
   {
@@ -30664,7 +30687,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     slug: 'compare-website-quotes',
     seoTitle: 'Why Are Website Quotes Different? How to Compare Them',
     title: 'Why Are Website Quotes So Different? How to Compare Website Quotes Fairly',
-    description: 'Why are website quotes different? Each one prices a different job. Compare quotes in India line by line, with a checklist, 3-year costs and red flags.',
+    description: 'Why are website quotes different? Each one prices a different job. How to compare website quotes in India line by line, with a checklist and 3-year costs.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'Pricing',
@@ -30789,6 +30812,21 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 
 <p>Comparing developers in a particular city? The <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page has local notes for Mumbai, Delhi NCR, Bengaluru, Pune and other cities.</p>
 
+
+
+<p>Comparing developers in Pune, Mumbai, Delhi NCR, Bengaluru or another city? The checks are the same everywhere: live sites you can open, a written scope, and logins in your name. There are local notes for <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developers across India</a>.</p>
+
+<h2>How to compare website quotes: a quick checklist</h2>
+<ul>
+<li>Same brief: every developer priced the same pages, features and content.</li>
+<li>Same lines: design, development, content, SEO setup, testing, training and support listed separately.</li>
+<li>Exclusions: what is not included, in writing, so it cannot appear later as an extra.</li>
+<li>Ownership: domain, hosting, theme licences and admin logins in your name.</li>
+<li>Three-year total: build plus renewals, licences and maintenance.</li>
+<li>Proof: live sites you can open and a clear point of contact.</li>
+</ul>
+<p>If you still want a lower price, negotiate scope rather than rate: drop a feature, reduce unique templates, phase the work or supply your own content and photos.</p>
+
 <p>Comparing developers in Pune? See <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>, from checking live sites to who owns the logins.</p>
 
 <p>Comparing developers outside Pune? There are local notes for <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-india/">other Indian cities</a>.</p>
@@ -30804,10 +30842,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>It should state clearly whether GST is included or added. If the developer is GST-registered, ask for a tax invoice; if you are registered, your CA can tell you whether you can claim the input credit.</p>
 <h3>What should a website quotation include?</h3>
 <p>A page list, the number of unique layouts, features, design approach and revision rounds, who supplies content, exclusions, a timeline with milestones, the price with GST status, payment terms, what you receive at handover and how out-of-scope changes are priced.</p>
-<h3>Can I negotiate a website quote?</h3>
-<p>Negotiate scope rather than rate. Dropping a feature, reducing unique templates, phasing the work or supplying your own content and photos lowers the price without asking anyone to do the same work for less.</p>
-
 <p>Want a quote that is easy to compare? Send your requirements and you'll get a written scope with inclusions, exclusions, a fixed price and a timeline after a free review; see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
+<h3>How do I compare website quotes?</h3>
+<p>Send the same written brief to each developer, list every quote line by line in one sheet, note what each one excludes, then compare the three-year cost and the quality of their live work. Negotiate scope, not rate, if the best quote is over budget.</p>
 `,
   },
   {
@@ -31218,9 +31255,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'outsource-wordpress-development-india',
-    seoTitle: 'Outsource WordPress Development India: Process & Pricing',
-    title: 'Outsource WordPress Development to India: A Practical Guide for Agencies and Businesses',
-    description: 'Outsource WordPress development to India safely: which projects suit it, the process, white-label and NDAs, time zones, pricing models and red flags.',
+    seoTitle: 'Outsource WordPress Development India: Process and Pricing',
+    title: 'Outsource WordPress Development to India: A Practical Guide for Agencies, Resellers and Businesses',
+    description: 'Outsource WordPress development to India safely: which projects suit it, the process, white-label reselling, NDAs, time zones, pricing models and red flags.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'Agencies',
@@ -31356,6 +31393,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Going quiet for days mid-project, or passing the work to someone else without telling you</li>
 </ul>
 
+<h2>Resell WordPress development under your own brand</h2>
+<p>Many agencies outsource WordPress development to India so they can resell it: they sell the website to their client, and the developer builds it white-label behind the scenes. For that to work, the partner never contacts your client, uses your staging domain and accounts, writes handover notes you can send as your own, and keeps the code and logins in your client's name. Agree your margin and the developer's fixed price separately, so you can quote your client with confidence. The <a href="/blog/wordpress-reseller-for-marketing-agencies/">WordPress reseller guide for marketing agencies</a> covers pricing the resale and support afterwards.</p>
+
 <h2>FAQs</h2>
 
 <h3>Is it safe to outsource WordPress development to India?</h3>
@@ -31368,12 +31408,14 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>It depends on the work. For well-briefed builds, design conversions, WooCommerce and maintenance, an experienced Indian developer gives you capacity at competitive rates with useful time-zone overlap. Work that needs daily in-person client contact is often easier to keep local.</p>
 
 <h3>What kind of WordPress outsourcing projects work best?</h3>
-<p>Projects with a clear brief and a clear finish line: <a href="/figma-to-wordpress/">Figma to WordPress builds</a>, landing pages, WooCommerce stores, speed fixes, maintenance and well-specified custom plugins. Early brand and design exploration is harder to outsource.</p>
+<p>Projects with a clear brief and a clear finish line: Figma to WordPress builds, landing pages, WooCommerce stores, speed fixes, maintenance and well-specified custom plugins. Early brand and design exploration is harder to outsource.</p>
 
 <h3>What makes a good first project?</h3>
 <p>Something small and well defined, such as a landing page or a few page templates from your designs. It shows you the developer's communication, accuracy and code quality before you hand over a major client.</p>
 
 <p>Looking for someone in a particular city? See the <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify developer in India</a> page, with notes for Mumbai, Delhi NCR, Bengaluru, Hyderabad and more.</p>
+<h3>Can I resell outsourced WordPress development under my agency's name?</h3>
+<p>Yes. That is what white-label work means: the developer builds and supports the site, and you present it, invoice it and own the client relationship. Put confidentiality, non-solicitation and code ownership in the agreement.</p>
 
 <h2>Working with me</h2>
 <p>I'm a freelance WordPress developer based in Pune, India. I work white-label for agencies under NDA: Figma, XD and PDF designs built in Elementor or the block editor, WooCommerce stores, speed fixes and ongoing maintenance, with fixed quotes and direct communication. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> for how it works, or send me your next brief for a quote.</p>
@@ -32431,7 +32473,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     slug: 'hotel-booking-engine-channel-manager',
     seoTitle: 'Booking Engine Channel Manager: How Hotel Systems Connect',
     title: 'Booking Engine vs Channel Manager: How a Hotel Booking Engine, Channel Manager and PMS Work Together',
-    description: 'Booking engine channel manager guide for hotels in India: what each does, how they sync with your PMS and OTAs, a setup checklist and overbooking fixes.',
+    description: 'Booking engine channel manager guide for hotels in India: what each does, how they sync with your PMS and OTAs, the direct and OTA mix, and overbooking fixes.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'Industries',
@@ -32568,6 +32610,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 
 <p>Hotels and guest houses in Uttar Pradesh can read about <a href="/wordpress-shopify-developer-lucknow/">website development in Lucknow</a>, including booking engine integration.</p>
 
+<h2>Channel manager and direct bookings: getting the mix right</h2>
+<p>A channel manager does not replace direct bookings; it protects them. Because it keeps your booking engine in the same inventory pool as the OTAs, you can let OTAs bring new guests while your website captures returning guests, corporate stays and people who found you on Google Maps. Keep rates consistent across channels, then give a fair reason to book direct, such as a flexible cancellation policy, breakfast or an early check-in request. Watch the share of bookings from each channel every month and adjust OTA allocations rather than closing them suddenly.</p>
+
 <h2>FAQs</h2>
 
 <h3>What is the difference between a booking engine and a channel manager?</h3>
@@ -32586,6 +32631,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Many booking engines used in India support UPI through an integrated payment gateway. Confirm which gateways are supported and where the money settles before you sign.</p>
 
 <p>Planning a new hotel or homestay website, or want your booking engine to sit properly inside the one you have? I build fast, mobile-friendly hotel websites designed around direct bookings. See <a href="/hotel-website-design/">hotel website design</a>.</p>
+<h3>How do a PMS, channel manager and booking engine work together?</h3>
+<p>The PMS holds rooms, guests and billing, the channel manager pushes availability and rates to OTAs and pulls their bookings back, and the booking engine sells direct on your website. With two-way sync, a booking anywhere updates the inventory everywhere.</p>
 `,
   },
   {
@@ -35329,14 +35376,14 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   {
     slug: 'migrate-website-to-hostinger',
     seoTitle: 'Hostinger Site Migration: Move WordPress Without Downtime',
-    title: 'Website Migration to Hostinger: How to Move a WordPress Site Without Downtime (3 Methods)',
+    title: 'Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)',
     description: 'Hostinger site migration step by step: hPanel\'s migration tool, plugins or a manual move, testing before DNS changes, keeping email working and SSL.',
     date: '2026-09-28',
-    updated: '2026-10-27',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-maintenance', 'website-redesign'],
     body: `
-<p>For a website migration to Hostinger without downtime, copy the site to your Hostinger account first, using hPanel's website migration tool, a plugin such as All-in-One WP Migration, or a manual files-and-database move. Test it on Hostinger before your domain points there, recreate your email DNS records, then switch the nameservers or A record. Once the domain resolves to Hostinger, let the free SSL certificate issue, run final checks and keep the old hosting for a week or two as a fallback.</p>
+<p>A Hostinger site migration without downtime works like this: copy the site to your Hostinger account first, using hPanel's website migration tool, a plugin such as All-in-One WP Migration, or a manual files-and-database move, and test it on Hostinger before your domain points there. Then recreate your email DNS records and switch the nameservers or A record. Once the domain resolves to Hostinger, let the free SSL certificate issue, run final checks and keep the old hosting for a week or two as a fallback.</p>
 <p>Done in that order, visitors never see a broken site and email keeps flowing. This guide covers each method, testing, DNS, email, the checks I run afterwards and moving from SiteGround specifically. If you'd rather hand it over, see my <a href="/wordpress-migration/">WordPress migration service</a>.</p>
 
 <h2>Before you start: pre-migration checklist</h2>
@@ -35447,6 +35494,20 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   <li>Check whether your email or DNS is hosted at SiteGround, and move those deliberately before cancelling</li>
 </ul>
 
+<h2>Website migration to Hostinger: which method to choose</h2>
+<table>
+<thead><tr><th>Your site</th><th>Best method</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Small brochure site with an admin login on the old host</td><td>hPanel migration tool</td><td>Hostinger does the copying; you test and switch DNS</td></tr>
+<tr><td>Medium site, blog or small WooCommerce store</td><td>Migration plugin</td><td>One export file, quick import, easy to repeat if needed</td></tr>
+<tr><td>Large media library, big database or custom setup</td><td>Manual move</td><td>Avoids upload and timeout limits and gives full control</td></tr>
+<tr><td>Live store taking orders daily</td><td>Manual or plugin, with a short order freeze</td><td>No orders are lost between the copy and the switch</td></tr>
+</tbody>
+</table>
+
+<h2>Migrating a WooCommerce store to Hostinger</h2>
+<p>A store needs one extra step: orders placed on the old host after you copy the site would be lost. Choose a quiet time, put the shop in maintenance mode or pause checkout for a short window, take the final copy, switch DNS and reopen. After the move, place a test order with each payment method, confirm that order emails arrive, and check that payment gateway webhooks such as Razorpay or Cashfree point to the right URL and still return success. If you also use Shiprocket or another shipping plugin, confirm its API connection after the switch.</p>
+
 <h2>FAQs</h2>
 <h3>Does Hostinger migrate websites for free?</h3>
 <p>At the time of writing, Hostinger offers free website migration with many of its hosting plans, through the migration tool in hPanel. Check Hostinger's current offer and the terms for your plan, and test the result yourself before switching DNS, because a copied site still needs checking.</p>
@@ -35460,6 +35521,8 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 <p>No. You can keep the domain registered where it is and just point it to Hostinger with nameservers or an A record. Transferring the registration is optional and can be done later, separately from the website move.</p>
 
 <p>Want the move done for you, with the site tested before the switch, email records preserved and the old hosting kept as a fallback? See <a href="/wordpress-migration/">WordPress migration</a>, and if you're still choosing a host, read <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>.</p>
+<h3>Can I migrate a non-WordPress website to Hostinger?</h3>
+<p>Yes. Static HTML sites are moved by uploading the files in File Manager or by FTP; sites built on other platforms such as Wix cannot be copied directly and must be rebuilt. Domain, DNS and email steps are the same.</p>
 `,
   },
   {
@@ -71895,8 +71958,8 @@ or a cookie name starts with:
   {
     slug: 'wordpress-multisite-seo',
     seoTitle: 'WordPress Multisite SEO: Sitemaps, Canonicals and Hreflang',
-    title: 'WordPress Multisite SEO: Sitemaps, Search Console, Canonicals and Hreflang',
-    description: 'WordPress multisite SEO explained: subdomains vs subfolders, a per-site settings audit, sitemaps, Search Console, duplicate content, hreflang, splitting.',
+    title: 'WordPress Multisite SEO: Sitemaps, Search Console, Canonicals and Hreflang for Multi Site WordPress',
+    description: 'WordPress multisite SEO explained: subdomains vs subfolders, per-site plugin settings, sitemaps, Search Console, duplicate content, hreflang and speed.',
     date: '2026-10-11',
     updated: '2026-10-30',
     category: 'SEO',
@@ -72004,6 +72067,18 @@ done</code></pre>
 <li>Fast, secure, shared hosting and plugins tested on staging.</li>
 </ol>
 
+<h2>Is your multisite network hurting rankings? Signs to check</h2>
+<p>Multisite rarely causes ranking problems on its own, but a few symptoms point to a network-level issue rather than a content one:</p>
+<ul>
+<li>A subsite shows few or no pages in Search Console's indexing report, often because &quot;discourage search engines&quot; was left on after launch.</li>
+<li>Several subsites rank for the same query in turn, which suggests near-duplicate pages competing with each other.</li>
+<li>Google picks a canonical on another subsite instead of the page you wanted.</li>
+<li>Crawl stats show slow response times across every site at once, which usually points to shared hosting or database load.</li>
+<li>Sitemaps for one subsite list URLs from another, a sign of a misconfigured domain mapping or plugin.</li>
+</ul>
+<p>Fix these per site, then request indexing for the key pages. If speed is the issue, the steps in <a href="/blog/wordpress-multisite-slow/">why WordPress multisite gets slow</a> apply to the whole network.</p>
+<p>Franchise and branch networks deserve one more check: if each branch site uses the same service text with only the city name changed, Google may treat them as near-duplicates and show only one. Give each branch its own team, photos, reviews, services and local details, or merge thin branches into location pages on the main site.</p>
+
 <h2>FAQs</h2>
 <h3>How do I do multi site WordPress SEO?</h3>
 <p>Treat each site as its own website: configure the SEO plugin, sitemap, Search Console property and content per site, then audit every site's settings regularly, because network-level changes and new sites often leave one site misconfigured.</p>
@@ -72015,10 +72090,9 @@ done</code></pre>
 <p>Yes. Each site produces its own sitemap; submit each one in Search Console and check it only lists that site&apos;s indexable URLs.</p>
 <h3>How do I avoid duplicate content across multisite sites?</h3>
 <p>Write unique content for each site, add genuine local or brand details, and use canonical tags when the same content must appear on more than one site.</p>
-<h3>Should franchise branches use multisite?</h3>
-<p>It can work well when head office manages all branch sites centrally. If franchisees need control or different features, separate installs may be simpler.</p>
-
 <p>If you run a multisite network and want its SEO checked or cleaned up, I handle this through <a href="/wordpress-seo-services/">WordPress SEO services</a>, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for setup, migration or splitting sites out.</p>
+<h3>Does WordPress multisite slow down SEO?</h3>
+<p>Only if the network is slow or misconfigured. A shared server under strain slows every subsite, which can affect crawling and Core Web Vitals. Size hosting for the whole network, add object caching, and check each site's response time.</p>
 `,
   },
   {
@@ -72155,15 +72229,15 @@ done</code></pre>
   },
   {
     slug: 'wordpress-multisite-slow',
-    seoTitle: 'WordPress Multisite Slow? Causes and How to Fix Networks',
-    title: 'WordPress Multisite Slow? Why Networks Slow Down and How to Fix It',
-    description: 'WordPress multisite slow? Find the cause: shared hosting limits, network-wide plugins, bloated tables, missing object cache or cron, and how to fix each.',
+    seoTitle: 'WordPress Multisite Slow? How to Speed Up a Network',
+    title: 'WordPress Multisite Slow? Why Networks Slow Down and How to Speed Up WordPress Multisite',
+    description: 'WordPress multisite slow? How to speed up WordPress multisite: hosting limits, network-wide plugins, bloated tables, object cache, cron and safe fixes.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-10-30',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance'],
     body: `
-<p>If your WordPress multisite is slow, the cause is usually something shared across the whole network: hosting that wasn't sized for many sites, plugins activated network-wide, a database with thousands of tables and bloated options, no persistent object cache, or scheduled tasks piling up on every subsite. Because all sites run on one codebase, one database and one server, a problem on one subsite often slows the others too. Start by measuring server response time on a few subsites and finding which plugins load everywhere.</p>
+<p>If your WordPress multisite is slow, the cause is usually something shared across the whole network: hosting that wasn't sized for many sites, plugins activated network-wide, a database with thousands of tables and bloated options, no persistent object cache, or scheduled tasks piling up on every subsite. To speed up WordPress multisite, measure server response time on a few subsites, find which shared resource is the bottleneck and fix that first. Because all sites run on one codebase, one database and one server, a problem on one subsite often slows the others too.</p>
 <p>This guide explains why networks slow down, how to diagnose the bottleneck and the fixes that usually help most. If you are still deciding whether multisite is right at all, read <a href="/blog/wordpress-multisite-when-needed/">WordPress multisite: when a business needs it</a> first.</p>
 
 <h2>Why WordPress multisite gets slow</h2>
@@ -72247,7 +72321,23 @@ done</code></pre>
 <p>Sometimes slowness is a sign that the network should be split. If subsites have very different traffic, plugins and owners, or one large shop shares a network with many small sites, separate installations may be faster and easier to maintain. Splitting a site out of multisite is a migration project, so plan it with backups and redirects. Before deciding, compare the effort of maintaining one network against several separate sites, including updates, security monitoring and who manages each site day to day.</p>
 
 <h2>Getting a network fixed</h2>
-<p>Multisite speed work needs care, because each change touches every site in the network. A speed audit covering hosting, plugins, caching, database and cron, carried out on staging first, is part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>. Agencies running client networks can also use <a href="/wordpress-developer-for-agencies/">white-label WordPress development for agencies</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> directly.</p>
+<p>Multisite speed work needs care, because each change touches every site in the network. A speed audit covering hosting, plugins, caching, database and cron, carried out on staging first, is part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>. Agencies running client networks can also use white-label WordPress development for agencies, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> directly.</p>
+
+<h2>How to speed up WordPress multisite: a quick checklist</h2>
+<ol>
+<li>Record server response time (TTFB) for the main site and three busy subsites, logged out and logged in.</li>
+<li>List network-activated plugins and move any that only some sites need to per-site activation.</li>
+<li>Turn on a persistent object cache such as Redis, with a separate key prefix for the network.</li>
+<li>Delete spam and archived subsites you no longer need, and clean expired transients and autoloaded options.</li>
+<li>Switch WP-Cron to a real server cron that loops through subsites.</li>
+<li>Update PHP to a supported version and check memory and worker limits.</li>
+<li>Add page caching that understands multisite, and a CDN for images and static files.</li>
+<li>Measure again and compare with your first numbers.</li>
+</ol>
+<p>Work on a staging copy and keep a full backup, because a network-wide change affects every subsite at once.</p>
+
+<h2>Multisite on Indian hosting</h2>
+<p>Many Indian businesses start a network on a shared hosting plan bought for one site. That is often where the slowdown begins: the plan's CPU, memory and process limits are shared by every subsite, so one busy site or a heavy import slows the rest. Choose a data centre close to your visitors (Mumbai or Singapore for most Indian audiences), check whether Redis is available, and move to a VPS or managed plan once the network grows. A slow network also hurts search, so pair speed work with the checks in <a href="/blog/wordpress-multisite-seo/">WordPress multisite SEO</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why is my WordPress multisite slow?</h3>
@@ -72262,6 +72352,8 @@ done</code></pre>
 <p>Use Query Monitor on a staging copy to see slow queries by plugin, and test by moving network-activated plugins to per-site activation one at a time.</p>
 
 <p>Running a slow network? A careful, staging-first speed audit is part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
+<h3>How do I speed up WordPress multisite?</h3>
+<p>Measure TTFB first, then reduce network-activated plugins, add a persistent object cache, clean the database, replace WP-Cron with a server cron, update PHP and size hosting for the whole network. Test each change on staging.</p>
 `,
   },
   {
