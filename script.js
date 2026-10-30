@@ -155,7 +155,11 @@ document.addEventListener("click", e => {
   const a = e.target.closest("a[href]");
   if (!a || typeof gtag !== "function") return;
   const href = a.getAttribute("href");
-  if (href.startsWith("https://wa.me")) gtag("event", "contact_whatsapp", { link_text: a.textContent.trim() });
+  // Which box the click came from, so we can see which calls to action bring leads
+  const box = a.closest(".inline-cta, .post-cta, .side-cta, .wa-float, .hero, header, footer");
+  const placement = box ? (box.classList[0] || box.tagName.toLowerCase()) : "body";
+  if (href === "#contact" || href.endsWith("/#contact")) gtag("event", "cta_quote_click", { placement });
+  if (href.startsWith("https://wa.me")) gtag("event", "contact_whatsapp", { link_text: a.textContent.trim(), placement });
   else if (href.startsWith("tel:")) gtag("event", "contact_call");
   else if (href.startsWith("mailto:")) gtag("event", "contact_email");
   else if (a.classList.contains("work-card")) gtag("event", "portfolio_click", { site: new URL(href, location.href).pathname });
