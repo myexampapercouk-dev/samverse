@@ -6094,16 +6094,40 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'whatsapp-on-business-website',
-    seoTitle: 'WhatsApp Business Chat on Your Website: How to Add It',
+    seoTitle: 'WhatsApp Business Chat on Website: Free Setup Guide',
     title: 'How to Add WhatsApp to Your Business Website: Click-to-Chat Links, Buttons, Tracking and the API',
-    description: 'Add WhatsApp Business chat to your website with wa.me links and pre-filled messages, choose between the app and the API, and track WhatsApp clicks in GA4.',
+    description: 'Add WhatsApp Business chat on website pages for free: wa.me links, floating buttons, WordPress plugins, pre-filled messages, click tracking and the API.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'Growth',
     related: ['wordpress-website-development', 'landing-page-design', 'website-for-restaurants'],
     body: `
-<p>The simplest way to add WhatsApp chat to a business website is a click-to-chat link: https://wa.me/ followed by your full number with the country code (no plus sign, spaces, dashes or leading zero), optionally with a pre-filled message. Put that link behind a "Chat on WhatsApp" button next to your main calls to action and in a small floating button on mobile. It's free, needs no API, and works with the ordinary WhatsApp Business app.</p>
+<p>To add WhatsApp Business chat on website pages, create a click-to-chat link (https://wa.me/ followed by your full number with country code, no plus sign, spaces or leading zero) and place it behind a "Chat on WhatsApp" button next to your main calls to action. It is free, needs no API and works with the ordinary WhatsApp Business app on your phone.</p>
+<p>On mobile, add a small floating button too, and use a pre-filled message per page so every chat arrives with context. The steps below cover the link, placement, WordPress, tracking and when the API is worth it.</p>
 <p>For most small businesses that's all you need. The WhatsApp Business API only matters when a team shares one number, you want automation, or message volumes are high. A WhatsApp button with page-specific messages is included in the websites I build through <a href="/wordpress-website-development/">WordPress website development</a>, and in every <a href="/landing-page-design/">landing page</a> alongside the lead form.</p>
+
+<h2>WhatsApp business chat on website: the options compared</h2>
+<table>
+<thead><tr><th>Option</th><th>Cost</th><th>Best for</th><th>Watch out for</th></tr></thead>
+<tbody>
+<tr><td>wa.me link on a button</td><td>Free</td><td>Most small businesses</td><td>Number format must be exact</td></tr>
+<tr><td>Floating WhatsApp button</td><td>Free (code or light plugin)</td><td>Mobile visitors on every page</td><td>Covering other buttons or cookie bars</td></tr>
+<tr><td>WordPress chat plugin</td><td>Free or paid versions</td><td>Several agents, opening hours, per-page messages</td><td>Heavy scripts that slow the site</td></tr>
+<tr><td>Form that opens WhatsApp</td><td>Free to low cost</td><td>Collecting name and need before the chat</td><td>Asking for too many fields</td></tr>
+<tr><td>WhatsApp Business API with a provider</td><td>Paid per provider and per conversation</td><td>Shared inbox, chatbots, order updates</td><td>Setup time, approvals and running costs</td></tr>
+</tbody>
+</table>
+<p>Start with the free link and button. Move to a plugin or the API only when volume or team size makes the phone app hard to manage.</p>
+<h3>Quick checklist before you go live</h3>
+<ul>
+<li>Number in international format, tested on Android, iPhone and desktop.</li>
+<li>Button text says what happens: "Chat on WhatsApp", not just an icon.</li>
+<li>Pre-filled message names the page or service.</li>
+<li>Button doesn't hide the call button, cart or cookie banner on mobile.</li>
+<li>Click event tracked in Google Analytics.</li>
+<li>Greeting and away messages set in the WhatsApp Business app.</li>
+<li>Someone is responsible for replying during business hours.</li>
+</ul>
 
 <h2>Step 1: Build your click-to-chat link</h2>
 <p>The link format is the same whether you use the free app or the API:</p>
@@ -6197,9 +6221,11 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 </ul>
 <p>If you're also running ads, compare sending people straight to a chat with sending them to a page first; see <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs a landing page</a>.</p>
 
+<p>Wondering about chatbots instead? Read <a href="/blog/website-chatbot-worth-it/">do you need a chatbot?</a></p>
+
 <h2>FAQs</h2>
-<h3>How do I add WhatsApp Business chat to my website?</h3>
-<p>Create a wa.me link with your number in international format and an optional pre-filled message, then add it to a button on your key pages and a floating icon, either in your page builder or with a lightweight plugin. Test it on a phone and a desktop.</p>
+<h3>What is the best way to add WhatsApp business chat on website pages?</h3>
+<p>Use a free wa.me click-to-chat link with your number in international format and a pre-filled message, placed on a clear button beside your main call to action and as a floating button on mobile. In WordPress you can add it in the block editor, your theme or a light plugin.</p>
 <h3>What is the wa.me link format?</h3>
 <p>https://wa.me/ followed by the country code and number with no plus sign, spaces or leading zero, for example https://wa.me/91XXXXXXXXXX. Add ?text= followed by a URL-encoded message to pre-fill the chat.</p>
 <h3>Is adding WhatsApp to a website free?</h3>
@@ -6211,7 +6237,7 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 <h3>How do I track WhatsApp clicks in Google Analytics?</h3>
 <p>Create a GA4 event for clicks on links containing wa.me, either from the outbound click events GA4 already collects or with a Google Tag Manager click trigger, and mark it as a key event.</p>
 
-<p>Want WhatsApp set up properly on your website, with page-specific messages and click tracking? It's part of every website I build; see <a href="/wordpress-website-development/">WordPress website development</a>. Thinking about a chatbot instead? Read <a href="/blog/website-chatbot-worth-it/">do you need a chatbot?</a> first.</p>
+<p>Want WhatsApp, calls and forms set up so every enquiry is tracked? I can add it to your site as part of <a href="/wordpress-website-development/">WordPress website development</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off setup.</p>
 `,
   },
   {
@@ -8830,15 +8856,16 @@ site:example.com/blog/ "net metering"</code></pre>
   },
   {
     slug: 'choose-domain-name-business',
-    seoTitle: 'How to Choose a Domain Name for Your Business: 10 Checks',
+    seoTitle: 'How to Choose a Domain Name: .com vs .biz, .in and .co',
     title: 'How to Choose a Domain Name for Your Business: Brand vs Keyword, .in vs .com, Trademark Checks, Buying, Renewing and Mistakes to Avoid',
-    description: 'How to choose a domain name for your business: brand vs keyword, length, .in vs .com, trademark and history checks, buying, renewing and common mistakes.',
+    description: '.com vs .biz for a business domain: why .com or .in usually wins, when .co works, plus brand vs keyword names, trademark checks and buying safely.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-migration', 'website-for-startups'],
     body: `
-<p>A good business domain name is short, easy to say and spell, matches your business name and still makes sense as an email address, such as hello@yourbrand.in. Choose .in or .com based on where your customers are, check the name against trademarks, existing businesses and social handles before buying, and register it in your own business's account with auto-renew switched on. Keywords in the domain help far less than most people expect, so a clean brand name usually beats a long keyword string.</p>
+<p>In .com vs .biz, pick .com for almost every business: people type .com by habit, trust it more and remember it more easily, while a .biz address is often mistyped as .com and sent to someone else. If your customers are mainly in India, .in is an equally strong choice; .biz only makes sense when the .com and .in are unavailable and you can't change the name.</p>
+<p>Beyond the extension, a good business domain is short, easy to say and spell, matches your business name and works as an email address, such as hello@yourbrand.in. This guide covers extensions, names, trademark checks and buying safely.</p>
 <p>The domain is one of the first things settled when I build a site through <a href="/wordpress-website-development/">WordPress website development</a>: it stays registered in your business's name and account, and if you don't have one yet, I can help you choose and set it up. If you're launching something new, <a href="/website-for-startups/">websites for startups</a> covers the rest of the first site.</p>
 <p>This guide is about choosing the name itself. For the extension in detail, including registration rules and SEO, see <a href="/blog/in-vs-com-domain/">.in vs .com for Indian businesses</a>.</p>
 
@@ -8868,9 +8895,26 @@ site:example.com/blog/ "net metering"</code></pre>
   <li><strong>Available everywhere that matters,</strong> including the main social platforms, so your name is consistent.</li>
 </ol>
 
-<h2>.in, .com or something else?</h2>
-<p>For a business whose customers are mostly in India, .in is a natural choice and often still available when the .com isn't. For exporters, software and businesses selling abroad, .com is the safer default because it carries no country signal. If both are free, many businesses register both, use one and redirect the other.</p>
-<p>Newer extensions such as .co, .shop or .online can work for a strong brand, but people instinctively type .com or .in, and some will send email to the wrong address. Avoid twisting your name into a hyphenated or misspelt .com just to get the extension; a clean .in is better than an awkward .com.</p>
+<h2>.com vs .biz, .in and .co: which extension to choose</h2>
+<p>Google doesn't rank one generic extension above another, so the choice is about customers: what they expect, remember and type correctly.</p>
+<table>
+<thead><tr><th>Extension</th><th>What it signals</th><th>Best for</th><th>Main drawback</th></tr></thead>
+<tbody>
+<tr><td>.com</td><td>Global, the default people assume</td><td>Most businesses, especially if you sell abroad</td><td>Short names are often taken</td></tr>
+<tr><td>.in</td><td>An Indian business</td><td>Businesses serving customers in India</td><td>Treated as India-targeted by Google</td></tr>
+<tr><td>.co.in</td><td>An Indian company</td><td>A fallback when the .in is taken</td><td>Longer and less familiar</td></tr>
+<tr><td>.co</td><td>Startup-style brand; officially Colombia's code</td><td>Short brand names when the .com is taken</td><td>Easily mistyped as .com</td></tr>
+<tr><td>.biz</td><td>"Business", but rarely used by established brands</td><td>Only when better options are gone</td><td>Less trusted, often mistyped as .com</td></tr>
+</tbody>
+</table>
+<h3>.com vs .biz: the short answer</h3>
+<ul>
+<li><strong>Choose .com</strong> if it is available at a sensible price, or if you serve customers outside India.</li>
+<li><strong>Choose .in</strong> if nearly all your customers are in India and the .com is taken.</li>
+<li><strong>Avoid .biz and .co</strong> if someone else owns the .com of the same name, since your visitors and emails can end up there.</li>
+<li><strong>Change the name slightly</strong>, for example adding your city or what you do, rather than settling for an extension people won't remember.</li>
+</ul>
+<p>For the India question in depth, see <a href="/blog/in-vs-com-domain/">.in vs .com domains</a>.</p>
 
 <h2>Check trademarks and existing businesses</h2>
 <p>A name that's free as a domain can still belong to someone else as a brand. Before you print anything:</p>
@@ -8928,14 +8972,14 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>As short as your business name allows while staying clear. There's no fixed limit that matters in practice, but a name you can say once over the phone without spelling it out is a good test.</p>
 <h3>Does a keyword in the domain help SEO?</h3>
 <p>Very little today. Google relies on your content, links and business details far more than the words in your domain. A keyword can help people understand what you do, but it isn't worth a long or awkward name.</p>
-<h3>Should I buy both .in and .com?</h3>
-<p>If both are available at a normal price, it's sensible for many businesses: use one as your main address and redirect the other. It also stops someone else using the version people may type by mistake.</p>
+<h3>Is .com better than .biz for a business?</h3>
+<p>Yes, for nearly every business. People type .com by default and trust it more, while .biz is less familiar and often mistyped as .com. Use .in instead if your customers are mainly in India, and consider .biz only when the better options are gone and you can't adjust the name.</p>
 <h3>Can I change my domain name later?</h3>
 <p>Yes, but it takes care: every old URL needs a permanent redirect to its new equivalent, and you'll update email, print and profiles. <a href="/blog/change-domain-name-without-losing-seo/">Changing your domain without losing SEO</a> explains the steps. It's far easier to choose well at the start.</p>
 <h3>What if the domain I want is already taken?</h3>
 <p>Try the other main extension, add a short word that fits your business, or ask whether the owner will sell. Avoid hyphens and misspellings, and avoid names close to an active business in your field.</p>
 
-<p>Need a website on your new domain, set up in your own name from day one? I can help you choose and register the domain, then build the site through <a href="/wordpress-website-development/">WordPress website development</a>. Launching a new venture? See <a href="/website-for-startups/">websites for startups</a>.</p>
+<p>Need help choosing and setting up a domain for a new site? I cover domain, hosting and email setup as part of <a href="/wordpress-website-development/">WordPress website development</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for the set-up alone.</p>
 `,
   },
   {
@@ -13436,21 +13480,44 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
   },
   {
     slug: 'faq-page-seo',
-    seoTitle: 'FAQ Page SEO: How to Write FAQs for SEO (With Examples)',
+    seoTitle: 'How to Write an FAQ Page: Good FAQs That Rank and Sell',
     title: 'FAQ Page SEO: How to Write FAQs for SEO on Service, Sales and Local Pages',
-    description: 'FAQ page SEO: are FAQs good for SEO, a separate FAQ page or FAQs on each page, and how to write an FAQ for a sales page, with examples.',
+    description: 'How to write an FAQ page step by step: find real questions, write a good FAQ answer first, structure it for SEO and AI search, and keep FAQs useful.',
     date: '2026-09-27',
-    updated: '2026-10-27',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
-<p>Good FAQs do two jobs at once. They answer the questions that stop visitors from contacting you or buying, and they help search engines and AI assistants understand exactly what you offer. Bad FAQs do neither: they repeat the sales pitch as questions nobody asked.</p>
+<p>To write an FAQ page, collect the real questions customers ask you on calls, WhatsApp and email, answer each one directly in the first sentence, and group them under clear topics. A good FAQ removes a doubt that stops someone enquiring or buying; a bad one repeats the sales pitch as a question nobody asked.</p>
+<p>Done well, FAQs also help search engines and AI assistants understand exactly what you offer. This guide covers the steps, the wording and where to place them.</p>
 <p>This guide covers how to choose the right questions, how to write a good FAQ answer, how FAQs work on service, sales and local business pages, and what FAQ schema does and doesn't do today, with examples.</p>
+
+<h2>How to write an FAQ page, step by step</h2>
+<ol>
+<li><strong>List the questions you already get.</strong> Go through the last few months of enquiries, sales calls and support messages and write each question in the customer's own words.</li>
+<li><strong>Add search questions.</strong> Check Search Console queries, People Also Ask and autocomplete for the questions people type before they find you.</li>
+<li><strong>Cut the ones that don't matter.</strong> Keep questions that affect a decision: price drivers, timelines, delivery, refunds, what is included, who it is for.</li>
+<li><strong>Group by topic.</strong> Ordering, payments, delivery, services, aftercare. Put the most asked group first.</li>
+<li><strong>Answer first, then explain.</strong> Start each answer with yes, no, a time frame or a clear statement, then add the detail.</li>
+<li><strong>Link to the deeper page.</strong> If a service or policy page covers it fully, link there rather than repeating everything.</li>
+<li><strong>Make it easy to scan.</strong> Questions as headings, short answers, and a contact link at the end for anything not covered.</li>
+<li><strong>Review it regularly.</strong> Update answers when prices, policies or processes change, and add new questions as they come in.</li>
+</ol>
+<table>
+<thead><tr><th>Weak FAQ</th><th>Good FAQ</th></tr></thead>
+<tbody>
+<tr><td>Why are we the best choice?</td><td>How long does a typical project take?</td></tr>
+<tr><td>Answer starts with company history</td><td>Answer starts with the direct answer</td></tr>
+<tr><td>Vague: "it depends"</td><td>Explains what it depends on</td></tr>
+<tr><td>Copied from another site</td><td>Written from your own enquiries</td></tr>
+<tr><td>Never updated</td><td>Checked when prices or policies change</td></tr>
+</tbody>
+</table>
 
 <h2>Are FAQs good for SEO?</h2>
 <p>Yes, when they answer questions people really search for, but the benefit is indirect. FAQs don't give a page a ranking boost on their own, but well-chosen ones help in a few practical ways:</p>
 <ul>
-  <li><strong>They cover more of what people search.</strong> Specific questions match specific, longer searches; see <a href="/blog/long-tail-keywords-explained/">long-tail keywords explained</a>.</li>
+  <li><strong>They cover more of what people search.</strong> Specific questions match specific, longer searches; see long-tail keywords explained.</li>
   <li><strong>Clear question-and-answer formatting is easy to quote.</strong> It can help a page get picked for featured snippets and People Also Ask, though there's no guarantee; see <a href="/blog/featured-snippets-how-to-win/">how to win featured snippets</a>.</li>
   <li><strong>AI assistants can understand and cite them easily</strong>; see <a href="/blog/ai-search-optimization-website/">AI search optimisation</a>.</li>
   <li><strong>They help visitors decide.</strong> A page that answers the last few doubts usually turns more visitors into enquiries.</li>
@@ -13484,7 +13551,7 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 <p>Your reviews, and your competitors' reviews, show what customers worry about: hidden charges, delays, parking, aftercare. Each worry is a question you can answer before it's asked.</p>
 <p>Then filter. Keep questions that real people ask, that matter to the decision and that you can answer honestly. Drop vanity questions like "Why are we the best?", or rewrite them as real questions, such as "How are you different from a cheaper option?"</p>
 
-<h2>How to write a good FAQ answer</h2>
+<h2>How to write a good FAQ</h2>
 <ul>
   <li><strong>Answer in the first sentence.</strong> "Yes", "No", or the direct answer first, then the detail.</li>
   <li><strong>Phrase the question as the customer would.</strong> "Do you charge for a visit?" rather than "Inspection fee policy".</li>
@@ -13520,27 +13587,6 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
   <li><strong>Support:</strong> Who do I contact if I get stuck?</li>
 </ol>
 <p>Five to eight questions is usually enough. Answer honestly: don't promise results or guarantees you can't keep, and never use the FAQ to bury important terms. Where it's natural, end an answer with the next step, such as "You can start with a free consultation." For the rest of the page, see <a href="/blog/write-service-pages-that-convert/">writing service pages that convert</a> and <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes</a>; whether to show prices is covered in <a href="/blog/show-prices-on-website/">should you show prices</a>.</p>
-<p>An example for an online course sales page:</p>
-<blockquote><p><strong>Q: What if I fall behind?</strong></p><p>"You keep access to the recordings for [your access period], so you can catch up at your own pace. Live doubt sessions are held every [day], and you can ask questions in the course group between sessions."</p></blockquote>
-
-<h2>FAQs for service pages</h2>
-<p>Service-page FAQs answer questions about that one service: what's included, what affects the price, how long it takes, what the customer needs to provide and what happens afterwards. Four to eight questions is plenty. Every service page on this site has its own, for example <a href="/wordpress-maintenance/">WordPress maintenance</a> and <a href="/woocommerce-developer/">WooCommerce development</a>. If you rely on service pages rather than a blog, see <a href="/blog/seo-for-service-pages-without-blog/">ranking without a blog</a>.</p>
-
-<h2>FAQs for local businesses</h2>
-<p>For a local business, FAQs answer the practical questions people ask before visiting or booking, often on their phones and often out loud:</p>
-<ul>
-  <li>Which areas do you serve, or where exactly are you?</li>
-  <li>Are you open on Sundays or public holidays?</li>
-  <li>Is there parking, and is the entrance accessible?</li>
-  <li>Do I need an appointment, or can I walk in?</li>
-  <li>Do you offer home visits or same-day service?</li>
-  <li>Which payment methods do you accept, such as UPI or cards?</li>
-  <li>Which languages do you speak?</li>
-</ul>
-<p>Keep answers consistent with your Google Business Profile, especially timings and service areas. Name the real localities you serve, but don't stuff city names into every answer. If you have several location pages, write FAQs for each location rather than copying one set and swapping the city name; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a>. More in the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> and <a href="/blog/voice-search-local-seo/">voice search for local businesses</a>.</p>
-<p>An example for a dental clinic:</p>
-<blockquote><p><strong>Q: Do you see patients on Sundays?</strong></p><p>"Yes, we're open on Sunday mornings for appointments only. For dental emergencies outside clinic hours, call the number on this page and we'll advise you on what to do next."</p></blockquote>
-
 <h2>FAQPage schema: what it does now</h2>
 <p>FAQPage schema is structured data that labels questions and answers on a page. It used to make expandable FAQ dropdowns appear under many sites' search results. That changed in August 2023, when Google limited FAQ rich results to well-known, authoritative government and health websites. For almost every business site, adding FAQ schema will not produce those dropdowns.</p>
 <p>It can still be worth adding, as long as you keep expectations realistic:</p>
@@ -13551,18 +13597,9 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
   <li>If the same FAQ appears on several pages, Google's guidelines say to mark up only one instance</li>
   <li>Google's guidelines also say FAQ markup shouldn't be used for advertising, which is another reason not to expect much from it on sales pages</li>
 </ul>
-<p>On WordPress, many SEO plugins and FAQ blocks add the markup for you. Check the output with the Rich Results Test or Schema Markup Validator; see <a href="/blog/test-structured-data-rich-results/">testing structured data</a> and <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+<p>On WordPress, many SEO plugins and FAQ blocks add the markup for you. Check the output with the Rich Results Test or Schema Markup Validator; see testing structured data and <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
 
-<h2>Layout tips</h2>
-<ul>
-  <li><strong>Accordions are fine.</strong> Google has said content in accordions and tabs is indexed normally, and they keep long FAQs tidy on mobile.</li>
-  <li><strong>Use real headings or clear labels</strong> for questions, so people can scan and screen readers can navigate.</li>
-  <li><strong>Group long FAQ pages</strong> into topics with jump links.</li>
-  <li><strong>Don't hide essentials only in FAQs.</strong> Price basics, location and how to book should also appear in the main content.</li>
-</ul>
-
-<h2>Keep them up to date</h2>
-<p>Review FAQs whenever prices, timings, processes or policies change, and add new questions as they come up in calls. An outdated answer does more damage to trust than a missing one.</p>
+<p>Answer-first writing also suits people who ask their phones questions out loud; see <a href="/blog/voice-search-local-seo/">voice search for local businesses</a>.</p>
 
 <h2>FAQs</h2>
 
@@ -13575,13 +13612,15 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 <h3>Is FAQ schema still worth adding?</h3>
 <p>It's optional. Since 2023 it won't produce FAQ rich results for most business sites, but valid, accurate markup does no harm and describes your content clearly. Don't add it expecting more clicks.</p>
 
-<h3>How long should an FAQ answer be?</h3>
-<p>Long enough to answer properly: usually two to four sentences, with the direct answer first. If you need several paragraphs, link to a full page instead.</p>
+<h3>How do you write a good FAQ?</h3>
+<p>Use a question your customers actually ask, written in their words, and answer it in the first sentence. Then add the detail, conditions or next step, and link to a fuller page if one exists. Keep it short enough to read on a phone.</p>
 
-<h3>Can I use AI to write FAQs?</h3>
-<p>AI can help with drafting and tidying, but the questions should come from real customers and the answers must match your actual prices, policies and process. Check every answer before publishing; see <a href="/blog/ai-tools-website-content-responsibly/">using AI tools for website content responsibly</a>.</p>
+<h3>How do I create awesome FAQs?</h3>
+<p>Start from real enquiries rather than guesses, answer honestly including the limits and conditions, and group them so people find their question quickly. AI tools can help tidy wording, but the questions and facts should come from your own business.</p>
+<h3>How do I write an FAQ page?</h3>
+<p>Collect real customer questions, group them by topic, answer each directly in the first sentence, link to deeper pages and add a contact option at the end. Review the page whenever your prices, policies or processes change.</p>
 
-<p>Want FAQs and service pages that answer real customer questions and are set up properly for search? I improve on-page structure, fix technical SEO and add accurate schema for WordPress sites. See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<p>Want FAQs written and structured properly on your service pages? <a href="/wordpress-seo-services/">WordPress SEO services</a> cover question research, page structure and schema, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to build them into your site.</p>
 `,
   },
   {
@@ -27907,15 +27946,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'topic-clusters-pillar-pages',
-    seoTitle: 'Topic Clusters & Pillar Pages Explained for WordPress Sites',
+    seoTitle: 'Pillar Page WordPress Guide: Build Topic Clusters That Rank',
     title: 'Topic Clusters and Pillar Pages Explained: How to Plan Them and Build Them in WordPress',
-    description: 'Topic clusters and pillar pages explained: what a pillar page is, how to plan a cluster and how to build one in WordPress with links and categories.',
+    description: 'Pillar page WordPress guide: what a pillar page is, how to plan a topic cluster, and how to build pillar and cluster pages with links, blocks and menus.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development', 'website-redesign'],
     body: `
-<p>A topic cluster is a group of pages about one subject: a broad pillar page that covers the topic as a whole and links out to detailed articles, each answering one specific question, with every article linking back to the pillar. On a WordPress business site, the pillar is usually a page, often the service page you want to rank, and the cluster articles are blog posts connected to it by links in the body text. Organised this way, your content shows visitors and search engines that you cover the subject properly, instead of scattering unrelated posts.</p>
+<p>A pillar page in WordPress is a broad page, usually built as a WordPress Page rather than a post, that covers a topic as a whole and links out to detailed blog posts, each answering one specific question, with every post linking back to it. For most business sites the pillar is the service page you want to rank, and the posts form the topic cluster around it.</p>
+<p>Organised this way, your content shows visitors and search engines that you cover the subject properly, instead of scattering unrelated posts.</p>
 <p>Site structure and internal linking are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, alongside titles, schema and Search Console. This guide explains how to plan a cluster yourself and build it in WordPress.</p>
 <p>Clusters depend on two other skills: choosing what to write about, covered in <a href="/blog/keyword-research-small-business/">keyword research for small businesses</a>, and linking pages well, covered in <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
 
@@ -27939,7 +27979,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>A good pillar isn't simply the longest page on your site. It covers each subtopic in a paragraph or two, links to the article that covers it fully, and is kept up to date as articles are added.</p>
 
 <h2>An example from this site</h2>
-<p>The <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service page works as a pillar. Articles such as <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a>, <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> and <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> each go deep on one question, link back to the service page and link to each other where it helps the reader. The security articles are organised around the malware removal page in the same way.</p>
+<p>The <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service page works as a pillar. Articles such as why your WordPress site is slow, <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> and WordPress caching explained each go deep on one question, link back to the service page and link to each other where it helps the reader. The security articles are organised around the malware removal page in the same way.</p>
 
 <h2>Why topic clusters help SEO and visitors</h2>
 <ul>
@@ -27980,6 +28020,29 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h3>Categories, tags and breadcrumbs</h3>
 <p>A category archive can act as a hub if you add a proper introduction, which most themes show from the category description. Keep tags under control; dozens of tags with one or two posts each create thin archive pages. Turn on breadcrumbs in your SEO plugin, so every article shows its place in the structure and Google gets breadcrumb structured data.</p>
 
+<h2>Pillar page WordPress setup: step by step</h2>
+<ol>
+<li><strong>Choose the topic and the page.</strong> Pick one service or subject you want to rank for and decide whether an existing page becomes the pillar.</li>
+<li><strong>Create it as a Page.</strong> Pages sit outside the blog date archive and can use a clean URL such as /service-name/.</li>
+<li><strong>Write the overview.</strong> Answer the main question at the top, then give each subtopic a short H2 section with a summary.</li>
+<li><strong>Add a table of contents.</strong> A simple list of jump links helps long pillars on mobile.</li>
+<li><strong>Link each section to its cluster post.</strong> Use descriptive anchor text in the sentence, not a bare "read more".</li>
+<li><strong>Link every post back.</strong> Each cluster post links to the pillar early in the body, plus to one or two sibling posts where it helps.</li>
+<li><strong>Group the posts.</strong> One category per cluster keeps archives and breadcrumbs tidy.</li>
+<li><strong>Add the pillar to the menu.</strong> Main navigation links tell visitors and Google it is an important page.</li>
+<li><strong>Keep it fast.</strong> Long pillars with many images need compressed images and lazy loading below the first screen.</li>
+</ol>
+<table>
+<thead><tr><th>WordPress element</th><th>Pillar page</th><th>Cluster post</th></tr></thead>
+<tbody>
+<tr><td>Content type</td><td>Page</td><td>Post</td></tr>
+<tr><td>Scope</td><td>The whole topic, briefly</td><td>One question, in depth</td></tr>
+<tr><td>Links</td><td>Out to every cluster post</td><td>Back to the pillar, plus siblings</td></tr>
+<tr><td>Navigation</td><td>Main menu</td><td>Category archive and related posts</td></tr>
+<tr><td>Updates</td><td>When a new cluster post is added</td><td>When the facts change</td></tr>
+</tbody>
+</table>
+
 <h2>Avoid keyword cannibalisation</h2>
 <p>If two of your pages target the same search, they compete, and often neither ranks well. In Search Console's Performance report, click a query and open the Pages tab: if two pages keep swapping places for it, they overlap. Fix it by merging the weaker page into the stronger one and redirecting it, or by rewriting each so it answers a clearly different question, then pointing your internal links at the right page. <a href="/blog/duplicate-content-explained/">Duplicate content explained</a> covers the related problems.</p>
 
@@ -27993,8 +28056,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 </ul>
 
 <h2>FAQs</h2>
-<h3>What is a pillar page in WordPress?</h3>
-<p>It's a page, usually created under Pages rather than Posts, that covers a topic broadly and links to detailed blog posts on each subtopic. On a business site, the pillar is often the main service page for that topic.</p>
+<h3>How do I create a pillar page in WordPress?</h3>
+<p>Create a WordPress Page for the broad topic, summarise each subtopic in its own section, link each section to the detailed blog post, and make sure every post links back. Add the pillar to your main menu so it gets the most internal links.</p>
 <h3>What is the difference between a pillar page and a cluster page?</h3>
 <p>The pillar covers the whole topic at overview level and links out. A cluster page answers one specific question in depth and links back to the pillar.</p>
 <h3>How long should a pillar page be?</h3>
@@ -28006,7 +28069,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h3>How many articles does a topic cluster need?</h3>
 <p>There's no fixed number. Start with the few questions customers ask most before buying and add more as you find new questions in enquiries and Search Console.</p>
 
-<p>Want your service pages and articles organised so they support each other? I can audit your structure, map pages to searches, fix cannibalisation and set up internal links and breadcrumbs; see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<p>Want your service pages and blog organised into clusters that support each other? <a href="/wordpress-seo-services/">WordPress SEO services</a> include content planning and internal linking, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to restructure the site.</p>
 `,
   },
   {
@@ -28481,16 +28544,38 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'woocommerce-product-variations',
-    seoTitle: 'WooCommerce Product Variations (Variants): Setup and Stock',
+    seoTitle: 'Product-Type Variations in WooCommerce: Setup Guide',
     title: 'WooCommerce Product Variations: How to Set Up Sizes, Colours, Stock and Swatches',
-    description: 'How to set up WooCommerce product variations: attributes vs variations, global attributes, bulk editing, variation images, swatches, stock, SKUs and SEO.',
+    description: 'Product-type variations in WooCommerce: choose Variable product, add attributes, create variations with their own price, stock, SKU, images and swatches.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development', 'wordpress-speed-optimization'],
     body: `
-<p>If you sell a T-shirt in five sizes and four colours, you don't want 20 separate products. WooCommerce's <strong>variable products</strong> let customers choose options on one product page, and each combination, called a variation, can have its own price, SKU, stock level and image.</p>
+<p>Product-type variations in WooCommerce come from setting the Product type dropdown in the Product data box to Variable product, adding attributes such as size or colour with "Used for variations" ticked, then generating the variations. Each combination can then have its own price, SKU, stock level and image, all on one product page.</p>
+<p>So instead of 20 separate products for a T-shirt in five sizes and four colours, you get one product where customers choose their option.</p>
 <p>The quick version: set the product type to "Variable product", add attributes such as Size and Colour, tick "Used for variations", generate the variations, then give each one a price, SKU, stock and image. A variation with no price won't be sold, so don't skip that step. The rest of this guide covers each step properly, plus bulk editing, swatches, performance limits and SEO.</p>
+
+<h2>Product-type variations: which product type do you need?</h2>
+<p>WooCommerce has four core product types. Only one of them creates variations, so pick the type first:</p>
+<table>
+<thead><tr><th>Product type</th><th>What it is</th><th>Use it for</th><th>Variations?</th></tr></thead>
+<tbody>
+<tr><td>Simple product</td><td>One item, one price, one stock count</td><td>A book, a single-size item</td><td>No</td></tr>
+<tr><td>Variable product</td><td>One product with selectable options</td><td>Sizes, colours, weights, pack sizes</td><td>Yes, each with its own price, SKU, stock and image</td></tr>
+<tr><td>Grouped product</td><td>A set of separate products shown together</td><td>A collection where each item is bought individually</td><td>No, each child is its own product</td></tr>
+<tr><td>External/Affiliate product</td><td>Listed on your site, sold elsewhere</td><td>Affiliate or marketplace links</td><td>No</td></tr>
+</tbody>
+</table>
+<h3>Quick setup checklist</h3>
+<ol>
+<li>Product data: set Product type to Variable product.</li>
+<li>Attributes: add a global or custom attribute and tick "Used for variations".</li>
+<li>Variations: choose "Generate variations" or add them one by one.</li>
+<li>Give every variation a regular price; without one it won't appear.</li>
+<li>Add SKU, stock and an image for each variation where they differ.</li>
+<li>Set the default form values so the page opens on your most popular option.</li>
+</ol>
 
 <h2>Attributes vs variations</h2>
 <p>The terms get mixed up, so it helps to be precise:</p>
@@ -28591,8 +28676,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 </ul>
 
 <h2>FAQs</h2>
-<h3>What is the difference between an attribute and a variation in WooCommerce?</h3>
-<p>An attribute is an option type, like Size, with terms such as S, M and L. A variation is one purchasable combination of those terms, like Medium and Blue, with its own price, stock and SKU.</p>
+<h3>What are product-type variations in WooCommerce?</h3>
+<p>They are the options you create after setting a product's type to Variable product. You add attributes such as size and colour, then WooCommerce creates a variation for each combination, and each variation can have its own price, SKU, stock and image.</p>
 <h3>Why is my WooCommerce variation not showing?</h3>
 <p>The usual causes are a missing price, the variation being disabled, it being out of stock with out-of-stock items hidden, or the attribute not ticked as "Used for variations". Check each in the Variations and Attributes tabs.</p>
 <h3>How many variations can a WooCommerce product have?</h3>
@@ -28601,6 +28686,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Each variation can have one image by default. Several gallery images per variation need a plugin or a theme that supports it.</p>
 <h3>Do I need a plugin for colour swatches?</h3>
 <p>Usually, yes, unless your theme or product template already includes them. Choose a well-maintained option and check it doesn't add heavy scripts to every page.</p>
+<h3>What is the difference between an attribute and a variation?</h3>
+<p>An attribute is the option type and its values, such as Size with S, M and L. A variation is one purchasable combination of those values, such as Size M in Blue, with its own price and stock.</p>
 
 <p>Setting up a store with lots of sizes, colours or options, or struggling with slow variable products? I configure attributes, variations, swatches and stock properly and test every option before launch. See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
@@ -29555,17 +29642,32 @@ LIMIT 20;</code></pre>
   },
   {
     slug: 'deceptive-site-ahead-warning-fix',
-    seoTitle: '"Deceptive Site Ahead" Warning: How to Fix and Remove It',
+    seoTitle: 'Remove Deceptive Site Warning: Step-by-Step Fix for Chrome',
     title: '"Deceptive Site Ahead" Warning on Your Website: How to Find the Phishing Pages, Clean Up and Get Google to Remove It',
-    description: 'How to remove the "Deceptive site ahead" warning: find the phishing pages, clean the site, request a review in Search Console and know how long it takes.',
+    description: 'How to remove deceptive site warning screens in Chrome: find the flagged phishing pages in Search Console, clean the site, close the hole, request review.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-seo-services'],
     body: `
-<p>To remove the "Deceptive site ahead" warning, open the Security issues report in Google Search Console to see which pages Google flagged, delete those phishing pages and whatever let the attacker in, then click Request Review. Once Google confirms the site is clean, Chrome and the other browsers that use Google Safe Browsing stop showing the red screen, usually within a few days for phishing. The warning does not fade on its own while the bad pages are still there.</p>
+<p>To remove deceptive site warning screens ("Deceptive site ahead" in Chrome), open the Security issues report in Google Search Console, delete the phishing pages it lists along with whatever let the attacker in, then click Request Review. Once Google confirms the site is clean, Chrome and other browsers using Google Safe Browsing stop showing the red screen, usually within a few days for phishing.</p>
 <p>Most of the time the cause is a hacked site: someone has uploaded a fake bank, courier, webmail or payment login page into your hosting account and is sending people to it from emails or text messages. If you want it handled for you, my <a href="/wordpress-malware-removal/">WordPress malware removal service</a> covers finding the phishing kit, cleaning the site, hardening it and help with the Google review.</p>
 <p>This guide is about the full-screen browser warning. If Google shows "This site may be hacked" under your listing in search results instead, see <a href="/blog/this-site-may-be-hacked-google/">removing the "This site may be hacked" label</a>. If you are not yet sure what the attacker did, the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a> are a good place to start.</p>
+
+<h2>How to remove deceptive site warning: quick checklist</h2>
+<table>
+<thead><tr><th>Step</th><th>Where</th><th>Done when</th></tr></thead>
+<tbody>
+<tr><td>1. See which URLs are flagged</td><td>Search Console, Security issues</td><td>You have the list of sample URLs</td></tr>
+<tr><td>2. Back up the site as it is</td><td>Hosting panel or backup plugin</td><td>A copy is saved for evidence and rollback</td></tr>
+<tr><td>3. Find and delete phishing pages</td><td>File manager, SFTP, database</td><td>Flagged URLs return 404 or 410</td></tr>
+<tr><td>4. Remove backdoors and rogue users</td><td>Files, plugins, WordPress users</td><td>No unknown admins, files or scheduled tasks</td></tr>
+<tr><td>5. Update and change passwords</td><td>WordPress, hosting, FTP, database</td><td>Everything current, every password new</td></tr>
+<tr><td>6. Request a review</td><td>Search Console, Security issues</td><td>Review submitted with a note on what you fixed</td></tr>
+<tr><td>7. Check other blocklists</td><td>Edge, antivirus vendors</td><td>No warnings in other browsers</td></tr>
+</tbody>
+</table>
+<p>Don't request a review until steps 3 to 5 are finished. If the pages come back because a backdoor was missed, the review fails and the next one can take longer.</p>
 
 <h2>What the "Deceptive site ahead" warning means</h2>
 <p>Google Safe Browsing keeps a list of web pages that trick people or harm their devices. Chrome, Firefox and Safari all check pages against Google's list at the time of writing, so a single flag can block most of your visitors at once. The wording tells you what Google thinks it found.</p>
@@ -29646,22 +29748,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li><strong>Email:</strong> if the kit was also used to send phishing emails from your server, check your domain and server IP on a blacklist lookup tool such as MXToolbox.</li>
 </ul>
 
-<h2>Could it be a false positive?</h2>
-<p>It happens, but rarely, so assume a real problem until you've checked properly. Genuine sites sometimes get flagged for a client login page that looks like a well-known brand's, an open redirect that spammers abuse to make their links look trustworthy, or a third-party ad or script that started showing deceptive content. Remove or fix the cause, then request a review explaining it.</p>
-
-<h2>How to stop it happening again</h2>
-<ul>
-  <li>Keep WordPress, plugins and themes updated, and delete anything you don't use, including old test sites</li>
-  <li>Never install nulled themes or plugins</li>
-  <li>Use unique passwords and two-factor authentication for WordPress and the hosting account</li>
-  <li>Make sure Search Console security emails reach an inbox someone reads</li>
-  <li>Keep tested off-site backups</li>
-</ul>
-<p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers the full set of protections. If nobody has time for this every month, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include updates, security scans, off-site backups and uptime monitoring.</p>
-
 <h2>FAQs</h2>
-<h3>How do I remove the "Deceptive site ahead" warning from my website?</h3>
-<p>Find the flagged pages in Search Console's Security issues report, delete every phishing page and backdoor, close the way the attacker got in, change all passwords, then request a review. Google removes the warning once the review confirms the site is clean.</p>
+<h3>How do I remove deceptive site warning from my website?</h3>
+<p>Find the flagged URLs in Search Console's Security issues report, delete the phishing pages and the backdoor or weak login that let them in, update everything and change passwords, then click Request Review. Chrome stops warning once Google confirms the site is clean.</p>
 <h3>How long does Google take to remove a deceptive site warning?</h3>
 <p>Google's guidance has said phishing reviews take about a day and malware reviews a few days, though times vary. A rejected review restarts the wait, so make sure the site is fully clean before you request one.</p>
 <h3>Why does Chrome say my site is deceptive when I can't see anything wrong?</h3>
@@ -29670,10 +29759,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>If it appears in Pages or Posts, delete it and empty the trash. If it's a folder of files, as most phishing pages are, delete it through File Manager or SFTP. Then look for the backdoor or stolen password that let it in, or it will reappear.</p>
 <h3>Will the warning hurt my Google rankings?</h3>
 <p>While the warning is up, most visitors won't get past it, so you lose traffic and enquiries regardless of rankings. Once it's cleared, rankings usually recover as Google recrawls the clean site; see <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
-<h3>Can visitors still get to my site while the warning shows?</h3>
-<p>Chrome lets people click Details and continue, but very few do, and you shouldn't ask customers to ignore a security warning. Fixing the cause is the only real answer.</p>
-
-<p>Red warning on your site right now? I treat hacked sites as urgent, and most cleanups are completed within 24 to 48 hours of getting access. Send me the Search Console message and I'll tell you what's involved; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+<p>Seeing the red screen on your site right now? <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers finding the phishing pages, closing the way in and the Google review, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to secure the site afterwards.</p>
 `,
   },
   {
@@ -34446,15 +34532,16 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'hosting-renewal-price-increase',
-    seoTitle: 'Hosting Renewal Shock: Why Renewal Charges Jump & What to Do',
+    seoTitle: 'Hosting Renewal Shock: Why It Costs More and What to Do',
     title: 'Hosting Renewal Price Shock: Why Your Hosting Renewal Costs So Much More, and What to Do About It',
-    description: 'Hosting renewal charges much higher than you paid? Why intro prices end, how add-ons and GST add up, and when to renew, negotiate, downgrade or move hosts.',
+    description: 'Hosting renewal shock explained: why renewals cost far more than the first term, how to cut the bill, ask for a retention offer or move host safely.',
     date: '2026-09-28',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Pricing',
     related: ['wordpress-maintenance', 'wordpress-migration', 'hire-wordpress-developer'],
     body: `
-<p>Hosting renewals cost more because the price you first paid was an introductory discount. Most hosts advertise a low monthly figure that applies only to the first term, usually when you pay for two to four years upfront, and then renew at the regular price, which can be several times higher. Add-ons bundled free for the first year, the end of a "free" domain and 18% GST on top make the renewal invoice look even worse. It's normal industry practice rather than a scam, but you don't have to accept the first invoice.</p>
+<p>Hosting renewal shock happens because the price you first paid was an introductory discount, usually for paying two to four years upfront, and the renewal is charged at the regular price, which can be several times higher. Add-ons that were free in the first year, the end of a "free" domain and 18% GST on top make the invoice look even worse.</p>
+<p>It is normal industry practice rather than a scam, but you don't have to accept the first invoice. Below is what drives the bill and a plan for the weeks before your renewal date.</p>
 <p>Before you click renew, check what you're paying for, ask for a better deal and compare the real cost of staying with the cost of moving. If moving is the answer, my <a href="/wordpress-migration/">WordPress migration</a> service moves the site, email and DNS without downtime. And if a renewal is the only time anyone looks at your site, it may be worth reading about <a href="/wordpress-maintenance/">WordPress maintenance</a> too.</p>
 
 <h2>Where the renewal charges come from</h2>
@@ -34509,6 +34596,22 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 </ol>
 <p>On this site, I put typical WordPress hosting at roughly ₹2,500 to ₹15,000 a year depending on the type of plan; <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> explains what moves a plan up or down that range.</p>
 
+<h2>Hosting renewal shock: a 30-day action plan</h2>
+<table>
+<thead><tr><th>When</th><th>What to do</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>30 days before</td><td>Open the renewal invoice and list every line item</td><td>Separates hosting from domain, email, SSL and add-ons</td></tr>
+<tr><td>28 days before</td><td>Remove add-ons you don't use</td><td>Backups, security or SEO tools you already get elsewhere</td></tr>
+<tr><td>25 days before</td><td>Check usage in the control panel</td><td>You may be on a bigger plan than the site needs</td></tr>
+<tr><td>21 days before</td><td>Ask support for a retention offer or longer-term price</td><td>Some hosts offer better terms when asked</td></tr>
+<tr><td>18 days before</td><td>Compare three to five-year totals, renewal prices included</td><td>The first-year price alone is misleading</td></tr>
+<tr><td>14 days before</td><td>Decide: renew, downgrade or move</td><td>Leaves time for a careful migration</td></tr>
+<tr><td>7 days before</td><td>If moving, finish the copy and test the new host</td><td>DNS changes and email need checking</td></tr>
+<tr><td>Renewal date</td><td>Renew, or let the old plan lapse only after the move is confirmed</td><td>Avoids downtime and lost email</td></tr>
+</tbody>
+</table>
+<p>Whatever you decide, make sure renewal emails go to an address someone reads and that the card on file won't expire before the date.</p>
+
 <h2>Is switching hosts worth it?</h2>
 <p>Moving every few years to chase introductory pricing can work, but each move takes effort and carries some risk to email, DNS and SSL if it's done carelessly. For a business site, reliability, speed and helpful support usually matter more than saving a small amount a year.</p>
 <p>Moving makes sense when:</p>
@@ -34543,8 +34646,8 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 <p>Whatever you decide, don't let hosting expire while you think about it. Expired hosting takes your website, and any email on it, offline.</p>
 
 <h2>FAQs</h2>
-<h3>Why is my hosting renewal so much more expensive?</h3>
-<p>Because the first term was an introductory discount, often requiring several years paid upfront. Renewal is at the regular price, and add-ons, a domain that was free for the first year and 18% GST all add to the invoice.</p>
+<h3>How do I deal with hosting renewal shock?</h3>
+<p>Check what the invoice includes, remove add-ons you don't need, ask your host for a retention offer, and compare the three to five-year cost against other hosts, renewal prices included. If moving is cheaper, start the migration a few weeks before the renewal date.</p>
 <h3>Are high hosting renewal charges a scam?</h3>
 <p>Usually not; it's standard industry pricing, and the renewal price is normally stated somewhere at purchase. It's worth checking the invoice comes from your real host, though, as fake renewal emails exist.</p>
 <h3>Can I negotiate my hosting renewal price?</h3>
@@ -34556,7 +34659,7 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 <h3>Will moving hosts affect my SEO or email?</h3>
 <p>Not if it's done properly. Keep the same domain and URLs, test the site before switching DNS, copy every DNS record including MX, SPF and DKIM, and keep the old hosting live until everything is confirmed.</p>
 
-<p>Decided to move? My <a href="/wordpress-migration/">WordPress migration</a> service covers the site, email and DNS records and a tested switch-over, so the renewal date passes without downtime.</p>
+<p>Want someone to compare your options and move the site safely before the renewal date? <a href="/wordpress-migration/">WordPress migration</a> covers the move, email and DNS checks, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to review your hosting bill and set-up.</p>
 `,
   },
   {
@@ -34687,15 +34790,16 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'domain-hosting-renewal-checklist',
-    seoTitle: 'Domain, Hosting and SSL Renewal Checklist for Businesses',
+    seoTitle: 'WordPress Domain Renewal Price and Renewal Checklist',
     title: 'Domain, Hosting, SSL, Email and Licence Renewals: A Checklist That Keeps Your Website Online',
-    description: 'A renewal checklist for your domain, hosting, SSL, email and premium licences: auto-renew, card expiry, renewal price rises, a reminder calendar and who pays.',
+    description: 'WordPress domain renewal price explained: what a .in or .com renewal typically costs, why year two costs more, plus a checklist for hosting, SSL and email.',
     date: '2026-09-28',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-migration'],
     body: `
-<p>Five kinds of renewal can take a website offline or quietly stop it being maintained: the domain name, the hosting, the SSL certificate, business email, and premium theme and plugin licences. Keep them safe by listing each one with its renewal date, switching on auto-renew with a payment method that won't expire, sending renewal emails to an address the business monitors, and setting reminders a month or two ahead so price rises and card problems surface in time.</p>
+<p>The WordPress domain renewal price is set by your domain registrar, not by WordPress, and a .com or .in domain typically renews for about ₹500 to ₹1,200 a year, depending on the registrar and any first-year discount you had. Expect the second year to cost more than the first if you bought on an offer or got the domain "free" with hosting.</p>
+<p>The domain is only one of five renewals that can take a website offline: hosting, SSL, business email and premium theme and plugin licences matter too. This checklist covers what each costs, what happens if it lapses and how to keep them all running.</p>
 <p>When I take on a site for <a href="/wordpress-maintenance/">WordPress maintenance</a>, the first health check includes SSL renewal and whether premium licences are active and in your name, because an expired licence is one of the most common reasons updates quietly stop arriving. The renewals themselves are paid to the providers, ideally in your name, and this checklist helps you keep track of them.</p>
 <p>Renewals are only part of what a site costs to run; <a href="/blog/hidden-website-costs/">hidden website costs</a> covers the rest, from email to content and marketing.</p>
 
@@ -34724,9 +34828,23 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   <li><strong>Different dates and providers,</strong> so nobody has the full picture.</li>
 </ul>
 
-<h2>Renewal prices: why the second year costs more</h2>
-<p>Hosting and domains are often sold at an introductory price for the first term, then renew at the standard rate, which can be much higher. A "free" domain with hosting is usually free for the first year only, and Indian prices are often shown before GST. None of this is hidden, but it's easy to miss when you buy.</p>
-<p>A month or two before each renewal, check the price for the same plan, whether a longer term costs less per year, and whether you still need every add-on. If a hosting invoice has already surprised you, <a href="/blog/hosting-renewal-price-increase/">hosting renewal price shock</a> sets out your options, including moving before the renewal date.</p>
+<h2>WordPress domain renewal price: what you actually pay</h2>
+<p>WordPress itself is free software, so there is no "WordPress domain". Your domain is registered with a registrar, either directly or through your host, and that company sets the renewal price. The typical yearly ranges used across this site are:</p>
+<table>
+<thead><tr><th>Renewal</th><th>Typical yearly cost</th><th>Why it changes</th></tr></thead>
+<tbody>
+<tr><td>Domain (.com or .in)</td><td>About ₹500 to ₹1,200</td><td>Registrar, extension, first-year offers ending</td></tr>
+<tr><td>Hosting</td><td>About ₹2,500 to ₹15,000</td><td>Plan size, introductory pricing ending, add-ons</td></tr>
+<tr><td>Premium themes and plugins</td><td>About ₹0 to ₹6,000</td><td>How many paid licences the site relies on</td></tr>
+</tbody>
+</table>
+<p>Prices on Indian invoices usually have GST added. Three things make a domain renewal look higher than expected:</p>
+<ul>
+<li><strong>First-year discounts end.</strong> The advertised price often applies only to year one.</li>
+<li><strong>"Free domain with hosting" ends.</strong> The domain is free for the first term, then renews at the normal rate.</li>
+<li><strong>Bundled extras.</strong> Privacy protection, email or SEO add-ons may be ticked by default.</li>
+</ul>
+<p>Before buying, look up the renewal price, not just the offer. If your current registrar's renewal is high, you can <a href="/blog/transfer-domain-to-another-registrar/">transfer the domain to another registrar</a>, which normally adds a year to the registration.</p>
 
 <h2>The renewal checklist</h2>
 <ol>
@@ -34798,12 +34916,12 @@ Notes:                (price changes, plans to move)</code></pre>
 <p>Not usually. Free certificates from most hosts renew automatically every few months, as long as the domain still points to the host. Certificate lifetimes are being shortened across the industry, which makes automatic renewal more important. Paid certificates are renewed with the provider and then installed.</p>
 <h3>What happens if a premium plugin licence expires?</h3>
 <p>The plugin usually keeps working, but updates and support stop, which becomes a security risk over time, and some plugins restrict features. Renew the licences you depend on and remove plugins you no longer use.</p>
-<h3>Is it cheaper to renew hosting for several years at once?</h3>
-<p>The price per year is often lower on a longer term, but you're committed for longer. Compare the total for the term with the cost of moving to another host, and read the refund policy.</p>
+<h3>What is the WordPress domain renewal price?</h3>
+<p>WordPress doesn't set it: your registrar does. A .com or .in domain typically renews for about ₹500 to ₹1,200 a year, plus GST on Indian invoices. Check the renewal rate before you buy, because first-year offers and free domains with hosting end after the first term.</p>
 <h3>Can my developer pay the renewals for me?</h3>
 <p>Yes, if they invoice you and the accounts stay in your name. The risk is accounts held only by them: if they stop paying or stop working with you, the site goes with them.</p>
 
-<p>Want someone keeping an eye on all this? A <a href="/wordpress-maintenance/">WordPress maintenance</a> plan keeps your site updated, backed up and monitored every month, with your domain, hosting and WordPress accounts in your name throughout. If your accounts are tangled up with a previous developer, I can help you move them into your name when you <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for the job.</p>
+<p>Want renewals, updates and backups handled so nothing lapses? <a href="/wordpress-maintenance/">WordPress maintenance</a> plans include renewal tracking, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to audit your domain, hosting and licences.</p>
 `,
   },
   {
@@ -47700,16 +47818,41 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'change-domain-name-without-losing-seo',
-    seoTitle: 'How to Change Domain Name Without Losing SEO (Step by Step)',
+    seoTitle: 'How to Change Domain Without Losing SEO: 10-Step Checklist',
     title: 'How to Change Your Domain Name Without Losing SEO: Redirects, Change of Address and Checks',
-    description: 'How to change your domain name without losing SEO: plan the move, map 301 redirects page by page, use Change of Address and update your profiles.',
+    description: 'How to change domain without losing SEO: a 10-step checklist for 301 redirect maps, Search Console Change of Address, backlinks and post-move checks.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-migration', 'wordpress-seo-services'],
     body: `
-<p>To change your domain name without losing SEO, keep the old domain, set up page-by-page 301 redirects from every old URL to its matching new URL, update the new site's settings and canonicals, use Google Search Console's Change of Address tool, and update your profiles and best backlinks. Expect some ranking fluctuation for a while; a steep, lasting drop usually means redirects are missing or wrong.</p>
+<p>How to change domain without losing SEO: keep the old domain registered, 301-redirect every old URL to its matching page on the new domain, and tell Google with the Change of Address tool in Search Console. Then update canonicals, sitemaps, internal links, profiles and your best backlinks, and expect some short-term fluctuation rather than a lasting drop.</p>
+<p>A steep, lasting fall after a move almost always means redirects are missing, chained or pointing at the wrong pages. The checklist below is the order I follow, and the sections after it explain each step in detail.</p>
 <p>Businesses change domains for good reasons: a rebrand, a shorter name, a .com for international buyers, or finally getting the name they wanted. This guide is about moving your website to a different domain name. If you are keeping the same name and only changing where it is registered, see <a href="/blog/transfer-domain-to-another-registrar/">how to transfer a domain to another registrar</a>.</p>
+
+<h2>How to change domain without losing SEO: the 10-step checklist</h2>
+<ol>
+<li><strong>Keep the old domain.</strong> Leave it on auto-renew for years; if it expires, every redirect and old backlink dies with it.</li>
+<li><strong>Crawl the old site.</strong> Export every URL that returns 200, including posts, pages, products, categories and PDFs.</li>
+<li><strong>Add URLs from Search Console and backlinks.</strong> Pages with clicks or links matter most, even if they are no longer in your menus.</li>
+<li><strong>Build a redirect map.</strong> One row per old URL, one matching new URL. Keep paths identical wherever you can.</li>
+<li><strong>Set up the new site on staging.</strong> Same content, same structure, new domain in the WordPress settings or store settings.</li>
+<li><strong>Launch and switch on 301s.</strong> Server-level or plugin rules that send each old URL to its new twin in one hop.</li>
+<li><strong>Verify both domains in Search Console.</strong> Submit the new sitemap, then use Change of Address on the old property.</li>
+<li><strong>Update everything you control.</strong> Canonicals, internal links, Google Business Profile, social profiles, ads, email signatures.</li>
+<li><strong>Ask for key backlinks to be updated.</strong> Directories, partners and press mentions that still point at the old domain.</li>
+<li><strong>Monitor for months.</strong> Check redirects, 404s, indexing and clicks weekly at first, then monthly.</li>
+</ol>
+<table>
+<thead><tr><th>Mistake</th><th>What it does to SEO</th><th>The fix</th></tr></thead>
+<tbody>
+<tr><td>All old URLs sent to the new homepage</td><td>Google treats many as soft 404s and drops the old rankings</td><td>Page-to-page redirects from the map</td></tr>
+<tr><td>302 instead of 301</td><td>Old URLs can stay indexed and signals move slowly</td><td>Use permanent 301 redirects</td></tr>
+<tr><td>Redirect chains (old to http to www to new)</td><td>Slower crawling and diluted signals</td><td>Point every rule straight at the final URL</td></tr>
+<tr><td>Old domain allowed to expire</td><td>All redirects and old links stop working</td><td>Renew the old domain for the long term</td></tr>
+<tr><td>Content or URLs changed at the same time</td><td>Hard to tell what caused a drop</td><td>Move first, redesign later where possible</td></tr>
+</tbody>
+</table>
 
 <h2>Is a domain change worth it?</h2>
 <p>Your domain carries history: links from other websites, brand searches, bookmarks, printed material and customers' memories. A move usually brings a period of ranking fluctuation while Google processes it, and it can take weeks or months to settle. Before committing, ask:</p>
@@ -47719,18 +47862,6 @@ Support:           who to contact, and on what terms</code></pre>
 <li>Can you avoid a redesign or platform change at the same time? Changing one big thing at a time makes problems far easier to diagnose.</li>
 </ul>
 <p>Pick a quieter season too. Moving a gifting store's domain just before Diwali is asking for trouble. If you are weighing a .in against a .com, read <a href="/blog/in-vs-com-domain/">.in vs .com domains</a> first, and if the move is part of a wider rebrand, see <a href="/blog/rebranding-your-website/">what to update on your website after a rebrand</a>.</p>
-
-<h2>Common domain change scenarios</h2>
-<table>
-<thead><tr><th>Scenario</th><th>Main risk</th><th>Key step</th></tr></thead>
-<tbody>
-<tr><td>Rebrand to a new name</td><td>Losing brand searches for the old name</td><td>Mention the old name on the About page for a while</td></tr>
-<tr><td>.in to .com (or the reverse)</td><td>Partial redirects, mixed links</td><td>Keep identical paths and redirect the whole domain</td></tr>
-<tr><td>Hyphenated or long name to a short one</td><td>Printed material still pointing to the old one</td><td>Keep the old domain permanently</td></tr>
-<tr><td>Merging two websites</td><td>Pages with no matching destination</td><td>Map each old page to the closest relevant page</td></tr>
-<tr><td>Domain change plus new platform</td><td>Too many changes at once</td><td>Do them in separate stages if possible</td></tr>
-</tbody>
-</table>
 
 <h2>Plan before you move</h2>
 <ol>
@@ -47762,7 +47893,7 @@ Support:           who to contact, and on what terms</code></pre>
 <li>Test forms, payments, email notifications and tracking on the new domain.</li>
 </ul>
 
-<h2>How to change domain name without losing SEO in Search Console</h2>
+<h2>Use the Change of Address tool in Search Console</h2>
 <p>Google Search Console has a Change of Address tool built for this situation. The rough sequence:</p>
 <ol>
 <li>Verify the new domain in Search Console using the same Google account that owns the old property.</li>
@@ -47807,8 +47938,8 @@ Support:           who to contact, and on what terms</code></pre>
 <p>If traffic falls sharply and stays down, work through this <a href="/blog/website-traffic-dropped/">traffic drop checklist</a>.</p>
 
 <h2>FAQs</h2>
-<h3>How do I change my domain name without losing SEO?</h3>
-<p>Keep the old domain, add one-to-one 301 redirects, update the new site's settings and canonicals, use Search Console's Change of Address tool, and update profiles and important backlinks.</p>
+<h3>How do I change domain without losing SEO?</h3>
+<p>Keep the old domain, map every old URL to its new equivalent, set up one-hop 301 redirects, update canonicals and sitemaps, and use the Change of Address tool in Search Console. Then update profiles and key backlinks and monitor both properties for several months.</p>
 <h3>How long does it take for rankings to recover after a domain change?</h3>
 <p>It varies. Many sites settle within weeks to a few months if redirects are correct; there is no guaranteed timeline.</p>
 <h3>Can I let the old domain expire after moving?</h3>
@@ -56738,13 +56869,14 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     slug: 'rebranding-your-website',
     seoTitle: 'Website Rebrand SEO: How to Rebrand Without Losing Rankings',
     title: 'Rebranding Your Website: What to Update, How to Protect SEO and a Launch Checklist',
-    description: 'How to rebrand your website without losing SEO: what to update, keeping URLs, 301 redirect maps, moving domains in Search Console and a launch checklist.',
+    description: 'Website rebrand SEO guide: keep URLs, map 301 redirects, update titles, schema and Google Business Profile, and launch with a checklist that protects rankings.',
     date: '2026-10-01',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-seo-services'],
     body: `
-<p>A rebrand touches almost everything customers see: your name, logo, colours, tone of voice and sometimes your domain. The website is where it all comes together, and it's also where a rushed rebrand does the most damage, through broken links, confused customers and lost Google rankings.</p>
+<p>Website rebrand SEO comes down to changing as little as Google relies on as possible: keep your URLs and page content where you can, 301-redirect anything that moves, and update every mention of the old name so search engines connect the old brand with the new one. Rebrands that lose rankings usually changed the domain, URLs, content and design all at once without a redirect map.</p>
+<p>This guide covers what to update, how to protect rankings and a launch checklist.</p>
 <p>The short version: decide exactly what is changing, keep your existing URLs wherever you can, 301-redirect anything that must change, update every brand asset and every mention of the old name, use Search Console's Change of Address tool if the domain changes, then tell customers and watch your data closely for a few months. Here is how to do each step in a sensible order, with a launch checklist at the end.</p>
 
 <h2>Decide what's actually changing</h2>
@@ -56806,7 +56938,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Banners, photos with old signage, and PDFs such as brochures, price lists and menus</li>
   <li>A simple brand sheet with logo files, colour codes and fonts, so designers and staff use the same assets</li>
 </ul>
-<p>For the files you'll need, see <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>, and for choosing a palette that works on screen, <a href="/blog/choose-website-colours-fonts/">how to choose website colours and fonts</a>. A new logo is also a good moment to decide between a refresh and a full redesign; see <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a>.</p>
+<p>For the files you'll need, see <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>, and for choosing a palette that works on screen, how to choose website colours and fonts. A new logo is also a good moment to decide between a refresh and a full redesign; see website refresh vs redesign.</p>
 
 <h2>Find every mention of the old name</h2>
 <p>Old names hide in more places than you'd expect:</p>
@@ -56830,21 +56962,24 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ul>
 <p>Matching details everywhere help Google connect the new name to your existing reputation and reviews; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>.</p>
 
-<h2>Tell customers clearly</h2>
-<ul>
-  <li>A short homepage banner: "We're now New Name (formerly Old Name)"</li>
-  <li>A paragraph on the About page explaining why the name changed and what stays the same, such as the team, address, service and warranties</li>
-  <li>An email to existing customers and a message to WhatsApp contacts who have opted in</li>
-  <li>If bank or UPI details change, announce it only through official channels and tell customers how to verify, because changed payment details are a common hook for fraud</li>
-</ul>
-
-<h2>Protect your SEO through the switch</h2>
+<h2>Website rebrand SEO: protect rankings through the switch</h2>
 <ul>
   <li><strong>Benchmark first:</strong> note clicks, top pages, brand searches and monthly enquiries from Search Console and analytics</li>
   <li><strong>Keep the old name visible:</strong> people will search for it for months or years, so mention "formerly Old Name" on the About page and footer, and add it as an alternate name in your structured data</li>
-  <li><strong>Test on staging</strong> and launch in a quieter season; see <a href="/blog/staging-sites-explained/">staging sites explained</a></li>
+  <li><strong>Test on staging</strong> and launch in a quieter season; see staging sites explained</li>
   <li><strong>Win the new brand search:</strong> a brand-new name has no search history, so make sure the homepage, profiles and listings all use it consistently; see <a href="/blog/rank-for-your-business-name/">how to rank for your business name</a></li>
 </ul>
+
+<table>
+<thead><tr><th>What changes</th><th>SEO risk</th><th>What to do</th></tr></thead>
+<tbody>
+<tr><td>Logo, colours, fonts only</td><td>Low</td><td>Update images, alt text and favicon</td></tr>
+<tr><td>Business name, same domain</td><td>Low to medium</td><td>Update titles, schema, About page and listings</td></tr>
+<tr><td>Page URLs or structure</td><td>Medium to high</td><td>Redirect map with one-hop 301s</td></tr>
+<tr><td>New domain</td><td>High</td><td>301s, Change of Address, keep the old domain</td></tr>
+<tr><td>Content rewritten</td><td>Medium</td><td>Keep the topics and headings pages already rank for</td></tr>
+</tbody>
+</table>
 
 <h2>Rebrand launch checklist</h2>
 <h3>Before launch</h3>
@@ -56869,18 +57004,9 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Compare clicks and enquiries with your benchmark, and be patient while Google updates titles, site name and your profile</li>
 </ul>
 
-<h2>Common rebrand mistakes</h2>
-<ul>
-  <li>Changing name, domain, design and URL structure all at once with no redirect map</li>
-  <li>Redirecting every old page to the homepage</li>
-  <li>Letting the old domain expire a year later, breaking every redirect and old email address</li>
-  <li>Forgetting SEO title templates, schema and invoice templates that still show the old name</li>
-  <li>Removing every trace of the old name, so people searching for it can't find you</li>
-</ul>
-
 <h2>FAQs</h2>
-<h3>Will rebranding my website hurt my Google rankings?</h3>
-<p>A new logo and colours on the same URLs carries little risk. A name change can affect brand searches for a while, and a domain change carries the most risk. Keeping URLs, redirecting carefully and monitoring Search Console keeps any dip as small and short as possible.</p>
+<h3>How do I handle website rebrand SEO without losing rankings?</h3>
+<p>Keep URLs and content where you can, 301-redirect every URL that changes, update titles, schema and listings with the new name, and check Search Console for 404s after launch. A name change on the same domain is usually low risk; a new domain needs the most care.</p>
 <h3>How long should I keep 301 redirects after a rebrand?</h3>
 <p>Google's guidance has been at least a year, but many businesses keep them indefinitely because old links and bookmarks keep sending visitors. Keep the old domain renewed for as long as the redirects matter.</p>
 <h3>Do I need to change my domain when I change my business name?</h3>
@@ -56890,7 +57016,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h3>Should I mention my old name on the new website?</h3>
 <p>Yes. A "formerly Old Name" line on the About page and footer, plus an alternate name in structured data, helps customers and Google connect the two names.</p>
 
-<p>Planning a rebrand and want the website side handled carefully? I map redirects, update every brand touchpoint on a staging copy and monitor Search Console after launch. See <a href="/website-redesign/">website redesign</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> to protect your rankings through the change.</p>
+<p>Planning a rebrand? A <a href="/website-redesign/">website redesign</a> can carry the new brand with a redirect map and launch checks, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to handle the technical side.</p>
 `,
   },
   {

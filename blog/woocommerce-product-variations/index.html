@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WooCommerce Product Variations (Variants): Setup and Stock</title>
-  <meta name="description" content="How to set up WooCommerce product variations: attributes vs variations, global attributes, bulk editing, variation images, swatches, stock, SKUs and SEO.">
+  <title>Product-Type Variations in WooCommerce: Setup Guide</title>
+  <meta name="description" content="Product-type variations in WooCommerce: choose Variable product, add attributes, create variations with their own price, stock, SKU, images and swatches.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/woocommerce-product-variations/">
-  <meta property="og:title" content="WooCommerce Product Variations (Variants): Setup and Stock">
-  <meta property="og:description" content="How to set up WooCommerce product variations: attributes vs variations, global attributes, bulk editing, variation images, swatches, stock, SKUs and SEO.">
+  <meta property="og:title" content="Product-Type Variations in WooCommerce: Setup Guide">
+  <meta property="og:description" content="Product-type variations in WooCommerce: choose Variable product, add attributes, create variations with their own price, stock, SKU, images and swatches.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-woocommerce-product-variations.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/woocommerce-product-variations/#article",
       "headline": "WooCommerce Product Variations: How to Set Up Sizes, Colours, Stock and Swatches",
-      "description": "How to set up WooCommerce product variations: attributes vs variations, global attributes, bulk editing, variation images, swatches, stock, SKUs and SEO.",
+      "description": "Product-type variations in WooCommerce: choose Variable product, add attributes, create variations with their own price, stock, SKU, images and swatches.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/woocommerce-product-variations/",
       "image": "https://samverse.space/assets/og/blog-woocommerce-product-variations.png",
       "articleSection": "E-commerce",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/ecommerce/">E-commerce</a></nav>
           <a class="post-cat" href="/blog/topic/ecommerce/">E-commerce</a>
           <h1>WooCommerce Product Variations: How to Set Up Sizes, Colours, Stock and Swatches</h1>
-          <p class="post-dek">How to set up WooCommerce product variations: attributes vs variations, global attributes, bulk editing, variation images, swatches, stock, SKUs and SEO.</p>
+          <p class="post-dek">Product-type variations in WooCommerce: choose Variable product, add attributes, create variations with their own price, stock, SKU, images and swatches.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WooCommerce%20Product%20Variations%3A%20How%20to%20Set%20Up%20Sizes%2C%20Colours%2C%20Stock%20and%20Swatches%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-product-variations%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,6 +153,7 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
+              <li><a href="#product-type-variations-which-product-type-do-you-need">Product-type variations: which product type do you need?</a></li>
               <li><a href="#attributes-vs-variations">Attributes vs variations</a></li>
               <li><a href="#global-vs-custom-attributes">Global vs custom attributes</a></li>
               <li><a href="#how-to-set-up-a-variable-product-step-by-step">How to set up a variable product, step by step</a></li>
@@ -168,13 +169,35 @@
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Attributes (size, colour) and their terms combine into variations, and each variation can have its own price, SKU, stock and image; use global attributes for anything shoppers filter by.</li>
-              <li>Generate only the combinations you sell, use bulk actions or CSV import for large catalogues, and add swatches and size charts so shoppers pick the right option first time.</li>
-              <li>Above WooCommerce's AJAX variation threshold (30 by default at the time of writing) unavailable combinations are no longer greyed out in advance, so keep variation sets lean and keep one URL per product for SEO.</li>
+              <li>Product-type variations come from choosing Variable product in the Product type dropdown, adding attributes used for variations, then generating variations.</li>
+              <li>Each variation can have its own price, SKU, stock and image; a variation without a price will not show on the product page.</li>
+              <li>Use global attributes for options shared across products, keep combinations to what you really stock, and add swatches and size charts to help buyers choose.</li>
             </ul>
           </div>
-<p>If you sell a T-shirt in five sizes and four colours, you don't want 20 separate products. WooCommerce's <strong>variable products</strong> let customers choose options on one product page, and each combination, called a variation, can have its own price, SKU, stock level and image.</p>
+<p>Product-type variations in WooCommerce come from setting the Product type dropdown in the Product data box to Variable product, adding attributes such as size or colour with "Used for variations" ticked, then generating the variations. Each combination can then have its own price, SKU, stock level and image, all on one product page.</p>
+<p>So instead of 20 separate products for a T-shirt in five sizes and four colours, you get one product where customers choose their option.</p>
 <p>The quick version: set the product type to "Variable product", add attributes such as Size and Colour, tick "Used for variations", generate the variations, then give each one a price, SKU, stock and image. A variation with no price won't be sold, so don't skip that step. The rest of this guide covers each step properly, plus bulk editing, swatches, performance limits and SEO.</p>
+
+<h2 id="product-type-variations-which-product-type-do-you-need">Product-type variations: which product type do you need?</h2>
+<p>WooCommerce has four core product types. Only one of them creates variations, so pick the type first:</p>
+<table>
+<thead><tr><th>Product type</th><th>What it is</th><th>Use it for</th><th>Variations?</th></tr></thead>
+<tbody>
+<tr><td>Simple product</td><td>One item, one price, one stock count</td><td>A book, a single-size item</td><td>No</td></tr>
+<tr><td>Variable product</td><td>One product with selectable options</td><td>Sizes, colours, weights, pack sizes</td><td>Yes, each with its own price, SKU, stock and image</td></tr>
+<tr><td>Grouped product</td><td>A set of separate products shown together</td><td>A collection where each item is bought individually</td><td>No, each child is its own product</td></tr>
+<tr><td>External/Affiliate product</td><td>Listed on your site, sold elsewhere</td><td>Affiliate or marketplace links</td><td>No</td></tr>
+</tbody>
+</table>
+<h3>Quick setup checklist</h3>
+<ol>
+<li>Product data: set Product type to Variable product.</li>
+<li>Attributes: add a global or custom attribute and tick "Used for variations".</li>
+<li>Variations: choose "Generate variations" or add them one by one.</li>
+<li>Give every variation a regular price; without one it won't appear.</li>
+<li>Add SKU, stock and an image for each variation where they differ.</li>
+<li>Set the default form values so the page opens on your most popular option.</li>
+</ol>
 
 <h2 id="attributes-vs-variations">Attributes vs variations</h2>
 <p>The terms get mixed up, so it helps to be precise:</p>
@@ -188,6 +211,12 @@
 </table>
 <p>Attributes can also be purely descriptive. A "Fabric: Cotton" attribute that isn't used for variations simply shows in the Additional information tab and, if it's global, can power filters. Only attributes ticked as "Used for variations" create choices for the shopper.</p>
 
+<aside class="inline-cta">
+  <strong>Need help with online stores?</strong>
+  <p>Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout.</p>
+  <div><a href="/woocommerce-developer/" class="link-inline">See Online Stores →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WooCommerce%20Product%20Variations%3A%20How%20to%20Set%20Up%20Sizes%2C%20Colours%2C%20Stock%20and%20Swatches%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+</aside>
+
 <h2 id="global-vs-custom-attributes">Global vs custom attributes</h2>
 <table>
   <thead><tr><th></th><th>Global attributes</th><th>Custom attributes</th></tr></thead>
@@ -199,12 +228,6 @@
   </tbody>
 </table>
 <p>Use global attributes for common options. They keep spelling consistent ("Navy" rather than "navy blue" on one product and "Navy Blue" on another), and they are what attribute filters rely on; see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a>.</p>
-
-<aside class="inline-cta">
-  <strong>Need help with online stores?</strong>
-  <p>Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout.</p>
-  <div><a href="/woocommerce-developer/" class="link-inline">See Online Stores →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WooCommerce%20Product%20Variations%3A%20How%20to%20Set%20Up%20Sizes%2C%20Colours%2C%20Stock%20and%20Swatches%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
-</aside>
 
 <h2 id="how-to-set-up-a-variable-product-step-by-step">How to set up a variable product, step by step</h2>
 <ol>
@@ -281,8 +304,8 @@
 </ul>
 
 <h2 id="faqs">FAQs</h2>
-<h3>What is the difference between an attribute and a variation in WooCommerce?</h3>
-<p>An attribute is an option type, like Size, with terms such as S, M and L. A variation is one purchasable combination of those terms, like Medium and Blue, with its own price, stock and SKU.</p>
+<h3>What are product-type variations in WooCommerce?</h3>
+<p>They are the options you create after setting a product's type to Variable product. You add attributes such as size and colour, then WooCommerce creates a variation for each combination, and each variation can have its own price, SKU, stock and image.</p>
 <h3>Why is my WooCommerce variation not showing?</h3>
 <p>The usual causes are a missing price, the variation being disabled, it being out of stock with out-of-stock items hidden, or the attribute not ticked as "Used for variations". Check each in the Variations and Attributes tabs.</p>
 <h3>How many variations can a WooCommerce product have?</h3>
@@ -291,6 +314,8 @@
 <p>Each variation can have one image by default. Several gallery images per variation need a plugin or a theme that supports it.</p>
 <h3>Do I need a plugin for colour swatches?</h3>
 <p>Usually, yes, unless your theme or product template already includes them. Choose a well-maintained option and check it doesn't add heavy scripts to every page.</p>
+<h3>What is the difference between an attribute and a variation?</h3>
+<p>An attribute is the option type and its values, such as Size with S, M and L. A variation is one purchasable combination of those values, such as Size M in Blue, with its own price and stock.</p>
 
 <p>Setting up a store with lots of sizes, colours or options, or struggling with slow variable products? I configure attributes, variations, swatches and stock properly and test every option before launch. See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 
@@ -328,6 +353,7 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
+              <li><a href="#product-type-variations-which-product-type-do-you-need">Product-type variations: which product type do you need?</a></li>
               <li><a href="#attributes-vs-variations">Attributes vs variations</a></li>
               <li><a href="#global-vs-custom-attributes">Global vs custom attributes</a></li>
               <li><a href="#how-to-set-up-a-variable-product-step-by-step">How to set up a variable product, step by step</a></li>
