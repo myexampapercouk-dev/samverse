@@ -3797,7 +3797,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'Real Estate Website Must-Haves: 14 Features Builders, Developers and Brokers Need to Generate Site Visits',
     description: 'The 14 features a real estate website needs: project pages, floor plans, price on request, site visits, brochures, RERA details, CRM and call tracking.',
     date: '2026-09-27',
-    updated: '2026-10-21',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['real-estate-website-design', 'landing-page-design', 'wordpress-seo-services'],
     body: `
@@ -3894,7 +3894,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li><strong>Regional languages:</strong> a Marathi, Hindi or other language version helps in some markets, but only if your sales team can answer enquiries in that language.</li>
   <li><strong>Skip:</strong> autoplay video headers, heavy sliders, pop-ups that appear before the page has loaded and chatbots that cannot answer price or availability questions. They slow the page and bury the booking button.</li>
 </ul>
-<p>Visitors from property ads mostly arrive on phones, so every feature on this list has to load quickly over mobile data. When a campaign needs a page of its own, <a href="/landing-page-design/">landing page design</a> covers fast single-project pages built for ads.</p>
+<p>Visitors from property ads mostly arrive on phones, so every feature on this list has to load quickly over mobile data. When a campaign needs a page of its own, landing page design covers fast single-project pages built for ads.</p>
 
 <p>Contractors and builders working on projects should also read <a href="/blog/website-for-construction-companies/">websites for construction companies</a>.</p>
 
@@ -3907,6 +3907,11 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>For launches, and for buyers in other cities or abroad, a walkthrough video or 360-degree tour often is, as long as it loads only when tapped and renders are labelled as artist's impressions. For a resale listing, a short phone video is usually enough.</p>
 <h3>Do I need a CRM for my real estate website?</h3>
 <p>Not at the start. A Google Sheet that receives every lead with its project and source is enough for a small team. Once several people handle leads across projects and campaigns, a CRM makes follow-up and reporting easier, and website forms can feed it directly.</p>
+
+<h3>Should NRI buyers get a separate section?</h3>
+<p>If NRIs are a real share of your buyers, yes: a short page covering video site visits, time-zone-friendly call slots, how documents and payments are usually handled, and a contact who replies on WhatsApp. Keep legal and tax points general.</p>
+<h3>How do I keep floor plans and price lists up to date on the website?</h3>
+<p>Store them as fields on each project page rather than as images inside the text, so your team can replace one file or one starting price in the dashboard. Date every price sheet and remove superseded ones, so old PDFs do not keep circulating.</p>
 
 <p>If you want a site with these features, built around how your sales team actually works, see <a href="/real-estate-website-design/">real estate website design</a>. Share your current site or a project brochure and I will review it free, suggest which features to start with and send a fixed quote.</p>
 `,
@@ -12637,7 +12642,7 @@ function my_only_free_shipping( $rates ) {
     title: 'Privacy Policy and Cookie Consent for Indian Business Websites: DPDP Basics, GA4, Meta Pixel and Consent Mode v2',
     description: 'What an Indian business website privacy policy should cover under the DPDP Act, when GA4 and Meta Pixel need cookie consent, and Consent Mode v2 basics.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
@@ -12750,6 +12755,9 @@ function my_only_free_shipping( $rates ) {
   <li>Set retention periods and delete old enquiries and data you no longer need.</li>
   <li>Have a lawyer or CA review the policy, and revisit it whenever you add a new tool.</li>
 </ol>
+
+<h2>Third-party tools to list in your privacy policy</h2>
+<p>Most small Indian websites share data with more services than the owner remembers. Before writing or updating the policy, open your site and list every tool that receives visitor data: Google Analytics and Tag Manager, the Meta Pixel, a WhatsApp chat widget, embedded YouTube videos and Google Maps, your form plugin and the email service it sends through, a CRM, the payment gateway and, for shops, the courier or shipping app. Each one belongs in the policy in plain words, with what it receives and why. Review the list whenever a plugin or marketing tool is added.</p>
 
 <h2>FAQs</h2>
 <h3>Is a privacy policy mandatory for websites in India?</h3>
@@ -22928,7 +22936,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
     title: 'Websites for Sports Academies: Programme Grids, Coach Credentials, Trial Sessions, Safety and Parent Updates',
     description: 'Plan a sports academy website: programmes by sport and age group, precise coach credentials, trial booking, batch timings, facilities, safety and results.',
     date: '2026-09-27',
-    updated: '2026-10-22',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['website-for-schools-and-coaching', 'wordpress-website-development', 'landing-page-design'],
     body: `
@@ -23040,6 +23048,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>If you run more than one sport, yes. Each has its own age groups, coaches, facilities and searches, such as "football coaching for kids in Wakad", and its own page lets you answer them properly.</p>
 <h3>Can our coaches update batch timings and notices themselves?</h3>
 <p>Yes. Timings, notices and camp dates can be set up as content that staff edit from the dashboard, without calling a developer.</p>
+<h3>How should a multi-centre academy organise its website?</h3>
+<p>Give each centre its own page with its address, map, batches, timings, facility photos and a trial form that sends enquiries to that centre's coordinator. Shared pages can cover coaches, safety and the programme ladder, with links into each centre.</p>
 
 <p>If your academy is online today as little more than a logo and a trophy photo, I can build a site around a programme grid, coach profiles with checkable credentials, trial booking and a notices page. My page on <a href="/website-for-schools-and-coaching/">education and coaching websites</a> explains how these projects run, starting with a free review and a fixed quote.</p>
 `,
@@ -23666,7 +23676,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
     title: 'How to Write Meta Titles and Descriptions That Get Clicks (With E-commerce Examples)',
     description: 'How to write meta titles and descriptions that get clicks: lengths, formulas, WordPress setup, and examples for product, category and flash sale pages.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
     body: `
@@ -23804,6 +23814,9 @@ Description: Buy %title% online. %excerpt%</code></pre>
 </ol>
 <p>More in <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>. Titles and descriptions are one part of the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>, so check the rest of the page too.</p>
 
+<h2>Meta titles and descriptions for Indian searchers</h2>
+<p>If most of your buyers are in India, write for how they search. Include the city or "India" where the page genuinely serves that area, such as "WordPress Developer in Pune" or "Kurtis Online India". For shops, mention what Indian shoppers check first when it is true for the page: cash on delivery, free shipping above a threshold, easy returns or GST invoices. Keep rupee prices out of descriptions unless you update them, because a stale price in a snippet costs trust. Test the result on a phone, since that is where most Indian searches happen and long titles get cut sooner.</p>
+
 <h2>FAQs</h2>
 <h3>How long should a meta title and meta description be?</h3>
 <p>Roughly 50 to 60 characters for the title and 120 to 155 for the description. Google cuts them off by pixel width, so titles with wide letters or capitals get truncated sooner. Use the preview in Yoast or Rank Math to check.</p>
@@ -23815,8 +23828,10 @@ Description: Buy %title% online. %excerpt%</code></pre>
 <p>Google rewrites titles that are too long, repetitive or don't match the page, and often writes its own snippet when page text fits the search better. Keep your tags accurate and close to the page's main heading and content, and they'll be used more often.</p>
 <h3>Do I need a unique meta description for every product?</h3>
 <p>Ideally, but on a large store it isn't realistic to write every one by hand. Hand-write your top categories and best sellers, and use a template with the product name and short description for the rest. That's far better than empty or identical descriptions.</p>
+<h3>Should I write meta titles and descriptions in Hindi or other Indian languages?</h3>
+<p>Only for pages whose content is in that language. Google matches the snippet to the page, so a Hindi description on an English page tends to be ignored or rewritten. If you publish language versions, give each its own title and description.</p>
 
-<p>If your pages get impressions but few clicks, I can review your titles and descriptions, rewrite the ones that matter and set sensible templates for the rest. See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or for online stores, <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<p>If your pages get impressions but few clicks, I can review your titles and descriptions, rewrite the ones that matter and set sensible templates for the rest. See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or for online stores, WooCommerce development.</p>
 `,
   },
   {
@@ -26432,12 +26447,12 @@ IN       (blank)  18.0000  IGST      1</code></pre>
     title: 'Website Ownership Checklist: Every Account Your Business Should Own, How to Check Who Controls It, and What to Give Your Developer',
     description: 'Website ownership checklist: domain, DNS, hosting, WordPress, email, Google accounts, licences and payment gateways, and how to check who owns each.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-migration', 'wordpress-maintenance'],
     body: `
 <p>Your business should own every account its website depends on: the domain registrar, DNS, hosting, the WordPress administrator account, business email, Google Search Console, Analytics and Business Profile, any premium theme or plugin licences, and the payment gateway if you take payments. Each should be registered in your business name, use an email address you control, and let you add or remove other people. Developers and agencies should work through their own user accounts, never as the owner.</p>
-<p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, the domain and hosting should be registered in your name, you get your own administrator login, and any temporary access I used can be removed at the end. If the accounts currently sit in someone else's name, I can help you move them into yours, and a site on a previous developer's server can be moved to hosting you own through <a href="/wordpress-migration/">WordPress migration</a>.</p>
+<p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, the domain and hosting should be registered in your name, you get your own administrator login, and any temporary access I used can be removed at the end. If the accounts currently sit in someone else's name, I can help you move them into yours, and a site on a previous developer's server can be moved to hosting you own.</p>
 <p>This checklist is for confirming ownership before there's a problem. If you're already locked out, <a href="/blog/regain-website-access-old-developer/">regaining control from a previous developer</a> covers recovery, step by step.</p>
 
 <h2>Ownership vs access: the difference that matters</h2>
@@ -26542,6 +26557,9 @@ Paid by (card or account):
 Last checked:</code></pre>
 <p>Switch on two-factor authentication wherever it's offered, make sure recovery emails and phone numbers belong to the business rather than a former employee, and put every renewal date in a shared calendar. The <a href="/blog/domain-hosting-renewal-checklist/">domain, hosting, email and licence renewals checklist</a> helps you track them. Review the record once a year, and whenever a developer, agency or staff member leaves.</p>
 
+<h2>What to do when a staff member who managed the website leaves</h2>
+<p>Ownership problems often start inside the business, not with a developer. When the person who set up the domain, email or Google accounts leaves, check the ownership record the same week: confirm each account's owner is a role address such as admin@ rather than their personal email, remove their user accounts, change shared passwords and move two-step verification to a company phone.</p>
+
 <h2>FAQs</h2>
 <h3>Is it normal for a developer to register my domain for me?</h3>
 <p>It's common, and it's fine if they register it in your name, with your email, in an account you can log in to. The problem is a domain registered in the developer's own name or reseller account, because the registrar then treats them as the owner.</p>
@@ -26553,6 +26571,8 @@ Last checked:</code></pre>
 <p>An Owner can add and remove users and manage the property's settings. A Full user can see all the data and take most actions, but can't manage other users. Your business should be an Owner; developers and agencies only need Full access.</p>
 <h3>Who owns the design and content of my website?</h3>
 <p>It depends on your agreement, which is why it should be written down before work starts. Many agreements transfer ownership once the final payment is made, while the developer may keep the right to show the work in a portfolio. This isn't legal advice; ask a lawyer to check anything important.</p>
+<h3>What should I do if the domain is registered in a former employee's name?</h3>
+<p>Ask them, while you are still in touch, to change the registrant details to the business or start a transfer to your own registrar account. If they cannot be reached, contact the registrar with proof of business ownership and follow its dispute or change-of-registrant process.</p>
 
 <p>Planning a new site or taking over an existing one? When you <a href="/hire-wordpress-developer/">hire a WordPress developer</a> through Samverse, every account stays in your name and you get a written handover at the end. If your site is still on a previous developer's server, <a href="/wordpress-migration/">WordPress migration</a> moves it to hosting you own without downtime.</p>
 `,
@@ -34178,7 +34198,7 @@ find wp-content/uploads -name "*.php"</code></pre>
     title: 'Hosting Account Suspended for Malware? What the Notice Means and How to Get Your Site Back Online',
     description: 'Hosting account suspended for malware? What the notice means, how to get access, clean every site, get reinstated by your host and stop it happening again.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-migration', 'wordpress-maintenance'],
     body: `
@@ -34278,6 +34298,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 
 <h3>Should you change hosts?</h3>
 <p>Not straight away. Moving an infected site just moves the problem, and the new host's scanner may suspend it too. Clean first. If suspensions keep happening, support was slow or unhelpful, or your plan puts many sites under one hosting user with no isolation, a better host may be worth it; see <a href="/blog/choose-wordpress-hosting-india/">how to choose WordPress hosting in India</a>.</p>
+
+<h2>Keep a recovery kit ready before anything goes wrong</h2>
+<p>A suspension is far easier to handle when a few things live outside the hosting account. Keep an off-server backup of files and database that is updated automatically, a note of your registrar and DNS logins, the host's support and abuse contact details, and the email address the account is registered to. Store a copy of your important email elsewhere if mail runs on the same hosting. With those in place, you can clean, restore or move the site the same day instead of waiting for the host to grant access.</p>
 
 <h2>FAQs</h2>
 <h3>Why did my hosting provider suspend my account for malware?</h3>
@@ -62072,7 +62095,7 @@ if ( ! $link ) {
     title: 'Fair Payment Terms for a Website Project: Advances, Milestones, GST Invoices, Late Payments, Refunds and Red Flags',
     description: 'Fair website payment terms: the advance, milestones tied to deliverables, GST invoices, late payments, refunds, cancellations and red flags to avoid.',
     date: '2026-10-01',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Pricing',
     related: ['wordpress-website-development', 'hire-wordpress-developer'],
     body: `
@@ -62192,6 +62215,9 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>No cancellation terms at all.</li>
 </ul>
 
+<h2>Paying a freelancer versus an agency</h2>
+<p>The same principles apply to both, but the paperwork differs. An agency usually has a standard contract and payment schedule; read it for the advance, how milestones are approved and what happens to work in progress if you cancel. A freelancer may work from a shorter proposal, so make sure the payment schedule, the deliverable for each instalment and the ownership of accounts are written there, not only agreed on a call. With either, pay to a business account in the name on the invoice, keep every invoice and receipt, and avoid paying the full amount upfront, however small the project feels.</p>
+
 <h2>FAQs</h2>
 <h3>How much advance should I pay for a website?</h3>
 <p>A portion of the total, enough to reserve the developer's time and cover the early planning and design, not most of the price. Larger projects should spread the rest across milestones you can check.</p>
@@ -62203,6 +62229,8 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>That's what revision rounds are for, so use them with clear, consolidated feedback. If you decide to stop altogether, the cancellation terms decide what you pay for work done and what, if anything, is refunded.</p>
 <h3>Should hosting and the domain be part of the developer's invoice?</h3>
 <p>It's better to pay for them directly, in your own name. The developer can set them up, but you keep control whatever happens.</p>
+<h3>Can I pay a website developer in instalments after launch?</h3>
+<p>Some developers agree to it, usually for larger projects with a clear schedule in the contract. Expect the site, admin access or ownership transfer to be tied to the final instalment, and get the dates and amounts in writing before work starts.</p>
 
 <p>Planning a new website and want the scope, price and payment schedule agreed before any work starts? See <a href="/wordpress-website-development/">WordPress website development</a> for how a project runs, or <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for fixes, redesigns and ongoing work. You'll get a fixed quote after a free review.</p>
 `,
