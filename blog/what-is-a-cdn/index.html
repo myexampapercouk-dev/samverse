@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What Is a Website CDN? How It Works and When You Need One</title>
-  <meta name="description" content="What is a website CDN? How CDN servers deliver your files from near each visitor, what a CDN file is, Cloudflare vs BunnyCDN vs QUIC.cloud, and safe setup.">
+  <meta name="description" content="What is a website CDN? A network of servers that delivers your files from near each visitor. How it works, CDN vs hosting, when you need one and setup.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/what-is-a-cdn/">
   <meta property="og:title" content="What Is a Website CDN? How It Works and When You Need One">
-  <meta property="og:description" content="What is a website CDN? How CDN servers deliver your files from near each visitor, what a CDN file is, Cloudflare vs BunnyCDN vs QUIC.cloud, and safe setup.">
+  <meta property="og:description" content="What is a website CDN? A network of servers that delivers your files from near each visitor. How it works, CDN vs hosting, when you need one and setup.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-what-is-a-cdn.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/what-is-a-cdn/#article",
       "headline": "What Is a CDN? How a Content Delivery Network Speeds Up Your Website, and When You Need One",
-      "description": "What is a website CDN? How CDN servers deliver your files from near each visitor, what a CDN file is, Cloudflare vs BunnyCDN vs QUIC.cloud, and safe setup.",
+      "description": "What is a website CDN? A network of servers that delivers your files from near each visitor. How it works, CDN vs hosting, when you need one and setup.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/what-is-a-cdn/",
       "image": "https://samverse.space/assets/og/blog-what-is-a-cdn.png",
       "articleSection": "Speed",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Speed</a>
           <h1>What Is a CDN? How a Content Delivery Network Speeds Up Your Website, and When You Need One</h1>
-          <p class="post-dek">What is a website CDN? How CDN servers deliver your files from near each visitor, what a CDN file is, Cloudflare vs BunnyCDN vs QUIC.cloud, and safe setup.</p>
+          <p class="post-dek">What is a website CDN? A network of servers that delivers your files from near each visitor. How it works, CDN vs hosting, when you need one and setup.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=What%20Is%20a%20CDN%3F%20How%20a%20Content%20Delivery%20Network%20Speeds%20Up%20Your%20Website%2C%20and%20When%20You%20Need%20One%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwhat-is-a-cdn%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,8 +153,9 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#how-a-cdn-works">How a CDN works</a></li>
+              <li><a href="#what-is-a-website-cdn-and-how-does-it-work">What is a website CDN, and how does it work?</a></li>
               <li><a href="#what-is-a-cdn-server-and-what-is-a-cdn-file">What is a CDN server, and what is a CDN file?</a></li>
+              <li><a href="#cdn-vs-web-hosting-vs-caching-plugin">CDN vs web hosting vs caching plugin</a></li>
               <li><a href="#what-a-cdn-helps-with-and-what-it-doesn-t">What a CDN helps with, and what it doesn't</a></li>
               <li><a href="#does-your-website-need-a-cdn">Does your website need a CDN?</a></li>
               <li><a href="#types-of-cdn-setup">Types of CDN setup</a></li>
@@ -173,10 +174,10 @@
               <li>Set it up with DNS records copied carefully, cart, checkout and admin pages bypassed, and caches purged after updates, then test forms and checkout.</li>
             </ul>
           </div>
-<p>A CDN, or content delivery network, is a network of servers in many cities that keeps copies of your website's files, such as images, CSS and JavaScript, and delivers them from the location nearest each visitor. Your hosting server, called the origin, still holds the real website; the CDN sits in front of it and handles repeat requests, so pages load faster and your server does less work.</p>
+<p>What is a website CDN? A CDN, or content delivery network, is a network of servers in many cities that keeps copies of your website's files, such as images, CSS and JavaScript, and delivers them from the location nearest each visitor. Your hosting server, called the origin, still holds the real website; the CDN sits in front of it and handles repeat requests, so pages load faster and your server does less work.</p>
 <p>For most business websites a CDN is free or cheap, and it's worth having when visitors come from different regions or countries or your hosting is far from your customers. It won't fix a slow server, a heavy theme or huge images, though. Choosing and configuring a CDN, and checking it doesn't break forms or checkout, is one part of my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> work.</p>
 
-<h2 id="how-a-cdn-works">How a CDN works</h2>
+<h2 id="what-is-a-website-cdn-and-how-does-it-work">What is a website CDN, and how does it work?</h2>
 <ol>
   <li>A visitor in Chennai opens your page, and their browser requests your logo, stylesheet and photos.</li>
   <li>The CDN routes those requests to its nearest edge server, often in the same city or region.</li>
@@ -195,6 +196,20 @@
   <p>WordPress &amp; WooCommerce speed optimization service: a full audit, caching, image, plugin, script and database fixes, and a before-and-after report.</p>
   <div><a href="/wordpress-speed-optimization/" class="link-inline">See Speed Optimization →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22What%20Is%20a%20CDN%3F%20How%20a%20Content%20Delivery%20Network%20Speeds%20Up%20Your%20Website%2C%20and%20When%20You%20Need%20One%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
+
+<h2 id="cdn-vs-web-hosting-vs-caching-plugin">CDN vs web hosting vs caching plugin</h2>
+<p>These three are often confused, because all of them are sold as ways to make a site faster. They do different jobs and work together:</p>
+<table>
+  <thead><tr><th></th><th>Web hosting</th><th>Caching plugin</th><th>CDN</th></tr></thead>
+  <tbody>
+    <tr><td>What it is</td><td>The server that stores and runs your website</td><td>Software that saves ready-made pages on your server</td><td>A network of servers that keeps copies of your files near visitors</td></tr>
+    <tr><td>Where it works</td><td>One data centre</td><td>On your hosting server</td><td>Many cities and countries</td></tr>
+    <tr><td>Main benefit</td><td>Runs WordPress, the database and email</td><td>Faster server response, less work per visit</td><td>Shorter distance for each file, less load on your server</td></tr>
+    <tr><td>Can you skip it?</td><td>No</td><td>Rarely; most sites need one</td><td>Often, if server and visitors are in the same region</td></tr>
+    <tr><td>Examples</td><td>Shared, cloud or VPS plans</td><td>LiteSpeed Cache, WP Rocket</td><td>Cloudflare, BunnyCDN, QUIC.cloud</td></tr>
+  </tbody>
+</table>
+<p>A CDN never replaces hosting: if your server goes down, the CDN can only keep serving what it has cached, and forms, logins and checkout stop working.</p>
 
 <h2 id="what-a-cdn-helps-with-and-what-it-doesn-t">What a CDN helps with, and what it doesn't</h2>
 <table>
@@ -320,8 +335,9 @@ cf-cache-status: HIT</code></pre>
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#how-a-cdn-works">How a CDN works</a></li>
+              <li><a href="#what-is-a-website-cdn-and-how-does-it-work">What is a website CDN, and how does it work?</a></li>
               <li><a href="#what-is-a-cdn-server-and-what-is-a-cdn-file">What is a CDN server, and what is a CDN file?</a></li>
+              <li><a href="#cdn-vs-web-hosting-vs-caching-plugin">CDN vs web hosting vs caching plugin</a></li>
               <li><a href="#what-a-cdn-helps-with-and-what-it-doesn-t">What a CDN helps with, and what it doesn't</a></li>
               <li><a href="#does-your-website-need-a-cdn">Does your website need a CDN?</a></li>
               <li><a href="#types-of-cdn-setup">Types of CDN setup</a></li>

@@ -32,7 +32,7 @@
     <link>https://samverse.space/blog/signs-wordpress-site-hacked/</link>
     <guid>https://samverse.space/blog/signs-wordpress-site-hacked/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to tell if your WordPress site has been hacked: a 10-minute check with Google tools, the clear warning signs, and what to do first if something is wrong.</description>
+    <description>My WordPress site has been hacked: how to tell in 10 minutes with Google tools, the warning signs, a symptom table and the first steps to take right away.</description>
   </item>
   <item>
     <title>Private Clinic Website Checklist: 20 Things Every Doctor's Website Needs</title>
@@ -809,7 +809,7 @@
     <link>https://samverse.space/blog/what-is-a-cdn/</link>
     <guid>https://samverse.space/blog/what-is-a-cdn/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What is a website CDN? How CDN servers deliver your files from near each visitor, what a CDN file is, Cloudflare vs BunnyCDN vs QUIC.cloud, and safe setup.</description>
+    <description>What is a website CDN? A network of servers that delivers your files from near each visitor. How it works, CDN vs hosting, when you need one and setup.</description>
   </item>
   <item>
     <title>How to Add Google Maps to Your Website Without Slowing It Down: Embeds, the API, Click-to-Load Maps and Local Details</title>
@@ -1719,7 +1719,7 @@
     <link>https://samverse.space/blog/compare-website-quotes/</link>
     <guid>https://samverse.space/blog/compare-website-quotes/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Why are website quotes so different? Each one prices a different job. How to compare quotes in India line by line, what to include and red flags.</description>
+    <description>Why are website quotes different? Each one prices a different job. Compare quotes in India line by line, with a checklist, 3-year costs and red flags.</description>
   </item>
   <item>
     <title>Fixed Price vs Hourly Billing for Website Projects: Which Is Better, and Which Suits Your Project?</title>
@@ -1747,14 +1747,14 @@
     <link>https://samverse.space/blog/outsource-wordpress-development-india/</link>
     <guid>https://samverse.space/blog/outsource-wordpress-development-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Outsource WordPress development to India safely: how the process runs, white-label and NDAs, time zones, pricing models, QA checks and red flags.</description>
+    <description>Outsource WordPress development to India safely: which projects suit it, the process, white-label and NDAs, time zones, pricing models and red flags.</description>
   </item>
   <item>
     <title>Web Designer vs Web Developer vs WordPress Developer: What Each Does and Who You Need</title>
     <link>https://samverse.space/blog/web-designer-vs-web-developer/</link>
     <guid>https://samverse.space/blog/web-designer-vs-web-developer/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Web designer vs web developer vs WordPress developer: what each does, the key differences, who you need for your project and when one person can do both.</description>
+    <description>WordPress developer vs web designer: what each does, a task-by-task comparison, a checklist to decide who to hire and when one person can do both.</description>
   </item>
   <item>
     <title>What Does a WordPress Developer Actually Do? Roles, Skills and When to Hire One</title>
@@ -1817,7 +1817,7 @@
     <link>https://samverse.space/blog/hotel-booking-engine-channel-manager/</link>
     <guid>https://samverse.space/blog/hotel-booking-engine-channel-manager/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Booking engine vs channel manager: what each does, how they work with your PMS, website and OTAs, what to check and how to avoid overbooking.</description>
+    <description>Booking engine channel manager guide for hotels in India: what each does, how they sync with your PMS and OTAs, a setup checklist and overbooking fixes.</description>
   </item>
   <item>
     <title>Online Donations for NGOs and Trusts: Donation Pages, 80G Receipts, FCRA, Transparency and Volunteers</title>
@@ -1971,7 +1971,7 @@
     <link>https://samverse.space/blog/hostinger-website-slow-fix/</link>
     <guid>https://samverse.space/blog/hostinger-website-slow-fix/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Why is Hostinger so slow? Read hPanel resource limits, set up LiteSpeed Cache, a CDN and PHP, clean the database and plugins, and know when to upgrade.</description>
+    <description>Hostinger slow? Check hPanel resource limits, LiteSpeed Cache, CDN, PHP and plugins with this step-by-step checklist, and know when to upgrade your plan.</description>
   </item>
   <item>
     <title>Website Migration to Hostinger: How to Move a WordPress Site Without Downtime (3 Methods)</title>
@@ -2545,7 +2545,7 @@
     <link>https://samverse.space/blog/woocommerce-multi-vendor-marketplace/</link>
     <guid>https://samverse.space/blog/woocommerce-multi-vendor-marketplace/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to build a WooCommerce multi-vendor marketplace: choosing a plugin, commissions and payouts, the vendor onboarding process, GST and TCS, and hosting.</description>
+    <description>WooCommerce vendor onboarding step by step: seller documents, approval, store setup and test orders, plus plugins, commissions, payouts and GST in India.</description>
   </item>
   <item>
     <title>Lazy Loading Explained: Images, Videos and Iframes in WordPress (and When Not to Use It)</title>
@@ -2601,7 +2601,7 @@
     <link>https://samverse.space/blog/fix-cls-layout-shift/</link>
     <guid>https://samverse.space/blog/fix-cls-layout-shift/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to fix cumulative layout shift on a WordPress site: image sizes, fonts, ads, embeds, Elementor, lazy loading and cookie banners, and how to find what moves.</description>
+    <description>How do I fix cumulative layout shift on a WordPress site? A cause-by-cause CLS checklist for images, fonts, ads, Elementor and banners, and how to test it.</description>
   </item>
   <item>
     <title>How to Improve Interaction to Next Paint (INP) on WordPress</title>
@@ -2839,7 +2839,7 @@
     <link>https://samverse.space/blog/hreflang-multilingual-seo-india/</link>
     <guid>https://samverse.space/blog/hreflang-multilingual-seo-india/</guid>
     <pubDate>Wed, 30 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Hreflang tags for India: codes for Hindi, Marathi, Tamil and other Indian languages, return tags, x-default, HTML vs sitemap, plugins and errors.</description>
+    <description>A hreflang generator for Indian languages: codes for Hindi, Tamil, Marathi and more, ready-to-copy tags for hi-IN, en-IN, ta-IN and x-default, and checks.</description>
   </item>
   <item>
     <title>Websites for Cafes and Coffee Shops: What Customers Look For</title>
