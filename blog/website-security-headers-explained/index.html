@@ -229,6 +229,8 @@
 <pre><code>Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.youtube-nocookie.com</code></pre>
 <p>Be honest with yourself about 'unsafe-inline'. Most WordPress sites need it, and it means injected inline scripts can still run. The policy still blocks scripts from domains you haven't approved, which is a real improvement, but it isn't the strict CSP security guides describe.</p>
 
+<p>Headers are one layer. For ongoing patching, monitoring and clean-up, see <a href="/blog/wordpress-update-and-security-service/">WordPress update and security service</a>.</p>
+
 <h2 id="how-to-add-security-headers">How to add security headers</h2>
 <h3>.htaccess on Apache or LiteSpeed hosting</h3>
 <p>Most shared hosting runs Apache or LiteSpeed, which read the .htaccess file in your site's main folder. Back the file up first, then add this outside the "BEGIN WordPress" block, because WordPress rewrites that section. A typing mistake in .htaccess can take the site down with a 500 error, so check the site straight away and restore the backup if anything goes wrong:</p>

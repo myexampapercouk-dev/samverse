@@ -10466,6 +10466,8 @@ define( 'WP_DEBUG_LOG', true );
 define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Errors are then written to wp-content/debug.log. Tools &gt; Site Health is also worth a look after a big update.</p>
 
+<p>If the update option does not appear in the dashboard at all, see <a href="/blog/wordpress-update-button-missing/">WordPress update button missing</a> for the usual causes and fixes.</p>
+
 <h2>What to do if an update breaks your site</h2>
 <ol>
   <li><strong>Stop changing things.</strong> Note what you updated and what broke.</li>
@@ -12966,6 +12968,8 @@ function my_only_free_shipping( $rates ) {
 </ul>
 <p>Whatever the role, each person gets their own account. Shared logins make it impossible to remove one person without changing the password for everyone, and activity logs can't tell you who did what.</p>
 
+<p>Planning a network where Super Admins and site Administrators need different rights? See what <a href="/blog/wordpress-multisite-development-services/">WordPress multisite development services</a> cover, including roles and access across sites.</p>
+
 <h2>How to change a user's role</h2>
 <ol>
   <li>Go to <strong>Users &gt; All Users</strong> and click the person's name.</li>
@@ -13703,6 +13707,8 @@ function my_limit_links( $result, $tag ) {
 <h2>Layer 4: firewall rules for floods</h2>
 <p>If a bot hammers the form hundreds of times an hour, stop it before it reaches WordPress. A cloud firewall such as Cloudflare can rate-limit requests to the address your form posts to: Contact Form 7 submits through the WordPress REST API, while many other plugins use admin-ajax.php. Be careful with admin-ajax.php, because other features on your site use it too, so set limits generously and test. <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers rate limiting and false positives.</p>
 <p>Blocking whole countries is tempting but risky. If you get enquiries from NRIs, export buyers or overseas clients, a country block turns them away without either of you knowing.</p>
+
+<p>The spam tools available depend on the plugin you use; <a href="/blog/gravity-forms-vs-contact-form-7/">Gravity Forms vs Contact Form 7</a> covers how each one handles anti-spam options.</p>
 
 <h2>Close the other routes into your inbox</h2>
 <ul>
@@ -17707,6 +17713,8 @@ cf-cache-status: HIT</code></pre>
 </ul>
 <p>If several of these apply, start with the quick wins in <a href="/blog/get-more-enquiries-from-your-website/">ways to get more enquiries from your website</a>, then decide whether to handle the ongoing work in-house or hand it to someone.</p>
 
+<p>If you only want updates, backups and security handled, a narrower plan may be enough; see <a href="/blog/wordpress-update-and-security-service/">what a WordPress update and security service covers</a>.</p>
+
 <h2>Common combinations</h2>
 <ul>
   <li><strong>DIY management with professional maintenance.</strong> Often the best value for small businesses. Your team updates content and posts news; a developer handles the technical side.</li>
@@ -17926,6 +17934,8 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <p>A report-only starting point for a site using Google Analytics, Google Fonts and YouTube embeds might look like this. Your list will differ:</p>
 <pre><code>Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.youtube-nocookie.com</code></pre>
 <p>Be honest with yourself about 'unsafe-inline'. Most WordPress sites need it, and it means injected inline scripts can still run. The policy still blocks scripts from domains you haven't approved, which is a real improvement, but it isn't the strict CSP security guides describe.</p>
+
+<p>Headers are one layer. For ongoing patching, monitoring and clean-up, see <a href="/blog/wordpress-update-and-security-service/">WordPress update and security service</a>.</p>
 
 <h2>How to add security headers</h2>
 <h3>.htaccess on Apache or LiteSpeed hosting</h3>
@@ -18258,6 +18268,8 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   <li><strong>Ad-only versions:</strong> if you run ads with offer-specific variations, those pages can be kept out of Google, so they don't compete with the permanent page you want to rank.</li>
 </ul>
 
+<p>If the goal of a festival campaign is to collect sign-ups for early offers rather than sell straight away, a simpler opt-in page may fit better; see <a href="/blog/squeeze-page-vs-landing-page/">squeeze page vs landing page</a>.</p>
+
 <h2>What a festival landing page needs</h2>
 <ol>
   <li><strong>A headline with the offer and the occasion,</strong> such as "Diwali corporate gift hampers, delivered across Pune".</li>
@@ -18269,6 +18281,8 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   <li><strong>A short FAQ</strong> on delivery areas, bulk orders, customisation and returns.</li>
 </ol>
 <p>If you send ad traffic to the page, the headline should repeat what the ad promised; <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a> covers what usually goes wrong.</p>
+
+<p>For the search snippet on a festival sale page, see the <a href="/blog/flash-sale-collection-meta-title-description/">flash sale collection meta title and description</a> templates.</p>
 
 <h2>Offers, coupons and scheduling in WordPress</h2>
 <p>Set offers up in advance so nobody has to remember to switch them on at midnight:</p>
@@ -24004,6 +24018,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 Description: Buy %title% online. %excerpt%</code></pre>
 <p>Variable names differ between plugins and versions, so pick them from the plugin's variable list. Templates beat empty descriptions, but your important pages still deserve hand-written tags.</p>
 
+<p>Running a time-limited sale? See the <a href="/blog/flash-sale-collection-meta-title-description/">meta title and description templates for a flash sale collection</a>.</p>
+
 <h2>How to add meta titles and descriptions in WordPress</h2>
 <p>WordPress has no meta description field of its own, so you need an SEO plugin:</p>
 <ul>
@@ -27101,6 +27117,8 @@ Last checked:</code></pre>
 </table>
 <p>The right target is the newest version your plugins, theme and any custom code are tested with. WordPress.org's requirements page lists the version it currently recommends.</p>
 
+<p>An outdated PHP version can also hide newer WordPress and plugin releases from the dashboard; see <a href="/blog/wordpress-update-button-missing/">WordPress update button missing</a>.</p>
+
 <h2>Check your current PHP version</h2>
 <ul>
   <li><strong>In WordPress:</strong> Tools &gt; Site Health &gt; Info &gt; Server shows the PHP version, memory limit and other server settings. The Status tab warns if your version is outdated.</li>
@@ -27489,6 +27507,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     <tr><td>WPForms</td><td>Built-in anti-spam, reCAPTCHA, hCaptcha, Turnstile</td><td>Paid plans</td><td>Paid plans</td><td>Paid plans</td><td>Mostly in paid plans</td></tr>
   </tbody>
 </table>
+
+<p>Choosing between two of the most common options? See <a href="/blog/gravity-forms-vs-contact-form-7/">Gravity Forms vs Contact Form 7</a> for a head-to-head comparison.</p>
 
 <h2>Each plugin in brief</h2>
 <h3>Contact Form 7</h3>
@@ -27957,6 +27977,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 </ul>
 <p>Only call yourself an "authorised distributor" for a brand if you hold that status, and use brand logos and official product images only with permission. <a href="/blog/industrial-website-product-catalogue/">How to build a product catalogue website</a> covers category trees, spec tables and WooCommerce in catalogue mode in detail.</p>
 
+<p>If each dealer has negotiated rates that standard plugins cannot express, see <a href="/blog/woocommerce-custom-pricing-plugin-development/">WooCommerce custom pricing plugin development</a>.</p>
+
 <h2>Showing prices: public, on request or behind a dealer login</h2>
 <table>
   <thead>
@@ -27991,6 +28013,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>What happens next, and which documents you will ask for later, rather than collecting them on a public form</li>
 </ul>
 <p>Keep this separate from customer enquiries. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, a studio I built a website for, has a "Become a Design Partner" page with its own form, so partner applications never get mixed up with customer quote requests. If brands approach you about distribution, a short "For brands" page explaining your reach, warehouse and sales team, with its own enquiry form, does the same job.</p>
+
+<p>Distributors that stock lines from several brands often need supplier fields, stock feeds and order routing; see <a href="/blog/woocommerce-multiple-suppliers/">WooCommerce with multiple suppliers</a>.</p>
 
 <h2>Online B2B ordering with WooCommerce</h2>
 <p>Once regular customers reorder the same products every week, an ordering portal saves both sides time. WooCommerce can work as a B2B store for approved accounts:</p>
@@ -30018,6 +30042,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>The store needs looking after: updates, backups and security.</li>
 </ul>
 
+<p>Some businesses go further and run a marketplace of their own on WooCommerce. That means recruiting and approving sellers; see <a href="/blog/woocommerce-vendor-onboarding/">WooCommerce vendor onboarding</a> for how that process works.</p>
+
 <h2>Which suits you?</h2>
 <table>
   <thead><tr><th>Your situation</th><th>Lean towards</th></tr></thead>
@@ -30039,6 +30065,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>On your own store:</strong> the sale price minus gateway charges, shipping, packaging, COD and RTO costs, and a share of your hosting, plugins, maintenance and marketing.</li>
 </ul>
 <p>The marketing line is the one owners underestimate. A store with no traffic costs money every month and sells nothing. <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> lists every ongoing cost so you can build the sheet.</p>
+
+<p>If your own store will sell products from several suppliers, plan stock sync and order routing early; see <a href="/blog/woocommerce-multiple-suppliers/">WooCommerce with multiple suppliers</a>.</p>
 
 <h2>A hybrid strategy that works</h2>
 <ol>
@@ -35927,6 +35955,8 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 <h2>Backups, and restores</h2>
 <p>A backup stored only on the same server is not a backup; if the server fails or the site is hacked, it can go too. Ask for daily backups kept off-site, a retention period (for example, the last 30 days), and a test restore at least occasionally. For WooCommerce stores with orders arriving all day, more frequent database backups are sensible. The <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> covers what to ask for.</p>
 
+<p>Some providers sell updates and security as a smaller plan on their own; see <a href="/blog/wordpress-update-and-security-service/">WordPress update and security service</a> for what it should include.</p>
+
 <h2>Security monitoring</h2>
 <p>Security in a plan should mean more than an installed plugin. Expect malware scanning, login protection (limited attempts, two-factor authentication for admins), removal of unused plugins and admin accounts, file change alerts and someone who actually reads the alerts. Check whether malware cleanup is included if something gets through, or charged as a separate job.</p>
 
@@ -37095,6 +37125,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   </tbody>
 </table>
 <p>The exact menus differ between vendors and change over time, so check your theme's documentation. If the licence is in a former developer's account rather than your business's, ask for it to be transferred or buy your own, so updates don't stop when they move on.</p>
+
+<p>No update notice for the theme or a plugin? An inactive licence is one cause, but there are others; see <a href="/blog/wordpress-update-button-missing/">why the WordPress update button is missing</a>.</p>
 
 <h2>Before you update: four checks</h2>
 <ol>
@@ -40081,6 +40113,8 @@ add_action( 'after_setup_theme', function () {
   <li>Ask your host whether your plan can cope with a traffic spike</li>
   <li>Take a fresh backup, and make sure someone is available if checkout breaks</li>
 </ol>
+
+<p>Before a sale goes live, also update the sale page's search snippet; see the <a href="/blog/flash-sale-collection-meta-title-description/">flash sale collection meta title and description</a> templates.</p>
 
 <h2>Keep a maintenance log</h2>
 <p>A shared sheet with the date, task, plugin versions before and after, tests run and any issues. When something breaks, the log answers "what changed last?" in seconds, and it makes a handover to a new developer far easier.</p>
@@ -44268,6 +44302,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </table>
 <p>Which form plugin you use affects your options; <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a> covers which integrations each tends to offer.</p>
 
+<p>Some form plugins have far more CRM add-ons than others; see <a href="/blog/gravity-forms-vs-contact-form-7/">Gravity Forms vs Contact Form 7</a> if you are choosing a plugin with integrations in mind.</p>
+
 <h2>How the connection works</h2>
 <p>Whichever route you take, the flow is the same:</p>
 <ol>
@@ -45857,6 +45893,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li><strong>Launch, measure and expand.</strong> Track dispatch times, complaints and repeat buyers before adding categories or regions.</li>
 </ol>
 
+<p>If the store owns the listings and suppliers only fulfil orders, a marketplace plugin may be more than you need; see <a href="/blog/woocommerce-multiple-suppliers/">WooCommerce with multiple suppliers</a>.</p>
+
 <h2>Choosing a multi-vendor plugin</h2>
 <p>WooCommerce on its own sells one store's products. Well-known multi-vendor plugins include Dokan, WCFM Marketplace, MultiVendorX and WC Vendors, plus WooCommerce's own Product Vendors extension. Typical features include vendor registration and dashboards, store pages, commission and withdrawal settings, per-vendor orders and shipping, and product approval. Features differ by plan and change, so check each one's current feature list and pricing.</p>
 <p>Rather than asking which plugin is "best", test your shortlist against your own requirements on a staging site:</p>
@@ -45922,6 +45960,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
     <tr><td>Accepted vendor agreement, with version and date</td><td>Commission, payouts, returns and standards are agreed</td><td>Store goes live</td></tr>
   </tbody>
 </table>
+
+<p>For a detailed seller checklist, welcome emails and approval steps, see the guide to <a href="/blog/woocommerce-vendor-onboarding/">WooCommerce vendor onboarding</a>.</p>
 
 <h2>GST, TCS and legal basics for Indian marketplaces</h2>
 <p>A marketplace in India carries obligations that a normal online store doesn't. In broad terms, and subject to current rules, which do change:</p>
@@ -46347,6 +46387,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li>Don't stop the test the moment one version pulls ahead. Early leads often disappear.</li>
 </ul>
 <p>If the calculator says a test would need many months, choose a bolder change or use the low-traffic methods later in this guide.</p>
+
+<p>Sometimes the bigger question is the page format itself. Before testing headlines, check whether the offer suits a short opt-in page or a full page; see <a href="/blog/squeeze-page-vs-landing-page/">squeeze page vs landing page</a>.</p>
 
 <h2>What to test first</h2>
 <p>Test the elements that change a visitor's decision, not just the decoration. Roughly in order of likely impact:</p>
@@ -52585,6 +52627,8 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Keep the registration form short and ask for documents only if you really check them. Explain how long approval takes, and give a WhatsApp or phone contact for urgent orders.</p>
 <p>Decide who in your team approves accounts and how quickly. A dealer who registers and hears nothing for a week will go back to ordering by phone. A daily check of pending registrations, plus an email alert to the sales person for that region, keeps the process moving. Reject or hold doubtful applications politely with a reason.</p>
 
+<p>When tiers depend on contracts, formulas or data from another system, plugins can run out of options; see <a href="/blog/woocommerce-custom-pricing-plugin-development/">WooCommerce custom pricing plugin development</a>.</p>
+
 <h2>Setting up price tiers</h2>
 <p>Wholesale plugins usually let you set a price per role on each product or variation, or a global discount by role and category. Things to decide:</p>
 <ul>
@@ -55473,6 +55517,8 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Most uniform websites show a few stock images and a phone number. Buyers want more. For each product, show real photos from your production, available colours, fabric options, size range and customisation possibilities. A fabric page that explains blends, weights and care in simple terms helps a school principal or hotel manager choose without needing to visit.</p>
 <p>Keep product titles specific, such as a cotton-blend chef coat with contrast piping, rather than generic names. This helps both buyers and search. The guide on <a href="/blog/industrial-website-product-catalogue/">industrial product catalogues</a> covers catalogue structure in more detail.</p>
 
+<p>Pricing that changes by school, size range and order quantity may need custom rules; see <a href="/blog/woocommerce-custom-pricing-plugin-development/">WooCommerce custom pricing plugin development</a>.</p>
+
 <h2>Sampling, bulk quotes and minimum order quantities</h2>
 <p>Bulk buyers rarely order without seeing a sample. Make the sample process clear:</p>
 <ol>
@@ -56507,6 +56553,8 @@ Support:           who to contact, and on what terms</code></pre>
   <li><strong>Multi-step forms</strong> for complex requirements, with contact details on the last step. <a href="/blog/multi-step-forms-lead-qualification/">Multi-step forms for lead qualification</a> explains when this helps.</li>
   <li><strong>A quote basket</strong> for distributors with many SKUs, letting buyers add several products and quantities and send one request.</li>
 </ul>
+
+<p>File uploads, conditional fields and multi-step layouts are easier in some plugins than others; see <a href="/blog/gravity-forms-vs-contact-form-7/">Gravity Forms vs Contact Form 7</a> before building a detailed RFQ form.</p>
 
 <h2>File uploads: drawings, BOMs and specs</h2>
 <p>Engineering and fabrication buyers often have drawings, a bill of materials or a tender document. Allow uploads of PDF, DWG, DXF, STEP and spreadsheet files, with a clear size limit. For large files, offer a field for a shared link instead. Store uploads securely and make sure they reach the sales team, not just the website's media folder. Some buyers send confidential designs, so mention how you handle them, and offer an NDA if that is your practice.</p>
@@ -67264,6 +67312,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 </ol>
 <p>Then check every quote against the same list. <a href="/blog/compare-website-quotes/">How to compare website quotes</a> explains why quotes differ, and <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a> shows where cutting corners costs you later.</p>
 
+<p>A short email opt-in page is usually quicker to build than a full sales page, so name the format in the brief. <a href="/blog/squeeze-page-vs-landing-page/">Squeeze page vs landing page</a> explains how the two differ.</p>
+
 <h2>Quote checklist</h2>
 <ul>
   <li>Who writes the copy, and how many versions</li>
@@ -67382,6 +67432,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <li><strong>500 Internal Server Error:</strong> see <a href="/blog/wordpress-500-internal-server-error-fix/">fixing the 500 error</a>.</li>
 </ul>
 <p>In most of these cases, renaming the folder of the plugin that was updating (inside wp-content/plugins) deactivates it and brings the site back while you sort it out. If things are badly broken, restoring a recent backup may be quickest.</p>
+
+<p>If updates have stopped appearing in the dashboard instead, see <a href="/blog/wordpress-update-button-missing/">WordPress update button missing</a>.</p>
 
 <h2>If you cannot find the .maintenance file</h2>
 <p>Sometimes the file is not where you expect. Check these before assuming something else is wrong:</p>
@@ -72701,6 +72753,8 @@ done</code></pre>
 <h2>Step 5: replace WP-Cron with a real cron</h2>
 <p>By default, WordPress runs scheduled tasks when someone visits a page. On multisite, every subsite has its own schedule, so visitors on busy subsites can trigger heavy jobs, while quiet subsites miss them entirely. Disable WP-Cron in wp-config.php and set up a server cron job that runs due events for every subsite at regular intervals, usually with WP-CLI looping through the sites. Your host's support can often help set this up.</p>
 
+<p>If the network needs rebuilding or restructuring rather than tuning, see what <a href="/blog/wordpress-multisite-development-services/">WordPress multisite development services</a> usually cover.</p>
+
 <h2>Step 6: check hosting and PHP</h2>
 <p>Many networks start on shared hosting and outgrow it. Signs you need more resources include resource limit warnings, slow admin across all sites and slowdowns at the same times each day. Look at:</p>
 <ul>
@@ -73358,6 +73412,8 @@ done</code></pre>
 <li>Use tags for internal organisation and filtering, not as a way to create landing pages.</li>
 </ul>
 <p>Every collection you do want found should open with a short paragraph about the range, written for shoppers. An empty grid with a heading gives a search engine very little to go on.</p>
+
+<p>Sale collections need snippets that stay accurate between campaigns; see the <a href="/blog/flash-sale-collection-meta-title-description/">flash sale collection meta title and description</a> guide.</p>
 
 <h2>Images, structured data and the blog</h2>
 <h3>Image alt text</h3>
@@ -74347,9 +74403,13 @@ done</code></pre>
 <p>If one order ships in two parcels from two cities, your shipping cost and delivery time change. Use shipping classes per supplier or warehouse, and decide how you charge: one flat rate absorbed by you, a charge per parcel, or free shipping above a threshold. Be clear on the product page that some items ship separately. If you use an aggregator such as Shiprocket, check how it handles multiple pickup addresses. The <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a> explains zones, classes and courier integrations.</p>
 <p>Cash on delivery needs extra thought. With split shipments, decide whether COD is allowed on orders that include dropshipped items, and how payment collected by one courier is reconciled. See <a href="/blog/woocommerce-cash-on-delivery-india/">COD on WooCommerce in India</a>.</p>
 
+<p>If prices need to follow each supplier's cost and margin automatically, see <a href="/blog/woocommerce-custom-pricing-plugin-development/">WooCommerce custom pricing plugin development</a>.</p>
+
 <h2>GST, invoices and returns</h2>
 <p>When you sell under your name, the invoice usually comes from your business, even if a supplier ships. Supplier-shipped parcels must carry the right invoice and packing slip, so agree who prints them. GST treatment depends on your arrangement and the states involved, so confirm it with your CA. <a href="/blog/woocommerce-gst-invoices-india/">GST invoices on WooCommerce</a> covers invoice plugins and settings.</p>
 <p>Returns need a supplier-by-supplier policy: where the item goes back to, who checks it, and who bears the cost. Write this into your returns page so customers are not confused.</p>
+
+<p>If suppliers will manage their own listings and payouts, the store becomes a marketplace and each seller needs a proper sign-up flow; see <a href="/blog/woocommerce-vendor-onboarding/">WooCommerce vendor onboarding</a>.</p>
 
 <h2>When you actually need a marketplace</h2>
 <p>If suppliers must add their own products, manage their own orders, see their own sales and receive payouts after a commission, you are building a multi-vendor marketplace. That brings vendor onboarding, KYC, commission rules, payout schedules and support for many sellers. It is a much larger project, covered in <a href="/blog/woocommerce-multi-vendor-marketplace/">how to build a WooCommerce multi-vendor marketplace</a>.</p>
@@ -74562,6 +74622,8 @@ done</code></pre>
 
 <h2>Update and security service vs full maintenance plan</h2>
 <p>An update and security service is a focused subset of maintenance. A full plan often adds content edits, small design changes, speed checks, SEO health checks and a set amount of developer time each month. If you have someone in-house for content and only need the technical side covered, the narrower service may be enough. <a href="/blog/monthly-website-maintenance-plan/">Monthly website maintenance plans</a> explains what a full plan usually includes and what is extra.</p>
+
+<p>Running several sites in one network? Ask whether the provider handles network-level updates; see <a href="/blog/wordpress-multisite-development-services/">WordPress multisite development services</a>.</p>
 
 <h2>How to compare providers</h2>
 <ul>
@@ -75023,6 +75085,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <li>Keep your mobile number active for order alerts and respond to orders within the agreed time.</li>
 </ol>
 <p>A checklist like this also gives your own team a standard to review against. When a vendor emails to ask why their shop is not live yet, you can point to the exact step that is still incomplete instead of investigating from scratch every time. Track each vendor's progress in a simple sheet or a custom admin column so stalled applications get a reminder.</p>
+
+<p>Not every multi-supplier store needs vendor accounts. If you keep control of listings and pricing, see <a href="/blog/woocommerce-multiple-suppliers/">WooCommerce with multiple suppliers</a> for a simpler setup.</p>
 
 <h2>Plugin or custom onboarding?</h2>
 <p>For most new marketplaces, the built-in onboarding of Dokan, WCFM or WC Vendors plus a few custom fields and emails is enough. Custom development makes sense when you need document checks against an external API, a multi-stage approval with different staff roles, or onboarding that pulls data into your ERP or CRM. Start simple, run the process with your first twenty or thirty sellers, and automate the steps that actually take your time.</p>

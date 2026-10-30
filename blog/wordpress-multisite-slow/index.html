@@ -237,6 +237,8 @@
 <h2 id="step-5-replace-wp-cron-with-a-real-cron">Step 5: replace WP-Cron with a real cron</h2>
 <p>By default, WordPress runs scheduled tasks when someone visits a page. On multisite, every subsite has its own schedule, so visitors on busy subsites can trigger heavy jobs, while quiet subsites miss them entirely. Disable WP-Cron in wp-config.php and set up a server cron job that runs due events for every subsite at regular intervals, usually with WP-CLI looping through the sites. Your host's support can often help set this up.</p>
 
+<p>If the network needs rebuilding or restructuring rather than tuning, see what <a href="/blog/wordpress-multisite-development-services/">WordPress multisite development services</a> usually cover.</p>
+
 <h2 id="step-6-check-hosting-and-php">Step 6: check hosting and PHP</h2>
 <p>Many networks start on shared hosting and outgrow it. Signs you need more resources include resource limit warnings, slow admin across all sites and slowdowns at the same times each day. Look at:</p>
 <ul>
