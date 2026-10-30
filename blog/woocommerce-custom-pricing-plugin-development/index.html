@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WooCommerce Custom Pricing Plugin Development Guide</title>
+  <meta name="description" content="When you need WooCommerce custom pricing plugin development: formula pricing, customer rates, quantity rules, GST display, testing and handover.">
+  <meta name="author" content="Samverse">
+  <meta name="google-adsense-account" content="ca-pub-7430741863334470">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://samverse.space/blog/woocommerce-custom-pricing-plugin-development/">
+  <meta property="og:site_name" content="Samverse">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://samverse.space/blog/woocommerce-custom-pricing-plugin-development/">
+  <meta property="og:title" content="WooCommerce Custom Pricing Plugin Development Guide">
+  <meta property="og:description" content="When you need WooCommerce custom pricing plugin development: formula pricing, customer rates, quantity rules, GST display, testing and handover.">
+  <meta property="og:image" content="https://samverse.space/assets/og/blog-woocommerce-custom-pricing-plugin-development.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://samverse.space/assets/og/blog-woocommerce-custom-pricing-plugin-development.png">
+  <meta name="theme-color" content="#6D4AFF">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="Samverse Blog" href="https://samverse.space/blog/feed.xml">
+  <script src="/config.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="/style.min.css?v=bff60f5d">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-10-30">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://samverse.space/blog/woocommerce-custom-pricing-plugin-development/#article",
+      "headline": "WooCommerce Custom Pricing Plugin Development: When Off-the-Shelf Pricing Rules Are Not Enough",
+      "description": "When you need WooCommerce custom pricing plugin development: formula pricing, customer rates, quantity rules, GST display, testing and handover.",
+      "datePublished": "2026-10-30",
+      "dateModified": "2026-10-30",
+      "mainEntityOfPage": "https://samverse.space/blog/woocommerce-custom-pricing-plugin-development/",
+      "image": "https://samverse.space/assets/og/blog-woocommerce-custom-pricing-plugin-development.png",
+      "articleSection": "E-commerce",
+      "inLanguage": "en-IN",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://samverse.space/#service",
+        "name": "Samverse",
+        "url": "https://samverse.space/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Samverse",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://samverse.space/assets/icon-512.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://samverse.space/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://samverse.space/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "E-commerce",
+          "item": "https://samverse.space/blog/topic/ecommerce/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "WooCommerce Custom Pricing Plugin Development: When Off-the-Shelf Pricing Rules Are Not Enough",
+          "item": "https://samverse.space/blog/woocommerce-custom-pricing-plugin-development/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <!-- Generated by tools/build-pages.js from tools/blog-data.js -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="Samverse home">
+        <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+        <span class="brand-text">sam<span class="grad">verse</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/#industries">Industries</a>
+        <a href="/#work">Work</a>
+        <a href="/#process">Process</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/blog/">Blog</a>
+        <a href="#contact" class="btn btn-sm">Hire Me</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="read-progress" aria-hidden="true"><span id="readProgress"></span></div>
+
+  <main>
+    <article class="post">
+      <header class="post-hero">
+        <div class="container post-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/ecommerce/">E-commerce</a></nav>
+          <a class="post-cat" href="/blog/topic/ecommerce/">E-commerce</a>
+          <h1>WooCommerce Custom Pricing Plugin Development: When Off-the-Shelf Pricing Rules Are Not Enough</h1>
+          <p class="post-dek">When you need WooCommerce custom pricing plugin development: formula pricing, customer rates, quantity rules, GST display, testing and handover.</p>
+          <div class="post-byline">
+            <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
+            <div class="post-byline-text">
+              <a href="/about/">Samverse</a>
+              <span><time datetime="2026-10-30">30 October 2026</time> · 7 min read</span>
+            </div>
+            <div class="share share-top">
+              <a href="https://wa.me/?text=WooCommerce%20Custom%20Pricing%20Plugin%20Development%3A%20When%20Off-the-Shelf%20Pricing%20Rules%20Are%20Not%20Enough%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-custom-pricing-plugin-development%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-custom-pricing-plugin-development%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WooCommerce%20Custom%20Pricing%20Plugin%20Development%3A%20When%20Off-the-Shelf%20Pricing%20Rules%20Are%20Not%20Enough&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-custom-pricing-plugin-development%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/woocommerce-custom-pricing-plugin-development/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+          <figure class="post-cover"><img src="/assets/og/blog-woocommerce-custom-pricing-plugin-development.webp" alt="WooCommerce Custom Pricing Plugin Development: When Off-the-Shelf Pricing Rules Are Not Enough" width="1200" height="630" fetchpriority="high"></figure>
+        </div>
+      </header>
+
+      <div class="post-layout container">
+        <div class="post-body">
+          <details class="toc-mobile">
+            <summary>On this page</summary>
+            <ol>
+              <li><a href="#start-with-what-existing-plugins-can-do">Start with what existing plugins can do</a></li>
+              <li><a href="#when-woocommerce-custom-pricing-plugin-development-is-worth-it">When WooCommerce custom pricing plugin development is worth it</a></li>
+              <li><a href="#write-the-pricing-rules-before-any-code">Write the pricing rules before any code</a></li>
+              <li><a href="#what-a-well-built-pricing-plugin-includes">What a well-built pricing plugin includes</a></li>
+              <li><a href="#testing-a-custom-pricing-plugin">Testing a custom pricing plugin</a></li>
+              <li><a href="#ownership-maintenance-and-handover">Ownership, maintenance and handover</a></li>
+              <li><a href="#common-pricing-scenarios-for-indian-stores">Common pricing scenarios for Indian stores</a></li>
+              <li><a href="#how-to-brief-a-developer">How to brief a developer</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ol>
+          </details>
+          <div class="takeaways">
+            <strong>Key takeaways</strong>
+            <ul>
+              <li>Try existing pricing plugins first; a custom plugin makes sense when your pricing logic is unusual, combines several rules, or must connect to your own price data.</li>
+              <li>Write the pricing rules down with worked examples before development, including how GST, coupons, rounding and the cart total should behave.</li>
+              <li>Insist on tests for every rule, a settings screen your team can use, and code that survives WooCommerce updates and the block checkout.</li>
+            </ul>
+          </div>
+<p>WooCommerce custom pricing plugin development makes sense when your prices depend on rules that standard plugins cannot express cleanly: price by measurement or formula, customer-specific rates from your own price list, combined quantity and customer-group rules, or prices pulled from an ERP or spreadsheet. A custom plugin calculates the price on the product page, in the cart and at checkout using your exact rules, with a settings screen your team controls. If your needs are simple tiered or wholesale pricing, an existing plugin is usually quicker and cheaper.</p>
+<p>This guide explains which pricing problems need custom work, how to specify the rules, and what a well-built pricing plugin should include, so you can brief a developer clearly.</p>
+
+<h2 id="start-with-what-existing-plugins-can-do">Start with what existing plugins can do</h2>
+<p>Popular pricing plugins already handle a lot: quantity discounts, role-based prices for wholesale customers, buy-x-get-y offers, cart discounts and scheduled sales. WooCommerce itself handles sale prices and coupons. Check these first. <a href="/blog/woocommerce-wholesale-dealer-pricing/">WooCommerce wholesale and dealer pricing</a> covers trade price setups, and <a href="/blog/woocommerce-coupons-discounts/">WooCommerce coupon types and discounts</a> covers offers.</p>
+<p>The general trade-off between a plugin, a snippet and a bespoke build is explained in <a href="/blog/plugin-vs-custom-code-wordpress/">plugin or custom code in WordPress</a>.</p>
+
+<h2 id="when-woocommerce-custom-pricing-plugin-development-is-worth-it">When WooCommerce custom pricing plugin development is worth it</h2>
+<table>
+  <thead><tr><th>Pricing need</th><th>Example</th><th>Why plugins struggle</th></tr></thead>
+  <tbody>
+    <tr><td>Price by measurement</td><td>Curtains, glass, flex banners, fabric by the metre</td><td>Formula with minimums, steps and wastage</td></tr>
+    <tr><td>Customer-specific price lists</td><td>Each dealer has negotiated rates</td><td>Hundreds of customer and product combinations</td></tr>
+    <tr><td>External price source</td><td>Prices from an ERP, Tally export or daily rate sheet</td><td>Needs import or sync, not manual entry</td></tr>
+    <tr><td>Combined rules</td><td>Dealer rate plus quantity slab plus regional surcharge</td><td>Plugins conflict or apply rules in the wrong order</td></tr>
+    <tr><td>Option-based pricing</td><td>Base price plus material, finish and add-ons</td><td>Too many variations to create one by one</td></tr>
+    <tr><td>Rate-linked products</td><td>Items priced from a daily metal or commodity rate</td><td>Price must update from one input across many products</td></tr>
+  </tbody>
+</table>
+<p>If two or more plugins are fighting each other to produce your prices, that is often the clearest sign a single custom plugin would be simpler and more reliable.</p>
+
+<aside class="inline-cta">
+  <strong>Need help with online stores?</strong>
+  <p>Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout.</p>
+  <div><a href="/woocommerce-developer/" class="link-inline">See Online Stores →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WooCommerce%20Custom%20Pricing%20Plugin%20Development%3A%20When%20Off-the-Shelf%20Pricing%20Rules%20Are%20Not%20Enough%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+</aside>
+
+<h2 id="write-the-pricing-rules-before-any-code">Write the pricing rules before any code</h2>
+<p>Most pricing projects go wrong because the rules were never written down in full. Before asking for a quote, prepare a short document with:</p>
+<ul>
+  <li><strong>Every rule in plain words</strong>, for example &quot;dealers get their list price; above a set quantity, the next slab applies&quot;.</li>
+  <li><strong>The order rules apply in</strong>, and whether they stack or the best one wins.</li>
+  <li><strong>Worked examples</strong> with inputs and the expected price, including edge cases such as minimum sizes.</li>
+  <li><strong>Rounding</strong>: to the rupee, to the nearest five, or exact paise.</li>
+  <li><strong>GST display</strong>: whether prices are entered and shown inclusive or exclusive of tax, and how B2B customers see them.</li>
+  <li><strong>Interaction with coupons and sale prices</strong>: can a coupon apply on top of a dealer price?</li>
+  <li><strong>Who changes the rates</strong> and how often.</li>
+</ul>
+<p>These worked examples later become the test cases. A developer who asks for them is a good sign.</p>
+
+<h2 id="what-a-well-built-pricing-plugin-includes">What a well-built pricing plugin includes</h2>
+<h3>Correct prices everywhere</h3>
+<p>The price must be the same on the product page, in the mini-cart, the cart, the checkout, the order, the invoice and the order email. It should also work with the block-based cart and checkout if your store uses them, not only the older templates.</p>
+<h3>A settings screen your team can use</h3>
+<p>Rates, slabs and formulas should be editable from the admin, ideally with import and export by CSV, so a price change does not need a developer. Changes should be logged with who changed what.</p>
+<h3>Clear display for customers</h3>
+<p>For measurement pricing, a live price calculator on the product page with clear units and limits. For customer-specific pricing, logged-in customers see their price and guests see a public price or &quot;login for trade price&quot;.</p>
+<h3>Performance</h3>
+<p>Pricing code runs on every page view and cart update. It should calculate efficiently and work with caching, so logged-out visitors still get fast cached pages. See <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> for why cart and checkout speed matter.</p>
+<h3>Clean, update-safe code</h3>
+<p>The plugin should use WooCommerce's hooks rather than editing core or theme files, follow WordPress coding standards, and come with notes on what each part does. <a href="/blog/custom-wordpress-plugin-development/">Custom WordPress plugin development</a> explains how bespoke plugins should be structured and handed over.</p>
+
+<h2 id="testing-a-custom-pricing-plugin">Testing a custom pricing plugin</h2>
+<p>Test every worked example from your rules document, then the awkward cases:</p>
+<ol>
+  <li>Guest, retail customer and each trade group.</li>
+  <li>Minimum, maximum and invalid inputs on measured products.</li>
+  <li>Coupons, sale prices and free shipping thresholds together with custom prices.</li>
+  <li>Tax inclusive and exclusive display, and the GST breakup on invoices.</li>
+  <li>Mobile product pages and the full checkout with a test payment.</li>
+  <li>Editing an order in the admin, refunds and reorders.</li>
+</ol>
+<p>Run this on a staging copy first, never on the live store. <a href="/blog/staging-sites-explained/">Staging sites explained</a> shows how that works. After WooCommerce updates, repeat a short version of the same tests.</p>
+
+<h2 id="ownership-maintenance-and-handover">Ownership, maintenance and handover</h2>
+<p>Agree in writing that you own the plugin code, and get the full source, not just an installed copy. Ask for a short guide covering settings, how to change rates and what to test after updates. Pricing logic touches revenue directly, so plan who will check it after major WooCommerce releases, whether that is your team, your developer or a maintenance plan.</p>
+<p>If your store also needs product filters or variation handling around the new pricing, <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a> covers when options should be variations and when a calculator is better.</p>
+
+<h2 id="common-pricing-scenarios-for-indian-stores">Common pricing scenarios for Indian stores</h2>
+<p>A few patterns come up again and again for stores selling within India, and each needs slightly different handling.</p>
+<h3>Dealer and distributor price lists</h3>
+<p>Manufacturers and wholesalers often have a public retail price, a dealer price and special rates for large accounts. The custom plugin reads each customer's group or individual price list, shows the right price once they log in, and keeps guests on retail prices. Rates are usually uploaded by CSV from the accounts team rather than typed into each product.</p>
+<h3>Made-to-measure products</h3>
+<p>Curtains, blinds, glass, printed banners, wallpaper and fabric are often priced by width and height or by running metre. The calculator needs minimum and maximum sizes, a minimum charge, rounding to whole units, and optional extras such as lining or fitting. The chosen size must be saved on the order so production gets the right measurements.</p>
+<h3>Daily rate products</h3>
+<p>Some products follow a daily rate, such as precious metal items or commodities. Here one rate is entered each day and every linked product recalculates from weight and making charges. The plugin should record which rate applied to each order.</p>
+<h3>B2B orders with GST details</h3>
+<p>Business buyers expect prices shown before tax, GSTIN captured at checkout and a proper tax invoice. The pricing plugin needs to work alongside your invoice plugin rather than against it. <a href="/blog/rfq-forms-b2b-websites/">Request-for-quote forms</a> are a good companion when some orders are too large or complex for fixed prices.</p>
+
+<h2 id="how-to-brief-a-developer">How to brief a developer</h2>
+<p>Send your rules document, a list of affected products, screenshots of how you want prices displayed, and any sample price files. Mention which plugins you already use for tax, invoices, subscriptions or multi-currency, because pricing must work with them. Ask the developer to confirm the rules back to you in their own words before quoting. Misunderstandings found at that stage cost nothing to fix.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>What is WooCommerce custom pricing plugin development?</h3>
+<p>It is building a bespoke plugin that calculates prices using your own rules, such as formula or measurement pricing, customer-specific rates or prices from an external source, and applies them consistently from product page to invoice.</p>
+<h3>Can an existing plugin do customer-specific pricing?</h3>
+<p>Many can handle role-based or group pricing. Custom work helps when each customer has a negotiated price list, or when rates must be imported from your own system.</p>
+<h3>Will a custom pricing plugin break when WooCommerce updates?</h3>
+<p>Well-written code that uses WooCommerce hooks usually survives updates, but pricing should still be retested after major releases, especially around the cart and checkout.</p>
+<h3>Can prices be shown with and without GST?</h3>
+<p>Yes. WooCommerce supports inclusive or exclusive tax display, and a custom plugin should respect that setting. Confirm your GST approach with your CA.</p>
+<h3>How long does a custom pricing plugin take to build?</h3>
+<p>It depends on the number of rules, the admin screens and the integrations. A clear rules document with worked examples is the single biggest factor in keeping the timeline predictable.</p>
+<h3>Who owns the code?</h3>
+<p>Agree that you do, in writing, and receive the full source with documentation at handover.</p>
+
+<p>Need pricing rules your current plugins cannot handle? As a <a href="/woocommerce-developer/">WooCommerce developer</a> I build and test custom pricing logic, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to review your current setup first.</p>
+
+          <div class="post-cta">
+            <h2>Need help with your website?</h2>
+            <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn">Get a Free Quote</a>
+              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WooCommerce%20Custom%20Pricing%20Plugin%20Development%3A%20When%20Off-the-Shelf%20Pricing%20Rules%20Are%20Not%20Enough%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+            </div>
+          </div>
+
+          <div class="post-share-end">
+            <strong>Found this useful? Share it:</strong>
+            <div class="share share-end">
+              <a href="https://wa.me/?text=WooCommerce%20Custom%20Pricing%20Plugin%20Development%3A%20When%20Off-the-Shelf%20Pricing%20Rules%20Are%20Not%20Enough%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-custom-pricing-plugin-development%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-custom-pricing-plugin-development%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WooCommerce%20Custom%20Pricing%20Plugin%20Development%3A%20When%20Off-the-Shelf%20Pricing%20Rules%20Are%20Not%20Enough&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-custom-pricing-plugin-development%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/woocommerce-custom-pricing-plugin-development/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+
+          <div class="post-author">
+            <img src="/assets/logo-mark.svg" alt="" width="56" height="56">
+            <div><strong><a href="/about/">Samverse</a></strong><p>Freelance WordPress development, building websites for clinics, manufacturers, agencies and online stores since 2020.</p><a href="/about/" class="link-inline">More about me</a></div>
+          </div>
+
+          <nav class="post-nav" aria-label="More in E-commerce">
+            <a class="post-nav-prev" href="/blog/woocommerce-multiple-suppliers/"><span>← Previous in E-commerce</span><strong>WooCommerce With Multiple Suppliers: Products, Stock, Order Routing and Shipping in One Store</strong></a>
+            <a class="post-nav-next" href="/blog/woocommerce-vs-shopify-india/"><span>Next in E-commerce →</span><strong>WooCommerce vs Shopify in India: Costs, Payment Gateways, GST, COD and Shipping Compared for Online Stores</strong></a>
+          </nav>
+        </div>
+
+        <aside class="post-side">
+          <nav class="post-toc" aria-label="On this page">
+            <strong>On this page</strong>
+            <ol>
+              <li><a href="#start-with-what-existing-plugins-can-do">Start with what existing plugins can do</a></li>
+              <li><a href="#when-woocommerce-custom-pricing-plugin-development-is-worth-it">When WooCommerce custom pricing plugin development is worth it</a></li>
+              <li><a href="#write-the-pricing-rules-before-any-code">Write the pricing rules before any code</a></li>
+              <li><a href="#what-a-well-built-pricing-plugin-includes">What a well-built pricing plugin includes</a></li>
+              <li><a href="#testing-a-custom-pricing-plugin">Testing a custom pricing plugin</a></li>
+              <li><a href="#ownership-maintenance-and-handover">Ownership, maintenance and handover</a></li>
+              <li><a href="#common-pricing-scenarios-for-indian-stores">Common pricing scenarios for Indian stores</a></li>
+              <li><a href="#how-to-brief-a-developer">How to brief a developer</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ol>
+          </nav>
+          <div class="side-cta">
+            <strong>Need help with this?</strong>
+            <p>Get a clear plan and a fixed quote, usually within 24 hours.</p>
+            <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
+            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WooCommerce%20Custom%20Pricing%20Plugin%20Development%3A%20When%20Off-the-Shelf%20Pricing%20Rules%20Are%20Not%20Enough%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+          </div>
+        </aside>
+      </div>
+    </article>
+
+    <section class="section related">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Services</span><h2>How I can help</h2></div>
+        <div class="industries related-grid reveal">
+          <a class="industry" href="/woocommerce-developer/"><h3>Online Stores</h3><p>Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout.</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/hire-wordpress-developer/"><h3>Hire a WordPress Developer</h3><p>Hire an experienced freelance WordPress developer for projects, monthly support or white-label agency work.</p><span class="ind-arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
+        <div class="post-grid reveal">
+          <a class="post-card" href="/blog/woocommerce-product-variations/"><img class="post-card-img" src="/assets/og/blog-woocommerce-product-variations.webp" alt="WooCommerce Product Variations: How to Set Up Sizes, Colours, Stock and Swatches" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Product Variations: How to Set Up Sizes, Colours, Stock and Swatches</h3><p>Product-type variations in WooCommerce: choose Variable product, add attributes, create variations with their own price, stock, SKU, images and swatches.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/woocommerce-coupons-discounts/"><img class="post-card-img" src="/assets/og/blog-woocommerce-coupons-discounts.webp" alt="WooCommerce Coupon Types and Discounts: Set Up Offers That Sell Without Killing Margins" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Coupon Types and Discounts: Set Up Offers That Sell Without Killing Margins</h3><p>WooCommerce coupon discount types explained: percentage, fixed cart and fixed product compared with examples, plus limits, free shipping and a checklist.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/woocommerce-speed-optimization/"><img class="post-card-img" src="/assets/og/blog-woocommerce-speed-optimization.webp" alt="WooCommerce Speed Optimization: How to Speed Up Your Online Store" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Speed Optimization: How to Speed Up Your Online Store</h3><p>How to speed up WooCommerce: test the right pages, add object caching, cache around the checkout, and fix cart fragments, images, filters and database.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-copy">
+            <span class="eyebrow">Contact</span>
+            <h2>Let's build your next <span class="grad">website</span></h2>
+            <p class="muted">Available for freelance projects, agency white-label work and long-term maintenance. Feel free to pass this along to your team or company.</p>
+            <ul class="contact-list">
+              <li>
+                <a href="tel:+917417049145">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+                  <span><small>Call</small>+91 74170 49145</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.2 7H4v.3l8 5.3 8-5.3V7h-.2L12 12.2z"/></svg></span>
+                  <span><small>Email</small>samverse9719@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/917417049145" target="_blank" rel="noopener">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+                  <span><small>WhatsApp</small>Chat instantly</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot: hidden from people, bots fill it in -->
+            <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <label>Your name<input type="text" name="name" required maxlength="120" placeholder="John Doe" autocomplete="name"></label>
+            <div class="form-row">
+              <label>Phone / WhatsApp<input type="tel" name="phone" required maxlength="40" placeholder="+91 98765 43210" autocomplete="tel"></label>
+              <label>Email <span class="opt">(optional)</span><input type="email" name="email" maxlength="160" placeholder="you@company.com" autocomplete="email"></label>
+            </div>
+            <label>Project type
+              <select name="type">
+                <option>New WordPress website</option>
+                <option>WooCommerce store</option>
+                <option>Shopify store</option>
+                <option>Website redesign</option>
+                <option>Speed / SEO optimization</option>
+                <option>Maintenance &amp; support</option>
+                <option>Agency / white-label work</option>
+              </select>
+            </label>
+            <label>Message<textarea name="message" rows="4" maxlength="4000" placeholder="Tell me a bit about your project…"></textarea></label>
+            <div class="captcha">
+              <label for="captchaInput">Quick check: <strong id="captchaQ">3 + 4</strong> = ?</label>
+              <div class="captcha-row">
+                <input type="text" id="captchaInput" name="captcha" inputmode="numeric" required placeholder="Answer" autocomplete="off">
+                <button type="button" class="captcha-refresh" id="captchaRefresh" aria-label="New question">↻</button>
+              </div>
+              <p class="form-error" id="formError" role="alert"></p>
+            </div>
+            <button type="submit" class="btn btn-block" id="formSubmit">Send Enquiry</button>
+            <p class="form-msg" id="msg" role="status"></p>
+            <p class="form-note">Your details are emailed to me, then WhatsApp opens so we can chat right away.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cta">
+        <div>
+          <h2>Have a WordPress project in mind?</h2>
+          <p>Tell me about it and I'll reply within 24 hours with a plan and a quote.</p>
+        </div>
+        <div class="footer-cta-actions">
+          <a href="https://wa.me/917417049145" class="btn btn-light" target="_blank" rel="noopener">WhatsApp Me</a>
+          <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry" class="btn btn-outline-light">Send an Email</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand">
+            <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+            <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
+          </a>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>.</p>
+          <span class="footer-status"><span class="dot"></span> Taking new projects</span>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Explore</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/work/">Portfolio</a></li>
+            <li><a href="/#process">Process</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/website-cost-calculator/">Cost Calculator</a></li>
+            <li><a href="/wordpress-glossary/">Glossary</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Services</h3>
+          <ul>
+            <li><a href="/wordpress-maintenance/">WordPress Maintenance</a></li>
+            <li><a href="/wordpress-speed-optimization/">Speed Optimization</a></li>
+            <li><a href="/wordpress-malware-removal/">Malware Removal</a></li>
+            <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
+            <li><a href="/elementor-developer/">Elementor Developer</a></li>
+            <li><a href="/landing-page-design/">Landing Page Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Industries</h3>
+          <ul>
+            <li><a href="/wordpress-developer-for-agencies/">White-label for Agencies</a></li>
+            <li><a href="/wordpress-website-for-doctors/">Doctors &amp; Clinics</a></li>
+            <li><a href="/website-for-manufacturers/">Manufacturers &amp; B2B</a></li>
+            <li><a href="/woocommerce-developer/">WooCommerce Stores</a></li>
+            <li><a href="/website-for-startups/">Startups</a></li>
+            <li><a href="/website-for-schools-and-coaching/">Schools &amp; Coaching</a></li>
+            <li><a href="/solutions/">All Industries &amp; Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Get in touch</h3>
+          <ul class="footer-contact">
+            <li><a href="tel:+917417049145">+91 74170 49145</a></li>
+            <li><a href="mailto:samverse9719@gmail.com">samverse9719@gmail.com</a></li>
+            <li><a href="https://wa.me/917417049145" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+            <li><span>India · Working worldwide</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Samverse · samverse.space. All rights reserved. · <a href="/privacy-policy/">Privacy Policy</a></p>
+        <a href="#top" class="to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/917417049145?text=Hi%2C%20I%20saw%20your%20website%20and%20have%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+    <span>Chat now</span>
+  </a>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
