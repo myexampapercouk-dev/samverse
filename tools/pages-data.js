@@ -609,8 +609,8 @@ const PAGES = [
     title: 'Hire an Elementor Developer | Elementor Pro Expert | Samverse',
     description: 'Hire an Elementor Pro developer for custom page designs, theme builder templates, WooCommerce layouts and fixes, all pixel-accurate and responsive.',
     eyebrow: 'Elementor development',
-    h1: 'Hire an <span class="grad">Elementor expert</span>',
-    lead: 'Elementor makes WordPress easy to edit, but building it right takes experience. I build pixel-accurate, responsive Elementor layouts and theme templates that stay fast and easy for you to update.',
+    h1: 'Hire an <span class="grad">Elementor developer</span>',
+    lead: 'Need an Elementor developer? Elementor makes WordPress easy to edit, but building it right takes experience. I build pixel-accurate, responsive Elementor layouts and theme templates that stay fast and easy for you to update.',
     wa: 'Hi, I need help with an Elementor website.',
     painTitle: 'What I do with Elementor',
     pains: [
