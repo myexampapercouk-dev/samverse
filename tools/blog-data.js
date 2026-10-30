@@ -5,16 +5,16 @@
 module.exports = [
   {
     slug: 'wordpress-website-cost-india',
-    seoTitle: 'WordPress Website Cost in India: Build and Yearly Costs',
-    title: 'How Much Does a WordPress Website Cost in India? (2026 Guide)',
-    description: 'WordPress website cost in India explained: one-time build costs, yearly domain, hosting and maintenance, typical ranges by site type and how to get a quote.',
+    seoTitle: 'WordPress Plans, Pricing and Website Cost in India',
+    title: 'WordPress Plans and Pricing: How Much Does a WordPress Website Cost in India? (2026 Guide)',
+    description: 'WordPress plans and pricing explained for India: WordPress.com plans vs free WordPress.org, build costs, yearly domain and hosting, and how to get a quote.',
     date: '2026-09-27',
-    updated: '2026-10-10',
+    updated: '2026-10-30',
     category: 'Pricing',
     related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
-<p>"How much will my website cost?" is the first question almost every client asks, and the honest answer is: it depends on what the website needs to do. A simple five-page business site and a WooCommerce store with hundreds of products are very different projects.</p>
-<p>This guide breaks down every cost involved in a WordPress website in India, both the one-time build and the yearly running costs, so you can budget properly and compare quotes with confidence.</p>
+<p>WordPress plans are the paid hosting tiers sold by WordPress.com, but most Indian business websites don't need one: the WordPress.org software is free, and what you actually pay for is a domain, hosting and the build. For most small businesses in India, that means roughly ₹15,000 to ₹40,000 to build a professional WordPress website, plus a few thousand rupees a year for domain and hosting.</p>
+<p>"How much is WordPress?" is the first question almost every client asks, and the honest answer is: it depends on what the website needs to do. This guide breaks down WordPress pricing in India, both the one-time build and the yearly running costs, so you can budget properly and compare quotes with confidence.</p>
 
 <h2>The short answer</h2>
 <p>For most small businesses in India, a professional WordPress website costs between ₹15,000 and ₹40,000, plus a few thousand rupees a year for domain and hosting. Online stores and larger sites cost more. Focus on value, not the lowest price: a fast, mobile-friendly website that brings in enquiries pays for itself quickly.</p>
@@ -30,6 +30,21 @@ module.exports = [
   <li><strong>Ongoing maintenance</strong>, whether you do it yourself or pay someone</li>
 </ul>
 <p>Don't confuse this with WordPress.com, a hosted service with its own paid plans. Most business sites built by developers in India use the free WordPress.org software on their own hosting. If these terms are new, see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
+
+<h2>WordPress.com plans vs WordPress.org: which pricing applies to you?</h2>
+<p>Search for "WordPress plans" or "WordPress pricing" and you will mostly see WordPress.com's plan pages. That is a hosted service run by one company, where the plan you choose decides what you can do. WordPress.org is the free software you install on any hosting you like. At the time of writing, the differences that matter to a business are:</p>
+<table>
+  <thead><tr><th></th><th>WordPress.com plans</th><th>WordPress.org on your own hosting</th></tr></thead>
+  <tbody>
+    <tr><td>Software cost</td><td>Included in the plan</td><td>Free</td></tr>
+    <tr><td>What you pay for</td><td>A monthly or yearly plan</td><td>Domain, hosting and the build</td></tr>
+    <tr><td>Custom domain</td><td>On paid plans</td><td>Always</td></tr>
+    <tr><td>Installing any plugin or theme</td><td>Only on higher plans</td><td>Always</td></tr>
+    <tr><td>Online store</td><td>On the commerce-level plans</td><td>WooCommerce, free plugin</td></tr>
+    <tr><td>Moving host later</td><td>Possible, with an export</td><td>Full control of files and database</td></tr>
+  </tbody>
+</table>
+<p>Plan names, features and prices change, so check WordPress.com's own pricing page for current details. The free plan suits a personal blog; a business that needs WhatsApp buttons, payment gateways, enquiry forms and full SEO control usually ends up on a higher plan or on WordPress.org with Indian or nearby hosting. The rest of this guide covers the WordPress.org route, which is what most developers in India build on. If you started on a WordPress.com plan and have outgrown it, moving the content to WordPress.org on your own hosting is a routine migration, so the choice you make today is not permanent.</p>
 
 <h2>The one-time and yearly costs</h2>
 <p>Every website has two kinds of cost: what you pay once to build it, and what you pay every year to keep it running.</p>
@@ -57,7 +72,7 @@ module.exports = [
 <p>Ask what's included in each quote, because two quotes can cover very different amounts of this list.</p>
 
 <h3>What you pay every year</h3>
-<p>The yearly cost of a WordPress website is mostly your domain and hosting renewals, plus any premium licences and maintenance you choose. Many hosts include a free SSL certificate, and business email may be included or charged separately depending on the plan. Two things catch people out: hosting that was discounted in the first year renews at a higher price, and premium plugins stop getting updates if the licence lapses. See <a href="/blog/hidden-website-costs/">hidden website costs</a> for everything you'll pay after launch, and <a href="/blog/hosting-renewal-price-increase/">why hosting renewals cost more</a>.</p>
+<p>The yearly cost of a WordPress website is mostly your domain and hosting renewals, plus any premium licences and maintenance you choose. Many hosts include a free SSL certificate, and business email may be included or charged separately depending on the plan. Two things catch people out: hosting that was discounted in the first year renews at a higher price, and premium plugins stop getting updates if the licence lapses. See <a href="/blog/hidden-website-costs/">hidden website costs</a> for everything you'll pay after launch, and why hosting renewals cost more.</p>
 
 <h2>Typical price ranges by type of website</h2>
 <p>These are typical freelance market ranges in India. Agencies usually charge more; very cheap offers often cut corners on speed, security or mobile design.</p>
@@ -94,7 +109,7 @@ module.exports = [
 <h3>5. Speed and SEO work</h3>
 <p>A properly optimised site with caching, compressed images, schema markup and clean structure takes more effort than a basic build, but it pays back in better rankings and more enquiries.</p>
 <h3>6. Who builds it</h3>
-<p>Freelancers, small studios and larger agencies have different overheads, processes and levels of support, and price accordingly. See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> for the trade-offs.</p>
+<p>Freelancers, small studios and larger agencies have different overheads, processes and levels of support, and price accordingly. See freelancer vs agency for the trade-offs.</p>
 <h3>7. Deadline and support</h3>
 <p>A rushed deadline means rearranging other work, and some quotes include post-launch support or training while others don't. Both affect the price.</p>
 
@@ -127,7 +142,7 @@ module.exports = [
 
 <p>Ready to request quotes? Use the <a href="/blog/website-brief-template/">website brief template</a> so every developer quotes on the same scope.</p>
 
-<p>Got several quotes? See <a href="/blog/compare-website-quotes/">how to compare website quotes</a>, and agree <a href="/blog/website-payment-terms-milestones/">fair payment terms and milestones</a> before work starts.</p>
+<p>Got several quotes? See <a href="/blog/compare-website-quotes/">how to compare website quotes</a>, and agree fair payment terms and milestones before work starts.</p>
 
 <h2>How to keep the cost down without cutting corners</h2>
 <ul>
@@ -142,20 +157,16 @@ module.exports = [
 <h2>FAQs</h2>
 <h3>How much does a WordPress domain cost in India?</h3>
 <p>A .com or .in domain usually costs about ₹500 to ₹1,200 a year, depending on the registrar and any first-year offer. Check the renewal price, and register the domain in your business's name so you always control it.</p>
-<h3>What do WordPress plans and pricing pages refer to?</h3>
-<p>Plans and pricing pages usually belong to WordPress.com, the hosted service. A business site built on the free WordPress.org software does not need those plans: you pay for a domain, hosting and the build instead, as in the tables above.</p>
-<h3>How much does a WordPress website cost in India?</h3>
-<p>It depends on the type of site. Most small business websites fall in the small business range shown above; landing pages cost less, and larger business sites and WooCommerce stores cost more. A clear brief gets you an exact figure.</p>
+<h3>What are WordPress plans, and do I need one?</h3>
+<p>WordPress plans are WordPress.com's hosted tiers. A business site built on the free WordPress.org software does not need them: you pay for a domain, hosting and the build instead, as in the tables above.</p>
+<h3>How much is WordPress, and how much does a WordPress website cost in India?</h3>
+<p>The WordPress.org software is free; the website cost depends on the type of site. Most small business websites fall in the small business range shown above; landing pages cost less, and larger business sites and WooCommerce stores cost more. A clear brief gets you an exact figure.</p>
 <h3>What is the yearly cost of a WordPress website?</h3>
 <p>At minimum, your domain and hosting renewals every year. On top of that, budget for any premium theme or plugin licences and, if you want someone to handle updates and backups, a maintenance plan. The table above shows typical ranges for each.</p>
-<h3>Is WordPress free to use?</h3>
-<p>Yes, the WordPress.org software is free. You pay for the domain, hosting, the developer's time to build the site and any premium add-ons you choose.</p>
 <h3>Does WooCommerce cost extra?</h3>
 <p>The WooCommerce plugin is free, but a store takes more work to build than a brochure site: products, payments, shipping, taxes and order emails all need setting up and testing. Payment gateways charge transaction fees and some extensions have yearly licences, so check current terms with each provider.</p>
 <h3>Is maintenance really necessary?</h3>
 <p>It's optional, but someone needs to update WordPress, plugins and themes, take backups and check the site regularly. If you don't do it yourself, a maintenance plan usually costs far less than cleaning up a hacked or broken site.</p>
-<h3>Are freelancers cheaper than agencies?</h3>
-<p>Usually, because freelancers have lower overheads, while agencies can offer bigger teams and more formal processes. What matters most is relevant experience, a clear scope and support after launch.</p>
 
 <p>Want a fixed quote for your WordPress website? Send me your page list, a few sites you like and the features you need, and I'll tell you exactly what it will cost and what's included. See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
@@ -260,21 +271,21 @@ module.exports = [
   {
     slug: 'why-is-my-wordpress-site-slow',
     seoTitle: 'Slow WordPress Site? Why It Happens and How to Fix It',
-    title: 'Why Is My WordPress Site Slow? 12 Common Causes and How to Fix Them',
-    description: 'Slow WordPress site? Find the cause fast with PageSpeed Insights and Query Monitor, then fix hosting, caching, images, plugins and scripts in order.',
+    title: 'Slow WordPress Site? Why It Happens and How to Fix It (Front End and Admin)',
+    description: 'Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'elementor-developer'],
     body: `
-<p>A slow WordPress site is almost always caused by slow hosting, missing or broken page caching, oversized images, a heavy theme or plugins, or too many third-party scripts, not by WordPress itself. To fix it, measure with PageSpeed Insights, find the real cause with your browser's Network tab and the Query Monitor plugin, then fix the biggest problem first and re-test after every change.</p>
-<p>Below: a 5-minute diagnosis, a table that maps symptoms to causes, the 12 common causes with fixes, and a checklist.</p>
+<p>A slow WordPress site is almost always caused by slow hosting, missing or broken page caching, oversized images, a heavy theme or plugins, or too many third-party scripts, not by WordPress itself. To fix it, measure with PageSpeed Insights, find the real cause with your browser's Network tab and the free Query Monitor plugin, then fix the biggest problem first and re-test after every change.</p>
+<p><strong>Short answer:</strong> if every page waits a long time before anything happens, the problem is the server (hosting, caching, plugins, database). If the server answers quickly but the page still appears slowly, the problem is the front end (images, scripts, fonts, CSS). If only the dashboard is slow, it is an admin problem, which caching cannot fix.</p>
 <p>Prefer to have it fixed for you? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> finds the real cause and fixes it safely, with a before-and-after report.</p>
 
 <h2>Why is WordPress so slow? The short answer</h2>
-<p>A clean WordPress install on decent hosting is quick. Sites slow down because of what gets added on top, usually one or more of these:</p>
+<p>A clean install on decent hosting is quick. Sites slow down because of what gets added on top:</p>
 <ul>
-  <li><strong>Hosting:</strong> the server is slow to build and send each page, or is far from your visitors</li>
+  <li><strong>Hosting:</strong> the server is slow to build and send each page,</li>
   <li><strong>No working page cache:</strong> WordPress rebuilds every page from scratch for every visitor</li>
   <li><strong>Images:</strong> large, uncompressed photos, sliders and background videos</li>
   <li><strong>Theme, page builder and plugins:</strong> bloated code, or one badly built plugin doing heavy work on every page</li>
@@ -282,17 +293,29 @@ module.exports = [
   <li><strong>The database:</strong> years of revisions, transients and leftover plugin data</li>
 </ul>
 
+<h2>Slow front end or slow admin? Know which problem you have</h2>
+<p>People searching "wordpress slow loading" or "wordpress website slow to load" usually mean the public pages. People searching "wordpress admin slow" or "wordpress backend slow" mean the dashboard and editor. The causes overlap, but the fixes differ:</p>
+<table>
+  <thead><tr><th></th><th>Slow front end (visitors)</th><th>Slow admin / backend (you)</th></tr></thead>
+  <tbody>
+    <tr><td>Who notices</td><td>Visitors, Google, your conversion rate</td><td>You and your editors</td></tr>
+    <tr><td>Page cache helps?</td><td>Yes, a lot</td><td>No, the admin is never page-cached</td></tr>
+    <tr><td>Usual causes</td><td>Hosting, no cache, images, scripts, fonts, page builder bloat</td><td>Heavy plugins, autoloaded options, Heartbeat API, low PHP memory, slow external API calls</td></tr>
+    <tr><td>Best tool</td><td>PageSpeed Insights and the Network tab</td><td>Query Monitor while logged in</td></tr>
+  </tbody>
+</table>
+<p>If both are slow, start with the server.</p>
+
 <h2>Slow WordPress site: a 5-minute diagnosis</h2>
-<p>Test in a private or incognito window while logged out, because logged-in users usually bypass the cache and see a slower site than visitors do.</p>
+<p>Test in a private window while logged out, because logged-in users bypass the cache.</p>
 
 <h3>Step 1: Run PageSpeed Insights (1 minute)</h3>
 <p>Test your homepage and one key inner page at pagespeed.web.dev, on the mobile tab first. Check:</p>
 <ul>
   <li><strong>Core Web Vitals:</strong> LCP (how quickly the main content appears), INP (how quickly the page responds to taps) and CLS (whether the layout jumps). Google's "good" thresholds are an LCP within 2.5 seconds, an INP within 200 milliseconds and a CLS of 0.1 or less.</li>
-  <li><strong>Real users vs lab test:</strong> the top section shows real Chrome users' experience if your site has enough traffic; the lab test below simulates a mid-range phone on a slower connection.</li>
+  <li><strong>Real users vs lab test:</strong> the top section shows real Chrome users (if you have enough traffic); the lab test simulates a mid-range phone.</li>
   <li><strong>Diagnostics:</strong> warnings about server response time, image sizes, render-blocking requests, unused JavaScript and third-party code each point to a cause below.</li>
 </ul>
-<p>See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a> and <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
 
 <h3>Step 2: Check server response time (1 minute)</h3>
 <p>In Chrome, press F12, open the <strong>Network</strong> tab and reload. Click the first item (the page itself) and open <strong>Timing</strong>. "Waiting for server response" is your time to first byte (TTFB).</p>
@@ -301,11 +324,11 @@ module.exports = [
   <li><strong>Short wait, but the page still appears slowly:</strong> a front-end problem, such as images, scripts, fonts or CSS.</li>
 </ul>
 
-<h3>Step 3: Look for heavy files and third parties (1 minute)</h3>
-<p>In the same tab, sort by <strong>Size</strong>. Images measured in megabytes point to an image problem. Many requests to chat tools, pixels, video players or maps point to third-party scripts. Dozens of files from <code>/wp-content/plugins/</code> and your theme suggest plugin or theme bloat.</p>
+<h3>Step 3: Look for heavy files (1 minute)</h3>
+<p>Sort the Network tab by <strong>Size</strong>: megabyte images, many requests to chat tools, pixels or maps, or dozens of plugin and theme files each point to a cause below.</p>
 
 <h3>Step 4: Check Query Monitor (2 minutes)</h3>
-<p>Install the free Query Monitor plugin, load a slow page while logged in and open its menu in the admin bar. Look at the page generation time, <strong>Queries by Component</strong> (which plugin or theme does the most database work), slow queries and <strong>HTTP API calls</strong> to outside services. Use it on staging if you can, and deactivate it afterwards.</p>
+<p>Install Query Monitor, load a slow page (or a slow admin screen) while logged in and open its menu in the admin bar. Look at the page generation time, <strong>Queries by Component</strong> (which plugin or theme does the most database work), slow queries and <strong>HTTP API calls</strong> to outside services. Use it on staging if you can, and deactivate it afterwards.</p>
 
 <h3>What your results point to</h3>
 <table>
@@ -323,11 +346,11 @@ module.exports = [
 </table>
 
 <h2>WordPress site slow? How to fix it, cause by cause</h2>
-<p>Listed roughly in order of impact for a typical business site. Start with whatever your diagnosis pointed to, take a full backup before changing caching, optimisation or database settings, and re-test after each change.</p>
+<p>Roughly in order of impact. Start with what your diagnosis pointed to, back up first and re-test after each change.</p>
 
 <h3>1. Slow or overloaded hosting</h3>
-<p>Cheap shared hosting puts many sites on one server, and no plugin can fully make up for a server that is underpowered or far from your visitors. If most of your customers are in India, a server in India or nearby usually responds faster than one in the US or Europe.</p>
-<p><strong>Fix:</strong> if server response stays slow with caching on, ask your host about your plan's resources and PHP workers, or move to better hosting near your audience. See <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time (TTFB)</a>. On Hostinger? See <a href="/blog/hostinger-website-slow-fix/">Hostinger-specific speed fixes</a>.</p>
+<p>No plugin can fully make up for an underpowered server. If most of your customers are in India, a server in India or nearby usually responds faster than one in the US or Europe.</p>
+<p><strong>Fix:</strong> if server response stays slow with caching on, ask your host about your plan's resources and PHP workers, or move to better hosting near your audience. See <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time (TTFB)</a>.</p>
 
 <h3>2. No page caching, or caching that isn't working</h3>
 <p>Without a page cache, WordPress runs PHP and database queries to build every page for every visitor.</p>
@@ -338,19 +361,17 @@ module.exports = [
 <p><strong>Fix:</strong> resize images to their display size, compress them and serve WebP. Lazy-load images lower down the page, but never the main hero image. See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
 
 <h3>4. A heavy theme or page builder setup</h3>
-<p>Multipurpose themes load code for features you never use, and page builder layouts with many nested sections, widgets and animations get heavy quickly.</p>
+<p>Multipurpose themes and deeply nested builder layouts with animations get heavy quickly.</p>
 <p><strong>Fix:</strong> use a lightweight theme, turn on the builder's performance features and simplify your heaviest pages. Built with Elementor? See <a href="/blog/why-elementor-sites-slow/">Elementor-specific fixes</a>.</p>
 
 <h3>5. Too many plugins, or one badly built plugin</h3>
-<p>What plugins do matters more than how many you have. One plugin running heavy queries or loading its files on every page can slow the whole site.</p>
+<p>What plugins do matters more than how many you have. One plugin running heavy queries or loading its files on every page can slow the whole site, front end and admin alike.</p>
 <p><strong>Fix:</strong> find the worst offenders in Query Monitor, delete unused plugins, replace heavy ones and stop plugins loading files where they aren't needed.</p>
 
 <h3>6. Too many third-party scripts</h3>
-<p>Chat widgets, tracking pixels, YouTube embeds, maps and social feeds load code from servers you don't control.</p>
 <p><strong>Fix:</strong> remove what you don't use, delay the rest until the visitor interacts and swap embeds for click-to-load previews. See <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a>.</p>
 
 <h3>7. Render-blocking CSS and JavaScript</h3>
-<p>Files in the page head must load before the browser can show anything.</p>
 <p><strong>Fix:</strong> minify files, defer non-essential JavaScript and remove unused CSS, then test menus, sliders and forms, because aggressive settings can break them.</p>
 
 <h3>8. Too many web fonts</h3>
@@ -361,18 +382,34 @@ module.exports = [
 <p><strong>Fix:</strong> take a backup, then clean up revisions, transients, spam and orphaned tables, and review autoloaded data. See <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a>.</p>
 
 <h3>10. Outdated PHP or WordPress</h3>
-<p>Newer PHP versions are generally faster, and WordPress updates often include performance improvements. Run a current, supported PHP version after testing on staging.</p>
+<p>Newer PHP versions are generally faster. Run a current, supported version after testing on staging.</p>
 
 <h3>11. Visitors far from your server, with no CDN</h3>
-<p>If most visitors are in a different country from your server, every request travels further. Host close to your main audience and use a CDN to serve images, CSS and JavaScript from nearer locations.</p>
+<p>Host close to your main audience and use a CDN to serve images, CSS and JavaScript from nearer locations.</p>
 
 <h3>12. Background jobs and bot traffic</h3>
-<p>Backups, security scans, scheduled tasks and imports compete with visitors for server resources, as do bots. Schedule heavy jobs for quiet hours, use a real server cron on busy sites and add a firewall or bot protection.</p>
+<p>Backups, scans, imports and bots compete with visitors for resources. Schedule heavy jobs for quiet hours, use a real server cron on busy sites and add a firewall or bot protection.</p>
+
+<h2>WordPress admin slow? Fixing a slow backend</h2>
+<p>Page caching never applies to logged-in admin screens, so a slow dashboard, slow post editor or slow WooCommerce orders screen needs different fixes:</p>
+<ul>
+  <li><strong>Find the heavy plugin:</strong> open the slow screen with Query Monitor and check Queries by Component and HTTP API calls. Plugins that call outside services (licence checks, feeds, analytics widgets) on every admin load are common culprits.</li>
+  <li><strong>Trim autoloaded options:</strong> large autoloaded data from removed plugins loads on every admin request.</li>
+  <li><strong>Calm the Heartbeat API:</strong> reduce its frequency on admin screens where you don't need autosave or live notices.</li>
+  <li><strong>Raise PHP memory and check PHP workers:</strong> low limits make the editor and media library crawl.</li>
+  <li><strong>Add an object cache</strong> (Redis or Memcached, if your host offers it) on busy sites and stores.</li>
+</ul>
+<p>The full walkthrough is in <a href="/blog/wordpress-admin-slow/">why the WordPress admin is slow</a>.</p>
+
+<h2>Slow only on mobile, after an update, or on WooCommerce?</h2>
+<p><strong>Mobile:</strong> lower mobile scores are normal, but if real visitors find pages slow on their phones, check hero sliders, background videos and heavy JavaScript.</p>
+<p><strong>After an update:</strong> clear every cache, give background database upgrades time to finish, then use the Health Check &amp; Troubleshooting plugin on staging to disable plugins one at a time and find the culprit. Roll that plugin back until a fix is released.</p>
+<p><strong>WooCommerce:</strong> cart, checkout and account pages can't be page-cached, so hosting, an object cache and plugin quality matter even more.</p>
 
 <h2>Step-by-step checklist to fix a slow WordPress website</h2>
 <ol>
   <li>Take a full backup of files and database, or work on a staging copy.</li>
-  <li>Record a baseline: PageSpeed Insights mobile results and TTFB for three key pages.</li>
+  <li>Record a baseline: PageSpeed Insights mobile results and TTFB for three key pages, plus how long your slowest admin screen takes.</li>
   <li>Confirm one page cache is active and returning a cache HIT for logged-out visitors.</li>
   <li>If TTFB is still slow, check PHP version, hosting resources and Query Monitor's slowest components.</li>
   <li>Compress and resize the largest images, starting with the hero image on each key page.</li>
@@ -383,16 +420,10 @@ module.exports = [
   <li>Purge all caches, re-test the same pages and compare with your baseline.</li>
 </ol>
 
-<h2>Slow only on mobile, in the admin, or after an update?</h2>
-<p><strong>Mobile:</strong> lower mobile scores are normal, but if real visitors find pages slow on their phones, check hero sliders, background videos and heavy JavaScript. See <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress slow on mobile</a>.</p>
-<p><strong>Admin dashboard:</strong> page caching doesn't apply to the admin, so a slow dashboard usually means heavy plugins, autoloaded data, the Heartbeat API or too little PHP memory. See <a href="/blog/wordpress-admin-slow/">why the WordPress admin is slow</a>.</p>
-<p><strong>After an update:</strong> clear every cache, give background database upgrades time to finish, then use the Health Check &amp; Troubleshooting plugin on staging to disable plugins one at a time and find the culprit. Roll that plugin back until a fix is released.</p>
-<p><strong>WooCommerce:</strong> cart, checkout and account pages can't be page-cached, so hosting, an object cache and plugin quality matter even more. See <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a>.</p>
-
 <h2>FAQs</h2>
 
 <h3>Why is my WordPress site so slow?</h3>
-<p>Usually slow hosting, no working page cache, large images, a heavy theme or page builder, too many plugins or third-party scripts. Run PageSpeed Insights and check your server response time in the Network tab to see whether the problem is the server or the page itself.</p>
+<p>Usually slow hosting, no working page cache, large images, a heavy theme or page builder, too many plugins or third-party scripts. Check your server response time in the Network tab to see whether the problem is the server or the page itself.</p>
 
 <h3>Why is WordPress so slow compared with other platforms?</h3>
 <p>WordPress itself isn't slow; a clean install on decent hosting is quick. It slows down because of what's added on top, often without caching. A well-built WordPress site can be as fast as a site on any other platform.</p>
@@ -400,19 +431,21 @@ module.exports = [
 <h3>WordPress site slow: how to fix it?</h3>
 <p>Diagnose first with PageSpeed Insights, the Network tab and Query Monitor. Then fix in order of impact: server response and caching, images, theme and plugin bloat, scripts and fonts, then the database. Back up first and re-test after each change.</p>
 
-<h3>My WordPress website is very slow. Where do I start?</h3>
-<p>Check server response time first. If it's slow on every page, the fix is hosting, caching or a heavy plugin. If the server is quick but pages still load slowly, start with images and third-party scripts.</p>
+<h3>Why is my WordPress admin slow when the website is fast?</h3>
+<p>The public site is served from cache but the admin is not, so heavy plugins, autoloaded options, the Heartbeat API and low PHP memory only show up in the backend. Query Monitor shows which.</p>
 
-<h3>Why is my WordPress site slow loading only sometimes?</h3>
-<p>Uncached pages, an overloaded shared server at busy times, backups or scans running during the day, and bot traffic all cause random slowness. Check your host's resource usage graphs and when your scheduled jobs run.</p>
+<h3>Why is my WordPress website slow to load only sometimes?</h3>
+<p>Uncached pages, an overloaded shared server, daytime backups or scans, and bot traffic. Check your host's resource graphs and job schedules.</p>
 
 <h3>Do too many plugins slow down WordPress?</h3>
 <p>They can, but quality matters more than quantity. A few heavy plugins can be slower than many small, well-built ones, and Query Monitor shows which are doing the most work.</p>
 
 <p>Serving visitors across regions? A <a href="/blog/what-is-a-cdn/">CDN</a> can help.</p>
 
+<p>On Hostinger? See <a href="/blog/hostinger-website-slow-fix/">Hostinger-specific speed fixes</a>. Moving hosts? See <a href="/blog/migrate-website-to-hostinger/">migrating to Hostinger</a>.</p>
+
 <h2>When to get help</h2>
-<p>Still slow after the basics, or worried about breaking something? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> starts with a full audit, fixes hosting, caching, image, plugin, script and database issues in order of impact, and ends with a before-and-after report, with a full backup taken first. If the site also needs ongoing care, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for regular maintenance. Send me your website address and I'll tell you what's slowing it down.</p>
+<p>Still slow after the basics, or worried about breaking something? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> starts with a full audit, fixes hosting, caching, image, plugin, script, database and admin issues in order of impact, and ends with a before-and-after report, with a full backup taken first. If the site also needs ongoing care, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for regular maintenance. Send me your website address and I'll tell you what's slowing it down.</p>
 `,
   },
   {
@@ -1422,7 +1455,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   {
     slug: 'elementor-vs-gutenberg',
     seoTitle: 'Gutenberg vs Elementor: Which WordPress Editor to Choose?',
-    title: 'Elementor vs Gutenberg: Which WordPress Builder Should You Use?',
+    title: 'Gutenberg vs Elementor: Which WordPress Editor Should You Use in 2026?',
     description: 'Gutenberg vs Elementor compared: editing, speed, design freedom, cost, lock-in and client editing, with a side-by-side build table and when to pick each.',
     date: '2026-09-27',
     updated: '2026-10-30',
@@ -1430,7 +1463,21 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     related: ['elementor-developer', 'figma-to-wordpress', 'wordpress-speed-optimization'],
     body: `
 <p>Gutenberg vs Elementor comes down to this: Gutenberg, WordPress's built-in block editor, is free, lighter and keeps your content native to WordPress, while Elementor, a drag-and-drop page builder plugin, gives non-technical teams more visual design control at the cost of extra code and a yearly Pro licence. Choose Gutenberg for blogs and lean business sites, and Elementor for design-heavy marketing pages your team wants to edit visually.</p>
-<p>Both are good, and I build with both. The right choice depends on who will edit the site, how design-heavy it is and how much you care about speed and long-term flexibility.</p>
+<p><strong>Short answer:</strong> if your team mainly writes posts and updates text, pick Gutenberg. If your team wants to design and change landing pages visually without a developer, pick Elementor. If you need both, use Gutenberg for posts and Elementor for a handful of marketing pages. I build with both, so this is not tied to one tool.</p>
+
+<h2>Gutenberg or Elementor? A 30-second decision</h2>
+<table>
+  <thead><tr><th>If this describes you</th><th>Pick</th></tr></thead>
+  <tbody>
+    <tr><td>Blog, news, resources or a lean brochure site</td><td>Gutenberg</td></tr>
+    <tr><td>Speed on mobile data is the top priority</td><td>Gutenberg</td></tr>
+    <tr><td>You don't want a yearly builder licence</td><td>Gutenberg</td></tr>
+    <tr><td>Marketing team builds new landing pages for ads and offers</td><td>Elementor</td></tr>
+    <tr><td>Design-heavy pages with popups, forms and motion</td><td>Elementor (Pro)</td></tr>
+    <tr><td>Agency handing a visual editor to a non-technical client</td><td>Elementor, with role limits</td></tr>
+    <tr><td>Long-term flexibility and minimal lock-in matter most</td><td>Gutenberg</td></tr>
+  </tbody>
+</table>
 
 <h2>Quick comparison</h2>
 <table>
@@ -1459,7 +1506,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>Gutenberg sites are usually lighter out of the box. WordPress can load styles only for the blocks used on each page, and there's no extra editor framework running on the front end.</p>
 <p>Elementor adds more code: its own stylesheets and scripts, extra wrapper elements in the HTML (reduced by its newer container layout), icon libraries, fonts and animations, and often add-on widget packs. But a well-built Elementor site on good hosting, with a lightweight theme, caching, optimised images and only the features it needs, can still be very fast. Most slow Elementor sites are slow because of how they were built, not because of Elementor itself.</p>
 <p>If your Elementor site is already slow, see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow and how to fix them</a>.</p>
-<p>Gutenberg isn't automatically fast either: a heavy theme, large block libraries, sliders and unoptimised images will slow any site. Measure with real tests rather than assumptions; see <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+<p>Gutenberg isn't automatically fast either: a heavy theme, large block libraries, sliders and unoptimised images will slow any site. Measure with real tests rather than assumptions; see Core Web Vitals explained.</p>
 
 <h2>Design flexibility</h2>
 <p>For design-heavy pages, Elementor gives more out of the box: motion effects, custom layouts per device, popups, forms, loops of posts or products, and theme templates, all without code. A designer's Figma file can usually be matched closely.</p>
@@ -1474,11 +1521,13 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <h2>Lock-in and switching later</h2>
 <p>Elementor stores layouts in its own format. If you deactivate it, the text on your pages usually remains as plain, unstyled content, but the layout and design are gone, and pages built with it have to be rebuilt in whatever you move to. That's manageable for a ten-page site and a real project for a large one.</p>
 <p>Gutenberg content is native WordPress content and survives a theme change far better. Third-party block plugins create a smaller version of the same problem: remove the plugin and its blocks stop displaying properly.</p>
-<p>Lock-in shows most clearly when a plugin is removed, so ask before any build how the content is stored and what a future switch would involve.</p>
 
 <h2>Client editing: who will update the site?</h2>
 <p>This is often the deciding question. If the owner or marketing team wants to change headlines, swap images and build new landing pages without calling a developer, Elementor is easier to learn. The risk is that the same freedom makes it easy to break a layout or a mobile view by accident. Elementor Pro's role manager can limit some users to editing content only.</p>
-<p>With Gutenberg, a developer can lock blocks and patterns so editors can change text and images but not move or delete sections, which suits teams who mainly publish posts and update existing pages. Whichever you choose, ask for a short handover showing your team what to edit and what to leave alone; see <a href="/blog/edit-website-content-wordpress/">editing your website content in WordPress</a>.</p>
+<p>With Gutenberg, a developer can lock blocks and patterns so editors can change text and images but not move or delete sections, which suits teams who mainly publish posts and update existing pages. Whichever you choose, ask for a short handover showing your team what to edit and what to leave alone; see editing your website content in WordPress.</p>
+
+<h2>Gutenberg vs Elementor for agencies and handovers</h2>
+<p>If you are an agency or freelancer building for clients, think about the person who inherits the site. A visual editor means fewer support calls but more broken mobile layouts; a locked block setup means less breakage but more requests for new sections. Whichever you choose, document which templates, global styles and patterns exist, and give the client a short screen recording of the edits they are likely to make.</p>
 
 <h2>Updates and maintenance</h2>
 <p>Gutenberg improves with each WordPress release, so there's one less plugin to update. Elementor releases updates often, and major ones occasionally change how layouts render, so test on a staging copy before updating a live site; see <a href="/blog/elementor-layout-broken-after-update/">fixing an Elementor layout broken after an update</a>.</p>
@@ -1533,15 +1582,15 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <h2>FAQs</h2>
 <h3>Gutenberg vs Elementor: which is better?</h3>
-<p>Neither is better for every site. Gutenberg is better for blogs, content sites and lean business sites; Elementor is better when a non-technical team wants to design and edit marketing pages visually. Gutenberg is not replacing Elementor, and many sites use both.</p>
+<p>Neither is better for every site, so the real question is Gutenberg or Elementor for your team. Gutenberg is better for blogs, content sites and lean business sites; Elementor is better when a non-technical team wants to design and edit marketing pages visually. Gutenberg is not replacing Elementor, and many sites use both.</p>
 <h3>Is Gutenberg faster than Elementor?</h3>
 <p>Usually, out of the box, because it loads less code. A carefully built Elementor site can still pass Core Web Vitals, and a heavy block theme can be slow, so test the finished site rather than the editor.</p>
 <h3>Is Elementor bad for SEO?</h3>
 <p>Not in itself. Google ranks content, relevance and page experience, not the editor. Elementor sites can rank well if they're fast, use proper headings and have good content.</p>
 <h3>Can I switch from Elementor to Gutenberg?</h3>
 <p>Yes, but there's no clean automatic conversion. Pages are usually rebuilt in blocks, which is a good moment to simplify the design and improve speed.</p>
-<h3>Can I use Elementor and Gutenberg on the same site?</h3>
-<p>Yes. You choose per page or post, so blog posts can use the block editor while the homepage and landing pages use Elementor.</p>
+<h3>Does Elementor work with Gutenberg on the same site?</h3>
+<p>Yes. Elementor and Gutenberg can run side by side: you choose per page or post, so blog posts can use the block editor while the homepage and landing pages use Elementor. Keep one theme and shared colours and fonts so both kinds of page look consistent.</p>
 
 <h3>Which is better for a blog?</h3>
 <p>Gutenberg. Writing is faster, content stays native to WordPress, and post templates can be designed in the Site Editor or by your theme.</p>
@@ -12552,15 +12601,16 @@ function my_only_free_shipping( $rates ) {
   },
   {
     slug: 'local-landing-pages-without-doorway-pages',
-    seoTitle: 'SEO Doorway Pages: How to Build City Pages Safely',
-    title: 'Local Landing Pages Done Right: City and Area Pages That Rank Without Becoming Doorway Pages',
-    description: 'SEO doorway pages explained: what Google\'s policy says, a 10-point audit for city and area pages, the unique content each needs and how to fix doorways.',
+    seoTitle: 'SEO Doorway Pages: What They Are and How to Avoid Them',
+    title: 'SEO Doorway Pages: What They Are and How to Build City Pages That Rank Without Becoming Doorways',
+    description: 'SEO doorway pages explained: what Google\'s policy says, examples, a 10-point audit for city and area pages, the unique content each needs and how to fix them.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-for-solar-and-power-companies'],
     body: `
-<p>In SEO, doorway pages are near-identical pages built to rank for many city or keyword variations that all send visitors to the same place, and Google's spam policies treat them as spam. Local landing pages are safe, and useful, when each one is about a place you genuinely serve and contains things that are only true of that place: the branch or team that covers it, jobs you've done there, local reviews, coverage and response times. They become doorway pages when they're near-identical copies with the city name swapped, built to catch searches and send everyone to the same place. Google's spam policies treat doorways as spam, so a set of thin city pages can hold back the pages themselves and the site around them.</p>
+<p>SEO doorway pages are near-identical pages built to rank for many city or keyword variations that all send visitors to the same place, and Google's spam policies treat them as spam. Local landing pages are safe, and useful, when each one is about a place you genuinely serve and contains things only true of that place: the branch or team that covers it, jobs you've done there, local reviews, coverage and response times.</p>
+<p><strong>Short answer:</strong> if you could swap the city name on a page and nothing else would be wrong, it is a doorway. A set of thin city pages can hold back the pages themselves and the site around them.</p>
 <p>Planning which location pages to build, how to structure and link them, and which schema to add is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>. This guide sets out the rules so you can judge your own pages.</p>
 <p>It covers the principles for any city, area or locality page. If you have several branches, also read <a href="/blog/multi-location-business-website/">how to structure a multi-location business website</a>. If you travel to customers and have no shopfront, <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> covers the Business Profile side.</p>
 
@@ -12568,6 +12618,16 @@ function my_only_free_shipping( $rates ) {
 <p>In its spam policies, Google describes doorways as sites or pages created to rank for specific, similar searches, which lead users to essentially the same destination. The examples Google gives include pages targeted at particular cities or regions that funnel visitors to one page, and substantially similar pages that look more like search results than a clear, browsable structure.</p>
 <p>Google also has a policy against scaled content abuse: producing large numbers of pages mainly to manipulate rankings, however they're made, including with AI tools. Bulk city pages generated from a template are exactly what both policies describe.</p>
 <p>The consequences range from Google simply indexing one of the near-duplicates and ignoring the rest, to a manual action shown in Search Console's Manual actions report. Either way, the pages don't do the job you built them for.</p>
+
+<h2>What are doorway pages? Common examples</h2>
+<p>Doorway pages are easiest to recognise from examples. These patterns all fit Google's description:</p>
+<ul>
+  <li><strong>"Service in [city]" pages in bulk:</strong> "AC repair in Pune", "AC repair in Nashik", "AC repair in Nagpur", with the same text on each and no team in two of the three cities.</li>
+  <li><strong>Locality spam:</strong> a page for every suburb of one city, each repeating the main service page.</li>
+  <li><strong>Keyword variants:</strong> separate pages for "cheap", "best" and "affordable" versions of the same service.</li>
+  <li><strong>Separate domains</strong> or microsites that exist only to rank and then send visitors to the main site.</li>
+</ul>
+<p>None of these is a problem because it mentions a city. The problem is that the pages exist for search engines, not for the person reading them.</p>
 
 <h2>Doorway page or useful local page?</h2>
 <table>
@@ -12621,7 +12681,7 @@ function my_only_free_shipping( $rates ) {
   <li><strong>Internal links:</strong> link location pages from an "Areas we serve" page and from the relevant service pages, with plain anchor text. A footer packed with city links is a classic doorway pattern.</li>
   <li><strong>Canonicals:</strong> each location page should point its canonical tag at itself, not at the main service page. If two pages are so similar you'd want to canonicalise one to the other, merge them instead; see <a href="/blog/duplicate-content-explained/">duplicate content explained</a>.</li>
   <li><strong>Schema:</strong> use LocalBusiness markup with the address on pages for real branches. For areas without an address, describe coverage with areaServed in your Organization or Service markup rather than inventing addresses; see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</li>
-  <li><strong>Hreflang isn't needed:</strong> it tells Google about language or country versions of the same page. A Pune page and a Nashik page in English aren't alternate versions of each other, so they don't need it. It only matters if you also publish Hindi or Marathi versions; see <a href="/blog/hreflang-multilingual-seo-india/">hreflang for Indian websites</a>.</li>
+  <li><strong>Hreflang isn't needed:</strong> it tells Google about language or country versions of the same page. A Pune page and a Nashik page in English aren't alternate versions of each other, so they don't need it. It only matters if you also publish Hindi or Marathi versions; see hreflang for Indian websites.</li>
 </ul>
 
 <h2>Building location pages in WordPress without making doorways</h2>
@@ -12655,7 +12715,7 @@ function my_only_free_shipping( $rates ) {
 
 
 <h2>FAQs</h2>
-<h3>What is a doorway page in SEO?</h3>
+<h3>What are doorway pages in SEO?</h3>
 <p>A page built mainly to rank for a particular search, often one of many near-identical pages targeting different cities or keyword variations, which sends visitors on to the same place. Google's spam policies treat doorways as spam.</p>
 <h3>Are doorway pages bad for SEO?</h3>
 <p>Yes. Google can rank them lower or remove them, and a large set of thin doorways can hold back the rest of the site. Merging them into fewer, genuinely useful pages is the safe fix.</p>
@@ -19411,14 +19471,15 @@ Target:  https://example.com/products/$1/</code></pre>
   {
     slug: 'robots-txt-explained',
     seoTitle: 'Robots.txt WordPress Guide: Safe Examples and Mistakes',
-    title: 'Robots.txt Explained Simply: How It Works, Safe WordPress Examples and Mistakes to Avoid',
-    description: 'Robots.txt for WordPress explained: where the file lives, how to edit it in Yoast or Rank Math, safe WordPress and WooCommerce examples and mistakes.',
+    title: 'Robots.txt WordPress Guide: How It Works, Safe Examples, Sitemaps and Mistakes to Avoid',
+    description: 'Robots.txt WordPress guide: where the file lives, how to edit it in Yoast or Rank Math, safe WordPress and WooCommerce examples, sitemap lines and mistakes.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
-<p>In WordPress, robots.txt is a small plain-text file at yourdomain/robots.txt, generated automatically unless you upload your own, that tells search engine crawlers which URLs they may and may not crawl. A safe WordPress robots.txt blocks only /wp-admin/ (allowing admin-ajax.php) and lists your sitemap. It controls crawling, not indexing: to keep a page out of Google you need a noindex tag on a page Google can crawl, not a robots.txt block. For most WordPress sites the right robots.txt is short, blocking only the admin area and pointing to your sitemap, and the biggest risks are rules that block too much, such as a leftover "Disallow: /" from a staging site.</p>
+<p>Robots.txt WordPress basics: robots.txt is a small plain-text file at yourdomain/robots.txt, generated automatically by WordPress unless you upload your own, that tells search engine crawlers which URLs they may and may not crawl. A safe WordPress robots.txt blocks only /wp-admin/ (allowing admin-ajax.php) and lists your XML sitemap; everything else should stay crawlable.</p>
+<p><strong>Short answer:</strong> robots.txt controls crawling, not indexing. To keep a page out of Google you need a noindex tag on a page Google can crawl, not a robots.txt block. The biggest risk is a file that blocks too much, such as a leftover "Disallow: /" from a staging site.</p>
 <p>Robots.txt and the XML sitemap are both part of the setup in my <a href="/wordpress-seo-services/">WordPress SEO services</a>, because a single wrong line in this file can stop Google crawling a whole site. This guide explains how the file works, gives safe examples for WordPress and WooCommerce, covers AI crawlers and shows how to test it.</p>
 <p>If Search Console is already showing "Indexed, though blocked by robots.txt" or "Blocked by robots.txt", see <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">what those robots.txt statuses mean and how to fix them</a>.</p>
 
@@ -19468,6 +19529,18 @@ Sitemap: https://example.com/sitemap_index.xml</code></pre>
   <li><strong>Hosting file manager or FTP:</strong> upload or edit robots.txt in the same folder as wp-config.php.</li>
 </ul>
 
+<h2>WordPress sitemap XML and robots.txt</h2>
+<p>The Sitemap line is the one addition almost every WordPress robots.txt should have, because it tells every crawler, not only Google, where your XML sitemap lives. Where the WordPress sitemap XML file is depends on your setup:</p>
+<table>
+  <thead><tr><th>Setup</th><th>XML sitemap address</th></tr></thead>
+  <tbody>
+    <tr><td>No SEO plugin (WordPress core)</td><td>/wp-sitemap.xml</td></tr>
+    <tr><td>Yoast SEO or Rank Math</td><td>/sitemap_index.xml</td></tr>
+    <tr><td>Other SEO or sitemap plugins</td><td>Check the plugin settings, then open the URL to confirm it loads</td></tr>
+  </tbody>
+</table>
+<p>Use only one sitemap generator: when an SEO plugin is active it normally switches off the core sitemap, but a separate sitemap plugin on top can create a second, conflicting set. List the full https address on the live domain, submit the same address in Search Console, and re-check both after a migration or domain change.</p>
+
 <h2>Robots.txt WordPress setups: good, risky and broken</h2>
 <p>Most robots.txt problems I find on WordPress sites fall into one of three patterns. Compare yours with these.</p>
 <table>
@@ -19512,7 +19585,7 @@ Sitemap: https://example.com/sitemap_index.xml</code></pre>
     <tr><td>Keep a page out of Google's results</td><td>A noindex tag, with crawling allowed</td><td>Google must crawl the page to see the noindex</td></tr>
     <tr><td>Stop crawlers wasting time on endless URL variations</td><td>Robots.txt</td><td>This is what it is designed for</td></tr>
     <tr><td>Keep private files or areas private</td><td>A login or password protection</td><td>Robots.txt is public and only a request</td></tr>
-    <tr><td>Keep a staging site out of Google</td><td>Password protection</td><td>A blocked staging site can still be indexed from links; see <a href="/blog/staging-sites-explained/">staging sites explained</a></td></tr>
+    <tr><td>Keep a staging site out of Google</td><td>Password protection</td><td>A blocked staging site can still be indexed from links; see staging sites explained</td></tr>
     <tr><td>Remove a page already in Google</td><td>Delete it (404 or 410) or noindex it, and leave it crawlable</td><td>Blocking it freezes the old version in the index</td></tr>
   </tbody>
 </table>
@@ -19524,7 +19597,7 @@ Disallow: /
 
 User-agent: Google-Extended
 Disallow: /</code></pre>
-<p>Whether to block them is a business decision, not a technical one. A training crawler takes content without sending visitors; an AI search crawler is what lets assistants find and cite your pages. Many service businesses want to be cited, so they leave the search crawlers alone. <a href="/blog/ai-search-optimization-website/">AI search and your website</a> covers the trade-off. If you use Cloudflare, check whether its AI crawler settings are adding lines to your robots.txt on your behalf, then look at the live file to see exactly what crawlers receive.</p>
+<p>Whether to block them is a business decision, not a technical one. A training crawler takes content without sending visitors; an AI search crawler is what lets assistants find and cite your pages. Many service businesses want to be cited, so they leave the search crawlers alone. AI search and your website covers the trade-off. If you use Cloudflare, check whether its AI crawler settings are adding lines to your robots.txt on your behalf, then look at the live file to see exactly what crawlers receive.</p>
 
 <h2>Common robots.txt mistakes</h2>
 <ul>
@@ -19557,8 +19630,8 @@ Disallow: /</code></pre>
 <p>It depends on whether you mind your content being used to train AI models, and whether you want AI assistants to cite you. Blocking training crawlers while allowing AI search crawlers is a common middle ground. Google-Extended affects only Google's AI models, not your Google Search rankings.</p>
 <h3>How do I edit robots.txt in WordPress?</h3>
 <p>With Yoast SEO, use Tools &gt; File editor; with Rank Math, use General Settings &gt; Edit robots.txt. If your changes don't show at yourdomain/robots.txt, a physical file in the root folder is overriding them, so edit or delete that file through your host's file manager.</p>
-<h3>Do I need a robots.txt file at all?</h3>
-<p>No. Without one, crawlers assume everything is allowed, which is fine for many small sites. WordPress provides one anyway, and a short file with your sitemap line is useful.</p>
+<h3>Where is the XML sitemap in WordPress?</h3>
+<p>Without an SEO plugin it is at /wp-sitemap.xml; with Yoast SEO or Rank Math it is usually /sitemap_index.xml. Add that full address as a Sitemap line in robots.txt and submit it in Search Console. If you have no robots.txt file at all, crawlers assume everything is allowed.</p>
 
 <p>Worried that a robots.txt rule, a stray noindex or a sitemap problem is holding your site back? Crawling and indexing checks, with fixes made on your site, are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off crawl check.</p>
 `,
@@ -25884,17 +25957,19 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
   },
   {
     slug: 'utm-tags-explained',
-    seoTitle: 'UTM Tags: How to Build, Name and Track Campaign Links',
-    title: 'UTM Tags Explained: How to Tag Campaign Links and See Which Ones Bring Enquiries in GA4',
-    description: 'UTM tags explained: the five parameters, naming GA4 understands, a ready template for WhatsApp, Instagram, email, QR codes and ads, and GA4 reports.',
+    seoTitle: 'UTM Tags: What They Are and How to Track Campaign Links',
+    title: 'UTM Tags Explained: What a UTM Tag Is, How to Tag Campaign Links and See Which Ones Bring Enquiries in GA4',
+    description: 'UTM tags explained: what a UTM tag is, the five parameters, naming GA4 understands, a UTM tagging template for WhatsApp, QR codes and ads, and GA4 reports.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-seo-services', 'website-for-startups'],
     body: `
-<p>UTM tags are short labels added to the end of a link, such as utm_source, utm_medium and utm_campaign, that tell Google Analytics exactly where a visitor came from. Use them on links you share outside your website, such as WhatsApp messages, your Instagram bio, email newsletters, QR codes, partner sites and Meta ads, and never on links between your own pages. Keep the names lowercase and consistent, and Google Analytics 4 will show you which campaigns bring visitors and, with key events set up, which ones bring enquiries.</p>
+<p>UTM tags are short labels added to the end of a link, such as utm_source, utm_medium and utm_campaign, that tell Google Analytics exactly where a visitor came from.  Use them on links you share outside your website, such as WhatsApp messages, your Instagram bio, email newsletters, QR codes, partner sites and Meta ads, and never on links between your own pages. Keep the names lowercase and consistent, and Google Analytics 4 will show you which campaigns bring visitors and, with key events set up, which ones bring enquiries.</p>
 <p>Tags tell you which campaign sent a visitor; the page they land on decides whether they enquire. In my <a href="/landing-page-design/">landing page design</a> work, form submissions, WhatsApp clicks and phone taps are tracked as conversions in GA4, Google Ads and Meta Pixel and confirmed with test enquiries, so campaigns can be compared by leads, not clicks.</p>
 <p>Without tags, a lot of campaign traffic is invisible. Links tapped inside WhatsApp, email apps, PDFs and many social apps often arrive with no referrer at all, so GA4 files them under Direct, as if the visitor had typed your address.</p>
+
+<p><strong>Short answer:</strong> a UTM tag is one of these labels; tagging a link means adding three of them (source, medium, campaign) so GA4 can credit the visit to the right campaign instead of lumping it into Direct. Building a tagged link takes about a minute and costs nothing.</p>
 
 <h2>What a UTM-tagged link looks like</h2>
 <pre><code>https://example.com/diwali-offer/?utm_source=whatsapp&amp;utm_medium=social&amp;utm_campaign=diwali-2026&amp;utm_content=broadcast</code></pre>
@@ -25991,6 +26066,16 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 </ul>
 <p>For chats started from your site rather than links you send, see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your business website</a>, which covers click tracking.</p>
 
+<h2>UTM tagging: a simple routine for your team</h2>
+<p>UTM tagging only works if everyone who shares links follows the same routine. For a small business, that usually means one owner of the sheet and four steps every time a campaign starts:</p>
+<ol>
+  <li><strong>Name the campaign once,</strong> before anything is shared, and add it to the sheet with the start date and the landing page.</li>
+  <li><strong>Build every link from the sheet,</strong> one row per place the link will appear, so WhatsApp, the newsletter and the flyer each get their own source or content value.</li>
+  <li><strong>Test each link on a phone</strong> and check the visit appears in GA4 Realtime before the campaign goes out.</li>
+  <li><strong>Review after a week</strong> in Traffic acquisition, then note what worked in the sheet so the next campaign starts from evidence.</li>
+</ol>
+<p>Agencies and freelancers posting on your behalf should use the same sheet; mixed naming from different people is the most common reason UTM reports become unreadable within a few months.</p>
+
 <h2>Reading UTM data in GA4</h2>
 <ol>
   <li>Open <strong>Reports &gt; Acquisition &gt; Traffic acquisition</strong>.</li>
@@ -26012,7 +26097,7 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 </ul>
 
 <h2>FAQs</h2>
-<h3>What are UTM tags and what are they used for?</h3>
+<h3>What is a UTM tag and what is it used for?</h3>
 <p>UTM tags are labels added to a link after a question mark. They tell Google Analytics where a visitor came from when it can't work that out itself, such as clicks from WhatsApp, email, QR codes and social posts. Combined with key events, they show which campaigns bring enquiries.</p>
 <h3>Are UTM tags case-sensitive?</h3>
 <p>Yes, in your reports. GA4 treats WhatsApp and whatsapp as two different sources, which splits your data. Keep every value lowercase.</p>
@@ -33341,22 +33426,33 @@ SELECT option_name FROM wp_options WHERE option_value LIKE '%&lt;script%';</code
   },
   {
     slug: 'fix-wordpress-redirect-hack',
-    seoTitle: 'WordPress Site Redirecting to Spam? Remove Redirect Malware',
-    title: 'WordPress Site Redirecting to Spam? How to Find and Remove the Redirect Hack',
-    description: 'WordPress site redirecting to spam? Catch the hidden redirect, find the malware in .htaccess, wp-config, themes or the database and remove it for good.',
+    seoTitle: 'WordPress Hacked Redirect: Find and Remove Redirect Malware',
+    title: 'WordPress Hacked Redirect: Why Your Site Redirects to Spam and How to Remove the Malware',
+    description: 'WordPress hacked redirect sending visitors to spam? Catch the hidden redirect, find the malware in .htaccess, files or the database and stop it returning.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
-<p>If your WordPress site is redirecting to spam (gambling, dating, fake prize or "your phone has a virus" pages) and you didn't set the redirect up, your site has been hacked with redirect malware. The code usually targets mobile visitors arriving from Google while hiding from logged-in admins, which is why the site looks normal when you check it yourself.</p>
-<p>Below: how to rule out harmless causes, how to catch the hidden redirect, a table of where the malware lives, and a step-by-step removal checklist. Redirect hacks often come back when a backdoor is missed; if you would rather have it handled, see my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>.</p>
+<p>A WordPress hacked redirect happens when malware injected into your site sends some visitors to spam pages (gambling, dating, fake prizes or "your phone has a virus" warnings) instead of your content. If your WordPress site is redirecting to spam and you didn't set the redirect up, assume redirect malware: the code usually targets mobile visitors arriving from Google while hiding from logged-in admins, which is why the site looks normal when you check it yourself.</p>
+<p><strong>Short answer:</strong> confirm the redirect on a phone from a Google result, back up, change every password, then clean .htaccess, wp-config.php, index.php, theme files, the database, rogue plugins and cron jobs, reinstall core, plugins and themes from clean copies, purge every cache and close the hole the attacker used. Skipping any of these is why redirects come back.</p>
+<p>Below: how to rule out harmless causes, how to catch the hidden redirect, where the malware lives, and a step-by-step removal checklist. If you would rather have it handled, see my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>.</p>
+
+<h2>My WordPress website is redirecting: what to do in the first hour</h2>
+<ol>
+  <li><strong>Don't panic-delete files.</strong> Take a full backup of the infected site first; it is evidence and a fallback if a clean-up step breaks something.</li>
+  <li><strong>Write down what you see:</strong> the spam domains, which devices and browsers are affected, and when it started.</li>
+  <li><strong>Change your hosting and WordPress admin passwords</strong> from a device you trust, so the attacker loses easy access while you work.</li>
+  <li><strong>Pause paid ads</strong> pointing at the site, so you are not paying to send people to spam.</li>
+  <li><strong>Check Search Console</strong> for a Security issues warning, so you know whether Google has already flagged the site.</li>
+</ol>
+<p>Then work through the rest of this guide in order.</p>
 
 <h2>First, make sure it's really a hack</h2>
 <p>A few harmless things can look like a redirect hack. Rule them out quickly:</p>
 <ul>
   <li><strong>A redirect rule you or your developer added.</strong> Check any redirect plugin and your SEO plugin's redirect settings.</li>
-  <li><strong>"Too many redirects" errors</strong> are a settings loop, not spam; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a>.</li>
+  <li><strong>"Too many redirects" errors</strong> are a settings loop, not spam; see fixing ERR_TOO_MANY_REDIRECTS.</li>
   <li><strong>Ads or third-party scripts.</strong> A bad ad or a compromised widget script can redirect visitors without your site files being hacked.</li>
   <li><strong>Only one person sees it.</strong> Adware or a browser extension on their own device may be the cause. Ask whether it happens on other devices.</li>
   <li><strong>Domain or DNS problems.</strong> An expired domain or changed DNS records can send all visitors to someone else's server.</li>
@@ -33452,13 +33548,24 @@ wp option get home</code></pre>
 <ul>
   <li><strong>A backdoor was missed:</strong> attackers usually leave several ways back in</li>
   <li><strong>The entry point is still open:</strong> an outdated plugin or theme, or a reused password</li>
-  <li><strong>Another site in the same hosting account is infected</strong>; see <a href="/blog/hosting-suspended-malware/">cleaning a whole hosting account</a></li>
+  <li><strong>Another site in the same hosting account is infected</strong>; see cleaning a whole hosting account</li>
   <li><strong>A cron job reinstalls the code</strong></li>
   <li><strong>A computer with saved FTP passwords is infected</strong>, so new passwords get stolen too</li>
 </ul>
 
 <h2>Check Google once it's clean</h2>
 <p>Redirect hacks often lead to a red browser warning or "This site may be hacked" in results. Once clean, check Search Console's Security issues report and request a review; see <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a> and, if rankings dropped, <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
+
+<h2>WordPress malicious redirect cleanup: DIY or a cleanup service?</h2>
+<p>You can clean a simple redirect hack yourself if you are comfortable with SFTP, phpMyAdmin and comparing files with clean copies. A security plugin can detect and remove some known infections, but code in the database, .htaccess or a fake plugin is often missed, and no plugin closes the hole the attacker used. A malicious redirect cleanup service makes sense when:</p>
+<ul>
+  <li>the redirect has already come back once after cleaning</li>
+  <li>several sites share the same hosting account</li>
+  <li>it is a WooCommerce store taking payments, where checkout code may also be tampered with</li>
+  <li>Google is showing a warning and you need a clean review request quickly</li>
+  <li>your host has suspended the account until the malware is gone</li>
+</ul>
+<p>Whoever does it, ask for a written list of what was found, where, how the attacker got in and what was changed to stop it happening again.</p>
 
 <h2>How to prevent redirect hacks</h2>
 <p>Keep WordPress, plugins and themes updated and delete anything unused, never use nulled plugins or themes, turn on two-factor login for admins, disable file editing in the dashboard, block PHP in uploads and use a firewall with file-change monitoring. If you'd rather not keep on top of it yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups and security monitoring each month.</p>
@@ -33468,14 +33575,14 @@ wp option get home</code></pre>
 <h3>Why is my WordPress site redirecting to spam?</h3>
 <p>If you didn't set up the redirect, malware has most likely been injected into .htaccess, a core or theme file, a plugin or the database. Less often it's a bad ad, a compromised third-party script, or a domain or DNS problem.</p>
 
+<h3>My WordPress website is redirecting to another site. Is it hacked?</h3>
+<p>If it happens for different people on different devices and you didn't add a redirect rule, almost certainly yes. Rule out a redirect plugin, a bad ad, a domain or DNS problem and adware on one device first.</p>
+
 <h3>What is WordPress redirect malware?</h3>
 <p>Code an attacker adds to your site that sends some visitors to spam or scam pages, usually only mobile visitors from search engines, so the owner doesn't notice. It is often paired with backdoors that reinstall it.</p>
 
-<h3>Why does the hacked redirect only happen on mobile?</h3>
-<p>The malware checks the device and where the visitor came from, and targets mobile visitors from search. Owners mostly check on a computer while logged in, so the hack survives longer.</p>
-
-<h3>Can a security plugin remove redirect malware automatically?</h3>
-<p>It can detect and remove some known infections, but code in the database, .htaccess or a fake plugin is often missed, and plugins don't close the hole the attacker used. Use a scanner, then check the locations above by hand.</p>
+<h3>Should I use a WordPress malicious redirect cleanup service?</h3>
+<p>If the redirect returned after cleaning, the site takes payments or Google has flagged it, a professional clean-up is usually quicker and safer. Ask for a report of what was found and how the entry point was closed.</p>
 
 <h3>Will a WordPress hacked redirect hurt my Google rankings?</h3>
 <p>It can, through browser warnings, visitors bouncing straight back and spam pages indexed under your domain. Rankings usually recover after a thorough clean-up and a successful review, though how long that takes varies.</p>
@@ -33483,7 +33590,7 @@ wp option get home</code></pre>
 <h3>The redirect came back after I removed it. What now?</h3>
 <p>Something was missed: usually a backdoor, a cron job, an infected neighbouring site or an unpatched plugin. Change passwords again from a clean device and work through every location in this guide.</p>
 
-<p>If your site is redirecting visitors right now and you need it stopped quickly, I can find the redirect code, remove the backdoors behind it, close the entry point and help with the Google review. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>, or if it is a store, <a href="/woocommerce-developer/">WooCommerce development and support</a>.</p>
+<p>If your site is redirecting visitors right now and you need it stopped quickly, I can find the redirect code, remove the backdoors behind it, close the entry point and help with the Google review, for stores as well as business sites. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -36050,20 +36157,20 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   },
   {
     slug: 'fix-wordpress-critical-error',
-    seoTitle: 'There Has Been a Critical Error in WordPress: How to Fix It',
-    title: '"There Has Been a Critical Error on This Website": How to Fix It in WordPress, Step by Step',
-    description: 'Fix "There has been a critical error on this website": use the recovery mode email, read debug.log, disable plugins via File Manager and check PHP.',
+    seoTitle: 'WordPress Fatal Error or Critical Error? How to Fix It',
+    title: 'WordPress Fatal Error: How to Fix "There Has Been a Critical Error on This Website", Step by Step',
+    description: 'WordPress fatal error or "There has been a critical error on this website"? Use the recovery email, read debug.log, disable plugins and check PHP.',
     date: '2026-09-28',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
-<p>"There has been a critical error on this website" means PHP hit a fatal error, so WordPress stopped loading the page rather than show a broken one. To fix it, open the email WordPress sends to the site's admin address and use its recovery mode link to log in and deactivate the plugin or theme it names. If no email arrives, turn on debug logging to read the exact error, or rename the plugins folder through your host's File Manager or SFTP to find the culprit.</p>
-<p>The message looks alarming, but your pages, posts, products and orders are stored in the database and are almost always untouched. Below is the order to work through, from the quickest fix to the last resort. If you'd rather have someone take a backup before every update and catch problems like this early, that's what my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> are for.</p>
+<p>A WordPress fatal error is what causes the message "There has been a critical error on this website": PHP hit an error it could not recover from, so WordPress stopped loading the page rather than show a broken one. To fix it, open the email WordPress sends to the site's admin address and use its recovery mode link to log in and deactivate the plugin or theme it names. If no email arrives, turn on debug logging to read the exact error, or rename the plugins folder through your host's File Manager or SFTP to find the culprit.</p>
+<p><strong>Short answer:</strong> the WordPress critical error is a safe wrapper around a PHP fatal error, almost always caused by a plugin, theme, PHP version change or memory limit. Your pages, posts, products and orders are in the database and are almost always untouched. Work through the steps below in order. If you'd rather have someone take a backup before every update and catch problems like this early, that's what my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> are for.</p>
 
 <h2>What the critical error actually means</h2>
 <p>Since version 5.2, WordPress has a feature called fatal error protection. When a plugin, theme or custom code triggers a PHP fatal error, WordPress catches it and shows a short message instead of a blank screen. Visitors see "There has been a critical error on this website", usually with a link to WordPress's troubleshooting guide. If you're logged in or on the admin side, it adds "Please check your site admin email inbox for instructions."</p>
-<p>At the same moment, WordPress tries to email the administration address set in Settings &gt; General. That email names the plugin or theme involved and contains a special recovery mode link. Older sites, or sites where the protection is switched off, may show a completely blank page instead; that's covered in <a href="/blog/wordpress-white-screen-of-death/">the WordPress white screen of death</a>, and the fixes overlap heavily.</p>
+<p>At the same moment, WordPress tries to email the administration address set in Settings &gt; General. That email names the plugin or theme involved and contains a special recovery mode link. Older sites, or sites where the protection is switched off, may show a completely blank page instead; that's covered in the WordPress white screen of death, and the fixes overlap heavily.</p>
 
 <h2>Common causes, and the clue that points to each</h2>
 <table>
@@ -36132,12 +36239,12 @@ in /home/u123456/public_html/wp-content/plugins/old-slider/slider.php:42</code><
 <p>If the email or log already named a plugin, just rename that plugin's folder. Also check wp-content/mu-plugins, whose "must-use" plugins load automatically. With SSH access, WP-CLI does the same job without loading the broken code:</p>
 <pre><code>wp plugin list --skip-plugins --skip-themes
 wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
-<p>When the cause is two plugins that work alone but clash together, <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">finding and fixing plugin conflicts</a> walks through the narrowing-down process.</p>
+<p>When the cause is two plugins that work alone but clash together, finding and fixing plugin conflicts walks through the narrowing-down process.</p>
 
 <h2>Step 4: Switch to a default theme</h2>
 <p>If plugins aren't the cause, test the theme. In wp-content/themes, rename your active theme's folder, for example to astra-off. WordPress then falls back to a default theme such as Twenty Twenty-Five, if one is installed; if none is, upload one from WordPress.org first. On a child theme, check the child's functions.php, where copied snippets usually end up. Then roll back the update, undo the edit or ask the theme's developer for a fix.</p>
 
-<h2>Step 5: Check the PHP version and memory limit</h2>
+<h2>Step 5: Critical error after a PHP update? Check the PHP version and memory limit</h2>
 <p>If the error appeared after a PHP upgrade, or affects several plugins at once, look at the server settings. Once you can reach the dashboard, Tools &gt; Site Health &gt; Info &gt; Server shows the PHP version and PHP memory limit.</p>
 <ul>
   <li><strong>PHP version:</strong> in Hostinger's hPanel this is under the website's Advanced &gt; PHP Configuration at the time of writing; on cPanel hosts look for "Select PHP Version" or "MultiPHP Manager". Switching back to the previous version usually takes effect immediately and buys time to update or replace the old plugin. <a href="/blog/update-php-version-wordpress/">Updating your PHP version safely</a> explains how to move forward properly.</li>
@@ -36154,15 +36261,17 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 
 <h2>How to stop it happening again</h2>
 <ul>
-  <li>Take a backup before every update, test big updates on staging and update important plugins one at a time; <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a> has the full routine</li>
+  <li>Back up before every update and test big updates on staging; <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a> has the full routine</li>
   <li>Keep PHP on a supported version, and replace plugins that haven't been updated in years</li>
   <li>Don't edit theme files in the dashboard's file editor; one typo can take the site down</li>
   <li>Make sure the admin email is one somebody actually reads</li>
 </ul>
 
 <h2>FAQs</h2>
+<h3>What is a WordPress fatal error?</h3>
+<p>An error in PHP code that stops the page from loading, such as a call to a function that no longer exists or running out of memory. Since WordPress 5.2, visitors see the critical error message instead of a blank screen or raw error text.</p>
 <h3>Is my content lost when WordPress shows a critical error?</h3>
-<p>Almost never. Pages, posts, products and orders are stored in the database, and the error comes from PHP code in a plugin, theme or custom file. Once the faulty code is disabled or fixed, the content reappears exactly as it was.</p>
+<p>Almost never. The error comes from PHP code, not the database. Once the faulty code is disabled or fixed, the content reappears exactly as it was.</p>
 <h3>Why didn't I get the recovery mode email?</h3>
 <p>Usually because the administration email in Settings &gt; General is out of date, the email went to spam, or the site can't send email reliably. Setting up SMTP fixes the last one. In the meantime, read debug.log or disable plugins over File Manager instead.</p>
 <h3>Why does the critical error appear after updating WordPress or PHP?</h3>
@@ -36170,9 +36279,9 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <h3>The critical error only shows in wp-admin or on one page. Why?</h3>
 <p>The faulty code only runs there: a plugin's settings screen, the editor, or a shortcode, widget or form on that one page. The same steps apply. Check the log or the recovery email, then disable the plugin responsible.</p>
 <h3>Can a hack cause "There has been a critical error"?</h3>
-<p>Occasionally. Malware can corrupt files or inject broken code. If the log names files you don't recognise, or the error keeps returning after a clean reinstall of plugins, treat it as a possible hack and clean the site rather than just restoring it.</p>
+<p>Occasionally. Malware can corrupt files or inject broken code. If the log names files you don't recognise, or the error keeps returning after a clean reinstall of plugins, treat it as a possible hack and clean the site rather than just restoring it; see <a href="/wordpress-malware-removal/">hacked site repair</a>.</p>
 
-<p>The critical error is one of several errors that share the same causes; <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a> maps the rest. If your site is showing it now, or you'd rather not face it again, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages and forms afterwards, and fix or roll back anything that breaks.</p>
+<p>If your site is showing it now, or you'd rather not face it again, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages and forms afterwards, and fix or roll back anything that breaks.</p>
 `,
   },
   {
