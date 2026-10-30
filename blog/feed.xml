@@ -816,7 +816,7 @@
     <link>https://samverse.space/blog/google-maps-on-website/</link>
     <guid>https://samverse.space/blog/google-maps-on-website/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to add Google Maps to your website: embed code vs the Maps JavaScript API, click-to-load maps for speed, directions links and LocalBusiness schema.</description>
+    <description>How to add Google Maps to your website: copy the embed code, use the Maps API when you need it, load the map on click, and add the local details customers need.</description>
   </item>
   <item>
     <title>Website Analytics for Business Owners: The GA4 and Search Console Metrics That Actually Matter, and a Monthly Routine</title>
@@ -2090,7 +2090,7 @@
     <link>https://samverse.space/blog/custom-gutenberg-blocks/</link>
     <guid>https://samverse.space/blog/custom-gutenberg-blocks/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Custom Gutenberg blocks for agencies: when block patterns are enough, when to use ACF or native blocks with create-block, and how to lock the design.</description>
+    <description>Custom Gutenberg blocks explained for agencies: when a pattern is enough, when to build ACF blocks, when native React blocks pay off, and how to lock layouts.</description>
   </item>
   <item>
     <title>Custom Post Types and Custom Fields in WordPress: Examples, ACF and Similar Tools, Registering Them in Code, Templates and SEO</title>

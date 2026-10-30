@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custom Gutenberg Blocks: Patterns, ACF or Native Blocks?</title>
-  <meta name="description" content="Custom Gutenberg blocks for agencies: when block patterns are enough, when to use ACF or native blocks with create-block, and how to lock the design.">
+  <meta name="description" content="Custom Gutenberg blocks explained for agencies: when a pattern is enough, when to build ACF blocks, when native React blocks pay off, and how to lock layouts.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/custom-gutenberg-blocks/">
   <meta property="og:title" content="Custom Gutenberg Blocks: Patterns, ACF or Native Blocks?">
-  <meta property="og:description" content="Custom Gutenberg blocks for agencies: when block patterns are enough, when to use ACF or native blocks with create-block, and how to lock the design.">
+  <meta property="og:description" content="Custom Gutenberg blocks explained for agencies: when a pattern is enough, when to build ACF blocks, when native React blocks pay off, and how to lock layouts.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-custom-gutenberg-blocks.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/custom-gutenberg-blocks/#article",
       "headline": "Custom Gutenberg Blocks for Agencies: Patterns, Synced Patterns, ACF Blocks or Native Blocks With block.json",
-      "description": "Custom Gutenberg blocks for agencies: when block patterns are enough, when to use ACF or native blocks with create-block, and how to lock the design.",
+      "description": "Custom Gutenberg blocks explained for agencies: when a pattern is enough, when to build ACF blocks, when native React blocks pay off, and how to lock layouts.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-15",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/custom-gutenberg-blocks/",
       "image": "https://samverse.space/assets/og/blog-custom-gutenberg-blocks.png",
       "articleSection": "Agencies",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/agencies/">For agencies</a></nav>
           <a class="post-cat" href="/blog/topic/agencies/">Agencies</a>
           <h1>Custom Gutenberg Blocks for Agencies: Patterns, Synced Patterns, ACF Blocks or Native Blocks With block.json</h1>
-          <p class="post-dek">Custom Gutenberg blocks for agencies: when block patterns are enough, when to use ACF or native blocks with create-block, and how to lock the design.</p>
+          <p class="post-dek">Custom Gutenberg blocks explained for agencies: when a pattern is enough, when to build ACF blocks, when native React blocks pay off, and how to lock layouts.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-15">15 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Custom%20Gutenberg%20Blocks%20for%20Agencies%3A%20Patterns%2C%20Synced%20Patterns%2C%20ACF%20Blocks%20or%20Native%20Blocks%20With%20block.json%20https%3A%2F%2Fsamverse.space%2Fblog%2Fcustom-gutenberg-blocks%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -158,8 +158,9 @@
               <li><a href="#synced-patterns-and-overrides">Synced patterns and overrides</a></li>
               <li><a href="#acf-blocks-the-quickest-route-for-php-teams">ACF blocks: the quickest route for PHP teams</a></li>
               <li><a href="#native-blocks-with-wordpress-create-block">Native blocks with @wordpress/create-block</a></li>
+              <li><a href="#how-to-decide-on-a-real-project">How to decide on a real project</a></li>
               <li><a href="#stopping-editors-from-breaking-the-design">Stopping editors from breaking the design</a></li>
-              <li><a href="#which-should-an-agency-choose">Which should an agency choose?</a></li>
+              <li><a href="#naming-structure-and-a-block-library-that-scales">Naming, structure and a block library that scales</a></li>
               <li><a href="#performance-maintenance-and-handover">Performance, maintenance and handover</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -167,46 +168,30 @@
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Start with block patterns built from core blocks; move to custom blocks only when you need structured fields, dynamic data or markup editors must not change.</li>
-              <li>ACF blocks are the quickest route for PHP-focused teams, while native blocks built with create-block and block.json give the richest editing experience with no plugin dependency.</li>
-              <li>Lock the design with theme.json settings, template locks and allowed blocks, keep custom blocks in a plugin rather than the theme, and document them at handover.</li>
+              <li>Most custom Gutenberg block requests can be met with a pattern or synced pattern; build a real block only when content needs structure, logic or a locked layout.</li>
+              <li>ACF blocks suit PHP teams and server-rendered sections, while native blocks built with block.json and React give the best editing experience for interactive pieces.</li>
+              <li>Plan the block library like a design system: name blocks clearly, restrict what editors can change with theme.json and locking, and document every block at handover.</li>
             </ul>
           </div>
-<p>Custom Gutenberg blocks give your client's editors on-brand components, such as service cards, testimonials or call-to-action bands, that they fill with content while the design stays intact. There are four ways to build them, in rising order of effort: block patterns made from core blocks, synced patterns, ACF blocks rendered with PHP, and native blocks scaffolded with @wordpress/create-block and described in block.json. Start with patterns, and build custom blocks only when you need structured fields, dynamic data or markup that editors must not be able to change.</p>
-<p>For agencies, the right choice affects build time, quotes and how many "small change" requests come back after launch. When I build for agencies as a <a href="/wordpress-developer-for-agencies/">white-label WordPress developer</a>, sites are built with global styles and a clean structure in Elementor or the block editor, so clients can edit without breaking the layout. On a block theme build, the editing experience comes from locked patterns and custom blocks; it is one of the three build approaches compared on my <a href="/figma-to-wordpress/">Figma to WordPress</a> page. Here is how the options compare and when each makes sense.</p>
+<p>Custom Gutenberg blocks are reusable content components you build for the WordPress block editor so clients can add a pricing table, team grid or enquiry banner without touching code. For an agency, the right choice is usually the lightest one that works: a block pattern for fixed layouts, a synced pattern for content that must stay identical everywhere, an ACF block for structured fields rendered in PHP, and a native block registered with block.json when you need live previews and rich interaction.</p>
+<p>This guide walks through each option, how to decide between them on a real project, and how to stop editors breaking a design you spent weeks perfecting. It is written for agencies who hand WordPress builds to clients and want them to stay tidy for years.</p>
 
 <h2 id="the-four-options-at-a-glance">The four options at a glance</h2>
 <table>
-  <thead><tr><th>Option</th><th>Build effort</th><th>Editing experience</th><th>Best for</th><th>Watch out for</th></tr></thead>
-  <tbody>
-    <tr><td>Block patterns</td><td>Low: arranged core blocks, saved as a file</td><td>Familiar core blocks; editors can change anything unless locked</td><td>Layouts that core blocks can achieve</td><td>Edits after insertion don't update other copies</td></tr>
-    <tr><td>Synced patterns</td><td>Low</td><td>Edit once, update everywhere; overrides allow some per-instance content</td><td>Repeated bands such as a site-wide call to action</td><td>Overrides support only some core blocks at the time of writing</td></tr>
-    <tr><td>ACF blocks</td><td>Medium: block.json plus a PHP template</td><td>Fields in the sidebar or inline, with a server-rendered preview</td><td>Structured components built by PHP-focused teams</td><td>Needs ACF PRO, so a licence dependency</td></tr>
-    <tr><td>Native blocks</td><td>Higher: JavaScript and React in the editor, PHP or saved HTML on the front end</td><td>The richest editing, with inline text and live previews</td><td>Long-lived products, complex interactions, no plugin dependency</td><td>Needs JavaScript build tooling and care when markup changes</td></tr>
-  </tbody>
+<thead><tr><th>Option</th><th>Best for</th><th>Skills needed</th><th>Editor experience</th></tr></thead>
+<tbody>
+<tr><td>Block pattern</td><td>Starting layouts editors can change freely</td><td>HTML and block markup</td><td>Inserts normal core blocks</td></tr>
+<tr><td>Synced pattern</td><td>A section that must be identical on every page</td><td>None beyond the editor</td><td>Edit once, updates everywhere</td></tr>
+<tr><td>ACF block</td><td>Structured fields shown with a PHP template</td><td>PHP, ACF Pro</td><td>Sidebar or inline field forms</td></tr>
+<tr><td>Native block</td><td>Interactive, inline-editable components</td><td>JavaScript, React, build tools</td><td>Fully visual, closest to core blocks</td></tr>
+</tbody>
 </table>
-<p>Third-party block libraries are a fifth route for common components, but they add another vendor and rarely match a custom design exactly. <a href="/blog/wordpress-shortcodes-vs-blocks/">Shortcodes vs blocks vs page-builder widgets</a> covers why blocks are now the native format.</p>
+<p>The table hides one important point: these are not rivals. A good theme usually mixes them, with patterns doing most of the work and a handful of custom blocks covering what patterns cannot.</p>
 
 <h2 id="block-patterns-start-here">Block patterns: start here</h2>
-<p>A pattern is a saved arrangement of core blocks, such as a group with a heading, paragraph and buttons, that editors insert from the pattern library. In a theme, each pattern is a PHP file in the /patterns folder with a header comment, and WordPress registers it automatically:</p>
-<pre><code>&lt;?php
-/**
- * Title: Call to action band
- * Slug: agency-theme/cta-band
- * Categories: call-to-action
- */
-?&gt;
-&lt;!-- wp:group {"className":"cta-band","layout":{"type":"constrained"}} --&gt;
-&lt;div class="wp-block-group cta-band"&gt;
-  &lt;!-- wp:heading --&gt;
-  &lt;h2 class="wp-block-heading"&gt;Ready to start your project?&lt;/h2&gt;
-  &lt;!-- /wp:heading --&gt;
-  &lt;!-- wp:paragraph --&gt;
-  &lt;p&gt;Tell us what you need and get a fixed quote.&lt;/p&gt;
-  &lt;!-- /wp:paragraph --&gt;
-&lt;/div&gt;
-&lt;!-- /wp:group --&gt;</code></pre>
-<p>Patterns are quick to build and need no build step, and because they use core blocks, they survive a theme change as ordinary content. The trade-off is that once inserted, each copy is independent, and editors can restyle it freely unless you lock it.</p>
+<p>A pattern is a saved arrangement of core blocks. In a modern theme you add a PHP file to the patterns folder with a header comment giving its title, slug and categories, and WordPress registers it automatically. Editors insert it from the pattern library and then change anything they like.</p>
+<p>Patterns are ideal for hero sections, feature rows, testimonial layouts with placeholder text, and call-to-action bands. Because the output is plain core blocks, there is nothing to maintain when WordPress updates, and the content survives if the theme is ever switched. The trade-off is freedom: once inserted, the pattern is just blocks, so an editor can delete a column or change a colour and nothing stops them.</p>
+<p>Use patterns when you want consistency at the starting point but the client is allowed to adapt. For most brochure sites built on <a href="/blog/block-themes-full-site-editing/">block themes and full site editing</a>, a library of ten to twenty well-named patterns covers the bulk of page building.</p>
 
 <aside class="inline-cta">
   <strong>Need help with figma to wordpress?</strong>
@@ -215,96 +200,69 @@
 </aside>
 
 <h2 id="synced-patterns-and-overrides">Synced patterns and overrides</h2>
-<p>A synced pattern, called a reusable block in older WordPress versions, is one piece of content shown in many places: edit it once and every instance updates. That suits a site-wide call to action or a disclaimer. Pattern overrides, added in recent versions, let editors change specific content inside each instance, such as a heading or button text, while the layout stays synced. At the time of writing, overrides work only with certain core blocks, such as headings, paragraphs, images and buttons, so check the current support before designing around them.</p>
+<p>Synced patterns (previously called reusable blocks) are stored once in the database and referenced wherever they are placed. Change the source and every instance updates. They are perfect for a footer enquiry strip, a standard disclaimer, or an offer banner that runs across many service pages.</p>
+<p>Recent WordPress versions add pattern overrides, which let you mark specific blocks inside a synced pattern (for example a heading, paragraph, button or image) as editable per instance while the layout stays locked. That covers a surprising number of cases agencies used to solve with custom blocks, such as a team card where only the photo, name and role change.</p>
+<p>The limits: overrides work only on supported core blocks, there is no field validation, and you cannot add logic such as hiding a section when a field is empty. When you need those, move to a real block.</p>
 
 <h2 id="acf-blocks-the-quickest-route-for-php-teams">ACF blocks: the quickest route for PHP teams</h2>
-<p>With Advanced Custom Fields PRO, a block is a block.json file, a field group and a PHP template. Editors fill in labelled fields, and the block renders on the server, so the front end is plain HTML. A minimal block.json looks like this:</p>
-<pre><code>{
-  "name": "acf/testimonial",
-  "title": "Testimonial",
-  "category": "text",
-  "acf": { "mode": "preview", "renderTemplate": "testimonial.php" },
-  "supports": { "anchor": true, "align": false }
-}</code></pre>
-<p>You register it with register_block_type pointing at the block's folder, then assign an ACF field group to that block. ACF blocks suit agencies whose developers are comfortable in PHP, components driven by structured fields, and sites already using ACF for <a href="/blog/custom-post-types-fields/">custom post types and fields</a>. The cost is a dependency on an ACF PRO licence, which should be held in the client's name, and an editing experience that is less fluid than a native block's.</p>
+<p>ACF Pro lets you register a block with a block.json file and render it with a PHP template, using field groups for the content. The editor sees a form (or inline preview) and the front end gets exactly the markup you wrote. For agencies whose developers are comfortable in PHP, this is the fastest way to ship a library of structured blocks.</p>
+<p>Good fits for ACF blocks include:</p>
+<ul>
+<li>Pricing or plan tables where each row has fixed fields and a highlight toggle.</li>
+<li>Doctor, lawyer or staff profiles pulled from a <a href="/blog/custom-post-types-fields/">custom post type with custom fields</a>.</li>
+<li>Location blocks showing address, timings and a click-to-load map.</li>
+<li>Comparison tables, FAQ groups that also output FAQPage schema, and download lists with file sizes.</li>
+</ul>
+<p>Watch two things. First, ACF blocks depend on a paid plugin, so the client's licence must be renewed and handed over properly. Second, the editor preview is server-rendered, which can feel slower than native blocks on large pages. Keep templates lean and avoid heavy queries inside the render file.</p>
 
 <h2 id="native-blocks-with-wordpress-create-block">Native blocks with @wordpress/create-block</h2>
-<p>Native blocks are built with WordPress's own block API. The official scaffolding tool sets up the folder, block.json and build scripts in one command:</p>
-<pre><code>npx @wordpress/create-block@latest service-card --variant dynamic
-cd service-card
-npm start</code></pre>
-<p>Everything WordPress needs to know about the block lives in block.json, which lets WordPress load the block's scripts and styles only on pages that use it:</p>
-<pre><code>{
-  "$schema": "https://schemas.wp.org/trunk/block.json",
-  "apiVersion": 3,
-  "name": "agency/service-card",
-  "title": "Service card",
-  "category": "design",
-  "attributes": {
-    "heading": { "type": "string" },
-    "summary": { "type": "string" }
-  },
-  "supports": { "html": false, "color": { "background": true, "text": false } },
-  "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "render": "file:./render.php"
-}</code></pre>
-<p>The editor side is written in React. The front end is either saved as static HTML in the post content or, as here, rendered by PHP on each request. Dynamic rendering means you can change the markup later without "invalid block" warnings on existing content:</p>
-<pre><code>&lt;div &lt;?php echo get_block_wrapper_attributes(); ?&gt;&gt;
-  &lt;h3&gt;&lt;?php echo esc_html( $attributes['heading'] ?? '' ); ?&gt;&lt;/h3&gt;
-  &lt;p&gt;&lt;?php echo esc_html( $attributes['summary'] ?? '' ); ?&gt;&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-<p>Native blocks give the best editing experience, with text typed directly into the block, live previews and toolbar controls, and they depend on nothing but WordPress. For front-end behaviour such as tabs or filters, the Interactivity API, added in WordPress 6.5, is the recommended approach. The cost is JavaScript tooling, a steeper learning curve and more care when a block's structure changes.</p>
+<p>Native blocks are built in JavaScript with React components from the WordPress packages. The official scaffolding tool, @wordpress/create-block, generates a plugin with block.json, an edit component, a save function or render file, and a build setup. The result behaves like a core block: inline editing, toolbar controls, live preview and support for colours, spacing and typography from theme.json.</p>
+<p>Choose native blocks when the editing experience matters most, for example a tabbed content block, an accordion with nested blocks inside each panel, a before-and-after image slider, or a block that pulls data from an external API. Dynamic blocks (with a PHP render callback) are usually safer than static ones for agency work, because changing the markup later does not trigger block validation errors on every existing post.</p>
+<p>Native blocks need more time and a developer who knows modern JavaScript. If your team does not, this is a common area to bring in <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development</a> rather than learning on a client deadline.</p>
+
+<h2 id="how-to-decide-on-a-real-project">How to decide on a real project</h2>
+<p>When a designer hands over a Figma file, go through each section and ask four questions in order:</p>
+<ol>
+<li><strong>Can core blocks reproduce it?</strong> If yes, make it a pattern.</li>
+<li><strong>Must it look identical on every page?</strong> If yes, make it a synced pattern, with overrides for the parts that change.</li>
+<li><strong>Does the content have a fixed structure or come from elsewhere?</strong> If yes, an ACF block or a dynamic native block.</li>
+<li><strong>Does the editor need to see and edit it visually with interactions?</strong> If yes, a native block.</li>
+</ol>
+<p>On a typical service-business site this produces a handful of custom blocks and many patterns. If your list comes out the other way round, check whether the design is fighting the editor. Our notes on <a href="/blog/figma-to-wordpress-approaches/">Figma to WordPress approaches</a> cover how to set up designs so they map cleanly to blocks.</p>
 
 <h2 id="stopping-editors-from-breaking-the-design">Stopping editors from breaking the design</h2>
-<p>"Blocks they can't break" is usually the real requirement. WordPress gives you several levers, and most projects use a combination:</p>
+<p>The biggest complaint agencies hear after launch is that the client broke the layout. WordPress gives you several controls:</p>
 <ul>
-  <li><strong>theme.json settings</strong> that remove custom colours, gradients and font sizes, so editors choose only from the brand palette and type scale.</li>
-  <li><strong>Block supports</strong> in block.json, enabling only the controls a block needs.</li>
-  <li><strong>Locking</strong> so key blocks can't be moved or removed, and template locks on inner blocks so a card's structure stays fixed while its text is editable.</li>
-  <li><strong>Allowed blocks</strong> lists that hide blocks editors don't need.</li>
-  <li><strong>Sensible user roles,</strong> with Editors for content staff and Administrator access kept to a few people.</li>
+<li><strong>theme.json settings:</strong> limit the colour palette, font sizes and spacing options to your design tokens, and turn off custom colours and gradients.</li>
+<li><strong>Template locking:</strong> lock a custom block's inner blocks so editors can change content but not remove or move sections.</li>
+<li><strong>Allowed blocks:</strong> restrict which blocks can be inserted inside a container, or hide rarely needed core blocks from the inserter.</li>
+<li><strong>Content-only editing:</strong> lock a pattern so editors see only the text and images they are meant to change.</li>
+<li><strong>User roles:</strong> keep the Site Editor and template editing for administrators.</li>
 </ul>
-<pre><code>{
-  "version": 3,
-  "settings": {
-    "color": { "custom": false, "customGradient": false, "defaultPalette": false },
-    "typography": { "customFontSize": false }
-  }
-}</code></pre>
+<p>Locking is a balance. Lock too little and the site drifts; lock too much and the client calls you for every small change. Agree the level with the client before you build.</p>
 
-<h2 id="which-should-an-agency-choose">Which should an agency choose?</h2>
-<ol>
-  <li><strong>Marketing site, layouts achievable with core blocks:</strong> patterns with theme.json restrictions. Quickest to build and hand over.</li>
-  <li><strong>A component repeated identically across the site:</strong> a synced pattern.</li>
-  <li><strong>Structured components, such as team members, specifications or pricing tables, built by a PHP team:</strong> ACF blocks.</li>
-  <li><strong>A design system used across many client sites, complex interactions or a product you'll maintain for years:</strong> native blocks, kept in a shared plugin.</li>
-  <li><strong>Content that is really data,</strong> such as listings or case studies shown in several places: a custom post type with fields and a template, not a block on each page.</li>
-</ol>
-<p>If the client wants to drag layouts around freely, a page builder may suit them better; <a href="/blog/figma-to-wordpress-approaches/">Elementor, block theme, Bricks or custom theme</a> compares the build approaches, and <a href="/blog/block-themes-full-site-editing/">block themes and full site editing</a> explains where custom blocks fit in a block theme.</p>
+<h2 id="naming-structure-and-a-block-library-that-scales">Naming, structure and a block library that scales</h2>
+<p>Agencies that build many sites benefit from a shared block plugin rather than putting blocks inside each theme. Keep blocks in a plugin with a consistent namespace (for example agencyname/pricing-table), so content survives a theme change and fixes can be rolled out across sites.</p>
+<p>Name blocks in plain language for editors, give each a clear icon and description, and add example data so the inserter preview is useful. Keep styles in the block's own stylesheet so the front end only loads CSS for blocks actually used on a page.</p>
 
 <h2 id="performance-maintenance-and-handover">Performance, maintenance and handover</h2>
-<ul>
-  <li><strong>Keep custom blocks in a plugin,</strong> not the theme, so content still renders if the theme changes; <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a> covers structuring one.</li>
-  <li><strong>Load assets per block</strong> through block.json, rather than one large stylesheet on every page.</li>
-  <li><strong>Plan for change:</strong> prefer dynamic rendering for blocks whose markup may evolve, and add deprecations when a static block's saved HTML changes.</li>
-  <li><strong>Use version control</strong> and a staging site, and test blocks against new WordPress releases before updating production.</li>
-  <li><strong>Document each block</strong> for the client: what it's for, its fields and where it's used. The <a href="/blog/agency-developer-handoff-checklist/">agency handoff checklist</a> covers what to agree with your developer.</li>
-</ul>
+<p>Custom blocks can be faster than page builders, but only if you build them carefully. Register scripts only for blocks that need them, avoid loading slider libraries on every page, and use server rendering for anything that queries posts. Our guide to <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a> explains why block-based builds tend to produce lighter pages.</p>
+<p>At handover, document each block: what it is for, which fields it has, and any limits. Include it in your <a href="/blog/agency-developer-handoff-checklist/">developer handoff checklist</a>, and agree who updates the block plugin when WordPress changes. Treat the block library as code with version control, a changelog and a staging test before each release.</p>
+<p>If you need a block library built for an agency project, I build ACF and native blocks as part of <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>, and you can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for one-off block work.</p>
 
 <h2 id="faqs">FAQs</h2>
-<h3>Do I need React to build custom Gutenberg blocks?</h3>
-<p>For native blocks, the editor side is written in JavaScript, usually React. Patterns need no JavaScript, and ACF blocks let you build with PHP templates and ACF fields instead.</p>
+<h3>What are custom Gutenberg blocks?</h3>
+<p>They are components you create for the WordPress block editor, registered with a block.json file, so editors can add specific layouts or structured content in a few clicks. They can be built with JavaScript and React or with ACF and PHP templates.</p>
+<h3>Do I need a custom block or is a block pattern enough?</h3>
+<p>If core blocks can reproduce the layout and editors may change it freely, a pattern is enough. Build a custom block when you need fixed fields, logic, data from elsewhere, or a layout that editors must not be able to break.</p>
 <h3>Are ACF blocks slower than native blocks?</h3>
-<p>On the front end, both can output clean HTML, so the difference is usually small when built well. ACF blocks render previews through the server in the editor, which can feel slightly less immediate for editors.</p>
-<h3>What happened to reusable blocks?</h3>
-<p>They were renamed synced patterns in WordPress 6.3. They work the same way, and pattern overrides now allow some content to differ per instance.</p>
+<p>On the front end they can be just as fast, because both output plain HTML. The editor preview of ACF blocks is server-rendered, so it can feel slower on long pages; keep render templates simple to reduce that.</p>
 <h3>Should custom blocks live in the theme or a plugin?</h3>
-<p>A plugin, in most cases. Blocks hold content, and keeping them in a plugin means that content still displays properly if the client changes theme later.</p>
-<h3>Can custom blocks be built from a Figma design system?</h3>
-<p>Yes. Figma components usually map well to patterns or custom blocks, and Figma colour and text styles map to theme.json settings, so the build stays faithful to the design.</p>
-
-<p>Need block editor builds, patterns or custom blocks delivered under your agency's brand? As your <a href="/wordpress-developer-for-agencies/">white-label WordPress developer</a>, I work under NDA with a fixed quote per project, and sites are built with global styles and clean structure so your clients can edit them safely. For designs already in Figma, see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+<p>A plugin is usually better. Content built with the blocks keeps working if the theme changes, and an agency can reuse and update one block plugin across many client sites.</p>
+<h3>Will WordPress updates break custom Gutenberg blocks?</h3>
+<p>Well-built dynamic blocks rarely break, but deprecated APIs and markup changes can cause validation errors in static blocks. Test updates on a staging site and keep block code under version control.</p>
+<h3>Can I convert Elementor sections into Gutenberg blocks?</h3>
+<p>There is no reliable automatic conversion. Each section is rebuilt as a pattern or custom block, which is a good moment to simplify the design and remove sections that no longer earn their place.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -345,8 +303,9 @@ npm start</code></pre>
               <li><a href="#synced-patterns-and-overrides">Synced patterns and overrides</a></li>
               <li><a href="#acf-blocks-the-quickest-route-for-php-teams">ACF blocks: the quickest route for PHP teams</a></li>
               <li><a href="#native-blocks-with-wordpress-create-block">Native blocks with @wordpress/create-block</a></li>
+              <li><a href="#how-to-decide-on-a-real-project">How to decide on a real project</a></li>
               <li><a href="#stopping-editors-from-breaking-the-design">Stopping editors from breaking the design</a></li>
-              <li><a href="#which-should-an-agency-choose">Which should an agency choose?</a></li>
+              <li><a href="#naming-structure-and-a-block-library-that-scales">Naming, structure and a block library that scales</a></li>
               <li><a href="#performance-maintenance-and-handover">Performance, maintenance and handover</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -377,8 +336,8 @@ npm start</code></pre>
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/block-themes-full-site-editing/"><img class="post-card-img" src="/assets/og/blog-block-themes-full-site-editing.webp" alt="WordPress Block Themes and Full Site Editing Explained: theme.json, Templates, Patterns and When Agencies Should Use Them" width="1200" height="630" loading="lazy"><span class="work-tag">Agencies</span><h3>WordPress Block Themes and Full Site Editing Explained: theme.json, Templates, Patterns and When Agencies Should Use Them</h3><p>WordPress block themes and full site editing explained: the Site Editor, theme.json, templates, parts and patterns, and when to choose them over Elementor.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/white-label-wordpress-development-agencies/"><img class="post-card-img" src="/assets/og/blog-white-label-wordpress-development-agencies.webp" alt="White-Label WordPress Development: How It Works for Agencies, From Brief to Handover" width="1200" height="630" loading="lazy"><span class="work-tag">Agencies</span><h3>White-Label WordPress Development: How It Works for Agencies, From Brief to Handover</h3><p>How white-label WordPress development works for agencies: the process, who does what, pricing models, NDAs, communication, QA and handover to your client.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/figma-to-wordpress-approaches/"><img class="post-card-img" src="/assets/og/blog-figma-to-wordpress-approaches.webp" alt="Figma to WordPress: Elementor, Block Theme, Bricks or a Custom Theme? How to Choose the Build Approach" width="1200" height="630" loading="lazy"><span class="work-tag">Agencies</span><h3>Figma to WordPress: Elementor, Block Theme, Bricks or a Custom Theme? How to Choose the Build Approach</h3><p>Figma to WordPress build approaches compared: Elementor, block themes, custom themes, Bricks and headless, with the trade-offs and how to choose.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/agency-developer-handoff-checklist/"><img class="post-card-img" src="/assets/og/blog-agency-developer-handoff-checklist.webp" alt="Agency Handoff Checklist: What to Give Your WordPress Developer Before the Build Starts" width="1200" height="630" loading="lazy"><span class="work-tag">Agencies</span><h3>Agency Handoff Checklist: What to Give Your WordPress Developer Before the Build Starts</h3><p>An agency handoff checklist for outsourced WordPress builds: design files, content, access, integrations, SEO and sign-off, so your partner can start.</p><span class="post-card-meta">1 October 2026 · 8 min read</span></a>
         </div>
       </div>
     </section>

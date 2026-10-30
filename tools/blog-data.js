@@ -14440,133 +14440,96 @@ cf-cache-status: HIT</code></pre>
     slug: 'google-maps-on-website',
     seoTitle: 'How to Add Google Maps to Your Website Without Slowing It',
     title: 'How to Add Google Maps to Your Website Without Slowing It Down: Embeds, the API, Click-to-Load Maps and Local Details',
-    description: 'How to add Google Maps to your website: embed code vs the Maps JavaScript API, click-to-load maps for speed, directions links and LocalBusiness schema.',
+    description: 'How to add Google Maps to your website: copy the embed code, use the Maps API when you need it, load the map on click, and add the local details customers need.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-speed-optimization', 'wordpress-seo-services'],
     body: `
-<p>The simplest way to add Google Maps to your website is to search for your business on Google Maps, choose Share, then Embed a map, and paste the iframe code into your contact page. It's free and needs no API key. Because embedded maps are heavy, put the map only where it helps, lazy-load it or show a click-to-load preview, and always write your address in text alongside a Get directions link and LocalBusiness schema that match your Google Business Profile exactly.</p>
-<p>Maps go in at the build stage on my <a href="/wordpress-website-development/">WordPress website development</a> projects, alongside forms and WhatsApp, and every site is speed-tested on mobile before launch, which is where careless map embeds show up. This guide covers the embed options, keeping the map from slowing your pages, the contact page details that matter more than the map itself, and the structured data that ties it together.</p>
+<p>To add Google Maps to your website, open your business in Google Maps, click Share, choose Embed a map, copy the iframe code and paste it into a Custom HTML block (or your page builder's HTML widget) on the contact page. That free embed works for most businesses; the catch is that it loads a lot of extra code, so the best setup shows a lightweight preview first and loads the live map only when someone taps it.</p>
+<p>This guide covers the embed method, when the Maps JavaScript API is worth the setup, how to keep the map from hurting your page speed on Indian mobile networks, and the local details that matter more than the map itself.</p>
 
 <h2>Your three options</h2>
 <table>
-  <thead><tr><th>Option</th><th>Cost and setup</th><th>Good for</th><th>Drawbacks</th></tr></thead>
-  <tbody>
-    <tr><td>Share and Embed iframe</td><td>Free, no API key; copy and paste</td><td>One location on a contact page</td><td>Heavy to load; limited styling</td></tr>
-    <tr><td>Maps JavaScript API</td><td>Needs a Google Cloud project, an API key and a billing account; usage-based pricing</td><td>Custom styling, several markers, store locators, maps tied to your own data</td><td>Developer time, key security and a bill if usage grows</td></tr>
-    <tr><td>Static image with a link</td><td>A map image linking to Google Maps; Google's Static Maps API also needs a key</td><td>The lightest option, for pages where an interactive map adds little</td><td>Not interactive until tapped</td></tr>
-  </tbody>
+<thead><tr><th>Method</th><th>Cost and setup</th><th>Use it when</th></tr></thead>
+<tbody>
+<tr><td>Embed iframe from the Share button</td><td>Free, no API key</td><td>One shop, clinic or office location</td></tr>
+<tr><td>Maps Embed API or JavaScript API</td><td>Needs a Google Cloud project, billing account and API key</td><td>Store locators, many pins, custom styles, filtering</td></tr>
+<tr><td>Static image plus directions link</td><td>Free, fastest</td><td>Pages where speed matters most, or as the preview for click-to-load</td></tr>
+</tbody>
 </table>
-<p>For a single shop, clinic or office, the free embed is almost always enough. Reach for the API only when you need something the embed can't do.</p>
 
-<h2>Embedding a map with the Share button</h2>
+<h2>How to embed Google Maps with the Share button</h2>
 <ol>
-  <li>Search for your business on Google Maps. Use your Business Profile listing, not just the street address, so the map shows your business name.</li>
-  <li>Click <strong>Share</strong>, open the <strong>Embed a map</strong> tab, pick a size and copy the HTML.</li>
-  <li>In WordPress, paste it into a Custom HTML block. In Elementor, use the Google Maps widget with your business name, or an HTML widget with the copied code.</li>
+<li>Search for your business name in Google Maps (not just the street address) so the embed shows your verified listing with its name and reviews link.</li>
+<li>Click <strong>Share</strong>, then the <strong>Embed a map</strong> tab.</li>
+<li>Pick a size (medium is fine; you will make it responsive anyway) and click <strong>Copy HTML</strong>.</li>
+<li>In WordPress, add a Custom HTML block where you want the map. In Elementor, use the Google Maps widget or the HTML widget. On Shopify, add a Custom Liquid section to the contact page template.</li>
+<li>Paste the code, then change the fixed width to 100 percent so it fits phone screens.</li>
+<li>Check that the iframe includes loading="lazy". Google's code usually does; if not, add it.</li>
 </ol>
-<p>The copied code looks roughly like this; the long embed address is unique to your listing:</p>
-<pre><code>&lt;iframe src="https://www.google.com/maps/embed?pb=YOUR-EMBED-CODE"
-  width="600" height="450" style="border:0;" allowfullscreen=""
-  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-  title="Map to Example Dental Clinic"&gt;&lt;/iframe&gt;</code></pre>
-<p>Add a title attribute, as above, so screen reader users know what the frame contains, and make the map responsive so it doesn't overflow on phones.</p>
+<p>If you only searched for an address, the embed shows a plain pin with no business name. Visitors then cannot jump to your reviews, so always embed from your business listing. If your business does not appear at all, fix that first with our guide to <a href="/blog/not-showing-on-google-maps/">not showing on Google Maps</a>.</p>
 
-<h2>Using the Maps JavaScript API</h2>
-<p>The API lets you style the map to match your brand, plot many locations, add filters or build a store locator. It requires a Google Cloud project with billing enabled and an API key. Google has changed how its free monthly allowance works more than once, so check the current pricing page rather than relying on an old blog post, and protect yourself:</p>
-<ul>
-  <li><strong>Restrict the API key</strong> to your website's domain and to only the APIs you use, so nobody can run up charges with it.</li>
-  <li><strong>Set budget alerts</strong> in Google Cloud billing.</li>
-  <li><strong>Keep the project and billing account in your business's name,</strong> not your developer's, like every other account behind your website.</li>
-</ul>
-<p>Store locator and map plugins for WordPress usually need your own API key too, so the same rules apply.</p>
+<h2>When the Maps JavaScript API is worth it</h2>
+<p>The API lets you draw your own map with custom markers, colours, info windows and search. You need it for a store or dealer locator, a real estate site showing several projects on one map, a franchise with many branches, or a delivery area display.</p>
+<p>Setting it up means creating a Google Cloud project, enabling the right APIs, adding a billing account and restricting the API key to your domain so nobody else can use it. Google offers some free monthly usage, but pricing and limits change, so check the current Google Maps Platform pricing page before you commit and set budget alerts in the Cloud console. An unrestricted key can be copied and used by others on your bill.</p>
+<p>For a single location, the API adds cost, maintenance and code for no visible gain. Stick with the embed.</p>
 
 <h2>Keeping maps from slowing your site</h2>
-<p>A Google Maps embed pulls in many extra files from Google's servers, including a large amount of JavaScript, even if nobody touches the map. On a phone over mobile data, that can delay the page and hurt Core Web Vitals. In order of impact:</p>
+<p>A Google Maps iframe pulls in several hundred kilobytes of scripts, fonts and map tiles, plus third-party requests that run on the main thread. On a fast office connection this barely shows, but on a mid-range phone over a patchy 4G connection it can noticeably delay the page and hurt <a href="/blog/core-web-vitals-explained/">Core Web Vitals</a>. Four fixes, from simplest to best:</p>
 <ul>
-  <li><strong>Use a map only where it helps,</strong> usually the contact page, and never in a site-wide footer.</li>
-  <li><strong>Keep it below the first screen,</strong> after the address, phone and directions link.</li>
-  <li><strong>Lazy-load it.</strong> Google's current embed code includes loading="lazy", so the map loads only as visitors scroll near it. Check it's still there after pasting, as some builders strip attributes; see <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</li>
-  <li><strong>Better still, use a click-to-load preview,</strong> so the map loads only for visitors who want it.</li>
+<li><strong>Move the map down the page.</strong> Never put it in the header or above the fold. With native lazy loading, a map below the fold does not load until the visitor scrolls near it.</li>
+<li><strong>Keep it off pages that do not need it.</strong> A map in the site-wide footer loads on every page. Put it on the contact page only, and use a text address with a directions link elsewhere.</li>
+<li><strong>Use click-to-load.</strong> Show a static screenshot of the map (compressed WebP, with alt text naming the area) with a "View map" button. When tapped, swap the image for the real iframe. Many speed and privacy plugins offer this as a "map placeholder" option.</li>
+<li><strong>Link instead of embed.</strong> On mobile, most visitors want directions in their own Maps app anyway. A big "Get directions" button linking to your Google Maps listing is often more useful than the embedded map.</li>
 </ul>
-<h3>A click-to-load map preview</h3>
-<p>Show a lightweight image and a button; the real map replaces it when tapped. The preview can be a static map image or a simple location graphic, and if you use an image from Google, follow Google's attribution rules:</p>
-<pre><code>&lt;div class="map-facade" data-src="https://www.google.com/maps/embed?pb=YOUR-EMBED-CODE"&gt;
-  &lt;img src="https://example.com/wp-content/uploads/map-preview.webp"
-    alt="Map showing Example Dental Clinic near Example Chowk"
-    width="800" height="450" loading="lazy"&gt;
-  &lt;button type="button"&gt;Show interactive map&lt;/button&gt;
-&lt;/div&gt;
-&lt;script&gt;
-document.querySelectorAll('.map-facade button').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    var box = btn.parentElement;
-    var frame = document.createElement('iframe');
-    frame.src = box.dataset.src;
-    frame.width = '800';
-    frame.height = '450';
-    frame.title = 'Map to Example Dental Clinic';
-    frame.allowFullscreen = true;
-    frame.style.border = '0';
-    box.replaceWith(frame);
-  });
-});
-&lt;/script&gt;</code></pre>
-<p>Give the preview the same dimensions as the map, so nothing jumps when it swaps. Some caching and performance plugins offer iframe lazy loading or placeholders too; test whichever you use on a real phone. Maps are one of several embeds that quietly slow sites; <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a> covers chat widgets, trackers and the rest. A click-to-load map also avoids loading Google's resources before a visitor chooses to, which helps if your site asks for cookie consent; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics</a>.</p>
+<p>Click-to-load has a privacy benefit too: no Google request is made until the visitor chooses to see the map. That fits well with the consent approach in our <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for India</a>. For more on deferring heavy elements, see <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</p>
+
+<h2>Making the directions link work on every phone</h2>
+<p>A directions link should open the Google Maps app on Android and offer the choice on iPhone. The simplest reliable option is the share link from your business listing (the short maps.app.goo.gl link from the Share button). Use it for the "Get directions" button and in your WhatsApp auto-reply.</p>
+<p>Make the button large enough to tap, label it clearly ("Get directions to our Kothrud clinic" works better than "Click here"), and track taps as an event in analytics so you can see how many visitors want to visit in person.</p>
 
 <h2>The contact page details that matter more than the map</h2>
-<p>Most visitors on phones don't pan around an embedded map; they want the address, a way to get directions and a reason to trust they'll find you. Next to the map, include:</p>
+<p>Customers rarely book because of a map. They book because they quickly found the address, timings and a way to reach you. Put these near the top of the contact page, as real text rather than an image:</p>
 <ul>
-  <li><strong>The full address as text,</strong> so it can be read, copied and understood by search engines, with a landmark Indian visitors actually use, such as "opposite the metro station" or "above the State Bank branch".</li>
-  <li><strong>A Get directions button</strong> that opens Google Maps navigation on the visitor's phone.</li>
-  <li><strong>Opening hours,</strong> including Sunday or lunch closures, matching your Business Profile.</li>
-  <li><strong>Parking, floor and entrance details,</strong> and a photo of the entrance or signboard if it's hard to spot.</li>
-  <li><strong>Tap-to-call and WhatsApp</strong> buttons for people who would rather ask the way.</li>
+<li>Business name exactly as on your Google Business Profile.</li>
+<li>Full address with a landmark that locals use ("opposite the metro station", "above the bank"), plus the pin code.</li>
+<li>Opening hours, including lunch breaks and weekly off days.</li>
+<li>Phone number as a tap-to-call link and a WhatsApp link.</li>
+<li>Parking information and which floor or entrance to use.</li>
 </ul>
-<p>A directions link can use Google's Maps URLs format, or the share link copied from your Business Profile:</p>
-<pre><code>&lt;a href="https://www.google.com/maps/dir/?api=1&amp;destination=Example+Dental+Clinic+Pune"&gt;Get directions&lt;/a&gt;</code></pre>
-<p><a href="/blog/contact-page-that-gets-enquiries/">How to design a contact page that gets enquiries</a> covers forms, reply times and trust signals around the map.</p>
+<p>Our guide to a <a href="/blog/contact-page-that-gets-enquiries/">contact page that gets enquiries</a> covers the form and layout side of this.</p>
 
 <h2>LocalBusiness schema and NAP consistency</h2>
-<p>Embedding a map doesn't by itself improve your local rankings. What helps is Google seeing the same business name, address and phone (NAP) on your website, your Business Profile and directories, and structured data that states them clearly. A LocalBusiness block, using the most specific type available, such as Dentist or Restaurant, looks like this:</p>
-<pre><code>&lt;script type="application/ld+json"&gt;
-{
-  "@context": "https://schema.org",
-  "@type": "Dentist",
-  "name": "Example Dental Clinic",
-  "url": "https://example.com/",
-  "telephone": "+91-20-0000-0000",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "12 Example Road, near Example Chowk",
-    "addressLocality": "Pune",
-    "postalCode": "411001",
-    "addressRegion": "Maharashtra",
-    "addressCountry": "IN"
-  },
-  "geo": { "@type": "GeoCoordinates", "latitude": 18.5204, "longitude": 73.8567 },
-  "hasMap": "https://maps.app.goo.gl/example"
-}
-&lt;/script&gt;</code></pre>
-<p>SEO plugins such as Rank Math and Yoast's local add-on can output this from a settings screen. Keep the details word for word the same as your profile, and link your Business Profile to the matching page of your site. The wider steps, from reviews to citations, are in the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian small businesses</a>, and if your business doesn't appear on Maps at all, see <a href="/blog/not-showing-on-google-maps/">business not showing on Google Maps</a>.</p>
+<p>An embedded map does not tell Google much on its own. What helps local search is consistency: the same name, address and phone number (NAP) on your website, your Google Business Profile, and directories. Add LocalBusiness structured data to the contact or home page with your address, geo coordinates, opening hours and a link to your Maps listing in the sameAs or hasMap property. Our <a href="/blog/schema-markup-explained/">schema markup guide</a> explains how to add it in WordPress.</p>
+<p>Then keep your profile active using the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>. Reviews, photos and accurate categories affect map rankings far more than whether your website has a map.</p>
 
 <h2>Several branches, or no shopfront at all</h2>
-<p>For several branches, give each its own page with its own map, address, hours and phone, matching that branch's Business Profile, rather than one crowded map on the contact page; <a href="/blog/multi-location-business-website/">websites for multi-branch businesses</a> covers the structure. If customers never visit you, as with plumbers, AC repair or home tutors, you don't need to show an exact address. List the areas you serve in text and set a service area on your profile instead; see <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a>.</p>
+<p>If you have several branches, give each one its own location page with its own address, timings, phone number, photos and map, rather than one page with five pins. Each page then has a genuine reason to exist and can rank for searches near that branch. Avoid near-identical pages that only swap the city name; our notes on <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a> explain the difference.</p>
+<p>If you serve customers at their location (plumbers, pest control, home tutors) and do not want to show a home address, hide the address on your Google Business Profile, set service areas instead, and skip the map. A list of the areas you cover, written as text, is more useful to visitors.</p>
+
+<h2>Common problems and fixes</h2>
+<ul>
+<li><strong>Map shows a grey box:</strong> a security plugin or Content Security Policy is blocking google.com frames; allow it in the frame-src rule.</li>
+<li><strong>Map spills off the screen on phones:</strong> the iframe has a fixed width; set it to 100 percent with a sensible height.</li>
+<li><strong>"This page can't load Google Maps correctly":</strong> an API key is missing billing or is restricted to the wrong domain.</li>
+<li><strong>Wrong pin location:</strong> correct the pin in your Google Business Profile, then copy a fresh embed code.</li>
+</ul>
+<p>If you would like your contact page, map and local details set up properly with speed in mind, see <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for the build.</p>
 
 <h2>FAQs</h2>
-<h3>Is it free to embed Google Maps on a website?</h3>
-<p>Yes, embedding a map through Google Maps' Share and Embed option is free and needs no API key. The Maps JavaScript API, used for custom maps and store locators, needs an API key and a billing account, with usage-based pricing.</p>
-<h3>Does Google Maps slow down a website?</h3>
-<p>It can, because the embed loads a lot of code from Google. Use it only on pages that need it, keep it below the first screen and lazy-load it, or show a click-to-load preview.</p>
+<h3>How do I add Google Maps to my website for free?</h3>
+<p>Open your business in Google Maps, click Share, choose Embed a map and copy the HTML. Paste it into a Custom HTML block in WordPress, an HTML widget in Elementor, or a Custom Liquid section in Shopify. No API key or billing is needed for this embed.</p>
+<h3>Does an embedded Google Map slow down my website?</h3>
+<p>It can, because the iframe loads many scripts and tiles. Keep it below the fold with lazy loading, show it only on the contact page, or use a click-to-load preview image so it loads only when a visitor asks for it.</p>
 <h3>Does embedding Google Maps help local SEO?</h3>
-<p>Not directly. Consistent business details across your website and Business Profile, LocalBusiness schema and a well-managed profile matter far more than the map itself.</p>
-<h3>How do I add Google Maps in WordPress without a plugin?</h3>
-<p>Copy the embed code from Google Maps' Share menu and paste it into a Custom HTML block, or use Elementor's Google Maps widget. No plugin or API key is needed for a single location.</p>
-<h3>Why does my embedded map show the wrong place?</h3>
-<p>The embed was probably created from an address rather than your business listing, or the pin on your Business Profile is misplaced. Fix the pin on your profile, then generate a fresh embed from the listing.</p>
-
-<p>Want a contact page with a fast map, clear directions and details that match your Business Profile? On my <a href="/wordpress-website-development/">WordPress website development</a> projects, maps, forms and WhatsApp go in during the build, and every page is speed-tested on mobile before launch. If maps, chat widgets and other embeds are already slowing your site, <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> includes lazy loading and a third-party script clean-up.</p>
+<p>Not much by itself. Consistent name, address and phone details, LocalBusiness schema, and an active Google Business Profile with reviews matter far more for local rankings than the embed.</p>
+<h3>Do I need a Google Maps API key?</h3>
+<p>Only for the Maps JavaScript API or Embed API, which you need for store locators, multiple custom pins or styled maps. The basic embed from the Share button works without a key.</p>
+<h3>How do I make an embedded map responsive?</h3>
+<p>Change the iframe width to 100 percent and set a fixed height, or wrap it in a container with an aspect ratio set in CSS. Most page builders' map widgets are responsive by default.</p>
+<h3>Can I add a map for a home-based or service-area business?</h3>
+<p>You can, but you usually should not show a home address. Set service areas in your Google Business Profile, list the areas you cover on the website, and use a call or WhatsApp button instead of a map.</p>
 `,
   },
   {
@@ -37237,139 +37200,96 @@ function my_child_enqueue_styles() {
     slug: 'custom-gutenberg-blocks',
     seoTitle: 'Custom Gutenberg Blocks: Patterns, ACF or Native Blocks?',
     title: 'Custom Gutenberg Blocks for Agencies: Patterns, Synced Patterns, ACF Blocks or Native Blocks With block.json',
-    description: 'Custom Gutenberg blocks for agencies: when block patterns are enough, when to use ACF or native blocks with create-block, and how to lock the design.',
+    description: 'Custom Gutenberg blocks explained for agencies: when a pattern is enough, when to build ACF blocks, when native React blocks pay off, and how to lock layouts.',
     date: '2026-09-28',
-    updated: '2026-10-15',
+    updated: '2026-10-30',
     category: 'Agencies',
     related: ['figma-to-wordpress', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
     body: `
-<p>Custom Gutenberg blocks give your client's editors on-brand components, such as service cards, testimonials or call-to-action bands, that they fill with content while the design stays intact. There are four ways to build them, in rising order of effort: block patterns made from core blocks, synced patterns, ACF blocks rendered with PHP, and native blocks scaffolded with @wordpress/create-block and described in block.json. Start with patterns, and build custom blocks only when you need structured fields, dynamic data or markup that editors must not be able to change.</p>
-<p>For agencies, the right choice affects build time, quotes and how many "small change" requests come back after launch. When I build for agencies as a <a href="/wordpress-developer-for-agencies/">white-label WordPress developer</a>, sites are built with global styles and a clean structure in Elementor or the block editor, so clients can edit without breaking the layout. On a block theme build, the editing experience comes from locked patterns and custom blocks; it is one of the three build approaches compared on my <a href="/figma-to-wordpress/">Figma to WordPress</a> page. Here is how the options compare and when each makes sense.</p>
+<p>Custom Gutenberg blocks are reusable content components you build for the WordPress block editor so clients can add a pricing table, team grid or enquiry banner without touching code. For an agency, the right choice is usually the lightest one that works: a block pattern for fixed layouts, a synced pattern for content that must stay identical everywhere, an ACF block for structured fields rendered in PHP, and a native block registered with block.json when you need live previews and rich interaction.</p>
+<p>This guide walks through each option, how to decide between them on a real project, and how to stop editors breaking a design you spent weeks perfecting. It is written for agencies who hand WordPress builds to clients and want them to stay tidy for years.</p>
 
 <h2>The four options at a glance</h2>
 <table>
-  <thead><tr><th>Option</th><th>Build effort</th><th>Editing experience</th><th>Best for</th><th>Watch out for</th></tr></thead>
-  <tbody>
-    <tr><td>Block patterns</td><td>Low: arranged core blocks, saved as a file</td><td>Familiar core blocks; editors can change anything unless locked</td><td>Layouts that core blocks can achieve</td><td>Edits after insertion don't update other copies</td></tr>
-    <tr><td>Synced patterns</td><td>Low</td><td>Edit once, update everywhere; overrides allow some per-instance content</td><td>Repeated bands such as a site-wide call to action</td><td>Overrides support only some core blocks at the time of writing</td></tr>
-    <tr><td>ACF blocks</td><td>Medium: block.json plus a PHP template</td><td>Fields in the sidebar or inline, with a server-rendered preview</td><td>Structured components built by PHP-focused teams</td><td>Needs ACF PRO, so a licence dependency</td></tr>
-    <tr><td>Native blocks</td><td>Higher: JavaScript and React in the editor, PHP or saved HTML on the front end</td><td>The richest editing, with inline text and live previews</td><td>Long-lived products, complex interactions, no plugin dependency</td><td>Needs JavaScript build tooling and care when markup changes</td></tr>
-  </tbody>
+<thead><tr><th>Option</th><th>Best for</th><th>Skills needed</th><th>Editor experience</th></tr></thead>
+<tbody>
+<tr><td>Block pattern</td><td>Starting layouts editors can change freely</td><td>HTML and block markup</td><td>Inserts normal core blocks</td></tr>
+<tr><td>Synced pattern</td><td>A section that must be identical on every page</td><td>None beyond the editor</td><td>Edit once, updates everywhere</td></tr>
+<tr><td>ACF block</td><td>Structured fields shown with a PHP template</td><td>PHP, ACF Pro</td><td>Sidebar or inline field forms</td></tr>
+<tr><td>Native block</td><td>Interactive, inline-editable components</td><td>JavaScript, React, build tools</td><td>Fully visual, closest to core blocks</td></tr>
+</tbody>
 </table>
-<p>Third-party block libraries are a fifth route for common components, but they add another vendor and rarely match a custom design exactly. <a href="/blog/wordpress-shortcodes-vs-blocks/">Shortcodes vs blocks vs page-builder widgets</a> covers why blocks are now the native format.</p>
+<p>The table hides one important point: these are not rivals. A good theme usually mixes them, with patterns doing most of the work and a handful of custom blocks covering what patterns cannot.</p>
 
 <h2>Block patterns: start here</h2>
-<p>A pattern is a saved arrangement of core blocks, such as a group with a heading, paragraph and buttons, that editors insert from the pattern library. In a theme, each pattern is a PHP file in the /patterns folder with a header comment, and WordPress registers it automatically:</p>
-<pre><code>&lt;?php
-/**
- * Title: Call to action band
- * Slug: agency-theme/cta-band
- * Categories: call-to-action
- */
-?&gt;
-&lt;!-- wp:group {"className":"cta-band","layout":{"type":"constrained"}} --&gt;
-&lt;div class="wp-block-group cta-band"&gt;
-  &lt;!-- wp:heading --&gt;
-  &lt;h2 class="wp-block-heading"&gt;Ready to start your project?&lt;/h2&gt;
-  &lt;!-- /wp:heading --&gt;
-  &lt;!-- wp:paragraph --&gt;
-  &lt;p&gt;Tell us what you need and get a fixed quote.&lt;/p&gt;
-  &lt;!-- /wp:paragraph --&gt;
-&lt;/div&gt;
-&lt;!-- /wp:group --&gt;</code></pre>
-<p>Patterns are quick to build and need no build step, and because they use core blocks, they survive a theme change as ordinary content. The trade-off is that once inserted, each copy is independent, and editors can restyle it freely unless you lock it.</p>
+<p>A pattern is a saved arrangement of core blocks. In a modern theme you add a PHP file to the patterns folder with a header comment giving its title, slug and categories, and WordPress registers it automatically. Editors insert it from the pattern library and then change anything they like.</p>
+<p>Patterns are ideal for hero sections, feature rows, testimonial layouts with placeholder text, and call-to-action bands. Because the output is plain core blocks, there is nothing to maintain when WordPress updates, and the content survives if the theme is ever switched. The trade-off is freedom: once inserted, the pattern is just blocks, so an editor can delete a column or change a colour and nothing stops them.</p>
+<p>Use patterns when you want consistency at the starting point but the client is allowed to adapt. For most brochure sites built on <a href="/blog/block-themes-full-site-editing/">block themes and full site editing</a>, a library of ten to twenty well-named patterns covers the bulk of page building.</p>
 
 <h2>Synced patterns and overrides</h2>
-<p>A synced pattern, called a reusable block in older WordPress versions, is one piece of content shown in many places: edit it once and every instance updates. That suits a site-wide call to action or a disclaimer. Pattern overrides, added in recent versions, let editors change specific content inside each instance, such as a heading or button text, while the layout stays synced. At the time of writing, overrides work only with certain core blocks, such as headings, paragraphs, images and buttons, so check the current support before designing around them.</p>
+<p>Synced patterns (previously called reusable blocks) are stored once in the database and referenced wherever they are placed. Change the source and every instance updates. They are perfect for a footer enquiry strip, a standard disclaimer, or an offer banner that runs across many service pages.</p>
+<p>Recent WordPress versions add pattern overrides, which let you mark specific blocks inside a synced pattern (for example a heading, paragraph, button or image) as editable per instance while the layout stays locked. That covers a surprising number of cases agencies used to solve with custom blocks, such as a team card where only the photo, name and role change.</p>
+<p>The limits: overrides work only on supported core blocks, there is no field validation, and you cannot add logic such as hiding a section when a field is empty. When you need those, move to a real block.</p>
 
 <h2>ACF blocks: the quickest route for PHP teams</h2>
-<p>With Advanced Custom Fields PRO, a block is a block.json file, a field group and a PHP template. Editors fill in labelled fields, and the block renders on the server, so the front end is plain HTML. A minimal block.json looks like this:</p>
-<pre><code>{
-  "name": "acf/testimonial",
-  "title": "Testimonial",
-  "category": "text",
-  "acf": { "mode": "preview", "renderTemplate": "testimonial.php" },
-  "supports": { "anchor": true, "align": false }
-}</code></pre>
-<p>You register it with register_block_type pointing at the block's folder, then assign an ACF field group to that block. ACF blocks suit agencies whose developers are comfortable in PHP, components driven by structured fields, and sites already using ACF for <a href="/blog/custom-post-types-fields/">custom post types and fields</a>. The cost is a dependency on an ACF PRO licence, which should be held in the client's name, and an editing experience that is less fluid than a native block's.</p>
+<p>ACF Pro lets you register a block with a block.json file and render it with a PHP template, using field groups for the content. The editor sees a form (or inline preview) and the front end gets exactly the markup you wrote. For agencies whose developers are comfortable in PHP, this is the fastest way to ship a library of structured blocks.</p>
+<p>Good fits for ACF blocks include:</p>
+<ul>
+<li>Pricing or plan tables where each row has fixed fields and a highlight toggle.</li>
+<li>Doctor, lawyer or staff profiles pulled from a <a href="/blog/custom-post-types-fields/">custom post type with custom fields</a>.</li>
+<li>Location blocks showing address, timings and a click-to-load map.</li>
+<li>Comparison tables, FAQ groups that also output FAQPage schema, and download lists with file sizes.</li>
+</ul>
+<p>Watch two things. First, ACF blocks depend on a paid plugin, so the client's licence must be renewed and handed over properly. Second, the editor preview is server-rendered, which can feel slower than native blocks on large pages. Keep templates lean and avoid heavy queries inside the render file.</p>
 
 <h2>Native blocks with @wordpress/create-block</h2>
-<p>Native blocks are built with WordPress's own block API. The official scaffolding tool sets up the folder, block.json and build scripts in one command:</p>
-<pre><code>npx @wordpress/create-block@latest service-card --variant dynamic
-cd service-card
-npm start</code></pre>
-<p>Everything WordPress needs to know about the block lives in block.json, which lets WordPress load the block's scripts and styles only on pages that use it:</p>
-<pre><code>{
-  "$schema": "https://schemas.wp.org/trunk/block.json",
-  "apiVersion": 3,
-  "name": "agency/service-card",
-  "title": "Service card",
-  "category": "design",
-  "attributes": {
-    "heading": { "type": "string" },
-    "summary": { "type": "string" }
-  },
-  "supports": { "html": false, "color": { "background": true, "text": false } },
-  "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "render": "file:./render.php"
-}</code></pre>
-<p>The editor side is written in React. The front end is either saved as static HTML in the post content or, as here, rendered by PHP on each request. Dynamic rendering means you can change the markup later without "invalid block" warnings on existing content:</p>
-<pre><code>&lt;div &lt;?php echo get_block_wrapper_attributes(); ?&gt;&gt;
-  &lt;h3&gt;&lt;?php echo esc_html( $attributes['heading'] ?? '' ); ?&gt;&lt;/h3&gt;
-  &lt;p&gt;&lt;?php echo esc_html( $attributes['summary'] ?? '' ); ?&gt;&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-<p>Native blocks give the best editing experience, with text typed directly into the block, live previews and toolbar controls, and they depend on nothing but WordPress. For front-end behaviour such as tabs or filters, the Interactivity API, added in WordPress 6.5, is the recommended approach. The cost is JavaScript tooling, a steeper learning curve and more care when a block's structure changes.</p>
+<p>Native blocks are built in JavaScript with React components from the WordPress packages. The official scaffolding tool, @wordpress/create-block, generates a plugin with block.json, an edit component, a save function or render file, and a build setup. The result behaves like a core block: inline editing, toolbar controls, live preview and support for colours, spacing and typography from theme.json.</p>
+<p>Choose native blocks when the editing experience matters most, for example a tabbed content block, an accordion with nested blocks inside each panel, a before-and-after image slider, or a block that pulls data from an external API. Dynamic blocks (with a PHP render callback) are usually safer than static ones for agency work, because changing the markup later does not trigger block validation errors on every existing post.</p>
+<p>Native blocks need more time and a developer who knows modern JavaScript. If your team does not, this is a common area to bring in <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development</a> rather than learning on a client deadline.</p>
+
+<h2>How to decide on a real project</h2>
+<p>When a designer hands over a Figma file, go through each section and ask four questions in order:</p>
+<ol>
+<li><strong>Can core blocks reproduce it?</strong> If yes, make it a pattern.</li>
+<li><strong>Must it look identical on every page?</strong> If yes, make it a synced pattern, with overrides for the parts that change.</li>
+<li><strong>Does the content have a fixed structure or come from elsewhere?</strong> If yes, an ACF block or a dynamic native block.</li>
+<li><strong>Does the editor need to see and edit it visually with interactions?</strong> If yes, a native block.</li>
+</ol>
+<p>On a typical service-business site this produces a handful of custom blocks and many patterns. If your list comes out the other way round, check whether the design is fighting the editor. Our notes on <a href="/blog/figma-to-wordpress-approaches/">Figma to WordPress approaches</a> cover how to set up designs so they map cleanly to blocks.</p>
 
 <h2>Stopping editors from breaking the design</h2>
-<p>"Blocks they can't break" is usually the real requirement. WordPress gives you several levers, and most projects use a combination:</p>
+<p>The biggest complaint agencies hear after launch is that the client broke the layout. WordPress gives you several controls:</p>
 <ul>
-  <li><strong>theme.json settings</strong> that remove custom colours, gradients and font sizes, so editors choose only from the brand palette and type scale.</li>
-  <li><strong>Block supports</strong> in block.json, enabling only the controls a block needs.</li>
-  <li><strong>Locking</strong> so key blocks can't be moved or removed, and template locks on inner blocks so a card's structure stays fixed while its text is editable.</li>
-  <li><strong>Allowed blocks</strong> lists that hide blocks editors don't need.</li>
-  <li><strong>Sensible user roles,</strong> with Editors for content staff and Administrator access kept to a few people.</li>
+<li><strong>theme.json settings:</strong> limit the colour palette, font sizes and spacing options to your design tokens, and turn off custom colours and gradients.</li>
+<li><strong>Template locking:</strong> lock a custom block's inner blocks so editors can change content but not remove or move sections.</li>
+<li><strong>Allowed blocks:</strong> restrict which blocks can be inserted inside a container, or hide rarely needed core blocks from the inserter.</li>
+<li><strong>Content-only editing:</strong> lock a pattern so editors see only the text and images they are meant to change.</li>
+<li><strong>User roles:</strong> keep the Site Editor and template editing for administrators.</li>
 </ul>
-<pre><code>{
-  "version": 3,
-  "settings": {
-    "color": { "custom": false, "customGradient": false, "defaultPalette": false },
-    "typography": { "customFontSize": false }
-  }
-}</code></pre>
+<p>Locking is a balance. Lock too little and the site drifts; lock too much and the client calls you for every small change. Agree the level with the client before you build.</p>
 
-<h2>Which should an agency choose?</h2>
-<ol>
-  <li><strong>Marketing site, layouts achievable with core blocks:</strong> patterns with theme.json restrictions. Quickest to build and hand over.</li>
-  <li><strong>A component repeated identically across the site:</strong> a synced pattern.</li>
-  <li><strong>Structured components, such as team members, specifications or pricing tables, built by a PHP team:</strong> ACF blocks.</li>
-  <li><strong>A design system used across many client sites, complex interactions or a product you'll maintain for years:</strong> native blocks, kept in a shared plugin.</li>
-  <li><strong>Content that is really data,</strong> such as listings or case studies shown in several places: a custom post type with fields and a template, not a block on each page.</li>
-</ol>
-<p>If the client wants to drag layouts around freely, a page builder may suit them better; <a href="/blog/figma-to-wordpress-approaches/">Elementor, block theme, Bricks or custom theme</a> compares the build approaches, and <a href="/blog/block-themes-full-site-editing/">block themes and full site editing</a> explains where custom blocks fit in a block theme.</p>
+<h2>Naming, structure and a block library that scales</h2>
+<p>Agencies that build many sites benefit from a shared block plugin rather than putting blocks inside each theme. Keep blocks in a plugin with a consistent namespace (for example agencyname/pricing-table), so content survives a theme change and fixes can be rolled out across sites.</p>
+<p>Name blocks in plain language for editors, give each a clear icon and description, and add example data so the inserter preview is useful. Keep styles in the block's own stylesheet so the front end only loads CSS for blocks actually used on a page.</p>
 
 <h2>Performance, maintenance and handover</h2>
-<ul>
-  <li><strong>Keep custom blocks in a plugin,</strong> not the theme, so content still renders if the theme changes; <a href="/blog/custom-wordpress-plugin-development/">custom plugin development</a> covers structuring one.</li>
-  <li><strong>Load assets per block</strong> through block.json, rather than one large stylesheet on every page.</li>
-  <li><strong>Plan for change:</strong> prefer dynamic rendering for blocks whose markup may evolve, and add deprecations when a static block's saved HTML changes.</li>
-  <li><strong>Use version control</strong> and a staging site, and test blocks against new WordPress releases before updating production.</li>
-  <li><strong>Document each block</strong> for the client: what it's for, its fields and where it's used. The <a href="/blog/agency-developer-handoff-checklist/">agency handoff checklist</a> covers what to agree with your developer.</li>
-</ul>
+<p>Custom blocks can be faster than page builders, but only if you build them carefully. Register scripts only for blocks that need them, avoid loading slider libraries on every page, and use server rendering for anything that queries posts. Our guide to <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a> explains why block-based builds tend to produce lighter pages.</p>
+<p>At handover, document each block: what it is for, which fields it has, and any limits. Include it in your <a href="/blog/agency-developer-handoff-checklist/">developer handoff checklist</a>, and agree who updates the block plugin when WordPress changes. Treat the block library as code with version control, a changelog and a staging test before each release.</p>
+<p>If you need a block library built for an agency project, I build ACF and native blocks as part of <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>, and you can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for one-off block work.</p>
 
 <h2>FAQs</h2>
-<h3>Do I need React to build custom Gutenberg blocks?</h3>
-<p>For native blocks, the editor side is written in JavaScript, usually React. Patterns need no JavaScript, and ACF blocks let you build with PHP templates and ACF fields instead.</p>
+<h3>What are custom Gutenberg blocks?</h3>
+<p>They are components you create for the WordPress block editor, registered with a block.json file, so editors can add specific layouts or structured content in a few clicks. They can be built with JavaScript and React or with ACF and PHP templates.</p>
+<h3>Do I need a custom block or is a block pattern enough?</h3>
+<p>If core blocks can reproduce the layout and editors may change it freely, a pattern is enough. Build a custom block when you need fixed fields, logic, data from elsewhere, or a layout that editors must not be able to break.</p>
 <h3>Are ACF blocks slower than native blocks?</h3>
-<p>On the front end, both can output clean HTML, so the difference is usually small when built well. ACF blocks render previews through the server in the editor, which can feel slightly less immediate for editors.</p>
-<h3>What happened to reusable blocks?</h3>
-<p>They were renamed synced patterns in WordPress 6.3. They work the same way, and pattern overrides now allow some content to differ per instance.</p>
+<p>On the front end they can be just as fast, because both output plain HTML. The editor preview of ACF blocks is server-rendered, so it can feel slower on long pages; keep render templates simple to reduce that.</p>
 <h3>Should custom blocks live in the theme or a plugin?</h3>
-<p>A plugin, in most cases. Blocks hold content, and keeping them in a plugin means that content still displays properly if the client changes theme later.</p>
-<h3>Can custom blocks be built from a Figma design system?</h3>
-<p>Yes. Figma components usually map well to patterns or custom blocks, and Figma colour and text styles map to theme.json settings, so the build stays faithful to the design.</p>
-
-<p>Need block editor builds, patterns or custom blocks delivered under your agency's brand? As your <a href="/wordpress-developer-for-agencies/">white-label WordPress developer</a>, I work under NDA with a fixed quote per project, and sites are built with global styles and clean structure so your clients can edit them safely. For designs already in Figma, see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+<p>A plugin is usually better. Content built with the blocks keeps working if the theme changes, and an agency can reuse and update one block plugin across many client sites.</p>
+<h3>Will WordPress updates break custom Gutenberg blocks?</h3>
+<p>Well-built dynamic blocks rarely break, but deprecated APIs and markup changes can cause validation errors in static blocks. Test updates on a staging site and keep block code under version control.</p>
+<h3>Can I convert Elementor sections into Gutenberg blocks?</h3>
+<p>There is no reliable automatic conversion. Each section is rebuilt as a pattern or custom block, which is a good moment to simplify the design and remove sections that no longer earn their place.</p>
 `,
   },
   {
