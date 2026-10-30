@@ -1109,12 +1109,12 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'Website Not Getting Enquiries? 12 Ways to Get More Enquiries From Your Business Website',
     description: 'Website not getting enquiries? Find out why, then use 12 practical ways to get more: clearer headlines, WhatsApp, shorter forms, real proof, speed and tracking.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'Growth',
     related: ['website-redesign', 'landing-page-design', 'wordpress-speed-optimization'],
     body: `
 <p>If your website gets visitors but few enquiries, the problem is rarely the amount of traffic alone. Usually the site doesn't make it instantly clear what you offer, doesn't give visitors an easy way to get in touch, or doesn't give them enough reason to trust you. Fix those three first: a clear headline, an obvious call to action with WhatsApp and phone beside the form, and real proof of your work.</p>
-<p>Below is how to work out why your website isn't getting enquiries, then twelve practical fixes, most of which you can make in a day, with examples from sites I've built. If you're running ads to a page that isn't converting, <a href="/landing-page-design/">landing page design</a> covers pages built around one offer; if the whole site needs rebuilding around enquiries, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<p>Below is how to work out why your website isn't getting enquiries, then twelve practical fixes, most of which you can make in a day, with examples from sites I've built. If you're running ads to a page that isn't converting, landing page design covers pages built around one offer; if the whole site needs rebuilding around enquiries, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 
 <h2>Why is my website not getting enquiries?</h2>
 <p>Start by working out which of four problems you have, because the fixes are different:</p>
@@ -1173,20 +1173,35 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <h3>11. Repeat your call to action</h3>
 <p>Visitors decide at different points, so add a call to action after each main section and at the end of every page and article, not just in the header. The Studio Agama Interiors site I built repeats its "Get A Free Quote" button all the way down the homepage.</p>
 <h3>12. Track enquiries, and reply fast</h3>
-<p>Set up Google Analytics to count form submissions, WhatsApp clicks and phone taps as key events, so you know which pages and campaigns bring enquiries. A "How did you hear about us?" question on the form backs up the numbers. Then reply quickly, because the first business to respond often wins the job; see <a href="/blog/respond-to-website-enquiries-fast/">how to respond to website enquiries fast</a>.</p>
+<p>Set up Google Analytics to count form submissions, WhatsApp clicks and phone taps as key events, so you know which pages and campaigns bring enquiries. A "How did you hear about us?" question on the form backs up the numbers. Then reply quickly, because the first business to respond often wins the job; see how to respond to website enquiries fast.</p>
 
 <h2>Other ways in for visitors who aren't ready</h2>
 <p>Not everyone is ready to enquire today. Something useful in return can start the conversation:</p>
 <ul>
   <li><strong>A self-assessment,</strong> like the free anxiety self-assessment on the Dr. Sudhir Arora site I built, which leads naturally to a consultation.</li>
-  <li><strong>A calculator or estimator.</strong> The <a href="/website-cost-calculator/">website cost calculator</a> on this site sends the visitor's selections to WhatsApp, so the conversation starts with a brief.</li>
+  <li><strong>A calculator or estimator.</strong> The website cost calculator on this site sends the visitor's selections to WhatsApp, so the conversation starts with a brief.</li>
   <li><strong>A brochure or company profile</strong> for B2B buyers who need something to share internally, as on the Vansh Group site.</li>
 </ul>
+
+<p>Not everyone is ready to enquire today. A useful lead magnet or newsletter keeps those visitors in touch.</p>
 
 <p>Not everyone is ready to enquire today. A useful <a href="/blog/lead-magnets-newsletter-small-business/">lead magnet or newsletter</a> keeps those visitors in touch.</p>
 
 <h2>Where to start</h2>
 <p>If you do only three things this week: rewrite your homepage headline, add a WhatsApp button with a pre-filled message, and put real testimonials or project photos next to your main call to action. Then test your form, and set up tracking so you can see whether enquiries rise.</p>
+
+<p>Then turn those numbers into rupees; see how to measure website ROI.</p>
+<p>See how to collect and display testimonials that actually convince people.</p>
+<h2>Fix the enquiry handling, not only the website</h2>
+<p>Sometimes the website is producing enquiries and they are being lost after they arrive. Before redesigning anything, check what happens to a form submission or a WhatsApp message once it leaves the site.</p>
+<h3>Send a test enquiry and time the reply</h3>
+<p>Fill in your own form and send a message to your own WhatsApp number from a different phone. Note whether the form email arrives at all, whether it lands in spam, and how long it takes for someone to reply. Form emails failing silently is a common and easily fixed problem on WordPress sites, usually solved by sending mail through a proper SMTP service.</p>
+<h3>Make sure enquiries reach a person</h3>
+<p>Route form notifications to an inbox that is checked daily, and to more than one person if possible. Store a copy of each submission in the website database or a simple spreadsheet so nothing is lost if an email goes astray.</p>
+<h3>Reply with what the visitor asked for</h3>
+<p>A fast, specific reply that answers the question and suggests a next step (a call, a visit or a quote) converts far better than a generic &quot;thank you for contacting us&quot;. Keep a few saved reply templates for your most common enquiries.</p>
+<h3>Track which page each enquiry came from</h3>
+<p>Add a hidden field or a thank-you page so you can see which page, campaign or city page produced each enquiry. Over a few months this shows which pages deserve more effort and which pages bring time-wasters.</p>
 
 <p>Then turn those numbers into rupees; see <a href="/blog/measure-website-roi/">how to measure website ROI</a>.</p>
 <p>See <a href="/blog/collect-display-customer-testimonials/">how to collect and display testimonials</a> that actually convince people.</p>
@@ -1201,6 +1216,8 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>As few as you need to reply well: usually a name, a phone number or email and a message, perhaps with a service dropdown. Add qualifying questions only if your team genuinely needs the answers before calling.</p>
 <h3>Do I need more traffic or a better website?</h3>
 <p>If visitors arrive but don't enquire, more traffic just means more people leaving. Fix the site first, then spend on SEO or ads. If almost nobody visits, you need both.</p>
+<h3>Why are my website form enquiries not reaching my email?</h3>
+<p>On WordPress this is usually because the site sends mail through the server without proper authentication, so it is blocked or lands in spam. Sending through an SMTP service and saving submissions in the database usually fixes it.</p>
 
 <p>Want a second pair of eyes on why your site isn't converting? I can review it and fix the headline, calls to action, forms and tracking, or build pages designed around enquiries. See <a href="/landing-page-design/">landing page design</a> for campaign pages and <a href="/wordpress-website-development/">WordPress website development</a> for full sites.</p>
 `,
@@ -1941,12 +1958,12 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'How to Redesign Your Website Without Losing Google Rankings: The SEO Migration Checklist',
     description: 'Redesign your website and keep your rankings: benchmark, crawl, map every URL, set up 301s, keep content parity, block staging and monitor after launch.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['website-redesign', 'wordpress-migration', 'wordpress-seo-services'],
     body: `
 <p>To redesign a website without losing rankings, protect what Google already ranks: keep URLs where you can, 301-redirect every URL that changes to its closest new equivalent, keep the content, titles and internal links of pages that bring traffic, keep the staging site out of Google, and remove that block at launch. Then watch Search Console closely for the first few weeks and fix anything that slips.</p>
-<p>Most ranking drops after a redesign come from skipped steps, not from the new design itself. This is the redesign-specific checklist I follow on <a href="/website-redesign/">website redesign</a> projects. If the redesign also brings a new business name, see <a href="/blog/rebranding-your-website/">rebranding your website</a>; if the domain changes too, follow <a href="/blog/change-domain-name-without-losing-seo/">changing your domain without losing SEO</a> as well.</p>
+<p>Most ranking drops after a redesign come from skipped steps, not from the new design itself. This is the redesign-specific checklist I follow on website redesign projects. If the redesign also brings a new business name, see <a href="/blog/rebranding-your-website/">rebranding your website</a>; if the domain changes too, follow <a href="/blog/change-domain-name-without-losing-seo/">changing your domain without losing SEO</a> as well.</p>
 
 <h2>Why redesigns lose rankings</h2>
 <table>
@@ -2041,7 +2058,20 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
   <li><strong>Weekly for the next six weeks:</strong> Performance with date comparison (compare equal periods with the same weekdays), clicks by page against your benchmark, and positions for your tracked searches.</li>
   <li><strong>Fix fast:</strong> redirect any 404 that has traffic or links, and for pages that lose clicks, compare the old content (the Wayback Machine helps) with the new page.</li>
 </ul>
-<p>Some movement for a few weeks is normal while Google recrawls. A sharp site-wide drop usually points to a noindex, robots or canonical problem; see <a href="/blog/search-console-page-indexing-errors/">Search Console indexing errors</a> and the <a href="/blog/website-traffic-dropped/">traffic drop checklist</a>.</p>
+<p>Some movement for a few weeks is normal while Google recrawls. A sharp site-wide drop usually points to a noindex, robots or canonical problem; see <a href="/blog/search-console-page-indexing-errors/">Search Console indexing errors</a> and the traffic drop checklist.</p>
+
+<h2>Redesigns that also change platform or domain</h2>
+<p>A redesign that keeps the same platform and domain is the safest kind. Many projects change more than the design, and each extra change adds its own risks to plan for.</p>
+<h3>Moving from a builder or custom code to WordPress</h3>
+<p>Old builder sites often use URLs with IDs, query strings or a .html ending. WordPress will produce clean, different URLs, so every ranking page needs a one-to-one 301 redirect. Export the old page list before the old account is closed, because some builders remove access once the subscription ends.</p>
+<h3>Moving a store to Shopify or WooCommerce</h3>
+<p>Shopify forces fixed URL patterns such as /products/ and /collections/, so product and category URLs will almost always change. Plan redirects for products, categories, and important filtered pages, and carry over product descriptions, image alt text and reviews where the platform allows. Check that out-of-stock and discontinued products redirect to the closest live product or category rather than to the home page.</p>
+<h3>Changing the domain at the same time</h3>
+<p>If you are also moving to a new domain, redirect every old URL to its exact new equivalent, keep the old domain registered and its redirects live for at least a year, and use the change of address tool in Google Search Console. Avoid combining a domain move with heavy content cuts in the same week, because it becomes hard to tell which change caused any drop.</p>
+<h3>Switching from www to non-www, or http to https</h3>
+<p>These are small changes but they affect every URL. Pick one version, redirect all others to it in a single hop, and update canonical tags, the XML sitemap and internal links so nothing still points at the old form.</p>
+
+<p>If traffic does drop after launch, work through the <a href="/blog/website-traffic-dropped/">traffic drop checklist</a> step by step, and check that new pages are being indexed; see <a href="/blog/get-website-indexed-google-faster/">getting indexed faster</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Will redesigning my website affect SEO?</h3>
@@ -9763,7 +9793,7 @@ https://example.com/solar-quote/?utm_source=brochure&amp;utm_medium=qr&amp;utm_c
     title: 'How to Write an About Page That Builds Trust: Structure, Story, People, Honest Credentials, Proof and Examples by Business Type',
     description: 'How to write an About page that builds trust: a section-by-section structure, your story, people and photos, honest credentials, proof and examples.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'website-for-lawyers-and-consultants'],
     body: `
@@ -9845,10 +9875,10 @@ https://example.com/solar-quote/?utm_source=brochure&amp;utm_medium=qr&amp;utm_c
   <li>Use short paragraphs and headings, so visitors can scan to the part they care about.</li>
   <li>Keep it current: update team changes, new registrations and recent projects.</li>
 </ul>
-<p><a href="/blog/how-to-write-website-content/">How to write website content</a> covers the homepage and service pages in the same style.</p>
+<p>How to write website content covers the homepage and service pages in the same style.</p>
 
 <h2>About pages and SEO</h2>
-<p>An About page rarely ranks for much on its own, but it supports the rest of the site. It helps Google and visitors understand who is responsible for the business, which feeds into the trust signals described in <a href="/blog/eeat-explained-small-business/">E-E-A-T explained</a>. Keep your business name, address and phone identical to your Google Business Profile, add Organization or LocalBusiness structured data, link to your genuine profiles elsewhere, and link from the About page to your main services.</p>
+<p>An About page rarely ranks for much on its own, but it supports the rest of the site. It helps Google and visitors understand who is responsible for the business, which feeds into the trust signals described in E-E-A-T explained. Keep your business name, address and phone identical to your Google Business Profile, add Organization or LocalBusiness structured data, link to your genuine profiles elsewhere, and link from the About page to your main services.</p>
 
 <h2>Common mistakes</h2>
 <ul>
@@ -9859,6 +9889,18 @@ https://example.com/solar-quote/?utm_source=brochure&amp;utm_medium=qr&amp;utm_c
   <li>Outdated team members or registrations</li>
   <li>No contact details or call to action</li>
 </ul>
+
+<h2>A quick About page review before you publish</h2>
+<p>Once the draft is written, read it as a cautious first-time customer would. These checks catch most of the problems that make an About page feel vague or untrustworthy.</p>
+<ul>
+<li><strong>Can a stranger say what you do after the first two lines?</strong> If the opening is about passion or excellence rather than the service and the place, rewrite it.</li>
+<li><strong>Is every claim checkable?</strong> Years in business, registrations, memberships and qualifications should be stated exactly, with the issuing body named where it matters. Remove anything you cannot back up if asked.</li>
+<li><strong>Are there real people and real places?</strong> A photo of the team or the premises, a named contact role and a full address (or the areas you serve) do more than stock images of handshakes.</li>
+<li><strong>Does it match the rest of the site?</strong> The business name, address and phone number should be the same as on the contact page, the footer and your Google Business Profile.</li>
+<li><strong>Is there a next step?</strong> End with a clear link to the services, a contact form or a WhatsApp button, so a reader who is now convinced does not have to hunt.</li>
+<li><strong>Is it readable on a phone?</strong> Short paragraphs, sub-headings and photos that are not huge files matter, because most first visits in India happen on mobile.</li>
+</ul>
+<p>Review the page again once a year. Team members change, new work gets done and older credentials expire, and an out-of-date About page quietly undermines trust.</p>
 
 <h2>FAQs</h2>
 <h3>How long should an About page be?</h3>
@@ -9871,6 +9913,8 @@ https://example.com/solar-quote/?utm_source=brochure&amp;utm_medium=qr&amp;utm_c
 <p>First person, "I" or "we", reads more naturally for most small businesses. Third person suits formal firms and team bios. Whichever you choose, keep it consistent.</p>
 <h3>Do I need a separate team page?</h3>
 <p>If you have more than three or four people clients deal with, a separate team page keeps the About page short while still introducing everyone properly.</p>
+<h3>Should a small business About page include the owner's photo?</h3>
+<p>It helps when the owner is the person customers deal with, but it is not required. A business can build the same trust with photos of the team, the premises or the work, plus a named contact role and clear business details.</p>
 
 <p>Need an About page, and a whole website, that tells visitors clearly who you are and why to trust you? I can plan the structure and help shape your content through <a href="/wordpress-website-development/">WordPress website development</a>. For professional practices, see <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a>.</p>
 `,
@@ -12824,7 +12868,7 @@ wp cap list editor</code></pre>
     title: 'Uptime Monitoring Explained: How to Know Your Website Is Down Before Your Customers Do',
     description: 'Website uptime monitoring explained: UptimeRobot, Better Stack and Jetpack Monitor, check intervals, keyword checks, and SSL and domain expiry alerts.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration', 'wordpress-malware-removal'],
     body: `
@@ -12924,6 +12968,17 @@ wp cap list editor</code></pre>
 </ul>
 <p>That's why monitoring is one line of a wider routine; the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> covers the rest.</p>
 
+<h2>Uptime monitoring for Indian hosting and WooCommerce stores</h2>
+<p>Many small business sites in India sit on shared hosting, sometimes on servers outside the country. That setup brings a few specific patterns worth watching for, and your monitoring should be configured with them in mind.</p>
+<h3>Check from more than one location</h3>
+<p>A site can be reachable from a monitor in Europe while visitors on a particular Indian network struggle, or the other way round. If your tool lets you choose check locations, include one in or near India and at least one elsewhere, and only alert when two locations agree. This cuts false alarms caused by a single network blip.</p>
+<h3>Watch the pages that earn money</h3>
+<p>For a WooCommerce or Shopify store, the home page loading is not enough. Add a keyword check on a product page and on the cart page, and if possible a check on the payment callback or order confirmation URL. Payment gateway plugins for Razorpay, PayU or similar can fail on their own after an update while the rest of the store looks fine.</p>
+<h3>Track SSL and domain expiry alongside uptime</h3>
+<p>A good share of &quot;site down&quot; calls are really an expired SSL certificate or a domain that was not renewed. Most monitors can warn you two to four weeks before either expires. Turn both on, and send the alert to an email address that someone in the business actually reads, not only to the developer.</p>
+<h3>Keep a simple incident note</h3>
+<p>Each time an alert fires, write down the time, how long it lasted, what caused it and what fixed it. After a few months this log tells you whether the problem is the host, a plugin, traffic spikes or something else, and it gives you facts to take to your hosting company instead of guesses.</p>
+
 <h2>FAQs</h2>
 <h3>Is free uptime monitoring good enough?</h3>
 <p>For most small business sites, yes. A free plan checking every five minutes, with a keyword check and email or app alerts, covers the basics. Stores and sites running ads benefit from shorter intervals and SMS alerts on a paid plan.</p>
@@ -12935,6 +12990,8 @@ wp cap list editor</code></pre>
 <p>Hosts monitor their servers, not whether your particular site, domain and SSL certificate are working. A plugin error or an expired domain won't show up on their dashboard, so independent monitoring is still worth having.</p>
 <h3>Will uptime monitoring slow my website down?</h3>
 <p>No. A single request every few minutes is far less than normal visitor traffic. If your security plugin blocks the monitor, add its IP addresses to the allow list rather than switching the monitor off.</p>
+<h3>Is free uptime monitoring good enough for a small business website?</h3>
+<p>For a brochure site, a free plan with a five-minute check, email alerts and SSL expiry warnings is usually enough. A store taking payments benefits from shorter intervals, keyword checks on cart and checkout pages, and alerts to a phone, which often need a paid plan.</p>
 
 <p>If you'd rather have someone else watching, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include uptime monitoring, regular off-site backups, security scans and a monthly report, so problems are caught early and the site can be restored quickly if needed. For the renewals that cause many outages, see the <a href="/blog/domain-hosting-renewal-checklist/">domain and hosting renewal checklist</a>.</p>
 `,
@@ -16274,7 +16331,7 @@ document.querySelectorAll('.map-facade button').forEach(function (btn) {
     title: 'Websites for Driving Schools: Course Packages, Two-Wheeler and Car Training, Learner\'s Licence Help, Slot Booking, Instructors and Areas Served',
     description: 'What a driving school website needs: clear course packages, scooter and car pages, honest licence help, slot booking, instructors, cars and pickup areas.',
     date: '2026-09-27',
-    updated: '2026-10-21',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
     body: `
@@ -16352,6 +16409,18 @@ document.querySelectorAll('.map-facade button').forEach(function (btn) {
 
 <p>Driving schools in the tricity area can see the page on <a href="/wordpress-shopify-developer-chandigarh/">website development in Chandigarh</a> for how local pages and enquiry forms are set up remotely.</p>
 
+<h2>Questions a parent asks before booking for a teenager or a nervous adult</h2>
+<p>Many driving school enquiries are made by someone other than the learner: a parent booking for a son or daughter who has just turned eligible, or a spouse booking for someone who has been nervous about driving for years. Answering their questions on the site removes a phone call and builds confidence.</p>
+<h3>Safety and supervision</h3>
+<p>Explain that training cars have dual controls, how instructors are trained, and whether a female instructor can be requested. State plainly what happens if the learner feels unwell or anxious during a session.</p>
+<h3>Progress and feedback</h3>
+<p>Say how the learner and the person paying will know how training is going: a short note after each session, a checklist of skills covered, or a call before the test. This matters to parents and to companies booking training for staff.</p>
+<h3>Rescheduling and missed sessions</h3>
+<p>Publish your rules for cancelling or moving a slot, how much notice is needed, and what happens to unused sessions in a package. Clear rules prevent disputes later.</p>
+<h3>Refresher courses for licence holders</h3>
+<p>Plenty of adults hold a licence but have not driven for years, or have only driven in a small town and now need to manage city traffic or highways. A separate refresher page, with sessions on traffic, parking, highway driving or driving their own car, captures searches that a learner-only site misses.</p>
+<p>Turn each of these into a short section or FAQ on the relevant course page rather than one long policy page that nobody reads.</p>
+
 <h2>FAQs</h2>
 <h3>Can a driving school website promise that learners will get a licence?</h3>
 <p>No. You can explain the process, help with forms and slots, and prepare learners for the test, but the licence is issued by the authority after the learner passes the test. Avoid any wording that suggests otherwise.</p>
@@ -16363,8 +16432,10 @@ document.querySelectorAll('.map-facade button').forEach(function (btn) {
 <p>Yes. A payment gateway or a UPI payment link can take the full fee or a booking amount, with the first session confirmed once it is paid.</p>
 <h3>Do two-wheeler and car training need separate pages?</h3>
 <p>It helps. The learners, their worries and their searches are different, and a page written for each one is more useful to them and easier for Google to match.</p>
+<h3>Can I book driving lessons in my own car?</h3>
+<p>Many schools offer refresher sessions in the customer's own car for people who already hold a licence. If you offer this, say so on the refresher page and explain how it differs from training in a dual-control car.</p>
 
-<p>If enquiries for your driving school still arrive as missed calls, I can build a site with clear packages, slot booking and honest licence information. See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/landing-page-design/">landing page design</a> with a guide to <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a> if you plan to advertise, starting with a free review and a fixed quote.</p>
+<p>If enquiries for your driving school still arrive as missed calls, I can build a site with clear packages, slot booking and honest licence information. See <a href="/wordpress-website-development/">WordPress website development</a>, or landing page design with a guide to <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a> if you plan to advertise, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -18636,7 +18707,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
     title: 'Websites for Medical Equipment Suppliers and Distributors: Catalogues Hospitals Can Evaluate, Quotations and Tenders, Registrations and After-Sales Service',
     description: 'Plan a medical equipment supplier website: a catalogue hospitals can evaluate, spec sheets, RFQ and tender enquiries, registrations, AMC and dealer pages.',
     date: '2026-09-27',
-    updated: '2026-10-22',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-website-for-doctors', 'wordpress-seo-services'],
     body: `
@@ -18720,6 +18791,17 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
 <h2>Dealers, sub-dealers and territories</h2>
 <p>Many suppliers sell partly through a network. A dealer page should explain which territories are open, what you provide (training, demo units, marketing material, service backup), what you expect (a showroom, a trained engineer, minimum stock) and how to apply. If you list dealers for buyers to contact, keep the list current, with each dealer's district and phone number; a list with dead numbers sends hospitals straight to a competitor. Hospitals planning a new wing look for suppliers with local support, and <a href="/blog/website-for-hospitals/">websites for hospitals</a> shows what those buyers are building on their own side.</p>
 
+<h2>Reaching clinics, labs and smaller buyers as well as hospitals</h2>
+<p>Large hospitals buy through committees and tenders, but many suppliers also sell to nursing homes, diagnostic labs, dental and physiotherapy clinics, and home-care customers. These buyers search differently and need a slightly different path through the site.</p>
+<h3>Pages by buyer type</h3>
+<p>Short landing pages for each segment, such as equipment for diagnostic labs or for new clinics, let you group the relevant products, mention the usual questions (space, power supply, training, consumables) and link to the right catalogue categories. A clinic owner setting up a new practice often wants a checklist more than a single product page.</p>
+<h3>Consumables and repeat orders</h3>
+<p>Many suppliers earn steadily from consumables, spares and accessories. Make these easy to find from each equipment page and offer a simple repeat-order or quotation request for them, so customers do not switch to whichever supplier answers the phone first.</p>
+<h3>Rental and refurbished equipment</h3>
+<p>If you rent equipment or sell refurbished units, give them their own clearly labelled section. State what testing and servicing a refurbished unit goes through and what support comes with it, without making claims you cannot document.</p>
+<h3>City and region pages that are genuinely useful</h3>
+<p>If you have service engineers or stock in specific cities, say so on pages for those cities, with the areas covered and the typical service arrangement. Avoid creating near-identical pages for places you do not actually serve.</p>
+
 <h2>FAQs</h2>
 <h3>Should a medical equipment supplier show prices on the website?</h3>
 <p>For capital equipment, usually not, because configuration, accessories, installation and service terms all change the price. For consumables and small devices, a listed price or a quick price request on each item can save calls.</p>
@@ -18731,6 +18813,8 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
 <p>Yes. The form can take PDFs and spreadsheets, checked for file type and size, and the notification email can carry a secure download link, which keeps large files out of your inbox.</p>
 <h3>How should we show our medical device registrations?</h3>
 <p>List each one you hold with its number, issuing body, validity and the products it covers, and check the current rules before claiming anything for products you only distribute.</p>
+<h3>Should a medical equipment supplier show prices on its website?</h3>
+<p>Usually not for capital equipment, because price depends on configuration, accessories, installation and service terms. Consumables and smaller items can carry prices or price ranges, with a quotation request for bulk and institutional orders.</p>
 
 <p>If your current site is a page of product photos and a phone number, I can turn it into a catalogue a hospital can evaluate, with spec tables, downloads, RFQ forms and proper service pages. My page on <a href="/website-for-manufacturers/">B2B and manufacturer websites</a> sets out the process, starting with a free review and a fixed quote.</p>
 `,
@@ -24796,7 +24880,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
     title: 'How to Prepare Photos for Your Business Website: What to Shoot, Phone Tips, Sizes, Aspect Ratios, Formats, File Names, Alt Text and Consent',
     description: 'Prepare photos for your website: what to shoot, phone tips, sizes and aspect ratios, WebP vs JPEG, compression, file names, alt text and consent.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-speed-optimization', 'website-redesign'],
     body: `
@@ -24919,6 +25003,22 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 <h2>When to hire a photographer</h2>
 <p>For hotels, restaurants, interiors, <a href="/real-estate-website-design/">real estate</a>, fashion, jewellery and large product catalogues, visuals often decide the sale, so professional photos are usually worth it. A half-day shoot planned around your shot list can cover the whole site, your Google profile and social media.</p>
 
+<h2>Photos for online stores: product shots that sell</h2>
+<p>Product photos on a WooCommerce or Shopify store have extra jobs to do. They must look consistent across the whole catalogue, load fast on a product grid and answer questions that a customer would otherwise ask on WhatsApp.</p>
+<h3>Keep every product shot consistent</h3>
+<p>Use the same background, the same aspect ratio (square is the simplest choice for most stores) and roughly the same framing for every product. A mixed grid of different backgrounds and crops looks untidy and makes products harder to compare.</p>
+<h3>Shoot the views customers ask about</h3>
+<ul>
+<li>Front, back and side views, plus a close-up of the material, stitching or finish.</li>
+<li>A photo that shows scale: the product in a hand, on a table, or worn by a person.</li>
+<li>Labels, ingredient lists or size charts where they matter, shot flat and readable.</li>
+<li>Each colour or variant photographed separately, so the image changes when a customer picks a variant.</li>
+</ul>
+<h3>Show true colour</h3>
+<p>Wrong colour is a common reason for returns, especially for clothing, sarees and home decor. Shoot in daylight or under neutral lights, avoid heavy filters, and compare the photo on a phone screen with the real product before uploading.</p>
+<h3>Plan for marketplace and social use</h3>
+<p>If you also sell on marketplaces or run ads, check their image rules before the shoot. Keeping a plain-background master image for each product saves reshooting later.</p>
+
 <h2>FAQs</h2>
 <h3>What size should photos be for a website?</h3>
 <p>About 1600 to 2000 pixels wide for full-width banners, about 1200 pixels for images within the page, and smaller for cards and thumbnails. Product photos work well square, at about 1000 to 1200 pixels.</p>
@@ -24930,6 +25030,8 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 <p>Only as documents, because normal WhatsApp photos are compressed. A shared folder is easier for more than a few files.</p>
 <h3>Do I need permission to show customers or staff?</h3>
 <p>Yes. Get consent from anyone recognisable before publishing, and keep a record of it, especially for customers, patients and children.</p>
+<h3>What size should product photos be for Shopify or WooCommerce?</h3>
+<p>Square images of around 2000 pixels on each side work well on both platforms, allowing zoom while the platform creates smaller versions for grids. Compress them before upload and keep the same ratio across the catalogue.</p>
 
 <p>Planning a new website and want your photos turned into fast, sharp pages? <a href="/wordpress-website-development/">WordPress website development</a> includes resizing, compression and modern formats for every image, tested on real phones. If your current site is weighed down by heavy images, see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
@@ -31918,7 +32020,7 @@ Screenshot: attached</code></pre>
     title: 'Websites for Cloud Kitchens: Direct Ordering, WhatsApp Orders, Multiple Brands, Delivery Areas and FSSAI Details',
     description: 'Plan a cloud kitchen website: your own ordering versus delivery apps, a WhatsApp order flow, menus that rank, delivery areas, multiple brands and FSSAI details.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['website-for-restaurants', 'woocommerce-developer', 'landing-page-design'],
     body: `
@@ -32008,6 +32110,19 @@ Screenshot: attached</code></pre>
   <li>Direct-order offers that break the terms of a platform agreement</li>
 </ul>
 
+<h2>Running direct orders day to day</h2>
+<p>A direct ordering site only works if the kitchen can handle its orders as smoothly as aggregator orders. Plan the daily operation before launch, not after the first busy Friday.</p>
+<h3>One place to see every order</h3>
+<p>Kitchen staff should not have to watch email, WhatsApp and a dashboard at once. Choose a setup where direct orders appear on one screen or tablet with a sound alert, and where staff can mark an order as accepted, being prepared and dispatched.</p>
+<h3>Turning items and the store off quickly</h3>
+<p>When an item runs out or the kitchen is overloaded, someone must be able to hide that dish or pause ordering in a few taps from a phone. Ordering that stays open while the kitchen cannot cope does more harm than having no website.</p>
+<h3>Delivery handover</h3>
+<p>Decide whether you use your own riders, a hyperlocal delivery service or both, and how the delivery partner gets the address and the customer's number. Test the full flow, from order to doorstep, with real addresses in each delivery zone.</p>
+<h3>Payments and refunds</h3>
+<p>Accept UPI and cards through a payment gateway, and decide in advance whether you allow cash on delivery. Write down how refunds work for a cancelled or wrong order, who approves them and how quickly they are processed, and put the customer-facing version on the site.</p>
+<h3>Customer data, handled with care</h3>
+<p>Direct orders give you customer phone numbers and addresses. Use them only for orders and for offers the customer agreed to receive, keep them secure, and publish a short privacy policy explaining this.</p>
+
 <h2>FAQs</h2>
 <h3>Should a cloud kitchen stay on delivery apps after launching its own website?</h3>
 <p>Usually yes. The apps bring new customers who have never heard of you; your website and WhatsApp suit repeat customers, bulk orders and people searching your brand.</p>
@@ -32019,6 +32134,8 @@ Screenshot: attached</code></pre>
 <p>If you take orders online, it is expected and it reassures customers. Put it in the footer and on ordering pages, and confirm the current requirements for your licence type.</p>
 <h3>Can the website stop orders when the kitchen is closed?</h3>
 <p>Yes. Online ordering can follow your kitchen hours, pause on holidays, and be switched off for a busy evening from the dashboard.</p>
+<h3>Can a cloud kitchen take orders through WhatsApp from its website?</h3>
+<p>Yes. A simple menu page can send the chosen items to WhatsApp as a pre-filled message. It is quick to set up, but for higher volumes a proper cart with online payment is easier for the kitchen to manage.</p>
 
 <p>Planning a cloud kitchen website with brand menus that can be found on Google and direct ordering that suits your team? See <a href="/website-for-restaurants/">websites for restaurants and food brands</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> if online ordering is the main job, starting with a free review and a fixed quote.</p>
 `,
