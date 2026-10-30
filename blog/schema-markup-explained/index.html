@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schema Markup Explained: Types, JSON-LD and WordPress Setup</title>
-  <meta name="description" content="Schema markup explained for small businesses: what structured data does, JSON-LD vs microdata, which types to use, a JSON-LD example and WordPress setup.">
+  <title>Schema Markup Explained: How to Create Article Schema</title>
+  <meta name="description" content="Schema markup explained, including how to create Article schema markup in JSON-LD, which types small businesses need and how to set it up in WordPress.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/schema-markup-explained/">
-  <meta property="og:title" content="Schema Markup Explained: Types, JSON-LD and WordPress Setup">
-  <meta property="og:description" content="Schema markup explained for small businesses: what structured data does, JSON-LD vs microdata, which types to use, a JSON-LD example and WordPress setup.">
+  <meta property="og:title" content="Schema Markup Explained: How to Create Article Schema">
+  <meta property="og:description" content="Schema markup explained, including how to create Article schema markup in JSON-LD, which types small businesses need and how to set it up in WordPress.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-schema-markup-explained.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/schema-markup-explained/#article",
       "headline": "Schema Markup Explained: What Structured Data Is, Which Types Small Businesses Need and How to Add It in WordPress",
-      "description": "Schema markup explained for small businesses: what structured data does, JSON-LD vs microdata, which types to use, a JSON-LD example and WordPress setup.",
+      "description": "Schema markup explained, including how to create Article schema markup in JSON-LD, which types small businesses need and how to set it up in WordPress.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-15",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/schema-markup-explained/",
       "image": "https://samverse.space/assets/og/blog-schema-markup-explained.png",
       "articleSection": "SEO",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/seo-growth/">SEO &amp; growth</a></nav>
           <a class="post-cat" href="/blog/topic/seo-growth/">SEO</a>
           <h1>Schema Markup Explained: What Structured Data Is, Which Types Small Businesses Need and How to Add It in WordPress</h1>
-          <p class="post-dek">Schema markup explained for small businesses: what structured data does, JSON-LD vs microdata, which types to use, a JSON-LD example and WordPress setup.</p>
+          <p class="post-dek">Schema markup explained, including how to create Article schema markup in JSON-LD, which types small businesses need and how to set it up in WordPress.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-15">15 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Schema%20Markup%20Explained%3A%20What%20Structured%20Data%20Is%2C%20Which%20Types%20Small%20Businesses%20Need%20and%20How%20to%20Add%20It%20in%20WordPress%20https%3A%2F%2Fsamverse.space%2Fblog%2Fschema-markup-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -158,10 +158,10 @@
               <li><a href="#json-ld-microdata-and-rdfa">JSON-LD, microdata and RDFa</a></li>
               <li><a href="#the-schema-types-small-businesses-actually-need">The schema types small businesses actually need</a></li>
               <li><a href="#a-json-ld-example-for-a-local-business">A JSON-LD example for a local business</a></li>
+              <li><a href="#how-to-create-article-schema-markup">How to create Article schema markup</a></li>
               <li><a href="#how-wordpress-seo-plugins-output-schema">How WordPress SEO plugins output schema</a></li>
               <li><a href="#rules-that-keep-schema-on-the-right-side-of-google">Rules that keep schema on the right side of Google</a></li>
               <li><a href="#faq-schema-still-worth-adding">FAQ schema: still worth adding?</a></li>
-              <li><a href="#how-this-site-uses-structured-data">How this site uses structured data</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -173,7 +173,7 @@
               <li>Let one SEO plugin generate the core schema, add custom JSON-LD only for gaps, mark up only what is visible on the page, and test every template after changes.</li>
             </ul>
           </div>
-<p>Schema markup is structured data added to a page's code, usually as a block of JSON-LD, that tells search engines exactly what the page describes: a business with an address and opening hours, a product with a price, an article with an author, a set of breadcrumbs. Visitors don't see it. It helps Google understand the page and can make it eligible for rich results such as product prices or breadcrumb trails, but it doesn't guarantee those displays and isn't a ranking boost on its own.</p>
+<p>To create Article schema markup, add a JSON-LD script to the post with the headline, author, publish and update dates, image and publisher, or let an SEO plugin such as Yoast or Rank Math generate it, then test the page in Google's Rich Results Test. More broadly, schema markup is structured data added to a page's code, usually as a block of JSON-LD, that tells search engines exactly what the page describes: a business with an address and opening hours, a product with a price, an article with an author, a set of breadcrumbs. Visitors don't see it. It helps Google understand the page and can make it eligible for rich results such as product prices or breadcrumb trails, but it doesn't guarantee those displays and isn't a ranking boost on its own.</p>
 <p>Structured data for your business, services, products and articles is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, checked with Google's testing tools afterwards. To be straight about it: schema helps Google understand a page, but it does not guarantee rich results, and some features, FAQ rich results in particular, have been heavily restricted. This guide explains what is still worth adding and how.</p>
 <p>Once your markup is in place, <a href="/blog/test-structured-data-rich-results/">how to test structured data and rich results</a> shows how to check it and fix errors.</p>
 
@@ -191,7 +191,6 @@
     <tr><td>Describe content clearly for other tools that read structured data</td><td>Replace clear writing on the page itself</td></tr>
   </tbody>
 </table>
-<p>Google has said, at the time of writing, that there is no special markup needed to appear in its AI features; the usual rules apply, including that structured data must match the visible content.</p>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress seo?</strong>
@@ -272,6 +271,40 @@
   <li><strong>sameAs</strong> lists your official profiles elsewhere, so search engines can connect them to the business.</li>
 </ul>
 
+<h2 id="how-to-create-article-schema-markup">How to create Article schema markup</h2>
+<p>Article markup (or its subtypes BlogPosting and NewsArticle) tells Google which headline, image, author and dates belong to a post. Google lists no required properties for it, but the recommended ones below are what make it useful.</p>
+<table>
+  <thead><tr><th>Property</th><th>What to put in it</th><th>Common mistake</th></tr></thead>
+  <tbody>
+    <tr><td>headline</td><td>The post title as shown on the page</td><td>A different, keyword-stuffed title</td></tr>
+    <tr><td>image</td><td>One or more large, crawlable images from the post</td><td>The site logo instead of the article image</td></tr>
+    <tr><td>author</td><td>A Person or Organization with a name and a url to an author or about page</td><td>Author name typed into the headline field, or several names in one</td></tr>
+    <tr><td>datePublished</td><td>The first publish date, in ISO 8601 format with a time zone</td><td>A date that does not match the visible date</td></tr>
+    <tr><td>dateModified</td><td>The date of the last meaningful update</td><td>Changing it on every save without real edits</td></tr>
+    <tr><td>publisher</td><td>Your Organization, ideally referenced by its @id</td><td>A second, slightly different organisation name</td></tr>
+  </tbody>
+</table>
+<h3>Steps to create it</h3>
+<ol>
+  <li><strong>Use your SEO plugin first.</strong> Yoast and Rank Math output Article or BlogPosting for posts once the site representation (organisation or person, logo) is set; choose the article type in the post's Schema tab.</li>
+  <li><strong>Write it by hand only if you have no plugin,</strong> or need a property it lacks, and add the JSON-LD through a small custom plugin or child theme.</li>
+  <li><strong>Match the page.</strong> The headline, author and dates in the markup must be the ones readers see.</li>
+  <li><strong>Test it</strong> in the Rich Results Test and the Schema Markup Validator, then check Search Console's enhancement reports after Google recrawls.</li>
+</ol>
+<p>A minimal hand-written example looks like this:</p>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Choose a Dental Clinic in Pune",
+  "image": ["https://example.com/images/clinic-guide.jpg"],
+  "datePublished": "2026-10-01T09:00:00+05:30",
+  "dateModified": "2026-10-20T11:30:00+05:30",
+  "author": { "@type": "Organization", "name": "Example Dental Clinic", "url": "https://example.com/about/" },
+  "publisher": { "@id": "https://example.com/#business" }
+}
+&lt;/script&gt;</code></pre>
+
 <h2 id="how-wordpress-seo-plugins-output-schema">How WordPress SEO plugins output schema</h2>
 <p>On WordPress you rarely write JSON-LD by hand. The main SEO plugins build a connected set of schema for every page from their settings:</p>
 <table>
@@ -298,12 +331,11 @@
 <h2 id="faq-schema-still-worth-adding">FAQ schema: still worth adding?</h2>
 <p>In 2023 Google limited FAQ rich results to well-known, authoritative government and health websites, so for almost every business site FAQ markup no longer produces expandable questions in search results. It can still describe your questions and answers clearly, as long as they are visible on the page, but don't expect a visible change. <a href="/blog/faq-page-seo/">FAQs for SEO</a> covers how to write FAQ sections that help readers and rankings regardless of the markup.</p>
 
-<h2 id="how-this-site-uses-structured-data">How this site uses structured data</h2>
-<p>This website, samverse.space, is custom-coded and hosted on Hostinger rather than built on WordPress, and its build script writes structured data for each type of page: Service, FAQPage and BreadcrumbList on the service and industry pages, BlogPosting on articles, CreativeWork on case studies, WebApplication on the cost calculator and DefinedTermSet on the glossary. The <a href="/work/samverse/">Samverse case study</a> explains how the pages are generated. On a WordPress site, an SEO plugin plus a little custom JSON-LD achieves the same.</p>
-
 <p>Structured data is also part of being understood by AI tools; see <a href="/blog/ai-search-optimization-website/">AI search and your website</a>.</p>
 
 <h2 id="faqs">FAQs</h2>
+<h3>How to create article schema markup?</h3>
+<p>Let your SEO plugin output Article or BlogPosting for posts, or add a JSON-LD block with headline, image, author, datePublished, dateModified and publisher that matches the visible page. Then test it in Google's Rich Results Test.</p>
 <h3>Does schema markup improve rankings?</h3>
 <p>Not directly. It helps Google understand your pages and can make them eligible for rich results, which may improve how your listing looks. Rankings still depend on content, links and how well the page answers the search.</p>
 <h3>Do I need to add schema if I use Yoast or Rank Math?</h3>
@@ -315,7 +347,7 @@
 <h3>Should I use JSON-LD or microdata?</h3>
 <p>JSON-LD. Google recommends it, it is easier to maintain because it sits apart from the visible HTML, and it is what WordPress SEO plugins output.</p>
 
-<p>Want your structured data set up correctly, matching your Business Profile and free of plugin conflicts? Schema is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
+<p>Want your structured data set up correctly, matching your Business Profile and free of plugin conflicts? Schema is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for custom JSON-LD the plugins can't produce.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -356,10 +388,10 @@
               <li><a href="#json-ld-microdata-and-rdfa">JSON-LD, microdata and RDFa</a></li>
               <li><a href="#the-schema-types-small-businesses-actually-need">The schema types small businesses actually need</a></li>
               <li><a href="#a-json-ld-example-for-a-local-business">A JSON-LD example for a local business</a></li>
+              <li><a href="#how-to-create-article-schema-markup">How to create Article schema markup</a></li>
               <li><a href="#how-wordpress-seo-plugins-output-schema">How WordPress SEO plugins output schema</a></li>
               <li><a href="#rules-that-keep-schema-on-the-right-side-of-google">Rules that keep schema on the right side of Google</a></li>
               <li><a href="#faq-schema-still-worth-adding">FAQ schema: still worth adding?</a></li>
-              <li><a href="#how-this-site-uses-structured-data">How this site uses structured data</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

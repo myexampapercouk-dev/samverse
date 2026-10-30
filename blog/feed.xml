@@ -151,7 +151,7 @@
     <link>https://samverse.space/blog/setup-google-analytics-search-console/</link>
     <guid>https://samverse.space/blog/setup-google-analytics-search-console/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Set up Google Analytics 4 and Search Console step by step: verify your domain, add GA4 with Site Kit, link the two in Product links and track enquiries.</description>
+    <description>No Google Analytics developer console needed: set up GA4 and Search Console step by step, link them, check the tag in DevTools and track enquiries.</description>
   </item>
   <item>
     <title>How to Move From Wix to WordPress Step by Step: Content, Blog Posts, Images, URL Redirects, Domain and Cutover</title>
@@ -340,7 +340,7 @@
     <link>https://samverse.space/blog/schema-markup-explained/</link>
     <guid>https://samverse.space/blog/schema-markup-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Schema markup explained for small businesses: what structured data does, JSON-LD vs microdata, which types to use, a JSON-LD example and WordPress setup.</description>
+    <description>Schema markup explained, including how to create Article schema markup in JSON-LD, which types small businesses need and how to set it up in WordPress.</description>
   </item>
   <item>
     <title>Multilingual WordPress Websites in Hindi, English and Regional Languages: Plugins, URLs and SEO</title>
@@ -438,7 +438,7 @@
     <link>https://samverse.space/blog/website-for-dentists/</link>
     <guid>https://samverse.space/blog/website-for-dentists/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What a dental clinic website needs: clear treatment pages for implants, aligners and RCT, precise credentials, booking, consented photos and local SEO.</description>
+    <description>Dental clinic website types explained, from single-dentist to multi-branch, plus treatment pages, credentials, booking, consented photos and local SEO.</description>
   </item>
   <item>
     <title>Portfolio Websites for Freelancers, Photographers and Creatives: What to Include and How to Win Clients</title>
@@ -494,7 +494,7 @@
     <link>https://samverse.space/blog/technical-seo-audit-wordpress/</link>
     <guid>https://samverse.space/blog/technical-seo-audit-wordpress/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>A practical WordPress technical SEO audit checklist: indexing, sitemaps, robots.txt, canonicals, redirects, Core Web Vitals, schema and WooCommerce checks.</description>
+    <description>A technical SEO audit checklist for WordPress: indexing, sitemaps, robots.txt, canonicals, redirects, Core Web Vitals, schema, WooCommerce and priorities.</description>
   </item>
   <item>
     <title>How to Choose a Domain Name for Your Business: Brand vs Keyword, .in vs .com, Trademark Checks, Buying, Renewing and Mistakes to Avoid</title>
@@ -2174,7 +2174,7 @@
     <link>https://samverse.space/blog/website-for-cctv-security-installers/</link>
     <guid>https://samverse.space/blog/website-for-cctv-security-installers/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What a website for CCTV installers in India needs: service and solution pages, site survey requests, AMC plans, project photos and local SEO for your city.</description>
+    <description>Local SEO for security system installers: Business Profile, locality pages, reviews and a site that turns CCTV and alarm searches into survey calls.</description>
   </item>
   <item>
     <title>Websites for Computer, Laptop and IT Hardware Dealers: Retail and B2B Paths, Large Catalogues, Price on Request, Brand Authorisation, AMC and GST Quotes</title>
@@ -2188,7 +2188,7 @@
     <link>https://samverse.space/blog/website-for-signage-companies/</link>
     <guid>https://samverse.space/blog/website-for-signage-companies/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What a website for signage companies in India needs: a project portfolio, sign type pages, detailed quote forms, B2B rollout pages and local SEO by city.</description>
+    <description>What a signage company website needs: a filterable portfolio, one page per sign type, quote forms with photo upload, B2B rollout pages and local SEO.</description>
   </item>
   <item>
     <title>Websites for Housing Societies and RWAs: Notices, Dues, Complaints and Member Areas</title>
@@ -2258,7 +2258,7 @@
     <link>https://samverse.space/blog/website-for-beauty-cosmetics-brands/</link>
     <guid>https://samverse.space/blog/website-for-beauty-cosmetics-brands/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Building a website for a cosmetics brand in India: Shopify or WooCommerce, ingredient pages, shade finders, honest claims, COD, GST and repeat orders.</description>
+    <description>How to build a beauty ecommerce website in India: Shopify or WooCommerce, ingredient pages, shade finders, honest claims, COD, GST and repeat orders.</description>
   </item>
   <item>
     <title>Websites for Makeup Artists: More Bridal and Party Bookings</title>
@@ -3042,7 +3042,7 @@
     <link>https://samverse.space/blog/website-for-civil-engineering-consultants/</link>
     <guid>https://samverse.space/blog/website-for-civil-engineering-consultants/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>What a website for civil engineering consultants in India needs: service pages, project pages, credentials, profile downloads and quick enquiries.</description>
+    <description>What civil and structural engineering consultants need on a website: service pages, project case pages, honest credentials, downloads and enquiries.</description>
   </item>
   <item>
     <title>Websites for Lift and Elevator Companies: Sales, AMC and Breakdown Support</title>
