@@ -25,7 +25,7 @@
     <link>https://samverse.space/blog/why-is-my-wordpress-site-slow/</link>
     <guid>https://samverse.space/blog/why-is-my-wordpress-site-slow/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress site slow? Diagnose it in 5 minutes with free tools, then fix the 12 most common causes, plus a slow admin, slow mobile pages and slow WooCommerce.</description>
+    <description>Slow WordPress site? Find the cause fast with PageSpeed Insights and Query Monitor, then fix hosting, caching, images, plugins and scripts in order.</description>
   </item>
   <item>
     <title>How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First</title>
@@ -1866,7 +1866,7 @@
     <link>https://samverse.space/blog/fix-wordpress-redirect-hack/</link>
     <guid>https://samverse.space/blog/fix-wordpress-redirect-hack/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress site redirecting to spam? Why redirect malware hides, where it lives (.htaccess, wp-config, theme files, database) and how to remove it for good.</description>
+    <description>WordPress site redirecting to spam? Catch the hidden redirect, find the malware in .htaccess, wp-config, themes or the database and remove it for good.</description>
   </item>
   <item>
     <title>Japanese Keyword Hack and SEO Spam on WordPress: How to Find the Cloaked Pages, Clean Your Site and Clear Google Results</title>
@@ -2223,7 +2223,7 @@
     <link>https://samverse.space/blog/woocommerce-speed-optimization/</link>
     <guid>https://samverse.space/blog/woocommerce-speed-optimization/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to speed up a WooCommerce store: hosting and object caching, caching around cart and checkout, cart fragments, images, filters, search and database tidy-up.</description>
+    <description>How to speed up WooCommerce: test the right pages, add object caching, cache around the checkout, and fix cart fragments, images, filters and database.</description>
   </item>
   <item>
     <title>WooCommerce Security Checklist: Payments, Checkout, Card-Testing Bots, Staff Accounts and Customer Data</title>

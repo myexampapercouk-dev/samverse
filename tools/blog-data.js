@@ -259,40 +259,38 @@ module.exports = [
   },
   {
     slug: 'why-is-my-wordpress-site-slow',
-    seoTitle: 'WordPress Site Slow? 12 Causes and How to Fix Them',
+    seoTitle: 'Slow WordPress Site? Why It Happens and How to Fix It',
     title: 'Why Is My WordPress Site Slow? 12 Common Causes and How to Fix Them',
-    description: 'WordPress site slow? Diagnose it in 5 minutes with free tools, then fix the 12 most common causes, plus a slow admin, slow mobile pages and slow WooCommerce.',
+    description: 'Slow WordPress site? Find the cause fast with PageSpeed Insights and Query Monitor, then fix hosting, caching, images, plugins and scripts in order.',
     date: '2026-09-27',
-    updated: '2026-10-10',
+    updated: '2026-10-30',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'elementor-developer'],
     body: `
-<p>A slow WordPress site loses visitors before they've read a word, especially on mobile data, and speed is part of Google's page experience signals. The good news: WordPress itself isn't slow. Most slow sites share the same handful of problems, and once you know which one you have, the fix is usually straightforward.</p>
-<p>Start with the 5-minute diagnosis below, then work through the 12 common causes in order of impact. There are also specific fixes for slow mobile pages, a slow admin, a site that slowed down after an update and a slow WooCommerce store.</p>
-
+<p>A slow WordPress site is almost always caused by slow hosting, missing or broken page caching, oversized images, a heavy theme or plugins, or too many third-party scripts, not by WordPress itself. To fix it, measure with PageSpeed Insights, find the real cause with your browser's Network tab and the Query Monitor plugin, then fix the biggest problem first and re-test after every change.</p>
+<p>Below: a 5-minute diagnosis, a table that maps symptoms to causes, the 12 common causes with fixes, and a checklist.</p>
 <p>Prefer to have it fixed for you? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> finds the real cause and fixes it safely, with a before-and-after report.</p>
 
-<h2>The short answer</h2>
-<p>A slow WordPress website is almost always down to one or more of these:</p>
+<h2>Why is WordPress so slow? The short answer</h2>
+<p>A clean WordPress install on decent hosting is quick. Sites slow down because of what gets added on top, usually one or more of these:</p>
 <ul>
-  <li><strong>Hosting:</strong> the server is slow to build and send each page</li>
-  <li><strong>Plugins:</strong> too many, or one badly built plugin doing heavy work</li>
-  <li><strong>Theme or page builder:</strong> bloated code and complex layouts</li>
-  <li><strong>Images:</strong> large, uncompressed photos and sliders</li>
-  <li><strong>Third-party scripts:</strong> chat widgets, tracking pixels and embeds</li>
-  <li><strong>The database:</strong> years of leftover data slowing every query</li>
+  <li><strong>Hosting:</strong> the server is slow to build and send each page, or is far from your visitors</li>
+  <li><strong>No working page cache:</strong> WordPress rebuilds every page from scratch for every visitor</li>
+  <li><strong>Images:</strong> large, uncompressed photos, sliders and background videos</li>
+  <li><strong>Theme, page builder and plugins:</strong> bloated code, or one badly built plugin doing heavy work on every page</li>
+  <li><strong>Third-party scripts:</strong> chat widgets, tracking pixels, maps and embeds</li>
+  <li><strong>The database:</strong> years of revisions, transients and leftover plugin data</li>
 </ul>
-<p>A missing or broken page cache makes all of these worse. Don't guess which applies to you: spend five minutes finding out.</p>
 
-<h2>Quick 5-minute diagnosis: what's slowing your site?</h2>
-<p>Test in a private or incognito window while logged out, because logged-in users usually bypass the cache.</p>
+<h2>Slow WordPress site: a 5-minute diagnosis</h2>
+<p>Test in a private or incognito window while logged out, because logged-in users usually bypass the cache and see a slower site than visitors do.</p>
 
-<h3>Step 1: Run Google PageSpeed Insights (1 minute)</h3>
-<p>Test your homepage and one key inner page at pagespeed.web.dev, then check:</p>
+<h3>Step 1: Run PageSpeed Insights (1 minute)</h3>
+<p>Test your homepage and one key inner page at pagespeed.web.dev, on the mobile tab first. Check:</p>
 <ul>
   <li><strong>Core Web Vitals:</strong> LCP (how quickly the main content appears), INP (how quickly the page responds to taps) and CLS (whether the layout jumps). Google's "good" thresholds are an LCP within 2.5 seconds, an INP within 200 milliseconds and a CLS of 0.1 or less.</li>
-  <li><strong>Real users vs the lab test:</strong> the top section shows real Chrome users' experience if your site has enough traffic; the lab test below it simulates a mid-range phone.</li>
-  <li><strong>Diagnostics:</strong> warnings about server response, image sizes, render-blocking requests, unused JavaScript and third-party code each point at a cause below.</li>
+  <li><strong>Real users vs lab test:</strong> the top section shows real Chrome users' experience if your site has enough traffic; the lab test below simulates a mid-range phone on a slower connection.</li>
+  <li><strong>Diagnostics:</strong> warnings about server response time, image sizes, render-blocking requests, unused JavaScript and third-party code each point to a cause below.</li>
 </ul>
 <p>See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a> and <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
 
@@ -307,7 +305,7 @@ module.exports = [
 <p>In the same tab, sort by <strong>Size</strong>. Images measured in megabytes point to an image problem. Many requests to chat tools, pixels, video players or maps point to third-party scripts. Dozens of files from <code>/wp-content/plugins/</code> and your theme suggest plugin or theme bloat.</p>
 
 <h3>Step 4: Check Query Monitor (2 minutes)</h3>
-<p>Install the free Query Monitor plugin, load a slow page while logged in and open its menu in the admin bar. Look at the page generation time, <strong>queries by component</strong> (which plugin or theme does the most database work), slow queries and <strong>HTTP API calls</strong> to outside services. Use it on staging if you can, and deactivate it afterwards.</p>
+<p>Install the free Query Monitor plugin, load a slow page while logged in and open its menu in the admin bar. Look at the page generation time, <strong>Queries by Component</strong> (which plugin or theme does the most database work), slow queries and <strong>HTTP API calls</strong> to outside services. Use it on staging if you can, and deactivate it afterwards.</p>
 
 <h3>What your results point to</h3>
 <table>
@@ -318,127 +316,103 @@ module.exports = [
     <tr><td>Dozens of plugin and theme files</td><td>Plugin, theme or page builder bloat</td><td>Causes 4, 5</td></tr>
     <tr><td>Many requests to other domains</td><td>Third-party scripts</td><td>Cause 6</td></tr>
     <tr><td>Slow queries, or one plugin doing most of the work</td><td>A heavy plugin or bloated database</td><td>Causes 5, 9</td></tr>
-    <tr><td>Slow only for distant visitors</td><td>Server location, no CDN</td><td>Cause 11</td></tr>
+    <tr><td>Slow only for visitors far from the server</td><td>Server location, no CDN</td><td>Cause 11</td></tr>
     <tr><td>Slow at certain times, or at random</td><td>Overloaded server, background jobs or bots</td><td>Causes 1, 12</td></tr>
+    <tr><td>Fast on desktop, slow on phones</td><td>Heavy images and JavaScript at the top of the page</td><td>Causes 3, 6, 7</td></tr>
   </tbody>
 </table>
 
-<h2>12 common causes of a slow WordPress site, and how to fix them</h2>
+<h2>WordPress site slow? How to fix it, cause by cause</h2>
 <p>Listed roughly in order of impact for a typical business site. Start with whatever your diagnosis pointed to, take a full backup before changing caching, optimisation or database settings, and re-test after each change.</p>
 
 <h3>1. Slow or overloaded hosting</h3>
-<p>Cheap shared hosting puts many sites on one server, and no plugin can fully make up for a server that's underpowered or far from your visitors.</p>
-<p><strong>Fix:</strong> if server response stays slow with caching on, ask your host about your plan's resources, or move to better hosting near your audience. See <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time (TTFB)</a> and <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a>. On Hostinger? See <a href="/blog/hostinger-website-slow-fix/">Hostinger-specific speed fixes</a>. Moving hosts? See <a href="/blog/migrate-website-to-hostinger/">migrating to Hostinger</a>.</p>
+<p>Cheap shared hosting puts many sites on one server, and no plugin can fully make up for a server that is underpowered or far from your visitors. If most of your customers are in India, a server in India or nearby usually responds faster than one in the US or Europe.</p>
+<p><strong>Fix:</strong> if server response stays slow with caching on, ask your host about your plan's resources and PHP workers, or move to better hosting near your audience. See <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time (TTFB)</a>. On Hostinger? See <a href="/blog/hostinger-website-slow-fix/">Hostinger-specific speed fixes</a>.</p>
 
 <h3>2. No page caching, or caching that isn't working</h3>
-<p>Without a page cache, WordPress builds every page from scratch for every visitor.</p>
-<p><strong>Fix:</strong> use your host's server caching or one caching plugin, such as LiteSpeed Cache on LiteSpeed servers or WP Rocket elsewhere, never two at once. Many setups show a cache "HIT" in the response headers in DevTools, so you can check it's working. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
+<p>Without a page cache, WordPress runs PHP and database queries to build every page for every visitor.</p>
+<p><strong>Fix:</strong> use your host's server caching or one caching plugin, such as LiteSpeed Cache on LiteSpeed servers or WP Rocket elsewhere, never two at once. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
 
 <h3>3. Huge, unoptimised images</h3>
-<p>A photo straight from a phone can be several megabytes, and the main image is often what LCP measures.</p>
-<p><strong>Fix:</strong> resize images to their display size, compress them and serve WebP. Lazy-load images lower down the page, but never the main hero image. See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> and <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</p>
+<p>A photo straight from a phone can be several megabytes.</p>
+<p><strong>Fix:</strong> resize images to their display size, compress them and serve WebP. Lazy-load images lower down the page, but never the main hero image. See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
 
 <h3>4. A heavy theme or page builder setup</h3>
 <p>Multipurpose themes load code for features you never use, and page builder layouts with many nested sections, widgets and animations get heavy quickly.</p>
-<p><strong>Fix:</strong> use a lightweight theme (such as Hello Elementor, Astra or GeneratePress), turn on the builder's performance features and simplify your heaviest pages. Built with Elementor? These <a href="/blog/why-elementor-sites-slow/">Elementor-specific fixes</a> help too.</p>
+<p><strong>Fix:</strong> use a lightweight theme, turn on the builder's performance features and simplify your heaviest pages. Built with Elementor? See <a href="/blog/why-elementor-sites-slow/">Elementor-specific fixes</a>.</p>
 
 <h3>5. Too many plugins, or one badly built plugin</h3>
-<p>What plugins do matters more than how many you have. One plugin running heavy queries or loading its files on every page can slow down the whole site.</p>
-<p><strong>Fix:</strong> find the worst offenders in Query Monitor, delete unused plugins, replace heavy ones and stop plugins loading files where they aren't needed. See <a href="/blog/reduce-unused-css-javascript-wordpress/">reducing unused CSS and JavaScript</a>.</p>
+<p>What plugins do matters more than how many you have. One plugin running heavy queries or loading its files on every page can slow the whole site.</p>
+<p><strong>Fix:</strong> find the worst offenders in Query Monitor, delete unused plugins, replace heavy ones and stop plugins loading files where they aren't needed.</p>
 
 <h3>6. Too many third-party scripts</h3>
 <p>Chat widgets, tracking pixels, YouTube embeds, maps and social feeds load code from servers you don't control.</p>
-<p><strong>Fix:</strong> remove what you don't use, delay the rest until after the main content and swap embeds for click-to-load previews. See <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a>.</p>
+<p><strong>Fix:</strong> remove what you don't use, delay the rest until the visitor interacts and swap embeds for click-to-load previews. See <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a>.</p>
 
 <h3>7. Render-blocking CSS and JavaScript</h3>
 <p>Files in the page head must load before the browser can show anything.</p>
-<p><strong>Fix:</strong> minify files, defer non-essential JavaScript and remove unused CSS, then test menus, sliders and forms, as aggressive settings can break them. See <a href="/blog/eliminate-render-blocking-resources/">eliminating render-blocking resources</a>.</p>
+<p><strong>Fix:</strong> minify files, defer non-essential JavaScript and remove unused CSS, then test menus, sliders and forms, because aggressive settings can break them.</p>
 
 <h3>8. Too many web fonts</h3>
-<p>Every font family and weight is another file to download.</p>
-<p><strong>Fix:</strong> use one or two families and only the weights you need, host them locally and preload the main one. See <a href="/blog/web-fonts-performance/">web fonts and performance</a>.</p>
+<p>Every font family and weight is another file to download. Use one or two families and only the weights you need, host them locally and preload the main one.</p>
 
 <h3>9. A bloated database</h3>
 <p>Revisions, spam, expired transients and leftovers from old plugins slow down queries. Large "autoloaded" options are a common hidden cause, as they load on every request, including in the admin.</p>
 <p><strong>Fix:</strong> take a backup, then clean up revisions, transients, spam and orphaned tables, and review autoloaded data. See <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a>.</p>
 
 <h3>10. Outdated PHP or WordPress</h3>
-<p>Newer PHP versions are generally faster, and updates often include performance improvements.</p>
-<p><strong>Fix:</strong> keep everything updated and run a current, supported PHP version, after testing on staging. See <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a>.</p>
+<p>Newer PHP versions are generally faster, and WordPress updates often include performance improvements. Run a current, supported PHP version after testing on staging.</p>
 
 <h3>11. Visitors far from your server, with no CDN</h3>
-<p>If most visitors are in a different country from your server, every request travels further.</p>
-<p><strong>Fix:</strong> host close to most of your visitors, and use a <a href="/blog/what-is-a-cdn/">CDN</a> to serve images, CSS and JavaScript from nearer locations.</p>
+<p>If most visitors are in a different country from your server, every request travels further. Host close to your main audience and use a CDN to serve images, CSS and JavaScript from nearer locations.</p>
 
 <h3>12. Background jobs and bot traffic</h3>
-<p>Backups, security scans, scheduled tasks and imports compete with visitors for server resources, and so do bots hammering the login page or site search.</p>
-<p><strong>Fix:</strong> schedule heavy jobs for quiet hours, run scheduled tasks from a real server cron job on busy sites and use a firewall or bot protection. See <a href="/blog/wordpress-cron-explained/">WordPress cron explained</a>.</p>
+<p>Backups, security scans, scheduled tasks and imports compete with visitors for server resources, as do bots. Schedule heavy jobs for quiet hours, use a real server cron on busy sites and add a firewall or bot protection.</p>
 
-<h2>WordPress site slow only on mobile?</h2>
-<p>Lower mobile scores are normal, as PageSpeed Insights simulates a mid-range phone on a slower connection. If real visitors find the site slow on their phones, check for:</p>
-<ul>
-  <li>Large hero images, sliders and background videos at the top of the page</li>
-  <li>Phones being sent full desktop-size images</li>
-  <li>Heavy JavaScript and animations, which make taps feel sluggish on less powerful phones</li>
-  <li>Sections hidden on mobile, which still add code to the page and may still download their images</li>
-  <li>Popups and chat widgets that load immediately</li>
-</ul>
-<p>See <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>, <a href="/blog/fix-lcp-largest-contentful-paint/">fixing LCP</a> and <a href="/blog/fix-inp-interaction-to-next-paint/">fixing INP</a>.</p>
-
-<h2>WordPress admin dashboard slow?</h2>
-<p>If the front end is fast but the dashboard crawls, page caching won't help, because it doesn't apply to the admin. Common causes:</p>
-<ul>
-  <li>Plugins adding heavy dashboard widgets, notices or licence checks on every screen</li>
-  <li>Large amounts of autoloaded data in the database</li>
-  <li>The Heartbeat API running often while editors are open</li>
-  <li>Too little PHP memory or server resources</li>
-  <li>Page builder editors loading very long pages</li>
-</ul>
-<p>Query Monitor works in the admin too. For the full checklist, see <a href="/blog/wordpress-admin-slow/">why the WordPress admin is slow</a>.</p>
-
-<h2>WordPress site slow after an update?</h2>
-<p>If the slowdown started right after updating WordPress, a plugin, the theme or PHP:</p>
+<h2>Step-by-step checklist to fix a slow WordPress website</h2>
 <ol>
-  <li>Clear every cache: plugin, server, CDN and any combined CSS and JavaScript files</li>
-  <li>Give one-off background tasks, such as a database upgrade, time to finish</li>
-  <li>On staging, or with the Health Check &amp; Troubleshooting plugin (which disables plugins only for you), turn plugins off one at a time to find the culprit</li>
-  <li>Check that plugin's changelog and support forum, and roll it back to the previous version until a fix is released</li>
+  <li>Take a full backup of files and database, or work on a staging copy.</li>
+  <li>Record a baseline: PageSpeed Insights mobile results and TTFB for three key pages.</li>
+  <li>Confirm one page cache is active and returning a cache HIT for logged-out visitors.</li>
+  <li>If TTFB is still slow, check PHP version, hosting resources and Query Monitor's slowest components.</li>
+  <li>Compress and resize the largest images, starting with the hero image on each key page.</li>
+  <li>Deactivate and delete unused plugins; replace or restrict the heaviest one.</li>
+  <li>Remove or delay third-party scripts you can live without.</li>
+  <li>Enable CSS and JavaScript optimisation one setting at a time, testing forms and menus after each.</li>
+  <li>Clean the database and review autoloaded options.</li>
+  <li>Purge all caches, re-test the same pages and compare with your baseline.</li>
 </ol>
-<p>Next time, test updates on staging first; see <a href="/blog/update-wordpress-safely/">updating WordPress safely</a> and <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">troubleshooting plugin conflicts</a>.</p>
 
-<h2>WooCommerce store slow?</h2>
-<p>Cart, checkout and account pages are different for every shopper, so they can't be served from the page cache, and logged-in customers often bypass caching entirely. Hosting and plugin quality matter even more.</p>
-<ul>
-  <li>Test product, category, cart and checkout pages, not just the homepage</li>
-  <li>Exclude cart, checkout and account pages from the cache, but cache everything else</li>
-  <li>Watch for slow filters, search and large catalogues with many variations</li>
-  <li>Check WooCommerce → Status → Scheduled Actions for a backlog of pending or failed tasks</li>
-  <li>Choose hosting with resources for uncached traffic, ideally with an object cache such as Redis</li>
-</ul>
-<p>See <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a> for store-specific fixes.</p>
+<h2>Slow only on mobile, in the admin, or after an update?</h2>
+<p><strong>Mobile:</strong> lower mobile scores are normal, but if real visitors find pages slow on their phones, check hero sliders, background videos and heavy JavaScript. See <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress slow on mobile</a>.</p>
+<p><strong>Admin dashboard:</strong> page caching doesn't apply to the admin, so a slow dashboard usually means heavy plugins, autoloaded data, the Heartbeat API or too little PHP memory. See <a href="/blog/wordpress-admin-slow/">why the WordPress admin is slow</a>.</p>
+<p><strong>After an update:</strong> clear every cache, give background database upgrades time to finish, then use the Health Check &amp; Troubleshooting plugin on staging to disable plugins one at a time and find the culprit. Roll that plugin back until a fix is released.</p>
+<p><strong>WooCommerce:</strong> cart, checkout and account pages can't be page-cached, so hosting, an object cache and plugin quality matter even more. See <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a>.</p>
 
 <h2>FAQs</h2>
 
-<h3>Why is WordPress so slow?</h3>
-<p>WordPress itself isn't slow; a clean install on decent hosting is quick. Sites slow down because of what's added on top: cheap hosting, heavy themes, page builders, plugins, large images and third-party scripts, often without caching.</p>
+<h3>Why is my WordPress site so slow?</h3>
+<p>Usually slow hosting, no working page cache, large images, a heavy theme or page builder, too many plugins or third-party scripts. Run PageSpeed Insights and check your server response time in the Network tab to see whether the problem is the server or the page itself.</p>
 
-<h3>How do I fix a slow WordPress site?</h3>
-<p>Diagnose first with PageSpeed Insights, the browser's Network tab and Query Monitor. Then fix in order of impact: server response and caching, images, theme and plugin bloat, scripts and fonts, then the database. Re-test after each change.</p>
+<h3>Why is WordPress so slow compared with other platforms?</h3>
+<p>WordPress itself isn't slow; a clean install on decent hosting is quick. It slows down because of what's added on top, often without caching. A well-built WordPress site can be as fast as a site on any other platform.</p>
+
+<h3>WordPress site slow: how to fix it?</h3>
+<p>Diagnose first with PageSpeed Insights, the Network tab and Query Monitor. Then fix in order of impact: server response and caching, images, theme and plugin bloat, scripts and fonts, then the database. Back up first and re-test after each change.</p>
+
+<h3>My WordPress website is very slow. Where do I start?</h3>
+<p>Check server response time first. If it's slow on every page, the fix is hosting, caching or a heavy plugin. If the server is quick but pages still load slowly, start with images and third-party scripts.</p>
+
+<h3>Why is my WordPress site slow loading only sometimes?</h3>
+<p>Uncached pages, an overloaded shared server at busy times, backups or scans running during the day, and bot traffic all cause random slowness. Check your host's resource usage graphs and when your scheduled jobs run.</p>
 
 <h3>Do too many plugins slow down WordPress?</h3>
-<p>They can, but quality matters more than quantity. Many small, well-built plugins can be faster than a few heavy ones, and Query Monitor shows which are doing the most work.</p>
+<p>They can, but quality matters more than quantity. A few heavy plugins can be slower than many small, well-built ones, and Query Monitor shows which are doing the most work.</p>
 
-<h3>Will a caching plugin fix my slow site?</h3>
-<p>It often helps visitors a lot, but it won't fix slow hosting, heavy images or third-party scripts, and it doesn't speed up the admin, cart or checkout.</p>
-
-<h3>Why is my site fast for me but slow for others?</h3>
-<p>Visitors may be further from your server, on slower mobile connections or landing on uncached pages. The reverse also happens: logged-in users usually bypass the cache, so admins often see a slower site than visitors do.</p>
-
-<h3>How fast should a WordPress site be?</h3>
-<p>Aim for Google's "good" Core Web Vitals for real visitors rather than a perfect PageSpeed score. The score is a lab test; what matters is how quickly real people can see and use your pages.</p>
+<p>Serving visitors across regions? A <a href="/blog/what-is-a-cdn/">CDN</a> can help.</p>
 
 <h2>When to get help</h2>
-<p>Still slow after the basics, or worried about breaking something? My <a href="/wordpress-speed-optimization/">WordPress speed optimization service</a> starts with a full audit, fixes hosting, caching, image, plugin, script and database issues in order of impact, and ends with a before-and-after report, with a full backup taken first. Send me your website address and I'll tell you what's slowing it down.</p>
+<p>Still slow after the basics, or worried about breaking something? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> starts with a full audit, fixes hosting, caching, image, plugin, script and database issues in order of impact, and ends with a before-and-after report, with a full backup taken first. If the site also needs ongoing care, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for regular maintenance. Send me your website address and I'll tell you what's slowing it down.</p>
 `,
   },
   {
@@ -32612,164 +32586,149 @@ SELECT option_name FROM wp_options WHERE option_value LIKE '%&lt;script%';</code
   },
   {
     slug: 'fix-wordpress-redirect-hack',
-    seoTitle: 'WordPress Redirect Hack: How to Remove Redirect Malware',
+    seoTitle: 'WordPress Site Redirecting to Spam? Remove Redirect Malware',
     title: 'WordPress Site Redirecting to Spam? How to Find and Remove the Redirect Hack',
-    description: 'WordPress site redirecting to spam? Why redirect malware hides, where it lives (.htaccess, wp-config, theme files, database) and how to remove it for good.',
+    description: 'WordPress site redirecting to spam? Catch the hidden redirect, find the malware in .htaccess, wp-config, themes or the database and remove it for good.',
     date: '2026-09-27',
-    updated: '2026-10-10',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
-<p>Customers tell you your website sends them to a gambling, dating, fake prize or "your phone has a virus" page. When you open it yourself, everything looks normal. That's the classic WordPress redirect hack: malicious code that sends some visitors elsewhere while hiding from the site owner, so it survives as long as possible.</p>
-<p>Here's why you might not see it, how to catch it, where the code hides and how to remove it for good.</p>
-
-<p>Redirect hacks often come back when a backdoor is missed. If you would rather have it handled for you, see my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>.</p>
+<p>If your WordPress site is redirecting to spam (gambling, dating, fake prize or "your phone has a virus" pages) and you didn't set the redirect up, your site has been hacked with redirect malware. The code usually targets mobile visitors arriving from Google while hiding from logged-in admins, which is why the site looks normal when you check it yourself.</p>
+<p>Below: how to rule out harmless causes, how to catch the hidden redirect, a table of where the malware lives, and a step-by-step removal checklist. Redirect hacks often come back when a backdoor is missed; if you would rather have it handled, see my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>.</p>
 
 <h2>First, make sure it's really a hack</h2>
 <p>A few harmless things can look like a redirect hack. Rule them out quickly:</p>
 <ul>
-  <li><strong>A redirect plugin rule</strong> or a rule your developer added. Check any redirect plugin's list and your SEO plugin's redirect settings.</li>
+  <li><strong>A redirect rule you or your developer added.</strong> Check any redirect plugin and your SEO plugin's redirect settings.</li>
   <li><strong>"Too many redirects" errors</strong> are a settings loop, not spam; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a>.</li>
-  <li><strong>Ads or third-party scripts.</strong> If you run ads or embed widgets, a bad ad or a compromised third-party script can redirect visitors without your site being hacked.</li>
-  <li><strong>Only one person sees it.</strong> A browser extension or adware on their own phone or computer may be the cause. Ask whether it happens on other devices.</li>
-  <li><strong>Domain or DNS problems.</strong> An expired domain, or DNS records changed at your registrar, can send all visitors to someone else's server; see <a href="/blog/domain-expired-what-to-do/">domain expired: what to do</a>.</li>
+  <li><strong>Ads or third-party scripts.</strong> A bad ad or a compromised widget script can redirect visitors without your site files being hacked.</li>
+  <li><strong>Only one person sees it.</strong> Adware or a browser extension on their own device may be the cause. Ask whether it happens on other devices.</li>
+  <li><strong>Domain or DNS problems.</strong> An expired domain or changed DNS records can send all visitors to someone else's server.</li>
 </ul>
-<p>If it happens to different people on different devices and you didn't set it up, treat it as malware.</p>
+<p>If it happens to different people on different devices and you didn't set it up, treat it as malware. For the wider warning signs, see <a href="/blog/signs-wordpress-site-hacked/">how to know if your WordPress site has been hacked</a>.</p>
 
-<h2>Why the redirect only happens on mobile or to logged-out visitors</h2>
+<h2>Why a hacked WordPress redirect hides from you</h2>
 <p>Redirect malware is usually conditional. The code checks who is visiting before deciding whether to redirect:</p>
 <ul>
-  <li><strong>Device:</strong> it reads the browser's user agent and targets phones, because owners mostly check their site on a computer</li>
-  <li><strong>Where the visitor came from:</strong> it redirects people arriving from Google, Facebook or other search engines, but not people who type your address directly</li>
+  <li><strong>Device:</strong> it reads the user agent and targets phones, because owners mostly check on a computer</li>
+  <li><strong>Referrer:</strong> it redirects people arriving from Google, Facebook or other search engines, but not people who type your address</li>
   <li><strong>Logged-in status:</strong> it looks for the WordPress login cookie and leaves administrators alone</li>
-  <li><strong>Once per visitor:</strong> it sets a cookie so the second visit looks normal, which makes the problem hard to reproduce</li>
-  <li><strong>Location or IP address:</strong> it targets certain countries, or skips IP addresses that have used the dashboard</li>
+  <li><strong>Once per visitor:</strong> it sets a cookie so the second visit looks normal</li>
+  <li><strong>Location or IP:</strong> it targets certain countries, or skips IP addresses that have used the dashboard</li>
 </ul>
-<p>Caching adds another layer. Logged-out visitors usually get cached copies of pages while logged-in admins bypass the cache, so an infected cached page can keep redirecting visitors even after the code is removed. Browsers can also remember a permanent redirect and keep sending a visitor there.</p>
+<p>That is also why one quick check from your office computer proves nothing: test the way a real visitor arrives, on a phone, from a search result, logged out and without old cookies.</p>
+<p>Caching adds another layer. Logged-out visitors get cached pages while admins bypass the cache, so an infected cached page can keep redirecting visitors after the code is removed.</p>
 
 <h2>How to catch the redirect</h2>
-<ul>
+<ol>
   <li><strong>Phone test:</strong> switch off Wi-Fi, open a private tab, search Google for your business and tap your result. Use a fresh private tab for each attempt.</li>
-  <li><strong>Desktop test:</strong> in Chrome's developer tools, turn on device emulation, open the Network tab, tick "Preserve log", then visit your site from a Google result and watch for unfamiliar domains.</li>
-  <li><strong>View the page source:</strong> search for script tags loading from unfamiliar domains, and for long scrambled code containing things like <code>eval(</code>, <code>atob(</code> or <code>String.fromCharCode</code>.</li>
-  <li><strong>Remote scanner:</strong> an online scanner fetches your pages as a visitor would and flags known redirect code.</li>
-</ul>
+  <li><strong>Desktop test:</strong> in Chrome DevTools, turn on device emulation, open the Network tab, tick "Preserve log", then visit your site from a Google result and watch for unfamiliar domains.</li>
+  <li><strong>View the page source:</strong> search for script tags loading from unfamiliar domains, and for scrambled code containing things like <code>eval(</code>, <code>atob(</code> or <code>String.fromCharCode</code>.</li>
+  <li><strong>Remote scanner:</strong> an online scanner fetches your pages as a visitor would and flags known redirect code; see <a href="/blog/wordpress-malware-scanners-compared/">WordPress malware scanners compared</a>.</li>
+  <li><strong>Search Console:</strong> check the Security issues report for hacked content or malware warnings.</li>
+</ol>
 <p>If you're comfortable with a terminal, you can pretend to be a mobile visitor arriving from Google:</p>
 <pre><code>curl -sI -A "Mozilla/5.0 (iPhone)" -e "https://www.google.com/" https://yourdomain.com/</code></pre>
-<p>A <code>Location:</code> header pointing to another domain means a server-side redirect. This won't reveal JavaScript redirects, which only run in a browser, so use the browser tests as well.</p>
+<p>A <code>Location:</code> header pointing to another domain means a server-side redirect. JavaScript redirects only run in a browser, so use the browser tests as well.</p>
 
-<h2>Where WordPress redirect malware hides</h2>
+<h3>What the symptom tells you</h3>
 <table>
-  <thead><tr><th>Location</th><th>What to look for</th></tr></thead>
+  <thead><tr><th>Symptom</th><th>Most likely location</th></tr></thead>
   <tbody>
-    <tr><td>.htaccess files</td><td>Rewrite rules that check the referrer or device and send visitors to external domains</td></tr>
-    <tr><td>wp-config.php and index.php</td><td>Extra PHP at the very top or bottom, or includes of odd files</td></tr>
-    <tr><td>Theme header.php, footer.php, functions.php</td><td>Injected script tags or PHP that checks the user agent</td></tr>
-    <tr><td>JavaScript files</td><td>Scrambled code appended to theme or plugin .js files</td></tr>
-    <tr><td>Database</td><td>Scripts in posts, widgets, theme options or "header and footer scripts" settings; changed site URLs</td></tr>
-    <tr><td>Plugins, mu-plugins and drop-ins</td><td>Fake plugins, hidden plugins and files that load automatically</td></tr>
-    <tr><td>Scheduled tasks</td><td>Cron jobs that put the code back after you remove it</td></tr>
+    <tr><td>curl shows a Location header to a spam domain</td><td>.htaccess, wp-config.php, index.php or a PHP file that loads early</td></tr>
+    <tr><td>Page loads, then jumps to another site</td><td>Injected JavaScript in theme files, .js files or the database</td></tr>
+    <tr><td>Only visitors from Google on mobile are redirected</td><td>Conditional rules checking referrer and user agent, often in .htaccess or theme PHP</td></tr>
+    <tr><td>Every page, including wp-admin, goes elsewhere</td><td>Changed siteurl or home options in the database, or DNS</td></tr>
+    <tr><td>Redirect returns hours after cleaning</td><td>A backdoor, a cron job or another infected site in the same hosting account</td></tr>
   </tbody>
 </table>
 
+<h2>Where WordPress redirect malware hides</h2>
+
 <h3>.htaccess files</h3>
-<p>On Apache and LiteSpeed hosting, .htaccess controls redirects before WordPress even loads. A malicious rule often looks something like this:</p>
+<p>On Apache and LiteSpeed hosting, .htaccess runs before WordPress loads. A malicious rule often looks like this:</p>
 <pre><code>RewriteEngine On
 RewriteCond %{HTTP_REFERER} (google|bing|facebook) [NC]
 RewriteCond %{HTTP_USER_AGENT} (android|iphone|mobile) [NC]
 RewriteRule ^(.*)$ https://spam-domain.example/ [R=302,L]</code></pre>
-<p>That rule redirects only mobile visitors arriving from search engines or Facebook. Check the .htaccess file in your main folder and in subfolders such as wp-content and uploads, and in any folder above your site. Keep the standard <code># BEGIN WordPress</code> to <code># END WordPress</code> block and rules you can explain, such as those from your caching or security plugin.</p>
+<p>That rule redirects only mobile visitors arriving from search or Facebook. Check .htaccess in your main folder, in subfolders such as wp-content and uploads, and in any folder above your site. Keep the standard <code># BEGIN WordPress</code> block and rules you can explain, such as those from your caching or security plugin.</p>
 
 <h3>wp-config.php and index.php</h3>
-<p>These files load on every request, which makes them attractive. Look for code before the normal opening <code>&lt;?php</code> line, long encoded strings, or an include of a strange file, often disguised with an image or icon extension:</p>
+<p>These files load on every request. Look for code before the normal opening <code>&lt;?php</code> line, long encoded strings, or an include of a strange file disguised with an image or icon extension:</p>
 <pre><code>&lt;?php @include "/home/account/public_html/wp-content/uploads/2024/03/.cache.ico"; ?&gt;</code></pre>
-<p>The root <code>index.php</code> in a normal WordPress install is only a few lines long. If yours is much longer, compare it with a fresh download of WordPress.</p>
+<p>The root <code>index.php</code> in a normal WordPress install is only a few lines long. If yours is much longer, compare it with a fresh download.</p>
 
-<h3>Theme files</h3>
-<p>Check <code>header.php</code>, <code>footer.php</code> and <code>functions.php</code> in your active theme and child theme. Injected scripts are often disguised as jQuery, analytics or a CDN file:</p>
+<h3>Theme and JavaScript files</h3>
+<p>Check <code>header.php</code>, <code>footer.php</code> and <code>functions.php</code> in your theme and child theme. Injected scripts are often disguised as jQuery, analytics or a CDN file:</p>
 <pre><code>&lt;script src="https://cdn-jquery-min.example/jquery.min.js"&gt;&lt;/script&gt;</code></pre>
-<p>Also look for PHP that reads <code>HTTP_USER_AGENT</code> or <code>HTTP_REFERER</code> in a theme that has no reason to.</p>
-
-<p>Attackers also append long, scrambled lines to legitimate .js files in themes and plugins. Sort by last modified date and compare suspicious files with clean copies.</p>
+<p>Also look for PHP that reads <code>HTTP_USER_AGENT</code> or <code>HTTP_REFERER</code>, and for long scrambled lines appended to theme and plugin .js files. Sort by last modified date and compare suspicious files with clean copies.</p>
 
 <h3>The database</h3>
-<p>Redirect scripts are often injected into post content, widgets, theme options or the settings of plugins that add code to every page. Your table prefix may differ from <code>wp_</code>. In phpMyAdmin, queries like these find likely places:</p>
+<p>Redirect scripts are often injected into posts, widgets, theme options or "header and footer scripts" settings. Your table prefix may differ from <code>wp_</code>. In phpMyAdmin:</p>
 <pre><code>SELECT ID, post_title FROM wp_posts WHERE post_content LIKE '%&lt;script%';
 SELECT option_name FROM wp_options WHERE option_value LIKE '%&lt;script%';</code></pre>
-<p>With WP-CLI, you can search the whole database and check the site address settings:</p>
+<p>With WP-CLI you can search the whole database and check the site address:</p>
 <pre><code>wp db search "&lt;script" --all-tables
 wp option get siteurl
 wp option get home</code></pre>
-<p>Some results will be legitimate embeds, such as maps or booking widgets, so review each one rather than deleting everything. Take a database backup before editing anything.</p>
+<p>Some results will be legitimate embeds such as maps or booking widgets, so review each one. Back up the database before editing anything.</p>
 
-<h3>Rogue plugins and mu-plugins</h3>
-<p>Look in <code>wp-content/plugins</code> for folders you didn't install, especially with generic names that mimic real plugins. Some malware hides itself from the Plugins screen, so compare the folders on the server with the list in your dashboard.</p>
-<p>Then check <code>wp-content/mu-plugins</code>. "Must-use" plugins load automatically, can't be deactivated from the dashboard and are easy to miss. If you didn't knowingly add any, an unexpected file here is a strong warning sign. Also check drop-in files directly inside wp-content, such as <code>advanced-cache.php</code> and <code>object-cache.php</code>: they're normal if your caching setup created them, suspicious if not.</p>
-
-<h3>Scheduled tasks</h3>
-<p>If the redirect returns within hours of cleaning, look for a cron job in your hosting control panel that downloads or rewrites files, and list WordPress scheduled events with <code>wp cron event list</code> or a cron viewer plugin. Remove anything you can't account for.</p>
+<h3>Rogue plugins, mu-plugins and cron jobs</h3>
+<p>Look in <code>wp-content/plugins</code> for folders you didn't install, especially with names that mimic real plugins; some malware hides itself from the Plugins screen, so compare the server folders with your dashboard list. Check <code>wp-content/mu-plugins</code>, which loads automatically and is easy to miss, and drop-ins such as <code>advanced-cache.php</code> that your caching setup didn't create. If the redirect returns within hours, look for a cron job in your hosting panel and list WordPress events with <code>wp cron event list</code>.</p>
 
 <h2>How to fix the WordPress redirect hack, step by step</h2>
 <ol>
   <li><strong>Back up the infected site</strong> (files and database) and note the redirect destinations and dates.</li>
   <li><strong>Change every password:</strong> hosting, SFTP, database (then update wp-config.php) and all WordPress admins. Generate new security keys in wp-config.php to log everyone out.</li>
   <li><strong>Remove admin users you don't recognise.</strong></li>
-  <li><strong>Replace WordPress core:</strong> fresh wp-admin and wp-includes folders for your version, then check root files by hand or with <code>wp core verify-checksums</code>.</li>
-  <li><strong>Reinstall plugins and themes</strong> from official sources, and delete unused or nulled ones. If your theme has custom changes, compare it with a known clean copy.</li>
-  <li><strong>Clean .htaccess, wp-config.php and index.php</strong> as described above.</li>
+  <li><strong>Replace WordPress core:</strong> fresh wp-admin and wp-includes, then check root files with <code>wp core verify-checksums</code>.</li>
+  <li><strong>Reinstall plugins and themes</strong> from official sources, and delete unused or nulled ones.</li>
+  <li><strong>Clean .htaccess, wp-config.php and index.php.</strong></li>
   <li><strong>Remove PHP files from uploads</strong> and anything suspicious in mu-plugins.</li>
   <li><strong>Clean the database:</strong> injected scripts, spam posts and changed site URLs.</li>
   <li><strong>Remove malicious cron jobs</strong> and scheduled events.</li>
-  <li><strong>Purge every cache:</strong> your caching plugin, your host's server cache and your CDN.</li>
-  <li><strong>Test again</strong> on mobile data, from Google, in fresh private windows, and repeat over the next few days.</li>
+  <li><strong>Purge every cache:</strong> plugin, server and CDN.</li>
+  <li><strong>Test again</strong> on mobile data, from Google, in fresh private windows, over the next few days.</li>
 </ol>
-<p>Backdoors are what usually bring the redirect back, so read <a href="/blog/find-remove-wordpress-backdoors/">finding and removing WordPress backdoors</a> as well. The complete process is in <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>.</p>
+<p>Backdoors are what usually bring the redirect back, so read <a href="/blog/find-remove-wordpress-backdoors/">finding and removing WordPress backdoors</a>. The complete process is in <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>.</p>
 
 <h2>Why the redirect keeps coming back</h2>
 <ul>
   <li><strong>A backdoor was missed:</strong> attackers usually leave several ways back in</li>
   <li><strong>The entry point is still open:</strong> an outdated plugin or theme, or a reused password</li>
-  <li><strong>Another site in the same hosting account is infected</strong> and keeps reinfecting yours; see <a href="/blog/hosting-suspended-malware/">cleaning a whole hosting account</a></li>
+  <li><strong>Another site in the same hosting account is infected</strong>; see <a href="/blog/hosting-suspended-malware/">cleaning a whole hosting account</a></li>
   <li><strong>A cron job reinstalls the code</strong></li>
-  <li><strong>A computer with saved FTP or hosting passwords is infected</strong>, so new passwords get stolen too</li>
+  <li><strong>A computer with saved FTP passwords is infected</strong>, so new passwords get stolen too</li>
 </ul>
 
 <h2>Check Google once it's clean</h2>
-<p>Redirect hacks often lead to a red browser warning or "This site may be hacked" in search results. Once the site is clean, check Search Console's <strong>Security issues</strong> report and request a review; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing "Deceptive site ahead"</a> and <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a>. If rankings dropped, see <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
+<p>Redirect hacks often lead to a red browser warning or "This site may be hacked" in results. Once clean, check Search Console's Security issues report and request a review; see <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a> and, if rankings dropped, <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
 
 <h2>How to prevent redirect hacks</h2>
-<ul>
-  <li>Keep WordPress, plugins and themes updated, and delete anything you don't use</li>
-  <li>Never use nulled plugins or themes; see <a href="/blog/nulled-themes-plugins-risks/">the risks</a></li>
-  <li>Use two-factor authentication for admins; see <a href="/blog/secure-wordpress-login/">securing your WordPress login</a></li>
-  <li>Disable file editing in the dashboard and protect wp-config.php; see <a href="/blog/harden-wp-config-php/">hardening wp-config.php</a></li>
-  <li>Block PHP from running in the uploads folder, and set sensible <a href="/blog/wordpress-file-permissions/">file permissions</a></li>
-  <li>Use a <a href="/blog/wordpress-firewall-waf-explained/">firewall</a> and file-change monitoring</li>
-</ul>
-
-<p>Most of this list is routine upkeep rather than a one-off job. If you'd rather not keep on top of it yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> takes care of updates, backups and security monitoring each month.</p>
+<p>Keep WordPress, plugins and themes updated and delete anything unused, never use nulled plugins or themes, turn on two-factor login for admins, disable file editing in the dashboard, block PHP in uploads and use a firewall with file-change monitoring. If you'd rather not keep on top of it yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups and security monitoring each month.</p>
 
 <h2>FAQs</h2>
 
-<h3>Why is my WordPress website redirecting to another site?</h3>
-<p>If you didn't set up the redirect, the most likely cause is malware injected into .htaccess, a core or theme file, a plugin or the database. Less often it's a bad ad, a compromised third-party script, or a domain or DNS problem. Test on several devices to tell them apart.</p>
+<h3>Why is my WordPress site redirecting to spam?</h3>
+<p>If you didn't set up the redirect, malware has most likely been injected into .htaccess, a core or theme file, a plugin or the database. Less often it's a bad ad, a compromised third-party script, or a domain or DNS problem.</p>
 
-<h3>Why does the redirect only happen on mobile?</h3>
-<p>The malware checks the visitor's device and where they came from, and deliberately targets mobile visitors from search engines. Site owners mostly check on a computer while logged in, so the infection goes unnoticed for longer.</p>
+<h3>What is WordPress redirect malware?</h3>
+<p>Code an attacker adds to your site that sends some visitors to spam or scam pages, usually only mobile visitors from search engines, so the owner doesn't notice. It is often paired with backdoors that reinstall it.</p>
+
+<h3>Why does the hacked redirect only happen on mobile?</h3>
+<p>The malware checks the device and where the visitor came from, and targets mobile visitors from search. Owners mostly check on a computer while logged in, so the hack survives longer.</p>
 
 <h3>Can a security plugin remove redirect malware automatically?</h3>
-<p>It can detect and remove some known infections, but redirect code in the database, .htaccess or a fake plugin is often missed, and plugins don't close the hole the attacker used. Use a scanner to help, then check the locations above by hand.</p>
+<p>It can detect and remove some known infections, but code in the database, .htaccess or a fake plugin is often missed, and plugins don't close the hole the attacker used. Use a scanner, then check the locations above by hand.</p>
 
-<h3>Will a redirect hack hurt my Google rankings?</h3>
+<h3>Will a WordPress hacked redirect hurt my Google rankings?</h3>
 <p>It can, through browser warnings, visitors bouncing straight back and spam pages indexed under your domain. Rankings usually recover after a thorough clean-up and a successful review, though how long that takes varies.</p>
-
-<h3>Do I need to reinstall WordPress to fix it?</h3>
-<p>You should replace WordPress core, plugins and themes with clean copies, but you don't need to start from scratch. Your posts, pages and media can be kept once the database and uploads folder are cleaned.</p>
 
 <h3>The redirect came back after I removed it. What now?</h3>
 <p>Something was missed: usually a backdoor, a cron job, an infected neighbouring site or an unpatched plugin. Change passwords again from a clean device and work through every location in this guide.</p>
 
-<p>If your site is redirecting visitors right now and you need it stopped quickly, I can find the redirect code, remove the backdoors behind it, close the entry point and help with the Google review. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+<p>If your site is redirecting visitors right now and you need it stopped quickly, I can find the redirect code, remove the backdoors behind it, close the entry point and help with the Google review. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>, or if it is a store, <a href="/woocommerce-developer/">WooCommerce development and support</a>.</p>
 `,
   },
   {
@@ -39026,146 +38985,140 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'woocommerce-speed-optimization',
-    seoTitle: 'WooCommerce Speed Optimization: How to Speed Up Your Store',
+    seoTitle: 'WooCommerce Speed Optimization: How to Speed Up WooCommerce',
     title: 'WooCommerce Speed Optimization: How to Speed Up Your Online Store',
-    description: 'How to speed up a WooCommerce store: hosting and object caching, caching around cart and checkout, cart fragments, images, filters, search and database tidy-up.',
+    description: 'How to speed up WooCommerce: test the right pages, add object caching, cache around the checkout, and fix cart fragments, images, filters and database.',
     date: '2026-09-28',
-    updated: '2026-10-10',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization'],
     body: `
-<p>A slow online store loses sales in a way you rarely notice. A shopper on mobile data taps a product from Instagram, waits a few seconds, and goes back to scrolling. WooCommerce can be fast, but a store is harder to speed up than a normal business website because some of its most important pages can't simply be cached. This guide covers WooCommerce speed optimisation step by step: what to measure, what to fix and how to test without breaking the checkout. For general WordPress causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>.</p>
+<p>To speed up WooCommerce, cache every page that is the same for all shoppers (home, category, product and blog pages), give the uncacheable cart, checkout and My Account pages fast hosting with an object cache such as Redis, then trim what loads on each page: heavy product images, cart fragments, filter plugins and third-party scripts. WooCommerce speed optimization is harder than speeding up a brochure site because a store's most important pages are built fresh for every shopper.</p>
+<p>This guide covers what to measure, a symptom-to-cause table, a step-by-step checklist and how to test without breaking the checkout. For general WordPress causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>. If you would rather have it done for you, my <a href="/wordpress-speed-optimization/">WooCommerce speed optimization service</a> covers every fix below.</p>
 
-<p>If you would rather have it done for you, my <a href="/wordpress-speed-optimization/">WooCommerce speed optimization service</a> covers the store-specific fixes in this guide.</p>
-
-<h2>Why WooCommerce stores are harder to speed up</h2>
+<h2>Why WooCommerce performance optimization is different</h2>
 <p>On a brochure site, almost every visitor sees the same page, so a saved copy can be served instantly. A store works differently:</p>
 <ul>
   <li>The cart, checkout and My Account pages are different for every shopper and must be built fresh each time</li>
   <li>Logged-in customers, and shoppers with something in their cart, usually bypass the page cache</li>
-  <li>Large catalogues, product variations, filters and search mean heavier database queries</li>
+  <li>Large catalogues, variations, filters and search mean heavier database queries</li>
   <li>Payment, shipping, review and marketing extensions each add their own scripts and processing</li>
   <li>Every order adds data: order records, sessions, logs and background tasks</li>
 </ul>
 <p>So a fast store needs two things: good caching for the pages that can be cached, and a capable server for the pages that can't.</p>
 
 <h2>Measure the right pages first</h2>
-<p>Don't test only the homepage. Check each type of page, and always test on a phone:</p>
+<p>Don't test only the homepage. Check each page type on a phone, ideally on mobile data, because that is how most Indian shoppers arrive from Instagram, WhatsApp and Google.</p>
+<ol>
+  <li><strong>PageSpeed Insights:</strong> test the homepage, a category page and a product page at pagespeed.web.dev. Note LCP, INP and CLS, and the "Reduce initial server response time", image and third-party warnings.</li>
+  <li><strong>Search Console:</strong> the Core Web Vitals report groups similar URLs, so you can see whether product or category templates are the problem.</li>
+  <li><strong>Time the money steps by hand:</strong> add a product, change the quantity, apply a coupon, enter a pin code and move to payment. If one step drags, that's where to dig.</li>
+  <li><strong>Query Monitor on staging:</strong> load the slow page or cart step while logged in and check Queries by Component and HTTP API calls to see which plugin or external service is responsible.</li>
+</ol>
+<p>See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a> for reading the results.</p>
+
+<h3>What your results point to</h3>
 <table>
-  <thead>
-    <tr><th>Page</th><th>What to check</th></tr>
-  </thead>
+  <thead><tr><th>Symptom</th><th>Likely cause</th><th>Fix first</th></tr></thead>
   <tbody>
-    <tr><td>Homepage and category pages</td><td>Mobile load time, image weight, number of scripts</td></tr>
-    <tr><td>Product pages</td><td>How quickly the main image appears; gallery, variation and review scripts</td></tr>
-    <tr><td>Search and filtered results</td><td>How long a search or filter click takes</td></tr>
-    <tr><td>Cart and checkout</td><td>Server response time, add-to-cart, quantity changes, coupons, shipping calculation</td></tr>
-    <tr><td>My Account</td><td>Login and order history speed for returning customers</td></tr>
+    <tr><td>Slow server response on shop and product pages</td><td>No page cache, or underpowered hosting</td><td>Page caching, then hosting</td></tr>
+    <tr><td>Cart and checkout slow, other pages fine</td><td>No object cache, heavy cart plugins, slow shipping or payment lookups</td><td>Object cache, cart and checkout extensions</td></tr>
+    <tr><td>Every page makes an uncached admin-ajax or wc-ajax request</td><td>Cart fragments running everywhere</td><td>Limit cart fragments</td></tr>
+    <tr><td>Product page main image appears late</td><td>Oversized images, lazy-loaded hero image, heavy gallery</td><td>Images and gallery</td></tr>
+    <tr><td>Filter or search clicks take seconds</td><td>Heavy filter queries, default search on a big catalogue</td><td>Filters and search</td></tr>
+    <tr><td>Admin and order screens crawl</td><td>Large database, Scheduled Actions backlog, legacy order storage</td><td>Database and HPOS</td></tr>
+    <tr><td>Many requests to other domains</td><td>Pixels, chat and review widgets</td><td>Third-party scripts</td></tr>
   </tbody>
 </table>
-<p>PageSpeed Insights is useful for shop and product pages, and the Core Web Vitals report in Search Console shows how real visitors experience groups of similar pages. For the cart and checkout, time the steps yourself: add a product, change the quantity, apply a coupon, enter a pin code and move to payment. If one step drags, that's where to dig. On a staging copy, a debugging plugin such as Query Monitor can show slow database queries and which plugin caused them. See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</p>
 
 <h2>Hosting and object caching</h2>
-<p>Because cart and checkout pages are built fresh for every shopper, they depend directly on your server. Cheap shared hosting that copes with a brochure site can struggle when several people check out at once, especially during a festival sale. For a store, look for:</p>
+<p>Because cart and checkout pages are built fresh for every shopper, they depend directly on your server. Hosting that copes with a brochure site can struggle when several people check out at once, especially during a festival sale. For a store, look for:</p>
 <ul>
   <li>A current, supported PHP version (see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a>)</li>
   <li>Enough memory and PHP workers to handle several uncached requests at the same time</li>
   <li>Server-level caching and support for an object cache such as Redis or Memcached</li>
   <li>A data centre in or near India if most of your customers are here</li>
 </ul>
-<p>Ask your host directly how much simultaneous checkout traffic your plan can realistically handle. If the server is slow before anything else loads, start with <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time</a>, and if you've outgrown shared hosting, compare <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared, VPS and managed hosting</a>.</p>
-<h3>Why an object cache helps stores in particular</h3>
-<p>A page cache saves whole pages, which doesn't help the cart or checkout. An object cache keeps the results of repeated database lookups in memory, so WordPress doesn't ask the database the same question again and again. That helps exactly the pages that can't be page-cached: cart, checkout, My Account and the admin. It needs server support plus a plugin or host setting to connect WordPress to it, so ask whether your plan includes it, and test the checkout after turning it on.</p>
+<p>Ask your host how much simultaneous checkout traffic your plan can realistically handle. If the server is slow before anything else loads, start with <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time</a>.</p>
+<p>A page cache saves whole pages, which doesn't help the cart or checkout. An object cache keeps the results of repeated database lookups in memory, which helps exactly the pages that can't be page-cached: cart, checkout, My Account and the admin. It needs server support plus a plugin or host setting, so test the checkout after turning it on.</p>
 
 <h2>Page caching, with the right exclusions</h2>
-<p>Cache the pages that are the same for everyone: the homepage, category pages, product pages and blog posts. Never cache:</p>
-<ul>
-  <li>The cart, checkout and My Account pages</li>
-  <li>Pages for a visitor who has items in their cart or is logged in</li>
-</ul>
-<p>WooCommerce sets cookies such as <strong>woocommerce_items_in_cart</strong> and <strong>woocommerce_cart_hash</strong> when a shopper adds something to the cart, and good caching plugins and hosts use them to skip the cache for that shopper. Most detect WooCommerce automatically, but always test: open a private window, add a product, then check the cart count and prices on other pages.</p>
-<p>If you show prices in different currencies or change them by location, test extra carefully, because a cached page can show the wrong price. Similarly, WooCommerce's "geolocate with page caching support" option adds a code to your URLs, creating many variations; only geolocate if you need location-based taxes or prices. More in <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> and <a href="/blog/what-is-a-cdn/">what a CDN does</a>.</p>
+<p>Cache the pages that are the same for everyone: home, category, product and blog pages. Never cache the cart, checkout and My Account pages, or pages for a shopper who is logged in or has items in their cart.</p>
+<p>WooCommerce sets cookies such as <strong>woocommerce_items_in_cart</strong> and <strong>woocommerce_cart_hash</strong> when a shopper adds something, and good caching plugins and hosts use them to skip the cache for that shopper. Most detect WooCommerce automatically, but always test: open a private window, add a product, then check the cart count and prices on other pages. If prices change by currency or location, test extra carefully, because a cached page can show the wrong price. More in <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
 
 <h2>Speeding up cart, checkout and My Account</h2>
 <p>These pages make you money, and caching can't rescue them. Beyond hosting and an object cache, look at what runs on them:</p>
 <ul>
-  <li><strong>Live shipping and pin code lookups:</strong> extensions that ask a courier's system for rates on every change can add a noticeable wait if that service is slow</li>
+  <li><strong>Live shipping and pin code lookups:</strong> extensions that ask a courier's system for rates on every change add a wait if that service is slow</li>
   <li><strong>Discount, fee and pricing rules:</strong> complex rule plugins recalculate the cart on every update; keep only the rules you use</li>
-  <li><strong>Payment gateways:</strong> each loads its own scripts; disable gateways you don't offer</li>
-  <li><strong>Extra fields and add-ons:</strong> address autocomplete, gift options and upsell pop-ups all add weight</li>
+  <li><strong>Payment gateways:</strong> each loads its own scripts; disable gateways you don't offer, and load gateway scripts only on checkout</li>
   <li><strong>Actions when the order is placed:</strong> slow email sending or many integrations firing at once can make the final step feel stuck</li>
 </ul>
-<p>WooCommerce offers both a block-based checkout and the older classic checkout. Either can be fast; what matters is which extensions you rely on and whether they support the version you use. For layout and form changes that also help conversions, see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
+<p>For layout and form changes that also lift conversions, see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
 
 <h2>Cart fragments</h2>
-<p>The cart icon in your header that shows the number of items is often updated by a script called cart fragments. It sends a background request (you may see <strong>get_refreshed_fragments</strong> in a speed test waterfall) that can't be cached. If it runs on every page for every visitor, it adds server load and delay even to pages that are otherwise cached.</p>
-<p>Recent WooCommerce versions no longer load this script everywhere by default, but many themes and header mini-cart widgets still do. Your options include:</p>
-<ul>
-  <li>Loading it only on shop, product and cart pages</li>
-  <li>Using a theme or mini-cart that updates the count without it</li>
-  <li>Turning it off on blog and information pages through a performance plugin setting, where one is available</li>
-</ul>
-<p>After any change, check that the cart count still updates correctly when a product is added.</p>
+<p>The header cart count is often updated by a script called cart fragments. It sends a background request (you may see <strong>get_refreshed_fragments</strong> in a waterfall) that can't be cached, so if it runs on every page for every visitor it adds server load even to cached pages. Recent WooCommerce versions no longer load it everywhere by default, but many themes and mini-cart widgets still do. Load it only on shop, product and cart pages, or use a mini-cart that updates the count without it, then check the count still updates when a product is added.</p>
 
 <h2>Product images and galleries</h2>
-<p>Product photos are usually the heaviest part of a store. Upload images at a sensible size, compress them and serve modern formats such as WebP. In classic themes, check the product image sizes under Appearance &gt; Customize &gt; WooCommerce &gt; Product Images so the store isn't generating oversized thumbnails.</p>
+<p>Product photos are usually the heaviest part of a store. Upload images at a sensible size, compress them and serve WebP. In classic themes, check the product image sizes under Appearance &gt; Customize &gt; WooCommerce &gt; Product Images so the store isn't generating oversized thumbnails.</p>
 <ul>
   <li>Lazy-load images further down the page, but not the main product image, which is often the largest element Google measures</li>
   <li>Keep gallery sliders, zoom and 360-degree viewers light, and load them only on product pages</li>
-  <li>Watch products with dozens of variations and colour swatches, as each option adds data to the page</li>
   <li>Use a click-to-play embed for product videos instead of loading the full player upfront</li>
 </ul>
-<p>See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> and <a href="/blog/fix-lcp-largest-contentful-paint/">fixing slow LCP</a> for the details.</p>
+<p>See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> and <a href="/blog/fix-lcp-largest-contentful-paint/">fixing slow LCP</a>.</p>
 
 <h2>Filters, search and large catalogues</h2>
-<p>With hundreds or thousands of products and many attributes, filters and search can become the slowest part of a store, and they're usually uncached because every combination is different.</p>
+<p>With hundreds or thousands of products, filters and search can become the slowest part of a store, and they're usually uncached because every combination is different.</p>
 <ul>
-  <li><strong>Choose filters carefully:</strong> some filter plugins run heavy queries on every click. Prefer ones that use indexed data, and in recent WooCommerce versions check that the product attributes lookup table is used for filtering (WooCommerce &gt; Settings &gt; Products &gt; Advanced)</li>
+  <li><strong>Choose filters carefully:</strong> prefer filter plugins that use indexed data, and check the product attributes lookup table is used for filtering (WooCommerce &gt; Settings &gt; Products &gt; Advanced)</li>
   <li><strong>Keep filter URLs out of Google:</strong> endless combinations waste crawling and server resources; see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a></li>
-  <li><strong>Improve site search:</strong> default WordPress search gets slow and imprecise on big catalogues; a search plugin with its own index, or a hosted search service, usually helps (see <a href="/blog/improve-wordpress-site-search/">improving site search</a>)</li>
-  <li><strong>Trim heavy page sections:</strong> related products, "recently viewed" and upsell carousels each run extra queries; keep the ones that help sales</li>
+  <li><strong>Improve site search:</strong> default WordPress search gets slow on big catalogues; a search plugin with its own index usually helps</li>
+  <li><strong>Trim heavy sections:</strong> related products, "recently viewed" and upsell carousels each run extra queries</li>
 </ul>
 
-<h2>Database: orders, sessions, transients and HPOS</h2>
-<p>An active store's database grows every day. Keeping it tidy helps the uncached pages and the admin area:</p>
+<h2>Database: sessions, Scheduled Actions and HPOS</h2>
 <ul>
-  <li><strong>Sessions and transients:</strong> expired cart sessions and temporary cached data should clear automatically, but only if scheduled tasks are actually running</li>
-  <li><strong>Scheduled Actions:</strong> WooCommerce and many extensions log background tasks; check WooCommerce &gt; Status &gt; Scheduled Actions for large numbers of failed or pending items</li>
-  <li><strong>Autoloaded options:</strong> leftover settings from removed plugins can slow down every request</li>
-  <li><strong>Order storage:</strong> High-Performance Order Storage (HPOS) keeps orders in their own dedicated tables instead of mixing them with posts, which is designed to scale better as orders grow. Newer stores use it by default; older stores can check under WooCommerce &gt; Settings &gt; Advanced &gt; Features, after confirming their extensions are compatible</li>
+  <li><strong>Sessions and transients:</strong> expired cart sessions should clear automatically, but only if scheduled tasks actually run</li>
+  <li><strong>Scheduled Actions:</strong> check WooCommerce &gt; Status &gt; Scheduled Actions for large numbers of failed or pending items</li>
+  <li><strong>Autoloaded options:</strong> leftover settings from removed plugins can slow every request</li>
+  <li><strong>High-Performance Order Storage (HPOS):</strong> keeps orders in dedicated tables, designed to scale better as orders grow. Newer stores use it by default; older stores can switch under WooCommerce &gt; Settings &gt; Advanced &gt; Features once their extensions are compatible</li>
 </ul>
-<p>Always take a full backup before any clean-up. See <a href="/blog/wordpress-database-optimization/">database optimisation</a>, and <a href="/blog/wordpress-admin-slow/">why the admin gets slow</a> if the problem is mainly in the dashboard.</p>
+<p>Always take a full backup first. See <a href="/blog/wordpress-database-optimization/">database optimisation</a>.</p>
 
-<h2>Plugins, theme and third-party scripts</h2>
-<p>Stores collect plugins over time: reviews, wishlists, filters, pop-ups, live chat, tracking pixels and more. Many load their CSS and JavaScript on every page, even where they do nothing.</p>
-<ul>
-  <li>Remove extensions you no longer use, and replace heavy ones where a lighter option does the job</li>
-  <li>Stop scripts loading where they aren't needed; a payment gateway's script only needs to load on checkout</li>
-  <li>Review tracking: several pixels and tag managers doing the same job add up quickly on mobile</li>
-  <li>Delay chat widgets and marketing scripts until the visitor interacts with the page</li>
-  <li>Avoid building product and category templates from bloated page-builder layouts</li>
-</ul>
-<p>See <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a>.</p>
+<h2>How to speed up WooCommerce: step-by-step checklist</h2>
+<ol>
+  <li>Back up the store and set up a staging copy.</li>
+  <li>Record a baseline: PageSpeed Insights for home, category and product pages, plus timed add-to-cart and checkout steps.</li>
+  <li>Confirm page caching works on public pages and is bypassed for cart, checkout, My Account and shoppers with items in the cart.</li>
+  <li>Check PHP version and hosting resources; enable an object cache if your host supports it.</li>
+  <li>Limit cart fragments to the pages that need a live cart count.</li>
+  <li>Resize and compress product images; make sure the main product image isn't lazy-loaded.</li>
+  <li>Remove unused extensions and stop payment, review and chat scripts loading where they aren't needed.</li>
+  <li>Fix slow filters and search, and keep filter URLs out of the index.</li>
+  <li>Clear the Scheduled Actions backlog, tidy the database and consider HPOS.</li>
+  <li>Place a full test order (cart, coupon, shipping, payment, confirmation email), then re-test against your baseline.</li>
+</ol>
+<p>Re-test after major updates and before big sales; the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the regular checks that stop a store getting heavier again.</p>
 
-<h2>Test safely and keep it fast</h2>
-<p>Speed work on a store has one rule: never trade a faster page for a broken checkout. Make changes on a staging copy after a backup, change one thing at a time, and place a real test order each time: add to cart, coupon, shipping, payment and confirmation email. Check on a phone on mobile data, and re-test after major updates and before big sales. The <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the regular checks that stop a store slowly getting heavier again.</p>
-
-<h2>DIY or a WooCommerce speed optimisation service?</h2>
-<p>Compressing images, removing unused plugins and turning on caching are reasonable DIY jobs. Get help when the slow pages are the cart and checkout, when you have a large catalogue with filters, when the database needs clean-up, or when earlier "speed plugins" made things worse. A good service starts with measurement, works on staging, explains each change and tests a full order before anything goes live. Be wary of anyone promising a particular score without looking at your store first.</p>
+<h2>DIY or a WooCommerce speed optimization service?</h2>
+<p>Compressing images, removing unused plugins and turning on caching are reasonable DIY jobs. Get help when the slow pages are the cart and checkout, when you have a large catalogue with filters, when the database needs clean-up, or when earlier "speed plugins" made things worse. A good service measures first, works on staging, explains each change and tests a full order before anything goes live. Be wary of anyone promising a particular score without looking at your store.</p>
 
 <h2>FAQs</h2>
-<h3>Why is my WooCommerce store so slow?</h3>
-<p>Usually a mix of underpowered hosting, too many plugins loading scripts everywhere, heavy product images, cart fragments running on every page and a cluttered database. Test each page type separately to find which one is actually slow, then fix that first.</p>
+<h3>How do I speed up WooCommerce?</h3>
+<p>Cache public pages, exclude cart, checkout and My Account, use hosting with an object cache, limit cart fragments, compress product images and remove scripts that load everywhere. Test each change on staging with a full order.</p>
+<h3>What does WooCommerce speed optimization include?</h3>
+<p>Measuring each page type, fixing server response and caching, speeding up cart and checkout, optimising images and galleries, fixing filters and search, cleaning the database and trimming third-party scripts, all without breaking the checkout.</p>
+<h3>Is WooCommerce performance optimization different from WordPress optimization?</h3>
+<p>Yes. The basics are the same, but stores have uncacheable pages, cart fragments, filters and a growing order database, so hosting, object caching and extension quality matter much more.</p>
 <h3>Can I cache the WooCommerce cart and checkout?</h3>
-<p>No. They're different for every shopper, so caching them can show one customer another's cart or the wrong totals. Speed them up with better hosting, an object cache and fewer heavy extensions instead.</p>
-<h3>Should I disable cart fragments?</h3>
-<p>Not blindly. Limit it to pages that need a live cart count, or use a mini-cart that doesn't rely on it, then check the count still updates when products are added.</p>
+<p>No. They're different for every shopper, so caching them can show one customer another's cart or the wrong totals. Speed them up with better hosting, an object cache and fewer heavy extensions.</p>
 <h3>Does WooCommerce need Redis?</h3>
-<p>It isn't required, but an object cache such as Redis often helps busy stores because it speeds up the pages that can't be page-cached. How much it helps depends on your store and hosting, so measure before and after.</p>
-<h3>Will switching to HPOS make my store faster?</h3>
-<p>HPOS is designed to make order storage more efficient, and it tends to matter more as order numbers grow, particularly in the admin. Check your extensions support it, back up and test on staging before switching an older store.</p>
+<p>It isn't required, but an object cache such as Redis often helps busy stores because it speeds up the pages that can't be page-cached. Measure before and after.</p>
+<h3>Should I hire a WooCommerce speed optimization service?</h3>
+<p>If basic caching and image fixes haven't helped, or the cart and checkout are slow, a specialist who works on staging and tests real orders is usually safer than stacking more speed plugins.</p>
 
-<p>Want a faster store without breaking the checkout? I speed up WooCommerce stores on staging, test a full order before anything goes live and explain every change. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> or <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<p>Want a faster store without breaking the checkout? I speed up WooCommerce stores on staging, test a full order before anything goes live and explain every change. See <a href="/wordpress-speed-optimization/">WordPress and WooCommerce speed optimisation</a> or <a href="/woocommerce-developer/">hire a WooCommerce developer in India</a>.</p>
 `,
   },
   {
